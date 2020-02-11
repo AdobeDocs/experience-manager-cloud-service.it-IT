@@ -2,7 +2,7 @@
 title: Differenze e novità - Adobe Experience Manager come servizio cloud
 description: 'Differenze e novità - Adobe Experience Manager (AEM) come servizio cloud. '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
 
 ---
 
@@ -118,27 +118,10 @@ Adobe si occupa in modo proattivo di aggiornare tutte le istanze operative del s
 
 >[!NOTE]
 >
->Questo viene ottenuto utilizzando [Cloud Manager](#cloud-manager).
+>Per ulteriori dettagli, vedere [Architettura](/help/core-concepts/architecture.md#deployment-architecture)di distribuzione.
 
 ## Cloud Manager {#cloud-manager}
 
->[!NOTE]
->
->Per ulteriori dettagli, vedere [Architettura](/help/core-concepts/architecture.md#deployment-architecture)di distribuzione.
-
-### Versioni precedenti {#previous-versions-cloud-manager}
-
-Cloud Manager è stato utilizzato come strumento di distribuzione per le istanze dei servizi gestiti di AEM.
-
-Le differenze chiave tra Cloud Manager per AMS e per i servizi cloud, quando viene creato un tenant, verranno compilati con i crediti in base agli SKU acquistati dal cliente.
-
->[!NOTE]
->Anche se fondamentale dal punto di vista operativo, il concetto di *crediti* non viene visualizzato direttamente nell&#39;interfaccia di Cloud Manager.
-
-La creazione di un programma normale non utilizza alcun credito, ma deve esistere un credito di base per crearne uno.
-Per informazioni dettagliate sulla creazione di diversi programmi, vedere [Creazione di un programma](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
-
-### AEM come servizio cloud {#aem-as-a-cloud-service-cloud-manager}
 
 Adobe Cloud Manager è integrato nell&#39;approccio di aggiornamento continuo di AEM come servizio cloud, in quanto controlla tutti gli aggiornamenti delle tue istanze - questo è obbligatorio.
 
