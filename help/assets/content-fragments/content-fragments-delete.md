@@ -18,7 +18,7 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 1. **Il frammento di contenuto come entità singola.**
 
    * **Caso** di utilizzo: Utente che deve modificare/aggiornare un frammento di contenuto **ed eliminare un intero frammento**.
-   * **Autorizzazioni**: L&#39;autorizzazione Elimina può essere assegnata tramite Gestione utente e/o gruppo. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **Autorizzazioni**: L&#39;autorizzazione Elimina può essere assegnata tramite Gestione utente e/o gruppo.
 
 2. **Più sottoentità che costituiscono un frammento di contenuto; ad esempio, varianti, nodi secondari.**
 
@@ -29,7 +29,7 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 
 >[!NOTE]
 >
->Se un utente non dispone di autorizzazioni Elimina, l&#39;editor frammenti di contenuto funziona in modalità di sola ** lettura. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>Se un utente non dispone di autorizzazioni Elimina, l&#39;editor frammenti di contenuto funziona in modalità di sola ** lettura.
 
 >[!NOTE]
 >
