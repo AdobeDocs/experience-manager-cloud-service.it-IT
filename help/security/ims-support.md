@@ -2,7 +2,7 @@
 title: Supporto IMS per Adobe Experience Manager come servizio cloud
 description: 'Supporto IMS per Adobe Experience Manager come servizio cloud '
 translation-type: tm+mt
-source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
+source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
 
 ---
 
@@ -26,7 +26,7 @@ AEM come servizio Cloud offre il supporto per l&#39;autenticazione IMS solo per 
 
 ## Architettura {#architecture}
 
-L&#39;autenticazione IMS funziona utilizzando il protocollo OAuth tra AEM e l&#39;endpoint Adobe IMS. Dopo aver aggiunto un utente a IMS e avere un’identità Adobe, può accedere alle istanze dei servizi gestiti AEM utilizzando le credenziali IMS.
+L&#39;autenticazione IMS funziona utilizzando il protocollo OAuth tra AEM e l&#39;endpoint Adobe IMS. Una volta aggiunto l’utente a IMS e dotato di Adobe Identity, può accedere al servizio di creazione AEM utilizzando le credenziali IMS.
 
 Il flusso di accesso dell&#39;utente è riportato di seguito, l&#39;utente verrà reindirizzato a IMS ed eventualmente all&#39;IDP del cliente per SSO e quindi reindirizzato nuovamente ad AEM.
 
