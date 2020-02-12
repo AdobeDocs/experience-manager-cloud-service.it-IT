@@ -2,7 +2,7 @@
 title: Operazioni e manutenzione di Adobe Experience Manager come servizio cloud
 description: Adobe Experience Manager come servizio Cloud, operazioni e risorse di supporto autonomo per la manutenzione e collegamenti alla documentazione
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -16,7 +16,6 @@ In questa pagina sono elencate le risorse di supporto autonomo relative alle ope
 * [Replica dei contenuti](replication.md)
 * [Attività di manutenzione](maintenance.md)
 * [Backup e ripristino](backup.md)
-* [Indicizzazione](indexing.md)
 
 ## Experience Manager come guida ai servizi cloud {#aem-guides}
 
