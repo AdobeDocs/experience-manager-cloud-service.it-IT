@@ -2,7 +2,7 @@
 title: Dispatcher in Cloud
 description: 'Dispatcher in Cloud '
 translation-type: tm+mt
-source-git-commit: 64475ec492863f713a7cefaedc4c0782014682ae
+source-git-commit: ddc1b21dd14dcded72465e727ce740d481520170
 
 ---
 
@@ -697,45 +697,89 @@ Congratulazioni! Se la funzione di convalida non segnala più alcun problema e i
 
 ## Dispatcher e CDN {#dispatcher-cdn}
 
+La distribuzione dei contenuti del servizio di pubblicazione include:
+
+* CDN (in genere gestito da Adobe)
+* dispatcher AEM
+* Pubblicazione AEM
+
 Il flusso di dati è il seguente:
 
-1. URL inserito nel browser
-2. Richiesta effettuata alla CDN mappata in DNS a tale dominio
-3. Se il contenuto è completamente memorizzato nella cache su CDN, CDN lo trasmette al browser
-4. Se il contenuto non è completamente memorizzato nella cache, la rete CDN richiama (proxy inverso) al dispatcher
-5. Se il contenuto è completamente memorizzato nella cache del dispatcher, il dispatcher lo invia alla CDN
-6. Se il contenuto non è completamente memorizzato nella cache, il dispatcher richiama (proxy inverso) alla pubblicazione AEM
-7. Contenuto riprodotto dal browser
+1. L’URL viene aggiunto nel browser
+1. Richiesta effettuata alla CDN mappata in DNS a tale dominio
+1. Se il contenuto è completamente memorizzato nella cache su CDN, CDN lo trasmette al browser
+1. Se il contenuto non è completamente memorizzato nella cache, la rete CDN richiama (proxy inverso) al dispatcher
+1. Se il contenuto è completamente memorizzato nella cache del dispatcher, il dispatcher lo invia alla CDN
+1. Se il contenuto non è completamente memorizzato nella cache, il dispatcher richiama (proxy inverso) alla pubblicazione AEM
+1. Il contenuto viene rappresentato dal browser, che potrebbe anche memorizzarlo nella cache, a seconda delle intestazioni
+
+La maggior parte del contenuto scade dopo cinque minuti, una soglia che viene rispettata sia dalla cache del dispatcher che dalla CDN. Durante le ridistribuzioni del servizio di pubblicazione, la cache del dispatcher viene svuotata e successivamente riscaldata prima che i nuovi nodi di pubblicazione accettino il traffico.
+
+Le sezioni seguenti forniscono maggiori dettagli sulla distribuzione dei contenuti, inclusa la configurazione CDN e il caching del dispatcher.
+
+Le informazioni sulla replica dal servizio di creazione al servizio di pubblicazione sono disponibili [qui](/help/operations/replication.md).
+
+>[!NOTE]
+>Il traffico passa attraverso un server Web Apache, che supporta moduli incluso il dispatcher. Il dispatcher viene utilizzato principalmente come cache per limitare l’elaborazione sui nodi di pubblicazione al fine di migliorare le prestazioni.
 
 ### CDN {#cdn}
 
-AEM offre due opzioni:
+AEM offre tre opzioni:
 
-1. CDN gestito - CDN out-of-the-box di AEM.
-2. CDN non gestito - Il cliente porta la propria CDN ed è interamente responsabile della gestione.
+1. CDN gestito da Adobe - CDN integrato da AEM. Questa è l&#39;opzione consigliata perché è completamente integrata.
+1. CDN gestito dal cliente - Il cliente porta la propria CDN ed è interamente responsabile della gestione.
+1. CDN gestito da Adobe - il cliente punta una CDN alla CDN out-of-the-box di AEM.
 
-La prima opzione è altamente consigliata e Adobe non è responsabile del risultato di eventuali errori di configurazione quando si utilizza la seconda opzione.
+>[!CAUTION]
+>La prima opzione è altamente consigliata. Se scegliete la seconda opzione, Adobe non può essere ritenuta responsabile del risultato di eventuali configurazioni errate.
 
-#### CDN gestito {#managed-cdn}
+La seconda e la terza opzione sono consentite caso per caso. Ciò comporta l&#39;adempimento di alcuni prerequisiti, tra cui, a titolo esemplificativo, l&#39;integrazione con il fornitore CDN di un cliente precedente, difficilmente annullabile.
 
-Dopo che Adobe ha fornito la CDN, è necessario creare un CNAME, mappando i domini dell&#39;applicazione su un dominio controllato da Adobe ospitato nel dominio CDN gestito.
+#### CDN gestito da Adobe {#adobe-managed-cdn}
 
-La rete CDN funge da firewall per applicazioni Web layer 7, che richiede la terminazione SSL, pertanto richiede un certificato SSL firmato dal cliente. Durante la fase di pre-rilascio, è necessario fornire il certificato ad Adobe attraverso processi manuali.
+La preparazione per la distribuzione dei contenuti tramite la rete CDN di Adobe è semplice, come descritto di seguito:
 
-Al momento di GA, devi caricare il certificato in Cloud Manager, che a sua volta lo caricherà nella rete CDN. Quando i certificati SSL scadono, riceverete una notifica per consentirvi di aggiornare i certificati in Cloud Manager.
+1. Fornirai ad Adobe il certificato SSL firmato e la chiave segreta condividendo un collegamento a un modulo protetto contenente tali informazioni. Coordinare con l&#39;assistenza clienti su questa attività.
+Nota: Aem come servizio Cloud non supporta i certificati convalidati (DV) del dominio.
+1. Il supporto clienti quindi coordinerà con voi i tempi di un record DNS CNAME, indicando il loro FQDN `adobe-aem.map.fastly.net`.
+1. Al momento della scadenza dei certificati SSL riceverete una notifica per consentirvi di inviare nuovamente i nuovi certificati SSL.
 
-#### CDN non gestito {#unmanaged-cdn}
+Per impostazione predefinita, per una configurazione CDN gestita da Adobe, tutto il traffico pubblico può essere indirizzato al servizio di pubblicazione, sia per gli ambienti di produzione che per quelli non di produzione (sviluppo e fase). Se desiderate limitare il traffico al servizio di pubblicazione per un determinato ambiente (ad esempio, limitando l’area di gestione temporanea per un intervallo di indirizzi IP), per configurare tali restrizioni dovete rivolgervi all’assistenza clienti.
+
+#### CDN gestito cliente {#customer-managed-cdn}
 
 Puoi gestire la tua CDN, a condizione:
 
 1. Esiste una CDN.
-2. Lo gestirà.
-3. L’applicazione non effettua chiamate API estese alla rete CDN che non sono già incluse nell’architettura AEM.
-4. AEM come servizio cloud è in grado di stabilire che il sistema end-to-end funziona correttamente.
-5. Dovrete fornire ad Adobe la whitelist degli URL CDN per consentirne l&#39;utilizzo.
+1. Deve essere un CDN supportato. Al momento, Akamai è supportato. Se l’organizzazione desidera gestire un CDN non supportato, rivolgiti all’assistenza clienti.
+1. Lo gestirà.
+1. Devi essere in grado di configurare CDN per lavorare con Aem come servizio cloud. Consulta le istruzioni di configurazione riportate di seguito.
+1. Gli esperti CDN tecnici sono in servizio in caso di problemi correlati.
+1. Devi fornire whitelist di nodi CDN a Cloud Manager, come descritto nelle istruzioni di configurazione.
+1. È necessario eseguire e superare con successo un test di carico prima di passare alla produzione.
 
-Adobe fornirà un URL AEM Cloud da usare come origine della CDN.
+Istruzioni di configurazione:
 
+1. Fornite ad Adobe la whitelist del fornitore CDN chiamando l&#39;API create/update dell&#39;ambiente con un elenco di CIDR da inserire nella whitelist.
+1. Impostate l’ `X-Forwarded-Host` intestazione con il nome del dominio.
+1. Impostate l&#39;intestazione Host con il dominio di origine, ovvero Aem come ingresso del servizio Cloud. Il valore deve provenire da Adobe.
+1. Inviate l’intestazione SNI all’origine. L&#39;intestazione sni deve essere il dominio di origine.
+1. Imposta `X-Edge-Key` ciò che è necessario per indirizzare correttamente il traffico ai server AEM. Il valore deve provenire da Adobe.
+
+Prima di accettare il traffico live, è necessario verificare con l&#39;assistenza clienti Adobe che il ciclo di traffico end-to-end funziona correttamente.
+
+#### CDN gestito da Adobe {#point-to-point-CDN}
+
+Supportato se desiderate utilizzare il vostro CDN esistente, ma non potete soddisfare i requisiti di un CDN gestito dal cliente. In questo caso, gestite la vostra rete CDN, ma indicate la rete CDN gestita da Adobe.
+
+I clienti devono eseguire e superare con successo un test di carico prima di passare alla produzione.
+
+Istruzioni di configurazione:
+
+1. Impostate l’ `X-Forwarded-Host` intestazione con il nome del dominio.
+1. Impostate l&#39;intestazione Host con il dominio di origine, che è l&#39;ingresso CDN di Adobe. Il valore deve provenire da Adobe.
+1. Inviate l’intestazione SNI all’origine. Come l&#39;intestazione Host, l&#39;intestazione sni deve essere il dominio di origine.
+1. Impostate il `X-Edge-Key`, necessario per indirizzare correttamente il traffico ai server AEM. Il valore deve provenire da Adobe.
 
 #### Annullamento validità cache CDN {#CDN-cache-invalidation}
 
@@ -745,27 +789,36 @@ L&#39;annullamento della validità della cache segue le regole seguenti:
 * Le librerie client (JavaScript e CSS) vengono memorizzate nella cache in modo indefinito utilizzando il controllo cache impostato su immutabile o su 30 giorni per i browser meno recenti che non rispettano il valore immutabile. Le librerie client vengono servite in un percorso univoco che cambia se cambiano le librerie client. In altre parole, l&#39;HTML che fa riferimento alle librerie client verrà prodotto come necessario, in modo da poter sperimentare il nuovo contenuto mentre viene pubblicato.
 * Per impostazione predefinita, le immagini non sono memorizzate nella cache.
 
+Prima di accettare il traffico live, i clienti devono verificare con il supporto clienti Adobe che il ciclo di traffico end-to-end funziona correttamente.
+
 ## Annullamento della validità della cache del dispatcher esplicito {#explicit-invalidation}
 
-Prima di AEM come servizio cloud, erano disponibili 2 modi per annullare la validità della cache del dispatcher.
+Come indicato in precedenza, il traffico passa attraverso un server Web Apache, che supporta moduli incluso il dispatcher. Il dispatcher viene utilizzato principalmente come cache per limitare l’elaborazione sui nodi di pubblicazione al fine di migliorare le prestazioni.
 
-1. Richiamate l&#39;API di replica, specificando l&#39;agente di eliminazione del dispatcher di pubblicazione
+In generale, non sarà necessario annullare manualmente il contenuto nel dispatcher, ma è possibile, se necessario, come descritto di seguito.
+
+Prima di AEM come servizio cloud, erano disponibili due modi per annullare la validità della cache del dispatcher.
+
+1. Richiamate l&#39;agente di replica, specificando l&#39;agente di eliminazione del dispatcher di pubblicazione
 2. Chiamata diretta dell&#39; `invalidate.cache` API (ad esempio POST /dispatcher/invalidate.cache)
 
 L&#39; `invalidate.cache` approccio non sarà più supportato, in quanto riguarda solo un nodo dispatcher specifico.
 AEM come servizio cloud opera a livello di servizio, non a livello di singolo nodo, pertanto le istruzioni di annullamento della validità contenute nella documentazione [Dispatcher Help](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) non sono più precise.
-È invece necessario utilizzare l&#39;approccio API di replica. [La documentazione](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) API è disponibile e per un esempio di cancellazione della cache, consultate la pagina [di esempio](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API e in particolare l&#39;esempio CustomStep che emette un&#39;azione di replica di tipo ACTIVATE a tutti gli agenti disponibili.
+Utilizzare invece l&#39;agente di flush di replica. Questo può essere fatto utilizzando l&#39;API di replica. La documentazione API di replica è disponibile [qui](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) e per un esempio di svuotamento della cache, consultate la pagina [di esempio](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API, in particolare l&#39; `CustomStep` esempio che emette un&#39;azione di replica di tipo ACTIVATE a tutti gli agenti disponibili. L&#39;endpoint dell&#39;agente di flush non è configurabile ma preconfigurato per puntare al dispatcher, associato al servizio di pubblicazione che esegue l&#39;agente di flush. L&#39;agente di flush può in genere essere attivato da eventi OSGi o flussi di lavoro.
 
 Il diagramma seguente illustra questo.
 
-<!-- [CDN](assets/cdn.png "CDN") -->
+![](assets/cdn.png "CDNCDN")
 
-<!-- See [Apache and Dispatcher Configuration and Testing](../developing/introduction/developer-experience.md#apache-and-dispatcher-configuration-and-testing) for instructions on how a developer can configure apache and the dispatcher module. -->
+In caso di problemi di cancellazione della cache del dispatcher, contattare l’assistenza clienti che, se necessario, può cancellare la cache del dispatcher.
+
+La CDN gestita da Adobe rispetta i TTL e non è quindi necessario scaricarla. Se si sospetta un problema, contattate l’assistenza clienti che potrà cancellare una cache CDN gestita da Adobe in base alle esigenze.
 
 ### Annullamento della validità della cache del dispatcher durante l&#39;attivazione/disattivazione {#cache-activation-deactivation}
 
-L’annullamento della validità con attivazione della pubblicazione è uguale a quello del quickstart:
-Quando l’istanza di pubblicazione riceve una nuova versione di una pagina o di una risorsa dall’autore (tramite la coda di replica e pipeline), utilizza l’agente di svuotamento per annullare i percorsi appropriati nel dispatcher. Il percorso aggiornato viene rimosso dalla cache del dispatcher, insieme ai relativi elementi principali, fino a un livello che è possibile configurare con [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+Come nelle versioni precedenti di AEM, la pubblicazione o l’annullamento della pubblicazione di pagine eliminerà il contenuto dalla cache del dispatcher. Se si sospetta un problema di caching, i clienti devono ripubblicare le pagine in questione.
+
+Quando l’istanza di pubblicazione riceve una nuova versione di una pagina o di una risorsa dall’autore, utilizza l’agente di eliminazione per annullare i percorsi appropriati nel dispatcher. Il percorso aggiornato viene rimosso dalla cache del dispatcher, insieme ai relativi elementi principali, fino a un livello (è possibile configurarlo con [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
 ### Massima libertà di stampa e coerenza delle versioni {#content-consistency}
 
