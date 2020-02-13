@@ -2,7 +2,7 @@
 title: Configurare la pipeline CI/CD - Servizi cloud
 description: Configurare la pipeline CI/CD - Servizi cloud
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -88,7 +88,7 @@ Nella schermata iniziale, queste condotte sono elencate in una nuova scheda:
 
    Inoltre, puoi impostare l&#39;attivatore di distribuzione e un importante comportamento di errore dalle opzioni della pipeline.
 
-   ![](assets/set-up-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. Fate clic su **Salva** e la pipeline viene visualizzata sulla scheda nella schermata iniziale con tre azioni, come illustrato di seguito:
 
@@ -97,8 +97,6 @@ Nella schermata iniziale, queste condotte sono elencate in una nuova scheda:
    * **Modifica** : consente di modificare le impostazioni della pipeline
    * **Genera** : consente di passare alla pagina di esecuzione dalla quale è possibile eseguire la pipeline
    * **Gestione Git** : consente all&#39;utente di ottenere le informazioni necessarie per accedere al repository Git di Cloud Manager
-
-
 
 ## Passaggi successivi {#the-next-steps}
 
