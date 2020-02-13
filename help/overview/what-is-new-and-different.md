@@ -2,7 +2,7 @@
 title: Differenze e novità - Adobe Experience Manager come servizio cloud
 description: 'Differenze e novità - Adobe Experience Manager (AEM) come servizio cloud. '
 translation-type: tm+mt
-source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
+source-git-commit: b8eed5bd68d961a95d0ed15a4e88cee327a82594
 
 ---
 
@@ -37,8 +37,6 @@ Esistono differenze intrinseche tra questi approcci precedenti e AEM come serviz
 >[!NOTE]
 >
 >Per ulteriori informazioni sulle versioni locale e del servizio gestito, consultate la documentazione fornita con [AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html).
-
-<!-- * [Miscellaneous](#miscellaneous) -->
 
 ## Architettura {#architecture}
 
@@ -88,11 +86,9 @@ Questo consente di ridimensionare automaticamente i diversi pattern di utilizzo:
 
 ## Aggiornamenti {#upgrades}
 
-<!--
 >[!NOTE]
 >
->For further details see the [Deploying Introduction](/help/sites/deploying/introduction.md).
--->
+>Per ulteriori dettagli, vedere [Introduzione](/help/implementing/deploying/overview.md)alla distribuzione.
 
 <!--
 ### Previous Versions {#previous-versions-upgrades}
@@ -166,11 +162,9 @@ Attualmente Cloud Manager è in grado di creare ambienti in 3 aree geografiche (
 
 ## Onboarding {#onboarding}
 
-<!--
 >[!NOTE]
 >
->For further details see [Onboarding - An Overview](/help/onboarding/overview.md).
--->
+>Per ulteriori dettagli, consultate [Onboarding](/help/onboarding/home.md).
 
 <!--
 ### Previous Versions {#previous-versions-onboarding}
@@ -208,13 +202,7 @@ L’avvio e la gestione di un progetto AEM è semplice quando si utilizza AEM co
 
 >[!NOTE]
 >
->Per ulteriori dettagli, consultare la documentazione relativa alle linee guida per lo [sviluppo](/help/implementing/developing/introduction/development-guidelines.md) .
-
-<!--
->[!NOTE]
->
->For further details start with [The Developing Experience](/help/sites/developing/introduction/developer-experience.md, [Developing - The Basics](/help/sites/developing/introduction/the-basics.md) and [Developing Best Practices](/help/sites/best-practices/developing.md).
--->
+>Per ulteriori dettagli è possibile iniziare con [Linee guida](/help/implementing/developing/introduction/development-guidelines.md) per lo sviluppo e [lo sviluppo - Esercitazione](/help/implementing/developing/introduction/develop-wknd-tutorial.md)WKND.
 
 <!--
 ### Previous Versions {#previous-versions-developing}
@@ -303,11 +291,9 @@ Le operazioni per AEM come servizio Cloud sono inoltre supportate da una nuova i
 
 ## Gestione identità {#identity-management}
 
-<!--
 >[!NOTE]
 >
->For further details see [Security - Single Sign-On](/help/sites/security/single-sign-on.md).
--->
+>Per ulteriori dettagli, consultate [Sicurezza - Supporto](/help/security/ims-support.md)IMS.
 
 <!--
 ### Previous Versions {#previous-versions-identity-management}
@@ -336,11 +322,9 @@ Questo combina i vantaggi di:
 
 ## Interfaccia utente di authoring {#authoring-user-interface}
 
-<!--
 >[!NOTE]
 >
->For further details, the [Basic Handling](/help/sites/authoring/getting-started/basic-handling.md) and [Best Practices](/help/sites/best-practices/authoring.md) are good starting points.
--->
+>Per ulteriori dettagli, la [gestione](/help/sites-cloud/authoring/getting-started/basic-handling.md) di base è un buon punto di partenza.
 
 <!--
 ### Previous Versions {#previous-versions-authoring}
