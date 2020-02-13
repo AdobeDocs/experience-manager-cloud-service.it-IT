@@ -2,7 +2,7 @@
 title: Comprendere i risultati dei test - Servizi cloud
 description: Comprendere i risultati dei test - Servizi cloud
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: a0630410d281913f35caa5ba33807496e612ef3d
 
 ---
 
@@ -117,7 +117,7 @@ All&#39;interno di questo file JAR, i nomi delle classi dei test effettivi da es
 
 Ad esempio, una classe denominata `com.myco.tests.aem.ExampleIT` viene eseguita ma non viene `com.myco.tests.aem.ExampleTest` eseguita una classe denominata.
 
-Le classi di test devono essere normali test JUnit. L&#39;infrastruttura di test è progettata e configurata per essere compatibile con le convenzioni utilizzate dalla libreria di test dei client Aem-testing. Gli sviluppatori sono invitati a utilizzare questa libreria e a seguire le procedure ottimali.
+Le classi di test devono essere normali test JUnit. L&#39;infrastruttura di test è progettata e configurata per essere compatibile con le convenzioni utilizzate dalla libreria di test dei client Aem-testing. Gli sviluppatori sono invitati a utilizzare questa libreria e a seguire le procedure ottimali. Per ulteriori informazioni, consultate Collegamento [](https://github.com/adobe/aem-testing-clients) Git.
 
 ## Test funzionale personalizzato {#custom-functional-test}
 
@@ -126,7 +126,7 @@ Il passaggio di test funzionale personalizzato nella pipeline è sempre presente
 Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita. Questo passaggio viene eseguito immediatamente dopo la distribuzione dell’area di visualizzazione.
 
 > Nota:
->Il pulsante **Scarica registro** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Questi registri non includono i registri del processo di runtime AEM effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code descritta in precedenza.
+>Il pulsante **Scarica registro** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Questi registri non includono i registri del processo di runtime AEM effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) .
 
 ## Esecuzione test locale {#local-test-execution}
 
