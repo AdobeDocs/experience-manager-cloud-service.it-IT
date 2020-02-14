@@ -2,7 +2,7 @@
 title: Dispatcher in Cloud
 description: 'Dispatcher in Cloud '
 translation-type: tm+mt
-source-git-commit: 2ab8a4fb492b85c1a9b42442d868cdbc329756cf
+source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
 
 ---
 
@@ -806,9 +806,9 @@ L&#39; `invalidate.cache` approccio non sarà più supportato, in quanto riguard
 AEM come servizio cloud opera a livello di servizio, non a livello di singolo nodo, pertanto le istruzioni di annullamento della validità contenute nella documentazione [Dispatcher Help](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) non sono più precise.
 Utilizzare invece l&#39;agente di flush di replica. Questo può essere fatto utilizzando l&#39;API di replica. La documentazione API di replica è disponibile [qui](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) e per un esempio di svuotamento della cache, consultate la pagina [di esempio](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API, in particolare l&#39; `CustomStep` esempio che emette un&#39;azione di replica di tipo ACTIVATE a tutti gli agenti disponibili. L&#39;endpoint dell&#39;agente di flush non è configurabile ma preconfigurato per puntare al dispatcher, associato al servizio di pubblicazione che esegue l&#39;agente di flush. L&#39;agente di flush può in genere essere attivato da eventi OSGi o flussi di lavoro.
 
-<!--The diagram below illustrates this.
+Il diagramma seguente illustra questo.
 
-![CDN](assets/cdn.png "CDN")-->
+![](assets/cdnb.png "CDNCDN")
 
 In caso di problemi di cancellazione della cache del dispatcher, contattare l’assistenza clienti che, se necessario, può cancellare la cache del dispatcher.
 
