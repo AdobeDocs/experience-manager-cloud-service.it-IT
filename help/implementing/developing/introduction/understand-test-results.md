@@ -2,12 +2,12 @@
 title: Comprendere i risultati dei test - Servizi cloud
 description: Comprendere i risultati dei test - Servizi cloud
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
 
 ---
 
 
-# Informazioni sui risultati del test {#understand-test-results}
+# Risultati dei test {#understand-test-results}
 
 Le esecuzioni della pipeline di Cloud Manager for Cloud Services supporteranno l&#39;esecuzione di test eseguiti nell&#39;ambiente del passaggio. Ciò è in contrasto con i test eseguiti durante il passaggio Genera e Prova unità che vengono eseguiti offline, senza l&#39;accesso ad alcun ambiente AEM in esecuzione.
 Esistono due tipi di test eseguiti in questo contesto:
@@ -125,7 +125,7 @@ Il passaggio di test funzionale personalizzato nella pipeline è sempre presente
 
 Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita. Questo passaggio viene eseguito immediatamente dopo la distribuzione dell’area di visualizzazione.
 
-> Nota:
+>[!NOTE]
 >Il pulsante **Scarica registro** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Questi registri non includono i registri del processo di runtime AEM effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) .
 
 ## Esecuzione test locale {#local-test-execution}
