@@ -2,7 +2,7 @@
 title: Distribuzione del codice - Servizi cloud
 description: Distribuzione del codice - Servizi cloud
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ---
 
@@ -39,15 +39,15 @@ Dopo aver configurato la **pipeline** (repository, ambiente e ambiente di test),
 
    * Convalida: Questo passaggio assicura che la pipeline sia configurata per utilizzare le risorse attualmente disponibili, ad esempio che il ramo configurato esiste, gli ambienti sono disponibili.
    * Build e unit test: Questo passaggio esegue un processo di compilazione containerizzato. Consultate [Creare un progetto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) di applicazione AEM per informazioni dettagliate sull&#39;ambiente di creazione.
-   * Scansione del codice: Questo passaggio valuta la qualità del codice dell’applicazione. Consultate [Comprendere i risultati](understand-test-results.md) del test per informazioni dettagliate sul processo di test.
+   * Scansione del codice: Questo passaggio valuta la qualità del codice dell’applicazione. Consultate [Comprendere i risultati](/help/implementing/developing/introduction/understand-test-results.md) del test per informazioni dettagliate sul processo di test.
    * Genera immagini: Questo passaggio include un file di registro dal processo utilizzato per creare le immagini. Questo processo è responsabile della trasformazione dei pacchetti di contenuti e dispatcher prodotti dalla fase di creazione in immagini Docker e configurazione Kubernetes.
    * Distribuisci nello stage
 
       ![](assets/stage-deployment.png)
    Il test **dello** stage comporta i seguenti passaggi:
 
-   * Test funzionale del prodotto: Le esecuzioni della pipeline di Cloud Manager supporteranno l&#39;esecuzione di test che vengono eseguiti nell&#39;ambiente del passaggio. Consultate [Comprendere i risultati](understand-test-results.md) del test per informazioni dettagliate sul processo di test.
-   * Test funzionale personalizzato: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita. Consultate [Comprendere i risultati](understand-test-results.md) del test per informazioni dettagliate sul processo di test.
+   * Test funzionale del prodotto: Le esecuzioni della pipeline di Cloud Manager supporteranno l&#39;esecuzione di test che vengono eseguiti nell&#39;ambiente del passaggio. Consultate [Comprendere i risultati](/help/implementing/developing/introduction/understand-test-results.md) del test per informazioni dettagliate sul processo di test.
+   * Test funzionale personalizzato: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita. Consultate [Comprendere i risultati](/help/implementing/developing/introduction/understand-test-results.md) del test per informazioni dettagliate sul processo di test.
 
       ![](assets/stage-testing.png)
 
