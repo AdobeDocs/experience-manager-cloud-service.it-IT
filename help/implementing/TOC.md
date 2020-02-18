@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
 
 ---
 
@@ -14,7 +14,6 @@ source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
    + [Gestione degli ambienti](cloud-manager/manage-environments.md)
    + [Configurazione della pipeline CI/CD](cloud-manager/configure-pipeline.md)
    + [Distribuzione del codice](cloud-manager/deploy-code.md)
-   + [Informazioni sui risultati del test](cloud-manager/understand-test-results.md)
    + [Informazioni sulle regole di qualità del codice personalizzato](cloud-manager/custom-code-quality-rules.md)
    + [Accesso e gestione dei registri](cloud-manager/manage-logs.md)
    + [Informazioni sulle notifiche](cloud-manager/notifications.md)
@@ -30,6 +29,7 @@ source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
    + [AEM come linee guida per lo sviluppo dei servizi cloud](developing/introduction/development-guidelines.md)
    + [Guida introduttiva allo sviluppo di siti AEM - Esercitazione WKND](developing/introduction/develop-wknd-tutorial.md)
    + [AEM come API del servizio cloud](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [Comprendere i risultati del test](/help/implementing/developing/introduction/understand-test-results.md)
 + Estensione di AEM come servizio cloud {#extending}
    + [Frammenti esperienza](developing/extending/experience-fragments.md)
 + Implementazione di AEM come servizio cloud {#deploying}
