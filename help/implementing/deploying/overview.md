@@ -1,19 +1,23 @@
 ---
-title: Implementazione di AEM come servizio cloud
-description: 'Implementazione di AEM come servizio cloud '
+title: Implementazione in AEM come servizio cloud
+description: 'Implementazione in AEM come servizio cloud '
 translation-type: tm+mt
-source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
+source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 ---
 
 
-# Implementazione di AEM come servizio cloud {#deploying-to-aem-as-a-cloud-service}
+# Implementazione in AEM come servizio cloud {#deploying-to-aem-as-a-cloud-service}
 
 ## Introduzione {#introduction}
 
 Le basi dello sviluppo del codice sono simili in AEM come servizio cloud rispetto alle soluzioni AEM On Premise e Managed Services. Gli sviluppatori scrivono il codice e lo sottopongono a test localmente, che vengono quindi inviati a AEM remoto come ambienti di servizio cloud. Cloud Manager, uno strumento opzionale per la distribuzione dei contenuti per i servizi gestiti, è obbligatorio. Questo è ora l&#39;unico meccanismo per distribuire il codice ad AEM come ambienti di servizio cloud.
 
 L&#39;aggiornamento della versione di AEM è sempre un evento di distribuzione separato dall&#39;invio di codice personalizzato. Visualizzate in un altro modo, le versioni di codice personalizzate devono essere testate rispetto alla versione AEM in produzione, dal momento che questo è l’elemento su cui verranno distribuite. Gli aggiornamenti delle versioni di AEM che si verificano successivamente, e che saranno frequenti se confrontati con i servizi gestiti oggi, vengono applicati automaticamente. Sono compatibili con il codice cliente già distribuito.
+
+Il seguente video fornisce una panoramica di alto livello su come distribuire il codice ad AEM come servizio cloud:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 Il resto di questo documento descriverà come gli sviluppatori devono adattare le proprie prassi in modo che utilizzino sia AEM che gli aggiornamenti della versione di un servizio cloud, nonché gli aggiornamenti dei clienti.
 
@@ -45,7 +49,7 @@ Per le soluzioni AEM precedenti, la versione più recente di AEM veniva modifica
 
 Come per le versioni AEM non cloud esistenti, nella maggior parte dei casi sarà supportato uno sviluppo locale offline basato su uno specifico quickstart, che sarà lo strumento preferito per il debug.
 
-> [!NOTA}
+>[!NOTE]
 >Esistono sottili differenze operative tra il comportamento dell&#39;applicazione su un computer locale e quello di Adobe Cloud. Queste differenze architettoniche devono essere rispettate durante lo sviluppo locale e possono portare a un comportamento diverso durante la distribuzione nell&#39;infrastruttura cloud. A causa di queste differenze è importante eseguire test esaustivi sugli ambienti di sviluppo e di stage prima di distribuire il nuovo codice personalizzato in produzione.
 
 Per sviluppare il codice personalizzato per una versione interna, è necessario scaricare e installare la versione pertinente di [AEM come SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) per servizi cloud. Per ulteriori informazioni sull&#39;utilizzo di AEM come strumenti di dispatcher dei servizi cloud, consultate [questa pagina](/help/implementing/dispatcher/overview.md).
@@ -107,7 +111,8 @@ Dopo il passaggio alla nuova versione dell&#39;applicazione:
 
 È possibile limitare l’installazione di contenuto modificabile alla creazione o alla pubblicazione incorporando pacchetti in una cartella install.author o install.publish in `/apps`. Informazioni dettagliate nella documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) AEM sulla ristrutturazione del progetto consigliata.
 
->[!NOTE] I pacchetti di contenuto vengono distribuiti a tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Tale limitazione è in vigore per garantire la possibilità di eseguire un test dell&#39;esecuzione automatica. Il contenuto specifico per un ambiente richiede l&#39;installazione manuale tramite Package Manager.
+>[!NOTE]
+> I pacchetti di contenuto vengono distribuiti a tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Tale limitazione è in vigore per garantire la possibilità di eseguire un test dell&#39;esecuzione automatica. Il contenuto specifico per un ambiente richiede l&#39;installazione manuale tramite Package Manager.
 
 Inoltre, non esiste alcun meccanismo per ripristinare le modifiche apportate al pacchetto di contenuto modificabile dopo che sono state applicate. Se i clienti rilevano un problema, possono scegliere di risolverlo nella release successiva del codice o come ultima risorsa, ripristinare l&#39;intero sistema a un punto nel tempo prima della distribuzione.
 
@@ -123,7 +128,8 @@ Per i seguenti casi, è preferibile adottare l&#39;approccio di codificare manua
 * Creare ed eliminare gruppi
 * Creare ed eliminare utenti
 * Aggiunta di ACL
-   > [!NOTE] La definizione di ACL richiede che le strutture dei nodi siano già presenti. Pertanto, prima di creare le istruzioni percorso potrebbe essere necessario.
+   > [!NOTE]
+   > La definizione di ACL richiede che le strutture dei nodi siano già presenti. Pertanto, prima di creare le istruzioni percorso potrebbe essere necessario.
 * Aggiungi percorso (ad esempio per le strutture di cartelle principali)
 * Aggiungere CND (definizioni dei tipi di nodo)
 
