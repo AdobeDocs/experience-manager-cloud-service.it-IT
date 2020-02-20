@@ -2,12 +2,12 @@
 title: Distribuzione di immagini ottimizzate per un sito reattivo
 description: Come utilizzare la funzione di codice reattivo per fornire immagini ottimizzate
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
+# Distribuzione di immagini ottimizzate per un sito reattivo {#delivering-optimized-images-for-a-responsive-site}
 
 Utilizzate la funzione di codice reattivo quando desiderate condividere il codice per il servizio reattivo con il vostro sviluppatore Web. Potete copiare il codice reattivo (**[!UICONTROL RESS]**) negli Appunti per condividerlo con lo sviluppatore Web.
 
@@ -15,7 +15,7 @@ Questa funzione è utile se il sito Web si trova su un sito Web WCM di terze par
 
 Consultate anche [Incorporamento del visualizzatore video in una pagina Web.](embed-code.md)
 
-Consultate anche [Collegamento di URL all’applicazione Web.](linking-urls-to-yourwebapplication.md)
+See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
 **Per fornire immagini ottimizzate per un sito** reattivo:
 
@@ -44,4 +44,4 @@ Consultate anche [Collegamento di URL all’applicazione Web.](linking-urls-to-y
 
 HTTP/2 è il nuovo protocollo Web aggiornato che migliora il modo in cui i browser e i server comunicano. Fornisce un trasferimento più rapido delle informazioni e riduce la quantità di potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media è supportata mediante HTTP/2, che fornisce una risposta e tempi di caricamento migliori.
 
-Per informazioni dettagliate sull’utilizzo di HTTP/2 con l’account per contenuti multimediali dinamici, consultate Consegna di contenuti [](http2.md) HTTP2.
+Per informazioni dettagliate sull’utilizzo di HTTP/2 con l’account per contenuti multimediali dinamici, consultate Consegna di contenuti [](http2faq.md) HTTP2.
