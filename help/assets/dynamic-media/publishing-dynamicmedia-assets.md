@@ -2,12 +2,12 @@
 title: Pubblicazione di risorse multimediali dinamiche
 description: Come pubblicare le risorse multimediali dinamiche
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
 
-# Pubblicazione di risorse multimediali dinamiche {#publishing-dynamic-media-assets}
+# Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
 Per pubblicare le risorse Contenuti multimediali dinamici, selezionatele e toccate **[!UICONTROL Pubblica]**. Dopo la pubblicazione, le risorse multimediali dinamiche possono essere incluse in una pagina Web tramite URL o mediante incorporazione.
 
@@ -21,7 +21,7 @@ Nella vista **[!UICONTROL a]** schede, sotto il nome di una risorsa viene visual
 
 Se intendete pubblicare le risorse video subito dopo la codifica, accertatevi che la codifica sia stata completata. Quando i video vengono ancora codificati, il sistema segnala che è in corso un flusso di lavoro di elaborazione video. Al termine della codifica video, dovreste essere in grado di visualizzare l’anteprima delle rappresentazioni video. A questo punto, è sicuro pubblicare i video senza che si verifichino errori di pubblicazione.
 
-Consultate anche [Collegamento di URL all’applicazione](linking-urls-to-yourwebapplication.md)Web.
+See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
 Consultate anche [Incorporamento del visualizzatore video in una pagina Web.](embed-code.md)
 
@@ -39,5 +39,5 @@ Per informazioni dettagliate sulla pubblicazione di un set o di una risorsa, con
 
 AEM ora supporta la distribuzione di tutti i contenuti multimediali dinamici (immagini e video) su HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
 
-Per ulteriori informazioni, consultate la distribuzione [HTTP/2 di contenuti con domande](/help/assets/dynamic-media/scene7-http2faq.md) frequenti.
+Per ulteriori informazioni, consultate la distribuzione [HTTP/2 di contenuti con domande](/help/assets/dynamic-media/http2faq.md) frequenti.
 <!--this md file used to reside under sites-administering-->
