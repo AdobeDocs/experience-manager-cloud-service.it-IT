@@ -3,7 +3,7 @@ title: Digital Rights Management in Adobe Experience Manager Assets
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -32,9 +32,9 @@ Potete visualizzare lo stato di scadenza di una risorsa nei seguenti punti:
 
 Potete cercare le risorse scadute, comprese le risorse secondarie scadute, nel pannello Ricerca.
 
-1. Nella console Risorse, fate clic sull’icona Ricerca nella barra degli strumenti per visualizzare la casella Ricerca Omni.
+1. Nella console Risorse, fai clic sull’icona Ricerca nella barra degli strumenti per visualizzare il campo Omnisearch.
 
-1. Con il cursore nella casella Cerca Omni, premi il tasto Invio per visualizzare la pagina Risultati ricerca.
+1. Con il cursore nella casella di ricerca Omnice, premere il tasto Invio per visualizzare la pagina dei risultati della ricerca.
 
 1. Fate clic sull’icona GlobalNav per visualizzare il pannello di ricerca.
 
@@ -42,13 +42,13 @@ Potete cercare le risorse scadute, comprese le risorse secondarie scadute, nel p
 
 1. Selezionare **[!UICONTROL Scaduto]**. Le risorse scadute vengono visualizzate nei risultati della ricerca.
 
-Quando scegliete l’opzione **Scaduto** , nella console Risorse vengono visualizzate solo le risorse e le risorse secondarie scadute a cui fanno riferimento le risorse composte. Le risorse composte che fanno riferimento a risorse secondarie scadute non vengono visualizzate subito dopo la scadenza delle risorse secondarie. Vengono invece visualizzati dopo che Risorse AEM rileva che fanno riferimento a risorse secondarie scadute al successivo esecuzione del programma.
+Quando scegliete l’opzione **[!UICONTROL Scaduto]** , nella console Risorse vengono visualizzate solo le risorse e le risorse secondarie scadute a cui fanno riferimento le risorse composte. Le risorse composte che fanno riferimento a risorse secondarie scadute non vengono visualizzate subito dopo la scadenza delle risorse secondarie. Vengono invece visualizzati dopo che Risorse AEM rileva che fanno riferimento a risorse secondarie scadute al successivo esecuzione del programma.
 
 Se modificate la data di scadenza di una risorsa pubblicata in una data precedente al ciclo di pianificazione corrente, la pianificazione rileva comunque la risorsa come una risorsa scaduta al successivo esecuzione e ne riflette lo stato di conseguenza.
 
 Inoltre, se un problema o un errore impedisce al pianificatore di rilevare le risorse scadute nel ciclo corrente, il pianificatore riesamina tali risorse nel ciclo successivo e ne rileva lo stato scaduto.
 
-Per abilitare la console Risorse per visualizzare le risorse composte di riferimento insieme alle risorse secondarie scadute, configura un flusso di lavoro **Adobe CQ DAM Expiry Notification** in AEM Configuration Manager.
+Per abilitare la console Risorse per visualizzare le risorse composte di riferimento insieme alle risorse secondarie scadute, configura un flusso di lavoro **[!UICONTROL Adobe CQ DAM Expiry Notification]** in AEM Configuration Manager.
 
 1. Apri Gestione configurazione AEM.
 1. Scegliete **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Per impostazione predefinita, è selezionata l’opzione Pianificatore **[!UICONTROL basato su]** tempo, che pianifica un processo per verificare in un momento specifico se una risorsa ha risorse secondarie scadute. Al termine del processo, le risorse con risorse secondarie scadute e risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
@@ -90,7 +90,7 @@ La console Risorse di Adobe Experience Manager (AEM) Assets può visualizzare va
 
 1. Per cercare le risorse in base al loro stato, toccate o fate clic sull’icona **[!UICONTROL Cerca]** per visualizzare la barra di ricerca Omnico.
 
-1. Premi il tasto Invio, quindi tocca o fai clic sull’icona **[!UICONTROL GlobalNav]** per visualizzare il pannello Ricerca.
+1. Premere il tasto Invio, quindi fare clic o toccare l&#39;icona AEM per visualizzare il pannello di ricerca.
 1. Nel pannello Ricerca, tocca o fai clic su Stato **** pubblicazione e seleziona **[!UICONTROL Pubblicato]** per cercare le risorse pubblicate in Risorse AEM.
 
 1. Toccate/fate clic su Stato **** approvazione e fate clic sull&#39;opzione appropriata per cercare le risorse approvate o rifiutate.
