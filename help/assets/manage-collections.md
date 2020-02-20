@@ -4,12 +4,12 @@ description: Comprendere il concetto di raccolta in Risorse AEM. Scoprite come r
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3291f4f5de8c5333013850dad71630689cae7565
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage collections {#manage-collections}
+# Gestire le raccolte {#manage-collections}
 
 Una raccolta è un set di risorse all&#39;interno di Risorse Adobe Experience Manager (AEM). Utilizzate le raccolte per condividere le risorse tra gli utenti.
 
@@ -225,7 +225,7 @@ Potete aggiungere una raccolta a un&#39;altra raccolta, creando in tal modo una 
 
 Nell’interfaccia utente di Assets, puoi cercare o filtrare le risorse in base a determinate regole, criteri di ricerca o facet di ricerca personalizzati. Se salvate queste ricerche come Ricerche **** salvate, potete accedervi in un secondo momento dall’elenco Ricerche **** salvate nel pannello Filtro. La creazione di una ricerca salvata crea anche una raccolta dinamica.
 
-Le ricerche salvate vengono create quando create una raccolta avanzata. Le raccolte avanzate vengono aggiunte automaticamente all&#39;elenco Ricerche **** salvate. La query delle ricerche salvate per la raccolta viene salvata nella `dam:query` proprietà in CRXDE nella posizione relativa `/content/dam/collections/`.
+Le ricerche salvate vengono create quando create una raccolta avanzata. Le raccolte avanzate vengono aggiunte automaticamente all&#39;elenco Ricerche **** salvate. La query delle ricerche salvate per la raccolta viene salvata nella `dam:query` proprietà in CRX nella posizione relativa `/content/dam/collections/`.
 
 >[!NOTE]
 >
