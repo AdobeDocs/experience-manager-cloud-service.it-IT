@@ -1,13 +1,13 @@
 ---
-title: Collegamento degli URL all’applicazione Web
+title: Collegamento di URL all’applicazione web
 description: Come collegare gli URL all’applicazione Web in contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Collegamento degli URL all’applicazione Web {#linking-urls-to-your-web-application}
+# Collegamento di URL all’applicazione web {#linking-urls-to-your-web-application}
 
 I siti Web e le applicazioni accedono ai servizi di Dynamic Media mediante chiamate URL. Dopo aver pubblicato una risorsa, Dynamic Media attiva una stringa URL che fa riferimento alla risorsa. Potete incollare questi URL in un browser Web per sottoporli a test.
 
@@ -19,11 +19,11 @@ Per inserire queste stringhe URL nelle pagine Web e nelle applicazioni, copiatel
 >
 >Le stringhe URL sono disponibili solo per le rappresentazioni dinamiche delle risorse. Al momento non sono disponibili per le risorse statiche che risiedono in DAM e non nel server per contenuti multimediali dinamici. Il pulsante URL non viene visualizzato per le rappresentazioni statiche.
 
-Consultate anche [Incorporamento di video o visualizzatori di immagini in una pagina Web.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
 
 See also [Linking YouTube URLs to your Web Application.](video.md)
 
-Consultate anche [Distribuzione di immagini ottimizzate per un sito reattivo.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-assets)
 
@@ -205,4 +205,4 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
 HTTP/2 è il nuovo protocollo Web aggiornato che migliora il modo in cui i browser e i server comunicano. Fornisce un trasferimento più rapido delle informazioni e riduce la quantità di potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media ora può avvenire tramite HTTP/2, migliorando la risposta e i tempi di caricamento.
 
-Per informazioni dettagliate sull’utilizzo di HTTP/2 con l’account per contenuti multimediali dinamici, consultate Consegna di contenuti [](http2.md) HTTP2.
+Per informazioni dettagliate sull’utilizzo di HTTP/2 con l’account per contenuti multimediali dinamici, consultate Consegna di contenuti [](http2faq.md) HTTP2.
