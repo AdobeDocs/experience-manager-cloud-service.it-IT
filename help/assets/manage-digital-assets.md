@@ -4,12 +4,12 @@ description: Scopri i diversi metodi di gestione e modifica delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage assets {#manag-assets}
+# Manage assets {#manage-assets}
 
 Questo articolo descrive come gestire e modificare le risorse in Risorse Adobe Experience Manager (AEM). Per gestire i frammenti di contenuto, consulta Risorse [Frammenti](content-fragments/content-fragments.md) di contenuto.
 
@@ -32,32 +32,7 @@ I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
 ## Upload assets {#uploading-assets}
 
-Consultate [Aggiunta di risorse digitali a Experience Manager](add-assets.md).
-
-### Caricamenti in streaming {#streamed-uploads}
-
-Se caricate molte risorse in AEM, le richieste di I/O al server aumentano drasticamente, riducendo l’efficienza del caricamento e causando anche il timeout di alcune attività di caricamento. Risorse AEM supporta il caricamento in streaming delle risorse. Il caricamento in streaming riduce l’I/O del disco durante l’operazione di caricamento, evitando la memorizzazione delle risorse in una cartella temporanea sul server prima di copiarla nell’archivio. Al contrario, i dati vengono trasferiti direttamente al repository. In questo modo, si riduce il tempo necessario per caricare risorse di grandi dimensioni e la possibilità di timeout. Il caricamento in streaming è abilitato per impostazione predefinita in Risorse AEM.
-
->[!NOTE]
->
->Il caricamento dello streaming è disattivato per AEM in esecuzione su un server JEE con una versione servlet-api inferiore a 3.1.
-
-### Estrai archivio ZIP contenente le risorse {#extractzip}
-
-Potete caricare gli archivi ZIP come qualsiasi altra risorsa supportata. Le stesse regole del nome file si applicano ai file ZIP. AEM consente di estrarre un archivio ZIP in una posizione DAM. Se i file di archivio non contengono ZIP come estensione, abilita il rilevamento del tipo di file utilizzando il contenuto.
-
-Selezionate un archivio ZIP alla volta, fate clic su **[!UICONTROL Estrai archivio]** e selezionate una cartella di destinazione. Selezionare un&#39;opzione per gestire eventuali conflitti. Se le risorse nel file ZIP sono già presenti nella cartella di destinazione, potete selezionare una delle seguenti opzioni: saltate l’estrazione, sostituite i file esistenti, mantenete entrambe le risorse rinominando o create una nuova versione.
-
-Al termine dell’estrazione, AEM invia una notifica all’utente nell’area di notifica. Mentre AEM estrae il file ZIP, potete tornare al lavoro senza interrompere l’estrazione.
-
-![Notifica di estrazione zip](assets/zip_extract_notification.png)
-
-Alcune limitazioni della funzione sono:
-
-* Se nella destinazione esiste una cartella con lo stesso nome, le risorse del file ZIP vengono estratte nella cartella esistente.
-* Se annullate l’estrazione, le risorse già estratte non vengono eliminate.
-* Non potete selezionare due file ZIP contemporaneamente ed estrarli. Potete estrarre un solo archivio ZIP alla volta.
-* Durante il caricamento di un archivio ZIP, se nella finestra di dialogo di caricamento viene visualizzato un errore del server 500, riprovare dopo l&#39;installazione del service pack più recente.
+Per informazioni dettagliate, consultate [Aggiunta di risorse digitali a Experience Manager](add-assets.md).
 
 ## Visualizzare le risorse {#previewing-assets}
 
@@ -94,19 +69,13 @@ Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Nel campo **[!UICONTROL Tag]** , selezionare uno o più tag. Per aggiungere un tag personalizzato, digitate il nome del tag nella casella e premete Invio. Il nuovo tag viene salvato in AEM.
+1. Nel campo **[!UICONTROL Tag]** , selezionare uno o più tag. Per aggiungere un tag personalizzato, digitate il nome del tag nella casella e premete il tasto Invio. Il nuovo tag viene salvato in AEM.
 
    YouTube richiede la pubblicazione di tag e un collegamento a YouTube (se è possibile trovare un collegamento appropriato).
 
    >[!NOTE]
    >
-   >Per creare i tag, sono necessarie autorizzazioni di scrittura per `/content/cq:tags/default` l&#39;archivio CRX.
-
-1. Per assegnare una valutazione alla risorsa, toccate o fate clic sulla scheda **[!UICONTROL Avanzate]** , quindi toccate o fate clic sulla stella nella posizione appropriata per assegnare la valutazione desiderata.
-
-   ![valutazioni](assets/ratings.png)
-
-   Il punteggio assegnato alla risorsa viene visualizzato in **[!UICONTROL Valutazioni]** personali. La valutazione media che la risorsa ricevuta dagli utenti che hanno valutato la risorsa viene visualizzata in **[!UICONTROL Valutazione]**. Inoltre, la suddivisione dei punteggi di rating che contribuiscono al punteggio medio è visualizzata in Disaggregazione **[!UICONTROL valutazione]**. Potete cercare le risorse in base alla media dei punteggi di valutazione.
+   >Per creare i tag, è necessario disporre dell&#39;autorizzazione di scrittura nel `/content/cq:tags/default` percorso dell&#39;archivio CRX.
 
 1. Per visualizzare le statistiche di utilizzo della risorsa, tocca o fai clic sulla scheda **[!UICONTROL Approfondimenti]** .
 
@@ -118,7 +87,8 @@ Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni
    Per ulteriori dettagli, consulta [Informazioni approfondite](assets-insights.md)sulle risorse.
 
 1. Toccate o fate clic su **[!UICONTROL Salva e chiudi]**.
-1. Passa all’interfaccia utente Risorse. Le proprietà dei metadati modificate, inclusi titolo, descrizione, valutazioni e così via, vengono visualizzate sulla scheda delle risorse nella vista a schede e nelle relative colonne nella vista Elenco.
+
+1. Passa all’interfaccia utente Risorse. Le proprietà dei metadati modificate, inclusi titolo, descrizione e tag, vengono visualizzate sulla scheda delle risorse nella vista a schede e nelle relative colonne nella vista Elenco.
 
 ## Copiare le risorse {#copying-assets}
 
@@ -239,28 +209,6 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    >
    >Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. Inoltre, a seconda del browser, sono supportati diversi formati video.
 
-### View subassets {#viewing-subassets}
-
-In AEM, le risorse secondarie possono essere generate per risorse con formati supportati per più pagine, come PDF, AI, Powerpoint/Apple Keynote e InDesign. Tali risorse secondarie sono come risorse normali, ma sono collegate alla risorsa principale e semplificano la visualizzazione di più pagine nell’interfaccia touch.
-
-La generazione di risorse secondarie è disabilitata per impostazione predefinita. Per abilitare la generazione di risorse secondarie, aggiungi il passaggio **[!UICONTROL Crea risorsa secondaria]** al flusso di lavoro Aggiorna risorsa DAM.
-
-Per i documenti Word, il flusso di lavoro di analisi dei documenti di Word DAM genera un `cq:Page` componente dal contenuto del documento di Word. Il `cq:Page` componente fa riferimento alle immagini estratte dal documento. Queste immagini vengono estratte anche se la generazione di risorse secondarie è disabilitata.
-
-1. Per visualizzare le risorse secondarie, andate alla posizione della risorsa e apritene la pagina.
-
-1. Toccate/fate clic sull&#39;icona di Navigazione globale, quindi scegliete Risorse **[!UICONTROL secondarie]** dall&#39;elenco
-
-   ![chlimage_1-223](assets/chlimage_1-223.png)
-
-   >[!NOTE]
-   >
-   >L’opzione **Risorse** secondarie viene visualizzata solo se le risorse secondarie sono disponibili o sono state generate per la risorsa.
-
-   Quando selezionate **Risorse** secondarie dall’elenco, nella pagina delle **risorse** secondarie vengono visualizzate le risorse secondarie collegate alla risorsa principale.
-
-   ![chlimage_1-224](assets/chlimage_1-224.png)
-
 ## Delete assets {#delete-assets}
 
 Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiornate i riferimenti pertinenti prima di eliminare una risorsa.
@@ -293,7 +241,7 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
 ## Scaricare le risorse {#download-assets}
 
-Consultate [Scaricare risorse da AEM](/help/assets/download-assets-from-aem.md).
+See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publish-assets}
 
@@ -365,7 +313,7 @@ I COG consentono di limitare l’accesso alle risorse. Potete anche configurare 
 1. Pubblicate la cartella, quindi provate ad accedervi dall’istanza di pubblicazione. Viene visualizzata una schermata di login.
 1. Se siete un membro CUG, immettete le vostre credenziali di protezione. La cartella viene visualizzata dopo l’autenticazione da parte di AEM.
 
-## Search assets {#search-assets}
+## Cercare risorse {#search-assets}
 
 La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e degli esperti di marketing, sia per l’amministrazione da parte degli amministratori DAM.
 
@@ -564,43 +512,11 @@ Per stampare le annotazioni e verificare lo stato, toccate o fate clic sull&#39;
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   >[!NOTE]
-   >
-   >Se la risorsa dispone di risorse secondarie, potete stampare tutte le risorse secondarie insieme alle relative specifiche annotazioni a livello di pagina.
-
    Per modificare l&#39;aspetto del file PDF di cui è stato effettuato il rendering, ad esempio il colore, la dimensione e lo stile del font, il colore dello sfondo dei commenti e degli stati, aprire la configurazione **[!UICONTROL PDF]** Annotation da Configuration Manager e modificare le opzioni desiderate. Ad esempio, per modificare il colore di visualizzazione dello stato approvato, modificate il codice colore nel campo corrispondente. Per informazioni sulla modifica del colore font delle annotazioni, vedere [Annotazione](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Tornare al file PDF di cui è stato effettuato il rendering e aggiornarlo. Il PDF aggiornato riflette le modifiche apportate.
-
-Se una risorsa include annotazioni in lingue straniere (in particolare nelle lingue non latine), per poter stampare tali annotazioni è innanzitutto necessario configurare CQ-DAM-Handler-Gibson Font Manager Service nel server AEM. Quando si configura CQ-DAM-Handler-Gibson Font Manager Service, fornire il percorso in cui si trovano i font per le lingue desiderate.
-
-1. Aprite la pagina di configurazione CQ-DAM-Handler-Gibson Font Manager Service dall’URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
-1. Per configurare CQ-DAM-Handler-Gibson Font Manager Service, effettuate una delle seguenti operazioni:
-
-   * Nell&#39;opzione della directory Font di sistema, specificate il percorso completo della directory dei font nel sistema. Ad esempio, se siete un utente Mac, potete specificare il percorso come */Libreria/Font* nell&#39;opzione di directory Font di sistema. AEM recupera i font da questa directory.
-   * Create una directory denominata `fonts` all’interno della ``crx-quickstart`` cartella. CQ-DAM-Handler-Gibson Font Manager Service recupera automaticamente i font nella posizione `crx-quickstart/fonts`. Potete ignorare questo percorso predefinito dall&#39;opzione di directory Font di Adobe Server.
-
-   * Create una nuova cartella per i font nel sistema e memorizzate i font desiderati nella cartella. Quindi, specificate il percorso completo della cartella nell&#39;opzione di directory Font cliente.
-
-1. Accedere alla configurazione PDF di Annotation dall&#39;URL `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
-1. Configurare il PDF di annotazione con il set corretto di font-family come segue:
-
-   * Includere la stringa `<font_family_name_of_custom_font, sans-serif>` nell&#39;opzione font-family. Ad esempio, se desiderate stampare le annotazioni in CJK (cinese, giapponese e coreano), includete la stringa `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` nell&#39;opzione font-family. Se desiderate stampare le annotazioni in hindi, scaricate il font appropriato e configurate la famiglia di font come Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
-
-1. Riavviate l’istanza AEM.
-
-Di seguito è riportato un esempio di come configurare AEM per la stampa di annotazioni in CJK (cinese, giapponese e coreano):
-
-1. Scaricate i font Google Noto CJK dai seguenti collegamenti e archiviateli nella directory dei font configurata in Font Manager Service.
-
-   * Tutti in un font Super CJK: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans (per le lingue europee): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * Nessun font per una lingua selezionata: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-
-1. Configurate il file PDF di annotazione impostando il parametro font-family su `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Questa configurazione è disponibile per impostazione predefinita e funziona per tutte le lingue europee e CJK.
-1. Se la lingua scelta è diversa dalle lingue indicate al punto 2, aggiungere una voce appropriata (separate da virgola) alla famiglia di font predefinita.
 
 ## Versione risorsa {#asset-versioning}
 
