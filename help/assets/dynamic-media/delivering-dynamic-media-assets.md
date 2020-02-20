@@ -2,7 +2,7 @@
 title: Distribuzione di risorse Dynamic Media
 description: Scopri come distribuire risorse multimediali dinamiche
 translation-type: tm+mt
-source-git-commit: 5b55a339f466a7a0ffb4900c72e7d95995b28e83
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -28,15 +28,15 @@ Per ulteriori informazioni, consulta i seguenti argomenti:
 
 * [Aggiunta di risorse multimediali dinamiche alle pagine Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Incorporazione di un visualizzatore video o di immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md)
-* [Attivazione della protezione dei collegamenti ipertestuali in elementi multimediali dinamici](/help/assets/dynamic-media/hotlink-protection.md)
+* [Attivazione della protezione hotlinking in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Distribuzione di immagini ottimizzate per un sito reattivo](/help/assets/dynamic-media/responsive-site.md)
-* [HTTP2 Distribuzione dei contenuti](/help/assets/dynamic-media/http2.md)
-* [Invalidazione del contenuto cache CDN](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
+* [HTTP2 Distribuzione dei contenuti](/help/assets/dynamic-media/http2faq.md)
+* [Annullare la validità di contenuti CDN memorizzati nella cache](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
 * [Utilizzo dei set di regole per trasformare gli URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## Distribuzione HTTP/2 di risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
 AEM ora supporta la distribuzione di tutti i contenuti multimediali dinamici (immagini e video) su HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
 
-Per ulteriori informazioni, consulta [HTTP/2 Distribuzione di contenuti con domande](/help/assets/dynamic-media/scene7-http2faq.md) frequenti.
+Per ulteriori informazioni, consulta [HTTP/2 Distribuzione di contenuti con domande](/help/assets/dynamic-media/http2faq.md) frequenti.
