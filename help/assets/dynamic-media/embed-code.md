@@ -2,12 +2,12 @@
 title: Incorporazione di un visualizzatore video o immagine per contenuti multimediali dinamici in una pagina Web
 description: Scopri come incorporare video o immagini Dynamic Media in una pagina Web
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Incorporazione di un visualizzatore video o immagine per contenuti multimediali dinamici in una pagina Web {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilizzate la funzione **[!UICONTROL Incorpora codice]** per riprodurre il video o visualizzare una risorsa incorporata in una pagina Web. Potete copiare il codice da incorporare negli Appunti per poi incollarlo nelle pagine Web. La modifica del codice non è consentita nella finestra di dialogo **[!UICONTROL Incorpora codice]** .
 
@@ -15,7 +15,7 @@ Potete incorporare gli URL solo se _non_ utilizzate AEM come WCM. Se utilizzate 
 
 See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
-Consultate [Distribuzione di immagini ottimizzate per un sito reattivo.](responsive-site.md)
+See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 >[!NOTE]
 >
@@ -49,4 +49,4 @@ Consultate [Distribuzione di immagini ottimizzate per un sito reattivo.](respons
 
 HTTP/2 è il nuovo protocollo Web aggiornato che migliora il modo in cui i browser e i server comunicano. Fornisce un trasferimento più rapido delle informazioni e riduce la quantità di potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media ora può avvenire tramite HTTP/2, migliorando la risposta e i tempi di caricamento.
 
-Per informazioni dettagliate sull’utilizzo di HTTP/2 con l’account per contenuti multimediali dinamici, consultate Consegna di contenuti [](http2.md) HTTP2.
+Per informazioni dettagliate sull’utilizzo di HTTP/2 con l’account per contenuti multimediali dinamici, consultate Consegna di contenuti [](http2faq.md) HTTP2.
