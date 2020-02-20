@@ -3,7 +3,7 @@ title: Scaricare risorse da AEM
 description: Scoprite come scaricare risorse da AEM e abilitare o disabilitare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -61,8 +61,6 @@ Per consentire il download delle risorse da DAM, ad esempio quando si utilizza u
 1. Per bloccare le richieste di download delle risorse tramite una configurazione dispatcher, modifica la `dispatcher.any` configurazione e aggiungi una nuova regola alla sezione [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
-1. Potete disattivare manualmente il componente OSGi in un’istanza Pubblica, accedendo alla console OSGi all’indirizzo `<aem-host>/system/console/components`. Individuate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` e fate clic su **[!UICONTROL Disattiva]**.
 
 >[!MORELIKETHIS]
 >
