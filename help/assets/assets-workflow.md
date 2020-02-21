@@ -3,14 +3,14 @@ title: Applicare flussi di lavoro alle risorse
 description: Scopri come applicare flussi di lavoro a risorse, cartelle e raccolte in Risorse Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
 
 # Applicare flussi di lavoro alle risorse {#applying-workflows-to-assets}
 
-Potete usare i flussi di lavoro nelle risorse digitali per attivare la risorsa o creare filigrane. Alcuni flussi di lavoro per le risorse sono configurati per essere eseguiti automaticamente in base a determinate condizioni. Ad esempio, il flusso di lavoro che crea automaticamente una rappresentazione viene eseguito automaticamente dopo la modifica di un’immagine.
+Potete usare i flussi di lavoro nelle risorse digitali per attivare la risorsa. Alcuni flussi di lavoro per le risorse sono configurati per essere eseguiti automaticamente in base a determinate condizioni. Ad esempio, il flusso di lavoro che crea automaticamente una rappresentazione viene eseguito automaticamente dopo la modifica di un’immagine.
 
 ## Applicazione di un flusso di lavoro a una risorsa AEM {#apply-a-workflow-to-an-aem-asset}
 
