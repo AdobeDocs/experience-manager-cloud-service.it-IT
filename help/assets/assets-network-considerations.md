@@ -3,7 +3,7 @@ title: Considerazioni sulla rete delle risorse
 description: Considerazioni sulla rete durante la progettazione di una distribuzione di Risorse AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -87,11 +87,9 @@ Alcuni elementi da considerare:
 
 * Metadati XMP letti/scritti
 * Attivazione e replica automatica
-* Inserimento di filigrane
 * Caricamento di risorse secondarie/estrazione di pagina
 * Flussi di lavoro sovrapposti.
 
 Esempio di cliente per la definizione di un flusso di lavoro risorse.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
