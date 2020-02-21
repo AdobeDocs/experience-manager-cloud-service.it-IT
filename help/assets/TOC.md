@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -36,7 +36,6 @@ source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
    + [Schema metadati](metadata-schemas.md)
    + [Gestire le risorse video](manage-video-assets.md)
    + [Scaricare risorse da AEM](download-assets-from-aem.md)
-   + [Aggiungere una filigrana alle risorse](add-watermark-to-assets.md)
    + [Archiviare ed estrarre le risorse da modificare](check-out-and-submit-assets.md)
    + [Digital Rights Management per le risorse](drm.md)
 + Configurare, amministrare ed estendere Assets {#admin}
