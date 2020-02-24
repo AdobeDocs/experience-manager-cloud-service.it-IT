@@ -2,7 +2,7 @@
 title: Aggiunta di risorse Dynamic Media alle pagine
 description: Come aggiungere componenti per contenuti multimediali dinamici a una pagina in AEM
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ---
 
@@ -199,6 +199,8 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
+
+* **[!UICONTROL Abilita corrispondenza]** proporzioni (Enable Aspect Ration Match) - Corrisponde alle proporzioni dell&#39;immagine originale quando selezionate una rappresentazione ritaglio avanzato.
 
 * **[!UICONTROL Titolo]**(Title) - Consente di modificare il titolo dell&#39;immagine SmartCrop.
 
