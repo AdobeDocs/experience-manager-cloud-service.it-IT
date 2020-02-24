@@ -2,7 +2,7 @@
 title: Informazioni sui tipi di programma
 description: Informazioni sui tipi di programma e di programma - Servizi cloud
 translation-type: tm+mt
-source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
 
 ---
 
@@ -10,10 +10,6 @@ source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 # Informazioni su programmi e tipi di programmi {#understanding-programs}
 
 In Cloud Manager l&#39;entità tenant è nella parte superiore, che può contenere più programmi.  Ogni programma può contenere un solo ambiente di produzione e più ambienti non di produzione.
-
-Il diagramma seguente mostra la gerarchia delle entità in Cloud Manager.
-
-![](assets/program_types.png)
 
 ## Tipi di programmi {#program-types}
 
