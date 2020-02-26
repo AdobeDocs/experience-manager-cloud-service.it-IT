@@ -2,18 +2,32 @@
 title: Configurazione dei moduli di ricerca
 description: Configurazione dei moduli di ricerca per Adobe Experience Manager come servizio cloud.
 translation-type: tm+mt
-source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
+source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 ---
 
 
 # Configurazione dei moduli di ricerca {#configuring-search-forms}
 
-Utilizzate **Cerca moduli** per personalizzare i facet e i filtri di ricerca disponibili nei vari pannelli di ricerca dell’ambiente di authoring. La personalizzazione di questi pannelli rende la funzionalità di ricerca versatile in base alle esigenze specifiche.
+Adobe Experience Manager come servizio Cloud viene fornito con un potente meccanismo di [ricerca](/help/sites-cloud/authoring/getting-started/search.md) .
 
-Sono disponibili [diversi](#predicates-and-their-settings)predicati.
+In combinazione con questo, è disponibile un set di opzioni predefinite per facilitare l’applicazione di filtri ai contenuti. Questi contengono facet predefiniti come Data **** modifica, Stato **** pubblicazione o Stato **** Live Copy per consentirvi di espandere rapidamente le risorse necessarie.
 
-Potete [configurare i moduli](#configuring-your-search-forms) di ricerca utilizzati in varie console e nel browser delle risorse (durante la modifica delle pagine). È possibile accedere alle [finestre di dialogo per la configurazione di questi moduli](#configuring-your-search-forms) tramite:
+![utilizzo di ricerca e filtro](assets/csf-usage.png)
+
+L&#39;obiettivo di questi strumenti è quello di individuare rapidamente e facilmente i contenuti da:
+
+* [Ricerca e Filtro](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [Selettore della barra](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* il Browser [](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) risorse (durante la modifica delle pagine)
+
+>[!NOTE]
+>
+>Potete configurare il servizio di ricerca e indicizzazione dei [contenuti sottostante](/help/operations/indexing.md) .
+
+Utilizzando i moduli di **ricerca**, è possibile personalizzare ed estendere tali pannelli in base alle proprie esigenze.
+
+I moduli **di** ricerca forniscono una selezione out-of-the-box di [predicati](#predicates-and-their-settings) che è possibile combinare e definire. È possibile accedere alle [finestre di dialogo per la configurazione di questi moduli](#configuring-your-search-forms) tramite:
 
 * **Strumenti**
 
@@ -21,73 +35,48 @@ Potete [configurare i moduli](#configuring-your-search-forms) di ricerca utilizz
 
       * **Moduli di ricerca**
 
-Quando accedete per la prima volta a questa console, potete vedere che tutte le configurazioni dispongono di un simbolo lucchetto. Questo indica che la configurazione appropriata è la configurazione predefinita (out-of-the-box) e non può essere eliminata. Una volta personalizzata la configurazione, il blocco scompare, a meno che non si [elimini la configurazione](#deleting-a-configuration-to-reinstate-the-default)personalizzata, nel qual caso viene ripristinata l&#39;impostazione predefinita (e l&#39;indicatore del lucchetto).
+## Moduli predefiniti {#default-forms}
+
+La prima volta che si accede alla console **Cerca moduli** , è possibile vedere che tutte le configurazioni dispongono di un simbolo lucchetto. Questo indica che la configurazione corrispondente è quella predefinita (out-of-the-box) e non può essere eliminata. Una volta personalizzata e salvata, il blocco scompare. Viene visualizzata nuovamente quando si [elimina la configurazione](#deleting-a-configuration-to-reinstate-the-default)personalizzata, nel qual caso viene ripristinata l&#39;impostazione predefinita (e l&#39;indicatore del lucchetto).
 
 ![configurazione dei moduli di ricerca](assets/csf-overview.png)
-
-## Configurazioni {#configurations}
 
 Le configurazioni predefinite (elencate in ordine alfabetico) disponibili sono:
 
 * **Barra di ricerca amministrazione risorse:**
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando utilizza la console Risorse.
-
 * **Editor pagina (ricerca documenti):**
-
-   Questa configurazione definisce le opzioni disponibili per la ricerca di documenti nel browser Risorse (durante la modifica di una pagina).
 
 * **Editor pagine (ricerca frammenti esperienza):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di frammenti esperienza nel browser Risorse (durante la modifica di una pagina).
-
 * **Editor pagina (ricerca immagini):**
-
-   Questa configurazione definisce le opzioni disponibili per la ricerca di immagini nel browser Risorse (durante la modifica di una pagina).
 
 * **Editor pagina (ricerca manoscritto):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di manoscritti nel browser Risorse (durante la modifica di una pagina).
-
 * **Editor pagina (ricerca pagine):**
-
-   Questa configurazione definisce le opzioni disponibili per la ricerca di pagine nel browser Risorse (durante la modifica di una pagina).
 
 * **Editor pagina (ricerca paragrafi):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di paragrafi nel browser Risorse (durante la modifica di una pagina).
-
 * **Editor pagina (ricerca prodotti):**
-
-   Questa configurazione definisce le opzioni disponibili per la ricerca di prodotti nel browser Risorse (durante la modifica di una pagina).
 
 * **Editor pagina (ricerca di Scene7)**:
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di risorse Scene7 nel browser Risorse (durante la modifica di una pagina).
-
 * **Editor pagina (ricerca video)**:
-
-   Questa configurazione definisce le opzioni disponibili per la ricerca di video nel browser Risorse (durante la modifica di una pagina).
 
 * **Barra di ricerca amministrazione progetti:**
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l&#39;utente durante la ricerca di progetti.
-
 * **Barra di ricerca traduzione progetti:**
-
-   Questa configurazione definisce le opzioni di ricerca disponibili per l&#39;utente durante la ricerca di traduzioni di progetto.
 
 * **Barra di ricerca amministrazione sito**:
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando si utilizza la barra di ricerca della console Siti.
-
 * **Barra di ricerca amministrazione snippet**:
-
-   Questa configurazione definisce le opzioni di ricerca disponibili per l&#39;utente durante la ricerca degli snippet.
 
 * **Barra di ricerca amministrazione Stock**:
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l&#39;utente durante la ricerca delle risorse.
+>[!NOTE]
+>
+> Per ulteriori dettagli sui moduli di ricerca relativi alle risorse, consultate [Risorse - Facet di ricerca](/help/assets/search-facets.md)
+
 
 ## Predicati e relative impostazioni {#predicates-and-their-settings}
 
@@ -168,7 +157,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Intervallo date</td>
-   <td>Cerca le risorse create all’interno di un intervallo specificato per una proprietà data. Nel pannello Ricerca, potete specificare le date di inizio e fine.</td>
+   <td>Cerca risorse create all'interno di un intervallo specificato per una proprietà data. Nel pannello Ricerca, potete specificare le date di inizio e fine.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -181,7 +170,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Stato scadenza</td>
-   <td>Consente di effettuare ricerche nelle risorse in base allo stato di scadenza.</td>
+   <td>Cerca risorse in base allo stato di scadenza.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -191,7 +180,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Dimensione file</td>
-   <td>Consente di effettuare ricerche delle risorse in base alle loro dimensioni.</td>
+   <td>Filtrare le risorse in base alle loro dimensioni.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -205,7 +194,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
    <td>Cercate le risorse in base al tipo di file/mime.</td>
    <td>
     <ul>
-     <li>Etichetta campo</li>
+     <li>Etichetta campo</li> 
      <li>Nome proprietà*</li>
      <li>Percorso tipo mime</li>
      <li>Descrizione</li>
@@ -214,7 +203,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Testo completo</td>
-   <td>Predefinito di ricerca per ricerche full-text.</td>
+   <td>Predefinito di ricerca per ricerche full-text. È mappato con l'operatore "jcr:contains".</td>
    <td>
     <ul>
      <li>Segnaposto</li>
@@ -304,7 +293,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Pagina Stato</td>
-   <td>Consente di cercare le pagine in base al loro stato.</td>
+   <td>Filtrare le pagine in base al loro stato.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -315,7 +304,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Percorso</td>
-   <td>Consente di cercare le risorse che si trovano sotto un percorso specifico.</td>
+   <td>Filtrare in base a un percorso specifico. Potete specificare più percorsi come opzioni.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -325,7 +314,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Browser Percorsi</td>
-   <td>Specifica un browser di percorsi da cercare.</td>
+   <td>Specifica un browser di percorsi per la ricerca in un percorso principale predefinito.</td>
    <td>
     <ul>
      <li>Segnaposto</li>
@@ -360,7 +349,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Stato pubblicazione</td>
-   <td>Cercare le risorse in base al loro stato di pubblicazione</td>
+   <td>Filtrare le risorse in base al loro stato di pubblicazione.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -380,7 +369,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Valutazione</td>
-   <td>Consente di effettuare ricerche delle risorse in base al loro punteggio.<br /> </td>
+   <td>Cercare risorse in base al loro punteggio medio.<br /> </td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -391,7 +380,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Data relativa</td>
-   <td>Ricerca di risorse in base alla data relativa della creazione<br /> </td>
+   <td>Filtrare le risorse in base alla data relativa della creazione. Ad esempio, 1 settimana fa, 1 mese fa.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -497,23 +486,24 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
 -->
 
-<!--
 >[!NOTE]
 >
->* The common search predicates are defined in:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>* I predicati di ricerca comuni sono definiti in:
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >
+Queste informazioni sono solo a scopo di riferimento e non è necessario apportare modifiche a `/libs`.
+
+<!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
 > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
 -->
 
 ### Predicate Settings {#predicate-settings}
 
-A seconda del predicato sono disponibili per la configurazione una selezione di impostazioni:
+A seconda del predicato sono disponibili per la configurazione una serie di impostazioni, tra cui:
 
 * **Etichetta campo**
 
@@ -659,22 +649,19 @@ L’esempio seguente (per effettuare ricerche in base al modello utilizzato per 
 
    * `jcr:title` - l&#39;etichetta del campo da visualizzare nella barra di ricerca
    * `value` - il valore della proprietà su cui effettuare la ricerca
+   ![Definizione del predicato](assets/csf-options-predicate-01.png)
 
-<!--
-   ![chlimage_1-379](assets/chlimage_1-379.png)
--->
-
->[!NOTE]
->
->Non ***devi*** cambiare nulla nel `/libs` percorso.
->
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
->
->Il metodo consigliato per la configurazione e altre modifiche è:
->
->1. Ricreare l&#39;elemento richiesto, così come esiste in `/libs`, in `/apps`. In questo caso da:
->1. `/libs/cq/gui/content/common/options/predicates`
->1. Apportare modifiche all&#39;interno `/apps.`
+   >[!NOTE]
+   >
+   >Non ***devi*** cambiare nulla nel `/libs` percorso.
+   >
+   >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
+   >
+   >Il metodo consigliato per la configurazione e altre modifiche è:
+   >
+   >1. Ricreare l&#39;elemento richiesto, così come esiste in `/libs`, in `/apps`. In questo caso da:
+   >1. `/libs/cq/gui/content/common/options/predicates`
+   >1. Apportare modifiche all&#39;interno `/apps.`
 
 
 1. Aprire la console **Moduli** di ricerca e selezionare la configurazione da aggiornare. Ad esempio, **Siti Admin Search Rail**.
@@ -686,25 +673,22 @@ L’esempio seguente (per effettuare ricerche in base al modello utilizzato per 
 
    * **Nome proprietà**
 
-      Specifica la proprietà node da cercare nei nodi target. Esempio:
+      Specifica la proprietà node da cercare nei nodi target. Ad esempio:
 
       `jcr:content/cq:template`
 
    * **Percorso nodo opzione**
 
-      Selezionate il percorso in cui vengono mantenute le opzioni. Esempio:
+      Selezionate il percorso in cui vengono mantenute le opzioni. Ad esempio:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-
-<!--
-   ![chlimage_1-380](assets/chlimage_1-380.png)
--->
+   ![Predici delle opzioni](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. Passate alla console appropriata (in questo esempio, **Siti**) e aprite la barra **Ricerca** . I nuovi moduli di ricerca definiti e le varie opzioni saranno visibili. Selezionate l’opzione desiderata per visualizzare i risultati della ricerca:
+1. Passate alla console appropriata (in questo esempio, **Siti**) e aprite la barra **Ricerca** . I nuovi moduli di ricerca definiti e le varie opzioni saranno visibili. Selezionate l’opzione desiderata per visualizzare i risultati della ricerca.
 
 <!--
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![options being used](assets/csf-options-usage.png)
 -->
 
 ## Autorizzazioni utente {#user-permissions}
