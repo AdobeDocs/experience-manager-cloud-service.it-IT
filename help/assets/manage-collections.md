@@ -1,20 +1,19 @@
 ---
-title: Gestire le raccolte di risorse
-description: Comprendere il concetto di raccolta in Risorse AEM. Scoprite come raccolte, gestire, modificare e raccolte con altri utenti.
+title: Gestione delle raccolte di risorse digitali
+description: Comprendere il concetto di raccolta in Risorse Adobe Experience Manager. Scoprite come raccolte, gestire, modificare e raccolte con altri utenti.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
 
 ---
 
 
 # Gestire le raccolte {#manage-collections}
 
-Una raccolta è un set di risorse all&#39;interno di Risorse Adobe Experience Manager (AEM). Utilizzate le raccolte per condividere le risorse tra gli utenti.
+Una raccolta è un set di risorse all&#39;interno di Risorse Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o dinamica basata sui risultati di ricerca.
 
-* Una raccolta può includere risorse da posizioni diverse.
-* Potete condividere le raccolte con vari utenti a cui sono stati assegnati diversi livelli di privilegi, inclusi la visualizzazione, la modifica e così via.
+A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Potete condividere le raccolte con vari utenti a cui sono stati assegnati diversi livelli di privilegi, inclusi la visualizzazione, la modifica e così via.
 
 Potete condividere più raccolte con un utente. Ogni raccolta contiene riferimenti alle risorse. L&#39;integrità referenziale delle risorse viene mantenuta tra le raccolte.
 
@@ -22,14 +21,13 @@ Le raccolte sono dei tipi seguenti, in base al modo in cui vengono raccolte le r
 
 * Una raccolta che contiene un elenco di riferimento statico di risorse, cartelle e altre raccolte.
 
-* Una raccolta avanzata che include dinamicamente risorse basate su criteri di ricerca.
+* Una raccolta smart che include dinamicamente risorse basate su criteri di ricerca.
 
-## Navigare nella console delle raccolte {#navigate-the-collections-console}
+## Accedere alla console delle raccolte {#navigate-the-collections-console}
 
 Per aprire la console **[!UICONTROL Raccolte]** :
 
-1. Toccate o fate clic sul logo AEM.
-1. Dalla pagina di navigazione, passate a **[!UICONTROL Risorse]** > **[!UICONTROL Raccolte]**. Viene visualizzata la console **[!UICONTROL Raccolte]** .
+Per aprire le **[!UICONTROL raccolte]**, toccate o fate clic sul logo Experience Manager. From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Creare una raccolta {#create-a-collection}
 
@@ -42,36 +40,36 @@ Potete creare una raccolta con riferimenti statici, ad esempio una raccolta con 
 1. Passate alla console **[!UICONTROL Raccolte]** .
 1. Dalla barra degli strumenti, toccate o fate clic su **[!UICONTROL Crea]**.
 1. Nella pagina **[!UICONTROL Crea raccolta]** , immettete un titolo e una descrizione facoltativa per la raccolta.
-1. Aggiungete i membri alla raccolta e assegnate le autorizzazioni appropriate. In alternativa, selezionate Raccolta **** pubblica per consentire a tutti gli utenti di accedere alla raccolta.
+1. Aggiungi i membri alla raccolta e assegna le autorizzazioni appropriate. In alternativa, per consentire a tutti gli utenti di accedere alla raccolta, seleziona **[!UICONTROL Raccolta pubblica]**.
 
    >[!NOTE]
    >
    >Per consentire ai membri di condividere le raccolte con altri utenti, fornite al `dam-users` gruppo le autorizzazioni di lettura nel percorso `home/users`. Consentite agli utenti di `/content/dam/collections` utilizzare la propria posizione per consentire loro di visualizzare le raccolte negli elenchi a comparsa. In alternativa, rendete l’utente parte del `dam-users` gruppo.
 
 1. (Facoltativo) Aggiungete una miniatura per la raccolta.
-1. Toccate o fate clic su **[!UICONTROL Crea]**, quindi toccate o fate clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo. Una raccolta con il titolo e le proprietà specificati viene aperta nella console Raccolte.
+1. Tocca o fai clic su **[!UICONTROL Crea]**, quindi tocca o fai clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo. Una raccolta con il titolo e le proprietà specificati viene aperta nella console Raccolte.
 
    >[!NOTE]
    >
-   >Risorse AEM consente di creare attività di revisione per una raccolta, in modo simile a come si creano le attività di revisione per una cartella di risorse.
+   >Experience Manager Assets consente di creare attività di revisione per una raccolta, in modo simile a come si creano le attività di revisione per una cartella di risorse.
 
    Per aggiungere risorse alla raccolta, passate all&#39;interfaccia utente Risorse. Per informazioni dettagliate, consultate [Aggiungere risorse a una raccolta](#add-assets-to-a-collection).
 
-### Creazione di raccolte tramite Dropzone {#create-collections-using-dropzone}
+### Creazione di raccolte tramite dropzone {#create-collections-using-dropzone}
 
 Potete trascinare le risorse dall&#39;interfaccia utente delle risorse a una raccolta. Potete anche creare una copia di una raccolta e trascinarvi le risorse.
 
-1. Nell&#39;interfaccia utente Risorse, selezionate le risorse da aggiungere a una raccolta.
+1. Dall&#39;interfaccia utente Risorse, selezionate le risorse che desiderate aggiungere a una raccolta.
 1. Trascinate le risorse nell&#39;area **[!UICONTROL Rilascia nella raccolta]** . In alternativa, toccate o fate clic sull&#39;icona **[!UICONTROL Alla raccolta]** dalla barra degli strumenti.
-1. Nella pagina **[!UICONTROL Aggiungi alla raccolta]** , toccate o fate clic sull&#39;icona **[!UICONTROL Crea raccolta]** dalla barra degli strumenti. Se desiderate aggiungere le risorse a una raccolta esistente, selezionatela dalla pagina, quindi toccate o fate clic su **[!UICONTROL Aggiungi]**. Per impostazione predefinita, è selezionata la raccolta aggiornata più di recente.
-1. Nella finestra di dialogo **[!UICONTROL Crea nuova raccolta]** , specificate un nome per la raccolta. Se desiderate che la raccolta sia accessibile a tutti gli utenti, selezionate Raccolta **** pubblica.
+1. Nella pagina **[!UICONTROL Aggiungi a raccolta]**, tocca o fai clic sull’icona **[!UICONTROL Crea raccolta]** dalla barra degli strumenti. Se vuoi aggiungere le risorse a una raccolta esistente, selezionala dalla pagina, quindi tocca o fai clic su **[!UICONTROL Aggiungi]**. Per impostazione predefinita, è selezionata la raccolta aggiornata più di recente.
+1. Nella finestra di dialogo **[!UICONTROL Crea nuova raccolta]**, specifica un nome per la raccolta. Se vuoi che la raccolta sia accessibile a tutti gli utenti, seleziona **[!UICONTROL Raccolta pubblica]**.
 1. Toccate/fate clic su **[!UICONTROL Continua]** per creare la raccolta.
 
 ### Creare una raccolta dinamica {#create-a-smart-collection}
 
 Una raccolta avanzata utilizza un criterio di ricerca per compilare in modo dinamico le risorse. Potete creare una raccolta avanzata utilizzando solo i file e non le cartelle o i file e le cartelle.
 
-1. Passa all’interfaccia utente delle risorse e tocca o fai clic sull’icona **[!UICONTROL Ricerca]** .
+1. Passa all’interfaccia utente Assets e tocca o fai clic sull’icona **[!UICONTROL Ricerca]**.
 1. Digitate la parola chiave search nella casella Cerca Omni e premete Invio. Toccate/fate clic sull’icona Navigazione globale per visualizzare il pannello Filtri e applicare un filtro di ricerca dal pannello Ricerca.
 1. Dall’elenco **[!UICONTROL File e cartelle]** , selezionare **[!UICONTROL File]**.
 1. Toccate o fate clic su **[!UICONTROL Salva raccolta]** avanzata.
@@ -81,8 +79,8 @@ Una raccolta avanzata utilizza un criterio di ricerca per compilare in modo dina
    >
    >Se selezionate **[!UICONTROL Pubblico]**, la raccolta smart diventa disponibile per tutti gli utenti con il ruolo Proprietario dopo averlo creato. Se deselezionate l&#39;opzione **[!UICONTROL Pubblica]** , il gruppo di utenti DAM non è più associato alla raccolta avanzata.
 
-1. Toccate/fate clic su **[!UICONTROL Salva]** per creare la raccolta dinamica, quindi chiudete la finestra di messaggio per completare il processo. La nuova raccolta avanzata viene aggiunta anche all&#39;elenco Ricerche **[!UICONTROL salvate]** .
-L’etichetta del pulsante **[!UICONTROL Crea selezione]** avanzata diventa **[!UICONTROL Modifica selezione]** avanzata. Per modificare le impostazioni della raccolta dinamica, selezionate **[!UICONTROL File]** dall&#39;elenco **[!UICONTROL File e cartelle]** . Quindi toccate o fate clic sul pulsante **[!UICONTROL Modifica selezione]** avanzata.
+1. Per creare la raccolta avanzata, tocca/fai clic su **[!UICONTROL Salva]**, quindi chiudi la finestra messaggio per completare il processo. La nuova raccolta avanzata viene aggiunta anche all’elenco **[!UICONTROL Saved Searches (Ricerche salvate)]**.
+L’etichetta del pulsante **[!UICONTROL Create Smart Selection (Crea selezione avanzata)]** diventa **[!UICONTROL Edit Smart Selection (Modifica selezione avanzata)]**. Per modificare le impostazioni della raccolta avanzata, seleziona **[!UICONTROL File]** dall’elenco **[!UICONTROL File e cartelle]**. Quindi tocca o fai clic sul pulsante **[!UICONTROL Edit Smart Selection (Modifica selezione avanzata)]**.
 
 ## Aggiunta di risorse a una raccolta {#add-assets-to-a-collection}
 
@@ -104,7 +102,7 @@ Le raccolte intelligenti vengono create salvando una ricerca in modo da modifica
 1. Nell’interfaccia utente Risorse, tocca o fai clic sull’icona **[!UICONTROL Cerca]** nella barra degli strumenti.
 1. Con il cursore nella casella Omnisearch, premere il tasto Invio.
 1. Toccate o fate clic sull&#39;icona GlobalNav per visualizzare il pannello Filtri.
-1. Dall&#39;elenco Ricerche **** salvate, selezionate la raccolta dinamica da modificare. Nel pannello Ricerca sono visualizzati i filtri configurati per la ricerca salvata.
+1. Dall’elenco **[!UICONTROL Ricerche salvate]**, seleziona la raccolta avanzata da modificare. Nel pannello Ricerca sono visualizzati i filtri configurati per la ricerca salvata.
 1. Dall’elenco **[!UICONTROL File e cartelle]** , selezionare **[!UICONTROL File]**.
 1. Modificate uno o più filtri, a seconda delle necessità. Toccate o fate clic su **[!UICONTROL Modifica raccolta]** avanzata. Potete anche modificare il nome della raccolta dinamica.
 1. Tap/click **[!UICONTROL Save]**. Viene visualizzata la finestra di dialogo **[!UICONTROL Modifica raccolta]** avanzata.
@@ -116,7 +114,7 @@ Le raccolte intelligenti vengono create salvando una ricerca in modo da modifica
 I metadati della raccolta includono i dati sulla raccolta, compresi eventuali tag aggiunti.
 
 1. Dalla console Raccolte, selezionate una raccolta e toccate o fate clic sull&#39;icona **[!UICONTROL Proprietà]** nella barra degli strumenti.
-1. Nella pagina Metadati **** raccolta, visualizzate i metadati della raccolta dalle schede **[!UICONTROL Base]** e **Avanzate** .
+1. Nella pagina **[!UICONTROL Metadati raccolta]**, seleziona le schede **[!UICONTROL Base]** e **Avanzate** per visualizzare i metadati della raccolta.
 1. Modificate i metadati, se necessario, quindi toccate o fate clic su **[!UICONTROL Salva e chiudi]** nella barra degli strumenti per salvare le modifiche.
 
 ### Modificare i metadati della raccolta in blocco {#edit-collection-metadata-in-bulk}
@@ -125,13 +123,13 @@ Potete modificare i metadati di più raccolte contemporaneamente. Questa funzion
 
 1. Nella console Raccolte, selezionate due o più raccolte per le quali desiderate modificare i metadati.
 1. Dalla barra degli strumenti, toccate o fate clic sull’icona **[!UICONTROL Proprietà]** .
-1. Nella pagina Metadati **** raccolta, modificate i metadati nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]** , a seconda delle necessità.
+1. Nella pagina **[!UICONTROL Metadati raccolta]**, modifica i metadati nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]**, secondo necessità.
 1. Toccate/fate clic su **[!UICONTROL Salva e chiudi]** nella barra degli strumenti, quindi chiudete la finestra di dialogo di conferma per completare il processo.
-1. Per aggiungere i nuovi metadati ai metadati esistenti, selezionate **[!UICONTROL Aggiungi modalità]**. Se non selezionate questa opzione, i nuovi metadati sostituiranno quelli esistenti nei campi. Toccate o fate clic su **[!UICONTROL Invia]**.
+1. Per aggiungere i nuovi metadati a quelli esistenti, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Tocca o fai clic su **[!UICONTROL Invia]**.
 
    >[!NOTE]
    >
-   >La modalità Aggiungi funziona solo per i campi che possono contenere più valori. Per i campi che possono contenere un solo valore, i nuovi metadati non vengono aggiunti al valore esistente nel campo anche se selezionate la modalità **** Aggiungi.
+   >La modalità di aggiunta funziona solo per i campi che possono contenere più valori. Per i campi che possono includere un solo valore, i nuovi metadati non vengono aggiunti al valore esistente del campo, anche se selezioni **[!UICONTROL Modalità di aggiunta]**.
 
 ## Ricerca {#searching}
 
@@ -154,7 +152,7 @@ All&#39;interno di una raccolta, la ricerca di Risorse AEM è limitata alle riso
 Potete modificare le impostazioni della raccolta, ad esempio titolo e descrizione, o aggiungere membri a una raccolta.
 
 1. Selezionate una raccolta, quindi toccate o fate clic sull&#39;icona **[!UICONTROL Impostazioni]** nella barra degli strumenti. In alternativa, utilizzate l&#39;azione rapida **[!UICONTROL Impostazioni]** dalla miniatura della raccolta.
-1. Modificate le impostazioni della raccolta nella pagina Impostazioni **** raccolta. Ad esempio, modificate il titolo della raccolta, le descrizioni, i membri e le autorizzazioni come descritto in [Aggiungi raccolte](#create-a-collection).
+1. Nella pagina **[!UICONTROL Impostazioni raccolta]**, puoi modificare le impostazioni della raccolta. Ad esempio, modifica il titolo della raccolta, le descrizioni, i membri e le autorizzazioni, in base a quanto descritto in [Aggiungi raccolta](#create-a-collection).
 1. Tap/click **[!UICONTROL Save]** to save the changes.
 
 ## Eliminare una raccolta {#delete-a-collection}
@@ -208,7 +206,7 @@ Per personalizzare la pagina [!UICONTROL Proprietà] metadati, compresa l&#39;ag
 
 Potete aggiungere una raccolta a un&#39;altra raccolta, creando in tal modo una raccolta nidificata.
 
-1. Dalla console Raccolte, selezionate la raccolta o il gruppo di raccolte desiderato, quindi toccate o fate clic sull&#39;icona **[!UICONTROL A raccolta]** nella barra degli strumenti.
+1. Dalla console Raccolte, selezionate la raccolta o il gruppo di raccolte desiderato, quindi toccate o fate clic su **[!UICONTROL Alla raccolta]** nella barra degli strumenti.
 1. Dalla pagina **[!UICONTROL Aggiungi alla raccolta]** , selezionate la raccolta in cui aggiungere la raccolta.
 
    >[!NOTE]
@@ -223,9 +221,9 @@ Potete aggiungere una raccolta a un&#39;altra raccolta, creando in tal modo una 
 
 ## Saved searches {#saved-searches}
 
-Nell’interfaccia utente di Assets, puoi cercare o filtrare le risorse in base a determinate regole, criteri di ricerca o facet di ricerca personalizzati. Se salvate queste ricerche come Ricerche **** salvate, potete accedervi in un secondo momento dall’elenco Ricerche **** salvate nel pannello Filtro. La creazione di una ricerca salvata crea anche una raccolta dinamica.
+Nell’interfaccia utente Assets, puoi cercare o filtrare le risorse in base a determinate regole, criteri di ricerca o facet di ricerca personalizzata. Se salvi queste ricerche come **[!UICONTROL Ricerche salvate]**, puoi accedervi in un secondo momento dall’elenco **[!UICONTROL Ricerche salvate]** nel pannello Filtro. La creazione di una ricerca salvata genera anche una raccolta avanzata.
 
-Le ricerche salvate vengono create quando create una raccolta avanzata. Le raccolte avanzate vengono aggiunte automaticamente all&#39;elenco Ricerche **** salvate. La query delle ricerche salvate per la raccolta viene salvata nella `dam:query` proprietà in CRX nella posizione relativa `/content/dam/collections/`.
+Le ricerche salvate vengono create quando generi una raccolta avanzata. Le raccolte avanzate vengono aggiunte automaticamente all’elenco **[!UICONTROL Ricerche salvate]**. La query delle Ricerche salvate per la raccolta viene salvata nella posizione relativa nella proprietà `dam:query` di CRXDE `/content/dam/collections/`.
 
 >[!NOTE]
 >
@@ -235,22 +233,23 @@ La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzat
 
 Per eliminare le ricerche salvate, effettuate le seguenti operazioni:
 
-1. Andate all’interfaccia utente Risorse e toccate o fate clic su **[!UICONTROL Cerca]** nella barra degli strumenti.
-1. Con il cursore nella casella Omnisearch, premere il tasto Invio.
+1. Nell’interfaccia utente Risorse, tocca o fai clic sull’icona di ricerca nella barra degli strumenti.
+
+1. Con il cursore nel campo Omnisearch, premere il tasto Invio.
 1. Tocca o fai clic sull’icona GlobalNav per visualizzare il pannello Filtri.
-1. Nell&#39;elenco Ricerche **** salvate, toccate/fate clic su **[!UICONTROL Elimina]** accanto alla raccolta avanzata da eliminare.
+1. Nell’elenco **[!UICONTROL Ricerche salvate]**, tocca o fai clic su **[!UICONTROL Elimina]** accanto alla raccolta avanzata da eliminare.
 1. Nella finestra di dialogo, toccate o fate clic su **[!UICONTROL Elimina]** per eliminare la ricerca salvata.
 
-## Eseguire un flusso di lavoro su una raccolta {#run-a-workflow-on-a-collection}
+## Esecuzione di un flusso di lavoro su una raccolta {#run-a-workflow-on-a-collection}
 
 Potete eseguire un flusso di lavoro per le risorse all&#39;interno di una raccolta. Se la raccolta contiene raccolte nidificate, il flusso di lavoro viene eseguito anche sulle risorse all&#39;interno delle raccolte nidificate. Tuttavia, se la raccolta e la raccolta nidificata contengono risorse duplicate, il flusso di lavoro viene eseguito una sola volta per tali risorse.
 
 1. Dalla console Raccolte, selezionate una raccolta in cui desiderate eseguire un flusso di lavoro.
-1. Toccate o fate clic sull&#39;icona GlobalNav, quindi scegliete **Timeline** dall&#39;elenco.
-1. Dalla timeline, tocca o fai clic sull’icona Carrello in basso, quindi tocca o fai clic su **Avvia flusso di lavoro**.
-1. Nella sezione **Avvia flusso di lavoro** , selezionare un modello di workflow dall&#39;elenco. Ad esempio, selezionate il modello **DAM Update Asset (Aggiorna risorsa** DAM).
-1. Immettete un titolo per il flusso di lavoro e toccate o fate clic su **Avvia**.
-1. Nella finestra di dialogo, toccate/fate clic su **Procedi**. Il flusso di lavoro viene eseguito su tutte le risorse della raccolta.
+1. Toccate o fate clic sull&#39;icona GlobalNav, quindi scegliete **[!UICONTROL Timeline]** dall&#39;elenco.
+1. Dalla timeline, tocca o fai clic sull’icona del cursore verso il basso, quindi tocca o fai clic su **[!UICONTROL Avvia flusso di lavoro]**.
+1. Nella sezione **[!UICONTROL Avvia flusso di lavoro]**, seleziona un modello di flusso di lavoro dall’elenco. Ad esempio, scegli il modello **[!UICONTROL Risorsa di aggiornamento DAM]**.
+1. Immettete un titolo per il flusso di lavoro e toccate o fate clic su **[!UICONTROL Avvia]**.
+1. Nella finestra di dialogo, toccate/fate clic su **[!UICONTROL Procedi]**. Il flusso di lavoro viene eseguito su tutte le risorse della raccolta.
 
 >[!MORELIKETHIS]
 >
