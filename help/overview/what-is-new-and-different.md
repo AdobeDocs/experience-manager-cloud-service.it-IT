@@ -2,12 +2,12 @@
 title: Differenze e novità - Adobe Experience Manager come servizio cloud
 description: 'Differenze e novità - Adobe Experience Manager (AEM) come servizio cloud. '
 translation-type: tm+mt
-source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
+source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
 
 ---
 
 
-# Novità e cosa è diverso {#what-is-new-and-what-is-different}
+# Novità e differenze {#what-is-new-and-what-is-different}
 
 Per molti anni AEM è disponibile:
 
@@ -179,6 +179,10 @@ Questo processo viene comunemente definito sviluppo per il cloud. Poiché la dur
 
 La console Web, in cui vengono gestiti i bundle OSGI e la relativa configurazione, e in precedenza parte di AEM QuickStart, non è più direttamente accessibile agli utenti di AEM come ambiente di servizio cloud. Questa interfaccia è ancora accessibile in modalità di sola lettura tramite una nuova console per sviluppatori. Con questa console, gli sviluppatori possono selezionare e accedere direttamente a qualsiasi nodo particolare di un servizio di creazione o pubblicazione, quindi accedere alle aree bloccate per impostazione predefinita.
 
+>[!NOTE]
+>
+>Vedere anche Configurazione [OSGi](/help/implementing/deploying/overview.md#osgi-configuration)
+
 Un altro requisito comune per gli sviluppatori è l&#39;accesso rapido ai file di registro dei vari ambienti. Con AEM come servizio cloud, i file di registro dei diversi nodi nei nodi di creazione e pubblicazione sono disponibili tramite Cloud Manager, sia sotto forma di file che possono essere scaricati, sia tramite API.
 
 A causa della netta separazione tra codice e contenuto, gli sviluppatori possono utilizzare un particolare processo per aggiornare il contenuto come parte di una distribuzione. I casi di utilizzo tipici per i contenuti modificabili sono:
@@ -207,7 +211,7 @@ Al fine di supportare sessioni e sviluppo rapidi, è anche possibile sviluppare 
 
 >[!NOTE]
 >
->Per ulteriori dettagli, iniziate con [Backup](/help/operations/backup.md), [Indicizzazione](/help/operations/indexing.md)e [altre attività](/help/operations/maintenance.md)di manutenzione.
+>Per ulteriori dettagli, inizia da [Backup](/help/operations/backup.md), [Indicizzazione](/help/operations/indexing.md) e [altre attività di manutenzione](/help/operations/maintenance.md).
 
 Con AEM come servizio cloud, tali operazioni sono automatizzate e non è più necessario interrompere il servizio.
 
