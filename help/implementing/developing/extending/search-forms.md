@@ -664,9 +664,7 @@ L’esempio seguente (per effettuare ricerche in base al modello utilizzato per 
    >1. Apportare modifiche all&#39;interno `/apps.`
 
 
-1. Aprire la console **Moduli** di ricerca e selezionare la configurazione da aggiornare. Ad esempio, **Siti Admin Search Rail**.
-
-   Quindi fare clic o toccare l&#39;icona **Modifica moduli** di ricerca.
+1. Aprire la console **Moduli** di ricerca e selezionare la configurazione da aggiornare. Ad esempio, **Siti Admin Search Rail**. Quindi selezionate **Modifica**.
 
 1. A seconda della configurazione, aggiungere alla configurazione una proprietà **Opzioni** o **Opzioni** .
 1. Aggiornare i campi, in particolare:
@@ -685,11 +683,10 @@ L’esempio seguente (per effettuare ricerche in base al modello utilizzato per 
    ![Predici delle opzioni](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. Passate alla console appropriata (in questo esempio, **Siti**) e aprite la barra **Ricerca** . I nuovi moduli di ricerca definiti e le varie opzioni saranno visibili. Selezionate l’opzione desiderata per visualizzare i risultati della ricerca.
+1. Andate alla console appropriata (in questo esempio, **Siti**) e aprite la barra **Ricerca - Filtri** . I nuovi moduli di ricerca definiti e le varie opzioni saranno visibili. Selezionate l’opzione desiderata per visualizzare i risultati della ricerca.
 
-<!--
-   ![options being used](assets/csf-options-usage.png)
--->
+   ![opzioni in uso](assets/csf-options-usage.png)
+
 
 ## Autorizzazioni utente {#user-permissions}
 
