@@ -2,12 +2,12 @@
 title: Aggiunta di utenti e ruoli - Elementi richiesti
 description: Aggiunta di utenti e ruoli - Elementi richiesti
 translation-type: tm+mt
-source-git-commit: 1d2d39ba3dd84b79420da94c985b00aa1bb5b806
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
 
-# Aggiunta di utenti e ruoli - Elementi richiesti {#add-users-roles}
+# Aggiungere utenti e ruoli {#add-users-roles}
 
 
 Molte funzionalità di [!UICONTROL Cloud Manager] richiedono autorizzazioni specifiche per funzionare. Ad esempio, solo alcuni utenti possono impostare i KPI (Key Performance Indicators) per un programma. Tali autorizzazioni sono logicamente raggruppate in ruoli.
