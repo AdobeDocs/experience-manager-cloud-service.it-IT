@@ -3,7 +3,7 @@ title: Scopri come i microservizi di risorse possono elaborare le risorse digita
 description: Elabora le risorse digitali tramite microservizi di elaborazione delle risorse scalabili e nativi basati sul cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
@@ -26,7 +26,7 @@ I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente
 * Miglioramento della resilienza dell&#39;elaborazione delle risorse. I potenziali problemi nella gestione di file atipici, come file danneggiati o file di grandi dimensioni, non influiscono più sulle prestazioni della distribuzione.
 * Configurazione semplificata dell’elaborazione delle risorse per gli amministratori.
 * L’impostazione di elaborazione delle risorse è gestita e gestita da Adobe per fornire la configurazione più nota per la gestione di rappresentazioni, metadati ed estrazione del testo per vari tipi di file
-* Laddove possibile, vengono utilizzati i servizi di elaborazione file nativi di Adobe, che forniscono output ad alta fedeltà e una gestione efficiente dei formati proprietari di Adobe.
+* Laddove possibile, vengono utilizzati i servizi di elaborazione file nativi di Adobe, che forniscono output ad alta fedeltà e una gestione [efficiente dei formati](file-format-support.md)proprietari di Adobe.
 * Possibilità di configurare il flusso di lavoro di post-elaborazione per aggiungere azioni e integrazioni specifiche per l’utente.
 
 I microservizi delle risorse consentono di evitare la necessità di strumenti di rendering di terze parti (come ImageMagick) e di semplificare la configurazione del sistema, fornendo al contempo funzionalità pronte all’uso per tipi di file comuni.
@@ -82,7 +82,7 @@ Adobe Experience Manager può essere configurato per attivare automaticamente i 
 
 >[!MORELIKETHIS]
 >
->* [Utilizzo dei microservizi delle risorse](asset-microservices-configure-and-use.md)
+>* [Introduzione all’utilizzo dei microservizi per le risorse](asset-microservices-configure-and-use.md)
 >* [Formati di file supportati](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [App desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
