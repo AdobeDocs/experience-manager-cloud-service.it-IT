@@ -9,7 +9,7 @@ source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
 
 # Connettori {#connectors}
 
-+ [Implementazione di connettori per AEM come Cloud Service](/help/connectors/home.md)
++ [Implementazione di connettori per AEM as a Cloud Service](/help/connectors/home.md)
 + [Implementazione di un connettore AEM](implement.md)
 + [Invio di un connettore AEM](submit.md)
 + [Manutenzione di un connettore AEM](maintain.md)
