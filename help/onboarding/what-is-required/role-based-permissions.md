@@ -2,7 +2,7 @@
 title: Autorizzazioni basate sul ruolo
 description: Autorizzazioni basate sul ruolo
 translation-type: tm+mt
-source-git-commit: e59fe55c255d5239a561a9fb878faa81d17b4b48
+source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
 
 ---
 
@@ -17,19 +17,29 @@ A ciascun ruolo sono associate autorizzazioni specifiche, attività preconfigura
 
 | Autorizzazione | Descrizione | Proprietario | Gestione distribuzione | Program Manager | Sviluppatore |
 |--- |--- |--- |--- |--- |--- |
-| Aggiungi programma | Aggiungi nuovo programma. | x | x | x | x |
-| Lettura applicazione | Leggi KPI del programma. | x | x | x | x |
-| Scrivi applicazione | Installazione o modifica del programma. | x |  |  |  |  |
-| Ambiente di lettura | Consultate Dettagli ambiente. | x | x | x | x |
-| Crea esecuzione | Avviate la tubazione. | x | x | x |  |
-| Lettura esecuzione | Vedere stato di esecuzione. | x | x | x | x |
-| Riprendi esecuzione | Può riprendere l&#39;esecuzione in pausa. | x | x | x |  | x |
-| Approvazione esecuzione distribuzione in produzione | Fornisci l&#39;approvazione GoLive. | x | x | x |  |  |
-| Programma di esecuzione Distribuisci in produzione | Pianificazione distribuzione produzione. | x | x | x |
-| Annullamento esecuzione | Annulla esecuzione corrente. | x | x | x |  |
-| Errori Gate Di Sostituzione Dell&#39;Esecuzione | Approvare Importanti Errori Di Controllo Della Qualità. | x | x | x |  |
-| Crea tubazione | Impostazione/Modifica tubazione. |  | x |  |  |
-| Lettura pipeline | Consultate Dettagli sulla tubazione. | x | x | x | x |
-| Scrittura pipeline | Impostazione/Modifica tubazione. |  | x |  |  |
-| Approvazione modifica pipeline | Consente di modificare l&#39;opzione Proprietario business. |  | x |  |  |
-| Lettura passaggio | Vedi i risultati delle metriche sulla qualità dei passaggi. | x | x | x | x |
+| Crea tenant | Crea un nuovo tenant. |  |  |  |  |
+| Aggiorna tenant | Aggiorna tenant. |  |  |  |  |
+| Aggiungi programma | Aggiungere un nuovo programma. | x |  |  |  |
+| Crea ambiente | Creare Ambienti Prod+Stage, Dev, Playground. | x | x |  |  |
+| Configurare le variabili di ambiente | Configurare le variabili di ambiente e i segreti. |  | x |  | x |
+| Aggiungi o rimuovi nome di dominio personalizzato, carica o aggiorna certificato SSL | Aggiungi/rimuovi nome di dominio personalizzato, carica/aggiorna certificato SSL. | x | x |  |  |
+| Aggiorna ambiente | Aggiornare Gli Ambienti Prod+Stage, Dev, Playground. | x | x |  |  |
+| Elimina ambiente | Elimina ambienti non prod, Dev, Playground. | x | x |  |  |
+| Elimina ambiente | Elimina Ambiente Prod+Fase. |  |  |  |  |
+| Ambiente di sospensione | Ambienti Non-prod, Dev, Playground. | x | x |  |  |
+| Impostazione programma | Configurare il programma (inclusi i KPI). | x |  |  |  |
+| Impostazione programma | Configurare i criteri di ridimensionamento (Generale: configurazione del numero massimo di livelli e della scala orizzontale su richiesta: consenso). | x |  |  |  |
+| Impostazione programma | Accesso A Git Conferma. |  | x |  | x |
+| Impostazione pipeline | Configurazione o modifica della tubazione. |  | x |  |  |
+| Esecuzione pipeline | Avviate la tubazione. | x | x |  |  |
+| Esecuzione pipeline | Rifiuta/Approva Importanti Errori A 3 Livelli. | x | x | x |  |
+| Esecuzione pipeline | Fornisci l&#39;approvazione GoLive. | x | x | x |  |
+| Esecuzione pipeline | Pianificazione distribuzione produzione. | x | x | x |  |
+| Esecuzione pipeline | Riprende tubazione produzione. |  |  |  |  |
+| Consenso (o rifiuto) al provisioning | Consenso al provisioning orizzontale su richiesta dalla schermata di configurazione del programma. Configurate i segmenti P-D &#39;consentiti&#39; massimi che possono essere ridimensionati orizzontalmente in ambienti di PROD e non-PROD. | x |  |  |  |
+| Gestisci ambiente | Aggiungi segmento Publish-Dispatcher dalla schermata Manage Environment (Gestisci ambiente). | x | x |  |  |  |
+| Aggiornamento del prodotto | La scheda Aggiornamento AEM è visibile e porta l&#39;utente a effettuare l&#39;aggiornamento guidato. | x | x | x | x |
+| Aggiornamento del prodotto | È possibile intervenire su Aggiornamento guidato prodotto. | x | x |  |  |
+| Aggiornamento push | Avviate la pipeline di aggiornamento push. |  |  |  |  |
+| Genera token di accesso personale | Genera token di accesso personale. |  | x |  | x |
+
