@@ -9,5 +9,5 @@ source-git-commit: 5a846d34ee094e7d2f7fc71dbeef65f3fa58e86c
 
 # Concetti di base {#core-concepts}
 
-+ [Concetti di base su AEM come Cloud Service](/help/core-concepts/home.md)
-+ [Introduzione all’architettura di AEM come Cloud Service](architecture.md)
++ [Concetti di base su AEM as a Cloud Service](/help/core-concepts/home.md)
++ [Introduzione all’architettura di AEM as a Cloud Service](architecture.md)
