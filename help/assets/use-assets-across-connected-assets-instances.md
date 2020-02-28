@@ -3,7 +3,7 @@ title: Utilizzare le risorse collegate per condividere le risorse DAM nel flusso
 description: Utilizza le risorse disponibili in una distribuzione remota di Risorse Adobe Experience Manager quando crei le pagine Web in un’altra distribuzione del sito Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45371da5617a0d87105dbf2f574de15bf0698d98
+source-git-commit: 70ac4bdc284f14012f2e0730f52fb932d04e2a0e
 
 ---
 
@@ -27,9 +27,9 @@ Prima di utilizzare o configurare questa funzionalità, accertati di:
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna distribuzione.
 * Per i tipi di distribuzione di Adobe Experience Manager, uno dei criteri supportati è soddisfatto.
 
-   |  | AEM Sites come servizio cloud | Siti AEM 6.5 su AMS | AEM 6.5 Sites on-premise |
+   |  | AEM Sites as a Cloud Service | Siti AEM 6.5 su AMS | AEM 6.5 Sites on-premise |
    |---|---|---|---|
-   | **Risorse AEM come servizio cloud** | Supportato | Supportato | Supportato |
+   | **AEM Assets as a Cloud Service** | Supportato | Supportato | Supportato |
    | **Risorse AEM 6.5 su AMS** | Non supportato | Supportato | Supportato |
    | **Risorse AEM 6.5 in sede** | Non supportato | Non supportato | Non supportato |
 
@@ -37,14 +37,10 @@ Prima di utilizzare o configurare questa funzionalità, accertati di:
 
 Gli autori possono cercare immagini e i seguenti tipi di documenti in Content Finder e utilizzare le risorse ricercate in Editor pagina. È possibile aggiungere dei documenti al `Download` componente e aggiungere delle immagini al `Image` componente. Gli autori possono inoltre aggiungere le risorse remote a qualsiasi componente AEM personalizzato che estenda i componenti predefiniti `Download` o `Image` .
 
-* Microsoft Word (DOC e DOCX)
-* Microsoft Excel (XLS e XLSX)
-* Microsoft PowerPoint (PPT e PPTX)
-* Adobe PDF (PDF)
-* Testo OpenDocument (ODT)
-* Formato RTF (Rich Text Format)
-* Testo normale (TXT)
-* Pagine Web (HTML)
+L&#39;elenco di formati supportati è:
+
+* **Formati** immagine: Sono supportati i formati immagine supportati dal componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Immagine. I componenti per contenuti multimediali dinamici non sono supportati.
+* **Formati** del documento: Consulta Formati [di documenti supportati per le risorse](file-format-support.md#supported-document-formats)connesse.
 
 ### Users and groups involved {#users-and-groups-involved}
 
