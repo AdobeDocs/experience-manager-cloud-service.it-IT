@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Sites {#sites}
 
-+ [AEM Sites come Cloud Service](/help/sites-cloud/home.md)
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service](sites-cloud-changes.md)
 + Authoring {#authoring}
    + Guida introduttiva {#getting-started}
@@ -26,7 +26,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Creazione e organizzazione delle pagine](authoring/fundamentals/organizing-pages.md)
       + [Modifica del contenuto di una pagina](authoring/fundamentals/editing-content.md)
       + [Editor Rich Text](authoring/fundamentals/rich-text-editor.md)
-      + [Proprietà di pagina](authoring/fundamentals/page-properties.md)
+      + [Proprietà pagina](authoring/fundamentals/page-properties.md)
       + [Pubblicazione delle pagine](authoring/fundamentals/publishing-pages.md)
       + [Frammenti di contenuto](authoring/fundamentals/content-fragments.md)
       + [Frammenti esperienza](authoring/fundamentals/experience-fragments.md)
@@ -42,7 +42,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Versioni di pagina](authoring/features/page-versions.md)
       + [Differenze tra pagine](authoring/features/page-diff.md)
       + [Console Componenti](authoring/features/components-console.md)
-      + [Layout dinamico](authoring/features/responsive-layout.md)
+      + [Layout reattivo](authoring/features/responsive-layout.md)
       + [Utilizzo dei tag](authoring/features/tags.md)
    + Progetti {#projects}
       + [Utilizzo dei progetti](authoring/projects/overview.md)
@@ -68,6 +68,6 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Gestione dei tipi di pubblico](authoring/personalization/audiences.md)
       + [Creazione e gestione delle offerte](authoring/personalization/offers.md)
       + [Segmentazione](authoring/personalization/segmentation.md)
-+ Integrazione con AEM come Cloud Service {#integrations}
++ Integrazione con AEM as a Cloud Service {#integrations}
    + [Integrazione con Adobe Analytics](integrating/adobe-analytics.md)
    + [Integrazione con Adobe Target](integrating/adobe-target.md)
