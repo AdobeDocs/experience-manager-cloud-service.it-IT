@@ -1,7 +1,7 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
@@ -9,9 +9,9 @@ source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 # Assets {#assets}
 
-+ [AEM Assets come servizio cloud](/help/assets/home.md)
++ [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Panoramica e novità](overview.md)
-+ [Modifiche di rilievo apportate ad AEM Assets come servizio cloud](assets-cloud-changes.md)
++ [Modifiche di rilievo apportate ad AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Architettura](architecture.md)
 + [Formati di file supportati](file-format-support.md)
 + [Panoramica dei microservizi per le risorse](asset-microservices-overview.md)
