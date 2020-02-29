@@ -3,7 +3,7 @@ title: Riferimento schema metadati
 description: 'Scoprite le convenzioni standard per la descrizione dei metadati delle risorse, inclusi Dublin Core, IPTC e altri schemi di metadati. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -48,7 +48,7 @@ Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa D
   </tr>
   <tr>
    <td>format</td> 
-   <td>Formato file, supporto fisico o dimensioni della risorsa. AEM utilizza <code>dc:format</code> per indicare il tipo mime della risorsa.<br /> </td> 
+   <td>Formato file, supporto fisico o dimensioni della risorsa. AEM utilizza <code>dc:format</code> per indicare il tipo MIME della risorsa.<br /> </td> 
   </tr>
   <tr>
    <td>identifier</td> 
