@@ -1,14 +1,14 @@
 ---
-title: Introduzione alle risorse come servizio cloud
+title: Introduzione ad Assets as a Cloud Service
 description: Novità in Assets as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# Presentazione delle risorse come servizio Cloud {#assets-cloud-service-introduction}
+# Introducing Assets as a Cloud Service {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -18,7 +18,7 @@ L&#39;assimilazione simultanea di un numero elevato di risorse o risorse comples
 
 Le aziende richiedono il supporto di un&#39;ampia varietà di formati di file e risoluzioni di contenuti per casi di utilizzo multidispositivo, geografia e multilingue. L&#39;elaborazione delle risorse e i requisiti di storage richiedono risorse e funzionalità che possono sovraccaricare una soluzione tradizionale. A volte, le limitazioni tecniche dell&#39;elaborazione delle risorse non danno i risultati desiderati e in altri casi il costo dello storage rappresenta un ostacolo ai margini di profitto.
 
-Per iniziare, comprendere i [vantaggi di un&#39;offerta](#solution-benefits)nativa cloud. Le [modifiche importanti ad AEM come servizio](/help/release-notes/aem-cloud-changes.md) cloud che hanno anch’esse un impatto sulle risorse hanno fatto seguito alle [modifiche importanti apportate alle risorse](/help/assets/assets-cloud-changes.md).
+Per iniziare, comprendere i [vantaggi di un&#39;offerta](#solution-benefits)nativa cloud. Le [modifiche importanti ad AEM come servizio](/help/release-notes/aem-cloud-changes.md) cloud che hanno anch’esse un impatto sulle risorse Experience Manager hanno fatto seguito alle [modifiche importanti apportate alle risorse](/help/assets/assets-cloud-changes.md).
 
 Continua a leggere per conoscere i [dettagli delle nuove funzionalità](#whats-new-assets) di Risorse e i problemi [](/help/release-notes/known-issues.md)noti. Consultate un elenco delle funzionalità [](/help/release-notes/deprecated-removed-features.md) obsolete o rimosse per sapere cosa è stato rimosso in questa versione e consultate questo [elenco delle funzionalità](/help/release-notes/known-issues.md#upcoming-assets-capabilities) imminenti per scoprire cosa succederà in futuro. Infine, scopri i termini di AEM con l’aiuto di questo [glossario](/help/overview/terminology.md).
 
