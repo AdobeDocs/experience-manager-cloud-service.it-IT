@@ -3,7 +3,7 @@ title: Elabora risorse tramite gestori di file multimediali e flussi di lavoro
 description: Scopri i diversi gestori di contenuti multimediali e come utilizzarli nei flussi di lavoro per eseguire attività sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -116,7 +116,7 @@ In AEM sono disponibili alcuni flussi di lavoro predefiniti per l’elaborazione
 
 È possibile estendere i flussi di lavoro esistenti e crearne di nuovi per elaborare le risorse in base a requisiti specifici.
 
-L’esempio seguente mostra come migliorare il flusso di lavoro di sincronizzazione **[!UICONTROL delle risorse]** AEM in modo che vengano generate risorse secondarie per tutte le risorse eccetto i documenti PDF.
+L’esempio seguente mostra come migliorare il flusso di lavoro di **[!UICONTROL Sincronizzazione AEM Assets]** in modo che vengano generate le risorse secondarie di tutte le risorse, eccetto i documenti PDF.
 
 ### Disattivazione/abilitazione di un gestore di file multimediali {#disabling-enabling-a-media-handler}
 
@@ -125,7 +125,7 @@ I gestori di contenuti multimediali possono essere disabilitati o abilitati tram
 Per attivare/disattivare un gestore di supporti:
 
 1. In your browser, navigate to `https://<host>:<port>/system/console/components`.
-1. Fate clic su **[!UICONTROL Disattiva]** accanto al nome del gestore multimediale. Esempio: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
+1. Fate clic su **[!UICONTROL Disattiva]** accanto al nome del gestore multimediale. Ad esempio: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. Aggiorna la pagina: accanto al gestore multimediale viene visualizzata un&#39;icona che indica che è disattivato.
 1. Per abilitare il gestore di supporti, fare clic su **[!UICONTROL Abilita]** accanto al nome del gestore.
 
@@ -151,10 +151,10 @@ Esempio di modello:
 
 L&#39;interfaccia e le classi includono:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi mime specifici. Per aggiungere un nuovo tipo mime è necessario implementare questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi MIME specifici. Per aggiungere un nuovo tipo MIME è necessario implementare questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni utilizzate.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` classe:
-   * Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni più comuni per l’estrazione di risorse secondarie.
+* Classe `com.day.cq.dam.core.AbstractSubAssetHandler`:
+   * Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni, oltre a quelle generiche per l’estrazione di risorse secondarie.
    * Il modo migliore per avviare un&#39;implementazione consiste nell&#39;ereditare da un&#39;implementazione astratta fornita che si occupa della maggior parte delle cose e fornisce un comportamento predefinito ragionevole: la classe com.day.cq.dam.core.AbstractAssetHandler.
    * Questa classe fornisce già un descrittore di servizio astratto. Quindi se ereditate da questa classe e utilizzate il plug-in maven-sling, accertatevi di impostare il flag inherit su true.
 
@@ -162,7 +162,7 @@ L&#39;interfaccia e le classi includono:
 
 * `extractMetadata()`: questo metodo estrae tutti i metadati disponibili.
 * `getThumbnailImage()`: questo metodo crea una miniatura della risorsa passata.
-* `getMimeTypes()`: questo metodo restituisce i tipi di mime della risorsa.
+* `getMimeTypes()`: questo metodo restituisce i tipi MIME della risorsa.
 
 Esempio di modello:
 
@@ -170,7 +170,7 @@ package my.own.things; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quo
 
 L&#39;interfaccia e le classi includono:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi mime specifici. Per aggiungere un nuovo tipo mime è necessario implementare questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi MIME specifici. Per aggiungere un nuovo tipo MIME è necessario implementare questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni utilizzate.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni più comuni per l’estrazione di risorse secondarie.
 
@@ -391,7 +391,7 @@ Le seguenti conversioni possono essere eseguite e memorizzate automaticamente in
 
 Il `CommandLineProcess` processo esegue le seguenti operazioni nell&#39;ordine in cui sono elencate:
 
-* Filtra il file in base a tipi mime specifici, se specificati.
+* Filtra il file in base a tipi MIME specifici, se specificato.
 * Crea una directory temporanea sul disco in cui risiede il server AEM.
 * Invia il file originale alla directory temporanea.
 * Esegue il comando definito dagli argomenti del passaggio. Il comando viene eseguito nella directory temporanea con le autorizzazioni dell’utente che esegue AEM.
@@ -415,13 +415,13 @@ Prima installa ImageMagick sul disco che ospita il server AEM:
 
    >[!NOTE]
    >
-   >In alcune versioni di Windows (ad esempio, Windows SE), il comando convert potrebbe non essere eseguito in quanto è in conflitto con l&#39;utilità di conversione nativa che fa parte dell&#39;installazione di Windows. In questo caso, indicare il percorso completo per l&#39;utilità ImageMagick utilizzata per convertire i file immagine in miniature. Esempio, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >In alcune versioni di Windows (ad esempio, Windows SE), il comando convert potrebbe non essere eseguito in quanto è in conflitto con l&#39;utilità di conversione nativa che fa parte dell&#39;installazione di Windows. In questo caso, indicare il percorso completo per l&#39;utilità ImageMagick utilizzata per convertire i file immagine in miniature. Ad esempio, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
 1. Per verificare se lo strumento funziona correttamente, aggiungete un&#39;immagine .jpg alla directory di lavoro ed eseguite il comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` sulla riga di comando.
 
    Un’immagine capovolta viene aggiunta alla directory.
 
-Quindi, aggiungi il passaggio della riga di comando al flusso di lavoro Aggiorna risorsa **** DAM:
+Quindi, aggiungi il passaggio della riga di comando al flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**:
 
 1. Passate alla console **[!UICONTROL Flusso di lavoro]** .
 1. Nella scheda **[!UICONTROL Modelli]** , modificate il modello di risorse **[!UICONTROL di aggiornamento]** DAM.
@@ -441,7 +441,7 @@ Per verificare il flusso di lavoro modificato, aggiungete una risorsa a `/conten
 
 #### Configurazione del passo del processo CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-Questa sezione descrive come impostare gli argomenti di **processo** di **CommandLineProcess**.
+Questa sezione descrive come impostare **Argomenti processo** di **CommandLineProcess**.
 
 I valori degli argomenti di **processo** devono essere separati da una virgola e non devono iniziare con uno spazio vuoto.
 
@@ -453,7 +453,7 @@ I valori degli argomenti di **processo** devono essere separati da una virgola e
   </tr>
   <tr>
    <td> mime:&lt;mime-type&gt;</td>
-   <td><p>Argomento facoltativo. Il processo viene applicato se la risorsa ha lo stesso tipo di mime dell’argomento.</p> <p>È possibile definire diversi tipi di mime.</p> </td>
+   <td><p>Argomento facoltativo. Il processo viene applicato se la risorsa ha lo stesso tipo MIME dell’argomento.</p> <p>È possibile definire diversi tipi di mime.</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;larghezza&gt;:&lt;altezza&gt;</td>
@@ -461,7 +461,7 @@ I valori degli argomenti di **processo** devono essere separati da una virgola e
   </tr>
   <tr>
    <td> cmd: &lt;comando&gt;</td>
-   <td><p>Definisce il comando che verrà eseguito. La sintassi dipende dallo strumento della riga di comando.</p> <p>È possibile definire un solo comando.</p> <p>Per creare il comando è possibile utilizzare le seguenti variabili:<br/></p> <p><code>${filename}</code>: nome del file di input, ad es. Original.jpg<br/><code>${file}</code>: nome percorso completo del file di input, ad esempio /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>: directory del file di input, ad esempio /tmp/cqdam0816.tmp.<br/> <code>${basename}</code>: nome del file di input senza estensione, ad esempio originale<br/><code>${extension}</code>: estensione del file di input, ad esempio jpg<br/></p></td>
+   <td><p>Definisce il comando che verrà eseguito. La sintassi dipende dallo strumento della riga di comando.</p> <p>È possibile definire un solo comando.</p> <p>Per creare il comando è possibile utilizzare le seguenti variabili:<br/></p> <p><code>${filename}</code>: nome del file di input, ad esempio `Original.jpg`<br/><code>${file}</code>: nome percorso completo del file di input, ad esempio, `/tmp/cqdam0816.tmp/original.jpg`<br/><code>${directory}</code>: directory del file di input, ad esempio "/tmp/cqdam0816.tmp".<br/> <code>${basename}</code>: nome del file di input senza estensione, ad esempio originale<br/><code>${extension}</code>: estensione del file di input, ad esempio JPG<br/></p></td>
   </tr>
  </tbody>
 </table>
