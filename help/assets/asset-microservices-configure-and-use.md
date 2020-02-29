@@ -3,12 +3,12 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# Utilizzo dei microservizi delle risorse {#get-started-using-asset-microservices}
+# Introduzione all’utilizzo dei microservizi per le risorse {#get-started-using-asset-microservices}
 
 <!--
 
@@ -97,9 +97,9 @@ Un valore vuoto indica che l&#39;elaborazione delle risorse assume la dimensione
 
 #### Regole di inclusione del tipo MIME {#mime-type-inclusion-rules}
 
-Quando viene elaborata una risorsa con un tipo mime specifico, il tipo mime viene prima controllato rispetto al valore dei tipi mime esclusi per la specifica di rappresentazione. Se corrisponde a tale elenco, questa rappresentazione specifica non viene generata per la risorsa (&quot;blacklist&quot;).
+Quando viene elaborata una risorsa con un tipo MIME specifico, il tipo MIME viene prima controllato rispetto al valore dei tipi MIME esclusi per la specifica di rappresentazione. Se corrisponde a tale elenco, questa rappresentazione specifica non viene generata per la risorsa (&quot;blacklist&quot;).
 
-In caso contrario, il tipo mime viene controllato rispetto al tipo mime incluso e, se corrisponde all&#39;elenco, viene generata la rappresentazione (&quot;whitelist&quot;).
+In caso contrario, il tipo MIME viene controllato rispetto al tipo MIME incluso e, se corrisponde all&#39;elenco, il rendering viene generato (&quot;whitelist&quot;).
 
 #### Rappresentazioni speciali FPO {#special-fpo-rendition}
 
@@ -114,7 +114,7 @@ Una volta creati ulteriori profili di elaborazione, questi devono essere applica
 Esistono due modi per applicare i profili di elaborazione alle cartelle:
 
 * Gli amministratori possono selezionare una definizione di profilo di elaborazione in **[!UICONTROL Strumenti > Risorse > Profili]** di elaborazione e utilizzare l&#39;azione **[!UICONTROL Applica profilo alle cartelle]** . Viene aperto un browser del contenuto che consente di passare a cartelle specifiche, selezionarle e confermare l’applicazione del profilo.
-* Gli utenti possono selezionare una cartella nell’interfaccia utente Risorse, utilizzare l’azione **[!UICONTROL Proprietà]** per aprire la schermata delle proprietà della cartella, fare clic sulla scheda Profili **[!UICONTROL di]** elaborazione e, nel menu a discesa, selezionare il profilo di elaborazione corretto per tale cartella. L’opzione viene salvata dopo l’azione **[!UICONTROL Salva e chiudi]** .
+* Gli utenti possono selezionare una cartella nell’interfaccia utente Assets, utilizzare l’azione **[!UICONTROL Proprietà]** per aprire la schermata delle proprietà della cartella, fare clic sulla scheda **[!UICONTROL Profili di elaborazione]** e, nel menu a discesa, selezionare il profilo di elaborazione corretto per tale cartella. L’opzione viene salvata dopo l’azione **[!UICONTROL Salva e chiudi]**.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Dopo aver applicato un profilo di elaborazione a una cartella, tutte le nuove ri
 >
 >Quando le risorse vengono caricate in una cartella, Experience Manager controlla le proprietà della cartella contenitore per un profilo di elaborazione. Se non ne viene applicata alcuna, la cartella viene visualizzata nella struttura delle cartelle finché non trova un profilo di elaborazione applicato e la utilizza per la risorsa. Ciò significa che un profilo di elaborazione applicato a una cartella funziona per l’intera struttura ad albero, ma può essere sostituito con un altro profilo applicato a una sottocartella.
 
-Gli utenti possono verificare che l’elaborazione sia stata eseguita aprendo una risorsa appena caricata per la quale l’elaborazione è stata completata, aprendo l’anteprima della risorsa e facendo clic sulla vista **[!UICONTROL Rappresentazioni]** della barra a sinistra. Le rappresentazioni specifiche nel profilo di elaborazione, per le quali il tipo di risorsa specifico corrisponde alle regole di inclusione del tipo mime, devono essere visibili e accessibili.
+Gli utenti possono verificare che l’elaborazione sia stata eseguita aprendo una risorsa appena caricata per la quale l’elaborazione è stata completata, aprendo l’anteprima della risorsa e facendo clic sulla vista **[!UICONTROL Rappresentazioni]** della barra a sinistra. Le rappresentazioni specifiche nel profilo di elaborazione, per le quali il tipo di risorsa specifico corrisponde alle regole di inclusione del tipo MIME, devono essere visibili e accessibili.
 
 ![rappresentazioni](assets/renditions-additional-renditions.png)*aggiuntive Figura: Esempio di due rappresentazioni aggiuntive generate da un profilo di elaborazione applicato alla cartella principale*
 
@@ -163,8 +163,8 @@ Per configurare i modelli di flusso di lavoro post-elaborazione da eseguire per 
 
 Il servizio Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) è un servizio OSGi e offre due opzioni di configurazione:
 
-* Flussi di lavoro di post-elaborazione per percorso (`postProcWorkflowsByPath`): È possibile elencare più modelli di workflow, basati su percorsi di repository diversi. I percorsi e i modelli devono essere separati da due punti. I percorsi dell&#39;archivio semplici sono supportati e devono essere mappati su un modello di workflow nel `/var` percorso. Esempio: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* Flussi di lavoro di post-elaborazione per espressione (`postProcWorkflowsByExpression`): È possibile elencare più modelli di flusso di lavoro, in base a diverse espressioni regolari. Le espressioni e i modelli devono essere separati da due punti. L&#39;espressione regolare deve puntare direttamente al nodo Asset, e non a una delle rappresentazioni o dei file. Esempio: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* Flussi di lavoro di post-elaborazione per percorso (`postProcWorkflowsByPath`): È possibile elencare più modelli di workflow, basati su percorsi di repository diversi. I percorsi e i modelli devono essere separati da due punti. I percorsi dell&#39;archivio semplici sono supportati e devono essere mappati su un modello di workflow nel `/var` percorso. Ad esempio: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Flussi di lavoro di post-elaborazione per espressione (`postProcWorkflowsByExpression`): È possibile elencare più modelli di flusso di lavoro, in base a diverse espressioni regolari. Le espressioni e i modelli devono essere separati da due punti. L&#39;espressione regolare deve puntare direttamente al nodo Asset, e non a una delle rappresentazioni o dei file. Ad esempio: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
