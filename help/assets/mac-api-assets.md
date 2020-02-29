@@ -1,14 +1,14 @@
 ---
-title: API HTTP Assets
+title: API HTTP di Assets
 description: Scopri l’implementazione, il modello dati e le funzionalità dell’API HTTP Assets. Utilizzate l'API HTTP Assets per eseguire varie attività sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3db5a1d668ad88e340a1580900d222c370b8d3e8
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# API HTTP Assets {#assets-http-api}
+# API HTTP di Assets {#assets-http-api}
 
 ## Panoramica {#overview}
 
@@ -19,7 +19,7 @@ Per accedere all&#39;API:
 1. Aprite il documento del servizio API in `https://[hostname]:[port]/api.json`.
 1. Segui il collegamento del servizio Risorse `https://[hostname]:[server]/api/assets.json`.
 
-La risposta API è un file JSON per alcuni tipi mime e un codice di risposta per tutti i tipi mime. La risposta JSON è facoltativa e potrebbe non essere disponibile, ad esempio per i file PDF. Per ulteriori analisi o azioni, fai affidamento sul codice di risposta.
+La risposta API è un file JSON per alcuni tipi MIME e un codice di risposta per tutti i tipi MIME. La risposta JSON è facoltativa e potrebbe non essere disponibile, ad esempio per i file PDF. Per ulteriori analisi o azioni, fai affidamento sul codice di risposta.
 
 Dopo la [!UICONTROL disattivazione], una risorsa e le relative rappresentazioni non sono disponibili né tramite l’interfaccia Web di Assets né tramite l’API HTTP. L&#39;API restituisce un messaggio di errore 404 se l&#39;ora [!UICONTROL di] attivazione è futura o [!UICONTROL Ora] di disattivazione è passata.
 
