@@ -2,16 +2,16 @@
 title: Aggiunta di risorse Dynamic Media alle pagine
 description: Come aggiungere componenti per contenuti multimediali dinamici a una pagina in AEM
 translation-type: tm+mt
-source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
+source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 
 ---
 
 
 # Aggiunta di risorse Dynamic Media alle pagine{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. A tale scopo, entrate in modalità Layout e attivate i componenti per contenuti multimediali dinamici. Una volta fatto ciò, potrai aggiungere questi componenti alla pagina e aggiungere risorse al componente. I componenti per contenuti multimediali dinamici sono intelligenti: sanno se si sta aggiungendo un’immagine o un video e le opzioni di configurazione disponibili cambiano di conseguenza.
+Per aggiungere la funzionalità Dynamic Media alle risorse utilizzate sui siti web, puoi inserire direttamente nella pagina il componente **Dynamic Media**, **File multimediali interattivi**, **Elemento multimediale panoramico** o **File multimediali video 360**. A tale scopo, entra in modalità Layout e attiva i componenti Dynamic Media. Quindi, potrai aggiungere questi componenti alla pagina e fornire così risorse al componente. I componenti Dynamic Media sono intelligenti: rilevano l’aggiunta di un’immagine o di un video, dunque le opzioni di configurazione disponibili cambiano di conseguenza.
 
-Se utilizzi AEM come WCM, puoi aggiungere risorse per contenuti multimediali dinamici direttamente alla pagina. Se utilizzate una terza parte per WCM, [collegate](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incorporate](/help/assets/dynamic-media/embed-code.md) le risorse. Per un sito Web di terze parti reattivo, consultate [Distribuzione di immagini ottimizzate a un sito](/help/assets/dynamic-media/responsive-site.md)reattivo.
+Se utilizzi AEM come WCM, puoi aggiungere direttamente alla pagina le risorse Dynamic Media. Se ti avvali di una terza parte per WCM, puoi [collegare](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incorporare](/help/assets/dynamic-media/embed-code.md) le risorse. Per un sito web dinamico di terze parti, consulta la sezione [Distribuzione di immagini ottimizzate in un sito dinamico](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
@@ -54,11 +54,11 @@ L’aggiunta di un componente per contenuti multimediali dinamici, contenuti mul
 
 Potete localizzare i componenti per contenuti multimediali dinamici in uno dei due modi seguenti:
 
-* In una pagina Web in Siti, aprite **[!UICONTROL Proprietà]** e selezionate la scheda **[!UICONTROL Avanzate]** . Selezionate la lingua desiderata per la localizzazione.
+* In una pagina web di Sites, apri **[!UICONTROL Proprietà]** e seleziona la scheda **[!UICONTROL Avanzate]**. Scegli la lingua desiderata per la localizzazione.
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
-* Dal selettore del sito, selezionate la pagina o il gruppo di pagine desiderato. Toccate **[!UICONTROL Proprietà]** e selezionate la scheda **[!UICONTROL Avanzate]** . Selezionate la lingua desiderata per la localizzazione.
+* Dal selettore del sito, selezionate la pagina o il gruppo di pagine desiderato. Toccate **[!UICONTROL Proprietà]** e selezionate la scheda **[!UICONTROL Avanzate]** . Scegli la lingua desiderata per la localizzazione.
 
    >[!NOTE]
    >
@@ -70,7 +70,7 @@ I componenti per contenuti multimediali dinamici sono disponibili quando toccate
 
 I componenti per contenuti multimediali dinamici disponibili sono i seguenti:
 
-* **[!UICONTROL Contenuti multimediali]** dinamici - Utilizzate per risorse quali immagini, video, eCatalog e set 360 gradi.
+* **[!UICONTROL Dynamic Media]**: da utilizzare per risorse quali immagini, video, eCatalog e set 360 gradi.
 * **[!UICONTROL Contenuti multimediali]** interattivi - Utilizzate per qualsiasi risorsa interattiva, ad esempio video interattivi, immagini interattive o set di caroselli.
 * **[!UICONTROL Supporti]** panoramici - Utilizzati per immagini panoramiche o risorse di immagini VR panoramiche.
 * **[!UICONTROL Video 360 Media]** - Utilizzate per risorse video 360 e 360 VR.
@@ -113,7 +113,7 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
 >[!NOTE]
 >
->Per impostazione predefinita, il componente immagine elementi multimediali dinamici è adattivo. Se desideri ottenere una dimensione fissa, impostala nel componente nella scheda **[!UICONTROL Avanzate]** con i parametri **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
+>Per impostazione predefinita, il componente immagine Dynamic Media è adattivo. Se vuoi impostarne una dimensione fissa, lo puoi fare nella scheda **[!UICONTROL Avanzate]** del componente, alle voci **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
 
 * **[!UICONTROL Predefinito]** visualizzatore - Selezionate un predefinito esistente dal menu a discesa. Se il predefinito per visualizzatori che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. Non è possibile selezionare un predefinito per visualizzatori se si utilizza un predefinito per immagini, e viceversa.
 
@@ -192,7 +192,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 >[!NOTE]
 >
->Per impostazione predefinita, il componente immagine elementi multimediali dinamici è adattivo. Se desideri ottenere una dimensione fissa, impostala nel componente nella scheda **[!UICONTROL Avanzate]** con i parametri **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
+>Per impostazione predefinita, il componente immagine Dynamic Media è adattivo. Se vuoi impostarne una dimensione fissa, lo puoi fare nella scheda **[!UICONTROL Avanzate]** del componente, alle voci **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
 
 * **[!UICONTROL Modificatori]** immagini - Potete applicare effetti immagine fornendo ulteriori comandi immagine. Questi sono descritti nei predefiniti per immagini e nel riferimento al comando Image Server.
 
@@ -200,7 +200,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Abilita corrispondenza]** proporzioni (Enable Aspect Ration Match) - Corrisponde alle proporzioni dell&#39;immagine originale quando selezionate una rappresentazione ritaglio avanzato.
+* **[!UICONTROL Abilita corrispondenza]** proporzioni - Selezionate questa opzione per consentire a Contenuti multimediali dinamici di scegliere una rappresentazione di ritaglio avanzato con proporzioni che meglio corrispondono alle proporzioni dell&#39;immagine originale.
 
 * **[!UICONTROL Titolo]**(Title) - Consente di modificare il titolo dell&#39;immagine SmartCrop.
 
@@ -261,7 +261,7 @@ Il componente Contenuti multimediali panoramici è destinato alle risorse che so
 * Proporzioni di 2:1.
 * Tag con le parole chiave `equirectangular` o (`spherical` + `panorama`) o (`spherical` + `panoramic`). Consultate [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md).
 
-Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche per la pagina dei dettagli delle risorse che per il componente **[!UICONTROL WCM per elementi multimediali]** panoramici.
+Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche della pagina dettagli risorsa e al componente WCM per **[!UICONTROL elementi multimediali panoramici]**.
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse p
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
 >
 >
-Tenete presente che l’assegnazione di un predefinito per visualizzatori diverso a ciascun componente **[!UICONTROL Panoramic Media]** nella pagina non è supportata.
+Non è supportata l’assegnazione di un predefinito visualizzatore diverso a ciascun componente **[!UICONTROL Elemento multimediale panoramico]** di quella pagina.
 >
 >Tuttavia, potete usare lo stesso predefinito per visualizzatori per tutti i componenti per file multimediali panoramici che utilizzano risorse dello stesso tipo, all’interno della pagina.
 
