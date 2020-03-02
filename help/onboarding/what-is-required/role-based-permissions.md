@@ -2,7 +2,7 @@
 title: Autorizzazioni basate sul ruolo
 description: Autorizzazioni basate sul ruolo
 translation-type: tm+mt
-source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
+source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
 
 ---
 
@@ -17,12 +17,8 @@ A ciascun ruolo sono associate autorizzazioni specifiche, attività preconfigura
 
 | Autorizzazione | Descrizione | Proprietario | Gestione distribuzione | Program Manager | Sviluppatore |
 |--- |--- |--- |--- |--- |--- |
-| Crea tenant | Crea un nuovo tenant. |  |  |  |  |
-| Aggiorna tenant | Aggiorna tenant. |  |  |  |  |
 | Aggiungi programma | Aggiungere un nuovo programma. | x |  |  |  |
 | Crea ambiente | Creare Ambienti Prod+Stage, Dev, Playground. | x | x |  |  |
-| Configurare le variabili di ambiente | Configurare le variabili di ambiente e i segreti. |  | x |  | x |
-| Aggiungi o rimuovi nome di dominio personalizzato, carica o aggiorna certificato SSL | Aggiungi/rimuovi nome di dominio personalizzato, carica/aggiorna certificato SSL. | x | x |  |  |
 | Aggiorna ambiente | Aggiornare Gli Ambienti Prod+Stage, Dev, Playground. | x | x |  |  |
 | Elimina ambiente | Elimina ambienti non prod, Dev, Playground. | x | x |  |  |
 | Elimina ambiente | Elimina Ambiente Prod+Fase. |  |  |  |  |
