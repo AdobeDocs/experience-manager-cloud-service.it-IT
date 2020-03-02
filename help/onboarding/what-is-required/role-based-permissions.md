@@ -2,7 +2,7 @@
 title: Autorizzazioni basate sul ruolo
 description: Autorizzazioni basate sul ruolo
 translation-type: tm+mt
-source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
+source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
 
 ---
 
@@ -26,9 +26,7 @@ A ciascun ruolo sono associate autorizzazioni specifiche, attività preconfigura
 | Aggiorna ambiente | Aggiornare Gli Ambienti Prod+Stage, Dev, Playground. | x | x |  |  |
 | Elimina ambiente | Elimina ambienti non prod, Dev, Playground. | x | x |  |  |
 | Elimina ambiente | Elimina Ambiente Prod+Fase. |  |  |  |  |
-| Ambiente di sospensione | Ambienti Non-prod, Dev, Playground. | x | x |  |  |
 | Impostazione programma | Configurare il programma (inclusi i KPI). | x |  |  |  |
-| Impostazione programma | Configurare i criteri di ridimensionamento (Generale: configurazione del numero massimo di livelli e della scala orizzontale su richiesta: consenso). | x |  |  |  |
 | Impostazione programma | Accesso A Git Conferma. |  | x |  | x |
 | Impostazione pipeline | Configurazione o modifica della tubazione. |  | x |  |  |
 | Esecuzione pipeline | Avviate la tubazione. | x | x |  |  |
@@ -36,10 +34,7 @@ A ciascun ruolo sono associate autorizzazioni specifiche, attività preconfigura
 | Esecuzione pipeline | Fornisci l&#39;approvazione GoLive. | x | x | x |  |
 | Esecuzione pipeline | Pianificazione distribuzione produzione. | x | x | x |  |
 | Esecuzione pipeline | Riprende tubazione produzione. |  |  |  |  |
-| Consenso (o rifiuto) al provisioning | Consenso al provisioning orizzontale su richiesta dalla schermata di configurazione del programma. Configurate i segmenti P-D &#39;consentiti&#39; massimi che possono essere ridimensionati orizzontalmente in ambienti di PROD e non-PROD. | x |  |  |  |
 | Gestisci ambiente | Aggiungi segmento Publish-Dispatcher dalla schermata Manage Environment (Gestisci ambiente). | x | x |  |  |  |
-| Aggiornamento del prodotto | La scheda Aggiornamento AEM è visibile e porta l&#39;utente a effettuare l&#39;aggiornamento guidato. | x | x | x | x |
-| Aggiornamento del prodotto | È possibile intervenire su Aggiornamento guidato prodotto. | x | x |  |  |
 | Aggiornamento push | Avviate la pipeline di aggiornamento push. |  |  |  |  |
 | Genera token di accesso personale | Genera token di accesso personale. |  | x |  | x |
 
