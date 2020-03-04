@@ -15,7 +15,7 @@ Se utilizzi AEM come WCM, puoi aggiungere direttamente alla pagina le risorse Dy
 
 >[!NOTE]
 >
->Devi pubblicare le risorse prima di aggiungerle alle pagine in AEM. See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>È necessario pubblicare le risorse prima di aggiungerle alle pagine in AEM. See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
@@ -32,7 +32,7 @@ L’aggiunta di un componente per contenuti multimediali dinamici, contenuti mul
 
 1. Trascinate un componente **[!UICONTROL Contenuti multimediali]** dinamici e rilasciatelo nella posizione desiderata sulla pagina.
 
-   Nell’esempio seguente, viene utilizzato il componente **[!UICONTROL Video 360 Media]** .
+   Nell’esempio di seguito, viene utilizzato il componente **[!UICONTROL Video 360 Media]** .
 
    ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
@@ -145,9 +145,9 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
-* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
 
 #### Quando esegui operazioni con i Video {#when-working-with-video}
@@ -174,9 +174,9 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
 * **[!UICONTROL Title**- Modifica il titolo del video.
 
-* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
 #### Quando si lavora con Smart Crop {#when-working-with-smart-crop}
 
@@ -212,15 +212,15 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
-* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
 ### Componente: Contenuti multimediali interattivi {#interactive-media-component}
 
 Il Componente File multimediali interattivi è adatto per le risorse che dispongono di interattività, come punti attivi o mappe immagine. Se disponi di un&#39;immagine, un video interattivo o un banner carosello, utilizza il componente **[!UICONTROL File multimediali interattivi]**.
 
-Il componente Interactive Media è avanzato. A seconda se aggiungete un’immagine o un video, avete a disposizione diverse opzioni. Inoltre, il visualizzatore è reattivo: le dimensioni dello schermo cambiano automaticamente in base alle dimensioni dello schermo. Tutti i visualizzatori sono visualizzatori HTML5.
+Il componente Contenuti multimediali interattivi è avanzato. A seconda se aggiungete un’immagine o un video, avete a disposizione diverse opzioni. Inoltre, il visualizzatore è reattivo: le dimensioni dello schermo cambiano automaticamente in base alle dimensioni dello schermo. Tutti i visualizzatori sono visualizzatori HTML5.
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ Il componente Interactive Media è avanzato. A seconda se aggiungete un’immagi
 >
 Tenete presente che l’assegnazione di un predefinito per visualizzatori diverso a ciascun componente per contenuti multimediali interattivi in quella pagina non è supportata.
 >
->Potete tuttavia utilizzare lo stesso predefinito per visualizzatori per tutti i componenti per contenuti multimediali interattivi che utilizzano risorse dello stesso tipo, all’interno della pagina.
+>Tuttavia, potete usare lo stesso predefinito per visualizzatori per tutti i componenti per contenuti multimediali interattivi che utilizzano risorse dello stesso tipo, all’interno della pagina.
 
 ![chlimage_1-174](assets/chlimage_1-541.png)
 
@@ -242,9 +242,9 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 * **[!UICONTROL Titolo]**(Title) - Consente di modificare il titolo del video.
 
-* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
    È possibile modificare le seguenti impostazioni **[!UICONTROL Aggiungi al carrello]**, facendo clic su **[!UICONTROL Modifica]** nel componente.
 
@@ -267,7 +267,7 @@ Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse p
 >
 >Se la pagina Web ha i seguenti elementi:
 >
->* Nella stessa pagina vengono utilizzate più istanze del componente **[!UICONTROL Panoramico]** .
+>* Nella stessa pagina vengono utilizzate più istanze del componente **[!UICONTROL Panoramic Media]** .
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
 >
 >
