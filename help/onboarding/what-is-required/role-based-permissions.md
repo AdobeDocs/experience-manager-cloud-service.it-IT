@@ -2,14 +2,14 @@
 title: Autorizzazioni basate sul ruolo
 description: Autorizzazioni basate sul ruolo
 translation-type: tm+mt
-source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
+source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
 
 ---
 
 
 # Autorizzazioni basate sul ruolo {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] dispone di ruoli preconfigurati con autorizzazioni appropriate. Ad esempio, uno sviluppatore sviluppa il codice e ha l&#39;autorizzazione per inviare il codice al repository **** Git. In alternativa, il proprietario di un&#39;azienda dispone di autorizzazioni diverse che consentono di definire gli indicatori prestazioni chiave (KPI, Key Performance Indicators) e di approvare le distribuzioni.
+[!UICONTROL Cloud Manager] dispone di ruoli preconfigurati con le autorizzazioni appropriate. Ad esempio, uno sviluppatore sviluppa il codice e ha l&#39;autorizzazione per inviare il codice al repository **** Git. In alternativa, il proprietario di un&#39;azienda dispone di autorizzazioni diverse che consentono di definire gli indicatori prestazioni chiave (KPI) e di approvare le distribuzioni.
 
 ## Autorizzazioni utente {#user-permissions}
 
@@ -20,7 +20,7 @@ A ciascun ruolo sono associate autorizzazioni specifiche, attività preconfigura
 | Aggiungi programma | Aggiungere un nuovo programma. | x |  |  |  |
 | Crea ambiente | Creare Ambienti Prod+Stage, Dev, Playground. | x | x |  |  |
 | Aggiorna ambiente | Aggiornare Gli Ambienti Prod+Stage, Dev, Playground. | x | x |  |  |
-| Elimina ambiente | Elimina ambienti non prod, Dev, Playground. | x | x |  |  |
+| Elimina ambiente | Elimina ambienti non-prod, Dev, Playground. | x | x |  |  |
 | Elimina ambiente | Elimina Ambiente Prod+Fase. |  |  |  |  |
 | Impostazione programma | Configurare il programma (inclusi i KPI). | x |  |  |  |
 | Impostazione programma | Accesso A Git Conferma. |  | x |  | x |
@@ -32,5 +32,5 @@ A ciascun ruolo sono associate autorizzazioni specifiche, attività preconfigura
 | Esecuzione pipeline | Riprende tubazione produzione. |  |  |  |  |
 | Gestisci ambiente | Aggiungi segmento Publish-Dispatcher dalla schermata Manage Environment (Gestisci ambiente). | x | x |  |  |  |
 | Aggiornamento push | Avviate la pipeline di aggiornamento push. |  |  |  |  |
-| Genera token di accesso personale | Genera token di accesso personale. |  | x |  | x |
+| Genera token di accesso personale | Git di accesso. |  | x |  | x |
 
