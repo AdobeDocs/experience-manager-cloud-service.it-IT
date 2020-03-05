@@ -3,7 +3,7 @@ title: Utilizzare le risorse collegate per condividere le risorse DAM nel flusso
 description: Utilizza le risorse disponibili in una distribuzione remota di Risorse Adobe Experience Manager quando crei le pagine Web in un’altra distribuzione del sito Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 64aab464c2d5de0c837ee465a088107a78ba9374
+source-git-commit: 188917fe677a88142c702b9637600db872853974
 
 ---
 
@@ -38,7 +38,7 @@ Prima di utilizzare o configurare questa funzionalità, accertati di:
 Gli autori possono cercare immagini e i seguenti tipi di documenti in Content Finder e utilizzare le risorse ricercate in Editor pagina. È possibile aggiungere dei documenti al `Download` componente e aggiungere delle immagini al `Image` componente. Gli autori possono inoltre aggiungere le risorse remote a qualsiasi componente AEM personalizzato che estenda i componenti predefiniti `Download` o `Image` . Gli elenchi dei formati supportati sono:
 
 * **Formati** immagine: Sono supportati i formati immagine supportati dal componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Immagine. Le immagini per contenuti multimediali dinamici non sono supportate.
-* **Formati** del documento: Consulta Formati [di documenti supportati per le risorse](file-format-support.md#supported-document-formats)connesse.
+* **Formati** del documento: Consulta Formati [di documenti supportati per le risorse](file-format-support.md#doc-formats)connesse.
 
 ### Users and groups involved {#users-and-groups-involved}
 
