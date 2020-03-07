@@ -125,7 +125,7 @@ I gestori di contenuti multimediali possono essere disabilitati o abilitati tram
 Per attivare/disattivare un gestore di supporti:
 
 1. In your browser, navigate to `https://<host>:<port>/system/console/components`.
-1. Fate clic su **[!UICONTROL Disattiva]** accanto al nome del gestore multimediale. Ad esempio: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
+1. Fate clic su **[!UICONTROL Disattiva]** accanto al nome del gestore multimediale. Esempio: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. Aggiorna la pagina: accanto al gestore multimediale viene visualizzata un&#39;icona che indica che è disattivato.
 1. Per abilitare il gestore di supporti, fare clic su **[!UICONTROL Abilita]** accanto al nome del gestore.
 
@@ -415,7 +415,7 @@ Prima installa ImageMagick sul disco che ospita il server AEM:
 
    >[!NOTE]
    >
-   >In alcune versioni di Windows (ad esempio, Windows SE), il comando convert potrebbe non essere eseguito in quanto è in conflitto con l&#39;utilità di conversione nativa che fa parte dell&#39;installazione di Windows. In questo caso, indicare il percorso completo per l&#39;utilità ImageMagick utilizzata per convertire i file immagine in miniature. Ad esempio, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >In alcune versioni di Windows (ad esempio, Windows SE), il comando convert potrebbe non essere eseguito in quanto è in conflitto con l&#39;utilità di conversione nativa che fa parte dell&#39;installazione di Windows. In questo caso, indicare il percorso completo per l&#39;utilità ImageMagick utilizzata per convertire i file immagine in miniature. Esempio, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
 1. Per verificare se lo strumento funziona correttamente, aggiungete un&#39;immagine .jpg alla directory di lavoro ed eseguite il comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` sulla riga di comando.
 
