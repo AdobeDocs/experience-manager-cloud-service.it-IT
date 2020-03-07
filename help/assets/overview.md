@@ -8,7 +8,7 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 ---
 
 
-# Introducing Assets as a Cloud Service {#assets-cloud-service-introduction}
+# Introduzione ad Assets as a Cloud Service {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -37,5 +37,5 @@ Di seguito sono riportati i vantaggi principali di Assets come servizio Cloud. P
 
 Le nuove importanti funzionalità sono:
 
-* [Microservizi risorsa](/help/assets/asset-microservices-overview.md)
+* [Microservizi per le risorse](/help/assets/asset-microservices-overview.md)
 * [Metodi di caricamento delle risorse](/help/assets/add-assets.md)
