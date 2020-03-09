@@ -1,7 +1,7 @@
 ---
 title: Problemi noti
-description: Note sulla versione specifiche dei problemi noti con Adobe Experience Manager come servizio Cloud
-translation-type: tm+mt
+description: Note sulla versione specifiche per i problemi noti relativi ad Adobe Experience Manager as a Cloud Service
+translation-type: ht
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 ---
@@ -9,9 +9,9 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 # Problemi noti {#known-issues}
 
-In questo articolo sono elencati i problemi noti di Adobe Experience Manager come offerta di servizi cloud. L&#39;elenco viene aggiornato e aggiornato con ogni versione continua di Experience Manager.
+In questo articolo sono elencati i problemi noti relativi all’offerta Adobe Experience Manager as a Cloud Service. L’elenco viene rivisto e aggiornato a ogni versione di Experience Manager.
 
-[Per ulteriori informazioni sui problemi noti, contattate il supporto](https://helpx.adobe.com/support/experience-manager.html) .
+Per ulteriori informazioni sui problemi noti, [contatta il supporto](https://helpx.adobe.com/it/support/experience-manager.html).
 
 <!-- 
 ## Platform {#platform}
@@ -25,28 +25,28 @@ In questo articolo sono elencati i problemi noti di Adobe Experience Manager com
 
 Alcuni problemi noti sono:
 
-* **Schema** metadati: Il widget di valutazione delle risorse può causare un errore di compilazione JSP. Una soluzione consiste nel rimuovere il componente di valutazione delle risorse dallo schema di metadati. <!-- CQ-4282865 -->
+* **Schema metadati**: il widget di valutazione delle risorse può causare un errore di compilazione JSP. Una soluzione consiste nel rimuovere il componente di valutazione delle risorse dallo schema metadati. <!-- CQ-4282865 -->
 
-Alcune limitazioni della funzionalità Risorse sono:
+Alcune limitazioni della funzionalità Assets sono:
 
-* Con Risorse AEM come servizio cloud, la funzionalità Risorse collegate funziona quando AEM 6.5 Sites viene implementato su AMS.
+* Con AEM Assets as a Cloud Service, la funzionalità Risorse collegate viene eseguita quando AEM 6.5 Sites viene implementato in AMS.
 
-### Prossime funzionalità di Assets {#upcoming-assets-capabilities}
+### Funzionalità di Assets disponibili in futuro {#upcoming-assets-capabilities}
 
-Alcune funzionalità di Risorse Adobe Experience Manager che dipendono dalle funzionalità di base, che non sono ancora disponibili in Experience Manager come architettura di distribuzione del servizio Cloud, devono essere abilitate in una fase successiva:
+In futuro verranno attivate alcune funzionalità di Adobe Experience Manager Assets che dipendono dalle funzionalità di base e che non sono ancora disponibili nell’architettura di distribuzione di Experience Manager as a Cloud Service:
 
-* Al momento la pubblicazione in Brand Portal non è abilitata. Potete estendere e implementare l’implementazione di [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) per i casi di utilizzo della distribuzione delle risorse.
-* Al momento non è disponibile una funzionalità avanzata per l&#39;assegnazione di tag avanzati che sfrutta i servizi AI di I/O Adobe.
-* Funzionalità non abilitate in questa fase a causa della dipendenza dalle API Commerce Integration Framework:
-   * Modelli di flusso di lavoro per fotografie.
-   * La scheda Informazioni prodotto nell’interfaccia utente delle proprietà della risorsa non è popolata.
-* Funzionalità non abilitate in questa fase a causa della dipendenza dall&#39;integrazione di InDesign Server:
+* Al momento la pubblicazione in Brand Portal non è abilitata. Puoi estendere e distribuire l’implementazione di [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) per i casi d’uso relativi alla distribuzione delle risorse.
+* Al momento non è disponibile una versione migliorata della funzionalità per l’assegnazione di tag avanzati che sfrutta i servizi di intelligenza artificiale di Adobe I/O.
+* Funzionalità non attivate in questa fase a causa della dipendenza da API di Commerce Integration Framework:
+   * Modelli di flusso di lavoro per servizio fotografico.
+   * La scheda Informazioni prodotto nell’interfaccia delle proprietà della risorsa non è compilata.
+* Funzionalità non attivate in questa fase a causa della dipendenza dall’integrazione di InDesign Server:
    * Modelli di risorse e cataloghi di risorse.
-   * Anteprima di più pagine di file InDesign.
+   * Anteprima multipagina di file InDesign.
 
 >[!MORELIKETHIS]
 >
->* [Modifiche principali in AEM](aem-cloud-changes.md)
+>* [Modifiche principali apportate in AEM](aem-cloud-changes.md)
 >* [Funzioni obsolete e rimosse](deprecated-removed-features.md)
 >* [Note sulla versione](home.md)
 
