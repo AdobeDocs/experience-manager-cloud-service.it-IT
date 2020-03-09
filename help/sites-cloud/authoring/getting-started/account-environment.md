@@ -1,28 +1,28 @@
 ---
 title: Configurazione dell’ambiente dell’account
 description: AEM consente di configurare l’account e alcuni aspetti dell’ambiente di authoring
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Configurazione dell’ambiente dell’account {#configuring-your-account-environment}
+# Configurazione dell’ambiente dell’account   {#configuring-your-account-environment}
 
 Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring.
 
 Utilizza l’opzione [Utente](#user-settings) nell’[intestazione](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) e la relativa finestra di dialogo [Preferenze](#my-preferences) per modificare le opzioni utente.
 
-Begin by accessing the [User](#user-settings) option in the header.
+Per prima cosa, accedi all’opzione [Utente](#user-settings) nell’intestazione.
 
 ## Impostazioni utente {#user-settings}
 
 La finestra di dialogo **Impostazioni utente** consente di accedere alle seguenti funzioni:
 
 * Impersona
-   * With the Impersonate as functionality, a user can work on behalf of another user. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
+   * La funzionalità Impersona permette a un utente di lavorare a nome di un altro utente. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * Profilo
-   * Offers a convenient link to your user settings <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * Offre un collegamento semplice alle impostazioni utente.<!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [Preferenze](#my-preferences)
    * Consente di specificare varie preferenze di impostazione specifiche dell’utente.
 
@@ -38,11 +38,11 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Lingua**
 
-   Consente di definire la lingua da usare nell’interfaccia utente dell’ambiente di authoring. Seleziona la lingua desiderata dall’elenco delle opzioni disponibili.
+   Consente di definire la lingua da usare nell’interfaccia dell’ambiente di authoring. Seleziona la lingua desiderata dall’elenco delle opzioni disponibili.
 
 * **Gestione finestre**
 
-   Consente di definire il comportamento o l’apertura delle finestre. Potete selezionare:
+   Consente di definire il comportamento o l’apertura delle finestre. Puoi selezionare:
 
    * **Finestre multiple** (predefinito)
 
@@ -71,7 +71,7 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
    * **Mostra sempre data esatta**: viene sempre visualizzata la data esatta e non una data relativa.
    * **1 giorno**: viene visualizzata la data relativa per le date entro un giorno; in caso contrario viene visualizzata una data esatta.
-   * **7 giorni (predefinito)**: viene visualizzata la data relativa per date entro sette giorni; in caso contrario viene visualizzata una data esatta.
+   * **7 giorni (impostazione predefinita)**: viene visualizzata la data relativa per date entro sette giorni; in caso contrario viene visualizzata una data esatta.
    * **1 mese**: viene visualizzata la data relativa per le date entro un mese; in caso contrario viene visualizzata una data esatta.
    * **1 anno**: viene visualizzata la data relativa per le date entro un anno; in caso contrario viene visualizzata una data esatta.
    * **Mostra sempre data relativa**: non vengono mai visualizzate date esatte, ma solo date relative.
@@ -84,7 +84,7 @@ Ogni utente può impostare autonomamente determinate proprietà.
    * [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
    Questa opzione abilita le scelte rapide da tastiera. Queste sono abilitate per impostazione predefinita, ma possono essere disabilitate se, ad esempio, un utente presenta determinati requisiti di accessibilità.
 
-* **Abilita pagina iniziale risorse**
+* **Abilita pagina iniziale di Assets**
 
    Questa opzione è disponibile solo se l’amministratore del sistema ha abilitato l’esperienza Home page di Assets per l’intera organizzazione.
 
