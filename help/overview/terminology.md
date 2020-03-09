@@ -1,44 +1,44 @@
 ---
-title: Introduzione ad Adobe Experience Manager come servizio Cloud - Terminologia
-description: 'Introduzione ad Adobe Experience Manager come servizio Cloud - Terminologia. '
-translation-type: tm+mt
+title: Introduzione ad Adobe Experience Manager as a Cloud Service - Terminologia
+description: 'Introduzione ad Adobe Experience Manager as a Cloud Service - Terminologia. '
+translation-type: ht
 source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 
 ---
 
 
-# Adobe Experience Manager come servizio cloud - Terminologia {#adobe-experience-manager-as-a-cloud-service-terminology}
+# Adobe Experience Manager as a Cloud Service - Terminologia {#adobe-experience-manager-as-a-cloud-service-terminology}
 
-I termini seguenti sono utilizzati in relazione ad Adobe Experience Manager (AEM) come servizio cloud:
+I termini seguenti sono utilizzati in riferimento ad Adobe Experience Manager (AEM) as a Cloud Service:
 
 ## Prodotti {#products}
 
 | Prodotto | Descrizione |
 |---|---|
-| AEM come servizio cloud | Il modo nativo di sfruttare le applicazioni AEM |
-| Risorse AEM come servizio cloud | Gestione delle risorse digitali (DAM) come soluzione scalabile e nativa per il cloud, per assimilare, elaborare e gestire le risorse digitali, integrandosi con l&#39;ecosistema Adobe Experience Cloud e Adobe Creative Cloud più ampio. |
-| AEM Sites come servizio cloud | Un&#39;istanza di AEM come servizio cloud con l&#39;applicazione AEM Sites. |
+| AEM as a Cloud Service | Soluzione nativa per il cloud che consente di sfruttare le applicazioni AEM. |
+| AEM Assets as a Cloud Service | Funzionalità Digital Asset Management (DAM) incluse in una soluzione scalabile e nativa per il cloud, per inserire, elaborare e gestire le risorse digitali, garantendo l’integrazione con il più esteso ecosistema Adobe Experience Cloud e Adobe Creative Cloud. |
+| AEM Sites as a Cloud Service | Istanza di AEM as a Cloud Service che include l’applicazione AEM Sites. |
 
-## Istanze e tubazioni {#instances-and-pipelines}
+## Istanze e pipeline {#instances-and-pipelines}
 
 | Istanza | Descrizione |
 |---|---|
-| Adobe Pipeline | Meccanismo di pubblicazione dei contenuti dall’autore alla pubblicazione. |
-| AEM Author Tier | Descrive l’ambiente di authoring per Siti e Risorse. |
-| Livello pubblicazione AEM | Descrive l&#39;ambiente di pubblicazione di Sites. |
+| Pipeline Adobe | Meccanismo di pubblicazione dei contenuti dall’ambiente di authoring a quello di pubblicazione. |
+| Livello di authoring AEM | Riferito all’ambiente di authoring per Sites e Assets. |
+| Livello di pubblicazione AEM | Riferito all’ambiente di pubblicazione per Sites. |
 
 
 <!-- This section of the table must be alphabetic -->
 
 ## Terminologia {#terminology}
 
-| Term | Descrizione |
+| Termine | Descrizione |
 |---|---|
-| Immagine AEM | Un artefatto distribuibile che contiene il codice prodotto AEM insieme al codice cliente. |
-| Microservizi risorsa | Servizi di elaborazione delle risorse digitali basati su cloud per l’elaborazione di risorse in base a diversi casi di utilizzo, ad esempio generazione di rappresentazioni, processi PDF, gestione delle risorse secondarie, estrazione del testo e così via. Per ulteriori informazioni, consulta Panoramica [sui microservizi di](/help/assets/asset-microservices-overview.md)risorse. |
-| Repository Git di Cloud Manager | Dove i clienti memorizzano il codice e le impostazioni di configurazione. |
-| Provider cloud | AEM come servizio cloud supporta sia Azure che AWS come fornitori cloud. |
-| Repository dei contenuti | Posizione in cui il contenuto è persistente. |
-| Isolamento Enterprise | Ogni istanza di AEM come servizio Cloud è isolata dalle altre istanze. |
-| Golden Master | Il livello di pubblicazione AEM. |
-| Motore di orchestrazione | AEM come servizio cloud utilizza un motore di orchestrazione per assicurarsi che tutti i servizi di creazione e pubblicazione vengano ridimensionati come e quando necessario. |
+| Immagine AEM | Artefatto distribuibile che contiene il codice prodotto AEM unitamente al codice cliente. |
+| Microservizi per le risorse | Servizi di elaborazione delle risorse digitali basati su cloud che si prestano a diversi casi d’uso per l’elaborazione di risorse, ad esempio generazione di rendering, elaborazioni di PDF, gestione delle risorse secondarie, estrazione del testo e così via. Per ulteriori informazioni, consulta [Panoramica sui microservizi per le risorse](/help/assets/asset-microservices-overview.md). |
+| Archivio Git di Cloud Manager | Archivio in cui sono memorizzati il codice e le impostazioni di configurazione dei clienti. |
+| Provider cloud | AEM as a Cloud Service supporta sia Azure che AWS come provider cloud. |
+| Archivio dei contenuti | Archivio in cui i contenuti vengono salvati in modo permanente. |
+| Isolamento Enterprise | Funzione per cui ogni istanza di AEM as a Cloud Service è isolata dalle altre istanze. |
+| Golden master | Livello di pubblicazione di AEM. |
+| Motore di orchestrazione | Utilizzato in AEM as a Cloud Service per assicurarsi che tutti i servizi di authoring e pubblicazione vengano ridimensionati come e quando necessario. |
