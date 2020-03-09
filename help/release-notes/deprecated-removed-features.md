@@ -1,43 +1,43 @@
 ---
 title: Funzioni obsolete e rimosse
-description: Note sulla versione specifiche delle funzioni obsolete e rimosse di Adobe Experience Manager come servizio Cloud.
-translation-type: tm+mt
+description: Note sulla versione specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager as a Cloud Service.
+translation-type: ht
 source-git-commit: b31ae32285080075d2531edd2c4976cf801d1c89
 
 ---
 
 
-# Deprecated and removed features {#deprecated-and-removed-features}
+# Funzioni obsolete e rimosse {#deprecated-and-removed-features}
 
-Adobe valuta costantemente le capacità dei prodotti, per reinventare o sostituire nel tempo le funzioni meno recenti con alternative più moderne per migliorare il valore complessivo dei clienti, sempre in considerazione della compatibilità con le versioni precedenti. Inoltre, poiché Adobe Experience Manager come servizio Cloud fornisce un modello di distribuzione nativo per il cloud, alcune funzionalità e funzionalità sono state sostituite da controparti native per il cloud.
+Adobe valuta costantemente le funzionalità dei prodotti, per reinventare o sostituire nel tempo le funzioni meno recenti con alternative più moderne al fine di migliorare il valore complessivo per il cliente, tenendo comunque in considerazione la compatibilità con le versioni precedenti. Inoltre, poiché Adobe Experience Manager as a Cloud Service offre un modello di distribuzione nativo per il cloud, alcune funzionalità e funzioni sono state sostituite da controparti native per il cloud.
 
 Per comunicare l’imminente rimozione/sostituzione delle funzionalità AEM, si applicano le seguenti regole:
 
-1. Innanzitutto viene annunciato che una data funzione diventa obsoleta. Le funzionalità obsolete continuano a essere disponibili ma non vengono ulteriormente migliorate.
-1. Le funzionalità annunciate come obsolete vengono rimosse nella release principale successiva, non appena possibile. Viene annunciata la data di destinazione effettiva per la rimozione.
+1. Innanzitutto viene annunciato che una data funzione diventa obsoleta. Le funzionalità obsolete rimangono comunque disponibili, ma non vengono più aggiornate.
+1. Le funzionalità annunciate come obsolete vengono rimosse nella versione principale successiva, non appena possibile. La data effettiva per la rimozione viene annunciata.
 
-Questo processo offre ai clienti almeno un processo di pubblicazione per adattare la loro implementazione a una nuova versione o alla funzionalità che prenderà il posto di quella dichiarata obsoleta, prima che venga definitivamente rimossa.
+Questo processo offre ai clienti almeno un ciclo di rilascio per adattare la loro implementazione a una nuova versione o alla funzionalità che prenderà il posto di quella dichiarata obsoleta, prima che venga definitivamente rimossa.
 
-## Deprecated features {#deprecated-features}
+## Funzioni obsolete {#deprecated-features}
 
-In questa sezione sono elencate le funzionalità contrassegnate come obsolete in Experience Manager come servizio Cloud. In genere, le funzioni pianificate per essere rimosse in una versione futura sono impostate per prime su obsoleta, con un&#39;alternativa fornita.
+In questa sezione sono elencate le funzioni e le funzionalità contrassegnate come obsolete in Experience Manager as a Cloud Service. In genere, le funzioni pianificate per la rimozione in una versione futura vengono prima impostate come obsolete e ne viene indicata un’alternativa.
 
 Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nella loro implementazione corrente e di pianificarne la modifica adottando l’alternativa fornita.
 
 | Area | Funzione | Sostituzione |
 | ------------ | ------------------ | ----------- |
-| Assets | L&#39;assimilazione e l&#39;elaborazione delle risorse non utilizzano più `DAM Asset Update` il flusso di lavoro | L’assimilazione delle risorse utilizza ora i microservizi [delle](/help/assets/asset-microservices-overview.md) risorse. |
-| Assets | Caricare le risorse direttamente in AEM - consultate API di caricamento delle risorse [obsolete](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) | [Il caricamento](/help/assets/add-assets.md) binario diretto viene utilizzato in Experience Manager come servizio cloud. Per informazioni tecniche, consultate API di caricamento [diretto](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
-| Assets | [Alcuni passaggi](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) `DAM Asset Update` del flusso di lavoro non sono supportati, inclusa la chiamata di strumenti della riga di comando come ImageMagick | [I microservizi](/help/assets/asset-microservices-overview.md) delle risorse sostituiscono molti flussi di lavoro. Per l’elaborazione personalizzata, utilizzate i flussi di lavoro [di](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)post-elaborazione. |
+| Assets | Per l’inserimento e l’elaborazione delle risorse non viene più utilizzato il flusso di lavoro `DAM Asset Update`. | Per l’inserimento delle risorse si utilizzano ora i [microservizi per le risorse](/help/assets/asset-microservices-overview.md). |
+| Assets | Le risorse vengono caricate direttamente in AEM; consulta l’articolo sulle [API di caricamento risorse dichiarate obsolete](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | In Experience Manager as a Cloud Service si utilizza il [caricamento binario diretto](/help/assets/add-assets.md). Per informazioni di carattere tecnico, consulta l’articolo sulle [API di caricamento diretto](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
+| Assets | [Alcuni passaggi](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) del flusso di lavoro `DAM Asset Update` non sono supportati, inclusa la chiamata di strumenti della riga di comando come ImageMagick. | [I microservizi per le risorse](/help/assets/asset-microservices-overview.md) sostituiscono numerosi flussi di lavoro. Per l’elaborazione personalizzata, utilizza i [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 
-## Removed features {#removed-features}
+## Funzioni rimosse {#removed-features}
 
-In questa sezione sono elencate le funzionalità e le funzionalità rimosse da AEM con Experience Manager come servizio Cloud.
+In questa sezione sono elencate le funzioni e le funzionalità che sono state rimosse da AEM con Experience Manager as a Cloud Service.
 
 | Area | Funzione | Sostituzione |
 | ------------ | ------------------ | ----------- |
-| Interfaccia | Alcune finestre di dialogo dell’interfaccia classica rimangono al momento disponibili per alcune funzionalità, come Controllo collegamenti, Rimozione versioni e alcune configurazioni del servizio cloud, ma l’accesso all’interfaccia classica in generale è stato rimosso dall’interfaccia utente del prodotto AEM. | Interfaccia standard |
-| Dynamic Media | Le precedenti integrazioni con [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/scene7.html) e la modalità [](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html) Dynamic Media Hybrid non sono disponibili in AEM come servizio cloud. | Utilizzate [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornito con Experience Manager come servizio Cloud. |
-| Sites | Direttore del portale e componente Portlet | Queste funzionalità erano obsolete in AEM 6.4 e ora sono state rimosse da AEM. |
-| Sites | Importazione progettazione | Questa funzionalità è stata rimossa perché le sezioni immutabili dell’archivio AEM non sono accessibili in fase di esecuzione. |
-| Assets | [La condivisione di AEM Assets con il servizio di base Marketing Cloud Assets e i servizi](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html) Creative Cloud non è disponibile. | Per l’integrazione con Creative Cloud, utilizzate [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). |
+| Interfaccia | Alcune finestre di dialogo dell’interfaccia classica rimangono al momento disponibili solo per alcune funzionalità, come Verifica collegamenti, Pulizia delle versioni e alcune configurazioni di Cloud Service, ma l’accesso all’interfaccia classica in generale è stato rimosso nell’interfaccia dei prodotti AEM. | Interfaccia standard |
+| Dynamic Media | Le integrazioni precedenti con [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/scene7.html) e la [modalità ibrida di Dynamic Media](https://helpx.adobe.com/it/experience-manager/6-5/assets/using/config-dynamic.html) non sono disponibili in AEM as a Cloud Service. | Utilizza la versione di [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornita con Experience Manager as a Cloud Service. |
+| Sites | Portal Director e componente Portlet | Queste funzionalità sono diventate obsolete in AEM 6.4 e ora sono state rimosse da AEM. |
+| Sites | Importazione progettazione | Questa funzionalità è stata rimossa perché le sezioni non modificabili dell’archivio AEM non sono accessibili in fase di esecuzione. |
+| Assets | [La condivisione di AEM Assets con il servizio di base Marketing Cloud Assets e i servizi Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html) non è disponibile. | Per l’integrazione con Creative Cloud, utilizza [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html). |
