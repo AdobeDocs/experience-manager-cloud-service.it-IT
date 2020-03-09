@@ -1,33 +1,33 @@
 ---
 title: Ricerca
 description: Individua il contenuto più velocemente con funzionalità complete di ricerca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Ricerca {#search-feature}
+# Ricerca   {#search-feature}
 
 L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti, a seconda del tipo di risorsa.
 
 ## Informazioni di base sulla ricerca {#search-basics}
 
-La ricerca è disponibile nella barra degli strumenti superiore:
+La funzione Ricerca è disponibile nella barra degli strumenti superiore:
 
 ![Pulsante Ricerca](/help/sites-cloud/authoring/assets/search-button.png)
 
 La barra di ricerca consente di effettuare le seguenti operazioni:
 
 * Cercare una parola chiave, un percorso o un tag specifico
-* Filtrare in base a criteri specifici per le risorse come date di modifica, stato della pagina, dimensione del file ecc.
+* Filtrare in base a criteri specifici per le risorse come date di modifica, stato della pagina, dimensione del file e così via
 * Definire e utilizzare una [ricerca salvata](#saved-searches) in base ai criteri impostati
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>La ricerca può anche essere avviata mediante il tasto di scelta rapida `/` (barra) ogni volta che la barra di ricerca è visibile.
 
-## Ricerca e Filtro {#search-and-filter}
+## Ricerca e filtro {#search-and-filter}
 
 Per cercare e filtrare le risorse:
 
@@ -37,27 +37,27 @@ Per cercare e filtrare le risorse:
 
    Per impostazione predefinita, i risultati della ricerca sono limitati alla posizione corrente (ovvero alla console e al tipo di risorsa corrispondente):
 
-   ![Percorso di ricerca](/help/sites-cloud/authoring/assets/search-term-location.png)
+   ![Ricerca per posizione](/help/sites-cloud/authoring/assets/search-term-location.png)
 
 1. Se necessario, è possibile rimuovere il filtro posizione (seleziona la **X** sul filtro da rimuovere) per eseguire la ricerca in tutte le console e i tipi di risorse.
 1. I risultati visualizzati saranno raggruppati in base alla console e al tipo di risorsa corrispondente.
 
    Puoi selezionare una risorsa specifica (sulla quale eseguire ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio **Visualizza tutti i siti**:
 
-   ![Risultati ricerca](/help/sites-cloud/authoring/assets/search-results.png)
+   ![Risultati di ricerca](/help/sites-cloud/authoring/assets/search-results.png)
 
 1. Per approfondire la ricerca, seleziona il simbolo della barra laterale (in alto a sinistra) per aprire il pannello laterale **Filtri e opzioni**.
 
-   ![Pulsante Barra](/help/sites-cloud/authoring/assets/rail-button.png)
+   ![Pulsante della barra](/help/sites-cloud/authoring/assets/rail-button.png)
 
-   In base al tipo di risorsa, in Ricerca viene visualizzata una selezione predefinita di criteri di ricerca/filtro.
+   A seconda del tipo di risorsa, nella finestra di ricerca viene visualizzata una selezione predefinita di criteri di ricerca/filtro.
 
    Il pannello laterale consente di selezionare:
 
    * Ricerche salvate
    * Directory di ricerca
    * Tag
-   * Criteri di ricerca, ad esempio Date modificate, Stato pubblicazione, Stato LiveCopy
+   * Criteri di ricerca, ad esempio Data di modifica, Stato pubblicazione, Stato LiveCopy
    >[!NOTE]
    >
    >I criteri di ricerca possono variare:
@@ -71,7 +71,7 @@ Per cercare e filtrare le risorse:
 
 ![Pannello laterale di ricerca](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
-1. Puoi inoltre aggiungere termini di ricerca aggiuntivi.
+1. Puoi anche aggiungere altri termini di ricerca.
 
 1. Per chiudere la **Ricerca**, utilizza la **X** in alto a destra.
 
@@ -81,7 +81,7 @@ Per cercare e filtrare le risorse:
 >
 >Quando selezioni un elemento nella pagina dei risultati, e quindi torni alla pagina di ricerca dopo avere utilizzato il pulsante indietro del browser, i criteri di ricerca rimangono.
 
-## Saved Searches {#saved-searches}
+## Ricerche salvate {#saved-searches}
 
 Oltre ad eseguire ricerche per un’ampia gamma di facet, è possibile salvare una specifica configurazione di ricerca per riutilizzarla in un secondo momento.
 
