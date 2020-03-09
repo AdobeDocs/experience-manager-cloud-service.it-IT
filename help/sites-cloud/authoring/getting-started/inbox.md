@@ -1,23 +1,23 @@
 ---
 title: Casella in entrata
 description: Gestione delle attività con la casella in entrata
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Casella in entrata {#your-inbox}
+# Casella in entrata   {#your-inbox}
 
-Puoi ricevere notifiche da varie aree di AEM, compresi flussi di lavoro e progetti. Ad esempio, potresti ricevere notifiche su:
+Puoi ricevere notifiche da diverse aree di AEM, inclusi flussi di lavoro e progetti. Ad esempio, puoi ricevere notifiche relative a:
 
 * Attività:
-   * These can also be created at various points within the AEM UI, for example, under **Projects**.
-   * These can be the product of a workflow **Create Task** or **Create Project Task** step.
+   * Possono essere create anche in diversi punti nell’interfaccia di AEM, ad esempio in **Progetti**.
+   * Possono essere il prodotto del passaggio **Crea attività** o **Crea attività per progetto** di un flusso di lavoro.
 * Flussi di lavoro:
-   * Elementi di lavoro che rappresentano azioni da eseguire sul contenuto della pagina
-      * These are the product of workflow **Participant** steps.
-   * Errori negli elementi, per consentire agli amministratori di ripetere il passaggio non riuscito
+   * Elementi di lavoro che rappresentano le azioni da eseguire sul contenuto di una pagina
+      * Sono il prodotto dei passaggi **Partecipante** di un flusso di lavoro.
+   * Elementi con errori, per consentire agli amministratori di ripetere il passaggio non riuscito
 
 Queste notifiche arrivano nella casella in entrata, dove puoi visualizzarle e intraprendere le azioni necessarie.
 
@@ -40,45 +40,45 @@ Per le varie console, il numero corrente di elementi nella casella in entrata è
 >
 >Alcune azioni sono anche visualizzate nella [vista a schede della relativa risorsa](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## Apertura della casella in entrata {#opening-the-inbox}
+## Apertura della casella in entrata   {#opening-the-inbox}
 
 Per aprire la casella in entrata delle notifiche AEM:
 
-1. Toccate o fate clic sull’indicatore nella barra degli strumenti.
+1. Tocca o fai clic sull’indicatore nella barra degli strumenti.
 
-1. Seleziona **Visualizza tutto**. Viene aperta la **Casella in entrata AEM.** La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
+1. Seleziona **Visualizza tutto**. Viene aperta la **Casella in entrata AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
 1. La vista predefinita è [Vista a elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view) dal selettore delle viste (barra degli strumenti in alto a destra).
 
-   For both views you can also define [View Settings](#inbox-view-settings). The options available are dependent on the current view.
+   Per entrambe le viste puoi inoltre definire le [Impostazioni vista](#inbox-view-settings). Le opzioni disponibili dipendono dalla vista corrente.
 
-   ![Impostazioni della vista Inbox](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
+   ![Casella in entrata - Impostazioni vista](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) or [Search](/help/sites-cloud/authoring/getting-started/search.md) to navigate to another location when you are finished.
+>La casella in entrata funziona come una console; puoi quindi utilizzare le funzioni di [Navigazione globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) o [Ricerca](/help/sites-cloud/authoring/getting-started/search.md) per passare a un’altra posizione al termine dell’operazione.
 
 ### Casella in entrata - Vista a elenco {#inbox-list-view}
 
-Questa visualizzazione elenca tutti gli elementi, insieme alle informazioni pertinenti:
+Questa vista mostra tutti gli elementi con le relative informazioni:
 
-![Vista elenco Posta in arrivo](/help/sites-cloud/authoring/assets/inbox-list-view.png)
+![Casella in entrata - Vista a elenco](/help/sites-cloud/authoring/assets/inbox-list-view.png)
 
 ### Casella in entrata - Vista calendario {#inbox-calendar-view}
 
-Questa visualizzazione presenta gli elementi in base alla loro posizione nel calendario:
+Questa vista mostra gli elementi in base alla loro posizione nel calendario:
 
-![Vista calendario Posta in arrivo](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
+![Casella in entrata - Vista calendario](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
 
-Tieni presente quanto segue:
+Operazioni disponibili:
 
-* Select a specific view: **Timeline**, **Column**, **List**
-* Specify the tasks to display according to **Schedule**: **All**, **Planned**, **In Progress**, **Due Soon**, **Past Due**
-* Approfondisci per informazioni più dettagliate su un elemento
-* Selezionare un intervallo di date per attivare la visualizzazione:
+* Selezionare una vista specifica: **Timeline**,**Colonna**, **Elenco**
+* Specificare le attività da visualizzare in base a **Pianificazione**: **Tutti**, **Pianificato**, **In corso**, **In scadenza**, **Scaduto**
+* Eseguire un drill-down per ottenere informazioni più dettagliate su un elemento
+* Selezionare un intervallo di date per restringere la visualizzazione:
 
-![Intervallo date visualizzazione calendario in entrata](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
+![Casella in entrata - Intervallo di date per la vista calendario](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
 
-### Casella in entrata - Visualizza impostazioni {#inbox-view-settings}
+### Casella in entrata - Impostazioni vista {#inbox-view-settings}
 
 Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
@@ -87,9 +87,9 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
    Per la **Vista calendario** puoi configurare:
 
    * **Raggruppa per**
-   * **Programma** o **Nessuno**
+   * **Pianificazione** o **Nessuna**
    * **Dimensioni scheda**
-   ![Impostazioni visualizzazione calendario in entrata](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+   ![Casella in entrata - Impostazioni della vista calendario](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Vista a elenco**
 
@@ -97,30 +97,30 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
    * **Ordina per**
    * **Ordinamento**
-   ![Impostazioni visualizzazione elenco Posta in arrivo](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+   ![Casella in entrata - Impostazioni della vista a elenco](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   Puoi anche delegare il calendario ad altri utenti, nonché richiedere la delega ad altri utenti e gestire le delegazioni.
+   Puoi anche delegare il calendario ad altri utenti, nonché richiedere la delega ad altri utenti e gestire le tue deleghe.
 
-   ![Impostazioni di delega della vista elenco Posta in arrivo](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+   ![Casella in entrata - Impostazioni di delega della vista a elenco](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
-## Intraprendere un’azione su un elemento {#taking-action-on-an-item}
+## Intervenire su un elemento {#taking-action-on-an-item}
 
-1. Per intervenire su un elemento, seleziona la miniatura dell&#39;elemento appropriato. Le icone per le azioni applicabili per l’elemento in questione sono disponibili nella barra degli strumenti:
+1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili per l’elemento in questione sono disponibili nella barra degli strumenti:
 
-   ![Seleziona elemento inbox](/help/sites-cloud/authoring/assets/inbox-select-item.png)
+   ![Selezione dell’elemento della casella in entrata](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
    Le azioni dipendono dall’elemento selezionato e includono:
 
-   * **Completa** azione
-   * **Delega** di un elemento
-   * **Aprite** un elemento, a seconda del tipo di elemento, questa azione può:
+   * **Completa** l’azione
+   * **Delega** un elemento
+   * **Apri** un elemento; a seconda del tipo di elemento, questa azione può:
 
-      * Mostra proprietà elemento
-      * Aprire una dashboard o una procedura guidata appropriata per ulteriori azioni
-      * Apri documentazione correlata
+      * Mostrare le proprietà dell’elemento
+      * Aprire un dashboard o una procedura guidata per eseguire ulteriori azioni
+      * Aprire la documentazione correlata
    * **Indietro** per tornare a un passaggio precedente
-   * Visualizzare il payload di un flusso di lavoro
-   * Creare un progetto dall&#39;elemento
+   * Visualizzazione del payload di un flusso di lavoro
+   * Creazione di un progetto dall’elemento
    >[!NOTE]
    >
    >Per ulteriori informazioni, consulta:
@@ -130,18 +130,18 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
 1. A seconda dell’elemento selezionato, verrà avviata un’azione, ad esempio:
 
-   * Viene aperta la finestra di dialogo relativa all’azione
-   * Verrà avviata un&#39;azione guidata
-   * Viene aperta una pagina della documentazione
-   For example, **Delegate** will open a dialog:
+   * Verrà aperta la finestra di dialogo relativa all’azione
+   * Verrà avviata una Action Wizard
+   * Verrà aperta una pagina della documentazione
+   Ad esempio, selezionando **Delega** viene aperta una finestra di dialogo:
 
-   ![Delega attività inbox](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
+   ![Delega di un’attività della casella in entrata](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 
    A seconda della finestra di dialogo, procedura guidata o pagina di documentazione aperta, è possibile:
 
-   * Confermate l’azione appropriata, ad esempio riassegnate.
-   * Annullare l’azione
-   * Selezionate la freccia indietro per tornare alla inbox, ad esempio se è stata aperta un&#39;azione guidata o una pagina della documentazione, potete tornare alla inbox.
+   * Confermare l’azione appropriata, ad esempio Riassegna.
+   * Annullare l’azione.
+   * Selezionare la freccia indietro per tornare alla casella in entrata. Ad esempio, se è stata aperta una Action Wizard o una pagina della documentazione, puoi tornare alla casella in entrata.
 
 
 ## Creazione di un’attività {#creating-a-task}
@@ -149,28 +149,28 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 Dalla casella in entrata è possibile creare le attività:
 
 1. Seleziona **Crea**, quindi **Attività**.
-1. Complete the necessary fields in the **Basic** and **Advanced** tabs (only the **Title** is mandatory, all others are optional):
+1. Compila i campi necessari nelle schede **Base** e **Avanzate**. È obbligatorio solo il campo **Titolo**; tutti gli altri campi sono facoltativi.
 
    * **Base**:
 
       * **Titolo**
       * **Progetto**
       * **Assegnatario**
-      * **Contenuto**, simile a Payload, è un riferimento dall&#39;attività a una posizione nella directory archivio
+      * **Contenuto**: simile al payload, è un riferimento dall’attività a una posizione nell’archivio.
       * **Descrizione**
       * **Priorità attività**
       * **Data iniziale**
       * **Data di scadenza**
-   ![Casella in entrata aggiungi attività](/help/sites-cloud/authoring/assets/inbox-create-task.png)
+   ![Casella in entrata - Aggiunta di un’attività](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **Avanzate**
 
-      * **Nome**: verrà utilizzato per creare l’URL e, se vuoto, verrà basato sul **Titolo**.
-   ![Casella in entrata aggiungere le opzioni avanzate dell&#39;attività](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
+      * **Nome**: viene utilizzato per formare l’URL; se questo campo viene lasciato vuoto, verrà basato sul valore del campo **Titolo**.
+   ![Casella in entrata - Opzioni avanzate per l’aggiunta di un’attività](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. Seleziona **Invia**.
 
-## Creazione di un progetto {#creating-a-project}
+## Creazione di un progetto   {#creating-a-project}
 
 Per determinate attività, puoi creare un [Progetto](/help/sites-cloud/authoring/projects/overview.md) basato su tale attività:
 
@@ -178,9 +178,9 @@ Per determinate attività, puoi creare un [Progetto](/help/sites-cloud/authoring
 
    >[!NOTE]
    >
-   >Only tasks created using the **Create** option of the **Inbox** can be used to create a project.
+   >Per creare un progetto, è possibile utilizzare solo le attività create con l’opzione **Crea** della **Casella in entrata**.
    >
-   >Gli elementi di lavoro (da un flusso di lavoro) non possono essere utilizzati per creare un progetto.
+   >Gli elementi di lavoro (di un flusso di lavoro) non possono essere utilizzati per creare un progetto.
 
 1. Seleziona **Crea progetto** nella barra degli strumenti per aprire la procedura guidata.
 1. Seleziona il modello appropriato, quindi **Avanti**.
@@ -202,20 +202,20 @@ Per determinate attività, puoi creare un [Progetto](/help/sites-cloud/authoring
 
 1. Seleziona **Crea** per confermare l’azione.
 
-## Filtrare gli elementi nella casella in entrata di AEM {#filtering-items-in-the-aem-inbox}
+## Filtrare gli elementi nella Casella in entrata AEM {#filtering-items-in-the-aem-inbox}
 
-Potete filtrare gli elementi elencati:
+Puoi filtrare gli elementi elencati:
 
 1. Apri la **Casella in entrata AEM**.
 
 1. Apri il selettore del filtro:
 
-   ![Ricerca in entrata](/help/sites-cloud/authoring/assets/inbox-search.png)
+   ![Casella in entrata - Ricerca](/help/sites-cloud/authoring/assets/inbox-search.png)
 
-1. Potete filtrare gli elementi elencati in base a una serie di criteri, molti dei quali possono essere regolati.Ad esempio:
+1. Puoi filtrare gli elementi elencati in base a diversi criteri, molti dei quali possono essere regolati, ad esempio:
 
-   ![Filtro ricerca Inbox](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
+   ![Casella in entrata - Filtro di ricerca](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
    >[!NOTE]
    >
-   >Con [Visualizza impostazioni](#inbox-view-settings) è anche possibile configurare l’ordinamento quando si usa la [Vista a elenco](#inbox-list-view).
+   >Con [Impostazioni vista](#inbox-view-settings) è anche possibile configurare l’ordinamento quando si utilizza la [Vista a elenco](#inbox-list-view).
