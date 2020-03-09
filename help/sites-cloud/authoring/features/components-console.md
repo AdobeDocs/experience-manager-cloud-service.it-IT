@@ -1,7 +1,7 @@
 ---
 title: Console Componenti
-description: La console Componenti consente di sfogliare tutti i componenti definiti per l’istanza
-translation-type: tm+mt
+description: La console Componenti consente di consultare tutti i componenti definiti nell’istanza.
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,15 +9,15 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Console Componenti {#components-console}
 
-La console Componenti consente di sfogliare tutti i componenti definiti per l’istanza e visualizzare le informazioni chiave per ciascun componente.
+La console Componenti consente di consultare tutti i componenti definiti nell’istanza e di visualizzare le informazioni chiave di ciascun componente.
 
-It can be accessed from **Tools ->** **General ->** **Components**. Poiché non esiste una struttura ad albero per i componenti, è disponibile solo la vista a elenco.
+È possibile accedervi da **Strumenti ->** **Generale ->** **Componenti**. Poiché non vi è alcuna struttura ad albero per i componenti, è disponibile solo la vista a elenco.
 
 ![Console Componenti](/help/sites-cloud/authoring/assets/components-console.png)
 
 >[!NOTE]
 >
->La console Componenti mostra tutti i componenti del sistema. Il [browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) mostra i componenti disponibili agli autori e nasconde eventuali gruppi di componenti che iniziano con un punto ( `.`).
+>La console Componenti mostra tutti i componenti presenti nel sistema. Il [browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) mostra i componenti disponibili per gli autori e nasconde eventuali gruppi di componenti che iniziano con un punto ( `.`).
 
 ## Ricerca {#search-field}
 
@@ -25,7 +25,7 @@ L’icona **Solo contenuto** (in alto a sinistra) permette di aprire il pannello
 
 ![Ricerca nella console Componenti](/help/sites-cloud/authoring/assets/components-console-search.png)
 
-### Dettagli componente {#component-details}
+### Dettagli dei componenti {#component-details}
 
 Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic sulla risorsa desiderata. Sono disponibili tre schede:
 
@@ -42,11 +42,11 @@ Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic s
       * Facendo clic su Super Type della risorsa passerai al relativo componente.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Poiché `/apps` non è modificabile in fase di esecuzione, la console Componenti è disponibile in sola lettura.
 
 * **Criteri**
 
-   ![Criteri della console dei componenti](/help/sites-cloud/authoring/assets/components-console-policies.png)
+   ![Criteri della console Componenti](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **Utilizzo live**
 
@@ -58,6 +58,6 @@ Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic s
 
 * **Documentazione**
 
-   Se lo sviluppatore ha fornito la documentazione per il componente, questa viene visualizzata nella scheda **Documentazione**. Se non è presente documentazione, la scheda **Documentazione** non verrà visualizzata. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+   L’eventuale documentazione del componente fornita dallo sviluppatore viene visualizzata nella scheda **Documentazione**. Se la documentazione non è disponibile, la scheda **Documentazione** non verrà visualizzata. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
-   ![Documentazione dei componenti](/help/sites-cloud/authoring/assets/components-console-documentation.png)
+   ![Documentazione relativa ai componenti](/help/sites-cloud/authoring/assets/components-console-documentation.png)
