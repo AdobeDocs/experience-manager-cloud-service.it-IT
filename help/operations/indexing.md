@@ -2,7 +2,7 @@
 title: Ricerca e indicizzazione dei contenuti
 description: 'Ricerca e indicizzazione dei contenuti '
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
 
 ---
 
@@ -31,7 +31,7 @@ Di seguito è riportato un elenco delle modifiche principali rispetto a AEM 6.5 
 
 1. Su AEM come servizio cloud, con l’introduzione del modello [di distribuzione](#index-management-using-blue-green-deployments) Blue-Green saranno disponibili due serie di indici: un set per la versione precedente (blu) e uno per la nuova versione (verde).
 
-La versione dell&#39;indice utilizzato è configurata utilizzando i flag nelle definizioni dell&#39;indice tramite il `useIfExist` flag. Un indice può essere utilizzato in una sola versione dell’applicazione (ad esempio solo blu o solo verde) o in entrambe le versioni. La documentazione dettagliata è disponibile in Gestione [indice utilizzando le installazioni](#index-management-using-blue-green-deployments)Blue-Green.
+La versione dell&#39;indice utilizzato è configurata utilizzando i flag nelle definizioni dell&#39;indice tramite il `useIfExist` flag. Un indice può essere utilizzato in una sola versione dell’applicazione (ad esempio solo blu o solo verde) o in entrambe le versioni. La documentazione dettagliata è disponibile in Gestione [indice utilizzando le implementazioni](#index-management-using-blue-green-deployments)Blue-Green.
 
 1. I clienti possono vedere se il processo di indicizzazione è completo nella pagina di build di Cloud Manager e riceveranno una notifica quando la nuova versione sarà pronta per il traffico.
 
@@ -61,7 +61,7 @@ Per entrambi i punti 1 e 2 di cui sopra, devi creare una nuova definizione di in
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-che poi deve andare sotto `ui.content/src/main/content/jcr_root`. Le cartelle sub-root non sono supportate al momento.
+che poi deve andare sotto `ui.apps/src/main/content/jcr_root`. Le cartelle sub-root non sono supportate al momento.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -71,9 +71,9 @@ Il pacchetto del campione sopra riportato è costruito come `com.adobe.granite:n
 
 Le definizioni degli indici sono ora contrassegnate come personalizzate e con versione:
 
-* La definizione di indice stessa (ad esempio `/oak:index/ntBaseLucene-custom-1`il contenuto MUTABLE)
+* La definizione di indice stessa (ad esempio `/oak:index/ntBaseLucene-custom-1`)
 
-Pertanto, per distribuire un indice, la definizione (`/oak:index/definitionname`) dell&#39;indice deve essere distribuita tramite il pacchetto **** mutable, in genere `ui.content` tramite Git e il processo di distribuzione di Cloud Manager.
+Pertanto, per distribuire un indice, la definizione (`/oak:index/definitionname`) dell&#39;indice deve essere distribuita tramite `ui.apps` Git e il processo di distribuzione di Cloud Manager.
 
 Una volta aggiunta la nuova definizione di indice, la nuova applicazione deve essere distribuita tramite Cloud Manager. All&#39;avvio della distribuzione, vengono avviati due processi, responsabili dell&#39;aggiunta (e dell&#39;unione, se necessario) delle definizioni di indice a MongoDB e ad Azure Segment Store rispettivamente per l&#39;autore e la pubblicazione. I repository sottostanti vengono reindicizzati con le nuove definizioni di indice, prima che venga eseguito il passaggio Blu-Verde.
 
@@ -81,9 +81,9 @@ Una volta aggiunta la nuova definizione di indice, la nuova applicazione deve es
 
 ### Che cos&#39;è la gestione dell&#39;indice {#what-is-index-management}
 
-La gestione degli indici si occupa dell’aggiunta, della rimozione e della modifica degli indici. La modifica della *definizione* di un indice è rapida, ma l&#39;applicazione della modifica (spesso denominata &quot;creazione di un indice&quot; o, per gli indici esistenti, &quot;reindicizzazione&quot;) richiede tempo. Non è istantanea: per indicizzare i dati, è necessario analizzare il repository.
+La gestione degli indici si occupa dell’aggiunta, della rimozione e della modifica degli indici. La modifica della *definizione* di un indice è rapida, ma l&#39;applicazione della modifica (spesso denominata &quot;creazione di un indice&quot; o, per gli indici esistenti, &quot;reindicizzazione&quot;) richiede tempo. Non è istantanea: per indicizzare i dati, è necessario eseguire la scansione del repository.
 
-### Che cos&#39;è la distribuzione blu-verde {#what-is-blue-green-deployment}
+### Che cos&#39;è l&#39;implementazione blu-verde {#what-is-blue-green-deployment}
 
 L&#39;implementazione Blue-Green può ridurre i tempi di inattività. Consente inoltre di azzerare i tempi di inattività e offre ripristini rapidi. La versione precedente dell’applicazione (blu) viene eseguita contemporaneamente alla nuova versione dell’applicazione (verde).
 
@@ -105,7 +105,7 @@ Le aree di lettura/scrittura dell&#39;archivio sono condivise tra tutte le versi
 
 ### Gestione degli indici senza implementazione blu-verde {#index-management-without-blue-green-deployment}
 
-Durante lo sviluppo o quando si utilizzano installazioni locali, gli indici possono essere aggiunti, rimossi o modificati in fase di esecuzione. Gli indici vengono utilizzati non appena disponibili. Se un indice non deve ancora essere utilizzato nella vecchia versione dell&#39;applicazione, l&#39;indice viene generalmente generato durante un periodo di inattività pianificato. Lo stesso si verifica quando si rimuove un indice o si modifica un indice esistente. Quando si rimuove un indice, questo diventa non disponibile non appena viene rimosso.
+Durante lo sviluppo o quando si utilizzano installazioni locali, gli indici possono essere aggiunti, rimossi o modificati in fase di esecuzione. Gli indici vengono utilizzati non appena sono disponibili. Se un indice non deve ancora essere utilizzato nella vecchia versione dell&#39;applicazione, l&#39;indice viene generalmente generato durante un periodo di inattività pianificato. Lo stesso si verifica quando si rimuove un indice o si modifica un indice esistente. Quando si rimuove un indice, questo diventa non disponibile non appena viene rimosso.
 
 ### Gestione Dell&#39;Indice Con Implementazione Blu-Verde {#index-management-with-blue-green-deployment}
 
@@ -115,9 +115,9 @@ Nella tabella seguente sono riportate 5 definizioni di indice: index `cqPageLuce
 
 
 > [!NOTE]
-> `<indexName>-custom-<customerVersionNumber>` è necessario che AEM come servizio cloud contrassegni questo come sostituzione di un indice esistente.
+> `<indexName>-custom-<customerVersionNumber>` è necessario che AEM come servizio cloud contrassegni questo tipo di sostituzione per un indice esistente.
 
-| Indice | Indice fornito | Usa nella versione 1 | Usa nella versione 2 |
+| Indice | Indice out-of-the-box | Usa nella versione 1 | Usa nella versione 2 |
 |---|---|---|---|
 | /oak:index/damAssetLucene | Sì | Sì | No |
 | /oak:index/damAssetLucene-custom-1 | Sì (personalizzato) | No | Sì |
@@ -131,14 +131,14 @@ Il numero di versione viene incrementato ogni volta che l&#39;indice viene modif
 
 Quando Adobe modifica un indice out-of-the-box come &quot;damAssetLucene&quot; o &quot;cqPageLucene&quot;, viene creato un nuovo indice denominato `damAssetLucene-2` o `cqPageLucene-2` oppure, se l&#39;indice è già stato personalizzato, la definizione dell&#39;indice personalizzata viene unita alle modifiche nell&#39;indice out-of-the-box, come mostrato di seguito. L&#39;unione delle modifiche avviene automaticamente. Ciò significa che non è necessario eseguire alcuna operazione in caso di modifica di un indice out-of-the-box. Tuttavia, è possibile personalizzare nuovamente l&#39;indice in un secondo momento.
 
-| Indice | Indice fornito | Usa nella versione 2 | Usa nella versione 3 |
+| Indice | Indice out-of-the-box | Usa nella versione 2 | Usa nella versione 3 |
 |---|---|---|---|
 | /oak:index/damAssetLucene-custom-1 | Sì (personalizzato) | Sì | No |
 | /oak:index/damAssetLucene-2-custom-1 | Sì (unito automaticamente da damAssetLucene-custom-1 e damAssetLucene-2) | No | Sì |
 | /oak:index/cqPageLucene | Sì | Sì | No |
 | /oak:index/cqPageLucene-2 | Sì | No | Sì |
 
-### Limiti {#limitations}
+### Limiti   {#limitations}
 
 Al momento la gestione degli indici è supportata solo per gli indici di tipo `lucene`.
 
