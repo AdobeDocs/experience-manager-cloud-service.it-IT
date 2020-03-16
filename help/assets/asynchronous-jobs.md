@@ -3,7 +3,7 @@ title: Operazioni asincrone
 description: Risorse AEM ottimizza le prestazioni completando in modo asincrono alcune attività che richiedono risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -29,11 +29,11 @@ Potete visualizzare lo stato dei processi asincroni dalla pagina Stato **[!UICON
 
 ## Monitoraggio dello stato delle operazioni asincrone {#monitoring-the-status-of-asynchronous-operations}
 
-Ogni volta che AEM Assets elabora un’operazione in modo asincrono, riceverai una notifica nella tua inbox ed e-mail.
+Ogni volta che AEM Assets elabora un’operazione in modo asincrono, riceverai una notifica nella inbox <!-- and through email -->.
 
 Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla pagina Stato **[!UICONTROL processo]** asincrono.
 
-1. Toccate o fate clic sul logo AEM, quindi andate a **[!UICONTROL Risorse]** > **[!UICONTROL Processi]**.
+1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Risorse]** > **[!UICONTROL Jobs (Processi)]**.
 1. Nella pagina Stato **[!UICONTROL processo]** asincrono, controllate i dettagli delle operazioni.
 
    ![job_status](assets/job_status.png)
@@ -44,7 +44,7 @@ Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla 
 
    **[!UICONTROL Successo]**: Operazione completata
 
-   **[!UICONTROL Errore]** o **[!UICONTROL errore]**: Impossibile elaborare l&#39;operazione
+   **[!UICONTROL Fail]** or **[!UICONTROL Error]** (Non riuscito o errore): impossibile elaborare l’operazione
 
    **[!UICONTROL Pianificato]**: L&#39;elaborazione dell&#39;operazione è pianificata per un momento successivo
 
@@ -72,7 +72,7 @@ Risorse AEM esegue ogni giorno un processo di eliminazione alle 1:00 per elimina
 
 È possibile modificare la pianificazione per il processo di eliminazione e la durata per la quale i dettagli dei processi completati vengono conservati prima di essere eliminati. Potete inoltre configurare il numero massimo di processi completati per i quali i dettagli vengono conservati in qualsiasi momento.
 
-1. Toccate/fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
+1. Tocca/fai clic sul logo AEM e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
 1. Aprite il processo **[!UICONTROL Adobe CQ DAM Async Jobs Purge Pianificato]** .
 1. Specificate la soglia per il numero di giorni dopo i quali i processi completati vengono eliminati e il numero massimo di processi per i quali i dettagli vengono conservati nella cronologia.
 
@@ -89,7 +89,7 @@ Puoi configurare il numero di soglia di risorse o riferimenti per Risorse AEM pe
 
 Se il numero di risorse o cartelle da eliminare supera la soglia, l’operazione di eliminazione viene eseguita in modo asincrono.
 
-1. Toccate/fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
+1. Tocca/fai clic sul logo AEM e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
 1. Dalla console Web, aprite la configurazione **[!UICONTROL Async Delete Operation Processing]** .
 1. Nella casella **[!UICONTROL Soglia numero di risorse]** , specificate il numero di soglia di risorse/cartelle per l’elaborazione asincrona delle operazioni di eliminazione.
 
@@ -101,7 +101,7 @@ Se il numero di risorse o cartelle da eliminare supera la soglia, l’operazione
 
 Se il numero di risorse/cartelle o riferimenti da spostare supera il numero di soglia, l&#39;operazione di spostamento viene eseguita in modo asincrono.
 
-1. Toccate/fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
+1. Tocca/fai clic sul logo AEM e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
 1. Dalla console Web, aprite la configurazione **[!UICONTROL Async Move Operation Process]** .
 1. Nella casella **[!UICONTROL Soglia numero di risorse/riferimenti]** , specificate il numero di soglia di risorse/cartelle o riferimenti per l’elaborazione asincrona delle operazioni di spostamento.
 
