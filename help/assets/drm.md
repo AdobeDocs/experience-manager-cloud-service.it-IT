@@ -3,7 +3,7 @@ title: Digital Rights Management in Adobe Experience Manager Assets
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -19,14 +19,14 @@ La scadenza delle risorse è un modo efficace per imporre i requisiti di licenza
 Potete visualizzare lo stato di scadenza di una risorsa nei seguenti punti:
 
 * **Vista** a schede: Per una risorsa scaduta, un flag sulla scheda indica che è scaduta.
-* **Visualizzazione** elenco: Per le risorse scadute, nella colonna **[!UICONTROL Stato]** viene visualizzato il banner **[!UICONTROL Scaduto]** .
+* **Vista** a elenco: Per le risorse scadute, nella colonna **[!UICONTROL Stato]** viene visualizzato il banner **[!UICONTROL Scaduto]** .
 * **Timeline**: Potete visualizzare lo stato di scadenza di una risorsa nella timeline. Selezionate la risorsa e scegliete Timeline.
 * **Barra** dei riferimenti: Potete inoltre visualizzare lo stato di scadenza delle risorse nella barra **[!UICONTROL Riferimenti]** . Gestisce gli stati di scadenza delle risorse e le relazioni tra le risorse composte e le risorse secondarie, le raccolte e i progetti a cui viene fatto riferimento.
 
 1. Andate alla risorsa per la quale desiderate visualizzare il riferimento a pagine Web e risorse composte.
 1. Selezionate la risorsa e toccate o fate clic sull’icona di navigazione globale.
 1. Scegliete **[!UICONTROL Riferimenti]** dal menu.
-1. Per le risorse scadute, nella barra laterale Riferimenti viene visualizzato lo stato di scadenza **[!UICONTROL Risorsa scaduto]** nella parte superiore. Se la risorsa è scaduta, nella barra laterale Riferimenti viene visualizzato lo stato Risorse secondarie scadute della **[!UICONTROL risorsa]**.
+1. Per le risorse scadute, nella barra laterale Riferimenti viene visualizzato lo stato di scadenza **[!UICONTROL Risorsa scaduto]** nella parte superiore. Se la risorsa è scaduta, nella barra laterale Riferimenti viene visualizzato lo stato Risorse secondarie scadute per la **[!UICONTROL risorsa]**.
 
 ### Cercare le risorse scadute {#search-expired-assets}
 
@@ -38,7 +38,7 @@ Potete cercare le risorse scadute, comprese le risorse secondarie scadute, nel p
 
 1. Fate clic sull’icona GlobalNav per visualizzare il pannello di ricerca.
 
-1. Tocca o fai clic sull’opzione Stato **** scadenza per espanderla.
+1. Tocca o fai clic sull’opzione **[!UICONTROL Stato scadenza]** per espanderla.
 
 1. Selezionare **[!UICONTROL Scaduto]**. Le risorse scadute vengono visualizzate nei risultati della ricerca.
 
@@ -48,17 +48,19 @@ Se modificate la data di scadenza di una risorsa pubblicata in una data preceden
 
 Inoltre, se un problema o un errore impedisce al pianificatore di rilevare le risorse scadute nel ciclo corrente, il pianificatore riesamina tali risorse nel ciclo successivo e ne rileva lo stato scaduto.
 
-Per abilitare la console Risorse per visualizzare le risorse composte di riferimento insieme alle risorse secondarie scadute, configura un flusso di lavoro **[!UICONTROL Adobe CQ DAM Expiry Notification]** in AEM Configuration Manager.
+Per abilitare la console Assets affinché visualizzi le risorse composte di riferimento insieme alle risorse secondarie scadute, configura un flusso di lavoro **[!UICONTROL Adobe CQ DAM Expiry Notification]** all’interno di AEM Configuration Manager.
 
 1. Apri Gestione configurazione AEM.
 1. Scegliete **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Per impostazione predefinita, è selezionata l’opzione Pianificatore **[!UICONTROL basato su]** tempo, che pianifica un processo per verificare in un momento specifico se una risorsa ha risorse secondarie scadute. Al termine del processo, le risorse con risorse secondarie scadute e risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
 
-1. Per eseguire il processo periodicamente, cancellare il campo Regola **[!UICONTROL pianificazione basata su]** tempo e modificare il tempo in secondi nel campo Programmazione **** periodica. Ad esempio, l&#39;espressione di esempio &#39;0 0 &amp;ast; &amp;ast; ?&#39; attiva il processo a 00 ore.
-1. Selezionate **[!UICONTROL Invia e-mail]** per ricevere e-mail alla scadenza di una risorsa.
+1. Per eseguire il processo periodicamente, cancella il campo **[!UICONTROL Time Based Scheduler Rule (Regola modulo di pianificazione basato sul tempo)]** e modifica il tempo in secondi nel campo **[!UICONTROL Periodic Scheduler (Modulo di pianificazione periodica)]**. L’espressione di esempio ‘0 0 0 &amp;ast; &amp;ast; ?’ attiva il processo alle ore 00.
+
+<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
-   >Alla scadenza della risorsa, solo l’autore della risorsa (l’utente che carica una particolare risorsa in Risorse AEM) riceve un messaggio e-mail. Scopri come configurare la notifica e-mail per ulteriori dettagli sulla configurazione delle notifiche e-mail a livello globale di AEM.
+   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+-->
 
 1. Nel campo Notifica **[!UICONTROL precedente in secondi]** , specificate l’ora in secondi prima della scadenza di una risorsa quando desiderate ricevere una notifica relativa alla scadenza. Se siete un amministratore o creatore di risorse, riceverete un messaggio prima della scadenza della risorsa per informarvi che la risorsa sta per scadere dopo l’ora specificata.
 
@@ -72,7 +74,7 @@ La console Risorse di Adobe Experience Manager (AEM) Assets può visualizzare va
 
 1. Nell’interfaccia utente Risorse, seleziona una risorsa.
 
-1. Tap/click the **[!UICONTROL Publish]** icon from the toolbar. Se l’icona **Pubblica** non è visibile sulla barra degli strumenti, toccate o fate clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individuate l’icona **[!UICONTROL Pubblica]** .
+1. Nella barra degli strumenti, tocca o fai clic sull’icona **[!UICONTROL Pubblica]**. Se l’icona **Pubblica** non è visibile sulla barra degli strumenti, tocca o fai clic su **[!UICONTROL Altro]** e individua l’icona **[!UICONTROL Pubblica]**.
 
 1. Scegliete **[!UICONTROL Pubblica]** dal menu, quindi chiudete la finestra di dialogo di conferma.
 1. Esci dalla modalità di selezione. Lo stato di pubblicazione della risorsa viene visualizzato nella parte inferiore della miniatura della risorsa nella vista a schede. Nella vista a elenco, la colonna Pubblicato mostra l’ora in cui la risorsa è stata pubblicata.
@@ -91,11 +93,11 @@ La console Risorse di Adobe Experience Manager (AEM) Assets può visualizzare va
 1. Per cercare le risorse in base al loro stato, toccate o fate clic sull’icona **[!UICONTROL Cerca]** per visualizzare la barra di ricerca Omnico.
 
 1. Premere il tasto Invio, quindi fare clic o toccare l&#39;icona AEM per visualizzare il pannello di ricerca.
-1. Nel pannello Ricerca, tocca o fai clic su Stato **** pubblicazione e seleziona **[!UICONTROL Pubblicato]** per cercare le risorse pubblicate in Risorse AEM.
+1. Nel pannello Ricerca, tocca o fai clic su **[!UICONTROL Stato pubblicazione]** e seleziona **[!UICONTROL Pubblicato]** per cercare le risorse pubblicate in AEM Assets.
 
-1. Toccate/fate clic su Stato **** approvazione e fate clic sull&#39;opzione appropriata per cercare le risorse approvate o rifiutate.
+1. Per cercare le risorse approvate o rifiutate, tocca/fai clic su **[!UICONTROL Stato approvazione]** e seleziona l’opzione appropriata.
 
-1. Per cercare le risorse in base al loro stato di scadenza, selezionate Stato **** scadenza nel pannello di ricerca e scegliete l’opzione appropriata.
+1. Per cercare le risorse in base al loro stato di scadenza, seleziona **[!UICONTROL Stato scadenza]** nel pannello di ricerca e scegli l’opzione appropriata.
 
 1. Potete anche cercare le risorse in base a una combinazione di stati in vari facet di ricerca. Ad esempio, potete cercare le risorse pubblicate che sono state approvate in un’attività di revisione e che non sono ancora scadute selezionando le opzioni appropriate nei facet di ricerca.
 
@@ -116,16 +118,16 @@ Una risorsa è considerata protetta se una delle seguenti condizioni è soddisfa
 >
 >Il percorso `/etc/dam/drm/licences` utilizzato per memorizzare le licenze nelle versioni precedenti di AEM non è più valido.
 >
->Se create o modificate le pagine delle licenze o le rimuovete dalle precedenti versioni di AEM, Adobe consiglia di memorizzarle in `/apps/settings/dam/drm/licenses` o `/conf/*/settings/dam/drm/licenses`.
+>Se create o modificate le pagine di licenza o le rimuovete dalle precedenti versioni di AEM, Adobe consiglia di memorizzare le pagine in `/apps/settings/dam/drm/licenses` o `/conf/*/settings/dam/drm/licenses`.
 
 ### Scaricare risorse DRM {#downloading-drm-assets}
 
 1. Nella vista Scheda, selezionate le risorse da scaricare e fate clic sull’icona **[!UICONTROL Scarica]** .
-1. Nella pagina Gestione **** copyright, selezionate dall’elenco la risorsa da scaricare.
+1. Nella pagina **[!UICONTROL Gestione copyright]**, seleziona dall’elenco la risorsa da scaricare.
 1. Nel riquadro Licenza, scegliere **[!UICONTROL Accetto]**. Accanto alla risorsa per la quale accettate il contratto di licenza viene visualizzato un segno di spunta. Toccate o fate clic sul pulsante **[!UICONTROL Scarica]** .
 
    >[!NOTE]
    >
-   >Il pulsante **[!UICONTROL Scarica]** è attivato solo quando decidi di accettare il contratto di licenza per una risorsa protetta. Tuttavia, se la selezione include sia risorse protette che risorse non protette, nel riquadro a sinistra vengono elencate solo le risorse protette e il pulsante **[!UICONTROL Scarica]** consente di scaricare le risorse non protette. Per accettare simultaneamente contratti di licenza per più risorse protette, selezionate le risorse dall’elenco e scegliete **[!UICONTROL D’accordo]**.
+   >Il pulsante **[!UICONTROL Download]** è attivato solo quando decidi di accettare il contratto di licenza di una risorsa protetta. Tuttavia, se la selezione include sia risorse protette che non protette, nel riquadro a sinistra vengono elencate solo le risorse protette e il pulsante **[!UICONTROL Download]** consente di scaricare le risorse non protette. Per accettare in contemporanea i contratti di licenza per più risorse protette, seleziona le risorse dall’elenco e fai clic su **[!UICONTROL Accetto]**.
 
 1. Nella finestra di dialogo, toccate o fate clic su **[!UICONTROL Scarica]** per scaricare la risorsa o le relative rappresentazioni.
