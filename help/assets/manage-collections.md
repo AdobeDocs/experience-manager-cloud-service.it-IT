@@ -4,14 +4,14 @@ description: Comprendere il concetto di raccolta in Risorse Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
 
 # Gestire le raccolte {#manage-collections}
 
-Una raccolta è un set di risorse all&#39;interno di Risorse Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o dinamica basata sui risultati di ricerca.
+Una raccolta è un set di risorse all&#39;interno di Risorse Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati di ricerca.
 
 A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Potete condividere le raccolte con vari utenti a cui sono stati assegnati diversi livelli di privilegi, inclusi la visualizzazione, la modifica e così via.
 
@@ -31,7 +31,7 @@ Per aprire le **[!UICONTROL raccolte]**, toccate o fate clic sul logo Experience
 
 ## Creare una raccolta {#create-a-collection}
 
-Potete creare una raccolta con riferimenti [](#create-a-collection-with-static-references) statici o basati su un filtro [basato su criteri di](#create-a-smart-collection)ricerca. Potete anche creare una raccolta da una scatola luminosa.
+Potete creare una raccolta con riferimenti [](#create-a-collection-with-static-references) statici o in base a un filtro [basato su criteri di](#create-a-smart-collection)ricerca. Potete anche creare una raccolta da una scatola luminosa.
 
 ### Creare una raccolta con riferimenti statici {#create-a-collection-with-static-references}
 
@@ -170,7 +170,7 @@ Quando scaricate una raccolta, viene scaricata l&#39;intera gerarchia di risorse
 
 1. Dalla console Raccolte, selezionate una o più raccolte da scaricare.
 1. Dalla barra degli strumenti, toccate o fate clic sull&#39;icona di download.
-1. Nella finestra di dialogo **[!UICONTROL Scarica]** , toccate o fate clic su **[!UICONTROL Scarica]**. Se desiderate scaricare i rendering delle risorse all&#39;interno della raccolta, selezionate **[!UICONTROL Rendering]**. Selezionate l&#39;opzione **[!UICONTROL E-mail]** per inviare una notifica e-mail al proprietario della raccolta.
+1. Nella finestra di dialogo **[!UICONTROL Scarica]** , toccate o fate clic su **[!UICONTROL Scarica]**. Se desiderate scaricare i rendering delle risorse all&#39;interno della raccolta, selezionate **[!UICONTROL Rendering]**. <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    Quando selezionate una raccolta da scaricare, viene scaricata l&#39;intera gerarchia di cartelle sotto la raccolta. Per includere ciascuna raccolta scaricata (comprese le risorse nelle raccolte figlie nidificate sotto la raccolta principale) in una singola cartella, selezionate **[!UICONTROL Crea cartella separata per ciascuna risorsa]**.
 
@@ -219,7 +219,7 @@ Potete aggiungere una raccolta a un&#39;altra raccolta, creando in tal modo una 
 >
 >Le raccolte avanzate non possono essere nidificate. In altre parole, le raccolte avanzate non possono contenere altre raccolte.
 
-## Saved searches {#saved-searches}
+## Ricerche salvate {#saved-searches}
 
 Nell’interfaccia utente Assets, puoi cercare o filtrare le risorse in base a determinate regole, criteri di ricerca o facet di ricerca personalizzata. Se salvi queste ricerche come **[!UICONTROL Ricerche salvate]**, puoi accedervi in un secondo momento dall’elenco **[!UICONTROL Ricerche salvate]** nel pannello Filtro. La creazione di una ricerca salvata genera anche una raccolta avanzata.
 
@@ -229,7 +229,7 @@ Le ricerche salvate vengono create quando generi una raccolta avanzata. Le racco
 >
 >Potete condividere le raccolte smart nello stesso modo in cui condividete le raccolte statiche.
 
-La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzate. Per informazioni dettagliate, consultate [Modificare una raccolta](#edit-a-smart-collection)dinamica.
+La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzate. Per informazioni dettagliate, consultate [Modificare una raccolta](#edit-a-smart-collection)avanzata.
 
 Per eliminare le ricerche salvate, effettuate le seguenti operazioni:
 
