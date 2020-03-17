@@ -1,17 +1,17 @@
 ---
-title: 'Sviluppare un pacchetto di struttura dell''archivio   '
+title: 'Pacchetto struttura archivio progetti AEM  '
 description: Adobe Experience Manager come progetto Cloud Service Maven richiede una definizione del sottopacchetto della struttura dell'archivio il cui unico scopo è definire le radici dell'archivio JCR in cui vengono distribuiti i sottopacchetti Codice del progetto.
 translation-type: tm+mt
-source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
 
-# Sviluppare un pacchetto di struttura dell&#39;archivio
+# Pacchetto struttura archivio progetti AEM
 
 I progetti Maven per Adobe Experience Manager come servizio Cloud richiedono una definizione di sottopacchetto della struttura del repository il cui unico scopo è definire le radici del repository JCR in cui vengono distribuiti i sottopacchetti di codice del progetto. In questo modo, l&#39;installazione dei pacchetti in Experience Manager come servizio Cloud viene ordinata automaticamente dalle dipendenze delle risorse JCR. Le dipendenze mancanti potrebbero causare l&#39;installazione di sottostrutture in anticipo rispetto alle strutture padre e, di conseguenza, la rimozione imprevista, interrompendo la distribuzione.
 
-Se il pacchetto di codice viene distribuito in una posizione **non inclusa** nel pacchetto di codice, tutte le risorse antenate (risorse JCR più vicine alla radice JCR) devono essere enumerate nel pacchetto della struttura del repository per stabilire tali dipendenze.
+Se il pacchetto di codice viene distribuito in una posizione **non inclusa** nel pacchetto stesso, tutte le risorse precedenti (risorse JCR più vicine alla radice JCR) devono essere enumerate nel pacchetto della struttura dell’archivio per stabilire tali dipendenze.
 
 ![Pacchetto struttura archivio](./assets/repository-structure-packages.png)
 
@@ -93,7 +93,7 @@ Accertatevi di aggiungere il nuovo sottoprogetto Maven all&#39;elenco dei proget
 </project>
 ```
 
-## Riferimento al pacchetto struttura repository
+## Riferimento al pacchetto della struttura dell&#39;archivio
 
 Per utilizzare il pacchetto della struttura del repository, farvi riferimento tramite tutti i pacchetti di codice (i pacchetti secondari che distribuiscono a `/apps`) progetti Maven tramite la configurazione dei plug-in Maven del pacchetto di contenuti FileVault `<repositoryStructurePackage>` .
 
