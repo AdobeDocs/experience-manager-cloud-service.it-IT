@@ -3,7 +3,7 @@ title: Utilizzare le risorse collegate per condividere le risorse DAM nel flusso
 description: Utilizza le risorse disponibili in una distribuzione remota di Risorse Adobe Experience Manager quando crei le pagine Web in un’altra distribuzione del sito Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 188917fe677a88142c702b9637600db872853974
+source-git-commit: e3835cd4363a01fdf773831aa6f145a62dda6ae3
 
 ---
 
@@ -18,7 +18,7 @@ AEM Sites offre la funzionalità di creazione di pagine web e AEM Assets è il s
 
 Durante la modifica delle pagine in Editor pagina, gli autori possono cercare, sfogliare e incorporare facilmente le risorse da una diversa distribuzione di Risorse AEM. Un amministratore AEM può effettuare un’integrazione una tantum di una distribuzione locale di AEM Sites con una distribuzione diversa (remota) di AEM Assets.
 
-Per gli autori dei siti, le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l&#39;utilizzo di poche risorse remote alla volta. Per rendere disponibili molte risorse remote nella distribuzione locale in una sola volta, è consigliabile migrare le risorse in massa. Consulta la guida [alla migrazione delle](/help/assets/assets-migration-guide.md)risorse.
+Per gli autori dei siti, le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l&#39;utilizzo di poche risorse remote alla volta. Per rendere disponibili molte risorse remote nella distribuzione locale in una sola volta, è consigliabile migrare le risorse in massa.
 
 ### Prerequisiti e distribuzioni supportate {#prerequisites}
 
@@ -184,5 +184,5 @@ Le risorse recuperate possono essere usate come qualsiasi altra risorsa locale, 
 
 Per risolvere eventuali situazioni di errore comuni, effettuate le seguenti operazioni:
 
-* Se non riuscite a cercare risorse remote da Content Finder, verificate nuovamente e accertatevi che i ruoli e le autorizzazioni richiesti siano attivi.
+* Se non riuscite a cercare risorse remote da Content Finder, verificate nuovamente e accertatevi che siano presenti i ruoli e le autorizzazioni richiesti.
 * Una risorsa recuperata dalla diga remota potrebbe non essere pubblicata su una pagina Web per i seguenti motivi: non esiste sul telecomando; mancanza di autorizzazioni adeguate per recuperarla; errore di rete. Assicurati che la risorsa non venga rimossa dal DAM remoto o che le autorizzazioni non vengano modificate; garantire che siano soddisfatti i prerequisiti adeguati; provate ad aggiungere la risorsa alla pagina e ripubblicatela. Controllate l’ [elenco dei processi](/help/assets/asynchronous-jobs.md) asincroni per verificare la presenza di errori nel recupero delle risorse.
