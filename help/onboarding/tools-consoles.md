@@ -1,21 +1,21 @@
 ---
-title: Console strumenti
-description: Scopri le diverse console di strumenti in AEM.
-translation-type: tm+mt
+title: Console Strumenti
+description: Informazioni sulle diverse console Strumenti disponibili in AEM.
+translation-type: ht
 source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 ---
 
 
-# Console strumenti{#tools-consoles}
+# Console Strumenti{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository.
+Le console **Strumenti** permettono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti.
 
-È possibile accedere a tali console dal pannello [Strumenti della navigazione](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel)globale.
+Puoi accedere a tali console mediante il [pannello Strumenti della navigazione globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel).
 
 >[!NOTE]
 >
->Poiché le schede nell&#39;interfaccia utente forniscono dettagli sullo scopo di ciascuna opzione, questa tabella fornisce semplicemente un riferimento rapido alla posizione delle funzioni nel pannello Strumenti.
+>Nelle schede dell’interfaccia utente sono disponibili dettagli sullo scopo di ciascuna opzione, pertanto questa tabella fornisce solo alcuni riferimenti rapidi sulla posizione delle funzioni disponibili nel pannello Strumenti.
 
 <table>
  <tbody>
@@ -37,7 +37,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>Assegnazione di tag</td>
+   <td>Assegnazione tag</td>
   </tr>
   <tr>
    <td> </td>
@@ -144,7 +144,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Configurazione risorse collegate</td>
   </tr>
   <tr>
-   <td>Risorse</td>
+   <td>Riferimenti</td>
    <td> </td>
   </tr>
   <tr>
@@ -153,10 +153,10 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>Risorse per sviluppatori</td>
+   <td>Riferimenti per sviluppatori</td>
   </tr>
   <tr>
-   <td>Distribuzione</td>
+   <td>Implementazione</td>
    <td> </td>
   </tr>
   <tr>
@@ -208,7 +208,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Configurazioni Adobe IMS</td>
   </tr>
   <tr>
-   <td>Servizi cloud<br /> </td>
+   <td>Cloud Services<br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -225,7 +225,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>Configurazione elemento multimediale dinamico</td>
+   <td>Configurazione Dynamic Media</td>
   </tr>
   <tr>
    <td> </td>
