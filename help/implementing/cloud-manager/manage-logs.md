@@ -2,7 +2,7 @@
 title: Gestione registri - Servizio Cloud
 description: Gestione registri - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
 
 ---
 
@@ -65,4 +65,11 @@ Environment Id Service    Name
 ```
 
 >[!Note]
->Mentre i download **dei** registri saranno disponibili sia tramite l&#39;interfaccia utente che tramite l&#39;API, **Log Tailing** è solo API/CLI.
+>Mentre i **Log Downloads** (Download dei registri) saranno disponibili sia dall’interfaccia utente che tramite l’API, **Log Tailing** (Coda del registro) è accessibile solo con API/CLI.
+
+### Additional Resources {#resources}
+
+Per ulteriori informazioni sull&#39;API di Cloud Manager e l&#39;interfaccia CLI di Adobe I/O, fare riferimento alle seguenti risorse aggiuntive:
+
+* [Documentazione API di Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [CLI I/O di Adobe](https://github.com/adobe/aio-cli-plugin-cloudmanager)
