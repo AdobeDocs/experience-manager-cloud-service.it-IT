@@ -2,7 +2,7 @@
 title: Integrazione con Adobe Target
 description: 'Integrazione con Adobe Target '
 translation-type: tm+mt
-source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
+source-git-commit: 5a7f2d603952b2c5f92363888efedb482d8efea3
 
 ---
 
@@ -25,7 +25,7 @@ Integra i tuoi siti AEM con Adobe Target per personalizzare il contenuto delle t
 
 Per effettuare l&#39;integrazione con Target, effettuate le seguenti operazioni:
 
-* [Eseguire le operazioni](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html)preliminari: Effettuate la registrazione con Adobe Target e configurate alcuni aspetti dell’istanza di creazione di AEM. L&#39;account Adobe Target deve disporre di autorizzazioni a livello di **approver** almeno. Inoltre, è necessario proteggere le impostazioni dell&#39;attività sul nodo di pubblicazione in modo che sia inaccessibile agli utenti.
+* [Eseguire le operazioni](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html)preliminari: Effettuate la registrazione con Adobe Target e configurate alcuni aspetti dell’istanza di creazione di AEM. L&#39;account Adobe Target deve disporre di autorizzazioni a livello di **approver** al minimo. Inoltre, è necessario proteggere le impostazioni dell&#39;attività sul nodo di pubblicazione in modo che sia inaccessibile agli utenti.
 
 * Launch di Adobe è lo strumento di fatto per la strumentazione di un sito AEM con funzionalità Target (librerie JS). Pertanto, l&#39;integrazione di AEM come servizio cloud con Launch e Adobe Target va di pari passo (vedete i collegamenti di seguito).
 
@@ -34,11 +34,15 @@ Per effettuare l&#39;integrazione con Target, effettuate le seguenti operazioni:
    * [Integrare AEM con Adobe Launch tramite Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [Integrazione di AEM con Launch di Adobe, Analytics e Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
-1. [Configura attività](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): Associate le attività alla configurazione cloud di Target.
-
 >[!NOTE]
 >
 >La configurazione IMS (account tecnici) per Launch di Adobe è preconfigurata in AEM come servizio Cloud. Gli utenti non devono creare questa configurazione.
+
+1. [Configura attività](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): Associate le attività alla configurazione cloud di Target.
+
+>[!CAUTION]
+>
+>&quot;In AEM come servizio cloud, l&#39;agente di replica che sincronizza Offerte e Attività da AEM ad Adobe Target è disabilitato per impostazione predefinita. Per riabilitare l&#39;agente di replica, contattate il supporto [](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) Adobe.&quot;
 
 >[!NOTE]
 >
