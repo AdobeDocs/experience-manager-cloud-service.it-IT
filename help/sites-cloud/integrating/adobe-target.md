@@ -2,7 +2,7 @@
 title: Integrazione con Adobe Target
 description: 'Integrazione con Adobe Target '
 translation-type: tm+mt
-source-git-commit: 94ba99acf2d14219d63485e3443b7080b8ba32bd
+source-git-commit: ed8cfc564e198552ae4efabee1ff48950470790a
 
 ---
 
@@ -42,7 +42,7 @@ Per effettuare l&#39;integrazione con Target, effettuate le seguenti operazioni:
 
 >[!CAUTION]
 >
->In AEM come servizio cloud, l&#39;agente di replica che sincronizza Offerte e Attività da AEM ad Adobe Target è disabilitato per impostazione predefinita. Per riabilitare l&#39;agente di replica, contattate il supporto [](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) Adobe.
+>In AEM come servizio cloud, l&#39;agente di replica che sincronizza Offerte e Attività da AEM ad Adobe Target è disabilitato per impostazione predefinita. Per riabilitare l&#39;agente di replica, contattate il team di supporto [](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) Adobe.
 
 >[!NOTE]
 >
