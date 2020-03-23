@@ -3,7 +3,7 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 
 ---
 
@@ -56,9 +56,9 @@ Per configurare i microservizi delle risorse, gli amministratori possono utilizz
 
 ### Configurazione predefinita {#default-config}
 
-Con la configurazione predefinita, è configurato solo il profilo di elaborazione [!UICONTROL standard] . Si tratta di un elemento incorporato e non può essere modificato. Viene sempre eseguito per garantire che tutte le elaborazioni richieste dall&#39;applicazione siano effettuate.
+Con la configurazione predefinita, è configurato solo il profilo di elaborazione standard. Il profilo di elaborazione standard non è visibile nell&#39;interfaccia utente e non è possibile modificarlo. Viene sempre eseguito per elaborare le risorse caricate. Un profilo di elaborazione standard garantisce che tutte le elaborazioni di base richieste da Experience Manager siano completate su tutte le risorse.
 
-![processing-profile-standard](assets/processing-profiles-standard.png)
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
 Il profilo di elaborazione standard fornisce la seguente configurazione di elaborazione:
 
@@ -85,13 +85,13 @@ Ogni configurazione di profilo di elaborazione include un elenco di rappresentaz
 
 ![elaborazione-profili-aggiunta](assets/processing-profiles-adding.png)
 
-Quando viene salvato un nuovo profilo di elaborazione, questo viene aggiunto all&#39;elenco dei profili di elaborazione configurati. Questi profili di elaborazione possono quindi essere applicati alle cartelle nella gerarchia delle cartelle per renderli efficaci per i caricamenti delle risorse e per le risorse che vi sono state eseguite.
+Quando viene salvato un nuovo profilo di elaborazione, questo viene aggiunto all&#39;elenco dei profili di elaborazione configurati. Questi profili di elaborazione possono quindi essere applicati alle cartelle nella gerarchia delle cartelle per renderli efficaci per i caricamenti delle risorse e le risorse effettuate in tale cartella.
 
 ![processing-profile-list](assets/processing-profiles-list.png)
 
 #### Larghezza e altezza della rappresentazione {#rendition-width-height}
 
-Le specifiche di larghezza e altezza della rappresentazione forniscono le dimensioni massime dell’immagine di output generata. Il servizio di microservizi risorse tenta di generare la rappresentazione più grande possibile, che larghezza e altezza non sono maggiori rispettivamente di larghezza e altezza specificate. Le proporzioni vengono mantenute, ovvero sono le stesse dell’originale.
+Le specifiche relative a larghezza e altezza della rappresentazione forniscono le dimensioni massime dell’immagine di output generata. Il servizio di microservizi risorse tenta di generare la rappresentazione più grande possibile, che larghezza e altezza non sono maggiori rispettivamente di larghezza e altezza specificate. Le proporzioni vengono mantenute, ovvero sono uguali a quelle dell’originale.
 
 Un valore vuoto indica che l&#39;elaborazione delle risorse assume la dimensione in pixel dell&#39;originale.
 
@@ -103,13 +103,13 @@ In caso contrario, il tipo MIME viene controllato rispetto al tipo MIME incluso 
 
 #### Rappresentazioni speciali FPO {#special-fpo-rendition}
 
-Il profilo di elaborazione può includere una speciale &quot;rappresentazione FPO&quot;, utilizzata quando si utilizza [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) con Adobe InDesign per inserire collegamenti diretti alle risorse da Experience Manager nei documenti InDesign.
+Quando inserite risorse di grandi dimensioni da AEM nei documenti Adobe InDesign, un creativo professionista deve attendere molto tempo dopo aver [inserito una risorsa](https://helpx.adobe.com/indesign/using/placing-graphics.html). Nel frattempo, all&#39;utente non è consentito utilizzare InDesign. Questo interrompe il flusso creativo e influisce negativamente sull&#39;esperienza dell&#39;utente. Adobe consente di iniziare temporaneamente a inserire rappresentazioni di piccole dimensioni nei documenti InDesign, che possono essere sostituite con risorse a risoluzione piena on-demand in un secondo momento. Experience Manager fornisce rappresentazioni utilizzate solo per il posizionamento (FPO). Tali rappresentazioni FPO hanno una dimensione file ridotta ma hanno le stesse proporzioni.
 
-Per informazioni su come attivarla per il profilo di elaborazione, consulta la [documentazione](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) di Adobe Asset Link.
+Il profilo di elaborazione può includere una rappresentazione FPO (solo per posizionamento). Consulta la [documentazione](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) di Adobe Asset Link per comprendere se è necessario attivarla per il profilo di elaborazione. Per ulteriori informazioni, consulta la documentazione [completa di](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)Adobe Asset Link.
 
 ## Utilizzare i microservizi delle risorse per elaborare le risorse {#use-asset-microservices}
 
-Una volta creati ulteriori profili di elaborazione, questi devono essere applicati a cartelle specifiche affinché Experience Manager possa utilizzarli nell’elaborazione delle risorse per le risorse caricate o aggiornate in tali cartelle. Il profilo di elaborazione standard integrato viene sempre eseguito.
+Create e applicate profili di elaborazione personalizzati aggiuntivi a cartelle specifiche per Experience Manager per elaborare le risorse caricate o aggiornate in queste cartelle. Il profilo di elaborazione standard predefinito viene sempre eseguito ma non è visibile nell&#39;interfaccia utente. Se aggiungete un profilo personalizzato, entrambi i profili vengono utilizzati per elaborare le risorse caricate.
 
 Esistono due modi per applicare i profili di elaborazione alle cartelle:
 
@@ -134,7 +134,7 @@ Gli utenti possono verificare che l’elaborazione sia stata eseguita aprendo un
 
 Per situazioni in cui è necessaria un’ulteriore elaborazione delle risorse che non può essere ottenuta utilizzando i profili di elaborazione, alla configurazione possono essere aggiunti ulteriori flussi di lavoro di post-elaborazione. Questo consente di aggiungere un&#39;elaborazione completamente personalizzata al di sopra dell&#39;elaborazione configurabile tramite i microservizi delle risorse.
 
-I flussi di lavoro di post-elaborazione, se configurati, vengono eseguiti automaticamente da AEM al termine dell&#39;elaborazione dei microservizi. Non è necessario aggiungere manualmente gli avviatori di workflow per attivarli.
+I flussi di lavoro di post-elaborazione, se configurati, vengono eseguiti automaticamente da AEM al termine dell&#39;elaborazione dei microservizi. Non è necessario aggiungere manualmente gli avviatori del flusso di lavoro per attivarli.
 
 Alcuni esempi:
 
@@ -149,15 +149,15 @@ L’aggiunta di una configurazione di flusso di lavoro post-elaborazione a Exper
 * L&#39;ultimo passo di tale modello deve essere il `DAM Update Asset Workflow Completed Process` passo. Questo è necessario per garantire che AEM sia a conoscenza del termine dell’elaborazione e che la risorsa possa essere contrassegnata come elaborata (&quot;Nuovo&quot;)
 * Creazione di una configurazione per il servizio Custom Workflow Runner, che consente di configurare l&#39;esecuzione di un modello di flusso di lavoro post-elaborazione in base al percorso (percorso della cartella) o all&#39;espressione regolare
 
-### Creazione di modelli di flusso di lavoro post-elaborazione
+### Creare modelli di flussi di lavoro post-elaborazione {#create-post-processing-workflow-models}
 
-I modelli di flusso di lavoro post-elaborazione sono modelli di flusso di lavoro AEM standard. Se è necessaria un&#39;elaborazione diversa per diverse posizioni di repository o tipi di risorse, create altre risorse.
+I modelli di flusso di lavoro post-elaborazione sono modelli di flusso di lavoro AEM standard. Create modelli diversi se avete bisogno di un&#39;elaborazione diversa per diverse posizioni di repository o tipi di risorse.
 
-Le fasi di elaborazione devono essere aggiunte in base alle esigenze. Potete utilizzare tutti i passaggi out-of-the-box supportati disponibili, nonché qualsiasi passaggio di flusso di lavoro implementato personalizzati.
+Le fasi di elaborazione devono essere aggiunte in base alle esigenze. Potete utilizzare tutti i passaggi supportati disponibili, nonché eventuali passaggi di flusso di lavoro implementati personalizzati.
 
-L&#39;ultimo passaggio di ciascuno dei flussi di lavoro di post-elaborazione deve essere il `DAM Update Asset Workflow Completed Process`. In questo modo la risorsa verrà contrassegnata correttamente come &quot;elaborazione completata&quot;.
+Assicurati che l&#39;ultimo passaggio di ogni flusso di lavoro di post-elaborazione sia `DAM Update Asset Workflow Completed Process`. L’ultimo passaggio consente a Experience Manager di sapere quando l’elaborazione delle risorse è stata completata.
 
-### Configurazione dell&#39;esecuzione del flusso di lavoro post-elaborazione
+### Configurare l&#39;esecuzione del flusso di lavoro di post-elaborazione {#configure-post-processing-workflow-execution}
 
 Per configurare i modelli di flusso di lavoro post-elaborazione da eseguire per le risorse caricate o aggiornate nel sistema al termine dell’elaborazione dei microservizi di risorse, è necessario configurare il servizio Custom Workflow Runner.
 
@@ -171,4 +171,4 @@ Il servizio Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflo
 >La configurazione di Custom Workflow Runner è una configurazione di un servizio OSGi. Consultate [Implementare in Experience Manager](/help/implementing/deploying/overview.md) per informazioni su come distribuire una configurazione OSGi.
 > La console Web OSGi, a differenza delle distribuzioni di servizi locali e gestiti di AEM, non è direttamente disponibile nelle distribuzioni di servizi cloud.
 
-Per informazioni dettagliate, su quale delle fasi standard del flusso di lavoro può essere utilizzata nel flusso di lavoro di post-elaborazione, consultate la procedura [Flusso di lavoro nel flusso di lavoro](developer-reference-material-apis.md#post-processing-workflows-steps) di post-elaborazione (in riferimento allo sviluppatore).
+Per informazioni dettagliate sul passaggio del flusso di lavoro standard da utilizzare nel flusso di lavoro di post-elaborazione, consultate i passaggi del [flusso di lavoro nel flusso di lavoro](developer-reference-material-apis.md#post-processing-workflows-steps) di post-elaborazione (in riferimento allo sviluppatore).
