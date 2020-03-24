@@ -1,17 +1,17 @@
 ---
-title: Modifica delle proprietà di una pagina
+title: 'Modifica delle proprietà di una pagina  '
 description: Puoi impostare le proprietà richieste per una pagina.
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
 
 
-# Modifica delle proprietà di una pagina   {#editing-page-properties}
+# Modifica delle proprietà di una pagina {#editing-page-properties}
 
 Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
 
-## Proprietà pagina   {#page-properties}
+## Proprietà pagina {#page-properties}
 
 Le proprietà sono distribuite su più schede.
 
@@ -181,6 +181,8 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 * **Configurazione targeting**
 
    * Seleziona un [marchio per specificare l’ambito di impostazione della destinazione](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   >[!NOTE]
+   >Questa opzione richiede che l&#39;account utente sia nel `Target Adminstrators`gruppo.
 
 ### Autorizzazioni   {#permissions}
 
@@ -215,7 +217,7 @@ Mostra la miniatura della pagina. Operazioni disponibili:
    * Tocca o fai clic su **Proprietà**
       * Per una singola pagina
       * Per più pagine (solo un sottoinsieme di proprietà è disponibile per la modifica in blocco)
-* Dall’Editor di pagina:
+* Dall’editor pagina:
    * Tramite **Informazioni pagina** (quindi **Apri proprietà**)
 
 ### Dalla console Sites - Pagina singola {#from-the-sites-console-single-page}
@@ -236,7 +238,7 @@ Quando modifichi una pagina puoi utilizzare **Informazioni pagina** per definire
 
 1. Apri la pagina di cui desideri modificare le proprietà.
 1. Seleziona l’icona **Informazioni pagina** per aprire il menu di selezione.
-1. Seleziona **Apri proprietà** per aprire una finestra di dialogo che consente di modificare le proprietà, organizzate nella scheda appropriata. I seguenti pulsanti sono disponibili anche a destra della barra degli strumenti:
+1. Seleziona **Apri proprietà** per aprire una finestra di dialogo che consente di modificare le proprietà, organizzate nella scheda appropriata. A destra della barra degli strumenti sono disponibili anche i seguenti pulsanti:
    * **Annulla**
    * **Salva e chiudi**
 1. Usa il pulsante **Salva e chiudi** per salvare le modifiche.
