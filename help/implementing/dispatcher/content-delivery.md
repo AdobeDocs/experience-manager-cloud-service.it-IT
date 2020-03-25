@@ -2,14 +2,14 @@
 title: Distribuzione dei contenuti
 description: 'Distribuzione dei contenuti '
 translation-type: tm+mt
-source-git-commit: d1c953e1caf440f18e488f07a32bcf5bc3880f67
+source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
 
 ---
 
 
 # Distribuzione dei contenuti in AEM come servizio cloud {#content-delivery}
 
-La distribuzione dei contenuti del servizio di pubblicazione include:
+I dettagli della pagina corrente consentono di pubblicare il contenuto del servizio in AEM come servizio cloud. La distribuzione dei contenuti del servizio di pubblicazione include:
 
 * CDN (in genere gestito da Adobe)
 * dispatcher AEM
