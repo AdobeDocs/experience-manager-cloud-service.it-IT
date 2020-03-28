@@ -3,7 +3,7 @@ title: Elabora risorse tramite gestori di file multimediali e flussi di lavoro
 description: Scopri i diversi gestori di contenuti multimediali e come utilizzarli nei flussi di lavoro per eseguire attività sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -18,7 +18,7 @@ I gestori di file multimediali sono servizi all’interno di Risorse AEM che ese
 
 >[!NOTE]
 >
->Per una descrizione di tutti i formati supportati da Risorse AEM e delle funzioni supportate per ciascun formato, fai riferimento alla pagina Formati [supportati da](file-format-support.md) Risorse.
+>Consulta l’articolo Formati [di file supportati da](file-format-support.md) Risorse per una descrizione di tutti i formati supportati da Risorse AEM, nonché delle funzioni supportate per ciascun formato.
 
 ## Gestori file multimediali predefiniti {#default-media-handlers}
 
@@ -61,8 +61,8 @@ I seguenti gestori di file multimediali sono disponibili in AEM Assets e gestisc
   </tr>
   <tr>
    <td>PictHandler</td>
-   <td><p>com.day.cq.da.handler.standard.pict.PictHandler</p> </td>
-   <td><p>immagine/immagine</p> </td>
+   <td><p>com.day.cq.dam.handler.standard.pict.PictHandler</p> </td>
+   <td><p>image/pict</p> </td>
   </tr>
   <tr>
    <td>StandardImageHandler</td>
@@ -71,7 +71,7 @@ I seguenti gestori di file multimediali sono disponibili in AEM Assets e gestisc
   </tr>
   <tr>
    <td>MSOfficeHandler</td>
-   <td>com.day.cq.da.handler.standard.msoffice.MSOfficeHandler</td>
+   <td>com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler</td>
    <td>application/msword<br /> </td>
   </tr>
   <tr>
@@ -102,11 +102,11 @@ Tutti i gestori eseguono le seguenti operazioni:
 * estrazione di tutti i metadati disponibili dalla risorsa.
 * creazione di una miniatura della risorsa.
 
-È possibile visualizzare i gestori di supporti attivi:
+È possibile visualizzare i gestori di contenuti multimediali attivi:
 
 1. In your browser, navigate to `http://localhost:4502/system/console/components`.
 1. Fate clic sul collegamento `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
-1. Viene visualizzato un elenco con tutti i gestori di supporti attivi.
+1. Viene visualizzato un elenco con tutti i gestori di contenuti multimediali attivi.
 
 ## Utilizzo dei gestori di file multimediali nei flussi di lavoro per eseguire attività sulle risorse {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
@@ -114,7 +114,7 @@ I gestori di file multimediali sono servizi solitamente utilizzati in combinazio
 
 In AEM sono disponibili alcuni flussi di lavoro predefiniti per l’elaborazione delle risorse. Per visualizzarli, aprite la console Flusso di lavoro e fate clic sulla scheda **[!UICONTROL Modelli]** : i titoli dei flussi di lavoro che iniziano con Risorse AEM sono le risorse specifiche.
 
-È possibile estendere i flussi di lavoro esistenti e crearne di nuovi per elaborare le risorse in base a requisiti specifici.
+I flussi di lavoro esistenti possono essere estesi e possono essere creati nuovi per elaborare le risorse in base a requisiti specifici.
 
 L’esempio seguente mostra come migliorare il flusso di lavoro di **[!UICONTROL Sincronizzazione AEM Assets]** in modo che vengano generate le risorse secondarie di tutte le risorse, eccetto i documenti PDF.
 
@@ -127,7 +127,7 @@ Per attivare/disattivare un gestore di supporti:
 1. In your browser, navigate to `https://<host>:<port>/system/console/components`.
 1. Fate clic su **[!UICONTROL Disattiva]** accanto al nome del gestore multimediale. Esempio: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. Aggiorna la pagina: accanto al gestore multimediale viene visualizzata un&#39;icona che indica che è disattivato.
-1. Per abilitare il gestore di supporti, fare clic su **[!UICONTROL Abilita]** accanto al nome del gestore.
+1. Per abilitare il gestore di file multimediali, fate clic su **[!UICONTROL Abilita]** accanto al nome del gestore.
 
 ### Creazione di un nuovo gestore multimediale {#creating-a-new-media-handler}
 
@@ -145,13 +145,13 @@ Implementate i seguenti metodi:
 * `getThumbnailImage()`: crea una miniatura della risorsa passata.
 * `getMimeTypes()`: restituisce i tipi MIME della risorsa.
 
-Esempio di modello:
+Di seguito è riportato un modello di esempio:
 
 `package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts } `
 
 L&#39;interfaccia e le classi includono:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi MIME specifici. Per aggiungere un nuovo tipo MIME è necessario implementare questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi MIME specifici. L&#39;aggiunta di un nuovo tipo MIME richiede l&#39;implementazione di questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni utilizzate.
 * Classe `com.day.cq.dam.core.AbstractSubAssetHandler`:
    * Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni, oltre a quelle generiche per l’estrazione di risorse secondarie.
@@ -164,15 +164,15 @@ L&#39;interfaccia e le classi includono:
 * `getThumbnailImage()`: questo metodo crea una miniatura della risorsa passata.
 * `getMimeTypes()`: questo metodo restituisce i tipi MIME della risorsa.
 
-Esempio di modello:
+Di seguito è riportato un modello di esempio:
 
 package my.own.things; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ classe pubblica MyMediaHandler estende com.day.cq.dam.core.AbstractAssetHandler { // implementa le parti pertinenti }
 
 L&#39;interfaccia e le classi includono:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi MIME specifici. Per aggiungere un nuovo tipo MIME è necessario implementare questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi MIME specifici. L&#39;aggiunta di un nuovo tipo MIME richiede l&#39;implementazione di questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni utilizzate.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` class:Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni più comuni per l’estrazione di risorse secondarie.
+* `com.day.cq.dam.core.AbstractSubAssetHandler` class: Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni più comuni per l’estrazione di risorse secondarie.
 
 <!--
 #### Example: create a specific Text Handler {#example-create-a-specific-text-handler}
@@ -394,7 +394,7 @@ Il `CommandLineProcess` processo esegue le seguenti operazioni nell&#39;ordine i
 * Filtra il file in base a tipi MIME specifici, se specificato.
 * Crea una directory temporanea sul disco in cui risiede il server AEM.
 * Invia il file originale alla directory temporanea.
-* Esegue il comando definito dagli argomenti del passaggio. Il comando viene eseguito nella directory temporanea con le autorizzazioni dell’utente che esegue AEM.
+* Esegue il comando definito dagli argomenti del passaggio. Il comando viene eseguito all’interno della directory temporanea con le autorizzazioni dell’utente che esegue AEM.
 * Invia di nuovo il risultato nella cartella di rappresentazione del server AEM.
 * Elimina la directory temporanea.
 * Crea le miniature in base a tali rappresentazioni, se specificate. Il numero e le dimensioni delle miniature sono definiti dagli argomenti del passaggio.
@@ -407,7 +407,7 @@ A questo scopo, si utilizzerà ImageMagick. ImageMagick è una suite software gr
 
 Prima installa ImageMagick sul disco che ospita il server AEM:
 
-1. Installa ImageMagick: fare riferimento alla documentazione [ImageMagick](https://www.imagemagick.org/script/download.php).
+1. Installa ImageMagick: Consulta la documentazione [di](https://www.imagemagick.org/script/download.php)ImageMagick.
 1. Impostare lo strumento in modo da poter eseguire la conversione sulla riga di comando.
 1. Per verificare se lo strumento è installato correttamente, eseguire il comando seguente `convert -h` sulla riga di comando.
 
@@ -417,7 +417,7 @@ Prima installa ImageMagick sul disco che ospita il server AEM:
    >
    >In alcune versioni di Windows (ad esempio, Windows SE), il comando convert potrebbe non essere eseguito in quanto è in conflitto con l&#39;utilità di conversione nativa che fa parte dell&#39;installazione di Windows. In questo caso, indicare il percorso completo per l&#39;utilità ImageMagick utilizzata per convertire i file immagine in miniature. Esempio, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. Per verificare se lo strumento funziona correttamente, aggiungete un&#39;immagine .jpg alla directory di lavoro ed eseguite il comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` sulla riga di comando.
+1. Per verificare se lo strumento viene eseguito correttamente, aggiungete un&#39;immagine .jpg alla directory di lavoro ed eseguite il comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` sulla riga di comando.
 
    Un’immagine capovolta viene aggiunta alla directory.
 
@@ -433,7 +433,7 @@ Quindi, aggiungi il passaggio della riga di comando al flusso di lavoro **[!UICO
 
 1. Salvare il flusso di lavoro.
 
-Per verificare il flusso di lavoro modificato, aggiungete una risorsa a `/content/dam`.
+Per testare il flusso di lavoro modificato, aggiungete una risorsa a `/content/dam`.
 
 1. Nel file system, ottenere un&#39;immagine .tiff di vostra scelta. Rinominarlo in `myImage.tiff` e copiarlo in `/content/dam`, ad esempio utilizzando WebDAV.
 1. Passate alla console **[!UICONTROL CQ5 DAM]** , ad esempio `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
