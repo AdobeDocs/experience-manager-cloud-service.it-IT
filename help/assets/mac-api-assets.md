@@ -3,7 +3,7 @@ title: API HTTP di Assets
 description: Scopri l’implementazione, il modello dati e le funzionalità dell’API HTTP Assets. Utilizzate l'API HTTP Assets per eseguire varie attività sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -76,7 +76,7 @@ In AEM una cartella contiene i seguenti componenti:
 
 L&#39;API HTTP Assets fornisce le seguenti funzionalità:
 
-* Recupero di un elenco di cartelle
+* Recuperare un elenco di cartelle
 * Creare una cartella
 * Creare una risorsa (obsoleto)
 * Aggiorna binario risorsa (obsoleto)
@@ -90,7 +90,7 @@ L&#39;API HTTP Assets fornisce le seguenti funzionalità:
 
 >[!NOTE]
 >
->Per semplificare la lettura, gli esempi seguenti omettono la notazione cURL completa. In realtà la notazione è correlata con [Resty](https://github.com/micha/resty) , che è un wrapper di script per cURL.
+>Per semplificare la leggibilità, gli esempi seguenti omettono la notazione cURL completa. In realtà la notazione è correlata con [Resty](https://github.com/micha/resty) , che è un wrapper di script per cURL.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -101,7 +101,7 @@ L&#39;API HTTP Assets fornisce le seguenti funzionalità:
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 -->
 
-## Recupero di un elenco di cartelle {#retrieve-a-folder-listing}
+## Recuperare un elenco di cartelle {#retrieve-a-folder-listing}
 
 Recupera una rappresentazione Siren di una cartella esistente e delle relative entità figlie (sottocartelle o risorse).
 
