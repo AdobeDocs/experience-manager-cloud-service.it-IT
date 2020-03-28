@@ -2,7 +2,7 @@
 title: Aggiungere le risorse digitali ad Adobe Experience Manager
 description: Aggiungere le risorse digitali ad Adobe Experience Manager come servizio Cloud
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 Il caricamento di file digitali in Adobe Experience Manager arricchisce il contenuto binario del file con metadati avanzati, smart tag, rappresentazioni e altri servizi di gestione delle risorse digitali (DAM). Puoi caricare vari tipi di file (comprese immagini, file PDF, file non elaborati e così via) dalla cartella locale o da un’unità di rete in Experience Manager Assets.
 
-Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all’archivio Experience Manager, inclusi client desktop, come Adobe Asset Link o l’app desktop Experience Manager, script di caricamento e caricamento che i clienti potrebbero creare e integrazioni di assimilazione automatizzate aggiunte come estensioni AEM.
+Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all’archivio di Experience Manager, inclusi client desktop, come Adobe Asset Link o l’app desktop Experience Manager, script di caricamento e caricamento che i clienti potrebbero creare e integrazioni di assimilazione automatizzate aggiunte come estensioni AEM.
 
 Qui ci concentreremo sui metodi di caricamento per gli utenti finali e forniremo collegamenti agli articoli che descrivono gli aspetti tecnici del caricamento e dell’assimilazione delle risorse mediante le API e gli SDK di Experience Manager.
 
@@ -36,7 +36,7 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli nell
    * In un browser che supporta HTML5, trascinate le risorse direttamente sull’interfaccia utente di Risorse. La finestra di dialogo per rinominare il file non viene visualizzata.
    ![create_menu](assets/create_menu.png)
 
-   Per selezionare più file, premete Ctrl o Comando e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
+   Per selezionare più file, premete il tasto Ctrl o Comando e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -64,7 +64,7 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli nell
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ Inoltre, l’interfaccia utente di Risorse mostra la risorsa più recente carica
 
 > [!NOTE]
 >
-> Per caricare gerarchie di cartelle nidificate in AEM, consultate Caricamento [in blocco di risorse](#bulk-upload)
+> Per caricare gerarchie di cartelle nidificate in AEM, consultate Caricamento [in blocco di risorse](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -120,12 +120,12 @@ Per soddisfare convenzioni di denominazione dei file specifiche per la vostra or
 
 Tuttavia, i seguenti caratteri (elenco separato da spazi) non sono supportati:
 
-* il nome del file risorsa non deve contenere `* / : [ \\ ] | # % { } ? &`
+* il nome del file di risorse non deve contenere `* / : [ \\ ] | # % { } ? &`
 * il nome della cartella di risorse non deve contenere `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Caricamento in blocco delle risorse {#bulk-upload}
 
-Per caricare un numero maggiore di file, specialmente se esistono in una gerarchia di cartelle nidificata su disco, è possibile utilizzare i seguenti approcci:
+Per caricare un numero maggiore di file, in particolare se esistono in una gerarchia di cartelle nidificata su disco, è possibile utilizzare i seguenti approcci:
 
 * Utilizzate uno script o uno strumento di caricamento personalizzato che sfrutta le API [di caricamento delle](developer-reference-material-apis.md#asset-upload-technical)risorse. Questo strumento personalizzato può aggiungere ulteriore gestione delle risorse (ad esempio, tradurre i metadati o rinominare i file), se necessario.
 * Utilizzate l&#39;app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) Experience Manager per caricare gerarchie di cartelle nidificate.
@@ -154,7 +154,7 @@ Sono disponibili i seguenti profili:
 
 Inoltre, se nell’ambiente in uso è attivato l’elemento multimediale dinamico:
 
-* [I profili](dynamic-media/image-profiles.md) immagine consentono di applicare alle risorse caricate specifiche configurazioni di ritaglio (ritaglio **** avanzato e ritaglio pixel) e nitidezza
+* [I profili immagine](dynamic-media/image-profiles.md) ti consentono di applicare alle risorse caricate specifiche configurazioni di nitidezza e di ritaglio (**[!UICONTROL ritaglio avanzato]** e ritaglio pixel)
 * [I profili](dynamic-media/video-profiles.md) video consentono di applicare specifici profili di codifica video (risoluzione, formato, parametri)
 
 > [!NOTE]
