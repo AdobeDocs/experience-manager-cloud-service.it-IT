@@ -3,12 +3,12 @@ title: 'API Assets per la gestione delle risorse digitali in Adobe Experience Ma
 description: Le API Assets consentono operazioni di base di creazione-lettura-aggiornamento-eliminazione (CRUD) per gestire le risorse, inclusi file binari, metadati, rappresentazioni, commenti e frammenti di contenuto.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
 
 ---
 
 
-# Risorse come API del servizio Cloud {#assets-cloud-service-apis}
+# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -26,7 +26,7 @@ Experience Manager come servizio cloud offre un nuovo metodo di caricamento dell
 
 L&#39;algoritmo di alto livello per caricare un binario è:
 
-1. Invia una richiesta HTTP per informare AEM dell’intenzione di caricare un nuovo file binario.
+1. Inviate una richiesta HTTP per informare AEM dell’intenzione di caricare un nuovo file binario.
 1. POST il contenuto del binario a uno o più URI forniti dalla richiesta di avvio.
 1. Inviate una richiesta HTTP per informare il server che il contenuto del file binario è stato caricato correttamente.
 
@@ -55,7 +55,7 @@ Il tipo di contenuto del corpo della richiesta deve essere costituito dai dati d
 * `(string) fileName`: Obbligatorio. Nome della risorsa così come apparirà nell’istanza.
 * `(number) fileSize`: Obbligatorio. Lunghezza totale, in byte, del binario da caricare.
 
-Per avviare il caricamento di più file binari è possibile utilizzare una singola richiesta, purché ciascun file binario contenga i campi richiesti.
+Per avviare il caricamento di più file binari è possibile utilizzare una singola richiesta, purché ciascuno di essi contenga i campi richiesti.
 
 In caso di esito positivo, la richiesta risponderà con un codice di stato 201 e un corpo contenente dati JSON nel seguente formato:
 
@@ -92,7 +92,7 @@ L’output di avvio di un caricamento includerà uno o più valori URI di carica
 
 Un modo potenziale per ottenere questo risultato è calcolare la dimensione della parte in base al numero di URI di caricamento forniti dall&#39;API. Ad esempio, se la dimensione totale del binario è 20.000 byte e il numero di URI di caricamento è 2:
 
-* Calcola la dimensione della parte dividendo la dimensione totale per numero di URI: 20.000 / 2 = 10.000
+* Calcola la dimensione della parte dividendo la dimensione totale per il numero di URI: 20.000 / 2 = 10.000
 * Intervallo di byte POST 0-9,999 del binario al primo URI nell&#39;elenco degli URI di caricamento
 * Intervallo di byte POST 10,000-19,999 del binario al secondo URI nell’elenco degli URI di caricamento
 
@@ -108,7 +108,7 @@ Una volta caricate tutte le parti di un binario, il passo finale consiste nell�
 * `(bool) createVersion`: Facoltativo. Se true e esiste già una risorsa con il nome specificato, l&#39;istanza crea una nuova versione della risorsa.
 * `(string) versionLabel`: Facoltativo. Se viene creata una nuova versione, l&#39;etichetta che verrà associata alla versione.
 * `(string) versionComment`: Facoltativo. Se viene creata una nuova versione, i commenti che verranno associati alla versione.
-* `(bool) replace`:Facoltativo: Se true e una risorsa con il nome specificato esiste già, l&#39;istanza eliminerà la risorsa e la ricreerà.
+* `(bool) replace`: Facoltativo: Se true e una risorsa con il nome specificato esiste già, l&#39;istanza eliminerà la risorsa e la ricreerà.
 
 >!![NOTE]
 >
@@ -129,7 +129,7 @@ Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e 
 
 ### API di caricamento risorse obsolete {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 Per Experience Manager come servizio Cloud sono supportate solo le nuove API di caricamento. Le API di Experience Manager 6.5 sono obsolete.
