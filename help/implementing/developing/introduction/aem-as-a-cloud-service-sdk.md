@@ -1,13 +1,13 @@
 ---
-title: AEM come SDK di servizio cloud
+title: SDK di AEM as a Cloud Service
 description: 'Da completare '
 translation-type: tm+mt
-source-git-commit: a7dc007230632bf8343004794b2bc4c5baaf4e05
+source-git-commit: 2142bce6296e671fd1039dec8b0686c609611d98
 
 ---
 
 
-# AEM come SDK di servizio cloud {#aem-as-a-cloud-service-sdk}
+# The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
 L’SDK AEM come servizio cloud comprende i seguenti artefatti:
 
@@ -24,7 +24,7 @@ Inoltre, alcuni clienti che erano stati precedentemente distribuiti con AEM 6.5 
 ## Accesso ad AEM come SDK di servizio cloud {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * Puoi fare clic sull’icona **Informazioni su Adobe Experience Manager** di AEM Admin Console per scoprire la versione di AEM in esecuzione in produzione.
-* Gli strumenti di avvio rapido e Dispatcher possono essere scaricati come file ZIP dal portale [di distribuzione](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)software. L&#39;accesso agli elenchi dell&#39;SDK è limitato a quelli con AEM Managed Services o AEM come ambienti di servizio cloud.
+* Gli strumenti di avvio rapido e Dispatcher possono essere scaricati come file ZIP dal portale [di distribuzione](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)software. L&#39;accesso agli elenchi dell&#39;SDK è limitato a quelli con AEM Managed Services o AEM come ambienti di servizio cloud.
 * Java API Jar e Javadoc Jar possono essere scaricati tramite gli strumenti maven, sia dalla riga di comando che con l&#39;IDE preferito.
 * I promotori del progetto maven devono fare riferimento al seguente pacchetto API Jar. È inoltre necessario fare riferimento a questa dipendenza in qualsiasi sottomodulo.
 
@@ -72,7 +72,7 @@ Di seguito è riportata la procedura consigliata per l&#39;aggiornamento di un a
 1. Spostate la `crx-quickstart` cartella in un&#39;altra cartella per mantenerla sicura
 1. Prendete nota della nuova versione di AEM, nota in Cloud Manager (verrà utilizzata per identificare la nuova versione di QuickStart Jar da scaricare ulteriormente in seguito)
 1. Scaricate il JAR di avvio rapido la cui versione corrisponde alla versione di AEM di produzione dal portale di distribuzione del software
-1. Create una nuova cartella e inserite il nuovo QuickStart Jar
+1. Create una nuova cartella e inserite il nuovo QuickStart Jar all&#39;interno
 1. Avviate la nuova Avvio rapido con le modalità di esecuzione desiderate (rinominando il file o passando le modalità di esecuzione tramite `-r`).
    * Accertatevi che nella cartella non rimangano altri collegamenti di avvio rapido.
 1. Creare l’applicazione AEM
@@ -86,7 +86,7 @@ Se è presente del contenuto da installare con ciascuna nuova versione di avvio 
 
 Nel caso in cui si dipenda da CryptoSupport ([sia configurando le credenziali di Cloudservices che il servizio di posta SMTP in AEM o utilizzando l&#39;API CryptoSupport nell&#39;applicazione](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), le proprietà crittografate saranno crittografate da una chiave generata automaticamente al primo avvio di un ambiente AEM. Mentre la configurazione del cloud si occupa di riutilizzare automaticamente la CryptoKey specifica per l&#39;ambiente, è necessario inserire la chiave di crittografia nell&#39;ambiente di sviluppo locale.
 
-Per impostazione predefinita, AEM è configurato per memorizzare i dati chiave nella cartella di dati di una cartella, ma per semplificare il riutilizzo nello sviluppo, il processo AEM può essere inizializzato al primo avvio con &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. In questo modo i dati di crittografia verranno generati in &quot;`/etc/key`&quot;.
+Per impostazione predefinita, AEM è configurato per memorizzare i dati chiave nella cartella di dati di una cartella, ma per semplificare il riutilizzo in fase di sviluppo, il processo AEM può essere inizializzato al primo avvio con &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. In questo modo i dati di crittografia verranno generati in &quot;`/etc/key`&quot;.
 
 Per poter riutilizzare i pacchetti di contenuto contenenti i valori crittografati, è necessario eseguire la procedura seguente:
 
