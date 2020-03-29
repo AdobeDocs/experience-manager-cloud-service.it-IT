@@ -3,20 +3,20 @@ title: Condivisione di risorse, cartelle e raccolte come collegamento
 description: Questo articolo descrive come condividere risorse, cartelle e raccolte in Experience Manager Assets come collegamento ipertestuale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Condivisione e distribuzione delle risorse gestite in Experience Manager {#share-assets-from-aem}
 
-Risorse Adobe Experience Manager (AEM) consente di condividere risorse, cartelle e raccolte con membri dell’organizzazione ed entità esterne, inclusi partner e fornitori. Per condividere le risorse da Experience Manager Assets come servizio Cloud, puoi usare i seguenti metodi:
+Risorse Adobe Experience Manager (AEM) consente di condividere risorse, cartelle e raccolte con membri dell’organizzazione ed entità esterne, inclusi partner e fornitori. Utilizzate i seguenti metodi per condividere le risorse da Experience Manager Assets come servizio Cloud:
 
-* Condividi come collegamento
-* Scaricare le risorse
-* Condivisione tramite l&#39;app desktop AEM
-* Condividi tramite Adobe Asset Link
-* (Funzionalità in arrivo) Condivisione tramite Brand Portal
+* Condividi come collegamento.
+* Scaricate le risorse e condividetele separatamente.
+* Condividi tramite l&#39;app desktop AEM.
+* Condividi tramite Adobe Asset Link.
+* (Prossima funzionalità) Condividete tramite Brand Portal.
 
 ## Condividere le risorse come collegamento {#sharelink}
 
@@ -110,11 +110,13 @@ Gli utenti possono scaricare alcune risorse e condividerle al di fuori di Experi
 
 Gli addetti al marketing e gli utenti della linea di business possono condividere facilmente le risorse approvate con i loro creativi professionisti che utilizzano,
 
-* **App** desktop AEM: L&#39;app funziona su Windows e Mac. Consultate Panoramica delle app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). Per sapere in che modo qualsiasi utente desktop autorizzato può accedere facilmente alle risorse condivise, consultate [sfogliare, cercare e visualizzare in anteprima le risorse](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare nuove risorse e condividerle con colleghi utenti AEM, ad esempio caricando nuove immagini. Consultate [Caricare le risorse tramite l’app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)desktop.
+* **App** desktop AEM: L&#39;app funziona su Windows e Mac. Consultate Panoramica delle app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). Per sapere in che modo qualsiasi utente desktop autorizzato può accedere facilmente alle risorse condivise, consultate [sfogliare, cercare e visualizzare in anteprima le risorse](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle con colleghi utenti di AEM, ad esempio caricando nuove immagini. Consultate [Caricare le risorse tramite l’app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)desktop.
 
 * **Collegamento** risorse Adobe: I creativi professionisti possono cercare e utilizzare le risorse direttamente da Adobe InDesign, Adobe Illustrator e Adobe Photoshop.
 
 ## Configurare la condivisione delle risorse {#configure-sharing}
+
+Le diverse opzioni per condividere le risorse richiedono una configurazione specifica e dispongono di prerequisiti specifici.
 
 ### Configurare la condivisione dei collegamenti delle risorse {#asset-link-sharing}
 
@@ -162,7 +164,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Abilitare le azioni desktop da utilizzare con l&#39;app desktop {#desktop-actions}
 
-Dall’interfaccia utente di Risorse in un browser, puoi esplorare le posizioni delle risorse o estrarne e aprire la risorsa per la modifica nell’applicazione desktop. Queste opzioni sono denominate Azioni desktop e, se non sono abilitate, consultate [Attivare le azioni desktop nell’interfaccia](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)Web di AEM.
+Dall’interfaccia utente di Risorse in un browser, puoi esplorare le posizioni delle risorse o estrarne e aprire la risorsa per la modifica nell’applicazione desktop. Queste opzioni sono denominate azioni desktop e per attivarle, consultate [Attivare le azioni desktop nell’interfaccia](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)Web di AEM.
 
 ![Abilitare le azioni desktop a essere utilizzate come scelte rapide quando si lavora con l&#39;app desktop](assets/enable_desktop_actions.png)
 
