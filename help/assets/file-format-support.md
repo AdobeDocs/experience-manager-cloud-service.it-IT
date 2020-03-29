@@ -3,14 +3,14 @@ title: Formati di file e tipi MIME supportati da Experience Manager Assets come 
 description: Formati di file e tipi MIME supportati da Experience Manager Assets come servizio Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
-# Formati di file supportati per le risorse {#supported-file-formats}
+# Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager come servizio Cloud supporta funzionalità di gestione dei contenuti di base — archiviazione, gestione dei metadati online, controllo delle versioni, caricamento e scaricamento e così via — per qualsiasi file binario, indipendentemente dal suo formato. Risorse Adobe Experience Manager supporta un&#39;ampia gamma di formati di file e ogni funzione di prodotto supporta vari formati.
+Adobe Experience Manager come servizio Cloud supporta funzionalità di gestione dei contenuti di base — archiviazione, gestione dei metadati online, controllo delle versioni, caricamento, scaricamento e così via — per qualsiasi file binario, indipendentemente dal suo formato. Risorse Adobe Experience Manager supporta un&#39;ampia gamma di formati di file e ogni funzione di prodotto supporta vari formati.
 
 Inoltre, Experience Manager Assets offre un ampio supporto per la generazione di anteprime e rappresentazioni e per l’estrazione di metadati e testo per l’indicizzazione full-text. Questo supporto esteso viene fornito utilizzando i microservizi [delle](asset-microservices-configure-and-use.md)risorse.
 
@@ -19,7 +19,7 @@ La legenda seguente descrive il livello di supporto.
 | Livello di supporto | Descrizione |
 | ------------------------------------------------------------ | --------------------------- |
 | ✓ | Supportato |
-| * | Vedere le osservazioni sotto la tabella |
+| * | Vedere le osservazioni riportate di seguito. |
 | - | Non applicabile |
 
 ## Conversione delle risorse tramite i microservizi delle risorse {#asset-microservices-supported-formats}
