@@ -2,14 +2,14 @@
 title: Aggiungere le risorse digitali ad Adobe Experience Manager
 description: Aggiungere le risorse digitali ad Adobe Experience Manager come servizio Cloud
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Aggiunta di risorse digitali ad Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Il caricamento di file digitali in Adobe Experience Manager arricchisce il contenuto binario del file con metadati avanzati, smart tag, rappresentazioni e altri servizi di gestione delle risorse digitali (DAM). Puoi caricare vari tipi di file (comprese immagini, file PDF, file non elaborati e così via) dalla cartella locale o da un’unità di rete in Experience Manager Assets.
+Adobe Experience Manager arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, smart tag, rappresentazioni e altri servizi di gestione delle risorse digitali (DAM). Potete caricare vari tipi di file, come immagini, documenti e file immagine non elaborati, dalla cartella locale o da un’unità di rete a Experience Manager Assets.
 
 Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all’archivio di Experience Manager, inclusi client desktop, come Adobe Asset Link o l’app desktop Experience Manager, script di caricamento e caricamento che i clienti potrebbero creare e integrazioni di assimilazione automatizzate aggiunte come estensioni AEM.
 
