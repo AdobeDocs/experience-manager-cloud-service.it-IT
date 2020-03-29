@@ -3,7 +3,7 @@ title: 'API Assets per la gestione delle risorse digitali in Adobe Experience Ma
 description: Le API Assets consentono operazioni di base di creazione-lettura-aggiornamento-eliminazione (CRUD) per gestire le risorse, inclusi file binari, metadati, rappresentazioni, commenti e frammenti di contenuto.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -55,9 +55,7 @@ Il tipo di contenuto del corpo della richiesta deve essere costituito dai dati d
 * `(string) fileName`: Obbligatorio. Nome della risorsa così come apparirà nell’istanza.
 * `(number) fileSize`: Obbligatorio. Lunghezza totale, in byte, del binario da caricare.
 
-Per avviare il caricamento di più file binari è possibile utilizzare una singola richiesta, purché ciascuno di essi contenga i campi richiesti.
-
-In caso di esito positivo, la richiesta risponderà con un codice di stato 201 e un corpo contenente dati JSON nel seguente formato:
+Per avviare il caricamento di più file binari è possibile utilizzare una singola richiesta, purché ciascun file binario contenga i campi richiesti. In caso di esito positivo, la richiesta risponde con un codice di `201` stato e un corpo contenente dati JSON nel seguente formato:
 
 ```
 {
@@ -74,17 +72,17 @@ In caso di esito positivo, la richiesta risponderà con un codice di stato 201 e
         }
     ]
 }
-````
+```
 
-* `(string) completeURI`: URI che deve essere invocato al termine del caricamento del binario. Può trattarsi di un URI assoluto o relativo e i client devono essere in grado di gestire entrambi. ad esempio, il valore potrebbe essere `"https://author.acme.com/content/dam.completeUpload.json"` o `"/content/dam.completeUpload.json"` (consultate Caricamento [](#complete-upload)completo).
-* `(string) folderPath`: Percorso completo della cartella in cui viene caricato il binario.
-* `(array) (files)`: Un elenco di elementi la cui lunghezza e ordine corrisponderanno alla lunghezza e all&#39;ordine dell&#39;elenco delle informazioni binarie fornite nella richiesta di avvio.
-* `(string) fileName`: Il nome del binario corrispondente, come specificato nella richiesta di avvio. Questo valore deve essere incluso nella richiesta completa.
-* `(string) mimeType`: Il tipo mime del binario corrispondente, come specificato nella richiesta di avvio in. Questo valore deve essere incluso nella richiesta completa.
-* `(string) uploadToken`: Token di caricamento per il binario corrispondente. Questo valore deve essere incluso nella richiesta completa.
-* `(array) uploadURIs`: Un elenco di stringhe i cui valori sono URI completi in cui caricare il contenuto del binario (consultate [Carica binario](#upload-binary)).
-* `(number) minPartSize`: Lunghezza minima, in byte, dei dati che possono essere forniti a uno qualsiasi degli URI di caricamento, se è presente più di un URI.
-* `(number) maxPartSize`: Lunghezza massima, in byte, dei dati che possono essere forniti a uno qualsiasi degli URI di caricamento, se è presente più di un URI.
+* `completeURI` (stringa): Richiamate questo URI al termine del caricamento del binario. L’URI può essere assoluto o relativo e i client devono essere in grado di gestire entrambi. Questo significa che il valore può essere `"https://author.acme.com/content/dam.completeUpload.json"` o `"/content/dam.completeUpload.json"` Vedere caricamento [](#complete-upload)completo.
+* `folderPath` (stringa): Percorso completo della cartella in cui viene caricato il binario.
+* `(files)` (array): Un elenco di elementi la cui lunghezza e ordine corrisponderanno alla lunghezza e all&#39;ordine dell&#39;elenco delle informazioni binarie fornite nella richiesta di avvio.
+* `fileName` (stringa): Il nome del binario corrispondente, come specificato nella richiesta di avvio. Questo valore deve essere incluso nella richiesta completa.
+* `mimeType` (stringa): Il tipo mime del binario corrispondente, come specificato nella richiesta di avvio in. Questo valore deve essere incluso nella richiesta completa.
+* `uploadToken` (stringa): Token di caricamento per il binario corrispondente. Questo valore deve essere incluso nella richiesta completa.
+* `uploadURIs` (array): Un elenco di stringhe i cui valori sono URI completi in cui caricare il contenuto del binario (consultate [Carica binario](#upload-binary)).
+* `minPartSize` (numero): Lunghezza minima, in byte, dei dati che possono essere forniti a uno qualsiasi degli URI di caricamento, se è presente più di un URI.
+* `maxPartSize` (numero): Lunghezza massima, in byte, dei dati che possono essere forniti a uno qualsiasi degli URI di caricamento, se è presente più di un URI.
 
 ### Carica binario {#upload-binary}
 
