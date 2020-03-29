@@ -3,7 +3,7 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -11,7 +11,6 @@ source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 # Introduzione all’utilizzo dei microservizi per le risorse {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -19,14 +18,13 @@ source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente delle risorse tramite i servizi cloud, gestiti da Adobe per la gestione ottimale di diversi tipi di risorse e opzioni di elaborazione.
+I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente delle risorse mediante i servizi cloud. Adobe gestisce i servizi per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione.
 
-L’elaborazione delle risorse viene eseguita in base alla configurazione in Profili **[!UICONTROL di]** elaborazione, che fornisce una configurazione predefinita, e consente all’amministratore di aggiungere una configurazione di elaborazione delle risorse più specifica. Per consentire l’estensibilità e la personalizzazione completa, l’elaborazione delle risorse consente una configurazione opzionale dei flussi di lavoro post-elaborazione, che vengono quindi creati e mantenuti dall’amministratore.
+L’elaborazione delle risorse dipende dalla configurazione in Profili **[!UICONTROL di]** elaborazione, che fornisce una configurazione predefinita, e consente all’amministratore di aggiungere una configurazione di elaborazione delle risorse più specifica. Gli amministratori possono creare e mantenere le configurazioni dei flussi di lavoro post-elaborazione, inclusa la personalizzazione facoltativa. La personalizzazione dei flussi di lavoro consente estensibilità e personalizzazione completa.
 
-Di seguito viene illustrato un flusso di alto livello per l’elaborazione delle risorse in Experience Manager come servizio Cloud.
+Di seguito è riportato un flusso di alto livello per l’elaborazione delle risorse.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -37,7 +35,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> Per i clienti che si aggiornano dalle versioni precedenti di Experience Manager, l’elaborazione delle risorse descritta in questa sezione sostituisce il modello di flusso di lavoro &quot;DAM Update Asset&quot; utilizzato per l’elaborazione dell’assimilazione delle risorse in precedenza. La maggior parte della generazione di rappresentazioni standard e dei passaggi relativi ai metadati vengono sostituiti dall’elaborazione dei microservizi di risorse e gli eventuali passaggi rimanenti possono essere sostituiti dalla configurazione del flusso di lavoro di post-elaborazione.
+> L’elaborazione delle risorse qui descritta sostituisce il modello di `DAM Update Asset` flusso di lavoro esistente nelle versioni precedenti di Experience Manager. La maggior parte della generazione di rappresentazioni standard e dei passaggi relativi ai metadati vengono sostituiti dall’elaborazione dei microservizi di risorse e gli eventuali passaggi rimanenti possono essere sostituiti dalla configurazione del flusso di lavoro di post-elaborazione.
 
 ## Introduzione all’elaborazione delle risorse {#get-started}
 
@@ -77,17 +75,18 @@ I microservizi delle risorse supportano un’ampia varietà di formati di file i
 
 Ogni configurazione di profilo di elaborazione include un elenco di rappresentazioni. Per ogni rappresentazione, potete specificare quanto segue:
 
-* nome rappresentazione
-* formato di rappresentazione (sono supportati JPEG, PNG o GIF)
-* larghezza e altezza della rappresentazione in pixel (se non specificata, si assume la dimensione in pixel dell’originale)
-* qualità di rappresentazione (per JPEG) in percentuale
-* I tipi MIME inclusi ed esclusi definiscono, a quali tipi di risorse si applica il profilo di elaborazione
+* Nome rappresentazione.
+* Formato di rappresentazione supportato, ad esempio JPEG, PNG o GIF.
+* Larghezza e altezza della rappresentazione in pixel. Se non viene specificato, viene usata la dimensione in pixel dell’immagine originale.
+* Qualità di rappresentazione JPEG in percentuale.
+* Tipi MIME inclusi ed esclusi per definire l&#39;applicabilità di un profilo.
 
 ![elaborazione-profili-aggiunta](assets/processing-profiles-adding.png)
 
-Quando viene salvato un nuovo profilo di elaborazione, questo viene aggiunto all&#39;elenco dei profili di elaborazione configurati. Questi profili di elaborazione possono quindi essere applicati alle cartelle nella gerarchia delle cartelle per renderli efficaci per i caricamenti delle risorse e le risorse effettuate in tale cartella.
+Quando create e salvate un nuovo profilo di elaborazione, questo viene aggiunto all&#39;elenco dei profili di elaborazione configurati. Potete applicare questi profili di elaborazione alle cartelle nella gerarchia delle cartelle per renderli efficaci per il caricamento delle risorse e l’elaborazione delle risorse.
 
-![processing-profile-list](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### Larghezza e altezza della rappresentazione {#rendition-width-height}
 
