@@ -2,7 +2,7 @@
 title: Distribuzione dei contenuti
 description: 'Distribuzione dei contenuti '
 translation-type: tm+mt
-source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
+source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
 
 ---
 
@@ -221,7 +221,7 @@ Il controllo delle versioni clientlib rigorose è abilitato per impostazione pre
 
 Per abilitare il controllo delle versioni di clientlib rigorose nell’SDK Quickstart locale, effettua le seguenti operazioni:
 
-1. Passa a Gestione configurazione OSGi <host>/system/console/configMgr
+1. Passa a Gestione configurazione OSGi `<host>/system/console/configMgr`
 1. Trovate il file di configurazione OSGi per Adobe Granite HTML Library Manager:
    * Selezionare la casella di controllo per abilitare il controllo delle versioni rigorose
    * Nel campo con l&#39;etichetta Chiave cache lato client a lungo termine, immettere il valore di /.*;hash
