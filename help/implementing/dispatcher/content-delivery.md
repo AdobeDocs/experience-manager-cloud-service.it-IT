@@ -2,7 +2,7 @@
 title: Distribuzione dei contenuti
 description: 'Distribuzione dei contenuti '
 translation-type: tm+mt
-source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
+source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
 
 ---
 
@@ -38,7 +38,7 @@ AEM as Cloud Service viene fornito con un CDN integrato. Il suo scopo principale
 In totale, AEM offre due opzioni:
 
 1. CDN gestito AEM - CDN out-of-the-box di AEM. Si tratta di un’opzione strettamente integrata e non richiede ingenti investimenti da parte dei clienti per supportare l’integrazione CDN con AEM.
-1. La CDN gestita dal cliente punta alla CDN gestita da AEM - il cliente punta il proprio CDN alla CDN out-of-the-box di AEM. Il cliente dovrà comunque gestire il proprio CDN, ma gli investimenti nell’integrazione con AEM sono modesti.
+1. La CDN gestita dal cliente punta alla CDN gestita da AEM - il cliente punta la propria CDN alla CDN out-of-the-box di AEM. Il cliente dovrà comunque gestire il proprio CDN, ma gli investimenti nell’integrazione con AEM sono modesti.
 
 La prima opzione deve soddisfare la maggior parte dei requisiti di prestazioni e sicurezza del cliente. Inoltre, richiede il minimo sforzo da parte dei clienti.
 
@@ -187,7 +187,7 @@ Utilizzare invece l&#39;agente di flush di replica. Questa operazione può esser
 
 Il diagramma presentato di seguito illustra questo punto.
 
-![](assets/cdnc.png "CDNCDN")
+![](assets/cdnd.png "CDNCDN")
 
 In caso di problemi di cancellazione della cache del dispatcher, contattare il supporto [](https://helpx.adobe.com/support.ec.html) clienti che, se necessario, può cancellare la cache del dispatcher.
 
