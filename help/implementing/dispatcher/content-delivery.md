@@ -2,7 +2,7 @@
 title: Distribuzione dei contenuti
 description: 'Distribuzione dei contenuti '
 translation-type: tm+mt
-source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
+source-git-commit: b1666e7715e8f5715be7a88001869c1042c6c994
 
 ---
 
@@ -38,7 +38,7 @@ AEM as Cloud Service viene fornito con un CDN integrato. Il suo scopo principale
 In totale, AEM offre due opzioni:
 
 1. CDN gestito AEM - CDN out-of-the-box di AEM. Si tratta di un’opzione strettamente integrata e non richiede ingenti investimenti da parte dei clienti per supportare l’integrazione CDN con AEM.
-1. La CDN gestita dal cliente punta alla CDN gestita da AEM - il cliente punta la propria CDN alla CDN out-of-the-box di AEM. Il cliente dovrà comunque gestire il proprio CDN, ma gli investimenti nell’integrazione con AEM sono modesti.
+1. La CDN gestita dal cliente punta alla CDN gestita da AEM - il cliente punta il proprio CDN alla CDN out-of-the-box di AEM. Il cliente dovrà comunque gestire il proprio CDN, ma gli investimenti nell’integrazione con AEM sono modesti.
 
 La prima opzione deve soddisfare la maggior parte dei requisiti di prestazioni e sicurezza del cliente. Inoltre, richiede il minimo sforzo da parte dei clienti.
 
@@ -101,14 +101,6 @@ La memorizzazione nella cache del CDN può essere configurata utilizzando le reg
 
 * per impostazione predefinita, è memorizzata nella cache dal browser per cinque minuti, in base all’intestazione del controllo cache emesso dal livello apache. Anche la CDN rispetta questo valore.
 * può essere ignorato per tutto il contenuto HTML/Testo definendo la `EXPIRATION_TIME` variabile in `global.vars` AEM come strumenti Dispatcher SDK di Servizi cloud.
-
-È necessario assicurarsi che un file con `src/conf.dispatcher.d/cache` la regola seguente:
-
-```
-/0000
-{ /glob "*" /type "allow" }
-```
-
 * possono essere sostituiti a un livello di granulosità più sottile dalle seguenti direttive apache mod_header:
 
 ```
