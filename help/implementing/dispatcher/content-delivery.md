@@ -2,7 +2,7 @@
 title: Distribuzione dei contenuti
 description: 'Distribuzione dei contenuti '
 translation-type: tm+mt
-source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
+source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ---
 
@@ -27,20 +27,20 @@ Il flusso di dati è il seguente:
 
 Il tipo di contenuto HTML/testo viene impostato per scadere dopo 300 (5 minuti) al livello dispatcher, una soglia che viene rispettata sia dalla cache dispatcher che dalla CDN. Durante le ridistribuzioni del servizio di pubblicazione, la cache del dispatcher viene svuotata e successivamente riscaldata prima che i nuovi nodi di pubblicazione accettino il traffico.
 
-Le sezioni seguenti forniscono maggiori dettagli sulla distribuzione dei contenuti, inclusa la configurazione CDN e il caching del dispatcher.
+Le sezioni seguenti forniscono maggiori dettagli sulla distribuzione dei contenuti, inclusa la configurazione CDN e il caching.
 
 Le informazioni sulla replica dal servizio di creazione al servizio di pubblicazione sono disponibili [qui](/help/operations/replication.md).
 
 ## CDN {#cdn}
 
-AEM as Cloud Service viene fornito con un CDN predefinito. Il suo scopo principale è ridurre la latenza distribuendo contenuto memorizzabile nella cache dai nodi CDN ai margini, vicino al browser. È completamente gestito e configurato per prestazioni ottimali delle applicazioni AEM.
+AEM as Cloud Service viene fornito con un CDN integrato. Il suo scopo principale è ridurre la latenza distribuendo contenuto memorizzabile nella cache dai nodi CDN ai margini, vicino al browser. È completamente gestito e configurato per prestazioni ottimali delle applicazioni AEM.
 
 In totale, AEM offre due opzioni:
 
 1. CDN gestito AEM - CDN out-of-the-box di AEM. Si tratta di un’opzione strettamente integrata e non richiede ingenti investimenti da parte dei clienti per supportare l’integrazione CDN con AEM.
 1. La CDN gestita dal cliente punta alla CDN gestita da AEM - il cliente punta il proprio CDN alla CDN out-of-the-box di AEM. Il cliente dovrà comunque gestire il proprio CDN, ma gli investimenti nell’integrazione con AEM sono modesti.
 
-La prima opzione deve soddisfare la maggior parte dei requisiti di prestazioni e sicurezza del cliente. Inoltre, richiede la minore quantità di investimenti da parte dei clienti e manutenzione continua.
+La prima opzione deve soddisfare la maggior parte dei requisiti di prestazioni e sicurezza del cliente. Inoltre, richiede il minimo sforzo da parte dei clienti.
 
 La seconda opzione è consentita caso per caso. La decisione si basa sul soddisfacimento di alcuni prerequisiti, tra cui, a titolo esemplificativo, l’integrazione con il fornitore CDN di un cliente precedente, difficilmente abbandonabile.
 
@@ -53,7 +53,7 @@ Presentato di seguito è una matrice decisionale per confrontare le due opzioni.
 | **Competenze CDN** | Nessuno | Richiede almeno una risorsa di progettazione part-time con conoscenze CDN dettagliate in grado di configurare il CDN del cliente. |
 | **Sicurezza** | Gestito da Adobe. | Gestito da Adobe (e facoltativamente dal cliente con una propria CDN). |
 | **Spettacolo** | Ottimizzato da Adobe. | Potrà beneficiare di alcune funzionalità CDN di AEM, ma potrebbe verificarsi un piccolo hit di prestazioni a causa del hop aggiuntivo. **Nota**: Hops da CDN cliente a Flast CDN probabilmente efficiente). |
-| **Caching** | Supporta le intestazioni della cache applicate a livello di dispatcher. | Supporta le intestazioni della cache applicate a livello di dispatcher. |
+| **Caching** | Supporta le intestazioni della cache applicate al dispatcher. | Supporta le intestazioni della cache applicate al dispatcher. |
 | **Funzionalità di compressione immagini e video** | Può essere utilizzato con Adobe Dynamic Media. | Può essere utilizzato con Adobe Dynamic Media o con una soluzione CDN gestita dai clienti. |
 
 ### CDN gestito AEM {#aem-managed-cdn}
@@ -62,6 +62,9 @@ La preparazione per la distribuzione dei contenuti tramite la rete CDN di Adobe 
 
 1. Fornirai ad Adobe il certificato SSL firmato e la chiave segreta condividendo un collegamento a un modulo protetto contenente tali informazioni. Coordinare con l&#39;assistenza clienti su questa attività.
    **Nota:** Aem come servizio Cloud non supporta i certificati convalidati (DV) del dominio.
+1. È necessario informare l&#39;assistenza clienti:
+   * quale dominio personalizzato deve essere associato a un determinato ambiente, come definito dall&#39;ID del programma e dall&#39;ID dell&#39;ambiente.
+   * se è necessaria una whitelist IP per limitare il traffico a un determinato ambiente.
 1. Il supporto clienti quindi coordinerà con voi i tempi di un record DNS CNAME, indicando il loro FQDN `adobe-aem.map.fastly.net`.
 1. Al momento della scadenza dei certificati SSL riceverete una notifica per consentirvi di inviare nuovamente i nuovi certificati SSL.
 
@@ -90,9 +93,9 @@ Istruzioni di configurazione:
 
 Prima di accettare il traffico live, è necessario verificare con l&#39;assistenza clienti Adobe che il ciclo di traffico end-to-end funziona correttamente.
 
-### Caching {#caching}
+## Caching {#caching}
 
-Il processo di caching segue le regole presentate di seguito.
+La memorizzazione nella cache del CDN può essere configurata utilizzando le regole del dispatcher. Il dispatcher rispetta anche le intestazioni di scadenza della cache risultanti se `enableTTL` è abilitato nella configurazione del dispatcher, il che implica che aggiornerà contenuto specifico anche al di fuori del contenuto che viene ripubblicato.
 
 ### HTML/Testo {#html-text}
 
@@ -106,15 +109,15 @@ Il processo di caching segue le regole presentate di seguito.
 { /glob "*" /type "allow" }
 ```
 
-* possono essere sostituiti a un livello di granulosità più sottile dalle direttive apache mod_header. Esempio:
+* possono essere sostituiti a un livello di granulosità più sottile dalle seguenti direttive apache mod_header:
 
 ```
 <LocationMatch "\.(html)$">
-        Header set Cache-Control "max-age=200 s-maxage=200"
+        Header set Cache-Control "max-age=200"
 </LocationMatch>
 ```
 
-È necessario assicurarsi che un file con `src/conf.dispatcher.d/cache` la regola seguente:
+È necessario assicurarsi che un file con `src/conf.dispatcher.d/cache` la regola seguente (che si trova nella configurazione predefinita):
 
 ```
 /0000
@@ -128,32 +131,41 @@ Il processo di caching segue le regole presentate di seguito.
 * utilizzando il framework di libreria lato client di AEM, il codice JavaScript e CSS viene generato in modo tale che i browser possano memorizzarlo nella cache in modo indefinito, dal momento che qualsiasi modifica si verifica come nuovi file con un percorso univoco.  In altre parole, il codice HTML che fa riferimento alle librerie client verrà prodotto come necessario, in modo che i clienti possano provare nuovi contenuti mentre vengono pubblicati. Il controllo della cache è impostato su &quot;immutabile&quot; o su 30 giorni per i browser meno recenti che non rispettano il valore &quot;immutabile&quot;.
 * per ulteriori dettagli, consultate la sezione [Librerie lato client e coerenza](#content-consistency) delle versioni.
 
-### Immagini {#images}
+### Immagini e contenuti sufficientemente grandi memorizzati in archivio BLOB {#images}
 
-* non memorizzato nella cache
-
-### Altri tipi di contenuto {#other-content}
-
-* nessuna cache predefinita
-* può essere scavalcato da un dolore `mod_headers`. Esempio:
+* per impostazione predefinita, non memorizzato nella cache
+* può essere fissato a un livello di grana più fine dalle seguenti `mod_headers` direttive apache:
 
 ```
-<LocationMatch "\.(css|js)$">
-    Header set Cache-Control "max-age=500 s-maxage=500"
+<LocationMatch "^.*.jpeg$">
+    Header set Cache-Control "max-age=222"
 </LocationMatch>
 ```
 
-*Anche altri metodi di impostazione delle intestazioni della cache possono funzionare
+È necessario assicurarsi che un file in src/conf.dispatcher.d/cache abbia la seguente regola (che si trova nella configurazione predefinita):
 
-Prima di accettare il traffico live, i clienti devono verificare con il supporto clienti Adobe che il ciclo di traffico end-to-end funziona correttamente.
+```
+/0000
+{ /glob "*" /type "allow" }
+```
+
+Accertatevi che le risorse da mantenere private anziché nella cache non facciano parte dei filtri di direttiva LocationMatch.
+
+* Altri metodi, incluso il progetto [AEM ACS](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl, non sostituiranno correttamente i valori.
+
+### Altri tipi di file di contenuto nell&#39;archivio nodi {#other-content}
+
+* nessuna cache predefinita
+* impossibile impostare il valore predefinito con la `EXPIRATION_TIME` variabile utilizzata per i tipi di file html/text
+* la scadenza della cache può essere impostata con la stessa strategia LocationMatch descritta nella sezione html/text specificando il regex appropriato
 
 ## Dispatcher {#disp}
 
 Il traffico passa attraverso un server Web Apache, che supporta moduli incluso il dispatcher. Il dispatcher viene utilizzato principalmente come cache per limitare l’elaborazione sui nodi di pubblicazione al fine di migliorare le prestazioni.
 
-Il contenuto di tipo HTML/testo è impostato con intestazioni della cache corrispondenti a una scadenza di 300 (5 minuti).
+Come descritto nella sezione caching della CDN, le regole possono essere applicate alla configurazione del dispatcher per modificare eventuali impostazioni di scadenza predefinite della cache.
 
-Il resto di questa sezione descrive considerazioni relative all&#39;annullamento della validità della cache del dispatcher.
+Il resto di questa sezione descrive considerazioni relative all&#39;annullamento della validità della cache del dispatcher. Per la maggior parte dei clienti, non dovrebbe essere necessario annullare la validità della cache del dispatcher, affidandosi invece all’aggiornamento della cache del dispatcher al momento della ripubblicazione del contenuto e al rispetto della CDN delle intestazioni di scadenza della cache.
 
 ### Annullamento della validità della cache del dispatcher durante l&#39;attivazione/disattivazione {#cache-activation-deactivation}
 
