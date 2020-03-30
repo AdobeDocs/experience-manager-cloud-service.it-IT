@@ -2,7 +2,7 @@
 title: Ricerca e indicizzazione dei contenuti
 description: 'Ricerca e indicizzazione dei contenuti '
 translation-type: tm+mt
-source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
+source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
 
 ---
 
@@ -31,7 +31,7 @@ Di seguito è riportato un elenco delle modifiche principali rispetto a AEM 6.5 
 
 1. Su AEM come servizio cloud, con l’introduzione del modello [di distribuzione](#index-management-using-blue-green-deployments) Blue-Green saranno disponibili due serie di indici: un set per la versione precedente (blu) e uno per la nuova versione (verde).
 
-La versione dell&#39;indice utilizzato è configurata utilizzando i flag nelle definizioni dell&#39;indice tramite il `useIfExist` flag. Un indice può essere utilizzato in una sola versione dell’applicazione (ad esempio solo blu o solo verde) o in entrambe le versioni. La documentazione dettagliata è disponibile in Gestione [indice utilizzando le implementazioni](#index-management-using-blue-green-deployments)Blue-Green.
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. I clienti possono vedere se il processo di indicizzazione è completo nella pagina di build di Cloud Manager e riceveranno una notifica quando la nuova versione sarà pronta per il traffico.
 
@@ -142,7 +142,7 @@ Quando Adobe modifica un indice out-of-the-box come &quot;damAssetLucene&quot; o
 | /oak:index/cqPageLucene | Sì | Sì | No |
 | /oak:index/cqPageLucene-2 | Sì | No | Sì |
 
-### Limiti   {#limitations}
+### Limitazioni   {#limitations}
 
 Al momento la gestione degli indici è supportata solo per gli indici di tipo `lucene`.
 
