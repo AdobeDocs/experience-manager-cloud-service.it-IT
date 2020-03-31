@@ -1,5 +1,5 @@
 ---
-source-git-commit: 06351c5fa81d9841f47c086cdbc66c0c1d1cb5cc
+source-git-commit: 3162a65d19d5ccba5671c40f5184ab4882f77ecb
 translation-type: tm+mt
 
 ---
@@ -11,7 +11,7 @@ Nell&#39;interesse di promuovere un ambiente aperto e accogliente, noi, in quali
 
 ## I nostri standard
 
-Esempi di comportamento che contribuiscono alla creazione di un ambiente positivo:
+Alcuni esempi di comportamento che contribuiscono alla creazione di un ambiente positivo sono:
 
 * Utilizzo di un linguaggio accogliente e inclusivo
 * Rispetto di diversi punti di vista ed esperienze
