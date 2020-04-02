@@ -2,7 +2,7 @@
 title: Gestione degli ambienti - Servizio Cloud
 description: Gestione degli ambienti - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
 
 ---
 
@@ -23,7 +23,7 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
    >[!NOTE]
    >Un ambiente di sviluppo creato automaticamente in un programma sandbox sarà configurato per includere le soluzioni Siti e Risorse.
 
-   La tabella seguente riepiloga i tipi di ambiente e i relativi attributi:
+   Nella tabella seguente sono riepilogati i tipi di ambiente e i relativi attributi:
 
    | Nome | Livello autore | Pubblica livello | Utente può creare | L&#39;utente può eliminare | Pipeline che può essere associata all&#39;ambiente |
    |--- |--- |--- |--- |---|---|
@@ -32,22 +32,24 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
    | Sviluppo | Sì | Sì se Siti inclusi | Sì | Sì | pipeline non di produzione |
 
    >[!NOTE]
-   >
-La produzione e lo stage sono disponibili come due elementi e sono utilizzati a scopo di test e produzione.  L&#39;utente non sarà in grado di creare solo l&#39;ambiente Stage o solo quello Production.
+   >La produzione e lo stage sono disponibili come due elementi e sono utilizzati a scopo di test e produzione.  L&#39;utente non sarà in grado di creare solo l&#39;ambiente Stage o solo l&#39;ambiente Production.
 
 ## Aggiunta di un ambiente {#adding-environments}
 
 
-1. L&#39;utente fa clic sul pulsante **Aggiungi ambiente** per aggiungere un ambiente.
+1. Per aggiungere un ambiente, l’utente fa clic sul pulsante **Aggiungi ambiente**.
+
+   >[!NOTE]
+   >È possibile accedere a questo pulsante anche dalla pagina Ambienti o dalla scheda Ambienti. L&#39;utente visualizzerà questa opzione solo se dispone dell&#39;autorizzazione necessaria. Per qualsiasi domanda, contattate il vostro rappresentante Adobe.
 
    ![](assets/add-environment.png)
 
-1. Viene visualizzata la finestra di dialogo **Aggiungi ambiente** . L&#39;utente deve inviare dettagli quali il tipo **di** ambiente, il nome **dell&#39;** ambiente e la descrizione **dell&#39;** ambiente (a seconda dell&#39;obiettivo dell&#39;utente nella creazione dell&#39;ambiente entro i limiti di ciò che è disponibile per il tenant specifico).
+1. Viene visualizzata la finestra di dialogo **Aggiungi ambiente**. L’utente deve inviare dettagli quali **tipo di ambiente**, **nome dell’ambiente** e **descrizione dell’ambiente** (a seconda dell’obiettivo dell’utente nella creazione dell’ambiente ed entro i limiti di ciò che è disponibile per il tenant specifico).
 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Durante la creazione di un ambiente, in Adobe I/O vengono create una o più *integrazioni* . Questi sono visibili agli utenti che hanno accesso alla console di I/O di Adobe e non devono essere eliminati. Questo viene negato nella descrizione nella console Adobe I/O.
+   >Durante la creazione di un ambiente, in Adobe I/O vengono create una o più *integrazioni* . Questi sono visibili agli utenti del cliente che hanno accesso alla console di I/O di Adobe e non devono essere eliminati. Questo viene negato nella descrizione nella console di I/O di Adobe.
 
    ![](assets/add-environment-image1.png)
 
@@ -66,7 +68,7 @@ Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del progra
 ![](assets/manage-environments2.png)
 )
 
-Quando questo stato viene visualizzato, l&#39;opzione **Aggiorna** sarà disponibile dal menu a discesa, sia nella scheda Ambienti che nel menu **Gestisci** , se fate clic su **Dettagli** dalla scheda **AMBIENTI** .
+Quando questo stato viene visualizzato, l’opzione **Aggiorna** sarà disponibile dal menu a discesa, sia nella scheda Ambienti che nel menu **Gestisci**, se fai clic su **Dettagli** dalla scheda **AMBIENTI**.
 
 ![](assets/add-environment4.png)
 
