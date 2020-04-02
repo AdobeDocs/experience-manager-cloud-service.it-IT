@@ -1,9 +1,9 @@
 ---
-source-git-commit: 3162a65d19d5ccba5671c40f5184ab4882f77ecb
+source-git-commit: b5380858e0887da017657c653b05529066d95fd8
 translation-type: tm+mt
 
 ---
-# Linee guida per il contributo alla documentazione di AEM
+# Linee guida per il contributo alla documentazione di Adobe Experience Manager
 
 ## Filosofia della documentazione di AEM
 
@@ -35,13 +35,13 @@ Le eccezioni a questa regola si applicano alle note sulla versione in cui posson
 
 Eventuali idee da approfondire con la documentazione di AEM sono gradite come contributi. Tuttavia, commenti, problemi e richieste pull sono destinati solo ai *contributi* . Non sono destinati a rispondere alle tue domande su come usare AEM, implementare il tuo progetto AEM o risolvere problemi tecnici.
 
-Eventuali domande sull’utilizzo di AEM o eventuali errori tecnici devono essere segnalate tramite il normale processo di assistenza tramite il portale [di supporto di](https://daycare.day.com/home.html) Experience Manager o discusse nella community [di](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)Experience Manager.
+Eventuali domande sull’utilizzo di AEM o eventuali errori tecnici devono essere segnalate tramite il normale processo di assistenza tramite il portale [di assistenza](https://helpx.adobe.com/contact/enterprise-support.ec.html) Experience Cloud Enterprise o discusse nella community [di](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)Experience Manager.
 
-***I contributi alla documentazione di AEM non sostituiscono il supporto di Adobe***. Pertanto, verranno rifiutati tutti i contributi che richiedono risposte a domande correlate al supporto.
+***I contributi alla documentazione di AEM non sostituiscono l’Assistenza*** clienti Adobe e tutti questi contributi che richiedono risposte a domande relative al supporto verranno rifiutati.
 
 ### I contributi devono fare riferimento in modo chiaro alle pagine della documentazione interessate.
 
-Se apri una segnalazione problema per suggerire miglioramenti alla documentazione, devi includere i collegamenti alle pagine interessate. Se apri una segnalazione problema utilizzando il collegamento **Modifica pagina** di una pagina della documentazione, il problema verrà creato automaticamente con un collegamento alla pagina in questione.
+Se si crea un problema per suggerire miglioramenti alla documentazione, è necessario includere collegamenti alle pagine interessate. Se apri una segnalazione problema utilizzando il collegamento **Modifica pagina** di una pagina della documentazione, il problema verrà creato automaticamente con un collegamento alla pagina in questione.
 
 Ciò non si applica alle richieste pull, in quanto le richieste pull per loro natura fanno riferimento alle pagine interessate.
 
