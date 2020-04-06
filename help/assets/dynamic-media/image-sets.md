@@ -2,7 +2,7 @@
 title: Set di immagini
 description: Scopri come lavorare con i set di immagini in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 8c7338110bb6d673bf80f274ff886539aead2847
+source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
@@ -78,9 +78,7 @@ In caso di problemi durante la creazione di set, consulta Immagini e set nella s
 
 ## Caricamento delle risorse nei set di immagini {#uploading-assets-in-image-sets}
 
-Per iniziare, caricate le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Accertatevi che la dimensione massima delle immagini sia di almeno 2000 pixel per garantire dettagli di zoom ottimali. Dynamic Media consente di eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, potete usare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
-
-I set di immagini supportano molti formati di file immagine, ma sono consigliate immagini senza perdita di dati TIFF, PNG ed EPS.
+Per iniziare, caricate le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel. I set di immagini supportano molti formati di file immagine, ma sono consigliate immagini senza perdita di dati TIFF, PNG ed EPS.
 
 Potete caricare le immagini per i set di immagini come fareste per [caricare qualsiasi altra risorsa in Risorse](/help/assets/manage-digital-assets.md#uploading-assets).
 
