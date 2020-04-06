@@ -3,7 +3,7 @@ title: Digital Rights Management in Adobe Experience Manager Assets
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -54,13 +54,11 @@ Per abilitare la console Assets affinché visualizzi le risorse composte di rife
 1. Scegliete **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Per impostazione predefinita, è selezionata l’opzione Pianificatore **[!UICONTROL basato su]** tempo, che pianifica un processo per verificare in un momento specifico se una risorsa ha risorse secondarie scadute. Al termine del processo, le risorse con risorse secondarie scadute e risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
 
 1. Per eseguire il processo periodicamente, cancella il campo **[!UICONTROL Time Based Scheduler Rule (Regola modulo di pianificazione basato sul tempo)]** e modifica il tempo in secondi nel campo **[!UICONTROL Periodic Scheduler (Modulo di pianificazione periodica)]**. L’espressione di esempio ‘0 0 0 &amp;ast; &amp;ast; ?’ attiva il processo alle ore 00.
-
-<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
+1. Selezionate **[!UICONTROL Invia e-mail]** per ricevere e-mail alla scadenza di una risorsa.
 
    >[!NOTE]
    >
-   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
--->
+   >Alla scadenza della risorsa, solo l’autore della risorsa (l’utente che carica una particolare risorsa in Risorse AEM) riceve un messaggio e-mail. Scopri come configurare la notifica e-mail per ulteriori dettagli sulla configurazione delle notifiche e-mail a livello globale di AEM.
 
 1. Nel campo Notifica **[!UICONTROL precedente in secondi]** , specificate l’ora in secondi prima della scadenza di una risorsa quando desiderate ricevere una notifica relativa alla scadenza. Se siete un amministratore o creatore di risorse, riceverete un messaggio prima della scadenza della risorsa per informarvi che la risorsa sta per scadere dopo l’ora specificata.
 
