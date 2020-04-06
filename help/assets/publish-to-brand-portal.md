@@ -10,12 +10,12 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: null
 translation-type: tm+mt
-source-git-commit: 7e0375b6ebdf0959dbe50ad3ae2cd0b77709b4c1
+source-git-commit: abc98974f5507c71e75cdd864a98281f7cdba7f3
 
 ---
 
 
-# Publish AEM Assets to Brand Portal {#publish-aem-assets-to-brand-portal}
+# Pubblicare risorse, cartelle e raccolte in Brand Portal {#publish-aem-assets-to-brand-portal}
 
 In qualità di amministratore di Risorse Adobe Experience Manager (AEM), puoi pubblicare risorse, cartelle e raccolte nell’istanza del Brand Portal di AEM Assets. Inoltre, potete pianificare il flusso di lavoro di pubblicazione di una risorsa o di una cartella in una data o in un&#39;ora successive. Dopo la pubblicazione, gli utenti di Brand Portal possono accedere e distribuire ulteriormente le risorse, le cartelle e le raccolte ad altri utenti.
 
