@@ -2,14 +2,14 @@
 title: Aggiungere le risorse digitali ad Adobe Experience Manager
 description: Aggiungere le risorse digitali ad Adobe Experience Manager come servizio Cloud
 translation-type: tm+mt
-source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
+source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 ---
 
 
 # Aggiunta di risorse digitali ad Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Adobe Experience Manager arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, smart tag, rappresentazioni e altri servizi di gestione delle risorse digitali (DAM). Potete caricare vari tipi di file, come immagini, documenti e file immagine non elaborati, dalla cartella locale o da un’unità di rete a Experience Manager Assets.
+Il caricamento di file digitali in Adobe Experience Manager arricchisce il contenuto binario del file con metadati avanzati, smart tag, rappresentazioni e altri servizi di gestione delle risorse digitali (DAM). Puoi caricare vari tipi di file (comprese immagini, file PDF, file non elaborati e così via) dalla cartella locale o da un’unità di rete in Experience Manager Assets.
 
 Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all’archivio di Experience Manager, inclusi client desktop, come Adobe Asset Link o l’app desktop Experience Manager, script di caricamento e caricamento che i clienti potrebbero creare e integrazioni di assimilazione automatizzate aggiunte come estensioni AEM.
 
@@ -64,7 +64,7 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli nell
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ Inoltre, l’interfaccia utente di Risorse mostra la risorsa più recente carica
 
 > [!NOTE]
 >
-> Per caricare gerarchie di cartelle nidificate in AEM, consultate Caricamento [in blocco di risorse](#bulk-upload).
+> Per caricare gerarchie di cartelle nidificate in AEM, consultate Caricamento [in blocco di risorse](#bulk-upload)
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -138,7 +138,7 @@ Per caricare un numero maggiore di file, in particolare se esistono in una gerar
 
 Oltre all&#39;interfaccia utente del browser Web, Experience Manager supporta altri client sul desktop. Offrono inoltre un’esperienza di caricamento senza dover passare al browser Web.
 
-* [Collegamento](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) risorse Adobe consente di accedere alle risorse da AEM nelle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Puoi caricare il documento aperto in AEM direttamente dall’interfaccia utente di Adobe Asset Link dall’interno di queste applicazioni desktop.
+* [Collegamento](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) risorse Adobe consente di accedere alle risorse da AEM nelle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Puoi caricare il documento aperto in AEM direttamente dall’interfaccia utente di Adobe Asset Link dall’interno di queste applicazioni desktop.
 * [L’app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) desktop Experience Manager semplifica l’utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall’applicazione nativa che le gestisce. È particolarmente utile caricare i file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file semplici.
 
 ## Elaborazione aggiuntiva {#additional-processing}
@@ -169,8 +169,8 @@ I dettagli tecnici delle API e del protocollo di caricamento e i collegamenti al
 
 >[!MORELIKETHIS]
 >
->* [App desktop Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [App desktop Adobe Experience Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Documentazione di Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [Documentazione di Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
 >* [Riferimento tecnico per il caricamento delle risorse](developer-reference-material-apis.md#asset-upload-technical)
 
