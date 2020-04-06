@@ -2,7 +2,7 @@
 title: Ricerca e indicizzazione dei contenuti
 description: 'Ricerca e indicizzazione dei contenuti '
 translation-type: tm+mt
-source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
@@ -31,7 +31,7 @@ Di seguito è riportato un elenco delle modifiche principali rispetto a AEM 6.5 
 
 1. Su AEM come servizio cloud, con l’introduzione del modello [di distribuzione](#index-management-using-blue-green-deployments) Blue-Green saranno disponibili due serie di indici: un set per la versione precedente (blu) e uno per la nuova versione (verde).
 
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+La versione dell&#39;indice utilizzato è configurata utilizzando i flag nelle definizioni dell&#39;indice tramite il `useIfExist` flag. Un indice può essere utilizzato in una sola versione dell’applicazione (ad esempio solo blu o solo verde) o in entrambe le versioni. La documentazione dettagliata è disponibile in Gestione [indice utilizzando le implementazioni](#index-management-using-blue-green-deployments)Blue-Green.
 
 1. I clienti possono vedere se il processo di indicizzazione è completo nella pagina di build di Cloud Manager e riceveranno una notifica quando la nuova versione sarà pronta per il traffico.
 
@@ -61,7 +61,7 @@ Per entrambi i punti 1 e 2 di cui sopra, devi creare una nuova definizione di in
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-che poi deve andare sotto `ui.apps/src/main/content/jcr_root`. Le cartelle sub-root non sono supportate al momento.
+che poi deve andare sotto `ui.content/src/main/content/jcr_root`. Le cartelle sub-root non sono supportate al momento.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -69,15 +69,11 @@ Il pacchetto del campione sopra riportato è costruito come `com.adobe.granite:n
 
 ### Distribuzione delle definizioni degli indici {#deploying-index-definitions}
 
-> [!NOTE]
->
-> C&#39;è un problema noto con Jackrabbit Filevault Maven Package Plugin versione **1.1.0** che non consente di aggiungere `oak:index` a moduli di `<packageType>application</packageType>`. Per risolvere il problema, utilizzate la versione **1.0.4**.
-
 Le definizioni degli indici sono ora contrassegnate come personalizzate e con versione:
 
-* La definizione di indice stessa (ad esempio `/oak:index/ntBaseLucene-custom-1`)
+* La definizione di indice stessa (ad esempio `/oak:index/ntBaseLucene-custom-1`il contenuto MUTABLE)
 
-Pertanto, per distribuire un indice, la definizione (`/oak:index/definitionname`) dell&#39;indice deve essere distribuita tramite `ui.apps` Git e il processo di distribuzione di Cloud Manager.
+Pertanto, per distribuire un indice, la definizione (`/oak:index/definitionname`) dell&#39;indice deve essere distribuita tramite il pacchetto **** mutable, in genere `ui.content` tramite Git e il processo di distribuzione di Cloud Manager.
 
 Una volta aggiunta la nuova definizione di indice, la nuova applicazione deve essere distribuita tramite Cloud Manager. All&#39;avvio della distribuzione, vengono avviati due processi, responsabili dell&#39;aggiunta (e dell&#39;unione, se necessario) delle definizioni di indice a MongoDB e ad Azure Segment Store rispettivamente per l&#39;autore e la pubblicazione. I repository sottostanti vengono reindicizzati con le nuove definizioni di indice, prima che venga eseguito il passaggio Blu-Verde.
 
@@ -142,7 +138,7 @@ Quando Adobe modifica un indice out-of-the-box come &quot;damAssetLucene&quot; o
 | /oak:index/cqPageLucene | Sì | Sì | No |
 | /oak:index/cqPageLucene-2 | Sì | No | Sì |
 
-### Limitazioni   {#limitations}
+### Limitazioni  {#limitations}
 
 Al momento la gestione degli indici è supportata solo per gli indici di tipo `lucene`.
 
