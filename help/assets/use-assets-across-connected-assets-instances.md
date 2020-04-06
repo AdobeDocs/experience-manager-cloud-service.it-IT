@@ -3,14 +3,14 @@ title: Utilizzare le risorse collegate per la condivisione di risorse DAM nel fl
 description: Utilizzare le risorse disponibili in un’implementazione remota di Adobe Experience Manager Assets durante la creazione di pagine web in un’altra implementazione di Experience Manager Sites.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0b197a318e696df5b3502de5ce634e9990ab1032
+source-git-commit: 188917fe677a88142c702b9637600db872853974
 
 ---
 
 
 # Utilizzare la funzione Risorse collegate per condividere risorse DAM in AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-Nelle grandi aziende l’infrastruttura necessaria per la creazione di siti web può essere dislocata in luoghi diversi. A volte, le funzionalità per la creazione di siti web e le risorse digitali utilizzate per creare i siti possono trovarsi in implementazioni diverse. Alcuni motivi possono essere la distribuzione geografica delle installazioni esistenti necessarie per lavorare in parallelo o acquisizioni che determinano un&#39;infrastruttura eterogenea che la società madre desidera utilizzare insieme.
+Nelle grandi aziende l’infrastruttura necessaria per la creazione di siti web può essere dislocata in luoghi diversi. A volte, le funzionalità per la creazione di siti web e le risorse digitali utilizzate per creare i siti possono trovarsi in implementazioni diverse. Per diversi motivi, è possibile che installazioni necessarie per lavorare in parallelo siano distribuite in più località geografiche: acquisizioni che portano a infrastrutture eterogenee che la sede madre vuole consolidare oppure crescita aziendale di tale portata da richiedere un’istanza dedicata per la gestione delle risorse.
 
 AEM Sites offre la funzionalità di creazione di pagine web e AEM Assets è il sistema di gestione delle risorse digitali (DAM) che fornisce le risorse necessarie per i siti web. AEM supporta ora questo tipo di caso d’uso mediante l’integrazione di AEM Sites e AEM Assets.
 
@@ -18,7 +18,7 @@ AEM Sites offre la funzionalità di creazione di pagine web e AEM Assets è il s
 
 Durante la modifica delle pagine nell’Editor pagina, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di una diversa implementazione di AEM Assets. Un amministratore AEM può effettuare un’integrazione una tantum tra un’implementazione locale di AEM Sites e un’altra implementazione (remota) di AEM Assets.
 
-Per gli autori di Sites, le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l’utilizzo di un numero limitato di risorse remote alla volta. Per rendere disponibili contemporaneamente numerose risorse remote in un’implementazione locale, è consigliabile effettuare una migrazione in massa delle risorse.
+Per gli autori di Sites, le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l’utilizzo di un numero limitato di risorse remote alla volta. Per rendere disponibili contemporaneamente numerose risorse remote in un’implementazione locale, è consigliabile effettuare una migrazione in massa delle risorse. Consulta la [guida alla migrazione di Assets](/help/assets/assets-migration-guide.md).
 
 ### Prerequisiti e implementazioni supportate {#prerequisites}
 
@@ -37,7 +37,7 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 Gli autori possono cercare in Content Finder le immagini e i tipi di documenti indicati di seguito, quindi utilizzare nell’Editor pagina le risorse che hanno cercato. È possibile aggiungere i documenti al componente `Download`, e le immagini al componente `Image`. Gli autori possono inoltre aggiungere le risorse remote a qualsiasi componente AEM personalizzato che estenda i componenti predefiniti `Download` o `Image`. Gli elenchi dei formati supportati sono:
 
-* **Formati di immagini**: sono supportati i formati di immagine supportati dal [componente immagine](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html). Le immagini Dynamic Media non sono supportate.
+* **Formati di immagini**: sono supportati i formati di immagine supportati dal [componente immagine](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/image.html). Le immagini Dynamic Media non sono supportate.
 * **Formati di documenti**: vedi [Formati di documenti supportati da Risorse collegate](file-format-support.md#doc-formats).
 
 ### Utenti e gruppi interessati {#users-and-groups-involved}
@@ -153,7 +153,7 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
 Le risorse recuperate possono essere utilizzate come qualsiasi altra risorsa locale, ad eccezione del fatto che i metadati associati non possono essere modificati.
 
-## Limitazioni   {#limitations}
+## Limitazioni  {#limitations}
 
 **Autorizzazioni e gestione delle risorse**
 
@@ -164,7 +164,7 @@ Le risorse recuperate possono essere utilizzate come qualsiasi altra risorsa loc
 * Gli schemi di metadati non vengono recuperati.
 * Tutti gli autori di Sites dispongono di autorizzazioni di lettura per le copie recuperate, anche se non dispongono di accesso all’implementazione remota di DAM.
 * Nessun supporto API per personalizzare l’integrazione.
-* Questa funzionalità supporta la ricerca e l’utilizzo diretti delle risorse remote. Per rendere disponibili molte risorse remote nell’implementazione locale con un’unica operazione, è consigliabile eseguire la migrazione delle risorse.
+* Questa funzionalità supporta la ricerca e l’utilizzo diretti delle risorse remote. Per rendere disponibili molte risorse remote nell’implementazione locale con un’unica operazione, è consigliabile eseguire la migrazione delle risorse. Consulta la [guida alla migrazione di Assets](assets-migration-guide.md).
 * Non è possibile utilizzare una risorsa remota come miniatura per una pagina web nella scheda [!UICONTROL Miniatura] in [!UICONTROL Proprietà pagina] facendo clic su [!UICONTROL Seleziona immagine].
 
 **Configurazione e licenze**
