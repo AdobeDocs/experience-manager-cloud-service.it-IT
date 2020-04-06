@@ -3,7 +3,7 @@ title: Elabora risorse tramite gestori di file multimediali e flussi di lavoro
 description: Scopri i diversi gestori di contenuti multimediali e come utilizzarli nei flussi di lavoro per eseguire attività sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -18,7 +18,7 @@ I gestori di file multimediali sono servizi all’interno di Risorse AEM che ese
 
 >[!NOTE]
 >
->Consulta l’articolo Formati [di file supportati da](file-format-support.md) Risorse per una descrizione di tutti i formati supportati da Risorse AEM, nonché delle funzioni supportate per ciascun formato.
+>Per una descrizione di tutti i formati supportati da Risorse AEM e delle funzioni supportate per ciascun formato, fai riferimento alla pagina Formati [supportati da](file-format-support.md) Risorse.
 
 ## Gestori file multimediali predefiniti {#default-media-handlers}
 
@@ -41,7 +41,7 @@ I seguenti gestori di file multimediali sono disponibili in AEM Assets e gestisc
   </tr>
   <tr>
    <td>PdfHandler</td>
-   <td><p>com.day.cq.da.handler.standard.pdf.PdfHandler</p> </td>
+   <td><p>com.day.cq.dam.handler.standard.pdf.PdfHandler</p> </td>
    <td><p>application/pdf<br /> application/illustrator</p> </td>
   </tr>
   <tr>
@@ -51,12 +51,12 @@ I seguenti gestori di file multimediali sono disponibili in AEM Assets e gestisc
   </tr>
   <tr>
    <td>Mp3Handler</td>
-   <td><p>com.day.cq.da.handler.standard.mp3.Mp3Handler</p> </td>
+   <td><p>com.day.cq.dam.handler.standard.mp3.Mp3Handler</p> </td>
    <td><p>audio/mpeg</p> </td>
   </tr>
   <tr>
    <td>ZipHandler</td>
-   <td><p>com.day.cq.da.handler.standard.zip.ZipHandler</p> </td>
+   <td><p>com.day.cq.dam.handler.standard.zip.ZipHandler</p> </td>
    <td><p>application/java-archive</p> <p>application/zip</p> </td>
   </tr>
   <tr>
@@ -76,17 +76,17 @@ I seguenti gestori di file multimediali sono disponibili in AEM Assets e gestisc
   </tr>
   <tr>
    <td>MSPwerPointHandler</td>
-   <td>com.day.cq.da.handler.standard.msoffice.MSPwerPointHandler</td>
+   <td>com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler</td>
    <td>application/vnd.ms-powerpoint<br /> </td>
   </tr>
   <tr>
    <td>OpenOfficeHandler</td>
-   <td>com.day.cq.da.handler.standard.ooxml.OpenOfficeHandler</td>
+   <td>com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler</td>
    <td>application/vnd.openxmlformats-officedocument.wordprocessingml.document<br /> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.presentation<br /><br /> </td>
   </tr>
   <tr>
    <td>EPubHandler</td>
-   <td>com.day.cq.da.handler.standard.epub.EPubHandler</td>
+   <td>com.day.cq.dam.handler.standard.epub.EPubHandler</td>
    <td>application/epub+zip</td>
   </tr>
   <tr>
@@ -407,7 +407,7 @@ A questo scopo, si utilizzerà ImageMagick. ImageMagick è una suite software gr
 
 Prima installa ImageMagick sul disco che ospita il server AEM:
 
-1. Installa ImageMagick: Consulta la documentazione [di](https://www.imagemagick.org/script/download.php)ImageMagick.
+1. Installa ImageMagick: fare riferimento alla documentazione [ImageMagick](https://www.imagemagick.org/script/download.php).
 1. Impostare lo strumento in modo da poter eseguire la conversione sulla riga di comando.
 1. Per verificare se lo strumento è installato correttamente, eseguire il comando seguente `convert -h` sulla riga di comando.
 
