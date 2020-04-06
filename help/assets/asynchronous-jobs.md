@@ -3,7 +3,7 @@ title: Operazioni asincrone
 description: Risorse AEM ottimizza le prestazioni completando in modo asincrono alcune attività che richiedono risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
@@ -29,7 +29,7 @@ Potete visualizzare lo stato dei processi asincroni dalla pagina Stato **[!UICON
 
 ## Monitoraggio dello stato delle operazioni asincrone {#monitoring-the-status-of-asynchronous-operations}
 
-Ogni volta che AEM Assets elabora un’operazione in modo asincrono, riceverai una notifica nella inbox <!-- and through email -->.
+Ogni volta che AEM Assets elabora un’operazione in modo asincrono, riceverai una notifica nella tua inbox ed e-mail.
 
 Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla pagina Stato **[!UICONTROL processo]** asincrono.
 
@@ -83,7 +83,7 @@ Risorse AEM esegue ogni giorno un processo di eliminazione alle 1:00 per elimina
 
 ## Configurazione delle soglie per l&#39;elaborazione asincrona {#configuring-thresholds-for-asynchronous-processing}
 
-Puoi configurare il numero di soglia di risorse o riferimenti per Risorse AEM per elaborare una determinata operazione in modo asincrono.
+Puoi configurare il numero di soglia di risorse o riferimenti per Risorse AEM per l’elaborazione asincrona di una determinata operazione.
 
 ### Configurazione delle soglie per le operazioni di eliminazione asincrone {#configuring-thresholds-for-asynchronous-delete-operations}
 
