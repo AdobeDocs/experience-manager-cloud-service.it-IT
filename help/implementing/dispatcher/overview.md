@@ -2,7 +2,7 @@
 title: Dispatcher nel cloud
 description: 'Dispatcher nel cloud '
 translation-type: tm+mt
-source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
+source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
 
 ---
 
@@ -695,3 +695,135 @@ Verrà avviato il contenitore ed esporre Apache sulla porta locale 8080.
 Congratulazioni! Se la funzione di convalida non segnala più alcun problema e il contenitore docker viene avviato senza errori o avvisi, è possibile spostare la configurazione in una `dispatcher/src` sottodirectory del repository git.
 
 **I clienti che utilizzano la configurazione AMS Dispatcher versione 1 devono contattare l&#39;assistenza clienti per effettuare la migrazione dalla versione 1 alla versione 2, in modo da seguire le istruzioni riportate sopra.**
+
+## Dispatcher e CDN {#dispatcher-cdn}
+
+La distribuzione dei contenuti del servizio di pubblicazione include:
+
+* CDN (in genere gestito da Adobe)
+* dispatcher AEM
+* Pubblicazione AEM
+
+Il flusso di dati è il seguente:
+
+1. L’URL viene aggiunto nel browser
+1. Richiesta effettuata alla CDN mappata in DNS a tale dominio
+1. Se il contenuto è completamente memorizzato nella cache su CDN, CDN lo trasmette al browser
+1. Se il contenuto non è completamente memorizzato nella cache, la rete CDN richiama (proxy inverso) al dispatcher
+1. Se il contenuto è completamente memorizzato nella cache del dispatcher, il dispatcher lo invia alla CDN
+1. Se il contenuto non è completamente memorizzato nella cache, il dispatcher richiama (proxy inverso) alla pubblicazione AEM
+1. Il contenuto viene rappresentato dal browser, che potrebbe anche memorizzarlo nella cache, a seconda delle intestazioni
+
+La maggior parte del contenuto scade dopo cinque minuti, una soglia che viene rispettata sia dalla cache del dispatcher che dalla CDN. Durante le ridistribuzioni del servizio di pubblicazione, la cache del dispatcher viene svuotata e successivamente riscaldata prima che i nuovi nodi di pubblicazione accettino il traffico.
+
+Le sezioni seguenti forniscono maggiori dettagli sulla distribuzione dei contenuti, inclusa la configurazione CDN e il caching del dispatcher.
+
+Le informazioni sulla replica dal servizio di creazione al servizio di pubblicazione sono disponibili [qui](/help/operations/replication.md).
+
+>[!NOTE]
+>Il traffico passa attraverso un server Web Apache, che supporta moduli incluso il dispatcher. Il dispatcher viene utilizzato principalmente come cache per limitare l’elaborazione sui nodi di pubblicazione al fine di migliorare le prestazioni.
+
+### CDN {#cdn}
+
+AEM offre tre opzioni:
+
+1. CDN gestito da Adobe - CDN out-of-the-box di AEM. Questa è l&#39;opzione consigliata perché è completamente integrata.
+1. CDN gestito dal cliente - Il cliente porta la propria CDN ed è interamente responsabile della gestione.
+1. CDN gestito da Adobe - il cliente punta una CDN alla CDN out-of-the-box di AEM.
+
+>[!CAUTION]
+>La prima opzione è altamente consigliata. Se scegliete la seconda opzione, Adobe non può essere ritenuta responsabile del risultato di eventuali configurazioni errate.
+
+La seconda e la terza opzione sono consentite caso per caso. Ciò comporta l&#39;adempimento di alcuni prerequisiti, tra cui, a titolo esemplificativo, l&#39;integrazione con il fornitore CDN di un cliente precedente, difficilmente annullabile.
+
+#### CDN gestito da Adobe {#adobe-managed-cdn}
+
+La preparazione per la distribuzione dei contenuti tramite la rete CDN di Adobe è semplice, come descritto di seguito:
+
+1. Fornirai ad Adobe il certificato SSL firmato e la chiave segreta condividendo un collegamento a un modulo protetto contenente tali informazioni. Coordinare con l&#39;assistenza clienti su questa attività.
+Nota: Aem come servizio Cloud non supporta i certificati convalidati (DV) del dominio.
+1. Il supporto clienti quindi coordinerà con voi i tempi di un record DNS CNAME, indicando il loro FQDN `adobe-aem.map.fastly.net`.
+1. Al momento della scadenza dei certificati SSL riceverete una notifica per consentirvi di inviare nuovamente i nuovi certificati SSL.
+
+Per impostazione predefinita, per una configurazione CDN gestita da Adobe, tutto il traffico pubblico può essere indirizzato al servizio di pubblicazione, sia per gli ambienti di produzione che per quelli non di produzione (sviluppo e fase). Se desiderate limitare il traffico al servizio di pubblicazione per un determinato ambiente (ad esempio, limitando l’area di gestione temporanea per un intervallo di indirizzi IP), per configurare tali restrizioni dovete rivolgervi all’assistenza clienti.
+
+#### CDN gestito cliente {#customer-managed-cdn}
+
+Puoi gestire la tua CDN, a condizione:
+
+1. Esiste una CDN.
+1. Deve essere un CDN supportato. Al momento, Akamai è supportato. Se l’organizzazione desidera gestire una rete CDN non supportata, rivolgetevi all’assistenza clienti.
+1. Lo gestirà.
+1. Devi essere in grado di configurare CDN per lavorare con Aem come servizio cloud. Consulta le istruzioni di configurazione riportate di seguito.
+1. Gli esperti CDN tecnici sono in servizio in caso di problemi correlati.
+1. Devi fornire whitelist di nodi CDN a Cloud Manager, come descritto nelle istruzioni di configurazione.
+1. È necessario eseguire e superare con successo un test di carico prima di passare alla produzione.
+
+Istruzioni di configurazione:
+
+1. Fornite ad Adobe la whitelist del fornitore CDN chiamando l&#39;API di creazione/aggiornamento dell&#39;ambiente con un elenco di CIDR da inserire nella whitelist.
+1. Impostate l’ `X-Forwarded-Host` intestazione con il nome del dominio.
+1. Impostate l&#39;intestazione Host con il dominio di origine, che è l&#39;Aem come ingresso del servizio Cloud. Il valore deve provenire da Adobe.
+1. Inviate l’intestazione SNI all’origine. L&#39;intestazione sni deve essere il dominio di origine.
+1. Imposta `X-Edge-Key` ciò che è necessario per indirizzare correttamente il traffico ai server AEM. Il valore deve provenire da Adobe.
+
+Prima di accettare il traffico live, è necessario verificare con l&#39;assistenza clienti Adobe che il ciclo di traffico end-to-end funziona correttamente.
+
+#### CDN gestito da Adobe {#point-to-point-CDN}
+
+Supportato se desiderate utilizzare il vostro CDN esistente, ma non potete soddisfare i requisiti di un CDN gestito dal cliente. In questo caso, gestite la vostra rete CDN, ma indicate la rete CDN gestita da Adobe.
+
+I clienti devono eseguire e superare con successo un test di carico prima di passare alla produzione.
+
+Istruzioni di configurazione:
+
+1. Impostate l’ `X-Forwarded-Host` intestazione con il nome del dominio.
+1. Impostate l&#39;intestazione Host con il dominio di origine, che è l&#39;ingresso CDN di Adobe. Il valore deve provenire da Adobe.
+1. Inviate l’intestazione SNI all’origine. Come l&#39;intestazione Host, l&#39;intestazione sni deve essere il dominio di origine.
+1. Impostate il `X-Edge-Key`, necessario per indirizzare correttamente il traffico ai server AEM. Il valore deve provenire da Adobe.
+
+#### Annullamento validità cache CDN {#CDN-cache-invalidation}
+
+L&#39;annullamento della validità della cache segue le regole seguenti:
+
+* In generale, il contenuto HTML viene memorizzato nella cache CDN per 5 minuti, in base all&#39;intestazione del controllo cache emesso dal dispatcher.
+* Le librerie client (JavaScript e CSS) vengono memorizzate nella cache in modo indefinito utilizzando il controllo cache impostato su immutabile o su 30 giorni per i browser meno recenti che non rispettano il valore immutabile. Le librerie client vengono servite in un percorso univoco che cambia se cambiano le librerie client. In altre parole, l&#39;HTML che fa riferimento alle librerie client verrà prodotto come necessario, in modo da poter sperimentare il nuovo contenuto mentre viene pubblicato.
+* Per impostazione predefinita, le immagini non sono memorizzate nella cache.
+
+Prima di accettare il traffico live, i clienti devono verificare con il supporto clienti Adobe che il ciclo di traffico end-to-end funziona correttamente.
+
+## Annullamento della validità della cache del dispatcher esplicito {#explicit-invalidation}
+
+Come indicato in precedenza, il traffico passa attraverso un server Web Apache, che supporta i moduli incluso il dispatcher. Il dispatcher viene utilizzato principalmente come cache per limitare l’elaborazione sui nodi di pubblicazione al fine di migliorare le prestazioni.
+
+In generale, non sarà necessario annullare manualmente il contenuto nel dispatcher, ma è possibile, se necessario, come descritto di seguito.
+
+Prima di AEM come servizio cloud, erano disponibili due modi per annullare la validità della cache del dispatcher.
+
+1. Richiamate l&#39;agente di replica, specificando l&#39;agente di eliminazione del dispatcher di pubblicazione
+2. Chiamata diretta dell&#39; `invalidate.cache` API (ad esempio POST /dispatcher/invalidate.cache)
+
+L&#39; `invalidate.cache` approccio non sarà più supportato, in quanto riguarda solo un nodo dispatcher specifico.
+AEM come servizio cloud opera a livello di servizio, non a livello di singolo nodo, pertanto le istruzioni di annullamento della validità contenute nella documentazione [Dispatcher Help](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) non sono più precise.
+Utilizzare invece l&#39;agente di flush di replica. Questo può essere fatto utilizzando l&#39;API di replica. La documentazione API di replica è disponibile [qui](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) e per un esempio di svuotamento della cache, consultate la pagina [di esempio](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API, in particolare l&#39; `CustomStep` esempio che emette un&#39;azione di replica di tipo ACTIVATE a tutti gli agenti disponibili. L&#39;endpoint dell&#39;agente di flush non è configurabile ma preconfigurato per puntare al dispatcher, associato al servizio di pubblicazione che esegue l&#39;agente di flush. L&#39;agente di flush può in genere essere attivato da eventi OSGi o flussi di lavoro.
+
+Il diagramma seguente illustra questo.
+
+![](assets/cdnb.png "CDNCDN")
+
+In caso di problemi di cancellazione della cache del dispatcher, contattare l’assistenza clienti che, se necessario, può cancellare la cache del dispatcher.
+
+La rete CDN gestita da Adobe rispetta i TTL e non è quindi necessario scaricarla. Se si sospetta un problema, contattate l’assistenza clienti che potrà cancellare una cache CDN gestita da Adobe in base alle esigenze.
+
+### Annullamento della validità della cache del dispatcher durante l&#39;attivazione/disattivazione {#cache-activation-deactivation}
+
+Come nelle versioni precedenti di AEM, la pubblicazione o l’annullamento della pubblicazione di pagine eliminerà il contenuto dalla cache del dispatcher. Se si sospetta un problema di caching, i clienti devono ripubblicare le pagine in questione.
+
+Quando l’istanza di pubblicazione riceve una nuova versione di una pagina o di una risorsa dall’autore, utilizza l’agente di eliminazione per annullare i percorsi appropriati nel dispatcher. Il percorso aggiornato viene rimosso dalla cache del dispatcher, insieme ai relativi elementi principali, fino a un livello (è possibile configurarlo con [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
+
+### Massima libertà di stampa e coerenza delle versioni {#content-consistency}
+
+* Le pagine sono costituite da HTML, JavaScript, CSS e immagini.
+* È consigliabile sfruttare il framework clientlibs per importare risorse Javascript e CSS in pagine HTML, tenendo conto delle dipendenze tra librerie JS.
+* È disponibile la gestione automatica delle versioni, che consente agli sviluppatori di archiviare le modifiche apportate alle librerie JS nel controllo del codice sorgente, e l&#39;ultima versione sarà disponibile quando viene premuto un rilascio. In caso contrario, gli sviluppatori dovrebbero modificare manualmente il codice HTML con i riferimenti alla nuova versione della libreria, il che è particolarmente costoso se molti modelli HTML condividono la stessa libreria.
+* Quando le nuove versioni delle librerie vengono rilasciate in produzione, le pagine HTML di riferimento vengono aggiornate con nuovi collegamenti alle versioni libreria aggiornate. Una volta scaduta la cache del browser per una determinata pagina HTML, non c&#39;è motivo di preoccuparsi che le vecchie librerie vengano caricate dalla cache del browser, dal momento che la pagina aggiornata (da AEM) ora fa riferimento alle nuove versioni delle librerie. In altre parole, una pagina HTML aggiornata includerà tutte le versioni libreria più recenti.
