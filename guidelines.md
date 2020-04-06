@@ -1,5 +1,5 @@
 ---
-source-git-commit: b5380858e0887da017657c653b05529066d95fd8
+source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
 translation-type: tm+mt
 
 ---
@@ -33,9 +33,9 @@ Le eccezioni a questa regola si applicano alle note sulla versione in cui posson
 
 ### I contributi alla documentazione non sono destinati a rispondere a domande tecniche.
 
-Eventuali idee da approfondire con la documentazione di AEM sono gradite come contributi. Tuttavia, commenti, problemi e richieste pull sono destinati solo ai *contributi* . Non sono destinati a rispondere alle tue domande su come usare AEM, implementare il tuo progetto AEM o risolvere problemi tecnici.
+Eventuali idee da approfondire con la documentazione di AEM sono gradite come contributi. Tuttavia, commenti, problemi e richieste pull sono destinati solo ai *contributi* . Non sono destinati a rispondere alle tue domande su come utilizzare AEM o risolvere problemi tecnici.
 
-Eventuali domande sull’utilizzo di AEM o eventuali errori tecnici devono essere segnalate tramite il normale processo di assistenza tramite il portale [di assistenza](https://helpx.adobe.com/contact/enterprise-support.ec.html) Experience Cloud Enterprise o discusse nella community [di](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)Experience Manager.
+Eventuali domande sull’utilizzo di AEM o eventuali errori tecnici devono essere segnalate tramite il normale processo di assistenza tramite il portale [di assistenza](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) Experience Cloud Enterprise o discusse nella community [di](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)Experience Manager.
 
 ***I contributi alla documentazione di AEM non sostituiscono l’Assistenza*** clienti Adobe e tutti questi contributi che richiedono risposte a domande relative al supporto verranno rifiutati.
 
@@ -43,13 +43,13 @@ Eventuali domande sull’utilizzo di AEM o eventuali errori tecnici devono esser
 
 Se si crea un problema per suggerire miglioramenti alla documentazione, è necessario includere collegamenti alle pagine interessate. Se apri una segnalazione problema utilizzando il collegamento **Modifica pagina** di una pagina della documentazione, il problema verrà creato automaticamente con un collegamento alla pagina in questione.
 
-Ciò non si applica alle richieste pull, in quanto le richieste pull per loro natura fanno riferimento alle pagine interessate.
+Ciò non si applica alle richieste di pull, poiché le richieste di pull includono le pagine interessate per definizione.
 
 ## Linee guida sulla documentazione
 
 Chiediamo che qualsiasi contributo alla nostra documentazione segua determinate linee guida di stile.
 
-Seguendo queste linee guida è più semplice rivedere il proprio contributo e l&#39;integrazione nella documentazione è quindi più rapida.
+Seguendo queste linee guida è più semplice rivedere il proprio contributo e l&#39;integrazione nella documentazione è quindi più rapida. Tuttavia, il mancato rispetto o il mancato rispetto dei presenti orientamenti non significa che il contributo sarà respinto.
 
 ### Lingua e stile
 
