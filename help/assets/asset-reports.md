@@ -3,7 +3,7 @@ title: Rapporti sulle risorse
 description: Questo articolo descrive vari rapporti sulle risorse in Risorse AEM e come generare rapporti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
@@ -18,7 +18,7 @@ Il framework di reporting di AEM Assets sfrutta i processi Sling per elaborare i
 
 L&#39;interfaccia di gestione dei report è intuitiva e include opzioni e controlli di granulometria per accedere ai report archiviati e visualizzare gli stati di esecuzione dei report (operazione riuscita, non riuscita e in coda).
 
-Quando viene generato un rapporto, vi viene inviata <!-- through an email (optional) and --> una notifica in entrata. Puoi visualizzare, scaricare o eliminare un rapporto dalla pagina di elenco dei rapporti, dove vengono visualizzati tutti i rapporti generati in precedenza.
+Quando viene generato un rapporto, riceverete una notifica via e-mail (facoltativo) e una notifica nella inbox. Puoi visualizzare, scaricare o eliminare un rapporto dalla pagina di elenco dei rapporti, dove vengono visualizzati tutti i rapporti generati in precedenza.
 
 ## Generazione di rapporti {#generate-reports}
 
@@ -79,7 +79,7 @@ Gli amministratori di AEM possono generare e personalizzare facilmente questi ra
 
    ![files_report](assets/files_report.png)
 
-   Il rapporto **[!UICONTROL Condivisione collegamenti]** visualizza gli URL delle risorse condivise con utenti esterni da AEM Assets. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Le colonne non sono personalizzabili.
+   Il rapporto **[!UICONTROL Condivisione collegamenti]** visualizza gli URL delle risorse condivise con utenti esterni da AEM Assets. Include gli ID e-mail dell’utente che ha condiviso le risorse, gli ID e-mail degli utenti con cui le risorse sono condivise, la data di condivisione e la data di scadenza del collegamento. Le colonne non sono personalizzabili.
 
    Il rapporto **[!UICONTROL Condivisione collegamenti]** non include opzioni per sottocartelle e rendering, in quanto pubblica semplicemente gli URL condivisi che sono visualizzati in */var/dam/share*.
 
