@@ -1,15 +1,14 @@
 ---
-sub-product: Connectors for AEM as a Cloud Service
-user-guide-title: Connectors for AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+sub-product: Connettori per AEM come servizio cloud
+user-guide-title: Connettori per AEM come servizio cloud
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # Connettori {#connectors}
 
-+ [Implementazione di connettori per AEM as a Cloud Service](/help/connectors/home.md)
 + [Implementazione di un connettore AEM](implement.md)
 + [Invio di un connettore AEM](submit.md)
 + [Manutenzione di un connettore AEM](maintain.md)
