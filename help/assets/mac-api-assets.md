@@ -3,7 +3,7 @@ title: API HTTP di Assets
 description: Scopri l’implementazione, il modello dati e le funzionalità dell’API HTTP Assets. Utilizzate l'API HTTP Assets per eseguire varie attività sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
