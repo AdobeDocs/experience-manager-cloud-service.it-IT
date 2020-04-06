@@ -2,7 +2,7 @@
 title: Pubblicazione di risorse multimediali dinamiche
 description: Come pubblicare le risorse multimediali dinamiche
 translation-type: tm+mt
-source-git-commit: c8f8598e3e476af529a87b056e66ddb619a2da0a
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: c8f8598e3e476af529a87b056e66ddb619a2da0a
 
 Per pubblicare le risorse Contenuti multimediali dinamici, selezionatele e toccate **[!UICONTROL Pubblica]**. Dopo la pubblicazione, le risorse multimediali dinamiche possono essere incluse in una pagina Web tramite URL o mediante incorporazione.
 
-Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. In alternativa, potete pubblicare le risorse in modo selettivo. See [Configuring Dynamic Media](config-dm.md).
+Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. See [Configuring Dynamic Media](config-dm.md).
 
 Nella **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa viene visualizzata una piccola icona a forma di globo, per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
 
