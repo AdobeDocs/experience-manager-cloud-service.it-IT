@@ -3,7 +3,7 @@ title: Scopri come i microservizi di risorse possono elaborare le risorse digita
 description: Elabora le risorse digitali tramite microservizi di elaborazione delle risorse scalabili e nativi basati sul cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
@@ -13,6 +13,7 @@ source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
+
 -->
 
 Adobe Experience Manager come servizio Cloud offre un modo nativo per sfruttare le applicazioni e le funzionalità di Experience Manager. Uno degli elementi chiave di questa nuova architettura è l&#39;assimilazione e l&#39;elaborazione delle risorse, basata sui microservizi di asset.
@@ -52,21 +53,21 @@ Le fasi chiave dell’assimilazione e dell’elaborazione mediante i microserviz
 
 Questo è il flusso di base dell’assimilazione e dell’elaborazione delle risorse. Se configurato, Experience Manager può anche avviare il modello di flusso di lavoro del cliente per eseguire la post-elaborazione della risorsa, ad esempio per eseguire alcuni passaggi personalizzati specifici per l’ambiente del cliente, come recuperare informazioni dai sistemi aziendali del cliente da aggiungere alle proprietà della risorsa.
 
-Il flusso di assimilazione e di elaborazione sono concetti chiave dell’architettura dei microservizi di risorse per Experience Manager.
+Il flusso di assimilazione e elaborazione mostra alcuni concetti chiave basati sull’architettura dei microservizi di risorse per Experience Manager:
 
-* **Accesso** binario diretto: Le risorse vengono trasportate (e caricate) nel Cloud Binary Store una volta configurato per gli ambienti Experience Manager, quindi AEM, i microservizi delle risorse, e infine i client possono accedervi direttamente per svolgere il proprio lavoro. Questo riduce al minimo il carico sulle reti e la duplicazione dei binari archiviati
-* **Elaborazione** esternalizzata: L’elaborazione delle risorse viene effettuata al di fuori dell’ambiente AEM e ne salva le risorse (CPU, memoria) per fornire le principali funzionalità di gestione delle risorse digitali e supportare il lavoro interattivo con il sistema per gli utenti finali
+* **Accesso** binario diretto: le risorse vengono trasportate (e caricate) nel Cloud Binary Store una volta configurato per gli ambienti Experience Manager, quindi AEM, i microservizi di risorse e infine i client possono accedervi direttamente per svolgere il proprio lavoro. Questo riduce al minimo il carico sulle reti e la duplicazione dei binari archiviati
+* **Elaborazione** esternalizzata - l&#39;elaborazione delle risorse viene effettuata al di fuori dell&#39;ambiente AEM e ne salva le risorse (CPU, memoria) per fornire funzionalità chiave di Gestione delle risorse digitali e supportare il lavoro interattivo con il sistema per gli utenti finali
 
 ## Caricamento delle risorse con accesso binario diretto {#asset-upload-with-direct-binary-access}
 
 I client Experience Manager, che fanno parte dell&#39;offerta di prodotti, supportano tutti i caricamenti con accesso binario diretto per impostazione predefinita. tra cui il caricamento tramite l’interfaccia Web, il collegamento a risorse Adobe e l’app desktop AEM.
 
-Potete utilizzare strumenti di caricamento personalizzati, che funzionano direttamente con le API HTTP AEM. Potete utilizzare queste API direttamente, oppure utilizzare ed estendere i seguenti progetti open-source che implementano il protocollo di caricamento:
+Potete utilizzare strumenti di caricamento personalizzati, che funzionano direttamente con le API HTTP AEM. Potete utilizzare queste API direttamente, oppure utilizzare ed estendere i seguenti progetti open source che implementano il protocollo di caricamento:
 
-* [Libreria di caricamento open-source](https://github.com/adobe/aem-upload)
-* [Open-source, strumento da riga di comando](https://github.com/adobe/aio-cli-plugin-aem)
+* [Apri libreria di caricamento sorgente](https://github.com/adobe/aem-upload)
+* [Apri sorgente, strumento della riga di comando](https://github.com/adobe/aio-cli-plugin-aem)
 
-Per ulteriori informazioni, consultate [caricare le risorse](add-assets.md).
+Per ulteriori informazioni, consultate [Caricamento delle risorse](add-assets.md).
 
 ## Aggiunta post-elaborazione di risorse personalizzata {#add-custom-asset-post-processing}
 
@@ -83,7 +84,7 @@ Adobe Experience Manager può essere configurato per attivare automaticamente i 
 >
 >* [Introduzione all’utilizzo dei microservizi per le risorse](asset-microservices-configure-and-use.md)
 >* [Formati di file supportati](file-format-support.md)
->* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [App desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
+>* [App desktop AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-desktop-app/using/introduction.html)
 >* [Documentazione Apache Oak sull&#39;accesso binario diretto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
