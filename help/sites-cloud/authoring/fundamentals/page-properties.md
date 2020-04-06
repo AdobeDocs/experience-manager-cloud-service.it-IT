@@ -1,8 +1,8 @@
 ---
-title: 'Modifica delle proprietà di una pagina  '
+title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 translation-type: tm+mt
-source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
@@ -80,7 +80,7 @@ Le proprietà sono distribuite su più schede.
 
    * Specifica se vuoi che la pagina usi l’URL personalizzato.
 
-### Avanzate   {#advanced}
+### Avanzate  {#advanced}
 
 * **Lingua**
 
@@ -135,7 +135,7 @@ Le proprietà sono distribuite su più schede.
 
    * Consente di specificare una configurazione di esportazione.
 
-### Miniatura   {#thumbnail}
+### Miniatura    {#thumbnail}
 
 Mostra la miniatura della pagina. Operazioni disponibili:
 
@@ -180,9 +180,7 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 
 * **Configurazione targeting**
 
-   * Seleziona un [marchio per specificare l’ambito di impostazione della destinazione](/help/sites-cloud/authoring/personalization/targeted-content.md).
-   >[!NOTE]
-   >Questa opzione richiede che l&#39;account utente sia nel `Target Adminstrators`gruppo.
+   * Seleziona un [marchio per specificare l’ambito di targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
 ### Autorizzazioni   {#permissions}
 
@@ -199,14 +197,14 @@ Mostra la miniatura della pagina. Operazioni disponibili:
    * Consente di definire le proprietà per una pagina Blueprint nella gestione multisito. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy    {#live-copy}
 
 * **Livecopy**
 
    * Consente di definire le proprietà per una pagina Live Copy nella gestione multisito. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
-### Struttura sito   {#site-structure}
+### Struttura sito    {#site-structure}
 
 * Fornisce i collegamenti alle pagine che offrono funzionalità a livello di sito, tra cui **Pagina registrazione** e **Pagina offline**.
 
