@@ -2,7 +2,7 @@
 title: SDK di AEM as a Cloud Service
 description: 'Da completare '
 translation-type: tm+mt
-source-git-commit: a7dc007230632bf8343004794b2bc4c5baaf4e05
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -24,7 +24,7 @@ Inoltre, alcuni clienti che erano stati precedentemente distribuiti con AEM 6.5 
 ## Accesso ad AEM come SDK di servizio cloud {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * Puoi fare clic sull’icona **Informazioni su Adobe Experience Manager** di AEM Admin Console per scoprire la versione di AEM in esecuzione in produzione.
-* Gli strumenti di avvio rapido e Dispatcher possono essere scaricati come file ZIP dal portale [di distribuzione](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)software. L&#39;accesso agli elenchi dell&#39;SDK è limitato a quelli con AEM Managed Services o AEM come ambienti di servizio cloud.
+* Gli strumenti di avvio rapido e Dispatcher possono essere scaricati come file ZIP dal portale [di distribuzione](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)software. L&#39;accesso agli elenchi dell&#39;SDK è limitato a quelli con AEM Managed Services o AEM come ambienti di servizio cloud.
 * Java API Jar e Javadoc Jar possono essere scaricati tramite gli strumenti maven, sia dalla riga di comando che con l&#39;IDE preferito.
 * I promotori del progetto maven devono fare riferimento al seguente pacchetto API Jar. È inoltre necessario fare riferimento a questa dipendenza in qualsiasi sottomodulo.
 
