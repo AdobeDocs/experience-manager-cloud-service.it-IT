@@ -1,5 +1,5 @@
 ---
-source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
+source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
 translation-type: tm+mt
 
 ---
@@ -45,5 +45,13 @@ I responsabili del progetto che non seguono o non applicano in buona fede il Cod
 
 ## Attribuzione
 
-Il presente Codice di condotta è adattato dal Patto [per i collaboratori](https://contributor-covenant.org), versione 1.4, disponibile all&#39;indirizzo [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADTil presente Codice di condotta è adattato dal Patto [per i](https://contributor-covenant.org)collaboratori, versione 1.4, disponibile all&#39;indirizzo [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
+=======
+Il presente Codice di condotta è adattato dal Patto [per i collaboratori](https://contributor-covenant.org), versione 1.4, disponibile all&#39;indirizzo [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+>>>>>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in staging========principale di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in area di pubblicazione
 
+
+
+
+
+> 
