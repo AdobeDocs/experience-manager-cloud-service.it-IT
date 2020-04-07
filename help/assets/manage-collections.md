@@ -229,7 +229,7 @@ Le ricerche salvate vengono create quando generi una raccolta avanzata. Le racco
 >
 >Potete condividere le raccolte smart nello stesso modo in cui condividete le raccolte statiche.
 
-La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzate. Per informazioni dettagliate, consultate [Modificare una raccolta](#edit-a-smart-collection)avanzata.
+La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzate. Per informazioni dettagliate, consultate [Modificare una raccolta](#edit-a-smart-collection)dinamica.
 
 Per eliminare le ricerche salvate, effettuate le seguenti operazioni:
 
