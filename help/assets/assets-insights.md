@@ -3,16 +3,14 @@ title: Informazioni sulla risorsa
 description: Scopri come la funzione Asset Insights consente di tenere traccia delle valutazioni degli utenti e delle statistiche di utilizzo delle immagini utilizzate nei siti Web di terze parti, nelle campagne di marketing e nelle soluzioni creative di Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Informazioni sulla risorsa{#asset-insights}
+# Informazioni sulla risorsa {#asset-insights}
 
-<!-- TBD: Add uicontrol tags  -->
-
-La funzione Asset Insights consente di tenere traccia delle valutazioni degli utenti e delle statistiche di utilizzo delle immagini utilizzate nei siti Web di terze parti, nelle campagne di marketing e nelle soluzioni creative di Adobe. Consente di ricavare informazioni sulle loro prestazioni e popolarità.
+Asset Insights monitora le valutazioni degli utenti e le statistiche sull&#39;utilizzo di immagini utilizzate in siti Web di terze parti, campagne di marketing e soluzioni creative di Adobe. Consente di ottenere informazioni sulle prestazioni e la popolarità delle immagini.
 
 Assets Insights acquisisce i dettagli dell’attività dell’utente, ad esempio il numero di volte in cui un’immagine viene valutata, di cui è stato fatto clic e di impression (numero di volte in cui un’immagine viene caricata sul sito Web). Assegnano dei punteggi alle immagini in base a queste statistiche. Puoi usare le statistiche sui punteggi e sulle prestazioni per selezionare le immagini più comuni da includere nei cataloghi, nelle campagne di marketing e così via. È anche possibile formulare criteri per l&#39;archiviazione e il rinnovo delle licenze basati su tali statistiche.
 
@@ -38,10 +36,10 @@ Potete visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
 
 1. Consultate la sezione Statistiche **[!UICONTROL di]** utilizzo per sapere di quali entità faceva parte la risorsa e di quali soluzioni creative ha utilizzato di recente. Maggiore è l’utilizzo, maggiori saranno le probabilità che la risorsa sia popolare tra gli utenti. I dati di utilizzo vengono visualizzati sotto le intestazioni seguenti:
 
-   * **Risorsa**: Il numero di volte in cui la risorsa faceva parte di una raccolta o di una risorsa composta
-   * **Web e dispositivi mobili**: Il numero di volte in cui la risorsa faceva parte di siti Web e app
-   * **Social**: Il numero di volte in cui la risorsa è stata utilizzata nelle soluzioni, come Adobe Social e Adobe Campaign
-   * **E-mail**: Numero di volte in cui la risorsa è stata utilizzata nelle campagne e-mail
+   * **[!UICONTROL Risorsa]**: Il numero di volte in cui la risorsa faceva parte di una raccolta o di una risorsa composta.
+   * **[!UICONTROL Web e dispositivi mobili]**: Il numero di volte in cui la risorsa faceva parte di siti Web e app.
+   * **[!UICONTROL Social]**: Il numero di volte in cui la risorsa è stata utilizzata nelle soluzioni, come Adobe Social e Adobe Campaign.
+   * **[!UICONTROL E-mail]**: Il numero di volte in cui la risorsa è stata utilizzata nelle campagne e-mail.
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
@@ -95,6 +93,7 @@ Risorse Adobe Experience Manager (AEM) recupera i dati di utilizzo relativi alle
 1. Nella procedura guidata, selezionate un centro dati e fornite le credenziali, incluso il nome dell&#39;organizzazione, il nome utente e il segreto condiviso.
 
    ![Configurare Adobe Analytics per Assets Insights in AEM](assets/insights_config2.png)
+
    *Figura: Configurare Adobe Analytics per Assets Insights in AEM*
 
 1. Tocca o fai clic su **[!UICONTROL Autentica]**. Dopo l’autenticazione delle credenziali da parte di AEM, dall’elenco Suite **[!UICONTROL di]** rapporti, scegliete una suite di rapporti di Adobe Analytics da cui recuperare i dati da Asset Insights. Fate clic su **[!UICONTROL Aggiungi]**.
