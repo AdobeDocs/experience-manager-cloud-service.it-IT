@@ -2,7 +2,7 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: 'Da completare '
 translation-type: tm+mt
-source-git-commit: 3d2705262d9c82a1486e460247b468259d5ed600
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -83,7 +83,37 @@ Il contenuto viene replicato da Autore a Pubblica tramite un meccanismo secondar
 
 ### Registri {#logs}
 
-Per ulteriori informazioni sull’utilizzo dei registri, consulta la documentazione [](/help/implementing/developing/introduction/logging.md)Registrazione.
+Per lo sviluppo locale, le voci di registro sono scritte in file locali nella `/crx-quickstart/logs` cartella.
+
+Negli ambienti Cloud, gli sviluppatori possono scaricare i registri tramite Cloud Manager o utilizzare uno strumento della riga di comando per localizzare i registri. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**Impostazione del livello di registro**
+
+Per modificare i livelli di registro per gli ambienti Cloud, la configurazione Sling Logging OSGI deve essere modificata, seguita da una ridistribuzione completa. Poiché non è istantaneo, essere cauti nell&#39;attivare log verbosi in ambienti di produzione che ricevono molto traffico. In futuro, è possibile che ci saranno meccanismi per cambiare più rapidamente il livello di registro.
+
+> [!NOTE]
+> 
+> Per eseguire le modifiche di configurazione elencate di seguito, è necessario crearle in un ambiente di sviluppo locale e quindi inviarle a un’istanza AEM come servizio cloud. Per ulteriori informazioni su come eseguire questa operazione, consulta [Implementazione in AEM come servizio](/help/implementing/deploying/overview.md)cloud.
+
+**Attivazione del livello di registro DEBUG**
+
+Il livello di registro predefinito è INFO, ovvero i messaggi DEBUG non vengono registrati.
+Per attivare il livello di registro DEBUG, impostare la variabile
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+da eseguire il debug. Non lasciare il registro a livello di registro DEBUG più a lungo del necessario, in quanto genera molti registri.
+Una riga nel file di debug in genere inizia con DEBUG, quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Esempio:
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+I livelli di registro sono i seguenti:
+
+| 0 | Errore irreversibile | L&#39;azione non è riuscita e il programma di installazione non può proseguire. |
+|---|---|---|
+| 1 | Errore | L&#39;azione non è riuscita. L&#39;installazione continua, ma una parte di CRX non è stata installata correttamente e non funzionerà. |
+| 2 | Avvertenza | L&#39;azione è riuscita ma ha incontrato dei problemi. CRX può funzionare o meno correttamente. |
+| 3 | Informazioni | L&#39;azione è riuscita. |
 
 ### Cassetti di thread {#thread-dumps}
 
