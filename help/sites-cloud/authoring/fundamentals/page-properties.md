@@ -2,7 +2,7 @@
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -181,8 +181,10 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 * **Configurazione targeting**
 
    * Seleziona un [marchio per specificare l’ambito di targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   >[!NOTE]
+   >Questa opzione richiede che l’account utente appartenga al gruppo `Target Adminstrators`.
 
-### Autorizzazioni   {#permissions}
+### Autorizzazioni  {#permissions}
 
 * **Autorizzazioni**
 
