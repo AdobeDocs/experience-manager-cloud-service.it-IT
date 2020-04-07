@@ -3,7 +3,7 @@ title: Elabora risorse tramite gestori di file multimediali e flussi di lavoro
 description: Scopri i diversi gestori di contenuti multimediali e come utilizzarli nei flussi di lavoro per eseguire attività sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ I gestori di file multimediali sono servizi all’interno di Risorse AEM che ese
 
 >[!NOTE]
 >
->Per una descrizione di tutti i formati supportati da Risorse AEM e delle funzioni supportate per ciascun formato, fai riferimento alla pagina Formati [supportati da](file-format-support.md) Risorse.
+>Consulta l’articolo Formati [di file supportati da](file-format-support.md) Risorse per una descrizione di tutti i formati supportati da Risorse AEM, nonché delle funzioni supportate per ciascun formato.
 
 ## Gestori file multimediali predefiniti {#default-media-handlers}
 
@@ -407,7 +407,7 @@ A questo scopo, si utilizzerà ImageMagick. ImageMagick è una suite software gr
 
 Prima installa ImageMagick sul disco che ospita il server AEM:
 
-1. Installa ImageMagick: fare riferimento alla documentazione [ImageMagick](https://www.imagemagick.org/script/download.php).
+1. Installa ImageMagick: Consulta la documentazione [di](https://www.imagemagick.org/script/download.php)ImageMagick.
 1. Impostare lo strumento in modo da poter eseguire la conversione sulla riga di comando.
 1. Per verificare se lo strumento è installato correttamente, eseguire il comando seguente `convert -h` sulla riga di comando.
 
