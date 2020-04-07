@@ -1,11 +1,11 @@
 ---
-source-git-commit: 06351c5fa81d9841f47c086cdbc66c0c1d1cb5cc
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 translation-type: tm+mt
 
 ---
 # Documentazione del servizio Adobe Experience Manager Cloud
 
-Questo è l&#39;archivio della documentazione del servizio [!UICONTROL Adobe Experience Manager] Cloud. Questa documentazione descrive l’installazione, l’amministrazione, l’utilizzo dell’authoring e come personalizzare AEM con il servizio Cloud.
+Questo è l&#39;archivio della documentazione del servizio Adobe Experience Manager Cloud. Questa documentazione descrive l’installazione, l’amministrazione, l’utilizzo dell’authoring e come personalizzare AEM con il servizio Cloud.
 
 I vostri contributi alla documentazione sono i benvenuti. Consulta le risorse seguenti:
 
