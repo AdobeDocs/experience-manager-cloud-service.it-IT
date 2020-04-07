@@ -3,7 +3,7 @@ title: Operazioni asincrone
 description: Risorse AEM ottimizza le prestazioni completando in modo asincrono alcune attività che richiedono risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -29,7 +29,7 @@ Potete visualizzare lo stato dei processi asincroni dalla pagina Stato **[!UICON
 
 ## Monitoraggio dello stato delle operazioni asincrone {#monitoring-the-status-of-asynchronous-operations}
 
-Ogni volta che AEM Assets elabora un’operazione in modo asincrono, riceverai una notifica nella tua inbox ed e-mail.
+Ogni volta che AEM Assets elabora un’operazione in modo asincrono, riceverai una notifica nella inbox <!-- and through email -->.
 
 Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla pagina Stato **[!UICONTROL processo]** asincrono.
 
