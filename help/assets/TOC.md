@@ -52,11 +52,11 @@ source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
    + [Metadati XMP](xmp-metadata.md)
    + [Funzionalità di MediaLibrary](medialibrary.md)
    + [Importare ed esportare i metadati delle risorse](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD=====
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD=====
 + Condivisione e distribuzione delle risorse {#brandportal}
    + [Configurare AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Pubblicare AEM Assets su Brand Portal](publish-to-brand-portal.md)
->>>>>>>>>>padre di 733b637... update toc
+>>>>>>>>>>padre di 733b637... update toc===========elemento padre di da6a8ae... Configurare Brand Portal con AEM Assets su Cloud
 
 
 
