@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
 
 ---
 
@@ -52,6 +52,17 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [Metadati XMP](xmp-metadata.md)
    + [Funzionalità di MediaLibrary](medialibrary.md)
    + [Importare ed esportare i metadati delle risorse](metadata-import-export.md)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD=====
++ Condivisione e distribuzione delle risorse {#brandportal}
+   + [Configurare AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Pubblicare AEM Assets su Brand Portal](publish-to-brand-portal.md)
+>>>>>>>>>>padre di 733b637... update toc
+
+
+
+
+
+> 
 + Frammenti di contenuto {#content-fragments}
    + [Utilizzo di frammenti di contenuto](content-fragments/content-fragments.md)
    + [Gestione dei frammenti di contenuto](content-fragments/content-fragments-managing.md)
