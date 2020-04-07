@@ -83,7 +83,7 @@ Risorse AEM esegue ogni giorno un processo di eliminazione alle 1:00 per elimina
 
 ## Configurazione delle soglie per l&#39;elaborazione asincrona {#configuring-thresholds-for-asynchronous-processing}
 
-Puoi configurare il numero di soglia di risorse o riferimenti per Risorse AEM per l’elaborazione asincrona di una determinata operazione.
+Puoi configurare il numero di soglia di risorse o riferimenti per Risorse AEM per elaborare una determinata operazione in modo asincrono.
 
 ### Configurazione delle soglie per le operazioni di eliminazione asincrone {#configuring-thresholds-for-asynchronous-delete-operations}
 
