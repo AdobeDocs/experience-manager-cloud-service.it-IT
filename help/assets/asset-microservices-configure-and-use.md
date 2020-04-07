@@ -3,7 +3,7 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,6 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 # Introduzione all’utilizzo dei microservizi per le risorse {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -19,14 +18,13 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente delle risorse tramite i servizi cloud, gestiti da Adobe per la gestione ottimale di diversi tipi di risorse e opzioni di elaborazione.
+I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente delle risorse mediante i servizi cloud. Adobe gestisce i servizi per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione.
 
-L’elaborazione delle risorse viene eseguita in base alla configurazione in Profili **[!UICONTROL di]** elaborazione, che fornisce una configurazione predefinita, e consente all’amministratore di aggiungere una configurazione di elaborazione delle risorse più specifica. Per consentire l’estensibilità e la personalizzazione completa, l’elaborazione delle risorse consente una configurazione opzionale dei flussi di lavoro post-elaborazione, che vengono quindi creati e mantenuti dall’amministratore.
+L’elaborazione delle risorse dipende dalla configurazione in Profili **[!UICONTROL di]** elaborazione, che fornisce una configurazione predefinita, e consente all’amministratore di aggiungere una configurazione di elaborazione delle risorse più specifica. Gli amministratori possono creare e mantenere le configurazioni dei flussi di lavoro post-elaborazione, inclusa la personalizzazione facoltativa. La personalizzazione dei flussi di lavoro consente estensibilità e personalizzazione completa.
 
-Di seguito viene illustrato un flusso di alto livello per l’elaborazione delle risorse in Experience Manager come servizio Cloud.
+Di seguito è riportato un flusso di alto livello per l’elaborazione delle risorse.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -37,7 +35,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> Per i clienti che si aggiornano dalle versioni precedenti di Experience Manager, l’elaborazione delle risorse descritta in questa sezione sostituisce il modello di flusso di lavoro &quot;DAM Update Asset&quot; utilizzato per l’elaborazione dell’assimilazione delle risorse in precedenza. La maggior parte della generazione di rappresentazioni standard e dei passaggi relativi ai metadati vengono sostituiti dall’elaborazione dei microservizi di risorse e gli eventuali passaggi rimanenti possono essere sostituiti dalla configurazione del flusso di lavoro di post-elaborazione.
+> L’elaborazione delle risorse qui descritta sostituisce il modello di `DAM Update Asset` flusso di lavoro esistente nelle versioni precedenti di Experience Manager. La maggior parte della generazione di rappresentazioni standard e dei passaggi relativi ai metadati vengono sostituiti dall’elaborazione dei microservizi di risorse e gli eventuali passaggi rimanenti possono essere sostituiti dalla configurazione del flusso di lavoro di post-elaborazione.
 
 ## Introduzione all’elaborazione delle risorse {#get-started}
 
@@ -56,9 +54,9 @@ Per configurare i microservizi delle risorse, gli amministratori possono utilizz
 
 ### Configurazione predefinita {#default-config}
 
-Con la configurazione predefinita, è configurato solo il profilo di elaborazione [!UICONTROL standard] . Si tratta di un elemento incorporato e non può essere modificato. Viene sempre eseguito per garantire che tutte le elaborazioni richieste dall&#39;applicazione siano effettuate.
+Con la configurazione predefinita, è configurato solo il profilo di elaborazione standard. Il profilo di elaborazione standard non è visibile nell&#39;interfaccia utente e non è possibile modificarlo. Viene sempre eseguito per elaborare le risorse caricate. Un profilo di elaborazione standard garantisce che tutte le elaborazioni di base richieste da Experience Manager siano completate su tutte le risorse.
 
-![processing-profile-standard](assets/processing-profiles-standard.png)
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
 Il profilo di elaborazione standard fornisce la seguente configurazione di elaborazione:
 
@@ -77,17 +75,18 @@ I microservizi delle risorse supportano un’ampia varietà di formati di file i
 
 Ogni configurazione di profilo di elaborazione include un elenco di rappresentazioni. Per ogni rappresentazione, potete specificare quanto segue:
 
-* nome rappresentazione
-* formato di rappresentazione (sono supportati JPEG, PNG o GIF)
-* larghezza e altezza della rappresentazione in pixel (se non specificata, si assume la dimensione in pixel dell’originale)
-* qualità di rappresentazione (per JPEG) in percentuale
-* I tipi MIME inclusi ed esclusi definiscono, a quali tipi di risorse si applica il profilo di elaborazione
+* Nome rappresentazione.
+* Formato di rappresentazione supportato, ad esempio JPEG, PNG o GIF.
+* Larghezza e altezza della rappresentazione in pixel. Se non viene specificato, viene usata la dimensione in pixel dell’immagine originale.
+* Qualità di rappresentazione JPEG in percentuale.
+* Tipi MIME inclusi ed esclusi per definire l&#39;applicabilità di un profilo.
 
 ![elaborazione-profili-aggiunta](assets/processing-profiles-adding.png)
 
-Quando viene salvato un nuovo profilo di elaborazione, questo viene aggiunto all&#39;elenco dei profili di elaborazione configurati. Questi profili di elaborazione possono quindi essere applicati alle cartelle nella gerarchia delle cartelle per renderli efficaci per i caricamenti delle risorse e le risorse effettuate in tale cartella.
+Quando create e salvate un nuovo profilo di elaborazione, questo viene aggiunto all&#39;elenco dei profili di elaborazione configurati. Potete applicare questi profili di elaborazione alle cartelle nella gerarchia delle cartelle per renderli efficaci per il caricamento delle risorse e l’elaborazione delle risorse.
 
-![processing-profile-list](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### Larghezza e altezza della rappresentazione {#rendition-width-height}
 
@@ -103,13 +102,13 @@ In caso contrario, il tipo MIME viene controllato rispetto al tipo MIME incluso 
 
 #### Rappresentazioni speciali FPO {#special-fpo-rendition}
 
-Il profilo di elaborazione può includere una speciale &quot;rappresentazione FPO&quot;, utilizzata quando si utilizza [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) con Adobe InDesign per inserire collegamenti diretti alle risorse da Experience Manager nei documenti InDesign.
+Quando inserite risorse di grandi dimensioni da AEM nei documenti Adobe InDesign, un creativo professionista deve attendere molto tempo dopo aver [inserito una risorsa](https://helpx.adobe.com/indesign/using/placing-graphics.html). Nel frattempo, all&#39;utente non è consentito utilizzare InDesign. Questo interrompe il flusso creativo e influisce negativamente sull&#39;esperienza dell&#39;utente. Adobe consente di iniziare temporaneamente a inserire rappresentazioni di piccole dimensioni nei documenti InDesign, che possono essere sostituite con risorse a risoluzione piena on-demand in un secondo momento. Experience Manager fornisce rappresentazioni utilizzate solo per il posizionamento (FPO). Tali rappresentazioni FPO hanno una dimensione file ridotta ma hanno le stesse proporzioni.
 
-Per informazioni su come attivarla per il profilo di elaborazione, consulta la [documentazione](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) di Adobe Asset Link.
+Il profilo di elaborazione può includere una rappresentazione FPO (solo per posizionamento). Consulta la [documentazione](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) di Adobe Asset Link per comprendere se è necessario attivarla per il profilo di elaborazione. Per ulteriori informazioni, consulta la documentazione [completa di](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)Adobe Asset Link.
 
 ## Utilizzare i microservizi delle risorse per elaborare le risorse {#use-asset-microservices}
 
-Una volta creati ulteriori profili di elaborazione, questi devono essere applicati a cartelle specifiche affinché Experience Manager possa utilizzarli nell’elaborazione delle risorse per le risorse caricate o aggiornate in tali cartelle. Il profilo di elaborazione standard integrato viene sempre eseguito.
+Create e applicate profili di elaborazione personalizzati aggiuntivi a cartelle specifiche per Experience Manager per elaborare le risorse caricate o aggiornate in queste cartelle. Il profilo di elaborazione standard predefinito viene sempre eseguito ma non è visibile nell&#39;interfaccia utente. Se aggiungete un profilo personalizzato, entrambi i profili vengono utilizzati per elaborare le risorse caricate.
 
 Esistono due modi per applicare i profili di elaborazione alle cartelle:
 
@@ -149,15 +148,15 @@ L’aggiunta di una configurazione di flusso di lavoro post-elaborazione a Exper
 * L&#39;ultimo passo di tale modello deve essere il `DAM Update Asset Workflow Completed Process` passo. Questo è necessario per garantire che AEM sia a conoscenza del termine dell’elaborazione e che la risorsa possa essere contrassegnata come elaborata (&quot;Nuovo&quot;)
 * Creazione di una configurazione per il servizio Custom Workflow Runner, che consente di configurare l&#39;esecuzione di un modello di flusso di lavoro post-elaborazione in base al percorso (percorso della cartella) o all&#39;espressione regolare
 
-### Creazione di modelli di flusso di lavoro post-elaborazione
+### Creare modelli di flussi di lavoro post-elaborazione {#create-post-processing-workflow-models}
 
-I modelli di flusso di lavoro post-elaborazione sono modelli di flusso di lavoro AEM standard. Se è necessaria un&#39;elaborazione diversa per diverse posizioni di repository o tipi di risorse, è necessario crearne di diversi.
+I modelli di flusso di lavoro post-elaborazione sono modelli di flusso di lavoro AEM standard. Create modelli diversi se avete bisogno di un&#39;elaborazione diversa per diverse posizioni di repository o tipi di risorse.
 
-Le fasi di elaborazione devono essere aggiunte in base alle esigenze. Potete utilizzare tutti i passaggi out-of-the-box supportati disponibili, nonché qualsiasi passaggio di flusso di lavoro implementato personalizzati.
+Le fasi di elaborazione devono essere aggiunte in base alle esigenze. Potete utilizzare tutti i passaggi supportati disponibili, nonché eventuali passaggi di flusso di lavoro implementati personalizzati.
 
-L&#39;ultimo passaggio di ciascuno dei flussi di lavoro di post-elaborazione deve essere il `DAM Update Asset Workflow Completed Process`. In questo modo la risorsa verrà contrassegnata correttamente come &quot;elaborazione completata&quot;.
+Assicurati che l&#39;ultimo passaggio di ogni flusso di lavoro di post-elaborazione sia `DAM Update Asset Workflow Completed Process`. L’ultimo passaggio consente a Experience Manager di sapere quando l’elaborazione delle risorse è stata completata.
 
-### Configurazione dell&#39;esecuzione del flusso di lavoro di post-elaborazione
+### Configurare l&#39;esecuzione del flusso di lavoro di post-elaborazione {#configure-post-processing-workflow-execution}
 
 Per configurare i modelli di flusso di lavoro post-elaborazione da eseguire per le risorse caricate o aggiornate nel sistema al termine dell’elaborazione dei microservizi di risorse, è necessario configurare il servizio Custom Workflow Runner.
 
@@ -171,4 +170,4 @@ Il servizio Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflo
 >La configurazione di Custom Workflow Runner è una configurazione di un servizio OSGi. Consultate [Implementare in Experience Manager](/help/implementing/deploying/overview.md) per informazioni su come distribuire una configurazione OSGi.
 > La console Web OSGi, a differenza delle distribuzioni di servizi locali e gestiti di AEM, non è direttamente disponibile nelle distribuzioni di servizi cloud.
 
-Per informazioni dettagliate, su quale delle fasi standard del flusso di lavoro può essere utilizzata nel flusso di lavoro di post-elaborazione, consultate la procedura [Flusso di lavoro nel flusso di lavoro](developer-reference-material-apis.md#post-processing-workflows-steps) di post-elaborazione (in riferimento allo sviluppatore).
+Per informazioni dettagliate sul passaggio del flusso di lavoro standard da utilizzare nel flusso di lavoro di post-elaborazione, consultate i passaggi del [flusso di lavoro nel flusso di lavoro](developer-reference-material-apis.md#post-processing-workflows-steps) di post-elaborazione (in riferimento allo sviluppatore).
