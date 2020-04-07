@@ -19,10 +19,10 @@ Anche se siamo lieti di ricevere contributi per migliorare la documentazione di 
 
 ## Come contribuire
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe vuole rendere più semplice la presentazione dei contributi. Potete contribuire in due modi:
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe vuole rendere più semplice la presentazione dei contributi. Potete contribuire in due modi:
 =======
 =======
->>>>>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in staging========principale di f6e5291... Unisci &quot;staging&quot; ramo di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in stagingIl tuo contributo dipende da chi sei e dal tipo di modifiche che desideri apportare:
+>>>>>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in staging========principale di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in staging========principale del 190577c... Unisci il ramo &#39;master&#39; in stagingIl tuo contributo dipende da chi sei e dal tipo di modifiche che desideri apportare:
 
 
 
@@ -55,10 +55,10 @@ I problemi ti consentono di descrivere facilmente la tua idea di miglioramento a
 
 ### Creare una richiesta pull {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIse si riscontra un problema e si sa esattamente come risolverlo, prendere in considerazione la creazione di una richiesta di pull. Le richieste di pull consentono di apportare le proprie modifiche alla documentazione, che vengono poi riviste per essere incluse da un membro del team di Docs di AEM. È sufficiente fare clic sul collegamento **Modifica pagina** nella parte superiore del pannello di navigazione a destra su qualsiasi pagina per apportare le modifiche suggerite e creare la richiesta di pull.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADHEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt; Le richieste di pull consentono di apportare le proprie modifiche alla documentazione, che vengono poi riviste per essere incluse da un membro del team di Docs di AEM. È sufficiente fare clic sul collegamento **Modifica pagina** nella parte superiore del pannello di navigazione a destra su qualsiasi pagina per apportare le modifiche suggerite e creare la richiesta di pull.
 =======
 >=======>
->>>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in staging========principale di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in area di pubblicazione
+>>>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in staging========principale di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in staging========principale del 190577c... Unisci il ramo &#39;master&#39; in staging
 
 
 
@@ -85,17 +85,17 @@ Guardate il seguente video per una rapida panoramica su come creare problemi e t
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 ### Contributi dei dipendenti Adobe
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIse siete un dipendente Adobe e avete un contributo, utilizzate l&#39; `AdobeDocs` organizzazione nel git aziendale.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIse siete un dipendente Adobe e avete un contributo, utilizzate l&#39; `AdobeDocs` organizzazione all&#39;interno del programma aziendale.
 
 Naturalmente, siamo lieti di qualsiasi contributo e valuteremo il vostro contributo se viene fornito sul repository pubblico, ma le richieste pull da parte dei dipendenti Adobe sono più facili da elaborare e possono essere approvate più rapidamente sul repo aziendale. Assicurarsi che tutte le informazioni proprietarie siano discusse solo nel repo aziendale.
 =======
-=======
->>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in staging========principale di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in area di pubblicazione
+>=======>
+>>>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in staging========principale di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in staging========principale del 190577c... Unisci il ramo &#39;master&#39; in staging
 
 
 
 
-
+>> 
 
 ## Strumenti e configurazione
 
