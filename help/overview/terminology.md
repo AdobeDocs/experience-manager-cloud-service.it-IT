@@ -2,7 +2,7 @@
 title: Introduzione ad Adobe Experience Manager as a Cloud Service - Terminologia
 description: 'Introduzione ad Adobe Experience Manager as a Cloud Service - Terminologia. '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -38,6 +38,7 @@ I termini seguenti sono utilizzati in riferimento ad Adobe Experience Manager (A
 | Microservizi per le risorse | Servizi di elaborazione delle risorse digitali basati su cloud che si prestano a diversi casi d’uso per l’elaborazione di risorse, ad esempio generazione di rendering, elaborazioni di PDF, gestione delle risorse secondarie, estrazione del testo e così via. Per ulteriori informazioni, consulta [Panoramica sui microservizi per le risorse](/help/assets/asset-microservices-overview.md). |
 | Archivio Git di Cloud Manager | Archivio in cui sono memorizzati il codice e le impostazioni di configurazione dei clienti. |
 | Provider cloud | AEM as a Cloud Service supporta sia Azure che AWS come provider cloud. |
+| Rete per la distribuzione di contenuti (CDN) | AEM as Cloud Service viene fornito con una rete CDN predefinita. Il suo scopo principale è ridurre la latenza distribuendo contenuti memorizzabili nella cache dai nodi della CDN al perimetro, vicino al browser. È completamente gestita e configurata per garantire prestazioni ottimali alle applicazioni AEM. |
 | Archivio dei contenuti | Archivio in cui i contenuti vengono salvati in modo permanente. |
 | Isolamento Enterprise | Funzione per cui ogni istanza di AEM as a Cloud Service è isolata dalle altre istanze. |
 | Golden master | Livello di pubblicazione di AEM. |
