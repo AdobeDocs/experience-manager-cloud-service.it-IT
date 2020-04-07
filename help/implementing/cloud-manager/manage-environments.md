@@ -2,7 +2,7 @@
 title: Gestione degli ambienti - Servizio Cloud
 description: Gestione degli ambienti - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 
 ---
 
@@ -38,9 +38,6 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
 
 
 1. Per aggiungere un ambiente, l’utente fa clic sul pulsante **Aggiungi ambiente**.
-
-   >[!NOTE]
-   >È possibile accedere a questo pulsante anche dalla pagina Ambienti o dalla scheda Ambienti. L&#39;utente visualizzerà questa opzione solo se dispone dell&#39;autorizzazione necessaria. Per qualsiasi domanda, contattate il vostro rappresentante Adobe.
 
    ![](assets/add-environment.png)
 
