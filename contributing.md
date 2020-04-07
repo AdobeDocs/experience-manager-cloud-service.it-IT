@@ -1,11 +1,11 @@
 ---
-source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
+source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
 translation-type: tm+mt
 
 ---
 # Contributo alla documentazione del servizio Adobe Experience Manager Cloud
 
-Grazie per aver scelto di contribuire alla documentazione del servizio [!UICONTROL Adobe Experience Manager] Cloud! Accogliamo con favore i contributi forniti dai nostri dipendenti della community e Adobe al di fuori dei team di documentazione.
+Grazie per aver scelto di contribuire alla documentazione del servizio Adobe Experience Manager Cloud! Accogliamo con favore i contributi forniti dall&#39;intera comunità di lettori e da altri dipendenti Adobe.
 
 Questo file descrive come contribuire e indica le linee guida da seguire per apportare i contributi.
 
@@ -13,60 +13,93 @@ Questo file descrive come contribuire e indica le linee guida da seguire per app
 
 Questo progetto ha adottato il Codice di condotta di [Adobe Open Source](code-of-conduct.md). Contribuendo alla documentazione di AEM, l&#39;Utente accetta di aderire a questo codice di condotta. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Linee guida per il contributo alla documentazione di AEM
+## Linee guida per il contributo
 
-Siamo lieti di ricevere contributi per migliorare la documentazione del servizio AEM Cloud, ma chiediamo che i contributi siano conformi a determinate linee guida e a determinati standard. Per ulteriori informazioni, consulta le [Linee guida per la documentazione](guidelines.md) di AEM.
+Anche se siamo lieti di ricevere contributi per migliorare la documentazione di AEM, chiediamo che i contributi rispettino, ove possibile, determinate linee guida e determinati standard. Per ulteriori informazioni, consulta le [Linee guida per la documentazione](guidelines.md) di AEM.
 
 ## Come contribuire
 
-Il tuo contributo dipende da chi sei e dal tipo di modifiche che vorresti apportare:
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe vuole rendere il più semplice possibile la presentazione dei contributi. Potete contribuire in due modi:
+=======
+=======
+>>>>>>>>>>padre di f6e5291... Unisci &quot;staging&quot; ramo di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in stagingIl tuo contributo dipende da chi sei e dal tipo di modifiche che desideri apportare:
 
-<!--
-We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
---- master
--->
+
+
+
+
+> 
 
 ### Creare un problema
+>>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in area di pubblicazione
 
-Hai un suggerimento, un&#39;osservazione sui documenti attuali, o hai dei dubbi sul modo in cui qualcosa viene descritto? File di un problema. I problemi sono anche eccellenti se avete qualcosa da contribuire, ma non sentitevi a proprio agio nel modificare i documenti o fare una richiesta pull.
 
-### Modifiche minori
 
-Per inviare piccoli aggiornamenti, fate clic sul collegamento **Modifica** in un articolo, che apre l’articolo sorgente in GitHub. Utilizzate l’interfaccia utente GitHub per effettuare gli aggiornamenti. Per ulteriori informazioni, consulta la guida [](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) generale per i collaboratori di Adobe Docs.
 
-Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice in questo repo sono coperti dai termini di utilizzo di Adobe.
 
-### Modifiche principali o nuovi articoli dei membri della community
 
-Se fai parte della community Adobe e vuoi creare un articolo o inviare modifiche importanti, fai clic sulla scheda **Issues (Problemi)** nell’archivio GitHub per inviare la tua problematica. L’esecuzione dell’invio dà inizio a una conversazione con il team di documentazione. Per pubblicare nuovi contenuti, dovrai collaborare con lo scrittore (o altro dipendente Adobe).
 
-Se invii una richiesta pull con modifiche significative alla documentazione e agli esempi di codice, nella richiesta pull verrà visualizzato un messaggio in cui si chiede di inviare un contratto di licenza di contributo online (CLA). Devi completare il modulo online prima di poter esaminare la tua richiesta di pull.
+* [Creare un&#39;edizione](#create-an-issue)
+* [Creare una richiesta pull](#create-a-pull-request)
 
-<!--
-If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click on the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
---master
--->
+Il metodo scelto dipende dalla comodità con cui state modificando la documentazione in GitHub.
+
+>[!NOTE]
+I contributi inviati sono coperti dai termini di utilizzo di [Adobe.](https://www.adobe.com/legal/terms.html)
+
+### Creare un problema {#create-an-issue}
+
+Hai un suggerimento, un&#39;osservazione sui documenti attuali, o hai dei dubbi sul modo in cui qualcosa viene descritto? Quindi create un problema. I problemi sono anche eccellenti se si ha qualcosa da contribuire, ma non sentirsi a proprio agio nel modificare i documenti o fare una richiesta pull.
+
+I problemi ti consentono di descrivere facilmente la tua idea di miglioramento ai documenti e un membro del team Docs di AEM può esaminarla. È sufficiente fare clic sul collegamento **Registra un problema** nella parte superiore del pannello di navigazione a destra in qualsiasi pagina per creare un problema.
+
+### Creare una richiesta pull {#create-a-pull-request}
+
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIse vedete un problema e sapete esattamente come risolverlo, prendete in considerazione la creazione di una richiesta di pull. Le richieste di pull consentono di apportare le proprie modifiche alla documentazione, che vengono poi riviste per essere incluse da un membro del team di Docs di AEM. È sufficiente fare clic sul collegamento **Modifica pagina** nella parte superiore del pannello di navigazione a destra su qualsiasi pagina per apportare le modifiche suggerite e creare la richiesta di pull.
+=======
+=======
+>>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in area di pubblicazione
+
+
+
+
+
 
 ### Modifiche principali apportate dai dipendenti Adobe
+>>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in area di pubblicazione
 
-Se sei un autore tecnico, un manager di programma o uno sviluppatore del team di prodotti per una soluzione Adobe Experience Cloud ed è il tuo compito contribuire o creare articoli tecnici, devi usare l’archivio privato all’indirizzo `https://git.corp.adobe.com/AdobeDocs`.
 
-I dipendenti Adobe di altre parti del mondo Adobe devono utilizzare il repo pubblico per aggiornamenti secondari.
 
-## Contratto di licenza per i collaboratori
 
-Tutti i contributi di terzi a questo progetto devono essere accompagnati da un contratto di licenza firmato per i collaboratori. In tal modo è concesso ad Adobe il permesso di ridistribuire i contributi come parte del progetto. [Firmate il nostro contratto di licenza.](https://opensource.adobe.com/cla.html) È sufficiente inviare un contratto di licenza Adobe una sola volta, quindi se ne hai già inoltrato uno in precedenza, puoi iniziare!
+
+
+
+Tutte le richieste pull devono essere accompagnate da un contratto di licenza per [collaboratori firmato o da un contratto di licenza per i collaboratori.](https://opensource.adobe.com/cla.html)  In tal modo è concesso ad Adobe il permesso di ridistribuire i contributi come parte del progetto. È sufficiente inviare un contratto di licenza Adobe una sola volta, quindi se ne hai già inoltrato uno in precedenza, puoi iniziare!
+
+### Video introduttivo
+
+Guardate il seguente video per una rapida panoramica su come creare problemi e tirare le richieste.
+
+>[!VIDEO](https://video.tv.adobe.com/v/27069)
+
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+### Contributi dei dipendenti Adobe
+
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIse siete dipendenti Adobe e disponete di un contributo, utilizzate l&#39; `AdobeDocs` organizzazione nel git aziendale.
+
+Naturalmente, siamo lieti di qualsiasi contributo e valuteremo il vostro contributo se viene fornito sul repository pubblico, ma le richieste pull da parte dei dipendenti Adobe sono più facili da elaborare e possono essere approvate più rapidamente sul repo aziendale. Assicurarsi che tutte le informazioni proprietarie siano discusse solo nel repo aziendale.
+=======
+=======
+>>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in area di pubblicazione
+
+
+
+
 
 
 ## Strumenti e configurazione
 
 I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per effettuare modifiche di base o fork del repo per apportare importanti contributi.
-
-<!--
-If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
-We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
----master
--->
 
 Per una panoramica dell’utilizzo della piattaforma di authoring GitHub, consulta la Guida [per i collaboratori di](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) Adobe Docs.
 
@@ -78,8 +111,14 @@ Tutti gli articoli in questo archivio utilizzano la marca aromatizzata GitHub. S
 * [Foglio di lavoro per la stampa](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Etichette
+>>>>>>>padre di f6e5291... Unisci il ramo &#39;staging&#39; di https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in area di pubblicazione
 
-Nell&#39;archivio pubblico, le etichette automatizzate vengono assegnate alle richieste di pull per aiutarci a gestire il flusso di lavoro delle richieste pull e per consentirvi di sapere cosa accade con la richiesta pull:
 
-* **Modifica inviata all’autore**: L&#39;autore è stato informato della richiesta di pull in sospeso.
-* **ready-to-merge**: Pronto per la revisione da parte del team di revisione della richiesta di pull.
+
+
+
+
+
+## Ulteriori informazioni
+
+Per ulteriori informazioni sull’utilizzo della piattaforma di authoring GitHub, consulta la Guida [per i collaboratori di](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) Adobe Docs.
