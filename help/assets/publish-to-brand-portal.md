@@ -3,7 +3,7 @@ title: Pubblicare risorse, cartelle e raccolte in Brand Portal
 description: Pubblicate risorse, cartelle e raccolte in Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4194f089f87deeb62095703614947a295235edbf
+source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 
 ---
 
@@ -21,8 +21,9 @@ Se effettui modifiche successive alla risorsa, alla cartella o alla raccolta ori
 * [Pubblicare raccolte in Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
->>Adobe consiglia la pubblicazione scaglionata, preferibilmente nelle ore non di picco, in modo che l&#39;autore di AEM non occupi risorse in eccesso.
 >
+>Adobe consiglia la pubblicazione scaglionata, preferibilmente nelle ore non di picco, in modo che l’autore di AEM non occupi risorse in eccesso.
+
 
 ## Publish assets to Brand Portal {#publish-assets-to-bp}
 
