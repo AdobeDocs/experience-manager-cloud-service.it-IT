@@ -2,7 +2,7 @@
 title: Note sulla versione 2020.4.0
 description: Note sulla versione 2020.4.0
 translation-type: tm+mt
-source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
+source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
 # Note sulla versione di AEM as a Cloud Service 2020.4.0 {#release-notes}
 
 La sezione seguente illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.4.0.
+
+## Release Date {#release-date}
+
+La data di rilascio per Experience Manager come servizio cloud 2020.4.0 è il 9 aprile 2020.
 
 ## Assets {#assets}
 
