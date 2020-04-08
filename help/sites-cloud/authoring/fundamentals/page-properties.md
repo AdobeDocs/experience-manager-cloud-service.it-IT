@@ -2,7 +2,7 @@
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -104,6 +104,7 @@ Le proprietà sono distribuite su più schede.
    >Ad esempio, se definisci un alias di `latin-lang` per il nodo `/content/we-retail/spanish`, è possibile accedere a questa pagina tramite `/content/we-retail/latin-language`.
    >
    >Per maggiori dettagli, consulta la sezione sui nomi di pagina localizzati nelle best practice per la gestione di SEO e URL.
+
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -170,13 +171,17 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 
 * **Cloud Services**
 
-   * Consente di definire le proprietà per Cloud Services. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * Consente di definire le proprietà per Cloud Services.
+   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  -->
 
 ### Personalizzazione {#personalization}
 
 * **Configurazioni ContextHub**
 
-   * Consente di selezionare la configurazione ContextHub e il percorso dei segmenti. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * Consente di selezionare la configurazione ContextHub e il percorso dei segmenti.
+   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  -->
 
 * **Configurazione targeting**
 
@@ -188,16 +193,24 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 
 * **Autorizzazioni**
 
-   * Aggiungere autorizzazioni <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-   * Modificare un gruppo utenti chiuso <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-   * Visualizzare le autorizzazioni effettive <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * Aggiungere autorizzazioni
+   * Modificare un gruppo utenti chiuso
+   * Visualizzare le autorizzazioni effettive
+   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+
+   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+
+   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-   * Consente di definire le proprietà per una pagina Blueprint nella gestione multisito. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * Consente di definire le proprietà per una pagina Blueprint nella gestione multisito.
+   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+
    * Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
+
 
 ### Live Copy    {#live-copy}
 
@@ -252,6 +265,7 @@ Dalla console **Sites** è possibile selezionare più pagine e quindi utilizzare
 >La modifica in serie delle proprietà è disponibile anche per le risorse. È molto simile, ma differisce per alcuni aspetti. Per ulteriori informazioni, consulta Modifica delle proprietà di più risorse.
 >
 >È anche disponibile la funzione Modifiche in serie, che consente di cercare contenuti in più pagine tramite GQL (Google Query Language), e quindi di modificarli direttamente con Modifiche in serie prima di salvare le modifiche apportate alle pagine originarie.
+
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -299,6 +313,7 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
 >[!NOTE]
 >
 >Il componente di pagina può essere configurato in modo da specificare i campi disponibili per la modifica in serie. Consulta Configurazione della pagina per la modifica in serie delle proprietà di pagina.
+
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->
