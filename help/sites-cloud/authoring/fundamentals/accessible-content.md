@@ -1,8 +1,8 @@
 ---
 title: Creazione di contenuto accessibile (conformità WCAG 2.0)
 description: Crea contenuti web accessibili e utilizzabili da utenti disabili
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -18,15 +18,17 @@ WCAG 2.0 è costituito da un insieme di linee guida tecnologiche indipendenti e 
 >* la nostra Guida rapida a WCAG 2.0 per ulteriori dettagli
 >* Configurazione dell’editor Rich Text per generare contenuto accessibile
 
-<!--
->* our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
->* [Configuring the Rich Text Editor for producing accessible content](/help/sites-administering/rte-accessible-content.md)
+
+<!-- 
+>* See our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
+>* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
+
 Il contenuto viene classificato in base a tre livelli di conformità: Livello A (il più basso), livello AA e livello AAA (il più alto). Brevemente, i livelli sono definiti come segue:
 
-* **Livello A:** il sito presenta un livello minimo, basilare, di accessibilità. Per ottenere questo livello, tutti i criteri di successo di livello A devono essere soddisfatti.
+* **Livello A**: il sito ha raggiunto un livello minimo di accessibilità di base. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A.
 * **Livello AA:** si tratta di un livello di accessibilità ideale al quale tendere, in cui il sito presenta un livello massimo di accessibilità che lo rende fruibile dal maggior numero di persone nella maggioranza delle situazioni utilizzando la maggior parte delle tecnologie. Per ottenere questo livello, devono essere soddisfatti tutti i criteri di successo dei livelli A e AA.
-* **Livello AAA:** il sito presenta un livello di accessibilità molto elevato. Per ottenere questo livello, devono essere soddisfatti tutti i criteri di successo dei livelli A, AA e AAA.
+* **Livello AAA**: il sito ha raggiunto un livello molto alto di accessibilità. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A, AA e AAA.
 
 Quando si crea il sito, è necessario determinare il livello complessivo che si desidera ottenere.
 
@@ -73,6 +75,7 @@ Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire
 >[!NOTE]
 >
 >Alcuni componenti pronti per l’uso, come **Carosello** e **Presentazione**, non consentono di aggiungere descrizioni di testo alternativo alle immagini. Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo dovrà configurarli per supportare l’attributo `alt`, affinché gli autori possano aggiungerlo al contenuto (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi).
+
 <!--
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -301,7 +304,7 @@ AEM consente di creare in modo semplice pagine web utilizzando gli elementi HTML
 
 È possibile assicurarsi che alle pagine web sia associata la struttura corretta:
 
-* **Utilizzando i titoli:**   Finché le funzioni di accessibilità dell’editor Rich Text sono abilitate, AEM offre 3 livelli di intestazione di pagina. Puoi utilizzarli per identificare sezioni e sottosezioni di contenuto. Titolo 1 rappresenta il livello di intestazione più alto, Titolo 3 quello più basso. L’amministratore di sistema può configurare il sistema per consentire l’utilizzo di più livelli di intestazione.
+* **Utilizzo dei titoli:** fintanto che le funzioni di accessibilità di RTE sono abilitate, AEM offre 3 livelli di intestazione di pagina. Puoi utilizzarli per identificare sezioni e sottosezioni di contenuto. Titolo 1 rappresenta il livello di intestazione più alto, Titolo 3 quello più basso. L’amministratore di sistema può configurare il sistema per consentire l’utilizzo di più livelli di intestazione.
 * **Testo con enfasi**: utilizza l’elemento `<strong>` o `<em>` per indicare l’enfasi. Non utilizzare le intestazioni per evidenziare il testo all’interno dei paragrafi.
    * Evidenzia il testo che desideri mettere in evidenza.
    * Fai clic sull’icona **B** (per `<strong>`) oppure **I** (per `<em>`) nel pannello **Proprietà**, assicurandoti che sia selezionato HTML.
@@ -321,7 +324,7 @@ AEM consente di creare in modo semplice pagine web utilizzando gli elementi HTML
    * L’elemento `<ol>`viene utilizzato per gli elenchi *numerati*. Le singole voci dell’elenco sono identificate dall’elemento `<li>`. Nell’editor Rich Text, utilizza l’icona **Elenco numerato**.
    Se desideri convertire contenuti esistenti in un determinato tipo di elenco, evidenzia il testo desiderato e seleziona il tipo di elenco. Come nel precedente esempio, che mostra come inserire un testo di paragrafo, gli elementi elenco adeguati verranno aggiunti automaticamente al codice HTML.
 
-   Nella modalità a schermo intero, le singole icone **Elenco puntato** ed **Elenco numerato** sono visibili. Se non sei in modalità schermo intero, le due opzioni sono disponibili dietro l’icona **Elenchi**.
+   In modalità a tutto schermo, sono visibili le singole icone **Elenco puntato** ed **Elenco numerato**. Se non è attiva la modalità a tutto schermo, le due opzioni sono disponibili dietro la singola icona **Elenchi**.
 * **Utilizzare le tabelle:** le tabelle di dati devono essere identificate utilizzando gli elementi di tabella HTML:
    * un elemento `<table>`
    * un elemento `<tr>` per ogni riga della tabella
@@ -335,14 +338,15 @@ AEM consente di creare in modo semplice pagine web utilizzando gli elementi HTML
    >[!NOTE]
    >
    >Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi).
-<!--
->By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+
+<!-- removed link syntax for ExL
+>By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
 -->
 
 Per aprire la finestra di dialogo **Tabella** in cui puoi selezionare le **Proprietà tabella**:
 
 * Definisci una **Didascalia** appropriata.
-* È consigliabile rimuovere eventuali valori predefiniti per **Larghezza**, **Altezza**, **Bordo**, **Margine celle** e **Spaziatura celle**, in quanto queste proprietà possono essere impostate in un foglio di stile globale.
+* È consigliabile rimuovere eventuali valori predefiniti per **Larghezza**, **Altezza**, **Bordo**, **Margine celle**, **Spaziatura celle**. dato che queste proprietà possono essere impostate in un foglio di stile globale.
 
 Puoi quindi utilizzare le **Proprietà cella** per scegliere se la cella contiene dati o intestazione:
 
@@ -790,6 +794,7 @@ Se utilizzi i pulsanti immagine (ad esempio, il componente **Pulsante immagine**
 Dove è presente un gruppo di controlli correlati, come un **Gruppo pulsanti di scelta**, per il gruppo così come per i singoli controlli può essere necessario un titolo. Quando si aggiunge una serie di pulsanti di scelta in AEM, il campo **Titolo** fornisce questo titolo per il gruppo, mentre i singoli titoli sono specificati alla creazione dei pulsanti di scelta (**Elementi**).
 
 Tuttavia, non esiste alcuna associazione programmatica tra il titolo del gruppo e i pulsanti di scelta. Per creare tale associazione, gli editor di modelli dovranno eseguire il wrapping del titolo tra i tag necessari `fieldset` e `legend`, semplicemente modificando il codice sorgente della pagina. In alternativa, un amministratore di sistema può aggiungere il supporto di questi elementi affinché vengano visualizzati nella finestra di dialogo **Proprietà campo** (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi).
+
 <!--
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
