@@ -1,8 +1,8 @@
 ---
 title: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service.
 description: 'Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service. '
-translation-type: ht
-source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
+translation-type: tm+mt
+source-git-commit: c92578526bd02944ece86ec0771d6707401163fe
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 | Prodotto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versione | 2020.01.0 |
+| Versione | 2020.04.0 |
 | Tipo | Aggiornamento continuo |
 | Data di disponibilità | Aggiornamento continuo |
 
@@ -45,7 +45,7 @@ source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 * [Documentazione di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 * [Documentazione di Core Components](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [Documentazione di Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparazione al GDPR](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Preparazione all’RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Esercitazioni su Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
