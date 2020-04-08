@@ -2,12 +2,12 @@
 title: Repository del codice sorgente - Servizi cloud
 description: Repository del codice sorgente - Servizi cloud
 translation-type: tm+mt
-source-git-commit: 6f323f33663f83043eb8a15fe00e6ed872c3cac1
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
 
-# Repository del codice sorgente {#source-code-repository}
+# Archivio del codice sorgente {#source-code-repository}
 
 Il programma Cloud Manager verrà fornito con provisioning automatico con il proprio repository git.
 
@@ -21,5 +21,6 @@ Per iniziare a sviluppare l’applicazione AEM Cloud, è necessario eseguire una
 $ git clone {URL}
 ```
 
-> [!NOTE]
+>[!NOTE]
+>
 > Un utente può estrarre una copia del proprio codice e apportare modifiche nell’archivio del codice locale. Una volta pronti, l&#39;utente può eseguire nuovamente il commit delle modifiche di codice nell&#39;archivio del codice remoto in Cloud Manager.
