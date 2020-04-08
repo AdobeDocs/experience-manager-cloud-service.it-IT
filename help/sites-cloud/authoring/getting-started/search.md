@@ -1,13 +1,13 @@
 ---
-title: Ricerca
+title: 'Ricerca  '
 description: Individua il contenuto più velocemente con funzionalità complete di ricerca
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
 
-# Ricerca   {#search-feature}
+# Ricerca {#search-feature}
 
 L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti, a seconda del tipo di risorsa.
 
@@ -65,6 +65,7 @@ Per cercare e filtrare le risorse:
    >* A seconda del tipo di risorsa selezionato; ad esempio, i criteri Risorse e Community sono comprensibilmente specifici.
    >* La tua istanza, nonché i moduli di ricerca, possono essere personalizzati (in base alla posizione all’interno di AEM).
 
+
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
@@ -102,6 +103,6 @@ Oltre ad eseguire ricerche per un’ampia gamma di facet, è possibile salvare u
    * Utilizzare la **x** (in corrispondenza del nome di una ricerca salvata) per avviare una nuova ricerca (la ricerca salvata non verrà eliminata).
    * Seleziona **Modifica ricerca salvata**, modifica le condizioni di ricerca e seleziona nuovamente **Salva**.
 
-Le ricerche salvate possono essere modificate selezionando la ricerca salvata e facendo clic su **Modifica ricerca salvata** nella parte inferiore del pannello di ricerca.
+Per modificare le ricerche salvate, seleziona una ricerca e fai clic sull’opzione **Modifica ricerca salvata** nella parte inferiore del pannello di ricerca.
 
 ![Modifica di una ricerca salvata](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
