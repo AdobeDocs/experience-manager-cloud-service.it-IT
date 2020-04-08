@@ -1,8 +1,8 @@
 ---
 title: Supporto IMS per Adobe Experience Manager as a Cloud Service
-description: 'Supporto IMS per Adobe Experience Manager as a Cloud Service '
-translation-type: ht
-source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
+description: Supporto IMS per Adobe Experience Manager as a Cloud Service
+translation-type: tm+mt
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -106,7 +106,7 @@ L’API User Management utilizzata dallo strumento User Sync viene descritta [qu
 
 ## Configurazione di Adobe Experience as a Cloud Service {#aem-configuration}
 
-> [!NOTE]
+>[!NOTE]
 >
 >La configurazione di AEM IMS richiesta verrà impostata automaticamente durante il provisioning degli ambienti e delle istanze di AEM. Tuttavia, l’amministratore può modificarla in base alle proprie esigenze utilizzando il metodo descritto [qui](/help/implementing/deploying/overview.md).
 
