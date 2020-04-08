@@ -2,7 +2,7 @@
 title: Aggiungere le risorse digitali ad Adobe Experience Manager
 description: Aggiungere le risorse digitali ad Adobe Experience Manager come servizio Cloud
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -19,7 +19,7 @@ Sebbene sia possibile caricare e gestire qualsiasi file binario in Experience Ma
 
 Potete anche scegliere di effettuare un’ulteriore elaborazione sulle risorse caricate. Potete configurare diversi profili di elaborazione delle risorse nella cartella in cui vengono caricate le risorse per aggiungere metadati, rappresentazioni o servizi di elaborazione delle immagini specifici. Per ulteriori informazioni, consulta [Ulteriore elaborazione](#additional-processing) .
 
-> [!NOTE]
+>[!NOTE]
 >
 > Experience Manager come servizio cloud sfrutta un nuovo metodo di caricamento delle risorse - caricamento binario diretto. È supportato per impostazione predefinita dalle funzionalità e dai client di prodotto standard, come l’interfaccia utente di AEM, Adobe Asset Link, l’app desktop AEM, e quindi trasparente per gli utenti finali.
 >
@@ -75,7 +75,7 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli nell
 
 Inoltre, l’interfaccia utente di Risorse mostra la risorsa più recente caricata o la cartella creata per la prima volta.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Per caricare gerarchie di cartelle nidificate in AEM, consultate Caricamento [in blocco di risorse](#bulk-upload).
 
@@ -130,7 +130,7 @@ Per caricare un numero maggiore di file, in particolare se esistono in una gerar
 * Utilizzate uno script o uno strumento di caricamento personalizzato che sfrutta le API [di caricamento delle](developer-reference-material-apis.md#asset-upload-technical)risorse. Questo strumento personalizzato può aggiungere ulteriore gestione delle risorse (ad esempio, tradurre i metadati o rinominare i file), se necessario.
 * Utilizzate l&#39;app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) Experience Manager per caricare gerarchie di cartelle nidificate.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Il caricamento in blocco come parte della migrazione dei contenuti da altri sistemi quando si configura e si distribuisce in Experience Manager richiede un’attenta pianificazione, considerazione e scelta degli strumenti. Consultate la guida [alla](/help/implementing/deploying/overview.md) distribuzione per informazioni sugli approcci per la migrazione dei contenuti.
 
@@ -157,7 +157,7 @@ Inoltre, se nell’ambiente in uso è attivato l’elemento multimediale dinamic
 * [I profili immagine](dynamic-media/image-profiles.md) ti consentono di applicare alle risorse caricate specifiche configurazioni di nitidezza e di ritaglio (**[!UICONTROL ritaglio avanzato]** e ritaglio pixel)
 * [I profili](dynamic-media/video-profiles.md) video consentono di applicare specifici profili di codifica video (risoluzione, formato, parametri)
 
-> [!NOTE]
+>[!NOTE]
 >
 > Il ritaglio di elementi multimediali dinamici e altre operazioni sulle risorse non sono distruttive, ovvero non modificano l’originale caricato, ma forniscono parametri per il ritaglio o la trasformazione di elementi multimediali da eseguire durante la distribuzione delle risorse
 
