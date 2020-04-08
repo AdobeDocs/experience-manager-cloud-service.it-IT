@@ -1,8 +1,8 @@
 ---
 title: Pubblicazione delle pagine
 description: Come pubblicare e annullare la pubblicazione di pagine con AEM
-translation-type: ht
-source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
+translation-type: tm+mt
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -33,7 +33,7 @@ Quando lavori con AEM, potresti notare diversi termini relativi alla pubblicazio
 
 A seconda della tua posizione, puoi pubblicare:
 
-* [Dall’Editor pagina](#publishing-from-the-editor)
+* [Dall’editor pagina](#publishing-from-the-editor)
 * [Dalla console Sites](#publishing-from-the-console)
 
 >[!NOTE]
@@ -43,6 +43,7 @@ A seconda della tua posizione, puoi pubblicare:
 >* Viene avviato un flusso di lavoro per comunicare al soggetto adeguato la tua richiesta di pubblicazione.
 >* Questo flusso di lavoro potrebbe essere stato personalizzato dal team di sviluppo.
 >* Verrà visualizzato brevemente un messaggio che informa che il flusso di lavoro è stato attivato.
+
 
 <!--
 >* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
@@ -81,8 +82,8 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 Nella console Sites vi sono due opzioni di modifica:
 
-* [Pubblicazione rapida](#quick-publish)
-* [Gestisci pubblicazione](#manage-publication)
+* [Pubblicazione rapida  ](#quick-publish)
+* [Gestisci pubblicazione  ](#manage-publication)
 
 #### Pubblicazione rapida   {#quick-publish}
 
@@ -182,7 +183,10 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
    Le risorse vengono raggruppate in base ai flussi di lavoro attivati e per ognuna sono disponibili opzioni per:
 
    * Definire il titolo del flusso di lavoro.
-   * Mantenere il pacchetto del flusso di lavoro, a condizione che il flusso di lavoro sia dotato di supporto per più risorse. <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).-->
+   * Mantenere il pacchetto del flusso di lavoro, a condizione che il flusso di lavoro sia dotato di supporto per più risorse.
+   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+    -->
+
    * Definire un titolo del pacchetto del flusso di lavoro se è stata selezionata l’opzione per mantenere il pacchetto del flusso di lavoro.
    Fai clic su **Pubblica** o **Pubblica più tardi** per completare la pubblicazione.
 
@@ -192,7 +196,7 @@ L’annullamento della pubblicazione di una pagina ne effettua la rimozione dall
 
 Con una procedura [simile alla pubblicazione](#publishing-pages), è possibile annullare la pubblicazione di una o più pagine:
 
-* [Dall’Editor pagina](#unpublishing-from-the-editor)
+* [Dall’editor pagina](#unpublishing-from-the-editor)
 * [Dalla console Sites](#unpublishing-from-the-console)
 
 ### Annullamento della pubblicazione dall’editor   {#unpublishing-from-the-editor}
