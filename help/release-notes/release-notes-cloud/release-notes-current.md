@@ -1,38 +1,45 @@
 ---
-title: Note sulla versione 2020.4.0
-description: Note sulla versione 2020.4.0
+title: Adobe Experience Manager come servizio Cloud - Note sulla versione 2020.4.0
+description: Note sulla versione di Experience Manager per la versione 2020.4.0
 translation-type: tm+mt
-source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
+source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
 
 ---
 
 
-# Note sulla versione di AEM as a Cloud Service 2020.4.0 {#release-notes}
+# Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
-La sezione seguente illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.4.0.
+The following section outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
 ## Release Date {#release-date}
 
-La data di rilascio per Experience Manager come servizio cloud 2020.4.0 è il 9 aprile 2020.
+La data di rilascio per [!DNL Experience Manager] il servizio cloud 2020.4.0 è il 9 aprile 2020.
 
-## Assets {#assets}
+## What&#39;s New in Assets {#assets}
 
-Segui questa sezione per scoprire le novità e gli aggiornamenti per Experience Manager Assets e Dynamic Media in AEM come servizio cloud versione 2020.4.0.
+Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Manager Assets] e [!DNL Dynamic Media] nella versione corrente.
 
-### Novità {#assets-what-is-new}
+* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) supporta i casi di utilizzo della distribuzione delle risorse per Experience Manager Assets. [!DNL Brand Portal]Con le organizzazioni possono soddisfare le loro esigenze di marketing e distribuire in sicurezza le risorse approvate relative a prodotti e marchi, che potranno essere scaricate da agenzie esterne, partner, team interni e rivenditori.
+   * [!DNL Brand Portal] la configurazione è completata tramite [!DNL Adobe I/O] la console.
+   * L&#39;origine delle risorse in non [!DNL Brand Portal] è ancora supportata con [!DNLEExperience Manager] come servizio cloud.
 
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) è disponibile per AEM come risorse di servizio cloud, che supporta i casi di utilizzo della distribuzione delle risorse. Con Brand Portal le organizzazioni possono soddisfare le loro esigenze di marketing e distribuire in sicurezza le risorse approvate relative a prodotti e marchi, che potranno essere scaricate da agenzie esterne, partner, team interni e rivenditori.
-   * La configurazione del Brand Portal viene eseguita tramite la console Adobe I/O
-   * L&#39;origine delle risorse in Brand Portal non è ancora supportata con AEM come servizio cloud
-* La nuova versione di [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) 2.0 è supportata con AEM come servizio cloud. Adobe Asset Link semplifica la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti collegando AEM Assets alle app desktop Creative Cloud Photoshop, Illustrator e InDesign tramite il pannello Collegamento risorse in-app.
-   * AEM come servizio cloud è preconfigurato per Adobe Asset Link, con conseguente configurazione [](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)semplificata.
-   * Asset Link ora supporta uno switcher [di ambiente](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)AEM, che consente agli utenti creativi di connettersi più facilmente a diversi ambienti AEM (ad esempio, nel caso di designer di agenzie che lavorano con più client con AEM Assets)
-* L’avvio automatico per i flussi di lavoro [post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) può essere configurato nell’interfaccia utente Proprietà cartella per gerarchie di cartelle specifiche.
-   * L’interfaccia utente Proprietà cartella è stata semplificata: la nuova scheda Elaborazione risorse contiene il profilo metadati, il profilo di elaborazione e la nuova configurazione del flusso di lavoro di avvio automatico
-* La finestra di dialogo di rielaborazione delle risorse consente di selezionare un profilo di elaborazione specifico e decidere di rielaborarlo nelle sottocartelle
-* Elemento multimediale dinamico: È stata aggiunta la configurazione Pubblicazione selettiva, che significa che le risorse vengono pubblicate automaticamente solo per la visualizzazione in anteprima protetta e possono essere esplicitamente pubblicate in AEM senza la pubblicazione in DMS7 per la distribuzione nel dominio pubblico.
+* [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) v2.0 funziona con [!DNL Experience Manager] un servizio cloud. [!DNL Adobe Asset Link] ottimizza la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti, collegandosi [!DNL Experience Manager Assets] con [!DNL Creative Cloud] le app desktop [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign] tramite il [!DNL Asset Link] pannello in-app.
+   * [!DNL Experience Manager] è preconfigurata per [!DNL Adobe Asset Link], con conseguente [facile configurazione](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) e implementazione più rapida per i creativi professionisti.
+   * [!DNL Asset Link] ora supporta uno switcher [ambiente](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) Experience Manager che consente agli utenti creativi di connettersi facilmente a un altro [!DNL Experience Manager] ambiente. Un esempio in cui questa funzionalità è utile è rappresentato dai designer di agenzie che lavorano con più client utilizzando [!DNL Experience Manager Assets] distribuzioni diverse.
 
-### Correzioni di bug {#assets-bug-fixes}
+* Gli utenti possono configurare i flussi di lavoro [di](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) post-elaborazione per avviare automaticamente l’interfaccia utente [!UICONTROL Proprietà] cartella per le gerarchie di cartelle specifiche.
+   * L’interfaccia utente [!UICONTROL Proprietà] cartella è semplificata e la nuova scheda Elaborazione  risorse contiene il profilo di metadati, il profilo di elaborazione e la nuova configurazione del flusso di lavoro con avvio automatico.
+   * La finestra di dialogo di rielaborazione delle risorse consente di selezionare un profilo di elaborazione specifico e di decidere di rielaborarlo nelle sottocartelle.
+   * [!DNL Dynamic Media]: È stata aggiunta la configurazione di pubblicazione selettiva in modo che le risorse vengano pubblicate automaticamente solo per l’anteprima protetta. Inoltre, le risorse possono essere pubblicate in modo esplicito in Experience Manager senza pubblicare contenuti in DMS7 per la distribuzione nel dominio pubblico.
 
-* Problemi risolti nell’elaborazione delle risorse
-* Problemi risolti nella configurazione e pubblicazione di risorse per contenuti multimediali dinamici e servizi di distribuzione
+* Sono stati affrontati i seguenti problemi:
+   * Correzioni dei problemi di elaborazione delle risorse.
+   * Correzioni nella [!DNL Dynamic Media] configurazione e nella pubblicazione delle risorse sul servizio di [!DNL Dynamic Media] distribuzione.
+
+>[!MORELIKETHIS]
+>
+>* [Informazioni su Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Configura Portale marchio](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Configurare Experience Manager per l’utilizzo del collegamento delle risorse](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Creare un flusso di lavoro in Experience Manager utilizzando i microservizi delle risorse](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+
