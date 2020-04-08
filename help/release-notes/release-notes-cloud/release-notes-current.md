@@ -2,7 +2,7 @@
 title: Adobe Experience Manager come servizio Cloud - Note sulla versione 2020.4.0
 description: Note sulla versione di Experience Manager per la versione 2020.4.0
 translation-type: tm+mt
-source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
+source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
 
 ---
 
