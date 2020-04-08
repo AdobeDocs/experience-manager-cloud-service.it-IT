@@ -2,9 +2,9 @@
 title: Accesso a Git
 seo-title: Accesso a Git
 description: Questa pagina descrive come accedere e gestire l’archivio Git.
-seo-description: Seguite questa pagina per apprendere come accedere e gestire il repository Git.
+seo-description: Segui questa pagina per apprendere come accedere e gestire il repository Git.
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -36,9 +36,10 @@ Le considerazioni importanti per gestire il Git in Cloud Manager sono:
 
 * **URL**: L’URL del repository
 * **Nome utente**: Nome utente
-* **Password**: Valore visualizzato quando si fa clic sul pulsante **Genera password** .
+* **Password**: valore visualizzato quando si fa clic sul pulsante **Generate Password (Genera password)**.
 
 
-> [!NOTE]
-> Un utente può estrarre una copia del proprio codice e apportare modifiche nell’archivio del codice locale. Una volta pronti, l&#39;utente può eseguire nuovamente il commit delle modifiche di codice nell&#39;archivio del codice remoto in Cloud Manager.
+>[!NOTE]
+>
+>Un utente può estrarre una copia del proprio codice e apportare modifiche nell’archivio del codice locale. Una volta pronti, l&#39;utente può eseguire nuovamente il commit delle modifiche di codice nell&#39;archivio del codice remoto in Cloud Manager.
 
