@@ -2,7 +2,7 @@
 title: Applicazione dei flussi di lavoro alle pagine
 description: Durante l’authoring, è possibile ricorrere ai flussi di lavoro per intraprendere azioni sulle pagine; è inoltre possibile applicare più di un flusso di lavoro.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -14,7 +14,7 @@ Durante l’authoring, puoi richiamare i flussi di lavoro per intervenire sulle 
 Quando si applica il flusso di lavoro, è necessario specificare le seguenti informazioni:
 
 * Flusso di lavoro da applicare.
-   * È possibile applicare qualsiasi flusso di lavoro (a cui si ha accesso, come assegnato dal proprio amministratore AEM).
+   * Puoi utilizzare qualsiasi flusso di lavoro a cui hai accesso, secondo quanto assegnato dall’amministratore AEM.
 * Facoltativamente, un titolo che aiuti a identificare l&#39;istanza di flusso di lavoro nella casella in entrata di un utente.
 * Il payload del flusso di lavoro; può trattarsi di una o più pagine.
 
@@ -30,7 +30,8 @@ Puoi avviare i flussi di lavoro a partire da:
 >* Come applicare i flussi di lavoro alle risorse DAM.
 >* [Lavorare con Flussi di lavoro per progetto](/help/sites-cloud/authoring/projects/workflows.md).
 
-<!--
+
+<!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
 >* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 -->
@@ -38,7 +39,8 @@ Puoi avviare i flussi di lavoro a partire da:
 >[!NOTE]
 >
 >Gli amministratori AEM possono avviare i flussi di lavoro attraverso molti altri metodi.
-<!--
+
+<!-- 
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
 -->
 
@@ -101,7 +103,8 @@ Puoi specificare i dettagli:
       * Puoi specificare un titolo da attribuire al pacchetto, per facilitarne l&#39;identificazione.
    >[!NOTE]
    >
-   >L&#39;opzione **Mantieni pacchetto flusso di lavoro** è disponibile quando si configura il flusso di lavoro per il Supporto risorse multiple e più risorse sono state selezionate.
+   >L’opzione **Mantieni pacchetto flusso di lavoro** è disponibile quando il flusso di lavoro è stato configurato per Supporto risorse multiple e sono state selezionate più risorse.
+
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
@@ -129,7 +132,7 @@ Una finestra di dialogo si apre per permettere di perfezionare la selezione incl
 
    >[!NOTE]
    >
-   >Se aggiungi risorse supplementari, seleziona **Indietro** per modificare l&#39;impostazione **Mantieni pacchetto flusso di lavoro** nel passaggio **Proprietà**.
+   >Se aggiungi ulteriori risorse, puoi selezionare **Indietro** per regolare l’impostazione di **Mantieni pacchetto flusso di lavoro** nel passaggio **Proprietà**.
 
 1. Use **Create** to close the wizard and create the workflow instance. Una notifica appare nella console Sites.
 
