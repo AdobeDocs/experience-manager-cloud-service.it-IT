@@ -2,7 +2,7 @@
 title: Adobe Experience Manager come servizio Cloud - Note sulla versione 2020.4.0
 description: Note sulla versione di Experience Manager per la versione 2020.4.0
 translation-type: tm+mt
-source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
+source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
 
 ---
 
@@ -44,8 +44,6 @@ Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Ma
 >* [Creare un flusso di lavoro in Experience Manager utilizzando i microservizi delle risorse](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Aggiornamenti di Cloud Manager {#cloud-manager}
-
 ## Novità in Cloud Manager {#whats-new-cloud-manager}
 
 * Gli URL dell&#39;editore sono ora disponibili nella pagina Ambiente dell&#39;interfaccia utente di Cloud Manager.
@@ -57,7 +55,7 @@ Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Ma
 * Gli ambienti con errore possono ora essere eliminati tramite l&#39;interfaccia utente e l&#39;API.
 * Il processo utilizzato per generare password git è stato reso più flessibile ai problemi nel livello di servizio sottostante.
 
-## Correzioni di bug {#bug-fixes-cloud-manager}
+### Correzioni di bug {#bug-fixes-cloud-manager}
 
 * I collegamenti all&#39;ambiente di passaggio nella pagina dei dettagli di esecuzione della pipeline non si spostavano in modo coerente nella posizione corretta.
 * I singoli passaggi all&#39;interno del processo di creazione dell&#39;ambiente potrebbero essere timeout prima del necessario, causando il fallimento del processo.
