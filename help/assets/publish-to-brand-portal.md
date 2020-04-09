@@ -3,7 +3,7 @@ title: Pubblicare risorse, cartelle e raccolte in Brand Portal
 description: Pubblicate risorse, cartelle e raccolte in Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -215,7 +215,7 @@ Di seguito sono riportati i passaggi per annullare la pubblicazione di una racco
 
 1. Dalla console **Raccolte** dell’istanza Risorse AEM, quindi selezionate la raccolta da annullare la pubblicazione.
 
-   ![select_collection-1](assets/select_collection-1.png)
+   ![select_collection](assets/select_collection-1.png)
 
 1. Dalla barra degli strumenti, fate clic sull’icona **[!UICONTROL Rimuovi da Brand Portal]** .
 1. Nella finestra di dialogo, fate clic su **[!UICONTROL Annulla pubblicazione]**.
