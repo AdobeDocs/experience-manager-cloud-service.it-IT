@@ -2,7 +2,7 @@
 title: Adobe Experience Manager come servizio Cloud e linee guida per l'accessibilità del Web
 seo-title: Adobe Experience Manager come servizio Cloud e linee guida per l'accessibilità del Web
 translation-type: tm+mt
-source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
+source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Experience Manager come servizio cloud funziona con le [linee guida](#wcag
 
 Il [World Wide Web Consortium (W3C)](https://www.w3.org/) è una comunità internazionale dedicata allo sviluppo di standard web. La loro iniziativa per l&#39;accessibilità [Web (WAI)](https://www.w3.org/WAI/) pubblica le linee guida [per l&#39;accessibilità dei contenuti](#wcag-accessibility-guidelines)Web.
 
-## Linee guida per l&#39;accessibilità dei contenuti Web WCAG 2.1 {#wcag-accessibility-guideslines}
+## Web Content Accessibility Guidelines (WCAG) 2.1 {#wcag-accessibility-guideslines}
 
 Per aiutare i Web designer e gli sviluppatori a produrre siti Web accessibili, nel giugno 2018 la [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) ha pubblicato le [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) .
 
