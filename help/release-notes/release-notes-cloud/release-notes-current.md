@@ -2,7 +2,7 @@
 title: Adobe Experience Manager come servizio Cloud - Note sulla versione 2020.4.0
 description: Note sulla versione di Experience Manager per la versione 2020.4.0
 translation-type: tm+mt
-source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
+source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
 
 ---
 
@@ -32,9 +32,10 @@ Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Ma
    * La finestra di dialogo di rielaborazione delle risorse consente di selezionare un profilo di elaborazione specifico e di decidere di rielaborarlo nelle sottocartelle.
    * [!DNL Dynamic Media]: È stata aggiunta la configurazione di pubblicazione selettiva in modo che le risorse vengano pubblicate automaticamente solo per l’anteprima protetta. Inoltre, le risorse possono essere pubblicate in modo esplicito in Experience Manager senza pubblicare contenuti in DMS7 per la distribuzione nel dominio pubblico.
 
-* Sono stati affrontati i seguenti problemi:
-   * Correzioni dei problemi di elaborazione delle risorse.
-   * Correzioni nella [!DNL Dynamic Media] configurazione e nella pubblicazione delle risorse sul servizio di [!DNL Dynamic Media] distribuzione.
+### Correzioni di bug {#assets-bug-fixes}
+
+* Correzioni dei problemi di elaborazione delle risorse.
+* Correzioni nella [!DNL Dynamic Media] configurazione e nella pubblicazione delle risorse sul servizio di [!DNL Dynamic Media] distribuzione.
 
 >[!MORELIKETHIS]
 >
