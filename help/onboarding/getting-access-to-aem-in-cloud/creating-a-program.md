@@ -2,7 +2,7 @@
 title: Creazione di un programma - Servizio Cloud
 description: Creazione di un programma - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: b30d9e37bb7de46aa252aa7030ab0c2de8610431
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
 La soluzione nativa del cloud fornisce all&#39;utente le autorizzazioni necessarie e la possibilità di creare un programma su un modello self-service.
 
-Una procedura guidata di creazione del programma chiederà all&#39;utente di inviare i dettagli, a seconda dell&#39;obiettivo dell&#39;utente nella creazione del programma entro i limiti di quanto disponibile per il cliente o l&#39;organizzazione specifici.
+Una procedura guidata di creazione del programma chiederà all&#39;utente di inviare i dettagli, a seconda dell&#39;obiettivo dell&#39;utente nella creazione del programma entro i limiti di ciò che è disponibile per il cliente o l&#39;organizzazione specifici.
 
 In caso di accesso a Cloud Manager per la prima volta o se nel tenant non sono presenti programmi, l&#39;utente visualizzerà la schermata **Crea il primo programma** . Se l&#39;utente seleziona *Esc* o fa clic per uscire dalla finestra di dialogo, viene visualizzata la schermata seguente:
 
@@ -25,15 +25,14 @@ A seconda dell&#39;obiettivo dell&#39;utente di creare il programma entro i limi
 ![](assets/create-program-2.png)
 
 >[!NOTE]
->Se un programma esiste già, in alto a destra della pagina di destinazione verrà visualizzato **Add Program** , come illustrato nella figura riportata di seguito.
+>If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
 
 ![](assets/create-program-add.png)
 
 ## Creazione di un programma dimostrativo {#create-demo-program}
 
 >[!NOTE]
->
-Un programma demo è analogo a un programma sandbox nell&#39;interfaccia utente di Cloud Manager.
+>Un programma demo è analogo a un programma sandbox nell&#39;interfaccia utente di Cloud Manager.
 
 Per creare un programma sandbox, effettuate le seguenti operazioni:
 
@@ -45,7 +44,7 @@ Per creare un programma sandbox, effettuate le seguenti operazioni:
 
    ![](assets/program-create-setupdemo2.png)
 
-1. Al termine della configurazione del programma e della fase di creazione del progetto, l&#39;utente può accedere al collegamento **Gestisci Git** , come illustrato nella figura seguente:
+1. Una volta completata la configurazione del programma e la fase di creazione del progetto, l&#39;utente può accedere al collegamento **Gestisci Git** , come illustrato nella figura seguente:
 
    ![](assets/create-program4.png)
 
@@ -61,6 +60,12 @@ Per creare un programma sandbox, effettuate le seguenti operazioni:
 1. Una volta completata la distribuzione per lo sviluppo della pipeline non di produzione, la procedura guidata consente all&#39;utente di accedere ad AEM (in fase di sviluppo) o di distribuire il codice all&#39;ambiente di sviluppo:
 
    ![](assets/create-program-setup-deploy.png)
+
+   >[!NOTE]
+   >Puoi anche modificare, cambiare o aggiungere un programma dalla pagina Panoramica di Cloud Manager, come mostrato di seguito:
+
+   ![](assets/create-program-a1.png)
+
 
 
 ## Creazione di un programma regolare {#create-regular-program}
@@ -97,7 +102,7 @@ Per creare un programma regolare, effettuate le seguenti operazioni:
 
    >[!NOTE]
    >
-   >Un programma normale non ha la funzione di configurazione **** automatica.
+   >A regular program does not have **Auto-setup** feature.
 
 
 
