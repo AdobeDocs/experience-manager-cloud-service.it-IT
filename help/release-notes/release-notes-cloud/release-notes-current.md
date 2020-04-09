@@ -2,7 +2,7 @@
 title: Adobe Experience Manager come servizio Cloud - Note sulla versione 2020.4.0
 description: Note sulla versione di Experience Manager per la versione 2020.4.0
 translation-type: tm+mt
-source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
+source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
 
 ---
 
@@ -21,7 +21,7 @@ Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Ma
 
 * [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) supporta i casi di utilizzo della distribuzione delle risorse per Experience Manager Assets. [!DNL Brand Portal]Con le organizzazioni possono soddisfare le loro esigenze di marketing e distribuire in sicurezza le risorse approvate relative a prodotti e marchi, che potranno essere scaricate da agenzie esterne, partner, team interni e rivenditori.
    * [!DNL Brand Portal] la configurazione è completata tramite [!DNL Adobe I/O] la console.
-   * L&#39;origine delle risorse in non [!DNL Brand Portal] è ancora supportata con [!DNLEExperience Manager] come servizio cloud.
+   * L&#39;origine delle risorse in non [!DNL Brand Portal] è ancora supportata con [!DNL Experience Manager] come servizio cloud.
 
 * [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) v2.0 funziona con [!DNL Experience Manager] un servizio cloud. [!DNL Adobe Asset Link] ottimizza la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti, collegandosi [!DNL Experience Manager Assets] con [!DNL Creative Cloud] le app desktop [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign] tramite il [!DNL Asset Link] pannello in-app.
    * [!DNL Experience Manager] è preconfigurata per [!DNL Adobe Asset Link], con conseguente [facile configurazione](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) e implementazione più rapida per i creativi professionisti.
