@@ -2,7 +2,7 @@
 title: SDK di AEM as a Cloud Service
 description: Da completare
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
 
 ---
 
@@ -56,7 +56,7 @@ Inoltre, alcuni clienti che erano stati precedentemente distribuiti con AEM 6.5 
 </repository>
 ```
 
-## Aggiornamento di un progetto locale con una nuova versione SDK {#refreshing-a-local-prokect-with-a-new-skd-version}
+## Aggiornamento di un progetto locale con una nuova versione SDK {#refreshing-a-local-project-with-a-new-skd-version}
 
 Quando si consiglia di aggiornare il progetto locale con un nuovo SDK?
 
@@ -92,5 +92,5 @@ Per poter riutilizzare i pacchetti di contenuto contenenti i valori crittografat
 
 * Quando avviate inizialmente quickstart.jar locale, accertatevi di aggiungere il parametro seguente: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. È consigliabile, ma facoltativo, aggiungerlo sempre.
 * La prima volta che avete avviato un&#39;istanza create un pacchetto contenente un filtro per la radice &quot;`/etc/key`&quot;. Questo manterrà il segreto per essere riutilizzato in tutti gli ambienti per i quali si desidera che vengano riutilizzati
-* Esportate eventuale contenuto modificabile contenente segreti o cercate i valori crittografati tramite `/crx/de` per aggiungerlo al pacchetto che verrà riutilizzato in base alle installazioni
+* Esportate eventuale contenuto modificabile contenente segreti o cercate i valori crittografati tramite `/crx/de` per aggiungerlo al pacchetto che verrà riutilizzato tra le installazioni
 * Ogni volta che eseguite il spin up di una nuova istanza (per sostituire una nuova versione o in quanto più ambienti di sviluppo dovrebbero condividere le credenziali per il test), installate il pacchetto prodotto nei passaggi 2 e 3 per poter riutilizzare il contenuto senza dover riconfigurare manualmente. Questo perché ora la crittografia è sincronizzata.
