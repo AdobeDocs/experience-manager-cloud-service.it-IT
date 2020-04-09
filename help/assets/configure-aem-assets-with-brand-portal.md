@@ -3,7 +3,7 @@ title: Configurare il servizio cloud AEM Assets con il portale del marchio
 description: Configurare il servizio cloud AEM Assets con il Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -48,7 +48,7 @@ Il certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe
 
 1. Accedi all’istanza cloud di AEM Assets
 
-1. Dal pannello **Strumenti** ![Strumenti](assets/tools.png) , passa a **[!UICONTROL Protezione]** > Configurazioni **[!UICONTROL Adobe IMS]**.
+1. Dal pannello **Strumenti** ![Strumenti](assets/tools.png) , passa a **[!UICONTROL Protezione]** > Configurazioni **** Adobe IMS.
 
    ![Interfaccia utente di configurazione account Adobe IMS](assets/ims-configuration1.png)
 
@@ -163,7 +163,7 @@ Per creare la configurazione del servizio cloud Brand Portal, effettuate le segu
 
 1. Accedi all’istanza cloud di AEM Assets
 
-1. Dal pannello **Strumenti** ![Strumenti](assets/tools.png) , andate a Servizi **[!UICONTROL Cloud > AEM Brand Portal]**.
+1. Dal pannello **Strumenti** ![Strumenti](assets/tools.png) , andate a Servizi **** Cloud > Portale **[!UICONTROL marchio]** AEM.
 
    Si apre la pagina Configurazioni Brand Portal.
 
@@ -217,7 +217,7 @@ Per creare la configurazione del servizio cloud Brand Portal, effettuate le segu
    >Evitate di disattivare l’agente di distribuzione, in quanto potrebbe causare errori nella distribuzione delle risorse (in esecuzione nella coda).
 
 
-Una volta configurato correttamente il Brand Portal con l’istanza cloud di AEM Assets, puoi:
+L’istanza cloud di AEM Assets è stata configurata correttamente con Brand Portal. Ora puoi:
 
 * [Pubblicare risorse da Risorse AEM a Brand Portal](publish-to-brand-portal.md)
 * [Pubblicare cartelle da Risorse AEM a Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
@@ -262,8 +262,9 @@ Quando pubblicate la risorsa, vengono generati i seguenti registri di richieste 
 Nell&#39;esempio precedente, viene attivata un&#39;ulteriore richiesta e risposta. Impossibile trovare la cartella principale (ad esempio Aggiungi percorso) nel Portale marchio perché la risorsa è stata pubblicata per la prima volta, pertanto viene attivata un&#39;ulteriore richiesta per creare una cartella principale con lo stesso nome nel Portale marchio in cui viene pubblicata la risorsa.
 
 >[!NOTE]
->>Se la cartella principale non esiste nel Brand Portal (nell’esempio precedente) o se la cartella principale è stata modificata in AEM Assets, viene generata un’ulteriore richiesta.
 >
+>Se la cartella principale non esiste nel Portale marchio (nell’esempio precedente) o se la cartella principale è stata modificata in Risorse AEM, viene generata un’ulteriore richiesta.
+
 
 ## Informazioni aggiuntive {#additional-information}
 
