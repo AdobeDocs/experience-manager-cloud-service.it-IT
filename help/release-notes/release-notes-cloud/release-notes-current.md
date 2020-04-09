@@ -2,7 +2,7 @@
 title: Adobe Experience Manager come servizio Cloud - Note sulla versione 2020.4.0
 description: Note sulla versione di Experience Manager per la versione 2020.4.0
 translation-type: tm+mt
-source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
+source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
 
 ---
 
@@ -43,3 +43,25 @@ Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Ma
 >* [Configurare Experience Manager per l’utilizzo del collegamento delle risorse](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Creare un flusso di lavoro in Experience Manager utilizzando i microservizi delle risorse](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
+
+## Aggiornamenti di Cloud Manager {#cloud-manager}
+
+## Novità in Cloud Manager {#whats-new-cloud-manager}
+
+* Gli URL dell&#39;editore sono ora disponibili nella pagina Ambiente dell&#39;interfaccia utente di Cloud Manager.
+* Modifiche alla navigazione per consentire agli utenti di modificare, cambiare o aggiungere un programma dalla pagina di panoramica di Cloud Manager.
+* Modifiche per consentire all&#39;utente di modificare il programma dalla scheda del programma sulla pagina di destinazione di Cloud Manager.
+* Nuovo stato **pipeline In esecuzione** visualizzata rispetto all&#39;ambiente a cui è associata.
+* Miglioramenti alla comprensibilità della pagina di esecuzione della pipeline. Questo include la visualizzazione del nome della pipeline (solo non di produzione) e del tipo e un contrassegno per indicare se lo stato della pipeline è In corso/Annullato/Non riuscito.
+* Descrizioni comandi per migliorare l’esperienza e la comprensibilità degli utenti in merito al motivo per cui il pulsante Aggiungi programma/ambiente è disattivato.
+* Gli ambienti con errore possono ora essere eliminati tramite l&#39;interfaccia utente e l&#39;API.
+* Il processo utilizzato per generare password git è stato reso più flessibile ai problemi nel livello di servizio sottostante.
+
+## Correzioni di bug {#bug-fixes-cloud-manager}
+
+* I collegamenti all&#39;ambiente di passaggio nella pagina dei dettagli di esecuzione della pipeline non si spostavano in modo coerente nella posizione corretta.
+* I singoli passaggi all&#39;interno del processo di creazione dell&#39;ambiente potrebbero essere timeout prima del necessario, causando il fallimento del processo.
+* La configurazione Maven utilizzata nel contenitore di build è stata aggiornata per evitare il blocco critico durante il download dei metadati dell&#39;artifact.
+* In alcuni casi, il passaggio Genera immagine non può scaricare correttamente i pacchetti dei clienti.
+* Alcune condizioni che si verificano raramente impedirebbero l&#39;eliminazione degli ambienti.
+* Notifiche Experience Cloud non ricevute in modo coerente.
