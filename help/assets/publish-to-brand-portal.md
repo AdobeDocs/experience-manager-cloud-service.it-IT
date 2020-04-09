@@ -3,7 +3,7 @@ title: Pubblicare risorse, cartelle e raccolte in Brand Portal
 description: Pubblicate risorse, cartelle e raccolte in Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -221,8 +221,13 @@ Di seguito sono riportati i passaggi per annullare la pubblicazione di una racco
 1. Nella finestra di dialogo, fate clic su **[!UICONTROL Annulla pubblicazione]**.
 1. Chiudi il messaggio di conferma. La raccolta viene rimossa dall&#39;interfaccia Brand Portal.
 
-Consultate la documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal per ulteriori informazioni sulla distribuzione di risorse, cartelle e raccolte agli utenti finali.
+Oltre a quanto precede, potete pubblicare anche schemi di metadati, predefiniti per immagini, facet di ricerca e tag da AEM Assets al Portale marchio.
 
+* [Pubblicare predefiniti, schemi e facet su Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Pubblicare tag in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+Per ulteriori informazioni, consulta la documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal.
 
 
 <!--
