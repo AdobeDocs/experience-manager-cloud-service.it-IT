@@ -2,7 +2,7 @@
 title: Adobe Experience Manager come servizio Cloud - Note sulla versione 2020.4.0
 description: Note sulla versione di Experience Manager per la versione 2020.4.0
 translation-type: tm+mt
-source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
+source-git-commit: 98de3a6674aaef5228e96e0bf72e67de861f858e
 
 ---
 
@@ -19,8 +19,8 @@ La data di rilascio per [!DNL Experience Manager] il servizio cloud 2020.4.0 è 
 
 Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Manager Assets] e [!DNL Dynamic Media] nella versione corrente.
 
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) supporta i casi di utilizzo della distribuzione delle risorse per Experience Manager Assets. [!DNL Brand Portal]Con le organizzazioni possono soddisfare le loro esigenze di marketing e distribuire in sicurezza le risorse approvate relative a prodotti e marchi, che potranno essere scaricate da agenzie esterne, partner, team interni e rivenditori.
-   * [!DNL Brand Portal] la configurazione è completata tramite [!DNL Adobe I/O] la console.
+* [Brand Portal](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/home.html) supporta i casi di utilizzo della distribuzione delle risorse per Experience Manager Assets. [!DNL Brand Portal]Con le organizzazioni possono soddisfare le loro esigenze di marketing e distribuire in sicurezza le risorse approvate relative a prodotti e marchi, che potranno essere scaricate da agenzie esterne, partner, team interni e rivenditori.
+   * [!DNL Brand Portal] la configurazione è completata tramite [!DNL Adobe I/O] la console. Consultate [Configurare Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
    * L&#39;origine delle risorse in non [!DNL Brand Portal] è ancora supportata con [!DNL Experience Manager] come servizio cloud.
 
 * [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) v2.0 funziona con [!DNL Experience Manager] un servizio cloud. [!DNL Adobe Asset Link] ottimizza la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti, collegandosi [!DNL Experience Manager Assets] con [!DNL Creative Cloud] le app desktop [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign] tramite il [!DNL Asset Link] pannello in-app.
@@ -29,7 +29,13 @@ Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Ma
 
 * Gli utenti possono configurare i flussi di lavoro [di](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) post-elaborazione per avviare automaticamente l’interfaccia utente [!UICONTROL Proprietà] cartella per le gerarchie di cartelle specifiche.
    * L’interfaccia utente [!UICONTROL Proprietà] cartella è semplificata e la nuova scheda Elaborazione  risorse contiene il profilo di metadati, il profilo di elaborazione e la nuova configurazione del flusso di lavoro con avvio automatico.
-   * La finestra di dialogo di rielaborazione delle risorse consente di selezionare un profilo di elaborazione specifico e di decidere di rielaborarlo nelle sottocartelle.
+
+      ![I profili di elaborazione possono essere facilmente applicati alle cartelle e tutte le risorse caricate nelle cartelle vengono elaborate utilizzando questi profili](/help/assets/assets/asset-processing-folder-properties.png)
+
+   * L’opzione di rielaborazione delle risorse consente di selezionare uno specifico profilo di elaborazione per rielaborare le risorse selezionate dall’utente nelle sottocartelle.
+
+      ![Rielaborare le risorse selezionate utilizzando un profilo di elaborazione specifico](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+
    * [!DNL Dynamic Media]: È stata aggiunta la configurazione di pubblicazione selettiva in modo che le risorse vengano pubblicate automaticamente solo per l’anteprima protetta. Inoltre, le risorse possono essere pubblicate in modo esplicito in Experience Manager senza pubblicare contenuti in DMS7 per la distribuzione nel dominio pubblico.
 
 ### Correzioni di bug {#assets-bug-fixes}
