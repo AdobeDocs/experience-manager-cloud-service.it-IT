@@ -2,7 +2,7 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
 
 ---
 
@@ -292,11 +292,9 @@ Va osservato che:
 
 * Attività che potrebbero richiedere ulteriore sforzo:
 
-   * La creazione e la rimozione di nuovi elementi non comporta l&#39;aggiornamento della struttura dati di frammenti semplici (basata sul modello di frammento **** semplice).
-
    * Crea nuove varianti da `ContentFragment` per aggiornare la struttura dei dati.
 
-   * La rimozione delle varianti esistenti non aggiornerà la struttura dei dati.
+   * La rimozione delle varianti esistenti tramite un elemento, tramite `ContentElement.removeVariation()`, non aggiornerà le strutture dati globali assegnate alla variante. Per assicurare che queste strutture di dati siano mantenute sincronizzate, utilizzate `ContentFragment.removeVariation()` invece, il che rimuove una variante a livello globale.
 
 ## API di gestione dei frammenti di contenuto - Lato client {#the-content-fragment-management-api-client-side}
 
@@ -314,84 +312,18 @@ Consulta:
 
 ## Modifica sessioni {#edit-sessions}
 
-Una sessione di modifica viene avviata quando l&#39;utente apre un frammento di contenuto in una delle pagine dell&#39;editor. La sessione di modifica viene terminata quando l’utente esce dall’editor selezionando **Salva** o **Annulla**.
+>[!CAUTION]
+>
+>Considerare queste informazioni di base. Non dovete cambiare nulla qui (come è indicato come area ** privata nel repository), ma potrebbe aiutare in alcuni casi a capire come funzionano le cose sotto il coperchio.
 
-### Requisiti {#requirements}
+La modifica di un frammento di contenuto, che può estendersi su più viste (= pagine HTML), è atomica. Poiché le funzionalità di modifica per più viste atomiche non sono un concetto tipico di AEM, i frammenti di contenuto utilizzano quella che viene definita una sessione *di* modifica.
 
-Requisiti per il controllo di una sessione di modifica:
+Una sessione di modifica viene avviata quando l&#39;utente apre un frammento di contenuto nell&#39;editor. La sessione di modifica viene terminata quando l’utente esce dall’editor selezionando **Salva** o **Annulla**.
 
-* La modifica di un frammento di contenuto, che può estendersi su più viste (= pagine HTML), deve essere atomica.
+Dal punto di vista tecnico, tutte le modifiche vengono effettuate sul contenuto *live* , proprio come con tutte le altre modifiche apportate da AEM. Quando la sessione di modifica viene avviata, viene creata una versione dello stato corrente e non modificato. Se un utente annulla una modifica, tale versione viene ripristinata. Se l&#39;utente fa clic su **Salva**, non viene eseguita alcuna operazione specifica, poiché tutte le modifiche sono state eseguite sul contenuto *live* , pertanto tutte le modifiche sono già persistenti. Inoltre, se si fa clic su **Salva** , viene attivata l’elaborazione in background (ad esempio, la creazione di informazioni di ricerca full-text e/o la gestione di risorse multimediali miste).
 
-* L&#39;editing dovrebbe essere anche *transazionale*; alla fine della sessione di modifica, le modifiche devono essere salvate (salvate) o ripristinate (annullate).
-
-* I casi Edge devono essere gestiti correttamente; tali situazioni includono situazioni come quelle in cui l’utente esce dalla pagina immettendo manualmente un URL o utilizzando la navigazione globale.
-
-* Per evitare la perdita di dati, deve essere disponibile un salvataggio automatico periodico (ogni x minuti).
-
-* Se un frammento di contenuto viene modificato da due utenti contemporaneamente, non devono sovrascrivere le modifiche l&#39;uno rispetto all&#39;altro.
-
-<!--
-#### Processes {#processes}
-
-The processes involved are:
-
-* Starting a session
-
-  * A new version of the content fragment is created.
-
-  * Auto save is started.
-
-  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
-
-* Finishing a session
-
-  * Auto save is stopped.
-
-  * Upon commit:
-
-    * The last modified information is updated.
-
-    * Cookies are removed.
-
-  * Upon rollback:
-
-    * The version of the content fragment that was created when the edit session was started is restored.
-
-    * Cookies are removed.
-
-* Editing
-
-  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-
-  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
-
-#### Actions {#actions}
-
-The possible actions are:
-
-* Entering a page
-
-  * Check if an editing session is already present; by checking the respective cookie.
-
-    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
-
-      * If the current fragment, reestablish the session.
-
-      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
-
-    * If no edit session exists, wait for the first change made by the user (see below).
-
-  * Check if the content fragment is already referenced on a page and display appropriate information if so.
-
-* Content change
-
-  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
-
--->
-
-* Uscire da una pagina
-
-   * Se è presente una sessione di modifica e le modifiche non sono state persistenti, viene visualizzata una finestra di dialogo di conferma modale per informare l’utente del contenuto potenzialmente perso e consentire loro di restare sulla pagina.
+Esistono alcune misure di sicurezza per i casi Edge; ad esempio, se l’utente tenta di uscire dall’editor senza salvare o annullare la sessione di modifica. È inoltre disponibile un salvataggio automatico periodico per evitare la perdita di dati.
+Si noti che due utenti possono modificare contemporaneamente lo stesso frammento di contenuto e, di conseguenza, sovrascrivere reciprocamente le modifiche. Per evitare questo problema, è necessario bloccare il frammento di contenuto applicando l&#39;azione *Checkout* dell&#39;amministrazione DAM sul frammento.
 
 ## Esempi {#examples}
 
@@ -401,7 +333,7 @@ A tal fine, potete adattare la risorsa che rappresenta l&#39;API a:
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-Esempio:
+Ad esempio:
 
 ```java
 // first, get the resource
@@ -417,7 +349,7 @@ if (fragmentResource != null) {
 
 Per creare un nuovo frammento di contenuto a livello di programmazione, è necessario utilizzare un frammento adattato`FragmentTemplate` da una risorsa modello o modello.
 
-Esempio:
+Ad esempio:
 
 ```java
 Resource templateOrModelRsc = resourceResolver.getResource("...");
