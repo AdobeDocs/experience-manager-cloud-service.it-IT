@@ -2,7 +2,7 @@
 title: Adobe Experience Manager come servizio cloud Supporto dei frammenti di contenuto nell'API HTTP Assets
 description: Ulteriori informazioni su Adobe Experience Manager come supporto dei frammenti di contenuto del servizio cloud nell'API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -32,6 +32,7 @@ I componenti [core di](https://docs.adobe.com/content/help/it-IT/experience-mana
 Questo è il momento in cui è possibile utilizzare l&#39;API REST di Risorse. Consente agli sviluppatori di accedere direttamente alle risorse (ad esempio, immagini e frammenti di contenuto), senza dover prima incorporarle in una pagina e distribuire il contenuto in formato JSON serializzato.
 
 >[!NOTE]
+>
 >Non è possibile personalizzare l&#39;output JSON dall&#39;API REST di Assets.
 
 L’API REST di Risorse consente inoltre agli sviluppatori di modificare il contenuto, creando nuove risorse, aggiornando o eliminando risorse esistenti, frammenti di contenuto e cartelle.
@@ -261,7 +262,7 @@ Utilizzo tramite:
 
 `GET /{cfParentPath}/{cfName}.json`
 
-Esempio:
+Ad esempio:
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -296,7 +297,7 @@ Utilizzo tramite:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Limitazioni  {#limitations}
+## Limitazioni    {#limitations}
 
 Esistono alcuni limiti:
 
@@ -386,7 +387,7 @@ Consultate qui per riferimenti API dettagliati:
 
    * [Funzioni disponibili](/help/assets/mac-api-assets.md#available-features)
 
-## Additional Resources {#additional-resources}
+## Risorse aggiuntive {#additional-resources}
 
 Per ulteriori informazioni, consulta:
 
