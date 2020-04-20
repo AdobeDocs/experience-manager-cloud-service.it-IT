@@ -2,7 +2,7 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard.
 translation-type: tm+mt
-source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -40,7 +40,7 @@ A seconda del tipo di frammento, vengono utilizzati anche i modelli o il modello
    * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
    >[!NOTE]
    >
-   >Per visualizzare/eseguire il rendering di un frammento di contenuto, l&#39;account deve disporre delle autorizzazioni di lettura per il modello.
+   >Per visualizzare/eseguire il rendering di un frammento di contenuto, l&#39;account deve disporre `read` delle autorizzazioni per il modello.
 
    >[!CAUTION]
    >
