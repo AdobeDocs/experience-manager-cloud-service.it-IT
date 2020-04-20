@@ -2,7 +2,7 @@
 title: Frammenti di contenuto Configurazione dei componenti per il rendering
 description: Frammenti di contenuto Configurazione dei componenti per il rendering
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -18,7 +18,7 @@ Queste informazioni sono necessarie quando:
 * È necessario implementare un proprio componente basato su frammenti di contenuto,
 * E devono utilizzare i servizi avanzati.
 
-Tuttavia, si consiglia di utilizzare i componenti core.
+Si consiglia di utilizzare i componenti core.
 
 >[!CAUTION]
 >
@@ -56,7 +56,7 @@ La configurazione deve essere associata alla configurazione **del componente fra
 >
 >Per ulteriori informazioni, consultate Configurazione [](/help/implementing/deploying/overview.md#osgi-configuration) OSGi.
 
-Esempio:
+Ad esempio:
 
 ![Configurazione del componente frammento di contenuto di configurazione OSGi](assets/cf-component-configuration-osgi.png)
 
