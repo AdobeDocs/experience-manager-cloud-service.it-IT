@@ -1,13 +1,13 @@
 ---
-title: Frammenti di contenuto - Elimina considerazioni
-description: Frammenti di contenuto - Elimina considerazioni
+title: Frammenti di contenuto - Considerazioni sull’eliminazione
+description: Frammenti di contenuto - Considerazioni sull’eliminazione
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# Frammenti di contenuto - Elimina considerazioni{#content-fragments-delete-considerations}
+# Frammenti di contenuto - Considerazioni sull’eliminazione{#content-fragments-delete-considerations}
 
 ## Autorizzazioni - Elimina o Non Elimina {#permissions-delete-or-not-delete}
 
@@ -18,18 +18,18 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 1. **Il frammento di contenuto come entità singola.**
 
    * **Caso** di utilizzo: Utente che deve modificare/aggiornare un frammento di contenuto **ed eliminare un intero frammento**.
-   * **Autorizzazioni**: L&#39;autorizzazione Elimina può essere assegnata tramite Gestione utente e/o gruppo.
+   * **Autorizzazioni**: L&#39;autorizzazione Elimina può essere assegnata tramite Gestione utente e/o gruppo. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **Più sottoentità che costituiscono un frammento di contenuto; ad esempio, varianti, nodi secondari.**
 
    Il funzionamento di base dell’editor dei frammenti di contenuto richiede che tali sottoelementi transitori possano essere eliminati. Ad esempio, durante la manipolazione delle variazioni; anche durante la modifica dei metadati o la gestione del contenuto associato.
 
    * **Caso** di utilizzo: Un utente che deve modificare/aggiornare un frammento di contenuto, **senza la possibilità di eliminare un intero frammento**.
-   * **Autorizzazioni**: Consultate Autorizzazioni necessarie solo per la funzionalità Editor. <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
+   * **Autorizzazioni**: Consultate [Autorizzazioni necessarie solo](#permissions-required-for-editor-functionality-only)per la funzionalità dell’editor.
 
 >[!NOTE]
 >
->Se un utente non dispone di autorizzazioni Elimina, l&#39;editor frammenti di contenuto funziona in modalità di sola ** lettura.
+>When a user does not have any Delete permissions, the Content Fragment editor operates in *read-only* mode. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 
 ## Autorizzazioni necessarie solo per la funzionalità Editor {#permissions-required-for-editor-functionality-only}
 
-Per gli utenti che necessitano di modificare/aggiornare un frammento di contenuto, **senza consentire loro di eliminare un intero frammento**, è necessario assegnare autorizzazioni specifiche, in quanto il funzionamento di base dell&#39;editor dei frammenti di contenuto richiede l&#39;eliminazione di sottoelementi transitori.
+Dovrai assegnare autorizzazioni specifiche agli utenti che necessitano di modificare/aggiornare un frammento di contenuto, **ma a cui non vuoi consentire di eliminare un intero frammento**, poiché il funzionamento di base dell’Editor frammento di contenuto richiede l’eliminazione di elementi secondari transitori.
 
 Ad esempio, durante la manipolazione delle variazioni; anche durante la modifica dei metadati o la gestione del contenuto associato.
 
@@ -45,7 +45,7 @@ Ad esempio, durante la manipolazione delle variazioni; anche durante la modifica
 >
 >Le autorizzazioni di eliminazione, necessarie per modificare/aggiornare un frammento di contenuto, sono incluse nell&#39;autorizzazione di eliminazione assegnata tramite Gestione utente e/o gruppo. <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-Le autorizzazioni necessarie per modificare/aggiornare un frammento devono essere applicate al nodo contenente il frammento di contenuto o a un nodo principale appropriato (a qualsiasi livello in `/content/dam`). Se assegnate a tale nodo padre, le autorizzazioni verranno applicate a tutti i nodi all&#39;interno di tale ramo.
+Le autorizzazioni necessarie per modificare/aggiornare un frammento devono essere applicate al nodo contenente il frammento di contenuto o a un nodo principale appropriato (a qualsiasi livello in `/content/dam`). Quando vengono assegnate a tale nodo padre, le autorizzazioni vengono applicate a tutti i nodi all&#39;interno di tale ramo.
 
 Ad esempio, una cartella contenente tutti i frammenti di contenuto, come:
 
