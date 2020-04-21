@@ -3,7 +3,7 @@ title: API HTTP di Assets
 description: Scopri l’implementazione, il modello dati e le funzionalità dell’API HTTP Assets. Utilizzate l'API HTTP Assets per eseguire varie attività sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## Panoramica {#overview}
 
-L’API HTTP Assets consente di creare-leggere-aggiornare-eliminare (CRUD) le operazioni sulle risorse, inclusi i file binari, i metadati, le rappresentazioni e i commenti, nonché il contenuto strutturato utilizzando i frammenti di contenuto AEM. È esposto in `/api/assets` e viene implementato come REST API. Include [il supporto per i frammenti](content-fragments/content-fragments.md)di contenuto.
+L’API HTTP Assets consente di creare-leggere-aggiornare-eliminare (CRUD) le operazioni sulle risorse, inclusi i file binari, i metadati, le rappresentazioni e i commenti, nonché il contenuto strutturato utilizzando i frammenti di contenuto AEM. È esposto in `/api/assets` e viene implementato come REST API. Include [il supporto per i frammenti](assets-api-content-fragments.md)di contenuto.
 
 Per accedere all&#39;API:
 
@@ -31,13 +31,13 @@ Dopo la [!UICONTROL disattivazione], una risorsa e le relative rappresentazioni 
 
 Un frammento [di](content-fragments/content-fragments.md) contenuto è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, come testi, numeri, date, ecc. Poiché le `standard` risorse presentano diverse differenze (ad esempio immagini o documenti), per la gestione dei frammenti di contenuto si applicano alcune regole aggiuntive.
 
-Per ulteriori informazioni, consulta Supporto per i frammenti di [contenuto nell’API](content-fragments/content-fragments.md)HTTP di AEM Assets.
+Per ulteriori informazioni, consulta Supporto per i frammenti di [contenuto nell’API](assets-api-content-fragments.md)HTTP di AEM Assets.
 
 ## Dati, modello {#data-model}
 
 L’API HTTP Assets espone due elementi principali, cartelle e risorse (per le risorse standard).
 
-Inoltre, espone elementi più dettagliati per i modelli di dati personalizzati che descrivono il contenuto strutturato nei frammenti di contenuto. Per ulteriori informazioni, consulta Modelli [di dati per frammenti di](content-fragments/content-fragments.md) contenuto.
+Inoltre, espone elementi più dettagliati per i modelli di dati personalizzati che descrivono il contenuto strutturato nei frammenti di contenuto. Per ulteriori informazioni, consulta Modelli [di dati per frammenti di](assets-api-content-fragments.md#content-models-and-content-fragments) contenuto.
 
 ### Cartelle {#folders}
 
@@ -66,7 +66,7 @@ In AEM una risorsa contiene i seguenti elementi:
 * Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da PDF o InDesign.
 * Commenti facoltativi
 
-Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto frammenti di [contenuto nell’API](content-fragments/content-fragments.md)HTTP di AEM Assets.
+Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto frammenti di [contenuto nell’API](assets-api-content-fragments.md)HTTP di AEM Assets.
 
 In AEM una cartella contiene i seguenti componenti:
 
