@@ -1,35 +1,35 @@
 ---
-title: Utilizzo dei frammenti di contenuto
+title: Utilizzo di frammenti di contenuto
 description: Scoprite come i frammenti di contenuto consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# Utilizzo dei frammenti di contenuto{#working-with-content-fragments}
+# Utilizzo di frammenti di contenuto{#working-with-content-fragments}
 
-I frammenti di contenuto di Adobe Experience Manager (AEM) consentono di progettare, creare, curare e [pubblicare contenuti](/help/sites-cloud/authoring/fundamentals/content-fragments.md)indipendenti dalla pagina. Consentono di preparare i contenuti pronti per l’uso in più posizioni/su più canali.
+Adobe Experience Manager (AEM) Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels.
 
-I frammenti di contenuto possono essere consegnati anche in formato JSON, utilizzando le funzionalità di esportazione JSON dei componenti core di AEM. Questo modulo di consegna:
+Content fragments can also be delivered in JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
 
-* consente di utilizzare il componente per gestire gli elementi di un frammento da distribuire
+* enables you to use the component to manage which elements of a fragment to deliver
 * consente la distribuzione in blocco, mediante l&#39;aggiunta di più componenti core di frammenti di contenuto nella pagina utilizzata per la distribuzione API
 
-In questa e nelle pagine seguenti sono illustrate le attività di creazione, configurazione e manutenzione dei frammenti di contenuto:
+This and the following pages cover the tasks for creating, configuring and maintaining your content fragments:
 
-* [Gestione dei frammenti](/help/assets/content-fragments/content-fragments-managing.md) di contenuto: creazione dei frammenti di contenuto; quindi modifica, pubblicazione e riferimento
-* [Modelli](/help/assets/content-fragments/content-fragments-models.md) di frammenti di contenuto - attivazione, creazione e definizione dei modelli
-* [Variazioni - Creazione di contenuti](/help/assets/content-fragments/content-fragments-variations.md) di frammento - Creazione di contenuti di frammento e creazione di varianti del contenuto principale
-* [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - uso della sintassi di marketing per il frammento
-* [Utilizzo di contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) associato - aggiunta di contenuto associato
-* [Metadati - Proprietà](/help/assets/content-fragments/content-fragments-metadata.md) frammento - visualizzazione e modifica delle proprietà del frammento
+* [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - create your content fragments; then edit, publish and reference
+* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - enabling, creating and defining your models
+* [Variations - Authoring Fragment Content](/help/assets/content-fragments/content-fragments-variations.md) - author the fragment content and create variations of the Master
+* [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - using markdown syntax for your fragment
+* [Using Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md) - adding associated content
+* [Metadata - Fragment Properties](/help/assets/content-fragments/content-fragments-metadata.md) - viewing and editing the fragment properties
 
 >[!NOTE]
 >
->Queste pagine devono essere lette insieme all’authoring delle [pagine con frammenti](/help/sites-cloud/authoring/fundamentals/content-fragments.md)di contenuto.
+>These pages should be read in conjunction with [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
-Il numero di canali di comunicazione aumenta ogni anno. In genere i canali fanno riferimento al meccanismo di consegna, come:
+The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
 * canale fisico; ad esempio desktop, mobile.
 * forma di consegna in un canale fisico; Ad esempio, &quot;pagina di dettaglio del prodotto&quot;, &quot;pagina di categoria del prodotto&quot; per desktop o &quot;web mobile&quot;, &quot;app mobile&quot; per dispositivi mobili.
@@ -40,21 +40,21 @@ I frammenti di contenuto consentono di:
 
 * Considerate come raggiungere i tipi di pubblico target in modo efficiente tra i canali.
 * Creazione e gestione di contenuti editoriali neutri per i canali.
-* Creazione di pool di contenuti per diversi canali.
+* Creazione di pool di contenuti per una serie di canali.
 * Progettare varianti di contenuto per canali specifici.
 * Aggiungete immagini al testo inserendo risorse (frammenti multimediali diversi).
 
-Questi frammenti di contenuto possono essere assemblati per fornire esperienze su diversi canali.
+These content fragments can then be assembled to provide experiences over a variety of channels.
 
-## Frammenti di contenuto e servizi di contenuto {#content-fragments-and-content-services}
+## Content Fragments and Content Services {#content-fragments-and-content-services}
 
-AEM Content Services è progettato per rendere più generalizzata la descrizione e la distribuzione dei contenuti in/da AEM, oltre a concentrarsi sulle pagine Web.
+AEM Content Services are designed to generalize the description and delivery of content in/from AEM beyond a focus on web pages.
 
-Forniscono contenuti ai canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. Questi canali possono includere:
+They provide the delivery of content to channels that are not traditional AEM web pages, using standardized methods that can be consumed by any client. These channels can include:
 
-* Applicazioni a pagina singola
-* Applicazioni mobili native
-* altri canali e punti di contatto esterni ad AEM
+* Single Page Applications
+* Native Mobile Applications
+* other channels and touch-points external to AEM
 
 La consegna è realizzata in formato JSON.
 
@@ -97,87 +97,87 @@ I frammenti di contenuto possono essere:
 Si basano sul modello Frammento semplice.
 
 * Frammenti contenenti contenuto strutturatoQuesti si basano su un modello [di frammento di](/help/assets/content-fragments/content-fragments-models.md)contenuto, che preimposta una struttura per il frammento risultante.
-Questi possono essere utilizzati anche per realizzare Content Services utilizzando JSON Exporter.
+These can also be used to realize Content Services using the JSON Exporter.
 
 ## Tipo di contenuto {#content-type}
 
-I frammenti di contenuto sono:
+Content fragments are:
 
-* Memorizzati come **risorse**:
+* Stored as **Assets**:
 
    * I frammenti di contenuto (e le relative varianti) possono essere creati e mantenuti dalla console **Risorse** .
-   * Authored and modified in Content Fragment Editor (Modifica e modifica nell’Editor frammento di contenuto).
+   * Authored and edited in the Content Fragment Editor.
 
-* Utilizzato nell’editor [pagina tramite il componente](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Frammento di contenuto (componente di riferimento):
+* Used in the [page editor by means of the Content Fragment component](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (referencing component):
 
-   * Il componente **Frammento** di contenuto è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
+   * Il componente **Frammento** di contenuto è disponibile per gli autori delle pagine. It allows them to reference, and deliver, the required content fragment in either HTML or JSON format.
 
-I frammenti di contenuto sono una struttura di contenuto che:
+Content Fragments are a content structure that:
 
-* Sono privi di layout o di design (in modalità RTF è possibile formattare del testo).
-* Contengono una o più parti [](#constituent-parts-of-a-content-fragment)costituenti.
+* Are without layout or design (some text formatting is possible in Rich Text mode).
+* Contain one, or more, [constituent parts](#constituent-parts-of-a-content-fragment).
 * Può [contenere o collegare immagini](#fragments-with-visual-assets).
 * Può utilizzare contenuto [intermedio](#in-between-content-when-page-authoring-with-content-fragments) quando viene fatto riferimento a una pagina.
 
-* Sono indipendenti dal meccanismo di consegna (ad es. pagina, canale).
+* Are independent from the delivery mechanism (i.e. page, channel).
 
-### Frammenti con risorse visive {#fragments-with-visual-assets}
+### Fragments with Visual Assets {#fragments-with-visual-assets}
 
-Per dare agli autori un maggiore controllo sul contenuto, è possibile aggiungere e/o integrare immagini con un frammento di contenuto.
+To give authors more control of their content, images can be added to and/or integrated with a content fragment.
 
-Le risorse possono essere utilizzate con un frammento di contenuto in diversi modi; ciascuno con i propri vantaggi:
+Assets can be used with a content fragment in several ways; each with its own advantage(s):
 
-* **Inserire una risorsa** in un frammento (frammenti multimediali diversi)
+* **Insert Asset** into a fragment (mixed-media fragments)
 
-   * Sono parte integrante del frammento (vedere Parti [costitutive di un frammento](#constituent-parts-of-a-content-fragment)di contenuto).
-   * Definite la posizione della risorsa.
-   * Per ulteriori informazioni, vedere [Inserimento di risorse nel frammento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) nell’Editor frammento.
+   * Are an integral part of the fragment (see [Constituent Parts of a Content Fragment](#constituent-parts-of-a-content-fragment)).
+   * Define the position of the asset.
+   * See [Inserting Assets into your Fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) in the Fragment Editor for more information.
    >[!NOTE]
    >
-   >Le risorse visive inserite nel frammento di contenuto stesso sono associate al paragrafo precedente. Quando il frammento viene aggiunto a una pagina, queste risorse vengono spostate in relazione a tale paragrafo quando viene aggiunto del contenuto intermedio.
+   >Le risorse visive inserite nel frammento di contenuto stesso sono associate al paragrafo precedente. When the fragment is added to a page these assets are moved in relation to that paragraph when in-between content is added.
 
 * **Contenuto associato**
 
-   * sono connessi a un frammento; ma non una parte fissa del frammento (vedere Parti [costitutive di un frammento](#constituent-parts-of-a-content-fragment)di contenuto).
-   * Consente una certa flessibilità per il posizionamento.
-   * Sono facilmente utilizzabili (come contenuto intermedio) quando si utilizza il frammento su una pagina.
-   * Per ulteriori informazioni, consulta Contenuto [](/help/assets/content-fragments/content-fragments-assoc-content.md) associato.
+   * Are connected to a fragment; but not a fixed part of the fragment (see [Constituent Parts of a Content Fragment](#constituent-parts-of-a-content-fragment)).
+   * Allows some flexibility for positioning.
+   * Are easily available for use (as in-between content) when using the fragment on a page.
+   * See [Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md) for more information.
 
-* Risorse disponibili dal browser **** Risorse dell’editor pagina
+* Risorse disponibili nel **browser Risorse** dell’editor pagina
 
-   * Consente la flessibilità totale per la selezione di una risorsa.
-   * Consente una certa flessibilità per il posizionamento.
-   * Non fornisce il concetto di approvazione per un frammento specifico.
-   * Per ulteriori informazioni, consulta Browser [](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) risorse.
+   * Allow full flexibility for selection of an asset.
+   * Allows some flexibility for positioning.
+   * Does not provide the concept of being approved for a specific fragment.
+   * See [Assets Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) for more information.
 
 ### Parti costitutive di un frammento di contenuto {#constituent-parts-of-a-content-fragment}
 
-Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (direttamente o indirettamente):
+The content fragment assets are made up of the following parts (either directly or indirectly):
 
-* **Elementi frammento**
+* **Fragment Elements**
 
-   * Gli elementi sono correlati ai campi di dati che contengono contenuto.
-   * Per i frammenti con contenuto strutturato, è necessario utilizzare un modello di contenuto per creare il frammento di contenuto. Gli elementi (campi) specificati nel modello definiscono la struttura del frammento. Questi elementi (campi) possono essere di diversi tipi di dati.
-   * Per frammenti semplici:
+   * Elements correlate to the data fields holding content.
+   * For fragments with structured content, you use a content model to create the content fragment. The elements (fields) specified in the model define the structure of the fragment. These elements (fields) can be of a variety of data-types.
+   * For simple fragments:
 
-      * Il contenuto è contenuto in uno o più campi di testo a più righe, o elementi.
-      * Gli elementi sono definiti nel modello di frammento (non è possibile definirli durante la creazione del frammento, vedere Modelli di frammento di contenuto). <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+      * The content is held in one (or more) multi-line text field(s), or element(s).
+      * The elements are defined in the fragment template (cannot be defined when authoring the fragment).
 
 * **Paragrafi frammento**
 
-   * Blocchi di testo:
+   * Blocks of text, that are:
 
-      * separati da spazi verticali (ritorno a capo)
-      * in elementi di testo con più righe; in frammenti semplici o strutturati
-   * Nelle modalità [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) e [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) , un paragrafo può essere formattato come intestazione, nel qual caso il paragrafo e il paragrafo seguente appartengono insieme come un’unica unità.
+      * separated by vertical spaces (carriage return)
+      * in multi-line text elements; in either simple or structured fragments
+   * Nelle modalità [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) e [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), un paragrafo può essere formattato come intestazione, in tal caso appartiene a un’unica unità insieme al paragrafo seguente.
 
    * Attiva il controllo del contenuto durante l’authoring delle pagine.
 
 
-* **Risorse inserite in un frammento (frammenti di file multimediali diversi)**
+* **Assets Inserted into a Fragment (Mixed-Media Fragments)**
 
    * Risorse (immagini) inserite nel frammento effettivo e utilizzate come contenuto interno di un frammento.
-   * Sono incorporati nel sistema paragrafo del frammento.
+   * Are embedded in the paragraph system of the fragment.
    * Può essere formattato quando un [frammento viene utilizzato/a cui viene fatto riferimento in una pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
    * È possibile aggiungere, eliminare o spostare solo all&#39;interno di un frammento utilizzando l&#39;Editor frammento. Queste azioni non possono essere effettuate nell’editor pagina.
    * È possibile aggiungere, eliminare o spostare solo all’interno di un frammento utilizzando il formato [RTF nell’editor](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)frammento.
@@ -194,55 +194,55 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
 * **Contenuto associato**
 
    * Si tratta di contenuto esterno a un frammento ma con rilevanza editoriale. In genere, immagini, video o altri frammenti.
-   * Le singole risorse all&#39;interno della raccolta possono essere utilizzate con il frammento nell&#39;Editor pagina, quando viene aggiunto a una pagina. Ciò significa che sono opzionali, a seconda dei requisiti del canale specifico.
-   * Le risorse sono [associate ai frammenti tramite raccolte](/help/assets/content-fragments/content-fragments-assoc-content.md); le raccolte associate consentono all&#39;autore di decidere quali risorse utilizzare per la creazione della pagina.
+   * The individual assets within the collection are available to be used with the fragment in the page editor, when it is added to a page. This means that they are optional, depending on the requirements of the specific channel.
+   * The assets are [associated to fragments via collections](/help/assets/content-fragments/content-fragments-assoc-content.md); associated collections allow the author to decide which assets to use when they are authoring the page.
 
-      * Le raccolte possono essere associate ai frammenti tramite modelli, contenuti predefiniti o autori durante l&#39;authoring dei frammenti.
+      * Collections can be associated to fragments via templates, as default content, or by authors during fragment authoring.
       * [Le raccolte](/help/assets/manage-collections.md) di risorse (DAM) sono la base per il contenuto associato dei frammenti.
-   * Facoltativamente è possibile aggiungere il frammento stesso a una raccolta per facilitare il tracciamento.
+   * Optionally you can also add the fragment itself to a collection to aid tracking.
 
-* **Metadati frammento**
+* **Fragment Metadata**
 
-   * Utilizzate gli schemi [di metadati](/help/assets/metadata-schemas.md)Risorse.
-   * I tag possono essere creati quando:
+   * Utilizzate gli schemi [di metadati delle](/help/assets/metadata-schemas.md)risorse.
+   * Tags can be created when you:
 
       * Creazione e creazione del frammento
       * O successivo:
 
-         * Visualizzazione/modifica delle **proprietà** del frammento dalla console
+         * By viewing/editing the fragment **Properties** from the console
          * Modificando i **metadati** nell’editor frammento
    >[!CAUTION]
    >
-   >I profili di elaborazione dei metadati non si applicano ai frammenti di contenuto.
+   >Metadata processing profiles do not apply to Content Fragments.
 
 * **Principale**
 
-   * Parte integrante del frammento
+   * An integral part of the fragment
 
-      * Ogni frammento di contenuto ha un&#39;istanza Master.
-      * Impossibile eliminare la Master.
-   * Master è accessibile nell&#39;editor frammento in **[Variazioni](/help/assets/content-fragments/content-fragments-variations.md)**.
-   * Master non è una variante in quanto tale, ma è la base di tutte le variazioni.
+      * Every content fragment has one instance of Master.
+      * Master cannot be deleted.
+   * Master is accessible in the fragment editor under **[Variations](/help/assets/content-fragments/content-fragments-variations.md)**.
+   * Master is not a variation as such, but is the basis of all variations.
 
 
 * **Varianti**
 
-   * Rappresentazioni di testo di frammento specifiche per fini editoriali; può essere collegato al canale, ma non è obbligatorio, può essere anche per modifiche locali ad hoc.
-   * Sono creati come copie di **Master**, ma possono essere modificati come necessario; in genere esiste una sovrapposizione di contenuto tra le varianti stesse.
+   * Renditions of fragment text that are specific to editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
+   * Are created as copies of **Master**, but can then be edited as required; there is usually content overlap between the variations themselves.
    * Può essere definito durante la creazione di frammenti o predefinito nei modelli di frammento.
-   * Memorizzato nel frammento, per evitare la dispersione delle copie dei contenuti.
-   * Le varianti possono essere [sincronizzate](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) con Master se il contenuto Master è stato aggiornato.
+   * Stored in the fragment, to help avoid scattering of content copies.
+   * Variations can be [synchronized](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) with Master if the Master content has been updated.
    * Può essere [sintetizzato](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) per troncare rapidamente il testo fino a una lunghezza predefinita.
-   * Disponibile nella scheda [Variazioni](/help/assets/content-fragments/content-fragments-variations.md) dell&#39;Editor frammento.
+   * Available under the [Variations](/help/assets/content-fragments/content-fragments-variations.md) tab of the fragment editor.
 
 ### Contenuto intermedio durante l’authoring della pagina con frammenti di contenuto {#in-between-content-when-page-authoring-with-content-fragments}
 
-Contenuto intermedio:
+In-between content:
 
-* È disponibile nell’Editor pagina quando si utilizzano i frammenti di contenuto.
+* Is available for use in the Page Editor when working with Content Fragments.
 * Il contenuto [aggiuntivo viene aggiunto all’interno del flusso di un frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-in-between-content) una volta utilizzato/a cui è stato fatto riferimento in una pagina.
-* È disponibile nell’Editor [pagina quando si utilizzano i frammenti](/help/sites-cloud/authoring/fundamentals/content-fragments.md)di contenuto.
-* È possibile aggiungere contenuto intermedio a qualsiasi frammento, in cui è visibile un solo elemento.
+* È disponibile per l’uso nell’Editor [pagina quando si utilizzano i frammenti](/help/sites-cloud/authoring/fundamentals/content-fragments.md)di contenuto.
+* In-between content can be added to any fragment, where there is only one element visible.
 * È possibile utilizzare il contenuto associato, nonché risorse e/o componenti dal browser appropriato.
 
 >[!CAUTION]
@@ -253,7 +253,7 @@ Contenuto intermedio:
 
 Per creare, modificare e utilizzare i frammenti di contenuto è inoltre necessario:
 
-* **Modello contenuto**
+* **Modello di contenuto**
 
    * Vengono [abilitati e quindi creati utilizzando Strumenti](/help/assets/content-fragments/content-fragments-models.md).
    * Obbligatorio per [creare un frammento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)strutturato.
@@ -263,7 +263,7 @@ Per creare, modificare e utilizzare i frammenti di contenuto è inoltre necessar
 * **Modello frammento**
 
    * Obbligatorio per [creare un frammento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)semplice.
-   * Generalmente sviluppato durante l&#39;attuazione del progetto; impossibile creare durante la creazione. <!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
+   * Generalmente sviluppato durante l’implementazione del progetto; impossibile generarlo durante la creazione.
    * Definisce le proprietà di base di un frammento semplice (titolo, numero di elementi di testo, definizioni di tag).
    * Le definizioni dei modelli richiedono un titolo e un elemento di testo; tutto il resto è facoltativo. Il modello definisce un ambito minimo del frammento e, se applicabile, il contenuto predefinito. Gli autori possono in seguito estendere un frammento oltre a quanto definito nel modello.
 
