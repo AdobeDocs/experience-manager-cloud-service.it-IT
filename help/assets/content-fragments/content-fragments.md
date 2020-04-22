@@ -2,7 +2,7 @@
 title: Utilizzo di frammenti di contenuto
 description: Scoprite come i frammenti di contenuto consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
 
 ---
 
@@ -93,11 +93,19 @@ I frammenti esperienza possono includere contenuti sotto forma di frammenti di c
 
 I frammenti di contenuto possono essere:
 
-* Frammenti semplici: non hanno una struttura predefinita. Contengono solo testo e immagini.
-Si basano sul modello frammento **** semplice.
+* Frammenti semplici
 
-* Frammenti contenenti contenuto strutturatoQuesti si basano su un modello [di frammento di](/help/assets/content-fragments/content-fragments-models.md)contenuto, che preimposta una struttura per il frammento risultante.
-Questi possono essere utilizzati anche per realizzare Content Services utilizzando JSON Exporter.
+   * Non hanno una struttura predefinita.
+
+   * Contengono solo testo e immagini.
+
+   * Si basano sul modello frammento **** semplice.
+
+* Frammenti contenenti contenuto strutturato
+
+   * Questi si basano su un modello [di frammento di](/help/assets/content-fragments/content-fragments-models.md)contenuto, che predefinito una struttura per il frammento risultante.
+
+   * Questi possono essere utilizzati anche per realizzare Content Services utilizzando JSON Exporter.
 
 ## Tipo di contenuto {#content-type}
 
