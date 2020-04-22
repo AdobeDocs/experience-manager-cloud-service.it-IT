@@ -2,7 +2,7 @@
 title: Gestione dei frammenti di contenuto
 description: I frammenti di contenuto sono memorizzati come risorse e sono gestiti principalmente dalla console Risorse.
 translation-type: tm+mt
-source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -22,10 +22,6 @@ I frammenti di contenuto sono memorizzati come **risorse** e sono gestiti princi
 
 [I modelli](/help/assets/content-fragments/content-fragments-models.md) di frammento di contenuto possono essere attivati e creati prima di creare frammenti di contenuto con contenuto strutturato.
 
->[!NOTE]
->
->Per ulteriori informazioni sui modelli, consulta [Sviluppo di frammenti](/help/implementing/developing/extending/content-fragments-customizing.md) di contenuto; utilizzato per i frammenti di contenuto semplici.
-
 ### Creazione di un frammento di contenuto {#creating-a-content-fragment}
 
 Il metodo di creazione di un frammento di contenuto è sostanzialmente lo stesso per i frammenti semplici e strutturati:
@@ -34,12 +30,13 @@ Il metodo di creazione di un frammento di contenuto è sostanzialmente lo stesso
 2. Per aprire la procedura guidata, seleziona **Crea**, quindi **Frammento di contenuto**.
 3. Il primo passaggio della procedura guidata richiede di specificare la base del nuovo frammento.
 
-   * Può trattarsi di:
+   * Può essere:
 
-      * Template - for example **Simple Fragment**
+      * modello frammento **** semplice
 
       * [Modello](/help/assets/content-fragments/content-fragments-models.md) : utilizzato per creare un frammento che richiede contenuto strutturato; ad esempio, il modello **Aeroporti**
-   * Vengono visualizzati tutti i modelli disponibili.
+
+         * Vengono visualizzati tutti i modelli disponibili.
    Dopo la selezione, utilizzate **Avanti** per proseguire.
 
    ![base frammento](assets/cfm-managing-01.png)
