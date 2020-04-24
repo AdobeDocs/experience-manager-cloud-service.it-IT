@@ -2,7 +2,7 @@
 title: Registrazione
 description: Scoprite come configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 translation-type: tm+mt
-source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
+source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
 
 ---
 
@@ -88,7 +88,7 @@ Le altre coppie seguono la configurazione standard:
 
    * Scrive `Warning` messaggi in `../logs/error.log` per il servizio `org.apache.pdfbox`.
 
-* Non si collega a uno specifico Writer in modo da creare e utilizzare un Writer implicito con configurazione predefinita (rotazione del registro giornaliera).
+* Non crea alcun collegamento a uno specifico Writer in modo da creare e utilizzare un Writer implicito con configurazione predefinita.
 
 **Registrazione delle richieste HTTP di servizi cloud AEM**
 
@@ -96,7 +96,7 @@ Tutte le richieste di accesso ad AEM WCM e all&#39;archivio sono registrate qui.
 
 Esempio di output:
 
-**Registrazione richiesta/risposta HTTP AEM**
+**AEM come richiesta HTTP di servizio cloud/Registrazione di accesso alle risposte**
 
 Ogni richiesta di accesso è registrata qui insieme alla risposta.
 
@@ -168,7 +168,7 @@ Questi elementi sono collegati dai seguenti parametri per gli elementi appropria
 
 * **Logger (Logging)**
 
-   Definire i servizi che generano i messaggi.
+   Definite i servizi che generano i messaggi.
 
 <!-- * **Log File (Logging Logger)**
 
@@ -183,7 +183,7 @@ Questi elementi sono collegati dai seguenti parametri per gli elementi appropria
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-## Impostazione del livello di registro {#setting-the-log-level}
+### Impostazione del livello di registro {#setting-the-log-level}
 
 Per modificare i livelli di registro per gli ambienti Cloud, la configurazione Sling Logging OSGI deve essere modificata, seguita da una ridistribuzione completa. Poiché non è istantaneo, essere cauti nell&#39;attivare log verbosi in ambienti di produzione che ricevono molto traffico. In futuro, è possibile che ci saranno meccanismi per cambiare più rapidamente il livello di registro.
 
@@ -191,7 +191,7 @@ Per modificare i livelli di registro per gli ambienti Cloud, la configurazione S
 >
 > Per eseguire le modifiche di configurazione elencate di seguito, è necessario crearle in un ambiente di sviluppo locale e quindi inviarle a un’istanza AEM come servizio cloud. Per ulteriori informazioni su come eseguire questa operazione, consulta [Implementazione in AEM come servizio](/help/implementing/deploying/overview.md)cloud.
 
-### Attivazione del livello di registro DEBUG {#activating-the-debug-log-level}
+**Attivazione del livello di registro DEBUG**
 
 >[!WARNING]
 >
