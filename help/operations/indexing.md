@@ -2,7 +2,7 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
 
 ---
 
@@ -117,7 +117,6 @@ Con le installazioni blu-verde, non si verificano tempi di inattività. Tuttavia
 
 Nella tabella seguente sono riportate 5 definizioni di indice: index `cqPageLucene` è utilizzato in entrambe le versioni, mentre index `damAssetLucene-custom-1` è utilizzato solo nella versione 2.
 
-
 >[!NOTE]
 >
 > `<indexName>-custom-<customerVersionNumber>` è necessario che AEM come servizio cloud contrassegni questo tipo di sostituzione per un indice esistente.
@@ -143,7 +142,7 @@ Quando Adobe modifica un indice out-of-the-box come &quot;damAssetLucene&quot; o
 | /oak:index/cqPageLucene | Sì | Sì | No |
 | /oak:index/cqPageLucene-2 | Sì | No | Sì |
 
-### Limitazioni  {#limitations}
+### Limitazioni    {#limitations}
 
 Al momento la gestione degli indici è supportata solo per gli indici di tipo `lucene`.
 
