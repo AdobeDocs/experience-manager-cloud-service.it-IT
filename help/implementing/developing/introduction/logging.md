@@ -2,7 +2,7 @@
 title: Registrazione
 description: Scoprite come configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 translation-type: tm+mt
-source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
+source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
 
 ---
 
@@ -90,19 +90,19 @@ Le altre coppie seguono la configurazione standard:
 
 * Non si collega a uno specifico Writer in modo da creare e utilizzare un Writer implicito con configurazione predefinita (rotazione del registro giornaliera).
 
-### Registrazione delle richieste HTTP di servizi cloud AEM {#request-logging}
+**Registrazione delle richieste HTTP di servizi cloud AEM**
 
 Tutte le richieste di accesso ad AEM WCM e all&#39;archivio sono registrate qui.
 
 Esempio di output:
 
-### Registrazione richiesta/risposta HTTP AEM {#access-logging}
+**Registrazione richiesta/risposta HTTP AEM**
 
 Ogni richiesta di accesso è registrata qui insieme alla risposta.
 
 Esempio di output:
 
-### Server Web Apache / Registrazione Dispatcher {#dispatcher-logging}
+**Server Web Apache / Registrazione Dispatcher**
 
 Si tratta di un registro utilizzato per il debug dei problemi del dispatcher. Per ulteriori informazioni, vedi [Debug della configurazione](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/)Apache e Dispatcher.
 
