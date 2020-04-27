@@ -1,8 +1,8 @@
 ---
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
 
 ---
 
@@ -110,7 +110,7 @@ Per informazioni complete su tutti i caratteri consentiti, consulta le convenzio
 
 Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome** da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR. <!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
 
-Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Esempio:
+Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
 
 | Titolo | Nome derivato |
 |---|---|
@@ -258,19 +258,21 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
    * [Modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e barra degli strumenti
    E quindi l’icona **Copia pagina**:
 
-   ![Pulsante Copia](/help/sites-cloud/authoring/assets/copy.png)
+   ![Copia](/help/sites-cloud/authoring/assets/copy.png)
 
    >[!NOTE]
    >
    >Se sei in modalità di selezione, lascerai tale modalità non appena la pagina viene copiata.
 
 1. Passa al percorso in cui desideri inserire la nuova copia della pagina.
-1. Utilizza l’icona **Incolla** pagina:
+1. L’icona **Incolla** è disponibile con una freccia a discesa direttamente a destra:
 
-   ![Pulsante Incolla](/help/sites-cloud/authoring/assets/paste.png)
+   ![Incolla](/help/sites-cloud/authoring/assets/paste.png)
 
-   Nel percorso attuale viene creata una copia della pagina originale e delle relative sottopagine.
+   Puoi effettuare le seguenti operazioni:
 
+   1. Selezionate l’icona **Incolla** pagina stessa: In questa posizione viene creata una copia della pagina originale e delle eventuali pagine figlie.
+   1. Selezionate la freccia a discesa per visualizzare l’opzione **Incolla senza elementi secondari** . In questa posizione verrà creata una copia della pagina originale; le pagine figlie non verranno copiate.
    >[!NOTE]
    >
    >Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventerà `beach1`.
@@ -365,7 +367,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    >[!NOTE]
    >
-   >A titolo di precauzione, l’icona **Elimina** pagina non è disponibile come azione rapida.
+   >Come precauzione di protezione, **l’icona Elimina pagina** non è disponibile come azione rapida.
 
 1. Una finestra di dialogo chiederà una conferma, utilizza:
 
