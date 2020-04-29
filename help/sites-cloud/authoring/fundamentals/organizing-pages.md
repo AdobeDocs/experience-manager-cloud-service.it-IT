@@ -2,7 +2,7 @@
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
 translation-type: tm+mt
-source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
+source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
 
 ---
 
@@ -369,8 +369,13 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
    >
    >Come precauzione di protezione, **l’icona Elimina pagina** non è disponibile come azione rapida.
 
-1. Una finestra di dialogo chiederà una conferma, utilizza:
+1. Viene visualizzata una finestra di dialogo con richiesta di conferma.
 
+   ![Elimina, finestra di dialogo](/help/sites-cloud/authoring/assets/delete-page.png)
+
+   * **Intendi archiviare le pagine prima di eliminarle?** - Se questa opzione è attivata, le versioni delle pagine selezionate per l&#39;eliminazione verranno create al momento dell&#39;eliminazione.
+      * [Le versioni possono essere ripristinate in una data successiva.](/help/sites-cloud/authoring/features/page-versions.md)
+      * Le pagine eliminate senza versioni precedenti non possono essere ripristinate.
    * **Annulla** per interrompere l’azione
    * **Elimina** per confermare l’azione:
 
