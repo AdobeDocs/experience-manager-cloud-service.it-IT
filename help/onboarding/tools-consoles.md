@@ -1,8 +1,8 @@
 ---
 title: Console Strumenti
 description: Informazioni sulle diverse console Strumenti disponibili in AEM.
-translation-type: ht
-source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
+translation-type: tm+mt
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -18,11 +18,13 @@ Puoi accedere a tali console mediante il [pannello Strumenti della navigazione g
 >Nelle schede dell’interfaccia utente sono disponibili dettagli sullo scopo di ciascuna opzione, pertanto questa tabella fornisce solo alcuni riferimenti rapidi sulla posizione delle funzioni disponibili nel pannello Strumenti.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>Sezione</td>
    <td>Opzione</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Generale</td>
    <td> </td>
