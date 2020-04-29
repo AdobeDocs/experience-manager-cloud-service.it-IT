@@ -1,15 +1,15 @@
 ---
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redarre e utilizzare contenuti indipendenti dalla pagina.
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # Frammenti di contenuto {#content-fragments}
 
-I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md).
+I frammenti di contenuto in Adobe Experience Manager (AEM) come servizio Cloud vengono [creati e gestiti come risorse](/help/assets/content-fragments/content-fragments.md)indipendenti dalla pagina.
 
 Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
@@ -89,8 +89,8 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
    >
    >Gli elementi disponibili dipendono dal modello utilizzato.
 
-* **Variante**
-   * La variante predefinita **Principale** è sempre disponibile.
+* **Variazione**
+   * Il **Master** predefinito sarà sempre disponibile.
    * Una selezione è disponibile se per il frammento sono state create delle varianti.
 * **Paragrafi**: specifica l’intervallo di paragrafi da includere:
    * **Tutti**
@@ -143,7 +143,7 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 
 ### Uso di contenuti associati   {#using-associated-content}
 
-Se sono presenti [contenuti associati](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), tali risorse saranno disponibili nel pannello laterale (dopo che avrai inserito il frammento nella pagina del contenuto). Il contenuto associato è sostanzialmente un’origine speciale di contenuti per il [contenuto intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Se hai [associato del contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
