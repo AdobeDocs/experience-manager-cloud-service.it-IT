@@ -2,7 +2,7 @@
 title: Configurazione dei moduli di ricerca
 description: Configurazione dei moduli di ricerca per Adobe Experience Manager come servizio cloud.
 translation-type: tm+mt
-source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -11,13 +11,13 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 Adobe Experience Manager come servizio Cloud viene fornito con un potente meccanismo di [ricerca](/help/sites-cloud/authoring/getting-started/search.md) .
 
-In combinazione con questo, è disponibile un set di opzioni predefinite per facilitare l’applicazione di filtri ai contenuti. Questi contengono facet predefiniti come Data **** modifica, Stato **** pubblicazione o Stato **** Live Copy per consentirvi di espandere rapidamente le risorse necessarie.
+In combinazione con questo, è disponibile anche un set di opzioni predefinite per facilitare l’applicazione di filtri ai contenuti. Questi contengono facet predefiniti come Data **** modifica, Stato **** pubblicazione o Stato **** Live Copy per consentirvi di espandere rapidamente le risorse necessarie.
 
 ![utilizzo di ricerca e filtro](assets/csf-usage.png)
 
 L&#39;obiettivo di questi strumenti è quello di individuare rapidamente e facilmente i contenuti da:
 
-* [Ricerca e Filtro](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [Ricerca e filtro](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [Selettore della barra](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 * il Browser [](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) risorse (durante la modifica delle pagine)
 
@@ -37,7 +37,7 @@ I moduli **di** ricerca forniscono una selezione out-of-the-box di [predicati](#
 
 ## Moduli predefiniti {#default-forms}
 
-La prima volta che si accede alla console **Cerca moduli** , è possibile vedere che tutte le configurazioni dispongono di un simbolo lucchetto. Questo indica che la configurazione corrispondente è quella predefinita (out-of-the-box) e non può essere eliminata. Una volta personalizzata e salvata, il blocco scompare. Viene visualizzata nuovamente quando si [elimina la configurazione](#deleting-a-configuration-to-reinstate-the-default)personalizzata, nel qual caso viene ripristinata l&#39;impostazione predefinita (e l&#39;indicatore del lucchetto).
+La prima volta che si accede alla console **Cerca moduli** , è possibile vedere che tutte le configurazioni dispongono di un simbolo lucchetto. Questo indica che la configurazione corrispondente è la configurazione predefinita (out-of-the-box) e non può essere eliminata. Una volta personalizzata e salvata la configurazione, il blocco scompare. Viene visualizzata nuovamente quando si [elimina la configurazione](#deleting-a-configuration-to-reinstate-the-default)personalizzata, nel qual caso viene ripristinata l&#39;impostazione predefinita (e l&#39;indicatore del lucchetto).
 
 ![configurazione dei moduli di ricerca](assets/csf-overview.png)
 
@@ -112,7 +112,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
    </td>
   </tr>
   <tr>
-   <td>Authoring</td>
+   <td>Autore</td>
    <td>Ricerca in base all’autore.</td>
    <td>
     <ul>
@@ -124,7 +124,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Ritirato da</td>
-   <td>Cercare le risorse sottoposte a Check-Out da un utente specifico.</td>
+   <td>Cercare le risorse sottoposte a check-out da parte di un utente specifico.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -146,7 +146,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Componenti</td>
-   <td>Consente a un autore di cercare/filtrare le pagine che contengono un componente specifico. For example an image gallery.<br /> </td>
+   <td>Consente a un autore di cercare/filtrare le pagine in cui è contenuto un componente specifico. For example an image gallery.<br /> </td>
    <td>
     <ul>
      <li>Segnaposto</li>
@@ -222,7 +222,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Filtro nascosto</td>
-   <td>Filtro su proprietà e valore, non visibile all'utente.</td>
+   <td>Un filtro su proprietà e valore, non visibile all'utente.</td>
    <td>
     <ul>
      <li>Nome proprietà*</li>
@@ -359,7 +359,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Intervallo</td>
-   <td>Consente di cercare risorse all’interno di un intervallo specificato. Nel pannello Ricerca potete specificare i valori minimo e massimo per l’intervallo.</td>
+   <td>Consente di cercare risorse all’interno di un intervallo specificato. Nel pannello Ricerca, potete specificare i valori minimo e massimo per l’intervallo.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -561,7 +561,7 @@ A seconda del predicato sono disponibili per la configurazione una serie di impo
 
 1. Selezionate la configurazione da personalizzare.
 1. Utilizzate l&#39;icona **Modifica** per aprire la configurazione da aggiornare.
-1. Se desiderate una nuova personalizzazione, probabilmente desiderate [aggiungere nuovi campi predicato e definire le impostazioni](#add-edit-a-predicate-field-and-define-field-settings) come necessario. Se esiste una personalizzazione, potete selezionare un campo esistente e [aggiornare le impostazioni](#add-edit-a-predicate-field-and-define-field-settings).
+1. Se desiderate una nuova personalizzazione, probabilmente desiderate [aggiungere nuovi campi predicato e definire le impostazioni](#add-edit-a-predicate-field-and-define-field-settings) come necessario. Se disponete già di una personalizzazione, potete selezionare un campo esistente e [aggiornare le impostazioni](#add-edit-a-predicate-field-and-define-field-settings).
 1. Select **Done** to save the configuration. Le modifiche verranno visualizzate al successivo utilizzo della configurazione.
 
    >[!NOTE]
@@ -693,11 +693,13 @@ L’esempio seguente (per effettuare ricerche in base al modello utilizzato per 
 Nella tabella seguente sono elencate le autorizzazioni necessarie per eseguire le azioni di modifica, eliminazione e anteprima sui moduli di ricerca.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td><strong>Azione</strong></td>
-   <td><strong>Autorizzazioni</strong></td>
+   <td><strong>Autorizzazioni </strong></td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Modifica </td>
    <td>Autorizzazioni di lettura e scrittura sul <code>/apps </code>nodo.</td>
