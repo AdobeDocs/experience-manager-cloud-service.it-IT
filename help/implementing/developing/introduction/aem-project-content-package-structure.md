@@ -2,7 +2,7 @@
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti per la distribuzione in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
+source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
 
 ---
 
@@ -69,15 +69,13 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
          + Gruppi
          + ACL (autorizzazioni)
             + Qualsiasi `rep:policy` per qualsiasi percorso (mutabile o immutabile)
-+ Il `ui.content` pacchetto, o pacchetto di contenuto, contiene tutto il contenuto e la configurazione. Gli elementi comuni del `ui.content` pacchetto includono, tra l&#39;altro:
++ Il `ui.content` pacchetto, o pacchetto di contenuto, contiene tutto il contenuto e la configurazione. Il pacchetto di contenuti contiene tutto ciò che non è incluso nel `ui.apps` pacchetto o, in altre parole, qualsiasi cosa non sia inclusa `/apps` o `/oak:index`. Gli elementi comuni del `ui.content` pacchetto includono, tra l&#39;altro:
    + Configurazioni basate sul contesto
       + `/conf`
    + Strutture di contenuto complesse e necessarie (ad esempio Compilazione del contenuto che si basa e si estende oltre le strutture di contenuto della linea di base definite in Repo Init.
       + `/content`, `/content/dam`, etc.
    + Tassonomie di tag gestite
       + `/content/cq:tags`
-   + Indici Oak
-      + `/oak:index`
    + Etc nodi legacy
       + `/etc`
 + Il pacchetto contenitore `all` include SOLO i pacchetti `ui.apps` e `ui.content` come incorporamenti. Il pacchetto `all` non deve avere **alcun contenuto** proprio, ma deve delegare l’intera distribuzione all’archivio ai relativi pacchetti secondari.
