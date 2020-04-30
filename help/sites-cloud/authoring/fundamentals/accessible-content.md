@@ -2,7 +2,7 @@
 title: Creazione di contenuti accessibili per Adobe Experience Manager come servizio cloud (conformità WCAG 2.1)
 description: Crea contenuti web accessibili e utilizzabili da utenti disabili
 translation-type: tm+mt
-source-git-commit: 6d905c5a29b71c9d05dba910a20ffef21a4eceec
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
@@ -1099,7 +1099,7 @@ Seguite le linee guida in [Come soddisfare i criteri di successo 3.2.3](https://
 
 #### Finalità - Identificazione coerente (3.2.4) {#purpose-consistent-identification}
 
-L&#39;obiettivo di questo criterio di successo è garantire un&#39;identificazione coerente dei componenti funzionali che vengono visualizzati ripetutamente all&#39;interno di un set di pagine Web. Una strategia che gli utenti che utilizzano gli assistenti vocali utilizzano quando gestiscono un sito Web consiste nel fare molta affidamento sulla loro familiarità con le funzioni che possono essere visualizzate su diverse pagine Web. Se funzioni identiche hanno etichette diverse (o, più in generale, un nome accessibile diverso) su pagine Web diverse, il sito sarà molto più difficile da usare. Può anche confondere e aumentare il carico cognitivo per le persone con limitazioni cognitive. Di conseguenza, un&#39;etichettatura coerente sarà di aiuto.
+L&#39;obiettivo di questo criterio di successo è garantire un&#39;identificazione coerente dei componenti funzionali che vengono visualizzati ripetutamente all&#39;interno di un set di pagine Web. Una strategia che gli utenti che utilizzano gli assistenti vocali utilizzano quando gestiscono un sito Web consiste nel fare molta affidamento sulla loro familiarità con le funzioni che possono essere visualizzate su diverse pagine Web. Se funzioni identiche hanno etichette diverse (o, più in generale, un nome accessibile diverso) su pagine Web diverse, il sito sarà molto più difficile da usare. Potrebbe anche confondere e aumentare il carico cognitivo per le persone con limitazioni cognitive. Di conseguenza, un&#39;etichettatura coerente sarà di aiuto.
 
 Questa coerenza si estende alle alternative testuali. Se le icone o altri elementi non testuali hanno la stessa funzionalità, anche le alternative testuali devono essere coerenti.
 
@@ -1238,7 +1238,7 @@ L&#39;obiettivo di questo criterio di successo è aiutare gli utenti con disabil
 
 Gli utenti con disabilità possono avere più probabilità di commettere errori. Le persone con disabilità di lettura possono trasporre numeri e lettere, e le persone con disabilità motorie possono colpire le chiavi per errore. La possibilità di annullare le azioni consente agli utenti di correggere un errore che potrebbe causare gravi conseguenze. La possibilità di rivedere e correggere le informazioni offre all&#39;utente l&#39;opportunità di rilevare un errore prima di intraprendere un&#39;azione che ha gravi conseguenze.
 
-I dati controllabili dall’utente sono dati visualizzabili dall’utente che l’utente può modificare e/o eliminare mediante un’azione intenzionale. Esempi di come l&#39;utente che controlla tali dati sono l&#39;aggiornamento del numero di telefono e dell&#39;indirizzo del conto dell&#39;utente, o l&#39;eliminazione di un record di fatture passate da un sito Web. Non fa riferimento ad argomenti quali i log di internet e i dati di monitoraggio dei motori di ricerca che l&#39;utente non può visualizzare o con cui interagire direttamente.
+I dati controllabili dall’utente sono dati visualizzabili dall’utente che l’utente può modificare e/o eliminare mediante un’azione intenzionale. Alcuni esempi di controllo di tali dati da parte dell&#39;utente sono l&#39;aggiornamento del numero di telefono e dell&#39;indirizzo dell&#39;account dell&#39;utente o l&#39;eliminazione di un record di fatture passate da un sito Web. Non fa riferimento ad argomenti quali i log di internet e i dati di monitoraggio dei motori di ricerca che l&#39;utente non può visualizzare o con cui interagire direttamente.
 
 #### Come soddisfare il criterio - Prevenzione degli errori (legale, finanziario, dati) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 
