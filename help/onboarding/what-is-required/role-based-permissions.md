@@ -2,20 +2,20 @@
 title: Autorizzazioni basate sul ruolo
 description: Autorizzazioni basate sul ruolo
 translation-type: tm+mt
-source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
+source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
 
 ---
 
 
 # Autorizzazioni basate sul ruolo {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] dispone di ruoli preconfigurati con le autorizzazioni appropriate. Ad esempio, uno sviluppatore sviluppa il codice e ha l&#39;autorizzazione per inviare il codice al repository **** Git. In alternativa, il proprietario di un&#39;azienda dispone di autorizzazioni diverse che consentono di definire gli indicatori prestazioni chiave (KPI) e di approvare le distribuzioni.
+[!UICONTROL Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. ] Ad esempio, uno sviluppatore sviluppa il codice e ha l&#39;autorizzazione per inviare il codice al repository **** Git. In alternativa, il proprietario di un&#39;azienda dispone di autorizzazioni diverse che consentono di definire gli indicatori prestazioni chiave (KPI) e di approvare le distribuzioni.
 
 ## Autorizzazioni utente {#user-permissions}
 
 A ciascun ruolo sono associate autorizzazioni specifiche, attività preconfigurate o autorizzazioni specifiche. In questa tabella sono elencate le funzioni disponibili e i ruoli che possono eseguire la funzione.
 
-| Autorizzazione | Descrizione | Proprietario | Gestione distribuzione | Program Manager | Sviluppatore |
+| Autorizzazione | Descrizione | Business Owner (Proprietario) | Deployment Manager (Responsabile implementazione) | Program Manager (Responsabile programma) | Developer (Sviluppatore) |
 |--- |--- |--- |--- |--- |--- |
 | Aggiungi programma | Aggiungere un nuovo programma. | x |  |  |  |
 | Crea ambiente | Creare Ambienti Prod+Stage, Dev, Playground. | x | x |  |  |
@@ -30,6 +30,8 @@ A ciascun ruolo sono associate autorizzazioni specifiche, attività preconfigura
 | Esecuzione pipeline | Fornisci l&#39;approvazione GoLive. | x | x | x |  |
 | Esecuzione pipeline | Pianificazione distribuzione produzione. | x | x | x |  |
 | Esecuzione pipeline | Riprende tubazione produzione. |  |  |  |  |
+| Eliminazione tubazione | Consente di eliminare una tubazione. |  | x |  |  |
+| Annullamento esecuzione | Annulla esecuzione corrente |  | x |  |  |
 | Gestisci ambiente | Aggiungi segmento Publish-Dispatcher dalla schermata Manage Environment (Gestisci ambiente). | x | x |  |  |  |
 | Aggiornamento push | Avviate la pipeline di aggiornamento push. |  |  |  |  |
 | Genera token di accesso personale | Git di accesso. |  | x |  | x |
