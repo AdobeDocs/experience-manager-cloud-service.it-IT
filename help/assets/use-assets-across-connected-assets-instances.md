@@ -3,7 +3,7 @@ title: Utilizzare le risorse collegate per la condivisione di risorse DAM nel fl
 description: Utilizzare le risorse disponibili in un’implementazione remota di Adobe Experience Manager Assets durante la creazione di pagine web in un’altra implementazione di Experience Manager Sites.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7524f6146c33932677b6c8af49d5fe2638a5c02a
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -38,7 +38,7 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 Gli autori possono cercare in Content Finder le immagini e i tipi di documenti indicati di seguito, quindi utilizzare nell’Editor pagina le risorse che hanno cercato. È possibile aggiungere i documenti al componente `Download`, e le immagini al componente `Image`. Gli autori possono inoltre aggiungere le risorse remote a qualsiasi componente AEM personalizzato che estenda i componenti predefiniti `Download` o `Image`. Gli elenchi dei formati supportati sono:
 
 * **Formati di immagini**: sono supportati i formati di immagine supportati dal [componente immagine](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/image.html). Le immagini Dynamic Media non sono supportate.
-* **Formati di documenti**: vedi [Formati di documenti supportati da Risorse collegate](file-format-support.md#doc-formats).
+* **Formati di documenti**: vedi [Formati di documenti supportati da Risorse collegate](file-format-support.md#document-formats).
 
 ### Utenti e gruppi interessati {#users-and-groups-involved}
 
@@ -153,7 +153,7 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
 Le risorse recuperate possono essere utilizzate come qualsiasi altra risorsa locale, ad eccezione del fatto che i metadati associati non possono essere modificati.
 
-## Limitazioni    {#limitations}
+## Limitazioni  {#limitations}
 
 **Autorizzazioni e gestione delle risorse**
 
