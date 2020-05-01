@@ -3,7 +3,7 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -24,14 +24,14 @@ I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente
 
 L’elaborazione delle risorse dipende dalla configurazione in Profili **[!UICONTROL di]** elaborazione, che fornisce una configurazione predefinita, e consente all’amministratore di aggiungere una configurazione di elaborazione delle risorse più specifica. Gli amministratori possono creare e mantenere le configurazioni dei flussi di lavoro post-elaborazione, inclusa la personalizzazione facoltativa. La personalizzazione dei flussi di lavoro consente estensibilità e personalizzazione completa.
 
-Di seguito è riportato un flusso di alto livello per l’elaborazione delle risorse.
+I microservizi delle risorse consentono di elaborare una [vasta gamma di tipi](/help/assets/file-format-support.md) di file che coprono più formati out-of-the-box di quanto sia possibile con le versioni precedenti di Experience Manager, ad esempio l’estrazione di miniature dei formati PSD e PSB che in precedenza richiedevano soluzioni di terze parti come ImageMagick.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![asset-microservices-flow](assets/asset-microservices-flow.png)
+![Visualizzazione di alto livello dell’](assets/asset-microservices-flow.png "elaborazione delle risorseVisualizzazione di alto livello dell’elaborazione delle risorse")
 
 >[!NOTE]
 >
