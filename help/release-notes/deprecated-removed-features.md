@@ -1,8 +1,8 @@
 ---
 title: Funzioni obsolete e rimosse
 description: Note sulla versione specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager as a Cloud Service.
-translation-type: ht
-source-git-commit: b31ae32285080075d2531edd2c4976cf801d1c89
+translation-type: tm+mt
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -24,11 +24,12 @@ In questa sezione sono elencate le funzioni e le funzionalità contrassegnate co
 
 Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nella loro implementazione corrente e di pianificarne la modifica adottando l’alternativa fornita.
 
-| Area | Funzione | Sostituzione |
+| Funzionalità | Funzione obsoleta | Sostituzione |
 | ------------ | ------------------ | ----------- |
-| Assets | Per l’inserimento e l’elaborazione delle risorse non viene più utilizzato il flusso di lavoro `DAM Asset Update`. | Per l’inserimento delle risorse si utilizzano ora i [microservizi per le risorse](/help/assets/asset-microservices-overview.md). |
-| Assets | Le risorse vengono caricate direttamente in AEM; consulta l’articolo sulle [API di caricamento risorse dichiarate obsolete](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | In Experience Manager as a Cloud Service si utilizza il [caricamento binario diretto](/help/assets/add-assets.md). Per informazioni di carattere tecnico, consulta l’articolo sulle [API di caricamento diretto](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
-| Assets | [Alcuni passaggi](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) del flusso di lavoro `DAM Asset Update` non sono supportati, inclusa la chiamata di strumenti della riga di comando come ImageMagick. | [I microservizi per le risorse](/help/assets/asset-microservices-overview.md) sostituiscono numerosi flussi di lavoro. Per l’elaborazione personalizzata, utilizza i [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Assets | `DAM Asset Update` per elaborare le immagini acquisite. | Per l’inserimento delle risorse si utilizzano ora i [microservizi per le risorse](/help/assets/asset-microservices-overview.md). |
+| Assets | Upload assets directly to AEM. See [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilizzate il caricamento [binario](/help/assets/add-assets.md)diretto. Per informazioni di carattere tecnico, consulta l’articolo sulle [API di caricamento diretto](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
+| Assets | [Alcuni passaggi](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) del flusso di lavoro `DAM Asset Update` non sono supportati, inclusa la chiamata di strumenti della riga di comando come ImageMagick.. | [I microservizi per le risorse](/help/assets/asset-microservices-overview.md) sostituiscono numerosi flussi di lavoro. Per l’elaborazione personalizzata, utilizza i [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Assets | Transcodifica FFmpeg dei video. | Per generare le miniature FFmpeg, utilizzate i microservizi [](/help/assets/asset-microservices-overview.md)Asset. Per la transcodifica FFmpeg, utilizzate [Dynamic Media](/help/assets/manage-video-assets.md). |
 
 ## Funzioni rimosse {#removed-features}
 
