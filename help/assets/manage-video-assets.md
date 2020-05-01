@@ -3,14 +3,14 @@ title: Gestire le risorse video
 description: Scoprite come caricare, visualizzare in anteprima, annotare e pubblicare risorse video.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
 
 # Gestire le risorse video {#manage-video-assets}
 
-Scopri come gestire e modificare le risorse video in Risorse Adobe Experience Manager (AEM). La codifica e la transcodifica video sono possibili solo con l’integrazione di Dynamic Media. Senza Contenuti multimediali dinamici, potete ottenere il supporto di base per i video, ad esempio l’estrazione di miniature di anteprima per i formati file supportati e l’anteprima nell’interfaccia utente per i formati supportati per la riproduzione direttamente nel browser.
+Scopri come gestire e modificare le risorse video in Risorse Adobe Experience Manager (AEM). La codifica e la transcodifica video, ad esempio la transcodifica FFmpeg, è possibile solo con l’integrazione di Dynamic Media. Senza Contenuti multimediali dinamici, potete ottenere il supporto di base per i video, ad esempio l’estrazione di miniature di anteprima per i formati file supportati e l’anteprima nell’interfaccia utente per i formati supportati per la riproduzione direttamente nel browser.
 
 <!-- Also, if you are licensed to use Dynamic Media, see the [Dynamic Media video documentation](/help/assets/dynamic-media/video.md). -->
 
@@ -32,5 +32,5 @@ Dopo la pubblicazione, le risorse video sono disponibili per l’inclusione in u
 1. Dalla console Risorse, tocca o fai clic sull’icona [!UICONTROL Modifica] sulla scheda della risorsa per visualizzare la pagina dei dettagli della risorsa.
 1. Per riprodurre il video, toccate o fate clic sull’icona [!UICONTROL Anteprima] .
 1. Per annotare il video, fate clic sul pulsante **[!UICONTROL Annota]** . Un’annotazione viene aggiunta al particolare punto temporale (fotogramma) del video. Durante l&#39;annotazione, è possibile disegnare sul quadro e inserire un commento con il disegno. I commenti vengono salvati automaticamente. Per uscire dalla procedura guidata di annotazione, fate clic su **[!UICONTROL Chiudi]**.
-1. Cercate un punto specifico del video, specificate il tempo in secondi nel campo di **testo** e fate clic su **Salta**. Ad esempio, per saltare i primi 10 secondi di video, immettete 20 nel campo di testo.
+1. Individua un punto specifico del video, specifica il tempo in secondi nel campo di **testo**, infine fai clic su **Jump (Passa a)**. Ad esempio, per saltare i primi 10 secondi del video, inserisci 20 nel campo di testo.
 1. Per visualizzarlo nella timeline, fate clic su un’annotazione. Per eliminare l’annotazione dalla timeline, fate clic su **[!UICONTROL Elimina]**.
