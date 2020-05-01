@@ -3,7 +3,7 @@ title: Scopri come i microservizi di risorse possono elaborare le risorse digita
 description: Elabora le risorse digitali tramite microservizi di elaborazione delle risorse scalabili e nativi basati sul cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -15,9 +15,7 @@ First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/ma
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
 -->
 
-Adobe Experience Manager come servizio Cloud offre un modo nativo per sfruttare le applicazioni e le funzionalità di Experience Manager. Uno degli elementi chiave di questa nuova architettura è l&#39;assimilazione e l&#39;elaborazione delle risorse, basata sui microservizi di asset.
-
-I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente delle risorse tramite i servizi cloud, gestiti da Adobe per la gestione ottimale di diversi tipi di risorse e opzioni di elaborazione. I vantaggi principali sono:
+Adobe Experience Manager come servizio Cloud fornisce un metodo nativo per sfruttare le applicazioni e le funzionalità di Experience Manager. Uno degli elementi chiave di questa nuova architettura è l&#39;assimilazione e l&#39;elaborazione delle risorse, basata sui microservizi di asset. I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente delle risorse mediante i servizi cloud. Adobe gestisce i servizi cloud per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione. I vantaggi principali dei microservizi di risorse native per il cloud sono:
 
 * Architettura scalabile che consente un&#39;elaborazione senza soluzione di continuità per le operazioni che richiedono risorse.
 * Indicizzazione ed estrazioni di testo efficienti che non influiscono sulle prestazioni degli ambienti Experience Manager.
@@ -28,7 +26,7 @@ I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente
 * Laddove possibile, vengono utilizzati i servizi di elaborazione file nativi di Adobe, che forniscono output ad alta fedeltà e una gestione [efficiente dei formati](file-format-support.md)proprietari di Adobe.
 * Possibilità di configurare il flusso di lavoro di post-elaborazione per aggiungere azioni e integrazioni specifiche per l’utente.
 
-I microservizi delle risorse consentono di evitare la necessità di strumenti di rendering di terze parti (come ImageMagick) e di semplificare la configurazione del sistema, fornendo al contempo funzionalità pronte all’uso per i tipi di file più comuni.
+I microservizi delle risorse consentono di evitare la necessità di strumenti e metodi di rendering di terze parti (come la transcodifica ImageMagick e FFmpeg) e di semplificare le configurazioni, fornendo al contempo funzionalità pronte all’uso per i tipi di file più comuni.
 
 ## Architettura di alto livello {#asset-microservices-architecture}
 
@@ -45,12 +43,12 @@ Le fasi chiave dell’assimilazione e dell’elaborazione mediante i microserviz
 
 * I client, come i browser Web o Adobe Asset Link, inviano una richiesta di caricamento a Experience Manager e iniziano a caricare il binario direttamente nell’archivio cloud binario.
 * Al termine del caricamento binario diretto, il client invia una notifica a Experience Manager.
-* Experience Manager invia una richiesta di elaborazione ai microservizi di risorse. Il contenuto della richiesta dipende dalla configurazione dei profili di elaborazione in Experience Manager che specifica quali rappresentazioni devono essere generate.
+* Experience Manager invia una richiesta di elaborazione ai microservizi di risorse. Il contenuto della richiesta dipende dalla configurazione dei profili di elaborazione in Experience Manager che specifica quali rappresentazioni generare.
 * Il back-end Assets microservices riceve la richiesta e la invia a uno o più microservizi in base alla richiesta. Ogni microservizio accede al binario originale direttamente dal cloud store binario.
 * I risultati dell&#39;elaborazione, come le rappresentazioni, vengono memorizzati nell&#39;archivio cloud binario.
-* Experience Manager riceve una notifica del completamento dell&#39;elaborazione con puntatori diretti ai binari generati (rappresentazioni), che sono quindi disponibili in Experience Manager per la risorsa caricata
+* Experience Manager riceve una notifica del completamento dell&#39;elaborazione con puntatori diretti ai binari generati (rappresentazioni). Le rappresentazioni generate sono disponibili in Experience Manager per la risorsa caricata.
 
-Questo è il flusso di base dell’assimilazione e dell’elaborazione delle risorse. Se configurato, Experience Manager può anche avviare il modello di flusso di lavoro del cliente per eseguire la post-elaborazione della risorsa, ad esempio per eseguire alcuni passaggi personalizzati specifici per l’ambiente del cliente, come recuperare informazioni dai sistemi aziendali del cliente da aggiungere alle proprietà della risorsa.
+Questo è il flusso di base dell’assimilazione e dell’elaborazione delle risorse. Se configurato, Experience Manager può anche avviare un modello di flusso di lavoro personalizzato per eseguire la post-elaborazione della risorsa. Ad esempio, esegui passaggi personalizzati specifici per il tuo ambiente, ad esempio recuperare informazioni da un sistema aziendale e aggiungere proprietà alle risorse.
 
 Il flusso di assimilazione e di elaborazione sono concetti chiave dell’architettura dei microservizi di risorse per Experience Manager.
 
