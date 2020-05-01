@@ -3,7 +3,7 @@ title: 'API Assets per la gestione delle risorse digitali in Adobe Experience Ma
 description: Le API Assets consentono operazioni di base di creazione-lettura-aggiornamento-eliminazione (CRUD) per gestire le risorse, inclusi file binari, metadati, rappresentazioni, commenti e frammenti di contenuto.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -40,7 +40,7 @@ Le differenze importanti rispetto alle versioni precedenti di AEM includono:
 Questo approccio dovrebbe fornire una gestione più scalabile e performante dei caricamenti delle risorse.
 
 > !![NOTE]
-Per controllare il codice client che implementa questo approccio, fate riferimento alla libreria di caricamento [aem open source](https://github.com/adobe/aem-upload)
+Per controllare il codice client che implementa questo approccio, fate riferimento alla libreria di caricamento [aem open-source](https://github.com/adobe/aem-upload)
 
 ### Avvia caricamento {#initiate-upload}
 
@@ -92,25 +92,27 @@ Un modo potenziale per ottenere questo risultato è calcolare la dimensione dell
 
 * Calcola la dimensione della parte dividendo la dimensione totale per il numero di URI: 20.000 / 2 = 10.000
 * Intervallo di byte POST 0-9,999 del binario al primo URI nell&#39;elenco degli URI di caricamento
-* Intervallo di byte POST 10,000-19,999 del binario al secondo URI nell’elenco degli URI di caricamento
+* Intervallo di byte POST 10.000 - 19.999 del binario al secondo URI nell&#39;elenco degli URI di caricamento
 
 In caso di esito positivo, il server risponde a ogni richiesta con un codice di `201` stato.
 
 ### Caricamento completo {#complete-upload}
 
-Una volta caricate tutte le parti di un binario, il passo finale consiste nell’inviare una richiesta HTTP POST all’URI completo fornito dai dati di avvio. Il tipo di contenuto del corpo della richiesta deve essere costituito dai dati dell’applicazione/`x-www-form-urlencoded` modulo, contenenti i seguenti campi:
+Dopo aver caricato tutte le parti di un file binario, inviate una richiesta POST HTTP all’URI completo fornito dai dati di avvio. Il tipo di contenuto del corpo della richiesta deve essere costituito dai dati del `application/x-www-form-urlencoded` modulo, contenente i campi seguenti.
 
-* `(string) fileName`: Obbligatorio. Nome della risorsa, come fornito dai dati di iniziazione.
-* `(string) mimeType`: Obbligatorio. Il tipo di contenuto HTTP del binario, come fornito dai dati di avvio.
-* `(string) uploadToken`: Obbligatorio. Token di caricamento per il binario, come fornito dai dati di avvio.
-* `(bool) createVersion`: Facoltativo. Se true e esiste già una risorsa con il nome specificato, l&#39;istanza crea una nuova versione della risorsa.
-* `(string) versionLabel`: Facoltativo. Se viene creata una nuova versione, l&#39;etichetta che verrà associata alla versione.
-* `(string) versionComment`: Facoltativo. Se viene creata una nuova versione, i commenti che verranno associati alla versione.
-* `(bool) replace`: Facoltativo: Se true e una risorsa con il nome specificato esiste già, l&#39;istanza eliminerà la risorsa e la ricreerà.
+| espandibili | Tipo | Obbligatorio o no | Descrizione |
+|---|---|---|---|
+| `fileName` | Stringa | Obbligatorio | Nome della risorsa, come fornito dai dati di iniziazione. |
+| `mimeType` | Stringa | Obbligatorio | Il tipo di contenuto HTTP del binario, come fornito dai dati di avvio. |
+| `uploadToken` | Stringa | Obbligatorio | Token di caricamento per il binario, come fornito dai dati di avvio. |
+| `createVersion` | Booleano | Facoltativo | Se `True` e una risorsa con il nome specificato esiste già, Experience Manager crea una nuova versione della risorsa. |
+| `versionLabel` | Stringa | Facoltativo | Se viene creata una nuova versione, l’etichetta associata alla nuova versione di una risorsa. |
+| `versionComment` | Stringa | Facoltativo | Se viene creata una nuova versione, i commenti associati alla versione. |
+| `replace` | Booleano | Facoltativo | Se `True` e una risorsa con il nome specificato esiste già, Experience Manager elimina la risorsa e quindi la ricrea. |
 
 >!![NOTE]
 >
-> Se la risorsa esiste già e non viene specificato né createVersion né replace, l&#39;istanza aggiornerà la versione corrente della risorsa con il nuovo binario.
+> Se la risorsa esiste già e non `createVersion` viene specificata né `replace` specificata, Experience Manager aggiorna la versione corrente della risorsa con il nuovo binario.
 
 Come il processo di avvio, i dati completi della richiesta possono contenere informazioni per più file.
 
@@ -122,44 +124,34 @@ In caso di esito positivo, il server risponde con un codice di `200` stato.
 
 Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e strumenti di caricamento personalizzati, Adobe fornisce librerie e strumenti open source come punti di partenza:
 
-* [Apri libreria di caricamento aem sorgente](https://github.com/adobe/aem-upload)
-* [Apri sorgente, strumento della riga di comando](https://github.com/adobe/aio-cli-plugin-aem)
+* [Libreria di caricamento aem open-source](https://github.com/adobe/aem-upload)
+* [Open-source, strumento da riga di comando](https://github.com/adobe/aio-cli-plugin-aem)
 
 ### API di caricamento risorse obsolete {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
->[!NOTE]
-Per Experience Manager come servizio Cloud sono supportate solo le nuove API di caricamento. Le API di Experience Manager 6.5 sono obsolete.
-
-I metodi relativi al caricamento o all&#39;aggiornamento di risorse o rappresentazioni (qualsiasi caricamento binario) sono obsoleti nelle seguenti API:
+Per Adobe Experience Manager come servizio Cloud sono supportate solo le nuove API di caricamento. Le API di Adobe Experience Manager 6.5 sono obsolete. I metodi relativi al caricamento o all&#39;aggiornamento di risorse o rappresentazioni (qualsiasi caricamento binario) sono obsoleti nelle seguenti API:
 
 * [API HTTP AEM Assets](mac-api-assets.md)
 * `AssetManager` API Java, come `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [Apri libreria di caricamento aem sorgente](https://github.com/adobe/aem-upload)
-* [Apri sorgente, strumento della riga di comando](https://github.com/adobe/aio-cli-plugin-aem)
+* [Libreria](https://github.com/adobe/aem-upload)di caricamento aem open-source.
+* [Comando](https://github.com/adobe/aio-cli-plugin-aem)open-source
 
 
 ## Flussi di lavoro di elaborazione e post-elaborazione delle risorse {#post-processing-workflows}
 
-La maggior parte dell’elaborazione delle risorse viene eseguita in base alla configurazione dei profili di **[!UICONTROL elaborazione]** da parte dei microservizi [delle](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)risorse e non richiede estensioni per sviluppatori.
+In Experience Manager, l&#39;elaborazione delle risorse è basata sulla configurazione **[!UICONTROL Profili]** elaborazione che utilizza i microservizi [delle](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)risorse. L&#39;elaborazione non richiede estensioni per sviluppatori.
 
-Per la configurazione del flusso di lavoro di post-elaborazione, i flussi di lavoro AEM standard con estensioni (ad esempio, è possibile utilizzare passaggi personalizzati). Leggi la seguente sottosezione per comprendere quali passaggi del flusso di lavoro possono essere utilizzati nei flussi di lavoro di post-elaborazione delle risorse.
+Per la configurazione del flusso di lavoro di post-elaborazione, utilizzate i flussi di lavoro standard con estensioni con passaggi personalizzati.
 
-### Passaggi del flusso di lavoro nel flusso di lavoro di post-elaborazione {#post-processing-workflows-steps}
+## Supporto dei passaggi del flusso di lavoro nel flusso di lavoro di post-elaborazione {#post-processing-workflows-steps}
 
->[!NOTE]
-Questa sezione si applica principalmente ai clienti che si aggiornano ad AEM come servizio cloud dalle versioni precedenti di AEM.
+I clienti che eseguono l’aggiornamento a Experience Manager come servizio Cloud dalle versioni precedenti di Experience Manager possono utilizzare i microservizi delle risorse per l’elaborazione delle risorse. I microservizi delle risorse nativi nel cloud sono molto più semplici da configurare e utilizzare. Alcuni passaggi del flusso di lavoro utilizzati nel flusso di lavoro [!UICONTROL DAM Update Asset] nella versione precedente non sono supportati.
 
-A causa di un nuovo modello di distribuzione introdotto con Experience Manager come servizio Cloud, alcuni passaggi del flusso di lavoro utilizzati nel `DAM Update Asset` flusso di lavoro prima dell’introduzione dei microservizi di risorse potrebbero non essere più supportati per i flussi di lavoro di post-elaborazione. Tenete presente che la maggior parte di esse viene sostituita da un sistema molto più semplice per configurare e utilizzare i microservizi delle risorse.
-
-Elenco dei modelli di flussi di lavoro tecnici e relativo livello di supporto in AEM come servizio Cloud:
-
-### Passaggi del flusso di lavoro supportati {#supported-workflow-steps}
-
-I seguenti passaggi del flusso di lavoro sono supportati nel servizio Cloud.
+I seguenti passaggi del flusso di lavoro sono supportati in Experience Manager come servizio Cloud.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -170,8 +162,6 @@ I seguenti passaggi del flusso di lavoro sono supportati nel servizio Cloud.
 * `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
 * `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
 * `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
-
-### Modelli non supportati o sostituiti {#unsupported-replaced-models}
 
 I seguenti modelli di flusso di lavoro tecnico vengono sostituiti da risorse microservizi o il supporto non è disponibile.
 
