@@ -3,7 +3,7 @@ title: Formati di file e tipi MIME supportati da Experience Manager Assets come 
 description: Formati di file e tipi MIME supportati da Experience Manager Assets come servizio Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 4729f0bdd3cf7e2c6fc80e52bf2f70d689956296
 
 ---
 
@@ -44,91 +44,91 @@ Le colonne delle seguenti tabelle forniscono le seguenti informazioni:
 
 ### Formati Adobe {#adobe-formats}
 
-| Formato file | GIF | JPEG | PNG | Estrazione full-text | Estrazione di metadati | Larghezza/Altezza |
-| ----------- | -------- | -------- | -------- | ------------------- | ------------------- | ------------ |
-| AI | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| COLLAGE | - | - | - | - | ✓ | - |
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| IDEE | - | - | - | - | ✓ | - |
-| INDD | ✓ | ✓ | ✓ | - | ✓ | ✓* |
-| INDT | - | - | - | - | ✓ | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | - | - | ✓ | - |
-| PSB | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| PSD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| XD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| Formato file | GIF | JPEG | PNG | Estrazione full-text | TIFF | Estrazione di metadati | Larghezza/Altezza |
+| ----------- | -------- | -------- | -------- | ------------------- | -------- | ------------------- | ------------ |
+| AI | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| COLLAGE | - | - | - | - | - | ✓ | - |
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ |
+| IDEE | - | - | - | - | - | ✓ | - |
+| INDD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓* |
+| INDT | - | - | - | - | - | ✓ | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PROTO | - | - | - | - | - | ✓ | - |
+| PSB | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| PSD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| XD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
 
 \* Per i file INDD (InDesign), la dimensione della rappresentazione è determinata dall&#39;anteprima incorporata nel file INDD. Configurate le preferenze in InDesign (**[!UICONTROL Preferenze > Gestione file > Salva sempre immagini di anteprima con documenti, Dimensione]** anteprima) per incorporare una rappresentazione più grande.
 
 ### Formati immagine {#image-formats}
 
-| Formato file | GIF | JPEG | PNG | Estrazione di metadati | Larghezza/Altezza |
-| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
-| BMP | ✓ | ✓ | ✓ | - | ✓ |
-| EPS | - | - | - | ✓ | - |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | - | - | ✓ | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Formato file | GIF | JPEG | PNG | TIFF | Estrazione di metadati | Larghezza/Altezza | Ritaglia |
+| ----------- | -------- | -------- | -------- | -------- | ------------------- | ------------ | -------- |
+| BMP | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| EPS | - | - | - | - | ✓ | - | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SVG | - | - | - | - | ✓ | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 
 ### Formati RAW della telecamera {#camera-raw-formats}
 
-| Formato file | GIF | JPEG | PNG | Estrazione di metadati | Larghezza/Altezza |
-| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
-| 3FR | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ARW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CR2 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CR3 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DCR | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ERF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| FFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GPR | ✓ | ✓ | ✓ | ✓ | ✓ |
-| IIQ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| KDC | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MEF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MFW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MOS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| NRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PEF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RW2 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RWL | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SRF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| X3F | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Formato file | GIF | JPEG | PNG | TIFF | Estrazione di metadati | Larghezza/Altezza |
+| ----------- | -------- | -------- | -------- | -------- | ------------------- | ------------ |
+| 3FR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ARW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CR2 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CR3 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DCR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ERF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| FFF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GPR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| IIQ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| KDC | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MFW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MOS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| NEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| NRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ORF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RW2 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RWL | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SRF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| X3F | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ### Formati documento {#document-formats}
 
 I formati dei documenti supportati per le funzioni di gestione delle risorse sono i seguenti.
 
-|  | GIF | JPEG | PNG | Estrazione full-text | Larghezza/Altezza | Gestione dei metadati | [Risorse collegate](use-assets-across-connected-assets-instances.md) |
-| ---- | -------- | -------- | -------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOC | - | - | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLS | - | - | - | - | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| OFG | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | - | - | ✓ | - | - | - |
-| HTML | - | - | - | ✓ | - | ✓ | ✓ |
-| PS | - | - | - | - | ✓ | - | - |
-| RTF | - | - | - | ✓ | - | ✓ | ✓ |
-| TXT | - | - | - | ✓ | - | ✓ | ✓ |
-| XML | - | - | - | ✓ | - | - | - |
+|  | GIF | JPEG | PNG | Estrazione full-text | TIFF | Larghezza/Altezza | Gestione dei metadati | [Risorse collegate](use-assets-across-connected-assets-instances.md) |
+| ---- | -------- | -------- | -------- | ------------------- | -------- | ------------ | ------------------- | ------------------------------------------------------------------- |
+| PDF | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DOC | - | - | - | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XLS | - | - | - | - | - | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| OFG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | - | - | ✓ | - | - | - | - |
+| HTML | - | - | - | ✓ | - | - | ✓ | ✓ |
+| PS | - | - | - | - | - | ✓ | - | - |
+| RTF | - | - | - | ✓ | - | - | ✓ | ✓ |
+| TXT | - | - | - | ✓ | - | - | ✓ | ✓ |
+| XML | - | - | - | ✓ | - | - | - | - |
 
 ### Formati video {#video-formats}
 
