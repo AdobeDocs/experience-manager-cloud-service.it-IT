@@ -1,7 +1,7 @@
 ---
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
@@ -136,7 +136,7 @@ Le proprietà sono distribuite su più schede.
 
    * Consente di specificare una configurazione di esportazione.
 
-### Miniatura    {#thumbnail}
+### Miniatura  {#thumbnail}
 
 Mostra la miniatura della pagina. Operazioni disponibili:
 
@@ -212,14 +212,14 @@ Mostra la miniatura della pagina. Operazioni disponibili:
    * Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
 
-### Live Copy    {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Livecopy**
 
    * Consente di definire le proprietà per una pagina Live Copy nella gestione multisito. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
-### Struttura sito    {#site-structure}
+### Struttura sito  {#site-structure}
 
 * Fornisce i collegamenti alle pagine che offrono funzionalità a livello di sito, tra cui **Pagina registrazione** e **Pagina offline**.
 
@@ -230,7 +230,7 @@ Mostra la miniatura della pagina. Operazioni disponibili:
    * Tocca o fai clic su **Proprietà**
       * Per una singola pagina
       * Per più pagine (solo un sottoinsieme di proprietà è disponibile per la modifica in blocco)
-* Dall’editor pagina:
+* Dall’editor di pagine:
    * Tramite **Informazioni pagina** (quindi **Apri proprietà**)
 
 ### Dalla console Sites - Pagina singola {#from-the-sites-console-single-page}
