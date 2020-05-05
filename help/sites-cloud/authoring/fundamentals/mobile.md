@@ -1,13 +1,13 @@
 ---
-title: 'Authoring di una pagina per dispositivi mobili  '
+title: Authoring di una pagina per dispositivi mobili
 description: Quando si effettua l’authoring per i dispositivi mobili, è possibile alternare tra diversi emulatori per capire che cosa vedrà l’utente finale
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
 
-# Authoring di una pagina per dispositivi mobili   {#authoring-a-page-for-mobile-devices}
+# Authoring di una pagina per dispositivi mobili  {#authoring-a-page-for-mobile-devices}
 
 Le pagine di Adobe Experience Manager si basano su un layout dinamico, che adatta automaticamente i contenuti al dispositivo di destinazione, eliminando la necessità di creare contenuti per dispositivi specifici.
 
