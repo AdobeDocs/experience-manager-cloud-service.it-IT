@@ -1,7 +1,7 @@
 ---
 title: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service.
 description: 'Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service. '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
 
 ---
@@ -36,7 +36,7 @@ source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Informazioni su come amministrare Experience Manager Sites as a Cloud Service. |
 | [Guida utente di Assets](/help/assets/home.md) | Informazioni su come amministrare Experience Manager Assets as a Cloud Service. |
 | [Guida utente sull’implementazione](/help/implementing/home.md) | Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per l’implementazione a scopo di sviluppo. |
-| [Guida utente dei connettori](/help/connectors/home.md) | Guesta guida contiene informazioni su come integrare le soluzioni in Experience Manager as a Cloud Service. |
+| [Guida utente dei connettori](/help/connectors/home.md) | Questa guida contiene informazioni su come integrare le soluzioni in Experience Manager as a Cloud Service. |
 | [Guida utente sulle operazioni](/help/operations/home.md) | Guesta guida contiene informazioni sulle operazioni back-end di Experience Manager as a Cloud Service, ad esempio le attività di indicizzazione e manutenzione. |
 
 ## Altre risorse su Experience Manager {#other-resources}
