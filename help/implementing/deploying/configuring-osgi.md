@@ -2,7 +2,7 @@
 title: Configurazione di OSGi per AEM come servizio cloud
 description: 'Configurazione OSGi con valori segreti e valori specifici per l’ambiente '
 translation-type: tm+mt
-source-git-commit: 743a8b4c971bf1d3f22ef12b464c9bb0158d96c0
+source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
 
 ---
 
@@ -336,3 +336,204 @@ config.dev
 
 L&#39;intento è che il valore della proprietà OSGI `my_var1` differisca per lo stage, il prod e per ciascuno degli ambienti di sviluppo 3. Pertanto, l&#39;API di Cloud Manager dovrà essere chiamata per impostare il valore per `my_var1` ogni env di dev.
 
+<table>
+<tr>
+<td>
+<b>Cartella</b>
+</td>
+<td>
+<b>Contenuto di myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config.stage
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.prod
+</td>
+<td>
+<pre>
+{ "my_var1": "val2", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+**Esempio 3**
+
+L&#39;intento è che il valore della proprietà OSGi `my_var1` sia lo stesso per il palco, la produzione, e solo uno degli ambienti di sviluppo, ma che sia diverso per gli altri due ambienti di sviluppo. In questo caso, l&#39;API di Cloud Manager dovrà essere chiamata per impostare il valore di `my_var1` per ciascun ambiente di sviluppo, anche per l&#39;ambiente di sviluppo che dovrebbe avere lo stesso valore di fase e produzione. Non erediterà il valore impostato nella **configurazione** della cartella.
+
+<table>
+<tr>
+<td>
+<b>Cartella</b>
+</td>
+<td>
+<b>Contenuto di myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+Un altro modo per farlo sarebbe impostare un valore predefinito per il token di sostituzione nella cartella config.dev in modo che sia lo stesso valore della cartella **config** .
+
+<table>
+<tr>
+<td>
+<b>Cartella</b>
+</td>
+<td>
+<b>Contenuto di myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1": "$[env:my_var1;default=val1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+## Formato API di Cloud Manager per l&#39;impostazione delle proprietà {#cloud-manager-api-format-for-setting-properties}
+
+### Impostazione dei valori tramite API {#setting-values-via-api}
+
+La chiamata dell&#39;API implementerà le nuove variabili e i nuovi valori in un ambiente Cloud, simile a una tipica pipeline di distribuzione del codice cliente. I servizi di creazione e pubblicazione verranno riavviati e faranno riferimento ai nuovi valori, in genere impiegando alcuni minuti.
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+```
+]
+        {
+                "name" : "MY_VAR1",
+                "value" : "plaintext value",
+                "type" : "string"  <---default
+        },
+        {
+                "name" : "MY_VAR2",
+                "value" : "<secret value>",
+                "type" : "secretString"
+        }
+]
+```
+
+Le variabili predefinite non sono impostate tramite API, ma nella proprietà OSGi stessa.
+
+Per ulteriori informazioni, consulta [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) .
+
+### Ottenimento di valori tramite API {#getting-values-via-api}
+
+```
+GET /program/{programId}/environment/{environmentId}/variables
+```
+
+Per ulteriori informazioni, consulta [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) .
+
+### Eliminazione di valori tramite API {#deleting-values-via-api}
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+Per eliminare una variabile, includetela con un valore vuoto.
+
+Per ulteriori informazioni, consulta [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) .
+
+### Ottenimento dei valori tramite la riga di comando {#getting-values-via-cli}
+
+```bash
+$ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
+Name     Type         Value
+MY_VAR1  string       plaintext value 
+MY_VAR2  secretString ****
+```
+
+
+### Impostazione dei valori tramite la riga di comando {#setting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
+```
+
+### Eliminazione di valori tramite la riga di comando {#deleting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
+```
+
+> [!NOTE]
+>
+> Per [ulteriori informazioni sulla configurazione dei valori tramite il plug-in di Cloud Manager per l&#39;interfaccia CLI di I/O di Adobe, vedi](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) .
+
+### Numero di variabili {#number-of-variables}
+
+È possibile dichiarare fino a 20 variabili.
+
+## Considerazioni sulla distribuzione per i valori di configurazione specifici per l&#39;ambiente e il segreto {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
+
+Poiché i valori di configurazione specifici per il segreto e l’ambiente sono al di fuori di Git e, pertanto, non fanno parte dei meccanismi formali di distribuzione di AEM come servizio cloud, il cliente deve gestire, governare e integrare in AEM come processo di distribuzione di Servizi cloud.
+
+Come già detto, chiamando l&#39;API i nuovi valori e variabili verranno distribuiti negli ambienti Cloud, in modo simile a un tipico pipeline di distribuzione del codice cliente. I servizi di creazione e pubblicazione verranno riavviati e faranno riferimento ai nuovi valori, in genere impiegando alcuni minuti. I cancelli di qualità e i test eseguiti da Cloud Manager durante una distribuzione regolare del codice non vengono eseguiti durante questo processo.
+
+In genere, i clienti richiamano l&#39;API per impostare le variabili di ambiente prima di distribuire il codice che si basa su di esse in Cloud Manager. In alcuni casi, è possibile modificare una variabile esistente dopo che il codice è già stato distribuito.
+
+L&#39;API potrebbe non riuscire quando è in uso una pipeline, un aggiornamento AEM o una distribuzione cliente, a seconda di quale parte della pipeline end-to-end viene eseguita in quel momento. La risposta di errore indica che la richiesta non è riuscita, anche se non indicherà il motivo specifico.
+
+Potrebbero verificarsi situazioni in cui una distribuzione programmata del codice cliente si basa su variabili esistenti per avere nuovi valori, il che non sarebbe appropriato per il codice corrente. Se questo è un problema, si consiglia di apportare modifiche variabili in modo additivo. A tal fine, create nuovi nomi di variabili invece di modificare semplicemente il valore di vecchie variabili in modo che il codice non faccia mai riferimento al nuovo valore. Quindi, quando il nuovo rilascio del cliente appare stabile, è possibile scegliere di rimuovere i valori precedenti.
+
+Analogamente, poiché i valori di una variabile non dispongono di una versione, un rollback del codice potrebbe fare riferimento a valori più recenti che causano problemi. Anche in questo caso la suddetta strategia di variabile additiva sarebbe d&#39;aiuto.
+
+Questa strategia di variabile additiva è utile anche per gli scenari di disaster recovery in cui, se si desidera ridistribuire il codice da diversi giorni, i nomi e i valori delle variabili a cui fa riferimento rimarranno intatti. Questo si basa su una strategia in cui il cliente attende alcuni giorni prima di rimuovere le vecchie variabili, altrimenti il codice meno recente non avrebbe variabili appropriate a cui fare riferimento.
