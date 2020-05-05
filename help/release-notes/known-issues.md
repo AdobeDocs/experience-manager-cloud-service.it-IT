@@ -1,7 +1,7 @@
 ---
 title: Problemi noti
 description: Note sulla versione specifiche per i problemi noti relativi ad Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 ---
@@ -25,11 +25,11 @@ Per ulteriori informazioni sui problemi noti, [contatta il supporto](https://hel
 
 Alcuni problemi noti sono:
 
-* **Schema** metadati: Widget di valutazione delle risorse utilizzato per causare un errore di compilazione JSP. È stato rimosso dallo schema di metadati. <!-- CQ-4282865, CQ-4284633 -->
+* **Schema metadati**: il widget di valutazione delle risorse causava un errore di compilazione JSP. È stato rimosso dallo schema metadati. <!-- CQ-4282865, CQ-4284633 -->
 
 ### Funzionalità di Assets disponibili in futuro {#upcoming-assets-capabilities}
 
-In futuro verranno attivate alcune funzionalità di Adobe Experience Manager Assets che dipendono dalle funzionalità di base e che non sono ancora disponibili nell’architettura di distribuzione di Experience Manager as a Cloud Service:
+In futuro verranno attivate alcune funzionalità di Adobe Experience Manager Assets che dipendono dalle funzionalità di base e che non sono ancora disponibili nell’architettura di implementazione di Experience Manager as a Cloud Service:
 
 * Al momento non è disponibile una versione migliorata della funzionalità per l’assegnazione di tag avanzati che sfrutta i servizi di intelligenza artificiale di Adobe I/O.
 * Funzionalità non attivate in questa fase a causa della dipendenza da API di Commerce Integration Framework:
