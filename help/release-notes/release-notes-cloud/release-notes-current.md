@@ -1,72 +1,72 @@
 ---
-title: Adobe Experience Manager come servizio Cloud - Note sulla versione 2020.4.0
-description: Note sulla versione di Experience Manager per la versione 2020.4.0
-translation-type: tm+mt
+title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.4.0'
+description: Note sulla versione 2020.4.0 di Experience Manager
+translation-type: ht
 source-git-commit: 98de3a6674aaef5228e96e0bf72e67de861f858e
 
 ---
 
 
-# Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
+# Note sulla versione 2020.4.0 di Adobe Experience Manager as a Cloud Service {#release-notes}
 
-The following section outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
+La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
-## Release Date {#release-date}
+## Data di rilascio {#release-date}
 
-La data di rilascio per [!DNL Experience Manager] il servizio cloud 2020.4.0 è il 9 aprile 2020.
+La data di rilascio per [!DNL Experience Manager] as a Cloud Service 2020.4.0 è il 9 aprile 2020.
 
-## What&#39;s New in Assets {#assets}
+## Novità di Assets {#assets}
 
 Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Manager Assets] e [!DNL Dynamic Media] nella versione corrente.
 
-* [Brand Portal](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/home.html) supporta i casi di utilizzo della distribuzione delle risorse per Experience Manager Assets. [!DNL Brand Portal]Con le organizzazioni possono soddisfare le loro esigenze di marketing e distribuire in sicurezza le risorse approvate relative a prodotti e marchi, che potranno essere scaricate da agenzie esterne, partner, team interni e rivenditori.
-   * [!DNL Brand Portal] la configurazione è completata tramite [!DNL Adobe I/O] la console. Consultate [Configurare Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
-   * L&#39;origine delle risorse in non [!DNL Brand Portal] è ancora supportata con [!DNL Experience Manager] come servizio cloud.
+* [Brand Portal](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/home.html) supporta i casi di utilizzo della distribuzione delle risorse per Experience Manager Assets. Con [!DNL Brand Portal] le organizzazioni possono soddisfare le esigenze di marketing aziendali e distribuire in sicurezza le risorse approvate relative a prodotti e marchi, che potranno essere scaricate da agenzie esterne, partner, team interni e rivenditori.
+   * La configurazione di [!DNL Brand Portal] viene completata tramite la console [!DNL Adobe I/O]. Consulta le informazioni per la [configurazione di Brand Portal](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
+   * L’origine da Asset in [!DNL Brand Portal] non è ancora supportata con [!DNL Experience Manager] as a Cloud Service.
 
-* [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) v2.0 funziona con [!DNL Experience Manager] un servizio cloud. [!DNL Adobe Asset Link] ottimizza la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti, collegandosi [!DNL Experience Manager Assets] con [!DNL Creative Cloud] le app desktop [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign] tramite il [!DNL Asset Link] pannello in-app.
-   * [!DNL Experience Manager] è preconfigurata per [!DNL Adobe Asset Link], con conseguente [facile configurazione](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) e implementazione più rapida per i creativi professionisti.
-   * [!DNL Asset Link] ora supporta uno switcher [ambiente](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) Experience Manager che consente agli utenti creativi di connettersi facilmente a un altro [!DNL Experience Manager] ambiente. Un esempio in cui questa funzionalità è utile è rappresentato dai designer di agenzie che lavorano con più client utilizzando [!DNL Experience Manager Assets] distribuzioni diverse.
+* [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) v2.0 funziona con [!DNL Experience Manager] as a Cloud Service. [!DNL Adobe Asset Link] consente di ottimizzare la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti mediante il collegamento di [!DNL Experience Manager Assets] con le app desktop di [!DNL Creative Cloud],[!DNL Adobe Photoshop], [!DNL Adobe Illustrator] e [!DNL Adobe InDesign] tramite il pannello in-app di [!DNL Asset Link].
+   * [!DNL Experience Manager] è preconfigurato per [!DNL Adobe Asset Link], ciò consente una [configurazione semplificata](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html) e un’implementazione più rapida per i creativi.
+   * [!DNL Asset Link] ora supporta una funzione per [passare a un altro ambiente in Experience Manager](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) che consente ai creativi di connettersi in modo semplice a un ambiente [!DNL Experience Manager] diverso. Questa funzione è utile, ad esempio, per i designer di un’agenzia che lavorano per più clienti utilizzando implementazioni diverse di [!DNL Experience Manager Assets].
 
-* Gli utenti possono configurare i flussi di lavoro [di](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) post-elaborazione per avviare automaticamente l’interfaccia utente [!UICONTROL Proprietà] cartella per le gerarchie di cartelle specifiche.
-   * L’interfaccia utente [!UICONTROL Proprietà] cartella è semplificata e la nuova scheda Elaborazione  risorse contiene il profilo di metadati, il profilo di elaborazione e la nuova configurazione del flusso di lavoro con avvio automatico.
+* Gli utenti possono configurare [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) da avviare automaticamente tramite l’interfaccia utente per le [!UICONTROL Proprietà] della cartella, nelle gerarchie di cartelle specifiche.
+   * L’interfaccia utente per le [!UICONTROL Proprietà] della cartella è stata semplificata: la nuova scheda [!UICONTROL Elaborazione risorse] contiene il profilo di metadati, il profilo di elaborazione e la nuova configurazione del flusso di lavoro con avvio automatico.
 
       ![I profili di elaborazione possono essere facilmente applicati alle cartelle e tutte le risorse caricate nelle cartelle vengono elaborate utilizzando questi profili](/help/assets/assets/asset-processing-folder-properties.png)
 
-   * L’opzione di rielaborazione delle risorse consente di selezionare uno specifico profilo di elaborazione per rielaborare le risorse selezionate dall’utente nelle sottocartelle.
+   * L’opzione di rielaborazione delle risorse consente di selezionare uno specifico profilo di elaborazione con cui rielaborare le risorse selezionate dall’utente nelle sottocartelle.
 
-      ![Rielaborare le risorse selezionate utilizzando un profilo di elaborazione specifico](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+      ![Rielaborazione di risorse selezionate mediante un profilo di elaborazione specifico](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
-   * [!DNL Dynamic Media]: È stata aggiunta la configurazione di pubblicazione selettiva in modo che le risorse vengano pubblicate automaticamente solo per l’anteprima protetta. Inoltre, le risorse possono essere pubblicate in modo esplicito in Experience Manager senza pubblicare contenuti in DMS7 per la distribuzione nel dominio pubblico.
+   * [!DNL Dynamic Media]: è stata aggiunta la configurazione di pubblicazione selettiva in modo che le risorse vengano pubblicate automaticamente solo per l’anteprima protetta. Inoltre, le risorse possono essere pubblicate in modo esplicito in Experience Manager senza pubblicare contenuti in DMS7 per la distribuzione nel dominio pubblico.
 
 ### Correzioni di bug {#assets-bug-fixes}
 
-* Correzioni dei problemi di elaborazione delle risorse.
-* Correzioni nella [!DNL Dynamic Media] configurazione e nella pubblicazione delle risorse sul servizio di [!DNL Dynamic Media] distribuzione.
+* Correzioni dei problemi relativi all’elaborazione delle risorse.
+* Correzioni nella configurazione di [!DNL Dynamic Media] e nella pubblicazione delle risorse nel servizio di distribuzione di [!DNL Dynamic Media].
 
 >[!MORELIKETHIS]
 >
 >* [Informazioni su Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Configura Portale marchio](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [Configurare Experience Manager per l’utilizzo del collegamento delle risorse](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [Creare un flusso di lavoro in Experience Manager utilizzando i microservizi delle risorse](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [Configurazione di Brand Portal](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Configurazione di Experience Manager per l’utilizzo con Asset Link](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Creazione di un flusso di lavoro in Experience Manager utilizzando i microservizi delle risorse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Novità in Cloud Manager {#whats-new-cloud-manager}
+## Novità di Cloud Manager {#whats-new-cloud-manager}
 
-* Gli URL dell&#39;editore sono ora disponibili nella pagina Ambiente dell&#39;interfaccia utente di Cloud Manager.
-* Modifiche alla navigazione per consentire agli utenti di modificare, cambiare o aggiungere un programma dalla pagina di panoramica di Cloud Manager.
-* Modifiche per consentire all&#39;utente di modificare il programma dalla scheda del programma sulla pagina di destinazione di Cloud Manager.
-* Nuovo stato **pipeline In esecuzione** visualizzata rispetto all&#39;ambiente a cui è associata.
-* Miglioramenti alla comprensibilità della pagina di esecuzione della pipeline. Questo include la visualizzazione del nome della pipeline (solo non di produzione) e del tipo e un contrassegno per indicare se lo stato della pipeline è In corso/Annullato/Non riuscito.
-* Descrizioni comandi per migliorare l’esperienza e la comprensibilità degli utenti in merito al motivo per cui il pulsante Aggiungi programma/ambiente è disattivato.
-* Gli ambienti con errore possono ora essere eliminati tramite l&#39;interfaccia utente e l&#39;API.
-* Il processo utilizzato per generare password git è stato reso più flessibile ai problemi nel livello di servizio sottostante.
+* Gli URL dell’editore sono ora disponibili nella pagina Ambiente dell’interfaccia utente di Cloud Manager.
+* Sono state apportate modifiche al sistema di navigazione per consentire agli utenti di modificare, cambiare o aggiungere un programma dalla pagina di panoramica di Cloud Manager.
+* Sono state apportate modifiche per consentire all’utente di modificare il programma dalla scheda del programma nella pagina di destinazione di Cloud Manager.
+* È stato introdotto il nuovo stato di pipeline “**In esecuzione**”, visualizzato per l’ambiente a cui la pipeline è associata.
+* Sono stati introdotti miglioramenti nella pagina di esecuzione della pipeline, che ne facilitano la comprensione. Questi includono la visualizzazione del nome della pipeline (solo per pipeline non di produzione) e del tipo, oltre all’indicazione dello stato della pipeline (In corso, Annullato, Non riuscito).
+* Sono state aggiunte descrizioni per migliorare l’esperienza utente e spiegare perché il pulsante Aggiungi programma/ambiente è disattivato.
+* Gli ambienti con errore possono ora essere eliminati tramite l’interfaccia utente e l’API.
+* Il processo utilizzato per generare password git è stato reso più flessibile per affrontare eventuali problemi nel livello di servizio sottostante.
 
 ### Correzioni di bug {#bug-fixes-cloud-manager}
 
-* I collegamenti all&#39;ambiente di passaggio nella pagina dei dettagli di esecuzione della pipeline non si spostavano in modo coerente nella posizione corretta.
-* I singoli passaggi all&#39;interno del processo di creazione dell&#39;ambiente potrebbero essere timeout prima del necessario, causando il fallimento del processo.
-* La configurazione Maven utilizzata nel contenitore di build è stata aggiornata per evitare il blocco critico durante il download dei metadati dell&#39;artifact.
-* In alcuni casi, il passaggio Genera immagine non può scaricare correttamente i pacchetti dei clienti.
-* Alcune condizioni che si verificano raramente impedirebbero l&#39;eliminazione degli ambienti.
-* Notifiche Experience Cloud non ricevute in modo coerente.
+* I collegamenti all’ambiente Stage nella pagina dei dettagli di esecuzione della pipeline non passavano alla posizione corretta in modo regolare.
+* Singoli passaggi del processo di creazione dell’ambiente venivano interrotti per timeout prima del necessario, causando errori del processo.
+* La configurazione Maven utilizzata nel contenitore di build è stata aggiornata per evitare deadlock durante il download dei metadati dell’artefatto.
+* In alcuni casi, il passaggio di generazione dell’immagine non eseguiva il download dei pacchetti dei clienti.
+* Alcune condizioni poco frequenti impedivano l’eliminazione degli ambienti.
+* Le notifiche di Experience Cloud non venivano ricevute in modo costante.
