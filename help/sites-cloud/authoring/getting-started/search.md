@@ -1,7 +1,7 @@
 ---
-title: 'Ricerca  '
+title: Ricerca
 description: Individua il contenuto più velocemente con funzionalità complete di ricerca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
