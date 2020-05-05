@@ -1,7 +1,7 @@
 ---
 title: Pubblicazione delle pagine
 description: Come pubblicare e annullare la pubblicazione di pagine con AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
@@ -33,7 +33,7 @@ Quando lavori con AEM, potresti notare diversi termini relativi alla pubblicazio
 
 A seconda della tua posizione, puoi pubblicare:
 
-* [Dall’editor pagina](#publishing-from-the-editor)
+* [Dall’editor di pagine](#publishing-from-the-editor)
 * [Dalla console Sites](#publishing-from-the-console)
 
 >[!NOTE]
@@ -66,7 +66,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
       * Seleziona **Annulla** per annullare l’azione.
    ![Pubblicazione di riferimenti alla pagina](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. Se selezioni l’opzione **Pubblica**, la pagina verrà replicata nell’ambiente di pubblicazione. Nell’editor pagina verrà visualizzato un banner informativo che conferma l’azione di pubblicazione.
+1. Se selezioni l’opzione **Pubblica**, la pagina verrà replicata nell’ambiente di pubblicazione. Nell’editor di pagine verrà visualizzato un banner informativo che conferma l’azione di pubblicazione.
 
    ![Banner informazioni stato di pubblicazione](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -82,10 +82,10 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 Nella console Sites vi sono due opzioni di modifica:
 
-* [Pubblicazione rapida  ](#quick-publish)
-* [Gestisci pubblicazione  ](#manage-publication)
+* [Pubblicazione rapida](#quick-publish)
+* [Gestisci pubblicazione](#manage-publication)
 
-#### Pubblicazione rapida   {#quick-publish}
+#### Pubblicazione rapida  {#quick-publish}
 
 **Pubblicazione rapida** si usa in casi semplici; le pagine selezionate vengono pubblicate immediatamente senza ulteriore interazione. Anche eventuali riferimenti non pubblicati verranno pubblicati automaticamente.
 
@@ -105,7 +105,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 >
 >La pubblicazione rapida è “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
 
-#### Gestisci pubblicazione   {#manage-publication}
+#### Gestisci pubblicazione  {#manage-publication}
 
 **Gestisci pubblicazione** offre più opzioni rispetto alla pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili; consente inoltre di pubblicare la pagina in un secondo momento.
 
@@ -196,14 +196,14 @@ L’annullamento della pubblicazione di una pagina ne effettua la rimozione dall
 
 Con una procedura [simile alla pubblicazione](#publishing-pages), è possibile annullare la pubblicazione di una o più pagine:
 
-* [Dall’editor pagina](#unpublishing-from-the-editor)
+* [Dall’editor di pagine](#unpublishing-from-the-editor)
 * [Dalla console Sites](#unpublishing-from-the-console)
 
-### Annullamento della pubblicazione dall’editor   {#unpublishing-from-the-editor}
+### Annullamento della pubblicazione dall’editor  {#unpublishing-from-the-editor}
 
 Durante la modifica di una pagina, se desideri annullarne la pubblicazione seleziona **Annulla pubblicazione pagina** nel menu **Informazioni pagina**. La procedura è simile a quella di [pubblicazione della pagina](#publishing-from-the-editor).
 
-### Annullamento della pubblicazione dalla console   {#unpublishing-from-the-console}
+### Annullamento della pubblicazione dalla console  {#unpublishing-from-the-console}
 
 Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazione](#manage-publication), ma anche per annullarla.
 
