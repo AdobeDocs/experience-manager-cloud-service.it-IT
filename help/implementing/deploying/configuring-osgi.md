@@ -2,7 +2,7 @@
 title: Configurazione di OSGi per AEM come servizio cloud
 description: 'Configurazione OSGi con valori segreti e valori specifici per l’ambiente '
 translation-type: tm+mt
-source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
+source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
 
 ---
 
@@ -291,7 +291,7 @@ Ad esempio, se `$[secret:server_password]` viene utilizzato, è necessario crear
 Se una proprietà OSGI richiede valori diversi per autore e pubblicazione:
 
 * utilizzare cartelle separate `config.author` e `config.publish` OSGi, come descritto nella sezione Risoluzione [in modalità di esecuzione](#runmode-resolution).
-* è necessario utilizzare nomi di variabili indipendenti. Si consiglia di utilizzare un prefisso come author_<variablename> e publish_<variablename> dove i nomi delle variabili sono identici
+* è necessario utilizzare nomi di variabili indipendenti. Si consiglia di utilizzare un prefisso, ad esempio `author_<variablename>` e `publish_<variablename>` dove i nomi delle variabili sono identici
 
 ### Esempi di configurazione {#configuration-examples}
 
