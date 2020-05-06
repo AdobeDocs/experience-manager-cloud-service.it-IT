@@ -2,12 +2,15 @@
 title: Configurazione di OSGi per AEM come servizio cloud
 description: 'Configurazione OSGi con valori segreti e valori specifici per l’ambiente '
 translation-type: tm+mt
-source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '2509'
+ht-degree: 0%
 
 ---
 
 
-# Configurazioni OSGi {#osgi-configurations}
+# Configurazione di OSGi per AEM come servizio cloud {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) è un elemento fondamentale nello stack tecnologico di Adobe Experience Manager (AEM). Viene utilizzato per controllare i bundle compositi di AEM e le relative configurazioni.
 
@@ -95,7 +98,7 @@ Esistono tre varietà di valori di configurazione OSGi che possono essere utiliz
 
 Il caso comune per OSGi utilizza valori di configurazione OSGi in linea. Le configurazioni specifiche per l&#39;ambiente sono utilizzate solo per casi d&#39;uso specifici in cui un valore varia in base agli ambienti di sviluppo.
 
-![](assets/choose-configuration-value-type.png)
+![](assets/choose-configuration-value-type_res1.png)
 
 Le configurazioni specifiche per l’ambiente estendono le configurazioni OSGi tradizionali e statiche che contengono valori in linea, consentendo di gestire i valori di configurazione OSGi esternamente tramite l’API di Cloud Manager. È importante capire quando utilizzare l&#39;approccio comune e tradizionale di definire i valori in linea e memorizzarli in Git, anziché astrarre i valori in configurazioni specifiche per l&#39;ambiente.
 
@@ -165,50 +168,19 @@ Per aggiungere una nuova configurazione al repository è necessario conoscere qu
 
 Per aggiungere la nuova configurazione alla directory archivio:
 
-1. Utilizzate CRXDE Lite per passare a:
+1. Nel progetto ui.apps, crea una `/apps/…/config.xxx` cartella come necessario in base alla modalità di esecuzione in uso
 
-   ` /apps/<yourProject>`
+1. Create un nuovo file JSON con il nome del PID e aggiungete l’ `.cfg.json` estensione
 
-1. Se non già esistente, create la `config` cartella ( `sling:Folder`):
 
-   * `config` - applicabile a tutte le modalità di esecuzione
-   * `config.<run-mode>` - specifica di una particolare modalità di esecuzione
+1. Compilare il file JSON con le coppie di valori chiave di configurazione OSGi
 
-1. In questa cartella create un nodo:
-
-   * Tipo: `sling:OsgiConfig`
-   * Nome: l’identità persistente (PID);
-
-      ad esempio, per AEM WCM Version Manager utilizzare `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >Quando si crea una configurazione di fabbrica aggiungere `-<identifier>` al nome.
-   >
-   >Come in: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
-   >
-   >Dove `<identifier>` viene sostituito da testo libero che è necessario immettere per identificare l’istanza (non è possibile omettere tali informazioni); ad esempio:
-   >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >Se state configurando un servizio OSGi out-of-box, potete cercare i nomi delle proprietà OSGi tramite `/system/console/configMgr`
 
-1. Per ogni parametro da configurare, create una proprietà su questo nodo:
 
-   * Nome: il nome del parametro come mostrato nella console Web; il nome viene visualizzato tra parentesi alla fine della descrizione del campo. Ad esempio, per `Create Version on Activation` l&#39;utilizzo `versionmanager.createVersionOnActivation`
-   * Tipo: se del caso.
-   * Valore: come necessario.
-   Dovete solo creare proprietà per i parametri che desiderate configurare, mentre altri continueranno a utilizzare i valori predefiniti impostati da AEM.
-
-1. Salvate tutte le modifiche.
-
-   Le modifiche vengono applicate non appena il nodo viene aggiornato riavviando il servizio (come con le modifiche apportate nella console Web).
-
->[!CAUTION]
->
->Non è necessario modificare nulla nel `/libs` percorso.
-
->[!CAUTION]
->
->Il percorso completo di una configurazione deve essere corretto affinché possa essere letto all&#39;avvio.
-
+1. Salva il file JSON nel tuo progetto.
 
 ## Formato Proprietà Configurazione Nel Controllo Del Sorgente {#configuration-property-format-in-source-control}
 
