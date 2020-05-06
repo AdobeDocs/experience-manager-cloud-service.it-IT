@@ -2,9 +2,9 @@
 title: Configurazione di OSGi per AEM come servizio cloud
 description: 'Configurazione OSGi con valori segreti e valori specifici per l’ambiente '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2214'
 ht-degree: 0%
 
 ---
@@ -127,64 +127,66 @@ AEM come servizio cloud richiede l’utilizzo di configurazioni specifiche dell�
 
 Utilizza configurazioni specifiche per l’ambiente segreto per memorizzare il valore per i segreti in tutti gli ambienti AEM come servizi cloud, inclusi Stage e Produzione.
 
-### Aggiunta di una nuova configurazione all&#39;archivio {#adding-a-new-configuration-to-the-repository}
+<!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
-#### Cosa devi sapere {#what-you-need-to-know}
+#### What You Need to Know {#what-you-need-to-know}
 
-Per aggiungere una nuova configurazione al repository è necessario conoscere quanto segue:
+To add a new configuration to the repository you need to know the following:
 
-1. Identità **** persistente (PID) del servizio.
+1. The **Persistent Identity** (PID) of the service.
 
-   Fare riferimento al campo **Configurazioni** nella console Web. Il nome viene visualizzato tra parentesi dopo il nome del bundle (o in Informazioni **di** configurazione verso il fondo della pagina).
+   Reference the **Configurations** field in the Web console. The name is shown in brackets after the bundle name (or in the **Configuration Information** towards the bottom of the page).
 
-   Ad esempio, create un nodo `com.day.cq.wcm.core.impl.VersionManagerImpl.` per configurare **AEM WCM Version Manager**.
+   For example, create a node `com.day.cq.wcm.core.impl.VersionManagerImpl.` to configure **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Indica se è necessaria una modalità di esecuzione specifica. Create la cartella:
+1. Whether a specific runmode is required. Create the folder:
 
-   * `config` - per tutte le modalità di esecuzione
-   * `config.author` - per l&#39;ambiente di authoring
-   * `config.publish` - per l’ambiente di pubblicazione
-   * `config.<run-mode>` - se del caso
+    * `config` - for all run modes
+    * `config.author` - for the author environment
+    * `config.publish` - for the publish environment
+    * `config.<run-mode>` - as appropriate
 
-1. Indica se è necessaria una **configurazione** o una configurazione **** di fabbrica.
-1. I singoli parametri da configurare; incluse eventuali definizioni di parametri esistenti che dovranno essere ricreate.
+1. Whether a **Configuration** or **Factory Configuration** is necessary.
+1. The individual parameters to be configured; including any existing parameter definitions that will need to be recreated.
 
-   Fate riferimento al singolo campo dei parametri nella console Web. Il nome viene visualizzato tra parentesi per ciascun parametro.
+   Reference the individual parameter field in the Web console. The name is shown in brackets for each parameter.
 
-   Ad esempio, creare una proprietà
-   `versionmanager.createVersionOnActivation` per configurare **Crea versione all&#39;attivazione**.
+   For example, create a property
+   `versionmanager.createVersionOnActivation` to configure **Create Version on Activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. Esiste già una configurazione in `/libs`? Per elencare tutte le configurazioni nell&#39;istanza, utilizzate lo strumento **Query** in CRXDE Lite per inviare la seguente query SQL:
+1. Does a configuration already exist in `/libs`? To list all configurations in your instance, use the **Query** tool in CRXDE Lite to submit the following SQL query:
 
    `select * from sling:OsgiConfig`
 
-   In tal caso, questa configurazione può essere copiata ` /apps/<yourProject>/`e quindi personalizzata nella nuova posizione.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
 
-## Creazione della configurazione nell&#39;archivio {#creating-the-configuration-in-the-repository}
+## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
 
-Per aggiungere la nuova configurazione alla directory archivio:
+To actually add the new configuration to the repository:
 
-1. Nel progetto ui.apps, crea una `/apps/…/config.xxx` cartella come necessario in base alla modalità di esecuzione in uso
+1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
 
-1. Create un nuovo file JSON con il nome del PID e aggiungete l’ `.cfg.json` estensione
+1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
 
 
-1. Compilare il file JSON con le coppie di valori chiave di configurazione OSGi
+1. Populate the JSON file with the OSGi configuration key value pairs
 
    >[!NOTE]
    >
-   >Se state configurando un servizio OSGi out-of-box, potete cercare i nomi delle proprietà OSGi tramite `/system/console/configMgr`
+   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
 
 
-1. Salva il file JSON nel tuo progetto.
+1. Save the JSON file to your project. -->
 
 ## Formato Proprietà Configurazione Nel Controllo Del Sorgente {#configuration-property-format-in-source-control}
 
-La creazione di una nuova proprietà di configurazione OSGI è descritta in [Aggiunta di una nuova configurazione alla sezione archivio](#creating-the-configuration-in-the-repository) precedente. Seguire questi passaggi e modificare la sintassi come indicato nelle sottosezioni seguenti:
+<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+
+Seguire questi passaggi e modificare la sintassi come indicato nelle sottosezioni seguenti:
 
 ### Valori in linea {#inline-values}
 
