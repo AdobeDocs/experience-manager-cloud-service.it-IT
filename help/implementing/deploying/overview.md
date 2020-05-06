@@ -1,19 +1,22 @@
 ---
-title: Implementazione in AEM come servizio cloud
-description: 'Implementazione in AEM come servizio cloud '
+title: Implementazione in AEM as a Cloud Service
+description: 'Implementazione in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '3512'
+ht-degree: 1%
 
 ---
 
 
-# Implementazione in AEM come servizio cloud {#deploying-to-aem-as-a-cloud-service}
+# Implementazione in AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
 ## Introduzione {#introduction}
 
 Le basi dello sviluppo del codice sono simili in AEM come servizio cloud rispetto alle soluzioni AEM On Premise e Managed Services. Gli sviluppatori scrivono il codice e lo sottopongono a test localmente, che vengono quindi inviati a AEM remoto come ambienti di servizio cloud. Cloud Manager, uno strumento opzionale per la distribuzione dei contenuti per i servizi gestiti, è obbligatorio. Questo è ora l&#39;unico meccanismo per distribuire il codice ad AEM come ambienti di servizio cloud.
 
-L&#39;aggiornamento della versione di AEM è sempre un evento di distribuzione separato dall&#39;invio di codice personalizzato. Visualizzate in un altro modo, le versioni di codice personalizzate devono essere testate rispetto alla versione AEM in produzione, dal momento che questo è l’elemento su cui verranno distribuite. Gli aggiornamenti delle versioni di AEM che si verificano successivamente, e che saranno frequenti se confrontati con i servizi gestiti oggi, vengono applicati automaticamente. Sono compatibili con il codice cliente già distribuito.
+L&#39;aggiornamento della versione di AEM è sempre un evento di distribuzione separato dall&#39;invio di codice personalizzato. Visualizzate in un altro modo, le versioni di codice personalizzate devono essere testate rispetto alla versione AEM in produzione, dal momento che questo è l’elemento su cui verranno distribuite. Gli aggiornamenti delle versioni di AEM che si verificano successivamente, e che saranno frequenti se confrontati con i servizi gestiti oggi, vengono applicati automaticamente. Sono progettati per essere compatibili con il codice cliente già distribuito.
 
 Il seguente video fornisce una panoramica di alto livello su come distribuire il codice ad AEM come servizio cloud:
 
@@ -27,7 +30,7 @@ Il resto di questo documento descriverà come gli sviluppatori devono adattare l
 
 ## Aggiornamenti della versione di AEM {#version-updates}
 
-È fondamentale comprendere che AEM verrà aggiornato frequentemente, potenzialmente anche una volta al giorno, e si concentrerà sulle correzioni di bug e sui miglioramenti delle prestazioni. L&#39;aggiornamento verrà eseguito in modo trasparente e senza causare tempi di inattività. L&#39;aggiornamento è concepito per essere compatibile con le versioni precedenti, pertanto non è necessario modificare il codice personalizzato. In realtà, gli aggiornamenti di AEM sono eventi indipendenti dalle distribuzioni del codice cliente. L’aggiornamento AEM viene implementato sopra l’ultimo push del codice con esito positivo, il che implica che tutte le modifiche apportate dall’ultimo push alla produzione non verranno distribuite.
+È importante comprendere che AEM verrà aggiornato frequentemente, potenzialmente anche una volta al giorno, e si concentrerà sulle correzioni di bug e sui miglioramenti delle prestazioni. L&#39;aggiornamento verrà eseguito in modo trasparente e senza causare tempi di inattività. L&#39;aggiornamento è compatibile con le versioni precedenti, pertanto non è necessario modificare il codice personalizzato. In realtà, gli aggiornamenti di AEM sono eventi indipendenti dalle distribuzioni del codice cliente. L’aggiornamento AEM viene implementato sopra l’ultimo push del codice con esito positivo, il che implica che tutte le modifiche apportate dall’ultimo push alla produzione non verranno distribuite.
 
 >[!NOTE]
 >
@@ -50,7 +53,7 @@ Per le soluzioni AEM precedenti, la versione più recente di AEM veniva modifica
 Come per le versioni AEM non cloud esistenti, nella maggior parte dei casi sarà supportato uno sviluppo locale offline basato su uno specifico quickstart, che sarà lo strumento preferito per il debug.
 
 >[!NOTE]
->Esistono sottili differenze operative tra il comportamento dell&#39;applicazione su un computer locale e quello di Adobe Cloud. Queste differenze architettoniche devono essere rispettate durante lo sviluppo locale e possono portare a un comportamento diverso durante la distribuzione nell&#39;infrastruttura cloud. A causa di queste differenze è importante eseguire test esaustivi sugli ambienti di sviluppo e di stage prima di distribuire il nuovo codice personalizzato in produzione.
+>Esistono sottili differenze operative tra il comportamento dell&#39;applicazione su un computer locale e quello di Adobe Cloud. Queste differenze architettoniche devono essere rispettate durante lo sviluppo locale e possono portare a un comportamento diverso durante la distribuzione nell&#39;infrastruttura cloud. A causa di queste differenze, è importante eseguire test esaustivi sugli ambienti di sviluppo e di stage prima di distribuire il nuovo codice personalizzato in produzione.
 
 Per sviluppare il codice personalizzato per una versione interna, è necessario scaricare e installare la versione pertinente di [AEM come SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) per servizi cloud. Per ulteriori informazioni sull&#39;utilizzo di AEM come strumenti di dispatcher dei servizi cloud, consultate [questa pagina](/help/implementing/dispatcher/overview.md).
 
@@ -58,7 +61,7 @@ Per sviluppare il codice personalizzato per una versione interna, è necessario 
 
 ### Implementazioni tramite Cloud Manager {#deployments-via-cloud-manager}
 
-I clienti distribuiscono il codice personalizzato agli ambienti cloud tramite Cloud Manager. È opportuno notare che Cloud Manager trasforma i pacchetti di contenuto assemblati localmente in un artefatto conforme al modello di funzioni Sling, in modo che un’applicazione AEM come servizio Cloud venga descritta quando viene eseguita in un ambiente cloud. Di conseguenza, quando si esaminano i pacchetti in Package Manager negli ambienti Cloud, il nome includerà &quot;cp2fm&quot; e i pacchetti trasformati hanno tutti i metadati rimossi. Non è possibile interagire con questi elementi, né scaricarli, replicarli o aprirli. La documentazione dettagliata sul convertitore è [disponibile qui](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+I clienti distribuiscono il codice personalizzato agli ambienti cloud tramite Cloud Manager. È opportuno notare che Cloud Manager trasforma i pacchetti di contenuto assemblati localmente in un artefatto conforme al modello di funzioni Sling, in modo che un’applicazione AEM come servizio Cloud venga descritta quando viene eseguita in un ambiente cloud. Di conseguenza, quando si esaminano i pacchetti in Package Manager negli ambienti Cloud, il nome includerà &quot;cp2fm&quot; e i pacchetti trasformati hanno tutti i metadati rimossi. Non è possibile interagire con questi elementi, ovvero non possono essere scaricati, replicati o aperti. La documentazione dettagliata sul convertitore è [disponibile qui](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 I pacchetti di contenuto scritti per AEM come applicazioni di servizio cloud devono disporre di una separazione netta tra contenuti immutabili e modificabili e Cloud Manager li applicherà non riuscendo a creare, generando un messaggio come:
 
@@ -81,9 +84,11 @@ Come già detto, la configurazione OSGI deve essere impegnata nel controllo del 
 * Apportare le modifiche necessarie nell’ambiente AEM locale dello sviluppatore con il gestore di configurazione della console Web AEM, quindi esportare i risultati nel progetto AEM nel file system locale
 * Creazione manuale della configurazione OSGI nel progetto AEM nel file system locale, con riferimento al gestore di configurazione della console AEM per i nomi delle proprietà.
 
+Per ulteriori informazioni sulla configurazione OSGI, consulta [Configurazione di OSGi per AEM come servizio](/help/implementing/deploying/configuring-osgi.md)cloud.
+
 ## Contenuto variabile {#mutable-content}
 
-In alcuni casi potrebbe essere utile preparare le modifiche al contenuto nel controllo del codice sorgente in modo che possa essere distribuito da Cloud Manager ogni volta che un ambiente viene aggiornato. Ad esempio, potrebbe essere ragionevole generare determinate strutture di cartelle principali o allineare le modifiche nei modelli modificabili per abilitare i criteri in quelli per i componenti che sono stati aggiornati dalla distribuzione dell&#39;applicazione.
+In alcuni casi potrebbe essere utile preparare le modifiche al contenuto nel controllo del codice sorgente in modo che possa essere distribuito da Cloud Manager ogni volta che un ambiente è stato aggiornato. Ad esempio, potrebbe essere ragionevole generare determinate strutture di cartelle principali o allineare le modifiche nei modelli modificabili per abilitare i criteri in quelli per i componenti che sono stati aggiornati dalla distribuzione dell&#39;applicazione.
 
 Esistono due strategie per descrivere il contenuto che verrà distribuito da Cloud Manager nell&#39;archivio modificabile, i pacchetti di contenuto modificabile e le istruzioni di reindirizzamento.
 
@@ -103,16 +108,16 @@ Durante l&#39;avvio di una nuova versione dell&#39;applicazione, ma prima del pa
 
 Dopo il passaggio alla nuova versione dell&#39;applicazione:
 
-* Tutti gli altri contenuti definibili tramite jackrabbit vault. Esempio:
+* Tutti gli altri contenuti definibili tramite jackrabbit vault. Ad esempio:
    * Cartelle (aggiungere, modificare, rimuovere)
    * Modelli modificabili (aggiungere, modificare, rimuovere)
    * Configurazione in base al contesto (qualsiasi cosa sotto `/conf`) (aggiungere, modificare, rimuovere)
    * Script (i pacchetti possono attivare i ganci di installazione a varie fasi del processo di installazione del pacchetto)
 
-È possibile limitare l’installazione di contenuto modificabile alla creazione o alla pubblicazione incorporando pacchetti in una cartella install.author o install.publish in `/apps`. Informazioni dettagliate nella documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) AEM sulla ristrutturazione del progetto consigliata.
+È possibile limitare l’installazione di contenuto modificabile alla creazione o alla pubblicazione incorporando i pacchetti in una cartella install.author o install.publish in `/apps`. Informazioni dettagliate nella documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) AEM sulla ristrutturazione del progetto consigliata.
 
 >[!NOTE]
-> I pacchetti di contenuto vengono distribuiti a tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Tale limitazione è in vigore per garantire la possibilità di eseguire un test dell&#39;esecuzione automatica. Il contenuto specifico per un ambiente richiede l&#39;installazione manuale tramite Package Manager.
+>I pacchetti di contenuto vengono distribuiti a tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Tale limitazione è in vigore per garantire la possibilità di eseguire un test dell&#39;esecuzione automatica. Il contenuto specifico per un ambiente richiede l&#39;installazione manuale tramite Package Manager.
 
 Inoltre, non esiste alcun meccanismo per ripristinare le modifiche apportate al pacchetto di contenuto modificabile dopo che sono state applicate. Se i clienti rilevano un problema, possono scegliere di risolverlo nella release successiva del codice o come ultima risorsa, ripristinare l&#39;intero sistema a un punto nel tempo prima della distribuzione.
 
@@ -129,7 +134,7 @@ Per i seguenti casi, è preferibile adottare l&#39;approccio di codificare manua
 * Creare ed eliminare utenti
 * Aggiunta di ACL
    > [!NOTE]
-   > La definizione di ACL richiede che le strutture dei nodi siano già presenti. Pertanto, prima di creare le istruzioni percorso potrebbe essere necessario.
+   >La definizione di ACL richiede che le strutture dei nodi siano già presenti. Pertanto, prima di creare le istruzioni percorso potrebbe essere necessario.
 * Aggiungi percorso (ad esempio per le strutture di cartelle principali)
 * Aggiungere CND (definizioni dei tipi di nodo)
 
@@ -175,7 +180,7 @@ Tutti i pacchetti di contenuto installati tramite Cloud Manager (sia modificabil
 
 ### Inclusione di pacchetti di terze parti {#including-third-party}
 
-È comune per i clienti includere pacchetti pre-costruiti da fonti di terze parti come fornitori di software come i partner di traduzione di Adobe. Si consiglia di ospitare questi pacchetti in un repository remoto e di farvi riferimento nel `pom.xml`. Ciò è possibile solo per i repository pubblici.
+È comune per i clienti includere pacchetti pre-costruiti da fonti di terze parti, come fornitori di software come i partner di traduzione di Adobe. Si consiglia di ospitare questi pacchetti in un repository remoto e di farvi riferimento nel `pom.xml`. Ciò è possibile solo per i repository pubblici.
 
 Se non è possibile memorizzare il pacchetto in un archivio remoto, i clienti possono inserirlo in un archivio Maven locale basato su file system, che viene impegnato a SCM come parte del progetto e a cui fanno riferimento qualsiasi cosa dipenda da esso. Il repository è dichiarato nei programmi di progetto illustrati di seguito:
 
@@ -192,7 +197,7 @@ Se non è possibile memorizzare il pacchetto in un archivio remoto, i clienti po
 
 Tutti i pacchetti di terze parti inclusi devono essere conformi ad AEM come codici e linee guida per la creazione di pacchetti del servizio cloud descritte in questo articolo. In caso contrario, l&#39;inclusione di tali pacchetti comporterà un errore di distribuzione.
 
-Lo snippet XML Maven POM seguente mostra come i pacchetti di terze parti possono essere incorporati nel pacchetto &quot;Container&quot; del progetto, in genere denominato **&#39;all&#39;**, tramite la configurazione del plug-in Maven **package-maven-plugin** difilevault-package.
+Il seguente snippet XML Maven POM mostra come incorporare i pacchetti di terze parti nel pacchetto “Container” del progetto, in genere denominato **“all”**, tramite la configurazione del plug-in Maven **filevault-package-maven-plugin**.
 
 ```
 ...
@@ -236,7 +241,7 @@ Come per gli aggiornamenti di AEM, i rilasci dei clienti vengono distribuiti uti
 * Il verde sta iniziando mentre il blu sta ancora servendo
 * Blue è in esecuzione e servire mentre Green è controllato per la disponibilità tramite controlli di integrità
 * Nodi verdi che sono pronti ad accettare il traffico e sostituire i nodi blu, che vengono ridotti
-* Nel tempo, i nodi blu vengono sostituiti da nodi verdi fino a quando non rimane solo verde, completando così la distribuzione
+* Nel corso del tempo, i nodi blu vengono sostituiti da nodi verdi fino a quando non rimane solo verde, completando così la distribuzione
 * Qualsiasi contenuto nuovo o modificato modificabile distribuito
 
 ## Indici {#indexes}
@@ -253,7 +258,7 @@ Al momento, Skyline non funziona con strumenti di gestione degli indici come lo 
 
 Il meccanismo di pubblicazione è compatibile con le API Java di replica di [AEM](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
 
-Per sviluppare e testare la replica con AEM QuickStart, con AEM già pronto per il cloud, le funzionalità di replica classica devono essere utilizzate con una configurazione Autore/Pubblicazione. Nel caso in cui il punto di ingresso dell&#39;interfaccia utente su AEM Author sia stato rimosso per il cloud, gli utenti accederebbero `http://localhost:4502/etc/replication` alla configurazione.
+Per sviluppare e testare la replica con AEM QuickStart, con AEM già pronto per il cloud, le funzionalità di replica classica devono essere utilizzate con un’impostazione Autore/Pubblicazione. Nel caso in cui il punto di ingresso dell&#39;interfaccia utente su AEM Author sia stato rimosso per il cloud, gli utenti accederebbero `http://localhost:4502/etc/replication` alla configurazione.
 
 ## Codice compatibile con le versioni precedenti per le installazioni continue {#backwards-compatible-code-for-rolling-deployments}
 
@@ -279,7 +284,7 @@ Nelle soluzioni AEM esistenti, i clienti possono eseguire le istanze con modalit
 
 AEM come servizio cloud, d’altro canto, è più chiaro quali sono le modalità di esecuzione disponibili e come è possibile mappare i bundle OSGI e la configurazione OSGI:
 
-* Le modalità di esecuzione della configurazione OSGI devono fare riferimento a dev, stage, prod per l’ambiente o l’autore, publish per il servizio. È `<service>.<environment_type>` supportata una combinazione di elementi, che devono essere utilizzati in questo particolare ordine (ad esempio author.dev o publish.prod). I token OSGI devono essere citati direttamente dal codice anziché utilizzando il `getRunModes` metodo, che non includerà più il token `environment_type` in fase di esecuzione.
+* Le modalità di esecuzione della configurazione OSGI devono fare riferimento a dev, stage, prod per l’ambiente o l’autore, publish per il servizio. Viene `<service>.<environment_type>` supportata una combinazione di tali elementi, che devono essere utilizzati in questo particolare ordine (ad esempio `author.dev` o `publish.prod`). I token OSGI devono essere citati direttamente dal codice anziché utilizzando il `getRunModes` metodo, che non includerà più il token `environment_type` in fase di esecuzione. Per ulteriori informazioni, consultate [Configurazione di OSGi per AEM come servizio](/help/implementing/deploying/configuring-osgi.md)cloud.
 * Le modalità di esecuzione dei bundle OSGI sono limitate al servizio (autore, pubblicazione). I bundle OSGI per modalità di esecuzione devono essere installati nel pacchetto di contenuto in `install/author` o `install/publish`.
 
 Come le soluzioni AEM esistenti, non è possibile utilizzare le modalità di esecuzione per installare solo contenuti per ambienti o servizi specifici. Se si desidera generare un ambiente di sviluppo con dati o HTML non presenti sul palco o sulla produzione, è possibile utilizzare il gestore pacchetti.
