@@ -2,7 +2,10 @@
 sub-product: Implementazione per AEM as a Cloud Service
 user-guide-title: Implementazione per AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 89%
 
 ---
 
@@ -36,6 +39,7 @@ source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
    + [Configurazione dei moduli di ricerca](developing/extending/search-forms.md)
 + Implementazione in AEM as a Cloud Service {#deploying}
    + [Implementazione in AEM as a Cloud Service](deploying/overview.md)
+   + [Configurazione di OSGi per AEM come servizio cloud](deploying/configuring-osgi.md)
 + Dispatcher nel cloud {#dispatcher}
    + [Dispatcher nel cloud](dispatcher/overview.md)
    + [Distribuzione dei contenuti in AEM as a Cloud Service](dispatcher/content-delivery.md)
