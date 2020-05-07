@@ -2,7 +2,10 @@
 title: Comprendere i risultati dei test - Servizi cloud
 description: Comprendere i risultati dei test - Servizi cloud
 translation-type: tm+mt
-source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
+source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 4%
 
 ---
 
@@ -23,20 +26,21 @@ Come parte della pipeline, il codice sorgente viene analizzato per garantire che
 
 | Nome | Definizione | Categoria | Soglia di errore |
 |--- |--- |--- |--- |
-| Valutazione sicurezza | A = 0 Vulnerabilità <br/>B = almeno 1 Vulnerabilità<br/> minore C = almeno 1 Vulnerabilità maggiore <br/>D = almeno 1 Vulnerabilità critica <br/>E = almeno 1 Vulnerabilità blocco |  Critico | &lt; B |
+| Valutazione sicurezza | A = 0 Vulnerabilità <br/>B = almeno 1 Vulnerabilità<br/> minore C = almeno 1 Vulnerabilità maggiore <br/>D = almeno 1 Vulnerabilità critica <br/>E = almeno 1 Vulnerabilità blocco | Critico | &lt; B |
 | Valutazione affidabilità | A = 0 Bug <br/>B = almeno 1 Bug Minore <br/>C = almeno 1 Bug Principale <br/>D = almeno 1 Bug Critico E = almeno 1 Bug Blocco | Importante | &lt; C |
 | Classificazione manutenibilità | L&#39;eccezionale costo di riparazione per gli odori di codice è: <br/><ul><li>&lt;=5% del tempo che è già passato nell&#39;applicazione, la valutazione è A </li><li>tra il 6 e il 10% il rating è a B </li><li>tra l&#39;11% e il 20% il rating è a C </li><li>tra il 21% e il 50% la valutazione è una D</li><li>un valore superiore al 50% è un E</li></ul> | Importante | &lt; A |
-| Copertura | Una combinazione di copertura della linea di prova di unità e copertura della condizione utilizzando la seguente formula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)` <br/>dove: CT = condizioni che sono state valutate come &#39;true&#39; almeno una volta durante l&#39;esecuzione di unit test <br/>CF = condizioni che sono state valutate come &#39;false&#39; almeno una volta durante l&#39;esecuzione di unit test <br/>LC = linee coperte = lines_to_cover - uncover_lines <br/><br/> B = numero totale di condizioni <br/>EL = numero totale di linee eseguibili (lines_to_cover) | Importante | &lt; 50% |
+| Copertura | Una combinazione di copertura della linea di prova di unità e copertura della condizione utilizzando la seguente formula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>dove: CT = condizioni che sono state valutate come &#39;true&#39; almeno una volta durante l&#39;esecuzione di unit test <br/>CF = condizioni che sono state valutate come &#39;false&#39; almeno una volta durante l&#39;esecuzione di unit test <br/>LC = linee coperte = lines_to_cover - uncover_lines <br/><br/> B = numero totale di condizioni <br/>EL = numero totale di linee eseguibili (lines_to_cover) | Importante | &lt; 50% |
 | Test di unità ignorati | Numero di unit test ignorati. | Info | > 1 |
-| Problemi aperti | Tipi di problemi generali - Vulnerabilità, bug e odori di codice | Info | > 1 |
+| Problemi aperti | Tipi di problemi generali - Vulnerabilità, bug e odori di codice | Info | > 0 |
 | Linee duplicate | Numero di righe coinvolte in blocchi duplicati. <br/>Per considerare un blocco di codice come duplicato: <br/><ul><li>**Progetti non Java:**</li><li>Devono essere presenti almeno 100 token successivi e duplicati.</li><li>Tali token devono essere ripartiti almeno su: </li><li>30 righe di codice per COBOL </li><li>20 righe di codice per ABAP </li><li>10 righe di codice per altre lingue</li><li>**Progetti Java:**</li><li> Devono essere presenti almeno 10 istruzioni successive e duplicate, indipendentemente dal numero di token e di righe.</li></ul> <br/>Le differenze nei rientri e nei letterali di stringa vengono ignorate durante il rilevamento di duplicati. | Info | > 1% |
+| Compatibilità con i servizi cloud | Numero di problemi di compatibilità del servizio cloud identificati. | Info | > 0 |
 
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta Definizioni [](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) metriche.
+>Per informazioni più dettagliate, fare riferimento a Definizioni [metriche](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) .
 
-Puoi scaricare l&#39;elenco delle regole qui [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-Rules-new-one.xlsx)
+Puoi scaricare l&#39;elenco delle regole qui [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -44,7 +48,7 @@ Puoi scaricare l&#39;elenco delle regole qui [code-quality-rules.xlsx](/help/imp
 
 ### Gestione dei falsi positivi {#dealing-with-false-positives}
 
-Il processo di scansione della qualità non è perfetto e a volte identificherà erroneamente problemi che non sono effettivamente problematici. Questo viene definito &quot;falso positivo&quot;.
+Il processo di scansione della qualità non è perfetto e a volte identificherà erroneamente i problemi che non sono effettivamente problematici. Questo viene definito &quot;falso positivo&quot;.
 
 In questi casi, il codice sorgente può essere annotato con l&#39; `@SuppressWarnings` annotazione Java standard che specifica l&#39;ID regola come attributo annotazione. Ad esempio, un problema comune è che la regola SonarQube per rilevare le password hardcoded può essere aggressiva per quanto riguarda il modo in cui viene identificata una password hardcoded.
 
@@ -126,7 +130,7 @@ Il passaggio di test funzionale personalizzato nella pipeline è sempre presente
 Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita. Questo passaggio viene eseguito immediatamente dopo la distribuzione dell’area di visualizzazione.
 
 >[!NOTE]
->Il pulsante **Scarica registro** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Questi registri non includono i registri del processo di runtime AEM effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) .
+>Il pulsante **Download Log (Scarica registro)** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Questi registri non includono i registri del processo di runtime AEM effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) .
 
 ## Esecuzione test locale {#local-test-execution}
 
