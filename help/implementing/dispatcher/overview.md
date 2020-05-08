@@ -2,7 +2,10 @@
 title: Dispatcher nel cloud
 description: 'Dispatcher nel cloud '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b7bb84b026c9187cb633e9ccfdc17aa5ec930aff
+workflow-type: tm+mt
+source-wordcount: '3916'
+ht-degree: 1%
 
 ---
 
@@ -15,6 +18,9 @@ In questa sezione viene descritto come strutturare AEM come configurazioni di Ap
 
 >[!NOTE]
 >Gli utenti Windows dovranno utilizzare Windows 10 Professional o altre distribuzioni che supportano Docker. Questo è un prerequisito per l&#39;esecuzione e il debug del dispatcher su un computer locale. Le sezioni seguenti includono comandi che utilizzano le versioni Mac o Linux dell&#39;SDK, ma l&#39;SDK di Windows può essere utilizzato in modo simile.
+
+>[!WARNING]
+> Utenti Windows: la versione corrente di AEM come strumento di dispatcher locale del servizio cloud (v2.0.20) non è compatibile con Windows. Contattate il supporto [](https://daycare.day.com/home.html) Adobe per ricevere gli aggiornamenti sulla compatibilità con Windows.
 
 ## Strumenti Dispatcher {#dispatcher-sdk}
 
@@ -390,7 +396,7 @@ I livelli di registro per tali moduli sono definiti dalle variabili `DISP_LOG_LE
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Quando si esegue il dispatcher localmente, i file di registro vengono stampati anche direttamente nell&#39;output del terminale. Nella maggior parte dei casi, questi registri devono essere in DEBUG, che può essere realizzato trasmettendo il livello Debug come parametro durante l&#39;esecuzione di Docker. Esempio:
+Quando si esegue il dispatcher localmente, i file di registro vengono stampati anche direttamente nell&#39;output del terminale. Nella maggior parte dei casi, questi registri devono essere in DEBUG, che può essere realizzato trasmettendo il livello Debug come parametro durante l&#39;esecuzione di Docker. Ad esempio:
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
