@@ -3,9 +3,9 @@ title: Digital Rights Management [!DNL Adobe Experience Manager Assets] in as a 
 description: Scopri come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza [!DNL Experience Manager] in un servizio Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31b8db4403dff1934033e1ed93651a076dba7a1a
+source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1351'
 ht-degree: 7%
 
 ---
@@ -47,7 +47,7 @@ Potete cercare le risorse scadute, comprese le risorse secondarie scadute, nel p
 
 Quando scegliete l’opzione **[!UICONTROL Scaduto]** , nella [!DNL Assets] console vengono visualizzate solo le risorse e le risorse secondarie scadute a cui fanno riferimento le risorse composte. Le risorse composte che fanno riferimento a risorse secondarie scadute non vengono visualizzate subito dopo la scadenza delle risorse secondarie. Al contrario, vengono visualizzati dopo che [!DNL Experience Manager] rileva che fanno riferimento a risorse secondarie scadute al successivo esecuzione del programma.
 
-Se modificate la data di scadenza di una risorsa pubblicata in una data precedente al ciclo di pianificazione corrente, la pianificazione rileva comunque la risorsa come una risorsa scaduta al successivo esecuzione e ne riflette lo stato di conseguenza.
+Se modificate la data di scadenza di una risorsa pubblicata in una data precedente al ciclo di pianificazione corrente, la pianificazione rileva comunque la risorsa come una risorsa scaduta al successivo esecuzione e ne riflette lo stato di conseguenza. La data di scadenza di una risorsa viene visualizzata in modo diverso per gli utenti con orari diversi.
 
 Inoltre, se un problema o un errore impedisce al pianificatore di rilevare le risorse scadute nel ciclo corrente, il pianificatore riesamina tali risorse nel ciclo successivo e ne rileva lo stato scaduto.
 
