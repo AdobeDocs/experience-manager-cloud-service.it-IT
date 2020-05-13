@@ -2,10 +2,10 @@
 title: Guida rapida alle linee guida WCAG 2.1
 seo-title: Guida rapida alle linee guida WCAG 2.1
 translation-type: tm+mt
-source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 91%
+source-wordcount: '1758'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org
 
 >[!NOTE]
 > 
-> Le linee guida WCAG 2.1 rappresentano un aggiornamento della versione precedente, WCAG 2.0, del 2008. Vedi il [confronto tra WCAG 2.1 e WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+> WCAG 2.1 aggiorna la versione precedente WCAG 2.0, dal 2008. Vedi il [confronto tra WCAG 2.1 e WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
 
 >[!NOTE]
 > 
@@ -37,25 +37,19 @@ Utilizzando Adobe Experience Manager, gli autori di contenuti e/o i proprietari 
 WCAG 2.1 intende fornire linee guida con le caratteristiche indicate di seguito.
 
 * **Indipendenti dalla tecnologia utilizzata**:
-in altre parole, si tratta di linee guida che possono essere applicate a diversi formati di contenuti web, non solo a contenuti HTML. Le linee guida WCAG 2.1 sono quindi applicabili anche a contenuti generati o forniti tramite PDF, Flash, JavaScript o altre tecnologie web attuali e future. <!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
+in altre parole, si tratta di linee guida che possono essere applicate a diversi formati di contenuti web, non solo a contenuti HTML. Le linee guida WCAG 2.1 sono quindi applicabili anche a contenuti generati o forniti tramite PDF, Flash, JavaScript o altre tecnologie web attuali e future.
 
 * **Testabili**:
-ogni istruzione è redatta in modo da poter essere testata in modo oggettivo affinché un gruppo di esperti di accessibilità possa concordare in linea generale sul fatto che la linea guida sia stata rispettata. Una delle problematiche correlate all’accessibilità, infatti, consiste nel fatto che alcune linee guida possono essere tecnicamente testabili, mentre altre richiedono una valutazione umana per verificare se siano state rispettate o meno. <!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
+ogni istruzione è redatta in modo da poter essere testata in modo oggettivo affinché un gruppo di esperti di accessibilità possa concordare in linea generale sul fatto che la linea guida sia stata rispettata. Una delle problematiche correlate all’accessibilità, infatti, consiste nel fatto che alcune linee guida possono essere tecnicamente testabili, mentre altre richiedono una valutazione umana per verificare se siano state rispettate o meno.
 
-* **Implementazione contestuale e con priorità**:
-   <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
+* Supporto dell&#39;implementazione contestuale e **con priorità:**
+Le linee guida del WCAG 2.1 hanno priorità, relative al probabile impatto del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere una decisione informata sulle linee guida più importanti per la loro situazione particolare. Inoltre, viene introdotto il concetto di *accessibilità supportata* . Questo consente agli autori di decidere come utilizzare al meglio le tecnologie Web che potrebbero non disporre del supporto completo per l&#39;accessibilità, o che potrebbero richiedere agli utenti di disporre di tecnologie e/o browser di assistenza specifici per beneficiare delle funzioni di accessibilità.
 
 Tali obiettivi hanno influenzato in modo significativo la struttura delle linee guida WCAG 2.1.
 
 >[!NOTE]
 >
 >Non è possibile creare un sito web che tenga in considerazione ogni possibile disabilità o tipo di persona. Le linee guida WCAG 2.1 intendono aiutare gli autori di siti web a creare, per quanto possibile, siti ragionevolmente accessibili per determinate condizioni.
-
-<!--
->[!NOTE]
->
->If you are familiar with WCAG 1.0, you will notice some changes in WCAG 2.1. These relate to scope, organization and aim.
--->
 
 ## Struttura {#structure}
 
@@ -115,7 +109,7 @@ Poiché le tecniche sono molto più specifiche dei criteri di successo, in gener
 * In base alla raccolta - Le tecniche possono essere generali o correlate a una tecnologia oppure a un formato specifico, ad esempio HTML, CSS o script sul lato client.
 * Da criteri di successo correlati - Le tecniche possono essere applicate a più criteri di successo.
 
-Ogni tecnica ha un numero univoco, relativo alla raccolta corrispondente. Ad esempio, una delle tecniche ARIA è *ARIA2: identificazione dei campi obbligatori con la proprietà “required”*.
+Ogni tecnica ha un numero univoco, relativo alla raccolta corrispondente. For example, one of the ARIA techniques is [Technique ARIA2: Identifying a required field with the aria-required property](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
 Le tecniche possono essere sufficienti, consigliate o di errore.
 
