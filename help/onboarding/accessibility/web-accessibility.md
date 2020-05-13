@@ -2,7 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service e le linee guida per l’accessibilità dei contenuti web
 seo-title: Adobe Experience Manager as a Cloud Service e le linee guida per l’accessibilità dei contenuti web
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: 710365f7934a63710a9158c010d6fac1ca390044
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 87%
 
 ---
 
@@ -17,11 +20,15 @@ La creazione di siti web e contenuti accessibili con AEM as a Cloud Service ha u
 
 * Autori che utilizzano queste funzioni per creare siti web con accesso facilitato.
 
-   * La creazione di contenuto accessibile avviene tramite un processo. AEM offre funzionalità in linea con i requisiti di accessibilità, ma gli autori dei contenuti devono accertarsi di applicare le tecniche necessarie per creare contenuti accessibili.
+   La creazione di contenuto accessibile avviene tramite un processo. AEM offre funzionalità in linea con i requisiti di accessibilità, ma gli autori dei contenuti devono accertarsi di applicare le tecniche necessarie per creare contenuti accessibili.
 
 * Sviluppatori di modelli; anche le persone con questo ruolo devono essere consapevoli dei fattori di accessibilità quando implementano il progetto del sito web.
 
 Adobe Experience Manager as a Cloud Service si basa sulle [linee guida](#wcag-accessibility-guideslines) del [World Wide Web Consortium](#world-wide-web-consortium).
+
+>[!NOTE]
+>
+> Per ulteriori dettagli, consulta i rapporti sulla conformità [all’accessibilità per le soluzioni](https://www.adobe.com/accessibility/compliance.html) Adobe.
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
@@ -30,15 +37,6 @@ Il [World Wide Web Consortium (W3C)](https://www.w3.org/) rappresenta una comuni
 ## Linee guida per l’accessibilità dei contenuti web (WCAG) 2.1 {#wcag-accessibility-guideslines}
 
 Per aiutare web designer e sviluppatori a produrre siti web accessibili, nel giugno 2018 nell’ambito dell’iniziativa [WAI](https://www.w3.org/WAI/) sono state pubblicate le [linee guida per l’accessibilità dei contenuti web (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
-
->[!NOTE]
-> 
-> Le linee guida WCAG 2.1 rappresentano un aggiornamento della versione precedente, WCAG 2.0, del 2008. Vedi il [confronto tra WCAG 2.1 e WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
-
->[!NOTE]
-> 
->Attualmente, è in fase di sviluppo una versione [aggiornata delle linee guida, WCAG 2.2](https://www.w3.org/TR/WCAG22/), ma questa non verrà presa in considerazione al momento.
-
 
 WCAG 2.1 illustra [linee guida con i relativi criteri di successo e livelli di accessibilità, nonché tecniche sufficienti e consigliate per la conformità](https://www.w3.org/TR/WCAG/#conformance).
 
@@ -53,8 +51,6 @@ Utilizzando Adobe Experience Manager, gli autori di contenuti e/o i proprietari 
 >[!NOTE]
 > 
 >Quando si crea un sito, è necessario determinare il livello complessivo che si desidera ottenere.
->
->Poiché non è possibile soddisfare tutti i criteri di successo AAA per alcuni tipi di contenuto, tale livello di conformità non è consigliato come obbligatorio.
 
 <!--
 * [Configuring the Rich Text Editor for Producing Accessible Sites](/help/sites-administering/rte-accessible-content.md)
