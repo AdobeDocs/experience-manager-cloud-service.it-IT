@@ -2,21 +2,21 @@
 title: Adobe Experience Manager as a Cloud Service e le linee guida per l’accessibilità dei contenuti web
 seo-title: Adobe Experience Manager as a Cloud Service e le linee guida per l’accessibilità dei contenuti web
 translation-type: tm+mt
-source-git-commit: 710365f7934a63710a9158c010d6fac1ca390044
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
 
 # Adobe Experience Manager as a Cloud Service e le linee guida per l’accessibilità dei contenuti web{#aem-and-the-web-accessibility-guidelines}
 
-Vi sono molti motivi sociali, economici e legali per garantire che i contenuti web siano progettati in modo da essere accessibili al pubblico indipendentemente da eventuali disabilità o limitazioni. L&#39;accessibilità Web con Adobe Experience Manager (AEM) come servizio Cloud è quindi un aspetto sempre più importante di una buona progettazione Web.
+Vi sono molti motivi sociali, economici e legali per garantire che i contenuti web siano progettati in modo da essere accessibili al pubblico indipendentemente da eventuali disabilità o limitazioni. L’accessibilità web con Adobe Experience Manager (AEM) as a Cloud Service è quindi un aspetto sempre più importante ai fini di una progettazione web efficace.
 
 La creazione di siti web e contenuti accessibili con AEM as a Cloud Service ha un impatto per:
 
-* Gli amministratori responsabili della configurazione di AEM per garantire che le funzioni di accessibilità siano abilitate correttamente.
+* Amministratori responsabili della configurazione di AEM tenuti a garantire che le funzioni di accessibilità siano abilitate correttamente.
 
 * Autori che utilizzano queste funzioni per creare siti web con accesso facilitato.
 
@@ -24,7 +24,7 @@ La creazione di siti web e contenuti accessibili con AEM as a Cloud Service ha u
 
 * Sviluppatori di modelli; anche le persone con questo ruolo devono essere consapevoli dei fattori di accessibilità quando implementano il progetto del sito web.
 
-Adobe Experience Manager as a Cloud Service si basa sulle [linee guida](#wcag-accessibility-guideslines) del [World Wide Web Consortium](#world-wide-web-consortium).
+Adobe Experience Manager as a Cloud Service si basa sulle [linee guida](#wcag-accessibility-guidelines) del [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Adobe Experience Manager as a Cloud Service si basa sulle [linee guida](#wcag-ac
 
 Il [World Wide Web Consortium (W3C)](https://www.w3.org/) rappresenta una comunità internazionale dedicata allo sviluppo di standard web. Nell’ambito dell’iniziativa [WAI (Web Accessibility Initiative)](https://www.w3.org/WAI/) sono state pubblicate le [linee guida per l’accessibilità dei contenuti web](#wcag-accessibility-guidelines).
 
-## Linee guida per l’accessibilità dei contenuti web (WCAG) 2.1 {#wcag-accessibility-guideslines}
+## Linee guida per l’accessibilità dei contenuti web (WCAG) 2.1 {#wcag-accessibility-guidelines}
 
 Per aiutare web designer e sviluppatori a produrre siti web accessibili, nel giugno 2018 nell’ambito dell’iniziativa [WAI](https://www.w3.org/WAI/) sono state pubblicate le [linee guida per l’accessibilità dei contenuti web (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
 
