@@ -1,28 +1,28 @@
 ---
-title: Creazione di contenuti accessibili per Adobe Experience Manager come servizio cloud (conformità WCAG 2.1)
+title: Creazione di contenuti accessibili per Adobe Experience Manager as a Cloud Service (conformità WCAG 2.1)
 description: Crea contenuti web accessibili e utilizzabili da utenti disabili
 translation-type: tm+mt
-source-git-commit: 7d95cf4f25934ea52d4ef5410bbf349f004e5043
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '13874'
-ht-degree: 49%
+source-wordcount: '13873'
+ht-degree: 85%
 
 ---
 
 
 # Creazione di contenuto accessibile (conformità WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
-Le linee guida per l&#39;accessibilità dei contenuti [Web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), elaborate da [un gruppo di lavoro del World Wide Wec Consortium](https://www.w3.org/consorzio/attività#Accessibility_Guidelines_Working_Group), sono costituite da una serie di linee guida tecnologiche indipendenti e da criteri di successo che contribuiscono a rendere i contenuti Web accessibili e utilizzabili da persone con disabilità.
+Le [linee guida per l’accessibilità dei contenuti web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), preparate da [un gruppo di lavoro del World Wide Wec Consortium](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group), sono costituite da un insieme di criteri di successo e linee guida che non dipendono dalla tecnologia in uso e hanno l’obiettivo di rendere i contenuti web accessibili e utilizzabili dalle persone con disabilità.
 
-Come introduzione, il consorzio fornisce una serie di sezioni e documenti giustificativi:
+Come introduzione, viene fornito un elenco di sezioni e documenti di supporto:
 
-* [Nuove funzioni in WCAG 2.1](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-1)
+* [Nuove funzioni nelle linee guida WCAG 2.1](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-1)
 * [Come soddisfare le linee guida WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
 * [Informazioni sulle linee guida WCAG 2.1](https://www.w3.org/WAI/WCAG21/Understanding/)
 * [Tecniche per WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/)
-* [Documenti WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
+* [Documentazione delle linee guida WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
-Inoltre, vedete:
+Inoltre, vedi:
 * Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
 * Rapporti sulla conformità [di accessibilità per le soluzioni](https://www.adobe.com/accessibility/compliance.html)Adobe.
 
@@ -30,7 +30,7 @@ Inoltre, vedete:
 >* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
 
-Le linee guida sono classificate in base a tre livelli di conformità: Livello A (più basso), livello AA e livello AAA (più alto). Brevemente, i livelli sono definiti come segue:
+Le linee guida sono classificate in base a tre livelli di conformità: livello A (il più basso), livello AA e livello AAA (il più alto). Brevemente, i livelli sono definiti come segue:
 
 * **Livello A**: il sito ha raggiunto un livello minimo di accessibilità di base. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A.
 * **Livello AA:** Si tratta di un livello di accessibilità ideale a cui tendere, in cui il sito raggiunge un livello fondamentale di accessibilità, in modo che sia accessibile alla maggior parte delle persone nella maggior parte delle situazioni utilizzando la maggior parte delle tecnologie. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A e livello AA.
@@ -38,14 +38,14 @@ Le linee guida sono classificate in base a tre livelli di conformità: Livello A
 
 Quando si crea un sito, è necessario determinare il livello complessivo che si desidera ottenere.
 
-Nella sezione seguente sono incluse le [linee guida WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) e i criteri di successo per i [livelli di conformità](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1) A e AA.
+The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
 
 >[!NOTE]
 >
->In questo documento stiamo utilizzando:
+>In questo documento vengono utilizzati:
 >
->* The short names for the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
->* The numbering used in the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) to aid cross-referencing with the WCAG website.
+>* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
+>* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
 
 
 ## Principio 1: Percepibilità  {#principle-perceivable}
@@ -125,21 +125,21 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
 -->
 
-### Elementi multimediali temporizzati (1.2)  {#time-based-media}
+### Media temporizzati (1.2)  {#time-based-media}
 
-[Linea guida 1.2; elementi multimediali temporizzati: fornire alternative per gli elementi multimediali temporizzati.](https://www.w3.org/TR/WCAG/#time-based-media)
+[Linea guida 1.2 - Media temporizzati: fornire alternative per gli elementi multimediali temporizzati.](https://www.w3.org/TR/WCAG/#time-based-media)
 
-L’argomento riguarda i contenuti web *temporizzati*. Questi comprendono i contenuti che l’utente può riprodurre (come video, audio e contenuti animati) e che possono essere preregistrati o in streaming.
+This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be prerecorded or a live stream.
 
-### Audio-only and Video-only (Prerecorded) (1.2.1) {#audio-only-and-video-only-prerecorded}
+### Solo audio e solo video (preregistrati) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
 * Criterio di successo 1.2.1
 * Livello A
-* Solo audio e solo video (preregistrato): per gli elementi solo video e solo audio preregistrati vale quanto segue, tranne quando l’audio o il video sia un elemento alternativo per il testo, chiaramente indicato come tale:
+* Solo audio e solo video (preregistrati): per gli elementi solo video e solo audio preregistrati vale quanto segue, tranne quando l’audio o il video sia un elemento alternativo per il testo, chiaramente indicato come tale:
    * Solo audio preregistrato: viene fornita un’alternativa per gli elementi multimediali temporizzati che presenti le informazioni equivalenti ai contenuti solo audio preregistrati.
    * Solo video preregistrato: viene fornita un’alternativa per gli elementi multimediali temporizzati o una traccia audio che presenti le informazioni equivalenti ai contenuti solo video preregistrati.
 
-#### Purpose - Audio-only and Video-only (Prerecorded) (1.2.1) {#purpose-audio-only-and-video-only-prerecorded}
+#### Finalità - Solo audio e solo video (preregistrati) (1.2.1) {#purpose-audio-only-and-video-only-prerecorded}
 
 Problemi di accessibilità per video e audio possono essere riscontrati da:
 
@@ -151,11 +151,11 @@ Video o audio possono anche essere non disponibili per chi utilizza browser o di
 
 Fornire queste informazioni in un formato diverso, ad esempio testo (o audio per i video senza audio) può renderle accessibili alle persone impossibilitate ad accedere al contenuto originale.
 
-#### How to Meet - Audio-only and Video-only (Prerecorded) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
+#### Come soddisfare il criterio - Solo audio e solo video (preregistrati) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
-* Se il contenuto è una traccia audio preregistrata senza video (come un podcast):
+* Se il contenuto è un audio preregistrato senza video (ad esempio, un podcast):
    * Fornisci un collegamento immediatamente prima o dopo il contenuto, che rimandi a una trascrizione in formato testo del contenuto audio. La trascrizione dovrebbe essere una pagina HTML con un equivalente testuale di tutti i contenuti parlati e non parlati rilevanti, oltre all’indicazione di chi sta parlando, una descrizione dell’ambientazione, le espressioni vocali e una descrizione di qualsiasi altro elemento sonoro significativo.
-* Se il contenuto è un’animazione o un video preregistrato senza audio:
+* Se il contenuto è un&#39;animazione o un video preregistrato senza audio:
    * Fornisci un collegamento immediatamente prima o dopo il contenuto, che rimandi a una descrizione testuale equivalente delle informazioni fornite nel video.
    * Oppure fornisci una descrizione audio equivalente in un formato audio comunemente utilizzato, come MP3.
 
@@ -171,7 +171,7 @@ L’inserimento di contenuti multimediali nelle pagine Web di AEM è simile all�
 >
 >Quando si utilizzano elementi multimediali con contenuti informativi, è necessario creare anche collegamenti a contenuti alternativi. Ad esempio, per includere una trascrizione testuale, crea una pagina HTML per visualizzare la trascrizione e quindi aggiungi un collegamento accanto o sotto al contenuto audio.
 
-#### More Information - Audio-only and Video-only (Prerecorded) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
+#### Ulteriori informazioni - Solo audio e solo video (preregistrati) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
 * [Comprendere i criteri di successo 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)
 * [Come soddisfare i criteri di successo 1.2.1](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded)
@@ -186,22 +186,22 @@ L’inserimento di contenuti multimediali nelle pagine Web di AEM è simile all�
 
 Gli utenti sordi o con problemi di udito non potranno accedere ai contenuti audio o avranno gravi difficoltà di accesso. I sottotitoli sono equivalenti testuali per l’audio parlato e non, visualizzati sullo schermo al momento opportuno durante il video. Consentono alle persone che non possono ascoltare l&#39;audio di capire cosa sta succedendo.
 
-#### How to Meet - Captions (Prerecorded) (1.2.2) {#how-to-meet-captions-prerecorded}
+#### Come soddisfare il criterio - Sottotitoli (preregistrati) (1.2.2) {#how-to-meet-captions-prerecorded}
 
 I sottotitoli possono essere:
 
-* Apri: sempre visibile quando il video viene riprodotto
+* Sottotitoli non codificati: sempre visibili durante la riproduzione del video
 * Sottotitoli codificati: possono essere attivati o disattivati dall’utente
 
 Se possibile, utilizza i sottotitoli codificati allo scopo di consentire agli utenti di scegliere se visualizzarli o meno.
 
-For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](https://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Pre-Recorded) (1.2.2)](#more-information-captions-pre-recorded)). Assicuratevi di fornire una nota o di abilitare la funzione di didascalia nel lettore video per informare gli utenti che le didascalie sono disponibili per il video.
+Per i sottotitoli codificati, è necessario creare e fornire un file di sottotitoli sincronizzati nel formato appropriato (come [SMIL](https://www.w3.org/AudioVideo/)) insieme al file video (dettagli su come eseguire questa operazione non rientrano nell’ambito di questa guida, ma sono stati forniti collegamenti ad alcune esercitazioni in [Ulteriori informazioni - Sottotitoli (preregistrati) (1.2.2)](#more-information-captions-prerecorded). Assicuratevi di fornire una nota o di abilitare la funzione di didascalia nel lettore video per informare gli utenti che le didascalie sono disponibili per il video.
 
 Se è necessario utilizzare sottotitoli non codificati, inserisci il testo nella traccia video. A questo scopo è possibile utilizzare applicazioni di editing video che consentono di sovrapporre i sottotitoli al video.
 
-#### More Information - Captions (PreRecorded) (1.2.2) {#more-information-captions-prerecorded}
+#### More Information - Captions (Prerecorded) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Comprendere i criteri di successo 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html):
+* [Comprendere i criteri di successo 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [Come soddisfare i criteri di successo 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
 <!--
@@ -209,17 +209,17 @@ Se è necessario utilizzare sottotitoli non codificati, inserisci il testo nella
 * [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
 -->
 
-### Audio Description or Media Alternative (Prerecorded) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
+### Audiodescrizione o tipo di media alternativo (preregistrato) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
 * Criterio di successo 1.2.3
 * Livello A
-* Descrizione audio o elemento multimediale alternativo (preregistrato): viene fornita un’alternativa per gli elementi multimediali temporizzati o una descrizione audio del contenuto video preregistrato per gli elementi multimediali sincronizzati, fatta eccezione per il caso in cui l’elemento multimediale sia alternativo al testo, e chiaramente indicato come tale.
+* Audiodescrizione o tipo di media alternativo (preregistrato): viene fornita un’alternativa per gli elementi multimediali temporizzati o una descrizione audio del contenuto video preregistrato per gli elementi multimediali sincronizzati, fatta eccezione per il caso in cui l’elemento multimediale sia alternativo al testo, e chiaramente indicato come tale.
 
-#### Purpose - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#purpose-audio-description-or-media-alternative-prerecorded}
+#### Finalità - Audiodescrizione o tipo di media alternativo (preregistrato) (1.2.3) {#purpose-audio-description-or-media-alternative-prerecorded}
 
-Le persone non vedenti o ipovedenti avranno problemi di accessibilità se le informazioni in un video o in un’animazione vengono fornite solo visivamente, o se l’audio non fornisce informazioni sufficienti per consentire la comprensione di ciò che sta accadendo.
+Se le informazioni in un video o in un’animazione vengono fornite solo visivamente oppure se l’audio non fornisce informazioni sufficienti per consentire la comprensione di ciò che viene visualizzato, le persone non vedenti o ipovedenti dovranno superare ostacoli di accessibilità.
 
-#### How to Meet - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#how-to-meet-audio-description-or-media-alternative-prerecorded}
+#### Come soddisfare il criterio - Audiodescrizione o tipo di media alternativo (preregistrato) (1.2.3) {#how-to-meet-audio-description-or-media-alternative-prerecorded}
 
 Gli approcci che è possibile adottare per soddisfare questo criterio di successo sono due. È possibile:
 
@@ -233,25 +233,28 @@ Gli approcci che è possibile adottare per soddisfare questo criterio di success
 
 I dettagli precisi sulle modalità di creazione di video con descrizione audio vanno oltre lo scopo di questa guida. La creazione di video e descrizioni audio può richiedere parecchio tempo, ma puoi ricorrere ad altri prodotti Adobe per facilitare l’esecuzione di tali attività.
 
-#### More Information - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
+#### Ulteriori informazioni - Audiodescrizione o tipo di media alternativo (preregistrato) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [Comprendere i criteri di successo 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html):
+* [Comprendere i criteri di successo 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
 * [Come soddisfare i criteri di successo 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
-* [Adobe Encore](https://www.adobe.com/products/encore.html)
 
-### Sottotitoli (dal vivo) (1.2.4)    {#captions-live}
+<!--
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+-->
+
+### Sottotitoli (in tempo reale) (1.2.4)    {#captions-live}
 
 * Criterio di successo 1.2.4
 * Livello AA
-* Sottotitoli (dal vivo): i sottotitoli vengono forniti per tutti i contenuti audio dal vivo negli elementi multimediali sincronizzati.
+* Sottotitoli (in tempo reale): i sottotitoli vengono forniti per tutti i contenuti audio dal vivo negli elementi multimediali sincronizzati.
 
-#### Finalità - Sottotitoli (dal vivo) (1.2.4)  {#purpose-captions-live}
+#### Finalità - Sottotitoli (in tempo reale) (1.2.4)  {#purpose-captions-live}
 
-Questo criterio di successo è identico a [Sottotitoli (preregistrati)](#captions-pre-recorded), in quanto riguarda la rimozione degli ostacoli di accessibilità per persone non udenti o ipoudenti, tranne per il fatto che questo criterio di successo è relativo a presentazioni in tempo reale, come i webcast.
+This success criterion is identical to [Captions (Prerecorded)](#captions-prerecorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
 
-#### Come soddisfare il criterio - Sottotitoli (dal vivo) (1.2.4) {#how-to-meet-captions-live}
+#### Come soddisfare il criterio - Sottotitoli (in tempo reale) (1.2.4) {#how-to-meet-captions-live}
 
-Follow the guidance provided for [Captions (Prerecorded)](#captions-prerecorded) above. However, due to the live nature of the media, caption provision has to be created as quickly as possible and in response to what is happening. Therefore, you should consider using real time captioning or speech-to-text tools.
+Segui le indicazioni fornite sopra per [Sottotitoli (preregistrati)](#captions-prerecorded). Dato che l’elemento multimediale è in tempo reale, tuttavia, i sottotitoli dovranno essere creati il più rapidamente possibile e in modo dinamico. Pertanto, dovresti considerare l’utilizzo di strumenti per la creazione di sottotitoli in tempo reale o di speech-to-text.
 
 Istruzioni dettagliate al riguardo vanno oltre lo scopo di questo documento, ma informazioni utili sono reperibili tramite le risorse seguenti:
 
@@ -259,33 +262,33 @@ Istruzioni dettagliate al riguardo vanno oltre lo scopo di questo documento, ma 
 
 * [Progetto AccessComputing (Università di Washington): I sottotitoli possono essere generati automaticamente utilizzando il riconoscimento vocale?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
-#### Ulteriori informazioni - Sottotitoli (dal vivo) (1.2.4)  {#more-information-captions-live}
+#### Ulteriori informazioni - Sottotitoli (in tempo reale) (1.2.4)  {#more-information-captions-live}
 
 * [Comprendere i criteri di successo 1.2.4](https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html)
 * [Come soddisfare i criteri di successo 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/#captions-live)
 
-### Descrizione audio (preregistrato) (1.2.5)  {#audio-description-prerecorded}
+### Audiodescrizione (preregistrata) (1.2.5) {#audio-description-prerecorded}
 
 * Criterio di successo 1.2.5
 * Livello AA
 * Descrizione audio (preregistrato): una descrizione audio viene fornita per tutti i contenuti video preregistrati negli elementi multimediali sincronizzati.
 
-#### Purpose - Audio Description (Prerecorded) (1.2.5) {#purpose-audio-description-prerecorded}
+#### Finalità: Audiodescrizione (preregistrata) (1.2.5) {#purpose-audio-description-prerecorded}
 
-This success criterion is identical to [Audio Description or Media Alternative (Prerecorded)](#audio-description-or-media-alternative-prerecorded), except that authors must provide a much more detailed audio description to conform to Level AA.
+Questo criterio di successo è identico a [Audiodescrizione o tipo di media alternativo (preregistrato)](#audio-description-or-media-alternative-prerecorded), tranne per il fatto che gli autori devono fornire una descrizione audio molto più dettagliata per adeguarsi al livello AA.
 
-#### How to Meet - Audio Description (Prerecorded) (1.2.5) {#how-to-meet-audio-description-prerecorded}
+#### Come soddisfare il criterio - Audiodescrizione (preregistrata) (1.2.5) {#how-to-meet-audio-description-prerecorded}
 
-Follow the guidance provided for [Audio Description or Media Alternative (Prerecorded)](#audio-description-or-media-alternative-prerecorded).
+Segui le indicazioni fornite per [Audiodescrizione o tipo di media alternativo (preregistrato)](#audio-description-or-media-alternative-prerecorded).
 
-#### More Information - Audio Description (Prerecorded) (1.2.5) {#more-information-audio-description-prerecorded}
+#### Ulteriori informazioni - Audiodescrizione (preregistrata) (1.2.5) {#more-information-audio-description-prerecorded}
 
 * [Comprendere i criteri di successo 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [Come soddisfare i criteri di successo 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### Adattabilità (1.3)  {#adaptable}
+### Adattabile (1.3)  {#adaptable}
 
-[Linea guida 1.3 - Adattabilità: creare contenuti che possano essere rappresentati in modalità differenti (ad esempio con un layout più semplice), senza perdere informazioni o struttura.](https://www.w3.org/TR/WCAG/#adaptable)
+[Linea guida 1.3 - Adattabile: creare contenuti che possano essere rappresentati in modalità differenti (ad esempio con un layout più semplice), senza perdere informazioni o struttura.](https://www.w3.org/TR/WCAG/#adaptable)
 
 Questa linea guida riguarda i requisiti necessari per supportare le persone che:
 
@@ -358,63 +361,65 @@ Potete assicurarvi che alle pagine Web sia assegnata la struttura appropriata ut
       >L’efficacia è la medesima, ma `<strong>` e `<em>` sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il tuo team di sviluppo può configurare l’editor Rich Text in modo che utilizzi `<strong>` e `<em>` (anziché `<b>` e `<i>`) durante lo sviluppo dell’istanza di progetto.
 
 
-* **Tabelle dati complesse**: in alcuni casi, in presenza di tabelle complesse con due o più livelli di intestazioni, le proprietà della tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate mediante gli attributi **header** e **id**. Ad esempio, nella tabella seguente le intestazioni e gli ID vengono abbinati per creare un’associazione programmatica per gli utenti di tecnologie per l’accessibilità.
+* **Tabelle dati complesse**: in alcuni casi, in presenza di tabelle complesse con due o più livelli di intestazioni, le proprietà della tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate mediante gli attributi **header** e **id.**
 
    >[!NOTE]
    >
    >L’attributo id non è disponibile in un’installazione standard. Può essere attivato configurando regole HTML e il serializzatore nell’editor Rich Text.
 
-```xml
- <table>
-    <tr>
-      <th rowspan="2" id="h">Homework</th>
-      <th colspan="3" id="e">Exams</th>
-      <th colspan="3" id="p">Projects</th>
-    </tr>
-    <tr>
-      <th id="e1" headers="e">1</th>
-      <th id="e2" headers="e">2</th>
-      <th id="ef" headers="e">Final</th>
-      <th id="p1" headers="p">1</th>
-      <th id="p2" headers="p">2</th>
-      <th id="pf" headers="p">Final</th>
-    </tr>
-    <tr>
-     <td headers="h">15%</td>
-     <td headers="e e1">15%</td>
-     <td headers="e e2">15%</td>
-     <td headers="e ef">20%</td>
-     <td headers="p p1">10%</td>
-     <td headers="p p2">10%</td>
-     <td headers="p pf">15%</td>
-    </tr>
-   </table>
-```
+   Ad esempio, nella tabella seguente le intestazioni e gli ID vengono abbinati per creare un’associazione programmatica per gli utenti di tecnologie per l’accessibilità.
 
-A questo scopo, in AEM è necessario aggiungere il codice utilizzando direttamente la modalità di modifica sorgente.
+   ```xml
+     <table>
+       <tr>
+         <th rowspan="2" id="h">Homework</th>
+         <th colspan="3" id="e">Exams</th>
+         <th colspan="3" id="p">Projects</th>
+       </tr>
+       <tr>
+         <th id="e1" headers="e">1</th>
+         <th id="e2" headers="e">2</th>
+         <th id="ef" headers="e">Final</th>
+         <th id="p1" headers="p">1</th>
+         <th id="p2" headers="p">2</th>
+         <th id="pf" headers="p">Final</th>
+       </tr>
+       <tr>
+         <td headers="h">15%</td>
+         <td headers="e e1">15%</td>
+         <td headers="e e2">15%</td>
+         <td headers="e ef">20%</td>
+         <td headers="p p1">10%</td>
+         <td headers="p p2">10%</td>
+         <td headers="p pf">15%</td>
+       </tr>
+     </table>
+   ```
 
->[!NOTE]
->
->Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor Rich Text, di regole HTML e del serializzatore.
+   A questo scopo, in AEM è necessario aggiungere il codice utilizzando direttamente la modalità di modifica sorgente.
+
+   >[!NOTE]
+   >
+   >Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor Rich Text, di regole HTML e del serializzatore.
 
 #### Ulteriori informazioni - Informazioni e correlazioni (1.3.1)  {#more-information-info-and-relationships}
 
 * [Comprendere i criteri di successo 1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 * [Come soddisfare i criteri di successo 1.3.1](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
 
-### Sequenza significativa (1.3.2)  {#meaningful-sequence}
+### Sequenza significativa (1.3.2) {#meaningful-sequence}
 
 * Criterio di successo 1.3.2
 * Livello A
-* Sequenza Significativa: Quando la sequenza in cui viene presentato il contenuto ne influenza il significato, è possibile determinare a livello di programmazione una sequenza di lettura corretta.
+* Sequenza significativa: quando la sequenza in cui il contenuto è presentato influisce sul suo significato, la corretta sequenza di lettura può essere determinata programmaticamente.
 
 #### Finalità - Sequenza significativa (1.3.2) {#purpose-meaningful-sequence}
 
-Lo scopo di questo criterio di successo è quello di consentire a un agente utente di fornire una presentazione alternativa del contenuto, preservando l&#39;ordine di lettura necessario per comprendere il significato. È importante che sia possibile determinare a livello di programmazione almeno una sequenza del contenuto che abbia senso. I contenuti che non soddisfano questo criterio di successo possono confondere o disorientare gli utenti quando la tecnologia di supporto legge il contenuto in ordine errato o quando vengono applicati fogli di stile alternativi o altre modifiche di formattazione.
+Lo scopo di questo criterio di successo è quello di consentire a un agente utente di fornire una presentazione alternativa del contenuto, conservando l’ordine di lettura necessario per comprendere il significato. È importante che sia possibile determinare programmaticamente almeno una sequenza del contenuto significativa. I contenuti che non soddisfano questo criterio di successo possono confondere o disorientare gli utenti se le tecnologie per l’accessibilità leggono il contenuto in ordine errato o se vengono applicati fogli di stile alternativi o altre modifiche di formattazione.
 
 #### Come soddisfare il criterio - Sequenza significativa (1.3.2) {#how-to-meet-meaningful-sequence}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence).
 
 #### Ulteriori informazioni - Sequenza significativa (1.3.2) {#more-information-meaningful-sequence}
 
@@ -453,11 +458,11 @@ Assicurati che tutte le informazioni che si basano su caratteristiche visive del
 * [Comprendere i criteri di successo 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Come soddisfare i criteri di successo 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### Distinguibilità (1.4)  {#distinguishable}
+### Distinguibile (1.4)  {#distinguishable}
 
-[Linea guida 1.4 - Distinguibilità: facilitare agli utenti la visione e l’ascolto dei contenuti, separando gli elementi in primo piano dallo sfondo.](https://www.w3.org/TR/WCAG/#distinguishable)
+[Linea guida 1.4 - Distinguibile: facilitare agli utenti la visione e l’ascolto dei contenuti, separando gli elementi in primo piano dallo sfondo.](https://www.w3.org/TR/WCAG/#distinguishable)
 
-### Utilizzo del colore (1.4.1)    {#use-of-color}
+### Uso del colore (1.4.1)    {#use-of-color}
 
 * Criterio di successo 1.4.1
 * Livello A
@@ -467,7 +472,7 @@ Assicurati che tutte le informazioni che si basano su caratteristiche visive del
 >
 >Questo criterio di successo riguarda in particolare la percezione del colore. Altre forme di percezione sono illustrate in [Adattabilità (1.3)](#adaptable); compreso l’accesso programmatico al colore e ad altre codifiche presentazione visiva.
 
-#### Finalità - Utilizzo del colore (1.4.1)  {#purpose-use-of-color}
+#### Finalità - Uso del colore (1.4.1)  {#purpose-use-of-color}
 
 Il colore è un modo efficace per valorizzare l’estetica delle pagine web ed è anche utile per trasmettere informazioni. Tuttavia, esistono una serie di problemi visivi, dalla cecità al daltonismo, che rendono alcune persone incapaci di distinguere tra alcuni colori. Questo rende la codifica tramite colori un modo inaffidabile per fornire informazioni.
 
@@ -477,7 +482,7 @@ Inoltre, il colore non può essere percepito da persone che utilizzano browser d
 
 Un&#39;ulteriore considerazione è lo stato *selezionato* per un elemento di interfaccia (ad esempio, schede, pulsanti di attivazione/disattivazione, tra gli altri), che deve essere trasmesso in un modo diverso rispetto al solo colore e oltre una semplice presentazione visiva. Per tali elementi, l&#39;uso aggiuntivo di pattern, forme e informazioni programmatiche è utile per creare un&#39;esperienza utente completa che non si basa su un senso specifico.
 
-#### Come soddisfare il criterio - Utilizzo del colore (1.4.1)  {#how-to-meet-use-of-color}
+#### Come soddisfare il criterio - Uso del colore (1.4.1)  {#how-to-meet-use-of-color}
 
 Qualunque colore sia utilizzato per trasmettere le informazioni, accertati che queste siano disponibili senza che sia necessario vedere il colore stesso.
 
@@ -485,35 +490,32 @@ Ad esempio, accertati che le informazioni fornite dal colore siano presenti in m
 
 Se il colore viene usato come spunto per fornire informazioni, è necessario dare un ulteriore segnale visivo, ad esempio la modifica dello stile (grassetto, corsivo) o del font. Tutto questo favorisce l’identificazione delle informazioni da parte delle persone con problemi di vista o affette da daltonismo. Tuttavia, non vi si può fare completo affidamento, in quanto non aiuterà le persone che non possono vedere affatto la pagina. Pertanto è (a volte) utile fornire testo nascosto o utilizzare soluzioni programmatiche, come la suite di standard [Web](https://www.w3.org/WAI/standards-guidelines/aria/)Accessible Rich Internet Applications (ARIA), per trasmettere queste informazioni agli utenti non vedenti.
 
-#### Ulteriori informazioni - Utilizzo del colore (1.4.1) {#more-information-use-of-color}
+#### Ulteriori informazioni - Uso del colore (1.4.1) {#more-information-use-of-color}
 
 * [Comprendere i criteri di successo 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [Come soddisfare i criteri di successo 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-<!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
--->
-
-### Controllo audio (1.4.2)  {#audio-control}
+### Controllo del sonoro (1.4.2) {#audio-control}
 
 * Criterio di successo 1.4.2
 * Livello A
-* Controllo audio: Se l&#39;audio di una pagina Web viene riprodotto automaticamente per più di 3 secondi, è disponibile un meccanismo per mettere in pausa o arrestare l&#39;audio, oppure un meccanismo per controllare il volume audio indipendentemente dal livello globale del volume del sistema.
+* Controllo del sonoro: se un contenuto audio all’interno di una pagina web è eseguito automaticamente per più di tre secondi, occorre fornire una funzionalità per metterlo in pausa o interromperlo, oppure una modalità per il controllo dell’audio che sia indipendente dal controllo predefinito del sistema.
 
-#### Finalità - Controllo audio (1.4.2) {#purpose-audio-control}
+#### Finalità - Controllo del sonoro (1.4.2) {#purpose-audio-control}
 
-Gli utenti che utilizzano il software per la lettura dello schermo possono difficilmente sentire l&#39;uscita audio se è in corso la riproduzione audio. Questa difficoltà è aggravata quando l&#39;uscita vocale dell&#39;assistente vocale è basata su software (come la maggior parte di oggi) ed è controllata attraverso lo stesso controllo del volume del suono. Inoltre, alcune persone con disabilità cognitive e persone neurodivergenti possono avere una sensibilità sonora. Questi utenti non potranno modificare il livello del volume dei contenuti audio a causa di interruzioni.
+Se contemporaneamente al sonoro del software per la lettura dello schermo è presente un’altra riproduzione audio, gli utenti che utilizzano tecnologie per l’accessibilità potrebbero avere difficoltà di ascolto dell’output sonoro. Questa difficoltà è accentuata quando l’output sonoro della lettura dello schermo è basato su software (come nel caso della maggior parte dei dispositivi attuali) ed è controllato tramite il medesimo controllo del volume per l’audio. Inoltre, alcune persone con disabilità cognitive e persone neurodivergenti possono avere una sensibilità sonora. Questi utenti non potranno modificare il livello del volume dei contenuti audio a causa di interruzioni.
 
-Pertanto, è importante che l&#39;utente sia in grado di disattivare l&#39;audio sullo sfondo.
+Pertanto, è importante che l’utente abbia la possibilità di disattivare l’audio di sottofondo.
 
 >[!NOTE]
 >
 >Il controllo del volume include la possibilità di ridurre il volume a zero.
 
-#### Come soddisfare il criterio - Controllo audio (1.4.2) {#how-to-meet-audio-control}
+#### Come soddisfare il criterio - Controllo del sonoro (1.4.2) {#how-to-meet-audio-control}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control).
 
-#### Ulteriori informazioni - Controllo audio (1.4.2) {#more-information-audio-control}
+#### Ulteriori informazioni - Controllo del sonoro (1.4.2) {#more-information-audio-control}
 
 * [Comprendere i criteri di successo 1.4.2](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
 * [Come soddisfare i criteri di successo 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)
@@ -557,7 +559,7 @@ Assicurati che il testo contrasti a sufficienza con il relativo sfondo. I rappor
 
 >[!NOTE]
 >
->Per facilitare le conversioni in altre unità:
+>I seguenti siti possono facilitare le conversioni in altre unità:
 >
 >* [Calcolatore Px-Em - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Conversione dimensione font: pixel-point-em-rem-percentuale](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
@@ -575,21 +577,21 @@ Se non è possibile rispettare i livelli di contrasto raccomandati, sarà necess
 * [Comprendere i criteri di successo 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 * [Come soddisfare i criteri di successo 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
 
-### Ridimensiona testo (1.4.4)  {#resize-text}
+### Ridimensionamento del testo (1.4.4) {#resize-text}
 
 * Criterio di successo 1.4.4
 * Livello A
-* Ridimensiona testo: Eccetto per le didascalie e le immagini di testo, il testo può essere ridimensionato senza tecnologia di supporto fino al 200% senza perdita di contenuti o funzionalità.
+* Ridimensionamento del testo: il testo, ad eccezione dei sottotitoli e delle immagini contenenti testo, può essere ridimensionato fino al 200 percento senza l’ausilio di tecnologie per l’accessibilità e senza perdita di contenuto e funzionalità.
 
-#### Finalità - Ridimensiona testo (1.4.4) {#purpose-resize-text}
+#### Finalità - Ridimensionamento del testo (1.4.4) {#purpose-resize-text}
 
-Lo scopo di questo criterio di successo è garantire che il testo di cui è stato effettuato il rendering visivo, compresi i controlli basati sul testo (caratteri di testo visualizzati in modo che possano essere visualizzati [rispetto ai caratteri di testo che sono ancora nella forma dei dati, come ASCII]), possa essere ridimensionato in modo che possa essere letto direttamente da persone con lievi disabilità visive, senza richiedere l&#39;uso di tecnologie di supporto come una lente di ingrandimento dello schermo. Gli utenti possono trarre vantaggio dal ridimensionamento di tutto il contenuto della pagina Web, ma il testo è molto critico.
+Lo scopo di questo criterio di successo è garantire che il rendering visivo di un testo (compresi i controlli basati sul testo, ovvero i caratteri di testo visualizzati in formato visivo [rispetto ai caratteri di testo ancora in formato dati, ad esempio ASCII]) possa essere ridimensionato in modo da consentire a persone con disabilità visive di lieve entità di leggere direttamente il testo senza utilizzare tecnologie per l’accessibilità, come una lente di ingrandimento dello schermo. Gli utenti possono trarre vantaggio dal ridimensionamento di tutto il contenuto della pagina web, ma il testo è l’elemento più importante.
 
-#### Come soddisfare il criterio - Ridimensionare il testo (1.4.4) {#how-to-meet-resize-text}
+#### Come soddisfare il criterio - Ridimensionamento del testo (1.4.4) {#how-to-meet-resize-text}
 
 Oltre a seguire le linee guida in [Come soddisfare i criteri di successo 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) , è possibile incoraggiare gli autori di contenuti a utilizzare larghezze e altezze fluide e flessibili nelle strutture delle pagine e nelle dimensioni dei font (ad esempio, Web Design reattivo) per consentire ai lettori di ridimensionare il testo.
 
-#### Ulteriori informazioni - Ridimensionare il testo (1.4.4) {#more-information-resize-text}
+#### Ulteriori informazioni - Ridimensionamento del testo (1.4.4) {#more-information-resize-text}
 
 * [Comprendere i criteri di successo 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
 * [Come soddisfare i criteri di successo 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
@@ -619,86 +621,86 @@ Se è necessario utilizzare le immagini di testo, utilizza CSS per sostituirle c
 * [Comprendere i criteri di successo 1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
 * [Come soddisfare i criteri di successo 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
 
-## Principio 2: Operabilità  {#principle-operable}
+## Principio 2: Utilizzabile  {#principle-operable}
 
-[Principio 2: Operabilità - I componenti dell’interfaccia e la navigazione devono essere operabili.](https://www.w3.org/TR/WCAG/#operable)
+[Principio 2: Utilizzabile - I componenti dell’interfaccia e la navigazione devono essere operabili.](https://www.w3.org/TR/WCAG/#operable)
 
-### Tastiera accessibile (2.1) {#keyboard-accessible}
+### Accessibile da tastiera (2.1) {#keyboard-accessible}
 
-[Linea guida 2.1 Tastiera accessibile: Rendere tutte le funzionalità disponibili da una tastiera.](https://www.w3.org/TR/WCAG/#keyboard-accessible)
+[Linea guida 2.1 - Accessibile da tastiera: rendere disponibili tutte le funzionalità tramite tastiera.](https://www.w3.org/TR/WCAG/#keyboard-accessible)
 
-In questo modo gli utenti possono accedere a tutte le funzionalità utilizzando una tastiera.
+È necessario che gli utenti possano accedere a tutte le funzionalità utilizzando una tastiera.
 
-### Tastiera (2.1.1)  {#keyboard}
+### Tastiera (2.1.1) {#keyboard}
 
 * Criterio di successo 2.1.1
 * Livello A
-* Tastiera: Tutte le funzionalità del contenuto sono utilizzabili attraverso un&#39;interfaccia da tastiera senza che sia necessario un tempo specifico per i singoli tasti, a meno che la funzione sottostante non richieda un input che dipende dal percorso del movimento dell&#39;utente e non solo dai punti finali.
+* Tastiera: tutte le funzionalità del contenuto sono utilizzabili tramite un’interfaccia di tastiera senza richiedere tempi specifici per la pressione dei singoli tasti, salvo il caso in cui sia la funzionalità di fondo a richiedere un input che dipende dal percorso del movimento dell’utente e non solo dai suoi punti d’arrivo.
 
 #### Finalità - Tastiera (2.1.1) {#purpose-keyboard}
 
-Lo scopo di questo criterio di successo è garantire che, laddove possibile, il contenuto possa essere gestito tramite una tastiera o un&#39;interfaccia (in modo da poter utilizzare una tastiera alternativa). Quando il contenuto può essere gestito tramite una tastiera o una tastiera alternativa, può essere gestito da persone prive di visione (che non possono utilizzare dispositivi come i topi che richiedono un coordinamento a mano), nonché da persone che devono utilizzare tastiere alternative o dispositivi di input che fungono da emulatori di tastiera. Gli emulatori di tastiera includono software di ingresso vocale, software per sip-and-puff, tastiere su schermo, software di scansione e una varietà di tecnologie di assistenza e tastiere alternative. Gli individui con problemi di vista possono anche avere problemi a tracciare un puntatore e trovare l&#39;uso del software molto più semplice (o solo possibile) se possono controllarlo dalla tastiera.
+Lo scopo di questo criterio di successo è garantire che, laddove possibile, il contenuto possa essere utilizzato tramite una tastiera o un’interfaccia per tastiera (che consenta l’utilizzo di una tastiera alternativa). Il contenuto gestibile tramite una tastiera o una tastiera alternativa può essere utilizzato da persone non vedenti (che non possono utilizzare dispositivi come il mouse, che richiede coordinazione occhio-mano), nonché da persone che devono utilizzare tastiere alternative o dispositivi di input che fungono da emulatori di tastiera. Gli emulatori di tastiera includono software di input vocale, software a soffio Sip/Puff, tastiere su schermo, software di scansione e una varietà di tecnologie per l’accessibilità e tastiere alternative. Gli utenti ipovedenti potrebbero avere difficoltà anche nel seguire un puntatore e trovare l’uso del software molto più semplice o possibile solo se controllabile tramite tastiera.
 
 #### Come soddisfare il criterio - Tastiera (2.1.1) {#how-to-meet-keyboard}
 
-Seguire le linee guida in [Come soddisfare i criteri di successo 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard).
 
 #### Ulteriori informazioni - Tastiera (2.1.1) {#more-information-keyboard}
 
 * [Comprendere i criteri di successo 2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
 * [Come soddisfare i criteri di successo 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
 
-### Nessuna traccia da tastiera (2.1.2)  {#no-keyboard-trap}
+### Nessun impedimento all’uso della tastiera (2.1.2) {#no-keyboard-trap}
 
 * Criterio di successo 2.1.2
 * Livello A
-* Nessuna traccia da tastiera: Se è possibile spostare lo stato attivo su un componente della pagina utilizzando un&#39;interfaccia di tastiera, è possibile spostare lo stato attivo da tale componente utilizzando solo un&#39;interfaccia di tastiera e, se richiede più di un metodo di uscita standard o freccia non modificata, l&#39;utente è informato del metodo di spostamento dello stato attivo.
+* Nessun impedimento all’uso della tastiera: se tramite un’interfaccia di tastiera è possibile passare dalla tastiera a un componente della pagina, deve essere possibile anche il passaggio inverso mediante la stessa interfaccia di tastiera. Inoltre, se a tal fine non fosse sufficiente l’uso dei normali tasti freccia o Tab o l’uso di altri metodi di uscita standard, l’utente deve essere informato del metodo necessario per eseguire tale operazione.
 
-#### Finalità - Nessuna traccia da tastiera (2.1.2) {#purpose-no-keyboard-trap}
+#### Finalità - Nessun impedimento all’uso della tastiera (2.1.2) {#purpose-no-keyboard-trap}
 
-Lo scopo di questo criterio di successo è garantire che il contenuto non *intercetti* lo stato attivo all&#39;interno delle sottosezioni di contenuto di una pagina Web. Si tratta di un problema comune se all’interno di una pagina vengono combinati più formati e sottoposti a rendering tramite plug-in o applicazioni incorporate.
+Lo scopo di questo criterio di successo è garantire che il contenuto non *impedisca* di usare la tastiera all’interno di sottosezioni di contenuto su una pagina web. Si tratta di un problema comune se in una pagina sono combinati più formati riprodotti tramite plug-in o applicazioni incorporate.
 
 In alcuni casi, la funzionalità della pagina Web limita lo stato attivo a una sottosezione del contenuto (ad esempio, una finestra di dialogo modale). In tali casi, è necessario fornire un metodo che consenta a un utente di uscire da tale sottosezione di contenuto (ad esempio, il tasto ESC consente di chiudere la finestra di dialogo modale o un pulsante Chiudi consente di chiudere la finestra di dialogo modale).
 
-#### Come soddisfare il criterio - Nessuna traccia da tastiera (2.1.2) {#how-to-meet-no-keyboard-trap}
+#### Come soddisfare il criterio - Nessun impedimento all’uso della tastiera (2.1.2) {#how-to-meet-no-keyboard-trap}
 
-Seguire le linee guida in [Come soddisfare i criteri di successo 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap).
 
-#### Ulteriori informazioni - Nessuna traccia da tastiera (2.1.2) {#more-information-no-keyboard-trap}
+#### Ulteriori informazioni - Nessun impedimento all’uso della tastiera (2.1.2) {#more-information-no-keyboard-trap}
 
 * [Comprendere i criteri di successo 2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
 * [Come soddisfare i criteri di successo 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)
 
-### Tempo sufficiente (2.2) {#enough-time}
+### Adeguata disponibilità di tempo (2.2) {#enough-time}
 
-[Linea guida 2.2 Tempo sufficiente: Dare agli utenti tempo sufficiente per leggere e utilizzare il contenuto.](https://www.w3.org/TR/WCAG/#enough-time)
+[Linea guida 2.2 - Adeguata disponibilità di tempo: fornire agli utenti tempo sufficiente per leggere e utilizzare i contenuti.](https://www.w3.org/TR/WCAG/#enough-time)
 
-In questo modo si garantisce agli utenti tempo sufficiente per leggere e agire.
+L’obiettivo di questo criterio è garantire agli utenti tempo sufficiente per leggere e utilizzare i contenuti.
 
-### Tempo regolabile (2.2.1)  {#timing-adjustable}
+### Regolazione tempi di esecuzione (2.2.1) {#timing-adjustable}
 
 * Criterio di successo 2.2.1
 * Livello A
-* Tastiera: Dare agli utenti tempo sufficiente per leggere e utilizzare il contenuto.
+* Tastiera: fornire agli utenti tempo sufficiente per leggere e utilizzare i contenuti.
 
-#### Finalità - Tempo regolabile (2.2.1) {#purpose-timing-adjustable}
+#### Finalità - Regolazione tempi di esecuzione (2.2.1) {#purpose-timing-adjustable}
 
-Lo scopo di questo criterio di successo è garantire che agli utenti disabili sia concesso il tempo necessario per interagire con i contenuti Web quando possibile. Le persone con disabilità come cecità, visibilità ridotta, difficoltà motorie e limitazioni cognitive potrebbero richiedere più tempo per leggere il contenuto o per eseguire funzioni come la compilazione di moduli online. Se le funzioni Web dipendono dal tempo, sarà difficile per alcuni utenti eseguire l&#39;azione richiesta prima che venga eseguito un limite di tempo. Ciò potrebbe rendere il servizio inaccessibile. La progettazione di funzioni che non dipendono dal tempo aiuterà le persone con disabilità a completare queste funzioni. Le opzioni per disabilitare i limiti di tempo, personalizzare i limiti di tempo o richiedere più tempo prima che venga eseguito un limite di tempo consentono agli utenti che richiedono più tempo del previsto di completare con successo le attività. Queste opzioni sono elencate nell&#39;ordine che sarà più utile per l&#39;utente. La disattivazione dei limiti di tempo è migliore rispetto alla personalizzazione dei limiti di tempo, il che è meglio che richiedere più tempo prima che si verifichi un limite di tempo.
+Lo scopo di questo criterio di successo è garantire che gli utenti disabili abbiano il tempo necessario per interagire con i contenuti web tutte le volte che è possibile. Le persone con disabilità quali cecità, ipovisione, limitazioni della destrezza o cognitive potrebbero avere bisogno di più tempo per leggere il contenuto o per eseguire azioni come la compilazione di moduli online. Se le funzioni web sono dipendenti dai tempi di esecuzione, per alcuni utenti sarà difficile eseguire l’azione richiesta entro i tempi stabiliti. Ciò potrebbe rendere il servizio inaccessibile. La progettazione di funzioni indipendenti dai tempi di esecuzione consente alle persone con disabilità di completare queste operazioni con successo. Le opzioni che consentono di disattivare il limite di tempo, personalizzarlo e regolarlo prima di raggiungerlo oppure estenderlo prima dello scadere permettono di completare le attività anche agli utenti che hanno bisogno di tempi più lunghi. Le opzioni sono elencate secondo l’ordine più utile per l’utente. La disattivazione dei limiti di tempo è migliore rispetto alla personalizzazione e quest’ultima, a sua volta, è migliore della richiesta di estensione prima dello scadere.
 
-#### Come soddisfare il criterio - Tempo regolabile (2.2.1) {#how-to-meet-timing-adjustable}
+#### Come soddisfare il criterio - Regolazione tempi di esecuzione (2.2.1) {#how-to-meet-timing-adjustable}
 
-Seguire le linee guida in [Come soddisfare i criteri di successo 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable).
 
-#### Ulteriori informazioni - Tempo regolabile (2.2.1) {#more-information-timing-adjustable}
+#### Ulteriori informazioni - Regolazione tempi di esecuzione (2.2.1) {#more-information-timing-adjustable}
 
 * [Comprendere i criteri di successo 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [Come soddisfare i criteri di successo 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
-### Sospendi, Arresta, Nascondi (2.2.2)    {#pause-stop-hide}
+### Pausa, stop, nascondi (2.2.2)    {#pause-stop-hide}
 
 * Criterio di successo 2.2.2
 * Livello A
-* Sospendi, Arresta, Nascondi: per le informazioni in movimento, lampeggianti, scorrevoli o con aggiornamento automatico, vale quanto segue:
+* Pausa, stop, nascondi: per le informazioni in movimento, lampeggianti, scorrevoli o con aggiornamento automatico, vale quanto segue:
    * Spostamento, lampeggiamento, scorrimento: per qualsiasi informazione in movimento, lampeggiante o scorrevole che (a) parta automaticamente, (b) duri più di cinque secondi, e (c) sia rappresentata in parallelo con altro contenuto, esiste un meccanismo che consente all’utente di mettere in pausa, interrompere o nascondere l’effetto, a meno che questo non sia parte di un’attività per la quale è essenziale;
    * Aggiornamento automatico: per qualsiasi informazione con aggiornamento automatico che (a) parta automaticamente e (b) sia rappresentata in parallelo con altro contenuto, esiste un meccanismo che consente all’utente di mettere in pausa, interrompere o nascondere il contenuto, oppure controllare la frequenza dell’aggiornamento, a meno che questo non sia parte di un’attività per la quale è essenziale;
 
@@ -709,11 +711,11 @@ Elementi da sottolineare:
 1. I contenuti aggiornati periodicamente dal software o trasmessi in streaming all’agente dell’utente non sono tenuti a conservare o presentare le informazioni generate o ricevute tra l’inizio della pausa e la ripresa della presentazione, in quanto questo potrebbe non essere tecnicamente possibile e, in molte situazioni, potrebbe essere fuorviante.
 1. Un’animazione che si verifica come parte di una fase di precaricamento, o situazione similare, può essere considerata essenziale se l’interazione non può verificarsi durante quella fase per tutti gli utenti e se la mancata indicazione dell’avanzamento potrebbe confondere gli utenti o far loro pensare che il contenuto sia bloccato o guasto.
 
-#### Finalità - Sospendi, Arresta, Nascondi (2.2.2)  {#purpose-pause-stop-hide}
+#### Finalità - Pausa, stop, nascondi (2.2.2)  {#purpose-pause-stop-hide}
 
 Alcuni utenti possono rilevare che il contenuto spostato distrae, o addirittura è fisicamente doloroso, rendendo difficile concentrarsi su altre parti della pagina. Inoltre, tali contenuti possono risultare difficili da leggere per gli utenti che non riescono a stare al passo con il testo in movimento.
 
-#### Come soddisfare il criterio - Sospendi, Arresta, Nascondi (2.2.2)  {#how-to-meet-pause-stop-hide}
+#### Come soddisfare il criterio - Pausa, stop, nascondi (2.2.2)  {#how-to-meet-pause-stop-hide}
 
 In base alla natura del contenuto, è possibile applicare uno o più dei seguenti suggerimenti durante la creazione di pagine web che includono contenuti in movimento, con effetti di sfarfallio o lampeggiamento:
 
@@ -723,14 +725,14 @@ In base alla natura del contenuto, è possibile applicare uno o più dei seguent
 * Fornire un controllo modulo sulla pagina Web per consentire all&#39;utente di disabilitare tutti i contenuti in movimento o lampeggianti presenti sulla pagina.
 * Se non è possibile utilizzare una delle opzioni descritte sopra, fornite un collegamento a una pagina contenente tutti i contenuti, ma senza spostare o lampeggiare.
 
-#### Ulteriori informazioni - Sospendi, Arresta, Nascondi (2.2.2)  {#more-information-pause-stop-hide}
+#### Ulteriori informazioni - Pausa, stop, nascondi (2.2.2)  {#more-information-pause-stop-hide}
 
 * [Comprendere il criterio di successo 2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
 * [Come soddisfare il criterio di successo 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
 
-### Attacchi epilettici e reazioni fisiche (2.3) {#seizures-and-physcial-reactions}
+### Convulsioni e reazioni fisiche (2.3) {#seizures-and-physcial-reactions}
 
-[Linea guida 2.3 Attacchi epilettici: Non progettare contenuti in modo che possano causare attacchi epilettici o reazioni fisiche.](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
+[Linea guida 2.3 - Convulsioni e reazioni fisiche: non sviluppare contenuti con tecniche che sia noto causino attacchi epilettici o reazioni fisiche.](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
 
 ### Tre lampeggiamenti o inferiore alla soglia (2.3.1)  {#three-flashes-or-below-threshold}
 
@@ -760,65 +762,65 @@ In alcuni casi i contenuti lampeggianti possono causare crisi epilettiche dovute
 
 ### Navigabile (2.4) {#navigable}
 
-[Linea guida 2.4 Navigabile: Fornire agli utenti i modi per navigare, trovare il contenuto e determinare dove si trovano.](https://www.w3.org/TR/WCAG/#navigable)
+[Linea guida 2.4 - Navigabile: fornire all’utente delle funzionalità di supporto per navigare, trovare contenuti e determinare la propria posizione.](https://www.w3.org/TR/WCAG/#navigable)
 
 In questo modo si garantisce che il contenuto sia semplice e intuitivo per la navigazione degli utenti.
 
-### Bypass Blocks (2.4.1)  {#bypass-blocks}
+### Salto di blocchi (2.4.1) {#bypass-blocks}
 
 * Criterio di successo 2.4.1
 * Livello A
-* Ignora blocchi: È disponibile un meccanismo per bypassare blocchi di contenuto ripetuti su più pagine Web.
+* Salto di blocchi: è disponibile un meccanismo che consente di saltare i blocchi di contenuti che si ripetono su più pagine web.
 
-#### Finalità - Bypass Blocks (2.4.1) {#purpose-bypass-blocks}
+#### Finalità - Salto di blocchi (2.4.1) {#purpose-bypass-blocks}
 
-Lo scopo di questo criterio di successo è consentire agli utenti che navigano in sequenza attraverso il contenuto di accedere più direttamente al contenuto principale della pagina Web. Le pagine Web e le applicazioni presentano spesso contenuti che vengono visualizzati su altre pagine o schermate. Esempi di blocchi ripetuti di contenuto includono, tra l’altro, collegamenti di navigazione, elementi grafici di intestazione, menu e cornici pubblicitarie. Ai fini della presente disposizione, le sezioni ripetute di piccole dimensioni, quali singole parole, frasi o singoli collegamenti, non sono considerate blocchi.
+Lo scopo di questo criterio di successo è consentire agli utenti che navigano in sequenza nel contenuto di accedere in modo più diretto al contenuto principale della pagina web. Le pagine web e le applicazioni presentano spesso contenuti che vengono ripetuti su altre pagine o schermate. Esempi di blocchi ripetuti di contenuto includono, tra l’altro, collegamenti di navigazione, elementi grafici di intestazione, menu e cornici pubblicitarie. Ai fini di questo criterio, le sezioni ripetute di piccole dimensioni, quali singole parole, frasi o singoli collegamenti, non sono considerate blocchi.
 
-#### Come soddisfare il criterio - Bypass Blocks (2.4.1) {#how-to-meet-bypass-blocks}
+#### Come soddisfare il criterio - Salto di blocchi (2.4.1) {#how-to-meet-bypass-blocks}
 
-Seguite le linee guida riportate in [Come soddisfare i criteri di successo 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
 
-#### Ulteriori informazioni - Bypass Blocks (2.4.1) {#more-information-bypass-blocks}
+#### Ulteriori informazioni - Salto di blocchi (2.4.1) {#more-information-bypass-blocks}
 
 * [Comprendere i criteri di successo 2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
 * [Come soddisfare i criteri di successo 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
 
-### Pagina con titolo (2.4.2)    {#page-titled}
+### Titolazione della pagina (2.4.2)    {#page-titled}
 
 * Criterio di successo 2.4.2
 * Livello A
-* Pagina con titolo: alle pagine web sono associati titoli che ne descrivono argomento o finalità.
+* Titolazione della pagina: alle pagine web sono associati titoli che ne descrivono argomento o finalità.
 
-#### Finalità - Pagina con titolo (2.4.2)  {#purpose-page-titled}
+#### Finalità - Titolazione della pagina (2.4.2)  {#purpose-page-titled}
 
 Questo criterio di successo consente a tutti gli utenti, indipendentemente da eventuali particolari disabilità, di identificare rapidamente il contenuto di una pagina web senza leggere la pagina completa. Questo è particolarmente utile quando più pagine web vengono aperte in altrettante schede del browser, in quanto il titolo della pagina è indicato nella scheda e quindi può essere individuato rapidamente.
 
-#### Come soddisfare il criterio - Pagina con titolo (2.4.2)  {#how-to-meet-page-titled}
+#### Come soddisfare il criterio - Titolazione della pagina (2.4.2)  {#how-to-meet-page-titled}
 
 Quando viene creata una nuova pagina HTML in AEM, potete specificare il titolo della pagina. Assicuratevi che il titolo descriva in modo adeguato il contenuto e lo scopo della pagina, in particolare eventuali aspetti unici, in modo che i visitatori possano identificare rapidamente se il contenuto è effettivamente pertinente alle loro esigenze.
 
 È inoltre possibile modificare il titolo della pagina quando la si modifica, attraverso: **Informazioni pagina** > **Proprietà.**
 
-#### Ulteriori informazioni - Pagina con titolo (2.4.2) {#more-information-page-titled}
+#### Ulteriori informazioni - Titolazione della pagina (2.4.2) {#more-information-page-titled}
 
 * [Comprendere il criterio di successo 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
 * [Come soddisfare il criterio di successo 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
 
-### Ordine di messa a fuoco (2.4.3)  {#focus-order}
+### Ordine del focus (2.4.3) {#focus-order}
 
 * Criterio di successo 2.4.3
 * Livello A
-* Ordine di messa a fuoco: Se è possibile navigare in sequenza in una pagina Web e le sequenze di navigazione influiscono sul significato o sul funzionamento, i componenti attivabili vengono attivati in un ordine che mantiene il significato e l&#39;operabilità.
+* Ordine del focus: se è possibile navigare in una pagina web in modo sequenziale e le sequenze di navigazione influiscono sul suo significato e sul suo funzionamento, gli oggetti che possono essere attivati (portati in focus) devono rispettare un ordine di attivazione che ne mantenga il senso e l’operatività.
 
-#### Finalità - Ordine di messa a fuoco (2.4.3) {#purpose-focus-order}
+#### Finalità - Ordine del focus (2.4.3) {#purpose-focus-order}
 
-L&#39;obiettivo di questo criterio di successo è garantire che quando gli utenti si spostano in sequenza nel contenuto, le informazioni vengano visualizzate in un ordine coerente con il significato del contenuto e che possano essere utilizzate dalla tastiera. Questo riduce la confusione consentendo agli utenti di creare un modello mentale coerente del contenuto. Possono essere presenti ordini diversi che riflettono relazioni logiche nel contenuto. Ad esempio, lo spostamento tra i componenti di un modulo online composto da più campi e/o passaggi riflette le relazioni logiche all&#39;interno del contenuto.
+L’obiettivo di questo criterio di successo è garantire che quando gli utenti navigano in sequenza nel contenuto, le informazioni vengano visualizzate in un ordine coerente con il significato del contenuto e possano essere utilizzate tramite la tastiera. Questo riduce la confusione e consente agli utenti di creare un modello mentale coerente del contenuto. Possono essere presenti ordini diversi che riflettono le relazioni logiche del contenuto. Ad esempio, lo spostamento tra i componenti di un modulo online composto da più campi e/o passaggi riflette le relazioni logiche all&#39;interno del contenuto.
 
-#### Come soddisfare il criterio - Ordine di messa a fuoco (2.4.3) {#how-to-meet-focus-order}
+#### Come soddisfare il criterio - Ordine del focus (2.4.3) {#how-to-meet-focus-order}
 
-Seguite le linee guida riportate in [Come soddisfare i criteri di successo 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order).
 
-#### Ulteriori informazioni - Ordine di messa a fuoco (2.4.3) {#more-information-focus-order}
+#### Ulteriori informazioni - Ordine del focus (2.4.3) {#more-information-focus-order}
 
 * [Comprendere i criteri di successo 2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
 * [Come soddisfare i criteri di successo 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
@@ -869,7 +871,7 @@ John Smith’s publications
 >
 >Il frammento di codice sopra ha esclusivamente scopo illustrativo; si consiglia di utilizzare il componente **Immagine**.
 
-Mentre è opportuno fornire un testo di collegamento che identifichi lo scopo del collegamento senza necessità di ulteriore contesto, questo effettivamente non è sempre possibile. I collegamenti senza contesto possono essere utilizzati nei casi seguenti, esempi HTML dei quali sono reperibili in [Come soddisfare il criterio di successo 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Anche se è consigliabile fornire un testo di collegamento che identifichi lo scopo del collegamento senza necessità di contesto aggiuntivo, si riconosce che ciò non è sempre possibile. I collegamenti senza contesto possono essere utilizzati nei casi seguenti, esempi HTML di cui si trovano in [Come soddisfare il criterio di successo 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Qualora il testo di collegamento sia parte di un elenco di collegamenti strettamente correlati, e la voce di elenco che racchiude il collegamento fornisca contesto sufficiente.
 * Laddove lo scopo di un collegamento possa essere chiaramente identificato dal testo di paragrafo *che lo precede* (non che lo segue).
@@ -890,76 +892,76 @@ In alternativa, puoi utilizzare script in modo da fornire una quantità minima d
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 -->
 
-### Varie modalità (2.4.5)  {#multiple-ways}
+### Differenti modalità (2.4.5) {#multiple-ways}
 
 * Criterio di successo 2.4.5
 * Livello AA
-* Vari modi: Sono disponibili più metodi per individuare una pagina Web all&#39;interno di un set di pagine Web, ad eccezione dei casi in cui la pagina Web è il risultato di un processo o un passaggio in esso.
+* Differenti modalità: rendere disponibili più modalità per identificare una pagina web all’interno di un insieme di pagine web, salvo il caso in cui una pagina Web sia il risultato - o una fase - di un’azione.
 
-#### Finalità - Vari modi (2.4.5) {#purpose-multiple-ways}
+#### Finalità - Differenti modalità (2.4.5) {#purpose-multiple-ways}
 
-L’obiettivo di questo criterio di successo è di consentire agli utenti di individuare il contenuto nel modo più adatto alle loro esigenze. Gli utenti possono utilizzare una tecnica più semplice o comprensibile di un&#39;altra.
+L’obiettivo di questo criterio di successo è di consentire agli utenti di individuare il contenuto nel modo più adatto alle loro esigenze. Gli utenti possono utilizzare una tecnica più semplice o immediata di un’altra.
 
-Anche i siti di piccole dimensioni dovrebbero fornire agli utenti alcuni strumenti di orientamento. Per un sito di tre o quattro pagine, con tutte le pagine collegate dalla home page, può essere sufficiente fornire semplicemente i collegamenti da e verso la home page, dove i collegamenti nella home page possono fungere anche da mappa del sito.
+Anche i siti di piccole dimensioni dovrebbero fornire agli utenti alcuni strumenti di orientamento. Per un sito di tre o quattro pagine, con tutte le pagine collegate dalla home page, può essere sufficiente fornire i collegamenti da e verso la home page. Nella home page, i collegamenti possono fungere anche da mappa del sito.
 
-#### Come soddisfare il criterio - Vari modi (2.4.5) {#how-to-meet-multiple-ways}
+#### Come soddisfare il criterio - Differenti modalità (2.4.5) {#how-to-meet-multiple-ways}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways).
 
-#### Ulteriori informazioni - Vari modi (2.4.5) {#more-information-multiple-ways}
+#### Ulteriori informazioni - Differenti modalità (2.4.5) {#more-information-multiple-ways}
 
 * [Comprendere i criteri di successo 2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
 * [Come soddisfare i criteri di successo 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
 
-### Titoli ed etichette (2.4.6)  {#headings-and-labels}
+### Intestazioni ed etichette (2.4.6) {#headings-and-labels}
 
 * Criterio di successo 2.4.6
 * Livello AA
-* Intestazioni ed etichette: Le intestazioni e le etichette descrivono argomento o finalità.
+* Intestazioni ed etichette: utilizzare intestazioni ed etichette per descrivere argomenti o finalità.
 
-#### Finalità - Titoli ed etichette (2.4.6) {#purpose-headings-and-labels}
+#### Finalità - Intestazioni ed etichette (2.4.6) {#purpose-headings-and-labels}
 
-Lo scopo di questo criterio di successo è aiutare gli utenti a comprendere quali informazioni sono contenute nelle pagine Web e come tali informazioni sono organizzate. Quando le intestazioni sono chiare e descrittive, gli utenti possono trovare le informazioni che cercano più facilmente, e possono comprendere più facilmente i rapporti tra diverse parti del contenuto. Le etichette descrittive consentono agli utenti di identificare componenti specifici all&#39;interno del contenuto.
+Lo scopo di questo criterio di successo è aiutare gli utenti a comprendere quali informazioni sono contenute nelle pagine web e il modo in cui tali informazioni sono organizzate. Se le intestazioni sono chiare e descrittive, gli utenti possono trovare le informazioni che cercano più facilmente e possono comprendere più facilmente le relazioni tra le diverse parti del contenuto. Le etichette descrittive consentono agli utenti di identificare componenti specifici all’interno del contenuto.
 
-#### Come soddisfare il criterio - Titoli ed etichette (2.4.6) {#how-to-meet-headings-and-labels}
+#### Come soddisfare il criterio - Intestazioni ed etichette (2.4.6) {#how-to-meet-headings-and-labels}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
 
-#### Ulteriori informazioni - Titoli ed etichette (2.4.6) {#more-information-headings-and-labels}
+#### Ulteriori informazioni - Intestazioni ed etichette (2.4.6) {#more-information-headings-and-labels}
 
 * [Comprendere i criteri di successo 2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
 * [Come soddisfare i criteri di successo 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
 
-### Messa a fuoco visibile (2.4.7)  {#focus-visible}
+### Focus visibile (2.4.7) {#focus-visible}
 
 * Criterio di successo 2.4.7
 * Livello AA
-* Attiva visibile: Qualsiasi interfaccia utente utilizzabile da tastiera ha una modalità operativa in cui l&#39;indicatore di messa a fuoco è visibile.
+* Focus visibile: qualsiasi interfaccia utente utilizzabile da tastiera deve avere una modalità operativa in cui sia visibile un indicatore che identifichi l’elemento attivo (o in focus), ossia quello su cui agisce la tastiera.
 
-#### Finalità - Visibile messa a fuoco (2.4.7) {#purpose-focus-visible}
+#### Finalità - Focus visibile (2.4.7) {#purpose-focus-visible}
 
-Lo scopo di questo criterio di successo è aiutare una persona a sapere quale elemento è attivo.
+Lo scopo di questo criterio di successo è aiutare l’utente a individuare l’elemento attivo su cui agisce la tastiera.
 
-Deve essere possibile per una persona sapere quale elemento tra più elementi è attivo. Se sullo schermo è presente un solo controllo utilizzabile da tastiera, il criterio di successo sarà soddisfatto perché il progetto visivo presenta un solo elemento utilizzabile dalla tastiera.
+In presenza di più elementi, l’utente deve poter individuare con facilità l’elemento attivo. Se sullo schermo è presente un solo controllo utilizzabile da tastiera, il criterio di successo sarà soddisfatto perché la progettazione visiva presenta un solo elemento utilizzabile da tastiera.
 
-Se il criterio di successo dice &quot;modalità di funzionamento&quot;, questo è dovuto alle piattaforme che potrebbero non sempre mostrare un indicatore di messa a fuoco. Nella maggior parte dei casi esiste una sola modalità di funzionamento, pertanto questo criterio di successo si applica.
+Nei punti in cui il criterio di successo indica “modalità operativa”, si fa riferimento alle piattaforme che potrebbero non sempre mostrare un indicatore dell’elemento attivo. Nella maggior parte dei casi, è disponibile una sola modalità operativa, pertanto questo criterio di successo è già soddisfatto.
 
-#### Come soddisfare il criterio - Visibile messa a fuoco (2.4.7) {#how-to-meet-focus-visible}
+#### Come soddisfare il criterio - Focus visibile (2.4.7) {#how-to-meet-focus-visible}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible).
 
-#### Ulteriori informazioni - Visibile messa a fuoco (2.4.7) {#more-information-focus-visible}
+#### Ulteriori informazioni - Focus visibile (2.4.7) {#more-information-focus-visible}
 
 * [Comprendere i criteri di successo 2.4.7](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)
 * [Come soddisfare i criteri di successo 2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible)
 
-## Principio 3: Comprensibilità  {#principle-understandable}
+## Principio 3: Comprensibile  {#principle-understandable}
 
-[Principio 3: Comprensibilità - Le informazioni e le operazioni dell’interfaccia devono essere comprensibili.](https://www.w3.org/TR/WCAG/#understandable)
+[Principio 3: Comprensibile - Le informazioni e le operazioni dell’interfaccia devono essere comprensibili.](https://www.w3.org/TR/WCAG/#understandable)
 
 ### Rendere il testo leggibile e comprensibile (3.1)  {#make-text-content-readable-and-understandable}
 
-[Linea guida 3.1 - Leggibilità: rendere il testo leggibile e comprensibile.](https://www.w3.org/TR/WCAG/#readable)
+[Linea guida 3.1 - Leggibile: rendere il testo leggibile e comprensibile.](https://www.w3.org/TR/WCAG/#readable)
 
 ### Lingua della pagina (3.1.1)  {#language-of-page}
 
@@ -993,13 +995,13 @@ In AEM, the default language of your page is set when creating the page, but may
 * [Come soddisfare il criterio di successo 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
 * I codici sono basati su ISO 639-1. Un elenco più completo dei codici per ogni lingua è reperibile sul [sito W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
-### Lingua delle parti (3.1.2)    {#language-of-parts}
+### Parti in lingua (3.1.2)    {#language-of-parts}
 
 * Criterio di successo 3.1.2
 * Livello AA
-* Lingua delle parti: la lingua di ogni passaggio o frase nel contenuto può essere determinata a livello di programmazione, fatta eccezione per nomi propri, termini tecnici, parole in lingue indeterminate e parole o frasi che sono diventate parte del gergo del testo immediatamente circostante.
+* Parti in lingua: la lingua di ogni passaggio o frase nel contenuto può essere determinata a livello di programmazione, fatta eccezione per nomi propri, termini tecnici, parole in lingue indeterminate e parole o frasi che sono diventate parte del gergo del testo immediatamente circostante.
 
-#### Finalità - Lingua delle parti (3.1.2)  {#purpose-language-of-parts}
+#### Finalità - Parti in lingua (3.1.2)  {#purpose-language-of-parts}
 
 Lo scopo di questo criterio di successo è simile a quello del criterio [Lingua della pagina](#language-of-page), ma si applica a pagine web con contenuti multilingue all’interno di una singola pagina (ad esempio, a causa di citazioni o prestiti lessicali non comuni).
 
@@ -1009,7 +1011,7 @@ Le pagine che applicano questo criterio di successo consentono:
 * Gli assistenti vocali pronunciano le parole che hanno caratteri speciali o che non sono nella lingua predefinita identificata a livello di pagina.
 * Traduzione corretta del contenuto da una lingua all’altra da parte di strumenti di traduzione come Google Translate.
 
-#### Come soddisfare il criterio - Lingua delle parti (3.1.2)  {#how-to-meet-language-of-parts}
+#### Come soddisfare il criterio - Parti in lingua (3.1.2)  {#how-to-meet-language-of-parts}
 
 L’attributo `lang` può essere utilizzato per identificare le modifiche nella lingua del contenuto. Ad esempio, una citazione in tedesco (codice ISO 639-1 “de”) può essere mostrata come segue:
 
@@ -1038,138 +1040,138 @@ Per aggiungere l’elemento span con una lingua appropriata, è possibile modifi
 To add the span element, with an appropriate language, you can manually edit your HTML markup in the source edit mode of the RTE so that it reads as above. Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-#### Ulteriori informazioni - Lingua delle parti (3.1.2) {#more-information-language-of-parts}
+#### Ulteriori informazioni - Parti in lingua (3.1.2) {#more-information-language-of-parts}
 
 * [Comprendere il criterio di successo 3.1.2](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html)
 * [Come soddisfare il criterio di successo 3.1.2](https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts)
 
 ### Prevedibile (3.2) {#predictable}
 
-[Linea guida 3.2 Prevedibile: Le pagine Web vengono visualizzate e funzionano in modo prevedibile.](https://www.w3.org/TR/WCAG/#predictable)
+[Linea guida 3.2 - Prevedibile: creare pagine web che abbiano aspetto e funzionamento prevedibili.](https://www.w3.org/TR/WCAG/#predictable)
 
-In questo modo si garantisce che le pagine Web siano coerenti nell’aspetto e nel funzionamento.
+In questo modo si garantisce che le pagine web siano coerenti nell’aspetto e nel funzionamento.
 
-### Attiva (3.2.1)  {#on-focus}
+### Al focus (3.2.1) {#on-focus}
 
 * Criterio di successo 3.2.1
 * Livello A
-* Attiva: Quando un componente dell’interfaccia utente viene attivato, non viene attivato alcun cambiamento di contesto.
+* Al focus: quando un componente dell’interfaccia utente viene attivato (viene portato in focus), non deve innescare un cambiamento del contesto.
 
-#### Finalità - Attiva (3.2.1) {#purpose-on-focus}
+#### Finalità - Al focus (3.2.1) {#purpose-on-focus}
 
-L’obiettivo di questo criterio di successo è garantire che le funzionalità siano prevedibili man mano che i visitatori si spostano all’interno di un documento. Qualsiasi componente in grado di attivare un evento quando riceve lo stato attivo non deve modificare il contesto. Esempi di modifica del contesto in cui un componente riceve lo stato attivo includono, tra l’altro:
+L’obiettivo di questo criterio di successo è garantire prevedibilità durante la navigazione in un documento. Un componente che, se attivato, possa innescare un evento non dovrà determinare un cambiamento del contesto. Esempi di cambiamento del contesto quando un componente diventa attivo:
 
-* i moduli inviati automaticamente quando un componente viene messo a fuoco;
-* nuove finestre avviate quando un componente riceve lo stato attivo;
-* lo stato attivo è cambiato in un altro componente quando il componente viene messo a fuoco;
+* moduli inviati automaticamente quando un componente diventa attivo;
+* nuove finestre aperte quando un componente diventa attivo;
+* stato di attivazione che passa a un altro componente quando un componente diventa attivo.
 
-Lo stato attivo può essere spostato su un controllo tramite la tastiera (ad esempio, il tasto di tabulazione su un controllo) o il mouse (ad esempio, il clic su un campo di testo). Lo spostamento del mouse su un controllo non determina lo spostamento dello stato attivo, a meno che questo comportamento non venga implementato mediante script. Per alcuni tipi di controlli, fare clic su un controllo può anche attivare il controllo (ad es. pulsante), che a sua volta può avviare una modifica nel contesto.
+Lo stato di attivazione può essere passato a un altro controllo tramite la tastiera (ad esempio, tasto Tab per passare da un controllo all’altro) o il mouse (ad esempio, clic su un campo di testo). Lo spostamento del mouse su un controllo non ne determina l’attivazione, a meno che questo comportamento non venga implementato mediante script. Tieni presente che alcuni tipi di controlli usano il clic per attivare il controllo (ad esempio, un pulsante), che a sua volta determina un cambiamento del contesto.
 
-#### Come soddisfare il criterio - Attiva (3.2.1) {#how-to-meet-on-focus}
+#### Come soddisfare il criterio - Al focus (3.2.1) {#how-to-meet-on-focus}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus).
 
-#### Ulteriori informazioni - Attiva (3.2.1) {#more-information-on-focus}
+#### Ulteriori informazioni - Al focus (3.2.1) {#more-information-on-focus}
 
 * [Comprendere i criteri di successo 3.2.1](https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html)
 * [Come soddisfare i criteri di successo 3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus)
 
-### On Input (3.2.2)  {#on-input}
+### All’input (3.2.2) {#on-input}
 
 * Criterio di successo 3.2.2
 * Livello A
-* In ingresso: La modifica dell’impostazione di un componente dell’interfaccia utente non causa automaticamente un cambiamento di contesto, a meno che l’utente non sia stato informato del comportamento prima di usare il componente.
+* All’input: cambiare l’impostazione di un componente nell’interfaccia non provoca automaticamente un cambiamento di contesto, a meno che l’utente non sia stato informato del comportamento prima di utilizzare il componente.
 
-#### Finalità - On Input (3.2.2) {#purpose-on-input}
+#### Finalità - All’input (3.2.2) {#purpose-on-input}
 
-L&#39;obiettivo di questo criterio di successo è garantire che l&#39;immissione dei dati o la selezione di un controllo modulo producano effetti prevedibili. La modifica dell&#39;impostazione di un componente dell&#39;interfaccia utente comporta la modifica di alcuni aspetti del controllo che persisteranno quando l&#39;utente non interagisce più con esso. Selezionando una casella di controllo, immettendo del testo in un campo di testo o modificando l&#39;opzione selezionata in un controllo elenco si modifica l&#39;impostazione, ma non attivando un collegamento o un pulsante. Le modifiche nel contesto possono confondere gli utenti che non percepiscono facilmente il cambiamento o che sono facilmente distratti dai cambiamenti. Le modifiche del contesto sono appropriate solo quando è chiaro che tale modifica verrà eseguita in risposta all&#39;azione dell&#39;utente.
+L’obiettivo di questo criterio di successo è garantire che l’immissione dei dati o la selezione di un controllo di un modulo produca un effetto prevedibile. La modifica dell’impostazione di qualsiasi componente dell’interfaccia comporta la modifica di alcuni aspetti del controllo che persistono quando l’utente non interagisce più con il componente. Ad esempio, se l’utente seleziona una casella di controllo, immette del testo in un campo di testo o modifica un’opzione selezionata in un elenco, modifica l’impostazione del componente. Tuttavia, se l’utente attiva un collegamento o un pulsante, non viene modificata alcuna impostazione. I cambiamenti di contesto possono confondere gli utenti che non percepiscono facilmente il cambiamento o che sono facilmente distratti dai cambiamenti. Il cambiamento di contesto è appropriato solo nei casi in cui è chiaro che tale modifica viene eseguita in risposta all’azione dell’utente.
 
-#### Come soddisfare il criterio - On Input (3.2.2) {#how-to-meet-on-input}
+#### Come soddisfare il criterio - All’input (3.2.2) {#how-to-meet-on-input}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input).
 
-#### Ulteriori informazioni - In ingresso (3.2.2) {#more-information-on-input}
+#### Ulteriori informazioni - All’input (3.2.2) {#more-information-on-input}
 
 * [Comprendere i criteri di successo 3.2.2](https://www.w3.org/WAI/WCAG21/Understanding/on-input.html)
 * [Come soddisfare i criteri di successo 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input)
 
-### Navigazione coerente (3.2.3)  {#consistent-navigation}
+### Navigazione coerente (3.2.3) {#consistent-navigation}
 
 * Criterio di successo 3.2.3
 * Livello AA
-* Navigazione coerente: I meccanismi di navigazione ripetuti su più pagine Web all&#39;interno di un set di pagine Web vengono eseguiti nello stesso ordine relativo ogni volta che vengono ripetuti, a meno che l&#39;utente non avvii una modifica.
+* Navigazione coerente: i meccanismi di navigazione che sono ripetuti su più pagine all’interno di un insieme di pagine web, appaiono nello stesso ordine relativo ogni volta che si ripetono, a meno che un cambiamento sia stato avviato da un utente.
 
 #### Finalità - Navigazione coerente (3.2.3) {#purpose-consistent-navigation}
 
-L’obiettivo di questo criterio di successo è incoraggiare l’uso di presentazioni e layout coerenti per gli utenti che interagiscono con contenuti ripetuti all’interno di una serie di pagine Web e che devono individuare informazioni o funzionalità specifiche più volte. Gli individui con problemi di vista che utilizzano l&#39;ingrandimento dello schermo per visualizzare una piccola parte dello schermo alla volta spesso utilizzano riferimenti visivi e bordi delle pagine per individuare rapidamente contenuti ripetuti. Presentare contenuti ripetuti nello stesso ordine è importante anche per gli utenti visivi che utilizzano la memoria spaziale o segnali visivi all&#39;interno della progettazione per individuare contenuti ripetuti.
+L’obiettivo di questo criterio di successo è incoraggiare l’uso di presentazioni e layout coerenti per gli utenti che interagiscono con contenuti ripetuti all’interno di un insieme di pagine web e che devono individuare informazioni o funzionalità specifiche più di una volta. Le persone ipovedenti che utilizzano l’ingrandimento dello schermo per visualizzare una piccola parte dello schermo alla volta spesso utilizzano riferimenti visivi o i margini della pagina per individuare rapidamente contenuti ripetuti. Presentare contenuti ripetuti nello stesso ordine è importante anche per gli utenti che si basano su elementi visivi e utilizzano la memoria spaziale o indicazioni visive all’interno del layout per individuare contenuti ripetuti.
 
-È importante notare che l&#39;uso della frase &quot;stesso ordine&quot; in questa sezione non implica l&#39;impossibilità di utilizzare i menu di navigazione secondaria o l&#39;impossibilità di utilizzare i blocchi di navigazione secondaria o la struttura della pagina. Questo criterio di successo è invece destinato ad aiutare gli utenti che interagiscono con contenuti ripetuti su più pagine Web a prevedere la posizione del contenuto che stanno cercando e a trovarlo più rapidamente quando lo incontrano di nuovo.
+È importante notare che l’uso dell’espressione “stesso ordine” in questa sezione non implica l’impossibilità di utilizzare i menu o i blocchi di navigazione secondaria, né la struttura della pagina. Questo criterio di successo ha lo scopo di aiutare gli utenti che interagiscono con contenuti ripetuti in più pagine web a prevedere la posizione del contenuto che stanno cercando e a trovarlo più rapidamente quando lo incontrano di nuovo.
 
-Gli utenti possono avviare una modifica nell’ordine utilizzando agenti utente adattivi o impostando le preferenze in modo che le informazioni vengano presentate nel modo più utile per loro.
+Gli utenti possono avviare una modifica dell’ordine utilizzando agenti utente adattivi o impostando le preferenze in modo che le informazioni vengano presentate nel modo più utile per loro.
 
 #### Come soddisfare il criterio - Navigazione coerente (3.2.3) {#how-to-meet-consistent-navigation}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation).
 
 #### Ulteriori informazioni - Navigazione coerente (3.2.3) {#more-information-consistent-navigation}
 
 * [Comprendere i criteri di successo 3.2.3](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html)
 * [Come soddisfare i criteri di successo 3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation)
 
-### Identificazione coerente (3.2.4)  {#consistent-identification}
+### Identificazione coerente (3.2.4) {#consistent-identification}
 
 * Criterio di successo 3.2.4
 * Livello A
-* Identificazione coerente: I componenti con la stessa funzionalità all&#39;interno di un set di pagine Web vengono identificati in modo coerente.
+* Identificazione coerente: i componenti che hanno la stessa funzionalità all’interno di un insieme di pagine web sono identificati in modo coerente.
 
 #### Finalità - Identificazione coerente (3.2.4) {#purpose-consistent-identification}
 
-L&#39;obiettivo di questo criterio di successo è garantire un&#39;identificazione coerente dei componenti funzionali che vengono visualizzati ripetutamente all&#39;interno di un set di pagine Web. Una strategia che gli utenti che utilizzano gli assistenti vocali utilizzano quando gestiscono un sito Web consiste nel fare molta affidamento sulla loro familiarità con le funzioni che possono essere visualizzate su diverse pagine Web. Se funzioni identiche hanno etichette diverse (o, più in generale, un nome accessibile diverso) su pagine Web diverse, il sito sarà molto più difficile da usare. Può anche confondere e aumentare il carico cognitivo per le persone con limitazioni cognitive. Di conseguenza, un&#39;etichettatura coerente sarà di aiuto.
+L’obiettivo di questo criterio di successo è garantire un’identificazione coerente dei componenti funzionali che vengono visualizzati ripetutamente all’interno di un insieme di pagine web. Una strategia sfruttata dagli utenti che usano utilità per la lettura dello schermo per l’utilizzo di un sito web è quella di fare affidamento sulla familiarità con le funzioni che possono apparire in diverse pagine web. Se funzioni identiche hanno etichette diverse (o, più in generale, un nome accessibile diverso) in pagine web diverse, il sito sarà molto più difficile da usare. Questa situazione potrebbe confondere o aumentare il carico cognitivo anche per le persone con limitazioni cognitive. Di conseguenza, l’utilizzo di etichette in modo coerente sarà di aiuto.
 
-Questa coerenza si estende alle alternative testuali. Se le icone o altri elementi non testuali hanno la stessa funzionalità, anche le alternative testuali devono essere coerenti.
+La coerenza va estesa anche alle alternative testuali. Se le icone o altri elementi non testuali hanno la stessa funzionalità, anche le alternative testuali devono essere coerenti.
 
-Se in una pagina Web sono presenti due componenti che hanno entrambe le stesse funzionalità di un componente in un’altra pagina di un set di pagine Web, tutti e tre devono essere coerenti. Pertanto, i due elementi sulla stessa pagina saranno coerenti.
+Se in una pagina web sono presenti due componenti entrambi con le stesse funzionalità di un componente in un’altra pagina di un insieme di pagine web, tutti e tre i componenti devono essere coerenti. Pertanto, i due componenti nella stessa pagina saranno coerenti.
 
-Anche se è consigliabile e si consiglia sempre di essere coerenti all&#39;interno di una singola pagina Web, 3.2.4 risolve solo la coerenza all&#39;interno di un set di pagine Web in cui un elemento viene ripetuto su più pagine del set.
+La best practice consigliata è la coerenza all’interno di una singola pagina web, il criterio di successo 3.2.4 richiede la coerenza all’interno di un insieme di pagine web solo nel caso in cui un componente sia ripetuto in più pagine dell’insieme.
 
 #### Come soddisfare il criterio - Identificazione coerente (3.2.4) {#how-to-meet-consistent-identification}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 3.2.4](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.2.4](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification).
 
 #### Ulteriori informazioni - Identificazione coerente (3.2.4) {#more-information-consistent-identification}
 
 * [Comprendere i criteri di successo 3.2.4](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html)
 * [Come soddisfare i criteri di successo 3.2.4](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification)
 
-### Assistenza in ingresso (3.3) {#input-assistance}
+### Assistenza nell’inserimento (3.3) {#input-assistance}
 
-[Linea guida 3.3 - Assistenza nell’inserimento: aiutare gli utenti a evitare e correggere gli errori.](https://www.w3.org/TR/WCAG/#input-assistance)
+[Linea guida 3.3 - Assistenza nell’inserimento: aiutare gli utenti a evitare gli errori e agevolarli nella loro correzione.](https://www.w3.org/TR/WCAG/#input-assistance)
 
-### Identificazione errore (3.3.1)  {#error-identification}
+### Identificazione di errori (3.3.1) {#error-identification}
 
 * Criterio di successo 3.3.1
 * Livello A
-* Identificazione errore: Se viene rilevato automaticamente un errore di input, l&#39;elemento in errore viene identificato e l&#39;errore viene descritto all&#39;utente nel testo.
+* Identificazione di errori: se viene rilevato automaticamente un errore di inserimento, l’elemento in errore viene identificato e l’errore viene descritto tramite testo.
 
-#### Finalità - Identificazione degli errori (3.3.1) {#purpose-error-identification}
+#### Finalità - Identificazione di errori (3.3.1) {#purpose-error-identification}
 
-L&#39;intento di questo criterio di successo è garantire che gli utenti siano consapevoli che si è verificato un errore e possano determinare cosa sia sbagliato. Il messaggio di errore deve essere il più specifico possibile. In caso di invio non riuscito del modulo, la visualizzazione del modulo e l&#39;indicazione dei campi in errore non sono sufficienti per consentire ad alcuni utenti di rilevare che si è verificato un errore. Gli utenti di utilità di lettura dello schermo, ad esempio, non saranno a conoscenza dell&#39;esistenza di un errore finché non incontreranno uno degli indicatori. È possibile che abbandonino completamente il modulo prima di incontrare l&#39;indicatore di errore, ritenendo che la pagina semplicemente non funzioni. Per definizione in WCAG 2.0, un &quot;errore di input&quot; è costituito dalle informazioni fornite dall&#39;utente che non sono accettate. Ciò include:
+L’obiettivo di questo criterio di successo è garantire che gli utenti siano informati della presenza di un errore e possano comprendere quale sia l’anomalia. Il messaggio di errore deve essere il più specifico possibile. In caso di un invio non riuscito di un modulo, la visualizzazione ripetuta del modulo e l’indicazione dei campi che presentano l’errore non sono sufficienti per consentire a tutti gli utenti di comprendere che si è verificato un errore. Le persone che usano un’utilità di lettura dello schermo, ad esempio, non potranno sapere che si è verificato un errore finché non incontrano uno degli indicatori di errore. È possibile che abbandonino completamente il modulo prima di incontrare l’indicatore di errore, ritenendo che la pagina semplicemente non funzioni. In WCAG 2.0, con “errore di inserimento” si intende un errore causato da informazioni fornite dall’utente che non vengono accettate dal sistema. Ciò include:
 
-le informazioni richieste dalla pagina Web ma omesse dall&#39;utente, o quelle fornite dall&#39;utente ma che non rientrano nel formato dati richiesto o nei valori consentiti.
-Ad esempio:
+informazioni richieste dalla pagina web ma omesse dall’utente oppure dati forniti dall’utente non conformi al formato richiesto o che non rientrano nei valori consentiti.
+Esempi:
 
-* l&#39;utente non inserisce l&#39;abbreviazione corretta in stato, provincia, regione, ecc. field;
-* l&#39;utente immette un&#39;abbreviazione di stato non valida;
-* l&#39;utente immette un codice postale o postale inesistente;
-* l&#39;utente immette una data di nascita 2 anni in futuro;
-* l&#39;utente immette caratteri alfabetici o parentesi nel campo relativo al numero di telefono che accetta solo numeri;
-* l&#39;utente inserisce un&#39;offerta inferiore all&#39;offerta precedente o all&#39;incremento dell&#39;offerta minima.
+* l’utente immette un’abbreviazione non corretta nei campi Stato, Provincia, Regione o in un altro campo;
+* l’utente immette nel campo Stato un’abbreviazione che non corrisponde a uno stato valido;
+* l’utente immette un codice postale inesistente;
+* l’utente immette una data di nascita collocata nel futuro;
+* l’utente immette caratteri alfabetici o parentesi nel campo relativo al numero di telefono che accetta solo numeri;
+* l’utente immette un’offerta inferiore all’offerta precedente o all’incremento dell’offerta minima.
 
-#### Come soddisfare il criterio - Identificazione degli errori (3.3.1) {#how-to-meet-error-identification}
+#### Come soddisfare il criterio - Identificazione di errori (3.3.1) {#how-to-meet-error-identification}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 3.3.1](https://www.w3.org/WAI/WCAG21/quickref/#error-identification).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.3.1](https://www.w3.org/WAI/WCAG21/quickref/#error-identification).
 
-#### Ulteriori informazioni - Identificazione degli errori (3.3.1) {#more-information-error-identification}
+#### Ulteriori informazioni - Identificazione di errori (3.3.1) {#more-information-error-identification}
 
 * [Comprendere i criteri di successo 3.3.1](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html)
 * [Come soddisfare i criteri di successo 3.3.1](https://www.w3.org/WAI/WCAG21/quickref/#error-identification)
@@ -1224,108 +1226,111 @@ Nei moduli semplici con funzionalità molto limitata, l’etichettatura appropri
 * [Comprendere il criterio di successo 3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
 * [Come soddisfare il criterio di successo 3.3.2](https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions)
 
-### Suggerimento errori (3.3.3)  {#error-suggestion}
+### Suggerimenti per gli errori (3.3.3) {#error-suggestion}
 
 * Criterio di successo 3.3.3
 * Livello AA
-* Tastiera: Se viene rilevato automaticamente un errore di input e i suggerimenti per la correzione sono noti, i suggerimenti vengono forniti all&#39;utente, a meno che ciò non comprometta la sicurezza o lo scopo del contenuto.
+* Tastiera: se viene identificato un errore di inserimento e sono noti dei suggerimenti per correggerlo, tali suggerimenti vengono forniti all’utente, a meno che ciò non pregiudichi la sicurezza o la finalità del contenuto.
 
-#### Finalità - Suggerimento errori (3.3.3) {#purpose-error-suggestion}
+#### Finalità - Suggerimenti per gli errori (3.3.3) {#purpose-error-suggestion}
 
-L&#39;obiettivo di questo criterio di successo è garantire che gli utenti ricevano suggerimenti appropriati per la correzione di un errore di input, se possibile. La definizione WCAG 2.0 di &quot;errore di input&quot; indica che si tratta di &quot;informazioni fornite dall&#39;utente che non sono accettate&quot; dal sistema. Alcuni esempi di informazioni non accettate includono informazioni obbligatorie ma omesse dall&#39;utente e informazioni fornite dall&#39;utente ma che non rientrano nel formato dati richiesto o nei valori consentiti.
+L’obiettivo di questo criterio di successo è garantire che gli utenti ricevano suggerimenti appropriati per la correzione di un errore di inserimento, se possibile. La definizione WCAG 2.0 di “errore di inserimento” indica che si tratta di informazioni fornite dall’utente che non sono accettate dal sistema. Alcuni esempi di informazioni non accettate includono informazioni obbligatorie ma omesse dall’utente e informazioni fornite dall’utente ma che non rientrano nel formato dati richiesto o nei valori consentiti.
 
-Il criterio di successo 3.3.1 prevede la notifica degli errori. Tuttavia, le persone con limitazioni cognitive possono trovare difficile capire come correggere gli errori. Le persone con disabilità visive potrebbero non essere in grado di capire esattamente come correggere l&#39;errore. In caso di invio non riuscito del modulo, gli utenti possono abbandonare il modulo perché potrebbero non essere sicuri di come correggere l&#39;errore, anche se sono consapevoli che si è verificato.
+Il criterio di successo 3.3.1 prevede la notifica degli errori. Tuttavia, le persone con limitazioni cognitive potrebbero avere difficoltà a capire come correggere gli errori. Le persone con disabilità visive potrebbero non essere in grado di capire esattamente come correggere l’errore. In caso di invio non riuscito del modulo, gli utenti potrebbero abbandonare il modulo perché non sanno come correggere l’errore, anche se sono consapevoli che si è verificato un problema.
 
-L&#39;autore del contenuto può fornire la descrizione dell&#39;errore, oppure l&#39;agente utente può fornire la descrizione dell&#39;errore in base a informazioni specifiche per la tecnologia e determinate a livello di programmazione.
+L’autore del contenuto può fornire la descrizione dell’errore oppure l’agente utente può fornire la descrizione dell’errore in base a informazioni specifiche per la tecnologia e determinate a livello di programmazione.
 
-#### Come soddisfare il criterio - Suggerimento errori (3.3.3) {#how-to-meet-error-suggestion}
+#### Come soddisfare il criterio - Suggerimenti per gli errori (3.3.3) {#how-to-meet-error-suggestion}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 3.3.3](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.3.3](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion).
 
-#### Ulteriori informazioni - Suggerimento errori (3.3.3) {#more-information-error-suggestion}
+#### Ulteriori informazioni - Suggerimenti per gli errori (3.3.3) {#more-information-error-suggestion}
 
 * [Comprendere i criteri di successo 3.3.3](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html)
 * [Come soddisfare i criteri di successo 3.3.3](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion)
 
-### Prevenzione degli errori (legale, finanziario, dati) (3.3.4)  {#error-prevention-legal-financial-data}
+### Prevenzione degli errori (legali, finanziari, dati) (3.3.4) {#error-prevention-legal-financial-data}
 
 * Criterio di successo 3.3.4
 * Livello AA
-* Prevenzione degli errori (legale, finanziario, dati): Per le pagine Web che causano impegni legali o transazioni finanziarie per l&#39;utente, che modificano o eliminano dati controllabili dall&#39;utente nei sistemi di memorizzazione dei dati, o che inviano risposte di test agli utenti, almeno una delle seguenti affermazioni è vera:
+* Prevenzione degli errori (legali, finanziari, dati): per le pagine web che contengono vincoli di tipo giuridico o transazioni finanziarie per l’utente che gestiscono la modifica o la cancellazione e gestione di dati controllabili dall’utente in un sistema di archiviazione oppure che inoltrano le risposte degli utenti a test, è soddisfatta almeno una delle seguenti condizioni:
 
-   * ReversibleSubmission è reversibile.
-   * CheckedData immesso dall&#39;utente viene controllato per verificare la presenza di errori di input e l&#39;utente ha l&#39;opportunità di correggerli.
-   * È disponibile un meccanismo di revisione, conferma e correzione delle informazioni prima di finalizzare l’invio.
+   * Reversibilità
+Le azioni sono reversibili.
+   * Controllo
+I dati inseriti dall’utente vengono verificati e all’utente viene data l’opportunità di correggere gli errori.
+   * Conferma
+È disponibile un meccanismo per la revisione, conferma e correzione delle informazioni prima del loro invio definitivo.
 
-#### Finalità - Prevenzione degli errori (legale, finanziario, dati) (3.3.4) {#purpose-error-prevention-legal-financial-data}
+#### Finalità - Prevenzione degli errori (legali, finanziari, dati) (3.3.4) {#purpose-error-prevention-legal-financial-data}
 
-L&#39;obiettivo di questo criterio di successo è aiutare gli utenti con disabilità ad evitare gravi conseguenze a seguito di un errore durante l&#39;esecuzione di un&#39;azione che non può essere annullata. Ad esempio, l&#39;acquisto di biglietti aerei non rimborsabili o l&#39;invio di un ordine di acquisto in un conto di intermediazione sono transazioni finanziarie con gravi conseguenze. Se un utente ha commesso un errore alla data del viaggio aereo, potrebbe finire con un biglietto per la giornata sbagliata che non può essere scambiato. Se l&#39;utente ha commesso un errore sul numero di azioni da acquistare, potrebbe finire per acquistare più azioni del previsto. Entrambi questi tipi di errori implicano transazioni che avvengono immediatamente e che non possono essere successivamente alterate, e possono essere molto costose. Allo stesso modo, potrebbe essere un errore irreversibile se gli utenti modificano o eliminano involontariamente i dati memorizzati in un database a cui successivamente hanno bisogno di accedere, ad esempio l&#39;intero profilo di viaggio in un sito Web dei servizi di viaggio. Quando si fa riferimento alla modifica o eliminazione di dati &#39;controllabili dall&#39;utente&#39;, l&#39;intento è quello di impedire la perdita di massa di dati come l&#39;eliminazione di un file o di un record. Non è intenzione richiedere una conferma per ogni comando Salva o la semplice creazione o modifica di documenti, record o altri dati.
+L’obiettivo di questo criterio di successo è aiutare gli utenti con disabilità a evitare gravi conseguenze in seguito a un errore durante l’esecuzione di un’azione che non può essere annullata. Ad esempio, l’acquisto di biglietti aerei non rimborsabili o l’invio di un ordine per l’acquisto di azioni in un conto di intermediazione sono transazioni finanziarie con conseguenze importanti. Se un utente commette un errore nella data del viaggio aereo, potrebbe acquistare un biglietto non modificabile per il giorno sbagliato. Se commette un errore nell’indicare il numero di azioni da acquistare, potrebbe acquistare un numero di azioni superiori al previsto. Entrambi questi tipi di errori implicano transazioni immediate, che non possono essere successivamente modificate e che possono avere conseguenze molto costose. In modo simile, può essere considerato errore irreversibile la modifica o l’eliminazione accidentale da parte dell’utente di dati memorizzati in un database a cui potrebbe avere bisogno di accedere successivamente, ad esempio l’intero profilo di viaggio in un sito web dei servizi di viaggio. Con il riferimento alla modifica o all’eliminazione di dati “controllabili dall’utente” si intende evitare la perdita di massa di dati, ad esempio a causa dell’eliminazione di un file o un record. Non si intende chiedere conferma per ogni comando Salva o per la semplice creazione o modifica di documenti, record o altri dati.
 
-Gli utenti con disabilità possono avere più probabilità di commettere errori. Le persone con disabilità di lettura possono trasporre numeri e lettere, e le persone con disabilità motorie possono colpire le chiavi per errore. La possibilità di annullare le azioni consente agli utenti di correggere un errore che potrebbe causare gravi conseguenze. La possibilità di rivedere e correggere le informazioni offre all&#39;utente l&#39;opportunità di rilevare un errore prima di intraprendere un&#39;azione che ha gravi conseguenze.
+Per gli utenti con disabilità, la probabilità di commettere degli errori è maggiore. Le persone con disabilità di lettura potrebbero scambiare numeri e lettere, le persone con disabilità motorie potrebbero premere un tasto accidentalmente. La possibilità di annullare le azioni consente agli utenti di correggere un errore che potrebbe causare gravi conseguenze. La possibilità di rivedere e correggere le informazioni offre all’utente l’opportunità di rilevare un errore prima di intraprendere un’azione che comporta gravi conseguenze.
 
-I dati controllabili dall’utente sono dati visualizzabili dall’utente che l’utente può modificare e/o eliminare mediante un’azione intenzionale. Esempi di come l&#39;utente che controlla tali dati sono l&#39;aggiornamento del numero di telefono e dell&#39;indirizzo del conto dell&#39;utente, o l&#39;eliminazione di un record di fatture passate da un sito Web. Non fa riferimento ad argomenti quali i log di internet e i dati di monitoraggio dei motori di ricerca che l&#39;utente non può visualizzare o con cui interagire direttamente.
+I dati controllabili dall’utente sono dati visualizzabili dall’utente che possono essere modificati e/o eliminati mediante un’azione intenzionale dell’utente stesso. Esempi di operazioni che interessano tali dati sono l’aggiornamento del numero di telefono e dell’indirizzo dell’account dell’utente o l’eliminazione di un record di fatture precedenti in un sito web. Non si fa riferimento a elementi quali log di Internet o dati di monitoraggio dei motori di ricerca che l’utente non può visualizzare o con cui non può interagire direttamente.
 
 #### Come soddisfare il criterio - Prevenzione degli errori (legale, finanziario, dati) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 
-Seguite le linee guida in [Come soddisfare i criteri di successo 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data).
 
-#### Ulteriori informazioni - Prevenzione degli errori (legale, finanziario, dati) (3.3.4) {#more-information-error-prevention-legal-financial-data}
+#### Ulteriori informazioni - Prevenzione degli errori (legali, finanziari, dati) (3.3.4) {#more-information-error-prevention-legal-financial-data}
 
 * [Comprendere i criteri di successo 3.3.4](https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html)
 * [Come soddisfare i criteri di successo 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data)
 
 ## Principio 4: Robusto {#principle-robust}
 
-[Principio 4: Robusto: i contenuti devono essere sufficientemente solidi da poter essere interpretati da un&#39;ampia gamma di agenti utente, comprese tecnologie di assistenza.](https://www.w3.org/TR/WCAG/#robust)
+[Principio 4 - Robusto: il contenuto deve essere abbastanza robusto per essere interpretato in maniera affidabile da una grande varietà di programmi utente, comprese le tecnologie per l’accessibilità.](https://www.w3.org/TR/WCAG/#robust)
 
-### Compatible (4.1) {#compatible}
+### Compatibile (4.1) {#compatible}
 
-[Linea guida 4.1 Compatibile: Massimizza la compatibilità con gli agenti utente attuali e futuri, comprese le tecnologie di assistenza.](https://www.w3.org/TR/WCAG/#compatible)
+[Linea guida 4.1 - Compatibile: garantire la massima compatibilità con i programmi utente attuali e futuri, comprese le tecnologie per l’accessibilità.](https://www.w3.org/TR/WCAG/#compatible)
 
-Massimizza la compatibilità con gli agenti utente attuali e futuri, comprese le tecnologie di assistenza.
+Garantire la massima compatibilità con i programmi utente attuali e futuri, comprese le tecnologie per l’accessibilità.
 
-### Analisi (4.1.1)  {#parsing}
+### Analisi sintattica (parsing) (4.1.1) {#parsing}
 
 * Criterio di successo 4.1.1
 * Livello A
-* Analisi: Nel contenuto implementato utilizzando i linguaggi di marcatura, gli elementi dispongono di tag iniziali e finali completi, gli elementi sono nidificati in base alle proprie specifiche, gli elementi non contengono attributi duplicati ed eventuali ID sono univoci, a meno che le specifiche consentano tali funzioni.
+* Analisi sintattica (parsing): nel contenuto implementato utilizzando linguaggi di marcatura, gli elementi possiedono tag di apertura e chiusura completi, sono annidati in conformità alle proprie specifiche, non contengono attributi duplicati e tutti gli ID sono univoci, salvo i casi in cui le specifiche permettano eccezioni.
 
-#### Finalità - Analisi (4.1.1) {#purpose-parsing}
+#### Finalità - Analisi sintattica (parsing) (4.1.1) {#purpose-parsing}
 
-Lo scopo di questo criterio di successo è garantire che gli agenti utente, comprese le tecnologie di assistenza, possano interpretare e analizzare accuratamente il contenuto. Se il contenuto non può essere analizzato in una struttura di dati, diversi agenti utente potrebbero presentarlo in modo diverso o non essere in grado di analizzarlo completamente. Alcuni agenti dell&#39;utente utilizzano &quot;tecniche di riparazione&quot; per eseguire il rendering di contenuto scarsamente codificato.
+Lo scopo di questo criterio di successo è garantire che gli agenti utente, comprese le tecnologie per l’accessibilità, possano interpretare e analizzare in modo preciso il contenuto. Se non è possibile eseguire il parsing del contenuto in una struttura di dati, agenti utente diversi potrebbero presentarlo in modo diverso o non essere in grado di analizzarlo in modo completo. Alcuni agenti utente utilizzano “tecniche di correzione” per eseguire il rendering di contenuto codificato in modo limitato.
 
-Poiché le tecniche di riparazione variano tra gli agenti utente, gli autori non possono presumere che il contenuto verrà analizzato accuratamente in una struttura di dati o che verrà rappresentato correttamente da agenti utente specializzati, comprese le tecnologie di assistenza, a meno che il contenuto non venga creato in base alle regole definite nella grammatica formale per tale tecnologia. Nei linguaggi di marcatura, gli errori nella sintassi di elementi e attributi e la mancata fornitura dei tag start/end nidificati in modo corretto generano errori che impediscono agli agenti utente di analizzare il contenuto in modo affidabile. Pertanto, il criterio di successo richiede che il contenuto possa essere analizzato utilizzando solo le regole della grammatica formale.
+Poiché le tecniche di correzione variano nei diversi agenti utente, gli autori non possono essere certi che il contenuto venga analizzato in modo preciso in una struttura di dati o che ne venga eseguito in rendering corretto da parte di agenti utente specializzati, incluse le tecnologie per l’accessibilità, a meno che il contenuto non venga creato in base alle regole definite nella grammatica formale per tale tecnologia. Nei linguaggi di marcatura, gli errori nella sintassi di elementi e attributi e la mancata fornitura di tag di apertura e chiusura nidificati in modo corretto generano errori che impediscono agli agenti utente di analizzare il contenuto in modo affidabile. Pertanto, il criterio di successo richiede che il contenuto possa essere analizzato utilizzando solo le regole della grammatica formale.
 
-#### Come soddisfare il criterio - Analisi (4.1.1) {#how-to-meet-parsing}
+#### Come soddisfare il criterio - Analisi sintattica (parsing) (4.1.1) {#how-to-meet-parsing}
 
-Seguire le linee guida riportate in [Come soddisfare i criteri di successo 4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing).
 
-#### Ulteriori informazioni - Analisi (4.1.1) {#more-information-parsing}
+#### Ulteriori informazioni - Analisi sintattica (parsing) (4.1.1) {#more-information-parsing}
 
 * [Comprendere i criteri di successo 4.1.1](https://www.w3.org/WAI/WCAG21/Understanding/parsing.html)
 * [Come soddisfare i criteri di successo 4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing)
 
-### Nome, Ruolo, Valore (4.1.2)  {#name-role-value}
+### Nome, ruolo, valore (4.1.2) {#name-role-value}
 
 * Criterio di successo 4.1.2
 * Livello A
-* Nome, Ruolo, Valore: Per tutti i componenti dell’interfaccia utente (compresi, tra l’altro: elementi del modulo, collegamenti e componenti generati da script), il nome e il ruolo possono essere determinati a livello di programmazione; stati, proprietà e valori che possono essere impostati dall&#39;utente a livello di programmazione; e la notifica delle modifiche apportate a questi elementi è disponibile per gli agenti utente, comprese le tecnologie di assistenza.
+* Nome, ruolo, valore: per tutti i componenti dell’interfaccia utente (inclusi ma non limitati a: elementi di un modulo, collegamenti e componenti generati da script), nome e ruolo possono essere determinati programmaticamente; stati, proprietà e valori che possono essere impostati dall’utente possono essere impostabili da programma; e le notifiche sui cambi di stato di questi elementi sono rese disponibili ai programmi utente, incluse le tecnologie per l’accessibilità.
 
-#### Finalità - Nome, Ruolo, Valore (4.1.2) {#purpose-ame-role-value}
+#### Finalità - Nome, ruolo, valore (4.1.2) {#purpose-ame-role-value}
 
-Lo scopo di questo criterio di successo è garantire che Assistive Technologies (AT) possa raccogliere informazioni su, attivare (o impostare) e tenere aggiornato lo stato dei controlli dell&#39;interfaccia utente nel contenuto.
+Lo scopo di questo criterio di successo è garantire che le tecnologie per l’accessibilità (AT, Assistive Technologies) possano raccogliere informazioni sullo stato, nonché attivare (o impostare) e tenere aggiornato lo stato dei controlli dell’interfaccia utente nel contenuto.
 
-Quando si utilizzano controlli standard da tecnologie accessibili, questo processo è semplice. Se gli elementi dell&#39;interfaccia utente vengono utilizzati in base alle specifiche, le condizioni di questa disposizione saranno soddisfatte. (Cfr. esempi di criteri di successo 4.1.2 di seguito)
+Quando si utilizzano controlli standard tramite tecnologie accessibili, questo processo è semplice. Se gli elementi dell’interfaccia utente vengono utilizzati in base alle specifiche, le condizioni di questa indicazione saranno soddisfatte (vedi gli esempi di criteri di successo 4.1.2 di seguito).
 
-Tuttavia, se i controlli personalizzati vengono creati o se gli elementi dell&#39;interfaccia sono programmati (in codice o script) in modo da avere un ruolo e/o una funzione diversi rispetto al normale, è necessario adottare ulteriori misure per garantire che i controlli forniscano informazioni importanti alle tecnologie di assistenza e si permettano di essere controllati dalle tecnologie di assistenza.
+Tuttavia, se vengono creati controlli personalizzati o se gli elementi dell’interfaccia sono programmati (tramite codice o script) in modo da avere un ruolo e/o una funzione diversi rispetto al normale, è necessario adottare ulteriori misure per garantire che i controlli forniscano informazioni importanti alle tecnologie per l’accessibilità e possano essere a loro volta controllati tramite tali tecnologie.
 
-Uno stato particolarmente importante di un controllo dell&#39;interfaccia utente è se è attivo o meno. Lo stato attivo di un controllo può essere determinato a livello di programmazione e le notifiche sul cambiamento di fuoco vengono inviate agli agenti utente e alla tecnologia di supporto. Altri esempi di stato del controllo dell&#39;interfaccia utente sono se è stata selezionata o meno una casella di controllo o un pulsante di scelta, oppure se un nodo di struttura o elenco comprimibile è espanso o compresso.
+Uno stato particolarmente importante di un controllo dell’interfaccia utente è quello di attivazione. Lo stato di attivazione di un controllo può essere determinato a livello di programmazione e le notifiche sul passaggio a un altro elemento attivo vengono inviate agli agenti utente e alla tecnologia per l’accessibilità. Altri esempi di stato del controllo dell’interfaccia utente sono la selezione o meno di una casella di controllo o di un pulsante di scelta, nonché la compressione o espansione di una struttura ad albero o di un nodo di struttura comprimibili.
 
-#### Come soddisfare il criterio - Nome, Ruolo, Valore (4.1.2) {#how-to-meet-ame-role-value}
+#### Come soddisfare il criterio - Nome, ruolo, valore (4.1.2) {#how-to-meet-ame-role-value}
 
-Seguire le linee guida riportate in [Come soddisfare i criteri di successo 4.1.2](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value).
+Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 4.1.2](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value).
 
-#### Ulteriori informazioni - Nome, Ruolo, Valore (4.1.2 {#more-information-ame-role-value}
+#### Ulteriori informazioni - Nome, ruolo, valore (4.1.2 {#more-information-ame-role-value}
 
 * [Comprendere i criteri di successo 4.1.2](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
 * [Come soddisfare i criteri di successo 4.1.2](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value)
