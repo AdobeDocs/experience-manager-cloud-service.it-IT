@@ -1,15 +1,18 @@
 ---
 title: Sistema di stili
 description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: e7efa3739ef386fdff9c86de238c64df09fb845f
+workflow-type: tm+mt
+source-wordcount: '1310'
+ht-degree: 70%
 
 ---
 
 
-# Sistema di stili {#style-system}
+# Sistema di stili{#style-system}
 
-Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
+Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Questi stili possono essere variazioni visive alternative di un componente, rendendo il componente più flessibile.
 
 In questo modo si elimina la necessità di creare un componente personalizzato per ogni stile o di personalizzare la finestra di dialogo del componente per attivare questa funzionalità. Il risultato sono componenti che possono essere riutilizzati più rapidamente e adattati in modo semplice e veloce alle esigenze degli autori di contenuti, senza ricorrere allo sviluppo back-end in AEM.
 
@@ -19,7 +22,7 @@ Gli autori di modelli non solo hanno bisogno della possibilità di configurare i
 
 Allo stesso modo, gli autori di contenuti non solo devono poter strutturare e organizzare i contenuti, ma anche selezionare come presentarlo visivamente.
 
-Il sistema di stili offre una soluzione unificata alle esigenze degli autori di modelli e di contenuti:
+Il sistema Style offre una soluzione unificata ai requisiti dell&#39;autore del modello e dell&#39;autore del contenuto:
 
 * Gli autori di modelli possono definire le classi di stile nel criterio dei contenuti dei componenti.
 * Gli autori di contenuti possono quindi selezionare tali classi da un menu a discesa quando modificano il componente su una pagina, per applicarvi gli stili corrispondenti.
@@ -28,29 +31,37 @@ La classe di stile viene quindi inserita nell’elemento wrapper decorativo del 
 
 ## Panoramica {#overview}
 
-La procedura per l’uso del sistema di stili è simile alla seguente.
+L&#39;utilizzo di Style System in genere ha il seguente modulo.
 
 1. Il web designer crea diverse varianti grafiche di un componente.
+
 1. Allo sviluppatore HTML viene fornito l’output HTML dei componenti e le varianti visive desiderate da implementare.
+
 1. Lo sviluppatore HTML definisce le classi CSS corrispondenti a ciascuna variante visiva da inserire nell’elemento che racchiude i componenti.
+
 1. Lo sviluppatore HTML implementa il codice CSS (ed eventualmente il codice JS) corrispondente per ciascuna delle varianti visive in modo che risultino definite.
+
 1. Lo sviluppatore AEM inserisce il codice CSS fornito (e l’eventuale codice JS) in una libreria client e lo distribuisce. <!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
+
 1. Lo sviluppatore AEM o l’autore di modelli configura i modelli di pagina e modifica il criterio di ciascun componente con stili, aggiungendo le classi CSS definite, assegnando nomi descrittivi a ogni stile e indicando quali stili possono essere combinati.
+
 1. L’autore della pagina AEM può quindi scegliere gli stili progettati nell’editor di pagine tramite il menu degli stili, nella barra degli strumenti del componente.
 
 Solo gli ultimi tre passaggi vengono effettivamente effettuati in AEM. Tutte le operazioni di sviluppo CSS e Javascript necessarie possono essere eseguite senza AEM.
 
 L’implementazione degli stili richiede infatti solo la distribuzione in AEM e la selezione all’interno dei componenti dei modelli desiderati.
 
-Il diagramma seguente illustra l’architettura del sistema di stili.
+Nel diagramma seguente è illustrata l&#39;architettura di Style System.
 
-![Architettura del sistema di stili](/help/sites-cloud/authoring/assets/style-system-architecture.png)
+![sistema aem-style](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
 ## Utilizzo {#use}
 
-Per illustrare l’utilizzo di questa funzione, è necessario creare degli stili per un componente. Nelle sezioni seguenti [Autori di contenuti](#as-a-content-author) e [Autori di modelli](#as-a-template-author) viene descritto come utilizzare la funzionalità del sistema di stili presupponendo che gli stili siano già configurati nei componenti.
+A dimostrazione di questa funzione, come esempio verrà utilizzata l’implementazione [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)del componente [](https://www.adobe.com/go/aem_cmp_title_v2) titolo del componente principale.
 
-Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le seguenti operazioni:
+The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
+
+Se si desidera utilizzare il Sistema di stile per i propri componenti, effettuare le seguenti operazioni:
 
 1. Installa il CSS come librerie client come illustrato nella sezione [Panoramica](#overview).
 1. Configura le classi CSS da rendere disponibili agli autori di contenuti come descritto nella sezione [Autore di modelli](#as-a-template-author).
@@ -58,32 +69,32 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 ### Autore di contenuti  {#as-a-content-author}
 
-1. Modifica una pagina che contiene un componente per il quale è configurato uno stile.
-1. Seleziona un componente con stile configurato, ad esempio il componente **Elenco**.
+1. Dopo aver installato il progetto WKND, andate alla home page della lingua inglese di WKND in `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e modificate la pagina.
+1. Selezionate un componente **Titolo** più in basso nella pagina
 
-   ![Creazione degli stili](/help/sites-cloud/authoring/assets/style-system-author.png)
+   ![Sistema di stile per l&#39;autore](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
 1. Tocca o fai clic sul pulsante **Stili** nella barra degli strumenti del componente **Elenco** per aprire il menu degli stili e modificare l’aspetto del componente.
 
-   ![Creazione degli stili mediante selezione](/help/sites-cloud/authoring/assets/style-system-author-select.png)
+   ![Selezione degli stili](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
    >[!NOTE]
    >
-   >In questo esempio, gli stili **Layout** (**Blocco** e **Griglia**) si escludono a vicenda, mentre le opzioni di **Visualizzazione** (**Immagine** o **Data**) possono essere combinate. Questo può essere [configurato nel modello dall’autore dei modelli](#as-a-template-author).
+   >In questo esempio, gli stili **Colori** (**Nero**, **Bianco** e **Grigio**) si escludono a vicenda, mentre le opzioni **Stile**************(Sottolineato, Allinea a destra, Allinea a destra, MiniSping) possono essere combinate. Tutto questo può essere [configurato nel modello se si è l’autore del modello](#as-a-template-author).
 
 ### Autore di modelli  {#as-a-template-author}
 
-1. Quando modifichi una pagina di contenuto per la quale vuoi configurare gli stili, modifica il modello della pagina tramite **Informazioni pagina -> Modifica modello**.
+1. While editing WKND&#39;s English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -> Edit Template**.
 
-   ![Modifica modello](/help/sites-cloud/authoring/assets/style-system-template.png)
+   ![Modifica modello](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
-1. Per modificare il criterio del componente per il quale vuoi configurare gli stili, ad esempio il componente **Elenco**, tocca o fai clic sul pulsante **Criterio** del componente.
+1. Edit the policy of the **Title** component by tapping or clicking the **Policy** button of the component.
 
-   ![Criterio del componente del modello](/help/sites-cloud/authoring/assets/style-system-template-policy.png)
+   ![Modifica criterio](/help/sites-cloud/authoring/assets/style-system-edit-policy.png)
 
 1. Nella scheda Stili delle proprietà puoi vedere come sono stati configurati gli stili.
 
-   ![Scheda Stili della finestra delle proprietà](/help/sites-cloud/authoring/assets/style-system-template-styles.png)
+   ![Modifica proprietà](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
    * **Nome gruppo:** gli stili possono essere raggruppati all’interno del menu stile che l’autore del contenuto visualizza durante la configurazione dello stile del componente.
    * **Gli stili possono essere combinati:** consente di selezionare diversi stili all’interno del gruppo in una sola volta.
@@ -93,22 +104,37 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 >[!CAUTION]
 >
->Per poter funzionare, le classi CSS (nonché l’eventuale codice Javascript) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come librerie client. <!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>Per poter funzionare, le classi CSS (nonché l’eventuale codice Javascript) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come librerie client.
+
+<!--The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
 
 ## Configurazione {#setup}
 
->[!NOTE]
->
->La versione 2 dei componenti di base include già il supporto per il sistema di stili e non richiede configurazioni aggiuntive.
->
->Segui i passaggi successivi per abilitare i tuoi componenti personalizzati nel sistema di stili o per estendere l’uso della funzione ai componenti di base della versione 1.
+I componenti core versione 2 e successive sono completamente attivati per sfruttare lo Style System e non richiedono alcuna configurazione aggiuntiva.
 
-Affinché un componente possa funzionare con il sistema di stili di AEM e visualizzare la scheda Stili nella finestra di dialogo di progettazione, lo sviluppatore del componente deve includere la scheda del prodotto con le seguenti impostazioni sul componente:
+I passaggi seguenti sono necessari solo per abilitare il Sistema di stile per i propri componenti personalizzati o per [abilitare la scheda Stili facoltativi nella finestra di dialogo Modifica.](#enable-styles-tab-edit)
+
+### Abilita scheda Stile nella finestra di dialogo Progettazione {#enable-styles-tab-design}
+
+Affinché un componente funzioni con il sistema di stile di AEM e visualizzi la scheda di stile nella relativa finestra di dialogo di progettazione, lo sviluppatore deve includere nel componente la scheda di stile con le seguenti impostazioni:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 Con il componente configurato, gli stili configurati dall’autore della pagina vengono automaticamente inseriti da AEM sull’elemento decorativo in cui AEM racchiude in automatico ciascun componente modificabile. Il componente in sé non deve fare altro affinché questo accada.
+
+### Abilita scheda Stili nella finestra di dialogo di modifica {#enable-styles-tab-edit}
+
+È inoltre disponibile una scheda Stili opzionale nella finestra di dialogo Modifica. A differenza della scheda Finestra di dialogo Progettazione, la scheda nella finestra di dialogo Modifica non è essenziale per il funzionamento del sistema di stile, ma è un&#39;interfaccia alternativa opzionale per l&#39;impostazione degli stili da parte dell&#39;autore del contenuto.
+
+La scheda della finestra di dialogo di modifica può essere inclusa in modo simile alla scheda della finestra di dialogo di progettazione:
+
+* `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
+* `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>
+>Per impostazione predefinita, la scheda Stili nella finestra di dialogo Modifica non è abilitata.
 
 ### Stili con nomi di elementi   {#styles-with-element-names}
 
@@ -116,7 +142,7 @@ Uno sviluppatore può anche configurare un elenco di nomi di elementi consentiti
 
 Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 
-* `/apps/wknd/components/content/contentfragment@cq:styleElements=[div,section,span]`
+* `/apps/<yoursite>/components/content/list@cq:styleElements=[div,section,span]`
 
 >[!CAUTION]
 >
