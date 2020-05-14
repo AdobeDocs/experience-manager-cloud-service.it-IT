@@ -2,10 +2,10 @@
 title: Guida rapida alle linee guida WCAG 2.1
 seo-title: Guida rapida alle linee guida WCAG 2.1
 translation-type: tm+mt
-source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 84%
+source-wordcount: '1774'
+ht-degree: 85%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 84%
 
 Adobe Experience Manager (AEM) as a Cloud Service è stato sviluppato per garantire una conformità ottimale alle linee guida per l’accessibilità dei contenuti web.
 
-The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+La [versione 2.1 delle linee guida per l’accessibilità dei contenuti web (WCAG)](https://www.w3.org/TR/WCAG/) è costituita da una serie di indicazioni riconosciute a livello internazionale sviluppate dal [World Wide Web Consortium (W3C)](https://www.w3.org/) nell’ambito dell’iniziativa [WAI (Web Accessibility Initiative)](https://www.w3.org/WAI/).
 
 >[!NOTE]
 > 
@@ -70,7 +70,7 @@ In particolare:
 * Ogni linea guida è costituita da uno o più **criteri di successo**.
 * I criteri di successo sono formulati come istruzioni, che possono essere `True` o `False` per una determinata pagina web.
 * I criteri di successo possono includere una o più opzioni oppure eccezioni, ovvero situazioni in cui non è necessario soddisfare i criteri di successo.
-* I criteri di successo sono numerati in base alla linea guida e al principio padre, da 1.1.1 a 4.1.1. Hanno anche un nome breve che riassume l’intento del criterio, per un riferimento più semplice. Ad esempio, il criterio di successo 1.1.1 è Contenuto non testuale.
+* I criteri di successo sono numerati in base alla linea guida e al principio padre, da 1.1.1 a 4.1.1. Hanno anche un nome breve che riassume l’intento del criterio, per un riferimento più semplice. For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
 * I criteri di successo includono un elenco delle **tecniche** correlate (descritte più in dettaglio di seguito).
 
 ## Risorse di supporto {#supporting-resources}
@@ -92,9 +92,11 @@ L’elenco non è esaustivo, ma fornisce un’introduzione alle risorse disponib
 
 ### Novità delle linee guida WCAG 2.1 {#what-is-new}
 
-[Novità di WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) fornisce informazioni importanti sul delta tra WCAG 2.0 e WCAG 2.1.
+Le linee guida forniscono informazioni sulle novità di WCAG 2.1:
 
-La sezione [WCAG 2.0 e WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) approfondisce ulteriormente il confronto.
+* [Novità di WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) fornisce informazioni importanti sul delta tra WCAG 2.0 e WCAG 2.1.
+
+* La sezione [WCAG 2.0 e WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) approfondisce ulteriormente il confronto.
 
 ### Tecniche per WCAG 2.1 {#techniques-for-wcag}
 
