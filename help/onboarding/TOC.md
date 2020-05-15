@@ -1,7 +1,7 @@
 ---
 sub-product: Onboarding per AEM as a Cloud Service
 user-guide-title: Onboarding per AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
 
 ---
@@ -26,6 +26,6 @@ source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
    + [Preparazione di AEM Foundation per le normative su privacy e protezione dei dati](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [Preparazione di AEM Sites per le normative su privacy e protezione dei dati](data-privacy-and-protection-readiness/sites-readiness.md)
 + Accessibilità {#accessibility}
-   + [AEM come servizio cloud e linee guida per l’accessibilità del Web](accessibility/web-accessibility.md)
+   + [AEM as a Cloud Service e le linee guida per l’accessibilità dei contenuti web](accessibility/web-accessibility.md)
    + [Guida rapida alle linee guida WCAG 2.1](accessibility/quick-guide-wcag.md)
 + [Panoramica delle console Strumenti](tools-consoles.md)
