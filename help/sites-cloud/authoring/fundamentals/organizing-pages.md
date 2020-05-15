@@ -1,7 +1,7 @@
 ---
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
 
 ---
@@ -138,7 +138,7 @@ In AEM, un modello specifica un particolare tipo di pagina e funge da base per l
 
 Il modello definisce la struttura di una pagina, inclusa una miniatura e altre proprietà. Ad esempio, potrai disporre di modelli separati per le pagine di prodotto, le sitemap e le informazioni di contatto. I modelli sono costituiti da [componenti](#components).
 
-Con AEM vengono forniti diversi modelli. I modelli disponibili dipendono dal singolo sito Web. I campi chiave sono i seguenti:
+Con AEM vengono forniti diversi modelli. I modelli disponibili dipendono dal singolo sito web. I campi chiave sono i seguenti:
 
 * **Titolo**
 Il titolo visualizzato nella pagina web risultante.
@@ -247,7 +247,7 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 >
 >La navigazione verso altre pagine dall’Editor pagina è possibile solo in modalità Anteprima, in quanto i collegamenti non sono attivi nella modalità di modifica.
 
-### Copiare e incollare una pagina   {#copying-and-pasting-a-page}
+### Copiare e incollare una pagina  {#copying-and-pasting-a-page}
 
 Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
@@ -265,14 +265,14 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
    >Se sei in modalità di selezione, lascerai tale modalità non appena la pagina viene copiata.
 
 1. Passa al percorso in cui desideri inserire la nuova copia della pagina.
-1. L’icona **Incolla** è disponibile con una freccia a discesa direttamente a destra:
+1. L’icona **Incolla** presenta una freccia a discesa a destra:
 
    ![Incolla](/help/sites-cloud/authoring/assets/paste.png)
 
    Puoi effettuare le seguenti operazioni:
 
-   1. Selezionate l’icona **Incolla** pagina stessa: In questa posizione viene creata una copia della pagina originale e delle eventuali pagine figlie.
-   1. Selezionate la freccia a discesa per visualizzare l’opzione **Incolla senza elementi secondari** . In questa posizione verrà creata una copia della pagina originale; le pagine figlie non verranno copiate.
+   1. Selezionare direttamente l’icona **Incolla** per la pagina. Verrà creata una copia della pagina originale e delle eventuali pagine figlio in questa posizione.
+   1. Selezionare la freccia a discesa per visualizzare l’opzione **Incolla senza elementi secondari**. In questa posizione verrà creata una copia della pagina originale, mentre le pagine figlio non verranno copiate.
    >[!NOTE]
    >
    >Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventerà `beach1`.
@@ -308,7 +308,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    >[!NOTE]
    >
-   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genererà automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventerà `beach1`.
+   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventerà `beach1`.
 
 1. Dal passaggio **Seleziona destinazione** della procedura guidata, puoi effettuare le seguenti operazioni:
 
@@ -325,7 +325,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    >[!NOTE]
    >
-   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genererà automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
+   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
 
 1. Se la pagina è collegata o utilizzata in un riferimento, oppure se è stata pubblicata, i dettagli saranno elencati nel passaggio **Regola/Ripubblica**.
 
@@ -367,14 +367,14 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    >[!NOTE]
    >
-   >Come precauzione di protezione, **l’icona Elimina pagina** non è disponibile come azione rapida.
+   >Come precauzione di sicurezza, l’icona **Elimina** pagina non è disponibile come azione rapida.
 
-1. Viene visualizzata una finestra di dialogo con richiesta di conferma.
+1. Una finestra di dialogo chiederà una conferma.
 
-   ![Elimina, finestra di dialogo](/help/sites-cloud/authoring/assets/delete-page.png)
+   ![Finestra di dialogo Elimina](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **Intendi archiviare le pagine prima di eliminarle?** - Se questa opzione è attivata, le versioni delle pagine selezionate per l&#39;eliminazione verranno create al momento dell&#39;eliminazione.
-      * [Le versioni possono essere ripristinate in una data successiva.](/help/sites-cloud/authoring/features/page-versions.md)
+   * **Intendi archiviare le pagine prima di eliminarle?** - Se questa opzione è selezionata, al momento dell’eliminazione verranno create versioni delle pagine selezionate da eliminare.
+      * [Le versioni possono essere ripristinate in un momento successivo.](/help/sites-cloud/authoring/features/page-versions.md)
       * Le pagine eliminate senza versioni precedenti non possono essere ripristinate.
    * **Annulla** per interrompere l’azione
    * **Elimina** per confermare l’azione:
