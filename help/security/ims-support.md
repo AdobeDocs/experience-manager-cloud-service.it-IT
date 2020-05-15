@@ -1,7 +1,7 @@
 ---
 title: Supporto IMS per Adobe Experience Manager as a Cloud Service
 description: Supporto IMS per Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
 
 ---
@@ -138,7 +138,7 @@ Tutti gli utenti e i gruppi aggiunti in questo profilo di prodotto potranno acce
 
 ![Profilo di prodotto](/help/security/assets/ims8.png)
 
-### Logging into Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
+### Accesso ad Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
 **Accesso amministratore locale**
 
@@ -156,7 +156,7 @@ Per altri utenti, è possibile utilizzare l’accesso basato su IMS dopo che IMS
 
 
 >[!NOTE]
-> Qualsiasi utente creato in IMS può essere creato utilizzando Adobe ID o Federated ID. Se un utente è configurato con l&#39;Adobe ID, viene autenticato utilizzando il provider di identità della propria Azienda per accedere.
+> Per la creazione di qualsiasi utente in IMS è possibile utilizzare un Adobe ID o un Federated ID. Se un utente viene configurato utilizzando un Adobe ID, l’autenticazione per l’accesso viene effettuata tramite il provider di identità della sua azienda.
 
 Verrà quindi reindirizzato alla schermata di accesso di IMS e dovrà immettere le proprie credenziali:
 
@@ -197,44 +197,44 @@ Come mostrato di seguito, il gruppo **AEM-GRP_008** eredita le autorizzazioni e 
 
 ### Accesso a Cloud Manager {#accessing-cloud-manager}
 
-Per poter accedere a Cloud Manager o AEM come ambienti di servizio cloud, devi essere assegnato ai profili del prodotto Cloud Manager.
+Per poter accedere a Cloud Manager o AEM as a Cloud Service, l’utente deve essere assegnato ai profili del prodotto Cloud Manager.
 
-Per ulteriori informazioni sui ruoli degli utenti che determinano la disponibilità di funzionalità specifiche in Cloud Manager, consultate Definizioni [dei](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) ruoli.
+Per ulteriori informazioni sui ruoli degli utenti che determinano la disponibilità di funzionalità specifiche in Cloud Manager, consulta le [definizioni dei ruoli](/help/onboarding/what-is-required/add-users-roles.md#role-definitions).
 
 >[!NOTE]
->Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. Per informazioni su ciascuno dei ruoli con autorizzazioni specifiche, attività preconfigurate o autorizzazioni associate a ciascun ruolo, fare riferimento a Autorizzazioni [basate sul](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)ruolo.
+>Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. Per informazioni su ciascuno dei ruoli con autorizzazioni specifiche, attività preconfigurate o autorizzazioni associate a ogni ruolo, fai riferimento alla descrizione delle [autorizzazioni basate sul ruolo](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.translate.html).
 
-**Passaggi per l’aggiunta di un utente**
+**Procedura per aggiungere un utente**
 
-1. Aggiungete un utente a un particolare profilo dalla schermata di un utente esistente o da una nuova schermata utente.
+1. Puoi aggiungere un utente a un particolare profilo dalla schermata di un utente esistente o da una nuova schermata utente.
 
-1. In alternativa, potete anche aggiungere un utente dalla schermata **Panoramica** , come illustrato nella figura riportata di seguito.
+1. In alternativa, puoi aggiungere un utente dalla schermata **Panoramica**, come illustrato nella figura riportata di seguito.
 
    ![ACL 3](/help/security/assets/ims23.png)
 
    >[!NOTE]
-   >Potete assegnare più profili a un utente, come illustrato nella figura riportata di seguito.
+   >Puoi assegnare a un utente più di un profilo, come illustrato nella figura riportata di seguito.
 
    ![ACL 3](/help/security/assets/ims22.png)
 
 
-1. Una volta aggiunto il profilo appropriato, dovresti essere in grado di accedere ai rispettivi tenant in Cloud Manager tramite [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) utilizzando l&#39;angolo in alto a destra dell&#39;interfaccia utente.
+1. Dopo avere aggiunto il profilo appropriato, dovresti essere in grado di accedere ai rispettivi tenant in Cloud Manager tramite [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) dall’angolo in alto a destra dell’interfaccia utente.
 
 
-### Accesso a un’istanza in AEM come servizio cloud {#accessing-instance-cloud-service}
+### Accesso a un’istanza in AEM as a Cloud Service {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
->I passaggi indicati nella sezione precedente devono essere già stati completati prima di poter accedere a un’istanza in AEM come servizio cloud.
+>Prima di poter accedere a un’istanza in AEM as a Cloud Service, è necessario avere già completato i passaggi indicati nella sezione precedente.
 
-Per poter accedere a un’istanza di AEM all’interno di **Admin Console**, nell’elenco dei prodotti di **Admin Console** dovresti vedere il Programma Cloud Manager e gli ambienti all’interno del programma.
+Per poter accedere a un’istanza di AEM in **Admin Console**, nell’elenco dei prodotti in **Admin Console** dovrebbero essere visualizzati il programma Cloud Manager e gli ambienti all’interno del programma.
 
-Ad esempio, nella schermata seguente, sono disponibili due ambienti: *dev author* e *publish*.
+Ad esempio, nella schermata seguente sono presenti due ambienti: un ambiente di *authoring* e uno di *pubblicazione*.
 
 ![ACL 3](/help/security/assets/ims19.png)
 
-Per accedere alle istanze di AEM, l&#39;utente dovrà essere aggiunto a un gruppo del prodotto Servizio Cloud appropriato.
+Per accedere alle istanze di AEM, l’utente deve essere aggiunto a un gruppo del prodotto Cloud Service appropriato.
 
-Ogni istanza di autore avrà un profilo Amministratori AEM e Utenti AEM, e ogni istanza di pubblicazione avrà un profilo Utenti AEM. Potete aggiungere altri profili in base alle esigenze.
+Ogni istanza di authoring avrà un profilo Amministratori AEM e Utenti AEM e ogni istanza di pubblicazione avrà un profilo Utenti AEM. Puoi aggiungere altri profili in base alle esigenze.
 
-Per ottenere l&#39;accesso a livello di amministratore all&#39;istanza di AEM, aggiungi l&#39;utente al profilo di amministratori AEM per quel particolare prodotto.
+Per poter accedere come amministratore all’istanza di AEM, aggiungi l’utente al profilo degli amministratori di AEM per quel particolare prodotto.
 
