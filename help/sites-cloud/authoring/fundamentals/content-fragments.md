@@ -1,7 +1,7 @@
 ---
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redarre e utilizzare contenuti indipendenti dalla pagina.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 # Frammenti di contenuto {#content-fragments}
 
-I frammenti di contenuto in Adobe Experience Manager (AEM) come servizio Cloud vengono [creati e gestiti come risorse](/help/assets/content-fragments/content-fragments.md)indipendenti dalla pagina.
+I frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md).
 
 Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
@@ -48,7 +48,7 @@ I frammenti di contenuto si prestano alle seguenti applicazioni:
    * Garanzia che i contenuti multimediali associati sono sempre vagliati e selezionati in base alla loro rilevanza.
    * Possibilità di creare al volo varianti di contenuto ad hoc, con la garanzia che queste restano comunque gestite a livello centrale nel frammento.
 
-## Aggiunta di un frammento di contenuto alla pagina   {#adding-a-content-fragment-to-your-page}
+## Aggiunta di un frammento di contenuto alla pagina  {#adding-a-content-fragment-to-your-page}
 
 1. Apri la pagina per la modifica.
 2. Aggiungi il componente **Frammento di contenuto** dal browser **Componenti** o mediante il comando **Inserisci nuovo componente**.
@@ -67,7 +67,7 @@ I frammenti di contenuto si prestano alle seguenti applicazioni:
    >
    >Per informazioni su ulteriori funzionalità di modifica, vedi anche:
    >
-   >    * [Layout reattivo](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >    * [Layout dinamico](/help/sites-cloud/authoring/features/responsive-layout.md)
    >    * [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
@@ -98,7 +98,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
       * **Tratta le intestazioni come paragrafi propri**
 * **Tratta le intestazioni come paragrafi propri**
 
-### Collegamento rapido all’Editor frammento di contenuto   {#quick-connection-to-fragment-editor}
+### Collegamento rapido all’Editor frammento di contenuto  {#quick-connection-to-fragment-editor}
 
 Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **Modifica** nella barra degli strumenti del componente, così da poter [modificare e gestire il frammento di contenuto](/help/assets/content-fragments/content-fragments.md).
 
@@ -106,7 +106,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 >
 >Come sempre, la modifica dell’origine del frammento ha un impatto su tutte le pagine che fanno riferimento a tale frammento di contenuto.
 
-### Aggiunta di contenuto intermedio   {#adding-in-between-content}
+### Aggiunta di contenuto intermedio  {#adding-in-between-content}
 
 Quando si aggiunge alla pagina un frammento di contenuto specifico, è disponibile un segnaposto **Trascina qui i componenti** fra ciascun paragrafo HTML (nonché all’inizio e alla fine) del frammento.
 
@@ -141,7 +141,7 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 >* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
 
 
-### Uso di contenuti associati   {#using-associated-content}
+### Uso di contenuti associati  {#using-associated-content}
 
 Se hai [associato del contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
