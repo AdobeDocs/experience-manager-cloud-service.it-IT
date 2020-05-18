@@ -2,7 +2,10 @@
 title: Aggiunta di risorse Dynamic Media alle pagine
 description: Come aggiungere componenti per contenuti multimediali dinamici a una pagina in AEM
 translation-type: tm+mt
-source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
+source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+workflow-type: tm+mt
+source-wordcount: '3132'
+ht-degree: 32%
 
 ---
 
@@ -26,7 +29,7 @@ L’aggiunta di un componente per contenuti multimediali dinamici, contenuti mul
 1. In AEM, apri la pagina in cui desideri aggiungere il Componente elementi multimediali dinamici.
 1. Nel riquadro a sinistra, toccate l’icona **[!UICONTROL Componenti]** , quindi filtrate gli elementi multimediali dinamici.
 
-   Se non sono disponibili componenti per contenuti multimediali dinamici, è necessario attivare o disattivare i componenti per contenuti multimediali dinamici. Per ulteriori informazioni, consulta [Modifica di modelli - Autori](/help/sites-cloud/authoring/features/templates.md) di modelli.
+   Se non è disponibile alcun elenco di componenti per contenuti multimediali dinamici, è probabile che sia necessario attivarli. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -49,6 +52,33 @@ L’aggiunta di un componente per contenuti multimediali dinamici, contenuti mul
    Componente Video multimediale dinamico 360.
 
 1. Al termine, nell’angolo superiore destro della finestra di dialogo toccate il segno di spunta per salvare le modifiche.
+
+### Abilitazione di componenti per contenuti multimediali dinamici {#enabling-dynamic-media-components}
+
+Se non è disponibile alcun componente per contenuti multimediali dinamici da aggiungere a una pagina, è probabile che sia necessario prima abilitare i componenti che si desidera utilizzare.
+
+1. In AEM, apri la pagina in cui desideri aggiungere il Componente elementi multimediali dinamici.
+1. Sul lato sinistro della barra degli strumenti accanto alla parte superiore della pagina, toccate l’icona Informazioni pagina, quindi toccate **[!UICONTROL Modifica modello]** dall’elenco a discesa.
+
+   ![edit-template](/help/assets/assets-dm/edit-template.png)
+
+1. Sul lato destro della barra degli strumenti accanto alla parte superiore della pagina, toccate **[!UICONTROL Struttura dall’elenco a discesa]**.
+
+   ![Criterio](/help/assets/assets-dm/structure-mode.png)
+
+1. Nella parte inferiore della pagina, toccate Contenitore **[!UICONTROL di]** layout per aprire la relativa barra degli strumenti, quindi toccate l&#39;icona Criterio.
+1. Nella pagina Contenitore **[!UICONTROL di]** layout, sotto l&#39;intestazione **[!UICONTROL Proprietà]** , assicurarsi che la scheda Componenti **** consentiti sia selezionata.
+
+   ![Componenti consentiti](/help/assets/assets-dm/allowed-components.png)
+
+1. Scorrete fino a visualizzare gli elementi **[!UICONTROL multimediali]** dinamici.
+1. Toccate l’icona > a sinistra di **[!UICONTROL Contenuti multimediali]** dinamici per espandere l’elenco, quindi selezionate i componenti Contenuti multimediali dinamici da attivare.
+
+   ![Elenco dei componenti per elementi per elementi per elementi per elementi per contenuti multimediali dinamici](/help/assets/assets-dm/dm-components-select.png)
+
+1. Nell&#39;angolo superiore destro della pagina Contenitore **[!UICONTROL di]** layout, toccate l&#39;icona Fine (segno di spunta).
+
+1. Sul lato destro della barra degli strumenti accanto alla parte superiore della pagina, toccate Contenuto **** iniziale dall’elenco a discesa, quindi [aggiungete un componente Contenuti multimediali dinamici alla pagina](#adding-a-dynamic-media-component-to-a-page) come al solito.
 
 ## Localizzazione dei componenti per contenuti multimediali dinamici {#localizing-dynamic-media-components}
 
@@ -168,8 +198,8 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    I modificatori del visualizzatore consentono, ad esempio, di effettuare le seguenti operazioni:
 
-   * Associare un file di sottotitoli a un video: [caption](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Associare un file di navigazione a un video: [navigazione](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Associare un file di sottotitoli a un video: [didascalia](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Associare un file di navigazione a un video: [navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Title**- Modifica il titolo del video.
@@ -234,7 +264,7 @@ Tenete presente che l’assegnazione di un predefinito per visualizzatori divers
 >
 >Tuttavia, potete usare lo stesso predefinito per visualizzatori per tutti i componenti per contenuti multimediali interattivi che utilizzano risorse dello stesso tipo, all’interno della pagina.
 
-![chlimage_1-174](assets/chlimage_1-541.png)
+![chlimage_1-175](assets/chlimage_1-541.png)
 
 You can edit the following **[!UICONTROL General]** settings by tapping **[!UICONTROL Edit]** in the component.
 
