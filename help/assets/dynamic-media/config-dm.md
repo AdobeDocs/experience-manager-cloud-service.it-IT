@@ -2,7 +2,10 @@
 title: Configurazione del servizio Dynamic Media Cloud
 description: Informazioni sulla configurazione di Dynamic Media nel servizio Adobe Experience Manager Cloud.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 73d14016beabfbdb127fe9e4d91fb20d4c17918e
+workflow-type: tm+mt
+source-wordcount: '5120'
+ht-degree: 9%
 
 ---
 
@@ -161,7 +164,7 @@ Per aprire la pagina Impostazioni generali applicazione, nella barra di navigazi
 
    >[!NOTE]
    >
-   >Per mantenere la coerenza con AEM, scegli sempre questa impostazione: Sovrascrivi **nella cartella corrente, nome/estensione come base**
+   >Per mantenere la coerenza con AEM, scegli sempre questa impostazione: **Sovrascrivi in cartella corrente, nome/estensione come base**
 
 * **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome/estensione]** della risorsa base - Richiede che l’immagine sostitutiva abbia la stessa estensione del nome file dell’immagine originale (ad esempio, sedia.jpg deve sostituire sedia.jpg, non sedia.tif). Tuttavia, potete caricare l’immagine sostitutiva in una cartella diversa da quella dell’originale. L’immagine aggiornata si trova nella nuova cartella; il file non può più essere trovato nella posizione originale
 * **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome della stessa risorsa base indipendentemente dall’estensione]** . Questa opzione è la regola di sostituzione più inclusiva. Potete caricare un’immagine sostitutiva in una cartella diversa da quella dell’originale, caricare un file con un’estensione diversa e sostituire il file originale. Se il file originale si trova in un’altra cartella, l’immagine sostitutiva si trova nella nuova cartella in cui è stata caricata.
@@ -458,9 +461,24 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
 Per mantenere Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> in esecuzione senza problemi, Adobe consiglia i seguenti suggerimenti per l&#39;ottimizzazione delle prestazioni/della scalabilità di sincronizzazione:
 
-* Aggiorna i thread di lavoro predefiniti del flusso di lavoro Granite (risorse video).
-* Aggiorna i thread di lavoro transitori Granite (immagini e risorse non video) predefiniti per il flusso di lavoro transitorio.
-* Aggiornate il numero massimo di connessioni di caricamento al server Dynamic Media Classic.
+* Aggiornamento dei parametri di processo predefiniti per l’elaborazione di diversi formati di file.
+* Aggiornamento dei thread di lavoro predefiniti per il flusso di lavoro Granite (risorse video) in coda.
+* Aggiornamento dei thread di lavoro transitori Granite (immagini e risorse non video) predefiniti per il flusso di lavoro in coda.
+* Aggiornamento delle connessioni di caricamento massime nel server Dynamic Media Classic.
+
+#### Aggiornamento dei parametri di processo predefiniti per l’elaborazione di diversi formati di file
+
+Potete ottimizzare i parametri di processo per velocizzare l’elaborazione quando caricate i file. Ad esempio, se caricate file PSD ma non desiderate elaborarli come modelli, potete impostare l’estrazione dei livelli su false (disattivato). In tal caso, il parametro di processo sintonizzato apparirebbe come `process=None&createTemplate=false`.
+
+Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sintonizzati&quot; per i file PDF, PostScript e PSD:
+
+| Tipo di file | Parametri di processo consigliati |
+| ---| ---|
+| PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
+| PostScript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
+
+Per aggiornare uno di questi parametri, segui i passaggi descritti in [Abilitazione del supporto](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)dei parametri di caricamento per i processi di caricamento di risorse/file multimediali dinamici basati su tipo MIME.
 
 #### Aggiornamento della coda del flusso di lavoro transitorio Granite {#updating-the-granite-transient-workflow-queue}
 
