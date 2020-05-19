@@ -2,9 +2,9 @@
 title: Creazione di contenuti accessibili per Adobe Experience Manager as a Cloud Service (conformità WCAG 2.1)
 description: Utilizzate AEM come servizio Cloud per rendere il contenuto Web accessibile e utilizzabile da persone con disabilità
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
 workflow-type: tm+mt
-source-wordcount: '13943'
+source-wordcount: '13955'
 ht-degree: 83%
 
 ---
@@ -1159,7 +1159,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.2.
 
 #### Finalità - Identificazione di errori (3.3.1) {#purpose-error-identification}
 
-L’obiettivo di questo criterio di successo è garantire che gli utenti siano informati della presenza di un errore e possano comprendere quale sia l’anomalia. Il messaggio di errore deve essere il più specifico possibile. In caso di un invio non riuscito di un modulo, la visualizzazione ripetuta del modulo e l’indicazione dei campi che presentano l’errore non sono sufficienti per consentire a tutti gli utenti di comprendere che si è verificato un errore. Le persone che usano un’utilità di lettura dello schermo, ad esempio, non potranno sapere che si è verificato un errore finché non incontrano uno degli indicatori di errore. È possibile che abbandonino completamente il modulo prima di incontrare l’indicatore di errore, ritenendo che la pagina semplicemente non funzioni. In WCAG 2.0, con “errore di inserimento” si intende un errore causato da informazioni fornite dall’utente che non vengono accettate dal sistema. Ciò include:
+L’obiettivo di questo criterio di successo è garantire che gli utenti siano informati della presenza di un errore e possano comprendere quale sia l’anomalia. Il messaggio di errore deve essere il più specifico possibile. In caso di un invio non riuscito di un modulo, la visualizzazione ripetuta del modulo e l’indicazione dei campi che presentano l’errore non sono sufficienti per consentire a tutti gli utenti di comprendere che si è verificato un errore. Le persone che usano un’utilità di lettura dello schermo, ad esempio, non potranno sapere che si è verificato un errore finché non incontrano uno degli indicatori di errore. È possibile che abbandonino completamente il modulo prima di incontrare l’indicatore di errore, ritenendo che la pagina semplicemente non funzioni. Per the definition in WCAG, an [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) is information provided by the user that is not accepted. Ciò include:
 
 informazioni richieste dalla pagina web ma omesse dall’utente oppure dati forniti dall’utente non conformi al formato richiesto o che non rientrano nei valori consentiti.
 Esempi:
@@ -1240,7 +1240,7 @@ Nei moduli semplici con funzionalità molto limitata, l’etichettatura appropri
 
 #### Finalità - Suggerimenti per gli errori (3.3.3) {#purpose-error-suggestion}
 
-L’obiettivo di questo criterio di successo è garantire che gli utenti ricevano suggerimenti appropriati per la correzione di un errore di inserimento, se possibile. La definizione WCAG 2.0 di “errore di inserimento” indica che si tratta di informazioni fornite dall’utente che non sono accettate dal sistema. Alcuni esempi di informazioni non accettate includono informazioni obbligatorie ma omesse dall’utente e informazioni fornite dall’utente ma che non rientrano nel formato dati richiesto o nei valori consentiti.
+L’obiettivo di questo criterio di successo è garantire che gli utenti ricevano suggerimenti appropriati per la correzione di un errore di inserimento, se possibile. The WCAG definition of [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) says that it is &quot;information provided by the user that is not accepted&quot; by the system. Alcuni esempi di informazioni non accettate includono informazioni obbligatorie ma omesse dall’utente e informazioni fornite dall’utente ma che non rientrano nel formato dati richiesto o nei valori consentiti.
 
 Il criterio di successo 3.3.1 prevede la notifica degli errori. Tuttavia, le persone con limitazioni cognitive potrebbero avere difficoltà a capire come correggere gli errori. Le persone con disabilità visive potrebbero non essere in grado di capire esattamente come correggere l’errore. In caso di invio non riuscito del modulo, gli utenti potrebbero abbandonare il modulo perché non sanno come correggere l’errore, anche se sono consapevoli che si è verificato un problema.
 
