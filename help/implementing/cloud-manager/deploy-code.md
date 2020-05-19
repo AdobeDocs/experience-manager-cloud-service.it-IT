@@ -2,16 +2,19 @@
 title: Distribuzione del codice - Servizi cloud
 description: Distribuzione del codice - Servizi cloud
 translation-type: tm+mt
-source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
+source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 3%
 
 ---
 
 
-# Distribuzione del codice {#deploy-your-code}
+# Implementazione del codice {#deploy-your-code}
 
 ## Distribuzione del codice con Cloud Manager {#deploying-code-with-cloud-manager}
 
-Dopo aver configurato la **pipeline** (repository, ambiente e ambiente di test), è possibile distribuire il codice.
+Dopo aver configurato la **pipeline** (archivio, ambiente e ambiente di test), è possibile distribuire il codice.
 
 1. Fai clic su **Distribuisci** da Cloud Manager per avviare il processo di distribuzione.
 
@@ -35,7 +38,7 @@ Dopo aver configurato la **pipeline** (repository, ambiente e ambiente di test),
    >
    >Inoltre, potete esaminare i passaggi da vari processi di distribuzione visualizzando i registri o rivedendo i risultati per i criteri di test.
 
-   La distribuzione **** dello stage prevede i seguenti passaggi:
+   La **distribuzione della fase** prevede i seguenti passaggi:
 
    * Convalida: Questo passaggio assicura che la pipeline sia configurata per utilizzare le risorse attualmente disponibili, ad esempio che il ramo configurato esiste, gli ambienti sono disponibili.
    * Build e unit test: Questo passaggio esegue un processo di compilazione containerizzato. Consultate [Creare un progetto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) di applicazione AEM per informazioni dettagliate sull&#39;ambiente di creazione.
@@ -44,7 +47,7 @@ Dopo aver configurato la **pipeline** (repository, ambiente e ambiente di test),
    * Distribuisci nello stage
 
       ![](assets/stage-deployment.png)
-   Il test **dello** stage comporta i seguenti passaggi:
+   La **prova della fase** prevede i seguenti passaggi:
 
    * Test funzionale del prodotto: Le esecuzioni della pipeline di Cloud Manager supporteranno l&#39;esecuzione di test che vengono eseguiti nell&#39;ambiente del passaggio. Consultate [Comprendere i risultati](/help/implementing/developing/introduction/understand-test-results.md) del test per informazioni dettagliate sul processo di test.
    * Test funzionale personalizzato: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita. Consultate [Comprendere i risultati](/help/implementing/developing/introduction/understand-test-results.md) del test per informazioni dettagliate sul processo di test.
@@ -83,7 +86,7 @@ Quando Cloud Manager si distribuisce su topologie non di produzione, l&#39;obiet
    >
    >Tutti gli artifact di AEM vengono distribuiti sia all’autore che agli editori. Le modalità di esecuzione devono essere utilizzate quando sono necessarie configurazioni specifiche per il nodo. Per ulteriori informazioni sulle modalità di esecuzione che consentono di sintonizzare l’istanza di AEM per uno scopo specifico, consultate Modalità di esecuzione.
 
-1. L&#39;artifact del dispatcher viene distribuito a ciascun dispatcher come segue:
+1. L&#39;artifact del dispatcher viene distribuito a ciascun dispatcher come indicato di seguito:
 
    1. Le configurazioni correnti vengono sottoposte a backup e copiate in una posizione temporanea
    1. Tutte le configurazioni vengono eliminate tranne i file immutabili. Per ulteriori informazioni, consulta Gestione delle configurazioni del dispatcher. In questo modo le directory vengono cancellate per evitare che vengano lasciati indietro i file orfani.
