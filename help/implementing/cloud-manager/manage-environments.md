@@ -2,7 +2,10 @@
 title: Gestione degli ambienti - Servizio Cloud
 description: Gestione degli ambienti - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
+source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 15%
 
 ---
 
@@ -37,9 +40,16 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
 ## Aggiunta di un ambiente {#adding-environments}
 
 
-1. Per aggiungere un ambiente, l’utente fa clic sul pulsante **Aggiungi ambiente**.
+1. Fate clic su **Aggiungi ambiente** per aggiungere un ambiente. Questo pulsante è accessibile dalla schermata **Ambienti** .
+   ![](assets/no-environment-2.png)
 
-   ![](assets/add-environment.png)
+
+   L&#39;opzione **Aggiungi ambiente** sarà disponibile anche sulla scheda **Ambienti** , se il programma non contiene ambienti.
+
+   ![](assets/no-environments.png)
+
+   >[!NOTA)
+   >L&#39;opzione **Aggiungi ambiente** verrà disattivata in base alla mancanza di autorizzazioni o agli eventuali contratti.
 
 1. Viene visualizzata la finestra di dialogo **Aggiungi ambiente**. L’utente deve inviare dettagli quali **tipo di ambiente**, **nome dell’ambiente** e **descrizione dell’ambiente** (a seconda dell’obiettivo dell’utente nella creazione dell’ambiente ed entro i limiti di ciò che è disponibile per il tenant specifico).
 
@@ -72,3 +82,15 @@ Quando questo stato viene visualizzato, l’opzione **Aggiorna** sarà disponibi
 Selezionando questa opzione dal menu a discesa, un gestore distribuzione potrà aggiornare la pipeline associata a questo ambiente alla versione più recente ed eseguire la pipeline.
 
 Se la pipeline è già stata aggiornata, all&#39;utente viene richiesto di eseguire la pipeline.
+
+## Eliminazione dell&#39;ambiente {#deleting-environment}
+
+L&#39;utente con le autorizzazioni necessarie sarà in grado di eliminare un ambiente di sviluppo.
+
+Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+
+![](assets/deleting-environment1.png)
+
+>[!NOTE]
+Questa funzione non è disponibile per l&#39;ambiente Produzione/Fase impostato in un programma regolare impostato a scopo di produzione. La funzione è tuttavia disponibile per gli ambienti Produzione/Fase in un programma sandbox.
+
