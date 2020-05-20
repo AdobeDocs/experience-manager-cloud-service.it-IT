@@ -2,10 +2,10 @@
 title: Gestione degli ambienti - Servizio Cloud
 description: Gestione degli ambienti - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
+source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 15%
+source-wordcount: '629'
+ht-degree: 9%
 
 ---
 
@@ -44,7 +44,7 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
    ![](assets/no-environment-2.png)
 
 
-   L&#39;opzione **Aggiungi ambiente** sarà disponibile anche sulla scheda **Ambienti** , se il programma non contiene ambienti.
+   L&#39;opzione **Aggiungi ambiente** è disponibile anche nella scheda **Ambienti** , se il programma non contiene ambienti.
 
    ![](assets/no-environments.png)
 
@@ -65,7 +65,6 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
    >[!NOTE]
    >Se non avete ancora impostato la pipeline di non produzione, nella schermata *Panoramica* viene visualizzata la scheda da cui potete creare la pipeline non di produzione.
 
-
 ## Aggiornamento dell&#39;ambiente {#updating-dev-environment}
 
 Gli aggiornamenti degli ambienti Stage e Produzione vengono gestiti automaticamente da Adobe.
@@ -73,11 +72,12 @@ Gli aggiornamenti degli ambienti Stage e Produzione vengono gestiti automaticame
 Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del programma. Se un ambiente non esegue l’ultima versione di AEM disponibile al pubblico, lo stato della scheda Ambienti nella Home Screen mostra **AGGIORNAMENTO DISPONIBILE**.
 
 ![](assets/manage-environments2.png)
-)
 
-Quando questo stato viene visualizzato, l’opzione **Aggiorna** sarà disponibile dal menu a discesa, sia nella scheda Ambienti che nel menu **Gestisci**, se fai clic su **Dettagli** dalla scheda **AMBIENTI**.
 
-![](assets/add-environment4.png)
+L&#39;opzione **Aggiorna** è disponibile dal menu a discesa nella scheda **Ambienti** .
+Questa opzione è disponibile anche dal pulsante **Gestisci** , se fate clic su **Dettagli** dalla scheda **Ambienti** .
+
+![](assets/update-environment2.png)
 
 Selezionando questa opzione dal menu a discesa, un gestore distribuzione potrà aggiornare la pipeline associata a questo ambiente alla versione più recente ed eseguire la pipeline.
 
@@ -87,10 +87,19 @@ Se la pipeline è già stata aggiornata, all&#39;utente viene richiesto di esegu
 
 L&#39;utente con le autorizzazioni necessarie sarà in grado di eliminare un ambiente di sviluppo.
 
-Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+L&#39;opzione **Elimina** è disponibile dal menu a discesa nella scheda **Ambienti** .
+Questa opzione è disponibile anche dal pulsante **Gestisci** , se fate clic su **Dettagli** dalla scheda **Ambienti** .
 
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
 Questa funzione non è disponibile per l&#39;ambiente Produzione/Fase impostato in un programma regolare impostato a scopo di produzione. La funzione è tuttavia disponibile per gli ambienti Produzione/Fase in un programma sandbox.
+
+## Accesso alla console per sviluppatori {#accessing-developer-console}
+
+Selezionate **Developer Console** dal menu a discesa nella scheda **Ambienti** .
+
+![](assets/dev-console1.png)
+
+Potete anche selezionare questa opzione dal pulsante **Gestisci** , se fate clic su **Dettagli** dalla scheda **Ambienti** .
 
