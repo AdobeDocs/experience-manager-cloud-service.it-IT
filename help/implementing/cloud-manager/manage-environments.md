@@ -2,9 +2,9 @@
 title: Gestione degli ambienti - Servizio Cloud
 description: Gestione degli ambienti - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 15%
 
 ---
@@ -48,7 +48,7 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
 
    ![](assets/no-environments.png)
 
-   >[!NOTA)
+   >[!NOTE]
    >L&#39;opzione **Aggiungi ambiente** verrà disattivata in base alla mancanza di autorizzazioni o agli eventuali contratti.
 
 1. Viene visualizzata la finestra di dialogo **Aggiungi ambiente**. L’utente deve inviare dettagli quali **tipo di ambiente**, **nome dell’ambiente** e **descrizione dell’ambiente** (a seconda dell’obiettivo dell’utente nella creazione dell’ambiente ed entro i limiti di ciò che è disponibile per il tenant specifico).
