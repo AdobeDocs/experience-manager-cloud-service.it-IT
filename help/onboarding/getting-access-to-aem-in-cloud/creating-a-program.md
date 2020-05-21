@@ -2,7 +2,7 @@
 title: Creazione di un programma - Servizio Cloud
 description: Creazione di un programma - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -32,7 +32,7 @@ A seconda dell&#39;obiettivo dell&#39;utente di creare il programma entro i limi
 
 ![](assets/create-program-add.png)
 
-## Creazione di un programma sandbox {#create-demo-program}
+## Creazione di un programma sandbox {#create-sandbox-program}
 
 Per creare un programma sandbox, effettuate le seguenti operazioni:
 
