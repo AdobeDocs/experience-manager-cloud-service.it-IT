@@ -1,8 +1,11 @@
 ---
 sub-product: Onboarding per AEM as a Cloud Service
 user-guide-title: Onboarding per AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
+translation-type: tm+mt
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 96%
 
 ---
 
@@ -17,9 +20,11 @@ source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
    + [Archivio del codice sorgente](what-is-required/source-code-repository.md)
 + Accesso ad AEM nel cloud {#getting-access}
    + [Accesso a Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
-   + [Accesso ai programmi](getting-access-to-aem-in-cloud/first-time-login.md)
-   + [Informazioni su programmi e tipi di programmi](getting-access-to-aem-in-cloud/understand-program-types.md)
-   + [Creazione di un programma](getting-access-to-aem-in-cloud/creating-a-program.md)
+   + Programmi di servizi cloud {#cloud-service-programs}
+      + [Accesso ai programmi](getting-access-to-aem-in-cloud/first-time-login.md)
+      + [Informazioni su programmi e tipi di programmi](getting-access-to-aem-in-cloud/understand-program-types.md)
+      + [Creazione di un programma](getting-access-to-aem-in-cloud/creating-a-program.md)
+      + [Programmi sandbox](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + [Creazione di un progetto di applicazione AEM](getting-access-to-aem-in-cloud/creating-aem-application-project.md)
 + Preparazione per privacy e protezione dei dati {#data-privacy}
    + [Preparazione di AEM per le normative su privacy e protezione dei dati](data-privacy-and-protection-readiness/aem-readiness.md)
