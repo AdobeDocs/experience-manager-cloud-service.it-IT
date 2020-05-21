@@ -4,7 +4,7 @@ description: Programmi sandbox - Servizio Cloud
 translation-type: tm+mt
 source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ I programmi sandbox hanno i seguenti attributi:
 
 Una procedura guidata per la creazione di programmi consente di creare un programma sandbox.
 
-Per informazioni su come creare un programma sandbox, consultate [Creazione di un programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program)sandbox.
+Per informazioni su come creare un programma sandbox, consultate [Creazione di un programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) sandbox per ulteriori dettagli.
 
 ### Creazione di ambienti sandbox {#creating-sandbox-environments}
 
@@ -51,7 +51,7 @@ L&#39;ambiente di fase di produzione può essere aggiunto manualmente al program
 
 Per ulteriori informazioni su come creare manualmente un ambiente, vedere [Aggiunta di ambienti](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) .
 
-### Eliminazione di ambienti sandbox  {#deleting-sandbox-environments}
+### Eliminazione di ambienti sandbox {#deleting-sandbox-environments}
 
 L&#39;utente con le autorizzazioni necessarie può eliminare un ambiente o set di ambienti di sviluppo o produzione/fase.
 
@@ -75,6 +75,9 @@ La sospensione è classificata come:
 
 * **Manuale**: In qualità di utente è possibile ibernare manualmente un ambiente del programma sandbox, anche se non vi è alcun obbligo di farlo, in quanto l&#39;ibernazione si verificherà automaticamente dopo un certo periodo (otto ore) di inattività.
 
+>[!CAUTION]
+>Nell&#39;ultima versione, il collegamento alla Developer Console di Cloud Manager non consente di attivare l&#39;ambiente del programma sandbox.
+
 #### Utilizzo della sospensione manuale {#using-manual-hibernation}
 
 Potete attivare manualmente il programma sandbox dalla console per sviluppatori in due modi diversi, utilizzando:
@@ -87,9 +90,16 @@ Per attivare manualmente gli ambienti del programma sandbox, effettuate le segue
 1. Passate alla **console**per sviluppatori.
 Per informazioni su come accedere alla [console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) per sviluppatori, consultate Accesso alla console **per sviluppatori dalla scheda** Ambienti **** .
 
-1. Fate clic su Sospendi, come mostrato nella figura seguente
+1. Click **Hibernate**, as shown in the figure below:
 
    ![](assets/hibernate-1.png)
+
+   Oppure,
+
+   Fare clic su **Sospendi** dall&#39;elenco Ambienti, come illustrato nella figura seguente:
+
+   ![](assets/hibernate-1b.png)
+
 1. Fate clic su **Sospendi** per confermare il passaggio.
 
    ![](assets/hibernate-2.png)
@@ -97,14 +107,6 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 1. Quando la sospensione ha esito positivo, nella schermata **Developer Console** visualizzerete la notifica completa del processo di ibernazione per il vostro ambiente.
 
    ![](assets/hibernate-4.png)
-
-#### Accesso a un ambiente sospeso {#accessing-hibernated-environment}
-
-Quando si effettuano richieste del browser a fronte del livello di authoring o pubblicazione di un ambiente attivato, l’utente riceve una pagina di destinazione che descrive lo stato di ibernazione dell’ambiente, come illustrato di seguito:
-
-Un utente con **Cloud Manager - Developer Role** può fare clic sul pulsante Developer Console per accedere alla console per sviluppatori e disattivare l&#39;ambiente. Informazioni sull&#39;impostazione dei ruoli sono disponibili nella documentazione di Cloud Manager.
-
-Se un utente in un&#39;organizzazione non può fare clic sul pulsante Developer Console per essere portato nella Developer Console, è probabile che gli sia necessario assegnare &quot;Cloud Manager - Ruolo sviluppatore&quot;.
 
 
 ### De-ibernazione {#de-hibernation-introduction}
@@ -119,6 +121,13 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 
    ![](assets/de-hibernation-img1.png)
 
+   Oppure,
+
+   Fare clic su **De-hibernate** dall&#39;elenco **Ambienti** , come mostrato nella figura seguente:
+
+   ![](assets/de-hibernate-1b.png)
+
+
 1. Fate clic su **De Hibernate** per confermare il passaggio.
 
    ![](assets/de-hibernation-img2.png)
@@ -131,9 +140,30 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 
    ![](assets/de-hibernation-img4.png)
 
+#### Accesso a un ambiente sospeso {#accessing-hibernated-environment}
+
+Quando si effettuano richieste del browser a fronte del livello di authoring o pubblicazione di un ambiente attivato, l’utente riceve una pagina di destinazione che descrive lo stato di ibernazione dell’ambiente, come illustrato nella figura seguente:
+
+![](assets/de-hibernation-img5.png)
+
+
+Un utente con **Cloud Manager - Ruolo** sviluppatore può fare clic su **Developer Console** per accedere alla console per sviluppatori e disattivare l&#39;ambiente.
+
+>[!NOTE]
+> Molte funzionalità di Cloud Manager richiedono autorizzazioni specifiche per funzionare. Per ulteriori informazioni sui ruoli per gli utenti che determinano la disponibilità di funzionalità specifiche, consulta[Aggiungi utenti e ruoli](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
+
+#### Considerazioni importanti {#important-considerations}
+
+Alcune considerazioni chiave relative agli ambienti in sospensione e in disattivazione sono:
+
+* Un utente può utilizzare una pipeline per distribuire il codice personalizzato per gli ambienti ibernati. L&#39;ambiente resterà in ibernazione e il nuovo codice apparirà nell&#39;ambiente una volta disattivato.
+
+* Gli aggiornamenti di AEM possono essere applicati agli ambienti bloccati, che i clienti possono attivare manualmente da Cloud Manager. L&#39;ambiente rimarrà bloccato e la nuova versione apparirà nell&#39;ambiente una volta disattivata.
+
+>[!NOTE]
+>Al momento, Cloud Manager non indica se un ambiente è bloccato.
 
 ## Aggiornamenti AEM agli ambienti sandbox {#aem-updates-sandbox}
-
 
 Per ulteriori informazioni, consultate Aggiornamenti [delle versioni di](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) AEM.
 
@@ -142,13 +172,10 @@ Un utente può applicare manualmente gli aggiornamenti AEM agli ambienti in un p
 Per informazioni sull&#39;aggiornamento di un ambiente, vedere [Aggiornamento dell&#39;ambiente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) .
 
 >[!NOTE]
->Affinché sia avviata una pipeline di aggiornamento manuale, è necessario configurare una pipeline *di* non produzione che viene distribuita nell&#39;ambiente di sviluppo di interesse.
+>* Affinché sia avviata una pipeline di aggiornamento manuale, è necessario configurare una pipeline *di* non produzione che viene distribuita nell&#39;ambiente di sviluppo di interesse.
+>* Per avviare una pipeline di aggiornamento manuale per l&#39;ambiente Production+Stage, è necessario configurare una pipeline di *produzione* .
+>* L&#39;aggiornamento manuale all&#39;ambiente *Produzione* o *Stage* aggiornerà automaticamente l&#39;altro. L’ambiente Production+Stage impostato deve trovarsi nella stessa versione di AEM.
 
->[!NOTE]
->Per avviare una pipeline di aggiornamento manuale per l&#39;ambiente Production+Stage, è necessario configurare una pipeline di *produzione* .
-
->[!NOTE]
->L&#39;aggiornamento manuale all&#39;ambiente *Produzione* o *Stage* aggiornerà automaticamente l&#39;altro. L’ambiente Production+Stage impostato deve trovarsi nella stessa versione di AEM.
 
 
 
