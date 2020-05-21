@@ -2,9 +2,9 @@
 title: Programmi sandbox - Servizio Cloud
 description: Programmi sandbox - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
+source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -137,9 +137,9 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 
 Per ulteriori informazioni, consultate Aggiornamenti [delle versioni di](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) AEM.
 
-Un utente può applicare manualmente gli aggiornamenti AEM agli ambienti in un programma sandbox (vedere la figura di seguito). Questo può essere fatto quando lo stato visualizzato è **UPDATE DISPONIBILE**.
+Un utente può applicare manualmente gli aggiornamenti AEM agli ambienti in un programma sandbox.
 
-L&#39;opzione Aggiorna è disponibile nel menu a discesa della scheda **Ambienti** . Questa opzione è disponibile anche dal pulsante **Gestisci** , se fate clic su **Dettagli** dalla scheda **Ambienti** .
+Per informazioni sull&#39;aggiornamento di un ambiente, vedere [Aggiornamento dell&#39;ambiente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) .
 
 >[!NOTE]
 >Affinché sia avviata una pipeline di aggiornamento manuale, è necessario configurare una pipeline *di* non produzione che viene distribuita nell&#39;ambiente di sviluppo di interesse.
