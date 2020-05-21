@@ -2,9 +2,9 @@
 title: Programmi sandbox - Servizio Cloud
 description: Programmi sandbox - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
+source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Un sandbox è in genere creato per scopi di formazione, demo in esecuzione, abil
 
 I programmi sandbox includono Siti e Risorse ed è popolato automaticamente con un ramo Git che include codice di esempio, un ambiente di sviluppo e una pipeline non di produzione.
 
-Per ulteriori informazioni sui tipi di programma, vedere [Informazioni sui programmi e i tipi](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html)di programma.
+Per ulteriori informazioni sui tipi di programma, consulta [Informazioni sui programmi e i tipi](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) di programma.
 
 ### Attributi dei programmi sandbox {#attributes-sandbox}
 
@@ -86,9 +86,17 @@ Per attivare manualmente gli ambienti del programma sandbox, effettuate le segue
 
 1. Passate alla **console**per sviluppatori.
 Per informazioni su come accedere alla [console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) per sviluppatori, consultate Accesso alla console **per sviluppatori dalla scheda** Ambienti **** .
-1. Fate clic su Sospendi, come illustrato nella figura seguente:
-1. Fate clic su **Sospendi** per confermare il passaggio
-1. Quando l&#39;ibernazione ha esito positivo, viene visualizzata la schermata seguente.
+
+1. Fate clic su Sospendi, come mostrato nella figura seguente
+
+   ![](assets/hibernate-1.png)
+1. Fate clic su **Sospendi** per confermare il passaggio.
+
+   ![](assets/hibernate-2.png)
+
+1. Quando la sospensione ha esito positivo, nella schermata **Developer Console** visualizzerete la notifica completa del processo di ibernazione per il vostro ambiente.
+
+   ![](assets/hibernate-4.png)
 
 #### Accesso a un ambiente sospeso {#accessing-hibernated-environment}
 
