@@ -2,12 +2,15 @@
 title: Distribuzione dei contenuti
 description: 'Distribuzione dei contenuti '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a07de761dd9aedb3469f256e08ecf05b2102889d
+workflow-type: tm+mt
+source-wordcount: '2268'
+ht-degree: 1%
 
 ---
 
 
-# Distribuzione dei contenuti in AEM come servizio cloud {#content-delivery}
+# Distribuzione dei contenuti in AEM as a Cloud Service {#content-delivery}
 
 I dettagli della pagina corrente consentono di pubblicare il contenuto del servizio in AEM come servizio cloud. La distribuzione dei contenuti del servizio di pubblicazione include:
 
@@ -52,11 +55,11 @@ Presentato di seguito è una matrice decisionale per confrontare le due opzioni.
 | **Prerequisiti** | Nessuno | CDN esistente da sostituire. Deve dimostrare l&#39;esito positivo del test di carico prima di iniziare a vivere. |
 | **Competenze CDN** | Nessuno | Richiede almeno una risorsa di progettazione part-time con conoscenze CDN dettagliate in grado di configurare il CDN del cliente. |
 | **Sicurezza** | Gestito da Adobe. | Gestito da Adobe (e facoltativamente dal cliente con una propria CDN). |
-| **Spettacolo** | Ottimizzato da Adobe. | Potrà beneficiare di alcune funzionalità CDN di AEM, ma potrebbe verificarsi un piccolo hit di prestazioni a causa del hop aggiuntivo. **Nota**: Hops da CDN cliente a Flast CDN probabilmente efficiente). |
+| **Spettacolo** | Ottimizzato da Adobe. | Potrà beneficiare di alcune funzionalità CDN di AEM, ma potrebbe verificarsi un piccolo hit di prestazioni a causa del hop aggiuntivo. **Nota**: È probabile che i punti di assistenza dalla CDN del cliente alla CDN out-of-the-box di Adobe siano efficienti). |
 | **Caching** | Supporta le intestazioni della cache applicate al dispatcher. | Supporta le intestazioni della cache applicate al dispatcher. |
 | **Funzionalità di compressione immagini e video** | Può essere utilizzato con Adobe Dynamic Media. | Può essere utilizzato con Adobe Dynamic Media o con una soluzione CDN gestita dai clienti. |
 
-### CDN gestito AEM {#aem-managed-cdn}
+### CDN gestito AEM  {#aem-managed-cdn}
 
 La preparazione per la distribuzione dei contenuti tramite la rete CDN di Adobe è semplice, come descritto di seguito:
 
@@ -65,7 +68,7 @@ La preparazione per la distribuzione dei contenuti tramite la rete CDN di Adobe 
 1. È necessario informare l&#39;assistenza clienti:
    * quale dominio personalizzato deve essere associato a un determinato ambiente, come definito dall&#39;ID del programma e dall&#39;ID dell&#39;ambiente.
    * se è necessaria una whitelist IP per limitare il traffico a un determinato ambiente.
-1. Il supporto clienti quindi coordinerà con voi i tempi di un record DNS CNAME, indicando il loro FQDN `adobe-aem.map.fastly.net`.
+1. Il supporto clienti quindi coordinerà con voi i tempi di un record DNS CNAME, indicando il loro FQDN `cdn.adobeaemcloud.com`.
 1. Al momento della scadenza dei certificati SSL riceverete una notifica per consentirvi di inviare nuovamente i nuovi certificati SSL.
 
 **Limitazione del traffico**
