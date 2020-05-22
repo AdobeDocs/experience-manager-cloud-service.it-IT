@@ -2,9 +2,9 @@
 title: Programmi sandbox - Servizio Cloud
 description: Programmi sandbox - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 4539744f8574bfa925d40cf685d02e4bc7ad4416
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Per informazioni su come creare un programma sandbox, consultate [Creazione di u
 
 ### Creazione di ambienti sandbox {#creating-sandbox-environments}
 
-I programmi sandbox vengono forniti un ambiente di sviluppo al momento della creazione del programma in modo automatico. L’ambiente di sviluppo include per impostazione predefinita un livello di authoring e pubblicazione.
+I programmi sandbox vengono distribuiti in un ambiente di sviluppo al momento della creazione del programma in modo automatico. L’ambiente di sviluppo include per impostazione predefinita un livello di authoring e pubblicazione.
 
 L&#39;ambiente di fase di produzione può essere aggiunto manualmente al programma sandbox, quando l&#39;utente è pronto per impostare un ciclo di produzione.
 
@@ -71,12 +71,12 @@ La sospensione può avvenire automaticamente o manualmente. Per gli ambienti San
 
 La sospensione è classificata come:
 
-* **Gli ambienti con programma sandbox automatico** vengono automaticamente bloccati dopo otto ore di inattività, il che significa che non vengono richiesti né l&#39;autore né i servizi di pubblicazione.
+* **Gli ambienti con programma sandbox automatico** vengono automaticamente bloccati dopo otto ore di inattività, il che significa che né l&#39;autore né i servizi di pubblicazione ricevono richieste.
 
-* **Manuale**: In qualità di utente è possibile ibernare manualmente un ambiente del programma sandbox, anche se non vi è alcun obbligo di farlo, in quanto l&#39;ibernazione si verificherà automaticamente dopo un certo periodo (otto ore) di inattività.
+* **Manuale**: In qualità di utente è possibile ibernare manualmente un ambiente del programma sandbox, anche se non vi è alcun obbligo di farlo, in quanto l&#39;ibernazione si verificherà automaticamente dopo un determinato periodo (otto ore) di inattività.
 
 >[!CAUTION]
->Nell&#39;ultima versione, il collegamento alla Developer Console di Cloud Manager non consente di attivare l&#39;ambiente del programma sandbox.
+>Nell&#39;ultima versione, il collegamento alla console per sviluppatori direttamente da Cloud Manager non ti darà la possibilità di attivare un ambiente di programmi sandbox. La soluzione alternativa si trova una volta nella Developer Console. Alla fine dell’URL `#release-cm-p1234-e5678 where 1234` 1234, aggiungere il seguente pattern è l’ID ** programma e 5678 è l’ID ** ambiente.
 
 #### Utilizzo della sospensione manuale {#using-manual-hibernation}
 
@@ -89,6 +89,8 @@ Per attivare manualmente gli ambienti del programma sandbox, effettuate le segue
 
 1. Passate alla **console**per sviluppatori.
 Per informazioni su come accedere alla [console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) per sviluppatori, consultate Accesso alla console **per sviluppatori dalla scheda** Ambienti **** .
+   >[!NOTE]
+   >il collegamento alla Developer Console direttamente da Cloud Manager non consente di attivare un ambiente di programmi sandbox. La soluzione alternativa si trova una volta nella Developer Console. Alla fine dell’URL `#release-cm-p1234-e5678 where 1234` 1234, aggiungere il seguente pattern è l’ID ** programma e 5678 è l’ID ** ambiente.
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -96,7 +98,7 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 
    Oppure,
 
-   Fare clic su **Sospendi** dall&#39;elenco Ambienti, come illustrato nella figura seguente:
+   Fate clic sul collegamento **Ambienti** in alto a sinistra per visualizzare l&#39;elenco degli ambienti e quindi fate clic su **Sospendi**, come illustrato nella figura seguente:
 
    ![](assets/hibernate-1b.png)
 
@@ -114,6 +116,9 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 1. Passate alla **console**per sviluppatori.
 Per informazioni su come accedere alla [console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) per sviluppatori, consultate Accesso alla console **per sviluppatori dalla scheda** Ambienti **** .
 
+   >[!NOTE]
+   >In alternativa, è possibile accedere a **Developer Console** per disattivare la funzione di disattivazione tentando di accedere al servizio di creazione o pubblicazione di un ambiente già attivato; in tal caso, verrà visualizzata una pagina di destinazione con un collegamento alla Developer Console. Consultate la sezione Accesso a un ambiente sospeso di seguito.
+
    >[!IMPORTANT]
    >L&#39;accesso alla console per sviluppatori è definito da **Cloud Manager - Ruolo** sviluppatore nell&#39; **Admin Console**. Un utente con un&#39;autorizzazione per il ruolo di sviluppatore può disattivare l&#39;ambiente di un programma sandbox.
 
@@ -123,7 +128,7 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 
    Oppure,
 
-   Fare clic su **De-hibernate** dall&#39;elenco **Ambienti** , come mostrato nella figura seguente:
+   Fate clic sul collegamento **Ambienti** in alto a sinistra per visualizzare l&#39;elenco degli ambienti e quindi fate clic su **De-hibernate**, come illustrato nella figura seguente
 
    ![](assets/de-hibernate-1b.png)
 
@@ -152,7 +157,7 @@ Un utente con **Cloud Manager - Ruolo** sviluppatore può fare clic su **Develop
 >[!NOTE]
 > Molte funzionalità di Cloud Manager richiedono autorizzazioni specifiche per funzionare. Per ulteriori informazioni sui ruoli per gli utenti che determinano la disponibilità di funzionalità specifiche, consulta[Aggiungi utenti e ruoli](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
-#### Considerazioni importanti {#important-considerations}
+### Considerazioni importanti {#important-considerations}
 
 Alcune considerazioni chiave relative agli ambienti in sospensione e in disattivazione sono:
 
