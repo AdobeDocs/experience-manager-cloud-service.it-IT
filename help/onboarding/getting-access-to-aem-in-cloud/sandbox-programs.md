@@ -4,7 +4,7 @@ description: Programmi sandbox - Servizio Cloud
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -91,8 +91,8 @@ Per attivare manualmente gli ambienti del programma sandbox, effettuate le segue
 
 1. Passate alla **console**per sviluppatori.
 Per informazioni su come accedere alla [console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) per sviluppatori, consultate Accesso alla console **per sviluppatori dalla scheda** Ambienti **** .
-   >[!NOTE]
-   >il collegamento alla Developer Console direttamente da Cloud Manager non consente di attivare un ambiente di programmi sandbox. La soluzione alternativa si trova una volta nella Developer Console. Alla fine dell’URL `#release-cm-p1234-e5678 where 1234` 1234, aggiungere il seguente pattern è l’ID ** programma e 5678 è l’ID ** ambiente.
+   >[!IMPORTANT]
+   >Il collegamento alla **Developer Console** direttamente da Cloud Manager non consente di attivare un ambiente di programmi sandbox. La soluzione alternativa si trova una volta nella Developer Console. Alla fine dell’URL `#release-cm-p1234-e5678 where 1234` 1234, aggiungere il seguente pattern è l’ID ** programma e 5678 è l’ID ** ambiente.
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -117,6 +117,9 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 
 1. Passate alla **console**per sviluppatori.
 Per informazioni su come accedere alla [console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) per sviluppatori, consultate Accesso alla console **per sviluppatori dalla scheda** Ambienti **** .
+
+   >[!IMPORTANT]
+   >Il collegamento alla **Developer Console** direttamente da Cloud Manager non consente di disattivare l&#39;ambiente del programma sandbox. La soluzione alternativa si trova una volta nella Developer Console. Alla fine dell’URL `#release-cm-p1234-e5678 where 1234` 1234, aggiungere il seguente pattern è l’ID ** programma e 5678 è l’ID ** ambiente.
 
    >[!NOTE]
    >In alternativa, è possibile accedere a **Developer Console** per disattivare la funzione di disattivazione tentando di accedere al servizio di creazione o pubblicazione di un ambiente già attivato; in tal caso, verrà visualizzata una pagina di destinazione con un collegamento alla Developer Console. Consultate la sezione Accesso a un ambiente sospeso di seguito.
