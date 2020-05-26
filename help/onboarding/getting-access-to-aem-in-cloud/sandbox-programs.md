@@ -2,9 +2,9 @@
 title: Programmi sandbox - Servizio Cloud
 description: Programmi sandbox - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
+source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -150,17 +150,17 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 
    ![](assets/de-hibernation-img4.png)
 
+#### Autorizzazioni per la disattivazione {#permissions-de-hibernate}
+
+Ogni utente con un profilo di prodotto che dia loro accesso ad AEM come servizio cloud dovrebbe essere in grado di accedere alla **Developer Console**, consentendo loro di disattivare l&#39;ambiente.
+
+Per informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consulta [Aggiunta di utenti e ruoli](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) in Cloud Manager.
+
 #### Accesso a un ambiente sospeso {#accessing-hibernated-environment}
 
 Quando si effettuano richieste del browser a fronte del livello di authoring o pubblicazione di un ambiente attivato, l’utente riceve una pagina di destinazione che descrive lo stato di ibernazione dell’ambiente, come illustrato nella figura seguente:
 
 ![](assets/de-hibernation-img5.png)
-
-
-Un utente con **Cloud Manager - Ruolo** sviluppatore può fare clic su **Developer Console** per accedere alla console per sviluppatori e disattivare l&#39;ambiente.
-
->[!NOTE]
-> Molte funzionalità di Cloud Manager richiedono autorizzazioni specifiche per funzionare. Per ulteriori informazioni sui ruoli per gli utenti che determinano la disponibilità di funzionalità specifiche, consulta[Aggiungi utenti e ruoli](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ### Considerazioni importanti {#important-considerations}
 
