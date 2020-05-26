@@ -1,8 +1,11 @@
 ---
-title: Casella in entrata
+title: 'Casella in entrata  '
 description: Gestione delle attività con la casella in entrata
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +50,7 @@ Per aprire la casella in entrata delle notifiche AEM:
 1. Tocca o fai clic sull’indicatore nella barra degli strumenti.
 
 1. Seleziona **Visualizza tutto**. Viene aperta la **Casella in entrata AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
-1. La vista predefinita è [Vista a elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view) dal selettore delle viste (barra degli strumenti in alto a destra).
+1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).
 
    Per entrambe le viste puoi inoltre definire le [Impostazioni vista](#inbox-view-settings). Le opzioni disponibili dipendono dalla vista corrente.
 
@@ -105,6 +108,10 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
 ## Intervenire su un elemento {#taking-action-on-an-item}
 
+>[!NOTE]
+>
+>Sebbene sia possibile selezionare più elementi, è possibile eseguire azioni su un solo elemento alla volta.
+
 1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili per l’elemento in questione sono disponibili nella barra degli strumenti:
 
    ![Selezione dell’elemento della casella in entrata](/help/sites-cloud/authoring/assets/inbox-select-item.png)
@@ -128,7 +135,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
    >* Elementi di flussi di lavoro - [Partecipazione ai flussi di lavoro](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. A seconda dell’elemento selezionato, verrà avviata un’azione, ad esempio:
+2. A seconda dell’elemento selezionato, verrà avviata un’azione, ad esempio:
 
    * Verrà aperta la finestra di dialogo relativa all’azione
    * Verrà avviata una Action Wizard
@@ -182,7 +189,7 @@ Per determinate attività, puoi creare un [Progetto](/help/sites-cloud/authoring
    >
    >Gli elementi di lavoro (di un flusso di lavoro) non possono essere utilizzati per creare un progetto.
 
-1. Seleziona **Crea progetto** nella barra degli strumenti per aprire la procedura guidata.
+1. Dalla barra degli strumenti, seleziona **Crea progetto** per aprire la procedura guidata.
 1. Seleziona il modello appropriato, quindi **Avanti**.
 1. Specifica le proprietà richieste:
 
