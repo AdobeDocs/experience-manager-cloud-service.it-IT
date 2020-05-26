@@ -1,8 +1,11 @@
 ---
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e le funzioni di base
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+workflow-type: tm+mt
+source-wordcount: '2864'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +62,8 @@ Le opzioni disponibili in questi pannelli sono descritte di seguito.
 Pannello di navigazione:
 
 ![Pannello di navigazione](/help/sites-cloud/authoring/assets/navigation.png)
+
+Il titolo della scheda del browser si aggiorna per riflettere la posizione in cui ci si sposta attraverso le console e il contenuto.
 
 Nel pannello di navigazione sono disponibili le console seguenti:
 
@@ -150,6 +155,14 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
    >
    >L’opzione **Impostazioni vista** è disponibile solo in modalità **Vista a elenco**.
 
+* Navigazione tramite tastiera
+
+   Potete navigare in un sito Web utilizzando solo la tastiera. Questo utilizza la funzionalità standard del browser del tasto **TAB** (o **OPT+TAB**) per spostarvi tra gli elementi della pagina che sono attivabili.
+
+   Nella console **Siti** è stata aggiunta l’opzione per **passare al contenuto** principale. Questo diventa visibile quando si passano le opzioni di intestazione e la navigazione diventa più veloce, consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
+
+   ![Passa al contenuto principale](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+
 ## Accedere all’Aiuto {#accessing-help}
 
 Sono disponibili diverse risorse di Aiuto:
@@ -228,7 +241,7 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
-* [Vista a elenco](#list-view)
+* [Vista a elenco  ](#list-view)
 
 >[!NOTE]
 >
