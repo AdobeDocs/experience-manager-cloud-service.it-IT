@@ -2,9 +2,9 @@
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti per la distribuzione in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+source-git-commit: 60093232710426d919a45742b1775239944d266d
 workflow-type: tm+mt
-source-wordcount: '2352'
+source-wordcount: '2417'
 ht-degree: 18%
 
 ---
@@ -237,7 +237,9 @@ L&#39;aggiunta di dipendenze di Paradiso segue le pratiche standard di Maven, e 
 
 Per garantire la corretta installazione dei pacchetti, si raccomanda di stabilire dipendenze tra pacchetti.
 
-La regola generale è che i pacchetti che contengono contenuto variabile (`ui.content`) devono dipendere dal contenuto immutabile (`ui.apps`) che supporta il rendering e l&#39;uso del contenuto modificabile.
+La regola generale è che i pacchetti che contengono contenuto variabile (`ui.content`) devono dipendere dal codice immutabile (`ui.apps`) che supporta il rendering e l&#39;uso del contenuto modificabile.
+
+Un&#39;eccezione notevole a questa regola generale è rappresentata dal fatto che il pacchetto di codice immutabile (`ui.apps` o qualsiasi altro) contenga __solo__ pacchetti OSGi. In tal caso, nessun pacchetto AEM deve dichiarare una dipendenza da esso. Questo perché i pacchetti di codice immutabili che contengono __solo__ pacchetti OSGi non sono registrati con AEM Package Manager, e pertanto, qualsiasi pacchetto AEM a seconda di esso avrà una dipendenza insoddisfatta e non sarà possibile eseguire l&#39;installazione.
 
 >[!TIP]
 >
