@@ -1,8 +1,11 @@
 ---
-sub-product: Creazione di contenuti in AEM come servizio cloud
-user-guide-title: Creazione di contenuti in AEM come servizio cloud
-translation-type: tm+mt
+sub-product: Creazione di contenuti in AEM as a Cloud Service
+user-guide-title: Creazione di contenuti in AEM as a Cloud Service
+translation-type: ht
 source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
+workflow-type: ht
+source-wordcount: '200'
+ht-degree: 100%
 
 ---
 
