@@ -3,9 +3,9 @@ title: Configurare AEM Assets Cloud Service con Brand Portal
 description: Configurare AEM Assets Cloud Service con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 6627f6454430d25f29bc743ad2f81e89f932219f
+source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1806'
 ht-degree: 38%
 
 ---
@@ -17,7 +17,7 @@ Risorse Adobe Experience Manager (AEM) è configurato con Brand Portal tramite A
 
 **Come funziona la configurazione?**
 
-La configurazione di un’istanza cloud di Risorse AEM con il tenant del Brand Portal (organizzazione) è un processo a più fasi che richiede configurazioni sia nell’istanza cloud di AEM Assets che in Adobe Developer Console.
+La configurazione dell’istanza cloud AEM Assets con un tenant del Brand Portal (organizzazione) richiede configurazioni sia nell’istanza cloud AEM Assets che in Adobe Developer Console.
 
 1. Nell’istanza cloud AEM Assets, crea un account IMS e genera un certificato pubblico (chiave pubblica).
 1. In Adobe Developer Console, crea un progetto per il tenant del Brand Portal (organizzazione).
@@ -28,9 +28,11 @@ La configurazione di un’istanza cloud di Risorse AEM con il tenant del Brand P
 1. Verifica la configurazione pubblicando una risorsa dall’istanza cloud di AEM Assets al Brand Portal.
 
 >[!NOTE]
->>Un tenant di Brand Portal può essere configurato solo con un’istanza cloud di AEM Assets.
->>Non configurare un tenant di Brand Portal con più istanze cloud di AEM Assets.
 >
+>Un tenant di Brand Portal può essere configurato solo con un’istanza cloud di AEM Assets.
+>
+>Non configurate un tenant di Brand Portal con più istanze cloud di AEM Assets.
+
 
 ## Prerequisiti {#prerequisites}
 
