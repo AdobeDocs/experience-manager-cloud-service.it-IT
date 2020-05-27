@@ -1,11 +1,11 @@
 ---
 sub-product: Implementazione per AEM as a Cloud Service
 user-guide-title: Implementazione per AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,16 +30,16 @@ ht-degree: 89%
    + [SDK di AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Linee guida per lo sviluppo per AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [API di AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [API di AEM as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Comprendere i risultati del test](/help/implementing/developing/introduction/understand-test-results.md)
 + Configurazione ed estensione di AEM as a Cloud Service {#configuring-and-extending}
    + [Estensione dei frammenti esperienza](developing/extending/experience-fragments.md)
    + [Personalizzazione ed estensione dei frammenti di contenuto](developing/extending/content-fragments-customizing.md)
-   + [Frammenti di contenuto Configurazione dei componenti per il rendering](developing/extending/content-fragments-configuring-components-rendering.md)
+   + [Componenti di configurazione dei frammenti di contenuto per il rendering](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Configurazione dei moduli di ricerca](developing/extending/search-forms.md)
 + Implementazione in AEM as a Cloud Service {#deploying}
    + [Implementazione in AEM as a Cloud Service](deploying/overview.md)
-   + [Configurazione di OSGi per AEM come servizio cloud](deploying/configuring-osgi.md)
+   + [Configurazione di OSGi per AEM as a Cloud Service](deploying/configuring-osgi.md)
 + Dispatcher nel cloud {#dispatcher}
    + [Dispatcher nel cloud](dispatcher/overview.md)
    + [Distribuzione dei contenuti in AEM as a Cloud Service](dispatcher/content-delivery.md)
