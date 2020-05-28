@@ -2,10 +2,10 @@
 sub-product: Onboarding per AEM as a Cloud Service
 user-guide-title: Onboarding per AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 96%
+source-wordcount: '133'
+ht-degree: 93%
 
 ---
 
@@ -33,4 +33,6 @@ ht-degree: 96%
 + Accessibilità {#accessibility}
    + [AEM as a Cloud Service e le linee guida per l’accessibilità dei contenuti web](accessibility/web-accessibility.md)
    + [Guida rapida alle linee guida WCAG 2.1](accessibility/quick-guide-wcag.md)
++ Best practice   {#best-practices}
+   + [Gestione SEO e URL](best-practices/seo-and-url-management.md)
 + [Panoramica delle console Strumenti](tools-consoles.md)
