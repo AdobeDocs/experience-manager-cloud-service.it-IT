@@ -2,9 +2,9 @@
 title: Programmi sandbox - Servizio Cloud
 description: Programmi sandbox - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,9 @@ Potete attivare manualmente il programma sandbox dalla console per sviluppatori 
 
 * Schermata dei dettagli dell&#39;ambiente
 * Schermata di elenco dell&#39;ambiente
+
+>[!NOTE]
+>L&#39;accesso a Developer Console per un programma sandbox è disponibile per qualsiasi utente di Cloud Manager.
 
 Per attivare manualmente gli ambienti del programma sandbox, effettuate le seguenti operazioni:
 
