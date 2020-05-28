@@ -2,7 +2,10 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Da completare
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+workflow-type: tm+mt
+source-wordcount: '1588'
+ht-degree: 1%
 
 ---
 
@@ -103,7 +106,7 @@ Per attivare il livello di registro DEBUG, impostare la variabile
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
 da eseguire il debug. Non lasciare il registro a livello di registro DEBUG più a lungo del necessario, in quanto genera molti registri.
-Una riga nel file di debug in genere inizia con DEBUG, quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Esempio:
+Una riga nel file di debug in genere inizia con DEBUG, quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Ad esempio:
 
 ``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
 
@@ -156,6 +159,10 @@ Come illustrato di seguito, gli sviluppatori possono risolvere dipendenze e serv
 Utile anche per il debug, la console Sviluppatore dispone di un collegamento allo strumento Spiega query:
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
+
+Per i programmi regolari, l&#39;accesso alla Developer Console è definito da &quot;Cloud Manager - ruolo sviluppatore&quot; nell&#39;Admin Console, mentre per i programmi sandbox, Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che dia loro accesso ad AEM come servizio cloud. Per ulteriori informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consulta la Documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
+
+
 
 ### Servizio di gestione e produzione AEM {#aem-staging-and-production-service}
 
