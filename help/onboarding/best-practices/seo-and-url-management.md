@@ -1,8 +1,11 @@
 ---
 title: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 seo-title: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
-translation-type: ht
-source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
+translation-type: tm+mt
+source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+workflow-type: tm+mt
+source-wordcount: '3124'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ Quando si parla di URL, esistono già alcune best practice comunemente accettate
 
 Durante la valutazione degli URL nel progetto AEM, considera le seguenti domande:
 
-“Disponendo del solo URL, senza poter vedere i contenuti della pagina, un utente sarebbe in grado di descrivere la pagina?”
+*“Disponendo del solo URL, senza poter vedere i contenuti della pagina, un utente sarebbe in grado di descrivere la pagina?”*
 
 Se la risposta è affermativa, è probabile che l’URL funzioni correttamente per un motore di ricerca.
 
