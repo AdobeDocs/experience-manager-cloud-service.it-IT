@@ -2,10 +2,10 @@
 title: Gestione degli ambienti - Servizio Cloud
 description: Gestione degli ambienti - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 9%
+source-wordcount: '702'
+ht-degree: 8%
 
 ---
 
@@ -97,7 +97,12 @@ Questa funzione non è disponibile per l&#39;ambiente Produzione/Fase impostato 
 
 ## Accesso alla console per sviluppatori {#accessing-developer-console}
 
-Selezionate **Developer Console** dal menu a discesa nella scheda **Ambienti** .
+Selezionate **Developer Console** dal menu a discesa nella scheda **Ambienti** . In questo modo si aprirà una nuova scheda nel browser con la pagina di accesso a **Developer Console**.
+
+Solo un utente nel ruolo Sviluppatore avrà accesso alla **Developer Console**. Eccezione per i programmi sandbox, in cui qualsiasi utente con accesso al Programma sandbox di Cloud Manager avrà accesso a **Developer Console**.
+
+Per ulteriori informazioni, consultate [Sospensione e De-hibernating Sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) .
+
 
 ![](assets/dev-console1.png)
 
