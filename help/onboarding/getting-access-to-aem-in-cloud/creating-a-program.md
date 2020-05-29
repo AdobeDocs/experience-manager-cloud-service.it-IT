@@ -2,7 +2,7 @@
 title: Creazione di un programma - Servizio Cloud
 description: Creazione di un programma - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
+source-git-commit: 9dd6cd0661cceb680f36a382aec16fad7c281301
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Per creare un programma regolare, effettuate le seguenti operazioni:
 
 1. Selezionate **Imposta per produzione** nella procedura guidata Crea programma per creare un programma regolare. L&#39;utente può accettare il nome predefinito del programma o modificarlo prima di selezionare **Continua**.
 
-   ![](assets/set-up-prod1.png)
+   ![](assets/create-prod1.png)
 
 1. L&#39;utente selezionerà le soluzioni da includere nel programma sullo schermo che verrà presentato seguendo lo schermo qui sopra.
 
