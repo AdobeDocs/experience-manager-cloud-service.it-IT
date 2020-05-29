@@ -2,7 +2,7 @@
 sub-product: Passa ad AEM come servizio cloud
 user-guide-title: Passa ad AEM come servizio cloud
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 1%
@@ -10,9 +10,9 @@ ht-degree: 1%
 ---
 
 
-# Move to AEM as a Cloud Service Guide {#moving}
+# Moving to AEM as a Cloud Service Guide {#moving}
 
-+ [Passa ad AEM come servizio cloud](/help/move-to-cloud-service/home.md)
++ [Passaggio ad AEM come servizio cloud](/help/move-to-cloud-service/home.md)
 + Fasi del percorso di transizione {#phases}
    + [Pianificazione](/help/move-to-cloud-service/planning.md)
    + [Esecuzione](/help/move-to-cloud-service/execution.md)
