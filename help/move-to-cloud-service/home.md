@@ -2,7 +2,7 @@
 title: Passa ad AEM come servizio cloud
 description: Adobe Experience Manager come servizio cloud per passare ad AEM come servizio cloud per risorse di supporto autonomo e collegamenti alla documentazione
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 43c5af886ccddea73b68008a372f192ff8c1f26f
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 57%
@@ -10,7 +10,7 @@ ht-degree: 57%
 ---
 
 
-# Move to AEM as a Cloud Service {#aem-moving-to-aem-guide}
+# Moving to AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
 ## Vantaggi del passaggio ad AEM come servizio cloud {#benefits-aem-moving-to-aem-guide}
 
@@ -46,7 +46,7 @@ Ulteriori informazioni sulle diverse fasi del passaggio al servizio Cloud:
 | [Concetti di base](/help/core-concepts/home.md) | In questa guida vengono introdotti i concetti di base di Experience Manager as a Cloud Service e viene illustrata l’architettura del nuovo servizio. |
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Informazioni su come amministrare Experience Manager Sites as a Cloud Service. |
 | [Guida utente di Assets](/help/assets/home.md) | Informazioni su come amministrare Experience Manager Assets as a Cloud Service. |
-| [Passa ad AEM come guida utente per i servizi cloud](/help/move-to-cloud-service/home.md) | Comprendi il percorso di transizione verso il servizio Cloud. |
+| [Passaggio ad AEM come guida utente per i servizi cloud](/help/move-to-cloud-service/home.md) | Comprendi il percorso di transizione verso il servizio Cloud. |
 | [Guida utente sull’implementazione](/help/implementing/home.md) | Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per l’implementazione a scopo di sviluppo. |
 | [Guida utente dei connettori](/help/connectors/home.md) | Questa guida contiene informazioni su come integrare le soluzioni in Experience Manager as a Cloud Service. |
 | [Guida utente sulle operazioni](/help/operations/home.md) | Guesta guida contiene informazioni sulle operazioni back-end di Experience Manager as a Cloud Service, ad esempio le attività di indicizzazione e manutenzione. |
