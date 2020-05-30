@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento di trasferimento dei contenuti
 description: Utilizzo dello strumento di trasferimento dei contenuti
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 2%
+source-wordcount: '1527'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +20,8 @@ Seguite la sezione seguente per comprendere le considerazioni importanti durante
 
 * Se utilizzate un ambiente *sandbox*, accertatevi che l&#39;ambiente sia aggiornato alla versione del 29 maggio 2020 o successiva. Se si utilizza un ambiente *di* produzione, questo viene aggiornato automaticamente.
 
+* Per utilizzare lo strumento di trasferimento dei contenuti, è necessario essere un utente amministratore nell&#39;istanza di origine e appartenere al gruppo di amministrazione nell&#39;istanza del servizio cloud a cui si sta trasferendo il contenuto. Gli utenti non privilegiati non potranno recuperare il token di accesso per utilizzare lo strumento di trasferimento dei contenuti.
+
 * Durante la fase di estrazione, lo strumento di trasferimento dei contenuti viene eseguito su un’istanza sorgente AEM attiva.
 
 * La fase *di* inserimento dell’autore riduce l’intera distribuzione dell’autore. Questo significa che l’autore AEM non sarà disponibile durante l’intero processo di assimilazione.
@@ -29,7 +31,7 @@ Seguite la sezione seguente per comprendere le considerazioni importanti durante
 Content Transfer Tool può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Package Manager nella tua istanza sorgente Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Per ulteriori informazioni, consulta [Accesso ad AEM come SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#accessing-the-aem-as-a-cloud-service-sdk) per servizi cloud.
+>Scarica Content Transfer Tool da [Adobe Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Esecuzione dello strumento di trasferimento dei contenuti {#running-tool}
 
@@ -120,7 +122,8 @@ Per estrarre il set di migrazione dallo strumento di trasferimento dei contenuti
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   > Sarà necessario aggiornare la pagina per visualizzare lo stato aggiornato.
+   >Sarà necessario aggiornare la pagina per visualizzare lo stato aggiornato.
+   >Quando si avvia la fase di estrazione, viene creato il blocco di scrittura e rilasciato dopo *60 secondi*. Quindi, se si arresta un&#39;estrazione, è necessario attendere un minuto prima che il blocco venga rilasciato prima di riavviare l&#39;estrazione.
 
 #### Estrazione In Alto {#top-up-extraction-process}
 
@@ -250,10 +253,12 @@ I file creati in *OUT_DIR* sopra per coerenza possono quindi essere controllati 
 
 Come utente, nell’interfaccia utente (UI) di Content Transfer Tool potrebbero essere visualizzate le seguenti modifiche comportamentali:
 
-1. L’utente crea un set di migrazione per un URL autore (Sviluppo/Fase/Produzione) ed esegue correttamente l’estrazione e l’assimilazione.
+* L’utente crea un set di migrazione per un URL autore (Sviluppo/Fase/Produzione) ed esegue correttamente l’estrazione e l’assimilazione.
 
-1. L’utente crea quindi un nuovo set di migrazione per lo stesso URL autore ed esegue l’estrazione e l’inserimento nel nuovo set di migrazione. L’interfaccia utente mostra che lo stato di inserimento del primo set di migrazione cambia in **NON RIUSCITO** e non sono disponibili registri.
+* L’utente crea quindi un nuovo set di migrazione per lo stesso URL autore ed esegue l’estrazione e l’inserimento nel nuovo set di migrazione. L’interfaccia utente mostra che lo stato di inserimento del primo set di migrazione cambia in **NON RIUSCITO** e non sono disponibili registri.
 
-1. Ciò non significa che l&#39;assimilazione del primo set di migrazione non sia riuscita. Questo comportamento è visibile perché all’avvio di un nuovo processo di assimilazione viene eliminato il processo di assimilazione precedente. Pertanto, lo stato delle modifiche nel primo set di migrazione deve essere ignorato.
+* Ciò non significa che l&#39;assimilazione del primo set di migrazione non sia riuscita. Questo comportamento è visibile perché all’avvio di un nuovo processo di assimilazione viene eliminato il processo di assimilazione precedente. Pertanto, lo stato delle modifiche nel primo set di migrazione deve essere ignorato.
+
+* Le icone nell’interfaccia utente dello strumento di trasferimento dei contenuti possono apparire diverse dalle schermate mostrate in questa guida o non vengono visualizzate a seconda della versione dell’istanza AEM di origine.
 
 
