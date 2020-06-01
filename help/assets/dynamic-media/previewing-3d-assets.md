@@ -2,7 +2,10 @@
 title: Anteprima delle risorse 3D
 description: Scopri come visualizzare in anteprima le risorse 3D
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 16%
 
 ---
 
@@ -12,6 +15,8 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 Experience Manager supporta il caricamento, la distribuzione e l’anteprima interattiva di risorse 3D come parte del processo di authoring.
 
 Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli delle risorse in AEM. Il visualizzatore include, tra le altre, una raccolta di controlli interattivi della videocamera che consentono di eseguire zoom, rotazione e scorrimento della risorsa 3D.
+
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
 ## Formati supportati per l&#39;anteprima 3D{#supported-3d-previewing-assets}
 
@@ -49,7 +54,7 @@ Consultate Formati [supportati per l’anteprima](#supported-3d-previewing-asset
 
    ![Pagina di navigazione](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. Nell’angolo superiore destro della pagina, dall’elenco a discesa Visualizza, toccate Visualizzazione **** a schede, quindi individuate la risorsa 3D da visualizzare in anteprima.
+1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Vista a schede]**, quindi individua la risorsa 3D da visualizzare in anteprima.
 
    ![Selezione scheda 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
    _Nella vista a schede, toccate la scheda della risorsa 3D da visualizzare in anteprima._
@@ -60,18 +65,18 @@ Consultate Formati [supportati per l’anteprima](#supported-3d-previewing-asset
    _Anteprima interattiva di una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa._
 1. Nella pagina di visualizzazione dei dettagli della risorsa 3D, effettuate una delle seguenti operazioni:
    * **Ruotare la fotocamera**: orbita la vista intorno alla scena e agli oggetti 3D.
-      * _Mouse_: Clic a sinistra + trascinamento.
+      * _Mouse_: Fare clic con il pulsante sinistro del mouse e trascinare.
       * _Touch screen_: Premere un dito singolo e trascinare.
    * **Scorrimento della videocamera**: consente di scorrere la vista verso sinistra, destra, verso l’alto o verso il basso.
       * _Mouse_: Fare clic con il pulsante destro del mouse e trascinare.
       * _Touch screen_: Premere due dita e trascinare.
    * **Zoom della fotocamera**- Zoom della fotocamera per spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D.
       * _Mouse_: Ruota di scorrimento.
-      * _Touch screen_: Pizzico a due dita.
+      * _Touch screen_: Pizzicotto a due dita.
    * **Rientra la fotocamera**: consente di rientrare la fotocamera in un punto della scena 3D.
       * _Mouse_: Fate doppio clic.
       * _Touch screen_: Doppio tocco.
-   * **Ripristina**(Reset) - Nell’angolo inferiore destro della pagina, toccate l’icona Ripristina per ripristinare il punto di destinazione della vista al centro della risorsa 3D. La funzione Reset (Reimposta) consente di spostare la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a dimensioni di visualizzazione ragionevoli.
+   * **Ripristina**(Reset) - Nell’angolo inferiore destro della pagina, toccate l’icona Ripristina per ripristinare il punto di destinazione della vista al centro della risorsa 3D. La funzione Reset (Reimposta) consente di spostare la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole.
    * **Modalità** Schermo intero: per passare alla modalità Schermo intero, nell&#39;angolo inferiore destro della pagina toccate l&#39;icona Schermo intero.
 
-1. Al termine, toccate **[!UICONTROL Chiudi]** vicino all’angolo superiore destro della pagina.
+1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close]**.
