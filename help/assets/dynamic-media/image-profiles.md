@@ -2,9 +2,9 @@
 title: Profili immagine di Dynamic Media
 description: Potete creare profili immagine contenenti impostazioni per maschera di contrasto, ritaglio avanzato o campioni avanzati o entrambi, quindi applicare il profilo a una cartella di risorse di immagini.
 translation-type: tm+mt
-source-git-commit: 16fa9a9783f42d0a9dcf541613aedb890cb41158
+source-git-commit: 39c4bb1fe5af9746ee824677f3de018d8ec36641
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2663'
 ht-degree: 14%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 14%
 # Profili immagine di Dynamic Media {#image-profiles}
 
 Quando caricate le immagini, potete ritagliare automaticamente l’immagine al momento del caricamento applicando un profilo immagine alla cartella.
+
+>[!IMPORTANT]
+>
+>I profili immagine non sono applicabili ai file PDF.
 
 ## Crop options {#crop-options}
 
