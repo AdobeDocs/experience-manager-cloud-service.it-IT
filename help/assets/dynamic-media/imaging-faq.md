@@ -2,7 +2,10 @@
 title: Smart imaging
 description: La tecnologia di imaging intelligente sfrutta le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, migliorando le prestazioni e il coinvolgimento.
 translation-type: tm+mt
-source-git-commit: a934f28f74f0ff9ae68d7507290851dc5ca907e5
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '1720'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +20,7 @@ La funzione Smart Imaging offre inoltre un ulteriore vantaggio in termini di pre
 
 Gli esempi di risorse di immagine seguenti descrivono l’ottimizzazione per Smart Imaging aggiunta:
 
-| Image<br>(URL) | Miniatura    | Dimensioni<br> (JPEG) | Dimensioni (WebP)<br> (con Smart Imaging) | % riduzione |
+| Image<br>(URL) | Miniatura  | Dimensioni<br> (JPEG) | Dimensioni (WebP)<br> (con Smart Imaging) | % riduzione |
 |---|---|---|---|---|
 | [Immagine 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
 | [Immagine 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
@@ -87,7 +90,7 @@ No. Le immagini intelligenti si integrano perfettamente con gli URL esistenti e 
 
 Vedete [Posso usare le Smart Imaging?](#am-i-eligible-to-use-smart-imaging) per comprendere i prerequisiti per la funzione Smart Imaging.
 
-## Smart Mmaging funziona con HTTPS? E HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
+## Smart Imaging funziona con HTTPS? E HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
 Smart Imaging funziona con immagini distribuite tramite HTTP o HTTPS. Inoltre, funziona anche su HTTP/2.
 
