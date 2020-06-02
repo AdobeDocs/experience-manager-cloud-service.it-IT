@@ -2,25 +2,25 @@
 title: Anteprima delle risorse 3D
 description: Scopri come visualizzare in anteprima le risorse 3D
 translation-type: tm+mt
-source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 16%
+source-wordcount: '566'
+ht-degree: 15%
 
 ---
 
 
-# Anteprima delle risorse 3D{#previewing-3d-assets}
+# Anteprima delle risorse 3D in AEM{#previewing-3d-assets}
 
-Experience Manager supporta il caricamento, la distribuzione e l’anteprima interattiva di risorse 3D come parte del processo di authoring.
+Adobe Experience Manager supporta il caricamento, la distribuzione e l’anteprima interattiva di risorse 3D come parte del processo di authoring.
 
 Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli delle risorse in AEM. Il visualizzatore include, tra le altre, una raccolta di controlli interattivi della videocamera che consentono di eseguire zoom, rotazione e scorrimento della risorsa 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formati supportati per l&#39;anteprima 3D{#supported-3d-previewing-assets}
+## Formati supportati per l’anteprima 3D in AEM{#supported-3d-previewing-assets}
 
-L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
+L’anteprima 3D interattiva in AEM supporta i seguenti formati di file:
 
 | Estensione dei file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
@@ -40,13 +40,13 @@ L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
     Material_0_baseColor.
     jpegMaterial_0_normal.jpeg
 
-## Performance considerations when you preview 3D assets{#performance-3d-previewing-assets}
+## Considerazioni sulle prestazioni per l’anteprima di risorse 3D in AEM{#performance-3d-previewing-assets}
 
 Il tempo necessario per aprire una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa dipende da diversi fattori quali larghezza di banda, complessità dell’immagine e latenze verso il server.
 
 Inoltre, le funzionalità del computer client, come una workstation, un notebook o un dispositivo touch mobile, sono importanti anche quando si modifica la telecamera in modo interattivo. Un sistema ragionevolmente potente con buone capacità grafiche può rendere l’esperienza di visualizzazione 3D interattiva più fluida e favorevole.
 
-**Per visualizzare in anteprima le risorse 3D**
+**Per visualizzare in anteprima le risorse 3D in AEM**
 
 1. Assicurati di aver caricato le risorse 3D in AEM.
 Consultate Formati [supportati per l’anteprima](#supported-3d-previewing-assets) 3D e per il [caricamento delle risorse](/help/assets/manage-digital-assets.md#uploading-assets).
