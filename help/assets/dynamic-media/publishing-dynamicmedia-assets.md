@@ -1,19 +1,23 @@
 ---
 title: Pubblicazione di risorse multimediali dinamiche
 description: Come pubblicare le risorse multimediali dinamiche
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 3%
 
 ---
 
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-Per pubblicare le risorse Contenuti multimediali dinamici, selezionatele e toccate **[!UICONTROL Pubblica]**. Dopo la pubblicazione, le risorse multimediali dinamiche possono essere incluse in una pagina Web tramite URL o mediante incorporazione.
+Per pubblicare le risorse per contenuti multimediali dinamici, seleziona le risorse già caricate e tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione]** rapida. Dopo la pubblicazione, le risorse Dynamic Media sono disponibili per l’inclusione in una pagina Web tramite un URL o mediante l’incorporazione di codice nella pagina.
 
 Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. In alternativa, potete pubblicare le risorse in modo selettivo. See [Configuring Dynamic Media](config-dm.md).
 
-Nella **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa viene visualizzata una piccola icona a forma di globo, per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
+Nella vista **[!UICONTROL a]** schede, una piccola icona a forma di globo appare direttamente sotto il nome di una risorsa e a sinistra della data e dell’ora per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
 
 >[!NOTE]
 >
@@ -23,7 +27,7 @@ Se intendete pubblicare le risorse video subito dopo la codifica, accertatevi ch
 
 See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
-Consultate anche [Incorporamento del visualizzatore video in una pagina Web.](embed-code.md)
+Consultate anche [Incorporamento di un visualizzatore video o di immagini per file multimediali dinamici in una pagina Web.](embed-code.md)
 
 >[!NOTE]
 >
