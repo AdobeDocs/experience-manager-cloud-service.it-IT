@@ -2,9 +2,9 @@
 title: Aggiunta di risorse Dynamic Media alle pagine
 description: Come aggiungere componenti per contenuti multimediali dinamici a una pagina in AEM
 translation-type: tm+mt
-source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '3132'
+source-wordcount: '3137'
 ht-degree: 32%
 
 ---
@@ -22,7 +22,7 @@ Se utilizzi AEM come WCM, puoi aggiungere direttamente alla pagina le risorse Dy
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-L’aggiunta di un componente per contenuti multimediali dinamici, contenuti multimediali interattivi, file multimediali panoramici o video 360 a una pagina equivale all’aggiunta di un componente a una pagina. I componenti per contenuti multimediali dinamici sono descritti nelle sezioni seguenti.
+L’aggiunta di un componente File multimediali 3D, Contenuti multimediali dinamici, Contenuti multimediali interattivi, Contenuti multimediali panoramici, Video SmartCrop o Video 360 a una pagina equivale all’aggiunta di un componente a qualsiasi pagina. I componenti per contenuti multimediali dinamici sono descritti nelle sezioni seguenti.
 
 **Aggiunta di un componente per contenuti multimediali dinamici a una pagina**
 
@@ -264,7 +264,7 @@ Tenete presente che l’assegnazione di un predefinito per visualizzatori divers
 >
 >Tuttavia, potete usare lo stesso predefinito per visualizzatori per tutti i componenti per contenuti multimediali interattivi che utilizzano risorse dello stesso tipo, all’interno della pagina.
 
-![chlimage_1-175](assets/chlimage_1-541.png)
+![chlimage_1-174](assets/chlimage_1-541.png)
 
 You can edit the following **[!UICONTROL General]** settings by tapping **[!UICONTROL Edit]** in the component.
 
