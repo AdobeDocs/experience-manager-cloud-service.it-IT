@@ -2,10 +2,10 @@
 title: Navigazione
 description: Navigazione - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 2%
+source-wordcount: '492'
+ht-degree: 1%
 
 ---
 
@@ -18,20 +18,44 @@ Dopo l&#39;accesso, verrai indirizzato alla pagina di destinazione di Cloud Mana
 
 ![](assets/first_timelogin1.png)
 
-## Accesso SysAdmin {#sysadmin-access}
+## Attività SysAdmin {#sysadmin-tasks}
 
-Un utente con il ruolo SysAdmin ha accesso con un solo clic alla posizione in Admin Console da cui vengono gestiti i ruoli utente o le autorizzazioni per Cloud Manager.
+Un utente con il ruolo SysAdmin ora può accedere direttamente ad Admin Console per gestire ruoli e autorizzazioni e accedere alle istanze di AEM.
 
 ### Gestione dei ruoli {#manage-roles}
 
-Come utente in SysAdmin, un&#39;opzione **Gestisci ruoli** è disponibile nella pagina di destinazione accanto a **Aggiungi programma**. Questo consente di accedere con un solo clic alla posizione in Admin Console da cui è possibile gestire i ruoli utente o le autorizzazioni per Cloud Manager.
+In qualità di utente con il ruolo SysAdmin, puoi accedere con un solo clic al percorso in **Admin Console** da cui vengono gestiti i ruoli utente o le autorizzazioni per Cloud Manager.
 
-Fai riferimento a [Accesso a Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) per ulteriori informazioni su come aggiungere utenti a un profilo per fare riferimento all&#39;accesso a Cloud Manager
+Per ulteriori informazioni su come aggiungere utenti a un profilo, consulta [Accesso a Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) .
 
-### Gestione dell&#39;accesso ad AEM {#manage-access-aem}
+>[!NOTE]
+>Per alcune organizzazioni alle quali è stato concesso l&#39;accesso ad AEM come servizio cloud prima di gennaio 2020, questi verranno indirizzati ad Adobe Admin Console e sarà necessario selezionare Product and Environment Product Profile (Profilo prodotto e ambiente).
 
-In qualità di utente in SysAdmin, puoi accedere con un solo clic all&#39;istanza Author direttamente da Cloud Manager.
+1. Andate alla pagina di destinazione di Cloud Manager e fate clic su **Gestisci accesso**.
+
+   ![](assets/sys-admin1.png)
+
+1. Fai clic su **Gestisci accesso** per accedere all&#39; **Admin Console** da cui puoi gestire i ruoli utente o le autorizzazioni per Cloud Manager.
+
+   ![](assets/sys-admin2.png)
+
+### Gestione dell&#39;accesso all&#39;istanza Author {#manage-access-aem}
+
+In qualità di utente con il ruolo SysAdmin, puoi accedere con un solo clic ad **Admin Console** da dove puoi passare direttamente all’istanza Author e gestire l’accesso.
+
+>[!NOTE]
+>Per alcune organizzazioni alle quali è stato concesso l&#39;accesso ad AEM come servizio cloud prima di gennaio 2020, questi verranno indirizzati ad Adobe Admin Console e sarà necessario selezionare Product and Environment Product Profile (Profilo prodotto e ambiente).
+
 Per ulteriori informazioni, consultate [Accesso a un’istanza in AEM come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) cloud.
+
+1. Passate alla scheda **Ambienti** dalla pagina *Panoramica* o alla pagina **Ambienti** per utilizzare l&#39;opzione **Gestisci accesso** , come illustrato nella figura seguente.
+
+   ![](assets/manage-access1.png)
+
+1. Fai clic su **Gestisci accesso** per accedere ad **Admin Console** da dove puoi accedere all&#39;istanza Author di un ambiente.
+
+   ![](assets/sys-admin3.png)
+
 
 ## Per i clienti AMS esistenti {#existing-aem}
 
