@@ -2,9 +2,9 @@
 title: Aggiunta di risorse Dynamic Media alle pagine
 description: Come aggiungere componenti per contenuti multimediali dinamici a una pagina in AEM
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3124'
 ht-degree: 32%
 
 ---
@@ -34,10 +34,6 @@ L’aggiunta di un componente File multimediali 3D, Contenuti multimediali dinam
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Trascinate un componente **[!UICONTROL Contenuti multimediali]** dinamici e rilasciatelo nella posizione desiderata sulla pagina.
-
-   Nell’esempio di seguito, viene utilizzato il componente **[!UICONTROL Video 360 Media]** .
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. Passate il puntatore del mouse direttamente sul componente. Quando il componente è circondato da una casella blu, toccate una volta per visualizzare la barra degli strumenti del componente. Toccate l&#39;icona **[!UICONTROL Configurazione (chiave inglese)]** .
 
@@ -121,6 +117,7 @@ Il componente Contenuti multimediali dinamici è elegante. A seconda se aggiunge
 >
 >* Più istanze del componente Contenuti multimediali dinamici in uso sulla stessa pagina.
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
+
 >
 >
 L’assegnazione di un predefinito per visualizzatori diverso a ciascun componente per contenuti multimediali dinamici nella pagina non è supportata.
@@ -200,6 +197,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    * Associare un file di sottotitoli a un video: [didascalia](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Associare un file di navigazione a un video: [navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Title**- Modifica il titolo del video.
@@ -258,6 +256,7 @@ Il componente Contenuti multimediali interattivi è avanzato. A seconda se aggiu
 >
 >* Più istanze del componente Supporto interattivo in uso sulla stessa pagina.
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
+
 >
 >
 Tenete presente che l’assegnazione di un predefinito per visualizzatori diverso a ciascun componente per contenuti multimediali interattivi in quella pagina non è supportata.
@@ -299,6 +298,7 @@ Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse p
 >
 >* Nella stessa pagina vengono utilizzate più istanze del componente **[!UICONTROL Panoramic Media]** .
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
+
 >
 >
 Non è supportata l’assegnazione di un predefinito visualizzatore diverso a ciascun componente **[!UICONTROL Elemento multimediale panoramico]** di quella pagina.
