@@ -2,9 +2,9 @@
 title: Creazione di un programma - Servizio Cloud
 description: Creazione di un programma - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,19 @@ Per creare un programma sandbox, effettuate le seguenti operazioni:
 
 Un utente del programma sandbox nel ruolo *Business Owner* o *Deployment Manager* in Cloud Manager può eliminare il proprio ambiente di produzione e di fase impostato tramite l&#39;interfaccia utente di Cloud Manager.
 
-L&#39;opzione delete è disponibile sia dalla scheda Ambiente nella pagina *Panoramica* che dalla pagina **Ambienti** . Selezionando l&#39;opzione di eliminazione su Produzione o Stage, viene eliminato anche l&#39;altro nel set.
+>[!NOTE]
+>Selezionando l&#39;opzione di eliminazione su Produzione o Stage, viene eliminato anche l&#39;altro nel set.
+
+L’opzione Elimina è disponibile dalla pagina di destinazione, come illustrato di seguito:
+
+![](assets/delete-sandbox1.png)
+
+Oppure,
+
+Selezionate **Elimina programma** dalla pagina *Panoramica* per eliminare il programma sandbox.
+
+![](assets/delete-sandbox2.png)
+
 
 ## Creazione di un programma regolare {#create-regular-program}
 
