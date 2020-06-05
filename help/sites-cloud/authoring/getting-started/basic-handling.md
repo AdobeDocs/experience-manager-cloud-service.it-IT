@@ -1,11 +1,11 @@
 ---
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e le funzioni di base
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2864'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navi
 
 Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata la console **Sites**. Tocca o fai clic su **Sites** per iniziare.
 
-## Navigazione nel prodotto   {#product-navigation}
+## Navigazione nel prodotto  {#product-navigation}
 
 Ogni volta che un utente accede per la prima volta a una console, viene avviata un’esercitazione relativa alla navigazione nel prodotto. Dedica alcuni minuti all’esercitazione per ottenere una buona panoramica dell’utilizzo di base di AEM.
 
@@ -52,18 +52,18 @@ Per chiudere il pannello di navigazione globale e tornare alla posizione precede
 
 La navigazione globale presenta due pannelli, rappresentati da icone sul lato sinistro dello schermo:
 
-* **[Navigazione](#navigation-panel)**: rappresentata da una bussola   e il pannello predefinito al momento dell’accesso ad AEM
+* **[Navigazione](#navigation-panel)**: rappresentata da una bussola  e il pannello predefinito al momento dell’accesso ad AEM
 * **[Strumenti](#tools-panel)**: rappresentati da un martello
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
 
-### Pannello di navigazione   {#navigation-panel}
+### Pannello di navigazione  {#navigation-panel}
 
 Pannello di navigazione:
 
 ![Pannello di navigazione](/help/sites-cloud/authoring/assets/navigation.png)
 
-Il titolo della scheda del browser si aggiorna per riflettere la posizione in cui ci si sposta attraverso le console e il contenuto.
+Il titolo della scheda del browser si aggiorna per riflettere la posizione in cui ci si sposta nelle console e nel contenuto.
 
 Nel pannello di navigazione sono disponibili le console seguenti:
 
@@ -157,9 +157,9 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
 * Navigazione tramite tastiera
 
-   Potete navigare in un sito Web utilizzando solo la tastiera. Questo utilizza la funzionalità standard del browser del tasto **TAB** (o **OPT+TAB**) per spostarvi tra gli elementi della pagina che sono attivabili.
+   Potete navigare in un sito web utilizzando solo la tastiera. In questa modalità, si utilizza la funzionalità standard del browser per il tasto **TAB** (o **OPZ+TAB**) per spostarsi tra gli elementi della pagina che possono essere attivati.
 
-   Nella console **Siti** è stata aggiunta l’opzione per **passare al contenuto** principale. Questo diventa visibile quando si passano le opzioni di intestazione e la navigazione diventa più veloce, consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
+   Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. L’opzione diventa visibile quando ci si sposta tra le opzioni di intestazione, la navigazione diventa più veloce e consente di saltare gli elementi standard nella barra degli strumenti (prodotto) per passare direttamente al contenuto principale.
 
    ![Passa al contenuto principale](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
@@ -205,7 +205,7 @@ Sono disponibili diverse risorse di Aiuto:
    >* [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
-## Barra delle azioni   {#actions-toolbar}
+## Barra delle azioni  {#actions-toolbar}
 
 Ogni volta che selezioni una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo descrittivo nella barra degli strumenti. Queste azioni dipendono da:
 
@@ -225,7 +225,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 >
 >Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
-## Azioni rapide   {#quick-actions}
+## Azioni rapide  {#quick-actions}
 
 Nella [Vista a schede](#card-view) alcune azioni sono disponibili come icone di scelta rapida, oltre che dalla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un elemento alla volta ed evitano di dover preselezionare le opzioni.
 
@@ -241,13 +241,13 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
-* [Vista a elenco  ](#list-view)
+* [Vista a elenco](#list-view)
 
 >[!NOTE]
 >
 >Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
-### Selezionare le risorse   {#selecting-resources}
+### Selezionare le risorse  {#selecting-resources}
 
 La selezione di una specifica risorsa dipende dalla combinazione della vista e del dispositivo utilizzati:
 
@@ -338,7 +338,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](#the-header).
 
-### Vista a elenco   {#list-view}
+### Vista a elenco  {#list-view}
 
 ![Vista a elenco](/help/sites-cloud/authoring/assets/list-view.png)
 
@@ -411,7 +411,7 @@ Mediante il pannello laterale della struttura del contenuto, insieme alla vista 
 >
 >Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
-### Timeline   {#timeline}
+### Timeline  {#timeline}
 
 Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezionata. Per aprire la colonna della timeline, utilizza il selettore della barra a sinistra:
 
