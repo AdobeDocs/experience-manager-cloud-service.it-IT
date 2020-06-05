@@ -1,11 +1,11 @@
 ---
 title: Guida rapida alle linee guida WCAG 2.1
 description: Guida rapida alle linee guida WCAG 2.1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ La [versione 2.1 delle linee guida per l’accessibilità dei contenuti web (WCA
 
 >[!NOTE]
 > 
-> WCAG 2.1 aggiorna la versione precedente WCAG 2.0, dal 2008. Vedi il [confronto tra WCAG 2.1 e WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+> Le linee guida WCAG 2.1 rappresentano un aggiornamento della versione precedente, WCAG 2.0, del 2008. Vedi il [confronto tra WCAG 2.1 e WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
 
 >[!NOTE]
 > 
@@ -28,7 +28,7 @@ Le linee guida WCAG 2.1 sono costituite da un insieme di criteri di successo e l
 
 Ad esempio, la descrizione di un’immagine (o di qualsiasi altro contenuto non testuale) tramite l’attributo `alt` nel linguaggio HTML offre notevoli vantaggi alle persone non vedenti o ipovedenti. La descrizione testuale contenuta nell’attributo `alt` può essere convertita in un output vocale o trasmessa a display Braille elettronici aggiornabili.
 
-Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. persone che, a causa di fattori quali tecnologia di navigazione, velocità della connessione di rete o ambiente di navigazione, possono incontrare barriere simili alle persone con disabilità.
+Inoltre, la conformità alle linee guida WCAG 2.1 può offrire vantaggi anche ad altri beneficiari, tra cui persone con *disabilità situazionale*: persone che, a causa di fattori quali tecnologia di navigazione, velocità della connessione di rete o ambiente di navigazione, possono incontrare barriere simili alle persone con disabilità.
 
 Utilizzando Adobe Experience Manager, gli autori di contenuti e/o i proprietari di siti web possono creare contenuti web che soddisfano i criteri di successo WCAG 2.1 pertinenti di livello A e AA.
 
@@ -42,8 +42,8 @@ in altre parole, si tratta di linee guida che possono essere applicate a diversi
 * **Testabili**:
 ogni istruzione è redatta in modo da poter essere testata in modo oggettivo affinché un gruppo di esperti di accessibilità possa concordare in linea generale sul fatto che la linea guida sia stata rispettata. Una delle problematiche correlate all’accessibilità, infatti, consiste nel fatto che alcune linee guida possono essere tecnicamente testabili, mentre altre richiedono una valutazione umana per verificare se siano state rispettate o meno.
 
-* Supporto dell&#39;implementazione contestuale e **con priorità:**
-Le linee guida del WCAG 2.1 hanno priorità, relative al probabile impatto del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere una decisione informata sulle linee guida più importanti per la loro situazione particolare. Inoltre, viene introdotto il concetto di *accessibilità supportata* . Questo consente agli autori di decidere come utilizzare al meglio le tecnologie Web che potrebbero non disporre del supporto completo per l&#39;accessibilità, o che potrebbero richiedere agli utenti di disporre di tecnologie e/o browser di assistenza specifici per beneficiare delle funzioni di accessibilità.
+* Supporto dell’**implementazione contestuale e basata su priorità**:
+alle linee guida WCAG 2.1 vengono assegnate priorità basate sull’impatto probabile del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere decisioni informate sulle linee guida più importanti per una situazione specifica. Viene inoltre introdotto il concetto di *supporto dell’accessibilità*. Questo consente agli autori di decidere come utilizzare al meglio le tecnologie web che potrebbero non prevedere il supporto completo per l’accessibilità oppure che, per beneficiare delle funzioni di accessibilità, potrebbero richiedere l’accesso a particolari browser e/o tecnologie per l’accessibilità.
 
 Tali obiettivi hanno influenzato in modo significativo la struttura delle linee guida WCAG 2.1.
 
@@ -70,14 +70,14 @@ In particolare:
 * Ogni linea guida è costituita da uno o più **criteri di successo**.
 * I criteri di successo sono formulati come istruzioni, che possono essere `True` o `False` per una determinata pagina web.
 * I criteri di successo possono includere una o più opzioni oppure eccezioni, ovvero situazioni in cui non è necessario soddisfare i criteri di successo.
-* I criteri di successo sono numerati in base alla linea guida e al principio padre, da 1.1.1 a 4.1.1. Hanno anche un nome breve che riassume l’intento del criterio, per un riferimento più semplice. For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
+* I criteri di successo sono numerati in base alla linea guida e al principio padre, da 1.1.1 a 4.1.1. Hanno anche un nome breve che riassume l’intento del criterio, per un riferimento più semplice. Ad esempio, il criterio di successo [1.1.1 prevede contenuto non testuale](https://www.w3.org/TR/WCAG/#non-text-content).
 * I criteri di successo includono un elenco delle **tecniche** correlate (descritte più in dettaglio di seguito).
 
 ## Risorse di supporto {#supporting-resources}
 
 Oltre alle componenti WCAG 2.1 di base, ovvero principi, linee guida e criteri di successo, è disponibile una serie di documenti di supporto. Alcuni forniscono consigli specifici su come soddisfare gli aspetti delle linee guida; altri sono riferimenti più generali che aiutano gli autori, i designer e gli sviluppatori a comprendere e utilizzare le linee guida WCAG 2.1 nel modo più efficace possibile, a prescindere dal loro livello di competenza.
 
-Mentre il WCAG 2.1 è un documento stabile e non cambierà, la maggior parte di queste risorse di supporto sono documenti dinamici; cambieranno e cresceranno nel tempo, man mano che emergeranno nuove tecnologie, e si scopriranno nuovi esempi di come l&#39;accessibilità del web può essere raggiunta.
+Mentre le linee guida WCAG 2.1 rappresentano di per sé un documento stabile che non verrà modificato, la maggior parte delle risorse di supporto è costituita da documenti dinamici che verranno modificati e incrementati nel tempo, man mano che emergono nuove tecnologie e si scoprono nuovi esempi di come l’obiettivo di accessibilità dei contenuti web possa essere conseguito.
 
 ### Risorse WCAG 2.1 {#wcag-resources}
 
@@ -94,7 +94,7 @@ L’elenco non è esaustivo, ma fornisce un’introduzione alle risorse disponib
 
 Le linee guida forniscono informazioni sulle novità di WCAG 2.1:
 
-* [Novità di WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) fornisce informazioni importanti sul delta tra WCAG 2.0 e WCAG 2.1.
+* Il documento [Novità delle linee guida WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) fornisce informazioni utili sulle differenze tra le versioni WCAG 2.0 e WCAG 2.1.
 
 * La sezione [WCAG 2.0 e WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) approfondisce ulteriormente il confronto.
 
@@ -111,7 +111,7 @@ Poiché le tecniche sono molto più specifiche dei criteri di successo, in gener
 * In base alla raccolta - Le tecniche possono essere generali o correlate a una tecnologia oppure a un formato specifico, ad esempio HTML, CSS o script sul lato client.
 * Da criteri di successo correlati - Le tecniche possono essere applicate a più criteri di successo.
 
-Ogni tecnica ha un numero univoco, relativo alla raccolta corrispondente. For example, one of the ARIA techniques is [Technique ARIA2: Identifying a required field with the aria-required property](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
+Ogni tecnica ha un numero univoco, relativo alla raccolta corrispondente. Ad esempio, una delle tecniche ARIA è [ARIA2: identificazione di un campo obbligatorio con la proprietà aria-required](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
 Le tecniche possono essere sufficienti, consigliate o di errore.
 
@@ -145,7 +145,7 @@ Nella sezione per la [comprensione del criterio di successo 1.1.1 (“Contenuti 
 
 ### Come soddisfare le linee guida WCAG 2.1 {#how-to-meet-wcag}
 
-Nella pagina dedicata a [come soddisfare le linee guida WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) sono disponibili indicazioni sulla conformità alle linee guida. Questa sezione fornisce una presentazione alternativa di WCAG, consentendo ai lettori di affinare il contenuto delle linee guida ai più pertinenti ai propri interessi e/o circostanze. È possibile filtrare le tecniche relative ai criteri di successo da visualizzare specificando particolari tecnologie di contenuti web, ad esempio Cascading Style Sheets o script oppure specificando un particolare livello di priorità.
+Nella pagina dedicata a [come soddisfare le linee guida WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) sono disponibili indicazioni sulla conformità alle linee guida. Viene fornita una presentazione alternativa delle linee guida WCAG, che consente ai lettori di ottenere i contenuti delle linee guida pertinenti in base ai propri interessi e/o obiettivi. È possibile filtrare le tecniche relative ai criteri di successo da visualizzare specificando particolari tecnologie di contenuti web, ad esempio Cascading Style Sheets o script oppure specificando un particolare livello di priorità.
 
 Se non viene applicato alcun filtro, vengono presentati tutti i criteri di successo raggruppati per linea guida. Per ciascun criterio di successo, vengono fornite le seguenti informazioni:
 
