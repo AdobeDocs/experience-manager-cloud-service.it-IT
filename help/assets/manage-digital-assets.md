@@ -4,9 +4,9 @@ description: Scopri i diversi metodi di gestione e modifica delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: d262d4493939f0fc60a98ef4ff892fbce5f526ab
 workflow-type: tm+mt
-source-wordcount: '4284'
+source-wordcount: '4396'
 ht-degree: 12%
 
 ---
@@ -37,7 +37,19 @@ I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
 ## Upload assets {#uploading-assets}
 
-Per informazioni dettagliate, consultate [Aggiunta di risorse digitali a Experience Manager](add-assets.md).
+Consultate [Aggiunta di risorse digitali a Experience Manager](add-assets.md).
+
+## Rilevare risorse duplicate {#detect-duplicate-assets}
+
+<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
+
+Se una risorsa duplicata esiste nell’archivio DAM, Assets la rileva e invia una notifica all’utente. Per impostazione predefinita, il rilevamento di duplicati è disabilitato. Per abilitare questa funzione, configura [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Scopri [come eseguire le configurazioni](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. Il rilevamento della duplicazione si basa sul `dam:sha1` valore univoco memorizzato in `jcr:content/metadata/dam:sha1`. Ciò significa che le risorse duplicate vengono rilevate anche se i nomi dei file sono diversi.
+
+![Rileva configurazione OSGi della risorsa duplicata](assets/duplicate-detection.png)
+
+Una volta attivato, Experience Manager invia alla inbox le notifiche delle risorse duplicate. Si tratta di un risultato aggregato per più duplicati. Gli utenti possono scegliere di rimuovere le risorse in base ai risultati.
+
+![Notifica Inbox per risorse duplicate](assets/duplicate-detect-inbox-notification.png)
 
 ## Visualizzare le risorse {#previewing-assets}
 
@@ -52,7 +64,7 @@ Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni
 
    Toccate **[!UICONTROL Ripristina]** per ripristinare le dimensioni originali della visualizzazione.
 
-## Modifica proprietà {#editing-properties}
+## Modifica delle proprietà {#editing-properties}
 
 1. Andate alla posizione della risorsa di cui desiderate modificare i metadati.
 
@@ -89,6 +101,7 @@ Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni
    * Numero di volte in cui la risorsa è stata visualizzata o scaricata
    * Canali/dispositivi attraverso i quali è stata utilizzata la risorsa
    * Soluzioni creative in cui la risorsa è stata utilizzata di recente
+
    Per ulteriori dettagli, consulta [Informazioni approfondite](assets-insights.md)sulle risorse.
 
 1. Toccate o fate clic su **[!UICONTROL Salva e chiudi]**.
@@ -160,6 +173,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    * Toccate/fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Seleziona destinazione]** .
 
    * Toccate/fate clic su **[!UICONTROL Annulla]** per interrompere l&#39;operazione di spostamento.
+
    Se non aggiornate i riferimenti, continueranno a indicare il percorso precedente della risorsa. Se regolate i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
 
 ### Gestire le rappresentazioni {#managing-renditions}
@@ -233,6 +247,7 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
       * Se la risorsa non dispone di riferimenti, viene eliminata.
       * Se la risorsa dispone di riferimenti, un messaggio di errore vi informa che **Una o più risorse dispongono di riferimenti.** Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+
    >[!NOTE]
    >
    >Per poter eliminare una risorsa è necessario disporre delle autorizzazioni di eliminazione per la risorsa DAM o la risorsa. Se disponete solo di autorizzazioni di modifica, potete modificare solo i metadati della risorsa e aggiungere delle annotazioni alla risorsa. Tuttavia, non potete eliminare la risorsa o i relativi metadati.
@@ -292,6 +307,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    * **[!UICONTROL Annulla]** per interrompere l’azione
    * **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse non sono più pubblicate (non sono più disponibili nell’ambiente di pubblicazione) alla data specificata.
+
    >[!NOTE]
    >
    >Quando si annulla la pubblicazione di una risorsa complessa, è necessario annullare la pubblicazione solo della risorsa. Evitate di annullare la pubblicazione dei riferimenti, in quanto ad essi potrebbero fare riferimento altre risorse pubblicate.
@@ -344,6 +360,7 @@ Gli strumenti di modifica nell’interfaccia di Risorse AEM consentono di effett
    * Selezionate la risorsa, quindi toccate o fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
    * Toccate/fate clic sull&#39;icona **[!UICONTROL Modifica]** visualizzata su una risorsa nella vista a schede.
    * Nella pagina della risorsa, toccate o fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Per ritagliare l’immagine, toccate o fate clic sull’icona **Ritaglia** .
@@ -385,7 +402,7 @@ Gli strumenti di modifica nell’interfaccia di Risorse AEM consentono di effett
 >
 >Per modificare un file TXT, impostare **Day CQ Link Externalizer** da Configuration Manager.
 
-## Timeline   {#timeline}
+## Timeline  {#timeline}
 
 La timeline consente di visualizzare vari eventi per un elemento selezionato, ad esempio flussi di lavoro attivi per una risorsa, commenti/annotazioni, registri attività e versioni.
 
@@ -414,6 +431,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    * [Azioni rapide](#quick-actions)
    * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
