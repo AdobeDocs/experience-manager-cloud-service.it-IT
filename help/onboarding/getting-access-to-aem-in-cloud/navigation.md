@@ -2,9 +2,9 @@
 title: Navigazione
 description: Navigazione - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
+source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
@@ -35,28 +35,30 @@ Per ulteriori informazioni su come aggiungere utenti a un profilo, consulta [Acc
 
    ![](assets/sys-admin5.png)
 
-1. Fai clic su **Gestisci accesso** per accedere all&#39; **Admin Console** da cui puoi gestire i ruoli utente o le autorizzazioni per Cloud Manager.
+1. Dopo aver fatto clic su **Gestisci accesso**, puoi accedere ad **Admin Console** da dove puoi gestire i ruoli utente o le autorizzazioni per Cloud Manager.
+
+   ![](assets/sys-admin1.png)
 
 ### Gestione dell&#39;accesso all&#39;istanza Author {#manage-access-aem}
 
-In qualità di utente con il ruolo SysAdmin, puoi accedere con un solo clic ad **Admin Console** da dove puoi passare direttamente all’istanza Author e gestire l’accesso.
+In qualità di utente con il ruolo SysAdmin, puoi accedere con un solo clic ad **Admin Console** da dove puoi passare direttamente all’istanza di creazione e gestire l’accesso.
 
 >[!NOTE]
 >Per alcune organizzazioni alle quali è stato concesso l&#39;accesso ad AEM come servizio cloud prima di gennaio 2020, questi verranno indirizzati ad Adobe Admin Console e sarà necessario selezionare Product and Environment Product Profile (Profilo prodotto e ambiente).
 
 Per ulteriori informazioni, consultate [Accesso a un’istanza in AEM come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) cloud.
 
-1. Passare alla scheda **Ambienti** dalla pagina Panoramica **del** programma.
+1. Passare alla scheda **Ambienti** dalla pagina Panoramica **del** programma e fare clic su **Gestisci accesso**.
 
    ![](assets/sys-admin6.png)
 
    Oppure,
 
-   Fate clic su **Dettagli** dalla scheda **Ambienti** per aprire la pagina Ambienti. Fate clic su **Gestisci** -> **Gestisci accesso**.
+   **Gestisci accesso** è disponibile anche dal pulsante **Gestisci** , se fate clic su **Dettagli** dalla scheda **Ambienti** .
 
    ![](assets/sys-admin4.png)
 
-1. Fai clic su **Gestisci accesso** per accedere ad **Admin Console** da dove puoi accedere all&#39;istanza Author di un ambiente.
+1. Dopo aver fatto clic su **Gestisci accesso**, puoi accedere ad **Admin Console** da dove hai accesso all’istanza di creazione dell’ambiente.
 
 ## Per i clienti AMS esistenti {#existing-aem}
 
