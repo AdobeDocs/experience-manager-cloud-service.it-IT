@@ -4,7 +4,10 @@ description: Scopri come trovare le risorse necessarie in AEM utilizzando il pan
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 7317a5db6ed348f99b2290d72ddf6e540fae5456
+workflow-type: tm+mt
+source-wordcount: '4529'
+ht-degree: 7%
 
 ---
 
@@ -23,7 +26,7 @@ AEM supporta i seguenti casi di utilizzo e questo articolo descrive l’utilizzo
 | [Comprendere i risultati della ricerca e il comportamento](#searchbehavior) | [Modificare i facet di ricerca](#searchfacets) | [Aggiornamenti di massa dei metadati](#metadataupdates) |
 | [Classificazione e incremento della ricerca](#searchrank) | [Estrazione del testo](#extracttextupload) | [Raccolte intelligenti](#collections) |
 | [Ricerca avanzata: filtraggio e ambito di ricerca](#scope) | [predicati personalizzati](#custompredicates) | [Comprendere risultati](#unexpectedresults) imprevisti e [risolvere i problemi](#troubleshoot) |
-| [Cerca da altre soluzioni e app](#beyondomnisearch): Collegamento <br />[risorse](#aal) app <br />[](#desktopapp) desktop <br />     Immagini [](#adobestock) Adobe Stock <br />     Risorse per contenuti multimediali [dinamici](#dynamicmedia) |  |  |
+| [Cerca da altre soluzioni e app](#beyondomnisearch): <br />     [Collegamento](#aal) risorsa app <br />[desktop](#desktopapp) <br />     [Immagini Adobe Stock](#adobestock) <br />     [Risorse per file multimediali dinamici](#dynamicmedia) |  |  |
 | [Selettore/selettore risorse](#assetselector) |  |  |
 | [Limitazioni](#tips) e [suggerimenti](#limitations) |  |  |
 | [Esempi illustrati](#samples) |  |  |
@@ -38,9 +41,9 @@ La funzionalità di ricerca di AEM supporta la ricerca di raccolte e la ricerca 
 
 Acquisisci familiarità con l’interfaccia di ricerca e le azioni disponibili.
 
-![](assets/aem_search_results.png) Informazioni sulle parti dell’interfaccia *dei risultati della ricerca Risorse* Figura: Informazioni sulle parti dell’interfaccia dei risultati di ricerca di Risorse
+![Informazioni sulle parti dell’interfaccia](assets/aem_search_results.png)dei risultati della ricerca Risorse *Figura:* Informazioni sulle parti dell’interfaccia dei risultati di ricerca di Risorse
 
-**** A. Salvate la ricerca come Smart Collection. **** B. Filtri (predicati) per limitare i risultati della ricerca. **C.** Visualizzare file, cartelle o entrambi nei risultati della ricerca. **** D. Fate clic su Filtri per aprire o chiudere la barra a sinistra. **** E. Il percorso di ricerca è DAM. ************ F. Campo di ricerca Omnisearch con la parola chiave di ricerca **G fornita dall&#39;utente. Casella di controllo per selezionare tutti i risultati di ricerca** H. Numero di risultati di ricerca visualizzati rispetto al totale dei risultati di ricerca **I. Chiudere la ricerca** J. Passaggio tra la vista a schede e quella a elenco
+**A.** Salva la ricerca come Raccolta avanzata. **B.** Filtri (predicati) per limitare i risultati della ricerca. **C.** Visualizza file, cartelle o entrambi nei risultati della ricerca. **D.** Fai clic su Filtri per aprire o chiudere la barra a sinistra. **E.** Il percorso di ricerca è DAM. **F.** Campo di ricerca Omnisearch con la parola chiave di ricerca fornita dall’utente. **G.** Casella di controllo per selezionare tutti i risultati di ricerca **H.** Numero di risultati di ricerca visualizzati rispetto al totale dei risultati **I.** Chiudi la ricerca **J.** Passaggio tra la vista a schede e la vista a elenco
 
 ### Facet di ricerca dinamici {#dynamicfacets}
 
@@ -64,9 +67,9 @@ Quando iniziate a digitare una parola chiave, in AEM vengono suggerite le parole
 
 ### Termini e risultati di ricerca di base {#searchbasics}
 
-Potete eseguire ricerche per parole chiave dal campo OmniSearch. La ricerca per parola chiave non fa distinzione tra maiuscole e minuscole ed è una ricerca full-text (nei più comuni campi di metadati). Se vengono utilizzate più parole chiave, `AND` è l&#39;operatore predefinito tra le parole chiave. I risultati sono ordinati in base alla rilevanza, a partire da corrispondenze più simili. Per più parole chiave, i risultati più rilevanti sono le risorse che contengono entrambi i termini nei metadati. All’interno dei metadati, le parole chiave che appaiono come smart tag hanno una classificazione più alta rispetto alle parole chiave che appaiono in altri campi di metadati.
+Potete eseguire ricerche per parole chiave dal campo OmniSearch. La ricerca per parola chiave non fa distinzione tra maiuscole e minuscole ed è una ricerca full-text (nei più comuni campi di metadati). Se vengono utilizzate più parole chiave, `AND` è l&#39;operatore predefinito tra le parole chiave. I risultati sono ordinati in base alla rilevanza, a partire da corrispondenze più simili. Per più parole chiave, i risultati più rilevanti sono le risorse che contengono entrambi i termini nei metadati. All’interno dei metadati, le parole chiave che appaiono come smart tag hanno una classificazione più alta rispetto alle parole chiave che vengono visualizzate in altri campi di metadati.
 
-AEM consente di attribuire maggiore importanza a un particolare termine di ricerca. È inoltre possibile aumentare il rango di alcune risorse con targeting per termini di ricerca specifici. Gli amministratori di AEM possono eseguire queste configurazioni come descritto di seguito.
+AEM consente di assegnare un particolare termine di ricerca con maggiore rilevanza. È inoltre possibile aumentare il rango di alcune risorse con targeting per termini di ricerca specifici. Gli amministratori di AEM possono eseguire queste configurazioni come descritto di seguito.
 
 Per trovare rapidamente le risorse rilevanti, l’interfaccia avanzata offre meccanismi di filtraggio, ordinamento e selezione. Potete filtrare i risultati in base a più criteri e visualizzare il numero di risorse ricercate per vari filtri. In alternativa, potete eseguire nuovamente la ricerca modificando la query nel campo Omnisearch. Quando modificate i termini di ricerca o i filtri, gli altri filtri rimangono applicati per mantenere il contesto della ricerca.
 
@@ -93,15 +96,15 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 
 ### Classificazione e incremento della ricerca {#searchrank}
 
-I risultati della ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati della ricerca che corrispondono a qualsiasi termine di ricerca negli smart tag. Nell&#39;esempio precedente, l&#39;ordine approssimativo di visualizzazione dei risultati della ricerca è:
+I risultati della ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati della ricerca che corrispondono a uno qualsiasi dei termini di ricerca negli smart tag. Nell&#39;esempio precedente, l&#39;ordine approssimativo di visualizzazione dei risultati della ricerca è:
 
 1. Corrisponde `woman running` ai vari campi di metadati.
 1. Corrisponde a `woman running` negli smart tag.
-1. Corrisponde a `woman` o a `running` negli smart tag.
+1. Corrispondenza di `woman` o di `running` in smart tag.
 
 Potete migliorare la rilevanza delle parole chiave per risorse particolari per migliorare le ricerche in base alle parole chiave. In altre parole, le immagini per le quali vengono promosse parole chiave specifiche vengono visualizzate nella parte superiore dei risultati della ricerca quando si esegue una ricerca basata su tali parole chiave.
 
-1. Dall’interfaccia utente Risorse, aprite la pagina delle proprietà della risorsa. Fate clic su **[!UICONTROL Avanzate]** e toccate o fate clic su **[!UICONTROL Aggiungi]** in **[!UICONTROL Elevate per cercare le parole chiave]**.
+1. Dall’interfaccia utente Assets, apri la pagina delle proprietà della risorsa. Fai clic su **[!UICONTROL Avanzate]** e tocca o fai clic su **[!UICONTROL Aggiungi]** in **[!UICONTROL Privilegi elevati per parole chiave di ricerca]**.
 1. Nella casella **[!UICONTROL Search Promote (Promuovi]** ricerca), specificate una parola chiave per la quale desiderate incrementare la ricerca dell&#39;immagine e quindi fate clic o toccate **[!UICONTROL Aggiungi]**. Potete specificare più parole chiave nello stesso modo.
 1. Tocca o fai clic su **[!UICONTROL Salva e chiudi]**. La risorsa promossa per questa parola chiave viene visualizzata tra i primi risultati della ricerca.
 
@@ -138,7 +141,7 @@ Dall’interfaccia utente di AEM, gli utenti possono effettuare ricerche nelle r
 
 ### Risorse per file multimediali dinamici {#dmassets}
 
-Per filtrare le immagini per gli elementi multimediali dinamici, selezionate Contenuti multimediali **[!UICONTROL dinamici > Set]** dal pannello **[!UICONTROL Filtri]** . Filtra e visualizza risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi.
+Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri seleziona Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi.
 
 ### Ricerca utilizzando valori specifici nei campi di metadati {#gqlsearch}
 
@@ -156,7 +159,7 @@ Potete usare le risorse in base ai valori esatti di specifici campi di metadati,
 | Condizioni d&#39;uso | usageterms:&quot;CopyRights Reserved&quot; |
 | Creato | create:YYYY-MM-DDTHH |
 | Data scadenza | expires:AAAA-MM-DTHH |
-| Ora di attivazione | ontime:AAAA-MM-DTHH |
+| Ora di attivazione | ontime:YYYY-MM-DTHH |
 | Ora di disattivazione | offtime:AAAA-MM-DTHH |
 | Intervallo di tempo (data di scadenza, ora di disattivazione) | campo facet : in basso..upperbound |
 | Percorso | /content/dam/&lt;nome cartella> |
@@ -175,7 +178,7 @@ La parola chiave per una proprietà generata dall&#39;utente è la relativa etic
 Di seguito sono riportati alcuni esempi di formati di ricerca per query complesse:
 
 * Per visualizzare tutte le risorse con più campi facet (ad esempio: title=John Doe e strumento di creazione = Adobe Photoshop): `title:"John Doe" creatortool : Adobe*`
-* Per visualizzare tutte le risorse quando il valore facet non è una singola parola ma una frase (ad esempio: title=Scott Reynolds): `title:"Scott Reynolds"`
+* Per visualizzare tutte le risorse quando il valore dei facet non è una singola parola ma una frase (ad esempio: title=Scott Reynolds): `title:"Scott Reynolds"`
 * Per visualizzare le risorse con più valori di una singola proprietà (ad esempio: title=Scott Reynolds o John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * Per visualizzare le risorse con valori di proprietà che iniziano con una stringa specifica (ad esempio: title is Scott Reynolds): `title:Scott*`
 * Per visualizzare le risorse con valori di proprietà che terminano con una stringa specifica (ad esempio: title is Scott Reynolds): `title:*Reynolds`
@@ -184,11 +187,11 @@ Di seguito sono riportati alcuni esempi di formati di ricerca per query compless
 
 ## Cercare risorse da altre offerte o interfacce AEM {#beyondomnisearch}
 
-Adobe Experience Manager (AEM) collega l&#39;archivio DAM a diverse altre soluzioni AEM per fornire un accesso più rapido alle risorse digitali e semplificare i flussi di lavoro creativi. Qualsiasi individuazione di risorse inizia con ricerca o ricerca. Il comportamento di ricerca rimane in gran parte lo stesso sulle diverse superfici e soluzioni. Alcuni metodi di ricerca cambiano man mano che l’audience di destinazione, i casi di utilizzo e l’interfaccia utente variano tra le soluzioni AEM. I metodi specifici sono documentati per le singole soluzioni ai link seguenti. I suggerimenti e i comportamenti universalmente applicabili sono documentati in questo articolo.
+Adobe Experience Manager (AEM) collega l&#39;archivio DAM a diverse altre soluzioni AEM per fornire un accesso più rapido alle risorse digitali e semplificare i flussi di lavoro creativi. Qualsiasi individuazione di risorse inizia con ricerca o ricerca. Il comportamento di ricerca rimane in gran parte lo stesso per le diverse superfici e soluzioni. Alcuni metodi di ricerca cambiano man mano che l’audience di destinazione, i casi di utilizzo e l’interfaccia utente variano tra le soluzioni AEM. I metodi specifici sono documentati per le singole soluzioni ai link seguenti. I suggerimenti e i comportamenti universalmente applicabili sono documentati in questo articolo.
 
 ### Cercare risorse dal pannello Collegamento risorse di Adobe {#aal}
 
-Con Adobe Asset Link, i creativi professionisti possono ora accedere al contenuto memorizzato in AEM Assets, senza uscire dalle app Adobe Creative Cloud supportate. I creativi possono sfogliare, cercare, estrarre e archiviare facilmente le risorse utilizzando il pannello in-app nelle app Creative Cloud: Photoshop, Illustrator e InDesign. Collegamento risorsa consente anche agli utenti di effettuare ricerche con risultati visivamente simili. I risultati della visualizzazione della ricerca visiva sono basati sugli algoritmi di machine learning di Adobe Sensei e consentono agli utenti di trovare immagini esteticamente simili. Consultate [Cercare e sfogliare le risorse](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) tramite Adobe Asset Link.
+Con Adobe Asset Link, i creativi professionisti possono ora accedere al contenuto memorizzato in AEM Assets, senza uscire dalle app Adobe Creative Cloud supportate. I creativi possono sfogliare, cercare, estrarre e archiviare facilmente le risorse utilizzando il pannello in-app nelle app Creative Cloud: Photoshop, Illustrator e InDesign. Collegamento risorsa consente anche agli utenti di effettuare ricerche con risultati visivamente simili. I risultati della visualizzazione della ricerca visiva sono basati sugli algoritmi di machine learning di Adobe Sensei e consentono agli utenti di trovare immagini esteticamente simili. Consultate [Cercare e sfogliare le risorse](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) tramite Adobe Asset Link.
 
 ### Cercare risorse nell’app desktop AEM {#desktopapp}
 
@@ -204,7 +207,7 @@ Dall’interfaccia utente di AEM, gli utenti possono effettuare ricerche nelle r
 
 ### Ricerca di risorse per file multimediali dinamici {#dynamicmedia}
 
-Per filtrare le immagini per gli elementi multimediali dinamici, selezionate **[!UICONTROL Contenuti multimediali]** dinamici > **[!UICONTROL Set]** dal pannello **[!UICONTROL Filtri]** . Filtra e visualizza risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi. Durante la creazione di pagine Web, gli autori possono cercare i set direttamente da Content Finder. Un filtro per i set è disponibile in un menu a comparsa.
+Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri]** seleziona **[!UICONTROL Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi. Durante la creazione di pagine web, gli autori possono cercare i set direttamente da Content Finder. Nel menu pop-up è disponibile un filtro per i set.
 
 ### Cercare risorse in Content Finder durante la creazione di pagine Web {#contentfinder}
 
@@ -229,18 +232,18 @@ Puoi trasmettere i seguenti parametri di richiesta in un URL per avviare il sele
 |---|---|---|---|
 | suffisso risorsa (B) | Percorso della cartella come suffisso della risorsa nell’URL:[https://localhost:4502/aem/assetpicker.html/&lt;percorso_cartella>](https://localhost:4502/aem/assetpicker.html) | Per avviare il selettore risorse con una particolare cartella selezionata, ad esempio con la cartella /content/dam/we-retail/en/activity selezionata, l’URL deve essere del modulo: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Se al momento dell’avvio del selettore delle risorse è necessario selezionare una determinata cartella, passatela come suffisso di risorsa. |
 | mode | singolo, multiplo | [https://localhost:4502/aem/assetpicker.html?mode=multiplehttps://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=multiplehttps://localhost:4502/aem/assetpicker.html?mode=single) | In modalità multipla, potete selezionare più risorse contemporaneamente utilizzando il selettore delle risorse. |
-| mimetype | tipo(i) mimetico(`/jcr:content/metadata/dc:format`) di una risorsa (supportato anche dai caratteri jolly) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png)</li></ul> | Utilizzatelo per filtrare le risorse in base ai tipi MIME |
+| mimetype | tipo(i) mimetico(`/jcr:content/metadata/dc:format`) di una risorsa (supportato anche dai caratteri jolly) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png)</li></ul> | Utilizzatelo per filtrare le risorse in base ai tipi MIME |
 | finestra di dialogo | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Usate questi parametri per aprire il selettore delle risorse come finestra di dialogo Granite. Questa opzione è applicabile solo quando si avvia il selettore delle risorse tramite Granite Path Field e lo si configura come URL pickerSrc. |
 | assettype (S) | immagini, documenti, contenuti multimediali, archivi | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Utilizzate questa opzione per filtrare i tipi di risorse in base al valore passato. |
-| root | &lt;percorso_cartella> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Utilizzate questa opzione per specificare la cartella principale per il selettore di risorse. In questo caso, il selettore delle risorse consente di selezionare solo le risorse secondarie (dirette/indirette) sotto la cartella principale. |
+| root | &lt;percorso_cartella> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Utilizzate questa opzione per specificare la cartella principale per il selettore di risorse. In questo caso, il selettore delle risorse consente di selezionare solo le risorse secondarie (dirette/indirette) sotto la cartella principale. |
 
-Per accedere all’interfaccia del selettore delle risorse, passate a `https://[AEM server]:[port]/aem/assetpicker`. Individuate la cartella desiderata e selezionate una o più risorse. In alternativa, cercate la risorsa desiderata dalla casella di ricerca Omnico, applicate il filtro in base alle esigenze, quindi selezionatela.
+Per accedere all’interfaccia del selettore delle risorse, passate a `https://[AEM server]:[port]/aem/assetpicker`. Individuate la cartella desiderata e selezionate una o più risorse. In alternativa, cercate la risorsa desiderata dalla casella di ricerca Omnico, applicate il filtro in base alle vostre esigenze, quindi selezionatela.
 
-![Sfogliare e selezionare la risorsa nel selettore risorse](assets/assetpicker.png)
+![Sfogliare e selezionare la risorsa nel selettore delle risorse](assets/assetpicker.png)
 
-Sfogliare e selezionare la risorsa nel selettore risorse
+Sfogliare e selezionare la risorsa nel selettore delle risorse
 
-## Limiti {#limitations}
+## Limitazioni  {#limitations}
 
 La funzionalità di ricerca in AEM Assets presenta i seguenti limiti:
 
@@ -249,10 +252,10 @@ La funzionalità di ricerca in AEM Assets presenta i seguenti limiti:
 * Durante la ricerca di cartelle, file e cartelle, i risultati della ricerca non possono essere ordinati in base ad alcun parametro.
 * Se premete Invio senza digitare nulla nella barra di ricerca Omnisearch, AEM restituisce un elenco di soli file e non di cartelle. Se cercate specificamente delle cartelle senza utilizzare una parola chiave, AEM non restituisce alcun risultato.
 
-La ricerca visiva o per similarità presenta le seguenti limitazioni:
+La ricerca visiva o la ricerca per similarità presenta le seguenti limitazioni:
 
 * La ricerca visiva funziona meglio con archivi più grandi. Anche se non è richiesto un numero minimo di immagini per ottenere buoni risultati, la qualità delle corrispondenze con alcune immagini potrebbe non essere altrettanto buona di quella delle corrispondenze di un archivio di grandi dimensioni.
-* Non potete modificare il modello o addestrare AEM per trovare immagini simili. Ad esempio, l&#39;aggiunta o la rimozione di smart tag ad alcune risorse non modifica il modello. Le risorse vengono escluse dai risultati di ricerca visivamente simili.
+* Non potete modificare il modello o addestrare AEM per trovare immagini simili. Ad esempio, l&#39;aggiunta o la rimozione di smart tag ad alcune risorse non modifica il modello. Le risorse vengono effettivamente escluse dai risultati di ricerca visivamente simili.
 
 ## Suggerimenti per la ricerca {#tips}
 
@@ -264,7 +267,7 @@ La ricerca visiva o per similarità presenta le seguenti limitazioni:
 * La ricerca full text supporta operatori quali -, ^ e così via. Per cercare queste lettere come stringhe letterali, racchiudere l&#39;espressione di ricerca tra virgolette. Ad esempio, utilizzare &quot;Notebook - Bellezza&quot; invece di Notebook - Bellezza.
 * Se i risultati della ricerca sono troppi, limita l’ [ambito della ricerca](#scope) a zero per le risorse desiderate. Questa funzione è particolarmente utile se avete qualche idea su come cercare meglio le risorse desiderate, ad esempio un tipo di file specifico, una posizione specifica, metadati specifici e così via.
 
-* **Assegnazione tag**: I tag consentono di classificare le risorse che possono essere cercate e cercate in modo più efficiente. I tag consentono di estendere la tassonomia appropriata ad altri utenti e flussi di lavoro. AEM offre metodi per assegnare automaticamente i tag alle risorse utilizzando i servizi intelligenti di Adobe Sensei, che consentono di ottenere risultati ottimali con l’aggiunta di tag alle risorse mediante l’uso e la formazione. Quando ricercate le risorse, gli smart tag vengono inseriti se la funzione è attivata nel vostro account. Funziona insieme alla funzionalità di ricerca integrata. Consultate Comportamento [di](#searchbehavior)ricerca. Per ottimizzare l’ordine in cui vengono visualizzati i risultati della ricerca, potete [aumentare la classificazione](#searchrank) di alcune risorse selezionate.
+* **Assegnazione tag**: I tag consentono di classificare le risorse che possono essere cercate e cercate in modo più efficiente. I tag consentono di estendere la tassonomia appropriata ad altri utenti e flussi di lavoro. AEM offre metodi per assegnare automaticamente i tag alle risorse utilizzando i servizi intelligenti di Adobe Sensei, che consentono di ottenere risultati ottimali con l’aggiunta di tag alle risorse mediante l’uso e la formazione. Quando ricercate le risorse, gli smart tag vengono inseriti se la funzione è attivata nel vostro account. Funziona insieme alla funzionalità di ricerca integrata. Consultate Comportamento [di](#searchbehavior)ricerca. Per ottimizzare l’ordine in cui vengono visualizzati i risultati della ricerca, potete [aumentare la classifica](#searchrank) di ricerca di alcune risorse selezionate.
 
 * **Indicizzazione**: Nei risultati della ricerca vengono restituiti solo i metadati e le risorse indicizzati. Per una migliore copertura e migliori prestazioni, accertatevi che l&#39;indicizzazione sia corretta e seguite le best practice. Vedere [indicizzazione](#searchindex).
 
@@ -276,7 +279,7 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 
 Comportamento di ricerca con e senza virgolette
 
-**Cerca con carattere jolly asterisco**: Per ampliare la ricerca, usate un asterisco prima o dopo la parola di ricerca per far corrispondere un numero qualsiasi di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza un asterisco non restituisce risorse contenenti variazioni della parola (anche nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Esempio,
+**Cerca con carattere jolly asterisco**: Per ampliare la ricerca, usate un asterisco prima o dopo la parola di ricerca per far corrispondere un numero qualsiasi di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza un asterisco non restituisce risorse contenenti variazioni della parola (anche nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Ad esempio,
 
 * `run` restituisce le risorse con la parola chiave run esatta
 * `run*` restituisce le risorse in esecuzione, in esecuzione, in esecuzione e così via.
@@ -301,7 +304,7 @@ Illustrazione dell’uso del carattere jolly punto interrogativo nella ricerca d
 
 **Escludere una parola chiave**: Usate il trattino per cercare risorse che non contengono una parola chiave. Ad esempio, `running -shoe` la query restituisce risorse che contengono `running`, ma non `shoe`. Analogamente, `camp -night` query restituisce risorse che contengono `camp` ma non `night`. La `camp-night` query restituisce risorse contenenti sia `camp` che `night`.
 
-![Utilizzo del trattino per cercare risorse non contenenti una parola chiave](assets/search_dash_exclude_keyword.gif)*Figura esclusa:Utilizzo del trattino per cercare risorse non contenenti una parola chiave esclusa*
+![Utilizzo del trattino per cercare risorse non contenenti una parola chiave](assets/search_dash_exclude_keyword.gif)*Figura esclusa: Utilizzo del trattino per cercare risorse non contenenti una parola chiave esclusa*
 
 <!--
 ## Configuration and administration tasks related to search functionality {#configadmin}
@@ -309,10 +312,6 @@ Illustrazione dell’uso del carattere jolly punto interrogativo nella ricerca d
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
-
-### Sort on Name column {#sortbyname}
-
-In list view, you can sort the search results just as you can sort assets in any folder. Sorting does not work on the `Name` column by default. To sort by the `Name` column, overlay `/libs/dam/gui/content/commons/availablecolumns` and change the value of sortable to `True`.
 
 <!--
 ### Visual or similarity search {#configvisualsearch}
@@ -349,8 +348,8 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
 
 -->
-<!--
 
+<!--
 ### Mandatory metadata {#mandatorymetadata}
 
 Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
@@ -392,7 +391,7 @@ You can search for digital assets based on one or more of the following properti
 
 ## Utilizzo dei risultati di ricerca delle risorse {#aftersearch}
 
-Una volta visualizzate le risorse ricercate che corrispondono ai criteri specificati, potete effettuare le seguenti operazioni tipiche con i risultati di ricerca oppure effettuare le seguenti operazioni:
+Una volta visualizzate le risorse ricercate che corrispondono ai criteri specificati, potete effettuare le seguenti operazioni tipiche con o eseguire le seguenti operazioni su questi risultati di ricerca:
 
 * Visualizzare le proprietà dei metadati e altre informazioni.
 * Scaricate una o più risorse.
@@ -401,11 +400,11 @@ Una volta visualizzate le risorse ricercate che corrispondono ai criteri specifi
 
 ### Ordinare i risultati della ricerca {#sort}
 
-L’ordinamento dei risultati di ricerca consente di individuare più rapidamente le risorse necessarie. L’ordinamento dei risultati della ricerca funziona nella vista a elenco e solo quando si seleziona **[!UICONTROL [File](#searchui)]**dal pannello**[!UICONTROL  Filtri ]**. Risorse AEM utilizza l’ordinamento lato server per ordinare rapidamente tutte le risorse (indipendentemente dal numero di risorse) all’interno di una cartella o dai risultati di una query di ricerca. L&#39;ordinamento lato server fornisce risultati più rapidi e precisi rispetto all&#39;ordinamento lato client.
+L’ordinamento dei risultati di ricerca consente di individuare più rapidamente le risorse necessarie. L’ordinamento dei risultati della ricerca funziona nella vista a elenco e solo quando si seleziona **[!UICONTROL [File](#searchui)]**dal pannello**[!UICONTROL  Filtri ]**.[!DNL Assets]utilizza l’ordinamento lato server per ordinare rapidamente tutte le risorse all’interno di una cartella o nei risultati di una query di ricerca, indipendentemente dal numero. L’ordinamento lato server fornisce risultati più rapidi e precisi rispetto all’ordinamento lato client.
 
-Nella vista a elenco, potete ordinare i risultati della ricerca esattamente come potete ordinare le risorse in qualsiasi cartella. L&#39;ordinamento funziona su queste colonne: Titolo, Stato, Dimensioni, Dimensioni, Valutazione, Utilizzo, (Data) Modificata, (Data) Pubblicata, Flusso di lavoro e Estratta.
+Nella vista a elenco, potete ordinare i risultati della ricerca esattamente come potete ordinare le risorse in qualsiasi cartella. L&#39;ordinamento funziona su queste colonne: Nome, Titolo, Stato, Dimensioni, Dimensioni, Valutazione, Utilizzo, Data creazione, Data modifica, Data pubblicazione, Flusso di lavoro e Estratto.
 
-Consultate [Configurare l’ordinamento sulla colonna](#sortbyname)Nome. Per le limitazioni della funzionalità di ordinamento, consultate [Limitazioni](#limitations).
+Per le limitazioni della funzionalità di ordinamento, consultate [Limitazioni](#limitations).
 
 ### Controllare informazioni dettagliate su una risorsa {#checkinfo}
 
@@ -413,7 +412,7 @@ Potete controllare informazioni dettagliate su una risorsa ricercata dalla pagin
 
 Per visualizzare tutti i metadati di una risorsa, selezionate la risorsa e fate clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
 
-Per controllare i commenti relativi a una risorsa o alla cronologia della versione di una risorsa, fate clic sulla risorsa per aprire l’anteprima di grandi dimensioni. Aprite la timeline nella barra a sinistra e selezionate **[!UICONTROL Commenti]** o **[!UICONTROL Versioni]**. Potete anche ordinare l&#39;attività della cronologia come commenti o versioni in ordine cronologico.
+Per controllare i commenti relativi a una risorsa o alla sua cronologia della versione, fai clic sulla risorsa per aprirne l’anteprima di grandi dimensioni. Apri la timeline nella barra a sinistra e seleziona **[!UICONTROL Commenti]** o **[!UICONTROL Versioni]**. Puoi anche ordinare l’attività della timeline come commenti o versioni in ordine cronologico.
 
 ![Ordinare le voci della cronologia per una risorsa di ricerca](assets/sort_timeline_search_results.gif)
 
@@ -436,13 +435,13 @@ Una raccolta è un set ordinato di risorse che può includere risorse da posizio
 * Un elenco di riferimento statico di risorse, cartelle e altre raccolte.
 * Un elenco dinamico (raccolta avanzata) che popola le risorse nella raccolta in base a un criterio di ricerca.
 
-Potete creare raccolte dinamiche in base ai criteri di ricerca. Dal pannello **[!UICONTROL Filtri]** , selezionate **[!UICONTROL File]** e fate clic su **[!UICONTROL Salva raccolta]** avanzata. Consultate [Gestione delle raccolte](/help/assets/manage-collections.md).
+Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UICONTROL Filtri]**, seleziona **[!UICONTROL File]** e fai clic su **[!UICONTROL Salva raccolta avanzata]**. Consulta la sezione [Gestisci raccolte](/help/assets/manage-collections.md).
 
 ## Risultati di ricerca imprevisti {#unexpectedresults}
 
 **Cerca metadati** mancanti: Quando si ricercano risorse per le quali mancano i metadati obbligatori, in AEM potrebbero essere visualizzate risorse con metadati validi. I metadati mancanti vengono rilevati e segnalati in base alle proprietà dei metadati indicizzati. Anche se i metadati della risorsa sono fissi, i metadati della risorsa continuano a essere visualizzati come metadati mancanti fino a quando non viene eseguita la reindicizzazione. Consultate Metadati [](/help/assets/metadata-schemas.md#defining-mandatory-metadata)obbligatori.
 
-**Troppi risultati** di ricerca: Per evitare di ottenere troppi risultati di ricerca, è consigliabile limitare i risultati di ricerca. Ad esempio, per cercare risorse in DAM, selezionate `Location:Assets` nella barra di ricerca Omnice. Per ulteriori filtri di ricerca, vedere [ambito di ricerca](#scope).
+**Troppi risultati** di ricerca: Per evitare di ottenere troppi risultati di ricerca, provate a limitare i risultati della ricerca. Ad esempio, per cercare risorse in DAM, selezionate `Location:Assets` nella barra di ricerca Omnice. Per ulteriori filtri di ricerca, vedere [ambito di ricerca](#scope).
 
 <!-- Another reason to get more than expected search results can be use of smarts tags. See [search behavior with smart tags](#withsmarttags). 
 -->
