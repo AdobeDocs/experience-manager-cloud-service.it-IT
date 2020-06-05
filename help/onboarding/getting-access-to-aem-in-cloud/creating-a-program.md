@@ -2,9 +2,9 @@
 title: Creazione di un programma - Servizio Cloud
 description: Creazione di un programma - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ L’opzione Elimina è disponibile dalla pagina di destinazione, come illustrato
 
 Oppure,
 
-Selezionate **Elimina programma** dalla pagina *Panoramica* per eliminare il programma sandbox.
+Selezionate **Elimina programma** dalla pagina Panoramica **** programma per eliminare il programma sandbox.
 
 ![](assets/delete-sandbox2.png)
 
