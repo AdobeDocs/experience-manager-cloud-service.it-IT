@@ -3,9 +3,9 @@ title: Configurare l’editor Rich Text per creare pagine Web e siti con accesso
 description: Scopri come configurare l’editor Rich Text per creare siti con accesso facilitato in Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 78ec0ed2a1473797a07905baa346a83376779419
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -149,4 +149,5 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Guida rapida agli standard WCAG](/help/onboarding/accessibility/quick-guide-wcag.md)
+>* [Creazione di contenuti accessibili in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
