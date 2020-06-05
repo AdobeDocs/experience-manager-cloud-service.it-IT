@@ -1,17 +1,20 @@
 ---
-title: Utilizzo dell’Editor Rich Text per l’authoring dei contenuti
-description: Utilizzo dell’Editor Rich Text per l’authoring dei contenuti
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+title: Utilizzate l'Editor Rich Text in Adobe Experience Manager per creare contenuto.
+description: Utilizzate l'editor Rich Text di Experience Manager per creare contenuto.
+translation-type: tm+mt
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 47%
 
 ---
 
 
-# Utilizzo dell’Editor Rich Text per l’authoring dei contenuti {#use-rich-text-editor-to-author-content}
+# Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
 
 L’Editor Rich Text è un componente essenziale per l’inserimento di contenuti di testo in AEM. Costituisce l’elemento base di diversi componenti.
 
-## Modifica diretta {#in-place-editing}
+## In-place editing {#in-place-editing}
 
 Quando si seleziona un componente basato su testo con un solo tocco o clic, viene visualizzata la [barra degli strumenti del componente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar), come per qualsiasi componente.
 
@@ -23,19 +26,17 @@ Se si tocca o si fa clic nuovamente oppure si seleziona inizialmente il componen
 
 Questa barra degli strumenti contiene le opzioni seguenti:
 
-* **Formato**: consente di impostare i formati Grassetto, Corsivo e Sottolineato.
-* **Elenchi**: consente di creare elenchi puntati o numerati o di impostare i rientri.
-* **Collegamento ipertestuale**
-* **Scollega**
-* **Schermo intero**
-* **Chiudi**
-* **Salva**
+* **Formato**: Evidenziare il testo come grassetto o corsivo o sottolinearlo.
+* **Elenchi**: Create elenchi puntati o numerati e impostate il rientro.
+* **Collegamento ipertestuale**: Creare collegamenti.
+* **Scollega**: Rimuovere il collegamento ipertestuale.
+* **Schermo** intero: Aprite l’editor in modalità a schermo intero.
+* **Chiudi**: Smettila di modificare.
+* **Salva**: Salvare le modifiche.
 
-## Modifica a schermo intero {#full-screen-editing}
+## Full screen editing {#full-screen-editing}
 
-Per i componenti basati su testo, tocca il pulsante della modalità a tutto schermo nella [barra degli strumenti](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) per aprire l’Editor Rich Text e nascondere il resto del contenuto della pagina.
-
-![Pulsante per la modalità a tutto schermo nell’Editor Rich Text](/help/sites-cloud/authoring/assets/editing-full-screen.png)
+Per i componenti basati su testo, toccate il pulsante ![a schermo intero dell’editor Rich Text in modalità a schermo intero dalla](/help/sites-cloud/authoring/assets/editing-full-screen.png) barra degli strumenti [](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) per aprire l’editor Rich Text e nascondere il resto del contenuto della pagina.
 
 Nella modalità a tutto schermo vengono visualizzate tutte le opzioni configurate utilizzabili per l’authoring. La disponibilità delle opzioni dipende dalla configurazione. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
@@ -43,15 +44,15 @@ Nella modalità a tutto schermo vengono visualizzate tutte le opzioni configurat
 
 Altre opzioni dell’Editor Rich Text comprendono:
 
-* **Ancoraggio**: consente di creare un ancoraggio nel testo, da utilizzare in seguito in un riferimento o un collegamento.
+* **Ancoraggio**: Create un ancoraggio nel testo a cui collegarvi in un secondo momento o a cui creare un riferimento.
 * **Allinea testo a sinistra**
 * **Testo centrato**
 * **Allinea testo a destra**
 
-Per chiudere la modalità a tutto schermo, fai clic sull’icona Riduci a icona.
+Fate clic su Riduci a icona per chiudere la modalità a schermo intero.
 
 ![Pulsante Riduci a icona dell’Editor Rich Text](/help/sites-cloud/authoring/assets/rte-minimize.png)
 
->[!NOTE]
+>[!Tip]
 >
->La copia di elenchi nidificati da Microsoft Word nell’Editor Rich Text può causare risultati incoerenti e richiedere una regolazione manuale dopo che il testo è stato incollato nell’Editor Rich Text.
+>Copiare gli elenchi nidificati da Microsoft Word nell’editor Rich Text può dare risultati incoerenti. Incolla come testo e effettua la regolazione manuale.
