@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
    + [Archivio del codice sorgente](what-is-required/source-code-repository.md)
 + Accesso ad AEM nel cloud {#getting-access}
    + [Accesso a Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
-   + Programmi di servizi cloud {#cloud-service-programs}
+   + Programmi di Cloud Service {#cloud-service-programs}
       + [Accesso ai programmi](getting-access-to-aem-in-cloud/first-time-login.md)
       + [Informazioni su programmi e tipi di programmi](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [Creazione di un programma](getting-access-to-aem-in-cloud/creating-a-program.md)
