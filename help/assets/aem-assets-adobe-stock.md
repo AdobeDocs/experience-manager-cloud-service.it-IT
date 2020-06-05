@@ -3,12 +3,15 @@ title: Utilizzo di risorse digitali Adobe Stock in Risorse AEM
 description: Cerca, recupera, ottieni la licenza e gestisci risorse Adobe Stock in Experience Manager. Trattate le risorse su licenza come qualsiasi altra risorsa Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+workflow-type: tm+mt
+source-wordcount: '1132'
+ht-degree: 22%
 
 ---
 
 
-# Utilizzo di risorse Adobe Stock in Risorse AEM {#use-adobe-stock-assets-in-aem-assets}
+# Use Adobe Stock assets in AEM Assets {#use-adobe-stock-assets-in-aem-assets}
 
 Le organizzazioni possono integrare il piano aziendale Adobe Stock con Risorse AEM per garantire che le risorse su licenza siano ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM.
 
@@ -22,20 +25,20 @@ Per consentire la comunicazione tra AEM e Adobe Stock, crea una configurazione I
 >
 >L’integrazione può essere eseguita solo dagli amministratori di AEM e di Admin Console per un’organizzazione, in quanto richiede privilegi di amministratore.
 
-### Creare una configurazione IMS {#create-an-ims-configuration}
+### Create an IMS configuration {#create-an-ims-configuration}
 
-1. Fate clic sul logo AEM. Andate su **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > Configurazioni **** Adobe IMS. Fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
+1. Fai clic sul logo AEM. Seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Configurazioni Adobe IMS]**. Fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Soluzione cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Riutilizzate un certificato esistente o selezionate **[!UICONTROL Crea nuovo certificato]**.
-1. Fate clic su **[!UICONTROL Crea certificato]**. Una volta creata, scaricate la chiave pubblica. Fai clic su **[!UICONTROL Avanti]**.
-1. Immettete i valori appropriati nei campi **[!UICONTROL Titolo]**, Server **** autorizzazioni, Chiave **** API, Segreto **** cliente e **[!UICONTROL Payload]**. Per informazioni dettagliate su come recuperare questi valori dall’I/O di Adobe, consultate Avvio [rapido dell’autenticazione](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)JWT.
-1. Aggiungi la chiave pubblica scaricata al tuo account del servizio Adobe I/O.
+1. Fai clic su **[!UICONTROL Crea certificato]**. Una volta creata, scaricate la chiave pubblica. Fai clic su **[!UICONTROL Avanti]**.
+1. Inserisci i valori appropriati nei campi **[!UICONTROL Titolo]**, **[!UICONTROL Server autorizzazioni]**, **[!UICONTROL Chiave API]**, **[!UICONTROL Segreto client]** e **[!UICONTROL Payload]**. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
+1. Aggiungi la chiave pubblica scaricata al tuo account del servizio Adobe Developer Console.
 
 ### Creare la configurazione di Adobe Stock in AEM {#create-adobe-stock-configuration-in-aem}
 
-1. Nell’interfaccia utente di AEM, passa a **[!UICONTROL Strumenti]** > Servizi **** cloud > **[!UICONTROL Adobe Stock]**.
+1. Nell’interfaccia utente di AEM, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Fate clic su **[!UICONTROL Crea]** per creare una configurazione e associarla alla configurazione IMS esistente. Selezionate `PROD` come parametro di ambiente.
 1. Nel campo Percorso **[!UICONTROL risorse]** concesso in licenza, lasciare invariata la posizione. Non cambiare la posizione in cui memorizzare le risorse Adobe Stock.
-1. Completate la creazione aggiungendo tutte le proprietà richieste. Fate clic su **[!UICONTROL Salva e chiudi]**.
+1. Completate la creazione aggiungendo tutte le proprietà richieste. Click **[!UICONTROL Save &amp; Close]**.
 1. Aggiungete utenti o gruppi AEM che possono ottenere la licenza per le risorse.
 
 >[!NOTE]
@@ -51,13 +54,13 @@ Una volta ottenuta la licenza di una risorsa Adobe Stock in AEM, questa può ess
 <!--  ![Search for Adobe Stock assets and filter results from your AEM workspace](assets/adobe-stock-search-results-workspace.png)
 *Figure: Search for Adobe Stock assets and filter results from your AEM workspace* -->
 
-**** A. Cercare risorse simili alle risorse il cui Adobe Stock ID è fornito. **** B. Consente di cercare risorse corrispondenti alla selezione di forma o orientamento. **************** C.**Cercare uno dei tipi di risorse supportati** D. Aprire o comprimere il riquadro Filtri **E. Licenza e salvataggio della risorsa selezionata in AEM** F. Salva la risorsa in AEM con la filigrana **G. Esplora risorse sul sito Web di Adobe Stock che sono simili alla risorsa selezionata** H. Visualizza le risorse selezionate sul sito Web di Adobe Stock **I. Numero di risorse selezionate dai risultati della ricerca** J. Passaggio tra la vista a schede e la vista Elenco
+**A.** Cerca risorse simili a quelle di chi è fornito l’ID Adobe Stock. **B.** Cerca risorse corrispondenti alla tua selezione di forma o orientamento. **C.** Cerca uno o più dei tipi di risorse supportati **D.** Apri o comprimi il riquadro Filtri **E.** Procurati la licenza relativa e salva la risorsa selezionata in AEM **F.** Salva la risorsa in AEM applicando la filigrana **G.** Sul sito web di Adobe Stock, esplora le risorse simili a quella selezionata **H.** Visualizza le risorse selezionate sul sito web di Adobe Stock **I.** Numero di risorse selezionate proveniente dai risultati della ricerca **J.** Passaggio tra la vista a schede e la vista a elenco
 
 ### Trovare le risorse {#find-assets}
 
 Gli utenti AEM possono cercare risorse sia in AEM che in Adobe Stock. Quando il percorso di ricerca non è limitato ad Adobe Stock, vengono visualizzati i risultati di ricerca di AEM e Adobe Stock.
 
-* Per cercare risorse Adobe Stock, fai clic su **[!UICONTROL Navigazione]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cerca in Adobe Stock]**.
+* Per cercare le risorse Adobe Stock, fai clic su **[!UICONTROL Navigazione]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cerca in Adobe Stock]**.
 
 * Per cercare risorse in Adobe Stock e AEM Assets, fai clic sull’icona di ricerca ![search_icon](assets/do-not-localize/search_icon.png).
 
@@ -65,7 +68,7 @@ In alternativa, iniziate a digitare `Location: Adobe Stock` nella barra di ricer
 
 >[!NOTE]
 >
->Le risorse ricercate da Adobe Stock vengono visualizzate in AEM. Le risorse Adobe Stock vengono recuperate e memorizzate nell’archivio di AEM solo dopo che un utente [salva una risorsa](/help/assets/aem-assets-adobe-stock.md#saveassets) o ne [concede la licenza](/help/assets/aem-assets-adobe-stock.md#licenseassets). Le risorse già memorizzate in AEM vengono visualizzate ed evidenziate per semplificare il riferimento e l’accesso. Inoltre, tali risorse vengono salvate con alcuni metadati aggiuntivi per indicare l’origine come Adobe Stock.
+>Le risorse ricercate da Adobe Stock vengono solo visualizzate in AEM. Le risorse Adobe Stock vengono recuperate e memorizzate nell’archivio di AEM solo dopo che un utente [salva una risorsa](/help/assets/aem-assets-adobe-stock.md#saveassets) o ne [concede la licenza](/help/assets/aem-assets-adobe-stock.md#licenseassets). Le risorse già memorizzate in AEM vengono visualizzate ed evidenziate per semplificare la consultazione e l’accesso. Inoltre, tali risorse vengono salvate con alcuni metadati aggiuntivi per indicare l’origine come Adobe Stock.
 
 ![Filtri di ricerca in AEM e risorse Adobe Stock evidenziate nei risultati](assets/aem-search-filters2.jpg)di ricerca *Figura: Filtri di ricerca in AEM e risorse Adobe Stock evidenziate nei risultati di ricerca*
 
@@ -89,7 +92,7 @@ Gli utenti possono concedere in licenza le risorse Adobe Stock utilizzando la qu
 
 Gli utenti possono accedere ai metadati e visualizzarne l’anteprima, comprese le proprietà dei metadati Adobe Stock per le risorse salvate in AEM, e aggiungere riferimenti **[!UICONTROL di]** licenza per una risorsa. Tuttavia, gli aggiornamenti al riferimento della licenza non vengono sincronizzati tra il sito Web AEM e Adobe Stock.
 
-Gli utenti possono visualizzare le proprietà per risorse con licenza e senza licenza.
+Gli utenti possono visualizzare le proprietà delle risorse con licenza e senza licenza.
 
 ![Visualizzare e accedere ai metadati e ai riferimenti di licenza delle risorse](assets/metadata_properties.jpg)salvate *Figura: Visualizzare e accedere ai metadati e ai riferimenti di licenza delle risorse salvate*
 
@@ -103,7 +106,7 @@ Quando si concede la licenza a un’immagine, gli utenti non possono verificare 
 
 È possibile che in AEM venga visualizzato un tipo di licenza non corretto per una risorsa. Gli utenti possono accedere al sito Web di Adobe Stock per vedere il tipo di licenza.
 
-### Campi e metadati di riferimento non sincronizzati
+### I campi e i metadati di riferimento non sono sincronizzati
 
 Quando un utente aggiorna un campo di riferimento della licenza, le informazioni di riferimento della licenza vengono aggiornate in AEM ma non nel sito Web di Adobe Stock. Analogamente, se l’utente aggiorna i campi di riferimento nel sito Web di Adobe Stock, gli aggiornamenti non vengono sincronizzati in AEM.
 
