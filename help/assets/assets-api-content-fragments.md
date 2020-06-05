@@ -2,7 +2,10 @@
 title: Adobe Experience Manager come servizio cloud Supporto dei frammenti di contenuto nell'API HTTP Assets
 description: Ulteriori informazioni su Adobe Experience Manager come supporto dei frammenti di contenuto del servizio cloud nell'API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+workflow-type: tm+mt
+source-wordcount: '1892'
+ht-degree: 2%
 
 ---
 
@@ -17,6 +20,7 @@ source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 >
 >* API REST di Assets
 >* incluso il supporto per i frammenti di contenuto
+
 >
 >
 L’implementazione corrente dell’API HTTP Assets si basa sullo stile di architettura [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) .
@@ -144,6 +148,7 @@ Se l’API REST di Risorse viene utilizzata in un ambiente senza requisiti di au
 >
 >* [Spiegazione di CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Video - Sviluppo per CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -297,7 +302,7 @@ Utilizzo tramite:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Limitazioni    {#limitations}
+## Limitazioni  {#limitations}
 
 Esistono alcuni limiti:
 
@@ -310,7 +315,7 @@ Esistono alcuni limiti:
 
 I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
 
-1. 200 (OK)
+* **200** (OK)
 
    Restituito quando:
 
@@ -318,19 +323,19 @@ I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
 
    * aggiornamento di un frammento di contenuto tramite `PUT`
 
-1. 201 (Creato)
+* **201** (Creato)
 
    Restituito quando:
 
    * creazione di un frammento di contenuto tramite `POST`
 
-1. 404 (non trovato)
+* **404** (non trovato)
 
    Restituito quando:
 
    * il frammento di contenuto richiesto non esiste
 
-1. 500 (errore interno del server)
+* **500** (errore interno del server)
 
    >[!NOTE]
    >
@@ -361,6 +366,7 @@ I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    I messaggi di errore dettagliati vengono in genere restituiti nel modo seguente:
 
    ```xml
