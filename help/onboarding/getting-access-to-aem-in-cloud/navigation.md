@@ -2,7 +2,7 @@
 title: Navigazione
 description: Navigazione - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
@@ -59,6 +59,8 @@ Per ulteriori informazioni, consultate [Accesso a un’istanza in AEM come servi
    ![](assets/sys-admin4.png)
 
 1. Dopo aver fatto clic su **Gestisci accesso**, puoi accedere ad **Admin Console** da dove hai accesso all’istanza di creazione dell’ambiente.
+
+   ![](assets/sys-admin-2.png)
 
 ## Per i clienti AMS esistenti {#existing-aem}
 
