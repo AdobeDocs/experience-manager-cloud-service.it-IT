@@ -2,10 +2,10 @@
 sub-product: Implementazione per AEM as a Cloud Service
 user-guide-title: Implementazione per AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 83c2b37f10b46c1a88e36e49b448b38137bda1c0
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 89%
+source-wordcount: '203'
+ht-degree: 85%
 
 ---
 
@@ -37,6 +37,9 @@ ht-degree: 89%
    + [Personalizzazione ed estensione dei frammenti di contenuto](developing/extending/content-fragments-customizing.md)
    + [Componenti di configurazione dei frammenti di contenuto per il rendering](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Configurazione dei moduli di ricerca](developing/extending/search-forms.md)
+   + [Configurare l’editor Rich Text](/help/implementing/developing/extending/rich-text-editor.md)
+   + [Configurare i plug-in RTE](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [Configurare l&#39;editor Rich Text per creare siti con accesso facilitato](/help/implementing/developing/extending/rte-accessible-content.md)
 + Implementazione in AEM as a Cloud Service {#deploying}
    + [Implementazione in AEM as a Cloud Service](deploying/overview.md)
    + [Configurazione di OSGi per AEM as a Cloud Service](deploying/configuring-osgi.md)
