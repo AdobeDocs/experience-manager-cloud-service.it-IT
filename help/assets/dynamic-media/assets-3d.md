@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: bc0852120580065a93923e7fe730485012afba6e
+source-git-commit: 08736e38f9dde46997484ccd4807de0ba2f67b2f
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2107'
 ht-degree: 4%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 4%
 
 Dynamic Media consente di caricare, gestire, visualizzare e distribuire risorse 3D come esperienze coinvolgenti.
 
-* Pubblicazione con un solo clic (tramite Pubblicazione **** rapida sulla barra degli strumenti) di immagini 3D per generare il relativo URL.
-* Supporto ottimizzato per la visualizzazione di risorse 3D con il predefinito per visualizzatori dimensionali interattivi di alta qualità basato su Adobe Dimension. Il predefinito per visualizzatori include, tra l’altro, una serie di controlli per le videocamere interattive che consentono di effettuare operazioni di orbita, zoom e scorrimento.
+* Pubblicazione con un solo clic (tramite Pubblicazione **** rapida sulla barra degli strumenti) di risorse 3D per generare un URL.
+* Supporto ottimizzato per la visualizzazione di risorse 3D con il predefinito per visualizzatori dimensionali interattivi di alta qualità basato su Adobe Dimension.
 * Il componente 3D Media WCM consente di aggiungere facilmente risorse 3D alle pagine AEM Sites.
 
-Non è disponibile alcuna installazione o configurazione per l’utilizzo di risorse 3D in Contenuti multimediali dinamici.
+Non è necessaria alcuna installazione aggiuntiva per utilizzare risorse 3D in Contenuti multimediali dinamici.
 
-![scarpa in 3d](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2.png)
+![scarpa in 3d](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -36,10 +36,10 @@ Dynamic Media supporta i seguenti formati di file 3D:
 
 | Estensione dei file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
-| GLB | Trasmissione GL binario | model/gltf-binary | Include le texture con la risorsa invece di farvi riferimento come immagini esterne. |
+| GLB | Trasmissione GL binario | model/gltf-binary | Include i materiali e le texture come un’unica risorsa. |
 | OBJ | File oggetto WaveFront 3D | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
-| USDZ | Archivio ZIP con descrizione universale di Scene7 | model/vnd.usdz+zip | *Sostegno solo all&#39;ingestione; non è disponibile alcuna visualizzazione o interazione.* USDZ è il formato 3D proprietario di Apple che può essere visualizzato solo da Safari o iOS. |
+| USDZ | Archivio ZIP con descrizione universale di Scene7 | model/vnd.usdz+zip | *Sostegno solo all&#39;ingestione; non è disponibile alcuna visualizzazione o interazione.* USDZ è un formato 3D proprietario che può essere visualizzato in modo nativo da Safari o iOS. |
 
 ## Avvio rapido: Risorse 3D per contenuti multimediali dinamici {#quick-start-three-d}
 
@@ -144,7 +144,8 @@ Consultate anche [Anteprima delle risorse tramite l’interfaccia](/help/assets/
 
    * Nella parte superiore destra della pagina, fate clic su **[!UICONTROL Anteprima]** per passare alla modalità **[!UICONTROL Anteprima]** .
    * Elimina `/editor.html` dall’URL della pagina nel browser.
-   ![Risorsa 3D visualizzata all’interno del componente](/help/assets/dynamic-media/assets/3d-asset-in-3d-media.png)File multimediali 3D Una risorsa 3D completamente interattiva visualizzata in modalità **[!UICONTROL Anteprima]** .
+
+Una risorsa 3D completamente interattiva come visualizzata in    ![Risorsa 3D visualizzata all’interno del componente](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)File multimediali 3D Una risorsa 3D completamente interattiva visualizzata in modalità **[!UICONTROL Anteprima]** .
 
 1. In modalità **[!UICONTROL Anteprima]** , effettuate una delle seguenti operazioni:
 
@@ -180,7 +181,7 @@ Contenuti multimediali dinamici include un componente Contenuti multimediali 3D 
 1. Toccate **[!UICONTROL Modifica]** per aprire il modello.
 1. Vicino alla parte superiore destra della pagina, nel menu a discesa, selezionate **[!UICONTROL Struttura]** , se non è già attiva.
 
-   ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structure.png)
+   ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
 
 1. Toccate un&#39;area vuota nell&#39;area Contenitore **[!UICONTROL di]** layout per selezionarla e aprire la barra degli strumenti associata.
 1. Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Criterio]** per aprire l&#39;Editor **** criteri.
@@ -198,13 +199,13 @@ See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/addin
 1. Aprite AEM Sites e selezionate la pagina Web alla quale desiderate aggiungere il componente Contenuti multimediali 3D dinamici.
 1. Toccate l’icona **[!UICONTROL Modifica]** (matita) per aprire la pagina nell’editor pagina. Verificate che la modalità **[!UICONTROL Modifica]** sia selezionata in alto a destra nella pagina.
 
-   ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edit.png)
+   ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
 
 1. Sulla barra degli strumenti, toccate l’icona Pannello laterale per attivare o disattivare la visualizzazione del pannello.
 
 1. Nel pannello laterale, toccate l&#39;icona del segno più per aprire l&#39;elenco **[!UICONTROL Componenti]** .
 
-   ![3d-media-component-drag-drop](/help/assets/dynamic-media/assets/3d-assets-filter.png)
+   ![3d-media-component-drag-drop](/help/assets/dynamic-media/assets/3d-assets-filtera.png)
 
 1. Trascinate il componente **[!UICONTROL 3D Media]** dall’elenco **[!UICONTROL Componenti]** nella posizione nella pagina in cui desiderate visualizzare il visualizzatore 3D.
 
@@ -217,11 +218,11 @@ Consultate [Assegnazione di una risorsa 3D a un componente](#assigning-a-three-d
 1. Nell’editor pagina AEM Sites, seleziona il componente Visualizzatore **[!UICONTROL multimediale]** 3D che hai aggiunto in precedenza alla pagina.
 1. Toccate l&#39;icona **[!UICONTROL Configurazione]** (chiave inglese) per aprire la finestra di dialogo di configurazione del componente.
 
-   ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-config.png)
+   ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-configa.png)
 
 1. Nella finestra di dialogo File multimediali 3D, dall’elenco a discesa Predefinito visualizzatore, selezionate **[!UICONTROL Dimensionale]** per assegnare al componente il predefinito per visualizzatori dimensionali.
 
-   ![3d-media-component-edit-config](/help/assets/dynamic-media/assets/3d-media-component-edit-config.png)
+   ![3d-media-component-edit-config](/help/assets/dynamic-media/assets/3d-media-component-edit-configa.png)
 
 1. Nell&#39;angolo superiore destro, toccate il segno di spunta per salvare le modifiche.
 
@@ -236,7 +237,7 @@ Consultate [Aggiunta del componente File multimediali 3D a una pagina](#adding-t
 1. Nel pannello laterale, cercate o scorrete fino alla risorsa 3D che desiderate visualizzare sulla pagina da modificare.
 1. Trascinate la risorsa 3D dal pannello laterale Risorse e rilasciatela sul componente File multimediali **** 3D precedentemente aggiunto alla pagina.
 
-   ![Assegnare risorse 3d al componente File multimediali 3d](/help/assets/dynamic-media/assets/3d-asset-add.png)
+   ![Assegnare risorse 3d al componente File multimediali 3d](/help/assets/dynamic-media/assets/3d-asset-adda.png)
 
 >[!NOTE]
 >
@@ -263,17 +264,18 @@ Consultate anche [Pubblicazione di pagine](/help/sites-cloud/authoring/fundament
 1. Aprite una risorsa 3D (formato di file GLB, OBJ o STL) per visualizzarla nella pagina dei dettagli della risorsa.
 1. Nella barra degli strumenti, toccate Pubblicazione **** rapida.
 
-   ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publish.png)
+   ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
 1. Toccate **[!UICONTROL Chiudi]** per uscire dalla finestra di dialogo e tornare alla pagina dei dettagli della risorsa.
 1. Dall’elenco a discesa a sinistra del nome del file della risorsa 3D, toccate **[!UICONTROL Rendering]**.
 
-   ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditions.png)
+   ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
 
 1. Toccate **[!UICONTROL originale]**. Quando una risorsa 3D viene pubblicata (o &quot;attivata&quot;), il pulsante URL viene visualizzato accanto all’angolo in basso a sinistra della pagina, se vengono soddisfatte tutte le seguenti condizioni per la risorsa 3D:
    * La risorsa 3D è un formato supportato (GLB, OBJ, STL e USDZ).
    * La risorsa 3D è stata assimilata in Dynamic Media Image Production System (IPS).
    * La risorsa 3D viene pubblicata.
-   ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-url.png)
+
+   ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
 
 1. Toccate **[!UICONTROL URL]** per visualizzare l&#39;URL di produzione della risorsa 3D.
