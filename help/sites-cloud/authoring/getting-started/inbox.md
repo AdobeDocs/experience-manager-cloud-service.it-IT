@@ -1,11 +1,11 @@
 ---
-title: 'Casella in entrata  '
+title: Casella in entrata
 description: Gestione delle attività con la casella in entrata
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Per le varie console, il numero corrente di elementi nella casella in entrata è
 >
 >Alcune azioni sono anche visualizzate nella [vista a schede della relativa risorsa](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## Apertura della casella in entrata   {#opening-the-inbox}
+## Apertura della casella in entrata  {#opening-the-inbox}
 
 Per aprire la casella in entrata delle notifiche AEM:
 
@@ -110,7 +110,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
 >[!NOTE]
 >
->Sebbene sia possibile selezionare più elementi, è possibile eseguire azioni su un solo elemento alla volta.
+>Sebbene sia possibile selezionare più elementi, le azioni possono essere eseguite solo su un elemento alla volta.
 
 1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili per l’elemento in questione sono disponibili nella barra degli strumenti:
 
@@ -177,7 +177,7 @@ Dalla casella in entrata è possibile creare le attività:
 
 1. Seleziona **Invia**.
 
-## Creazione di un progetto   {#creating-a-project}
+## Creazione di un progetto  {#creating-a-project}
 
 Per determinate attività, puoi creare un [Progetto](/help/sites-cloud/authoring/projects/overview.md) basato su tale attività:
 
