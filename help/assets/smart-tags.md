@@ -3,10 +3,10 @@ title: Applicare tag alle immagini con servizi intelligenti artificialmente.
 description: Applicate tag alle immagini con servizi intelligenti artificialmente che applicano tag commerciali contestuali e descrittivi utilizzando i servizi Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 53d80f9293f6ff940eb4aede86bcd9375f7e6cce
+source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
 workflow-type: tm+mt
 source-wordcount: '2398'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
@@ -17,7 +17,7 @@ Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più 
 
 Rispetto ai vocabolari di lingua naturale, l’assegnazione di tag in base alla tassonomia aziendale consente di allineare le risorse all’attività aziendale e garantisce che le risorse più rilevanti vengano visualizzate nelle ricerche. Ad esempio, un produttore di auto può assegnare tag alle immagini di un&#39;auto con nomi di modelli in modo che vengano visualizzate solo immagini rilevanti quando viene effettuata una ricerca per progettare una campagna promozionale.
 
-In background, il servizio Smart Content Service (SCS) utilizza un framework di intelligence artificiale di [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) per formare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
+In background, lo Smart Tags utilizza un framework di intelligenza artificiale di [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) per formare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
 <!-- TBD: Create a similar flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -31,32 +31,32 @@ Per utilizzare i tag avanzati, effettuate le seguenti operazioni:
 * [Assegnare tag alle risorse](#tag-assets)digitali.
 * [Gestire tag e ricerche](#manage-smart-tags-and-searches).
 
-Smart Content Services è applicabile solo ai [!DNL Adobe Experience Manager Assets] clienti. Smart Content Service è disponibile per l&#39;acquisto come componente aggiuntivo per [!DNL Experience Manager].
+I tag avanzati sono applicabili solo ai [!DNL Adobe Experience Manager Assets] clienti. I tag avanzati sono disponibili per l&#39;acquisto come componente aggiuntivo per [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
 ## Integrazione [!DNL Experience Manager] con Adobe I/O {#integrate-aem-with-aio}
 
-È possibile effettuare l&#39;integrazione [!DNL Adobe Experience Manager] con Smart Content Service tramite Adobe I/O. Utilizzate questa configurazione per accedere a Smart Content Service dall&#39;interno [!DNL Experience Manager].
+È possibile effettuare l’integrazione [!DNL Adobe Experience Manager] con i tag avanzati utilizzando l’I/O di Adobe. Utilizzate questa configurazione per accedere al servizio Smart Tags dall&#39;interno [!DNL Experience Manager].
 
-Consultate [configurare Experience Manager per l’assegnazione di smart tag alle risorse](smart-tags-configuration.md) per le attività di configurazione di Smart Content Service. Sul lato posteriore, il [!DNL Experience Manager] server autentica le credenziali del servizio con il gateway di I/O Adobe prima di inoltrare la richiesta a Smart Content Service.
+Consultate [configurare Experience Manager per l’assegnazione di tag avanzati alle risorse](smart-tags-configuration.md) per le attività di configurazione dei tag avanzati. Sul lato posteriore, il [!DNL Experience Manager] server autentica le credenziali del servizio con il gateway di I/O Adobe prima di inoltrare la richiesta al servizio Smart Tags.
 
 ## Informazioni sui modelli e sulle linee guida dei tag {#understand-tag-models-guidelines}
 
-Un modello di tag è un gruppo di tag correlati che si trovano per aspetto visivo dell’immagine. Ad esempio, una raccolta di scarpe può avere tag diversi, ma tutti i tag sono correlati a scarpe e possono appartenere allo stesso modello di tag. I tag possono essere correlati solo con gli aspetti visivi delle immagini chiaramente diversi. Per comprendere la rappresentazione del contenuto di un modello di formazione in [!DNL Experience Manager], visualizzate un modello di formazione come entità di livello principale composta da un gruppo di utenti collegati `cq:tags`. Ogni tag può essere applicato esclusivamente a un’immagine.
+Un modello di tag è un gruppo di tag correlati che si trovano per aspetto visivo dell’immagine. Ad esempio, una raccolta di scarpe può avere tag diversi, ma tutti i tag sono correlati a scarpe e possono appartenere allo stesso modello di tag. I tag possono essere correlati solo con gli aspetti visivi delle immagini chiaramente diversi. Per comprendere la rappresentazione del contenuto di un modello di formazione in [!DNL Experience Manager], visualizzate un modello di formazione come entità di livello principale composta da un gruppo di tag aggiunti manualmente e immagini di esempio per ciascun tag. Ogni tag può essere applicato esclusivamente a un’immagine.
 
 I tag che non possono essere gestiti in modo realistico si riferiscono a:
 
 * Aspetti non visivi e astratti come l&#39;anno o la stagione di rilascio di un prodotto, l&#39;umore o le emozioni evocate da un&#39;immagine.
-* Differenze visive avanzate in prodotti quali camicie con e senza colletti o loghi di prodotti di piccole dimensioni incorporati nei prodotti.
+* Riduzioni visive di prodotti quali camicie con e senza collari o loghi di prodotti di piccole dimensioni incorporati nei prodotti.
 
 Prima di creare un modello di tag e di formare il servizio, identificate un set di tag univoci che meglio descrivano gli oggetti contenuti nelle immagini nel contesto della vostra attività. Assicurati che le risorse del set selezionato siano conformi alle linee guida [](#training-guidelines)di formazione.
 
 ### Linee guida per la formazione {#training-guidelines}
 
-La formazione è un processo irrevocabile. Le immagini nel set di formazione devono essere conformi alle seguenti linee guida:
+Le immagini nel set di formazione devono essere conformi alle seguenti linee guida:
 
-**Quantity and size (Quantità e dimensioni)**: almeno 10 immagini per tag. Almeno 500 pixel sul lato più lungo.
+**Quantità e dimensioni:** Almeno 10 immagini e massimo 50 immagini per tag.
 
 **Coerenza**: Le immagini di un tag devono essere visivamente simili. È consigliabile unire i tag relativi agli stessi aspetti visivi (come lo stesso tipo di oggetti in un’immagine) in un singolo modello di tag. Ad esempio, non è consigliabile assegnare a tutte queste immagini il tag `my-party` (per la formazione) perché non sono visivamente simili.
 
@@ -78,7 +78,7 @@ La formazione è un processo irrevocabile. Le immagini nel set di formazione dev
 
 **Numero di esempi**: Per ciascun tag, aggiungete almeno 10 esempi. Tuttavia, Adobe consiglia circa 30 esempi. È supportato un massimo di 50 esempi per tag.
 
-**Preservare falsi positivi e conflitti**: Adobe ha consigliato di creare un singolo modello di tag per un singolo aspetto visivo. Strutturate i modelli di tag in modo da evitare la sovrapposizione di tag tra i modelli. Ad esempio, non utilizzate tag comuni come `sneakers` in due diversi nomi di modelli di tag `shoes` e `footwear`. Il processo di formazione sovrascrive un modello di tag formattato con l’altro per una parola chiave comune.
+**Prevenire falsi positivi e conflitti**: Adobe consiglia di creare un singolo modello di tag per un singolo aspetto visivo. Strutturate i modelli di tag in modo da evitare la sovrapposizione di tag tra i modelli. Ad esempio, non utilizzate tag comuni come `sneakers` in due diversi nomi di modelli di tag `shoes` e `footwear`. Il processo di formazione sovrascrive un modello di tag formattato con l’altro per una parola chiave comune.
 
 **Esempi**: Altri esempi sono:
 
@@ -92,15 +92,13 @@ La formazione è un processo irrevocabile. Le immagini nel set di formazione dev
 
 **Immagini utilizzate per la formazione**: Potete usare le stesse immagini per formare diversi modelli di tag. Tuttavia, non associano un’immagine a più tag in un modello di tag. È quindi possibile assegnare alla stessa immagine tag diversi appartenenti a diversi modelli di tag.
 
-## Formazione del modello per i tag personalizzati {#train-model}
+Non potete annullare la formazione. Le linee guida di cui sopra dovrebbero aiutarvi a scegliere buone immagini da formare.
 
-<!-- 
-TBD: Use BJ recording https://bluejeans.com/playback/guid/MjI1NTI3NDQ3NDo0MjY4OTItYzNjNmE4MDAtNDAzMC00Y2I5LWFiOGEtN2ViMTgxYmZmZDQ3?s=vl
--->
+## Formazione del modello per i tag personalizzati {#train-model}
 
 Per creare e formare un modello per i tag aziendali specifici, procedere come segue:
 
-1. Create i tag necessari e la struttura di tag appropriata in `cq:tags`. Caricate le immagini rilevanti nell&#39;archivio DAM.
+1. Create i tag necessari e la struttura di tag appropriata. Caricate le immagini rilevanti nell&#39;archivio DAM.
 1. Nell’interfaccia [!DNL Experience Manager] utente, accedi a **[!UICONTROL Risorse]** > Modello **** formazione.
 1. Fai clic su **[!UICONTROL Crea]**. Specificate un **[!UICONTROL Titolo]**, una **[!UICONTROL Descrizione]**.
 1. Sfogliare e selezionare i tag presenti nei tag esistenti per `cq:tags` cui si desidera formare il modello. Fai clic su **[!UICONTROL Avanti]**.
@@ -114,19 +112,19 @@ Per creare e formare un modello per i tag aziendali specifici, procedere come se
 
 ### Visualizzazione dello stato e del rapporto della formazione {#training-status}
 
-Per verificare se Smart Content Service è addestrato sui tag presenti nel set di risorse di formazione, controllate il rapporto sul flusso di lavoro di formazione dalla console Rapporti.
+Per verificare se il servizio Smart Tags è addestrato sui tag nel set di risorse di formazione, controllate il rapporto sul flusso di lavoro di formazione dalla console Rapporti.
 
 1. Nell&#39; [!DNL Experience Manager] interfaccia, accedi a **[!UICONTROL Strumenti > Risorse > Rapporti]**.
 1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Specifica un titolo e una descrizione per il rapporto. In **[!UICONTROL Pianifica rapporto]**, lascia selezionata l’opzione **[!UICONTROL Now (Ora)]**. Se vuoi pianificare il rapporto per un momento successivo, seleziona **[!UICONTROL Later (Più tardi)]** e specifica una data e un’ora. Then, click **[!UICONTROL Create]** from the toolbar.
 1. Nella pagina **[!UICONTROL Rapporti su risorse]**, seleziona il rapporto generato. To view the report, click **[!UICONTROL View]** from the toolbar.
-1. Rivedete i dettagli del rapporto. Il rapporto mostra lo stato di formazione per i tag che hai appreso. La presenza del colore verde nella colonna **[!UICONTROL Training Status (Stato formazione)]** indica che per il tag è stato eseguito il training del servizio di contenuti avanzati. Se invece del verde è presente il colore giallo, il training del servizio di contenuti avanzati non è stato completato per un tag specifico. In questo caso, aggiungi altre immagini che contengono il tag in questione ed esegui il flusso di lavoro di formazione per completare il training del servizio per quel tag. Se non visualizzate i tag nel rapporto, eseguite nuovamente il flusso di lavoro di formazione per questi tag.
+1. Rivedete i dettagli del rapporto. Il rapporto mostra lo stato di formazione per i tag che hai appreso. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Tags service is trained for the tag. Se invece del verde è presente il colore giallo, il training del servizio di contenuti avanzati non è stato completato per un tag specifico. In questo caso, aggiungi altre immagini che contengono il tag in questione ed esegui il flusso di lavoro di formazione per completare il training del servizio per quel tag. Se i tag non vengono visualizzati in questo rapporto, eseguite di nuovo il flusso di lavoro di formazione per questi tag.Tags
 1. Per scaricare il rapporto, selezionatelo dall’elenco e fate clic su **[!UICONTROL Scarica]** dalla barra degli strumenti. Il rapporto viene scaricato come foglio di calcolo di Microsoft Excel.
 
 ## Assegnare tag alle risorse {#tag-assets}
 
-Dopo aver creato Smart Content Service, potete attivare il flusso di lavoro dei tag per applicare automaticamente i tag appropriati a un altro set di risorse simili. Potete applicare il flusso di lavoro dei tag periodicamente o ogni volta che lo desiderate. Il flusso di lavoro dei tag si applica a risorse e cartelle.
+Dopo aver preparato il servizio Smart Tags, potete attivare il flusso di lavoro dei tag per applicare automaticamente i tag appropriati a un altro set di risorse simili. Potete applicare il flusso di lavoro dei tag periodicamente o ogni volta che lo desiderate. Il flusso di lavoro dei tag si applica a risorse e cartelle.
 
 ### Assegnare tag alle risorse dalla console del flusso di lavoro {#tagging-assets-from-the-workflow-console}
 
@@ -140,7 +138,7 @@ Dopo aver creato Smart Content Service, potete attivare il flusso di lavoro dei 
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse. Per informazioni dettagliate, consultate [Gestione di smart tag](#manage-smart-tags-and-searches).
+   Andate alla cartella delle risorse e controllate i tag per verificare se i tag delle risorse sono correttamente associati. Per informazioni dettagliate, consultate [Gestione di smart tag](#manage-smart-tags-and-searches).
 
 ### Applicare tag alle risorse dalla timeline {#tagging-assets-from-the-timeline}
 
@@ -151,7 +149,7 @@ Dopo aver creato Smart Content Service, potete attivare il flusso di lavoro dei 
    ![start_workflow](assets/start_workflow.png)
 
 1. Selezionate il flusso di lavoro **[!UICONTROL DAM Smart Tag Assets]** e specificate un titolo per il flusso di lavoro.
-1. Fate clic su **[!UICONTROL Avvia]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse. Per informazioni dettagliate, consultate [Gestione di smart tag](#manage-smart-tags-and-searches).
+1. Fate clic su **[!UICONTROL Avvia]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e verificate i tag necessari per verificare se i tag delle risorse sono stati impostati correttamente. Per informazioni dettagliate, consultate [Gestione di smart tag](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
@@ -193,18 +191,17 @@ I risultati della ricerca che corrispondono a tutti i termini di ricerca nei cam
 
 ### Limiti per i tag {#limitations}
 
-Gli smart tag avanzati si basano su modelli di apprendimento delle immagini del marchio e dei relativi tag. Questi modelli non sempre sono perfetti per identificare i tag. La versione corrente di Smart Content Service presenta i seguenti limiti:
+Gli smart tag avanzati si basano su modelli di apprendimento delle immagini del marchio e dei relativi tag. Questi modelli non sempre sono perfetti per identificare i tag. La versione corrente dei tag avanzati presenta le seguenti limitazioni:
 
 * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie sottili o regolari.
 * Impossibile identificare i tag in base a piccoli pattern/parti di un’immagine. Ad esempio, i logo delle T-shirt.
-* I tag sono supportati nelle impostazioni internazionali in cui AEM è supportato. Per un elenco delle lingue, consultate [Note](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)sulla versione di Smart Content Services.
+* I tag sono supportati nelle impostazioni internazionali in cui AEM è supportato. Per un elenco delle lingue, consultate [Note](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)sulla versione dei tag avanzati.
 
 Per cercare le risorse con gli smart tag (regolari o avanzati), usate la ricerca Omnisearch delle risorse (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
 
 >[!NOTE]
 >
->La capacità di Smart Content Service di formare i tag e applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione.
->
+>La capacità dei tag avanzati di formare i tag e applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione.
 >Per risultati ottimali, Adobe consiglia di usare immagini visivamente simili per addestrare il servizio per ciascun tag.
 
 >[!MORELIKETHIS]
