@@ -3,15 +3,15 @@ title: Applicare tag alle immagini con servizi intelligenti artificialmente.
 description: Applicate tag alle immagini con servizi intelligenti artificialmente che applicano tag commerciali contestuali e descrittivi utilizzando i servizi Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2400'
 ht-degree: 5%
 
 ---
 
 
-# Applicazione di tag alle immagini tramite i servizi avanzati {#smart-tag-assets}
+# Servizio Smart Tag per formazione e tag delle immagini {#train-service-tag-assets}
 
 Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare le risorse digitali. L’assegnazione di tag alle risorse mediante il vocabolario controllato dalla tassonomia consente di identificare e recuperare facilmente le risorse mediante ricerche basate sui tag.
 
@@ -25,7 +25,7 @@ In background, lo Smart Tags utilizza un framework di intelligenza artificiale d
 
 Per utilizzare i tag avanzati, effettuate le seguenti operazioni:
 
-* [Integrare Experience Manager con Adobe I/O](#integrate-aem-with-aio).
+* [Integrare Experience Manager con Adobe Developer Console](#integrate-aem-with-aio).
 * [Informazioni sui modelli e sulle linee guida](#understand-tag-models-guidelines)dei tag.
 * [Formare il modello](#train-model).
 * [Assegnare tag alle risorse](#tag-assets)digitali.
@@ -35,11 +35,11 @@ I tag avanzati sono applicabili solo ai [!DNL Adobe Experience Manager Assets] c
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Integrazione [!DNL Experience Manager] con Adobe I/O {#integrate-aem-with-aio}
+## Integrazione [!DNL Experience Manager] con Adobe Developer Console {#integrate-aem-with-aio}
 
-È possibile effettuare l’integrazione [!DNL Adobe Experience Manager] con i tag avanzati utilizzando l’I/O di Adobe. Utilizzate questa configurazione per accedere al servizio Smart Tags dall&#39;interno [!DNL Experience Manager].
+È possibile effettuare l&#39;integrazione [!DNL Adobe Experience Manager] con i tag avanzati utilizzando Adobe Developer Console. Utilizzate questa configurazione per accedere al servizio Smart Tags dall&#39;interno [!DNL Experience Manager].
 
-Consultate [configurare Experience Manager per l’assegnazione di tag avanzati alle risorse](smart-tags-configuration.md) per le attività di configurazione dei tag avanzati. Sul lato posteriore, il [!DNL Experience Manager] server autentica le credenziali del servizio con il gateway di I/O Adobe prima di inoltrare la richiesta al servizio Smart Tags.
+Consultate [configurare Experience Manager per l’assegnazione di tag avanzati alle risorse](smart-tags-configuration.md) per le attività di configurazione dei tag avanzati. Sul lato posteriore, il [!DNL Experience Manager] server autentica le credenziali del servizio con il gateway di Adobe Developer Console prima di inoltrare la richiesta al servizio Smart Tags.
 
 ## Informazioni sui modelli e sulle linee guida dei tag {#understand-tag-models-guidelines}
 
@@ -177,7 +177,7 @@ Potete anche assegnare un rango più alto a un tag per aumentarne la rilevanza r
 
 ### Comprendere i risultati della ricerca AEM con gli smart tag {#understandsearch}
 
-Per impostazione predefinita, la ricerca AEM combina i termini di ricerca con una `AND` clausola. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una `OR` clausola aggiuntiva per individuare qualsiasi termine di ricerca negli smart tag applicati. For example, consider searching for `woman running`. Per impostazione predefinita, le risorse con una sola parola chiave `woman` o una sola `running` parola chiave nei metadati non vengono visualizzate nei risultati della ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con `woman` o `running` tramite smart tag. Quindi i risultati della ricerca sono una combinazione di:
+Per impostazione predefinita, la ricerca AEM combina i termini di ricerca con una `AND` clausola. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una `OR` clausola aggiuntiva per individuare qualsiasi termine di ricerca negli smart tag applicati. For example, consider searching for `woman running`. Per impostazione predefinita, le risorse con una sola parola chiave `woman` o una sola `running` parola chiave nei metadati non vengono visualizzate nei risultati della ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con tag `woman` o `running` tramite smart tag. Quindi i risultati della ricerca sono una combinazione di:
 
 * risorse con `woman` e `running` parole chiave nei metadati.
 
