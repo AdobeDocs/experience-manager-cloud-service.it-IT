@@ -1,8 +1,11 @@
 ---
 title: Problemi noti
 description: Note sulla versione specifiche per i problemi noti relativi ad Adobe Experience Manager as a Cloud Service
-translation-type: ht
-source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
+translation-type: tm+mt
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 96%
 
 ---
 
@@ -31,13 +34,12 @@ Alcuni problemi noti sono:
 
 In futuro verranno attivate alcune funzionalità di Adobe Experience Manager Assets che dipendono dalle funzionalità di base e che non sono ancora disponibili nell’architettura di implementazione di Experience Manager as a Cloud Service:
 
-* Al momento non è disponibile una versione migliorata della funzionalità per l’assegnazione di tag avanzati che sfrutta i servizi di intelligenza artificiale di Adobe I/O.
 * Funzionalità non attivate in questa fase a causa della dipendenza da API di Commerce Integration Framework:
    * Modelli di flusso di lavoro per servizio fotografico.
    * La scheda Informazioni prodotto nell’interfaccia delle proprietà della risorsa non è compilata.
 * Funzionalità non attivate in questa fase a causa della dipendenza dall’integrazione di InDesign Server:
    * Modelli di risorse e cataloghi di risorse.
-   * Anteprima multipagina di file InDesign.
+   * Anteprima di più pagine di file Adobe InDesign.
 
 >[!MORELIKETHIS]
 >
