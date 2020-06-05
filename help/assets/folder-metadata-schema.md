@@ -3,7 +3,10 @@ title: Schema metadati cartelle
 description: Scopri come creare uno schema di metadati per le cartelle di risorse in Risorse AEM
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 2394ce2b5ebbd3e0e7229a98b5f500312b82dbd7
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 10%
 
 ---
 
@@ -16,8 +19,8 @@ Risorse Adobe Experience Manager (AEM) consente di creare schemi di metadati per
 
 Utilizzare l&#39;editor Moduli schema metadati cartella per creare e modificare gli schemi di metadati per le cartelle.
 
-1. Toccate/fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di metadati **[!UICONTROL cartella]**.
-1. Nella pagina Moduli schema metadati cartella, tocca o fai clic su **[!UICONTROL Crea]**.
+1. Tocca/fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cartella Schemi di metadati]**.
+1. Nella pagina Moduli schema metadati cartella, toccate o fate clic su **[!UICONTROL Crea]**.
 1. Specificare un nome per il modulo, quindi toccare o fare clic su **[!UICONTROL Crea]**. Il nuovo modulo schema è elencato nella pagina Moduli schema.
 
 ## Edit folder metadata schema forms {#edit-folder-metadata-schema-forms}
@@ -27,7 +30,7 @@ Utilizzare l&#39;editor Moduli schema metadati cartella per creare e modificare 
 * Schede
 * Elementi del modulo all&#39;interno delle schede.
 
-È possibile mappare/configurare questi elementi del modulo su un campo all’interno di un nodo di metadati nell’archivio CRX. È possibile aggiungere nuove schede o elementi modulo al modulo schema di metadati.
+È possibile mappare/configurare questi elementi del modulo su un campo all’interno di un nodo di metadati nell’archivio CRX. È possibile aggiungere nuove schede o elementi del modulo al modulo schema di metadati.
 
 1. Nella pagina Moduli schema, selezionare il modulo creato, quindi toccare o fare clic sull&#39;icona **[!UICONTROL Modifica]** dalla barra degli strumenti.
 1. Nella pagina Editor schema metadati cartella, toccate o fate clic sull&#39;icona **[!UICONTROL +]** per aggiungere una scheda al modulo. Per rinominare la scheda, toccate o fate clic sul nome predefinito e specificate il nuovo nome in **[!UICONTROL Impostazioni]**.
@@ -40,7 +43,7 @@ Utilizzare l&#39;editor Moduli schema metadati cartella per creare e modificare 
 
    ![adding_components](assets/adding_components.png)
 
-   Se create più schede, toccate o fate clic su una scheda specifica per aggiungere componenti.
+   Se create più schede, toccate o fate clic su una scheda specifica per aggiungere i componenti.
 
 1. Per configurare un componente, selezionatelo e modificatene le proprietà nella scheda **[!UICONTROL Impostazioni]** .
 
@@ -107,7 +110,7 @@ Di seguito sono riportati i valori validi per questa proprietà:
 
 * `./jcr:content/metadata/dc:title`: Memorizza il valore nel nodo di metadati della cartella come proprietà `dc:title`.
 
-* `./jcr:created`: Visualizza la proprietà JCR nel nodo della cartella. Se configurate queste proprietà in CRXDE, Adobe consiglia di contrassegnarle come Disattiva modifica, perché sono protette. In caso contrario, l&#39;errore `Asset(s) failed to modify`&#39; si verifica quando si salvano le proprietà della risorsa.
+* `./jcr:created`: Memorizza la data e l’ora di creazione di una risorsa. È una proprietà protetta. Se configurate queste proprietà, Adobe consiglia di contrassegnarle come [!UICONTROL Disattiva modifica].
 
 Per garantire che il componente venga visualizzato correttamente nel modulo dello schema di metadati, non includete uno spazio nel percorso della proprietà.
 
@@ -135,7 +138,7 @@ Se si configura uno schema di metadati per una cartella, il percorso del modulo 
 
 ### Assegnazione a uno schema dalla pagina Schema metadati cartella {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Toccate/fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**> Schemi di metadati **[!UICONTROL cartella]**.
+1. Tocca/fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cartella Schemi di metadati]**.
 1. Dalla pagina Moduli schema metadati cartella, selezionare il modulo schema che si desidera applicare a una cartella.
 1. Dalla barra degli strumenti, toccate o fate clic su **[!UICONTROL Applica alle cartelle]**.
 
@@ -144,7 +147,7 @@ Se si configura uno schema di metadati per una cartella, il percorso del modulo 
 
    ![folder_properties](assets/folder_properties.png)
 
-   Per visualizzare i campi di metadati della cartella, toccate o fate clic sulla scheda Metadati **** cartella.
+   Per visualizzare i campi di metadati della cartella, tocca o fai clic sulla scheda **[!UICONTROL Folder Metadata (Metadati cartella)]**.
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
@@ -159,11 +162,11 @@ Quando create una cartella, potete assegnare uno schema di metadati a una cartel
    ![select_schema](assets/select_schema.png)
 
 1. Aprite le proprietà dei metadati per la cartella a cui avete applicato lo schema di metadati.
-1. Per visualizzare i campi di metadati della cartella, toccate o fate clic sulla scheda Metadati **** cartella.
+1. Per visualizzare i campi di metadati della cartella, tocca o fai clic sulla scheda **[!UICONTROL Folder Metadata (Metadati cartella)]**.
 
 ## Utilizzare lo schema di metadati della cartella {#use-the-folder-metadata-schema}
 
-Aprite le proprietà di una cartella configurata con uno schema di metadati della cartella. Nella pagina delle proprietà della cartella viene visualizzata la scheda Metadati **** cartella. Per visualizzare il modulo schema di metadati della cartella, selezionare questa scheda.
+Apri le proprietà di una cartella configurata con uno schema di metadati della cartella. Nella pagina delle proprietà della cartella viene visualizzata la scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
 
 Immettete i valori dei metadati nei vari campi e toccate o fate clic su **[!UICONTROL Salva]** per memorizzarli. I valori specificati vengono memorizzati nel nodo cartella nell&#39;archivio CRX.
 
