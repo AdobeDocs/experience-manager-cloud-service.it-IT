@@ -2,9 +2,9 @@
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.6.0'
 description: Note sulla versione 2020.6.0 di Experience Manager
 translation-type: tm+mt
-source-git-commit: a725e5729d1086aba64ec59ed909577f25219aa9
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1833'
 ht-degree: 7%
 
 ---
@@ -21,6 +21,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is Ju
 ## Novità di AEM Sites {#aem-sites}
 
 Leggi questa sezione per scoprire le novità e gli aggiornamenti di AEM Sites in AEM as a Cloud Service, versione 2020.6.0.
+
+### Novità {#whats-new-2020.6.0}
+
+La release 2.9.0 dei componenti [](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) core è ora disponibile come parte di AEM Sites, che include:
+
+* Integrazione tra [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) e i componenti core
+* Attributi ID HTML configurabili per tutti i componenti
+* Nuovo componente Barra di avanzamento
+* Numerose correzioni di bug
 
 ### Correzioni di bug {#sites-bug-fixes}
 
@@ -53,21 +62,29 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * Un utente con il ruolo *Business Owner* in Cloud Manager è ora in grado di eliminare un programma sandbox dalla pagina di destinazione (tramite il pulsante di azione rapida sulla scheda Program) o dall&#39;interno del programma.
 
-* Un utente del programma sandbox nel ruolo *Business Owner* o *Deployment Manager* in Cloud Manager è ora in grado di eliminare l&#39;ambiente di produzione e di fase impostato tramite l&#39;interfaccia utente di Cloud Manager. L&#39;opzione di eliminazione è ora disponibile sia dalla scheda Ambiente nella pagina della panoramica che dalla pagina Ambienti. Selezionando l&#39;opzione di eliminazione su Produzione o Stage, viene eliminato anche l&#39;altro nel set.
+   Per ulteriori informazioni, vedere [Eliminazione di un programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) sandbox.
+
+* Un utente del programma sandbox nel ruolo *Business Owner* o *Deployment Manager* in Cloud Manager è ora in grado di eliminare l&#39;ambiente di produzione e di fase impostato tramite l&#39;interfaccia utente di Cloud Manager. L&#39;opzione di eliminazione è ora disponibile dalla scheda Ambiente nella pagina Panoramica **** programmi e nella pagina **Ambienti** . Selezionando l&#39;opzione di eliminazione su Produzione o Stage, viene eliminato anche l&#39;altro nel set.
+
+   Per ulteriori informazioni, vedere [Eliminazione di un programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) sandbox.
 
 * Indicatori di supporto sulla pagina di destinazione per informare e informare l’utente sulla navigazione di base.
 
-* Indicatori di supporto nella pagina *Panoramica* per informare e informare l&#39;utente sulla navigazione di base in Cloud Manager per avviarla.
+* Indicatori di supporto nella pagina Panoramica **del** programma per informare e informare l&#39;utente sulla navigazione di base in Cloud Manager per avviarla.
 
 * Una pagina **LEARN** è ora disponibile in Cloud Manager, accessibile tramite la navigazione superiore. Questa pagina include risorse per aiutare gli utenti a conoscere i flussi di lavoro più utilizzati in base ai loro ruoli assegnati in Cloud Manager.
 
-* I programmi sandbox ora sono identificati tramite un contrassegno **sandbox** che verrà visualizzato sulla scheda del programma sulla pagina di destinazione e accanto al nome del programma nella pagina *Panoramica* .
+* I programmi sandbox ora sono identificati tramite un contrassegno **sandbox** che verrà visualizzato sulla scheda del programma sulla pagina di destinazione e accanto al nome del programma nella pagina Panoramica **del** programma.
 
-* Un utente con il ruolo *SysAdmin* ora ha accesso con un solo clic alla posizione in Admin Console da cui è possibile gestire i ruoli utente o le autorizzazioni per Cloud Manager. Nella pagina di destinazione accanto al pulsante **Aggiungi programma** sarà disponibile il pulsante **Gestisci ruoli** .
+* Un utente con il ruolo SysAdmin ora dispone di un solo clic per accedere alla posizione in Admin Console da cui è possibile gestire i ruoli utente o le autorizzazioni per Cloud Manager. È ora disponibile un pulsante **Gestisci accesso** nella pagina di destinazione accanto al pulsante **Aggiungi programma** .
 
-* Un utente con il ruolo SysAdmin ora dispone di un solo clic per accedere all&#39;istanza Author direttamente da CM.
+   Per ulteriori informazioni, consulta Attività [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) SysAdmin.
 
-* Il registro Build ora include l&#39;elenco degli artefatti scoperti, inclusi i pacchetti di contenuto saltati.
+* Un utente con il ruolo SysAdmin ora ha accesso con un solo clic all&#39;istanza di creazione direttamente da Cloud Manager.
+
+   Per ulteriori informazioni, consultate [Gestione dell&#39;accesso all&#39;istanza](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) Author.
+
+* Il registro Build ora include l&#39;elenco degli artefatti scoperti, inclusi i pacchetti di contenuto ignorati.
 
 * Il passaggio Genera ora convalida che tutti i pacchetti di contenuto generati includono tutte le proprietà obbligatorie: nome, gruppo e versione.
 
@@ -77,7 +94,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * In alcune situazioni, le icone presenti nella finestra di dialogo **Crea programma** non erano allineate.
 
-* L’identificatore di rilascio di AEM non veniva visualizzato in modo coerente nella pagina *Panoramica* .
+* L’identificatore di rilascio di AEM non veniva visualizzato in modo coerente nella pagina Panoramica **dei** programmi.
 
 * Durante la configurazione della pipeline di produzione, l&#39;opzione Distribuzione **** pianificata non era visibile per alcuni clienti.
 
