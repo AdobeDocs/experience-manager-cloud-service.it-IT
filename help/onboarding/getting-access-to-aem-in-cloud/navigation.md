@@ -2,7 +2,7 @@
 title: Navigazione
 description: Navigazione - Servizio Cloud
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 1%
@@ -33,11 +33,9 @@ Per ulteriori informazioni su come aggiungere utenti a un profilo, consulta [Acc
 
 1. Andate alla pagina di destinazione di Cloud Manager e fate clic su **Gestisci accesso**.
 
-   ![](assets/sys-admin1.png)
+   ![](assets/sys-admin5.png)
 
 1. Fai clic su **Gestisci accesso** per accedere all&#39; **Admin Console** da cui puoi gestire i ruoli utente o le autorizzazioni per Cloud Manager.
-
-   ![](assets/sys-admin2.png)
 
 ### Gestione dell&#39;accesso all&#39;istanza Author {#manage-access-aem}
 
@@ -48,14 +46,17 @@ In qualità di utente con il ruolo SysAdmin, puoi accedere con un solo clic ad *
 
 Per ulteriori informazioni, consultate [Accesso a un’istanza in AEM come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) cloud.
 
-1. Passate alla scheda **Ambienti** dalla pagina *Panoramica* o alla pagina **Ambienti** per utilizzare l&#39;opzione **Gestisci accesso** , come illustrato nella figura seguente.
+1. Passare alla scheda **Ambienti** dalla pagina Panoramica **del** programma.
 
-   ![](assets/manage-access1.png)
+   ![](assets/sys-admin6.png)
+
+   Oppure,
+
+   Fate clic su **Dettagli** dalla scheda **Ambienti** per aprire la pagina Ambienti. Fate clic su **Gestisci** -> **Gestisci accesso**.
+
+   ![](assets/sys-admin4.png)
 
 1. Fai clic su **Gestisci accesso** per accedere ad **Admin Console** da dove puoi accedere all&#39;istanza Author di un ambiente.
-
-   ![](assets/sys-admin3.png)
-
 
 ## Per i clienti AMS esistenti {#existing-aem}
 
