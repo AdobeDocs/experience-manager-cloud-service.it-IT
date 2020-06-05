@@ -4,9 +4,9 @@ description: Scopri i diversi metodi di gestione e modifica delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d262d4493939f0fc60a98ef4ff892fbce5f526ab
+source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
 workflow-type: tm+mt
-source-wordcount: '4396'
+source-wordcount: '4419'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ Consultate [Aggiunta di risorse digitali a Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Se una risorsa duplicata esiste nell’archivio DAM, Assets la rileva e invia una notifica all’utente. Per impostazione predefinita, il rilevamento di duplicati è disabilitato. Per abilitare questa funzione, configura [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Scopri [come eseguire le configurazioni](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. Il rilevamento della duplicazione si basa sul `dam:sha1` valore univoco memorizzato in `jcr:content/metadata/dam:sha1`. Ciò significa che le risorse duplicate vengono rilevate anche se i nomi dei file sono diversi.
+Se un utente DAM carica una o più risorse già presenti nella directory archivio, [!DNL Experience Manager] ne rileva la duplicazione e ne informa l’utente. Per impostazione predefinita, il rilevamento di duplicati è disabilitato in quanto può avere un impatto sulle prestazioni a seconda delle dimensioni dell&#39;archivio e del numero di risorse caricate. Per abilitare questa funzione, configura [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Scopri [come eseguire le configurazioni](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. Il rilevamento della duplicazione si basa sul `dam:sha1` valore univoco memorizzato in `jcr:content/metadata/dam:sha1`. Ciò significa che le risorse duplicate vengono rilevate anche se i nomi dei file sono diversi.
 
 ![Rileva configurazione OSGi della risorsa duplicata](assets/duplicate-detection.png)
 
