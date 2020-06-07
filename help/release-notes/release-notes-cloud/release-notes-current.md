@@ -84,7 +84,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
    Per ulteriori informazioni, consultate [Gestione dell&#39;accesso all&#39;istanza](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) Author.
 
-* Il registro Build ora include l&#39;elenco degli artefatti scoperti, inclusi i pacchetti di contenuto ignorati.
+* Il registro Build ora include l&#39;elenco degli artefatti scoperti, inclusi i pacchetti di contenuto saltati.
 
 * Il passaggio Genera ora convalida che tutti i pacchetti di contenuto generati includono tutte le proprietà obbligatorie: nome, gruppo e versione.
 
