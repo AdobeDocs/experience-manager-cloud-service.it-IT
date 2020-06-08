@@ -3,6 +3,9 @@ title: Differenze e novità - Adobe Experience Manager come servizio cloud
 description: 'Differenze e novità - Adobe Experience Manager (AEM) come servizio cloud. '
 translation-type: tm+mt
 source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
+workflow-type: tm+mt
+source-wordcount: '1724'
+ht-degree: 7%
 
 ---
 
@@ -34,7 +37,7 @@ Esistono differenze intrinseche tra questi approcci precedenti e AEM come serviz
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle versioni locale e del servizio gestito, consultate la documentazione fornita con [AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html).
+>Per ulteriori informazioni sulle versioni locale e del servizio gestito, consultate la documentazione fornita con [AEM 6.5](https://helpx.adobe.com/it/support/experience-manager/6-5.html).
 
 ## Architettura {#architecture}
 
@@ -42,25 +45,25 @@ Esistono differenze intrinseche tra questi approcci precedenti e AEM come serviz
 >
 >Per ulteriori dettagli vedere [Architettura](/help/core-concepts/architecture.md).
 
-AEM come servizio cloud ora include:
+AEM as a Cloud Service adesso include:
 
-* Architettura dinamica con un numero variabile di immagini AEM.
+* Architettura dinamica con un numero variabile di immagini AEM
 
-![Architettura](assets/introduction-03.png "dinamicaArchitettura dinamica")
+![Architettura dinamica](assets/introduction-03.png "Architettura dinamica")
 
-Questa architettura:
+Tale architettura:
 
-* Viene ridimensionata in base al traffico *effettivo* e all&#39;attività *effettiva* .
+* viene ridimensionata in base al *traffico* e all’*attività* effettiva;
 
-* Presenta istanze singole che vengono eseguite solo quando necessario.
+* presenta istanze singole che vengono eseguite solo quando necessario;
 
-* Utilizza applicazioni modulari.
+* utilizza applicazioni modulari;
 
-* dispone di un cluster di autori come predefinito; in questo modo si evita il tempo di inattività per le attività di manutenzione.
+* per impostazione predefinita dispone di un cluster di authoring, per garantire la disponibilità continua anche durante le attività di manutenzione.
 
-Questo consente di ridimensionare automaticamente i diversi pattern di utilizzo:
+Questo approccio consente la scalabilità automatica in base alle esigenze di diversi schemi di utilizzo:
 
-![Ridimensionamento automatico per diversi](assets/introduction-04.png "pattern di utilizzoRidimensionamento automatico per diversi pattern di utilizzo")
+![Scalabilità automatica per diversi schemi di utilizzo](assets/introduction-04.png "Scalabilità automatica per diversi schemi di utilizzo")
 
 
 ## Aggiornamenti {#upgrades}
@@ -101,7 +104,7 @@ Cloud Manager è:
 
 * un componente essenziale di AEM come servizio cloud; per ogni nuovo tenant viene eseguito il primo provisioning per l&#39;accesso a Cloud Manager,
 
-* il punto di ingresso unico per il personale operativo e di sviluppo.
+* il punto di ingresso unico per il personale addetto alle operazioni e allo sviluppo.
 
 Nello specifico, il numero e il tipo di programmi AEM che è possibile creare da Cloud Manager deriva da:
 
@@ -109,7 +112,7 @@ Nello specifico, il numero e il tipo di programmi AEM che è possibile creare da
 
 * da attori interni quando AEM come servizio cloud viene utilizzato per l’abilitazione, o per la formazione,
 
-* da processi basati su esterni, ad esempio quelli avviati da Adobe.com.
+* da processi basati su esterni, come le versioni di prova avviate da Adobe.com.
 
 Cloud Manager si è evoluto come portale self-service in cui è possibile creare e configurare i componenti principali di AEM come servizio Cloud:
 
@@ -135,7 +138,7 @@ Attualmente Cloud Manager è in grado di creare ambienti in 3 aree geografiche (
 >
 >Per ulteriori dettagli, consultate [Onboarding](/help/onboarding/home.md).
 
-L’avvio e la gestione di un progetto AEM è semplice quando si utilizza AEM come servizio Cloud, in quanto Adobe è responsabile per molti aspetti:
+L’avvio e la gestione di un progetto AEM è semplice quando si utilizza AEM come servizio Cloud come Adobe è responsabile per molti aspetti:
 
 * Le immagini AEM di base sono ottimizzate per casi di utilizzo specifici.
 
@@ -161,7 +164,7 @@ L’avvio e la gestione di un progetto AEM è semplice quando si utilizza AEM co
 
 >[!NOTE]
 >
->Per ulteriori dettagli è possibile iniziare con [Linee guida](/help/implementing/developing/introduction/development-guidelines.md) per lo sviluppo e [lo sviluppo - Esercitazione](/help/implementing/developing/introduction/develop-wknd-tutorial.md)WKND.
+>Per ulteriori dettagli è possibile iniziare con le Linee guida [per](/help/implementing/developing/introduction/development-guidelines.md) lo sviluppo e [lo sviluppo - Esercitazione](/help/implementing/developing/introduction/develop-wknd-tutorial.md)WKND.
 
 La nuova architettura che supporta AEM come servizio cloud include alcune modifiche fondamentali all&#39;esperienza di sviluppo complessiva. Uno degli obiettivi principali di AEM come servizio cloud è consentire ai clienti esperti (che hanno utilizzato AEM sia in sede sia nel contesto dei servizi gestiti Adobe) di migrare il più rapidamente possibile ad AEM come servizio cloud, senza dover riscrivere la maggior parte del codice personalizzato. Tuttavia, potrebbero essere ancora necessari alcuni adeguamenti.
 
@@ -201,7 +204,7 @@ Al fine di supportare sessioni e sviluppo rapidi, è anche possibile sviluppare 
 
 * Guida rapida di AEM come servizio cloud: un programma di installazione autonomo `.jar` basato sulla più recente base di codice AEM, con la stessa superficie funzionale e API.
 
-* AEM come SDK del dispatcher di servizi cloud: un processo basato su immagini per verificare e convalidare localmente le configurazioni del dispatcher
+* AEM come SDK del dispatcher di servizi cloud: un processo basato su immagini per testare e convalidare localmente le configurazioni del dispatcher
 
 >[!NOTE]
 >
@@ -221,7 +224,7 @@ In questi settori:
 
 * Le topologie sono ottimizzate per la massima resilienza ed efficienza; ad esempio, la replica binaryless è l&#39;impostazione predefinita.
 
-* Le attività a carico elevato, come code, processi e attività di elaborazione in blocco, sono state spostate dall’istanza principale di AEM per essere gestite tramite micro-servizi condivisi e dedicati.
+* Le attività con un carico elevato, come code, processi e attività di elaborazione in blocco, sono state spostate dall’istanza principale di AEM per essere gestite tramite micro-servizi condivisi e dedicati.
 
 Le operazioni per AEM come servizio Cloud sono inoltre supportate da una nuova infrastruttura di monitoraggio, reporting e avvisi. Questo consente agli SRE di Adobe (Site Reliability Engineers) di mantenere il servizio in modo proattivo. I vari elementi dell&#39;architettura sono dotati di una varietà di controlli sanitari. Se, per qualche motivo, un particolare nodo dell&#39;architettura è considerato malsano, allora viene rimosso dal servizio e sostituito silenziosamente con uno nuovo, sano.
 
@@ -233,7 +236,7 @@ Le operazioni per AEM come servizio Cloud sono inoltre supportate da una nuova i
 
 Una modifica importante ad AEM come servizio Cloud è l&#39;utilizzo completamente integrato degli Adobe ID per accedere al livello di authoring.
 
-Questo richiede l’utilizzo di [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Gli account utente consentono agli utenti di accedere ai prodotti e ai servizi Adobe, poiché le informazioni sul profilo utente sono centralizzate in Adobe Identity Management System (IMS) da condividere tra tutti i servizi cloud. Una volta assegnato l&#39;accesso ad AEM, gli account utente possono essere citati in AEM come servizio cloud (come prima); ad esempio, per definire ruoli e autorizzazioni dalle interfacce utente di AEM Security.
+Questo richiede l’utilizzo di [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Gli account utente consentono agli utenti di accedere ai prodotti e ai servizi Adobe, poiché le informazioni sul profilo utente sono centralizzate in Adobe Identity Management System (IMS) da condividere tra tutti i servizi cloud. Una volta assegnato l&#39;accesso ad AEM, gli account utente possono essere citati in AEM come servizio cloud (come prima); ad esempio, per definire ruoli e autorizzazioni dalle interfacce utente di AEM Security.
 
 Questo combina i vantaggi di:
 
