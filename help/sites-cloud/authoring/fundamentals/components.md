@@ -1,8 +1,11 @@
 ---
 title: Componenti
 description: I componenti sono elementi costitutivi essenziali per l’authoring delle pagine di contenuto in AEM.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 100%
 
 ---
 
