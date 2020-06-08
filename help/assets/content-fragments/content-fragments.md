@@ -3,6 +3,9 @@ title: Utilizzo di frammenti di contenuto
 description: Scopri come i frammenti di contenuto in Adobe Experience Manager (AEM) come servizio cloud consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
 translation-type: tm+mt
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+workflow-type: tm+mt
+source-wordcount: '1936'
+ht-degree: 7%
 
 ---
 
@@ -67,6 +70,7 @@ Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, ques
 >I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**sono funzioni diverse in AEM:
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
+
 >
 >
 I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
@@ -140,6 +144,7 @@ Le risorse possono essere utilizzate con un frammento di contenuto in diversi mo
    * Sono parte integrante del frammento (vedere Parti [costitutive di un frammento](#constituent-parts-of-a-content-fragment)di contenuto).
    * Definite la posizione della risorsa.
    * Per ulteriori informazioni, vedere [Inserimento di risorse nel frammento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) nell’Editor frammento.
+
    >[!NOTE]
    >
    >Le risorse visive inserite nel frammento di contenuto stesso sono associate al paragrafo precedente. Quando il frammento viene aggiunto a una pagina, queste risorse vengono spostate in relazione a tale paragrafo quando viene aggiunto del contenuto intermedio.
@@ -191,6 +196,7 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
    * È possibile aggiungere, eliminare o spostare solo all’interno di un frammento utilizzando il formato [RTF nell’editor](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)frammento.
    * Può essere aggiunto solo a elementi di testo con più righe (qualsiasi tipo di frammento).
    * Sono allegati al testo precedente (paragrafo).
+
    >[!CAUTION]
    >
    >Può essere (inavvertitamente) rimosso da un frammento passando al formato Testo normale.
@@ -219,6 +225,7 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
 
          * Visualizzazione/modifica delle **proprietà** del frammento dalla console
          * Modificando i **metadati** nell’editor frammento
+
    >[!CAUTION]
    >
    >I profili di elaborazione dei metadati non si applicano ai frammenti di contenuto.
