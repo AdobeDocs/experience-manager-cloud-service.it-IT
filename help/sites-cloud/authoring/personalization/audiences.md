@@ -3,6 +3,9 @@ title: Gestione dei tipi di pubblico
 description: La console Audiences consente di creare, organizzare e gestire i tipi di pubblico per l'account Adobe Target oppure di gestire i segmenti per ContextHub
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 60%
 
 ---
 
@@ -40,7 +43,7 @@ Per creare un segmento ContextHub nella console Pubblico:
 
    >[!NOTE]
    >
-   >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any newly created audiences.
+   >Per ordinare l’elenco modificato in base all’ordine decrescente, tocca o fai clic su **Modificato**, così da visualizzare i tipi di audiences appena creati.
 
 Per ulteriori dettagli sulla creazione di segmenti utilizzando ContextHub, consulta la documentazione Configurazione della segmentazione con ContextHub. <!--For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.-->
 
@@ -54,7 +57,7 @@ Quando utilizzi più regole, queste vengono combinate tramite l&#39;operatore bo
 
 >[!NOTE]
 >
->Se non vedi **Crea pubblico Target** nel menu **Crea**, non disponi delle autorizzazioni necessarie per creare un pubblico. You need write permissions under `/etc/segmentation` to be able to create audiences. Per impostazione predefinita, gli autori dei contenuti del gruppo dispongono di autorizzazioni di scrittura.
+>Se non vedi le voci **Crea pubblico Target** nel menu **Crea**, non disponi delle autorizzazioni necessarie per creare un pubblico. Per creare audience è necessario disporre di autorizzazioni di scrittura in `/etc/segmentation`. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
 
 Per creare un pubblico di Adobe Target:
 
@@ -68,7 +71,7 @@ Per creare un pubblico di Adobe Target:
 
 1. Nella finestra di dialogo **Configurazione Adobe Target**, seleziona la configurazione di destinazione, quindi tocca o fai clic su **OK**.
 1. Nell&#39;area della prima regola, tocca o fai clic sul tipo di attributo e inserisci tutte le informazioni sull&#39;attributo nei campi disponibili. Una volta terminato, fai clic sul segno di spunta a destra dell&#39;attributo per salvarlo. Consulta [Attributi e relative opzioni](#attributes-and-their-options) per informazioni su tutti gli attributi.
-1. Fai clic su **Aggiungi regola** per aggiungere un&#39;altra regola. Immetti tutte le regole in base alle esigenze. Le regole vengono combinate con l&#39;operatore booleano E, il che significa che il pubblico deve soddisfare tutti i requisiti di ogni regola per essere idoneo per un&#39;attività.
+1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore booleano AND, il che significa che l’audience deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
 1. Tocca o fai clic su **Avanti**.
 1. Inserisci un nome per il pubblico e poi tocca o fai clic su **Salva**.
 1. Tap or click **Save**. La nuovo pubblico viene inserito nell’elenco dei tipi di pubblico.
