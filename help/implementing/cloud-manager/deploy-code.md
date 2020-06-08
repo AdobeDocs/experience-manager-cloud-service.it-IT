@@ -34,6 +34,7 @@ Dopo aver configurato la **pipeline** (archivio, ambiente e ambiente di test), Ã
    1. Implementazione stage
    1. Test fase
    1. Distribuzione di produzione
+
    >[!NOTE]
    >
    >Inoltre, potete esaminare i passaggi da vari processi di distribuzione visualizzando i registri o rivedendo i risultati per i criteri di test.
@@ -93,6 +94,7 @@ Quando Cloud Manager si distribuisce su topologie non di produzione, l&#39;obiet
    1. L&#39;artifact viene estratto nella directory httpd.  I file immutabili non vengono sovrascritti. Eventuali modifiche apportate ai file immutabili nel repository git verranno ignorate al momento della distribuzione.  Questi file sono fondamentali per il framework del dispatcher AMS e non possono essere modificati.
    1. Apache esegue un test di configurazione. Se non viene rilevato alcun errore, il servizio viene ricaricato. Se si verifica un errore, le configurazioni vengono ripristinate dal backup, il servizio viene ricaricato e l&#39;errore viene riportato a Cloud Manager.
    1. Ogni percorso specificato nella configurazione della pipeline viene invalidato o scaricato dalla cache del dispatcher.
+
    >[!NOTE]
    >
    >Cloud Manager prevede che l&#39;artifact del dispatcher contenga l&#39;intero set di file.  Tutti i file di configurazione del dispatcher devono essere presenti nel repository git. I file o le cartelle mancanti genereranno un errore di distribuzione.
