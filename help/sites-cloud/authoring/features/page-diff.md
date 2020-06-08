@@ -1,8 +1,11 @@
 ---
-title: Differenze tra pagine
+title: 'Differenze tra pagine '
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 100%
 
 ---
 
