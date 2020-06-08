@@ -3,6 +3,9 @@ title: Regole sulla protezione dei dati e sulla privacy dei dati - Adobe Experie
 description: 'Scopri Adobe Experience Manager come supporto di Cloud Service Foundation per le varie normative sulla protezione dei dati e la privacy dei dati; incluso il Regolamento generale sulla protezione dei dati (GDPR) dell''UE, il California Consumer Privacy Act e le modalità per conformarsi all''implementazione di un nuovo AEM come progetto di servizio cloud. '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 5%
 
 ---
 
@@ -41,7 +44,7 @@ A livello di AEM Foundation, i Dati personali memorizzati sono memorizzati nel p
 
    ![profilo utente](assets/dpp-foundation-02.png)
 
-### API HTTP {#http-api}
+### HTTP API {#http-api}
 
 Come già detto, Adobe fornisce API per l&#39;accesso ai dati utente, al fine di facilitare l&#39;automazione. Esistono diversi tipi di API che potete utilizzare:
 
@@ -95,9 +98,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 >
 > Per AEM come servizio cloud non è disponibile alcuna procedura manuale dall’interfaccia utente per l’eliminazione di un profilo utente, in quanto CRXDE non è accessibile.
 
-### API HTTP {#http-api-1}
+### HTTP API {#http-api-1}
 
-Le procedure seguenti utilizzano lo strumento della riga di `curl` comando per illustrare come disabilitare l&#39;utente con la **[!UICONTROL caverna]** `userId` ed eliminare i profili disponibili nel percorso predefinito.
+Le procedure seguenti utilizzano lo `curl`strumento della riga di comando per illustrare come disabilitare l’utente con **[!UICONTROL cavery]** `userId` ed eliminare i profili disponibili nel percorso predefinito.
 
 **Individuazione della home page dell&#39;utente:**
 
