@@ -5,6 +5,9 @@ contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '3300'
+ht-degree: 18%
 
 ---
 
@@ -28,17 +31,17 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 |---|---|---|
 | Esperienza semplificata per i creativi su desktop | Semplificate l&#39;accesso alle risorse da DAM (AEM Assets) per i creativi professionisti o, più in generale, per gli utenti desktop che lavorano nelle applicazioni native per la creazione di risorse. Hanno bisogno di un modo semplice e semplice per scoprire, usare (aprire), modificare e salvare le modifiche in AEM, nonché caricare nuovi file. | desktop Win o Mac; App Creative Cloud |
 | Fornire risorse pronte all’uso di alta qualità da Adobe Stock | Gli esperti di marketing contribuiscono ad accelerare il processo di creazione dei contenuti fornendo assistenza per l&#39;origine e l&#39;individuazione delle risorse. I creativi professionisti usano le risorse approvate direttamente dai loro strumenti creativi. | Risorse AEM; mercato Adobe Stock; campi di metadati |
-| Distribuire e condividere le risorse per organizzazioni | I dipartimenti interni/le filiali locali e i partner esterni, i distributori e le agenzie utilizzano le risorse approvate condivise dall&#39;organizzazione madre. L’organizzazione intende condividere in modo sicuro e senza soluzione di continuità le risorse create per un riutilizzo più ampio. | Portale marchio, Contenuti di condivisione risorse |
+| Distribuire e condividere le risorse per organizzazioni | I dipartimenti interni/le filiali locali e i partner esterni, i distributori e le agenzie utilizzano le risorse approvate condivise dall&#39;organizzazione madre. L’organizzazione intende condividere in modo sicuro e senza soluzione di continuità le risorse create per un riutilizzo più ampio. | Portale del marchio, Contenuti di condivisione delle risorse |
 
 ## Offerte Adobe a supporto delle esigenze di collaborazione {#adobe-offerings-to-support-the-collaboration-need}
 
 | Proposta di valore per le persone coinvolte | Offerta Adobe | Superfici interessate |
 |---|---|---|
-| Gli utenti creativi scoprono le risorse da AEM, le aprono e le utilizzano, le modificano e caricano in AEM, nonché caricano nuovi file in AEM, senza uscire dalle app Creative Cloud. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign |
+| Gli utenti creativi scoprono le risorse da AEM, le aprono e le utilizzano, le modificano e caricano in AEM, nonché caricano nuovi file in AEM, senza uscire dalle app Creative Cloud. | [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign |
 | Gli utenti aziendali semplificano l’apertura e l’utilizzo delle risorse, la modifica e il caricamento delle modifiche in AEM e il caricamento di nuovi file in AEM dall’ambiente desktop. Utilizzano un&#39;integrazione generica per aprire qualsiasi tipo di risorsa nell&#39;applicazione desktop nativa, inclusi quelli non Adobe. | [App desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | App desktop AEM su Windows e Mac |
-| Gli esperti di marketing e gli utenti aziendali possono scoprire, visualizzare in anteprima, concedere in licenza e salvare e gestire le risorse Adobe Stock dall’interno di AEM. Le risorse concesse in licenza e salvate forniscono metadati Adobe Stock selezionati per una migliore governance. | [Integrazione con Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | Interfaccia Web AEM |
+| Gli esperti di marketing e gli utenti aziendali possono scoprire, visualizzare in anteprima, concedere in licenza e salvare e gestire le risorse Adobe Stock dall’interno di AEM. Le risorse concesse in licenza e salvate forniscono metadati Adobe Stock selezionati per una migliore governance. | [Integrazione con Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | Interfaccia Web di AEM |
 
-Questo articolo si concentra principalmente sui primi due aspetti delle esigenze di collaborazione. La distribuzione e l’approvvigionamento delle risorse su scala è brevemente indicata come caso d’uso. Per tali esigenze, prendete in considerazione Adobe Brand Portal o Asset Share Commons. Le soluzioni alternative, come [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), che possono essere create in base ai componenti di [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) , [Link Share](share-assets.md), che utilizzano l’interfaccia [Web di](/help/assets/manage-digital-assets.md) AEM Assets, devono essere riviste in base a requisiti specifici.
+Questo articolo si concentra principalmente sui primi due aspetti delle esigenze di collaborazione. La distribuzione e l’approvvigionamento delle risorse su scala viene brevemente citata come caso d’uso. Per tali esigenze, valuta prodotti come Adobe Brand Portal o Asset Share Commons. Le soluzioni alternative, come [AEM Assets Brand Portal](https://helpx.adobe.com/it/experience-manager/brand-portal/user-guide.html), che possono essere create in base ai componenti di [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) e [Condivisione collegamenti](share-assets.md) e che sfruttano l’interfaccia [web di AEM Assets](/help/assets/manage-digital-assets.md), devono essere esaminate secondo requisiti specifici.
 
 ![Connessioni Creative Cloud per AEM: Definizione di quale funzionalità utilizzare](assets/creative-connections-aem.png)
 
@@ -53,9 +56,9 @@ Decidere su quale funzionalità utilizzare
 | Scopri - cercare risorse da AEM | Sì | AEM Web UI + azioni desktop |  |
 | Usa - apri risorsa | Sì | Sì - per qualsiasi app | [Apri dall&#39;interfaccia](/help/assets/manage-digital-assets.md#previewing-assets) Web o dal Finder |
 | Utilizzo: inserire una risorsa da AEM in un documento | Sì - incorporamento | Sì - collegamento o incorporazione | L’app desktop AEM consente di accedere alle risorse come file nel file system locale. Tali collegamenti nelle app native sono rappresentati da percorsi locali. |
-| Modifica - aprire per la modifica | Sì - Azione di check-out | Sì - Azione aperta (nella condivisione di rete) | [Il check-out in AAL](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) salva la risorsa nell’account di archiviazione Creative Cloud dell’utente (sincronizzato dall’app Creative Cloud) per impostazione predefinita. |
+| Modifica - aprire per la modifica | Sì - Azione di check-out | Sì - Azione di apertura (nella condivisione di rete) | [Il check-out in AAL](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) salva la risorsa nell’account di archiviazione Creative Cloud dell’utente (sincronizzato dall’app Creative Cloud) per impostazione predefinita. |
 | Modifica - lavoro in corso all’esterno di AEM | Sì - Risorsa disponibile nell’account di archiviazione Creative Cloud dell’utente sincronizzato con il desktop. | Sì |  |
-| Modifica - modifiche di caricamento | Sì - [Check-in azione](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) con commento facoltativo | Sì |  |
+| Modifica - modifiche di caricamento | Sì - [Check-in azione](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) con commento facoltativo | Sì |  |
 | Carica - file singolo | Sì - carica il documento attivo corrente | Sì | [Caricamento tramite interfaccia Web](/help/assets/manage-digital-assets.md#uploading-assets) |
 | Caricamento: più file/strutture di cartelle gerarchiche | No | Sì | [Caricamento tramite interfaccia](/help/assets/manage-digital-assets.md#uploading-assets)Web; Strumento o script personalizzato |
 | Varie - utente e login | L&#39;utente Creative Cloud che ha effettuato l&#39;accesso all&#39;app desktop Creative Cloud viene riconosciuto (SSO) | Utente/login AEM | Gli utenti di entrambe le soluzioni contano sulla quota di utenti di AEM. |
@@ -68,9 +71,9 @@ Decidere su quale funzionalità utilizzare
 
 Per supportare i casi di utilizzo della distribuzione delle risorse, è necessario considerare altre soluzioni:
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) per un componente aggiuntivo SaaS configurabile per Risorse AEM per pubblicare risorse.
+* [AEM Assets Brand Portal](https://helpx.adobe.com/it/experience-manager/brand-portal/user-guide.html) per un componente aggiuntivo SaaS configurabile per Risorse AEM per pubblicare risorse.
 
-* Le soluzioni personalizzate vengono create in base al codice [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) .
+* Le soluzioni personalizzate vengono create in base al codice di base di [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) .
 * Condivisione [dei](/help/assets/share-assets.md) collegamenti AEM per condividere risorse ad hoc tramite i collegamenti.
 * [Interfaccia](/help/assets/manage-digital-assets.md) Web di AEM Assets con aree per soggetti esterni protetti dalla configurazione di AEM Access Control e con le necessarie regolazioni di configurazione IT/rete, per consentire a questi utenti esterni di accedere ad AEM.
 
@@ -78,17 +81,17 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, è necessar
 
 ### Glossario dei termini comuni {#glossary-of-common-terms}
 
-* **** Lavoro in corso o lavorazione creativa in corso (WIP): Una fase del ciclo di vita delle risorse in cui una risorsa subisce più modifiche e in genere non è ancora pronta per essere condivisa con team più grandi.
-* **** Risorse pronte per la creazione: Risorse pronte per essere condivise con un team più ampio o selezionate o approvate dal team creativo per la condivisione con i team di marketing o LOB.
+* **Work-in-progress o creative work-in-progress (WIP):** una fase del ciclo di vita delle risorse in cui una risorsa subisce più modifiche e, in genere, non è ancora pronta per essere condivisa con team più grandi.
+* **Creative-ready assets (Risorse pronte per i creativi):** risorse pronte per essere condivise con un team più ampio oppure che sono state selezionate o approvate dal team creativo per la condivisione con i team di marketing o LOB.
 
-* **** Approvazioni risorse: Il processo di approvazione che viene eseguito per le risorse già caricate in DAM, che in genere include approvazioni del marchio, approvazioni legali e così via.
-* **** Risorsa finale: Una risorsa che ha superato tutte le approvazioni/i tag dei metadati ed è pronta per essere utilizzata dal team più ampio. Tale risorsa viene memorizzata in DAM e resa disponibile a tutti gli utenti (o a tutti gli utenti interessati). Può essere utilizzato nei canali di marketing o dai team creativi per creare progetti.
+* **Asset approvals (Approvazioni risorse):** il processo di approvazione che viene eseguito per le risorse già caricate in DAM, che, in genere, include approvazioni del marchio, approvazioni legali e così via.
+* **Final asset (Risorsa finale):** una risorsa che ha superato tutte le approvazioni/assegnazione tag dei metadati ed è pronta per essere utilizzata dal team più ampio. Tale risorsa viene memorizzata in DAM, per poi essere resa disponibile a tutti gli utenti (o a tutti gli interessati). Può essere utilizzata nei canali di marketing o dai team creativi per la creazione di design.
 
-* **** Aggiornamento/modifica risorsa secondaria: Una modifica rapida e piccola a una risorsa digitale. Spesso viene effettuata in risposta a una richiesta di ritocco o di modifica minore, a una revisione delle risorse o all’approvazione (ad esempio, riposizionate, modificate le dimensioni del testo, regolate la saturazione/luminosità, il colore e così via).
-* **** Aggiornamento/modifica risorsa principale: Un passaggio a una risorsa digitale che richiede un lavoro considerevole e che a volte deve essere effettuato in un periodo di tempo più lungo. Generalmente include più modifiche. La risorsa deve essere salvata più volte durante l’aggiornamento. Gli aggiornamenti principali delle risorse in genere fanno sì che la risorsa entri in una fase WIP.
-* **** DAM: Gestione delle risorse digitali. In questo documento, è sinonimo di Risorse AEM Experience Manager, a meno che non venga espressamente indicato diversamente.
-* **** Utente creativo: Un professionista creativo, che crea risorse digitali utilizzando le app e i servizi Creative Cloud. In alcuni casi, un utente creativo può essere membro di un team creativo che può utilizzare Creative Cloud, ma non crea risorse digitali (come un direttore creativo o un manager del team creativo).
-* **** Utente DAM: Utente tipico di un sistema DAM. A seconda dell’organizzazione, un utente DAM può essere un utente di marketing o non di marketing, ad esempio un utente Line-of-Business (LOB), un venditore, un venditore e così via.
+* **Minor asset update/change (Aggiornamento/modifica risorsa secondaria):** una modifica rapida e piccola a una risorsa digitale. Spesso viene effettuata in risposta a una richiesta di ritocco o di modifica minore, a una revisione delle risorse o all’approvazione (ad esempio: riposizionamento, modifica dimensioni del testo, regolazione di saturazione/luminosità, colore e così via).
+* **Major asset update/change (Aggiornamento/modifica risorsa principale):** un passaggio a una risorsa digitale che richiede un lavoro considerevole e che a volte deve essere effettuato in un periodo di tempo più lungo. Generalmente include più modifiche. La risorsa deve essere salvata più volte durante l’aggiornamento. In genere, gli aggiornamenti principali delle risorse fanno sì che la risorsa entri in una fase WIP.
+* **DAM:** gestione delle risorse digitali. In questo documento, è sinonimo di AEM Experience Manager Assets, a meno che non venga espressamente indicato altrimenti.
+* **Creative user (Utente creativo):** un professionista che crea risorse digitali utilizzando le app e i servizi Creative Cloud. In alcuni casi, è possibile che un utente creativo sia membro di un team creativo che utilizza Creative Cloud, ma che non crea risorse digitali, ad esempio un direttore creativo o un manager del team creativo.
+* **DAM user (Utente DAM)**: utente tipico di un sistema DAM. A seconda dell’organizzazione, un utente DAM può essere di marketing o non, come un utente Line-of-Business (LOB), un bibliotecario, un venditore e così via.
 
 ### Considerazioni sull’utilizzo dell’integrazione AEM e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
@@ -103,12 +106,12 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, è necessar
 
 Questo è un breve riepilogo delle best practice per l&#39;integrazione di AEM e Creative Cloud. Leggi il resto del documento per avere una comprensione dettagliata di questi.
 
-* **** Per gli utenti creativi che lavorano in Photoshop, InDesign o Illustrator: Adobe Asset Link offre la migliore esperienza utente, inclusa la gestione del lavoro in corso sulle risorse estratte da AEM
-* **** Per semplificare l’accesso alle risorse dal desktop per qualsiasi formato di file o applicazione generico: app desktop AEM
-* **** Scopri perché e quando archiviare le risorse in DAM: Aggiornamenti da rendere disponibili al team più ampio della tua organizzazione
-* **** Considerate il volume di risorse condivise: Se il caso d’uso è la distribuzione delle risorse, governance e sicurezza potrebbero essere gli aspetti più importanti. Considerate l’utilizzo di strumenti creati per farlo in scala, come Brand Portal.
-* **** Comprendere il ciclo di vita delle risorse: Scopri come le risorse vengono gestite dai diversi team all’interno dell’organizzazione
-* **** Gestite con attenzione i salvataggi frequenti sulle risorse: Adobe Asset Link si occupa di questo aspetto con PS, AI, ID. Per altre applicazioni, non eseguire attività in corso in cartelle condivise o mappate a meno che non siano necessarie tutte le modifiche in DAM
+* **For creative users, working in Photoshop, InDesign, or Illustrator (Per gli utenti creativi che lavorano in Photoshop, InDesign o Illustrator)**: Adobe Asset Link offre la migliore esperienza utente possibile, inclusa la gestione del Work-in-progress sulle risorse estratte da AEM
+* **For simplifying access to assets from desktop for any generic file format or application (Per semplificare l’accesso alle risorse dal desktop per qualsiasi formato di file o applicazione di tipo generico):** utilizza l’app desktop AEM
+* **Understand why and when to store assets in DAM (Scopri perché e quando archiviare le risorse in DAM)**: aggiornamenti da rendere disponibili al team più ampio della tua organizzazione
+* **Mind the volume of assets shared (Considera il volume di risorse condivise):** se il caso d’uso è la distribuzione delle risorse, la governance e la sicurezza potrebbero diventare gli aspetti più importanti. Valuta l’utilizzo di strumenti creati per il lavoro in scala, come Brand Portal.
+* **Understand asset lifecycle (Informazioni sul ciclo di vita delle risorse):** scopri come le risorse vengono gestite dai diversi team all’interno dell’organizzazione
+* **Handle frequent saves to assets with care (Gestisci con attenzione i salvataggi frequenti nelle risorse):** Adobe Asset Link si occupa di questo aspetto con PS, AI, ID. Per altre applicazioni, non eseguire le attività WIP in cartelle condivise o mappate, a meno che non ti servano tutte le modifiche all’interno di DAM
 
 ### Accesso alle risorse Adobe Stock da Risorse AEM {#access-to-adobe-stock-assets-from-aem-assets}
 
@@ -166,7 +169,7 @@ Di seguito sono riportati alcuni esempi di aggiornamenti generalmente non rileva
 
 ### Accesso utente a DAM {#user-access-to-dam}
 
-Risorse AEM supporta due tipi di utenti in base al loro accesso alla distribuzione di Risorse AEM. In genere, gli utenti all&#39;interno della rete aziendale (firewall) hanno accesso diretto a DAM. Gli altri utenti esterni alla rete aziendale non avrebbero accesso diretto. Il tipo di utente determina le integrazioni utilizzabili dal punto di vista tecnico.
+Risorse AEM supporta due tipi di utenti in base al loro accesso alla distribuzione di Risorse AEM. In genere, gli utenti all&#39;interno della rete aziendale (firewall) hanno accesso diretto a DAM. Gli altri utenti esterni alla rete aziendale non avrebbero accesso diretto. Il tipo di utente determina quali integrazioni possono essere utilizzate dal punto di vista tecnico.
 
 #### Utenti creativi con accesso diretto a DAM {#creative-users-with-direct-access-to-dam}
 
@@ -181,7 +184,7 @@ Le agenzie esterne e i freelance senza accesso diretto all’istanza DAM possono
 Utilizzate le seguenti strategie per fornire l&#39;accesso alle risorse finali/approvate:
 
 * Utilizzate l’app desktop se il collegamento risorsa non funziona.
-* Utilizzare [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) per distribuire le risorse in modo sicuro ai partner esterni
+* Utilizzare [AEM Assets Brand Portal](https://helpx.adobe.com/it/experience-manager/brand-portal/user-guide.html) per distribuire le risorse in modo sicuro ai partner esterni
 * Utilizzare un&#39;implementazione personalizzata di un portale di distribuzione e determinazione origine basato su [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilizza il controllo degli accessi impostato in AEM e l’infrastruttura di rete necessaria (ad esempio, la whitelist VPN e IP) per consentire alle parti esterne di accedere a un’area dedicata di contenuto nel tuo DAM. Possono utilizzare l’interfaccia utente Web di AEM per ottenere risorse e caricare nuovi contenuti in DAM.
 
@@ -221,7 +224,7 @@ Potete sfruttare le seguenti funzionalità di caricamento:
 
 Se utilizzate Condivisione file di rete per gestire le risorse digitali, l&#39;utilizzo della condivisione di rete mappata dall&#39;app desktop AEM potrebbe essere considerato un comodo sostituto. Quando si passa da condivisioni di file di rete, l’interfaccia Web di AEM fornisce un set completo di funzionalità di gestione delle risorse digitali che vanno ben oltre quanto possibile su una condivisione di rete (ricerca, raccolte, metadati, collaborazione, anteprime e così via), e l’app desktop AEM fornisce un collegamento pratico per connettere l’archivio DAM lato server al lavoro sul desktop.
 
-Evitate di utilizzare l&#39;app desktop AEM per gestire le risorse direttamente nella condivisione di rete di Risorse AEM. Ad esempio, evitate di utilizzare l&#39;app desktop AEM per spostare/copiare più file. Utilizzate invece l&#39;interfaccia utente Web di Risorse AEM per trascinare le cartelle dal Finder/Esplora risorse alla condivisione di rete o utilizzate la funzione di caricamento delle cartelle di Risorse AEM.
+Evitate di utilizzare l&#39;app desktop AEM per gestire le risorse direttamente nella condivisione di rete di Risorse AEM. Ad esempio, evitate di utilizzare l&#39;app desktop AEM per spostare/copiare più file. Utilizzate, invece, l&#39;interfaccia utente Web di Risorse AEM per trascinare le cartelle dal Finder/Esplora risorse alla condivisione di rete o utilizzate la funzione di caricamento delle cartelle di Risorse AEM.
 
 <!-- 
 #### Asset migration {#asset-migration}
