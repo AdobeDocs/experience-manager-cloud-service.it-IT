@@ -10,7 +10,7 @@ content-type: reference
 translation-type: tm+mt
 source-git-commit: 08736e38f9dde46997484ccd4807de0ba2f67b2f
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2099'
 ht-degree: 4%
 
 ---
@@ -144,8 +144,7 @@ Consultate anche [Anteprima delle risorse tramite l’interfaccia](/help/assets/
 
    * Nella parte superiore destra della pagina, fate clic su **[!UICONTROL Anteprima]** per passare alla modalità **[!UICONTROL Anteprima]** .
    * Elimina `/editor.html` dall’URL della pagina nel browser.
-
-Una risorsa 3D completamente interattiva come visualizzata in    ![Risorsa 3D visualizzata all’interno del componente](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)File multimediali 3D Una risorsa 3D completamente interattiva visualizzata in modalità **[!UICONTROL Anteprima]** .
+   ![Risorsa 3D visualizzata all’interno del componente](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)File multimediali 3D Una risorsa 3D completamente interattiva visualizzata in modalità **[!UICONTROL Anteprima]** .
 
 1. In modalità **[!UICONTROL Anteprima]** , effettuate una delle seguenti operazioni:
 
@@ -275,7 +274,6 @@ Consultate anche [Pubblicazione di pagine](/help/sites-cloud/authoring/fundament
    * La risorsa 3D è un formato supportato (GLB, OBJ, STL e USDZ).
    * La risorsa 3D è stata assimilata in Dynamic Media Image Production System (IPS).
    * La risorsa 3D viene pubblicata.
-
    ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
 
 1. Toccate **[!UICONTROL URL]** per visualizzare l&#39;URL di produzione della risorsa 3D.
