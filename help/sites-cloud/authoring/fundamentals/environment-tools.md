@@ -1,8 +1,11 @@
 ---
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2163'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +24,7 @@ Ad esempio, nella vista a colonne:
 
 ## Modifica del contenuto di una pagina {#editing-page-content}
 
-Puoi modificare una pagina con l’editor di pagina. Esempio:
+Puoi modificare una pagina con l’editor di pagina. Ad esempio:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -33,7 +36,7 @@ Puoi modificare una pagina con l’editor di pagina. Esempio:
 >
 >Puoi saltare questa presentazione introduttiva e richiamarla in qualsiasi momento dal menu **Informazioni pagina**.
 
-## Accedere all’Aiuto   {#accessing-help}
+## Accedere all’Aiuto {#accessing-help}
 
 Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti aree:
 
@@ -79,11 +82,13 @@ L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in us
    * Icona o abbreviazione
       * Le icone dei componenti standard sono monocromatiche.
       * Le abbreviazioni sono sempre i primi due caratteri del nome del componente.
+
    Dalla barra degli strumenti nella parte superiore del browser **Componenti**, puoi effettuare le seguenti operazioni:
 
    * Filtrare i componenti per nome
    * Limitare la visualizzazione a uno specifico gruppo selezionandolo dall’elenco a discesa
-   Per una descrizione più dettagliata del componente, tocca o fai clic sull’icona delle informazioni accanto al componente nel browser **Componenti** (se disponibile). Ad esempio, per il **frammento di contenuto**:
+
+   Per una descrizione più dettagliata del componente, tocca o fai clic sull’icona delle informazioni posta accanto al componente nel browser **Componenti** (se disponibile). Ad esempio, per il **frammento di contenuto**:
 
    ![Informazioni sul browser Componenti](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -278,6 +283,7 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* L’accesso ad alcune modalità richiede autorizzazioni o privilegi adeguati.
 >* La modalità Sviluppatore non è disponibile su dispositivi mobili a causa di limitazioni di spazio.
 >* La [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
+
 >
 
 
@@ -307,7 +313,7 @@ Il browser Percorsi è organizzato come la [vista a colonne](/help/sites-cloud/a
 ![Browser Percorsi](/help/sites-cloud/authoring/assets/path-browser.png)
 
 * Una volta che la risorsa è selezionata, il pulsante **Seleziona** in alto a destra nella finestra di dialogo diventa attivo. Tocca o fai clic su questo pulsante per confermare la selezione oppure su **Annulla** per annullare l’operazione.
-* Se il contesto consente di selezionare più risorse, la selezione di una risorsa attiva il pulsante **Seleziona** e inoltre viene visualizzato il numero di risorse selezionate in alto a destra nella finestra. Fai clic sulla **X** accanto al numero per deselezionare tutte le risorse.
+* Se il contesto consente la selezione di più risorse, la scelta di una risorsa attiva anche il pulsante **Seleziona**, ma aggiunge anche un conteggio del numero di risorse selezionate nella parte superiore destra della finestra. Per deselezionare tutti gli elementi, fai clic sulla **X** accanto al numero.
 * Quando navighi attraverso la struttura ad albero, la posizione viene riportata nelle breadcrumb nella parte superiore della finestra di dialogo. Le breadcrumb possono anche essere utilizzate per passare rapidamente alla gerarchia delle risorse.
 * In qualsiasi momento puoi usare il campo di ricerca nella parte superiore della finestra di dialogo. Fai clic sulla **X** nel campo di ricerca per cancellare la ricerca.
 * Per limitare l’ambito della ricerca, puoi visualizzare le opzioni filtro e filtrare il risultato in base a un determinato percorso.
