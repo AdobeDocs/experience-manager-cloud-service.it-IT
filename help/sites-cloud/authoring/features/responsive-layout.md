@@ -1,8 +1,11 @@
 ---
-title: Layout reattivo
+title: 'Layout reattivo  '
 description: AEM consente di realizzare un layout reattivo per le pagine
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1765'
+ht-degree: 100%
 
 ---
 
@@ -130,7 +133,7 @@ Un **Contenitore di layout** è un sistema paragrafo che:
 >
 >Se non è già disponibile, il **Contenitore di layout** deve essere attivato esplicitamente per un sistema paragrafo/pagina. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. Il **Contenitore di layout** è disponibile come componente standard nel [browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Da qui puoi trascinarlo nella posizione desiderata sulla pagina; verrà quindi visualizzato il segnaposto **Trascina qui i componenti**.
+1. Il **Contenitore di layout** è disponibile come componente standard nel [browser componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Da qui è possibile trascinarlo nella posizione desiderata sulla pagina, dopodiché verrà visualizzato il segnaposto **Trascina qui i componenti**.
 1. È quindi possibile aggiungere componenti al Contenitore di layout. Questi componenti includeranno il contenuto vero e proprio:
 
    ![Contenitore di layout](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -196,7 +199,7 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
 
 * In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Viene quindi visualizzata la barra degli strumenti per questa modalità.
 
-   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente del layout e dei componenti che ne fanno parte. Esempio:
+   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente del layout e dei componenti che ne fanno parte. Ad esempio:
 
    * **Elemento padre:** consente di selezionare il componente principale.
 
