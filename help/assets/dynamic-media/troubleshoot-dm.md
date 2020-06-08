@@ -1,13 +1,16 @@
 ---
-title: Risoluzione dei problemi di Dynamic Media
-description: Risoluzione dei problemi relativi ai contenuti multimediali dinamici.
+title: Risoluzione dei problemi relativi a Dynamic Media
+description: Risoluzione dei problemi relativi a Dynamic Media.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1157'
+ht-degree: 2%
 
 ---
 
 
-# Risoluzione dei problemi di Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
+# Risoluzione dei problemi relativi a Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
 Nel seguente documento viene descritta la risoluzione dei problemi relativi agli elementi multimediali dinamici.
 
@@ -35,7 +38,7 @@ Errori e problemi di sincronizzazione vengono registrati `error.log` (directory 
 Prima di eseguire un&#39;operazione Sposta, Copia o Elimina, effettuate le seguenti operazioni:
 
 * Per immagini e video, verificate che esista un `<object_node>/jcr:content/metadata/dam:scene7ID` valore prima di eseguire operazioni di spostamento, copia o eliminazione.
-* Per i predefiniti per immagini e visualizzatori, verificate che esista un `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` valore prima di eseguire operazioni di spostamento, copia o eliminazione.
+* Per i predefiniti per immagini e visualizzatori, verificate che esista un `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` valore prima di eseguire le operazioni di spostamento, copia o eliminazione.
 * Se questo valore di metadati non è presente, è necessario caricare nuovamente le risorse prima di spostare, copiare o eliminare le operazioni.
 
 ### Controllo della versione {#version-control}
@@ -54,7 +57,7 @@ In caso di problemi con immagini e set, consultate le seguenti istruzioni per la
  <tbody>
   <tr>
    <td><strong>Problema</strong></td>
-   <td><strong>Procedura di debug</strong></td>
+   <td><strong>Come eseguire il debug</strong></td>
    <td><strong>Soluzione</strong></td>
   </tr>
   <tr>
@@ -95,7 +98,7 @@ In caso di problemi con immagini e set, consultate le seguenti istruzioni per la
   </tr>
   <tr>
    <td>La risorsa caricata non viene visualizzata nel selettore delle risorse</td>
-   <td><p>La risorsa Check ha una proprietà <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td>
+   <td><p>La risorsa di controllo ha una proprietà <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td>
    <td><p>Verificate che tutte le risorse abbiano completato l'elaborazione.</p> </td>
   </tr>
   <tr>
@@ -111,15 +114,15 @@ In caso di problemi con immagini e set, consultate le seguenti istruzioni per la
  </tbody>
 </table>
 
-## Il video {#video}
+## Video {#video}
 
-In caso di problemi con il video, consultate le seguenti istruzioni per la risoluzione dei problemi.
+In caso di problemi con il video, consulta le seguenti istruzioni per la risoluzione dei problemi.
 
 <table>
  <tbody>
   <tr>
    <td><strong>Problema</strong></td>
-   <td><strong>Procedura di debug</strong></td>
+   <td><strong>Come eseguire il debug</strong></td>
    <td><strong>Soluzione</strong></td>
   </tr>
   <tr>
@@ -140,7 +143,7 @@ In caso di problemi con il video, consultate le seguenti istruzioni per la risol
     </ol> </td>
   </tr>
   <tr>
-   <td>Video non codificato</td>
+   <td>Il video non è codificato</td>
    <td>
     <ul>
      <li>Verifica se il servizio Dynamic Media Cloud è configurato.</li>
@@ -185,7 +188,7 @@ In caso di problemi con i visualizzatori, consultate le seguenti istruzioni per 
  <tbody>
   <tr>
    <td><strong>Problema</strong></td>
-   <td><strong>Procedura di debug</strong></td>
+   <td><strong>Come eseguire il debug</strong></td>
    <td><strong>Soluzione</strong></td>
   </tr>
   <tr>
@@ -196,7 +199,7 @@ In caso di problemi con i visualizzatori, consultate le seguenti istruzioni per 
     <ol>
      <li>Passate all’elenco dei predefiniti per visualizzatori negli strumenti di amministrazione: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
      <li>Selezionate tutti i predefiniti per visualizzatori, quindi fate clic su <strong>Pubblica</strong>.</li>
-     <li>Tornate a Gestione campioni e tenete presente che il conteggio delle risorse non attivate è ora pari a zero.</li>
+     <li>Tornate alla gestione degli esempi e tenete presente che il conteggio delle risorse non attivate è ora pari a zero.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -215,7 +218,7 @@ In caso di problemi con i visualizzatori, consultate le seguenti istruzioni per 
        <li>Esempio: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>Se le risorse campione o l’immagine del predefinito per visualizzatori non sono sincronizzate o pubblicate, riavviate l’intero processo di copia/sincronizzazione:</p>
+   <td><p>Se le risorse di esempio o l’immagine del predefinito per visualizzatori non sono sincronizzate o pubblicate, riavviate l’intero processo di copia/sincronizzazione:</p>
     <ol>
      <li>Passare a CRXDE Lite.
       <ul>
