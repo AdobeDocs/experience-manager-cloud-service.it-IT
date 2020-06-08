@@ -3,6 +3,9 @@ title: Creazione di contenuti di destinazione utilizzando la modalità di target
 description: La modalità di targeting e il componente Target forniscono strumenti per la creazione di contenuti per esperienze
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '5351'
+ht-degree: 78%
 
 ---
 
@@ -137,7 +140,7 @@ Dopo aver [avviato il processo di targeting](#the-targeting-process-create-targe
 >
 >Un’offerta è il contenuto di un componente di cui è stato eseguito il targeting.
 
-Le esperienze sono visualizzate nel riquadro Pubblico. In the following example, experiences include **Default**, **Female**, **Female over 30**, and **Female under 30**. Questo esempio mostra l’offerta predefinita di un componente **immagine** con targeting.
+Le esperienze vengono visualizzate nel riquadro Audiences. Nell’esempio seguente, le esperienze includono **Predefinita**, **Femmina**, **Femmina oltre 30** e **Femmina sotto 30**. Questo esempio mostra l’offerta Predefinita di un componente **Immagine** di destinazione.
 
 ![Componente immagine di destinazione](/help/sites-cloud/authoring/assets/targeted-image-component.png)
 
@@ -145,7 +148,7 @@ Quando è selezionata un’esperienza diversa, il componente immagine mostra l�
 
 ![Componente immagine di destinazione modificato](/help/sites-cloud/authoring/assets/targeted-image-different.png)
 
-Quando si seleziona un’esperienza e il componente mirato non include un’offerta per tale esperienza, il componente mostra **Aggiungi offerta** sovrapposto all’offerta predefinita semitrasparente. Se non è stata creata alcuna offerta per un’esperienza, viene visualizzata l’offerta **predefinita** per il segmento mappato per l’esperienza.
+Quando un’esperienza è selezionata e il componente di destinazione non include un’offerta per tale esperienza, il componente visualizza la scritta **Aggiungi offerta** come sovrapposta all’offerta semitrasparente predefinita. Quando non è stata creata alcuna offerta per un’esperienza, l’offerta **Predefinita** viene visualizzata per il segmento mappato all’esperienza.
 
 ![Aggiungi offerta](/help/sites-cloud/authoring/assets/targeted-add-offer.png)
 
@@ -283,12 +286,12 @@ Se modificate il contenuto di destinazione, è necessario fare clic o toccare **
    >
    >Administrators can decide whether setting this configuration is required at `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet`
    >
-   >Per richiedere agli utenti di immettere una posizione, seleziona la casella di controllo **Forza posizione**.
+   >Per richiedere agli utenti di inserire una posizione, seleziona la casella di controllo **Force location (Forza posizione)**.
 
 1. Seleziona l’esperienza per cui desideri creare l’offerta.
 1. Creazione dell’offerta:
 
-   * Per esperienza predefinita, trascinate i componenti nell’area di rilascio di destinazione e modificate le proprietà dei componenti come al solito per creare il contenuto dell’offerta.
+   * Per esperienza predefinita, trascinate i componenti nell’area di rilascio di destinazione e modificate le proprietà dei componenti come al solito per creare il contenuto per l’offerta.
    * Per esperienze non predefinite, [aggiungi un’offerta personalizzata](#adding-a-custom-offer) oppure [aggiungi un’offerta dalla libreria](#adding-an-offer-from-an-offer-library).
 
 #### Aggiunta di un’offerta personalizzata {#adding-a-custom-offer}
@@ -334,12 +337,15 @@ Non puoi aggiungere offerte dalla libreria all’esperienza predefinita.
    Il selettore delle offerte consente di individuare o filtrare le offerte. Durante la navigazione o il filtraggio, è anche possibile ordinare le offerte e modificarne la modalità di visualizzazione. Il numero in alto a destra indica il numero di offerte disponibili nella libreria corrente.
 
    * Click or tap **Browse** to navigate to another folder. Il pannello di navigazione si apre e puoi fare clic sulla freccia per analizzare in profondità le cartelle. Click or tap **Browse** again to close the navigation pane.
+
    ![Sfoglia contenuto](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
 
    * Tocca o fai clic su **Filtra** per filtrare le offerte in base a parole chiave o tag. Le parole chiave devono essere digitate, mentre i tag possono essere selezionati dal menu a comparsa. Tocca o fai clic di nuovo su **Filtra** per chiudere il pannello di filtraggio.
+
    ![Filtrare il contenuto](/help/sites-cloud/authoring/assets/targeted-filter.png)
 
    * Puoi modificare l’ordine delle offerte toccando o facendo clic sulla freccia accanto a **Dal più recente al meno recente**. Le offerte possono essere ordinate dalla più recente alla meno recente o dalla meno recente alla più recente.
+
    ![Filtra ordinamento](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
 
    Tocca o fai clic sull’icona accanto a **Visualizza** per visualizzare le offerte come miniature o come elenco.
@@ -436,7 +442,7 @@ Se utilizzi Adobe Target come motore di targeting:
 
 ![Adobe Target come motore di destinazione](/help/sites-cloud/authoring/assets/targeted-engine.png)
 
-Se utilizzi Adobe Target come motore di targeting e disponi di A4T Analytics configurato per l’account, è disponibile un ulteriore menu a discesa **Origine per la generazione dei rapporti**:
+Se utilizzi Adobe Target come motore di targeting e disponi di A4T Analytics configurato per l’account, avrai accesso a un menu a discesa aggiuntivo **Origine per la generazione di rapporti**:
 
 ![A4T](/help/sites-cloud/authoring/assets/targeted-source.png)
 
@@ -454,11 +460,11 @@ Utilizza le impostazioni avanzate per determinare che cosa succede **dopo** che 
 
 | Dopo che un utente ha incontrato questa metrica di obiettivo... | Selezionare il seguente evento da eseguire... |
 |---|---|
-| Incremento conteggio e mantenimento utente nell&#39;attività | Specificate come viene incrementato il conteggio: Una volta per partecipante, Su ogni impressione, ad esclusione degli aggiornamenti di pagina, Su ogni impressione |
+| Incremento del conteggio e mantenimento dell&#39;utente nell&#39;attività | Specificate in che modo il conteggio viene incrementato: Una volta per partecipante, Su ogni impressione, ad esclusione degli aggiornamenti di pagina, Su ogni impressione |
 | Incremento conteggio, Rilascia utente e Consenti rientro | Selezionate l&#39;esperienza che il visitatore vede se accede nuovamente all&#39;attività: Stessa esperienza, esperienza casuale, esperienza invisibile |
 | Incremento conteggio, rilascio utente e rientro a barre | Determinate cosa vede l&#39;utente invece del contenuto dell&#39;attività: Stessa esperienza, senza tracciamento, contenuto predefinito o altro contenuto dell&#39;attività |
 
-Consulta la [documentazione di Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) per ulteriori informazioni sulle metriche di successo.
+Consulta la [documentazione di Adobe Target](https://docs.adobe.com/content/help/it-IT/target/using/activities/success-metrics/success-metrics.html) per ulteriori informazioni sulle metriche di successo.
 
 ### Impostazioni di configurazione (targeting di AEM) {#configuring-settings-aem-targeting}
 
@@ -467,7 +473,7 @@ Per configurare le impostazioni utilizzando il targeting di AEM:
 1. Per specificare quando avviare l’attività, utilizza il menu a comparsa **Avvia** per selezionare uno dei seguenti valori:
 
    * **Quando viene attivato**: l’attività viene avviata quando la pagina contenente il contenuto di destinazione viene attivata.
-   * **Data e ora specificate**: in un momento specifico. Quando selezioni questa opzione, tocca o fai clic sull’icona del calendario, seleziona una data e specifica l’ora di inizio dell’attività.
+   * **Data e ora specificate**: in un momento specifico. Quando selezioni questa opzione, fai clic o tocca l’icona del calendario, seleziona una data e specifica l’ora in cui avviare l’attività.
 
 1. Per specificare quando l’attività termina, usa il menu a comparsa **Fine** per selezionare uno dei seguenti valori:
 
@@ -483,7 +489,7 @@ Per configurare obiettivi e impostazioni con Adobe Target:
 1. Per specificare quando avviare l’attività, utilizza il menu a comparsa **Avvia** per selezionare uno dei seguenti valori:
 
    * **Quando viene attivato**: l’attività viene avviata quando la pagina contenente il contenuto di destinazione viene attivata.
-   * **Data e ora specificate**: in un momento specifico. Quando selezioni questa opzione, tocca o fai clic sull’icona del calendario, seleziona una data e specifica l’ora di inizio dell’attività.
+   * **Data e ora specificate**: in un momento specifico. Quando selezioni questa opzione, fai clic o tocca l’icona del calendario, seleziona una data e specifica l’ora in cui avviare l’attività.
 
 1. Per specificare quando l’attività termina, usa il menu a comparsa **Fine** per selezionare uno dei seguenti valori:
 
@@ -491,19 +497,19 @@ Per configurare obiettivi e impostazioni con Adobe Target:
    * **Data e ora specificata**: un tempo specifico. Quando selezioni questa opzione, tocca o fai clic sull’icona del calendario, seleziona una data e specifica l’ora di fine dell’attività.
 
 1. Per specificare una priorità per l&#39;attività, usa il cursore per selezionare un valore **Basso**, **Medio** o **Alto**.
-1. If you have configured Adobe Analytics with your Adobe Target Account, then you see the **Reporting Source** drop-down menu. Seleziona **Adobe Target** o **Adobe Analytics** come origine.
+1. Se hai configurato Adobe Analytics con il tuo account Adobe Target, viene visualizzato il menu a discesa **Origine di reporting**. Seleziona **Adobe Target** o **Adobe Analytics** come origine.
 
    Se selezioni **Adobe Analytics**, seleziona la società e la suite di rapporti. Se hai selezionato **Adobe Target**, non è necessaria alcuna azione.
 
    ![Origine reporting](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. Nell’area **Metrica di obiettivo**, nella sezione **Obiettivo principale** seleziona la metrica di successo che desideri monitorare (Conversione, Entrate, Coinvolgimento) e specifica come tale metrica deve essere misurata (o quale azione il pubblico intraprende per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche di obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) sulle metriche di successo.
+1. Da **Obiettivo principale**, vai all’area **Metrica per obiettivo** e seleziona la metrica di successo che desideri monitorare: Conversione, Entrate, Coinvolgimento. Quindi inserisci come viene misurata la metrica (o quale azione intraprende l’audience per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche dell’obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://docs.adobe.com/content/help/it-IT/target/using/activities/success-metrics/success-metrics.html) sulle metriche di successo.
 
-   Puoi rinominare l’obiettivo facendo clic su i tre punti nell’angolo superiore a destra e selezionando **Rinomina**.
+   Per rinominare l’obiettivo, fai clic sui tre punti nell’angolo in alto a destra e seleziona **Rinomina**.
 
-   Se devi cancellare tutti i campi, fai clic sui tre punti nell’angolo in alto a destra e seleziona **Cancella tutti i campi**.
+   Per cancellare tutti i campi, fai clic sui tre punti nell’angolo superiore destro e seleziona **Cancella tutti i campi**.
 
-   Tutte le metriche hanno anche impostazioni avanzate che è possibile definire. Seleziona **Impostazioni avanzate** per accedere a queste impostazioni. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html).
+   Tutte le metriche hanno anche impostazioni avanzate che è possibile definire. Seleziona **Impostazioni avanzate** per accedere a queste impostazioni. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/it-IT/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    >
@@ -609,6 +615,6 @@ Se hai selezionato Adobe Target come motore:
 >
 >Seleziona **Adobe Campaign** come motore se stai integrando AEM con Adobe Campaign. Consulta Integrazione di AEM con Adobe Campaign per ulteriori informazioni.
 >
->Seleziona **ContextHub** come motore se stai utilizzando ContextHub per il targeting. Consultate Configurazione di ContextHub per ulteriori informazioni.
+>Seleziona **ContextHub** come motore se stai utilizzando ContextHub per il targeting. Per ulteriori informazioni, consulta Configurazione di ContextHub.
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
 <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub.](/help/sites-administering/contexthub-config.md)-->
