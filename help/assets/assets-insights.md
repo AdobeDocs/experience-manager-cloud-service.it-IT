@@ -4,6 +4,9 @@ description: Scopri come la funzione Asset Insights consente di tenere traccia d
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 10%
 
 ---
 
@@ -40,6 +43,7 @@ Potete visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
    * **[!UICONTROL Web e dispositivi mobili]**: Il numero di volte in cui la risorsa faceva parte di siti Web e app.
    * **[!UICONTROL Social]**: Il numero di volte in cui la risorsa è stata utilizzata nelle soluzioni, come Adobe Social e Adobe Campaign.
    * **[!UICONTROL E-mail]**: Il numero di volte in cui la risorsa è stata utilizzata nelle campagne e-mail.
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
