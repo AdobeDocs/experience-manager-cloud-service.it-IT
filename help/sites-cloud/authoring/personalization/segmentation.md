@@ -1,13 +1,16 @@
 ---
-title: Informazioni sulla segmentazione
+title: Segmentazione
 description: La segmentazione è un concetto chiave per la creazione di una campagna
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 58%
 
 ---
 
 
-# Informazioni sulla segmentazione {#understanding-segmentation}
+# Segmentazione {#understanding-segmentation}
 
 La segmentazione è un concetto chiave per la creazione di una campagna. In molti casi, è necessario che i segmenti siano già definiti prima che venga avviata una campagna.
 
@@ -45,7 +48,7 @@ Quando si parla di segmentazione, viene spesso utilizzata la seguente terminolog
    * Stato civile
    * Genere
    * Dove si trova
-* **Caratteristiche** derivate - Alcune caratteristiche demografiche sono difficili da determinare senza registrazione, ma possono essere derivate dalla combinazione di caratteristiche comportamentali e demografiche.
+* **Caratteristiche** derivate - Alcune caratteristiche demografiche sono difficili da determinare senza la registrazione, ma possono essere derivate dalla combinazione di caratteristiche comportamentali e demografiche.
    * Ad esempio, la combinazione dell’URL di riferimento (come tratto comportamentale) con i dati demografici (acquisiti da strumenti come [Google Ad Planner](https://www.google.com/adplanner/)) permette ai proprietari dei siti di ricavare i tratti demografici dei loro visitatori
 * **Sottosegmento** - Un segmento può essere suddiviso in diversi sottosegmenti. Questo viene effettuato mediante la definizione di caratteristiche aggiuntive.
 * **Pagina** teaser: una pagina teaser rivolta a un pubblico specifico. Contiene dei contenuti riutilizzabili che possono essere utilizzati nel paragrafo del teaser.
