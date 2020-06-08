@@ -3,11 +3,14 @@ title: Applicazione dei predefiniti per visualizzatori per contenuti multimedial
 description: Scoprite come applicare i predefiniti per visualizzatori in Contenuti multimediali dinamici
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 25%
 
 ---
 
 
-# Applicazione dei predefiniti per visualizzatori per contenuti multimediali dinamici {#applying-viewer-presets}
+# Applying Dynamic Media viewer presets {#applying-viewer-presets}
 
 Un predefinito per visualizzatori è un insieme di impostazioni che determinano in che modo gli utenti possono visualizzare le risorse multimediali sullo schermo del computer e sui dispositivi mobili. Potete applicare a una risorsa qualsiasi predefinito per visualizzatori creato dall’amministratore.
 
@@ -20,12 +23,12 @@ Per eventuali problemi con i predefiniti per visualizzatori, consultate [Risoluz
 
 ## Applicazione di un predefinito per visualizzatori per contenuti multimediali dinamici a una risorsa {#applying-a-viewer-preset-to-an-asset}
 
-1. Aprite la risorsa e toccate **[!UICONTROL Visualizzatori]** nella parte sinistra.
+1. Apri la risorsa e tocca **[!UICONTROL Visualizzatori]** nella barra a sinistra.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-   * Dopo aver selezionato un predefinito per visualizzatori, vengono visualizzati i pulsanti **[!UICONTROL URL]** e **[!UICONTROL Incorpora]** .
-   * Il sistema mostra numerosi predefiniti per visualizzatori quando selezionate Visualizzatori nella visualizzazione **** Dettagli di una risorsa. Potete aumentare il numero di predefiniti visualizzati. Consultate [Aumento del numero di predefiniti per visualizzatori visualizzati](managing-viewer-presets.md).
+   * Dopo aver selezionato un predefinito visualizzatore, vengono visualizzati i pulsanti **[!UICONTROL URL]** e **[!UICONTROL Incorpora]**.
+   * Quando selezioni Visualizzatori in **[!UICONTROL Vista dettaglio]** di una risorsa, il sistema mostra numerosi predefiniti visualizzatore. Puoi aumentare il numero di predefiniti visualizzati. Consulta la sezione [Aumento del numero di predefiniti visualizzatore](managing-viewer-presets.md).
 
 1. Selezionate un visualizzatore dal riquadro a sinistra per applicarlo alla risorsa come mostrato nel riquadro a destra. Potete anche [copiare l’URL da condividere](linking-urls-to-yourwebapplication.md) con altri utenti.
 
