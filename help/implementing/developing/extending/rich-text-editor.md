@@ -31,7 +31,7 @@ L’interfaccia RTE offre un design [](/help/sites-cloud/authoring/features/resp
 
 *Figura: Barra degli strumenti Editor Rich Text con tutte le opzioni disponibili abilitate.*
 
-La barra degli strumenti fornisce le opzioni per l’esperienza di authoring WYSIWYG. Gli amministratori di Experience Manager possono configurare le opzioni disponibili nella barra degli strumenti dell&#39;interfaccia. Per impostazione predefinita in Experience Manager sono disponibili diverse opzioni di modifica. Gli sviluppatori possono personalizzare Experience Manager per aggiungere altre opzioni di modifica.
+La barra degli strumenti fornisce le opzioni per l’esperienza di authoring WYSIWYG. Gli amministratori di Experience Manager possono configurare le opzioni disponibili nella barra degli strumenti dell&#39;interfaccia. Per impostazione predefinita in Experience Manager è disponibile un set completo di opzioni di modifica. Gli sviluppatori possono personalizzare Experience Manager per aggiungere altre opzioni di modifica.
 
 ## Varie modalità di modifica {#editingmodes}
 
