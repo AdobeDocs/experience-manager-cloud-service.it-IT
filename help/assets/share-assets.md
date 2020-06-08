@@ -4,6 +4,9 @@ description: Questo articolo descrive come condividere risorse, cartelle e racco
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '906'
+ht-degree: 5%
 
 ---
 
@@ -172,7 +175,7 @@ Dall’interfaccia utente di Risorse in un browser, puoi esplorare le posizioni 
 
 Adobe Asset Link semplifica la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti. Collega le risorse Adobe Experience Manager (AEM) con le app desktop Creative Cloud Adobe InDesign, Adobe Photoshop e Adobe Illustrator. Il pannello Collegamento risorse di Adobe consente ai creativi di accedere e modificare i contenuti memorizzati in Risorse AEM senza uscire dalle app creative che conoscono maggiormente.
 
-Scopri [come configurare AEM per l’utilizzo con Adobe Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+Scopri [come configurare AEM per l’utilizzo con Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## Best practices and troubleshooting {#bestpractices}
 
