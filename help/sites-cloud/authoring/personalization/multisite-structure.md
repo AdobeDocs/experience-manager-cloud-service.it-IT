@@ -1,13 +1,16 @@
 ---
-title: Struttura della gestione di più siti per contenuti mirati
+title: Struttura della gestione multisito per contenuti di destinazione
 description: Un diagramma illustra il modo in cui è strutturato il supporto multisito per contenuti di destinazione
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 86%
 
 ---
 
 
-# Struttura della gestione di più siti per contenuti mirati {#how-multisite-management-for-targeted-content-is-structured}
+# Struttura della gestione multisito per contenuti di destinazione {#how-multisite-management-for-targeted-content-is-structured}
 
 Il diagramma seguente illustra il modo in cui è strutturato il supporto multisito per contenuti di destinazione.
 
