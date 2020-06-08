@@ -1,8 +1,11 @@
 ---
 title: Pubblicazione delle pagine
 description: Come pubblicare e annullare la pubblicazione di pagine con AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 100%
 
 ---
 
