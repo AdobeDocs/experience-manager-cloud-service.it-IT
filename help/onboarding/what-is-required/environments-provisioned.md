@@ -3,6 +3,9 @@ title: Provisioning degli ambienti - Elementi richiesti
 description: Provisioning degli ambienti - Elementi richiesti
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 0%
 
 ---
 
@@ -19,6 +22,6 @@ Al termine del processo di provisioning dell&#39;ambiente, l&#39;amministratore 
 
 ## Passaggi successivi {#next-steps}
 
-Dopo aver ricevuto l&#39;e-mail di benvenuto, potete accedere a Cloud Manager come amministratore, utilizzando le vostre credenziali Adobe IMS. Una volta effettuato l’accesso, potrete verificare che gli ambienti di produzione cloud e non produzione AEM siano disponibili ed eseguiti correttamente.
+Dopo aver ricevuto l&#39;e-mail di benvenuto, potete accedere a Cloud Manager come amministratore, utilizzando le vostre credenziali Adobe IMS. Una volta effettuato l&#39;accesso, potrete verificare che gli ambienti di produzione cloud e non produzione AEM siano disponibili ed eseguiti correttamente.
 
 Questi ambienti cloud AEM saranno utilizzati da Cloud Manager per eseguire la pipeline CI/CD al momento della distribuzione del codice, a partire dall&#39;archivio Git di Cloud Manager, dall&#39;ambiente di gestione temporanea e fino all&#39;ambiente di produzione AEM. Potrai anche accedere agli ambienti cloud AEM direttamente da Cloud Manager, quando sarai pronto per iniziare a creare esperienze digitali per le tue proprietà web.
