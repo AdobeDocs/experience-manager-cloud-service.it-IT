@@ -1,8 +1,11 @@
 ---
 title: Scelte rapide da tastiera per la modifica delle pagine
 description: In tutte le aree di AEM sono disponibili varie scelte rapide da tastiera, comprese quelle per la modifica delle pagine
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 100%
 
 ---
 
