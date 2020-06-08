@@ -1,8 +1,11 @@
 ---
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redarre e utilizzare contenuti indipendenti dalla pagina.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+workflow-type: tm+mt
+source-wordcount: '1154'
+ht-degree: 100%
 
 ---
 
@@ -21,6 +24,7 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 >
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo e di conseguenza frammenti di una pagina web.
+
 >
 >
 I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
@@ -55,6 +59,7 @@ I frammenti di contenuto si prestano alle seguenti applicazioni:
 3. Puoi effettuare le seguenti operazioni:
    * Apri il browser **Risorse** e applica il filtro **Frammenti di contenuto** (l’impostazione predefinita è Immagini). Quindi, trascina il frammento desiderato sull’istanza di componente.
    * Seleziona il componente del frammento di contenuto, quindi **Configura** dalla barra degli strumenti. Nella finestra di dialogo, apri la finestra di dialogo di selezione per individuare e selezionare il **frammento di contenuto** richiesto.
+
    >[!NOTE]
    >
    >In alternativa, puoi trascinare un frammento di contenuto specifico direttamente nella pagina. In questo modo verrà creato automaticamente il componente associato (Frammento di contenuto).
@@ -85,6 +90,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 * **Elemento**
    * L’elemento predefinito **Principale** è sempre disponibile.
    * Una selezione è disponibile se il frammento è stato creato con un modello appropriato. 
+
    >[!NOTE]
    >
    >Gli elementi disponibili dipendono dal modello utilizzato.
