@@ -3,11 +3,14 @@ title: Notifiche - Servizio Cloud
 description: Notifiche - Servizio Cloud
 translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 1%
 
 ---
 
 
-# Informazioni sulle notifiche {#notifications}
+# Notifiche {#notifications}
 
 [!UICONTROL Cloud Manager] consente all&#39;utente di ricevere notifiche all&#39;avvio e al completamento (con esito positivo o negativo) della pipeline di produzione all&#39;inizio di una distribuzione di produzione. Queste notifiche vengono inviate tramite il sistema di notifica Adobe [!UICONTROL Experience Cloud] .
 
