@@ -1,13 +1,16 @@
 ---
-title: Frammenti di contenuto Configurazione dei componenti per il rendering
-description: Frammenti di contenuto Configurazione dei componenti per il rendering
+title: Componenti di configurazione dei frammenti di contenuto per il rendering
+description: Componenti di configurazione dei frammenti di contenuto per il rendering
 translation-type: tm+mt
 source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 6%
 
 ---
 
 
-# Frammenti di contenuto Configurazione dei componenti per il rendering{#content-fragments-configuring-components-for-rendering}
+# Componenti di configurazione dei frammenti di contenuto per il rendering{#content-fragments-configuring-components-for-rendering}
 
 Esistono diversi servizi [](#definition-of-advanced-services-that-need-configuration) avanzati relativi al rendering dei frammenti di contenuto. Per utilizzare questi servizi, i tipi di risorse di tali componenti devono essere resi noti al framework dei frammenti di contenuto.
 
