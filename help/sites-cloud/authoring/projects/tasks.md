@@ -3,6 +3,9 @@ title: Utilizzo delle attività
 description: Le attività rappresentano gli oggetti di lavoro da eseguire sul contenuto e vengono utilizzate nei progetti per determinare il livello di completezza delle attività correnti
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 93%
 
 ---
 
@@ -17,9 +20,9 @@ Le attività vengono utilizzate anche nei progetti per determinare il livello de
 
 Puoi tenere traccia dell’avanzamento del progetto visualizzando le attività attive o completate all’interno di un progetto, rappresentato dal riquadro **Attività**. L’avanzamento di un progetto può essere determinata da:
 
-* **** Sezione attività: Un avanzamento generale del progetto è rappresentato nella sezione Attività disponibile nella pagina dei dettagli del progetto.
+* **Titolo attività:** l’avanzamento generale del progetto è rappresentato nella sezione Titolo attività, disponibile nella pagina dei dettagli del progetto.
 
-* **** Elenco attività: Quando si fa clic sulla sezione Attività, viene visualizzato un elenco delle attività. Questo elenco contiene informazioni dettagliate su tutte le attività correlate al progetto.
+* **Elenco attività**: quando fai clic su Titolo attività, viene visualizzato un elenco delle attività. L’elenco contiene informazioni dettagliate su tutte le attività correlate al progetto.
 
 Sono elencate sia le attività del flusso di lavoro che quelle create direttamente nel riquadro **Attività**.
 
