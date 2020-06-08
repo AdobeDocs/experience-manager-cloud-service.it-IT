@@ -4,6 +4,9 @@ description: Organizzate le risorse digitali utilizzando i vari metodi disponibi
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +27,7 @@ Quando organizzate una raccolta di risorse, ad esempio tutte le immagini *Natura
 
 1. Andate alla posizione nella cartella delle risorse digitali in cui desiderate creare una nuova cartella.
 1. Nel menu, fate clic su **[!UICONTROL Crea]**. Selezionate **[!UICONTROL Nuova cartella]**.
-1. Nel campo **[!UICONTROL Titolo]** , inserite un nome di cartella. Per impostazione predefinita, DAM utilizza il titolo fornito come nome della cartella. Una volta creata la cartella, potete sostituire quella predefinita e specificare un altro nome di cartella.
+1. Nel campo **[!UICONTROL Titolo]** , inserite un nome di cartella. Per impostazione predefinita, DAM utilizza il titolo fornito come nome della cartella. Una volta creata la cartella, potete ignorare l’impostazione predefinita e specificare un altro nome di cartella.
 1. Fai clic su **[!UICONTROL Crea]**. La cartella viene visualizzata nella cartella delle risorse digitali.
 
 ## Aggiungere proprietà CUG alle cartelle {#add-cug-properties-to-folders}
