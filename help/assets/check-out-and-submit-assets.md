@@ -4,6 +4,9 @@ description: Scoprite come estrarre le risorse per la modifica e archiviarle nuo
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 4%
 
 ---
 
@@ -50,7 +53,7 @@ Questa funzione consente di impedire ad altri utenti di ignorare le modifiche ap
 
    Potete anche scegliere di inserire delle annotazioni o pubblicare la risorsa.
 
-1. Selezionate la risorsa modificata dall’interfaccia utente Risorse, quindi toccate o fate clic sull’icona **[!UICONTROL Controllo]** nella barra degli strumenti.
+1. Seleziona la risorsa modificata dall’interfaccia utente Assets, quindi tocca o fai clic sull’icona **[!UICONTROL Registra]** della barra degli strumenti.
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
