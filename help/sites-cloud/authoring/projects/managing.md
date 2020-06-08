@@ -1,13 +1,16 @@
 ---
-title: Gestione di progetti
-description: Progetti consente di organizzare il progetto raggruppando le risorse in un'unica entità accessibile e gestita nella console Progetti
+title: Gestione dei progetti
+description: Progetti consente di organizzare il progetto raggruppando le risorse in un'unica entità accessibile e gestibile nella console Progetti
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 80%
 
 ---
 
 
-# Gestione di progetti {#managing-projects}
+# Gestione dei progetti {#managing-projects}
 
 La funzione Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità.
 
@@ -17,7 +20,7 @@ La console **Progetti** consente di accedere ai progetti e di eseguire azioni su
 
 Tramite Progetti è possibile creare un progetto e associarvi risorse, ma anche eliminarlo o eliminare i collegamenti alle risorse. È possibile aprire una porzione per visualizzarne il contenuto e aggiungere elementi. In questo argomento vengono descritte le procedure.
 
-## Creazione di un progetto {#creating-a-project}
+## Creazione di un progetto  {#creating-a-project}
 
 Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di un progetto:
 
@@ -26,9 +29,9 @@ Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di u
 * Progetto servizio fotografico per prodotto
 * Progetto di traduzione
 
-La procedura di creazione di un progetto è sempre la stessa. La differenza tra i tipi di progetti include i [ruoli utente](/help/sites-cloud/authoring/projects/overview.md) e i [flussi di lavoro](/help/sites-cloud/authoring/projects/workflows.md) disponibili.  Per creare un nuovo progetto:
+La procedura di creazione di un progetto è la stessa per ciascun progetto. La differenza tra i tipi di progetti include i [ruoli utente](/help/sites-cloud/authoring/projects/overview.md) e i [flussi di lavoro](/help/sites-cloud/authoring/projects/workflows.md) disponibili.  Per creare un nuovo progetto:
 
-1. Da **Progetti**, tocca o fai clic su **Crea** per aprire la creazione guidata **Crea progetto**:
+1. In **Progetti**, tocca o fai clic su **Crea** per aprire la procedura guidata **Crea progetto**:
 1. Select a template and click **Next**.
 
    ![Creazione di un progetto](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -72,7 +75,7 @@ Per eliminare un progetto dalla console o una risorsa collegata dal progetto si 
 
 >[!NOTE]
 >
->Quando crei il progetto e aggiungi utenti ai vari ruoli, vengono creati automaticamente dei gruppi associati al progetto per gestire le relative autorizzazioni. Ad esempio, un progetto denominato Myproject avrebbe tre gruppi **Proprietari di Myproject**, **Editor di Myproject**, **Osservatori di Myproject**. la sua eliminazione non comporta tuttavia l’eliminazione automatica dei gruppi presenti. I gruppi devono essere eliminati manualmente da un amministratore in **Strumenti** > **Protezione** > **Gruppi**.
+>Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. I gruppi devono essere eliminati manualmente da un amministratore in **Strumenti** > **Protezione** > **Gruppi**.
 
 ### Aggiungere elementi a una porzione {#adding-items-to-a-tile}
 
