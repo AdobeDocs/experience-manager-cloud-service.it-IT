@@ -3,6 +3,9 @@ title: Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub
 description: La barra degli strumenti di ContextHub visualizza dati dagli archivi di ContextHub, ti consente di modificare i dati archiviati ed è utile per visualizzare in anteprima il contenuto
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 89%
 
 ---
 
