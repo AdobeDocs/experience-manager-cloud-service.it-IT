@@ -3,6 +3,9 @@ title: Modifica dei lanci
 description: 'Quando è stato creato un lancio per una pagina (o per un insieme di pagine), è possibile modificare il contenuto nella copia di lancio della pagina (o delle pagine). '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 93%
 
 ---
 
@@ -23,18 +26,18 @@ Se il lancio si basa su una Live Copy: <!--If your launch is based upon a [live 
 * Consultate bloccare i simboli (piccoli lucchetti) quando modificate un componente (contenuto e/o proprietà).
 * See the **Live Copy** tab in **Page Properties**
 
-Una Live Copy è usata per sincronizzare il contenuto *dal* ramo sorgente *al* ramo di lancio (per mantenere aggiornato il lancio con le modifiche apportate al ramo sorgente).
+Una Live Copy viene utilizzata per sincronizzare il contenuto *dal* ramo di origine *al* ramo lancio, al fine di mantenere aggiornato il lancio con le modifiche apportate nell’origine.
 
 È possibile apportare modifiche allo stesso modo in cui si può modificare una Live Copy standard, ad esempio:
 
 * Facendo clic su un lucchetto chiuso si interrompe la sincronizzazione e saranno possibili nuovi aggiornamenti del contenuto nel lancio. Una volta sbloccato (lucchetto aperto), le modifiche non verranno sovrascritte da nessuna modifica apportata alla stessa posizione all&#39;interno del ramo sorgente.
-* **Sospendi** (e **Riprendi**) ereditarietà per una pagina specifica.
+* **Sospendi** (e **Riprendi**) l’ereditarietà per una pagina specifica.
 
 Per ulteriori informazioni, consulta Modifica del contenuto per Live Copy. <!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
 
 ## Confronto tra una pagina di lancio e la relativa pagina sorgente {#comparing-a-launch-page-to-its-source-page}
 
-Per tenere traccia delle modifiche apportate, è possibile visualizzare il lancio in **Riferimenti** e confrontare la pagina di lancio con la relativa pagina di origine:
+Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **Riferimenti** e confrontare la pagina del lancio con la relativa pagina di origine:
 
 1. Nella console **Sites**, [spostati sulla pagina di origine del lancio e selezionala](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Apri il pannello **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**e seleziona **Lanci**.
@@ -56,7 +59,7 @@ In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la ga
    * Da [Riferimenti (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) per mostrare le azioni disponibili:
       * Seleziona **Modifica lancio**.
       * Vengono visualizzate le pagine di origine.
-1. Apporta le modifiche richieste, quindi conferma con **Salva**.
+1. Apporta le modifiche necessarie, quindi conferma con **Salva**.
 
 >[!NOTE]
 >
@@ -72,7 +75,7 @@ In qualsiasi momento è possibile modificare le proprietà per un lancio:
    * Da [Riferimenti (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) per mostrare le azioni disponibili:
       * Seleziona **Modifica proprietà**.
       * Verranno visualizzati i dettagli.
-1. Apporta le modifiche richieste, quindi conferma con **Salva**.
+1. Apporta le modifiche necessarie, quindi conferma con **Salva**.
    * Consulta [Lanci - Ordine degli eventi](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) per informazioni sullo scopo e l&#39;interazione dei campi **Data lancio** e **Produzione pronta**.
 
 ## Rilevamento dello stato del lancio di una pagina {#discovering-the-launch-status-of-a-page}
