@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento di trasferimento dei contenuti
 description: Utilizzo dello strumento di trasferimento dei contenuti
 translation-type: tm+mt
-source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
+source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1538'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Seguite questa sezione per apprendere come utilizzare lo strumento di trasferime
    1. **Token** di accesso: Immettete il token di accesso.
 
       >[!NOTE]
-      >Per recuperare il token di accesso dall’istanza di creazione, passate a `/libs/granite/migration/token.json`.
+      >Per recuperare il token di accesso dall’istanza di creazione, passate a `/libs/granite/migration/token.json`. Il token di accesso viene recuperato dall&#39;istanza di creazione del servizio cloud.
 
    1. **Parametri**: Selezionate i seguenti parametri per creare il set di migrazione:
 
