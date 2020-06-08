@@ -3,6 +3,9 @@ title: Regole sulla protezione dei dati e sulla privacy dei dati - Adobe Experie
 description: 'Scopri Adobe Experience Manager come supporto dei servizi cloud per le varie normative sulla protezione dei dati e la privacy dei dati; incluso il Regolamento generale sulla protezione dei dati (GDPR) dell''UE, il California Consumer Privacy Act e le modalità per conformarsi all''implementazione di un nuovo AEM come progetto di servizio cloud. '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 1%
 
 ---
 
@@ -55,13 +58,13 @@ Per Adobe Experience Manager come servizio Cloud:
 
 * Le istanze e le applicazioni che vengono eseguite su di esse sono di proprietà e gestite dal cliente.
 
-   * Ciò significa che il cliente gestisce i ruoli normativi, tra cui Business Entities e Service Provider, Data Controller e Data Processor, tra gli altri.
+   * Ciò significa che il cliente gestisce efficacemente i ruoli normativi, tra cui Business Entities e Service Provider, Data Controller e Data Processor, tra gli altri.
 
    * Il servizio Adobe Experience Platform Privacy Service non farà parte del flusso di lavoro per AEM, come illustrato nel diagramma seguente.
 
 * AEM include la documentazione e le procedure che l&#39;amministratore della privacy del cliente e/o l&#39;amministratore AEM devono seguire per eseguire le richieste di informativa sulla privacy; manualmente o tramite API, se disponibili.
 
-* Nessun nuovo servizio o interfaccia utente aggiunto.
+* Non è stato aggiunto alcun nuovo servizio o interfaccia utente.
 
    * Le procedure e le API sono invece documentate per l&#39;utilizzo da parte dell&#39;interfaccia utente/portali del cliente che gestisce le richieste di informativa sulla privacy.
 
@@ -81,15 +84,15 @@ Consulta le sezioni seguenti per la documentazione di regolamentazione per le ar
 
 ## Adobe Experience Manager come Cloud Service Foundation {#aem-foundation}
 
-Consulta [AEM Foundation Ready for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md).
+See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md).
 
-## Adobe Experience Manager come sito di servizi cloud {#aem-sites}
+## Adobe Experience Manager Sites as a Cloud Service {#aem-sites}
 
-Consulta [AEM Sites Readiness for Data Protection and Data Privacy Regulations (Preparazione dei siti AEM per la protezione dei dati e le normative sulla privacy dei dati).](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
+See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
 
 ## Adobe Experience Manager come integrazione dei servizi cloud con Adobe Target e Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Queste integrazioni di Adobe Experience Manager come servizio cloud si integrano con i servizi di protezione dei dati e privacy (ad esempio, GDPR). Nessun dato personale di Adobe Target o Adobe Analytics viene memorizzato in AEM in relazione alle integrazioni.
+Queste integrazioni di Adobe Experience Manager come servizio cloud si integrano con i servizi di protezione dei dati e privacy (ad esempio, GDPR). Nessun dato personale proveniente da Adobe Target o Adobe Analytics viene memorizzato in AEM in relazione alle integrazioni.
 Per ulteriori informazioni, consulta:
 
 * [Adobe Target - Panoramica sulla privacy](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
