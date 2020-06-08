@@ -3,6 +3,9 @@ title: Applicazione dei flussi di lavoro alle pagine
 description: Durante l’authoring, è possibile ricorrere ai flussi di lavoro per intraprendere azioni sulle pagine; è inoltre possibile applicare più di un flusso di lavoro.
 translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 81%
 
 ---
 
@@ -95,6 +98,7 @@ Puoi specificare i dettagli:
    * **titolo flusso di lavoro**.
 
       * Per questa istanza, puoi specificare un titolo che aiuti a identificarla in una fase successiva.
+
    A seconda del modello di flusso di lavoro, sono disponibili anche le seguenti opzioni. Queste consentono di conservare il pacchetto creato come payload, dopo il completamento del flusso di lavoro.
 
    * **Mantieni pacchetto flusso di lavoro**
@@ -125,9 +129,11 @@ Una finestra di dialogo si apre per permettere di perfezionare la selezione incl
          * Solo gli elementi figli di primo livello.
          * Solo pagine modificate.
          * Solo pagine già pubblicate.
+
          Tutti gli elementi secondari specificati vengono aggiunti all&#39;elenco di risorse al quale verrà applicato il flusso di lavoro.
 
       * **Rimuovi selezione** per rimuovere una determinata risorsa dal flusso di lavoro.
+
    ![Definizione dell&#39;ambito del flusso di lavoro](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
    >[!NOTE]
