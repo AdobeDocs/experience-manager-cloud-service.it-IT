@@ -3,6 +3,9 @@ title: Integrazione con Adobe Analytics
 description: 'Integrazione con Adobe Analytics '
 translation-type: tm+mt
 source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 14%
 
 ---
 
@@ -42,14 +45,14 @@ Le pagine elencate di seguito possono facilitare la configurazione dell&#39;inte
 
 ## Ulteriori informazioni {#further-information}
 
-Vedi:
+Consulta:
 
 * [Estensione dell&#39;integrazione](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) di Adobe Analytics per informazioni sullo sviluppo di componenti che raccolgono dati utente e la personalizzazione del framework Adobe Analytics. I &quot;framework di Analytics&quot; sono legacy in AEM e la loro creazione non funziona in AEM come servizio cloud perché richiede l’interfaccia classica. Launch di Adobe deve essere utilizzato, sia per la mappatura delle variabili che per la distribuzione delle librerie JS alle pagine.
 * L&#39;articolo della knowledge base, Integrazione di [Adobe Analytics - Risoluzione dei problemi](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), per informazioni sulla risoluzione dei problemi relativi all&#39;integrazione di Adobe Analytics.
 
 >[!NOTE]
 >
->Se utilizzate Adobe Analytics con una configurazione proxy personalizzata, dovete [configurare due bundle](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html) OSGi (ad esempio, con la console Web) necessari per le configurazioni proxy **Apache HTTP Client** . Entrambe sono necessarie in quanto alcune funzionalità di AEM utilizzano le API 3.x, mentre altre utilizzano le API 4.x. Configura:
+>Se utilizzi Adobe Analytics con una configurazione proxy personalizzata, devi [configurare due bundle OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html) (ad esempio, con la console web), necessari per le configurazioni proxy **Apache HTTP Client**. Entrambi sono necessari, poiché alcune funzionalità di AEM utilizzano le API 3.x, mentre altre le API 4.x. Configura:
 >
 >* **Day Commons HTTP Client 3.1** per configurare l&#39;API 3.x;
    >  ad esempio, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
@@ -57,6 +60,7 @@ Vedi:
    >
 * **Configurazione** proxy dei componenti Apache HTTP per configurare l&#39;API 4.x;
    >  ad esempio, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
