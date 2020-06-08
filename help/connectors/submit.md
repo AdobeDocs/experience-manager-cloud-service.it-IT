@@ -3,6 +3,9 @@ title: Invio di un connettore AEM
 description: Invio di un connettore AEM
 translation-type: tm+mt
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 12%
 
 ---
 
@@ -10,7 +13,7 @@ source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
 Invio di un connettore AEM
 ===========================
 
-Di seguito sono riportate informazioni utili per l&#39;invio dei connettori AEM e devono essere lette insieme agli articoli sull&#39; [implementazione](implement.md) e la [manutenzione](maintain.md) dei connettori.
+Seguono informazioni utili per l’invio dei connettori AEM, che devono essere lette insieme agli articoli relativi all’[implementazione](implement.md) e alla [manutenzione](maintain.md) dei connettori.
 
 I connettori AEM sono elencati in [Adobe Exchange](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace.html).
 
