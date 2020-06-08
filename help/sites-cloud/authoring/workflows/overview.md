@@ -3,6 +3,9 @@ title: Utilizzo dei flussi di lavoro
 description: I flussi di lavoro in AEM consentono di automatizzare le serie di passaggi che vengono eseguite su una pagina o su una risorsa.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 100%
 
 ---
 
