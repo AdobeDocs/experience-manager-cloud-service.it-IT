@@ -4,6 +4,9 @@ description: Le API Assets consentono operazioni di base di creazione-lettura-ag
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+workflow-type: tm+mt
+source-wordcount: '1249'
+ht-degree: 1%
 
 ---
 
