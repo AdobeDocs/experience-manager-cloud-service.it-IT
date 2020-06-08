@@ -1,9 +1,12 @@
 ---
 title: Metadati XMP
-description: Scoprite lo standard XMP (Extensible Metadata Platform) per la gestione dei metadati. Viene utilizzato da AEM come formato standard per la creazione, l’elaborazione e lo scambio di metadati.
+description: Scoprite lo standard di metadati XMP (Extensible Metadata Platform) per la gestione dei metadati. Viene utilizzato da AEM come formato standard per la creazione, l’elaborazione e lo scambio di metadati.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 20%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 XMP (Extensible Metadata Platform) è lo standard di metadati utilizzato da AEM Assets per la gestione di tutti i metadati. XMP fornisce un formato standard per la creazione, l&#39;elaborazione e lo scambio di metadati per un&#39;ampia gamma di applicazioni.
 
-Oltre a offrire una codifica di metadati universale che può essere incorporata in tutti i formati di file, XMP offre un modello [di](#xmp-core-concepts) contenuto avanzato ed è [supportato da Adobe](#advantages-of-xmp) e da altre aziende, in modo che gli utenti di XMP, in combinazione con Risorse AEM, possano sfruttare una piattaforma potente.
+Oltre a offrire una codifica di metadati universale che può essere incorporata in tutti i formati di file, XMP offre un modello [di](#xmp-core-concepts) contenuto avanzato ed è [supportato da Adobe](#advantages-of-xmp) e da altre aziende, in modo che gli utenti di XMP, in combinazione con Risorse AEM, abbiano a disposizione una piattaforma potente su cui costruire.
 
 ## Panoramica XMP ed ecosistema {#xmp-ecosystem}
 
@@ -26,9 +29,9 @@ Tutti i metadati legacy di EXIF, ID3 o Microsoft Office vengono automaticamente 
 
 I metadati in XMP sono costituiti da un set di proprietà. Tali proprietà sono sempre associate a un&#39;entità specifica denominata risorsa; in altre parole, le proprietà sono &quot;informazioni&quot; sulla risorsa. Nel caso di XMP, la risorsa è sempre la risorsa.
 
-XMP definisce un modello di [metadati](https://en.wikipedia.org/wiki/Metadata) che può essere utilizzato con qualsiasi insieme definito di elementi di metadati. XMP definisce anche [schemi](https://en.wikipedia.org/wiki/XML_schema) specifici per le proprietà di base utili per registrare la cronologia di una risorsa, passando attraverso più fasi di elaborazione, dalla fotografia, dalla [scansione](https://en.wikipedia.org/wiki/Image_scanner)o creazione come testo, ai passaggi di modifica delle foto (come [ritaglio](https://en.wikipedia.org/wiki/Cropping_%28image%29) o regolazione del colore), all&#39;assemblaggio in un&#39;immagine finale. XMP consente a ogni programma software o dispositivo di aggiungere le proprie informazioni a una risorsa digitale, che può quindi essere mantenuta nel file digitale finale.
+XMP definisce un modello di [metadati](https://it.wikipedia.org/wiki/Metadato) che può essere usato con qualsiasi insieme definito di elementi di metadati. XMP definisce anche [schemi](https://en.wikipedia.org/wiki/XML_schema) specifici per le proprietà di base, utili per registrare la cronologia di una risorsa, in quanto passano attraverso più fasi di elaborazione: dalla fotografia, dalla [scansione](https://it.wikipedia.org/wiki/Scanner_(informatica)) o creazione come testo, fino ai passaggi di modifica delle foto (come [ritaglio](https://en.wikipedia.org/wiki/Cropping_%28image%29) o regolazione colore), fino all’assemblaggio in un’immagine definitiva. XMP consente a ogni programma software o dispositivo di aggiungere le proprie informazioni a una risorsa digitale, che possono quindi essere poi mantenute nel file digitale finale.
 
-XMP è più comunemente serializzato e memorizzato utilizzando un sottoinsieme del [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF), che a sua volta è espresso in [XML](https://en.wikipedia.org/wiki/XML).
+XMP è spesso serializzato e memorizzato utilizzando un sottoinsieme del [W3C](https://it.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://it.wikipedia.org/wiki/Resource_Description_Framework) (RDF), che a sua volta è espresso in [XML](https://it.wikipedia.org/wiki/XML).
 
 ### Vantaggi di XMP {#advantages-of-xmp}
 
@@ -43,7 +46,7 @@ Lo standard XMP è progettato per essere estensibile, consentendo di aggiungere 
 
 >[!NOTE]
 >
->XMP generalmente non consente l&#39;incorporamento di tipi di dati binari. Per poter includere dati binari in XMP, ad esempio immagini in miniatura, questi devono essere codificati in un formato XML adatto, ad esempio `Base64`.
+>XMP generalmente non consente l&#39;incorporamento di tipi di dati binari. Per poter includere dati binari in XMP, ad esempio immagini in miniatura, questi devono essere codificati in un formato adatto a XML, ad esempio `Base64`.
 
 ### Concetti di base XMP {#xmp-core-concepts}
 
@@ -70,7 +73,7 @@ XMP consente di aggiungere una `xml:lang` proprietà alle proprietà di testo pe
 
 Questa funzione di riscrittura XMP in Risorse Adobe Experience Manager (AEM) replica le modifiche apportate ai metadati delle risorse alle rappresentazioni della risorsa.
 
-Quando modificate i metadati di una risorsa da Risorse AEM o durante il caricamento di tale risorsa, le modifiche vengono inizialmente memorizzate nel nodo della risorsa in CRXDE.
+Quando modificate i metadati di una risorsa da Risorse AEM o durante il caricamento di tale risorsa, le modifiche vengono inizialmente memorizzate all’interno del nodo della risorsa in CRXDE.
 
 La funzione di riscrittura XMP propaga le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa.
 
@@ -103,16 +106,16 @@ Per consentire alla funzione di riscrittura XMP di estendere le modifiche ai met
 
 Per estendere i metadati alle miniature di rappresentazione 140.100.png e 319.319.png, effettuate le seguenti operazioni.
 
-1. Toccate/fate clic sul logo AEM, quindi accedete a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso]** di lavoro > **[!UICONTROL Modelli]**.
+1. Tocca/fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 1. Dalla pagina Modelli, aprite il modello di flusso di lavoro **[!UICONTROL DAM Metadata Writeback]** .
-1. Nella pagina delle proprietà Write **[!UICONTROL dei metadati]** DAM, aprite il passaggio **[!UICONTROL XMP Writeback Process]** .
-1. Nella finestra di dialogo Proprietà **** passaggio, toccate/fate clic sulla scheda **[!UICONTROL Processo]** .
+1. Nella pagina delle proprietà **[!UICONTROL Writeback di metadati DAM]**, apri il passaggio **[!UICONTROL Processo write-back XMPs]**.
+1. Nella finestra di dialogo **[!UICONTROL Proprietà passaggio]**, tocca/fai clic sulla scheda **[!UICONTROL Processo]**.
 1. Nella casella **[!UICONTROL Argomenti]** , aggiungete `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, quindi toccate o fate clic su **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
 1. Salva le modifiche.
-1. Per rigenerare le rappresentazioni TIFF (PTIFF) piramidali per le immagini di elementi multimediali dinamici con i nuovi attributi, aggiungete il passaggio **[!UICONTROL Risorse]** immagine processo file multimediali dinamici al flusso di lavoro di riscrittura dei metadati DAM. Le rappresentazioni PTIFF vengono create e memorizzate solo localmente in un’implementazione Dynamic Media Hybrid.
+1. Per rigenerare le rappresentazioni TIFF piramidali (PTIFF) delle immagini Dynamic Media con i nuovi attributi, aggiungi il passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]** al flusso di lavoro immagine processo file multimediali dinamici al flusso di lavoro Writeback di metadati DAM. Le rappresentazioni PTIFF vengono create e memorizzate solo localmente in un’implementazione Dynamic Media Hybrid.
 
 1. Salvare il flusso di lavoro.
 
@@ -140,9 +143,9 @@ Il filtro whitelist dei metadati XMP risolve questo problema consentendo di defi
 
 1. Per aprire Configuration Manager, accedere `https://[aem_server]:[port]/system/console/configMgr`.
 1. Aprite la configurazione **[!UICONTROL Adobe CQ DAM XmpFilter]** .
-1. Per applicare il filtro della whitelist, selezionate **[!UICONTROL Applica whitelist alle proprietà]** XMP e specificate le proprietà da importare nella casella Nomi XML **[!UICONTROL Whitelist per il filtro]** XMP.
+1. Per applicare il filtro della whitelist, seleziona **[!UICONTROL Apply Whitelist to XMP Properties (Applica whitelist alle proprietà XMP)]** e specifica le proprietà da importare nella casella **[!UICONTROL Whitelisted XML Names for XMP filtering (Nomi XML in whitelist per il filtro XMP)]**.
 
-1. Per filtrare le proprietà XMP in blacklist dopo aver applicato il filtro della whitelist, specificatele nella casella Nomi XML **[!UICONTROL in blacklist per il filtro]** XMP.
+1. Per rimuovere le proprietà XMP in blacklist dopo aver applicato il filtro della whitelist, specificale nella casella **[!UICONTROL Blacklisted XML Names for XMP filtering (Nomi XML in blacklist per il filtro XMP)]**.
 
    >[!NOTE]
    >
