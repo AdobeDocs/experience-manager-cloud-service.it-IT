@@ -1,8 +1,11 @@
 ---
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile modificarla per aggiornarne i contenuti
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2974'
+ht-degree: 100%
 
 ---
 
@@ -229,6 +232,7 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
    * È possibile incollare i componenti sulla stessa pagina o su una pagina diversa.
    * L’elemento viene incollato sopra quello nella cui posizione di seleziona l’azione Incolla.
    * L’azione Incolla è disponibile solo se è presente contenuto negli Appunti.
+
    ![Pulsante Incolla](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
@@ -288,7 +292,7 @@ Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti
 
 * Componente immagine (a schermo intero)
 
-   [L’accesso alla modalità a schermo intero](#edit-content-full-screen-mode) per il componente immagine consente di avere più spazio per modificare l’immagine e di visualizzare opzioni di modifica aggiuntive, ad esempio **Avvia mappa** e **Ripristina zoom**. Inoltre, la modalità a schermo intero consente di selezionare i predefiniti di ritaglio.
+   [L’accesso alla modalità a tutto schermo](#edit-content-full-screen-mode) per il componente immagine consente di avere più spazio per modificare l’immagine oltre che per visualizzare opzioni di modifica aggiuntive, ad esempio **Launch Map (Avvia mappa)** e **Ripristina zoom**. Inoltre, lo schermo intero consente di selezionare i predefiniti di ritaglio.
 
    ![Modalità a tutto schermo del componente immagine](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -344,6 +348,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
    * Vengono visualizzate le maniglie di ridimensionamento del componente.
    * La barra degli strumenti dell’emulatore si trova nella parte superiore dello schermo.
    * Nella barra degli strumenti del componente vengono visualizzate le azioni di layout al posto delle azioni standard di modifica.
+
    ![Un componente in modalità layout](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
    Ora puoi modificare il layout del componente, in modo analogo a come lo si modifica nella [modalità di layout](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
@@ -387,7 +392,7 @@ Esempio:
 
 Per passare facilmente all’[Editor modelli](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors), seleziona **Modifica modello** dal menu [Informazioni pagina](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information).
 
-Puoi vedere facilmente su quale modello si basa la pagina selezionando la pagina nella [Vista a colonne](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) o nella [Vista a elenco](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
+Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [Vista a colonne](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) o [Vista a elenco](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
 
 ## Stato della Live Copy   {#live-copy-status}
 
@@ -396,7 +401,7 @@ La [modalità di pagina Stato Live Copy](/help/sites-cloud/authoring/fundamental
 * Bordo verde: componente ereditato
 * Bordo rosa: l’ereditarietà del componente è stata annullata
 
-Esempio:
+Ad esempio:
 
 ![Esempio di visualizzazione stato Live Copy](/help/sites-cloud/authoring/assets/editing-live-copy-status.png)
 
@@ -438,7 +443,7 @@ Quando si creano contenuti, la modalità di anteprima è disponibile utilizzando
 
 L’opzione **Visualizza come pubblicato**, è disponibile nel menu [Informazioni pagina](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information). Permette di aprire la pagina in una nuova scheda, aggiornando il contenuto e visualizzando la pagina esattamente come apparirebbe nell’ambiente di pubblicazione.
 
-## Blocco di una pagina   {#locking-a-page}
+## Blocco di una pagina {#locking-a-page}
 
 AEM consente di bloccare una pagina in modo da impedire che i contenuti possano essere modificati. Questa funzione è utile quando si devono apportare numerose modifiche a una pagina oppure se occorre bloccarla per un breve periodo di tempo.
 
