@@ -3,6 +3,9 @@ title: Lanci
 description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per una pubblicazione futura, mantenendo le pagine correnti
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 91%
 
 ---
 
@@ -37,15 +40,16 @@ La funzione Lanci consente di sviluppare i contenuti per il rilascio futuro di u
 
 I lanci permettono di:
 
-* Creare una copia delle pagine sorgenti:
-   * La copia corrisponde al lancio.
-   * Le pagine sorgenti di primo livello sono dette **Produzione**.
+* Crea una copia delle pagine sorgente:
+   * La copia è il lancio.
+   * Le pagine sorgente di primo livello sono note come **Produzione**.
       * Le pagine sorgenti possono essere prelevate dai rami multipli (separati).
+
    ![Ordine di funzionamento dei lanci](/help/sites-cloud/authoring/assets/launches-order.png)
 
-* Modifica la configurazione di lancio:
+* Modifica la configurazione del lancio:
    * Aggiungi o rimuovi pagine e/o rami al/dal lancio.
-   * Modifica le proprietà di lancio; ad esempio, **Titolo lancio**, **Data lancio**, **Flag pronto** per la produzione.
+   * Modifica le proprietà di lancio, come **Titolo**, **Data lancio** e il flag **Production Ready**.
 * Puoi promuovere e pubblicare i contenuti manualmente o automaticamente:
    * Manualmente:
       * Promuovi il contenuto del lancio fino al **Target** (pagine sorgenti) quando è pronto per essere pubblicato.
@@ -54,16 +58,18 @@ I lanci permettono di:
    * Automaticamente - questo implica le seguenti attività:
       * Il campo **Data** **lancio**(**Live**): può essere impostato durante la creazione o la modifica di un lancio.
       * Il flag **pronto per la produzione**: può essere impostato solo quando si modifica un lancio.
-      * Se il flag **pronto per la produzione** è impostato, il lancio verrà promosso automaticamente sulla pagine di produzione alla **data** **lancio**(**Live**) specificata. Dopo la promozione, le pagine di produzione sono pubblicate automaticamente.\
+      * Se il flag **pronto per la produzione** è impostato, il lancio verrà promosso automaticamente sulla pagine di produzione alla **data** **lancio**(**Live**) specificata. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
          Se la data non è stata impostata, il flag non ha alcun effetto.
 * Aggiorna parallelamente la pagina sorgente e la pagina di lancio:
    * Le modifiche apportate alle pagine sorgenti vengono automaticamente implementate nella copia lancio (se impostate con ereditarietà; ovvero come Live Copy).
    * Le modifiche apportate alla copia di lancio possono essere effettuate senza interrompere gli aggiornamenti automatici o le pagine sorgenti.
+
    ![Azioni parallele](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [Crea un lancio nidificato](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - un lancio all&#39;interno di un lancio:
    * L’origine è un lancio esistente.
    * Puoi [promuovere un lancio nidificato](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) per qualsiasi target; può trattarsi di un lancio padre o di pagine sorgenti di primo livello (Produzione).
+
    ![Un avvio nidificato](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
