@@ -221,7 +221,7 @@ A causa dell&#39;incorporazione del codice e dei sottopacchetti di contenuto nel
 
 ## Incorporazione di pacchetti di terze parti {#embedding-3rd-party-packages}
 
-Tutti i pacchetti devono essere disponibili tramite l&#39;archivio [degli artifact Maven pubblico di](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) Adobe o un archivio degli artifact di terze parti accessibile e accessibile al pubblico.
+Tutti i pacchetti devono essere disponibili tramite l&#39;archivio [degli artifact Maven pubblico di](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) Adobe o un archivio degli artifact di terze parti accessibile al pubblico.
 
 Se i pacchetti di terze parti si trovano nell’**archivio di artefatti Maven pubblico di Adobe**, per consentire ad Adobe Cloud Manager di risolvere gli artefatti non è necessario effettuare nessuna ulteriore configurazione.
 
