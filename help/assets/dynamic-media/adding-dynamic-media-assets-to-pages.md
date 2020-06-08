@@ -117,7 +117,6 @@ Il componente Contenuti multimediali dinamici è elegante. A seconda se aggiunge
 >
 >* Più istanze del componente Contenuti multimediali dinamici in uso sulla stessa pagina.
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
-
 >
 >
 L’assegnazione di un predefinito per visualizzatori diverso a ciascun componente per contenuti multimediali dinamici nella pagina non è supportata.
@@ -197,7 +196,6 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    * Associare un file di sottotitoli a un video: [didascalia](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Associare un file di navigazione a un video: [navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
-
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Title**- Modifica il titolo del video.
@@ -256,7 +254,6 @@ Il componente Contenuti multimediali interattivi è avanzato. A seconda se aggiu
 >
 >* Più istanze del componente Supporto interattivo in uso sulla stessa pagina.
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
-
 >
 >
 Tenete presente che l’assegnazione di un predefinito per visualizzatori diverso a ciascun componente per contenuti multimediali interattivi in quella pagina non è supportata.
@@ -298,7 +295,6 @@ Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse p
 >
 >* Nella stessa pagina vengono utilizzate più istanze del componente **[!UICONTROL Panoramic Media]** .
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
-
 >
 >
 Non è supportata l’assegnazione di un predefinito visualizzatore diverso a ciascun componente **[!UICONTROL Elemento multimediale panoramico]** di quella pagina.
