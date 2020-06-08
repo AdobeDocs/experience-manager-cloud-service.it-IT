@@ -101,7 +101,6 @@ Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni
    * Numero di volte in cui la risorsa è stata visualizzata o scaricata
    * Canali/dispositivi attraverso i quali è stata utilizzata la risorsa
    * Soluzioni creative in cui la risorsa è stata utilizzata di recente
-
    Per ulteriori dettagli, consulta [Informazioni approfondite](assets-insights.md)sulle risorse.
 
 1. Toccate o fate clic su **[!UICONTROL Salva e chiudi]**.
@@ -173,7 +172,6 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    * Toccate/fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Seleziona destinazione]** .
 
    * Toccate/fate clic su **[!UICONTROL Annulla]** per interrompere l&#39;operazione di spostamento.
-
    Se non aggiornate i riferimenti, continueranno a indicare il percorso precedente della risorsa. Se regolate i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
 
 ### Gestire le rappresentazioni {#managing-renditions}
@@ -247,7 +245,6 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
       * Se la risorsa non dispone di riferimenti, viene eliminata.
       * Se la risorsa dispone di riferimenti, un messaggio di errore vi informa che **Una o più risorse dispongono di riferimenti.** Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
-
    >[!NOTE]
    >
    >Per poter eliminare una risorsa è necessario disporre delle autorizzazioni di eliminazione per la risorsa DAM o la risorsa. Se disponete solo di autorizzazioni di modifica, potete modificare solo i metadati della risorsa e aggiungere delle annotazioni alla risorsa. Tuttavia, non potete eliminare la risorsa o i relativi metadati.
@@ -307,7 +304,6 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    * **[!UICONTROL Annulla]** per interrompere l’azione
    * **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse non sono più pubblicate (non sono più disponibili nell’ambiente di pubblicazione) alla data specificata.
-
    >[!NOTE]
    >
    >Quando si annulla la pubblicazione di una risorsa complessa, è necessario annullare la pubblicazione solo della risorsa. Evitate di annullare la pubblicazione dei riferimenti, in quanto ad essi potrebbero fare riferimento altre risorse pubblicate.
@@ -360,7 +356,6 @@ Gli strumenti di modifica nell’interfaccia di Risorse AEM consentono di effett
    * Selezionate la risorsa, quindi toccate o fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
    * Toccate/fate clic sull&#39;icona **[!UICONTROL Modifica]** visualizzata su una risorsa nella vista a schede.
    * Nella pagina della risorsa, toccate o fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
-
    ![edit_icon](assets/edit_icon.png)
 
 1. Per ritagliare l’immagine, toccate o fate clic sull’icona **Ritaglia** .
@@ -431,7 +426,6 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    * [Azioni rapide](#quick-actions)
    * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
-
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
