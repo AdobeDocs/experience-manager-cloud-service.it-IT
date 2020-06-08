@@ -3,6 +3,9 @@ title: Gestione delle attività
 description: La console Attività consente di creare, organizzare e gestire le attività di marketing dei tuoi marchi
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1989'
+ht-degree: 86%
 
 ---
 
@@ -35,13 +38,13 @@ Le attività vengono visualizzate con un&#39;etichetta che descrive il tipo di a
 >
 >Il tipo di attività disponibile viene stabilito in base ai seguenti elementi:
 >
->* Se l&#39;opzione `xt_only` è abilitata sul tenant di Adobe Target (clientcode) utilizzato sul lato AEM per connettersi ad Adobe Target, puoi creare **solo** attività XT in AEM.
+>* Se l’opzione `xt_only` è abilitata sul tenant di Adobe Target (clientcode) utilizzato sul lato AEM per connettersi ad Adobe Target, puoi creare **solo** attività XT in AEM.
    >
    >
-* Se le opzioni `xt_only` **non** sono abilitate sul tenant di Adobe Target (clientcode), puoi creare **sia** le attività XT che A/B in AEM.
+* Se le opzioni `xt_only` **non** sono abilitate nel tenant di Adobe Target (clientcode), puoi creare attività **sia** XT che A/B in AEM.
 >
 >
-**** Nota aggiuntiva: L&#39; `xt_only` opzione è un&#39;impostazione applicata a un determinato tenant Target (clientcode) e può essere modificata solo direttamente in Adobe Target. Non puoi attivare o disattivare questa opzione in AEM.
+**Nota aggiuntiva:** l’opzione `xt_only` è un’impostazione applicata a un determinato tenant Target (clientcode) e può essere modificata solo direttamente all’interno di Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
 
 >[!CAUTION]
 >
@@ -71,33 +74,33 @@ When you create a brand using the Activities console, it also appears in the [Of
 
 Aggiungi un&#39;attività o modifica un&#39;attività esistente per concentrare le tue attività di marketing su un pubblico specifico. Quando crei/modifichi un&#39;attività, è necessario specificare le seguenti informazioni:
 
-* **Nome:** il nome dell&#39;attività.
-* **Motore di destinazione:** [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) o [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) come motore per il contenuto con targeting.
-* **Seleziona una configurazione di destinazione:** (solo Adobe Target) la configurazione del cloud che questa attività deve utilizzare per connettersi a Adobe Target. Questa opzione viene visualizzata solo quando è selezionato Adobe Target come motore di destinazione.
+* **Nome:** il nome dell’attività.
+* **Motore di destinazione:** [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) oppure [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) come motore per il contenuto di destinazione.
+* **Seleziona una configurazione di destinazione:** (Solo Adobe Target) la configurazione cloud che questa attività deve utilizzare per connettersi ad Adobe Target. Questa opzione viene visualizzata solo quando è selezionato Adobe Target è per il motore di destinazione.
 * **Tipo** attività: Tipo di attività: test A/B o targeting delle esperienze
-* **Obiettivo:** (Facoltativo) una descrizione dell&#39;attività.
-* **Esperienze:** mappature tra i nomi del pubblico e i segmenti di mercato di cui stati eseguendo il targeting.
-* **** Percentuali di traffico: Se è selezionato il test A/B, potete modificare la quantità di traffico (in percentuale) che va a ogni esperienza.
-* **Durata:** il periodo di tempo durante il quale viene applicata l&#39;attività.
-* **Priorità:** la priorità dell&#39;attività. Quando le attività forniscono contenuti per gli stessi segmenti di utenti, l&#39;attività con priorità più elevata ha la precedenza.
-* **** Metrica obiettivo: Se Adobe Target è selezionato come motore di targeting, puoi aggiungere metriche di successo all&#39;attività. Una metrica di successo è obbligatoria.
+* **Obiettivo:** (facoltativo) una descrizione dell’attività.
+* **Esperienze:** mappature tra i nomi del pubblico e i segmenti di marketing di destinazione.
+* **Traffic Percentages (Percentuali di traffico):** se è selezionato il test A/B, puoi modificare la quantità di traffico (in percentuale) che viene indirizzato a ogni esperienza.
+* **Durata:** il periodo di tempo in cui viene applicata l’attività.
+* **Priorità:** la priorità relativa dell’attività. Quando le attività forniscono contenuto per gli stessi segmenti di utenti, l’attività della priorità superiore ha la precedenza.
+* **Metrica per obiettivo:** se Adobe Target è selezionato come motore di destinazione, puoi aggiungere all’attività le metriche di successo. È necessaria una metrica di successo.
 
 >[!NOTE]
 >
->Le nuove attività Adobe Target devono essere *create* nell&#39;editor di contenuti con targeting, non nella console **Attività**, in quanto la sincronizzazione con Adobe Target avrà esito negativo.
+>È necessario *creare* nuove attività di Adobe Target nell’editor del contenuto di destinazione, non nella console **Attività**, in quanto la sincronizzazione con Adobe Target avrà esito negativo.
 >
 >Puoi, tuttavia, modificare le attività di Adobe Target esistenti nella console.
 
 Per aggiungere un’attività:
 
-1. Tocca o fai clic sul marchio per il quale stai creando l&#39;attività e quindi tocca o fai clic su **Crea** quindi su **Crea attività**. If editing, select the activity in the Master Area screen and clicking or tapping **Edit Activity**.
+1. Tocca o fai clic sul marchio per il quale stai creando l’attività, quindi tocca o fai clic su **Crea**, quindi su **Crea attività**. Se stai eseguendo una modifica, seleziona l’attività nella schermata Area mastro, quindi fai clic o tocca **Modifica attività**.
 1. Fornisci le informazioni seguenti e tocca o fai clic su **Avanti**:
    * Un nome per l&#39;attività.
    * Il motore di destinazione da utilizzare. ContextHub (AEM) è selezionato per impostazione predefinita. Se è necessario utilizzare Adobe Target, crea l&#39;attività nell&#39;editor di contenuti con targeting.
    * Se hai selezionato Adobe Target come motore di destinazione, seleziona/modifica la configurazione del cloud da utilizzare per la connessione ad Adobe Target. (Non selezionare un framework creato in precedenza per la configurazione del cloud).
    * (Facoltativo) L&#39;obiettivo o la descrizione dell&#39;attività.
    * Seleziona il tipo di attività.
-1. Aggiungi una o più esperienze all&#39;attività. Tocca o fai clic su **Aggiungi esperienza**.
+1. Aggiungi una o più esperienze all’attività. Tocca o fai clic su **Aggiungi esperienza**.
 1. Se utilizzi il targeting di AEM o il targgeting esperienze di Adobe Target:
    1. Click or tap **Select Audience** and select the segment that your experience targets.
    1. Tocca o fai clic su **Aggiungi esperienza**, digita un nome e tocca o fai clic su **OK**. 
@@ -109,7 +112,7 @@ Se utilizzi la funzionalità di test A/B di Adobe Target:
    1. Tocca o fai clic su **Avanti**.
 1. Per specificare quando l&#39;attività viene avviata, utilizza il menu a discesa **Avvio** per selezionare uno dei seguenti valori:
    * **Quando viene attivato**: l&#39;attività viene avviata quando la pagina contenente il contenuto con targeting viene attivata.
-   * **Data e ora specifiche:** un tempo specifico. Quando selezioni questa opzione, tocca o fai clic sull’icona del calendario, seleziona una data e specifica l’ora di inizio dell’attività.
+   * **Data e ora specifiche:** un tempo specifico. Quando selezioni questa opzione, fai clic o tocca l’icona del calendario, seleziona una data e specifica l’ora in cui avviare l’attività.
 1. Per specificare quando l&#39;attività termina, usa il menu a discesa Fine per selezionare uno dei seguenti valori:
    * **Quando viene disattivato**: l&#39;attività viene terminata quando la pagina contenente il contenuto con targeting viene disattivata.
    * **Data e ora specificata**: un tempo specifico. Quando selezioni questa opzione, tocca o fai clic sull’icona del calendario, seleziona una data e specifica l’ora di fine dell’attività.
@@ -153,7 +156,7 @@ Per visualizzare le prestazioni dell&#39;attività e convertire l&#39;esperienza
 
 1. In **Personalization**, click or tap **Activities** to navigate to the **Activities** console.
 1. Tocca o fai clic sul marchio di cui desideri visualizzare le attività.
-1. Select the activity and click or tap **View Properties** and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Vengono visualizzati i dati sulle prestazioni.
+1. Seleziona l’attività e tocca o fai clic su **Visualizza proprietà**, quindi seleziona la scheda **Rapporti** e scegli l’attività per la quale visualizzare le prestazioni o convertire le esperienze vincenti. Vengono visualizzati i dati sulle prestazioni.
 
    ![Verifica delle prestazioni dell&#39;attività](/help/sites-cloud/authoring/assets/activities-performance.png)
 
