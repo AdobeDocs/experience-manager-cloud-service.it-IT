@@ -3,9 +3,9 @@ title: Applicare tag alle immagini con servizi intelligenti artificialmente.
 description: Applicate tag alle immagini con servizi intelligenti artificialmente che applicano tag commerciali contestuali e descrittivi utilizzando i servizi Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2401'
 ht-degree: 5%
 
 ---
@@ -99,7 +99,7 @@ Non potete annullare la formazione. Le linee guida di cui sopra dovrebbero aiuta
 Per creare e formare un modello per i tag aziendali specifici, procedere come segue:
 
 1. Create i tag necessari e la struttura di tag appropriata. Caricate le immagini rilevanti nell&#39;archivio DAM.
-1. Nell’interfaccia [!DNL Experience Manager] utente, accedi a **[!UICONTROL Risorse]** > Modello **** formazione.
+1. Nell’interfaccia [!DNL Experience Manager] utente, accedi a **[!UICONTROL Risorse]** > Formazione **** smart tag.
 1. Fai clic su **[!UICONTROL Crea]**. Specificate un **[!UICONTROL Titolo]**, una **[!UICONTROL Descrizione]**.
 1. Sfogliare e selezionare i tag presenti nei tag esistenti per `cq:tags` cui si desidera formare il modello. Fai clic su **[!UICONTROL Avanti]**.
 1. Nella finestra di dialogo **[!UICONTROL Seleziona risorse]** , fate clic su **[!UICONTROL Aggiungi risorse]** per ciascun tag. Cercate nell&#39;archivio DAM o sfogliate l&#39;archivio per selezionare almeno 10 e al massimo 50 immagini. Selezionate le risorse e non la cartella. Dopo aver selezionato le immagini, fate clic su **[!UICONTROL Seleziona]**.
