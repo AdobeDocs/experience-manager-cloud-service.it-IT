@@ -3,6 +3,9 @@ title: Utilizzo dei contenuti di destinazione in più siti
 description: Se devi gestire contenuti di destinazione, ad esempio attività, esperienze e offerte tra i vari siti, è possibile sfruttare il supporto per più siti AEM integrato per il contenuto di destinazione
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2900'
+ht-degree: 87%
 
 ---
 
@@ -49,6 +52,7 @@ Un sito o una Live Copy collegano a un’area che contiene le attività che devo
 >
 >* Quando utilizzi il rollout o le Live Copy è richiesta una licenza MSM.
 >* Quando utilizzi la sincronizzazione con Adobe Target è richiesta la licenza per Adobe Target.
+
 >
 
 
@@ -61,13 +65,13 @@ Il contenuto di destinazione è riprodotto ciclicamente nelle cosiddette aree, c
 
 Con il supporto multisito per contenuti di destinazione è possibile, ad esempio, definire due (o più) siti con **un** marchio con una delle seguenti caratteristiche:
 
-* Un insieme completamente *distinto* di contenuti di destinazione: la modifica dei contenuti di destinazione in uno non influisce sull’altro. I siti che rimandano alle aree distinte sono in grado di leggere e scrivere sulla propria area configurata. Esempio:
+* Un insieme completamente *distinto* di contenuti di destinazione: la modifica dei contenuti di destinazione in uno non influisce sull’altro. I siti che rimandano alle aree distinte sono in grado di leggere e scrivere sulla propria area configurata. Ad esempio:
    * Il sito A è collegato all’area X
    * Il sito B è collegato all’Area Y
-* Un insieme *comune* di contenuti di destinazione: la modifica in uno ha un impatto diretto su entrambi i siti; puoi eseguire questa operazione con due siti che fanno riferimento alla stessa area. I siti che si collegano alla stessa area condividono il contenuto di destinazione all’interno di quest’area. Esempio:
+* Un insieme *comune* di contenuti di destinazione: la modifica in uno ha un impatto diretto su entrambi i siti; puoi eseguire questa operazione con due siti che fanno riferimento alla stessa area. I siti che si collegano alla stessa area condividono il contenuto di destinazione all’interno di quest’area. Ad esempio:
    * Il sito A è collegato all’area X
    * Il sito B è collegato all’Area X
-* A distinct set of targeted content *inherited* from another site via MSM - Content can be unidirectionally rolled out from master to live copy. Esempio:
+* A distinct set of targeted content *inherited* from another site via MSM - Content can be unidirectionally rolled out from master to live copy. Ad esempio:
    * Il sito A è collegato all’area X
    * Il sito B è collegato all’Area Y (che è una Live Copy dell’Area X).
 
@@ -102,7 +106,7 @@ Per l’emisfero Nord abbiamo creato un’attività invernale, ma nel pubblico m
 
 ![Versione Stati Uniti](/help/sites-cloud/authoring/assets/multisite-us.png)
 
-Dopo l’aggiornamento della scheda, il sito del Canada modifica la nuova immagine senza alcuna azione da parte nostra. Ciò accade perché condivide l’area master con gli Stati Uniti. Nei siti di Gran Bretagna e Australia l&#39;immagine non cambia.
+Dopo l’aggiornamento della scheda, il sito del Canada modifica la nuova immagine senza alcuna azione da parte nostra. Ciò accade perché condivide l’area master con gli Stati Uniti. Nei siti di Gran Bretagna e Australia, l&#39;immagine non cambia.
 
 ![Modifica delle versioni](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
@@ -147,11 +151,11 @@ Le aree possono misurare attività e offerte. Dopo aver creato un’area in una 
 
 >[!NOTE]
 >
->L’area predefinita denominata Area master viene compressa da impostazione predefinita quando tocchi o fai clic sul nome di un marchio **finché** non crei un’altra area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
+>L’area predefinita denominata Area mastro viene ridotta per impostazione predefinita quando tocchi o fai clic sul nome di un marchio **fino** a creare un’altra area. Quindi, quando selezioni un marchio nella console **Attività** o **Offerte**, viene visualizzata la console **Area**.
 
 Per creare una nuova area:
 
-1. Navigate to **Personalization** > **Activities** or **Offers** or and then to your brand.
+1. Passa a **Personalizzazione** > **Attività** o **Offerte** per poi, infine, arrivare al tuo marchio.
 1. Tocca o fai clic su **Crea area**.
 
    ![Crea area](/help/sites-cloud/authoring/assets/multisite-create-area.png)
@@ -170,7 +174,7 @@ Crea un’area come Live Copy per ereditare contenuti di destinazione tramite le
 
 Per creare un’area come Live Copy:
 
-1. Navigate to **Personalization** > **Activities** or **Offers** and then to your brand.
+1. Passa a **Personalizzazione** > **Attività** o **Offerte** e infine, al tuo marchio.
 1. Tocca o fai clic su **Crea area come Live Copy**.
 
    ![Crea area come Live Copy](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
@@ -179,7 +183,7 @@ Per creare un’area come Live Copy:
 
    ![Crea live copy](/help/sites-cloud/authoring/assets/multisite-livecopy.png)
 
-1. Inserisci un nome per la nuova Live Copy nel campo **Nome**. Le sottopagine sono incluse per impostazione predefinita, per escluderle, seleziona la casella di controllo **Escludi sottopagine**.
+1. Nel campo **Nome**, inserisci un nome per la Live Copy. Per impostazione predefinita, le sottopagine sono incluse, escludile selezionando la casella di controllo **Escludi sottopagine**.
 
    ![Crea live copy](/help/sites-cloud/authoring/assets/multisite-create-livecopy.png)
 
@@ -236,6 +240,7 @@ Un’attività che eredita da un altro sito è contrassegnata in verde accanto a
 >
 >* Puoi sospendere o scollegare solo le Live Copy in un’attività.
 >* Non è necessario sospendere o scollegare le Live Copy per estendere un’attività ereditata. Puoi sempre creare **nuove** esperienze e offerte locali per l’attività. Se desideri modificare un’attività esistente, devi sospendere l’ereditarietà.
+
 >
 
 
@@ -250,6 +255,7 @@ Sospendere o scollegare ereditarietà di contenuti di destinazione in un’attiv
 
    1. Seleziona un elemento dell’attività, come il pubblico. AEM mostra automaticamente la casella di conferma Sospendi la Live Copy. (Puoi sospendere la Live Copy toccando o facendo clic su un elemento in tutto il processo di Targeting.)
    1. Seleziona **Stacca la Live Copy** dal menu a discesa nella barra degli strumenti.
+
    ![Sospendi live copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
 1. Tap or click **Suspend** to suspend the activity. Le attività sospese sono contrassegnate in rosso.
@@ -262,7 +268,7 @@ Interrompere l’ereditarietà di contenuti di destinazione in un’attività:
 
 1. Accedi alla pagina in cui desideri dissociare la Live Copy dal master e tocca o fai clic su **Targeting** nel menu a discesa della modalità.
 1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Tocca o fai clic su **Inizia impostazione destinazione**.
-1. Seleziona **Interrompi Live Copy** dal menu a discesa nella barra degli strumenti. AEM conferma che desideri scollegare la Live Copy.
+1. Dal menu a discesa nella barra degli strumenti, seleziona **Stacca Live Copy**. AEM conferma che vuoi scollegare la Live Copy.
 1. Tocca o fai clic su **Scollega** per scollegare la Live Copy dall’attività. Una volta scollegato, il menu a discesa riguardante le visualizzazioni di ereditarietà non verrà più visualizzato. L’attività è ora un’attività locale.
 
    ![Attività locale](/help/sites-cloud/authoring/assets/multisite-winter.png)
@@ -275,7 +281,7 @@ Per ripristinare l’ereditarietà di contenuti di destinazione in un’attivit�
 
 1. Navigate to the page where you want to restore inheritance and tap or click **Targeting** in the mode drop-down menu.
 1. Tocca o fai clic su **Inizia impostazione destinazione**.
-1. Select **Resume Live Copy** from the drop-down menu in the toolbar.
+1. Dal menu a discesa nella barra degli strumenti, seleziona **Riprendi Live Copy**.
 
    ![Ripresa della Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
