@@ -2,8 +2,11 @@
 title: Pubblicare risorse, cartelle e raccolte su Brand Portal
 description: Pubblicare risorse, cartelle e raccolte su Brand Portal.
 contentOwner: Vishabh Gupta
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+workflow-type: tm+mt
+source-wordcount: '1160'
+ht-degree: 100%
 
 ---
 
@@ -107,6 +110,7 @@ Puoi pubblicare o annullare subito la pubblicazione delle cartelle di risorse op
          Fai clic su **Avanti**.
 
       1. Conferma la selezione in **[!UICONTROL Ambito]** e fai clic su **[!UICONTROL Pubblica su Brand Portal]**.
+
    Viene visualizzato un messaggio per informare che la cartella è stata accodata per la pubblicazione su Brand Portal. Per visualizzare la cartella pubblicata, accedi all’interfaccia di Brand Portal.
 
 1. **Pubblicare le cartelle in un secondo momento**
