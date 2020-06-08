@@ -3,6 +3,9 @@ title: Promozione dei lanci
 description: 'Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (produzione) prima della pubblicazione. '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 83%
 
 ---
 
@@ -32,7 +35,7 @@ Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (
 
 >[!NOTE]
 >
->Riguarda l’azione manuale per promuovere le pagine di lancio quando esiste un solo livello di lancio. Vedi:
+>Riguarda l’azione manuale per promuovere le pagine di lancio quando esiste un solo livello di lancio. Consulta:
 >
 >* [Promozione di un lancio nidificato](#promoting-a-nested-launch) in caso di più lanci nella struttura.
 >* [Lanci: ordine degli eventi](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) per ulteriori dettagli sulla promozione e la pubblicazione automatica.
@@ -115,7 +118,7 @@ Dopo aver creato un lancio nidificato, puoi promuoverlo di nuovo su qualsiasi so
 
    ![Nella console di avvio](/help/sites-cloud/authoring/assets/launches-console.png)
 
-## Elaborazione di pagine promosse con Flusso di lavoro AEM {#processing-promoted-pages-using-aem-workflow}
+## Elaborazione di pagine promosse tramite Flusso di lavoro AEM {#processing-promoted-pages-using-aem-workflow}
 
 I modelli di flusso di lavoro consentono di eseguire operazioni di elaborazione collettive sulle pagine di lancio promosse:
 
