@@ -3,6 +3,9 @@ title: Modelli per frammenti di contenuto
 description: I modelli di frammenti di contenuto vengono utilizzati per creare frammenti di contenuto con contenuto strutturato.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 22%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 I modelli di frammenti di contenuto definiscono la struttura del contenuto per i frammenti [di](/help/assets/content-fragments/content-fragments.md)contenuto.
 
-## Abilita modelli di frammenti di contenuto {#enable-content-fragment-models}
+## Enable Content Fragment Models {#enable-content-fragment-models}
 
 >[!CAUTION]
 >
@@ -26,12 +29,13 @@ Per abilitare i modelli di frammenti di contenuto è necessario:
 
 Per [creare un nuovo modello](#creating-a-content-fragment-model) di frammento di contenuto, è **necessario** innanzitutto attivarlo utilizzando Gestione configurazione:
 
-1. Accedete a **Strumenti**, **Generali**, quindi aprite il browser **** Configurazione.
+1. Accedi a **Strumenti**, **Generali**, quindi apri **Browser configurazioni**.
 2. Selezionate la posizione appropriata per il sito Web.
 3. Utilizzate **Crea** per aprire la finestra di dialogo in cui:
 
    1. Specificate un **titolo**.
    2. Selezionare Modelli **di frammenti di** contenuto per attivarne l&#39;uso.
+
    ![configurazione](assets/cfm-models-01.png)
 
 4. Selezionate **Crea** per salvare la definizione.
@@ -40,19 +44,19 @@ Per [creare un nuovo modello](#creating-a-content-fragment-model) di frammento d
 
 Quando la configurazione **globale** è abilitata per i modelli di frammenti di contenuto, tutti i modelli creati dagli utenti possono essere utilizzati in qualsiasi cartella Risorse.
 
-Per utilizzare altre configurazioni (ad esempio, escludendo il formato globale) con una cartella di risorse paragonabile, è necessario definire la connessione. A questo scopo, selezionate la **Configurazione** appropriata nella scheda Servizi **** cloud delle Proprietà **** cartella della cartella appropriata.
+Per utilizzare altre configurazioni con una cartella Risorse simile, ovvero escludendo il formato globale, è necessario definire la connessione. Questa operazione viene eseguita selezionando l’appropriata **Configurazione** nella scheda **Cloud Services** della finestra **Proprietà cartella** della cartella specifica.
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
 1. Passa a **Strumenti**, **Risorse**, quindi apri Modelli **di frammenti di** contenuto.
-1. Andate alla cartella appropriata per la [configurazione](#enable-content-fragment-models).
+1. Individuate la cartella appropriata per la [configurazione](#enable-content-fragment-models).
 1. Utilizzare **Crea** per aprire la procedura guidata.
 
    >[!CAUTION]
    >
    >Se l&#39; [uso dei modelli di frammento di contenuto non è stato abilitato](#enable-content-fragment-models), l&#39;opzione **Crea** non sarà disponibile.
 
-1. Specificate il Titolo **del** modello. Se necessario, potete anche aggiungere una **descrizione** .
+1. Specifica il **Titolo modello**. Se necessario, puoi anche aggiungere una **Descrizione**.
 
    ![titolo e descrizione](assets/cfm-models-02.png)
 
@@ -64,7 +68,7 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 
 >[!CAUTION]
 >
->La modifica di un modello di frammento di contenuto esistente può influenzare i frammenti dipendenti.
+>La modifica di un modello di frammento di contenuto esistente può avere un impatto sui frammenti dipendenti.
 
 1. Passa a **Strumenti**, **Risorse**, quindi apri Modelli **di frammenti di** contenuto.
 
@@ -74,28 +78,32 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
    Una volta aperto l&#39;editor modelli mostra:
 
    * left: campi già definiti
-   * right: Tipi **di** dati disponibili per la creazione di campi (e **proprietà** da utilizzare dopo la creazione dei campi)
+   * A destra: **Tipi di dati** disponibili per la creazione di campi, oltre alle **Proprietà** da utilizzare dopo la creazione.
+
    >[!NOTE]
    >
-   >Quando un campo è **obbligatorio**, l&#39; **etichetta** indicata nel riquadro a sinistra sarà contrassegnata con un asterisco (*****).
+   >Quando un campo è **obbligatorio**, l’**Etichetta** indicata nel riquadro a sinistra sarà contrassegnata con un asterisco (*****).
 
    ![proprietà](assets/cfm-models-03.png)
 
 1. **Aggiunta di un campo**
 
    * Trascinare un tipo di dati richiesto nella posizione desiderata per un campo:
+
    ![tipo di dati su campo](assets/cfm-models-04.png)
 
-   * Una volta aggiunto un campo al modello, nel pannello a destra vengono visualizzate le **proprietà** che è possibile definire per quel particolare tipo di dati. Qui è possibile definire i requisiti necessari per tale campo. Esempio:
+   * Una volta aggiunto un campo al modello, nel pannello a destra vengono visualizzate le **proprietà** che è possibile definire per quel particolare tipo di dati. Qui è possibile definire i requisiti necessari per tale campo. Ad esempio:
+
    ![proprietà del campo](assets/cfm-models-05.png)
 
    >[!NOTE]
-   Per il tipo di dati Testo **a** più righe è possibile definire il Tipo **** predefinito come:
+   Per il tipo di dati **Testo su più righe** è possibile definire il **Tipo predefinito** come:
    * **Formato RTF**
    * **Markdown**
    * **Testo normale**
+
    Se non viene specificato, per questo campo viene utilizzato il valore predefinito **RTF** .
-   La modifica del tipo **** predefinito in un modello di frammento di contenuto avrà effetto solo su un frammento di contenuto esistente correlato, dopo che il frammento sarà stato aperto nell’editor e salvato.
+   La modifica del **Tipo predefinito** in un modello per frammenti di contenuto avrà effetto solo su un frammento esistente correlato, una volta che il frammento è stato aperto nell’editor e successivamente salvato.
 
 1. **Rimozione di un campo**
 
@@ -103,7 +111,7 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 
    ![rimuovere](assets/cfm-models-06.png)
 
-1. Dopo aver aggiunto tutti i campi obbligatori e definito le proprietà, utilizzate **Salva** per mantenere la definizione. Esempio:
+1. Dopo aver aggiunto tutti i campi obbligatori e definito le proprietà, utilizzate **Salva** per mantenere la definizione. Ad esempio:
 
    ![save](assets/cfm-models-07.png)
 
@@ -134,4 +142,4 @@ Per pubblicare un modello di frammento di contenuto:
 1. Selezionate il modello, seguito da **Pubblica** dalla barra degli strumenti.
 
    >[!NOTE]
-   Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato con il frammento.
+   Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato insieme al frammento.
