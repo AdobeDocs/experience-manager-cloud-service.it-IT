@@ -3,6 +3,9 @@ title: Registrazione
 description: Scoprite come configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 translation-type: tm+mt
 source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+workflow-type: tm+mt
+source-wordcount: '1097'
+ht-degree: 2%
 
 ---
 
@@ -168,7 +171,7 @@ Questi elementi sono collegati dai seguenti parametri per gli elementi appropria
 
 * **Logger (Logging)**
 
-   Definire i servizi che generano i messaggi.
+   Definite i servizi che generano i messaggi.
 
 <!-- * **Log File (Logging Logger)**
 
@@ -239,7 +242,7 @@ In alcune circostanze può essere utile creare un registro personalizzato con un
 1. Se non già esistente, create una nuova cartella di configurazione ( `sling:Folder`) per il progetto `/apps/<*project-name*>/config`.
 1. In `/apps/<*project-name*>/config`, create un nodo per la nuova configurazione del logger di registrazione Apache Sling:
 
-   * Nome: `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (in quanto si tratta di un Logger)
+   * Nome: `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (in quanto si tratta di un logger)
 
       Dove `<*identifier*>` viene sostituito da testo libero che è necessario immettere per identificare l’istanza (non è possibile omettere tali informazioni).
 
