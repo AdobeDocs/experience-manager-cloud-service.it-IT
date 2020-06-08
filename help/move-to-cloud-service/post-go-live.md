@@ -23,7 +23,7 @@ Sono disponibili i seguenti strumenti per la risoluzione dei problemi relativi a
 
 ## Console per sviluppatori {#developer-console}
 
-Il debug di AEM come ambienti per sviluppatori di servizi cloud è disponibile in Developer Console per gli ambienti di sviluppo, fase e produzione.
+Il debug di AEM come ambienti per sviluppatori di servizi cloud è disponibile nella console per sviluppatori per ambienti di sviluppo, fase e produzione.
 
 Fate riferimento a [Implementazione per AEM come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) cloud per ulteriori informazioni sugli strumenti di sviluppo.
 
