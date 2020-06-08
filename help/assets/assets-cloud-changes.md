@@ -3,6 +3,9 @@ title: Notevoli modifiche in Risorse Adobe Experience Manager come servizio clou
 description: Notevoli modifiche alle risorse Adobe Experience Manager nel servizio AEM Cloud rispetto ad Adobe Experience Manager 6.5.
 translation-type: tm+mt
 source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 4%
 
 ---
 
