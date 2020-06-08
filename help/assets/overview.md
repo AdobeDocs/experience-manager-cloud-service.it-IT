@@ -4,6 +4,9 @@ description: Novità in Assets as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '479'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 Adobe Experience Manager Assets as a Cloud Service offre alle aziende una soluzione PaaS nativa per il cloud, che consente non solo di eseguire le operazioni di gestione delle risorse digitali e di contenuti multimediali dinamici con velocità ed impatto, ma anche di utilizzare funzionalità intelligenti di nuova generazione, come l’AI/ML, direttamente da un sistema sempre attuale, sempre disponibile e sempre in grado di apprendere.
 
-L&#39;assimilazione simultanea di molte risorse o risorse complesse richiede molte risorse per un&#39;istanza di AEM Author. L’istanza principale utilizza notevoli risorse CPU, memoria e I/O quando vengono aggiunte, elaborate o persino trasferite risorse. Tali problemi di prestazioni influiscono sull’esperienza di authoring e navigazione degli utenti finali.
+L&#39;assimilazione simultanea di molte risorse o risorse complesse richiede molte risorse per un&#39;istanza di AEM Author. L’istanza principale utilizza una quantità considerevole di risorse CPU, memoria e I/O quando vengono aggiunte, elaborate o persino trasferite risorse. Tali problemi di prestazioni influiscono sull’esperienza di authoring e navigazione degli utenti finali.
 
 Le aziende richiedono il supporto di un&#39;ampia varietà di formati di file e risoluzioni di contenuti per casi di utilizzo multidispositivo, geografia e multilingue. L&#39;elaborazione delle risorse e i requisiti di storage richiedono risorse e funzionalità che possono sovraccaricare una soluzione tradizionale. A volte, le limitazioni tecniche dell&#39;elaborazione delle risorse non danno i risultati desiderati e in altri casi il costo dello storage rappresenta un ostacolo ai margini di profitto.
 
