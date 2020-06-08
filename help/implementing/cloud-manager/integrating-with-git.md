@@ -3,6 +3,9 @@ title: Integrazione con Git
 description: Integrazione con Git - Servizi cloud
 translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 2%
 
 ---
 
@@ -59,7 +62,7 @@ Sincronizzate i tag delle versioni rilasciate da un repository Git di Cloud Mana
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 
-## Additional Resources {#additional-resources}
+## Risorse aggiuntive {#additional-resources}
 
 * [Risorse GitHub](https://try.github.io)
 * [Esercitazioni Git Atlassian](https://www.atlassian.com/git/tutorials/what-is-version-control)
