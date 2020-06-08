@@ -4,6 +4,9 @@ description: Risorse AEM ottimizza le prestazioni completando in modo asincrono 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '677'
+ht-degree: 9%
 
 ---
 
@@ -83,7 +86,7 @@ Risorse AEM esegue ogni giorno un processo di eliminazione alle 1:00 per elimina
 
 ## Configurazione delle soglie per l&#39;elaborazione asincrona {#configuring-thresholds-for-asynchronous-processing}
 
-Puoi configurare il numero di soglia di risorse o riferimenti per Risorse AEM per elaborare una determinata operazione in modo asincrono.
+Puoi configurare il numero di soglia di risorse o riferimenti per Risorse AEM per l’elaborazione asincrona di una determinata operazione.
 
 ### Configurazione delle soglie per le operazioni di eliminazione asincrone {#configuring-thresholds-for-asynchronous-delete-operations}
 
