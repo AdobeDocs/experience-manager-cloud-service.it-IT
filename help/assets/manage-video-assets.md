@@ -4,6 +4,9 @@ description: Scoprite come caricare, visualizzare in anteprima, annotare e pubbl
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 9%
 
 ---
 
