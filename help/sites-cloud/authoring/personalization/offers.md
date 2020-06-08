@@ -3,6 +3,9 @@ title: Creazione e gestione delle offerte
 description: Usa la console Offerte per creare offerte da utilizzare in più esperienze.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 93%
 
 ---
 
@@ -22,7 +25,7 @@ Crea un marchio a cui le offerte vengono associate. Apri un marchio nella consol
 
 Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato anche nella [console Attività](/help/sites-cloud/authoring/personalization/activities.md), dove puoi aggiungere e amministrare le attività per il marchio.
 
-1. Nella console Navigazione, tocca o fai clic su **Personalizzazione** > **Offerte**.
+1. Fai clic o tocca **Personalizzazione** > **Offerte** nella console di navigazione.
 
    ![Passaggio alla console Offerte](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
