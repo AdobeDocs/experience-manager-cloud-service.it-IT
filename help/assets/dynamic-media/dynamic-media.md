@@ -3,11 +3,14 @@ title: Utilizzo di Dynamic Media
 description: Scoprite come utilizzare i contenuti multimediali dinamici per distribuire risorse da utilizzare su siti Web, mobili e social network.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 28%
 
 ---
 
 
-# Utilizzo di elementi multimediali dinamici {#working-with-dynamic-media}
+# Utilizzo di Dynamic Media {#working-with-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) permette di fornire on-demand risorse visive di marketing e merchandising, ridimensionandole automaticamente per siti web, dispositivi mobili e piattaforme social. Grazie a un insieme di risorse mastro, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale tramite la propria rete con prestazioni ottimizzate, scalabile e globale.
 
@@ -23,7 +26,7 @@ Dynamic Media consente di gestire le risorse prima di pubblicarle. Come lavorare
 
 Le funzioni solo per elementi multimediali dinamici includono quanto segue:
 
-* [Banner carosello](carousel-banners.md)
+* [Banner a carosello](carousel-banners.md)
 * [Set di immagini](image-sets.md)
 * [Immagini interattive](interactive-images.md)
 * [Video interattivi](interactive-videos.md)
@@ -71,7 +74,7 @@ I set di immagini, set 360 gradi e set di file multimediali diversi sono disponi
 
 ### Rappresentazioni PTIFF {#ptiff-renditions}
 
-Le risorse multimediali dinamiche includono `pyramid.tiffs`.
+Le risorse abilitate per i contenuti multimediali dinamici includono `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
