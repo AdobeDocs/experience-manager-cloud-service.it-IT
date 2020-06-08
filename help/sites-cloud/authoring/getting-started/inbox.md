@@ -1,9 +1,9 @@
 ---
 title: Casella in entrata
 description: Gestione delle attività con la casella in entrata
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -92,6 +92,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
    * **Raggruppa per**
    * **Pianificazione** o **Nessuna**
    * **Dimensioni scheda**
+
    ![Casella in entrata - Impostazioni della vista calendario](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Vista a elenco**
@@ -100,6 +101,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
    * **Ordina per**
    * **Ordinamento**
+
    ![Casella in entrata - Impostazioni della vista a elenco](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
    Puoi anche delegare il calendario ad altri utenti, nonché richiedere la delega ad altri utenti e gestire le tue deleghe.
@@ -128,6 +130,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
    * **Indietro** per tornare a un passaggio precedente
    * Visualizzazione del payload di un flusso di lavoro
    * Creazione di un progetto dall’elemento
+
    >[!NOTE]
    >
    >Per ulteriori informazioni, consulta:
@@ -140,6 +143,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
    * Verrà aperta la finestra di dialogo relativa all’azione
    * Verrà avviata una Action Wizard
    * Verrà aperta una pagina della documentazione
+
    Ad esempio, selezionando **Delega** viene aperta una finestra di dialogo:
 
    ![Delega di un’attività della casella in entrata](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
@@ -168,11 +172,13 @@ Dalla casella in entrata è possibile creare le attività:
       * **Priorità attività**
       * **Data iniziale**
       * **Data di scadenza**
+
    ![Casella in entrata - Aggiunta di un’attività](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **Avanzate**
 
       * **Nome**: viene utilizzato per formare l’URL; se questo campo viene lasciato vuoto, verrà basato sul valore del campo **Titolo**.
+
    ![Casella in entrata - Opzioni avanzate per l’aggiunta di un’attività](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. Seleziona **Invia**.
