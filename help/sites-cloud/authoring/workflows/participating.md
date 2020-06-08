@@ -3,6 +3,9 @@ title: Partecipare ai Flussi di lavoro
 description: I flussi di lavoro generalmente includono passaggi che richiedono di eseguire un’attività in una pagina o una risorsa.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 72%
 
 ---
 
@@ -20,7 +23,7 @@ I flussi di lavoro generalmente includono passaggi che richiedono di eseguire un
 
 ## Notifiche delle Azioni disponibili per il Flusso di lavoro {#notifications-of-available-workflow-actions}
 
-Quando ti viene assegnato un elemento di lavoro (ad esempio **Approva contenuto**) vengono visualizzati vari avvisi e/o notifiche:
+Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto**) vengono visualizzati diversi avvisi e/o notifiche:
 
 * L&#39;indicatore di [notifica](/help/sites-cloud/authoring/getting-started/inbox.md) (barra degli strumenti) indica un numero incrementato di uno:
 
@@ -33,7 +36,7 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio **Approva contenuto*
 * Quando utilizzi l&#39;Editor pagina, la barra di stato mostra:
    * Il nome dei flussi di lavoro applicati alla pagina, come ad esempio Richiedi attivazione.
    * Qualsiasi azione disponibile per l&#39;utente nella fase corrente del flusso di lavoro, per esempio: Completa, Delega, Visualizza dettagli.
-   * Il numero di flussi di lavoro a cui è soggetta la pagina. È possibile:
+   * Il numero di flussi di lavoro a cui è soggetta la pagina. Operazioni disponibili:
       * utilizzare la freccia sinistra/destra per navigare tra le informazioni di stato dei vari flussi di lavoro.
       * fare clic/toccare il numero totale per aprire un elenco a discesa di tutti i flussi di lavoro applicabili e quindi selezionare il flusso di lavoro che si desidera visualizzare nella barra di stato.
    ![Pagina con più flussi di lavoro](/help/sites-cloud/authoring/assets/workflows-multiple.png)
