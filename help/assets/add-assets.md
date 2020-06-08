@@ -3,6 +3,9 @@ title: Aggiungere le risorse digitali ad Adobe Experience Manager
 description: Aggiungere le risorse digitali ad Adobe Experience Manager come servizio Cloud
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '1354'
+ht-degree: 3%
 
 ---
 
@@ -34,6 +37,7 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli nell
 
    * Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Crea]** . Quindi, dal menu, toccate **[!UICONTROL File]**. Se necessario, potete rinominare il file nella finestra di dialogo visualizzata.
    * In un browser che supporta HTML5, trascinate le risorse direttamente sull’interfaccia utente di Risorse. La finestra di dialogo per rinominare il file non viene visualizzata.
+
    ![create_menu](assets/create_menu.png)
 
    Per selezionare più file, premete il tasto Ctrl o Comando e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
