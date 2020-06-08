@@ -1,8 +1,11 @@
 ---
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+workflow-type: tm+mt
+source-wordcount: '1492'
+ht-degree: 100%
 
 ---
 
@@ -176,7 +179,7 @@ Per creare un frammento esperienza:
 
    ![Proprietà dei frammenti esperienza](/help/sites-cloud/authoring/assets/xf-04.png)
 
-1. Fai clic su **Crea**. 
+1. Fai clic su **Crea**.
 
    Viene visualizzato un messaggio. Seleziona:
 
@@ -216,7 +219,7 @@ Puoi creare diverse varianti per un Frammento esperienza a seconda delle tue esi
 
 1. **Crea** ti consente di creare:
 
-   * **Variante**
+   * **Variazione**
    * **Variante come Live Copy**.
 
 1. Definisci le proprietà richieste:
