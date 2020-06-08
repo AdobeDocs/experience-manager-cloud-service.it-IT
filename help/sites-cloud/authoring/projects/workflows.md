@@ -3,6 +3,9 @@ title: Utilizzo dei flussi di lavoro per i progetti
 description: La soluzione offre diversi flussi di lavoro per progetti già pronti all’uso.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 78%
 
 ---
 
@@ -53,7 +56,7 @@ Questa sezione descrive i flussi di lavoro disponibili per Progetti.
 
 Questo flusso di lavoro consente di richiedere un manoscritto ad un utente, e poi approvarlo. Per avviare il flusso di lavoro Richiedi copia:
 
-1. Vai su Progetto multimediale e seleziona il simbolo **+** nella sezione **Flussi di lavoro**, poi fai clic su **Flusso di lavoro Richiedi copia**.
+1. Nel progetto Media, seleziona il segno **+** nella sezione **Flussi di lavoro** e fai clic su **Request Copy Workflow (Richiedi copia flusso di lavoro)**.
 1. Immetti il titolo del manoscritto e un breve riassunto della tua richiesta. Se necessario, puoi immettere il numro delle parole di destinazione, impostare la priorità e la scadenza.
 
    ![Richiedi copia, flusso di lavoro](/help/sites-cloud/authoring/assets/projects-request-copy.png)
@@ -79,13 +82,13 @@ Nel flusso di lavoro di approvazione progetto, assegni i contenuti ad un utente,
 
 Questo flusso di lavoro consente di richiedere un lancio.
 
-1. Vai su Progetto semplice e seleziona il simbolo **+** nella sezione **Flussi di lavoro**, poi fai clic su **Flusso di lavoro Richiesta lancio**.
+1. Nel progetto Semplice, seleziona il segno **+** nella sezione **Flussi di lavoro** e fai clic su **Request Launch Workflow (Richiedi flusso di lavoro di Launch)**.
 1. Inserisci un titolo per il lancio e inserisci il percorso origine del lancio. Se necessario, puoi anche aggiungere una descrizione e una data di inizio. Seleziona Eredita i dati live della pagina sorgente o Escludi pagine secondarie, a seconda di come vuoi che si comporti il lancio.
 
    ![Richiesta avvio](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. Fai clic su **Crea**. Il flusso di lavoro inizia. **Il flusso di lavoro viene visualizzato nell&#39;elenco** Flussi **di lavoro (fate clic su ellissi**... nella sezione **Flussi** di lavoro per accedere a questo elenco).
+1. Fai clic su **Crea**. Il flusso di lavoro inizia. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
 
 ## Flusso di lavoro Crea (e traduci) copia per lingua per le risorse {#create-and-translate-language-copy-workflow-for-assets}
 
-The **Create Language Copy** and the **Create and Translate Language Copy** workflows are covered in detail in creating language copies for assets.
+I flussi di lavoro **Crea copia per lingua** e **Crea e traduci copia lingua** sono descritti in modo dettagliato nella creazione di copie in lingua per le risorse.
