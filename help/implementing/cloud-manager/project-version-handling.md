@@ -1,20 +1,23 @@
 ---
-title: Gestione delle versioni del progetto Maven
+title: Gestione delle versioni dei progetti Maven
 description: Gestione delle versioni del progetto Maven - Servizi cloud
 translation-type: tm+mt
 source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 6%
 
 ---
 
 
-# Gestione delle versioni del progetto Maven {#maven-project-version-handling}
+# Gestione delle versioni dei progetti Maven {#maven-project-version-handling}
 
 
-## Comprendere la gestione della versione del progetto di corvo {#understanding-project-version}
+## Understanding Maven Project Version Handling {#understanding-project-version}
 
 Per le distribuzioni di fase e produzione, Cloud Manager genera una versione univoca e incrementale.
 
-Questa versione viene visualizzata nella pagina dei dettagli di esecuzione della pipeline e nella pagina dell&#39;attività. Quando viene eseguita una build, il progetto Maven viene aggiornato per utilizzare questa versione e viene creato un tag nel repository git con quella versione come nome.
+Questa versione viene visualizzata sia nella pagina dei dettagli di esecuzione della pipeline che nella pagina dell&#39;attività. Quando viene eseguita una build, il progetto Maven viene aggiornato per utilizzare questa versione e viene creato un tag nel repository git con quella versione come nome.
 
 Se la versione del progetto originale soddisfa determinati criteri, la versione aggiornata del progetto Maven unirà sia la versione del progetto originale che la versione generata da Cloud Manager. Tuttavia, il tag utilizza sempre la versione generata. Affinché l&#39;unione avvenga, la versione originale del progetto deve essere formata con esattamente tre segmenti di versione, ad esempio 1.0.0 o 1.2.3, ma non 1.0 o 1, e la versione originale non deve terminare con -SNAPSHOT.
 
