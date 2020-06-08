@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager as a Cloud Service e le linee guida per l’accessibilità dei contenuti web
 description: Introduzione ad Adobe Experience Manager as a Cloud Service e linee guida per l’accessibilità dei contenuti web
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
