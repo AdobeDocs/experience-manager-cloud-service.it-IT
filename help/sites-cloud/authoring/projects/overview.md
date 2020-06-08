@@ -3,6 +3,9 @@ title: Progetti
 description: I progetti consentono di raggruppare le risorse in un’entità con ambiente comune e condiviso, che semplifica la gestione dei progetti
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1269'
+ht-degree: 78%
 
 ---
 
@@ -24,7 +27,7 @@ Come utente, puoi effettuare le seguenti operazioni:
 
 Consulta i seguenti argomenti aggiuntivi:
 
-* [Gestione di progetti](/help/sites-cloud/authoring/projects/managing.md)
+* [Gestione dei progetti](/help/sites-cloud/authoring/projects/managing.md)
 * [Utilizzo delle attività](/help/sites-cloud/authoring/projects/tasks.md)
 * [Utilizzo dei flussi di lavoro del progetto](/help/sites-cloud/authoring/projects/workflows.md)
 
@@ -57,7 +60,7 @@ Da Progetti, è possibile associare diversi tipi di informazioni ai progetti. Qu
 * Lanci
 * Attività
 
-### Risorse {#assets}
+### Assets {#assets}
 
 Nella sezione **Risorse**, puoi raccogliere tutte le risorse usate per un particolare progetto.
 
@@ -81,7 +84,7 @@ La sezione **Esperienze** consente di aggiungere un’applicazione per dispositi
 
 ![Esperienze](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Le icone indicano il tipo di esperienza rappresentato: sito web, applicazione mobile o pubblicazione. Aggiungi le esperienze facendo clic sul segno + o facendo clic su **Aggiungi esperienza** e selezionando il tipo di esperienza.
+Le icone indicano quale tipo di esperienza è rappresentata: sito web, app mobile o pubblicazione. Aggiungi le esperienze facendo clic sul segno + o su **Aggiungi esperienza** e selezionandone il tipo.
 
 ![Aggiunta di un&#39;esperienza](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -168,7 +171,7 @@ I diversi ruoli dell’utente vengono impostati in un Modello di progetto e veng
 
 Tutti i progetti supportano i seguenti ruoli predefiniti per consentire all’utente di amministrare le autorizzazioni di controllo e protezione:
 
-| Ruolo | Descrizione | Autorizzazioni | Iscrizione al gruppo |
+| Ruolo | Descrizione | Autorizzazioni  | Iscrizione al gruppo |
 |---|---|---|---|
 | Osservatore | Un utente con questo ruolo può visualizzare le informazioni di progetto, tra cui lo stato del progetto. | Autorizzazioni di sola lettura per un progetto | `workflow-users` gruppo |
 | Editor | Un utente con questo ruolo può caricare e modificare il contenuto di un progetto. | Accesso in lettura e scrittura a un progetto, metadati associati e risorse correlate; privilegi per caricare un elenco di riprese, scattare foto e rivedere e approvare le risorse; autorizzazione scritta su /etc/commerce; modifica l&#39;autorizzazione per un progetto specifico | gruppo degli utenti del flusso di lavoro |
@@ -176,4 +179,4 @@ Tutti i progetti supportano i seguenti ruoli predefiniti per consentire all’ut
 
 >[!NOTE]
 >
->Quando crei il progetto e aggiungi utenti ai vari ruoli, vengono creati automaticamente dei gruppi associati al progetto per gestire le relative autorizzazioni. Ad esempio, un progetto denominato Myproject avrebbe tre gruppi **Proprietari di Myproject**, **Editor di Myproject**, **Osservatori di Myproject**. la sua eliminazione non comporta tuttavia l’eliminazione automatica dei gruppi presenti. I gruppi devono essere eliminati manualmente da un amministratore in **Strumenti** > **Protezione** > **Gruppi**.
+>Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. Un amministratore deve eliminare manualmente i gruppi da **Strumenti** > **Protezione** > **Gruppi**.
