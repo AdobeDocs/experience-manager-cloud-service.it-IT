@@ -3,6 +3,9 @@ title: Configurare la pipeline CI/CD - Servizi cloud
 description: Configurare la pipeline CI/CD - Servizi cloud
 translation-type: tm+mt
 source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 3%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ## Informazioni sul flusso {#understanding-the-flow}
 
-Puoi configurare la tubazione dalla sezione Impostazioni **** tubazione nell’interfaccia utente di [!UICONTROL Cloud Manager] .
+Puoi configurare la pipeline dalla sezione **Pipeline Settings (Impostazioni pipeline)** dell’interfaccia utente di [!UICONTROL Cloud Manager].
 
 Gestione distribuzione è responsabile della configurazione della pipeline. In questo caso, selezionate prima un ramo dall&#39;archivio **Git**.
 
@@ -26,7 +29,7 @@ Per configurare la pipeline, l&#39;utente deve:
 
 >[!CAUTION]
 >
->La pipeline non può essere impostata finché non viene completata la creazione di un programma e il repository Git ha almeno un ramo.
+>La pipeline non può essere impostata finché non viene completata la creazione di un programma e l&#39;archivio Git ha almeno un ramo.
 
 Prima di iniziare a distribuire il codice, devi configurare le impostazioni della pipeline da [!UICONTROL Cloud Manager].
 
@@ -34,7 +37,7 @@ Prima di iniziare a distribuire il codice, devi configurare le impostazioni dell
 >
 >È possibile modificare le impostazioni della pipeline dopo la configurazione iniziale.
 
-## Configurazione delle impostazioni della pipeline da [!UICONTROL Cloud Manager]{#configuring-the-pipeline-settings-from-cloud-manager}
+## Configurazione delle impostazioni della pipeline da [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
 
 Dopo aver configurato il programma e disporre di almeno un ambiente utilizzando l&#39;interfaccia utente di [!UICONTROL Cloud Manager] , potete configurare la pipeline di distribuzione.
 
@@ -52,7 +55,7 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
 
    ![](assets/set-up-pipeline3.png)
 
-   È possibile definire il trigger per avviare la pipeline:
+   È possibile definire l&#39;attivatore per avviare la pipeline:
 
    * **Manuale** : l&#39;utilizzo dell&#39;interfaccia utente consente di avviare manualmente la pipeline.
    * **Su modifiche** Git - avvia la pipeline CI/CD ogni volta che vengono aggiunti impegni al ramo git configurato. Anche se selezionate questa opzione, potete sempre avviare la pipeline manualmente.
@@ -96,7 +99,7 @@ Nella schermata iniziale, queste condotte sono elencate in una nuova scheda:
 
    * **Modifica** : consente di modificare le impostazioni della pipeline
    * **Genera** : consente di passare alla pagina di esecuzione dalla quale è possibile eseguire la pipeline
-   * **Gestione Git** : consente all&#39;utente di ottenere le informazioni necessarie per accedere al repository Git di Cloud Manager
+   * **Gestione Git** : consente all&#39;utente di ottenere le informazioni necessarie per accedere all&#39;archivio Git di Cloud Manager
 
 ## Passaggi successivi {#the-next-steps}
 
