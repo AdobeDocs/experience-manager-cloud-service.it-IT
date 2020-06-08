@@ -1,8 +1,11 @@
 ---
-title: Esportazione in formato CSV
+title: 'Esportazione in formato CSV  '
 description: Esporta informazioni sulle pagine in un file CSV sul sistema locale
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 100%
 
 ---
 
