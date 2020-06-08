@@ -3,6 +3,9 @@ title: Implementazione di un connettore AEM
 description: Implementazione di un connettore AEM
 translation-type: tm+mt
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+workflow-type: tm+mt
+source-wordcount: '964'
+ht-degree: 9%
 
 ---
 
@@ -10,7 +13,7 @@ source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
 Implementazione di un connettore AEM
 =============================
 
-Di seguito sono riportati alcuni riferimenti utili per la creazione di connettori [](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) AEM, che devono essere letti insieme a indicazioni per l&#39; [invio](submit.md) e la [manutenzione](maintain.md) dei connettori.
+Di seguito sono riportati alcuni riferimenti utili per la creazione di [connettori AEM](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html), che devono essere letti insieme alle indicazioni relative all’[invio](submit.md) e alla [manutenzione](maintain.md) dei connettori.
 
 È possibile ottenere una licenza Developer per AEM tramite il programma [](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html)Adobe Exchange.
 
@@ -45,7 +48,7 @@ Oltre alla documentazione statica di cui sopra, Adobe e la community di AEM offr
 
 * Il forum [](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) AEM della community di Adobe è un sito attivo in cui i colleghi possono porre domande e rispondere a tali domande
 * Risorse tecniche Adobe aggiuntive sono disponibili a determinati livelli di partner. Ulteriori informazioni sul programma [](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html)Adobe Exchange.
-* Se l&#39;azienda desidera ricevere assistenza nell&#39;implementazione, può consultare il team di Adobe [Professional Services](http://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) o consultare il [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) per un elenco dei partner Adobe in tutto il mondo
+* Se la tua azienda desidera ricevere assistenza nell’implementazione, può consultare il team [Servizi professionali](http://www.adobe.com/it/experience-cloud/consulting-services.html) di Adobe o consultare [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) per ottenere un elenco dei partner Adobe presenti in tutto il mondo
 
 Regole di struttura del pacchetto
 -----------------------
@@ -55,13 +58,13 @@ Per supportare distribuzioni continue, AEM come pacchetti di servizi cloud, di c
 * `/apps`
 * `/content` e `/conf`
 
-I connettori devono attenersi alle presenti linee guida sugli imballaggi descritte in [questo articolo](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Anche i connettori esistenti devono essere adattati.
+I connettori devono attenersi alle presenti linee guida sugli imballaggi, descritte in [questo articolo](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Anche i connettori esistenti devono essere adattati.
 
 Inoltre, solo Adobe dovrebbe scrivere il codice in `/libs`, con clienti e partner che scrivono in `/apps`.
 
 I connettori esistenti potrebbero inoltre dover essere reinseriti per spostare qualsiasi configurazione eventualmente inserita `/etc` in altre cartelle di livello superiore, ad esempio `/conf`. Questo è descritto nella documentazione [di](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html)AEM.
 
-Si consiglia di inserire la maggior parte del codice di connessione `/apps/connectors/<vendor>` per promuovere una struttura di repository pulita per i clienti con diversi connettori.
+Si consiglia di inserire la maggior parte del codice di connessione `/apps/connectors/<vendor>` per promuovere una struttura di repository pulita per i clienti che dispongono di diversi connettori.
 
 Configurazioni servizi cloud
 -----------------------------
@@ -84,4 +87,4 @@ Poiché AEM come servizio cloud è una soluzione nativa di Cloud, alcune linee g
 Verifica del connettore AEM
 -------------------------
 
-È necessario creare nuovi connettori (o modificare i connettori esistenti) utilizzando tecniche di sviluppo dell&#39;ambiente locale. Il Partner Team fornirà ai partner ISV un ambiente sandbox in cui implementare il proprio connettore AEM in un’applicazione vaniglia per garantire il funzionamento del sistema.
+È necessario creare nuovi connettori (o modificare i connettori esistenti) utilizzando tecniche di sviluppo dell&#39;ambiente locale. Il Partner Team fornirà ai partner ISV un ambiente sandbox in cui implementare il proprio connettore AEM in un&#39;applicazione vaniglia per assicurarne il funzionamento.
