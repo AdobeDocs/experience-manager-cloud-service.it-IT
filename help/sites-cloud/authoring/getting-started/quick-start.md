@@ -1,8 +1,11 @@
 ---
 title: Guida rapida all’authoring delle pagine
 description: Guida rapida di alto livello per iniziare a creare i contenuti di una pagina
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1585'
+ht-degree: 100%
 
 ---
 
@@ -74,7 +77,7 @@ Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseg
 
 Per [creare una nuova pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
-1. [Passa alla posizione](#finding-your-page) in cui desideri creare la nuova pagina.
+1. [Passa alla posizione in cui desideri creare la nuova pagina.](#finding-your-page)
 1. Utilizza l’icona **Crea** e seleziona **Pagina** dall’elenco:
 
    ![Pulsante Crea](/help/sites-cloud/authoring/assets/create.png)
@@ -217,7 +220,7 @@ Esistono due metodi principali per [pubblicare una pagina](/help/sites-cloud/aut
    1. Apri il menu **Informazioni pagina**.
    1. Seleziona **Pubblica pagina**.
 
-* L’annullamento della pubblicazione di una pagina dalla console può essere eseguito solo tramite l’opzione **Gestisci pubblicazione**, disponibile unicamente nella barra degli strumenti (non tramite le azioni rapide).
+* L’annullamento della pubblicazione di una pagina dalla console può essere eseguito solo tramite l’opzione **Gestisci pubblicazione**, disponibile solamente nella barra degli strumenti (non tramite le azioni rapide).
 
    ![Pulsante Gestisci pubblicazione](/help/sites-cloud/authoring/assets/manage-publication.png)
 
@@ -230,7 +233,7 @@ Esistono due metodi principali per [pubblicare una pagina](/help/sites-cloud/aut
 Queste azioni possono essere attivate da:
 
 1. [Passa alla pagina](#finding-your-page) da spostare, copiare e incollare o eliminare.
-1. Seleziona l’icona Copia (e quindi Incolla), Sposta o Elimina secondo necessità utilizzando:
+1. Seleziona l’icona Copia (e quindi Incolla), Sposta o Elimina, a seconda delle necessità, utilizzando:
 
    * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa richiesta.
    * La barra degli strumenti, se la [pagina è stata selezionata](#selecting-your-page-for-further-action).
@@ -251,7 +254,7 @@ Queste azioni possono essere attivate da:
 
 ### Blocco della pagina (e successivo sblocco) {#locking-your-page-then-unlocking}
 
-Il [blocco di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) impedisce che altri autori possano lavorare su di essa mentre ci stai lavorando tu stesso. Il pulsante/icona Blocca (e Sblocca) è disponibile nelle seguenti aree:
+[Il blocco di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) non consente ad altri autori di utilizzarla mentre vi lavori. L’icona o il pulsante Blocca (e Sblocca) è disponibile:
 
 * La barra degli strumenti, se la [pagina è stata selezionata](#selecting-your-page-for-further-action).
 * Il [menu a discesa Informazioni pagina](#editing-the-page-properties) durante la modifica di una pagina.
