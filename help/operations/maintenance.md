@@ -3,6 +3,9 @@ title: Attività di manutenzione in AEM come servizio cloud
 description: 'Attività di manutenzione in AEM come servizio cloud '
 translation-type: tm+mt
 source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+workflow-type: tm+mt
+source-wordcount: '892'
+ht-degree: 2%
 
 ---
 
@@ -29,14 +32,14 @@ La tabella seguente illustra le attività di manutenzione disponibili al momento
 | Attività di manutenzione | Chi possiede la configurazione | Come configurare (facoltativo) |
 |---|---|---|
 | Raccolta rifiuti dataStore | Adobe | N/D - interamente di proprietà di Adobe |
-| Pulizia delle versioni | Adobe | Di proprietà di Adobe, ma in futuro i clienti potranno configurare alcuni parametri. |
-| Rimozione registro di controllo | Adobe | Di proprietà di Adobe, ma in futuro i clienti potranno configurare alcuni parametri. |
-| Pulizia binary di Lucene | Adobe | Inutilizzato e quindi disabilitato da Adobe. |
+| Pulizia delle versioni | Adobe | Appartiene interamente ad Adobe, ma in futuro i clienti potranno configurare alcuni parametri. |
+| Rimozione registro di controllo | Adobe | Appartiene interamente ad Adobe, ma in futuro i clienti potranno configurare alcuni parametri. |
+| Pulizia binary di Lucene | Adobe | Inutilizzati e quindi disabilitati da Adobe. |
 | Rimozione attività ad hoc | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione sotto `/libs` e `/apps` con `/conf/global/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra manutenzione riportata di seguito. <br> Attivate l’attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominatelo `granite_TaskPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI consulta la documentazione sulle attività di manutenzione di [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | Svuotamento flusso di lavoro | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione sotto `/libs` e `/apps` con `/conf/global/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra manutenzione riportata di seguito. <br> Attivate l’attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominatelo `granite_WorkflowPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI consulta la documentazione sulle attività di manutenzione di [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | Eliminazione progetti | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione sotto `/libs` e `/apps` con `/conf/global/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra manutenzione riportata di seguito. <br> Attivate l’attività di manutenzione aggiungendo un nodo sotto il nodo sopra (denominatelo `granite_ProjectPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI vedere la documentazione delle attività di manutenzione di [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-I clienti possono pianificare ciascuna delle attività di manutenzione Rimozione flusso di lavoro, Rimozione attività ad hoc e Rimozione progetti da eseguire durante le finestre di manutenzione giornaliera, settimanale o mensile. Queste configurazioni devono essere modificate direttamente nel controllo del codice sorgente. La tabella seguente descrive i parametri di configurazione disponibili per ciascuna finestra.
+I clienti possono pianificare ciascuna delle attività di manutenzione di rimozione dei flussi di lavoro, rimozione delle attività ad hoc e rimozione dei progetti da eseguire durante le finestre di manutenzione giornaliera, settimanale o mensile. Queste configurazioni devono essere modificate direttamente nel controllo del codice sorgente. La tabella seguente descrive i parametri di configurazione disponibili per ciascuna finestra.
 
 <table>
   <tr>
@@ -70,7 +73,7 @@ I clienti possono pianificare ciascuna delle attività di manutenzione Rimozione
     <ul>
     <li><strong>windowSchedule</strong> = settimanale (questo valore non deve essere modificato)</li>
     <li><strong>windowStartTime</strong> = HH:MM che utilizza come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra di manutenzione settimanale devono iniziare a essere eseguite.</li>
-    <li><strong>windowEndTime</strong> = HH:MM che utilizza come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono interrompere l'esecuzione se non sono già state completate.</li>
+    <li><strong>windowEndTime</strong> = HH:MM che utilizza come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono interrompersi se non sono già state completate.</li>
     <li><strong>windowScheduleWeekDays = array di 2 valori da 1 a 7. ad esempio [5,5].</strong> Il primo valore dell'array è il giorno iniziale in cui viene pianificato il processo e il secondo è il giorno finale in cui il processo viene interrotto. L'ora esatta dell'inizio e della fine è regolata rispettivamente da windowStartTime e windowEndTime.</li>
     </ul> </td> 
   </tr>
@@ -79,7 +82,7 @@ I clienti possono pianificare ciascuna delle attività di manutenzione Rimozione
     <td>Cliente</td>
     <td>Definizione nodo JCR</td>
     <td><code>/conf/global/settings/granite/operations/maintenance/granite_monthly</code> (che sostituisce il nodo in <code>/apps</code> e <code>/libs</code>)</td>
-    <td>Cfr. codice di esempio 3</td>
+    <td>Cfr. codice di esempio 3 di seguito</td>
      <td>
     <ul>
     <li><strong>windowSchedule</strong> = Daily (questo valore non deve essere modificato)</li>
