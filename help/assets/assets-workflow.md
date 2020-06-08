@@ -4,6 +4,9 @@ description: Scopri come applicare flussi di lavoro a risorse, cartelle e raccol
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 7%
 
 ---
 
@@ -22,13 +25,13 @@ Per applicare un flusso di lavoro a più risorse, effettuate le seguenti operazi
 1. Fate clic sull’icona AEM e scegliete **[!UICONTROL Timeline]** dal menu per visualizzare la timeline.
 1. Fate clic sull&#39;icona Azioni in basso.
 1. Fate clic su **[!UICONTROL Avvia flusso di lavoro]**.
-1. Nella finestra di dialogo **[!UICONTROL Avvia flusso di lavoro]** , selezionate un modello di workflow dall’elenco.
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 1. (Facoltativo) Specificate un titolo per il flusso di lavoro, che può essere utilizzato per fare riferimento all’istanza del flusso di lavoro.
-1. Fate clic su **[!UICONTROL Avvia]** , quindi fate clic su **[!UICONTROL Conferma]** nella finestra di dialogo. Il flusso di lavoro viene eseguito su tutte le risorse selezionate.
+1. Nella finestra di dialogo, fai clic su **[!UICONTROL Avvia]**, quindi su **[!UICONTROL Conferma]**. Il flusso di lavoro viene eseguito su tutte le risorse selezionate.
 
 ## Applicazione di un flusso di lavoro a più cartelle {#applying-a-workflow-to-multiple-folders}
 
-La procedura per applicare un flusso di lavoro a più cartelle è simile a quella per applicare un flusso di lavoro a più risorse. Seleziona le cartelle nella console Risorse e segui i passaggi indicati.
+La procedura per applicare un flusso di lavoro a più cartelle è simile a quella per applicare un flusso di lavoro a più risorse. Seleziona le cartelle nella console Risorse e segui i passaggi descritti sopra.
 
 ## Applicazione di un flusso di lavoro a una raccolta {#applying-a-workflow-to-a-collection}
 
