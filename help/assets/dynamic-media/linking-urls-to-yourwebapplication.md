@@ -3,13 +3,16 @@ title: Collegamento di URL all’applicazione web
 description: Come collegare gli URL all’applicazione Web in contenuti multimediali dinamici
 translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '1270'
+ht-degree: 11%
 
 ---
 
 
 # Collegamento di URL all’applicazione web {#linking-urls-to-your-web-application}
 
-I siti Web e le applicazioni accedono ai servizi di Dynamic Media mediante chiamate URL. Dopo aver pubblicato una risorsa, Dynamic Media attiva una stringa URL che fa riferimento alla risorsa. Potete incollare questi URL in un browser Web per sottoporli a test.
+I siti Web e le applicazioni accedono ai servizi di Dynamic Media mediante chiamate URL. Dopo la pubblicazione di una risorsa, Dynamic Media attiva una stringa URL che fa riferimento alla risorsa. Potete incollare questi URL in un browser Web per sottoporli a test.
 
 Potete impostare un collegamento agli URL solo se *non* utilizzate AEM come WCM. Il collegamento e l’incorporamento vengono utilizzati per distribuire un lettore video come finestra a comparsa o modale. Se utilizzate AEM come WCM, [potete aggiungere le risorse direttamente sulla pagina.](adding-dynamic-media-assets-to-pages.md)
 
@@ -29,7 +32,7 @@ See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-ass
 
 ## Ottenimento di un URL per una risorsa {#obtaining-a-url-for-an-asset}
 
-Potete ottenere una stringa URL generata da un predefinito per immagini o visualizzatori. Dopo aver copiato l’URL, questo viene inserito negli Appunti ed è quindi possibile incollarlo nelle pagine del sito Web o dell’applicazione.
+Potete ottenere una stringa URL generata da un predefinito per immagini o un predefinito per visualizzatori. Dopo aver copiato l’URL, questo viene inserito negli Appunti ed è quindi possibile incollarlo nelle pagine del sito Web o dell’applicazione.
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ Esistono diversi modi per ottenere una stringa URL. Tuttavia, i passaggi seguent
 
 1. Andate alla risorsa *pubblicata* il cui URL predefinito per immagini o l’URL del predefinito per visualizzatori che desiderate copiare e toccate la risorsa per aprirla.
 
-   Tenete presente che gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito per visualizzatori o immagini.
+   Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito immagine.
 
    Consultate [Pubblicazione delle risorse.](publishing-dynamicmedia-assets.md)
 
@@ -94,7 +97,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
 1. Andate alla risorsa *pubblicata *statica di cui desiderate copiare l&#39;URL e toccate la risorsa per aprirla.
 
-   Tenete presente che gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* della risorsa statica.
+   Remember that URLs are only available to copy *after* you have first *published* the static asset.
 
    Consultate [Pubblicazione delle risorse.](publishing-dynamicmedia-assets.md)
 
@@ -113,8 +116,8 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 ## Ottenimento di un URL video per una rappresentazione video pubblicata {#obtaining-a-video-url-for-a-published-video-rendition}
 
 1. In AEM, passa a **[!UICONTROL Strumenti > Distribuzione > Cloud > Servizi]** cloud.
-1. Nella pagina Servizi **** cloud scorri verso il basso fino all’intestazione Servizi **** Dynamic Media Cloud, quindi tocca **[!UICONTROL Mostra configurazioni]**.
-1. In Configurazioni **** disponibili, toccate il nome della configurazione desiderata.
+1. Nella pagina **[!UICONTROL Cloud Services]**, scorri verso il basso fino all’intestazione **[!UICONTROL Servizi cloud per elementi multimediali dinamici]**, quindi tocca **[!UICONTROL Mostra configurazioni]**.
+1. In **[!UICONTROL Configurazioni disponibili]**, tocca il nome della configurazione desiderata.
 
 1. Nella pagina Impostazioni **[!UICONTROL di]** Dynamic Media Cloud, in URL **[!UICONTROL del servizio]** video, copiate l’intero percorso dell’URL. Sarà necessario che il percorso dell’URL copiato venga completato più avanti nei passaggi descritti.
 
@@ -122,9 +125,9 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (il percorso precedente è solo a scopo illustrativo; non è il percorso effettivo che copiate.
+   (il percorso precedente è solo a scopo illustrativo; non è il percorso effettivo che copiate.)
 
-1. In ID **** registrazione, copiate il nome cliente nell’ultima parte dell’ID.
+1. In **[!UICONTROL ID registrazione]**, copia il nome del cliente indicato nell’ultima parte dell’ID.
 
    Ad esempio, se l’ID di registrazione era `87654321|MyCompany`, il nome del cliente sarebbe `MyCompany`.
 
@@ -135,9 +138,9 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (il percorso precedente è solo a scopo illustrativo; non è il percorso effettivo che copiate.
+   (il percorso precedente è solo a scopo illustrativo; non è il percorso effettivo che copiate.)
 
-1. Disporre le informazioni copiate nel seguente ordine per formare un percorso URL completo:
+1. Disporre le informazioni copiate nel seguente ordine in modo da formare un percorso URL completo:
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
@@ -150,16 +153,16 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 ## Ottenimento di un URL video per lo streaming adattivo (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. In AEM, passa a **[!UICONTROL Strumenti > Distribuzione > Cloud > Servizi]** cloud.
-1. Nella pagina Servizi **** cloud scorri verso il basso fino all’intestazione Servizi **** Dynamic Media Cloud, quindi tocca **[!UICONTROL Mostra configurazioni]**.
-1. In Configurazioni **** disponibili, toccate il nome della configurazione desiderata.
+1. Nella pagina **[!UICONTROL Cloud Services]**, scorri verso il basso fino all’intestazione **[!UICONTROL Servizi cloud per elementi multimediali dinamici]**, quindi tocca **[!UICONTROL Mostra configurazioni]**.
+1. In **[!UICONTROL Configurazioni disponibili]**, tocca il nome della configurazione desiderata.
 1. Nella pagina Impostazioni **[!UICONTROL servizi]** Dynamic Media Cloud, effettua le seguenti operazioni:
 
    * In URL **[!UICONTROL del servizio]** video, copiate l’intero percorso dell’URL. Successivamente, in questi passaggi, sarà necessario copiare il percorso URL. Ad esempio, il percorso dell’URL potrebbe essere simile al seguente:
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (il percorso precedente è solo a scopo illustrativo; non è il percorso effettivo che copiate.
+   (il percorso precedente è solo a scopo illustrativo; non è il percorso effettivo che copiate.)
 
-   * In ID **** registrazione, copiate il nome cliente nell’ultima parte dell’ID. Successivamente, in questi passaggi, sarà necessario copiare il nome del cliente.
+   * In **[!UICONTROL ID registrazione]**, copia il nome del cliente indicato nell’ultima parte dell’ID. Il nome del cliente così copiato sarà necessario nei passaggi seguenti.
 
       Ad esempio, se l’ID di registrazione era `87654321|demoCo`il nome cliente copiato sarebbe `demoCo`.
 
@@ -185,7 +188,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
 1. Copiate il percorso completo della risorsa video in AEM, come elaborato da Contenuti multimediali dinamici. Questo percorso di risorse video copiato sarà necessario più avanti nei seguenti passaggi.
 
-   Esempio:
+   Ad esempio:
 
    `/content/dam/marketing/MyVideo.mp4`
 
