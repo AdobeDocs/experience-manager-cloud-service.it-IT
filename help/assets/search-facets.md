@@ -249,7 +249,7 @@ Analogamente al modo in cui aggiungete un predicato Proprietà o un predicato Op
   </tr>
   <tr>
    <td><p>Dimensione file</p> </td>
-   <td><p>Cercare un predicato per cercare le risorse in base alla loro dimensione. Si tratta di un predicato basato su silder in cui potete selezionare le opzioni del cursore da un nodo configurabile. Le opzioni predefinite sono definite in /libs/dam/options/predicates/filesize nel repository CRX. Le dimensioni del file sono espresse in byte.</p> </td>
+   <td><p>Cercare un predicato per cercare le risorse in base alla loro dimensione. Si tratta di un predicato basato su silder in cui potete selezionare le opzioni del cursore da un nodo configurabile. Le opzioni predefinite sono definite in /libs/dam/options/predicates/filesize nel repository CRX. La dimensione del file è specificata in byte.</p> </td>
    <td>
     <ul>
      <li>Etichetta</li>
