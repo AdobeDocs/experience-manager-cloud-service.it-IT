@@ -3,6 +3,9 @@ title: Profili video
 description: Gli elementi multimediali dinamici dispongono già di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Potete anche aggiungere ritaglio avanzato ai video.
 translation-type: tm+mt
 source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
+workflow-type: tm+mt
+source-wordcount: '3676'
+ht-degree: 20%
 
 ---
 
@@ -267,7 +270,7 @@ Potete modificare un profilo di codifica video esistente per sfruttare i paramet
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Il numero target di fotogrammi tra i fotogrammi chiave. Calcolate questo valore per generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l’intervallo del fotogramma chiave dovrebbe essere compreso tra 60 e 300.<br /> Intervalli <br /> inferiori dei fotogrammi chiave migliorano la ricerca del flusso e il comportamento di commutazione del flusso per le codifiche video adattive e possono anche migliorare la qualità dei video con molto movimento. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore in genere riduce la qualità video complessiva a un dato bitrate.</td>
+   <td>Il numero target di fotogrammi tra i fotogrammi chiave. Calcolate questo valore per generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l’intervallo del fotogramma chiave dovrebbe essere compreso tra 60 e 300.<br /> <br /> Intervalli di fotogrammi chiave più bassi migliorano la ricerca del flusso e il comportamento di commutazione del flusso per le codifiche video adattive e possono anche migliorare la qualità dei video con molto movimento. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore in genere riduce la qualità video complessiva a un dato bitrate.</td>
    <td><code>String</code></td>
    <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per HLS (HTTP Live Streaming) è 60-90.</p> </td>
   </tr>
