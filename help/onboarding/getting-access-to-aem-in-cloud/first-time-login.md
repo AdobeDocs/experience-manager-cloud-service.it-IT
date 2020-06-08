@@ -3,6 +3,9 @@ title: Accesso iniziale - Servizio Cloud
 description: Accesso iniziale - Servizio Cloud
 translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ La pagina di destinazione vi invita a creare il primo programma, come illustrato
    I programmi inclusi nel servizio Cloud sono indicati dal sottotitolo **Experience Manager Cloud** (a differenza dei programmi **Experience Manager** per AMS).
 
    >[!NOTE]
-   >Ad esempio, nella figura precedente, **We.Retail Global** è un programma AMS e **We.Retail-Prod Program - Prod** è un programma disponibile tramite Cloud Service.
+   >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
 
 1. Per informazioni su come aggiungere un programma dalla schermata **Programmi e prodotti** per creare un nuovo programma in Cloud Service, consulta [Creazione di un programma](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
 
