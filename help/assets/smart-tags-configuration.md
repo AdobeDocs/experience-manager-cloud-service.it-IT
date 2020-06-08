@@ -63,7 +63,7 @@ Alla scadenza del certificato non è più attendibile. Per aggiungere un nuovo c
 1. Individuate e fate clic su **[!UICONTROL dam-update-service]** user. Fate clic sulla scheda **[!UICONTROL Keystore]** .
 1. Eliminate l&#39;archivio di chiavi di ricerca **[!UICONTROL per]** similarità esistente con il certificato scaduto. Click **[!UICONTROL Save &amp; Close]**.
 
-   ![Per aggiungere un nuovo certificato di protezione, eliminate la voce di ricerca per similarità esistente in Keystore](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![Per aggiungere un nuovo certificato di protezione, eliminate una voce di ricerca per similarità in Keystore](assets/smarttags_delete_similaritysearch_keystore.png)
 
    *Figura: Eliminate la`similaritysearch`voce esistente in Keystore per aggiungere un nuovo certificato di protezione.*
 
