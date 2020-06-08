@@ -5,6 +5,9 @@ description: Questa pagina descrive come accedere e gestire l’archivio Git.
 seo-description: Segui questa pagina per apprendere come accedere e gestire il repository Git.
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 7%
 
 ---
 
