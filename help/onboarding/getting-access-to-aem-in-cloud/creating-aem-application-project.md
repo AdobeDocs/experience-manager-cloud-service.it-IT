@@ -3,24 +3,27 @@ title: Progetto di applicazione AEM - Servizio cloud
 description: Progetto di applicazione AEM - Servizio cloud
 translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '1184'
+ht-degree: 11%
 
 ---
 
 
-# Creating an AEM Application Project {#aem-application-project}
+# Creazione di un progetto di applicazione AEM {#aem-application-project}
 
 ## Utilizzo della procedura guidata per creare un progetto di applicazione AEM {#using-wizard-to-create-an-aem-application-project}
 
-Per aiutare a far iniziare i nuovi clienti, Cloud Manager è ora in grado di creare un progetto AEM minimo come punto di partenza. Questo processo è basato sul tipo di archivio del progetto [**AEM **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+Per iniziare a rivolgerti ai nuovi clienti, Cloud Manager è ora in grado di creare un progetto AEM minimo come punto di partenza. Questo processo è basato sul tipo di archivio del progetto [**AEM **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
 Per creare un progetto di applicazione AEM in Cloud Manager, procedi come segue:
 
-1. Una volta effettuato l&#39;accesso a Cloud Manager e la configurazione del programma di base è completa, nella schermata **Panoramica** verrà visualizzata una speciale chiamata alla scheda azione, se il repository è vuoto.
+1. Una volta effettuato l’accesso a Cloud Manager e quando la configurazione del programma di base è completa, nella schermata **Panoramica** verrà visualizzato uno speciale invito all’azione, se l’archivio è vuoto.
 
    ![](assets/create-wizard1.png)
 
-1. Fate clic su **Crea** per passare alla schermata **Crea un ramo e un progetto** .
+1. Per passare alla schermata **Create a Branch and Project (Crea un ramo e un progetto)**, fai clic su **Crea**.
 
    ![](assets/create-wizard2.png)
 
@@ -28,7 +31,7 @@ Per creare un progetto di applicazione AEM in Cloud Manager, procedi come segue:
 
    ![](assets/create-wizard3.png)
 
-1. Una volta completata la creazione del programma, la sezione **Aggiungi ambiente** viene visualizzata nella pagina Panoramica *del* programma.
+1. Una volta completata la creazione del programma, la sezione **Aggiungi ambiente** viene visualizzata nella pagina *Program Overview (Panoramica del programma)*.
    ![](assets/create-wizard4.png)
 
    Per informazioni su come aggiungere o gestire gli ambienti, fare riferimento a [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md) .
@@ -50,7 +53,7 @@ Per essere generati e distribuiti correttamente con Cloud Manager, i progetti AE
 * In presenza di più pacchetti di contenuto, l&#39;ordine delle distribuzioni dei pacchetti non è garantito. Se è necessario un ordine specifico, per definire l’ordine è possibile utilizzare le dipendenze del pacchetto di contenuto. I pacchetti possono essere [ignorati](#skipping-content-packages) dalla distribuzione.
 
 
-## Dettagli ambiente build {#build-environment-details}
+## Dettagli ambiente di generazione {#build-environment-details}
 
 Cloud Manager crea e verifica il codice utilizzando un ambiente di build specializzato. Questo ambiente ha i seguenti attributi:
 
@@ -67,7 +70,7 @@ Cloud Manager crea e verifica il codice utilizzando un ambiente di build special
 
 * Altri pacchetti possono essere installati in fase di creazione come descritto [di seguito](#installing-additional-system-packages).
 * Ogni costruzione è fatta su un ambiente incontaminato; il contenitore di compilazione non mantiene alcuno stato tra le esecuzioni.
-* Maven è sempre eseguito con il comando: mvn — *batch-mode clean org.jacoco:jacoco-maven-plugin:Preparare-agent package*
+* Maven è sempre eseguito con il comando: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:Preparare-agent package*
 * Maven è configurato a livello di sistema con un file settings.xml che include automaticamente il repository pubblico di Adobe **Artifact** . Per ulteriori informazioni, consultate [Adobe Public Maven Repository](https://repo.adobe.com/) .
 
 
@@ -95,7 +98,7 @@ Per supportare questa funzione, Cloud Manager aggiunge queste variabili di ambie
 
 ### Variabili di ambiente personalizzate {#custom-environ-variables}
 
-In alcuni casi, il processo di creazione di un cliente può dipendere da variabili di configurazione specifiche che non sarebbe appropriato inserire nel repository git. Cloud Manager consente di configurare queste variabili da un rappresentante Adobe a livello cliente. Queste variabili sono memorizzate in una posizione di archiviazione protetta e sono visibili solo nel contenitore di compilazione per il cliente specifico. I clienti che desiderano utilizzare questa funzione devono contattare il proprio rappresentante Adobe per configurare le proprie variabili.
+In alcuni casi, il processo di creazione di un cliente può dipendere da variabili di configurazione specifiche che non sarebbe appropriato inserire nel repository Git. Cloud Manager consente di configurare queste variabili da un rappresentante Adobe a livello cliente. Queste variabili sono memorizzate in una posizione di archiviazione protetta e sono visibili solo nel contenitore di compilazione per il cliente specifico. I clienti che desiderano utilizzare questa funzione devono contattare il proprio rappresentante Adobe per configurare le proprie variabili.
 
 Una volta configurate, queste variabili saranno disponibili come variabili di ambiente. Per utilizzarle come proprietà Maven, potete farvi riferimento all&#39;interno del file pom.xml, potenzialmente all&#39;interno di un profilo come descritto in precedenza:
 
@@ -121,9 +124,9 @@ Una volta configurate, queste variabili saranno disponibili come variabili di am
 
 In alcuni casi limitati, potrebbe essere necessario variare leggermente il processo di creazione quando si esegue in Cloud Manager rispetto a quando viene eseguito su workstation sviluppatore. Per questi casi, [Maven Profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) può essere utilizzato per definire in che modo la build deve essere diversa in ambienti diversi, incluso Cloud Manager.
 
-L&#39;attivazione di un profilo Maven all&#39;interno dell&#39;ambiente di generazione di Cloud Manager deve essere effettuata cercando la variabile di ambiente CM_BUILD descritta in precedenza. In alternativa, un profilo destinato ad essere utilizzato solo al di fuori dell&#39;ambiente di build di Cloud Manager dovrebbe essere fatto cercando l&#39;assurdità di questa variabile.
+L&#39;attivazione di un profilo Maven all&#39;interno dell&#39;ambiente di generazione di Cloud Manager deve essere eseguita ricercando la variabile di ambiente CM_BUILD descritta in precedenza. In alternativa, un profilo destinato a essere utilizzato solo al di fuori dell&#39;ambiente di build di Cloud Manager dovrebbe essere fatto cercando l&#39;assurdità di questa variabile.
 
-Ad esempio, se desideri inviare un messaggio semplice solo quando la build viene eseguita in Cloud Manager, effettua questa operazione:
+Ad esempio, se desiderate inviare un messaggio semplice solo quando la build viene eseguita in Cloud Manager, effettuate le seguenti operazioni:
 
 ```xml
         <profile>
@@ -262,7 +265,7 @@ Questa stessa tecnica può essere utilizzata per installare pacchetti specifici 
 In Cloud Manager, le build possono generare un numero qualsiasi di pacchetti di contenuto.
 Per diversi motivi, può essere utile produrre un pacchetto di contenuti ma non distribuirlo. Questo può essere utile, ad esempio, quando si creano pacchetti di contenuto utilizzati solo per il test o che verranno reinseriti in un pacchetto da un altro passaggio del processo di creazione, ovvero come pacchetto secondario di un altro pacchetto.
 
-Per soddisfare questi scenari, Cloud Manager cercherà una proprietà denominata ***cloudManagerTarget*** nelle proprietà dei pacchetti di contenuto incorporati. Se questa proprietà è impostata su none, il pacchetto verrà ignorato e non distribuito. Il meccanismo per impostare questa proprietà dipende dal modo in cui la build produce il pacchetto di contenuto. Ad esempio, con il filevault-maven-plugin si configura il plugin come segue:
+Per soddisfare questi scenari, Cloud Manager cercherà una proprietà denominata ***cloudManagerTarget*** tra le proprietà dei pacchetti di contenuto incorporati. Se questa proprietà è impostata su none, il pacchetto verrà ignorato e non distribuito. Il meccanismo per impostare questa proprietà dipende dal modo in cui la build produce il pacchetto di contenuto. Ad esempio, con filevault-maven-plugin si configura il plugin come segue:
 
 ```xml
         <plugin>
