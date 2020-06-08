@@ -4,6 +4,9 @@ description: Domande frequenti su Risorse AEM e Libreria AEM Media, comprese le 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +17,7 @@ Risorse Adobe Experience Manager (AEM) è parte integrante della piattaforma AEM
 
 ## Cos’è AEM Assets? {#what-is-aem-assets}
 
-AEM Assets è un’applicazione della piattaforma AEM che consente ai clienti di gestire le risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web. Risorse AEM include il supporto per metadati, rappresentazioni, il Finder di gestione delle risorse digitali e l&#39;amministrazione tramite l&#39;interfaccia utente.
+Risorse AEM è un’applicazione della piattaforma AEM che consente ai clienti di gestire le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web. Risorse AEM include il supporto per metadati, rappresentazioni, il Finder di gestione delle risorse digitali e l&#39;amministrazione tramite l&#39;interfaccia utente.
 
 ## Cos’è la libreria AEM Media? {#what-is-the-aem-media-library}
 
@@ -24,7 +27,7 @@ AEM Media Library è una parte designata dell&#39;archivio dei contenuti di AEM 
 
 Le funzioni esclusive disponibili solo per i clienti di Risorse AEM sono:
 
-1. possibilità di estrarre e modificare metadati diversi da titolo, tag e descrizione.
+1. la possibilità di estrarre e modificare metadati diversi da titolo, tag e descrizione.
 1. l’amministratore di Risorse AEM, disponibile dalla schermata di benvenuto facendo clic sul secondo pulsante accanto all’amministratore del sito.
 1. Tutti i passaggi del flusso di lavoro relativi alla gestione delle risorse digitali, ad esempio l’inserimento di AEM Assets, l’eliminazione di AEM Assets, la gestione delle risorse secondarie di AEM, l’estrazione dei metadati di AEM Assets.
 1. librerie che includono &quot;dam&quot; im package space.
@@ -82,7 +85,7 @@ Per questo caso d’uso non è necessario acquistare AEM Assets, anche l’utili
 * Risorse collegate
 * Brand Portal
 * Accesso self-service
-* Sfoglia, Cerca e Scarica
+* Sfogliare, cercare e scaricare
 * Raccolte e condivisione cartelle
 * Strumenti di amministrazione
 * Tag avanzati
