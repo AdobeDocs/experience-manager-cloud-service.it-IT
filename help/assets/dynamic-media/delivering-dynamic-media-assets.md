@@ -3,6 +3,9 @@ title: Distribuzione di risorse Dynamic Media
 description: Scopri come distribuire risorse multimediali dinamiche
 translation-type: tm+mt
 source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+workflow-type: tm+mt
+source-wordcount: '301'
+ht-degree: 17%
 
 ---
 
@@ -22,7 +25,7 @@ Con l’elemento multimediale dinamico hai a disposizione diverse opzioni:
 
 >[!NOTE]
 >
->La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, consultate [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) .
+>La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, consulta [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) .
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
