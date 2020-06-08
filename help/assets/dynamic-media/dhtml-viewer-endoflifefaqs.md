@@ -3,6 +3,9 @@ title: Domande frequenti sulla fine del ciclo di vita del visualizzatore DHTML
 description: A partire dal 31 gennaio 2014, la piattaforma di visualizzatori DHTML di Scene7 diventerà ufficialmente operativa. Questa notifica fornisce le risposte alle domande frequenti in modo da poter preparare la transizione alla nuova piattaforma di visualizzatori HTML5.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +57,7 @@ Per determinare se il visualizzatore utilizzato dalla società è DHTML e quindi
 
    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference)
 
-1. La società utilizza un visualizzatore personalizzato creato con l’API a comparsa multi-schermo DHTML:
+1. La società utilizza un visualizzatore personalizzato creato con l’API a comparsa multischermo DHTML:
 
    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer)
 
@@ -68,7 +71,7 @@ Per determinare se il visualizzatore utilizzato dalla società è DHTML e quindi
 
    Questo è stato sostituito dal nuovo codice di rilevamento dispositivo JS qui: [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers) .
 
-**Qual è la piattaforma di visualizzatore sostitutiva?**
+**Che cos’è la piattaforma di visualizzatore sostitutiva?**
 
 La sostituzione per DHTML è la piattaforma di visualizzatori HTML5 di Scene7, composta da:
 
@@ -79,7 +82,7 @@ La sostituzione per DHTML è la piattaforma di visualizzatori HTML5 di Scene7, c
 
 Scene7 ha rilasciato il primo SDK per visualizzatori HTML5 nell’autunno 2011 con l’avvio della versione 5.5. Da allora, abbiamo aggiunto numerose funzionalità alla piattaforma e supporto esteso per un numero sempre maggiore di tipi di visualizzatori. Per la maggior parte dei requisiti comuni per i visualizzatori, è probabile che la piattaforma per visualizzatori HTML5 disponga già delle funzioni necessarie per effettuare la migrazione. E continuiamo a investire in modo aggressivo in questa piattaforma di visualizzatori con rilasci ogni trimestre.
 
-Per determinare se i requisiti del visualizzatore possono essere soddisfatti oggi con la piattaforma visualizzatore HTML5, consultate la seguente documentazione:
+Per determinare se i requisiti del visualizzatore possono essere soddisfatti oggi con la piattaforma per visualizzatori HTML5, consultate la seguente documentazione:
 
 [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (per visualizzatori out-of-box e funzionalità di personalizzazione)
 
@@ -120,4 +123,4 @@ Anche se potete ancora essere live in produzione con visualizzatori basati su DH
 
 **Chi posso contattare per maggiori informazioni?**
 
-Se questa domanda frequente non risponde a tutte le tue domande, contatta il supporto ([s7support@adobe.com](mailto:s7support@adobe.com)) o il tuo account manager Adobe.
+Se non trovi la risposta che cerchi in queste domande frequenti, contatta l’assistenza ([s7support@adobe.com](mailto:s7support@adobe.com)) o il tuo Adobe account manager.
