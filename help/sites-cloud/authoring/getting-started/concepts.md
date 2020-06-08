@@ -1,8 +1,11 @@
 ---
 title: Concetti relativi all’authoring
 description: Concetti relativi all’authoring in AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 100%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 Un’installazione di AEM è in genere costituita da almeno due ambienti:
 
-* Authoring
+* Autore
 * Pubblicazione
 
 Questi interagiscono tra di loro e consentono di rendere i contenuti disponibili nel sito web e accessibili ai visitatori.
