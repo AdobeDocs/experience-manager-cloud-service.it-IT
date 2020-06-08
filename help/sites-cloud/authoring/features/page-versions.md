@@ -1,8 +1,11 @@
 ---
-title: Utilizzo delle versioni di una pagina
+title: 'Utilizzo delle versioni di una pagina  '
 description: Creare, confrontare e ripristinare le versioni di una pagina
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 100%
 
 ---
 
@@ -71,7 +74,7 @@ Per ripristinare una versione precedente:
 
 1. Passa alla pagina di cui desideri ripristinare una versione precedente.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Apri la colonna **Timeline** e seleziona **Mostra tutto** oppure **Versioni**. Vengono elencate le versioni disponibili per la pagina selezionata.
+1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**. Vengono elencate le versioni disponibili per la pagina selezionata.
 1. Seleziona la versione da ripristinare. Vengono visualizzate le opzioni disponibili:
 
    ![Ripristino della versione](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -84,7 +87,7 @@ Puoi visualizzare in anteprima una versione specifica:
 
 1. Passa alla pagina da confrontare.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Apri la colonna **Timeline** e seleziona **Mostra tutto** oppure **Versioni**.
+1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
 1. Vengono elencate le versioni disponibili. Seleziona la versione che desideri vedere in anteprima:
 
    ![Anteprima versione](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -103,7 +106,7 @@ Per confrontare una versione precedente con quella corrente:
 
 1. Passa alla pagina da confrontare.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Apri la colonna **Timeline** e seleziona **Mostra tutto** oppure **Versioni**.
+1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
 1. Vengono elencate le versioni disponibili. Seleziona la versione da confrontare.
 
    ![Confronto delle versioni](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -131,7 +134,7 @@ Timewarp è una [modalità](/help/sites-cloud/authoring/fundamentals/environment
 
    ![Modalità Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. Nella finestra di dialogo, imposta una data e un’ora e tocca o fai clic su **Imposta data**. Se non selezioni un’ora, per impostazione predefinita verrà usata l’ora attuale.
+1. Nella finestra di dialogo, imposta una data e un’ora di destinazione e tocca o fai clic su **Imposta data**. Se non si seleziona un’ora, per impostazione predefinita verrà utilizzata l’ora corrente.
 
    ![Data di destinazione in Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
