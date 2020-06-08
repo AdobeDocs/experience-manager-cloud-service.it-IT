@@ -3,6 +3,9 @@ title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 translation-type: tm+mt
 source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+workflow-type: tm+mt
+source-wordcount: '1430'
+ht-degree: 3%
 
 ---
 
@@ -142,7 +145,7 @@ Quando Adobe modifica un indice out-of-the-box come &quot;damAssetLucene&quot; o
 | /oak:index/cqPageLucene | Sì | Sì | No |
 | /oak:index/cqPageLucene-2 | Sì | No | Sì |
 
-### Limitazioni    {#limitations}
+### Limitazioni  {#limitations}
 
 Al momento la gestione degli indici è supportata solo per gli indici di tipo `lucene`.
 
