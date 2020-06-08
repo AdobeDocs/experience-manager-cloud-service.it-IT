@@ -3,6 +3,9 @@ title: Utilizzo delle visualizzazioni rapide per creare finestre a comparsa pers
 description: La visualizzazione rapida predefinita viene utilizzata nelle esperienze eCommerce per le quali viene visualizzato un pop-up con le informazioni sul prodotto per guidare un acquisto. Potete attivare il contenuto personalizzato da visualizzare nelle finestre a comparsa.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +17,7 @@ La visualizzazione rapida predefinita viene utilizzata nelle esperienze eCommerc
 Le viste rapide sono supportate dai seguenti visualizzatori in elementi multimediali dinamici:
 
 * Immagini interattive (aree sensibili selezionabili)
-* Video interattivo (immagini in miniatura selezionabili durante la riproduzione di un video)
+* Video interattivo (immagini in miniatura cliccabili durante la riproduzione di un video)
 * Banner carosello (aree sensibili selezionabili o mappe immagine)
 
 Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di creazione di una visualizzazione rapida è lo stesso per tutti e tre i visualizzatori supportati.
@@ -40,7 +43,7 @@ Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di
     <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Aggiunta di interattività al video</a>.</td>
     </tr>
     <tr>
-    <td>Banner carosello</td>
+    <td>Banner a carosello</td>
     <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Aggiunta di punti attivi o mappe immagine a un banner</a>.<br /> </td>
     </tr>
     </tbody>
@@ -69,7 +72,7 @@ Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di
     </tbody>
    </table>
 
-1. Il visualizzatore che utilizzate ora deve essere in grado di utilizzare la visualizzazione rapida.
+1. Il visualizzatore che state utilizzando ora deve essere in grado di utilizzare la visualizzazione rapida.
 
    A questo scopo, il visualizzatore utilizza un handler denominato `QuickViewActive`.
 
@@ -111,7 +114,7 @@ Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di
 
    `var sku=inData.sku`
 
-   Mappare anche altre variabili dalla visualizzazione rapida, come segue:
+   Mappate anche altre variabili dalla visualizzazione rapida, come segue:
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
@@ -196,7 +199,7 @@ Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di
 
    Per visualizzare la visualizzazione a comparsa sia in modalità standard che a schermo intero, allegate la finestra a comparsa al contenitore del visualizzatore. A tal fine, è possibile utilizzare un secondo metodo di gestione, `initComplete`.
 
-   Il `initComplete` gestore viene richiamato dopo l’inizializzazione del visualizzatore.
+   Il `initComplete` gestore viene richiamato dopo che il visualizzatore è stato inizializzato.
 
    ```xml
    "initComplete":function() { code block }
