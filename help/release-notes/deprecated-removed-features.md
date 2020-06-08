@@ -1,8 +1,11 @@
 ---
 title: Funzioni obsolete e rimosse
 description: Note sulla versione specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager as a Cloud Service.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
@@ -35,7 +38,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione o funzionalità n
 
 In questa sezione sono elencate le funzioni e le funzionalità che sono state rimosse da AEM con Experience Manager as a Cloud Service.
 
-| Area | Funzione | Sostituzione |
+| Area | Funzione obsoleta | Sostituzione |
 | ------------ | ------------------ | ----------- |
 | Interfaccia | Alcune finestre di dialogo dell’interfaccia classica rimangono al momento disponibili solo per alcune funzionalità, come Verifica collegamenti, Pulizia delle versioni e alcune configurazioni di Cloud Service, ma l’accesso all’interfaccia classica in generale è stato rimosso nell’interfaccia dei prodotti AEM. | Interfaccia standard |
 | Dynamic Media | Le integrazioni precedenti con [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/scene7.html) e la [modalità ibrida di Dynamic Media](https://helpx.adobe.com/it/experience-manager/6-5/assets/using/config-dynamic.html) non sono disponibili in AEM as a Cloud Service. | Utilizza la versione di [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornita con Experience Manager as a Cloud Service. |
