@@ -1,8 +1,11 @@
 ---
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+workflow-type: tm+mt
+source-wordcount: '2357'
+ht-degree: 100%
 
 ---
 
@@ -186,6 +189,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
    * Seleziona il modello da utilizzare per creare la prima pagina, quindi tocca o fai clic su **Avanti** per proseguire.
 
    * Seleziona **Annulla** per interrompere la procedura.
+
    ![Selezione di un modello per una nuova pagina](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. Nell’ultimo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
@@ -193,6 +197,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
    * Usa le tre schede per specificare le [proprietà di pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) da assegnare alla nuova pagina, quindi tocca o fai clic su **Crea** per creare la pagina.
 
    * Utilizza **Indietro** per tornare alla selezione del modello.
+
    I campi chiave sono:
 
    * **Titolo**:
@@ -203,6 +208,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
       * Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando AEM rileva i caratteri non validi, il campo viene evidenziato e un messaggio di avviso segnala i caratteri che devono essere rimossi o sostituiti.
+
    >[!TIP]
    >
    >Consulta [Convenzioni di denominazione delle pagine](#page-naming-conventions).
@@ -237,6 +243,7 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 
    * [Azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e barra degli strumenti
+
    Quindi seleziona l’icona **Modifica**:
 
    Pulsante ![Modifica](/help/sites-cloud/authoring/assets/edit.png)
@@ -256,6 +263,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
    * [Azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e barra degli strumenti
+
    E quindi l’icona **Copia pagina**:
 
    ![Copia](/help/sites-cloud/authoring/assets/copy.png)
@@ -273,6 +281,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
    1. Selezionare direttamente l’icona **Incolla** per la pagina. Verrà creata una copia della pagina originale e delle eventuali pagine figlio in questa posizione.
    1. Selezionare la freccia a discesa per visualizzare l’opzione **Incolla senza elementi secondari**. In questa posizione verrà creata una copia della pagina originale, mentre le pagine figlio non verranno copiate.
+
    >[!NOTE]
    >
    >Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventerà `beach1`.
@@ -292,6 +301,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    * [Azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e barra degli strumenti
+
    Quindi seleziona l’icona **Sposta pagina**:
 
    ![Pulsante Sposta](/help/sites-cloud/authoring/assets/move.png)
@@ -302,6 +312,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    * Specifica il nome da assegnare alla pagina spostata, quindi tocca o fai clic su **Avanti**.
    * Seleziona **Annulla** per interrompere la procedura.
+
    ![Spostare e rinominare la pagina](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
    Il nome pagina può restare lo stesso se si sta solamente spostando la pagina.
@@ -317,6 +328,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
       * Seleziona la destinazione facendo clic sulla miniatura della destinazione.
       * Fai clic su **Avanti** per continuare.
    * Utilizza **Indietro** per specificare di nuovo il nome della pagina.
+
    >[!NOTE]
    >
    >Per impostazione predefinita, l’elemento principale della pagina che stai spostando/rinominando verrà selezionato come destinazione.
