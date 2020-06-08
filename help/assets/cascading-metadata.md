@@ -1,14 +1,17 @@
 ---
-title: Cascading metadata
+title: Metadati a cascata
 description: In questo articolo viene descritto come definire metadati a cascata per le risorse.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 13%
 
 ---
 
 
-# Metadati A Cascata {#cascading-metadata}
+# Cascading Metadata {#cascading-metadata}
 
 Quando acquisite le informazioni di metadati di una risorsa, gli utenti forniscono informazioni nei vari campi disponibili. Potete visualizzare campi di metadati o valori di campi specifici che dipendono dalle opzioni selezionate negli altri campi. Tale visualizzazione condizionale dei metadati è denominata metadati CSS. In altre parole, potete creare una dipendenza tra un particolare campo/valore di metadati e uno o più campi e/o relativi valori.
 
@@ -25,15 +28,15 @@ Di seguito sono riportati alcuni casi d’uso per i quali potete definire metada
 
 ## Configurare i metadati in cascata in AEM {#configure-cascading-metadata-in-aem}
 
-Considerate uno scenario in cui visualizzare i metadati CSS in base al tipo di risorsa selezionata. Alcuni esempi
+Considerate uno scenario in cui visualizzare i metadati a cascata in base al tipo di risorsa selezionata. Alcuni esempi
 
 * Per un video, visualizzate i campi applicabili come formato, codec, durata e così via.
 * Per un documento Word o PDF, visualizzare campi quali conteggio delle pagine, autore e così via.
 
 Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul copyright come campo obbligatorio.
 
-1. Toccate o fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**.
-1. Nella pagina Moduli **** schema selezionare un modulo schema, quindi toccare o fare clic su **[!UICONTROL Modifica]** dalla barra degli strumenti per modificare lo schema.
+1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi di metadati]**.
+1. Nella pagina **[!UICONTROL Moduli schema]** seleziona un modulo schema, quindi, per modificare lo schema, dalla barra degli strumenti tocca o fai clic su **[!UICONTROL Modifica]**.
 
    ![select_form](assets/select_form.png)
 
@@ -52,21 +55,22 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
    * Per specificare manualmente i valori, selezionate **[!UICONTROL Aggiungi manualmente]**, quindi toccate o fate clic su **[!UICONTROL Aggiungi scelta]** e specificate il testo e il valore dell’opzione. Ad esempio, specificate i tipi di risorse Video, PDF, Word e Immagine.
 
    * Per recuperare i valori da un file JSON in modo dinamico, selezionate **[!UICONTROL Aggiungi tramite percorso]** JSON e fornite il percorso del file JSON. AEM recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all’utente.
+
    Entrambe le opzioni si escludono a vicenda. Non potete importare le opzioni da un file JSON e modificarle manualmente.
 
    ![add_choice](assets/add_choice.png)
 
    >[!NOTE]
    >
-   >Quando si aggiunge un file JSON, le coppie chiave-valore non vengono visualizzate nell&#39;editor dello schema di metadati ma sono disponibili nel modulo pubblicato.
+   >Quando si aggiunge un file JSON, le coppie chiave-valore non vengono visualizzate nell&#39;editor dello schema di metadati, ma sono disponibili nel modulo pubblicato.
 
    >[!NOTE]
    >
-   >Quando si aggiungono delle scelte, se si fa clic sul campo a comparsa, l&#39;interfaccia risulta distorta e l&#39;icona di eliminazione delle scelte non funziona più. Non fate clic sul menu a discesa finché non salvate le modifiche. Se si verifica questo problema, salvare lo schema e aprirlo nuovamente per continuare a modificarlo.
+   >Quando si aggiungono delle scelte, se si fa clic sul campo a comparsa, l&#39;interfaccia risulta distorta e l&#39;icona di eliminazione delle scelte non funziona più. Non fate clic sul menu a discesa finché non salvate le modifiche. Se si verifica questo problema, salvare lo schema e aprirlo di nuovo per continuare a modificarlo.
 
 1. (Facoltativo) Aggiungete gli altri campi richiesti. Ad esempio, formato, codec e durata per il tipo di risorsa video.
 
-   Analogamente, aggiungete campi dipendenti per altri tipi di risorse. Ad esempio, aggiungere il conteggio delle pagine dei campi e creare risorse per i documenti, come file PDF e Word.
+   Allo stesso modo, aggiungete campi dipendenti per altri tipi di risorse. Ad esempio, aggiungere il conteggio delle pagine dei campi e creare risorse per i documenti, come file PDF e Word.
 
    ![video_Depend_fields](assets/video_dependent_fields.png)
 
@@ -74,8 +78,8 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. In **[!UICONTROL Requisito]**, scegliete l&#39;opzione **[!UICONTROL Obbligatorio, in base alla nuova opzione regola]** .
-1. Toccate o fate clic su **[!UICONTROL Aggiungi regola]** e scegliete il campo Tipo **[!UICONTROL di]** risorsa per creare una dipendenza. Scegliere anche il valore del campo su cui creare la dipendenza. In questo caso, scegliete **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
+1. Tocca o fai clic su **[!UICONTROL Aggiungi regola]** e scegli il campo **[!UICONTROL Tipo di risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Per salvare le modifiche, Tocca o fai clic su **[!UICONTROL Fine]**.
 
    ![define_rule](assets/define_rule.png)
 
@@ -83,9 +87,9 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
    >
    >Con le regole è possibile utilizzare un elenco a discesa con valori predefiniti manualmente. I menu a discesa con percorso JSON configurato non possono essere utilizzati con regole che utilizzano valori predefiniti per applicare condizioni. Se i valori vengono caricati da JSON in fase di esecuzione, non è possibile applicare una regola predefinita.
 
-1. In **[!UICONTROL Visibilità]**, scegli **[!UICONTROL Visibile, in base alla nuova opzione regola]** .
+1. In **[!UICONTROL Visibilità]**, scegli l’opzione **[!UICONTROL Visibile, in base alla nuova regola]**.
 
-1. Toccate o fate clic su **[!UICONTROL Aggiungi regola]** e scegliete il campo Tipo **[!UICONTROL di]** risorsa per creare una dipendenza. Scegliere anche il valore del campo su cui creare la dipendenza. In questo caso, scegliete **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. Tocca o fai clic su **[!UICONTROL Aggiungi regola]** e scegli il campo **[!UICONTROL Tipo di risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Per salvare le modifiche, Tocca o fai clic su **[!UICONTROL Fine]**.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -95,10 +99,10 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    >[!NOTE]
    >
-   >Puoi applicare la condizione **[!UICONTROL Requisito]** e la condizione di **[!UICONTROL visibilità]** indipendentemente l&#39;una dall&#39;altra.
+   >Puoi applicare la condizione **[!UICONTROL Requisito]** e **[!UICONTROL Visibilità]**, pur lasciandole indipendenti tra di loro.
 
 1. Analogamente, create una dipendenza tra il valore Video nel campo Tipo risorsa e altri campi, come Codec e Durata.
-1. Ripetete i passaggi per creare una dipendenza tra le risorse del documento (PDF e Word) nel campo Tipo  risorsa e nei campi quali Conteggio  pagina e [!UICONTROL Autore].
+1. Ripetete i passaggi per creare una dipendenza tra le risorse del documento (PDF e Word) nel campo Tipo [!UICONTROL di] risorsa e i campi quali Conteggio  pagina e [!UICONTROL Autore].
 1. Fai clic su **[!UICONTROL Salva]**. Applicate lo schema di metadati a una cartella.
 
 1. Andate alla cartella alla quale avete applicato lo schema metadati e aprite la pagina delle proprietà di una risorsa. A seconda della scelta effettuata nel campo Tipo risorsa, vengono visualizzati i campi di metadati CSS pertinenti.
@@ -107,4 +111,4 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
    *Figura: Cascading metadata for Video asset*
 
    ![Creazione di metadati in cascata per la risorsa del documento](assets/doc_type_fields.png)
-   *Figura:Creazione di metadati in cascata per la risorsa del documento*
+   *Figura: Creazione di metadati in cascata per la risorsa del documento*
