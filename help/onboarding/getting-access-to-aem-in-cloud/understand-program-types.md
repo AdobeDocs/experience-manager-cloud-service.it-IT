@@ -3,6 +3,9 @@ title: Informazioni sui tipi di programma
 description: Informazioni sui tipi di programma e di programma - Servizi cloud
 translation-type: tm+mt
 source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
