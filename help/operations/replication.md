@@ -1,8 +1,11 @@
 ---
 title: Replica
-description: Replica per la distribuzione e la risoluzione dei problemi.
+description: Distribuzione e risoluzione dei problemi di replica.
 translation-type: tm+mt
 source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +30,7 @@ Per eseguire l&#39;attivazione di una struttura ad albero:
 
 1. Dal menu Start di AEM, andate a **Strumenti > Distribuzione > Distribuzione**
 2. Selezionare la scheda **forwardPublisher**
-3. Nell&#39;interfaccia della console Web di Publisher, **selezionare Distribuisci**
+3. Una volta nell&#39;interfaccia della console Web di Publisher, **selezionare Distribuisci**
    ![](assets/distribute.png "Distribuisci")
 4. Selezionate il percorso nel browser dei percorsi, scegliete di aggiungere un nodo, una struttura ad albero o l’eliminazione come necessario e selezionate **Invia**
 
