@@ -1,9 +1,9 @@
 ---
 title: Creazione di contenuti accessibili per Adobe Experience Manager as a Cloud Service (conformità WCAG 2.1)
 description: Utilizzare AEM as a Cloud Service per rendere il contenuto web accessibile e fruibile per le persone con disabilità
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '13955'
 ht-degree: 100%
 
@@ -323,6 +323,7 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
 * **Elenchi**: è possibile utilizzare l’HTML per specificare tre diversi tipi di elenchi:
    * L’elemento `<ul>` viene utilizzato per gli elenchi *non ordinati* (puntati). Le singole voci di elenco sono identificate dall’elemento `<li>`. Nell’editor Rich Text, utilizza l’icona **Elenco puntato**.
    * L’elemento `<ol>`viene utilizzato per gli elenchi *numerati*. Le singole voci dell’elenco sono identificate dall’elemento `<li>`. Nell’editor Rich Text, utilizza l’icona **Elenco numerato**.
+
    Se desideri convertire contenuti esistenti in un determinato tipo di elenco, evidenzia il testo desiderato e seleziona il tipo di elenco. Come nel precedente esempio, che mostra come inserire un testo di paragrafo, gli elementi elenco adeguati verranno aggiunti automaticamente al codice HTML.
 
    In modalità a tutto schermo, sono visibili le singole icone **Elenco puntato** ed **Elenco numerato**. Se non è attiva la modalità a tutto schermo, le due opzioni sono disponibili dietro la singola icona **Elenchi**.
@@ -332,11 +333,13 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
    * un elemento `<tr>` per ogni riga della tabella
    * un elemento `<th>` per ogni intestazione di riga e colonna
    * un elemento `<td>` per ogni cella di dati
+
    In aggiunta, le tabelle accessibili fanno uso dei seguenti elementi e attributi:
 
    * L’elemento `<caption>` viene utilizzato per fornire una didascalia visibile per la tabella. Per impostazione predefinita, le didascalie vengono visualizzate centrate sopra la tabella, ma possono essere posizionate in modo appropriato utilizzando gli stili CSS. La didascalia è associata alla tabella a livello di programmazione, pertanto è un metodo utile per fornire un’introduzione al contenuto.
    * L’elemento `<summary>` aiuta gli utenti non vedenti a comprendere più facilmente le informazioni presentate all’interno di una tabella, fornendo una sintesi di ciò che un utente vedente può vedere. Risulta particolarmente utile quando si utilizzano layout di tabella complessi o non convenzionali (l’attributo non viene visualizzato nel browser, ma viene letto solo alle tecnologie per l’accessibilità).
    * L’attributo `scope` dell’elemento `<th>` viene utilizzato per indicare se una cella rappresenta un’intestazione per una particolare riga o colonna. Un approccio simile consiste nell’utilizzare gli attributi header e id in tabelle complesse, dove le celle di dati possono essere associate a una o più intestazioni.
+
    >[!NOTE]
    >
    >Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi).
@@ -349,6 +352,7 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
 
    * Definisci una **Didascalia** appropriata.
    * È consigliabile rimuovere eventuali valori predefiniti per **Larghezza**, **Altezza**, **Bordo**, **Margine celle**, **Spaziatura celle**. dato che queste proprietà possono essere impostate in un foglio di stile globale.
+
    Puoi quindi utilizzare le **Proprietà cella** per scegliere se la cella contiene dati o intestazione:
 
 * **Enfasi**: utilizza l’elemento `<strong>` o `<em>` per indicare l’enfasi. Non utilizzare le intestazioni per evidenziare il testo all’interno dei paragrafi.
@@ -361,6 +365,7 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
       >
       >* `<b>` per `<strong>`
       >* `<i>` per `<em>`
+
       >
       >L’efficacia è la medesima, ma `<strong>` e `<em>` sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il tuo team di sviluppo può configurare l’editor Rich Text in modo che utilizzi `<strong>` e `<em>` (anziché `<b>` e `<i>`) durante lo sviluppo dell’istanza di progetto.
 
@@ -532,6 +537,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 1.4.
    * Testo di grandi dimensioni: testo di grandi dimensioni e immagini di testo di grandi dimensioni hanno un rapporto di contrasto di almeno 3:1.
    * Incidentale: per il testo o per le immagini di testo che fanno parte di un componente dell’interfaccia inattivo, che sono [puramente decorative](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), non visibili o che fanno parte di un’immagine che contiene altri contenuti visuali significativi, non è previsto alcun requisito di contrasto.
    * Logotipi: per il testo che fa parte di un logo o di un marchio non è previsto alcun requisito minimo di contrasto.
+
    >[!NOTE]
    >
    >Per ulteriori informazioni, consulta [Comprensione: Contrasto in contenuti non testuali](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html), per essere certo che i lettori comprendano meglio i requisiti aggiuntivi relativi agli elementi non testuali, tra cui icone ed elementi dell’interfaccia.
