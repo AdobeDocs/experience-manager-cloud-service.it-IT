@@ -3,6 +3,9 @@ title: Distribuzione di immagini ottimizzate per un sito reattivo
 description: Come utilizzare la funzione di codice reattivo per fornire immagini ottimizzate
 translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 13%
 
 ---
 
@@ -23,13 +26,13 @@ See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplicat
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
-1. Selezionate un predefinito per immagini reattive. Vengono visualizzati i pulsanti **[!UICONTROL URL]** e **[!UICONTROL RESS]** .
+1. Seleziona un predefinito per immagini reattive. Vengono visualizzati i pulsanti **[!UICONTROL URL]** e **[!UICONTROL RESS]**.
 
    ![chlimage_1-409](assets/chlimage_1-409.png)
 
    >[!NOTE]
    >
-   >La risorsa selezionata *e* il predefinito per immagini o il predefinito per visualizzatori selezionato devono essere pubblicati per rendere disponibili i pulsanti **[!UICONTROL URL]** o **[!UICONTROL RESS]** .
+   >Per poter rendere disponibili i pulsanti **[!UICONTROL URL]** o **[!UICONTROL RESS]**, la risorsa selezionata *e* il predefinito immagine o il predefinito visualizzatore devono essere pubblicati.
    >
    >I predefiniti per immagini vengono pubblicati automaticamente.
 
