@@ -3,11 +3,14 @@ title: Immagini panoramiche
 description: Scopri come lavorare con immagini panoramiche in Dynamic Media.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 2%
 
 ---
 
 
-# Immagini panoramiche{#panoramic-images}
+# Panoramic images{#panoramic-images}
 
 Questa sezione descrive come utilizzare il visualizzatore immagini panoramiche per riprodurre immagini panoramiche sferiche per un’esperienza di visualizzazione a 360° di una stanza, una proprietà, una posizione o un paesaggio.
 
@@ -20,11 +23,12 @@ See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-pr
 Affinché una risorsa caricata possa essere considerata un’immagine panoramica sferica che intendete usare con il visualizzatore immagini panoramiche, la risorsa deve contenere una o entrambe le opzioni seguenti:
 
 * Proporzioni di 2.
+
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
 * Sono stati assegnati tag con le parole chiave `equirectangular`, oppure `spherical`e `panorama`, `spherical` e `panoramic`. Consultate [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md).
 
-Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche per la pagina dei dettagli delle risorse che per il componente `Panoramic Media` WCM.
+Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
 
 Per caricare le risorse da usare con il visualizzatore immagini panoramiche, consultate [Caricamento delle risorse](/help/assets/manage-digital-assets.md#uploading-assets).
 
