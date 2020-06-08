@@ -4,6 +4,9 @@ description: Questo articolo descrive come importare ed esportare i metadati in 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 10%
 
 ---
 
@@ -14,7 +17,7 @@ Risorse AEM consente di importare i metadati delle risorse in blocco mediante un
 
 ## Importare i metadati {#import-metadata}
 
-L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse a causa dell’attività di reinserimento XMP se è selezionato il flag del flusso di lavoro. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo che le prestazioni per altri utenti non vengano compromesse.
+L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse a causa dell’attività di reinserimento XMP se è selezionato il flag del flusso di lavoro. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo da non influenzare le prestazioni di altri utenti.
 
 >[!NOTE]
 >
