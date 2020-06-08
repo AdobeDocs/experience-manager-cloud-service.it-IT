@@ -1,8 +1,11 @@
 ---
-title: Creazione di modelli di pagina
+title: 'Creazione di modelli di pagina  '
 description: Un modello definisce la struttura della pagina risultante. Con l’Editor modelli, la creazione e manutenzione dei modelli non è più un’attività riservata agli sviluppatori.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '4554'
+ht-degree: 100%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 Quando si crea una pagina, è necessario selezionare un modello da utilizzare come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, eventuali contenuti iniziali e i componenti che possono essere utilizzati.
 
-Con l’**Editor modelli**, la creazione e la manutenzione dei modelli non è più un compito riservato agli sviluppatori. È possibile coinvolgere anche un tipo di utente avanzato, ossia l’**autore del modello**. Agli sviluppatori spetta il compito di configurare l’ambiente, creare librerie client e creare i componenti da usare, ma una volta che queste basi sono state definite, l’**autore del modello** potrà creare e configurare un modello senza un progetto di sviluppo.
+Con l’**Editor modelli**, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori. Può essere coinvolto anche un tipo di “power user”, detto **autore dimodelli**. Gli sviluppatori devono comunque occuparsi di configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che questi elementi di base sono implementati, l’**autore del modello** avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
 
 Tramite la **Console dei modelli**, gli autori dei modelli possono:
 
@@ -30,7 +33,7 @@ Per informazioni dettagliate su come funzionano i modelli modificabili a livello
 
 >[!NOTE]
 >
->L’**Editor modelli** non supporta il targeting direttamente a livello di modello. È possibile impostare il targeting per le pagine basate su un modello modificabile, ma non per i modelli stessi.
+>L’**Editor modelli** non supporta il targeting diretto a livello di modello. È possibile impostare come destinazione le pagine create in base a un modello modificabile, ma non i modelli stessi.
 
 ## Prima di iniziare {#before-you-start}
 
@@ -42,7 +45,7 @@ Prima di iniziare, è importante tenere presente che la creazione di un nuovo mo
 
 ### Ruoli {#roles}
 
-La creazione di un nuovo modello utilizzando la **Console modelli** e l’**Editor modelli** richiede la collaborazione tra i seguenti ruoli:
+La creazione di un nuovo modello tramite **Templates Console (Console modelli)** e **Editor modelli** richiede la collaborazione tra i seguenti ruoli:
 
 * **Amministratore**:
    * Crea una nuova cartella per i modelli che richiede i diritti di `admin`.
@@ -190,7 +193,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 1. Apri la scheda **Avanzate**.
 1. In **Impostazioni modello** utilizza **Aggiungi campo** per specificare il percorso del modello.
 
-   Il percorso può essere esplicito o utilizzare schemi ricorrenti. Esempio:
+   Il percorso può essere esplicito o utilizzare schemi ricorrenti. Ad esempio:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
@@ -455,7 +458,7 @@ Nella scheda **Componenti standard**, definisci quali componenti vengono associa
 
 Tocca o fai clic su **Aggiungi mappatura** per aggiungere un componente completamente nuovo e la mappatura del tipo MIME.
 
-Seleziona un componente nell’elenco e o fai clic su **Aggiungi tipo** per aggiungere un ulteriore tipo MIME a un componente già mappato. Fai clic sull’icona **Elimina** per rimuovere un tipo di MIME.
+Seleziona un componente nell’elenco e tocca o fai clic su **Aggiungi tipo** per aggiungere un altro tipo MIME a un componente già mappato. Fai clic sull’icona **Elimina** per rimuovere un tipo di MIME.
 
 ![Scheda Componenti predefiniti](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -477,13 +480,13 @@ Quando un componente è stato sbloccato:
 
 ![Pulsante Blocca componente](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Questo include lo sblocco dei componenti del contenitore in modo che possano essere aggiunti altri componenti, sia in modalità **Contenuto iniziale** che nelle pagine risultanti. Se sono già stati aggiunti componenti o contenuti al contenitore prima di sbloccarlo, questi non verranno più visualizzati in modalità **Struttura**, ma in modalità **Contenuto iniziale**. In **Modalità struttura**, verrà mostrato solo il componente del contenitore stesso con il suo elenco di **Componenti consentiti**.
+Ciò include lo sblocco di componenti contenitore in modo che possano essere aggiunti altri componenti, sia in modalità **Contenuto iniziale** che sulle pagine risultanti. Se hai già aggiunto componenti/contenuti al contenitore prima di sbloccarlo, questi non saranno più visualizzati in modalità **Struttura** ma saranno presenti in modalità **Contenuto iniziale**. In **Modalità struttura**, verrà mostrato solo il componente del contenitore stesso con il suo elenco di **Componenti consentiti**.
 
 ![Componenti consentiti](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
 Per risparmiare spazio, il contenitore layout non cresce per accogliere l’elenco dei componenti consentiti. Piuttosto il contenitore diventa un elenco scorrevole.
 
-I componenti configurabili vengono visualizzati con un’icona **Criteri**, che può essere toccata o cliccata per modificare i criteri e le proprietà di tale componente.
+I componenti configurabili vengono visualizzati con l’icona **Policy**, che può essere toccata o su cui è possibile fare clic per modificare la policy e le proprietà del componente.
 
 ![Icona del componente configurabile](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
@@ -547,6 +550,7 @@ Per accedere alla finestra di dialogo **Criterio pagina**:
 
    * Nella metà sinistra si definiscono i [criteri della pagina](#page-policies).
    * Nella metà destra si definiscono le [proprietà della pagina](#page-properties).
+
    ![Progettazione pagina](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
 #### Criteri di pagina {#page-policies}
@@ -635,6 +639,7 @@ Quando si creano modelli, è necessario considerare i seguenti aspetti:
 
       * Solo struttura: vengono applicate immediatamente.
       * Con contenuto iniziale: vengono applicate immediatamente solo alle pagine create dopo la modifica
+
    Si consiglia di prestare particolare attenzione nei seguenti casi:
 
    * Blocco o sblocco di componenti su modelli abilitati.
@@ -642,6 +647,7 @@ Quando si creano modelli, è necessario considerare i seguenti aspetti:
 
       * I componenti sbloccati (precedentemente bloccati) saranno assenti dalle pagine esistenti.
       * I componenti bloccati (che erano modificabili) nascondono il contenuto dalla visualizzazione sulle pagine.
+
    >[!NOTE]
    >
    >AEM fornisce avvisi espliciti quando si modifica lo stato di blocco di componenti su modelli che non sono più bozze.
