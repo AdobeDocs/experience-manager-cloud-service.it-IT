@@ -1,9 +1,9 @@
 ---
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e le funzioni di base
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 100%
 
@@ -195,6 +195,7 @@ Sono disponibili diverse risorse di Aiuto:
 
    * **Documentazione:** visualizza la documentazione per la gestione esperienza web
    * **Risorse per sviluppatori:** risorse per sviluppatori e download
+
    >[!NOTE]
    >
    >Puoi accedere in qualsiasi momento ai tasti di scelta rapida, semplicemente utilizzando il tasto di scelta rapida `?` (punto interrogativo) all’interno della console.
@@ -309,6 +310,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
    * Quando una risorsa è selezionata, compare un segno di spunta sulla miniatura e il nome della risorsa viene evidenziato.
    * I dettagli della risorsa selezionata sono visualizzati nella colonna finale.
    * La barra delle azioni diventerà disponibile.
+
    Quando una pagina viene selezionata nella vista a colonne, viene visualizzata nella colonna finale con i seguenti dettagli:
 
    * Titolo pagina
