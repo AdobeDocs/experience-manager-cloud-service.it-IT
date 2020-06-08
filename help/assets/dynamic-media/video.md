@@ -3,6 +3,9 @@ title: Video
 description: Scopri come lavorare con i video in Contenuti multimediali dinamici
 translation-type: tm+mt
 source-git-commit: acdad463a188387a7c39c1061191c7472e8295dd
+workflow-type: tm+mt
+source-wordcount: '10160'
+ht-degree: 10%
 
 ---
 
@@ -20,6 +23,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata creata per con
 >Prima di usare i video in Contenuti multimediali dinamici, accertatevi che l’amministratore di AEM abbia già attivato e configurato i servizi Dynamic Media Cloud.
 >
 >* Consulta [Configurazione dei servizi](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) Dynamic Media Cloud in Configurazione di elementi multimediali dinamici e [Risoluzione di problemi relativi a elementi multimediali](/help/assets/dynamic-media/troubleshoot-dm.md)dinamici.
+
 >
 
 
@@ -440,7 +444,7 @@ Tenete presente che Google apporta periodicamente delle modifiche alla propria i
 
 >[!NOTE]
 >
->I seguenti passaggi erano accurati al momento della scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
+>I seguenti passaggi erano accurati al momento di questa scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
 
 Per configurare le impostazioni di Google Cloud:
 
@@ -469,6 +473,7 @@ Per configurare le impostazioni di Google Cloud:
 
    * Nel dashboard del progetto, nella scheda Guida introduttiva, toccate **[!UICONTROL Esplora e abilitate le API]**.
    * Nel dashboard del progetto, nella scheda API, toccate **[!UICONTROL Vai alla panoramica]** delle API.
+
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Nella parte superiore della pagina API e servizi, toccate **[!UICONTROL Abilita API e servizi]**.
@@ -488,6 +493,7 @@ Per configurare le impostazioni di Google Cloud:
    * Da **[!UICONTROL dove chiamerete l&#39;API?]** elenco a discesa, selezionate Server **[!UICONTROL Web (ad esempio, node.js, Tomcat)]**
 
    * From the **[!UICONTROL What data will you be accessing?]** dall&#39;elenco a discesa, toccate Dati **** utente.
+
    ![6_5_googleaccount-apis-create-ecredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Toccare **[!UICONTROL Quali credenziali sono necessarie?]**
@@ -833,9 +839,11 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 1. Visualizzate l’avanzamento della codifica video nella cartella delle risorse:
 
    * Nella vista a schede, l&#39;avanzamento della codifica video viene visualizzato per percentuale sulla risorsa. In caso di errore, queste informazioni vengono visualizzate anche sulla risorsa.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * In list view, video encoding progress displays in the **[!UICONTROL Processing Status]** column. In caso di errore, il messaggio viene visualizzato nella stessa colonna.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    Questa colonna non viene visualizzata per impostazione predefinita. Per abilitare la colonna, dal menu a discesa delle viste seleziona **[!UICONTROL Visualizza impostazioni]**, quindi aggiungi la colonna **[!UICONTROL Stato elaborazione]** e tocca o fai clic su **[!UICONTROL Aggiorna]**.
@@ -855,6 +863,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
    >    * Configurazione coda di lavoro Apache Sling
    >    * Gestore processo esterno flusso di lavoro Adobe Granite
    >    * Coda timeout flusso di lavoro Granite
+
    >
    >In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
 
@@ -889,6 +898,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
    >    * Configurazione coda di lavoro Apache Sling
    >    * Gestore processo esterno flusso di lavoro Adobe Granite
    >    * Coda timeout flusso di lavoro Granite
+
    >
    >
    >In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
@@ -987,6 +997,7 @@ Per visualizzare i rapporti video:
 
    * Vicino all&#39;angolo superiore destro, toccate l&#39;icona **[UICONTROL Date Picker]** .
 Specificate l’intervallo di date iniziale e finale per il quale desiderate i dati video, quindi toccate **[!UICONTROL Esegui rapporto]**.
+
    La casella del gruppo Metriche principali identifica diverse misurazioni aggregate per tutti i *video pubblicati *in tutto il sito.
 
 1. Nella tabella in cui sono elencati i primi video pubblicati, toccate un nome video per riprodurre il video e visualizzate il rapporto (a discesa) di mantenimento dell’audience del video.
