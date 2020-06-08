@@ -3,6 +3,9 @@ title: Regole sulla protezione dei dati e sulla privacy dei dati - Adobe Experie
 description: 'Scopri Adobe Experience Manager come supporto dei siti di servizi cloud per le varie normative sulla protezione dei dati e la privacy dei dati; incluso il Regolamento generale sulla protezione dei dati (GDPR) dell''UE, il California Consumer Privacy Act e le modalità per conformarsi all''implementazione di un nuovo AEM come progetto di servizio cloud. '
 translation-type: tm+mt
 source-git-commit: 1130e8a07bc3826380483a7560ebda7e8a17e238
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 1%
 
 ---
 
@@ -27,11 +30,11 @@ Per ulteriori informazioni, vedere il Centro [per la privacy di](https://www.ado
 >
 >Per ulteriori informazioni, consulta [Adobe Experience Manager come servizio cloud: preparazione per la protezione dei dati e le normative](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) sulla privacy dei dati.
 
-## AEM Author Tier {#aem-author-tier}
+## Livello di authoring AEM {#aem-author-tier}
 
 Gli account utente e il contenuto UGC sul server di creazione sono descritti nella documentazione [di](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
 
-## Livello pubblicazione AEM {#aem-publish-tier}
+## Livello di pubblicazione AEM {#aem-publish-tier}
 
 Gli account utente utilizzati per autenticare i visitatori del sito e il contenuto UGC sul server di pubblicazione sono descritti nella documentazione [di](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
 
@@ -67,7 +70,7 @@ Per rifiutare:
 
    >[!NOTE]
    >
-   > Un&#39;altra descrizione è fornita nella sezione **Privacy Policy** delle [Condizioni d&#39;uso](https://marketing.adobe.com/resources/help/en_US/terms.html).
+   > Un&#39;altra descrizione è fornita nella sezione **Privacy Policy** delle [Condizioni d&#39;uso](https://marketing.adobe.com/resources/help/it_IT/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
@@ -170,6 +173,7 @@ Per visualizzare in anteprima la persistenza utilizzata ContextHub, un utente pu
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       L&#39;archivio ContextHub definisce il livello di persistenza da utilizzare, pertanto per visualizzare lo stato corrente della persistenza tutti i livelli devono essere controllati.
 
 
@@ -199,6 +203,7 @@ Per visualizzare in anteprima la persistenza utilizzata ContextHub, un utente pu
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       L&#39;archivio ContextHub definisce il livello di persistenza da utilizzare, pertanto per visualizzare lo stato corrente della persistenza tutti i livelli devono essere controllati.
 
 
