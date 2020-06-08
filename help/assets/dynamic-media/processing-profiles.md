@@ -3,13 +3,16 @@ title: Profili per l’elaborazione di metadati, immagini e video
 description: Un profilo rappresenta un insieme di regole relative alle opzioni da applicare alle risorse caricate in una cartella. Specificate il profilo di metadati e il profilo di codifica video da applicare alle risorse video caricate. Per le risorse di immagini, potete anche specificare quale profilo di immagine applicare alle risorse di immagine per poterle ritagliare correttamente.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1251'
+ht-degree: 2%
 
 ---
 
 
 # Profili per l’elaborazione di metadati, immagini e video{#profiles-for-processing-metadata-images-and-videos}
 
-Un profilo è una ricetta per le opzioni da applicare alle risorse caricate in una cartella. Ad esempio, potete specificare quale profilo di metadati e quale profilo di codifica video applicare alle risorse video caricate. Oppure, quale profilo di imaging applicare alle risorse di immagini per ritagliarle correttamente.
+Un profilo è una ricetta per le opzioni da applicare alle risorse caricate in una cartella. Ad esempio, potete specificare quale profilo di metadati e quale profilo di codifica video applicare alle risorse video caricate. Oppure, quale profilo di imaging applicare alle risorse di immagine per ritagliarle correttamente.
 
 Tali regole possono includere l’aggiunta di metadati, il ritaglio avanzato delle immagini o la definizione di profili di codifica video. In AEM, potete creare tre tipi di profili, descritti dettagliatamente nei seguenti collegamenti:
 
@@ -31,9 +34,9 @@ Consultate anche [Best practice per l’organizzazione delle risorse digitali pe
 
 ## Rielaborazione delle risorse in una cartella {#reprocessing-assets}
 
-Potete rielaborare le risorse in una cartella che dispone già di un profilo di elaborazione esistente modificato successivamente.
+Potete rielaborare le risorse in una cartella che dispone già di un profilo di elaborazione esistente modificato in seguito.
 
-Ad esempio, se avete creato un profilo Immagine e lo avete assegnato a una cartella, Per tutte le risorse immagine caricate nella cartella, il profilo Immagine veniva applicato automaticamente alle risorse. Tuttavia, in seguito si decide di aggiungere al profilo un nuovo rapporto di ritaglio avanzato. Ora, invece di dover selezionare e caricare nuovamente le risorse nella cartella completamente, è sufficiente eseguire *Scene7: Rielabora il flusso di lavoro Risorse* .
+Ad esempio, se avete creato un profilo Immagine e lo avete assegnato a una cartella, Per tutte le risorse immagine caricate nella cartella, il profilo Immagine veniva applicato automaticamente alle risorse. Tuttavia, in seguito si decide di aggiungere al profilo un nuovo rapporto di ritaglio avanzato. Ora, invece di dover selezionare e caricare nuovamente le risorse nella cartella completamente, è sufficiente eseguire *Scene7: Rielabora il flusso di lavoro delle risorse* .
 
 Potete eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale l&#39;elaborazione non è riuscita per la prima volta. Anche se non avete modificato un profilo di elaborazione o non avete applicato un profilo di elaborazione, potete comunque eseguire il flusso di lavoro di rielaborazione in una cartella di risorse in qualsiasi momento.
 
@@ -63,7 +66,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Se sono presenti una o più sottocartelle con le risorse nella cartella principale selezionata, il flusso di lavoro rielaborerà tutte le risorse nella gerarchia delle cartelle.
    * Come procedura ottimale, evitate di eseguire questo flusso di lavoro in una gerarchia di cartelle con più di 1000 risorse.
 
-1. Nell’angolo in alto a sinistra della pagina, dall’elenco a discesa, fate clic su **[!UICONTROL Timeline]**.
+1. Fai clic su **[!UICONTROL Timeline]** dall’elenco a discesa nell’angolo in alto a sinistra della pagina.
 1. Nell&#39;angolo inferiore sinistro della pagina, a destra del campo Commento, fate clic sull&#39;icona del carrello ( **^** ) .
 
    ![Rielabora flusso di lavoro risorse 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
@@ -96,12 +99,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    ![Componente Caricamento batch Scene7](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
 1. Nella finestra di dialogo Caricamento **[!UICONTROL batch in Scene7 - Proprietà]** passaggio, impostate quanto segue:
-   * Nei campi di testo **[!UICONTROL Titolo]** e **[!UICONTROL Descrizione]** , immettete un nuovo titolo e una nuova descrizione per il processo, se necessario.
-   * Selezionate **[!UICONTROL Avanzamento]** gestore se il gestore procede al passaggio successivo.
+   * In the **[!UICONTROL Title]** and **[!UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
+   * Selezionate **[!UICONTROL Avanzamento]** gestore se il gestore procederà al passaggio successivo.
    * Nel campo **[!UICONTROL Timeout]** , immettere il timeout del processo esterno (secondi).
    * Nel campo **[!UICONTROL Periodo]** , immettete un intervallo di polling (secondi) per verificare il completamento del processo esterno.
-   * Nel campo **** Batch, immettete il numero massimo di risorse (50-1000) da elaborare in un processo di caricamento batch di elaborazione del server per elementi multimediali dinamici.
+   * In the **[!UICONTROL Batch field]**, enter the maximum number of assets (50-1000) to process in a Dynamic Media server batch processing upload job.
    * Selezionate **[!UICONTROL Anticipo su timeout]** se desiderate avanzare quando viene raggiunto il timeout. Deselezionate questa opzione se desiderate passare alla inbox quando viene raggiunto il timeout.
+
    ![Proprietà, finestra di dialogo](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
 1. Nell’angolo in alto a destra della finestra di dialogo Caricamento **[!UICONTROL batch in Scene7 - Proprietà]** passaggio, toccate **[!UICONTROL Fine]**.
