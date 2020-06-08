@@ -3,6 +3,9 @@ title: Gestione dei predefiniti per immagini
 description: Come comprendere i predefiniti per immagini e come creare, modificare e gestire i predefiniti per immagini
 translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '3657'
+ht-degree: 11%
 
 ---
 
@@ -19,7 +22,7 @@ Questa sezione descrive come creare, modificare e gestire in genere i predefinit
 
 >[!NOTE]
 >
->La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, consultate [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) .
+>La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, consulta [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) .
 
 ## Informazioni sui predefiniti per immagini {#understanding-image-presets}
 
@@ -27,7 +30,7 @@ Analogamente a una macro, un predefinito per immagini è un insieme predefinito 
 
 Potete creare due predefiniti per immagini: uno con 500 x 500 pixel per la versione desktop e 150 x 150 pixel per la versione mobile. Potete creare due predefiniti per immagini, uno `Enlarge` per visualizzare le immagini a 500x500 pixel e uno per visualizzare le immagini `Thumbnail` a 150x150 pixel. Per trasmettere le immagini a `Enlarge` e `Thumbnail` dimensione, AEM cerca la definizione di Ingrandimento predefinito per immagini e Miniatura predefinito per immagini. AEM genera quindi in modo dinamico un’immagine secondo le specifiche di formattazione e ridimensionamento di ciascun predefinito per immagini.
 
-Le immagini la cui dimensione viene ridotta quando vengono trasmesse in modo dinamico possono perdere nitidezza e dettaglio. Per questo motivo, ogni predefinito per immagini contiene controlli di formattazione per ottimizzare un’immagine quando viene trasmessa in una determinata dimensione. Questi controlli assicurano che le immagini siano nitide e chiare quando vengono trasmesse al sito Web o all’applicazione.
+Le immagini la cui dimensione viene ridotta quando vengono trasmesse in modo dinamico possono perdere nitidezza e dettaglio. Per questo motivo, ogni predefinito per immagini contiene controlli di formattazione per ottimizzare un’immagine quando questa viene trasmessa in una determinata dimensione. Questi controlli assicurano che le immagini siano nitide e chiare quando vengono trasmesse al sito Web o all’applicazione.
 
 Gli amministratori possono creare dei predefiniti per immagini. Per creare un predefinito per immagini, potete partire da zero o iniziare da uno esistente e salvarlo con un nuovo nome.
 
@@ -35,7 +38,7 @@ Gli amministratori possono creare dei predefiniti per immagini. Per creare un pr
 
 Per gestire i predefiniti immagine in AEM, tocca o fai clic sul logo AEM per accedere alla console di navigazione globale, quindi tocca o fai clic sull’icona Strumenti e passa a **[!UICONTROL Risorse > Predefiniti]** immagine.
 
-![6_5_tools-assets-imagepreset](assets/6_5_tools-assets-imagepresets.png)
+![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ Per gestire i predefiniti immagine in AEM, tocca o fai clic sul logo AEM per acc
 
 >[!NOTE]
 >
->Il sistema mostra diverse rappresentazioni quando selezionate **[!UICONTROL Rappresentazioni]** nella visualizzazione Dettagli di una risorsa. Potete aumentare o diminuire il numero di predefiniti per immagini da visualizzare. Consultate [Aumentare il numero di predefiniti per immagini da visualizzare](#increasing-or-decreasing-the-number-of-image-presets-that-display).
+>Il sistema mostra diverse rappresentazioni quando selezionate **[!UICONTROL Rappresentazioni]** nella visualizzazione Dettagli di una risorsa. Potete aumentare o diminuire il numero di predefiniti per immagini da visualizzare. See [Increasing the number of image presets that display](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 ### Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -68,11 +71,11 @@ Per utilizzare gli elementi multimediali dinamici per visualizzare in anteprima 
 
 1. Nel `DAM Update Asset` flusso di lavoro, il componente `Rasterize PDF/AI Image Preview Rendition` Processo rasterizza la prima pagina della risorsa originale, utilizzando la risoluzione configurata, in una `cqdam.preview.png` rappresentazione.
 
-1. La `cqdam.preview.png` rappresentazione viene ottimizzata in un PTIFF dal componente `Dynamic Media Process Image Assets` di processo all’interno del flusso di lavoro.
+1. La `cqdam.preview.png` rappresentazione viene quindi ottimizzata in un PTIFF dal componente `Dynamic Media Process Image Assets` di processo all’interno del flusso di lavoro.
 
 >[!NOTE]
 >
->Nel flusso di lavoro Risorse aggiornamento DAM, il passaggio delle miniature **** EPS genera le miniature per i file EPS.
+>Nel flusso di lavoro Risorsa di aggiornamento DAM, il passaggio **[!UICONTROL Miniature EPS]** genera le miniature per i file EPS.
 
 #### Proprietà dei metadati delle risorse PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
 
@@ -125,7 +128,7 @@ Utilizzando gli argomenti di processo predefiniti, la prima pagina di un documen
 
 Larghezza max e Altezza max limitano la risoluzione alla quale rasterizzare. Ad esempio, se i valori massimi sono invariati e Risoluzione è impostata su 300 ppi, un documento Lettera USA viene rasterizzato a 186 ppi. ovvero 1581 x 2046 pixel.
 
-Il componente `Rasterize PDF/AI Image Preview Rendition` di processo ha un valore massimo definito per evitare che vengano create immagini troppo grandi nella memoria. Tali immagini di grandi dimensioni possono sovraccaricare la memoria fornita alla JVM (Java Virtual Machine). È necessario prestare attenzione a fornire alla JVM memoria sufficiente per gestire il numero configurato di flussi di lavoro paralleli, ciascuno dei quali ha il potenziale per creare un&#39;immagine alle dimensioni massime configurate.
+Il componente `Rasterize PDF/AI Image Preview Rendition` di processo ha un valore massimo definito per garantire che non vengano create immagini troppo grandi nella memoria. Tali immagini di grandi dimensioni possono sovraccaricare la memoria fornita alla JVM (Java Virtual Machine). È necessario prestare attenzione a fornire alla JVM memoria sufficiente per gestire il numero configurato di flussi di lavoro paralleli, ciascuno dei quali ha il potenziale per creare un&#39;immagine alle dimensioni massime configurate.
 
 ### Formato di file InDesign (INDD) {#indesign-indd-file-format}
 
@@ -158,7 +161,7 @@ I seguenti script sono utilizzati dall&#39;integrazione di Dynamic Media:
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>Sì</td>
-   <td>Genera una risorsa secondaria JPEG a 300 ppi per ogni pagina. La risorsa secondaria JPEG è una risorsa reale memorizzata nella risorsa InDesign. È inoltre ottimizzata e trasformata in PTIFF tramite il <code>DAM Update Asset</code> flusso di lavoro.<br /> </td>
+   <td>Genera una risorsa secondaria JPEG a 300 ppi per ogni pagina. La risorsa secondaria JPEG è una risorsa reale memorizzata nella risorsa InDesign. Inoltre, viene ottimizzata e trasformata in PTIFF in base al <code>DAM Update Asset</code> flusso di lavoro.<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -172,16 +175,16 @@ I seguenti script sono utilizzati dall&#39;integrazione di Dynamic Media:
 
 Puoi configurare la dimensione delle miniature configurando tali impostazioni nel flusso di lavoro **[!UICONTROL DAM Update Asset]** . Nel flusso di lavoro, potete configurare la dimensione delle miniature delle risorse immagine in due passaggi. Sebbene per le risorse immagine dinamiche sia utilizzato uno (**[!UICONTROL Dynamic Media Process Image Assets]**) e l’altro (**[!UICONTROL Process Thumbnails]**) per la generazione di miniature statiche o quando tutti gli altri processi non generano le miniature, *entrambi* devono avere le stesse impostazioni.
 
-Con il passaggio Risorse **[!UICONTROL immagine per il processo di]** elementi multimediali dinamici, le miniature vengono generate dal server immagini e questa configurazione è indipendente dalla configurazione applicata al passaggio Miniature **** processo. La generazione delle miniature tramite il passaggio Miniature **** processo rappresenta il modo più lento e intenso di creare le miniature mediante la quantità di memoria.
+Con il passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]**, le miniature vengono generate da Image Server e questa configurazione è indipendente da quella applicata al passaggio **[!UICONTROL Elabora miniature]**. La generazione delle miniature tramite il passaggio **[!UICONTROL Elabora miniature]** rappresenta il modo più lento e laborioso di creare le miniature, in termini di utilizzo della memoria.
 
 Il ridimensionamento delle miniature è definito nel seguente formato: **[!UICONTROL width:height:center]**, ad esempio *80:80:false*. Larghezza e altezza determinano le dimensioni in pixel della miniatura; il valore center è false o true e se è impostato su true, indica che l&#39;immagine in miniatura ha esattamente le dimensioni specificate nella configurazione. Se l’immagine ridimensionata è più piccola, viene centrata all’interno della miniatura.
 
 >[!NOTE]
 >
->* Le dimensioni delle miniature per i file EPS sono configurate nel passaggio Miniature **[!UICONTROL di]** EPS, nella scheda **[!UICONTROL Argomenti]** della sezione Miniature.
+>* Le dimensioni delle miniature per i file EPS sono configurate nel passaggio **[!UICONTROL Miniature EPS]**, cui si accede selezionando la scheda **[!UICONTROL Argomenti]** della sezione Miniature.
    >
    >
-* Le dimensioni delle miniature per i video sono configurate nel passaggio Miniature **** FFmpeg, nella scheda **[!UICONTROL Processo]** in **[!UICONTROL Argomenti]**.
+* Le dimensioni delle miniature per i video sono configurate nel passaggio **[!UICONTROL Miniature FFmpeg]**, nella scheda **[!UICONTROL Processo]** di **[!UICONTROL Argomenti]**.
 >
 
 
@@ -189,15 +192,15 @@ Il ridimensionamento delle miniature è definito nel seguente formato: **[!UICON
 **Per configurare la dimensione delle miniature delle immagini**
 
 1. Toccate **[!UICONTROL Strumenti > Flusso di lavoro > Modelli > DAM Update Asset > Edit (Aggiorna risorsa DAM)]**.
-1. Toccate il passaggio **[!UICONTROL Risorse]** immagine processo file multimediali dinamici e toccate la scheda **[!UICONTROL Miniature]** . Modificate le dimensioni delle miniature, in base alle esigenze, quindi toccate **[!UICONTROL OK]**.
+1. Toccate il passaggio **[!UICONTROL Risorse]** immagine processo file multimediali dinamici e toccate la scheda **[!UICONTROL Miniature]** . Modifica le dimensioni delle miniature in base alle esigenze, quindi tocca **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-mininailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Toccate il passaggio Miniature **** processo, quindi toccate la scheda **[!UICONTROL Miniature]** . Modificate le dimensioni delle miniature, in base alle esigenze, quindi toccate **[!UICONTROL OK]**.
+1. Tocca il passaggio **[!UICONTROL Elabora miniature]**, quindi tocca la scheda **[!UICONTROL Miniature]**. Modifica le dimensioni delle miniature in base alle esigenze, quindi tocca **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >I valori nell’argomento delle miniature nel passaggio Miniature **[!UICONTROL di]** processo devono corrispondere all’argomento Miniature nel passaggio Risorse **[!UICONTROL immagine di processo elementi multimediali]** dinamici.
+   >I valori nell’argomento miniature del passaggio **[!UICONTROL Elabora miniature]** devono corrispondere all’argomento miniature nel passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]**.
 
 1. Toccate **[!UICONTROL Salva]** per salvare le modifiche al flusso di lavoro.
 
@@ -212,7 +215,7 @@ I predefiniti per immagini creati sono disponibili come rappresentazioni dinamic
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
-1. Nella proprietà **[!UICONTROL limit]** , modificare il valore **[!UICONTROL Value]**, impostato per impostazione predefinita su 15, sul numero desiderato.
+1. Nella proprietà **[!UICONTROL limit]**, modifica **[!UICONTROL Valore]**, che corrisponde a 15 per impostazione predefinita, inserendo un numero a piacere.
 1. Passa all’origine dati del predefinito per immagini in `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
@@ -222,7 +225,7 @@ I predefiniti per immagini creati sono disponibili come rappresentazioni dinamic
 
 ### Creazione di un predefinito per immagini {#creating-image-presets}
 
-La creazione di un predefinito per immagini consente di applicare tali impostazioni a tutte le immagini durante la visualizzazione in anteprima o la pubblicazione.
+La creazione di un predefinito per immagini consente di applicare tali impostazioni a tutte le immagini al momento della visualizzazione in anteprima o della pubblicazione.
 
 >[!NOTE]
 >
@@ -236,22 +239,22 @@ Consultate Formato [di file](#indesign-indd-file-format)InDesign (INDD).
 
 **Per creare un predefinito per immagini**
 
-1. In AEM, tocca il logo AEM per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti > Risorse > Predefiniti]** immagine.
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
 1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la finestra **[!UICONTROL Modifica predefinito]** immagine.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
    >[!NOTE]
    >
-   >Per rendere reattivo questo predefinito per immagini, cancellate i valori nei campi **[!UICONTROL larghezza]** e **[!UICONTROL altezza]** e lasciateli vuoti.
+   >Per rendere dinamico questo predefinito immagine, cancella i valori nei campi **[!UICONTROL larghezza]** e **[!UICONTROL altezza]**, lasciandoli vuoti.
 
-1. Immettete i valori desiderati nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]** , compreso un nome. Le opzioni sono descritte in Opzioni [predefinito per](#image-preset-options)immagini. I predefiniti vengono visualizzati nel riquadro a sinistra e possono essere usati al volo con altre risorse.
+1. Immetti i valori desiderati nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]**, compreso un nome. Le opzioni sono descritte in [Opzioni predefinito immagine](#image-preset-options). I predefiniti vengono visualizzati nel riquadro a sinistra e possono essere usati all’istante con altre risorse.
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
 1. Fate clic su **[!UICONTROL Save**.
 
-### Creazione di un predefinito per immagini reattivo {#creating-a-responsive-image-preset}
+### Creating a responsive Image Preset {#creating-a-responsive-image-preset}
 
 Per creare un predefinito per immagini reattivo, effettuate le operazioni descritte nella sezione [Creazione di predefiniti](#creating-image-presets)per immagini. Quando immettete l’altezza e la larghezza nella finestra **[!UICONTROL Modifica predefinito]** immagine, cancellate i valori e lasciateli vuoti.
 
@@ -259,7 +262,7 @@ Lasciandoli vuoti, indica ad AEM che questo predefinito per immagini è reattivo
 
 >[!NOTE]
 >
->Per visualizzare i pulsanti **[!UICONTROL URL]** e **[!UICONTROL RESS]** quando applicate un predefinito per immagini a una risorsa, la risorsa deve essere pubblicata.
+>Per visualizzare i pulsanti **[!UICONTROL URL]** e **[!UICONTROL RESS]** quando applichi un predefinito immagine a una risorsa, essa deve essere pubblicata.
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
@@ -269,9 +272,9 @@ Lasciandoli vuoti, indica ad AEM che questo predefinito per immagini è reattivo
 
 Quando create o modificate i predefiniti per immagini, avete a disposizione le opzioni descritte in questa sezione. Inoltre, Adobe consiglia di iniziare dalle seguenti opzioni &quot;best practice&quot;:
 
-* **[!Formato** UICONTROL (scheda **[!UICONTROL Base]** ) - Selezionare **[!UICONTROL JPEG]** o un altro formato che soddisfi i requisiti. Tutti i browser Web supportano il formato immagine JPEG; offre un buon compromesso tra dimensioni ridotte dei file e qualità delle immagini. Tuttavia, le immagini in formato JPEG usano uno schema di compressione con perdita di dati che potrebbe introdurre artefatti di immagine indesiderati se l’impostazione di compressione è troppo bassa. Per questo motivo, Adobe consiglia di impostare la qualità di compressione su 75. Questa impostazione offre un buon compromesso tra la qualità delle immagini e le dimensioni ridotte dei file.
+* **[!UICONTROL Formato** scheda (**[!UICONTROL Base]**) - Seleziona **[!UICONTROL JPEG]** o un altro formato che rispetta i tuoi requisiti. Tutti i browser web supportano il formato immagine JPEG, in quanto offre un buon compromesso tra dimensioni ridotte dei file e qualità delle immagini. Tuttavia, le immagini in formato JPEG usano uno schema di compressione che causa la perdita di dati, con possibile introduzione di artefatti di immagine indesiderati, qualora l’impostazione di compressione sia troppo bassa. Per questo motivo, Adobe consiglia di impostare la qualità di compressione su 75. Questa impostazione offre un buon compromesso tra la qualità delle immagini e le dimensioni ridotte dei file.
 
-* **[!UICONTROL Attiva nitidezza]** semplice: non selezionate **[!UICONTROL Attiva nitidezza]** semplice (il filtro di nitidezza offre un controllo inferiore rispetto alle impostazioni Maschera di contrasto).
+* **[!UICONTROL Attiva nitidezza semplice]**: non selezionare **[!UICONTROL Attiva nitidezza semplice]** (il filtro di nitidezza offre un controllo inferiore rispetto alle impostazioni Maschera definizione dettagli).
 
 * **[!UICONTROL Nitidezza: Modalità]** Di Ricampionamento - Seleziona **[!UICONTROL Bicubico]**.
 
@@ -296,7 +299,7 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
    <td><p>Scegliete un formato dal menu.</p> <p>L’opzione <strong>JPEG</strong> offre le seguenti opzioni aggiuntive:</p>
     <ul>
      <li><strong>Qualità</strong> - Controlla il livello di compressione JPEG. Questa impostazione influisce sia sulla dimensione del file che sulla qualità dell’immagine. La scala di qualità JPEG va da 1 a 100. La scala è visibile quando trascinate il cursore.</li>
-     <li><strong>Attiva il downsampling della crominanza</strong> JPG - Poiché l'occhio è meno sensibile alle informazioni sui colori ad alta frequenza rispetto alla luminanza ad alta frequenza, le immagini JPEG dividono le informazioni sulle immagini in componenti luminanza e colore. Quando un’immagine JPEG viene compressa, il componente luminanza viene lasciato a risoluzione piena, mentre i componenti colore vengono sottoposti a downsampling calcolando la media di gruppi di pixel. Il downsampling riduce il volume dei dati di mezzo o di un terzo, senza quasi alcun impatto sulla qualità percepita. Il downsampling non è applicabile alle immagini in scala di grigio. Questa tecnica riduce la quantità di compressione utile per le immagini ad alto contrasto (ad esempio, immagini con testo sovrapposto).</li>
+     <li><strong>Attiva il downsampling della crominanza</strong> JPG - Poiché l'occhio è meno sensibile alle informazioni sui colori ad alta frequenza rispetto alla luminanza ad alta frequenza, le immagini JPEG dividono le informazioni sulle immagini in componenti luminanza e colore. Quando un’immagine JPEG viene compressa, il componente luminanza viene lasciato a risoluzione piena, mentre i componenti colore vengono sottoposti a downsampling calcolando la media di gruppi di pixel. Il downsampling riduce il volume dei dati di mezzo o di un terzo, senza quasi alcun impatto sulla qualità percepita. Il downsampling non è applicabile alle immagini in scala di grigio. Questa tecnica riduce la quantità di compressione utile per le immagini ad alto contrasto (ad esempio, per le immagini con testo sovrapposto).</li>
     </ul>
     <div>
       Se scegliete <strong>GIF</strong> o <strong>GIF con alfa</strong> , sono disponibili le seguenti opzioni aggiuntive di Quantizzazione <strong>colore</strong> GIF:
@@ -360,11 +363,11 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
    <td><p>Selezionate <strong>Nessuno</strong>, <strong>Nitidezza</strong>o Maschera di <strong>contrasto</strong>. </p>
     <ul>
      <li>Selezionate <strong>Nessuno</strong> per disattivare la nitidezza.</li>
-     <li>Selezionate <strong>Nitidezza </strong>per applicare all’immagine un filtro di nitidezza di base dopo che è stato effettuato il ridimensionamento. La nitidezza può compensare la sfocatura che può prodursi quando un’immagine viene visualizzata in dimensioni diverse. </li>
-     <li>Selezionate<strong> Maschera</strong> di contrasto per regolare con precisione un effetto filtro di nitidezza sull’immagine ricampionata finale. Potete controllare l’intensità dell’effetto, il raggio (in pixel) e una soglia di contrasto che verrà ignorata. Questo effetto utilizza le stesse opzioni del filtro Maschera di contrasto di Photoshop.</li>
+     <li>Selezionate <strong>Nitidezza </strong>per applicare all’immagine un filtro di nitidezza di base dopo che è stato effettuato il ridimensionamento. La nitidezza può contribuire a compensare la sfocatura che può prodursi quando un’immagine viene visualizzata in dimensioni diverse. </li>
+     <li>Select<strong> Unsharp mask</strong> to fine-tune a sharpening filter effect on the final downsampled image. Potete controllare l’intensità dell’effetto, il raggio (in pixel) e una soglia di contrasto che verrà ignorata. L’effetto utilizza le stesse opzioni del filtro “Maschera definizione dettagli” di Photoshop.</li>
     </ul> <p>In Maschera <strong>di contrasto</strong>sono disponibili le seguenti opzioni:</p>
     <ul>
-     <li><strong>Fattore</strong> - Controlla la quantità di contrasto applicata ai pixel dei bordi. Il valore predefinito del numero reale è 1,0. Per le immagini ad alta risoluzione, è possibile aumentare la risoluzione fino a 5,0. Considerate il fattore come una misura dell'intensità del filtro.</li>
+     <li><strong>Fattore</strong> - Controlla la quantità di contrasto applicata ai pixel lungo i bordi. Il valore predefinito del numero reale è 1,0. Per le immagini ad alta risoluzione, è possibile aumentare la risoluzione fino a 5,0. Considerate l'importo come una misura dell'intensità del filtro.</li>
      <li><strong>Raggio</strong> - Determina il numero di pixel attorno ai pixel del bordo che influiscono sulla nitidezza. Per le immagini ad alta risoluzione, immettete un numero reale da 1 a 2. Un valore basso rende più nitidi solo i pixel del bordo; un valore elevato rende più nitida una banda più ampia di pixel. Il valore corretto dipende dalle dimensioni dell’immagine.</li>
      <li><strong>Soglia</strong> - Determina l'intervallo di contrasto da ignorare quando viene applicato il filtro maschera di contrasto. In altre parole, questa opzione determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel di un bordo e quindi resi più nitidi. Per evitare di introdurre disturbo, provate con valori interi compresi tra 2 e 20. </li>
      <li><strong>Applica a</strong> - Determina se applicare la non nitidezza a ogni colore o luminosità.</li>
@@ -386,11 +389,11 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
   </tr>
   <tr>
    <td><strong>Risoluzione di stampa</strong></td>
-   <td>Selezionare una risoluzione per stampare l'immagine; Il valore predefinito è 72 pixel.</td>
+   <td>Selezionare una risoluzione per la stampa dell'immagine; Il valore predefinito è 72 pixel.</td>
   </tr>
   <tr>
    <td><strong>Modificatore immagine</strong></td>
-   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell’interfaccia, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Modificatori</strong> immagini. Questi parametri sono definiti nel riferimento <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">al comando</a>Image Server Protocol.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p>
+   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell’interfaccia utente, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Modificatori</strong> immagini. Questi parametri sono definiti nel riferimento <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">al comando</a>Image Server Protocol.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p>
     <ul>
      <li>Comandi di base per la modellazione e il rendering del testo: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandi di localizzazione: <code>locale=</code> e <code>req=xlate</code></li>
@@ -457,7 +460,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
 ### Modifica dei predefiniti per immagini {#modifying-image-presets}
 
-1. In AEM, tocca il logo AEM per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti > Risorse > Predefiniti]** immagine.
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
