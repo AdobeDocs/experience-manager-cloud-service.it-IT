@@ -3,6 +3,9 @@ title: 'Pacchetto per la struttura dell’archivio dei progetti AEM  '
 description: Adobe Experience Manager come progetto Cloud Service Maven richiede una definizione del sottopacchetto della struttura dell'archivio il cui unico scopo è definire le radici dell'archivio JCR in cui vengono distribuiti i sottopacchetti Codice del progetto.
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 9%
 
 ---
 
@@ -155,7 +158,7 @@ Nei pacchetti `ui.apps/pom.xml`e altri pacchetti `pom.xml`di codice, aggiungete 
 
 Un caso d’uso meno comune e più complesso supporta la distribuzione di più pacchetti di codice che si installano nelle stesse aree dell’archivio JCR.
 
-Esempio:
+Ad esempio:
 
 + Il pacchetto di codice A si distribuisce in `/apps/a`
 + Il pacchetto di codice B si distribuisce in `/apps/a/b`
