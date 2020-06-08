@@ -1,13 +1,16 @@
 ---
-title: Variazioni - Creazione di contenuto frammento
+title: Varianti - Authoring dei contenuti di frammenti
 description: Le varianti consentono di creare il contenuto per il frammento e quindi di crearne le varianti in base allo scopo (se necessario).
 translation-type: tm+mt
 source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+workflow-type: tm+mt
+source-wordcount: '1710'
+ht-degree: 19%
 
 ---
 
 
-# Variazioni - Creazione di contenuto frammento{#variations-authoring-fragment-content}
+# Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
 [Le varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una caratteristica importante dei frammenti di contenuto, in quanto consentono di creare e modificare copie del contenuto principale da utilizzare su canali e/o scenari specifici.
 
@@ -36,7 +39,7 @@ Eseguire una serie di altre azioni in base al tipo di dati in corso di modifica;
 
 ## Authoring dei contenuti {#authoring-your-content}
 
-Quando si apre il frammento di contenuto per la modifica, per impostazione predefinita viene aperta la scheda **Variazioni** . Qui potete creare il contenuto, per Master o qualsiasi altra variante disponibile. Tieni presente quanto segue:
+Quando si apre il frammento di contenuto per la modifica, per impostazione predefinita viene aperta la scheda **Variazioni** . Qui potete creare il contenuto, per Master o qualsiasi altra variante disponibile. Operazioni disponibili:
 
 * apportare modifiche direttamente nella scheda **Variazioni**
 * aprire l’editor [a schermo](#full-screen-editor) intero su:
@@ -46,7 +49,7 @@ Quando si apre il frammento di contenuto per la modifica, per impostazione prede
 
    * accedere a una serie di [azioni](#actions)
 
-Esempio:
+Ad esempio:
 
 * Modifica di un frammento semplice
 
@@ -97,7 +100,7 @@ Le opzioni per la modifica del testo su più righe dipendono dal formato selezio
 * [Testo normale](#plain-text)
 * [Markdown](#markdown)
 
-Il formato può essere selezionato con l&#39;editor a schermo intero.
+Il formato può essere selezionato quando si utilizza l&#39;editor a schermo intero.
 
 ### Formato RTF {#rich-text}
 
@@ -115,7 +118,7 @@ La modifica RTF consente di formattare:
 
    * Incolla testo/da Word
    * Inserire una tabella
-   * Stile paragrafo: Paragrafo, Rubrica 1/2/3
+   * Stile paragrafo: Paragrafo, Intestazione 1/2/3
    * [Inserire risorse visive](#inserting-assets-into-your-fragment)
    * Ricerca
    * Trova/Sostituisci
@@ -130,7 +133,7 @@ Testo semplice consente di inserire rapidamente il contenuto senza informazioni 
 
 >[!CAUTION]
 >
->Se selezionate Testo **** normale, potreste perdere formattazione, marcature e/o risorse inserite in **RTF** o **Marcatura**.
+>Se selezioni **Testo normale**, potresti perdere la formattazione, le marcature e/o le risorse inserite in **Rich Text** o **Markdown**.
 
 ### Markdown {#markdown}
 
@@ -154,13 +157,13 @@ Potete anche aprire l’editor a schermo intero per ulteriori [azioni](#actions)
 
 >[!CAUTION]
 >
->Se si passa da **Rich Text** a **Markdown** , si potrebbero verificare effetti imprevisti con le quotazioni dei blocchi e i blocchi di codice, in quanto questi due formati possono avere differenze nelle modalità di gestione.
+>Se passi da **Rich Text** a **Markdown**, potresti riscontrare effetti imprevisti con Block Quotes (Citazioni) e Code Blocks (Blocchi di codice), in quanto questi due formati possono presentare differenze nelle modalità di gestione.
 
 ### Visualizzazione delle statistiche chiave {#viewing-key-statistics}
 
-Quando l&#39;editor a schermo intero è aperto, l&#39;azione Statistiche **** testo visualizzerà una serie di informazioni sul testo.
+Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** visualizzerà una serie di informazioni sul testo.
 
-Esempio:
+Ad esempio:
 
 ![statistica](assets/cfm-variations-04.png)
 
@@ -207,6 +210,7 @@ Altre lingue sono disponibili come pacchetti di modelli di lingua da Package Sha
    * Tutte le frasi da eliminare sono evidenziate in rosso, con lo sciopero.
    * Fate clic su una frase evidenziata per mantenerla nel contenuto riepilogato.
    * Fate clic su una frase non evidenziata per eliminarla.
+
    ![confronto riepilogativo](assets/cfm-variations-06.png)
 
 6. Selezionate **Riepiloga** per confermare le modifiche.
@@ -255,38 +259,39 @@ Tuttavia, la formattazione della risorsa (ad es. dimensione) deve essere effettu
 >[!NOTE]
 There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
-1. Posizionate il cursore nella posizione in cui desiderate aggiungere l’immagine.
-2. Utilizzate l&#39;icona **Inserisci risorsa** per aprire la finestra di dialogo di ricerca.
+1. Posiziona il cursore nel punto in cui vuoi aggiungere l’immagine.
+2. Per aprire la finestra di dialogo di ricerca, utilizza l’icona **Inserisci risorsa**.
 
-   ![icona Inserisci risorsa](assets/cfm-variations-09.png)
+   ![inserire l&#39;icona della risorsa](assets/cfm-variations-09.png)
 
 3. Nella finestra di dialogo potete:
 
    * passa alla risorsa richiesta in DAM
    * cercare la risorsa in DAM
+
    Una volta individuata la risorsa desiderata, selezionatela facendo clic sulla miniatura.
 
-4. Utilizzate **Seleziona** per aggiungere la risorsa al sistema paragrafo del frammento di contenuto nella posizione corrente.
+4. Utilizza **Seleziona** per aggiungere la risorsa al sistema paragrafo del frammento di contenuto nella posizione corrente.
 
    >[!CAUTION]
-   Se, dopo aver aggiunto una risorsa, cambiate il formato in:
-   * **Testo** normale: la risorsa verrà persa completamente dal frammento.
-   * **Marcatura**: la risorsa non sarà visibile, ma resterà visibile quando tornerete a **RTF**.
+   Se, dopo aver aggiunto una risorsa, ne cambi il formato in:
+   * **Testo normale**: la risorsa verrà persa completamente dal frammento.
+   * **Markdown**: la risorsa non sarà visibile, ma lo tornerà a essere quando tornerai a **Rich Text**.
 
 
 ## Gestione delle varianti {#managing-variations}
 
 ### Creazione di una variante {#creating-a-variation}
 
-Le varianti consentono di prendere il contenuto **principale** e modificarlo in base allo scopo (se necessario).
+Le varianti consentono di utilizzare il contenuto **principale** e di modificarlo in base allo scopo (se necessario).
 
 Per creare una nuova variante:
 
 1. Aprire il frammento e assicurarsi che il pannello laterale sia visibile.
 1. Selezionate **Variazioni** dalla barra delle icone nel pannello laterale.
 1. Selezionate **Crea variante**.
-1. Viene visualizzata una finestra di dialogo in cui vengono specificati **Titolo** e **Descrizione** per la nuova variante.
-1. Selezionate **Aggiungi**; il frammento **Master** verrà copiato nella nuova variante, che è ora aperta per la [modifica](#editing-a-variation).
+1. Viene aperta una finestra di dialogo in cui vengono specificati **Titolo** e **Descrizione** per la nuova variante.
+1. Seleziona **Aggiungi**, il frammento **Master** verrà copiato nella nuova variante, che è ora aperta per la [modifica](#editing-a-variation).
 
    >[!NOTE]
    Quando create una nuova variante, viene sempre copiata la variante **principale** , non la variante attualmente aperta.
@@ -304,11 +309,11 @@ Puoi apportare modifiche al contenuto della variante dopo:
 
 Per rinominare una variante esistente:
 
-1. Aprire il frammento e selezionare **Variazioni** dal pannello laterale.
+1. Open your fragment and select **Variations** from the side panel.
 1. Selezionate la variante desiderata.
 1. Selezionate **Rinomina** dal menu a discesa **Azioni** .
 
-1. Immettete il nuovo **Titolo** e/o **Descrizione** nella finestra di dialogo risultante.
+1. Immetti il nuovo **Titolo** e/o **Descrizione** nella finestra di dialogo in questione.
 
 1. Confermate l’azione **Rinomina** .
 
@@ -319,7 +324,7 @@ Questo incide solo sul **Titolo** della variante.
 
 Per eliminare una variante esistente:
 
-1. Aprire il frammento e selezionare **Variazioni** dal pannello laterale.
+1. Open your fragment and select **Variations** from the side panel.
 1. Selezionate la variante desiderata.
 1. Selezionate **Elimina** dal menu a discesa **Azioni** .
 
@@ -337,7 +342,7 @@ Quando si modifica una variante, è possibile accedere all&#39;azione per sincro
 >[!CAUTION]
 La sincronizzazione è disponibile solo per copiare le modifiche *da **Master**alla variante*.
 Viene sincronizzato solo l’elemento corrente della variante.
-La sincronizzazione funziona solo sul tipo di dati di testo **** su più righe.
+La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
 Il trasferimento delle modifiche *da una variante a **Master ***non è disponibile come opzione.
 
 1. Aprire il frammento di contenuto nell&#39;editor frammento. Verificare che la **Master** sia stata modificata.
@@ -352,6 +357,7 @@ Il trasferimento delle modifiche *da una variante a **Master ***non è disponibi
    * verde indica il contenuto aggiunto (alla variante)
    * il rosso indica che il contenuto è stato rimosso (dalla variante)
    * blu indica il testo sostituito
+
    ![sincronizzazione con master](assets/cfm-variations-11.png)
 
 1. Selezionate **Sincronizza**. La variante verrà aggiornata e visualizzata.
