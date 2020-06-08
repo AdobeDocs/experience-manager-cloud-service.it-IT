@@ -1,8 +1,11 @@
 ---
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 100%
 
 ---
 
@@ -67,6 +70,7 @@ Le proprietà sono distribuite su più schede.
 
    * Consente di immettere un URL personalizzato per questa pagina, se desideri inserire un URL più breve e/o più significativo.
    * Ad esempio, se l’URL personalizzato è impostato su `welcome` per la pagina identificata dal percorso `/v1.0/startpage` del sito web `http://example.com`, `http://example.com/welcome` sarà l’URL personalizzato di `http://example.com/content/v1.0/startpage`.
+
    >[!CAUTION]
    >
    >Gli URL personalizzati:
@@ -172,6 +176,7 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 * **Cloud Services**
 
    * Consente di definire le proprietà per Cloud Services.
+
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -180,6 +185,7 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 * **Configurazioni ContextHub**
 
    * Consente di selezionare la configurazione ContextHub e il percorso dei segmenti.
+
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -196,6 +202,7 @@ Mostra la miniatura della pagina. Operazioni disponibili:
    * Aggiungere autorizzazioni
    * Modificare un gruppo utenti chiuso
    * Visualizzare le autorizzazioni effettive
+
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -207,6 +214,7 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 * **Blueprint**
 
    * Consente di definire le proprietà per una pagina Blueprint nella gestione multisito.
+
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
