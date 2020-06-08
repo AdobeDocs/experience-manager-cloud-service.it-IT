@@ -3,6 +3,9 @@ description: 'La newsletter Dynamic Media Newsletter di Experience League è una
 title: Newsletter per contenuti multimediali dinamici
 translation-type: tm+mt
 source-git-commit: 1ee8cd31a83850d0d6c90cb5452015a57ee728ef
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 0%
 
 ---
 
@@ -29,6 +32,7 @@ In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse p
    * Visualizza le sessioni per contenuti multimediali dinamici da Adobe Summit 2020 online.
    * Ulteriori informazioni sui nostri audit Dynamic Media Classic gratuiti.
    * Scopri John Monroe, Senior Program Manager per i servizi di assistenza al successo dei clienti.
+
    >[!IMPORTANT]
    >
    >Desideriamo essere certi di inviare la newsletter solo a coloro che la desiderano. Per continuare a ricevere la newsletter dopo questo problema, registratevi [qui](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
