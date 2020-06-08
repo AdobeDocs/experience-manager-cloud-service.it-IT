@@ -1,20 +1,23 @@
 ---
-title: Notevoli modifiche ai siti AEM nel servizio AEM Cloud
-description: 'Notevoli modifiche ai siti AEM nel servizio AEM Cloud '
+title: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
+description: 'Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 11%
 
 ---
 
 
-# Notevoli modifiche ai siti AEM come servizio cloud {#notable-changes}
+# Modifiche di rilievo apportate ad AEM Sites as a Cloud Service {#notable-changes}
 
 AEM Sites as a Cloud Service offre funzionalità di gestione dell&#39;esperienza come parte di AEM nativo del cloud come piattaforma di servizio cloud. Oltre ai vantaggi di base di AEM come servizio cloud, come la scalabilità nativa del cloud, il tempo di attività e sempre aggiornato, AEM Sites as a Cloud Service offre anche una serie di modifiche e aggiunte specifiche a Siti.
 
 >[!NOTE]
 >Questo documento evidenzia le modifiche importanti apportate a AEM Sites. Per le modifiche generali ad AEM in Cloud vedi:
 >
->* [Notevoli modifiche ad Adobe Experience Manager (AEM) come servizio Cloud](/help/release-notes/aem-cloud-changes.md)
+>* [Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md)
 
 
 Le modifiche e le aggiunte in AEM Sites come servizio cloud sono le seguenti:
@@ -24,7 +27,7 @@ Le modifiche e le aggiunte in AEM Sites come servizio cloud sono le seguenti:
 
 ## Operazioni asincrone sulle pagine {#asynchronous-page-operations}
 
-Nel servizio AEM Cloud, le operazioni che tradizionalmente hanno bloccato l&#39;interfaccia utente sono state suddivise in attività più piccole eseguite in background.
+Nel servizio AEM Cloud, le operazioni che tradizionalmente hanno bloccato l&#39;interfaccia utente sono state suddivise in attività più piccole che vengono eseguite in background.
 
 * Spostare le pagine
 * Pagine di rollout
@@ -37,9 +40,9 @@ L’iniziatore di tali azioni può controllarne lo stato in una nuova interfacci
 
 ## Nuovo sito di riferimento ed esercitazione {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), un nuovo sito di riferimento di AEM, è stato aggiornato e pubblicato in modo da riflettere le procedure ottimali per la creazione di un sito Web con AEM e il set completo di funzionalità, componenti e modelli di implementazione disponibili in AEM. Il nuovo sito di riferimento e l&#39; [esercitazione](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) che lo accompagna riguardano argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti con Adobe Experience Manager Sites.
+[WKND](https://wknd.site/), un nuovo sito di riferimento di AEM, è stato aggiornato e pubblicato in modo da riflettere le procedure ottimali per la creazione di un sito Web con AEM e il set completo di funzionalità, componenti e modelli di implementazione disponibili in AEM. Il nuovo sito di riferimento e l&#39; [esercitazione](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) che lo accompagna riguardano argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti con Adobe Experience Manager Sites.
 
-In precedenza, We.Retail veniva installato per impostazione predefinita con AEM (tranne quando veniva avviato in modalità di produzione).  Ora, per impostazione predefinita, un sito di riferimento non verrà installato.  Viene invece fornito [git repo](https://github.com/adobe/aem-guides-wknd/) e [l&#39;esercitazione](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) con il codice del sito di riferimento WKND aggiornato.
+In precedenza, We.Retail veniva installato per impostazione predefinita con AEM (tranne quando veniva avviato in modalità di produzione).  Ora, per impostazione predefinita, un sito di riferimento non verrà installato.  Viene invece fornito [git repo](https://github.com/adobe/aem-guides-wknd/) e [l&#39;esercitazione](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) con il codice del sito di riferimento WKND aggiornato.
 
 ## Funzionalità non disponibili in Runtime {#capabilities-not-available-at-runtime}
 
