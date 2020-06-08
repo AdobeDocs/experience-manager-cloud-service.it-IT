@@ -1,8 +1,11 @@
 ---
-title: Configurazione dell’ambiente dell’account
-description: AEM consente di configurare l’account e alcuni aspetti dell’ambiente di authoring
-translation-type: ht
+title: 'Configurazione dell’ambiente dell’account  '
+description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 100%
 
 ---
 
@@ -82,6 +85,7 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
    * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+
    Questa opzione abilita le scelte rapide da tastiera. Queste sono abilitate per impostazione predefinita, ma possono essere disabilitate se, ad esempio, un utente presenta determinati requisiti di accessibilità.
 
 * **Abilita pagina iniziale di Assets**
