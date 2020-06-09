@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 08736e38f9dde46997484ccd4807de0ba2f67b2f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 4%
+source-wordcount: '2258'
+ht-degree: 5%
 
 ---
 
@@ -144,7 +144,8 @@ Consultate anche [Anteprima delle risorse tramite l’interfaccia](/help/assets/
 
    * Nella parte superiore destra della pagina, fate clic su **[!UICONTROL Anteprima]** per passare alla modalità **[!UICONTROL Anteprima]** .
    * Elimina `/editor.html` dall’URL della pagina nel browser.
-   ![Risorsa 3D visualizzata all’interno del componente](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)File multimediali 3D Una risorsa 3D completamente interattiva visualizzata in modalità **[!UICONTROL Anteprima]** .
+
+Una risorsa 3D completamente interattiva come visualizzata in    ![Risorsa 3D visualizzata all’interno del componente](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)File multimediali 3D Una risorsa 3D completamente interattiva visualizzata in modalità **[!UICONTROL Anteprima]** .
 
 1. In modalità **[!UICONTROL Anteprima]** , effettuate una delle seguenti operazioni:
 
@@ -242,21 +243,19 @@ Consultate [Aggiunta del componente File multimediali 3D a una pagina](#adding-t
 >
 >Mentre una pagina Web è in modalità di **[!UICONTROL modifica]** di AEM Sites, il componente File multimediali 3D visualizza la risorsa 3D ma non è possibile interagire con essa. Per rendere la risorsa interattiva, potete usare la funzione **[!UICONTROL Anteprima]** per visualizzare la pagina Web nell’editor pagina e accedere pienamente alle funzionalità del componente File multimediali 3D.
 
-## Publishing Dynamic Media 3D assets {#publishing-three-d-assets}
+## Pubblicazione di risorse 3D Dynamic Media statiche {#publishing-three-d-assets}
 
 Dynamic Media accetta una serie di formati di file 3D supportati come contenuto ** statico in Dynamic Media. I contenuti statici consentono di caricare e pubblicare risorse 3D, ma non è supportato il riversamento *dinamico* di immagini o immagini associato alla risorsa 3D. Il motivo è che Dynamic Media Imaging Server non riconosce i formati 3D. Di conseguenza, dopo aver pubblicato una risorsa 3D in Contenuti multimediali dinamici, potete copiare un URL immediato. L’URL per la risorsa 3D segue la consueta struttura URL per file multimediali dinamici. Tuttavia, non potete modificare alcun parametro nell’URL della risorsa, a differenza delle risorse di immagine tradizionali negli elementi multimediali dinamici.
 
+Consultate anche [Ottenimento di un URL per una risorsa](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)statica.
+
 Nella vista **[!UICONTROL a]** schede, una piccola icona a forma di globo appare direttamente sotto il nome di una risorsa e a sinistra della data e dell’ora per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
+
+Se utilizzate AEM come WCM, usate questo metodo di pubblicazione per aggiungere le risorse 3D per elementi multimediali dinamici direttamente sulla pagina Web.
 
 Consultate anche [Pubblicazione di risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)per file multimediali dinamici.
 
 Consultate anche [Pubblicazione di pagine](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
-
->[!MORELIKETHIS]
->
->Se utilizzate un sistema di gestione dei contenuti Web di terze parti, potete collegare o incorporare risorse 3D alle pagine Web.
->
->See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
 **Per pubblicare risorse 3D per elementi multimediali dinamici**
 
@@ -270,10 +269,23 @@ Consultate anche [Pubblicazione di pagine](/help/sites-cloud/authoring/fundament
 
    ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
 
-1. Toccate **[!UICONTROL originale]**. Quando una risorsa 3D viene pubblicata (o &quot;attivata&quot;), il pulsante URL viene visualizzato accanto all’angolo in basso a sinistra della pagina, se vengono soddisfatte tutte le seguenti condizioni per la risorsa 3D:
+1. Toccate **[!UICONTROL originale]**. Quando una risorsa 3D viene pubblicata (o &quot;attivata&quot;), il pulsante **[!UICONTROL URL]** viene visualizzato accanto all’angolo in basso a sinistra della pagina, se sono soddisfatte tutte le seguenti condizioni per la risorsa 3D:
    * La risorsa 3D è un formato supportato (GLB, OBJ, STL e USDZ).
    * La risorsa 3D è stata assimilata in Dynamic Media Image Production System (IPS).
    * La risorsa 3D viene pubblicata.
+
    ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
 
-1. Toccate **[!UICONTROL URL]** per visualizzare l&#39;URL di produzione della risorsa 3D.
+1. Toccate **[!UICONTROL URL]** per visualizzare l&#39;URLdi produzione diretto della risorsa 3D, che potete copiare e usare sulle pagine Web.
+
+### Metodi alternativi per la pubblicazione di risorse 3D per file multimediali dinamici mediante il visualizzatore dimensionale {#alternate-publish-methods}
+
+Se *non* utilizzate AEM come WCM, utilizzate i due metodi seguenti per pubblicare le risorse Dynamic Media 3D.
+
+* **[!UICONTROL URL]** - Utilizzate **[!UICONTROL URL]** se utilizzate un sistema di gestione dei contenuti Web di terze parti e desiderate collegare le risorse 3D per elementi multimediali dinamici alle pagine Web mediante il visualizzatore dimensionale.
+
+   See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+
+* **[!UICONTROL Incorpora]** - Utilizzate **[!UICONTROL Incorpora]** per visualizzare una risorsa Dynamic Media 3D incorporata in una pagina Web mediante il visualizzatore Dimensionale. Puoi copiare il codice da incorporare negli Appunti, per poi incollarlo nelle pagine web. Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
+
+   Consultate [Incorporamento di video per file multimediali dinamici, visualizzatore immagini o visualizzatore dimensionale in una pagina](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)Web.
