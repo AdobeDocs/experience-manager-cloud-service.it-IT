@@ -2,15 +2,15 @@
 title: Incorporazione di un visualizzatore video o immagine per contenuti multimediali dinamici in una pagina Web
 description: Scopri come incorporare video o immagini Dynamic Media in una pagina Web
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '371'
 ht-degree: 22%
 
 ---
 
 
-# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Incorporazione di video per file multimediali dinamici, visualizzatori immagini o visualizzatori dimensionali in una pagina Web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilizza la funzione **[!UICONTROL Incorpora codice]** per riprodurre il video o visualizzare una risorsa incorporata in una pagina web. Puoi copiare il codice da incorporare negli Appunti, per poi incollarlo nelle pagine web. La modifica del codice non è consentita nella finestra di dialogo **[!UICONTROL Incorpora codice]**.
 
