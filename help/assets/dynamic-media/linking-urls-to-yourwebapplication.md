@@ -2,9 +2,9 @@
 title: Collegamento di URL all’applicazione web
 description: Come collegare gli URL all’applicazione Web in contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1272'
 ht-degree: 11%
 
 ---
@@ -22,13 +22,13 @@ Per inserire queste stringhe URL nelle pagine Web e nelle applicazioni, copiatel
 >
 >Le stringhe URL sono disponibili solo per le rappresentazioni dinamiche delle risorse. Al momento non sono disponibili per le risorse statiche che risiedono in DAM e non nel server per contenuti multimediali dinamici. Il pulsante URL non viene visualizzato per le rappresentazioni statiche.
 
-See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-See also [Linking YouTube URLs to your Web Application.](video.md)
+See also [Linking YouTube URLs to your Web Application](video.md).
 
-See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
-See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-assets)
+See also [Uploading Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ## Ottenimento di un URL per una risorsa {#obtaining-a-url-for-an-asset}
 
@@ -52,7 +52,7 @@ Esistono diversi modi per ottenere una stringa URL. Tuttavia, i passaggi seguent
 
    Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito immagine.
 
-   Consultate [Pubblicazione delle risorse.](publishing-dynamicmedia-assets.md)
+   Consultate [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md).
 
    See [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -84,6 +84,7 @@ Esistono diversi modi per ottenere una stringa URL. Tuttavia, i passaggi seguent
 
 Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse aggiuntive oltre alle sole immagini e ai video. I formati di risorse statiche supportati per la distribuzione includono:
 
+* File 3D
 * GIF animata
 * File audio
 * CSS
@@ -99,7 +100,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
    Remember that URLs are only available to copy *after* you have first *published* the static asset.
 
-   Consultate [Pubblicazione delle risorse.](publishing-dynamicmedia-assets.md)
+   Consultate [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md).
 
 1. Per ottenere l’URL della risorsa statica pubblicata, usate uno dei seguenti metodi:
 
@@ -108,7 +109,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          Esempio, `https://aem.com/is/content/adobe/image.gif`.
-   * fate clic su **[!UICONTROL Risorse > Rappresentazioni]** dinamiche, quindi toccate una rappresentazione dinamica della risorsa statica e copiate l’URL.
+   * Toccate **[!UICONTROL Risorsa > Rappresentazioni]** dinamiche, quindi toccate una rappresentazione dinamica della risorsa statica e copiate l’URL.
 
       Modificate l’URL copiato in modo che venga utilizzato `is/content` nel percorso anziché `is/image/`.
 
@@ -144,7 +145,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
-   Ad esempio, utilizzando i percorsi di esempio e il nome cliente di esempio dai passaggi precedenti, il percorso completo viene visualizzato come segue:
+   Ad esempio, utilizzando i percorsi di esempio e il nome cliente di esempio dai passaggi descritti qui sopra, il percorso completo viene visualizzato come segue:
 
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
@@ -158,6 +159,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 1. Nella pagina Impostazioni **[!UICONTROL servizi]** Dynamic Media Cloud, effettua le seguenti operazioni:
 
    * In URL **[!UICONTROL del servizio]** video, copiate l’intero percorso dell’URL. Successivamente, in questi passaggi, sarà necessario copiare il percorso URL. Ad esempio, il percorso dell’URL potrebbe essere simile al seguente:
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (il percorso precedente è solo a scopo illustrativo; non è il percorso effettivo che copiate.)
