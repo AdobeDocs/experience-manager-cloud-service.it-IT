@@ -2,9 +2,9 @@
 title: Memorizzazione nella cache di AEM come servizio cloud
 description: 'Memorizzazione nella cache di AEM come servizio cloud '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1358'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,10 @@ ht-degree: 0%
 
 # Introduzione {#intro}
 
-La memorizzazione nella cache del CDN può essere configurata utilizzando le regole del dispatcher. Il dispatcher rispetta anche le intestazioni di scadenza della cache risultanti se `enableTTL` è abilitato nella configurazione del dispatcher, il che implica che aggiornerà contenuto specifico anche al di fuori del contenuto che viene ripubblicato.
+Il traffico passa attraverso la CDN a un livello di server Web Apache, che supporta i moduli incluso il dispatcher. Per migliorare le prestazioni, il dispatcher viene utilizzato principalmente come cache per limitare l’elaborazione sui nodi di pubblicazione.
+È possibile applicare delle regole alla configurazione del dispatcher per modificare eventuali impostazioni predefinite di scadenza della cache, con conseguente caching alla rete CDN. Il dispatcher rispetta anche le intestazioni di scadenza della cache risultanti se `enableTTL` è abilitato nella configurazione del dispatcher, il che implica che aggiornerà contenuto specifico anche al di fuori del contenuto che viene ripubblicato.
+
+Questa pagina descrive inoltre come la cache del dispatcher viene invalidata, nonché come funziona il caching a livello di browser per quanto riguarda le librerie lato client.
 
 ## Caching {#caching}
 
@@ -33,6 +36,14 @@ La memorizzazione nella cache del CDN può essere configurata utilizzando le reg
 ```
 /0000
 { /glob "*" /type "allow" }
+```
+
+* Per evitare che un contenuto specifico venga memorizzato nella cache, impostate l&#39;intestazione Cache-Control su &quot;private&quot;. Ad esempio, quanto segue impedisce che il contenuto HTML in una directory denominata &quot;myfolder&quot; venga memorizzato nella cache:
+
+```
+<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+    Header set Cache-Control “private”
+</LocationMatch>
 ```
 
 * Altri metodi, incluso il progetto [AEM ACS](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl, non sostituiranno correttamente i valori.
@@ -70,13 +81,9 @@ Accertatevi che le risorse da mantenere private anziché nella cache non faccian
 * impossibile impostare il valore predefinito con la `EXPIRATION_TIME` variabile utilizzata per i tipi di file html/text
 * la scadenza della cache può essere impostata con la stessa strategia LocationMatch descritta nella sezione html/text specificando il regex appropriato
 
-## Dispatcher {#disp}
+## Annullamento validità cache del dispatcher {#disp}
 
-Il traffico passa attraverso un server Web Apache, che supporta moduli incluso il dispatcher. Il dispatcher viene utilizzato principalmente come cache per limitare l’elaborazione sui nodi di pubblicazione al fine di migliorare le prestazioni.
-
-Come descritto nella sezione caching della CDN, le regole possono essere applicate alla configurazione del dispatcher per modificare eventuali impostazioni di scadenza predefinite della cache.
-
-Il resto di questa sezione descrive considerazioni relative all&#39;annullamento della validità della cache del dispatcher. Per la maggior parte dei clienti, non dovrebbe essere necessario annullare la validità della cache del dispatcher, affidandosi invece all’aggiornamento della cache del dispatcher al momento della ripubblicazione del contenuto e al rispetto della CDN delle intestazioni di scadenza della cache.
+In generale, non dovrebbe essere necessario annullare la validità della cache del dispatcher. È invece necessario fare affidamento sul dispatcher, che aggiorna la cache quando il contenuto viene ripubblicato, e sul CDN che rispetta le intestazioni di scadenza della cache.
 
 ### Annullamento della validità della cache del dispatcher durante l&#39;attivazione/disattivazione {#cache-activation-deactivation}
 
