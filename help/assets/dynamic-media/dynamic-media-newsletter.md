@@ -2,9 +2,9 @@
 description: 'La newsletter Dynamic Media Newsletter di Experience League è una newsletter mensile. È stato progettato per aiutarvi a imparare a usare i contenuti multimediali dinamici e i contenuti multimediali dinamici Classic in modo da poter iniziare subito a creare valore. In questa newsletter sono disponibili preziose risorse per la creazione di conoscenze, tra cui video, panoramiche delle soluzioni e introduzione ad alcune delle funzioni e funzionalità chiave come i predefiniti per immagini, i predefiniti per visualizzatori, i profili video e altro ancora. '
 title: Newsletter per contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: 1ee8cd31a83850d0d6c90cb5452015a57ee728ef
+source-git-commit: 6eb9f2fd6f692df26e4bd1b56cbc18db84b2f53f
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,21 @@ In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse p
 [Registratevi](https://www.adobe.com/subscription/dynamic-media-newsletter.html) per ricevere la newsletter per contenuti multimediali dinamici mensilmente nella casella in entrata.
 
 ## È stato risolto un problema della Dynamic Media Newsletter?
+
+* **[Maggio 2020, Numero 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+   In questo numero:
+
+   * Che cosa significa business continuity in tempi incerti.
+   * Scopri le novità del primo Summit Adobe completamente digitale.
+   * devono guardare le sessioni per sottogruppi di lavoro di Experience Manager.
+   * Summit Spotlight: Sotto Armor.
+   * Non perderti mai un webinar Experience Insider.
+   * I riflettori del settore pubblico: L&#39;urgente necessità di iscrizioni digitali.
+   * Scopri le novità di Experience Manager Innovation.
+   * Acquisisci le tue competenze Experience Manager *live* con i professionisti Adobe.
+   * Connettiti con la community di Adobe Experience Manager.
+   * Grazie ad Adobe Experience League potrai monitorare rapidamente le tue competenze Adobe.
 
 * **[Aprile 2020, Numero 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
