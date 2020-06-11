@@ -3,9 +3,9 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1872'
 ht-degree: 3%
 
 ---
@@ -99,9 +99,9 @@ Un valore vuoto indica che l&#39;elaborazione delle risorse assume la dimensione
 
 #### Regole di inclusione del tipo MIME {#mime-type-inclusion-rules}
 
-Quando viene elaborata una risorsa con un tipo MIME specifico, il tipo MIME viene prima controllato rispetto al valore dei tipi MIME esclusi per la specifica di rappresentazione. Se corrisponde a tale elenco, questa rappresentazione specifica non viene generata per la risorsa (&quot;blacklist&quot;).
+Quando viene elaborata una risorsa con un tipo MIME specifico, il tipo MIME viene prima controllato rispetto al valore dei tipi MIME esclusi per la specifica di rappresentazione. Se corrisponde a tale elenco, questa rappresentazione specifica non viene generata per la risorsa (elenco bloccato).
 
-In caso contrario, il tipo MIME viene controllato rispetto al tipo MIME incluso e, se corrisponde all&#39;elenco, il rendering viene generato (&quot;whitelist&quot;).
+In caso contrario, il tipo MIME viene controllato rispetto al tipo MIME incluso e, se corrisponde all&#39;elenco, il rendering viene generato (elenco consentito).
 
 #### Rappresentazioni speciali FPO {#special-fpo-rendition}
 
