@@ -2,9 +2,9 @@
 title: Panoramica su Cloud Reader Analyzer
 description: Panoramica su Cloud Reader Analyzer
 translation-type: tm+mt
-source-git-commit: 3d818278c53f3d3b4c5b53aa5b78d06d876bf05f
+source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Panoramica {#overview-cloud-readiness-analyzer}
 
-Valutare la disponibilità a passare da un’istanza AEM esistente ad AEM come servizio cloud e determinare le aree che richiedono il refactoring è il primo passo del percorso verso AEM come servizio cloud.
+Cloud Readiness Analyzer aiuta a valutare la disponibilità a passare da un’istanza AEM esistente ad AEM come servizio Cloud.
 
-Creative Cloud Readiness Analyzer (CRA) accelera questi passaggi.
+Questo strumento determina le aree che richiedono un refactoring, che è il primo passo del percorso di transizione verso AEM come servizio Cloud.
 
 CRA rileva e segnala pattern che:
 
@@ -22,7 +22,11 @@ CRA rileva e segnala pattern che:
 
 * Violare determinate regole, configurazioni o utilizzo che saranno interessate dal passaggio ad AEM come servizio cloud
 
-L&#39;analizzatore di prontezza del cloud genera un rapporto di riepilogo che può essere utilizzato per acquisire una conoscenza di alto livello della disponibilità generale all&#39;aggiornamento.  La relazione organizza i risultati per categorie e sottotipi all&#39;interno di tali categorie. Ulteriori informazioni sulle categorie e possibili implicazioni e soluzioni associate a tali categorie sono fornite tramite collegamenti all&#39;interno del rapporto di riepilogo.
+## Report di riepilogo in Cloud Readiness Analyzer {#summary-report}
+
+L&#39;analizzatore di prontezza del cloud genera un rapporto di riepilogo che può essere utilizzato per acquisire una conoscenza di alto livello della disponibilità generale all&#39;aggiornamento.
+
+La relazione organizza i risultati per categorie e sottotipi all&#39;interno di tali categorie. Ulteriori informazioni sulle categorie e possibili implicazioni e soluzioni associate a tali categorie sono fornite tramite collegamenti all&#39;interno del rapporto di riepilogo.
 
 >[!NOTE]
->L&#39;output del CRA consente di velocizzare il processo di stima dei tempi e dei costi necessari per passare ad AEM come servizio cloud.
+>L&#39;output di Cloud Readiness Analyzer consente di velocizzare il processo di stima dei tempi e dei costi necessari per la transizione ad AEM come servizio cloud.
