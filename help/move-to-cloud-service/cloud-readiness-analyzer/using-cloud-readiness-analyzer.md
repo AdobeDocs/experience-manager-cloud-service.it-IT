@@ -2,9 +2,9 @@
 title: Utilizzo di Cloud Ready Analyzer
 description: Utilizzo di Cloud Ready Analyzer
 translation-type: tm+mt
-source-git-commit: 3d818278c53f3d3b4c5b53aa5b78d06d876bf05f
+source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -16,18 +16,18 @@ ht-degree: 0%
 
 Seguite la sezione seguente per comprendere le considerazioni importanti durante l&#39;esecuzione di Cloud Readiness Analyzer (CRA):
 
-* CRA è supportato sulle istanze AEM di origine con versione 6.1 e successive.
-* CRA può essere eseguito su qualsiasi ambiente.
+* CRA è supportata nelle istanze AEM di origine con versione 6.1 e superiore
+* CRA può essere eseguita in qualsiasi ambiente (preferibilmente in ambiente *Stage* )
 
    >[!NOTE]
-   >Per aumentare il tasso di rilevamento ed evitare rallentamenti in casi business critical, si consiglia di eseguire CRA negli ambienti di staging dell&#39;autore di origine che sono il più vicino possibile a quelli di produzione nelle aree di personalizzazioni, configurazioni, contenuti e applicazioni utente. In alternativa, può essere eseguito anche su un clone dell’ambiente di pubblicazione.
+   >Per aumentare il tasso di rilevamento ed evitare rallentamenti in casi business critical, si consiglia di eseguire CRA negli ambienti di staging dell&#39;autore di origine che sono il più vicino possibile a quelli di produzione nelle aree di personalizzazioni, configurazioni, contenuti e applicazioni utente. In alternativa, può essere eseguito anche su un clone dell’ambiente *Pubblica* .
 
 ## Disponibilità {#availability}
 
-Il Cloud Readiness Analyzer (CRA) può essere scaricato come file zip dal portale di distribuzione del software. Puoi installare il pacchetto tramite Package Manager nella tua istanza sorgente Adobe Experience Manager (AEM).
+Cloud Readiness Analyzer può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Package Manager nella tua istanza sorgente Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Scarica Crea Cloud Readiness Analyzer (CRA) da *in sospeso*.
+>Scaricate Cloud Readiness Analyzer dal portale di distribuzione software *in sospeso*.
 
 ## Esecuzione di Cloud Readiness Analyzer {#running-tool}
 
@@ -37,20 +37,32 @@ Segui questa sezione per apprendere come eseguire Cloud Reader Analyzer:
 
 ### Visualizzazione dei risultati {#viewing-the-results}
 
-Esistono due modi per visualizzare l&#39;output del CRA:
+>[!IMPORTANT]
+>I report generati da Cloud Readiness Analyzer sono basati su Rilevatori di pattern. Per ulteriori informazioni, consultate Rilevatori [](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) di pattern.
 
-1. Utilizzo del rapporto organizzato
+Esistono due modi per visualizzare l&#39;output da Cloud Readiness Analyzer:
+
+1. **Utilizzo del rapporto organizzato**
 
    >[!NOTE]
    >Il rapporto organizzato è disponibile su AEM versione 6.3 e successive.
 
-Fare riferimento a CRA Document Planning and Status (Pianificazione documento CRA e Stato) per descrivere i livelli di importanza nel rapporto
+   Oppure,
 
-1. Visualizzazione dell&#39;output del CRA (utilizzabile con AEM versione 6.1 e successive):
+1. **Visualizzazione dell&#39;output del CRA**
 
-   1. Andate alla console Web di AEM sfogliando.
+   Per visualizzare l&#39;output da Cloud Readiness Analyzer, effettuate le operazioni seguenti:
 
-   1. Selezionate Stato - Analizzatore di prontezza cloud come illustrato nell&#39;immagine seguente.
+   >[!NOTE]
+   >I passaggi indicati di seguito sono applicabili alla versione 6.1 e successiva di AEM.
+
+   1. Passa alla console **Web di** AEM tramite `https://serveraddress:serverport/system/console/configMgr`.
+
+   1. Selezionate **Stato - Rilevatore** pattern come illustrato nella figura riportata di seguito.
+
+#### Visualizzazione del rapporto nelle istanze di AEM 6.1 {#aem-instances-report}
+
+È possibile scaricare il rapporto CSV per AEM 6.1. Questo è in sospeso.
 
 #### Comprendere i livelli di importanza nel rapporto {#importance-levels}
 
