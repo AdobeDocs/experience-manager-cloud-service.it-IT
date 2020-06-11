@@ -4,9 +4,9 @@ description: Procedure ottimali per l’integrazione di un’istanza AEM con Ado
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3302'
 ht-degree: 18%
 
 ---
@@ -173,7 +173,7 @@ Risorse AEM supporta due tipi di utenti in base al loro accesso alla distribuzio
 
 #### Utenti creativi con accesso diretto a DAM {#creative-users-with-direct-access-to-dam}
 
-In genere, i team creativi interni o le agenzie/i professionisti creativi caricati sulla rete interna hanno accesso all’istanza DAM, incluso l’accesso AEM. AEM e l’infrastruttura di rete possono essere configurate per consentire l’accesso diretto alle parti esterne, in genere organizzazioni affidabili come le agenzie che lavorano per un cliente, per accedere ad AEM tramite rete, ad esempio tramite VPN o whitelist IP.
+In genere, i team creativi interni o le agenzie/i professionisti creativi caricati sulla rete interna hanno accesso all’istanza DAM, incluso l’accesso AEM. AEM e l’infrastruttura di rete possono essere configurate per consentire l’accesso diretto alle parti esterne, in genere organizzazioni affidabili come le agenzie che lavorano per un cliente, per accedere ad AEM tramite rete, ad esempio tramite VPN o elenco di indirizzi IP consentiti.
 
 In tali casi, Adobe Asset Link o l’app desktop AEM consente di accedere facilmente alle risorse finali/approvate e di salvare le risorse pronte per la creazione in DAM.
 
@@ -186,7 +186,7 @@ Utilizzate le seguenti strategie per fornire l&#39;accesso alle risorse finali/a
 * Utilizzate l’app desktop se il collegamento risorsa non funziona.
 * Utilizzare [AEM Assets Brand Portal](https://helpx.adobe.com/it/experience-manager/brand-portal/user-guide.html) per distribuire le risorse in modo sicuro ai partner esterni
 * Utilizzare un&#39;implementazione personalizzata di un portale di distribuzione e determinazione origine basato su [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Utilizza il controllo degli accessi impostato in AEM e l’infrastruttura di rete necessaria (ad esempio, la whitelist VPN e IP) per consentire alle parti esterne di accedere a un’area dedicata di contenuto nel tuo DAM. Possono utilizzare l’interfaccia utente Web di AEM per ottenere risorse e caricare nuovi contenuti in DAM.
+* Utilizzate la configurazione del controllo degli accessi in AEM e l&#39;infrastruttura di rete necessaria (ad esempio, l&#39;elenco delle reti VPN e IP consentite) per consentire alle parti esterne di accedere a un&#39;area dedicata di contenuto nel vostro DAM. Possono utilizzare l’interfaccia utente Web di AEM per ottenere risorse e caricare nuovi contenuti in DAM.
 
 #### Lavoro in corso sulle risorse da AEM {#work-in-progress-on-assets-from-aem}
 
