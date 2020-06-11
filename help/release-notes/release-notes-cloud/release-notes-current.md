@@ -2,9 +2,9 @@
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.6.0'
 description: Note sulla versione 2020.6.0 di Experience Manager
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: 972e6322a313c9e6afcf09262290992272406491
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1922'
 ht-degree: 7%
 
 ---
@@ -84,7 +84,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
    Per ulteriori informazioni, consultate [Gestione dell&#39;accesso all&#39;istanza](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) Author.
 
-* Il registro Build ora include l&#39;elenco degli artefatti scoperti, inclusi i pacchetti di contenuto saltati.
+* Il registro Build ora include l&#39;elenco degli artefatti scoperti, inclusi i pacchetti di contenuto ignorati.
 
 * Il passaggio Genera ora convalida che tutti i pacchetti di contenuto generati includono tutte le proprietà obbligatorie: nome, gruppo e versione.
 
@@ -122,11 +122,11 @@ Train Smart Tags avanzato per una formazione più intuitiva per Smart Tags. Scop
 
 Le organizzazioni ora possono archiviare e utilizzare i file 3D in AEM Assets. L’utente può caricare, visualizzare in anteprima e sfruttare una serie di file 3D di base, tra cui file .obj, .stl, .gltf e .glb. Con l&#39;aggiunta di [!DNL Dynamic Media]esperienze 3D, possono essere configurate e distribuite tramite URL agnostici o visualizzatori. Questo include un visualizzatore esperienza [!DNL Dynamic Media] 3D, un componente Visualizzatore 3D di siti e la possibilità di distribuire file 3D tramite [!DNL Dynamic Media] (AR/VR). Consultate [Utilizzo delle risorse 3D in Contenuti multimediali](/help/assets/dynamic-media/assets-3d.md)dinamici.
 
-<!-- Hiding this as the GA is at a later date. 
-**Adobe Asset Link support for Adobe XD**
+**Supporto di Adobe Asset Link per Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
--->
+Con la versione più recente, [!DNL Experience Manager Assets] fornisce il supporto per un nuovo [!DNL Adobe Asset Link] plug-in rilasciato con [!DNL Adobe XD] v29.3. L’integrazione consente ai designer di accedere e utilizzare le risorse [!DNL Experience Manager] nelle proprie progettazioni, senza dover uscire dall’ [!DNL Adobe XD] applicazione. Consultate [Adobe Asset Link (Collegamento risorse Adobe) per la documentazione](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)Adobe XD.
+
+Con questa versione, gli utenti creativi e i designer possono ora lavorare con le risorse gestite [!DNL AEM Assets] utilizzando [!DNL Adobe Asset Link] in una serie di app desktop Creative Cloud, tra cui [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator]e [!DNL InDesign].
 
 **Miglioramenti dell&#39;accessibilità**
 
