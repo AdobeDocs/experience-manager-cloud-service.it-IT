@@ -2,7 +2,7 @@
 title: Memorizzazione nella cache di AEM come servizio cloud
 description: 'Memorizzazione nella cache di AEM come servizio cloud '
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Accertatevi che le risorse da mantenere private anziché nella cache non faccian
 
 ## Annullamento validità cache del dispatcher {#disp}
 
-In generale, non dovrebbe essere necessario annullare la validità della cache del dispatcher. È invece necessario fare affidamento sul dispatcher, che aggiorna la cache quando il contenuto viene ripubblicato, e sul CDN che rispetta le intestazioni di scadenza della cache.
+In generale, non sarà necessario annullare la validità della cache del dispatcher. È invece necessario fare affidamento sul dispatcher che aggiorna la cache quando il contenuto viene ripubblicato e la CDN rispetta le intestazioni di scadenza della cache.
 
 ### Annullamento della validità della cache del dispatcher durante l&#39;attivazione/disattivazione {#cache-activation-deactivation}
 
