@@ -3,10 +3,10 @@ title: Creazione e gestione di risorse digitali in più lingue ed esecuzione di 
 description: Scoprite come automatizzare i flussi di lavoro per la traduzione di risorse, inclusi file binari, metadati e tag in più lingue.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '2615'
-ht-degree: 23%
+source-wordcount: '2612'
+ht-degree: 24%
 
 ---
 
@@ -55,7 +55,7 @@ In Risorse Adobe Experience Manager (AEM), le risorse in più lingue sono inclus
 
 Ogni cartella lingua è denominata copia per lingua. La cartella principale di una copia della lingua, nota come radice della lingua, identifica la lingua del contenuto nella copia della lingua. Ad esempio, `/content/dam/it` è la radice della lingua italiana per la copia in lingua italiana. Le copie della lingua devono utilizzare una radice [della lingua configurata](#create-a-language-root) correttamente, in modo che venga utilizzata la lingua corretta quando vengono eseguite le traduzioni delle risorse di origine.
 
-La copia per la lingua per la quale avete aggiunto originariamente delle risorse è la lingua principale. Il master lingua è l&#39;origine tradotta in altre lingue. Una gerarchia di cartelle di esempio include diverse origini di lingua:
+La copia per la lingua per la quale avete aggiunto originariamente le risorse è la lingua principale. La lingua primaria è l&#39;origine tradotta in altre lingue. Una gerarchia di cartelle di esempio include diverse origini di lingua:
 
 ```shell
 /content
@@ -71,9 +71,9 @@ La copia per la lingua per la quale avete aggiunto originariamente delle risorse
 
 Per preparare le risorse alla conversione, effettuate le seguenti operazioni:
 
-1. Creare la radice della lingua del master della lingua. Ad esempio, la radice della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è */content/dam/en*. Verificare che la radice della lingua sia configurata correttamente in base alle informazioni contenute in [Creare una radice](#create-a-language-root)della lingua.
+1. Creare la radice della lingua della lingua principale. Ad esempio, la radice della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è `/content/dam/en`. Verificare che la radice della lingua sia configurata correttamente in base alle informazioni contenute in [Creare una radice](#create-a-language-root)della lingua.
 
-1. Aggiungete le risorse al modulo master della lingua.
+1. Aggiungere risorse alla lingua principale.
 1. Create la radice della lingua di ciascuna lingua di destinazione per la quale è necessaria una copia della lingua.
 
 ### Creare una directory principale della lingua {#create-a-language-root}
@@ -90,7 +90,7 @@ Ad esempio, la pagina principale della copia in lingua italiana della gerarchia 
 
 L’interfaccia touch fornisce un pannello Riferimenti che mostra un elenco delle origini delle lingue create in AEM Assets.
 
-1. Nella console Risorse, selezionate lo schema della lingua per il quale desiderate creare delle copie della lingua.
+1. Nella console Risorse, selezionate la lingua principale per la quale desiderate creare delle copie in lingua.
 1. Tocca o fai clic sull’icona GlobalNav, quindi scegli **[!UICONTROL Riferimenti]** per aprire il riquadro Riferimento.
 1. Nel riquadro Riferimenti, fare clic o toccare Copie **[!UICONTROL lingua]**. Il pannello Copie lingua mostra le copie in lingua delle risorse.
 
