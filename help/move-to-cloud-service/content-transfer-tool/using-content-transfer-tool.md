@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento di trasferimento dei contenuti
 description: Utilizzo dello strumento di trasferimento dei contenuti
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1582'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,15 @@ Seguite la sezione seguente per comprendere le considerazioni importanti durante
 
 * Il requisito minimo di sistema per lo strumento di trasferimento dei contenuti è AEM 6.3 + e JAVA 8. Se si utilizza una versione di AEM inferiore, sarà necessario aggiornare l’archivio dei contenuti ad AEM 6.5 per utilizzare lo strumento di trasferimento dei contenuti.
 
-* Se utilizzate un ambiente *sandbox* , accertatevi che l’ambiente sia aggiornato al rilascio del 10 giugno 2020 o successivo. Se si utilizza un ambiente *di* produzione, questo viene aggiornato automaticamente.
+* Se utilizzate un ambiente *sandbox*, accertatevi che l’ambiente sia aggiornato alla versione del 10 giugno 2020 o successiva. Se si utilizza un ambiente *di* produzione, questo viene aggiornato automaticamente.
 
 * Per utilizzare lo strumento di trasferimento dei contenuti, devi essere un utente amministratore nell’istanza di origine e appartenere al gruppo di amministratori AEM nell’istanza del servizio cloud a cui trasferisci i contenuti. Gli utenti non privilegiati non potranno recuperare il token di accesso per utilizzare lo strumento di trasferimento dei contenuti.
 
 * Durante la fase di estrazione, lo strumento di trasferimento dei contenuti viene eseguito su un’istanza sorgente AEM attiva.
 
 * La fase *di* inserimento dell’autore riduce l’intera distribuzione dell’autore. Questo significa che l’autore AEM non sarà disponibile durante l’intero processo di assimilazione.
+
+* Il limite superiore consigliato per la dimensione del repository supportata da Content Transfer Tool per volta è di 20 GB.
 
 ## Disponibilità {#availability}
 
@@ -207,6 +209,8 @@ Effettuate le seguenti operazioni:
    Dalla schermata *Panoramica* potete anche visualizzare i registri per il set di migrazione. Selezionate il set di migrazione e fate clic sullo stato sotto il campo **EXTRACTION** . In questo caso, fare clic su **FINISHED** per visualizzare i registri in una nuova scheda.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+
+1. Per limitare i file di registro senza utilizzare l’interfaccia utente, puoi effettuare la SSH nell’ambiente AEM di origine e impostare le `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`dimensioni finali.
 
 ### Eliminazione di un set di migrazione {#deleting-migration-set}
 
