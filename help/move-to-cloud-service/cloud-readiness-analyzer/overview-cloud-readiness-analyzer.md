@@ -2,9 +2,9 @@
 title: Panoramica su Cloud Reader Analyzer
 description: Panoramica su Cloud Reader Analyzer
 translation-type: tm+mt
-source-git-commit: 64b685a7c9fbb105ed66dc4b3212b2bf91dee4af
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Ulteriori informazioni sulle categorie e possibili implicazioni e soluzioni asso
 >[!NOTE]
 >Il rapporto di Cloud Readiness Analyzer velocizza il processo di stima del tempo e dei costi necessari per passare ad AEM come servizio cloud fornendo informazioni che altrimenti dovrebbero essere raccolte e valutate manualmente.
 
-Il rapporto di riepilogo è disponibile nell&#39;interfaccia utente di AEM. Esiste un&#39;opzione per scaricare il rapporto completo in un formato CSV (Comma Separated Value) utile durante il processo di refactoring.
+Puoi anche scaricare il rapporto di riepilogo dall’interfaccia utente di AEM. Per ulteriori dettagli in sospeso, consultate **Visualizzazione dei risultati in formato** CSV.
