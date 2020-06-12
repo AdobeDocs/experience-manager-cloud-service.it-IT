@@ -2,9 +2,9 @@
 title: Panoramica su Cloud Reader Analyzer
 description: Panoramica su Cloud Reader Analyzer
 translation-type: tm+mt
-source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
+source-git-commit: 64b685a7c9fbb105ed66dc4b3212b2bf91dee4af
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -12,21 +12,25 @@ ht-degree: 0%
 
 # Panoramica {#overview-cloud-readiness-analyzer}
 
-Cloud Readiness Analyzer aiuta a valutare la disponibilità a passare da un’istanza AEM esistente ad AEM come servizio Cloud.
+L’analizzatore di prontezza del cloud consente di accelerare i processi di valutazione della disponibilità a passare da una distribuzione Adobe Experience Manager (AEM) esistente ad AEM come servizio cloud.
 
-Questo strumento determina le aree che richiedono un refactoring, che è il primo passo del percorso di transizione verso AEM come servizio Cloud.
-
-CRA rileva e segnala pattern che:
-
-* Utilizzate una funzione AEM 6.x attualmente non supportata in AEM come servizio cloud
-
-* Violare determinate regole, configurazioni o utilizzo che saranno interessate dal passaggio ad AEM come servizio cloud
+Questo strumento genera un rapporto che identifica le aree di potenziale refactoring, che è il primo passo del percorso di transizione verso AEM come servizio cloud.
 
 ## Report di riepilogo in Cloud Readiness Analyzer {#summary-report}
 
-L&#39;analizzatore di prontezza del cloud genera un rapporto di riepilogo che può essere utilizzato per acquisire una conoscenza di alto livello della disponibilità generale all&#39;aggiornamento.
+Il rapporto di riepilogo di Cloud Readiness Analyzer viene utilizzato per acquisire una conoscenza di alto livello della prontezza dell&#39;aggiornamento generale. Il rapporto è composto da risultati all&#39;interno di categorie di problemi che devono essere risolti prima di una distribuzione corretta in AEM come servizio cloud.
 
-La relazione organizza i risultati per categorie e sottotipi all&#39;interno di tali categorie. Ulteriori informazioni sulle categorie e possibili implicazioni e soluzioni associate a tali categorie sono fornite tramite collegamenti all&#39;interno del rapporto di riepilogo.
+Il rapporto di riepilogo include le seguenti categorie:
+
+* Funzionalità dell&#39;applicazione che deve essere modificata
+* Elementi del repository che devono essere spostati in una posizione supportata
+* Finestre di dialogo e componenti dell’interfaccia utente precedenti da modernizzare
+* Problemi di distribuzione e configurazione
+* Funzioni di AEM 6.x sostituite da nuove funzionalità o che al momento non sono supportate in AEM come servizio cloud
+
+Ulteriori informazioni sulle categorie e possibili implicazioni e soluzioni associate a tali categorie sono fornite tramite collegamenti all&#39;interno del rapporto di riepilogo.
 
 >[!NOTE]
->L&#39;output di Cloud Readiness Analyzer consente di velocizzare il processo di stima dei tempi e dei costi necessari per la transizione ad AEM come servizio cloud.
+>Il rapporto di Cloud Readiness Analyzer velocizza il processo di stima del tempo e dei costi necessari per passare ad AEM come servizio cloud fornendo informazioni che altrimenti dovrebbero essere raccolte e valutate manualmente.
+
+Il rapporto di riepilogo è disponibile nell&#39;interfaccia utente di AEM. Esiste un&#39;opzione per scaricare il rapporto completo in un formato CSV (Comma Separated Value) utile durante il processo di refactoring.
