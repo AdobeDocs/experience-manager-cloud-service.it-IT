@@ -2,10 +2,10 @@
 title: Utilizzo di Cloud Ready Analyzer
 description: Utilizzo di Cloud Ready Analyzer
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: 1739f81d4894f3e04cc4119f344a3bea5bd042d8
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 0%
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Segui questa sezione per apprendere come eseguire Cloud Reader Analyzer:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Dopo aver fatto clic su **Cloud Readiness Analyzer**, lo strumento inizia a generare il rapporto e, dopo alcuni minuti, verrà visualizzato il rapporto generato.
+1. Dopo aver fatto clic su **Cloud Readiness Analyzer**, lo strumento avvia la generazione del rapporto e, dopo pochi minuti, il rapporto di riepilogo è disponibile nell’istanza di AEM.
 
    >[!NOTE]
    >Sarà necessario scorrere la pagina verso il basso per visualizzare il rapporto completo.
@@ -77,12 +77,21 @@ Per generare un formato CSV del rapporto di riepilogo, effettuate le seguenti op
 1. 
    1. Seleziona Adobe Experience Manager e passa agli strumenti -> **Operazioni** -> **Cloud Readiness Analyzer**.
 
-1. Una volta generato il rapporto, fate clic su **CSV** per scaricare il rapporto completo di riepilogo in formato CSV (Comma Separated Value), come illustrato nella figura seguente.
+1. Una volta che il rapporto è disponibile, fai clic su **CSV** per scaricare il rapporto completo di riepilogo in formato CSV (Comma Separated Value), come mostrato nella figura seguente.
 
 ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
 
 #### Visualizzazione del rapporto nelle istanze di AEM 6.1 {#aem-instances-report}
 
-È possibile scaricare il rapporto CSV per AEM 6.1. Questo è in sospeso.
+Per scaricare il rapporto CSV per Adobe Experience Manager (AEM) 6.1, effettuate le seguenti operazioni:
+
+1. Passa alla consoleConfigurazione **Web di** Adobe Experience Manager utilizzando `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Selezionate la scheda **Stato** e cercate **Rilevamento** pattern dall&#39;elenco a discesa, come illustrato nella figura riportata di seguito.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Potete scaricare il rapporto di riepilogo in una cartella zip o in un formato JSON.
+
 
