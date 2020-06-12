@@ -2,9 +2,9 @@
 title: Panoramica sullo strumento di trasferimento dei contenuti
 description: Panoramica sullo strumento di trasferimento dei contenuti
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -54,3 +54,11 @@ Seguite la sezione seguente per comprendere le linee guida e le procedure ottima
 * Nella fase di assimilazione, si consiglia di eseguire l’assimilazione utilizzando la modalità *wipe* abilitata, in cui l’archivio esistente (autore o pubblicazione) nell’ambiente di destinazione AEM Cloud Service verrà completamente eliminato e quindi aggiornato con i dati del set di migrazione. Questa modalità è molto più veloce della modalità non-wipe, in cui il set di migrazione viene applicato sopra il contenuto corrente.
 
 * Al termine dell&#39;attività di trasferimento del contenuto, nell&#39;ambiente Servizio cloud è necessaria la struttura di progetto corretta per garantire il corretto rendering del contenuto nell&#39;ambiente Servizio Cloud.
+
+* Prima di eseguire lo strumento di trasferimento dei contenuti, è necessario assicurarsi che nella `crx-quickstart` sottodirectory dell’istanza AEM di origine vi sia spazio sufficiente. Questo perché Content Transfer Tool crea una copia locale del repository che viene successivamente caricata nel set di migrazione.
+La formula generale per calcolare lo spazio libero richiesto è la seguente:
+   *dimensione archivio dati + dimensione archivio nodi * 1,5*
+
+   * Per le dimensioni *dell&#39;archivio* dati, Content Transfer Tool utilizza 64 GB, anche se l&#39;archivio dati effettivo è più grande.
+   * La dimensione *dell&#39;archivio* nodi è la dimensione della directory dell&#39;archivio segmenti o della dimensione del database MongoDB.
+Pertanto, per un segmento di dimensioni dello store pari a 20 GB, lo spazio libero su disco richiesto è di 94 GB.
