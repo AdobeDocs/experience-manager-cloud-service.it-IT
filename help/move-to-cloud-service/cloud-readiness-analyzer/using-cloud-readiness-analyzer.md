@@ -2,9 +2,9 @@
 title: Utilizzo di Cloud Ready Analyzer
 description: Utilizzo di Cloud Ready Analyzer
 translation-type: tm+mt
-source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -35,42 +35,54 @@ Segui questa sezione per apprendere come eseguire Cloud Reader Analyzer:
 
 1. Seleziona Adobe Experience Manager e passa agli strumenti -> **Operazioni** -> **Cloud Readiness Analyzer**.
 
-### Visualizzazione dei risultati {#viewing-the-results}
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+
+1. Dopo aver fatto clic su **Cloud Readiness Analyzer**, lo strumento inizia a generare il rapporto e, dopo alcuni minuti, verrà visualizzato il rapporto generato.
+
+   >[!NOTE]
+   >Sarà necessario scorrere la pagina verso il basso per visualizzare il rapporto completo.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
+
+### Visualizzazione dei risultati nel rapporto di riepilogo {#viewing-the-results}
 
 >[!IMPORTANT]
 >I report generati da Cloud Readiness Analyzer sono basati su Rilevatori di pattern. Per ulteriori informazioni, consultate Rilevatori [](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) di pattern.
 
-Esistono due modi per visualizzare l&#39;output da Cloud Readiness Analyzer:
+Quando scorri verso il basso la pagina per visualizzare il rapporto di riepilogo completo, puoi vedere le seguenti informazioni per ciascuna delle categorie evidenziate nel rapporto:
 
-1. **Utilizzo del rapporto organizzato**
+1. **Livello di importanza**
 
-   >[!NOTE]
-   >Il rapporto organizzato è disponibile su AEM versione 6.3 e successive.
+   Nella tabella seguente è illustrato il significato dei vari livelli di importanza Rilevatore pattern e Analisi prontezza cloud.
 
-   Oppure,
+   | Livello di importanza | Descrizione |
+   |--- |--- |
+   | INFO/0 | Questa conclusione è fornita a scopo informativo. |
+   | AVVISO/1 | Questo risultato potrebbe essere un problema di aggiornamento. Si raccomanda di effettuare ulteriori indagini. |
+   | MAGGIORE/2 | Questo risultato potrebbe rappresentare un problema di aggiornamento da risolvere. |
+   | CRITICO/3 | Questo risultato è molto probabile che sia un problema di aggiornamento che deve essere risolto per evitare la perdita di funzioni o prestazioni. |
 
-1. **Visualizzazione dell&#39;output del CRA**
+1. **Descrizione** La descrizione fornisce informazioni sulla categoria segnalata.
 
-   Per visualizzare l&#39;output da Cloud Readiness Analyzer, effettuate le operazioni seguenti:
+1. **URL** documentazione L&#39;URL della documentazione consente di visualizzare la documentazione tecnica per il tipo associato.
 
-   >[!NOTE]
-   >I passaggi indicati di seguito sono applicabili alla versione 6.1 e successiva di AEM.
+1. **Messaggio** Una descrizione del risultato in un unico messaggio.
 
-   1. Passa alla console **Web di** AEM tramite `https://serveraddress:serverport/system/console/configMgr`.
+### Visualizzazione dei risultati in formato CSV {#viewing-the-results-csv}
 
-   1. Selezionate **Stato - Rilevatore** pattern come illustrato nella figura riportata di seguito.
+Il rapporto di riepilogo è disponibile nell&#39;interfaccia utente di AEM. Potete scaricare il rapporto completo in un formato CSV (Comma Separated Value) utile durante il processo di refactoring.
+
+Per generare un formato CSV del rapporto di riepilogo, effettuate le seguenti operazioni:
+
+1. 
+   1. Seleziona Adobe Experience Manager e passa agli strumenti -> **Operazioni** -> **Cloud Readiness Analyzer**.
+
+1. Una volta generato il rapporto, fate clic su **CSV** per scaricare il rapporto completo di riepilogo in formato CSV (Comma Separated Value), come illustrato nella figura seguente.
+
+![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
 
 #### Visualizzazione del rapporto nelle istanze di AEM 6.1 {#aem-instances-report}
 
 È possibile scaricare il rapporto CSV per AEM 6.1. Questo è in sospeso.
 
-#### Comprendere i livelli di importanza nel rapporto {#importance-levels}
-
-Nella tabella seguente è illustrato il significato dei vari livelli di importanza Rilevatore pattern e Analisi prontezza cloud.
-
-| Livello di importanza | Descrizione |
-|--- |--- |
-| INFO/0 | Questa conclusione è fornita a scopo informativo. |
-| AVVISO/1 | Questo risultato potrebbe essere un problema di aggiornamento. Si raccomanda di effettuare ulteriori indagini. |
-| MAGGIORE/2 | Questo risultato potrebbe rappresentare un problema di aggiornamento da risolvere. |
-| CRITICO/3 | Questo risultato è molto probabile che sia un problema di aggiornamento che deve essere risolto per evitare la perdita di funzioni o prestazioni. |
