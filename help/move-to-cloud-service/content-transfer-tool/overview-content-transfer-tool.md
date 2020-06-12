@@ -2,9 +2,9 @@
 title: Panoramica sullo strumento di trasferimento dei contenuti
 description: Panoramica sullo strumento di trasferimento dei contenuti
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -57,8 +57,8 @@ Seguite la sezione seguente per comprendere le linee guida e le procedure ottima
 
 * Prima di eseguire lo strumento di trasferimento dei contenuti, è necessario assicurarsi che nella `crx-quickstart` sottodirectory dell’istanza AEM di origine vi sia spazio sufficiente. Questo perché Content Transfer Tool crea una copia locale del repository che viene successivamente caricata nel set di migrazione.
 La formula generale per calcolare lo spazio libero richiesto è la seguente:
-   *dimensione archivio dati + dimensione archivio nodi * 1,5*
+   `data store size + node store size * 1.5`
 
-   * Per le dimensioni *dell&#39;archivio* dati, Content Transfer Tool utilizza 64 GB, anche se l&#39;archivio dati effettivo è più grande.
-   * La dimensione *dell&#39;archivio* nodi è la dimensione della directory dell&#39;archivio segmenti o della dimensione del database MongoDB.
+   * *dimensione* archivio dati: lo Strumento di trasferimento dei contenuti utilizza 64 GB, anche se l&#39;archivio dati effettivo è più grande.
+   * *dimensione*archivio nodi: dimensione della directory dell&#39;archivio segmenti o della dimensione del database MongoDB.
 Pertanto, per un segmento di dimensioni dello store pari a 20 GB, lo spazio libero su disco richiesto è di 94 GB.
