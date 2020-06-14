@@ -3,9 +3,9 @@ title: Configura l’editor Rich Text per creare contenuto in Adobe Experience M
 description: Configura editor Rich Text per creare contenuto in Adobe Experience Manager come servizio Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Quando il contenuto viene aperto (con un doppio clic lento), può essere modific
 
 *Figura: Modifica in linea con le opzioni di base nella barra degli strumenti.*
 
-### Full screen editing {#full-screen-editing}
+### Full-screen editing {#full-screen-editing}
 
 I componenti di Experience Manager possono essere aperti a schermo intero per nascondere il contenuto della pagina e occupare la schermata disponibile. Considerate la possibilità di modificare a schermo intero una versione dettagliata dell&#39;editing in linea in quanto offre il maggior numero di opzioni di modifica. È possibile aprirlo facendo clic su ![rte_fullscreen](assets/rte_fullscreen.png), dalla barra degli strumenti compatta, quando si utilizza la modalità di modifica in linea.
 
@@ -120,9 +120,9 @@ Nella tabella seguente sono elencati i plug-in correnti, che mostrano:
 La [modalità di modifica dell’editor Rich Text (e l’interfaccia utente)](#editingmodes) fornita per gli autori determina il percorso in cui vengono definiti i dettagli di configurazione quando si [attivano i plug-in](configure-rich-text-editor-plug-ins.md#activateplugin)dell’editor Rich Text:
 
 * Modalità in linea: `cq:editConfig/cq:inplaceEditing`
-* Modalità a tutto schermo: `cq:editConfig/cq:inplaceEditing`
+* Modalità schermo intero: `cq:editConfig/cq:inplaceEditing`
 * Modalità finestra di dialogo: `cq:dialog`
-* Modalità a schermo intero: `cq:dialog`
+* Modalità finestra di dialogo a schermo intero: `cq:dialog`
 
 >[!NOTE]
 >
@@ -131,7 +131,6 @@ La [modalità di modifica dell’editor Rich Text (e l’interfaccia utente)](#e
 >* **Nome**: `configPath`
 >* **Tipo**: `String`
 >* **Valore**: percorso del nodo contenente la configurazione effettiva
-
 >
 >
 Non assegnare al nodo di configurazione RTE il nome `config`. In caso contrario, le configurazioni dell’editor Rich Text hanno effetto solo per gli amministratori e non per gli utenti del gruppo `content-author`.
@@ -165,7 +164,6 @@ Il componente [di testo Componenti](https://docs.adobe.com/content/help/en/exper
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >
 Per creare un componente di testo personalizzato, copiate il componente sopra anziché modificarlo.
@@ -215,13 +213,13 @@ Per configurare la barra degli strumenti per `dialogFullScreen`, utilizzate la s
 </uiSettings>
 ```
 
-Per la modalità in linea e per la modalità a schermo intero vengono utilizzate diverse impostazioni dell&#39;interfaccia utente. La proprietà della barra degli strumenti viene utilizzata per specificare i pulsanti della barra degli strumenti.
+Per la modalità in linea e per la modalità a schermo intero vengono utilizzate diverse impostazioni dell&#39;interfaccia utente. La proprietà toolbar specifica l&#39;opzione della barra degli strumenti.
 
-Ad esempio, se il pulsante è esso stesso una funzione (ad esempio, `Bold`), viene specificato come `PluginName#FeatureName` (ad esempio, `links#modifylink`).
+Ad esempio, se l&#39;opzione è essa stessa una funzione (ad esempio, `Bold`), viene specificata come `PluginName#FeatureName` (ad esempio, `links#modifylink`).
 
-Se il pulsante è un contenitore (contenente alcune funzioni di un plug-in), viene specificato come `#PluginName` (ad esempio, `#format`).
+Se l&#39;opzione è un contenitore (contenente alcune funzioni di un plug-in), viene specificata come `#PluginName` (ad esempio, `#format`).
 
-I separatori (`|`) tra un gruppo di pulsanti possono essere specificati con `-`.
+I separatori (`|`) tra un gruppo di opzioni possono essere specificati con `-`.
 
 Il nodo a comparsa nella modalità in linea o a schermo intero contiene un elenco dei popovers utilizzati. Ogni nodo figlio sotto il nodo &#39;popovers&#39; ha un nome in base al plug-in (ad esempio, formato). La proprietà &#39;items&#39; contiene un elenco delle funzioni del plug-in (ad esempio, format#bold).
 
