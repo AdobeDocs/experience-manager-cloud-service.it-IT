@@ -2,9 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 translation-type: tm+mt
-source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1450'
 ht-degree: 3%
 
 ---
@@ -83,6 +83,10 @@ Le definizioni degli indici sono ora contrassegnate come personalizzate e con ve
 Pertanto, per distribuire un indice, la definizione (`/oak:index/definitionname`) dell&#39;indice deve essere distribuita tramite `ui.apps` Git e il processo di distribuzione di Cloud Manager.
 
 Una volta aggiunta la nuova definizione di indice, la nuova applicazione deve essere distribuita tramite Cloud Manager. All&#39;avvio della distribuzione, vengono avviati due processi, responsabili dell&#39;aggiunta (e dell&#39;unione, se necessario) delle definizioni di indice a MongoDB e ad Azure Segment Store rispettivamente per l&#39;autore e la pubblicazione. I repository sottostanti vengono reindicizzati con le nuove definizioni di indice, prima che venga eseguito il passaggio Blu-Verde.
+
+>[!TIP]
+>
+>Per ulteriori dettagli sulla struttura del pacchetto richiesta per AEM come servizio cloud, consultate il documento Struttura del progetto [AEM.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## Gestione dell&#39;indice con le implementazioni Blue-Green {#index-management-using-blue-green-deployments}
 
