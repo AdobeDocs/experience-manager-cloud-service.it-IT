@@ -2,9 +2,9 @@
 title: Utilizzo di Cloud Ready Analyzer
 description: Utilizzo di Cloud Ready Analyzer
 translation-type: tm+mt
-source-git-commit: daa281745540e6446adecd2501e26135d6000844
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -46,14 +46,14 @@ Segui questa sezione per apprendere come eseguire Cloud Reader Analyzer:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Dopo aver fatto clic su **Cloud Readiness Analyzer**, lo strumento avvia la generazione del rapporto e, dopo pochi minuti, il rapporto di riepilogo è disponibile nell’istanza di AEM.
+1. Dopo aver fatto clic su **Cloud Readiness Analyzer**, lo strumento avvia la generazione del rapporto e, dopo alcuni minuti, il rapporto CRA è disponibile nell’istanza di AEM.
 
    >[!NOTE]
    >Sarà necessario scorrere la pagina verso il basso per visualizzare il rapporto completo.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-## Interpretazione del rapporto organizzato di Cloud Readiness Analyzer {#organized-report}
+## Interpretazione del rapporto di Cloud Readiness Analyzer {#cra-report}
 
 Quando si esegue Cloud Readiness Analyzer nell’istanza AEM, il rapporto viene visualizzato come risultati nella finestra degli strumenti.
 
@@ -83,7 +83,7 @@ Per AEM 6.3 e versioni successive, il modo principale per eseguire Cloud Reader 
    >[!NOTE]
    >Il CRA avvia un processo in background per generare il rapporto non appena lo strumento viene aperto. Indica che la generazione del report è in corso fino a quando il report non è pronto. Puoi chiudere la scheda del browser e tornare in un secondo momento per visualizzare il rapporto al termine.
 
-1. Una volta generato e visualizzato il rapporto CRA, potete scegliere di scaricare il rapporto in valori CSV (Comma Separated Value). Fate clic su **CSV** per scaricare il rapporto di riepilogo completo in formato CSV, come mostrato nella figura seguente.
+1. Una volta generato e visualizzato il rapporto CRA, potete scegliere di scaricare il rapporto in valori CSV (Comma Separated Value). Fate clic su **CSV** per scaricare il rapporto CRA completo in formato CSV, come mostrato nella figura seguente.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
@@ -92,29 +92,18 @@ Per AEM 6.3 e versioni successive, il modo principale per eseguire Cloud Reader 
 
 ###  Adobe Experience Manager 6.2 e 6.1 {#aem-specific-versions}
 
-In  Adobe Experience Manager (AEM) 6.2, l’analizzatore di prontezza del cloud è limitato a un collegamento che genera e scarica il rapporto CSV.
+Nell&#39;Adobe Experience Manager 6.2 di Cloud Readiness Analyzer è limitato  collegamento che genera e scarica il rapporto CSV.
+
+Per  Adobe Experience Manager 6.1, lo strumento non funziona e può essere utilizzata solo l&#39;interfaccia HTTP.
 
 >[!NOTE]
->
->* Per  Adobe Experience Manager 6.1, lo strumento non funziona e può essere utilizzata solo l&#39;interfaccia HTTP.
-   >
-   >
-* In tutte le versioni, il Rilevatore di pattern incluso può essere eseguito in modo indipendente.
+>In tutte le versioni, il Rilevatore di pattern incluso può essere eseguito in modo indipendente.
 
+## Interpretazione del rapporto CSV di Cloud Readiness Analyzer {#cra-csv-report}
 
-Per scaricare il rapporto CSV per  Adobe Experience Manager (AEM) 6.1 e 6.2, effettuate le seguenti operazioni:
+Quando fate clic sull’opzione **CSV** dall’istanza di AEM, il formato CSV del rapporto Analisi prontezza cloud viene creato dalla cache dei risultati e restituito al browser. A seconda delle impostazioni del browser, il rapporto verrà scaricato automaticamente come file con un nome predefinito di `results.csv`.
 
-1.Passare a **ConsoleConfigurazione** Web Adobe Experience Manager utilizzando `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Selezionate la scheda **Stato** e cercate **Rilevamento** pattern dall&#39;elenco a discesa, come illustrato nella figura riportata di seguito.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. Potete scaricare il rapporto di riepilogo in una cartella zip o in un formato JSON.
-
-## Interpretazione del rapporto CSV di Cloud Readiness Analyzer {#crs-csv-report}
-
-Quando fate clic sull’opzione **CSV** dall’istanza di AEM, il formato CSV del rapporto Analisi prontezza cloud viene creato dalla cache dei risultati e restituito al browser. A seconda delle impostazioni del browser, il rapporto verrà scaricato automaticamente come file con un nome predefinito di `results.csv`. Se la cache è scaduta, il rapporto verrà rigenerato prima che il file CSV venga creato e scaricato.
+Se la cache è scaduta, il rapporto verrà rigenerato prima che il file CSV venga creato e scaricato.
 
 Il formato CSV del rapporto include informazioni generate dall&#39;output Rilevatore pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza. Il formato è adatto per la visualizzazione e la modifica in un&#39;applicazione come Microsoft Excel. È stato progettato per fornire tutte le informazioni di ricerca in un formato ripetibile che può essere utile quando si confrontano i report nel tempo per misurare l&#39;avanzamento.
 
@@ -189,7 +178,7 @@ La durata predefinita della cache CRA è di 24 ore. Con l’opzione per aggiorna
 Il valore del ciclo di vita della cache viene memorizzato come `maxCacheAge` proprietà nel seguente nodo del repository:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-Il valore di questa proprietà corrisponde alla durata della cache, in secondi. Un amministratore può regolare la durata della cache utilizzando CRX/DE Lite.
+Il valore di questa proprietà corrisponde alla durata della cache, in secondi. Un amministratore può regolare la durata della cache utilizzando **CRXDE Lite**.
 
 
 
