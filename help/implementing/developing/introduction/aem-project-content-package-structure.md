@@ -2,10 +2,10 @@
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti per la distribuzione in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 60093232710426d919a45742b1775239944d266d
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 18%
+source-wordcount: '2522'
+ht-degree: 17%
 
 ---
 
@@ -37,6 +37,16 @@ Tutto il resto nella directory archivio, `/content`, `/conf`, `/var`, `/etc`, `/
 >[!WARNING]
 >
 > Come nelle versioni precedenti di AEM, non `/libs` deve essere modificato. Solo il codice prodotto AEM può essere distribuito a `/libs`.
+
+### Indici Oak {#oak-indexes}
+
+Gli indici Oak (`/oak:index`) sono gestiti in modo specifico dal processo di distribuzione di AEM Cloud Service. Questo perché Cloud Manager deve aspettare che un nuovo indice venga distribuito e ricollegato completamente prima di passare alla nuova immagine del codice.
+
+Per questo motivo, sebbene gli indici Oak siano modificabili in fase di esecuzione, devono essere distribuiti come codice in modo che possano essere installati prima che siano installati pacchetti modificabili. Di conseguenza, `/oak:index` le configurazioni fanno parte del pacchetto di codice e non del pacchetto di contenuti [come descritto di seguito.](#recommended-package-structure)
+
+>[!TIP]
+>
+>Per ulteriori informazioni sull&#39;indicizzazione in AEM come servizio cloud, consultate il documento [Content Search and Indexing (Ricerca e indicizzazione dei contenuti).](/help/operations/indexing.md)
 
 ## Struttura pacchetto consigliata {#recommended-package-structure}
 
