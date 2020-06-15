@@ -1,10 +1,10 @@
 ---
-title: Configurazione del servizio Dynamic Media Cloud
-description: Informazioni sulla configurazione di Dynamic Media nel servizio Adobe Experience Manager Cloud.
+title: Configurazione di Dynamic Media Cloud Service
+description: Informazioni su come configurare Dynamic Media in  Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 668908770505b24eae4652106471925d1dcfc18b
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '5123'
+source-wordcount: '5125'
 ht-degree: 9%
 
 ---
@@ -12,17 +12,17 @@ ht-degree: 9%
 
 # Informazioni sulla configurazione di Dynamic Media Cloud Service {#configuring-dynamic-media-scene-mode}
 
-Se utilizzi Adobe Experience Manager impostato per ambienti diversi, ad esempio uno per lo sviluppo, uno per l’area di pubblicazione per la verifica e uno per la produzione live, devi configurare i servizi Dynamic Media Cloud per ciascuno di questi ambienti.
+Se utilizzate  Adobe Experience Manager impostato per ambienti diversi, ad esempio uno per lo sviluppo, uno per l&#39;staging e uno per la produzione live, dovete configurare i servizi Dynamic Media Cloud per ciascuno di questi ambienti.
 
 ## Diagramma dell&#39;architettura di Dynamic Media {#architecture-diagram-of-dynamic-media-scene-mode}
 
 Nel diagramma di architettura seguente viene descritto il funzionamento di Dynamic Media.
 
-Con la nuova architettura, AEM è responsabile delle risorse principali e delle sincronizzazioni con Dynamic Media per l’elaborazione e la pubblicazione delle risorse:
+Con la nuova architettura, AEM è responsabile delle risorse di origine primaria e delle sincronizzazioni con Dynamic Media per l’elaborazione e la pubblicazione delle risorse:
 
-1. Quando la risorsa principale viene caricata in AEM, viene replicata in Contenuti multimediali dinamici. A questo punto, Dynamic Media gestisce l’elaborazione e la generazione di rappresentazioni di tutte le risorse, ad esempio la codifica video e le varianti dinamiche di un’immagine.
-1. Dopo la generazione delle rappresentazioni, AEM può accedere e visualizzare in modo sicuro le rappresentazioni remote per file multimediali dinamici (non vengono più inviati binari all’istanza di AEM).
-1. Quando il contenuto è pronto per essere pubblicato e approvato, attiva il servizio Contenuti multimediali dinamici per inviare contenuti ai server di distribuzione e memorizzare il contenuto nella cache del CDN.
+1. Quando la risorsa di origine principale viene caricata in AEM, viene replicata in Dynamic Media. A questo punto, Dynamic Media gestisce l’elaborazione delle risorse e la generazione di rappresentazioni, come la codifica video e le varianti dinamiche di un’immagine.
+1. Dopo la generazione delle rappresentazioni, AEM può accedere in modo sicuro alle rappresentazioni Dynamic Media e visualizzarne l’anteprima (i file binari non vengono ritrasmessi all’istanza di AEM).
+1. Quando il contenuto è pronto per essere pubblicato e approvato, attiva il servizio Dynamic Media per inviare contenuti ai server di distribuzione e memorizzare il contenuto nella cache del CDN.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -46,45 +46,44 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Configurazione del servizio Dynamic Media Cloud {#configuring-dynamic-media-cloud-services}
+## Configurazione di Dynamic Media Cloud Service {#configuring-dynamic-media-cloud-services}
 
-**Prima di configurare il servizio** Dynamic Media Cloud: Dopo aver ricevuto il messaggio e-mail di provisioning con le credenziali per gli elementi multimediali dinamici, dovete [accedere](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) a Dynamic Media Classic per cambiare la password. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che Dynamic Media Cloud Service sia configurato con le credenziali corrette.
+**Prima di configurare Dynamic Media Cloud Service**: Dopo aver ricevuto l&#39;e-mail di provisioning con le credenziali Dynamic Media, dovete [accedere](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) ad Dynamic Media Classic per cambiare la password. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che Dynamic Media Cloud Service sia configurato con le credenziali corrette.
 
 Per configurare i servizi cloud per contenuti multimediali dinamici:
 
 1. In AEM, toccate il logo AEM per accedere alla console di navigazione globale.
 1. Sul lato sinistro della console, sotto l’intestazione **[!UICONTROL Strumenti]**, tocca **[!UICONTROL Cloud Services > Configurazione elemento multimediale dinamico]**.
 1. Nella pagina del Browser configurazioni Dynamic Media, seleziona il riquadro a sinistra e tocca **[!UICONTROL global (globale)]** (non toccare o selezionare l’icona della cartella a sinistra di **[!UICONTROL global]**), quindi tocca **[!UICONTROL Crea]**.
-1. Nella pagina Crea configurazione elemento multimediale dinamico, immetti un titolo, l’indirizzo e-mail dell’account elemento multimediale dinamico, la password, quindi seleziona la tua area geografica. Questi vengono forniti da Adobe nel messaggio e-mail di provisioning. Se non avete ricevuto questa richiesta, contattate l&#39;assistenza.
+1. Nella pagina Crea configurazione Dynamic Media, immettete un titolo, l’indirizzo e-mail dell’account Dynamic Media, la password, quindi selezionate la vostra area geografica. Questi vengono forniti da Adobe nel messaggio e-mail di provisioning. Se non avete ricevuto questa richiesta, contattate l&#39;assistenza.
 1. Click **[!UICONTROL Connect to Dynamic Media]**.
 
    >[!NOTE]
    >
-   >Dopo aver ricevuto il messaggio e-mail di provisioning con le credenziali per i contenuti multimediali dinamici, [accedete](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) a Dynamic Media Classic per cambiare la password. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che il servizio Dynamic Media Cloud sia configurato con le credenziali corrette.
+   >Dopo aver ricevuto il messaggio e-mail di provisioning con le credenziali Dynamic Media, [accedete](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) ad Dynamic Media Classic per cambiare la password. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che il servizio cloud Dynamic Media sia configurato con le credenziali corrette.
 
 1. Quando la connessione ha esito positivo, potete impostare quanto segue:
 
-   * **[!UICONTROL Company]** - il nome dell&#39;account Dynamic Media. È possibile che si disponga di più account Dynamic Media per diversi marchi secondari, divisioni o diversi ambienti di produzione/staging.
+   * **[!UICONTROL Società]** - il nome dell&#39;account Dynamic Media. È possibile che si disponga di più account Dynamic Media per diversi marchi secondari, divisioni o diversi ambienti di produzione e di staging.
 
    * **[!UICONTROL Percorso cartella principale della società]**
 
    * **[!UICONTROL Pubblicazione delle risorse]** - Potete scegliere tra le tre opzioni seguenti:
       * **[!UICONTROL Immediatamente]** significa che quando le risorse vengono caricate, il sistema le raccoglie e fornisce l’URL/Incorpora immediatamente. Non è necessario alcun intervento da parte degli utenti per pubblicare le risorse.
       * **[!UICONTROL Al momento dell’attivazione]** , è necessario pubblicare la risorsa in modo esplicito prima di fornire un collegamento URL/Incorpora.
-      * **[!UICONTROL La pubblicazione]** selettiva consente di pubblicare automaticamente le risorse solo per l’anteprima protetta e di pubblicarle esplicitamente in AEM senza pubblicarle in DMS7 per la distribuzione nel dominio pubblico. In futuro, Adobe migliorerà questa opzione per pubblicare le risorse in AEM e pubblicarle in Contenuti multimediali dinamici, escludendosi a vicenda. In altre parole, potete pubblicare le risorse su DMS7 in modo da poter utilizzare funzioni quali SmartCrop o rappresentazioni dinamiche. Oppure, potete pubblicare le risorse esclusivamente in AEM per la visualizzazione in anteprima; le stesse risorse non vengono pubblicate in DMS7 per la distribuzione nel dominio pubblico.
-   * **[!UICONTROL Server]** di anteprima protetto: consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, AEM può accedere e visualizzare in modo sicuro le rappresentazioni per contenuti multimediali dinamici remoti (non viene inviato alcun file binario all’istanza di AEM).
+      * **[!UICONTROL La pubblicazione]** selettiva consente di pubblicare automaticamente le risorse solo per l’anteprima protetta e di pubblicarle esplicitamente in AEM senza pubblicarle in DMS7 per la distribuzione nel dominio pubblico. In futuro, Adobe migliorerà questa opzione per pubblicare le risorse in AEM e pubblicarle in Dynamic Media, escludendosi a vicenda. In altre parole, potete pubblicare le risorse su DMS7 in modo da poter utilizzare funzioni quali SmartCrop o rappresentazioni dinamiche. Oppure, potete pubblicare le risorse esclusivamente in AEM per la visualizzazione in anteprima; le stesse risorse non vengono pubblicate in DMS7 per la distribuzione nel dominio pubblico.
+   * **[!UICONTROL Server]** di anteprima protetto: consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, AEM può accedere e visualizzare in modo sicuro le rappresentazioni Dynamic Media remote (non viene inviato alcun file binario all’istanza di AEM).
 A meno che non disponiate di una disposizione speciale per utilizzare il server della vostra società o un server speciale, Adobe Systems consiglia di lasciare questa impostazione come specificato.
 
-   * **[!UICONTROL Sincronizza tutto il contenuto]** - Selezionato per impostazione predefinita. Deselezionate questa opzione se desiderate includere o escludere selettivamente le risorse dalla sincronizzazione a elementi multimediali dinamici. Deselezionando questa opzione, potete scegliere tra le due seguenti modalità di sincronizzazione per elementi multimediali dinamici:
+   * **[!UICONTROL Sincronizza tutto il contenuto]** - Selezionato per impostazione predefinita. Deselezionate questa opzione se desiderate includere o escludere selettivamente le risorse dalla sincronizzazione ad Dynamic Media. Deselezionando questa opzione potete scegliere tra le due seguenti modalità di sincronizzazione Dynamic Media:
 
    * **[!UICONTROL Modalità di sincronizzazione elementi Dynamic Media]**
       * **[!UICONTROL Abilitata per impostazione predefinita]** : la configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non venga contrassegnata una cartella specifica per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL Disabilitata per impostazione predefinita]** : la configurazione non viene applicata ad alcuna cartella finché non si contrassegna in modo esplicito una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici.
+      * **[!UICONTROL Disabilitata per impostazione predefinita]** : la configurazione non viene applicata ad alcuna cartella finché non si contrassegna esplicitamente una cartella selezionata per la sincronizzazione ad Dynamic Media.
 Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, apri la pagina Proprietà della cartella risorse. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
          * **[!UICONTROL Ereditato]** - Nessun valore di sincronizzazione esplicito sulla cartella; invece, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per le presentazioni ereditate viene visualizzato tramite una descrizione comandi.
-         * **[!UICONTROL Abilita per le sottocartelle]** - Includi tutto ciò che si trova in questo sottoalbero per la sincronizzazione con gli elementi multimediali dinamici. Le impostazioni specifiche per la cartella sostituiscono la modalità predefinita nella configurazione cloud.
-         * **[!UICONTROL Disattivato per le sottocartelle]** - Escludete tutti gli elementi di questo sottoalbero dalla sincronizzazione a Contenuti multimediali dinamici.
-
+         * **[!UICONTROL Abilita per sottocartelle]** - Includi tutto ciò che si trova in questo sottoalbero per la sincronizzazione con Dynamic Media. Le impostazioni specifiche per la cartella sostituiscono la modalità predefinita nella configurazione cloud.
+         * **[!UICONTROL Disattivato per le sottocartelle]** - Escludete tutti gli elementi di questo sottoalbero dalla sincronizzazione ad Dynamic Media.
    >[!NOTE]
    >
    >In Dynamic Media non è supportato il controllo delle versioni. Inoltre, l’attivazione ritardata si applica solo se l’opzione **[!UICONTROL Pubblica risorse]** della pagina Modifica configurazione Dynamic Media è impostata su **[!UICONTROL All’attivazione]** e soltanto fino alla prima attivazione della risorsa.
@@ -95,25 +94,25 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Toccate **[!UICONTROL Salva]**.
-1. Per visualizzare in modo sicuro l’anteprima del contenuto multimediale dinamico prima della pubblicazione, dovrete &quot;consentire l’elenco&quot; dell’istanza di creazione di AEM per collegarvi a Contenuti multimediali dinamici:
+1. Per visualizzare in modo sicuro l’anteprima del contenuto Dynamic Media prima che venga pubblicato, dovrete &quot;consentire l’elenco&quot; dell’istanza di creazione di AEM per collegarvi ad Dynamic Media:
 
    * Accedete al vostro account Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Le credenziali e l&#39;accesso sono stati forniti da Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
    * Nella barra di navigazione in alto a destra della pagina, fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Server]** immagini.
 
    * Nella pagina Pubblica su Image Server, nell’elenco a discesa Contesto di pubblicazione, selezionate **[!UICONTROL Prova server]** immagini.
    * Per Filtro indirizzi client, toccate **[!UICONTROL Aggiungi]**.
-   * Selezionate la casella di controllo per attivare l&#39;indirizzo, quindi immettete l&#39;indirizzo IP dell&#39;istanza di AEM Author (non l&#39;IP del dispatcher).
+   * Selezionate la casella di controllo per attivare l’indirizzo, quindi immettete l’indirizzo IP dell’istanza AEM Author (non l’IP Dispatcher).
    * Fai clic su **[!UICONTROL Salva]**.
 
-Ora hai finito con la configurazione di base; è possibile utilizzare gli elementi multimediali dinamici.
+Ora hai finito con la configurazione di base; è possibile utilizzare Dynamic Media.
 
-Se desiderate personalizzare ulteriormente la configurazione, potete eventualmente completare qualsiasi attività in [Configurazione delle impostazioni avanzate in Contenuti multimediali](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)dinamici.
+Se desiderate personalizzare ulteriormente la configurazione, potete eventualmente completare una qualsiasi delle attività in [Configurazione delle impostazioni avanzate in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
-## (Facoltativo) Configurazione delle impostazioni avanzate per gli elementi multimediali dinamici{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## (Facoltativo) Configurazione delle impostazioni avanzate in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-Per personalizzare ulteriormente la configurazione e l’impostazione di Dynamic Media o ottimizzarne le prestazioni, potete completare una o più delle seguenti attività *facoltative* :
+Se desiderate personalizzare ulteriormente la configurazione e l&#39;impostazione di Dynamic Media o ottimizzarne le prestazioni, potete completare una o più delle seguenti attività *facoltative* :
 
-* [Configurazione e configurazione delle impostazioni per contenuti multimediali dinamici](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
+* [Configurazione e configurazione delle impostazioni Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Facoltativo) Ottimizzazione delle prestazioni di Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 <!--
@@ -122,11 +121,11 @@ Per personalizzare ulteriormente la configurazione e l’impostazione di Dynamic
 
 -->
 
-### (Facoltativo) Configurazione e configurazione delle impostazioni per contenuti multimediali dinamici {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
+### (Facoltativo) Configurazione e configurazione delle impostazioni Dynamic Media {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
-Usate l’interfaccia utente di Dynamic Media Classic (Scene7) per modificare le impostazioni di Dynamic Media.
+Usate l’interfaccia utente di Dynamic Media Classic (Scene7) per apportare modifiche alle impostazioni Dynamic Media.
 
-Per alcune delle operazioni di cui sopra è necessario accedere a Dynamic Media Classic (Scene7), effettuate le seguenti operazioni: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+Per alcune delle operazioni di cui sopra è necessario accedere ad Dynamic Media Classic (Scene7), effettuate le seguenti operazioni: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
 Le attività di configurazione e configurazione includono:
 
@@ -139,7 +138,7 @@ Le attività di configurazione e configurazione includono:
 
 #### Configurazione pubblicazione per Image Server {#publishing-setup-for-image-server}
 
-Le impostazioni Impostazione pubblicazione specificano il modo in cui le risorse vengono distribuite per impostazione predefinita dai file multimediali dinamici. Se non viene specificata alcuna impostazione, Dynamic Media distribuisce una risorsa in base alle impostazioni predefinite definite in Impostazione pubblicazione. Ad esempio, una richiesta di invio di un&#39;immagine che non include un attributo di risoluzione produce un&#39;immagine con l&#39;impostazione Risoluzione oggetto predefinita.
+Le impostazioni Impostazione pubblicazione specificano il modo in cui le risorse vengono distribuite per impostazione predefinita da Dynamic Media. Se non viene specificata alcuna impostazione, Dynamic Media distribuisce una risorsa in base alle impostazioni predefinite definite in Impostazione pubblicazione. Ad esempio, una richiesta di invio di un&#39;immagine che non include un attributo di risoluzione produce un&#39;immagine con l&#39;impostazione Risoluzione oggetto predefinita.
 
 Per configurare Impostazione pubblicazione: in Dynamic Media Classic, fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Server]** immagini.
 
@@ -147,7 +146,7 @@ La schermata Server immagini stabilisce le impostazioni predefinite per la distr
 
 * **[!UICONTROL Attributi]** richiesta - Queste impostazioni impongono limiti alle immagini che possono essere distribuite dal server.
 * **[!UICONTROL Attributi]** richiesta predefiniti - Queste impostazioni interessano l&#39;aspetto predefinito delle immagini.
-* **[!UICONTROL Attributi]** comuni delle miniature: queste impostazioni interessano l’aspetto predefinito delle immagini in miniatura.
+* **[!UICONTROL Attributi]** comuni delle miniature: queste impostazioni interessano l’aspetto predefinito delle miniature.
 * **[!UICONTROL Valori predefiniti per i campi]** catalogo: queste impostazioni interessano la risoluzione e il tipo predefinito di miniatura delle immagini.
 * **[!UICONTROL Attributi]** di gestione del colore: queste impostazioni determinano quali profili colore ICC vengono utilizzati.
 * **[!UICONTROL Attributi]** di compatibilità - Questa impostazione consente ai paragrafi iniziali e finali nei livelli di testo di essere trattati come nella versione 3.6 per garantire la compatibilità con le versioni precedenti.
@@ -159,7 +158,7 @@ Per aprire la pagina Impostazioni generali applicazione, nella barra di navigazi
 
 * **[!UICONTROL Server]** - Al momento del provisioning dell&#39;account, Dynamic Media fornisce automaticamente i server assegnati alla società. Questi server vengono utilizzati per creare stringhe URL per il sito Web e le applicazioni. Queste chiamate URL sono specifiche per il vostro account. Non modificate i nomi dei server, a meno che il supporto di AEM non vi fornisca istruzioni specifiche in tal senso.
 
-* **[!UICONTROL Sovrascrivi immagini]** - Contenuti multimediali dinamici non consentono a due file di avere lo stesso nome. L’ID URL di ogni elemento (il nome del file senza l’estensione) deve essere univoco. Queste opzioni specificano la modalità di caricamento delle risorse sostitutive: se sostituiscono l’originale o diventano duplicati. Le risorse duplicate vengono rinominate con il suffisso &quot;-1&quot; (ad esempio, sedia.tif viene rinominato sedia-1.tif). Queste opzioni interessano le risorse caricate in una cartella diversa dall’originale o le risorse con un’estensione file diversa dall’originale (ad esempio, JPG, TIF o PNG).
+* **[!UICONTROL Sovrascrivi immagini]** - Dynamic Media non consente a due file di avere lo stesso nome. L’ID URL di ogni elemento (il nome del file senza l’estensione) deve essere univoco. Queste opzioni specificano la modalità di caricamento delle risorse sostitutive: se sostituiscono l’originale o diventano duplicati. Le risorse duplicate vengono rinominate con il suffisso &quot;-1&quot; (ad esempio, sedia.tif viene rinominato sedia-1.tif). Queste opzioni interessano le risorse caricate in una cartella diversa dall’originale o le risorse con un’estensione file diversa dall’originale (ad esempio, JPG, TIF o PNG).
 
 * **[!UICONTROL Sovrascrivi in cartella corrente, nome/estensione]** immagine base - Questa opzione è la regola più restrittiva per la sostituzione. Richiede che l’immagine sostitutiva venga caricata nella stessa cartella dell’originale e che abbia la stessa estensione del nome file dell’originale. Se questi requisiti non sono soddisfatti, viene creato un duplicato.
 
@@ -183,7 +182,7 @@ La gestione dinamica del colore dei contenuti multimediali consente di colorare 
 
 Per configurare le proprietà colore predefinite per attivare la correzione colore durante la richiesta delle immagini:
 
-1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione]** applicazione.
+1. [Effettuate l&#39;accesso ad Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione]** applicazione.
 1. Espandi l’area **[!UICONTROL Publish Setup (Impostazione pubblicazione)]** e seleziona **[!UICONTROL Image Server]**. Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
 1. Scorrete fino alla proprietà da modificare, ad esempio una proprietà nell’area Attributi **[!UICONTROL di gestione]** colore.
 
@@ -208,7 +207,7 @@ In questo modo si effettua quanto segue:
 
 #### Configurazione dell’elaborazione delle risorse {#configuring-asset-processing}
 
-Potete definire i tipi di risorse che devono essere elaborati da Dynamic Media e personalizzare i parametri di elaborazione avanzati delle risorse. Ad esempio, potete specificare i parametri di elaborazione delle risorse per effettuare le seguenti operazioni:
+Potete definire quali tipi di risorse elaborare da Dynamic Media e personalizzare i parametri di elaborazione avanzata delle risorse. Ad esempio, potete specificare i parametri di elaborazione delle risorse per effettuare le seguenti operazioni:
 
 * Convertite un file Adobe PDF in una risorsa eCatalog.
 * Convertite un documento Adobe Photoshop (.PSD) in una risorsa modello banner per la personalizzazione.
@@ -229,7 +228,7 @@ Consulta [Caricamento delle risorse](/help/assets/add-assets.md).
 1. Sotto la cartella mimeTypes, selezionate un tipo mime.
 1. Sul lato destro della pagina CRXDE Lite, nella parte inferiore:
 
-   * fare doppio clic sul campo **[!UICONTROL abilitato]** . Per impostazione predefinita, tutti i tipi di mime delle risorse sono attivati (impostati su **[!UICONTROL true]**), il che significa che le risorse verranno sincronizzate su Contenuti multimediali dinamici per l’elaborazione. Se desiderate escludere l’elaborazione di questo tipo di mime della risorsa, modificate questa impostazione in **[!UICONTROL false]**.
+   * fare doppio clic sul campo **[!UICONTROL abilitato]** . Per impostazione predefinita, tutti i tipi di mime delle risorse sono attivati (impostati su **[!UICONTROL true]**), il che significa che le risorse verranno sincronizzate in Dynamic Media per l’elaborazione. Se desiderate escludere l’elaborazione di questo tipo di mime della risorsa, modificate questa impostazione in **[!UICONTROL false]**.
 
    * fare doppio clic su **[!UICONTROL jobParam]** per aprire il campo di testo associato. Consultate Tipi [mime](/help/assets/file-format-support.md) supportati per un elenco dei valori di parametri di elaborazione consentiti per un determinato tipo mime.
 
@@ -250,7 +249,7 @@ All’interno di AEM Assets puoi aggiungere tipi MIME personalizzati per i forma
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
-1. Viene visualizzata una nuova scheda del browser nella pagina Configurazione **[!UICONTROL console Web di]** Adobe Experience Manager.
+1. Viene visualizzata una nuova scheda del browser nella pagina Configurazione **[!UICONTROL console Web del Adobe Experience Manager]** .
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
@@ -270,7 +269,7 @@ All’interno di AEM Assets puoi aggiungere tipi MIME personalizzati per i forma
 
 1. In the lower-right corner of the page, tap **[!UICONTROL Save]**.
 
-   A questo punto, puoi chiudere la scheda del browser contenente la pagina di configurazione della console Web di Adobe Experience Manager aperta.
+   A questo punto, è possibile chiudere la scheda del browser con la pagina di configurazione della console Web  Adobe Experience Manager aperta.
 
 1. Tornate alla scheda del browser con la console AEM aperta.
 1. From AEM, tap **[!UICONTROL Tools > General > CRXDE Lite]**.
@@ -294,7 +293,7 @@ All’interno di AEM Assets puoi aggiungere tipi MIME personalizzati per i forma
 
 #### Creazione di predefiniti per set di batch per generare automaticamente set di immagini e set 360 gradi {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
-Usate i predefiniti per set di batch per automatizzare la creazione di set di immagini o set 360 gradi durante il caricamento delle risorse su elementi multimediali dinamici.
+Usate i predefiniti per set di batch per automatizzare la creazione di set di immagini o set 360 gradi durante il caricamento delle risorse in Dynamic Media.
 
 In primo luogo, definite la convenzione di denominazione in base alla quale le risorse devono essere raggruppate in un set. Potete quindi creare un predefinito per set di batch con un nome univoco e un set autonomo di istruzioni che definisca come creare il set utilizzando immagini che corrispondono alle convenzioni di denominazione definite nella definizione del predefinito.
 
@@ -308,7 +307,7 @@ Sebbene l’impostazione di una convenzione di denominazione predefinita non sia
 
 In alternativa, è possibile utilizzare **[!UICONTROL Visualizza codice]** senza campi modulo. In questa visualizzazione potete creare definizioni complete delle convenzioni di denominazione utilizzando espressioni regolari.
 
-Sono disponibili due elementi per la definizione, Corrispondenza e Nome base. Questi campi consentono di definire tutti gli elementi di una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. Una singola convenzione di denominazione di una società può utilizzare una o più righe di definizione per ciascuno di questi elementi. Potete usare tutte le righe necessarie per creare una definizione univoca e raggrupparle in elementi distinti, ad esempio per l’immagine principale, l’elemento colore, l’elemento visualizzazione alternativa e l’elemento campione.
+Sono disponibili due elementi per la definizione, Corrispondenza e Nome base. Questi campi consentono di definire tutti gli elementi di una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. Una convenzione di denominazione individuale di una società può utilizzare una o più righe di definizione per ciascuno di questi elementi. Potete usare tutte le righe necessarie per creare una definizione univoca e raggrupparle in elementi distinti, ad esempio per l’immagine principale, l’elemento colore, l’elemento visualizzazione alternativa e l’elemento campione.
 
 **Per configurare la denominazione predefinita**
 
@@ -338,7 +337,7 @@ Sono disponibili due elementi per la definizione, Corrispondenza e Nome base. Qu
 
 **Creazione di un predefinito per set di batch**
 
-Dynamic Media utilizza i predefiniti per set di batch per organizzare le risorse in set di immagini (immagini alternative, opzioni colore, 360 rotazioni) da visualizzare nei visualizzatori. I predefiniti per set di batch vengono eseguiti automaticamente insieme ai processi di caricamento delle risorse in Contenuti multimediali dinamici.
+Dynamic Media utilizza i predefiniti per set di batch per organizzare le risorse in set di immagini (immagini alternative, opzioni colore, 360 rotazioni) da visualizzare nei visualizzatori. I predefiniti per set di batch vengono eseguiti automaticamente insieme ai processi di caricamento delle risorse in Dynamic Media.
 
 Potete creare, modificare e gestire i predefiniti per set di batch. Esistono due moduli per le definizioni dei predefiniti per set di batch: uno per una convenzione di denominazione eventualmente configurata e uno per convenzioni di denominazione generate al momento.
 
@@ -363,18 +362,18 @@ Potete definire un predefinito per set di batch con i campi modulo o con il meto
 
    * To define a new naming convention as you set up the preset, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, click **[!UICONTROL Custom]**.
 
-1. Per l’ordine della sequenza, definite l’ordine in cui le immagini vengono visualizzate dopo che il set è stato raggruppato in Contenuti multimediali dinamici.
+1. Per l’ordine della sequenza, definite l’ordine in cui vengono visualizzate le immagini dopo che il set è stato raggruppato in Dynamic Media.
 
    Per impostazione predefinita, le risorse sono ordinate in ordine alfabetico. Tuttavia, potete definire l’ordine utilizzando un elenco separato da virgole di espressioni regolari.
 
-1. Per Imposta convenzione di denominazione e creazione, specificate il suffisso o il prefisso per il nome di base definito nella convenzione di denominazione delle risorse. Inoltre, definite la posizione in cui verrà creato il set nella struttura di cartelle per gli elementi multimediali dinamici.
+1. Per Imposta convenzione di denominazione e creazione, specificate il suffisso o il prefisso per il nome di base definito nella convenzione di denominazione delle risorse. Inoltre, definite la posizione in cui verrà creato il set nella struttura di cartelle di Dynamic Media.
 
    Se definite un numero elevato di set, potete preferire tenerli separati dalle cartelle contenenti le risorse stesse. Ad esempio, potete creare una cartella per i set di immagini e inserire qui i set generati.
 
 1. Nel pannello Dettagli, toccate **[!UICONTROL Salva]**.
 1. Toccate **[!UICONTROL Attivo]** accanto al nuovo nome del predefinito.
 
-   Quando attivate il predefinito, al momento di caricare le risorse su Contenuti multimediali dinamici viene applicato il predefinito per set di batch.
+   Attivando il predefinito si garantisce che quando caricate le risorse su Dynamic Media, il predefinito per set di batch venga applicato per generare il set.
 
 **Creazione di un predefinito per set di batch per la generazione automatica di un set 360 gradi 2D**
 
@@ -456,7 +455,7 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 1. Nel pannello Dettagli, fate clic su **[!UICONTROL Salva]**.
 1. Fate clic su **[!UICONTROL Attivo]** accanto al nuovo nome del predefinito.
 
-   Quando attivate il predefinito, al momento di caricare le risorse su Contenuti multimediali dinamici viene applicato il predefinito per set di batch.
+   Attivando il predefinito si garantisce che quando caricate le risorse su Dynamic Media, il predefinito per set di batch venga applicato per generare il set.
 
 ### (Facoltativo) Ottimizzazione delle prestazioni di Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
@@ -479,11 +478,11 @@ Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sintonizzat
 | PostScript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-Per aggiornare uno di questi parametri, segui i passaggi descritti in [Abilitazione del supporto](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)dei parametri di caricamento per i processi di caricamento di risorse/file multimediali dinamici basati su tipo MIME.
+Per aggiornare uno qualsiasi di questi parametri, segui i passaggi descritti in [Abilitazione del supporto](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)dei parametri di caricamento di risorse/Dynamic Media Classic basato su tipi MIME.
 
 #### Aggiornamento della coda del flusso di lavoro transitorio Granite {#updating-the-granite-transient-workflow-queue}
 
-La coda del flusso di lavoro di transito Granite viene utilizzata per il flusso di lavoro **[!UICONTROL DAM Update Asset]** . In Contenuti multimediali dinamici, vengono utilizzati per l’assimilazione e l’elaborazione delle immagini.
+La coda del flusso di lavoro di transito Granite viene utilizzata per il flusso di lavoro **[!UICONTROL DAM Update Asset]** . In Dynamic Media, viene utilizzata per l’assimilazione e l’elaborazione delle immagini.
 
 **Per aggiornare la coda del flusso di lavoro transitorio Granite**
 
@@ -505,7 +504,7 @@ La coda del flusso di lavoro di transito Granite viene utilizzata per il flusso 
 
 #### Aggiornamento della coda del flusso di lavoro Granite {#updating-the-granite-workflow-queue}
 
-La coda Flusso di lavoro Granite viene utilizzata per i flussi di lavoro non transitori. In Contenuti multimediali dinamici, veniva utilizzato per elaborare i video con il flusso di lavoro Codifica video **[!UICONTROL per file multimediali]** dinamici.
+La coda Flusso di lavoro Granite viene utilizzata per i flussi di lavoro non transitori. In Dynamic Media, veniva utilizzato per elaborare i video con il flusso di lavoro **[!UICONTROL Dynamic Media Encode Video]** .
 
 **Per aggiornare la coda del flusso di lavoro Granite**
 
@@ -534,9 +533,9 @@ L’impostazione Connessione caricamento di Scene7 consente di sincronizzare le 
 1. Accedi a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. Nel campo **[!UICONTROL Numero di connessioni]** e/o nel campo Timeout **[!UICONTROL processo]** attivo, modificare il numero come desiderato.
 
-   L’impostazione **[!UICONTROL Numero di connessioni]** controlla il numero massimo di connessioni HTTP consentite da AEM a Dynamic Media Upload; in genere, il valore predefinito di 10 connessioni è sufficiente.
+   L’impostazione **[!UICONTROL Numero di connessioni]** controlla il numero massimo di connessioni HTTP consentite per il caricamento di AEM su Dynamic Media; in genere, il valore predefinito di 10 connessioni è sufficiente.
 
-   L’impostazione Timeout **[!UICONTROL processo]** attivo determina il tempo di attesa per le risorse multimediali dinamiche caricate da pubblicare nel server di distribuzione. Per impostazione predefinita, questo valore è di 2100 secondi o 35 minuti.
+   L’impostazione Timeout **[!UICONTROL processo]** attivo determina il tempo di attesa per la pubblicazione delle risorse Dynamic Media caricate nel server di distribuzione. Per impostazione predefinita, questo valore è di 2100 secondi o 35 minuti.
 
    Per la maggior parte dei casi di utilizzo, è sufficiente impostare 2100.
 
