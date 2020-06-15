@@ -1,10 +1,10 @@
 ---
 title: Profili video
-description: Gli elementi multimediali dinamici dispongono già di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Potete anche aggiungere ritaglio avanzato ai video.
+description: Dynamic Media è già dotato di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Potete anche aggiungere ritaglio avanzato ai video.
 translation-type: tm+mt
-source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '3676'
+source-wordcount: '3678'
 ht-degree: 20%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 20%
 
 # Video profiles{#video-profiles}
 
-Gli elementi multimediali dinamici dispongono già di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Quando codificate i video principali utilizzando il profilo di codifica per video adattivi, durante la riproduzione il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. È noto come streaming adattivo.
+Dynamic Media è già dotato di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Quando codificate i video sorgente principali utilizzando il profilo di codifica video adattiva, durante la riproduzione il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. È noto come streaming adattivo.
 
 Di seguito sono riportati altri fattori che determinano la qualità dei video:
 
-* **Risoluzione del video principale caricato**
+* **Risoluzione del video sorgente principale caricato**
 
    Se il video MP4 veniva registrato a una risoluzione inferiore, ad esempio 240p o 360p, non poteva essere trasmesso in streaming in alta definizione.
 
@@ -123,7 +123,7 @@ Consultate anche [Ritaglio avanzato per le immagini](image-profiles.md).
 
 ## Creazione di un profilo video per lo streaming adattivo {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Gli elementi multimediali dinamici sono già dotati di un profilo di codifica video adattiva predefinito, un gruppo di impostazioni di caricamento video per MP4 H.264, ottimizzato per garantire una migliore esperienza di visualizzazione. Potete usare questo profilo quando caricate i video.
+Dynamic Media è già dotato di un profilo di codifica video adattiva predefinito, un gruppo di impostazioni di caricamento video per MP4 H.264, ottimizzato per garantire una migliore esperienza di visualizzazione. Potete usare questo profilo quando caricate i video.
 
 Tuttavia, se questo profilo predefinito non soddisfa le esigenze, potete scegliere di creare un profilo di codifica video adattivo personalizzato. Quando utilizzate l’impostazione **[!UICONTROL Codifica per lo streaming]** adattivo, come best practice, vengono convalidati tutti i predefiniti di codifica che aggiungete al profilo, in modo da garantire che tutti i video abbiano le stesse proporzioni. Inoltre, i video codificati vengono trattati come un set di bitrate multipli per lo streaming.
 
@@ -309,7 +309,7 @@ Potete modificare un profilo di codifica video esistente per sfruttare i paramet
 
 Potete modificare qualsiasi profilo video creato per aggiungere, modificare o eliminare i predefiniti video all’interno di tale profilo.
 
-Per impostazione predefinita, non è possibile modificare il profilo predefinito per la codifica **[!UICONTROL video]** adattiva fornito con gli elementi multimediali dinamici. Potete invece copiare facilmente il profilo e salvarlo con un nuovo nome. Potete quindi modificare i predefiniti desiderati nel profilo copiato.
+Per impostazione predefinita, non è possibile modificare il profilo predefinito per la codifica **[!UICONTROL video]** adattiva fornito con Dynamic Media. Potete invece copiare facilmente il profilo e salvarlo con un nuovo nome. Potete quindi modificare i predefiniti desiderati nel profilo copiato.
 
 Consultate anche [Best practice per la codifica](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)video.
 
@@ -320,7 +320,7 @@ Per definire parametri di elaborazione avanzati per altri tipi di risorse, consu
 1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
 1. Nella pagina Profili video, verificate il nome di un profilo video.
 1. Sulla barra degli strumenti, toccate **[!UICONTROL Modifica]**.
-1. Nella pagina Profilo di codifica video, modificate il nome e la descrizione come desiderate.
+1. Nella pagina Profilo codifica video, modificate il nome e la descrizione come desiderate.
 1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming adattivo]** sia selezionata.
 Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni. (Se state modificando un profilo video progressivo, non selezionate questa casella di controllo.)
 1. Nell’intestazione Predefiniti codifica video, potete aggiungere, modificare o eliminare predefiniti di codifica video che compongono il profilo.
@@ -334,17 +334,17 @@ Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni
 1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
 1. Nella pagina Profili video, verificate il nome di un profilo video.
 1. Sulla barra degli strumenti, toccate **[!UICONTROL Copia]**.
-1. Nella pagina Profilo codifica video, immettete un nuovo nome per il profilo.
+1. On the Video Encoding Profile page, enter a new name for the profile.
 1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming adattivo]** sia selezionata. Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni. Se copi un profilo video progressivo, non selezionare la casella di controllo.
 
-   In modalità Dynamic Media - Hybrid, se un predefinito video WebM fa parte del profilo video, **[!UICONTROL Codifica per lo streaming]** adattivo non è possibile perché tutti i predefiniti devono essere MP4.
+   In Dynamic Media - Modalità ibrida, se un predefinito per video WebM fa parte del profilo video, **[!UICONTROL Codifica per lo streaming]** adattivo non è possibile perché tutti i predefiniti devono essere MP4.
 1. Nell’intestazione Predefiniti codifica video, potete aggiungere, modificare o eliminare predefiniti di codifica video che compongono il profilo.
 
    Toccate l&#39;icona delle informazioni accanto a ciascuna opzione nelle schede Base e Avanzate per le impostazioni e le descrizioni consigliate.
 
 1. Nell&#39;angolo superiore destro della pagina, toccate **[!UICONTROL Salva]**.
 
-### Eliminazione di un profilo video {#deleting-a-video-encoding-profile}
+### Deleting a video profile {#deleting-a-video-encoding-profile}
 
 1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
 1. Nella pagina Profili video, verificate i nomi di uno o più profili video.
@@ -355,17 +355,17 @@ Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni
 
 Quando assegnate un profilo video a una cartella, tutte le sottocartelle ereditano automaticamente il profilo dalla cartella principale. Questo significa che potete assegnare un solo profilo video a una cartella. Considerate quindi attentamente la struttura delle cartelle in cui caricare, memorizzare, usare e archiviare le risorse.
 
-Se avete assegnato un profilo video diverso a una cartella, il nuovo profilo sostituisce il profilo precedente. Le risorse di cartella esistenti in precedenza restano invariate. Il nuovo profilo viene applicato alle risorse aggiunte successivamente alla cartella.
+If you assigned a different video profile to a folder, the new profile overrides the previous profile. Le risorse di cartella esistenti in precedenza restano invariate. Il nuovo profilo viene applicato alle risorse aggiunte successivamente alla cartella.
 
-Le cartelle a cui è assegnato un profilo sono indicate nell&#39;interfaccia utente in base al nome del profilo visualizzato nel nome della scheda.
+Folders that have a profile assigned to it are indicated in the user interface by the name of the profile appearing in the card name.
 
 ![chlimage_1-517](assets/chlimage_1-517.png)
 
 Potete applicare i profili video a cartelle specifiche o globalmente a tutte le risorse.
 
-Potete rielaborare le risorse in una cartella che dispone già di un profilo video esistente modificato in seguito. Consultate [Rielaborazione delle risorse in una cartella](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+Potete rielaborare le risorse in una cartella che dispone già di un profilo video esistente modificato in seguito. See [Reprocessing assets in a folder](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
 
-### Applicazione di un profilo video a cartelle specifiche {#applying-video-profiles-to-specific-folders}
+### Applying a video profile to specific folders {#applying-video-profiles-to-specific-folders}
 
 Puoi applicare un profilo video a una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà]**. Questa sezione descrive come applicare i profili video alle cartelle con entrambe le soluzioni.
 
@@ -373,30 +373,31 @@ Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visuali
 
 See also [Reprocessing assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
 
-#### Applicazione di un profilo video alle cartelle tramite l’interfaccia utente Profili {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
+#### Applying a video profile to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
 1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
 1. Selezionate il profilo video da applicare a una o più cartelle.
 1. Tocca **[!UICONTROL Applica profilo a cartelle]** e seleziona una o più cartelle da usare per ricevere le risorse appena caricate, quindi fai clic su **[!UICONTROL Applica]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella in **[!UICONTROL Vista a schede]**.
 Potete [monitorare l’avanzamento di un processo](#monitoring-the-progress-of-an-encoding-job)di elaborazione del profilo video.
 
-#### Applicazione di un profilo video alle cartelle da Proprietà {#applying-video-profiles-to-folders-from-properties}
+#### Applying a video profile to folders from Properties {#applying-video-profiles-to-folders-from-properties}
 
-1. Toccate o fate clic sul logo AEM, accedete a **[!UICONTROL Risorse]** e quindi alla cartella a cui desiderate applicare un profilo video.
-1. Sulla cartella, toccate il segno di spunta per selezionarlo, quindi toccate **[!UICONTROL Proprietà]**.
+1. Tap or click the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply a video profile to.
+1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties]**.
 1. Seleziona la scheda **[!UICONTROL Profili video]** e fai clic sul profilo dal menu a discesa, infine tocca **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
-   ![chlimage_1-518](assets/chlimage_1-518.png)È possibile [monitorare l’avanzamento di un processo](#monitoring-the-progress-of-an-encoding-job)di elaborazione del profilo video.
+   ![chlimage_1-518](assets/chlimage_1-518.png)
+You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
 ### Applicazione di un profilo video a livello globale {#applying-a-video-profile-globally}
 
 Oltre ad applicare un profilo a una cartella, puoi applicarne uno a livello globale in modo che a qualsiasi contenuto caricato in risorse AEM in qualsiasi cartella sia applicato il profilo selezionato.
 
-Consultate anche [Rielaborazione delle risorse in una cartella](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+See also [Reprocessing assets in a folder](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
 
 **Per applicare un profilo video a livello globale**,
 
-* Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungete la proprietà `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e toccate **[!UICONTROL Salva tutto]**.
+* Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` and tap **[!UICONTROL Save All]**.
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * Potete [monitorare l’avanzamento di un processo](#monitoring-the-progress-of-an-encoding-job)di elaborazione del profilo video.
