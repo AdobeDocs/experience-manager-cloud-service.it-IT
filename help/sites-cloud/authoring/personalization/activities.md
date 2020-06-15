@@ -2,10 +2,10 @@
 title: Gestione delle attività
 description: La console Attività consente di creare, organizzare e gestire le attività di marketing dei tuoi marchi
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 86%
+source-wordcount: '2002'
+ht-degree: 85%
 
 ---
 
@@ -130,7 +130,7 @@ Se utilizzi la funzionalità di test A/B di Adobe Target:
 
 >[!NOTE]
 >
->Quando si annulla la pubblicazione di un&#39;attività,
+>Quando si annulla la pubblicazione di un&#39;attività, lo stato dell&#39;attività cambia solo se si aggiorna la pagina.
 
 Per pubblicare o annullare la pubblicazione di attività:
 
@@ -166,6 +166,7 @@ Per visualizzare le prestazioni dell&#39;attività e convertire l&#39;esperienza
 
    * Disattiva l&#39;attività in corso
    * Modifica tutte le pagine e sostituisce il contenuto con targeting con il contenuto effettivo dell&#39;esperienza vincente. The content of the winning experience becomes part of the normal page **without** targeting.
+
    ![Conversione del vincitore](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    Un&#39;esperienza vincente è l&#39;esperienza che genera un incremento maggiore nei rapporti, che si basa sul tasso di conversione.
