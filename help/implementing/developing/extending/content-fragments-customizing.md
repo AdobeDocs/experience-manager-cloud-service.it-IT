@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Personalizzazione ed estensione dei frammenti di contenuto{#customizing-and-extending-content-fragments}
 
-In Adobe Experience Manager come servizio Cloud un frammento di contenuto estende una risorsa standard; vedere:
+All&#39;interno  Adobe Experience Manager come Cloud Service un frammento di contenuto estende una risorsa standard; vedere:
 
 * [Creazione e gestione di frammenti](/help/assets/content-fragments/content-fragments.md) di contenuto e creazione di [pagine con frammenti](/help/sites-cloud/authoring/fundamentals/content-fragments.md) di contenuto per ulteriori informazioni sui frammenti di contenuto.
 
@@ -66,7 +66,7 @@ A seconda del tipo di frammento, vengono utilizzati anche i modelli o il modello
 
 ### Integrazione di Siti con Risorse {#integration-of-sites-with-assets}
 
-Content Fragment Management (CFM) fa parte di AEM Assets come segue:
+Content Fragment Management (CFM) fa parte dei AEM Assets come:
 
 * I frammenti di contenuto sono risorse.
 * Utilizzano la funzionalità Risorse esistente.
