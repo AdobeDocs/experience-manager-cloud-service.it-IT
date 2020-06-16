@@ -1,6 +1,6 @@
 ---
 title: Configurazione dei moduli di ricerca
-description: Configurazione dei moduli di ricerca per Adobe Experience Manager come servizio cloud.
+description: Configurazione dei moduli di ricerca per  Adobe Experience Manager come Cloud Service.
 translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 16%
 
 # Configurazione dei moduli di ricerca {#configuring-search-forms}
 
-Adobe Experience Manager come servizio Cloud viene fornito con un potente meccanismo di [ricerca](/help/sites-cloud/authoring/getting-started/search.md) .
+ Adobe Experience Manager come Cloud Service è dotato di un potente meccanismo di [ricerca](/help/sites-cloud/authoring/getting-started/search.md) .
 
 In combinazione con questo, è disponibile anche un set di opzioni predefinite per facilitare l’applicazione di filtri ai contenuti. Questi contengono facet predefiniti come Data **** modifica, Stato **** pubblicazione o Stato **** Live Copy per consentirvi di espandere rapidamente le risorse necessarie.
 
@@ -96,7 +96,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Analisi</td>
-   <td>Funzionalità di ricerca/filtro nel browser Siti per la visualizzazione dei dati di analisi. I filtri di ricerca di Analytics si caricano per corrispondere alle colonne di analisi personalizzate mappate.</td>
+   <td>Funzionalità di ricerca/filtro nel browser Siti per la visualizzazione dei dati di analisi.  filtri di ricerca Analytics si caricano per corrispondere alle colonne di analisi personalizzate mappate.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
