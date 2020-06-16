@@ -2,9 +2,9 @@
 title: Distribuzione del codice - Servizi cloud
 description: Distribuzione del codice - Servizi cloud
 translation-type: tm+mt
-source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '912'
 ht-degree: 3%
 
 ---
@@ -59,8 +59,8 @@ Dopo aver configurato la **pipeline** (archivio, ambiente e ambiente di test), �
 
 
 
->Attenzione:
->Le seguenti sezioni devono essere aggiornate per Cloud Manager per i servizi AEM Cloud ed è in corso.
+>[!IMPORTANT]:
+>Le sezioni seguenti devono essere aggiornate per Cloud Manager per i AEM cloud services ed è in corso.
 
 ## Processo di distribuzione {#deployment-process}
 
@@ -90,7 +90,7 @@ Quando Cloud Manager si distribuisce su topologie non di produzione, l&#39;obiet
 1. L&#39;artifact del dispatcher viene distribuito a ciascun dispatcher come indicato di seguito:
 
    1. Le configurazioni correnti vengono sottoposte a backup e copiate in una posizione temporanea
-   1. Tutte le configurazioni vengono eliminate tranne i file immutabili. Per ulteriori informazioni, consulta Gestione delle configurazioni del dispatcher. In questo modo le directory vengono cancellate per evitare che vengano lasciati indietro i file orfani.
+   1. Tutte le configurazioni vengono eliminate tranne i file immutabili. Per ulteriori informazioni, consulta Gestione delle configurazioni Dispatcher. In questo modo le directory vengono cancellate per evitare che vengano lasciati indietro i file orfani.
    1. L&#39;artifact viene estratto nella directory httpd.  I file immutabili non vengono sovrascritti. Eventuali modifiche apportate ai file immutabili nel repository git verranno ignorate al momento della distribuzione.  Questi file sono fondamentali per il framework del dispatcher AMS e non possono essere modificati.
    1. Apache esegue un test di configurazione. Se non viene rilevato alcun errore, il servizio viene ricaricato. Se si verifica un errore, le configurazioni vengono ripristinate dal backup, il servizio viene ricaricato e l&#39;errore viene riportato a Cloud Manager.
    1. Ogni percorso specificato nella configurazione della pipeline viene invalidato o scaricato dalla cache del dispatcher.
