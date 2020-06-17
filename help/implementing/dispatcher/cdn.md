@@ -1,8 +1,8 @@
 ---
-title: CDN in AEM come servizio cloud
-description: CDN in AEM come servizio cloud
+title: CDN in AEM come Cloud Service
+description: CDN in AEM come Cloud Service
 translation-type: tm+mt
-source-git-commit: a9bf697f65febcd9ba99539d8baa46f7a8d165e3
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -10,9 +10,9 @@ ht-degree: 1%
 ---
 
 
-# CDN in AEM come servizio cloud {#cdn}
+# CDN in AEM come Cloud Service {#cdn}
 
-AEM as Cloud Service viene fornito con un CDN integrato. Il suo scopo principale è ridurre la latenza distribuendo contenuto memorizzabile nella cache dai nodi CDN ai margini, vicino al browser. È completamente gestita e configurata per garantire prestazioni ottimali alle applicazioni AEM.
+AEM come Cloud Service viene fornito con un CDN integrato. Il suo scopo principale è ridurre la latenza distribuendo contenuto memorizzabile nella cache dai nodi CDN ai margini, vicino al browser. È completamente gestita e configurata per garantire prestazioni ottimali alle applicazioni AEM.
 
 La CDN gestita da AEM soddisferà i requisiti di prestazioni e sicurezza della maggior parte dei clienti. Facoltativamente, i clienti possono indicarlo dalla propria CDN, che dovranno gestire. Questo sarà consentito caso per caso, in base al soddisfacimento di alcuni prerequisiti, tra cui, ma non solo, il cliente che dispone di un&#39;integrazione legacy con il fornitore CDN difficile da abbandonare.
 
@@ -21,10 +21,10 @@ La CDN gestita da AEM soddisferà i requisiti di prestazioni e sicurezza della m
 Per preparare la distribuzione dei contenuti, utilizzate la rete CDN standard di Adobe:
 
 1. Fornite ad Adobe il certificato SSL firmato e la chiave segreta condividendo un collegamento a un modulo protetto contenente tali informazioni. Coordinare con l&#39;assistenza clienti su questa attività.
-   **Nota:** Aem come servizio Cloud non supporta i certificati convalidati (DV) del dominio.
+   **Nota:** Aem come Cloud Service non supporta i certificati convalidati (DV) del dominio.
 1. Informare l&#39;assistenza clienti:
    * quale dominio personalizzato deve essere associato a un determinato ambiente, come definito dall&#39;ID del programma e dall&#39;ID dell&#39;ambiente. I domini personalizzati dal lato dell&#39;autore non sono supportati.
-   * se è necessaria una whitelist IP per limitare il traffico a un determinato ambiente.
+   * se è necessario un qualsiasi IP consentito per limitare il traffico a un determinato ambiente.
 1. Coordinare con l&#39;assistenza clienti la tempistica delle modifiche necessarie ai record DNS. Le istruzioni sono diverse a seconda che sia necessario un record apex:
    * se non è necessario un record apex, i clienti devono impostare il record DNS CNAME in modo che punti il loro FQDN a `cdn.adobeaemcloud.com`.
    * se è necessario un record apex, create un record A che indichi i seguenti IP: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. I clienti necessitano di un record apex se il nome FQDN desiderato corrisponde alla zona DNS. Questo può essere verificato utilizzando il comando Unix dig per verificare se il valore SOA dell&#39;output corrisponde al dominio. Ad esempio, il comando `dig anything.dev.adobeaemcloud.com` restituisce un SOA (Inizio dell&#39;Autorità, ovvero la zona) di `dev.adobeaemcloud.com` cui non è un record APEX, mentre `dig dev.adobeaemcloud.com` restituisce un SOA di `dev.adobeaemcloud.com` cui è un record apex.
@@ -40,7 +40,7 @@ Se un cliente deve usare il proprio CDN esistente, può gestirlo e indirizzarlo 
 
 * Il cliente deve disporre di un CDN esistente che potrebbe essere oneroso da sostituire.
 * Il cliente deve gestirlo.
-* Il cliente deve essere in grado di configurare la CDN in modo che funzioni con AEM come servizio cloud. Consulta le istruzioni di configurazione riportate di seguito.
+* Il cliente deve essere in grado di configurare la CDN in modo che funzioni con AEM come Cloud Service. Consulta le istruzioni di configurazione riportate di seguito.
 * Il cliente deve disporre di esperti CDN tecnici che siano in servizio in caso di problemi correlati.
 * Il cliente deve eseguire e superare con successo un test di carico prima di andare in produzione.
 
