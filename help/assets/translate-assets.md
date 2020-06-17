@@ -3,7 +3,7 @@ title: Creazione e gestione di risorse digitali in più lingue ed esecuzione di 
 description: Scoprite come automatizzare i flussi di lavoro per la traduzione di risorse, inclusi file binari, metadati e tag in più lingue.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '2612'
 ht-degree: 24%
@@ -13,7 +13,7 @@ ht-degree: 24%
 
 # Risorse in più lingue {#multilingual-assets}
 
-Per risorse in più lingue si intendono risorse con file binari, metadati e tag in più lingue. In genere, i file binari, i metadati e i tag delle risorse esistono in una lingua, che vengono poi tradotti in altre lingue per l’utilizzo in progetti multilingue. Risorse Adobe Experience Manager (AEM) consente di automatizzare i flussi di lavoro di traduzione sulle risorse (inclusi file binari, metadati e tag) per generare risorse in altre lingue da usare in progetti multilingue.
+Per risorse in più lingue si intendono risorse con file binari, metadati e tag in più lingue. In genere, i file binari, i metadati e i tag delle risorse esistono in una lingua, che vengono poi tradotti in altre lingue per l’utilizzo in progetti multilingue. Risorse  Adobe Experience Manager (AEM) consente di automatizzare i flussi di lavoro di traduzione delle risorse (inclusi file binari, metadati e tag) per generare risorse in altre lingue da usare in progetti multilingue.
 
 Per automatizzare i flussi di lavoro di traduzione, integrate i fornitori di servizi di traduzione con AEM e create progetti per la traduzione delle risorse in più lingue. AEM supporta flussi di lavoro di traduzione umana e automatica.
 
@@ -22,7 +22,7 @@ Traduzione umana: Le risorse convertite vengono restituite e importate in AEM. Q
 Traduzione automatica: Il servizio di traduzione automatica traduce immediatamente i metadati e i tag delle risorse.
 
 <!--
-We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only 1 master article.
+We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
 https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/translation-projects.html
 https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/preparing-assets-for-translation.html
@@ -51,7 +51,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 Per risorse in più lingue si intendono risorse con file binari, metadati e tag in più lingue. In genere, i file binari, i metadati e i tag delle risorse esistono in una lingua, che vengono poi tradotti in altre lingue per l’utilizzo in progetti multilingue.
 
-In Risorse Adobe Experience Manager (AEM), le risorse in più lingue sono incluse nelle cartelle, dove ciascuna cartella contiene le risorse in un’altra lingua.
+In Risorse  Adobe Experience Manager (AEM), le risorse in più lingue sono incluse nelle cartelle, dove ciascuna cartella contiene le risorse in un’altra lingua.
 
 Ogni cartella lingua è denominata copia per lingua. La cartella principale di una copia della lingua, nota come radice della lingua, identifica la lingua del contenuto nella copia della lingua. Ad esempio, `/content/dam/it` è la radice della lingua italiana per la copia in lingua italiana. Le copie della lingua devono utilizzare una radice [della lingua configurata](#create-a-language-root) correttamente, in modo che venga utilizzata la lingua corretta quando vengono eseguite le traduzioni delle risorse di origine.
 
@@ -88,7 +88,7 @@ Ad esempio, la pagina principale della copia in lingua italiana della gerarchia 
 
 ### Visualizzare le origini della lingua {#view-language-roots}
 
-L’interfaccia touch fornisce un pannello Riferimenti che mostra un elenco delle origini delle lingue create in AEM Assets.
+L’interfaccia touch fornisce un pannello Riferimenti che mostra un elenco delle origini delle lingue create all’interno dei AEM Assets.
 
 1. Nella console Risorse, selezionate la lingua principale per la quale desiderate creare delle copie in lingua.
 1. Tocca o fai clic sull’icona GlobalNav, quindi scegli **[!UICONTROL Riferimenti]** per aprire il riquadro Riferimento.
@@ -168,7 +168,7 @@ Se utilizzate questa opzione, il set di risorse viene aggiunto a un progetto di 
 
 ### Creare copie in lingua temporanea {#creating-temporary-language-copies}
 
-Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per lingua con versioni modificate di risorse originali, la copia per lingua esistente viene mantenuta fino all’approvazione delle risorse tradotte. Risorse AEM memorizza le risorse appena tradotte in una posizione temporanea e aggiorna la copia della lingua esistente dopo che l’utente ha esplicitamente approvato le risorse. Se rifiutate le risorse, la copia nella lingua rimane invariata.
+Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per lingua con versioni modificate di risorse originali, la copia per lingua esistente viene mantenuta fino all’approvazione delle risorse tradotte. AEM Assets memorizza le risorse appena tradotte in una posizione temporanea e aggiorna la copia della lingua esistente dopo l’approvazione esplicita delle risorse. Se rifiutate le risorse, la copia nella lingua rimane invariata.
 
 1. Tocca o fai clic sulla cartella principale di origine di **[!UICONTROL Copie per lingua]** per la quale hai già creato una copia per lingua, quindi tocca o fai clic su **[!UICONTROL Mostra in Assets]** per aprire la cartella in AEM Assets.
 1. Nell’interfaccia utente delle risorse, seleziona una risorsa già tradotta e tocca o fai clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti per aprire la risorsa in modalità di modifica.
@@ -230,7 +230,7 @@ Utilizza l’opzione **Crea solo struttura** per creare una gerarchia di cartell
 
 ## Applicazione dei servizi di traduzione cloud alle cartelle {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager (AEM) consente di usufruire di servizi di traduzione basati su cloud dal provider di traduzione preferito per garantire che le risorse vengano tradotte in base alle tue esigenze.
+ Adobe Experience Manager (AEM) consente di usufruire di servizi di traduzione basati sul cloud da parte del provider di traduzione di vostra scelta per garantire che le risorse vengano tradotte in base alle vostre esigenze.
 
 Potete applicare il servizio di traduzione cloud direttamente alla cartella delle risorse in modo che possa essere utilizzato durante i flussi di lavoro di traduzione.
 
@@ -244,7 +244,7 @@ L’applicazione dei servizi di traduzione cloud direttamente nella cartella del
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Vai alla scheda **[!UICONTROL Cloud Services]**.
-1. Dall’elenco Configurazioni servizio cloud, scegliete il provider di traduzione desiderato. Ad esempio, se desiderate utilizzare i servizi di traduzione di Microsoft, scegliete **[!UICONTROL Microsoft Translator]**.
+1. Dall’elenco Configurazioni Cloud Service, scegliete il provider di traduzione desiderato. Ad esempio, se desiderate utilizzare i servizi di traduzione di Microsoft, scegliete **[!UICONTROL Microsoft Translator]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
