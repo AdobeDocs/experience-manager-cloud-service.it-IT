@@ -2,9 +2,9 @@
 title: Panoramica su Cloud Reader Analyzer
 description: Panoramica su Cloud Reader Analyzer
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Ulteriori informazioni sulle categorie e possibili implicazioni e soluzioni asso
 >[!NOTE]
 >Il report Cloud Readiness Analyzer velocizza il processo di stima del tempo e dei costi necessari per la transizione ad AEM come Cloud Service fornendo informazioni che altrimenti dovrebbero essere raccolte e valutate manualmente.
 
-Puoi anche scaricare il rapporto di Cloud Readiness Analyzer dall’istanza AEM. Per ulteriori dettagli in sospeso, consultate **Visualizzazione dei risultati in formato** CSV.
+Puoi anche scaricare il rapporto di Cloud Readiness Analyzer dall’istanza AEM. Per ulteriori informazioni, consulta [Visualizzazione del rapporto](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) di analisi della disponibilità di cloud.
