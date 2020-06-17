@@ -2,9 +2,9 @@
 title: Dispatcher nel cloud
 description: 'Dispatcher nel cloud '
 translation-type: tm+mt
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
+source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3914'
 ht-degree: 1%
 
 ---
@@ -236,7 +236,7 @@ La tabella seguente mostra i moduli apache supportati:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-I clienti non possono aggiungere moduli arbitrari, ma in futuro potrebbero essere presi in considerazione moduli aggiuntivi per l&#39;inclusione nel prodotto. I clienti possono trovare l&#39;elenco delle direttive disponibili per una determinata versione di Dispatcher eseguendo la whitelist di convalida nell&#39;SDK, come descritto in precedenza.
+I clienti non possono aggiungere moduli arbitrari, ma in futuro potrebbero essere presi in considerazione moduli aggiuntivi per l&#39;inclusione nel prodotto. I clienti possono trovare l&#39;elenco delle direttive disponibili per una determinata versione di Dispatcher eseguendo il comando Allowlist di validator nell&#39;SDK, come descritto in precedenza.
 
 L&#39;elenco Allowlist contiene un elenco di direttive Apache consentite in una configurazione cliente. Se una direttiva non è elencata, lo strumento registra un errore e restituisce un codice di uscita diverso da zero. Se non viene fornito alcun elenco di autorizzazioni sulla riga di comando (come dovrebbe essere richiamato), lo strumento utilizza un elenco di autorizzazioni predefinito che Cloud Manager utilizzerà per la convalida prima di distribuire agli ambienti Cloud.
 
