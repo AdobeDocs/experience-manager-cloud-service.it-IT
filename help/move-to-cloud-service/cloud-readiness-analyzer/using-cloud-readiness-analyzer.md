@@ -2,9 +2,9 @@
 title: Utilizzo di Cloud Ready Analyzer
 description: Utilizzo di Cloud Ready Analyzer
 translation-type: tm+mt
-source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,13 @@ Seguite la sezione seguente per comprendere le considerazioni importanti durante
 Cloud Readiness Analyzer può essere scaricato come file zip dal portale di distribuzione software. Potete installare il pacchetto tramite Gestione pacchetti nell’istanza del Adobe Experience Manager  sorgente (AEM).
 
 >[!NOTE]
->Scaricate Cloud Readiness Analyzer dal portale di distribuzione software *in sospeso*.
+>Scarica Cloud Readiness Analyzer dal portale di distribuzione del software.
 
-## Esecuzione di Cloud Readiness Analyzer {#running-tool}
+## Visualizzazione del rapporto di analisi della disponibilità del cloud {#viewing-report}
 
-Segui questa sezione per apprendere come eseguire Cloud Reader Analyzer:
+### Adobe Experience Manager 6.3 and later {#aem-later-versions}
+
+Segui questa sezione per scoprire come visualizzare il rapporto di Cloud Readiness Analyzer:
 
 1. Seleziona  Adobe Experience Manager e passa a Strumenti > **Operazioni** > **Cloud Readiness Analyzer**.
 
@@ -51,41 +53,11 @@ Segui questa sezione per apprendere come eseguire Cloud Reader Analyzer:
    >[!NOTE]
    >Sarà necessario scorrere la pagina verso il basso per visualizzare il rapporto completo.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
-
-## Interpretazione del rapporto di Cloud Readiness Analyzer {#cra-report}
-
-Quando si esegue Cloud Readiness Analyzer nell’istanza AEM, il rapporto viene visualizzato come risultati nella finestra degli strumenti.
-
-Il formato del rapporto è:
-
-* *Panoramica* report: Informazioni sul rapporto stesso, inclusa la data in cui è stato generato.
-* *Panoramica* del sistema: Informazioni sul sistema AEM su cui è stata eseguita la CRA.
-* *Ricerca di categorie*: Più sezioni che ciascuna di esse affronta uno o più risultati della stessa categoria. Ogni sezione include quanto segue: Nome della categoria, sottotipi, conteggio e importanza, riepilogo, collegamento alla documentazione della categoria e informazioni di ricerca individuali.
-
-A ciascun risultato viene assegnato un livello di importanza tale da indicare una priorità di azione.
-
-Segui la tabella seguente per comprendere i livelli di importanza:
-
-| Importanza | Descrizione |
-|--- |--- |
-| INFO | Questa conclusione è fornita a scopo informativo. |
-| AVVISO | Questo risultato potrebbe essere un problema di aggiornamento. Si raccomanda di effettuare ulteriori indagini. |
-| PRINCIPALE | Questo risultato potrebbe rappresentare un problema di aggiornamento da risolvere. |
-| CRITICO | Questo risultato è molto probabile che sia un problema di aggiornamento che deve essere risolto per evitare la perdita di funzioni o prestazioni. |
-
-### Adobe Experience Manager 6.3 and later {#aem-older-version}
-
-Per AEM 6.3 e versioni successive, il modo principale per eseguire Cloud Reader Analyzer è:
-
-1. Selezionate l&#39;istanza del Adobe Experience Manager  e andate a strumenti -> **Operazioni** -> **Cloud Readiness Analyzer**.
-
-   >[!NOTE]
-   >Il CRA avvia un processo in background per generare il rapporto non appena lo strumento viene aperto. Indica che la generazione del report è in corso fino a quando il report non è pronto. Puoi chiudere la scheda del browser e tornare in un secondo momento per visualizzare il rapporto al termine.
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
 1. Una volta generato e visualizzato il rapporto CRA, potete scegliere di scaricare il rapporto in valori CSV (Comma Separated Value). Fate clic su **CSV** per scaricare il rapporto CRA completo in formato CSV, come mostrato nella figura seguente.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
    >È possibile forzare l&#39;Autorità di controllo dei dati CRA a cancellare la cache e a rigenerare il rapporto facendo clic su **Aggiorna rapporto**.
@@ -98,6 +70,32 @@ Per  Adobe Experience Manager 6.1, lo strumento non funziona e può essere utili
 
 >[!NOTE]
 >In tutte le versioni, il Rilevatore di pattern incluso può essere eseguito in modo indipendente.
+
+## Interpretazione del rapporto di Cloud Readiness Analyzer {#cra-report}
+
+Quando lo strumento di analisi della prontezza del cloud viene eseguito nell’istanza di AEM, il rapporto viene visualizzato come risultati nella finestra dello strumento.
+
+Il formato del rapporto è:
+
+* **Panoramica** report: Informazioni sulla relazione stessa e informazioni quali:
+   * *Ora* rapporto: Quando il contenuto del rapporto è stato generato e reso disponibile per la prima volta.
+   * *Tempo* di scadenza: Quando scade la cache del contenuto del report.
+   * *Periodo* di generazione: Tempo impiegato dal processo di generazione dei contenuti del rapporto.
+   * *Ricerca conteggio*: Numero totale di risultati inclusi nella relazione.
+* **Panoramica** del sistema: Informazioni sul sistema AEM su cui è stata eseguita la CRA.
+* **Ricerca di categorie**: Più sezioni che ciascuna di esse affronta uno o più risultati della stessa categoria. Ogni sezione include quanto segue: Nome della categoria, sottotipi, conteggio e importanza, riepilogo, collegamento alla documentazione della categoria e informazioni di ricerca individuali.
+
+A ciascun risultato viene assegnato un livello di importanza tale da indicare una priorità di azione.
+
+Segui la tabella seguente per comprendere i livelli di importanza:
+
+| Importanza | Descrizione |
+|--- |--- |
+| INFO | Questa conclusione è fornita a scopo informativo. |
+| AVVISO | Questo risultato potrebbe essere un problema di aggiornamento. Si raccomanda di effettuare ulteriori indagini. |
+| PRINCIPALE | Questo risultato potrebbe rappresentare un problema di aggiornamento da risolvere. |
+| CRITICO | Questo risultato è molto probabile che sia un problema di aggiornamento che deve essere risolto per evitare la perdita di funzioni o prestazioni. |
+
 
 ## Interpretazione del rapporto CSV di Cloud Readiness Analyzer {#cra-csv-report}
 
