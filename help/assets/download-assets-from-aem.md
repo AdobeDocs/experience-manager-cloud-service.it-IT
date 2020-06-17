@@ -3,7 +3,7 @@ title: Scaricare risorse da AEM
 description: Scoprite come scaricare risorse da AEM e abilitare o disabilitare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
+source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 4%
@@ -29,7 +29,7 @@ Impossibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set file mu
 1. Selezionate la cartella o selezionate una o più risorse all’interno della cartella.
 1. Nella barra degli strumenti, toccate **[!UICONTROL Scarica]**.
 
-   ![Opzioni disponibili durante il download delle risorse da  Experience Manager Assets](/help/assets/assets/asset-download.png)
+   ![Opzioni disponibili durante il download delle risorse da  Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
    *Opzioni della finestra di dialogo Download.*
 
