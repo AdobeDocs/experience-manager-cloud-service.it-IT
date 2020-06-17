@@ -2,9 +2,9 @@
 title: Utilizzo di Cloud Ready Analyzer
 description: Utilizzo di Cloud Ready Analyzer
 translation-type: tm+mt
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
+source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Cloud Readiness Analyzer può essere scaricato come file zip dal portale di dist
 
 ## Visualizzazione del rapporto di analisi della disponibilità del cloud {#viewing-report}
 
-### Adobe Experience Manager 6.3 and later {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 and later {#aem-later-versions}
 
 Segui questa sezione per scoprire come visualizzare il rapporto di Cloud Readiness Analyzer:
 
@@ -64,7 +64,7 @@ Segui questa sezione per scoprire come visualizzare il rapporto di Cloud Readine
 
 ###  Adobe Experience Manager 6.2 e 6.1 {#aem-specific-versions}
 
-Nell&#39;Adobe Experience Manager 6.2 di Cloud Readiness Analyzer è limitato  collegamento che genera e scarica il rapporto CSV.
+Lo strumento di analisi della prontezza del cloud è limitato  Adobe Experience Manager 6.2 a un collegamento che genera e scarica il rapporto CSV.
 
 Per  Adobe Experience Manager 6.1, lo strumento non funziona e può essere utilizzata solo l&#39;interfaccia HTTP.
 
@@ -77,11 +77,11 @@ Quando lo strumento di analisi della prontezza del cloud viene eseguito nell’i
 
 Il formato del rapporto è:
 
-* **Panoramica** report: Informazioni sulla relazione stessa e informazioni quali:
-   * *Ora* rapporto: Quando il contenuto del rapporto è stato generato e reso disponibile per la prima volta.
-   * *Tempo* di scadenza: Quando scade la cache del contenuto del report.
-   * *Periodo* di generazione: Tempo impiegato dal processo di generazione dei contenuti del rapporto.
-   * *Ricerca conteggio*: Numero totale di risultati inclusi nella relazione.
+* **Panoramica** report: Informazioni sul rapporto stesso e include le seguenti informazioni:
+   * **Ora** rapporto: Quando il contenuto del rapporto è stato generato e reso disponibile per la prima volta.
+   * **Tempo** di scadenza: Quando scade la cache del contenuto del report.
+   * **Periodo** di generazione: Tempo impiegato dal processo di generazione dei contenuti del rapporto.
+   * **Ricerca conteggio**: Numero totale di risultati inclusi nella relazione.
 * **Panoramica** del sistema: Informazioni sul sistema AEM su cui è stata eseguita la CRA.
 * **Ricerca di categorie**: Più sezioni che ciascuna di esse affronta uno o più risultati della stessa categoria. Ogni sezione include quanto segue: Nome della categoria, sottotipi, conteggio e importanza, riepilogo, collegamento alla documentazione della categoria e informazioni di ricerca individuali.
 
