@@ -2,9 +2,9 @@
 title: Utilizzo di Cloud Ready Analyzer
 description: Utilizzo di Cloud Ready Analyzer
 translation-type: tm+mt
-source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
+source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 ## Considerazioni importanti per l&#39;utilizzo di Cloud Readiness Analyzer {#imp-considerations}
 
-Seguite la sezione seguente per comprendere le considerazioni importanti durante l&#39;esecuzione di Cloud Readiness Analyzer (CRA):
+Segui la sezione seguente per comprendere le considerazioni importanti per l’esecuzione di Cloud Readiness Analyzer (CRA):
 
 * Il rapporto CRA viene creato utilizzando l&#39;output del Rilevatore [](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)pattern del Adobe Experience Manager  (AEM). La versione del rilevatore di pattern utilizzato da CRA è inclusa nel pacchetto di installazione CRA.
 
-* Il CRA può essere eseguito solo dall&#39;utente **amministratore** o da un utente **amministratore**.
+* Il CRA può essere eseguito solo dall&#39;utente **amministratore** o da un utente del gruppo **Amministratori** .
 
 * CRA è supportata nelle istanze AEM con versione 6.1 e successive.
 
@@ -55,7 +55,7 @@ Segui questa sezione per scoprire come visualizzare il rapporto di Cloud Readine
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. Una volta generato e visualizzato il rapporto CRA, potete scegliere di scaricare il rapporto in valori CSV (Comma Separated Value). Fate clic su **CSV** per scaricare il rapporto CRA completo in formato CSV, come mostrato nella figura seguente.
+1. Una volta generato e visualizzato il rapporto CRA, potete scaricare il rapporto in formato CSV facendo clic su **CSV**, come illustrato nella figura riportata di seguito.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
@@ -77,7 +77,7 @@ Quando lo strumento di analisi della prontezza del cloud viene eseguito nell’i
 
 Il formato del rapporto è:
 
-* **Panoramica** report: Informazioni sul rapporto stesso e include le seguenti informazioni:
+* **Panoramica** report: Informazioni sul rapporto stesso che includono le seguenti informazioni:
    * **Ora** rapporto: Quando il contenuto del rapporto è stato generato e reso disponibile per la prima volta.
    * **Tempo** di scadenza: Quando scade la cache del contenuto del report.
    * **Periodo** di generazione: Tempo impiegato dal processo di generazione dei contenuti del rapporto.
@@ -176,7 +176,7 @@ La durata predefinita della cache CRA è di 24 ore. Con l’opzione per aggiorna
 Il valore del ciclo di vita della cache viene memorizzato come `maxCacheAge` proprietà nel seguente nodo del repository:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-Il valore di questa proprietà corrisponde alla durata della cache, in secondi. Un amministratore può regolare la durata della cache utilizzando CRXDE Lite.
+Il valore di questa proprietà corrisponde alla durata della cache, in secondi. Un amministratore può regolare la durata della cache utilizzando CRX/DE Lite.
 
 
 
