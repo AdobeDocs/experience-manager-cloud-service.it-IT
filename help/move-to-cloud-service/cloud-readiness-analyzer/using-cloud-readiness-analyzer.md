@@ -2,7 +2,7 @@
 title: Utilizzo di Cloud Ready Analyzer
 description: Utilizzo di Cloud Ready Analyzer
 translation-type: tm+mt
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
+source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 0%
@@ -167,7 +167,7 @@ Sono possibili i seguenti valori di risposta:
 * `400 Bad Request`: Indica che la richiesta ha restituito un errore. Un messaggio in formato Dettagli problema (vedere [RFC 7807](https://tools.ietf.org/html/rfc7807)) fornisce ulteriori dettagli.
 * `401 Unauthorized`: La richiesta non era autorizzata.
 * `500 Internal Server Error`: Indica che si è verificato un errore interno del server. Un messaggio in formato Dettagli problema fornisce ulteriori dettagli.
-* `503 Service Unavailable`: Indica che il server è occupato con un&#39;altra risposta e non può soddisfare questa richiesta in modo tempestivo. Questo è simile a quando vengono effettuate richieste sincrone. Un messaggio in formato Dettagli problema fornisce ulteriori dettagli.
+* `503 Service Unavailable`: Indica che il server è occupato con un&#39;altra risposta e non può soddisfare questa richiesta in modo tempestivo. È probabile che ciò si verifichi solo quando vengono effettuate richieste sincrone. Un messaggio in formato Dettagli problema fornisce ulteriori dettagli.
 
 ## Regolazione del ciclo di vita della cache {#cache-adjustment}
 
