@@ -2,9 +2,9 @@
 title: Utilizzo di Cloud Ready Analyzer
 description: Utilizzo di Cloud Ready Analyzer
 translation-type: tm+mt
-source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
+source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1708'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ Un modo semplice per avviare la generazione del report tramite l&#39;interfaccia
 
 Una volta effettuata la richiesta, il client non deve rimanere attivo per la generazione del rapporto. La generazione di report potrebbe essere avviata con un client utilizzando una richiesta HTTP GET e, una volta generato, la visualizzazione del report dalla cache di un altro client o dallo strumento CSV nell&#39;interfaccia utente di AEM.
 
-### Risposte (#http-responses)
+### Risposte {#http-responses}
 
 Sono possibili i seguenti valori di risposta:
 
