@@ -3,25 +3,25 @@ title: Metadati XMP
 description: Scoprite lo standard di metadati XMP (Extensible Metadata Platform) per la gestione dei metadati. Viene utilizzato da AEM come formato standard per la creazione, l’elaborazione e lo scambio di metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 16%
+source-wordcount: '1143'
+ht-degree: 21%
 
 ---
 
 
 # Metadati XMP {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) è lo standard di metadati utilizzato da AEM Assets per la gestione di tutti i metadati. XMP fornisce un formato standard per la creazione, l&#39;elaborazione e lo scambio di metadati per un&#39;ampia gamma di applicazioni.
+XMP (Extensible Metadata Platform) è lo standard di metadati utilizzato dai AEM Assets per la gestione di tutti i metadati. XMP fornisce un formato standard per la creazione, l&#39;elaborazione e lo scambio di metadati per un&#39;ampia gamma di applicazioni.
 
-Oltre a offrire una codifica di metadati universale che può essere incorporata in tutti i formati di file, XMP offre un modello [di](#xmp-core-concepts) contenuto avanzato ed è [supportato da Adobe](#advantages-of-xmp) e da altre aziende, in modo che gli utenti di XMP, in combinazione con Risorse AEM, abbiano a disposizione una piattaforma potente su cui costruire.
+Oltre a offrire una codifica universale dei metadati che può essere incorporata in tutti i formati di file, XMP fornisce un modello [di](#xmp-core-concepts) contenuto avanzato ed è [supportato da Adobe](#advantages-of-xmp) e da altre aziende, in modo che gli utenti di XMP in combinazione con i AEM Assets abbiano a disposizione una piattaforma potente su cui costruire.
 
 ## Panoramica XMP ed ecosistema {#xmp-ecosystem}
 
-Risorse AEM supporta in modo nativo lo standard di metadati XMP. XMP è uno standard per l&#39;elaborazione e la memorizzazione di metadati standard e proprietari nelle risorse digitali. XMP è stato progettato per essere lo standard comune che consente a più applicazioni di lavorare in modo efficace con i metadati.
+I AEM Assets supportano in modo nativo lo standard di metadati XMP. XMP è uno standard per l&#39;elaborazione e la memorizzazione di metadati standard e proprietari nelle risorse digitali. XMP è stato progettato per essere lo standard comune che consente a più applicazioni di lavorare in modo efficace con i metadati.
 
-I professionisti della produzione, ad esempio, utilizzano il supporto XMP integrato nelle applicazioni Adobe per trasmettere informazioni in più formati di file. L’archivio di Risorse AEM estrae i metadati XMP e li utilizza per gestire il ciclo di vita del contenuto e offre la possibilità di creare flussi di lavoro di automazione.
+I professionisti della produzione, ad esempio, utilizzano il supporto XMP integrato nelle applicazioni Adobe per trasmettere informazioni in più formati di file. L’archivio AEM Assets estrae i metadati XMP e li utilizza per gestire il ciclo di vita del contenuto e offre la possibilità di creare flussi di lavoro di automazione.
 
 XMP standardizza la modalità di definizione, creazione ed elaborazione dei metadati fornendo un modello dati, un modello di memorizzazione e schemi. Tutti questi concetti sono trattati in questa sezione.
 
@@ -71,9 +71,9 @@ XMP consente di aggiungere una `xml:lang` proprietà alle proprietà di testo pe
 
 ## Write-back XMP per le rappresentazioni {#xmp-writeback-to-renditions}
 
-Questa funzione di riscrittura XMP in Risorse Adobe Experience Manager (AEM) replica le modifiche apportate ai metadati delle risorse alle rappresentazioni della risorsa.
+Questa funzione di riscrittura XMP in Risorse  Adobe Experience Manager (AEM) replica le modifiche apportate ai metadati delle risorse alle rappresentazioni della risorsa.
 
-Quando modificate i metadati di una risorsa da Risorse AEM o durante il caricamento di tale risorsa, le modifiche vengono inizialmente memorizzate all’interno del nodo della risorsa in CRXDE.
+Quando modificate i metadati di una risorsa dall’interno dei AEM Assets o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate all’interno del nodo della risorsa in CRXDE.
 
 La funzione di riscrittura XMP propaga le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa.
 
@@ -81,11 +81,11 @@ Considerate uno scenario in cui modificate la proprietà [!UICONTROL Titolo] del
 
 ![metadati](assets/metadata.png)
 
-In questo caso, Risorse AEM salva le modifiche alla proprietà **[!UICONTROL Titolo]** nel `dc:title` parametro per i metadati delle risorse memorizzati nella gerarchia delle risorse.
+In questo caso, i AEM Assets salvano le modifiche alla proprietà **[!UICONTROL Titolo]** nel `dc:title` parametro per i metadati della risorsa memorizzati nella gerarchia delle risorse.
 
 ![metadata_stored](assets/metadata_stored.png)
 
-Tuttavia, Risorse AEM non propaga automaticamente le modifiche ai metadati apportate alle rappresentazioni di una risorsa.
+Tuttavia, i AEM Assets non propagano automaticamente le modifiche apportate ai metadati alle rappresentazioni di una risorsa.
 
 La funzione di riscrittura XMP consente di estendere le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa. Tuttavia, le modifiche non vengono memorizzate sotto il nodo di metadati nella gerarchia delle risorse. Questa funzione incorpora invece le modifiche apportate ai file binari per le rappresentazioni.
 
@@ -129,29 +129,33 @@ Le modifiche ai metadati vengono propagate alle miniature delle rappresentazioni
 >For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 -->
 
-### Filtrare i metadati XMP {#filtering-xmp-metadata}
+<!--
+TBD: The method has changed in AEMaaCS. Find the new ones.
 
-AEM Assets supporta il filtro di proprietà/nodi per i metadati XMP letti dai file binari delle risorse e memorizzati in JCR quando le risorse vengono assimilate. Il filtraggio è possibile tramite un elenco bloccato e un elenco consentito.
+### Filter XMP metadata {#filtering-xmp-metadata}
 
-Il filtraggio mediante un elenco bloccato consente di importare tutte le proprietà dei metadati XMP, ad eccezione delle proprietà specificate per l&#39;esclusione. Tuttavia, per i tipi di risorse come i file INDD con enormi quantità di metadati XMP (ad esempio, 1000 nodi con 10.000 proprietà), i nomi dei nodi da filtrare non sono sempre noti in anticipo. Se il filtro applicato a un elenco bloccato consente l’importazione di un gran numero di risorse con numerosi metadati XMP, l’istanza o il cluster di AEM può rilevare problemi di stabilità, ad esempio code di osservazione bloccate.
+AEM Assets supports filtering of properties/nodes for XMP metadata that is read from asset binaries and stored in JCR when assets are ingested. Filtering is possible via a blocked list and an allowed list.
 
-Il filtro dei metadati XMP tramite l&#39;elenco consentito risolve il problema consentendo di definire le proprietà XMP da importare. In questo modo, le altre proprietà XMP/sconosciute vengono ignorate. Per compatibilità con le versioni precedenti, potete aggiungere alcune di queste proprietà al filtro che utilizza un elenco bloccato.
+Filtering using a blocked list lets you import all XMP metadata properties except the properties that are specified for exclusion. However, for asset types such as INDD files that have huge amounts of XMP metadata (for example 1000 nodes with 10,000 properties), the names of nodes to be filtered are not always known in advance. If filtering using a blocked list allows a large number of assets with numerous XMP metadata to be imported, the AEM instance/cluster can encounter stability issues, for example clogged observation queues.
+
+Filtering of XMP metadata via allowed list resolves this issue by letting you define the XMP properties to be imported. This way, other/unknown XMP properties are ignored. For backward compatibility, you can add some of these properties to the filter that uses a blocked list.
 
 >[!NOTE]
 >
->Il filtro funziona solo per le proprietà derivate da origini XMP nei file binari delle risorse. Per le proprietà derivate da origini non XMP, come i formati EXIF e IPTC, il filtro non funziona. Ad esempio, la data di creazione delle risorse è memorizzata nella proprietà denominata `CreateDate` in EXIF TIFF. AEM rileva questo valore nel campo di metadati denominato `exif:DateTimeOriginal`. Poiché l&#39;origine è un&#39;origine non XMP, il filtraggio non funziona su questa proprietà.
+>Filtering works only for the properties derived from XMP sources in asset binaries. For the properties derived from non-XMP sources, such as EXIF and IPTC formats, the filtering does not work. For example, the date of asset creation is stored in property named `CreateDate` in EXIF TIFF. AEM stories this value in the metadata field named `exif:DateTimeOriginal`. As the source is a non-XMP source, filtering does not work on this property.
 
-1. Per aprire Configuration Manager, accedere `https://[aem_server]:[port]/system/console/configMgr`.
-1. Aprite la configurazione **[!UICONTROL Adobe CQ DAM XmpFilter]** .
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL Adobe CQ DAM XmpFilter]** configuration.
 1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
 
 1. To filter out blocked XMP properties after applying filtering via allowed list, specify them in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >
-   >L&#39;opzione **[!UICONTROL Applica lista nera alle proprietà]** XMP è selezionata per impostazione predefinita. In altre parole, il filtraggio utilizzando un elenco bloccato è attivato per impostazione predefinita. Per disattivare tale filtro, deselezionate l&#39;opzione **[!UICONTROL Applica lista nera alle proprietà]** XMP.
+   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. In other words, filtering using a blocked list is enabled by default. To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
 
-1. Salva le modifiche.
+1. Save the changes.
+-->
 
 >[!MORELIKETHIS]
 >
