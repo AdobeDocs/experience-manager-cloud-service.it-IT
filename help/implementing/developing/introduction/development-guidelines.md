@@ -2,7 +2,7 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Da completare
 translation-type: tm+mt
-source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 1%
@@ -12,9 +12,9 @@ ht-degree: 1%
 
 # Linee guida per lo sviluppo per AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
-Il codice in esecuzione in AEM come servizio cloud deve essere consapevole del fatto che è sempre in esecuzione in un cluster. Ciò significa che è sempre in esecuzione più di un&#39;istanza. Il codice deve essere resiliente, in particolare perché un&#39;istanza potrebbe essere arrestata in qualsiasi momento.
+Il codice in esecuzione in AEM come Cloud Service deve essere consapevole del fatto che è sempre in esecuzione in un cluster. Ciò significa che è sempre in esecuzione più di un&#39;istanza. Il codice deve essere resiliente, in particolare perché un&#39;istanza potrebbe essere arrestata in qualsiasi momento.
 
-Durante l&#39;aggiornamento di AEM come servizio cloud, saranno presenti istanze con codice vecchio e nuovo in esecuzione in parallelo. Pertanto, il vecchio codice non deve essere in conflitto con il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il contenuto precedente.
+Durante l’aggiornamento di AEM come Cloud Service, saranno presenti istanze con codice vecchio e nuovo in esecuzione in parallelo. Pertanto, il vecchio codice non deve essere in conflitto con il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il contenuto precedente.
 <!--
 
 >[!NOTE]
@@ -22,7 +22,7 @@ Durante l&#39;aggiornamento di AEM come servizio cloud, saranno presenti istanze
 
 -->
 
-Se è necessario identificare il master nel cluster, Apache Sling Discovery API può essere utilizzata per rilevarlo.
+Se è necessario identificare il primario nel cluster, Apache Sling Discovery API può essere utilizzata per rilevarlo.
 
 ## Stato in memoria {#state-in-memory}
 
@@ -30,7 +30,7 @@ Lo stato non deve essere mantenuto in memoria ma mantenuto nella directory archi
 
 ## Stato del file system {#state-on-the-filesystem}
 
-Il file system dell&#39;istanza non deve essere utilizzato in AEM come servizio cloud. Il disco è effimero e verrà smaltito quando le istanze vengono riciclate. L&#39;uso limitato del filesystem per l&#39;archiviazione temporanea in relazione all&#39;elaborazione di singole richieste è possibile, ma non dovrebbe essere abusato per i file enormi. Questo perché potrebbe avere un impatto negativo sulla quota di utilizzo delle risorse ed essere eseguito nei limiti del disco.
+Il file system dell&#39;istanza non deve essere utilizzato in AEM come Cloud Service. Il disco è effimero e verrà smaltito quando le istanze vengono riciclate. L&#39;uso limitato del filesystem per l&#39;archiviazione temporanea in relazione all&#39;elaborazione di singole richieste è possibile, ma non dovrebbe essere abusato per i file enormi. Questo perché potrebbe avere un impatto negativo sulla quota di utilizzo delle risorse ed essere eseguito nei limiti del disco.
 
 Ad esempio, se l’utilizzo del file system non è supportato, il livello Pubblica deve garantire che tutti i dati da mantenere vengano inviati a un servizio esterno per l’archiviazione a lungo termine.
 
@@ -40,7 +40,7 @@ Analogamente, con tutto ciò che sta accadendo in modo asincrono come agire su e
 
 ## Attività in background e processi con esecuzione prolungata {#background-tasks-and-long-running-jobs}
 
-Il codice eseguito come attività in background deve presupporre che l&#39;istanza in cui è in esecuzione possa essere ridotta in qualsiasi momento. Pertanto, il codice deve essere resiliente e la maggior parte delle importazioni deve essere ripristinabile. Ciò significa che se il codice viene rieseguito, non dovrebbe ricominciare dall&#39;inizio ma piuttosto avvicinarsi a quello che ha lasciato. Anche se questo non è un nuovo requisito per questo tipo di codice, in AEM come servizio cloud è più probabile che si verifichi una rimozione dell&#39;istanza.
+Il codice eseguito come attività in background deve presupporre che l&#39;istanza in cui è in esecuzione possa essere ridotta in qualsiasi momento. Pertanto, il codice deve essere resiliente e la maggior parte delle importazioni deve essere ripristinabile. Ciò significa che se il codice viene rieseguito, non dovrebbe ricominciare dall&#39;inizio ma piuttosto avvicinarsi a quello che ha lasciato. Anche se questo non è un nuovo requisito per questo tipo di codice, in AEM come Cloud Service è più probabile che si verifichi una rimozione dell’istanza.
 
 Per ridurre al minimo i problemi, è necessario evitare i lavori a lungo termine, se possibile, che dovrebbero essere ripresi al minimo. Per eseguire tali processi, utilizzate Processi Sling, che dispongono di una garanzia almeno una volta e quindi se vengono interrotti, verranno rieseguiti il prima possibile. Ma probabilmente non dovrebbero ricominciare dall&#39;inizio. Per la pianificazione di tali processi, è consigliabile utilizzare il pianificatore [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) , in quanto questa è di nuovo l’esecuzione almeno una volta.
 
@@ -50,7 +50,7 @@ Allo stesso modo, con tutto ciò che sta accadendo in modo asincrono, come agire
 
 ## Connessioni HTTP in uscita {#outgoing-http-connections}
 
-È vivamente consigliato che qualsiasi connessione HTTP in uscita imposti timeout ragionevoli di connessione e lettura. Per il codice che non applica questi timeout, le istanze AEM in esecuzione su AEM come servizio cloud applicheranno un timeout globale. Questi valori di timeout sono 10 secondi per le chiamate di connessione e 60 secondi per le chiamate di lettura per le connessioni utilizzate dalle seguenti librerie Java popolari:
+È vivamente consigliato che qualsiasi connessione HTTP in uscita imposti timeout ragionevoli di connessione e lettura. Per il codice che non applica questi timeout, le istanze AEM in esecuzione su AEM come Cloud Service applicheranno un timeout globale. Questi valori di timeout sono 10 secondi per le chiamate di connessione e 60 secondi per le chiamate di lettura per le connessioni utilizzate dalle seguenti librerie Java popolari:
 
 Adobe consiglia di utilizzare la libreria [](https://hc.apache.org/httpcomponents-client-ga/) Apache HttpComponents Client 4.x fornita per effettuare connessioni HTTP.
 
@@ -62,13 +62,13 @@ Le alternative che funzionano, ma che possono richiedere di fornire la dipendenz
 
 ## Nessuna personalizzazione interfaccia classica {#no-classic-ui-customizations}
 
-AEM come servizio Cloud supporta solo l&#39;interfaccia touch per il codice cliente di terze parti. L’interfaccia classica non è disponibile per la personalizzazione.
+AEM come Cloud Service supporta solo l&#39;interfaccia touch per il codice cliente di terze parti. L’interfaccia classica non è disponibile per la personalizzazione.
 
 ## Evitare i binari nativi {#avoid-native-binaries}
 
 Il codice non sarà in grado di scaricare i file binari in fase di esecuzione né di modificarli. Ad esempio, non sarà in grado di decomprimere `jar` o `tar` i file.
 
-## Nessun binario in streaming tramite AEM come servizio cloud {#no-streaming-binaries}
+## Nessun binario in streaming tramite AEM come Cloud Service {#no-streaming-binaries}
 
 I file binari devono essere accessibili tramite la rete CDN, che servirà i file binari al di fuori dei servizi AEM di base.
 
@@ -76,7 +76,7 @@ Ad esempio, non utilizzate `asset.getOriginal().getStream()`, il che attiva il d
 
 ## Nessun agente di replica inversa {#no-reverse-replication-agents}
 
-La replica inversa da Pubblica a Autore non è supportata in AEM come servizio cloud. Se tale strategia è necessaria, potete utilizzare uno store di persistenza esterno condiviso tra le farm di istanze Pubblica e potenzialmente il cluster Autore.
+La replica inversa da Pubblica a Autore non è supportata in AEM come Cloud Service. Se tale strategia è necessaria, potete utilizzare uno store di persistenza esterno condiviso tra le farm di istanze Pubblica e potenzialmente il cluster Autore.
 
 ## È possibile che sia necessario portare gli agenti di replica successivi {#forward-replication-agents}
 
@@ -96,7 +96,7 @@ Per modificare i livelli di registro per gli ambienti Cloud, la configurazione S
 
 >[!NOTE]
 >
->Per eseguire le modifiche di configurazione elencate di seguito, è necessario crearle in un ambiente di sviluppo locale e quindi inviarle a un’istanza AEM come servizio cloud. Per ulteriori informazioni su come eseguire questa operazione, consulta [Implementazione in AEM come servizio](/help/implementing/deploying/overview.md)cloud.
+>Per eseguire le modifiche di configurazione elencate di seguito, è necessario crearle in un ambiente di sviluppo locale e quindi inviarle a un’istanza AEM come Cloud Service. Per ulteriori informazioni su come eseguire questa operazione, consultate [Implementazione in AEM come Cloud Service](/help/implementing/deploying/overview.md).
 
 **Attivazione del livello di registro DEBUG**
 
@@ -134,7 +134,7 @@ Sullo sviluppo locale (tramite l&#39;avvio rapido per il cloud) `/apps` e `/libs
 
 I clienti possono accedere a CRXDE lite nell&#39;ambiente di sviluppo, ma non sullo stage o sulla produzione. L&#39;archivio immutabile (`/libs`, `/apps`) non può essere scritto in fase di esecuzione, pertanto il tentativo di eseguire tale operazione potrebbe causare errori.
 
-Una serie di strumenti per il debug di AEM come ambienti per sviluppatori di servizi cloud sono disponibili in Developer Console per gli ambienti di sviluppo, fase e produzione. Per determinare l’URL, regolate gli URL del servizio Autore o Pubblica nel modo seguente:
+Una serie di strumenti per il debug di AEM come ambienti per sviluppatori Cloud Service è disponibile in Developer Console per gli ambienti di sviluppo, fase e produzione. Per determinare l’URL, regolate gli URL del servizio Autore o Pubblica nel modo seguente:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -160,7 +160,7 @@ Utile anche per il debug, la console Sviluppatore dispone di un collegamento all
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Per i programmi regolari, l&#39;accesso alla Developer Console è definito da &quot;Cloud Manager - ruolo sviluppatore&quot; nell&#39;Admin Console, mentre per i programmi sandbox, Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che dia loro accesso ad AEM come servizio cloud. Per ulteriori informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consulta la Documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
+Per i programmi regolari, l&#39;accesso alla console per sviluppatori è definito da &quot;Cloud Manager - Ruolo sviluppatore&quot; nell&#39;Admin Console , mentre per i programmi sandbox, Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che dia loro accesso ad AEM come Cloud Service. Per ulteriori informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consulta la Documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
 
 
 
