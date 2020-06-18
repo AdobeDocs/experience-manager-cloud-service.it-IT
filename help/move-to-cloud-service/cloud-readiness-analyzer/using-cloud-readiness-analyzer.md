@@ -2,9 +2,9 @@
 title: Utilizzo di Cloud Ready Analyzer
 description: Utilizzo di Cloud Ready Analyzer
 translation-type: tm+mt
-source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Segui la sezione seguente per comprendere le considerazioni importanti per l’e
 Cloud Readiness Analyzer può essere scaricato come file zip dal portale di distribuzione software. Potete installare il pacchetto tramite Gestione pacchetti nell’istanza del Adobe Experience Manager  sorgente (AEM).
 
 >[!NOTE]
->Scarica Cloud Readiness Analyzer dal portale di distribuzione del software.
+>Scarica Cloud Readiness Analyzer dal portale [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) .
 
 ## Visualizzazione del rapporto di analisi della disponibilità del cloud {#viewing-report}
 
