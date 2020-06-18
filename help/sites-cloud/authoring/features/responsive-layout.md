@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '1765'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -97,16 +97,19 @@ Ad esempio, se selezioni il dispositivo **iPhone 6 Plus** (con una larghezza di 
    La barra degli strumenti dell’emulatore mostra le seguenti opzioni di layout aggiuntive:
 
    * **Ruota dispositivo**: consente di ruotare l’orientamento di un dispositivo da verticale a orizzontale e viceversa.
+
    ![Pulsante Ruota dispositivo in orizzontale](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Pulsante Ruota dispositivo in verticale](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
 
    * **Seleziona il dispositivo**: consente di definire un dispositivo specifico da emulare da un elenco (ved. il passaggio successivo).
+
    ![Pulsante Seleziona il dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
 
 1. Per selezionare un dispositivo specifico da emulare è possibile:
 
    * Utilizzare l’icona Seleziona il dispositivo e scegliere il dispositivo dal selettore a discesa.
    * Toccare o fare clic sull’indicatore del dispositivo nella barra degli strumenti dell’emulatore.
+
    ![Menu a discesa Seleziona il dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
 1. Una volta che un dispositivo specifico è stato selezionato è possibile:
@@ -114,6 +117,7 @@ Ad esempio, se selezioni il dispositivo **iPhone 6 Plus** (con una larghezza di 
    * Visualizzare il marcatore attivo per il dispositivo selezionato, ad esempio **iPad.**
    * Visualizzare il marcatore attivo per il [punto di interruzione](#layout-definitions-device-emulation-and-breakpoints) adeguato, ad esempio **Tablet**.
    * La linea punteggiata blu rappresenta la *piega* per il dispositivo selezionato (qui un **iPhone 6 Plus** in orizzontale).
+
    ![La piega](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
    * La piega può essere anche considerata l’interruzione di riga della pagina (da non confondere con i [punti di interruzione](#layout-definitions-device-emulation-and-breakpoints)) per il contenuto. Questa è visualizzata per comodità, per mostrare quale parte del contenuto è visibile all’utente sul dispositivo prima di scorrere in basso.
@@ -160,6 +164,7 @@ Come con altri componenti, puoi selezionare e quindi intervenire (opzioni Copia,
 
    * Il contenitore di layout nidificato inferiore presenta un contorno blu.
    * Ogni contenitore successivo viene visualizzato in una tonalità di blu più chiara.
+
    ![Contenitori nidificati](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
 1. In questo modo viene messa evidenziata l’intera griglia con il relativo contenuto. Viene visualizzata la barra degli strumenti delle azioni, da cui è possibile selezionare un’azione, ad esempio **Elimina**.
@@ -195,6 +200,7 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
    * **Elemento padre:** consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
    * **Mobile in nuova riga:** il componente viene spostato su una nuova riga, in base allo spazio disponibile all’interno della griglia.
    * **Nascondi componente:** il componente viene reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
+
    ![Nascondi componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
 * In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Viene quindi visualizzata la barra degli strumenti per questa modalità.
@@ -224,8 +230,8 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
    >
    >Nell’esempio in alto le azioni Mobile e Nascondi sono disponibili, perché questo Contenitore di layout è nidificato all’interno di un Contenitore di layout principale.
 
-   * **Mostra componenti**
-Seleziona i componenti principali per visualizzare la barra degli strumenti delle azioni con l’opzione **Mostra componenti nascosti**. In questo esempio, due componenti sono nascosti.
+   * **Scopri componenti** Selezionate i componenti padre per visualizzare la barra degli strumenti delle azioni con la 
+**Opzione Mostra componenti** nascosti. In questo esempio, due componenti sono nascosti.
 
       ![Mostra componenti](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Selezionando l’opzione **Mostra componenti nascosti**, i componenti che sono attualmente nascosti nelle posizioni originali vengono visualizzati in blu.
