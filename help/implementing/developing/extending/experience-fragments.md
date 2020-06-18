@@ -96,7 +96,8 @@ Per creare un modello di frammento esperienza rilevato dalla procedura guidata *
 
    1. Il nome del modello deve iniziare con:
       `experience-fragments`
-Questo consente agli utenti di creare frammenti esperienza in /content/experience-fragments, poiché la `cq:allowedTemplates` proprietà di questa cartella include tutti i modelli con nomi che iniziano con `experience-fragment`. I clienti possono aggiornare questa proprietà per includere i propri schemi di denominazione o le posizioni dei modelli.
+Questo consente agli utenti di creare frammenti esperienza in /content/experience-fragments come 
+`cq:allowedTemplates` di questa cartella include tutti i modelli con nomi che iniziano con `experience-fragment`. I clienti possono aggiornare questa proprietà per includere i propri schemi di denominazione o le posizioni dei modelli.
 
 1. [I modelli](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) consentiti possono essere configurati nella console Frammenti esperienza.
 
@@ -165,6 +166,7 @@ Dopo aver generato la pagina HTML, la pipeline Sling Rewriter apporta modifiche 
    2. `href` attribute
    3. `*-src` attributi (come data-src, custom-src, ecc.)
    4. `*-href` attributi (come `data-href`, `custom-href`, `img-href`, ecc.)
+
    >[!NOTE]
    >
    >Nella maggior parte dei casi, i collegamenti interni nell’HTML sono collegamenti relativi, ma potrebbero verificarsi casi in cui i componenti personalizzati forniscono URL completi nell’HTML. Per impostazione predefinita, AEM ignora questi URL completamente acquisiti e non apporta alcuna modifica.
@@ -287,8 +289,8 @@ Per la variante del frammento esperienza interessata dal processo di riscrittura
 
 Come input, il metodo riceve i parametri:
 
-* `link`
-La `String` rappresentazione del collegamento attualmente in fase di elaborazione. Si tratta in genere di un URL relativo che indica la risorsa nell’istanza di creazione.
+* `link`Le azioni  
+`String` rappresentazione del collegamento in corso di elaborazione. Si tratta in genere di un URL relativo che indica la risorsa nell’istanza di creazione.
 
 * `tag`
 Il nome dell&#39;elemento HTML attualmente in fase di elaborazione.
@@ -357,4 +359,4 @@ Non è raro che siano necessari diversi servizi per gestire diversi tipi di fram
 
 Questo metodo consente l’uso di diversi servizi se il `shouldRewrite()` metodo restituisce true per lo stesso frammento esperienza. Il servizio che restituisce il numero più alto dal relativo `getPriority()`metodo è il servizio che gestisce la variante del frammento esperienza.
 
-Ad esempio, puoi disporre di un elemento `GenericLinkRewriterProvider` che gestisce la mappatura di base per tutti i frammenti esperienza e quando il `shouldRewrite()` metodo restituisce `true` per tutte le varianti di frammento esperienza. Per diversi frammenti esperienza specifici, può essere utile una gestione speciale, pertanto in questo caso è possibile specificare un valore `SpecificLinkRewriterProvider` `shouldRewrite()` per il quale il metodo restituisce true solo per alcune Variazioni frammento esperienza. Per essere certi che `SpecificLinkRewriterProvider` venga scelto di gestire tali Variazioni di frammento esperienza, nel suo `getPriority()` metodo deve essere restituito un numero maggiore di `GenericLinkRewriterProvider.`
+Ad esempio, puoi disporre di un elemento `GenericLinkRewriterProvider` che gestisce la mappatura di base per tutti i frammenti esperienza e quando il `shouldRewrite()` metodo restituisce `true` per tutte le varianti di frammento esperienza. Per diversi frammenti esperienza specifici, può essere utile una gestione speciale; in questo caso, è quindi possibile specificare un valore `SpecificLinkRewriterProvider` `shouldRewrite()` per il quale il metodo restituisce true solo per alcune Variazioni di frammenti esperienza. Per essere certi che `SpecificLinkRewriterProvider` venga scelto di gestire tali Variazioni di frammento esperienza, nel suo `getPriority()` metodo deve essere restituito un numero maggiore di `GenericLinkRewriterProvider.`
