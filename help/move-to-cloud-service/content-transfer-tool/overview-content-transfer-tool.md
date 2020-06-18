@@ -1,59 +1,59 @@
 ---
-title: Panoramica sullo strumento di trasferimento dei contenuti
-description: Panoramica sullo strumento di trasferimento dei contenuti
+title: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
+description: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 0%
+source-wordcount: '639'
+ht-degree: 69%
 
 ---
 
 
 # Panoramica {#overview-content-transfer-tool}
 
-Content Transfer Tool è uno strumento sviluppato da Adobe che può essere utilizzato per spostare il contenuto esistente da un’istanza AEM di origine (locale o AMS) all’istanza Cloud Service AEM di destinazione.
+Lo strumento Content Transfer (Trasferimento contenuti) è uno strumento sviluppato da Adobe che può essere utilizzato per spostare i contenuti esistenti da un’istanza AEM di origine (on-premise o AMS) all’istanza AEM Cloud Service di destinazione.
 
-Questo strumento trasferisce automaticamente entità (utenti o gruppi).
+Questo strumento trasferisce automaticamente anche entità principali (utenti o gruppi).
 
-Il trasferimento di contenuto è associato a due fasi:
+Il trasferimento dei contenuti prevede due fasi:
 
-1. **Estrazione**:  Per estrazione si intende l’estrazione di contenuto dall’istanza AEM di origine in un’area temporanea denominata set *di* migrazione. Un set *di* migrazione è un&#39;area di archiviazione cloud fornita da Adobe per memorizzare temporaneamente il contenuto trasferito tra l&#39;istanza AEM di origine e l&#39;istanza di Cloud Service AEM.
+1. **Estrazione**: per estrazione si intende l’estrazione dei contenuti dall’istanza AEM di origine in un’area temporanea denominata *set di migrazione*. Un *set di migrazione* è un’area di archiviazione cloud fornita da Adobe in cui vengono archiviati temporaneamente i contenuti trasferiti tra l’istanza AEM di origine e l’istanza AEM di Cloud Service.
 
-   Per ulteriori informazioni, consulta Processo di [estrazione in Trasferimento](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process) contenuto.
+   Per ulteriori informazioni, consulta [Processo di estrazione nel trasferimento dei contenuti](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process).
 
-2. **Ingestione**: Per &quot;inserimento&quot; si intende l’assimilazione del contenuto dal set *di* migrazione nell’istanza Cloud Service di destinazione.
+2. **Acquisizione**: per acquisizione si intende l’acquisizione dei contenuti dal *set di migrazione* nell’istanza Cloud Service di destinazione.
 
-   Per ulteriori informazioni, consultate Processo di [inserimento in Trasferimento](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process) contenuti.
+   Per ulteriori informazioni, consulta [Processo di acquisizione nel trasferimento dei contenuti](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process).
 
-Un set *di* migrazione ha i seguenti attributi:
+Un *set di migrazione* ha i seguenti attributi:
 
-* Durante l&#39;attività di trasferimento dei contenuti è possibile creare e mantenere fino a quattro set di migrazione alla volta.
+* Durante l’attività di trasferimento dei contenuti è possibile creare e mantenere fino a un massimo di quattro set di migrazione alla volta.
 * Ogni set di migrazione deve avere un nome univoco.
-* Se un set di migrazione è rimasto inattivo per più di 30 giorni, verrà eliminato automaticamente.
-* Ogni volta che create un set di migrazione, questo viene associato a un ambiente specifico. Potete inserire solo un’istanza di creazione o pubblicazione dello stesso ambiente.
+* Se un set di migrazione è rimasto inattivo per più di 30 giorni, viene eliminato automaticamente.
+* Ogni volta che crei un set di migrazione, questo viene associato a un ambiente specifico. Puoi acquisire solo in un’istanza di authoring o pubblicazione dello stesso ambiente.
 
-Content Transfer Tool dispone di una funzione che supporta l&#39;integrazione dei contenuti differenziali dove è possibile trasferire solo le modifiche apportate dall&#39;attività di trasferimento dei contenuti precedente.
+Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
 
 >[!NOTE]
-> Dopo il trasferimento iniziale dei contenuti, si consiglia di effettuare frequenti aggiunte differenziali per ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali prima di iniziare a utilizzare Cloud Service.
+> Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service.
 
-Nella fase di estrazione, per ***completare*** un set di migrazione esistente, l’opzione di *sovrascrittura* deve essere disattivata. Per ulteriori informazioni, consulta [Estrazione](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-extraction-process) dall’alto.
+Nella fase di estrazione, per ***integrare*** un set di migrazione esistente, l’opzione di *sovrascrittura* deve essere disattivata. Per ulteriori informazioni, consulta [Estrazione integrativa](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-extraction-process).
 
-Nella fase di assimilazione, per applicare il contenuto delta sopra al contenuto corrente, l&#39;opzione *wipe* deve essere disattivata. Per ulteriori informazioni, consulta [Ingestione](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-ingestion-process) dall’alto.
+Nella fase di acquisizione, per applicare il contenuto delta sul contenuto corrente, l’opzione *Cancella* deve essere disattivata. Per ulteriori informazioni, consulta [Acquisizione integrativa](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-ingestion-process).
 
 
 ## Linee guida e best practice {#best-practices}
 
-Seguite la sezione seguente per comprendere le linee guida e le procedure ottimali per l’utilizzo dello strumento di trasferimento dei contenuti:
+Leggi la sezione seguente per comprendere le linee guida e le best practice per utilizzare lo strumento Content Transfer (Trasferimento contenuti):
 
-* È consigliabile eseguire i controlli di compattazione, di coerenza dell&#39;archivio dei dati prima della consegna per individuare potenziali problemi e ridurre anche i rifiuti presenti nel repository.
+* È consigliabile eseguire [Revision Cleanup](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) e controlli [di coerenza dell&#39;archivio](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) dati nell&#39;archivio di **origine** per identificare potenziali problemi e ridurre le dimensioni dell&#39;archivio.
 
 * Se la configurazione di AEM Cloud Author Content Delivery Network (CDN) è configurata per avere una whitelist di IP, è necessario assicurarsi che anche gli IP dell&#39;ambiente di origine vengano aggiunti all&#39;elenco consentito in modo che l&#39;ambiente di origine e l&#39;ambiente AEM Cloud possano comunicare tra loro.
 
-* Nella fase di assimilazione, si consiglia di eseguire l’assimilazione utilizzando la modalità *wipe* abilitata, in cui l’archivio esistente (autore o pubblicazione) nell’ambiente Cloud Service AEM di destinazione verrà completamente eliminato e quindi aggiornato con i dati del set di migrazione. Questa modalità è molto più veloce della modalità non-wipe, in cui il set di migrazione viene applicato sopra il contenuto corrente.
+* Nella fase di acquisizione, si consiglia di eseguire l’acquisizione con la modalità *Cancella* abilitata, affinché l’archivio esistente (di authoring o pubblicazione) nell’ambiente di destinazione AEM Cloud Service venga completamente eliminato e quindi aggiornato con i dati del set di migrazione. Questa modalità è molto più veloce della modalità in cui la cancellazione è disattivata e il set di migrazione viene applicato sul contenuto corrente.
 
-* Al termine dell&#39;attività di trasferimento dei contenuti, nell&#39;ambiente Cloud Service è necessaria la corretta struttura del progetto per garantire il corretto rendering del contenuto nell&#39;ambiente Cloud Service.
+* Al termine dell’attività di trasferimento dei contenuti, nell’ambiente Cloud Service è necessaria la giusta struttura di progetto per garantire il corretto rendering dei contenuti.
 
 * Prima di eseguire lo strumento di trasferimento dei contenuti, è necessario assicurarsi che nella `crx-quickstart` sottodirectory dell’istanza AEM di origine vi sia spazio sufficiente. Questo perché Content Transfer Tool crea una copia locale del repository che viene successivamente caricata nel set di migrazione.
 La formula generale per calcolare lo spazio libero richiesto è la seguente:
