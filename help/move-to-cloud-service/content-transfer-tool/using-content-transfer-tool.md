@@ -2,7 +2,7 @@
 title: Utilizzo dello strumento di trasferimento dei contenuti
 description: Utilizzo dello strumento di trasferimento dei contenuti
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Seguite la sezione seguente per comprendere le considerazioni importanti durante
 
 * Se utilizzate un ambiente *sandbox*, accertatevi che l’ambiente sia aggiornato alla versione del 10 giugno 2020 o successiva. Se si utilizza un ambiente *di* produzione, questo viene aggiornato automaticamente.
 
-* Per utilizzare lo strumento di trasferimento dei contenuti, devi essere un utente amministratore nell’istanza di origine e appartenere al gruppo di amministratori AEM nell’istanza del servizio cloud a cui trasferisci i contenuti. Gli utenti non privilegiati non potranno recuperare il token di accesso per utilizzare lo strumento di trasferimento dei contenuti.
+* Per utilizzare lo strumento di trasferimento dei contenuti, devi essere un utente amministratore nell’istanza di origine e appartenere al gruppo di amministratori AEM nell’istanza di Cloud Service a cui trasferisci i contenuti. Gli utenti non privilegiati non potranno recuperare il token di accesso per utilizzare lo strumento di trasferimento dei contenuti.
 
 * Durante la fase di estrazione, lo strumento di trasferimento dei contenuti viene eseguito su un’istanza sorgente AEM attiva.
 
@@ -30,16 +30,16 @@ Seguite la sezione seguente per comprendere le considerazioni importanti durante
 
 ## Disponibilità {#availability}
 
-Content Transfer Tool può essere scaricato come file zip (Content Transfer Tool v1.0.0) dal portale di distribuzione del software. Puoi installare il pacchetto tramite Package Manager nella tua istanza sorgente Adobe Experience Manager (AEM).
+Content Transfer Tool può essere scaricato come file zip (Content Transfer Tool v1.0.0) dal portale di distribuzione del software. Potete installare il pacchetto tramite Gestione pacchetti nell’istanza del Adobe Experience Manager  sorgente (AEM).
 
 >[!NOTE]
->Scaricate Content Transfer Tool dal portale [di distribuzione](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)software.
+>Scaricate Content Transfer Tool dal portale [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) .
 
 ## Esecuzione dello strumento di trasferimento dei contenuti {#running-tool}
 
-Seguite questa sezione per apprendere come utilizzare lo strumento di trasferimento dei contenuti per migrare il contenuto in AEM come servizio cloud (Autore/Pubblica):
+Seguite questa sezione per apprendere come usare lo strumento di trasferimento dei contenuti per migrare il contenuto in AEM come Cloud Service (Autore/Pubblicazione):
 
-1. Seleziona Adobe Experience Manager e passa agli strumenti -> **Operazioni** -> **Trasferimento** contenuti.
+1. Selezionate il Adobe Experience Manager  e accedete a Strumenti > **Operazioni** > Trasferimento **** contenuti.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
@@ -59,7 +59,7 @@ Seguite questa sezione per apprendere come utilizzare lo strumento di trasferime
       >[!NOTE]
       >Non sono consentiti caratteri speciali per il nome del set di migrazione.
 
-   1. **Configurazione** servizio cloud: Immettete AEM di destinazione come URL di Cloud Service Author.
+   1. **Configurazione** Cloud Service: Immettete AEM di destinazione come URL di Cloud Service Author.
 
       >[!NOTE]
       >Potete creare e mantenere un massimo di quattro set di migrazione alla volta durante l’attività di trasferimento dei contenuti.
@@ -68,7 +68,7 @@ Seguite questa sezione per apprendere come utilizzare lo strumento di trasferime
    1. **Token** di accesso: Immettete il token di accesso.
 
       >[!NOTE]
-      >Per recuperare il token di accesso dall’istanza di creazione, passate a `/libs/granite/migration/token.json`. Il token di accesso viene recuperato dall&#39;istanza di creazione del servizio cloud.
+      >Per recuperare il token di accesso dall’istanza di creazione, passate a `/libs/granite/migration/token.json`. Il token di accesso viene recuperato dall’istanza di creazione di Cloud Service.
 
    1. **Parametri**: Selezionate i seguenti parametri per creare il set di migrazione:
 
@@ -132,7 +132,7 @@ Per estrarre il set di migrazione dallo strumento di trasferimento dei contenuti
 Content Transfer Tool dispone di una funzione che supporta l&#39;integrazione dei contenuti differenziali dove è possibile trasferire solo le modifiche apportate dall&#39;attività di trasferimento dei contenuti precedente.
 
 >[!NOTE]
->Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti aggiunte differenziali per ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali prima di iniziare a utilizzare il servizio Cloud.
+>Dopo il trasferimento iniziale dei contenuti, si consiglia di effettuare frequenti aggiunte differenziali per ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali prima di iniziare a utilizzare Cloud Service.
 
 Una volta completato il processo di estrazione, potete trasferire il contenuto delta utilizzando il metodo di estrazione dall’alto. Effettuate le seguenti operazioni:
 
@@ -177,7 +177,7 @@ Seguite i passaggi indicati di seguito per assimilare il set di migrazione dallo
 Content Transfer Tool dispone di una funzione che supporta l&#39; *integrazione* dei contenuti differenziali dove è possibile trasferire solo le modifiche apportate dall&#39;attività di trasferimento dei contenuti precedente.
 
 >[!NOTE]
->Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti aggiunte differenziali per ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali prima di iniziare a utilizzare il servizio Cloud.
+>Dopo il trasferimento iniziale dei contenuti, si consiglia di effettuare frequenti aggiunte differenziali per ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali prima di iniziare a utilizzare Cloud Service.
 
 Una volta completato il processo di assimilazione, potete utilizzare il contenuto delta, utilizzando il metodo di inserimento top-up. Effettuate le seguenti operazioni:
 
