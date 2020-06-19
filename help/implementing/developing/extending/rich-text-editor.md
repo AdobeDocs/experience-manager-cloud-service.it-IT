@@ -1,19 +1,19 @@
 ---
-title: Configura l’editor Rich Text per creare contenuto in Adobe Experience Manager come servizio Cloud.
-description: Configura editor Rich Text per creare contenuto in Adobe Experience Manager come servizio Cloud.
+title: Configurate Editor Rich Text per creare contenuto  Adobe Experience Manager come Cloud Service.
+description: Configurate Editor Rich Text per creare contenuto  Adobe Experience Manager come Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
+source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
 
 
-# Configure the Rich Text Editor {#configure-the-rich-text-editor}
+# Configurare l’editor Rich Text {#configure-the-rich-text-editor}
 
-L’editor Rich Text (RTE) offre agli autori un’ampia gamma di funzionalità per la modifica del contenuto di testo. Le icone, le caselle di selezione, la barra degli strumenti e i menu sono disponibili per un’esperienza di modifica del testo WYSIWYG. Gli amministratori configurano l’editor Rich Text per attivare, disattivare ed estendere le funzioni disponibili nei componenti di authoring. Per sapere come utilizzare le funzioni RTE per la creazione, consulta [Utilizzare l’editor Rich Text per la creazione](rich-text-editor.md). Scopri in che modo gli autori [utilizzano l’editor Rich Text per creare](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) contenuti Web.
+L’editor Rich Text (RTE) offre agli autori un’ampia gamma di funzionalità per la modifica del contenuto di testo. Le icone, le caselle di selezione, la barra degli strumenti e i menu sono disponibili per un’esperienza di modifica del testo WYSIWYG. Gli amministratori configurano l’editor Rich Text per attivare, disattivare ed estendere le funzioni disponibili nei componenti di authoring. Scopri in che modo gli autori [utilizzano l’editor Rich Text per creare](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) contenuti Web.
 
 I concetti e i passaggi necessari per la configurazione dell’editor Rich Text sono elencati di seguito.
 
@@ -31,11 +31,11 @@ L’interfaccia RTE offre un design [](/help/sites-cloud/authoring/features/resp
 
 *Figura: Barra degli strumenti Editor Rich Text con tutte le opzioni disponibili abilitate.*
 
-La barra degli strumenti fornisce le opzioni per l’esperienza di authoring WYSIWYG. Gli amministratori di Experience Manager possono configurare le opzioni disponibili nella barra degli strumenti dell&#39;interfaccia. Per impostazione predefinita in Experience Manager è disponibile un set completo di opzioni di modifica. Gli sviluppatori possono personalizzare Experience Manager per aggiungere altre opzioni di modifica.
+La barra degli strumenti fornisce le opzioni per l’esperienza di authoring WYSIWYG.  amministratori Experience Manager possono configurare le opzioni disponibili nella barra degli strumenti dell’interfaccia. Per impostazione predefinita in  Experience Manager è disponibile un set completo di opzioni di modifica. Gli sviluppatori possono personalizzare  Experience Manager per aggiungere altre opzioni di modifica.
 
 ## Varie modalità di modifica {#editingmodes}
 
-Gli autori possono creare e modificare il contenuto testuale in Experience Manager utilizzando le diverse modalità di componenti. Le opzioni della barra degli strumenti per la creazione e formattazione di contenuti e l’esperienza utente dei componenti abilitati all’editor Rich Text in modalità di modifica diversa variano in base alle configurazioni dell’editor Rich Text.
+Gli autori possono creare e modificare contenuti testuali in  Experience Manager utilizzando le diverse modalità di componenti. Le opzioni della barra degli strumenti per la creazione e formattazione di contenuti e l’esperienza utente dei componenti abilitati all’editor Rich Text in modalità di modifica diversa variano in base alle configurazioni dell’editor Rich Text.
 
 | Modalità di modifica | Area di modifica | Funzioni consigliate da abilitare |
 |--- |--- |--- |
@@ -58,7 +58,7 @@ Quando il contenuto viene aperto (con un doppio clic lento), può essere modific
 
 ### Full-screen editing {#full-screen-editing}
 
-I componenti di Experience Manager possono essere aperti a schermo intero per nascondere il contenuto della pagina e occupare la schermata disponibile. Considerate la possibilità di modificare a schermo intero una versione dettagliata dell&#39;editing in linea in quanto offre il maggior numero di opzioni di modifica. È possibile aprirlo facendo clic su ![rte_fullscreen](assets/rte_fullscreen.png), dalla barra degli strumenti compatta, quando si utilizza la modalità di modifica in linea.
+ i componenti Experience Manager possono essere aperti a schermo intero per nascondere il contenuto della pagina e occupare lo schermo disponibile. Considerate la possibilità di modificare a schermo intero una versione dettagliata dell&#39;editing in linea in quanto offre il maggior numero di opzioni di modifica. È possibile aprirlo facendo clic su ![rte_fullscreen](assets/rte_fullscreen.png), dalla barra degli strumenti compatta, quando si utilizza la modalità di modifica in linea.
 
 Nella finestra di dialogo a schermo intero, insieme a una barra degli strumenti dettagliata dell’editor Rich Text, sono disponibili anche le opzioni e i componenti disponibili in una finestra di dialogo. È applicabile solo per una finestra di dialogo che contiene l’editor Rich Text insieme ad altri componenti.
 
@@ -98,7 +98,7 @@ Nella tabella seguente sono elencati i plug-in correnti, che mostrano:
 | modifica | cut copy paste-default paste-plintext paste-wordhtml | [Tagliare, copiare e incollare le tre modalità](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
 | [punto](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | trova sostituzione | Trova e sostituisci. |
 | [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | grassetto sottolineato in corsivo | [Formattazione](configure-rich-text-editor-plug-ins.md#textstyles)di base del testo. |
-| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | immagine | Supporto per immagini di base (trascinate da Content Finder). A seconda del browser, il supporto ha diversi comportamenti per gli autori |
+| [immagine](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | immagine | Supporto per immagini di base (trascinate da Content Finder). A seconda del browser, il supporto ha diversi comportamenti per gli autori |
 | [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Per definire questo valore, vedere [Dimensione](configure-rich-text-editor-plug-ins.md#tabsize)tabulazione. |
 | [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justifycenter righright | Allineamento del paragrafo. |
 | [links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | ancoraggio di scollegamento modifica collegamento | [Collegamenti ipertestuali e ancoraggi](configure-rich-text-editor-plug-ins.md#linkstyles). |
@@ -131,6 +131,7 @@ La [modalità di modifica dell’editor Rich Text (e l’interfaccia utente)](#e
 >* **Nome**: `configPath`
 >* **Tipo**: `String`
 >* **Valore**: percorso del nodo contenente la configurazione effettiva
+
 >
 >
 Non assegnare al nodo di configurazione RTE il nome `config`. In caso contrario, le configurazioni dell’editor Rich Text hanno effetto solo per gli amministratori e non per gli utenti del gruppo `content-author`.
@@ -164,13 +165,14 @@ Il componente [di testo Componenti](https://docs.adobe.com/content/help/en/exper
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 Per creare un componente di testo personalizzato, copiate il componente sopra anziché modificarlo.
 
 ## Configura RTE, barra degli strumenti {#dialogfullscreen}
 
-Experience Manager consente di configurare l&#39;interfaccia per l&#39;Editor Rich Text in modo diverso per le diverse modalità di modifica. Le impostazioni predefinite sono fornite di seguito. Potete ignorare queste impostazioni predefinite in base alle vostre esigenze. Potete personalizzare solo le funzioni della barra degli strumenti che desiderate fornire agli autori. Non è necessario specificare tutte le configurazioni della barra degli strumenti.
+ Experience Manager consente di configurare l’interfaccia per l’editor Rich Text in modo diverso per le diverse modalità di modifica. Le impostazioni predefinite sono fornite di seguito. Potete ignorare queste impostazioni predefinite in base alle vostre esigenze. Potete personalizzare solo le funzioni della barra degli strumenti che desiderate fornire agli autori. Non è necessario specificare tutte le configurazioni della barra degli strumenti.
 
 Per configurare la barra degli strumenti per `dialogFullScreen`, utilizzate la seguente configurazione di esempio.
 
@@ -268,11 +270,11 @@ Segue uno snippet di esempio per mappare il comando Grassetto all&#39;icona Cora
 
 ## Limitazioni note {#known-limitations}
 
-La funzionalità RTE di Experience Manager presenta i seguenti limiti:
+ funzionalità RTE di Experience Manager presenta le seguenti limitazioni:
 
-* Le funzionalità RTE sono supportate solo nelle finestre di dialogo dei componenti di Experience Manager. L&#39;editor Rich Text non è supportato nelle procedure guidate o nei moduli di base.
+* Le funzionalità RTE sono supportate solo nelle finestre di dialogo  componente Experience Manager. L&#39;editor Rich Text non è supportato nelle procedure guidate o nei moduli di base.
 
-* Experience Manager non funziona sui dispositivi ibridi. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
+*  Experience Manager non funziona sui dispositivi ibridi. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
 
 * Non assegnare un nome al nodo di configurazione RTE `config`. In caso contrario, la configurazione dell’editor Rich Text ha effetto solo per gli amministratori e non per gli utenti del gruppo `content-author`.
 
