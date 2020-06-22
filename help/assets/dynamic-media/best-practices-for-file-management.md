@@ -1,22 +1,22 @@
 ---
-title: Best practice per l’organizzazione delle risorse digitali per l’utilizzo dei profili
-description: Suggerimenti e procedure ottimali per denominare, organizzare e gestire i metadati per i file di risorse digitali.
+title: Procedure ottimali per l’organizzazione delle risorse digitali per l’utilizzo dei profili immagine o video di Dynamic Media
+description: Suggerimenti e procedure ottimali per denominare, organizzare e gestire i file di risorse video e immagini Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 
-# Procedure ottimali per l’organizzazione delle risorse digitali per l’utilizzo dei profili {#best-practices-for-organizing-your-digital-assets-for-using-profiles}
+# Procedure ottimali per l’organizzazione delle risorse digitali per l’utilizzo dei profili immagine o video{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-Un concetto importante per l’utilizzo dei profili in AEM Assets è che vengono assegnati alle cartelle. All’interno di un profilo sono disponibili impostazioni sotto forma di profili di metadati, nonché profili video o profili immagine. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Di conseguenza, il modo in cui denominate file e cartelle, le modalità di disposizione delle sottocartelle e la gestione dei file all’interno di tali cartelle hanno un impatto significativo sul modo in cui tali risorse vengono elaborate da un profilo.
+Un concetto importante per l’utilizzo dei profili immagine o video di Dynamic Media è che vengono assegnati alle cartelle. All’interno di un profilo sono disponibili le impostazioni per un’immagine o un video. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Di conseguenza, il modo in cui denominate file e cartelle, come vengono disposte le sottocartelle e come vengono gestiti i file all’interno di tali cartelle ha un impatto significativo sul modo in cui tali risorse vengono elaborate dal profilo.
 
 Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate, oltre a buone pratiche in materia di metadati, potete sfruttare al meglio la raccolta di risorse digitali e assicurarvi che i file corretti vengano elaborati dal profilo corretto.
 
-Consultate [Profili per elaborazione di video, metadati e immagini](processing-profiles.md).
+Consultate [I profili immagine e video di Dynamic Media](about-image-video-profiles.md).
 
 Di seguito sono riportati consigli per l’organizzazione dei file di risorse digitali.
 
