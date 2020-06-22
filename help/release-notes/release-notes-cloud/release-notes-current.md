@@ -2,10 +2,10 @@
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.6.0'
 description: Note sulla versione 2020.6.0 di Experience Manager
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: fcae90c8e24dbd2994e8700daf22f5dff039b299
 workflow-type: tm+mt
-source-wordcount: '1958'
-ht-degree: 61%
+source-wordcount: '1942'
+ht-degree: 54%
 
 ---
 
@@ -109,16 +109,16 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 I tag avanzati migliorati consentono di addestrare modelli di assegnazione tag avanzati per riconoscere le immagini in base a tag aziendali specifici, oltre che ai tag avanzati generici.
 
-Con questa versione, è disponibile una nuova user experience guidata che consente di impostare l’addestramento di tag avanzati per set di tag specifici dei clienti e di addestrarli con risorse che in futuro dovranno essere riconosciute e a cui dovranno essere assegnati i tag. Si tratta di un’esperienza più intuitiva.
-Addestra i tag avanzati migliorati in modo più intuitivo. Scoprite [come aggiungere smart tag alle risorse](/help/assets/smart-tags.md) e [configurare l’assegnazione di smart tag](/help/assets/smart-tags-configuration.md).
+Con questa versione, è disponibile una nuova user experience guidata che consente di impostare l’addestramento di tag avanzati per set di tag specifici dei clienti e di addestrarli con risorse che in futuro dovranno essere riconosciute e a cui dovranno essere assegnati i tag. L&#39;esperienza è ora più intuitiva.
+Train Smart Tags avanzato per una formazione più intuitiva per Smart Tags. Scoprite [come aggiungere smart tag alle risorse](/help/assets/smart-tags.md) e [configurare l’assegnazione di smart tag](/help/assets/smart-tags-configuration.md).
 
-**Supporto per l’acquisizione, l’anteprima e la distribuzione di contenuti 3D**
+**Supporto per l&#39;assimilazione, l&#39;anteprima e la distribuzione di contenuti 3D**
 
-Le organizzazioni ora possono archiviare e utilizzare file 3D in AEM Assets. L’utente può caricare, visualizzare in anteprima e sfruttare una serie di file 3D di base, tra cui file .obj, .stl, .gltf e .glb. Con l’aggiunta di [!DNL Dynamic Media], le esperienze 3D possono essere configurate e distribuite tramite URL o visualizzatori agnostici. Tra questi sono inclusi un Visualizzatore di esperienza 3D [!DNL Dynamic Media], un componente Visualizzatore 3D di Sites e la possibilità di distribuire file 3D tramite [!DNL Dynamic Media] (AR/VR). Consultate [Utilizzo delle risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Le organizzazioni ora possono archiviare e utilizzare file 3D in AEM Assets. L’utente può caricare, visualizzare in anteprima e utilizzare vari file 3D di base, tra cui i file OBJ, STL, GLTF e GLB. Inoltre, [!DNL Dynamic Media]potete configurare e distribuire esperienze 3D utilizzando URL agnostici o visualizzatori. Tra questi sono inclusi un Visualizzatore di esperienza 3D [!DNL Dynamic Media], un componente Visualizzatore 3D di Sites e la possibilità di distribuire file 3D tramite [!DNL Dynamic Media] (AR/VR). Consultate [Utilizzo delle risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Supporto di Adobe Asset Link per Adobe XD**
 
-Con la versione più recente, [!DNL Experience Manager Assets] fornisce il supporto per un nuovo [!DNL Adobe Asset Link] plug-in rilasciato con [!DNL Adobe XD] v29.3. L’integrazione consente ai designer di accedere e utilizzare le risorse [!DNL Experience Manager] nelle proprie progettazioni, senza dover uscire dall’ [!DNL Adobe XD] applicazione. Consultate [Adobe Asset Link (Collegamento risorse Adobe) per la documentazione](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)Adobe XD.
+Con la versione più recente, [!DNL Experience Manager Assets] supporta un nuovo [!DNL Adobe Asset Link] plug-in rilasciato con [!DNL Adobe XD] v29.3. L’integrazione consente ai designer di accedere e utilizzare le risorse [!DNL Experience Manager] nelle proprie progettazioni, senza dover uscire dall’ [!DNL Adobe XD] applicazione. Consultate [Adobe Asset Link (Collegamento risorse Adobe) per la documentazione](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)Adobe XD.
 
 Con questa versione, gli utenti creativi e i designer possono ora lavorare con le risorse gestite [!DNL AEM Assets] utilizzando [!DNL Adobe Asset Link] in una serie di app desktop Creative Cloud, tra cui [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator]e [!DNL InDesign].
 
@@ -128,17 +128,17 @@ Con questa versione, gli utenti creativi e i designer possono ora lavorare con l
 
 Gli elementi dell&#39;interfaccia utente sono intuitivi per gli assistenti vocali, sono accessibili tramite una tastiera e hanno un contrasto migliore. Segue un elenco dettagliato di miglioramenti:
 
-* Gli indicatori di avanzamento [!UICONTROL Opzioni], [!UICONTROL Ambito] e [!UICONTROL Flussi di lavoro] nella pagina [!UICONTROL Gestisci pubblicazione] non vengono letti dall’assistente vocale come indicatori di avanzamento. Al contrario, chi usa un assistente vocale percepisce questi indicatori di stato come un elenco di schede. (CQ-4273015)
+* The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress bars on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress bar. Al contrario, chi usa un assistente vocale percepisce questi indicatori di stato come un elenco di schede. (CQ-4273015)
 
 * Quando si aggiungono dei tag nella pagina [!UICONTROL Proprietà] di una risorsa, gli utenti possono navigare in una struttura ad albero dei tag. La struttura ad albero non è accessibile, in quanto chi usa un assistente vocale non sente nulla durante la navigazione. (CQ-4272964)
 
 * Nella finestra di dialogo di condivisione dei collegamenti, quando si naviga in modalità Sfoglia, l’assistente vocale
 
-   * legge le informazioni della tabella non appena la finestra di dialogo viene caricata;
-   * non è in grado di navigare su tutti i suggerimenti automatici elencati:
-   * non legge i suggerimenti automatici visualizzati per la casella combinata [!UICONTROL Aggiungi indirizzo e-mail/Ricerca]. (CQ-4294232)
+   * Racconta immediatamente le informazioni della tabella al caricamento della finestra di dialogo.
+   * Non è in grado di passare a tutti i suggerimenti automatici elencati.
+   * Does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
 
-* La pagina Editor [!UICONTROL schema] metadati e i relativi elementi sono ora accessibili e l&#39;assistente vocale è intuitivo. Le opzioni possono essere utilizzate utilizzando una tastiera. (CQ-4272953) Gli utenti possono trascinare i componenti utilizzando la tastiera in modalità di ricerca NVDA. (CQ-4296326)
+* The [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using a keyboard and are screen reader friendly. (CQ-4272953) Gli utenti possono trascinare i componenti utilizzando la tastiera in modalità di ricerca NVDA. (CQ-4296326)
 
 * Nell’interfaccia di Assets, le impostazioni di visualizzazione non sono accessibili dalla tastiera. (CQ-4289038)
 
@@ -146,17 +146,17 @@ Gli elementi dell&#39;interfaccia utente sono intuitivi per gli assistenti vocal
 
 * Il colore e il contrasto di alcuni elementi dell&#39;interfaccia utente vengono aggiornati in modo che gli utenti con visione limitata o senza percezione del colore possano distinguere questi elementi dell&#39;interfaccia utente. Ad esempio, il colore delle icone di valutazione a stella nella sezione [!UICONTROL Valutazione] della scheda [!UICONTROL Avanzate] della [!UICONTROL scheda] Proprietàdi una risorsa e nella vista a schede viene modificato per il contrasto appropriato. (CQ-4295106)
 
-* Il menu a comparsa della casella di riepilogo della casella combinata (in vari campi su pagine diverse) ora visualizza le voci come un elenco di opzioni che possono essere annunciate dagli assistenti vocali. (CQ-4294017)
+* Gli assistenti vocali ora possono leggere le voci del menu a comparsa della casella di riepilogo della casella combinata (in vari campi su pagine diverse) come un elenco di opzioni. (CQ-4294017)
 
 * Per applicare un flusso di lavoro a una risorsa, è possibile accedere alla freccia della [!UICONTROL timeline] tramite una tastiera. (CQ-4289268)
 
-* Gli utenti possono rimuovere i tag selezionati nel campo [!UICONTROL Tag] della scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] di una risorsa utilizzando il `x` simbolo . Lo scopo è stato annunciato dagli assistenti vocali insieme al numero di tag selezionati (CQ-4273033).
+* Gli utenti possono rimuovere i tag selezionati nel campo [!UICONTROL Tag] della scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] di una risorsa utilizzando il `x` simbolo . Gli assistenti vocali ora annunciano lo scopo e il numero di tag selezionati (CQ-4273033).
 
 * I campi del modulo di sola lettura possono essere concentrati utilizzando una tastiera. Ad esempio, i campi disattivati nella scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] di una risorsa. (CQ-4273031)
 
 * È possibile accedere alle opzioni per filtrare le risorse nella barra laterale sinistra utilizzando una tastiera. (CQ-4273018)
 
-* The purpose of various combo box elements such as Path field and the option to open Selection dialog in [!UICONTROL Basic] tab of an asset&#39;s [!UICONTROL Properties] page are now correctly announced by screen readers. (CQ-4273016)
+* L&#39;assistente vocale annuncia lo scopo di vari elementi della casella combinata, ad esempio il campo Percorso, e l&#39;opzione per aprire la finestra di dialogo di selezione nella scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] di una risorsa. (CQ-4273016)
 
 * I controlli del volume per i video sono accessibili tramite una tastiera. (CQ-4272696)
 
@@ -164,7 +164,7 @@ Gli elementi dell&#39;interfaccia utente sono intuitivi per gli assistenti vocal
 
 * Gli utenti di utilità di lettura dello schermo ora sanno quando le righe nella vista a elenco sono selezionabili utilizzando una tastiera. Le informazioni vengono annunciate quando si posiziona il puntatore sulle righe. (CQ-4271824)
 
-* Alcuni campi modulo, come il nome utente e la password, si basano sui valori dei segnaposto per assegnare un&#39;etichetta accessibile. (CQ-4271716)
+* Alcuni campi modulo, come il nome utente e i campi password della pagina di login, si basano sui valori dei segnaposto per assegnare un&#39;etichetta accessibile. (CQ-4271716)
 
 * È ora possibile accedere agli elementi interattivi dell&#39;interfaccia utente, ad esempio collegamenti e opzioni quali le opzioni di intestazione e zoom delle risorse per la navigazione nella pagina o nella cartella tramite una tastiera. (CQ-4271412)
 
@@ -172,7 +172,7 @@ Gli elementi dell&#39;interfaccia utente sono intuitivi per gli assistenti vocal
 
 **Altri miglioramenti**
 
-La versione include i seguenti miglioramenti aggiuntivi:
+La versione include i seguenti altri miglioramenti:
 
 * Possibilità di rielaborare le risorse con profili di elaborazione delle risorse, offrendo così agli utenti il controllo completo del processo (elaborazione completa delle risorse, applicazione di un profilo di elaborazione specifico ed eventuale esecuzione di un flusso di lavoro di post-elaborazione).
 * Le query di ricerca ora restituiscono i risultati più rapidamente quando l’istanza del cluster sottostante viene riavviata dietro le quinte (in un caso simile, l’esecuzione della ricerca iniziale poteva durare più a lungo prima).
@@ -191,7 +191,7 @@ In addition to the above new features, the current release provides the followin
 
 * Per i file di musica MP3, il pulsante di riproduzione visualizzato sulla miniatura nell’anteprima DAM non funziona. (CQ-4294731)
 * Passando il puntatore del mouse sulla vista a schede, lo schermo scorre in seguito all’attivazione (automatica) dell’area delle azioni rapide disponibili nella scheda. (GRANITE-26895)
-* La visualizzazione di un numero eccessivo di immagini dopo lo scorrimento di un numero elevato di risultati di ricerca provoca l’arresto anomalo del browser. (GRANITE-26432)
+* La visualizzazione di troppe immagini dopo lo scorrimento di molti risultati di ricerca provoca l’arresto anomalo del browser. (GRANITE-26432)
 * Quando si scarica una risorsa, se è selezionata l’opzione e-mail e viene fornito un ID e-mail valido, l’opzione di download non è disponibile. (CQ-4296535)
 * I filtri personalizzati salvati come raccolte avanzate non vengono applicati correttamente alle risorse. (CQ-4294942)
 * Sono stati introdotti numerosi miglioramenti a livello di ricerca e indicizzazione e correzioni di bug per migliorare le prestazioni. (CQ-4286373)
