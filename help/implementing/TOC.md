@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 81%
+ht-degree: 90%
 
 ---
 
@@ -46,8 +46,8 @@ ht-degree: 81%
 + Author Tier {#author-tier}
    + [Accesso al livello Author](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [Protezione del livello Author](/help/implementing/author-tier/securing-the-author-tier.md)
-+ Panoramica sulla distribuzione dei contenuti {#content-delivery}
++ Panoramica della distribuzione dei contenuti {#content-delivery}
    + [Flusso di distribuzione dei contenuti](dispatcher/overview.md)
    + [Dispatcher nel cloud](dispatcher/disp-overview.md)
-   + [CDN in AEM come servizio cloud](dispatcher/cdn.md)
-   + [Memorizzazione nella cache di AEM come servizio cloud](dispatcher/caching.md)
+   + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
+   + [Memorizzazione in cache in AEM as a Cloud Service](dispatcher/caching.md)
