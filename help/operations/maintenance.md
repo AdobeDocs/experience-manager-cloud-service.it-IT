@@ -1,8 +1,8 @@
 ---
-title: Attività di manutenzione in AEM come servizio cloud
-description: 'Attività di manutenzione in AEM come servizio cloud '
+title: Attività di manutenzione in AEM come Cloud Service
+description: 'Attività di manutenzione in AEM come Cloud Service '
 translation-type: tm+mt
-source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+source-git-commit: e9ee1064c5fa62b56c822a18ad6ca8cc4d09fa75
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 2%
@@ -10,9 +10,9 @@ ht-degree: 2%
 ---
 
 
-# Attività di manutenzione in AEM come servizio cloud
+# Attività di manutenzione in AEM come Cloud Service
 
-Le attività di manutenzione sono processi eseguiti secondo una pianificazione al fine di ottimizzare il repository. Con AEM come servizio Cloud, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando le operazioni dell&#39;infrastruttura ad Adobe.
+Le attività di manutenzione sono processi eseguiti secondo una pianificazione al fine di ottimizzare il repository. Con AEM come Cloud Service, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando le operazioni dell&#39;infrastruttura ad Adobe.
 
 Per ulteriori informazioni sulle attività di manutenzione, consulta le pagine seguenti:
 
@@ -21,13 +21,13 @@ Per ulteriori informazioni sulle attività di manutenzione, consulta le pagine s
 
 ## Configurazione delle attività di manutenzione
 
-Nelle versioni precedenti di AEM, era possibile configurare le attività di manutenzione utilizzando la scheda di manutenzione (Strumenti > Operazioni > Manutenzione). Per AEM come servizio cloud, la scheda di manutenzione non è più disponibile, pertanto le configurazioni devono essere salvate nel controllo del codice sorgente e distribuite utilizzando Cloud Manager. Adobe gestirà le attività di manutenzione che non richiedono decisioni da parte del cliente (ad esempio, DataStore Garbage Collection), mentre altre attività di manutenzione possono essere configurate dal cliente (vedere la tabella seguente).
+Nelle versioni precedenti di AEM, era possibile configurare le attività di manutenzione utilizzando la scheda di manutenzione (Strumenti > Operazioni > Manutenzione). Per AEM come Cloud Service, la scheda di manutenzione non è più disponibile, pertanto le configurazioni devono essere salvate nel controllo del codice sorgente e distribuite utilizzando Cloud Manager. Adobe gestirà le attività di manutenzione che non richiedono decisioni da parte del cliente (ad esempio, DataStore Garbage Collection), mentre altre attività di manutenzione possono essere configurate dal cliente (vedere la tabella seguente).
 
 >[!CAUTION]
 >
 >Adobe si riserva il diritto di ignorare le impostazioni di configurazione delle attività di manutenzione del cliente al fine di attenuare problemi quali il degrado delle prestazioni.
 
-La tabella seguente illustra le attività di manutenzione disponibili al momento del rilascio di AEM come servizio cloud.
+La tabella seguente illustra le attività di manutenzione disponibili al momento del rilascio di AEM come Cloud Service.
 
 | Attività di manutenzione | Chi possiede la configurazione | Come configurare (facoltativo) |
 |---|---|---|
@@ -35,9 +35,9 @@ La tabella seguente illustra le attività di manutenzione disponibili al momento
 | Pulizia delle versioni | Adobe | Appartiene interamente ad Adobe, ma in futuro i clienti potranno configurare alcuni parametri. |
 | Rimozione registro di controllo | Adobe | Appartiene interamente ad Adobe, ma in futuro i clienti potranno configurare alcuni parametri. |
 | Pulizia binary di Lucene | Adobe | Inutilizzati e quindi disabilitati da Adobe. |
-| Rimozione attività ad hoc | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione sotto `/libs` e `/apps` con `/conf/global/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra manutenzione riportata di seguito. <br> Attivate l’attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominatelo `granite_TaskPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI consulta la documentazione sulle attività di manutenzione di [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Svuotamento flusso di lavoro | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione sotto `/libs` e `/apps` con `/conf/global/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra manutenzione riportata di seguito. <br> Attivate l’attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominatelo `granite_WorkflowPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI consulta la documentazione sulle attività di manutenzione di [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Eliminazione progetti | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione sotto `/libs` e `/apps` con `/conf/global/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra manutenzione riportata di seguito. <br> Attivate l’attività di manutenzione aggiungendo un nodo sotto il nodo sopra (denominatelo `granite_ProjectPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI vedere la documentazione delle attività di manutenzione di [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Rimozione attività ad hoc | Cliente | Deve essere fatto in github. <br> Sostituisci il nodo di configurazione della finestra Manutenzione out-of-the-box in `/libs` creando proprietà sotto la cartella `/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra manutenzione riportata di seguito. <br> Attivate l’attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominatelo `granite_TaskPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI consulta la documentazione sulle attività di manutenzione di [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Svuotamento flusso di lavoro | Cliente | Deve essere fatto in github. <br> Sostituisci il nodo di configurazione della finestra Manutenzione out-of-the-box in `/libs` mediante la creazione di proprietà sotto la cartella`/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra manutenzione riportata di seguito. <br> Attivate l’attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominatelo `granite_WorkflowPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI consulta la documentazione sulle attività di manutenzione di [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Eliminazione progetti | Cliente | Deve essere fatto in github. <br> Sostituisci il nodo di configurazione della finestra Manutenzione out-of-the-box in `/libs` creando proprietà sotto la cartella `/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra manutenzione riportata di seguito. <br> Attivate l’attività di manutenzione aggiungendo un nodo sotto il nodo sopra (denominatelo `granite_ProjectPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI vedere la documentazione delle attività di manutenzione di [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 I clienti possono pianificare ciascuna delle attività di manutenzione di rimozione dei flussi di lavoro, rimozione delle attività ad hoc e rimozione dei progetti da eseguire durante le finestre di manutenzione giornaliera, settimanale o mensile. Queste configurazioni devono essere modificate direttamente nel controllo del codice sorgente. La tabella seguente descrive i parametri di configurazione disponibili per ciascuna finestra.
 
@@ -54,7 +54,7 @@ I clienti possono pianificare ciascuna delle attività di manutenzione di rimozi
     <td>Giornaliero</td>
     <td>Cliente</td>
     <td>Definizione nodo JCR</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_daily </code> (che sostituisce il nodo in <code>/apps</code> e <code>/libs</code>)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
     <td>Vedi l'esempio di codice 1 seguente</td>
    <td>
     <ul>
@@ -67,7 +67,7 @@ I clienti possono pianificare ciascuna delle attività di manutenzione di rimozi
     <td>Settimanale</td>
     <td>Cliente</td>
     <td>Definizione nodo JCR</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code> (che sostituisce il nodo in <code>/apps</code> e <code>/libs</code>)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
     <td>Vedi l'esempio di codice 2 seguente</td>
      <td>
     <ul>
@@ -81,7 +81,7 @@ I clienti possono pianificare ciascuna delle attività di manutenzione di rimozi
     <td>Mensile</td>
     <td>Cliente</td>
     <td>Definizione nodo JCR</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_monthly</code> (che sostituisce il nodo in <code>/apps</code> e <code>/libs</code>)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
     <td>Cfr. codice di esempio 3 di seguito</td>
      <td>
     <ul>
@@ -124,7 +124,7 @@ Esempio di codice 2
    windowStartTime="14:30"/>
 ```
 
-Codice di esempio 3
+Esempio di codice 2
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
