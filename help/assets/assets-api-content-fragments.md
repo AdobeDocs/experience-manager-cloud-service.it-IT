@@ -1,10 +1,10 @@
 ---
-title: Adobe Experience Manager come servizio cloud Supporto dei frammenti di contenuto nell'API HTTP Assets
-description: Ulteriori informazioni su Adobe Experience Manager come supporto dei frammenti di contenuto del servizio cloud nell'API HTTP Assets.
+title: ' Adobe Experience Manager come supporto dei frammenti di contenuto Cloud Service nell''API HTTP Assets'
+description: Scopri  Adobe Experience Manager come Cloud Service Content Fragments Support nell’API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1891'
 ht-degree: 2%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 2%
 >
 L’implementazione corrente dell’API HTTP Assets si basa sullo stile di architettura [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) .
 
-L’API [REST di](/help/assets/mac-api-assets.md) Assets consente agli sviluppatori di Adobe Experience Manager come servizio Cloud di accedere al contenuto (memorizzato in AEM) direttamente tramite l’API HTTP, tramite operazioni CRUD (Crea, Leggi, Aggiorna, Elimina).
+L’API [REST di](/help/assets/mac-api-assets.md) Assets consente agli sviluppatori di  Adobe Experience Manager come Cloud Service di accedere al contenuto (memorizzato in AEM) direttamente tramite l’API HTTP, tramite operazioni CRUD (Crea, Leggi, Aggiorna, Elimina).
 
-L&#39;API consente di utilizzare Adobe Experience Manager come servizio cloud come CMS headless (Content Management System) fornendo Content Services a un&#39;applicazione front-end JavaScript. Oppure qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire le risposte JSON.
+L&#39;API consente di utilizzare  Adobe Experience Manager come Cloud Service come CMS headless (Content Management System) fornendo Content Services a un&#39;applicazione front-end JavaScript. Oppure qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire le risposte JSON.
 
 Ad esempio, le applicazioni SPA (Single Page Applications), basate su framework o personalizzate, richiedono il contenuto fornito tramite l&#39;API HTTP, spesso in formato JSON.
 
@@ -49,7 +49,7 @@ API REST di Risorse:
 
 ## Prerequisiti {#prerequisites}
 
-L’API REST di Assets è disponibile per ogni installazione out-of-the-box di una versione recente di Adobe Experience Manager come servizio Cloud.
+L’API REST di Risorse è disponibile in ogni installazione out-of-the-box di un Adobe Experience Manager  recente come versione Cloud Service.
 
 ## Concetti fondamentali {#key-concepts}
 
@@ -75,7 +75,7 @@ Il metodo HTTP determina l’operazione da eseguire:
 * **GET** - per recuperare una rappresentazione JSON di una risorsa o di una cartella
 * **POST** - per creare nuove risorse o cartelle
 * **PUT** - per aggiornare le proprietà di una risorsa o di una cartella
-* **ELIMINA** : per eliminare una risorsa o una cartella
+* **DELETE** - per eliminare una risorsa o una cartella
 
 >[!NOTE]
 >
@@ -348,11 +348,10 @@ I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
    Di seguito sono elencati gli scenari più comuni in cui viene restituito questo stato di errore, insieme al messaggio di errore (spaziatura fissa) generato:
 
    * La cartella principale non esiste (durante la creazione di un frammento di contenuto tramite `POST`)
-   * Non è stato fornito alcun modello di frammento di contenuto (cq:model è mancante), non è possibile leggerlo (a causa di un percorso non valido o di un problema di autorizzazione) oppure non esiste un modello/modello di frammento valido:
+   * Non è stato fornito alcun modello di frammento di contenuto (cq:model mancante), non è possibile leggerlo (a causa di un percorso non valido o di un problema di autorizzazione) o non è presente un modello di frammento valido:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
-      * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
    * Impossibile creare il frammento di contenuto (potenziale problema di autorizzazione):
 
       * `Could not create content fragment`
