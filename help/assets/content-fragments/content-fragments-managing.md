@@ -2,9 +2,9 @@
 title: Gestione dei frammenti di contenuto
 description: I frammenti di contenuto sono memorizzati come risorse e sono gestiti principalmente dalla console Risorse.
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1454'
 ht-degree: 11%
 
 ---
@@ -22,25 +22,19 @@ I frammenti di contenuto sono memorizzati come **risorse** e sono gestiti princi
 
 ### Creazione di un modello di contenuto {#creating-a-content-model}
 
-
 [I modelli](/help/assets/content-fragments/content-fragments-models.md) di frammento di contenuto possono essere attivati e creati prima di creare frammenti di contenuto con contenuto strutturato.
 
 ### Creazione di un frammento di contenuto {#creating-a-content-fragment}
 
-Il metodo di creazione di un frammento di contenuto è sostanzialmente lo stesso per i frammenti semplici e strutturati:
+Il metodo di creazione di un frammento di contenuto è:
 
 1. Passa alla cartella **Risorse** in cui desideri creare il frammento.
 2. Per aprire la procedura guidata, seleziona **Crea**, quindi **Frammento di contenuto**.
 3. Il primo passaggio della procedura guidata richiede di specificare la base del nuovo frammento.
 
-   * Può essere:
+   * [Modello](/help/assets/content-fragments/content-fragments-models.md) : utilizzato per creare un frammento che richiede contenuto strutturato; ad esempio, il modello **Adventure**
 
-      * modello frammento **** semplice
-
-      * [Modello](/help/assets/content-fragments/content-fragments-models.md) : utilizzato per creare un frammento che richiede contenuto strutturato; ad esempio, il modello **Aeroporti**
-
-         * Vengono visualizzati tutti i modelli disponibili.
-
+      * Vengono visualizzati tutti i modelli disponibili.
    Dopo la selezione, utilizzate **Avanti** per proseguire.
 
    ![base frammento](assets/cfm-managing-01.png)
@@ -128,7 +122,6 @@ Per aprire il frammento per la modifica:
 
    * Toccando o facendo clic sul collegamento del frammento o del frammento (a seconda della vista della console).
    * Selezionare il frammento, quindi **Modifica** dalla barra degli strumenti.
-
    Viene aperto l’editor frammento:
 
    ![editor di frammenti](assets/cfm-managing-03.png)
@@ -150,7 +143,6 @@ Per aprire il frammento per la modifica:
    * [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenuto associato](#associating-content-with-your-fragment)
    * [Metadati](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-
    ![modalità](assets/cfm-managing-04.png)
 
 4. Dopo aver apportato le modifiche, usate **Salva** o **Annulla** come necessario.
