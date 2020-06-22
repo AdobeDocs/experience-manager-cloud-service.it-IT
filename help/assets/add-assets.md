@@ -1,30 +1,30 @@
 ---
-title: Aggiungere le risorse digitali ad Adobe Experience Manager
-description: Aggiungere le risorse digitali ad Adobe Experience Manager come servizio Cloud
+title: Aggiungere le risorse digitali a  Adobe Experience Manager
+description: Aggiungere le risorse digitali al Adobe Experience Manager  come Cloud Service
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 3%
+source-wordcount: '1358'
+ht-degree: 2%
 
 ---
 
 
-# Aggiunta di risorse digitali ad Adobe Experience Manager {#add-assets-to-experience-manager}
+# Aggiungere risorse digitali al Adobe Experience Manager  {#add-assets-to-experience-manager}
 
-Adobe Experience Manager arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, smart tag, rappresentazioni e altri servizi di gestione delle risorse digitali (DAM). Potete caricare vari tipi di file, come immagini, documenti e file immagine non elaborati, dalla cartella locale o da un’unità di rete a Experience Manager Assets.
+ Adobe Experience Manager arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, smart tag, rappresentazioni e altri servizi DAM (Digital Asset Management). Potete caricare vari tipi di file, come immagini, documenti e file immagine non elaborati, dalla cartella locale o da un’unità di rete a  Experience Manager Assets.
 
-Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all’archivio di Experience Manager, inclusi client desktop, come Adobe Asset Link o l’app desktop Experience Manager, script di caricamento e caricamento che i clienti potrebbero creare e integrazioni di assimilazione automatizzate aggiunte come estensioni AEM.
+Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all&#39;archivio Experience Manager , inclusi client desktop, come Adobe Asset Link o  app desktop Experience Manager, script di caricamento e caricamento che i clienti potrebbero creare e integrazioni di assimilazione automatizzate aggiunte come estensioni AEM.
 
-Qui ci concentreremo sui metodi di caricamento per gli utenti finali e forniremo collegamenti agli articoli che descrivono gli aspetti tecnici del caricamento e dell’assimilazione delle risorse mediante le API e gli SDK di Experience Manager.
+Qui ci concentreremo sui metodi di caricamento per gli utenti finali e forniremo collegamenti agli articoli che descrivono gli aspetti tecnici del caricamento e dell’assimilazione delle risorse tramite  API e SDK Experience Manager.
 
-Sebbene sia possibile caricare e gestire qualsiasi file binario in Experience Manager, i formati file più comunemente utilizzati supportano servizi aggiuntivi, come l&#39;estrazione di metadati o la generazione di anteprime/rappresentazioni. Per informazioni dettagliate, fare riferimento ai formati [di file](file-format-support.md) supportati.
+Sebbene sia possibile caricare e gestire qualsiasi file binario in  Experience Manager, i formati file più comunemente utilizzati supportano servizi aggiuntivi, come l&#39;estrazione di metadati o la generazione di anteprime/rappresentazioni. Per informazioni dettagliate, fare riferimento ai formati [di file](file-format-support.md) supportati.
 
 Potete anche scegliere di effettuare un’ulteriore elaborazione sulle risorse caricate. Potete configurare diversi profili di elaborazione delle risorse nella cartella in cui vengono caricate le risorse per aggiungere metadati, rappresentazioni o servizi di elaborazione delle immagini specifici. Per ulteriori informazioni, consulta [Ulteriore elaborazione](#additional-processing) .
 
 >[!NOTE]
 >
-> Experience Manager come servizio cloud sfrutta un nuovo metodo di caricamento delle risorse - caricamento binario diretto. È supportato per impostazione predefinita dalle funzionalità e dai client di prodotto standard, come l’interfaccia utente di AEM, Adobe Asset Link, l’app desktop AEM, e quindi trasparente per gli utenti finali.
+>  Experience Manager come Cloud Service sfrutta un nuovo metodo di caricamento delle risorse: caricamento binario diretto. È supportato per impostazione predefinita dalle funzionalità e dai client di prodotto standard, come l’interfaccia utente di AEM, Adobe Asset Link, l’app desktop AEM, e quindi trasparente per gli utenti finali.
 >
 > Il codice di caricamento personalizzato o esteso dai team tecnici dei clienti deve usare le nuove API e i nuovi protocolli di caricamento.
 
@@ -37,7 +37,6 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli nell
 
    * Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Crea]** . Quindi, dal menu, toccate **[!UICONTROL File]**. Se necessario, potete rinominare il file nella finestra di dialogo visualizzata.
    * In un browser che supporta HTML5, trascinate le risorse direttamente sull’interfaccia utente di Risorse. La finestra di dialogo per rinominare il file non viene visualizzata.
-
    ![create_menu](assets/create_menu.png)
 
    Per selezionare più file, premete il tasto Ctrl o Comando e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
@@ -59,9 +58,9 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli nell
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. Per annullare un caricamento in corso, fate clic su Chiudi (`X`) accanto alla barra di avanzamento. Quando annullate l’operazione di caricamento, Risorse AEM elimina la parte parzialmente caricata della risorsa.
+1. Per annullare un caricamento in corso, fate clic su Chiudi (`X`) accanto alla barra di avanzamento. Quando annullate l’operazione di caricamento, i AEM Assets eliminano la parte parzialmente caricata della risorsa.
 
-   Se annulli l’operazione di caricamento prima del caricamento dei file, Risorse AEM interrompe il caricamento del file corrente e aggiorna il contenuto. Tuttavia, i file già caricati non vengono eliminati.
+   Se annullate l’operazione di caricamento prima del caricamento dei file, i AEM Assets interrompono il caricamento del file corrente e aggiornano il contenuto. Tuttavia, i file già caricati non vengono eliminati.
 
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -75,7 +74,7 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli nell
 -->
 
 
-1. La finestra di dialogo di avanzamento del caricamento in Risorse AEM mostra il numero di file caricati correttamente e i file che non sono stati caricati correttamente.
+1. Nella finestra di dialogo di avanzamento del caricamento, in AEM Assets, viene visualizzato il numero di file caricati correttamente e i file che non sono stati caricati correttamente.
 
 Inoltre, l’interfaccia utente di Risorse mostra la risorsa più recente caricata o la cartella creata per la prima volta.
 
@@ -112,13 +111,13 @@ Potete scegliere di sostituire una risorsa esistente, crearne un’altra o tener
 >
 >Quando selezionate **[!UICONTROL Sostituisci]** nella finestra di dialogo Conflitto  nome, l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
 >
->Se Asset Insights è abilitato per tenere traccia di impression/clic con Adobe Analytics, l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa in Analytics.
+>Se Asset Insights è abilitato per tenere traccia di impression/clic con Adobe  Analytics, l’ID risorsa rigenerata invalida i dati acquisiti per la risorsa su  Analytics.
 
-Per mantenere la risorsa duplicata in Risorse AEM, tocca o fai clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, toccate o fate clic su **[!UICONTROL Elimina]**.
+Per mantenere la risorsa duplicata in AEM Assets, toccate o fate clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, toccate o fate clic su **[!UICONTROL Elimina]**.
 
 ### Gestione dei nomi dei file e caratteri non consentiti {#filename-handling}
 
-Risorse AEM impedisce il caricamento di risorse con i caratteri proibiti nei loro nomi file. Se provate a caricare una risorsa con un nome file contenente un carattere non consentito o più, Risorse AEM visualizza un messaggio di avviso e interrompe il caricamento fino a quando non rimuovete questi caratteri o lo caricate con un nome consentito.
+I AEM Assets non consentono di caricare le risorse con i caratteri proibiti nei loro nomi file. Se provate a caricare una risorsa con un nome file contenente un carattere non consentito o più, i AEM Assets visualizzano un messaggio di avviso e interrompono il caricamento fino a quando non rimuovete questi caratteri o lo caricate con un nome consentito.
 
 Per soddisfare convenzioni di denominazione dei file specifiche per la vostra organizzazione, la finestra di dialogo [!UICONTROL Carica risorse] consente di specificare nomi lunghi per i file caricati.
 
@@ -132,18 +131,18 @@ Tuttavia, i seguenti caratteri (elenco separato da spazi) non sono supportati:
 Per caricare un numero maggiore di file, in particolare se esistono in una gerarchia di cartelle nidificata su disco, è possibile utilizzare i seguenti approcci:
 
 * Utilizzate uno script o uno strumento di caricamento personalizzato che sfrutta le API [di caricamento delle](developer-reference-material-apis.md#asset-upload-technical)risorse. Questo strumento personalizzato può aggiungere ulteriore gestione delle risorse (ad esempio, tradurre i metadati o rinominare i file), se necessario.
-* Utilizzate l&#39;app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) Experience Manager per caricare gerarchie di cartelle nidificate.
+* Utilizzate [app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) desktop Experience Manager per caricare gerarchie di cartelle nidificate.
 
 >[!NOTE]
 >
-> Il caricamento in blocco come parte della migrazione dei contenuti da altri sistemi quando si configura e si distribuisce in Experience Manager richiede un’attenta pianificazione, considerazione e scelta degli strumenti. Consultate la guida [alla](/help/implementing/deploying/overview.md) distribuzione per informazioni sugli approcci per la migrazione dei contenuti.
+> Il caricamento in blocco come parte della migrazione dei contenuti da altri sistemi quando la configurazione e la distribuzione  Experience Manager richiedono un’attenta pianificazione, considerazione e scelta degli strumenti. Consultate la guida [alla](/help/implementing/deploying/overview.md) distribuzione per informazioni sugli approcci per la migrazione dei contenuti.
 
 ## Caricare le risorse mediante client desktop {#upload-assets-desktop-clients}
 
-Oltre all&#39;interfaccia utente del browser Web, Experience Manager supporta altri client sul desktop. Offrono inoltre un’esperienza di caricamento senza dover passare al browser Web.
+Oltre all&#39;interfaccia utente del browser Web,  Experience Manager supporta altri client sul desktop. Offrono inoltre un’esperienza di caricamento senza dover passare al browser Web.
 
 * [Collegamento](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) risorse Adobe consente di accedere alle risorse da AEM nelle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Puoi caricare il documento aperto in AEM direttamente dall’interfaccia utente di Adobe Asset Link dall’interno di queste applicazioni desktop.
-* [L’app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) desktop Experience Manager semplifica l’utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall’applicazione nativa che le gestisce. È particolarmente utile caricare i file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file semplici.
+* [&#39;app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) desktop Experience Manager semplifica l&#39;utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall&#39;applicazione nativa che le gestisce. È particolarmente utile caricare i file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file semplici.
 
 ## Elaborazione aggiuntiva {#additional-processing}
 
@@ -156,14 +155,14 @@ Sono disponibili i seguenti profili:
 * [I profili](metadata-profiles.md) di metadati consentono di applicare proprietà di metadati predefinite alle risorse caricate in tale cartella
 * [I profili](asset-microservices-configure-and-use.md#processing-profiles) di elaborazione consentono di applicare l&#39;elaborazione delle rappresentazioni e di generare rappresentazioni oltre a quelle predefinite
 
-Inoltre, se nell’ambiente in uso è attivato l’elemento multimediale dinamico:
+Inoltre, se Dynamic Media è abilitato nell’ambiente in uso:
 
-* [I profili immagine](dynamic-media/image-profiles.md) ti consentono di applicare alle risorse caricate specifiche configurazioni di nitidezza e di ritaglio (**[!UICONTROL ritaglio avanzato]** e ritaglio pixel)
-* [I profili](dynamic-media/video-profiles.md) video consentono di applicare specifici profili di codifica video (risoluzione, formato, parametri)
+* [I profili](dynamic-media/image-profiles.md) immagine di Dynamic Media consentono di applicare alle risorse caricate specifiche configurazioni di ritaglio (ritaglio **** avanzato e ritaglio pixel) e nitidezza.
+* [I profili](dynamic-media/video-profiles.md) video Dynamic Media consentono di applicare specifici profili di codifica video (risoluzione, formato, parametri).
 
 >[!NOTE]
 >
-> Il ritaglio di elementi multimediali dinamici e altre operazioni sulle risorse non sono distruttive, ovvero non modificano l’originale caricato, ma forniscono parametri per il ritaglio o la trasformazione di elementi multimediali da eseguire durante la distribuzione delle risorse
+> Il ritaglio Dynamic Media e altre operazioni sulle risorse non sono distruttive, ovvero non modificano l’originale caricato, ma forniscono parametri per il ritaglio o la trasformazione del supporto da eseguire durante la distribuzione delle risorse
 
 Per le cartelle a cui è assegnato un profilo di elaborazione, il nome del profilo viene visualizzato sulla miniatura nella vista a schede. Nella vista a elenco, il nome del profilo viene visualizzato nella colonna Profilo **[!UICONTROL di]** elaborazione.
 
