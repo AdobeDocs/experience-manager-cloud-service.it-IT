@@ -2,10 +2,10 @@
 title: Varianti - Authoring dei contenuti di frammenti
 description: Le varianti consentono di creare il contenuto per il frammento e quindi di crearne le varianti in base allo scopo (se necessario).
 translation-type: tm+mt
-source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 19%
+source-wordcount: '1686'
+ht-degree: 20%
 
 ---
 
@@ -50,12 +50,6 @@ Quando si apre il frammento di contenuto per la modifica, per impostazione prede
    * accedere a una serie di [azioni](#actions)
 
 Ad esempio:
-
-* Modifica di un frammento semplice
-
-   Un frammento semplice è composto da un campo di testo a più righe (è possibile aggiungere risorse visive dall’editor a schermo intero).
-
-   ![frammento semplice](assets/cfm-variations-01.png)
 
 * Modifica di un frammento con contenuto strutturato
 
@@ -210,7 +204,6 @@ Altre lingue sono disponibili come pacchetti di modelli di lingua da Package Sha
    * Tutte le frasi da eliminare sono evidenziate in rosso, con lo sciopero.
    * Fate clic su una frase evidenziata per mantenerla nel contenuto riepilogato.
    * Fate clic su una frase non evidenziata per eliminarla.
-
    ![confronto riepilogativo](assets/cfm-variations-06.png)
 
 6. Selezionate **Riepiloga** per confermare le modifiche.
@@ -268,7 +261,6 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 
    * passa alla risorsa richiesta in DAM
    * cercare la risorsa in DAM
-
    Una volta individuata la risorsa desiderata, selezionatela facendo clic sulla miniatura.
 
 4. Utilizza **Seleziona** per aggiungere la risorsa al sistema paragrafo del frammento di contenuto nella posizione corrente.
@@ -357,7 +349,6 @@ Il trasferimento delle modifiche *da una variante a **Master ***non è disponibi
    * verde indica il contenuto aggiunto (alla variante)
    * il rosso indica che il contenuto è stato rimosso (dalla variante)
    * blu indica il testo sostituito
-
    ![sincronizzazione con master](assets/cfm-variations-11.png)
 
 1. Selezionate **Sincronizza**. La variante verrà aggiornata e visualizzata.
