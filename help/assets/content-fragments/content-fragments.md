@@ -1,10 +1,10 @@
 ---
 title: Utilizzo di frammenti di contenuto
-description: Scopri come i frammenti di contenuto in Adobe Experience Manager (AEM) come servizio cloud consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
+description: Scopri come i frammenti di contenuto in  Adobe Experience Manager (AEM) come Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: aefa7d6493ade255e06eaaa7676f8e018f311994
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1804'
 ht-degree: 7%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 7%
 # Utilizzo di frammenti di contenuto{#working-with-content-fragments}
 
 With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Consentono di preparare i contenuti pronti per l’uso in più posizioni/su più canali.
+
+I frammenti di contenuto contengono contenuto strutturato:
+
+* Si basano su un modello [di frammento di](/help/assets/content-fragments/content-fragments-models.md)contenuto, che predefinito una struttura per il frammento risultante.
 
 I frammenti di contenuto possono essere consegnati anche in formato JSON, utilizzando le funzionalità di esportazione JSON (Sling Model) dei componenti core di AEM. Questo modulo di consegna:
 
@@ -59,7 +63,7 @@ Forniscono contenuti ai canali che non sono pagine Web AEM tradizionali, utilizz
 * Applicazioni mobili native
 * altri canali e punti di contatto esterni ad AEM
 
-La consegna è realizzata in formato JSON.
+La consegna viene effettuata in formato JSON utilizzando JSON Exporter.
 
 I frammenti di contenuto AEM possono essere utilizzati per descrivere e gestire il contenuto strutturato. Il contenuto strutturato è definito in modelli che possono contenere diversi tipi di contenuto; tra cui testo, dati numerici, booleani, data e ora e altro.
 
@@ -77,12 +81,6 @@ I frammenti esperienza possono includere contenuti sotto forma di frammenti di c
 >
 >Per ulteriori informazioni, consultate anche [Informazioni sui frammenti di contenuto e i frammenti esperienza in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
->[!CAUTION]
->
->I frammenti di contenuto non sono disponibili nell’interfaccia classica.
->
->Il componente Frammento di contenuto è visibile nella barra laterale dell’interfaccia classica, ma non sono disponibili ulteriori funzionalità.
-
 >[!NOTE]
 >
 >AEM supporta anche la traduzione del contenuto del frammento. Per ulteriori informazioni, consulta Creazione di progetti di traduzione per i frammenti di contenuto.
@@ -92,24 +90,6 @@ I frammenti esperienza possono includere contenuti sotto forma di frammenti di c
 >
 >AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
 -->
-
-## Tipi di frammento di contenuto {#types-of-content-fragment}
-
-I frammenti di contenuto possono essere:
-
-* Frammenti semplici
-
-   * Non hanno una struttura predefinita.
-
-   * Contengono solo testo e immagini.
-
-   * Si basano sul modello frammento **** semplice.
-
-* Frammenti contenenti contenuto strutturato
-
-   * Questi si basano su un modello [di frammento di](/help/assets/content-fragments/content-fragments-models.md)contenuto, che predefinito una struttura per il frammento risultante.
-
-   * Questi possono essere utilizzati anche per realizzare Content Services utilizzando JSON Exporter.
 
 ## Tipo di contenuto {#content-type}
 
@@ -170,18 +150,14 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
 * **Elementi frammento**
 
    * Gli elementi sono correlati ai campi di dati che contengono contenuto.
-   * Per i frammenti con contenuto strutturato, è necessario utilizzare un modello di contenuto per creare il frammento di contenuto. Gli elementi (campi) specificati nel modello definiscono la struttura del frammento. Questi elementi (campi) possono essere di diversi tipi di dati.
-   * Per frammenti semplici:
-
-      * Il contenuto è contenuto in uno o più campi di testo a più righe, o elementi.
-      * Gli elementi sono definiti nel modello **Frammento** semplice.
+   * È possibile utilizzare un modello di contenuto per creare il frammento di contenuto. Gli elementi (campi) specificati nel modello definiscono la struttura del frammento. Questi elementi (campi) possono essere di diversi tipi di dati.
 
 * **Paragrafi frammento**
 
    * Blocchi di testo, ovvero:
 
       * separati da spazi verticali (ritorno a capo)
-      * in elementi di testo con più righe; in frammenti semplici o strutturati
+      * in elementi di testo con più righe
    * Nelle modalità [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) e [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), un paragrafo può essere formattato come intestazione, in tal caso appartiene a un’unica unità insieme al paragrafo seguente.
 
    * Attiva il controllo del contenuto durante l’authoring delle pagine.
@@ -275,11 +251,6 @@ Per creare, modificare e utilizzare i frammenti di contenuto è inoltre necessar
    * Definisce la struttura di un frammento (titolo, elementi di contenuto, definizioni di tag).
    * Le definizioni dei modelli di contenuto richiedono un titolo e un elemento dati; tutto il resto è facoltativo. Il modello definisce un ambito minimo del frammento e, se applicabile, il contenuto predefinito. Gli autori non possono modificare la struttura definita durante la creazione del contenuto del frammento.
 
-* **Modello frammento**
-
-   * Per **creare un frammento** semplice è necessario utilizzare il modello frammento [](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)semplice.
-   * Definisce le proprietà di base di un frammento semplice (titolo, numero di elementi di testo, definizioni di tag).
-
 * **Componente frammento di contenuto**
 
    * Strumenti per la distribuzione del frammento in formato HTML e/o JSON.
@@ -294,6 +265,6 @@ Un frammento, con i relativi elementi e varianti, può essere utilizzato per cre
 
 ### Esempio WKND {#wknd-sample}
 
-Gli esempi [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) sono forniti per aiutarti a conoscere AEM come servizio cloud. Include frammenti di esempio, che possono essere visualizzati in:
+Gli esempi del sito [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKND sono utili per imparare a usare AEM come Cloud Service. Include frammenti di esempio, che possono essere visualizzati in:
 
 `hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
