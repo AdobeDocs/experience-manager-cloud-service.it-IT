@@ -2,10 +2,10 @@
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redarre e utilizzare contenuti indipendenti dalla pagina.
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 100%
+source-wordcount: '1127'
+ht-degree: 98%
 
 ---
 
@@ -72,8 +72,8 @@ I frammenti di contenuto si prestano alle seguenti applicazioni:
    >
    >Per informazioni su ulteriori funzionalità di modifica, vedi anche:
    >
-   >    * [Layout dinamico](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Layout dinamico](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Selezione dell’elemento o della variante {#selecting-the-element-or-variation}
@@ -88,8 +88,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
    * **Elemento di testo singolo**
    * **Più elementi**
 * **Elemento**
-   * L’elemento predefinito **Principale** è sempre disponibile.
-   * Una selezione è disponibile se il frammento è stato creato con un modello appropriato. 
+   * Una selezione sarà disponibile a seconda del modello utilizzato.
 
    >[!NOTE]
    >
@@ -98,11 +97,10 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 * **Variazione**
    * Il **Master** predefinito sarà sempre disponibile.
    * Una selezione è disponibile se per il frammento sono state create delle varianti.
-* **Paragrafi**: specifica l’intervallo di paragrafi da includere:
-   * **Tutti**
-   * **Intervallo**: ad esempio, `1`, `3-5`, `9-*`
-      * **Tratta le intestazioni come paragrafi propri**
-* **Tratta le intestazioni come paragrafi propri**
+
+* **ID**
+
+   * **Attributo ID HTML da applicare al componente.**
 
 ### Collegamento rapido all’Editor frammento di contenuto  {#quick-connection-to-fragment-editor}
 
