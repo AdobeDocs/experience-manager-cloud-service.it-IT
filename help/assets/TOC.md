@@ -2,10 +2,10 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 99%
+source-wordcount: '406'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 99%
 + Configurare, amministrare ed estendere Assets {#admin}
    + [API e materiale di riferimento](developer-reference-material-apis.md)
    + [Schema metadati per cartelle](folder-metadata-schema.md)
-   + [Profili di elaborazione](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [Informazioni sull’utilizzo dei profili immagine e video](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [Configurare i tag avanzati](smart-tags-configuration.md)
    + [Risorse multilingue e traduzione delle risorse](translate-assets.md)
    + [Facet di ricerca](search-facets.md)
@@ -82,8 +82,8 @@ ht-degree: 99%
    + [Applicazione dei predefiniti per i visualizzatori Dynamic Media](dynamic-media/viewer-presets.md)
    + [Gestione dei predefiniti per le immagini Dynamic Media](dynamic-media/managing-image-presets.md)
    + [Applicazione dei predefiniti per le immagini Dynamic Media](dynamic-media/image-presets.md)
-   + [Profili video di Dynamic Media](dynamic-media/video-profiles.md)
-   + [Profili immagine di Dynamic Media](dynamic-media/image-profiles.md)
+   + [Profili immagine](dynamic-media/image-profiles.md)
+   + [Profili video](dynamic-media/video-profiles.md)
    + [Imaging avanzato](dynamic-media/imaging-faq.md)
    + [Distribuzione di risorse Dynamic Media](dynamic-media/delivering-dynamic-media-assets.md)
    + [Attivazione della protezione hotlinking in Dynamic Media](dynamic-media/hotlink-protection.md)
