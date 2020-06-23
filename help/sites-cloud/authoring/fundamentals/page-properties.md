@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1538'
+ht-degree: 99%
 
 ---
 
@@ -39,6 +39,10 @@ Le proprietà sono distribuite su più schede.
 * **Nascondi in navigazione**
 
    * Indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito finale.
+
+* **ID HTML**
+
+   * ID HTML da applicare al componente.
 
 * **Titolo pagina**
 
@@ -98,6 +102,10 @@ Le proprietà sono distribuite su più schede.
 
    * Indica la pagina a cui deve essere automaticamente reindirizzata la pagina corrente.
 
+* **Progettazione**
+
+   * Indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito finale.
+
 * **Alias**
 
    * Specifica un alias da utilizzare per la pagina.
@@ -113,9 +121,11 @@ Le proprietà sono distribuite su più schede.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Ereditato da &lt;*percorso*>**
+<!--
+* **Inherited from &lt;*path*&gt;**
 
-   * Indica se la pagina viene ereditata e da dove.
+  * Indicates whether the page is inherited. and where from.
+-->
 
 * **Configurazione cloud**
 
@@ -173,7 +183,7 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Services**
+* **Configurazioni Cloud Service**
 
    * Consente di definire le proprietà per Cloud Services.
 
