@@ -1,10 +1,10 @@
 ---
 title: Utilizzo dei set di regole per trasformare gli URL
-description: Potete implementare i set di regole in Contenuti multimediali dinamici per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
+description: Potete implementare i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '797'
 ht-degree: 5%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Utilizzo di set di regole per trasformare gli URL {#using-rulesets-to-transform-urls}
 
-Potete implementare i set di regole in Contenuti multimediali dinamici per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni. Ogni regola è costituita da almeno una condizione e almeno un&#39;azione. Una regola valuta i dati XML in base alle condizioni e, se una condizione è soddisfatta, esegue l&#39;azione appropriata. Esempi di set di regole:
+Potete implementare i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni. Ogni regola è costituita da almeno una condizione e almeno un&#39;azione. Una regola valuta i dati XML in base alle condizioni e, se una condizione è soddisfatta, esegue l&#39;azione appropriata. Esempi di set di regole:
 
 * Aggiunta di un suffisso di tipo MIME. Molti servizi e siti Web richiedono suffissi per immagini, ad esempio l’aggiunta `.jpg` a un URL.
 * Creazione di un percorso di cartella per l’URL per scopi SEO (Search Engine Optimization).
@@ -30,14 +30,14 @@ Potete implementare i set di regole in Contenuti multimediali dinamici per trasf
 
    Consultate [Rimozione di caratteri speciali dagli URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-Nel contesto dei file multimediali dinamici, i siti Web che utilizzano un sistema basato su XML per gestire le informazioni sulle risorse possono caricare file XML in contenuti multimediali dinamici. Potete designare uno di questi file come file del set di regole di pre-elaborazione per la trasmissione della risorsa multimediale dinamica. Questo file ristruttura il formato standard del protocollo URL per soddisfare la logica aziendale dei sistemi integrati con Dynamic Media. È possibile specificare un file XML da utilizzare come percorso del file di definizioni del set di regole.
+Nel contesto di Dynamic Media, i siti Web che utilizzano un sistema basato su XML per gestire le informazioni sulle risorse possono caricare file XML in Dynamic Media. Potete designare uno di questi file come file del set di regole di pre-elaborazione per distribuire la risorsa Dynamic Media. Questo file ristruttura il formato standard del protocollo URL per soddisfare la logica aziendale dei sistemi integrati con Dynamic Media. È possibile specificare un file XML da utilizzare come percorso del file di definizioni del set di regole.
 
 >[!CAUTION]
 >
->Prestare attenzione quando si utilizzano i set di regole; possono impedire la visualizzazione di contenuti multimediali dinamici sul sito Web.
+>Prestare attenzione quando si utilizzano i set di regole; possono impedire la visualizzazione del contenuto Dynamic Media sul sito Web.
 
 Sono disponibili set di regole di esempio che possono facilitare la creazione di un set di regole personalizzato.
-Consultate Riferimento [set di](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/c_rule_set_reference.html)regole.
+Consultate Riferimento [set di](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)regole.
 
 Come per la creazione di tutti i set di regole, accertatevi che il file XML sia valido prima di caricarlo, utilizzando un programma di convalida XML come xmlvalid.
 Vedere anche [Risoluzione dei problemi relativi ai set](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)di regole.
@@ -76,7 +76,7 @@ Consultate anche [Utilizzo dell&#39;immagine &#39;asset&#39; invece di &#39;is&#
 1. In the lower-right corner of the Setup page, click **[!UICONTROL Close]**.
 1. Eseguire un processo di pubblicazione su Image Server.
 
-   Le condizioni del set di regole vengono applicate alle richieste inviate ai server immagini per file multimediali dinamici dinamici in tempo reale.
+   Le condizioni del set di regole vengono applicate alle richieste inviate ai server immagini Dynamic Media dinamici.
 
    Se apportate modifiche al file del set di regole, le modifiche vengono applicate immediatamente quando caricate nuovamente e pubblicate nuovamente il file del set di regole aggiornato.
 
