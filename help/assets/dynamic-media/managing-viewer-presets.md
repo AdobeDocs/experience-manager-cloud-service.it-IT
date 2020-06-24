@@ -2,10 +2,10 @@
 title: Gestione dei predefiniti per visualizzatori
 description: Come creare e gestire i predefiniti per visualizzatori
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '4284'
-ht-degree: 19%
+source-wordcount: '4263'
+ht-degree: 18%
 
 ---
 
@@ -60,7 +60,7 @@ Per ulteriori informazioni su come incorporare visualizzatori reattivi nelle pag
 
 ### Compatibilità del sistema dei predefiniti per visualizzatori  {#viewer-preset-system-compatibility}
 
-Tutti i predefiniti per visualizzatori forniti con gli elementi multimediali dinamici sono completamente compatibili con i seguenti sistemi:
+Tutti i predefiniti per visualizzatori forniti con Dynamic Media sono completamente compatibili con i seguenti sistemi:
 
 * Desktop
 * Apple iPhone
@@ -148,9 +148,9 @@ Gli amministratori possono aggiungere e personalizzare i seguenti tipi di conten
 
 ### Elenco di predefiniti per visualizzatori forniti con Scene7 {#list-of-out-of-the-box-viewer-presets}
 
-La tabella seguente identifica tutti i predefiniti per visualizzatori predefiniti forniti con gli elementi multimediali dinamici.
+La tabella seguente identifica tutti i predefiniti per visualizzatori predefiniti forniti con Dynamic Media.
 
-Consulta anche la sezione [Esempi della libreria di riferimento visualizzatori](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) e [Demo Live](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+Consulta anche <!-- KEEP REFERENCE [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 Per informazioni sui browser Web e sulle versioni del sistema operativo supportati per i visualizzatori, consultate le Note sulla versione dei visualizzatori.
 
@@ -158,7 +158,7 @@ Consultate &quot;Note sulla versione dei visualizzatori&quot; nel sommario della
 
 >[!NOTE]
 >
->Tutti i predefiniti per visualizzatori inclusi in Contenuti multimediali dinamici sono già attivati (attivato), ma è necessario pubblicarli.
+>Tutti i predefiniti per visualizzatori integrati in Dynamic Media sono già attivati (attivato), ma è necessario pubblicarli.
 >See [Publishing Viewer Presets](#publishing-viewer-presets).
 >
 >Eventuali nuovi predefiniti per visualizzatori creati e aggiunti devono essere attivati *e *pubblicati.
@@ -387,9 +387,9 @@ AEM mostra un’ampia varietà di predefiniti per visualizzatori quando visualiz
 
 ## Creazione di un predefinito per visualizzatori {#creating-a-new-viewer-preset}
 
-La creazione di predefiniti per visualizzatori consente di applicare diverse impostazioni per visualizzare e interagire con le risorse. Tuttavia, non è necessario creare nuovi predefiniti per visualizzatori. Se preferite, potete utilizzare i predefiniti per visualizzatori predefiniti forniti con Risorse AEM.
+La creazione di predefiniti per visualizzatori consente di applicare diverse impostazioni per visualizzare e interagire con le risorse. Tuttavia, non è necessario creare nuovi predefiniti per visualizzatori. Se preferite, potete usare i predefiniti per visualizzatori predefiniti forniti già con AEM Assets.
 
-Se scegliete di creare un nuovo predefinito per visualizzatori, dopo averlo salvato, lo stato del visualizzatore viene attivato automaticamente (impostato su **[!UICONTROL attivato]**) nella pagina Predefiniti visualizzatore. Questo stato significa che è visibile nel componente Contenuti multimediali dinamici e nel componente Contenuti multimediali interattivi e ogni volta che visualizzate l’anteprima di un’immagine o di un video.
+Se scegliete di creare un nuovo predefinito per visualizzatori, dopo averlo salvato, lo stato del visualizzatore viene attivato automaticamente (impostato su **[!UICONTROL attivato]**) nella pagina Predefiniti visualizzatore. Questo stato significa che è visibile nel componente Dynamic Media e nel componente Supporto interattivo e ogni volta che visualizzate l’anteprima di un’immagine o di un video.
 
 Alcuni predefiniti per visualizzatori dispongono di impostazioni esclusive che possono influenzare l’utilizzo e il comportamento generale del visualizzatore. A seconda del predefinito per visualizzatori che state creando, potete essere consapevoli di queste considerazioni speciali.
 
@@ -419,13 +419,13 @@ Consultate Considerazioni [speciali per la creazione di un predefinito](#special
 
       L&#39;editor visivo consente di visualizzare l&#39;effetto di una determinata proprietà su uno stile. È sufficiente impostare o regolare una qualsiasi proprietà per vedere immediatamente quale effetto ha sul visualizzatore utilizzando l’esempio a sinistra dell’editor.
 
-      Le proprietà di stile CSS per ciascun tipo di predefinito per visualizzatori sono descritte nell’argomento della guida &quot;Personalizzazione del *`<viewer name>`* visualizzatore&quot; nella guida [di riferimento dei](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/)visualizzatori. Ad esempio, se state creando un predefinito per visualizzatori di tipo `Mixed_Media`, consultate [Personalizzazione del visualizzatore](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) di file multimediali diversi per un elenco e una descrizione di ciascuna proprietà.
+      Le proprietà di stile CSS per ciascun tipo di predefinito per visualizzatori sono descritte nell’argomento della guida &quot;Personalizzazione del *`<viewer name>`* visualizzatore&quot; nella guida [di riferimento dei](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)visualizzatori. Ad esempio, se state creando un predefinito per visualizzatori di tipo `Mixed_Media`, consultate [Personalizzazione del visualizzatore](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) di file multimediali diversi per un elenco e una descrizione di ciascuna proprietà.
 
    * Se hai definito le impostazioni stile in un file CSS separato, puoi caricarlo in AEM Assets. Tap **[!UICONTROL Import CSS]** below the **[!UICONTROL Selected Type]** pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.
 
       Quando importate un file CSS, l&#39;editor visivo verifica se il CSS utilizza i marcatori visualizzatore corretti. Ad esempio, se create un visualizzatore zoom, tutte le regole CSS importate devono essere definite utilizzando il nome della classe del visualizzatore `.s7mixedmediaviewer` definito su un elemento visualizzatore principale.
 
-      Potete importare CSS arbitrario, a mano, purché definisca correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in qualsiasi argomento della guida &quot;Personalizzazione *&lt;nome visualizzatore>* visualizzatore&quot; nella Guida di riferimento dei [visualizzatori](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/). Ad esempio, per informazioni sui marcatori CSS per il visualizzatore zoom, consultate [Personalizzazione del visualizzatore](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)zoom. È tuttavia possibile che l&#39;editor visivo non comprenda alcuni valori CSS. In tali casi, l&#39;editor visivo tenta di ignorare gli errori in modo che il CSS possa funzionare comunque.
+      Potete importare CSS arbitrario, a mano, purché definisca correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in qualsiasi argomento della guida &quot;Personalizzazione *&lt;nome visualizzatore>* visualizzatore&quot; nella Guida di riferimento dei [visualizzatori](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html). Ad esempio, per informazioni sui marcatori CSS per il visualizzatore zoom, consultate [Personalizzazione del visualizzatore](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)zoom. È tuttavia possibile che l&#39;editor visivo non comprenda alcuni valori CSS. In tali casi, l&#39;editor visivo tenta di ignorare gli errori in modo che il CSS possa funzionare comunque.
    >[!NOTE]
    >
    >Se preferisci modificare il CSS direttamente nel relativo modulo non elaborato, tocca **[!UICONTROL Mostra/Nascondi CSS]** nel menu a discesa Tipo selezionato (potrebbe essere necessario scorrere l’editor visivo per visualizzare l’opzione).
@@ -441,7 +441,7 @@ Consultate Considerazioni [speciali per la creazione di un predefinito](#special
 
    A molti componenti nell’editor visivo è associata una descrizione dettagliata. Queste descrizioni vengono visualizzate all’interno di caselle blu quando si espande un componente per visualizzarne i parametri associati.
 
-   Alcuni tipi di Visualizzatore dispongono di componenti che consentono di specificare i comandi Image Server in un campo di testo **[!UICONTROL Comando IS]**. Per un elenco dei comandi utilizzabili, consulta la sezione [Riferimento API di Server immagini](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/image_serving_api_ref.html).
+   Alcuni tipi di Visualizzatore dispongono di componenti che consentono di specificare i comandi Image Server in un campo di testo **[!UICONTROL Comando IS]**. Per un elenco dei comandi utilizzabili, consulta la sezione [Riferimento API di Server immagini](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html).
 
    >[!NOTE]
    >
@@ -530,7 +530,7 @@ I predefiniti per visualizzatori disponibili nell’interfaccia utente dipendono
 
 ## Pubblicazione dei predefiniti per visualizzatori {#publishing-viewer-presets}
 
-Attivando (o attivando &quot;Attivato&quot;) lo stato di un predefinito per visualizzatori significa che è visibile nel componente Contenuti multimediali dinamici, nel componente Contenuti multimediali interattivi e ogni volta che visualizzate una risorsa.
+Attivando (o attivando &quot;Attivato&quot;) lo stato di un predefinito per visualizzatori significa che è visibile nel componente Dynamic Media, nel componente Supporto interattivo e ogni volta che visualizzate una risorsa.
 
 Tuttavia, per fornire* *una risorsa con un predefinito visualizzatore, è necessario pubblicare anche esso. Per ottenere l’URL o il codice da incorporare per una risorsa, tutti i predefiniti visualizzatore devono essere attivati *e* pubblicati. Devi attivare e pubblicare tutti i predefiniti visualizzatore che sono forniti con i Dynamic Media. I predefiniti visualizzatore personalizzati che crei e aggiungi vengono attivati automaticamente, ma devono anche essere pubblicati.
 
@@ -569,7 +569,7 @@ Tenete presente che la modifica di eventuali predefiniti per visualizzatori *pre
 
 ## Eliminazione di predefiniti per visualizzatori personalizzati {#deleting-custom-viewer-presets}
 
-Potete eliminare i predefiniti per visualizzatori creati e aggiunti agli elementi multimediali dinamici.
+Potete eliminare i predefiniti per visualizzatori creati e aggiunti ad Dynamic Media.
 
 **Per eliminare i predefiniti per visualizzatori personalizzati**
 
