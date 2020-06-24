@@ -2,10 +2,10 @@
 title: Creazione di contenuti di destinazione utilizzando la modalità di targeting
 description: La modalità di targeting e il componente Target forniscono strumenti per la creazione di contenuti per esperienze
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '5351'
-ht-degree: 78%
+source-wordcount: '5348'
+ht-degree: 77%
 
 ---
 
@@ -261,7 +261,7 @@ Dato che il componente Target è un contenitore, viene visualizzato come area di
 
 In modalità Target, il componente Target ha un bordo blu e il messaggio a discesa indica la natura di targeting.
 
-![Zona di rilascio di Target](/help/sites-cloud/authoring/assets/targeted-drop-target.png)
+![Zona di rilascio Target](/help/sites-cloud/authoring/assets/targeted-drop-target.png)
 
 In modalità di modifica, il componente Target dispone di un’icona a forma di centro del bersaglio.
 
@@ -311,7 +311,7 @@ If you decide that the offer can be used for other experiences, you can create a
 
 1. Tocca o fai clic sull’offerta per visualizzare il menu dell’offerta, quindi tocca o fai clic sull’icona di modifica.
 
-   ![Barra degli strumenti del componente Target](/help/sites-cloud/authoring/assets/targeted-offer-menu.png)
+   ![Barra degli strumenti dei componenti Target](/help/sites-cloud/authoring/assets/targeted-offer-menu.png)
 
 1. Modifica il contenuto del componente.
 
@@ -337,15 +337,12 @@ Non puoi aggiungere offerte dalla libreria all’esperienza predefinita.
    Il selettore delle offerte consente di individuare o filtrare le offerte. Durante la navigazione o il filtraggio, è anche possibile ordinare le offerte e modificarne la modalità di visualizzazione. Il numero in alto a destra indica il numero di offerte disponibili nella libreria corrente.
 
    * Click or tap **Browse** to navigate to another folder. Il pannello di navigazione si apre e puoi fare clic sulla freccia per analizzare in profondità le cartelle. Click or tap **Browse** again to close the navigation pane.
-
    ![Sfoglia contenuto](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
 
    * Tocca o fai clic su **Filtra** per filtrare le offerte in base a parole chiave o tag. Le parole chiave devono essere digitate, mentre i tag possono essere selezionati dal menu a comparsa. Tocca o fai clic di nuovo su **Filtra** per chiudere il pannello di filtraggio.
-
    ![Filtrare il contenuto](/help/sites-cloud/authoring/assets/targeted-filter.png)
 
    * Puoi modificare l’ordine delle offerte toccando o facendo clic sulla freccia accanto a **Dal più recente al meno recente**. Le offerte possono essere ordinate dalla più recente alla meno recente o dalla meno recente alla più recente.
-
    ![Filtra ordinamento](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
 
    Tocca o fai clic sull’icona accanto a **Visualizza** per visualizzare le offerte come miniature o come elenco.
@@ -464,7 +461,7 @@ Utilizza le impostazioni avanzate per determinare che cosa succede **dopo** che 
 | Incremento conteggio, Rilascia utente e Consenti rientro | Selezionate l&#39;esperienza che il visitatore vede se accede nuovamente all&#39;attività: Stessa esperienza, esperienza casuale, esperienza invisibile |
 | Incremento conteggio, rilascio utente e rientro a barre | Determinate cosa vede l&#39;utente invece del contenuto dell&#39;attività: Stessa esperienza, senza tracciamento, contenuto predefinito o altro contenuto dell&#39;attività |
 
-Consulta la [documentazione di Adobe Target](https://docs.adobe.com/content/help/it-IT/target/using/activities/success-metrics/success-metrics.html) per ulteriori informazioni sulle metriche di successo.
+Consulta la [documentazione di Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) per ulteriori informazioni sulle metriche di successo.
 
 ### Impostazioni di configurazione (targeting di AEM) {#configuring-settings-aem-targeting}
 
@@ -503,13 +500,13 @@ Per configurare obiettivi e impostazioni con Adobe Target:
 
    ![Origine reporting](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. Da **Obiettivo principale**, vai all’area **Metrica per obiettivo** e seleziona la metrica di successo che desideri monitorare: Conversione, Entrate, Coinvolgimento. Quindi inserisci come viene misurata la metrica (o quale azione intraprende l’audience per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche dell’obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://docs.adobe.com/content/help/it-IT/target/using/activities/success-metrics/success-metrics.html) sulle metriche di successo.
+1. Da **Obiettivo principale**, vai all’area **Metrica per obiettivo** e seleziona la metrica di successo che desideri monitorare: Conversione, Entrate, Coinvolgimento. Quindi inserisci come viene misurata la metrica (o quale azione intraprende l’audience per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche dell’obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) sulle metriche di successo.
 
    Per rinominare l’obiettivo, fai clic sui tre punti nell’angolo in alto a destra e seleziona **Rinomina**.
 
    Per cancellare tutti i campi, fai clic sui tre punti nell’angolo superiore destro e seleziona **Cancella tutti i campi**.
 
-   Tutte le metriche hanno anche impostazioni avanzate che è possibile definire. Seleziona **Impostazioni avanzate** per accedere a queste impostazioni. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/it-IT/target/using/activities/success-metrics/success-metrics.html).
+   Tutte le metriche hanno anche impostazioni avanzate che è possibile definire. Seleziona **Impostazioni avanzate** per accedere a queste impostazioni. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    >
@@ -574,7 +571,7 @@ Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
 
 È possibile personalizzare il componente Target accedendo alle opzioni del componente in base a uno dei due modi seguenti:
 
-1. Dopo aver eseguito il targeting del componente, nel componente Target tocca o fai clic sul componente, quindi sull’icona delle impostazioni (ingranaggio).
+1. Dopo aver eseguito il targeting del componente, nel componente Target toccate o fate clic sul componente, quindi toccate l’icona delle impostazioni (ingranaggio).
 
    ![Impostazioni dei componenti](/help/sites-cloud/authoring/assets/targeted-component-settings.png)
 
@@ -595,7 +592,7 @@ Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
 | Opzione | Descrizione |
 |---|---|
 | Dove si trova | La posizione è una stringa che assegna un nome alla posizione del contenuto di destinazione e collega le offerte con i punti (o posizioni o componenti) della pagina in cui tali offerte devono essere inserite. Questo campo è un valore generico. Se inserisci un’offerta in un componente, l’offerta ricorda l’ID della posizione. Quando la pagina viene eseguita, il motore valuta i segmenti dell’utente e in base a questo, risolve le esperienze dalle campagne attive che devono essere visualizzate. Quindi, controlla gli ID di posizione sulla pagina e cerca di far corrispondere le offerte con tali ID. |
-| Motore | Scegli tra le regole lato client (senza tracciamento), Adobe Target, ContextHub e Adobe Campaign a seconda del motore da utilizzare. |
+| Motore | Selezionare tra le regole lato client (senza tracciamento),  Adobe Target, ContextHub e  Adobe Campaign a seconda del motore che si desidera utilizzare. |
 
 Se hai selezionato Adobe Target come motore:
 
@@ -603,11 +600,11 @@ Se hai selezionato Adobe Target come motore:
 
 | Opzione | Descrizione |
 |---|---|
-| Impostazione destinazione precisa | L&#39;attivazione di un targeting preciso indica al componente di attendere la disponibilità dei dati contestuali del client o dell&#39;hub di contesto prima di inviare la richiesta ad Adobe Target. Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato. Se selezionate la casella di controllo Impostazione destinazione accurata, la mbox esegue una mboxDefine prima e una mboxUpdate più tardi, generando una richiesta Ajax dopo che i dati sono disponibili. Se non selezionate la casella di controllo Impostazione destinazione accurata, la mbox esegue mboxCreate e genera immediatamente una richiesta sincrona (in questo caso, non tutti i dati contestuali potrebbero essere ancora disponibili). Nota: L&#39;attivazione o la disattivazione di un targeting preciso su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente. |
+| Impostazione destinazione precisa | L&#39;attivazione di un targeting accurato indica al componente di attendere che i dati contestuali del client o dell&#39;hub di contesto siano disponibili prima di inviare la richiesta al Adobe Target . Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato. Se selezionate la casella di controllo Impostazione destinazione accurata, la mbox esegue una mboxDefine prima e una mboxUpdate più tardi, generando una richiesta Ajax dopo che i dati sono disponibili. Se non selezionate la casella di controllo Impostazione destinazione accurata, la mbox esegue mboxCreate e genera immediatamente una richiesta sincrona (in questo caso, non tutti i dati contestuali potrebbero essere ancora disponibili). Nota: L&#39;attivazione o la disattivazione di un targeting preciso su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente. |
 | Includi segmenti risolti | La selezione di questa casella di controllo include tutti i segmenti risolti nella chiamata alla mbox ed eventuali parametri configurati nella pagina e nel framework. Questo funziona solo in situazioni con API XML dove stai sincronizzando i segmenti AEM. Se disponi di segmenti in AEM che non vengono gestiti da Adobe Target (come i segmenti di script), questa opzione consente di risolvere il segmento in AEM e segnalare ad Adobe Target che il segmento è attivo. |
-| Parametri di contesto ereditati | Elenca gli eventuali parametri contestuali ereditati dal framework di Adobe Target, associati alla pagina selezionata. |
-| Param contesto | Tocca o fai clic su Aggiungi campo per configurare parametri di contesto aggiuntivi (come avviene per ciò che è disponibile nel framework di Target). I parametri di contesto aggiunti al componente si applicano solo al componente e non ad altro componente, come accadrebbe se si aggiungessero parametri di contesto direttamente al framework. |
-| Param statici | Tocca o fai clic su Aggiungi campo per configurare parametri statici aggiuntivi (come avviene per i parametri disponibili nel framework di Target). I parametri statici aggiunti al componente si applicano solo al componente e non ad altro componente, come accadrebbe se si aggiungessero parametri statici direttamente al framework. I parametri statici non sono contenuti nel contesto (contesto cliente del Content Hub). |
+| Parametri di contesto ereditati | Elenca gli eventuali parametri contestuali ereditati dal framework del Adobe Target , associati alla pagina selezionata. |
+| Param contesto | Tocca o fai clic su Aggiungi campo per configurare parametri di contesto aggiuntivi (come avviene per i componenti del framework Target). I parametri di contesto aggiunti al componente si applicano solo al componente e non ad altro componente, come accadrebbe se si aggiungessero parametri di contesto direttamente al framework. |
+| Param statici | Tocca o fai clic su Aggiungi campo per configurare parametri statici aggiuntivi (come avviene per i parametri disponibili nel framework Target). I parametri statici aggiunti al componente si applicano solo al componente e non ad altro componente, come accadrebbe se si aggiungessero parametri statici direttamente al framework. I parametri statici non sono contenuti nel contesto (contesto cliente del Content Hub). |
 
 >[!NOTE]
 >
