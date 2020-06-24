@@ -2,7 +2,7 @@
 title: Best practice per ottimizzare la qualità delle immagini
 description: Best practice per ottimizzare la qualità delle immagini in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 5%
@@ -14,12 +14,12 @@ ht-degree: 5%
 
 L’ottimizzazione della qualità delle immagini può richiedere molto tempo, poiché molti fattori contribuiscono a ottenere risultati accettabili. Il risultato è in parte soggettivo perché gli individui percepiscono la qualità dell’immagine in modo diverso. La sperimentazione strutturata è fondamentale.
 
-AEM include più di 100 comandi per la distribuzione di immagini per file multimediali dinamici per ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono aiutarti a semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e procedure ottimali essenziali.
+AEM include più di 100 comandi di distribuzione delle immagini Dynamic Media per ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono aiutarti a semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e procedure ottimali essenziali.
 
 ## Best practice per il formato immagine (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * I formati JPG o PNG rappresentano la scelta migliore per la distribuzione di immagini di buona qualità e con dimensioni e peso gestibili.
-* Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita viene utilizzato il formato JPG per la distribuzione delle immagini multimediali dinamiche.
+* Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita viene utilizzato il formato JPG per la distribuzione delle immagini Dynamic Media.
 * Il formato JPG si comprime con un rapporto di 10:1 e in genere produce file di dimensioni ridotte. Il formato PNG viene compresso con un rapporto di circa 2:1, tranne in alcuni casi, ad esempio quando le immagini contengono uno sfondo bianco. In genere, tuttavia, i file PNG sono di dimensioni maggiori rispetto ai file JPG.
 * Il formato JPG utilizza la compressione con perdita di dati, ossia durante la compressione vengono omessi gli elementi dell&#39;immagine (pixel). Il formato PNG utilizza invece la compressione senza perdita di dati.
 * Il formato JPG spesso comprime le immagini fotografiche con una fedeltà migliore rispetto alle immagini sintetiche con bordi netti e contrasto elevato.
@@ -32,7 +32,7 @@ Come procedura ottimale per il formato immagine, iniziate con l’impostazione p
 La riduzione dinamica delle dimensioni delle immagini è una delle attività più comuni. Si tratta di specificare le dimensioni e, facoltativamente, la modalità di downsampling da usare per ridimensionare l’immagine.
 
 * Per il ridimensionamento delle immagini, l’approccio migliore e più semplice consiste nell’usare `&wid=<value>` e `&hei=<value>,`o semplicemente `&hei=<value>`. Questi parametri impostano automaticamente la larghezza dell’immagine in base alle proporzioni.
-* `&resMode=<value>`controlla l’algoritmo utilizzato per il downsampling. Cominciate con `&resMode=sharp2`. Questo valore offre la migliore qualità dell’immagine. L’utilizzo del downsampling `value =bilin` è più veloce, ma comporta spesso l’aliasing degli artefatti.
+* `&resMode=<value>`controlla l’algoritmo utilizzato per il downsampling. Cominciate con `&resMode=sharp2`. Questo valore offre la migliore qualità dell’immagine. L’utilizzo del downsampling `value =bilin` è più veloce, ma comporta spesso l’aliasing di artefatti.
 
 Come procedura ottimale per il ridimensionamento delle immagini, l’utilizzo `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
 
@@ -65,7 +65,7 @@ Esistono due metodi per rendere le immagini più nitide:
 
       Argomento dell’Aiuto di AEM sulla nitidezza di un’immagine.
 
-      White paper sulle procedure ottimali [Nitidezza delle immagini in Adobe Scene7 Publishing System e sul server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)immagini.
+      White paper sulle procedure ottimali [Nitidezza delle immagini in Adobe Scene7 Publishing System e sul server immagini.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
    * AEM consente inoltre di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ciascun componente di colore utilizzando il valore 0 oppure alla luminosità/intensità dell’immagine utilizzando il valore 1.
 
@@ -118,6 +118,6 @@ Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggi
 Per ottimizzare il flusso di lavoro, potete inoltre trovare utili i seguenti suggerimenti generali:
 
 * Provate a utilizzare parametri diversi in tempo reale, direttamente su un URL o mediante la funzionalità di regolazione delle immagini di Scene7 Publishing System, che fornisce anteprime in tempo reale per le operazioni di regolazione.
-* Come procedura ottimale, potete raggruppare i comandi Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è in pratica una macro di comandi URL con nomi predefiniti personalizzati, ad esempio `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL richiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito Web e di ridurre la lunghezza complessiva degli URL.
+* Come procedura ottimale, potete raggruppare i comandi di Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è in pratica una macro di comandi URL con nomi predefiniti personalizzati, ad esempio `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL richiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito Web e di ridurre la lunghezza complessiva degli URL.
 * AEM offre inoltre metodi più avanzati per ottimizzare la qualità delle immagini, ad esempio l’applicazione della nitidezza alle immagini al momento dell’assimilazione. Per i casi d’uso avanzati in cui questa può rappresentare un’opzione per ottimizzare ulteriormente i risultati di rendering, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) può aiutarti con approfondimenti personalizzati e procedure ottimali.
 
