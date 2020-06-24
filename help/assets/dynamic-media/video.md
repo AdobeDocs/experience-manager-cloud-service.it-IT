@@ -2,9 +2,9 @@
 title: Video
 description: Scopri come lavorare con i video in Dynamic Media
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '10169'
+source-wordcount: '10146'
 ht-degree: 10%
 
 ---
@@ -16,27 +16,27 @@ Questa sezione descrive come lavorare con i video in Dynamic Media.
 
 ## Avvio rapido: Video {#quick-start-videos}
 
-The following step-by-step workflow description is designed to help you get up and running quickly with adaptive video sets in Dynamic Media. Dopo ogni passaggio sono presenti riferimenti incrociati alle intestazioni degli argomenti in cui è possibile trovare ulteriori informazioni.
+La seguente descrizione dettagliata del flusso di lavoro è stata creata per consentirvi di imparare a usare rapidamente i set video adattivi in Dynamic Media. Dopo ogni passaggio sono presenti riferimenti incrociati alle intestazioni degli argomenti in cui è possibile trovare ulteriori informazioni.
 
 >[!NOTE]
 >
 >Prima di lavorare con i video in Dynamic Media, accertatevi che l&#39;amministratore AEM abbia già attivato e configurato i servizi Dynamic Media Cloud.
 >
->* See [Configuring Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) in Configuring Dynamic Media and [Troubleshooting Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
+>* Consulta [Configurazione dei servizi](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) Dynamic Media Cloud in Configurazione di Dynamic Media e [risoluzione dei problemi di Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 
 >
 
 
 
-1. **Upload your Dynamic Media videos** by doing the following:
+1. **Caricate i video** Dynamic Media effettuando le seguenti operazioni:
 
-   * Create your own video encoding profile. Or, you can simply use the predefined _Adaptive Video Encoding_ profile that comes with Dynamic Media.
+   * Create un profilo di codifica video personalizzato. Oppure potete semplicemente utilizzare il profilo predefinito di codifica _video_ adattiva fornito con Dynamic Media.
 
-      * [Creating a video encoding profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * [Creazione di un profilo](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)di codifica video.
       * Ulteriori informazioni sulle [procedure ottimali per la codifica](#best-practices-for-encoding-videos)video.
-   * Associate the video processing profile to one or more folders where you are going to upload your primary source videos.
+   * Associate il profilo di elaborazione video a una o più cartelle in cui intendete caricare i video sorgente principali.
 
-      * [Applying a video profile to folders](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+      * [Applicazione di un profilo video alle cartelle](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * Ulteriori informazioni sulle [procedure ottimali per l&#39;organizzazione delle risorse digitali per l&#39;utilizzo dei profili](/help/assets/dynamic-media/best-practices-for-file-management.md)di elaborazione.
       * Ulteriori informazioni sull’ [organizzazione delle risorse](/help/assets/organize-assets.md)digitali.
    * Caricate i video sorgente principali nelle cartelle. Potete caricare file video fino a 15 GB ciascuno. Quando aggiungete dei video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
@@ -110,118 +110,118 @@ The following step-by-step workflow description is designed to help you get up a
       * Integrare video utilizzando il codice da incorporare nella pagina Web:
          [Incorporamento del visualizzatore video in una pagina](/help/assets/dynamic-media/embed-code.md)Web.
    * [Pubblicazione di video su YouTube](#publishing-videos-to-youtube).
-   * [Generating video reports](#viewing-video-reports).
+   * [Generazione di rapporti](#viewing-video-reports)video.
 
-   * [Adding captions to video](#adding-captions-to-video).
+   * [Aggiunta di sottotitoli a video](#adding-captions-to-video).
 
 
 
-## Working with video in Dynamic Media {#working-with-video-in-dynamic-media}
+## Utilizzo dei video in Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality Adaptive Video for streaming across multiple screens, including desktop, iOS, Android, Blackberry, and Windows mobile devices. Un set video adattivo raggruppa versioni dello stesso video codificate con diversi bitrate e formati quali 400, 800 e 1000 kbps. The desktop computer or mobile device detects the available bandwidth.
+Video in Dynamic Media è una soluzione end-to-end che semplifica la pubblicazione di video adattivi di alta qualità per lo streaming su schermi diversi, inclusi desktop, iOS, Android, Blackberry e dispositivi mobili Windows. Un set video adattivo raggruppa versioni dello stesso video codificate con diversi bitrate e formati quali 400, 800 e 1000 kbps. Il computer desktop o il dispositivo mobile rileva la larghezza di banda disponibile.
 
-For example, on an iOS mobile device, it detects a bandwidth such as 3G, 4G, or Wi-Fi. Quindi, seleziona automaticamente il video con la codifica corretta tra i vari bitrate video presenti nel set video adattivo. The video is streamed to desktops, mobile devices, or tablets.
+Ad esempio, su un dispositivo mobile iOS, rileva una larghezza di banda come 3G, 4G o Wi-Fi. Quindi, seleziona automaticamente il video con la codifica corretta tra i vari bitrate video presenti nel set video adattivo. Il video viene trasmesso in streaming a computer desktop, dispositivi mobili o tablet.
 
-In addition, video quality is dynamically switched automatically if network conditions change on the desktop or on the mobile device. Also, if a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, thereby improving the customer’s viewing experience. Using Adaptive Video Sets provides you with the best possible playback for customers playing Dynamic Media video on multiple screens and devices.
+Inoltre, la qualità video viene modificata automaticamente in modo dinamico se le condizioni della rete cambiano sul desktop o sul dispositivo mobile. Inoltre, se un cliente passa alla modalità a schermo intero su un computer desktop, il set video adattivo risponde utilizzando una risoluzione migliore, in modo da migliorare l’esperienza di visualizzazione del cliente. L’utilizzo di set video adattivi offre la migliore riproduzione possibile per i clienti che riproducono video Dynamic Media su schermi e dispositivi diversi.
 
-The logic that a video player uses to determine which encoded video to play or to select during playback is based on the following algorithm:
+La logica utilizzata da un lettore video per determinare quale video codificato riprodurre o selezionare durante la riproduzione si basa sul seguente algoritmo:
 
 1. Il lettore video carica il frammento video iniziale in base al bitrate più vicino al valore impostato per il bitrate iniziale nel lettore stesso.
-1. Video player switches based on changes to the bandwidth speed using the following criteria:
+1. Il lettore video passa alla velocità della larghezza di banda in base ai seguenti criteri:
 
-   1. Player picks the highest bandwidth stream below or equal to the estimated bandwidth.
+   1. Player sceglie il flusso di larghezza di banda più alto al di sotto o uguale alla larghezza di banda stimata.
    1. Il lettore considera solo l&#39;80% della larghezza di banda disponibile. Tuttavia, se sta cambiando, è più conservativo solo al 70% per evitare sopravvalutazioni e tornare immediatamente indietro.
 
-For detailed technical information about the algorithm, see [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
+Per informazioni tecniche dettagliate sull&#39;algoritmo, vedete [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-For managing single video and Adaptive Video Sets, the following is supported:
+Per gestire video singoli e set video adattivi, sono supportati i seguenti elementi:
 
-* Uploading video from numerous supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
+* Caricamento di video da numerosi formati video e formati audio supportati e codifica di video in formato MP4 H.264 per la riproduzione su più schermi. Potete usare i predefiniti per video adattivi preimpostati, i predefiniti di codifica per video singoli o personalizzare la codifica per controllare la qualità e le dimensioni del video.
 
-   * When an adaptive video set is generated, it includes MP4 videos.
-   * **Note**: Primary/source videos are not added to an Adaptive Video Set.
+   * Quando viene generato un set video adattivo, questo include i video MP4.
+   * **Nota**: I video principali/sorgente non vengono aggiunti a un set video adattivo.
 
-* Video captioning in all HTML5 video viewers.
-* Organize, browse, and search video with full metadata support for efficient management of video assets.
-* Deliver Adaptive Video Sets to the web as well as to desktops, and mobile devices, including the iPhone, iPad, Android, Blackberry, and Windows phone.
+* Sottotitoli video in tutti i visualizzatori video HTML5.
+* Organizzate, sfogliate e cercate i video con il supporto completo dei metadati per una gestione efficiente delle risorse video.
+* Distribuite set video adattivi sia sul Web che su computer desktop e dispositivi mobili, inclusi iPhone, iPad, Android, Blackberry e Windows Phone.
 
-Adaptive video streaming is supported on a variety of iOS platforms. See [Scene7 Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_reference.html).
+Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate Guida [di riferimento visualizzatori di](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)Scene7.
 
-Dynamic Media supports mobile video playback for MP4 H.264 video. You can find Blackberry devices that support this video format at the following: [Supported video formats on Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media supporta la riproduzione di video mobile per video MP4 H.264. Per un elenco dei dispositivi BlackBerry che supportano questo formato video, consultate: [Formati video supportati su Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 Per un elenco dei dispositivi Windows che supportano questo formato video, consultate: [Formati video supportati su Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
-* Play back the video using Dynamic Media Video Viewer Presets, including the following:
+* Riproducete il video usando i predefiniti per visualizzatori video di Dynamic Media, inclusi i seguenti:
 
-   * Single video viewers.
-   * Mixed Media viewers that combine both video and image content.
+   * Visualizzatori per singoli video.
+   * Visualizzatori per file multimediali diversi che combinano video e immagini.
 
 * Configurate i lettori video per soddisfare le vostre esigenze di branding.
 * Integrare video nel sito Web, nel sito mobile o nell’applicazione mobile con un semplice URL o codice da incorporare.
 
-See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) sample.
+Consultate Esempio di riproduzione [video](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) dinamica.
 
-See also [Viewers for AEM and Scene7](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) and [Viewers for AEM assets only](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_asset_viewers.html) in the Adobe Scene7 Viewers Reference Guide.
+Consultate anche [Visualizzatori per le risorse AEM e Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) e [Visualizzatori per le risorse AEM solo](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) nella guida di riferimento dei visualizzatori Adobe Scene7.
 
-## Best practice: Using the HTML5 video viewer {#best-practice-using-the-html-video-viewer}
+## Procedura consigliata: Utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
-I predefiniti per visualizzatori video Dynamic Media HTML5 sono lettori video affidabili. You can use them to avoid many common issues that are associated with HTML5 video playback and issues associated with mobile devices such as lack of adaptive streaming delivery and limited desktop browser reach.
+I predefiniti per visualizzatori video Dynamic Media HTML5 sono lettori video affidabili. Potete utilizzarli per evitare molte delle problematiche più comuni relative alla riproduzione di video HTML5 e ai dispositivi mobili, ad esempio la mancanza di distribuzione con streaming adattivo e la portata limitata del browser desktop.
 
-On the design side of the player, you can design all of the video player’s functionality using standard web development tools. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
+Dal punto di vista della progettazione del lettore, è possibile progettare tutte le funzionalità del lettore video utilizzando gli strumenti di sviluppo Web standard. Ad esempio, potete progettare pulsanti, controlli e sfondo personalizzato con immagine poster utilizzando HTML5 e CSS per raggiungere i clienti con un aspetto personalizzato.
 
-On the playback side of the viewer, it automatically detects the browser’s video capability. It then serves the video using HLS (HTTP Live Streaming), also known as adaptive video streaming. Oppure, se tali metodi di consegna non sono presenti, viene utilizzato lo progressivo HTML5.
+Dal lato della riproduzione del visualizzatore, viene rilevata automaticamente la capacità video del browser. Viene quindi trasmesso il video mediante HLS (HTTP Live Streaming), noto anche come streaming video adattivo. Oppure, se tali metodi di consegna non sono presenti, viene utilizzato lo progressivo HTML5.
 
 Combinando in un singolo lettore la possibilità di progettare i componenti di riproduzione in HTML5 e CSS, di usufruire di riproduzione incorporata e di utilizzare lo streaming adattativo e progressivo a seconda delle funzionalità del browser, i contenuti multimediali potranno essere visti dagli utenti desktop e mobili e potranno così godere di un’esperienza video ottimizzata.
 
-Consultate anche [I visualizzatori](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html) HTML5 nella guida di riferimento dei visualizzatori Adobe Scene7.
+Consultate anche [I visualizzatori](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) HTML5 nella guida di riferimento dei visualizzatori Adobe Scene7.
 
 ### Riproduzione di video su computer desktop e dispositivi mobili mediante il visualizzatore video HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
-For desktop and mobile adaptive video streaming, the videos used for bit rate switching are based on all MP4 videos in the Adaptive Video Set.
+Per lo streaming di video adattivi per desktop e dispositivi mobili, i video utilizzati per il cambio di bitrate si basano su tutti i video MP4 presenti nel set video adattivo.
 
-Video playback occurs using either HLS or progressive video download. In prior versions of AEM, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
+La riproduzione video si verifica utilizzando HLS o lo scaricamento progressivo del video. Nelle versioni precedenti di AEM, ad esempio 6.0, 6.1 e 6.2, i video venivano trasmessi in streaming via HTTP.
 
-However, in AEM 6.3 and on, videos are now streamed over HTTPS (that is, HLS) because the DM gateway service URL always uses HTTPS as well. Note that there is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table). Quindi,
+Tuttavia, in AEM 6.3 e versioni successive, i video ora vengono trasmessi in streaming attraverso HTTPS (ossia HLS) perché l&#39;URL del servizio gateway DM utilizza sempre anche HTTPS. Notate che non vi è alcun impatto del cliente in questo comportamento predefinito. In altre parole, lo streaming video si verifica sempre attraverso HTTPS, a meno che non sia supportato dal browser. (vedere la tabella seguente). Quindi,
 
-* If you have an HTTPS website with HTTPS video streaming, streaming is fine.
-* If you have an HTTP website with HTTPS video streaming, streaming is fine and there are no mixed content issues from the web browser.
+* Se disponete di un sito Web HTTPS con streaming video HTTPS, lo streaming è corretto.
+* Se disponete di un sito Web HTTP con streaming video HTTPS, lo streaming è corretto e il browser Web non presenta problemi di contenuto misto.
 
-HLS is an Apple standard for adaptive video streaming that automatically adjusts playback based on network bandwidth capacity. It also lets the customer “seek” to any point in the video without the need to wait for the rest of the video to download.
+HLS è uno standard Apple per lo streaming di video adattivi che regola automaticamente la riproduzione in base alla capacità di larghezza di banda della rete. Consente inoltre al cliente di &quot;cercare&quot; in qualsiasi punto del video senza dover attendere il resto del video per scaricarlo.
 
-Progressive video is delivered by downloading and storing the video locally on a user’s desktop system or mobile device.
+Il video progressivo viene distribuito scaricando e memorizzando localmente il video sul sistema desktop o sul dispositivo mobile di un utente.
 
-The following table describes the device, browser, and playback method of videos on desktop computers and mobile devices using the Scene7 Video Viewer.
+La tabella seguente riassume il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili mediante il visualizzatore video di Scene7.
 
 <table>
  <tbody>
   <tr>
    <td><strong>Dispositivo</strong></td>
    <td><strong>Browser</strong></td>
-   <td><strong>Video playback mode</strong></td>
+   <td><strong>Modalità di riproduzione video</strong></td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 9 e 10</td>
-   <td>Progressive download.</td>
+   <td>Download progressivo.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>On Windows 8 and Windows 10 - Force use of HTTPS whenever HLS is requested. Known limitation: HTTP on HLS does not work in this browser/operating system combination<br /> <br /> On Windows 7 - Progressive download. Utilizza la logica standard per selezionare il protocollo HTTP rispetto a HTTPS.</td>
+   <td>In Windows 8 e Windows 10 - Forza l'uso di HTTPS ogni volta che viene richiesto HLS. Limitazione nota: HTTP su HLS non funziona in questa combinazione<br /> browser/sistema operativo <br /> Su Windows 7 - Download progressivo. Utilizza la logica standard per selezionare il protocollo HTTP rispetto a HTTPS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Firefox 23-44</td>
-   <td>Progressive download.</td>
+   <td>Download progressivo.</td>
   </tr>
   <tr>
    <td>Desktop</td>
-   <td>Firefox 45 or later</td>
+   <td>Firefox 45 o versione successiva</td>
    <td>HLS</td>
   </tr>
   <tr>
    <td>Desktop</td>
-   <td>Chrome</td>
+   <td>Effetto cromatura</td>
    <td>HLS</td>
   </tr>
   <tr>
@@ -231,18 +231,18 @@ The following table describes the device, browser, and playback method of videos
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Chrome (Android 6 or earlier)</td>
-   <td>Progressive download.</td>
+   <td>Chrome (Android 6 o versione precedente)</td>
+   <td>Download progressivo.</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Chrome (Android 7 or later)</td>
+   <td>Chrome (Android 7 o successivo)</td>
    <td>HLS</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Android (default browser)</td>
-   <td>Progressive download.</td>
+   <td>Android (browser predefinito)</td>
+   <td>Download progressivo.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -262,9 +262,9 @@ The following table describes the device, browser, and playback method of videos
  </tbody>
 </table>
 
-## Architecture of Dynamic Media video solution {#architecture-of-dynamic-media-video-solution}
+## Architettura della soluzione video Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
-The following graphic shows the overall authoring workflow of videos that are uploaded and encoded by way of DMGateway (in Dynamic Media Hybrid mode) and made available for public consumption.
+L’immagine seguente mostra il flusso di lavoro di authoring complessivo dei video caricati e codificati tramite DMGGateway (in modalità ibrida Dynamic Media) e resi disponibili per l’uso pubblico.
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -272,32 +272,32 @@ The following graphic shows the overall authoring workflow of videos that are up
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
-## Best practices for encoding videos {#best-practices-for-encoding-videos}
+## Procedure ottimali per la codifica dei video {#best-practices-for-encoding-videos}
 
 Se hai attivato gli elementi multimediali dinamici e hai impostato Cloud Services per i video flusso di lavoro, **Codifica video elementi multimediali dinamici** ti consente di eseguire la codifica dei video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Se hai attivato gli elementi multimediali dinamici e hai impostato Cloud Services per i video, il flusso di lavoro **[!UICONTROL Codifica video elementi multimediali dinamici]** viene applicato automaticamente al momento di caricare un video. Se non utilizzi gli elementi multimediali dinamici, viene applicato il flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
 
-The following are best-practice tips for encoding source video files.
+Di seguito sono riportati alcuni suggerimenti per la codifica di file video sorgente.
 
-For advice about video encoding, see the following:
+Per consigli sulla codifica video, consultate i seguenti riferimenti:
 
-* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
+* [Streaming 101: Nozioni di base — Codec, larghezza di banda, velocità dati e risoluzione](https://www.adobe.com/go/learn_s7_streaming101_en).
 * [Nozioni di base sulla codifica video](https://www.adobe.com/go/learn_s7_encoding_en).
 
 ### File video sorgente {#source-video-files}
 
-When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
+Quando codificate un file video, usate un file video sorgente della massima qualità possibile. Evitate di usare file video codificati in precedenza perché sono già compressi e un’ulteriore codifica comporterebbe la creazione di video di qualità inferiore.
 
-The following table describes the recommended size, aspect ratio, and minimum bit rate that your source video files should have before you encode them:
+La tabella seguente riassume le dimensioni consigliate, le proporzioni e il bitrate minimo che i file video sorgente dovrebbero avere prima di codificarli:
 
 | Dimensione | Proporzioni | Bitrate minimo |
 |--- |--- |--- |
-| 1024x768 | 4:3 | 4500 kbps for most videos. |
-| 1280x720 | 16:9 | 3000 - 6000 kbps, depending on the amount of motion in the video. |
-| 1920 X 1080 | 16:9 | 6000 - 8000 kbps, depending on the amount of motion in the video. |
+| 1024x768 | 4:3 | 4500 kbps per la maggior parte dei video. |
+| 1280x720 | 16:9 | 3000 - 6000 kbps, a seconda della quantità di movimento presente nel video. |
+| 1920 X 1080 | 16:9 | 6000 - 8000 kbps, a seconda della quantità di movimento presente nel video. |
 
-### Obtaining a file&#39;s metadata {#obtaining-a-file-s-metadata}
+### Ottenimento dei metadati di un file {#obtaining-a-file-s-metadata}
 
-You can obtain a file’s metadata by viewing its metadata using a video editing tool, or using an application designed for obtaining metadata. Seguono istruzioni per l’utilizzo di MediaInfo, un’applicazione di terze parti che consente di ottenere i metadati di un file video:
+Per ottenere i metadati di un file potete visualizzarne i metadati utilizzando uno strumento di modifica video o un’applicazione progettata per ottenere i metadati. Seguono istruzioni per l’utilizzo di MediaInfo, un’applicazione di terze parti che consente di ottenere i metadati di un file video:
 
 1. Vai a questa pagina Web: [https://mediainfo.sourceforge.net/en/Download](https://mediainfo.sourceforge.net/en/Download).
 1. Selezionate e scaricate il programma di installazione per la versione GUI, quindi seguite le istruzioni di installazione.
@@ -305,15 +305,15 @@ You can obtain a file’s metadata by viewing its metadata using a video editing
 
 ### Proporzioni {#aspect-ratio}
 
-Quando scegliete o create un predefinito di codifica video per il file video sorgente principale, accertatevi che il predefinito abbia le stesse proporzioni del file video sorgente principale. The aspect ratio is the ratio of the width to the height of the video.
+Quando scegliete o create un predefinito di codifica video per il file video sorgente principale, accertatevi che il predefinito abbia le stesse proporzioni del file video sorgente principale. Le proporzioni sono il rapporto tra la larghezza e l’altezza del video.
 
-Per determinare le proporzioni di un file video, ottenete i metadati del file e prendete nota dei valori di larghezza e altezza (consultate Ottenimento dei metadati di un file sopra). Then use this formula to determine the aspect ratio:
+Per determinare le proporzioni di un file video, ottenete i metadati del file e prendete nota dei valori di larghezza e altezza (consultate Ottenimento dei metadati di un file sopra). Quindi utilizzate questa formula per determinare le proporzioni:
 
-width/height = aspect ratio
+larghezza/altezza = proporzioni
 
 Nella tabella seguente è illustrato come i risultati della formula si traducono in scelte di proporzioni comuni:
 
-| Formula result | Proporzioni |
+| Risultato della formula | Proporzioni |
 |--- |--- |
 | 1.33 | 4:3 |
 | 0.75 | 3:4 |
@@ -328,9 +328,9 @@ Bitrate è la quantità di dati codificati per creare un secondo di riproduzione
 
 >[!NOTE]
 >
->Poiché tutti i codec usano la compressione con perdita di dati, il bitrate è il fattore più importante nella qualità video. Con la compressione con perdita di dati, più comprimete un file video, più la qualità viene ridotta. For this reason, all other characteristics being equal (the resolution, frame rate, and codec), the lower the bitrate, the lower the quality of the compressed file.
+>Poiché tutti i codec usano la compressione con perdita di dati, il bitrate è il fattore più importante nella qualità video. Con la compressione con perdita di dati, più comprimete un file video, più la qualità viene ridotta. Per questo motivo, a parità di tutte le altre caratteristiche (risoluzione, frequenza fotogrammi e codec), minore è il bitrate, minore sarà la qualità del file compresso.
 
-When selecting a bitrate encoding, there are two types you can choose:
+Quando selezionate una codifica bitrate, potete scegliere due tipi:
 
 * **[!UICONTROL Codifica]** a bitrate costante (CBR) - Durante la codifica CBR, il bitrate o il numero di bit al secondo viene mantenuto invariato durante tutto il processo di codifica. La codifica CBR persiste quando la velocità dati impostata viene impostata sull’intero video. Inoltre, la codifica CBR non ottimizza i file multimediali per la qualità, ma consente di risparmiare spazio di archiviazione.
 Usate CBR se il video contiene un livello di movimento simile per l’intero video. CBR è utilizzato soprattutto per lo streaming di contenuti video. Consultate anche [Utilizzo di parametri](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters)di codifica video personalizzati.
@@ -525,7 +525,7 @@ Per configurare le impostazioni di Google Cloud:
 
    La schermata di consenso viene visualizzata all’amministratore AEM quando esegue l’autenticazione su YouTube; AEM contatterà YouTube per l’autorizzazione.
 
-1. Fate clic su **[!UICONTROL Continua]**.
+1. Fai clic su **[!UICONTROL Continua]**.
 1. Nella pagina Add credentials to your project (Aggiungi credenziali al progetto), passaggio 4, nell’intestazione **[!UICONTROL Download credentials (Scarica credenziali)]**, tocca **[!UICONTROL Download]**.
 
    ![6_5_googleaccount-apis-createcredentials-downloadcredenziali](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
@@ -574,7 +574,7 @@ Dopo aver attivato l&#39;agente di replica di pubblicazione di YouTube, se desid
 1. Nella pagina Agenti di autore, fate clic su **[!UICONTROL YouTube Publish (youtube)]**.
 1. Nella barra degli strumenti, a destra di Impostazioni, fate clic su **[!UICONTROL Modifica]**.
 1. Selezionare la casella di controllo **[!UICONTROL Abilitato]** per attivare l&#39;agente di replica.
-1. Fai clic su **[!UICONTROL OK]**. 
+1. Fai clic su **[!UICONTROL OK]**.
 
    A questo punto YouTube verrà configurato in AEM.
 
@@ -642,7 +642,7 @@ Lasciate aperta la pagina Crea configurazione YouTube; ritornerete su di esso tr
 1. Toccate **[!UICONTROL Crea]**.
 1. Nella finestra di dialogo Impostazioni account di YouTube, immetti l’ID progetto Google nel campo **[!UICONTROL Nome applicazione]**.
 
-   Hai specificato l&#39;ID progetto al momento della [configurazione iniziale delle impostazioni](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) Google Cloud.
+   L&#39;ID progetto è stato specificato al momento della [configurazione iniziale delle impostazioni](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) Google Cloud.
 Lasciate aperta la finestra di dialogo Impostazioni account di YouTube; ritornerete su di esso tra un momento.
 
 1. Utilizzando un editor di testo normale, aprite il file JSON scaricato e salvato in precedenza nell&#39;attività Configurazione delle impostazioni di Google Cloud.
@@ -995,7 +995,7 @@ Per visualizzare i rapporti video:
    * Nell&#39;angolo superiore destro, toccate l&#39;icona **[UICONTROL Aggiorna rapporto]** video.
 È necessario utilizzare Aggiorna solo se la data di fine del rapporto è il giorno corrente. In questo modo, potrai vedere il tracciamento video che si è verificato dall’ultima volta che hai eseguito il rapporto.
 
-   * Vicino all&#39;angolo superiore destro, toccate l&#39;icona **[UICONTROL Date Picker]** (Selettore data UICONTROL).
+   * Vicino all&#39;angolo superiore destro, toccate l&#39;icona **[UICONTROL Date Picker]** .
 Specificate l’intervallo di date iniziale e finale per il quale desiderate i dati video, quindi toccate **[!UICONTROL Esegui rapporto]**.
 
    La casella del gruppo Metriche principali identifica diverse misurazioni aggregate per tutti i *video pubblicati *in tutto il sito.
@@ -1008,7 +1008,7 @@ Se utilizzate un visualizzatore video fornito da Dynamic Media o se avete creato
 
 Per creare visualizzatori video personalizzati, usate Scene7 HTML5 Viewers Reference e Scene7 HTML5 Viewers SDK.
 
-Consultate Guida [di riferimento visualizzatori di](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html)Scene7.
+Consultate Guida [di riferimento visualizzatori di](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)Scene7.
 
 <!-- 
 
@@ -1081,7 +1081,7 @@ I sottotitoli consentono inoltre una maggiore accessibilità mediante l’uso di
 
 Dynamic Media è in grado di convertire i file di sottotitoli in formato JSON (JavaScript Object Notation). Questa conversione consente di incorporare il testo JSON in una pagina Web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi individuare e indicizzare i contenuti per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
-Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consultate [Serving static (non-image) contents (Distribuzione di contenuti](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) statici (non immagini)) nella guida *API di* Scene7 Image Serving.
+Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consultate [Serving static (non-image) contents (Distribuzione di contenuti](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) statici (non immagini)) nella guida *API di* Scene7 Image Serving.
 
 **Per aggiungere sottotitoli o sottotitoli al video**
 
