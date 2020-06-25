@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 76cd37ae35360e68cca676de8eda53dff4819b41
+source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
-source-wordcount: '2272'
+source-wordcount: '2276'
 ht-degree: 5%
 
 ---
@@ -30,9 +30,11 @@ Non è necessaria alcuna installazione aggiuntiva per utilizzare risorse 3D in D
 
 <!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
 
-## Formati di file 3D supportati in Dynamic Media {#supported-three-d-file-formats-in-dm}
+## Formati 3D supportati in Dynamic Media {#supported-three-d-file-formats-in-dm}
 
-Dynamic Media supporta i seguenti formati di file 3D:
+Dynamic Media supporta i seguenti formati di file 3D.
+
+Vedere anche formati [3D supportati](/help/assets/file-format-support.md#supported-3d-formats)
 
 | Estensione dei file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
