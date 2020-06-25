@@ -1,11 +1,11 @@
 ---
-title: Formati di file e tipi MIME supportati da Experience Manager Assets come servizio Cloud
-description: Formati di file e tipi MIME supportati da Experience Manager Assets come servizio Cloud.
+title: Formati di file e tipi MIME supportati da  Experience Manager Assets come Cloud Service
+description: Formati di file e tipi MIME supportati da  Experience Manager Assets come Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
+source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '821'
 ht-degree: 9%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 9%
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager come servizio Cloud supporta funzionalità di gestione dei contenuti di base — archiviazione, gestione dei metadati online, controllo delle versioni, caricamento, scaricamento e così via — per qualsiasi file binario, indipendentemente dal suo formato. Risorse Adobe Experience Manager supporta un&#39;ampia gamma di formati di file e ogni funzione di prodotto supporta vari formati.
+ Adobe Experience Manager come Cloud Service supporta funzionalità di base per la gestione dei contenuti — archiviazione, gestione dei metadati online, controllo delle versioni, caricamento, scaricamento e così via — per qualsiasi file binario, indipendentemente dal suo formato.  risorse di Adobe Experience Manager supporta un&#39;ampia gamma di formati di file e ogni funzione di prodotto supporta vari formati.
 
-Inoltre, Experience Manager Assets offre un ampio supporto per la generazione di anteprime e rappresentazioni e per l’estrazione di metadati e testo per l’indicizzazione full-text. Questo supporto esteso viene fornito utilizzando i microservizi [delle](asset-microservices-configure-and-use.md)risorse.
+Inoltre,  Risorse Experience Manager offre supporto esteso per la generazione di anteprime e rappresentazioni e per l’estrazione di metadati e testo per l’indicizzazione full-text. Questo supporto esteso viene fornito utilizzando i microservizi [delle](asset-microservices-configure-and-use.md)risorse.
 
 I principali elementi di rilievo per la conversione delle risorse mediante i microservizi delle risorse sono:
 
@@ -86,6 +86,21 @@ I seguenti sottotipi di formati di file immagine raster non supportati in [!DNL 
 * File PSD con una profondità di bit maggiore di 16.
 * File TIFF con dati a virgola mobile.
 * file TIFF con spazio colore Lab.
+
+## Formati 3D supportati {#support-3d-formats}
+
+È supportato il seguente elenco di formati 3D.
+
+Consultate [Utilizzo delle risorse 3D in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+
+| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo di accesso | Anteprima miniature | Anteprima 3D | Distribuzione Dynamic Media |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
 ## [!DNL Camera RAW] format {#camera-raw-formats}
 
@@ -203,7 +218,7 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 
 ## Formati audio {#audio-formats}
 
-Assets as a Cloud Service (Risorse come servizio cloud) fornisce il supporto per l&#39;estrazione dei metadati XMP per i formati audio FIA, ASF, M4A, MP3, WAV e WMA.
+Risorse come Cloud Service fornisce il supporto per l’estrazione di metadati XMP per i formati audio FIA, ASF, M4A, MP3, WAV e WMA.
 
 >[!MORELIKETHIS]
 >
