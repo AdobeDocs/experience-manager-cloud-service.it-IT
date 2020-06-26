@@ -2,9 +2,9 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard.
 translation-type: tm+mt
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+source-git-commit: 33ed1ab1e8a4c4d7d61981270b0a6c959c8ba3a3
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '1786'
 ht-degree: 3%
 
 ---
@@ -26,21 +26,13 @@ Le [parti](/help/assets/content-fragments/content-fragments.md#constituent-parts
 * costituito da uno o più elementi *di* contenuto,
 * e che può avere una o più varianti *di* contenuto.
 
-A seconda del tipo di frammento, vengono utilizzati anche i modelli o il modello di frammento **** semplice:
+I singoli frammenti di contenuto si basano su modelli di frammenti di contenuto:
 
->[!CAUTION]
->
->[Per la creazione di tutti i frammenti è ora consigliabile utilizzare modelli](/help/assets/content-fragments/content-fragments-models.md) di frammenti di contenuto.
->
->I modelli di frammento di contenuto vengono utilizzati per tutti gli esempi in WKND.
+* I modelli di frammento di contenuto definiscono la struttura di un frammento di contenuto al momento della creazione.
+* Un frammento fa riferimento al modello; le modifiche apportate al modello possono quindi avere o avranno effetto su eventuali frammenti dipendenti.
+* I modelli sono composti di tipi di dati.
+* Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
 
-* Modelli per frammenti di contenuto:
-
-   * Utilizzato per definire frammenti di contenuto contenenti contenuto strutturato.
-   * I modelli di frammento di contenuto definiscono la struttura di un frammento di contenuto al momento della creazione.
-   * Un frammento fa riferimento al modello; le modifiche apportate al modello possono quindi avere o avranno effetto su eventuali frammenti dipendenti.
-   * I modelli sono composti di tipi di dati.
-   * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
    >[!NOTE]
    >
    >Per visualizzare/eseguire il rendering di un frammento di contenuto, l&#39;account deve disporre `read` delle autorizzazioni per il modello.
@@ -48,20 +40,6 @@ A seconda del tipo di frammento, vengono utilizzati anche i modelli o il modello
    >[!CAUTION]
    >
    >Qualsiasi modifica apportata a un modello di frammento di contenuto esistente può avere un impatto sui frammenti dipendenti; in questo modo è possibile creare proprietà orfane nei frammenti.
-
-* Modello frammento di contenuto - Frammento **** semplice:
-
-   * Utilizzato per definire frammenti di contenuto semplici.
-
-   * Questo modello definisce la struttura (di base, solo testo) di un frammento di contenuto al momento della creazione.
-
-   * Il modello viene copiato nel frammento al momento della creazione.
-
-   * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
-
-   * Il modello di frammento di contenuto (frammento **** semplice) funziona in modo diverso da quello di altri meccanismi di modellazione all’interno dell’ecosistema AEM (ad esempio, modelli di pagina, ecc.). Occorre pertanto considerarlo separatamente.
-
-   * Se basato sul modello di frammento **** semplice, il tipo MIME del contenuto viene gestito sul contenuto effettivo; ciò significa che ogni elemento e ogni variante possono avere un tipo MIME diverso.
 
 ### Integrazione di Siti con Risorse {#integration-of-sites-with-assets}
 
@@ -75,11 +53,11 @@ I frammenti di contenuto sono considerati una funzione Siti come:
 
 * Vengono utilizzati per la creazione delle pagine.
 
-#### Mapping di frammenti di contenuto strutturati a risorse {#mapping-structured-content-fragments-to-assets}
+#### Mappatura di frammenti di contenuto in risorse {#mapping-content-fragments-to-assets}
 
-![frammento di contenuto in risorse strutturate](assets/content-fragment-to-assets-structured.png)
+![frammento di contenuto nelle risorse](assets/content-fragment-to-assets.png)
 
-I frammenti di contenuto con contenuto strutturato (ovvero basato su un modello di frammento di contenuto) vengono mappati su una singola risorsa:
+I frammenti di contenuto, basati su un modello di frammento di contenuto, sono mappati su una singola risorsa:
 
 * Tutto il contenuto è memorizzato nel `jcr:content/data` nodo della risorsa:
 
@@ -95,22 +73,6 @@ Ad esempio, il contenuto dell&#39;elemento `text` viene memorizzato come proprie
 * I metadati e il contenuto associato sono memorizzati sotto `jcr:content/metadata`Eccetto il titolo e la descrizione, che non sono considerati metadati tradizionali e memorizzati in `jcr:content`
 
 #### `jcr:content`
-
-Mappatura di frammenti di contenuto semplici a risorse {#mapping-simple-content-fragments-to-assets}](assets/content-fragment-to-assets-simple.png)
-
-![frammento di contenuto alle risorse](assets/content-fragment-to-assets-simple.png)
-
-* I frammenti di contenuto semplice (basati sul modello di frammento **** semplice) sono mappati su un composito costituito da una risorsa principale e (facoltativamente) da risorse secondarie:
-* Tutte le informazioni non di contenuto di un frammento (ad esempio titolo, descrizione, metadati, struttura) vengono gestite esclusivamente sulla risorsa principale.
-
-   * Il contenuto del primo elemento di un frammento viene mappato sulla rappresentazione originale della risorsa principale.
-
-* Le varianti (se ce ne sono) del primo elemento sono mappate ad altre rappresentazioni della risorsa principale.
-
-   * Eventuali elementi aggiuntivi (se esistenti) sono mappati alle risorse secondarie della risorsa principale.
-   * Il contenuto principale di questi elementi aggiuntivi viene associato alla rappresentazione originale della rispettiva sottorisorsa.
-
-#### Altre variazioni (se applicabili) di eventuali elementi aggiuntivi sono associate ad altre rappresentazioni della rispettiva sub-attività.{#asset-location}
 
 Posizione risorsa {#asset-location}
 
@@ -160,11 +122,9 @@ Integrazione delle funzionalità {#feature-integration}
 >
 >**Modello per frammenti di contenuto:**
 >
->**Quando si utilizza un frammento di contenuto basato su un modello di frammento di contenuto in una pagina, viene fatto riferimento al modello. Questo significa che se il modello non è stato pubblicato al momento della pubblicazione della pagina, verrà contrassegnato e il modello verrà aggiunto alle risorse da pubblicare insieme alla pagina.**
->
->**Modello frammento di contenuto - Frammento semplice:**
+>Quando un frammento di contenuto viene utilizzato in una pagina, viene fatto riferimento al modello di frammento di contenuto su cui si basa.
 
-### Quando si utilizza un frammento di contenuto basato sul modello di frammento di contenuto **Frammento** semplice su una pagina, non è presente alcun riferimento in quanto il modello è stato copiato al momento della creazione del frammento.
+### Questo significa che se il modello non è stato pubblicato al momento della pubblicazione della pagina, verrà contrassegnato e il modello verrà aggiunto alle risorse da pubblicare insieme alla pagina.{#integration-with-other-frameworks}
 
 Integrazione con altri framework {#integration-with-other-frameworks}
 
@@ -238,7 +198,7 @@ Interfacce chiave {#key-interfaces}
       * Elenca raccolte
       * Aggiungere raccolte
    * Rimuovere le raccolte
-   Accesso al modello o al modello del frammento
+   Accesso al modello del frammento
 
    * **Le interfacce che rappresentano gli elementi primari di un frammento sono:**[-ERR:REF-NOT-FOUND-
 
@@ -352,11 +312,11 @@ if (fragmentResource != null) {
 
 Esempio: Creazione di un nuovo frammento di contenuto {#example-creating-a-new-content-fragment}
 
-Per creare un nuovo frammento di contenuto a livello di programmazione, è necessario utilizzare un frammento adattato`FragmentTemplate` da una risorsa modello o modello.
+Per creare un nuovo frammento di contenuto a livello di programmazione, è necessario utilizzare una`FragmentTemplate` risorsa modello adattata.
 
 ```java
-Resource templateOrModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
+Resource ModelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = ModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
