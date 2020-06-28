@@ -2,10 +2,10 @@
 title: Utilizzo di Cloud Ready Analyzer
 description: Utilizzo di Cloud Ready Analyzer
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: a0e58c626f94b778017f700426e960428b657806
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 0%
+source-wordcount: '1871'
+ht-degree: 1%
 
 ---
 
@@ -18,9 +18,12 @@ Segui la sezione seguente per comprendere le considerazioni importanti per l’e
 
 * Il rapporto CRA viene creato utilizzando l&#39;output del Rilevatore [](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)pattern del Adobe Experience Manager  (AEM). La versione del rilevatore di pattern utilizzato da CRA è inclusa nel pacchetto di installazione CRA.
 
-* Il CRA può essere eseguito solo dall&#39;utente **amministratore** o da un utente del gruppo **Amministratori** .
+* CRA può essere eseguito solo dall&#39;utente **amministratore** o da un utente del gruppo **amministratori** .
 
 * CRA è supportata nelle istanze AEM con versione 6.1 e successive.
+
+   >[!NOTE]
+   > Consulta [Installazione su AEM 6.1](#installing-on-aem61) per i requisiti speciali per l&#39;installazione di CRA su AEM 6.1.
 
 * CRA può essere eseguito su qualsiasi ambiente, ma è preferibile eseguirlo in un ambiente *Stage* .
 
@@ -33,10 +36,10 @@ Segui la sezione seguente per comprendere le considerazioni importanti per l’e
 
 ## Disponibilità {#availability}
 
-Cloud Readiness Analyzer può essere scaricato come file zip dal portale di distribuzione software. Potete installare il pacchetto tramite Gestione pacchetti nell’istanza del Adobe Experience Manager  sorgente (AEM).
+Cloud Readiness Analyzer può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Scarica Cloud Readiness Analyzer dal portale [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) .
+>Scarica Cloud Readiness Analyzer dal portale [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) .
 
 ## Visualizzazione del rapporto di analisi della disponibilità del cloud {#viewing-report}
 
@@ -46,18 +49,18 @@ Segui questa sezione per scoprire come visualizzare il rapporto di Cloud Readine
 
 1. Seleziona  Adobe Experience Manager e passa a Strumenti > **Operazioni** > **Cloud Readiness Analyzer**.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+   ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
 1. Dopo aver fatto clic su **Cloud Readiness Analyzer**, lo strumento inizia a generare il rapporto e lo visualizza quando è disponibile.
 
    >[!NOTE]
    >Sarà necessario scorrere la pagina verso il basso per visualizzare il rapporto completo.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
+   ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
 1. Una volta generato e visualizzato il rapporto CRA, potete scaricare il rapporto in formato CSV facendo clic su **CSV**, come illustrato nella figura riportata di seguito.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
+   ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
    >È possibile forzare l&#39;Autorità di controllo dei dati CRA a cancellare la cache e a rigenerare il rapporto facendo clic su **Aggiorna rapporto**.
@@ -169,7 +172,9 @@ Sono possibili i seguenti valori di risposta:
 * `500 Internal Server Error`: Indica che si è verificato un errore interno del server. Un messaggio in formato Dettagli problema fornisce ulteriori dettagli.
 * `503 Service Unavailable`: Indica che il server è occupato con un&#39;altra risposta e non può soddisfare questa richiesta in modo tempestivo. È probabile che ciò si verifichi solo quando vengono effettuate richieste sincrone. Un messaggio in formato Dettagli problema fornisce ulteriori dettagli.
 
-## Regolazione del ciclo di vita della cache {#cache-adjustment}
+## Informazioni amministratore
+
+### Regolazione del ciclo di vita della cache {#cache-adjustment}
 
 La durata predefinita della cache CRA è di 24 ore. Con l’opzione per aggiornare un rapporto e rigenerare la cache, sia nell’istanza AEM che nell’interfaccia HTTP, questo valore predefinito è probabilmente adatto per la maggior parte degli usi del CRA. Se il tempo di generazione del rapporto è particolarmente lungo per l’istanza di AEM, puoi regolare la durata della cache al fine di ridurre al minimo la rigenerazione del rapporto.
 
@@ -178,7 +183,12 @@ Il valore del ciclo di vita della cache viene memorizzato come `maxCacheAge` pro
 
 Il valore di questa proprietà corrisponde alla durata della cache, in secondi. Un amministratore può regolare la durata della cache utilizzando CRX/DE Lite.
 
+### Installazione su AEM 6.1 {#installing-on-aem61}
 
+CRA utilizza un account utente del servizio di sistema denominato `repository-reader-service` per eseguire il Rilevatore pattern. Questo account è disponibile su AEM 6.2 e versioni successive. In AEM 6.1, questo account deve essere creato *prima* dell&#39;installazione di CRA, eseguendo le operazioni seguenti:
 
+1. Seguite le istruzioni in [Creazione di un nuovo utente](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) di servizi per creare un utente. Impostate UserID su `repository-reader-service` e lasciate vuoto il Percorso intermedio, quindi fate clic sul segno di spunta verde.
 
+2. Seguite le istruzioni riportate nella sezione [Gestione di utenti e gruppi](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), in particolare le istruzioni per l’aggiunta di utenti a un gruppo per aggiungere l’ `repository-reader-service` utente al `administrators` gruppo.
 
+3. Installate il pacchetto CRA tramite Package Manager nell’istanza AEM di origine. (In questo modo verrà aggiunta la necessaria modifica alla configurazione ServiceUserMapper per l’utente del servizio `repository-reader-service` di sistema.)
