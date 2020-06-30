@@ -2,9 +2,9 @@
 title: Utilizzo di Sling Resource Merger in  Adobe Experience Manager come Cloud Service
 description: Sling Resource Merger fornisce servizi per accedere e unire le risorse
 translation-type: tm+mt
-source-git-commit: 987d2cd91e0d1ab604ea7de755c5568e0c0a4295
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,9 @@ Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/esclu
 
 >[!CAUTION]
 >
->La Fusione risorse Sling e i metodi correlati possono essere utilizzati solo con [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Ciò significa anche che è adatto solo per l’interfaccia standard touch; in particolare, le sostituzioni definite in questo modo sono applicabili solo alla finestra di dialogo attivata dal tocco di un componente.
+>La Fusione risorse Sling e i metodi correlati possono essere utilizzati solo con [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Ciò significa anche che è adatto solo per l’interfaccia touch standard; in particolare, le sostituzioni definite in questo modo sono applicabili solo alla finestra di dialogo attivata dal tocco di un componente.
 >
->Le sovrapposizioni/sostituzioni per altre aree (compresi altri aspetti di un componente touch o dell’interfaccia classica) richiedono la copia del nodo e della struttura appropriati dall’originale alla posizione in cui verrà definita la personalizzazione.
+>Le sovrapposizioni/sostituzioni per altre aree (compresi altri aspetti di un componente abilitato per il tocco) comportano la copia del nodo e della struttura appropriati dall’originale a dove verrà definita la personalizzazione.
 
 ### Obiettivi di AEM {#goals-for-aem}
 
@@ -45,7 +45,7 @@ Gli obiettivi per l’utilizzo di Sling Resource Merger in AEM sono:
 
 >[!NOTE]
 >
->Le sostituzioni non dipendono dai percorsi di ricerca, bensì usano la proprietà `sling:resourceSuperType` per creare la connessione.
+>Le sostituzioni non dipendono dai percorsi di ricerca, ma utilizzano la proprietà `sling:resourceSuperType` per creare la connessione.
 >
 >Tuttavia, le sostituzioni sono spesso definite in `/apps`, in quanto la best practice in AEM consiste nel definire le personalizzazioni in `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
 
@@ -61,6 +61,7 @@ Gli obiettivi per l’utilizzo di Sling Resource Merger in AEM sono:
    >
    >
 1. Apportare modifiche all&#39;interno `/apps`
+
 >
 
 
@@ -209,6 +210,7 @@ Questi, insieme alle funzionalità standard, consentono di:
 
       * tipo: `String[]`
       * value: un elenco dei nodi secondari (come definito in `/libs`) da nascondere/ignorare
+
       Il carattere jolly &amp;ast; può essere utilizzato per nascondere/ignorare tutti i nodi figlio.
 
 
