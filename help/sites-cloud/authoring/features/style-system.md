@@ -2,10 +2,10 @@
 title: Sistema di stili
 description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
 translation-type: tm+mt
-source-git-commit: e7efa3739ef386fdff9c86de238c64df09fb845f
+source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
 workflow-type: tm+mt
-source-wordcount: '1310'
-ht-degree: 100%
+source-wordcount: '1329'
+ht-degree: 93%
 
 ---
 
@@ -117,21 +117,27 @@ I passaggi seguenti sono necessari solo per abilitare il sistema di stile per i 
 
 ### Abilitare la scheda Stili nella finestra di dialogo di progettazione {#enable-styles-tab-design}
 
-Affinché un componente possa funzionare con il sistema di stili di AEM e visualizzare la scheda Stili nella finestra di dialogo di progettazione, lo sviluppatore del componente deve includere tale scheda con le seguenti impostazioni sul componente:
+Affinché un componente funzioni con il sistema di stile di AEM e visualizzi la scheda di stile nella relativa finestra di dialogo di progettazione, lo sviluppatore deve includere nel componente la scheda di stile con le seguenti impostazioni:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>Questo utilizza [le sovrapposizioni](/help/implementing/developing/introduction/overlays.md), tramite [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Con il componente configurato, gli stili configurati dall’autore della pagina vengono automaticamente inseriti da AEM sull’elemento decorativo in cui AEM racchiude in automatico ciascun componente modificabile. Il componente in sé non deve fare altro affinché questo accada.
 
 ### Abilitare la scheda Stili nella finestra di dialogo Modifica {#enable-styles-tab-edit}
 
-Una scheda Stili opzionale è disponibile anche nella finestra di dialogo Modifica. A differenza della scheda della finestra di progettazione, la scheda presente nella finestra di dialogo Modifica non è essenziale per il funzionamento del sistema di stili, ma offre all’autore di contenuti un’interfaccia alternativa opzionale per l’impostazione degli stili.
+Una scheda Stili opzionale è disponibile anche nella finestra di dialogo Modifica. A differenza della scheda Finestra di dialogo Progettazione, la scheda nella finestra di dialogo Modifica non è essenziale per il funzionamento del sistema di stile, ma è un&#39;interfaccia alternativa opzionale per l&#39;impostazione degli stili da parte dell&#39;autore del contenuto.
 
 La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo a quella della finestra di dialogo di progettazione:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>Questo utilizza [le sovrapposizioni](/help/implementing/developing/introduction/overlays.md), tramite [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
