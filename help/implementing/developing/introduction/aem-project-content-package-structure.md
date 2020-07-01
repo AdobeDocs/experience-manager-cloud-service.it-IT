@@ -1,10 +1,10 @@
 ---
 title: Struttura dei progetti AEM
-description: Scopri come definire le strutture dei pacchetti per la distribuzione in Adobe Experience Manager Cloud Service.
+description: Scoprite come definire le strutture dei pacchetti per la distribuzione  Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2530'
 ht-degree: 17%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 17%
 >
 >Acquisisci familiarità con l&#39;utilizzo [di base di Project Archetype di](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html)AEM e con il plug-in [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) FileVault Content Maven, man mano che questo articolo si basa su tali informazioni e concetti.
 
-Questo articolo illustra le modifiche necessarie ai progetti Adobe Experience Manager Maven per essere compatibili con il servizio AEM Cloud, garantendo che rispettino la suddivisione di contenuti modificabili e immutabili; che siano stabilite dipendenze necessarie per creare distribuzioni deterministiche non conflittuali; e che siano raggruppati in una struttura distribuibile.
+Questo articolo illustra le modifiche necessarie per  progetti Adobe Experience Manager Maven compatibili con AEM Cloud Service, garantendo che rispettino la suddivisione del contenuto modificabile e immutabile; che siano stabilite dipendenze necessarie per creare distribuzioni deterministiche non conflittuali; e che siano raggruppati in una struttura distribuibile.
 
 Le distribuzioni di applicazioni AEM devono essere composte da un unico pacchetto AEM. Questo pacchetto deve contenere a sua volta sottopacchetti che comprendono tutto ciò che l&#39;applicazione richiede per funzionare, compreso il codice, la configurazione e qualsiasi contenuto di base di supporto.
 
@@ -30,9 +30,9 @@ La struttura del pacchetto descritta in questo documento è compatibile **sia** 
 
 ## Aree variabile e immutabili del repository {#mutable-vs-immutable}
 
-`/apps` e `/libs` sono considerate aree **immutabili** di AEM poiché non possono essere modificate (create, aggiornate, eliminate) dopo l’avvio di AEM (ad es. in fase di runtime). Qualsiasi tentativo di modifica di un’area immutabile in fase di runtime avrà esito negativo.
+`/apps` e `/libs`**sono considerate aree immutabili di AEM poiché non possono essere modificate (create, aggiornate, eliminate) dopo l’avvio di AEM (ad es. in fase di runtime).** Eventuali tentativi di modifica di un’area immutabile in fase di runtime avranno esito negativo.
 
-Tutto il resto nella directory archivio, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`ecc. sono tutte aree **mutabili** , ovvero possono essere modificate in fase di esecuzione.
+Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
 >[!WARNING]
 >
@@ -46,11 +46,11 @@ Per questo motivo, sebbene gli indici Oak siano modificabili in fase di esecuzio
 
 >[!TIP]
 >
->Per ulteriori informazioni sull&#39;indicizzazione in AEM come servizio cloud, consultate il documento [Content Search and Indexing (Ricerca e indicizzazione dei contenuti).](/help/operations/indexing.md)
+>Per ulteriori dettagli sull’indicizzazione in AEM come Cloud Service, consultate il documento [Content Search and Indexing (Ricerca e indicizzazione di contenuti).](/help/operations/indexing.md)
 
 ## Struttura pacchetto consigliata {#recommended-package-structure}
 
-![Struttura del pacchetto di progetti Experience Manager](assets/content-package-organization.png)
+![struttura del pacchetto di progetto Experience Manager](assets/content-package-organization.png)
 
 Questo diagramma fornisce una panoramica della struttura di progetto consigliata e degli artifact di distribuzione del pacchetto.
 
@@ -59,13 +59,13 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
 + Il `ui.apps` pacchetto, o pacchetto di codice, contiene tutto il codice da distribuire e da distribuire solo a `/apps`. Gli elementi comuni del `ui.apps` pacchetto includono, tra l&#39;altro:
    + Pacchetti OSGi
       + `/apps/my-app/install`
-   + Configurazioni OSGi
+   + [Configurazioni OSGi](/help/implementing/deploying/configuring-osgi.md)
       + `/apps/my-app/config`
-   + Script HTL
+   + [Script HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
    + JavaScript e CSS (tramite librerie client)
       + `/apps/my-app/clientlibs`
-   + Sovrapposizioni di /libs
+   + [Sovrapposizioni](/help/implementing/developing/introduction/overlays.md) di /libs
       + `/apps/cq`, `/apps/dam/`, etc.
    + Configurazioni basate sul contesto di fallback
       + `/apps/settings`
@@ -95,7 +95,7 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
 
    I pacchetti ora sono inclusi utilizzando la configurazione [incorporata del plug-in Maven](#embeddeds)FileVault, anziché la `<subPackages>` configurazione.
 
-   Per implementazioni complesse di Experience Manager, potrebbe essere utile creare più `ui.apps` progetti/pacchetti e `ui.content` pacchetti che rappresentano siti o tenant specifici in AEM. In questo caso, accertatevi che la divisione tra contenuto variabile e immutabile sia rispettata, e che i pacchetti di contenuto richiesti vengano aggiunti come pacchetti secondari nel pacchetto di contenuto `all` contenitore.
+   Per implementazioni Experience Manager complesse , potrebbe essere utile creare più `ui.apps` e `ui.content` progetti/pacchetti che rappresentano siti o tenant specifici in AEM. In questo caso, accertatevi che la divisione tra contenuto variabile e immutabile sia rispettata, e che i pacchetti di contenuto richiesti vengano aggiunti come pacchetti secondari nel pacchetto di contenuto `all` contenitore.
 
    Ad esempio, una struttura complessa di pacchetti di contenuto di distribuzione potrebbe avere l&#39;aspetto seguente:
 
@@ -143,7 +143,7 @@ Mentre gli script Repo Init stessi vivono nel `ui.apps` progetto come script, po
 + Gruppi
 + ACL
 
-Gli script Repo Init sono memorizzati come `scripts` voci delle configurazioni di fabbrica `RepositoryInitializer` OSGi e possono quindi essere implicitamente indirizzati dalla modalità di esecuzione, consentendo differenze tra gli script AEM Author e AEM Publish Services&#39;Repo Init, o anche tra Envs (Dev, Stage e Prod).
+Gli script Repo Init sono memorizzati come `scripts` voci delle configurazioni di fabbrica `RepositoryInitializer` OSGi, e quindi possono essere implicitamente indirizzati dalla modalità di esecuzione, consentendo differenze tra gli script Repo Init dei servizi AEM Author e AEM Publish, o anche tra Envs (Dev, Stage e Prod).
 
 Tenete presente che quando definite Utenti e Gruppi, solo i gruppi sono considerati parte dell’applicazione e che la funzione integrata deve essere definita qui. Gli utenti e i gruppi dell&#39;organizzazione devono essere ancora definiti in fase di runtime in AEM; ad esempio, se un flusso di lavoro personalizzato assegna il lavoro a un gruppo denominato, tale gruppo deve essere definito in tramite Repo Init nell’applicazione AEM, tuttavia se il gruppo è semplicemente di tipo organizzativo, ad esempio &quot;Il team di Wendy&quot; e &quot;Il team di Sean&quot;, questi sono definiti e gestiti al momento dell’esecuzione in AEM.
 
@@ -549,7 +549,7 @@ In `ui.content/pom.xml`, aggiungete le seguenti `<dependencies>` direttive alla 
 ...
 ```
 
-### Pulizia della cartella di destinazione del progetto contenitore {#xml-clean-container-package}
+### Pulizia della cartella Target del progetto contenitore {#xml-clean-container-package}
 
 In `all/pom.xml` aggiungere il `maven-clean-plugin` plug-in che pulirà la directory di destinazione prima delle build Maven.
 
