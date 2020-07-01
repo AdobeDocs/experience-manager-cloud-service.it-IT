@@ -2,9 +2,9 @@
 title: Utilizzo di Sling Resource Merger in  Adobe Experience Manager come Cloud Service
 description: Sling Resource Merger fornisce servizi per accedere e unire le risorse
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1160'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Sling Resource Merger fornisce servizi per accedere e unire le risorse. Fornisce meccanismi di diff (differenziazione) per entrambi:
 
-* **[Sovrapposizioni](/help/implementing/developing/introduction/overlays.md)**di risorse tramite i percorsi[di ricerca](/help/implementing/developing/introduction/overlays.md#configuring-the-search-paths)configurati.
+* **[Sovrapposizioni](/help/implementing/developing/introduction/overlays.md)**di risorse tramite i percorsi[di](/help/implementing/developing/introduction/overlays.md#search-paths)ricerca.
 
 * **Ignora** le finestre di dialogo dei componenti per l’interfaccia touch (`cq:dialog`), utilizzando la gerarchia dei tipi di risorse (tramite la proprietà `sling:resourceSuperType`).
 
@@ -30,9 +30,7 @@ Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/esclu
 
 >[!CAUTION]
 >
->La Fusione risorse Sling e i metodi correlati possono essere utilizzati solo con [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Ciò significa anche che è adatto solo per l’interfaccia touch standard; in particolare, le sostituzioni definite in questo modo sono applicabili solo alla finestra di dialogo attivata dal tocco di un componente.
->
->Le sovrapposizioni/sostituzioni per altre aree (compresi altri aspetti di un componente abilitato per il tocco) comportano la copia del nodo e della struttura appropriati dall’originale a dove verrà definita la personalizzazione.
+>Sling Resource Merger e i metodi correlati possono essere utilizzati solo con l’interfaccia touch (che è l’unica interfaccia disponibile per AEM come Cloud Service).
 
 ### Obiettivi di AEM {#goals-for-aem}
 
@@ -43,27 +41,17 @@ Gli obiettivi per l’utilizzo di Sling Resource Merger in AEM sono:
 
    Quando si utilizza la Fusione risorse Sling si consiglia di non copiare l&#39;intera struttura da `/libs` perché ciò comporterebbe la conservazione di troppe informazioni nella personalizzazione (in genere `/apps`). Duplicare le informazioni aumenta inutilmente la possibilità di problemi quando il sistema viene aggiornato in qualsiasi modo.
 
->[!NOTE]
->
->Le sostituzioni non dipendono dai percorsi di ricerca, ma utilizzano la proprietà `sling:resourceSuperType` per creare la connessione.
->
->Tuttavia, le sostituzioni sono spesso definite in `/apps`, in quanto la best practice in AEM consiste nel definire le personalizzazioni in `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
-
 >[!CAUTION]
 >
 >Non ***devi*** cambiare nulla nel `/libs` percorso.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
+>Questo perché il contenuto di `/libs` potrebbe essere sovrascritto in qualsiasi momento gli aggiornamenti vengono applicati all&#39;istanza.
 >
->Il metodo consigliato per la configurazione e altre modifiche è:
->
->1. Ricreare l&#39;elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
+>* Le sovrapposizioni dipendono dai percorsi [di](/help/implementing/developing/introduction/overlays.md#search-paths)ricerca.
    >
    >
-1. Apportare modifiche all&#39;interno `/apps`
-
->
-
+* Le sostituzioni non dipendono dai percorsi di ricerca, bensì usano la proprietà `sling:resourceSuperType` per creare la connessione.
+   >  Tuttavia, le sostituzioni sono spesso definite in `/apps`, come procedura ottimale in AEM come Cloud Service, per definire le personalizzazioni in `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
 
 
 ### Proprietà {#properties}
@@ -210,7 +198,6 @@ Questi, insieme alle funzionalità standard, consentono di:
 
       * tipo: `String[]`
       * value: un elenco dei nodi secondari (come definito in `/libs`) da nascondere/ignorare
-
       Il carattere jolly &amp;ast; può essere utilizzato per nascondere/ignorare tutti i nodi figlio.
 
 
