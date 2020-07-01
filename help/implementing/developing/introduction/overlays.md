@@ -2,9 +2,9 @@
 title: Sovrapposizioni per  Adobe Experience Manager come Cloud Service
 description: AEM come Cloud Service utilizza il principio delle sovrapposizioni per estendere e personalizzare le console e altre funzionalità
 translation-type: tm+mt
-source-git-commit: 58440cb565039becd5b08333994b70f2ea77cc99
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Experience Manager as a Cloud Service uses the principle of overlays to al
 
 Sovrapposizione è un termine che può essere utilizzato in molti contesti. In questo contesto (estensione di AEM come Cloud Service) una sovrapposizione implica l’uso della funzionalità predefinita e l’imposizione di definizioni personalizzate su di essa (per personalizzare la funzionalità standard).
 
-In un’istanza standard la funzionalità predefinita è mantenuta in `/libs` ed è consigliabile definire la sovrapposizione (personalizzazioni) sotto il `/apps` ramo. AEM usa un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca nel `/apps` ramo e poi nel `/libs` ramo (il percorso di [ricerca può essere configurato](#configuring-the-search-paths)). Questo meccanismo significa che la sovrapposizione (e le personalizzazioni qui definite) avranno priorità.
+In un’istanza standard la funzionalità predefinita è mantenuta in `/libs` ed è consigliabile definire la sovrapposizione (personalizzazioni) sotto il `/apps` ramo (utilizzando un percorso [di](#search-paths) ricerca per risolvere le risorse).
 
 * L’interfaccia touch utilizza sovrapposizioni [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html):
 
@@ -49,38 +49,15 @@ Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio pe
 Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
 -->
 
-* Non ***è necessario *apportare modifiche al`/libs`ramo **Eventuali modifiche apportate potrebbero andare perdute, in quanto questo ramo può subire modifiche ogni volta che:
-
-   * aggiornare l&#39;istanza
-   * applica un hotfix
-   * installare un pacchetto di funzioni
+* Non ***è necessario *apportare modifiche al`/libs`ramo **Eventuali modifiche apportate potrebbero andare perdute, perché questo ramo può subire modifiche ogni volta che vengono applicati aggiornamenti all&#39;istanza.
 
 * Consentono di concentrare le modifiche in un&#39;unica posizione; facilitando il monitoraggio, la migrazione, il backup e/o il debug delle modifiche, a seconda delle necessità.
 
-## Configurazione dei percorsi di ricerca {#configuring-the-search-paths}
+## Percorsi di ricerca {#search-paths}
 
-Per le sovrapposizioni, la risorsa consegnata è un insieme di risorse e proprietà recuperate, a seconda dei percorsi di ricerca che è possibile definire:
+In AEM viene utilizzato un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca del `/apps` ramo e quindi del `/libs` ramo. Questo meccanismo significa che la sovrapposizione `/apps` (e le personalizzazioni ivi definite) avranno priorità.
 
-* Il percorso **di ricerca di Resource** Resolver come definito nella configurazione [](/help/implementing/deploying/configuring-osgi.md) OSGi per **Apache Sling Resource Resolver Factory**.
-
-   * L&#39;ordine superiore dei percorsi di ricerca indica le rispettive priorità.
-   * In un’installazione standard le impostazioni predefinite principali sono `/apps`, `/libs` pertanto il contenuto di `/apps` ha una priorità maggiore di quella di `/libs` (ovvero *sovrappone* ).
-
-* Due utenti di servizi necessitano dell&#39;accesso JCR:READ alla posizione in cui sono memorizzati gli script. Tali utenti sono: components-search-service (utilizzato dai com.day.cq.wcm.coreto access/cache components) e sling-scripting (utilizzato da org.apache.sling.servlets.resolver per trovare servlet).
-* È inoltre necessario configurare la seguente configurazione in base al punto in cui vengono inseriti gli script (in questo esempio in /etc, /libs o /apps).
-
-   ```
-   PID = org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl
-   resource.resolver.searchpath=["/etc","/apps","/libs"]
-   resource.resolver.vanitypath.whitelist=["/etc/","/apps/","/libs/","/content/"]
-   ```
-
-* Infine, deve essere configurato anche Servlet Resolver (in questo esempio per aggiungere anche /etc)
-
-   ```
-   PID = org.apache.sling.servlets.resolver.SlingServletResolver
-   servletresolver.paths=["/bin/","/libs/","/apps/","/etc/","/system/","/index.servlet","/login.servlet","/services/"]
-   ```
+Per le sovrapposizioni, la risorsa consegnata è un insieme di risorse e proprietà recuperate, a seconda dei percorsi di ricerca definiti nella configurazione OSGi.
 
 <!--
 ## Example of Usage {#example-of-usage}
