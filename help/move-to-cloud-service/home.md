@@ -1,58 +1,60 @@
 ---
-title: Passa ad AEM come servizio cloud
-description: Adobe Experience Manager come servizio cloud per passare ad AEM come servizio cloud per risorse di supporto autonomo e collegamenti alla documentazione
+title: Passare ad AEM as a Cloud Service
+description: 'Adobe Experience Manager as a Cloud Service: risorse di supporto autonomo e collegamenti alla documentazione sul passaggio ad AEM as a Cloud Service'
 translation-type: tm+mt
-source-git-commit: 43c5af886ccddea73b68008a372f192ff8c1f26f
+source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 57%
+source-wordcount: '526'
+ht-degree: 76%
 
 ---
 
 
-# Moving to AEM as a Cloud Service {#aem-moving-to-aem-guide}
+# Passaggio ad AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
-## Vantaggi del passaggio ad AEM come servizio cloud {#benefits-aem-moving-to-aem-guide}
+## Vantaggi del passaggio ad AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
-AEM come servizio Cloud fornisce una base tecnologica scalabile, sicura e agile per i siti e le risorse di Experience Manager, consentendo agli esperti di marketing e all&#39;IT di concentrarsi sulla fornitura di esperienze di grande impatto su scala.
+AEM as a Cloud Service fornisce una base tecnologica scalabile, sicura e agile per Experience Manager Sites e Assets, consentendo ai team di marketing e IT di concentrarsi sulla fornitura di esperienze d’impatto su scala.
 
-Con AEM come servizio Cloud, i team possono concentrarsi sull&#39;innovazione invece di pianificare gli aggiornamenti di prodotto. Le nuove funzionalità dei prodotti vengono testate e distribuite ai team senza interruzioni, in modo che possano sempre accedere all&#39;applicazione all&#39;avanguardia.
+Con AEM as a Cloud Service, i team possono concentrarsi sull’innovazione invece di pianificare gli aggiornamenti di prodotto. Le nuove funzionalità dei prodotti vengono testate in maniera approfondita e distribuite ai team senza interruzioni, in modo che possano sempre accedere all’applicazione all’avanguardia.
 
-## Il processo di transizione al servizio cloud {#understanding-move}
+## Informazioni sul processo di transizione verso Cloud Service {#understanding-move}
 
-Il percorso di transizione al servizio Cloud prevede tre fasi: Pianificazione, Esecuzione e Post-live.
+Il percorso di transizione verso Cloud Service prevede tre fasi: pianificazione, esecuzione e post-pubblicazione.
 
-Per una transizione corretta e fluida, è necessario garantire una pianificazione adeguata e attenersi alle procedure ottimali descritte nella presente Guida.
+Per una transizione corretta e senza problemi, è necessario garantire una pianificazione adeguata e attenersi alle best practice descritte nella presente guida.
 
-La figura seguente mostra una rappresentazione pittorica del percorso di transizione consigliato a Cloud Service.
+La figura seguente mostra un’illustrazione del percorso consigliato per la transizione a Cloud Service.
 
-![image](/help/move-to-cloud-service/assets/home-img1.png)
+![immagine](/help/move-to-cloud-service/assets/home-img1.png)
 
-Ulteriori informazioni sulle diverse fasi del passaggio al servizio Cloud:
+Ulteriori informazioni sulle diverse fasi del percorso di transizione a Cloud Service:
 
 * **[Pianificazione](/help/move-to-cloud-service/planning.md)**
 * **[Esecuzione](/help/move-to-cloud-service/execution.md)**
-* **[Post Go-live](/help/move-to-cloud-service/post-go-live.md)**
+* **[Post-pubblicazione](/help/move-to-cloud-service/post-go-live.md)**
 
 
 ## Guide di Experience Manager as a Cloud Service {#aem-guides}
 
 | Guida utente | Descrizione |
 |---|---|
-| [Home page di Experience Manager as a Cloud Service](/help/landing/home.md) | Panoramica della documentazione di Experience Manager as a Cloud Service. |
+| [Home page di Experience Manager as a Cloud Service](/help/landing/home.md) | Per una panoramica dell&#39;Experience Manager  come documentazione Cloud Service, iniziate da qui. |
 | [Panoramica](/help/overview/home.md) | Questa guida offre una panoramica di Experience Manager as a Cloud Service, con un’introduzione, terminologia e altro ancora. |
-| [Note sulla versione](/help/release-notes/home.md) | Questa guida include informazioni importanti sull’ultima versione di Experience Manager as a Cloud Service e illustra le funzioni nuove, obsolete e rimosse, nonché i problemi noti. |
-| [Guida utente sulla sicurezza](/help/security/home.md) | Argomenti importanti sulla sicurezza relativi a Experience Manager as a Cloud Service. |
+| [Note sulla versione](/help/release-notes/home.md) | Questa guida fornisce informazioni importanti sull’ultima versione di  Experience Manager come Cloud Service, comprese le funzioni nuove, obsolete e rimosse e i problemi noti. |
 | [Concetti di base](/help/core-concepts/home.md) | In questa guida vengono introdotti i concetti di base di Experience Manager as a Cloud Service e viene illustrata l’architettura del nuovo servizio. |
-| [Guida utente di Sites](/help/sites-cloud/home.md) | Informazioni su come amministrare Experience Manager Sites as a Cloud Service. |
-| [Guida utente di Assets](/help/assets/home.md) | Informazioni su come amministrare Experience Manager Assets as a Cloud Service. |
-| [Passaggio ad AEM come guida utente per i servizi cloud](/help/move-to-cloud-service/home.md) | Comprendi il percorso di transizione verso il servizio Cloud. |
-| [Guida utente sull’implementazione](/help/implementing/home.md) | Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per l’implementazione a scopo di sviluppo. |
-| [Guida utente dei connettori](/help/connectors/home.md) | Questa guida contiene informazioni su come integrare le soluzioni in Experience Manager as a Cloud Service. |
-| [Guida utente sulle operazioni](/help/operations/home.md) | Guesta guida contiene informazioni sulle operazioni back-end di Experience Manager as a Cloud Service, ad esempio le attività di indicizzazione e manutenzione. |
+| [Guida utente sulla sicurezza](/help/security/home.md) | Argomenti importanti sulla sicurezza relativi a Experience Manager as a Cloud Service. |
+| [Onboarding](/help/onboarding/home.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
+| [Guida utente di Sites](/help/sites-cloud/home.md) | Scopri come creare e amministrare  siti Experience Manager come Cloud Service. |
+| [Guida utente di Assets](/help/assets/home.md) | Scopri come utilizzare e amministrare  Risorse Experience Manager come Cloud Service. |
+| [Guida utente sul passaggio ad AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Comprendi il percorso di transizione verso Cloud Service. |
+| [Guida utente sull’implementazione](/help/implementing/home.md) | Scoprite come personalizzare il vostro Experience Manager  come implementazione Cloud Service, compresi gli argomenti relativi allo sviluppo e alla distribuzione. |
+| [Guida utente dei connettori](/help/connectors/home.md) | Scopri come integrare i connettori in  Experience Manager come Cloud Service. |
+| [Guida utente sulle operazioni](/help/operations/home.md) | Scopri le operazioni di back-end di  Experience Manager come Cloud Service, ad esempio attività di indicizzazione e manutenzione. |
 
 ## Altre risorse su Experience Manager {#other-resources}
 
+* [Aggiornamenti recenti alla documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Documentazione di Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentazione di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 * [Documentazione di Core Components](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
