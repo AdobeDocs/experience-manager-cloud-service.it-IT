@@ -1,11 +1,11 @@
 ---
 title: Fase di post-pubblicazione
 description: Fase di post-pubblicazione
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '242'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -29,12 +29,12 @@ Per ulteriori informazioni sugli strumenti di sviluppo, consulta [Implementazion
 
 ## CRX/DE Lite {#crxde-lite}
 
-L&#39;utente può accedere a CRX/DE Lite nell&#39;ambiente di sviluppo, ma non nell&#39;area di visualizzazione o nella produzione.
+Come utente, puoi accedere a CRX/DE Lite nell’ambiente di sviluppo, ma non in quello di stage o produzione.
 
 >[IMPORTANTE]
 >La scrittura in archivi immutabili come `/libs` e `/apps` in fase di runtime genera errori. Inoltre, in qualità di cliente, non puoi accedere agli strumenti per sviluppatori per gli ambienti di produzione e di staging.
 
-Refer to [Developing with CRX/DE Lite](https://docs.adobe.com/help/it-IT/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) to learn how to develop your AEM application using CRX/DE Lite.
+Per informazioni su come sviluppare l’applicazione AEM utilizzando CRX/DE Lite, consulta [Sviluppo con CRX/DE Lite](https://docs.adobe.com/help/it-IT/experience-manager-65/developing/devtools/developing-with-crxde-lite.html).
 
 ## Gestione dei registri {#managing-logs}
 
