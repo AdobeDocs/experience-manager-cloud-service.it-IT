@@ -1,11 +1,11 @@
 ---
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1582'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,26 +18,26 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * l requisiti di sistema minimi per lo strumento Content Transfer (Trasferimento contenuti) sono AEM 6.3 o versione successiva e JAVA 8. Se utilizzi una precedente versione di AEM, dovrai aggiornare l’archivio dei contenuti ad AEM 6.5 per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
+* Se utilizzi un *ambiente Sandbox*, assicurati che sia aggiornato alla versione del 10 giugno 2020 o successiva. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
 
-* Per utilizzare lo strumento di trasferimento dei contenuti, devi essere un utente amministratore nell’istanza di origine e appartenere al gruppo di amministratori AEM nell’istanza di Cloud Service a cui trasferisci i contenuti. Gli utenti non autorizzati non potranno recuperare il token di accesso per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+* Per utilizzare lo strumento Content Transfer (Trasferimento contenuti), devi essere un utente amministratore nell’istanza sorgente e appartenere al gruppo di amministratori di AEM nell’istanza Cloud Service a cui stai trasferendo i contenuti. Gli utenti non autorizzati non potranno recuperare il token di accesso per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 
 * La *fase di acquisizione* per l’istanza di authoring riduce l’intera implementazione di authoring. Questo significa che l’istanza di authoring di AEM non sarà disponibile durante l’intero processo di acquisizione.
 
-* Il limite superiore consigliato per la dimensione del repository supportata da Content Transfer Tool per volta è di 20 GB.
+* Il limite superiore consigliato per la dimensione dell’archivio supportata per volta dallo strumento Content Transfer (Trasferimento contenuti) è di 20 GB.
 
 ## Disponibilità {#availability}
 
-Content Transfer Tool può essere scaricato come file zip (Content Transfer Tool v1.0.0) dal portale di distribuzione del software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM).
+Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip (Content Transfer Tool v1.0.0) dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Scaricate Content Transfer Tool dal portale [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) .
+>Scarica lo strumento Content Transfer (Trasferimento contenuti) dal portale di [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
 
 ## Esecuzione dello strumento Content Transfer (Trasferimento contenuti) {#running-tool}
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on&captions=ita)
 
 Segui le indicazioni contenute in questa sezione per apprendere come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti in AEM as a Cloud Service (authoring/pubblicazione):
 
@@ -70,7 +70,7 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
    1. **Access Token** (Token di accesso): inserisci il token di accesso.
 
       >[!NOTE]
-      >Puoi recuperare il token di accesso dell’istanza di authoring in `/libs/granite/migration/token.json`. Il token di accesso viene recuperato dall’istanza di creazione di Cloud Service.
+      >Puoi recuperare il token di accesso dell’istanza di authoring in `/libs/granite/migration/token.json`. Il token di accesso viene recuperato dall’istanza di authoring di Cloud Service.
 
    1. **Parameters** (Parametri): seleziona i seguenti parametri per creare il set di migrazione:
 
@@ -213,7 +213,7 @@ Oppure,
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
-1. Per limitare i file di registro senza utilizzare l’interfaccia utente, puoi effettuare la SSH nell’ambiente AEM di origine e impostare le `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`dimensioni finali.
+1. Per visualizzare i registri senza utilizzare l’interfaccia utente, puoi accedere all’ambiente AEM sorgente tramite SSH e visualizzare il `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
 
 ### Eliminazione di un set di migrazione {#deleting-migration-set}
 
