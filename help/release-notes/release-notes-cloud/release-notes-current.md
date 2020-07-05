@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fcae90c8e24dbd2994e8700daf22f5dff039b299
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 54%
+ht-degree: 85%
 
 ---
 
@@ -24,11 +24,11 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di AEM Sites in
 
 ### Novità {#whats-new-2020.6.0}
 
-La release 2.9.0 dei componenti [](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) core è ora disponibile come parte di AEM Sites tra cui:
+La versione 2.9.0 dei [Componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) è ora disponibile come parte di AEM Sites e include:
 
-* Integrazione tra [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) e i componenti core
+* Integrazione tra [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) e i Componenti core
 * Attributi ID HTML configurabili per tutti i componenti
-* Nuovo componente Barra di avanzamento
+* Un nuovo componente Barra di avanzamento
 * Numerose correzioni di bug
 
 ### Correzioni di bug {#sites-bug-fixes}
@@ -61,27 +61,27 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * Un utente con il ruolo *Proprietario business* in Cloud Manager è ora in grado di eliminare un programma sandbox dalla pagina di destinazione (tramite il pulsante di azione rapida nella scheda Programma) o dall’interno del programma.
 
-   Per ulteriori informazioni, vedere [Eliminazione di un programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) sandbox.
+   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
-* Un utente del programma sandbox con il ruolo di *Proprietario business* o *Manager implementazione* in Cloud Manager è ora in grado di eliminare l’ambiente di produzione e stage impostato tramite l’interfaccia di Cloud Manager. The delete option is now available from both the Environment card on the **Programs Overview** page as well as the **Environments** page. Selezionando l’opzione Elimina in Produzione o Stage, viene eliminato anche l’altro nel set.
+* Un utente del programma sandbox con il ruolo di *Proprietario business* o *Manager implementazione* in Cloud Manager è ora in grado di eliminare l’ambiente di produzione e stage impostato tramite l’interfaccia di Cloud Manager. L’opzione di eliminazione è ora disponibile sia nella scheda Ambiente nella pagina **Panoramica dei programmi**, sia nella pagina **Ambienti**. Selezionando l’opzione Elimina in Produzione o Stage, viene eliminato anche l’altro nel set.
 
-   Per ulteriori informazioni, vedere [Eliminazione di un programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) sandbox.
+   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Delle descrizioni sulla pagina di destinazione forniscono all’utente istruzioni di base sulla navigazione.
 
-* Coach marks on the **Program Overview** page to inform and instruct the user about basic navigation inside Cloud Manager to get them started.
+* Delle descrizioni nella pagina **Panoramica del programma** forniscono all’utente istruzioni di base sulla navigazione in Cloud Manager, utili per iniziare a usarlo.
 
 * Cloud Manager ora presenta una pagina **SCOPRI**, accessibile tramite la navigazione superiore. Questa pagina include risorse per aiutare gli utenti a conoscere i flussi di lavoro più utilizzati in base ai loro ruoli assegnati in Cloud Manager.
 
-* Sandbox Programs are now identified by means of a **Sandbox** badge that will be displayed on the program card on the landing page as well as next to the program name in the **Program Overview** page.
+* I programmi sandbox ora sono identificati da un contrassegno **Sandbox** visualizzato sulla scheda del programma nella pagina di destinazione e accanto al nome del programma nella pagina **Panoramica del programma**.
 
-* Un utente con il ruolo SysAdmin ora ha accesso con un solo clic alla posizione in Admin Console da cui è possibile gestire i ruoli o le autorizzazioni degli utenti per Cloud Manager. A **Manage Access** button is now available on the landing page next to the **Add Program** button.
+* Un utente con il ruolo SysAdmin ora ha accesso con un solo clic alla posizione in Admin Console da cui è possibile gestire i ruoli o le autorizzazioni degli utenti per Cloud Manager. Nella pagina di destinazione è ora disponibile un pulsante **Gestisci accesso** accanto al pulsante **Aggiungi programma**.
 
-   Per ulteriori informazioni, consulta Attività [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) SysAdmin.
+   Per ulteriori informazioni, consulta [Attività SysAdmin](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks).
 
-* Un utente con il ruolo SysAdmin ora ha accesso con un solo clic all&#39;istanza di creazione direttamente da Cloud Manager.
+* Un utente con il ruolo SysAdmin ora dispone dell’accesso con un solo clic all’istanza di authoring direttamente da Cloud Manager.
 
-   Per ulteriori informazioni, consultate [Gestione dell&#39;accesso all&#39;istanza](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) Author.
+   Per ulteriori informazioni, consulta [Gestione dell’accesso all’istanza di authoring](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem).
 
 * Il registro Build ora include l’elenco degli artefatti individuati, inclusi i pacchetti di contenuti saltati.
 
@@ -93,7 +93,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * In alcune situazioni, le icone nella finestra di dialogo **Crea programma** non erano allineate.
 
-* The AEM release identifier was not consistently displayed on the **Programs Overview** page.
+* L’identificatore di versione di AEM non veniva visualizzato in modo coerente nella pagina **Panoramica dei programmi**.
 
 * Durante la configurazione della pipeline di produzione, l’opzione **Scheduled Deployment** (Implementazione pianificata) non era visibile per alcuni clienti.
 
@@ -110,23 +110,23 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 I tag avanzati migliorati consentono di addestrare modelli di assegnazione tag avanzati per riconoscere le immagini in base a tag aziendali specifici, oltre che ai tag avanzati generici.
 
 Con questa versione, è disponibile una nuova user experience guidata che consente di impostare l’addestramento di tag avanzati per set di tag specifici dei clienti e di addestrarli con risorse che in futuro dovranno essere riconosciute e a cui dovranno essere assegnati i tag. L&#39;esperienza è ora più intuitiva.
-Train Smart Tags avanzato per una formazione più intuitiva per Smart Tags. Scoprite [come aggiungere smart tag alle risorse](/help/assets/smart-tags.md) e [configurare l’assegnazione di smart tag](/help/assets/smart-tags-configuration.md).
+Train Smart Tags avanzato per una formazione più intuitiva per Smart Tags. Scopri [come aggiungere tag avanzati alle risorse](/help/assets/smart-tags.md) e [configurare l’assegnazione di tag avanzati](/help/assets/smart-tags-configuration.md).
 
 **Supporto per l&#39;assimilazione, l&#39;anteprima e la distribuzione di contenuti 3D**
 
-Le organizzazioni ora possono archiviare e utilizzare file 3D in AEM Assets. L’utente può caricare, visualizzare in anteprima e utilizzare vari file 3D di base, tra cui i file OBJ, STL, GLTF e GLB. Inoltre, [!DNL Dynamic Media]potete configurare e distribuire esperienze 3D utilizzando URL agnostici o visualizzatori. Tra questi sono inclusi un Visualizzatore di esperienza 3D [!DNL Dynamic Media], un componente Visualizzatore 3D di Sites e la possibilità di distribuire file 3D tramite [!DNL Dynamic Media] (AR/VR). Consultate [Utilizzo delle risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Le organizzazioni ora possono archiviare e utilizzare file 3D in AEM Assets. L’utente può caricare, visualizzare in anteprima e utilizzare vari file 3D di base, tra cui i file OBJ, STL, GLTF e GLB. Inoltre, [!DNL Dynamic Media]potete configurare e distribuire esperienze 3D utilizzando URL agnostici o visualizzatori. Tra questi sono inclusi un Visualizzatore di esperienza 3D [!DNL Dynamic Media], un componente Visualizzatore 3D di Sites e la possibilità di distribuire file 3D tramite [!DNL Dynamic Media] (AR/VR). Consulta [Utilizzo delle risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Supporto di Adobe Asset Link per Adobe XD**
 
-Con la versione più recente, [!DNL Experience Manager Assets] supporta un nuovo [!DNL Adobe Asset Link] plug-in rilasciato con [!DNL Adobe XD] v29.3. L’integrazione consente ai designer di accedere e utilizzare le risorse [!DNL Experience Manager] nelle proprie progettazioni, senza dover uscire dall’ [!DNL Adobe XD] applicazione. Consultate [Adobe Asset Link (Collegamento risorse Adobe) per la documentazione](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)Adobe XD.
+With the latest release, [!DNL Experience Manager Assets] supports a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29.3. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. Consulta la [documentazione Adobe Asset Link per Adobe XD](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link-for-xd.html).
 
-Con questa versione, gli utenti creativi e i designer possono ora lavorare con le risorse gestite [!DNL AEM Assets] utilizzando [!DNL Adobe Asset Link] in una serie di app desktop Creative Cloud, tra cui [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator]e [!DNL InDesign].
+Con questa versione, gli utenti creativi e i designer possono lavorare con le risorse gestite in [!DNL AEM Assets] utilizzando [!DNL Adobe Asset Link] in una serie di app desktop di Creative Cloud, tra cui [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator] e [!DNL InDesign].
 
 **Miglioramenti dell’accessibilità**
 
 [!DNL Adobe Experience Manager Assets] è ora più accessibile in conformità alle linee guida WCAG (Web Content Accessibility Guidelines) v2.1. L’accessibilità è stata migliorata per i seguenti casi di utilizzo o interfacce:
 
-Gli elementi dell&#39;interfaccia utente sono intuitivi per gli assistenti vocali, sono accessibili tramite una tastiera e hanno un contrasto migliore. Segue un elenco dettagliato di miglioramenti:
+Gli elementi dell’interfaccia utente sono compatibili con gli assistenti vocali, sono accessibili tramite una tastiera e hanno un contrasto migliore. Segue un elenco dettagliato dei miglioramenti:
 
 * The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress bars on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress bar. Al contrario, chi usa un assistente vocale percepisce questi indicatori di stato come un elenco di schede. (CQ-4273015)
 
@@ -138,23 +138,23 @@ Gli elementi dell&#39;interfaccia utente sono intuitivi per gli assistenti vocal
    * Non è in grado di passare a tutti i suggerimenti automatici elencati.
    * Does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
 
-* The [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using a keyboard and are screen reader friendly. (CQ-4272953) Gli utenti possono trascinare i componenti utilizzando la tastiera in modalità di ricerca NVDA. (CQ-4296326)
+* The [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using a keyboard and are screen reader friendly. (CQ-4272953) Gli utenti possono trascinare i componenti utilizzando la tastiera nella modalità Sfoglia di NVDA. (CQ-4296326)
 
 * Nell’interfaccia di Assets, le impostazioni di visualizzazione non sono accessibili dalla tastiera. (CQ-4289038)
 
-* Il rapporto di luminosità è inferiore a 3:1 per le icone di classificazione colorate in giallo. È svantaggioso per gli utenti ipovedenti e senza percezione dei colori. Le stelle di valutazione vengono visualizzate nella scheda della risorsa o nella vista a schede
+* Il rapporto di luminosità è inferiore a 3:1 per le icone di classificazione colorate in giallo. È svantaggioso per gli utenti ipovedenti e senza percezione dei colori. Le stelle di valutazione vengono visualizzate nella scheda della risorsa o nella visualizzazione a schede
 
-* Il colore e il contrasto di alcuni elementi dell&#39;interfaccia utente vengono aggiornati in modo che gli utenti con visione limitata o senza percezione del colore possano distinguere questi elementi dell&#39;interfaccia utente. Ad esempio, il colore delle icone di valutazione a stella nella sezione [!UICONTROL Valutazione] della scheda [!UICONTROL Avanzate] della [!UICONTROL scheda] Proprietàdi una risorsa e nella vista a schede viene modificato per il contrasto appropriato. (CQ-4295106)
+* Il colore e il contrasto di alcuni elementi dell’interfaccia utente sono stati aggiornati in modo che gli utenti con vista limitata o senza percezione del colore possano distinguere tali elementi. Ad esempio, le icone delle stelle di valutazione nella sezione [!UICONTROL Valutazione] della scheda [!UICONTROL Avanzate] nelle [!UICONTROL Proprietà] di una risorsa e nella visualizzazione a schede sono ora di un colore con contrasto adeguato. (CQ-4295106)
 
 * Gli assistenti vocali ora possono leggere le voci del menu a comparsa della casella di riepilogo della casella combinata (in vari campi su pagine diverse) come un elenco di opzioni. (CQ-4294017)
 
-* Per applicare un flusso di lavoro a una risorsa, è possibile accedere alla freccia della [!UICONTROL timeline] tramite una tastiera. (CQ-4289268)
+* Per applicare un flusso di lavoro a una risorsa, è possibile accedere alla freccia della [!UICONTROL Timeline] tramite una tastiera. (CQ-4289268)
 
-* Gli utenti possono rimuovere i tag selezionati nel campo [!UICONTROL Tag] della scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] di una risorsa utilizzando il `x` simbolo . Gli assistenti vocali ora annunciano lo scopo e il numero di tag selezionati (CQ-4273033).
+* Gli utenti possono rimuovere i tag selezionati nel campo [!UICONTROL Tag] della scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] di una risorsa utilizzando il simbolo `x`. Gli assistenti vocali ora annunciano lo scopo e il numero di tag selezionati (CQ-4273033).
 
-* I campi del modulo di sola lettura possono essere concentrati utilizzando una tastiera. Ad esempio, i campi disattivati nella scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] di una risorsa. (CQ-4273031)
+* I campi modulo di sola lettura possono essere attivati utilizzando una tastiera. Ad esempio, i campi disattivati nella scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] di una risorsa. (CQ-4273031)
 
-* È possibile accedere alle opzioni per filtrare le risorse nella barra laterale sinistra utilizzando una tastiera. (CQ-4273018)
+* È ora possibile accedere alle opzioni per filtrare le risorse nella barra laterale sinistra utilizzando una tastiera. (CQ-4273018)
 
 * L&#39;assistente vocale annuncia lo scopo di vari elementi della casella combinata, ad esempio il campo Percorso, e l&#39;opzione per aprire la finestra di dialogo di selezione nella scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] di una risorsa. (CQ-4273016)
 
@@ -162,11 +162,11 @@ Gli elementi dell&#39;interfaccia utente sono intuitivi per gli assistenti vocal
 
 * Molte opzioni attivabili nell’interfaccia di Assets non indicano se sono attive quando si utilizza la tastiera. (CQ-4272694)
 
-* Gli utenti di utilità di lettura dello schermo ora sanno quando le righe nella vista a elenco sono selezionabili utilizzando una tastiera. Le informazioni vengono annunciate quando si posiziona il puntatore sulle righe. (CQ-4271824)
+* Gli utenti che utilizzano gli assistenti vocali ora sanno quando le righe nella vista a elenco sono selezionabili utilizzando una tastiera. Queste informazioni vengono lette quando si passa il cursore sulle righe. (CQ-4271824)
 
 * Alcuni campi modulo, come il nome utente e i campi password della pagina di login, si basano sui valori dei segnaposto per assegnare un&#39;etichetta accessibile. (CQ-4271716)
 
-* È ora possibile accedere agli elementi interattivi dell&#39;interfaccia utente, ad esempio collegamenti e opzioni quali le opzioni di intestazione e zoom delle risorse per la navigazione nella pagina o nella cartella tramite una tastiera. (CQ-4271412)
+* È ora possibile accedere da tastiera agli elementi interattivi dell’interfaccia, ad esempio collegamenti e opzioni (opzioni di intestazione e zoom della pagina delle risorse o navigazione delle cartelle). (CQ-4271412)
 
 * I titoli di tutte le pagine visualizzate in [!DNL Adobe Experience Manager] Assets ora sono univoci. (CQ-4271409)
 
@@ -176,8 +176,8 @@ La versione include i seguenti altri miglioramenti:
 
 * Possibilità di rielaborare le risorse con profili di elaborazione delle risorse, offrendo così agli utenti il controllo completo del processo (elaborazione completa delle risorse, applicazione di un profilo di elaborazione specifico ed eventuale esecuzione di un flusso di lavoro di post-elaborazione).
 * Le query di ricerca ora restituiscono i risultati più rapidamente quando l’istanza del cluster sottostante viene riavviata dietro le quinte (in un caso simile, l’esecuzione della ricerca iniziale poteva durare più a lungo prima).
-* È possibile ordinare per “Nome” le risorse nella vista a elenco nell’interfaccia di Assets e nei risultati di ricerca. Consultate [Cercare le risorse](/help/assets/search-assets.md#sort).
-* È possibile ordinare per “Creato” (data) le risorse nella vista a elenco nell’interfaccia di Assets e nei risultati di ricerca. Consultate [Cercare le risorse](/help/assets/search-assets.md#sort).
+* È possibile ordinare per “Nome” le risorse nella vista a elenco nell’interfaccia di Assets e nei risultati di ricerca. Consulta [Cercare le risorse](/help/assets/search-assets.md#sort).
+* È possibile ordinare per “Creato” (data) le risorse nella vista a elenco nell’interfaccia di Assets e nei risultati di ricerca. Consulta [Cercare le risorse](/help/assets/search-assets.md#sort).
 * Supporto per la conversione di file EPS in immagini tramite i microservizi delle risorse.
 
 ### Correzioni di bug {#assets-bug-fixes}
@@ -187,7 +187,7 @@ Seek DM bug fixes if any.
 Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
 -->
 
-In addition to the above new features, the current release provides the following bug fixes based on customer feedback for [!DNL Assets].
+Oltre alle nuove funzioni di cui sopra, la versione corrente fornisce le correzioni di bug seguenti in base ai feedback ricevuti dai clienti su [!DNL Assets].
 
 * Per i file di musica MP3, il pulsante di riproduzione visualizzato sulla miniatura nell’anteprima DAM non funziona. (CQ-4294731)
 * Passando il puntatore del mouse sulla vista a schede, lo schermo scorre in seguito all’attivazione (automatica) dell’area delle azioni rapide disponibili nella scheda. (GRANITE-26895)
