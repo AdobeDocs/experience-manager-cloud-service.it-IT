@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 97%
    + [API e materiale di riferimento](developer-reference-material-apis.md)
    + [Schema metadati per cartelle](folder-metadata-schema.md)
    + [Informazioni sull’utilizzo dei profili immagine e video](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Configurare i tag avanzati](smart-tags-configuration.md)
+   + [Configurare Tag avanzati](smart-tags-configuration.md)
    + [Risorse multilingue e traduzione delle risorse](translate-assets.md)
    + [Facet di ricerca](search-facets.md)
    + [Estendere l’editor risorse](extend-asset-editor.md)
