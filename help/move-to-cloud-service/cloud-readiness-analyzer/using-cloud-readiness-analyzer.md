@@ -1,184 +1,184 @@
 ---
-title: Utilizzo di Cloud Ready Analyzer
-description: Utilizzo di Cloud Ready Analyzer
+title: Utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud)
+description: Utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud)
 translation-type: tm+mt
 source-git-commit: a0e58c626f94b778017f700426e960428b657806
 workflow-type: tm+mt
 source-wordcount: '1871'
-ht-degree: 1%
+ht-degree: 89%
 
 ---
 
 
-# Utilizzo di Cloud Ready Analyzer {#using-cloud-readiness-analyzer}
+# Utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud){#using-cloud-readiness-analyzer}
 
-## Considerazioni importanti per l&#39;utilizzo di Cloud Readiness Analyzer {#imp-considerations}
+## Considerazioni importanti sull’utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud) {#imp-considerations}
 
-Segui la sezione seguente per comprendere le considerazioni importanti per l’esecuzione di Cloud Readiness Analyzer (CRA):
+La sezione seguente per contiene considerazioni importanti sull’esecuzione di Cloud Readiness Analyzer (CRA; Analisi di preparazione al cloud):
 
-* Il rapporto CRA viene creato utilizzando l&#39;output del Rilevatore [](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)pattern del Adobe Experience Manager  (AEM). La versione del rilevatore di pattern utilizzato da CRA è inclusa nel pacchetto di installazione CRA.
+* Il rapporto CRA viene creato utilizzando l’output del [rilevatore pattern](https://docs.adobe.com/content/help/it-IT/experience-manager-65/deploying/upgrading/pattern-detector.html) di Adobe Experience Manager (AEM). La versione del rilevatore pattern utilizzata da CRA è inclusa nel pacchetto di installazione CRA.
 
-* CRA può essere eseguito solo dall&#39;utente **amministratore** o da un utente del gruppo **amministratori** .
+* CRA may only be run by the **admin** user or a user in the **administrators** group.
 
-* CRA è supportata nelle istanze AEM con versione 6.1 e successive.
+* CRA è supportato nelle istanze AEM con versione 6.1 e successive.
 
    >[!NOTE]
    > Consulta [Installazione su AEM 6.1](#installing-on-aem61) per i requisiti speciali per l&#39;installazione di CRA su AEM 6.1.
 
-* CRA può essere eseguito su qualsiasi ambiente, ma è preferibile eseguirlo in un ambiente *Stage* .
+* CRA può essere eseguito in qualsiasi ambiente, ma è preferibile eseguirlo in un ambiente *stage*.
 
    >[!NOTE]
-   >Per evitare un impatto sulle istanze business critical, si consiglia di eseguire CRA in un ambiente *Author* il più vicino possibile all&#39;ambiente *Production* nelle aree di personalizzazioni, configurazioni, contenuti e applicazioni utente. In alternativa, può essere eseguito su un clone dell&#39;ambiente di produzione *Author* .
+   >Per evitare un impatto sulle istanze aziendali fondamentali, si consiglia di eseguire CRA in un ambiente di *authoring* il più simile possibile all’ambiente di *produzione* nelle aree di personalizzazioni, configurazioni, contenuti e applicazioni utente. In alternativa, può essere eseguito su un clone dell’ambiente di *authoring* di produzione.
 
-* La generazione di contenuti dei report CRA può richiedere molto tempo, da alcuni minuti a poche ore. Il tempo richiesto dipende in larga misura dalle dimensioni e dalla natura del contenuto dell’archivio AEM, dalla versione AEM e da altri fattori.
+* La generazione del contenuto del rapporto CRA può richiedere tempi lunghi, da alcuni minuti ad alcune ore. Il tempo richiesto dipende in larga misura dalle dimensioni e dalla natura del contenuto dell’archivio AEM, dalla versione di AEM e da altri fattori.
 
-* A causa del tempo significativo che potrebbe essere necessario per generare il contenuto del rapporto, questi vengono generati da un processo in background e mantenuti nella cache. La visualizzazione e il download del rapporto devono essere relativamente veloci perché utilizza la cache del contenuto fino alla scadenza oppure il rapporto viene aggiornato in modo esplicito. Durante la generazione del contenuto del rapporto è possibile chiudere la scheda del browser e tornare in un secondo momento per visualizzare il rapporto una volta che il relativo contenuto è disponibile nella cache.
+* A causa del tempo significativo che potrebbe essere necessario per generare il contenuto del rapporto, il processo avviene in background e viene mantenuto nella cache. La visualizzazione e il download del rapporto dovrebbero essere relativamente veloci poiché viene utilizzata la cache del contenuto fino alla scadenza o all’aggiornamento esplicito del rapporto. Durante la generazione del contenuto del rapporto puoi chiudere la scheda del browser e tornare in un secondo momento per visualizzare il rapporto una volta che il relativo contenuto è disponibile nella cache.
 
 ## Disponibilità {#availability}
 
 Cloud Readiness Analyzer può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Scarica Cloud Readiness Analyzer dal portale [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) .
+>Scarica Cloud Readiness Analyzer (Analisi di preparazione al cloud) dal portale di [distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
 
-## Visualizzazione del rapporto di analisi della disponibilità del cloud {#viewing-report}
+## Visualizzazione del rapporto di Cloud Readiness Analyzer (Analisi di preparazione al cloud) {#viewing-report}
 
-### Adobe Experience Manager 6.3.0 and later {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 e versioni successive {#aem-later-versions}
 
-Segui questa sezione per scoprire come visualizzare il rapporto di Cloud Readiness Analyzer:
+Leggi questa sezione per scoprire come visualizzare il rapporto di Cloud Readiness Analyzer (Analisi di preparazione al cloud):
 
-1. Seleziona  Adobe Experience Manager e passa a Strumenti > **Operazioni** > **Cloud Readiness Analyzer**.
+1. Seleziona Adobe Experience Manager e passa a Strumenti > **Operazioni** > **Cloud Readiness Analyzer** (Analisi di preparazione al cloud).
 
    ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Dopo aver fatto clic su **Cloud Readiness Analyzer**, lo strumento inizia a generare il rapporto e lo visualizza quando è disponibile.
+1. Dopo aver fatto clic su **Cloud Readiness Analyzer** (Analisi di preparazione al cloud), lo strumento inizia a generare il rapporto e, una volta disponibile, lo visualizza.
 
    >[!NOTE]
-   >Sarà necessario scorrere la pagina verso il basso per visualizzare il rapporto completo.
+   >Per visualizzare il rapporto completo, dovrai scorrere la pagina verso il basso.
 
    ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. Una volta generato e visualizzato il rapporto CRA, potete scaricare il rapporto in formato CSV facendo clic su **CSV**, come illustrato nella figura riportata di seguito.
+1. Una volta generato e visualizzato il rapporto CRA, puoi scaricarlo in formato con valori delimitati da virgole facendo clic su **CSV**, come illustrato nella figura riportata di seguito.
 
    ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
-   >È possibile forzare l&#39;Autorità di controllo dei dati CRA a cancellare la cache e a rigenerare il rapporto facendo clic su **Aggiorna rapporto**.
+   >Per cancellare la cache e generare nuovamente il rapporto CRA, fai clic su **Refresh Report** (Aggiorna rapporto).
 
 ###  Adobe Experience Manager 6.2 e 6.1 {#aem-specific-versions}
 
-Lo strumento di analisi della prontezza del cloud è limitato  Adobe Experience Manager 6.2 a un collegamento che genera e scarica il rapporto CSV.
+In Adobe Experience Manager 6.2, lo strumento Cloud Readiness Analyzer (Analisi di preparazione al cloud) è limitato a un collegamento che consente di generare e scaricare il rapporto CSV.
 
-Per  Adobe Experience Manager 6.1, lo strumento non funziona e può essere utilizzata solo l&#39;interfaccia HTTP.
+In Adobe Experience Manager 6.1, lo strumento non funziona e può essere utilizzata solo l’interfaccia HTTP.
 
 >[!NOTE]
->In tutte le versioni, il Rilevatore di pattern incluso può essere eseguito in modo indipendente.
+>In tutte le versioni, il rilevatore pattern incluso può essere eseguito in modo indipendente.
 
-## Interpretazione del rapporto di Cloud Readiness Analyzer {#cra-report}
+## Interpretazione del rapporto di Cloud Readiness Analyzer (Analisi di preparazione al cloud) {#cra-report}
 
-Quando lo strumento di analisi della prontezza del cloud viene eseguito nell’istanza di AEM, il rapporto viene visualizzato come risultati nella finestra dello strumento.
+Quando lo strumento Cloud Readiness Analyzer (Analisi di preparazione al cloud) viene eseguito nell’istanza di AEM, il rapporto viene visualizzato sotto forma di risultati nella finestra dello strumento.
 
-Il formato del rapporto è:
+Il rapporto si presenta con questo formato:
 
-* **Panoramica** report: Informazioni sul rapporto stesso che includono le seguenti informazioni:
-   * **Ora** rapporto: Quando il contenuto del rapporto è stato generato e reso disponibile per la prima volta.
-   * **Tempo** di scadenza: Quando scade la cache del contenuto del report.
-   * **Periodo** di generazione: Tempo impiegato dal processo di generazione dei contenuti del rapporto.
-   * **Ricerca conteggio**: Numero totale di risultati inclusi nella relazione.
-* **Panoramica** del sistema: Informazioni sul sistema AEM su cui è stata eseguita la CRA.
-* **Ricerca di categorie**: Più sezioni che ciascuna di esse affronta uno o più risultati della stessa categoria. Ogni sezione include quanto segue: Nome della categoria, sottotipi, conteggio e importanza, riepilogo, collegamento alla documentazione della categoria e informazioni di ricerca individuali.
+* **Panoramica rapporto**: informazioni sul rapporto stesso, tra cui:
+   * **Data del rapporto**: quando il contenuto del rapporto è stato generato e reso disponibile per la prima volta.
+   * **Data di scadenza**: quando scade la cache del contenuto del rapporto.
+   * **Tempo di generazione**: tempo impiegato dal processo di generazione del contenuto del rapporto.
+   * **Conteggio risultati**: numero totale di risultati inclusi nel rapporto.
+* **Panoramica del sistema**: informazioni sul sistema AEM su cui è stata eseguito lo strumento CRA.
+* **Categorie dei risultati**: diverse sezioni che riguardano ciascuna uno o più risultati della stessa categoria. Ogni sezione include quanto segue: nome della categoria, sottotipi, conteggio e importanza dei risultati, riepilogo, collegamento alla documentazione della categoria e informazioni su singoli risultati.
 
-A ciascun risultato viene assegnato un livello di importanza tale da indicare una priorità di azione.
+A ciascun risultato viene assegnato un livello di importanza per dare un’indicazione approssimativa del grado di priorità dell’intervento richiesto.
 
-Segui la tabella seguente per comprendere i livelli di importanza:
+La tabella seguente descrive i livelli di importanza:
 
 | Importanza | Descrizione |
 |--- |--- |
-| INFO | Questa conclusione è fornita a scopo informativo. |
-| AVVISO | Questo risultato potrebbe essere un problema di aggiornamento. Si raccomanda di effettuare ulteriori indagini. |
-| PRINCIPALE | Questo risultato potrebbe rappresentare un problema di aggiornamento da risolvere. |
-| CRITICO | Questo risultato è molto probabile che sia un problema di aggiornamento che deve essere risolto per evitare la perdita di funzioni o prestazioni. |
+| INFO | Questo risultato è fornito a scopo informativo. |
+| ADVISORY (AVVISO) | Questo risultato potrebbe costituire un problema di aggiornamento. Si raccomanda di effettuare ulteriori indagini. |
+| MAJOR (IMPORTANTE) | È probabile che questo risultato costituisca un problema di aggiornamento da risolvere. |
+| CRITICAL (CRITICO) | È molto probabile che questo risultato costituisca un problema di aggiornamento che deve essere risolto per evitare la perdita di funzioni o prestazioni. |
 
 
-## Interpretazione del rapporto CSV di Cloud Readiness Analyzer {#cra-csv-report}
+## Interpretazione del rapporto CSV di Cloud Readiness Analyzer (Analisi di preparazione al cloud) {#cra-csv-report}
 
-Quando fate clic sull’opzione **CSV** dall’istanza di AEM, il formato CSV del rapporto Analisi prontezza cloud viene creato dalla cache del contenuto e restituito al browser. A seconda delle impostazioni del browser, il rapporto verrà scaricato automaticamente come file con un nome predefinito di `results.csv`.
+Quando fai clic sull’opzione **CSV** nell’istanza di AEM, il rapporto di Cloud Readiness Analyzer (Analisi di preparazione al cloud) viene creato dalla cache del contenuto e restituito al browser in formato CSV. A seconda delle impostazioni del browser, è possibile che venga scaricato automaticamente come file con il nome predefinito `results.csv`.
 
-Se la cache è scaduta, il rapporto verrà rigenerato prima che il file CSV venga creato e scaricato.
+Se la cache è scaduta, il rapporto verrà generato nuovamente prima che il file CSV venga creato e scaricato.
 
-Il formato CSV del rapporto include informazioni generate dall&#39;output Rilevatore pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza. Il formato è adatto per la visualizzazione e la modifica in un&#39;applicazione come Microsoft Excel. È stato progettato per fornire tutte le informazioni di ricerca in un formato ripetibile che può essere utile quando si confrontano i report nel tempo per misurare l&#39;avanzamento.
+Il formato CSV del rapporto include informazioni generate dall’output del rilevatore pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza. Il formato è adatto alla visualizzazione e la modifica in un’applicazione come Microsoft Excel. È stato progettato per fornire tutte le informazioni sui risultati in un formato ripetibile che può essere utile quando si confrontano i rapporti nel tempo per misurare l’avanzamento.
 
-Le colonne del rapporto sul formato CSV sono:
+Le colonne del rapporto in formato CSV sono:
 
-* **codice**: il codice categoria
-* **type**: il nome della categoria
-* **sottotipo**: il sottotipo della categoria
-* **importanza**: il livello di importanza
-* **identificatore**: identificatore principale della ricerca
-* **altro**: ulteriori informazioni sulla ricerca
-* **messaggio**: il messaggio fornito per la ricerca
-* **moreInfo**: un collegamento che può essere utilizzato per accedere alla guida online sulla categoria
-* **contesto**: una stringa JSON per la ricerca di dati
+* **code** (codice): codice della categoria
+* **type** (tipo): nome della categoria
+* **subtype** (sottotipo): sottotipo della categoria
+* **importance** (importanza): livello di importanza
+* **identifier** (identificatore): identificatore principale del risultato
+* **other** (altro): ulteriori informazioni sul risultato
+* **message** (messaggio): messaggio fornito per il risultato
+* **moreInfo** (ulteriori informazioni): collegamento che consente di accedere alla sezione sulla categoria in oggetto nella guida online
+* **context** (contesto): una stringa JSON contenente dati sul risultato
 
-Il valore &quot;\N&quot; di una colonna per un singolo risultato indica che non sono stati forniti dati.
+Un valore “\N” in una colonna di un singolo risultato indica che non sono stati forniti dati.
 
 ## Interfaccia HTTP {#http-interface}
 
-CRA fornisce un&#39;interfaccia HTTP che può essere utilizzata come alternativa all&#39;interfaccia utente in AEM. L&#39;interfaccia supporta sia i comandi HEAD che GET. Può essere utilizzato per generare il rapporto CRA e restituirlo in uno dei tre formati seguenti: Valori JSON, CSV e separati da tabulazioni (TSV).
+Lo strumento CRA fornisce un’interfaccia HTTP che può essere utilizzata come alternativa all’interfaccia utente in AEM. L’interfaccia supporta sia i comandi HEAD che GET. Può essere utilizzata per generare il rapporto CRA e restituirlo in uno dei tre formati seguenti: JSON, CSV e valori delimitati da tabulazioni (TSV).
 
-I seguenti URL sono disponibili per l’accesso HTTP, dove `<host>` è il nome host e la porta, se necessario, del server in cui è installato il CRA:
+I seguenti URL sono disponibili per l’accesso HTTP, dove `<host>` è il nome host (e, se necessario, la porta) del server in cui è installato lo strumento CRA:
 * `http://<host>/apps/readiness-analyzer/analysis/result.json` per il formato JSON
 * `http://<host>/apps/readiness-analyzer/analysis/result.csv` per il formato CSV
-* `http://<host>/apps/readiness-analyzer/analysis/result.tsv` per formato TSV
+* `http://<host>/apps/readiness-analyzer/analysis/result.tsv` per il formato TSV
 
 ### Esecuzione di una richiesta HTTP {#executing-http-request}
 
-L&#39;interfaccia HTTP può essere utilizzata in diversi metodi.
+L’interfaccia HTTP può essere utilizzata in diversi modi.
 
-Un modo semplice consiste nell’aprire una scheda del browser nello stesso browser in cui avete già effettuato l’accesso ad AEM come amministratore. Potete inserire l’URL nella scheda del browser e visualizzare o scaricare i risultati dal browser.
+Un modo semplice consiste nell’aprire una scheda del browser nello stesso browser in cui hai già effettuato l’accesso ad AEM come amministratore. Puoi inserire l’URL nella scheda del browser e visualizzare o scaricare i risultati dal browser.
 
-È inoltre possibile utilizzare uno strumento della riga di comando, ad esempio `curl` o `wget` , nonché qualsiasi applicazione client HTTP. Se non utilizzate una scheda del browser con una sessione autenticata, dovete fornire un nome utente e una password amministratore come parte del commento.
+Puoi inoltre utilizzare uno strumento della riga di comando, ad esempio `curl` o `wget`, nonché qualsiasi applicazione client HTTP. Se non utilizzi una scheda del browser con una sessione autenticata, devi fornire nel commento un nome utente e una password amministratore.
 
-Esempio di come eseguire questa operazione:
+Il seguente è un esempio di come eseguire questa operazione:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
 
 ### Intestazioni e parametri {#http-headers-and-parameters}
 
 Le seguenti intestazioni HTTP sono utilizzate da questa interfaccia:
 
-* `Cache-Control: max-age=<seconds>`: Specificate la durata della freschezza della cache in secondi. (vedere [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
-* `Prefer: respond-async`: Indica che il server deve rispondere in modo asincrono. (vedere [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
+* `Cache-Control: max-age=<seconds>`: specifica l’intervallo di aggiornamento della cache in secondi (consulta [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)).
+* `Prefer: respond-async`: indica che il server deve rispondere in modo asincrono (consulta [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)).
 
-I seguenti parametri di query HTTP sono disponibili come comodità per i casi in cui le intestazioni HTTP potrebbero non essere facilmente utilizzate:
+I seguenti parametri di query HTTP sono disponibili per comodità nei casi in cui le intestazioni HTTP potrebbero non essere facilmente utilizzate:
 
-* `max-age` (numero, facoltativo): Specificate la durata della freschezza della cache in secondi. Questo numero deve essere maggiore o uguale a 0. La durata predefinita della freschezza è di 86400 secondi, il che significa che senza questo parametro o l&#39;intestazione corrispondente verrà utilizzata una nuova cache per distribuire le richieste per 24 ore prima che il rapporto venga rigenerato. L&#39;utilizzo `max-age=0` forzerà la cancellazione della cache e avvierà una rigenerazione del report. Subito dopo questa richiesta, la durata della freschezza verrà reimpostata sul precedente valore diverso da zero.
-* `respond-async` (booleano, facoltativo): Specificate che la risposta deve essere fornita in modo asincrono. Se si utilizza `respond-async=true` la cache non aggiornata, il server restituirà una risposta `202 Accepted, processing cache` senza attendere che venga generato il rapporto e che la cache venga aggiornata. Se la cache è fresca, questo parametro non ha alcun effetto. Il valore predefinito è `false`, il che significa che senza questo parametro o l&#39;intestazione corrispondente, il server risponderà in modo sincrono, il che potrebbe richiedere molto tempo e richiedere un adeguamento al tempo di risposta massimo per il client HTTP.
+* `max-age` (numero, facoltativo): specifica l’intervallo di aggiornamento della cache in secondi. Questo numero deve essere maggiore o uguale a 0. L’intervallo di aggiornamento predefinito è di 86.400 secondi. Pertanto, se non si specifica questo parametro o l’intestazione corrispondente, per distribuire le richieste verrà utilizzata una nuova cache per 24 ore, dopodiché sarà necessario generare di nuovo il rapporto. L’utilizzo di `max-age=0` forzerà la cancellazione della cache e avvierà la nuova generazione del rapporto. Subito dopo questa richiesta, l’intervallo di aggiornamento viene reimpostato sul precedente valore diverso da zero.
+* `respond-async` (booleano, facoltativo): specifica che la risposta deve essere fornita in modo asincrono. Se si utilizza `respond-async=true` quando la cache non è aggiornata, il server restituirà una risposta `202 Accepted, processing cache` senza attendere che venga generato il rapporto e che la cache venga aggiornata. Se la cache è aggiornata, questo parametro non ha alcun effetto. Il valore predefinito è `false`, ciò significa che senza questo parametro o l’intestazione corrispondente, il server risponderà in modo sincrono, il che potrebbe richiedere molto tempo e un adeguamento del tempo di risposta massimo del client HTTP.
 
-Se sono presenti sia un&#39;intestazione HTTP che il parametro di query corrispondente, il parametro di query avrà la precedenza.
+Se sono presenti sia un’intestazione HTTP che il parametro di query corrispondente, il parametro di query avrà la priorità.
 
-Un modo semplice per avviare la generazione del report tramite l&#39;interfaccia HTTP è tramite il seguente comando:
+Un modo semplice per avviare la generazione del rapporto tramite l’interfaccia HTTP è l’utilizzo del seguente comando:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Una volta effettuata la richiesta, il client non deve rimanere attivo per la generazione del rapporto. La generazione di report potrebbe essere avviata con un client utilizzando una richiesta HTTP GET e, una volta generato, la visualizzazione del report dalla cache di un altro client o dallo strumento CSV nell&#39;interfaccia utente di AEM.
+Una volta effettuata la richiesta, non c’è bisogno che il client rimanga attivo affinché venga generato il rapporto. La generazione del rapporto può essere avviata con un client utilizzando una richiesta HTTP GET e, una volta generato, può essere visualizzato nella cache di un altro client o nello strumento CSV nell’interfaccia utente di AEM.
 
 ### Risposte {#http-responses}
 
 Sono possibili i seguenti valori di risposta:
 
-* `200 OK`: La risposta contiene i risultati del rilevamento dei pattern generati nel corso della durata di freschezza della cache.
-* `202 Accepted, processing cache`: Sono state fornite risposte asincrone per indicare che la cache era obsoleta e che è in corso un aggiornamento.
-* `400 Bad Request`: Indica che la richiesta ha restituito un errore. Un messaggio nel formato Dettagli problema (vedere [RFC 7807](https://tools.ietf.org/html/rfc7807)) per ulteriori dettagli.
-* `401 Unauthorized`: La richiesta non era autorizzata.
-* `500 Internal Server Error`: Indica che si è verificato un errore interno del server. Un messaggio in formato Dettagli problema fornisce ulteriori dettagli.
-* `503 Service Unavailable`: Indica che il server è occupato con un&#39;altra risposta e non può soddisfare questa richiesta in modo tempestivo. È probabile che ciò si verifichi solo quando vengono effettuate richieste sincrone. Un messaggio in formato Dettagli problema fornisce ulteriori dettagli.
+* `200 OK`: la risposta contiene i risultati del rilevatore pattern generati quando la cache era aggiornata.
+* `202 Accepted, processing cache`: nelle risposte asincrone, indica che la cache era obsoleta e che è in corso un aggiornamento.
+* `400 Bad Request`: indica che la richiesta ha restituito un errore. Un messaggio nel formato Dettagli del problema (consulta [RFC 7807](https://tools.ietf.org/html/rfc7807)) fornisce ulteriori dettagli.
+* `401 Unauthorized`: indica che la richiesta non era autorizzata.
+* `500 Internal Server Error`: indica che si è verificato un errore interno del server. Un messaggio nel formato Dettagli del problema fornisce ulteriori dettagli.
+* `503 Service Unavailable`: indica che il server è occupato con un’altra risposta e non può soddisfare questa richiesta in modo tempestivo. È probabile che ciò si verifichi solo quando vengono effettuate richieste sincrone. Un messaggio nel formato Dettagli del problema fornisce ulteriori dettagli.
 
 ## Informazioni amministratore
 
-### Regolazione del ciclo di vita della cache {#cache-adjustment}
+### Regolazione della durata della cache {#cache-adjustment}
 
-La durata predefinita della cache CRA è di 24 ore. Con l’opzione per aggiornare un rapporto e rigenerare la cache, sia nell’istanza AEM che nell’interfaccia HTTP, questo valore predefinito è probabilmente adatto per la maggior parte degli usi del CRA. Se il tempo di generazione del rapporto è particolarmente lungo per l’istanza di AEM, puoi regolare la durata della cache al fine di ridurre al minimo la rigenerazione del rapporto.
+La durata predefinita della cache dello strumento CRA è di 24 ore. Data la presenza, sia nell’istanza AEM che nell’interfaccia HTTP, dell’opzione per aggiornare un rapporto e rigenerare la cache, questo valore predefinito è probabilmente adatto alla maggior parte degli usi del CRA. Se la generazione del rapporto richiede tempi particolarmente lunghi per la tua istanza di AEM, puoi regolare la durata della cache al fine di ridurre al minimo la rigenerazione del rapporto.
 
-Il valore del ciclo di vita della cache viene memorizzato come `maxCacheAge` proprietà nel seguente nodo del repository:
+Il valore della durata della cache viene memorizzato come la proprietà `maxCacheAge` nel seguente nodo di archivio:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
 Il valore di questa proprietà corrisponde alla durata della cache, in secondi. Un amministratore può regolare la durata della cache utilizzando CRX/DE Lite.
