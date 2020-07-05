@@ -1,11 +1,11 @@
 ---
 title: Strumento AEM Dispatcher Converter
 description: Strumento AEM Dispatcher Converter
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 66cf4fc7b5a336968dd3f8757cc56a11d6e4843e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Consulta la [panoramica di Dispatcher](https://docs.adobe.com/content/help/it-IT
 
 Devi imparare a strutturare le configurazioni di Apache e Dispatcher di AEM as a Cloud Service, nonché a convalidarlo ed eseguirlo localmente prima di implementarlo negli ambienti Cloud.
 
-Per ulteriori informazioni, consulta [Dispatcher nel Cloud](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html).
+Per ulteriori informazioni, consulta [Dispatcher nel Cloud](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html).
 
 ## AEM Dispatcher Converter {#aem-dispatcher-converter}
 
@@ -35,7 +35,7 @@ AEM Dispatcher Converter è una utility per la conversione delle configurazioni 
 
 Il convertitore implementato è **AEMDispatcherConfigConverter**, il quale segue le linee guida di trasformazione.
 
-Consulta l’articolo su come [convertire una configurazione di Dispatcher da AMS ad Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html#how-to-convert-an-ams-to-an-aem-as-a-cloud-service-dispatcher-configuration).
+Consulta l’articolo su come [convertire una configurazione di Dispatcher da AMS ad Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html#how-to-convert-an-ams-to-an-aem-as-a-cloud-service-dispatcher-configuration).
 
 ## Utilizzo di AEM Dispatcher Converter {#using-dispatcher-converter}
 
