@@ -1,11 +1,11 @@
 ---
 title: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
 description: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -47,18 +47,18 @@ Nella fase di acquisizione, per applicare il contenuto delta sul contenuto corre
 
 Leggi la sezione seguente per comprendere le linee guida e le best practice per utilizzare lo strumento Content Transfer (Trasferimento contenuti):
 
-* È consigliabile eseguire [Revision Cleanup](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) e controlli [di coerenza dell&#39;archivio](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) dati nell&#39;archivio di **origine** per identificare potenziali problemi e ridurre le dimensioni dell&#39;archivio.
+* È consigliabile eseguire la [pulizia delle revisioni](https://docs.adobe.com/content/help/it-IT/experience-manager-65/deploying/deploying/revision-cleanup.html) e i [controlli di coerenza dell’archivio dati](https://helpx.adobe.com/it/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) nell’archivio **sorgente** per identificare potenziali problemi e ridurre le dimensioni dell’archivio.
 
-* Se la configurazione di AEM Cloud Author Content Delivery Network (CDN) è configurata per avere una whitelist di IP, è necessario assicurarsi che anche gli IP dell&#39;ambiente di origine vengano aggiunti all&#39;elenco consentito in modo che l&#39;ambiente di origine e l&#39;ambiente AEM Cloud possano comunicare tra loro.
+* Se la rete CDN (Content Delivery Network) di authoring di AEM Cloud è configurata per disporre di un elenco di indirizzi IP consentiti, è necessario assicurarsi che anche gli IP dell’ambiente sorgente vengano aggiunti all’elenco Consentiti in modo che l’ambiente sorgente e l’ambiente AEM Cloud possano comunicare tra loro.
 
 * Nella fase di acquisizione, si consiglia di eseguire l’acquisizione con la modalità *Cancella* abilitata, affinché l’archivio esistente (di authoring o pubblicazione) nell’ambiente di destinazione AEM Cloud Service venga completamente eliminato e quindi aggiornato con i dati del set di migrazione. Questa modalità è molto più veloce della modalità in cui la cancellazione è disattivata e il set di migrazione viene applicato sul contenuto corrente.
 
 * Al termine dell’attività di trasferimento dei contenuti, nell’ambiente Cloud Service è necessaria la giusta struttura di progetto per garantire il corretto rendering dei contenuti.
 
-* Prima di eseguire lo strumento di trasferimento dei contenuti, è necessario assicurarsi che nella `crx-quickstart` sottodirectory dell’istanza AEM di origine vi sia spazio sufficiente. Questo perché Content Transfer Tool crea una copia locale del repository che viene successivamente caricata nel set di migrazione.
-La formula generale per calcolare lo spazio libero richiesto è la seguente:
+* Prima di eseguire lo strumento Content Transfer (Trasferimento contenuti), è necessario assicurarsi che nella sottodirectory `crx-quickstart` dell’istanza AEM sorgente vi sia spazio sufficiente. Questo perché lo strumento Content Transfer (Trasferimento contenuti) crea una copia locale dell’archivio che viene successivamente caricata nel set di migrazione.
+La formula generale per calcolare lo spazio libero su disco richiesto è la seguente:
    `data store size + node store size * 1.5`
 
-   * *dimensione* archivio dati: lo Strumento di trasferimento dei contenuti utilizza 64 GB, anche se l&#39;archivio dati effettivo è più grande.
-   * *dimensione*archivio nodi: dimensione della directory dell&#39;archivio segmenti o della dimensione del database MongoDB.
-Pertanto, per un segmento di dimensioni dello store pari a 20 GB, lo spazio libero su disco richiesto è di 94 GB.
+   * *data store size*: dimensione archivio dati; lo strumento Content Transfer (Trasferimento contenuti) utilizza 64 GB, anche se l’archivio dati effettivo è più grande.
+   * *node store size*: dimensione archivio nodi; dimensione della directory dell’archivio segmenti o dimensione del database MongoDB.
+Pertanto, per un archivio segmenti di 20 GB, lo spazio libero su disco richiesto è di 94 GB.
