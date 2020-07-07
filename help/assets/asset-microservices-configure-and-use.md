@@ -3,7 +3,7 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1875'
 ht-degree: 3%
@@ -38,7 +38,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> L’elaborazione delle risorse qui descritta sostituisce il modello di `DAM Update Asset` flusso di lavoro esistente nelle versioni precedenti di  Experience Manager. La maggior parte della generazione di rappresentazioni standard e dei passaggi relativi ai metadati vengono sostituiti dall’elaborazione dei microservizi di risorse e gli eventuali passaggi rimanenti possono essere sostituiti dalla configurazione del flusso di lavoro di post-elaborazione.
+>L’elaborazione delle risorse qui descritta sostituisce il modello di `DAM Update Asset` flusso di lavoro esistente nelle versioni precedenti di  Experience Manager. La maggior parte della generazione di rappresentazioni standard e dei passaggi relativi ai metadati vengono sostituiti dall’elaborazione dei microservizi di risorse e gli eventuali passaggi rimanenti possono essere sostituiti dalla configurazione del flusso di lavoro di post-elaborazione.
 
 ## Introduzione all’elaborazione delle risorse {#get-started}
 
@@ -99,9 +99,9 @@ Un valore vuoto indica che l&#39;elaborazione delle risorse assume la dimensione
 
 #### Regole di inclusione del tipo MIME {#mime-type-inclusion-rules}
 
-Quando viene elaborata una risorsa con un tipo MIME specifico, il tipo MIME viene prima controllato rispetto al valore dei tipi MIME esclusi per la specifica di rappresentazione. Se corrisponde a tale elenco, questa rappresentazione specifica non viene generata per la risorsa (elenco bloccato).
+Quando viene elaborata una risorsa con un tipo MIME specifico, il tipo MIME viene prima controllato rispetto al valore dei tipi MIME esclusi per la specifica di rappresentazione. Se corrisponde a tale elenco, questa rappresentazione specifica non viene generata per la risorsa (elenco Bloccati ).
 
-In caso contrario, il tipo MIME viene controllato rispetto al tipo MIME incluso e, se corrisponde all&#39;elenco, il rendering viene generato (elenco consentito).
+In caso contrario, il tipo MIME viene controllato rispetto al tipo MIME incluso e, se corrisponde all&#39;elenco, viene generata la rappresentazione ( elenco Consentiti).
 
 #### Rappresentazioni speciali FPO {#special-fpo-rendition}
 
@@ -169,7 +169,7 @@ Il servizio Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflo
 >[!NOTE]
 >
 >La configurazione di Custom Workflow Runner è una configurazione di un servizio OSGi. Consultate [Implementare per  Experience Manager](/help/implementing/deploying/overview.md) per informazioni su come distribuire una configurazione OSGi.
-> La console Web OSGi, a differenza delle distribuzioni di servizi locali e gestiti di AEM, non è direttamente disponibile nelle distribuzioni di servizi cloud.
+>La console Web OSGi, a differenza delle distribuzioni di servizi locali e gestiti di AEM, non è direttamente disponibile nelle distribuzioni di servizi cloud.
 
 Per informazioni dettagliate sul passaggio del flusso di lavoro standard da utilizzare nel flusso di lavoro di post-elaborazione, consultate i passaggi del [flusso di lavoro nel flusso di lavoro](developer-reference-material-apis.md#post-processing-workflows-steps) di post-elaborazione (in riferimento allo sviluppatore).
 
