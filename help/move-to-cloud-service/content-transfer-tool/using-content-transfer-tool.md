@@ -1,9 +1,9 @@
 ---
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
-translation-type: ht
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato co
 
 ## Esecuzione dello strumento Content Transfer (Trasferimento contenuti) {#running-tool}
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 Segui le indicazioni contenute in questa sezione per apprendere come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti in AEM as a Cloud Service (authoring/pubblicazione):
 
@@ -238,7 +238,8 @@ Se vengono segnalati degli ID BLOB mancanti, come indicato di seguito, è necess
 Viene eseguito il comando seguente
 
 >[!NOTE]
-> `--verbose` Questo flag è necessario per segnalare i percorsi dei nodi in cui si fa riferimento ai BLOB.
+>
+>`--verbose` Questo flag è necessario per segnalare i percorsi dei nodi in cui si fa riferimento ai BLOB.
 
 **Per archivi AEM 6.5 (Oak 1.8 e versioni precedenti)**
 
