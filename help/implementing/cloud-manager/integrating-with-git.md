@@ -2,7 +2,7 @@
 title: Integrazione con Git
 description: Integrazione con Git - Servizi cloud
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 2%
@@ -30,7 +30,7 @@ La serie video presuppone una conoscenza di base di git e gestione del controllo
 
 >[!NOTE]
 >
-> I passaggi e le convenzioni di denominazione descritti in questa serie video rappresentano alcune best practice per l’utilizzo di un repository git gestito dai clienti e di Cloud Manager. Si prevede che le convenzioni e i flussi di lavoro illustrati saranno adattati per i singoli team di sviluppo.
+>I passaggi e le convenzioni di denominazione descritti in questa serie video rappresentano alcune best practice per l’utilizzo di un repository git gestito dai clienti e di Cloud Manager. Si prevede che le convenzioni e i flussi di lavoro illustrati saranno adattati per i singoli team di sviluppo.
 
 ## Sincronizzazione iniziale {#initial-sync}
 
