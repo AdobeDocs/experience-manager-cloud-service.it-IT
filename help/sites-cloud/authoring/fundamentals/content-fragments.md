@@ -2,7 +2,7 @@
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redarre e utilizzare contenuti indipendenti dalla pagina.
 translation-type: tm+mt
-source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 98%
@@ -141,7 +141,9 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 >In questi casi, il contenuto intermedio rimane inalterato:
 >
 >* I componenti intermedi hanno una posizione assoluta all’interno della sequenza di componenti nel flusso del frammento. Questa posizione resta invariata, anche quando cambia il contenuto dei paragrafi nel frammento.
-   >  Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
+>
+>  
+Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
 >* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
 
 
