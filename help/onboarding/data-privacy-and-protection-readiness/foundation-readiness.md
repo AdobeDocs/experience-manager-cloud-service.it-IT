@@ -1,8 +1,8 @@
 ---
-title: Regole sulla protezione dei dati e sulla privacy dei dati - Adobe Experience Manager come servizio cloud
-description: 'Scopri Adobe Experience Manager come supporto di Cloud Service Foundation per le varie normative sulla protezione dei dati e la privacy dei dati; incluso il Regolamento generale sulla protezione dei dati (GDPR) dell''UE, il California Consumer Privacy Act e le modalità per conformarsi all''implementazione di un nuovo AEM come progetto di servizio cloud. '
+title: Norme sulla protezione dei dati e sulla privacy dei dati -  Adobe Experience Manager come Cloud Service Foundation Readacy
+description: 'Scopri  Adobe Experience Manager come supporto Cloud Service Foundation per le varie normative sulla protezione dei dati e la privacy dei dati; incluso il Regolamento generale sulla protezione dei dati (GDPR) dell''UE, il California Consumer Privacy Act e le modalità per conformarsi all''implementazione di un nuovo AEM come progetto Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 5%
@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Adobe Experience Manager come servizio cloud per la protezione dei dati e le normative sulla privacy {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+#  Adobe Experience Manager come Cloud Service Foundation Ready per la protezione dei dati e le normative sulla privacy dei dati {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> Per AEM come servizio cloud non è disponibile alcuna procedura manuale dall’interfaccia utente per l’eliminazione di un profilo utente, in quanto CRXDE non è accessibile.
+>Per AEM come Cloud Service non è disponibile alcuna procedura manuale dall’interfaccia utente per l’eliminazione di un profilo utente, in quanto CRXDE non è accessibile.
 
 ### HTTP API {#http-api-1}
 
