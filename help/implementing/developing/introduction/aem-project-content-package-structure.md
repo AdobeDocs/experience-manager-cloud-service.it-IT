@@ -2,7 +2,7 @@
 title: Struttura dei progetti AEM
 description: Scoprite come definire le strutture dei pacchetti per la distribuzione  Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2530'
 ht-degree: 17%
@@ -36,7 +36,7 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 >[!WARNING]
 >
-> Come nelle versioni precedenti di AEM, non `/libs` deve essere modificato. Solo il codice prodotto AEM può essere distribuito a `/libs`.
+>Come nelle versioni precedenti di AEM, non `/libs` deve essere modificato. Solo il codice prodotto AEM può essere distribuito a `/libs`.
 
 ### Indici Oak {#oak-indexes}
 
@@ -194,6 +194,7 @@ Suddividere la struttura delle cartelle in base a:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
+
    >[!WARNING]
    >
    >Per convenzione, le cartelle incorporate in un pacchetto secondario sono denominate con il suffisso `-packages`. In questo modo, il codice di distribuzione e i pacchetti di contenuto **non** vengono distribuiti nelle cartelle di destinazione di qualsiasi pacchetto secondario `/apps/<app-name>/...`, il che provoca un comportamento di installazione distruttivo e ciclico.
@@ -500,7 +501,8 @@ Se nelle destinazioni di incorporamento `/apps/*-packages` vengono utilizzati pi
 ### Repository Maven di terze parti {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> L&#39;aggiunta di più repository Maven può estendere i tempi di creazione dei cibi mentre ulteriori repository Maven saranno controllati per dipendenze.
+>
+>L&#39;aggiunta di più repository Maven può estendere i tempi di creazione dei cibi mentre ulteriori repository Maven saranno controllati per dipendenze.
 
 Nel progetto del reattore `pom.xml`, aggiungere tutte le necessarie direttive del repository di Maven pubbliche di terze parti. La `<repository>` configurazione completa dovrebbe essere disponibile dal provider del repository di terze parti.
 
