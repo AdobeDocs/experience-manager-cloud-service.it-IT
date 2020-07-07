@@ -3,7 +3,7 @@ title: Pubblicare risorse, cartelle e raccolte su Brand Portal
 description: Pubblicare risorse, cartelle e raccolte su Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
@@ -26,7 +26,6 @@ Le eventuali modifiche apportate successivamente alla risorsa, alla cartella o a
 >[!NOTE]
 >
 >Adobe consiglia di scaglionare la pubblicazione, eseguendola preferibilmente nelle ore non di picco, in modo che AEM Author non utilizzi troppe risorse.
-
 
 ## Pubblicare risorse su Brand Portal {#publish-assets-to-bp}
 
@@ -187,7 +186,6 @@ Puoi pubblicare o annullare la pubblicazione delle raccolte dall’istanza cloud
 >I frammenti di contenuto non possono essere pubblicati su Brand Portal. Pertanto, se selezioni frammenti di contenuto in AEM Assets, l’azione **[!UICONTROL Pubblica su Brand Portal]** non è disponibile.
 >
 >Se le raccolte contenenti frammenti di contenuto vengono pubblicate da AEM Assets su Brand Portal, nell’interfaccia di Brand Portal viene replicato tutto il contenuto della cartella, tranne i frammenti di contenuto.
-
 
 ### Pubblicare le raccolte {#publish-collections}
 
