@@ -3,7 +3,7 @@ title: Configurare AEM Assets Cloud Service con Brand Portal
 description: Configurare AEM Assets Cloud Service con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 36%
@@ -32,7 +32,6 @@ La configurazione dell’istanza cloud AEM Assets con un tenant del Brand Portal
 >Un tenant di Brand Portal può essere configurato solo con un’istanza cloud di AEM Assets.
 >
 >Non configurate un tenant di Brand Portal con più istanze cloud AEM Assets.
-
 
 ## Prerequisiti {#prerequisites}
 
@@ -231,8 +230,6 @@ Effettuate le seguenti operazioni per configurare l&#39;account IMS creato per [
 >
 >Verifica che la configurazione IMS superi il controllo di integrità. Se la configurazione non supera questa verifica, non è valida. Dovrai quindi eliminarla e creare una nuova configurazione valida.
 
-
-
 ### Configurare il servizio cloud {#configure-the-cloud-service}
 
 Per configurare il servizio cloud Brand Portal, effettuate le seguenti operazioni:
@@ -343,8 +340,6 @@ Nell’esempio precedente, viene attivata un’ulteriore combinazione di richies
 >[!NOTE]
 >
 >Se la cartella principale non è presente in Brand Portal (come nell’esempio precedente) o se è stata modificata in AEM Assets, viene generata un’ulteriore richiesta.
-
-
 
 <!--
 
