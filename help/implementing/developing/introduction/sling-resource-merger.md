@@ -2,7 +2,7 @@
 title: Utilizzo di Sling Resource Merger in  Adobe Experience Manager come Cloud Service
 description: Sling Resource Merger fornisce servizi per accedere e unire le risorse
 translation-type: tm+mt
-source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 1%
@@ -51,8 +51,9 @@ Gli obiettivi per l’utilizzo di Sling Resource Merger in AEM sono:
    >
    >
 * Le sostituzioni non dipendono dai percorsi di ricerca, bensì usano la proprietà `sling:resourceSuperType` per creare la connessione.
-   >  Tuttavia, le sostituzioni sono spesso definite in `/apps`, come procedura ottimale in AEM come Cloud Service, per definire le personalizzazioni in `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
-
+>
+>
+Tuttavia, le sostituzioni sono spesso definite in `/apps`, come procedura ottimale in AEM come Cloud Service, per definire le personalizzazioni in `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
 
 ### Proprietà {#properties}
 
@@ -198,6 +199,7 @@ Questi, insieme alle funzionalità standard, consentono di:
 
       * tipo: `String[]`
       * value: un elenco dei nodi secondari (come definito in `/libs`) da nascondere/ignorare
+
       Il carattere jolly &amp;ast; può essere utilizzato per nascondere/ignorare tutti i nodi figlio.
 
 
