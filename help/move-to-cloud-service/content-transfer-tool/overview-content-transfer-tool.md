@@ -1,9 +1,9 @@
 ---
 title: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
 description: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
-translation-type: ht
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 100%
 
@@ -36,7 +36,8 @@ Un *set di migrazione* ha i seguenti attributi:
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
 
 >[!NOTE]
-> Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service.
+>
+>Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service.
 
 Nella fase di estrazione, per ***integrare*** un set di migrazione esistente, l’opzione di *sovrascrittura* deve essere disattivata. Per ulteriori informazioni, consulta [Estrazione integrativa](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-extraction-process).
 
