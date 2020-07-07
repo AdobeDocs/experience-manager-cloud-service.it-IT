@@ -2,7 +2,7 @@
 title: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service
 description: 'Introduzione all’architettura di Adobe Experience Manager as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 5a846d34ee094e7d2f7fc71dbeef65f3fa58e86c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 100%
@@ -60,7 +60,7 @@ La scalabilità delle istanze per tenant del servizio può avvenire in modo auto
 
 >[!NOTE]
 >
-> Per ulteriori informazioni, vedi [Distribuzione - Modalità di esecuzione](/help/implementing/deploying/overview.md#runmodes)
+>Per ulteriori informazioni, vedi [Distribuzione - Modalità di esecuzione](/help/implementing/deploying/overview.md#runmodes)
 
 AEM as a Cloud Service è disponibile come istanza singola, dove ogni istanza rappresenta un ambiente AEM completo. Con AEM as a Cloud Service sono disponibili quattro tipi di ambienti:
 
