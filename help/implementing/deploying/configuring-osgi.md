@@ -2,7 +2,7 @@
 title: Configurazione di OSGi per AEM as a Cloud Service
 description: 'Configurazione OSGi con valori segreti e valori specifici per l’ambiente '
 translation-type: tm+mt
-source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Configurazione di OSGi per AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[OSGi](https://www.osgi.org/) è un elemento fondamentale nello stack tecnologico di Adobe Experience Manager (AEM). Viene utilizzato per controllare i bundle compositi di AEM e le relative configurazioni.
+[OSGi](https://www.osgi.org/) è un elemento fondamentale nello stack tecnologico di  Adobe Experience Manager (AEM). Viene utilizzato per controllare i bundle compositi di AEM e le relative configurazioni.
 
 OSGi fornisce le primitive standardizzate che consentono di creare applicazioni da componenti di piccole dimensioni, riutilizzabili e collaborativi. Questi componenti possono essere composti in un’applicazione e distribuiti. Questo consente di gestire facilmente i bundle OSGi quando possono essere arrestati, installati e avviati individualmente. Le interdipendenze vengono gestite automaticamente. Ciascun componente OSGi è contenuto in uno dei vari bundle. Per ulteriori informazioni, consultate la specifica [](https://www.osgi.org/Specifications/HomePage)OSGi.
 
@@ -36,9 +36,9 @@ un file di configurazione OSGi è definito in:
 
 seguendo il formato di configurazione cfg.json OSGi.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Le versioni precedenti dei file di configurazione OSGi supportati da AEM utilizzavano formati di file diversi come .cfg., .config e come definizioni di risorse sling XML:OsgiConfig. Questi formati vengono sostituiti dal formato di configurazione cfg.json OSGi.
+>Le versioni precedenti dei file di configurazione OSGi supportati da AEM utilizzavano formati di file diversi come .cfg., .config e come definizioni di risorse sling XML:OsgiConfig. Questi formati vengono sostituiti dal formato di configurazione cfg.json OSGi.
 
 ## Risoluzione in modalità di esecuzione {#runmode-resolution}
 
@@ -58,7 +58,7 @@ Quando si sviluppa localmente, è possibile passare un parametro di avvio in mod
 
 ## Tipi di valori di configurazione OSGi {#types-of-osgi-configuration-values}
 
-Esistono tre varietà di valori di configurazione OSGi che possono essere utilizzati con AEM come servizio cloud.
+Esistono tre varietà di valori di configurazione OSGi che possono essere utilizzati con AEM come Cloud Service.
 
 1. **Valori** in linea, ossia valori hardcoded nella configurazione OSGi e memorizzati in Git. Ad esempio:
 
@@ -76,7 +76,7 @@ Esistono tre varietà di valori di configurazione OSGi che possono essere utiliz
    } 
    ```
 
-1. **I valori** specifici per l&#39;ambiente, ovvero valori che variano da un ambiente di sviluppo all&#39;altro, e che pertanto non possono essere accuratamente impostati in base alla modalità di esecuzione (poiché in AEM come servizio cloud è presente una sola `dev` modalità di esecuzione). Ad esempio:
+1. **I valori** specifici per l’ambiente, ovvero valori che variano da un ambiente di sviluppo all’altro e che pertanto non possono essere accuratamente impostati in base alla modalità di esecuzione (poiché in AEM come Cloud Service è presente una sola `dev` modalità di esecuzione). Ad esempio:
 
    ```json
    {
@@ -116,16 +116,16 @@ Quando definite un valore di configurazione OSGi, iniziate con i valori in linea
 
 ### Quando utilizzare valori di configurazione non segreti per l&#39;ambiente {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Utilizzate configurazioni specifiche dell&#39;ambiente (`$[env:ENV_VAR_NAME]`) solo per i valori di configurazione non segreti quando i valori variano in base agli ambienti di sviluppo. Ciò include le istanze di sviluppo locale e qualsiasi AEM come ambiente di sviluppo del servizio cloud. Evitate di utilizzare configurazioni non segrete specifiche per l&#39;ambiente per AEM come ambienti di servizio cloud o di produzione.
+Utilizzate configurazioni specifiche dell&#39;ambiente (`$[env:ENV_VAR_NAME]`) solo per i valori di configurazione non segreti quando i valori variano in base agli ambienti di sviluppo. Ciò include le istanze di sviluppo locali e qualsiasi AEM come ambiente di sviluppo Cloud Service. Evitate di utilizzare configurazioni non segrete specifiche per l&#39;ambiente per AEM come ambienti Cloud Service Stage o Production.
 
 * Utilizzate solo configurazioni non segrete specifiche per l&#39;ambiente per i valori di configurazione che differiscono tra gli ambienti di sviluppo, incluse le istanze di sviluppo locale.
 * Utilizzate invece i valori inline standard nelle configurazioni OSGi per i valori non segreti di Stage e Produzione.  A tale proposito, non è consigliabile utilizzare configurazioni specifiche per l&#39;ambiente per facilitare l&#39;esecuzione delle modifiche di configurazione in fase di esecuzione agli ambienti di fase e produzione; queste modifiche dovrebbero essere introdotte tramite la gestione del codice sorgente.
 
 ### Quando utilizzare i valori di configurazione specifici dell&#39;ambiente segreto {#when-to-use-secret-environment-specific-configuration-values}
 
-AEM come servizio cloud richiede l’utilizzo di configurazioni specifiche dell’ambiente (`$[secret:SECRET_VAR_NAME]`) per qualsiasi valore di configurazione OSGi segreto, come password, chiavi API private o qualsiasi altro valore che non possa essere memorizzato in Git per motivi di sicurezza.
+AEM come Cloud Service richiede l’utilizzo di configurazioni specifiche dell’ambiente (`$[secret:SECRET_VAR_NAME]`) per qualsiasi valore di configurazione OSGi segreto, come password, chiavi API private o qualsiasi altro valore che non possa essere memorizzato in Git per motivi di sicurezza.
 
-Utilizza configurazioni specifiche per l’ambiente segreto per memorizzare il valore per i segreti in tutti gli ambienti AEM come servizi cloud, inclusi Stage e Produzione.
+Utilizzate configurazioni specifiche per l&#39;ambiente segreto per memorizzare il valore per i segreti in tutti gli ambienti AEM come ambienti Cloud Service, inclusi Stage e Produzione.
 
 <!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
@@ -172,17 +172,17 @@ Esistono due modi per creare nuove configurazioni OSGi, come descritto di seguit
 
 I file di configurazione OSGi formattati JSON possono essere scritti manualmente direttamente nel progetto AEM. Questo è spesso il modo più veloce per creare configurazioni OSGi per componenti OSGi noti, e in particolare componenti OSGi personalizzati che sono stati progettati e sviluppati dallo stesso sviluppatore che definisce le configurazioni. Questo approccio può essere utilizzato anche per copiare/incollare e aggiornare le configurazioni per lo stesso componente OSGi in diverse cartelle in modalità di esecuzione.
 
-1. Nell’IDE, apri il `ui.apps` progetto, individua o crea la cartella di configurazione (`/apps/.../config.<runmode>`) che esegue le modalità di esecuzione della nuova configurazione OSGi
+1. In your IDE, open the `ui.apps` project, locate or create the config folder (`/apps/.../config.<runmode>`) which targets the runmodes the new OSGi configuration should effect
 1. In questa cartella di configurazione, create un nuovo `<PID>.cfg.json` file. Il PID è l’Identità persistente del componente OSGi, in genere è il nome completo della classe dell’implementazione del componente OSGi. Ad esempio:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Tenete presente che i nomi dei file factory di configurazione OSGi utilizzano la convenzione di `<PID>-<factory-name>.cfg.json` denominazione
-1. Aprite il nuovo `.cfg.json` file e definite le combinazioni chiave/valore per le coppie di proprietà e valori OSGi, seguendo il formato [di configurazione](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)JSON OSGi.
-1. Salvare le modifiche apportate al nuovo `.cfg.json` file
-1. Aggiungete e inviate il nuovo file di configurazione OSGi a Git
+Note that OSGi configuration factory file names, use the `<PID>-<factory-name>.cfg.json` naming convention
+1. Open the new `.cfg.json` file, and define the key/value combinations for the OSGi property and value pairs, following the [JSON OSGi configuration format](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
+1. Save your changes to the new `.cfg.json` file
+1. Add and commit your new OSGi configuration file to Git
 
-### Generazione di configurazioni OSGi tramite AEM SDK Quickstart
+### Generating OSGi Configurations using the AEM SDK Quickstart
 
-La console Web AEM di AEM SDK Quickstart Jar può essere utilizzata per configurare componenti OSGi ed esportare configurazioni OSGi come JSON. Questo è utile per configurare componenti OSGi forniti da AEM le cui proprietà OSGi e i cui formati di valore potrebbero non essere ben compresi dallo sviluppatore che definisce le configurazioni OSGi nel progetto AEM. Tenere presente che l’interfaccia utente Configurazione della console Web di AEM non consente di scrivere `.cfg.json` file nell’archivio, pertanto tenete presente che questo consente di evitare possibili comportamenti imprevisti durante lo sviluppo locale, quando le configurazioni OSGi definite dal progetto AEM possono essere diverse dalle configurazioni generate.
+The AEM SDK Quickstart Jar&#39;s AEM Web Console can be used configure OSGi components, and export OSGi configurations as JSON. Questo è utile per configurare componenti OSGi forniti da AEM le cui proprietà OSGi e i cui formati di valore potrebbero non essere ben compresi dallo sviluppatore che definisce le configurazioni OSGi nel progetto AEM. Note that using the AEM Web Console&#39;s Configuration UI does write `.cfg.json` files into the repository, so be aware of this to avoid potential unexpected behavior during local development, when the AEM Project-defined OSGi configurations may differ from the generated configurations.
 
 1. Accedete alla console Web AEM SDK Quickstart Jar come utente amministratore
 1. Passa a OSGi > Configurazione
@@ -273,9 +273,9 @@ Si consiglia di scrivere uno script di base semplice che imposti le variabili di
 
 I valori per i segreti vengono letti dai file. Pertanto, per ogni segnaposto che utilizza un segreto è necessario creare un file di testo contenente il valore segreto.
 
-Ad esempio, se `$[secret:server_password]` viene utilizzato, è necessario creare un file di testo denominato **server_password** . Tutti questi file segreti devono essere memorizzati nella stessa directory e la proprietà framework `org.apache.felix.configadmin.plugin.interpolation.secretsdir` deve essere configurata con quella directory locale.
+Ad esempio, se `$[secret:server_password]` viene utilizzato, è necessario creare un file di testo denominato **server_password** . All these secret files need to be stored in the same directory and the framework property `org.apache.felix.configadmin.plugin.interpolation.secretsdir` needs to be configured with that local directory.
 
-### Configurazione autore e pubblicazione {#author-vs-publish-configuration}
+### Author versus Publish Configuration {#author-vs-publish-configuration}
 
 Se una proprietà OSGI richiede valori diversi per autore e pubblicazione:
 
@@ -401,7 +401,7 @@ config.dev
 </tr>
 </table>
 
-Un altro modo per farlo sarebbe impostare un valore predefinito per il token di sostituzione nella cartella config.dev in modo che sia lo stesso valore della cartella **config** .
+Another way to accomplish this would be to set a default value for the replacement token in the config.dev folder such that it&#39;s the same value as in the **config** folder.
 
 <table>
 <tr>
@@ -477,11 +477,11 @@ Per ulteriori informazioni, consulta [questa pagina](https://www.adobe.io/apis/e
 PATCH /program/{programId}/environment/{environmentId}/variables
 ```
 
-Per eliminare una variabile, includetela con un valore vuoto.
+To delete a variable, include it with an empty value.
 
 Per ulteriori informazioni, consulta [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) .
 
-### Ottenimento dei valori tramite la riga di comando {#getting-values-via-cli}
+### Getting Values via the Command Line {#getting-values-via-cli}
 
 ```bash
 $ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
@@ -503,9 +503,9 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
 ```
 
-> [!NOTE]
+>[!NOTE]
 >
-> Per [ulteriori informazioni sulla configurazione dei valori tramite il plug-in di Cloud Manager per l&#39;interfaccia CLI di I/O di Adobe, vedi](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) .
+>Per [ulteriori informazioni sulla configurazione dei valori tramite il plug-in di Cloud Manager per l&#39;interfaccia CLI di I/O di Adobe, vedi](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) .
 
 ### Numero di variabili {#number-of-variables}
 
@@ -513,16 +513,16 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ## Considerazioni sulla distribuzione per i valori di configurazione specifici per l&#39;ambiente e il segreto {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-Poiché i valori di configurazione specifici per il segreto e l’ambiente sono al di fuori di Git e, pertanto, non fanno parte dei meccanismi formali di distribuzione di AEM come servizio cloud, il cliente deve gestire, governare e integrare in AEM come processo di distribuzione di Servizi cloud.
+Poiché i valori di configurazione segreti e specifici per l’ambiente non rientrano in Git e non fanno quindi parte di AEM formale come meccanismi di distribuzione Cloud Service, il cliente deve gestire, governare e integrare in AEM come processo di distribuzione Cloud Service.
 
-Come già detto, chiamando l&#39;API i nuovi valori e variabili verranno distribuiti negli ambienti Cloud, in modo simile a un tipico pipeline di distribuzione del codice cliente. I servizi di creazione e pubblicazione verranno riavviati e faranno riferimento ai nuovi valori, in genere impiegando alcuni minuti. I cancelli di qualità e i test eseguiti da Cloud Manager durante una distribuzione regolare del codice non vengono eseguiti durante questo processo.
+As mentioned above, calling the API will deploy the new variables and values to Cloud environments, similar to a typical customer code deployment pipeline. I servizi di creazione e pubblicazione verranno riavviati e faranno riferimento ai nuovi valori, in genere impiegando alcuni minuti. I cancelli di qualità e i test eseguiti da Cloud Manager durante una distribuzione regolare del codice non vengono eseguiti durante questo processo.
 
-In genere, i clienti richiamano l&#39;API per impostare le variabili di ambiente prima di distribuire il codice che si basa su di esse in Cloud Manager. In alcuni casi, è possibile modificare una variabile esistente dopo che il codice è già stato distribuito.
+In genere, i clienti richiamano l&#39;API per impostare le variabili di ambiente prima di distribuire il codice che si basa su di esse in Cloud Manager. In some situations, one might want to modify an existing variable after code has already been deployed.
 
-L&#39;API potrebbe non riuscire quando è in uso una pipeline, un aggiornamento AEM o una distribuzione cliente, a seconda di quale parte della pipeline end-to-end viene eseguita in quel momento. La risposta di errore indica che la richiesta non è riuscita, anche se non indicherà il motivo specifico.
+Note that the API may not succeed when a pipeline is in use, either an AEM update or customer deployment, depending on what part of the end to end pipeline is being executed at that time. The error response will indicate that the request was not successful, although it will not indicate the specific reason.
 
-Potrebbero verificarsi situazioni in cui una distribuzione programmata del codice cliente si basa su variabili esistenti per avere nuovi valori, il che non sarebbe appropriato per il codice corrente. Se questo è un problema, si consiglia di apportare modifiche variabili in modo additivo. A tal fine, create nuovi nomi di variabili invece di modificare semplicemente il valore di vecchie variabili in modo che il codice non faccia mai riferimento al nuovo valore. Quindi, quando il nuovo rilascio del cliente appare stabile, è possibile scegliere di rimuovere i valori precedenti.
+There may be scenarios where a scheduled customer code deployment relies on existing variables to have new values, which would not be appropriate with the current code. If this a concern, it is recommended to make variable modifications in an additive way. A tal fine, create nuovi nomi di variabili invece di modificare semplicemente il valore di vecchie variabili in modo che il codice non faccia mai riferimento al nuovo valore. Then when the new customer release looks stable, one can choose to remove the older values.
 
-Analogamente, poiché i valori di una variabile non dispongono di una versione, un rollback del codice potrebbe fare riferimento a valori più recenti che causano problemi. Anche in questo caso la suddetta strategia di variabile additiva sarebbe d&#39;aiuto.
+Similarly, since a variable&#39;s values are not versioned, a rollback of code could cause it to reference newer values that cause issues. The aforementioned additive variable strategy would help here as well.
 
-Questa strategia di variabile additiva è utile anche per gli scenari di disaster recovery in cui, se si desidera ridistribuire il codice da diversi giorni, i nomi e i valori delle variabili a cui fa riferimento rimarranno intatti. Questo si basa su una strategia in cui il cliente attende alcuni giorni prima di rimuovere le vecchie variabili, altrimenti il codice meno recente non avrebbe variabili appropriate a cui fare riferimento.
+This additive variable strategy is also useful for disaster recovery scenarios where if code from several days prior needed to be redeployed, the variable names and values it references will still be intact. This relies on a strategy where a customer waits a few days before removing those older variables, otherwise the older code would not have appropriate variables to reference.
