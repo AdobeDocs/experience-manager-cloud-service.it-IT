@@ -2,7 +2,7 @@
 title: Guida rapida alle linee guida WCAG 2.1
 description: Guida rapida alle linee guida WCAG 2.1
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 100%
@@ -17,11 +17,11 @@ Adobe Experience Manager (AEM) as a Cloud Service è stato sviluppato per garant
 La [versione 2.1 delle linee guida per l’accessibilità dei contenuti web (WCAG)](https://www.w3.org/TR/WCAG/) è costituita da una serie di indicazioni riconosciute a livello internazionale sviluppate dal [World Wide Web Consortium (W3C)](https://www.w3.org/) nell’ambito dell’iniziativa [WAI (Web Accessibility Initiative)](https://www.w3.org/WAI/).
 
 >[!NOTE]
-> 
-> Le linee guida WCAG 2.1 rappresentano un aggiornamento della versione precedente, WCAG 2.0, del 2008. Vedi il [confronto tra WCAG 2.1 e WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+>
+>Le linee guida WCAG 2.1 rappresentano un aggiornamento della versione precedente, WCAG 2.0, del 2008. Vedi il [confronto tra WCAG 2.1 e WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
 
 >[!NOTE]
-> 
+>
 >Attualmente, è in fase di sviluppo una versione [aggiornata delle linee guida, WCAG 2.2](https://www.w3.org/TR/WCAG22/), ma questa non verrà presa in considerazione al momento.
 
 Le linee guida WCAG 2.1 sono costituite da un insieme di criteri di successo e linee guida che non dipendono dalla tecnologia in uso e hanno l’obiettivo di rendere i contenuti web accessibili e utilizzabili da persone con disabilità. Includono suggerimenti e indicazioni per autori, designer e sviluppatori di contenuti web al fine di garantire che le risorse prodotte siano progettate in modo da essere accessibili per un pubblico che sia il più ampio possibile, indipendentemente da eventuali disabilità o limitazioni, quali disabilità visive o uditive, difficoltà di apprendimento o limiti correlati all’età.
