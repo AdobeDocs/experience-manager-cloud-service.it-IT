@@ -2,7 +2,7 @@
 title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3523'
 ht-degree: 1%
@@ -30,11 +30,11 @@ Il resto di questo documento descriverà come gli sviluppatori dovrebbero adatta
 
 ## Aggiornamenti della versione di AEM {#version-updates}
 
-È fondamentale comprendere che AEM verrà aggiornato frequentemente, potenzialmente anche una volta al giorno, e si concentrerà sulle correzioni di bug e sui miglioramenti delle prestazioni. L&#39;aggiornamento verrà eseguito in modo trasparente e senza causare tempi di inattività. L&#39;aggiornamento è compatibile con le versioni precedenti, pertanto non è necessario modificare il codice personalizzato. In realtà, gli aggiornamenti di AEM sono eventi indipendenti dalle distribuzioni del codice cliente. L’aggiornamento AEM viene implementato sopra l’ultimo push del codice con esito positivo, il che implica che tutte le modifiche apportate dall’ultimo push alla produzione non verranno distribuite.
+È importante comprendere che AEM verrà aggiornato frequentemente, potenzialmente anche una volta al giorno, e si concentrerà sulle correzioni di bug e sui miglioramenti delle prestazioni. L&#39;aggiornamento verrà eseguito in modo trasparente e senza causare tempi di inattività. L&#39;aggiornamento è compatibile con le versioni precedenti, pertanto non è necessario modificare il codice personalizzato. In realtà, gli aggiornamenti di AEM sono eventi indipendenti dalle distribuzioni del codice cliente. L’aggiornamento AEM viene implementato sopra l’ultimo push del codice con esito positivo, il che implica che tutte le modifiche apportate dall’ultimo push alla produzione non verranno distribuite.
 
 >[!NOTE]
 >
-> Se il codice personalizzato è stato messo in stato di pre-produzione e successivamente rifiutato dall’utente, il successivo aggiornamento di AEM rimuoverà tali modifiche per riflettere il tag git dell’ultima release cliente riuscita in produzione.
+>Se il codice personalizzato è stato messo in stato di pre-produzione e successivamente rifiutato dall’utente, il successivo aggiornamento di AEM rimuoverà tali modifiche per riflettere il tag git dell’ultima release cliente riuscita in produzione.
 
 Su una frequenza regolare, verrà rilasciata una nuova funzione che si concentrerà sulle funzioni aggiunte e migliorate che avranno un impatto maggiore sull&#39;esperienza dell&#39;utente rispetto alle versioni giornaliere. Una release di una funzione viene attivata non dalla distribuzione di un set di modifiche di grandi dimensioni, ma piuttosto dal rovesciamento di un interruttore di rilascio, attivando il codice che si è accumulato nel corso di giorni o settimane attraverso gli aggiornamenti giornalieri.
 
@@ -61,7 +61,7 @@ Per sviluppare il codice personalizzato per una versione interna, è necessario 
 
 ### Implementazioni tramite Cloud Manager {#deployments-via-cloud-manager}
 
-I clienti distribuiscono il codice personalizzato agli ambienti cloud tramite Cloud Manager. È opportuno notare che Cloud Manager trasforma i pacchetti di contenuto assemblati localmente in un artefatto conforme al modello di funzioni Sling, in modo che un’applicazione AEM come Cloud Service venga descritta quando viene eseguita in un ambiente cloud. Di conseguenza, quando si esaminano i pacchetti in Package Manager negli ambienti Cloud, il nome includerà &quot;cp2fm&quot; e i pacchetti trasformati hanno tutti i metadati rimossi. Non è possibile interagire con questi elementi, ovvero non possono essere scaricati, replicati o aperti. La documentazione dettagliata sul convertitore è [disponibile qui](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+I clienti distribuiscono il codice personalizzato agli ambienti cloud tramite Cloud Manager. È opportuno notare che Cloud Manager trasforma i pacchetti di contenuti assemblati localmente in un artefatto conforme al modello di funzioni Sling, in modo che un’applicazione AEM come Cloud Service venga descritta quando viene eseguita in un ambiente cloud. Di conseguenza, quando si esaminano i pacchetti in Package Manager negli ambienti Cloud, il nome includerà &quot;cp2fm&quot; e i pacchetti trasformati hanno tutti i metadati rimossi. Non è possibile interagire con questi elementi, ovvero non possono essere scaricati, replicati o aperti. La documentazione dettagliata sul convertitore è [disponibile qui](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 I pacchetti di contenuto scritti per AEM come applicazioni Cloud Service devono disporre di una separazione netta tra contenuti immutabili e modificabili e Cloud Manager li applicherà non riuscendo a creare, generando un messaggio come:
 
@@ -133,8 +133,11 @@ Per i seguenti casi, è preferibile adottare l&#39;approccio di codificare manua
 * Creare ed eliminare gruppi
 * Creare ed eliminare utenti
 * Aggiunta di ACL
-   > [!NOTE]
+
+   >[!NOTE]
+   >
    >La definizione di ACL richiede che le strutture dei nodi siano già presenti. Pertanto, prima di creare le istruzioni percorso potrebbe essere necessario.
+
 * Aggiungi percorso (ad esempio per le strutture di cartelle principali)
 * Aggiungere CND (definizioni dei tipi di nodo)
 
