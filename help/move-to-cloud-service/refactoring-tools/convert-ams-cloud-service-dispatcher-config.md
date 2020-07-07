@@ -1,220 +1,223 @@
 ---
-title: Conversione di un AMS in Adobe Experience Manager come configurazione del dispatcher di servizi cloud
-description: Conversione di un AMS in Adobe Experience Manager come configurazione del dispatcher di servizi cloud
+title: Conversione di una configurazione AMS in una configurazione Adobe Experience Manager as a Cloud Service Dispatcher
+description: Conversione di una configurazione AMS in una configurazione Adobe Experience Manager as a Cloud Service Dispatcher
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1342'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Conversione di un AMS in Adobe Experience Manager (AEM) come configurazione del dispatcher di servizi cloud
+# Conversione di una configurazione AMS in una configurazione Adobe Experience Manager (AEM) as a Cloud Service Dispatcher
 
 ## Introduzione {#introduction}
 
 Questa sezione fornisce istruzioni dettagliate su come convertire una configurazione AMS.
 
 >[!NOTE]
->Si parte dal presupposto che disponiate di un archivio con una struttura simile a quella descritta in [Gestione delle configurazioni](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)del dispatcher.
+>Si parte dal presupposto che tu disponga di un archivio con una struttura simile a quella descritta in [Gestione delle configurazioni del Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html).
 
-## Passaggi per la conversione di un AMS in AEM come configurazione del dispatcher di servizi cloud
+## Passaggi per convertire una configurazione AMS in una configurazione AEM as a Cloud Service Dispatcher
 
-1. **Estrarre l&#39;archivio e rimuovere un eventuale prefisso**
+1. **Estrarre l’archivio e rimuovere un eventuale prefisso**
 
-   Estrarre l&#39;archivio in una cartella e assicurarsi che le sottocartelle immediate inizino con conf, conf.d, conf.dispatcher.d e conf.module.d. In caso contrario, spostateli nella gerarchia.
+   Estrai l’archivio in una cartella e assicurati che le sottocartelle immediate inizino con conf, conf.d, conf.dispatcher.d e conf.module.d. In caso contrario, spostale verso l’alto nella gerarchia.
 
 1. **Eliminare le sottocartelle e i file non utilizzati**
 
-   Rimuovete le sottocartelle conf e conf.module.d, nonché i file che corrispondono a conf.d/*.conf.
+   Rimuovi le sottocartelle conf e conf.module.d, nonché i file che corrispondono a conf.d/*.conf.
 
-1. **Eliminazione di tutti gli host virtuali non pubblicati**
+1. **Eliminare tutti gli host virtuali non relativi alla pubblicazione**
 
-1. **Rimuovere un file host virtuale**
+1. **Rimuovere i file host virtuale**
 
-   In conf.d/enabled_vhosts con il nome autore, non integro, integrità, lc o scaricamento. È possibile rimuovere anche tutti i file host virtuali in conf.d/available_hosts non collegati.
+   Si trovano in conf.d/enabled_vhosts e il nome nome contiene author, unhealthy, health, lc o flush. Possono essere rimossi anche tutti i file host virtuali in conf.d/available_hosts che non sono non collegati.
 
-1. Rimuovere o commentare sezioni di host virtuali che non fanno riferimento alla porta 80
+1. Rimuovere o impostare come commento le sezioni di host virtuali che non fanno riferimento alla porta 80
 
    Se i file host virtuali contengono ancora sezioni che fanno riferimento esclusivamente a porte diverse dalla porta 80, ad esempio
 
    `<VirtualHost *:443>`
    `...`
    `</VirtualHost>`
-rimuovete o commentateli. Le istruzioni in queste sezioni non verranno elaborate, ma se le si mantiene in giro, si potrebbe comunque finire per modificarle senza alcun effetto, il che crea confusione.
+rimuovile o impostale come commenti. Le istruzioni di queste sezioni non verranno elaborate, ma se le mantieni potresti comunque finire per modificarle senza alcun effetto, il che creerebbe confusione.
 
-1. **Verifica riscrittura**
+1. **Verificare la directory rewrites**
 
-   * Immettere la directory conf.d/rewrite.
+   * Accedi alla directory conf.d/rewrites.
 
-   * Rimuovete qualsiasi file denominato base_rewrite.rules e xinoltrato_forcessl_rewrite.rules e ricordate di rimuovere le istruzioni Include nei file host virtuali che vi fanno riferimento.
+   * Rimuovi i file denominati base_rewrite.rules e xinoltrato_forcessl_rewrite.rules e ricorda di rimuovere le istruzioni Include nei file host virtuali che vi fanno riferimento.
 
-   * Se conf.d/rewrite ora contiene un singolo file, deve essere rinominato in rewrite.rules e non dimenticare di adattare le istruzioni Include che fanno riferimento a tale file anche nei file host virtuali.
+   * Se conf.d/rewrites ora contiene un singolo file, deve essere rinominato in rewrite.rules e non dimenticare di adattare le istruzioni Include che fanno riferimento a tale file anche nei file host virtuali.
 
-   * Se tuttavia la cartella contiene più file specifici dell&#39;host virtuale, il relativo contenuto deve essere copiato nell&#39;istruzione Include che li fa riferimento nei file host virtuali.
+   * Se tuttavia la cartella contiene più file host virtuali specifici, il loro contenuto deve essere copiato nell’istruzione Include che fa riferimento a essi nei file host virtuali.
 
-1. **Verifica variabili**
+1. **Verificare la directory variables**
 
-   1. Immettere la directory conf.d/variables.
+   1. Accedi alla directory conf.d/variables.
 
-   1. Rimuovete qualsiasi file denominato ams_default.vars e ricordate di rimuovere le istruzioni Include nei file host virtuali che vi fanno riferimento.
+   1. Rimuovi i file denominati ams_default.vars e ricorda di rimuovere le istruzioni Include nei file host virtuali che vi fanno riferimento.
 
-   1. Se le variabili conf.d/variables ora contengono un singolo file, è necessario rinominarlo custom.vars e non dimenticare di adattare le istruzioni Include che fanno riferimento a tale file anche nei file host virtuali.
+   1. Se conf.d/variables ora contiene un singolo file, deve essere rinominato in custom.vars e non dimenticare di adattare le istruzioni Include che fanno riferimento a tale file anche nei file host virtuali.
 
-   1. Se tuttavia la cartella contiene più file specifici dell&#39;host virtuale, il relativo contenuto deve essere copiato nell&#39;istruzione Include che li fa riferimento nei file host virtuali.
+   1. Se tuttavia la cartella contiene più file host virtuali specifici, il loro contenuto deve essere copiato nell’istruzione Include che fa riferimento a essi nei file host virtuali.
 
-1. **Rimuovi whitelist**
+1. **Rimuovere la cartella whitelists**
 
-   Rimuovete la cartella conf.d/whitelist e rimuovete le istruzioni Include nei file host virtuali che fanno riferimento ad alcuni file nella sottocartella.
+   Rimuovi la cartella conf.d/whitelists e le istruzioni Include nei file host virtuali che fanno riferimento ad alcuni file in questa sottocartella.
 
-1. **Sostituisce qualsiasi variabile non più disponibile**
+1. **Sostituire le variabili non più disponibili**
 
    In tutti i file host virtuali:
 
-   Rinominare PUBLISH_DOCROOT in sezioni DOCROOTRemove facendo riferimento a variabili denominate DISP_ID, PUBLISH_FORCE_SSL o PUBLISH_WHITELIST_ENABLED
+   Rinomina PUBLISH_DOCROOT in DOCROOT
+Rimuovi le sezioni che fanno riferimento a variabili denominate DISP_ID, PUBLISH_FORCE_SSL o PUBLISH_WHITELIST_ENABLED
 
 1. **Controllare lo stato eseguendo la convalida**
 
-   Eseguire il dispatcher validator nella directory, con il sottocomando httpd:
+   Esegui la convalida del dispatcher nella directory tramite il sottocomando httpd:
 
    `$ validator httpd`
-Se si verificano degli errori relativi ai file di inclusione mancanti, verificate di aver rinominato correttamente tali file.
+Se si verificano degli errori relativi a file di inclusione mancanti, verifica di averli rinominati correttamente.
 
-   Se vengono visualizzate delle direttive Apache che non sono inserite nella white list, rimuoverle.
+   Se vengono visualizzate delle direttive Apache che non sono inserite nella whitelist, rimuovile.
 
-1. **Eliminazione di tutte le farm non pubblicate**
+1. **Eliminare tutte le farm non relative alla pubblicazione**
 
-   Rimuovete qualsiasi file della farm in conf.dispatcher.d/enabled_farm il cui nome contiene l&#39;autore, l&#39;integrità, l&#39;lc o lo scaricamento è dannoso. È inoltre possibile rimuovere tutti i file della farm in conf.dispatcher.d/available_farm non collegati.
+   Rimuovi i file di farm in conf.dispatcher.d/enabled_farms il cui nome contiene author, unhealthy, health, lc o flush. Possono essere rimossi anche tutti i file di farm in conf.dispatcher.d/available_farms non collegati.
 
-1. **Rinominare i file della farm**
+1. **Rinominare i file di farm**
 
-   Tutte le farm in conf.dispatcher.d/enabled_farm devono essere rinominate in modo da corrispondere al pattern *.farm, pertanto, ad esempio, un file farm denominato customerX_farm.any deve essere rinominato customerX.farm.
+   Tutti i file farm in conf.dispatcher.d/enabled_farms devono essere rinominati secondo il pattern *.farm. Ad esempio, il file farm customerX_farm.any deve essere rinominato customerX.farm.
 
-1. **Controlla cache**
+1. **Verificare la cache**
 
-   Immettere la directory conf.dispatcher.d/cache.
+   Accedi alla directory conf.dispatcher.d/cache.
 
-   Rimuovete eventuali file con prefisso ams_.
+   Rimuovi eventuali file con prefisso ams_.
 
-   Se conf.dispatcher.d/cache è ora vuoto, copiate il file conf.dispatcher.d/cache/rules.any dalla configurazione standard del dispatcher in questa cartella. La configurazione standard del dispatcher si trova nella cartella src di questo SDK. Non dimenticare di adattare le istruzioni $include che fanno riferimento ai file di regole ams_*_cache.any anche nei file della farm.
+   Se la directory conf.dispatcher.d/cache è ora vuota, copia il file conf.dispatcher.d/cache/rules.any dalla configurazione standard del dispatcher in questa cartella. La configurazione standard del dispatcher si trova nella cartella src di questo SDK. Non dimenticare di adattare le istruzioni $include che fanno riferimento ai file di regole ams_*_cache.any anche nei file di farm.
 
-   Se invece conf.dispatcher.d/cache ora contiene un singolo file con suffisso _cache.any, deve essere rinominato in rules.any e non dimenticare di adattare le istruzioni $include che fanno riferimento a tale file anche nei file della farm.
+   Se invece conf.dispatcher.d/cache ora contiene un singolo file con suffisso _cache.any, deve essere rinominato in rules.any e non dimenticare di adattare le istruzioni $include che fanno riferimento a tale file anche nei file di farm.
 
-   Se tuttavia la cartella contiene più file specifici della farm con tale pattern, il relativo contenuto deve essere copiato nell&#39;istruzione $include che fa riferimento a tali file nei file della farm.
+   Se tuttavia la cartella contiene più file di farm specifici con tale pattern, i loro contenuti devono essere copiati nell’istruzione $include che fa riferimento a essi nei file di farm.
 
-   Rimuovete qualsiasi file con il suffisso _invalidate_Allowiany.
+   Rimuovi eventuali file con suffisso _invalidate_allowed.any.
 
-   Copiare il file conf.dispatcher.d/cache/default_invalidate_any dalla configurazione del dispatcher predefinito a tale posizione.
+   Copia il file conf.dispatcher.d/cache/default_invalidate_any dalla configurazione del dispatcher predefinita in quella posizione.
 
-   In ciascun file della farm, rimuovete eventuale contenuto nella sezione cache/allowClient e sostituitelo con:
+   In ciascun file di farm, rimuovi eventuali contenuti nella sezione cache/allowedClients e sostituiscili con:
 
    $include &quot;../cache/default_invalidate.any&quot;
 
-1. **Verifica intestazioni client**
+1. **Verificare la directory clientheaders**
 
-   Immettere la directory conf.dispatcher.d/clientheaders.
+   Accedi alla directory conf.dispatcher.d/clientheaders.
 
-   Rimuovete eventuali file con prefisso ams_.
+   Rimuovi eventuali file con prefisso ams_.
 
-   Se conf.dispatcher.d/clientheaders contiene ora un singolo file con suffisso _clientheaders.any, deve essere rinominato in clientheaders.any e non dimenticare di adattare le istruzioni $include relative a tale file anche nei file della farm.
+   Se conf.dispatcher.d/clientheaders contiene ora un singolo file con suffisso _clientheaders.any, deve essere rinominato in clientheaders.any e non dimenticare di adattare le istruzioni $include relative a tale file anche nei file di farm.
 
-   Se tuttavia la cartella contiene più file specifici della farm con tale pattern, il relativo contenuto deve essere copiato nell&#39;istruzione $include che fa riferimento a tali file nei file della farm.
+   Se tuttavia la cartella contiene più file di farm specifici con tale pattern, i loro contenuti devono essere copiati nell’istruzione $include che fa riferimento a essi nei file di farm.
 
-   Copiate il file conf.dispatcher/clientheaders/default_clientheaders.any dalla configurazione predefinita del dispatcher in quella posizione.
+   Copia il file conf.dispatcher/clientheaders/default_clientheaders.any dalla configurazione del dispatcher predefinita in quella posizione.
 
-   In ciascun file farm, sostituite le istruzioni include di tipo client che abbiano il seguente aspetto:
+   In ciascun file di farm, sostituisci le istruzioni di inclusione clientheader di questo tipo:
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_common_clientheaders.any"`
 
-   con l&#39;istruzione:
+   con l’istruzione:
 
    `$include "../clientheaders/default_clientheaders.any"`
 
-1. **Filtro controllo**
+1. **Verificare la directory filters**
 
-   * Immettere la directory conf.dispatcher.d/Filters.
+   * Accedi alla directory conf.dispatcher.d/filters.
 
-   * Rimuovete eventuali file con prefisso ams_.
+   * Rimuovi eventuali file con prefisso ams_.
 
-   * Se conf.dispatcher.d/filter ora contiene un singolo file, deve essere rinominato come filter.any e non dimenticare di adattare le istruzioni $include che fanno riferimento a tale file anche nei file della farm.
+   * Se conf.dispatcher.d/filters ora contiene un singolo file, deve essere rinominato come filters.any e non dimenticare di adattare le istruzioni $include che fanno riferimento a tale file anche nei file di farm.
 
-   * Se tuttavia la cartella contiene più file specifici della farm con tale pattern, il relativo contenuto deve essere copiato nell&#39;istruzione $include che fa riferimento a tali file nei file della farm.
+   * Se tuttavia la cartella contiene più file di farm specifici con tale pattern, i loro contenuti devono essere copiati nell’istruzione $include che fa riferimento a essi nei file di farm.
 
-   * Copiate il file conf.dispatcher/filters/default_filters.any dalla configurazione predefinita del dispatcher in quella posizione.
+   * Copia il file conf.dispatcher/filters/default_filters.any dalla configurazione del dispatcher predefinita in quella posizione.
 
-   * In ciascun file farm, sostituire eventuali istruzioni di filtro con le seguenti:
+   * In ciascun file di farm, sostituisci eventuali istruzioni di inclusione di questo tipo:
 
-   * $include `"/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"`con l&#39;istruzione:
+   * $include `"/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"`
+con l’istruzione:
 
       `$include "../filters/default_filters.any"`
 
-1. **Controllare i rendering**
+1. **Verificare la directory renders**
 
-   * Immettere la directory conf.dispatcher.d/renders.
+   * Accedi alla directory conf.dispatcher.d/renders.
 
-   * Rimuovete tutti i file presenti nella cartella.
+   * Rimuovi tutti i file presenti nella cartella.
 
-   * Copiare il file conf.dispatcher.d/renders/default_renders.any dalla configurazione dispatcher predefinita in quella posizione.
+   * Copia il file conf.dispatcher.d/renders/default_renders.any dalla configurazione del dispatcher predefinita in quella posizione.
 
-   * In ciascun file della farm, rimuovete eventuale contenuto nella sezione dei rendering e sostituitelo con:
+   * In ciascun file di farm, rimuovi eventuali contenuti nella sezione renders e sostituiscili con:
 
       `$include "../renders/default_renders.any"`
 
-1. **Controllare i virtualhost**
+1. **Verificare la directory virtualhosts**
 
-   * Rinominare la directory `conf.dispatcher.d/vhosts to conf.dispatcher.d/virtualhosts` e immetterla.
+   * Rinomina la directory `conf.dispatcher.d/vhosts to conf.dispatcher.d/virtualhosts` e aprila.
 
-   * Rimuovete eventuali file con prefisso `ams_`.
+   * Rimuovi eventuali file con prefisso `ams_`.
 
-   * Se conf.dispatcher.d/virtualhosts ora contiene un singolo file, dovrebbe essere rinominato come virtualhosts.any e non dimenticare di adattare le istruzioni $include che fanno riferimento a quel file anche nei file della farm.
+   * Se conf.dispatcher.d/virtualhosts ora contiene un singolo file, dovrebbe essere rinominato come virtualhosts.any e non dimenticare di adattare le istruzioni $include che fanno riferimento a tale file anche nei file di farm.
 
-   * Se tuttavia la cartella contiene più file specifici della farm con tale pattern, il relativo contenuto deve essere copiato nell&#39;istruzione $include che fa riferimento a tali file nei file della farm.
+   * Se tuttavia la cartella contiene più file di farm specifici con tale pattern, i loro contenuti devono essere copiati nell’istruzione $include che fa riferimento a essi nei file di farm.
 
-   * Copiate il file conf.dispatcher/virtualhosts/default_virtualhosts.any dalla configurazione predefinita del dispatcher in quella posizione.
+   * Copia il file conf.dispatcher/virtualhosts/default_virtualhosts.any dalla configurazione del dispatcher predefinita in quella posizione.
 
-   * In ciascun file farm, sostituire eventuali istruzioni di filtro con le seguenti:
+   * In ciascun file di farm, sostituisci eventuali istruzioni di inclusione di questo tipo:
 
       `$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"`
-con l&#39;istruzione:
+con l’istruzione:
 
       `$include "../virtualhosts/default_virtualhosts.any"`
 
 
 1. **Controllare lo stato eseguendo la convalida**
 
-   * Eseguire il dispatcher validator nella directory, con il sottocomando dispatcher:
+   * Esegui la convalida del dispatcher nella directory tramite il sottocomando dispatcher:
 
       `$ validator dispatcher`
 
-   * Se si verificano degli errori relativi ai file di inclusione mancanti, verificate di aver rinominato correttamente tali file.
+   * Se si verificano degli errori relativi a file di inclusione mancanti, verifica di aver rinominato correttamente tali file.
 
-   * Se vengono visualizzati errori relativi a una variabile non definita, rinominarla `PUBLISH_DOCROOT`in `DOCROOT`.
+   * Se vengono visualizzati errori relativi a una variabile `PUBLISH_DOCROOT` non definita, rinominala in `DOCROOT`.
 
-   * Per ogni altro errore, vedere la sezione Risoluzione dei problemi della documentazione relativa allo strumento di convalida.
+   * Per qualsiasi altro errore, consulta la sezione Risoluzione di problemi della documentazione relativa allo strumento di convalida.
 
-## Verifica della configurazione con una distribuzione locale {#testing-config-local-deployment}
+## Verifica della configurazione tramite un’implementazione locale {#testing-config-local-deployment}
 
 >[!IMPORTANT]
-> Il test della configurazione con una distribuzione locale richiede l&#39;installazione di Docker.
+>
+>Il test della configurazione tramite un’implementazione locale richiede l’installazione di Docker.
 
-Utilizzando lo script `docker_run.sh` nell’SDK del dispatcher, puoi verificare che la configurazione non contenga altri errori che verrebbero visualizzati solo nella distribuzione:
+Utilizzando lo script `docker_run.sh` nell’SDK di Dispatcher, puoi verificare che la configurazione non contenga altri errori che potrebbero verificarsi solo nell’implementazione:
 
-1. Generazione di informazioni sulla distribuzione con il validatore
+1. Genera le informazioni sull’implementazione con lo strumento di convalida.
 
    `validator full -d out`
-In questo modo viene convalidata la configurazione completa e vengono generate le informazioni di distribuzione in
+In questo modo viene convalidata la configurazione completa e vengono generate le informazioni di implementazione in/out.
 
-1. Avviare il dispatcher in un&#39;immagine docker con tali informazioni di distribuzione
+1. Avvia il dispatcher in un’immagine docker con tali informazioni di implementazione.
 
-   Con il server di pubblicazione AEM in esecuzione sul computer MacOS, in ascolto sulla porta 4503, potete avviare il dispatcher davanti al server come segue:
+   Con il server di pubblicazione AEM in esecuzione sul computer macOS, in ascolto sulla porta 4503, puoi avviare il dispatcher prima di tale server come segue:
 
    `$ docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-   Verrà avviato il contenitore ed esporre Apache sulla porta locale 8080.
+   In questo modo verrà avviato il contenitore e Apache sarà esposto sulla porta locale 8080.
 
-## Utilizzo della nuova configurazione dispatcher {#using-dispatcher-config}
+## Utilizzo della nuova configurazione del dispatcher {#using-dispatcher-config}
 
-Se la funzione di convalida non segnala più alcun problema e il contenitore docker si avvia senza errori o avvisi, è possibile spostare la configurazione in una sottodirectory d`ispatcher/src` del repository git.
+Se la funzione di convalida non segnala più alcun problema e il contenitore docker si avvia senza errori o avvisi, puoi spostare la configurazione in una sottodirectory d`ispatcher/src` del tuo archivio git.
