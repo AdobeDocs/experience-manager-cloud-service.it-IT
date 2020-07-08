@@ -2,17 +2,17 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Da completare
 translation-type: tm+mt
-source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
+source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 1%
+source-wordcount: '1631'
+ht-degree: 2%
 
 ---
 
 
 # Linee guida per lo sviluppo per AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
-Il codice in esecuzione in AEM come Cloud Service deve essere consapevole del fatto che è sempre in esecuzione in un cluster. Ciò significa che è sempre in esecuzione più di un&#39;istanza. Il codice deve essere resiliente, in particolare perché un&#39;istanza potrebbe essere arrestata in qualsiasi momento.
+Il codice in esecuzione in AEM come Cloud Service deve essere consapevole del fatto che è sempre in esecuzione in un cluster. Ciò significa che ci sono sempre in esecuzione più di un’istanza. Il codice deve essere resiliente, in particolare perché un&#39;istanza potrebbe essere arrestata in qualsiasi momento.
 
 Durante l’aggiornamento di AEM come Cloud Service, saranno presenti istanze con codice vecchio e nuovo in esecuzione in parallelo. Pertanto, il vecchio codice non deve essere in conflitto con il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il contenuto precedente.
 <!--
@@ -134,7 +134,7 @@ Sullo sviluppo locale (tramite l&#39;avvio rapido per il cloud) `/apps` e `/libs
 
 I clienti possono accedere a CRXDE lite nell&#39;ambiente di sviluppo, ma non sullo stage o sulla produzione. L&#39;archivio immutabile (`/libs`, `/apps`) non può essere scritto in fase di esecuzione, pertanto il tentativo di eseguire tale operazione potrebbe causare errori.
 
-Una serie di strumenti per il debug di AEM come ambienti per sviluppatori Cloud Service è disponibile in Developer Console per gli ambienti di sviluppo, fase e produzione. Per determinare l’URL, regolate gli URL del servizio Autore o Pubblica nel modo seguente:
+Una serie di strumenti per il debug di AEM come ambienti per sviluppatori Cloud Service sono disponibili nella console Developer per gli ambienti di sviluppo, fase e produzione. Per determinare l’URL, regolate gli URL del servizio Autore o Pubblica nel modo seguente:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -160,8 +160,7 @@ Utile anche per il debug, la console Sviluppatore dispone di un collegamento all
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Per i programmi regolari, l&#39;accesso alla console per sviluppatori è definito da &quot;Cloud Manager - Ruolo sviluppatore&quot; nell&#39;Admin Console , mentre per i programmi sandbox, Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che dia loro accesso ad AEM come Cloud Service. Per ulteriori informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consulta la Documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
-
+Per i programmi regolari, l&#39;accesso alla console per sviluppatori è definito da &quot;Cloud Manager - Ruolo sviluppatore&quot; nell&#39;Admin Console , mentre per i programmi sandbox, Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che dia loro accesso ad AEM come Cloud Service. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per i dumps di stato e gli utenti devono essere definiti anche nel profilo di prodotto Utenti AEM o Amministratori AEM sia nei servizi di creazione che di pubblicazione per visualizzare i dati di dump dello stato di entrambi i servizi. Per ulteriori informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consulta la Documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
 
 
 ### Servizio di gestione e produzione AEM {#aem-staging-and-production-service}
