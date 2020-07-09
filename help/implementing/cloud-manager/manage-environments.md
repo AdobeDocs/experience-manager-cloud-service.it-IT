@@ -1,10 +1,10 @@
 ---
-title: Gestione degli ambienti - Servizio Cloud
-description: Gestione degli ambienti - Servizio Cloud
+title: Gestione degli ambienti - Cloud Service
+description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '695'
 ht-degree: 8%
 
 ---
@@ -28,7 +28,7 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
 
    Nella tabella seguente sono riepilogati i tipi di ambiente e i relativi attributi:
 
-   | Nome | Livello autore | Pubblica livello | Utente può creare | L&#39;utente può eliminare | Pipeline che può essere associata all&#39;ambiente |
+   | Nome | Livello di authoring | Pubblica livello | Utente può creare | L&#39;utente può eliminare | Pipeline che può essere associata all&#39;ambiente |
    |--- |--- |--- |--- |---|---|
    | Produzione | Sì | Sì se Siti inclusi | Sì | No | pipeline di produzione |
    | Area di visualizzazione | Sì | Sì se Siti inclusi | Sì | No | pipeline di produzione |
@@ -41,8 +41,7 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
 
 
 1. Fate clic su **Aggiungi ambiente** per aggiungere un ambiente. Questo pulsante è accessibile dalla schermata **Ambienti** .
-   ![](assets/no-environment-2.png)
-
+   ![](assets/environments-tab.png)
 
    L&#39;opzione **Aggiungi ambiente** è disponibile anche nella scheda **Ambienti** , se il programma non contiene ambienti.
 
@@ -74,12 +73,12 @@ Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del progra
 ![](assets/manage-environments2.png)
 
 
-L&#39;opzione **Aggiorna** è disponibile dal menu a discesa nella scheda **Ambienti** .
+L&#39;opzione **Aggiorna** è disponibile dalla scheda **Ambienti** .
 Questa opzione è disponibile anche dal pulsante **Gestisci** , se fate clic su **Dettagli** dalla scheda **Ambienti** .
 
-![](assets/update-environment2.png)
+![](assets/environments-screen-update.png)
 
-Selezionando questa opzione dal menu a discesa, un gestore distribuzione potrà aggiornare la pipeline associata a questo ambiente alla versione più recente ed eseguire la pipeline.
+Selezionando questa opzione, un gestore distribuzione potrà aggiornare la pipeline associata a questo ambiente alla versione più recente ed eseguire la pipeline.
 
 Se la pipeline è già stata aggiornata, all&#39;utente viene richiesto di eseguire la pipeline.
 
