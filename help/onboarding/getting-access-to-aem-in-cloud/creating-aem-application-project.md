@@ -1,11 +1,11 @@
 ---
-title: Progetto di applicazione AEM - Servizio cloud
-description: Progetto di applicazione AEM - Servizio cloud
+title: Progetto di applicazione AEM - Cloud Service
+description: Progetto di applicazione AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 11%
+source-wordcount: '1255'
+ht-degree: 10%
 
 ---
 
@@ -48,7 +48,7 @@ Per essere generati e distribuiti correttamente con Cloud Manager, i progetti AE
 * Potete aggiungere riferimenti ad altri archivi di artefatti Maven nei file *pom.xml* . Tuttavia, l&#39;accesso ai repository di artifact protetti da password o protetti da rete non è supportato.
 * I pacchetti di contenuto distribuibile vengono rilevati mediante la scansione dei file *zip* del pacchetto di contenuto contenuti contenuti in una directory denominata *target*. Un numero qualsiasi di sottomoduli può produrre pacchetti di contenuto.
 
-* Gli artifact del Dispatcher distribuibile vengono rilevati mediante la scansione di file *zip* (ancora, contenuti in una directory denominata *target*) con directory denominate *conf* e *conf.d*.
+* Gli artefatti Dispatcher distribuibili vengono scoperti analizzando i file *zip* (ancora una volta, contenuti in una directory denominata *target*) con directory denominate *conf* e *conf.d*.
 
 * In presenza di più pacchetti di contenuto, l&#39;ordine delle distribuzioni dei pacchetti non è garantito. Se è necessario un ordine specifico, per definire l’ordine è possibile utilizzare le dipendenze del pacchetto di contenuto. I pacchetti possono essere [ignorati](#skipping-content-packages) dalla distribuzione.
 
@@ -59,7 +59,7 @@ Cloud Manager crea e verifica il codice utilizzando un ambiente di build special
 
 * L&#39;ambiente di costruzione è basato su Linux, derivato da Ubuntu 18.04.
 * Apache Maven 3.6.0 è installato.
-* La versione Java installata è Oracle JDK 8u202.
+* La versione Java ha installato Oracle JDK 8u202 e 11.0.2.
 * Sono installati alcuni pacchetti di sistema aggiuntivi necessari:
 
    * bzip2
@@ -73,6 +73,37 @@ Cloud Manager crea e verifica il codice utilizzando un ambiente di build special
 * Maven è sempre eseguito con il comando: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:Preparare-agent package*
 * Maven è configurato a livello di sistema con un file settings.xml che include automaticamente il repository pubblico di Adobe **Artifact** . Per ulteriori informazioni, consultate [Adobe Public Maven Repository](https://repo.adobe.com/) .
 
+### Utilizzo di Java 11 {#using-java-11}
+
+Cloud Manager ora supporta la creazione di progetti per i clienti con Java 8 e Java 11. Per impostazione predefinita, i progetti vengono creati utilizzando Java 8. I clienti che intendono utilizzare Java 11 nei loro progetti possono farlo utilizzando il plugin [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+
+A questo scopo, nel file pom.xml aggiungete una `<plugin>` voce che si presenta così:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>I fornitori supportati sono Oracle e Sun Microsystems e le versioni supportate sono 1.8, 1.11 e 11.
 
 ## Variabili di ambiente {#environment-variables}
 
@@ -258,7 +289,7 @@ Questa stessa tecnica può essere utilizzata per installare pacchetti specifici 
 
 >[!NOTE]
 >
->L&#39;installazione di un pacchetto di sistema in questo modo **non** lo installa nell&#39;ambiente di runtime utilizzato per eseguire Adobe Experience Manager. Se hai bisogno di installare un pacchetto di sistema nell’ambiente AEM, contatta il tuo rappresentante Adobe.
+>L&#39;installazione di un pacchetto di sistema in questo modo **non** lo installa nell&#39;ambiente di runtime utilizzato per eseguire  Adobe Experience Manager. Se hai bisogno di installare un pacchetto di sistema nell’ambiente AEM, contatta il tuo rappresentante Adobe.
 
 ## Skiping Content Packages {#skipping-content-packages}
 
