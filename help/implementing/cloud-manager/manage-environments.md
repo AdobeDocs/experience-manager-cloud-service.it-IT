@@ -2,9 +2,9 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '702'
 ht-degree: 8%
 
 ---
@@ -70,7 +70,7 @@ Gli aggiornamenti degli ambienti Stage e Produzione vengono gestiti automaticame
 
 Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del programma. Se un ambiente non esegue l’ultima versione di AEM disponibile al pubblico, lo stato della scheda Ambienti nella Home Screen mostra **AGGIORNAMENTO DISPONIBILE**.
 
-![](assets/manage-environments2.png)
+![](assets/update-environ-1.png)
 
 
 L&#39;opzione **Aggiorna** è disponibile dalla scheda **Ambienti** .
@@ -86,10 +86,14 @@ Se la pipeline è già stata aggiornata, all&#39;utente viene richiesto di esegu
 
 L&#39;utente con le autorizzazioni necessarie sarà in grado di eliminare un ambiente di sviluppo.
 
-L&#39;opzione **Elimina** è disponibile dal menu a discesa nella scheda **Ambienti** .
-Questa opzione è disponibile anche dal pulsante **Gestisci** , se fate clic su **Dettagli** dalla scheda **Ambienti** .
+L&#39;opzione **Elimina** è disponibile dal menu a discesa nella scheda **Ambienti** . Fate clic su **...** per un ambiente di sviluppo da eliminare.
 
-![](assets/deleting-environment1.png)
+![](assets/environ-delete.png)
+
+Se si fa clic su **Dettagli** dalla scheda **Ambienti** è anche possibile eliminare un ambiente.
+
+![](assets/environ-delete-2.png)
+
 
 >[!NOTE]
 Questa funzione non è disponibile per l&#39;ambiente Produzione/Fase impostato in un programma regolare impostato a scopo di produzione. La funzione è tuttavia disponibile per gli ambienti Produzione/Fase in un programma sandbox.
@@ -103,7 +107,7 @@ Solo un utente nel ruolo Sviluppatore avrà accesso alla **Developer Console**. 
 Per ulteriori informazioni, consultate [Sospensione e De-hibernating Sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) .
 
 
-![](assets/dev-console1.png)
+![](assets/environ-dev-console.png)
 
 Potete anche selezionare questa opzione dal pulsante **Gestisci** , se fate clic su **Dettagli** dalla scheda **Ambienti** .
 
