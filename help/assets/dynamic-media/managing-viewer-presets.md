@@ -2,7 +2,7 @@
 title: Gestione dei predefiniti per visualizzatori
 description: Come creare e gestire i predefiniti per visualizzatori
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
 source-wordcount: '4263'
 ht-degree: 18%
@@ -150,7 +150,7 @@ Gli amministratori possono aggiungere e personalizzare i seguenti tipi di conten
 
 La tabella seguente identifica tutti i predefiniti per visualizzatori predefiniti forniti con Dynamic Media.
 
-Consulta anche <!-- KEEP REFERENCE [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+Vedere anche [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 Per informazioni sui browser Web e sulle versioni del sistema operativo supportati per i visualizzatori, consultate le Note sulla versione dei visualizzatori.
 
@@ -469,7 +469,7 @@ Quando crei o modifichi un predefinito visualizzatore video interattivo, puoi sc
   </tr>
   <tr>
    <td>Segmento</td>
-   <td><p><code>Segment </code>è la modalità di visualizzazione predefinita per i predefiniti per visualizzatori video interattivi forniti con Scene7 <code>Shoppable_Video_light</code> e per tutti i predefiniti per visualizzatori video interattivi <code>Shoppable_Video_dark</code> creati con voi stessi.</p> <p>In questa modalità, se a un segmento video sono assegnate meno miniature rispetto al numero di punti visibili nel pannello di visualizzazione, le miniature dei segmenti secondari successivi o precedenti <i>non vengono </i>trascinate per riempire eventuali punti vuoti nel pannello. In altre parole, mantiene la visualizzazione dei campioni assegnati al segmento video specifico.</p> </td>
+   <td><p><code>Segment </code>è la modalità di visualizzazione predefinita per i predefiniti per visualizzatori video interattivi integrati <code>Shoppable_Video_light</code> e per tutti i predefiniti per visualizzatori video interattivi creati <code>Shoppable_Video_dark</code> dall’utente.</p> <p>In questa modalità, se a un segmento video sono assegnate meno miniature rispetto al numero di punti visibili nel pannello di visualizzazione, le miniature dei segmenti secondari successivi o precedenti <i>non vengono </i>trascinate per riempire eventuali punti vuoti nel pannello. In altre parole, mantiene la visualizzazione dei campioni assegnati al segmento video specifico.</p> </td>
   </tr>
   <tr>
    <td>Continuo</td>
