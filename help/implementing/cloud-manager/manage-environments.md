@@ -2,9 +2,9 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '753'
 ht-degree: 8%
 
 ---
@@ -74,7 +74,7 @@ Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del progra
 
 
 L&#39;opzione **Aggiorna** è disponibile dalla scheda **Ambienti** .
-Questa opzione è disponibile anche dal pulsante **Gestisci** , se fate clic su **Dettagli** dalla scheda **Ambienti** .
+Questa opzione è disponibile anche, se fate clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fate clic su **...** e selezionate **Aggiorna**, come illustrato nella figura seguente:
 
 ![](assets/environments-screen-update.png)
 
@@ -90,7 +90,7 @@ L&#39;opzione **Elimina** è disponibile dal menu a discesa nella scheda **Ambie
 
 ![](assets/environ-delete.png)
 
-Se si fa clic su **Dettagli** dalla scheda **Ambienti** è anche possibile eliminare un ambiente.
+L&#39;opzione di eliminazione è disponibile anche, se fate clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fate clic su **...** e selezionate **Elimina**, come illustrato nella figura seguente:
 
 ![](assets/environ-delete-2.png)
 
@@ -109,5 +109,5 @@ Per ulteriori informazioni, consultate [Sospensione e De-hibernating Sandbox](ht
 
 ![](assets/environ-dev-console.png)
 
-Potete anche selezionare questa opzione dal pulsante **Gestisci** , se fate clic su **Dettagli** dalla scheda **Ambienti** .
+Questa opzione è disponibile anche, se fate clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato un ambiente, fate clic su **...** e selezionate **Developer Console**.
 
