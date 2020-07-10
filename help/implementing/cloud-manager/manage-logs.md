@@ -1,11 +1,11 @@
 ---
-title: Gestione registri - Servizio Cloud
-description: Gestione registri - Servizio Cloud
+title: Gestione registri - Cloud Service
+description: Gestione registri - Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 11%
+ht-degree: 17%
 
 ---
 
@@ -20,7 +20,7 @@ Questi file possono essere scaricati tramite l’interfaccia utente, dalla pagin
 
 Oppure, la pagina **Ambienti** :
 
-![](assets/manage-logs2.png)
+![](assets/download-logs.png)
 
 >[!Note]
 >Indipendentemente da dove viene aperto, viene visualizzata la stessa finestra di dialogo e è possibile scaricare un singolo file di registro.
