@@ -2,9 +2,9 @@
 title: Norme sulla protezione dei dati e sulla privacy dei dati -  Adobe Experience Manager come Cloud Service Sites
 description: 'Scopri  Adobe Experience Manager come supporto Cloud Service Sites per le varie normative sulla protezione dei dati e la privacy dei dati; incluso il Regolamento generale sulla protezione dei dati (GDPR) dell''UE, il California Consumer Privacy Act e le modalità per conformarsi all''implementazione di un nuovo AEM come progetto Cloud Service. '
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -68,13 +68,9 @@ Per rifiutare:
       Consenso: includi me nell’aggregazione e nell’analisi delle sessioni dei visitatori (non installa il cookie di `amcglobal.sc.omtrdc.net` rinuncia) - Fai clic qui.
    Segui i passaggi indicati sopra per accedere ai collegamenti effettivi.
 
-   <!--
-    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
-    -->
-
    >[!NOTE]
    >
-   > Un&#39;altra descrizione è fornita nella sezione **Privacy Policy** delle [Condizioni d&#39;uso](https://marketing.adobe.com/resources/help/it_IT/terms.html).
+   > C&#39;è un&#39;ulteriore descrizione nel **2. Privacy.** delle Condizioni d&#39;uso [generali di](https://www.adobe.com/legal/terms.html)Adobe.
 
 ##  Analytics Foundation {#analytics-foundation}
 
@@ -177,6 +173,7 @@ Per visualizzare in anteprima la persistenza utilizzata ContextHub, un utente pu
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       L&#39;archivio ContextHub definisce il livello di persistenza da utilizzare, pertanto per visualizzare lo stato corrente della persistenza tutti i livelli devono essere controllati.
 
 
@@ -206,6 +203,7 @@ Per visualizzare in anteprima la persistenza utilizzata ContextHub, un utente pu
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       L&#39;archivio ContextHub definisce il livello di persistenza da utilizzare, pertanto per visualizzare lo stato corrente della persistenza tutti i livelli devono essere controllati.
 
 
