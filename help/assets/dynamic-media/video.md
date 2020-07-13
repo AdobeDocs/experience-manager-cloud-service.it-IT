@@ -2,9 +2,9 @@
 title: Video
 description: Scopri come lavorare con i video in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
 workflow-type: tm+mt
-source-wordcount: '10146'
+source-wordcount: '10058'
 ht-degree: 10%
 
 ---
@@ -425,7 +425,6 @@ La pubblicazione di risorse video sui server YouTube comporta l’esecuzione del
 1. [Configurazione delle impostazioni di Google Cloud](#configuring-google-cloud-settings)
 1. [Creazione di un canale YouTube](#creating-a-youtube-channel)
 1. [Aggiunta di tag per la pubblicazione](#adding-tags-for-publishing)
-1. [Abilitazione dell&#39;agente di replica di pubblicazione di YouTube](#enabling-the-youtube-publish-replication-agent)
 1. [Configurazione di YouTube in AEM](#setting-up-youtube-in-aem)
 1. [(Facoltativo) Automatizzare l’impostazione delle proprietà predefinite di YouTube per i video caricati](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [Pubblicazione di video sul canale YouTube](#publishing-videos-to-your-youtube-channel)
@@ -564,19 +563,21 @@ Per creare un canale YouTube:
 
 Per pubblicare i video su YouTube, AEM associa i tag a uno o più canali YouTube. Per aggiungere tag per la pubblicazione, consultate [Amministrazione dei tag](/help/sites-cloud/authoring/features/tags.md).
 
-Oppure, se intendete utilizzare i tag predefiniti in AEM, potete saltare questa attività e passare a [Abilitazione dell&#39;agente](#enabling-the-youtube-publish-replication-agent)di replica di pubblicazione di YouTube.
+Oppure, se intendete utilizzare i tag predefiniti in AEM, potete saltare questa attività e passare a [Configurazione di YouTube in AEM](#setting-up-youtube-in-aem).
 
-### Abilitazione dell&#39;agente di replica di pubblicazione di YouTube {#enabling-the-youtube-publish-replication-agent}
+>[!NOTE]
+>
+>Una volta configurato il servizio cloud, non è richiesta ulteriore configurazione per abilitare l&#39;agente di replica di pubblicazione di YouTube come questo punto. Il motivo è che era attivato al momento del salvataggio della configurazione del servizio cloud.
 
-Dopo aver attivato l&#39;agente di replica di pubblicazione di YouTube, se desiderate testare la connessione all&#39;account Google Cloud, toccate **[!UICONTROL Test della connessione]**. Una scheda del browser visualizza i risultati della connessione. Se avete aggiunto Canali di YouTube, un elenco di tali canali viene visualizzato come parte del test.
+<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
-1. Fai clic sul logo AEM nell’angolo in alto a sinistra di AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti per creazione]** dalla barra a sinistra.
-1. Nella pagina Agenti di autore, fate clic su **[!UICONTROL YouTube Publish (youtube)]**.
-1. Nella barra degli strumenti, a destra di Impostazioni, fate clic su **[!UICONTROL Modifica]**.
-1. Selezionare la casella di controllo **[!UICONTROL Abilitato]** per attivare l&#39;agente di replica.
-1. Fai clic su **[!UICONTROL OK]**.
+After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-   A questo punto YouTube verrà configurato in AEM.
+1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]** &gt; **[!UICONTROL Agents on Author]**.
+1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
+1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
+1. Click **[!UICONTROL OK]**. -->
 
 ### Setting up YouTube in AEM {#setting-up-youtube-in-aem}
 
@@ -642,7 +643,7 @@ Lasciate aperta la pagina Crea configurazione YouTube; ritornerete su di esso tr
 1. Toccate **[!UICONTROL Crea]**.
 1. Nella finestra di dialogo Impostazioni account di YouTube, immetti l’ID progetto Google nel campo **[!UICONTROL Nome applicazione]**.
 
-   L&#39;ID progetto è stato specificato al momento della [configurazione iniziale delle impostazioni](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) Google Cloud.
+   Hai specificato l&#39;ID progetto al momento della [configurazione iniziale delle impostazioni](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) Google Cloud.
 Lasciate aperta la finestra di dialogo Impostazioni account di YouTube; ritornerete su di esso tra un momento.
 
 1. Utilizzando un editor di testo normale, aprite il file JSON scaricato e salvato in precedenza nell&#39;attività Configurazione delle impostazioni di Google Cloud.
@@ -749,17 +750,14 @@ A questo punto potete associare i tag aggiunti in precedenza alle risorse video.
 >
 >La pubblicazione immediata non viene automaticamente pubblicata su YouTube. Quando si imposta Dynamic Media, è possibile scegliere tra due opzioni di pubblicazione: **[!UICONTROL Immediatamente]** o **[!UICONTROL All’attivazione]**.
 >
->**[!UICONTROL Pubblica Immediatamente]** significa che la risorsa caricata, una volta sincronizzata con IPS, viene pubblicata automaticamente nel sistema di distribuzione. Anche se questo è vero per Dynamic Media, non è vero per YouTube. Per pubblicare contenuti su YouTube, devi pubblicarli tramite AEM Author.
+>**[!UICONTROL Publish Immediatamente]** significa che la risorsa caricata, una volta sincronizzata con IPS, viene pubblicata automaticamente nel sistema di distribuzione. Anche se questo è vero per Dynamic Media, non è vero per YouTube. Per pubblicare contenuti su YouTube, devi pubblicarli tramite AEM Author.
 
 >[!NOTE]
->
->Per pubblicare contenuti da YouTube, AEM utilizza il flusso di lavoro **[!UICONTROL Pubblica su YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sugli errori.
->
->Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
->
->Per informazioni più dettagliate sullo stato di avanzamento, potete monitorare il registro di YouTube nella replica. Tuttavia, tale monitoraggio richiede l&#39;accesso dell&#39;amministratore.
+Per pubblicare contenuti da YouTube, AEM utilizza il flusso di lavoro **[!UICONTROL Pubblica su YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sugli errori.
+Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+Per informazioni più dettagliate sullo stato di avanzamento, potete monitorare il registro di YouTube nella replica. Tuttavia, tale monitoraggio richiede l&#39;accesso dell&#39;amministratore.
 
-Per pubblicare i video sul canale YouTube:
+**Per pubblicare i video sul canale** YouTube:
 
 1. In AEM, individuate una risorsa video da pubblicare sul canale YouTube.
 1. Selezionate la risorsa video (il set video adattivo).
@@ -792,8 +790,7 @@ Dopo otto ore se viene ancora visualizzato un messaggio di stato con la dicitura
 Potete ottenere una stringa URL di YouTube generata da Dynamic Media dopo la pubblicazione del video. Quando copiate l’URL di YouTube, questo viene inserito negli Appunti e può quindi essere incollato nelle pagine del sito Web o dell’applicazione.
 
 >[!NOTE]
->
->L’URL di YouTube non è disponibile per la copia finché non avete pubblicato la risorsa video su YouTube.
+L’URL di YouTube non è disponibile per la copia finché non avete pubblicato la risorsa video su YouTube.
 
 Per collegare gli URL di YouTube all’applicazione Web:
 
@@ -810,14 +807,11 @@ Per collegare gli URL di YouTube all’applicazione Web:
 Quando annullate la pubblicazione di una risorsa video in AEM, il video viene rimosso da YouTube.
 
 >[!CAUTION]
->
->Se rimuovete un video direttamente da YouTube, AEM non è consapevole e continua a comportarsi come se il video fosse ancora pubblicato su YouTube. Annullate sempre la pubblicazione di una risorsa video da YouTube tramite AEM.
+Se rimuovete un video direttamente da YouTube, AEM non è consapevole e continua a comportarsi come se il video fosse ancora pubblicato su YouTube. Annullate sempre la pubblicazione di una risorsa video da YouTube tramite AEM.
 
 >[!NOTE]
->
->Per rimuovere contenuti da YouTube, AEM utilizza il flusso di lavoro **[!UICONTROL Annulla pubblicazione da YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sugli errori.
->
->Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+Per rimuovere contenuti da YouTube, AEM utilizza il flusso di lavoro **[!UICONTROL Annulla pubblicazione da YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sugli errori.
+Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 Per annullare la pubblicazione di un video e rimuoverlo da YouTube:
 
@@ -857,21 +851,17 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
    Eventuali informazioni sul flusso di lavoro, come la codifica, vengono visualizzate nella timeline. Per la pubblicazione su YouTube, la timeline del flusso di lavoro include anche il nome del canale YouTube e l’URL del video di YouTube. Inoltre, una volta completata la pubblicazione, nella timeline del flusso di lavoro vengono visualizzate eventuali notifiche di errore.
 
    >[!NOTE]
-   >
-   >Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, di **[!UICONTROL ritardi dei tentativi]** e per **[!UICONTROL timeout]** su [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
-   >
-   >    * Configurazione coda di lavoro Apache Sling
-   >    * Gestore processo esterno flusso di lavoro Adobe Granite
-   >    * Coda timeout flusso di lavoro Granite
+   Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, di **[!UICONTROL ritardi dei tentativi]** e per **[!UICONTROL timeout]** su [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
+   * Configurazione coda di lavoro Apache Sling
+   * Gestore processo esterno flusso di lavoro Adobe Granite
+   * Coda timeout flusso di lavoro Granite
 
-   >
-   >In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
+   In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
 
 1. Per i flussi di lavoro in corso, vedi l’opzione Istanze flusso di lavoro accedendo a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso]** di lavoro > **[!UICONTROL Istanze]**.
 
    >[!NOTE]
-   >
-   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
+   Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -884,30 +874,22 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 1. Per i processi non riusciti, consulta l’opzione Errori di flusso di lavoro, accessibile da **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Errori]**. In **[!UICONTROL Errore flusso di lavoro]** sono elencate tutte le attività del flusso di lavoro che hanno generato errori.
 
    >[!NOTE]
-   >
-   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
+   Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
-   >
-   >Potrebbero essere necessari tempi lunghi per la registrazione del messaggio di errore, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, di **[!UICONTROL ritardi dei tentativi]** e per **[!UICONTROL timeout]** su [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
-   >
-   >
-   >
-   >    * Configurazione coda di lavoro Apache Sling
-   >    * Gestore processo esterno flusso di lavoro Adobe Granite
-   >    * Coda timeout flusso di lavoro Granite
+   Potrebbero essere necessari tempi lunghi per la registrazione del messaggio di errore, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, di **[!UICONTROL ritardi dei tentativi]** e per **[!UICONTROL timeout]** su [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
+   * Configurazione coda di lavoro Apache Sling
+   * Gestore processo esterno flusso di lavoro Adobe Granite
+   * Coda timeout flusso di lavoro Granite
 
-   >
-   >
-   >In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
+   In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
 
 1. Per i flussi di lavoro completati, consulta Archivio flussi di lavoro, accessibile da **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Archivio]**. **[!UICONTROL Archivio flussi di lavoro]** elenca tutte le attività del flusso di lavoro che sono state completate.
 
    >[!NOTE]
-   >
-   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
+   Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -962,8 +944,7 @@ For YouTube publishing jobs, do the following:
 ## Visualizzazione dei rapporti video {#viewing-video-reports}
 
 >[!NOTE]
->
->I rapporti video sono disponibili solo quando si esegue Dynamic Media - Modalità ibrida.
+I rapporti video sono disponibili solo quando si esegue Dynamic Media - Modalità ibrida.
 
 I rapporti video mostrano diverse metriche aggregate in un determinato periodo di tempo per monitorare che *i video pubblicati *singoli e aggregati abbiano le stesse prestazioni previste. I seguenti dati delle metriche principali sono aggregati per tutti i video pubblicati nell’intero sito Web:
 
@@ -980,8 +961,7 @@ Quando toccate un nome video nell’elenco, questo mostra il rapporto di manteni
 Se il video è stato codificato al di fuori  Dynamic Media Adobe Experience Manager, il grafico a discesa di mantenimento dell&#39;audience e i dati Percentuale di riproduzione nella tabella non sono disponibili.
 
 >[!NOTE]
->
->I dati di monitoraggio e reporting si basano esclusivamente sull’utilizzo del lettore video Dynamic Media e del relativo predefinito per lettori video. Non è quindi possibile tenere traccia e generare rapporti sui video riprodotti da altri lettori video.
+I dati di monitoraggio e reporting si basano esclusivamente sull’utilizzo del lettore video Dynamic Media e del relativo predefinito per lettori video. Non è quindi possibile tenere traccia e generare rapporti sui video riprodotti da altri lettori video.
 
 Per impostazione predefinita, la prima volta che inserite i rapporti video, il rapporto mostra i dati video a partire dal primo del mese corrente e termina con la data del mese corrente. Tuttavia, puoi ignorare l’intervallo di date predefinito specificando il tuo intervallo di date. La volta successiva che immettete Rapporti video, viene utilizzato l’intervallo di date specificato.
 
@@ -1029,7 +1009,7 @@ Per visualizzare i rapporti sui video basati su un visualizzatore video creato c
 
    `videoViewer.setParam("config2", "<value>");`
 
-   Il `config2` parametro abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per la società che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe  Analytics specifiche per i clienti.
+   Il `config2` parametro abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per la società che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe  Analytics specifiche per il cliente.
 
    Il valore corretto per il parametro config2 si trova sia nella funzione **[!UICONTROL Incorpora codice]** che in copia **[UICONTROL URL]**. Nell’URL dal comando di copia **[UICONTROL URL]**, il parametro da cercare è `&config2=<value>`. Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
 
@@ -1076,8 +1056,7 @@ Per ampliare il pubblico potenziale dei vostri video nel mercato globale, potete
 I sottotitoli consentono inoltre una maggiore accessibilità mediante l’uso di sottotitoli codificati per utenti non udenti o non udenti.
 
 >[!NOTE]
->
->Il lettore video utilizzato deve supportare la visualizzazione delle didascalie.
+Il lettore video utilizzato deve supportare la visualizzazione delle didascalie.
 
 Dynamic Media è in grado di convertire i file di sottotitoli in formato JSON (JavaScript Object Notation). Questa conversione consente di incorporare il testo JSON in una pagina Web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi individuare e indicizzare i contenuti per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
@@ -1102,8 +1081,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
    Seguite ora le istruzioni visualizzate dal sito per creare e salvare il file WebVTT. Al termine, copiate il contenuto del file dei sottotitoli e incollatelo in un editor di testo normale, quindi salvatelo con l’estensione .vtt.
 
    >[!NOTE]
-   >
-   >Per il supporto globale dei sottotitoli video in più lingue, tenete presente che lo standard WebVTT richiede la creazione di file .vtt e chiamate separati per ogni lingua da supportare.
+   Per il supporto globale dei sottotitoli video in più lingue, tenete presente che lo standard WebVTT richiede la creazione di file .vtt e chiamate separati per ogni lingua da supportare.
 
    In genere, è consigliabile assegnare al file VTT dei sottotitoli lo stesso nome del file video, aggiungendo il suffisso con le impostazioni internazionali della lingua, ad esempio -EN, -FR, -DE e così via. In questo modo è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti Web esistente.
 
@@ -1133,8 +1111,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
 Per semplificare la visualizzazione e la navigazione dei video di formato esteso, potete aggiungere marcatori capitolo a singoli video o a set video adattivi. Quando un utente riproduce il video, può fare clic sui marcatori capitolo nella timeline del video (detta anche cursore di scorrimento video) per navigare facilmente fino al punto di interesse oppure passare immediatamente a nuovi contenuti, dimostrazioni, esercitazioni e così via.
 
 >[!NOTE]
->
->Il lettore video utilizzato deve supportare l’uso di marcatori di capitolo. I lettori video Dynamic Media supportano i marcatori capitolo, ma l&#39;utilizzo di lettori video di terze parti potrebbe non essere supportato.
+Il lettore video utilizzato deve supportare l’uso di marcatori di capitolo. I lettori video Dynamic Media supportano i marcatori capitolo, ma l&#39;utilizzo di lettori video di terze parti potrebbe non essere supportato.
 
 Potete anche creare e personalizzare con capitoli il vostro visualizzatore video anziché utilizzare un predefinito per visualizzatori video. Per istruzioni su come creare un visualizzatore HTML5 con navigazione dei capitoli, nella guida Adobe Scene7 Viewer SDK for HTML5 fate riferimento all’intestazione &quot;Customizing Behavior Using Modifiers&quot; (Personalizzazione del comportamento mediante modificatori) nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. L’SDK per visualizzatori Adobe Scene7 può essere scaricato da [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
