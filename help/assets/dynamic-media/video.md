@@ -2,7 +2,7 @@
 title: Video
 description: Scopri come lavorare con i video in Dynamic Media
 translation-type: tm+mt
-source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
+source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
 workflow-type: tm+mt
 source-wordcount: '10058'
 ht-degree: 10%
@@ -443,7 +443,7 @@ Tenete presente che Google apporta periodicamente delle modifiche alla propria i
 
 >[!NOTE]
 >
->I seguenti passaggi erano accurati al momento di questa scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
+>I seguenti passaggi erano accurati al momento della scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
 
 Per configurare le impostazioni di Google Cloud:
 
@@ -567,7 +567,7 @@ Oppure, se intendete utilizzare i tag predefiniti in AEM, potete saltare questa 
 
 >[!NOTE]
 >
->Una volta configurato il servizio cloud, non è richiesta ulteriore configurazione per abilitare l&#39;agente di replica di pubblicazione di YouTube come questo punto. Il motivo è che era attivato al momento del salvataggio della configurazione del servizio cloud.
+>Una volta configurato il servizio cloud, non è richiesta ulteriore configurazione per attivare l&#39;agente di replica di pubblicazione di YouTube a questo punto. Il motivo è che era attivato al momento del salvataggio della configurazione del servizio cloud.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -1009,7 +1009,7 @@ Per visualizzare i rapporti sui video basati su un visualizzatore video creato c
 
    `videoViewer.setParam("config2", "<value>");`
 
-   Il `config2` parametro abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per la società che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe  Analytics specifiche per il cliente.
+   Il `config2` parametro abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per la società che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe  Analytics specifiche per i clienti.
 
    Il valore corretto per il parametro config2 si trova sia nella funzione **[!UICONTROL Incorpora codice]** che in copia **[UICONTROL URL]**. Nell’URL dal comando di copia **[UICONTROL URL]**, il parametro da cercare è `&config2=<value>`. Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
 
