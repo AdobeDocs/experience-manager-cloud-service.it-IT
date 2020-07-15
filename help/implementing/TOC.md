@@ -2,10 +2,10 @@
 sub-product: Implementazione per AEM as a Cloud Service
 user-guide-title: Implementazione per AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 92%
+source-wordcount: '236'
+ht-degree: 97%
 
 ---
 
@@ -30,8 +30,10 @@ ht-degree: 92%
    + [SDK di AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Linee guida per lo sviluppo per AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [Sovrapposizioni in AEM come Cloud Service](developing/introduction/overlays.md)
-   + [Utilizzo di Sling Resource Merger in AEM come Cloud Service](developing/introduction/sling-resource-merger.md)
+   + [Foglio di lavoro Sling](developing/introduction/sling-cheatsheet.md)
+   + [Utilizzo delle schede di rete Sling](developing/introduction/sling-adapters.md)
+   + [Utilizzo di Sling Resource Merger in AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
+   + [Sovrapposizioni in AEM as a Cloud Service](developing/introduction/overlays.md)
    + [API di AEM as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Comprendere i risultati del test](/help/implementing/developing/introduction/understand-test-results.md)
 + Configurazione ed estensione di AEM as a Cloud Service {#configuring-and-extending}
@@ -40,8 +42,8 @@ ht-degree: 92%
    + [Componenti di configurazione dei frammenti di contenuto per il rendering](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Configurazione dei moduli di ricerca](developing/extending/search-forms.md)
    + [Configurare l’editor Rich Text](/help/implementing/developing/extending/rich-text-editor.md)
-   + [Configurare i plug-in dell’Editor Rich Text](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
-   + [Configurare l’Editor Rich Text per creare siti accessibili](/help/implementing/developing/extending/rte-accessible-content.md)
+   + [Configurare i plug-in dell’editor Rich Text](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [Configurare l’editor Rich Text per creare siti accessibili](/help/implementing/developing/extending/rte-accessible-content.md)
 + Implementazione in AEM as a Cloud Service {#deploying}
    + [Implementazione in AEM as a Cloud Service](deploying/overview.md)
    + [Configurazione di OSGi per AEM as a Cloud Service](deploying/configuring-osgi.md)
