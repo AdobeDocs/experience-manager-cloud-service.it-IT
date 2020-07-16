@@ -4,8 +4,8 @@ description: Note sulla versione 2020.7.0 di Experience Manager
 translation-type: tm+mt
 source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 20%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
