@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ I frammenti di contenuto si prestano alle seguenti applicazioni:
 * **Creativi professionisti**
    * Monitoraggio delle risorse creative tramite raccolte associate a frammenti di contenuto.
 * **Copywriter**
-   * Creazione di contenuti nell’Editor frammento di contenuto di AEM.
+   * Creazione di contenuti nell’editor frammento di contenuto di AEM.
    * Creazione di varianti del contenuto.
    * Associazione di contenuti rilevanti ai frammenti di contenuto.
    * Uso delle funzioni di gestione versioni/flusso di lavoro.
@@ -88,7 +88,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
    * **Elemento di testo singolo**
    * **Più elementi**
 * **Elemento**
-   * Una selezione sarà disponibile a seconda del modello utilizzato.
+   * A seconda del modello utilizzato sarà disponibile una selezione.
 
    >[!NOTE]
    >
@@ -100,9 +100,9 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
 * **ID**
 
-   * **Attributo ID HTML da applicare al componente.**
+   * Attributo **ID HTML** da applicare al componente.
 
-### Collegamento rapido all’Editor frammento di contenuto  {#quick-connection-to-fragment-editor}
+### Collegamento rapido all’editor frammento di contenuto  {#quick-connection-to-fragment-editor}
 
 Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **Modifica** nella barra degli strumenti del componente, così da poter [modificare e gestire il frammento di contenuto](/help/assets/content-fragments/content-fragments.md).
 
@@ -136,7 +136,7 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 
 >[!CAUTION]
 >
->Dopo aver aggiunto contenuto intermedio a un frammento di contenuto nella pagina, se si modifica la struttura del frammento di contenuto sottostante (ovvero nell’Editor frammento di contenuto) si potrebbero verificare risultati erronei o imprevisti.
+>Dopo aver aggiunto contenuto intermedio a un frammento di contenuto nella pagina, se si modifica la struttura del frammento di contenuto sottostante (ovvero nell’editor frammento di contenuto) si potrebbero verificare risultati erronei o imprevisti.
 >
 >In questi casi, il contenuto intermedio rimane inalterato:
 >
