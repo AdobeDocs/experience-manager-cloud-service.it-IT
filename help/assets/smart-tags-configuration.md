@@ -2,11 +2,11 @@
 title: Tag avanzati migliorati
 description: Applica tag aziendali contestuali e descrittivi utilizzando i servizi di intelligenza artificiale e machine learning di Adobe Sensei per migliorare l’individuazione delle risorse e velocizzare la realizzazione dei contenuti.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ La funzionalità Tag avanzati è acquistabile come componente aggiuntivo per [!D
 
 Prima di poter assegnare tag alle immagini tramite SCS, è necessario integrare [!DNL Adobe Experience Manager] con il servizio Tag avanzati tramite Adobe Developer Console. Nel back-end, il server di [!DNL Experience Manager] autentica le credenziali del servizio con il gateway di Adobe Developer Console prima di inoltrare la richiesta al servizio.
 
-* Crea una configurazione in [!DNL Experience Manager] per generare una chiave pubblica. [Ottieni un certificato pubblico per l’integrazione di OAuth.](#obtain-public-certificate)
-* [Crea un’integrazione in Adobe Developer Console e carica la chiave pubblica generata.](#create-aio-integration)
-* [Configurate i tag](#configure-smart-content-service) avanzati nell&#39; [!DNL Experience Manager] istanza utilizzando la chiave API e altre credenziali da Adobe Developer Console.
-* [Verificare la configurazione](#validate-the-configuration).
-* [Riconfigurare dopo la scadenza](#certrenew)del certificato.
+* Crea una configurazione in [!DNL Experience Manager] per generare una chiave pubblica. [Ottieni un certificato pubblico](#obtain-public-certificate) per l’integrazione di OAuth.
+* [Crea un’integrazione in Adobe Developer Console](#create-aio-integration) e carica la chiave pubblica generata.
+* [Configura tag avanzati](#configure-smart-content-service) nella tua istanza di [!DNL Experience Manager] utilizzando la chiave API e altre credenziali di Adobe Developer Console.
+* [Verifica la configurazione](#validate-the-configuration).
+* [Riconfigura dopo la scadenza del certificato](#certrenew).
 
 ### Prerequisiti per l’integrazione con Adobe Developer Console {#prerequisite-for-aio-integration}
 
