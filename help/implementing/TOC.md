@@ -4,8 +4,8 @@ user-guide-title: Implementazione per AEM as a Cloud Service
 translation-type: tm+mt
 source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
