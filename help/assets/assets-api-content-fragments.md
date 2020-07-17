@@ -2,7 +2,7 @@
 title: ' Adobe Experience Manager come supporto dei frammenti di contenuto Cloud Service nell''API HTTP Assets'
 description: Scopri  Adobe Experience Manager come Cloud Service Content Fragments Support nell’API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -211,7 +211,7 @@ L’API REST di Assets espone l’accesso alle proprietà di una cartella; ad es
 
 Se viene richiesta una risorsa, la risposta restituirà i relativi metadati; come titolo, nome e altre informazioni, come definite dal rispettivo schema di risorse.
 
-I dati binari di una risorsa sono esposti come collegamento SIREN di tipo `content` (noto anche come `rel attribute`).
+I dati binari di una risorsa sono esposti come un collegamento SIREN di tipo `content`.
 
 Le risorse possono avere più rappresentazioni. In genere sono esposte come entità figlie, con una sola eccezione rappresentata dalla rappresentazione in miniatura, che viene esposta come collegamento di tipo `thumbnail` ( `rel="thumbnail"`).
 
@@ -244,7 +244,7 @@ Il contenuto associato al momento non è esposto.
 
 L’utilizzo può variare a seconda che si utilizzi un ambiente di creazione o pubblicazione AEM e che si tratti di un caso d’uso specifico.
 
-* La creazione è strettamente legata a un&#39;istanza di creazione ([e al momento non esiste alcun modo per replicare un frammento da pubblicare utilizzando questa API](/help/assets/assets-api-content-fragments.md#limitations)).
+* È fortemente consigliato che la creazione sia associata a un&#39;istanza di creazione ([e al momento non esiste alcun modo per replicare un frammento da pubblicare utilizzando questa API](/help/assets/assets-api-content-fragments.md#limitations)).
 * La consegna è possibile da entrambi, in quanto AEM fornisce il contenuto richiesto solo in formato JSON.
 
    * L’archiviazione e la distribuzione da un’istanza di creazione di AEM dovrebbero essere sufficienti per le applicazioni libreria multimediale protette dal firewall.
