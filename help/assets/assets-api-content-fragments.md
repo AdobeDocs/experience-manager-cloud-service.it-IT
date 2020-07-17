@@ -2,7 +2,7 @@
 title: ' Adobe Experience Manager come supporto dei frammenti di contenuto Cloud Service nell''API HTTP Assets'
 description: Scopri  Adobe Experience Manager come Cloud Service Content Fragments Support nell’API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -67,7 +67,7 @@ Ad esempio, per accedere `/content/dam/wknd/en/adventures/cycling-tuscany`, rich
 >[!NOTE]
 >Accesso tramite:
 >* `/api/assets` **non** richiede l&#39;utilizzo del `.model` selettore.
->* `/content/assets` **richiede** l&#39;utilizzo del `.model` selettore.
+>* `/content/path/to/page` **richiede** l&#39;utilizzo del `.model` selettore.
 
 
 Il metodo HTTP determina l’operazione da eseguire:
