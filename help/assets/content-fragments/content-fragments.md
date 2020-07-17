@@ -2,7 +2,7 @@
 title: Utilizzo di frammenti di contenuto
 description: Scopri come i frammenti di contenuto in  Adobe Experience Manager (AEM) come Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: a5b0d8789a50974c5b633feb5a84824b5999916c
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 6%
@@ -249,7 +249,7 @@ Per creare, modificare e utilizzare i frammenti di contenuto è inoltre necessar
    * Le definizioni dei modelli di contenuto richiedono un titolo e un elemento dati; tutto il resto è facoltativo.
    * Il modello può definire il contenuto predefinito, se applicabile.
    * Gli autori non possono modificare la struttura definita durante la creazione del contenuto del frammento.
-   * Le modifiche apportate a un modello dopo la creazione dei frammenti di contenuto dipendenti avranno un impatto su tali frammenti di contenuto.
+   * Le modifiche apportate a un modello dopo la creazione dei frammenti di contenuto dipendenti possono avere un impatto su tali frammenti di contenuto.
 
 * **Componente frammento di contenuto**
 
