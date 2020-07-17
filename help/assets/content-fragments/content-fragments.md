@@ -2,10 +2,10 @@
 title: Utilizzo di frammenti di contenuto
 description: Scopri come i frammenti di contenuto in  Adobe Experience Manager (AEM) come Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
 translation-type: tm+mt
-source-git-commit: aefa7d6493ade255e06eaaa7676f8e018f311994
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 7%
+source-wordcount: '1828'
+ht-degree: 6%
 
 ---
 
@@ -72,7 +72,7 @@ Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, ques
 >[!NOTE]
 >
 >I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**sono funzioni diverse in AEM:
->* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
+>* **I frammenti** di contenuto sono contenuti editoriali che possono essere utilizzati per accedere ai dati strutturati, ad esempio testi, numeri e date. Sono contenuti puri, con definizione e struttura, ma senza design e/o layout visivi aggiuntivi.
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
 
 >
@@ -154,14 +154,11 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
 
 * **Paragrafi frammento**
 
-   * Blocchi di testo, ovvero:
+   * Blocchi di testo, spesso a più righe, delimitati come singole entità.
 
-      * separati da spazi verticali (ritorno a capo)
-      * in elementi di testo con più righe
    * Nelle modalità [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) e [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), un paragrafo può essere formattato come intestazione, in tal caso appartiene a un’unica unità insieme al paragrafo seguente.
 
    * Attiva il controllo del contenuto durante l’authoring delle pagine.
-
 
 * **Risorse inserite in un frammento (frammenti di file multimediali diversi)**
 
@@ -247,9 +244,12 @@ Per creare, modificare e utilizzare i frammenti di contenuto è inoltre necessar
 * **Modello di contenuto**
 
    * Vengono [abilitati e quindi creati utilizzando Strumenti](/help/assets/content-fragments/content-fragments-models.md).
-   * Obbligatorio per [creare un frammento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)strutturato.
+   * Obbligatorio per [creare un frammento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Definisce la struttura di un frammento (titolo, elementi di contenuto, definizioni di tag).
-   * Le definizioni dei modelli di contenuto richiedono un titolo e un elemento dati; tutto il resto è facoltativo. Il modello definisce un ambito minimo del frammento e, se applicabile, il contenuto predefinito. Gli autori non possono modificare la struttura definita durante la creazione del contenuto del frammento.
+   * Le definizioni dei modelli di contenuto richiedono un titolo e un elemento dati; tutto il resto è facoltativo.
+   * Il modello può definire il contenuto predefinito, se applicabile.
+   * Gli autori non possono modificare la struttura definita durante la creazione del contenuto del frammento.
+   * Le modifiche apportate a un modello dopo la creazione dei frammenti di contenuto dipendenti avranno un impatto su tali frammenti di contenuto.
 
 * **Componente frammento di contenuto**
 
