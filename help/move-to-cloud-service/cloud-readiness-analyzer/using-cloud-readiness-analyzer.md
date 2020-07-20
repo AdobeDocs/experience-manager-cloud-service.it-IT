@@ -65,7 +65,7 @@ Leggi questa sezione per scoprire come visualizzare il rapporto di Cloud Readine
    >[!NOTE]
    >Per cancellare la cache e generare nuovamente il rapporto CRA, fai clic su **Refresh Report** (Aggiorna rapporto).
 
-###  Adobe Experience Manager 6.2 e 6.1 {#aem-specific-versions}
+### Adobe Experience Manager 6.2 e 6.1 {#aem-specific-versions}
 
 In Adobe Experience Manager 6.2, lo strumento Cloud Readiness Analyzer (Analisi di preparazione al cloud) è limitato a un collegamento che consente di generare e scaricare il rapporto CSV.
 
