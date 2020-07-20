@@ -2,10 +2,10 @@
 title: Progetto di applicazione AEM - Cloud Service
 description: Progetto di applicazione AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
+source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 11%
+source-wordcount: '1314'
+ht-degree: 9%
 
 ---
 
@@ -128,6 +128,39 @@ Per supportare questa funzione, Cloud Manager aggiunge queste variabili di ambie
 | CM_PROGRAM_NAME | Nome del programma |
 | ARTIFACTS_VERSION | Per una fase o una pipeline di produzione, la versione sintetica generata da Cloud Manager |
 | CM_AEM_PRODUCT_VERSION | Nome della versione |
+
+### Variabili pipeline {#pipeline-variables}
+
+In alcuni casi, il processo di creazione di un cliente può dipendere da variabili di configurazione specifiche che non sarebbero adatte a essere inserite nell&#39;archivio Git o che dovrebbero variare tra le esecuzioni della pipeline che utilizzano lo stesso ramo.
+
+Cloud Manager consente di configurare queste variabili tramite l&#39;API di Cloud Manager o l&#39;interfaccia CLI di Cloud Manager in base alla pipeline. Le variabili possono essere memorizzate come testo normale o cifrate a riposo. In entrambi i casi, le variabili sono rese disponibili all&#39;interno dell&#39;ambiente di creazione come variabile di ambiente a cui è possibile fare riferimento all&#39;interno del `pom.xml` file o di altri script di compilazione.
+
+Per impostare una variabile utilizzando CLI, eseguire un comando come:
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
+
+È possibile elencare le variabili correnti:
+
+`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
+
+I nomi delle variabili possono contenere solo caratteri alfanumerici e carattere di sottolineatura (_). Per convenzione, i nomi devono essere tutti maiuscoli. Esiste un limite di 200 variabili per pipeline, ogni nome deve essere inferiore a 100 caratteri e ogni valore deve essere inferiore a 2048 caratteri.
+
+Se utilizzata all&#39;interno di un `Maven pom.xml` file, è generalmente utile mappare queste variabili alle proprietà Maven utilizzando una sintassi simile a quella riportata di seguito:
+
+```xml
+        <profile>
+            <id>cmBuild</id>
+            <activation>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
+            </activation>
+            <properties>
+                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
+            </properties>
+        </profile>
+```
+
 
 ## Attivazione dei profili condivisi in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
