@@ -96,7 +96,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Analisi</td>
-   <td>Funzionalità di ricerca/filtro nel browser Siti per la visualizzazione dei dati di analisi.  filtri di ricerca Analytics si caricano per corrispondere alle colonne di analisi personalizzate mappate.</td>
+   <td>Funzionalità di ricerca/filtro nel browser Siti per la visualizzazione dei dati basati sull'analisi.  filtri di ricerca Analytics si caricano per corrispondere alle colonne di analisi personalizzate mappate.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -547,174 +547,174 @@ A seconda del predicato sono disponibili per la configurazione una serie di impo
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Percorso** del nodo Opzioni **Equivale al Percorso** delleopzioni. Solo questo si trova nel campo predicato comune, mentre l&#39;altro è specifico per le risorse.
-**Selezione** singola Se questa opzione è selezionata, le opzioni vengono rappresentate come caselle di controllo che consentono solo una singola selezione. Se selezionata per errore, è possibile deselezionare una casella di controllo.
+* **Percorso** del nodo OptionsEffettivamente uguale a 
+**Percorso** opzioni, solo questo è nel campo predicato comune, l&#39;altro è specifico per le risorse.
+
+* **Selezione** singola Se questa opzione è selezionata, le opzioni vengono rappresentate come caselle di controllo che consentono solo una singola selezione. Se selezionata per errore, è possibile deselezionare una casella di controllo.
 
 * **Nome/i proprietà Pubblica e Live Copy** Le etichette delle caselle di controllo Pubblica e Copia dal vivo per il predicato specifico Siti.
 
 * &amp;ast; nelle etichette dei campi della scheda **Impostazioni** , i campi sono obbligatori e, se lasciato vuoto, viene visualizzato un messaggio di errore.
 
-* Configurazione dei moduli di ricerca {#configuring-your-search-forms}**
+## Configurazione dei moduli di ricerca {#configuring-your-search-forms}
 
-## Creazione/apertura di una configurazione personalizzata {#creating-opening-a-customized-configuration}
+### Creazione/apertura di una configurazione personalizzata {#creating-opening-a-customized-configuration}
 
-### Passare a **Strumenti**, **Generali**, **Moduli** di ricerca.
+1. Passare a **Strumenti**, **Generali**, **Moduli** di ricerca.
 
-1. Selezionate la configurazione da personalizzare.************
-
+1. Selezionate la configurazione da personalizzare.
 1. Utilizzate l&#39;icona **Modifica** per aprire la configurazione da aggiornare.
 1. Se desiderate una nuova personalizzazione, probabilmente desiderate [aggiungere nuovi campi predicato e definire le impostazioni](#add-edit-a-predicate-field-and-define-field-settings) come necessario. Se disponete già di una personalizzazione, potete selezionare un campo esistente e [aggiornare le impostazioni](#add-edit-a-predicate-field-and-define-field-settings).
-1. Select **Done** to save the configuration. Le modifiche verranno visualizzate al successivo utilizzo della configurazione.[](#add-edit-a-predicate-field-and-define-field-settings)
-1. [!NOTE]**
+1. Select **Done** to save the configuration. Le modifiche verranno visualizzate al successivo utilizzo della configurazione.
 
-   >[!NOTE]Le configurazioni personalizzate sono memorizzate (a seconda dei casi) in:
+   >[!NOTE]
    >
-   >`/apps/cq/gui/content/facets/<option>`
+   >Le configurazioni personalizzate sono memorizzate (a seconda dei casi) in:
    >
+   >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
-   >* Aggiungere o modificare un campo predefinito e definire le impostazioni dei campi {#add-edit-a-predicate-field-and-define-field-settings}
 
 
-### È possibile aggiungere o modificare i campi e definirne o aggiornarne le impostazioni:{#add-edit-a-predicate-field-and-define-field-settings}
+### Aggiungere o modificare un campo predefinito e definire le impostazioni dei campi {#add-edit-a-predicate-field-and-define-field-settings}
 
-[Aprite la configurazione](#creating-opening-a-customized-configuration) personalizzata per l&#39;aggiornamento.
+È possibile aggiungere o modificare i campi e definirne o aggiornarne le impostazioni:
 
+1. [Aprite la configurazione](#creating-opening-a-customized-configuration) personalizzata per l&#39;aggiornamento.
 1. Per aggiungere un nuovo campo, aprite la scheda **Seleziona predicato** e trascinate il predicato richiesto nella posizione desiderata. Ad esempio, il predicato **Intervallo date**:
-1. ![aggiungere un predicato](assets/csf-add-predicate.png)****
 
-   ![A seconda se:](assets/csf-add-predicate.png)
+   ![aggiungere un predicato](assets/csf-add-predicate.png)
 
-1. Si sta aggiungendo un nuovo campo:
+1. A seconda se:
 
-   * Dopo aver aggiunto il predicato, si apre la scheda **Impostazioni** e vengono visualizzate le proprietà che è possibile definire.
+   * Si sta aggiungendo un nuovo campo:
 
-      Aggiornare un predicato esistente:****
+      Dopo aver aggiunto il predicato, si apre la scheda **Impostazioni** e vengono visualizzate le proprietà che è possibile definire.
 
-   * Selezionate il campo predicato (a destra), quindi aprite la scheda **Impostazioni** .
+   * Aggiornare un predicato esistente:
 
-      Ad esempio, le impostazioni per il predicato **Intervallo date**:
+      Selezionate il campo predicato (a destra), quindi aprite la scheda **Impostazioni** .
+   Ad esempio, le impostazioni per il predicato **Intervallo date**:
+
    ![modifica predicato](assets/csf-modify-predicate.png)
 
-   Apportate le modifiche necessarie e confermate con **Fine**. Le modifiche verranno visualizzate al successivo utilizzo della configurazione.
+1. Apportate le modifiche necessarie e confermate con **Fine**. Le modifiche verranno visualizzate al successivo utilizzo della configurazione.
 
-1. Anteprima della configurazione di ricerca {#previewing-the-search-configuration}**
+### Anteprima della configurazione di ricerca {#previewing-the-search-configuration}
 
-### Selezionate l’icona Anteprima:{#previewing-the-search-configuration}
+1. Selezionate l’icona Anteprima:
 
-1. ![icona Anteprima](assets/csf-preview-icon.png)
+   ![icona Anteprima](assets/csf-preview-icon.png)
 
-   ![In questo modo i moduli di ricerca verranno visualizzati (completamente espansi) nella colonna Ricerca della console appropriata.](assets/csf-preview-icon.png)
+1. In questo modo i moduli di ricerca verranno visualizzati (completamente espansi) nella colonna Ricerca della console appropriata.
 
-1. ![modulo di anteprima](assets/csf-preview-form.png)
+   ![modulo di anteprima](assets/csf-preview-form.png)
 
-   **Chiudete** l’anteprima per ripristinare e completare la configurazione.
+1. **Chiudete** l’anteprima per ripristinare e completare la configurazione.
 
-1. Eliminazione di un campo predicato {#deleting-a-predicate-field}**
+### Eliminazione di un campo predicato {#deleting-a-predicate-field}
 
-### [Aprite la configurazione](#creating-opening-a-customized-configuration) personalizzata per l&#39;aggiornamento.
-
+1. [Aprite la configurazione](#creating-opening-a-customized-configuration) personalizzata per l&#39;aggiornamento.
 1. Selezionate il campo predicato (a destra), aprite la scheda **Impostazioni** , quindi selezionate l’icona **Elimina** (in basso a sinistra).
-1. ![icona delete](assets/csf-delete-icon.png)****
 
-   ![Viene visualizzata una finestra di dialogo per richiedere la conferma dell’azione di eliminazione.](assets/csf-delete-icon.png)
+   ![icona delete](assets/csf-delete-icon.png)
+
+1. Viene visualizzata una finestra di dialogo per richiedere la conferma dell’azione di eliminazione.
 
 1. Confermate questa e tutte le altre modifiche con **Fine**.
 
-1. Eliminazione di una configurazione (per ripristinare le impostazioni predefinite) {#deleting-a-configuration-to-reinstate-the-default}**
+### Eliminazione di una configurazione (per ripristinare le impostazioni predefinite) {#deleting-a-configuration-to-reinstate-the-default}
 
-### Una volta personalizzata una configurazione, le impostazioni predefinite verranno ignorate. Potete ripristinare la configurazione predefinita eliminando la configurazione personalizzata.{#deleting-a-configuration-to-reinstate-the-default}
+Una volta personalizzata una configurazione, le impostazioni predefinite verranno ignorate. Potete ripristinare la configurazione predefinita eliminando la configurazione personalizzata.
 
-[!NOTE]
-
->[!NOTE]Non è possibile eliminare le configurazioni predefinite.
+>[!NOTE]
 >
->L’eliminazione di una configurazione personalizzata viene effettuata dalla console:
+>Non è possibile eliminare le configurazioni predefinite.
 
-Selezionate la configurazione desiderata (ad esempio, Editor **pagina (ricerca Paragrafi)**, quindi l’icona **Elimina** nella barra degli strumenti:
+L’eliminazione di una configurazione personalizzata viene effettuata dalla console:
 
-1. ![restore default](assets/csf-restore-default.png)****
+1. Selezionate la configurazione desiderata (ad esempio, Editor **pagina (ricerca Paragrafi)**, quindi l’icona **Elimina** nella barra degli strumenti:
 
-   ![La configurazione personalizzata verrà eliminata e verrà ripristinata l’impostazione predefinita (come indicato dalla riapparizione del simbolo lucchetto nella console).](assets/csf-restore-default.png)
+   ![restore default](assets/csf-restore-default.png)
 
-1. Aggiunta di predefiniti per opzioni {#adding-options-predicates}
+1. La configurazione personalizzata verrà eliminata e verrà ripristinata l’impostazione predefinita (come indicato dalla riapparizione del simbolo lucchetto nella console).
 
-### I predicati delle opzioni (Opzioni, Proprietà Opzioni) consentono di configurare un elemento da ricercare. Sono solitamente utilizzati per cercare qualcosa direttamente sotto la pagina; ad esempio, una proprietà sul nodo della pagina.{#adding-options-predicates}
+### Aggiunta di predefiniti per opzioni {#adding-options-predicates}
+
+I predicati delle opzioni (Opzioni, Proprietà Opzioni) consentono di configurare un elemento da ricercare. Sono solitamente utilizzati per cercare qualcosa direttamente sotto la pagina; ad esempio, una proprietà sul nodo della pagina.
 
 L’esempio seguente (per effettuare ricerche in base al modello utilizzato per creare una pagina) illustra i passaggi da seguire:
 
-Creare il nodo che definisce la proprietà su cui eseguire la ricerca.
+1. Creare il nodo che definisce la proprietà su cui eseguire la ricerca.
 
-1. Sarà necessario un nodo principale che contenga le definizioni delle singole opzioni per essere disponibili per l&#39;utente.
+   Sarà necessario un nodo principale che contenga le definizioni delle singole opzioni per essere disponibili per l&#39;utente.
 
    I nodi delle singole opzioni richiedono le proprietà:
 
-   `jcr:title` - l&#39;etichetta del campo da visualizzare nella barra di ricerca
-
+   * `jcr:title` - l&#39;etichetta del campo da visualizzare nella barra di ricerca
    * `value` - il valore della proprietà su cui effettuare la ricerca
-   * ![Definizione del predicato](assets/csf-options-predicate-01.png)
 
-   [!NOTE]](assets/csf-options-predicate-01.png)
+   ![Definizione del predicato](assets/csf-options-predicate-01.png)
 
+   >[!NOTE]
+   >
    >Non ***devi*** cambiare nulla nel `/libs` percorso.
    >
-   >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).***`/libs`
+   >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
    >
-   >Il metodo consigliato per la configurazione e altre modifiche è:`/libs`
+   >Il metodo consigliato per la configurazione e altre modifiche è:
    >
-   >Ricreare l&#39;elemento richiesto, così come esiste in `/libs`, in `/apps`. In questo caso da:
-   >
-   >1. `/libs/cq/gui/content/common/options/predicates``/apps`
+   >1. Ricreare l&#39;elemento richiesto, così come esiste in `/libs`, in `/apps`. In questo caso da:
+   >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Apportare modifiche all&#39;interno `/apps.`
-   >1. Aprire la console **Moduli** di ricerca e selezionare la configurazione da aggiornare. Ad esempio, **Siti Admin Search Rail**. Quindi selezionate **Modifica**.
 
 
-1. A seconda della configurazione, aggiungere alla configurazione una proprietà **Opzioni** o **Opzioni** .****
+1. Aprire la console **Moduli** di ricerca e selezionare la configurazione da aggiornare. Ad esempio, **Siti Admin Search Rail**. Quindi selezionate **Modifica**.
 
-1. Aggiornare i campi, in particolare:********
-1. **Nome proprietà**
+1. A seconda della configurazione, aggiungere alla configurazione una proprietà **Opzioni** o **Opzioni** .
+1. Aggiornare i campi, in particolare:
 
-   * **Specifica la proprietà node da cercare nei nodi target. Ad esempio:**
+   * **Nome proprietà**
+
+      Specifica la proprietà node da cercare nei nodi target. Ad esempio:
 
       `jcr:content/cq:template`
 
-      **Percorso nodo opzione**
+   * **Percorso nodo opzione**
 
-   * **Selezionate il percorso in cui vengono mantenute le opzioni. Ad esempio:**
+      Selezionate il percorso in cui vengono mantenute le opzioni. Ad esempio:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
+   ![Predici delle opzioni](assets/csf-options-predicate-02.png)
 
-      ![Predici delle opzioni](assets/csf-options-predicate-02.png)
-   Select **Done** to save your configuration.
-
+1. Select **Done** to save your configuration.
 1. Andate alla console appropriata (in questo esempio, **Siti**) e aprite la barra **Ricerca - Filtri** . I nuovi moduli di ricerca definiti e le varie opzioni saranno visibili. Selezionate l’opzione desiderata per visualizzare i risultati della ricerca.
-1. ![opzioni in uso](assets/csf-options-usage.png)****
 
-   Autorizzazioni utente {#user-permissions}](assets/csf-options-usage.png)
-
-
-## Nella tabella seguente sono elencate le autorizzazioni necessarie per eseguire le azioni di modifica, eliminazione e anteprima sui moduli di ricerca.{#user-permissions}
+   ![opzioni in uso](assets/csf-options-usage.png)
 
 
+## Autorizzazioni utente {#user-permissions}
+
+Nella tabella seguente sono elencate le autorizzazioni necessarie per eseguire le azioni di modifica, eliminazione e anteprima sui moduli di ricerca.
 
 <table>
  <thead>
   <tr>
-   </td>
-   </td>
+   <td><strong>Azione</strong></td>
+   <td><strong>Autorizzazioni </strong></td>
   </tr>
  </thead>
  <tbody>
   <tr>
-   </td>
-   </td>
+   <td>Modifica </td>
+   <td>Autorizzazioni di lettura e scrittura sul <code>/apps </code>nodo.</td>
   </tr>
   <tr>
-   </td>
-   </td>
+   <td>Elimina</td>
+   <td>Autorizzazioni di lettura, scrittura, eliminazione sul <code>/apps</code> nodo</td>
   </tr>
   <tr>
-   </td>
-   <td>Read, Write, Delete permissions on the <code>/var/dam/content</code> node.<br /> Read, Write permissions on the <code>/apps</code> node.</td>
+   <td>Anteprima</td>
+   <td>Autorizzazioni di lettura, scrittura, eliminazione sul <code>/var/dam/content</code> nodo.<br /> Autorizzazioni di lettura e scrittura sul <code>/apps</code> nodo.</td>
   </tr>
  </tbody>
 </table>
