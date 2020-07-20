@@ -2,9 +2,9 @@
 title: Utilizzo di frammenti di contenuto
 description: Scopri come i frammenti di contenuto in  Adobe Experience Manager (AEM) come Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
 translation-type: tm+mt
-source-git-commit: a5b0d8789a50974c5b633feb5a84824b5999916c
+source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1818'
 ht-degree: 6%
 
 ---
@@ -83,7 +83,7 @@ I frammenti esperienza possono includere contenuti sotto forma di frammenti di c
 
 >[!NOTE]
 >
->AEM supporta anche la traduzione del contenuto del frammento. Per ulteriori informazioni, consulta Creazione di progetti di traduzione per i frammenti di contenuto.
+>AEM supporta anche la traduzione del contenuto del frammento.
 
 <!--
 >[!NOTE]
