@@ -16,7 +16,7 @@ ht-degree: 5%
 ---
 
 
-# Utilizzo di risorse 3D in Dynamic Media {#working-with-three-d-assets-dm}
+# Working with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}
 
 Dynamic Media consente di caricare, gestire, visualizzare e distribuire risorse 3D come esperienze coinvolgenti.
 
