@@ -2,9 +2,9 @@
 title: Aggiungere le risorse digitali a  Adobe Experience Manager
 description: Aggiungere le risorse digitali al Adobe Experience Manager  come Cloud Service
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1356'
 ht-degree: 2%
 
 ---
@@ -81,7 +81,7 @@ Inoltre, l’interfaccia utente di Risorse mostra la risorsa più recente carica
 
 >[!NOTE]
 >
->Per caricare gerarchie di cartelle nidificate in AEM, consultate Caricamento [in blocco di risorse](#bulk-upload).
+>Per caricare gerarchie di cartelle nidificate in AEM, consultate Caricare [in massa le risorse](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -127,7 +127,7 @@ Tuttavia, i seguenti caratteri (elenco separato da spazi) non sono supportati:
 * il nome del file di risorse non deve contenere `* / : [ \\ ] | # % { } ? &`
 * il nome della cartella di risorse non deve contenere `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Caricamento in blocco delle risorse {#bulk-upload}
+## Caricare in blocco le risorse {#bulk-upload}
 
 Per caricare un numero maggiore di file, in particolare se esistono in una gerarchia di cartelle nidificata su disco, è possibile utilizzare i seguenti approcci:
 
