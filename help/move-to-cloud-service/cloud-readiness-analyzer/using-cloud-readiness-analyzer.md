@@ -1,9 +1,9 @@
 ---
 title: Utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud)
 description: Utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud)
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: a0e58c626f94b778017f700426e960428b657806
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1871'
 ht-degree: 100%
 
