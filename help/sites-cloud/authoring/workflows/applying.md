@@ -2,7 +2,7 @@
 title: Applicazione dei flussi di lavoro alle pagine
 description: Durante l’authoring, è possibile ricorrere ai flussi di lavoro per intraprendere azioni sulle pagine; è inoltre possibile applicare più di un flusso di lavoro.
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 81%
@@ -23,8 +23,8 @@ Quando si applica il flusso di lavoro, è necessario specificare le seguenti inf
 
 Puoi avviare i flussi di lavoro a partire da:
 
-* [La **console** Sites](#starting-a-workflow-from-the-sites-console);
-* [durante la modifica di una pagina, da **Informazioni pagina **](#starting-a-workflow-from-the-page-editor).
+* [La console Sites](#starting-a-workflow-from-the-sites-console);
+* [durante la modifica di una pagina, da Informazioni pagina](#starting-a-workflow-from-the-page-editor).
 
 >[!NOTE]
 >
@@ -51,8 +51,8 @@ Puoi avviare i flussi di lavoro a partire da:
 
 Puoi avviare un flusso di lavoro in uno dei due modi seguenti:
 
-* [con l’opzione **Crea** della barra degli strumenti di Sites](#starting-a-workflow-from-the-sites-toolbar);
-* [dalla barra **Timeline** della console Sites](#starting-a-workflow-from-the-timeline).
+* [con l’opzione Crea della barra degli strumenti di Sites](#starting-a-workflow-from-the-sites-toolbar);
+* [dalla barra Timeline della console Sites](#starting-a-workflow-from-the-timeline).
 
 In entrambi i casi, è necessario:
 
@@ -87,8 +87,8 @@ La procedura guidata **Crea flusso di lavoro** consente di selezionare il flusso
 
 Dopo aver aperto la procedura guidata **Crea flusso di lavoro** in uno dei due modi seguenti:
 
-* [con l’opzione **Crea** della barra degli strumenti di Sites](#starting-a-workflow-from-the-sites-toolbar);
-* [dalla barra **Timeline** della console Sites](#starting-a-workflow-from-the-timeline).
+* [con l’opzione Crea della barra degli strumenti di Sites](#starting-a-workflow-from-the-sites-toolbar);
+* [dalla barra Timeline della console Sites](#starting-a-workflow-from-the-timeline).
 
 Puoi specificare i dettagli:
 
