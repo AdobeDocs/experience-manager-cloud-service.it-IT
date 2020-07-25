@@ -1,11 +1,12 @@
 ---
 sub-product: Implementazione per AEM as a Cloud Service
 user-guide-title: Implementazione per AEM as a Cloud Service
+user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '236'
+ht-degree: 100%
 
 ---
 
@@ -30,8 +31,8 @@ ht-degree: 0%
    + [SDK di AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Linee guida per lo sviluppo per AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [Foglio di lavoro Sling](developing/introduction/sling-cheatsheet.md)
-   + [Utilizzo delle schede di rete Sling](developing/introduction/sling-adapters.md)
+   + [Guida di riferimento rapido per Sling](developing/introduction/sling-cheatsheet.md)
+   + [Utilizzo di adattatori Sling](developing/introduction/sling-adapters.md)
    + [Utilizzo di Sling Resource Merger in AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
    + [Sovrapposizioni in AEM as a Cloud Service](developing/introduction/overlays.md)
    + [API di AEM as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
