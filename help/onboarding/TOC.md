@@ -1,11 +1,12 @@
 ---
 sub-product: Onboarding per AEM as a Cloud Service
 user-guide-title: Onboarding per AEM as a Cloud Service
+user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
 translation-type: tm+mt
-source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,6 +34,6 @@ ht-degree: 96%
 + Accessibilità {#accessibility}
    + [AEM as a Cloud Service e le linee guida per l’accessibilità dei contenuti web](accessibility/web-accessibility.md)
    + [Guida rapida alle linee guida WCAG 2.1](accessibility/quick-guide-wcag.md)
-+ Best practice   {#best-practices}
-   + [Gestione SEO e URL](best-practices/seo-and-url-management.md)
++ Best practice  {#best-practices}
+   + [Gestione SEO (Search Engine Optimization) e URL](best-practices/seo-and-url-management.md)
 + [Panoramica delle console Strumenti](tools-consoles.md)
