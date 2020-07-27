@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,8 +43,8 @@ in altre parole, si tratta di linee guida che possono essere applicate a diversi
 ogni istruzione è redatta in modo da poter essere testata in modo oggettivo affinché un gruppo di esperti di accessibilità possa concordare in linea generale sul fatto che la linea guida sia stata rispettata. Una delle problematiche correlate all’accessibilità, infatti, consiste nel fatto che alcune linee guida possono essere tecnicamente testabili, mentre altre richiedono una valutazione umana per verificare se siano state rispettate o meno.
 
 * Supporto dell’**implementazione contestuale e basata su priorità**:
-alle linee guida WCAG 2.1 vengono assegnate priorità basate sull’impatto probabile del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere decisioni informate sulle linee guida più importanti per una situazione specifica. Inoltre, il concetto di 
-*è stata introdotta l&#39;accessibilità supportata* . Questo consente agli autori di decidere come utilizzare al meglio le tecnologie web che potrebbero non prevedere il supporto completo per l’accessibilità oppure che, per beneficiare delle funzioni di accessibilità, potrebbero richiedere l’accesso a particolari browser e/o tecnologie per l’accessibilità.
+alle linee guida WCAG 2.1 vengono assegnate priorità basate sull’impatto probabile del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere decisioni informate sulle linee guida più importanti per una situazione specifica. Inoltre, è stato introdotto il concetto di 
+*accessibilità supportata*. Questo consente agli autori di decidere come utilizzare al meglio le tecnologie web che potrebbero non prevedere il supporto completo per l’accessibilità oppure che, per beneficiare delle funzioni di accessibilità, potrebbero richiedere l’accesso a particolari browser e/o tecnologie per l’accessibilità.
 
 Tali obiettivi hanno influenzato in modo significativo la struttura delle linee guida WCAG 2.1.
 
