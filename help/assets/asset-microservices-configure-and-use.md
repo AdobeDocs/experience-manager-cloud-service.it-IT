@@ -3,10 +3,10 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 3%
+source-wordcount: '1861'
+ht-degree: 1%
 
 ---
 
@@ -113,24 +113,26 @@ Il profilo di elaborazione può includere una rappresentazione FPO (solo per pos
 
 Potete creare e applicare profili di elaborazione personalizzati aggiuntivi a cartelle specifiche per  Experience Manager per elaborare le risorse caricate o aggiornate in queste cartelle. Il profilo di elaborazione standard predefinito viene sempre eseguito ma non è visibile nell&#39;interfaccia utente. Se aggiungete un profilo personalizzato, entrambi i profili vengono utilizzati per elaborare le risorse caricate.
 
-Esistono due modi per applicare i profili di elaborazione alle cartelle:
+Applicate i profili di elaborazione alle cartelle utilizzando uno dei seguenti metodi:
 
 * Gli amministratori possono selezionare una definizione di profilo di elaborazione in **[!UICONTROL Strumenti > Risorse > Profili]** di elaborazione e utilizzare l&#39;azione **[!UICONTROL Applica profilo alle cartelle]** . Viene aperto un browser del contenuto che consente di passare a cartelle specifiche, selezionarle e confermare l’applicazione del profilo.
-* Gli utenti possono selezionare una cartella nell’interfaccia utente Assets, utilizzare l’azione **[!UICONTROL Proprietà]** per aprire la schermata delle proprietà della cartella, fare clic sulla scheda **[!UICONTROL Profili di elaborazione]** e, nel menu a discesa, selezionare il profilo di elaborazione corretto per tale cartella. L’opzione viene salvata dopo l’azione **[!UICONTROL Salva e chiudi]**.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Per salvare le modifiche, fate clic su **[!UICONTROL Salva e chiudi]**.
 
 >[!NOTE]
 >
->A una cartella specifica può essere applicato un solo profilo di elaborazione. Se avete bisogno di più rappresentazioni generate, potete aggiungere al profilo di elaborazione ulteriori definizioni delle rappresentazioni.
+>A una cartella specifica può essere applicato un solo profilo di elaborazione. Per generare più rappresentazioni, aggiungi più definizioni di rappresentazione al profilo di elaborazione esistente.
 
-Dopo aver applicato un profilo di elaborazione a una cartella, tutte le nuove risorse caricate (o aggiornate) in questa cartella o in una delle sottocartelle vengono elaborate utilizzando il profilo di elaborazione aggiuntivo configurato. Questa ulteriore elaborazione si aggiunge al profilo standard predefinito. Se applicate più profili a una cartella, le risorse caricate o aggiornate vengono elaborate utilizzando ciascuno di questi profili.
+Dopo aver applicato un profilo di elaborazione a una cartella, tutte le nuove risorse caricate (o aggiornate) in questa cartella o in una delle sottocartelle vengono elaborate utilizzando il profilo di elaborazione aggiuntivo configurato. Questa elaborazione si aggiunge al profilo standard predefinito. Se applicate più profili a una cartella, le risorse caricate o aggiornate vengono elaborate utilizzando ciascuno di questi profili.
 
 >[!NOTE]
 >
->Quando le risorse vengono caricate in una cartella,  Experience Manager controlla le proprietà della cartella contenitore per un profilo di elaborazione. Se non ne viene applicata alcuna, la cartella viene visualizzata nella struttura delle cartelle finché non trova un profilo di elaborazione applicato e la utilizza per la risorsa. Ciò significa che un profilo di elaborazione applicato a una cartella funziona per l’intera struttura ad albero, ma può essere sostituito con un altro profilo applicato a una sottocartella.
+>Un profilo di elaborazione applicato a una cartella funziona per l’intera struttura ad albero, ma può essere sostituito con un altro profilo applicato a una sottocartella. Quando le risorse vengono caricate in una cartella,  Experience Manager controlla le proprietà della cartella contenitore per un profilo di elaborazione. Se non ne viene applicata alcuna, viene controllata una cartella principale nella gerarchia per verificare se è necessario applicare un profilo di elaborazione.
 
 Gli utenti possono verificare che l’elaborazione sia stata eseguita aprendo una risorsa appena caricata per la quale l’elaborazione è stata completata, aprendo l’anteprima della risorsa e facendo clic sulla vista **[!UICONTROL Rappresentazioni]** della barra a sinistra. Le rappresentazioni specifiche nel profilo di elaborazione, per le quali il tipo di risorsa specifico corrisponde alle regole di inclusione del tipo MIME, devono essere visibili e accessibili.
 
-![rappresentazioni](assets/renditions-additional-renditions.png)*aggiuntive Figura: Esempio di due rappresentazioni aggiuntive generate da un profilo di elaborazione applicato alla cartella principale*
+![rappresentazioni aggiuntive](assets/renditions-additional-renditions.png)
+
+*Figura: Esempio di due rappresentazioni aggiuntive generate da un profilo di elaborazione applicato alla cartella principale.*
 
 ## Flussi di lavoro di post-elaborazione {#post-processing-workflows}
 
