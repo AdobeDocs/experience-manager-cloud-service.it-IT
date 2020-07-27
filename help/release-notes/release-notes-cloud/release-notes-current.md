@@ -1,16 +1,16 @@
 ---
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.7.0'
-description: Note sulla versione 2020.7.0 di Experience Manager
+description: 'Experience Manager: note sulla versione 2020.7.0 di '
 translation-type: tm+mt
 source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 17%
+ht-degree: 87%
 
 ---
 
 
-# Note sulla versione di AEM as a Cloud Service 2020.7.0 {#release-notes}
+# AEM as a Cloud Service: note sulla versione di 2020.7.0 {#release-notes}
 
 La sezione seguente illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.7.0.
 
@@ -20,15 +20,15 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 ### Data di rilascio {#release-date}
 
-La data di rilascio per [!UICONTROL Cloud Manager] versione 2020.7.0 è il 9 luglio 2020.
+La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.7.0 è il 9 luglio 2020.
 
 ### Novità {#what-is-new-cloud-manager}
 
 * La pagina degli ambienti è stata riprogettata.
 
-* Gli ambienti con sospensione ora mostrano uno stato discreto in Cloud Manager quando sono attivati.
+* Ora in Cloud Manager gli ambienti che sono stati sospesi presentano uno stato discreto.
 
-* Il numero di variabili ambientali per ambiente è stato aumentato a 200.
+* In ogni ambiente, il numero di variabili dell’ambiente è stato aumentato a 200.
 
 * Il contenitore di build di Cloud Manager ora supporta sia Java 8 che Java 11.
 
@@ -37,39 +37,39 @@ Per ulteriori informazioni, vedere Variabili [](/help/onboarding/getting-access-
 
 ### Correzioni di bug {#bug-fixes-cm}
 
-* Il collegamento da Cloud Manager a Developer Console non era correttamente attivo prima che gli ambienti fossero completamente creati.
+* Il collegamento tra Cloud Manager e Developer Console era erroneamente attivo prima che gli ambienti fossero completamente creati.
 
-* Il collegamento alla console per sviluppatori direttamente da Cloud Manager non consentiva di disattivare/attivare l&#39;ambiente di un programma sandbox.
+* Il collegamento diretto da Cloud Manager a Developer Console non mostrava l’opzione per sospendere/riattivare l’ambiente di un programma sandbox.
 
 * Le opzioni **Annulla** e **Salva** nella pagina di modifica della pipeline non di produzione non erano sempre visibili.
 
-* Alcuni errori nel processo di qualità del codice potrebbero causare la mancata generazione corretta del file di registro.
+* Alcuni errori nel processo di qualità del codice potevano causare la generazione non corretta del file di registro.
 
-* Quando si crea un nuovo programma, il nome suggerito a volte restituisce un duplicato di un nome di programma esistente.
+* Al momento della creazione di un nuovo programma, a volte il nome suggerito poteva essere un duplicato di nome di programma esistente.
 
-* Non è stato possibile scaricare in modo coerente alcuni log delle fasi della pipeline di grandi dimensioni tramite l&#39;interfaccia utente.
+* Tramite l’interfaccia utente non si potevano scaricare in modo coerente i log di alcuni fasi di pipeline di grandi dimensioni.
 
-* La convalida dei nomi dell&#39;ambiente presentava un errore &quot;off-by-one&quot;.
+* La convalida dei nomi dell’ambiente presentava un errore con scostamento pari a uno.
 
-* In alcuni casi, la pagina Ambienti visualizzava segmenti di pubblicazione e dispatcher se non ne erano presenti.
+* In alcuni casi, la pagina Ambienti mostrava segmenti di pubblicazione e dispatcher anche in loro assenza.
 
 ### Problemi noti {#known-issues}
 
 * A causa di una modifica nella modalità di calcolo della copertura del codice, la versione _minima_ del plugin Jacoco è ora 0.7.5.201505241946 (rilasciata a maggio 2015). I clienti che fanno esplicito riferimento a una versione precedente riceveranno un messaggio di errore nel processo di qualità del codice.
 
-## Novità di Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+## Novità di Cloud Readiness  Analyzer {#cloud-readiness-analyzer}
 
-Segui questa sezione per saperne di più sulle novità e gli aggiornamenti per la release v1.0.2 di Cloud Readiness Analyzer.
+Leggi questa sezione per saperne di più sulle novità e sugli aggiornamenti di Cloud Readiness Analyzer v1.0.2.
 
 ### Correzioni di bug {#cra-bug-fixes}
 
-* Impossibile eseguire la versione precedente di CRA  Adobe Experience Manager (AEM) 6.1. È stato aggiunto il supporto esplicito per consentire agli utenti del gruppo di amministratori.
+* La versione precedente di Cloud Readiness Analyzer non poteva girare su Adobe Experience Manager (AEM) 6.1. È stato aggiunto il supporto esplicito per gli utenti del gruppo di amministratori.
 
-   Per ulteriori informazioni, consultate [Installazione di CRA su AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) .
+   Per ulteriori informazioni, consulta [Installazione di Cloud Readiness Analyzer in AEM 6.1](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61).
 
-* La marca temporale di scadenza visualizzata nel rapporto di riepilogo non era corretta.
+* Nel rapporto di riepilogo veniva visualizzata una marca temporale di scadenza errata.
 
-* CRA rilevava componenti personalizzati duplicati.
+* Cloud Readiness Analyzer rilevava componenti personalizzati duplicati.
 
-* In AEM 6.1, l’ispezione del contenuto è stata terminata prima di completare l’ispezione completa. È stata aggiunta la gestione delle eccezioni per consentire al controllo di saltare e continuare fino al completamento dell&#39;ispezione completa.
+* In AEM 6.1, l’operazione di ispezione del contenuto veniva terminata prima di essere completata. È stata aggiunta una gestione delle eccezioni che consente all’ispettore di ignorare e continuare fino al completamento di tutta l’ispezione.
 
