@@ -1,11 +1,11 @@
 ---
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2550'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -189,6 +189,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
    * Seleziona il modello da utilizzare per creare la prima pagina, quindi tocca o fai clic su **Avanti** per proseguire.
 
    * Seleziona **Annulla** per interrompere la procedura.
+
    ![Selezione di un modello per una nuova pagina](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. Nell’ultimo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
@@ -196,6 +197,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
    * Usa le tre schede per specificare le [proprietà di pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) da assegnare alla nuova pagina, quindi tocca o fai clic su **Crea** per creare la pagina.
 
    * Utilizza **Indietro** per tornare alla selezione del modello.
+
    I campi chiave sono:
 
    * **Titolo**:
@@ -206,6 +208,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
       * Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando AEM rileva i caratteri non validi, il campo viene evidenziato e un messaggio di avviso segnala i caratteri che devono essere rimossi o sostituiti.
+
    >[!TIP]
    >
    >Consulta [Convenzioni di denominazione delle pagine](#page-naming-conventions).
@@ -240,6 +243,7 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 
    * [Azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e barra degli strumenti
+
    Quindi seleziona l’icona **Modifica**:
 
    Pulsante ![Modifica](/help/sites-cloud/authoring/assets/edit.png)
@@ -250,7 +254,7 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 >
 >La navigazione verso altre pagine dall’Editor pagina è possibile solo in modalità Anteprima, in quanto i collegamenti non sono attivi nella modalità di modifica.
 
-### Copiare e incollare una pagina  {#copying-and-pasting-a-page}
+### Copiare e incollare una pagina    {#copying-and-pasting-a-page}
 
 Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
@@ -259,6 +263,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
    * [Azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e barra degli strumenti
+
    E quindi l’icona **Copia pagina**:
 
    ![Copia](/help/sites-cloud/authoring/assets/copy.png)
@@ -276,6 +281,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
    1. Selezionare direttamente l’icona **Incolla** per la pagina. Verrà creata una copia della pagina originale e delle eventuali pagine figlio in questa posizione.
    1. Selezionare la freccia a discesa per visualizzare l’opzione **Incolla senza elementi secondari**. In questa posizione verrà creata una copia della pagina originale, mentre le pagine figlio non verranno copiate.
+
    >[!NOTE]
    >
    >Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventerà `beach1`.
@@ -295,6 +301,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    * [Azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e barra degli strumenti
+
    Quindi seleziona l’icona **Sposta pagina**:
 
    ![Pulsante Sposta](/help/sites-cloud/authoring/assets/move.png)
@@ -305,6 +312,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    * Specifica il nome da assegnare alla pagina spostata, quindi tocca o fai clic su **Avanti**.
    * Seleziona **Annulla** per interrompere la procedura.
+
    ![Spostare e rinominare la pagina](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
    Il nome pagina può restare lo stesso se si sta solamente spostando la pagina.
@@ -320,6 +328,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
       * Seleziona la destinazione facendo clic sulla miniatura della destinazione.
       * Fai clic su **Avanti** per continuare.
    * Utilizza **Indietro** per specificare di nuovo il nome della pagina.
+
    >[!NOTE]
    >
    >Per impostazione predefinita, l’elemento principale della pagina che stai spostando/rinominando verrà selezionato come destinazione.
@@ -363,24 +372,24 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
 #### Azioni asincrone {#asynchronous-actions}
 
-Normalmente, un’azione di spostamento o ridenominazione della pagina viene eseguita immediatamente. Questa operazione viene considerata un&#39;elaborazione sincrona e ulteriori azioni nell&#39;interfaccia utente vengono bloccate fino al completamento dell&#39;azione.
+Generalmente, un’azione di spostamento o ridenominazione di una pagina viene eseguita immediatamente. Si tratta quindi di elaborazione sincrona e, finché non viene completata, ulteriori azioni risultano bloccate nell’interfaccia utente.
 
-Tuttavia, se il numero di pagine interessate è superiore a un limite definito, l’azione verrà elaborata in modo asincrono, consentendo all’utente di continuare a creare contenuti nell’interfaccia utente senza dover spostare o rinominare la pagina.
+Tuttavia, se il numero di pagine interessate è superiore a un limite definito, l’elaborazione avviene in modo asincrono. L’utente può quindi continuare a creare contenuti nell’interfaccia utente, senza dover attendere che la pagina sia stata spostata o rinominata.
 
-* Quando fai clic su **Sposta** nell’ultimo passaggio precedente, AEM verifica il limite configurato.
-* Se il numero di pagine interessate è inferiore al limite, viene eseguita un&#39;operazione sincrona.
-* Se il numero di pagine interessate è superiore al limite, viene eseguita un&#39;operazione asincrona.
-   * L&#39;utente deve definire quando deve essere eseguita l&#39;operazione asincrona
-      * **Ora** inizia l’esecuzione del processo asincrono immediatamente.
-      * **In seguito** l&#39;utente può definire quando verrà avviato il processo asincrono.
+* Nel momento in cui si seleziona **Sposta** nell’ultimo passaggio precedente, AEM verifica il limite configurato.
+* Se il numero di pagine interessate è inferiore al limite, l’operazione viene eseguita in modalità sincrona.
+* Se il numero di pagine interessate è superiore al limite, l’operazione viene eseguita in modalità asincrona.
+   * È l’utente a definire quando deve essere eseguita l’operazione asincrona.
+      * **Ora** inizia subito l’esecuzione del processo asincrono.
+      * **In seguito** consente di definire quando verrà avviato il processo asincrono.
 
          ![Spostamento asincrono delle pagine](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-Lo stato dei processi asincroni può essere controllato nel dashboard Stato [**processi **Async nel pannello](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)Navigazione****globale ->** Strumenti **->** Operazioni **->** Processi **
+Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato processi asincroni **in](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)** Navigazione globale **->** Strumenti **->** Operazioni **->** Processi **.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull’elaborazione asincrona dei processi e su come configurare il limite per le azioni di spostamento/ridenominazione delle pagine, consulta il documento Processi [](/help/operations/asynchronous-jobs.md) asincroni nella guida utente Operazioni.
+>Per ulteriori informazioni sull’esecuzione asincrona dei processi e su come configurare il limite per le azioni di spostamento o ridenominazione delle pagine, consulta il documento [Processi asincroni](/help/operations/asynchronous-jobs.md) nella guida utente per le operazioni.
 
 ### Eliminazione di una pagina {#deleting-a-page}
 
