@@ -1,10 +1,10 @@
 ---
-title: Aggiungere le risorse digitali a  Adobe Experience Manager
-description: Aggiungere le risorse digitali al Adobe Experience Manager  come Cloud Service
+title: Aggiungi le tue risorse digitali a [!DNL Adobe Experience Manager].
+description: Aggiungi le tue risorse digitali [!DNL Adobe Experience Manager] a un Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1328'
 ht-degree: 2%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 2%
 
 # Aggiungere risorse digitali al Adobe Experience Manager  {#add-assets-to-experience-manager}
 
- Adobe Experience Manager arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, smart tag, rappresentazioni e altri servizi DAM (Digital Asset Management). Potete caricare vari tipi di file, come immagini, documenti e file immagine non elaborati, dalla cartella locale o da un’unità di rete a  Experience Manager Assets.
+[!DNL Adobe Experience Manager] arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, smart tag, rappresentazioni e altri servizi di gestione delle risorse digitali (DAM). Potete caricare vari tipi di file, ad esempio immagini, documenti e file immagine non elaborati, dalla cartella locale o da un’unità di rete a [!DNL Experience Manager Assets].
 
-Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all&#39;archivio Experience Manager , inclusi client desktop, come Adobe Asset Link o  app desktop Experience Manager, script di caricamento e caricamento che i clienti potrebbero creare e integrazioni di assimilazione automatizzate aggiunte come estensioni AEM.
+Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all&#39;archivio Experience Manager , inclusi client desktop, come Adobe Asset Link o  app desktop Experience Manager, script di caricamento e caricamento che i clienti potrebbero creare e integrazioni di assimilazione automatizzate aggiunte  estensioni Experience Manager.
 
 Qui ci concentreremo sui metodi di caricamento per gli utenti finali e forniremo collegamenti agli articoli che descrivono gli aspetti tecnici del caricamento e dell’assimilazione delle risorse tramite  API e SDK Experience Manager.
 
@@ -24,19 +24,19 @@ Potete anche scegliere di effettuare un’ulteriore elaborazione sulle risorse c
 
 >[!NOTE]
 >
-> Experience Manager come Cloud Service sfrutta un nuovo metodo di caricamento delle risorse: caricamento binario diretto. È supportato per impostazione predefinita dalle funzionalità e dai client di prodotto standard, come l’interfaccia utente di AEM, Adobe Asset Link, l’app desktop AEM, e quindi trasparente per gli utenti finali.
+> Experience Manager come Cloud Service sfrutta un nuovo metodo di caricamento delle risorse: caricamento binario diretto. È supportato per impostazione predefinita dalle funzionalità e dai client di prodotto preconfigurati, come &#39;interfaccia utente Experience Manager, Adobe Asset Link,  app desktop Experience Manager, e quindi trasparenti per gli utenti finali.
 >
 >Il codice di caricamento personalizzato o esteso dai team tecnici dei clienti deve usare le nuove API e i nuovi protocolli di caricamento.
 
 ## Upload assets {#upload-assets}
 
-Per caricare uno o più file, potete selezionarli sul desktop e trascinarli nell’interfaccia utente (browser Web) nella cartella di destinazione. In alternativa, potete avviare il caricamento dall’interfaccia utente.
+Per caricare uno o più file, potete selezionarli sul desktop e trascinarli sull’interfaccia utente (browser Web) nella cartella di destinazione. In alternativa, potete avviare il caricamento dall’interfaccia utente.
 
-1. Nell’interfaccia utente Risorse, passa alla posizione in cui desideri aggiungere le risorse digitali.
+1. Nell’interfaccia [!DNL Assets] utente, individuate il percorso in cui desiderate aggiungere le risorse digitali.
 1. Per caricare le risorse, effettuate una delle seguenti operazioni:
 
    * Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Crea]** . Quindi, dal menu, toccate **[!UICONTROL File]**. Se necessario, potete rinominare il file nella finestra di dialogo visualizzata.
-   * In un browser che supporta HTML5, trascinate le risorse direttamente sull’interfaccia utente di Risorse. La finestra di dialogo per rinominare il file non viene visualizzata.
+   * In un browser che supporta HTML5, trascinate le risorse direttamente sull’interfaccia [!DNL Assets] utente. La finestra di dialogo per rinominare il file non viene visualizzata.
 
    ![create_menu](assets/create_menu.png)
 
@@ -59,9 +59,9 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli nell
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. Per annullare un caricamento in corso, fate clic su Chiudi (`X`) accanto alla barra di avanzamento. Quando annullate l’operazione di caricamento, i AEM Assets eliminano la parte parzialmente caricata della risorsa.
+1. Per annullare un caricamento in corso, fate clic su Chiudi (`X`) accanto alla barra di avanzamento. Quando annullate l’operazione di caricamento, [!DNL Assets] elimina la parte parzialmente caricata della risorsa.
 
-   Se annullate l’operazione di caricamento prima del caricamento dei file, i AEM Assets interrompono il caricamento del file corrente e aggiornano il contenuto. Tuttavia, i file già caricati non vengono eliminati.
+   Se annullate l’operazione di caricamento prima del caricamento dei file, [!DNL Assets] interrompe il caricamento del file corrente e aggiorna il contenuto. Tuttavia, i file già caricati non vengono eliminati.
 
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -69,13 +69,13 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli nell
 -->
 
 <!-- #ENGCHECK assuming this is not relevant? remove after confirming#
-   During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
+   During the upload operation, [!DNL Experience Manager] saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, [!DNL Experience Manager] consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
 
-1. Nella finestra di dialogo di avanzamento del caricamento, in AEM Assets, viene visualizzato il numero di file caricati correttamente e i file che non sono stati caricati correttamente.
+1. Nella finestra di dialogo di avanzamento del caricamento [!DNL Assets] viene visualizzato il numero di file caricati correttamente e i file che non sono stati caricati correttamente.
 
 Inoltre, l’interfaccia utente di Risorse mostra la risorsa più recente caricata o la cartella creata per la prima volta.
 
@@ -87,19 +87,19 @@ Inoltre, l’interfaccia utente di Risorse mostra la risorsa più recente carica
 
 ### Serial uploads {#serialuploads}
 
-Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of your AEM Assets instance. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests AEM Assets can handle for concurrent asset uploads. As a result, the upload operation fails or terminate prematurely. In other words, AEM assets may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
+Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of [!DNL Assets]. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests [!DNL Assets] can handle for concurrent asset uploads. As a result, the upload operation fails or terminate prematurely. In other words, [!DNL Assets] may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
 
-To overcome this situation, AEM Assets ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
+To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
 Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
-If you upload many assets to AEM, the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. AEM Assets supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in AEM Assets.
+If you upload many assets to [!DNL Experience Manager], the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. [!DNL Assets] supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in [!DNL Assets].
 
 >[!NOTE]
 >
->Streaming upload is disabled for AEM running on JEE server with servlet-api version lower than 3.1.
+>Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 -->
 
 ### Gestione dei caricamenti quando la risorsa esiste già {#handling-upload-existing-file}
@@ -114,11 +114,11 @@ Potete scegliere di sostituire una risorsa esistente, crearne un’altra o tener
 >
 >Se Asset Insights è abilitato per tenere traccia di impression/clic con Adobe  Analytics, l’ID risorsa rigenerata invalida i dati acquisiti per la risorsa su  Analytics.
 
-Per mantenere la risorsa duplicata in AEM Assets, toccate o fate clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, toccate o fate clic su **[!UICONTROL Elimina]**.
+Per mantenere la risorsa duplicata in [!DNL Assets], fate clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, toccate o fate clic su **[!UICONTROL Elimina]**.
 
 ### Gestione dei nomi dei file e caratteri non consentiti {#filename-handling}
 
-I AEM Assets non consentono di caricare le risorse con i caratteri proibiti nei loro nomi file. Se provate a caricare una risorsa con un nome file contenente un carattere non consentito o più, i AEM Assets visualizzano un messaggio di avviso e interrompono il caricamento fino a quando non rimuovete questi caratteri o lo caricate con un nome consentito.
+[!DNL Experience Manager Assets] impedisce il caricamento di risorse con i caratteri proibiti nel nome del file. Se provate a caricare una risorsa con un nome file contenente un carattere non consentito o più, [!DNL Assets] visualizza un messaggio di avviso e interrompe il caricamento fino a quando non rimuovete questi caratteri o lo caricate con un nome consentito.
 
 Per soddisfare convenzioni di denominazione dei file specifiche per la vostra organizzazione, la finestra di dialogo [!UICONTROL Carica risorse] consente di specificare nomi lunghi per i file caricati.
 
@@ -142,7 +142,7 @@ Per caricare un numero maggiore di file, in particolare se esistono in una gerar
 
 Oltre all&#39;interfaccia utente del browser Web,  Experience Manager supporta altri client sul desktop. Offrono inoltre un’esperienza di caricamento senza dover passare al browser Web.
 
-* [Collegamento](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) risorse Adobe consente di accedere alle risorse da AEM nelle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Puoi caricare il documento aperto in AEM direttamente dall’interfaccia utente di Adobe Asset Link dall’interno di queste applicazioni desktop.
+* [Collegamento](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) risorse Adobe consente di accedere alle risorse dalle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign [!DNL Experience Manager] . Potete caricare il documento attualmente aperto [!DNL Experience Manager] direttamente dall’interfaccia utente di Adobe Asset Link dall’interno di queste applicazioni desktop.
 * [&#39;app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) desktop Experience Manager semplifica l&#39;utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall&#39;applicazione nativa che le gestisce. È particolarmente utile caricare i file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file semplici.
 
 ## Elaborazione aggiuntiva {#additional-processing}
