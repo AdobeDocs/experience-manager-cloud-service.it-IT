@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Da completare
 translation-type: tm+mt
-source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
+source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1949'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Il codice in esecuzione in AEM come Cloud Service deve essere consapevole del fatto che è sempre in esecuzione in un cluster. Ciò significa che ci sono sempre in esecuzione più di un’istanza. Il codice deve essere resiliente, in particolare perché un&#39;istanza potrebbe essere arrestata in qualsiasi momento.
 
-Durante l’aggiornamento di AEM come Cloud Service, saranno presenti istanze con codice vecchio e nuovo in esecuzione in parallelo. Pertanto, il vecchio codice non deve essere in conflitto con il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il contenuto precedente.
+Durante l&#39;aggiornamento di AEM come Cloud Service, ci saranno istanze con codice vecchio e nuovo in esecuzione in parallelo. Pertanto, il vecchio codice non deve essere in conflitto con il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il contenuto precedente.
 <!--
 
 >[!NOTE]
@@ -40,19 +40,19 @@ Analogamente, con tutto ciò che sta accadendo in modo asincrono come agire su e
 
 ## Attività in background e processi con esecuzione prolungata {#background-tasks-and-long-running-jobs}
 
-Il codice eseguito come attività in background deve presupporre che l&#39;istanza in cui è in esecuzione possa essere ridotta in qualsiasi momento. Pertanto, il codice deve essere resiliente e la maggior parte delle importazioni deve essere ripristinabile. Ciò significa che se il codice viene rieseguito, non dovrebbe ricominciare dall&#39;inizio ma piuttosto avvicinarsi a quello che ha lasciato. Anche se questo non è un nuovo requisito per questo tipo di codice, in AEM come Cloud Service è più probabile che si verifichi una rimozione dell’istanza.
+Il codice eseguito come attività in background deve presupporre che l&#39;istanza in cui è in esecuzione possa essere ridotta in qualsiasi momento. Pertanto, il codice deve essere resiliente e la maggior parte delle importazioni deve essere ripristinabile. Ciò significa che se il codice viene rieseguito, non dovrebbe ricominciare dall&#39;inizio ma piuttosto avvicinarsi a quello che ha lasciato. Anche se questo non è un nuovo requisito per questo tipo di codice, in AEM come Cloud Service è più probabile che si verifichi una rimozione dell&#39;istanza.
 
 Per ridurre al minimo i problemi, è necessario evitare i lavori a lungo termine, se possibile, che dovrebbero essere ripresi al minimo. Per eseguire tali processi, utilizzate Processi Sling, che dispongono di una garanzia almeno una volta e quindi se vengono interrotti, verranno rieseguiti il prima possibile. Ma probabilmente non dovrebbero ricominciare dall&#39;inizio. Per la pianificazione di tali processi, è consigliabile utilizzare il pianificatore [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) , in quanto questa è di nuovo l’esecuzione almeno una volta.
 
 L&#39;Utilità di pianificazione Sling Commons non deve essere utilizzata per la pianificazione, perché non è possibile garantire l&#39;esecuzione. È molto più probabile che venga pianificato.
 
-Allo stesso modo, con tutto ciò che sta accadendo in modo asincrono, come agire su eventi di osservazione, (che si tratti di eventi JCR o di eventi di risorse Sling), non può essere garantito di essere eseguito e quindi deve essere utilizzato con attenzione. Questo è già vero per le distribuzioni AEM al momento.
+Allo stesso modo, con tutto ciò che sta accadendo in modo asincrono, come agire su eventi di osservazione, (che si tratti di eventi JCR o di eventi di risorse Sling), non può essere garantito di essere eseguito e quindi deve essere utilizzato con attenzione. Questo è già vero per AEM distribuzioni nel presente.
 
 ## Connessioni HTTP in uscita {#outgoing-http-connections}
 
-È vivamente consigliato che qualsiasi connessione HTTP in uscita imposti timeout ragionevoli di connessione e lettura. Per il codice che non applica questi timeout, le istanze AEM in esecuzione su AEM come Cloud Service applicheranno un timeout globale. Questi valori di timeout sono 10 secondi per le chiamate di connessione e 60 secondi per le chiamate di lettura per le connessioni utilizzate dalle seguenti librerie Java popolari:
+È vivamente consigliato che qualsiasi connessione HTTP in uscita imposti timeout ragionevoli di connessione e lettura. Per il codice che non applica questi timeout, AEM istanze in esecuzione su AEM come Cloud Service applicheranno un timeout globale. Questi valori di timeout sono 10 secondi per le chiamate di connessione e 60 secondi per le chiamate di lettura per le connessioni utilizzate dalle seguenti librerie Java popolari:
 
-Adobe consiglia di utilizzare la libreria [](https://hc.apache.org/httpcomponents-client-ga/) Apache HttpComponents Client 4.x fornita per effettuare connessioni HTTP.
+ Adobe consiglia di utilizzare la libreria [](https://hc.apache.org/httpcomponents-client-ga/) Apache HttpComponents Client 4.x fornita per effettuare connessioni HTTP.
 
 Le alternative che funzionano, ma che possono richiedere di fornire la dipendenza sono:
 
@@ -70,9 +70,9 @@ Il codice non sarà in grado di scaricare i file binari in fase di esecuzione n�
 
 ## Nessun binario in streaming tramite AEM come Cloud Service {#no-streaming-binaries}
 
-I file binari devono essere accessibili tramite la rete CDN, che servirà i file binari al di fuori dei servizi AEM di base.
+I file binari devono essere accessibili tramite la rete CDN, che servirà i file binari al di fuori dei servizi di AEM di base.
 
-Ad esempio, non utilizzate `asset.getOriginal().getStream()`, il che attiva il download di un binario sul disco temporaneo del servizio AEM.
+Ad esempio, non utilizzare `asset.getOriginal().getStream()`, che attiva il download di un binario sul disco temporaneo del servizio AEM.
 
 ## Nessun agente di replica inversa {#no-reverse-replication-agents}
 
@@ -96,7 +96,7 @@ Per modificare i livelli di registro per gli ambienti Cloud, la configurazione S
 
 >[!NOTE]
 >
->Per eseguire le modifiche di configurazione elencate di seguito, è necessario crearle in un ambiente di sviluppo locale e quindi inviarle a un’istanza AEM come Cloud Service. Per ulteriori informazioni su come eseguire questa operazione, consultate [Implementazione in AEM come Cloud Service](/help/implementing/deploying/overview.md).
+>Per eseguire le modifiche di configurazione elencate di seguito, è necessario crearle in un ambiente di sviluppo locale e quindi inviarle a un AEM come istanza di Cloud Service. Per ulteriori informazioni su come eseguire questa operazione, vedere [Distribuzione di AEM come Cloud Service](/help/implementing/deploying/overview.md).
 
 **Attivazione del livello di registro DEBUG**
 
@@ -120,13 +120,13 @@ I livelli di registro sono i seguenti:
 
 ### Cassetti di thread {#thread-dumps}
 
-Le discariche di thread negli ambienti Cloud vengono raccolte in modo continuativo, ma al momento non possono essere scaricate in modo autonomo. Nel frattempo, contattate il supporto di AEM se sono necessari dei thread dumps per il debug di un problema, specificando la finestra temporale esatta.
+Le discariche di thread negli ambienti Cloud vengono raccolte in modo continuativo, ma al momento non possono essere scaricate in modo autonomo. Nel frattempo, contattate AEM supporto se sono necessari dei thread dumps per il debug di un problema, specificando la finestra temporale esatta.
 
 ## Console di sistema CRX/DE Lite {#crxde-lite-and-system-console}
 
 ### Sviluppo locale {#local-development}
 
-Per lo sviluppo locale, gli sviluppatori possono accedere completamente a CRXDE Lite (`/crx/de`) e alla console Web di AEM (`/system/console`).
+Per lo sviluppo locale, gli sviluppatori hanno accesso completo ai CRXDE Lite (`/crx/de`) e alla AEM Web Console (`/system/console`).
 
 Sullo sviluppo locale (tramite l&#39;avvio rapido per il cloud) `/apps` e `/libs` può essere scritto direttamente, il che è diverso dagli ambienti Cloud in cui tali cartelle di livello superiore sono immutabili.
 
@@ -134,7 +134,7 @@ Sullo sviluppo locale (tramite l&#39;avvio rapido per il cloud) `/apps` e `/libs
 
 I clienti possono accedere a CRXDE lite nell&#39;ambiente di sviluppo, ma non sullo stage o sulla produzione. L&#39;archivio immutabile (`/libs`, `/apps`) non può essere scritto in fase di esecuzione, pertanto il tentativo di eseguire tale operazione potrebbe causare errori.
 
-Una serie di strumenti per il debug di AEM come ambienti per sviluppatori Cloud Service sono disponibili nella console Developer per gli ambienti di sviluppo, fase e produzione. Per determinare l’URL, regolate gli URL del servizio Autore o Pubblica nel modo seguente:
+Un set di strumenti per il debug AEM come ambienti di sviluppo di Cloud Service è disponibile in Developer Console per gli ambienti di sviluppo, fase e produzione. Per determinare l’URL, regolate gli URL del servizio Autore o Pubblica nel modo seguente:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -160,30 +160,30 @@ Utile anche per il debug, la console Sviluppatore dispone di un collegamento all
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Per i programmi regolari, l&#39;accesso alla console per sviluppatori è definito da &quot;Cloud Manager - Ruolo sviluppatore&quot; nell&#39;Admin Console , mentre per i programmi sandbox, Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che dia loro accesso ad AEM come Cloud Service. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per i dumps di stato e gli utenti devono essere definiti anche nel profilo di prodotto Utenti AEM o Amministratori AEM sia nei servizi di creazione che di pubblicazione per visualizzare i dati di dump dello stato di entrambi i servizi. Per ulteriori informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consulta la Documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
+Per i programmi regolari, l&#39;accesso alla Developer Console è definito dal &quot;Cloud Manager - ruolo sviluppatore&quot; nel Admin Console , mentre per i programmi sandbox, Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che dia loro accesso a AEM come Cloud Service. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le discariche di stato e gli utenti devono essere definiti anche nel profilo di prodotto Utenti AEM o Amministratori AEM sui servizi di creazione e pubblicazione per visualizzare i dati di dump dello stato di entrambi i servizi. Per ulteriori informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consulta la Documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
 
 
-### Servizio di gestione e produzione AEM {#aem-staging-and-production-service}
+### AEM Staging and Production Service {#aem-staging-and-production-service}
 
 I clienti non avranno accesso agli strumenti di sviluppo per gli ambienti di produzione e di staging.
 
 ### Monitoraggio delle prestazioni {#performance-monitoring}
 
-Adobe controlla le prestazioni delle applicazioni e adotta misure per risolvere eventuali situazioni di deterioramento. Al momento, le metriche dell&#39;applicazione non possono essere osservate.
+ Adobe controlla le prestazioni dell&#39;applicazione e adotta misure per far fronte a eventuali peggioramenti. Al momento, le metriche dell&#39;applicazione non possono essere osservate.
 
 ## Indirizzo IP Egress dedicato
 
-Su richiesta, AEM come Cloud Service fornirà un indirizzo IP statico e dedicato per il traffico in uscita HTTP (porta 80) e HTTPS (porta 443) programmato nel codice Java.
+Su richiesta, AEM un Cloud Service fornirà un indirizzo IP statico e dedicato per il traffico in uscita HTTP (porta 80) e HTTPS (porta 443) programmato nel codice Java.
 
 ### Vantaggi
 
-Questo indirizzo IP dedicato può migliorare la sicurezza durante l&#39;integrazione con fornitori SaaS (come un fornitore CRM) o con altre integrazioni esterne ad AEM come un Cloud Service che offre un inserire nell&#39;elenco Consentiti   di indirizzi IP. Aggiungendo l&#39;indirizzo IP dedicato al inserire nell&#39;elenco Consentiti di , si garantisce che solo il traffico dall&#39;Cloud Service AEM del cliente possa riversarsi nel servizio esterno. Oltre al traffico proveniente da qualsiasi altro IP consentito.
+Questo indirizzo IP dedicato può migliorare la sicurezza durante l&#39;integrazione con fornitori SaaS (come un fornitore CRM) o altre integrazioni esterne a AEM come Cloud Service che offre un  inserì nell&#39;elenco Consentiti di indirizzi IP. Aggiungendo l&#39;indirizzo IP dedicato al inserire nell&#39;elenco Consentiti di , si garantisce che solo il traffico dal Cloud Service del cliente AEM possa fluire nel servizio esterno. Oltre al traffico proveniente da qualsiasi altro IP consentito.
 
-Senza la funzione di indirizzo IP dedicato abilitata, il traffico proveniente da AEM come Cloud Service passa attraverso una serie di IP condivisi con altri clienti.
+Senza la funzione di indirizzo IP dedicato abilitata, il traffico che esce dal AEM come Cloud Service scorre attraverso un insieme di IP condivisi con altri clienti.
 
 ### Configurazione
 
-Per abilitare un indirizzo IP dedicato, inviate una richiesta all&#39;Assistenza clienti, che fornirà le informazioni sull&#39;indirizzo IP. È necessario effettuare una richiesta per ciascun ambiente, compresi eventuali nuovi ambienti creati dopo la richiesta iniziale.
+Per abilitare un indirizzo IP dedicato, inviate una richiesta all&#39;Assistenza clienti, che fornirà le informazioni sull&#39;indirizzo IP. La richiesta deve specificare ogni ambiente e richiedere ulteriori informazioni se i nuovi ambienti necessitano della funzione dopo la richiesta iniziale. Gli ambienti del programma sandbox non sono supportati.
 
 ### Utilizzo delle funzioni
 
@@ -205,7 +205,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-Lo stesso IP dedicato viene applicato a tutti i programmi di un cliente all&#39;interno dell&#39;organizzazione Adobe e a tutti gli ambienti in ciascuno dei loro programmi. Si applica sia ai servizi di creazione che ai servizi di pubblicazione.
+Lo stesso IP dedicato viene applicato a tutti i programmi dei clienti nell&#39;organizzazione  Adobe e a tutti gli ambienti in ciascuno dei loro programmi. Si applica sia ai servizi di creazione che ai servizi di pubblicazione.
 
 Sono supportate solo le porte HTTP e HTTPS. Ciò include HTTP/1.1, nonché HTTP/2 se crittografati.
 
