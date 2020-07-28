@@ -2,7 +2,7 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Da completare
 translation-type: tm+mt
-source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
+source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 1%
@@ -171,21 +171,21 @@ I clienti non avranno accesso agli strumenti di sviluppo per gli ambienti di pro
 
  Adobe controlla le prestazioni dell&#39;applicazione e adotta misure per far fronte a eventuali peggioramenti. Al momento, le metriche dell&#39;applicazione non possono essere osservate.
 
-## Indirizzo IP Egress dedicato
+## Indirizzo IP Egress dedicato {#dedicated-egress-ip-address}
 
 Su richiesta, AEM un Cloud Service fornirà un indirizzo IP statico e dedicato per il traffico in uscita HTTP (porta 80) e HTTPS (porta 443) programmato nel codice Java.
 
-### Vantaggi
+### Vantaggi {#benefits}
 
 Questo indirizzo IP dedicato può migliorare la sicurezza durante l&#39;integrazione con fornitori SaaS (come un fornitore CRM) o altre integrazioni esterne a AEM come Cloud Service che offre un  inserì nell&#39;elenco Consentiti di indirizzi IP. Aggiungendo l&#39;indirizzo IP dedicato al inserire nell&#39;elenco Consentiti di , si garantisce che solo il traffico dal Cloud Service del cliente AEM possa fluire nel servizio esterno. Oltre al traffico proveniente da qualsiasi altro IP consentito.
 
 Senza la funzione di indirizzo IP dedicato abilitata, il traffico che esce dal AEM come Cloud Service scorre attraverso un insieme di IP condivisi con altri clienti.
 
-### Configurazione
+### Configurazione {#configuration}
 
 Per abilitare un indirizzo IP dedicato, inviate una richiesta all&#39;Assistenza clienti, che fornirà le informazioni sull&#39;indirizzo IP. La richiesta deve specificare ogni ambiente e richiedere ulteriori informazioni se i nuovi ambienti necessitano della funzione dopo la richiesta iniziale. Gli ambienti del programma sandbox non sono supportati.
 
-### Utilizzo delle funzioni
+### Utilizzo delle funzioni {#feature-usage}
 
 La funzione è compatibile con il codice Java o con librerie che generano traffico in uscita, purché utilizzino le proprietà standard del sistema Java per le configurazioni proxy. In pratica, questo dovrebbe includere la maggior parte delle librerie comuni.
 
@@ -209,6 +209,6 @@ Lo stesso IP dedicato viene applicato a tutti i programmi dei clienti nell&#39;o
 
 Sono supportate solo le porte HTTP e HTTPS. Ciò include HTTP/1.1, nonché HTTP/2 se crittografati.
 
-### Considerazioni sul debug
+### Considerazioni sul debug {#debugging-considerations}
 
 Per verificare che il traffico sia effettivamente in uscita sull&#39;indirizzo IP dedicato previsto, controllate i registri nel servizio di destinazione, se disponibili. In caso contrario, potrebbe essere utile chiamare un servizio di debug come [https://ifconfig.me/ip](https://ifconfig.me/ip), che restituirà l&#39;indirizzo IP chiamante.
