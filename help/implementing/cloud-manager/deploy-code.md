@@ -2,7 +2,7 @@
 title: Distribuzione del codice - Servizi cloud
 description: Distribuzione del codice - Servizi cloud
 translation-type: tm+mt
-source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
+source-git-commit: 164d2d3b4dabfa2b06da245dc33ef90b5b77192b
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 3%
@@ -59,7 +59,8 @@ Dopo aver configurato la **pipeline** (archivio, ambiente e ambiente di test), Ã
 
 
 
->[!IMPORTANT]:
+>[!IMPORTANT]
+>
 >Le sezioni seguenti devono essere aggiornate per Cloud Manager per i AEM cloud services ed Ã¨ in corso.
 
 ## Processo di distribuzione {#deployment-process}
