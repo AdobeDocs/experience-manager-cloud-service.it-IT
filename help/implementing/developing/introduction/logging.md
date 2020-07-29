@@ -2,10 +2,10 @@
 title: Registrazione
 description: Scoprite come configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 translation-type: tm+mt
-source-git-commit: 23f7b4b41abf9b909ec55a7f37b6b8e78c689b9b
+source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 3%
+source-wordcount: '2053'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,9 @@ La registrazione a livello di applicazione AEM è gestita da tre registri:
 1. Registri di richieste HTTP, che registrano le informazioni sulle richieste HTTP e le risposte fornite da AEM
 1. Registri di accesso HTTP, quali informazioni di riepilogo del registro e richieste HTTP inviate da AEM
 
-Notate che le richieste HTTP servite dalla cache Dispatcher del livello di pubblicazione o dalla rete CDN upstream non si riflettono in questi registri.
+> [!NOTE]
+> 
+> Le richieste HTTP servite dalla cache Dispatcher del livello di pubblicazione o dalla rete CDN upstream non vengono riportate in questi registri.
 
 ## Registrazione Java AEM {#aem-java-logging}
 
@@ -97,10 +99,6 @@ AEM livelli di registro vengono impostati per tipo di ambiente tramite la config
 
 ### Formato registro {#log-format}
 
-| Data e ora | AEM come ID di codice Cloud Service | Livello registro | Thread | Classe Java | Messaggio registro |
-|---|---|---|---|---|---|
-| 29.04.2020 21:50:13.398 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*` | qtp2130572036-1472 | com.example.approval.workflow.impl.CustomApprovalWorkflow | `No specified approver, defaulting to [ Creative Approvers user group ]` |
-
 **Esempio di output del registro**
 
 ```
@@ -110,6 +108,35 @@ AEM livelli di registro vengono impostati per tipo di ambiente tramite la config
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+<table>
+<tbody>
+<tr>
+<td>Data e ora</td>
+<td>29.04.2020 21:50:13.398</td>
+</tr>
+<tr>
+<td>AEM come ID nodo Cloud Service</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+<tr>
+<td>Livello registro</td>
+<td>DEBUG</td>
+</tr>
+<tr>
+<td>Thread</td>
+<td>qtp2130572036-1472</td>
+</tr>
+<tr>
+<td>Java, classe</td>
+<td>com.example.approval.workflow.impl.CustomApprovalWorkflow</td>
+</tr>
+<tr>
+<td>Messaggio registro</td>
+<td>Nessun approver specificato, impostazione predefinita per [ gruppo di utenti di Creative Approvers ]</td>
+</tr>
+</tbody>
+</table>
 
 ### Registratori di configurazione {#configuration-loggers}
 
@@ -167,10 +194,6 @@ La chiave per comprendere questo registro è la mappatura delle coppie di richie
 
 ### Formato registro {#http-request-logging-format}
 
-| Data e ora | ID coppia richiesta/risposta |  | Metodo HTTP | URL | Protocollo | AEM come ID nodo Cloud Service |
-|---|---|---|---|---|---|---|
-| 29/Apr/2020:19:14:21 +0000 | `[137]` | -> | POST | /conf/global/settings/dam/adminui-extension/metadata-profile/ | HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` |
-
 **Esempio di registro**
 
 ```
@@ -182,6 +205,36 @@ La chiave per comprendere questo registro è la mappatura delle coppie di richie
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+<table>
+<tbody>
+<tr>
+<td>Data e ora</td>
+<td>29/Apr/2020:19:14:21 +0000</td>
+</tr>
+<tr>
+<td>ID coppia richiesta/risposta</td>
+<td><code>[137]</code></td>
+</tr>
+<tr>
+<td>Metodo HTTP</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/conf/global/settings/dam/adminui-extension/metadata-profile/</td>
+</tr>
+<tr>
+<td>Protocollo</td>
+<td>HTTP/1.1
+</td>
+</tr>
+<tr>
+<td>AEM come ID nodo Cloud Service</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+</tbody>
+</table>
 
 ### Configurazione del registro {#configuring-the-log}
 
@@ -335,5 +388,145 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Registro Dispatcher {#dispatcher-log}
 
-**Formato registro**
+<!--de completat-->
 
+**Esempio**
+
+```
+[17/Jul/2020:23:48:06 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures.html" - 475ms [publishfarm/0] [action miss] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/climbing-new-zealand/_jcr_content/root/responsivegrid/carousel/item_1571266094599.coreimg.jpeg/1473680817282/sport-climbing.jpeg" 302 10ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+```
+
+### Formato registro {#dispatcher-log-format}
+
+### Configurazione del registro errori Dispatcher {#configuring-the-dispatcher-error-log}
+
+I livelli del registro del dispatcher sono definiti dalla variabile DISP_LOG_LEVEL presente nel file `conf.d/variables/global.var`.
+
+Può essere impostato su Errore, Avverti, Informazioni, Debug e Trace1, con il valore predefinito Avverti.
+
+Sebbene la registrazione Dispatcher supporti diversi altri livelli di granularità della registrazione, il AEM come Cloud Service consiglia di utilizzare i livelli descritti di seguito.
+
+Per impostare il livello di registro per l&#39;ambiente, utilizzare il ramo condizionale appropriato nel `global.var` file, come descritto di seguito:
+
+```
+Define DISP_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define DISP_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define DISP_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Come accedere ai registri {#how-to-access-logs}
+
+### Ambienti cloud {#cloud-environments}
+
+AEM come Cloud Service di registri per i servizi cloud è possibile accedere sia scaricando tramite l&#39;interfaccia di Cloud Manager sia inviando i registri alla riga di comando utilizzando l&#39;interfaccia  riga di comando I/O Adobe. Per ulteriori informazioni, consulta la documentazione [di registrazione di](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
+
+### SDK locale {#local-sdk}
+
+AEM come Cloud Service SDK fornisce file di registro per supportare lo sviluppo locale.
+
+AEM file di registro si trovano nella cartella `crx-quickstart/logs`, dove è possibile visualizzare i seguenti file di registro:
+
+* AEM registro Java: `error.log`
+* AEM registro delle richieste HTTP: `request.log`
+* AEM registro di accesso HTTP: `access.log`
+
+I registri dei livelli Apache, incluso il dispatcher, si trovano nel contenitore Docker che contiene l’Dispatcher. Per informazioni sull’avvio dell’Dispatcher, consultate la documentazione [di](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher.
+
+Per recuperare i file di registro:
+
+1. Nella riga di comando, digitare `docker ps` per elencare i contenitori
+1. Per accedere al contenitore, digitare &quot;`docker exec -it <container> /bin/sh`&quot;, dove `<container>` corrisponde all&#39;ID del contenitore del dispatcher dal passaggio precedente
+1. Andate alla directory principale della cache in `/mnt/var/www/html`
+1. I log sono sotto `/etc/httpd/logs`
+1.  Inspect i registri: sono accessibili nella cartella XYZ, dove è possibile visualizzare i seguenti file di registro:
+   * Registro di accesso al server Web Apache HTTPD - `httpd_access.log`
+   * Registri di errore del server Web Apache HTTPD - `httpd_error.log`
+   * Registri Dispatcher - `dispatcher.log`
+
+I registri vengono inoltre stampati direttamente sull&#39;uscita terminale. Nella maggior parte dei casi, questi registri devono essere DEBUG, che può essere realizzato trasmettendo il livello Debug come parametro durante l&#39;esecuzione di Docker. Ad esempio:
+
+`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+
+## Debug di fase e produzione {#debugging-production-and-stage}
+
+In circostanze eccezionali, è necessario modificare i livelli di registro per eseguire il log a una granularità maggiore negli ambienti Stage o Produzione.
+
+Anche se questo è possibile, richiede modifiche ai livelli di registro nei file di configurazione in Git da Avverti ed Errore a Debug, ed esegue una distribuzione da AEM come Cloud Service per registrare le modifiche di configurazione con gli ambienti.
+
+A seconda del traffico e della quantità di istruzioni di registro scritte da Debug, questo può causare un impatto negativo sulle prestazioni sull&#39;ambiente, pertanto si consiglia di modificare i livelli di debug di Stage e Produzione:
+
+* Fatto con prudenza, e solo quando assolutamente necessario
+* Ripristinati i livelli appropriati e ridistribuiti il prima possibile
+
+## Registri splunk {#splunk-logs}
+
+I clienti che dispongono di account Splunk possono richiedere tramite ticket di assistenza clienti che i loro registri di Cloud Service AEM vengano inoltrati all&#39;indice appropriato. I dati di registrazione sono equivalenti a quelli disponibili tramite i download del registro di Cloud Manager, ma i clienti potrebbero trovare utile sfruttare le funzionalità di query disponibili nel prodotto Splunk.
+
+La larghezza di banda di rete associata ai registri inviati a Splunk è considerata parte dell&#39;utilizzo di I/O di rete del cliente.
+
+### Abilitazione dell&#39;inoltro splunk {#enabling-splunk-forwarding}
+
+Nella richiesta di assistenza, i clienti devono indicare:
+
+* Host Splunk
+* Indice Splunk
+* La porta Splunk
+* Il token Splunk HEC. Per ulteriori informazioni, consulta [questa pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) .
+
+Le proprietà di cui sopra devono essere specificate per ciascuna combinazione di programma/tipo di ambiente pertinente.  Ad esempio, se un cliente voleva un ambiente di sviluppo, staging e produzione, dovrebbe fornire tre serie di informazioni, come indicato di seguito.
+
+> [!NOTE]
+>
+> L&#39;inoltro splunk per gli ambienti di programmi sandbox non è supportato.
+
+Di seguito è riportato un esempio di richiesta di assistenza clienti:
+
+Programma 123, Production Env
+
+* Host splunk: `splunk-hec-ext.acme.com`
+* Indice splunk: acme_123prod (il cliente può scegliere qualsiasi convenzione di denominazione)
+* Porta splunk: 443
+* Token Splunk HEC: ABC123
+
+Program 123, Stage Env
+
+* Host splunk: `splunk-hec-ext.acme.com`
+* Indice splunk: acme_123stage
+* Porta splunk: 443
+* Token Splunk HEC: ABC123
+
+Programma 123, Dev Envs
+
+* Host splunk: `splunk-hec-ext.acme.com`
+* Indice splunk: acme_123dev
+* Porta splunk: 443
+* Token Splunk HEC: ABC123
+
+Può essere sufficiente che lo stesso indice Splunk venga utilizzato per ogni ambiente, nel qual caso il `aem_env_type` campo può essere utilizzato per differenziare in base ai valori dev, stage e prod. In presenza di più ambienti di sviluppo, è possibile utilizzare anche il `aem_env_id` campo. Alcune organizzazioni possono scegliere un indice separato per i registri dell&#39;ambiente di produzione se l&#39;indice associato limita l&#39;accesso a un set ridotto di utenti Splunk.
+
+Esempio di voce di registro:
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+file_path: /var/log/aem/error.log
+host: 172.34.200.12 
+level: INFO
+msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
+orig_time: 16.07.2020 08:35:32.346
+pod_name: aemloggingall-aem-author-77797d55d4-74zvt
+splunk_customer: true
+```
