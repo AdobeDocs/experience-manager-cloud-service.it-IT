@@ -1,8 +1,8 @@
 ---
 title: 'Pacchetto per la struttura dell’archivio dei progetti AEM  '
-description: Adobe Experience Manager come progetto Cloud Service Maven richiede una definizione del sottopacchetto della struttura dell'archivio il cui unico scopo è definire le radici dell'archivio JCR in cui vengono distribuiti i sottopacchetti Codice del progetto.
+description: ' Adobe Experience Manager come progetto Cloud Service Maven richiede una definizione di sottopacchetto Struttura archivio il cui unico scopo è definire le radici del repository JCR in cui i sottopacchetti Codice del progetto vengono distribuiti.'
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 9%
@@ -12,7 +12,7 @@ ht-degree: 9%
 
 # Pacchetto per la struttura dell’archivio dei progetti AEM
 
-I progetti Maven per Adobe Experience Manager come servizio Cloud richiedono una definizione di sottopacchetto della struttura del repository il cui unico scopo è definire le radici del repository JCR in cui vengono distribuiti i sottopacchetti di codice del progetto. In questo modo, l&#39;installazione dei pacchetti in Experience Manager come servizio Cloud viene ordinata automaticamente dalle dipendenze delle risorse JCR. Le dipendenze mancanti potrebbero causare l&#39;installazione di sottostrutture in anticipo rispetto alle strutture padre e, di conseguenza, la rimozione imprevista, interrompendo la distribuzione.
+I progetti Maven per  Adobe Experience Manager come Cloud Service richiedono una definizione di sottopacchetto della struttura del repository il cui unico scopo è quello di definire le radici del repository JCR in cui vengono distribuiti i sottopacchetti di codice del progetto. In questo modo, l&#39;installazione dei pacchetti nel Experience Manager  come Cloud Service viene ordinata automaticamente dalle dipendenze delle risorse JCR. Le dipendenze mancanti potrebbero causare l&#39;installazione di sottostrutture in anticipo rispetto alle strutture padre e, di conseguenza, la rimozione imprevista, interrompendo la distribuzione.
 
 Se il pacchetto di codice viene distribuito in una posizione **non inclusa** nel pacchetto stesso, tutte le risorse precedenti (risorse JCR più vicine alla radice JCR) devono essere enumerate nel pacchetto della struttura dell’archivio per stabilire tali dipendenze.
 
