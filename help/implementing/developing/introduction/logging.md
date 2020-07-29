@@ -2,9 +2,9 @@
 title: Registrazione
 description: Scoprite come configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 translation-type: tm+mt
-source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
+source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1081'
 ht-degree: 3%
 
 ---
@@ -195,9 +195,41 @@ Questo registro è utile per comprendere rapidamente a quali richieste HTTP veng
 
 ### Formato registro {#access-log-format}
 
-| AEM come ID nodo Cloud Service | Indirizzo IP del client | User |  | Data e ora |  | Metodo HTTP | URL | Protocollo |  | Risposta HTTP | Tempo di richiesta HTTP in millisecondi | Referrer | Agente utente |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 | - | `myuser@adobe.com` | 30/Apr/2020:17:37:14 +000 | &quot; | GET | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |  | HTTP/1.1 | &quot; | 200 | 1141 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` | &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, come Gecko) Chrome/81.0.4044.122 Safari/537.36&quot; |
+<table>
+<tbody>
+<tr>
+<td><b>AEM come ID nodo Cloud Service</b></td>
+<td><b>Indirizzo IP del client</b></td>
+<td><b>User</b></td>
+<td><b>Data e ora</b></td>
+<td><b>Vuoto</b></td>
+<td><b>Metodo HTTP</b></td>
+<td><b>URL</b></td>
+<td><b>Protocollo</b></td>
+<td><b>Vuoto</b></td>
+<td><b>Stato della risposta HTTP</b></td>
+<td><b>Tempo di risposta HTTP in millisecondi</b></td>
+<td><b>Referrer</b></td>
+<td><b>Agente utente</b></td>
+</tr>
+<tr>
+<td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
+<td>-</td>
+<td>myuser@adobe.com</td>
+<td>30/Apr/2020:17:37:14 +000</td>
+<td>"</td>
+<td>GET</td>
+<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
+<td>HTTP/1.1</td>
+<td>"</td>
+<td>200</td>
+<td>1141</td>
+<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, come Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+</tr>
+</tbody>
+</table>
+
 
 **Esempio**
 
