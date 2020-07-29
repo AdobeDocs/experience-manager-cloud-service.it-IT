@@ -2,9 +2,9 @@
 title: Dispatcher nel cloud
 description: 'Dispatcher nel cloud '
 translation-type: tm+mt
-source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
+source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3824'
 ht-degree: 9%
 
 ---
@@ -189,6 +189,7 @@ Parte del framework di base, questo file viene generato all&#39;avvio. È **nece
 Globo host predefinito adatto a un progetto standard. Se avete bisogno di personalizzazione, modificate `virtualhosts.any`. Nella personalizzazione, non devi includere il globbing host predefinito, in quanto corrisponde a **ogni** richiesta in entrata.
 
 >[!NOTE]
+>
 >Il AEM come archetipo Cloud Service maven genererà la stessa struttura di file di configurazione del dispatcher.
 
 Le sezioni seguenti descrivono come convalidare la configurazione localmente in modo che possa superare il gate di qualità associato in Cloud Manager durante la distribuzione di una versione interna.
@@ -372,37 +373,7 @@ Questo avvia il dispatcher in un contenitore con il relativo backend che punta a
 
 ## Debug della configurazione Apache e Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-La seguente strategia può essere utilizzata per aumentare l&#39;output di registro per il modulo dispatcher e vedere il risultato della `RewriteRule` valutazione negli ambienti locali e cloud.
-
-I livelli di registro per tali moduli sono definiti dalle variabili `DISP_LOG_LEVEL` e `REWRITE_LOG_LEVEL`. Possono essere impostati nel file `conf.d/variables/global.vars`. La sua parte relativa segue:
-
-```
-# Log level for the dispatcher
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
-#
-# Define DISP_LOG_LEVEL Warn
- 
-# Log level for mod_rewrite
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
-#
-# To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
-#
-# More information can be found at:
-# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
-#
-# Define REWRITE_LOG_LEVEL Warn
-```
-
-Quando si esegue l&#39;Dispatcher localmente, i file di registro vengono anche stampati direttamente nell&#39;output del terminale. Nella maggior parte dei casi, questi registri devono essere in DEBUG, che può essere realizzato trasmettendo il livello Debug come parametro durante l&#39;esecuzione di Docker. Ad esempio:
-
-`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
-
-I registri per gli ambienti cloud saranno esposti tramite il servizio di registrazione disponibile in Cloud Manager.
+I livelli di registro sono definiti dalle variabili `DISP_LOG_LEVEL` e `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s&quot;. See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
 
 ## Diverse configurazioni Dispatcher per l&#39;ambiente {#different-dispatcher-configurations-per-environment}
 
