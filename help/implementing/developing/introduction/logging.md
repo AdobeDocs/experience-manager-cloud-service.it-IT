@@ -2,10 +2,10 @@
 title: Registrazione
 description: Scoprite come configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 translation-type: tm+mt
-source-git-commit: 1cee93310d84ea21b626f456163de6855056db5b
+source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 4%
+source-wordcount: '1077'
+ht-degree: 3%
 
 ---
 
@@ -51,8 +51,7 @@ Sviluppo</td>
 DEBUG</td>
 <td>
 Descrive cosa accade nell'applicazione.<br>
-
-Quando la registrazione DEBUG è attiva, le istruzioni che forniscono un&#39;immagine chiara delle attività che si verificano e tutti i parametri chiave che influenzano l&#39;elaborazione vengono registrate.</td>
+Quando la registrazione DEBUG è attiva, le istruzioni che forniscono un'immagine chiara delle attività che si verificano e tutti i parametri chiave che influenzano l'elaborazione vengono registrate.</td>
 <td>
 <ul>
 <li> Sviluppo locale</li>
@@ -207,3 +206,19 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+### Configurazione del registro di accesso HTTP {#configuring-the-http-access-log}
+
+Il registro di accesso HTTP non è configurabile in AEM come Cloud Service.
+
+## Server Web Apache / Registrazione Dispatcher {#dispatcher-logging}
+
+AEM come Cloud Service fornisce tre registri per i server Web Apache e il livello dispatcher nella pubblicazione:
+
+* Registro di accesso al server Web Apache HTTPD
+* Registro errori server Web Apache HTTPD
+* Registro Dispatcher
+
+Questi registri sono disponibili solo per il livello Pubblica.
+
+Questo set di registri fornisce informazioni approfondite sulle richieste HTTP al AEM come livello di pubblicazione Cloud Service prima che tali richieste arrivino all’applicazione AEM. Questo è importante da comprendere perché, idealmente, la maggior parte delle richieste HTTP ai server dei livelli di pubblicazione sono servite dal contenuto memorizzato nella cache dal server Web Apache HTTPD e AEM Dispatcher, e non raggiungono mai l&#39;applicazione AEM, quindi non ci sono istruzioni di registro per queste richieste nei registri AEM Java, Request o Access.
