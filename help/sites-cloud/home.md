@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager Sites as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione di Adobe Experience Manager Sites as a Cloud Service
-translation-type: ht
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 85398c51f2ce7931039a9771661c9ba7edb30d08
+workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 100%
 
@@ -24,8 +24,8 @@ In questa pagina sono elencate le risorse di supporto autonomo relative a Experi
 * [Utilizzo di Frammenti esperienza](authoring/fundamentals/experience-fragments.md)
 * [Utilizzo di lanci](authoring/launches/overview.md)
 * [Personalizzazione dei contenuti con ContextHub](authoring/personalization/contexthub.md)
-* [Integrazione con Adobe Analytics](integrating/adobe-analytics.md)
-* [Integrazione con Adobe Target](integrating/adobe-target.md)
+* [Integrazione con Adobe Analytics](integrating/integrating-adobe-analytics.md)
+* [Integrazione con Adobe Target](integrating/integrating-adobe-target.md)
 
 ## Guide di Experience Manager as a Cloud Service {#aem-guides}
 
