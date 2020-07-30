@@ -2,9 +2,9 @@
 title: Integrazione con Adobe Analytics
 description: 'Integrazione con Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: e5e199c4a457935119e3a02b87ced72d2f2de6cf
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 4%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 4%
 L’integrazione  Adobe Analytics e AEM come Cloud Service consente di tenere traccia dell’attività della pagina Web. L&#39;integrazione richiede:
 
 * utilizzo dell&#39;interfaccia utente touch per creare una configurazione Analytics  in AEM come Cloud Service.
-* aggiunta e configurazione  Adobe Analytics come estensione in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* aggiunta e configurazione  Adobe Analytics come estensione in [Adobe Launch].(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
 Rispetto alle versioni precedenti di AEM, il supporto del framework non viene fornito in  Analytics Configuration in AEM come Cloud Service. Al contrario, ora viene eseguito tramite  Adobe Launch, che è lo strumento di fatto per la strumentazione di un sito AEM con  funzionalità Analytics (librerie JS). In  Adobe Launch, viene creata una proprietà in cui è possibile configurare l&#39;estensione Adobe Analytics  e creare regole per l&#39;invio di dati  Adobe Analytics.  Adobe Launch ha sostituito l&#39;attività di analisi fornita da sitecatalyst.
 
 >[!NOTE]
 >
-> Adobe Experience Manager come clienti di Cloud Service che non dispongono di un account  Analytics esistente, può richiedere l&#39;accesso al  Analytics Foundation Pack per  Experience Cloud.  Questo Foundation Pack fornisce un utilizzo limitato del volume di  Analytics.
+> Adobe Experience Manager come clienti di Cloud Service che non dispongono di un account  Analytics esistente, può richiedere l&#39;accesso al  Analytics Foundation Pack per  Experience Cloud. Questo Foundation Pack fornisce un utilizzo limitato del volume di  Analytics.
 
 ## Creazione della configurazione Analytics  {#analytics-configuration}
 
@@ -33,7 +33,7 @@ Rispetto alle versioni precedenti di AEM, il supporto del framework non viene fo
 
 ### Parametri di configurazione {#configuration-parameters}
 
-I campi di configurazione presenti nella finestra Configurazione Adobe Analytics  sono i seguenti:
+I campi di configurazione presenti nella finestra Configurazione Adobe Analytics  sono:
 
 ![Parametri](assets/properties_field.png "di configurazione")
 
@@ -52,7 +52,7 @@ Per applicare una configurazione dell&#39;interfaccia utente touch a un sito, pa
 
 ## Integrazione  Adobe Analytics su AEM siti utilizzando  lancio Adobe
 
- Adobe Analytics può essere aggiunto come estensione nella proprietà Launch. Le regole possono essere definite per eseguire la mappatura e effettuare una post chiamata a  Adobe Analytics.
+ Adobe Analytics può essere aggiunto come estensione nella proprietà Launch. Le regole possono essere definite per eseguire la mappatura ed effettuare una chiamata post a  Adobe Analytics:
 
 * Guardate [questo video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) per apprendere come configurare l’estensione Analytics  in Launch per un sito di base.
 
@@ -60,7 +60,7 @@ Per applicare una configurazione dell&#39;interfaccia utente touch a un sito, pa
 
 >[!NOTE]
 >
->I framework esistenti funzionano ancora, ma non possono essere configurati nell&#39;interfaccia utente touch. È consigliabile rigenerare le configurazioni di mappatura delle variabili in Launch.
+>I framework esistenti (legacy) funzionano ancora, ma non possono essere configurati nell&#39;interfaccia utente touch. È consigliabile rigenerare le configurazioni di mappatura delle variabili in Launch.
 
 >[!NOTE]
 >
