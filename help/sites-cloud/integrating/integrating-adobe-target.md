@@ -2,9 +2,9 @@
 title: Integrazione con Adobe Target
 description: 'Integrazione con Adobe Target '
 translation-type: tm+mt
-source-git-commit: 8063a41d079b8b959b903aa0f97068a42a22d840
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ Come parte del Adobe Marketing Cloud ,  Adobe Target consente di aumentare la ri
 * utilizzo dell&#39;interfaccia utente touch per creare una configurazione Analytics  in AEM come Cloud Service (è richiesta la configurazione IMS).
 * aggiunta e configurazione  Adobe Analytics come estensione in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-L&#39;integrazione con Launch è necessaria per il &quot;targeting delle esperienze&quot;. Per l’esportazione di frammenti esperienza in Target, è necessario solo disporre della configurazione del Adobe Target  e di IMS.
+ Adobe Launch è necessario per la gestione delle proprietà lato client sia per  Analytics che per Target in AEM pagine (librerie/tag JS). Tuttavia, l&#39;integrazione con Launch è necessaria per il &quot;targeting delle esperienze&quot;. Per l’esportazione di frammenti esperienza in Target, è necessario solo disporre della configurazione del Adobe Target  e di IMS.
 
 >[!NOTE]
 >
-> Adobe Experience Manager come clienti di Cloud Service che non dispongono di un account Target esistente, può richiedere l&#39;accesso ad Target Foundation Pack per  Experience Cloud.  Foundation Pack fornisce un utilizzo limitato del volume di Target.
+> Adobe Experience Manager come clienti di Cloud Service che non dispongono di un account Target esistente, può richiedere l&#39;accesso ad Target Foundation Pack per  Experience Cloud. Foundation Pack fornisce un utilizzo limitato del volume di Target.
 
 ## Creazione della configurazione del Adobe Target  {#create-configuration}
 
@@ -59,10 +59,6 @@ AEM offre un&#39;integrazione out-of-the-box con il Experience Platform Launch. 
 >
 >I framework esistenti (legacy) funzionano ancora, ma non possono essere configurati nell&#39;interfaccia utente touch. È consigliabile rigenerare le configurazioni di mappatura delle variabili in Launch.
 
->[!NOTE]
->
->I framework esistenti (legacy) funzionano ancora, ma non possono essere configurati nell&#39;interfaccia utente touch. È consigliabile rigenerare le configurazioni di mappatura delle variabili in Launch.
-
 Come panoramica generale, i passaggi di integrazione sono:
 
 1. Creare una proprietà Launch
@@ -83,7 +79,7 @@ Una proprietà è un contenitore che verrà compilato con estensioni, regole, el
 
 ### Aggiunta delle estensioni richieste {#add-extension}
 
-Estensioni è il contenitore che gestisce le impostazioni della libreria di base. L&#39;estensione del Adobe Target  supporta implementazioni lato client tramite l&#39;SDK Target JavaScript per il Web moderno, at.js. È necessario aggiungere sia l&#39;estensione **Adobe Target** che l&#39;estensione **Adobe ContextHub** .
+**Estensioni** è il contenitore che gestisce le impostazioni della libreria di base. L&#39;estensione del Adobe Target  supporta implementazioni lato client utilizzando l&#39;SDK JavaScript di Target per il Web moderno, at.js. È necessario aggiungere sia l&#39;estensione **Adobe Target** che l&#39;estensione **Adobe ContextHub** .
 
 1. Selezionate l’opzione Catalogo estensioni e cercate Target nel filtro.
 2. Selezionate **Adobe Target** at.js e fate clic sull&#39;opzione di installazione.
@@ -95,7 +91,7 @@ Estensioni è il contenitore che gestisce le impostazioni della libreria di base
 
 ### Creazione di un elemento dati {#data-element}
 
-Gli elementi dati sono i segnaposto ai quali è possibile mappare i parametri dell&#39;hub di contesto.
+**Gli elementi** dati sono i segnaposto ai quali è possibile mappare i parametri dell&#39;hub di contesto.
 
 1. Selezionare **Elementi** dati.
 2. Selezionare **Aggiungi elemento** dati.
@@ -105,7 +101,7 @@ Gli elementi dati sono i segnaposto ai quali è possibile mappare i parametri de
 
 ### Creazione di una regola di pagina {#page-rule}
 
-In Regola definiamo e ordiniamo una sequenza di azioni, che verranno eseguite sul sito, per raggiungere il targeting.
+In **Rule** definiamo e ordiniamo una sequenza di azioni, che verranno eseguite sul sito, per raggiungere il targeting.
 
 1. Aggiungete un set di azioni come esemplificato nello screenshot.
    ![](assets/rules.png "ActionsActions")
