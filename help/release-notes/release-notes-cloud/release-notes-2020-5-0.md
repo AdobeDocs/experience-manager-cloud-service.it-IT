@@ -2,17 +2,17 @@
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.5.0'
 description: Note sulla versione 2020.5.0 di Experience Manager
 translation-type: tm+mt
-source-git-commit: 06a56b0ca8000a41fe4e492206459b1525aae59d
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 100%
+source-wordcount: '373'
+ht-degree: 96%
 
 ---
 
 
 # Note sulla versione di AEM as a Cloud Service 2020.5.0 {#release-notes}
 
-La sezione seguente illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.5.0.
+In questa pagina sono delineate le Note generali sulla versione per  Experience Manager come Cloud Service 2020.5.0.
 
 ## Data di rilascio {#release-date}
 
