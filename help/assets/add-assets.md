@@ -1,10 +1,10 @@
 ---
 title: Aggiungi le tue risorse digitali a [!DNL Adobe Experience Manager].
-description: Aggiungi le tue risorse digitali [!DNL Adobe Experience Manager] a un Cloud Service.
+description: Aggiungi le risorse digitali [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1324'
 ht-degree: 2%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 2%
 
 [!DNL Adobe Experience Manager] arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, smart tag, rappresentazioni e altri servizi di gestione delle risorse digitali (DAM). Potete caricare vari tipi di file, ad esempio immagini, documenti e file immagine non elaborati, dalla cartella locale o da un’unità di rete a [!DNL Experience Manager Assets].
 
-Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all&#39;archivio Experience Manager , inclusi client desktop, come Adobe Asset Link o  app desktop Experience Manager, script di caricamento e caricamento che i clienti potrebbero creare e integrazioni di assimilazione automatizzate aggiunte  estensioni Experience Manager.
+Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all&#39;archivio del Experience Manager , inclusi client desktop, come  collegamento risorsa Adobe o  app desktop Experience Manager, script di caricamento e caricamento che i clienti potrebbero creare e integrazioni di assimilazione automatizzate aggiunte  estensioni Experience Manager.
 
-Qui ci concentreremo sui metodi di caricamento per gli utenti finali e forniremo collegamenti agli articoli che descrivono gli aspetti tecnici del caricamento e dell’assimilazione delle risorse tramite  API e SDK Experience Manager.
+Qui ci concentreremo sui metodi di caricamento per gli utenti finali e forniremo collegamenti agli articoli che descrivono gli aspetti tecnici del caricamento e dell’assimilazione delle risorse tramite  API e SDK di Experience Manager.
 
 Sebbene sia possibile caricare e gestire qualsiasi file binario in  Experience Manager, i formati file più comunemente utilizzati supportano servizi aggiuntivi, come l&#39;estrazione di metadati o la generazione di anteprime/rappresentazioni. Per informazioni dettagliate, fare riferimento ai formati [di file](file-format-support.md) supportati.
 
@@ -24,7 +24,7 @@ Potete anche scegliere di effettuare un’ulteriore elaborazione sulle risorse c
 
 >[!NOTE]
 >
-> Experience Manager come Cloud Service sfrutta un nuovo metodo di caricamento delle risorse: caricamento binario diretto. È supportato per impostazione predefinita dalle funzionalità e dai client di prodotto preconfigurati, come &#39;interfaccia utente Experience Manager, Adobe Asset Link,  app desktop Experience Manager, e quindi trasparenti per gli utenti finali.
+> Experience Manager come Cloud Service sfrutta un nuovo metodo di caricamento delle risorse: caricamento binario diretto. È supportato per impostazione predefinita dalle funzionalità e dai client di prodotto disponibili, come l&#39;interfaccia utente  Experience Manager,  collegamento risorse di Adobe,  Experience Manager&#39;app desktop di  e quindi trasparente per gli utenti finali.
 >
 >Il codice di caricamento personalizzato o esteso dai team tecnici dei clienti deve usare le nuove API e i nuovi protocolli di caricamento.
 
@@ -63,7 +63,6 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli sull
 
    Se annullate l’operazione di caricamento prima del caricamento dei file, [!DNL Assets] interrompe il caricamento del file corrente e aggiorna il contenuto. Tuttavia, i file già caricati non vengono eliminati.
 
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -74,14 +73,13 @@ Per caricare uno o più file, potete selezionarli sul desktop e trascinarli sull
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-
 1. Nella finestra di dialogo di avanzamento del caricamento [!DNL Assets] viene visualizzato il numero di file caricati correttamente e i file che non sono stati caricati correttamente.
 
 Inoltre, l’interfaccia utente di Risorse mostra la risorsa più recente caricata o la cartella creata per la prima volta.
 
 >[!NOTE]
 >
->Per caricare gerarchie di cartelle nidificate in AEM, consultate Caricare [in massa le risorse](#bulk-upload).
+>Per caricare AEM gerarchie di cartelle nidificate, consultate Caricare [in massa le risorse](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -112,7 +110,7 @@ Potete scegliere di sostituire una risorsa esistente, crearne un’altra o tener
 >
 >Quando selezionate **[!UICONTROL Sostituisci]** nella finestra di dialogo Conflitto  nome, l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
 >
->Se Asset Insights è abilitato per tenere traccia di impression/clic con Adobe  Analytics, l’ID risorsa rigenerata invalida i dati acquisiti per la risorsa su  Analytics.
+>Se Asset Insights è abilitato per il tracciamento di impression/clic con  Adobe Analytics, l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa su  Analytics.
 
 Per mantenere la risorsa duplicata in [!DNL Assets], fate clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, toccate o fate clic su **[!UICONTROL Elimina]**.
 
@@ -136,13 +134,13 @@ Per caricare un numero maggiore di file, in particolare se esistono in una gerar
 
 >[!NOTE]
 >
->Il caricamento in blocco come parte della migrazione dei contenuti da altri sistemi quando la configurazione e la distribuzione  Experience Manager richiedono un’attenta pianificazione, considerazione e scelta degli strumenti. Consultate la guida [alla](/help/implementing/deploying/overview.md) distribuzione per informazioni sugli approcci per la migrazione dei contenuti.
+>Il caricamento in blocco come parte della migrazione dei contenuti da altri sistemi quando la configurazione e la distribuzione  Experience Manager richiedono un&#39;attenta pianificazione, considerazione e scelta degli strumenti. Consultate la guida [alla](/help/implementing/deploying/overview.md) distribuzione per informazioni sugli approcci per la migrazione dei contenuti.
 
 ## Caricare le risorse mediante client desktop {#upload-assets-desktop-clients}
 
 Oltre all&#39;interfaccia utente del browser Web,  Experience Manager supporta altri client sul desktop. Offrono inoltre un’esperienza di caricamento senza dover passare al browser Web.
 
-* [Collegamento](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) risorse Adobe consente di accedere alle risorse dalle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign [!DNL Experience Manager] . Potete caricare il documento attualmente aperto [!DNL Experience Manager] direttamente dall’interfaccia utente di Adobe Asset Link dall’interno di queste applicazioni desktop.
+* [Collegamento](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) risorse di Adobe consente di accedere alle risorse da [!DNL Experience Manager] applicazioni desktop Adobe Photoshop,  Adobe Illustrator e  Adobe InDesign. Potete caricare il documento aperto [!DNL Experience Manager] direttamente dall’interfaccia utente Collegamento risorsa Adobe direttamente dall’interno di queste applicazioni desktop.
 * [&#39;app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) desktop Experience Manager semplifica l&#39;utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall&#39;applicazione nativa che le gestisce. È particolarmente utile caricare i file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file semplici.
 
 ## Elaborazione aggiuntiva {#additional-processing}
@@ -154,7 +152,7 @@ Per un’ulteriore elaborazione delle risorse caricate, potete usare i profili d
 Sono disponibili i seguenti profili:
 
 * [I profili](metadata-profiles.md) di metadati consentono di applicare proprietà di metadati predefinite alle risorse caricate in tale cartella
-* [I profili](asset-microservices-configure-and-use.md#processing-profiles) di elaborazione consentono di applicare l&#39;elaborazione delle rappresentazioni e di generare rappresentazioni oltre a quelle predefinite
+* [I profili](asset-microservices-configure-and-use.md) di elaborazione consentono di generare più rappresentazioni di quelle che per impostazione predefinita sono possibili.
 
 Inoltre, se Dynamic Media è abilitato nell’ambiente in uso:
 
@@ -175,6 +173,6 @@ I dettagli tecnici delle API e del protocollo di caricamento e i collegamenti al
 >
 >* [App desktop Adobe Experience Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Documentazione di Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
+>* [Documentazione  collegamento risorse Adobe](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
 >* [Riferimento tecnico per il caricamento delle risorse](developer-reference-material-apis.md#asset-upload-technical)
 
