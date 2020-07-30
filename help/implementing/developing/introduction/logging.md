@@ -2,7 +2,7 @@
 title: Registrazione
 description: Scoprite come configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 translation-type: tm+mt
-source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
+source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
 workflow-type: tm+mt
 source-wordcount: '2212'
 ht-degree: 3%
@@ -27,9 +27,9 @@ La registrazione a livello di applicazione AEM è gestita da tre registri:
 1. Registri di richieste HTTP, che registrano le informazioni sulle richieste HTTP e le risposte fornite da AEM
 1. Registri di accesso HTTP, quali informazioni di riepilogo del registro e richieste HTTP inviate da AEM
 
-> [!NOTE]
-> 
-> Le richieste HTTP servite dalla cache Dispatcher del livello di pubblicazione o dalla rete CDN upstream non vengono riportate in questi registri.
+>[!NOTE]
+>
+>Le richieste HTTP servite dalla cache Dispatcher del livello di pubblicazione o dalla rete CDN upstream non vengono riportate in questi registri.
 
 ## Registrazione Java AEM {#aem-java-logging}
 
@@ -595,9 +595,9 @@ Nella richiesta di assistenza, i clienti devono indicare:
 
 Le proprietà di cui sopra devono essere specificate per ciascuna combinazione di programma/tipo di ambiente pertinente.  Ad esempio, se un cliente voleva un ambiente di sviluppo, staging e produzione, dovrebbe fornire tre serie di informazioni, come indicato di seguito.
 
-> [!NOTE]
+>[!NOTE]
 >
-> L&#39;inoltro splunk per gli ambienti di programmi sandbox non è supportato.
+>L&#39;inoltro splunk per gli ambienti di programmi sandbox non è supportato.
 
 Di seguito è riportato un esempio di richiesta di assistenza clienti:
 
