@@ -2,7 +2,7 @@
 title: Integrazione con Adobe Target
 description: 'Integrazione con Adobe Target '
 translation-type: tm+mt
-source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
+source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 Come parte del Adobe Marketing Cloud ,  Adobe Target consente di aumentare la rilevanza dei contenuti attraverso il targeting e la misurazione su tutti i canali. L&#39;integrazione  Adobe Target e AEM come Cloud Service richiede:
 
 * utilizzo dell&#39;interfaccia utente touch per creare una configurazione Analytics  in AEM come Cloud Service (è richiesta la configurazione IMS).
-* aggiunta e configurazione  Adobe Analytics come estensione in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* aggiunta e configurazione  Adobe Target come estensione in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
  Adobe Launch è necessario per la gestione delle proprietà lato client sia per  Analytics che per Target in AEM pagine (librerie/tag JS). Tuttavia, l&#39;integrazione con Launch è necessaria per il &quot;targeting delle esperienze&quot;. Per l’esportazione di frammenti esperienza in Target, è necessario solo disporre della configurazione del Adobe Target  e di IMS.
 
