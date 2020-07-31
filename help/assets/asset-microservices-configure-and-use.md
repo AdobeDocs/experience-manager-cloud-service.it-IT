@@ -3,9 +3,9 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
+source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2208'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ I microservizi delle risorse supportano un’ampia varietà di formati di file i
 
 Alcune impostazioni predefinite sono preconfigurate per garantire la disponibilità delle rappresentazioni predefinite richieste nel  Experience Manager. La configurazione predefinita garantisce inoltre la disponibilità di operazioni di estrazione dei metadati e di estrazione del testo. Gli utenti possono iniziare a caricare o aggiornare immediatamente le risorse e per impostazione predefinita è disponibile l’elaborazione di base.
 
-Con la configurazione predefinita, è configurato solo il profilo di elaborazione di base. Tale profilo di elaborazione non è visibile nell&#39;interfaccia utente e non è possibile modificarlo. Viene sempre eseguito per elaborare le risorse caricate. Questo profilo di elaborazione predefinito garantisce che l&#39;elaborazione di base richiesta da [!DNL Experience Manager] venga completata su tutte le risorse.
+Con la configurazione predefinita, è configurato solo il profilo di elaborazione di base. Tale profilo di elaborazione non è visibile nell&#39;interfaccia utente e non è possibile modificarlo. Viene sempre eseguito per elaborare le risorse caricate. Questo profilo di elaborazione predefinito garantisce che l&#39;elaborazione di base richiesta [!DNL Experience Manager] venga completata su tutte le risorse.
 
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
@@ -92,7 +92,7 @@ Per creare un profilo di elaborazione standard, effettuate le seguenti operazion
    * Qualità in percentuale di ciascuna rappresentazione JPEG.
    * Tipi MIME inclusi ed esclusi per definire l&#39;applicabilità di un profilo.
 
-![elaborazione-profili-aggiunta](assets/processing-profiles-adding.png)
+   ![elaborazione-profili-aggiunta](assets/processing-profiles-adding.png)
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
@@ -106,23 +106,22 @@ Il seguente video illustra l’utilità e l’utilizzo del profilo standard.
 
 ## Profilo personalizzato e casi di utilizzo {#custom-config}
 
-**Elementi** TBD:
+<!-- **TBD items**:
 
-* Collegamento incrociato complessivo con il contenuto di estensibilità.
-* Indicare come ottenere l’URL del lavoratore. URL lavoratore per ambienti Dev, Stage e Prod.
-* Mappatura dei riferimenti dei parametri del servizio. Collegamento all&#39;articolo del servizio di calcolo.
-* Revisione dalla prospettiva di flusso condivisa nel biglietto di Jira.
+* Overall cross-linking with the extensibility content.
+* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention mapping of service parameters. Link to compute service article.
+* Review from flow perspective shared in Jira ticket.
+-->
 
 Alcuni casi di utilizzo complessi per l’elaborazione delle risorse non possono essere eseguiti utilizzando configurazioni predefinite, in quanto le esigenze delle organizzazioni sono diverse.  offerte di Adobe [!DNL Asset Compute Service] per tali casi di utilizzo. È un servizio scalabile ed estensibile per l&#39;elaborazione di risorse digitali. Può trasformare immagini, video, documenti e altri formati di file in diverse rappresentazioni, come miniature, testo estratto e metadati e archivi.
 
-Gli sviluppatori possono utilizzare il servizio Asset Compute Service per creare lavoratori personalizzati specializzati in casi di utilizzo predefiniti e complessi. [!DNL Experience Manager] può richiamare questi lavoratori personalizzati dall&#39;interfaccia utente utilizzando profili personalizzati che gli amministratori configurano. [!DNL Asset Compute Service] supporta i seguenti casi di utilizzo:
+Gli sviluppatori possono utilizzare il servizio Asset Compute Service per creare lavoratori personalizzati specializzati in casi di utilizzo predefiniti e complessi. [!DNL Experience Manager] può richiamare questi lavoratori personalizzati dall&#39;interfaccia utente utilizzando profili personalizzati che gli amministratori configurano. [!DNL Asset Compute Service] supporta i seguenti casi di utilizzo di servizi esterni:
 
-* Generate smart tag avanzati personalizzati per le risorse digitali utilizzando  Adobe Sensei.
-* Genera maschera di ritaglio di un oggetto utilizzando  Adobe Sensei.
-* Recuperate le informazioni sui metadati del prodotto dal sistema PIM e rendete i metadati parte del binario della risorsa durante l&#39;assimilazione della risorsa.
-* Modificare il colore di sfondo di un&#39;immagine trasparente utilizzando [!DNL Adobe Photoshop] API.
-* Ritoccate un&#39;immagine utilizzando [!DNL Photoshop] l&#39;API.
-* Raddrizzate un&#39;immagine utilizzando [!DNL Adobe Lightroom] l&#39;API.
+* Richiamate [!DNL Adobe Photoshop] l’API di ritaglio immagine e salvate il risultato come rappresentazione.
+* Richiama i sistemi di terze parti per aggiornare i dati, ad esempio un sistema PIM.
+* Utilizzate [!DNL Photoshop] API per generare diverse rappresentazioni basate su modello Photoshop.
+* Utilizzate [!DNL Adobe Lightroom] API per ottimizzare le risorse acquisite e salvarle come rappresentazioni.
 
 >[!NOTE]
 >
@@ -216,3 +215,4 @@ Per informazioni dettagliate sul passaggio del flusso di lavoro standard da util
 ## Best practice e limitazioni {#best-practices-limitations-tips}
 
 * Considerate le vostre esigenze per tutti i tipi di rappresentazioni durante la progettazione di flussi di lavoro. Se non prevedete la necessità di una rappresentazione in futuro, rimuovete il passaggio di creazione dal flusso di lavoro. Le rappresentazioni non possono essere eliminate in blocco in seguito. Le rappresentazioni indesiderate possono occupare molto spazio di archiviazione dopo un uso prolungato di [!DNL Experience Manager]. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare [!DNL Experience Manager] per eliminare rappresentazioni specifiche oppure eliminare le risorse e caricarle di nuovo.
+* Al momento, il supporto è limitato alla generazione di rappresentazioni. La generazione di nuova risorsa non è supportata.
