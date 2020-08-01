@@ -3,9 +3,9 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
+source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2405'
 ht-degree: 1%
 
 ---
@@ -44,17 +44,18 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
  Experience Manager consente i seguenti livelli di elaborazione.
 
-| Configurazione | Descrizione | Casi di utilizzo coperti |
+| Opzione | Descrizione | Casi di utilizzo coperti |
 |---|---|---|
-| [Configurazione predefinita](#default-config) | È disponibile così come è e non può essere modificato. Questa configurazione fornisce funzionalità di generazione delle rappresentazioni di base. | miniature standard utilizzate dall’interfaccia [!DNL Assets] utente (48, 140 e 319 px); Anteprima grande (rappresentazione Web - 1280 px); Estrazione di metadati e testo. |
-| [Configurazione standard](#standard-config) | Configurato dagli amministratori solo tramite l’interfaccia utente. Offre più opzioni per la generazione della rappresentazione rispetto alla configurazione predefinita precedente. | Modificare il formato e la risoluzione delle immagini; generare rappresentazioni FPO. |
-| [Configurazione personalizzata](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per richiamare lavoratori personalizzati che supportano requisiti più complessi. Sfrutta un&#39;origine cloud [!DNL Asset Compute Service]. | Consultate [casi](#custom-config)di utilizzo consentiti. |
+| [Configurazione predefinita](#default-config) | È disponibile così come è e non può essere modificato. Questa configurazione fornisce funzionalità di generazione delle rappresentazioni di base. | <ul> <li>Miniature standard utilizzate dall’interfaccia [!DNL Assets] utente (48, 140 e 319 px) </li> <li> Anteprima grande (rappresentazione Web - 1280 px) </li><li> Estrazione di metadati e testo.</li></ul> |
+| [Configurazione personalizzata](#standard-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente. Offre più opzioni per la generazione della rappresentazione, estendendo l&#39;opzione predefinita. Estendete il lavoratore out-of-the-box per fornire formati e rappresentazioni diversi. | <ul><li>Rendering FPO. </li> <li>Modificare il formato file e la risoluzione delle immagini</li> <li> Applicabile in modo condizionale ai tipi di file configurati. </li> </ul> |
+| [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per utilizzare il codice personalizzato tramite i lavoratori personalizzati da richiamare [!DNL Asset Compute Service]. Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Consultate [casi](#custom-config)di utilizzo consentiti. |
 
-Per creare profili di elaborazione personalizzati in base alle tue esigenze, ad esempio per l&#39;integrazione con altri sistemi, consulta Flussi di lavoro [di](#post-processing-workflows)post-elaborazione.
+<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+-->
 
 ## Formati di file supportati {#supported-file-formats}
 
-I microservizi delle risorse supportano un’ampia varietà di formati di file in termini di capacità di generare rappresentazioni o estrarre metadati. Consultate Formati [di file](file-format-support.md) supportati per l’elenco completo.
+I microservizi delle risorse supportano un’ampia varietà di formati di file per elaborare, generare rappresentazioni o estrarre metadati. Consulta i formati [di file](file-format-support.md) supportati per l&#39;elenco completo dei tipi MIME e le funzionalità supportate per ciascun tipo.
 
 ## Configurazione predefinita {#default-config}
 
@@ -65,7 +66,7 @@ Con la configurazione predefinita, è configurato solo il profilo di elaborazion
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
-## Profilo standard {#standard-config}
+## Configurazione standard {#standard-config}
 
 [!DNL Experience Manager] forniscono funzionalità per generare rappresentazioni più specifiche per i formati comuni in base alle esigenze dell&#39;utente. Un amministratore può creare ulteriori profili [!UICONTROL di] elaborazione per facilitare la creazione di tali rappresentazioni. Gli utenti quindi assegnano uno o più dei profili disponibili a cartelle specifiche per completare l’elaborazione aggiuntiva. Ad esempio, l&#39;elaborazione aggiuntiva può generare rappresentazioni per Web, dispositivi mobili e tablet. Il seguente video illustra come creare e applicare profili [!UICONTROL di] elaborazione e come accedere alle rappresentazioni create.
 
@@ -96,11 +97,14 @@ Per creare un profilo di elaborazione standard, effettuate le seguenti operazion
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
-Il seguente video illustra l’utilità e l’utilizzo del profilo standard.
+<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+
+The following video demonstrates the usefulness and usage of standard profile.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+-->
 
-<!-- Removed per cqdoc-15624 request by engineering.
+<!-- This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
@@ -114,14 +118,20 @@ Il seguente video illustra l’utilità e l’utilizzo del profilo standard.
 * Review from flow perspective shared in Jira ticket.
 -->
 
-Alcuni casi di utilizzo complessi per l’elaborazione delle risorse non possono essere eseguiti utilizzando configurazioni predefinite, in quanto le esigenze delle organizzazioni sono diverse.  offerte di Adobe [!DNL Asset Compute Service] per tali casi di utilizzo. È un servizio scalabile ed estensibile per l&#39;elaborazione di risorse digitali. Può trasformare immagini, video, documenti e altri formati di file in diverse rappresentazioni, come miniature, testo estratto e metadati e archivi.
+Supporta una serie di [!DNL Asset Compute Service] casi di utilizzo, ad esempio l&#39;elaborazione predefinita, l&#39;elaborazione  formati specifici per i Adobi come i file Photoshop e l&#39;implementazione di un&#39;elaborazione personalizzata o specifica per l&#39;organizzazione. La personalizzazione del flusso di lavoro per l&#39;aggiornamento delle risorse di DAM, richiesta in passato, è gestita per impostazione predefinita oppure tramite la configurazione dei profili di elaborazione nell&#39;interfaccia utente. Se questa elaborazione non soddisfa le esigenze aziendali,  Adobe consiglia di sviluppare e utilizzare Asset Compute Service per estendere le funzionalità predefinite.
 
-Gli sviluppatori possono utilizzare il servizio Asset Compute Service per creare lavoratori personalizzati specializzati in casi di utilizzo predefiniti e complessi. [!DNL Experience Manager] può richiamare questi lavoratori personalizzati dall&#39;interfaccia utente utilizzando profili personalizzati che gli amministratori configurano. [!DNL Asset Compute Service] supporta i seguenti casi di utilizzo di servizi esterni:
+>[!NOTE]
+>
+> Adobe consiglia di utilizzare un lavoratore personalizzato solo quando non è possibile eseguire il lavoro utilizzando le configurazioni predefinite o il profilo standard.
 
-* Richiamate [!DNL Adobe Photoshop] l’API di ritaglio immagine e salvate il risultato come rappresentazione.
+Può trasformare immagini, video, documenti e altri formati di file in diverse rappresentazioni, come miniature, testo estratto e metadati e archivi.
+
+Gli sviluppatori possono utilizzare il [!DNL Asset Compute Service] per creare lavoratori personalizzati specializzati che si occupano di casi di utilizzo predefiniti. [!DNL Experience Manager] può richiamare questi lavoratori personalizzati dall&#39;interfaccia utente utilizzando profili personalizzati che gli amministratori configurano. [!DNL Asset Compute Service] supporta i seguenti casi di utilizzo di servizi esterni:
+
+* Utilizzate [!DNL Adobe Photoshop]l&#39;API [ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) e salvate il risultato come rappresentazione.
 * Richiama i sistemi di terze parti per aggiornare i dati, ad esempio un sistema PIM.
 * Utilizzate [!DNL Photoshop] API per generare diverse rappresentazioni basate su modello Photoshop.
-* Utilizzate [!DNL Adobe Lightroom] API per ottimizzare le risorse acquisite e salvarle come rappresentazioni.
+* Utilizzate [API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) Lightroom di Adobe per ottimizzare le risorse assimilate e salvarle come rappresentazioni.
 
 >[!NOTE]
 >
@@ -133,18 +143,30 @@ Per creare un profilo personalizzato, attenetevi alla procedura seguente:
 
 1. Gli amministratori accedono a **[!UICONTROL Strumenti > Risorse > Profili]** di elaborazione. Fai clic su **[!UICONTROL Crea]**.
 1. Click on **[!UICONTROL Custom]** tab. Fate clic su **[!UICONTROL Aggiungi nuovo]**. Specificate il nome file desiderato per la rappresentazione.
-1. Fornite le seguenti informazioni e fate clic su **[!UICONTROL Salva]**.
+1. Fornite le seguenti informazioni.
 
    * Nome file di ogni rappresentazione e estensione file supportata.
    * URL punto finale di un&#39;app Firefly personalizzata. L&#39;app deve provenire dalla stessa organizzazione dell&#39;account del Experience Manager .
-   * Aggiungi i parametri del servizio come necessario.
+   * Aggiungete parametri [!UICONTROL di] servizio per trasmettere ulteriori informazioni o parametri al lavoratore personalizzato.
    * Tipi MIME inclusi ed esclusi per definire l&#39;applicabilità di un profilo.
 
-![custom-processing-profile](assets/custom-processing-profile.png)
+   Fai clic su **[!UICONTROL Salva]**.
 
 >[!CAUTION]
 >
 >Se l&#39;app Firefly e [!DNL Experience Manager] l&#39;account non appartengono alla stessa organizzazione, l&#39;integrazione non funziona.
+
+### Esempio di profilo personalizzato {#custom-profile-example}
+
+Per illustrare l&#39;utilizzo del profilo personalizzato, consideriamo un caso d&#39;uso per applicare del testo personalizzato alle immagini della campagna. Potete creare un profilo di elaborazione che sfrutta l&#39;API di Photoshop per modificare le immagini.
+
+L&#39;integrazione di Asset Compute Service consente  Experience Manager di trasmettere questi parametri al lavoratore personalizzato utilizzando il campo [!UICONTROL Service Parameters] . Il lavoratore personalizzato richiama quindi l&#39;API di Photoshop e trasmette questi valori all&#39;API. Ad esempio, potete trasmettere il nome del font, il colore del testo, lo spessore del testo e la dimensione del testo per aggiungere il testo personalizzato alle immagini della campagna.
+
+![custom-processing-profile](assets/custom-processing-profile.png)
+
+*Figura: Utilizzare il campo Parametri[!UICONTROL di]servizio per trasmettere informazioni aggiunte ai parametri predefiniti generati nel lavoratore personalizzato.*
+
+Quando le immagini della campagna vengono caricate nella cartella alla quale è applicato questo profilo di elaborazione, le immagini vengono aggiornate con `Jumanji` del testo in `Arial-BoldMT` font.
 
 ## Utilizzo dei profili di elaborazione per elaborare le risorse {#use-profiles}
 
@@ -152,7 +174,7 @@ Potete creare e applicare profili di elaborazione personalizzati aggiuntivi a ca
 
 Applicate i profili di elaborazione alle cartelle utilizzando uno dei seguenti metodi:
 
-* Gli amministratori possono selezionare una definizione di profilo di elaborazione in **[!UICONTROL Strumenti > Risorse > Profili]** di elaborazione e utilizzare l&#39;azione **[!UICONTROL Applica profilo alle cartelle]** . Viene aperto un browser del contenuto che consente di passare a cartelle specifiche, selezionarle e confermare l’applicazione del profilo.
+* Gli amministratori possono selezionare una definizione di profilo di elaborazione in **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Profili **** di elaborazione e utilizzare l&#39;azione **[!UICONTROL Applica profilo alle cartelle]** . Viene aperto un browser del contenuto che consente di passare a cartelle specifiche, selezionarle e confermare l’applicazione del profilo.
 * Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Per salvare le modifiche, fate clic su **[!UICONTROL Salva e chiudi]**.
 
 >[!NOTE]
@@ -165,7 +187,7 @@ Dopo aver applicato un profilo di elaborazione a una cartella, tutte le nuove ri
 >
 >Un profilo di elaborazione applicato a una cartella funziona per l’intera struttura ad albero, ma può essere sostituito con un altro profilo applicato a una sottocartella. Quando le risorse vengono caricate in una cartella,  Experience Manager controlla le proprietà della cartella contenitore per un profilo di elaborazione. Se non ne viene applicata alcuna, viene controllata una cartella principale nella gerarchia per verificare se è necessario applicare un profilo di elaborazione.
 
-Gli utenti possono verificare che l’elaborazione sia stata eseguita aprendo una risorsa appena caricata per la quale l’elaborazione è stata completata, aprendo l’anteprima della risorsa e facendo clic sulla vista **[!UICONTROL Rappresentazioni]** della barra a sinistra. Le rappresentazioni specifiche nel profilo di elaborazione, per le quali il tipo di risorsa specifico corrisponde alle regole di inclusione del tipo MIME, devono essere visibili e accessibili.
+Tutte le rappresentazioni generate sono disponibili nella vista [!UICONTROL Rappresentazioni] , nella parte sinistra. Aprite l&#39;anteprima della risorsa e aprite la barra a sinistra per accedere alla visualizzazione **[!UICONTROL Rappresentazioni]** . Le rappresentazioni specifiche nel profilo di elaborazione, per le quali il tipo di risorsa specifico corrisponde alle regole di inclusione del tipo MIME, devono essere visibili e accessibili.
 
 ![rappresentazioni aggiuntive](assets/renditions-additional-renditions.png)
 
