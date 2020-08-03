@@ -2,10 +2,10 @@
 title: Note sulla versione [!DNL Adobe Experience Manager] di Cloud Service per la versione 2020.7.0.
 description: '[!DNL  Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
+source-git-commit: af6603725ff42583e01c62eb8e8cf11aaea41437
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 34%
+source-wordcount: '952'
+ht-degree: 38%
 
 ---
 
@@ -31,9 +31,6 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * Le configurazioni ora sono memorizzate nell&#39;archivio `/conf` del Experience Manager  anziché `/etc/cloudsettings` nell&#39;archivio.
 
 ## Adobe Experience Manager Assets as a Cloud Service {#assets}
-
->[!NOTE]
->Nei prossimi giorni verranno implementati AEM Assets come funzioni di Cloud Service.
 
 ### Novità {#what-is-new-assets}
 
@@ -76,9 +73,9 @@ La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.7.0 è il 9 lugl
 
 * In ogni ambiente, il numero di variabili dell’ambiente è stato aumentato a 200.
 
-* Le pipeline di Cloud Manager ora supportano le variabili e i segreti del set di clienti.
+* Le pipeline di Cloud Manager ora supportano variabili e segreti impostati dal cliente.
 
-   Per ulteriori informazioni, vedere Variabili [](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) tubazione.
+   Per ulteriori informazioni, consulta [Variabili delle pipeline](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables).
 
 ### Correzioni di bug {#bug-fixes-cm}
 
@@ -100,7 +97,7 @@ La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.7.0 è il 9 lugl
 
 ### Problemi noti {#known-issues}
 
-* A causa di una modifica nella modalità di calcolo della copertura del codice, la versione *minima* del plugin Jacoco è ora 0.7.5.201505241946 (rilasciata a maggio 2015). I clienti che fanno esplicito riferimento a una versione precedente ricevono un messaggio di errore nel processo di qualità del codice.
+* A causa di una modifica nel modo in cui viene calcolata la copertura del codice, la versione *minima* del plugin Jacoco è ora 0.7.5.201505241946 (rilasciata a maggio 2015). I clienti che fanno esplicito riferimento a una versione precedente ricevono un messaggio di errore nel processo di qualità del codice.
 
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
