@@ -1,11 +1,11 @@
 ---
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1582'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1a2172a35c3409dd98f4ce93d621762b935d122f
+workflow-type: tm+mt
+source-wordcount: '1616'
+ht-degree: 97%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 100%
 Segui le indicazioni riportate in questa sezione per comprendere le valutazioni importanti durante l’esecuzione dello strumento Content Transfer (Trasferimento contenuti):
 
 * l requisiti di sistema minimi per lo strumento Content Transfer (Trasferimento contenuti) sono AEM 6.3 o versione successiva e JAVA 8. Se utilizzi una precedente versione di AEM, dovrai aggiornare l’archivio dei contenuti ad AEM 6.5 per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+
+* Content Transfer Tool può essere utilizzato con i seguenti tipi di archivio dati: Archivio dati file, Archivio dati S3 e Archivio dati S3 condiviso. Al momento non supporta Azure Blob Store Data Store.
 
 * Se utilizzi un *ambiente Sandbox*, assicurati che sia aggiornato alla versione del 10 giugno 2020 o successiva. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
 
@@ -37,7 +39,7 @@ Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato co
 
 ## Esecuzione dello strumento Content Transfer (Trasferimento contenuti) {#running-tool}
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 Segui le indicazioni contenute in questa sezione per apprendere come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti in AEM as a Cloud Service (authoring/pubblicazione):
 
