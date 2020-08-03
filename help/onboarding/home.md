@@ -1,11 +1,11 @@
 ---
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
-translation-type: ht
-source-git-commit: 46ceff932d5e6a52293a4bb03734224f734439df
-workflow-type: ht
-source-wordcount: '401'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 96%
 
 ---
 
@@ -39,6 +39,7 @@ Questa sezione riguarda gli articoli principali su:
 | [Guida utente sull’implementazione](/help/implementing/home.md) | Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione. |
 | [Guida utente dei connettori](/help/connectors/home.md) | Questa guida contiene informazioni su come integrare i connettori in Experience Manager as a Cloud Service. |
 | [Guida utente sulle operazioni](/help/operations/home.md) | Questa guida contiene informazioni sulle operazioni back-end di Experience Manager as a Cloud Service, ad esempio le attività di indicizzazione e manutenzione. |
+| [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri Commerce Integration Framework come Cloud Service in AEM. |
 
 ## Altre risorse su Experience Manager {#other-resources}
 
