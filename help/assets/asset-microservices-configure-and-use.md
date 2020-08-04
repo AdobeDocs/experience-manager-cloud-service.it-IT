@@ -3,9 +3,9 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
+source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2482'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |---|---|---|
 | [Configurazione predefinita](#default-config) | È disponibile così come è e non può essere modificato. Questa configurazione fornisce funzionalità di generazione delle rappresentazioni di base. | <ul> <li>Miniature standard utilizzate dall’interfaccia [!DNL Assets] utente (48, 140 e 319 px) </li> <li> Anteprima grande (rappresentazione Web - 1280 px) </li><li> Estrazione di metadati e testo.</li></ul> |
 | [Configurazione personalizzata](#standard-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente. Offre più opzioni per la generazione della rappresentazione, estendendo l&#39;opzione predefinita. Estendete il lavoratore out-of-the-box per fornire formati e rappresentazioni diversi. | <ul><li>Rendering FPO. </li> <li>Modificare il formato file e la risoluzione delle immagini</li> <li> Applicabile in modo condizionale ai tipi di file configurati. </li> </ul> |
-| [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per utilizzare il codice personalizzato tramite i lavoratori personalizzati da richiamare [!DNL Asset Compute Service]. Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Consultate [casi](#custom-config)di utilizzo consentiti. |
+| [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per utilizzare il codice personalizzato tramite i lavoratori personalizzati per richiamare [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Consultate [casi](#custom-config)di utilizzo consentiti. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -61,7 +61,7 @@ I microservizi delle risorse supportano un’ampia varietà di formati di file p
 
 Alcune impostazioni predefinite sono preconfigurate per garantire la disponibilità delle rappresentazioni predefinite richieste nel  Experience Manager. La configurazione predefinita garantisce inoltre la disponibilità di operazioni di estrazione dei metadati e di estrazione del testo. Gli utenti possono iniziare a caricare o aggiornare immediatamente le risorse e per impostazione predefinita è disponibile l’elaborazione di base.
 
-Con la configurazione predefinita, è configurato solo il profilo di elaborazione di base. Tale profilo di elaborazione non è visibile nell&#39;interfaccia utente e non è possibile modificarlo. Viene sempre eseguito per elaborare le risorse caricate. Questo profilo di elaborazione predefinito garantisce che l&#39;elaborazione di base richiesta [!DNL Experience Manager] venga completata su tutte le risorse.
+Con la configurazione predefinita, è configurato solo il profilo di elaborazione di base. Tale profilo di elaborazione non è visibile nell&#39;interfaccia utente e non è possibile modificarlo. Viene sempre eseguito per elaborare le risorse caricate. Questo profilo di elaborazione predefinito garantisce che l&#39;elaborazione di base richiesta da [!DNL Experience Manager] venga completata su tutte le risorse.
 
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
@@ -118,7 +118,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 * Review from flow perspective shared in Jira ticket.
 -->
 
-Supporta una serie di [!DNL Asset Compute Service] casi di utilizzo, ad esempio l&#39;elaborazione predefinita, l&#39;elaborazione  formati specifici per i Adobi come i file Photoshop e l&#39;implementazione di un&#39;elaborazione personalizzata o specifica per l&#39;organizzazione. La personalizzazione del flusso di lavoro per l&#39;aggiornamento delle risorse di DAM, richiesta in passato, è gestita per impostazione predefinita oppure tramite la configurazione dei profili di elaborazione nell&#39;interfaccia utente. Se questa elaborazione non soddisfa le esigenze aziendali,  Adobe consiglia di sviluppare e utilizzare Asset Compute Service per estendere le funzionalità predefinite.
+Supporta una serie di [!DNL Asset Compute Service] casi di utilizzo, ad esempio l&#39;elaborazione predefinita, l&#39;elaborazione  formati specifici per i Adobi come i file Photoshop e l&#39;implementazione di un&#39;elaborazione personalizzata o specifica per l&#39;organizzazione. La personalizzazione del flusso di lavoro di DAM Update Asset richiesta in passato, viene gestita automaticamente o tramite la configurazione dei profili di elaborazione. Se queste opzioni di elaborazione non soddisfano le esigenze aziendali,  Adobe consiglia di sviluppare e utilizzare [!DNL Asset Compute Service] per estendere le funzionalità predefinite. Per una panoramica, consultate [Comprendere l’estensibilità e quando utilizzarla](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Supporta una serie di [!DNL Asset Compute Service] casi di utilizzo, ad esempio 
 
 Può trasformare immagini, video, documenti e altri formati di file in diverse rappresentazioni, come miniature, testo estratto e metadati e archivi.
 
-Gli sviluppatori possono utilizzare il [!DNL Asset Compute Service] per creare lavoratori personalizzati specializzati che si occupano di casi di utilizzo predefiniti. [!DNL Experience Manager] può richiamare questi lavoratori personalizzati dall&#39;interfaccia utente utilizzando profili personalizzati che gli amministratori configurano. [!DNL Asset Compute Service] supporta i seguenti casi di utilizzo di servizi esterni:
+Gli sviluppatori possono utilizzare il [!DNL Asset Compute Service] per [creare lavoratori](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) personalizzati che si adattano ai casi di utilizzo supportati. [!DNL Experience Manager] può richiamare questi lavoratori personalizzati dall&#39;interfaccia utente utilizzando profili personalizzati che gli amministratori configurano. [!DNL Asset Compute Service] supporta i seguenti casi di utilizzo di servizi esterni:
 
 * Utilizzate [!DNL Adobe Photoshop]l&#39;API [ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) e salvate il risultato come rappresentazione.
 * Richiama i sistemi di terze parti per aggiornare i dati, ad esempio un sistema PIM.
@@ -238,3 +238,10 @@ Per informazioni dettagliate sul passaggio del flusso di lavoro standard da util
 
 * Considerate le vostre esigenze per tutti i tipi di rappresentazioni durante la progettazione di flussi di lavoro. Se non prevedete la necessità di una rappresentazione in futuro, rimuovete il passaggio di creazione dal flusso di lavoro. Le rappresentazioni non possono essere eliminate in blocco in seguito. Le rappresentazioni indesiderate possono occupare molto spazio di archiviazione dopo un uso prolungato di [!DNL Experience Manager]. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare [!DNL Experience Manager] per eliminare rappresentazioni specifiche oppure eliminare le risorse e caricarle di nuovo.
 * Al momento, il supporto è limitato alla generazione di rappresentazioni. La generazione di nuova risorsa non è supportata.
+
+>[!MORELIKETHIS]
+>
+>* [Introduzione al servizio](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)di calcolo delle risorse.
+>* [Comprendere l&#39;estensibilità e quando utilizzarla](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
+>* [Come creare lavoratori](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)personalizzati.
+
