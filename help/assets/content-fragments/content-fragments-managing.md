@@ -2,7 +2,7 @@
 title: Gestione dei frammenti di contenuto
 description: I frammenti di contenuto sono memorizzati come risorse e sono gestiti principalmente dalla console Risorse.
 translation-type: tm+mt
-source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
+source-git-commit: bb664c48c31aa19f71e881d31fcde5fdc3bb35a1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 11%
@@ -131,9 +131,7 @@ Per aprire il frammento per la modifica:
    >[!NOTE]
    >
    >1. Viene visualizzato un messaggio se al frammento è già fatto riferimento in una pagina di contenuto.
-      >
-      >
-   2. Il pannello laterale può essere nascosto o visualizzato utilizzando l’icona **Attiva/Disattiva pannello** laterale.
+   >2. Il pannello laterale può essere nascosto o visualizzato utilizzando l’icona **Attiva/Disattiva pannello** laterale.
 
 
 3. Per spostarsi tra le tre modalità, usate le icone nel pannello laterale:
