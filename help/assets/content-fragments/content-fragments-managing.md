@@ -2,7 +2,7 @@
 title: Gestione dei frammenti di contenuto
 description: I frammenti di contenuto sono memorizzati come risorse e sono gestiti principalmente dalla console Risorse.
 translation-type: tm+mt
-source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
+source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 11%
@@ -35,6 +35,7 @@ Il metodo di creazione di un frammento di contenuto è:
    * [Modello](/help/assets/content-fragments/content-fragments-models.md) : utilizzato per creare un frammento che richiede contenuto strutturato; ad esempio, il modello **Adventure**
 
       * Vengono visualizzati tutti i modelli disponibili.
+
    Dopo la selezione, utilizzate **Avanti** per proseguire.
 
    ![base frammento](assets/cfm-managing-01.png)
@@ -122,6 +123,7 @@ Per aprire il frammento per la modifica:
 
    * Toccando o facendo clic sul collegamento del frammento o del frammento (a seconda della vista della console).
    * Selezionare il frammento, quindi **Modifica** dalla barra degli strumenti.
+
    Viene aperto l’editor frammento:
 
    ![editor di frammenti](assets/cfm-managing-03.png)
@@ -131,8 +133,6 @@ Per aprire il frammento per la modifica:
    >1. Viene visualizzato un messaggio se al frammento è già fatto riferimento in una pagina di contenuto.
       >
       >
-      >
-
    2. Il pannello laterale può essere nascosto o visualizzato utilizzando l’icona **Attiva/Disattiva pannello** laterale.
 
 
@@ -143,6 +143,7 @@ Per aprire il frammento per la modifica:
    * [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenuto associato](#associating-content-with-your-fragment)
    * [Metadati](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![modalità](assets/cfm-managing-04.png)
 
 4. Dopo aver apportato le modifiche, usate **Salva** o **Annulla** come necessario.
@@ -182,9 +183,9 @@ L&#39;editor dispone di due opzioni:
 
    Uscirà dall’editor senza salvare le modifiche più recenti.
 
-Durante la modifica di un frammento di contenuto, AEM crea automaticamente delle versioni che garantiscono il ripristino del contenuto precedente in caso di **annullamento** delle modifiche:
+Durante la modifica del frammento di contenuto AEM crea automaticamente delle versioni che garantiscono il ripristino del contenuto precedente in caso di **annullamento** delle modifiche:
 
-1. Quando un frammento di contenuto viene aperto per la modifica in AEM, viene verificata l’esistenza del token basato su cookie che indica se esiste una sessione *di* modifica:
+1. Quando un frammento di contenuto viene aperto per la modifica AEM verifica l’esistenza del token basato su cookie che indica se esiste una sessione *di* modifica:
 
    1. Se il token viene trovato, il frammento viene considerato parte della sessione di modifica esistente.
    2. Se il token *non* è disponibile e l&#39;utente avvia la modifica del contenuto, viene creata una versione e viene inviato un token per questa nuova sessione di modifica al client, dove viene salvato in un cookie.
@@ -301,7 +302,7 @@ I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambien
 * Quando si [pubblica una pagina che utilizza il frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); il frammento verrà elencato nei riferimenti di pagina.
 
 >[!CAUTION]
-Dopo aver pubblicato e/o fatto riferimento a un frammento, quando un autore riapre il frammento per la modifica in AEM verrà visualizzato un avviso. In questo modo viene segnalato che le modifiche apportate al frammento avranno effetto anche sulle pagine di riferimento.
+Dopo aver pubblicato e/o fatto riferimento a un frammento, AEM viene visualizzato un avviso quando un autore riapre il frammento per la modifica. In questo modo viene segnalato che le modifiche apportate al frammento avranno effetto anche sulle pagine di riferimento.
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
