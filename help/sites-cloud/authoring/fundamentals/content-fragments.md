@@ -1,11 +1,11 @@
 ---
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redarre e utilizzare contenuti indipendenti dalla pagina.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Apri la finestra di dialogo **Configurazione** del frammento per configurare il 
 
 >[!NOTE]
 >
->Vedere anche Componenti [di base, il componente Frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+>Consulta anche [Componenti core, componente Frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
 Nella finestra di dialogo di configurazione appropriata puoi selezionare i parametri disponibili, tra cui:
 
@@ -136,7 +136,7 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 >
 >Puoi anche [inserire risorse visive (immagini) nel frammento stesso](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Le risorse visive inserite nel frammento stesso sono associate al paragrafo precedente nel frammento. Non è pertanto possibile inserire contenuto intermedio tra una risorsa visiva e il paragrafo precedente. Se è necessario questo livello di connessione, è possibile aggiungere l’immagine al frammento (come frammento [misto](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+>Le risorse visive inserite nel frammento stesso sono associate al paragrafo precedente nel frammento. Non è pertanto possibile inserire contenuto intermedio tra una risorsa visiva e il paragrafo precedente. Qualora ti occorra questo livello di connessione, puoi aggiungere l’immagine al frammento (come [frammento con file multimediali diversi](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
@@ -153,7 +153,7 @@ Questo potrebbe dare l’impressione di una modifica nella posizione relativa, p
 
 ### Uso di contenuti associati  {#using-associated-content}
 
-Se hai [associato del contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Se hai [associato del contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Da qui puoi trascinare le risorse nella posizione richiesta (su un componente es
 
 ### Risorse inserite nel frammento {#assets-inserted-into-the-fragment}
 
-If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
+Se sono state inserite delle risorse (ad es. immagini) nel frammento stesso (come [frammenti con file multimediali diversi](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)) le opzioni per la modifica di tali risorse nell’editor pagina sono limitate.
 
 Ad esempio, per un’immagine è possibile:
 
