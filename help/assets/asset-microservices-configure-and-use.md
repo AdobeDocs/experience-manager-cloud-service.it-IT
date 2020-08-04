@@ -3,9 +3,9 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
+source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2501'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ I microservizi delle risorse supportano un’ampia varietà di formati di file p
 
 Alcune impostazioni predefinite sono preconfigurate per garantire la disponibilità delle rappresentazioni predefinite richieste nel  Experience Manager. La configurazione predefinita garantisce inoltre la disponibilità di operazioni di estrazione dei metadati e di estrazione del testo. Gli utenti possono iniziare a caricare o aggiornare immediatamente le risorse e per impostazione predefinita è disponibile l’elaborazione di base.
 
-Con la configurazione predefinita, è configurato solo il profilo di elaborazione di base. Tale profilo di elaborazione non è visibile nell&#39;interfaccia utente e non è possibile modificarlo. Viene sempre eseguito per elaborare le risorse caricate. Questo profilo di elaborazione predefinito garantisce che l&#39;elaborazione di base richiesta da [!DNL Experience Manager] venga completata su tutte le risorse.
+Con la configurazione predefinita, è configurato solo il profilo di elaborazione di base. Tale profilo di elaborazione non è visibile nell&#39;interfaccia utente e non è possibile modificarlo. Viene sempre eseguito per elaborare le risorse caricate. Questo profilo di elaborazione predefinito garantisce che l&#39;elaborazione di base richiesta [!DNL Experience Manager] venga completata su tutte le risorse.
 
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
@@ -146,8 +146,8 @@ Per creare un profilo personalizzato, attenetevi alla procedura seguente:
 1. Fornite le seguenti informazioni.
 
    * Nome file di ogni rappresentazione e estensione file supportata.
-   * URL punto finale di un&#39;app Firefly personalizzata. L&#39;app deve provenire dalla stessa organizzazione dell&#39;account del Experience Manager .
-   * Aggiungete parametri [!UICONTROL di] servizio per trasmettere ulteriori informazioni o parametri al lavoratore personalizzato.
+   * [URL punto finale di un&#39;app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)Firefly personalizzata. L&#39;app deve provenire dalla stessa organizzazione dell&#39;account del Experience Manager .
+   * Aggiungi parametri di servizio per [trasmettere informazioni o parametri aggiuntivi al lavoratore](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)personalizzato.
    * Tipi MIME inclusi ed esclusi per definire l&#39;applicabilità di un profilo.
 
    Fai clic su **[!UICONTROL Salva]**.
