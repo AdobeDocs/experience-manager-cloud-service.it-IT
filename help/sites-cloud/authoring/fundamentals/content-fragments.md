@@ -1,9 +1,9 @@
 ---
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redarre e utilizzare contenuti indipendenti dalla pagina.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 100%
 
