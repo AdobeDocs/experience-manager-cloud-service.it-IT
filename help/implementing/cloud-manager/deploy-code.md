@@ -1,10 +1,10 @@
 ---
-title: Distribuzione del codice - Servizi cloud
-description: Distribuzione del codice - Servizi cloud
+title: Distribuzione del codice - Cloud Services
+description: Distribuzione del codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: 164d2d3b4dabfa2b06da245dc33ef90b5b77192b
+source-git-commit: ebab226b7d45994cc00c1abe42d84dab47391f5d
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '895'
 ht-degree: 3%
 
 ---
@@ -42,7 +42,7 @@ Dopo aver configurato la **pipeline** (archivio, ambiente e ambiente di test), �
    La **distribuzione della fase** prevede i seguenti passaggi:
 
    * Convalida: Questo passaggio assicura che la pipeline sia configurata per utilizzare le risorse attualmente disponibili, ad esempio che il ramo configurato esiste, gli ambienti sono disponibili.
-   * Build e unit test: Questo passaggio esegue un processo di compilazione containerizzato. Consultate [Creare un progetto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) di applicazione AEM per informazioni dettagliate sull&#39;ambiente di creazione.
+   * Build e unit test: Questo passaggio esegue un processo di compilazione containerizzato. Consultate [Creare un progetto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) applicazione AEM per informazioni dettagliate sull&#39;ambiente di creazione.
    * Scansione del codice: Questo passaggio valuta la qualità del codice dell’applicazione. Consultate [Comprendere i risultati](/help/implementing/developing/introduction/understand-test-results.md) del test per informazioni dettagliate sul processo di test.
    * Genera immagini: Questo passaggio include un file di registro dal processo utilizzato per creare le immagini. Questo processo è responsabile della trasformazione dei pacchetti di contenuti e dispatcher prodotti dalla fase di creazione in immagini Docker e configurazione Kubernetes.
    * Distribuisci nello stage
@@ -58,10 +58,6 @@ Dopo aver configurato la **pipeline** (archivio, ambiente e ambiente di test), �
 
 
 
-
->[!IMPORTANT]
->
->Le sezioni seguenti devono essere aggiornate per Cloud Manager per i AEM cloud services ed è in corso.
 
 ## Processo di distribuzione {#deployment-process}
 
@@ -80,18 +76,18 @@ Quando Cloud Manager si distribuisce su topologie non di produzione, l&#39;obiet
    >
    >Questa funzionalità dovrebbe essere utilizzata principalmente da 1-1-1 clienti.
 
-1. Ogni artifact di AEM viene distribuito in ogni istanza di AEM tramite le API di Package Manager, con le dipendenze del pacchetto che determinano l&#39;ordine di distribuzione.
+1. Ogni AEM artifact viene distribuito in ogni istanza AEM tramite le API di Package Manager, con le dipendenze del pacchetto che determinano l&#39;ordine di distribuzione.
 
    Per ulteriori informazioni su come utilizzare i pacchetti per installare nuove funzionalità, trasferire contenuti tra le istanze ed eseguire il backup del contenuto del repository, vedere Come utilizzare i pacchetti.
 
    >[!NOTE]
    >
-   >Tutti gli artifact di AEM vengono distribuiti sia all’autore che agli editori. Le modalità di esecuzione devono essere utilizzate quando sono necessarie configurazioni specifiche per il nodo. Per ulteriori informazioni sulle modalità di esecuzione che consentono di sintonizzare l’istanza di AEM per uno scopo specifico, consultate Modalità di esecuzione.
+   >Tutti AEM artifact vengono distribuiti sia all&#39;autore che agli editori. Le modalità di esecuzione devono essere utilizzate quando sono necessarie configurazioni specifiche per il nodo. Per ulteriori informazioni sulle modalità di esecuzione che consentono di sintonizzare l&#39;istanza di AEM per uno scopo specifico, fare riferimento a Modalità di esecuzione.
 
 1. L&#39;artifact del dispatcher viene distribuito a ciascun dispatcher come indicato di seguito:
 
    1. Le configurazioni correnti vengono sottoposte a backup e copiate in una posizione temporanea
-   1. Tutte le configurazioni vengono eliminate tranne i file immutabili. Per ulteriori informazioni, consulta Gestione delle configurazioni Dispatcher. In questo modo le directory vengono cancellate per evitare che vengano lasciati indietro i file orfani.
+   1. Tutte le configurazioni vengono eliminate tranne i file immutabili. Per ulteriori informazioni, consulta Gestione delle configurazioni del dispatcher. In questo modo le directory vengono cancellate per evitare che vengano lasciati indietro i file orfani.
    1. L&#39;artifact viene estratto nella directory httpd.  I file immutabili non vengono sovrascritti. Eventuali modifiche apportate ai file immutabili nel repository git verranno ignorate al momento della distribuzione.  Questi file sono fondamentali per il framework del dispatcher AMS e non possono essere modificati.
    1. Apache esegue un test di configurazione. Se non viene rilevato alcun errore, il servizio viene ricaricato. Se si verifica un errore, le configurazioni vengono ripristinate dal backup, il servizio viene ricaricato e l&#39;errore viene riportato a Cloud Manager.
    1. Ogni percorso specificato nella configurazione della pipeline viene invalidato o scaricato dalla cache del dispatcher.
@@ -100,7 +96,7 @@ Quando Cloud Manager si distribuisce su topologie non di produzione, l&#39;obiet
    >
    >Cloud Manager prevede che l&#39;artifact del dispatcher contenga l&#39;intero set di file.  Tutti i file di configurazione del dispatcher devono essere presenti nel repository git. I file o le cartelle mancanti genereranno un errore di distribuzione.
 
-1. Dopo la corretta distribuzione di tutti i pacchetti AEM e dispatcher a tutti i nodi, i dispatcher vengono aggiunti nuovamente al sistema di bilanciamento del carico e la distribuzione è completa.
+1. Dopo la corretta distribuzione di tutti i pacchetti di AEM e dispatcher a tutti i nodi, i dispatcher vengono aggiunti nuovamente al sistema di bilanciamento del carico e la distribuzione è completa.
 
    >[!NOTE]
    >
@@ -108,16 +104,16 @@ Quando Cloud Manager si distribuisce su topologie non di produzione, l&#39;obiet
 
 ### Fase di distribuzione {#deployment-production-phase}
 
-Il processo di implementazione nelle topologie di produzione è leggermente diverso per ridurre al minimo l&#39;impatto sui visitatori del sito AEM.
+Il processo di implementazione nelle topologie di produzione è leggermente diverso per ridurre al minimo l&#39;impatto sui visitatori AEM sito.
 
 Le distribuzioni di produzione seguono generalmente gli stessi passaggi sopra, ma in modo continuo:
 
-1. Distribuire pacchetti AEM da creare.
+1. Distribuire AEM pacchetti per l&#39;authoring.
 1. Scollegare dispatcher1 dal sistema di bilanciamento del carico.
-1. Distribuire pacchetti AEM per publish1 e il pacchetto dispatcher per dispatcher1, svuotare la cache del dispatcher.
+1. Distribuire pacchetti AEM per publish1 e il pacchetto dispatcher nella cache dispatcher1 e dello scaricamento.
 1. Rimettere dispatcher1 nel sistema di bilanciamento del carico.
 1. Una volta che dispatcher1 è tornato in servizio, scollegare dispatcher2 dal sistema di bilanciamento del carico.
-1. Distribuite i pacchetti AEM in publish2 e il pacchetto dispatcher nella cache dispatcher2 e nello scaricamento.
+1. Distribuire AEM pacchetti in publish2 e il pacchetto dispatcher nella cache dispatcher2 e nello scaricamento.
 1. Rimettere dispatcher2 nel sistema di bilanciamento del carico.
 Questo processo continua finché la distribuzione non raggiunge tutti gli editori e i dispatcher nella topologia.
 
