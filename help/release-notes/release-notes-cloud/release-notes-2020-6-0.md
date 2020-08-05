@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -190,4 +190,4 @@ Oltre alle nuove funzioni di cui sopra, la versione corrente fornisce le correzi
 * Quando si scarica una risorsa, se è selezionata l’opzione e-mail e viene fornito un ID e-mail valido, l’opzione di download non è disponibile. (CQ-4296535)
 * I filtri personalizzati salvati come raccolte avanzate non vengono applicati correttamente alle risorse. (CQ-4294942)
 * Sono stati introdotti numerosi miglioramenti a livello di ricerca e indicizzazione e correzioni di bug per migliorare le prestazioni. (CQ-4286373)
-* Le proprietà della cartella presentano 500 errori interni del server. (CQ-4295701)
+* Le proprietà della cartella presentano l’errore 500 (errore interno del server). (CQ-4295701)
