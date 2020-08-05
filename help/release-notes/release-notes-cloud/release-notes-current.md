@@ -1,6 +1,6 @@
 ---
 title: Note sulla versione [!DNL Adobe Experience Manager] di Cloud Service per la versione 2020.7.0.
-description: '[!DNL  Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.7.0.'
+description: '[!DNL Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.7.0.'
 translation-type: tm+mt
 source-git-commit: de220114d7eb4ac1fcee028890ff029de168d0c3
 workflow-type: tm+mt
@@ -107,9 +107,9 @@ La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.7.0 è il 9 lugl
 
 * [È possibile assegnare un indirizzo](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) IP di uscita statico e dedicato al traffico in uscita programmato nel codice Java, utile per alcune integrazioni.
 
-* Interfaccia  servizio cloud Analytics AEM porta da interfaccia classica a nuova interfaccia AEM. È stata spostata anche la posizione  servizio cloud Analytics in AEM repository da `/etc` a `/conf`, per l&#39;allineamento con altri AEM cloud services.
+* Interfaccia AEM servizio cloud Analytics da interfaccia classica a nuova interfaccia AEM. È stata spostata anche la posizione del servizio cloud di Analytics in AEM repository da `/etc` a `/conf`, per l&#39;allineamento con altri servizi cloud AEM.
 
-* Interfaccia AEM servizio cloud Target da interfaccia classica a nuova interfaccia AEM. È stata spostata anche la posizione del servizio cloud Target in AEM repository da `/etc` a `/conf`, per allinearsi con altri AEM cloud services.
+* Interfaccia AEM servizio cloud Target da interfaccia classica a nuova interfaccia AEM. È stata spostata anche la posizione del servizio cloud Target in AEM repository da `/etc` a `/conf`, per allinearsi con altri servizi cloud AEM.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
