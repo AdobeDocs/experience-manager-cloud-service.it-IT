@@ -1,11 +1,11 @@
 ---
-title: Configurare la pipeline CI/CD - Servizi cloud
-description: Configurare la pipeline CI/CD - Servizi cloud
+title: Configurare la pipeline CI/CD - Cloud Services
+description: Configurare la pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 3%
+source-wordcount: '578'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 ## Informazioni sul flusso {#understanding-the-flow}
 
-Puoi configurare la pipeline dalla sezione **Pipeline Settings (Impostazioni pipeline)** dell’interfaccia utente di [!UICONTROL Cloud Manager].
+You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
 
 Gestione distribuzione è responsabile della configurazione della pipeline. In questo caso, selezionate prima un ramo dall&#39;archivio **Git**.
 
@@ -59,6 +59,7 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
 
    * **Manuale** : l&#39;utilizzo dell&#39;interfaccia utente consente di avviare manualmente la pipeline.
    * **Su modifiche** Git - avvia la pipeline CI/CD ogni volta che vengono aggiunti impegni al ramo git configurato. Anche se selezionate questa opzione, potete sempre avviare la pipeline manualmente.
+
    Durante la configurazione o la modifica della pipeline, Gestione distribuzione ha la possibilità di definire il comportamento della pipeline quando si verifica un errore importante in una qualsiasi delle porte di qualità.
 
    Questo è utile per i clienti che desiderano un maggior numero di processi automatizzati. Le opzioni disponibili sono:
