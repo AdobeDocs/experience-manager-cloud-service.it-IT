@@ -2,7 +2,7 @@
 title: Comprendere i risultati del test - Cloud Services
 description: Comprendere i risultati dei test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 4%
@@ -176,7 +176,9 @@ Il valore della metrica Modifica può essere uno dei seguenti:
 #### Punteggi a livello di pagina {#page-level-scores}
 
 Effettuando il drill-through in uno dei test, è possibile visualizzare un punteggio più dettagliato sul livello di pagina. L&#39;utente sarà in grado di visualizzare il punteggio ottenuto dalle singole pagine per il test specifico insieme alla modifica rispetto all&#39;esecuzione precedente del test.
-Facendo clic sui dettagli di una singola pagina, verranno fornite informazioni sugli elementi della pagina che sono stati valutati e indicazioni per risolvere i problemi in caso di rilevamento di opportunità di miglioramento. I dettagli dei test e le relative indicazioni sono forniti da Google Lighthouse.
+
+Facendo clic sui dettagli di una singola pagina verranno fornite informazioni sugli elementi della pagina che sono stati valutati e indicazioni per risolvere i problemi in caso di rilevamento di opportunità di miglioramento. I dettagli dei test e le relative indicazioni sono forniti da Google Lighthouse.
+
 ![](assets/page-level-scores.png)
 
 ## Esecuzione test locale {#local-test-execution}
