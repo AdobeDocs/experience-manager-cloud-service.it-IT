@@ -2,20 +2,28 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
+source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 1%
+source-wordcount: '770'
+ht-degree: 2%
 
 ---
 
 
 # Configurazione della pipeline CI-CD {#configure-ci-cd-pipeline}
 
+In Cloud Manager, ci sono due tipi di pipeline:
+
+* **Tubi**di produzione:
+È possibile aggiungere una pipeline di produzione solo dopo la creazione di un ambiente di produzione e di fase. Per ulteriori informazioni, vedere [Impostazione della sezione Pipeline](configure-pipeline.md#setting-up-the-pipeline) .
+
+* **Tubi** non di produzione:
+
+   È possibile aggiungere una pipeline non di produzione dalla pagina **Panoramica** dall&#39;interfaccia utente di Cloud Manager. Per ulteriori informazioni, fare riferimento alle tubazioni [](configure-pipeline.md#non-production-pipelines) non di produzione e di qualità del codice.
 
 ## Informazioni sul flusso {#understanding-the-flow}
 
-You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+Puoi configurare la pipeline dalla sezione **Pipeline Settings (Impostazioni pipeline)** dell’interfaccia utente di [!UICONTROL Cloud Manager].
 
 Gestione distribuzione è responsabile della configurazione della pipeline. In questo caso, selezionate prima un ramo dall&#39;archivio **Git**.
 
@@ -49,11 +57,11 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
 
 1. Viene visualizzata la schermata **Configurazione tubazione** . Select the branch and click **Next**.
 
-   ![](assets/set-up-pipeline2.png)
+   ![](assets/setup-pipeline-1.png)
 
 1. Configurare le opzioni di distribuzione.
 
-   ![](assets/set-up-pipeline3.png)
+   ![](assets/setup-pipeline-2.png)
 
    È possibile definire l&#39;attivatore per avviare la pipeline:
 
@@ -69,16 +77,27 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
    * **Continua immediatamente** : se questa opzione è selezionata, la pipeline procederà automaticamente ogni volta che si verifica un errore importante. Si tratta essenzialmente di un&#39;emulazione manuale di un utente che approva ogni errore.
 
 
-1. Fate clic su **Avanti** per accedere alla scheda **Test** e definire i criteri di test per il programma.
+1. Le impostazioni della pipeline di produzione includono una terza scheda etichettata come **Content Audit**.
 
-   ![](assets/set-up-pipeline4.png)
+   Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi nella revisione dei contenuti. L&#39;utente può inserire manualmente un percorso URL da includere. È possibile includere fino a 25 righe. Se non ci sono pagine inviate dall&#39;utente in questa sezione, la pagina iniziale del sito verrà inclusa nel controllo del contenuto come impostazione predefinita.
 
-1. Fai clic su **Salva**. Nella pagina *Panoramica* è ora visualizzata la scheda **Implementa il programma** . Fate clic sul pulsante **Distribuisci** per distribuire il programma.
+   >[!NOTE]
+   > Le pagine configurate verranno inviate al servizio e valutate in base alle prestazioni, all&#39;accessibilità, al SEO (ottimizzazione motore di ricerca), alle best practice e ai test PWA (app Web progressiva).
+
+   Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) dell&#39;audit dei contenuti.
+
+   ![](assets/content-audit-1.png)
+
+   Fate clic su **Aggiungi nuova esclusione** pagina per specificare un percorso URL da includere nel controllo dei contenuti. Dopo aver aggiunto il percorso, fate clic su **Salva**.
+
+   ![](assets/content-audit-2.png)
+
+1. Fate clic su **Salva** nella schermata **Modifica tubazione** . Nella pagina **Panoramica** è ora visualizzata la scheda **Implementa il programma** . Fate clic sul pulsante **Distribuisci** per distribuire il programma.
 
    ![](assets/configure-pipeline5.png)
 
 
-## Tubazioni non di produzione e di qualità del codice
+## Tubazioni non di produzione e di qualità del codice {#non-production-pipelines}
 
 Oltre alla pipeline principale che viene implementata per fasi e produzione, i clienti sono in grado di impostare altri oleodotti, denominati **Non-Production Pipelines**. Tali pipeline eseguono sempre i passaggi di creazione e qualità del codice. Facoltativamente, possono anche essere distribuiti nell&#39;ambiente Adobe Managed Services.
 
