@@ -2,9 +2,9 @@
 title: Distribuzione del codice - Cloud Services
 description: Distribuzione del codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: ebab226b7d45994cc00c1abe42d84dab47391f5d
+source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '994'
 ht-degree: 3%
 
 ---
@@ -50,8 +50,14 @@ Dopo aver configurato la **pipeline** (archivio, ambiente e ambiente di test), �
       ![](assets/stage-deployment.png)
    La **prova della fase** prevede i seguenti passaggi:
 
-   * Test funzionale del prodotto: Le esecuzioni della pipeline di Cloud Manager supporteranno l&#39;esecuzione di test che vengono eseguiti nell&#39;ambiente del passaggio. Consultate [Comprendere i risultati](/help/implementing/developing/introduction/understand-test-results.md) del test per informazioni dettagliate sul processo di test.
-   * Test funzionale personalizzato: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita. Consultate [Comprendere i risultati](/help/implementing/developing/introduction/understand-test-results.md) del test per informazioni dettagliate sul processo di test.
+   * Test funzionale del prodotto: Le esecuzioni della pipeline di Cloud Manager supporteranno l&#39;esecuzione di test che vengono eseguiti nell&#39;ambiente del passaggio.
+Per informazioni dettagliate sul processo di test, consultate [Comprendere i risultati](/help/implementing/developing/introduction/understand-test-results.md) del test.
+
+   * Test funzionale personalizzato: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita.\
+      Per informazioni dettagliate sul processo di test, consultate [Comprendere i risultati](/help/implementing/developing/introduction/understand-test-results.md) del test.
+
+   * Controllo contenuto: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Quando viene eseguita una pipeline di produzione, viene inclusa una fase di controllo del contenuto dopo il test funzionale personalizzato che eseguirà i controlli. Le pagine configurate verranno inviate al servizio e valutate. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e la modifica tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se esiste una regressione che verrà introdotta con la distribuzione corrente.
+Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) di Content Audit.
 
       ![](assets/stage-testing.png)
 
