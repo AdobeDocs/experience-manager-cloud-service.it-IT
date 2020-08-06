@@ -1,10 +1,10 @@
 ---
-title: Comprendere i risultati dei test - Servizi cloud
-description: Comprendere i risultati dei test - Servizi cloud
+title: Comprendere i risultati del test - Cloud Services
+description: Comprendere i risultati dei test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1486'
 ht-degree: 4%
 
 ---
@@ -12,17 +12,19 @@ ht-degree: 4%
 
 # Risultati dei test {#understand-test-results}
 
-Le esecuzioni della pipeline di Cloud Manager for Cloud Services supporteranno l&#39;esecuzione di test eseguiti nell&#39;ambiente del passaggio. Ciò è in contrasto con i test eseguiti durante il passaggio Genera e Prova unità che vengono eseguiti offline, senza l&#39;accesso ad alcun ambiente AEM in esecuzione.
+Le esecuzioni della pipeline di Cloud Manager per Cloud Services supportano l’esecuzione di test sull’ambiente stage. Ciò è in contrasto con i test eseguiti durante il passaggio Build e Unit Testing che vengono eseguiti offline, senza l&#39;accesso ad alcun ambiente AEM in esecuzione.
 Esistono due tipi di test eseguiti in questo contesto:
 * Test scritti dal cliente
-* Test scritti da Adobe
+*  test scritti dal Adobe
+* Strumento open source alimentato da Faro di Google
 
-Entrambi i tipi di test sono eseguiti in un&#39;infrastruttura containerizzata progettata per eseguire questi tipi di test.
+   >[!NOTE]
+   > Sia i test scritti dal cliente che  test scritti dal Adobe vengono eseguiti in un&#39;infrastruttura containerizzata progettata per eseguire questi tipi di test.
 
 
 ## Verifica della qualità del codice {#code-quality-testing}
 
-Come parte della pipeline, il codice sorgente viene analizzato per garantire che le distribuzioni soddisfino determinati criteri di qualità. Attualmente, questo è implementato tramite una combinazione di SonarQube e l&#39;esame a livello di pacchetto di contenuti tramite OakPAL. Esistono più di 100 regole che combinano regole Java generiche e regole specifiche di AEM. La tabella seguente riassume la valutazione per i criteri di prova:
+Come parte della pipeline, il codice sorgente viene analizzato per garantire che le distribuzioni soddisfino determinati criteri di qualità. Attualmente, questo è implementato tramite una combinazione di SonarQube e l&#39;esame a livello di pacchetto di contenuti tramite OakPAL. Ci sono più di 100 regole che combinano regole Java generiche e regole AEM specifiche. La tabella seguente riassume la valutazione per i criteri di prova:
 
 | Nome | Definizione | Categoria | Soglia di errore |
 |--- |--- |--- |--- |
@@ -33,7 +35,7 @@ Come parte della pipeline, il codice sorgente viene analizzato per garantire che
 | Test di unità ignorati | Numero di unit test ignorati. | Info | > 1 |
 | Problemi aperti | Tipi di problemi generali - Vulnerabilità, bug e odori di codice | Info | > 0 |
 | Linee duplicate | Numero di righe coinvolte in blocchi duplicati. <br/>Per considerare un blocco di codice come duplicato: <br/><ul><li>**Progetti non Java:**</li><li>Devono essere presenti almeno 100 token successivi e duplicati.</li><li>Tali token devono essere ripartiti almeno su: </li><li>30 righe di codice per COBOL </li><li>20 righe di codice per ABAP </li><li>10 righe di codice per altre lingue</li><li>**Progetti Java:**</li><li> Devono essere presenti almeno 10 istruzioni successive e duplicate, indipendentemente dal numero di token e di righe.</li></ul> <br/>Le differenze nei rientri e nei letterali di stringa vengono ignorate durante il rilevamento di duplicati. | Info | > 1% |
-| Compatibilità con i servizi cloud | Numero di problemi di compatibilità del servizio cloud identificati. | Info | > 0 |
+| Compatibilità Cloud Service | Numero di problemi di compatibilità Cloud Service identificati. | Info | > 0 |
 
 
 >[!NOTE]
@@ -52,7 +54,7 @@ Il processo di scansione della qualità non è perfetto e a volte identificherà
 
 In questi casi, il codice sorgente può essere annotato con l&#39; `@SuppressWarnings` annotazione Java standard che specifica l&#39;ID regola come attributo annotazione. Ad esempio, un problema comune è che la regola SonarQube per rilevare le password hardcoded può essere aggressiva per quanto riguarda il modo in cui viene identificata una password hardcoded.
 
-Per un esempio specifico, questo codice è abbastanza comune in un progetto AEM con codice per la connessione a un servizio esterno:
+Per osservare un esempio specifico, questo codice è abbastanza comune in un progetto AEM con codice per la connessione a un servizio esterno:
 
 ```java
 @Property(label = "Service Password")
@@ -82,7 +84,7 @@ Quindi la soluzione corretta è rimuovere la password hardcoded.
 
 ## Scrittura di test funzionali {#writing-functional-tests}
 
-I test funzionali scritti dal cliente devono essere compressi come file JAR separato prodotto dalla stessa build Maven degli artefatti da distribuire ad AEM. Generalmente questo sarebbe un modulo Maven separato. Il file JAR risultante deve contenere tutte le dipendenze richieste e generalmente viene creato utilizzando il plug-in maven-assembly utilizzando il descrittore jar-with-dependencies.
+I test funzionali scritti dal cliente devono essere confezionati come file JAR separato prodotto dalla stessa build Maven degli artefatti da distribuire a AEM. Generalmente questo sarebbe un modulo Maven separato. Il file JAR risultante deve contenere tutte le dipendenze richieste e generalmente viene creato utilizzando il plug-in maven-assembly utilizzando il descrittore jar-with-dependencies.
 
 Inoltre, il JAR deve avere l’intestazione del manifesto di Cloud-Manager-TestType impostata su integration-test. In futuro, saranno supportati ulteriori valori di intestazione. Un esempio di configurazione per il plug-in maven-assembly è:
 
@@ -130,7 +132,52 @@ Il passaggio di test funzionale personalizzato nella pipeline è sempre presente
 Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita. Questo passaggio viene eseguito immediatamente dopo la distribuzione dell’area di visualizzazione.
 
 >[!NOTE]
->Il pulsante **Download Log (Scarica registro)** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Questi registri non includono i registri del processo di runtime AEM effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) .
+>Il pulsante **Download Log (Scarica registro)** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Tali registri non includono i registri del processo AEM runtime effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) .
+
+## Verifica del contenuto {#content-audit-testing}
+
+Content Audit è una funzione disponibile nelle pipeline di produzione di siti di Cloud Manager alimentate da Lighthouse, uno strumento open source di Google. Questa funzione è abilitata in tutti i gasdotti di produzione di Cloud Manager.
+
+Convalidare il processo di distribuzione e garantire che le modifiche implementate:
+
+1. Soddisfare gli standard di base per prestazioni, accessibilità, procedure ottimali, SEO (ottimizzazione motore di ricerca) e PWA (app Web progressiva).
+
+1. Non includete regressioni in queste dimensioni.
+
+Content Audit in Cloud Manager assicura che l&#39;esperienza digitale degli utenti finali sul sito possa essere mantenuta ai massimi standard. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e la modifica tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se esiste una regressione che verrà introdotta con la distribuzione corrente.
+
+### Informazioni sui risultati dell&#39;audit dei contenuti {#understanding-content-audit-results}
+
+Content Audit fornisce risultati di test aggregati e dettagliati a livello di pagina tramite la pagina di esecuzione della pipeline di produzione.
+
+* Le metriche a livello di aggregazione misurano il punteggio medio tra le pagine sottoposte a controllo.
+* I singoli punteggi a livello di pagina sono disponibili anche tramite drill down.
+* Sono disponibili dettagli dei punteggi per vedere quali sono i risultati dei singoli test, nonché indicazioni su come risolvere eventuali problemi individuati durante il controllo dei contenuti.
+* Una cronologia dei risultati del test è persistente in Cloud Manager in modo che i clienti possano vedere se le modifiche introdotte nell&#39;esecuzione della pipeline includono eventuali regressioni dall&#39;esecuzione precedente.
+
+#### Aggrega punteggi {#aggregate-scores}
+
+Esiste un punteggio a livello aggregato per ciascun tipo di test (prestazioni, accessibilità, SEO, best practice e PWA).
+
+Il punteggio del livello aggregato prende il punteggio medio delle pagine incluse nell&#39;esecuzione. La modifica a livello di aggregazione rappresenta il punteggio medio delle pagine nell&#39;esecuzione corrente rispetto alla media dei punteggi dell&#39;esecuzione precedente, anche se la raccolta di pagine configurate per l&#39;inclusione è stata modificata tra le esecuzioni.
+
+Il valore della metrica Modifica può essere uno dei seguenti:
+
+* **Valore** positivo: le pagine sono migliorate nel test selezionato dall&#39;ultima esecuzione del ciclo di produzione
+
+* **Valore** negativo: le pagine sono state raggruppate nel test selezionato dall&#39;ultima esecuzione del ciclo di produzione
+
+* **Nessuna modifica** : le pagine hanno ottenuto lo stesso punteggio dall&#39;ultima esecuzione del ciclo di produzione
+
+* **N/D** - Non c&#39;era un punteggio precedente disponibile rispetto a
+
+   ![](assets/content-audit-test1.png)
+
+#### Punteggi a livello di pagina {#page-level-scores}
+
+Effettuando il drill-through in uno dei test, è possibile visualizzare un punteggio più dettagliato sul livello di pagina. L&#39;utente sarà in grado di visualizzare il punteggio ottenuto dalle singole pagine per il test specifico insieme alla modifica rispetto all&#39;esecuzione precedente del test.
+Facendo clic sui dettagli di una singola pagina, verranno fornite informazioni sugli elementi della pagina che sono stati valutati e indicazioni per risolvere i problemi in caso di rilevamento di opportunità di miglioramento. I dettagli dei test e le relative indicazioni sono forniti da Google Lighthouse.
+![](assets/page-level-scores.png)
 
 ## Esecuzione test locale {#local-test-execution}
 
@@ -149,3 +196,4 @@ Le proprietà del sistema sono le seguenti:
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
