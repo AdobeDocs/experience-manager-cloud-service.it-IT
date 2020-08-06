@@ -2,7 +2,7 @@
 title: Note sulla versione [!DNL Adobe Experience Manager] di Cloud Service per la versione 2020.8.0.
 description: '[!DNL Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 6%
@@ -28,7 +28,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * Gli ambienti creati di recente nei programmi Assets ora verranno configurati automaticamente con Smart Content Services.
 
-* Gli ambienti disattivati possono essere disattivati dalla pagina di panoramica di Cloud Manager.
+* Gli ambienti con sospensione possono essere disattivati dalla pagina **Panoramica** di Cloud Manager.
 
 * Sono ora supportati i repository privati con binding di autenticazione.
 
@@ -52,7 +52,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * C&#39;è stata una mancata corrispondenza di colore nella pagina della panoramica.
 
-### Problemi noti {#known-issues}
+### Problemi noti {#known-issues-cm}
 
 * Sono incluse pagine non valide che riportano il punteggio medio di controllo dei contenuti al di sotto di quanto dovrebbero essere.
 
