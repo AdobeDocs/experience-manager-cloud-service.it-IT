@@ -2,10 +2,10 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 2%
+source-wordcount: '772'
+ht-degree: 0%
 
 ---
 
@@ -14,35 +14,31 @@ ht-degree: 2%
 
 In Cloud Manager, ci sono due tipi di pipeline:
 
-* **Tubi** di produzione:
+* **Pipeline** di produzione:
 
-   È possibile aggiungere una pipeline di produzione solo dopo la creazione di un ambiente di produzione e di fase.
+   È possibile aggiungere una pipeline di produzione solo dopo la creazione di un set di ambienti di produzione e di fase.
 
-   Per ulteriori informazioni, vedere [Impostazione della tubazione](configure-pipeline.md#setting-up-the-pipeline) .
+   Per ulteriori informazioni, vedere [Impostazione della tubazione](configure-pipeline.md#setting-up-the-pipeline) di produzione.
 
-* **Tubi** non di produzione:
+* **Pipeline** non di produzione:
 
    È possibile aggiungere una pipeline non di produzione dalla pagina **Panoramica** dall&#39;interfaccia utente di Cloud Manager.
 
    Per ulteriori informazioni, fare riferimento alle tubazioni [](configure-pipeline.md#non-production-pipelines) non di produzione e di qualità del codice.
 
-## Informazioni sul flusso {#understanding-the-flow}
+>[!NOTE]
+>Per configurare la pipeline, devi:
+> * definire il trigger che avvierà la pipeline.
+> * definire i parametri che controllano la distribuzione di produzione.
+> * configurare i parametri del test delle prestazioni.
 
-Puoi configurare la pipeline dalla sezione **Pipeline Settings (Impostazioni pipeline)** dell’interfaccia utente di [!UICONTROL Cloud Manager].
 
-Gestione distribuzione è responsabile della configurazione della pipeline. In questo caso, selezionate prima un ramo dall&#39;archivio **Git**.
+## Impostazione della tubazione di produzione {#setting-up-production-pipeline}
 
-Per configurare la pipeline, l&#39;utente deve:
+Gestione distribuzione è responsabile della configurazione della pipeline di produzione.
 
-* definire il trigger che avvierà la pipeline.
-* definire i parametri che controllano la distribuzione di produzione.
-* configurare i parametri del test delle prestazioni.
-
-## Impostazione della tubazione {#setting-up-the-pipeline}
-
->[!CAUTION]
->
->La pipeline non può essere impostata finché non viene completata la creazione di un programma e l&#39;archivio Git ha almeno un ramo.
+>[!NOTE]
+>Non è possibile impostare una pipeline di produzione finché non viene completata la creazione di un programma, l&#39;archivio Git ha almeno un ramo e viene creato un ambiente di produzione e fase.
 
 Prima di iniziare a distribuire il codice, devi configurare le impostazioni della pipeline da [!UICONTROL Cloud Manager].
 
