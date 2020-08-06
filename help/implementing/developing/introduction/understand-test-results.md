@@ -171,13 +171,10 @@ Il valore della metrica Modifica può essere uno dei seguenti:
 
 * **N/D** - Non c&#39;era un punteggio precedente disponibile rispetto a
 
-   ![](assets/content-audit-test1.png)
-
 #### Punteggi a livello di pagina {#page-level-scores}
 
 Effettuando il drill-through in uno dei test, è possibile visualizzare un punteggio più dettagliato sul livello di pagina. L&#39;utente sarà in grado di visualizzare il punteggio ottenuto dalle singole pagine per il test specifico insieme alla modifica rispetto all&#39;esecuzione precedente del test.
 Facendo clic sui dettagli di una singola pagina, verranno fornite informazioni sugli elementi della pagina che sono stati valutati e indicazioni per risolvere i problemi in caso di rilevamento di opportunità di miglioramento. I dettagli dei test e le relative indicazioni sono forniti da Google Lighthouse.
-![](assets/page-level-scores.png)
 
 ## Esecuzione test locale {#local-test-execution}
 
