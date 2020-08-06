@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '793'
 ht-degree: 2%
 
 ---
@@ -14,10 +14,11 @@ ht-degree: 2%
 
 In Cloud Manager, ci sono due tipi di pipeline:
 
-* **Tubi**di produzione:
-È possibile aggiungere una pipeline di produzione solo dopo la creazione di un ambiente di produzione e di fase.
+* **Tubi** di produzione:
 
-   Per ulteriori informazioni, vedere [Impostazione della sezione Pipeline](configure-pipeline.md#setting-up-the-pipeline) .
+   È possibile aggiungere una pipeline di produzione solo dopo la creazione di un ambiente di produzione e di fase.
+
+   Per ulteriori informazioni, vedere [Impostazione della tubazione](configure-pipeline.md#setting-up-the-pipeline) .
 
 * **Tubi** non di produzione:
 
@@ -83,6 +84,8 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
 
 1. Le impostazioni della pipeline di produzione includono una terza scheda etichettata come **Content Audit**.
 
+   ![](assets/content-audit-1.png)
+
    Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi nella revisione dei contenuti. L&#39;utente può inserire manualmente un percorso URL da includere. È possibile includere fino a 25 righe. Se non ci sono pagine inviate dall&#39;utente in questa sezione, la pagina iniziale del sito verrà inclusa nel controllo del contenuto come impostazione predefinita.
 
    >[!NOTE]
@@ -90,9 +93,10 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
 
    Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) dell&#39;audit dei contenuti.
 
-   ![](assets/content-audit-1.png)
-
    Fate clic su **Aggiungi nuova esclusione** pagina per specificare un percorso URL da includere nel controllo dei contenuti. Dopo aver aggiunto il percorso, fate clic su **Salva**.
+
+   >[!NOTE]
+   >Per attivare il passaggio Controllo contenuto, gli utenti devono modificare la pipeline e, facoltativamente, aggiungere pagine. Per ulteriori informazioni, consulta [Problemi](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) noti.
 
    ![](assets/content-audit2.png)
 
