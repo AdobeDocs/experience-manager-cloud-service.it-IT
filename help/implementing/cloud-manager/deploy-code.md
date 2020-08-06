@@ -2,7 +2,7 @@
 title: Distribuzione del codice - Cloud Services
 description: Distribuzione del codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
+source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -59,7 +59,7 @@ Per informazioni dettagliate sul processo di test, consultate [Comprendere i ris
    * Controllo contenuto: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Quando viene eseguita una pipeline di produzione, viene inclusa una fase di controllo del contenuto dopo il test funzionale personalizzato che eseguirà i controlli. Le pagine configurate verranno inviate al servizio e valutate. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e la modifica tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se esiste una regressione che verrà introdotta con la distribuzione corrente.
 Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) di Content Audit.
 
-      ![](assets/stage-testing.png)
+      ![](assets/testing-tab.png)
 
 
 
