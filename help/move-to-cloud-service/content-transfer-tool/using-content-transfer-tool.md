@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 01ffc349891ac1e11af4f4bc8a539069b8f6cd5e
+source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 97%
+source-wordcount: '1640'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 ## Disponibilità {#availability}
 
-Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip (Content Transfer Tool v1.0.0) dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM).
+Content Transfer Tool può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Accertatevi di scaricare la versione più recente. Per ulteriori dettagli sull’ultima versione, consulta [Note](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)sulla versione.
 
 >[!NOTE]
 >Scarica lo strumento Content Transfer (Trasferimento contenuti) dal portale di [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
