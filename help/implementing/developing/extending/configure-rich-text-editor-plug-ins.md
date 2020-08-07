@@ -4,7 +4,7 @@ description: Scoprite come configurare [!DNL Adobe Experience Manager] i plug-in
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
 source-wordcount: '4301'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Per informazioni dettagliate sulle altre configurazioni dell’editor Rich Text,
 
 >[!NOTE]
 >
->Quando si lavora con CRXDE Lite, si consiglia di salvare regolarmente le modifiche utilizzando l&#39;opzione [!UICONTROL Salva tutto] .
+>Quando si lavora con i CRXDE Lite, si consiglia di salvare regolarmente le modifiche utilizzando l&#39;opzione [!UICONTROL Salva tutto] .
 
 ## Attivare un plug-in e configurare la proprietà features {#activateplugin}
 
@@ -559,7 +559,7 @@ Quando il plug-in per il controllo ortografia è attivato, l&#39;editor Rich Tex
 >[!NOTE]
 Messaggio &quot;Controllo ortografia non riuscito&quot;. viene visualizzato se viene provato un controllo per una lingua non installata.
 
-Un’installazione standard  Experience Manager include dizionari per:
+Un’installazione standard  Experience Manager include i dizionari per:
 
 * Inglese americano (en_us)
 * Inglese britannico (en_gb)
@@ -705,7 +705,7 @@ Quando aggiungete collegamenti in [!DNL Experience Manager], potete definire gli
 
          * **Nome** `targetInternal`
          * **Tipo** `String`
-         * **Valore** della destinazione per i collegamenti interni (utilizzare solo quando &quot;mode is `auto`&quot;)
+         * **Valore** della destinazione per i collegamenti interni (utilizzare solo quando la modalità è `auto`)
       * Destinazione per i collegamenti esterni:
 
          * **Nome** `targetExternal`
