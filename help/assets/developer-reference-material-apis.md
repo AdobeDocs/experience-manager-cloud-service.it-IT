@@ -1,17 +1,17 @@
 ---
-title: 'API Assets per la gestione delle risorse digitali in  Adobe Experience Manager come Cloud Service '
+title: 'API Assets per la gestione delle risorse digitali in Adobe Experience Manager come Cloud Service '
 description: Le API Assets consentono operazioni di base di creazione-lettura-aggiornamento-eliminazione (CRUD) per gestire le risorse, inclusi file binari, metadati, rappresentazioni, commenti e frammenti di contenuto.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
 
 
-# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
+# Risorse come API di Cloud Service {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -29,15 +29,15 @@ Give a list of and overview of all reference information available.
 
 L&#39;algoritmo di alto livello per caricare un binario è:
 
-1. Inviate una richiesta HTTP per informare AEM dell’intenzione di caricare un nuovo file binario.
+1. Inviate una richiesta HTTP per informare AEM l’intento di caricare un nuovo file binario.
 1. POST il contenuto del binario a uno o più URI forniti dalla richiesta di avvio.
 1. Inviate una richiesta HTTP per informare il server che il contenuto del file binario è stato caricato correttamente.
 
 ![Panoramica del protocollo di caricamento binario diretto](assets/add-assets-technical.png)
 
-Le differenze importanti rispetto alle versioni precedenti di AEM includono:
+Differenze importanti rispetto alle versioni precedenti di AEM includono:
 
-* I file binari non passano attraverso AEM, che ora sta semplicemente coordinando il processo di caricamento con lo storage cloud binario configurato per la distribuzione
+* I file binari non passano attraverso AEM, che ora sta semplicemente coordinando il processo di caricamento con l&#39;archivio cloud binario configurato per la distribuzione
 * Lo storage cloud binario è caratterizzato da una rete di distribuzione dei contenuti (CDN, Edge Network), che avvicina l’endpoint di caricamento al client, migliorando le prestazioni di caricamento e l’esperienza dell’utente, in particolare per i team distribuiti che caricano le risorse
 
 Questo approccio dovrebbe fornire una gestione più scalabile e performante dei caricamenti delle risorse.
@@ -48,11 +48,7 @@ Questo approccio dovrebbe fornire una gestione più scalabile e performante dei 
 
 ### Avvia caricamento {#initiate-upload}
 
-Il primo passaggio consiste nell’inviare una richiesta HTTP POST alla cartella in cui deve essere creata o aggiornata la risorsa; includete il selettore `.initiateUpload.json` per indicare che la richiesta deve iniziare un caricamento binario. Ad esempio, il percorso della cartella in cui deve essere creata la risorsa è `/assets/folder`:
-
-```
-POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-```
+Il primo passaggio consiste nell’inviare una richiesta di POST HTTP alla cartella in cui deve essere creata o aggiornata la risorsa; includete il selettore `.initiateUpload.json` per indicare che la richiesta deve iniziare un caricamento binario. Ad esempio, il percorso della cartella in cui deve essere creata la risorsa è `/assets/folder`. La richiesta POST è `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 Il tipo di contenuto del corpo della richiesta deve essere costituito dai dati del `application/x-www-form-urlencoded` modulo, contenente i campi seguenti:
 
@@ -61,7 +57,7 @@ Il tipo di contenuto del corpo della richiesta deve essere costituito dai dati d
 
 Per avviare il caricamento di più file binari è possibile utilizzare una singola richiesta, purché ciascun file binario contenga i campi richiesti. In caso di esito positivo, la richiesta risponde con un codice di `201` stato e un corpo contenente dati JSON nel seguente formato:
 
-```
+```json
 {
     "completeURI": "(string)",
     "folderPath": (string)",
@@ -90,7 +86,7 @@ Per avviare il caricamento di più file binari è possibile utilizzare una singo
 
 ### Carica binario {#upload-binary}
 
-L’output di avvio di un caricamento includerà uno o più valori URI di caricamento. Se viene fornito più di un URI, è responsabilità del client &quot;dividere&quot; il binario in parti e POST ciascuna parte, in ordine, a ciascun URI, in ordine. Tutti gli URI devono essere utilizzati e ogni parte deve essere maggiore della dimensione minima e inferiore alla dimensione massima specificata nella risposta di avvio. Tali richieste saranno affrontate da nodi edge CDN per accelerare il caricamento dei file binari.
+L’output di avvio di un caricamento includerà uno o più valori URI di caricamento. Se viene fornito più di un URI, è responsabilità del client &quot;dividere&quot; il binario in parti e POST ciascuna parte, in ordine, in ogni URI, in ordine. Tutti gli URI devono essere utilizzati e ogni parte deve essere maggiore della dimensione minima e inferiore alla dimensione massima specificata nella risposta di avvio. Tali richieste saranno affrontate da nodi edge CDN per accelerare il caricamento dei file binari.
 
 Un modo potenziale per ottenere questo risultato è calcolare la dimensione della parte in base al numero di URI di caricamento forniti dall&#39;API. Ad esempio, se la dimensione totale del binario è 20.000 byte e il numero di URI di caricamento è 2:
 
@@ -102,7 +98,7 @@ In caso di esito positivo, il server risponde a ogni richiesta con un codice di 
 
 ### Caricamento completo {#complete-upload}
 
-Dopo aver caricato tutte le parti di un file binario, inviate una richiesta POST HTTP all’URI completo fornito dai dati di avvio. Il tipo di contenuto del corpo della richiesta deve essere costituito dai dati del `application/x-www-form-urlencoded` modulo, contenente i campi seguenti.
+Dopo aver caricato tutte le parti di un file binario, inviate una richiesta di POST HTTP all’URI completo fornito dai dati di avvio. Il tipo di contenuto del corpo della richiesta deve essere costituito dai dati del `application/x-www-form-urlencoded` modulo, contenente i campi seguenti.
 
 | espandibili | Tipo | Obbligatorio o no | Descrizione |
 |---|---|---|---|
@@ -125,7 +121,7 @@ In caso di esito positivo, il server risponde con un codice di `200` stato.
 
 ### Libreria di caricamento open-source {#open-source-upload-library}
 
-Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e strumenti di caricamento personalizzati, Adobe fornisce librerie e strumenti open source come punti di partenza:
+Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e strumenti di caricamento personalizzati,  Adobe fornisce librerie e strumenti open source come punto di partenza:
 
 * [Libreria di caricamento aem open-source](https://github.com/adobe/aem-upload)
 * [Open-source, strumento da riga di comando](https://github.com/adobe/aio-cli-plugin-aem)
@@ -134,9 +130,9 @@ Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e 
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Ad  Adobe Experience Manager come Cloud Service sono supportate solo le nuove API di caricamento. Le API  Adobe Experience Manager 6.5 sono obsolete. I metodi relativi al caricamento o all&#39;aggiornamento di risorse o rappresentazioni (qualsiasi caricamento binario) sono obsoleti nelle seguenti API:
+Per Adobe Experience Manager come Cloud Service sono supportate solo le nuove API di caricamento. Le API di Adobe Experience Manager 6.5 sono obsolete. I metodi relativi al caricamento o all&#39;aggiornamento di risorse o rappresentazioni (qualsiasi caricamento binario) sono obsoleti nelle seguenti API:
 
-* [API HTTP AEM Assets](mac-api-assets.md)
+* [AEM Assets HTTP API](mac-api-assets.md)
 * `AssetManager` API Java, come `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
@@ -146,13 +142,13 @@ Ad  Adobe Experience Manager come Cloud Service sono supportate solo le nuove AP
 
 ## Flussi di lavoro di elaborazione e post-elaborazione delle risorse {#post-processing-workflows}
 
-In  Experience Manager, l’elaborazione delle risorse è basata sulla configurazione **[!UICONTROL Profili]** elaborazione che utilizza i microservizi [delle](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)risorse. L&#39;elaborazione non richiede estensioni per sviluppatori.
+ Experience Manager, l’elaborazione delle risorse si basa sulla configurazione **[!UICONTROL Profili]** elaborazione che utilizza i microservizi [delle](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)risorse. L&#39;elaborazione non richiede estensioni per sviluppatori.
 
 Per la configurazione del flusso di lavoro di post-elaborazione, utilizzate i flussi di lavoro standard con estensioni con passaggi personalizzati.
 
 ## Supporto dei passaggi del flusso di lavoro nel flusso di lavoro di post-elaborazione {#post-processing-workflows-steps}
 
-I clienti che effettuano l’aggiornamento ad  Experience Manager come Cloud Service dalle versioni precedenti di  Experience Manager possono utilizzare i microservizi di risorse per l’elaborazione delle risorse. I microservizi delle risorse nativi nel cloud sono molto più semplici da configurare e utilizzare. Alcuni passaggi del flusso di lavoro utilizzati nel flusso di lavoro [!UICONTROL DAM Update Asset] nella versione precedente non sono supportati.
+I clienti che eseguono l’aggiornamento al Experience Manager  come Cloud Service dalle versioni precedenti di  Experience Manager possono utilizzare i microservizi delle risorse per l’elaborazione delle risorse. I microservizi delle risorse nativi nel cloud sono molto più semplici da configurare e utilizzare. Alcuni passaggi del flusso di lavoro utilizzati nel flusso di lavoro [!UICONTROL DAM Update Asset] nella versione precedente non sono supportati.
 
 I seguenti passaggi del flusso di lavoro sono supportati in  Experience Manager come Cloud Service.
 
