@@ -3,10 +3,10 @@ title: Configurare e utilizzare i microservizi delle risorse per l’elaborazion
 description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2537'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +61,7 @@ I microservizi delle risorse supportano un’ampia varietà di formati di file p
 
 Alcune impostazioni predefinite sono preconfigurate per garantire la disponibilità delle rappresentazioni predefinite richieste nel  Experience Manager. La configurazione predefinita garantisce inoltre la disponibilità di operazioni di estrazione dei metadati e di estrazione del testo. Gli utenti possono iniziare a caricare o aggiornare immediatamente le risorse e per impostazione predefinita è disponibile l’elaborazione di base.
 
-Con la configurazione predefinita, è configurato solo il profilo di elaborazione di base. Tale profilo di elaborazione non è visibile nell&#39;interfaccia utente e non è possibile modificarlo. Viene sempre eseguito per elaborare le risorse caricate. Questo profilo di elaborazione predefinito garantisce che l&#39;elaborazione di base richiesta [!DNL Experience Manager] venga completata su tutte le risorse.
+Con la configurazione predefinita, è configurato solo il profilo di elaborazione di base. Tale profilo di elaborazione non è visibile nell&#39;interfaccia utente e non è possibile modificarlo. Viene sempre eseguito per elaborare le risorse caricate. Questo profilo di elaborazione predefinito garantisce che l&#39;elaborazione di base richiesta da [!DNL Experience Manager] venga completata su tutte le risorse.
 
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
@@ -110,14 +110,6 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Profilo personalizzato e casi di utilizzo {#custom-config}
 
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
-
 Supporta una serie di [!DNL Asset Compute Service] casi di utilizzo, ad esempio l&#39;elaborazione predefinita, l&#39;elaborazione  formati specifici per i Adobi come i file Photoshop e l&#39;implementazione di un&#39;elaborazione personalizzata o specifica per l&#39;organizzazione. La personalizzazione del flusso di lavoro di DAM Update Asset richiesta in passato, viene gestita automaticamente o tramite la configurazione dei profili di elaborazione. Se queste opzioni di elaborazione non soddisfano le esigenze aziendali,  Adobe consiglia di sviluppare e utilizzare [!DNL Asset Compute Service] per estendere le funzionalità predefinite. Per una panoramica, consultate [Comprendere l’estensibilità e quando utilizzarla](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
@@ -148,11 +140,11 @@ Per creare un profilo personalizzato, attenetevi alla procedura seguente:
    * Nome file di ogni rappresentazione e estensione file supportata.
    * [URL punto finale di un&#39;app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)Firefly personalizzata. L&#39;app deve provenire dalla stessa organizzazione dell&#39;account del Experience Manager .
    * Aggiungi parametri di servizio per [trasmettere informazioni o parametri aggiuntivi all&#39;applicazione](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)personalizzata.
-   * Tipi MIME inclusi ed esclusi per definire l&#39;applicabilità di un profilo.
+   * Sono inclusi ed esclusi i tipi MIME per limitare l&#39;elaborazione ad alcuni formati di file specifici.
 
    Fai clic su **[!UICONTROL Salva]**.
 
-L&#39;applicazione personalizzata ottiene tutti i file forniti se sono configurati con un profilo di elaborazione. L&#39;applicazione deve filtrare i file.
+Le applicazioni personalizzate sono app [Project Firefly](https://github.com/AdobeDocs/project-firefly) headless. L&#39;applicazione personalizzata ottiene tutti i file forniti se sono configurati con un profilo di elaborazione. L&#39;applicazione deve filtrare i file.
 
 >[!CAUTION]
 >
