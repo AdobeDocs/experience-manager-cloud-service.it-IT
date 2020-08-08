@@ -1,86 +1,90 @@
 ---
-title: Utilizzare le risorse digitali Adobe Stock nei AEM Assets
-description: Cerca, recupera, ottieni la licenza e gestisci risorse Adobe Stock in  Experience Manager. Trattate le risorse  licenza come qualsiasi altra risorsa Experience Manager.
+title: Gestire [!DNL Adobe Stock] le risorse in [!DNL Adobe Experience Manager Assets].
+description: Cercare, recuperare, ottenere licenze e [!DNL Adobe Stock] gestire risorse dall'interno [!DNL Adobe Experience Manager]. Utilizzate le risorse con licenza come qualsiasi altra risorsa digitale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: 453a8459e042f57820c10fb90f30c2016aa0f5d0
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 22%
+source-wordcount: '986'
+ht-degree: 5%
 
 ---
 
 
-# Use Adobe Stock assets in AEM Assets {#use-adobe-stock-assets-in-aem-assets}
+# Usa [!DNL Adobe Stock] risorse in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
-Le organizzazioni possono integrare il piano aziendale Adobe Stock con AEM Assets per garantire che le risorse su licenza siano ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM.
+Le organizzazioni possono integrare il piano [!DNL Adobe Stock] aziendale con [!DNL Experience Manager Assets] l&#39;obiettivo di garantire che le risorse concesse in licenza siano ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di [!DNL Experience Manager].
 
-Il servizio Adobe Stock offre a designer e aziende l’accesso a milioni di foto, immagini vettoriali, illustrazioni, video, modelli e risorse 3D di alta qualità, curate ed esenti da royalty, per qualsiasi progetto creativo. Gli utenti AEM possono trovare, visualizzare in anteprima e concedere in licenza rapidamente le risorse Adobe Stock salvate in AEM, senza uscire dall’area di lavoro di AEM.
+[!DNL Adobe Stock]Il servizio offre a designer e aziende l’accesso a milioni di foto, immagini vettoriali, illustrazioni, video, modelli e risorse 3D di alta qualità, curate ed esenti da royalty, per qualsiasi progetto creativo. [!DNL Experience Manager] gli utenti possono trovare, visualizzare in anteprima e concedere in licenza [!DNL Adobe Stock] le risorse salvate in [!DNL Experience Manager], senza uscire dall&#39; [!DNL Experience Manager] interfaccia.
 
-## Integrazione di AEM e Adobe Stock {#integrate-aem-and-adobe-stock}
+## Integrare [!DNL Experience Manager] e [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
-Per consentire la comunicazione tra AEM e Adobe Stock, crea una configurazione IMS e una configurazione Adobe Stock in AEM.
+Per consentire la comunicazione tra [!DNL Experience Manager] e [!DNL Adobe Stock], create una configurazione IMS e una [!DNL Adobe Stock] configurazione in [!DNL Experience Manager].
 
 >[!NOTE]
 >
->L’integrazione può essere eseguita solo dagli amministratori AEM e  amministratori Admin Console di un’organizzazione, in quanto richiede privilegi di amministratore.
+>Solo [!DNL Experience Manager] gli amministratori e [!DNL Admin Console] gli amministratori di un&#39;organizzazione possono eseguire l&#39;integrazione in quanto richiede privilegi di amministratore.
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. Fai clic sul logo AEM. Seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Configurazioni Adobe IMS]**. Fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Soluzione cloud]** > **[!UICONTROL Adobe Stock]**.
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Soluzione cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Riutilizzate un certificato esistente o selezionate **[!UICONTROL Crea nuovo certificato]**.
 1. Fai clic su **[!UICONTROL Crea certificato]**. Una volta creata, scaricate la chiave pubblica. Fai clic su **[!UICONTROL Avanti]**.
-1. Inserisci i valori appropriati nei campi **[!UICONTROL Titolo]**, **[!UICONTROL Server autorizzazioni]**, **[!UICONTROL Chiave API]**, **[!UICONTROL Segreto client]** e **[!UICONTROL Payload]**. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
-1. Aggiungi la chiave pubblica scaricata al tuo account del servizio Adobe Developer Console.
+1. Aggiungete la chiave pubblica scaricata al vostro account di [!DNL Adobe Developer Console] servizio. Fai clic su **[!UICONTROL Avanti]**. Lasciate aperta la schermata Configurazione [!UICONTROL account tecnico IMS del Adobe] per fornire i valori a breve.
+1. Accedere [console](https://console.adobe.io)Sviluppatore di Adobe. Assicuratevi che l&#39;account disponga delle autorizzazioni di amministratore per l&#39;organizzazione per la quale è richiesta l&#39;integrazione.
+1. Fate clic su **[!UICONTROL Crea nuovo progetto]** e fate clic su **[!UICONTROL Aggiungi API]**. Selezionate **[!UICONTROL Adobe Stock]** dall&#39;elenco delle API disponibili. Selezionare [!UICONTROL OAUTH 2.0 Web]. Configurare e copiare i vari valori presentati.
+1. In [!DNL Experience Manager] provide the values in the fields titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. Per informazioni dettagliate su questi valori, consultate Avvio [rapido dell&#39;autenticazione](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)JWT.
 
-<!--
-TBD: Update this instance when AIO updates their documentation publish URL.
+<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
-### Creare la configurazione di Adobe Stock in AEM {#create-adobe-stock-configuration-in-aem}
+### Crea [!DNL Adobe Stock] configurazione in [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
 
-1. Nell’interfaccia utente di AEM, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. In the [!DNL Experience Manager], navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Fate clic su **[!UICONTROL Crea]** per creare una configurazione e associarla alla configurazione IMS esistente. Selezionate `PROD` come parametro di ambiente.
-1. Nel campo Percorso **[!UICONTROL risorse]** concesso in licenza, lasciare invariata la posizione. Non cambiare la posizione in cui memorizzare le risorse Adobe Stock.
-1. Completate la creazione aggiungendo tutte le proprietà richieste. Click **[!UICONTROL Save &amp; Close]**.
-1. Aggiungete utenti o gruppi AEM che possono ottenere la licenza per le risorse.
+1. Nel campo Percorso **[!UICONTROL risorse]** concesso in licenza, lasciare invariata la posizione. Non modificate il percorso in cui desiderate memorizzare le [!DNL Adobe Stock] risorse.
+1. Completate la creazione aggiungendo tutte le proprietà richieste. Fai clic su **[!UICONTROL Salva e chiudi]**.
+1. Aggiungete [!DNL Experience Manager] utenti o gruppi che possono ottenere la licenza per le risorse.
 
 >[!NOTE]
 >
->Se sono presenti più configurazioni Adobe Stock, seleziona la configurazione desiderata nel pannello Preferenze  utente facendo clic sul logo AEM nell’interfaccia utente di AEM.
+>Se sono presenti più [!DNL Adobe Stock] configurazioni, selezionate la configurazione desiderata nel pannello Preferenze utente. Per accedere al pannello  pagina principale del Experience Manager, fate clic sull’icona utente, quindi fate clic su Preferenze **** utente > Configurazione **** Stock.
 
-## Utilizzo e gestione di risorse Adobe Stock in AEM {#usemanage}
+## Utilizzare e gestire [!DNL Adobe Stock] le risorse in [!DNL Experience Manager] {#usemanage}
 
-Grazie a questa funzionalità, le organizzazioni possono consentire ai propri utenti di utilizzare le risorse Adobe Stock in AEM Assets. Dall’interfaccia utente di AEM, gli utenti possono effettuare ricerche nelle risorse Adobe Stock e ottenere la licenza per le risorse richieste.
+Grazie a questa funzione, le organizzazioni possono consentire agli utenti di utilizzare [!DNL Adobe Stock] le risorse in [!DNL Experience Manager Assets]. Dall’interfaccia [!DNL Experience Manager] utente, gli utenti possono cercare [!DNL Adobe Stock] le risorse e ottenere la licenza per le risorse necessarie.
 
-Una volta ottenuta la licenza di una risorsa Adobe Stock in AEM, questa può essere utilizzata e gestita come una risorsa tipica. In AEM, gli utenti possono cercare e visualizzare in anteprima le risorse; copiare e pubblicare le risorse; condividere le risorse su Brand Portal; accedere e utilizzare le risorse tramite l’app desktop AEM; e così via.
+Una volta ottenuta la licenza di una [!DNL Adobe Stock] risorsa in [!DNL Experience Manager], questa può essere utilizzata e gestita come una risorsa tipica. In [!DNL Experience Manager]potete cercare e visualizzare in anteprima le risorse; copiare e pubblicare le risorse; condividere le attività su [!DNL Brand Portal]; accedere e utilizzare le risorse tramite l’app [!DNL Experience Manager] desktop; e così via.
 
-<!--  ![Search for Adobe Stock assets and filter results from your AEM workspace](assets/adobe-stock-search-results-workspace.png)
-*Figure: Search for Adobe Stock assets and filter results from your AEM workspace* -->
+<!--  ![Search for Adobe Stock assets and filter results from your Adobe Experience Manager workspace](assets/adobe-stock-search-results-workspace.png)
 
-**A.** Cerca risorse simili a quelle di chi è fornito l’ID Adobe Stock. **B.** Cerca risorse corrispondenti alla tua selezione di forma o orientamento. **C.** Cerca uno o più dei tipi di risorse supportati **D.** Apri o comprimi il riquadro Filtri **E.** Procurati la licenza relativa e salva la risorsa selezionata in AEM **F.** Salva la risorsa in AEM applicando la filigrana **G.** Sul sito web di Adobe Stock, esplora le risorse simili a quella selezionata **H.** Visualizza le risorse selezionate sul sito web di Adobe Stock **I.** Numero di risorse selezionate proveniente dai risultati della ricerca **J.** Passaggio tra la vista a schede e la vista a elenco
+*Figure: Search for [!DNL Adobe Stock] assets and filter results from your [!DNL Experience Manager] interface.*
+
+**A.** Search assets similar to the assets whose [!DNL Adobe Stock] ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager] **F.** Save the asset in [!DNL Experience Manager] with watermark **G.** Explore assets on [!DNL Adobe Stock] website that are similar to the selected asset **H.** View the selected assets on [!DNL Adobe Stock] website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view -->
 
 ### Trovare le risorse {#find-assets}
 
-Gli utenti AEM possono cercare risorse sia in AEM che in Adobe Stock. Quando il percorso di ricerca non è limitato ad Adobe Stock, vengono visualizzati i risultati di ricerca di AEM e Adobe Stock.
+Gli [!DNL Experience Manager] utenti possono cercare le risorse sia in [!DNL Experience Manager] che [!DNL Adobe Stock]. Quando il percorso di ricerca non è limitato a [!DNL Adobe Stock], i risultati della ricerca da [!DNL Experience Manager] e [!DNL Adobe Stock] vengono visualizzati.
 
-* Per cercare le risorse Adobe Stock, fai clic su **[!UICONTROL Navigazione]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cerca in Adobe Stock]**.
+* Per cercare [!DNL Adobe Stock] le risorse, fate clic su **[!UICONTROL Navigazione]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cerca  Adobe Stock]**.
 
-* Per cercare risorse in Adobe Stock e AEM Assets, fai clic sull’icona di ricerca ![search_icon](assets/do-not-localize/search_icon.png).
+* Per cercare le risorse [!DNL Adobe Stock] e [!DNL Experience Manager Assets], fate clic su Cerca ![nella ricerca](assets/do-not-localize/search_icon.png).
 
-In alternativa, iniziate a digitare `Location: Adobe Stock` nella barra di ricerca per selezionare le risorse Adobe Stock.  AEM offre funzionalità di filtraggio avanzate sulle risorse ricercate, consentendo agli utenti di accedere rapidamente alle risorse necessarie tramite filtri, quali tipi di risorse supportate, orientamento delle immagini e stato della licenza.
+In alternativa, iniziate a digitare `Location: Adobe Stock` nella barra di ricerca per selezionare [!DNL Adobe Stock] le risorse. [!DNL Experience Manager] offre funzionalità di filtro avanzate sulle risorse ricercate, che consentono agli utenti di accedere rapidamente alle risorse necessarie tramite filtri, quali tipi di risorse supportate, orientamento delle immagini e stato della licenza.
 
 >[!NOTE]
 >
->Le risorse ricercate da Adobe Stock vengono solo visualizzate in AEM. Le risorse Adobe Stock vengono recuperate e memorizzate nell’archivio di AEM solo dopo che un utente [salva una risorsa](/help/assets/aem-assets-adobe-stock.md#saveassets) o ne [concede la licenza](/help/assets/aem-assets-adobe-stock.md#licenseassets). Le risorse già memorizzate in AEM vengono visualizzate ed evidenziate per semplificare la consultazione e l’accesso. Inoltre, tali risorse vengono salvate con alcuni metadati aggiuntivi per indicare l’origine come Adobe Stock.
+>Assets searched from [!DNL Adobe Stock] are just displayed in [!DNL Experience Manager]. [!DNL Adobe Stock] le risorse vengono recuperate e memorizzate nell’ [!DNL Experience Manager] archivio solo dopo che un utente [salva una risorsa](/help/assets/aem-assets-adobe-stock.md#saveassets) o [le licenze e salva una risorsa](/help/assets/aem-assets-adobe-stock.md#licenseassets). Assets that are already stored in [!DNL Experience Manager] are displayed and highlighted for ease of reference and access. Also, the [!DNL Stock] assets are saved with some additional metadata to indicate the source as [!DNL Stock].
 
-![Filtri di ricerca in AEM e risorse Adobe Stock evidenziate nei risultati](assets/aem-search-filters2.jpg)di ricerca *Figura: Filtri di ricerca in AEM e risorse Adobe Stock evidenziate nei risultati di ricerca*
+![Filtri di ricerca in  Experience Manager ed evidenziati  risorse Adobe Stock nei risultati di ricerca](assets/aem-search-filters2.jpg)
+
+*Figura: Consente di cercare i filtri nelle risorse[!DNL Experience Manager]evidenziate[!DNL Adobe Stock]nei risultati della ricerca.*
 
 ### Salvate e visualizzate le risorse richieste {#saveassets}
 
-Selezionate una risorsa da salvare in AEM. Fate clic su Salva nella barra degli strumenti nella parte superiore e fornite il nome e la posizione della risorsa. Le risorse senza licenza vengono salvate localmente con una filigrana.
+Selezionate una risorsa da salvare in [!DNL Experience Manager]. Fate clic su [!UICONTROL Salva] nella barra degli strumenti nella parte superiore e fornite il nome e la posizione della risorsa. Le risorse senza licenza vengono salvate localmente con una filigrana.
 
-La prossima volta che ricercate le risorse, queste vengono evidenziate con un contrassegno, per indicare che sono disponibili in AEM Assets.
+La prossima volta che ricercate le risorse, queste vengono evidenziate con un contrassegno per indicare che sono disponibili in [!DNL Experience Manager Assets].
 
 >[!NOTE]
 >
@@ -88,36 +92,33 @@ La prossima volta che ricercate le risorse, queste vengono evidenziate con un co
 
 ### Risorse di licenza {#licenseassets}
 
-Gli utenti possono concedere in licenza le risorse Adobe Stock utilizzando la quota del piano Adobe Stock Enterprise. Quando si concede la licenza per una risorsa, questa viene salvata senza filigrana ed è disponibile per la ricerca e l’utilizzo nei AEM Assets.
+Gli utenti possono concedere in licenza [!DNL Adobe Stock] le risorse utilizzando la quota del proprio piano [!DNL Adobe Stock] enterprise. Quando acquistate una licenza, la risorsa viene salvata senza filigrana ed è disponibile per la ricerca e l’utilizzo in [!DNL Experience Manager Assets].
 
-![Finestra di dialogo per ottenere la licenza e salvare le risorse Adobe Stock in AEM Assets](assets/aem-stock_licenseandsave.jpg)*Figura: Finestra di dialogo per ottenere la licenza e salvare le risorse Adobe Stock in AEM Assets*
+![Finestra di dialogo per ottenere la licenza e salvare  risorse Adobe Stock in  risorse Experience Manager](assets/aem-stock_licenseandsave.jpg)
+
+*Figura: Finestra di dialogo per ottenere la licenza e salvare[!DNL Adobe Stock]le risorse in[!DNL Experience Manager Assets].*
 
 ### Accesso a metadati e proprietà delle risorse {#access-metadata-and-asset-properties}
 
-Gli utenti possono accedere ai metadati e visualizzarne l’anteprima, comprese le proprietà dei metadati Adobe Stock per le risorse salvate in AEM, e aggiungere riferimenti **[!UICONTROL di]** licenza per una risorsa. Tuttavia, gli aggiornamenti al riferimento della licenza non vengono sincronizzati tra il sito Web AEM e Adobe Stock.
+Gli utenti possono accedere ai metadati e visualizzarne l’anteprima, comprese le proprietà dei [!DNL Adobe Stock] metadati per le risorse salvate in [!DNL Experience Manager], e aggiungere riferimenti **[!UICONTROL di]** licenza per una risorsa. Tuttavia, gli aggiornamenti al riferimento della licenza non vengono sincronizzati tra [!DNL Experience Manager] e il [!DNL Adobe Stock] sito Web.
 
 Gli utenti possono visualizzare le proprietà delle risorse con licenza e senza licenza.
 
-![Visualizzare e accedere ai metadati e ai riferimenti di licenza delle risorse](assets/metadata_properties.jpg)salvate *Figura: Visualizzare e accedere ai metadati e ai riferimenti di licenza delle risorse salvate*
+![Visualizzare e accedere ai metadati e ai riferimenti di licenza delle risorse salvate](assets/metadata_properties.jpg)
+
+*Figura: Visualizzare e accedere ai metadati e ai riferimenti di licenza delle risorse salvate.*
 
 ## Limitazioni note {#known-limitations}
 
-### L&#39;avviso dell&#39;immagine editoriale non viene visualizzato
+* **L&#39;avviso dell&#39;immagine editoriale non viene visualizzato**: Quando si concede la licenza a un’immagine, gli utenti non possono verificare se un’immagine è solo di uso editoriale. Per evitare possibili abusi, gli amministratori possono disattivare l’accesso alle risorse editoriali dal Admin Console .
 
-Quando si concede la licenza a un’immagine, gli utenti non possono verificare se un’immagine è solo di uso editoriale. Per evitare possibili abusi, gli amministratori possono disattivare l’accesso alle risorse editoriali dall’Admin Console .
+* **Viene visualizzato** un tipo di licenza errato: È possibile che per una risorsa venga visualizzato un tipo di licenza errato [!DNL Experience Manager] . Gli utenti possono accedere al [!DNL Adobe Stock] sito Web per visualizzare il tipo di licenza.
 
-### Tipo di licenza errato visualizzato
+* **I campi e i metadati di riferimento non sono sincronizzati**: Quando un utente aggiorna un campo di riferimento della licenza, le informazioni di riferimento della licenza vengono aggiornate nel [!DNL Experience Manager] sito Web, ma non nel [!DNL Adobe Stock] sito Web. Analogamente, se l’utente aggiorna i campi di riferimento sul [!DNL Adobe Stock] sito Web, gli aggiornamenti non vengono sincronizzati in [!DNL Experience Manager].
 
-È possibile che in AEM venga visualizzato un tipo di licenza non corretto per una risorsa. Gli utenti possono accedere al sito Web di Adobe Stock per vedere il tipo di licenza.
+>[!MORELIKETHIS]
+>
+>* [Esercitazione video sull’uso  risorse Adobe Stock con  risorse Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [del piano aziendale Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Domande frequenti su  Adobe Stock](https://helpx.adobe.com/stock/faq.html)
 
-### I campi e i metadati di riferimento non sono sincronizzati
-
-Quando un utente aggiorna un campo di riferimento della licenza, le informazioni di riferimento della licenza vengono aggiornate in AEM ma non nel sito Web di Adobe Stock. Analogamente, se l’utente aggiorna i campi di riferimento nel sito Web di Adobe Stock, gli aggiornamenti non vengono sincronizzati in AEM.
-
-## Related resources {#related-resources}
-
-[Esercitazione video sull’utilizzo delle risorse Adobe Stock con AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
-
-[Guida al piano aziendale Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
-
-[Domande frequenti su Adobe Stock](https://helpx.adobe.com/stock/faq.html)
