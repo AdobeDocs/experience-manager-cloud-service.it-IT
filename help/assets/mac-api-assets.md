@@ -3,9 +3,9 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b96e976b5a2aaff90d7317360b0325dcae21ff26
+source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1476'
 ht-degree: 1%
 
 ---
@@ -28,13 +28,13 @@ Dopo la [!UICONTROL disattivazione], una risorsa e le relative rappresentazioni 
 
 >[!NOTE]
 >
->Tutte le chiamate API relative al caricamento o all&#39;aggiornamento di risorse o file binari in generale (come le rappresentazioni) sono state eliminate per AEM come distribuzione di servizio cloud. Per caricare i file binari, utilizzate le API di caricamento binario [diretto](developer-reference-material-apis.md#asset-upload-technical) .
+>Tutte le chiamate API relative al caricamento o all&#39;aggiornamento delle risorse o dei file binari in generale (come le rappresentazioni) vengono disattivate per AEM come distribuzione di Cloud Service. Per caricare i file binari, utilizzate le API di caricamento binario [diretto](developer-reference-material-apis.md#asset-upload-technical) .
 
 ## Frammenti di contenuto {#content-fragments}
 
 Un frammento [di](/help/assets/content-fragments/content-fragments.md) contenuto è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, come testi, numeri, date, ecc. Poiché le `standard` risorse presentano diverse differenze (ad esempio immagini o documenti), per la gestione dei frammenti di contenuto si applicano alcune regole aggiuntive.
 
-Per ulteriori informazioni, consulta Supporto per i frammenti di [contenuto nell’API](/help/assets/assets-api-content-fragments.md)HTTP Experience Manager Assets.
+Per ulteriori informazioni, consulta Supporto per i frammenti di [contenuto nell’API](/help/assets/assets-api-content-fragments.md)HTTP  Experience Manager Assets.
 
 ## Dati, modello {#data-model}
 
@@ -68,16 +68,18 @@ Le cartelle sono come directory nei file system tradizionali. Sono contenitori p
 In [!DNL Experience Manager] una risorsa sono contenuti i seguenti elementi:
 
 * Proprietà e metadati della risorsa.
-* Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da file PDF o Adobe InDesign.
+* Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da file PDF o  Adobe InDesign.
 * Commenti facoltativi.
 
-Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto dei frammenti di [contenuto nell’API](/help/assets/assets-api-content-fragments.md)HTTP Experience Manager Assets.
+Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto frammenti di [contenuto in  API](/help/assets/assets-api-content-fragments.md)HTTP delle risorse di Experience Manager.
 
 In [!DNL Experience Manager] una cartella sono presenti i seguenti componenti:
 
 * Entità: Gli elementi secondari delle risorse sono le relative rappresentazioni.
 * Proprietà.
 * Collegamenti.
+
+## Funzioni disponibili {#available-features}
 
 L&#39;API HTTP Assets include le seguenti funzionalità:
 
