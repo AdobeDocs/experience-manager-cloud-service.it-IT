@@ -2,7 +2,7 @@
 title: Comprendere i risultati del test - Cloud Services
 description: Comprendere i risultati dei test - Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 # Risultati dei test {#understand-test-results}
 
 Le esecuzioni della pipeline di Cloud Manager per Cloud Services supportano l’esecuzione di test sull’ambiente stage. Ciò è in contrasto con i test eseguiti durante il passaggio Build e Unit Testing che vengono eseguiti offline, senza l&#39;accesso ad alcun ambiente AEM in esecuzione.
-Esistono due tipi di test eseguiti in questo contesto:
+Esistono tre tipi di test eseguiti in questo contesto:
 * Test scritti dal cliente
 *  test scritti dal Adobe
 * Strumento open source alimentato da Faro di Google
