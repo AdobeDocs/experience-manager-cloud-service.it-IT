@@ -1,11 +1,11 @@
 ---
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
-translation-type: ht
-source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: ht
-source-wordcount: '1538'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+workflow-type: tm+mt
+source-wordcount: '1675'
+ht-degree: 88%
 
 ---
 
@@ -62,13 +62,21 @@ Le proprietà sono distribuite su più schede.
 
 * **Ora di attivazione**
 
-   * Data e ora in cui verrà attivata la pagina pubblicata. Dopo la pubblicazione, la pagina rimarrà inattiva fino alla data e all’ora specificate. 
-   * Lascia vuoti questi campi per le pagine da pubblicare immediatamente (lo scenario più consueto).
+   * Data e ora in cui la pagina pubblicata verrà resa visibile (riproduzione) nell’ambiente di pubblicazione. La pagina deve essere pubblicata, manualmente o mediante replica automatica preconfigurata.
+
+      >[!NOTE]
+      >
+      > Per informazioni dettagliate su come configurare la replica automatica correlata, consultate [Ora di attivazione e disattivazione - Configurazione](/help/operations/replication.md#on-and-off-times-trigger-configuration) trigger.
+
+      * Se già [pubblicata (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , la pagina rimarrà inattiva (nascosta) fino al rendering alla data e all’ora specificate.
+      * Se non viene pubblicata e configurata per la replica automatica, la pagina viene automaticamente pubblicata, quindi riprodotta al momento specificato.
+      * Se non viene pubblicata e non è configurata per la replica automatica, la pagina non verrà pubblicata automaticamente, pertanto verrà visualizzato un messaggio 404 quando viene eseguito un tentativo di accesso alla pagina.
+   * Lasciate vuoti questi campi (**Ora** di attivazione e Ora **di** disattivazione) per le pagine da pubblicare immediatamente e disponibili nell’ambiente di pubblicazione finché non vengono disattivati (lo scenario più consueto).
 
 * **Ora di disattivazione**
 
-   * Data e ora in cui verrà disattivata la pagina pubblicata.
-   * Lascia questi campi vuoti per un’azione immediata.
+   * Parallelamente a **Ora** di attivazione, viene definito l’ora in cui la pagina pubblicata verrà nascosta nell’ambiente di pubblicazione.
+   * Lasciate vuoti questi campi (**Ora** di attivazione e Ora **di** disattivazione) per le pagine da pubblicare immediatamente e disponibili nell’ambiente di pubblicazione finché non vengono disattivati (lo scenario più consueto).
 
 * **URL personalizzato**
 
