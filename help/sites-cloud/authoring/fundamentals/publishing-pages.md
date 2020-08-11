@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Come pubblicare e annullare la pubblicazione di pagine con AEM
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 100%
+source-wordcount: '1717'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Puoi anche pubblicare o annullare la pubblicazione di una pagina immediatamente 
 
 ## Terminologia {#terminology}
 
-Quando lavori con AEM, potresti notare diversi termini relativi alla pubblicazione.
+Quando lavorate con Adobe Experience Manager (AEM) come Cloud Service, potete trovare termini diversi relativi alla pubblicazione.
 
 * **Pubblicare/Annullare la pubblicazione**
    * Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
@@ -53,6 +53,10 @@ A seconda della tua posizione, puoi pubblicare:
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 -->
 
+>[!NOTE]
+>
+> Per ulteriori possibilità, vedere **Ora** di attivazione e **Ora** di disattivazione nella scheda [Base di Proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+
 ### Pubblicazione dall’editor {#publishing-from-the-editor}
 
 Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
@@ -67,6 +71,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
    * Se la pagina include riferimenti da pubblicare, questi saranno elencati nella procedura guidata di **Pubblicazione**, dove è possibile:
       * Specifica le risorse, i tag ecc. da pubblicare insieme alla pagina, quindi seleziona **Pubblica** per completare il processo.
       * Seleziona **Annulla** per annullare l’azione.
+
    ![Pubblicazione di riferimenti alla pagina](/help/sites-cloud/authoring/assets/publishing-references.png)
 
 1. Se selezioni l’opzione **Pubblica**, la pagina verrà replicata nell’ambiente di pubblicazione. Nell’editor di pagine verrà visualizzato un banner informativo che conferma l’azione di pubblicazione.
@@ -122,6 +127,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    * Scegliere di pubblicare le pagine selezionate o annullarne la pubblicazione.
    * Scegliere di eseguire l’azione immediatamente o in un secondo momento.
+
    Con Pubblica più tardi viene avviato un flusso di lavoro per attivare le pagine selezionate alla data e all’ora specificate. In modo analogo, se si sceglie di annullare la pubblicazione in un secondo momento, verrà attivato un flusso di lavoro per disattivare le pagine selezionate alla data e all’ora specificate.
 
    Per annullare un’attività di pubblicazione, anche programmata per un momento successivo, accedi alla console Flusso di lavoro e interrompi il flusso di lavoro corrispondente. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
@@ -138,13 +144,14 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    Facendo clic sul pulsante Aggiungi contenuto si avvia il [browser percorsi](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser), che consente di selezionare contenuti.
 
-   Seleziona le pagine desiderate e fai clic su **Seleziona** per aggiungere contenuti alla procedura guidata o su **Annulla** per annullare la selezione e tornare alla procedura guidata.
+   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
 
    Nella procedura guidata puoi selezionare un elemento nell’elenco per configurare ulteriori opzioni, come:
 
    * Includere gli elementi figlio.
    * Rimuoverlo dalla selezione.
    * Gestire i relativi riferimenti pubblicati.
+
    ![Selezione pagine di Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
    Facendo clic su **Includi elementi figlio** viene visualizzata una finestra di dialogo che consente di includere:
@@ -152,6 +159,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
    * Solo gli elementi figli di primo livello.
    * Solo pagine modificate.
    * Solo pagine già pubblicate.
+
    Fai clic su **Aggiungi** per aggiungere le pagine figlio nell’elenco delle pagine da pubblicare o di cui annullare la pubblicazione, in base alle opzioni selezionate. Fai clic su **Annulla** per annullare la selezione e tornare alla procedura guidata.
 
    ![Inclusione di elementi figlio in Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-include-children.png)
@@ -187,10 +195,12 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    * Definire il titolo del flusso di lavoro.
    * Mantenere il pacchetto del flusso di lavoro, a condizione che il flusso di lavoro sia dotato di supporto per più risorse.
+
    <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     -->
 
    * Definire un titolo del pacchetto del flusso di lavoro se è stata selezionata l’opzione per mantenere il pacchetto del flusso di lavoro.
+
    Fai clic su **Pubblica** o **Pubblica più tardi** per completare la pubblicazione.
 
 ## Annullamento della pubblicazione delle pagine {#unpublishing-pages}
@@ -237,6 +247,7 @@ Puoi utilizzare l’opzione [Gestisci pubblicazione](#manage-publication) sulla 
 
    * Solo gli elementi figli di primo livello
    * Solo pagine già pubblicate
+
    Queste opzioni sono selezionate per impostazione predefinita, pertanto dovrai ricordarti di deselezionarle. Fai clic su **Aggiungi** per confermare e aggiungere il contenuto alla pubblicazione o all’annullamento della pubblicazione.
 
    ![Inclusione di elementi figlio durante l’annullamento della pubblicazione](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
