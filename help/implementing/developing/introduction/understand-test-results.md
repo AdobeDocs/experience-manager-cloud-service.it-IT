@@ -2,10 +2,10 @@
 title: Comprendere i risultati del test - Cloud Services
 description: Comprendere i risultati dei test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 4%
+source-wordcount: '1578'
+ht-degree: 3%
 
 ---
 
@@ -13,9 +13,17 @@ ht-degree: 4%
 # Risultati dei test {#understand-test-results}
 
 Le esecuzioni della pipeline di Cloud Manager per Cloud Services supportano l’esecuzione di test sull’ambiente stage. Ciò è in contrasto con i test eseguiti durante il passaggio Build e Unit Testing che vengono eseguiti offline, senza l&#39;accesso ad alcun ambiente AEM in esecuzione.
-Esistono tre tipi di test eseguiti in questo contesto:
-* Test scritti dal cliente
-*  test scritti dal Adobe
+
+Sono disponibili tre grandi categorie di test supportati da Cloud Manager per pipeline di Cloud Services:
+
+1. [Verifica della qualità del codice](#code-quality-testing)
+1. [Test funzionale](#functional-testing)
+1. [Verifica del contenuto](#content-audit-testing)
+
+Questi test possono essere:
+
+* Scritto dal cliente
+*  scritto in Adobe
 * Strumento open source alimentato da Faro di Google
 
    >[!NOTE]
@@ -82,7 +90,31 @@ Quindi la soluzione corretta è rimuovere la password hardcoded.
 >
 >Sebbene sia buona norma rendere l’ `@SuppressWarnings` annotazione il più possibile specifica, ovvero annotare solo l’istruzione o il blocco specifico che causa il problema, è possibile inserire delle annotazioni a livello di classe.
 
-## Scrittura di test funzionali {#writing-functional-tests}
+## Test funzionale {#functional-testing}
+
+Il test funzionale è suddiviso in due tipi:
+
+* Test funzionale del prodotto
+* Test funzionale personalizzato
+
+### Test funzionale del prodotto {#product-functional-testing}
+
+I test funzionali di prodotto sono una serie di test di integrazione HTTP (IT) stabili relativi all’authoring e alla replica, che impediscono la distribuzione delle modifiche apportate dal cliente al codice dell’applicazione in caso di interruzione delle funzionalità di base in AEM.
+Vengono eseguiti automaticamente ogni volta che un cliente distribuisce nuovo codice a Cloud Manager.
+
+Il passaggio di test funzionale del prodotto nella pipeline è sempre presente e non può essere ignorato. Questo passaggio viene eseguito immediatamente dopo la distribuzione dell&#39;area di visualizzazione.
+
+### Test funzionale personalizzato {#custom-functional-testing}
+
+Il passaggio di test funzionale personalizzato nella pipeline è sempre presente e non può essere ignorato.
+
+Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita.
+
+>[!NOTE]
+>Il pulsante **Download Log (Scarica registro)** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Tali registri non includono i registri del processo AEM runtime effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) .
+
+
+#### Scrittura di test funzionali {#writing-functional-tests}
 
 I test funzionali scritti dal cliente devono essere confezionati come file JAR separato prodotto dalla stessa build Maven degli artefatti da distribuire a AEM. Generalmente questo sarebbe un modulo Maven separato. Il file JAR risultante deve contenere tutte le dipendenze richieste e generalmente viene creato utilizzando il plug-in maven-assembly utilizzando il descrittore jar-with-dependencies.
 
@@ -124,15 +156,6 @@ All&#39;interno di questo file JAR, i nomi delle classi dei test effettivi da es
 Ad esempio, una classe denominata `com.myco.tests.aem.ExampleIT` viene eseguita ma non viene `com.myco.tests.aem.ExampleTest` eseguita una classe denominata.
 
 Le classi di test devono essere normali test JUnit. L&#39;infrastruttura di test è progettata e configurata per essere compatibile con le convenzioni utilizzate dalla libreria di test dei client Aem-testing. Gli sviluppatori sono invitati a utilizzare questa libreria e a seguire le procedure ottimali. Per ulteriori informazioni, consultate Collegamento [](https://github.com/adobe/aem-testing-clients) Git.
-
-## Test funzionale personalizzato {#custom-functional-test}
-
-Il passaggio di test funzionale personalizzato nella pipeline è sempre presente e non può essere ignorato.
-
-Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita. Questo passaggio viene eseguito immediatamente dopo la distribuzione dell’area di visualizzazione.
-
->[!NOTE]
->Il pulsante **Download Log (Scarica registro)** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Tali registri non includono i registri del processo AEM runtime effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) .
 
 ## Verifica del contenuto {#content-audit-testing}
 
