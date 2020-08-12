@@ -2,10 +2,10 @@
 title: Distribuzione di risorse Dynamic Media
 description: Scopri come distribuire risorse multimediali dinamiche
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: ea6a1bddaab6819d1f89268ceba3c4d4981729a2
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 17%
+source-wordcount: '315'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ La modalità di distribuzione delle risorse multimediali dinamiche (video e imma
 Con l’elemento multimediale dinamico hai a disposizione diverse opzioni:
 
 * Se il sito web è ospitato su AEM, allora è necessario aggiungere le risorse dell’elemento multimediale dinamico direttamente sulla pagina.
-* Se il sito Web non è su AEM, potete scegliere tra:
+* Se il sito Web non è AEM, potete scegliere tra:
 
    * Incorporamento del video o dell’immagine nel sito Web.
    * Collegare gli URL all’applicazione Web. Usate il collegamento per distribuire un lettore video come finestra a comparsa o modale.
@@ -35,7 +35,8 @@ Per ulteriori informazioni, consulta i seguenti argomenti:
 * [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Distribuzione di immagini ottimizzate per un sito reattivo](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2 Distribuzione dei contenuti](/help/assets/dynamic-media/http2faq.md)
-* [Annullare la validità di contenuti CDN memorizzati nella cache](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
+* [Annullamento della validità della cache CDN tramite Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [Annullamento della validità della cache CDN tramite Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [Utilizzo dei set di regole per trasformare gli URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## Distribuzione HTTP/2 di risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
