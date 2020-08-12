@@ -2,9 +2,9 @@
 title: Distribuzione del codice - Cloud Services
 description: Distribuzione del codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '986'
 ht-degree: 3%
 
 ---
@@ -51,10 +51,10 @@ Dopo aver configurato la **pipeline** (archivio, ambiente e ambiente di test), �
    La **prova della fase** prevede i seguenti passaggi:
 
    * Test funzionale del prodotto: Le esecuzioni della pipeline di Cloud Manager supporteranno l&#39;esecuzione di test che vengono eseguiti nell&#39;ambiente del passaggio.
-Per informazioni dettagliate sul processo di test, consultate Test [delle funzionalità](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) del prodotto.
+Per ulteriori informazioni, consulta Test [delle funzionalità del](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) prodotto.
 
    * Test funzionale personalizzato: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita.\
-      Per informazioni dettagliate sul processo di test, consultate Test [funzionale](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) personalizzato.
+      Per ulteriori informazioni, consultate Test [funzionale](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) personalizzato.
 
    * Controllo contenuto: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Quando viene eseguita una pipeline di produzione, viene inclusa una fase di controllo del contenuto dopo il test funzionale personalizzato che eseguirà i controlli. Le pagine configurate verranno inviate al servizio e valutate. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e la modifica tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se esiste una regressione che verrà introdotta con la distribuzione corrente.
 Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) di Content Audit.
