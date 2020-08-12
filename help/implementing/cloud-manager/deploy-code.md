@@ -2,9 +2,9 @@
 title: Distribuzione del codice - Cloud Services
 description: Distribuzione del codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '983'
 ht-degree: 3%
 
 ---
@@ -42,8 +42,8 @@ Dopo aver configurato la **pipeline** (archivio, ambiente e ambiente di test), �
    La **distribuzione della fase** prevede i seguenti passaggi:
 
    * Convalida: Questo passaggio assicura che la pipeline sia configurata per utilizzare le risorse attualmente disponibili, ad esempio che il ramo configurato esiste, gli ambienti sono disponibili.
-   * Build e unit test: Questo passaggio esegue un processo di compilazione containerizzato. Consultate [Creare un progetto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) applicazione AEM per informazioni dettagliate sull&#39;ambiente di creazione.
-   * Scansione del codice: Questo passaggio valuta la qualità del codice dell’applicazione. Consultate [Comprendere i risultati](/help/implementing/developing/introduction/understand-test-results.md) del test per informazioni dettagliate sul processo di test.
+   * Build e unit test: Questo passaggio esegue un processo di compilazione containerizzato. Per informazioni dettagliate sull&#39;ambiente di [generazione, consultate Dettagli](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) sull&#39;ambiente di generazione.
+   * Scansione del codice: Questo passaggio valuta la qualità del codice dell’applicazione. Per informazioni dettagliate sul processo di verifica, consultate Test [della qualità del](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) codice.
    * Genera immagini: Questo passaggio include un file di registro dal processo utilizzato per creare le immagini. Questo processo è responsabile della trasformazione dei pacchetti di contenuti e dispatcher prodotti dalla fase di creazione in immagini Docker e configurazione Kubernetes.
    * Distribuisci nello stage
 
