@@ -1,29 +1,29 @@
 ---
-title: Gestione delle risorse digitali in Experience Manager
+title: Gestione delle risorse digitali in  Experience Manager
 description: Scopri i diversi metodi di gestione e modifica delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
+source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
 workflow-type: tm+mt
-source-wordcount: '4419'
-ht-degree: 12%
+source-wordcount: '4435'
+ht-degree: 13%
 
 ---
 
 
 # Manage assets {#manage-assets}
 
-Questo articolo descrive come gestire e modificare le risorse in Risorse Adobe Experience Manager. Per gestire i frammenti di contenuto, consulta Risorse relative ai frammenti di [contenuto](content-fragments/content-fragments.md) .
+Questo articolo descrive come gestire e modificare le risorse in Adobe Experience Manager Assets. Per gestire i frammenti di contenuto, consulta Risorse relative ai frammenti di [contenuto](content-fragments/content-fragments.md) .
 
 ## Creare le cartelle {#creating-folders}
 
-Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagini, potete creare delle cartelle per mantenerle unite. Potete usare le cartelle per classificare e organizzare le risorse. Risorse AEM non richiede l’organizzazione di risorse in cartelle per migliorare il funzionamento.
+Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagini, potete creare delle cartelle per mantenerle unite. Potete usare le cartelle per classificare e organizzare le risorse.  AEM Assets non richiede l’organizzazione di risorse in cartelle per migliorare il funzionamento.
 
 >[!NOTE]
 >
->* La condivisione di una cartella di risorse di tipo `sling:OrderedFolder`non è supportata quando si condivide con Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
->* Experience Manager non consente l&#39;uso di `subassets` parole come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte
+>* La condivisione di una cartella di risorse di tipo `sling:OrderedFolder`non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
+>*  Experience Manager non consente l&#39;uso di `subassets` parole come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte
 
 
 1. Andate alla posizione nella cartella delle risorse digitali in cui desiderate creare una nuova cartella. Nel menu, fate clic su **[!UICONTROL Crea]**. Selezionate **[!UICONTROL Nuova cartella]**.
@@ -37,17 +37,26 @@ I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
 ## Upload assets {#uploading-assets}
 
-Consultate [Aggiunta di risorse digitali a Experience Manager](add-assets.md).
+Consultate [Aggiungere risorse digitali a  Experience Manager](add-assets.md).
 
 ## Rilevare risorse duplicate {#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Se un utente DAM carica una o più risorse già presenti nella directory archivio, [!DNL Experience Manager] ne rileva la duplicazione e ne informa l’utente. Per impostazione predefinita, il rilevamento di duplicati è disabilitato in quanto può avere un impatto sulle prestazioni a seconda delle dimensioni dell&#39;archivio e del numero di risorse caricate. Per abilitare questa funzione, configura [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Scopri [come eseguire le configurazioni](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. Il rilevamento della duplicazione si basa sul `dam:sha1` valore univoco memorizzato in `jcr:content/metadata/dam:sha1`. Ciò significa che le risorse duplicate vengono rilevate anche se i nomi dei file sono diversi.
+Se un utente DAM carica una o più risorse già presenti nella directory archivio, [!DNL Experience Manager] ne rileva la duplicazione e ne informa l’utente. Per impostazione predefinita, il rilevamento di duplicati è disabilitato in quanto può avere un impatto sulle prestazioni a seconda delle dimensioni dell&#39;archivio e del numero di risorse caricate. Per attivare la funzione, configurate [!UICONTROL Adobe AEM Rilevatore]duplicazione risorse cloud. Scopri [come eseguire le configurazioni](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. Il rilevamento della duplicazione si basa sul `dam:sha1` valore univoco memorizzato in `jcr:content/metadata/dam:sha1`. Ciò significa che le risorse duplicate vengono rilevate anche se i nomi dei file sono diversi.
 
 ![Rileva configurazione OSGi della risorsa duplicata](assets/duplicate-detection.png)
 
-Una volta attivato, Experience Manager invia alla inbox le notifiche delle risorse duplicate. Si tratta di un risultato aggregato per più duplicati. Gli utenti possono scegliere di rimuovere le risorse in base ai risultati.
+Puoi aggiungere il file di configurazione `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` in un codice personalizzato e il file può contenere i seguenti elementi:
+
+```json
+{
+  "enabled":true,
+  "detectMetadataField":"dam:sha1"
+}
+```
+
+Una volta attivato,  Experience Manager invia alla inbox le notifiche relative alle risorse duplicate. Si tratta di un risultato aggregato per più duplicati. Gli utenti possono scegliere di rimuovere le risorse in base ai risultati.
 
 ![Notifica Inbox per risorse duplicate](assets/duplicate-detect-inbox-notification.png)
 
@@ -101,9 +110,10 @@ Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni
    * Numero di volte in cui la risorsa è stata visualizzata o scaricata
    * Canali/dispositivi attraverso i quali è stata utilizzata la risorsa
    * Soluzioni creative in cui la risorsa è stata utilizzata di recente
+
    Per ulteriori dettagli, consulta [Informazioni approfondite](assets-insights.md)sulle risorse.
 
-1. Toccate o fate clic su **[!UICONTROL Salva e chiudi]**.
+1. Tap/click **[!UICONTROL Save &amp; Close]**.
 
 1. Passa all’interfaccia utente Risorse. Le proprietà dei metadati modificate, inclusi titolo, descrizione e tag, vengono visualizzate sulla scheda delle risorse nella vista a schede e nelle relative colonne nella vista Elenco.
 
@@ -172,6 +182,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    * Toccate/fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Seleziona destinazione]** .
 
    * Toccate/fate clic su **[!UICONTROL Annulla]** per interrompere l&#39;operazione di spostamento.
+
    Se non aggiornate i riferimenti, continueranno a indicare il percorso precedente della risorsa. Se regolate i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
 
 ### Gestire le rappresentazioni {#managing-renditions}
@@ -192,7 +203,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, Risorse AEM non visualizza la rappresentazione originale della risorsa in modalità di anteprima. Gli amministratori possono utilizzare le sovrapposizioni per configurare Risorse AEM in modo da visualizzare le rappresentazioni originali in modalità di anteprima.
+   >Per impostazione predefinita,  AEM Assets non visualizza la rappresentazione originale della risorsa in modalità di anteprima. Gli amministratori possono utilizzare le sovrapposizioni per configurare  AEM Assets in modo da visualizzare le rappresentazioni originali in modalità di anteprima.
 
 1. Selezionate una rappresentazione per visualizzare o eliminare la rappresentazione.
 
@@ -212,7 +223,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    >
    >Se selezioni un rendering dal pannello **[!UICONTROL Rendering]**, la barra degli strumenti cambia contesto, visualizzando solo le azioni del rendering specifico. Le opzioni non sono visualizzate, ad esempio l’icona Carica rappresentazione. Per visualizzare queste opzioni nella barra degli strumenti, vai alla pagina dei dettagli della risorsa.
 
-   Potete configurare le dimensioni per la rappresentazione da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate, Risorse AEM visualizza la rappresentazione con le dimensioni esatte o più vicine.
+   Potete configurare le dimensioni per la rappresentazione da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate,  AEM Assets visualizza la rappresentazione con le dimensioni esatte o più vicine.
 
    Per configurare le dimensioni di rendering di un’immagine a livello di dettaglio della risorsa, sovrapponi il nodo `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configura il valore della proprietà larghezza.  Per personalizzare il rendering sulla pagina dei dettagli della risorsa in base alle dimensioni dell’immagine, configura la proprietà **[!UICONTROL size (Long) in KB (dimensione (lunga) in KB)]** al posto della larghezza. Per la personalizzazione basata sulle dimensioni, la proprietà `preferOriginal` assegna le preferenze all’originale se la dimensione del rendering corrispondente è maggiore.
 
@@ -245,6 +256,7 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
       * Se la risorsa non dispone di riferimenti, viene eliminata.
       * Se la risorsa dispone di riferimenti, un messaggio di errore vi informa che **Una o più risorse dispongono di riferimenti.** Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+
    >[!NOTE]
    >
    >Per poter eliminare una risorsa è necessario disporre delle autorizzazioni di eliminazione per la risorsa DAM o la risorsa. Se disponete solo di autorizzazioni di modifica, potete modificare solo i metadati della risorsa e aggiungere delle annotazioni alla risorsa. Tuttavia, non potete eliminare la risorsa o i relativi metadati.
@@ -304,6 +316,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    * **[!UICONTROL Annulla]** per interrompere l’azione
    * **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse non sono più pubblicate (non sono più disponibili nell’ambiente di pubblicazione) alla data specificata.
+
    >[!NOTE]
    >
    >Quando si annulla la pubblicazione di una risorsa complessa, è necessario annullare la pubblicazione solo della risorsa. Evitate di annullare la pubblicazione dei riferimenti, in quanto ad essi potrebbero fare riferimento altre risorse pubblicate.
@@ -319,22 +332,22 @@ I COG consentono di limitare l’accesso alle risorse. Potete anche configurare 
 
    ![add_user](assets/add_user.png)
 
-1. Per visualizzare una schermata di login quando gli utenti accedono alla cartella, selezionate l’opzione **[!UICONTROL Abilita]** . Quindi, selezionate il percorso di una pagina di accesso in AEM e salvate le modifiche.
+1. Per visualizzare una schermata di login quando gli utenti accedono alla cartella, selezionate l’opzione **[!UICONTROL Abilita]** . Quindi, selezionate il percorso di una pagina di login in AEM e salvate le modifiche.
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >Se non specificate il percorso di una pagina di accesso, AEM visualizza la pagina di accesso predefinita nell’istanza di pubblicazione.
+   >Se non specificate il percorso di una pagina di login, AEM visualizza la pagina di login predefinita nell’istanza di pubblicazione.
 
 1. Pubblicate la cartella, quindi provate ad accedervi dall’istanza di pubblicazione. Viene visualizzata una schermata di login.
-1. Se siete un membro CUG, immettete le vostre credenziali di protezione. La cartella viene visualizzata dopo l’autenticazione da parte di AEM.
+1. Se siete un membro CUG, immettete le vostre credenziali di protezione. La cartella viene visualizzata dopo AEM l’autenticazione.
 
 ## Cercare risorse {#search-assets}
 
 La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e degli esperti di marketing, sia per l’amministrazione da parte degli amministratori DAM.
 
-Per ricerche semplici, avanzate e personalizzate per scoprire e utilizzare le risorse più appropriate, consultate [Cercare risorse in AEM](/help/assets/search-assets.md).
+Per ricerche semplici, avanzate e personalizzate per individuare e utilizzare le risorse più appropriate, consultate [Cercare le risorse in AEM](/help/assets/search-assets.md).
 
 ## Azioni rapide {#quick-actions}
 
@@ -345,7 +358,7 @@ Le icone delle azioni rapide sono disponibili per una singola risorsa alla volta
 
 ## Modificare le immagini {#editing-images}
 
-Gli strumenti di modifica nell’interfaccia di Risorse AEM consentono di effettuare piccoli processi di modifica sulle risorse di immagine. Potete ritagliare, ruotare, capovolgere ed eseguire altri processi di modifica sulle immagini. Potete anche aggiungere mappe immagine alle risorse.
+Gli strumenti di modifica nell’interfaccia  AEM Assets consentono di eseguire piccoli processi di modifica sulle risorse di immagine. Potete ritagliare, ruotare, capovolgere ed eseguire altri processi di modifica sulle immagini. Potete anche aggiungere mappe immagine alle risorse.
 
 >[!NOTE]
 >
@@ -356,6 +369,7 @@ Gli strumenti di modifica nell’interfaccia di Risorse AEM consentono di effett
    * Selezionate la risorsa, quindi toccate o fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
    * Toccate/fate clic sull&#39;icona **[!UICONTROL Modifica]** visualizzata su una risorsa nella vista a schede.
    * Nella pagina della risorsa, toccate o fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Per ritagliare l’immagine, toccate o fate clic sull’icona **Ritaglia** .
@@ -415,7 +429,7 @@ La timeline consente di visualizzare vari eventi per un elemento selezionato, ad
 
 Le annotazioni sono commenti o note esplicative aggiunti alle immagini o ai video. Le annotazioni consentono agli addetti al marketing di collaborare e lasciare commenti sulle risorse.
 
-Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. I formati video supportati da Risorse AEM dipendono dal browser.
+Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. I formati video supportati  AEM Assets dipendono dal browser.
 
 >[!NOTE]
 >
@@ -426,6 +440,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    * [Azioni rapide](#quick-actions)
    * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
@@ -451,7 +466,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
    >Potete aggiungere più annotazioni prima di salvarle.
 
 1. Toccate/fate clic su **[!UICONTROL Chiudi]** per uscire dalla modalità Annotazione.
-1. Per visualizzare la notifica, accedi a Risorse AEM con le credenziali di Aaron MacDonald e fai clic sull’icona **[!UICONTROL Notifiche]** per visualizzare la notifica.
+1. Per visualizzare la notifica, accedete a  AEM Assets con le credenziali di Aaron MacDonald e fate clic sull&#39;icona **[!UICONTROL Notifiche]** per visualizzare la notifica.
 
    >[!NOTE]
    >
@@ -521,7 +536,7 @@ Per stampare le annotazioni e verificare lo stato, toccate o fate clic sull&#39;
 
    >[!NOTE]
    >
-   >Il rendering delle annotazioni lunghe potrebbe non essere corretto nel file PDF. Per un rendering ottimale, Adobe consiglia di limitare le annotazioni a 50 parole.
+   >Il rendering delle annotazioni lunghe potrebbe non essere corretto nel file PDF. Per un rendering ottimale,  Adobe consiglia di limitare le annotazioni a 50 parole.
 
 1. Tocca o fai clic su **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, il PDF generato visualizza annotazioni/stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **In alto a sinistra**, l’output generato sarà simile al file PDF qui riportato.
 
@@ -543,9 +558,9 @@ Il controllo delle versioni crea un’istantanea delle risorse digitali in un mo
 
 Di seguito sono riportati gli scenari in cui si creano le versioni:
 
-* Puoi modificare un’immagine in un’altra applicazione e caricarla in Risorse AEM. Viene creata una versione dell’immagine in modo che l’immagine originale non venga sovrascritta.
+* Potete modificare un’immagine in un’altra applicazione e caricarla  AEM Assets. Viene creata una versione dell’immagine in modo che l’immagine originale non venga sovrascritta.
 * Potete modificare i metadati di una risorsa.
-* L’app desktop AEM consente di estrarre una risorsa esistente e salvare le modifiche. Una nuova versione viene creata ogni volta che la risorsa viene salvata.
+* Utilizzate AEM&#39;app desktop per estrarre una risorsa esistente e salvare le modifiche. Una nuova versione viene creata ogni volta che la risorsa viene salvata.
 
 Potete inoltre abilitare il controllo automatico delle versioni tramite un flusso di lavoro. Quando create una versione per una risorsa, i metadati e le rappresentazioni vengono salvati insieme alla versione. Le rappresentazioni sono alternative per il rendering delle stesse immagini, ad esempio una rappresentazione PNG di un file JPEG caricato.
 
