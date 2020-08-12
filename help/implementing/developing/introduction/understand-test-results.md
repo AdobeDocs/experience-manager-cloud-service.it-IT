@@ -2,9 +2,9 @@
 title: Comprendere i risultati del test - Cloud Services
 description: Comprendere i risultati dei test - Cloud Services
 translation-type: tm+mt
-source-git-commit: f878421950bac58702f9d4b418fbcc2dc3e397b2
+source-git-commit: 65c9446dc3c70ce593512e2358f23368f7c97f89
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1598'
 ht-degree: 3%
 
 ---
@@ -104,7 +104,7 @@ Il test funzionale è suddiviso in due tipi:
 
 I test funzionali di prodotto sono una serie di test di integrazione HTTP (IT) stabili attorno alle funzionalità di base in AEM (ad esempio, creazione e replica) che impediscono la distribuzione delle modifiche apportate dal cliente al codice dell&#39;applicazione in caso di interruzione di questa funzionalità di base.
 
-Vengono eseguiti automaticamente ogni volta che un cliente distribuisce nuovo codice a Cloud Manager.
+I test funzionali del prodotto vengono eseguiti automaticamente ogni volta che un cliente distribuisce il nuovo codice a Cloud Manager.
 
 ### Test funzionale personalizzato {#custom-functional-testing}
 
