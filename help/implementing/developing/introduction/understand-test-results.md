@@ -2,9 +2,9 @@
 title: Comprendere i risultati del test - Cloud Services
 description: Comprendere i risultati dei test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1620'
 ht-degree: 3%
 
 ---
@@ -91,7 +91,7 @@ Quindi la soluzione corretta è rimuovere la password hardcoded.
 >Sebbene sia buona norma rendere l’ `@SuppressWarnings` annotazione il più possibile specifica, ovvero annotare solo l’istruzione o il blocco specifico che causa il problema, è possibile inserire delle annotazioni a livello di classe.
 
 >[!NOTE]
->Anche se non è presente un passaggio esplicito di verifica della sicurezza, durante il passaggio della qualità del codice sono ancora presenti regole di qualità del codice relative alla sicurezza valutate. Per ulteriori informazioni, consultate Panoramica [sulla sicurezza per AEM come Cloud Service](/help/security/cloud-service-security-overview.md) .
+>Anche se non è presente un passaggio esplicito di verifica della sicurezza, durante il passaggio della qualità del codice sono ancora presenti regole di qualità del codice relative alla sicurezza valutate. Per ulteriori informazioni sulla sicurezza in Cloud Service Cloud Service, fare riferimento a Panoramica sulla [sicurezza per AEM come](/help/security/cloud-service-security-overview.md) .
 
 ## Test funzionale {#functional-testing}
 
@@ -104,7 +104,9 @@ Il test funzionale è suddiviso in due tipi:
 
 I test funzionali di prodotto sono una serie di test di integrazione HTTP (IT) stabili attorno alle funzionalità di base in AEM (ad esempio, creazione e replica) che impediscono la distribuzione delle modifiche apportate dal cliente al codice dell&#39;applicazione in caso di interruzione di questa funzionalità di base.
 
-I test funzionali del prodotto vengono eseguiti automaticamente ogni volta che un cliente distribuisce il nuovo codice a Cloud Manager.
+I test funzionali del prodotto vengono eseguiti automaticamente ogni volta che un cliente distribuisce il nuovo codice a Cloud Manager e non può essere ignorato.
+
+Per i test di [funzionalità dei](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) prodotti, fare riferimento a Testdi funzionalità dei prodotti.
 
 ### Test funzionale personalizzato {#custom-functional-testing}
 
