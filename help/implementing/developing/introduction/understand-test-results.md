@@ -2,9 +2,9 @@
 title: Comprendere i risultati del test - Cloud Services
 description: Comprendere i risultati dei test - Cloud Services
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1614'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Questi test possono essere:
 
 * Scritto dal cliente
 *  scritto in Adobe
-* Strumento open source alimentato da Faro di Google
+* Alimentato da Faro da Google come strumento open source
 
    >[!NOTE]
    > Sia i test scritti dal cliente che  test scritti dal Adobe vengono eseguiti in un&#39;infrastruttura containerizzata progettata per eseguire questi tipi di test.
@@ -90,6 +90,9 @@ Quindi la soluzione corretta è rimuovere la password hardcoded.
 >
 >Sebbene sia buona norma rendere l’ `@SuppressWarnings` annotazione il più possibile specifica, ovvero annotare solo l’istruzione o il blocco specifico che causa il problema, è possibile inserire delle annotazioni a livello di classe.
 
+>[!NOTE]
+>Anche se non è presente un passaggio esplicito di verifica della sicurezza, durante il passaggio della qualità del codice sono ancora presenti regole di qualità del codice relative alla sicurezza valutate. Per ulteriori informazioni, consultate Panoramica [sulla sicurezza per AEM come Cloud Service](/help/security/cloud-service-security-overview.md) .
+
 ## Test funzionale {#functional-testing}
 
 Il test funzionale è suddiviso in due tipi:
@@ -111,7 +114,7 @@ Il passaggio di test funzionale personalizzato nella pipeline è sempre presente
 Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita.
 
 >[!NOTE]
->Il pulsante **Download Log (Scarica registro)** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Tali registri non includono i registri del processo AEM runtime effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) .
+>Il pulsante **Download Log (Scarica registro)** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Tali registri non includono i registri del processo AEM runtime effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, consultate [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) .
 
 
 #### Scrittura di test funzionali {#writing-functional-tests}
