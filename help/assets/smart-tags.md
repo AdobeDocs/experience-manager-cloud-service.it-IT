@@ -1,23 +1,23 @@
 ---
 title: Applicare tag alle immagini con servizi intelligenti artificialmente.
-description: Applicate tag alle immagini con servizi intelligenti artificialmente che applicano tag commerciali contestuali e descrittivi utilizzando i servizi Adobe Sensei.
+description: Applicate tag alle immagini con servizi intelligenti artificialmente che applicano tag business contestuali e descrittivi utilizzando  servizi Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
+source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 5%
+source-wordcount: '2425'
+ht-degree: 6%
 
 ---
 
 
 # Servizio Smart Tag per formazione e tag delle immagini {#train-service-tag-assets}
 
-Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare le risorse digitali. L’assegnazione di tag alle risorse mediante il vocabolario controllato dalla tassonomia consente di identificare e recuperare facilmente le risorse mediante ricerche basate sui tag.
+Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare le risorse digitali. L’assegnazione dei tag alle risorse mediante un vocabolario controllato dalla tassonomia consente di individuare e recuperare facilmente le risorse tramite ricerche basate sui tag.
 
 Rispetto ai vocabolari di lingua naturale, l’assegnazione di tag in base alla tassonomia aziendale consente di allineare le risorse all’attività aziendale e garantisce che le risorse più rilevanti vengano visualizzate nelle ricerche. Ad esempio, un produttore di auto può assegnare tag alle immagini di un&#39;auto con nomi di modelli in modo che vengano visualizzate solo immagini rilevanti quando viene effettuata una ricerca per progettare una campagna promozionale.
 
-In background, lo Smart Tags utilizza un framework di intelligenza artificiale di [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) per formare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
+In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
 <!-- TBD: Create a similar flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -25,21 +25,23 @@ In background, lo Smart Tags utilizza un framework di intelligenza artificiale d
 
 Per utilizzare i tag avanzati, effettuate le seguenti operazioni:
 
-* [Integrare Experience Manager con Adobe Developer Console](#integrate-aem-with-aio).
+* [Integrare  Experience Manager con  Adobe Developer Console](#integrate-aem-with-aio).
 * [Informazioni sui modelli e sulle linee guida](#understand-tag-models-guidelines)dei tag.
 * [Formare il modello](#train-model).
 * [Assegnare tag alle risorse](#tag-assets)digitali.
 * [Gestire tag e ricerche](#manage-smart-tags-and-searches).
 
-I tag avanzati sono applicabili solo ai [!DNL Adobe Experience Manager Assets] clienti. I tag avanzati sono disponibili per l&#39;acquisto come componente aggiuntivo per [!DNL Experience Manager].
+I tag avanzati sono applicabili solo ai [!DNL Adobe Experience Manager Assets] clienti. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Integrazione [!DNL Experience Manager] con Adobe Developer Console {#integrate-aem-with-aio}
+## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
-È possibile effettuare l&#39;integrazione [!DNL Adobe Experience Manager] con i tag avanzati utilizzando Adobe Developer Console. Utilizzate questa configurazione per accedere al servizio Smart Tags dall&#39;interno [!DNL Experience Manager].
+>[!IMPORTANT]
+>
+>Le nuove [!DNL Experience Manager Assets] implementazioni sono integrate con [!DNL Adobe Developer Console] per impostazione predefinita. Consente di configurare più rapidamente la funzionalità smart tag. Nelle distribuzioni esistenti, gli amministratori possono [configurare manualmente l&#39;integrazione](/help/assets/smart-tags-configuration.md#aio-integration)degli smart tag.
 
-Consultate [configurare Experience Manager per l’assegnazione di tag avanzati alle risorse](smart-tags-configuration.md) per le attività di configurazione dei tag avanzati. Sul lato posteriore, il [!DNL Experience Manager] server autentica le credenziali del servizio con il gateway di Adobe Developer Console prima di inoltrare la richiesta al servizio Smart Tags.
+È possibile integrarsi [!DNL Adobe Experience Manager] con gli Smart Tags utilizzando [!DNL Adobe Developer Console]. Utilizzate questa configurazione per accedere al servizio Smart Tags dall&#39;interno [!DNL Experience Manager]. Consultate [Configurare  Experience Manager per l’assegnazione di tag avanzati alle risorse](smart-tags-configuration.md) per la configurazione dei tag avanzati. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
 ## Informazioni sui modelli e sulle linee guida dei tag {#understand-tag-models-guidelines}
 
@@ -62,7 +64,7 @@ Le immagini nel set di formazione devono essere conformi alle seguenti linee gui
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/coherence.png)
 
-**Copertura**: Dovrebbe esserci una varietà sufficiente nelle immagini della formazione. L’idea è di fornire alcuni esempi, ma con una discreta diversità, in modo che AEM possa concentrarsi sulle cose giuste. Se applicate lo stesso tag a immagini visivamente diverse, includete almeno cinque esempi di ciascun tipo. Ad esempio, per il tag *model-down-pose*, includete più immagini di formazione simili all’immagine evidenziata di seguito per il servizio, in modo da identificare immagini simili con maggiore precisione durante l’assegnazione dei tag.
+**Copertura**: Dovrebbe esserci una varietà sufficiente nelle immagini della formazione. L&#39;idea è quella di fornire alcuni esempi, ma ragionevolmente diversi, in modo che AEM imparare a concentrarsi sulle cose giuste. Se applicate lo stesso tag a immagini visivamente diverse, includete almeno cinque esempi di ciascun tipo. Ad esempio, per il tag *model-down-pose*, includete più immagini di formazione simili all’immagine evidenziata di seguito per il servizio, in modo da identificare immagini simili con maggiore precisione durante l’assegnazione dei tag.
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/coverage_1.png)
 
@@ -74,11 +76,11 @@ Le immagini nel set di formazione devono essere conformi alle seguenti linee gui
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/completeness.png)
 
-**Numero di tag**: Adobe consiglia di addestrare un modello utilizzando almeno due tag distinti e almeno 10 immagini diverse per ciascun tag. In un singolo modello di tag, non aggiungete più di 50 tag.
+**Numero di tag**:  Adobe consiglia di formare un modello utilizzando almeno due tag distinti e almeno 10 immagini diverse per ciascun tag. In un singolo modello di tag, non aggiungete più di 50 tag.
 
-**Numero di esempi**: Per ciascun tag, aggiungete almeno 10 esempi. Tuttavia, Adobe consiglia circa 30 esempi. È supportato un massimo di 50 esempi per tag.
+**Numero di esempi**: Per ciascun tag, aggiungete almeno 10 esempi. Tuttavia,  Adobe raccomanda circa 30 esempi. È supportato un massimo di 50 esempi per tag.
 
-**Prevenire falsi positivi e conflitti**: Adobe consiglia di creare un singolo modello di tag per un singolo aspetto visivo. Strutturate i modelli di tag in modo da evitare la sovrapposizione di tag tra i modelli. Ad esempio, non utilizzate tag comuni come `sneakers` in due diversi nomi di modelli di tag `shoes` e `footwear`. Il processo di formazione sovrascrive un modello di tag formattato con l’altro per una parola chiave comune.
+**Prevenire falsi positivi e conflitti**:  Adobe consiglia di creare un singolo modello di tag per un singolo aspetto visivo. Strutturate i modelli di tag in modo da evitare la sovrapposizione di tag tra i modelli. Ad esempio, non utilizzate tag comuni come `sneakers` in due diversi nomi di modelli di tag `shoes` e `footwear`. Il processo di formazione sovrascrive un modello di tag formattato con l’altro per una parola chiave comune.
 
 **Esempi**: Altri esempi sono:
 
@@ -128,7 +130,7 @@ Dopo aver preparato il servizio Smart Tags, potete attivare il flusso di lavoro 
 
 ### Assegnare tag alle risorse dalla console del flusso di lavoro {#tagging-assets-from-the-workflow-console}
 
-1. Nell’interfaccia di Experience Manager, andate a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. Nell&#39;interfaccia  Experience Manager, passare a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
@@ -157,7 +159,7 @@ Dopo aver preparato il servizio Smart Tags, potete attivare il flusso di lavoro 
 
 ### Assegnare tag alle risorse caricate {#tag-uploaded-assets}
 
-Experience Manager consente di assegnare automaticamente i tag alle risorse che gli utenti caricano in DAM. A questo scopo, gli amministratori configurano un flusso di lavoro per aggiungere un passaggio disponibile alle risorse degli smart tag. Scoprite [come abilitare i tag avanzati per le risorse](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)caricate.
+ Experience Manager può assegnare automaticamente i tag alle risorse caricate dagli utenti in DAM. A questo scopo, gli amministratori configurano un flusso di lavoro per aggiungere un passaggio disponibile alle risorse degli smart tag. Scoprite [come abilitare i tag avanzati per le risorse](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)caricate.
 
 ## Gestione di smart tag e ricerche di immagini {#manage-smart-tags-and-searches}
 
@@ -168,16 +170,16 @@ La moderazione degli smart tag consente inoltre di perfezionare le ricerche basa
 Potete anche assegnare un rango più alto a un tag per aumentarne la rilevanza rispetto a un’immagine. La promozione di un tag per un’immagine aumenta le probabilità che l’immagine venga visualizzata nei risultati di ricerca quando viene eseguita una ricerca in base al tag specifico.
 
 1. Nella casella di ricerca Omnico, cercate le risorse in base a un tag.
-1. Controllate i risultati della ricerca per identificare un’immagine che non trovate rilevante per la ricerca.
+1.  Inspect i risultati della ricerca per identificare un’immagine che non si trova rilevante ai fini della ricerca.
 1. Selezionate l’immagine, quindi fate clic sull’icona **[!UICONTROL Gestisci tag]** nella barra degli strumenti.
 1. Dalla pagina **[!UICONTROL Gestisci tag]** , ispezionate i tag. Se non desiderate che l’immagine venga cercata in base a un tag specifico, selezionate il tag e fate clic sull’icona Elimina nella barra degli strumenti. In alternativa, fare clic sul `X` simbolo visualizzato accanto all&#39;etichetta.
 1. Per assegnare un livello superiore a un tag, selezionatelo e fate clic sull’icona di promozione nella barra degli strumenti. Il tag promosso viene spostato nella sezione **[!UICONTROL Tag]** .
 1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
 1. Passate alla pagina delle proprietà dell’immagine. Osservate che al tag promosso è stata assegnata un’elevata rilevanza e, di conseguenza, appare più alta nei risultati della ricerca.
 
-### Comprendere i risultati della ricerca AEM con gli smart tag {#understandsearch}
+### Comprendere AEM risultati di ricerca con gli smart tag {#understandsearch}
 
-Per impostazione predefinita, la ricerca AEM combina i termini di ricerca con una `AND` clausola. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una `OR` clausola aggiuntiva per individuare qualsiasi termine di ricerca negli smart tag applicati. For example, consider searching for `woman running`. Per impostazione predefinita, le risorse con una sola parola chiave `woman` o una sola `running` parola chiave nei metadati non vengono visualizzate nei risultati della ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con `woman` o `running` tramite smart tag. Quindi i risultati della ricerca sono una combinazione di:
+Per impostazione predefinita, AEM ricerca combina i termini di ricerca con una `AND` clausola. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una `OR` clausola aggiuntiva per individuare qualsiasi termine di ricerca negli smart tag applicati. For example, consider searching for `woman running`. Per impostazione predefinita, le risorse con una sola parola chiave `woman` o una sola `running` parola chiave nei metadati non vengono visualizzate nei risultati della ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con tag `woman` o `running` tramite smart tag. Quindi i risultati della ricerca sono una combinazione di:
 
 * risorse con `woman` e `running` parole chiave nei metadati.
 
@@ -195,17 +197,17 @@ Gli smart tag avanzati si basano su modelli di apprendimento delle immagini del 
 
 * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie sottili o regolari.
 * Impossibile identificare i tag in base a piccoli pattern/parti di un’immagine. Ad esempio, i logo delle T-shirt.
-* I tag sono supportati nelle impostazioni internazionali in cui AEM è supportato. Per un elenco delle lingue, consultate [Note](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)sulla versione dei tag avanzati.
+* I tag sono supportati nelle impostazioni internazionali AEM. Per un elenco delle lingue, consultate [Note](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)sulla versione dei tag avanzati.
 
 Per cercare le risorse con gli smart tag (regolari o avanzati), usate la ricerca Omnisearch delle risorse (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
 
 >[!NOTE]
 >
 >La capacità dei tag avanzati di formare i tag e applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione.
->Per risultati ottimali, Adobe consiglia di usare immagini visivamente simili per addestrare il servizio per ciascun tag.
+>Per risultati ottimali,  Adobe consiglia di usare immagini visivamente simili per formare il servizio per ciascun tag.
 
 >[!MORELIKETHIS]
 >
->* [Configurare Experience Manager per l&#39;assegnazione di smart tag](smart-tags-configuration.md)
+>* [Configurare  Experience Manager per smart tag](smart-tags-configuration.md)
 >* [Come gli smart tag consentono di gestire le risorse](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 
