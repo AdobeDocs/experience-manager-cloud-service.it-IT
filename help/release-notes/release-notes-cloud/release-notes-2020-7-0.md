@@ -2,10 +2,10 @@
 title: Note sulla versione [!DNL Adobe Experience Manager] di Cloud Service per la versione 2020.7.0.
 description: '[!DNL Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
+source-git-commit: 4211a4d95be6e625b283e3142609923245da8d31
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 37%
+source-wordcount: '1056'
+ht-degree: 35%
 
 ---
 
@@ -30,11 +30,11 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Le configurazioni ora sono memorizzate nell&#39;archivio `/conf` del Experience Manager  anziché `/etc/cloudsettings` nell&#39;archivio.
 
-## Adobe Experience Manager Assets as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] come Cloud Service {#assets}
 
-### Novità {#what-is-new-assets}
+### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Gli amministratori possono configurare  Experience Manager per richiamare le applicazioni personalizzate create utilizzando l&#39; [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate in casi di utilizzo complessi. Questo servizio Web può generare miniature per diversi tipi di file, rendering di immagini di alta qualità da  formati di file di Adobe, codificare video (in futuro), estrarre metadati, estrarre testo completo come precursore per l’indicizzazione ed eseguire una risorsa tramite tutti i servizi Sensei disponibili. consulta [Utilizzare i microservizi delle risorse e i profili](/help/assets/asset-microservices-configure-and-use.md)di elaborazione.
+* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Gli amministratori possono configurare [!DNL Experience Manager] per richiamare le applicazioni personalizzate create utilizzando il [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate in casi di utilizzo complessi. Questo servizio Web può generare miniature per diversi tipi di file, rendering di immagini di alta qualità da  formati di file di Adobe, codificare video (in futuro), estrarre metadati, estrarre testo completo come precursore per l’indicizzazione ed eseguire una risorsa tramite tutti i [!DNL Sensei] servizi disponibili. consulta [Utilizzare i microservizi di risorse e i profili](/help/assets/asset-microservices-configure-and-use.md)di elaborazione.
 
 * La configurazione iniziale di [!DNL Dynamic Media] in [!DNL Experience Manager] come Cloud Service è migliorata per essere più robusta. Ora fornisce agli amministratori l’avanzamento dei processi.
 
@@ -42,7 +42,13 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * I passaggi del flusso di lavoro non compatibili con la distribuzione di un Cloud Service ora sono contrassegnati da un avviso nell&#39;editor del modello [!UICONTROL di] workflow. Inoltre, durante l&#39;esecuzione dei flussi di lavoro esistenti nell&#39;ambiente di Cloud Service, i passaggi del flusso di lavoro incompatibili vengono ignorati.
 
-* I modelli di flussi di lavoro creati dai clienti che sono distribuiti `/conf/global` nel progetto Git associato all&#39;ambiente in Cloud Manager vengono automaticamente distribuiti `/var` e sono quindi disponibili in  Experience Manager. I modelli di flusso di lavoro dei prodotti in `/libs` cui sono stati modificati dai clienti non vengono distribuiti automaticamente a `/var`.
+* I modelli di workflow creati dai clienti che vengono distribuiti `/conf/global` nel progetto Git associato all&#39;ambiente in [!DNL Cloud Manager] vengono automaticamente distribuiti `/var` e quindi disponibili in [!DNL Experience Manager]. I modelli di flusso di lavoro dei prodotti in `/libs` cui sono stati modificati dai clienti non vengono distribuiti automaticamente a `/var`.
+
+### Bug corretti {#assets-bugs-fixed}
+
+* La procedura guidata Sposta risorsa non viene caricata come previsto per le risorse incluse nelle raccolte. (CQ-4296756)
+* I valori di `dam:size` e `dam:sha1` sono esclusi XMP writeback. (CQ-4237355)
+* Quando si annulla la pubblicazione di risorse in massa, [!DNL Brand Portal] viene generato un errore che indica che l’URI della richiesta è troppo lungo. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
