@@ -2,10 +2,10 @@
 title: Set 360 gradi
 description: Scopri come utilizzare i set 360 gradi in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 13%
+source-wordcount: '1804'
+ht-degree: 14%
 
 ---
 
@@ -62,7 +62,7 @@ Per iniziare rapidamente a usare i set 360 gradi, effettuate le seguenti operazi
 
 1. [Collegare gli URL all’applicazione](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) Web o [incorporare il visualizzatore](/help/assets/dynamic-media/embed-code.md)video o immagini.
 
-   Risorse AEM crea richieste URL per i set 360 gradi e le attiva dopo la pubblicazione dei set 360 gradi. Potete copiare questi URL quando visualizzate l’anteprima delle risorse. In alternativa, potete incorporarli nel sito Web.
+    AEM Assets crea richieste URL per i set 360 gradi e le attiva dopo la pubblicazione dei set 360 gradi. Potete copiare questi URL quando visualizzate l’anteprima delle risorse. In alternativa, potete incorporarli nel sito Web.
 
    Seleziona il set a 360 gradi, quindi fai clic su **[!UICONTROL Visualizzatori]** nel menu a discesa della barra a sinistra.
 
@@ -74,11 +74,11 @@ Se necessario, potete [modificare i set](#editing-spin-sets)360 gradi. Inoltre, 
 
 Per un set 360 gradi monodimensionale, sono necessari almeno 8-12 scatti di un elemento e 16-24 scatti per un set 360 gradi bidimensionale. Le riprese devono essere effettuate a intervalli regolari per dare l’impressione che l’elemento stia ruotando e sia capovolto. Ad esempio, se un set 360 gradi monodimensionale include 12 scatti, ruotate l’elemento di 30 gradi (360/12) per ciascuna ripresa.
 
-Potete caricare le immagini per i set 360 gradi come fareste per [caricare qualsiasi altra risorsa in AEM Assets](/help/assets/manage-digital-assets.md).
+Potete caricare le immagini per i set 360 gradi come fareste per [caricare qualsiasi altra risorsa in  AEM Assets](/help/assets/manage-digital-assets.md).
 
 ### Linee guida per l’acquisizione di immagini per il set 360 gradi {#guidelines-for-shooting-spin-set-images}
 
-Di seguito sono riportate alcune best practice per le immagini dei set 360 gradi. In generale, più immagini si trovano in un set 360 gradi, migliore sarà l’effetto di rotazione dell’immagine. Tuttavia, l’inclusione di molte immagini nel set aumenta anche il tempo necessario al caricamento delle immagini. AEM consiglia di seguire queste linee guida per lo scatto di immagini da usare nei set 360 gradi:
+Di seguito sono riportate alcune best practice per le immagini dei set 360 gradi. In generale, più immagini si trovano in un set 360 gradi, migliore sarà l’effetto di rotazione dell’immagine. Tuttavia, l’inclusione di molte immagini nel set aumenta anche il tempo necessario al caricamento delle immagini. AEM consigliate le seguenti linee guida per lo scatto di immagini da usare nei set 360 gradi:
 
 * Utilizzate almeno 8-12 immagini in un set 360 gradi monodimensionale e 16-24 immagini in un set 360 gradi bidimensionale. Per poter ruotare di 360 gradi è necessario disporre di almeno 8 immagini. I set 360 gradi monodimensionali sono più comuni quando la creazione di set 360 gradi bidimensionali richiede molta manodopera.
 * Utilizzare un formato senza perdita di dati; Si consigliano TIFF e PNG.
@@ -112,7 +112,7 @@ Questa sezione descrive come creare i set 360 gradi.
 
    >[!NOTE]
    >
-   >Quando create il set 360 gradi, potete modificare la miniatura del set 360 gradi o consentire ad AEM di selezionare la miniatura automaticamente in base alle risorse del set 360 gradi. Per selezionare una miniatura, fate clic su **[!UICONTROL Cambia miniatura]** e selezionate una qualsiasi immagine (per trovare anche le immagini potete spostarvi in altre cartelle). If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail]**.
+   >Quando create il set 360 gradi, potete modificare la miniatura del set 360 gradi o consentire AEM selezionare la miniatura automaticamente in base alle risorse del set 360 gradi. Per selezionare una miniatura, fate clic su **[!UICONTROL Cambia miniatura]** e selezionate una qualsiasi immagine (per trovare anche le immagini potete spostarvi in altre cartelle). If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail]**.
 
 1. Effettuate una delle seguenti operazioni:
 
@@ -121,7 +121,7 @@ Questa sezione descrive come creare i set 360 gradi.
    * Al centro della pagina Editor set 360 gradi, toccate **[!UICONTROL Toccate per aprire il selettore]** risorse.
    Toccate per selezionare le risorse da includere nel set 360 gradi. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
-   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando **[!UICONTROL Invio**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, tocca l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a elenco]**.
+   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, tocca l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a elenco]**.
 
    See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -163,7 +163,7 @@ Potete creare i set 360 gradi nell’interfaccia utente o automaticamente utiliz
 
 1. Dalla ricerca, puoi selezionare **[!UICONTROL Filtri]**, quindi espandere **[!UICONTROL Dynamic Media]** e fare clic su **[!UICONTROL Set]**.
 
-   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando criteri di `Starts with` ricerca diversi dalla ricerca AEM basata sui criteri di `Contains` ricerca. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per eseguire ricerche nei set automatizzati.
+   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando criteri di `Starts with` ricerca diversi da AEM ricerca basata su criteri di `Contains` ricerca. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per eseguire ricerche nei set automatizzati.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
@@ -191,7 +191,7 @@ Potete eseguire diverse attività di modifica sui set 360 gradi, ad esempio:
    * Per riordinare le immagini, trascinate un’immagine in una nuova posizione (selezionate l’icona di riordinamento per spostare gli elementi).
    * Per ordinare gli elementi in ordine crescente o decrescente, fate clic sull’intestazione della colonna.
    * Per aggiungere una risorsa o aggiornare una risorsa esistente, fate clic su **[!UICONTROL Aggiungi risorsa]**. Andate a una risorsa, selezionatela, quindi toccate **[!UICONTROL Seleziona]** vicino all&#39;angolo superiore destro.
-Se eliminate l’immagine utilizzata da AEM per la miniatura sostituendola con un’altra immagine, viene comunque visualizzata la risorsa originale.
+Se eliminate l’immagine che AEM usata per la miniatura sostituendola con un’altra immagine, viene comunque visualizzata la risorsa originale.
    * Per eliminare una risorsa, selezionatela e toccate o fate clic su **[!UICONTROL Elimina risorsa]**.
    * Per applicare un predefinito, toccate o fate clic sull’icona del predefinito e selezionate un predefinito.
    * Per eliminare un intero set 360 gradi, selezionatelo e selezionate **[!UICONTROL Elimina]**
