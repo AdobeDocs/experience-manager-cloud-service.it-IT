@@ -2,7 +2,7 @@
 title: Distribuzione del codice - Cloud Services
 description: Distribuzione del codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Once you have configured your Production **Pipeline** (repository, environment, 
 
    * Convalida: Questo passaggio assicura che la pipeline sia configurata per utilizzare le risorse attualmente disponibili, ad esempio che il ramo configurato esiste, gli ambienti sono disponibili.
    * Build e unit test: Questo passaggio esegue un processo di compilazione containerizzato. Per informazioni dettagliate sull&#39;ambiente di [generazione, consultate Dettagli](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) sull&#39;ambiente di generazione.
-   * Scansione del codice: Questo passaggio valuta la qualità del codice dell’applicazione. Per informazioni dettagliate sul processo di verifica, consultate Test [della qualità del](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) codice.
+   * Scansione del codice: Questo passaggio valuta la qualità del codice dell’applicazione. Per informazioni dettagliate sul processo di verifica, consultate Test [della qualità del](/help/implementing/cloud-manager/code-quality-testing.md) codice.
    * Genera immagini: Questo passaggio include un file di registro dal processo utilizzato per creare le immagini. Questo processo è responsabile della trasformazione dei pacchetti di contenuti e dispatcher prodotti dalla fase di creazione in immagini Docker e configurazione Kubernetes.
    * Distribuisci nello stage
 
@@ -51,13 +51,13 @@ Once you have configured your Production **Pipeline** (repository, environment, 
    La **prova della fase** prevede i seguenti passaggi:
 
    * Test funzionale del prodotto: Le esecuzioni della pipeline di Cloud Manager supporteranno l&#39;esecuzione di test che vengono eseguiti nell&#39;ambiente del passaggio.
-Per ulteriori informazioni, consulta Test [delle funzionalità del](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) prodotto.
+Per ulteriori informazioni, consulta Test [delle funzionalità del](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) prodotto.
 
    * Test funzionale personalizzato: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita.\
-      Per ulteriori informazioni, consultate Test [funzionale](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) personalizzato.
+      Per ulteriori informazioni, consultate Test [funzionale](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) personalizzato.
 
    * Controllo contenuto: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Quando viene eseguita una pipeline di produzione, viene inclusa una fase di controllo del contenuto dopo il test funzionale personalizzato che eseguirà i controlli. Le pagine configurate verranno inviate al servizio e valutate. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e la modifica tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se esiste una regressione che verrà introdotta con la distribuzione corrente.
-Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) di Content Audit.
+Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/cloud-manager/content-audit-testing.md) di Content Audit.
 
       ![](assets/testing-tab.png)
 
