@@ -2,9 +2,9 @@
 title: Comprendere i risultati del test - Cloud Services
 description: Comprendere i risultati dei test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1700'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,13 @@ Questi test possono essere:
 
 ## Verifica della qualità del codice {#code-quality-testing}
 
-Come parte della pipeline, il codice sorgente viene analizzato per garantire che le distribuzioni soddisfino determinati criteri di qualità. Attualmente, questo è implementato tramite una combinazione di SonarQube e l&#39;esame a livello di pacchetto di contenuti tramite OakPAL. Ci sono più di 100 regole che combinano regole Java generiche e regole AEM specifiche. La tabella seguente riassume la valutazione per i criteri di prova:
+Questo passaggio valuta la qualità del codice dell’applicazione. Si tratta dell&#39;obiettivo principale di una conduttura di sola qualità del codice ed è eseguito immediatamente dopo la fase di costruzione in tutti i gasdotti non di produzione e produzione.
+
+Per ulteriori informazioni sui diversi tipi di tubazioni, vedere [Configurazione della tubazione](/help/implementing/cloud-manager/configure-pipeline.md) CI-CD.
+
+In Test qualità codice, il codice sorgente viene analizzato per garantire che la distribuzione soddisfi determinati criteri di qualità. Attualmente, questo è implementato tramite una combinazione di SonarQube e l&#39;esame a livello di pacchetto di contenuti tramite OakPAL. Ci sono più di 100 regole che combinano regole Java generiche e regole AEM specifiche. Alcune delle regole specifiche AEM vengono create in base alle best practice di AEM Engineering e sono denominate regole [di qualità del codice](/help/implementing/cloud-manager/custom-code-quality-rules.md)personalizzate.
+
+I risultati di questo passaggio vengono presentati come *Valutazione*. La tabella seguente riassume le valutazioni per vari criteri di prova:
 
 | Nome | Definizione | Categoria | Soglia di errore |
 |--- |--- |--- |--- |
@@ -46,11 +52,12 @@ Come parte della pipeline, il codice sorgente viene analizzato per garantire che
 | Compatibilità Cloud Service | Numero di problemi di compatibilità Cloud Service identificati. | Info | > 0 |
 
 
+Puoi scaricare l&#39;elenco delle regole qui [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
+
 >[!NOTE]
 >
 >Per informazioni più dettagliate, fare riferimento a Definizioni [metriche](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) .
 
-Puoi scaricare l&#39;elenco delle regole qui [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
