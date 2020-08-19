@@ -2,10 +2,10 @@
 title: Distribuzione del codice - Cloud Services
 description: Distribuzione del codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 3%
+source-wordcount: '984'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 ## Distribuzione del codice con Cloud Manager {#deploying-code-with-cloud-manager}
 
-Dopo aver configurato la **pipeline** (archivio, ambiente e ambiente di test), è possibile distribuire il codice.
+Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
 
 1. Fai clic su **Distribuisci** da Cloud Manager per avviare il processo di distribuzione.
 
