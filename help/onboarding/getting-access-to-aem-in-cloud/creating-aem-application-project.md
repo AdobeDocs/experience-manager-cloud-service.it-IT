@@ -2,7 +2,7 @@
 title: Progetto di applicazione AEM - Cloud Service
 description: Progetto di applicazione AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 696014ea61c049e719c8c9fdccc2a85b087c2466
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 9%
@@ -418,4 +418,4 @@ Per informazioni sull&#39;utilizzo di Cloud Manager nel Cloud Service, consulta 
 * [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md)
 * [Configurare la pipeline CI-CD](/help/implementing/cloud-manager/configure-pipeline.md)
 * [Implementazione del codice](/help/implementing/cloud-manager/deploy-code.md)
-* [Risultati dei test](/help/implementing/developing/introduction/understand-test-results.md)
+* [Risultati dei test](/help/implementing/cloud-manager/overview-test-results.md)
