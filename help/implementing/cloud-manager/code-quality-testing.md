@@ -2,10 +2,10 @@
 title: Test della qualità del codice - Cloud Services
 description: Test della qualità del codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 3%
+source-wordcount: '831'
+ht-degree: 2%
 
 ---
 
@@ -16,14 +16,26 @@ Il test della qualità del codice valuta la qualità del codice dell’applicazi
 
 Per ulteriori informazioni sui diversi tipi di tubazioni, vedere [Configurazione della tubazione](/help/implementing/cloud-manager/configure-pipeline.md) CI-CD.
 
-## Regole per la qualità del codice personalizzato {#understanding-code-quality-rules}
+## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
 In Test qualità codice, il codice sorgente viene analizzato per garantire che soddisfi determinati criteri di qualità. Attualmente, questo è implementato tramite una combinazione di SonarQube e l&#39;esame a livello di pacchetto di contenuti tramite OakPAL. Ci sono più di 100 regole che combinano regole Java generiche e regole AEM specifiche. Alcune delle regole specifiche AEM vengono create in base alle best practice di AEM Engineering e sono denominate regole [di qualità del codice](/help/implementing/cloud-manager/custom-code-quality-rules.md)personalizzate.
 
 >[!NOTE]
 >Puoi scaricare l&#39;elenco completo delle regole [qui](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
-I risultati di questo passaggio vengono presentati come *Valutazione*. La tabella seguente riassume la valutazione per i criteri di prova:
+**Porta a tre livelli**
+
+Esiste una struttura a tre livelli in questa fase di test della qualità del codice per i problemi identificati:
+
+* **Critico**: Si tratta di problemi individuati dal cancello che causano un immediato fallimento della conduttura.
+
+* **Importante**: Si tratta di problemi identificati dal gate che causano l&#39;ingresso della pipeline in stato di pausa. Un gestore di distribuzione, un project manager o un proprietario aziendale possono ignorare i problemi, nel qual caso la pipeline procede, oppure possono accettare i problemi, nel qual caso la pipeline si interrompe con un errore.
+
+* **Informazioni**: Si tratta di questioni individuate dalla porta che sono fornite esclusivamente a scopo informativo e che non hanno alcun impatto sull&#39;esecuzione della conduttura
+
+I risultati di questo passaggio vengono forniti come *valutazioni*.
+
+La tabella seguente riassume le soglie di rating e di fallimento per ciascuna delle categorie Critico, Importante e Informazioni:
 
 | Nome | Definizione | Categoria | Soglia di errore |
 |--- |--- |--- |--- |
