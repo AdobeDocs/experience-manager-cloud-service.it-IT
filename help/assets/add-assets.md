@@ -2,15 +2,15 @@
 title: Aggiungi le tue risorse digitali a [!DNL Adobe Experience Manager].
 description: Aggiungi le risorse digitali [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
+source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1320'
 ht-degree: 2%
 
 ---
 
 
-# Aggiungere risorse digitali al Adobe Experience Manager  {#add-assets-to-experience-manager}
+# Aggiunta di risorse digitali ad Adobe Experience Manager {#add-assets-to-experience-manager}
 
 [!DNL Adobe Experience Manager] arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, smart tag, rappresentazioni e altri servizi di gestione delle risorse digitali (DAM). Potete caricare vari tipi di file, ad esempio immagini, documenti e file immagine non elaborati, dalla cartella locale o da un’unità di rete a [!DNL Experience Manager Assets].
 
@@ -110,7 +110,7 @@ Potete scegliere di sostituire una risorsa esistente, crearne un’altra o tener
 >
 >Quando selezionate **[!UICONTROL Sostituisci]** nella finestra di dialogo Conflitto  nome, l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
 >
->Se Asset Insights è abilitato per il tracciamento di impression/clic con  Adobe Analytics, l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa su  Analytics.
+>Se Asset Insights è abilitato per tenere traccia di impression/clic con  Adobe Analytics, l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa in Analytics.
 
 Per mantenere la risorsa duplicata in [!DNL Assets], fate clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, toccate o fate clic su **[!UICONTROL Elimina]**.
 
@@ -154,14 +154,14 @@ Sono disponibili i seguenti profili:
 * [I profili](metadata-profiles.md) di metadati consentono di applicare proprietà di metadati predefinite alle risorse caricate in tale cartella
 * [I profili](asset-microservices-configure-and-use.md) di elaborazione consentono di generare più rappresentazioni di quelle che per impostazione predefinita sono possibili.
 
-Inoltre, se Dynamic Media è abilitato nell’ambiente in uso:
+Inoltre, se nell’ambiente in uso è attivato l’elemento multimediale dinamico:
 
-* [I profili](dynamic-media/image-profiles.md) immagine di Dynamic Media consentono di applicare alle risorse caricate specifiche configurazioni di ritaglio (ritaglio **** avanzato e ritaglio pixel) e nitidezza.
-* [I profili](dynamic-media/video-profiles.md) video Dynamic Media consentono di applicare specifici profili di codifica video (risoluzione, formato, parametri).
+* [I profili](dynamic-media/image-profiles.md) immagine per elementi multimediali dinamici consentono di applicare alle risorse caricate specifiche configurazioni di ritaglio (ritaglio **** avanzato e ritaglio pixel) e nitidezza.
+* [I profili](dynamic-media/video-profiles.md) video per contenuti multimediali dinamici consentono di applicare specifici profili di codifica video (risoluzione, formato, parametri).
 
 >[!NOTE]
 >
->Il ritaglio Dynamic Media e altre operazioni sulle risorse non sono distruttive, ovvero non modificano l’originale caricato, ma forniscono parametri per il ritaglio o la trasformazione del supporto da eseguire durante la distribuzione delle risorse
+>Il ritaglio di elementi multimediali dinamici e altre operazioni sulle risorse non sono distruttive, ovvero non modificano l’originale caricato, ma forniscono parametri per il ritaglio o la trasformazione di elementi multimediali da eseguire durante la distribuzione delle risorse
 
 Per le cartelle a cui è assegnato un profilo di elaborazione, il nome del profilo viene visualizzato sulla miniatura nella vista a schede. Nella vista a elenco, il nome del profilo viene visualizzato nella colonna Profilo **[!UICONTROL di]** elaborazione.
 
