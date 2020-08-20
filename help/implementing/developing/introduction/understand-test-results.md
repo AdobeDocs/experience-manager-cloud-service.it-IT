@@ -2,9 +2,9 @@
 title: Comprendere i risultati del test - Cloud Services
 description: Comprendere i risultati dei test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1697'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Questi test possono essere:
 
 * Scritto dal cliente
 *  scritto in Adobe
-* Strumento open source (alimentato da faro di Google)
+* Open source, strumento
 
    >[!NOTE]
    > Sia i test scritti dal cliente che  test scritti dal Adobe vengono eseguiti in un&#39;infrastruttura containerizzata progettata per eseguire questi tipi di test.
