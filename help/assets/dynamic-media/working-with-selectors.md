@@ -2,10 +2,10 @@
 title: Utilizzo dei selettori
 description: Selezione delle risorse per immagini interattive, video interattivi e banner carosello
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 18%
+source-wordcount: '738'
+ht-degree: 21%
 
 ---
 
@@ -22,7 +22,7 @@ Ad esempio, in questo banner carosello, utilizzate il selettore Prodotto se stat
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Quando selezionate (anziché immettere manualmente) i punti attivi o le mappe immagine a cui si trovano, state utilizzando il selettore. Il selettore del sito funziona solo se siete clienti di AEM Sites. Il selettore di prodotti richiede anche AEM Commerce.
+Quando selezionate (anziché immettere manualmente) i punti attivi o le mappe immagine a cui si trovano, state utilizzando il selettore. Il selettore del sito funziona solo se siete un cliente AEM Sites . Il selettore del prodotto richiede anche AEM Commerce.
 
 ## Selezione di prodotti in Dynamic Media {#selecting-products}
 
@@ -30,7 +30,7 @@ Utilizzate il selettore Prodotto per scegliere un prodotto quando desiderate un 
 
 1. Passa al set carosello, all’immagine interattiva o al video interattivo e tocca la scheda **[!UICONTROL Azioni]**, che è disponibile solo se hai definito un punto attivo o una mappa immagine.
 
-   The Product selector is in the **[!UICONTROL Action Type** area.
+   The Product selector is in the **[!UICONTROL Action Type]** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -42,11 +42,11 @@ Utilizzate il selettore Prodotto per scegliere un prodotto quando desiderate un 
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Per cambiare la posizione in cui AEM ricerca i dati del prodotto, tocca **[!UICONTROL Sfoglia]** e passa a un&#39;altra cartella.
+   Per cambiare la posizione AEM ricerca dei dati del prodotto, toccate **[!UICONTROL Sfoglia]** e passate a un’altra cartella.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Toccate **[!UICONTROL Ordina]** per per cambiare l’ordinamento di AEM da più recente a meno recente o dal meno recente a meno recente.
+   Toccate **[!UICONTROL Ordina]** per per cambiare l’ordinamento AEM più recente a meno recente o dal meno recente a meno recente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ Utilizzate il selettore Prodotto per scegliere un prodotto quando desiderate un 
 
 ## Selezione di siti in contenuti multimediali dinamici {#selecting-sites}
 
-Utilizzate il selettore del sito per scegliere una pagina Web quando desiderate che un punto di attivazione o una mappa immagine rimangano collegati a una pagina Web gestita all’interno dei siti AEM.
+Utilizzate il selettore del sito per scegliere una pagina Web quando desiderate che un punto di attivazione o una mappa immagine rimangano collegati a una pagina Web gestita all’interno AEM siti.
 
 1. Passa al set carosello, all’immagine interattiva o al video interattivo e tocca la scheda **[!UICONTROL Azioni]**, che è disponibile solo se hai definito un punto attivo o una mappa immagine.
 
@@ -80,7 +80,7 @@ Utilizzate il selettore del sito per scegliere una pagina Web quando desiderate 
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. In modalità **[!UICONTROL Anteprima]** , toccando il punto di attivazione o la mappa immagine si passa alla pagina del sito AEM specificata.
+1. In modalità **[!UICONTROL Anteprima]** , toccando il punto di attivazione o la mappa immagine, passate alla pagina del sito AEM specificata.
 
 ## Selezione delle risorse in Contenuti multimediali dinamici {#selecting-assets}
 
@@ -97,7 +97,7 @@ Per ulteriori informazioni, consultate anche [Selezione](/help/assets/search-ass
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Per cambiare la posizione in cui AEM ricerca le risorse, passa a un’altra cartella nel campo **[!UICONTROL Percorso]** .
+   Per cambiare la posizione AEM ricerca delle risorse, passate a un’altra cartella nel campo **[!UICONTROL Percorso]** .
 
    Toccate **[!UICONTROL Raccolta]** per cercare solo le risorse all&#39;interno delle raccolte.
 
@@ -109,4 +109,5 @@ Per ulteriori informazioni, consultate anche [Selezione](/help/assets/search-ass
 
 1. Toccate il segno di spunta per selezionare la risorsa. La risorsa viene visualizzata.
 
-   ![chlimage_1-536](assets/chlimage_1-536.png)—>
+   ![chlimage_1-536](assets/chlimage_1-536.png)
+-->
