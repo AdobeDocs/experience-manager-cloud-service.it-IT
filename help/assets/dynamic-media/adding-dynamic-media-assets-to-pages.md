@@ -2,9 +2,9 @@
 title: Aggiunta di risorse Dynamic Media alle pagine
 description: Come aggiungere componenti per contenuti multimediali dinamici a una pagina in AEM
 translation-type: tm+mt
-source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '3124'
+source-wordcount: '3121'
 ht-degree: 32%
 
 ---
@@ -117,6 +117,7 @@ Il componente Contenuti multimediali dinamici è elegante. A seconda se aggiunge
 >
 >* Più istanze del componente Contenuti multimediali dinamici in uso sulla stessa pagina.
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
+
 >
 >
 L’assegnazione di un predefinito per visualizzatori diverso a ciascun componente per contenuti multimediali dinamici nella pagina non è supportata.
@@ -188,17 +189,18 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 >
 >Per impostazione predefinita, il componente video elementi multimediali dinamici è adattivo. If you want to make it a fixed size, set it in the component with the **[!UICONTROL Width]** and **[!UICONTROL Height]** in the **[!UICONTROL Advanced]** tab.
 
-* **[!Predefinito** per visualizzatori UICONTROL - Selezionate un predefinito per visualizzatori video esistente dal menu a discesa. Se il predefinito per visualizzatori che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. 
+* **[!UICONTROL Predefinito]** visualizzatore: selezionate un predefinito per visualizzatori video esistente dal menu a discesa. Se il predefinito per visualizzatori che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. 
 
-* **[!Modificatori** visualizzatore UICONTROL: i modificatori di visualizzatori assumono la forma di coppia nome=valore con un carattere di delimitazione &amp; e consentono di modificare i visualizzatori come indicato nella Guida di riferimento dei visualizzatori Adobe. Un esempio di modificatore visualizzatore è `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Modificatori]** visualizzatore - I modificatori visualizzatore assumono la forma di coppia nome=valore con un carattere di delimitazione &amp; e consentono di modificare i visualizzatori come indicato nella guida di riferimento dei visualizzatori di Adobi . Un esempio di modificatore visualizzatore è `posterimage=img.jpg&caption=text.vtt,1`
 
    I modificatori del visualizzatore consentono, ad esempio, di effettuare le seguenti operazioni:
 
    * Associare un file di sottotitoli a un video: [didascalia](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Associare un file di navigazione a un video: [navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Title**- Modifica il titolo del video.
+* **[!UICONTROL Titolo]**(Title) - Consente di modificare il titolo del video.
 
 * **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
@@ -208,7 +210,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
 Usate il componente Contenuti multimediali dinamici per aggiungere le risorse di immagine Ritaglio avanzato alle pagine Web. Quando modifichi il componente puoi scegliere di usare un predefinito visualizzatore video predefinita per la riproduzione del video nella pagina.
 
-Consultate [Utilizzo di Smart Crop con AEM Assets Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+Consultate [Utilizzo di Smart Crop con  AEM Assets Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 Consultate anche Profili [immagine](/help/assets/dynamic-media/image-profiles.md).
 
@@ -254,6 +256,7 @@ Il componente Contenuti multimediali interattivi è avanzato. A seconda se aggiu
 >
 >* Più istanze del componente Supporto interattivo in uso sulla stessa pagina.
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
+
 >
 >
 Tenete presente che l’assegnazione di un predefinito per visualizzatori diverso a ciascun componente per contenuti multimediali interattivi in quella pagina non è supportata.
@@ -295,6 +298,7 @@ Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse p
 >
 >* Nella stessa pagina vengono utilizzate più istanze del componente **[!UICONTROL Panoramic Media]** .
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
+
 >
 >
 Non è supportata l’assegnazione di un predefinito visualizzatore diverso a ciascun componente **[!UICONTROL Elemento multimediale panoramico]** di quella pagina.
@@ -333,10 +337,10 @@ Per informazioni dettagliate sull’utilizzo di HTTP/2 con l’account per conte
 
 >[!MORELIKETHIS]
 >
->* [Utilizzo del lettore video in AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Utilizzo di video interattivi con AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Il visualizzatore delle risorse con AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Utilizzo della miniatura video personalizzata con AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Gestione del colore con AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [Utilizzo della nitidezza delle immagini con AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Utilizzo del lettore video in AEM file multimediali dinamici](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [Utilizzo di video interattivi con AEM file multimediali dinamici](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Il visualizzatore delle risorse con AEM elementi multimediali dinamici](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Utilizzo della miniatura video personalizzata con AEM elemento multimediale dinamico](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Gestione del colore con AEM elementi multimediali dinamici](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Utilizzo della nitidezza delle immagini con AEM elementi multimediali dinamici](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
