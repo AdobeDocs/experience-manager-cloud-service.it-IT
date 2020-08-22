@@ -1,10 +1,10 @@
 ---
 title: Fase di post-pubblicazione
 description: Fase di post-pubblicazione
-translation-type: ht
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
-workflow-type: ht
-source-wordcount: '242'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '241'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Per ulteriori informazioni sugli strumenti di sviluppo, consulta [Implementazion
 
 Come utente, puoi accedere a CRX/DE Lite nell’ambiente di sviluppo, ma non in quello di stage o produzione.
 
->[IMPORTANTE]
+>[!IMPORTANT]
 >La scrittura in archivi immutabili come `/libs` e `/apps` in fase di runtime genera errori. Inoltre, in qualità di cliente, non puoi accedere agli strumenti per sviluppatori per gli ambienti di produzione e di staging.
 
 Per informazioni su come sviluppare l’applicazione AEM utilizzando CRX/DE Lite, consulta [Sviluppo con CRX/DE Lite](https://docs.adobe.com/help/it-IT/experience-manager-65/developing/devtools/developing-with-crxde-lite.html).
