@@ -1,10 +1,10 @@
 ---
 title: Utilizza l’editor Rich Text in [!DNL Adobe Experience Manager] per creare contenuti.
 description: Utilizza l’editor Rich Text di [!DNL Experience Manager] per creare contenuti.
-translation-type: ht
-source-git-commit: 5437329c55bd7da6d8b966a7f01c9e57ff1feb59
-workflow-type: ht
-source-wordcount: '287'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '286'
 ht-degree: 100%
 
 ---
@@ -51,7 +51,7 @@ Altre opzioni dell’editor Rich Text comprendono:
 
 Fai clic su Riduci a icona per chiudere la modalità a tutto schermo.
 
->[!Tip]
+>[!TIP]
 >
 >Copiare gli elenchi nidificati da [!DNL Microsoft Word] nell’editor Rich Text può dare risultati incoerenti. Piuttosto, incolla come testo e apporta manualmente le regolazioni necessarie.
 
