@@ -1,11 +1,11 @@
 ---
-title: Gestione registri - Cloud Service
-description: Gestione registri - Cloud Service
+title: Gestisci registri - Cloud Service
+description: Gestisci registri - Cloud Service
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 17%
+source-wordcount: '207'
+ht-degree: 22%
 
 ---
 
@@ -22,7 +22,7 @@ Oppure, la pagina **Ambienti** :
 
 ![](assets/download-logs.png)
 
->[!Note]
+>[!NOTE]
 >Indipendentemente da dove viene aperto, viene visualizzata la stessa finestra di dialogo e è possibile scaricare un singolo file di registro.
 
 ![](assets/manage-logs3.png)
@@ -67,12 +67,12 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!Note]
+>[!NOTE]
 >Mentre i **Log Downloads** (Download dei registri) saranno disponibili sia dall’interfaccia utente che tramite l’API, **Log Tailing** (Coda del registro) è accessibile solo con API/CLI.
 
 ### Risorse aggiuntive {#resources}
 
-Per ulteriori informazioni sull&#39;API di Cloud Manager e l&#39;interfaccia CLI di Adobe I/O, fare riferimento alle seguenti risorse aggiuntive:
+Per ulteriori informazioni sull&#39;API di Cloud Manager e sull&#39;interfaccia CLI I/O  Adobe, fare riferimento alle seguenti risorse aggiuntive:
 
 * [Documentazione API di Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [CLI I/O di Adobe](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [CLI I/O Adobe](https://github.com/adobe/aio-cli-plugin-cloudmanager)
