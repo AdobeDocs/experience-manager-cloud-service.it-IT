@@ -2,9 +2,9 @@
 title: Video
 description: Scopri come lavorare con i video in Contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
 workflow-type: tm+mt
-source-wordcount: '10056'
+source-wordcount: '10052'
 ht-degree: 10%
 
 ---
@@ -356,7 +356,7 @@ Questa tabella descrive la velocità dati delle velocità di connessione tipiche
 
 **La risoluzione **descrive l&#39;altezza e la larghezza di un file video, in pixel. La maggior parte dei video sorgente viene memorizzata ad alta risoluzione (ad esempio, 1920 x 1080). Per lo streaming, il video sorgente viene compresso in una risoluzione più piccola (640 x 480 o inferiore).
 
-La risoluzione e la velocità dati sono due fattori strettamente correlati che determinano la qualità video. Per mantenere la stessa qualità video, più elevato è il numero di pixel in un file video (più alta è la risoluzione), più alta deve essere la velocità dati. Ad esempio, considerate il numero di pixel per fotogramma in una risoluzione 320x240 e un file video con risoluzione 640x480:
+La risoluzione e la velocità dati sono due fattori strettamente correlati che determinano la qualità video. Per mantenere la stessa qualità video, più elevato è il numero di pixel in un file video (più alta è la risoluzione), più alta deve essere la velocità dati. Ad esempio, considerate il numero di pixel per fotogramma in una risoluzione 320 x 240 e un file video con risoluzione 640 x 480:
 
 | Risoluzione | Pixel per fotogramma |
 |--- |--- |
@@ -443,7 +443,7 @@ Tenete presente che Google apporta periodicamente delle modifiche alla propria i
 
 >[!NOTE]
 >
->I seguenti passaggi erano accurati al momento di questa scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
+>I seguenti passaggi erano accurati al momento della scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
 
 Per configurare le impostazioni di Google Cloud:
 
@@ -476,7 +476,7 @@ Per configurare le impostazioni di Google Cloud:
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Nella parte superiore della pagina API e servizi, toccate **[!UICONTROL Abilita API e servizi]**.
-1. Nella pagina Libreria API, a sinistra, nella sezione **[!UICONTROL Categoria]**, toccate **[!UICONTROL YouTube]**. Sul lato destro della pagina, toccate **[!UICONTROL YouTube Data API]**.
+1. Nella pagina Libreria API, a sinistra, in **[!UICONTROL Categoria]**, toccate **[!UICONTROL YouTube]**. Sul lato destro della pagina, toccate **[!UICONTROL YouTube Data API]**.
 1. Nella pagina YouTube Data API v3, toccate **[!UICONTROL Abilita]**.
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
@@ -889,7 +889,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 1. Per i flussi di lavoro completati, consulta Archivio flussi di lavoro, accessibile da **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Archivio]**. **[!UICONTROL Archivio flussi di lavoro]** elenca tutte le attività del flusso di lavoro che sono state completate.
 
    >[!NOTE]
-   Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
+   Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -972,10 +972,10 @@ Per visualizzare i rapporti video:
 1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi, nella barra a sinistra, seleziona **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti video]**.
 1. Nella pagina Rapporti video, effettuate una delle seguenti operazioni:
 
-   * Nell&#39;angolo superiore destro, toccate l&#39;icona **[UICONTROL Aggiorna rapporto]** video.
+   * Nell&#39;angolo superiore destro, toccate l&#39;icona **[!UICONTROL Aggiorna rapporto]** video.
 È necessario utilizzare Aggiorna solo se la data di fine del rapporto è il giorno corrente. In questo modo, potrai vedere il tracciamento video che si è verificato dall’ultima volta che hai eseguito il rapporto.
 
-   * Vicino all&#39;angolo superiore destro, toccate l&#39;icona **[UICONTROL Date Picker]** .
+   * Nell&#39;angolo superiore destro, toccate l&#39;icona **[!UICONTROL Selezione]** data.
 Specificate l’intervallo di date iniziale e finale per il quale desiderate i dati video, quindi toccate **[!UICONTROL Esegui rapporto]**.
 
    La casella del gruppo Metriche principali identifica diverse misurazioni aggregate per tutti i *video pubblicati *in tutto il sito.
@@ -1011,7 +1011,7 @@ Per visualizzare i rapporti video basati su un visualizzatore video creato con l
 
    Il `config2` parametro abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per la società che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe Analytics  specifiche per il cliente.
 
-   Il valore corretto per il parametro config2 si trova sia nella funzione **[!UICONTROL Incorpora codice]** che in copia **[UICONTROL URL]**. Nell’URL dal comando di copia **[UICONTROL URL]**, il parametro da cercare è `&config2=<value>`. Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
+   Il valore corretto per il parametro config2 si trova sia nella funzione **[!UICONTROL Incorpora codice]** che in copia **[!UICONTROL URL]**. Nell’URL dal comando di copia **[!UICONTROL URL]**, il parametro da cercare è `&config2=<value>`. Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
 
 1. Nel codice del visualizzatore video personalizzato, aggiungete AppMeasurementBridge .jsp alla pagina del visualizzatore effettuando le seguenti operazioni:
 
@@ -1066,7 +1066,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
 
 1. Usate un’applicazione o un servizio di terze parti per creare il file di sottotitoli o sottotitoli video.
 
-   Verificate che il file creato sia conforme allo standard WebVTT (Web Video Text Tracks). L’estensione dei file di sottotitoli è .vtt. Per ulteriori informazioni sullo standard per sottotitoli WebVTT,
+   Verificate che il file creato sia conforme allo standard WebVTT (Web Video Text Tracks). L’estensione del nome file dei sottotitoli è .vtt. Per ulteriori informazioni sullo standard per sottotitoli WebVTT,
 
    Vedere [WebVTT: Il formato](https://dev.w3.org/html5/webvtt/)Web Video Text Tracks.
 
