@@ -1,10 +1,10 @@
 ---
-title: Regole di qualità del codice personalizzato - Servizi cloud
-description: Regole di qualità del codice personalizzato - Servizi cloud
+title: Regole di qualità del codice personalizzato - Cloud Services
+description: Regole di qualità del codice personalizzato - Cloud Services
 translation-type: tm+mt
-source-git-commit: f2fa2adeec74bfa687ed59d3e0847e6246028040
+source-git-commit: 437652f9ed5d0fc4abae22e470b650bd1c2bedb6
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2253'
 ht-degree: 6%
 
 ---
@@ -92,7 +92,7 @@ public class DoThis implements Runnable {
 
 **Dal** momento: Versione 2018.4.0
 
-L&#39;utilizzo di una stringa di formato da un&#39;origine esterna (ad esempio un parametro di richiesta o contenuto generato dall&#39;utente) può determinare l&#39;esposizione di un&#39;applicazione agli attacchi di negazione del servizio. In alcune circostanze una stringa di formato può essere controllata esternamente, ma è consentita solo da fonti attendibili.
+L&#39;utilizzo di una stringa di formato da un&#39;origine esterna (ad esempio, un parametro di richiesta o contenuto generato dall&#39;utente) può determinare l&#39;esposizione di un&#39;applicazione agli attacchi di negazione del servizio. In alcune circostanze una stringa di formato può essere controllata esternamente, ma è consentita solo da fonti attendibili.
 
 #### Codice non conforme {#non-compliant-code-1}
 
@@ -114,7 +114,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 **Dal** momento: Versione 2018.6.0
 
-Durante l&#39;esecuzione di richieste HTTP dall&#39;interno di un&#39;applicazione AEM, è fondamentale assicurarsi che i timeout corretti siano configurati in modo da evitare inutili usi di thread. Purtroppo, il comportamento predefinito sia del client HTTP predefinito Java (java.net.HttpUrlConnection) che del client Apache HTTP Components comunemente utilizzato non ha mai un timeout, pertanto i timeout devono essere impostati in modo esplicito. Inoltre, come procedura ottimale, questi timeout non devono superare i 60 secondi.
+Durante l&#39;esecuzione di richieste HTTP dall&#39;interno di un&#39;applicazione AEM, è fondamentale assicurarsi che i timeout corretti siano configurati in modo da evitare il consumo di thread non necessario. Purtroppo, il comportamento predefinito sia del client HTTP predefinito Java (java.net.HttpUrlConnection) che del client Apache HTTP Components comunemente utilizzato non ha mai un timeout, pertanto i timeout devono essere impostati in modo esplicito. Inoltre, come procedura ottimale, questi timeout non devono superare i 60 secondi.
 
 #### Codice non conforme {#non-compliant-code-2}
 
@@ -350,7 +350,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### Evitate di effettuare l&#39;accesso a INFO quando gestite le richieste GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Evitate di effettuare l&#39;accesso a INFO quando gestite richieste GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Chiave**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
@@ -358,7 +358,7 @@ public void doThis() throws Exception {
 
 **Gravità**: Minore
 
-In generale, il livello di registro INFO deve essere utilizzato per delimitare le azioni importanti e, per impostazione predefinita, AEM è configurato per il login al livello INFO o superiore. I metodi GET e HEAD dovrebbero essere sempre operazioni di sola lettura e quindi non costituiscono azioni importanti. La registrazione a livello INFO in risposta a richieste GET o HEAD potrebbe creare un disturbo significativo del registro, rendendo più difficile l&#39;identificazione di informazioni utili nei file di registro. La registrazione durante la gestione delle richieste GET o HEAD deve essere a livello di AVVISO o ERRORE quando qualcosa è andato storto o a livello di DEBUG o TRACE, se utili informazioni più approfondite sulla risoluzione dei problemi.
+In generale, il livello di registro INFO dovrebbe essere utilizzato per delimitare azioni importanti e, per impostazione predefinita, AEM configurato per il login al livello INFO o superiore. I metodi GET e HEAD devono essere sempre di sola lettura e non costituiscono pertanto azioni importanti. La registrazione a livello di INFO in risposta a richieste di GET o HEAD può generare un disturbo significativo del registro, rendendo più difficile l’identificazione di informazioni utili nei file di registro. La registrazione durante la gestione delle richieste di GET o HEAD deve essere a livello di AVVISO o ERRORE quando si è verificato un errore o a livello di DEBUG o di TRACE, se utili informazioni più approfondite sulla risoluzione dei problemi.
 
 >[!CAUTION]
 >
@@ -462,7 +462,7 @@ public void doThis() {
 
 **Dal** momento: Versione 2018.4.0
 
-Come già detto, il contesto è fondamentale per comprendere i messaggi di registro. Se si utilizza Exception.printStackTrace(), **solo** la traccia dello stack viene restituita al flusso di errore standard, perdendo così tutto il contesto. Inoltre, in un’applicazione multi-thread come AEM, se vengono stampate più eccezioni utilizzando questo metodo in parallelo, le tracce dello stack possono sovrapporsi e creare confusione significativa. Le eccezioni devono essere registrate solo tramite il framework di registrazione.
+Come già detto, il contesto è fondamentale per comprendere i messaggi di registro. Se si utilizza Exception.printStackTrace(), **solo** la traccia dello stack viene restituita al flusso di errore standard, perdendo così tutto il contesto. Inoltre, in un&#39;applicazione multi-thread come AEM se vengono stampate più eccezioni utilizzando questo metodo in parallelo, le loro tracce di stack possono sovrapporsi e generare una notevole confusione. Le eccezioni devono essere registrate solo tramite il framework di registrazione.
 
 #### Codice non conforme {#non-compliant-code-11}
 
@@ -498,7 +498,7 @@ public void doThis() {
 
 **Dal** momento: Versione 2018.4.0
 
-L’accesso in AEM deve essere sempre effettuato tramite il framework di registrazione (SLF4J). L&#39;output diretto ai flussi di output standard o di errore standard perde le informazioni strutturali e contestuali fornite dal framework di registrazione e può, in alcuni casi, causare problemi di prestazioni.
+L’accesso AEM deve essere sempre effettuato tramite il framework di registrazione (SLF4J). L&#39;output diretto ai flussi di output standard o di errore standard perde le informazioni strutturali e contestuali fornite dal framework di registrazione e può, in alcuni casi, causare problemi di prestazioni.
 
 #### Codice non conforme {#non-compliant-code-12}
 
@@ -566,7 +566,7 @@ Sling Scheduler non deve essere utilizzato per le attività che richiedono un&#3
 
 Per ulteriori informazioni sulla gestione dei processi Sling in ambienti cluster, consultate [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) .
 
-### Le API obsolete di AEM non devono essere utilizzate {#sonarqube-aem-deprecated}
+### AEM le API obsolete non devono essere utilizzate {#sonarqube-aem-deprecated}
 
 **Chiave**: AMSCORE-553
 
@@ -576,18 +576,18 @@ Per ulteriori informazioni sulla gestione dei processi Sling in ambienti cluster
 
 **Dal** momento: Versione 2020.5.0
 
-La superficie dell’API AEM è soggetta a revisioni costanti per identificare le API per le quali l’utilizzo è scoraggiato e quindi considerato obsoleto.
+La superficie dell&#39;API AEM è soggetta a revisione costante per identificare le API per le quali l&#39;utilizzo è scoraggiato e quindi considerato obsoleto.
 
 In molti casi, queste API sono obsolete utilizzando l&#39;annotazione standard Java *@Deprecated* e, come tali, identificata da `squid:CallToDeprecatedMethod`.
 
-Tuttavia, in alcuni casi un’API è obsoleta nel contesto di AEM ma potrebbe non essere obsoleta in altri contesti. Questa regola identifica questa seconda classe.
+Tuttavia, in alcuni casi un&#39;API è obsoleta nel contesto di AEM ma non può essere rimossa in altri contesti. Questa regola identifica questa seconda classe.
 
 ## Regole contenuto OakPAL {#oakpal-rules}
 
 Di seguito sono riportati i controlli OakPAL eseguiti da Cloud Manager.
 
 >[!NOTE]
->OakPAL è un framework sviluppato da un partner AEM (e vincitore di AEM Rockstar North America 2019) che convalida i pacchetti di contenuto utilizzando un repository Oak standalone.
+>OakPAL è un framework sviluppato da un partner AEM (e vincitore del 2019 AEM Rockstar Nord America) che convalida i pacchetti di contenuto utilizzando un repository Oak standalone.
 
 ### I pacchetti cliente non devono creare o modificare nodi in /libs {#oakpal-customer-package}
 
@@ -599,7 +599,7 @@ Di seguito sono riportati i controlli OakPAL eseguiti da Cloud Manager.
 
 **Dal** momento: Versione 2019.6.0
 
-È stata una procedura consigliata di vecchia data che la struttura di contenuti /libs nell’archivio dei contenuti di AEM venga considerata di sola lettura dai clienti. La modifica di nodi e proprietà in */libs* comporta rischi significativi per gli aggiornamenti principali e secondari. Le modifiche a */libs* devono essere apportate solo da Adobe attraverso canali ufficiali.
+È stata una procedura consigliata di vecchia data che la struttura di contenuto /libs nell&#39;archivio dei contenuti AEM venga considerata di sola lettura dai clienti. La modifica di nodi e proprietà in */libs* comporta rischi significativi per gli aggiornamenti principali e secondari. Le modifiche a */libs* devono essere apportate solo  Adobe attraverso canali ufficiali.
 
 ### I pacchetti non devono contenere configurazioni OSGi duplicate {#oakpal-package-osgi}
 
@@ -687,7 +687,7 @@ Simili ai *pacchetti Non devono contenere configurazioni OSGi duplicate* si trat
 
 **Dal** momento: Versione 2020.5.0
 
-La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definisce la modalità di authoring predefinita in AEM. Poiché l’interfaccia classica è obsoleta a partire da AEM 6.4, ora viene generato un problema quando la modalità di authoring predefinita è configurata per l’interfaccia classica.
+La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definisce la modalità di authoring predefinita all’interno di AEM. Poiché l’interfaccia classica è obsoleta a partire dalla AEM 6.4, ora viene generato un problema quando la modalità di authoring predefinita è configurata per l’interfaccia classica.
 
 ### I Componenti Con Finestre Di Dialogo Devono Avere Finestre Di Dialogo Touch {#oakpal-components-dialogs}
 
@@ -699,13 +699,13 @@ La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 
 **Dal** momento: Versione 2020.5.0
 
-I componenti AEM che dispongono di una finestra di dialogo dell’interfaccia classica devono sempre disporre di una finestra di dialogo dell’interfaccia utente touch per fornire un’esperienza di authoring ottimale e per essere compatibili con il modello di distribuzione del servizio cloud, in cui l’interfaccia classica non è supportata. Questa regola verifica i seguenti scenari:
+AEM I componenti che dispongono di una finestra di dialogo dell’interfaccia classica devono sempre disporre di una finestra di dialogo dell’interfaccia utente touch corrispondente sia per fornire un’esperienza di authoring ottimale, sia per essere compatibili con il modello di distribuzione del Cloud Service, in cui l’interfaccia classica non è supportata. Questa regola verifica i seguenti scenari:
 
 * Un componente con una finestra di dialogo dell’interfaccia classica (ovvero un nodo secondario della finestra di dialogo) deve avere una finestra di dialogo dell’interfaccia utente touch corrispondente (ovvero un nodo `cq:dialog` secondario).
 * Un componente con una finestra di dialogo per la progettazione dell’interfaccia classica (ad es. un nodo design_dialog) deve avere una finestra di dialogo corrispondente per la progettazione dell’interfaccia utente touch (ovvero un nodo `cq:design_dialog` secondario).
 * Un componente con una finestra di dialogo per l’interfaccia classica e una finestra di dialogo per la progettazione dell’interfaccia classica deve avere una finestra di dialogo per l’interfaccia utente touch corrispondente e una finestra di dialogo per la progettazione dell’interfaccia touch corrispondente.
 
-La documentazione Strumenti di modernizzazione AEM fornisce documentazione e strumenti per la conversione dei componenti dall’interfaccia classica all’interfaccia utente touch. Per ulteriori informazioni, consultate [Strumenti](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) di modernizzazione AEM.
+La documentazione AEM Strumenti di modernizzazione fornisce documentazione e strumenti per la conversione dei componenti dall’interfaccia classica all’interfaccia utente touch. Per ulteriori informazioni, consulta [AEM Strumenti](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) di modernizzazione.
 
 ### I pacchetti non devono mescolare contenuto variabile e immutabile {#oakpal-packages-immutable}
 
@@ -717,9 +717,9 @@ La documentazione Strumenti di modernizzazione AEM fornisce documentazione e str
 
 **Dal** momento: Versione 2020.5.0
 
-Per essere compatibile con il modello di distribuzione del servizio cloud, i singoli pacchetti di contenuto devono contenere contenuti per le aree immutabili dell&#39;archivio (ovvero, non `/apps and /libs, although /libs` devono essere modificati dal codice cliente e causeranno una violazione separata) o l&#39;area modificabile (ovvero tutto il resto), ma non entrambi. Ad esempio, un pacchetto che include entrambi `/apps/myco/components/text and /etc/clientlibs/myco` non è compatibile con il servizio cloud e causerà la segnalazione di un problema.
+Per essere compatibile con il modello di distribuzione del Cloud Service, i singoli pacchetti di contenuto devono contenere contenuti per le aree immutabili dell&#39;archivio (ovvero, non `/apps and /libs, although /libs` devono essere modificati dal codice cliente e causeranno una violazione separata) o l&#39;area modificabile (ovvero tutto il resto), ma non entrambi. Ad esempio, un pacchetto che include entrambi `/apps/myco/components/text and /etc/clientlibs/myco` non è compatibile con il Cloud Service e causerà la segnalazione di un problema.
 
-Per ulteriori informazioni, consultate Struttura [progetto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM.
+Refer to [AEM Project Structure](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
 
 ### Gli Agenti Di Replica Inverti Non Devono Essere Utilizzati {#oakpal-reverse-replication}
 
@@ -731,7 +731,7 @@ Per ulteriori informazioni, consultate Struttura [progetto](https://docs.adobe.c
 
 **Dal** momento: Versione 2020.5.0
 
-Il supporto per la replica inversa non è disponibile nelle distribuzioni del servizio cloud, come descritto nelle note [sulla versione: Rimozione degli agenti](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)di replica.
+Il supporto per la replica inversa non è disponibile nelle distribuzioni di Cloud Service, come descritto nelle note [sulla versione: Rimozione degli agenti](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)di replica.
 
-I clienti che utilizzano la replica inversa devono contattare Adobe per trovare soluzioni alternative.
+I clienti che utilizzano la replica inversa devono contattare  Adobe per soluzioni alternative.
 
