@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
 workflow-type: tm+mt
 source-wordcount: '1640'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * l requisiti di sistema minimi per lo strumento Content Transfer (Trasferimento contenuti) sono AEM 6.3 o versione successiva e JAVA 8. Se utilizzi una precedente versione di AEM, dovrai aggiornare l’archivio dei contenuti ad AEM 6.5 per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-* Content Transfer Tool può essere utilizzato con i seguenti tipi di archivio dati: Archivio dati file, Archivio dati S3 e Archivio dati S3 condiviso. Al momento non supporta Azure Blob Store Data Store.
+* Lo strumento Content Transfer (Trasferimento contenuti) può essere utilizzato con i seguenti tipi di archivio dati: Archivio dati file, Archivio dati S3 e Archivio dati S3 condiviso. Al momento non supporta Azure Blob Store Data Store.
 
 * Se utilizzi un *ambiente Sandbox*, assicurati che sia aggiornato alla versione del 10 giugno 2020 o successiva. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
 
@@ -178,7 +178,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 
 #### Acquisizione integrativa {#top-up-ingestion-process}
 
-Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’*integrazione* dei contenuti differenziali per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
+Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’*integrazione* di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
 
 >[!NOTE]
 >Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service.
