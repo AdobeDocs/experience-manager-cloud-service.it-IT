@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c0a66239e949ee4b460142e392d61e22938896bc
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ In questa pagina sono elencate le risorse di supporto autonomo relative alla sic
 | [Guida utente sull’implementazione](/help/implementing/home.md) | Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione. |
 | [Guida utente dei connettori](/help/connectors/home.md) | Questa guida contiene informazioni su come integrare i connettori in Experience Manager as a Cloud Service. |
 | [Guida utente sulle operazioni](/help/operations/home.md) | Questa guida contiene informazioni sulle operazioni back-end di Experience Manager as a Cloud Service, ad esempio le attività di indicizzazione e manutenzione. |
-| [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri Commerce Integration Framework come Cloud Service in AEM. |
+| [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri Commerce Integration Framework in AEM as a Cloud Service. |
 
 ## Altre risorse su Experience Manager {#other-resources}
 
