@@ -1,23 +1,23 @@
 ---
-title: Stile AEM componenti CIF di base
-description: Stile AEM componenti CIF di base
-translation-type: tm+mt
+title: Personalizzare lo stile dei componenti core CIF di AEM
+description: Personalizzare lo stile dei componenti core CIF di AEM
+translation-type: ht
 source-git-commit: 48805b21500ff3f2629efd6aecb40bb1cdc38cd6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2568'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Stile AEM componenti CIF di base {#style-aem-cif-core-components}
+# Personalizzare lo stile dei componenti core CIF di AEM {#style-aem-cif-core-components}
 
-L&#39;archetipo [](https://github.com/adobe/aem-cif-project-archetype) CIF del progetto [crea un progetto CIF (AEM) di Adobe Experience Manager minimo come punto di partenza per i progetti dei clienti che utilizzano](https://github.com/adobe/aem-core-cif-components)AEM componentidi base CIF. Uno stile predefinito, noto come marchio Venia, viene applicato inizialmente al sito. In questa esercitazione verrà analizzato un nuovo progetto AEM CIF, generato dall&#39;archetype, e verrà illustrato in che modo i componenti CSS e JavaScript utilizzati dai componenti AEM CIF Core sono organizzati. Verrà inoltre creato un nuovo stile utilizzando CSS per sostituire lo stile predefinito del componente Product Teaser.
+[CIF Project Archetype](https://github.com/adobe/aem-cif-project-archetype) crea un progetto Adobe Experience Manager (AEM) CIF minimale da usare come punto di partenza per i progetti dei clienti che utilizzano i [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components). Al sito viene inizialmente applicato lo stile predefinito del marchio Venia. In questa esercitazione, analizzerai un nuovo progetto CIF di AEM generato dall’archetipo, e comprenderai come vengono organizzati e utilizzati CSS e JavaScript utilizzati dai componenti core CIF di AEM. Creerai inoltre un nuovo stile CSS con cui sostituire lo stile predefinito del componente Product Teaser.
 
-![Elementi da creare](/help/commerce-cloud/assets/style-cif-component/what-you-will-build.png)
+![Cosa verrà creato](/help/commerce-cloud/assets/style-cif-component/what-you-will-build.png)
 
 >[!NOTE]
-> Verrà implementato un nuovo stile per il componente Product Teaser che assomiglia a una scheda.
+> Verrà implementato un nuovo stile per il componente Product Teaser, che assomiglia a una scheda.
 
 ## Prerequisiti {#prerequisites}
 
@@ -25,20 +25,20 @@ Sono necessari i seguenti strumenti e tecnologie:
 
 * [Java 1.8](https://www.oracle.com/technetwork/java/javase/downloads/index.html) o [Java 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html) (solo AEM 6.5+)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o successivo)
-* Adobe Experience Manager  (istanza locale)
-   * [AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
-   * [AEM 6.4.4+](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/sp-release-notes.html)
-* Magento che esegue una [versione compatibile con archetype](https://github.com/adobe/aem-cif-project-archetype#requirements)
+* Adobe Experience Manager (istanza locale)
+   * [AEM 6.5](https://docs.adobe.com/content/help/it-IT/experience-manager-65/deploying/introduction/technical-requirements.html)
+   * [AEM 6.4.4+](https://docs.adobe.com/content/help/it-IT/experience-manager-64/release-notes/sp-release-notes.html)
+* Magento con una [versione compatibile con l’archetipo](https://github.com/adobe/aem-cif-project-archetype#requirements)
 
-## Generazione di un progetto {#generate-project}
+## Generare un progetto {#generate-project}
 
-Genereremo un nuovo progetto AEM CIF utilizzando l&#39;archetipo [](https://github.com/adobe/aem-cif-project-archetype) CIF del progetto e quindi ignoreremo gli stili predefiniti.
+Verrà generato un nuovo progetto CIF di AEM utilizzando [CIF Project Archetype](https://github.com/adobe/aem-cif-project-archetype), quindi verranno sostituiti gli stili predefiniti.
 
-**Sentitevi liberi di utilizzare un progetto** esistente (basato sul tipo di archivio del progetto CIF) e saltate questa sezione.
+**Puoi anche utilizzare un progetto esistente** (basato su CIF Project Archetype) e saltare questa sezione.
 
-1. Determinate la versione più recente di CIF Project Archetype visualizzando [la versione più recente su GitHub](https://github.com/adobe/aem-cif-project-archetype/releases/latest). Nel passaggio successivo sostituisci `x.y.z` con la versione dell’ultima versione.
+1. Determina la versione più recente di CIF Project Archetype visualizzandola [su GitHub](https://github.com/adobe/aem-cif-project-archetype/releases/latest). Nel passaggio successivo, sostituisci `x.y.z` con la versione più recente.
 
-1. Eseguite il seguente comando Maven per generare un nuovo progetto in modalità [](https://maven.apache.org/archetype/maven-archetype-plugin/examples/generate-batch.html)batch.
+1. Esegui il seguente comando Maven per generare un nuovo progetto in [modalità batch](https://maven.apache.org/archetype/maven-archetype-plugin/examples/generate-batch.html).
 
    ```terminal
    mvn archetype:generate -B \
@@ -59,42 +59,42 @@ Genereremo un nuovo progetto AEM CIF utilizzando l&#39;archetipo [](https://gith
        -DoptionEmbedConnector=y
    ```
 
-1. Create e distribuite il progetto in un’istanza locale di AEM:
+1. Crea e implementa il progetto in un’istanza locale di AEM:
 
    ```shell
    $ cd acme-store/
    $ mvn clean install -PautoInstallAll
    ```
 
-1. Aggiungete le configurazioni OSGi necessarie per collegare l’istanza AEM a un’istanza di Magento o aggiungere le configurazioni al progetto appena creato.
+1. Aggiungi le configurazioni OSGi necessarie per collegare l’istanza AEM a un’istanza di Magento o aggiungi le configurazioni al progetto appena creato.
 
-1. A questo punto è necessario disporre di una versione funzionante di uno storefront che sia collegata a un&#39;istanza di Magento. Passa alla pagina `US` > `Home` in: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. A questo punto è necessario disporre di una versione funzionante di una vetrina che sia collegata a un’istanza di Magento. Passa alla pagina `US` > `Home` in: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
-   Dovresti vedere che il negozio al momento sta usando il tema Venia. Se si espande il menu principale dello storefront, dovrebbero essere visualizzate diverse categorie, a indicare che il Magento di connessione funziona.
+   Dovresti vedere che la vetrina si basa al momento sul tema Venia. Espandi il menu principale della vetrina: dovresti vedere diverse categorie, a indicare che la connessione a Magento funziona.
 
-   ![Storefront configurato con il tema Venia](/help/commerce-cloud/assets/style-cif-component/acme-store-configured.png)
+   ![Vetrina configurata con il tema Venia](/help/commerce-cloud/assets/style-cif-component/acme-store-configured.png)
 
 ## Introduzione alle librerie client {#introduction-to-client-libraries}
 
-I CSS e JavaScript responsabili per il rendering del tema/stili dello storefront sono gestiti in AEM da una libreria [o clientlibs](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) Client per farla breve. Le librerie client forniscono un meccanismo per organizzare CSS e Javascript nel codice di un progetto e quindi distribuirli sulla pagina.
+I CSS e JavaScript responsabili del rendering del tema o degli stili della vetrina sono gestiti in AEM da una [libreria client](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html), o clientlib. Le librerie client consentono di organizzare CSS e JavaScript nel codice di un progetto e quindi di distribuirli sulla pagina.
 
-Il modo in cui possiamo applicare stili specifici per il marchio AEM componenti CIF di base è aggiungendo e ignorando i CSS gestiti da queste librerie client. È fondamentale comprendere in che modo le librerie client sono strutturate e incluse nella pagina.
+Per applicare gli stili di un particolare brand ai componenti core CIF di AEM, si devono aggiungere nuovi CSS con cui e sovrascrivere quelli gestiti da queste librerie client. È fondamentale comprendere in che modo le librerie client sono strutturate e incluse nella pagina.
 
 ### Librerie client di progetto {#project-client-libraries}
 
-In seguito verranno analizzate le librerie client generate automaticamente da archetype. Utilizzate l&#39;IDE di vostra scelta per [importare il progetto generato nell&#39;esercizio](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment)precedente.
+Ora esaminiamo le librerie client generate automaticamente dall’archetipo. Utilizza l’IDE che preferisci per [importare il progetto generato nell’esercizio precedente](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment).
 
-1. Spostatevi ed espandete il modulo **ui.apps** ed espandete la gerarchia delle cartelle per: `ui.apps/src/main/content/jcr_root/apps/acme/clientlibs`:
+1. Passa al modulo **ui.apps** ed espandilo, quindi espandi la gerarchia delle cartelle fino a `ui.apps/src/main/content/jcr_root/apps/acme/clientlibs`:
 
-   ![ui.apps clientlibs](/help/commerce-cloud/assets/style-cif-component/ui-apps-clientli-folder.png)
+   ![clientlibs di ui.apps](/help/commerce-cloud/assets/style-cif-component/ui-apps-clientli-folder.png)
 
-   Ci sono due cartelle sotto, **clientlib-base** e **tema**.
+   Ci sono due cartelle secondarie: **clientlib-base** e **theme**.
 
-1. **clientlib-base** - Si tratta di una libreria client vuota che incorpora semplicemente le dipendenze necessarie dai [AEM Componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)principali.
+1. **clientlib-base**: si tratta di una libreria client vuota che incorpora semplicemente le dipendenze necessarie dai [componenti core di AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html).
 
-   ![Clientlib-base](/help/commerce-cloud/assets/style-cif-component/clientlib-base-folderhierarchy.png)
+   ![clientlib-base](/help/commerce-cloud/assets/style-cif-component/clientlib-base-folderhierarchy.png)
 
-   Di seguito è riportata la definizione XML di **clientlib-base** (il `.content.xml` file):
+   Di seguito è riportata la definizione XML di **clientlib-base** (il file `.content.xml`):
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -105,19 +105,19 @@ In seguito verranno analizzate le librerie client generate automaticamente da ar
        embed="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v2,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2]"/>
    ```
 
-   `acme.wcm.base` è la categoria per questa libreria client. Considerate una categoria come un tag. Questo verrà utilizzato per includere o incorporare la libreria nella pagina.
+   `acme.wcm.base` è la categoria per questa libreria client. Considera una categoria come un tag. Questa verrà utilizzata per includere o incorporare la libreria nella pagina.
 
-   Osservare la `embed` proprietà e la matrice di altre categorie clientlib. Ciascuna di queste categorie rappresenta una libreria client. Ad esempio, `core.wcm.components.accordion.v1` include il codice JavaScript necessario per il funzionamento del componente [Accordion](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/accordion.html) .
+   Osserva la proprietà `embed` e l’array di altre categorie clientlib. Ciascuna di queste categorie rappresenta una libreria client. Ad esempio, `core.wcm.components.accordion.v1` include il codice JavaScript necessario per il funzionamento del [componente per pannello a soffietto](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/accordion.html).
 
-   Utilizzando le proprietà `embed` e `categories` è possibile gestire e includere le librerie client di diversi progetti.
+   Utilizzando le proprietà `embed` e `categories` puoi gestire e includere le librerie client di diversi progetti.
 
-   `allowProxy=true` assicura che la libreria client CSS e JavaScript vengano serviti da un percorso con il prefisso: `/etc.clientlibs`. In questo modo il codice dell&#39;applicazione in `/apps` questione rimane protetto dagli utenti finali, ma i CSS e JavaScript necessari per il funzionamento del sito Web possono essere serviti in modo anonimo. Ulteriori dettagli sulla proprietà [allowProxy sono disponibili qui](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
+   `allowProxy=true` assicura che le librerie client CSS e JavaScript vengano distribuite da un percorso con prefisso `/etc.clientlibs`. In questo modo il codice dell’applicazione in `/apps` rimane protetto dagli utenti finali, ma i CSS e JavaScript necessari per il funzionamento del sito Web possono essere serviti in modo anonimo. Ulteriori dettagli sulla [proprietà allowProxy sono disponibili qui](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
 
-1. **tema** - È la libreria client che contiene il tema iniziale e CSS per il progetto CIF. Questa libreria client è progettata per essere personalizzata da ogni implementazione ed è utile iniziare con alcuni stili esistenti in modo che i componenti siano funzionali per iniziare.
+1. **theme**: questa è la libreria client che contiene il tema e gli stili CSS iniziali per il progetto CIF. Questa libreria client è progettata per essere personalizzata da ogni implementazione. È utile iniziare con alcuni stili esistenti in modo che i componenti siano già funzionali.
 
-   ![clientlibrary di temi](/help/commerce-cloud/assets/style-cif-component/clientlib-theme-folder-hierarchy.png)
+   ![Libreria client theme](/help/commerce-cloud/assets/style-cif-component/clientlib-theme-folder-hierarchy.png)
 
-   Di seguito è riportata la definizione XML del **tema**:
+   Di seguito è riportata la definizione XML di **theme**:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -127,9 +127,9 @@ In seguito verranno analizzate le librerie client generate automaticamente da ar
        categories="[acme.theme]"/>
    ```
 
-   `acme.theme` è la categoria per questa libreria client ed è così che la libreria client verrà inclusa nella pagina.
+   `acme.theme` è la categoria per questa libreria client, ed è così che la libreria client verrà inclusa nella pagina.
 
-1. Sotto la libreria client **tema** dovrebbe essere visualizzato un file denominato **css.txt** che si trova in: `ui.apps/src/main/content/jcr_root/apps/acme/clientlibs/theme/css.txt`:
+1. Sotto alla libreria client **theme** dovresti trovare un file denominato **css.txt** che si trova in `ui.apps/src/main/content/jcr_root/apps/acme/clientlibs/theme/css.txt`:
 
    ```plain
    #base=.
@@ -142,19 +142,19 @@ In seguito verranno analizzate le librerie client generate automaticamente da ar
    ...
    ```
 
-   Il file **css.txt** (e **js.txt**) agiscono come manifesti che stabiliscono l&#39;ordine in cui i singoli file vengono inclusi nel file CSS finale. L&#39;ordine è importante sia per CSS che per JavaScript ed è utile creare più file per gestire meglio il codice. Osservando il file **css.txt** potete vedere che i file sono organizzati in base ai componenti a cui sono applicati gli stili.
+   Il file **css.txt** (e **js.txt**) agisce come manifesto e determina l’ordine in cui i singoli file vengono inclusi nel file CSS finale. L’ordine è importante sia per CSS che per JavaScript ed è utile creare più file per gestire meglio il codice. Osservando il file **css.txt**, puoi vedere che i file sono organizzati in base ai componenti a cui sono applicati gli stili.
 
-1.  i file CSS sotto il **tema o i componenti** per avere un&#39;idea degli stili dei componenti ootb. Alcuni di questi file verranno aggiornati più avanti nell&#39;esercitazione.
+1.  Ispeziona i file CSS sotto **theme/components** per avere un’idea degli stili dei componenti inclusi. Alcuni di questi file verranno aggiornati più avanti nell’esercitazione.
 
-### Integrazione della libreria client con il componente Pagina base
+### Inclusione della libreria client con il componente Pagina base
 
-Nella sezione che segue verranno analizzate le modalità di inclusione delle librerie client in una pagina utilizzando [HTL](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#using-htl) e il componente Pagina.
+Nella sezione che segue verranno analizzate le modalità di inclusione delle librerie client in una pagina utilizzando [HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html#using-htl) e il componente Pagina.
 
-1. Nel modulo **ui.apps** , andate alla definizione del `page` componente in: `ui.apps/src/main/content/jcr_root/apps/acme/components/structure/page`. Questo componente **pagina** , generato dall’archetipo, è il punto di ingresso utilizzato per eseguire il rendering di tutte le pagine del progetto.
+1. Nel modulo **ui.apps**, passa alla definizione del componente `page` in `ui.apps/src/main/content/jcr_root/apps/acme/components/structure/page`. Questo componente **page**, generato dall’archetipo, è il punto di ingresso utilizzato per il rendering di tutte le pagine del progetto.
 
-1. Se si analizza la definizione del componente **pagina** (`page/.content.xml`), si noterà una proprietà `sling:resourceSuperType` che punta a `core/cif/components/structure/page/v1/page`. Questo significa che il componente **pagina** Acme del nostro progetto erediterà tutte le funzionalità del componente Pagina [principale](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/structure/page/v1/page) CIF e ci consentirà di gestire meno codice.
+1. Se analizzi la definizione del componente **page** (`page/.content.xml`), noterai una proprietà `sling:resourceSuperType` che punta a `core/cif/components/structure/page/v1/page`. Questo significa che il componente **page** del nostro progetto (Acme) erediterà tutte le funzionalità del componente [core Pagina core di CIF](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/structure/page/v1/page) e ci consentirà di gestire meno codice.
 
-1. Sotto il componente **pagina** si trovano due file: **customheaderlibs.html** e **customfooterlibs.html**.
+1. Sotto il componente **page** si trovano due file: **customheaderlibs.html** e **customfooterlibs.html**.
 
    ```html
    <!--/* customheaderlibs.html */-->
@@ -162,7 +162,7 @@ Nella sezione che segue verranno analizzate le modalità di inclusione delle lib
     data-sly-call="${clientlib.css @ categories='acme.wcm.base'}"/>
    ```
 
-   **customheaderlibs.html** è uno script HTL che verrà rappresentato nella parte superiore della pagina. È uno script comune per ignorare e aggiungere logica specifica per il progetto. In questo caso lo stiamo utilizzando per includere la libreria client con una categoria di `acme.wcm.base`. Seguendo le procedure ottimali per lo sviluppo Web, includiamo solo il CSS nella parte superiore della pagina.
+   **customheaderlibs.html** è uno script HTL di cui sarà effettuato il rendering nella parte superiore della pagina. È uno script comune per ignorare e aggiungere logica specifica per il progetto. In questo caso lo usiamo per includere la libreria client con una categoria `acme.wcm.base`. Seguendo le best practice di sviluppo Web, includiamo solo il CSS nella parte superiore della pagina.
 
    ```html
    <!--/* customfooterlibs.html */-->
@@ -171,55 +171,55 @@ Nella sezione che segue verranno analizzate le modalità di inclusione delle lib
    </sly>
    ```
 
-   **customfooterlibs.html** è uno script HTL che verrà visualizzato nella parte inferiore della pagina, subito prima del `</body>` tag di chiusura. Anche in questo caso la categoria di `acme.wcm.base` viene utilizzata, ma questa volta verrà caricato solo il JavaScript della libreria client.
+   **customfooterlibs.html** è uno script HTL di cui sarà effettuato il rendering nella parte inferiore della pagina, subito prima del tag di chiusura `</body>`. Anche in questo caso viene utilizzata la categoria `acme.wcm.base`, ma questa volta verrà caricato solo il JavaScript della libreria client.
 
-La modifica degli script HTL del componente **pagina** determina come `acme.wcm.base` viene incluso in tutte le pagine. Ma che dire `acme.theme`? Nel prossimo esercizio esamineremo un&#39;altra opzione per l&#39;inclusione delle librerie client.
+La modifica degli script HTL del componente **page** determina come `acme.wcm.base` viene incluso in tutte le pagine. E per quanto riguarda `acme.theme`? Nel prossimo esercizio esamineremo un’altra opzione per l’inclusione delle librerie client.
 
-### Integrazione della libreria client con i modelli di pagina {#client-library-inclusion-pagetemplates}
+### Inclusione della libreria client con i modelli di pagina {#client-library-inclusion-pagetemplates}
 
-Sono disponibili diverse opzioni per l&#39;inclusione di una libreria lato client. In seguito, controlleremo come il progetto generato include le librerie lato client del tema tramite Modelli [](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html)pagina.
+Sono disponibili diverse opzioni per includere una libreria lato client. Ora esamineremo come il progetto generato include le librerie lato client del tema tramite [Modelli di pagina](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/platform/templates/page-templates-editable.html).
 
-Aprite un nuovo browser e accedete all&#39;istanza AEM in cui avete distribuito il progetto all&#39;inizio di questa esercitazione.
+Apri un nuovo browser e accedi all’istanza AEM in cui è stato implementato il progetto all’inizio di questa esercitazione.
 
-1. Dalla schermata iniziale AEM passare a **Strumenti** > **Generale** > **Modelli**.
+1. Dalla schermata iniziale di AEM, passa a **Strumenti** > **Generale** > **Modelli**.
 
-   ![Navigazione modelli](/help/commerce-cloud/assets/style-cif-component/template-location.png)
+   ![Passare ai modelli](/help/commerce-cloud/assets/style-cif-component/template-location.png)
 
-1. Andate nella cartella Configurazione **archivio** Acme. Aprite il Modello **pagina** categoria selezionando l&#39;icona *matita* .
+1. Passa alla cartella **Configurazione archivio Acme**. Apri il **modello per pagina categorie** selezionando l’icona a forma di *matita*.
 
-   ![scheda modello pagina di categoria](/help/commerce-cloud/assets/style-cif-component/category-page-template.png)
+   ![Scheda del modello per pagina categorie](/help/commerce-cloud/assets/style-cif-component/category-page-template.png)
 
-1. Nell’angolo in alto a sinistra, selezionate l’icona Informazioni **** pagina e fate clic su Criterio **** pagina.
+1. Nell’angolo in alto a sinistra, seleziona l’icona **Informazioni pagina** e fai clic su **Criterio pagina**.
 
-   ![Voce di menu del criterio della pagina](/help/commerce-cloud/assets/style-cif-component/page-policy-menu.png)
+   ![Voce di menu Criterio pagina](/help/commerce-cloud/assets/style-cif-component/page-policy-menu.png)
 
-1. Viene aperto il Criterio pagina per il modello Pagina catalogo:
+1. Si aprirà il Criterio pagina per il modello Pagina di catalogo:
 
-   ![Criteri pagina - pagina catalogo](/help/commerce-cloud/assets/style-cif-component/page-policy-properties.png)
+   ![Criterio pagina - pagina di catalogo](/help/commerce-cloud/assets/style-cif-component/page-policy-properties.png)
 
    Sul lato destro è disponibile un elenco delle **categorie** di librerie client che verranno incluse in tutte le pagine che utilizzano questo modello.
 
-   * **wcm.foundation.components.page.responsive** - Fornisce il CSS necessario per abilitare i controlli di layout [](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html) reattivi da parte degli autori.
-   * **acme.tema** - Questo è il tema di partenza che archetype genera automaticamente. Per impostazione predefinita, questo stile è simile al negozio demo di esempio Venia. Tuttavia, come potete vedere dal nome, è destinato a essere personalizzato dall&#39;implementazione del progetto. *Questo è ciò che modificheremo nella prossima sezione!*
-   * **core.cif.components.response** - Si tratta di una libreria client compilata con diversi componenti React utilizzati per funzioni dinamiche come il carrello acquisti. Ulteriori [informazioni sono disponibili qui](https://github.com/adobe/aem-core-cif-components/tree/master/react-components).
+   * **wcm.foundation.components.page.responsive** - Fornisce il CSS necessario per abilitare i controlli di [layout reattivo](https://docs.adobe.com/content/help/it-IT/experience-manager-65/authoring/siteandpage/responsive-layout.html) da parte degli autori.
+   * **acme.theme** - Questo è il tema di partenza generato automaticamente dall’archetipo. Per impostazione predefinita, questo stile è simile al negozio demo di esempio Venia. Tuttavia, come puoi vedere dal nome, è destinato a essere personalizzato dall’implementazione del progetto. *Questo è ciò che modificheremo nella prossima sezione.*
+   * **core.cif.components.react** - Si tratta di una libreria client compilata con diversi componenti React utilizzati per funzioni dinamiche come il carrello acquisti. Ulteriori [informazioni sono disponibili qui](https://github.com/adobe/aem-core-cif-components/tree/master/react-components).
 
-   Tenere presente che altri modelli utilizzano lo stesso criterio, **Pagina** contenuto, Pagina **di** destinazione e così via. Riutilizzando lo stesso criterio, possiamo garantire che le stesse librerie client siano incluse in tutte le pagine.
+   Altri modelli utilizzano lo stesso criterio: **Pagina di contenuto**, **Pagina di destinazione** e così via. Riutilizzando lo stesso criterio, possiamo essere certi che le stesse librerie client verranno incluse in tutte le pagine.
 
-   Il vantaggio di utilizzare Modelli e criteri pagina per gestire l&#39;inclusione delle librerie client è che potete modificare il criterio per modello. Ad esempio, potete gestire due marchi diversi all&#39;interno della stessa istanza AEM. Ogni marchio avrà un proprio stile o un proprio *tema* , ma le librerie e il codice di base saranno gli stessi. Un altro esempio, se aveste una libreria client più grande che desiderate visualizzare solo su determinate pagine, potreste creare un criterio di pagina univoco solo per quel modello. L&#39;altro vantaggio
+   Quando si gestisce l’inclusione delle librerie client mediante l’uso di modelli e criteri di pagina, si può modificare il criterio a livello di modello. Ad esempio, supponiamo di dover gestire due marchi diversi nella stessa istanza di AEM. Ogni marchio avrà un proprio stile o un proprio *tema*, ma le librerie e il codice di base saranno gli stessi. Un altro esempio, nel caso di una libreria client più grande che si voglia visualizzare solo su determinate pagine, si può creare un criterio di pagina univoco solo per quel modello. L’altro vantaggio
 
 ### Verificare le librerie client sulla pagina {#verify-client-libraries}
 
-A questo punto abbiamo esaminato come includere le librerie client utilizzando HTL con gli script **custom headerlibs.html** e **customfooterlibs.html** e come utilizzare i criteri di pagina di un modello per includere librerie client aggiuntive. Quindi verificheremo l&#39;inclusione delle librerie client sul sito.
+A questo punto abbiamo esaminato come includere le librerie client utilizzando HTL con gli script **custom headerlibs.html** e **customfooterlibs.html** e come utilizzare i criteri di pagina di un modello per includere librerie client aggiuntive. Ora verificheremo l’inclusione delle librerie client sul sito.
 
-1. Dalla schermata iniziale AEM passare a **Siti** > **Acme Store** > Stati **Uniti >** Inglese **** e aprire la pagina per la modifica: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html).
+1. Dalla schermata iniziale di AEM, passa a **Sites** > **Acme Store** > **Stati Uniti** > **Inglese** e apri la pagina per la modifica: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html).
 
-1. Selezionate il menu Informazioni **** pagina e fate clic su **Visualizza come pubblicato**:
+1. Seleziona il menu **Informazioni pagina** e fai clic su **Visualizza come pubblicato**:
 
    ![Visualizza come pubblicato](/help/commerce-cloud/assets/style-cif-component/view-as-published.png)
 
-   Viene aperta la pagina senza che sia stato caricato alcun javascript dell’autore AEM, come apparirebbe sul sito pubblicato. Tenere presente che all&#39;URL è `?wcmmode=disabled` stato aggiunto il parametro di query. Quando si sviluppano CSS e JavaScript, è buona norma utilizzare questo parametro per semplificare la pagina con informazioni AEM autore.
+   La pagina viene aperta senza caricare alcun JavaScript di authoring di AEM, come apparirebbe sul sito pubblicato. All’URL è stato aggiunto il parametro di query `?wcmmode=disabled`. Quando si sviluppano CSS e JavaScript, è buona norma utilizzare questo parametro per semplificare la pagina, rimuovendo elementi dell’istanza di authoring di AEM.
 
-1. Visualizzare l’origine della pagina e identificare le seguenti librerie client incluse: **acme.wcm.base**, **wcm.foundation.components.page.responsive**, **acme.tema**, **core.cif.components.response**
+1. Visualizza il codice sorgente della pagina e individua le seguenti librerie client incluse: **acme.wcm.base**, **wcm.foundation.components.page.responsive**, **acme.theme**, **core.cif.components.react**
 
    ```html
    <!DOCTYPE html>
@@ -238,41 +238,41 @@ A questo punto abbiamo esaminato come includere le librerie client utilizzando H
    </html>
    ```
 
-## Stile del teaser prodotto {#style-product-teaser}
+## Personalizzare lo stile del Product Teaser {#style-product-teaser}
 
-Ora che comprendiamo la struttura della libreria client generata dall&#39;archetipo, possiamo iniziare a personalizzare i componenti core CIF AEM. Verranno modificati gli stili del componente Product Teaser in modo che sembri più una &quot;scheda&quot;.
+Ora che comprendiamo la struttura delle librerie client generata dall’archetipo, possiamo iniziare a personalizzare i componenti core CIF di AEM. Modificheremo gli stili del componente Product Teaser per dargli l’aspetto di una “scheda”.
 
-### Autore del teaser prodotto {#author-product-teaser}
+### Creare il Product Teaser {#author-product-teaser}
 
-Come primo passo, aggiungeremo una nuova istanza del componente Product Teaser nella home page del sito utilizzando gli strumenti di authoring AEM.
+Come prima cosa, aggiungeremo una nuova istanza del componente Product Teaser nella home page del sito, utilizzando gli strumenti di authoring di AEM.
 
-1. Aprite una nuova scheda del browser e passate alla **home page** del sito: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html).
+1. Apri una nuova scheda del browser e passa alla **home page** del sito: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
-1. Inserite un nuovo componente **Product Teaser** nel contenitore di layout principale della pagina.
+1. Inserisci un nuovo componente **Product Teaser** nel contenitore di layout principale della pagina.
 
-   ![Inserisci teaser prodotto](/help/commerce-cloud/assets/style-cif-component/product-teaser-add-component.png)
+   ![Inserire Product Teaser](/help/commerce-cloud/assets/style-cif-component/product-teaser-add-component.png)
 
-1. Espandete il pannello laterale (se non è già attivato) e passate al menu a discesa di ricerca risorse su **Prodotti**. Deve essere visualizzato un elenco di prodotti disponibili da un&#39;istanza di Magento connessa. Selezionate un prodotto e **trascinatelo** sul componente **Product Teaser** nella pagina.
+1. Espandi il pannello laterale (se non è già attivato) e imposta il menu a discesa di ricerca risorse su **Prodotti**. Dovrebbe essere visualizzato un elenco di prodotti disponibili da un’istanza di Magento connessa. Seleziona un prodotto e **trascinalo** sul componente **Product Teaser** nella pagina.
 
-   ![Trascinamento + Rilascia teaser prodotto](/help/commerce-cloud/assets/style-cif-component/drag-drop-product-teaser.png)
+   ![Trascinare su Product Teaser](/help/commerce-cloud/assets/style-cif-component/drag-drop-product-teaser.png)
 
-   > Nota, puoi anche configurare il prodotto visualizzato configurando il componente utilizzando la finestra di dialogo (facendo clic sull’icona della *chiave inglese* ).
+   > Puoi anche configurare il prodotto visualizzato impostando il componente tramite la finestra di dialogo (clic sull’icona a forma di *chiave inglese*).
 
-1. È ora possibile visualizzare un prodotto visualizzato dal Product Teaser. Il nome del prodotto e il prezzo del prodotto sono attributi predefiniti visualizzati.
+1. Ora puoi vedere un prodotto visualizzato dal Product Teaser. Il nome del prodotto e il prezzo del prodotto sono attributi predefiniti visualizzati.
 
-   ![Teaser prodotto - stile predefinito](/help/commerce-cloud/assets/style-cif-component/product-teaser-default-style.png)
+   ![Product Teaser - stile predefinito](/help/commerce-cloud/assets/style-cif-component/product-teaser-default-style.png)
 
-### Aggiornare il CSS per il teaser prodotto {#update-css-product-teaser}
+### Aggiornare il CSS per il Product Teaser {#update-css-product-teaser}
 
-Quindi, modificheremo il CSS nella libreria client **tema** per implementare uno stile tipo scheda per il Product Teaser.
+Ora modificheremo il CSS nella libreria client **theme** per applicare al Product Teaser uno stile di tipo scheda.
 
 Torna all’IDE e al progetto generato.
 
-1. Nel modulo **ui.apps** andate alla cartella: `ui.apps/src/main/content/jcr_root/apps/acme/clientlibs/theme/components/productteaser`. Qui sono definiti tutti gli stili per il Product Teaser.
+1. Nel modulo **ui.apps**, passa alla cartella `ui.apps/src/main/content/jcr_root/apps/acme/clientlibs/theme/components/productteaser`. Qui sono definiti tutti gli stili per il Product Teaser.
 
-1. Aprite il file **teaser.css** e aggiornate le regole CSS corrispondenti (oppure scaricate il file [teaser.css della](/help/commerce-cloud/assets/style-cif-component/solution-teaser.css) soluzione e sostituite).
+1. Apri il file **teaser.css** e aggiorna le regole CSS corrispondenti (oppure scarica il [file teaser.css della soluzione](/help/commerce-cloud/assets/style-cif-component/solution-teaser.css) e sostituiscilo).
 
-   Aggiungete un’ombra esterna e includete angoli arrotondati al teaser prodotto.
+   Aggiungi un’ombra esterna e includi angoli arrotondati al Product Teaser.
 
    ```css
     .productteaser .item__root {
@@ -290,7 +290,7 @@ Torna all’IDE e al progetto generato.
    }
    ```
 
-   Modificate il bordo dell’immagine nel teaser prodotto.
+   Modifica il bordo dell’immagine nel Product Teaser.
 
    ```css
    .productteaser .item__image {
@@ -307,7 +307,7 @@ Torna all’IDE e al progetto generato.
     }
    ```
 
-   Aggiornate il nome del prodotto in modo che venga visualizzato nella parte inferiore del teaser e modificate il colore del testo.
+   Aggiorna il nome del prodotto in modo che venga visualizzato nella parte inferiore del teaser e modifica il colore del testo.
 
    ```css
    .productteaser .item__name {
@@ -323,7 +323,7 @@ Torna all’IDE e al progetto generato.
    }
    ```
 
-   Aggiornate il prezzo del prodotto in modo che venga visualizzato anche nella parte inferiore del teaser e modificate il colore del testo.
+   Aggiorna il prezzo del prodotto in modo che venga visualizzato nella parte inferiore del teaser e modifica il colore del testo.
 
    ```css
    .productteaser .item__price {
@@ -338,7 +338,7 @@ Torna all’IDE e al progetto generato.
    }
    ```
 
-   Aggiornate la query multimediale nella parte inferiore, in modo da memorizzare il nome e il prezzo nelle schermate più piccole di 992 px.
+   Aggiorna la query “media” nella parte inferiore in modo che, su schermi più piccoli di 992 px, il nome e il prezzo vengano sovrapposti.
 
    ```css
    @media (max-width: 992px) {
@@ -353,9 +353,9 @@ Torna all’IDE e al progetto generato.
    }
    ```
 
-   Salvate le modifiche in **teaser.css**. È possibile scaricare il file teaser.css della [soluzione qui](/help/commerce-cloud/assets/style-cif-component/solution-teaser.css).
+   Salva le modifiche in **teaser.css**. Puoi scaricare il [file teaser.css della soluzione qui](/help/commerce-cloud/assets/style-cif-component/solution-teaser.css).
 
-1. Distribuisci gli aggiornamenti del modulo **ui.apps** per AEM utilizzando le tue competenze Maven, da un terminale della riga di comando:
+1. Implementa in AEM gli aggiornamenti del modulo **ui.apps** mediante Maven, da un terminale di riga di comando:
 
    ```shell
            $ cd acme-store/ui.apps/
@@ -373,50 +373,50 @@ Torna all’IDE e al progetto generato.
    ```
 
    >[!NOTE]
-   >Sono disponibili strumenti [e configurazione](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) IDE aggiuntivi per sincronizzare i file di progetto direttamente a un&#39;istanza AEM locale senza dover eseguire una build Maven completa.
+   >Sono disponibili [strumenti e configurazione IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) aggiuntivi per sincronizzare i file di progetto direttamente con un’istanza AEM locale senza dover eseguire una generazione Maven completa.
 
-### Visualizza teaser prodotto aggiornato {#view-updated-product-teaser}
+### Visualizzare il Product Teaser aggiornato {#view-updated-product-teaser}
 
-Dopo che il codice per il progetto è stato distribuito a AEM, ora dovremmo essere in grado di vedere le modifiche al Product Teaser.
+Una volta implementato in AEM il codice per il progetto, dovrebbe essere possibile vedere le modifiche apportate al Product Teaser.
 
-1. Tornate nel browser e aggiornate nuovamente la home page: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html). Vengono visualizzati gli stili teaser di prodotto aggiornati.
+1. Torna nel browser e aggiorna la home page: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html). Dovresti vedere gli stili del product teaser aggiornati.
 
-   ![Stile teaser prodotto aggiornato](/help/commerce-cloud/assets/style-cif-component/product-teaser-new-style.png)
+   ![Stile del Product Teaser aggiornato](/help/commerce-cloud/assets/style-cif-component/product-teaser-new-style.png)
 
-1. Provate aggiungendo altri teaser di prodotto. Utilizzare la modalità Layout per modificare la larghezza e l’offset dei componenti al fine di visualizzare più teaser in una riga.
+1. Prova ad aggiungere altri Product Teaser. Utilizza la modalità Layout per modificare la larghezza e l’offset dei componenti in modo da visualizzare più teaser su una riga.
 
-   ![Teaser di prodotti multipli](/help/commerce-cloud/assets/style-cif-component/multiple-teasers-final.png)
+   ![Product Teaser multipli](/help/commerce-cloud/assets/style-cif-component/multiple-teasers-final.png)
 
    >[!NOTE]
    >Ciascun teaser di prodotto contiene lo stesso stile.
 
 ### Risoluzione dei problemi {#troubleshooting}
 
-In [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) potete verificare che il file CSS aggiornato sia stato distribuito: [http://localhost:4502/crx/de/index.jsp#/apps/acme/clientlibs/theme/components/productteaser/teaser.css](http://localhost:4502/crx/de/index.jsp#/apps/acme/clientlibs/theme/components/productteaser/teaser.css)
+In [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) puoi verificare che il file CSS aggiornato sia stato distribuito: [http://localhost:4502/crx/de/index.jsp#/apps/acme/clientlibs/theme/components/productteaser/teaser.css](http://localhost:4502/crx/de/index.jsp#/apps/acme/clientlibs/theme/components/productteaser/teaser.css)
 
-Quando si distribuiscono nuovi file CSS e/o JavaScript, è importante anche assicurarsi che il browser non distribuisca file non aggiornati. Potete eliminare questo problema cancellando la cache del browser o avviando una nuova sessione del browser.
+Quando si distribuiscono nuovi file CSS e/o JavaScript, è importante anche assicurarsi che il browser non distribuisca file non aggiornati. A tale scopo, cancella la cache del browser o avvia una nuova sessione del browser.
 
-AEM inoltre tenta di memorizzare nella cache le librerie client per migliorare le prestazioni. A volte, dopo la distribuzione del codice, i file meno recenti vengono serviti. È possibile annullare manualmente AEM cache della libreria client utilizzando lo strumento [Ricrea librerie client](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Annulla validità cache è il metodo preferito se si sospetta che AEM abbia memorizzato nella cache una versione precedente di una libreria client. La ricostruzione delle librerie è inefficiente e richiede molto tempo.*
+AEM inoltre tenta di memorizzare nella cache le librerie client per migliorare le prestazioni. A volte, dopo la distribuzione del codice, vengono distribuiti i file meno recenti. Puoi annullare manualmente la validità della cache della libreria client di AEM utilizzando lo strumento [Rigenera librerie client](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Se si sospetta che AEM abbia memorizzato nella cache una versione precedente di una libreria client, è meglio annullare la validità della cache. La rigenerazione delle librerie è infatti inefficiente e richiede molto tempo.*
 
 ### Congratulazioni {#congratulations}
 
-Hai appena disegnato il tuo primo componente AEM CIF Core Component!
+Hai appena personalizzato il primo componente core CIF di AEM.
 
-### Sfida Bonus {#bonus-challenge}
+### Sfida bonus {#bonus-challenge}
 
-Usate il sistema [Stile](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html) AEM per creare due stili che possono essere attivati/disattivati dall’autore di un contenuto. [Lo sviluppo con Style System](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) include passaggi dettagliati e informazioni su come eseguire questa operazione.
+Usa il [Sistema di stili di AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/components/style-system.html) per creare due stili che possono essere attivati/disattivati da un autore di contenuti. La sezione su come [sviluppare con il sistema di stili](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) include passaggi dettagliati e informazioni su come eseguire questa operazione.
 
-![Sfida bonus - sistema stile](/help/commerce-cloud/assets/style-cif-component/bonus-challenge.png)
+![Sfida bonus - Sistema di stili](/help/commerce-cloud/assets/style-cif-component/bonus-challenge.png)
 
 ## Risorse aggiuntive {#additional-resources}
 
 * [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype)
 
-* [Componenti di base CIF AEM](https://github.com/adobe/aem-core-cif-components)
+* [Componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components)
 
 * [Configurare un ambiente di sviluppo AEM locale](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 
-* [Librerie lato client](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)
-* [Guida introduttiva ai AEM Sites](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Librerie lato client](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html)
+* [Guida introduttiva di AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* [Sviluppo con il sistema di stile](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [Sviluppo con il sistema di stili](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
