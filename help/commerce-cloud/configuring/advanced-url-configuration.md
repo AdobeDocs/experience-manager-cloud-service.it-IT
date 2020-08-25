@@ -1,72 +1,72 @@
 ---
 title: Configurazioni URL avanzate
 description: Configurazioni URL avanzate
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3a235e3d8e2d97e413f445df1f0bfe52e97024b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # Configurazioni URL avanzate {#url}
 
-[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) fornisce configurazioni avanzate per personalizzare gli URL per le pagine prodotto e categoria. Molte implementazioni personalizzeranno questi URL a scopo di ottimizzazione SEO (Search Engine Optimization).  Nei seguenti video viene descritto come configurare il `UrlProvider` servizio e le funzioni di Mappatura [](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) Sling per personalizzare gli URL per le pagine di prodotti e categorie.
+I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) forniscono configurazioni avanzate per personalizzare gli URL per le pagine di prodotti e categorie. Per molte implementazioni questi URL devono essere personalizzati a scopo di SEO (Search Engine Optimization). Nei seguenti video viene descritto come configurare il servizio `UrlProvider` e le funzioni di [mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per personalizzare gli URL delle pagine di prodotti e categorie.
 
->[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12&captions=ita)
 
 ## Configurazione {#configuration}
 
-Per configurare il `UrlProvider` servizio in base ai requisiti SEO e necessita di un progetto, è necessario fornire una configurazione OSGI per la configurazione &quot;CIF URL Provider configuration&quot; e configurare il servizio come descritto di seguito.
+Per configurare il servizio `UrlProvider` in base ai requisiti e alle esigenze SEO (Search Engine Optimization), un progetto deve fornire una configurazione OSGI per la “configurazione di provider URL CIF” e configurare il servizio come descritto di seguito.
 
 >[!NOTE]
 >
-> Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) , riportato di seguito, include configurazioni di esempio per dimostrare l&#39;utilizzo di URL personalizzati per le pagine di prodotti e categorie.
+> Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia), riportato di seguito, include configurazioni esemplificative che mostrano come usare URL personalizzati per le pagine di prodotti e categorie.
 
-### Modello URL pagina prodotto {#product}
+### Modello URL per pagina di prodotti {#product}
 
-Questo consente di configurare gli URL delle pagine di prodotto con le seguenti proprietà:
+Consente di configurare gli URL delle pagine di prodotti con le seguenti proprietà:
 
-* **Modello** URL prodotto: definisce il formato degli URL con un set di segnaposto. Il valore predefinito è `{{page}}.{{url_key}}.html#{{variant_sku}}`, che termina con la generazione di URL, ad esempio `/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange`
+* **Modello URL di prodotto**: definisce il formato degli URL con un set di segnaposto. Il valore predefinito è `{{page}}.{{url_key}}.html#{{variant_sku}}`, che ad esempio genera URL di tipo `/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange`, in cui
    * `{{page}}` è stato sostituito da `/content/venia/us/en/products/product-page`
-   * `{{url_key}}` è stato sostituito da Magento  `url_key` proprietà del prodotto, qui `chaz-kangeroo-hoodie`
-   * `{{variant_sku}}` è stato sostituito dalla variante attualmente selezionata, qui `MH01-M-Orange`
-* **Posizione** identificatore prodotto: definisce la posizione dell&#39;identificatore che verrà utilizzato per recuperare i dati del prodotto. Il valore predefinito è `SELECTOR`, l&#39;altro possibile è `SUFFIX`. Con l&#39;URL di esempio precedente, questo significa che l&#39;identificatore `chaz-kangeroo-hoodie` verrà utilizzato per recuperare i dati del prodotto.
-* **Tipo** identificatore prodotto: definisce il tipo di identificatore da utilizzare per il recupero dei dati del prodotto. Il valore predefinito è `URL_KEY`, l&#39;altro possibile è `SKU`. Con l&#39;URL di esempio precedente, ciò significa che i dati del prodotto verranno recuperati con un filtro GraphQL di Magento come `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`.
+   * `{{url_key}}` è stato sostituito dalla proprietà `url_key` del prodotto di Magento, in questo caso `chaz-kangeroo-hoodie`
+   * `{{variant_sku}}` è stato sostituito dalla variante attualmente selezionata, in questo caso `MH01-M-Orange`
+* **Posizione dell’identificatore del prodotto**: definisce la posizione dell’identificatore che verrà utilizzato per recuperare i dati del prodotto. Il valore predefinito è `SELECTOR`; l’altro valore possibile è `SUFFIX`. Per l’URL dell’esempio precedente, ciò significa che l’identificatore `chaz-kangeroo-hoodie` verrà utilizzato per recuperare i dati del prodotto.
+* **Tipo di identificatore del prodotto**: definisce il tipo di identificatore da utilizzare per recuperare i dati del prodotto. Il valore predefinito è `URL_KEY`; l’altro valore possibile è `SKU`. Per l’URL dell’esempio precedente, ciò significa che i dati del prodotto verranno recuperati con un filtro GraphQL di Magento come `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`.
 
-### Modello URL pagina elenco prodotti {#product-list}
+### Modello URL per pagina di elenco prodotti {#product-list}
 
-Questo consente di configurare gli URL delle pagine delle categorie o degli elenchi di prodotti con le seguenti proprietà:
+Consente di configurare gli URL per le pagine contenenti gli elenchi delle categorie o dei prodotti con le seguenti proprietà:
 
-* **Modello** URL categoria: definisce il formato degli URL con un set di segnaposto. Il valore predefinito è `{{page}}.{{id}}.html`, che termina con la generazione di URL, ad esempio `/content/venia/us/en/products/category-page.3.html`
+* **Modello URL di categoria**: definisce il formato degli URL con un set di segnaposto. Il valore predefinito è `{{page}}.{{id}}.html`, che ad esempio genera URL di tipo `/content/venia/us/en/products/category-page.3.html`, in cui
    * `{{page}}` è stato sostituito da `/content/venia/us/en/products/category-page`
-   * `{{id}}` è stato sostituito da Magento  `id` proprietà della categoria, qui `3`
-* **Posizione** identificatore categoria: definisce la posizione dell&#39;identificatore che verrà utilizzato per recuperare i dati del prodotto. Il valore predefinito è `SELECTOR`, l&#39;altro possibile è `SUFFIX`. Con l&#39;URL di esempio precedente, questo significa che l&#39;identificatore `3` verrà utilizzato per recuperare i dati del prodotto.
-* **Tipo** identificatore categoria: definisce il tipo di identificatore da utilizzare per il recupero dei dati del prodotto. Il valore predefinito e al momento solo il valore supportato è `ID`. Con l&#39;URL di esempio precedente, ciò significa che i dati della categoria verranno recuperati con un filtro GraphQL Magento come `category(id:3)`.
+   * `{{id}}` è stato sostituito dalla proprietà `id` della categoria di Magento, in questo caso `3`
+* **Posizione dell’identificatore della categoria**: definisce la posizione dell’identificatore che verrà utilizzato per recuperare i dati del prodotto. Il valore predefinito è `SELECTOR`; l’altro valore possibile è `SUFFIX`. Per l’URL dell’esempio precedente, ciò significa che l’identificatore `3` verrà utilizzato per recuperare i dati del prodotto.
+* **Tipo di identificatore della categoria**: definisce il tipo di identificatore da utilizzare per recuperare i dati del prodotto. Il valore predefinito e al momento l’unico valore supportato è `ID`. Per l’URL dell’esempio precedente, ciò significa che i dati della categoria verranno recuperati con un filtro GraphQL di Magento come `category(id:3)`.
 
-È possibile aggiungere proprietà personalizzate per ciascun modello, purché i dati corrispondenti vengano impostati dai componenti che utilizzano il modello `UrlProvider`. Controllate, ad esempio, il codice della `ProductListItemImpl` classe per sapere come viene implementato.
+È possibile aggiungere proprietà personalizzate per ciascun modello, purché i dati corrispondenti vengano impostati dai componenti mediante `UrlProvider`. Per un esempio di implementazione, dai un’occhiata al codice della classe `ProductListItemImpl`.
 
-È inoltre possibile sostituire il `UrlProvider` servizio con un servizio OSGi completamente personalizzato. In questo caso, per sostituire l&#39;implementazione predefinita è necessario implementare l&#39; `UrlProvider` interfaccia e registrarla con una classificazione superiore.
+È inoltre possibile sostituire il servizio `UrlProvider` con un servizio OSGi completamente personalizzato. In questo caso, per sostituire l’implementazione predefinita, è necessario implementare l’interfaccia `UrlProvider` e registrarla con una classificazione di servizio superiore.
 
-## Combinazione con le mappature di sling {#sling-mapping}
+## Combinare con mappature Sling {#sling-mapping}
 
-Oltre a `UrlProvider`, è anche possibile configurare [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per riscrivere ed elaborare gli URL. Il progetto AEM Archetype fornisce anche [una configurazione](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) di esempio per configurare alcune Mappature Sling per le porte 4503 (pubblicazione) e 80 (dispatcher).
+Oltre a `UrlProvider`, è anche possibile configurare [mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per riscrivere ed elaborare gli URL. Il progetto AEM Archetype fornisce anche una [configurazione esemplificativa](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) per configurare mappature Sling per le porte 4503 (pubblicazione) e 80 (dispatcher).
 
-## Combinazione con AEM Dispatcher {#dispatcher}
+## Combinare con AEM Dispatcher {#dispatcher}
 
-Le riscritture URL possono essere ottenute anche utilizzando AEM server Dispatcher HTTP con `mod_rewrite` modulo. Il [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) fornisce un riferimento AEM configurazione Dispatcher che già include regole [di](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) riscrittura di base per la dimensione generata.
+Le riscritture URL possono essere ottenute anche utilizzando il server HTTP di AEM Dispatcher con il modulo `mod_rewrite`. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) fornisce una configurazione di AEM Dispatcher di riferimento che include [regole di riscrittura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) di base per la dimensione generata.
 
 ## Esempio
 
-Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) include configurazioni di esempio per dimostrare l&#39;utilizzo di URL personalizzati per le pagine prodotto e categoria. Questo consente a ciascun progetto di impostare singoli pattern URL per le pagine di prodotti e categorie in base alle esigenze SEO. Si utilizza una combinazione di Mappature CIF `UrlProvider` e Sling come descritto sopra.
+Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) include configurazioni esemplificative che mostrano come usare URL personalizzati per le pagine di prodotti e categorie. Questi consentono di impostare per ciascun progetto specifici pattern di URL per le pagine di prodotti e categorie, in base alle esigenze SEO (Search Engine Optimization). Si utilizza una combinazione di `UrlProvider` CIF e di mappature Sling, come descritto sopra.
 
 >[!NOTE]
 >
->Questa configurazione deve essere regolata con il dominio esterno utilizzato dal progetto. Le Mappature Sling funzionano in base al nome host e al dominio. Questa configurazione è pertanto disabilitata per impostazione predefinita e deve essere abilitata prima della distribuzione. Per eseguire questa operazione, rinominare la `hostname.adobeaemcloud.com` cartella Sling Mapping in `ui.content/src/main/content/jcr_root/etc/map.publish/https` base al nome di dominio utilizzato e abilitare questa configurazione aggiungendo `resource.resolver.map.location="/etc/map.publish"` alla `JcrResourceResolver` configurazione del progetto.
+>Questa configurazione deve essere regolata con il dominio esterno utilizzato dal progetto. Le mappature Sling funzionano in base al nome host e al dominio. Pertanto questa configurazione è disabilitata per impostazione predefinita e deve essere abilitata prima della distribuzione. Per eseguire questa operazione, rinomina la cartella delle mappature Sling da `hostname.adobeaemcloud.com` a `ui.content/src/main/content/jcr_root/etc/map.publish/https` in base al nome di dominio utilizzato e abilita questa configurazione aggiungendo `resource.resolver.map.location="/etc/map.publish"` alla configurazione `JcrResourceResolver` del progetto.
 
 ## Risorse aggiuntive
 
 * [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-* [Mappatura risorse AEM](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [Mappature delle risorse di AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
