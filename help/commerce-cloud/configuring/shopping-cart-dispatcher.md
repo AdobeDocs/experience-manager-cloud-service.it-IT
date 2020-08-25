@@ -1,23 +1,23 @@
 ---
-title: Carrello acquisti e configurazione Dispatcher
-description: Carrello acquisti e configurazione Dispatcher
-translation-type: tm+mt
+title: Impostazione del carrello e di Dispatcher
+description: Impostazione del carrello e di Dispatcher
+translation-type: ht
 source-git-commit: cdeef662947c502a70b89b6565b347030b286b85
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Carrello acquisti e configurazione Dispatcher
+# Impostazione del carrello e di Dispatcher
 
-[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) viene fornito con un [carrello](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart) out-of-box che esegue il rendering di un carrello e un modulo di checkout. Il carrello richiede un Dispatcher [AEM con impostazione routing GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher) . Il seguente video descrive una configurazione e una configurazione locali utilizzando un&#39;immagine Docker.
+I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) vengono forniti con un [carrello](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart) pronto all’uso che genera un carrello e un modulo per il pagamento. Il carrello richiede un’impostazione di indirizzamento di [AEM Dispatcher con GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher). Il seguente video descrive una configurazione e un’impostazione locale utilizzando un’immagine Docker.
 
->[!VIDEO](https://video.tv.adobe.com/v/29656/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/29656/?quality=12&captions=ita)
 
 Per ulteriori informazioni su questo argomento, consulta le risorse seguenti:
 
-- [Carrello acquisti](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
-- [AEM Dispatcher con Magenti proxy](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
+- [Carrello](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
+- [AEM Dispatcher con proxy Magento](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
 - [Docker Hub](https://hub.docker.com/)
