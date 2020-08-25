@@ -2,9 +2,9 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard.
 translation-type: tm+mt
-source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
+source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 3%
 
 ---
@@ -12,11 +12,15 @@ ht-degree: 3%
 
 # Personalizzazione ed estensione dei frammenti di contenuto{#customizing-and-extending-content-fragments}
 
-All&#39;interno  Adobe Experience Manager come Cloud Service un frammento di contenuto estende una risorsa standard; vedere:
+All’interno di Adobe Experience Manager, come Cloud Service, un frammento di contenuto estende una risorsa standard; vedere:
 
 * [Creazione e gestione di frammenti](/help/assets/content-fragments/content-fragments.md) di contenuto e creazione di [pagine con frammenti](/help/sites-cloud/authoring/fundamentals/content-fragments.md) di contenuto per ulteriori informazioni sui frammenti di contenuto.
 
-* [Gestione delle risorse](/help/assets/manage-digital-assets.md) e [personalizzazione ed estensione dell’Editor](/help/assets/extend-asset-editor.md) risorse per ulteriori informazioni sulle risorse standard.
+* [Gestione delle risorse](/help/assets/manage-digital-assets.md) per ulteriori informazioni sulle risorse standard.
+
+<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
+* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
+-->
 
 ## Architettura {#architecture}
 
@@ -43,7 +47,7 @@ I singoli frammenti di contenuto si basano su modelli di frammenti di contenuto:
 
 ### Integrazione di Siti con Risorse {#integration-of-sites-with-assets}
 
-Content Fragment Management (CFM) fa parte dei AEM Assets come:
+Content Fragment Management (CFM) fa parte di  AEM Assets come:
 
 * I frammenti di contenuto sono risorse.
 * Utilizzano la funzionalità Risorse esistente.
@@ -99,7 +103,7 @@ Per integrare con il core Assets:
 >
 >Il componente Frammento di [contenuto fa parte dei componenti](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)core. Per ulteriori informazioni, consulta [Sviluppo di componenti](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) di base.
 
-È possibile fare riferimento ai frammenti di contenuto dalle pagine AEM, come qualsiasi altro tipo di risorsa. AEM fornisce il componente **[di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)**Frammento di contenuto, un[componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). È inoltre possibile estendere questo componente di base**[Frammento](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** di contenuto.
+È possibile fare riferimento ai frammenti di contenuto dalle AEM pagine, come qualsiasi altro tipo di risorsa. AEM fornisce il componente **[di base Frammento di](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** contenuto, un [componente che consente di includere nelle pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)frammenti di contenuto. È inoltre possibile estendere questo componente di base **[Frammento](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** di contenuto.
 
 * Il componente utilizza la `fragmentPath` proprietà per fare riferimento al frammento di contenuto effettivo. La `fragmentPath` proprietà viene gestita allo stesso modo delle proprietà simili di altri tipi di risorse; ad esempio, quando il frammento di contenuto viene spostato in un&#39;altra posizione.
 
@@ -131,7 +135,7 @@ I frammenti di contenuto possono essere integrati con:
 
 * **Traduzioni**
 
-   I frammenti di contenuto sono completamente integrati nel flusso di lavoro di traduzione di AEM. A livello architettonico, ciò significa:
+   I frammenti di contenuto sono completamente integrati nel flusso di lavoro di traduzione AEM. A livello architettonico, ciò significa:
 
    * Le singole traduzioni di un frammento di contenuto sono in realtà frammenti separati; ad esempio:
 
@@ -145,7 +149,7 @@ I frammenti di contenuto possono essere integrati con:
    * Oltre ai percorsi basati su regole, non esiste un&#39;ulteriore connessione tra le diverse versioni linguistiche di un frammento di contenuto; sono gestiti come due frammenti separati, anche se l’interfaccia utente fornisce i mezzi per spostarsi tra le varianti di lingua.
    >[!NOTE]
    >
-   >Il flusso di lavoro di traduzione di AEM funziona con `/content`:
+   >Il flusso di lavoro di traduzione AEM funziona con `/content`:
    >
    >* Poiché i modelli di frammento di contenuto risiedono in `/conf`, questi non sono inclusi in tali traduzioni. Potete internazionalizzare le stringhe di interfaccia.
 
@@ -284,11 +288,11 @@ Consulta:
 >
 >Considerare queste informazioni di base. Non dovete cambiare nulla qui (come è indicato come area ** privata nel repository), ma potrebbe aiutare in alcuni casi a capire come funzionano le cose sotto il coperchio.
 
-La modifica di un frammento di contenuto, che può estendersi su più viste (= pagine HTML), è atomica. Poiché le funzionalità di modifica per più viste atomiche non sono un concetto tipico di AEM, i frammenti di contenuto utilizzano quella che viene definita una sessione *di* modifica.
+La modifica di un frammento di contenuto, che può estendersi su più viste (= pagine HTML), è atomica. Poiché le funzionalità di modifica per più viste atomiche non sono un concetto AEM tipico, i frammenti di contenuto utilizzano quella che viene definita una sessione *di* modifica.
 
 Una sessione di modifica viene avviata quando l&#39;utente apre un frammento di contenuto nell&#39;editor. La sessione di modifica viene terminata quando l’utente esce dall’editor selezionando **Salva** o **Annulla**.
 
-Dal punto di vista tecnico, tutte le modifiche vengono effettuate sul contenuto *live* , proprio come con tutte le altre modifiche apportate da AEM. Quando la sessione di modifica viene avviata, viene creata una versione dello stato corrente e non modificato. Se un utente annulla una modifica, tale versione viene ripristinata. Se l&#39;utente fa clic su **Salva**, non viene eseguita alcuna operazione specifica, poiché tutte le modifiche sono state eseguite sul contenuto *live* , pertanto tutte le modifiche sono già persistenti. Inoltre, se si fa clic su **Salva** , viene attivata l’elaborazione in background (ad esempio, la creazione di informazioni di ricerca full-text e/o la gestione di risorse multimediali miste).
+Tecnicamente, tutte le modifiche vengono effettuate sui contenuti *live* , come per tutte le altre AEM di modifica. Quando la sessione di modifica viene avviata, viene creata una versione dello stato corrente e non modificato. Se un utente annulla una modifica, tale versione viene ripristinata. Se l&#39;utente fa clic su **Salva**, non viene eseguita alcuna operazione specifica, poiché tutte le modifiche sono state eseguite sul contenuto *live* , pertanto tutte le modifiche sono già persistenti. Inoltre, se si fa clic su **Salva** , viene attivata l’elaborazione in background (ad esempio, la creazione di informazioni di ricerca full-text e/o la gestione di risorse multimediali miste).
 
 Esistono alcune misure di sicurezza per i casi Edge; ad esempio, se l’utente tenta di uscire dall’editor senza salvare o annullare la sessione di modifica. È inoltre disponibile un salvataggio automatico periodico per evitare la perdita di dati.
 Si noti che due utenti possono modificare contemporaneamente lo stesso frammento di contenuto e, di conseguenza, sovrascrivere reciprocamente le modifiche. Per evitare questo problema, è necessario bloccare il frammento di contenuto applicando l&#39;azione *Checkout* dell&#39;amministrazione DAM sul frammento.
@@ -301,7 +305,7 @@ A tal fine, potete adattare la risorsa che rappresenta l&#39;API a:
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-Ad esempio:
+Esempio:
 
 ```java
 // first, get the resource
@@ -317,7 +321,7 @@ if (fragmentResource != null) {
 
 Per creare un nuovo frammento di contenuto a livello di programmazione, è necessario utilizzare una`FragmentTemplate` risorsa modello adattata.
 
-Ad esempio:
+Esempio:
 
 ```java
 Resource modelRsc = resourceResolver.getResource("...");
