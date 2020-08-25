@@ -1,29 +1,29 @@
 ---
-title: Integrazione del commercio AEM e di terze parti tramite Commerce Integration Framework
-description: Integrazione del commercio AEM e di terze parti tramite Commerce Integration Framework
-translation-type: tm+mt
+title: Integrazione di AEM e Commerce di terze parti tramite Commerce Integration Framework
+description: Integrazione di AEM e Commerce di terze parti tramite Commerce Integration Framework
+translation-type: ht
 source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Integrazione del commercio AEM e di terze parti tramite Commerce Integration Framework {#aem-third-party}
+# Integrazione di AEM e Commerce di terze parti tramite Commerce Integration Framework {#aem-third-party}
 
-Le aziende aziendali possono richiedere soluzioni di commercio di terze parti aggiuntive per alimentare il proprio negozio. Commerce Integration Framework (CIF) può essere utilizzato in tali scenari di integrazione in cui, oltre al Magento, una soluzione di commercio di terze parti deve essere integrata con AEM. CIF fornisce elementi come uno storefront di riferimento acceleratore, componenti AEM CIF di base e strumenti di authoring che funzionano con il Magento out-of-the-box. Per integrare AEM e una soluzione di commercio di terze parti e riutilizzare questi elementi CIF, è necessario un ulteriore sviluppo.
+Le imprese possono richiedere soluzioni Commerce di terze parti aggiuntive per potenziare la propria vetrina. Commerce Integration Framework (CIF) può essere utilizzato in scenari di integrazione in cui, oltre a Magento, è necessario integrare con AEM anche una soluzione Commerce di terze parti. CIF fornisce elementi come una vetrina di riferimento di accelerazione, componenti core CIF di AEM e strumenti di authoring pronti all’uso per Magento. Per integrare AEM e una soluzione Commerce di terze parti e riutilizzare questi elementi CIF, è necessario un ulteriore sviluppo.
 
 ## Architettura {#architecture}
 
-L&#39;architettura generale è la seguente:
+L’architettura generale è la seguente:
 
-![Panoramica AEM sull&#39;architettura di terze parti/non di Magento](/help/commerce-cloud/assets/AEM_nonMagento_Architecture.JPG)
+![Panoramica dell’architettura AEM per terze parti/non Magento](/help/commerce-cloud/assets/AEM_nonMagento_Architecture.JPG)
 
-La differenza principale tra l&#39;architettura di integrazione per AEM - Magento e AEM - commercio di terze parti è l&#39;aggiunta di un livello di integrazione e trasformazione dei dati come mostrato nell&#39;immagine precedente. Il livello di integrazione deve essere ospitato sulla piattaforma Adobe I/O Runtime,  piattaforma senza server  Adobe. Ulteriori informazioni su Adobe I/O Runtime sono disponibili [qui](https://www.adobe.io/apis/experienceplatform/runtime.html).
+La differenza principale tra l’architettura di integrazione per AEM con Magento e AEM e una soluzione commerce di terze parti consiste nell’aggiunta di un livello di integrazione e trasformazione dei dati, come illustrato nell’immagine precedente. Il livello di integrazione deve essere ospitato sulla piattaforma Adobe I/O Runtime, che è una piattaforma di Adobe senza server. Ulteriori informazioni su Adobe I/O Runtime sono disponibili [qui](https://www.adobe.io/apis/experienceplatform/runtime.html).
 
-Lo scopo di questo livello di integrazione è mappare un&#39;API non di Magento o di terze parti rispetto  API Commerce di Adobe (Magenti API GraphQL di ). Questa mappatura consente agli strumenti di authoring CIF [AEM componenti](https://github.com/adobe/aem-core-cif-components) principali e CIF di recuperare i dati dalla soluzione non di Magento. Con questo approccio, il livello di integrazione racchiude la logica di integrazione e crea una separazione di preoccupazione tra AEM e la soluzione di terze parti. Questo consente di utilizzare gli elementi CIF in modo agnostico con diverse soluzioni di terze parti. I vantaggi dell&#39;utilizzo di elementi CIF nel progetto sono stati descritti in [Introduzione](/help/commerce-cloud/overview.md).
+Questo livello di integrazione ha lo scopo di mappare un’API non Magento o di terze parti rispetto sulle API Commerce di Adobe (API di Magento GraphQL). Questa mappatura consente ai [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) e agli strumenti di authoring CIF di recuperare i dati dalla soluzione non Magento. Con questo approccio, il livello di integrazione racchiude la logica di integrazione e crea una separazione tra AEM e la soluzione di terze parti. Ciò consente di utilizzare gli elementi CIF in modo agnostico con diverse soluzioni di terze parti. I vantaggi dell’utilizzo di elementi CIF nel progetto sono descritti nell’[Introduzione](/help/commerce-cloud/overview.md).
 
-## Sviluppare un&#39;integrazione {#develop-integration}
+## Sviluppare un’integrazione {#develop-integration}
 
-Per aiutarti a iniziare a creare il livello di integrazione richiesto per integrare una soluzione di terze parti con AEM, abbiamo creato un&#39;implementazione [di](https://github.com/adobe/commerce-cif-graphql-integration-reference) riferimento per dimostrarlo. Questo riferimento può essere utilizzato come punto di partenza del progetto.
+Per aiutarti a iniziare a creare il livello di integrazione richiesto per integrare con AEM una soluzione non Magento/di terze parti, abbiamo creato un’[implementazione di riferimento](https://github.com/adobe/commerce-cif-graphql-integration-reference). Questo riferimento può essere utilizzato come punto di partenza del progetto.
