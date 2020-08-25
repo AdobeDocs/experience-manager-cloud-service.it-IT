@@ -1,18 +1,18 @@
 ---
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.4.0'
 description: Note sulla versione 2020.4.0 di Experience Manager
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '654'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Note sulla versione 2020.4.0 di Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
+Questa pagina illustra le note generali sulla versione per [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
 ## Data di rilascio {#release-date}
 
