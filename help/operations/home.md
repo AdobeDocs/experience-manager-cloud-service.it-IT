@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
 source-wordcount: '392'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ In questa pagina sono elencate le risorse di supporto autonomo relative alle ope
 | [Passaggio ad AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Comprendi il percorso di transizione verso Cloud Service. |
 | [Guida utente sull’implementazione](/help/implementing/home.md) | Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione. |
 | [Guida utente dei connettori](/help/connectors/home.md) | Questa guida contiene informazioni su come integrare i connettori in Experience Manager as a Cloud Service. |
-| [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri Commerce Integration Framework come Cloud Service in AEM. |
+| [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri Commerce Integration Framework in AEM as a Cloud Service. |
 
 ## Altre risorse su Experience Manager {#other-resources}
 
