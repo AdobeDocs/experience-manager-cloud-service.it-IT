@@ -2,9 +2,9 @@
 title: Esperienza unificata per gli strumenti di refactoring del codice
 description: Esperienza unificata per gli strumenti di refactoring del codice
 translation-type: tm+mt
-source-git-commit: c00b10b4d564e05099740b9ff991624db4f37a3d
+source-git-commit: c554506aea99518c94666f5d2e6151a3dce3b91e
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,9 @@ ht-degree: 0%
 
 # Esperienza unificata per gli strumenti di refactoring del codice {#unified-experience}
 
-Strumenti multipli con diversi punti di interazione per i clienti creano un&#39;esperienza disgiunta e aumentano la complessità nell&#39;utilizzo degli strumenti, con ogni esigenza di esecuzione diversa in termini di installazione, configurazione ed esecuzione.
+Gli strumenti Unified Experience for Code Refactoring (Esperienza unificata per il ripristino del codice) uniscono l&#39;esperienza per l&#39;esecuzione di AEM come strumenti di refactoring del codice di Cloud Service che operano su file dispatcher, codice e repository.
+
+Questo strumento riduce la complessità dell’utilizzo di strumenti di refactoring del codice, con ogni esigenza di esecuzione diversa in termini di installazione, configurazione ed esecuzione.
 
 ## Benefits {#benefits}
 
@@ -26,9 +28,12 @@ L’esperienza unificata per gli strumenti di refactoring dei codici insieme ai 
 
 * Per semplificare l&#39;aggiunta futura di nuovi strumenti come l&#39;aggiunta di nuovo strumento al plugin, è sufficiente aggiungere un nuovo comando per lo sviluppatore e un semplice aggiornamento del plugin per l&#39;utente, in modo che l&#39;esperienza rimanga coerente con l&#39;aggiunta di più valore.
 
-### Nozioni di base sulla progettazione dell’applicazione
+## Informazioni sul plug-in {#understanding-plugin}
 
-Questi strumenti unificano tutti gli strumenti di refactoring del codice in un&#39;unica applicazione node.js esposta come `aio-cli plugin` per fornire all&#39;utente un&#39;esperienza utente coerente.
+Consente di `aio-cli-plugin-aem-cloud-service-migration` ridefinire il codice del cliente, la struttura del repository o le configurazioni nel computer locale del cliente. Questa pagina acquisisce i requisiti dettagliati e le decisioni di progettazione per l&#39;esperienza unificata.
+È disponibile come origine aperta per la community di utenti che può essere estesa per casi di utilizzo personalizzati.
+
+Questi strumenti unificano tutti gli strumenti di refactoring del codice in un&#39;unica applicazione node.js esposta come `aio-cli plugin` per fornire all&#39;utente un&#39;esperienza utente coerente. Il plug-in scansiona la base di codice locale del cliente e produce AEM come codice, configurazioni e pacchetti compatibili con il Cloud Service che possono essere poi distribuiti in ambienti Cloud Service.
 
 Il plugin è costituito da due parti principali:
 
@@ -44,16 +49,12 @@ Il plugin è costituito da due parti principali:
 
    * Registrazione delle operazioni eseguite durante la migrazione, in modo coerente, per produrre un rapporto di riepilogo.
 
-## Utilizzo del plug-in {#using-plugin}
-
-Consente di `aio-cli-plugin-aem-cloud-service-migration` ridefinire il codice del cliente, la struttura del repository o le configurazioni nel computer locale del cliente. Questa pagina acquisisce i requisiti dettagliati e le decisioni di progettazione per l&#39;esperienza unificata.
-È disponibile come origine aperta per la community di utenti che può essere estesa per casi di utilizzo personalizzati.
-
 ## Disponibilità {#availability}
 
-È possibile installare e utilizzare `aio-cli-plugin-aem-cloud-service-migration` tramite `aio-cli` (attualmente integrato solo con il dispatcher converter).
+È possibile installare e utilizzare il `aio-cli-plugin-aem-cloud-service-migration` tramite `aio-cli`.
 
-Fare riferimento a Risorse [Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) per saperne di più sull&#39;utilizzo e come potete contribuire a questo strumento.
+>[!NOTE]
+>Attualmente questo strumento è integrato solo con Dispatcher Converter.
 
-Il codice plug-in è stato aperto in origine in Github.
+Fare riferimento a Risorse [Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) per saperne di più sull&#39;utilizzo e come puoi contribuire a questo codice plug-in open source in GitHub.
 
