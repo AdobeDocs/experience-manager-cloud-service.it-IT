@@ -2,7 +2,7 @@
 title: Esperienza unificata per gli strumenti di refactoring del codice
 description: Esperienza unificata per gli strumenti di refactoring del codice
 translation-type: tm+mt
-source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
+source-git-commit: 9ef0681f93c8c25a1e5115cccb987d2db32c318e
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Gli strumenti Unified Experience for Code Refactoring (Esperienza unificata per 
 
 Questo strumento riduce la complessità dell’utilizzo di strumenti di refactoring del codice, con ogni esigenza di esecuzione diversa in termini di installazione, configurazione ed esecuzione.
 
-![immagine](/help/move-to-cloud-service/assets/unified-1.png)
+![immagine](/help/move-to-cloud-service/assets/unified-one.png)
 
 ## Benefits {#benefits}
 
