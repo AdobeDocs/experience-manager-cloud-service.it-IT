@@ -2,9 +2,9 @@
 title: Esperienza unificata per gli strumenti di refactoring del codice
 description: Esperienza unificata per gli strumenti di refactoring del codice
 translation-type: tm+mt
-source-git-commit: c554506aea99518c94666f5d2e6151a3dce3b91e
+source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,17 @@ Gli strumenti Unified Experience for Code Refactoring (Esperienza unificata per 
 
 Questo strumento riduce la complessità dell’utilizzo di strumenti di refactoring del codice, con ogni esigenza di esecuzione diversa in termini di installazione, configurazione ed esecuzione.
 
+![immagine](/help/move-to-cloud-service/assets/unified-1.png)
+
 ## Benefits {#benefits}
 
-L’esperienza unificata per gli strumenti di refactoring del codice richiama ed esegue tutti gli strumenti di refactoring del codice che funzionano sul codice sorgente dalla stessa posizione.
+Gli strumenti Unified Experience for Code Refactoring richiamano ed eseguono tutti gli strumenti di refactoring del codice che funzionano sul codice sorgente dalla stessa posizione.
 
-L’esperienza unificata per gli strumenti di refactoring dei codici insieme ai repository dei partner consente di:
+Questi strumenti, insieme ai repository di corredo, consentono:
 
-* Unificate tutti gli strumenti per la migrazione del codice sorgente in un’ `node.js` applicazione esposta `aio-cli plugin` per fornire all’utente un’esperienza utente coerente.
+* L&#39;unificazione di tutti gli strumenti per la migrazione del codice sorgente in un&#39; `node.js` applicazione è stata esposta `aio-cli plugin` per fornire all&#39;utente un&#39;esperienza utente coerente.
 
-* Disposizione per eseguire la migrazione globale tramite un singolo comando, fornendo al contempo la flessibilità di eseguire un particolare strumento come da requisito.
+* Provisioning per eseguire la migrazione globale tramite un singolo comando, fornendo al contempo la flessibilità di eseguire un particolare strumento in base alle esigenze.
 
 * Per semplificare l&#39;aggiunta futura di nuovi strumenti come l&#39;aggiunta di nuovo strumento al plugin, è sufficiente aggiungere un nuovo comando per lo sviluppatore e un semplice aggiornamento del plugin per l&#39;utente, in modo che l&#39;esperienza rimanga coerente con l&#39;aggiunta di più valore.
 
