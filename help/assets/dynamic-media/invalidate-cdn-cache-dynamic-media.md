@@ -2,9 +2,9 @@
 title: Annullamento della validità della cache CDN tramite Dynamic Media
 description: L’annullamento della validità della rete CDN (Content Delivery Network) nei contenuti memorizzati nella cache consente di aggiornare rapidamente le risorse distribuite da Dynamic Media, anziché attendere la scadenza della cache.
 translation-type: tm+mt
-source-git-commit: 5549f7ea40f13b9fa47abb81ddb0b9a1175b041d
+source-git-commit: fa86e005a44600fe2ff856a137c6de21a263689e
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1310'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Le risorse per contenuti multimediali dinamici sono memorizzate nella cache dall
 
 >[!IMPORTANT]
 >
->I passaggi seguenti si applicano solo a Contenuti multimediali dinamici su AEM come Cloud Service. È inoltre necessario utilizzare il CDN fornito con AEM file multimediali dinamici. Qualsiasi altra CDN personalizzata non è supportata da questa funzione. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>I passaggi seguenti si applicano solo a Contenuti multimediali dinamici su AEM come Cloud Service. Questa funzione richiede anche l’utilizzo del CDN out-of-the-box fornito con AEM file multimediali dinamici; qualsiasi altra CDN personalizzata non è supportata. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 Consultate anche Panoramica sulla [memorizzazione nella cache dei file multimediali](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)dinamici.
 
