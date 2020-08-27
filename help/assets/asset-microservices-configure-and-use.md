@@ -1,33 +1,23 @@
 ---
-title: Configurare e utilizzare i microservizi delle risorse per l’elaborazione delle risorse
-description: Scoprite come configurare e utilizzare i microservizi di risorse nativi per il cloud per elaborare le risorse su scala.
+title: Configurare e utilizzare i microservizi delle risorse per l’elaborazione delle risorse.
+description: Configurate e utilizzate i microservizi delle risorse native per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
+source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2530'
 ht-degree: 1%
 
 ---
 
 
-# Utilizzare i microservizi delle risorse e i profili di elaborazione {#get-started-using-asset-microservices}
+# Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
-<!--
-* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
-* How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/application process.
-* How/where can admins check what's already configured and provisioned.
-* How to create new config or request for new provisioning/purchase.
+I microservizi delle risorse consentono l’elaborazione scalabile e resiliente delle risorse mediante applicazioni native per il cloud (o &quot;lavoratori&quot;).  Adobe gestisce i servizi per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione.
 
-* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
--->
+I microservizi delle risorse consentono di elaborare una [vasta gamma di tipi](/help/assets/file-format-support.md) di file che coprono più formati out-of-the-box di quanto sia possibile con le versioni precedenti di [!DNL Experience Manager]. Ad esempio, l&#39;estrazione delle miniature dei formati PSD e PSB ora è possibile che soluzioni di terze parti come ImageMagick precedentemente richieste.
 
-I microservizi delle risorse consentono l’elaborazione scalabile e resiliente delle risorse mediante i servizi cloud.  Adobe gestisce i servizi per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione.
-
-L’elaborazione delle risorse dipende dalla configurazione in Profili **[!UICONTROL di]** elaborazione, che fornisce una configurazione predefinita, e consente all’amministratore di aggiungere una configurazione di elaborazione delle risorse più specifica. Gli amministratori possono creare e mantenere le configurazioni dei flussi di lavoro post-elaborazione, inclusa la personalizzazione facoltativa. La personalizzazione dei flussi di lavoro consente estensibilità e personalizzazione completa.
-
-I microservizi delle risorse consentono di elaborare una [vasta gamma di tipi](/help/assets/file-format-support.md) di file che coprono più formati out-of-the-box di quanto sia possibile con le versioni precedenti del Experience Manager . Ad esempio, l&#39;estrazione delle miniature dei formati PSD e PSB ora è possibile che soluzioni di terze parti come ImageMagick precedentemente richieste.
+L’elaborazione delle risorse dipende dalla configurazione in Profili **[!UICONTROL di elaborazione]**.  Experience Manager fornisce una configurazione di base predefinita e consente agli amministratori di aggiungere una configurazione di elaborazione delle risorse più specifica. Gli amministratori creano, mantengono e modificano le configurazioni dei flussi di lavoro post-elaborazione, inclusa la personalizzazione facoltativa. La personalizzazione dei flussi di lavoro consente agli sviluppatori di ampliare l&#39;offerta predefinita.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -48,7 +38,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |---|---|---|
 | [Configurazione predefinita](#default-config) | È disponibile così come è e non può essere modificato. Questa configurazione fornisce funzionalità di generazione delle rappresentazioni di base. | <ul> <li>Miniature standard utilizzate dall’interfaccia [!DNL Assets] utente (48, 140 e 319 px) </li> <li> Anteprima grande (rappresentazione Web - 1280 px) </li><li> Estrazione di metadati e testo.</li></ul> |
 | [Configurazione personalizzata](#standard-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente. Offre più opzioni per la generazione della rappresentazione, estendendo l&#39;opzione predefinita. Estendete l’opzione out-of-the-box per fornire formati e rappresentazioni diversi. | <ul><li>Rendering FPO. </li> <li>Modificare il formato file e la risoluzione delle immagini</li> <li> Applicabile in modo condizionale ai tipi di file configurati. </li> </ul> |
-| [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l’interfaccia utente per utilizzare il codice personalizzato attraverso le applicazioni personalizzate per chiamare il servizio [di elaborazione delle](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)risorse. Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Consultate [casi](#custom-config)di utilizzo consentiti. |
+| [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per utilizzare il codice personalizzato attraverso le applicazioni personalizzate per chiamare il servizio [di elaborazione delle](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)risorse. Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Consultate [casi](#custom-config)di utilizzo consentiti. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -93,7 +83,7 @@ Per creare un profilo di elaborazione standard, effettuate le seguenti operazion
    * Qualità in percentuale di ciascuna rappresentazione JPEG.
    * Tipi MIME inclusi ed esclusi per definire l&#39;applicabilità di un profilo.
 
-   ![elaborazione-profili-aggiunta](assets/processing-profiles-adding.png)
+   ![elaborazione-profili-aggiunta](assets/processing-profiles-image.png)
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
@@ -158,9 +148,7 @@ L&#39;integrazione di Asset Compute Service consente  Experience Manager di tras
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*Figura: Utilizzate il campo Parametri[!UICONTROL di]servizio per trasmettere informazioni aggiunte ai parametri predefiniti creati nell&#39;applicazione personalizzata.*
-
-Quando le immagini della campagna vengono caricate nella cartella alla quale è applicato questo profilo di elaborazione, le immagini vengono aggiornate con `Jumanji` del testo in `Arial-BoldMT` font.
+*Figura: Utilizzate il campo Parametri[!UICONTROL di]servizio per trasmettere informazioni aggiunte ai parametri predefiniti creati nell&#39;applicazione personalizzata. In questo esempio, quando le immagini della campagna vengono caricate, le immagini vengono aggiornate con`Jumanji`testo in`Arial-BoldMT`font.*
 
 ## Utilizzo dei profili di elaborazione per elaborare le risorse {#use-profiles}
 
@@ -169,19 +157,20 @@ Potete creare e applicare profili di elaborazione personalizzati aggiuntivi a ca
 Applicate i profili di elaborazione alle cartelle utilizzando uno dei seguenti metodi:
 
 * Gli amministratori possono selezionare una definizione di profilo di elaborazione in **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Profili **** di elaborazione e utilizzare l&#39;azione **[!UICONTROL Applica profilo alle cartelle]** . Viene aperto un browser del contenuto che consente di passare a cartelle specifiche, selezionarle e confermare l’applicazione del profilo.
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Per salvare le modifiche, fate clic su **[!UICONTROL Salva e chiudi]**.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the appropriate processing profile for that folder. Per salvare le modifiche, fate clic su **[!UICONTROL Salva e chiudi]**.
+   ![Applicazione del profilo di elaborazione a una cartella dalla scheda Proprietà risorsa](assets/folder-properties-processing-profile.png)
 
->[!NOTE]
+>[!TIP]
 >
->A una cartella specifica può essere applicato un solo profilo di elaborazione. Per generare più rappresentazioni, aggiungi più definizioni di rappresentazione al profilo di elaborazione esistente.
+>A una cartella è possibile applicare un solo profilo di elaborazione. Per generare più rappresentazioni, aggiungi più definizioni di rappresentazione al profilo di elaborazione esistente.
 
-Dopo aver applicato un profilo di elaborazione a una cartella, tutte le nuove risorse caricate (o aggiornate) in questa cartella o in una delle sottocartelle vengono elaborate utilizzando il profilo di elaborazione aggiuntivo configurato. Questa elaborazione si aggiunge al profilo standard predefinito. Se applicate più profili a una cartella, le risorse caricate o aggiornate vengono elaborate utilizzando ciascuno di questi profili.
+Dopo aver applicato un profilo di elaborazione a una cartella, tutte le nuove risorse caricate (o aggiornate) in questa cartella o in una delle sottocartelle vengono elaborate utilizzando il profilo di elaborazione aggiuntivo configurato. Questa elaborazione si aggiunge al profilo standard predefinito.
 
 >[!NOTE]
 >
 >Un profilo di elaborazione applicato a una cartella funziona per l’intera struttura ad albero, ma può essere sostituito con un altro profilo applicato a una sottocartella. Quando le risorse vengono caricate in una cartella,  Experience Manager controlla le proprietà della cartella contenitore per un profilo di elaborazione. Se non ne viene applicata alcuna, viene controllata una cartella principale nella gerarchia per verificare se è necessario applicare un profilo di elaborazione.
 
-Tutte le rappresentazioni generate sono disponibili nella vista [!UICONTROL Rappresentazioni] , nella parte sinistra. Aprite l&#39;anteprima della risorsa e aprite la barra a sinistra per accedere alla visualizzazione **[!UICONTROL Rappresentazioni]** . Le rappresentazioni specifiche nel profilo di elaborazione, per le quali il tipo di risorsa specifico corrisponde alle regole di inclusione del tipo MIME, devono essere visibili e accessibili.
+Per verificare che le risorse siano state elaborate, visualizzate l&#39;anteprima delle rappresentazioni generate nella vista [!UICONTROL Rappresentazioni] nella parte sinistra. Aprite l&#39;anteprima della risorsa e aprite la barra a sinistra per accedere alla visualizzazione **[!UICONTROL Rappresentazioni]** . Le rappresentazioni specifiche nel profilo di elaborazione, per le quali il tipo di risorsa specifico corrisponde alle regole di inclusione del tipo MIME, devono essere visibili e accessibili.
 
 ![rappresentazioni aggiuntive](assets/renditions-additional-renditions.png)
 
@@ -238,4 +227,10 @@ Per informazioni dettagliate sul passaggio del flusso di lavoro standard da util
 >* [Introduzione al servizio](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)di calcolo delle risorse.
 >* [Comprendere l&#39;estensibilità e quando utilizzarla](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 >* [Come creare applicazioni](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)personalizzate.
+>* [Tipi MIME supportati per vari casi](/help/assets/file-format-support.md)di utilizzo.
 
+
+<!-- TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
