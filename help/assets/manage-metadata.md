@@ -4,10 +4,10 @@ description: Scoprite i tipi di metadati e [!DNL Adobe Experience Manager Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 5%
+source-wordcount: '1933'
+ht-degree: 4%
 
 ---
 
@@ -65,7 +65,7 @@ I due tipi di metadati di base sono i metadati tecnici e i metadati descrittivi.
 I metadati tecnici sono utili per le applicazioni software che si occupano di risorse digitali e non devono essere mantenuti manualmente. [!DNL Experience Manager Assets] e altri software determinano automaticamente i metadati tecnici e i metadati potrebbero essere modificati al momento della modifica della risorsa. I metadati tecnici disponibili per una risorsa dipendono in larga misura dal tipo di file della risorsa. Alcuni esempi di metadati tecnici sono:
 
 * Dimensione di un file.
-* Dimensioni (altezza e larghezza) di un’immagine.
+* Dimension (altezza e larghezza) di un’immagine.
 * Bitrate di un file audio o video.
 * Risoluzione (livello di dettaglio) di un’immagine.
 
@@ -84,7 +84,7 @@ Esistono diversi modi per incorporare i metadati nei file. Sono supportati alcun
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) è uno standard aperto utilizzato da [!DNL Experience Manager Assets] per la gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file. Adobe e altre società supportano lo standard XMP in quanto fornisce un modello di contenuto avanzato. Gli utenti dello standard XMP e di [!DNL Experience Manager Assets] hanno una piattaforma potente su cui costruire. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) è uno standard aperto utilizzato da [!DNL Experience Manager Assets] per la gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file.  Adobe e altre aziende supportano XMP standard in quanto fornisce un modello di contenuto avanzato. Gli utenti di XMP standard e di [!DNL Experience Manager Assets] hanno una piattaforma potente su cui costruire. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -104,7 +104,7 @@ Exchangeable image file format (Exif) è il formato di metadati più diffuso uti
 
 Un importante limite di Exif è dato dal fatto che alcuni formati di file immagine popolari come BMP, GIF o PNG non lo supportano.
 
-I campi di metadati definiti da Exif sono generalmente di natura tecnica e sono di utilizzo limitato per la gestione dei metadati descrittivi. Per questo motivo, [!DNL Experience Manager Assets] offre la mappatura delle proprietà Exif negli schemi [di metadati](metadata-schemas.md) comuni e in XMP.
+I campi di metadati definiti da Exif sono generalmente di natura tecnica e sono di utilizzo limitato per la gestione dei metadati descrittivi. Per questo motivo, [!DNL Experience Manager Assets] offre la mappatura delle proprietà Exif in schemi [di metadati](metadata-schemas.md) comuni e in XMP.
 
 #### Altri metadati {#other-metadata}
 
@@ -141,6 +141,16 @@ Risorse Enterprise Manager consente di modificare i metadati di più risorse con
    >[!CAUTION]
    >
    >Per i campi con valore singolo, i nuovi metadati non vengono aggiunti al valore esistente nel campo, nemmeno se selezioni **[!UICONTROL Modalità di aggiunta]**.
+
+## Metadati personalizzati utilizzando il profilo di elaborazione {#metadata-compute-service}
+
+Le risorse come Cloud Service possono generare metadati personalizzati per una risorsa utilizzando i servizi nativi cloud. Configurate un profilo di elaborazione per generare metadati personalizzati. Scopri [come utilizzare il profilo](/help/assets/asset-microservices-configure-and-use.md#use-profiles)di elaborazione.
+
+![Rappresentazione dei metadati nel profilo di elaborazione](assets/processing-profile-metadata.png)
+
+>[!TIP]
+>
+>A una cartella è possibile applicare un solo profilo di elaborazione. Per applicare più elaborazioni alle risorse di una cartella, aggiungete altre opzioni a un singolo profilo di elaborazione. Ad esempio, un singolo profilo può generare rappresentazioni, transcodificare risorse, generare metadati personalizzati e così via. È possibile applicare filtri di tipo MIME per ogni attività in modo che venga attivata l&#39;attività appropriata per il formato di file richiesto.
 
 ## Configurare il limite per l&#39;aggiornamento in massa dei metadati {#configlimit}
 
@@ -202,10 +212,10 @@ I metadati specifici dell&#39;applicazione includono metadati tecnici e descritt
 
 ### Metadati specifici per la stampa {#print-specific-metadata}
 
-* PDF e PDF/X - Adobe PDF e applicazioni di terze parti.
+* PDF e PDF/X -  applicazioni Adobe PDF e di terze parti.
 * PRISM - Requisiti [di pubblicazione per metadati](https://www.prismstandard.org)standard di settore.
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - Metadati XMP per il testo di pagina.
+* `xmpPG` - Metadati XMP per il testo a pagina.
 
 ### Metadati multimediali specifici {#multimedia-specific-metadata}
 
