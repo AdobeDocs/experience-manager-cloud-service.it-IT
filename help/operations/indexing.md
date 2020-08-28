@@ -2,9 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 translation-type: tm+mt
-source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
+source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1521'
 ht-degree: 2%
 
 ---
@@ -176,3 +176,7 @@ La vecchia versione dell&#39;applicazione utilizza la seguente configurazione:
 La nuova versione dell&#39;applicazione utilizza la seguente configurazione (modificata):
 
 `/oak:index/acme.product-custom-2`
+
+### Indice-Disponibilità/Tolleranza errore {#index-availability}
+
+Si consiglia di creare indici duplicati per le funzioni estremamente importanti (tenendo presente la convenzione di denominazione per gli indici sopra menzionati), quindi nel caso di corruzione dell&#39;indice o di un evento imprevisto di questo tipo, è disponibile un indice di fallback per rispondere alle domande.
