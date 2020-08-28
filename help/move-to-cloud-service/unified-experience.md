@@ -2,7 +2,7 @@
 title: Esperienza unificata per gli strumenti di refactoring del codice
 description: Esperienza unificata per gli strumenti di refactoring del codice
 translation-type: tm+mt
-source-git-commit: ae60d0b472ed6368aeb5806329ff1d5c689e0827
+source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -16,7 +16,7 @@ Abbiamo sviluppato strumenti per automatizzare alcune delle attività di refacto
 
 ## Benefits {#benefits}
 
-Il plug-in Esperienza unificata offre i seguenti vantaggi:
+Il plug-in per l&#39;esperienza unificata offre i seguenti vantaggi:
 
 * Unisce gli strumenti che lavorano sul codice sorgente in un&#39; `node.js` applicazione esposta come `aio-cli ` plug-in per fornire all&#39;utente un&#39;esperienza utente coerente.
 
