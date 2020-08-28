@@ -2,9 +2,9 @@
 title: Annullamento della validità della cache CDN tramite Dynamic Media
 description: L’annullamento della validità della rete CDN (Content Delivery Network) nei contenuti memorizzati nella cache consente di aggiornare rapidamente le risorse distribuite da Dynamic Media, anziché attendere la scadenza della cache.
 translation-type: tm+mt
-source-git-commit: fa86e005a44600fe2ff856a137c6de21a263689e
+source-git-commit: 42788d6a64c5bca7bddd563cb26634db80b2e75d
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1307'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,9 @@ Consultate anche Panoramica sulla [memorizzazione nella cache dei file multimedi
 
 1. In AEM come Cloud Service, toccate **[!UICONTROL Strumenti > Risorse > Modello di annullamento validità CDN.]**
 
-   ![Funzione di convalida CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
+<!--
+    ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template.png)
+-->
 
 1. Nella pagina Modello **[!UICONTROL di annullamento validità]** CDN, effettuate una delle seguenti operazioni in base allo scenario:
 
