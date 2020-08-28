@@ -2,9 +2,9 @@
 title: Annullamento della validità della cache CDN tramite Dynamic Media
 description: L’annullamento della validità della rete CDN (Content Delivery Network) nei contenuti memorizzati nella cache consente di aggiornare rapidamente le risorse distribuite da Dynamic Media, anziché attendere la scadenza della cache.
 translation-type: tm+mt
-source-git-commit: 42788d6a64c5bca7bddd563cb26634db80b2e75d
+source-git-commit: d025a44fea539e1d7a0d76fe20dd818a88c43fd8
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1312'
 ht-degree: 1%
 
 ---
@@ -22,13 +22,11 @@ Consultate anche Panoramica sulla [memorizzazione nella cache dei file multimedi
 
 **Per annullare la validità della cache CDN mediante un supporto dinamico**
 
-*Parte 1: Creazione di un modello di annullamento validità CDN*
+*Parte 1 di 2: Creazione di un modello di annullamento validità CDN*
 
 1. In AEM come Cloud Service, toccate **[!UICONTROL Strumenti > Risorse > Modello di annullamento validità CDN.]**
 
-<!--
-    ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template.png)
--->
+   ![Funzione di convalida CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
 
 1. Nella pagina Modello **[!UICONTROL di annullamento validità]** CDN, effettuate una delle seguenti operazioni in base allo scenario:
 
@@ -39,9 +37,10 @@ Consultate anche Panoramica sulla [memorizzazione nella cache dei file multimedi
 
    ![Modello di annullamento validità CDN - Crea](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. Nell&#39;angolo superiore destro della pagina Modello di annullamento validità CDN, toccate **[!UICONTROL Salva]**, quindi toccate **[!UICONTROL OK]**.
+1. Nell&#39;angolo superiore destro della pagina Modello di annullamento validità CDN, toccate **[!UICONTROL Salva]**, quindi toccate **[!UICONTROL OK]**.<br>
 
-   *Parte 2: Impostazione delle opzioni di annullamento validità CDN*
+   *Parte 2 di 2: Impostazione delle opzioni di annullamento validità CDN*
+   <br>
 
 1. In AEM come Cloud Service, toccate **[!UICONTROL Strumenti > Risorse > Annullamento validità CDN.]**
 
