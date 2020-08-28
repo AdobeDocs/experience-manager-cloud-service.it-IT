@@ -2,7 +2,7 @@
 title: 'Utilizzo delle versioni di una pagina  '
 description: Creare, confrontare e ripristinare le versioni di una pagina
 translation-type: tm+mt
-source-git-commit: 2d5c7ee7866f8334e67a36b120fdb8ad7a34e7f1
+source-git-commit: 87da152f21abe379d70e0a8d04f3155901f013dd
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 67%
@@ -226,7 +226,7 @@ Timewarp semplifica al massimo la riproduzione di una pagina in un determinato m
 * **Timewarp funziona in base alle pagine pubblicate**: Timewarp funziona correttamente solo se la pagina è stata già pubblicata. In caso contrario viene mostrata la pagina corrente nell’ambiente di authoring.
 * **Timewarp utilizza le versioni di pagina**: se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa verrà riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
 * **Le versioni rimosse influiscono su Timewarp**: se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta.
-* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](#reverting-to-a-page-version).
+* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](#revert-to-a-version).
 * **Timewarp si basa solo sul contenuto della pagina**: se sono stati modificati alcuni elementi (come codice, css, risorse/immagini ecc.) per il rendering del sito web, la visualizzazione sarà diversa da come era all’origine, poiché per tali elementi non vengono conservate precedenti versioni nell’archivio.
 
 >[!CAUTION]
