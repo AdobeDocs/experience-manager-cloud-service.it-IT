@@ -2,7 +2,7 @@
 title: 'Utilizzo delle versioni di una pagina  '
 description: Creare, confrontare e ripristinare le versioni di una pagina
 translation-type: tm+mt
-source-git-commit: 87da152f21abe379d70e0a8d04f3155901f013dd
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 67%
@@ -132,7 +132,7 @@ Questo metodo può essere utilizzato per ripristinare le versioni di pagine spec
 
    ![Ripristina versione - Seleziona pagina](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. Selezionate **Ripristina** per la versione selezionata della pagina selezionata, da ripristinare come versione *corrente* .
+1. Selezionate **Ripristina** per la versione selezionata della pagina selezionata, da ripristinare come versione corrente.
 
 >[!NOTE]
 >
