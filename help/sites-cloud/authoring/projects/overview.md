@@ -2,7 +2,7 @@
 title: Progetti
 description: I progetti consentono di raggruppare le risorse in un’entità con ambiente comune e condiviso, che semplifica la gestione dei progetti
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 78%
@@ -72,7 +72,7 @@ Puoi caricare le risorse direttamente nella porzione. Inoltre, puoi creare set d
 
 ### Raccolte di risorse {#asset-collections}
 
-Come per le risorse, puoi aggiungere raccolte di risorse direttamente al tuo progetto. Puoi definire le raccolte in Risorse. <!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
+Come per le risorse, puoi aggiungere [raccolte di risorse](/help/assets/manage-collections.md) direttamente al tuo progetto. Puoi definire le raccolte in Risorse.
 
 ![Raccolta risorse](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -112,7 +112,7 @@ I membri del team possono essere assegnati a questa porzione ed eliminati (oppur
 
 ### Processo di traduzione {#translation-job}
 
-Dalla porzione Processo di traduzione puoi iniziare una traduzione e visualizzare lo stato delle traduzioni. Per configurare la traduzione, consulta Creazione di progetti di traduzione. <!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
+Dalla porzione Processo di traduzione puoi iniziare una traduzione e visualizzare lo stato delle traduzioni. Per configurare la traduzione, consulta [Creazione di progetti di traduzione](/help/assets/translate-assets.md).
 
 ![Lavoro di traduzione](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
@@ -154,7 +154,7 @@ Le attività consentono di controllare lo stato di tutte le attività relative a
 
 ## Modelli di progetto {#project-templates}
 
-AEM viene fornito con tre modelli diversi:
+AEM navi con tre diversi modelli:
 
 * Un progetto semplice: un esempio di riferimento per tutti i progetti che non rientrano in altre categorie (un catch-all). Comprende tre ruoli di base (Proprietari, Editor e Osservatori) e quattro flussi di lavoro (Approvazione progetto, Richiedi lancio, Richiedi pagina di destinazione e Richiedi e-mail).
 * Un progetto multimediale - Un progetto di esempio di riferimento per le attività relative ai supporti. Include diversi ruoli di progetto relativi ai file multimediali (fotografi, editor, copywriter, designer, proprietari e osservatori). Inoltre, include due flussi di lavoro relativi al contenuto multimediale: Richiedi copia (per la richiesta e il controllo del testo) e Servizio fotografico per il prodotto (per la gestione delle fotografie del prodotto)
