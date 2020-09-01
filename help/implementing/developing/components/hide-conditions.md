@@ -2,7 +2,7 @@
 title: Utilizzo di Nascondi condizioni
 description: Per determinare se la risorsa di un componente è rappresentata o meno, è possibile utilizzare le condizioni Nascondi.
 translation-type: tm+mt
-source-git-commit: 6902b40232ae0b704c5e29f09844cab018598c24
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 4%
@@ -58,22 +58,22 @@ Se l&#39;autore di un modello sceglie di disabilitare l&#39;opzione pagine figli
 
 1. Per impostazione predefinita, l’autore della pagina può utilizzare il componente di base elenco per creare un elenco utilizzando pagine figlie, scegliendo l’opzione Pagine **** figlie.
 
-   ![Elenca impostazioni componente](/help/implementing/developing/introduction/assets/hide-conditions-list-settings.png)
+   ![Elenca impostazioni componente](assets/hide-conditions-list-settings.png)
 
 1. Nella finestra di dialogo di progettazione del componente di base elenco, l’autore del modello può scegliere l’opzione **Disattiva elementi figlio** per impedire che l’opzione generi un elenco basato su pagine figlie venga visualizzata all’autore della pagina.
 
-   ![Finestra di dialogo di progettazione dei componenti](/help/implementing/developing/introduction/assets/hide-conditions-list-design.png)
+   ![Finestra di dialogo di progettazione dei componenti](assets/hide-conditions-list-design.png)
 
 1. Un nodo di criteri viene creato in `/conf/wknd/settings/wcm/policies/wknd/components/list` con una proprietà `disableChildren` impostata su `true`.
 
-   ![Struttura del nodo della condizione Nascondi](/help/implementing/developing/introduction/assets/hide-conditions-node-structure.png)
+   ![Struttura del nodo della condizione Nascondi](assets/hide-conditions-node-structure.png)
 
 1. La condizione Nascondi è definita come il valore di una `granite:hide` proprietà sul nodo della proprietà Dialog `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
 
-![Valutazione della condizione di nascondimento](/help/implementing/developing/introduction/assets/hide-conditions-evaluation.png)
+   ![Valutazione della condizione di nascondimento](assets/hide-conditions-evaluation.png)
 
 1. Il valore di `disableChildren` viene estratto dalla configurazione di progettazione e l&#39;espressione `${cdDesign.disableChildren}` restituisce `false`, il che significa che l&#39;opzione non verrà rappresentata come parte del componente.
 
 1. L’opzione Pagine **** figlie non viene più rappresentata per l’autore della pagina quando si utilizza il componente Elenco.
 
-   ![Componente elenco con opzione figlio disabilitata](/help/implementing/developing/introduction/assets/hide-conditions-child-disabled.png)
+   ![Componente elenco con opzione figlio disabilitata](assets/hide-conditions-child-disabled.png)
