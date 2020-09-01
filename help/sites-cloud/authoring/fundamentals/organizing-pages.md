@@ -2,10 +2,10 @@
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 100%
+source-wordcount: '2554'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 
-Durante la creazione di una nuova pagina, AEM ne convalida il nome in base alle convenzioni imposte da AEM e JCR. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
 
 I caratteri minimi consentiti sono:
 
@@ -103,7 +103,7 @@ I caratteri minimi consentiti sono:
 * `_` (trattino basso)
 * `-` (trattino/segno meno)
 
-Per informazioni complete su tutti i caratteri consentiti, consulta le convenzioni di denominazione. <!--Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).-->
+Per informazioni complete su tutti i caratteri consentiti, consulta le [convenzioni di denominazione](/help/implementing/developing/introduction/naming-conventions.md).
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Per informazioni complete su tutti i caratteri consentiti, consulta le convenzio
 
 #### Titolo {#title}
 
-Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome** da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR. <!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome**[ da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR.](/help/implementing/developing/introduction/naming-conventions.md)
 
 Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
 
@@ -122,7 +122,7 @@ Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali c
 
 #### Nome {#name}
 
-Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR. [](/help/implementing/developing/introduction/naming-conventions.md) Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi il campo viene evidenziato con un messaggio di avviso.
 
 ![Esempio di immissione di un nome di pagina non valido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -206,7 +206,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
    * **Nome**:
 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
-      * Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+      * Se specifichi il **nome**[ della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR.](/help/implementing/developing/introduction/naming-conventions.md)
       * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando AEM rileva i caratteri non validi, il campo viene evidenziato e un messaggio di avviso segnala i caratteri che devono essere rimossi o sostituiti.
 
    >[!TIP]
@@ -365,9 +365,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
 >[!NOTE]
 >
->Una pagina può essere spostata solo in una posizione in cui è consentito il modello su cui si basa la pagina. Per ulteriori informazioni consulta la sezione dedicata alla disponibilità dei modelli.
-<!--
->A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>Una pagina può essere spostata solo in una posizione in cui è consentito il modello su cui si basa la pagina. See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
 -->
 
 #### Azioni asincrone {#asynchronous-actions}
