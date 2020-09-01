@@ -2,7 +2,7 @@
 title: Authoring di una pagina per dispositivi mobili
 description: Quando si effettua l’authoring per i dispositivi mobili, è possibile alternare tra diversi emulatori per capire che cosa vedrà l’utente finale
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Authoring di una pagina per dispositivi mobili  {#authoring-a-page-for-mobile-devices}
 
-Le pagine di Adobe Experience Manager si basano su un layout dinamico, che adatta automaticamente i contenuti al dispositivo di destinazione, eliminando la necessità di creare contenuti per dispositivi specifici.
+Le pagine di Adobe Experience Manager si basano su un layout dinamico, [che adatta automaticamente i contenuti al dispositivo di destinazione, eliminando la necessità di creare contenuti per dispositivi specifici.](/help/sites-cloud/authoring/features/responsive-layout.md)
 
 Quando crei una pagina mobile, questa viene visualizzata in modo da emulare il dispositivo mobile. Quando crei la pagina, puoi scegliere tra diversi emulatori per verificare come la pagina verrà effettivamente vista dal visitatore.
 
