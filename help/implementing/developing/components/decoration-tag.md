@@ -2,7 +2,7 @@
 title: Tag Decoration
 description: Quando viene eseguito il rendering di un componente in una pagina Web, è possibile generare un elemento HTML che racchiude il componente renderizzato all’interno di se stesso. Per gli sviluppatori, AEM offre una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti inclusi.
 translation-type: tm+mt
-source-git-commit: 78afd53eaa4945e4933ef80a175fdf97c63b388e
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Per ulteriori informazioni sullo sviluppo in HTL consultate la documentazione []
 
 Questa struttura decisionale riepiloga la logica che determina il comportamento dei tag wrapper.
 
-![Albero decisionale](/help/implementing/developing/introduction/assets/decoration-tag-decision-tree.png)
+![Albero decisionale](assets/decoration-tag-decision-tree.png)
 
 ### Use Cases {#use-cases}
 
