@@ -2,10 +2,10 @@
 title: 'Creazione di modelli di pagina  '
 description: Un modello definisce la struttura della pagina risultante. Con l’Editor modelli, la creazione e manutenzione dei modelli non è più un’attività riservata agli sviluppatori.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '4554'
-ht-degree: 100%
+source-wordcount: '4551'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Tramite l’**Editor modelli**, gli autori dei modelli possono:
 
 Questo documento spiega come un **autore di modelli** può usare la console e l’editor per creare e gestire modelli modificabili.
 
-Per informazioni dettagliate su come funzionano i modelli modificabili a livello tecnico, consulta il documento per sviluppatori Modelli di pagina - Modificabili. <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Durante la creazione di un nuovo modello modificabile:
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
-È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. Si tratta di un’operazione amministrativa descritta nel documento Modelli di pagina - Modificabili. <!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
 
 ### Creazione di un nuovo modello - Autore del modello {#creating-a-new-template-template-author}
 
@@ -106,7 +106,7 @@ Durante la creazione di un nuovo modello modificabile:
    >
    >In un’istanza AEM standard la cartella **globale** esiste già nella console modelli. Questa contiene i modelli predefiniti e funge da fallback se nella cartella corrente non sono presenti criteri e/o tipi di modello.
    >
-   >Si consiglia di utilizzare una cartella di modelli creata per il progetto. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >Si consiglia di utilizzare una [cartella di modelli creata per il progetto](/help/implementing/developing/components/templates.md#template-folders).
 
 1. Seleziona **Crea**, seguito da **Crea modello** per aprire la procedura guidata.
 
@@ -114,7 +114,7 @@ Durante la creazione di un nuovo modello modificabile:
 
    >[!NOTE]
    >
-   >I tipi di modello sono layout predefiniti e possono essere pensati come modelli per un modello. Questi sono predefiniti dagli sviluppatori o dall’amministratore di sistema. Per ulteriori informazioni consulta il documento per sviluppatori Modelli di pagina - Modificabili. <!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >I tipi di modello sono layout predefiniti e possono essere pensati come modelli per un modello. Questi sono predefiniti dagli sviluppatori o dall’amministratore di sistema. More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
 
 1. Completa i **Dettagli modello**:
 
@@ -193,7 +193,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 1. Apri la scheda **Avanzate**.
 1. In **Impostazioni modello** utilizza **Aggiungi campo** per specificare il percorso del modello.
 
-   Il percorso può essere esplicito o utilizzare schemi ricorrenti. Ad esempio:
+   Il percorso può essere esplicito o utilizzare schemi ricorrenti. Esempio:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
@@ -204,7 +204,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
    >Se l’elenco dei **Modelli consentiti** viene lasciato vuoto, l’albero viene asceso fino a quando non viene trovato un valore o un elenco.
    >
    >
-   >Consulta Disponibilità dei modelli: i principi per i modelli consentiti rimangono gli stessi. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
 
 1. Fai clic su **Salva** per salvare le modifiche alle proprietà della pagina.
 
@@ -265,7 +265,7 @@ Quando un componente è stato sbloccato, è possibile definire il [contenuto ini
 
 #### Layout {#template-layout}
 
-Con il [layout](#editing-a-template-layout-template-author) è possibile predefinire il layout del modello per i formati di dispositivo richiesti. La modalità **Layout** per la creazione dei modelli ha le stesse funzionalità della modalità [**Layout **per la creazione delle pagine.](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)
+Con il [layout](#editing-a-template-layout-template-author) è possibile predefinire il layout del modello per i formati di dispositivo richiesti. La modalità **Layout** per la creazione dei modelli ha le stesse funzionalità della modalità [**Layout** per la creazione delle pagine.](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)
 
 #### Criteri di pagina {#template-page-policies}
 
@@ -414,7 +414,7 @@ Ad esempio, per un componente immagine è possibile definire le proporzioni di r
 
 >[!NOTE]
 >
->I criteri dei contenuti per i componenti che si avvalgono dell’editor Rich Text possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni di interfaccia utente. <!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
+>[](/help/implementing/developing/extending/rich-text-editor.md)I criteri dei contenuti per i componenti che si avvalgono dell’editor Rich Text possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni di interfaccia utente.
 
 #### Criteri e proprietà (contenitore di layout) {#policy-and-properties-layout-container}
 
@@ -504,7 +504,7 @@ Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **
 
 >[!NOTE]
 >
->La modalità **Contenuto iniziale** è in pratica una modalità di modifica per le pagine create con quel modello. Pertanto, i criteri non vengono definiti in modalità **Contenuto iniziale**, ma in [**modalità Struttura **](#editing-a-template-structure-template-author).
+>La modalità **Contenuto iniziale** è in pratica una modalità di modifica per le pagine create con quel modello. Pertanto, i criteri non vengono definiti in modalità **Contenuto iniziale**, ma in [**modalità Struttura**](#editing-a-template-structure-template-author).
 
 * I componenti sbloccati disponibili per la modifica sono contrassegnati. Quando sono selezionati, hanno un bordo blu:
 
