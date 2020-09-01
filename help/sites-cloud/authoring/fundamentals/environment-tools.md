@@ -2,7 +2,7 @@
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Ad esempio, nella vista a colonne:
 
 ## Modifica del contenuto di una pagina {#editing-page-content}
 
-Puoi modificare una pagina con l’editor di pagina. Ad esempio:
+Puoi modificare una pagina con l’editor di pagina. Esempio:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -40,7 +40,7 @@ Puoi modificare una pagina con l’editor di pagina. Ad esempio:
 
 Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti aree:
 
-* Il selettore [**Informazioni pagina **](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties), che mostra le diapositive introduttive (così come visualizzate al primo accesso all’editor)
+* Il selettore [**Informazioni pagina**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties), che mostra le diapositive introduttive (così come visualizzate al primo accesso all’editor)
 * La finestra di dialogo di [configurazione](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) per i componenti specifici (utilizzando l’icona ? presente nella barra degli strumenti della finestra di dialogo), che mostra la guida sensibile al contesto
 
 Ulteriori [risorse di aiuto sono disponibili dalle console](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
@@ -100,7 +100,7 @@ L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in us
 
 ## Browser Risorse {#assets-browser}
 
-Il browser Risorse mostra tutte le risorse disponibili per la pagina corrente. <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+Il browser Risorse mostra tutte le [risorse](/help/assets/home.md) disponibili per la pagina corrente.
 
 Il browser Risorse è una scheda che si trova nel pannello laterale, insieme al [browser Componenti](#components-browser) e alla [struttura dei contenuti](#content-tree). Per aprire o chiudere il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 
@@ -155,7 +155,7 @@ L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in us
 >
 >Un dispositivo viene rilevato come mobile se la larghezza è inferiore a 1024 px (quindi anche una piccola finestra desktop).
 
-Se devi apportare rapidamente una modifica a una risorsa, puoi avviare l’editor risorse direttamente dal browser Risorse facendo clic sull’icona Modifica accanto al nome della risorsa. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+Se devi apportare rapidamente una modifica a una risorsa, puoi avviare [l’editor risorse](/help/assets/manage-digital-assets.md) direttamente dal browser Risorse facendo clic sull&#39;icona Modifica accanto al nome della risorsa.
 
 ![Pulsante Modifica risorsa](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
