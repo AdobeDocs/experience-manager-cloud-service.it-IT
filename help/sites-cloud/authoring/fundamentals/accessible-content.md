@@ -2,9 +2,9 @@
 title: Creazione di contenuti accessibili per Adobe Experience Manager as a Cloud Service (conformità WCAG 2.1)
 description: Utilizzare AEM as a Cloud Service per rendere il contenuto web accessibile e fruibile per le persone con disabilità
 translation-type: tm+mt
-source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
+source-git-commit: fb6c90078e9da011a71093fcdab1a50faded5daa
 workflow-type: tm+mt
-source-wordcount: '13955'
+source-wordcount: '14057'
 ht-degree: 100%
 
 ---
@@ -23,12 +23,10 @@ Come introduzione, viene fornito un elenco di sezioni e documenti di supporto:
 * [Documentazione delle linee guida WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 Inoltre, vedi:
+
 * [Guida rapida alle linee guida WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
 * [Rapporti sulla conformità per l’accessibilità relativi alle soluzioni Adobe](https://www.adobe.com/accessibility/compliance.html).
-
-<!-- 
->* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
--->
+* [Configurazione dell’editor Rich Text per generare contenuto accessibile](/help/implementing/developing/extending/rte-accessible-content.md)
 
 Le linee guida sono classificate in base a tre livelli di conformità: livello A (il più basso), livello AA e livello AAA (il più alto). Brevemente, i livelli sono definiti come segue:
 
@@ -70,19 +68,17 @@ Un ulteriore vantaggio è rappresentato dal fatto che le alternative testuali co
 
 #### Come soddisfare il criterio - Contenuto non testuale (1.1.1)  {#how-to-meet-non-text-content}
 
-Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire un&#39;alternativa testuale equivalente. Ciò può essere effettuato tramite il campo **Testo alternativo**, vedi ad esempio l’**[Immagine](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/image.html)**del componente di base.
+Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire un&#39;alternativa testuale equivalente. Ciò può essere effettuato tramite il campo **Testo alternativo**, vedi ad esempio l’**[Immagine](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/image.html)** del componente di base.
 
 >[!NOTE]
 >
->Alcuni componenti di base predefiniti, come il **[carosello](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**, non forniscono un campo di**testo alternativo **per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se il campo**Etichetta **è disponibile nella scheda per l’**[accessibilità](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** dell’intero componente.
+>Alcuni componenti di base predefiniti, come il **[carosello](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**, non forniscono un campo di **testo alternativo** per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se il campo **Etichetta** è disponibile nella scheda per l’**[accessibilità](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** dell’intero componente.
 >
 >Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo dovrà configurarli per supportare l’attributo `alt`, affinché gli autori possano aggiungerlo al contenuto (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi).
-
-<!--
->Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
 >
->When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+>Alcuni componenti di base predefiniti, come il **[carosello](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**, non forniscono un campo di **testo alternativo** per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se il campo **Etichetta** è disponibile nella scheda per l’**[accessibilità](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** dell’intero componente.
+>
+>Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo dovrà configurarli per supportare l’attributo `alt`[, affinché gli autori possano aggiungerlo al contenuto (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 In AEM il campo **Testo alternativo** deve essere compilato per impostazione predefinita. Se l’immagine è puramente decorativa e un testo alternativo sarebbe superfluo, seleziona l’opzione **L’immagine è decorativa**.
 
@@ -342,11 +338,7 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
 
    >[!NOTE]
    >
-   >Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi).
-
-   <!-- removed link syntax for ExL - Bob Bringhurst
-  >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
-  -->
+   >Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella**[ (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
    Per aprire la finestra di dialogo **Tabella** in cui puoi selezionare le **Proprietà tabella**:
 
@@ -1045,10 +1037,7 @@ Analogamente, il browser può rappresentare correttamente un prestito lessicale 
 >
 >Non è necessario seguire questo criterio di successo per nomi o città in lingue diverse, o quando si utilizzano prestiti lessicali o frasi diventati comuni nella lingua predefinita (come *schadenfreude* in inglese).
 
-Per aggiungere l’elemento span con una lingua appropriata, è possibile modificare manualmente il codice HTML nella modalità di modifica sorgente dell’editor Rich Text, affinché venga letto come sopra indicato. In alternativa, l’attributo `lang` può essere incluso nell’editor Rich Text da un amministratore di sistema (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi).
-<!--
-To add the span element, with an appropriate language, you can manually edit your HTML markup in the source edit mode of the RTE so that it reads as above. Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+Per aggiungere l’elemento span con una lingua appropriata, è possibile modificare manualmente il codice HTML nella modalità di modifica sorgente dell’editor Rich Text, affinché venga letto come sopra indicato. In alternativa, l’attributo `lang`[ può essere incluso nell’editor Rich Text da un amministratore di sistema (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 #### Ulteriori informazioni - Parti in lingua (3.1.2) {#more-information-language-of-parts}
 
@@ -1212,11 +1201,7 @@ Se si utilizzano i pulsanti immagine (ad esempio, il componente per il pulsante 
 
 Nel progetto WKND, se esiste un gruppo di controlli correlati, ad esempio il gruppo pulsanti di scelta **Radio Group**, può essere necessario assegnargli un titolo, nonché controlli specifici. Quando si aggiunge un set di pulsanti di scelta in AEM, il campo **Titolo** fornisce il titolo del gruppo, mentre i singoli titoli vengono specificati durante la creazione dei pulsanti di scelta (**Elementi**).
 
-Tuttavia, non esiste alcuna associazione programmatica tra il titolo del gruppo e i pulsanti di scelta. Per creare tale associazione, gli editor di modelli dovranno eseguire il wrapping del titolo tra i tag necessari `fieldset` e `legend`, semplicemente modificando il codice sorgente della pagina. In alternativa, un amministratore di sistema può aggiungere il supporto di questi elementi affinché vengano visualizzati nella finestra di dialogo **Proprietà campo** (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi).
-
-<!--
-However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+Tuttavia, non esiste alcuna associazione programmatica tra il titolo del gruppo e i pulsanti di scelta. Per creare tale associazione, gli editor di modelli dovranno eseguire il wrapping del titolo tra i tag necessari `fieldset` e `legend`, semplicemente modificando il codice sorgente della pagina. In alternativa, un amministratore di sistema può aggiungere il supporto di questi elementi affinché vengano visualizzati nella finestra di dialogo **Proprietà campo**[ (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md)).
 
 ###### Considerazioni aggiuntive relative ai moduli {#additional-considerations-for-forms}
 
