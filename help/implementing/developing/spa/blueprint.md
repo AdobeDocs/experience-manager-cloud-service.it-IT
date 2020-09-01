@@ -2,7 +2,7 @@
 title: Blueprint SPA
 description: Il presente documento descrive il contratto generale, indipendente dal quadro, che qualsiasi quadro SPA dovrebbe rispettare per implementare componenti SPA modificabili all'interno di AEM.
 translation-type: tm+mt
-source-git-commit: f7d90d9cb41077a3a510f97a9f9f89f4b2b13cd9
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Per consentire all’autore di utilizzare l’editor AEM SPA per modificare il contenuto di un’app SPA, l’app deve soddisfare alcuni requisiti.
 
-## Introduzione {#introdcution}
+## Introduzione {#introduction}
 
 Il presente documento descrive il contratto generale che ogni quadro SPA deve rispettare (ossia il tipo di livello di supporto AEM) per implementare componenti SPA modificabili all&#39;interno di AEM.
 
@@ -283,4 +283,3 @@ Scoprite come una semplice SPA funziona e sperimentare direttamente con una SPA 
 Per ulteriori informazioni sugli SPA in AEM, consulta i seguenti documenti:
 
 * [Panoramica](editor-overview.md) dell&#39;editor SPA per una panoramica delle SPA in AEM e il modello di comunicazione
-
