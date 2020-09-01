@@ -2,7 +2,7 @@
 title: 'Differenze tra pagine '
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 100%
@@ -22,7 +22,7 @@ La creazione di contenuti è un processo iterativo. Per un authoring efficace, �
 >
 >Per utilizzare questa funzione, l’utente deve disporre dell’autorizzazione **Modifica/Crea/Elimina** sul nodo `/content/versionhistory`.
 >
->Per ulteriori informazioni tecniche su questa funzione, consulta Sviluppo e differenze tra pagine. <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+>Per ulteriori informazioni tecniche su questa funzione, consulta [Sviluppo e differenze tra pagine](/help/implementing/developing/introduction/page-diff.md#operation-details).
 
 ## Utilizzo {#use}
 
@@ -105,4 +105,4 @@ Esistono alcune situazioni in cui il confronto delle differenze della pagina non
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul funzionamento del meccanismo di differenze tra pagine e sui limiti che possono influenzare tale meccanismo, consulta la documentazione per gli sviluppatori relativa a questa funzione. <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
+>Per ulteriori informazioni sull’operazione del meccanismo di differenze tra pagine e sui limiti che possono influenzare tale meccanismo, consulta la [documentazione per gli sviluppatori](/help/implementing/developing/introduction/page-diff.md) per questa funzione.
