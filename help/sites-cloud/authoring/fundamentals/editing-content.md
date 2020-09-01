@@ -2,7 +2,7 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile modificarla per aggiornarne i contenuti
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -129,7 +129,7 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
 È possibile aggiungere un nuovo componente utilizzando il [browser componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Il [segnaposto componente](#component-placeholder) mostra dove sarà posizionato il componente:
 
-1. Assicurati che la pagina sia in [**modalità Modifica **.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+1. Assicurati che la pagina sia in [**modalità Modifica**.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 1. Apri il [browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 1. Trascina il componente di cui hai bisogno nella [posizione desiderata](#component-placeholder).
 1. [Modifica](#edit-content) il componente.
@@ -142,7 +142,7 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
 È possibile aggiungere un nuovo componente utilizzando la casella **Trascina qui i componenti** del sistema paragrafo:
 
-1. Assicurati che la pagina sia in [**modalità Modifica **.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+1. Assicurati che la pagina sia in [**modalità Modifica**.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 1. Esistono due modi per selezionare e aggiungere un nuovo componente dal sistema paragrafo:
 
    * Seleziona l’opzione **Inserisci componente** (+) nella barra degli strumenti di un componente esistente oppure nella casella **Trascina qui i componenti**.
@@ -165,7 +165,7 @@ Puoi configurare questo comportamento per l’installazione in uso. Per ulterior
 
 Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
-1. Assicurati che la pagina sia in [**modalità Modifica **.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+1. Assicurati che la pagina sia in [**modalità Modifica**.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 1. Apri il [browser Risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
 1. Trascina la risorsa richiesta nella posizione desiderata. Il [segnaposto componente](#component-placeholder) indica dove sarà posizionato il componente.
 
@@ -177,7 +177,7 @@ Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 >
 >Su un dispositivo mobile, il browser Risorse occuperà l’intero schermo. Quando inizi a trascinare una risorsa, il browser si chiude per mostrare nuovamente la pagina e permetterti di posizionare la risorsa.
 
-Se sfogliando le risorse disponibili scopri che è necessario eseguire una rapida modifica a una risorsa, puoi avviare l’editor risorse direttamente dal browser, facendo clic sull’icona di modifica accanto al nome della risorsa. <!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
+Se sfogliando le risorse disponibili scopri che è necessario eseguire una rapida modifica a una risorsa, puoi avviare l’[editor delle risorse](/help/assets/manage-digital-assets.md) direttamente dal browser, facendo clic sull’icona di modifica accanto al nome della risorsa.
 
 ![Pulsante Modifica risorsa](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -401,7 +401,7 @@ La [modalità di pagina Stato Live Copy](/help/sites-cloud/authoring/fundamental
 * Bordo verde: componente ereditato
 * Bordo rosa: l’ereditarietà del componente è stata annullata
 
-Ad esempio:
+Esempio:
 
 ![Esempio di visualizzazione stato Live Copy](/help/sites-cloud/authoring/assets/editing-live-copy-status.png)
 
