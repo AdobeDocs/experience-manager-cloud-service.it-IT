@@ -2,9 +2,9 @@
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1687'
 ht-degree: 88%
 
 ---
@@ -129,11 +129,9 @@ Le proprietà sono distribuite su più schede.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-<!--
-* **Inherited from &lt;*path*&gt;**
+* **Ereditato da &lt;percorso>**
 
-  * Indicates whether the page is inherited. and where from.
--->
+   * Indica se la pagina viene ereditata e da dove.
 
 * **Configurazione cloud**
 
@@ -148,7 +146,7 @@ Le proprietà sono distribuite su più schede.
    * Attiva (o disattiva) l’uso dell’autenticazione per accedere alla pagina.
    >[!NOTE]
    >
-   >Nella scheda **[Autorizzazioni](#permissions)**è possibile definire gruppi utenti chiusi per la pagina.
+   >Nella scheda **[Autorizzazioni](#permissions)** è possibile definire gruppi utenti chiusi per la pagina.
 
 * **Pagina di accesso**
 
