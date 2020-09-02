@@ -2,7 +2,7 @@
 title: Dettagli ambiente di generazione
 description: Dettagli ambiente build - Cloud Services
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Informazioni dettagliate sull’ambiente di generazione {#understanding-build-environment}
+# Informazioni sull’ambiente di creazione {#understanding-build-environment}
 
 ## Dettagli ambiente di generazione {#build-environment-details}
 
