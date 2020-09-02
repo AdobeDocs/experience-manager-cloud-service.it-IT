@@ -2,7 +2,7 @@
 title: Dettagli configurazione progetto
 description: Dettagli configurazione progetto - Cloud Services
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 7%
@@ -20,7 +20,7 @@ Per essere generati e distribuiti correttamente con Cloud Manager, i progetti AE
 * Nella directory principale dell’archivio Git deve essere presente un file *pom.xml* . Questo file *pom.xml* può fare riferimento a tutti i sottomoduli (che a loro volta possono avere altri sottomoduli, ecc.) se necessario.
 
 * Potete aggiungere riferimenti ad altri archivi di artefatti Maven nei file *pom.xml* . L&#39;accesso agli archivi di artefatti protetti da [password è supportato se configurato](#password-protected-maven-repositories) . Tuttavia, l&#39;accesso ai repository di artifact protetti dalla rete non è supportato.
-* I pacchetti di contenuto distribuibile vengono rilevati mediante la scansione dei file *zip* del pacchetto di contenuto contenuti contenuti in una directory denominata *target*. Un numero qualsiasi di sottomoduli può produrre pacchetti di contenuto.
+* I pacchetti di contenuto distribuibile vengono rilevati mediante la scansione dei file *zip* del pacchetto di contenuto contenuti contenuti in una directory denominata *target*. Un numero qualsiasi di sottomoduli può produrre pacchetti di contenuti.
 
 * Gli artifact del Dispatcher distribuibile vengono rilevati mediante la scansione di file *zip* (ancora, contenuti in una directory denominata *target*) con directory denominate *conf* e *conf.d*.
 
@@ -31,7 +31,7 @@ Per essere generati e distribuiti correttamente con Cloud Manager, i progetti AE
 
 In alcuni casi limitati, potrebbe essere necessario variare leggermente il processo di creazione quando si esegue in Cloud Manager rispetto a quando viene eseguito su workstation sviluppatore. Per questi casi, [Maven Profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) può essere utilizzato per definire in che modo la build deve essere diversa in ambienti diversi, incluso Cloud Manager.
 
-L&#39;attivazione di un profilo Maven all&#39;interno dell&#39;ambiente di generazione di Cloud Manager deve essere eseguita ricercando la variabile di ambiente CM_BUILD descritta in precedenza. In alternativa, un profilo destinato ad essere utilizzato solo al di fuori dell&#39;ambiente di build di Cloud Manager dovrebbe essere fatto cercando l&#39;assurdità di questa variabile.
+L&#39;attivazione di un profilo Maven all&#39;interno dell&#39;ambiente di generazione di Cloud Manager deve essere eseguita ricercando la variabile di ambiente CM_BUILD descritta in precedenza. Al contrario, un profilo destinato ad essere utilizzato solo al di fuori dell&#39;ambiente di build di Cloud Manager dovrebbe essere fatto cercando l&#39;assenza di questa variabile.
 
 Ad esempio, se desiderate inviare un messaggio semplice solo quando la build viene eseguita in Cloud Manager, effettuate le seguenti operazioni:
 
