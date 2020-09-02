@@ -2,20 +2,20 @@
 title: Utilizzo della procedura guidata
 description: Utilizzo della procedura guidata - Cloud Services
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 40%
+source-wordcount: '146'
+ht-degree: 41%
 
 ---
 
 
-# Utilizzo della procedura guidata per creare un progetto di applicazione AEM {#using-wizard-to-create-an-aem-application-project}
+# Utilizzo della procedura guidata {#using-wizard-to-create-an-aem-application-project}
 
 Per aiutare a far iniziare i nuovi clienti, Cloud Manager è ora in grado di creare un progetto AEM minimo come punto di partenza. Questo processo è basato sul tipo di archivio [**AEM progetto**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
-Per creare un progetto di applicazione AEM in Cloud Manager, procedi come segue:
+Per creare un progetto di applicazione AEM in Cloud Manager utilizzando la procedura guidata, effettuate le seguenti operazioni:
 
 1. Una volta effettuato l’accesso a Cloud Manager e quando la configurazione del programma di base è completa, nella schermata **Panoramica** verrà visualizzato uno speciale invito all’azione, se l’archivio è vuoto.
 
