@@ -2,7 +2,7 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -78,21 +78,21 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
    * **Continua immediatamente** : se questa opzione è selezionata, la pipeline procederà automaticamente ogni volta che si verifica un errore importante. Si tratta essenzialmente di un&#39;emulazione manuale di un utente che approva ogni errore.
 
 
-1. Le impostazioni della pipeline di produzione includono una terza scheda etichettata come **Content Audit**.
+1. Le impostazioni della pipeline di produzione includono una terza scheda etichettata come **Experience Audit**.
 
    ![](assets/content-audit-1.png)
 
-   Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi nella revisione dei contenuti. L&#39;utente può inserire manualmente un percorso URL da includere. È possibile includere fino a 25 righe. Se non ci sono pagine inviate dall&#39;utente in questa sezione, la pagina iniziale del sito verrà inclusa nel controllo del contenuto come impostazione predefinita.
+   Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi in Experience Audit. L&#39;utente può inserire manualmente un percorso URL da includere. È possibile includere fino a 25 righe. Se non ci sono pagine inviate dall&#39;utente in questa sezione, la pagina iniziale del sito verrà inclusa nel controllo dell&#39;esperienza come impostazione predefinita.
 
    >[!NOTE]
    > Le pagine configurate verranno inviate al servizio e valutate in base alle prestazioni, all&#39;accessibilità, al SEO (ottimizzazione motore di ricerca), alle best practice e ai test PWA (app Web progressiva).
 
-   Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/cloud-manager/content-audit-testing.md) dell&#39;audit dei contenuti.
+   Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/cloud-manager/experience-audit-testing.md) dell&#39;audit esperienza.
 
-   Fate clic su **Aggiungi nuova esclusione** pagina per specificare un percorso URL da includere nel controllo dei contenuti. Dopo aver aggiunto il percorso, fate clic su **Salva**.
+   Fate clic su **Aggiungi nuova esclusione** pagina per specificare un percorso URL da includere nel controllo dell&#39;esperienza. Dopo aver aggiunto il percorso, fate clic su **Salva**.
 
    >[!NOTE]
-   >Per attivare il passaggio Controllo contenuto, gli utenti devono modificare la pipeline e, facoltativamente, aggiungere pagine. Per ulteriori informazioni, consulta [Problemi](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) noti.
+   >Per attivare il passaggio Audit esperienza, gli utenti devono modificare la pipeline e, facoltativamente, aggiungere pagine. Per ulteriori informazioni, consulta [Problemi](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) noti.
 
    ![](assets/content-audit2.png)
 
