@@ -2,7 +2,7 @@
 title: Panoramica sui risultati del test - Cloud Services
 description: Panoramica sui risultati del test - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Sono disponibili tre grandi categorie di test supportati da Cloud Manager per pi
 
    Il test funzionale fa parte della fase di test di una tubazione di produzione.
 
-1. [Verifica del contenuto](/help/implementing/cloud-manager/content-audit-testing.md)
+1. [Verifica esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   Il controllo dei contenuti è abilitato in tutte le pipeline di produzione di Cloud Manager e non può essere ignorato.
+   Il test di controllo dell&#39;esperienza è abilitato in tutte le pipeline di produzione di Cloud Manager e non può essere ignorato.
 
 Questi test possono essere:
 
