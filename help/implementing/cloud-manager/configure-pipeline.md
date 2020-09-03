@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -89,10 +89,7 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
 
    Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/cloud-manager/experience-audit-testing.md) dell&#39;audit esperienza.
 
-   Fate clic su **Aggiungi nuova esclusione** pagina per specificare un percorso URL da includere nel controllo dell&#39;esperienza. Dopo aver aggiunto il percorso, fate clic su **Salva**.
-
-   >[!NOTE]
-   >Per attivare il passaggio Audit esperienza, gli utenti devono modificare la pipeline e, facoltativamente, aggiungere pagine. Per ulteriori informazioni, consulta [Problemi](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) noti.
+   Fate clic su **Add New Page Override (Aggiungi nuova esclusione** pagina) per fornire un percorso URL da includere nel Experience Audit (Audit esperienza). Dopo aver aggiunto il percorso, fate clic su **Salva**.
 
    ![](assets/exp-audit2.png)
 
