@@ -2,7 +2,7 @@
 title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: bb810684a513718ddb7232f1a2da725b2df7f36c
+source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
 workflow-type: tm+mt
 source-wordcount: '3537'
 ht-degree: 1%
@@ -183,7 +183,7 @@ Tutti i pacchetti di contenuto installati tramite Cloud Manager (sia modificabil
 
 ### Inclusione di pacchetti di terze parti {#including-third-party}
 
-È comune per i clienti includere pacchetti pre-costruiti da fonti di terze parti come fornitori di software come  Adobi  partner di traduzione. Si consiglia di ospitare questi pacchetti in un repository remoto e di farvi riferimento nel `pom.xml`. Questo è possibile per i repository pubblici e anche per i repository privati con protezione tramite password, come descritto in archivi [per cibi protetti da](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#password-protected-maven-repositories)password.
+È comune per i clienti includere pacchetti pre-costruiti da fonti di terze parti come fornitori di software come  Adobi  partner di traduzione. Si consiglia di ospitare questi pacchetti in un repository remoto e di farvi riferimento nel `pom.xml`. Questo è possibile per i repository pubblici e anche per i repository privati con protezione tramite password, come descritto in archivi [per cibi protetti da](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)password.
 
 Se non è possibile memorizzare il pacchetto in un archivio remoto, i clienti possono inserirlo in un archivio Maven locale basato su file system, che viene impegnato a SCM come parte del progetto e a cui fanno riferimento qualsiasi cosa dipenda da esso. Il repository è dichiarato nei programmi di progetto illustrati di seguito:
 
