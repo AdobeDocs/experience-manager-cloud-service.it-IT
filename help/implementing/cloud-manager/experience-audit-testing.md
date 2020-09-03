@@ -2,9 +2,9 @@
 title: Test di audit delle esperienze - Cloud Services
 description: Test di audit delle esperienze - Cloud Services
 translation-type: tm+mt
-source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
+source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,18 @@ Experience Audit in Cloud Manager assicura che l&#39;esperienza digitale degli u
 
 Experience Audit fornisce risultati di test aggregati e dettagliati a livello di pagina tramite la pagina di esecuzione della pipeline di produzione.
 
-* Le metriche a livello di aggregazione misurano il punteggio medio tra le pagine sottoposte a controllo.
+* Le metriche a livello di aggregazione misurano il punteggio medio tra le pagine sottoposte a controllo per ottenere prestazioni, accessibilità, procedure ottimali, SEO (Ottimizzazione motore di ricerca).
+   >[!NOTE]
+   >La valutazione progressiva dell&#39;app Web (PWA) non è inclusa nella valutazione di riepilogo e verrà visualizzata solo nella schermata dei dettagli a livello di pagina.
 * I singoli punteggi a livello di pagina sono disponibili anche tramite drill down.
 * Sono disponibili dettagli dei punteggi per vedere quali sono i risultati dei singoli test, nonché indicazioni su come risolvere eventuali problemi individuati durante il controllo dei contenuti.
 * Una cronologia dei risultati del test è persistente in Cloud Manager in modo che i clienti possano vedere se le modifiche introdotte nell&#39;esecuzione della pipeline includono eventuali regressioni dall&#39;esecuzione precedente.
 
 ### Aggrega punteggi {#aggregate-scores}
 
-Esiste un punteggio a livello aggregato per ciascun tipo di test (prestazioni, accessibilità, SEO, best practice e PWA).
+È disponibile una valutazione a livello aggregato per ogni tipo di test, ad esempio prestazioni, accessibilità, SEO e procedure ottimali.
+>[!NOTE]
+>La valutazione progressiva dell&#39;app Web (PWA) non è inclusa nella valutazione di riepilogo e verrà visualizzata solo nella schermata dei dettagli a livello di pagina.
 
 Il punteggio del livello aggregato prende il punteggio medio delle pagine incluse nell&#39;esecuzione. La modifica a livello di aggregazione rappresenta il punteggio medio delle pagine nell&#39;esecuzione corrente rispetto alla media dei punteggi dell&#39;esecuzione precedente, anche se la raccolta di pagine configurate per l&#39;inclusione è stata modificata tra le esecuzioni.
 
