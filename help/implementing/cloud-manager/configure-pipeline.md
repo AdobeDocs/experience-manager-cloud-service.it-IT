@@ -2,7 +2,7 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -58,11 +58,11 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
 
 1. Viene visualizzata la schermata **Configurazione tubazione** . Select the branch and click **Next**.
 
-   ![](assets/setup-pipeline-1.png)
+   ![](assets/setup-1.png)
 
 1. Configurare le opzioni di distribuzione.
 
-   ![](assets/setup-pipeline-2.png)
+   ![](assets/setup-2.png)
 
    È possibile definire l&#39;attivatore per avviare la pipeline:
 
@@ -80,7 +80,7 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
 
 1. Le impostazioni della pipeline di produzione includono una terza scheda etichettata come **Experience Audit**.
 
-   ![](assets/content-audit-1.png)
+   ![](assets/setup-3.png)
 
    Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi in Experience Audit. L&#39;utente può inserire manualmente un percorso URL da includere. È possibile includere fino a 25 righe. Se non ci sono pagine inviate dall&#39;utente in questa sezione, la pagina iniziale del sito verrà inclusa nel controllo dell&#39;esperienza come impostazione predefinita.
 
@@ -94,7 +94,7 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
    >[!NOTE]
    >Per attivare il passaggio Audit esperienza, gli utenti devono modificare la pipeline e, facoltativamente, aggiungere pagine. Per ulteriori informazioni, consulta [Problemi](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) noti.
 
-   ![](assets/content-audit2.png)
+   ![](assets/exp-audit2.png)
 
 1. Fate clic su **Salva** nella schermata **Modifica tubazione** . Nella pagina **Panoramica** è ora visualizzata la scheda **Implementa il programma** . Fate clic sul pulsante **Distribuisci** per distribuire il programma.
 
