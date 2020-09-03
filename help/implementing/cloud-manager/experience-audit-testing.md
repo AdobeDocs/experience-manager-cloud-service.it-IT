@@ -2,7 +2,7 @@
 title: Test di audit delle esperienze - Cloud Services
 description: Test di audit delle esperienze - Cloud Services
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -51,7 +51,8 @@ Il valore della metrica Modifica può essere uno dei seguenti:
 
 * **N/D** - Non c&#39;era un punteggio precedente disponibile rispetto a
 
-   ![](/help/implementing/developing/introduction/assets/content-audit-test1.png)
+   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+
 
 ### Punteggi a livello di pagina {#page-level-scores}
 
@@ -59,5 +60,5 @@ Effettuando il drill-through in uno dei test, è possibile visualizzare un punte
 
 Facendo clic sui dettagli di una singola pagina verranno fornite informazioni sugli elementi della pagina che sono stati valutati e indicazioni per risolvere i problemi in caso di rilevamento di opportunità di miglioramento. I dettagli dei test e le relative indicazioni sono forniti da Google Lighthouse.
 
-![](/help/implementing/developing/introduction/assets/page-level-scores.png)
+![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
 
