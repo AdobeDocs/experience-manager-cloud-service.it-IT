@@ -2,9 +2,9 @@
 title: Distribuzione del codice - Cloud Services
 description: Distribuzione del codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Dopo aver configurato la pipeline di produzione (repository, ambiente e ambiente
    La **distribuzione della fase** prevede i seguenti passaggi:
 
    * Convalida: Questo passaggio assicura che la pipeline sia configurata per utilizzare le risorse attualmente disponibili, ad esempio che il ramo configurato esiste, gli ambienti sono disponibili.
-   * Build e unit test: Questo passaggio esegue un processo di compilazione containerizzato. Per informazioni dettagliate sull&#39;ambiente di [generazione, consultate Dettagli](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) sull&#39;ambiente di generazione.
+   * Build e unit test: Questo passaggio esegue un processo di compilazione containerizzato. Per informazioni dettagliate sull&#39;ambiente di [generazione, consultate Dettagli](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) sull&#39;ambiente di generazione.
    * Scansione del codice: Questo passaggio valuta la qualità del codice dell’applicazione. Per informazioni dettagliate sul processo di verifica, consultate Test [della qualità del](/help/implementing/cloud-manager/code-quality-testing.md) codice.
    * Genera immagini: Questo passaggio include un file di registro dal processo utilizzato per creare le immagini. Questo processo è responsabile della trasformazione dei pacchetti di contenuti e dispatcher prodotti dalla fase di creazione in immagini Docker e configurazione Kubernetes.
    * Distribuisci nello stage
@@ -56,8 +56,8 @@ Per ulteriori informazioni, consulta Test [delle funzionalità del](/help/implem
    * Test funzionale personalizzato: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita.\
       Per ulteriori informazioni, consultate Test [funzionale](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) personalizzato.
 
-   * Controllo contenuto: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Quando viene eseguita una pipeline di produzione, viene inclusa una fase di controllo del contenuto dopo il test funzionale personalizzato che eseguirà i controlli. Le pagine configurate verranno inviate al servizio e valutate. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e la modifica tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se esiste una regressione che verrà introdotta con la distribuzione corrente.
-Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/cloud-manager/content-audit-testing.md) di Content Audit.
+   * Audit esperienza: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Durante l&#39;esecuzione di una pipeline di produzione, viene inclusa una fase di controllo dell&#39;esperienza dopo il test funzionale personalizzato che eseguirà i controlli. Le pagine configurate verranno inviate al servizio e valutate. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e la modifica tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se esiste una regressione che verrà introdotta con la distribuzione corrente.
+Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/cloud-manager/experience-audit-testing.md) di Experience Audit.
 
       ![](assets/testing-tab.png)
 
@@ -88,7 +88,7 @@ Quando Cloud Manager si distribuisce su topologie non di produzione, l&#39;obiet
 
    >[!NOTE]
    >
-   >Tutti AEM artifact vengono distribuiti sia all&#39;autore che agli editori. Le modalità di esecuzione devono essere utilizzate quando sono necessarie configurazioni specifiche per il nodo. Per ulteriori informazioni sulle modalità di esecuzione che consentono di sintonizzare l&#39;istanza di AEM per uno scopo specifico, fare riferimento a Modalità di esecuzione.
+   >Tutti AEM artifact vengono distribuiti sia all&#39;autore che agli editori. Le modalità di esecuzione devono essere utilizzate quando sono necessarie configurazioni specifiche per il nodo. Per ulteriori informazioni sulle modalità di esecuzione per ottimizzare l&#39;istanza di AEM per uno scopo specifico, fare riferimento a Modalità di esecuzione.
 
 1. L&#39;artifact del dispatcher viene distribuito a ciascun dispatcher come indicato di seguito:
 
