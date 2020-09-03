@@ -1,48 +1,48 @@
 ---
-title: Note sulla versione [!DNL Adobe Experience Manager] di Cloud Service per la versione 2020.7.0.
-description: '[!DNL Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.7.0.'
+title: Note sulla versione 2020.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: '[!DNL Adobe Experience Manager] as a Cloud Service: note sulla versione 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 4211a4d95be6e625b283e3142609923245da8d31
+source-git-commit: 67d8ef256b410695435446ba0e560edce9115bab
 workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 35%
+ht-degree: 87%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
+# Note sulla versione per [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
 La sezione seguente illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.7.0.
 
 ## Data di rilascio {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
+La data di rilascio per [!DNL Experience Manager] as a Cloud Service 2020.7.0 è il 30 luglio 2020.
 
-##  Adobe Experience Manager Sites come Cloud Service {#cloud-services-sites}
+## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
 
 ### Novità {#what-is-new-sites}
 
-[!DNL Experience Manager] come connettori di Cloud Service per [!DNL Adobe Target] e [!DNL Adobe Analytics] vengono migliorati nei seguenti modi:
+I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Target] e [!DNL Adobe Analytics] vengono migliorati nei seguenti modi:
 
 * Una nuova implementazione dell’interfaccia utente sostituisce l’implementazione basata sull’interfaccia classica.
 
-* Finestre di dialogo dell&#39;interfaccia utente semplificate, lasciando la creazione del framework per la mappatura delle variabili e altre configurazioni [!DNL Adobe Launch]. Consultate [Integrazione  Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) e [Integrazione  Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
+* Le finestre di dialogo dell’interfaccia utente sono state semplificate, lasciando ad [!DNL Adobe Launch] la creazione del framework per la mappatura delle variabili e altre configurazioni. Consulta [Integrazione di Adobe Analytics](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) e [Integrazione di Adobe Target](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
 
-* Le configurazioni ora sono memorizzate nell&#39;archivio `/conf` del Experience Manager  anziché `/etc/cloudsettings` nell&#39;archivio.
+* Le configurazioni ora sono memorizzate in `/conf` anziché `/etc/cloudsettings` nell’archivio di Experience Manager.
 
 ## [!DNL Adobe Experience Manager Assets] come Cloud Service {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Gli amministratori possono configurare [!DNL Experience Manager] per richiamare le applicazioni personalizzate create utilizzando il [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate in casi di utilizzo complessi. Questo servizio Web può generare miniature per diversi tipi di file, rendering di immagini di alta qualità da  formati di file di Adobe, codificare video (in futuro), estrarre metadati, estrarre testo completo come precursore per l’indicizzazione ed eseguire una risorsa tramite tutti i [!DNL Sensei] servizi disponibili. consulta [Utilizzare i microservizi di risorse e i profili](/help/assets/asset-microservices-configure-and-use.md)di elaborazione.
+* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Administrators can configure [!DNL Experience Manager] to invoke custom applications created using the [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate in casi di utilizzo complessi. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available [!DNL Sensei] services. see [use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
 
-* La configurazione iniziale di [!DNL Dynamic Media] in [!DNL Experience Manager] come Cloud Service è migliorata per essere più robusta. Ora fornisce agli amministratori l’avanzamento dei processi.
+* La configurazione iniziale di [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service è stata migliorata ed è ora più robusta. Fornisce agli amministratori indicazioni sull’avanzamento dei processi.
 
-* La pubblicazione delle risorse su [!DNL Dynamic Media] viene semplificata e resa più solida, rendendola parte integrante del ciclo di elaborazione delle risorse complessivo, utilizzando i microservizi delle risorse e migliorando il backend di pubblicazione batch.
+* La pubblicazione delle risorse su [!DNL Dynamic Media] è stata semplificata ed è più robusta; è ora parte integrante della pipeline di elaborazione delle risorse complessiva tramite i microservizi per le risorse ed è stato migliorato il back-end per la pubblicazione batch.
 
-* I passaggi del flusso di lavoro non compatibili con la distribuzione di un Cloud Service ora sono contrassegnati da un avviso nell&#39;editor del modello [!UICONTROL di] workflow. Inoltre, durante l&#39;esecuzione dei flussi di lavoro esistenti nell&#39;ambiente di Cloud Service, i passaggi del flusso di lavoro incompatibili vengono ignorati.
+* I passaggi di un flusso di lavoro non compatibili con un’implementazione Cloud Service ora sono contrassegnati da un avviso nell’editor per [!UICONTROL modelli di flusso di lavoro]. Inoltre, durante l’esecuzione dei flussi di lavoro esistenti nell’ambiente Cloud Service, vengono ignorati i passaggi del flusso di lavoro non compatibili.
 
-* I modelli di workflow creati dai clienti che vengono distribuiti `/conf/global` nel progetto Git associato all&#39;ambiente in [!DNL Cloud Manager] vengono automaticamente distribuiti `/var` e quindi disponibili in [!DNL Experience Manager]. I modelli di flusso di lavoro dei prodotti in `/libs` cui sono stati modificati dai clienti non vengono distribuiti automaticamente a `/var`.
+* I modelli di flussi di lavoro creati dai clienti che vengono distribuiti in `/conf/global`[!DNL Cloud Manager] nel progetto Git associato all’ambiente in vengono automaticamente distribuiti in `/var` e sono quindi disponibili in [!DNL Experience Manager]. I modelli di flusso di lavoro dei prodotti in `/libs` che sono stati modificati dai clienti non vengono distribuiti automaticamente in `/var`.
 
 ### Bug corretti {#assets-bugs-fixed}
 
@@ -54,22 +54,22 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### Novità {#what-is-new-commerce}
 
-AEM Commerce è ora disponibile sul Cloud Service.
+AEM Commerce è ora disponibile su Cloud Service.
 
-Per ulteriori informazioni, consulta [Guida introduttiva AEM Commerce come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) .
+Per ulteriori informazioni, consulta la [Guida introduttiva ad AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/commerce/getting-started.html).
 
 ## Componenti core {#core-components}
 
 ### Novità {#what-is-new-core-components}
 
-Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
+La versione 2.11.0 dei [Componenti core di AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) è ora disponibile come parte di AEM Sites e include:
 
-* Introduzione di un nuovo componente [visualizzatore](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)PDF.
+* Introduzione di un nuovo [componente Visualizzatore PDF](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
 
-* È ora disponibile il supporto di AMP (Accelerated Mobile Pages) per i componenti core. Consente di creare esperienze cliente più veloci effettuando la transizione di pagina istantaneamente quando si accede al sito da un risultato di ricerca Google Mobile, migliorando il coinvolgimento degli utenti e il SEO.
-Per ulteriori informazioni, consulta Supporto [AMP per i componenti](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) core.
+* È ora disponibile il supporto di AMP (Accelerated Mobile Pages) per i componenti core. Consente di creare esperienze cliente più veloci, con transizioni di pagina istantanee quando si accede al sito da un risultato di ricerca Google mobile, migliorando il coinvolgimento degli utenti e la SEO (Search Engine Optimization).
+Per ulteriori informazioni, consulta [Supporto AMP per i componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/amp.html).
 
-* Compatibilità con la versione 1.0.2 del [Livello](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)dati client del Adobe.
+* Compatibilità con la versione 1.0.2 del [Livello dati client di Adobe](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/data-layer/overview.html).
 
 * Correzioni di bug e miglioramenti nella qualità del codice.
 
@@ -89,12 +89,12 @@ La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.7.0 è il 9 lugl
 
 * Le pipeline di Cloud Manager ora supportano variabili e segreti impostati dal cliente.
 
-   Per ulteriori informazioni, consulta [Variabili delle pipeline](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables).
+   Per ulteriori informazioni, consulta [Variabili delle pipeline](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
 
 * Sono ora supportati i repository privati con binding di autenticazione.
 
 * Il contenitore di build di Cloud Manager ora supporta sia Java 8 che Java 11.
-Per ulteriori informazioni, consultate [Utilizzo del supporto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) Java 11.
+Per ulteriori informazioni, consultate [Utilizzo del supporto](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) Java 11.
 
 ### Correzioni di bug {#bug-fixes-cm}
 
@@ -116,19 +116,19 @@ Per ulteriori informazioni, consultate [Utilizzo del supporto](/help/onboarding/
 
 ### Problemi noti {#known-issues}
 
-* A causa di una modifica nel modo in cui viene calcolata la copertura del codice, la versione *minima* del plugin Jacoco è ora 0.7.5.201505241946 (rilasciata a maggio 2015). I clienti che fanno esplicito riferimento a una versione precedente ricevono un messaggio di errore nel processo di qualità del codice.
+* A causa di una modifica nel modo in cui viene calcolata la copertura del codice, la versione *minima* del plugin Jacoco è ora 0.7.5.201505241946 (rilasciata a maggio 2015). I clienti che si riferiscono esplicitamente a una versione precedente ricevono un messaggio di errore nel processo di qualità del codice.
 
-## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
+## Fondamenti di Adobe Experience Manager as a Cloud Service {#cloud-foundation}
 
 ### Novità {#what-is-new-foundations}
 
-* [I registri possono essere inoltrati agli account](/help/implementing/developing/introduction/logging.md#splunk-logs)Splunk, il che consente alle organizzazioni di sfruttare il loro investimento Splunk.
+* [I registri possono essere inoltrati agli account Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs), il che consente alle organizzazioni di sfruttare il loro investimento su Splunk.
 
-* [È possibile assegnare un indirizzo](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) IP di uscita statico e dedicato al traffico in uscita programmato nel codice Java, utile per alcune integrazioni.
+* È possibile assegnare un [indirizzo IP di uscita statico e dedicato](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) al traffico in uscita programmato nel codice Java, utile per alcune integrazioni.
 
-* Interfaccia AEM servizio cloud Analytics da interfaccia classica a nuova interfaccia AEM. È stata spostata anche la posizione del servizio cloud di Analytics in AEM repository da `/etc` a `/conf`, per l&#39;allineamento con altri servizi cloud AEM.
+* L’interfaccia classica di AEM Analytics Cloud Service è stata convertita nella nuova interfaccia di AEM. Inoltre, la posizione di Analytics Cloud Service nell’archivio di AEM è stata spostata da `/etc` a `/conf`, in allineamento con altri servizi cloud AEM.
 
-* Interfaccia AEM servizio cloud Target da interfaccia classica a nuova interfaccia AEM. È stata spostata anche la posizione del servizio cloud Target in AEM repository da `/etc` a `/conf`, per allinearsi con altri servizi cloud AEM.
+* L’interfaccia classica di AEM Target Cloud Service è stata convertita nella nuova interfaccia di AEM. Inoltre, la posizione di Target Cloud Service nell’archivio di AEM è stata spostata da `/etc` a `/conf`, in allineamento con altri servizi cloud AEM.
 
 ## Cloud Readiness Analyzer (Analisi di preparazione al cloud) {#cloud-readiness-analyzer}
 
