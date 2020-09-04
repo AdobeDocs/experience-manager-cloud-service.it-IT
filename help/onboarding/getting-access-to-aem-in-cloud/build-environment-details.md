@@ -2,7 +2,7 @@
 title: Dettagli ambiente di generazione
 description: Dettagli ambiente build - Cloud Services
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -30,6 +30,7 @@ Cloud Manager crea e verifica il codice utilizzando un ambiente di build special
 * Altri pacchetti possono essere installati in fase di creazione come descritto [di seguito](#installing-additional-system-packages).
 * Ogni costruzione è fatta su un ambiente incontaminato; il contenitore di compilazione non mantiene alcuno stato tra le esecuzioni.
 * Maven è sempre eseguito con i tre comandi seguenti:
+
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
