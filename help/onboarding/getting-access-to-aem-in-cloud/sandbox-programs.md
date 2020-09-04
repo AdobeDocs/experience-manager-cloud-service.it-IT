@@ -1,10 +1,10 @@
 ---
-title: Programmi sandbox - Servizio Cloud
-description: Programmi sandbox - Servizio Cloud
+title: Programmi sandbox - Cloud Service
+description: Programmi sandbox - Cloud Service
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Un programma sandbox è uno dei due tipi di programmi disponibili in AEM Cloud Service, mentre l&#39;altro è un programma regolare.
+Un programma Sandbox è uno dei due tipi di programmi disponibili AEM Cloud Service, l&#39;altro è un programma Regolare.
 
-Un sandbox è in genere creato per scopi di formazione, demo in esecuzione, abilitazione o prova di concetto (POC). Non sono fatti per trasportare traffico dal vivo. Non sono soggetti ad [AEM come impegni](https://www.adobe.com/legal/service-commitments.html)di servizio cloud.
+Un sandbox è in genere creato per scopi di formazione, demo in esecuzione, abilitazione o prova di concetto (POC). Non sono fatti per trasportare traffico dal vivo. Essi non sono soggetti al [AEM come impegni](https://www.adobe.com/legal/service-commitments.html)Cloud Service.
 
 Gli ambienti creati in una sandbox non sono configurati per il ridimensionamento automatico. Pertanto, non sono adatti per il test delle prestazioni o del carico.
 
-I programmi sandbox includono Siti e Risorse e vengono compilati automaticamente con un repository Git, un ambiente di sviluppo e una pipeline non di produzione.  L’archivio Git viene compilato con un progetto di esempio basato sul tipo di archivio del progetto AEM.
+I programmi sandbox includono Siti e Risorse e vengono compilati automaticamente con un repository Git, un ambiente di sviluppo e una pipeline non di produzione.  L&#39;archivio Git viene popolato con un progetto di esempio basato sull&#39;archetipo AEM progetto.
 
 Per ulteriori informazioni sui tipi di programma, consulta [Informazioni sui programmi e i tipi](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) di programma.
 
@@ -33,11 +33,11 @@ I programmi sandbox hanno i seguenti attributi:
    * creazione di un ambiente di sviluppo
    * creazione di una pipeline non di produzione che viene implementata in un ambiente di sviluppo (implementazione di un ramo principale in un ambiente di sviluppo)
 
-1. **Soluzioni:** I programmi sandbox includono AEM Sites e Assets.
+1. **Soluzioni:** I programmi sandbox includono  AEM Sites e Risorse.
 
-1. **Aggiornamenti AEM:** Gli aggiornamenti di AEM possono essere applicati manualmente agli ambienti in un programma sandbox e non vengono inviati automaticamente.
+1. **Aggiornamenti AEM:** AEM aggiornamenti possono essere applicati manualmente agli ambienti in un programma sandbox e non vengono inviati automaticamente.
 
-1. **Sospensione:** Gli ambienti in un programma sandbox vengono automaticamente bloccati se non viene rilevata alcuna attività per un determinato periodo di tempo. Gli ambienti con sospensione possono essere disattivati manualmente.
+1. **Sospensione:** Gli ambienti in un programma sandbox vengono automaticamente bloccati se non viene rilevata alcuna attività per un determinato periodo di tempo. Gli ambienti disattivati possono essere disattivati manualmente.
 
 ### Creazione di un programma sandbox {#creating-sandbox-program}
 
@@ -128,7 +128,7 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
    >In alternativa, è possibile accedere a **Developer Console** per disattivare la funzione di disattivazione tentando di accedere al servizio di creazione o pubblicazione di un ambiente già attivato; in tal caso, verrà visualizzata una pagina di destinazione con un collegamento alla Developer Console. Consultate la sezione Accesso a un ambiente sospeso di seguito.
 
    >[!IMPORTANT]
-   >L&#39;accesso alla console per sviluppatori è definito da **Cloud Manager - Ruolo** sviluppatore nell&#39; **Admin Console**. Un utente con un&#39;autorizzazione per il ruolo di sviluppatore può disattivare l&#39;ambiente di un programma sandbox.
+   >L&#39;accesso alla Developer Console è definito da **Cloud Manager - Developer Role** nel Admin Console ****. Un utente con un&#39;autorizzazione per il ruolo di sviluppatore può disattivare l&#39;ambiente di un programma sandbox.
 
 1. Fate clic su **De-hibernate**, come illustrato nella figura seguente:
 
@@ -155,7 +155,7 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 
 #### Autorizzazioni per la disattivazione {#permissions-de-hibernate}
 
-Ogni utente con un profilo di prodotto che dia loro accesso ad AEM come servizio cloud dovrebbe essere in grado di accedere alla **Developer Console**, consentendo loro di disattivare l&#39;ambiente.
+Ogni utente con un profilo di prodotto che dia loro accesso a AEM come Cloud Service dovrebbe essere in grado di accedere alla **Developer Console**, consentendo loro di disattivare l&#39;ambiente.
 
 Per informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consulta [Aggiunta di utenti e ruoli](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) in Cloud Manager.
 
@@ -171,22 +171,22 @@ Alcune considerazioni chiave relative agli ambienti in sospensione e in disattiv
 
 * Un utente può utilizzare una pipeline per distribuire il codice personalizzato per gli ambienti ibernati. L&#39;ambiente resterà in ibernazione e il nuovo codice apparirà nell&#39;ambiente una volta disattivato.
 
-* Gli aggiornamenti di AEM possono essere applicati agli ambienti bloccati, che i clienti possono attivare manualmente da Cloud Manager. L&#39;ambiente rimarrà bloccato e la nuova versione apparirà nell&#39;ambiente una volta disattivata.
+* AEM aggiornamenti possono essere applicati agli ambienti bloccati, che i clienti possono attivare manualmente da Cloud Manager. L&#39;ambiente rimarrà bloccato e la nuova versione apparirà nell&#39;ambiente una volta disattivata.
 
 >[!NOTE]
 >Al momento, Cloud Manager non indica se un ambiente è bloccato.
 
-## Aggiornamenti AEM agli ambienti sandbox {#aem-updates-sandbox}
+## AEM aggiornamenti agli ambienti sandbox {#aem-updates-sandbox}
 
-Per ulteriori informazioni, consultate Aggiornamenti [delle versioni di](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) AEM.
+Per ulteriori informazioni, consultate [AEM aggiornamenti](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) delle versioni.
 
-Un utente può applicare manualmente gli aggiornamenti AEM agli ambienti in un programma sandbox.
+Un utente può applicare manualmente AEM aggiornamenti agli ambienti in un programma sandbox.
 
 Per informazioni sull&#39;aggiornamento di un ambiente, vedere [Aggiornamento dell&#39;ambiente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) .
 
 >[!NOTE]
 >* Un aggiornamento manuale può essere eseguito solo se l&#39;ambiente di destinazione dispone di una pipeline configurata correttamente.
->* Un aggiornamento manuale per l&#39;ambiente *Produzione* o *Stage* aggiornerà automaticamente l&#39;altro. L’ambiente Production+Stage impostato deve trovarsi nella stessa versione di AEM.
+>* Un aggiornamento manuale per l&#39;ambiente *Produzione* o *Stage* aggiornerà automaticamente l&#39;altro. L&#39;ambiente Production+Stage impostato deve trovarsi nella stessa versione AEM.
 
 
 
