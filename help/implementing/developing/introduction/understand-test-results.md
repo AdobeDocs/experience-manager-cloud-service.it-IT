@@ -2,7 +2,7 @@
 title: Comprendere i risultati del test - Cloud Services
 description: Comprendere i risultati dei test - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: 736a7c8d56a957e511451b0ba06affd9643f75e5
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 3%
@@ -225,7 +225,7 @@ Il valore della metrica Modifica può essere uno dei seguenti:
 
 * **N/D** - Non c&#39;era un punteggio precedente disponibile rispetto a
 
-   ![](assets/content-audit-test1.png)
+   <!-- ![](assets/content-audit-test1.png) -->
 
 #### Punteggi a livello di pagina {#page-level-scores}
 
@@ -233,5 +233,5 @@ Effettuando il drill-through in uno dei test, è possibile visualizzare un punte
 
 Facendo clic sui dettagli di una singola pagina verranno fornite informazioni sugli elementi della pagina che sono stati valutati e indicazioni per risolvere i problemi in caso di rilevamento di opportunità di miglioramento. I dettagli dei test e le relative indicazioni sono forniti da Google Lighthouse.
 
-![](assets/page-level-scores.png)
+<!-- ![](assets/page-level-scores.png) -->
 
