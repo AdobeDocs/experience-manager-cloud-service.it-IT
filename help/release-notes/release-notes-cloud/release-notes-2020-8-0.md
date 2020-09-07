@@ -2,7 +2,7 @@
 title: Note sulla versione 2020.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service: note sulla versione 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: 5a3a8638bbb9fc8c0b28929bcc9c91c404d608d3
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 7%
@@ -24,7 +24,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 
 * Possibilità di [ripristinare pagine e sottopagine (strutture ad albero pagina) in una versione](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)precedente.
 
-* Possibilità di creare avvii in AEM SPA Editor.
+* Possibilità di [creare avvii](/help/sites-cloud/authoring/launches/overview.md) in AEM Editor [SPA.](/help/implementing/developing/spa/introduction.md)
 
 ## [!DNL Adobe Experience Manager Assets] come Cloud Service {#assets}
 
