@@ -4,9 +4,9 @@ description: Scoprite come trovare le risorse necessarie in AEM utilizzando il p
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 88b845f3749ad5c362216c8988e9e12ba511eb35
+source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
 workflow-type: tm+mt
-source-wordcount: '4529'
+source-wordcount: '4525'
 ht-degree: 7%
 
 ---
@@ -106,13 +106,13 @@ Potete migliorare la rilevanza delle parole chiave per risorse particolari per m
 
 1. Dall’interfaccia utente Assets, apri la pagina delle proprietà della risorsa. Fai clic su **[!UICONTROL Avanzate]** e tocca o fai clic su **[!UICONTROL Aggiungi]** in **[!UICONTROL Privilegi elevati per parole chiave di ricerca]**.
 1. Nella casella **[!UICONTROL Search Promote (Promuovi]** ricerca), specificate una parola chiave per la quale desiderate incrementare la ricerca dell&#39;immagine e quindi fate clic o toccate **[!UICONTROL Aggiungi]**. Potete specificare più parole chiave nello stesso modo.
-1. Click/tap **[!UICONTROL Save &amp; Close]**. La risorsa promossa per questa parola chiave viene visualizzata tra i primi risultati della ricerca.
+1. Fai clic su **[!UICONTROL Salva e chiudi]**. La risorsa promossa per questa parola chiave viene visualizzata tra i primi risultati della ricerca.
 
 Potete usarlo a proprio vantaggio aumentando il livello di alcune risorse nei risultati della ricerca per la parola chiave di destinazione. Guardate il video di esempio riportato di seguito. Per informazioni dettagliate, consultate [cercare in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*Come classificare i risultati della ricerca e come influenzarne la classificazione.*
+*Video: Come classificare i risultati della ricerca e come influenzarne la classificazione.*
 
 ## Advanced search {#scope}
 
@@ -241,7 +241,7 @@ Per accedere all’interfaccia del selettore delle risorse, passate a `https://[
 
 ![Sfogliare e selezionare la risorsa nel selettore delle risorse](assets/assetpicker.png)
 
-Sfogliare e selezionare la risorsa nel selettore delle risorse
+*Figura: Sfoglia e seleziona la risorsa nel selettore delle risorse.*
 
 ## Limitazioni  {#limitations}
 
@@ -263,8 +263,8 @@ La ricerca visiva o la ricerca per similarità presenta le seguenti limitazioni:
 * Utilizzate il predicato Insights per cercare le risorse supportate in base alle statistiche di utilizzo ottenute da diverse app Creative. I dati di utilizzo sono raggruppati in Valutazione utilizzo, Impressioni, Clic e Canali multimediali in cui le risorse appaiono categorie.
 * Utilizzare la casella di controllo per selezionare tutti i risultati di ricerca o i risultati di ricerca filtrati da utilizzare sulla selezione. Seleziona tutte le risorse ricercate indipendentemente dal numero di risorse visualizzate nella visualizzazione utente corrente. Ad esempio, potete scaricare tutte le risorse selezionate, aggiornare le proprietà dei metadati in blocco per tutte le risorse selezionate o aggiungere le risorse selezionate a una raccolta.
 * Per cercare risorse che non contengono metadati obbligatori, consultate Metadati [](#mandatorymetadata)obbligatori.
-* La ricerca utilizza tutti i campi di metadati. Una ricerca generica, come la ricerca di 12, in genere restituisce molti risultati. Per risultati ottimali, utilizzate virgolette doppie (non singole) o assicuratevi che il numero sia contiguo a una parola senza un carattere speciale (ad esempio *shoe12*).
-* La ricerca full text supporta operatori quali -, ^ e così via. Per cercare queste lettere come stringhe letterali, racchiudere l&#39;espressione di ricerca tra virgolette. Ad esempio, utilizzare &quot;Notebook - Bellezza&quot; invece di Notebook - Bellezza.
+* La ricerca utilizza tutti i campi di metadati. Una ricerca generica, come la ricerca di 12, in genere restituisce molti risultati. Per risultati ottimali, utilizzate virgolette doppie (non singole) o assicuratevi che il numero sia contiguo a una parola senza un carattere speciale (ad esempio `shoe12`).
+* La ricerca full-text supporta operatori quali `-` e `^`. Per cercare queste lettere come stringhe letterali, racchiudere l&#39;espressione di ricerca tra virgolette. Ad esempio, utilizzate `"Notebook - Beauty"` anziché `Notebook - Beauty`.
 * Se i risultati della ricerca sono troppi, limita l’ [ambito della ricerca](#scope) a zero per le risorse desiderate. Questa funzione è particolarmente utile se avete qualche idea su come cercare meglio le risorse desiderate, ad esempio un tipo di file specifico, una posizione specifica, metadati specifici e così via.
 
 * **Assegnazione tag**: I tag consentono di classificare le risorse che possono essere cercate e cercate in modo più efficiente. I tag consentono di estendere la tassonomia appropriata ad altri utenti e flussi di lavoro. AEM offre metodi per assegnare automaticamente tag alle risorse utilizzando  servizi intelligenti di Adobe Sensei che consentono di aggiungere tag con utilizzo e formazione sempre più avanzati alle risorse. Quando ricercate le risorse, gli smart tag vengono inseriti se la funzione è attivata nel vostro account. Funziona insieme alla funzionalità di ricerca integrata. Consultate Comportamento [di](#searchbehavior)ricerca. Per ottimizzare l’ordine in cui vengono visualizzati i risultati della ricerca, potete [aumentare la classifica](#searchrank) di ricerca di alcune risorse selezionate.
@@ -277,7 +277,7 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 
 ![Comportamento di ricerca con e senza virgolette](assets/search_with_quotes.gif)
 
-Comportamento di ricerca con e senza virgolette
+*Figura: Funzionamento della ricerca con e senza virgolette.*
 
 **Cerca con carattere jolly asterisco**: Per ampliare la ricerca, usate un asterisco prima o dopo la parola di ricerca per far corrispondere un numero qualsiasi di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza un asterisco non restituisce risorse contenenti variazioni della parola (anche nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Esempio,
 
@@ -288,7 +288,7 @@ Comportamento di ricerca con e senza virgolette
 
 ![Illustrazione dell’utilizzo di un carattere jolly asterisco nella ricerca di risorse tramite un esempio](assets/search_with_asterisk_run.gif)
 
-Illustrazione dell’utilizzo di un carattere jolly asterisco nella ricerca di risorse tramite un esempio
+*Figura: Illustrazione dell’utilizzo del carattere jolly asterisco nella ricerca delle risorse tramite un esempio.*
 
 **Cerca con il carattere jolly** punto interrogativo: Per ampliare la ricerca, utilizzare uno o più caratteri &#39;?&#39; caratteri per corrispondere al numero esatto di caratteri. Ad esempio, nell&#39;illustrazione seguente,
 
@@ -300,7 +300,7 @@ Illustrazione dell’utilizzo di un carattere jolly asterisco nella ricerca di r
 
 ![Illustrazione dell’uso del carattere jolly punto interrogativo nella ricerca di risorse tramite un esempio](assets/search_with_questionmark_run.gif)
 
-Illustrazione dell’uso del carattere jolly punto interrogativo nella ricerca di risorse tramite un esempio
+*Figura: Illustrazione dell’uso del carattere jolly punto interrogativo nella ricerca di risorse tramite un esempio.*
 
 **Escludere una parola chiave**: Usate il trattino per cercare risorse che non contengono una parola chiave. Ad esempio, `running -shoe` la query restituisce risorse che contengono `running`, ma non `shoe`. Analogamente, `camp -night` query restituisce risorse che contengono `camp` ma non `night`. La `camp-night` query restituisce risorse contenenti sia `camp` che `night`.
 
@@ -312,6 +312,7 @@ Illustrazione dell’uso del carattere jolly punto interrogativo nella ricerca d
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
+-->
 
 <!--
 ### Visual or similarity search {#configvisualsearch}
@@ -346,7 +347,6 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
-
 -->
 
 <!--
@@ -361,8 +361,9 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 ### Extract text when uploading assets {#extracttextupload}
 
 You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
+-->
 
-<!-- Check with gklebus if this customization is possible in AEM now.
+<!-- TBD: Check with gklebus and engineering if these customization are possible in CS.
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -372,20 +373,20 @@ You can search for digital assets based on one or more of the following properti
 
 | Search field | Search property values |
 |---|---|
-| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
-| Last Modified | Hour, Day, Week, Month, or Year. |
-| File Size | Small, Medium, or Large. |
-| Publish Status | Published or Unpublished. |
 | Approved Status | Approved or Rejected. |
+| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
+| File Size | Small, Medium, or Large. |
+| Last Modified | Hour, Day, Week, Month, or Year. |
+| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
 | Orientation | Horizontal, Vertical, or Square. |
+| Publish Status | Published or Unpublished. |
 | Style | Color, or Black & White. |
+| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Video Codec | x264. Value is stored in the metadata of video renditions only. |
+| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
 | Video Height | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 | Video Width | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Video Codec | x264. Value is stored in the metadata of video renditions only. |
-| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 
 -->
 
@@ -463,6 +464,9 @@ Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UI
 **Filtro/predicato di ricerca non disponibile**: Se una personalizzazione prevista per i filtri di ricerca non è disponibile nell’interfaccia utente, contattate l’amministratore per verificare se la personalizzazione è stata implementata per tutti gli autori e sul server di produzione in uso. È possibile che la configurazione non fosse corretta.
 
 ## Risoluzione dei problemi relativi alla ricerca {#troubleshoot}
+
+<!-- TBD: Expand this section.
+-->
 
 Consulta i problemi e le possibili linee di azione di seguito:
 
