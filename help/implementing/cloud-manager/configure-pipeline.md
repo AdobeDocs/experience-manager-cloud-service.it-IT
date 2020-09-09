@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -82,16 +82,26 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
 
    ![](assets/setup-3.png)
 
-   Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi in Experience Audit. L&#39;utente può inserire manualmente un percorso URL da includere. È possibile includere fino a 25 righe. Se non ci sono pagine inviate dall&#39;utente in questa sezione, la pagina iniziale del sito verrà inclusa nel controllo dell&#39;esperienza come impostazione predefinita.
+   Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi in Experience Audit. L&#39;utente deve completare il campo di immissione per definire il proprio collegamento personalizzato.
 
-   >[!NOTE]
-   > Le pagine configurate verranno inviate al servizio e valutate in base alle prestazioni, all&#39;accessibilità, al SEO (ottimizzazione motore di ricerca), alle best practice e ai test PWA (app Web progressiva).
+   Ad esempio, se desiderate includere `https://wknd.site/us/en/about-us.html` in Experience Audit, immettete il percorso `us/en/about-us.html` in questo campo.
+
+   ![](assets/set-up-5.png)
+
+   L&#39;URL che viene visualizzato nella tabella sarà `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`.
+
+   ![](assets/set-up-4.png)
+
+   È possibile includere fino a 25 righe. Se non ci sono pagine inviate dall&#39;utente in questa sezione, per impostazione predefinita la pagina iniziale del sito verrà inclusa in Experience Audit.
 
    Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/cloud-manager/experience-audit-testing.md) dell&#39;audit esperienza.
 
    Fate clic su **Add New Page Override (Aggiungi nuova esclusione** pagina) per fornire un percorso URL da includere nel Experience Audit (Audit esperienza). Dopo aver aggiunto il percorso, fate clic su **Salva**.
 
    ![](assets/exp-audit2.png)
+
+   >[!NOTE]
+   > Le pagine configurate verranno inviate al servizio e valutate in base alle prestazioni, all&#39;accessibilità, al SEO (ottimizzazione motore di ricerca), alle best practice e ai test PWA (app Web progressiva).
 
 1. Fate clic su **Salva** nella schermata **Modifica tubazione** . Nella pagina **Panoramica** è ora visualizzata la scheda **Implementa il programma** . Fate clic sul pulsante **Distribuisci** per distribuire il programma.
 
