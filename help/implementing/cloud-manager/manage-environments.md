@@ -2,10 +2,10 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 8%
+source-wordcount: '791'
+ht-degree: 7%
 
 ---
 
@@ -55,7 +55,7 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Durante la creazione di un ambiente, in Adobe I/O vengono create una o più *integrazioni* . Questi sono visibili agli utenti del cliente che hanno accesso alla console di I/O di Adobe e non devono essere eliminati. Questo viene negato nella descrizione nella console di I/O di Adobe.
+   >Durante la creazione di un ambiente, nell&#39;I/O  Adobe vengono create una o più *integrazioni* . Questi sono visibili agli utenti del cliente che hanno accesso alla console I/O del Adobe  e non devono essere eliminati. Questo viene negato nella descrizione nella console I/O del Adobe .
 
    ![](assets/add-environment-image1.png)
 
@@ -66,9 +66,9 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
 
 ## Aggiornamento dell&#39;ambiente {#updating-dev-environment}
 
-Gli aggiornamenti degli ambienti Stage e Produzione vengono gestiti automaticamente da Adobe.
+Gli aggiornamenti degli ambienti Stage e Produzione vengono gestiti automaticamente da  Adobe.
 
-Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del programma. Se un ambiente non esegue l’ultima versione di AEM disponibile al pubblico, lo stato della scheda Ambienti nella Home Screen mostra **AGGIORNAMENTO DISPONIBILE**.
+Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del programma. Se un ambiente non esegue l&#39;ultima versione AEM disponibile al pubblico, lo stato della scheda Ambienti nella Home Screen mostra **AGGIORNAMENTO DISPONIBILE**.
 
 ![](assets/update-environ-1.png)
 
@@ -97,6 +97,15 @@ L&#39;opzione di eliminazione è disponibile anche, se fate clic su **Dettagli**
 
 >[!NOTE]
 Questa funzione non è disponibile per l&#39;ambiente Produzione/Fase impostato in un programma regolare impostato a scopo di produzione. La funzione è tuttavia disponibile per gli ambienti Produzione/Fase in un programma sandbox.
+
+## Gestione dell&#39;accesso {#managing-access}
+
+Selezionate **Gestisci accesso** dal menu a discesa nella scheda **Ambienti** . Potete passare direttamente all’istanza di authoring e gestire l’accesso all’ambiente in uso.
+
+Per ulteriori informazioni, fare riferimento a [Gestione dell&#39;accesso all&#39;istanza](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) Author.
+
+![](assets/environ-manage-access.png)
+
 
 ## Accesso alla console per sviluppatori {#accessing-developer-console}
 
