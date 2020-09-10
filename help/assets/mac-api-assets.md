@@ -3,7 +3,7 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
+source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-L&#39;API HTTP Assets consente di creare-leggere-aggiornare-eliminare (CRUD) le operazioni sulle risorse digitali, inclusi i metadati, le rappresentazioni e i commenti, nonché il contenuto strutturato utilizzando [!DNL Experience Manager] Frammenti di contenuto. È esposto in `/api/assets` e viene implementato come REST API. Include [il supporto per i frammenti](/help/assets/assets-api-content-fragments.md)di contenuto.
+L&#39;API HTTP Assets consente di creare-leggere-aggiornare-eliminare (CRUD) le operazioni sulle risorse digitali, inclusi i metadati, le rappresentazioni e i commenti, nonché il contenuto strutturato utilizzando [!DNL Experience Manager] Frammenti di contenuto. È esposto in `/api/assets` e viene implementato come REST API. Include [il supporto per i frammenti](/help/assets/content-fragments/assets-api-content-fragments.md)di contenuto.
 
 Per accedere all&#39;API:
 
@@ -34,13 +34,13 @@ Dopo la [!UICONTROL disattivazione], una risorsa e le relative rappresentazioni 
 
 Un frammento [di](/help/assets/content-fragments/content-fragments.md) contenuto è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, come testi, numeri, date, ecc. Poiché le `standard` risorse presentano diverse differenze (ad esempio immagini o documenti), per la gestione dei frammenti di contenuto si applicano alcune regole aggiuntive.
 
-Per ulteriori informazioni, consulta Supporto per i frammenti di [contenuto nell’API](/help/assets/assets-api-content-fragments.md)HTTP  Experience Manager Assets.
+Per ulteriori informazioni, consulta Supporto per i frammenti di [contenuto nell’API](/help/assets/content-fragments/assets-api-content-fragments.md)HTTP  Experience Manager Assets.
 
 ## Dati, modello {#data-model}
 
 L’API HTTP Assets espone due elementi principali, cartelle e risorse (per le risorse standard).
 
-Inoltre, espone elementi più dettagliati per i modelli di dati personalizzati che descrivono il contenuto strutturato nei frammenti di contenuto. Per ulteriori informazioni, consulta Modelli [di dati per frammenti di](/help/assets/assets-api-content-fragments.md#content-models-and-content-fragments) contenuto.
+Inoltre, espone elementi più dettagliati per i modelli di dati personalizzati che descrivono il contenuto strutturato nei frammenti di contenuto. Per ulteriori informazioni, consulta Modelli [di dati per frammenti di](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) contenuto.
 
 ### Cartelle {#folders}
 
@@ -71,7 +71,7 @@ In [!DNL Experience Manager] una risorsa sono contenuti i seguenti elementi:
 * Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da file PDF o  Adobe InDesign.
 * Commenti facoltativi.
 
-Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto frammenti di [contenuto in  API](/help/assets/assets-api-content-fragments.md)HTTP delle risorse di Experience Manager.
+Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto frammenti di [contenuto in  API](/help/assets/content-fragments/assets-api-content-fragments.md)HTTP delle risorse di Experience Manager.
 
 In [!DNL Experience Manager] una cartella sono presenti i seguenti componenti:
 
@@ -122,7 +122,7 @@ Recupera una rappresentazione Siren di una cartella esistente e delle relative e
 
 **Risposta**: La classe dell&#39;entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;intero insieme di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell&#39;entità, i clienti devono recuperare il contenuto dell&#39;URL indicato dal collegamento con un `rel` di `self`.
 
-## Creare una cartella {#create-a-folder}
+## Crea una cartella . {#create-a-folder}
 
 Crea un nuovo `sling`: `OrderedFolder` nel percorso specificato. Se `*` viene fornito un nome di nodo al posto del nome di un nodo, il servlet utilizza il nome del parametro come nome del nodo. Accettato come dati della richiesta è una rappresentazione Siren della nuova cartella o un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`, utile per creare una cartella direttamente da un modulo HTML. Inoltre, le proprietà della cartella possono essere specificate come parametri di query URL.
 
