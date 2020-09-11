@@ -2,7 +2,7 @@
 title: Panoramica di SPA Editor
 description: Questo articolo fornisce una panoramica completa dell'editor SPA e del suo funzionamento, con flussi di lavoro dettagliati dell'interazione dell'editor SPA in AEM.
 translation-type: tm+mt
-source-git-commit: 9b52d94b9f00be30c21dece9b34b0b56056dcbd6
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Il componente di pagina per un’app SPA non fornisce gli elementi HTML dei comp
 
 ### Gestione dei modelli di pagina {#page-model-management}
 
-La risoluzione e la gestione del modello di pagina sono delegate a una `PageModel` libreria specificata. Per poter essere inizializzata e creata dall’editor SPA, l’SPA deve utilizzare la libreria Modello pagina. Libreria Modello pagina fornita indirettamente al componente Pagina AEM tramite `cq-react-editable-components` npm. Il Modello pagina è un interprete tra AEM e l&#39;SPA e pertanto deve essere sempre presente. Quando la pagina viene creata, `cq.authoring.pagemodel.messaging` deve essere aggiunta una libreria aggiuntiva per abilitare la comunicazione con l’editor pagina.
+La risoluzione e la gestione del modello di pagina sono delegate a una `PageModel` libreria specificata. Per poter essere inizializzata e creata dall’editor SPA, l’SPA deve utilizzare la libreria Modello pagina. Libreria Modello pagina fornita indirettamente al componente Pagina AEM tramite `aem-react-editable-components` npm. Il Modello pagina è un interprete tra AEM e l&#39;SPA e pertanto deve essere sempre presente. Quando la pagina viene creata, `cq.authoring.pagemodel.messaging` deve essere aggiunta una libreria aggiuntiva per abilitare la comunicazione con l’editor pagina.
 
 Se il componente della pagina SPA eredita dal componente core della pagina, sono disponibili due opzioni per rendere disponibile la categoria della libreria `cq.authoring.pagemodel.messaging` client:
 
