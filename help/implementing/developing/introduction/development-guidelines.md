@@ -1,11 +1,11 @@
 ---
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
-description: Da completare
+description: Linee guida per lo sviluppo per AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
+source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 1%
+source-wordcount: '1953'
+ht-degree: 2%
 
 ---
 
@@ -106,7 +106,7 @@ Per attivare il livello di registro DEBUG, impostare la variabile
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
 da eseguire il debug. Non lasciare il registro a livello di registro DEBUG più a lungo del necessario, in quanto genera molti registri.
-Una riga nel file di debug in genere inizia con DEBUG, quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Ad esempio:
+Una riga nel file di debug in genere inizia con DEBUG, quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Esempio:
 
 ``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
 
@@ -175,7 +175,7 @@ I clienti non avranno accesso agli strumenti di sviluppo per gli ambienti di pro
 
 Su richiesta, AEM un Cloud Service fornirà un indirizzo IP statico e dedicato per il traffico in uscita HTTP (porta 80) e HTTPS (porta 443) programmato nel codice Java.
 
-### Vantaggi {#benefits}
+### Benefits {#benefits}
 
 Questo indirizzo IP dedicato può migliorare la sicurezza durante l&#39;integrazione con fornitori SaaS (come un fornitore CRM) o altre integrazioni esterne a AEM come Cloud Service che offre un  inserì nell&#39;elenco Consentiti di indirizzi IP. Aggiungendo l&#39;indirizzo IP dedicato al inserire nell&#39;elenco Consentiti di , si garantisce che solo il traffico dal Cloud Service del cliente AEM possa fluire nel servizio esterno. Oltre al traffico proveniente da qualsiasi altro IP consentito.
 
