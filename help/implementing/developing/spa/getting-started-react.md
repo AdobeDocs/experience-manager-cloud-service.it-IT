@@ -2,7 +2,7 @@
 title: Guida introduttiva alle app SPA in AEM Utilizzo di React
 description: Questo articolo presenta un'applicazione SPA di esempio, spiega come viene assemblata e consente di iniziare a utilizzare rapidamente la propria SPA utilizzando la struttura React.
 translation-type: tm+mt
-source-git-commit: 4652ab5a064d1ad397eb8eebd9dd92f7c8bb1c21
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 1%
@@ -48,9 +48,9 @@ Il `package.json` file definisce i requisiti del pacchetto SPA complessivo. Le d
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
@@ -123,7 +123,7 @@ Il punto di ingresso nell&#39;SPA è ovviamente il `index.js` file qui mostrato 
 ```
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -148,7 +148,7 @@ Quando un’istanza del componente viene creata in modo statico utilizzando il m
 Eseguendo il rendering dell&#39;app, `index.js` le chiamate `App.js`, che vengono visualizzate in una versione semplificata per concentrarvi sul contenuto importante.
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -166,7 +166,7 @@ export default withModel(App);
 Mediante il rendering della pagina, `App.js` le chiamate elencate `Page.js` qui in una versione semplificata.
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -187,7 +187,7 @@ Con la pagina sottoposta a rendering, è possibile eseguire il rendering dei com
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -230,7 +230,7 @@ Potete esportare un componente e mantenerlo modificabile.
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 
