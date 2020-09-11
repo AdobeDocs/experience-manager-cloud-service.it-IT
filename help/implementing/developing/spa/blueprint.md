@@ -2,7 +2,7 @@
 title: Blueprint SPA
 description: Il presente documento descrive il contratto generale, indipendente dal quadro, che qualsiasi quadro SPA dovrebbe rispettare per implementare componenti SPA modificabili all'interno di AEM.
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -97,7 +97,7 @@ modulo npm: [@adobe/aem-response-editable-components](https://www.npmjs.com/pack
 
 #### Angolare {#angular}
 
-modulo npm: [@adobe/cq-angular-editable-components](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+modulo npm: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Servizi e componenti principali {#main-services-and-components}
 
