@@ -2,9 +2,9 @@
 title: Modifiche di rilievo apportate ad AEM Commerce as a Cloud Service
 description: Modifiche di rilievo apportate ad AEM Commerce as a Cloud Service rispetto ad Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
+source-git-commit: 2934d0d8d3977bb7884bae9654ac26e9fa57b34f
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 94%
 
 ---
@@ -36,7 +36,7 @@ Di seguito sono riportati i diversi modelli di implementazione di Commerce Integ
 >
 >Per ulteriore documentazione su come utilizzare CIF con AEM servizio gestito o AEM locale, consultare [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
 
->[!NNota]
+>[!NOTE]
 >
 >La versione CIF Classic/Quickstart di Commerce Integration Framework può essere utilizzata nell’offerta on-premise di AEM per casi di utilizzo molto limitati. Tuttavia, questa non è la soluzione consigliata.
 
