@@ -2,9 +2,9 @@
 title: Video
 description: Scopri come lavorare con i video in Contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
+source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
 workflow-type: tm+mt
-source-wordcount: '10052'
+source-wordcount: '10056'
 ht-degree: 10%
 
 ---
@@ -412,9 +412,9 @@ Dynamic Media consiglia di utilizzare i predefiniti di codifica video MP4 H.264.
 
 ## Pubblicazione di video su YouTube {#publishing-videos-to-youtube}
 
-Potete pubblicare risorse video locali AEM direttamente su un canale YouTube precedentemente creato.
+Potete pubblicare risorse video gestite in  AEM Assets direttamente su un canale YouTube precedentemente creato.
 
-Per pubblicare le risorse video su YouTube, potete impostare  AEM Assets con i tag . Potete associare questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde al tag di un canale YouTube, il video viene pubblicato su YouTube. La pubblicazione su YouTube avviene insieme alla normale pubblicazione del video, purché venga utilizzato un tag associato.
+Per pubblicare risorse video su YouTube, potete assegnare tag alle risorse video in  AEM Assets. Potete associare questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde al tag di un canale YouTube, il video viene pubblicato su YouTube. La pubblicazione su YouTube avviene insieme alla normale pubblicazione del video, purché venga utilizzato un tag associato.
 
 YouTube esegue la propria codifica. Pertanto, il file video originale caricato in AEM viene pubblicato su YouTube invece di qualsiasi rappresentazione video creata dalla codifica per contenuti multimediali dinamici. Anche se non è necessario elaborare i video mediante l’uso di elementi multimediali dinamici, questi dovranno essere elaborati qualora sia necessario un predefinito per visualizzatori per la riproduzione.
 
@@ -874,7 +874,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 1. Per i processi non riusciti, consulta l’opzione Errori di flusso di lavoro, accessibile da **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Errori]**. In **[!UICONTROL Errore flusso di lavoro]** sono elencate tutte le attività del flusso di lavoro che hanno generato errori.
 
    >[!NOTE]
-   Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
+   Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
