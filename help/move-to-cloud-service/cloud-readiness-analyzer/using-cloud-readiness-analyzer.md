@@ -2,10 +2,10 @@
 title: Utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud)
 description: Utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud)
 translation-type: tm+mt
-source-git-commit: a0e58c626f94b778017f700426e960428b657806
+source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 100%
+source-wordcount: '2091'
+ht-degree: 77%
 
 ---
 
@@ -146,29 +146,33 @@ Il seguente è un esempio di come eseguire questa operazione:
 
 Le seguenti intestazioni HTTP sono utilizzate da questa interfaccia:
 
-* `Cache-Control: max-age=<seconds>`: specifica l’intervallo di aggiornamento della cache in secondi (consulta [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)).
-* `Prefer: respond-async`: indica che il server deve rispondere in modo asincrono (consulta [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)).
+* `Cache-Control: max-age=<seconds>`: Specifica la durata della freschezza della cache, in secondi. (consulta [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)).
+* `Prefer: respond-async`: Specifica che il server deve rispondere in modo asincrono. (consulta [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)).
+* `Prefer: return=minimal`: Specifica che il server deve restituire una risposta minima. (consulta [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)).
 
 I seguenti parametri di query HTTP sono disponibili per comodità nei casi in cui le intestazioni HTTP potrebbero non essere facilmente utilizzate:
 
-* `max-age` (numero, facoltativo): specifica l’intervallo di aggiornamento della cache in secondi. Questo numero deve essere maggiore o uguale a 0. L’intervallo di aggiornamento predefinito è di 86.400 secondi. Pertanto, se non si specifica questo parametro o l’intestazione corrispondente, per distribuire le richieste verrà utilizzata una nuova cache per 24 ore, dopodiché sarà necessario generare di nuovo il rapporto. L’utilizzo di `max-age=0` forzerà la cancellazione della cache e avvierà la nuova generazione del rapporto. Subito dopo questa richiesta, l’intervallo di aggiornamento viene reimpostato sul precedente valore diverso da zero.
-* `respond-async` (booleano, facoltativo): specifica che la risposta deve essere fornita in modo asincrono. Se si utilizza `respond-async=true` quando la cache non è aggiornata, il server restituirà una risposta `202 Accepted, processing cache` senza attendere che venga generato il rapporto e che la cache venga aggiornata. Se la cache è aggiornata, questo parametro non ha alcun effetto. Il valore predefinito è `false`, ciò significa che senza questo parametro o l’intestazione corrispondente, il server risponderà in modo sincrono, il che potrebbe richiedere molto tempo e un adeguamento del tempo di risposta massimo del client HTTP.
+* `max-age` (numero, facoltativo): Specifica la durata della freschezza della cache, in secondi. Questo numero deve essere maggiore o uguale a 0. La durata predefinita della freschezza è di 86400 secondi. Senza questo parametro o l&#39;intestazione corrispondente verrà utilizzata una nuova cache per distribuire le richieste per 24 ore, al momento in cui la cache deve essere rigenerata. Utilizzando `max-age=0` verrà svuotata la cache e verrà avviata una rigenerazione del rapporto, utilizzando il precedente ciclo di vita di freschezza diverso da zero per la cache appena generata.
+* `respond-async` (booleano, facoltativo): Specifica che la risposta deve essere fornita in modo asincrono. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. Se la cache è aggiornata, questo parametro non ha alcun effetto. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
+* `may-refresh-cache` (booleano, facoltativo): Specifica che il server potrebbe aggiornare la cache in risposta a una richiesta se la cache corrente è vuota, obsoleta o presto non disponibile. Se `may-refresh-cache=true`o se non è specificato, il server potrebbe avviare un&#39;attività in background che richiamerà il Rilevatore pattern e aggiornerà la cache. Se `may-refresh-cache=false` il server non avvia alcuna attività di aggiornamento che altrimenti sarebbe stata eseguita se la cache fosse vuota o obsoleta, nel qual caso il rapporto sarà vuoto. Qualsiasi attività di aggiornamento già in corso di elaborazione non verrà interessata da questo parametro.
+* `return-minimal` (booleano, facoltativo): Specifica che la risposta del server deve includere solo lo stato contenente l&#39;indicazione di avanzamento e lo stato della cache nel formato JSON. Se `return-minimal=true`necessario, il corpo della risposta sarà limitato all&#39;oggetto status. Se `return-minimal=false`o se non è specificato, verrà fornita una risposta completa.
+* `log-findings` (booleano, facoltativo): Specifica che il server deve registrare il contenuto della cache quando viene creata o aggiornata per la prima volta. Ogni ricerca dalla cache verrà registrata come stringa JSON. La registrazione si verifica solo se `log-findings=true` e la richiesta genera una nuova cache.
 
 Se sono presenti sia un’intestazione HTTP che il parametro di query corrispondente, il parametro di query avrà la priorità.
 
 Un modo semplice per avviare la generazione del rapporto tramite l’interfaccia HTTP è l’utilizzo del seguente comando:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Una volta effettuata la richiesta, non c’è bisogno che il client rimanga attivo affinché venga generato il rapporto. La generazione del rapporto può essere avviata con un client utilizzando una richiesta HTTP GET e, una volta generato, può essere visualizzato nella cache di un altro client o nello strumento CSV nell’interfaccia utente di AEM.
+Una volta effettuata la richiesta, non c’è bisogno che il client rimanga attivo affinché venga generato il rapporto. La generazione di report può essere avviata con un client utilizzando una richiesta di GET HTTP e, una volta generato, visualizzato dalla cache con un altro client o con lo strumento CRA nell&#39;interfaccia utente AEM.
 
 ### Risposte {#http-responses}
 
 Sono possibili i seguenti valori di risposta:
 
-* `200 OK`: la risposta contiene i risultati del rilevatore pattern generati quando la cache era aggiornata.
-* `202 Accepted, processing cache`: nelle risposte asincrone, indica che la cache era obsoleta e che è in corso un aggiornamento.
-* `400 Bad Request`: indica che la richiesta ha restituito un errore. Un messaggio nel formato Dettagli del problema (consulta [RFC 7807](https://tools.ietf.org/html/rfc7807)) fornisce ulteriori dettagli.
-* `401 Unauthorized`: indica che la richiesta non era autorizzata.
+* `200 OK`: Indica che la risposta contiene i risultati del rilevamento dei pattern generati nel corso della durata di freschezza della cache.
+* `202 Accepted`: Utilizzato per indicare che la cache non è aggiornata. Quando `respond-async=true` e `may-refresh-cache=true` questa risposta indica che è in corso un&#39;attività di aggiornamento. Quando `may-refresh-cache=false` questa risposta indica semplicemente che la cache non è aggiornata.
+* `400 Bad Request`: indica che la richiesta ha restituito un errore. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `401 Unauthorized`: Indica che la richiesta non è stata autorizzata.
 * `500 Internal Server Error`: indica che si è verificato un errore interno del server. Un messaggio nel formato Dettagli del problema fornisce ulteriori dettagli.
 * `503 Service Unavailable`: indica che il server è occupato con un’altra risposta e non può soddisfare questa richiesta in modo tempestivo. È probabile che ciò si verifichi solo quando vengono effettuate richieste sincrone. Un messaggio nel formato Dettagli del problema fornisce ulteriori dettagli.
 
