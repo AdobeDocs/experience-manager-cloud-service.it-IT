@@ -2,7 +2,7 @@
 title: Utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud)
 description: Utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud)
 translation-type: tm+mt
-source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
+source-git-commit: 99e721e373f34d72f75393b0771a069b9c1f8631
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 70%
@@ -106,7 +106,7 @@ Il rapporto si presenta con questo formato:
 * **Panoramica del sistema**: informazioni sul sistema AEM su cui è stata eseguito lo strumento CRA.
 * **Categorie dei risultati**: diverse sezioni che riguardano ciascuna uno o più risultati della stessa categoria. Ogni sezione include quanto segue: nome della categoria, sottotipi, conteggio e importanza dei risultati, riepilogo, collegamento alla documentazione della categoria e informazioni su singoli risultati.
 
-A ciascun risultato viene assegnato un livello di importanza per dare un’indicazione approssimativa del grado di priorità dell’intervento richiesto. Per ulteriori informazioni su ciascuna categoria di ricerca, consulta Categorie di [rilevamento dei pattern](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)
+A ciascun risultato viene assegnato un livello di importanza per dare un’indicazione approssimativa del grado di priorità dell’intervento richiesto. Per ulteriori informazioni su ciascuna categoria di ricerca, vedere Categorie [di rilevamento](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)pattern.
 
 La tabella seguente descrive i livelli di importanza:
 
