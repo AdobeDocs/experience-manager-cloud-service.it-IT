@@ -2,7 +2,7 @@
 title: Utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud)
 description: Utilizzo di Cloud Readiness Analyzer (Analisi di preparazione al cloud)
 translation-type: tm+mt
-source-git-commit: b15969e7cdbd8c3affc6a51b0bc0b0f3f5fdb0f0
+source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 70%
@@ -62,20 +62,20 @@ Leggi questa sezione per scoprire come visualizzare il rapporto di Cloud Readine
 
 1. Una volta generato il rapporto CRA, esso visualizza un riepilogo e il numero dei risultati in un formato tabulare organizzato in base al tipo di ricerca e al livello di importanza. Per ottenere ulteriori dettagli su una particolare ricerca, è possibile fare clic sul numero corrispondente al tipo di ricerca nella tabella.
 
-   ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+   ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
 
    L&#39;azione precedente scorre automaticamente fino alla posizione del risultato nel report.
 
-   ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+   ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
+   ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
 
    >[!NOTE]
    >Per cancellare la cache e generare nuovamente il rapporto CRA, fai clic su **Refresh Report** (Aggiorna rapporto).
 
-   ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+   ![immagine](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
 
    >[!NOTE]
    >Durante la rigenerazione del rapporto, viene visualizzato l&#39;avanzamento in termini di percentuale completata come mostrato nell&#39;immagine seguente.
