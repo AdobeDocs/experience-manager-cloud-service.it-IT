@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
+source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
 workflow-type: tm+mt
-source-wordcount: '1640'
-ht-degree: 97%
+source-wordcount: '1667'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * l requisiti di sistema minimi per lo strumento Content Transfer (Trasferimento contenuti) sono AEM 6.3 o versione successiva e JAVA 8. Se utilizzi una precedente versione di AEM, dovrai aggiornare l’archivio dei contenuti ad AEM 6.5 per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-* Lo strumento Content Transfer (Trasferimento contenuti) può essere utilizzato con i seguenti tipi di archivio dati: Archivio dati file, Archivio dati S3 e Archivio dati S3 condiviso. Al momento non supporta Azure Blob Store Data Store.
+* Content Transfer Tool può essere utilizzato con i seguenti tipi di archivio dati: Archivio dati file, Archivio dati S3, Archivio dati S3 condiviso e Archivio dati Azure Blob.
 
 * Se utilizzi un *ambiente Sandbox*, assicurati che sia aggiornato alla versione del 10 giugno 2020 o successiva. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
 
@@ -47,16 +47,16 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
-1. Fai clic su **Create Migration Set** (Crea set di migrazione) per creare un nuovo set di migrazione. Vengono visualizzati i **Content Migrations Set details** (Dettagli set di migrazione contenuti).
+1. La console seguente viene visualizzata quando create il primo set di migrazione. Fai clic su **Create Migration Set** (Crea set di migrazione) per creare un nuovo set di migrazione.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
 
    >[!NOTE]
-   >In questa schermata vengono visualizzati i set di migrazione esistenti e il relativo stato corrente.
-
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   >Se disponete di set di migrazione esistenti, nella console verrà visualizzato l’elenco dei set di migrazione esistenti con il relativo stato corrente.
 
 1. Compila i campi nella schermata **Content Migrations Set details** (Dettagli set di migrazione contenuti) come descritto di seguito.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/content-3.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
 
 
    1. **Name** (Nome): inserisci il nome del set di migrazione.
@@ -72,13 +72,13 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
    1. **Access Token** (Token di accesso): inserisci il token di accesso.
 
       >[!NOTE]
-      >Puoi recuperare il token di accesso dell’istanza di authoring in `/libs/granite/migration/token.json`. Il token di accesso viene recuperato dall’istanza di authoring di Cloud Service.
+      >Potete recuperare il token di accesso utilizzando il pulsante **Apri token** di accesso. Dovete assicurarvi di appartenere al gruppo di amministratori AEM nell’istanza del Cloud Service di destinazione.
 
    1. **Parameters** (Parametri): seleziona i seguenti parametri per creare il set di migrazione:
 
       1. **Include Version** (Includi versione): seleziona in base alle esigenze.
 
-      1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione.
+      1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore percorso accetta input digitando o selezionando.
 
          >[!IMPORTANT]
          >Durante la creazione di un set di migrazione, i percorsi seguenti sono soggetti a restrizioni:
@@ -92,43 +92,40 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
 1. Il set di migrazione verrà visualizzato nella pagina *Overview* (Panoramica).
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Tutti i set di migrazione esistenti in questa schermata vengono visualizzati nella pagina *Overview* (Panoramica) con il relativo stato corrente e le informazioni sullo stato.
+   Tutti i set di migrazione esistenti in questa schermata vengono visualizzati nella pagina *Overview* (Panoramica) con il relativo stato corrente e le informazioni sullo stato. Alcune di queste icone sono descritte di seguito.
 
    * Una *nuvola rossa* indica che non puoi completare il processo di estrazione.
    * Una *nuvola verde* indica che puoi completare il processo di estrazione.
    * Un’*icona gialla* indica che non hai creato il set di migrazione esistente e che quello specifico è stato creato da un altro utente nella stessa istanza.
 
-1. Seleziona un set di migrazione dalla pagina della panoramica e fai clic su **Properties** (Proprietà) per visualizzare o modificare le proprietà del set di migrazione.
+1. Seleziona un set di migrazione dalla pagina della panoramica e fai clic su **Properties** (Proprietà) per visualizzare o modificare le proprietà del set di migrazione. Durante la modifica delle proprietà, non è possibile modificare il nome del contenitore o l&#39;URL del servizio.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
+
 
 ### Processo di estrazione nel trasferimento dei contenuti {#extraction-process}
 
 Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 
-1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Extract** (Estrai) per avviare l’estrazione.
+1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Extract** (Estrai) per avviare l’estrazione. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. Viene visualizzata la finestra di dialogo **Migration Set extraction** (Estrazione set di migrazione). Fai clic su **Extract** (Estrai) per completare la fase di estrazione.
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
    >[!NOTE]
    >È presente l’opzione per sovrascrivere il contenitore di staging durante la fase di estrazione.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/extract-2.png)
 
-1. Nel campo **EXTRACTION** (ESTRAZIONE) ora viene visualizzato lo stato **RUNNING** (IN ESECUZIONE) per il processo di estrazione in corso.
+1. Il campo **EXTRACTION** ora visualizza lo stato **RUNNING** per indicare che l&#39;estrazione è in corso.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
    Una volta completata l’estrazione, lo stato del set di migrazione diventa **FINISHED** (COMPLETATO) e un’icona di nuvola *verde* viene visualizzata nel campo **INFO**.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
 
    >[!NOTE]
-   >Per visualizzare lo stato aggiornato, aggiorna la pagina.
+   >L’interfaccia utente dispone di una funzione di ricarica automatica che ricarica la pagina della panoramica ogni 30 secondi.
    >Quando si avvia la fase di estrazione, viene applicato il blocco di scrittura, che viene rilasciato dopo *60 secondi*. Pertanto, se si interrompe un’estrazione, prima di riavviare l’estrazione è necessario attendere un minuto affinché il blocco venga rilasciato.
 
 #### Estrazione integrativa {#top-up-extraction-process}
@@ -140,41 +137,25 @@ Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione 
 
 Una volta completato il processo di estrazione, puoi trasferire il contenuto delta utilizzando il metodo di estrazione integrativa. Effettua le seguenti operazioni:
 
-1. Nella pagina *Overview* (Panoramica), seleziona il set di migrazione per il quale desideri eseguire l’estrazione integrativa.
-
-1. Fai clic su **Extract** (Estrai) per avviare l’estrazione integrativa.
-
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. Viene visualizzata la finestra di dialogo **Migration Set extraction** (Estrazione set di migrazione).
+1. Nella pagina *Overview* (Panoramica), seleziona il set di migrazione per il quale desideri eseguire l’estrazione integrativa. Fai clic su **Extract** (Estrai) per avviare l’estrazione integrativa. Viene visualizzata la finestra di dialogo **Migration Set extraction** (Estrazione set di migrazione).
 
    >[!IMPORTANT]
    >Disattiva l’opzione **Overwrite staging container during extraction** (Sovrascrivi contenitore di staging durante l’estrazione).
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### Processo di acquisizione nel trasferimento dei contenuti {#ingestion-process}
 
 Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 
-1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Ingest** (Acquisisci) per avviare l’acquisizione.
+1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Ingest** (Acquisisci) per avviare l’acquisizione. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione). Click on **Ingest** to start the ingestion phase. A scopo dimostrativo, l’opzione **Ingest content to Author instance** (Acquisisci contenuto nell’istanza di authoring) è disabilitata. È possibile acquisire contemporaneamente contenuti nelle istanze di authoring e di pubblicazione.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione).
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
+1. Al termine dell’assimilazione, lo stato nel campo **PUBLISH INGESTION** viene aggiornato a **FINISHED**.
 
-   A scopo dimostrativo, l’opzione **Ingest content to Author instance** (Acquisisci contenuto nell’istanza di authoring) è disabilitata. È possibile acquisire contemporaneamente contenuti nelle istanze di authoring e di pubblicazione.
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
-
-   Fai clic su **Ingest** (Acquisisci) per completare la fase di acquisizione.
-
-1. Una volta completata l’acquisizione, lo stato nel campo **UTHOR INGESTION** (ACQUISIZIONE AUTHORING) diventa **FINISHED** (COMPLETATO) e sotto **INFO** viene visualizzata l’icona di una nuvola verde.
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-4.png)
-
-   >[!NOTE]
-   > Per visualizzare lo stato aggiornato, aggiorna la pagina.
 
 #### Acquisizione integrativa {#top-up-ingestion-process}
 
@@ -185,17 +166,11 @@ Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione 
 
 Una volta completato il processo di acquisizione, puoi utilizzare il contenuto delta utilizzando il metodo di acquisizione integrativa. Effettua le seguenti operazioni:
 
-1. Nella pagina *Overview* (Panoramica), seleziona il set di migrazione per il quale desideri eseguire l’acquisizione integrativa.
+1. Nella pagina *Overview* (Panoramica), seleziona il set di migrazione per il quale desideri eseguire l’acquisizione integrativa. Fai clic su **Ingest (Acquisisci)** per avviare l’acquisizione integrativa. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione).
 
-1. Fai clic su **Ingest (Acquisisci)** per avviare l’acquisizione integrativa.
-
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
-
-1. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione).
-
-   >[!NOTE]
-   >Per evitare di eliminare i contenuti esistenti dell’attività di acquisizione precedente, disattiva l’opzione *Wipe* (Cancella).
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
+   >[!IMPORTANT]
+   >Devi disattivare l&#39;opzione **Elimina contenuto esistente nell&#39;istanza Cloud prima dell&#39;assimilazione** , per evitare di eliminare il contenuto esistente dall&#39;attività di assimilazione precedente.
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### Visualizzazione dei registri di un set di migrazione {#viewing-logs-migration-set}
 
