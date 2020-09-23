@@ -2,10 +2,10 @@
 title: Note sulla versione 2020.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service: note sulla versione 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 9bb087cb0570a1f3bbffb989a9399d3274f9c5e1
+source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 22%
+source-wordcount: '462'
+ht-degree: 20%
 
 ---
 
@@ -70,3 +70,16 @@ Leggi questa sezione per saperne di più sulle novità e sugli aggiornamenti di 
 
 * In alcuni casi, il rapporto CRA non veniva aggiornato dopo aver forzato un aggiornamento. Questo problema è stato risolto in questa versione.
 
+## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
+
+Seguite questa sezione per saperne di più sulle novità e sugli aggiornamenti di Content Transfer Tool Release v1.1.10.
+
+### Novità {#what-is-new-ctt}
+
+* Il Content Transfer Tool (CTT) supporta l&#39;archivio dati di Azure Blob Store.
+
+* L&#39;interfaccia utente CTT dispone di una funzione di ricarica automatica che ricarica la pagina della panoramica ogni 30 secondi.
+
+* Pulsante aggiunto all&#39;interfaccia utente CTT per recuperare facilmente il token *di* accesso.
+
+* È stato aggiunto un messaggio di convalida descrittivo per il nome dell&#39; *URL* e del set di *migrazione*.
