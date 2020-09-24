@@ -2,7 +2,7 @@
 title: Configurazione del Cloud Service di contenuti multimediali dinamici
 description: Informazioni su come configurare gli elementi multimediali dinamici nel Cloud Service Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
+source-git-commit: c5c2f5d9f0fd539591972382f197cb83b3d7e60e
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 9%
@@ -158,7 +158,9 @@ La schermata Server immagini stabilisce le impostazioni predefinite per la distr
 Per aprire la pagina Impostazioni generali applicazione, nella barra di navigazione globale di Dynamic Media Classic fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali.]**
 
 * **[!UICONTROL Server]** - Al momento del provisioning dell&#39;account, Dynamic Media fornisce automaticamente i server assegnati alla società. Questi server vengono utilizzati per creare stringhe URL per il sito Web e le applicazioni. Queste chiamate URL sono specifiche per il vostro account. Non modificate i nomi dei server, a meno che non sia espressamente richiesto dal supporto AEM.
+
 * **[!UICONTROL Sovrascrivi immagini]** - Contenuti multimediali dinamici non consentono a due file di avere lo stesso nome. L’ID URL di ogni elemento (il nome del file senza l’estensione) deve essere univoco. Queste opzioni specificano la modalità di caricamento delle risorse sostitutive: se sostituiscono l’originale o diventano duplicati. Le risorse duplicate vengono rinominate con il suffisso &quot;-1&quot; (ad esempio, sedia.tif viene rinominato sedia-1.tif). Queste opzioni interessano le risorse caricate in una cartella diversa dall’originale o le risorse con un’estensione file diversa dall’originale (ad esempio, JPG, TIF o PNG).
+
 * **[!UICONTROL Sovrascrivi in cartella corrente, nome/estensione]** immagine base - Questa opzione è la regola più restrittiva per la sostituzione. Richiede che l’immagine sostitutiva venga caricata nella stessa cartella dell’originale e che abbia la stessa estensione del nome file dell’originale. Se questi requisiti non sono soddisfatti, viene creato un duplicato.
 
    >[!NOTE]
@@ -166,7 +168,9 @@ Per aprire la pagina Impostazioni generali applicazione, nella barra di navigazi
    >Per mantenere la coerenza con AEM, scegliete sempre questa impostazione: **Sovrascrivi in cartella corrente, nome/estensione come base**
 
 * **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome/estensione]** della risorsa base - Richiede che l’immagine sostitutiva abbia la stessa estensione del nome file dell’immagine originale (ad esempio, sedia.jpg deve sostituire sedia.jpg, non sedia.tif). Tuttavia, potete caricare l’immagine sostitutiva in una cartella diversa da quella dell’originale. L’immagine aggiornata si trova nella nuova cartella; il file non può più essere trovato nella posizione originale.
+
 * **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome della stessa risorsa base indipendentemente dall’estensione]** . Questa opzione è la regola di sostituzione più inclusiva. Potete caricare un’immagine sostitutiva in una cartella diversa da quella dell’originale, caricare un file con un’estensione diversa e sostituire il file originale. Se il file originale si trova in un’altra cartella, l’immagine sostitutiva si trova nella nuova cartella in cui è stata caricata.
+
 * **[!UICONTROL Profili]** colore predefiniti - Per ulteriori informazioni, consultate [Configurazione della gestione](#configuring-color-management) del colore.
 
    >[!NOTE]
@@ -179,7 +183,7 @@ La gestione dinamica del colore dei contenuti multimediali consente di colorare 
 
 Per configurare le proprietà colore predefinite per attivare la correzione colore durante la richiesta delle immagini:
 
-1. [Effettuate l&#39;accesso a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione]** applicazione.
+1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione]** applicazione.
 1. Espandi l’area **[!UICONTROL Publish Setup (Impostazione pubblicazione)]** e seleziona **[!UICONTROL Image Server]**. Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
 1. Scorrete fino alla proprietà da modificare, ad esempio una proprietà nell’area Attributi **[!UICONTROL di gestione]** colore.
 
@@ -213,7 +217,7 @@ Potete definire i tipi di risorse che devono essere elaborati da Dynamic Media e
 
 Consulta [Caricamento delle risorse](/help/assets/add-assets.md).
 
-**Per configurare l’elaborazione delle risorse**
+Per configurare l’elaborazione delle risorse:
 
 1. In AEM, fate clic sul logo AEM per accedere alla console di navigazione globale, quindi fate clic su **[!UICONTROL Generale > CRXDE Lite]**.
 1. Nella barra a sinistra, andate a:
@@ -230,7 +234,6 @@ Consulta [Caricamento delle risorse](/help/assets/add-assets.md).
    * fare doppio clic su **[!UICONTROL jobParam]** per aprire il campo di testo associato. Consultate Tipi [mime](/help/assets/file-format-support.md) supportati per un elenco dei valori di parametri di elaborazione consentiti per un determinato tipo mime.
 
 1. Effettua una delle operazioni seguenti:
-
    * Ripetete i passaggi da 3 a 4 per modificare altri tipi di mime.
    * Nella barra dei menu della pagina dei CRXDE Lite, fate clic su **[!UICONTROL Salva tutto.]**
 
@@ -240,7 +243,7 @@ Consulta [Caricamento delle risorse](/help/assets/add-assets.md).
 
 All’interno di AEM Assets puoi aggiungere tipi MIME personalizzati per i formati non supportati. Per assicurarti che AEM non elimini eventuali nuovi nodi che aggiungi in CRXDE Lite, devi accertarti di spostare il tipo MIME prima di `image_` e che il suo valore abilitato sia impostato su **[!UICONTROL false]**.
 
-**Aggiunta di tipi MIME personalizzati per i formati non supportati**
+Per aggiungere tipi MIME personalizzati per i formati non supportati:
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -306,7 +309,7 @@ In alternativa, è possibile utilizzare **[!UICONTROL Visualizza codice]** senza
 
 Sono disponibili due elementi per la definizione, Corrispondenza e Nome base. Questi campi consentono di definire tutti gli elementi di una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. Una convenzione di denominazione individuale di una società può utilizzare una o più righe di definizione per ciascuno di questi elementi. Potete usare tutte le righe necessarie per creare una definizione univoca e raggrupparle in elementi distinti, ad esempio per l’immagine principale, l’elemento colore, l’elemento visualizzazione alternativa e l’elemento campione.
 
-**Per configurare la denominazione predefinita**
+Per configurare la denominazione predefinita:
 
 1. Accedete al vostro account Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -340,7 +343,7 @@ Potete creare, modificare e gestire i predefiniti per set di batch. Esistono due
 
 Potete definire un predefinito per set di batch con i campi modulo o con il metodo del codice, che consente di usare espressioni regolari. Come in Denominazione predefinita, potete scegliere Visualizza codice nello stesso momento che state definendo nella vista Modulo e utilizzare espressioni regolari per creare le vostre definizioni. In alternativa, è possibile deselezionare una delle due visualizzazioni per utilizzare esclusivamente l&#39;una o l&#39;altra.
 
-**Per creare un predefinito per set di batch**
+Per creare un predefinito per set di batch:
 
 1. Accedete al vostro account Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -503,7 +506,7 @@ La coda del flusso di lavoro di transito Granite viene utilizzata per il flusso 
 
 La coda Flusso di lavoro Granite viene utilizzata per i flussi di lavoro non transitori. In Contenuti multimediali dinamici, veniva utilizzato per elaborare i video con il flusso di lavoro Codifica video **[!UICONTROL per file multimediali]** dinamici.
 
-**Per aggiornare la coda del flusso di lavoro Granite**
+Per aggiornare la coda del flusso di lavoro Granite:
 
 1. Andate a `https://<server>/system/console/configMgr` e cercate **Coda: Coda** flusso di lavoro Granite.
 
@@ -525,7 +528,7 @@ La coda Flusso di lavoro Granite viene utilizzata per i flussi di lavoro non tra
 
 L’impostazione di Scene7 Upload Connection sincronizza AEM risorse sui server Dynamic Media Classic.
 
-**Per aggiornare la connessione di caricamento Scene7**
+Per aggiornare la connessione di caricamento Scene7:
 
 1. Accedi a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. Nel campo **[!UICONTROL Numero di connessioni]** e/o nel campo Timeout **[!UICONTROL processo]** attivo, modificare il numero come desiderato.
@@ -538,7 +541,7 @@ L’impostazione di Scene7 Upload Connection sincronizza AEM risorse sui server 
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Toccate **[!UICONTROL Salva]**.
+1. Toccate **[!UICONTROL Salva.]**
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
