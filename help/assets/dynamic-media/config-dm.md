@@ -2,7 +2,7 @@
 title: Configurazione del Cloud Service di contenuti multimediali dinamici
 description: Informazioni su come configurare gli elementi multimediali dinamici nel Cloud Service Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: ffd20b5324d85e8e50e0564306dbed38627dae69
+source-git-commit: e2efa569a216e2156425a5ad596ec90a75b39e58
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 9%
@@ -157,25 +157,18 @@ La schermata Server immagini stabilisce le impostazioni predefinite per la distr
 
 Per aprire la pagina Impostazioni generali applicazione, nella barra di navigazione globale di Dynamic Media Classic fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali.]**
 
-**[!UICONTROL Server]** - Al momento del provisioning dell&#39;account, Dynamic Media fornisce automaticamente i server assegnati alla società. Questi server vengono utilizzati per creare stringhe URL per il sito Web e le applicazioni. Queste chiamate URL sono specifiche per il vostro account. Non modificate i nomi dei server, a meno che non sia espressamente richiesto dal supporto AEM.
-
-**[!UICONTROL Sovrascrivi immagini]** - Contenuti multimediali dinamici non consentono a due file di avere lo stesso nome. L’ID URL di ogni elemento (il nome del file senza l’estensione) deve essere univoco. Queste opzioni specificano la modalità di caricamento delle risorse sostitutive: se sostituiscono l’originale o diventano duplicati. Le risorse duplicate vengono rinominate con il suffisso &quot;-1&quot; (ad esempio, sedia.tif viene rinominato sedia-1.tif). Queste opzioni interessano le risorse caricate in una cartella diversa dall’originale o le risorse con un’estensione file diversa dall’originale (ad esempio, JPG, TIF o PNG).
-
-**[!UICONTROL Sovrascrivi in cartella corrente, nome/estensione]** immagine base - Questa opzione è la regola più restrittiva per la sostituzione. Richiede che l’immagine sostitutiva venga caricata nella stessa cartella dell’originale e che abbia la stessa estensione del nome file dell’originale. Se questi requisiti non sono soddisfatti, viene creato un duplicato.
-
->[!NOTE]
->
->Per mantenere la coerenza con AEM, scegliete sempre questa impostazione: **Sovrascrivi in cartella corrente, nome/estensione come base**
-
-**[!UICONTROL Sovrascrivi in qualsiasi cartella, nome/estensione]** della risorsa base - Richiede che l’immagine sostitutiva abbia la stessa estensione del nome file dell’immagine originale (ad esempio, sedia.jpg deve sostituire sedia.jpg, non sedia.tif). Tuttavia, potete caricare l’immagine sostitutiva in una cartella diversa da quella dell’originale. L’immagine aggiornata si trova nella nuova cartella; il file non può più essere trovato nella posizione originale.
-
-**[!UICONTROL Sovrascrivi in qualsiasi cartella, nome della stessa risorsa base indipendentemente dall’estensione]** . Questa opzione è la regola di sostituzione più inclusiva. Potete caricare un’immagine sostitutiva in una cartella diversa da quella dell’originale, caricare un file con un’estensione diversa e sostituire il file originale. Se il file originale si trova in un’altra cartella, l’immagine sostitutiva si trova nella nuova cartella in cui è stata caricata.
-
-**[!UICONTROL Profili]** colore predefiniti - Per ulteriori informazioni, consultate [Configurazione della gestione](#configuring-color-management) del colore.
-
->[!NOTE]
->
->Per impostazione predefinita, il sistema mostra 15 rappresentazioni quando selezioni **[!UICONTROL Rappresentazioni]** e 15 predefiniti visualizzatore quando fai clic su **[!UICONTROL Visualizzatori]** nella vista Dettaglio della risorsa. Puoi aumentare questo limite. Consulta la sezione [Aumento o riduzione del numero di predefiniti immagine da visualizzare](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumento o riduzione del numero di predefiniti visualizzatore da mostrare](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+* **[!UICONTROL Server]** - Al momento del provisioning dell&#39;account, Dynamic Media fornisce automaticamente i server assegnati alla società. Questi server vengono utilizzati per creare stringhe URL per il sito Web e le applicazioni. Queste chiamate URL sono specifiche per il vostro account. Non modificate i nomi dei server, a meno che non sia espressamente richiesto dal supporto AEM.
+* **[!UICONTROL Sovrascrivi immagini]** - Contenuti multimediali dinamici non consentono a due file di avere lo stesso nome. L’ID URL di ogni elemento (il nome del file senza l’estensione) deve essere univoco. Queste opzioni specificano la modalità di caricamento delle risorse sostitutive: se sostituiscono l’originale o diventano duplicati. Le risorse duplicate vengono rinominate con il suffisso &quot;-1&quot; (ad esempio, sedia.tif viene rinominato sedia-1.tif). Queste opzioni interessano le risorse caricate in una cartella diversa dall’originale o le risorse con un’estensione file diversa dall’originale (ad esempio, JPG, TIF o PNG).
+* **[!UICONTROL Sovrascrivi in cartella corrente, nome/estensione]** immagine base - Questa opzione è la regola più restrittiva per la sostituzione. Richiede che l’immagine sostitutiva venga caricata nella stessa cartella dell’originale e che abbia la stessa estensione del nome file dell’originale. Se questi requisiti non sono soddisfatti, viene creato un duplicato.
+   >[!NOTE]
+   >
+   >Per mantenere la coerenza con AEM, scegliete sempre questa impostazione: **Sovrascrivi in cartella corrente, nome/estensione come base**
+* **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome/estensione]** della risorsa base - Richiede che l’immagine sostitutiva abbia la stessa estensione del nome file dell’immagine originale (ad esempio, sedia.jpg deve sostituire sedia.jpg, non sedia.tif). Tuttavia, potete caricare l’immagine sostitutiva in una cartella diversa da quella dell’originale. L’immagine aggiornata si trova nella nuova cartella; il file non può più essere trovato nella posizione originale.
+* **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome della stessa risorsa base indipendentemente dall’estensione]** . Questa opzione è la regola di sostituzione più inclusiva. Potete caricare un’immagine sostitutiva in una cartella diversa da quella dell’originale, caricare un file con un’estensione diversa e sostituire il file originale. Se il file originale si trova in un’altra cartella, l’immagine sostitutiva si trova nella nuova cartella in cui è stata caricata.
+* **[!UICONTROL Profili]** colore predefiniti - Per ulteriori informazioni, consultate [Configurazione della gestione](#configuring-color-management) del colore.
+   >[!NOTE]
+   >
+   >Per impostazione predefinita, il sistema mostra 15 rappresentazioni quando selezioni **[!UICONTROL Rappresentazioni]** e 15 predefiniti visualizzatore quando fai clic su **[!UICONTROL Visualizzatori]** nella vista Dettaglio della risorsa. Puoi aumentare questo limite. Consulta la sezione [Aumento o riduzione del numero di predefiniti immagine da visualizzare](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumento o riduzione del numero di predefiniti visualizzatore da mostrare](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Configurazione della gestione del colore {#configuring-color-management}
 
