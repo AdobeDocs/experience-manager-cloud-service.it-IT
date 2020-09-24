@@ -2,7 +2,7 @@
 title: Test di audit delle esperienze - Cloud Services
 description: Test di audit delle esperienze - Cloud Services
 translation-type: tm+mt
-source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
+source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Experience Audit fornisce risultati di test aggregati e dettagliati a livello di
    >[!NOTE]
    >La valutazione progressiva dell&#39;app Web (PWA) non è inclusa nella valutazione di riepilogo e verrà visualizzata solo nella schermata dei dettagli a livello di pagina.
 * I singoli punteggi a livello di pagina sono disponibili anche tramite drill down.
-* Sono disponibili dettagli dei punteggi per vedere quali sono i risultati dei singoli test, nonché indicazioni su come risolvere eventuali problemi individuati durante il controllo dei contenuti.
+* Sono disponibili dettagli dei punteggi per vedere quali sono i risultati dei singoli test, nonché indicazioni su come risolvere eventuali problemi individuati durante l&#39;audit dell&#39;esperienza.
 * Una cronologia dei risultati del test è persistente in Cloud Manager in modo che i clienti possano vedere se le modifiche introdotte nell&#39;esecuzione della pipeline includono eventuali regressioni dall&#39;esecuzione precedente.
 
 ### Aggrega punteggi {#aggregate-scores}
