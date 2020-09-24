@@ -2,10 +2,10 @@
 title: Note sulla versione 2020.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service: note sulla versione 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
+source-git-commit: 9d73b8339a327643be9f2ea674857b401346087a
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 17%
+source-wordcount: '714'
+ht-degree: 15%
 
 ---
 
@@ -110,3 +110,18 @@ Seguite questa sezione per saperne di più sulle novità e sugli aggiornamenti d
 * Pulsante aggiunto all&#39;interfaccia utente CTT per recuperare facilmente il token *di* accesso.
 
 * È stato aggiunto un messaggio di convalida descrittivo per il nome dell&#39; *URL* e del set di *migrazione*.
+
+## Strumenti di refactoring del codice {#code-refactoring}
+
+Segui questa sezione per saperne di più sulle novità e gli aggiornamenti per gli strumenti di refactoring del codice.
+
+### Novità {#what-is-new-refactoring}
+
+* Il plug-in AIO-CLI supporta Repository Modernizer e consente agli utenti di eseguire lo strumento utilizzando il plugin.
+
+   Fare riferimento a Risorse [Git: per maggiori informazioni, fai clic su aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) .
+
+* L&#39;utility Repository Modernizer può essere utilizzata per ristrutturare i pacchetti di progetto esistenti in pacchetti compatibili con la struttura di progetto definita per AEM come Cloud Service.
+
+   Fare riferimento a Risorse [Git: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per ulteriori dettagli.
+
