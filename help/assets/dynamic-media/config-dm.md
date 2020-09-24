@@ -2,10 +2,10 @@
 title: Configurazione del Cloud Service di contenuti multimediali dinamici
 description: Informazioni su come configurare gli elementi multimediali dinamici nel Cloud Service Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
+source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
 workflow-type: tm+mt
-source-wordcount: '5122'
-ht-degree: 9%
+source-wordcount: '5599'
+ht-degree: 8%
 
 ---
 
@@ -46,53 +46,43 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Configurazione del Cloud Service di contenuti multimediali dinamici {#configuring-dynamic-media-cloud-services}
+## Creazione di una nuova configurazione per contenuti multimediali dinamici in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Prima di configurare l’Cloud Service** per contenuti multimediali dinamici: Dopo aver ricevuto il messaggio e-mail di provisioning con le credenziali per gli elementi multimediali dinamici, dovete [accedere](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) a Dynamic Media Classic per cambiare la password. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che il Cloud Service di contenuti multimediali dinamici sia configurato con le credenziali corrette.
-
-Per configurare i servizi cloud per contenuti multimediali dinamici:
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. In AEM, toccate il logo AEM per accedere alla console di navigazione globale.
-1. Sul lato sinistro della console, sotto l’intestazione **[!UICONTROL Strumenti]**, tocca **[!UICONTROL Cloud Services > Configurazione elemento multimediale dinamico]**.
+1. On the left side of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. Nella pagina del Browser configurazioni Dynamic Media, seleziona il riquadro a sinistra e tocca **[!UICONTROL global (globale)]** (non toccare o selezionare l’icona della cartella a sinistra di **[!UICONTROL global]**), quindi tocca **[!UICONTROL Crea]**.
-1. Nella pagina Crea configurazione elemento multimediale dinamico, immetti un titolo, l’indirizzo e-mail dell’account elemento multimediale dinamico, la password, quindi seleziona la tua area geografica. Questi vengono forniti  Adobe nel messaggio e-mail di provisioning. Se non avete ricevuto questa richiesta, contattate l&#39;assistenza.
+1. Nella pagina **[!UICONTROL Crea configurazione]** elemento multimediale dinamico, immetti un titolo, l’indirizzo e-mail dell’account elemento multimediale dinamico, la password, quindi seleziona la tua area geografica. Questi vengono forniti  Adobe nel messaggio e-mail di provisioning. Se non avete ricevuto questa richiesta, contattate l&#39;assistenza.
 1. Click **[!UICONTROL Connect to Dynamic Media]**.
+1. Nella finestra di dialogo **[!UICONTROL Cambia password]** , nel campo **[!UICONTROL Nuova password]** , immettete una nuova password composta da 8-25 caratteri. La password deve contenere almeno uno dei seguenti elementi:
 
-   >[!NOTE]
-   >
-   >Dopo aver ricevuto il messaggio e-mail di provisioning con le credenziali per i contenuti multimediali dinamici, [accedete](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) a Dynamic Media Classic per cambiare la password. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che il servizio Dynamic Media Cloud sia configurato con le credenziali corrette.
+   * Lettera maiuscola
+   * Lettera minuscola
+   * Numero
+   * Carattere speciale: `# $ & . - _ : { }`
+
+   Il campo Password **** corrente è intenzionalmente precompilato e nascosto dall’interazione.
+
+   Se necessario, potete eseguire il controllo dell&#39;ortografia di una password digitata o digitata nuovamente toccando l&#39;icona occhio password per visualizzare la password. Toccate di nuovo l&#39;icona per nascondere la password.
+
+1. Nel campo **[!UICONTROL Ripeti password]** , digitate nuovamente la nuova password, quindi toccate **[!UICONTROL Fine.]**
+
+   La nuova password viene salvata quando toccate **[!UICONTROL Salva]** nell’angolo in alto a destra della pagina **[!UICONTROL Crea configurazione]** elemento multimediale dinamico.
+
+   Se avete toccato **[!UICONTROL Annulla]** nella finestra di dialogo **[!UICONTROL Modifica password]** , dovrete comunque immettere una nuova password quando toccate **[!UICONTROL Salva]** per salvare la configurazione per elementi multimediali dinamici appena creata.
+
+   Consultate anche [Modifica della password per gli elementi multimediali](#change-dm-password)dinamici.
 
 1. Quando la connessione ha esito positivo, potete impostare quanto segue:
 
-* **[!UICONTROL Company]** - il nome dell&#39;account Dynamic Media. È possibile che si disponga di più account Dynamic Media per diversi marchi secondari, divisioni o diversi ambienti di produzione/staging.
-
-* **[!UICONTROL Percorso cartella principale della società]**
-
-* **[!UICONTROL Pubblicazione delle risorse]** - Potete scegliere tra le tre opzioni seguenti:
-
-* **[!UICONTROL Immediatamente]** significa che quando le risorse vengono caricate, il sistema le raccoglie e fornisce l’URL/Incorpora immediatamente. Non è necessario alcun intervento da parte degli utenti per pubblicare le risorse.
-
-* **[!UICONTROL Al momento dell’attivazione]** , è necessario pubblicare la risorsa in modo esplicito prima di fornire un collegamento URL/Incorpora.
-
-* **[!UICONTROL La pubblicazione]** selettiva consente di pubblicare automaticamente le risorse solo per l’anteprima protetta e di pubblicarle in AEM in modo esplicito senza la pubblicazione in DMS7 per la distribuzione nel dominio pubblico. In futuro,  Adobe migliorerà questa opzione per pubblicare le risorse per AEM e pubblicare le risorse su elementi multimediali dinamici, escludendosi a vicenda. In altre parole, potete pubblicare le risorse su DMS7 in modo da poter utilizzare funzioni quali SmartCrop o rappresentazioni dinamiche. Oppure potete pubblicare le risorse esclusivamente in AEM per la visualizzazione dell’anteprima; le stesse risorse non vengono pubblicate in DMS7 per la distribuzione nel dominio pubblico.
-
-* **[!UICONTROL Server]** di anteprima protetto: consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, AEM accedere e visualizzare in modo sicuro le rappresentazioni per contenuti multimediali dinamici remoti (nessun file binario viene inviato nuovamente all’istanza AEM).
-A meno che non disponiate di una disposizione speciale per utilizzare il server della vostra società o un server speciale,  Adobe Systems consiglia di lasciare questa impostazione come specificato.
-
-* **[!UICONTROL Sincronizza tutto il contenuto]** - Selezionato per impostazione predefinita. Deselezionate questa opzione se desiderate includere o escludere selettivamente le risorse dalla sincronizzazione a elementi multimediali dinamici. Deselezionando questa opzione, potete scegliere tra le due seguenti modalità di sincronizzazione per elementi multimediali dinamici:
-
-* **[!UICONTROL Modalità di sincronizzazione elementi Dynamic Media]**
-
-* **[!UICONTROL Abilitata per impostazione predefinita]** : la configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non venga contrassegnata una cartella specifica per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-
-* **[!UICONTROL Disabilitata per impostazione predefinita]** : la configurazione non viene applicata ad alcuna cartella finché non si contrassegna in modo esplicito una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici.
-Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, apri la pagina Proprietà della cartella risorse. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
-
-* **[!UICONTROL Ereditato]** - Nessun valore di sincronizzazione esplicito sulla cartella; al contrario, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per le presentazioni ereditate viene visualizzato tramite una descrizione comandi.
-
-* **[!UICONTROL Abilita per le sottocartelle]** - Includi tutto ciò che si trova in questo sottoalbero per la sincronizzazione con gli elementi multimediali dinamici. Le impostazioni specifiche per la cartella sostituiscono la modalità predefinita nella configurazione cloud.
-
-* **[!UICONTROL Disattivato per le sottocartelle]** - Escludete tutti gli elementi di questo sottoalbero dalla sincronizzazione a Contenuti multimediali dinamici.
+   | Proprietà | Descrizione |
+   |---|---|
+   | Azienda | Nome dell’account Dynamic Media. È possibile che si disponga di più account Dynamic Media per diversi marchi secondari, divisioni o diversi ambienti di produzione/staging. |
+   | Percorso cartella principale della società | Percorso cartella principale della società. |
+   | Pubblicazione delle risorse | Potete scegliere tra le seguenti tre opzioni:<br>**[!UICONTROL Immediatamente ]**: Quando le risorse vengono caricate, il sistema le acquisisce e fornisce immediatamente l’URL o l’incorporamento. Non è necessario alcun intervento da parte degli utenti per pubblicare le risorse.<br>**[!UICONTROL Al momento dell&#39;attivazione]**: Prima di fornire un collegamento URL/Incorpora, è necessario pubblicare esplicitamente la risorsa.<br>**[!UICONTROL Pubblicazione ]**selettiva: Le risorse vengono pubblicate automaticamente solo per la visualizzazione in anteprima protetta e possono essere pubblicate in modo esplicito su AEM senza la pubblicazione in DMS7 per la distribuzione nel dominio pubblico. In futuro,  Adobe migliorerà questa opzione per pubblicare le risorse per AEM e pubblicare le risorse su elementi multimediali dinamici, escludendosi a vicenda. In altre parole, potete pubblicare le risorse su DMS7 in modo da poter utilizzare funzioni quali SmartCrop o rappresentazioni dinamiche. Oppure potete pubblicare le risorse esclusivamente in AEM per la visualizzazione dell’anteprima; le stesse risorse non vengono pubblicate in DMS7 per la distribuzione nel dominio pubblico. |
+   | Server di anteprima protetto | Consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, AEM accedere e visualizzare in modo sicuro le rappresentazioni per contenuti multimediali dinamici remoti (nessun file binario viene inviato nuovamente all’istanza AEM).<br>A meno che non disponiate di una disposizione speciale per utilizzare il server della vostra società o un server speciale,  Adobe Systems consiglia di lasciare questa impostazione come specificato. |
+   | Sincronizza tutti i contenuti | Selezionato per impostazione predefinita. Deselezionate questa opzione se desiderate includere o escludere selettivamente le risorse dalla sincronizzazione a elementi multimediali dinamici. Deselezionando questa opzione potete scegliere tra le due seguenti modalità di sincronizzazione elementi multimediali dinamici:<br>**[!UICONTROL Modalità di sincronizzazione]**<br>**[!UICONTROL elementi multimediali dinamiciAttiva per impostazione predefinita ]**: Per impostazione predefinita, la configurazione è applicata a tutte le cartelle, a meno che non venga contrassegnata una cartella specifica per l’esclusione.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disattivato per impostazione predefinita]**: La configurazione non viene applicata ad alcuna cartella finché non viene esplicitamente contrassegnata una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici.<br>Per contrassegnare una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici, selezionate una cartella di risorse, quindi toccate **[!UICONTROL Proprietà]** sulla barra degli strumenti. Nella scheda **[!UICONTROL Dettagli]** , nell’elenco a discesa Modalità **[!UICONTROL sincronizzazione file multimediali]** dinamici, scegliete una delle tre opzioni seguenti. Al termine, toccate **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se avete selezionato **Sincronizza tutto il contenuto**in precedenza.* Consultate anche [Utilizzo della pubblicazione selettiva a livello di cartella in Contenuti multimediali dinamici.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Ereditato ]**: Nessun valore di sincronizzazione esplicito sulla cartella; al contrario, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per le presentazioni ereditate viene visualizzato tramite una descrizione comandi.<br>**[!UICONTROL Abilita per sottocartelle]**: Includi tutti gli elementi in questo sottoalbero per la sincronizzazione con gli elementi multimediali dinamici. Le impostazioni specifiche per la cartella sostituiscono la modalità predefinita nella configurazione cloud.<br>**[!UICONTROL Disattivato per le sottocartelle ]**: Escludete tutti gli elementi di questo sottoalbero dalla sincronizzazione a Contenuti multimediali dinamici. |
 
    >[!NOTE]
    >
@@ -101,10 +91,19 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
    >
    >Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in diretta su S7 Delivery.
 
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. Toccate **[!UICONTROL Salva]**.
-1. Per visualizzare in modo sicuro l’anteprima del contenuto multimediale dinamico prima di pubblicarlo, è necessario &quot; &quot; l’istanza di autore AEM per collegarsi a Contenuti multimediali dinamici:
+1. Toccate **[!UICONTROL Salva]**. Viene salvata la nuova password e la nuova configurazione per contenuti multimediali dinamici. Se invece avete toccato **[!UICONTROL Annulla]** , non si verifica alcun aggiornamento della password.
+1. Nella finestra di dialogo **[!UICONTROL Configurazione elemento multimediale]** dinamico, toccate **[!UICONTROL OK]** per iniziare la configurazione.
+
+   >[!IMPORTANT]
+   >
+   >Al termine della nuova configurazione per i contenuti multimediali dinamici, riceverai una notifica di stato all’interno AEM Casella in entrata.
+   >
+   >Questa notifica Inbox informa se la configurazione ha avuto esito positivo o meno.
+   > Per ulteriori informazioni, consulta [Risoluzione dei problemi relativi a una nuova configurazione](#troubleshoot-dm-config) per contenuti multimediali dinamici e [Casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md) .
+
+1. Per visualizzare in modo sicuro l’anteprima del contenuto multimediale dinamico prima di pubblicarlo, è necessario &quot; inserire nell&#39;elenco Consentiti&quot; l’istanza di creazione AEM per collegarsi a Contenuti multimediali dinamici. Per configurare questa impostazione, effettuate le seguenti operazioni:
 
    * Accedete al vostro account Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Le credenziali e l&#39;accesso sono stati forniti  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
    * Nella barra di navigazione in alto a destra della pagina, fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Server]** immagini.
@@ -117,6 +116,58 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
 Ora hai finito con la configurazione di base; è possibile utilizzare gli elementi multimediali dinamici.
 
 Se desiderate personalizzare ulteriormente la configurazione, potete eventualmente completare qualsiasi attività in [Configurazione delle impostazioni avanzate in Contenuti multimediali](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)dinamici.
+
+### Risoluzione dei problemi relativi a una nuova configurazione per contenuti multimediali dinamici {#troubleshoot-dm-config}
+
+Al termine della configurazione di una nuova configurazione per contenuti multimediali dinamici, riceverai una notifica di stato all’interno AEM Casella in entrata. Questa notifica informa se la configurazione ha avuto esito positivo o meno, come mostrato nelle immagini riportate di seguito dalla Casella in entrata.
+
+![aeminboxsuccess](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
+
+![aeminbossottaggio](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
+
+Vedere anche [Casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md).
+
+**Per risolvere eventuali problemi relativi alla nuova configurazione di Dynamic Media**
+
+1. Nell’angolo superiore destro della pagina di AEM, toccate l’icona a forma di campana, quindi toccate **[!UICONTROL Visualizza tutto]**.
+1. Nella pagina Posta in arrivo, toccate la notifica di riuscita per visualizzare una panoramica dello stato e dei registri della configurazione.
+
+   Se la configurazione non è riuscita, toccate la notifica di errore simile alla schermata seguente.
+
+   ![dmsetupFailed](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
+
+1. Nella pagina **[!UICONTROL DMSETUP]** , controlla i dettagli di configurazione che descrivono l&#39;errore. In particolare, prendere nota di eventuali messaggi di errore o codici di errore. Dovrai contattare &#39;Assistenza Adobe con queste informazioni.
+
+   ![dmsetuppage](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+
+### Modifica della password per gli elementi multimediali dinamici {#change-dm-password}
+
+La scadenza della password in Contenuti multimediali dinamici è impostata su 100 anni dalla data corrente del sistema.
+
+La password deve contenere almeno uno dei seguenti elementi:
+
+* Lettera maiuscola
+* Lettera minuscola
+* Numero
+* Carattere speciale: `# $ & . - _ : { }`
+
+Se necessario, potete eseguire il controllo dell&#39;ortografia di una password digitata o digitata nuovamente toccando l&#39;icona occhio password per visualizzare la password. Toccate di nuovo l&#39;icona per nascondere la password.
+
+La password modificata viene salvata quando toccate **[!UICONTROL Salva]** nell’angolo in alto a destra della pagina **[!UICONTROL Modifica configurazione]** elemento multimediale dinamico.
+
+1. In AEM, toccate il logo AEM per accedere alla console di navigazione globale.
+1. On the left side of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
+1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Edit.]**
+1. Nella pagina **[!UICONTROL Modifica configurazione]** elemento multimediale dinamico, toccate **[!UICONTROL Modifica password, direttamente sotto il campo]** Password **[!UICONTROL .]**
+1. Nella finestra di dialogo **[!UICONTROL Cambia password]** , effettuate le seguenti operazioni:
+
+   * Nel campo **[!UICONTROL Nuova password]** , immettete una nuova password.
+
+      Il campo Password **** corrente è intenzionalmente precompilato e nascosto dall’interazione.
+
+   * Nel campo **[!UICONTROL Ripeti password]** , digitate nuovamente la nuova password, quindi toccate **[!UICONTROL Fine.]**
+
+1. Nell’angolo in alto a destra della pagina **[!UICONTROL Modifica configurazione]** elemento multimediale dinamico, toccate **[!UICONTROL Salva]**, quindi toccate **[!UICONTROL OK.]**
 
 ## (Facoltativo) Configurazione delle impostazioni avanzate per gli elementi multimediali dinamici{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -179,16 +230,17 @@ La gestione dinamica del colore dei contenuti multimediali consente di colorare 
 
 Per configurare le proprietà colore predefinite per attivare la correzione colore durante la richiesta delle immagini:
 
-1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione]** applicazione.
+1. [Effettuate l&#39;accesso a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione]** applicazione.
 1. Espandi l’area **[!UICONTROL Publish Setup (Impostazione pubblicazione)]** e seleziona **[!UICONTROL Image Server]**. Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
 1. Scorrete fino alla proprietà da modificare, ad esempio una proprietà nell’area Attributi **[!UICONTROL di gestione]** colore.
+Potete impostare le seguenti proprietà di correzione del colore:
 
-   Potete impostare le seguenti proprietà di correzione del colore:
-
-   **[!UICONTROL Spazio]** colore predefinito CMYK - Nome del profilo colore CMYK predefinito.
-   **[!UICONTROL Spazio]** colore predefinito Scala di grigio - Nome del profilo colore grigio predefinito.
-   **[!UICONTROL Spazio]** colore predefinito RGB - Nome del profilo colore RGB predefinito.
-   **[!UICONTROL Intento]** di rendering conversione colore - Specifica l&#39;intento di rendering. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]**  Adobe consiglia **[!UICONTROL relativa]** come impostazione predefinita.
+   | Proprietà | Descrizione |
+   |---|---|
+   | Spazio colore predefinito CMYK | Nome del profilo colore CMYK predefinito. |
+   | Scala di grigio Spazio colore predefinito | Nome del profilo colore grigio predefinito. |
+   | Spazio colore predefinito RGB | Nome del profilo colore RGB predefinito. |
+   | Intento di rendering conversione colore | Specifica l’intento di rendering. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]**  Adobe consiglia **[!UICONTROL relativa]** come impostazione predefinita. |
 
 1. Toccate **[!UICONTROL Salva]**.
 
@@ -474,7 +526,7 @@ Potete ottimizzare i parametri di processo per velocizzare l’elaborazione quan
 | PostScript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-Per aggiornare uno di questi parametri, segui i passaggi descritti in [Abilitazione del supporto](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)dei parametri di caricamento per i processi di caricamento di risorse/file multimediali dinamici basati su tipo MIME.
+<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
 
 #### Aggiornamento della coda del flusso di lavoro transitorio Granite {#updating-the-granite-transient-workflow-queue}
 
