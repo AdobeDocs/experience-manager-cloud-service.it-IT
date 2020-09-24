@@ -2,7 +2,7 @@
 title: Configurazione del Cloud Service di contenuti multimediali dinamici
 description: Informazioni su come configurare gli elementi multimediali dinamici nel Cloud Service Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: 97b4d8bba29ddaea959b41c2690b8ff11860413d
+source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
 workflow-type: tm+mt
 source-wordcount: '5122'
 ht-degree: 9%
@@ -64,26 +64,35 @@ Per configurare i servizi cloud per contenuti multimediali dinamici:
 
 1. Quando la connessione ha esito positivo, potete impostare quanto segue:
 
-   * **[!UICONTROL Company]** - il nome dell&#39;account Dynamic Media. È possibile che si disponga di più account Dynamic Media per diversi marchi secondari, divisioni o diversi ambienti di produzione/staging.
+* **[!UICONTROL Company]** - il nome dell&#39;account Dynamic Media. È possibile che si disponga di più account Dynamic Media per diversi marchi secondari, divisioni o diversi ambienti di produzione/staging.
 
-   * **[!UICONTROL Percorso cartella principale della società]**
+* **[!UICONTROL Percorso cartella principale della società]**
 
-   * **[!UICONTROL Pubblicazione delle risorse]** - Potete scegliere tra le tre opzioni seguenti:
-      * **[!UICONTROL Immediatamente]** significa che quando le risorse vengono caricate, il sistema le raccoglie e fornisce l’URL/Incorpora immediatamente. Non è necessario alcun intervento da parte degli utenti per pubblicare le risorse.
-      * **[!UICONTROL Al momento dell’attivazione]** , è necessario pubblicare la risorsa in modo esplicito prima di fornire un collegamento URL/Incorpora.
-      * **[!UICONTROL La pubblicazione]** selettiva consente di pubblicare automaticamente le risorse solo per l’anteprima protetta e di pubblicarle in AEM in modo esplicito senza la pubblicazione in DMS7 per la distribuzione nel dominio pubblico. In futuro,  Adobe migliorerà questa opzione per pubblicare le risorse per AEM e pubblicare le risorse su elementi multimediali dinamici, escludendosi a vicenda. In altre parole, potete pubblicare le risorse su DMS7 in modo da poter utilizzare funzioni quali SmartCrop o rappresentazioni dinamiche. Oppure potete pubblicare le risorse esclusivamente in AEM per la visualizzazione dell’anteprima; le stesse risorse non vengono pubblicate in DMS7 per la distribuzione nel dominio pubblico.
-   * **[!UICONTROL Server]** di anteprima protetto: consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, AEM accedere e visualizzare in modo sicuro le rappresentazioni per contenuti multimediali dinamici remoti (nessun file binario viene inviato nuovamente all’istanza AEM).
+* **[!UICONTROL Pubblicazione delle risorse]** - Potete scegliere tra le tre opzioni seguenti:
+
+* **[!UICONTROL Immediatamente]** significa che quando le risorse vengono caricate, il sistema le raccoglie e fornisce l’URL/Incorpora immediatamente. Non è necessario alcun intervento da parte degli utenti per pubblicare le risorse.
+
+* **[!UICONTROL Al momento dell’attivazione]** , è necessario pubblicare la risorsa in modo esplicito prima di fornire un collegamento URL/Incorpora.
+
+* **[!UICONTROL La pubblicazione]** selettiva consente di pubblicare automaticamente le risorse solo per l’anteprima protetta e di pubblicarle in AEM in modo esplicito senza la pubblicazione in DMS7 per la distribuzione nel dominio pubblico. In futuro,  Adobe migliorerà questa opzione per pubblicare le risorse per AEM e pubblicare le risorse su elementi multimediali dinamici, escludendosi a vicenda. In altre parole, potete pubblicare le risorse su DMS7 in modo da poter utilizzare funzioni quali SmartCrop o rappresentazioni dinamiche. Oppure potete pubblicare le risorse esclusivamente in AEM per la visualizzazione dell’anteprima; le stesse risorse non vengono pubblicate in DMS7 per la distribuzione nel dominio pubblico.
+
+* **[!UICONTROL Server]** di anteprima protetto: consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, AEM accedere e visualizzare in modo sicuro le rappresentazioni per contenuti multimediali dinamici remoti (nessun file binario viene inviato nuovamente all’istanza AEM).
 A meno che non disponiate di una disposizione speciale per utilizzare il server della vostra società o un server speciale,  Adobe Systems consiglia di lasciare questa impostazione come specificato.
 
-   * **[!UICONTROL Sincronizza tutto il contenuto]** - Selezionato per impostazione predefinita. Deselezionate questa opzione se desiderate includere o escludere selettivamente le risorse dalla sincronizzazione a elementi multimediali dinamici. Deselezionando questa opzione, potete scegliere tra le due seguenti modalità di sincronizzazione per elementi multimediali dinamici:
+* **[!UICONTROL Sincronizza tutto il contenuto]** - Selezionato per impostazione predefinita. Deselezionate questa opzione se desiderate includere o escludere selettivamente le risorse dalla sincronizzazione a elementi multimediali dinamici. Deselezionando questa opzione, potete scegliere tra le due seguenti modalità di sincronizzazione per elementi multimediali dinamici:
 
-   * **[!UICONTROL Modalità di sincronizzazione elementi Dynamic Media]**
-      * **[!UICONTROL Abilitata per impostazione predefinita]** : la configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non venga contrassegnata una cartella specifica per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL Disabilitata per impostazione predefinita]** : la configurazione non viene applicata ad alcuna cartella finché non si contrassegna in modo esplicito una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici.
+* **[!UICONTROL Modalità di sincronizzazione elementi Dynamic Media]**
+
+* **[!UICONTROL Abilitata per impostazione predefinita]** : la configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non venga contrassegnata una cartella specifica per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+
+* **[!UICONTROL Disabilitata per impostazione predefinita]** : la configurazione non viene applicata ad alcuna cartella finché non si contrassegna in modo esplicito una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici.
 Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, apri la pagina Proprietà della cartella risorse. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
-         * **[!UICONTROL Ereditato]** - Nessun valore di sincronizzazione esplicito sulla cartella; al contrario, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per le presentazioni ereditate viene visualizzato tramite una descrizione comandi.
-         * **[!UICONTROL Abilita per le sottocartelle]** - Includi tutto ciò che si trova in questo sottoalbero per la sincronizzazione con gli elementi multimediali dinamici. Le impostazioni specifiche per la cartella sostituiscono la modalità predefinita nella configurazione cloud.
-         * **[!UICONTROL Disattivato per le sottocartelle]** - Escludete tutti gli elementi di questo sottoalbero dalla sincronizzazione a Contenuti multimediali dinamici.
+
+* **[!UICONTROL Ereditato]** - Nessun valore di sincronizzazione esplicito sulla cartella; al contrario, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per le presentazioni ereditate viene visualizzato tramite una descrizione comandi.
+
+* **[!UICONTROL Abilita per le sottocartelle]** - Includi tutto ciò che si trova in questo sottoalbero per la sincronizzazione con gli elementi multimediali dinamici. Le impostazioni specifiche per la cartella sostituiscono la modalità predefinita nella configurazione cloud.
+
+* **[!UICONTROL Disattivato per le sottocartelle]** - Escludete tutti gli elementi di questo sottoalbero dalla sincronizzazione a Contenuti multimediali dinamici.
 
    >[!NOTE]
    >
@@ -170,16 +179,16 @@ La gestione dinamica del colore dei contenuti multimediali consente di colorare 
 
 Per configurare le proprietà colore predefinite per attivare la correzione colore durante la richiesta delle immagini:
 
-1. [Effettuate l&#39;accesso a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione]** applicazione.
+1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione]** applicazione.
 1. Espandi l’area **[!UICONTROL Publish Setup (Impostazione pubblicazione)]** e seleziona **[!UICONTROL Image Server]**. Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
 1. Scorrete fino alla proprietà da modificare, ad esempio una proprietà nell’area Attributi **[!UICONTROL di gestione]** colore.
 
    Potete impostare le seguenti proprietà di correzione del colore:
 
-   * **[!UICONTROL Spazio]** colore predefinito CMYK - Nome del profilo colore CMYK predefinito.
-   * **[!UICONTROL Spazio]** colore predefinito Scala di grigio - Nome del profilo colore grigio predefinito.
-   * **[!UICONTROL Spazio]** colore predefinito RGB - Nome del profilo colore RGB predefinito.
-   * **[!UICONTROL Intento]** di rendering conversione colore - Specifica l&#39;intento di rendering. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]**  Adobe consiglia **[!UICONTROL relativa]** come impostazione predefinita.
+   **[!UICONTROL Spazio]** colore predefinito CMYK - Nome del profilo colore CMYK predefinito.
+   **[!UICONTROL Spazio]** colore predefinito Scala di grigio - Nome del profilo colore grigio predefinito.
+   **[!UICONTROL Spazio]** colore predefinito RGB - Nome del profilo colore RGB predefinito.
+   **[!UICONTROL Intento]** di rendering conversione colore - Specifica l&#39;intento di rendering. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]**  Adobe consiglia **[!UICONTROL relativa]** come impostazione predefinita.
 
 1. Toccate **[!UICONTROL Salva]**.
 
@@ -190,7 +199,7 @@ In questo modo si effettua quanto segue:
 * Attiva la correzione del colore per le immagini RGB e CMYK.
 * Si presume che nello spazio colore *sRGB* siano presenti immagini RGB che non hanno un profilo colore.
 * Si presume che le immagini CMYK che non hanno un profilo colore siano nello spazio colore *WebCoated* .
-* Le rappresentazioni dinamiche che restituiscono l&#39;output RGB, lo restituiranno nello spazio colore *sRGB *s.
+* Le rappresentazioni dinamiche che restituiscono l’output RGB lo restituiranno nello spazio colore *sRGB* .
 * Rappresentazioni dinamiche che restituiscono l’output CMYK, lo restituiranno nello spazio colore *WebCoated* .
 
 #### Configurazione dell’elaborazione delle risorse {#configuring-asset-processing}
