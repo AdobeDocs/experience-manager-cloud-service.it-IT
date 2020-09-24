@@ -2,10 +2,10 @@
 title: Repository Modernizer
 description: Repository Modernizer
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 3%
+source-wordcount: '301'
+ht-degree: 4%
 
 ---
 
@@ -26,6 +26,9 @@ Repository Modernizer crea una struttura di progetto AEM Cloud Service compatibi
 
 * `all` pacchetto è un pacchetto contenitore che contiene i pacchetti secondari `ui.apps` e `ui.content`.
 
+>[!NOTE]
+>La struttura del progetto è basata su *Archetype 24* per i pacchetti e i relativi `pom.xml/filter.xml files`. Per ulteriori informazioni, fare riferimento a [Archetype 24](https://github.com/adobe/aem-project-archetype) .
+
 ## Utilizzo di Repository Modernizer {#using-repo-modernizer}
 
 * Tramite CLI I/O  Adobe: Si consiglia di utilizzare Repository Modernizer tramite `aio-cli-plugin-aem-cloud-service-migration` (AEM come plug-in per il refactoring del codice di Cloud Service per l&#39;interfaccia CLI I/O di  Adobe).
@@ -36,5 +39,5 @@ Repository Modernizer crea una struttura di progetto AEM Cloud Service compatibi
 
    Fare riferimento a Risorse **[Git: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** per imparare a utilizzare questo strumento.
 
->[!NOTE]
->Repository Modernizer è sviluppato utilizzando NodeJS. È consigliabile installare NodeJS 10.0+.
+   >[!NOTE]
+   >Repository Modernizer è sviluppato utilizzando NodeJS. È consigliabile installare NodeJS 10.0+.
