@@ -3,7 +3,7 @@ title: Filigrana le risorse
 description: Aggiungi una filigrana alle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a9ebb97541b44140d0155bcfa5d0228c79dbffec
+source-git-commit: f1fcddf196a1a2bfa2629dbd6a8fe0ac057a3d07
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Per configurare  Experience Manager in filigrane, effettuate le seguenti operazi
 
 1. [Create un profilo](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) di elaborazione per utilizzare i microservizi delle risorse per applicare la filigrana.
 
-![Profilo di elaborazione delle risorse per creare una filigrana](assets/watermark-processing-profile.png)
+   ![Profilo di elaborazione delle risorse per creare una filigrana](assets/watermark-processing-profile.png)
 
 1. [Applicate i profili di elaborazione a una cartella](/help/assets/asset-microservices-configure-and-use.md#use-profiles) per creare risorse con filigrana.
 
