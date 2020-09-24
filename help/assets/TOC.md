@@ -4,10 +4,10 @@ user-guide-title: Risorse come guida per il Cloud Service
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 90%
+source-wordcount: '434'
+ht-degree: 89%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 90%
    + [Scaricare risorse da AEM](download-assets-from-aem.md)
    + [Archiviare ed estrarre le risorse da modificare](check-out-and-submit-assets.md)
    + [Digital Rights Management per le risorse](drm.md)
+   + [Risorse di filigrana](watermark-assets.md)
 + Configurare, amministrare ed estendere Assets {#admin}
    + [Riferimenti ai documenti e alle API per sviluppatori](developer-reference-material-apis.md)
    + [Schema metadati per cartelle](folder-metadata-schema.md)
