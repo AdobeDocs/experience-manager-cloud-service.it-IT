@@ -2,10 +2,10 @@
 title: Note sulla versione 2020.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service: note sulla versione 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 130603301212cdb29ae7f395ebc05fc58f64686e
+source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +14,6 @@ ht-degree: 7%
 
 La sezione seguente illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.8.0.
 
-## Data di rilascio {#release-date}
-
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is August 27, 2020.
 
 ## [!DNL Adobe Experience Manager Sites] come Cloud Service {#sites}
 
@@ -25,6 +22,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 * Possibilità di [ripristinare pagine e sottopagine (strutture ad albero pagina) in una versione](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)precedente.
 
 * Possibilità di [creare avvii](/help/sites-cloud/authoring/launches/overview.md) in AEM Editor [SPA.](/help/implementing/developing/spa/introduction.md)
+
 
 ## [!DNL Adobe Experience Manager Assets] come Cloud Service {#assets}
 
@@ -80,6 +78,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 ### Novità {#what-is-new-cloud-manager}
 
 * Content Audit è una funzione abilitata nelle pipeline di produzione di siti di Cloud Manager. La configurazione della pipeline di produzione per i programmi con Siti ora include una terza scheda denominata Controllo **** contenuto. Ogni volta che viene eseguita una pipeline di produzione, verrà inclusa una nuova fase di controllo dei contenuti nella pipeline dopo il test funzionale personalizzato che valuterà il sito rispetto a una serie di dimensioni, tra cui prestazioni, SEO (ottimizzazione motore di ricerca), accessibilità, best practice e PWA (app Web progressiva).
+
 
    >[!NOTE]
    >L&#39;audit dei contenuti è stato successivamente rinominato in Experience Audit.
