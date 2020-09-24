@@ -1,15 +1,18 @@
 ---
-product: adobe experience manager
-git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
+product: Adobe Experience Manager
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.it-IT
 index: y
-solution-title: Adobe Experience Manager come servizio cloud
+solution-title: Adobe Experience Manager as a Cloud Service
 solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
-getting-started-title: Introduzione
+getting-started-title: Guida introduttiva
 getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/overview/home.html
 tutorials-title: Esercitazioni
 tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+workflow-type: tm+mt
+source-wordcount: '138'
+ht-degree: 20%
 
 ---
 
@@ -24,7 +27,7 @@ I metadati nel sistema di creazione GitHub sono gerarchici ed è definito dai se
 
 I metadati definiti nel file metadata.md si applicano all’intero repo, ma possono essere sostituiti a livello di AC e di articolo. L&#39;eventuale sostituzione dei metadati deve essere eseguita al livello più basso possibile.
 
-I metadati nel repo experience-manager-cloud-service.en sono il minimo richiesto.
+I metadati contenuti nel repo experience-manager-cloud-service.en sono il minimo richiesto.
 
 metadata.md
 
