@@ -3,9 +3,9 @@ title: Pubblicazione di risorse multimediali dinamiche
 description: Come pubblicare le risorse multimediali dinamiche
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: 9a4f8b4470a0850f4044f799b2af6cf836fd402d
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '468'
 ht-degree: 3%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 3%
 
 Per pubblicare le risorse per contenuti multimediali dinamici, seleziona le risorse già caricate e tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione]** rapida. Dopo la pubblicazione, le risorse Dynamic Media sono disponibili per l’inclusione in una pagina Web tramite un URL o mediante l’incorporazione di codice nella pagina.
 
-Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. In alternativa, potete pubblicare le risorse in modo selettivo. See [Configuring Dynamic Media](config-dm.md).
+Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. In alternativa, potete pubblicare le risorse in modo selettivo. See [Configuring Dynamic Media](config-dm.md). In alternativa, potete pubblicare selettivamente le risorse su file multimediali dinamici o AEM, escludendovi vicendevolmente tra di loro, utilizzando Pubblica **** selettiva a livello di cartella. See [Working with Selective Publish in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)
 
 Nella vista **[!UICONTROL a]** schede, una piccola icona a forma di globo appare direttamente sotto il nome di una risorsa e a sinistra della data e dell’ora per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
 
 >[!NOTE]
 >
->Se una risorsa è già pubblicata, utilizzate AEM per spostare la risorsa in un’altra cartella e ripubblicatela dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, è &quot;persa&quot; in AEM e non può essere annullata la pubblicazione. Di conseguenza, è consigliabile annullare la pubblicazione delle risorse prima di spostarle in un’altra cartella.
+>Se una risorsa è già pubblicata, usate AEM per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, è &quot;perduta&quot; in AEM e non può essere annullata la pubblicazione. Di conseguenza, è consigliabile annullare la pubblicazione delle risorse prima di spostarle in un’altra cartella.
 
 Se intendete pubblicare le risorse video subito dopo la codifica, accertatevi che la codifica sia stata completata. Quando i video vengono ancora codificati, il sistema segnala che è in corso un flusso di lavoro di elaborazione video. Al termine della codifica video, dovreste essere in grado di visualizzare in anteprima le rappresentazioni video. A questo punto, è sicuro pubblicare i video senza che si verifichino errori di pubblicazione.
 
@@ -33,6 +33,7 @@ Consultate anche [Incorporamento di un visualizzatore video o di immagini per fi
 >
 >* Per usare l’URL, le risorse devono essere pubblicate. Se le risorse non vengono pubblicate, non sarà possibile copiare e incollare l’URL in un browser Web.
 >* I predefiniti per immagini e per visualizzatori devono essere attivati e pubblicati per la distribuzione live.
+
 >
 
 
