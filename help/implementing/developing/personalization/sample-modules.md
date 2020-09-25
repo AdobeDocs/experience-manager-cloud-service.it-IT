@@ -2,9 +2,9 @@
 title: Tipi di moduli interfaccia utente ContextHub di esempio
 description: ContextHub offre diversi moduli di interfaccia utente di esempio utilizzabili nelle soluzioni
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Le istanze del modulo di interfaccia utente contexthub.browserinfo non richiedon
 
 ## tipo di modulo interfaccia utente contexthub.datetime {#contexthub-datetime-ui-module-type}
 
-Il modulo `contexthub.datetime` dell&#39;interfaccia utente visualizza la data e l&#39;ora memorizzate in uno store denominato datetime, basato sul candidato dello store [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) .
+Il modulo `contexthub.datetime` dell&#39;interfaccia utente visualizza la data e l&#39;ora memorizzate in uno store denominato datetime, in base al candidato `contexthub.datetime` dello store.
 
 ![modulo contexthub.datetime](assets/datetime-module.png)
 
@@ -187,7 +187,7 @@ Le istanze del modulo `contexthub.screen-orientation` dell&#39;interfaccia utent
 
 ## tipo di modulo interfaccia utente contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-Nel modulo `contexthub.tagcloud` dell’interfaccia utente sono visualizzate informazioni sui tag. Sulla barra degli strumenti, il modulo dell’interfaccia utente mostra il numero di tag. La finestra a comparsa presenta un tag cloud e una casella di testo per l’aggiunta di nuovi tag. Il modulo dell’interfaccia utente ottiene informazioni da uno store ContextHub denominato tagcloud basato sul candidato per lo store [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) .
+Nel modulo `contexthub.tagcloud` dell’interfaccia utente sono visualizzate informazioni sui tag. Sulla barra degli strumenti, il modulo dell’interfaccia utente mostra il numero di tag. La finestra a comparsa presenta un tag cloud e una casella di testo per l’aggiunta di nuovi tag. Il modulo dell’interfaccia utente ottiene informazioni da uno store ContextHub denominato tagcloud basato sul candidato `contexthub.tagcloud` dello store.
 
 ![modulo contexthub.tagcloud](assets/tagcloud-module.png)
 
