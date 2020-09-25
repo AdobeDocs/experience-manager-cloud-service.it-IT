@@ -2,9 +2,9 @@
 title: Rendering SPA e lato server
 description: L’utilizzo del rendering lato server (SSR) nell’area dell’app può accelerare il caricamento iniziale della pagina e quindi passare al client un ulteriore rendering.
 translation-type: tm+mt
-source-git-commit: c2c338061d72ae6c5054d18308a2ea1038eaea39
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Nelle sezioni seguenti viene illustrato come Adobe I/O Runtime può essere utili
 >
 > Adobe consiglia un’istanza Adobe I/O Runtime separata per ogni ambiente AEM (autore, pubblicazione, area di visualizzazione, ecc.).
 
-## Configurazione del rendering remoto {#remote-renderer-configuration}
+## Configurazione del rendering remoto {#remote-content-renderer-configuration}
 
 AEM sapere dove è possibile recuperare il contenuto sottoposto a rendering remoto. Indipendentemente dal modello [che si sceglie di implementare per SSR,](#adobe-i-o-runtime) sarà necessario specificare AEM modalità di accesso a questo servizio di rendering remoto.
 
@@ -67,8 +67,6 @@ I campi seguenti sono disponibili per la configurazione:
 >[!NOTE]
 >
 >Indipendentemente dalla scelta di implementare il flusso [di comunicazione basato su](#aem-driven-communication-flow) AEM o il flusso basato su [Adobe I/O Runtime,](#adobe-i-o-runtime-driven-communication-flow) è necessario definire una configurazione di rendering del contenuto remoto.
->
->Questa configurazione deve essere definita anche se scegli di [utilizzare un server Node.js personalizzato.](#using-node-js)
 
 >[!NOTE]
 >
@@ -76,7 +74,7 @@ I campi seguenti sono disponibili per la configurazione:
 
 ## Flusso di comunicazione AEM {#aem-driven-communication-flow}
 
-Quando si utilizza SSR, il flusso di lavoro [di interazione dei](introduction.md#workflow) componenti dell&#39;app in AEM include una fase in cui il contenuto iniziale dell&#39;app viene generato su Adobe I/O Runtime.
+Quando si utilizza SSR, il flusso di lavoro [di interazione dei](introduction.md#interaction-with-the-spa-editor) componenti dell&#39;app in AEM include una fase in cui il contenuto iniziale dell&#39;app viene generato su Adobe I/O Runtime.
 
 1. Il browser richiede il contenuto SSR da AEM.
 1. AEM postare il modello su Adobe I/O Runtime.
@@ -164,7 +162,7 @@ L&#39; `RemoteContentRendererRequestHandlerServlet` opzione può essere utilizza
 
 Per aggiungere un gestore di richieste personalizzato, implementate l&#39; `RemoteContentRendererRequestHandler` interfaccia. Accertatevi di impostare la proprietà del `Constants.SERVICE_RANKING` componente su un numero intero superiore a 100, che corrisponde alla classifica del `DefaultRemoteContentRendererRequestHandlerImpl`.
 
-```
+```javascript
 @Component(immediate = true,
         service = RemoteContentRendererRequestHandler.class,
         property={
@@ -188,7 +186,7 @@ Per ottenere un servlet fetch e restituire il contenuto che può essere inserito
 
 In genere, il modello HTL di un componente di pagina è il destinatario principale di tale funzione.
 
-```
+```html
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
 ```
 
