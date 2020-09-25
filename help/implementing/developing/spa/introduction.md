@@ -2,7 +2,7 @@
 title: Introduzione e introduzione SPA
 description: Questo articolo introduce i concetti di SPA e illustra come utilizzare un'applicazione SPA di base per l'authoring, mostrando il suo rapporto con l'Editor SPA AEM sottostante.
 translation-type: tm+mt
-source-git-commit: 78ce5113d97b0fa2e0172598d374c924f4306395
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 0%
@@ -151,7 +151,7 @@ Quindi, se la pagina non viene ricaricata durante la navigazione tra le pagine f
 
 La sezione successiva, [Caricamento di un&#39;applicazione](#loading-a-spa-application)SPA, approfondisce la procedura di caricamento dell&#39;SPA e spiega come è possibile caricare il contenuto in modo sincrono e asincrono.
 
-### Caricamento di un&#39;applicazione SPA {#loading-an-spa-application}
+### Caricamento di un&#39;applicazione SPA {#loading-a-spa-application}
 
 1. Se non è già stato caricato, caricate l’applicazione We.Retail Journal sul server di pubblicazione o utilizzando l’opzione **Visualizza come pubblicato** dal menu Informazioni **** pagina nell’editor pagina.
 
