@@ -2,9 +2,9 @@
 title: Modelli di pagina
 description: I modelli di pagina vengono utilizzati per creare una pagina che verrà utilizzata come base per la nuova pagina
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3221'
 ht-degree: 8%
 
 ---
@@ -292,7 +292,7 @@ Quando create un nuovo modello, dovete specificare un tipo di modello:
 
    * Il tipo di risorsa del componente pagina.
    * Il criterio del nodo principale, che definisce i componenti consentiti nell&#39;editor modelli.
-   * È consigliabile definire i punti di interruzione per la griglia reattiva e l&#39;impostazione dell&#39;emulatore mobile sul tipo di modello. Questo è facoltativo, perché la configurazione può essere definita anche sul singolo modello (consultate la sezione Tipo di [modello e Gruppi](#p-template-type-and-mobile-device-groups-br-p)di dispositivi mobili).
+   * È consigliabile definire i punti di interruzione per la griglia reattiva e l&#39;impostazione dell&#39;emulatore mobile sul tipo di modello.
 
 * AEM fornisce una piccola selezione di tipi di modelli predefiniti, ad esempio Pagina HTML5 e Pagina modulo adattiva.
 
@@ -476,7 +476,7 @@ I criteri di pagina consentono di definire i criteri [di](#content-policies) con
 
    Per poter utilizzare un modello, è necessario che sia attivato:
 
-   * [Abilitazione del modello](/help/sites-cloud/authoring/features/templates.md#enablingatemplateauthor) dalla console **Modelli** .
+   * [Abilitazione del modello](/help/sites-cloud/authoring/features/templates.md) dalla console **Modelli** .
 
    * Impostazione della proprietà status sul `jcr:content` nodo.
 
