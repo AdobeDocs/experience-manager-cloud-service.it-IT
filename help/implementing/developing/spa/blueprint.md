@@ -2,7 +2,7 @@
 title: Blueprint SPA
 description: Il presente documento descrive il contratto generale, indipendente dal quadro, che qualsiasi quadro SPA dovrebbe rispettare per implementare componenti SPA modificabili all'interno di AEM.
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -164,7 +164,7 @@ Il componente SPA viene mappato su un contenitore grafico, ad esempio la griglia
 
 Esempio:
 
-```
+```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>
 ```
 
@@ -183,7 +183,7 @@ Esempio:
 
 La [`Component Mapping`](#componentmapping) libreria sottostante e la sua `MapTo` funzione possono essere racchiusi ed estesi per fornire le funzionalità relative alla configurazione di modifica fornita insieme alla classe di componenti corrente.
 
-```
+```javascript
 const EditConfig = {
 
     emptyLabel: 'My Component',
@@ -205,7 +205,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 Nell’implementazione precedente, il componente del progetto viene esteso con la funzionalità di svuotamento prima che venga effettivamente registrato nell’archivio Mappatura [](#componentmapping) componente. A tal fine, è possibile incorporare ed estendere la [`ComponentMapping`](#componentmapping) libreria per introdurre il supporto dell&#39;oggetto di `EditConfig` configurazione:
 
-```
+```javascript
 /**
  * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
  *
@@ -245,9 +245,9 @@ Il frammento seguente illustra la tipica rappresentazione HTML di una struttura 
 * L&#39;elemento griglia reattiva contiene nomi di classe con prefisso `aem-Grid--`
 * L&#39;elemento colonna reattivo contiene nomi di classe con prefisso `aem-GridColumn--`
 * Viene racchiusa una griglia reattiva che è anche la colonna di una griglia padre, in modo che i due prefissi precedenti non vengano visualizzati sullo stesso elemento
-* Gli elementi corrispondenti alle risorse modificabili contengono una `data-cq-data-path` proprietà. Vedere la sezione [Contratto con l&#39;Editor](#contract-wtih-the-page-editor) pagina di questo documento.
+* Gli elementi corrispondenti alle risorse modificabili contengono una `data-cq-data-path` proprietà. Vedere la sezione [Contratto con l&#39;Editor](#contract-with-the-page-editor) pagina di questo documento.
 
-```
+```javascript
 <div data-cq-data-path="/content/page">
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
         <div class="aem-container aem-GridColumn aem-GridColumn--default--12" data-cq-data-path="/content/page/jcr:content/root/responsivegrid">
