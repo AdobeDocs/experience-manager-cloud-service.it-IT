@@ -1,11 +1,11 @@
 ---
-title: Applicare tag alle immagini con servizi intelligenti artificialmente.
+title: Assegnare tag alle immagini con i servizi avanzati
 description: Applicate tag alle immagini con servizi intelligenti artificialmente che applicano tag business contestuali e descrittivi utilizzando  servizi Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2424'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare le risorse digitali. L’assegnazione dei tag alle risorse mediante un vocabolario controllato dalla tassonomia consente di individuare e recuperare facilmente le risorse tramite ricerche basate sui tag.
 
-Rispetto ai vocabolari di lingua naturale, l’assegnazione di tag in base alla tassonomia aziendale consente di allineare le risorse all’attività aziendale e garantisce che le risorse più rilevanti vengano visualizzate nelle ricerche. Ad esempio, un produttore di auto può assegnare tag alle immagini di un&#39;auto con nomi di modelli in modo che vengano visualizzate solo immagini rilevanti quando viene effettuata una ricerca per progettare una campagna promozionale.
+Rispetto ai vocabolari di lingua naturale, l’assegnazione di tag in base alla tassonomia aziendale consente di allineare le risorse all’attività aziendale e garantisce che le risorse più rilevanti vengano visualizzate nelle ricerche. Ad esempio, un produttore di auto può assegnare tag alle immagini di un&#39;auto con nomi di modelli in modo che vengano visualizzate solo le immagini rilevanti quando viene effettuata una ricerca per progettare una campagna promozionale.
 
 In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
@@ -159,7 +159,7 @@ Dopo aver preparato il servizio Smart Tags, potete attivare il flusso di lavoro 
 
 ### Assegnare tag alle risorse caricate {#tag-uploaded-assets}
 
- Experience Manager può assegnare automaticamente i tag alle risorse caricate dagli utenti in DAM. A questo scopo, gli amministratori configurano un flusso di lavoro per aggiungere un passaggio disponibile alle risorse degli smart tag. Scoprite [come abilitare i tag avanzati per le risorse](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)caricate.
+ Experience Manager può assegnare automaticamente i tag alle risorse che gli utenti caricano in DAM. A questo scopo, gli amministratori configurano un flusso di lavoro per aggiungere un passaggio disponibile alle risorse degli smart tag. Scoprite [come abilitare i tag avanzati per le risorse](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)caricate.
 
 ## Gestione di smart tag e ricerche di immagini {#manage-smart-tags-and-searches}
 
@@ -179,7 +179,7 @@ Potete anche assegnare un rango più alto a un tag per aumentarne la rilevanza r
 
 ### Comprendere AEM risultati di ricerca con gli smart tag {#understandsearch}
 
-Per impostazione predefinita, AEM ricerca combina i termini di ricerca con una `AND` clausola. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una `OR` clausola aggiuntiva per individuare qualsiasi termine di ricerca negli smart tag applicati. For example, consider searching for `woman running`. Per impostazione predefinita, le risorse con una sola parola chiave `woman` o una sola `running` parola chiave nei metadati non vengono visualizzate nei risultati della ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con tag `woman` o `running` tramite smart tag. Quindi i risultati della ricerca sono una combinazione di:
+Per impostazione predefinita, AEM ricerca combina i termini di ricerca con una `AND` clausola. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una `OR` clausola aggiuntiva per individuare qualsiasi termine di ricerca negli smart tag applicati. For example, consider searching for `woman running`. Per impostazione predefinita, le risorse con una sola parola chiave `woman` o una sola `running` parola chiave nei metadati non vengono visualizzate nei risultati della ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con `woman` o `running` tramite smart tag. Quindi i risultati della ricerca sono una combinazione di:
 
 * risorse con `woman` e `running` parole chiave nei metadati.
 
