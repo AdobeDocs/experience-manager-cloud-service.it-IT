@@ -1,12 +1,12 @@
 ---
-title: Gestione delle risorse digitali in  Experience Manager
+title: Consente di gestire i contenuti digitali
 description: Scopri i diversi metodi di gestione e modifica delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4435'
+source-wordcount: '4431'
 ht-degree: 13%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 13%
 
 # Manage assets {#manage-assets}
 
-Questo articolo descrive come gestire e modificare le risorse in Adobe Experience Manager Assets. Per gestire i frammenti di contenuto, consulta Risorse relative ai frammenti di [contenuto](content-fragments/content-fragments.md) .
+Questo articolo descrive come gestire e modificare le risorse in Adobe Experience Manager Assets. Per gestire i frammenti di contenuto, consulta Risorse [Frammenti](content-fragments/content-fragments.md) di contenuto.
 
 ## Creare le cartelle {#creating-folders}
 
@@ -554,7 +554,7 @@ Per stampare le annotazioni e verificare lo stato, toccate o fate clic sull&#39;
 
 ## Versione risorsa {#asset-versioning}
 
-Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento preciso. Il controllo delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, se desiderate annullare una modifica apportata a una risorsa, ripristinate la versione non modificata della risorsa.
+Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento preciso. La gestione delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, se desiderate annullare una modifica apportata a una risorsa, ripristinate la versione non modificata della risorsa.
 
 Di seguito sono riportati gli scenari in cui si creano le versioni:
 
