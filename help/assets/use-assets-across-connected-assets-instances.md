@@ -1,12 +1,12 @@
 ---
-title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Sites]
 description: Utilizzate le risorse disponibili in una distribuzione [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97830590ba66e90c324770fa57b3ff11a760677f
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 44%
+source-wordcount: '2080'
+ht-degree: 45%
 
 ---
 
@@ -28,13 +28,13 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna distribuzione.
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. Per informazioni sulla versione [!DNL Experience Manager] 6.5, consulta [Funzionalità delle risorse connesse in  risorse](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)Experience Manager 6.5.
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. Per informazioni sulla versione [!DNL Experience Manager] 6.5, consulta la sezione relativa alla funzionalità delle risorse [connesse nel  Experience Manager 6.5 Risorse](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] come Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] su AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] locale |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]come Cloud Service ** | Supportato | Supportato | Supportato |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]su AMS ** | Supportato | Supportato | Supportato |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]locale ** | Non supportato | Non supportato | Non supportato |
+   | **[!DNL Experience Manager Assets]come Cloud Service** | Supportato | Supportato | Supportato |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]su AMS** | Supportato | Supportato | Supportato |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]locale** | Non supportato | Non supportato | Non supportato |
 
 ### Formati di file supportati {#mimetypes}
 
