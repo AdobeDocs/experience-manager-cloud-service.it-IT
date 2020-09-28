@@ -1,9 +1,9 @@
 ---
-title: Gestire [!DNL Adobe Stock] le risorse in [!DNL Adobe Experience Manager Assets].
+title: Gestire [!DNL Adobe Stock] le risorse in [!DNL Assets].
 description: Cercare, recuperare, ottenere licenze e [!DNL Adobe Stock] gestire risorse dall'interno [!DNL Adobe Experience Manager]. Utilizzate le risorse con licenza come qualsiasi altra risorsa digitale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 453a8459e042f57820c10fb90f30c2016aa0f5d0
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 5%
@@ -84,7 +84,7 @@ In alternativa, iniziate a digitare `Location: Adobe Stock` nella barra di ricer
 
 Selezionate una risorsa da salvare in [!DNL Experience Manager]. Fate clic su [!UICONTROL Salva] nella barra degli strumenti nella parte superiore e fornite il nome e la posizione della risorsa. Le risorse senza licenza vengono salvate localmente con una filigrana.
 
-La prossima volta che ricercate le risorse, queste vengono evidenziate con un contrassegno per indicare che sono disponibili in [!DNL Experience Manager Assets].
+La prossima volta che ricercate le risorse, queste vengono evidenziate con un contrassegno, per indicare che sono disponibili in [!DNL Experience Manager Assets].
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ Gli utenti possono concedere in licenza [!DNL Adobe Stock] le risorse utilizzand
 
 Gli utenti possono accedere ai metadati e visualizzarne l’anteprima, comprese le proprietà dei [!DNL Adobe Stock] metadati per le risorse salvate in [!DNL Experience Manager], e aggiungere riferimenti **[!UICONTROL di]** licenza per una risorsa. Tuttavia, gli aggiornamenti al riferimento della licenza non vengono sincronizzati tra [!DNL Experience Manager] e il [!DNL Adobe Stock] sito Web.
 
-Gli utenti possono visualizzare le proprietà delle risorse con licenza e senza licenza.
+Gli utenti possono visualizzare le proprietà per risorse con licenza e senza licenza.
 
 ![Visualizzare e accedere ai metadati e ai riferimenti di licenza delle risorse salvate](assets/metadata_properties.jpg)
 
