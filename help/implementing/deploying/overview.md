@@ -2,9 +2,9 @@
 title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
+source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3202'
 ht-degree: 1%
 
 ---
@@ -16,39 +16,19 @@ ht-degree: 1%
 
 Le basi dello sviluppo del codice sono simili in AEM come Cloud Service rispetto alle soluzioni AEM Premise e Managed Services. Gli sviluppatori scrivono il codice e lo sottopongono a test localmente, che vengono quindi spinti AEM remoti come ambienti di Cloud Service. Cloud Manager, uno strumento opzionale per la distribuzione dei contenuti per Managed Services, è richiesto. Questo è ora l&#39;unico meccanismo per distribuire il codice da AEM come ambienti di Cloud Service.
 
-L&#39;aggiornamento della versione AEM è sempre un evento di distribuzione separato dall&#39;invio di codice personalizzato. Visualizzate in un altro modo, le versioni di codice personalizzate dovrebbero essere testate rispetto alla versione AEM in produzione, in quanto questo è ciò che verrà distribuito in cima. AEM aggiornamenti di versione che si verificano dopo di che, che saranno frequenti se confrontati con Managed Services oggi, vengono applicati automaticamente. Sono progettati per essere compatibili con il codice cliente già distribuito.
+L&#39;aggiornamento della versione [](/help/implementing/deploying/aem-version-updates.md) AEM è sempre un evento di distribuzione separato dall&#39;invio di codice [](#customer-releases)personalizzato. Visualizzate in un altro modo, le versioni di codice personalizzate dovrebbero essere testate rispetto alla versione AEM in produzione, in quanto questo è ciò che verrà distribuito in cima. AEM aggiornamenti delle versioni che si verificano dopo tale data, che saranno frequenti e vengono applicati automaticamente. Sono progettati per essere compatibili con il codice cliente già distribuito.
 
-Il seguente video fornisce una panoramica di alto livello su come distribuire il codice da AEM come Cloud Service:
-
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 Il resto di questo documento descriverà come gli sviluppatori dovrebbero adattare le proprie pratiche in modo che lavorino con AEM come aggiornamenti  versione di Cloud Service e aggiornamenti dei clienti.
 
 >[!NOTE]
 >Si consiglia ai clienti con basi di codice esistenti di seguire l&#39;esercizio di ristrutturazione del repository descritto nella documentazione [](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)AEM.
 
-
-## Aggiornamenti AEM versione {#version-updates}
-
-È fondamentale comprendere che AEM verrà aggiornato frequentemente, potenzialmente anche una volta al giorno, e si concentrerà sulle correzioni dei bug e sui miglioramenti delle prestazioni. L&#39;aggiornamento verrà eseguito in modo trasparente e senza causare tempi di inattività. L&#39;aggiornamento è concepito per essere compatibile con le versioni precedenti, pertanto non è necessario modificare il codice personalizzato. In realtà, AEM aggiornamenti sono eventi indipendenti dalle distribuzioni del codice cliente. L&#39;aggiornamento AEM viene distribuito sopra l&#39;ultimo push del codice con esito positivo, il che implica che tutte le modifiche apportate dall&#39;ultimo push alla produzione non verranno distribuite.
-
->[!NOTE]
->
->Se il codice personalizzato è stato messo in staging e successivamente rifiutato dall&#39;utente, il successivo aggiornamento AEM rimuoverà tali modifiche per riflettere il tag git dell&#39;ultima release cliente riuscita alla produzione.
-
-Su una frequenza regolare, verrà rilasciata una nuova funzione che si concentrerà sulle funzioni aggiunte e migliorate che avranno un impatto maggiore sull&#39;esperienza dell&#39;utente rispetto alle versioni giornaliere. Una release di una funzione viene attivata non dalla distribuzione di un set di modifiche di grandi dimensioni, ma piuttosto dal rovesciamento di un interruttore di rilascio, attivando il codice che si è accumulato nel corso di giorni o settimane attraverso gli aggiornamenti giornalieri.
-
-I controlli sanitari sono utilizzati per monitorare lo stato della domanda. Se questi controlli non vengono eseguiti durante un AEM come aggiornamento del Cloud Service, il rilascio non verrà completato per quell&#39;ambiente e  Adobe verificherà perché l&#39;aggiornamento abbia causato questo comportamento imprevisto.
-
-### Archivio nodi composito {#composite-node-store}
-
-Come già detto, gli aggiornamenti nella maggior parte dei casi non generano tempi di inattività, anche per l&#39;autore, che è un cluster di nodi. Gli aggiornamenti a rotolamento sono possibili grazie alla funzione &quot;composito node store&quot; in Oak. Questa funzione consente AEM fare riferimento a più repository contemporaneamente. In una distribuzione continuativa, la nuova versione di AEM verde contiene il proprio `/libs` (il repository immutabile basato su TarMK), distinto dalla precedente versione di AEM blu, anche se entrambi fanno riferimento a un repository mutabile basato su DocumentMK condiviso che contiene aree come `/content`, `/conf`, `/etc` e altri. Poiché sia il blu che il verde hanno versioni proprie di `/libs`, possono essere entrambi attivi durante l&#39;aggiornamento continuo, assumendo entrambi il traffico fino a quando il blu non viene completamente sostituito dal verde.
-
 ## Rilasci dei clienti {#customer-releases}
 
 ### Codifica rispetto alla versione corretta AEM {#coding-against-the-right-aem-version}
 
-Per le soluzioni AEM precedenti, la versione di AEM più recente è cambiata raramente (approssimativamente ogni anno con Service Pack trimestrali) e i clienti aggiornavano le istanze di produzione all&#39;ultimo avvio rapido in base al proprio tempo, facendo riferimento alla API Jar. Tuttavia, AEM come applicazioni di Cloud Service vengono automaticamente aggiornate alla versione più recente di AEM più spesso, quindi il codice personalizzato per le versioni interne dovrebbe essere costruito in base a quelle nuove interfacce AEM.
+Per le soluzioni AEM precedenti, la versione di AEM più recente è cambiata raramente (approssimativamente ogni anno con Service Pack trimestrali) e i clienti aggiornavano le istanze di produzione all&#39;ultimo avvio rapido in base al proprio tempo, facendo riferimento alla API Jar. Tuttavia, AEM come applicazione di Cloud Service vengono automaticamente aggiornate alla versione più recente di AEM più spesso, pertanto il codice personalizzato per le versioni interne dovrebbe essere creato rispetto alla versione AEM più recente.
 
 Come per le versioni di AEM non cloud esistenti, nella maggior parte dei casi sarà supportato uno sviluppo locale offline basato su uno specifico quickstart, che sarà lo strumento di scelta per il debug.
 
@@ -56,6 +36,13 @@ Come per le versioni di AEM non cloud esistenti, nella maggior parte dei casi sa
 >Esistono sottili differenze operative tra il comportamento dell&#39;applicazione su un computer locale e il  Adobe Cloud. Queste differenze architettoniche devono essere rispettate durante lo sviluppo locale e possono portare a un comportamento diverso durante la distribuzione nell&#39;infrastruttura cloud. A causa di queste differenze, è importante eseguire test esaustivi sugli ambienti di sviluppo e di stage prima di distribuire il nuovo codice personalizzato in produzione.
 
 Per sviluppare il codice personalizzato per una versione interna, è necessario scaricare e installare la versione pertinente del [AEM come Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) . Per ulteriori informazioni sull&#39;utilizzo del AEM come strumenti del dispatcher di Cloud Service, consultate [questa pagina](/help/implementing/dispatcher/overview.md).
+
+Il seguente video fornisce una panoramica di alto livello su come distribuire il codice da AEM come Cloud Service:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+
+>[!NOTE]
+>Si consiglia ai clienti con basi di codice esistenti di seguire l&#39;esercizio di ristrutturazione del repository descritto nella documentazione [](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)AEM.
 
 ## Distribuzione di pacchetti di contenuti tramite Cloud Manager e Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
