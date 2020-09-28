@@ -1,11 +1,11 @@
 ---
-title: Formati di file e tipi MIME supportati da  Experience Manager Assets come Cloud Service
+title: Formati di file supportati e tipi MIME
 description: Formati di file e tipi MIME supportati da  Experience Manager Assets come Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '813'
 ht-degree: 9%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 9%
 
 # Assets supported file formats {#supported-file-formats}
 
- Adobe Experience Manager come Cloud Service supporta funzionalità di base per la gestione dei contenuti — archiviazione, gestione dei metadati online, controllo delle versioni, caricamento, scaricamento e così via — per qualsiasi file binario, indipendentemente dal suo formato.  risorse di Adobe Experience Manager supporta un&#39;ampia gamma di formati di file e ogni funzione di prodotto supporta vari formati.
+Adobe Experience Manager come Cloud Service supporta funzionalità di base per la gestione dei contenuti — archiviazione, gestione dei metadati online, controllo delle versioni, caricamento, scaricamento e così via — per qualsiasi file binario, indipendentemente dal suo formato. Adobe Experience Manager Assets supporta un&#39;ampia gamma di formati di file e ogni funzione di prodotto supporta vari formati.
 
-Inoltre,  Risorse Experience Manager offre supporto esteso per la generazione di anteprime e rappresentazioni e per l’estrazione di metadati e testo per l’indicizzazione full-text. Questo supporto esteso viene fornito utilizzando i microservizi [delle](asset-microservices-configure-and-use.md)risorse.
+Inoltre,  risorse di Experience Manager offre supporto esteso per la generazione di anteprime e rappresentazioni e per l’estrazione di metadati e testo per l’indicizzazione full-text. Questo supporto esteso viene fornito utilizzando i microservizi [delle](asset-microservices-configure-and-use.md)risorse.
 
 I principali elementi di rilievo per la conversione delle risorse mediante i microservizi delle risorse sono:
 
-* Formati [di file](#adobe-formats) Adobe principali prodotti da applicazioni e servizi Adobe, inclusi Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension, Adobe Acrobat o PDF.
+* Formati [di file](#adobe-formats) Adobi principali prodotti da applicazioni e servizi  Adobe, inclusi  Adobe Photoshop,  Adobe InDesign,  Adobe Illustrator,  Adobe XD,  Adobe Dimension, Adobe Acrobat o PDF.
 * Formati [di file](#image-formats)di imaging chiave.
-* [Formati](#camera-raw-formats) di file Camera Raw per un&#39;ampia gamma di telecamere, tra cui Canon, Nikon, Fujifilm, Olympus e altri produttori (basati su Adobe Camera Raw).
+* [Formati](#camera-raw-formats) di file Camera Raw per un&#39;ampia gamma di telecamere, tra cui Canon, Nikon, Fujifilm, Olympus e altri produttori ( Adobe Camera Raw).
 * Formati [comuni di](#document-formats)documenti, inclusi i formati Microsoft Office e Open Document.
 * Ampia gamma di formati [video](#video-formats) e [audio.](#audio-formats)
 
@@ -33,7 +33,7 @@ La legenda seguente descrive il livello di supporto.
 | * | Vedere le osservazioni riportate di seguito. |
 | - | Non applicabile |
 
-## Formati Adobe {#adobe-formats}
+## Formati di Adobe  {#adobe-formats}
 
 | Formato file | Generazione delle miniature | Estrazione full-text | Estrazione di metadati | Larghezza/Altezza |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
@@ -91,9 +91,9 @@ I seguenti sottotipi di formati di file immagine raster non supportati in [!DNL 
 
 È supportato il seguente elenco di formati 3D.
 
-Consultate anche [Utilizzo delle risorse 3D in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
-| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo di accesso | Anteprima miniature | Anteprima 3D | Distribuzione Dynamic Media |
+| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo di accesso | Anteprima miniature | Anteprima 3D | Distribuzione di contenuti multimediali dinamici |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -102,7 +102,7 @@ Consultate anche [Utilizzo delle risorse 3D in Dynamic Media.](/help/assets/dyna
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
-## [!DNL Camera RAW] format {#camera-raw-formats}
+## [!DNL Camera RAW] F {#camera-raw-formats}
 
 | Formato file | Generazione delle miniature | Estrazione di metadati | Larghezza/Altezza |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -126,7 +126,7 @@ Consultate anche [Utilizzo delle risorse 3D in Dynamic Media.](/help/assets/dyna
 | NRW | ✓ | ✓ | ✓ |
 | ORF | ✓ | ✓ | ✓ |
 | PEF | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ |
+| format RAF | ✓ | ✓ | ✓ |
 | RAW | ✓ | ✓ | ✓ |
 | RW2 | ✓ | ✓ | ✓ |
 | RWL | ✓ | ✓ | ✓ |
@@ -201,7 +201,7 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 |------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | MP4 | MPEG-4 | H264/AVC (tutti i profili) |  |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
-| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
+| FLV, F4V | Flash Adobe  | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
 | M4V | Apple iTunes | H264/AVC |  |
@@ -218,7 +218,7 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 
 ## Formati audio {#audio-formats}
 
-Risorse come Cloud Service fornisce il supporto per l’estrazione di metadati XMP per i formati audio FIA, ASF, M4A, MP3, WAV e WMA.
+Il Cloud Service Assets fornisce XMP supporto per l’estrazione dei metadati per i formati audio FIA, ASF, M4A, MP3, WAV e WMA.
 
 >[!MORELIKETHIS]
 >
