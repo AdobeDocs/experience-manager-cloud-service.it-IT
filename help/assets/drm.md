@@ -1,11 +1,11 @@
 ---
-title: Digital Rights Management [!DNL Adobe Experience Manager Assets] in as a Cloud Service.
-description: Scopri come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza [!DNL Experience Manager] in un servizio Cloud.
+title: Digital Rights Management in [!DNL Assets]
+description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza [!DNL Experience Manager] in un Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1347'
 ht-degree: 7%
 
 ---
@@ -54,7 +54,7 @@ Inoltre, se un problema o un errore impedisce al pianificatore di rilevare le ri
 To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. Aprite [!DNL Experience Manager] Configuration Manager.
-1. Scegliete **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Per impostazione predefinita, è selezionata l’opzione Pianificatore **[!UICONTROL basato su]** tempo, che pianifica un processo per verificare in un momento specifico se una risorsa ha risorse secondarie scadute. Al termine del processo, le risorse con risorse secondarie scadute e risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
+1. Scegliete **[!UICONTROL notifica]** di scadenza Adobe CQ DAM. Per impostazione predefinita, è selezionata l’opzione Pianificatore **[!UICONTROL basato su]** tempo, che pianifica un processo per verificare in un momento specifico se una risorsa ha risorse secondarie scadute. Al termine del processo, le risorse con risorse secondarie scadute e risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
 
 1. Per eseguire il processo periodicamente, cancella il campo **[!UICONTROL Time Based Scheduler Rule (Regola modulo di pianificazione basato sul tempo)]** e modifica il tempo in secondi nel campo **[!UICONTROL Periodic Scheduler (Modulo di pianificazione periodica)]**. L’espressione di esempio ‘0 0 0 &amp;ast; &amp;ast; ?’ attiva il processo alle ore 00.
 
@@ -77,7 +77,7 @@ La [!DNL Assets] console può visualizzare vari stati per le risorse. A seconda 
 
 1. Nell’interfaccia [!DNL Assets] utente, selezionate una risorsa.
 
-1. Fate clic su **[!UICONTROL Pubblica]** nella barra degli strumenti. Se nella barra degli strumenti non è disponibile l’opzione **Pubblica** , fate clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individuate l’opzione **[!UICONTROL Pubblica]** .
+1. Click **[!UICONTROL Publish]** from the toolbar. Se nella barra degli strumenti non è disponibile l’opzione **Pubblica** , fate clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individuate l’opzione **[!UICONTROL Pubblica]** .
 
 1. Scegliete **[!UICONTROL Pubblica]** dal menu, quindi chiudete la finestra di dialogo di conferma.
 1. Esci dalla modalità di selezione. Lo stato di pubblicazione della risorsa viene visualizzato nella parte inferiore della miniatura della risorsa nella vista a schede. Nella vista a elenco, la colonna Pubblicato mostra l’ora in cui la risorsa è stata pubblicata.
@@ -121,7 +121,7 @@ Una risorsa è considerata protetta se una delle seguenti condizioni è soddisfa
 >
 >Il percorso `/etc/dam/drm/licences` utilizzato per memorizzare le licenze nelle versioni precedenti di [!DNL Experience Manager] è obsoleto.
 >
->Se create o modificate le pagine delle licenze o le rimuovete dalle [!DNL Experience Manager] versioni precedenti, Adobe consiglia di memorizzarle in `/apps/settings/dam/drm/licenses` o `/conf/*/settings/dam/drm/licenses`.
+>Se create o modificate le pagine delle licenze o le rimuovete dalle [!DNL Experience Manager] versioni precedenti,  Adobe consiglia di memorizzarle in `/apps/settings/dam/drm/licenses` o `/conf/*/settings/dam/drm/licenses`.
 
 ### Scaricare risorse protette da DRM {#downloading-drm-assets}
 
