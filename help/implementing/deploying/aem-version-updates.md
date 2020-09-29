@@ -2,9 +2,9 @@
 title: Aggiornamenti AEM versione
 description: 'Aggiornamenti AEM versione '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,8 @@ AEM aggiornamenti passano attraverso un ciclo di convalida del prodotto intenso 
 
 [I test di prodotto e i test](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) funzionali dei clienti che impediscono agli aggiornamenti di prodotto e ai suggerimenti sul codice cliente di interrompere la produzione vengono convalidati anche durante un aggiornamento AEM versione.
 
->[NOTA]
+>[!NOTE]
+>
 >Se il codice personalizzato è stato messo in staging e successivamente rifiutato dall&#39;utente, il successivo aggiornamento AEM rimuoverà tali modifiche per riflettere il tag git dell&#39;ultima release cliente riuscita alla produzione.
 
 ## Archivio nodi composito {#composite-node-store}
