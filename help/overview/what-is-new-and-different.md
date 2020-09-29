@@ -2,9 +2,9 @@
 title: Cosa è diverso e cosa è nuovo - Adobe Experience Manager come Cloud Service
 description: 'Che cosa è diverso e che cosa è nuovo - Adobe Experience Manager (AEM) come Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 98514867fba8c998cb653abea059e15a99cbd007
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1875'
 ht-degree: 10%
 
 ---
@@ -73,8 +73,11 @@ Questo approccio consente la scalabilità automatica in base alle esigenze di di
 
 AEM come Cloud Service utilizza ora l&#39;integrazione continua e la fornitura continua (CI/CD) per garantire che i progetti siano nella versione AEM più recente.
 
-Ciò significa che tutte le operazioni di aggiornamento sono completamente automatizzate, pertanto non è necessaria alcuna interruzione del servizio per gli utenti.
- Adobe si occupa in modo proattivo di aggiornare tutte le istanze operative del servizio alla versione più recente della base di codici AEM:
+Ciò significa che le istanze Produzione e Stage vengono aggiornate alla versione più recente AEM senza alcuna interruzione del servizio per gli utenti.
+
+>[!NOTE]
+> Se l&#39;aggiornamento all&#39;ambiente di produzione non riesce, Cloud Manager ripristina automaticamente l&#39;ambiente dell&#39;area di visualizzazione. Questa operazione viene eseguita automaticamente per essere certi che, al termine di un aggiornamento, sia gli ambienti di fase che quelli di produzione siano sulla stessa versione AEM.
+
 AEM aggiornamenti delle versioni sono di due tipi:
 
 * **Aggiornamenti push**
