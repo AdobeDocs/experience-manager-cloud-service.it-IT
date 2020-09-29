@@ -2,9 +2,9 @@
 title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3210'
 ht-degree: 1%
 
 ---
@@ -16,8 +16,7 @@ ht-degree: 1%
 
 Le basi dello sviluppo del codice sono simili in AEM come Cloud Service rispetto alle soluzioni AEM Premise e Managed Services. Gli sviluppatori scrivono il codice e lo sottopongono a test localmente, che vengono quindi spinti AEM remoti come ambienti di Cloud Service. Cloud Manager, uno strumento opzionale per la distribuzione dei contenuti per Managed Services, è richiesto. Questo è ora l&#39;unico meccanismo per distribuire il codice da AEM come ambienti di Cloud Service.
 
-L&#39;aggiornamento della versione [](/help/implementing/deploying/aem-version-updates.md) AEM è sempre un evento di distribuzione separato dall&#39;invio di codice [](#customer-releases)personalizzato. Visualizzate in un altro modo, le versioni di codice personalizzate dovrebbero essere testate rispetto alla versione AEM in produzione, in quanto questo è ciò che verrà distribuito in cima. AEM aggiornamenti delle versioni che si verificano dopo tale data, che saranno frequenti e vengono applicati automaticamente. Sono progettati per essere compatibili con il codice cliente già distribuito.
-
+L&#39;aggiornamento della versione [](/help/implementing/deploying/aem-version-updates.md) AEM è sempre un evento di distribuzione separato dall&#39;invio di codice [](#customer-releases)personalizzato. Visualizzate in un altro modo, le versioni di codice personalizzate dovrebbero essere testate rispetto alla versione AEM in produzione, in quanto questo è ciò che verrà distribuito nella parte superiore. AEM aggiornamenti delle versioni che si verificano dopo tale data, che saranno frequenti e vengono applicati automaticamente. Sono compatibili con il codice cliente già distribuito.
 
 Il resto di questo documento descriverà come gli sviluppatori dovrebbero adattare le proprie pratiche in modo che lavorino con AEM come aggiornamenti  versione di Cloud Service e aggiornamenti dei clienti.
 
@@ -236,19 +235,19 @@ Come AEM aggiornamenti, i rilasci dei clienti vengono distribuiti utilizzando un
 
 ## Indici {#indexes}
 
-Gli indici nuovi o modificati causeranno un ulteriore passaggio di indicizzazione o reindicizzazione prima che la nuova versione (verde) possa iniziare il traffico. Informazioni dettagliate sulla gestione dell&#39;indice in Skyline sono disponibili in [questo articolo](/help/operations/indexing.md). Puoi controllare lo stato del processo di indicizzazione nella pagina di compilazione di Cloud Manager e riceverai una notifica quando la nuova versione sarà pronta per il traffico.
+Gli indici nuovi o modificati causeranno un ulteriore passaggio di indicizzazione o reindicizzazione prima che la nuova versione (verde) possa iniziare il traffico. Informazioni dettagliate sulla gestione dell&#39;indice in AEM come Cloud Service sono disponibili in [questo articolo](/help/operations/indexing.md). Puoi controllare lo stato del processo di indicizzazione nella pagina di compilazione di Cloud Manager e riceverai una notifica quando la nuova versione sarà pronta per il traffico.
 
 >[!NOTE]
 >
 >Il tempo necessario per una distribuzione continua varia a seconda delle dimensioni dell&#39;indice, poiché la versione verde non può accettare il traffico fino alla generazione del nuovo indice.
 
-Al momento, Skyline non funziona con strumenti di gestione degli indici come lo strumento ACS Commons Verify Oak Index Tool.
+Al momento, AEM come Cloud Service non funziona con strumenti di gestione degli indici come lo strumento ACS Commons Assicurare l&#39;indice Oak.
 
 ## Replica {#replication}
 
 Il meccanismo di pubblicazione è compatibile con le API Java di [replica](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html)AEM.
 
-Per sviluppare e testare con la replica con il servizio QuickStart AEM cloud, le funzionalità di replica classica devono essere utilizzate con una configurazione Autore/Pubblicazione. Nel caso in cui il punto di ingresso dell&#39;interfaccia utente su AEM Author sia stato rimosso per il cloud, gli utenti accederebbero `http://localhost:4502/etc/replication` alla configurazione.
+Per sviluppare e testare la replica con il servizio di avvio rapido AEM cloud, le funzionalità di replica classica devono essere utilizzate con un’impostazione Autore/Pubblicazione. Nel caso in cui il punto di ingresso dell&#39;interfaccia utente su AEM Author sia stato rimosso per il cloud, gli utenti accederebbero `http://localhost:4502/etc/replication` alla configurazione.
 
 ## Codice compatibile con le versioni precedenti per le installazioni continue {#backwards-compatible-code-for-rolling-deployments}
 
