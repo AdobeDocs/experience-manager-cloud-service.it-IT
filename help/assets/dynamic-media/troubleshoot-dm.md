@@ -2,9 +2,9 @@
 title: Risoluzione dei problemi relativi a Dynamic Media
 description: Risoluzione dei problemi relativi a Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 2%
 
 # Risoluzione dei problemi relativi a Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
-Nel seguente documento viene descritta la risoluzione dei problemi relativi agli elementi multimediali dinamici.
+L&#39;argomento seguente descrive la risoluzione dei problemi relativi agli elementi multimediali dinamici.
+
+## Nuova configurazione per contenuti multimediali dinamici {#new-dm-config}
+
+Consultate [Risoluzione dei problemi relativi a una nuova configurazione per contenuti multimediali dinamici.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## Generale (tutte le risorse) {#general-all-assets}
 
@@ -20,7 +24,7 @@ Di seguito sono riportati alcuni suggerimenti e consigli generali per tutte le r
 
 ### Proprietà Stato sincronizzazione risorse {#asset-synchronization-status-properties}
 
-In CRXDE Lite è possibile esaminare le seguenti proprietà della risorsa per confermare la corretta sincronizzazione della risorsa da AEM a Dynamic Media:
+Le seguenti proprietà della risorsa possono essere riviste in CRXDE Lite per confermare l’avvenuta sincronizzazione della risorsa da AEM a elemento multimediale dinamico:
 
 | **Proprietà** | **Esempio** | **Descrizione** |
 |---|---|---|
@@ -31,15 +35,7 @@ In CRXDE Lite è possibile esaminare le seguenti proprietà della risorsa per co
 
 ### Registrazione sincronizzazione {#synchronization-logging}
 
-Errori e problemi di sincronizzazione vengono registrati `error.log` (directory del server AEM `/crx-quickstart/logs/`). È disponibile una registrazione sufficiente per determinare la causa principale della maggior parte dei problemi, tuttavia è possibile aumentare la registrazione in DEBUG sul `com.adobe.cq.dam.ips` pacchetto tramite Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) per raccogliere ulteriori informazioni.
-
-### Sposta, Copia, Elimina {#move-copy-delete}
-
-Prima di eseguire un&#39;operazione Sposta, Copia o Elimina, effettuate le seguenti operazioni:
-
-* Per immagini e video, verificate che esista un `<object_node>/jcr:content/metadata/dam:scene7ID` valore prima di eseguire operazioni di spostamento, copia o eliminazione.
-* Per i predefiniti per immagini e visualizzatori, verificate che esista un `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` valore prima di eseguire le operazioni di spostamento, copia o eliminazione.
-* Se questo valore di metadati non è presente, è necessario caricare nuovamente le risorse prima di spostare, copiare o eliminare le operazioni.
+Gli errori e i problemi di sincronizzazione vengono registrati `error.log` (AEM directory del server `/crx-quickstart/logs/`). È disponibile una registrazione sufficiente per determinare la causa principale della maggior parte dei problemi, tuttavia è possibile aumentare la registrazione in DEBUG sul `com.adobe.cq.dam.ips` pacchetto tramite Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) per raccogliere ulteriori informazioni.
 
 ### Controllo della versione {#version-control}
 
@@ -66,7 +62,7 @@ In caso di problemi con immagini e set, consultate le seguenti istruzioni per la
     <ol>
      <li><p>Vai a CRX/DE:</p>
       <ul>
-       <li>Verificate se il predefinito nel JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> è definito. Tieni presente che questa posizione si applica se hai effettuato l’aggiornamento da AEM 6.x a 6.4 e hai rinunciato alla migrazione. In caso contrario, la posizione è <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Verificate se il predefinito nel JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> è definito. Nota che questa posizione si applica se hai aggiornato da AEM 6.x a 6.4 e hai rinunciato alla migrazione. In caso contrario, la posizione è <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Verificate che la risorsa nel JCR sia presente <code>dam:scene7FileStatus</code><strong> in Metadati e sia visualizzata come </strong><code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
@@ -75,16 +71,6 @@ In caso di problemi con immagini e set, consultate le seguenti istruzioni per la
      <li>Pubblicare la risorsa.</li>
      <li>Caricate nuovamente la risorsa e pubblicatela.</li>
     </ul> </td>
-  </tr>
-  <tr>
-   <td>Selettore risorse nell’editor set bloccato nel caricamento perpetuo</td>
-   <td><p>Problema noto da risolvere in 6.4</p> </td>
-   <td><p>Chiudete il selettore e riapritelo.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Il pulsante Seleziona</strong> non è attivo dopo aver selezionato una risorsa come parte della modifica di un set</td>
-   <td><p> </p> <p>Problema noto da risolvere in 6.4</p> <p> </p> </td>
-   <td><p>Fate clic prima su un’altra cartella nel selettore delle risorse e tornate indietro per selezionare la risorsa.</p> </td>
   </tr>
   <tr>
    <td>Il punto di attivazione del carosello si sposta dopo il passaggio tra le diapositive</td>
@@ -151,7 +137,7 @@ In caso di problemi con il video, consulta le seguenti istruzioni per la risoluz
     </ul> </td>
    <td>
     <ol>
-     <li>Verifica che la configurazione Dynamic Media in Servizi cloud sia configurata correttamente.</li>
+     <li>Verificate che la configurazione Dynamic Media in Cloud Services sia configurata correttamente.</li>
      <li>Verificate che la cartella disponga di un profilo video. Inoltre, controllate il profilo video.</li>
     </ol> </td>
   </tr>
@@ -160,7 +146,6 @@ In caso di problemi con il video, consulta le seguenti istruzioni per la risoluz
    <td><p>Per determinare se la codifica video è ancora in corso o se è stato immesso un errore:</p>
     <ul>
      <li>Controllare lo stato del video <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
-     <li>Monitora il video dalla console del flusso di lavoro <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Istanze, Archivio, Errori.</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -204,7 +189,7 @@ In caso di problemi con i visualizzatori, consultate le seguenti istruzioni per 
   </tr>
   <tr>
    <td>L’immagine del predefinito per visualizzatori restituisce 404 dall’anteprima nei dettagli delle risorse o dal codice URL/incorporato</td>
-   <td><p>In CRXDE Lite effettuate le seguenti operazioni:</p>
+   <td><p>In CRXDE Lite, effettuate le seguenti operazioni:</p>
     <ol>
      <li>Passa alla <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> cartella di sincronizzazione Dynamic Media (ad esempio, <code>/content/dam/_CSS/_OOTB</code>),</li>
      <li>Individuate il nodo di metadati della risorsa problematica (ad esempio, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
@@ -220,19 +205,16 @@ In caso di problemi con i visualizzatori, consultate le seguenti istruzioni per 
     </ol> </td>
    <td><p>Se le risorse di esempio o l’immagine del predefinito per visualizzatori non sono sincronizzate o pubblicate, riavviate l’intero processo di copia/sincronizzazione:</p>
     <ol>
-     <li>Passare a CRXDE Lite.
-      <ul>
-       <li>Elimina <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>Andate al gestore pacchetti CRX: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>Accedi a <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
+     </li>
+     <li>Selezionate le azioni seguenti nell’ordine:
       <ol>
-       <li>Cerca il pacchetto del visualizzatore nell’elenco (inizia con <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>Fate clic su <strong>Reinstalla</strong>.</li>
+       <li>Eliminate le cartelle di sincronizzazione.</li>
+       <li>Selezionate la cartella Preset (di seguito <code>/conf</code>).
+       <li>Trigger DM Setup Async Job.</li>
       </ol> </li>
-     <li>In Servizi cloud, andate alla pagina Configurazione Dynamic Media, quindi aprite la finestra di dialogo di configurazione per la configurazione Dynamic Media - S7.
-      <ul>
-       <li>Non apportare modifiche, fate clic su <strong>Salva</strong>. Questo attiva di nuovo la logica per creare e sincronizzare le risorse campione, i predefiniti per visualizzatori CSS e la grafica.<br />  </li>
-      </ul> </li>
+     <li>Attendi la notifica di sincronizzazione avvenuta nella casella in entrata AEM.
+     </li>
     </ol> </td>
   </tr>
  </tbody>
