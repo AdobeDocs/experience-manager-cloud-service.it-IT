@@ -4,9 +4,9 @@ user-guide-title: Risorse come guida per il Cloud Service
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: cea753a0783397c7fd9b757b2246c87ffa698f82
+source-git-commit: 942eb1424af119c4dda6b8286a20ff030c807802
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '430'
 ht-degree: 90%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 90%
 + [Architettura](architecture.md)
 + [Formati di file supportati](file-format-support.md)
 + [Panoramica dei microservizi per le risorse](asset-microservices-overview.md)
++ [Accessibilità in [!DNL Assets]](accessibility.md)
 + Gestire le risorse digitali con AEM {#manage}
    + [Condividere le risorse](share-assets.md)
    + [Monitorare attività e attività DAM](assets-activity-history.md)
