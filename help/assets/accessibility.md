@@ -3,10 +3,10 @@ title: Accessibilità in [!DNL Experience Manager Assets].
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0bb58d910fed91e4627e1fd8e1f9af47a1b2f4df
+source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1823'
+ht-degree: 2%
 
 ---
 
@@ -172,7 +172,7 @@ Per le operazioni relative ai metadati solitamente eseguite da ruoli quali profe
 * La funzione di trascinamento mediante la tastiera funziona correttamente nell’Editor schema metadati in modalità Sfoglia dell’assistente vocale.
 * Un utente può spostare lo stato attivo utilizzando la tastiera nel campo Aggiungi utente o Gruppo in Gruppo utenti chiuso nella scheda Autorizzazioni di Proprietà cartella.
 
-## Cercare risorse digitali {#search}
+## Cercare risorse digitali {#search-assets}
 
 Un’esperienza di ricerca delle risorse rapida e senza soluzione di continuità aumenta la velocità del contenuto. I casi di utilizzo della velocità del contenuto fanno parte delle [!DNL Assets] funzionalità principali. Per avviare una ricerca dalla barra di ricerca Omnisearch, gli utenti possono utilizzare la scelta rapida da tastiera `/` o `Tab` insieme agli assistenti vocali per individuare rapidamente l&#39;opzione di ricerca. L&#39;assistente vocale narra il nome dell&#39;opzione come pulsante [!UICONTROL di] ricerca quando l&#39;opzione ![di](assets/do-not-localize/search_icon.png)ricerca è attivata. Gli utenti possono premere `Return` per aprire la casella di ricerca Omnico. L&#39;assistente vocale narra non solo la parola chiave digitata nella casella di ricerca, ma anche i suggerimenti di completamento automatico offerti da [!DNL Experience Manager Assets]. Gli utenti possono utilizzare una combinazione di tasti freccia `Return`e accedere `Tab` alle varie opzioni per attivare una ricerca.
 
