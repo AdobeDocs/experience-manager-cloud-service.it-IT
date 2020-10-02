@@ -2,7 +2,7 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Linee guida per lo sviluppo per AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
+source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -232,9 +232,9 @@ Il servizio [OSGI](https://docs.adobe.com/content/help/en/experience-manager-65/
 
 AEM CS richiede l&#39;invio della posta tramite la porta 465. Se un server di posta elettronica non supporta la porta 465, è possibile utilizzare la porta 587, purché sia abilitata l&#39;opzione TLS.
 
-> [!NOTE]
+>[!NOTE]
 >
->  Adobe non supporta SMTP che si estende su un indirizzo IP dedicato univoco.
+> Adobe non supporta SMTP che si estende su un indirizzo IP dedicato univoco.
 
 ### Configurazione {#email-configuration}
 
