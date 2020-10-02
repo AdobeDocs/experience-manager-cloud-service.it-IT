@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
+source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 84%
+source-wordcount: '1688'
+ht-degree: 79%
 
 ---
 
@@ -20,15 +20,15 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Content Transfer Tool può essere utilizzato con i seguenti tipi di archivio dati: Archivio dati file, Archivio dati S3, Archivio dati S3 condiviso e Archivio dati Azure Blob.
 
-* Se utilizzi un *ambiente Sandbox*, assicurati che sia aggiornato alla versione del 10 giugno 2020 o successiva. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
+* Se utilizzate un ambiente *sandbox*, accertatevi che l’ambiente sia aggiornato alla versione più recente. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
 
-* Per utilizzare lo strumento Content Transfer (Trasferimento contenuti), devi essere un utente amministratore nell’istanza sorgente e appartenere al gruppo di amministratori di AEM nell’istanza Cloud Service a cui stai trasferendo i contenuti. Gli utenti non autorizzati non potranno recuperare il token di accesso per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+* Per utilizzare lo strumento di trasferimento dei contenuti, è necessario essere un utente amministratore nell’istanza di origine e appartenere al gruppo di amministratori AEM locali nell’istanza di Cloud Service a cui si sta trasferendo il contenuto. Gli utenti non autorizzati non potranno recuperare il token di accesso per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 
 * La *fase di acquisizione* per l’istanza di authoring riduce l’intera implementazione di authoring. Questo significa che l’istanza di authoring di AEM non sarà disponibile durante l’intero processo di acquisizione.
 
-* Il limite superiore consigliato per la dimensione dell’archivio supportata per volta dallo strumento Content Transfer (Trasferimento contenuti) è di 20 GB.
+* Attualmente la dimensione predefinita di MongoDB per un AEM come istanza Author di Cloud Service è 32 GB. Si consiglia di inviare un ticket di supporto per le dimensioni dello store del segmento superiori a 20 GB, in modo da aumentare le dimensioni di MongoDB.
 
 ## Disponibilità {#availability}
 
