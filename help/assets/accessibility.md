@@ -3,9 +3,9 @@ title: Accessibilità in [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità [!DNL Adobe Experience Manager] in un Cloud Service aiutano gli utenti disabili.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bd27bb5da82c9997f4c562a3d1efad77df66728f
+source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1841'
 ht-degree: 2%
 
 ---
@@ -175,7 +175,7 @@ Per le operazioni relative ai metadati solitamente eseguite da ruoli quali profe
 
 ## Cercare risorse digitali {#search-assets}
 
-Un’esperienza di ricerca delle risorse rapida e senza soluzione di continuità aumenta la velocità del contenuto. I casi di utilizzo della velocità del contenuto fanno parte delle [!DNL Assets] funzionalità principali. Per avviare una ricerca dalla barra di ricerca Omnisearch, gli utenti possono utilizzare la scelta rapida da tastiera `/` o `Tab` insieme agli assistenti vocali per individuare rapidamente l&#39;opzione di ricerca. L&#39;assistente vocale narra il nome dell&#39;opzione come pulsante [!UICONTROL di] ricerca quando l&#39;opzione ![di](assets/do-not-localize/search_icon.png)ricerca è attivata. Gli utenti possono premere `Return` per aprire la casella di ricerca Omnico. L&#39;assistente vocale narra non solo la parola chiave digitata nella casella di ricerca, ma anche i suggerimenti di completamento automatico offerti da [!DNL Experience Manager Assets]. Gli utenti possono utilizzare una combinazione di tasti freccia `Return`e accedere `Tab` alle varie opzioni per attivare una ricerca.
+Un’esperienza di ricerca delle risorse rapida e senza soluzione di continuità aumenta la velocità del contenuto. I casi di utilizzo della velocità del contenuto fanno parte delle [!DNL Assets] funzionalità di base. Per avviare una ricerca dalla barra di ricerca Omnisearch, gli utenti possono utilizzare la scelta rapida da tastiera `/` o `Tab` insieme agli assistenti vocali per individuare rapidamente l&#39;opzione di ricerca. L&#39;assistente vocale narra il nome dell&#39;opzione come pulsante [!UICONTROL di] ricerca quando l&#39;opzione ![di](assets/do-not-localize/search_icon.png)ricerca è attivata. Gli utenti possono premere `Return` per aprire la casella di ricerca Omnico. L&#39;assistente vocale narra non solo la parola chiave digitata nella casella di ricerca, ma anche i suggerimenti di completamento automatico offerti da [!DNL Experience Manager Assets]. Gli utenti possono utilizzare una combinazione di tasti freccia `Return`e accedere `Tab` alle varie opzioni per attivare una ricerca.
 
 La funzionalità di ricerca è ulteriormente accessibile tramite le seguenti funzionalità:
 
