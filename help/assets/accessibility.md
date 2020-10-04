@@ -3,9 +3,9 @@ title: Accessibilità in [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità [!DNL Adobe Experience Manager] in un Cloud Service aiutano gli utenti disabili.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
+source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 2%
 
 ---
@@ -145,7 +145,7 @@ Durante la navigazione nell’archivio delle risorse, le seguenti funzionalità 
 * L&#39;uso del `Esc` tasto per rimuovere le icone delle azioni rapide dalla visualizzazione delle miniature non rimuove lo stato attivo dall&#39;ultimo elemento attivo.
 * Con una risorsa selezionata, premendo Alt + 4 si apre l&#39;elenco Riferimenti. Utilizzando `Tab` key, gli utenti possono scorrere le voci di riferimento none-zero.
 * I commenti su una risorsa sono disponibili nella timeline della risorsa. È accessibile dalla tastiera.
-* Visualizza impostazioni in  Experience Manager sono accessibili tramite tastiera. L&#39;utente può navigare tra le dimensioni di scheda disponibili utilizzando i tasti freccia, quindi selezionare e spostarsi con il tasto di tabulazione per navigare e impostare altri elementi nella visualizzazione Impostazioni di visualizzazione esistente.
+* Visualizza impostazioni in  Experience Manager sono accessibili tramite tastiera. L&#39;utente può navigare tra le dimensioni di scheda disponibili utilizzando i tasti freccia e selezionare e navigare tra le varie schede per navigare e impostare altri elementi nella vista Impostazioni di visualizzazione esistente.
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -175,7 +175,7 @@ Per le operazioni relative ai metadati solitamente eseguite da ruoli quali profe
 
 ## Cercare risorse digitali {#search-assets}
 
-Un’esperienza di ricerca delle risorse rapida e senza soluzione di continuità aumenta la velocità del contenuto. I casi di utilizzo della velocità del contenuto fanno parte delle [!DNL Assets] funzionalità di base. Per avviare una ricerca dalla barra di ricerca Omnisearch, gli utenti possono utilizzare la scelta rapida da tastiera `/` o `Tab` insieme agli assistenti vocali per individuare rapidamente l&#39;opzione di ricerca. L&#39;assistente vocale narra il nome dell&#39;opzione come pulsante [!UICONTROL di] ricerca quando l&#39;opzione ![di](assets/do-not-localize/search_icon.png)ricerca è attivata. Gli utenti possono premere `Return` per aprire la casella di ricerca Omnico. L&#39;assistente vocale narra non solo la parola chiave digitata nella casella di ricerca, ma anche i suggerimenti di completamento automatico offerti da [!DNL Experience Manager Assets]. Gli utenti possono utilizzare una combinazione di tasti freccia `Return`e accedere `Tab` alle varie opzioni per attivare una ricerca.
+Un’esperienza di ricerca delle risorse rapida e senza soluzione di continuità aumenta la velocità del contenuto. I casi di utilizzo della velocità del contenuto fanno parte delle [!DNL Assets] funzionalità di base. Per avviare una ricerca dalla barra di ricerca Omnisearch, gli utenti possono utilizzare la scelta rapida da tastiera `/` o `Tab` insieme agli assistenti vocali per individuare rapidamente l&#39;opzione di ricerca. L&#39;assistente vocale narra il nome dell&#39;opzione come pulsante [!UICONTROL di] ricerca quando l&#39;opzione ![di](assets/do-not-localize/search_icon.png)ricerca è attivata. Gli utenti possono premere `Return` per aprire la casella di ricerca Omnico. L&#39;assistente vocale narra non solo la parola chiave digitata nella casella di ricerca, ma anche i suggerimenti offerti da [!DNL Experience Manager Assets]. Gli utenti possono utilizzare una combinazione di tasti freccia `Return`e accedere `Tab` alle varie opzioni per attivare una ricerca.
 
 La funzionalità di ricerca è ulteriormente accessibile tramite le seguenti funzionalità:
 
@@ -187,7 +187,7 @@ La funzionalità di ricerca è ulteriormente accessibile tramite le seguenti fun
 
 Quando filtrate i risultati della ricerca:
 
-* La pagina dei risultati della ricerca contiene titoli informativi che consentono di comprendere meglio gli utenti degli assistenti vocali.
+* La pagina dei risultati della ricerca ha un titolo informativo per una migliore comprensione degli utenti degli assistenti vocali.
 * Un assistente vocale annuncia le opzioni del filtro di ricerca come pulsanti di scelta espandibili.
 * I predicati con pulsanti con più stati vengono annunciati dagli assistenti vocali.
 
@@ -203,8 +203,8 @@ Quando condividete le risorse, le seguenti funzionalità migliorano l&#39;access
 * Nella finestra di dialogo di condivisione dei collegamenti, quando si naviga in modalità Sfoglia, gli assistenti vocali,
 
    * Non raccontare le informazioni della tabella non appena la finestra di dialogo viene caricata.
-   * È possibile accedere a tutti i suggerimenti automatici elencati.
-   * Narrate i suggerimenti automatici visualizzati per Aggiungi indirizzo e-mail e campi di ricerca.
+   * Potete passare a tutti i suggerimenti elencati.
+   * Narrate i suggerimenti visualizzati per Aggiungi indirizzo e-mail e campi di ricerca.
 
 ## Accessibilità in [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
