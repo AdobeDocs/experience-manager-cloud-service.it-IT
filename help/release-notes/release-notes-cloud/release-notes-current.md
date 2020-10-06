@@ -2,10 +2,10 @@
 title: Note sulla versione 2020.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service: note sulla versione 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
+source-git-commit: 5fb87f82c092552aa5e1c4b569399ec0bbc0da3b
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 13%
+source-wordcount: '765'
+ht-degree: 12%
 
 ---
 
@@ -116,6 +116,8 @@ Seguite questa sezione per saperne di più sulle novità e sugli aggiornamenti d
 Segui questa sezione per saperne di più sulle novità e gli aggiornamenti per gli strumenti di refactoring del codice.
 
 ### Novità {#what-is-new-refactoring}
+
+[Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md) è un&#39;utility sviluppata per ristrutturare i pacchetti di progetto esistenti separando il contenuto e il codice in pacchetti discreti per essere compatibile con la struttura di progetto definita per Adobe Experience Manager come Cloud Service.
 
 * Il plug-in AIO-CLI supporta Repository Modernizer e consente agli utenti di eseguire lo strumento utilizzando il plugin.
 
