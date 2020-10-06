@@ -4,10 +4,10 @@ user-guide-title: Risorse come guida per il Cloud Service
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 1f575a2bc844e108477a86d4f653928442165c8e
+source-git-commit: 98f914fbae9fa6291a8330fe0fe6ebbf51984de1
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 77%
+source-wordcount: '405'
+ht-degree: 79%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 77%
    + [Archiviare ed estrarre le risorse da modificare](check-out-and-submit-assets.md)
    + [Digital Rights Management per le risorse](drm.md)
    + [Risorse di filigrana](watermark-assets.md)
-+ Configure, administer and extend [!DNLAssets] {#admin}
++ Configurare, amministrare ed estendere [!DNL Assets] {#admin}
    + [Riferimenti ai documenti e alle API per sviluppatori](developer-reference-material-apis.md)
    + [Schema metadati per cartelle](folder-metadata-schema.md)
    + [Utilizzo dei profili immagine e video](/help/assets/dynamic-media/about-image-video-profiles.md)
