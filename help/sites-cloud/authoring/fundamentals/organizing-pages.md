@@ -2,7 +2,7 @@
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 98%
@@ -366,7 +366,6 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 >[!NOTE]
 >
 >Una pagina può essere spostata solo in una posizione in cui è consentito il modello su cui si basa la pagina. See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
--->
 
 #### Azioni asincrone {#asynchronous-actions}
 
