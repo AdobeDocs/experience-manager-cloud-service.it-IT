@@ -1,8 +1,8 @@
 ---
-title: Accesso iniziale - Servizio Cloud
-description: Accesso iniziale - Servizio Cloud
+title: Primo login - Cloud Service
+description: Primo login - Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Dopo aver eseguito l&#39;accesso a [!UICONTROL Cloud Manager], verrà visualizza
 
 >[!NOTE]
 >
->I programmi che si trovano nel servizio Cloud sono indicati dal sottotitolo **Experience Manager Cloud** anziché dai programmi **Experience Manager** for AMS), come mostrato di seguito.
+>I programmi che si trovano sul Cloud Service sono indicati dal sottotitolo **Experience Manager Cloud** (invece di **Experience Manager programmi** AMS), come mostrato di seguito.
 
 ![](assets/first_timelogin1.png)
 
@@ -35,25 +35,25 @@ In base alle circostanze, verrà visualizzata una delle due opzioni:
 
 * **I programmi esistono già in Cloud Manager**
 
-## Aggiunta di un nuovo programma nel servizio cloud senza programmi esistenti {#no-program}
+## Aggiunta di un nuovo programma in un Cloud Service senza programmi esistenti {#no-program}
 
 
 La pagina di destinazione vi invita a creare il primo programma, come illustrato nella figura riportata di seguito.
 ![](assets/first_timelogin0.png)
 
 
-## Aggiunta di un nuovo programma nel servizio Cloud con programmi esistenti {#existing-program}
+## Aggiunta di un nuovo programma in un Cloud Service con programmi esistenti {#existing-program}
 
 
-1. Accedi ad **Adobe[!UICONTROL Experience Cloud ]**e vedrai l&#39;elenco dei**programmi e dei prodotti **.
+1. Accedete al **Adobe[!UICONTROL Experience Cloud]** e visualizzerete l&#39;elenco di **Programmi e prodotti**.
 
    ![](assets/first_timelogin1.png)
 
-   I programmi inclusi nel servizio Cloud sono indicati dal sottotitolo **Experience Manager Cloud** (a differenza dei programmi **Experience Manager** per AMS).
+   I programmi che si trovano sul Cloud Service sono indicati dal sottotitolo **Experience Manager Cloud** (invece di **Experience Manager programmi** AMS).
 
    >[!NOTE]
    >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
 
-1. Per informazioni su come aggiungere un programma dalla schermata **Programmi e prodotti** per creare un nuovo programma in Cloud Service, consulta [Creazione di un programma](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
+1. Per informazioni su come aggiungere un programma dalla schermata **Programmi e prodotti** per creare un nuovo programma in Cloud Service, vedere [Creazione di un programma](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
 
 
