@@ -3,7 +3,7 @@ title: Configurare  AEM Assets come Cloud Service con Brand Portal
 description: Configurare AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 19%
@@ -30,7 +30,6 @@ La configurazione di Adobe Experience Manager Assets Brand Portal consente di pu
 >[!NOTE]
 >
 >Un AEM Assets  come istanza di Cloud Service può essere configurato solo con un tenant Brand Portal.
-
 
 ## Prerequisiti {#prerequisites}
 
@@ -64,16 +63,10 @@ La configurazione IMS prevede due passaggi:
 La chiave pubblica (certificato) autentica il tuo profilo in  Adobe Developer Console.
 
 1. Effettuate l&#39;accesso a  AEM Assets.
-
 1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
-
-
 1. Nella pagina Configurazioni IMS  Adobe, fate clic su **[!UICONTROL Crea]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
-
 1. Selezionate **[!UICONTROL Portale]** marchio Adobe nell&#39;elenco a discesa **[!UICONTROL Cloud Solution]** .
-
 1. Selezionate la casella di controllo **[!UICONTROL Crea nuovo certificato]** e specificate un **alias** per la chiave pubblica. L&#39;alias funge da nome della chiave pubblica.
-
 1. Fai clic su **[!UICONTROL Crea certificato]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![Crea certificato](assets/ims-config2.png)
@@ -218,8 +211,6 @@ Effettuate le seguenti operazioni per configurare l&#39;account IMS.
 >
 >Verifica che la configurazione IMS superi il controllo di integrità. Se la configurazione non supera questa verifica, non è valida. Dovrai quindi eliminarla e creare una nuova configurazione valida.
 
-
-
 ### Configurare il servizio cloud {#configure-the-cloud-service}
 
 Per configurare il servizio cloud Brand Portal, effettuate le seguenti operazioni:
@@ -281,19 +272,15 @@ Effettuate le seguenti operazioni per convalidare la configurazione:
    >
    >Evita di disabilitare l’agente di distribuzione, in quanto potrebbe impedire la corretta distribuzione delle risorse (in esecuzione nella coda).
 
-
 Ora puoi:
 
 * [Pubblicare risorse da AEM Assets su Brand Portal](publish-to-brand-portal.md)
 * [Pubblicare cartelle da AEM Assets su Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Pubblicare raccolte da AEM Assets su Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-
 * [Pubblicare predefiniti, schemi e facet in Brand Portal](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Pubblicare tag in Brand Portal](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-
 See [Brand Portal documentation](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/home.html) for more information.
-
 
 ## Registri di distribuzione {#distribution-logs}
 
@@ -302,7 +289,6 @@ Potete monitorare i registri degli agenti di distribuzione per il flusso di lavo
 Ad esempio, è stata pubblicata una risorsa da  AEM Assets al Portale del marchio per convalidare la configurazione.
 
 1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
-
 1. Fate clic su **[!UICONTROL Registri]** per visualizzare i registri di elaborazione e di errore.
 
    ![](assets/test-bpconfig5.png)
@@ -315,10 +301,12 @@ L&#39;agente di distribuzione ha generato i seguenti registri:
 Quando viene pubblicata la risorsa, vengono generati i seguenti registri di richieste e risposte:
 
 **Richiesta dell’agente di distribuzione**:
+
 * DSTRQ2 (richiesta 2): viene attivata la richiesta di pubblicazione della risorsa.
 * DSTRQ3 (richiesta 3): Il sistema attiva un’altra richiesta per pubblicare la  cartella AEM Assets (in cui esiste la risorsa) e replicare la cartella in Brand Portal.
 
 **Risposta dell’agente di distribuzione**:
+
 * queue-bpdistributionagent0 (DSTRQ2): la risorsa viene pubblicata su Brand Portal.
 * queue-bpdistributionagent0 (DSTRQ3): Il sistema replica la cartella AEM Assets  (contenente la risorsa) in Brand Portal.
 
@@ -327,8 +315,6 @@ Nell’esempio precedente, viene attivata un’ulteriore combinazione di richies
 >[!NOTE]
 >
 >La richiesta aggiuntiva viene generata nel caso in cui la cartella principale non esista nel Brand Portal o sia stata modificata in  AEM Assets.
-
-
 
 <!--
 
@@ -358,4 +344,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    Comment Type: draft
 
    <li>Step text</li>
-   -->
+-->
