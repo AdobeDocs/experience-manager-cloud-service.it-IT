@@ -2,7 +2,7 @@
 title: Banner a carosello
 description: Scopri come utilizzare i banner carosello in Contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 4%
@@ -242,7 +242,8 @@ Consulta Frammento [](/help/sites-cloud/authoring/fundamentals/experience-fragme
 >[!NOTE]
 >
 >Gli strumenti di condivisione social media in Carosello Banner non sono supportati quando incorporate il visualizzatore in un frammento esperienza.
-Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
+>
+>Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
 
 Quando aggiungete punti di attivazione o mappe immagine a un’immagine, ricordate di salvare il lavoro. Le opzioni Annulla e Ripristina, accanto all’angolo superiore destro della pagina, sono supportate durante la sessione di creazione/modifica corrente.
 
@@ -292,6 +293,7 @@ Se modificate immagini interattive con punti attivi e ritagliate l’immagine, i
    * Toccate **[!UICONTROL Collegamento ipertestuale]**.
 
       * Se siete clienti AEM Sites , toccate l&#39;icona Selettore sito (cartella) per passare a un URL.
+
          >[!NOTE]
          Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
 
@@ -310,7 +312,7 @@ Consulta Frammenti [](/help/sites-cloud/authoring/fundamentals/experience-fragme
 
          >[!NOTE]
          Gli strumenti di condivisione social media in Carosello Banner non sono supportati quando incorporate il visualizzatore in un frammento esperienza.
-Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
+         Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    Potete anche visualizzare l’anteprima dell’aspetto del banner del carosello. Consultate [(Facoltativo) Anteprima Dei Banner](#optional-previewing-carousel-banners)Carosello.
