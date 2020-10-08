@@ -2,9 +2,9 @@
 title: Registrazione
 description: Scoprite come configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 translation-type: tm+mt
-source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
+source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2219'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ AEM come Cloud Service è una piattaforma che consente ai clienti di includere c
 AEM livelli di registrazione e di registro vengono gestiti in file di configurazione memorizzati come parte del progetto AEM in Git e distribuiti come parte del progetto AEM tramite Cloud Manager. L&#39;accesso AEM come Cloud Service può essere suddiviso in due set logici:
 
 * Registrazione AEM, che esegue la registrazione a livello di applicazione AEM
-* Registrazione Apache HTTPD Web Server/Dispatcher, che esegue la registrazione del server Web e di Dispatcher sul livello di pubblicazione.
+* Registrazione server/dispatcher Web Apache HTTPD, che esegue la registrazione del server Web e del dispatcher nel livello di pubblicazione.
 
 ## Registrazione AEM {#aem-loggin}
 
@@ -29,7 +29,7 @@ La registrazione a livello di applicazione AEM è gestita da tre registri:
 
 >[!NOTE]
 >
->Le richieste HTTP servite dalla cache Dispatcher del livello di pubblicazione o dalla rete CDN upstream non vengono riportate in questi registri.
+>Le richieste HTTP servite dalla cache del dispatcher del livello di pubblicazione o dalla rete CDN upstream non vengono riportate in questi registri.
 
 ## Registrazione Java AEM {#aem-java-logging}
 
@@ -53,7 +53,7 @@ Sviluppo</td>
 DEBUG</td>
 <td>
 Descrive cosa accade nell'applicazione.<br>
-Quando la registrazione DEBUG è attiva, le istruzioni che forniscono un'immagine chiara delle attività che si verificano e tutti i parametri chiave che influenzano l'elaborazione vengono registrate.</td>
+Quando la registrazione DEBUG è attiva, vengono registrate le istruzioni che forniscono un'immagine chiara delle attività che si verificano e tutti i parametri chiave che influiscono sull'elaborazione.</td>
 <td>
 <ul>
 <li> Sviluppo locale</li>
@@ -309,21 +309,21 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 Il registro di accesso HTTP non è configurabile in AEM come Cloud Service.
 
-## Registrazione di Apache Web Server e Dispatcher {#apache-web-server-and-dispatcher-logging}
+## Registrazione server Web Apache e dispatcher {#apache-web-server-and-dispatcher-logging}
 
 AEM come Cloud Service fornisce tre registri per i server Web Apache e il livello dispatcher nella pubblicazione:
 
 * Registro di accesso al server Web Apache HTTPD
 * Registro errori server Web Apache HTTPD
-* Registro Dispatcher
+* Registro dei dispatcher
 
 Questi registri sono disponibili solo per il livello Pubblica.
 
-Questo set di registri fornisce informazioni approfondite sulle richieste HTTP al AEM come livello di pubblicazione Cloud Service prima che tali richieste arrivino all’applicazione AEM. Questo è importante perché, idealmente, la maggior parte delle richieste HTTP ai server dei livelli di pubblicazione è gestita da contenuto memorizzato nella cache dal server Web Apache HTTPD e AEM Dispatcher, e non arriva mai all&#39;applicazione AEM stessa. Pertanto, non esistono istruzioni di registro per queste richieste nei registri AEM Java, Request o Access.
+Questo set di registri fornisce informazioni approfondite sulle richieste HTTP al AEM come livello di pubblicazione Cloud Service prima che tali richieste arrivino all’applicazione AEM. Questo è importante perché, idealmente, la maggior parte delle richieste HTTP ai server dei livelli di pubblicazione è gestita da contenuto memorizzato nella cache dal server Web Apache HTTPD e dal dispatcher AEM e non riesce mai a raggiungere l’applicazione AEM. Pertanto, non esistono istruzioni di registro per queste richieste nei registri AEM Java, Request o Access.
 
 ### Registro di accesso al server Web Apache HTTPD {#apache-httpd-web-server-access-log}
 
-Il registro di accesso al server Web Apache HTTP fornisce istruzioni per ogni richiesta HTTP che raggiunge il server Web/Dispatcher del livello Publish. Notate che le richieste servite da una CDN upstream non vengono riportate in questi registri.
+Il registro di accesso al server Web Apache HTTP fornisce istruzioni per ogni richiesta HTTP che raggiunge il server Web/dispatcher del livello Publish. Notate che le richieste servite da una CDN upstream non vengono riportate in questi registri.
 
 Consultate le informazioni sul formato del registro errori nella documentazione [apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog)ufficiale.
 
@@ -392,7 +392,7 @@ Questo registro non è configurabile in AEM come Cloud Service.
 
 ## Registro errori server Web Apache HTTPD {#apache-httpd-web-server-error-log}
 
-Il registro errori del server Web Apache HTTP fornisce istruzioni per ogni errore nel server Web/Dispatcher del livello Publish.
+Il registro errori del server Web Apache HTTP fornisce istruzioni per ogni errore nel server Web/dispatcher del livello di pubblicazione.
 
 Consultate le informazioni sul formato del registro errori nella documentazione [apache](https://httpd.apache.org/docs/2.4/logs.html#errorlog)ufficiale.
 
@@ -456,7 +456,7 @@ Define REWRITE_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## Registro Dispatcher {#dispatcher-log}
+## Registro dispatcher {#dispatcher-log}
 
 **Esempio**
 
@@ -487,7 +487,7 @@ Define REWRITE_LOG_LEVEL Debug
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
-<td>Codice stato risposta Dispatcher</td>
+<td>Codice stato risposta del dispatcher</td>
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
@@ -509,13 +509,13 @@ Define REWRITE_LOG_LEVEL Debug
 </tbody>
 </table>
 
-### Configurazione del registro errori Dispatcher {#configuring-the-dispatcher-error-log}
+### Configurazione del registro errori del dispatcher {#configuring-the-dispatcher-error-log}
 
 I livelli del registro del dispatcher sono definiti dalla variabile DISP_LOG_LEVEL presente nel file `conf.d/variables/global.var`.
 
 Può essere impostato su Errore, Avverti, Informazioni, Debug e Trace1, con il valore predefinito Avverti.
 
-Sebbene la registrazione Dispatcher supporti diversi altri livelli di granularità della registrazione, il AEM come Cloud Service consiglia di utilizzare i livelli descritti di seguito.
+Mentre la registrazione del dispatcher supporta diversi altri livelli di granularità della registrazione, il AEM come Cloud Service consiglia di utilizzare i livelli descritti di seguito.
 
 Per impostare il livello di registro per l&#39;ambiente, utilizzare il ramo condizionale appropriato nel `global.var` file, come descritto di seguito:
 
@@ -550,7 +550,7 @@ AEM file di registro si trovano nella cartella `crx-quickstart/logs`, dove è po
 * AEM registro delle richieste HTTP: `request.log`
 * AEM registro di accesso HTTP: `access.log`
 
-I registri dei livelli Apache, incluso il dispatcher, si trovano nel contenitore Docker che contiene l’Dispatcher. Per informazioni sull’avvio dell’Dispatcher, consultate la documentazione [di](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher.
+I registri dei livelli Apache, incluso il dispatcher, si trovano nel contenitore Docker che contiene il dispatcher. Per informazioni su come avviare il dispatcher, consulta la documentazione [del](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) dispatcher.
 
 Per recuperare i file di registro:
 
@@ -561,9 +561,9 @@ Per recuperare i file di registro:
 1.  Inspect i registri: sono accessibili nella cartella XYZ, dove è possibile visualizzare i seguenti file di registro:
    * Registro di accesso al server Web Apache HTTPD - `httpd_access.log`
    * Registri di errore del server Web Apache HTTPD - `httpd_error.log`
-   * Registri Dispatcher - `dispatcher.log`
+   * Registri del dispatcher - `dispatcher.log`
 
-I registri vengono inoltre stampati direttamente sull&#39;uscita terminale. Nella maggior parte dei casi, questi registri devono essere DEBUG, che può essere realizzato trasmettendo il livello Debug come parametro durante l&#39;esecuzione di Docker. Ad esempio:
+I registri vengono inoltre stampati direttamente sull&#39;uscita terminale. Nella maggior parte dei casi, questi registri devono essere DEBUG, che può essere realizzato trasmettendo il livello Debug come parametro durante l&#39;esecuzione di Docker. Esempio:
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
@@ -588,7 +588,7 @@ La larghezza di banda di rete associata ai registri inviati a Splunk è consider
 
 Nella richiesta di assistenza, i clienti devono indicare:
 
-* Host Splunk
+* Indirizzo endpoint HEC splunk
 * Indice Splunk
 * La porta Splunk
 * Il token Splunk HEC. Per ulteriori informazioni, consulta [questa pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) .
@@ -603,21 +603,21 @@ Di seguito è riportato un esempio di richiesta di assistenza clienti:
 
 Programma 123, Production Env
 
-* Host splunk: `splunk-hec-ext.acme.com`
+* Indirizzo endpoint HEC splunk: `splunk-hec-ext.acme.com`
 * Indice splunk: acme_123prod (il cliente può scegliere qualsiasi convenzione di denominazione)
 * Porta splunk: 443
 * Token Splunk HEC: ABC123
 
 Program 123, Stage Env
 
-* Host splunk: `splunk-hec-ext.acme.com`
+* Indirizzo endpoint HEC splunk: `splunk-hec-ext.acme.com`
 * Indice splunk: acme_123stage
 * Porta splunk: 443
 * Token Splunk HEC: ABC123
 
 Programma 123, Dev Envs
 
-* Host splunk: `splunk-hec-ext.acme.com`
+* Indirizzo endpoint HEC splunk: `splunk-hec-ext.acme.com`
 * Indice splunk: acme_123dev
 * Porta splunk: 443
 * Token Splunk HEC: ABC123
