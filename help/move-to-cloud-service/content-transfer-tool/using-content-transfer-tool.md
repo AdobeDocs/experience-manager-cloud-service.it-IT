@@ -2,7 +2,7 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 79%
@@ -140,8 +140,10 @@ Una volta completato il processo di estrazione, puoi trasferire il contenuto del
 1. Nella pagina *Overview* (Panoramica), seleziona il set di migrazione per il quale desideri eseguire l’estrazione integrativa. Fai clic su **Extract** (Estrai) per avviare l’estrazione integrativa. Viene visualizzata la finestra di dialogo **Migration Set extraction** (Estrazione set di migrazione).
 
    >[!IMPORTANT]
+   >
    >Disattiva l’opzione **Overwrite staging container during extraction** (Sovrascrivi contenitore di staging durante l’estrazione).
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+   >
+   >![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### Processo di acquisizione nel trasferimento dei contenuti {#ingestion-process}
 
@@ -151,17 +153,16 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-
 1. Al termine dell’assimilazione, lo stato nel campo **PUBLISH INGESTION** viene aggiornato a **FINISHED**.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
-
 
 #### Acquisizione integrativa {#top-up-ingestion-process}
 
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’*integrazione* di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
 
 >[!NOTE]
+>
 >Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service.
 
 Una volta completato il processo di acquisizione, puoi utilizzare il contenuto delta utilizzando il metodo di acquisizione integrativa. Effettua le seguenti operazioni:
@@ -169,8 +170,10 @@ Una volta completato il processo di acquisizione, puoi utilizzare il contenuto d
 1. Nella pagina *Overview* (Panoramica), seleziona il set di migrazione per il quale desideri eseguire l’acquisizione integrativa. Fai clic su **Ingest (Acquisisci)** per avviare l’acquisizione integrativa. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione).
 
    >[!IMPORTANT]
+   >
    >Devi disattivare l&#39;opzione **Elimina contenuto esistente nell&#39;istanza Cloud prima dell&#39;assimilazione** , per evitare di eliminare il contenuto esistente dall&#39;attività di assimilazione precedente.
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+   >
+   >![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### Visualizzazione dei registri di un set di migrazione {#viewing-logs-migration-set}
 
