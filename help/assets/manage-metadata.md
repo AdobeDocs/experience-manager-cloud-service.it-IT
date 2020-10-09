@@ -4,9 +4,9 @@ description: Scoprite i tipi di metadati e [!DNL Adobe Experience Manager Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1932'
 ht-degree: 4%
 
 ---
@@ -213,7 +213,7 @@ I metadati specifici dell&#39;applicazione includono metadati tecnici e descritt
 ### Metadati specifici per la stampa {#print-specific-metadata}
 
 * PDF e PDF/X -  applicazioni Adobe PDF e di terze parti.
-* PRISM - Requisiti [di pubblicazione per metadati](https://www.prismstandard.org)standard di settore.
+* PRISM - Requisiti [di pubblicazione per metadati](https://www.idealliance.org/prism-metadata)standard di settore.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - Metadati XMP per il testo a pagina.
 
