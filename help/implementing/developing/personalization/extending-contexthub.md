@@ -2,7 +2,7 @@
 title: Estensione di ContextHub
 description: Definire nuovi tipi di store e moduli ContextHub quando quelli forniti non soddisfano i requisiti della soluzione
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -18,9 +18,7 @@ Definite nuovi tipi di store e moduli ContextHub quando quelli forniti non soddi
 
 Gli store ContextHub vengono creati dai candidati store registrati. Per creare uno store personalizzato, dovete creare e registrare un candidato per lo store.
 
-<!--The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-Il file javascript che include il codice che crea e registra il candidato store deve essere incluso in una cartella libreria client. La categoria della cartella deve corrispondere al seguente pattern:
+Il file javascript che include il codice che crea e registra il candidato store deve essere incluso in una cartella [libreria](/help/implementing/developing/introduction/clientlibs.md)client. La categoria della cartella deve corrispondere al seguente pattern:
 
 ```xml
 contexthub.store.[storeType]
@@ -101,9 +99,7 @@ Creare e registrare la classe del renderer in una funzione anonima che esegue au
 }());
 ```
 
-<!--The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-Il file javascript che include il codice che crea e registra il renderer deve essere incluso in una cartella libreria client. La categoria della cartella deve corrispondere al seguente pattern:
+Il file javascript che include il codice che crea e registra il renderer deve essere incluso in una cartella [libreria](/help/implementing/developing/introduction/clientlibs.md)client. La categoria della cartella deve corrispondere al seguente pattern:
 
 ```javascript
 contexthub.module.[moduleType]
