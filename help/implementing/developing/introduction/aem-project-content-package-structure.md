@@ -2,7 +2,7 @@
 title: Struttura dei progetti AEM
 description: Scoprite come definire le strutture dei pacchetti per la distribuzione nel Cloud Service Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: 51e9a9a8c9d63583a5dc116f886d878d3f849687
+source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '2828'
 ht-degree: 13%
@@ -63,7 +63,7 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
 + Il `ui.apps` pacchetto contiene tutto il codice da distribuire e solo da distribuire a `/apps`. Gli elementi comuni del `ui.apps` pacchetto includono, tra l&#39;altro:
    + [Definizioni dei componenti e script HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
-   + JavaScript e CSS (tramite librerie client)
+   + JavaScript e CSS (tramite librerie [](/help/implementing/developing/introduction/clientlibs.md)client)
       + `/apps/my-app/clientlibs`
    + [Sovrapposizioni](/help/implementing/developing/introduction/overlays.md) di `/libs`
       + `/apps/cq`, `/apps/dam/`, etc.
@@ -89,7 +89,7 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
 
 ### Pacchetti di contenuti
 
-+ Il `ui.content` pacchetto contiene tutto il contenuto e la configurazione. Il pacchetto di contenuti contiene tutte le definizioni dei nodi non presenti nei `ui.apps` pacchetti o `ui.config` nei pacchetti, o in altre parole, in elementi non presenti `/apps` o `/oak:index`. Gli elementi comuni del `ui.content` pacchetto includono, tra l&#39;altro:
++ Il `ui.content` pacchetto contiene tutto il contenuto e la configurazione. Il pacchetto di contenuto contiene tutte le definizioni dei nodi non presenti nei `ui.apps` pacchetti o `ui.config` nei pacchetti, o in altre parole, in elementi non presenti `/apps` o `/oak:index`. Gli elementi comuni del `ui.content` pacchetto includono, tra l&#39;altro:
    + Configurazioni basate sul contesto
       + `/conf`
    + Strutture di contenuto complesse e necessarie (ad esempio Compilazione del contenuto che si basa e si estende oltre le strutture di contenuto della linea di base definite in Repo Init.)
