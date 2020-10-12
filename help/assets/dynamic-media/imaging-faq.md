@@ -146,7 +146,8 @@ Il primo dominio personalizzato non prevede costi aggiuntivi con una licenza per
 Le richieste vengono elaborate nell&#39;ordine in cui vengono ricevute dal supporto tecnico, in base all&#39;Elenco di attesa.
 
 >[!NOTE]
-Il tempo di attesa potrebbe essere lungo, perché l&#39;attivazione di Smart Imaging implica la cancellazione della cache da parte di Adobe. Pertanto, è possibile gestire solo alcune transizioni cliente in un dato momento.
+>
+>Il tempo di attesa potrebbe essere lungo, perché l&#39;attivazione di Smart Imaging implica la cancellazione della cache da parte di Adobe. Pertanto, è possibile gestire solo alcune transizioni cliente in un dato momento.
 
 ## Quali sono i rischi legati al passaggio all&#39;immagine per l&#39;utilizzo di Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -168,7 +169,8 @@ Durante la transizione iniziale, le immagini non memorizzate nella cache arrivan
 1. Ripetete questo test su diversi browser e condizioni utente.
 
 >[!NOTE]
-Non tutte le immagini sono convertite. La funzione Smart Imaging decide se la conversione è necessaria per migliorare le prestazioni. In alcuni casi, se non si prevede alcun guadagno di prestazioni o se il formato non è JPEG o PNG, l&#39;immagine non viene convertita.
+>
+>Non tutte le immagini sono convertite. La funzione Smart Imaging decide se la conversione è necessaria per migliorare le prestazioni. In alcuni casi, se non si prevede alcun guadagno di prestazioni o se il formato non è JPEG o PNG, l&#39;immagine non viene convertita.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 

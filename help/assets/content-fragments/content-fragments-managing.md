@@ -236,10 +236,11 @@ Oltre alle opzioni standard, [Timeline](/help/assets/manage-digital-assets.md#ti
    * **Elimina**
 
 >[!NOTE]
-I commenti sono:
-* Funzionalità standard per tutte le risorse
-* Realizzato nella timeline
-* Relativa alla risorsa frammento
+>
+>I commenti sono:
+>* Funzionalità standard per tutte le risorse
+>* Realizzato nella timeline
+>* Relativa alla risorsa frammento
 
 Le annotazioni (per i frammenti di contenuto) sono:
 * Inserito nell’editor frammento
@@ -274,7 +275,8 @@ Vengono visualizzati affiancati, dove:
 * **Fatto** , tornerai alla console
 
 >[!NOTE]
-Non è possibile modificare il contenuto del frammento durante il confronto dei frammenti.
+>
+>Non è possibile modificare il contenuto del frammento durante il confronto dei frammenti.
 
 ![confronto](assets/cfm-managing-06.png)
 
@@ -291,8 +293,9 @@ Non è possibile modificare il contenuto del frammento durante il confronto dei 
 ## Pubblicazione e riferimento a un frammento {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-Se il frammento è basato su un modello, verificare che il [modello sia stato pubblicato](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
-Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato insieme al frammento.
+>
+>Se il frammento è basato su un modello, verificare che il [modello sia stato pubblicato](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato insieme al frammento.
 
 I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione. Possono essere pubblicati:
 
@@ -300,7 +303,8 @@ I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambien
 * Quando si [pubblica una pagina che utilizza il frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); il frammento verrà elencato nei riferimenti di pagina.
 
 >[!CAUTION]
-Dopo aver pubblicato e/o fatto riferimento a un frammento, AEM viene visualizzato un avviso quando un autore riapre il frammento per la modifica. In questo modo viene segnalato che le modifiche apportate al frammento avranno effetto anche sulle pagine di riferimento.
+>
+>Dopo aver pubblicato e/o fatto riferimento a un frammento, AEM viene visualizzato un avviso quando un autore riapre il frammento per la modifica. In questo modo viene segnalato che le modifiche apportate al frammento avranno effetto anche sulle pagine di riferimento.
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
@@ -310,10 +314,12 @@ Per eliminare un frammento:
 2. Selezionare il frammento.
 
    >[!NOTE]
-   The **Delete** action is not available as a quick action.
+   >
+   >The **Delete** action is not available as a quick action.
 
 3. Select **Delete** from the toolbar.
 4. Confermate l’azione **Elimina** .
 
    >[!CAUTION]
-   Se in una pagina è già presente un riferimento al frammento, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.
+   >
+   >Se in una pagina è già presente un riferimento al frammento, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.

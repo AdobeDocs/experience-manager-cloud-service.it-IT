@@ -48,12 +48,11 @@ Gli obiettivi per l’utilizzo di Sling Resource Merger in AEM sono:
 >Questo perché il contenuto di `/libs` potrebbe essere sovrascritto in qualsiasi momento gli aggiornamenti vengono applicati all&#39;istanza.
 >
 >* Le sovrapposizioni dipendono dai percorsi [di](/help/implementing/developing/introduction/overlays.md#search-paths)ricerca.
-   >
-   >
-* Le sostituzioni non dipendono dai percorsi di ricerca, bensì usano la proprietà `sling:resourceSuperType` per creare la connessione.
+>
+>* Le sostituzioni non dipendono dai percorsi di ricerca, bensì usano la proprietà `sling:resourceSuperType` per creare la connessione.
 >
 >
-Tuttavia, le sostituzioni sono spesso definite in `/apps`, come procedura ottimale in AEM come Cloud Service, per definire le personalizzazioni in `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
+>Tuttavia, le sostituzioni sono spesso definite in `/apps`, come procedura ottimale in AEM come Cloud Service, per definire le personalizzazioni in `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
 
 ### Proprietà {#properties}
 

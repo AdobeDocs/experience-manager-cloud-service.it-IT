@@ -26,15 +26,13 @@ Si consiglia di utilizzare i componenti core.
 >[!CAUTION]
 >
 >* **Se non sono necessari i servizi[](#definition-of-advanced-services-that-need-configuration)**avanzati descritti di seguito, puoi ignorare questa configurazione.
-   >
-   >
-* **Quando si estendono o si utilizzano i componenti forniti**, non è consigliabile modificare la configurazione OSGi.
-   >
-   >
-* **È possibile scrivere un componente da zero che utilizza solo l&#39;API dei frammenti di contenuto, senza servizi** avanzati. Tuttavia, in tal caso, sarà necessario sviluppare il componente in modo che gestisca l’elaborazione appropriata.
+>
+>* **Quando si estendono o si utilizzano i componenti forniti**, non è consigliabile modificare la configurazione OSGi.
+>
+>* **È possibile scrivere un componente da zero che utilizza solo l&#39;API dei frammenti di contenuto, senza servizi** avanzati. Tuttavia, in tal caso, sarà necessario sviluppare il componente in modo che gestisca l’elaborazione appropriata.
 >
 >
-Si consiglia pertanto di utilizzare i componenti core.
+>Si consiglia pertanto di utilizzare i componenti core.
 
 ## Definizione di servizi avanzati che richiedono la configurazione {#definition-of-advanced-services-that-need-configuration}
 

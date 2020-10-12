@@ -182,12 +182,13 @@ Il testo di riepilogo è progettato per consentire agli utenti di ridurre la lun
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
-L&#39;inglese è disponibile out-of-the-box.
-Altre lingue sono disponibili come pacchetti di modelli di lingua da Package Share:
-* [Francese (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Tedesco (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italiano (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Spagnolo (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
+>L&#39;inglese è disponibile out-of-the-box.
+>Altre lingue sono disponibili come pacchetti di modelli di lingua da Package Share:
+>* [Francese (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Tedesco (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spagnolo (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
 
@@ -229,7 +230,8 @@ Annotazioni:
 * Sono indicate dall’evidenziazione sul testo, sia a schermo intero che in modalità normale dell’editor. I dettagli completi di un’annotazione possono essere visualizzati, modificati e/o eliminati facendo clic sul testo evidenziato, che riaprirà la finestra di dialogo.
 
    >[!NOTE]
-   Se a un elemento di testo sono state applicate più annotazioni, viene fornito un selettore a discesa.
+   >
+   >Se a un elemento di testo sono state applicate più annotazioni, viene fornito un selettore a discesa.
 
 * Quando eliminate l’intero testo a cui è stata applicata l’annotazione, viene eliminata anche quest’ultima.
 
@@ -246,11 +248,13 @@ Per semplificare la creazione di frammenti di contenuto, è possibile aggiungere
 Saranno aggiunti alla sequenza di paragrafi del frammento senza formattazione; è possibile formattare il [frammento utilizzando o facendo riferimento a una pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
-Queste risorse non possono essere spostate o eliminate in una pagina che contiene il riferimento, bensì nell’editor frammento.
-Tuttavia, la formattazione della risorsa (ad es. dimensione) deve essere effettuata nell’editor [](/help/sites-cloud/authoring/fundamentals/content-fragments.md)pagina. La rappresentazione della risorsa nell’editor frammento è destinata esclusivamente alla creazione del flusso di contenuto.
+>
+>Queste risorse non possono essere spostate o eliminate in una pagina che contiene il riferimento, bensì nell’editor frammento.
+>Tuttavia, la formattazione della risorsa (ad es. dimensione) deve essere effettuata nell’editor [](/help/sites-cloud/authoring/fundamentals/content-fragments.md)pagina. La rappresentazione della risorsa nell’editor frammento è destinata esclusivamente alla creazione del flusso di contenuto.
 
 >[!NOTE]
-There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>
+>There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 1. Posiziona il cursore nel punto in cui vuoi aggiungere l’immagine.
 2. Per aprire la finestra di dialogo di ricerca, utilizza l’icona **Inserisci risorsa**.
@@ -266,9 +270,10 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 4. Utilizza **Seleziona** per aggiungere la risorsa al sistema paragrafo del frammento di contenuto nella posizione corrente.
 
    >[!CAUTION]
-   Se, dopo aver aggiunto una risorsa, ne cambi il formato in:
-   * **Testo normale**: la risorsa verrà persa completamente dal frammento.
-   * **Markdown**: la risorsa non sarà visibile, ma lo tornerà a essere quando tornerai a **Rich Text**.
+   >
+   >Se, dopo aver aggiunto una risorsa, ne cambi il formato in:
+   >* **Testo normale**: la risorsa verrà persa completamente dal frammento.
+   >* **Markdown**: la risorsa non sarà visibile, ma lo tornerà a essere quando tornerai a **Rich Text**.
 
 
 ## Gestione delle varianti {#managing-variations}
@@ -286,7 +291,8 @@ Per creare una nuova variante:
 1. Seleziona **Aggiungi**, il frammento **Master** verrà copiato nella nuova variante, che è ora aperta per la [modifica](#editing-a-variation).
 
    >[!NOTE]
-   Quando create una nuova variante, viene sempre copiata la variante **principale** , non la variante attualmente aperta.
+   >
+   >Quando create una nuova variante, viene sempre copiata la variante **principale** , non la variante attualmente aperta.
 
 ### Modifica di una variante {#editing-a-variation}
 
@@ -310,7 +316,8 @@ Per rinominare una variante esistente:
 1. Confermate l’azione **Rinomina** .
 
 >[!NOTE]
-Questo incide solo sul **Titolo** della variante.
+>
+>Questo incide solo sul **Titolo** della variante.
 
 ### Eliminazione di una variante {#deleting-a-variation}
 
@@ -323,7 +330,8 @@ Per eliminare una variante esistente:
 1. Confermate l’azione **Elimina** nella finestra di dialogo.
 
 >[!NOTE]
-Non è possibile eliminare **Master**.
+>
+>Non è possibile eliminare **Master**.
 
 ### Sincronizzazione con Master {#synchronizing-with-master}
 
@@ -332,10 +340,11 @@ Non è possibile eliminare **Master**.
 Quando si modifica una variante, è possibile accedere all&#39;azione per sincronizzare l&#39;elemento corrente della variante con Master. Questo consente di copiare automaticamente le modifiche apportate alla variante desiderata in Master.
 
 >[!CAUTION]
-La sincronizzazione è disponibile solo per copiare le modifiche *da **Master**alla variante*.
-Viene sincronizzato solo l’elemento corrente della variante.
-La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
-Il trasferimento delle modifiche *da una variante a **Master ***non è disponibile come opzione.
+>
+>La sincronizzazione è disponibile solo per copiare le modifiche *da **Master**alla variante*.
+>Viene sincronizzato solo l’elemento corrente della variante.
+>La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
+>Il trasferimento delle modifiche *da una variante a **Master ***non è disponibile come opzione.
 
 1. Aprire il frammento di contenuto nell&#39;editor frammento. Verificare che la **Master** sia stata modificata.
 1. Selezionate una variante specifica, quindi l’azione di sincronizzazione appropriata da:

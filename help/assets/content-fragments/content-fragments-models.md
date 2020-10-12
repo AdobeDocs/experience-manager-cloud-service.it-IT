@@ -97,10 +97,11 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
    ![proprietà del campo](assets/cfm-models-05.png)
 
    >[!NOTE]
-   Per il tipo di dati **Testo su più righe** è possibile definire il **Tipo predefinito** come:
-   * **Formato RTF**
-   * **Markdown**
-   * **Testo normale**
+   >
+   >Per il tipo di dati **Testo su più righe** è possibile definire il **Tipo predefinito** come:
+   >* **Formato RTF**
+   >* **Markdown**
+   >* **Testo normale**
 
    Se non viene specificato, per questo campo viene utilizzato il valore predefinito **RTF** .
    La modifica del **Tipo predefinito** in un modello per frammenti di contenuto avrà effetto solo su un frammento esistente correlato, una volta che il frammento è stato aperto nell’editor e successivamente salvato.
@@ -118,7 +119,8 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 ## Eliminazione di un modello di frammento di contenuto {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
-L&#39;eliminazione di un modello di frammento di contenuto può avere un impatto sui frammenti dipendenti.
+>
+>L&#39;eliminazione di un modello di frammento di contenuto può avere un impatto sui frammenti dipendenti.
 
 Per eliminare un modello di frammento di contenuto:
 
@@ -128,7 +130,8 @@ Per eliminare un modello di frammento di contenuto:
 1. Selezionate il modello, seguito da **Elimina** dalla barra degli strumenti.
 
    >[!NOTE]
-   Se al modello viene fatto riferimento, verrà visualizzato un avviso. Adottare le misure appropriate.
+   >
+   >Se al modello viene fatto riferimento, verrà visualizzato un avviso. Adottare le misure appropriate.
 
 ## Pubblicazione di un modello di frammento di contenuto {#publishing-a-content-fragment-model}
 
@@ -142,4 +145,5 @@ Per pubblicare un modello di frammento di contenuto:
 1. Selezionate il modello, seguito da **Pubblica** dalla barra degli strumenti.
 
    >[!NOTE]
-   Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato insieme al frammento.
+   >
+   >Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato insieme al frammento.
