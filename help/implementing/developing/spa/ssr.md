@@ -2,7 +2,7 @@
 title: Rendering SPA e lato server
 description: L’utilizzo del rendering lato server (SSR) nell’area dell’app può accelerare il caricamento iniziale della pagina e quindi passare al client un ulteriore rendering.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Entrambi i modelli sono validi e supportati da AEM. Tuttavia, è opportuno consi
     </ul> </td>
    <td>
     <ul>
-     <li>Le risorse Clientlib richieste dall'applicazione, come CSS e JavaScript, dovranno essere rese disponibili dallo sviluppatore AEM tramite la <code>allowProxy</code> proprietà<br /> </li>
+     <li>Le risorse Clientlib richieste dall'applicazione, come CSS e JavaScript, dovranno essere rese disponibili dallo sviluppatore AEM tramite la <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> proprietà<br /> </li>
      <li>Le risorse devono essere sincronizzate tra AEM e Adobe I/O Runtime<br /> </li>
      <li>Per abilitare la creazione dell'SPA, potrebbe essere necessario un server proxy per Adobe I/O Runtime</li>
     </ul> </td>
