@@ -10,10 +10,10 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
-source-wordcount: '2620'
-ht-degree: 34%
+source-wordcount: '2592'
+ht-degree: 33%
 
 ---
 
@@ -67,7 +67,7 @@ Cloneremo il Progetto [](https://github.com/adobe/aem-cif-guides-venia) Venia e 
 
 ## Librerie client e modulo ui.frontend {#introduction-to-client-libraries}
 
-I CSS e JavaScript responsabili del rendering del tema o degli stili della vetrina sono gestiti in AEM da una [libreria client](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html), o clientlib. Le librerie client consentono di organizzare CSS e JavaScript nel codice di un progetto e quindi di distribuirli sulla pagina.
+I CSS e JavaScript responsabili del rendering del tema o degli stili della vetrina sono gestiti in AEM da una [libreria client](/help/implementing/developing/introduction/clientlibs.md), o clientlib. Le librerie client consentono di organizzare CSS e JavaScript nel codice di un progetto e quindi di distribuirli sulla pagina.
 
 Gli stili specifici del marchio possono essere applicati AEM componenti CIF di base aggiungendo e ignorando i CSS gestiti da queste librerie client. È fondamentale comprendere in che modo le librerie client sono strutturate e incluse nella pagina.
 
@@ -77,7 +77,7 @@ Il `ui.frontend` modulo è anche un modulo Maven e integrato con il progetto pi�
 
 ![architettura ui.frontend a ui.apps](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*I file CSS e Javascript compilati vengono copiati dal`ui.frontend`modulo al`ui.apps`modulo come libreria client durante una build Maven*
+*I file CSS e Javascript compilati vengono copiati dal `ui.frontend` modulo al `ui.apps` modulo come libreria client durante una build Maven*
 
 ## Aggiornare lo stile del teaser {#ui-frontend-module}
 
@@ -249,7 +249,7 @@ Quindi verificate l&#39;inclusione delle librerie client nella pagina.
    </html>
    ```
 
-   Le librerie client distribuite alla pagina hanno il prefisso `/etc.clientlibs` e vengono servite tramite un [proxy](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) per evitare di esporre elementi sensibili in `/apps` o `/libs`.
+   Le librerie client distribuite alla pagina hanno il prefisso `/etc.clientlibs` e vengono servite tramite un [proxy](/help/implementing/developing/introduction/clientlibs.md) per evitare di esporre elementi sensibili in `/apps` o `/libs`.
 
    Avviso `venia/clientlibs/clientlib-site.min.css` e `venia/clientlibs/clientlib-site.min.js`. Si tratta dei file CSS e Javascript compilati derivati dal `ui.frontend` modulo.
 
@@ -482,6 +482,6 @@ Usa il [Sistema di stili di AEM](https://docs.adobe.com/content/help/it-IT/exper
 * [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 * [Componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components)
 * [Configurare un ambiente di sviluppo AEM locale](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [Librerie lato client](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html)
+* [Librerie lato client](/help/implementing/developing/introduction/clientlibs.md)
 * [Guida introduttiva di AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [Sviluppo con il sistema di stili](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
