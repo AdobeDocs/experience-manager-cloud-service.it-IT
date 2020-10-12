@@ -2,7 +2,7 @@
 title: Diagnostica ContextHub
 description: ContextHub fornisce una pagina di diagnostica in cui potete vedere una panoramica del framework ContextHub
 translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Nella sezione Moduli sono elencati tutti i moduli di interfaccia utente ContextH
 
 ## Clientlibs {#clientlibs}
 
-Nella sezione Clientlibs sono elencate tutte le cartelle della libreria client caricate da ContextHub. Le librerie client sono classificate come segue:
+Nella sezione Clientlibs sono elencate tutte le cartelle [della libreria](/help/implementing/developing/introduction/clientlibs.md) client caricate da ContextHub. Le librerie client sono classificate come segue:
 
 * **kernel.js:** Librerie client che implementano il framework ContextHub, il motore del segmento e i tipi di store.
 * **ui.js:** Librerie client che implementano l&#39;interfaccia utente ContextHub e i tipi di moduli dell&#39;interfaccia utente.
