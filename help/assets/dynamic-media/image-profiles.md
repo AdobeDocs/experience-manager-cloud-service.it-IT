@@ -2,9 +2,9 @@
 title: Profili immagine di Dynamic Media
 description: Potete creare profili immagine per elementi multimediali dinamici contenenti impostazioni per maschere di contrasto e per elementi di ritaglio avanzato, campioni avanzati o entrambi, quindi applicare il profilo a una cartella di risorse di immagini.
 translation-type: tm+mt
-source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
+source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2738'
 ht-degree: 11%
 
 ---
@@ -16,7 +16,7 @@ Quando caricate le immagini, potete ritagliare automaticamente l’immagine al m
 
 >[!IMPORTANT]
 >
->I profili immagine non sono applicabili ai file PDF, GIF o INDD ( Adobe InDesign).
+>I profili immagine non sono applicabili ai file PDF, GIF animata o INDD ( Adobe InDesign).
 
 ## Crop options {#crop-options}
 
