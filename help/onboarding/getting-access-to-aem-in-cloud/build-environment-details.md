@@ -2,9 +2,9 @@
 title: Dettagli ambiente di generazione
 description: Dettagli ambiente build - Cloud Services
 translation-type: tm+mt
-source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
+source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Per impostare una variabile utilizzando CLI, eseguire un comando come:
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-I nomi delle variabili possono contenere solo caratteri alfanumerici e carattere di sottolineatura (_). Per convenzione, i nomi devono essere tutti maiuscoli. Esiste un limite di 200 variabili per pipeline, ogni nome deve essere inferiore a 100 caratteri e ogni valore deve essere inferiore a 2048 caratteri.
+I nomi delle variabili possono contenere solo caratteri alfanumerici e carattere di sottolineatura (_). Per convenzione, i nomi devono essere tutti maiuscoli. Esiste un limite di 200 variabili per pipeline, ogni nome deve essere inferiore a 100 caratteri e ogni valore deve essere inferiore a 2048 caratteri per le variabili di tipo stringa e a 500 caratteri per le variabili di tipo secretString.
 
 Se utilizzata all&#39;interno di un `Maven pom.xml` file, è generalmente utile mappare queste variabili alle proprietà Maven utilizzando una sintassi simile a quella riportata di seguito:
 
@@ -187,5 +187,4 @@ Alcune build richiedono l&#39;installazione di pacchetti di sistema aggiuntivi p
 Questa stessa tecnica può essere utilizzata per installare pacchetti specifici per la lingua, ad esempio per `gem` RubyGems o `pip` per Python Packages.
 
 >[!NOTE]
->
 >L&#39;installazione di un pacchetto di sistema in questo modo **non** lo installa nell&#39;ambiente di runtime utilizzato per eseguire Adobe Experience Manager. Se avete bisogno di installare un pacchetto di sistema nell&#39;ambiente AEM, contattate il rappresentante  Adobe.
