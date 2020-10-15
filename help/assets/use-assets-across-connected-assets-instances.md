@@ -3,10 +3,10 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: Utilizzate le risorse disponibili in una distribuzione [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5a21785883d652508b9fc12c14ff1884e358115f
+source-git-commit: 2ef262dc8ac3b1c0ae2ac9e77d18664eb83270f7
 workflow-type: tm+mt
-source-wordcount: '2136'
-ht-degree: 43%
+source-wordcount: '2201'
+ht-degree: 42%
 
 ---
 
@@ -33,8 +33,8 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
    |  | [!DNL Sites] come Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] su AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] locale |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]come Cloud Service** | Supportato | Supportato | Supportato |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]su AMS** | Supportato | Supportato | Supportato |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]locale** | Non supportato | Non supportato | Non supportato |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] su AMS** | Supportato | Supportato | Supportato |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] locale** | Non supportato | Non supportato | Non supportato |
 
 ### Formati di file supportati {#mimetypes}
 
@@ -195,3 +195,4 @@ Per risolvere eventuali problemi relativi allo scenario di errore comune, proced
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * Una risorsa recuperata dalla diga remota potrebbe non essere pubblicata su una pagina Web per uno o più motivi. Non esiste sul server remoto, mancano le autorizzazioni necessarie per recuperarlo o l&#39;errore di rete può essere dovuto a cause. Assicurarsi che la risorsa non venga rimossa dal DAM remoto. Verificate che siano disponibili le autorizzazioni appropriate e che i prerequisiti siano soddisfatti. Provate ad aggiungere la risorsa alla pagina e ripubblicatela. Controlla l’[elenco dei processi asincroni](/help/operations/asynchronous-jobs.md) per verificare la presenza di errori nel recupero delle risorse.
+* Se non riuscite ad accedere alla distribuzione remota di DAM dalla [!DNL Sites] distribuzione locale, accertatevi che i cookie tra siti siano consentiti. Se i cookie cross-site sono bloccati, le due distribuzioni di [!DNL Experience Manager] potrebbero non essere autenticate. Ad esempio, [!DNL Google Chrome] in modalità Incognito i cookie di terze parti possono essere bloccati. In [!DNL Chrome], fate clic sull&#39;icona &quot;occhio&quot; nella barra degli indirizzi per consentire i cookie o per visualizzare informazioni su [come abilitare i cookie](https://support.google.com/chrome/answer/95647)di terze parti.
