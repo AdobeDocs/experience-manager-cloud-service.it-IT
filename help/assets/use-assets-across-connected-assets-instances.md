@@ -3,7 +3,7 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: Utilizzate le risorse disponibili in una distribuzione [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d7ce3f2d95b520b306d9a6bf0a2e371d1d647752
+source-git-commit: 26294ad57544aa822dc6341fbbd85f396730ee8b
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 42%
@@ -197,4 +197,4 @@ Per risolvere eventuali problemi relativi allo scenario di errore comune, proced
 * Una risorsa recuperata dalla diga remota potrebbe non essere pubblicata su una pagina Web per uno o più motivi. Non esiste sul server remoto, mancano le autorizzazioni necessarie per recuperarlo o l&#39;errore di rete può essere dovuto a cause. Assicurarsi che la risorsa non venga rimossa dal DAM remoto. Verificate che siano disponibili le autorizzazioni appropriate e che i prerequisiti siano soddisfatti. Provate ad aggiungere la risorsa alla pagina e ripubblicatela. Controlla l’[elenco dei processi asincroni](/help/operations/asynchronous-jobs.md) per verificare la presenza di errori nel recupero delle risorse.
 * Se non riuscite ad accedere alla distribuzione DAM remota dalla [!DNL Sites] distribuzione locale, accertatevi che siano consentiti i cookie tra siti. Se i cookie cross-site sono bloccati, le due distribuzioni di [!DNL Experience Manager] potrebbero non essere autenticate. Ad esempio, [!DNL Google Chrome] in modalità Incognito i cookie di terze parti possono essere bloccati. Per consentire i cookie nel [!DNL Chrome] browser, fai clic sull&#39;icona a forma di occhio nella barra degli indirizzi, vai a Sito che non funziona > Bloccato, seleziona l&#39;URL DAM remoto e consenti il cookie del token di login. In alternativa, consulta la guida su [come abilitare i cookie](https://support.google.com/chrome/answer/95647)di terze parti.
 
-![Errore del cookie in Chrome in modalità incognito](assets/chrome-cookies-incognito-dialog.png)
+   ![Errore del cookie in Chrome in modalità incognito](assets/chrome-cookies-incognito-dialog.png)
