@@ -3,10 +3,10 @@ title: Accessibilità in [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità [!DNL Adobe Experience Manager] in un Cloud Service aiutano gli utenti disabili.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 2%
+source-wordcount: '1904'
+ht-degree: 1%
 
 ---
 
@@ -30,22 +30,24 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 # Accessibility in [!DNL Adobe Experience Manager Assets] as a Cloud Service {#accessibility-in-aem-assets}
 
- Adobe si impegna a produrre prodotti per tutti gli utenti, comprese le persone con disabilità. [!DNL Adobe Experience Manager] viene continuamente migliorato per soddisfare le esigenze di tutti i tipi di utenti. [!DNL Experience Manager] pubblica informazioni sulla conformità con i dettagli degli standard cui aderisce, descrive le funzioni di accessibilità del prodotto e descrive il livello di conformità. Consente agli utenti di comprendere l’estensione dell’adesione.
+[!DNL Adobe Experience Manager] consente ai creatori e agli editori di contenuti di distribuire esperienze straordinarie sul Web.  Adobe si adopera per includere i creatori con disabilità migliorando l&#39;accessibilità di [!DNL Experience Manager]. Il software è continuamente migliorato per soddisfare le esigenze di tutti i tipi di utenti e aderire agli standard mondiali che includono individui con disabilità visive, uditive, di mobilità o di altro tipo.
 
-[!DNL Adobe Experience Manager] fornisce diversi livelli di supporto per i seguenti standard:
+[!DNL Experience Manager] pubblica informazioni sulla conformità che descrivono gli standard a cui aderisce, delineano le funzioni di accessibilità del prodotto e descrivono il livello di conformità. Questi rapporti sulla conformità dell&#39;accessibilità consentono [!DNL Experience Manager] agli utenti di comprendere l&#39;estensione dell&#39;adesione. I miglioramenti apportati [!DNL Assets] consentono a tutti gli utenti di utilizzare facilmente le interfacce tramite tastiera, assistente vocale, lenti di ingrandimento e altre tecnologie di supporto.
+
+[!DNL Experience Manager] fornisce diversi livelli di supporto per i seguenti standard:
 
 * [Linee guida per l’accessibilità dei contenuti web (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
-* [Revisione della sezione 508](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
-* [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/).
+* [Revisione della sezione 508 della legge](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)di riabilitazione.
+* [Iniziativa di accessibilità - Accessible Rich Internet Applications (WAI-ARIA) di W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [IT 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-Per accedere al rapporto che descrive in dettaglio i livelli di conformità, consultate la pagina Rapporti sulla conformità dell&#39; [accessibilità ](https://www.adobe.com/accessibility/compliance.html) (ACR) per tutte le soluzioni  Adobe.
+Per accedere al rapporto che descrive in dettaglio i livelli di conformità, consultate la pagina Rapporti [sulla conformità dell&#39;](https://www.adobe.com/accessibility/compliance.html) accessibilità (ACR) per tutte le soluzioni  Adobe.
 
 ## Tecnologie di assistenza {#at-support}
 
-Gli utenti disabili spesso si affidano a hardware e software per accedere ai contenuti Web. Questi strumenti sono noti come tecnologie di assistenza. [!DNL Adobe Experience Manager Assets] utilizzare i seguenti tipi di tecnologie di assistenza per fornire supporto agli utenti quando utilizzano le funzionalità di base del software:
+Gli utenti disabili spesso si affidano a hardware e software per accedere ai contenuti Web. Questi strumenti sono noti come tecnologie di assistenza. [!DNL Experience Manager Assets] può essere utilizzato con i seguenti tipi di tecnologie di assistenza (AT) quando si utilizzano le funzionalità di base del software:
 
-* Assistenti vocali.
+* Lettori dello schermo e lente di ingrandimento dello schermo.
 * Software di riconoscimento vocale.
 * Utilizzo della tastiera: navigazione e scelte rapide.
 * Hardware di supporto, compresi i comandi di interruttore, display Braille aggiornabili e altri dispositivi di input per computer.
@@ -75,8 +77,7 @@ Molti elementi dell&#39;interfaccia utente cliccabili o utilizzabili con un punt
 
 ### Scelte rapide da tastiera in Risorse {#keyboard-shortcuts}
 
-<!-- TBD: Add here only those keyboard shortcuts that work for/with Assets. Do with Oct release.
--->
+Le seguenti azioni in Risorse funzionano con le scelte rapide da tastiera elencate. La maggior parte delle scelte rapide da tastiera applicabili alle [!DNL Experience Manager] console si applica anche alle risorse. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). Scoprite come [abilitare o disabilitare le scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 | Interfaccia utente o scenario | Scelte rapide da tastiera | Azione |
 |---|---|---|
@@ -84,38 +85,37 @@ Molti elementi dell&#39;interfaccia utente cliccabili o utilizzabili con un punt
 | Visualizzazione a colonne nell’interfaccia utente Risorse | Tasti freccia destra e freccia sinistra | Spostatevi su file e cartelle sopra o sotto la cartella corrente. |
 | Esplorazione delle cartelle in Risorse | `/` | Richiamate la ricerca aprendo la casella di ricerca Omnisearch. |
 | Console Risorse | ` | Attiva/disattiva barre laterali |
-| Console Risorse | Alt + 1 | Aprite la struttura del contenuto. |
-| Console Risorse | Alt + 2 | Aprite [!UICONTROL il foglio di navigazione] . |
-| Console Risorse | Alt + 3 | Visualizza la [!UICONTROL timeline] di una risorsa selezionata. |
-| Console Risorse | Alt + 4 | Aprite i riferimenti Live Copy della risorsa selezionata. |
-| Console Risorse | Alt + 5 | Richiama la ricerca e la ricerca nella cartella selezionata. |
+| Console Risorse | `Alt + 1` | Aprite la struttura del contenuto. |
+| Console Risorse | `Alt + 2` | Aprite la barra di [!UICONTROL navigazione] a sinistra. |
+| Console Risorse | `Alt + 3` | Visualizza la [!UICONTROL timeline] di una risorsa selezionata. |
+| Console Risorse | `Alt + 4` | Aprite i riferimenti Live Copy della risorsa selezionata. |
+| Console Risorse | `Alt + 5` | Richiama la ricerca e la ricerca nella cartella selezionata. |
 | Risorsa o cartella selezionata | Backspace | Elimina la risorsa o la cartella selezionata. |
 | Risorsa o cartella selezionata | `p` | Aprite la pagina Proprietà della risorsa selezionata. |
 | Risorsa o cartella selezionata | `e` | Modificate la risorsa selezionata. |
 | Risorsa o cartella selezionata | `m` | Sposta la risorsa selezionata. |
-| Risorsa o cartella selezionata | Ctrl+c | Copia la risorsa selezionata. |
-| Risorsa o cartella selezionata | Esc | Deselezionate la selezione. |
-| Si apre la finestra di dialogo ed è nello stato attivo | Esc | Chiudi, finestra di dialogo. |
-| In una cartella in DAM | Ctrl+v | Incollate la risorsa copiata. |
-| Console Risorse | Ctrl+A | Selezionate tutte le risorse. |
-| Pagine delle proprietà delle risorse | Ctrl + S | Salvare le modifiche. |
+| Risorsa o cartella selezionata | `Ctrl + c` | Copia la risorsa selezionata. |
+| Risorsa o cartella selezionata | `Esc` | Deselezionate la selezione. |
+| Si apre la finestra di dialogo ed è nello stato attivo | `Esc` | Chiudi, finestra di dialogo. |
+| In una cartella in DAM | `Ctrl + v` | Incollate la risorsa copiata. |
+| Console Risorse | `Ctrl + A` | Selezionate tutte le risorse. |
+| Pagine delle proprietà delle risorse | `Ctrl + S` | Salvare le modifiche. |
 | Console Risorse | `?` | Vedere un elenco delle scelte rapide da tastiera. |
-
-La maggior parte delle scelte rapide da tastiera applicabili alle [!DNL Experience Manager] console si applica anche alle risorse. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). Scoprite come [abilitare o disabilitare le scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 ## Accesso e navigazione nell&#39;interfaccia [!DNL Assets] utente {#login}
 
 Gli utenti possono utilizzare la tastiera per navigare nel campo di accesso e compilarlo per effettuare l&#39;accesso. I messaggi di errore dovuti a combinazioni di nome utente e password errate nella pagina di login vengono annunciati dagli assistenti vocali ogni volta che si verifica l&#39;errore.
 
-Dopo l&#39;accesso, gli utenti DAM possono passare all&#39;interfaccia [!DNL Assets] utente utilizzando la tastiera. L&#39;ordine di navigazione della tastiera è da sinistra a destra e dall&#39;alto verso il basso. Quando si naviga utilizzando una tastiera, tutte le opzioni attivabili vengono evidenziate con un contrasto migliore e narrate dall&#39;assistente vocale. Lo stato - espanso o compresso - delle opzioni di messa a fuoco nel menu viene annunciato da un assistente vocale.
+Dopo l&#39;accesso, gli utenti DAM possono spostarsi all&#39;interno dell&#39;interfaccia [!DNL Assets] utente utilizzando la tastiera. Gli elementi dell&#39;interfaccia utente, come la barra a sinistra, i menu, il profilo utente, la barra di ricerca, i file e le cartelle, nonché le impostazioni di amministrazione e configurazione, sono accessibili tramite tastiera. L&#39;ordine di navigazione della tastiera è da sinistra a destra e dall&#39;alto verso il basso. Quando si naviga utilizzando una tastiera, un&#39;opzione utilizzabile quando è attiva l&#39;evidenziazione viene evidenziata con un migliore contrasto di colore e narrata da un assistente vocale. Se appropriato, lo stato, ad esempio espanso, compresso e misto, delle opzioni di attivazione nel menu viene annunciato da un assistente vocale. Inoltre, lo scopo dell&#39;opzione attivabile è annunciato da un assistente vocale, anziché, ad esempio, l&#39;aspetto o la posizione dell&#39;interfaccia utente.
 
-Se un utente espande la guida o l&#39;opzione del profilo utente dal menu, l&#39;opzione o lo stato appropriato vengono annunciati dall&#39;assistente vocale. Se un utente espande l&#39;opzione del profilo utente, è possibile selezionare le opzioni disponibili utilizzando una tastiera. Ad esempio, un utente può rappresentare un altro utente. L&#39;opzione dell&#39;interfaccia utente e il messaggio di errore
+Se un utente espande la guida o l&#39;opzione del profilo utente dal menu, l&#39;opzione o lo stato appropriato vengono annunciati dall&#39;assistente vocale. Se un utente espande l&#39;opzione del profilo utente, è possibile selezionare le opzioni disponibili utilizzando una tastiera. Ad esempio, un amministratore può rappresentare un altro utente. Se un utente cerca una stringa dall’opzione [!UICONTROL Aiuto] , un narratore annuncia &quot;Ricerca nella Guida&quot; per indicare che è in corso una ricerca.
 
-![Navigazione da tastiera delle opzioni principali nell&#39;interfaccia utente  Experience Manager](assets/keyboard-navigation-in-aem.gif)
+<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
-*Figura: Scorrimento delle opzioni nella parte superiore dell&#39;interfaccia utente  Experience Manager tramite`Tab`key.*
+![Keyboard navigation of top options in Experience Manager user interface](assets/keyboard-navigation-in-aem.gif)
 
-Se un utente cerca una stringa dall’opzione [!UICONTROL Aiuto] , un narratore annuncia &quot;Ricerca nella Guida&quot; per indicare che è in corso una ricerca.
+*Figure: Navigating through the options at the top of Experience Manager user interface using `Tab` key.*
+-->
 
 ## Sfogliare le risorse esistenti e visualizzare le relative informazioni {#browse}
 
@@ -143,9 +143,9 @@ Durante la navigazione nell’archivio delle risorse, le seguenti funzionalità 
 * Lo stato attivo dell&#39;utente durante la navigazione con `Tab` la chiave può passare all&#39;opzione di chiusura nell&#39;anteprima della versione.
 * Quando si utilizza la tastiera per la ricerca, le opzioni evidenziate dell&#39;interfaccia utente attivabili hanno una messa a fuoco visiva più evidente e un contrasto migliore. Rende l&#39;area interessata più identificabile per l&#39;utente.
 * L&#39;uso del `Esc` tasto per rimuovere le icone delle azioni rapide dalla visualizzazione delle miniature non rimuove lo stato attivo dall&#39;ultimo elemento attivo.
-* Con una risorsa selezionata, premendo Alt + 4 si apre l&#39;elenco Riferimenti. Utilizzando `Tab` key, gli utenti possono scorrere le voci di riferimento none-zero.
-* I commenti su una risorsa sono disponibili nella timeline della risorsa. È accessibile dalla tastiera.
-* Visualizza impostazioni in  Experience Manager sono accessibili tramite tastiera. L&#39;utente può navigare tra le dimensioni di scheda disponibili utilizzando i tasti freccia e selezionare e navigare tra le varie schede per navigare e impostare altri elementi nella vista Impostazioni di visualizzazione esistente.
+* Con una risorsa selezionata, premendo `Alt + 4` le scelte rapide da tastiera si apre l’elenco [!UICONTROL Riferimenti] nella barra a sinistra. Utilizzando `Tab` key, gli utenti possono scorrere le voci di riferimento diverse da zero. Se si esplorano solo le voci di riferimento diverse da zero, si evitano sforzi e battute.
+* I commenti su una risorsa sono disponibili nella timeline della risorsa. È accessibile se si accede alla barra a sinistra utilizzando una tastiera o una scelta rapida da tastiera.
+* [!UICONTROL Le impostazioni] di visualizzazione in [!DNL Experience Manager] sono accessibili tramite una tastiera. Gli utenti possono navigare tra le dimensioni di scheda disponibili utilizzando i tasti freccia e selezionare e spostarsi tra le varie schede per navigare tra gli altri elementi nella visualizzazione Impostazioni di visualizzazione esistente e impostarne altri.
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -156,7 +156,6 @@ Durante la navigazione nell’archivio delle risorse, le seguenti funzionalità 
 * List the a11y fixes in workflows to configure and administer [!DNL Experience Manager Assets]?
 * Some enhancements in Processing profiles creation or application to a folder?
 * Some enhancements to metadata properties UI?
-
 -->
 
 ## Consente di gestire i contenuti digitali {#manage-assets}
@@ -169,7 +168,7 @@ Per le operazioni relative ai metadati solitamente eseguite da ruoli quali profe
 
 * [!UICONTROL È ora possibile accedere all&#39;opzione Save &amp; Close] nella pagina Proprietà risorsa tramite la tastiera.
 * Gli assistenti vocali annunciano le opzioni per eliminare i tag selezionati nella scheda Base dei pulsanti delle proprietà della risorsa per eliminare i tag selezionati.
-* La finestra di dialogo a comparsa del selettore data può essere utilizzata utilizzando una tastiera. Il selettore data viene utilizzato per impostare i tempi di attivazione e disattivazione.
+* La finestra di dialogo a comparsa del selettore data può essere utilizzata utilizzando una tastiera. L&#39;elemento dell&#39;interfaccia utente per il Datepicker viene utilizzato per impostare tempi e tempi di attivazione.
 * La funzione di trascinamento mediante la tastiera funziona correttamente nell’Editor schema metadati in modalità Sfoglia dell’assistente vocale.
 * Un utente può spostare lo stato attivo utilizzando la tastiera nel campo Aggiungi utente o Gruppo in Gruppo utenti chiuso nella scheda Autorizzazioni di Proprietà cartella.
 
@@ -206,11 +205,14 @@ Quando condividete le risorse, le seguenti funzionalità migliorano l&#39;access
    * Potete passare a tutti i suggerimenti elencati.
    * Narrate i suggerimenti visualizzati per Aggiungi indirizzo e-mail e campi di ricerca.
 
-## Accessibilità in [!DNL Dynamic Media] {#dynamic-media-accessibility}
+<!-- TBD: With more info from the DM team. A few Sev1 issues are fixed and if those are shipped, then mention those here.
 
-Quando si utilizza un elemento multimediale dinamico, è possibile accedere alle seguenti funzionalità:
+## Accessibility in [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
-* Un utente può visualizzare `Flyout`, `InlineZoom`, `Shoppable_Banner`, `Zoom_dark`, `Zoom_light``ZoomVertical_dark`e `ZoomVertical_light` le opzioni in primo piano utilizzando la `Tab` chiave nei visualizzatori dei dettagli delle risorse in [!DNL Dynamic Media].
+When using Dynamic Media, the following functionality helps make it accessible:
+
+* A user can focus to `Flyout`, `InlineZoom`, `Shoppable_Banner`, `Zoom_dark`, `Zoom_light`, `ZoomVertical_dark`, and `ZoomVertical_light` options using `Tab` key in asset details Viewers in [!DNL Dynamic Media].
+-->
 
 ## Documentazione accessibile {#accessible-docs}
 
@@ -224,15 +226,12 @@ Quando si utilizza un elemento multimediale dinamico, è possibile accedere alle
 <!-- 
 ## More resources for accessibility {#a11y-resources}
 
-TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share or leave a link here.
+TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share a reference with asgupta@adobe.com.
 -->
-
-## Miglioramenti nelle [!DNL Experience Manager Assets] versioni {#rn-fixes}
-
-Per un elenco dei miglioramenti specifici effettuati in ciascuna versione, consultate le note [di](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/home.html) rilascio delle rispettive versioni.
 
 >[!MORELIKETHIS]
 >
->* [Guida all&#39;accessibilità AEM](/help/onboarding/accessibility/web-accessibility.md)
->* [Relazioni di conformità per le soluzioni  Adobe](https://www.adobe.com/accessibility/compliance.html)
+>* [Note sulla versione di miglioramenti specifici effettuati in ciascuna versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>* [AEM guida](/help/onboarding/accessibility/web-accessibility.md)all&#39;accessibilità.
+>* [Rapporti di conformità per  soluzioni](https://www.adobe.com/accessibility/compliance.html)di Adobe.
 
