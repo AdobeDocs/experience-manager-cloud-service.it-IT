@@ -3,9 +3,9 @@ title: Accessibilità in [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità [!DNL Adobe Experience Manager] in un Cloud Service aiutano gli utenti disabili.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 [!DNL Adobe Experience Manager] consente ai creatori e agli editori di contenuti di distribuire esperienze straordinarie sul Web.  Adobe si adopera per includere i creatori con disabilità migliorando l&#39;accessibilità di [!DNL Experience Manager]. Il software è continuamente migliorato per soddisfare le esigenze di tutti i tipi di utenti e aderire agli standard mondiali che includono individui con disabilità visive, uditive, di mobilità o di altro tipo.
 
-[!DNL Experience Manager] pubblica informazioni sulla conformità che descrivono gli standard a cui aderisce, delineano le funzioni di accessibilità del prodotto e descrivono il livello di conformità. Questi rapporti sulla conformità dell&#39;accessibilità consentono [!DNL Experience Manager] agli utenti di comprendere l&#39;estensione dell&#39;adesione. I miglioramenti apportati [!DNL Assets] consentono a tutti gli utenti di utilizzare facilmente le interfacce tramite tastiera, assistente vocale, lenti di ingrandimento e altre tecnologie di supporto.
+[!DNL Experience Manager] pubblica informazioni sulla conformità che descrivono gli standard a cui aderisce, delineano le funzioni di accessibilità del prodotto e descrivono il livello di conformità. Questi rapporti sulla conformità dell&#39;accessibilità consentono [!DNL Experience Manager] agli utenti di comprendere l&#39;estensione dell&#39;aderenza. I miglioramenti apportati [!DNL Assets] consentono a tutti gli utenti di utilizzare facilmente le interfacce tramite tastiera, assistente vocale, lenti di ingrandimento e altre tecnologie di supporto.
 
 [!DNL Experience Manager] fornisce diversi livelli di supporto per i seguenti standard:
 
@@ -77,7 +77,7 @@ Molti elementi dell&#39;interfaccia utente cliccabili o utilizzabili con un punt
 
 ### Scelte rapide da tastiera in Risorse {#keyboard-shortcuts}
 
-Le seguenti azioni in Risorse funzionano con le scelte rapide da tastiera elencate. La maggior parte delle scelte rapide da tastiera applicabili alle [!DNL Experience Manager] console si applica anche alle risorse. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). Scoprite come [abilitare o disabilitare le scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Le seguenti azioni in Risorse funzionano con le scelte rapide da tastiera elencate. La maggior parte delle scelte rapide da tastiera applicabili alle [!DNL Experience Manager] console si applica anche alle risorse. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Scoprite come [abilitare o disabilitare le scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 | Interfaccia utente o scenario | Scelte rapide da tastiera | Azione |
 |---|---|---|
@@ -192,7 +192,7 @@ Quando filtrate i risultati della ricerca:
 
 ## Condividere le risorse {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 Quando condividete le risorse, le seguenti funzionalità migliorano l&#39;accessibilità:
