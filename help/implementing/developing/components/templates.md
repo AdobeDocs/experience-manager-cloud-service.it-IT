@@ -2,7 +2,7 @@
 title: Modelli di pagina
 description: I modelli di pagina vengono utilizzati per creare una pagina che verrà utilizzata come base per la nuova pagina
 translation-type: tm+mt
-source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 8%
@@ -156,7 +156,7 @@ Viene creato un elenco di tutte le voci consentite. Se una configurazione si sov
 Per creare una nuova cartella, potete effettuare le seguenti operazioni:
 
 * Programmaticamente o con CRXDE Lite
-* Utilizzo del browser di configurazione
+* Utilizzo del browser [di configurazione](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Utilizzo di CRXDE Lite {#using-crxde-lite}
 
@@ -189,7 +189,7 @@ Per creare una nuova cartella, potete effettuare le seguenti operazioni:
 
 ### Utilizzo del browser di configurazione {#using-the-configuration-browser}
 
-1. Andate a Navigazione **** globale > **Strumenti** > **Browser** di configurazione.
+1. Andate a Navigazione **** globale > **Strumenti** > [**Browser** di configurazione.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    Le cartelle esistenti sono elencate a sinistra, inclusa la `global` cartella.
 
@@ -203,7 +203,7 @@ Per creare una nuova cartella, potete effettuare le seguenti operazioni:
 
 >[!NOTE]
 >
->Nel browser di configurazione, potete modificare la cartella globale e attivare l’opzione Modelli **** modificabili se desiderate creare dei modelli all’interno di questa cartella, ma questa non è la procedura consigliata.
+>Nel browser [di configurazione,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) potete modificare la cartella globale e attivare l’opzione Modelli **** modificabili se desiderate creare dei modelli all’interno di questa cartella, ma questa è una procedura consigliata.
 
 ### ACL e gruppi {#acls-and-groups}
 
