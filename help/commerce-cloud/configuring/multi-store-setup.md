@@ -1,11 +1,11 @@
 ---
 title: Configurazione di più store
 description: Configurazione di più store
-translation-type: ht
-source-git-commit: 94c6abef36b6add300ba3b24855ebf3edf10e1ed
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ I componenti core CIF di AEM possono essere utilizzati su più strutture di siti
 
 Una procedura video dettagliata che illustra le opzioni di integrazione di più visualizzazioni store di Magento con Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 Le funzioni Live Copy e Copia per lingua di AEM per la gestione di più siti sono utilizzate insieme a Commerce Integration Framework (CIF) per gestire globalmente i siti per diverse aree geografiche e lingue.
 
@@ -32,7 +32,7 @@ Per collegare un sito AEM e i componenti core CIF di AEM a una visualizzazione d
 
 3. Crea una configurazione figlio della configurazione di Cloud Service CIF:
 
-   * In AEM, passa a Strumenti > Generale > Browser di configurazione.
+   * In AEM go to Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Seleziona la configurazione di base creata.
    * Crea una nuova configurazione seguendo i passaggi descritti al punto 2 precedente.
 
