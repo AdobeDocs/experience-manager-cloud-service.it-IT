@@ -2,7 +2,7 @@
 title: Modelli per frammenti di contenuto
 description: I modelli di frammenti di contenuto vengono utilizzati per creare frammenti di contenuto con contenuto strutturato.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 22%
@@ -22,12 +22,12 @@ I modelli di frammenti di contenuto definiscono la struttura del contenuto per i
 
 Per abilitare i modelli di frammenti di contenuto è necessario:
 
-* Abilitare l&#39;utilizzo di modelli di frammento di contenuto in Gestione configurazione
+* Abilitare l&#39;uso di modelli di frammento di contenuto nel browser di configurazione
 * Applica la configurazione alla cartella Risorse
 
-### Abilitare i modelli di frammento di contenuto in Configuration Manager {#enable-content-fragment-models-in-configuration-manager}
+### Abilita modelli di frammenti di contenuto nel browser di configurazione {#enable-content-fragment-models-in-configuration-browser}
 
-Per [creare un nuovo modello](#creating-a-content-fragment-model) di frammento di contenuto, è **necessario** innanzitutto attivarlo utilizzando Gestione configurazione:
+Per [creare un nuovo modello](#creating-a-content-fragment-model) di frammento di contenuto, è **necessario** innanzitutto attivarlo utilizzando il browser [di configurazione:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 1. Accedi a **Strumenti**, **Generali**, quindi apri **Browser configurazioni**.
 2. Selezionate la posizione appropriata per il sito Web.
@@ -92,16 +92,15 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 
    ![tipo di dati su campo](assets/cfm-models-04.png)
 
-   * Una volta aggiunto un campo al modello, nel pannello a destra vengono visualizzate le **proprietà** che è possibile definire per quel particolare tipo di dati. Qui è possibile definire i requisiti necessari per tale campo. Ad esempio:
+   * Una volta aggiunto un campo al modello, nel pannello a destra vengono visualizzate le **proprietà** che è possibile definire per quel particolare tipo di dati. Qui è possibile definire i requisiti necessari per tale campo. Esempio:
 
    ![proprietà del campo](assets/cfm-models-05.png)
 
    >[!NOTE]
-   >
-   >Per il tipo di dati **Testo su più righe** è possibile definire il **Tipo predefinito** come:
-   >* **Formato RTF**
-   >* **Markdown**
-   >* **Testo normale**
+   Per il tipo di dati **Testo su più righe** è possibile definire il **Tipo predefinito** come:
+   * **Formato RTF**
+   * **Markdown**
+   * **Testo normale**
 
    Se non viene specificato, per questo campo viene utilizzato il valore predefinito **RTF** .
    La modifica del **Tipo predefinito** in un modello per frammenti di contenuto avrà effetto solo su un frammento esistente correlato, una volta che il frammento è stato aperto nell’editor e successivamente salvato.
@@ -112,15 +111,14 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 
    ![rimuovere](assets/cfm-models-06.png)
 
-1. Dopo aver aggiunto tutti i campi obbligatori e definito le proprietà, utilizzate **Salva** per mantenere la definizione. Ad esempio:
+1. Dopo aver aggiunto tutti i campi obbligatori e definito le proprietà, utilizzate **Salva** per mantenere la definizione. Esempio:
 
    ![save](assets/cfm-models-07.png)
 
 ## Eliminazione di un modello di frammento di contenuto {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->L&#39;eliminazione di un modello di frammento di contenuto può avere un impatto sui frammenti dipendenti.
+L&#39;eliminazione di un modello di frammento di contenuto può avere un impatto sui frammenti dipendenti.
 
 Per eliminare un modello di frammento di contenuto:
 
@@ -130,8 +128,7 @@ Per eliminare un modello di frammento di contenuto:
 1. Selezionate il modello, seguito da **Elimina** dalla barra degli strumenti.
 
    >[!NOTE]
-   >
-   >Se al modello viene fatto riferimento, verrà visualizzato un avviso. Adottare le misure appropriate.
+   Se al modello viene fatto riferimento, verrà visualizzato un avviso. Adottare le misure appropriate.
 
 ## Pubblicazione di un modello di frammento di contenuto {#publishing-a-content-fragment-model}
 
@@ -145,5 +142,4 @@ Per pubblicare un modello di frammento di contenuto:
 1. Selezionate il modello, seguito da **Pubblica** dalla barra degli strumenti.
 
    >[!NOTE]
-   >
-   >Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato insieme al frammento.
+   Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato insieme al frammento.
