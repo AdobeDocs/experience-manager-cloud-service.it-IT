@@ -1,19 +1,23 @@
 ---
-source-git-commit: 9b710d8001641cf9b79fff9129d8c162bee5e479
+source-git-commit: 2ac87c5356579ea650cd3d34219e75eb1940f24b
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '143'
-ht-degree: 1%
+source-wordcount: '225'
+ht-degree: 3%
 
 ---
-# Documentazione del servizio Adobe Experience Manager Cloud
+# Documentazione Cloud Service Adobe Experience Manager
+
+| EXL-PR | EXL | Anteprima | Attiva | Pubblicato | Aiuto |
+|--- |--- |--- |--- |--- |--- |
+| [![Stato build](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-service.en_pr-exl/lastBuild/) | [![Stato build](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-service.en_exl/lastBuild/lastBuild) | [URL anteprima](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/sites/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [URL dal vivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html?lang=en) | [Guida all’authoring](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 | Produzione | Area di visualizzazione |
 |---|---|
 | [![Stato build](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/lastBuild) | [![Stato build](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/lastBuild) |
 | [Prod di output](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) | [Output Stg](https://docs-stg.corp.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) |
 
-Questo è l&#39;archivio della documentazione del servizio Adobe Experience Manager Cloud. Questa documentazione descrive l’installazione, l’amministrazione, l’utilizzo dell’authoring e come personalizzare AEM con il servizio Cloud.
+Questo è l&#39;archivio della documentazione di Adobe Experience Manager Cloud Service. Questa documentazione descrive l’installazione, l’amministrazione, l’utilizzo dell’authoring e come personalizzare AEM utilizzando l’Cloud Service.
 
 I vostri contributi alla documentazione sono i benvenuti. Consulta le risorse seguenti:
 
