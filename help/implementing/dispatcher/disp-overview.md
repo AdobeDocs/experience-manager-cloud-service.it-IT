@@ -2,9 +2,9 @@
 title: Dispatcher nel cloud
 description: 'Dispatcher nel cloud '
 translation-type: tm+mt
-source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
+source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
 workflow-type: tm+mt
-source-wordcount: '3824'
+source-wordcount: '4073'
 ht-degree: 9%
 
 ---
@@ -14,29 +14,29 @@ ht-degree: 9%
 
 ## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
 
-Questa sezione descrive come strutturare il AEM come configurazioni Apache e Dispatcher di Cloud Service, nonché come convalidarlo ed eseguirlo localmente prima di distribuirlo negli ambienti Cloud. Inoltre, descrive il debug negli ambienti Cloud. Per ulteriori informazioni su Dispatcher, consultate la [AEM documentazione](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)di Dispatcher.
+Questa sezione descrive come strutturare il AEM come configurazioni di Cloud Service Apache e Dispatcher, nonché come convalidarlo ed eseguirlo localmente prima di distribuirlo negli ambienti Cloud. Inoltre, descrive il debug negli ambienti Cloud. Per ulteriori informazioni sul dispatcher, consulta la [AEM documentazione](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)del dispatcher.
 
 >[!NOTE]
 >
->Gli utenti Windows dovranno utilizzare Windows 10 Professional o altre distribuzioni che supportano Docker. Questo è un prerequisito per l&#39;esecuzione e il debug di Dispatcher su un computer locale. Le sezioni seguenti includono comandi che utilizzano le versioni Mac o Linux dell&#39;SDK, ma l&#39;SDK di Windows può essere utilizzato in modo simile.
+>Gli utenti Windows dovranno utilizzare Windows 10 Professional o altre distribuzioni che supportano Docker. Questo è un prerequisito per l&#39;esecuzione e il debug del dispatcher su un computer locale. Le sezioni seguenti includono comandi che utilizzano le versioni Mac o Linux dell&#39;SDK, ma l&#39;SDK di Windows può essere utilizzato in modo simile.
 
 >[!WARNING]
 >
->Utenti Windows: la versione corrente di AEM come Cloud Service locale di Dispatcher Tools (v2.0.20) non è compatibile con Windows. Contattate [Adobe](https://daycare.day.com/home.html) per ricevere gli aggiornamenti sulla compatibilità di Windows.
+>Utenti Windows: la versione corrente di AEM come Cloud Service di strumenti Dispatcher locali (v2.0.20) è incompatibile con Windows. Contattate [Adobe](https://daycare.day.com/home.html) per ricevere gli aggiornamenti sulla compatibilità di Windows.
 
 ## Strumenti Dispatcher {#dispatcher-sdk}
 
-Dispatcher Tools fa parte del AEM generale come SDK per Cloud Service e fornisce:
+Gli strumenti Dispatcher fanno parte del AEM generale come SDK per Cloud Service e forniscono:
 
-* una struttura di file di vaniglia contenente i file di configurazione da includere in un progetto di speditore di lievito;
-* Collaborazione per consentire ai clienti di convalidare localmente una configurazione dispatcher;
+* Una struttura di file di vaniglia contenente i file di configurazione da includere in un progetto maven per dispatcher.
+* Un pool per consentire ai clienti di verificare che la configurazione del dispatcher includa solo AEM come direttive supportate dal Cloud Service.        Inoltre, il tooling convalida che la sintassi sia corretta, in modo che apache possa avviarsi correttamente.
 * Un&#39;immagine Docker che riproduce localmente il dispatcher.
 
 ## Download ed estrazione degli strumenti {#extracting-the-sdk}
 
-Dispatcher Tools può essere scaricato da un file zip sul portale di distribuzione [](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) software . L&#39;accesso agli elenchi dell&#39;SDK è limitato a quelli con AEM Managed Services o AEM come ambienti di Cloud Service. Qualsiasi nuova configurazione disponibile nella nuova versione del dispatcher Tools può essere utilizzata per distribuire agli ambienti Cloud in cui è in esecuzione la versione di AEM nel Cloud o versioni successive.
+Gli strumenti Dispatcher possono essere scaricati da un file zip sul portale [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) . L&#39;accesso agli elenchi dell&#39;SDK è limitato a quelli con AEM Managed Services o AEM come ambienti di Cloud Service. Qualsiasi nuova configurazione disponibile nella nuova versione del dispatcher Tools può essere utilizzata per distribuire agli ambienti Cloud in cui è in esecuzione la versione di AEM nel Cloud o versioni successive.
 
-**Per macOS e Linux**, scaricate lo script shell in una cartella del computer, rendetelo eseguibile ed eseguitelo. Estrarre automaticamente i file Dispatcher Tools sotto la directory in cui `version` è memorizzato (dove si trova la versione di Strumenti dispatcher).
+**Per macOS e Linux**, scaricate lo script shell in una cartella del computer, rendetelo eseguibile ed eseguitelo. Estrarre automaticamente i file Dispatcher Tools sotto la directory in cui `version` è memorizzato (dove si trova la versione del dispatcher Tools).
 
 ```bash
 $ chmod +x DispatcherSDKv<version>.sh
@@ -194,13 +194,13 @@ Globo host predefinito adatto a un progetto standard. Se avete bisogno di person
 
 Le sezioni seguenti descrivono come convalidare la configurazione localmente in modo che possa superare il gate di qualità associato in Cloud Manager durante la distribuzione di una versione interna.
 
-## Convalida locale della configurazione Dispatcher {#local-validation-of-dispatcher-configuration}
+## Convalida locale delle direttive supportate nella configurazione del dispatcher {#local-validation-of-dispatcher-configuration}
 
 Lo strumento di convalida è disponibile nell’SDK `bin/validator` come binario Mac OS, Linux o Windows, per consentire ai clienti di eseguire la stessa convalida che Cloud Manager eseguirà durante la creazione e la distribuzione di una versione.
 
 Viene richiamato come: `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-Lo strumento convalida la configurazione Apache e dispatcher. Consente di analizzare tutti i file con il pattern `conf.d/enabled_vhosts/*.vhost` e di verificare che vengano utilizzate solo le direttive inserite nell&#39;elenco Consentiti. Le direttive consentite nei file di configurazione Apache possono essere elencate eseguendo il comando di inserì nell&#39;elenco Consentiti  convalida:
+Lo strumento verifica che la configurazione del dispatcher utilizzi le direttive appropriate supportate da AEM come servizio Cloud, eseguendo la scansione di tutti i file con il pattern `conf.d/enabled_vhosts/*.vhost`. Le direttive consentite nei file di configurazione Apache possono essere elencate eseguendo il comando di inserì nell&#39;elenco Consentiti  convalida:
 
 ```
 $ validator whitelist
@@ -239,7 +239,7 @@ La tabella seguente mostra i moduli apache supportati:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-I clienti non possono aggiungere moduli arbitrari, ma in futuro potrebbero essere presi in considerazione moduli aggiuntivi per l&#39;inclusione nel prodotto. I clienti possono trovare l&#39;elenco delle direttive disponibili per una determinata versione di Dispatcher eseguendo il comando di inserì nell&#39;elenco Consentiti  validator nell&#39;SDK, come descritto in precedenza.
+I clienti non possono aggiungere moduli arbitrari, ma in futuro potrebbero essere presi in considerazione moduli aggiuntivi per l&#39;inclusione nel prodotto. I clienti possono trovare l&#39;elenco delle direttive disponibili per una determinata versione del dispatcher eseguendo il comando di inserì nell&#39;elenco Consentiti  convalida nell&#39;SDK, come descritto in precedenza.
 
 Il inserire nell&#39;elenco Consentiti  contiene un elenco di direttive Apache consentite in una configurazione cliente. Se una direttiva non viene inserita nell&#39;elenco Consentiti, lo strumento registra un errore e restituisce un codice di uscita diverso da zero. Se non viene  inserì nell&#39;elenco Consentiti sulla riga di comando (che è il modo in cui dovrebbe essere invocato), lo strumento utilizza un inserire nell&#39;elenco Consentiti  predefinito che Cloud Manager utilizzerà per la convalida prima della distribuzione negli ambienti Cloud.
 
@@ -261,11 +261,9 @@ Cloud manager validator 1.0.4
 
 Lo strumento di convalida segnala solo l&#39;uso vietato di direttive Apache che non sono state inserite nell&#39;elenco Consentiti. Non segnala problemi sintattici o semantici con la configurazione Apache, in quanto tali informazioni sono disponibili solo per i moduli Apache in un ambiente in esecuzione.
 
-Se non viene segnalato alcun errore di convalida, la configurazione è pronta per la distribuzione.
-
 Di seguito sono illustrate le tecniche di risoluzione dei problemi per il debug di errori di convalida comuni generati dallo strumento:
 
-**impossibile individuare una`conf.dispatcher.d`sottocartella nell&#39;archivio**
+**impossibile individuare una `conf.dispatcher.d` sottocartella nell&#39;archivio**
 
 L’archivio deve contenere le cartelle `conf.d` e `conf.dispatcher.d`. Nota: **non** utilizzare il
 prefisso `etc/httpd` nell’archivio.
@@ -348,13 +346,41 @@ Si noti che non esiste una versione predefinita dei file delle variabili.
 
 Questo messaggio indica che la configurazione ha il layout obsoleto della versione 1, contenente una configurazione completeApache e file con `ams_` prefissi. Anche se questo è ancora supportato per la compatibilità con le versioni precedenti, è necessario passare al nuovo layout.
 
+## Convalida locale della sintassi di configurazione del dispatcher in modo che apache httpd possa avviare {#local-validation}
+
+Una volta stabilito che la configurazione del modulo dispatcher include solo direttive supportate, è necessario verificare che la sintassi sia corretta in modo che apache possa avviarsi. Per testarlo, il docker deve essere installato localmente. E notate che non è necessario AEM essere in funzione.
+
+Utilizzate lo `validate.sh` script come mostrato di seguito:
+
+```
+$ validate.sh src/dispatcher
+Phase 1: Dispatcher validator
+2019/06/19 16:02:55 No issues found
+Phase 1 finished
+Phase 2: httpd -t validation in docker image
+Running script /docker_entrypoint.d/10-create-docroots.sh
+Running script /docker_entrypoint.d/20-wait-for-backend.sh
+Waiting until aemhost is available
+aemhost resolves to xx.xx.xx.xx
+Running script /docker_entrypoint.d/30-allowed-clients.sh
+# Dispatcher configuration: (/etc/httpd/conf.dispatcher.d/dispatcher.any)
+/farms {
+...
+}
+Syntax OK
+Phase 2 finished
+```
+
+Lo script esegue le seguenti operazioni:
+
+1. Esegue la convalida dalla sezione precedente per garantire che siano incluse solo le direttive supportate. Se la configurazione non è valida, lo script non riuscirà.
+2. Viene eseguito il test `httpd -t command` per verificare se la sintassi è corretta in modo che apache httpd possa iniziare. In caso di esito positivo, la configurazione dovrebbe essere pronta per la distribuzione
+
 ## Verifica locale della configurazione Apache e Dispatcher {#testing-apache-and-dispatcher-configuration-locally}
 
-È inoltre possibile testare localmente la configurazione Apache e Dispatcher. Richiede che Docker sia installato localmente e che la configurazione superi la convalida come descritto in precedenza.
+È inoltre possibile testare localmente la configurazione Apache e Dispatcher. Richiede che il docker venga installato localmente e che la configurazione superi la convalida come descritto in precedenza.
 
-Utilizzando il parametro &quot;`-d`&quot;, il validatore genera una cartella con tutti i file di configurazione necessari al dispatcher.
-
-Quindi, lo `docker_run.sh` script può puntare a tale cartella, avviando il contenitore con la configurazione.
+Eseguire lo strumento di convalida utilizzando il parametro &quot;`-d`&quot; che genera una cartella con tutti i file di configurazione necessari al dispatcher. Quindi, lo `docker_run.sh` script può puntare a tale cartella. Fornendo il numero di porta (nell&#39;esempio seguente, 8080) per esporre l&#39;endpoint del dispatcher, il contenitore viene avviato con la configurazione.
 
 ```
 $ validator full -d out src/dispatcher
@@ -373,9 +399,37 @@ Questo avvia il dispatcher in un contenitore con il relativo backend che punta a
 
 ## Debug della configurazione Apache e Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-I livelli di registro sono definiti dalle variabili `DISP_LOG_LEVEL` e `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s&quot;. See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
+La seguente strategia può essere utilizzata per aumentare l&#39;output di registro per il modulo dispatcher e vedere i risultati della `RewriteRule` valutazione negli ambienti locali e cloud.
 
-## Diverse configurazioni Dispatcher per l&#39;ambiente {#different-dispatcher-configurations-per-environment}
+I livelli di registro per tali moduli sono definiti dalle variabili `DISP_LOG_LEVEL` e `REWRITE_LOG_LEVEL`. Possono essere impostati nel file `conf.d/variables/global.vars`. La sua parte relativa segue:
+
+```
+# Log level for the dispatcher
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1
+# Default value: Warn
+#
+# Define DISP_LOG_LEVEL Warn
+ 
+# Log level for mod_rewrite
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
+# Default value: Warn
+#
+# To debug your RewriteRules, it is recommended to raise your log
+# level to Trace2.
+#
+# More information can be found at:
+# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
+#
+# Define REWRITE_LOG_LEVEL Warn
+```
+
+Quando si esegue il dispatcher localmente, i file di registro vengono stampati direttamente nell&#39;output del terminale. Nella maggior parte dei casi, si desidera che questi registri siano in DEBUG, che può essere fatto passando il livello Debug come parametro quando si esegue Docker. Esempio: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+
+I registri per gli ambienti cloud sono esposti tramite il servizio di registrazione disponibile in Cloud Manager.
+
+## Diverse configurazioni del dispatcher per ambiente {#different-dispatcher-configurations-per-environment}
 
 Al momento, la stessa configurazione del dispatcher viene applicata a tutti i AEM come ambienti di Cloud Service. Il runtime avrà una variabile di ambiente `ENVIRONMENT_TYPE` che contiene la modalità di esecuzione corrente (dev, stage o prod) e una definizione. La definizione può essere `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` o `ENVIRONMENT_PROD`. Nella configurazione Apache, la variabile può essere utilizzata direttamente in un&#39;espressione. In alternativa, è possibile utilizzare la definizione per creare logica:
 
@@ -394,7 +448,7 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 </IfDefine>
 ```
 
-Nella configurazione Dispatcher, è disponibile la stessa variabile di ambiente. Se è necessaria una maggiore logica, definite le variabili come illustrato nell&#39;esempio precedente e utilizzatele nella sezione di configurazione di Dispatcher:
+Nella configurazione Dispatcher, è disponibile la stessa variabile di ambiente. Se è necessaria una maggiore logica, definite le variabili come illustrato nell’esempio precedente e utilizzatele nella sezione di configurazione del dispatcher:
 
 ```
 /virtualhosts {
@@ -411,11 +465,11 @@ $ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
 La modalità di esecuzione predefinita quando non viene passato un valore per DISP_RUN_MODE è &quot;dev&quot;.
 Per un elenco completo delle opzioni e delle variabili disponibili, eseguire lo script `docker_run.sh` senza argomenti.
 
-## Visualizzazione della configurazione Dispatcher in uso da parte del contenitore Docker {#viewing-dispatcher-configuration-in-use-by-docker-container}
+## Visualizzazione della configurazione del dispatcher in uso dal contenitore Docker {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-Con configurazioni specifiche per l&#39;ambiente, può essere difficile determinare l&#39;aspetto della configurazione Dispatcher effettiva. Dopo aver avviato il contenitore docker con `docker_run.sh` esso può essere scaricato come segue:
+Con configurazioni specifiche per l&#39;ambiente, può essere difficile determinare l&#39;aspetto della configurazione effettiva del dispatcher. Dopo aver avviato il contenitore docker con `docker_run.sh` esso può essere scaricato come segue:
 
-* Determinare l&#39;ID contenitore docker in uso:
+* Determinare l&#39;ID del contenitore docker in uso:
 
 ```
 $ docker ps
@@ -434,13 +488,13 @@ $ docker exec d75fbd23b29 httpd-test
 ...
 ```
 
-## Differenze principali tra AMS Dispatcher e AEM come Cloud Service {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
+## Differenze principali tra il dispatcher AMS e AEM come Cloud Service {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
 Come descritto nella pagina di riferimento precedente, la configurazione Apache e Dispatcher in AEM come Cloud Service è abbastanza simile a quella di AMS. Le principali differenze sono:
 
 * In AEM come Cloud Service, alcune direttive Apache non possono essere utilizzate (ad esempio `Listen` o `LogLevel`)
-* In AEM come Cloud Service, solo alcuni elementi della configurazione Dispatcher possono essere inseriti in file di inclusione e la loro denominazione è importante. Ad esempio, le regole del filtro che si desidera riutilizzare tra host diversi devono essere inserite in un file denominato `filters/filters.any`. Per ulteriori informazioni, consultate la pagina di riferimento.
-* In AEM come Cloud Service c&#39;è una convalida supplementare per non consentire le regole di filtro scritte utilizzando `/glob` per prevenire problemi di sicurezza. Poiché `deny *` verranno utilizzati piuttosto che `allow *` (che non possono essere utilizzati), i clienti trarranno vantaggio dall&#39;esecuzione locale dell&#39;Dispatcher e dall&#39;esecuzione di tentativi ed errori, esaminando i registri per sapere esattamente quali percorsi i filtri Dispatcher stanno bloccando per poter aggiungere tali percorsi.
+* In AEM come Cloud Service, solo alcuni elementi della configurazione del Dispatcher possono essere inseriti include file e la loro denominazione è importante. Ad esempio, le regole del filtro che si desidera riutilizzare tra host diversi devono essere inserite in un file denominato `filters/filters.any`. Per ulteriori informazioni, consultate la pagina di riferimento.
+* In AEM come Cloud Service c&#39;è una convalida supplementare per non consentire le regole di filtro scritte utilizzando `/glob` per prevenire problemi di sicurezza. Poiché `deny *` verranno utilizzati invece di `allow *` (che non possono essere utilizzati), i clienti trarranno vantaggio dall&#39;esecuzione locale del Dispatcher e dall&#39;esecuzione di tentativi ed errori, dall&#39;analisi dei registri per sapere esattamente quali percorsi i filtri del Dispatcher bloccano per poter aggiungere tali percorsi.
 
 ## Linee guida per la migrazione della configurazione del dispatcher da AMS a AEM come Cloud Service
 
