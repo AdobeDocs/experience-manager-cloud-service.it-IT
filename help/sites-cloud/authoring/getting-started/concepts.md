@@ -2,9 +2,9 @@
 title: Concetti relativi all’authoring
 description: Concetti relativi all’authoring in AEM
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 92434d0dc29ac5fe1b395a2d34c8e48e2fdb7c97
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '349'
 ht-degree: 100%
 
 ---
@@ -27,10 +27,6 @@ L’ambiente di authoring fornisce le funzioni necessarie per creare, aggiornare
 ![Diagramma relativo a authoring, pubblicazione e dispatcher](/help/sites-cloud/authoring/assets/author-publish.png)
 
 Nell’ambiente di authoring è possibile accedere alle funzionalità di AEM tramite l’interfaccia di authoring di AEM. Nell’ambiente di pubblicazione vengono invece progettati l’aspetto e il comportamento dell’interfaccia presentata agli utenti.
-
->[!NOTE]
->
->Anche la documentazione di AEM è stata pubblicata con AEM.
 
 ## Ambiente di authoring {#author-environment}
 
@@ -65,4 +61,4 @@ Per ulteriori informazioni sulla pubblicazione e sull’annullamento della pubbl
 
 ## Dispatcher {#dispatcher}
 
-Per ottimizzare le prestazioni dal punto di vista dei visitatori del sito web, vengono usati **[dispatcher](/help/implementing/dispatcher/overview.md)**che implementano funzioni di bilanciamento del carico e memorizzazione in cache.
+Per ottimizzare le prestazioni dal punto di vista dei visitatori del sito web, vengono usati **[dispatcher](/help/implementing/dispatcher/overview.md)** che implementano funzioni di bilanciamento del carico e memorizzazione in cache.
