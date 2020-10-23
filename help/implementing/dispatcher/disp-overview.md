@@ -2,9 +2,9 @@
 title: Dispatcher nel cloud
 description: 'Dispatcher nel cloud '
 translation-type: tm+mt
-source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
+source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
 workflow-type: tm+mt
-source-wordcount: '4073'
+source-wordcount: '4082'
 ht-degree: 9%
 
 ---
@@ -34,18 +34,19 @@ Gli strumenti Dispatcher fanno parte del AEM generale come SDK per Cloud Service
 
 ## Download ed estrazione degli strumenti {#extracting-the-sdk}
 
-Gli strumenti Dispatcher possono essere scaricati da un file zip sul portale [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) . L&#39;accesso agli elenchi dell&#39;SDK è limitato a quelli con AEM Managed Services o AEM come ambienti di Cloud Service. Qualsiasi nuova configurazione disponibile nella nuova versione del dispatcher Tools può essere utilizzata per distribuire agli ambienti Cloud in cui è in esecuzione la versione di AEM nel Cloud o versioni successive.
+Gli strumenti Dispatcher, parte del [AEM come SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)di Cloud Service, possono essere scaricati da un file zip nel portale di distribuzione [](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) software. Qualsiasi nuova configurazione disponibile nella nuova versione di dispatcher Tools può essere utilizzata per distribuire agli ambienti Cloud in cui è in esecuzione la versione di AEM nel cloud o versioni successive.
+/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdUnzip dell’SDK, che include gli strumenti di dispatcher per macOS/Linux e Windows.
 
-**Per macOS e Linux**, scaricate lo script shell in una cartella del computer, rendetelo eseguibile ed eseguitelo. Estrarre automaticamente i file Dispatcher Tools sotto la directory in cui `version` è memorizzato (dove si trova la versione del dispatcher Tools).
+**Per macOS/Linux**, esegui l’artifact dello strumento dispatcher ed eseguilo. Estrarre automaticamente i file Dispatcher Tools sotto la directory in cui `version` è memorizzato (dove si trova la versione del dispatcher Tools).
 
 ```bash
-$ chmod +x DispatcherSDKv<version>.sh
-$ ./DispatcherSDKv<version>.sh
+$ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
+$ ./aem-sdk-dispatcher-tools-<version>-unix.sh
 Verifying archive integrity...  100%   All good.
-Uncompressing DispatcherSDKv<version>  100% 
+Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**Per Windows**, scaricate l’archivio ZIP ed estraetelo.
+**Per Windows**, estrarre l&#39;archivio ZIP Dispatcher Tooling.
 
 ## Struttura file {#file-structure}
 
@@ -380,7 +381,7 @@ Lo script esegue le seguenti operazioni:
 
 È inoltre possibile testare localmente la configurazione Apache e Dispatcher. Richiede che il docker venga installato localmente e che la configurazione superi la convalida come descritto in precedenza.
 
-Eseguire lo strumento di convalida utilizzando il parametro &quot;`-d`&quot; che genera una cartella con tutti i file di configurazione necessari al dispatcher. Quindi, lo `docker_run.sh` script può puntare a tale cartella. Fornendo il numero di porta (nell&#39;esempio seguente, 8080) per esporre l&#39;endpoint del dispatcher, il contenitore viene avviato con la configurazione.
+Eseguire lo strumento di convalida (notare che è diverso da quello `validator.sh` indicato in precedenza) utilizzando il `-d` parametro che produce una cartella con tutti i file di configurazione del dispatcher. Eseguire quindi lo `docker_run.sh` script, passando la cartella come argomento. Fornendo il numero di porta (qui: 8080) per esporre l&#39;endpoint del dispatcher, viene avviato un contenitore Docker che esegue il dispatcher con la configurazione.
 
 ```
 $ validator full -d out src/dispatcher
