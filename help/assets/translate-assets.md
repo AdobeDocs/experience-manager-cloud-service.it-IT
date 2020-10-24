@@ -3,7 +3,7 @@ title: Creazione e gestione di risorse digitali in più lingue
 description: Scoprite come automatizzare i flussi di lavoro per la traduzione di risorse, inclusi file binari, metadati e tag in più lingue.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
 workflow-type: tm+mt
 source-wordcount: '2608'
 ht-degree: 24%
@@ -59,14 +59,14 @@ La copia per la lingua per la quale avete aggiunto originariamente le risorse è
 
 ```shell
 /content
-&nbsp; &nbsp; /- dam
-&nbsp; &nbsp; &nbsp; |- en
-&nbsp; &nbsp; &nbsp; |- fr
-&nbsp; &nbsp; &nbsp; |- de
-&nbsp; &nbsp; &nbsp; |- es
-&nbsp; &nbsp; &nbsp; |- it
-&nbsp; &nbsp; &nbsp; |- ja
-&nbsp; &nbsp; &nbsp; |- zh
+    /- dam
+        |- en
+        |- fr
+        |- de
+        |- es
+        |- it
+        |- ja
+        |- zh
 ```
 
 Per preparare le risorse alla conversione, effettuate le seguenti operazioni:
