@@ -2,7 +2,7 @@
 title: Sviluppo e Page Diff
 description: Come funziona la funzione Page Diff e come può avere un impatto sullo sviluppatore
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 11%
@@ -30,7 +30,7 @@ Quando si confronta il contenuto, l&#39;intera struttura fino alla pagina da con
 
 Un&#39;attività di pulizia viene eseguita automaticamente per ripulire il contenuto temporaneo.
 
-## Autorizzazioni  {#permissions}
+## Limitazioni  {#limitations}
 
 La diff si verifica sul lato client tramite il confronto DOM, rendendo il processo di diff semplice, ma ci sono una serie di limitazioni che devono essere considerate dallo sviluppatore.
 
