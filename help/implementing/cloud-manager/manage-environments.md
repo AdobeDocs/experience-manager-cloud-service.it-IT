@@ -2,9 +2,9 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: c015c631f6ad988b1482b45281a2ed9840e6af45
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '830'
 ht-degree: 7%
 
 ---
@@ -63,6 +63,16 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
 
    >[!NOTE]
    >Se non avete ancora impostato la pipeline di non produzione, nella schermata *Panoramica* viene visualizzata la scheda da cui potete creare la pipeline non di produzione.
+
+
+### Visualizzazione degli ambienti {#viewing-environment}
+
+Nella scheda **Ambienti** della pagina Panoramica sono elencati fino a tre ambienti.
+
+L&#39;utente può selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo **Ambiente** e visualizzare una tabella con un elenco completo di ambienti.
+
+![](assets/environment-view1.png)
+
 
 ## Aggiornamento dell&#39;ambiente {#updating-dev-environment}
 
