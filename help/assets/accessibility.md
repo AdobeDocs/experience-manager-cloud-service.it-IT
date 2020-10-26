@@ -3,9 +3,9 @@ title: Accessibilità in [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità [!DNL Adobe Experience Manager] in un Cloud Service aiutano gli utenti disabili.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
+source-git-commit: 726c63a9bb3426bea324abec87b5e9f7d5e9e755
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Le funzioni di base di [!DNL Assets] sono più accessibili che in passato e veng
 
 ## Supporto per l&#39;uso della tastiera {#keyboard-use}
 
-Molti elementi dell&#39;interfaccia utente cliccabili o utilizzabili con un puntatore possono essere utilizzati anche utilizzando la tastiera. Utilizzando una tastiera, gli utenti possono concentrarsi sugli elementi dell&#39;interfaccia utente e intervenire in modo appropriato. Gli utenti possono utilizzare direttamente le scelte rapide da tastiera per attivare un comando o un&#39;azione senza doversi concentrare sugli elementi dell&#39;interfaccia utente e attivarli utilizzando la tastiera. Ad esempio, gli utenti possono aprire la timeline di una risorsa sul lato sinistro accedendo al controllo dell’interfaccia utente utilizzando una tastiera e premendo Invio e premendo `alt + 2` le scelte rapide da tastiera.
+Molti elementi dell&#39;interfaccia utente cliccabili o utilizzabili con un puntatore possono essere utilizzati anche utilizzando la tastiera. Utilizzando una tastiera, gli utenti possono concentrarsi sugli elementi dell&#39;interfaccia utente e intervenire in modo appropriato. Gli utenti possono utilizzare direttamente le scelte rapide da tastiera per attivare un comando o un&#39;azione senza doversi concentrare sugli elementi dell&#39;interfaccia utente e attivarli utilizzando la tastiera. Ad esempio, gli utenti possono aprire la timeline di una risorsa sul lato sinistro accedendo al controllo dell’interfaccia utente utilizzando una tastiera e premendo `Return` e premendo `Alt + 2` le scelte rapide da tastiera.
 
 <!-- TBD items:
 
