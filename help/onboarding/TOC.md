@@ -4,10 +4,10 @@ user-guide-title: Onboarding per AEM as a Cloud Service
 breadcrumb-title: Guida all’onboarding
 user-guide-description: Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati.
 translation-type: tm+mt
-source-git-commit: 207ed100748d87e65f54e7dfe5bb81e100845cc1
+source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 89%
+source-wordcount: '241'
+ht-degree: 90%
 
 ---
 
@@ -44,7 +44,14 @@ ht-degree: 89%
       + [Impostazione del progetto](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Informazioni sull’ambiente di creazione](getting-access-to-aem-in-cloud/build-environment-details.md)
    + Note sulla versione per Cloud Manager {#release-notes-cloud-manager}
-      + [Note sulla versione corrente (2020.10.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+      + [Note sulla versione corrente (2020.10.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Note sulla versione 2020.9.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+      + [Note sulla versione 2020.8.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+      + [Note sulla versione 2020.7.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+      + [Note sulla versione 2020.6.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+      + [Note sulla versione 2020.5.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+      + [Note sulla versione 2020.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+      + [Note sulla versione 2020.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [Note sulla versione 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
 + Preparazione per privacy e protezione dei dati {#data-privacy}
    + [Preparazione di AEM per le normative su privacy e protezione dei dati](data-privacy-and-protection-readiness/aem-readiness.md)
