@@ -2,9 +2,9 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '828'
 ht-degree: 7%
 
 ---
@@ -39,7 +39,6 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
 
 ## Aggiunta di un ambiente {#adding-environments}
 
-
 1. Fate clic su **Aggiungi ambiente** per aggiungere un ambiente. Questo pulsante è accessibile dalla schermata **Ambienti** .
    ![](assets/environments-tab.png)
 
@@ -65,7 +64,7 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
    >Se non avete ancora impostato la pipeline di non produzione, nella schermata *Panoramica* viene visualizzata la scheda da cui potete creare la pipeline non di produzione.
 
 
-### Visualizzazione degli ambienti {#viewing-environment}
+## Ambiente di visualizzazione {#viewing-environment}
 
 Nella scheda **Ambienti** della pagina Panoramica sono elencati fino a tre ambienti.
 
