@@ -1,10 +1,11 @@
 ---
+solution: Experience Manager, Experience Manager Sites
 sub-product: Creazione di contenuti in AEM as a Cloud Service
 user-guide-title: Creazione di contenuti in AEM as a Cloud Service
 breadcrumb-title: Guida all’authoring
 user-guide-description: Informazioni su come creare con, e amministrare, Experience Manager Sites as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: d5b92dda6b79407988eea3126f10fe875a0176ea
+source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 97%
