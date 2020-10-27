@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2020.2.0
-description: Note sulla versione 2020.2.0
+title: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2020.2.0
+description: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2020.2.0
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 77%
+source-wordcount: '199'
+ht-degree: 66%
 
 ---
 
