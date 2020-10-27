@@ -2,9 +2,9 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '850'
 ht-degree: 7%
 
 ---
@@ -68,9 +68,17 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
 
 Nella scheda **Ambienti** della pagina Panoramica sono elencati fino a tre ambienti.
 
-L&#39;utente può selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo **Ambiente** e visualizzare una tabella con un elenco completo di ambienti.
+1. Fate clic sul pulsante **Mostra tutto** per passare alla pagina di riepilogo **Ambiente** e visualizzare una tabella con un elenco completo degli ambienti.
 
-![](assets/environment-view1.png)
+   ![](assets/environment-view-1.png)
+
+1. Nella pagina **Ambienti** viene visualizzato l&#39;elenco di tutti gli ambienti esistenti.
+
+   ![](assets/environment-view-2.png)
+
+1. Selezionare uno degli ambienti elencati per visualizzare i dettagli dell&#39;ambiente.
+
+   ![](assets/environment-view-3.png)
 
 
 ## Aggiornamento dell&#39;ambiente {#updating-dev-environment}
