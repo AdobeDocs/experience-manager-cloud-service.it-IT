@@ -1,129 +1,117 @@
 ---
-title: Note sulla versione 2020.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '[!DNL Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.9.0.'
+title: Note sulla versione 2020.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: '[!DNL Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
+source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 11%
+source-wordcount: '848'
+ht-degree: 23%
 
 ---
 
 
-# Note sulla versione per [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
+# Note sulla versione per [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
 ## Data di rilascio {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
+La seguente release (2020.11.0) sarà del 26 novembre.
 
-## [!DNL Adobe Experience Manager Sites] come Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] come Cloud Service {#sitess}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* L&#39;SDK JavaScript per l&#39;applicazione di SPA pagina singola [è ora open source.](/help/implementing/developing/spa/reference-materials.md)
+<!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
+
+* **Tipo archivio progetto 24**: La base consigliata per avviare un nuovo progetto AEM è migliorata, ora incluso il nuovo livello dati client  Adobe, l&#39;opzione per distribuire il sito in AMP e nuovi punti di estensione per aggiungere il progetto CSS/JS.
+
+* **Cartelle** ContextHub: Possibilità di creare cartelle di audience per organizzare, trovare e selezionare facilmente i segmenti di pubblico da utilizzare per le funzionalità di targeting delle offerte ContextHub.
 
 ## [!DNL Adobe Experience Manager Assets] come Cloud Service {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* I file immagine con filigrana sono supportati per le rappresentazioni generate con i microservizi delle risorse. Può essere configurato come profilo di elaborazione e utilizza un file PNG come filigrana. Consultate [Filigrana delle risorse](/help/assets/watermark-assets.md).
+* **[!DNL Adobe Sensei]smart tag** video motorizzato: Sfruttando i modelli AI per l&#39;analisi dei contenuti video per i tag di oggetti e azioni specifici, gli utenti DAM possono dedicare meno tempo all&#39;aggiunta di tag e più tempo sfruttando le informazioni avanzate disponibili per offrire ai clienti l&#39;esperienza giusta. Consultate Risorse [video con tag](/help/assets/smart-tags-video-assets.md)avanzati.
 
-* Miglioramenti in [!DNL Dynamic Media]
+* **Miglioramenti** al Brand Portal: Le seguenti nuove funzioni e altro ancora sono disponibili in [!DNL Brand Portal]. For details, see [[!DNL Brand Portal] release notes](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
-   * Pubblicazione selettiva - È ora possibile per un team di marketing accedere a immagini di ritaglio [!DNL Dynamic Media] smart e rappresentazioni dinamiche sincronizzate per [!DNL Dynamic Media] creare materiali promozionali, il tutto senza dover pubblicare tali risorse [!DNL Dynamic Media] per la distribuzione globale. [!DNL Experience Manager] e la [!DNL Dynamic Media] pubblicazione viene disaccoppiata e può avvenire separatamente per ottenere questo risultato. Consultate Pubblicazione [](/help/assets/dynamic-media/selective-publishing.md)selettiva.
-   * Adesso, gli amministratori possono ripristinare la password [!DNL Dynamic Media] del Cloud Service ricevuta al momento del provisioning. Il ripristino può essere eseguito nell&#39;interfaccia [!DNL Experience Manager] utente, senza la necessità di utilizzare l&#39;app [!DNL Dynamic Media Classic] desktop.
+   * [Esperienza](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) di download migliorata per download semplificati e rapidi. Gli amministratori possono configurare configurazioni di download aggiuntive per offrire un&#39;esperienza che soddisfi le esigenze degli utenti e delle aziende.
+   * È ora possibile navigare con un solo clic su File, [Raccolte](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)e Collegamenti condivisi da qualsiasi pagina.
+   * Gli utenti ora possono [selezionare e scaricare rappresentazioni](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) specifiche. La nuova opzione di download della rappresentazione è disponibile nel pannello Rappresentazioni nella pagina dei dettagli della risorsa.
+   * Un timeout di 15 minuti per le sessioni degli utenti ospiti garantisce un&#39;esperienza migliore a tutti gli utenti simultanei.
 
-* Per informazioni sui seguenti miglioramenti, consulta [le novità di Brand Portal](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/introduction/whats-new.html).
+* **[!DNL Adobe Asset Link]versione 2.1**: È disponibile una nuova versione dell’estensione [Collegamento](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) risorse Adobe per [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign] . Aggiunge compatibilità con le ultime [!DNL Adobe Creative Cloud] applicazioni con la versione 2021, rilasciata a ottobre 2020.
 
-   * Anteprima PDF avanzata con integrazione con Adobe Document Cloud View SDK.
-   * Funzionalità di download con un solo clic.
-   * Nuove configurazioni di amministrazione per l&#39;esperienza di download.
+* **[!DNL Assets]Supporto** file WebP: [!DNL Assets] come Cloud Service ora supporta il formato immagine WebP. WebP è un formato immagine emergente creato da Google. Le immagini in formato file WebP sono visivamente indipendenti dai file JPG o PNG e i file sono molto più piccoli. Le dimensioni ridotte dei file delle risorse migliorano i tempi di caricamento delle pagine e aiutano i creatori di contenuti a fornire un&#39;esperienza Web più veloce.
 
 <!--
 ### Bugs Fixed {#bugs-fixed-assets}
 
-TBD: list of Assets aaCS bugs that are fixed.
+Content to come
 -->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Novità {#what-is-new-commerce}
 
-* Componenti CIF di base rilasciati v1.3.0. Per ulteriori informazioni, consulta Componenti [di base](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) CIF.
+* Sito di riferimento CIF Venia rilasciato - 2020.10.2 che include l&#39;ultima versione CIF Core Components v1.4.0. Per ulteriori informazioni, consultare [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) .
 
-* È ora disponibile la funzionalità di anteprima con prodotti/categorie per i modelli di prodotto e categoria. Questo consente agli utenti aziendali o agli esperti di marketing di AEM di visualizzare i modelli di prodotto/categoria con dati reali.
-
-* Pagina delle proprietà aggiunta a prodotti e categorie per consentire agli utenti aziendali di visualizzare i dettagli associati all’ID SKU/categoria del prodotto.
-
-* Funzione di ordinamento aggiunta alla console prodotto per consentire l’ordinamento di prodotti/categorie in base al nome o agli attributi di prezzo.
-
-* Funzionalità di ricerca prodotti aggiunta alla console prodotto.
+* Componenti CIF di base rilasciati v1.4.0. Per ulteriori informazioni, consulta Componenti [di base](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) CIF.
 
 ### Correzioni di bug {#bug-fixes-commerce}
 
-* Le configurazioni di Commerce Cloud non rispettavano l&#39;ereditarietà. È stato corretto per garantire che la configurazione erediti i valori.
+* Le richieste GraphQL nella console prodotto e nei selettori sono state eseguite tramite POST HTTP. Questo è stato corretto per garantire che il client Apollo GraphQL rispetti l&#39;impostazione nella configurazione OSGi client GraphQL per supportare le richieste di GET, se configurata.
 
-## Cloud Manager {#cloud-manager}
+* CIF l’interfaccia utente di configurazione cloud mostrava i pulsanti &quot;Save &amp; Close&quot; per le configurazioni in /lib e /apps/. Ma queste sono di sola lettura, quindi l&#39;interfaccia utente è fissa per visualizzare solo il pulsante &quot;Chiudi&quot;.
 
-### Data di rilascio {#release-date-cm}
+### Cloud Manager {#cloud-manager}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03, 2020.
+* La pagina Ambienti è stata riprogettata.
 
-### Novità {#what-is-new-cloud-manager}
+* Ora in Cloud Manager gli ambienti che sono stati sospesi presentano uno stato discreto.
 
-* Content Audit è stato ribattezzato come Experience Audit (Audit esperienza).
-* Il processo di costruzione è stato separato in tre diversi comandi Maven.
-* Se il repository Git non viene clonato, verrà ripetuto fino a tre volte.
+* Il contenitore di build di Cloud Manager ora supporta sia Java 8 che Java 11.
 
-### Correzioni di bug {#bug-fixes-cm}
+* In ogni ambiente, il numero di variabili dell’ambiente è stato aumentato a 200.
 
-* La scheda Controllo contenuto visualizzava erroneamente l’URL di base utilizzando il dominio di creazione invece del dominio di pubblicazione.
+* Nella scheda Ambiente della pagina Panoramica sono ora elencati fino a tre ambienti. Gli utenti possono selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo Ambiente e visualizzare una tabella con un elenco completo degli ambienti.
 
-## Cloud Readiness Analyzer (Analisi di preparazione al cloud) {#cloud-readiness-analyzer}
 
-Leggi questa sezione per saperne di più sulle novità e sugli aggiornamenti di Cloud Readiness Analyzer v1.1.0.
+### Correzioni di bug {#bug-fixes-cloud-manager}
 
-### Novità {#what-is-new-cra}
+* Il collegamento tra Cloud Manager e Developer Console era erroneamente attivo prima che gli ambienti fossero completamente creati.
 
-* La console CRA ( [Cloud Readiness Analyzer)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) dispone di una console di stato iniziale che consente di visualizzare un pulsante **Genera report** esplicito su cui l&#39;utente può fare clic per eseguire la CRA.
+* Il collegamento diretto da Cloud Manager a Developer Console non mostrava l’opzione per sospendere/riattivare l’ambiente di un programma sandbox.
 
-* L&#39;interfaccia utente CRA visualizza l&#39;avanzamento durante l&#39;esecuzione. Vengono visualizzati gli elementi analizzati e i risultati rilevati durante l&#39;esecuzione.
+* I pulsanti Annulla e Salva nella pagina Modifica pipeline non produzione non erano sempre visibili.
 
-* Il rapporto CRA presenta un riepilogo e il numero dei risultati in un formato tabulare organizzato in base al tipo di ricerca e al livello di importanza. Facendo clic sul numero di risultati, si passa automaticamente alla posizione di tale ricerca nel rapporto.
+* Alcuni errori nel processo di qualità del codice potevano causare la generazione non corretta del file di registro.
 
-### Correzioni di bug {#cra-bug-fixes}
+* Al momento della creazione di un nuovo programma, a volte il nome suggerito poteva essere un duplicato di nome di programma esistente.
 
-* In alcuni casi, il rapporto CRA non veniva aggiornato dopo aver forzato un aggiornamento. Questo problema è stato risolto in questa versione.
+* Tramite l’interfaccia utente non si potevano scaricare in modo coerente i log di alcuni fasi di pipeline di grandi dimensioni.
+
+* La convalida dei nomi dell’ambiente presentava un errore con scostamento pari a uno.
+
+* In alcuni casi, la pagina Ambienti mostrava segmenti di pubblicazione e dispatcher anche in loro assenza.
+
+
+## Fondamenti di Adobe Experience Manager as a Cloud Service {#cloud-service-foundation}
+
+### Flussi di lavoro {#workflows}
+
+* È stato aggiunto il supporto per la ricerca di istanze del flusso di lavoro in base al titolo del flusso di lavoro, al modello del flusso di lavoro, allo stato, all’iniziatore, al percorso di payload e alla data di inizio.
 
 ## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
 
-Seguite questa sezione per saperne di più sulle novità e sugli aggiornamenti di Content Transfer Tool Release v1.1.10.
+Follow this section to learn about what is new and the updates for [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 
 ### Novità {#what-is-new-ctt}
 
-* CTT ( [Content Transfer Tool)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) supporta l&#39;archivio dati di Azure Blob Store.
+* Miglioramento dell’esperienza utente per i registri. Marca temporale aggiunta ai registri di estrazione e inserimento. Messaggio aggiunto per indicare se i registri sono vuoti.
 
-* L&#39;interfaccia utente CTT dispone di una funzione di ricarica automatica che ricarica la pagina della panoramica ogni 30 secondi.
+### Correzioni di bug {#ctt-bug-fixes}
 
-* Pulsante aggiunto all&#39;interfaccia utente CTT per recuperare facilmente il token *di* accesso.
-
-* È stato aggiunto un messaggio di convalida descrittivo per il nome dell&#39; *URL* e del set di *migrazione*.
-
-## Strumenti di refactoring del codice {#code-refactoring}
-
-Segui questa sezione per saperne di più sulle novità e gli aggiornamenti per gli strumenti di refactoring del codice.
-
-### Novità {#what-is-new-refactoring}
-
-[Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md) è un&#39;utility sviluppata per ristrutturare i pacchetti di progetto esistenti separando il contenuto e il codice in pacchetti discreti per essere compatibile con la struttura di progetto definita per Adobe Experience Manager come Cloud Service.
-
-* Il plug-in AIO-CLI supporta Repository Modernizer e consente agli utenti di eseguire lo strumento utilizzando il plugin.
-
-   Fare riferimento a Risorse [Git: per maggiori informazioni, fai clic su aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) .
-
-* L&#39;utility Repository Modernizer può essere utilizzata per ristrutturare i pacchetti di progetto esistenti in pacchetti compatibili con la struttura di progetto definita per AEM come Cloud Service.
-
-   Fare riferimento a Risorse [Git: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per ulteriori dettagli.
-
+* Content Transfer Tool saltava i file di contenuto se il set di migrazione conteneva percorsi con nomi di file parzialmente simili. Questo è stato corretto.
