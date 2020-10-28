@@ -1,17 +1,17 @@
 ---
-title: Assegnare tag alle immagini con i servizi avanzati
-description: Applicate tag alle immagini con servizi intelligenti artificialmente che applicano tag business contestuali e descrittivi utilizzando  servizi Adobe Sensei.
+title: Applicare tag automatici alle immagini con tag generati dall'interfaccia utente
+description: Applicate tag alle immagini utilizzando servizi intelligenti artificiali che applicano tag business contestuali e descrittivi [!DNL Adobe Sensei] utilizzando i servizi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
 workflow-type: tm+mt
-source-wordcount: '2424'
+source-wordcount: '2433'
 ht-degree: 6%
 
 ---
 
 
-# Servizio Smart Tag per formazione e tag delle immagini {#train-service-tag-assets}
+# Training Smart Content Service e assegnazione automatica di tag alle immagini {#train-service-tag-assets}
 
 Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare le risorse digitali. L’assegnazione dei tag alle risorse mediante un vocabolario controllato dalla tassonomia consente di individuare e recuperare facilmente le risorse tramite ricerche basate sui tag.
 
@@ -19,7 +19,7 @@ Rispetto ai vocabolari di lingua naturale, l’assegnazione di tag in base alla 
 
 In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
-<!-- TBD: Create a similar flowchart for how training works in CS.
+<!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
@@ -33,13 +33,13 @@ Per utilizzare i tag avanzati, effettuate le seguenti operazioni:
 
 I tag avanzati sono applicabili solo ai [!DNL Adobe Experience Manager Assets] clienti. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
-<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
 ## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
 >
->Le nuove [!DNL Experience Manager Assets] implementazioni sono integrate con [!DNL Adobe Developer Console] per impostazione predefinita. Consente di configurare più rapidamente la funzionalità smart tag. Nelle distribuzioni esistenti, gli amministratori possono [configurare manualmente l&#39;integrazione](/help/assets/smart-tags-configuration.md#aio-integration)degli smart tag.
+>Le nuove [!DNL Experience Manager Assets] implementazioni sono integrate con [!DNL Adobe Developer Console] per impostazione predefinita. Consente di configurare più rapidamente la funzionalità smart tag. Nelle precedenti distribuzioni, gli amministratori possono [configurare manualmente l&#39;integrazione](/help/assets/smart-tags-configuration.md#aio-integration)degli smart tag.
 
 È possibile integrarsi [!DNL Adobe Experience Manager] con gli Smart Tags utilizzando [!DNL Adobe Developer Console]. Utilizzate questa configurazione per accedere al servizio Smart Tags dall&#39;interno [!DNL Experience Manager]. Consultate [Configurare  Experience Manager per l’assegnazione di tag avanzati alle risorse](smart-tags-configuration.md) per la configurazione dei tag avanzati. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
@@ -154,28 +154,36 @@ Dopo aver preparato il servizio Smart Tags, potete attivare il flusso di lavoro 
 1. Fate clic su **[!UICONTROL Avvia]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e verificate i tag necessari per verificare se i tag delle risorse sono stati impostati correttamente. Per informazioni dettagliate, consultate [Gestione di smart tag](#manage-smart-tags-and-searches).
 
 >[!NOTE]
->
+
 >Nei cicli di assegnazione dei tag successivi, solo le risorse modificate dispongono di tag di nuova formazione. Tuttavia, vengono assegnati tag anche alle risorse inalterate se lo spazio tra l’ultimo ciclo di tag e quello corrente per il flusso di lavoro dei tag supera le 24 ore. Per i flussi di lavoro con tag periodici, le risorse inalterate vengono contrassegnate con tag quando l’intervallo di tempo supera i 6 mesi.
 
 ### Assegnare tag alle risorse caricate {#tag-uploaded-assets}
 
  Experience Manager può assegnare automaticamente i tag alle risorse che gli utenti caricano in DAM. A questo scopo, gli amministratori configurano un flusso di lavoro per aggiungere un passaggio disponibile alle risorse degli smart tag. Scoprite [come abilitare i tag avanzati per le risorse](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)caricate.
 
-## Gestione di smart tag e ricerche di immagini {#manage-smart-tags-and-searches}
+## Gestione di smart tag e ricerche di risorse {#manage-smart-tags-and-searches}
 
-Potete curare gli smart tag per rimuovere eventuali tag non accurati eventualmente assegnati alle immagini del vostro marchio, in modo da visualizzare solo i tag più rilevanti.
+Potete curare gli smart tag per rimuovere eventuali tag non accurati eventualmente assegnati alle risorse del vostro marchio, in modo da visualizzare solo i tag più rilevanti.
 
-La moderazione degli smart tag consente inoltre di perfezionare le ricerche basate sui tag per le immagini, assicurando che l’immagine venga visualizzata nei risultati di ricerca per i tag più rilevanti. In sostanza, elimina la possibilità che immagini non collegate vengano visualizzate nei risultati della ricerca.
+La moderazione degli smart tag consente inoltre di limitare le ricerche di risorse basate su tag, assicurando che le risorse vengano visualizzate nei risultati della ricerca per i tag più rilevanti. In sostanza, elimina le possibilità che risorse non collegate vengano visualizzate nei risultati della ricerca.
 
-Potete anche assegnare un rango più alto a un tag per aumentarne la rilevanza rispetto a un’immagine. La promozione di un tag per un’immagine aumenta le probabilità che l’immagine venga visualizzata nei risultati di ricerca quando viene eseguita una ricerca in base al tag specifico.
+Potete anche assegnare un rango più alto a un tag per aumentarne la rilevanza rispetto a una risorsa. La promozione di un tag per una risorsa aumenta le probabilità che la risorsa venga visualizzata nei risultati della ricerca quando viene eseguita una ricerca in base al tag specifico.
 
-1. Nella casella di ricerca Omnico, cercate le risorse in base a un tag.
-1.  Inspect i risultati della ricerca per identificare un’immagine che non si trova rilevante ai fini della ricerca.
-1. Selezionate l’immagine, quindi fate clic sull’icona **[!UICONTROL Gestisci tag]** nella barra degli strumenti.
-1. Dalla pagina **[!UICONTROL Gestisci tag]** , ispezionate i tag. Se non desiderate che l’immagine venga cercata in base a un tag specifico, selezionate il tag e fate clic sull’icona Elimina nella barra degli strumenti. In alternativa, fare clic sul `X` simbolo visualizzato accanto all&#39;etichetta.
-1. Per assegnare un livello superiore a un tag, selezionatelo e fate clic sull’icona di promozione nella barra degli strumenti. Il tag promosso viene spostato nella sezione **[!UICONTROL Tag]** .
-1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
-1. Passate alla pagina delle proprietà dell’immagine. Osservate che al tag promosso è stata assegnata un’elevata rilevanza e, di conseguenza, appare più alta nei risultati della ricerca.
+Per moderare gli smart tag delle risorse:
+
+1. Nel campo di ricerca Omnico, cercate le risorse in base a un tag.
+
+1.  Inspect i risultati della ricerca per identificare le risorse che non sono pertinenti alla ricerca.
+
+1. Selezionate la risorsa, quindi selezionate l’icona ![](assets/do-not-localize/manage-tags-icon.png) Gestisci tag dalla barra degli strumenti.
+
+1. Dalla pagina **[!UICONTROL Gestisci tag]** , ispezionate i tag. Se non desiderate che la risorsa venga cercata in base a un tag specifico, selezionate il tag e l’icona ![](assets/do-not-localize/delete-icon.png) Elimina dalla barra degli strumenti. In alternativa, selezionare `X` il simbolo accanto all&#39;etichetta.
+
+1. Per assegnare un rango più alto a un tag, selezionate il tag e l’icona ![](assets/do-not-localize/promote-icon.png) Promuovi dalla barra degli strumenti. Il tag promosso viene spostato nella sezione **[!UICONTROL Tag]** .
+
+1. Selezionate **[!UICONTROL Salva]** , quindi selezionate **[!UICONTROL OK]** per chiudere la finestra di dialogo [!UICONTROL Successo] .
+
+1. Andate alla pagina [!UICONTROL Proprietà] della risorsa. Osservate che al tag promosso è stata assegnata un’elevata rilevanza e, di conseguenza, appare più alta nei risultati della ricerca.
 
 ### Comprendere AEM risultati di ricerca con gli smart tag {#understandsearch}
 
@@ -210,4 +218,5 @@ Per cercare le risorse con gli smart tag (regolari o avanzati), usate la ricerca
 >
 >* [Configurare  Experience Manager per smart tag](smart-tags-configuration.md)
 >* [Come gli smart tag consentono di gestire le risorse](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Assegnazione tag avanzati alle risorse video](smart-tags-video-assets.md)
 
