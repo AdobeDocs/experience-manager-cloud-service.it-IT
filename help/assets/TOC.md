@@ -5,10 +5,10 @@ breadcrumb-title: Guida ad Assets
 user-guide-description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 81%
+source-wordcount: '429'
+ht-degree: 79%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 81%
    + [Aggiungere e caricare le risorse](add-assets.md)
    + [Cercare risorse](search-assets.md)
    + [Attività comuni di gestione risorse](manage-digital-assets.md)
-   + [Tag avanzati](smart-tags.md)
+   + [Tag avanzati per immagini](smart-tags.md)
+   + [Applicazione di tag avanzati alle risorse video](smart-tags-video-assets.md)
    + [Organizzare le risorse](organize-assets.md)
    + [Risorse [!DNL Adobe Stock] utilizzate in AEM](aem-assets-adobe-stock.md)
    + [Gestire le raccolte](manage-collections.md)
@@ -49,7 +50,7 @@ ht-degree: 81%
    + [Riferimenti ai documenti e alle API per sviluppatori](developer-reference-material-apis.md)
    + [Schema metadati per cartelle](folder-metadata-schema.md)
    + [Utilizzo dei profili immagine e video](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Configurare gli smart tag](smart-tags-configuration.md)
+   + [Configurare l’assegnazione di tag avanzati alle immagini](smart-tags-configuration.md)
    + [Risorse multilingue e traduzione](translate-assets.md)
    + [Facet di ricerca](search-facets.md)
    + [API HTTP di Assets](mac-api-assets.md)
