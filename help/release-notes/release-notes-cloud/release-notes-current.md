@@ -2,9 +2,9 @@
 title: Note sulla versione 2020.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
+source-git-commit: 12883e87d4aee796b23c366e77651134dafb8f4c
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '855'
 ht-degree: 23%
 
 ---
@@ -66,7 +66,7 @@ Content to come
 
 * CIF l’interfaccia utente di configurazione cloud mostrava i pulsanti &quot;Save &amp; Close&quot; per le configurazioni in /lib e /apps/. Ma queste sono di sola lettura, quindi l&#39;interfaccia utente è fissa per visualizzare solo il pulsante &quot;Chiudi&quot;.
 
-### Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 * La pagina Ambienti è stata riprogettata.
 
@@ -77,7 +77,7 @@ Content to come
 * In ogni ambiente, il numero di variabili dell’ambiente è stato aumentato a 200.
 
 * Nella scheda Ambiente della pagina Panoramica sono ora elencati fino a tre ambienti. Gli utenti possono selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo Ambiente e visualizzare una tabella con un elenco completo degli ambienti.
-
+Per ulteriori informazioni, vedere [Ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) di visualizzazione.
 
 ### Correzioni di bug {#bug-fixes-cloud-manager}
 
