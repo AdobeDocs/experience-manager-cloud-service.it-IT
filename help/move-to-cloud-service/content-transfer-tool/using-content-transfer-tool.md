@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
+source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 78%
+source-wordcount: '1855'
+ht-degree: 71%
 
 ---
 
@@ -26,11 +26,18 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Per utilizzare lo strumento di trasferimento dei contenuti, è necessario essere un utente amministratore nell’istanza di origine e appartenere al gruppo di amministratori AEM locali nell’istanza di Cloud Service a cui si sta trasferendo il contenuto. Gli utenti non autorizzati non potranno recuperare il token di accesso per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
+* Attualmente la dimensione predefinita di MongoDB per un AEM come istanza Author di Cloud Service è 32 GB. Si consiglia di inviare un ticket di supporto per le dimensioni dello store del segmento superiori a 20 GB, in modo da aumentare le dimensioni di MongoDB.
+
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 
-* La *fase di acquisizione* per l’istanza di authoring riduce l’intera implementazione di authoring. Questo significa che l’istanza di authoring di AEM non sarà disponibile durante l’intero processo di acquisizione.
+* Dopo aver completato la fase di *estrazione* del processo di trasferimento del contenuto e prima di avviare la fase *di* inserimento per assimilare il contenuto nella AEM come *fase* Cloud Service o istanze *produzione* , dovrete registrare un ticket di supporto per notificare  Adobe l&#39;intenzione di eseguire l&#39; *inserimento* ** in modo che  Adobe possa garantire che non si verifichino interruzioni durante il processo di caricamento dei dati. Dovrai registrare il ticket di assistenza 1 settimana prima della data di *inserimento* prevista. Una volta inviato il ticket di assistenza, il team di assistenza fornirà assistenza sui passaggi successivi.
+   * Registrare un ticket di assistenza con i seguenti dettagli:
+   1. Data esatta e ora stimata (con il tuo fuso orario) quando intendi avviare la fase di *inserimento* .
+   2. Tipo di ambiente (fase o produzione) in cui si intende inserire i dati.
+   3. ID programma
 
-* Attualmente la dimensione predefinita di MongoDB per un AEM come istanza Author di Cloud Service è 32 GB. Si consiglia di inviare un ticket di supporto per le dimensioni dello store del segmento superiori a 20 GB, in modo da aumentare le dimensioni di MongoDB.
+* La *fase di acquisizione* per l’istanza di authoring riduce l’intera implementazione di authoring. Questo significa che l’istanza di authoring di AEM non sarà disponibile durante l’intero processo di acquisizione. Controlla anche che non vengano eseguite pipeline di Cloud Manager durante la fase di *inserimento* .
+
 
 ## Disponibilità {#availability}
 
