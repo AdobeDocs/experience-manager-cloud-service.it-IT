@@ -2,10 +2,10 @@
 title: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2020.10.0
 description: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2020.10.0
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: d992646fd89a4e502d74533f5fa2bbe994a9ab97
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 54%
+source-wordcount: '300'
+ht-degree: 48%
 
 ---
 
@@ -26,7 +26,7 @@ La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.10.0 è il 
 
 * Ora in Cloud Manager gli ambienti che sono stati sospesi presentano uno stato discreto.
 
-* Il contenitore di build di Cloud Manager ora supporta sia Java 8 che Java 11.
+* Il contenitore di build di Cloud Manager ora supporta la compilazione di progetti tramite Java 8 o Java 11. Il supporto per Java 11 è fornito dal sistema di catene utensili Maven.
 
 * In ogni ambiente, il numero di variabili dell’ambiente è stato aumentato a 200.
 
