@@ -1,10 +1,11 @@
 ---
 title: Integrazione tra AEM e Magento con l’utilizzo di Commerce Integration Framework
-description: Integrazione tra AEM e Magento con l’utilizzo di Commerce Integration Framework
-translation-type: ht
-source-git-commit: 48805b21500ff3f2629efd6aecb40bb1cdc38cd6
-workflow-type: ht
-source-wordcount: '347'
+description: AEM e Magento sono integrati direttamente tramite Commerce Integration Framework (CIF). CIF consente ad AEM di accedere a un’istanza di Magento e di comunicare con Magento tramite GraphQL. Consente inoltre agli autori AEM di utilizzare i selettori di Prodotto e Categoria e la console Prodotti per sfogliare i dati di prodotti e categorie recuperati on-demand da Magento. Inoltre, CIF fornisce una vetrina pronta all’uso che può accelerare i progetti di commerce.
+thumbnail: aem-magento-architecture.jpg
+translation-type: tm+mt
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+workflow-type: tm+mt
+source-wordcount: '403'
 ht-degree: 100%
 
 ---
