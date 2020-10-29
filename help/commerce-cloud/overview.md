@@ -1,10 +1,11 @@
 ---
 title: Introduzione a AEM Commerce as a Cloud Service
-description: Novità in AEM Commerce as a Cloud Service.
-translation-type: ht
-source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
-workflow-type: ht
-source-wordcount: '1331'
+description: ' Experience Manager Commerce as a Cloud Service è costituito da Commerce Integration Framework (CIF), il modello consigliato di Adobe per integrare ed estendere i servizi commerce da Magento e altre soluzioni di terze parti con Experience Cloud. '
+thumbnail: introducing-aem-commerce.jpg
+translation-type: tm+mt
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+workflow-type: tm+mt
+source-wordcount: '1357'
 ht-degree: 100%
 
 ---
