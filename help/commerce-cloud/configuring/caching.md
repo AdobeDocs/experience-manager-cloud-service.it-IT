@@ -1,11 +1,11 @@
 ---
 title: Memorizzazione in cache e prestazioni
-description: Memorizzazione in cache e prestazioni
-translation-type: ht
-source-git-commit: 2997a28e79b51e88ececbd46c81dbc6a6c443e68
-workflow-type: ht
-source-wordcount: '830'
-ht-degree: 100%
+description: Scopri le diverse configurazioni disponibili per abilitare GraphQL e il caching dei contenuti per ottimizzare le prestazioni dell'implementazione di e-commerce.
+translation-type: tm+mt
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+workflow-type: tm+mt
+source-wordcount: '848'
+ht-degree: 97%
 
 ---
 
