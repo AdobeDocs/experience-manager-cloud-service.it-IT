@@ -2,9 +2,9 @@
 title: Profili video di Dynamic Media
 description: Gli elementi multimediali dinamici dispongono già di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Potete anche aggiungere ritaglio avanzato ai video.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3680'
 ht-degree: 17%
 
 ---
@@ -107,7 +107,7 @@ La dimensione massima del file video supportato per il ritaglio avanzato è il s
 
 >[!IMPORTANT]
 >
->Per il corretto funzionamento del ritaglio avanzato video, dovete includere uno o più predefiniti di codifica video nel profilo video.
+>Per il corretto funzionamento del ritaglio avanzato video, con il profilo video dovete includere uno o più predefiniti di codifica video.
 
 Per utilizzare il ritaglio avanzato per i video, potete creare un profilo di codifica video adattivo o progressivo. Come parte del profilo, usate lo strumento **[!UICONTROL Smart Crop Ratio (Proporzioni]** avanzate) per selezionare le proporzioni predefinite. Ad esempio, dopo aver definito i predefiniti di codifica video, potete aggiungere una definizione di &quot;Mobile Landscape&quot; con proporzioni pari a 16x9 e una definizione di &quot;Mobile Portrait&quot; con proporzioni pari a 9x16. Altre proporzioni o proporzioni di ritaglio tra cui potete scegliere tra 1x1, 4x3 e 4x5.
 
@@ -127,7 +127,7 @@ Gli elementi multimediali dinamici sono già dotati di un profilo di codifica vi
 
 Tuttavia, se questo profilo predefinito non soddisfa le esigenze, potete scegliere di creare un profilo di codifica video adattivo personalizzato. Quando utilizzate l’impostazione **[!UICONTROL Codifica per lo streaming]** adattivo, come best practice, vengono convalidati tutti i predefiniti di codifica che aggiungete al profilo, in modo da garantire che tutti i video abbiano le stesse proporzioni. Inoltre, i video codificati vengono trattati come un set di bitrate multipli per lo streaming.
 
-Quando create il profilo di codifica video, noterete che la maggior parte delle opzioni di codifica sono precompilate con le impostazioni predefinite consigliate per facilitare l’utente. Tuttavia, se selezionate un valore diverso da quello predefinito consigliato, tenete presente che potrebbe causare problemi di qualità video durante la riproduzione e altri problemi di prestazioni.
+Quando create il profilo di codifica video, noterete che la maggior parte delle opzioni di codifica sono precompilate con le impostazioni predefinite consigliate per facilitare l’utente. Tuttavia, se selezionate un valore diverso da quello predefinito consigliato, tenete presente che potrebbe causare problemi di qualità video durante la riproduzione e altre prestazioni.
 
 Pertanto, per tutti i predefiniti di codifica video MP4 H.264 presenti nel profilo, i seguenti valori vengono convalidati per garantire che siano identici tra i singoli predefiniti di codifica nel profilo, rendendo possibile lo streaming adattivo:
 
@@ -424,6 +424,6 @@ You can remove a Video Profile from a folder from within the **[!UICONTROL Tools
 ### Rimozione di un profilo video dalle cartelle tramite Proprietà {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Toccate o fate clic sul logo AEM, accedete a **[!UICONTROL Risorse]** e quindi alla cartella da cui desiderate rimuovere un profilo video.
-1. Sulla cartella, toccate o fate clic sul segno di spunta per selezionarlo, quindi toccate o fate clic su **[Proprietà]**.
+1. Sulla cartella, toccate o fate clic sul segno di spunta per selezionarlo, quindi toccate **[!UICONTROL Proprietà]**.
 1. Seleziona la scheda **[!UICONTROL Profili video]**, fai clic su **[!UICONTROL Nessuno]** dal menu a discesa e infine tocca **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
