@@ -2,7 +2,7 @@
 title: Video
 description: Scopri come lavorare con i video in Contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '10056'
 ht-degree: 10%
@@ -689,7 +689,7 @@ Per automatizzare l’impostazione delle proprietà predefinite di YouTube per i
 
 1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra fai clic su **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi di metadati]**.
 1. Click **[!UICONTROL default]**. (Non aggiungere un segno di spunta alla casella di selezione a sinistra di &quot;default&quot;).
-1. Nella pagina **[!UICONTROL predefinita]**, seleziona la casella a sinistra del **[!UICONTROL video]**, quindi fai clic su **[Modifica]**.
+1. Nella pagina **[!UICONTROL predefinita]**, seleziona la casella a sinistra del **[!UICONTROL video]**, quindi fai clic su **[!UICONTROL Modifica]**.
 1. Nella pagina Editor schema metadati, fate clic sulla scheda **[!UICONTROL Avanzate]** .
 1. Nell’intestazione Pubblicazione su YouTube, fai clic su **[!UICONTROL Categoria YouTube]**.
 1. Sul lato destro della pagina, nella scheda **[!UICONTROL Impostazioni]** , effettuate le seguenti operazioni:
@@ -874,7 +874,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 1. Per i processi non riusciti, consulta l’opzione Errori di flusso di lavoro, accessibile da **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Errori]**. In **[!UICONTROL Errore flusso di lavoro]** sono elencate tutte le attività del flusso di lavoro che hanno generato errori.
 
    >[!NOTE]
-   Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
+   Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
@@ -889,7 +889,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 1. Per i flussi di lavoro completati, consulta Archivio flussi di lavoro, accessibile da **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Archivio]**. **[!UICONTROL Archivio flussi di lavoro]** elenca tutte le attività del flusso di lavoro che sono state completate.
 
    >[!NOTE]
-   Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
+   Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
