@@ -2,7 +2,7 @@
 title: Set di file multimediali diversi
 description: Scoprite come utilizzare i set di file multimediali diversi in Contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 28%
@@ -100,7 +100,7 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
    ![chlimage_1-140](assets/chlimage_1-351.png)
 
-1. Riordinare le risorse trascinandole verso l’alto o verso il basso nell’elenco (se necessario, selezionate l’icona **[!UICONTROL Riordina]** ).
+1. Riordinate le risorse trascinandole verso l’alto o verso il basso nell’elenco (se necessario, selezionate l’icona **[!UICONTROL Riordina]** ).
 
    ![chlimage_1-141](assets/chlimage_1-352.png)
 
@@ -131,7 +131,7 @@ Potete eseguire diverse attività di modifica delle risorse in set di file multi
    * Passate il puntatore del mouse su una risorsa del set di file multimediali diversi, quindi toccate **[!UICONTROL Modifica]** (icona matita).
    * Passate il puntatore del mouse su una risorsa di set di file multimediali diversi, toccate **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi toccate **[!UICONTROL Modifica]** sulla barra degli strumenti.
 
-   * Toccate una risorsa set di file multimediali diversi, quindi toccate **[!UICONTROL Modifica]** (icona matita) nella barra degli strumenti.
+   * Toccate una risorsa di set di file multimediali diversi, quindi toccate **[!UICONTROL Modifica]** (icona matita) sulla barra degli strumenti.
 
 1. Nell’editor di set di file multimediali diversi, effettuate una delle seguenti operazioni:
 
@@ -147,7 +147,7 @@ Potete eseguire diverse attività di modifica delle risorse in set di file multi
       >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Passa il puntatore del mouse sulla risorsa, quindi tocca l’icona del segno di spunta per selezionarla. Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**.
          >
          >
-      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **[Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
+      * You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
 1. Toccate **[!UICONTROL Salva]** al termine della modifica.
@@ -157,7 +157,7 @@ Potete eseguire diverse attività di modifica delle risorse in set di file multi
    >* Per modificare le risorse in un set di file multimediali diversi, passa a Set di file multimediali diversi. Per aprire il set nella pagina Anteprima set AEM, toccalo ma non selezionarlo. In the left rail, click the down caret to open the drop-down list, then tap **[!UICONTROL Set Members]**. In the Set Members page, hover on an asset, then tap **[!UICONTROL Edit]** (pencil icon) to open the editing page.
       >
       >
-   * Per eliminare un intero set di file multimediali diversi: da qualsiasi modalità di visualizzazione (come Vista a schede o Vista a colonne), vai al set di file multimediali diversi. Hover on the set, then tap **[Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete]**.
+   * Per eliminare un intero set di file multimediali diversi: da qualsiasi modalità di visualizzazione (come Vista a schede o Vista a colonne), vai al set di file multimediali diversi. Hover on the set, then tap **[!UICONTROL Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete]**.
 
 
 ## Anteprima dei set di file multimediali diversi {#previewing-mixed-media-sets}
