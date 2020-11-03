@@ -3,9 +3,9 @@ title: Formati di file supportati e tipi MIME
 description: Formati di file e tipi MIME supportati da  Experience Manager Assets come Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '812'
 ht-degree: 9%
 
 ---
@@ -60,7 +60,6 @@ La legenda seguente descrive il livello di supporto.
 | GIF | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | ✓ | - | - |
 | TIFF | ✓ | ✓ | ✓ | - |
 
 ## Formati immagine in [!DNL Dynamic Media] {#image-support-dynamic-media}
@@ -102,7 +101,7 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/a
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
-## [!DNL Camera RAW] F {#camera-raw-formats}
+## [!DNL Camera RAW] format {#camera-raw-formats}
 
 | Formato file | Generazione delle miniature | Estrazione di metadati | Larghezza/Altezza |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -126,7 +125,7 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/a
 | NRW | ✓ | ✓ | ✓ |
 | ORF | ✓ | ✓ | ✓ |
 | PEF | ✓ | ✓ | ✓ |
-| format RAF | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ |
 | RAW | ✓ | ✓ | ✓ |
 | RW2 | ✓ | ✓ | ✓ |
 | RWL | ✓ | ✓ | ✓ |
