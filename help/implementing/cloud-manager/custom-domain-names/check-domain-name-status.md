@@ -2,9 +2,9 @@
 title: Verifica dello stato del nome del dominio
 description: Verifica dello stato del nome del dominio
 translation-type: tm+mt
-source-git-commit: 91b06bcd96fe8a37c3fb20ef90e1684f6d19183f
+source-git-commit: 5cd22d8af20bb947e4cdab448cf8f20c6596bb2e
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -52,3 +52,37 @@ Accedi al Registratore di dominio e crea un record CNAME per indirizzare il nome
 | CNAME | Nome di dominio personalizzato point to Target |
 |--- |--- |
 | www.customdomain.com | cdn.adobeaemcloud.com |
+
+### Record APEX {#apex-record}
+
+Un dominio apex è un dominio personalizzato che non contiene un sottodominio, ad esempio example.com. Un dominio apex è configurato con un `A` , `ALIAS` o `ANAME` record tramite il provider DNS. I domini Apex devono puntare a indirizzi IP specifici.
+
+Aggiungi tutti i seguenti record A alle impostazioni DNS del dominio tramite il provider di dominio:
+
+* `A RECORD`
+
+* `A record for domain @ pointing to IP 151.101.3.10`
+
+* `A record for domain @ pointing to IP 151.101.67.10`
+
+* `A record for domain @ pointing to IP 151.101.131.10`
+
+* `A record for domain @ pointing to IP 151.101.195.10`
+
+## Verifica dello stato del record DNS {#check-status-dns-record}
+
+È possibile determinare se il nome di dominio viene risolto correttamente nel AEM come sito Web di Cloud Service facendo clic sull&#39;icona Stato per il record DNS nella tabella in Ambienti della pagina Impostazioni di dominio. Cloud Manager esegue una ricerca DNS per il tuo nome di dominio e visualizza uno dei seguenti messaggi di stato:
+
+>[!NOTE]
+>Cloud Manager attiva automaticamente una ricerca DNS quando il nome di dominio personalizzato viene verificato e distribuito per la prima volta. Per i tentativi successivi, devi selezionare attivamente l&#39;icona **resolve again** accanto allo stato. INSERISCI IMMAGINE
+
+* **Lo stato DNS non rilevato** DNS non verrà rilevato finché il nome di dominio personalizzato non sarà stato verificato e distribuito correttamente. Questo stato viene osservato anche quando il nome del dominio personalizzato è in fase di eliminazione.
+
+* **Il DNS risolve in modo errato** Indica che la configurazione dei record DNS non è ancora stata risolta/puntata o è errata.  rappresentante del Adobe ne verrà informato automaticamente.
+
+   >[!NOTE]
+   >È necessario configurare un `CNAME` o `A-record` seguendo le istruzioni corrispondenti. Per ulteriori informazioni sull&#39;argomento, vedere Configurazione del collegamento INSERT delle impostazioni DNS. Quando è pronto, è necessario selezionare l&#39;icona &quot;resolve again&quot; accanto allo stato.
+
+* **Risoluzione DNS in corso** Risoluzione. Questo stato viene generalmente visualizzato dopo che avete selezionato l’icona &quot;resolve again&quot; (Risolvi di nuovo) accanto allo stato.
+
+* **DNS Risolve correttamente** Le impostazioni DNS sono configurate correttamente. Il sito è al servizio dei visitatori.
