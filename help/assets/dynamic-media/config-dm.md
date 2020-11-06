@@ -2,9 +2,9 @@
 title: Configurazione del Cloud Service di contenuti multimediali dinamici
 description: Informazioni su come configurare gli elementi multimediali dinamici nel Cloud Service Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
+source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5598'
 ht-degree: 8%
 
 ---
@@ -82,7 +82,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | Percorso cartella principale della società | Percorso cartella principale della società. |
    | Pubblicazione delle risorse | Potete scegliere tra le seguenti tre opzioni:<br>**[!UICONTROL Immediatamente ]**: Quando le risorse vengono caricate, il sistema le acquisisce e fornisce immediatamente l’URL o l’incorporamento. Non è necessario alcun intervento da parte degli utenti per pubblicare le risorse.<br>**[!UICONTROL Al momento dell&#39;attivazione]**: Prima di fornire un collegamento URL/Incorpora, è necessario pubblicare esplicitamente la risorsa.<br>**[!UICONTROL Pubblicazione ]**selettiva: Le risorse vengono pubblicate automaticamente solo per la visualizzazione in anteprima protetta e possono essere pubblicate in modo esplicito su AEM senza la pubblicazione in DMS7 per la distribuzione nel dominio pubblico. In futuro,  Adobe migliorerà questa opzione per pubblicare le risorse per AEM e pubblicare le risorse su elementi multimediali dinamici, escludendosi a vicenda. In altre parole, potete pubblicare le risorse su DMS7 in modo da poter utilizzare funzioni quali SmartCrop o rappresentazioni dinamiche. Oppure potete pubblicare le risorse esclusivamente in AEM per la visualizzazione dell’anteprima; le stesse risorse non vengono pubblicate in DMS7 per la distribuzione nel dominio pubblico. |
    | Server di anteprima protetto | Consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, AEM accedere e visualizzare in modo sicuro le rappresentazioni per contenuti multimediali dinamici remoti (nessun file binario viene inviato nuovamente all’istanza AEM).<br>A meno che non disponiate di una disposizione speciale per utilizzare il server della vostra società o un server speciale,  Adobe Systems consiglia di lasciare questa impostazione come specificato. |
-   | Sincronizza tutti i contenuti | Selezionato per impostazione predefinita. Deselezionate questa opzione se desiderate includere o escludere selettivamente le risorse dalla sincronizzazione a elementi multimediali dinamici. Deselezionando questa opzione potete scegliere tra le due seguenti modalità di sincronizzazione elementi multimediali dinamici:<br>**[!UICONTROL Modalità di sincronizzazione]**<br>**[!UICONTROL elementi multimediali dinamiciAttiva per impostazione predefinita ]**: Per impostazione predefinita, la configurazione è applicata a tutte le cartelle, a meno che non venga contrassegnata una cartella specifica per l’esclusione.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disattivato per impostazione predefinita]**: La configurazione non viene applicata ad alcuna cartella finché non viene esplicitamente contrassegnata una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici.<br>Per contrassegnare una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici, selezionate una cartella di risorse, quindi toccate **[!UICONTROL Proprietà]** sulla barra degli strumenti. Nella scheda **[!UICONTROL Dettagli]** , nell’elenco a discesa Modalità **[!UICONTROL sincronizzazione file multimediali]** dinamici, scegliete una delle tre opzioni seguenti. Al termine, toccate **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se avete selezionato **Sincronizza tutto il contenuto**in precedenza.* Consultate anche [Utilizzo della pubblicazione selettiva a livello di cartella in Contenuti multimediali dinamici.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Ereditato ]**: Nessun valore di sincronizzazione esplicito sulla cartella; al contrario, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per le presentazioni ereditate viene visualizzato tramite una descrizione comandi.<br>**[!UICONTROL Abilita per sottocartelle]**: Includi tutti gli elementi in questo sottoalbero per la sincronizzazione con gli elementi multimediali dinamici. Le impostazioni specifiche per la cartella sostituiscono la modalità predefinita nella configurazione cloud.<br>**[!UICONTROL Disattivato per le sottocartelle ]**: Escludete tutti gli elementi di questo sottoalbero dalla sincronizzazione a Contenuti multimediali dinamici. |
+   | Sincronizza tutti i contenuti | Selezionato per impostazione predefinita. Deselezionate questa opzione se desiderate includere o escludere selettivamente le risorse dalla sincronizzazione a elementi multimediali dinamici. Deselezionando questa opzione potete scegliere tra le due seguenti modalità di sincronizzazione elementi multimediali dinamici:<br>**[!UICONTROL Modalità di sincronizzazione]**<br>**[!UICONTROL elementi multimediali dinamiciAttiva per impostazione predefinita ]**: Per impostazione predefinita, la configurazione è applicata a tutte le cartelle, a meno che non venga contrassegnata una cartella specifica per l’esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disattivato per impostazione predefinita]**: La configurazione non viene applicata ad alcuna cartella finché non viene esplicitamente contrassegnata una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici.<br>Per contrassegnare una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici, selezionate una cartella di risorse, quindi toccate **[!UICONTROL Proprietà]** sulla barra degli strumenti. Nella scheda **[!UICONTROL Dettagli]** , nell’elenco a discesa Modalità **[!UICONTROL sincronizzazione file multimediali]** dinamici, scegliete una delle tre opzioni seguenti. Al termine, toccate **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se avete selezionato **Sincronizza tutto il contenuto**in precedenza.* Consultate anche [Utilizzo della pubblicazione selettiva a livello di cartella in Contenuti multimediali dinamici.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Ereditato ]**: Nessun valore di sincronizzazione esplicito sulla cartella; al contrario, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per le presentazioni ereditate viene visualizzato tramite una descrizione comandi.<br>**[!UICONTROL Abilita per sottocartelle]**: Includi tutti gli elementi in questo sottoalbero per la sincronizzazione con gli elementi multimediali dinamici. Le impostazioni specifiche per la cartella sostituiscono la modalità predefinita nella configurazione cloud.<br>**[!UICONTROL Disattivato per le sottocartelle ]**: Escludete tutti gli elementi di questo sottoalbero dalla sincronizzazione a Contenuti multimediali dinamici. |
 
    >[!NOTE]
    >
@@ -254,14 +254,14 @@ In questo modo si effettua quanto segue:
 * Le rappresentazioni dinamiche che restituiscono l’output RGB lo restituiranno nello spazio colore *sRGB* .
 * Rappresentazioni dinamiche che restituiscono l’output CMYK, lo restituiranno nello spazio colore *WebCoated* .
 
-#### Configurazione dell’elaborazione delle risorse {#configuring-asset-processing}
+#### Modifica dei tipi MIME per i formati supportati {#configuring-asset-processing}
 
-Potete definire i tipi di risorse che devono essere elaborati da Dynamic Media e personalizzare i parametri di elaborazione avanzati delle risorse. Ad esempio, potete specificare i parametri di elaborazione delle risorse per effettuare le seguenti operazioni:
+Potete definire i tipi di risorse elaborati da Dynamic Media e personalizzare i parametri di elaborazione avanzati delle risorse. Ad esempio, potete specificare i parametri di elaborazione delle risorse per effettuare le seguenti operazioni:
 
 * Convertite un Adobe PDF  in una risorsa eCatalog.
 * Convertite un documento Adobe Photoshop  (.PSD) in una risorsa modello banner per la personalizzazione.
 * Rasterizzare un file Adobe Illustrator  (.AI) o un file  Encapsulated Postscript di Adobe Photoshop (.EPS).
-* Nota: I profili video e i profili immagine possono essere utilizzati rispettivamente per definire l’elaborazione di video e immagini.
+* [Profili](/help/assets/dynamic-media/video-profiles.md) video e [profili](/help/assets/dynamic-media/image-profiles.md) immagine possono essere utilizzati rispettivamente per definire l’elaborazione di video e immagini.
 
 Consulta [Caricamento delle risorse](/help/assets/add-assets.md).
 
@@ -277,9 +277,9 @@ Per configurare l’elaborazione delle risorse:
 1. Sotto la cartella mimeTypes, selezionate un tipo mime.
 1. Sul lato destro della pagina CRXDE Lite, nella parte inferiore:
 
-   * fare doppio clic sul campo **[!UICONTROL abilitato]** . Per impostazione predefinita, tutti i tipi di mime delle risorse sono attivati (impostati su **[!UICONTROL true]**), il che significa che le risorse verranno sincronizzate su Contenuti multimediali dinamici per l’elaborazione. Se desiderate escludere l’elaborazione di questo tipo di mime della risorsa, modificate questa impostazione in **[!UICONTROL false]**.
+   * Fare doppio clic sul campo **[!UICONTROL abilitato]** . Per impostazione predefinita, tutti i tipi di mime delle risorse sono attivati (impostati su **[!UICONTROL true]**), il che significa che le risorse verranno sincronizzate su Contenuti multimediali dinamici per l’elaborazione. Per escludere l’elaborazione di questo tipo di mime della risorsa, impostate questa opzione su **[!UICONTROL false]**.
 
-   * fare doppio clic su **[!UICONTROL jobParam]** per aprire il campo di testo associato. Consultate Tipi [mime](/help/assets/file-format-support.md) supportati per un elenco dei valori di parametri di elaborazione consentiti per un determinato tipo mime.
+   * Fare doppio clic su **[!UICONTROL jobParam]** per aprire il relativo campo di testo associato. Consultate Tipi [mime](/help/assets/file-format-support.md) supportati per un elenco dei valori di parametri di elaborazione consentiti per un determinato tipo mime.
 
 1. Effettua una delle operazioni seguenti:
    * Ripetete i passaggi da 3 a 4 per modificare altri tipi di mime.
@@ -287,11 +287,11 @@ Per configurare l’elaborazione delle risorse:
 
 1. Nell’angolo superiore sinistro della pagina, toccate **[!UICONTROL CRXDE Lite]** per tornare alla AEM.
 
-#### Aggiunta di tipi MIME personalizzati per i formati non supportati {#adding-custom-mime-types-for-unsupported-formats}
+#### Aggiunta di tipi MIME per i formati non supportati {#adding-custom-mime-types-for-unsupported-formats}
 
 All’interno di AEM Assets puoi aggiungere tipi MIME personalizzati per i formati non supportati. Per assicurarti che AEM non elimini eventuali nuovi nodi che aggiungi in CRXDE Lite, devi accertarti di spostare il tipo MIME prima di `image_` e che il suo valore abilitato sia impostato su **[!UICONTROL false]**.
 
-Per aggiungere tipi MIME personalizzati per i formati non supportati:
+Per aggiungere tipi MIME per i formati non supportati:
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -453,7 +453,7 @@ Per creare un predefinito per set di batch per la generazione automatica di un s
 
    Le credenziali e l&#39;accesso sono stati forniti  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
 
-1. Nella barra di navigazione accanto alla parte superiore della pagina, fate clic su **[!UICONTROL Configurazione > Impostazione]applicazione > Predefiniti[!UICONTROL set di]batch > Predefinito[!UICONTROL set di]** batch.
+1. Nella barra di navigazione accanto alla parte superiore della pagina, fate clic su **[!UICONTROL Configurazione > Impostazione] applicazione > Predefiniti [!UICONTROL set di] batch > Predefinito [!UICONTROL set di]** batch.
 
    Tenere presente che **[!UICONTROL Visualizza modulo]**, come impostato nell’angolo superiore destro della pagina Dettagli, è la visualizzazione predefinita.
 
