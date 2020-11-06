@@ -2,9 +2,9 @@
 title: Smart imaging
 description: La tecnologia di imaging intelligente sfrutta le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, migliorando le prestazioni e il coinvolgimento.
 translation-type: tm+mt
-source-git-commit: 8040cd38bb01296ed89d44c707ca1e759489eb7b
+source-git-commit: e4d75f8bb783df57705bcaa6483bcb0ac6ec7ead
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2085'
 ht-degree: 2%
 
 ---
@@ -105,8 +105,6 @@ Vedete [Posso usare le Smart Imaging?](#am-i-eligible-to-use-smart-imaging) per 
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
-
-Vedete [Posso usare le Smart Imaging?](#am-i-eligible-to-use-smart-imaging) per comprendere i prerequisiti per la funzione Smart Imaging.
 
 ## Smart Imaging funziona con HTTPS? E HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
