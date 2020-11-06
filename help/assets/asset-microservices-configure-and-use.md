@@ -3,9 +3,9 @@ title: Configurare e utilizzare i microservizi delle risorse
 description: Configurate e utilizzate i microservizi delle risorse native per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2530'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 | Opzione | Descrizione | Casi di utilizzo coperti |
 |---|---|---|
-| [Configurazione predefinita](#default-config) | È disponibile così come è e non può essere modificato. Questa configurazione fornisce funzionalità di generazione delle rappresentazioni di base. | <ul> <li>Miniature standard utilizzate dall’interfaccia [!DNL Assets] utente (48, 140 e 319 px) </li> <li> Anteprima grande (rappresentazione Web - 1280 px) </li><li> Estrazione di metadati e testo.</li></ul> |
+| [Configurazione predefinita](#default-config) | È disponibile così come è e non può essere modificato. Questa configurazione fornisce funzionalità di generazione delle rappresentazioni di base. | <ul> <li>Miniature standard utilizzate dall’interfaccia [!DNL Assets] utente (48, 140 e 319 pixel) </li> <li> Anteprima grande (rappresentazione Web - 1280 pixel) </li><li> Estrazione di metadati e testo.</li></ul> |
 | [Configurazione personalizzata](#standard-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente. Offre più opzioni per la generazione della rappresentazione, estendendo l&#39;opzione predefinita. Estendete l’opzione out-of-the-box per fornire formati e rappresentazioni diversi. | <ul><li>Rendering FPO. </li> <li>Modificare il formato file e la risoluzione delle immagini</li> <li> Applicabile in modo condizionale ai tipi di file configurati. </li> </ul> |
 | [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per utilizzare il codice personalizzato attraverso le applicazioni personalizzate per chiamare il servizio [di elaborazione delle](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)risorse. Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Consultate [casi](#custom-config)di utilizzo consentiti. |
 
@@ -78,9 +78,9 @@ Per creare un profilo di elaborazione standard, effettuate le seguenti operazion
 1. Per generare altre rappresentazioni, fate clic su **[!UICONTROL Aggiungi nuovo]** e fornite le seguenti informazioni:
 
    * Nome file di ogni rappresentazione.
-   * Formato file (PNG, JPEG o GIF) di ciascuna rappresentazione.
+   * Formato file (PNG, JPEG, GIF o WebP) di ciascuna rappresentazione.
    * Larghezza e altezza in pixel di ciascuna rappresentazione. Se i valori non sono specificati, viene usata la dimensione in pixel dell’immagine originale.
-   * Qualità in percentuale di ciascuna rappresentazione JPEG.
+   * Qualità in percentuale di ciascuna rappresentazione JPEG e WebP.
    * Tipi MIME inclusi ed esclusi per definire l&#39;applicabilità di un profilo.
 
    ![elaborazione-profili-aggiunta](assets/processing-profiles-image.png)
@@ -148,7 +148,7 @@ L&#39;integrazione di Asset Compute Service consente  Experience Manager di tras
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*Figura: Utilizzate il campo Parametri[!UICONTROL di]servizio per trasmettere informazioni aggiunte ai parametri predefiniti creati nell&#39;applicazione personalizzata. In questo esempio, quando le immagini della campagna vengono caricate, le immagini vengono aggiornate con`Jumanji`testo in`Arial-BoldMT`font.*
+*Figura: Utilizzate il campo Parametri [!UICONTROL di] servizio per trasmettere informazioni aggiunte ai parametri predefiniti creati nell&#39;applicazione personalizzata. In questo esempio, quando le immagini della campagna vengono caricate, le immagini vengono aggiornate con `Jumanji` testo in `Arial-BoldMT` font.*
 
 ## Utilizzo dei profili di elaborazione per elaborare le risorse {#use-profiles}
 
