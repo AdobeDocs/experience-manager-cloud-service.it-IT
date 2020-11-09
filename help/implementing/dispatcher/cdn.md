@@ -2,9 +2,9 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
+source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '713'
 ht-degree: 4%
 
 ---
@@ -20,10 +20,10 @@ La rete CDN gestita AEM soddisferà i requisiti di prestazioni e sicurezza della
 
 Per preparare la distribuzione dei contenuti, utilizzate  CDN  Adobe out-of-the-box:
 
-1. Fornite il certificato SSL firmato e la chiave segreta per  Adobe condividendo un collegamento a un modulo protetto contenente queste informazioni. Coordinare con l&#39;assistenza clienti su questa attività.
+1. Fornite il certificato SSL firmato e la chiave segreta per  Adobe condividendo un collegamento a un modulo protetto contenente queste informazioni. Coordinare con l&#39;assistenza clienti su questa attività.  Adobe supporta fino a 10 certificati SSL per un programma.
    **Nota:** Aem come Cloud Service non supporta i certificati convalidati (DV) del dominio. Inoltre, deve essere un certificato TLS X.509 di un&#39;autorità di certificazione (CA) affidabile con una chiave privata RSA a 2048 bit corrispondente.
 1. Informare l&#39;assistenza clienti:
-   * quale dominio personalizzato deve essere associato a un determinato ambiente, come definito dall&#39;ID del programma e dall&#39;ID dell&#39;ambiente. I domini personalizzati dal lato dell&#39;autore non sono supportati.
+   * quali domini personalizzati devono essere associati a un determinato ambiente, come definito dall&#39;ID del programma e dall&#39;ID dell&#39;ambiente. Fino a 100 domini sono supportati per un determinato ambiente e i domini non possono contenere caratteri jolly. I domini personalizzati dal lato dell&#39;autore non sono supportati.
    * se è necessaria un&#39;inserire nell&#39;elenco Consentiti IP  per limitare il traffico a un determinato ambiente.
 1. Coordinare con l&#39;assistenza clienti la tempistica delle modifiche necessarie ai record DNS. Le istruzioni sono diverse a seconda che sia necessario un record apex:
    * se non è necessario un record apex, i clienti devono impostare il record DNS CNAME in modo che punti il loro FQDN a `cdn.adobeaemcloud.com`.
