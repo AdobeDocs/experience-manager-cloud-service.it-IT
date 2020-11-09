@@ -1,11 +1,11 @@
 ---
 title: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service
 description: 'Introduzione all’architettura di Adobe Experience Manager as a Cloud Service. '
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1679'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+workflow-type: tm+mt
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -59,10 +59,11 @@ La scalabilità delle istanze per tenant del servizio può avvenire in modo auto
 ## Ambienti {#environments}
 
 >[!NOTE]
->
 >Per ulteriori informazioni, vedi [Distribuzione - Modalità di esecuzione](/help/implementing/deploying/overview.md#runmodes)
 
-AEM as a Cloud Service è disponibile come istanza singola, dove ogni istanza rappresenta un ambiente AEM completo. Con AEM as a Cloud Service sono disponibili quattro tipi di ambienti:
+AEM as a Cloud Service è disponibile come istanza singola, dove ogni istanza rappresenta un ambiente AEM completo.
+
+Sono disponibili tre tipi di ambienti con AEM come Cloud Service:
 
 * **Ambiente di produzione**: ospita le applicazioni utilizzate dagli utenti business.
 
@@ -70,9 +71,7 @@ AEM as a Cloud Service è disponibile come istanza singola, dove ogni istanza ra
 
 * **Ambiente di sviluppo**: consente agli sviluppatori di implementare le applicazioni AEM nelle medesime condizioni di esecuzione degli ambienti di stage e produzione.
 
-* **Ambiente dimostrativo**: può essere utilizzato a scopo di valutazione, dimostrazione, prototipazione e formazione.
-
-Gli ambienti di sviluppo e dimostrazione sono spesso definiti ambienti *non di produzione*.
+   Per ulteriori informazioni, consulta [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) .
 
 ## Programmi {#programs}
 
