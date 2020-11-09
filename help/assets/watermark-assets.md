@@ -3,9 +3,9 @@ title: Filigrana delle risorse
 description: Aggiungi una filigrana alle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7ea7af1cf784b6866f3c2484475a8072ff76be2c
+source-git-commit: af27295b618fb3909d43ed94a74148f7c4f59c10
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Per configurare [!DNL Experience Manager] le risorse delle filigrane, effettuate
 
 1. Un file PNG viene applicato come filigrana. Caricate questo file nell&#39;archivio DAM.
 
-1. Accedere al repository [!DNL Cloud Manager] Git associato al proprio ambiente. Effettuate il commit di un file denominato `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` nel relativo archivio [!DNL Cloud Manager] Git con i seguenti contenuti. Per ulteriori dettagli, consultate [come eseguire la configurazione OSGi [!DNL Experience Manager] in un Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+1. Accedere al repository [!DNL Cloud Manager] Git associato al proprio ambiente. Effettuate il commit di un file denominato `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` nella directory archivio con i seguenti contenuti. Per istruzioni, consultate [come eseguire la configurazione OSGi [!DNL Experience Manager] in un Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {
