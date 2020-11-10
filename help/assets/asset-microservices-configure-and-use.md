@@ -3,9 +3,9 @@ title: Configurare e utilizzare i microservizi delle risorse
 description: Configurate e utilizzate i microservizi delle risorse native per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2514'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |---|---|---|
 | [Configurazione predefinita](#default-config) | È disponibile così come è e non può essere modificato. Questa configurazione fornisce funzionalità di generazione delle rappresentazioni di base. | <ul> <li>Miniature standard utilizzate dall’interfaccia [!DNL Assets] utente (48, 140 e 319 pixel) </li> <li> Anteprima grande (rappresentazione Web - 1280 pixel) </li><li> Estrazione di metadati e testo.</li></ul> |
 | [Configurazione personalizzata](#standard-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente. Offre più opzioni per la generazione della rappresentazione, estendendo l&#39;opzione predefinita. Estendete l’opzione out-of-the-box per fornire formati e rappresentazioni diversi. | <ul><li>Rendering FPO. </li> <li>Modificare il formato file e la risoluzione delle immagini</li> <li> Applicabile in modo condizionale ai tipi di file configurati. </li> </ul> |
-| [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per utilizzare il codice personalizzato attraverso le applicazioni personalizzate per chiamare il servizio [di elaborazione delle](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)risorse. Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Consultate [casi](#custom-config)di utilizzo consentiti. |
+| [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per utilizzare il codice personalizzato attraverso le applicazioni personalizzate per chiamare [Servizio](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)Asset compute. Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Consultate [casi](#custom-config)di utilizzo consentiti. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -100,7 +100,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Profilo personalizzato e casi di utilizzo {#custom-config}
 
-Supporta una serie di [!DNL Asset Compute Service] casi di utilizzo, ad esempio l&#39;elaborazione predefinita, l&#39;elaborazione  formati specifici per i Adobi come i file Photoshop e l&#39;implementazione di un&#39;elaborazione personalizzata o specifica per l&#39;organizzazione. La personalizzazione del flusso di lavoro di DAM Update Asset richiesta in passato, viene gestita automaticamente o tramite la configurazione dei profili di elaborazione. Se queste opzioni di elaborazione non soddisfano le esigenze aziendali,  Adobe consiglia di sviluppare e utilizzare [!DNL Asset Compute Service] per estendere le funzionalità predefinite. Per una panoramica, consultate [Comprendere l’estensibilità e quando utilizzarla](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
+Supporta una serie di [!DNL Asset Compute Service] casi di utilizzo, ad esempio l&#39;elaborazione predefinita, l&#39;elaborazione  formati specifici per i Adobi come i file Photoshop e l&#39;implementazione di un&#39;elaborazione personalizzata o specifica per l&#39;organizzazione. La personalizzazione del flusso di lavoro di DAM Update Asset richiesta in passato, viene gestita automaticamente o tramite la configurazione dei profili di elaborazione. Se queste opzioni di elaborazione non soddisfano le esigenze aziendali,  Adobe consiglia di sviluppare e utilizzare [!DNL Asset Compute Service] per estendere le funzionalità predefinite. Per una panoramica, consultate [Comprendere l’estensibilità e quando utilizzarla](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Supporta una serie di [!DNL Asset Compute Service] casi di utilizzo, ad esempio 
 
 Può trasformare immagini, video, documenti e altri formati di file in diverse rappresentazioni, come miniature, testo estratto e metadati, nonché archivi.
 
-Gli sviluppatori possono utilizzare il [!DNL Asset Compute Service] per [creare applicazioni](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) personalizzate in grado di soddisfare i casi di utilizzo supportati. [!DNL Experience Manager] possono chiamare queste applicazioni personalizzate dall&#39;interfaccia utente utilizzando profili personalizzati che gli amministratori configurano. [!DNL Asset Compute Service] supporta i seguenti casi di utilizzo di servizi esterni:
+Gli sviluppatori possono utilizzare il [!DNL Asset Compute Service] per [creare applicazioni](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) personalizzate in grado di soddisfare i casi di utilizzo supportati. [!DNL Experience Manager] possono chiamare queste applicazioni personalizzate dall&#39;interfaccia utente utilizzando profili personalizzati che gli amministratori configurano. [!DNL Asset Compute Service] supporta i seguenti casi di utilizzo di servizi esterni:
 
 * Utilizzate [!DNL Adobe Photoshop]l&#39;API [ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) e salvate il risultato come rappresentazione.
 * Chiama sistemi di terze parti per aggiornare i dati, ad esempio un sistema PIM.
@@ -128,8 +128,8 @@ Per creare un profilo personalizzato, attenetevi alla procedura seguente:
 1. Fornite le seguenti informazioni.
 
    * Nome file di ogni rappresentazione e estensione file supportata.
-   * [URL punto finale di un&#39;app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)Firefly personalizzata. L&#39;app deve provenire dalla stessa organizzazione dell&#39;account del Experience Manager .
-   * Aggiungi parametri di servizio per [trasmettere informazioni o parametri aggiuntivi all&#39;applicazione](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)personalizzata.
+   * [URL punto finale di un&#39;app](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html)Firefly personalizzata. L&#39;app deve provenire dalla stessa organizzazione dell&#39;account del Experience Manager .
+   * Aggiungi parametri di servizio per [trasmettere informazioni o parametri aggiuntivi all&#39;applicazione](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend)personalizzata.
    * Sono inclusi ed esclusi i tipi MIME per limitare l&#39;elaborazione ad alcuni formati di file specifici.
 
    Fai clic su **[!UICONTROL Salva]**.
@@ -144,7 +144,7 @@ Le applicazioni personalizzate sono app [Project Firefly](https://github.com/Ado
 
 Per illustrare l&#39;utilizzo del profilo personalizzato, consideriamo un caso d&#39;uso per applicare del testo personalizzato alle immagini della campagna. Potete creare un profilo di elaborazione che sfrutta l&#39;API di Photoshop per modificare le immagini.
 
-L&#39;integrazione di Asset Compute Service consente  Experience Manager di trasmettere questi parametri all&#39;applicazione personalizzata utilizzando il campo [!UICONTROL Service Parameters] . L&#39;applicazione personalizzata chiama quindi l&#39;API Photoshop e trasmette questi valori all&#39;API. Ad esempio, potete trasmettere il nome del font, il colore del testo, lo spessore del testo e la dimensione del testo per aggiungere il testo personalizzato alle immagini della campagna.
+&#39;integrazione con il servizio di Asset compute consente  Experience Manager di trasmettere questi parametri all&#39;applicazione personalizzata utilizzando il campo Parametri [!UICONTROL di] servizio. L&#39;applicazione personalizzata chiama quindi l&#39;API Photoshop e trasmette questi valori all&#39;API. Ad esempio, potete trasmettere il nome del font, il colore del testo, lo spessore del testo e la dimensione del testo per aggiungere il testo personalizzato alle immagini della campagna.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
@@ -224,9 +224,9 @@ Per informazioni dettagliate sul passaggio del flusso di lavoro standard da util
 
 >[!MORELIKETHIS]
 >
->* [Introduzione al servizio](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)di calcolo delle risorse.
->* [Comprendere l&#39;estensibilità e quando utilizzarla](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
->* [Come creare applicazioni](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)personalizzate.
+>* [Introduzione a  Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html).
+>* [Comprendere l&#39;estensibilità e quando utilizzarla](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
+>* [Come creare applicazioni](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)personalizzate.
 >* [Tipi MIME supportati per vari casi](/help/assets/file-format-support.md)di utilizzo.
 
 
