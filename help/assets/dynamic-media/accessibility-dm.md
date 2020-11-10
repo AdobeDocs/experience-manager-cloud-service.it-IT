@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 7af8ddda4aee093b22147db9be9f65cd0c131c04
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 
 Dynamic Media supporta il controllo da tastiera e tecnologie di supporto, come gli assistenti vocali JAWS e NVDA, nell’interfaccia utente di authoring.
 
+
+
 ## Supporto per l&#39;accessibilità da tastiera in Contenuti multimediali dinamici
 
 I tasti supportati da singoli elementi dell&#39;interfaccia utente sono, nella maggior parte dei casi, evidenti e facili da scoprire. Il controllo della tastiera in Contenuti multimediali dinamici è il seguente:
@@ -25,8 +27,8 @@ I tasti supportati da singoli elementi dell&#39;interfaccia utente sono, nella m
 L&#39;utilizzo di `Tab` rende più attivo il successivo elemento dell&#39;interfaccia utente nell&#39;ordine di tabulazione; l&#39;utilizzo `Shift+Tab` ripristina l&#39;input dell&#39;elemento dell&#39;interfaccia utente precedente.
 La barra laterale di messa a fuoco segue la posizione naturale dell&#39;elemento dell&#39;interfaccia utente sullo schermo e si sposta in ordine da sinistra a destra, quindi dall&#39;alto verso il basso.
 * Possibilità di utilizzare il tasto `Spacebar` e `Enter` per attivare gli elementi standard dell&#39;interfaccia utente, ad esempio pulsanti, elenchi a discesa e così via.
-* Possibilità di usare alcuni tasti personalizzati per interagire con elementi dell’interfaccia utente complessi, ad esempio i tasti freccia nell’editor hot spot.
 * Possibilità di visualizzare l&#39;evidenziazione dello stato attivo. L&#39;elemento dell&#39;interfaccia utente attivo può ricevere un&#39;indicazione visiva come bordo intorno all&#39;elemento dell&#39;interfaccia utente.
+* Possibilità di usare alcuni tasti personalizzati per interagire con elementi dell’interfaccia utente complessi, ad esempio i tasti freccia nell’editor hot spot. Nell’editor Ritaglio immagine/Ritaglio avanzato è possibile utilizzare i tasti freccia per ritagliare le dimensioni del fotogramma, riposizionare l’immagine o entrambi.
 
 Poiché Dynamic Media è un plug-in per  AEM Assets, la maggior parte del comportamento dei controlli da tastiera è esattamente uguale a  AEM Assets. Ad esempio, il `Cancel` pulsante in Contenuti multimediali dinamici ha la stessa evidenziazione dello stato attivo di  AEM Assets e reagisce alla `Spacebar` chiave come in  AEM Assets. Consultate Scelte rapide da [tastiera in Risorse](/help/assets/accessibility.md#keyboard-shortcuts). Eccezioni a questo sono l’editor dei punti attivi e gli editor di ritaglio immagini/ritaglio avanzato.
 
