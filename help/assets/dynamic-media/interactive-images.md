@@ -2,9 +2,9 @@
 title: Immagini interattive
 description: Scopri come lavorare con le immagini interattive in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '4238'
+source-wordcount: '4253'
 ht-degree: 2%
 
 ---
@@ -256,10 +256,10 @@ Consultate [(Facoltativo) Anteprima delle immagini](#optional-previewing-interac
 1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Aggiungi punto attivo]** (icona a forma di dito che tocca) per aprire la pagina Gestione punti attivi.
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
 
-1. Nell’angolo in alto a sinistra della pagina Gestione dei punti attivi, toccate **[!UICONTROL Area sensibile]**.
-1.  Sull’immagine, tocca la posizione in cui vuoi visualizzare il punto attivo. Se necessario, trascina il punto attivo per regolarne la posizione.
-1. Se necessario, potete aggiungere altri punti di attivazione ripetendo i passaggi a e b.
-1. (Facoltativo) Per eliminare un punto di attivazione, selezionatelo sull&#39;immagine, quindi toccate **[!UICONTROL Elimina]** (icona cestino) sotto l&#39;intestazione **[!UICONTROL Punti attivi]** .
+   1. Nell’angolo in alto a sinistra della pagina Gestione dei punti attivi, toccate **[!UICONTROL Area sensibile]**.
+   1.  Sull’immagine, tocca la posizione in cui vuoi visualizzare il punto attivo. Se necessario, trascina il punto attivo per regolarne la posizione. Oppure, utilizzare i tasti freccia della tastiera per controllare la posizione di un punto sensibile selezionato.
+   1. Se necessario, potete aggiungere altri punti di attivazione ripetendo i passaggi a e b.
+   1. (Facoltativo) Per eliminare un punto di attivazione, selezionatelo sull&#39;immagine, quindi toccate **[!UICONTROL Elimina]** (icona cestino) sotto l&#39;intestazione **[!UICONTROL Punti attivi]** .
 
 1. Nel campo di testo Nome, digitate il nome del punto di attivazione. Questo nome viene visualizzato anche nell&#39;elenco a discesa Area sensibile selezionata.
 1. Effettua una delle operazioni seguenti:
