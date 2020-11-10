@@ -4,9 +4,9 @@ description: Scopri i diversi metodi di gestione e modifica delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '4431'
+source-wordcount: '4429'
 ht-degree: 13%
 
 ---
@@ -43,7 +43,7 @@ Consultate [Aggiungere risorse digitali a  Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Se un utente DAM carica una o più risorse già presenti nella directory archivio, [!DNL Experience Manager] ne rileva la duplicazione e ne informa l’utente. Per impostazione predefinita, il rilevamento di duplicati è disabilitato in quanto può avere un impatto sulle prestazioni a seconda delle dimensioni dell&#39;archivio e del numero di risorse caricate. Per attivare la funzione, configurate [!UICONTROL Adobe AEM Rilevatore]duplicazione risorse cloud. Scopri [come eseguire le configurazioni](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. Il rilevamento della duplicazione si basa sul `dam:sha1` valore univoco memorizzato in `jcr:content/metadata/dam:sha1`. Ciò significa che le risorse duplicate vengono rilevate anche se i nomi dei file sono diversi.
+Se un utente DAM carica una o più risorse già presenti nella directory archivio, [!DNL Experience Manager] ne rileva la duplicazione e ne informa l’utente. Per impostazione predefinita, il rilevamento di duplicati è disabilitato in quanto può avere un impatto sulle prestazioni a seconda delle dimensioni dell&#39;archivio e del numero di risorse caricate. Per attivare la funzione, configurate [!UICONTROL Adobe AEM Rilevatore]duplicazione risorse cloud. Scopri [come eseguire le configurazioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. Il rilevamento della duplicazione si basa sul `dam:sha1` valore univoco memorizzato in `jcr:content/metadata/dam:sha1`. Ciò significa che le risorse duplicate vengono rilevate anche se i nomi dei file sono diversi.
 
 ![Rileva configurazione OSGi della risorsa duplicata](assets/duplicate-detection.png)
 
