@@ -2,9 +2,9 @@
 title: Profili immagine di Dynamic Media
 description: Potete creare profili immagine per elementi multimediali dinamici contenenti impostazioni per maschere di contrasto e per elementi di ritaglio avanzato, campioni avanzati o entrambi, quindi applicare il profilo a una cartella di risorse di immagini.
 translation-type: tm+mt
-source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2754'
 ht-degree: 11%
 
 ---
@@ -195,7 +195,7 @@ Se necessario, potete eseguire nuovamente il ritaglio avanzato per generare di n
 
 Consultate anche [Modifica del campione avanzato o avanzato di più immagini](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**Per modificare il ritaglio avanzato o il campione avanzato di una singola immagine**:
+**Per modificare il ritaglio avanzato o il campione avanzato di una singola immagine**
 
 1. Toccate il logo AEM e accedete a **[!UICONTROL Risorse]**, quindi alla cartella a cui è stato applicato un ritaglio avanzato o un profilo immagine campione avanzato.
 
@@ -209,6 +209,7 @@ Consultate anche [Modifica del campione avanzato o avanzato di più immagini](#e
    * Sull’immagine, trascinate una maniglia d’angolo per regolare la dimensione dell’area visibile del ritaglio o del campione.
    * Sull’immagine, trascinate la casella o il campione in una nuova posizione. Potete modificare solo i campioni immagine; i campioni colore sono statici.
    * Sopra l’immagine, toccate **[!UICONTROL Ripristina]** per annullare tutte le modifiche e ripristinare il ritaglio o il campione originale.
+   * Utilizzare i tasti freccia della tastiera per ritagliare le dimensioni del fotogramma, riposizionare l&#39;immagine o entrambi.
 
 1. Nell’angolo superiore destro della pagina, toccate **[!UICONTROL Salva]**, quindi toccate **[!UICONTROL Chiudi]** per tornare alla cartella delle risorse.
 
@@ -220,7 +221,7 @@ Dopo aver modificato e salvato un ritaglio avanzato, la modifica viene propagata
 
 Se necessario, potete eseguire nuovamente il ritaglio avanzato per generare di nuovo il raccolto aggiuntivo.
 
-**Per modificare il ritaglio avanzato o il campione avanzato di più immagini**:
+**Per modificare il ritaglio avanzato o il campione avanzato di più immagini**
 
 1. Toccate il logo AEM e accedete a **[!UICONTROL Risorse]**, quindi a una cartella a cui è stato applicato un SmartCrop o un profilo immagine campione avanzato.
 1. Nella cartella, toccate l&#39;icona **[!UICONTROL Altre azioni]** (...), quindi toccate **[!UICONTROL Smart Crop]**.
