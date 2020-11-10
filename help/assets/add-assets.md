@@ -2,10 +2,10 @@
 title: Aggiungi le tue risorse digitali a [!DNL Adobe Experience Manager].
 description: Aggiungi le risorse digitali [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 2%
+source-wordcount: '1312'
+ht-degree: 1%
 
 ---
 
@@ -130,7 +130,7 @@ Tuttavia, i seguenti caratteri (elenco separato da spazi) non sono supportati:
 Per caricare un numero maggiore di file, in particolare se esistono in una gerarchia di cartelle nidificata su disco, è possibile utilizzare i seguenti approcci:
 
 * Utilizzate uno script o uno strumento di caricamento personalizzato che sfrutta le API [di caricamento delle](developer-reference-material-apis.md#asset-upload-technical)risorse. Questo strumento personalizzato può aggiungere ulteriore gestione delle risorse (ad esempio, tradurre i metadati o rinominare i file), se necessario.
-* Utilizzate [app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) desktop Experience Manager per caricare gerarchie di cartelle nidificate.
+* Utilizzate [app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) desktop Experience Manager per caricare gerarchie di cartelle nidificate.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Per caricare un numero maggiore di file, in particolare se esistono in una gerar
 Oltre all&#39;interfaccia utente del browser Web,  Experience Manager supporta altri client sul desktop. Offrono inoltre un’esperienza di caricamento senza dover passare al browser Web.
 
 * [Collegamento](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) risorse di Adobe consente di accedere alle risorse da [!DNL Experience Manager] applicazioni desktop Adobe Photoshop,  Adobe Illustrator e  Adobe InDesign. Potete caricare il documento aperto [!DNL Experience Manager] direttamente dall’interfaccia utente Collegamento risorsa Adobe direttamente dall’interno di queste applicazioni desktop.
-* [&#39;app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) desktop Experience Manager semplifica l&#39;utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall&#39;applicazione nativa che le gestisce. È particolarmente utile caricare i file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file semplici.
+* [&#39;app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) desktop Experience Manager semplifica l&#39;utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall&#39;applicazione nativa che le gestisce. È particolarmente utile caricare i file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file semplici.
 
 ## Elaborazione aggiuntiva {#additional-processing}
 
@@ -171,7 +171,7 @@ I dettagli tecnici delle API e del protocollo di caricamento e i collegamenti al
 
 >[!MORELIKETHIS]
 >
->* [App desktop Adobe Experience Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-desktop-app/using/introduction.html)
+>* [App desktop Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Documentazione  collegamento risorse Adobe](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
 >* [Riferimento tecnico per il caricamento delle risorse](developer-reference-material-apis.md#asset-upload-technical)
