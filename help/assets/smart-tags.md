@@ -3,9 +3,9 @@ title: Applicare tag automatici alle immagini con tag generati dall'interfaccia 
 description: Applicate tag alle immagini utilizzando servizi intelligenti artificiali che applicano tag business contestuali e descrittivi [!DNL Adobe Sensei] utilizzando i servizi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 6%
 
 ---
@@ -205,7 +205,7 @@ Gli smart tag avanzati si basano su modelli di apprendimento delle immagini del 
 
 * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie sottili o regolari.
 * Impossibile identificare i tag in base a piccoli pattern/parti di un’immagine. Ad esempio, i logo delle T-shirt.
-* I tag sono supportati nelle impostazioni internazionali AEM. Per un elenco delle lingue, consultate [Note](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)sulla versione dei tag avanzati.
+* I tag sono supportati nelle lingue supportate  Experience Manager. Per un elenco delle lingue, consultate Note [sulla versione di](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)Smart Content Service.
 
 Per cercare le risorse con gli smart tag (regolari o avanzati), usate la ricerca Omnisearch delle risorse (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
 
