@@ -2,9 +2,9 @@
 title: Banner a carosello
 description: Scopri come utilizzare i banner carosello in Contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '4605'
+source-wordcount: '4620'
 ht-degree: 4%
 
 ---
@@ -273,7 +273,7 @@ Se modificate immagini interattive con punti attivi e ritagliate l’immagine, i
    * Per i punti attivi: Sull&#39;immagine, toccate la posizione in cui desiderate visualizzare il punto di attivazione.
    * Per le mappe immagine: Sull’immagine, fate clic, quindi trascinate dall’alto a sinistra verso il basso a destra per creare l’area della mappa immagine. Per regolare le dimensioni della mappa immagine, trascinatene gli angoli.
 
-   Se necessario, trascinate il punto di attivazione o la mappa immagine in una nuova posizione. Se necessario, potete aggiungere altri punti di attivazione o mappe immagine.
+   Se necessario, trascinate il punto di attivazione o la mappa immagine in una nuova posizione. Oppure, utilizzare i tasti freccia della tastiera per controllare la posizione di un punto sensibile selezionato. Se necessario, potete aggiungere altri punti di attivazione o mappe immagine.
 
    Per eliminare un punto attivo o una mappa immagine, tocca la scheda **[!UICONTROL Azioni]**. Seleziona il nome del punto attivo o della mappa immagine da rimuovere dall’intestazione **[!UICONTROL Mappe e punti attivi]** del menu a discesa **[!UICONTROL Tipo selezionato]**. Tocca l’icona **[!UICONTROL Cestino]** accanto al menu, quindi seleziona **[!UICONTROL Elimina]**.
 
