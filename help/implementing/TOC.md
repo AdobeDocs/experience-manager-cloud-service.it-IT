@@ -4,10 +4,10 @@ user-guide-title: Implementazione per AEM as a Cloud Service
 breadcrumb-title: Guida all’implementazione
 user-guide-description: Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione.
 translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 64%
+source-wordcount: '425'
+ht-degree: 62%
 
 ---
 
@@ -48,6 +48,11 @@ ht-degree: 64%
    + [Differenze tra pagine](/help/implementing/developing/introduction/page-diff.md)
    + [Limitazioni per l’editor](/help/implementing/developing/introduction/editor-limitations.md)
    + [Convenzioni di denominazione](/help/implementing/developing/introduction/naming-conventions.md)
++ Strumenti per gli sviluppatori {#developer-tools}
+   + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
+   + [Plug-in Confezione Contenuto](/help/implementing/developing/tools/maven-plugin.md)
+   + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
+   + [Utilizzo di CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 + Componenti e modelli {#components-templates}
    + [Panoramica sui componenti](developing/components/overview.md)
    + [Modelli](developing/components/templates.md)
