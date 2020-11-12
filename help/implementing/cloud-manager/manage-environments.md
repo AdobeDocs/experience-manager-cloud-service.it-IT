@@ -2,7 +2,7 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
+source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 6%
@@ -87,13 +87,13 @@ Gli aggiornamenti degli ambienti Stage e Produzione vengono gestiti automaticame
 
 Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del programma. Se un ambiente non esegue l&#39;ultima versione AEM disponibile al pubblico, lo stato della scheda Ambienti nella Home Screen mostra **AGGIORNAMENTO DISPONIBILE**.
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 L&#39;opzione **Aggiorna** è disponibile dalla scheda **Ambienti** .
 Questa opzione è disponibile anche, se fate clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fate clic su **...** e selezionate **Aggiorna**, come illustrato nella figura seguente:
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 Selezionando questa opzione, un gestore distribuzione potrà aggiornare la pipeline associata a questo ambiente alla versione più recente ed eseguire la pipeline.
 
@@ -109,7 +109,7 @@ L&#39;opzione **Elimina** è disponibile dal menu a discesa nella scheda **Ambie
 
 L&#39;opzione di eliminazione è disponibile anche, se fate clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fate clic su **...** e selezionate **Elimina**, come illustrato nella figura seguente:
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
@@ -122,7 +122,7 @@ Selezionate **Gestisci accesso** dal menu a discesa nella scheda **Ambienti** . 
 
 Per ulteriori informazioni, fare riferimento a [Gestione dell&#39;accesso all&#39;istanza](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) Author.
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## Accesso alla console per sviluppatori {#accessing-developer-console}
@@ -134,7 +134,7 @@ Solo un utente nel ruolo Sviluppatore avrà accesso alla **Developer Console**. 
 Per ulteriori informazioni, consultate [Sospensione e De-hibernating Sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) .
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 Questa opzione è disponibile anche, se fate clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato un ambiente, fate clic su **...** e selezionate **Developer Console**.
 
