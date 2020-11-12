@@ -2,9 +2,9 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
+source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '870'
 ht-degree: 7%
 
 ---
@@ -137,4 +137,10 @@ Per ulteriori informazioni, consultate [Sospensione e De-hibernating Sandbox](ht
 ![](assets/environ-dev-console.png)
 
 Questa opzione è disponibile anche, se fate clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato un ambiente, fate clic su **...** e selezionate **Developer Console**.
+
+## Login localmente {#login-locally}
+
+Selezionate Login **** locale dal menu a discesa nella scheda **Ambienti** per accedere localmente ad Adobe Experience Manager
+
+![](assets/environ-login.png)
 
