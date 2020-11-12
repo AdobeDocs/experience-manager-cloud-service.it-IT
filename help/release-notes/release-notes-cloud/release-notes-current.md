@@ -1,18 +1,18 @@
 ---
-title: Note sulla versione 2020.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '[!DNL Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.10.0.'
+title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: d8cb22a5597e95bf4c74233b48553bb67bca09cb
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 21%
+source-wordcount: '785'
+ht-degree: 5%
 
 ---
 
 
 # Note sulla versione per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
 
 ## Data di rilascio {#release-date}
 
@@ -60,37 +60,25 @@ La seguente release (2020.11.0) sarà il 1° dicembre 2020.
 
 * CIF l’interfaccia utente di configurazione cloud mostrava i pulsanti &quot;Save &amp; Close&quot; per le configurazioni in /lib e /apps/. Ma queste sono di sola lettura, quindi l&#39;interfaccia utente è fissa per visualizzare solo il pulsante &quot;Chiudi&quot;.
 
+
 ## Cloud Manager {#cloud-manager}
 
-* La pagina Ambienti è stata riprogettata.
+### Data di rilascio {#release-date-cm}
 
-* Ora in Cloud Manager gli ambienti che sono stati sospesi presentano uno stato discreto.
+La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.11.0 è il 12 novembre 2020.
 
-* Il contenitore di build di Cloud Manager ora supporta la compilazione di progetti tramite Java 8 o Java 11. Il supporto per Java 11 è fornito dal sistema di catene utensili Maven.
+### Novità {#what-is-new}
 
-* In ogni ambiente, il numero di variabili dell’ambiente è stato aumentato a 200.
+* Una nuova opzione di menu **Accesso** locale è ora disponibile per gli utenti dalle opzioni del menu di ambiente nelle pagine scheda Ambiente e Riepilogo ambienti.
 
-* Nella scheda Ambiente della pagina Panoramica sono ora elencati fino a tre ambienti. Gli utenti possono selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo Ambiente e visualizzare una tabella con un elenco completo degli ambienti.
-Per ulteriori informazioni, vedere [Ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) di visualizzazione.
+* La scheda **Informazioni** in Cloud Manager è stata aggiornata con le nuove immagini nell&#39;interfaccia utente.
 
 ### Correzioni di bug {#bug-fixes-cloud-manager}
 
-* Il collegamento tra Cloud Manager e Developer Console era erroneamente attivo prima che gli ambienti fossero completamente creati.
-
-* Il collegamento diretto da Cloud Manager a Developer Console non mostrava l’opzione per sospendere/riattivare l’ambiente di un programma sandbox.
-
-* I pulsanti Annulla e Salva nella pagina Modifica pipeline non produzione non erano sempre visibili.
-
-* Alcuni errori nel processo di qualità del codice potevano causare la generazione non corretta del file di registro.
-
-* Al momento della creazione di un nuovo programma, a volte il nome suggerito poteva essere un duplicato di nome di programma esistente.
-
-* Tramite l’interfaccia utente non si potevano scaricare in modo coerente i log di alcuni fasi di pipeline di grandi dimensioni.
-
-* La convalida dei nomi dell’ambiente presentava un errore con scostamento pari a uno.
-
-* In alcuni casi, la pagina Ambienti mostrava segmenti di pubblicazione e dispatcher anche in loro assenza.
-
+* Il caricamento delle dipendenze eseguite prima dell&#39;esecuzione della creazione richiede il download di un plug-in Maven.
+* Il collegamento dal piè di pagina di Cloud Manager per selezionare una lingua ora passerà alla posizione corretta.
+* A volte, durante la scansione del codice, il processo SonarQube non veniva avviato. Ora verrà rilevato automaticamente e verrà tentato un riavvio.
+* Tutte le condutture di produzione esistenti verranno automaticamente abilitate con il passaggio Experience Audit (Controllo esperienza).
 
 ## Fondamenti di Adobe Experience Manager as a Cloud Service {#cloud-service-foundation}
 
