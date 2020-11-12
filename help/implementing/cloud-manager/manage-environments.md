@@ -2,7 +2,7 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 6%
@@ -140,7 +140,7 @@ Questa opzione è disponibile anche, se fate clic su **Dettagli** dalla scheda *
 
 ## Login localmente {#login-locally}
 
-Selezionate Login **** locale dal menu a discesa nella scheda **Ambienti** per accedere localmente ad Adobe Experience Manager
+Selezionate Login **** locale dal menu a discesa nella scheda **Ambienti** per accedere localmente ad Adobe Experience Manager.
 
 ![](assets/environ-login-locally.png)
 
