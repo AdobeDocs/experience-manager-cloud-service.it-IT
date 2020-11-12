@@ -2,7 +2,7 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
+source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 70%
@@ -34,9 +34,9 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Dopo aver completato la fase di *estrazione* del processo di trasferimento del contenuto e prima di avviare la fase *di* inserimento per assimilare il contenuto nella AEM come *fase* Cloud Service o istanze *produzione* , dovrete registrare un ticket di supporto per notificare  Adobe l&#39;intenzione di eseguire l&#39; *inserimento* ** in modo che  Adobe possa garantire che non si verifichino interruzioni durante il processo di caricamento dei dati. Dovrai registrare il ticket di assistenza 1 settimana prima della data di *inserimento* prevista. Una volta inviato il ticket di assistenza, il team di assistenza fornirà assistenza sui passaggi successivi.
    * Registrare un ticket di assistenza con i seguenti dettagli:
-   1. Data esatta e ora stimata (con il tuo fuso orario) quando intendi avviare la fase di *inserimento* .
-   2. Tipo di ambiente (fase o produzione) in cui si intende inserire i dati.
-   3. ID programma
+      * Data esatta e ora stimata (con il tuo fuso orario) quando intendi avviare la fase di *inserimento* .
+      * Tipo di ambiente (fase o produzione) in cui si intende inserire i dati.
+      * ID programma.
 
 * La *fase di acquisizione* per l’istanza di authoring riduce l’intera implementazione di authoring. Questo significa che l’istanza di authoring di AEM non sarà disponibile durante l’intero processo di acquisizione. Controlla anche che non vengano eseguite pipeline di Cloud Manager durante la fase di *inserimento* .
 
