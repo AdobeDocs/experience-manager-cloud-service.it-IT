@@ -2,10 +2,10 @@
 title: Note sulla versione 2020.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: f0ac4b511fefa0bcde8d59c416da638941cd52ad
+source-git-commit: eb4a567e7ae2aac7260aae28e2b91b088e42f945
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 58%
+source-wordcount: '286'
+ht-degree: 55%
 
 ---
 
@@ -15,6 +15,12 @@ ht-degree: 58%
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
 ## Cloud Manager {#cloud-manager}
+
+### Data di rilascio {#release-date-cm}
+
+La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.10.0 è il 20 ottobre 2020.
+
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * La pagina Ambienti è stata riprogettata.
 
@@ -44,4 +50,3 @@ Per ulteriori informazioni, vedere [Ambiente](/help/implementing/cloud-manager/m
 * La convalida dei nomi dell’ambiente presentava un errore con scostamento pari a uno.
 
 * In alcuni casi, la pagina Ambienti mostrava segmenti di pubblicazione e dispatcher anche in loro assenza.
-
