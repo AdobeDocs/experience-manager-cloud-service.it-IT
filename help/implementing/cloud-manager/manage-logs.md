@@ -2,7 +2,7 @@
 title: Gestisci registri - Cloud Service
 description: Gestisci registri - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 22%
@@ -14,9 +14,9 @@ ht-degree: 22%
 
 Gli utenti possono accedere a un elenco dei file di registro disponibili per l&#39;ambiente selezionato utilizzando la scheda Ambiente.  Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato.
 
-Questi file possono essere scaricati tramite l’interfaccia utente, dalla pagina **Panoramica** .
+Questi file possono essere scaricati tramite l’interfaccia utente, dalla pagina **Panoramica** :
 
-![](assets/manage-logs1.png)
+![](assets/download-logs1.png)
 
 Oppure, la pagina **Ambienti** :
 
@@ -25,7 +25,7 @@ Oppure, la pagina **Ambienti** :
 >[!NOTE]
 >Indipendentemente da dove viene aperto, viene visualizzata la stessa finestra di dialogo e è possibile scaricare un singolo file di registro.
 
-![](assets/manage-logs3.png)
+![](assets/download-logs2.png)
 
 
 ## Esegue il login tramite l&#39;API {#logs-thorugh-api}
