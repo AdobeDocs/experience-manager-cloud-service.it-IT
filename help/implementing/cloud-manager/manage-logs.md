@@ -2,7 +2,7 @@
 title: Gestisci registri - Cloud Service
 description: Gestisci registri - Cloud Service
 translation-type: tm+mt
-source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
+source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 22%
@@ -28,7 +28,7 @@ Oppure, la pagina **Ambienti** :
 ![](assets/download-logs2.png)
 
 
-## Esegue il login tramite l&#39;API {#logs-thorugh-api}
+## Esegue il login tramite l&#39;API {#logs-through-api}
 
 Oltre a scaricare i file di registro tramite l’interfaccia utente, i file di registro saranno disponibili tramite l’API e l’interfaccia della riga di comando.
 
