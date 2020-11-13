@@ -2,10 +2,10 @@
 title: Fase di pianificazione
 description: Fase di pianificazione
 translation-type: tm+mt
-source-git-commit: fdcad36713cdcd766d7d698a2e6c017dad1b03a0
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 91%
+source-wordcount: '420'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ Il primo passaggio nella fase di pianificazione consiste nel valutare il grado d
 
 Dovrai effettuare una valutazione completa del codice sorgente AEM corrente rispetto alle modifiche di rilievo e alle funzioni obsolete, al fine di determinare quanto lavoro richiede il percorso di transizione.
 
-Puoi accelerare la fase di valutazione eseguendo il Cloud Readiness Analyzer (CRA) nella versione corrente AEM. Per ulteriori informazioni, consulta Panoramica [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html)CRA.
+Per accelerare il passo di valutazione, eseguite Best Practices Analyzer sulla versione corrente AEM. Per ulteriori dettagli, consulta [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Se disponi già dell’accesso a Cloud Manager e a un ambiente Cloud Service, è consigliabile eseguire il codice corrente in una pipeline di qualità del codice di Cloud Manager per valutare la compatibilità delle modifiche del codice necessarie con Cloud Service.
