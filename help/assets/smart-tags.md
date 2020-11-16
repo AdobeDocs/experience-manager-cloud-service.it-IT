@@ -3,7 +3,7 @@ title: Applicare tag automatici alle immagini con tag generati dall'interfaccia 
 description: Applicate tag alle immagini utilizzando servizi intelligenti artificiali che applicano tag business contestuali e descrittivi [!DNL Adobe Sensei] utilizzando i servizi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2432'
 ht-degree: 6%
@@ -154,7 +154,7 @@ Dopo aver preparato il servizio Smart Tags, potete attivare il flusso di lavoro 
 1. Fate clic su **[!UICONTROL Avvia]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e verificate i tag necessari per verificare se i tag delle risorse sono stati impostati correttamente. Per informazioni dettagliate, consultate [Gestione di smart tag](#manage-smart-tags-and-searches).
 
 >[!NOTE]
-
+>
 >Nei cicli di assegnazione dei tag successivi, solo le risorse modificate dispongono di tag di nuova formazione. Tuttavia, vengono assegnati tag anche alle risorse inalterate se lo spazio tra l’ultimo ciclo di tag e quello corrente per il flusso di lavoro dei tag supera le 24 ore. Per i flussi di lavoro con tag periodici, le risorse inalterate vengono contrassegnate con tag quando l’intervallo di tempo supera i 6 mesi.
 
 ### Assegnare tag alle risorse caricate {#tag-uploaded-assets}
