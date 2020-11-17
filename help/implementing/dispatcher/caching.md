@@ -2,9 +2,9 @@
 title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+source-git-commit: 0d01dc2cfed88a1b610a929d26ff4b144626a0e3
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1483'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,16 @@ Questa pagina descrive inoltre come la cache del dispatcher viene invalidata, no
 ```
 <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Age 0
+</LocationMatch>
+```
+
+Fate attenzione quando impostate intestazioni di controllo cache globali o che corrispondono a un&#39;area ampia, in modo che non vengano applicate al contenuto che intendete mantenere privato. Valutare la possibilità di utilizzare più direttive per garantire che le regole siano applicate in modo preciso. Detto questo, AEM come Cloud Service rimuovere l&#39;intestazione della cache se rileva che è stata applicata a ciò che rileva come non possa essere memorizzata nella cache dal dispatcher, come descritto nella documentazione del dispatcher. Per obbligare AEM ad applicare sempre la memorizzazione nella cache, è possibile aggiungere l&#39;opzione &quot;always&quot; come segue:
+
+```
+<LocationMatch "\.(html)$">
+        Header always set Cache-Control "max-age=200"
+        Header set Age 0
 </LocationMatch>
 ```
 
@@ -41,7 +51,7 @@ Questa pagina descrive inoltre come la cache del dispatcher viene invalidata, no
 * Per evitare che un contenuto specifico venga memorizzato nella cache, impostate l&#39;intestazione Cache-Control su &quot;private&quot;. Ad esempio, quanto segue impedisce che il contenuto HTML in una directory denominata &quot;myfolder&quot; venga memorizzato nella cache:
 
 ```
-<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
     Header set Cache-Control “private”
 </LocationMatch>
 ```
@@ -59,10 +69,13 @@ Questa pagina descrive inoltre come la cache del dispatcher viene invalidata, no
 * può essere fissato a un livello di grana più fine dalle seguenti `mod_headers` direttive apache:
 
 ```
-<LocationMatch "^.*.jpeg$">
+<LocationMatch "^\.*.(jpeg|jpg)$">
     Header set Cache-Control "max-age=222"
+    Header set Age 0
 </LocationMatch>
 ```
+
+Consultate la discussione nella sezione html/testo precedente per fare attenzione a non memorizzare troppo nella cache e a forzare AEM applicare sempre la cache con l&#39;opzione &quot;always&quot;.
 
 È necessario assicurarsi che un file in src/conf.dispatcher.d/cache abbia la seguente regola (che si trova nella configurazione predefinita):
 
