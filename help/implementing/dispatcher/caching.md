@@ -2,9 +2,9 @@
 title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 0d01dc2cfed88a1b610a929d26ff4b144626a0e3
+source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1479'
 ht-degree: 1%
 
 ---
@@ -25,38 +25,39 @@ Questa pagina descrive inoltre come la cache del dispatcher viene invalidata, no
 * può essere ignorato per tutto il contenuto HTML/Testo definendo la `EXPIRATION_TIME` variabile in `global.vars` uso come Cloud Service di strumenti Dispatcher SDK.
 * possono essere sostituiti a un livello di granulosità più sottile dalle seguenti direttive apache mod_header:
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
-```
+   </LocationMatch>
+   ```
 
-Fate attenzione quando impostate intestazioni di controllo cache globali o che corrispondono a un&#39;area ampia, in modo che non vengano applicate al contenuto che intendete mantenere privato. Valutare la possibilità di utilizzare più direttive per garantire che le regole siano applicate in modo preciso. Detto questo, AEM come Cloud Service rimuovere l&#39;intestazione della cache se rileva che è stata applicata a ciò che rileva come non possa essere memorizzata nella cache dal dispatcher, come descritto nella documentazione del dispatcher. Per obbligare AEM ad applicare sempre la memorizzazione nella cache, è possibile aggiungere l&#39;opzione &quot;always&quot; come segue:
+   Fate attenzione quando impostate intestazioni di controllo cache globali o che corrispondono a un&#39;area ampia, in modo che non vengano applicate al contenuto che intendete mantenere privato. Valutare la possibilità di utilizzare più direttive per garantire che le regole siano applicate in modo preciso. Detto questo, AEM come Cloud Service rimuovere l&#39;intestazione della cache se rileva che è stata applicata a ciò che rileva come non possa essere memorizzata nella cache dal dispatcher, come descritto nella documentazione del dispatcher. Per obbligare AEM ad applicare sempre la memorizzazione nella cache, è possibile aggiungere l&#39;opzione &quot;always&quot; come segue:
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
-```
+   </LocationMatch>
+   ```
 
-È necessario assicurarsi che un file con `src/conf.dispatcher.d/cache` la regola seguente (che si trova nella configurazione predefinita):
+   È necessario assicurarsi che un file con `src/conf.dispatcher.d/cache` la regola seguente (che si trova nella configurazione predefinita):
 
-```
-/0000
-{ /glob "*" /type "allow" }
-```
+   ```
+   /0000
+   { /glob "*" /type "allow" }
+   ```
 
-* Per evitare che un contenuto specifico venga memorizzato nella cache, impostate l&#39;intestazione Cache-Control su &quot;private&quot;. Ad esempio, quanto segue impedisce che il contenuto HTML in una directory denominata &quot;myfolder&quot; venga memorizzato nella cache:
+* Per evitare che un contenuto specifico venga memorizzato nella cache, impostate l&#39;intestazione Cache-Control su *private*. Ad esempio, quanto segue impedisce al contenuto HTML in una directory denominata **myfolder** di essere memorizzato nella cache:
 
-```
-<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
-    Header set Cache-Control “private”
-</LocationMatch>
-```
+   ```
+      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      Header set Cache-Control “private”
+     </LocationMatch>
+   ```
 
-* Altri metodi, incluso il progetto [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS Commons, non sostituiranno correttamente i valori.
+   >[!NOTE]
+   >Gli altri metodi, incluso il progetto [ACS](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS, non sostituiranno correttamente i valori.
 
 ### Librerie lato client (js, css) {#client-side-libraries}
 
@@ -68,25 +69,26 @@ Fate attenzione quando impostate intestazioni di controllo cache globali o che c
 * per impostazione predefinita, non memorizzato nella cache
 * può essere fissato a un livello di grana più fine dalle seguenti `mod_headers` direttive apache:
 
-```
-<LocationMatch "^\.*.(jpeg|jpg)$">
-    Header set Cache-Control "max-age=222"
-    Header set Age 0
-</LocationMatch>
-```
+   ```
+      <LocationMatch "^\.*.(jpeg|jpg)$">
+        Header set Cache-Control "max-age=222"
+        Header set Age 0
+      </LocationMatch>
+   ```
 
-Consultate la discussione nella sezione html/testo precedente per fare attenzione a non memorizzare troppo nella cache e a forzare AEM applicare sempre la cache con l&#39;opzione &quot;always&quot;.
+   Consultate la discussione nella sezione html/testo precedente per fare attenzione a non memorizzare troppo nella cache e a forzare AEM applicare sempre la cache con l&#39;opzione &quot;always&quot;.
 
-È necessario assicurarsi che un file in src/conf.dispatcher.d/cache abbia la seguente regola (che si trova nella configurazione predefinita):
+   È necessario assicurarsi che un file sotto la `src/conf.dispatcher.d/`cache abbia la seguente regola (che si trova nella configurazione predefinita):
 
-```
-/0000
-{ /glob "*" /type "allow" }
-```
+   ```
+   /0000
+   { /glob "*" /type "allow" }
+   ```
 
-Accertatevi che le risorse da mantenere private anziché nella cache non facciano parte dei filtri di direttiva LocationMatch.
+   Accertatevi che le risorse da mantenere private anziché nella cache non facciano parte dei filtri di direttiva LocationMatch.
 
-* Altri metodi, incluso il progetto [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS Commons, non sostituiranno correttamente i valori.
+   >[!NOTE]
+   >Gli altri metodi, incluso il progetto [ACS](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS, non sostituiranno correttamente i valori.
 
 ### Altri tipi di file di contenuto nell&#39;archivio nodi {#other-content}
 
