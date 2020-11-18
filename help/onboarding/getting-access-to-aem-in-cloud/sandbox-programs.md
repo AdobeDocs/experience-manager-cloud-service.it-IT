@@ -2,9 +2,9 @@
 title: Programmi sandbox - Cloud Service
 description: Programmi sandbox - Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1184'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Gli ambienti creati in una sandbox non sono configurati per il ridimensionamento
 
 I programmi sandbox includono Siti e Risorse e vengono compilati automaticamente con un repository Git, un ambiente di sviluppo e una pipeline non di produzione.  L&#39;archivio Git viene popolato con un progetto di esempio basato sull&#39;archetipo AEM progetto.
 
-Per ulteriori informazioni sui tipi di programma, consulta [Informazioni sui programmi e i tipi](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) di programma.
+Per ulteriori informazioni sui tipi di programma, consulta [Informazioni sui programmi e i tipi](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) di programma.
 
 ### Attributi dei programmi sandbox {#attributes-sandbox}
 
@@ -43,7 +43,7 @@ I programmi sandbox hanno i seguenti attributi:
 
 Una procedura guidata per la creazione di programmi consente di creare un programma sandbox.
 
-Per informazioni su come creare un programma sandbox, consultate [Creazione di un programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) sandbox per ulteriori dettagli.
+Per informazioni su come creare un programma sandbox, consultate [Creazione di un programma](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) sandbox per ulteriori dettagli.
 
 ### Creazione di ambienti sandbox {#creating-sandbox-environments}
 
@@ -51,13 +51,13 @@ I programmi sandbox vengono distribuiti in un ambiente di sviluppo al momento de
 
 L&#39;ambiente di fase di produzione può essere aggiunto manualmente al programma sandbox, quando l&#39;utente è pronto per impostare un ciclo di produzione.
 
-Per ulteriori informazioni su come creare manualmente un ambiente, vedere [Aggiunta di ambienti](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) .
+Per ulteriori informazioni su come creare manualmente un ambiente, vedere [Aggiunta di ambienti](/help/implementing/cloud-manager/manage-environments.md) .
 
 ### Eliminazione di ambienti sandbox {#deleting-sandbox-environments}
 
 L&#39;utente con le autorizzazioni necessarie può eliminare un ambiente o set di ambienti di sviluppo o produzione/fase.
 
-Per eliminare un ambiente, vedere [Eliminazione di ambienti](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment) per ulteriori dettagli.
+Per eliminare un ambiente, vedere [Eliminazione di ambienti](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) per ulteriori dettagli.
 
 
 ## Ambienti sandbox in sospensione e in sospensione {#hibernating-introduction}
@@ -93,7 +93,7 @@ Potete attivare manualmente il programma sandbox dalla console per sviluppatori 
 Per attivare manualmente gli ambienti del programma sandbox, effettuate le seguenti operazioni:
 
 1. Passate alla **console**per sviluppatori.
-Per informazioni su come accedere alla [console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) per sviluppatori, consultate Accesso alla console **per sviluppatori dalla scheda** Ambienti **** .
+Per informazioni su come accedere alla [console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) per sviluppatori, consultate Accesso alla console **per sviluppatori dalla scheda** Ambienti **** .
    >[!IMPORTANT]
    >Il collegamento alla **Developer Console** direttamente da Cloud Manager non consente di attivare un ambiente di programmi sandbox. La soluzione alternativa si trova una volta nella Developer Console. Alla fine dell’URL `#release-cm-p1234-e5678 where 1234` 1234, aggiungere il seguente pattern è l’ID ** programma e 5678 è l’ID ** ambiente.
 
@@ -119,7 +119,7 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 ### De-ibernazione {#de-hibernation-introduction}
 
 1. Passate alla **console**per sviluppatori.
-Per informazioni su come accedere alla [console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) per sviluppatori, consultate Accesso alla console **per sviluppatori dalla scheda** Ambienti **** .
+Per informazioni su come accedere alla [console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) per sviluppatori, consultate Accesso alla console **per sviluppatori dalla scheda** Ambienti **** .
 
    >[!IMPORTANT]
    >Il collegamento alla **Developer Console** direttamente da Cloud Manager non consente di disattivare l&#39;ambiente del programma sandbox. La soluzione alternativa si trova una volta nella Developer Console. Alla fine dell’URL `#release-cm-p1234-e5678 where 1234` 1234, aggiungere il seguente pattern è l’ID ** programma e 5678 è l’ID ** ambiente.
@@ -157,8 +157,6 @@ Per informazioni su come accedere alla [console](https://docs.adobe.com/content/
 
 Ogni utente con un profilo di prodotto che dia loro accesso a AEM come Cloud Service dovrebbe essere in grado di accedere alla **Developer Console**, consentendo loro di disattivare l&#39;ambiente.
 
-Per informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consulta [Aggiunta di utenti e ruoli](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) in Cloud Manager.
-
 #### Accesso a un ambiente sospeso {#accessing-hibernated-environment}
 
 Quando si effettuano richieste del browser a fronte del livello di authoring o pubblicazione di un ambiente attivato, l’utente riceve una pagina di destinazione che descrive lo stato di ibernazione dell’ambiente, come illustrato nella figura seguente:
@@ -178,11 +176,11 @@ Alcune considerazioni chiave relative agli ambienti in sospensione e in disattiv
 
 ## AEM aggiornamenti agli ambienti sandbox {#aem-updates-sandbox}
 
-Per ulteriori informazioni, consultate [AEM aggiornamenti](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) delle versioni.
+Per ulteriori informazioni, consultate [AEM aggiornamenti](/help/implementing/deploying/overview.md#version-updates) delle versioni.
 
 Un utente può applicare manualmente AEM aggiornamenti agli ambienti in un programma sandbox.
 
-Per informazioni sull&#39;aggiornamento di un ambiente, vedere [Aggiornamento dell&#39;ambiente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) .
+Per informazioni sull&#39;aggiornamento di un ambiente, vedere [Aggiornamento dell&#39;ambiente](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) .
 
 >[!NOTE]
 >* Un aggiornamento manuale può essere eseguito solo se l&#39;ambiente di destinazione dispone di una pipeline configurata correttamente.
