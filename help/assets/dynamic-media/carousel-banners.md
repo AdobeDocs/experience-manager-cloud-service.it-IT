@@ -2,7 +2,7 @@
 title: Banner a carosello
 description: Scopri come utilizzare i banner carosello in Contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 98a005dacc0bce0c03f0a58c50c6e85f12b1197f
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 4%
@@ -254,8 +254,7 @@ Consultate [(Facoltativo) Anteprima Dei Banner Carosello.](#optional-previewing-
 >[!NOTE]
 >
 >Quando aggiungete punti di attivazione a un’immagine in un’immagine [](/help/assets/dynamic-media/interactive-images.md) interattiva o in un banner carosello, le informazioni relative ai punti di attivazione vengono memorizzate nella stessa posizione dei metadati, in relazione alla posizione e alla modalità dell’immagine, indipendentemente dal fatto che si tratti di un’immagine interattiva o di un banner carosello. Questa funzionalità consente di riutilizzare facilmente la stessa immagine, insieme ai dati dei punti di attivazione definiti, in entrambi i visualizzatori.
-
->Tenete presente, tuttavia, che i banner carosello supportano le mappe immagine sulle immagini che possono anche contenere punti di attivazione; un’immagine interattiva non lo è. Tenete presente questo aspetto se intendete creare un&#39;immagine interattiva o un banner carosello che utilizza la stessa immagine. È possibile creare immagini interattive e banner carosello utilizzando copie separate della stessa immagine.
+Tenete presente, tuttavia, che i banner carosello supportano le mappe immagine sulle immagini che possono anche contenere punti di attivazione; un’immagine interattiva non lo è. Tenete presente questo aspetto se intendete creare un&#39;immagine interattiva o un banner carosello che utilizza la stessa immagine. È possibile creare immagini interattive e banner carosello utilizzando copie separate della stessa immagine.
 
 >[!NOTE]
 Se modificate immagini interattive con punti attivi e ritagliate l’immagine, i punti attivi vengono rimossi.
