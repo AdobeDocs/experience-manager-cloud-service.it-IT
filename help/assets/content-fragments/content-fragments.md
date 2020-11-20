@@ -74,10 +74,9 @@ Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, ques
 >I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**sono funzioni diverse in AEM:
 >* **I frammenti** di contenuto sono contenuti editoriali che possono essere utilizzati per accedere ai dati strutturati, ad esempio testi, numeri e date. Sono contenuti puri, con definizione e struttura, ma senza design e/o layout visivi aggiuntivi.
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
-
 >
 >
-I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
+>I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 >
 >Per ulteriori informazioni, consultate anche [Informazioni sui frammenti di contenuto e i frammenti esperienza in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
