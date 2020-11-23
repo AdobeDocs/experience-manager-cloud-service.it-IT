@@ -2,9 +2,9 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 4bce4fceab08a95fc2c1c8334f84fd54204228ba
+source-git-commit: 05184bbf507fe84ffb69da90502190b1a2793ee3
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '890'
 ht-degree: 5%
 
 ---
@@ -44,7 +44,7 @@ La seguente release (2020.11.0) sarà il 1° dicembre 2020.
 
 * **[!DNL Adobe Asset Link]versione 2.1**: È disponibile una nuova versione dell’estensione [Collegamento](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) risorse Adobe per [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign] . Aggiunge compatibilità con le ultime [!DNL Adobe Creative Cloud] applicazioni con la versione 2021, rilasciata a ottobre 2020.
 
-* **[!DNL Assets]Supporto** file WebP: [!DNL Assets] come Cloud Service ora supporta il formato immagine WebP. WebP è un formato immagine emergente creato da Google. Le immagini in formato file WebP sono visivamente indipendenti dai file JPG o PNG e i file sono molto più piccoli. Le dimensioni ridotte dei file delle risorse migliorano i tempi di caricamento delle pagine e aiutano i creatori di contenuti a fornire un&#39;esperienza Web più veloce. Consultate [Creare un profilo](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)di elaborazione standard.
+* **[!DNL Assets]Supporto** file WebP: [!DNL Assets] come Cloud Service ora supporta la creazione di rappresentazioni in formato immagine WebP. WebP è un formato immagine emergente creato da Google. Le immagini in formato file WebP sono visivamente indipendenti dai file JPG o PNG e i file sono molto più piccoli. Le dimensioni ridotte dei file delle risorse migliorano i tempi di caricamento delle pagine e aiutano i creatori di contenuti a fornire un&#39;esperienza Web più veloce. Consultate [Creare un profilo](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)di elaborazione standard.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
