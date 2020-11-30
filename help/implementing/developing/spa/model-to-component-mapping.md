@@ -1,6 +1,6 @@
 ---
 title: Mappatura da modello dinamico a componente per SPA
-description: In questo articolo viene descritto in che modo si verifica la mappatura del modello dinamico al componente nell’SDK Javascript SPA per AEM.
+description: In questo articolo viene descritto in che modo si verifica la mappatura del modello dinamico al componente nell’SDK SPA JavaScript per AEM.
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
@@ -26,7 +26,7 @@ Vedete anche il pacchetto npm: [@adobe/aem-spa-component-mapping](https://www.np
 
 ## Applicazione a pagina singola basata su modello {#model-driven-single-page-application}
 
-Le applicazioni a pagina singola che sfruttano l’SDK Javascript SPA per AEM sono basate su modelli:
+Le applicazioni a pagina singola che utilizzano l’SDK SPA JavaScript per AEM sono basate su modelli:
 
 1. I componenti front-end si registrano nell’archivio [di mappatura dei](#componentmapping-module)componenti.
 1. Quindi il [Contenitore](blueprint.md#container), una volta fornito con un modello dal fornitore [di](blueprint.md#the-model-provider)modelli, esegue un&#39;iterazione sul contenuto del modello (`:items`).
