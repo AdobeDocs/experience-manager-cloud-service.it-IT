@@ -29,7 +29,7 @@ Le principali differenze rispetto a Experience Manager 6.5 riguardano i seguenti
 >* [Architettura](/help/core-concepts/architecture.md) di Adobe Experience Manager as a Cloud Service
 >* [Modifiche di rilievo apportate ad AEM as a Cloud Service (Note sulla versione)](/help/release-notes/aem-cloud-changes.md)
 >* [Modifiche di rilievo apportate ad AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Esercitazioni su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## Caricamento e caricamento delle risorse {#asset-ingestion}
