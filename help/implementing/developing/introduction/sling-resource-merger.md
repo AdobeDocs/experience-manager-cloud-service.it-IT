@@ -1,22 +1,22 @@
 ---
-title: Utilizzo di Sling Resource Merger in  Adobe Experience Manager come Cloud Service
+title: Utilizzo di Sling Resource Merger in Adobe Experience Manager come Cloud Service
 description: Sling Resource Merger fornisce servizi per accedere e unire le risorse
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Utilizzo di Sling Resource Merger in AEM come Cloud Service {#using-the-sling-resource-merger-in-aem}
+# Utilizzo di Sling Resource Merger in AEM as a Cloud Service {#using-the-sling-resource-merger-in-aem}
 
 ## Scopo {#purpose}
 
 Sling Resource Merger fornisce servizi per accedere e unire le risorse. Fornisce meccanismi di diff (differenziazione) per entrambi:
 
-* **[Sovrapposizioni](/help/implementing/developing/introduction/overlays.md)**di risorse tramite i percorsi[di](/help/implementing/developing/introduction/overlays.md#search-paths)ricerca.
+* **[Sovrapposizioni](/help/implementing/developing/introduction/overlays.md)** di risorse tramite i percorsi [di](/help/implementing/developing/introduction/overlays.md#search-paths)ricerca.
 
 * **Ignora** le finestre di dialogo dei componenti per l’interfaccia touch (`cq:dialog`), utilizzando la gerarchia dei tipi di risorse (tramite la proprietà `sling:resourceSuperType`).
 
@@ -32,9 +32,9 @@ Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/esclu
 >
 >Sling Resource Merger e i metodi correlati possono essere utilizzati solo con l’interfaccia touch (che è l’unica interfaccia disponibile per AEM come Cloud Service).
 
-### Obiettivi di AEM {#goals-for-aem}
+### Obiettivi per AEM {#goals-for-aem}
 
-Gli obiettivi per l’utilizzo di Sling Resource Merger in AEM sono:
+Gli obiettivi per l&#39;utilizzo di Sling Resource Merger in AEM sono:
 
 * accertatevi che le modifiche alla personalizzazione non vengano effettuate in `/libs`.
 * ridurre la struttura da cui viene replicata `/libs`.
@@ -48,11 +48,12 @@ Gli obiettivi per l’utilizzo di Sling Resource Merger in AEM sono:
 >Questo perché il contenuto di `/libs` potrebbe essere sovrascritto in qualsiasi momento gli aggiornamenti vengono applicati all&#39;istanza.
 >
 >* Le sovrapposizioni dipendono dai percorsi [di](/help/implementing/developing/introduction/overlays.md#search-paths)ricerca.
+   >
+   >
+* Le sostituzioni non dipendono dai percorsi di ricerca, ma utilizzano la proprietà `sling:resourceSuperType` per creare la connessione.
 >
->* Le sostituzioni non dipendono dai percorsi di ricerca, bensì usano la proprietà `sling:resourceSuperType` per creare la connessione.
 >
->
->Tuttavia, le sostituzioni sono spesso definite in `/apps`, come procedura ottimale in AEM come Cloud Service, per definire le personalizzazioni in `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
+Tuttavia, le sostituzioni sono spesso definite in `/apps`, come best practice in AEM come Cloud Service consiste nel definire le personalizzazioni in `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
 
 ### Proprietà {#properties}
 
@@ -82,7 +83,7 @@ Queste proprietà influiscono sul modo in cui le risorse/proprietà (da `/libs`)
 
 ### Creazione della struttura {#creating-the-structure}
 
-Per creare una sovrapposizione o una sostituzione, è necessario ricreare il nodo originale, con la struttura equivalente, sotto la destinazione (in genere `/apps`). Ad esempio:
+Per creare una sovrapposizione o una sostituzione, è necessario ricreare il nodo originale, con la struttura equivalente, sotto la destinazione (in genere `/apps`). Esempio:
 
 * Sovrapposizione
 
@@ -172,7 +173,7 @@ Questi, insieme alle funzionalità standard, consentono di:
    La proprietà è definita in `/libs`, ma non è necessaria nella `/apps` sovrapposizione/sostituzione.
 
    1. Crea il nodo corrispondente all&#39;interno `/apps`
-   1. Creare una proprietà `sling:hideProperties` di tipo `String` o `String[]`. Utilizzate questa opzione per specificare le proprietà da nascondere o ignorare. È inoltre possibile utilizzare i caratteri jolly. Ad esempio:
+   1. Creare una proprietà `sling:hideProperties` di tipo `String` o `String[]`. Utilizzate questa opzione per specificare le proprietà da nascondere o ignorare. È inoltre possibile utilizzare i caratteri jolly. Esempio:
 
       * `*`
       * `["*"]`
