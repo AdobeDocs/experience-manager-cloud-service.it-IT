@@ -1,9 +1,9 @@
 ---
 title: Processi asincroni
 description: ' Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a consumo intensivo di risorse.'
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
