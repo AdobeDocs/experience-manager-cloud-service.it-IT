@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di frammenti di contenuto
-description: Scopri come i frammenti di contenuto in  Adobe Experience Manager (AEM) come Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
+description: Scoprite come i frammenti di contenuto in Adobe Experience Manager (AEM) come Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
 translation-type: tm+mt
 source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
 workflow-type: tm+mt
@@ -39,7 +39,7 @@ In questa e nelle pagine seguenti sono illustrate le attività di creazione, con
 Il numero di canali di comunicazione aumenta ogni anno. In genere i canali fanno riferimento al meccanismo di consegna, come:
 
 * canale fisico; ad esempio desktop, mobile.
-* forma di consegna in un canale fisico; Ad esempio, &quot;pagina di dettaglio del prodotto&quot;, &quot;pagina di categoria del prodotto&quot; per desktop o &quot;web mobile&quot;, &quot;app mobile&quot; per dispositivi mobili.
+* forma di consegna in un canale fisico; ad esempio &quot;pagina di dettaglio del prodotto&quot;, &quot;pagina di categoria del prodotto&quot; per desktop o &quot;web mobile&quot;, &quot;app mobile&quot; per dispositivi mobili.
 
 Tuttavia, è probabile che non desideriate utilizzare esattamente lo stesso contenuto per tutti i canali; è necessario ottimizzare il contenuto in base al canale specifico.
 
@@ -55,34 +55,35 @@ Questi frammenti di contenuto possono quindi essere assemblati per fornire esper
 
 ## Frammenti di contenuto e servizi di contenuto {#content-fragments-and-content-services}
 
-AEM Content Services è progettato per rendere più generalizzata la descrizione e la distribuzione dei contenuti in/da AEM, oltre a concentrarsi sulle pagine Web.
+AEM Content Services è progettato per rendere più generalizzata la descrizione e la distribuzione dei contenuti in/da AEM oltre l&#39;attenzione sulle pagine Web.
 
-Forniscono contenuti ai canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. Questi canali possono includere:
+Forniscono contenuti a canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. Questi canali possono includere:
 
 * Applicazioni a pagina singola
 * Applicazioni mobili native
-* altri canali e punti di contatto esterni ad AEM
+* altri canali e punti di contatto esterni a AEM
 
 La consegna viene effettuata in formato JSON utilizzando JSON Exporter.
 
-I frammenti di contenuto AEM possono essere utilizzati per descrivere e gestire il contenuto strutturato. Il contenuto strutturato è definito in modelli che possono contenere diversi tipi di contenuto; tra cui testo, dati numerici, booleani, data e ora e altro.
+AEM Frammenti di contenuto possono essere utilizzati per descrivere e gestire il contenuto strutturato. Il contenuto strutturato è definito in modelli che possono contenere diversi tipi di contenuto; tra cui testo, dati numerici, booleani, data e ora e altro.
 
-Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, questo contenuto strutturato può essere utilizzato per distribuire contenuti AEM a canali diversi dalle pagine AEM.
+Insieme alle funzionalità di esportazione JSON AEM componenti core, questo contenuto strutturato può essere utilizzato per distribuire contenuti AEM a canali diversi da AEM pagine.
 
 >[!NOTE]
 >
->I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**sono funzioni diverse in AEM:
+>I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sono funzioni diverse in AEM:
 >* **I frammenti** di contenuto sono contenuti editoriali che possono essere utilizzati per accedere ai dati strutturati, ad esempio testi, numeri e date. Sono contenuti puri, con definizione e struttura, ma senza design e/o layout visivi aggiuntivi.
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
+
 >
 >
->I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
+I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 >
 >Per ulteriori informazioni, consultate anche [Informazioni sui frammenti di contenuto e i frammenti esperienza in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
 >[!NOTE]
 >
->AEM supporta anche la traduzione del contenuto del frammento.
+>AEM supporta anche la conversione del contenuto del frammento.
 
 <!--
 >[!NOTE]
@@ -264,6 +265,6 @@ Un frammento, con i relativi elementi e varianti, può essere utilizzato per cre
 
 ### Esempio WKND {#wknd-sample}
 
-Gli esempi del sito [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKND sono utili per imparare a usare AEM come Cloud Service. Include frammenti di esempio, che possono essere visualizzati in:
+Gli esempi [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) sono forniti per aiutarvi a conoscere AEM come Cloud Service. Include frammenti di esempio, che possono essere visualizzati in:
 
 `hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
