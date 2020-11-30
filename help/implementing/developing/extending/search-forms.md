@@ -1,6 +1,6 @@
 ---
 title: Configurazione dei moduli di ricerca
-description: Configurazione dei moduli di ricerca per  Adobe Experience Manager come Cloud Service.
+description: Configurazione di Search Forms for Adobe Experience Manager come Cloud Service.
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 16%
 
 # Configurazione dei moduli di ricerca {#configuring-search-forms}
 
- Adobe Experience Manager come Cloud Service è dotato di un potente meccanismo di [ricerca](/help/sites-cloud/authoring/getting-started/search.md) .
+Adobe Experience Manager come Cloud Service è dotato di un potente meccanismo di [ricerca](/help/sites-cloud/authoring/getting-started/search.md) .
 
 In combinazione con questo, è disponibile anche un set di opzioni predefinite per facilitare l’applicazione di filtri ai contenuti. Questi contengono facet predefiniti come Data **** modifica, Stato **** pubblicazione o Stato **** Live Copy per consentirvi di espandere rapidamente le risorse necessarie.
 
@@ -28,9 +28,9 @@ L&#39;obiettivo di questi strumenti è quello di individuare rapidamente e facil
 >
 >Potete configurare il servizio di ricerca e indicizzazione dei [contenuti sottostante](/help/operations/indexing.md) .
 
-Utilizzando i moduli di **ricerca**, è possibile personalizzare ed estendere tali pannelli in base alle proprie esigenze.
+Utilizzando **Search Forms**, potete personalizzare ed estendere questi pannelli in base alle vostre esigenze specifiche.
 
-I moduli **di** ricerca forniscono una selezione out-of-the-box di [predicati](#predicates-and-their-settings) che è possibile combinare e definire. È possibile accedere alle [finestre di dialogo per la configurazione di questi moduli](#configuring-your-search-forms) tramite:
+L&#39; **opzione Cerca in Forms** fornisce una selezione di [predicati](#predicates-and-their-settings) out-of-the-box che potete combinare e definire. È possibile accedere alle [finestre di dialogo per la configurazione di questi moduli](#configuring-your-search-forms) tramite:
 
 * **Strumenti**
 
@@ -38,9 +38,9 @@ I moduli **di** ricerca forniscono una selezione out-of-the-box di [predicati](#
 
       * **Moduli di ricerca**
 
-## Moduli predefiniti {#default-forms}
+## Forms predefinito {#default-forms}
 
-La prima volta che si accede alla console **Cerca moduli** , è possibile vedere che tutte le configurazioni dispongono di un simbolo lucchetto. Questo indica che la configurazione corrispondente è la configurazione predefinita (out-of-the-box) e non può essere eliminata. Una volta personalizzata e salvata la configurazione, il blocco scompare. Viene visualizzata nuovamente quando si [elimina la configurazione](#deleting-a-configuration-to-reinstate-the-default)personalizzata, nel qual caso viene ripristinata l&#39;impostazione predefinita (e l&#39;indicatore del lucchetto).
+La prima volta che accedete alla console **Cerca in Forms** , è possibile vedere che tutte le configurazioni dispongono di un simbolo lucchetto. Questo indica che la configurazione corrispondente è la configurazione predefinita (out-of-the-box) e non può essere eliminata. Una volta personalizzata e salvata la configurazione, il blocco scompare. Viene visualizzata nuovamente quando si [elimina la configurazione](#deleting-a-configuration-to-reinstate-the-default)personalizzata, nel qual caso viene ripristinata l&#39;impostazione predefinita (e l&#39;indicatore del lucchetto).
 
 ![configurazione dei moduli di ricerca](assets/csf-overview.png)
 
@@ -96,7 +96,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Analisi</td>
-   <td>Funzionalità di ricerca/filtro nel browser Siti per la visualizzazione dei dati basati sull'analisi.  filtri di ricerca Analytics si caricano per corrispondere alle colonne di analisi personalizzate mappate.</td>
+   <td>Funzionalità di ricerca/filtro nel browser Siti per la visualizzazione dei dati basati sull'analisi. I filtri di ricerca di Analytics si caricano per corrispondere alle colonne di analisi personalizzate mappate.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -372,7 +372,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Valutazione</td>
-   <td>Cercare risorse in base al loro punteggio medio.<br /> </td>
+   <td>Cercare risorse in base alla loro valutazione media.<br /> </td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -556,15 +556,15 @@ A seconda del predicato sono disponibili per la configurazione una serie di impo
 
 * &amp;ast; nelle etichette dei campi della scheda **Impostazioni** , i campi sono obbligatori e, se lasciato vuoto, viene visualizzato un messaggio di errore.
 
-## Configurazione dei moduli di ricerca {#configuring-your-search-forms}
+## Configurazione della ricerca in Forms {#configuring-your-search-forms}
 
 ### Creazione/apertura di una configurazione personalizzata {#creating-opening-a-customized-configuration}
 
-1. Passare a **Strumenti**, **Generali**, **Moduli** di ricerca.
+1. Accedete a **Strumenti**, **Generali**, **Cerca in Forms**.
 
 1. Selezionate la configurazione da personalizzare.
 1. Utilizzate l&#39;icona **Modifica** per aprire la configurazione da aggiornare.
-1. Se desiderate una nuova personalizzazione, probabilmente desiderate [aggiungere nuovi campi predicato e definire le impostazioni](#add-edit-a-predicate-field-and-define-field-settings) come necessario. Se disponete già di una personalizzazione, potete selezionare un campo esistente e [aggiornare le impostazioni](#add-edit-a-predicate-field-and-define-field-settings).
+1. Se desiderate una nuova personalizzazione, probabilmente desiderate [aggiungere nuovi campi predicato e definire le impostazioni](#add-edit-a-predicate-field-and-define-field-settings) come necessario. Se disponete di una personalizzazione esistente, potete selezionare un campo esistente e [aggiornare le impostazioni](#add-edit-a-predicate-field-and-define-field-settings).
 1. Select **Done** to save the configuration. Le modifiche verranno visualizzate al successivo utilizzo della configurazione.
 
    >[!NOTE]
@@ -614,7 +614,7 @@ A seconda del predicato sono disponibili per la configurazione una serie di impo
 ### Eliminazione di un campo predicato {#deleting-a-predicate-field}
 
 1. [Aprite la configurazione](#creating-opening-a-customized-configuration) personalizzata per l&#39;aggiornamento.
-1. Selezionate il campo predicato (a destra), aprite la scheda **Impostazioni** , quindi selezionate l’icona **Elimina** (in basso a sinistra).
+1. Selezionate il campo predicato (a destra), aprite la scheda **Impostazioni** , quindi selezionate l&#39;icona **Elimina** (in basso a sinistra).
 
    ![icona delete](assets/csf-delete-icon.png)
 
@@ -668,20 +668,20 @@ L’esempio seguente (per effettuare ricerche in base al modello utilizzato per 
    >1. Apportare modifiche all&#39;interno `/apps.`
 
 
-1. Aprire la console **Moduli** di ricerca e selezionare la configurazione da aggiornare. Ad esempio, **Siti Admin Search Rail**. Quindi selezionate **Modifica**.
+1. Aprite la console **Cerca in Forms** e selezionate la configurazione da aggiornare. Ad esempio, **Siti Admin Search Rail**. Quindi selezionate **Modifica**.
 
 1. A seconda della configurazione, aggiungere alla configurazione una proprietà **Opzioni** o **Opzioni** .
 1. Aggiornare i campi, in particolare:
 
    * **Nome proprietà**
 
-      Specifica la proprietà node da cercare nei nodi target. Ad esempio:
+      Specifica la proprietà node da cercare nei nodi target. Esempio:
 
       `jcr:content/cq:template`
 
    * **Percorso nodo opzione**
 
-      Selezionate il percorso in cui vengono mantenute le opzioni. Ad esempio:
+      Selezionate il percorso in cui vengono mantenute le opzioni. Esempio:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![Predici delle opzioni](assets/csf-options-predicate-02.png)
