@@ -538,7 +538,7 @@ Define DISP_LOG_LEVEL Debug
 
 ### Ambienti cloud {#cloud-environments}
 
-AEM come Cloud Service di registri per i servizi cloud è possibile accedere sia scaricando tramite l&#39;interfaccia di Cloud Manager sia inviando i registri alla riga di comando utilizzando l&#39;interfaccia  riga di comando I/O Adobe. Per ulteriori informazioni, consulta la documentazione [di registrazione di](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
+AEM come Cloud Service, è possibile accedere ai registri dei servizi cloud scaricando l&#39;interfaccia di Cloud Manager o inserendo nella riga di comando i registri utilizzando l&#39;interfaccia  riga di comando Adobe I/O. Per ulteriori informazioni, consulta la documentazione [di registrazione di](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
 
 ### SDK locale {#local-sdk}
 
