@@ -1,17 +1,17 @@
 ---
-title: Configurate Editor Rich Text per creare contenuti [!DNL Adobe Experience Manager] in un Cloud Service.
-description: Configurare l’editor Rich Text per creare contenuti [!DNL Adobe Experience Manager] come Cloud Service.
+title: Configurate Editor Rich Text per creare contenuti [!DNL Adobe Experience Manager] come Cloud Service.
+description: Configurate Editor Rich Text per creare contenuti [!DNL Adobe Experience Manager] come Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
 source-wordcount: '1981'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Configurare l’editor Rich Text {#configure-the-rich-text-editor}
+# Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
 L’editor Rich Text (RTE) offre agli autori un’ampia gamma di funzionalità per la modifica del contenuto di testo. Le icone, le caselle di selezione, la barra degli strumenti e i menu sono disponibili per un’esperienza di modifica del testo WYSIWYG. Gli amministratori configurano l’editor Rich Text per attivare, disattivare ed estendere le funzioni disponibili nei componenti di authoring. Scopri in che modo gli autori [utilizzano l’editor Rich Text per creare](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) contenuti Web.
 
@@ -56,7 +56,7 @@ Per modificare il contenuto di una pagina, aprite il contenuto con un doppio cli
 
 *Figura: Modifica in linea con le opzioni di base nella barra degli strumenti.*
 
-### Full-screen editing {#full-screen-editing}
+### Modifica a tutto schermo {#full-screen-editing}
 
 [!DNL Experience Manager] i componenti possono essere aperti nella visualizzazione a schermo intero che nasconde il contenuto della pagina e occupa la schermata disponibile. Considerate la possibilità di modificare a schermo intero una versione dettagliata dell&#39;editing in linea in quanto offre il maggior numero di opzioni di modifica. Per aprirlo, fai clic su ![Icona per aprire l’editor Rich Text a schermo](assets/rte_fullscreen.png)intero dalla barra degli strumenti compatta quando utilizzi la modalità di modifica in linea.
 
@@ -131,6 +131,7 @@ La [modalità di modifica dell’editor Rich Text e l’interfaccia](#editingmod
 >* **Nome**: `configPath`
 >* **Tipo**: `String`
 >* **Valore**: percorso del nodo contenente la configurazione effettiva
+
 >
 >
 Non assegnare al nodo di configurazione RTE il nome `config`. In caso contrario, le configurazioni dell’editor Rich Text hanno effetto solo per gli amministratori e non per gli utenti del gruppo `content-author`.
@@ -160,6 +161,7 @@ Il componente [di testo Componenti](https://docs.adobe.com/content/help/en/exper
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 Per creare un componente di testo personalizzato, copiate il componente sopra anziché modificarlo.
