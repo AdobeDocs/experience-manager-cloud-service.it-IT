@@ -61,6 +61,7 @@ Per cercare e filtrare le risorse:
    * Directory di ricerca
    * Tag
    * Criteri di ricerca, ad esempio Data di modifica, Stato pubblicazione, Stato LiveCopy
+
    >[!NOTE]
    >
    >I criteri di ricerca possono variare:
