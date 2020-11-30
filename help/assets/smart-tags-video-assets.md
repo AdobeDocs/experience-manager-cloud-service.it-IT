@@ -18,7 +18,7 @@ I formati di file video (e i relativi codec) supportati per l’assegnazione di 
 
 ## Applicazione di tag avanzati ai video durante il caricamento {#smart-tag-assets-on-ingestion}
 
-Quando [caricate le risorse](add-assets.md#upload-assets) video [!DNL Adobe Experience Manager] come Cloud Service, i video vengono ![elaborati](assets/do-not-localize/assetprocessing.png). Al termine dell&#39;elaborazione, consultate la scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] risorsa. I tag avanzati vengono aggiunti automaticamente al video sotto [!UICONTROL Smart Tags]. Asset Compute Service utilizza  Adobe Sensei per creare questi smart tag.
+Quando [caricate le risorse](add-assets.md#upload-assets) video [!DNL Adobe Experience Manager] come Cloud Service, i video vengono ![elaborati](assets/do-not-localize/assetprocessing.png). Al termine dell&#39;elaborazione, consultate la scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] risorsa. I tag avanzati vengono aggiunti automaticamente al video sotto [!UICONTROL Smart Tags].  Asset compute Service utilizza  Adobe Sensei per creare questi smart tag.
 
 ![I tag avanzati vengono aggiunti ai video e visualizzati nella scheda Base delle proprietà della risorsa](assets/smart-tags-added-to-videos.png)
 
