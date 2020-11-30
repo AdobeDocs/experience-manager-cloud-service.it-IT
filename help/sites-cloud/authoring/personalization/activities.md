@@ -39,17 +39,18 @@ Le attività vengono visualizzate con un&#39;etichetta che descrive il tipo di a
 >Il tipo di attività disponibile viene stabilito in base ai seguenti elementi:
 >
 >* Se l’opzione `xt_only` è abilitata sul tenant di Adobe Target (clientcode) utilizzato sul lato AEM per connettersi ad Adobe Target, puoi creare **solo** attività XT in AEM.
+   >
+   >
+* Se le opzioni `xt_only` **non** sono abilitate nel tenant di Adobe Target (clientcode), puoi creare attività **sia** XT che A/B in AEM.
 >
->* Se le opzioni `xt_only` **non** sono abilitate nel tenant di Adobe Target (clientcode), puoi creare attività **sia** XT che A/B in AEM.
 >
->
->**Nota aggiuntiva:** l’opzione `xt_only` è un’impostazione applicata a un determinato tenant Target (clientcode) e può essere modificata solo direttamente all’interno di Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
+**Nota aggiuntiva:** l’opzione `xt_only` è un’impostazione applicata a un determinato tenant Target (clientcode) e può essere modificata solo direttamente all’interno di Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
 
 >[!CAUTION]
 >
 >You must secure the activity settings node `cq:ActivitySettings` on the publish instance so that it is inaccessible to normal users. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 >
->Per informazioni dettagliate, consultate Prerequisiti per l&#39;integrazione con Adobe Target.
+>Per informazioni dettagliate, consultate Prerequisiti per l&#39;integrazione con  Adobe Target.
 <!--
 >See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) for detailed information.
 -->
@@ -187,7 +188,7 @@ Quando un&#39;attività è sincronizzata, una campagna corrispondente viene crea
 * Le attività sull&#39;istanza di pubblicazione hanno lo stesso nome della campagna Adobe Target corrispondente.
 * Activities on the author instance correspond with Target campaigns of the same name with the `_author` suffix.
 
-![Sincronizzazione con Adobe Target](/help/sites-cloud/authoring/assets/activities-synch.png)
+![Sincronizzazione con  Adobe Target](/help/sites-cloud/authoring/assets/activities-synch.png)
 
 Le attività di authoring vengono sincronizzate immediatamente quando l&#39;attività viene modificata. La sincronizzazione immediata consente la simulazione di attività con ContextHub.
 
