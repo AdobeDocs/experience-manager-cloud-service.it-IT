@@ -36,7 +36,7 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 
 >[!NOTE]
 >
->Consultate anche Controllo delle operazioni di gestione utenti in AEM. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
+>Vedere anche Come controllare le operazioni di gestione degli utenti in AEM. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
 ## Autorizzazioni necessarie solo per la funzionalità Editor {#permissions-required-for-editor-functionality-only}
 
