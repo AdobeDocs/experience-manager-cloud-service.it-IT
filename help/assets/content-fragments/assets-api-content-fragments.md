@@ -29,9 +29,9 @@ L’API [REST di](/help/assets/mac-api-assets.md) Assets consente agli sviluppat
 
 L&#39;API consente di utilizzare Adobe Experience Manager come Cloud Service come CMS headless (Content Management System) fornendo Content Services a un&#39;applicazione front-end JavaScript. Oppure qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire le risposte JSON.
 
-Ad esempio, le applicazioni SPA (Single Page Applications), basate su framework o personalizzate, richiedono il contenuto fornito tramite l&#39;API HTTP, spesso in formato JSON.
+Ad esempio, le applicazioni per pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite l&#39;API HTTP, spesso in formato JSON.
 
-Sebbene [AEM Componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) di base forniscano un&#39;API molto completa, flessibile e personalizzabile in grado di eseguire le operazioni di lettura necessarie a questo scopo, e il cui output JSON può essere personalizzato, richiedono AEM know-how WCM (Web Content Management) per l&#39;implementazione, in quanto devono essere ospitati in pagine basate su modelli AEM dedicati. Non tutte le organizzazioni di sviluppo SPA hanno accesso diretto a tali conoscenze.
+Sebbene [AEM Componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) di base forniscano un&#39;API molto completa, flessibile e personalizzabile in grado di eseguire le operazioni di lettura necessarie a questo scopo, e il cui output JSON può essere personalizzato, richiedono AEM know-how WCM (Web Content Management) per l&#39;implementazione, in quanto devono essere ospitati in pagine basate su modelli AEM dedicati. Non tutte SPA organizzazioni di sviluppo hanno accesso diretto a tali conoscenze.
 
 Questo è il momento in cui è possibile utilizzare l&#39;API REST di Risorse. Consente agli sviluppatori di accedere direttamente alle risorse (ad esempio, immagini e frammenti di contenuto), senza dover prima incorporarle in una pagina e distribuire il contenuto in formato JSON serializzato.
 
@@ -105,7 +105,7 @@ Ciò significa che le richieste successive (`write`) non possono essere combinat
   <tr>
    <td>Casi d’uso supportati</td>
    <td>Scopo generale.</td>
-   <td><p>Ottimizzato per il consumo in un'applicazione a pagina singola (SPA) o in qualsiasi altro contesto (che utilizza contenuti).</p> <p>Può anche contenere informazioni sul layout.</p> </td>
+   <td><p>Ottimizzato per il consumo in un'applicazione (SPA) a pagina singola o in qualsiasi altro contesto (che utilizza contenuti).</p> <p>Può anche contenere informazioni sul layout.</p> </td>
   </tr>
   <tr>
    <td>Operazioni supportate</td>
