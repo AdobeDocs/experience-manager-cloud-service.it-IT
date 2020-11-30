@@ -187,7 +187,7 @@ Sono disponibili diverse risorse di Aiuto:
 
    Esamina questa panoramica come faresti con la [panoramica di navigazione del prodotto](#product-navigation) la prima volta che accedi a una console.
 
-   Dal menu [**Informazioni sulle pagine **puoi selezionare** Aiuto **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)per accedervi di nuovo in un secondo tempo.
+   Dal menu [**Informazioni sulle pagine** puoi selezionare **Aiuto**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) per accedervi di nuovo in un secondo tempo.
 
 * **Console Strumenti**
 
