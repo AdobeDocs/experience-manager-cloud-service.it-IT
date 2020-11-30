@@ -1,9 +1,9 @@
 ---
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.5.0'
 description: Note sulla versione 2020.5.0 di Experience Manager
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
