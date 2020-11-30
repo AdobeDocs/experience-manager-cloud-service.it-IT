@@ -30,7 +30,7 @@ A ciascun ruolo sono associate autorizzazioni specifiche, attività preconfigura
 | Impostazione pipeline | Configurazione o modifica della tubazione. |  | x |  |  |
 | Esecuzione pipeline | Avviate la tubazione. | x | x |  |  |
 | Esecuzione pipeline | Rifiuta/Approva Importanti Errori A 3 Livelli. | x | x | x |  |
-| Esecuzione pipeline | Fornisci l&#39;approvazione GoLive. | x | x | x |  |
+| Esecuzione pipeline | Fornisci approvazione GoLive. | x | x | x |  |
 | Esecuzione pipeline | Pianificazione distribuzione produzione. | x | x | x |  |
 | Esecuzione pipeline | Riprende tubazione produzione. |  |  |  |  |
 | Eliminazione tubazione | Consente di eliminare una tubazione. |  | x |  |  |
