@@ -6,12 +6,12 @@ translation-type: tm+mt
 source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Configure RTE to create accessible sites {#configure-rte-accessible-sites}
+# Configurare l’editor Rich Text per creare siti accessibili {#configure-rte-accessible-sites}
 
 [!DNL Adobe Experience Manager] supporta funzioni di accessibilità standard, quali testo alternativo per le immagini e funzioni aggiuntive accessibili durante la creazione di contenuti. Gli autori dei contenuti utilizzano queste funzioni con componenti che utilizzano l’editor Rich Text (Rich Text Editor). Le funzioni includono l’aggiunta di testo alternativo, informazioni strutturali tra titoli, elementi di paragrafo e così via.
 
@@ -34,7 +34,7 @@ Per istruzioni su come configurare l’editor Rich Text, consultate [configurare
 * [Attivare un plug-in e configurare la proprietà features](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configurare altre funzionalità dell’editor Rich Text](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Per attivare alcune o tutte le funzioni di un plug-in, configurate il plug-in all&#39;interno del `rtePlugins` sottoramo appropriato in CRXDE Lite.
+Per attivare alcune o tutte le funzioni di un plug-in, configurate il plug-in all&#39;interno del `rtePlugins` ramo secondario appropriato nel CRXDE Lite.
 
 ![CRXDE Lite che mostra un esempio rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
