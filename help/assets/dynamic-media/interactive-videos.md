@@ -74,7 +74,7 @@ Passaggi video interattivi:
 ・ L&#39;implementazione di AEM *non* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione di eCommerce di IBM, Elastic Path, hybris o Intershop.
 
 1. **(Facoltativo) Creazione di un predefinito** per visualizzatori video interattivi - Personalizzate l’aspetto e il comportamento di vari componenti che compongono il lettore, ad esempio la barra di scorrimento video e le miniature interattive.
-La creazione di un predefinito per visualizzatori video interattivi non è necessaria se intendete utilizzare i predefiniti per visualizzatori video interattivi forniti con il prodotto `Shoppable_Video_Light` o `Shoppable_Video_Dark` .
+La creazione di un predefinito per visualizzatori video interattivi non è necessaria se intendete utilizzare i predefiniti per visualizzatori video interattivi forniti `Shoppable_Video_Light` o `Shoppable_Video_Dark` invece.
 Consultate [Creazione di un nuovo predefinito](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) per visualizzatori (facoltativo) e Considerazioni [speciali per la creazione di un predefinito](/help/assets/dynamic-media/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset)per visualizzatori interattivi.
 
 1. **Caricamento di un video e delle relative risorse** immagine associate - Caricamento di un video e delle immagini associate da rendere interattive.
@@ -335,7 +335,7 @@ Per aggiungere interattività al video:
 
    Screenshot B
 
-   Nella schermata B sopra, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. Tenere presente che i timbri temporali della scala temporale sono impostati a intervalli di 3 secondi.
+   Nella schermata B sopra, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. Tenere presente che i timbri temporali della scala della linea temporale sono ora impostati a intervalli di 3 secondi.
 
    ![chlimage_1-25](assets/chlimage_1-131.png)
 
