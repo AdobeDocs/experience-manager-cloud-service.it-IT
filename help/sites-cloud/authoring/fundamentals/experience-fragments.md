@@ -229,6 +229,7 @@ Puoi creare diverse varianti per un Frammento esperienza a seconda delle tue esi
    * **Nome**: se è lasciato vuoto, verrà derivato dal campo Titolo.
    * **Descrizione**
    * **Tag varianti**
+
    Esempio:
 
    ![Proprietà della variante](/help/sites-cloud/authoring/assets/xf-07.png)
@@ -247,6 +248,7 @@ A questo punto puoi utilizzare il frammento esperienza durante l’authoring del
 
    * Trascina il frammento richiesto dal browser Risorse e rilascialo nel componente.
    * Seleziona **Configura** nella barra degli strumenti del componente e specifica il frammento da utilizzare, quindi conferma con **Fine**.
+
    >[!NOTE]
    >
    >L’opzione Modifica, nella barra degli strumenti del componente, funziona come una scelta rapida per aprire il frammento nell’editor frammenti.
