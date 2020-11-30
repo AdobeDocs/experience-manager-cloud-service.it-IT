@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Operazioni {#operations}
 
-+ [Operazioni e manutenzione in AEM as a Cloud Service](/help/operations/home.md) 
++ [Operazioni e manutenzione in AEM as a Cloud Service](/help/operations/home.md)
 + [Ricerca e indicizzazione dei contenuti](indexing.md)
 + [Servizio di replica dei contenuti](replication.md)
 + [Attività di manutenzione](maintenance.md)
