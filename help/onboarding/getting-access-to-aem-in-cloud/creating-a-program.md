@@ -1,11 +1,11 @@
 ---
-title: Creazione di un programma - Servizio Cloud
-description: Creazione di un programma - Servizio Cloud
+title: Creazione di un programma - Cloud Service
+description: Creazione di un programma - Cloud Service
 translation-type: tm+mt
 source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -53,11 +53,11 @@ Per creare un programma sandbox, effettuate le seguenti operazioni:
    >Per ulteriori informazioni sull’accesso e la gestione del repository Git tramite Gestione account Git self-service dall’interfaccia utente di Cloud Manager, consultate [Accesso a Git](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. Una volta creato l’ambiente di sviluppo, l’utente può **accedere al collegamento AEM** , come illustrato nella figura seguente:
+1. Una volta creato l&#39;ambiente di sviluppo, l&#39;utente può **accedere AEM** collegamento, come illustrato nella figura seguente:
 
    ![](assets/create-program-5.png)
 
-1. Una volta completata la distribuzione per lo sviluppo della pipeline non di produzione, la procedura guidata consente all&#39;utente di accedere ad AEM (in fase di sviluppo) o di distribuire il codice all&#39;ambiente di sviluppo:
+1. Una volta completata la distribuzione per lo sviluppo della pipeline non di produzione, la procedura guidata consente all&#39;utente di accedere alle AEM (in fase di sviluppo) o di distribuire il codice all&#39;ambiente di sviluppo:
 
    ![](assets/create-program-setup-deploy.png)
 
@@ -68,10 +68,10 @@ Per creare un programma sandbox, effettuate le seguenti operazioni:
 
 ## Eliminazione di un programma sandbox {#delete-sandbox-program}
 
-Un utente del programma sandbox nel ruolo *Business Owner* o *Deployment Manager* in Cloud Manager può eliminare il proprio ambiente di produzione e di fase impostato tramite l&#39;interfaccia utente di Cloud Manager.
+A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
 
 >[!NOTE]
->Selezionando l&#39;opzione di eliminazione su Produzione o Stage, viene eliminato anche l&#39;altro nel set.
+>Selezionando l’opzione Elimina in Produzione o Stage, viene eliminato anche l’altro nel set.
 
 L’opzione Elimina è disponibile dalla pagina di destinazione, come illustrato di seguito:
 
@@ -86,7 +86,7 @@ Selezionate **Elimina programma** dalla pagina Panoramica **** programma per eli
 
 ## Creazione di un programma regolare {#create-regular-program}
 
-Un programma *Regolare* è destinato a un utente che ha familiarità con AEM e Cloud Manager ed è pronto per iniziare a scrivere, creare e testare il codice allo scopo di distribuirlo in Produzione.
+Un programma *Regolare* è destinato a un utente che ha familiarità con AEM e Cloud Manager ed è pronto per iniziare a scrivere, creare e testare il codice con l&#39;obiettivo di distribuirlo in Produzione.
 
 Per creare un programma regolare, effettuate le seguenti operazioni:
 
