@@ -1,6 +1,6 @@
 ---
 title: Personalizzazione e targeting dei contenuti
-description: Scopri come AEM può creare contenuti personalizzati
+description: Scopri come AEM creare contenuti personalizzati
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
