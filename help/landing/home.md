@@ -40,6 +40,6 @@ In questa pagina sono elencate le guide utente di supporto autonomo relative a E
 * [Documentazione di Core Components](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [Documentazione di Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/onboarding/getting-access/navigation.html)
 * [Preparazione all’RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Esercitazioni su Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutorial su Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
