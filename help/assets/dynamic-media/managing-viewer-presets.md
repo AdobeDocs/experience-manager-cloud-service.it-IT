@@ -39,7 +39,7 @@ Vedere anche Accessibilità e navigazione [da](https://docs.adobe.com/content/he
 
 ## Managing Viewer Presets {#managing-viewer-presets-1}
 
-You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -49,7 +49,7 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM
 
 ### Supporto visualizzatore per pagine Web reattive {#viewer-support-for-responsive-designed-web-pages}
 
-Diverse pagine Web hanno esigenze diverse. Ad esempio, a volte desiderate una pagina Web che fornisca un collegamento per aprire il visualizzatore HTML5 in una finestra browser separata. In altri casi, potrebbe essere necessario incorporare il visualizzatore HTML5 direttamente nella pagina host. In quest’ultimo caso, la pagina Web potrebbe avere un layout statico. Oppure può essere &quot;reattivo&quot; e può essere visualizzato in modo diverso su dispositivi diversi o per diverse dimensioni della finestra del browser. Per soddisfare queste esigenze, tutti i visualizzatori HTML5 predefiniti forniti con Dynamic Media supportano sia le pagine Web statiche che quelle reattive.
+Diverse pagine Web hanno esigenze diverse. Ad esempio, a volte desiderate una pagina Web che fornisca un collegamento per aprire il visualizzatore HTML5 in una finestra browser separata. In altri casi, potrebbe essere necessario incorporare il visualizzatore HTML5 direttamente nella pagina host. In quest’ultimo caso, la pagina Web potrebbe avere un layout statico. Oppure può essere &quot;reattivo&quot; e può essere visualizzato in modo diverso su diversi dispositivi o per diverse dimensioni della finestra del browser. Per soddisfare queste esigenze, tutti i visualizzatori HTML5 predefiniti forniti con Dynamic Media supportano sia le pagine Web statiche che quelle reattive.
 
 Per ulteriori informazioni su come incorporare visualizzatori reattivi nelle pagine Web, consultate Libreria [immagini](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) reattive nella guida *API di* Scene7 Image Serving.
 
@@ -399,7 +399,7 @@ Consultate Considerazioni [speciali per la creazione di un predefinito](#special
 
 **Per creare un predefinito per visualizzatori**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
@@ -469,7 +469,7 @@ Quando crei o modifichi un predefinito visualizzatore video interattivo, puoi sc
   </tr>
   <tr>
    <td>Segmento</td>
-   <td><p><code>Segment </code>è la modalità di visualizzazione predefinita per i predefiniti per visualizzatori video interattivi integrati <code>Shoppable_Video_light</code> e per tutti i predefiniti per visualizzatori video interattivi creati <code>Shoppable_Video_dark</code> dall’utente.</p> <p>In questa modalità, se a un segmento video sono assegnate meno miniature rispetto al numero di punti visibili nel pannello di visualizzazione, le miniature dei segmenti secondari successivi o precedenti <i>non vengono </i>trascinate per riempire eventuali punti vuoti nel pannello. In altre parole, mantiene la visualizzazione dei campioni assegnati al segmento video specifico.</p> </td>
+   <td><p><code>Segment </code>è la modalità di visualizzazione predefinita per i predefiniti per visualizzatori video interattivi forniti con Scene7 <code>Shoppable_Video_light</code> e per tutti i predefiniti per visualizzatori video interattivi <code>Shoppable_Video_dark</code> creati con voi stessi.</p> <p>In questa modalità, se a un segmento video sono assegnate meno miniature rispetto al numero di punti visibili nel pannello di visualizzazione, le miniature dei segmenti secondari successivi o precedenti <i>non vengono </i>trascinate per riempire eventuali punti vuoti nel pannello. In altre parole, mantiene la visualizzazione dei campioni assegnati al segmento video specifico.</p> </td>
   </tr>
   <tr>
    <td>Continuo</td>
@@ -523,7 +523,7 @@ I predefiniti per visualizzatori disponibili nell’interfaccia utente dipendono
 
 **Per attivare o disattivare i predefiniti per visualizzatori**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. Nella pagina Predefinito visualizzatore, nell’intestazione della colonna **[!UICONTROL Stato]** , toccate l’opzione per attivare o disattivare un predefinito per visualizzatori.
 
    I predefiniti per visualizzatori attivati presentano l’interruttore a destra, all’interno di una casella blu; i predefiniti per visualizzatori disattivati presentano l’interruttore a sinistra, all’interno di una casella di colore grigio chiaro.
@@ -540,13 +540,13 @@ Consultate anche [Anteprima delle risorse](/help/assets/dynamic-media/previewing
 
 **Per pubblicare i predefiniti per visualizzatori**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. Selezionate uno o più predefiniti per visualizzatori da pubblicare.
 1. Sulla barra degli strumenti, toccate l’icona **[!UICONTROL Pubblica]** .
 
 ## Ordinamento dei predefiniti per visualizzatori {#sorting-viewer-presets}
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. Per ordinare in base all’intestazione della colonna, fai clic su **[!UICONTROL Titolo del predefinito]**, **[!UICONTROL Tipo]**, **[!UICONTROL Pubblicato]** o **[!UICONTROL Stato]**. Ad esempio, fai clic su **[!UICONTROL Tipo]** per ordinare i tipi di predefiniti visualizzatore in ordine alfabetico o inverso.
 
 ## Modifica dei predefiniti per visualizzatori {#editing-viewer-presets}
@@ -555,7 +555,7 @@ Tenete presente che la modifica di eventuali predefiniti per visualizzatori *pre
 
 **Per modificare i predefiniti per visualizzatori**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset] > [!UICONTROL Viewer Presets]**.
 1. Selezionate un predefinito selezionando la casella a sinistra del titolo del predefinito per visualizzatori.
 1. Sulla barra degli strumenti, toccate **[!UICONTROL Modifica]**.
 1. Nella pagina **[!UICONTROL Editor predefiniti per visualizzatore]**, apporta le modifiche necessarie al predefinito visualizzatore, utilizzando le opzioni disponibili nelle schede **[!UICONTROL Aspetto]** e **[!UICONTROL Comportamento]**.
@@ -573,7 +573,7 @@ Potete eliminare i predefiniti per visualizzatori creati e aggiunti agli element
 
 **Per eliminare i predefiniti per visualizzatori personalizzati**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. Nella pagina Predefiniti visualizzatore, selezionate un titolo predefinito, quindi toccate l’icona **[!UICONTROL Cestino]** .
 1. Toccate **[!UICONTROL Elimina]**.
 
