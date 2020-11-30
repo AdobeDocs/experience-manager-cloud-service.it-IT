@@ -286,7 +286,7 @@ Consulta:
 
 >[!CAUTION]
 >
->Considerare queste informazioni di base. Non dovete cambiare nulla qui (come è indicato come area ** privata nel repository), ma potrebbe aiutare in alcuni casi a capire come funzionano le cose sotto il coperchio.
+>Considerare queste informazioni di base. Non si deve cambiare nulla qui (come è indicato come area ** privata nel repository), ma potrebbe aiutare in alcuni casi a capire come funzionano le cose sotto la cappa.
 
 La modifica di un frammento di contenuto, che può estendersi su più viste (= pagine HTML), è atomica. Poiché le funzionalità di modifica per più viste atomiche non sono un concetto AEM tipico, i frammenti di contenuto utilizzano quella che viene definita una sessione *di* modifica.
 
