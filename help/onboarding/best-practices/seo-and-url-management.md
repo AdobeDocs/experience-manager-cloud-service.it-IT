@@ -242,7 +242,7 @@ Ecco un esempio di scenario in cui si verifica questo problema:
 
 1. Il dispatcher memorizza nella cache la risposta in `/my-page.html` e restituisce la risposta all’utente.
 1. Un autore di contenuti apporta una modifica a questa pagina e la attiva.
-1. L’agente di eliminazione del dispatcher invia una richiesta di annullamento della validità per `/content/my-brand/my-page`**.**Poiché il dispatcher non ha una pagina memorizzata nella cache in questo percorso, il contenuto precedente rimane memorizzato nella cache e non verrà aggiornato.
+1. L’agente di eliminazione del dispatcher invia una richiesta di annullamento della validità per `/content/my-brand/my-page`**.** Poiché il dispatcher non ha una pagina memorizzata nella cache in questo percorso, il contenuto precedente rimane memorizzato nella cache e non verrà aggiornato.
 
 Sono disponibili vari modi per configurare regole di eliminazione invio personalizzate che mappano l’URL più breve all’URL più lungo per consentire l’annullamento della validità della cache.
 
@@ -364,8 +364,8 @@ Per generare una mappa del sito a livello di programmazione, registra un servlet
 >
 >Puoi registrare un servlet Sling in modo che ascolti il selettore `sitemap` con l’estensione `xml`. Il servlet elaborerà quindi la richiesta ogni volta che viene richiesto un URL che termina con
 >    `/<path-to>/page.sitemap.xml`
->Puoi così ottenere la risorsa desiderata dalla richiesta e generare una mappa del sito a partire da tale punto nella struttura del contenuto utilizzando le API JCR.
->Il vantaggio di un simile approccio è che più siti vengono gestiti dalla stessa istanza. Con una richiesta a `/content/siteA.sitemap.xml` viene generata una mappa del sito per `siteA`, mentre con una richiesta a `/content/siteB.sitemap.xml` viene generata una mappa del sito per `siteB` senza dover scrivere codice aggiuntivo.
+Puoi così ottenere la risorsa desiderata dalla richiesta e generare una mappa del sito a partire da tale punto nella struttura del contenuto utilizzando le API JCR.
+Il vantaggio di un simile approccio è che più siti vengono gestiti dalla stessa istanza. Con una richiesta a `/content/siteA.sitemap.xml` viene generata una mappa del sito per `siteA`, mentre con una richiesta a `/content/siteB.sitemap.xml` viene generata una mappa del sito per `siteB` senza dover scrivere codice aggiuntivo.
 
 ### Creazione di reindirizzamenti 301 per gli URL legacy {#creating-redirects-for-legacy-urls}
 
