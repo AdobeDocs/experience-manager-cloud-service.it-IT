@@ -103,7 +103,7 @@ Quando il certificato scade, non è più attendibile. Per aggiungere un nuovo ce
 
    ![Per aggiungere un nuovo certificato di sicurezza, elimina la voce esistente similaritysearch in Registro chiavi](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Figura: per aggiungere un nuovo certificato di sicurezza, elimina la voce esistente`similaritysearch`in Registro chiavi*
+   *Figura: per aggiungere un nuovo certificato di sicurezza, elimina la voce esistente `similaritysearch` in Registro chiavi*
 
 1. Nell’interfaccia utente di [!DNL Experience Manager], accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni Adobe IMS]**. Apri la configurazione di Tag avanzati disponibile. Per scaricare un certificato pubblico, fai clic su **[!UICONTROL Scarica certificato pubblico]**.
 
