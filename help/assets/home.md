@@ -1,5 +1,5 @@
 ---
-title: Guida ad Assets as a Cloud Service
+title: Guida di Assets as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione di Adobe Experience Manager Assets as a Cloud Service
 translation-type: tm+mt
 source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
@@ -10,7 +10,7 @@ ht-degree: 78%
 ---
 
 
-# Guida ad Assets as a Cloud Service {#aem-assets-guide}
+# Guida di Assets as a Cloud Service {#aem-assets-guide}
 
 Di seguito sono elencate le risorse di supporto autonomo per Experience Manager Assets as a Cloud Service.
 
@@ -46,6 +46,6 @@ Di seguito sono elencate le risorse di supporto autonomo per Experience Manager 
 * [Documentazione di Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Preparazione all’RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Esercitazioni su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [Forum della community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
