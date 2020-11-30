@@ -1,6 +1,6 @@
 ---
 title: Gestione delle raccolte di risorse digitali
-description: Comprendere il concetto di raccolta in  risorse Adobi Experience Manager. Scoprite come raccolte, gestire, modificare e raccolte con altri utenti.
+description: Comprendere il concetto di raccolta in Adobe Experience Manager Assets. Scoprite come raccolte, gestire, modificare e raccolte con altri utenti.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 20%
 
 # Gestire le raccolte {#manage-collections}
 
-Una raccolta è un insieme di risorse all&#39;interno  risorse di Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati di ricerca.
+Una raccolta è un set di risorse all&#39;interno di Adobe Experience Manager Assets. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati di ricerca.
 
 A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Potete condividere le raccolte con vari utenti a cui sono stati assegnati diversi livelli di privilegi, inclusi la visualizzazione, la modifica e così via.
 
@@ -30,7 +30,7 @@ Le raccolte sono dei tipi seguenti, in base al modo in cui vengono raccolte le r
 
 Per aprire la console **[!UICONTROL Raccolte]** :
 
-Per aprire le **[!UICONTROL raccolte]**, toccate o fate clic sul logo Experience Manager . From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+Per aprire le **[!UICONTROL raccolte]**, toccate o fate clic sul logo dell&#39;Experience Manager . From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Creare una raccolta {#create-a-collection}
 
@@ -54,7 +54,7 @@ Potete creare una raccolta con riferimenti statici, ad esempio una raccolta con 
 
    >[!NOTE]
    >
-   > Risorse Experience Manager consente di creare attività di revisione per una raccolta, in modo simile a come si creano le attività di revisione per una cartella di risorse.
+   > Risorse Experience Manager consente di creare attività di revisione per una raccolta simile a quelle effettuate per le attività di revisione per una cartella di risorse.
 
    Per aggiungere risorse alla raccolta, passate all&#39;interfaccia utente Risorse. Per informazioni dettagliate, consultate [Aggiungere risorse a una raccolta](#add-assets-to-a-collection).
 
@@ -140,7 +140,7 @@ La funzione di ricerca nelle raccolte supporta sia la [ricerca delle raccolte](#
 
 ### Cerca raccolte {#search-collections}
 
-Potete cercare le raccolte dalla console Raccolte. Quando eseguite una ricerca con le parole chiave nella casella di ricerca Omnico, i AEM Assets cercano i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
+Potete cercare le raccolte dalla console Raccolte. Quando eseguite una ricerca con le parole chiave nella casella di ricerca Omnico,  AEM Assets cerca i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
 
 Se cercate raccolte dal livello principale, nei risultati della ricerca vengono restituite solo singole raccolte. Le risorse o le cartelle all&#39;interno delle raccolte sono escluse. In tutti gli altri casi (ad esempio, all&#39;interno di una singola raccolta o in una gerarchia di cartelle), vengono restituite tutte le risorse, le cartelle e le raccolte pertinenti.
 
@@ -148,7 +148,7 @@ Se cercate raccolte dal livello principale, nei risultati della ricerca vengono 
 
 Nella console Raccolte, toccate o fate clic su una raccolta per aprirla.
 
-All&#39;interno di una raccolta, la ricerca di Risorse AEM è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che state visualizzando. Quando eseguite una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle figlie corrispondenti all’interno della cartella corrente. Quando eseguite una ricerca all&#39;interno di una raccolta, vengono restituite solo le risorse, le cartelle e altre raccolte corrispondenti a membri diretti della raccolta.
+All&#39;interno di una raccolta, AEM ricerca delle risorse è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che state visualizzando. Quando eseguite una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle figlie corrispondenti all’interno della cartella corrente. Quando eseguite una ricerca all&#39;interno di una raccolta, vengono restituite solo le risorse, le cartelle e altre raccolte corrispondenti a membri diretti della raccolta.
 
 ## Modifica delle impostazioni della raccolta {#edit-collection-settings}
 
@@ -179,7 +179,7 @@ Quando scaricate una raccolta, viene scaricata l&#39;intera gerarchia di risorse
 
 ## Modifica delle proprietà dei metadati di più raccolte {#editing-metadata-properties-of-multiple-collections}
 
-Risorse Adobe Enterprise Manager (AEM) consente di modificare i metadati di molte raccolte in blocco. Utilizzate la pagina [!UICONTROL Proprietà] per eseguire modifiche ai metadati su più raccolte, ad esempio per modificare le proprietà dei metadati impostando un valore comune o aggiungere o modificare i tag.
+ risorse Enterprise Manager (AEM) Adobe consente di modificare i metadati di molte raccolte in blocco. Utilizzate la pagina [!UICONTROL Proprietà] per eseguire modifiche ai metadati su più raccolte, ad esempio per modificare le proprietà dei metadati impostando un valore comune o aggiungere o modificare i tag.
 
 Per personalizzare la pagina [!UICONTROL Proprietà] metadati, compresa l&#39;aggiunta, la modifica, l&#39;eliminazione delle proprietà dei metadati, utilizzare l&#39;Editor schema.
 
@@ -232,7 +232,7 @@ Le ricerche salvate vengono create quando generi una raccolta avanzata. Le racco
 >
 >Potete condividere le raccolte smart nello stesso modo in cui condividete le raccolte statiche.
 
-La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzate. Per informazioni dettagliate, consultate [Modificare una raccolta](#edit-a-smart-collection)avanzata.
+La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzate. Per informazioni dettagliate, consultate [Modificare una raccolta](#edit-a-smart-collection)dinamica.
 
 Per eliminare le ricerche salvate, effettuate le seguenti operazioni:
 
