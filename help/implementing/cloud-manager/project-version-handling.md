@@ -1,6 +1,6 @@
 ---
 title: Gestione delle versioni dei progetti Maven
-description: Gestione delle versioni del progetto Maven - Servizi cloud
+description: Gestione delle versioni del progetto Maven - Cloud Services
 translation-type: tm+mt
 source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
 workflow-type: tm+mt
