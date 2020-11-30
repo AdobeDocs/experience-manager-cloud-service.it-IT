@@ -14,7 +14,7 @@ ht-degree: 99%
 
 AEM consente di creare un layout reattivo per le pagine mediante il componente **Contenitore di layout**.
 
-Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Con questa griglia è possibile riorganizzare il layout in base alla dimensione e al formato del dispositivo o della finestra. Il componente viene utilizzato [**insieme alla modalità **Layout](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), che consente di creare e modificare il layout reattivo (o dinamico) in base al dispositivo.
+Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Con questa griglia è possibile riorganizzare il layout in base alla dimensione e al formato del dispositivo o della finestra. Il componente viene utilizzato [**insieme alla modalità** Layout](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), che consente di creare e modificare il layout reattivo (o dinamico) in base al dispositivo.
 
 Il Contenitore di layout:
 
@@ -27,15 +27,16 @@ L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti per di
 
 AEM consente di realizzare il layout dinamico per le pagine utilizzando una combinazione di meccanismi:
 
-* Componente [**Contenitore di layout **](#adding-a-layout-container-and-its-content-edit-mode)
+* Componente [**Contenitore di layout**](#adding-a-layout-container-and-its-content-edit-mode)
 
    Questo componente è disponibile nel [browser dei componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) e fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia dinamica. Può essere impostato anche come sistema paragrafo predefinito sulla tua pagina.
 
-* [**Modalità Layout **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+* [**Modalità Layout**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
    Una volta che il Contenitore di layout è collocato nella pagina, è possibile utilizzare la modalità di **Layout** per posizionare i contenuti all’interno della griglia dinamica.
 
-* [**Emulatore **](#selecting-a-device-to-emulate)Consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
+* [**Emulatore**](#selecting-a-device-to-emulate)
+Consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
 
 Con questi meccanismi basati su una griglia reattiva è possibile:
 
@@ -205,7 +206,7 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
 
 * In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Viene quindi visualizzata la barra degli strumenti per questa modalità.
 
-   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente del layout e dei componenti che ne fanno parte. Ad esempio:
+   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente del layout e dei componenti che ne fanno parte. Esempio:
 
    * **Elemento padre:** consente di selezionare il componente principale.
 
