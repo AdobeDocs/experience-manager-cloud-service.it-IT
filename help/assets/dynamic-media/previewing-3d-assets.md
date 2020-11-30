@@ -18,9 +18,9 @@ Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli delle 
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formati supportati per l’anteprima 3D in AEM{#supported-3d-previewing-assets}
+## Formati supportati per l&#39;anteprima 3D in AEM{#supported-3d-previewing-assets}
 
-L’anteprima 3D interattiva in AEM supporta i seguenti formati di file:
+L&#39;anteprima 3D interattiva in AEM supporta i seguenti formati di file:
 
 | Estensione dei file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
@@ -28,7 +28,7 @@ L’anteprima 3D interattiva in AEM supporta i seguenti formati di file:
 | GLTF | Formato di trasmissione GL | model/gltf+json | Vedi **Nota** di seguito. |
 | OBJ | File oggetto WaveFront 3D | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | Sostegno solo all&#39;ingestione; Anteprima non disponibile. |
+| DN |  Adobe Dimension | model/x-adobe-dn | Sostegno solo all&#39;ingestione; Anteprima non disponibile. |
 | USDZ | Archivio ZIP con descrizione universale di Scene7 | model/vnd.usdz+zip | Sostegno solo all&#39;ingestione; Anteprima non disponibile. |
 
 **Nota**: Se il rendering dei materiali non viene eseguito in anteprima di un modello gLTF, accertatevi che siano denominati correttamente e che si trovino in una `textures` cartella nella stessa cartella principale del modello, in modo simile al seguente:
@@ -40,7 +40,7 @@ L’anteprima 3D interattiva in AEM supporta i seguenti formati di file:
     Material_0_baseColor.
     jpegMaterial_0_normal.jpeg
 
-## Considerazioni sulle prestazioni per l’anteprima di risorse 3D in AEM{#performance-3d-previewing-assets}
+## Considerazioni sulle prestazioni per l’anteprima delle risorse 3D in AEM{#performance-3d-previewing-assets}
 
 Il tempo necessario per aprire una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa dipende da diversi fattori quali larghezza di banda, complessità dell’immagine e latenze verso il server.
 
@@ -50,7 +50,7 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
 1. Assicurati di aver caricato le risorse 3D in AEM.
 Consultate Formati [supportati per l’anteprima](#supported-3d-previewing-assets) 3D e per il [caricamento delle risorse](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Da AEM, nella pagina **[!UICONTROL di navigazione]** , toccate **[!UICONTROL Risorse > File]**.
+1. Da AEM, nella pagina di **[!UICONTROL navigazione]** toccate **[!UICONTROL Risorse > File]**.
 
    ![Pagina di navigazione](/help/assets/dynamic-media/assets/navigation-assets.png)
 
