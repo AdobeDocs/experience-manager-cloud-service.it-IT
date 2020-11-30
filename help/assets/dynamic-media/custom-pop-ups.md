@@ -14,7 +14,7 @@ ht-degree: 2%
 
 La visualizzazione rapida predefinita viene utilizzata nelle esperienze eCommerce per le quali viene visualizzato un pop-up con le informazioni sul prodotto per guidare un acquisto. Tuttavia, potete attivare il contenuto personalizzato per la visualizzazione nelle finestre a comparsa. A seconda del visualizzatore in uso, questa funzione consente agli utenti di fare clic su un punto di attivazione, una miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
 
-Le visualizzazioni rapide sono supportate dai seguenti visualizzatori in Dynamic Media:
+Le viste rapide sono supportate dai seguenti visualizzatori in elementi multimediali dinamici:
 
 * Immagini interattive (aree sensibili selezionabili)
 * Video interattivo (immagini in miniatura cliccabili durante la riproduzione di un video)
