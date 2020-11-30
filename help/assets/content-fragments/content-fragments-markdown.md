@@ -30,7 +30,7 @@ Durante la [creazione](/help/assets/content-fragments/content-fragments-variatio
 
 ## Notazione titolo {#heading-notation}
 
-Per creare un&#39;intestazione, posizionate un tag hash (#) davanti all&#39;intestazione. Un tag hash (#) viene usato per un H1, due tag hash (##) per un H2 e così via. È possibile utilizzare fino a 6 hashtag. Ad esempio:
+Per creare un&#39;intestazione, posizionate un tag hash (#) davanti all&#39;intestazione. Un tag hash (#) viene usato per un H1, due tag hash (##) per un H2 e così via. È possibile utilizzare fino a 6 hashtag. Esempio:
 
     `## This is an H2`
 
@@ -38,7 +38,7 @@ Per creare un&#39;intestazione, posizionate un tag hash (#) davanti all&#39;inte
 
     `###### This is a H6`
 
-Facoltativamente, potete creare un H1 evidenziando il testo in segni uguali e creando un H2 evidenziando il testo con segni meno. Ad esempio:
+Facoltativamente, potete creare un H1 evidenziando il testo in segni uguali e creando un H2 evidenziando il testo con segni meno. Esempio:
 
     `This is an H1`
 
@@ -104,7 +104,7 @@ Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferiment
 
 ## Virgolette a blocchi {#block-quotes}
 
-Potete citare il testo aggiungendo il simbolo > prima del testo. Ad esempio:
+Potete citare il testo aggiungendo il simbolo > prima del testo. Esempio:
 
     `>This is block quotes`
 
@@ -112,7 +112,7 @@ Potete citare il testo aggiungendo il simbolo > prima del testo. Ad esempio:
 
     `>asdfahsdlfasdfj`
 
-È possibile inserire virgolette di blocco nidificate. Ad esempio:
+È possibile inserire virgolette di blocco nidificate. Esempio:
 
     `> This is the first level of quoting.`
 
@@ -128,7 +128,7 @@ Potete citare il testo aggiungendo il simbolo > prima del testo. Ad esempio:
 
 Potete creare elenchi ordinati e non ordinati.
 
-Per creare un elenco non ordinato, utilizzare &amp;ast; prima degli elementi dell&#39;elenco. Ad esempio:
+Per creare un elenco non ordinato, utilizzare &amp;ast; prima degli elementi dell&#39;elenco. Esempio:
 
     `* item in list`
 
@@ -136,7 +136,7 @@ Per creare un elenco non ordinato, utilizzare &amp;ast; prima degli elementi del
 
     `* item in list`
 
-Per creare un elenco ordinato, aggiungere i numeri, seguiti da un punto, prima di ogni elemento dell&#39;elenco. Ad esempio:
+Per creare un elenco ordinato, aggiungere i numeri, seguiti da un punto, prima di ogni elemento dell&#39;elenco. Esempio:
 
     `1. First item in list.`
 
@@ -166,13 +166,13 @@ Potete applicare il grassetto al testo nel modo seguente:
 
 Per indicare un&#39;estensione di codice, racchiudetela con virgolette (`). A differenza di un blocco di codice preformattato, un&#39;estensione di codice indica il codice all&#39;interno di un normale paragrafo.
 
-Ad esempio:
+Esempio:
 
     ``Use the `printf()` function.``
 
 ## Blocchi di codice {#code-blocks}
 
-I blocchi di codice vengono generalmente utilizzati per illustrare il codice sorgente. È possibile creare blocchi di codice applicando un rientro al codice utilizzando una scheda o almeno 4 spazi. Ad esempio:
+I blocchi di codice vengono generalmente utilizzati per illustrare il codice sorgente. È possibile creare blocchi di codice applicando un rientro al codice utilizzando una scheda o almeno 4 spazi. Esempio:
 
     `This is a normal paragraph.`
 
