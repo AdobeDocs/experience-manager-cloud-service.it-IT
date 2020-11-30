@@ -51,7 +51,7 @@ Questo è il flusso di base dell’assimilazione e dell’elaborazione delle ris
 Il flusso di assimilazione e di elaborazione sono concetti chiave dell’architettura dei microservizi di risorse per  Experience Manager.
 
 * **Accesso** binario diretto: Le risorse vengono trasportate (e caricate) nel Cloud Binary Store una volta configurato per gli ambienti  Experience Manager, e quindi AEM, i microservizi delle risorse, e infine i client possono accedervi direttamente per svolgere il proprio lavoro. Questo riduce al minimo il carico sulle reti e la duplicazione dei binari archiviati
-* **Elaborazione** esternalizzata: L&#39;elaborazione delle risorse viene effettuata al di fuori dell&#39;ambiente AEM e ne salva le risorse (CPU, memoria) per fornire le principali funzionalità di gestione delle risorse digitali e supportare il lavoro interattivo con il sistema per gli utenti finali
+* **Elaborazione** esternalizzata: L&#39;elaborazione delle risorse viene effettuata al di fuori dell&#39;ambiente AEM e ne salva le risorse (CPU, memoria) per fornire le funzionalità chiave di Gestione delle risorse digitali e supportare il lavoro interattivo con il sistema per gli utenti finali
 
 ## Caricamento delle risorse con accesso binario diretto {#asset-upload-with-direct-binary-access}
 
