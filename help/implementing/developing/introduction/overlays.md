@@ -1,24 +1,24 @@
 ---
-title: Sovrapposizioni per  Adobe Experience Manager come Cloud Service
+title: Sovrapposizioni per Adobe Experience Manager come Cloud Service
 description: AEM come Cloud Service utilizza il principio delle sovrapposizioni per estendere e personalizzare le console e altre funzionalità
 translation-type: tm+mt
 source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Overlays in AEM as a Cloud Service {#overlays-in-aem}
+# Sovrapposizioni in AEM as a Cloud Service {#overlays-in-aem}
 
- Adobe Experience Manager come Cloud Service utilizza il principio delle sovrapposizioni per estendere e personalizzare le console e altre funzionalità (ad esempio, l’authoring delle pagine).
+Adobe Experience Manager come Cloud Service utilizza il principio delle sovrapposizioni per estendere e personalizzare le console e altre funzionalità (ad esempio, l’authoring delle pagine).
 
 <!--
 Adobe Experience Manager as a Cloud Service uses the principle of overlays to allow you to extend and customize the [consoles](/help/sites-developing/customizing-consoles-touch.md) and other functionality (for example, [page authoring](/help/sites-developing/customizing-page-authoring-touch.md)).
 -->
 
-Sovrapposizione è un termine che può essere utilizzato in molti contesti. In questo contesto (estensione di AEM come Cloud Service) una sovrapposizione implica l’uso della funzionalità predefinita e l’imposizione di definizioni personalizzate su di essa (per personalizzare la funzionalità standard).
+Sovrapposizione è un termine che può essere utilizzato in molti contesti. In questo contesto (estendendo AEM come Cloud Service) una sovrapposizione significa prendere la funzionalità predefinita e imporre le proprie definizioni su di essa (per personalizzare la funzionalità standard).
 
 In un’istanza standard la funzionalità predefinita è mantenuta in `/libs` ed è consigliabile definire la sovrapposizione (personalizzazioni) sotto il `/apps` ramo (utilizzando un percorso [di](#search-paths) ricerca per risolvere le risorse).
 
@@ -49,13 +49,13 @@ Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio pe
 Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
 -->
 
-* Non ***è necessario *apportare modifiche al`/libs`ramo **Eventuali modifiche apportate potrebbero andare perdute, perché questo ramo può subire modifiche ogni volta che vengono applicati aggiornamenti all&#39;istanza.
+* Non ***è necessario* apportare modifiche al `/libs` ramo **Eventuali modifiche apportate potrebbero andare perdute, perché questo ramo può subire modifiche ogni volta che vengono applicati aggiornamenti all&#39;istanza.
 
-* Consentono di concentrare le modifiche in un&#39;unica posizione; facilitando il monitoraggio, la migrazione, il backup e/o il debug delle modifiche, a seconda delle necessità.
+* Consentono di concentrare le modifiche in un&#39;unica posizione; facilitando il monitoraggio, la migrazione, il backup e/o il debug delle modifiche, se necessario.
 
 ## Percorsi di ricerca {#search-paths}
 
-In AEM viene utilizzato un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca del `/apps` ramo e quindi del `/libs` ramo. Questo meccanismo significa che la sovrapposizione `/apps` (e le personalizzazioni ivi definite) avranno priorità.
+AEM utilizza un percorso di ricerca per trovare una risorsa, cercando (per impostazione predefinita) prima il `/apps` ramo e quindi il `/libs` ramo. Questo meccanismo significa che la sovrapposizione `/apps` (e le personalizzazioni ivi definite) avranno priorità.
 
 Per le sovrapposizioni, la risorsa consegnata è un insieme di risorse e proprietà recuperate, a seconda dei percorsi di ricerca definiti nella configurazione OSGi.
 
