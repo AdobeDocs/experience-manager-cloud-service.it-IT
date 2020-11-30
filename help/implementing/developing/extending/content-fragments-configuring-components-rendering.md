@@ -25,14 +25,16 @@ Si consiglia di utilizzare i componenti core.
 
 >[!CAUTION]
 >
->* **Se non sono necessari i servizi[](#definition-of-advanced-services-that-need-configuration)**avanzati descritti di seguito, puoi ignorare questa configurazione.
+>* **Se non sono necessari i servizi [](#definition-of-advanced-services-that-need-configuration)** avanzati descritti di seguito, puoi ignorare questa configurazione.
+   >
+   >
+* **Quando si estendono o si utilizzano i componenti forniti**, non è consigliabile modificare la configurazione OSGi.
+   >
+   >
+* **È possibile scrivere un componente da zero che utilizza solo l&#39;API dei frammenti di contenuto, senza servizi** avanzati. Tuttavia, in tal caso, sarà necessario sviluppare il componente in modo che gestisca l’elaborazione appropriata.
 >
->* **Quando si estendono o si utilizzano i componenti forniti**, non è consigliabile modificare la configurazione OSGi.
 >
->* **È possibile scrivere un componente da zero che utilizza solo l&#39;API dei frammenti di contenuto, senza servizi** avanzati. Tuttavia, in tal caso, sarà necessario sviluppare il componente in modo che gestisca l’elaborazione appropriata.
->
->
->Si consiglia pertanto di utilizzare i componenti core.
+Si consiglia pertanto di utilizzare i componenti core.
 
 ## Definizione di servizi avanzati che richiedono la configurazione {#definition-of-advanced-services-that-need-configuration}
 
@@ -57,7 +59,7 @@ La configurazione deve essere associata alla configurazione **del componente fra
 >
 >Per ulteriori informazioni, consultate Configurazione [](/help/implementing/deploying/overview.md#osgi-configuration) OSGi.
 
-Ad esempio:
+Esempio:
 
 ![Configurazione del componente frammento di contenuto di configurazione OSGi](assets/cf-component-configuration-osgi.png)
 
@@ -136,7 +138,7 @@ Per alcune funzionalità, il componente dovrà rispettare convenzioni predefinit
 
 ## Esempio {#example}
 
-Per un esempio, consultate quanto segue (su un’istanza AEM out-of-the-box):
+Ad esempio, vedete quanto segue (in un&#39;istanza AEM out-of-the-box):
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config
