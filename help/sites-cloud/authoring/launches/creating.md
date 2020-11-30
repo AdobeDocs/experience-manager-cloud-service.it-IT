@@ -36,6 +36,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
    * **Sites**:
       1. Seleziona **Crea** nella barra degli strumenti per aprire la casella di selezione.
       1. Da qui seleziona **Crea lancio** per aprire la procedura guidata.
+
    >[!NOTE]
    >
    >Nella console **Sites** è inoltre possibile utilizzare la [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) per scegliere una pagina prima di fare clic su **Crea**.
@@ -45,6 +46,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
 1. Nel passaggio **Seleziona origine** è necessario usare la funzione **Aggiungi pagine**. Puoi selezionare più pagine, specificando il percorso per ciascuna:
    * Passa alla posizione desiderata.
    * Selezionate le pagine di origine e confermate (segno di spunta).
+
    Ripeti in base alle esigenze.  
 
    ![Seleziona origine lancio](/help/sites-cloud/authoring/assets/launches-select-source.png)
@@ -60,6 +62,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
    * **Includi le pagine secondarie**:
 
       * Specifica se creare il lancio con o senza pagine figlie.  Per impostazione predefinita, le pagine secondarie sono incluse.
+
    Procedi con **Successivo**.
 
    ![Seleziona origine lancio](/help/sites-cloud/authoring/assets/launches-select-source-2.png)
@@ -71,14 +74,15 @@ Puoi creare un lancio da Sites o dalla console Lanci:
    * **con un nuovo modello per sostituire la pagina**: per ulteriori dettagli, vedi [Creare un lancio con un nuovo modello](#create-launch-with-new-template).
    * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Questa opzione consente di ottenere questo risultato rendendo il lancio una copia dal vivo. Per impostazione predefinita, questa opzione è selezionata.<!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
    * **Data lancio**: la data e l&#39;ora in cui la copia del lancio deve essere attivata (in base alla segnalazione **Produzione pronta**; consulta [Lanci: l&#39;ordine degli eventi](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
+
    ![Proprietà di avvio](/help/sites-cloud/authoring/assets/launches-properties.png)
 
 1. Tocca o fai clic su **Crea** per completare il processo e creare il nuovo lancio. La finestra di dialogo di conferma chiederà se desideri aprire il lancio immediatamente.
 
    Se torni alla console (con **Fine**), puoi visualizzare il lancio (e accedervi) in uno dei due modi seguenti:
 
-   * The [**Launches **console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * The [**References **in the** Sites **console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * The [**Launches** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * The [**References** in the **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### Creare un lancio con un nuovo modello {#create-launch-with-new-template}
 
