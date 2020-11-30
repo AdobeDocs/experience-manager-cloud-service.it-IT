@@ -40,7 +40,7 @@ Per ulteriori informazioni, consulta Modifica del contenuto per Live Copy. <!--S
 Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **Riferimenti** e confrontare la pagina del lancio con la relativa pagina di origine:
 
 1. Nella console **Sites**, [spostati sulla pagina di origine del lancio e selezionala](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Apri il pannello **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**e seleziona **Lanci**.
+1. Apri il pannello **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e seleziona **Lanci**.
 1. Seleziona il tuo specifico lancio, quindi **Confronta con origine**:
 
    ![Confronto tra avvio e origine](/help/sites-cloud/authoring/assets/launches-compare.png)
