@@ -1,5 +1,5 @@
 ---
-title: Configurazione di Dynamic Media
+title: Impostazione di contenuti multimediali dinamici
 description: Per impostare i contenuti multimediali dinamici, è necessario configurare i contenuti multimediali dinamici e gestire i predefiniti per immagini e visualizzatori
 translation-type: tm+mt
 source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Setting Up Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) consente di gestire le risorse distribuendo su richiesta risorse di marketing e merchandising visivi avanzate, ridimensionate automaticamente per essere utilizzate sul Web, sui dispositivi mobili e sui siti social. Utilizzando una serie di risorse primarie, Dynamic Media genera e offre diverse varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) consente di gestire le risorse distribuendo su richiesta risorse di marketing e merchandising visivi avanzate, ridimensionate automaticamente per essere utilizzate sui siti Web, mobili e social. Utilizzando una serie di risorse primarie, Dynamic Media genera e offre diverse varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 -->
 
-Se state amministrando Dynamic Media, i seguenti argomenti sono di interesse:
+Se amministrate contenuti multimediali dinamici, sono interessanti i seguenti argomenti:
 
 * [Configurazione di Dynamic Media](config-dm.md)
 * [Gestione dei predefiniti per immagini](managing-image-presets.md)
@@ -40,4 +40,4 @@ Vedi anche i seguenti argomenti:
 >
 >**Se state effettuando l&#39;aggiornamento:**
 >
->* Dopo aver avviato AEM, tutte le risorse caricate dispongono dell’attivazione automatica di Dynamic Media (a meno che non siano state esplicitamente disattivate dall’amministratore di sistema). Se utilizzi un’istanza aggiornata di AEM e non disponi di alcuna nuova versione di Dynamic Media, potresti dover rielaborare le risorse per renderle abilitate per Dynamic Media.
+>* Dopo aver AEM e aver eseguito il caricamento, tutte le risorse caricate dispongono di elementi Contenuti multimediali dinamici attivati automaticamente (a meno che non siano stati esplicitamente disattivati dall’amministratore di sistema). Se usate un’istanza aggiornata di AEM e non avete mai usato gli elementi multimediali dinamici, potrebbe essere necessario rielaborare le risorse per consentirne l’abilitazione.
