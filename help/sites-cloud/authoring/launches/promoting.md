@@ -39,6 +39,7 @@ Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (
 >
 >* [Promozione di un lancio nidificato](#promoting-a-nested-launch) in caso di più lanci nella struttura.
 >* [Lanci: ordine degli eventi](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) per ulteriori dettagli sulla promozione e la pubblicazione automatica.
+
 >
 
 
@@ -62,6 +63,7 @@ Puoi promuovere un lancio dalla console **Sites** o dalla console **Lanci**:
       * **Promuovi pagine modificate**
       * **Promuovi la pagina corrente**
       * **Promuovi la pagina corrente e le sottopagine**
+
       Ad esempio, quando selezioni solo la promozione delle pagine modificate:
 
       ![Promozione lancio](/help/sites-cloud/authoring/assets/launches-promote.png)
@@ -103,6 +105,7 @@ Dopo aver creato un lancio nidificato, puoi promuoverlo di nuovo su qualsiasi so
       * **Promuovi pagine modificate**
       * **Promuovi la pagina corrente**
       * **Promuovi la pagina corrente e le sottopagine**
+
    ![Promuovi impostazioni lancio](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
 1. Seleziona **Avanti**.
