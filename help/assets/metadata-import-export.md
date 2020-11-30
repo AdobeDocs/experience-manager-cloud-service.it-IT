@@ -1,23 +1,23 @@
 ---
-title: Importare ed esportare in massa i metadati delle risorse
+title: Importare ed esportare in blocco i metadati delle risorse
 description: Questo articolo descrive come importare ed esportare i metadati in blocco.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
 
-# Importare ed esportare in massa i metadati delle risorse {#import-and-export-asset-metadata-in-bulk}
+# Importare ed esportare in blocco i metadati delle risorse {#import-and-export-asset-metadata-in-bulk}
 
-Risorse AEM consente di importare i metadati delle risorse in blocco mediante un file CSV. Potete eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Potete anche assimilare i metadati delle risorse in massa da sistemi di terze parti in formato CSV.
+ AEM Assets consente di importare in massa i metadati delle risorse mediante un file CSV. Potete eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Potete anche assimilare i metadati delle risorse in massa da sistemi di terze parti in formato CSV.
 
 ## Importare i metadati {#import-metadata}
 
-L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse a causa dell’attività di reinserimento XMP se è selezionato il flag del flusso di lavoro. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo da non influenzare le prestazioni di altri utenti.
+L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse, a causa XMP’attività di reinserimento se è selezionato il flag del flusso di lavoro. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo che le prestazioni per altri utenti non vengano compromesse.
 
 >[!NOTE]
 >
