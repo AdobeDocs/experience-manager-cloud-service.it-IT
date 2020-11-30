@@ -36,7 +36,7 @@ Dopo la pubblicazione, potete includere le risorse video in una pagina Web come 
 
 ![Crea profilo di elaborazione per la transcodifica video in  Experience Manager](assets/video-processing-profile-for-mp4.png)
 
-*Figura: Profilo di elaborazione per la transcodifica video in[!DNL Experience Manager].*
+*Figura: Profilo di elaborazione per la transcodifica video in [!DNL Experience Manager].*
 
 Se specificate solo larghezza o altezza e lasciate vuoto l’altro campo, le rappresentazioni mantengono le proporzioni. Al momento, per la transcodifica è disponibile solo il codec h264.
 
