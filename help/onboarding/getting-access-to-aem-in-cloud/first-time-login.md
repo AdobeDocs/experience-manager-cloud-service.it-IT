@@ -45,7 +45,7 @@ La pagina di destinazione vi invita a creare il primo programma, come illustrato
 ## Aggiunta di un nuovo programma in un Cloud Service con programmi esistenti {#existing-program}
 
 
-1. Accedete al **Adobe[!UICONTROL Experience Cloud]** e visualizzerete l&#39;elenco di **Programmi e prodotti**.
+1. Accedete al **Adobe [!UICONTROL Experience Cloud]** e visualizzerete l&#39;elenco di **Programmi e prodotti**.
 
    ![](assets/first_timelogin1.png)
 
