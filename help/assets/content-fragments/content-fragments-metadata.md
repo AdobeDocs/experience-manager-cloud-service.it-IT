@@ -19,7 +19,7 @@ ht-degree: 12%
 1. Nella console **Risorse** , andate alla posizione del frammento di contenuto.
 2. Effettua una delle seguenti operazioni:
 
-   * Selezionate [**Visualizza proprietà&#x200B;**per aprire le finestre di dialogo](/help/assets/manage-digital-assets.md#editing-properties). Una volta aperto per la visualizzazione è possibile modificare.
+   * Selezionate [**Visualizza proprietà** per aprire le finestre di dialogo](/help/assets/manage-digital-assets.md#editing-properties). Una volta aperto per la visualizzazione è possibile modificare.
    * Aprite il frammento di [contenuto per Modifica](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor), quindi selezionate **Metadati** dal pannello laterale.
 
    ![metadati](assets/cfm-metadata-01.png)
