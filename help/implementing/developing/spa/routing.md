@@ -20,7 +20,7 @@ L&#39;app è proprietaria del routing e viene quindi implementata dagli sviluppa
 
 ## Architettura {#architecture}
 
-Per una descrizione dettagliata, fare riferimento alla sezione [PageModelManager](blueprint.md#pagemodelmanager) del documento SPA Blueprint.
+Per una descrizione dettagliata, fare riferimento alla sezione [PageModelManager](blueprint.md#pagemodelmanager) del documento Blueprint SPA.
 
 ## ModelRouter {#modelrouter}
 
@@ -28,7 +28,7 @@ L&#39;API `ModelRouter` - se attivata - racchiude le funzioni API HTML5 History 
 
 ## Routing manuale e automatico del modello {#manual-vs-automatic-model-routing}
 
-Il modello `ModelRouter` automatizza il recupero dei frammenti del modello. Ma come ogni attrezzo automatizzato è dotato di limitazioni. Se necessario, `ModelRouter` è possibile disabilitare o configurare in modo da ignorare i percorsi utilizzando le proprietà meta (vedere la sezione Meta Properties del documento componente [della pagina](page-component.md) SPA). Gli sviluppatori front-end possono quindi implementare un proprio livello di routing del modello richiedendo `PageModelManager` di caricare qualsiasi frammento del modello utilizzando la `getData()` funzione.
+Il modello `ModelRouter` automatizza il recupero dei frammenti del modello. Ma come ogni attrezzo automatizzato è dotato di limitazioni. Se necessario, `ModelRouter` è possibile disabilitare o configurare in modo da ignorare i percorsi utilizzando le proprietà meta (vedere la sezione Meta Properties del documento del componente [pagina](page-component.md) SPA). Gli sviluppatori front-end possono quindi implementare un proprio livello di routing del modello richiedendo `PageModelManager` di caricare qualsiasi frammento del modello utilizzando la `getData()` funzione.
 
 >[!CAUTION]
 >
@@ -36,19 +36,19 @@ Il modello `ModelRouter` automatizza il recupero dei frammenti del modello. Ma c
 
 ## Contratto di routing {#routing-contract}
 
-L’implementazione corrente si basa sul presupposto che il progetto SPA utilizzi l’API HTML5 History per il routing alle diverse pagine dell’applicazione.
+L&#39;implementazione corrente si basa sul presupposto che il progetto SPA utilizzi l&#39;API HTML5 History per il routing alle diverse pagine dell&#39;applicazione.
 
 ### Configurazione {#configuration}
 
 Supporta `ModelRouter` il concetto di indirizzamento dei modelli in quanto ascolta `pushState` e `replaceState` richiama i frammenti dei modelli di preacquisizione. Internamente attiva la modalità `PageModelManager` di caricamento del modello che corrisponde a un determinato URL e attiva un `cq-pagemodel-route-changed` evento che può essere ascoltato da altri moduli.
 
-Per impostazione predefinita, questo comportamento è attivato automaticamente. Per disattivarlo, l&#39;area di protezione deve eseguire il rendering della seguente proprietà meta:
+Per impostazione predefinita, questo comportamento è attivato automaticamente. Per disattivarlo, il SPA deve eseguire il rendering della seguente proprietà meta:
 
 ```
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-Tenere presente che ogni ciclo di lavorazione dell&#39;SPA deve corrispondere a una risorsa accessibile in AEM (ad esempio, &quot; `/content/mysite/mypage"`), dal momento che l&#39;utente `PageModelManager` cercherà automaticamente di caricare il modello di pagina corrispondente dopo aver selezionato il percorso. Anche se, se necessario, l&#39;SPA può anche definire un &quot;elenco Bloccati &quot; di rotte che deve essere ignorato dai `PageModelManager`:
+Tenere presente che ogni route del SPA deve corrispondere a una risorsa accessibile in AEM (ad es., &quot; `/content/mysite/mypage"`), poiché `PageModelManager` cercherà automaticamente di caricare il modello di pagina corrispondente dopo che la route è selezionata. Anche se necessario, il SPA può anche definire un &quot;elenco Bloccati &quot; di route che deve essere ignorato dai `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
