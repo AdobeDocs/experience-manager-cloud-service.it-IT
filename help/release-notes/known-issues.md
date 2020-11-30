@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ In futuro verranno attivate alcune funzionalità di Adobe Experience Manager Ass
    * La scheda Informazioni prodotto nell’interfaccia delle proprietà della risorsa non è compilata.
 * Funzionalità non attivate in questa fase a causa della dipendenza dall’integrazione di InDesign Server:
    * Modelli di risorse e cataloghi di risorse.
-   * Anteprima di più pagine di file Adobe InDesign.
+   * Anteprima multipagina di file Adobe InDesign.
 
 >[!MORELIKETHIS]
 >
