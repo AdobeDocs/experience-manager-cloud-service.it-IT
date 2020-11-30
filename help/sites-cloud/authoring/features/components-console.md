@@ -43,6 +43,7 @@ Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic s
       * Facendo clic sull’origine dell’icona passerai al relativo componente.
    * Visualizzare il **tipo di risorsa** e il **Super Type della risorsa** (se definito) per il componente.
       * Facendo clic su Super Type della risorsa passerai al relativo componente.
+
    >[!NOTE]
    >
    >Poiché `/apps` non è modificabile in fase di esecuzione, la console Componenti è disponibile in sola lettura.
