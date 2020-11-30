@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 workflow-type: tm+mt
 source-wordcount: '318'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 13%
 
 Utilizzate la funzione di codice reattivo quando desiderate condividere il codice per il servizio reattivo con il vostro sviluppatore Web. Potete copiare il codice reattivo (**[!UICONTROL RESS]**) negli Appunti per condividerlo con lo sviluppatore Web.
 
-Questa funzione è utile se il sito Web si trova su un sito Web WCM di terze parti. Tuttavia, se il sito Web si trova su AEM, un server immagini esterno esegue il rendering dell’immagine e la trasmette alla pagina Web.
+Questa funzione è utile se il sito Web si trova su un sito Web WCM di terze parti. Tuttavia, se il sito Web è AEM, un server immagini esterno esegue il rendering dell’immagine e la trasmette alla pagina Web.
 
 Consultate anche [Incorporamento del visualizzatore video in una pagina Web.](embed-code.md)
 
