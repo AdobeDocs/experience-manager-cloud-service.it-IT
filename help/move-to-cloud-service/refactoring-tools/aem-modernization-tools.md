@@ -5,31 +5,31 @@ translation-type: tm+mt
 source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
 # Strumenti di modernizzazione AEM {#aem-moderization-tools}
 
-La suite di strumenti AEM Modernization fornisce ai team di sviluppo AEM gli strumenti per convertire le funzioni AEM esistenti nelle attuali funzionalità supportate.
+La suite di strumenti di modernizzazione AEM fornisce ai team di sviluppo AEM gli strumenti per convertire le funzioni AEM legacy esistenti nelle attuali funzionalità supportate.
 
 
 ## Introduzione {#introduction}
 
 Gli strumenti di modernizzazione AEM consentono di convertire facilmente:
 
-* Modelli statici per modelli modificabili
-* Progettare configurazioni per i criteri
-* Componenti di base per componenti core
-* Interfaccia classica per interfaccia touch
+* Modelli statici in modelli modificabili
+* Configurazioni di progettazione in policy
+* Componenti di base in componenti core
+* Interfaccia classica in interfaccia touch
 
 >[!NOTE]
->AEM Modernize Tools è un&#39;iniziativa della community e non è supportato o garantito da Adobe.
+>Gli strumenti di modernizzazione AEM sono un’iniziativa della community e non sono supportati o garantiti da Adobe.
 
-Fate riferimento a **[Introduzione agli strumenti](https://opensource.adobe.com/aem-modernize-tools/)**di modernizzazione di AEM per ulteriori informazioni su pianificazione, configurazione e sviluppo per la suite di strumenti di modernizzazione di AEM.
+Per ulteriori informazioni su pianificazione, configurazione e sviluppo per la suite di strumenti di modernizzazione AEM, consulta l’**[introduzione agli strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/)**.
 
-## Installazione e implementazione di AEM Modernization Tool Suite {#installing-implementing}
+## Installazione e implementazione della suite di strumenti di modernizzazione AEM {#installing-implementing}
 
-Fare riferimento a Risorse **[Git: AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools)**per informazioni sull&#39;installazione e l&#39;implementazione.
+Per informazioni sull’installazione e l’implementazione, consulta la **[risorsa Git sulla suite di strumenti di modernizzazione AEM](https://github.com/adobe/aem-modernize-tools)**.
 
