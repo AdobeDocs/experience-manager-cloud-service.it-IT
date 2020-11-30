@@ -105,6 +105,7 @@ La modalità di selezione di una pagina dipende da quale vista si sta utilizzand
       * Su un dispositivo mobile: tocca e tieni premuto sulla scheda
       * Su un dispositivo desktop: utilizza l’[azione rapida](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) rappresentata dall’icona di spunta:
    * Sulla scheda compare un segno di spunta per indicare che è stata selezionata la pagina.
+
    ![Esempio di scheda](/help/sites-cloud/authoring/assets/card.png)
 
 ### Azioni rapide (solo vista a schede/desktop) {#quick-actions-card-view-desktop-only}
@@ -137,6 +138,7 @@ Per modificare la pagina:
       * Apri il pannello laterale.
       * Seleziona la scheda dei componenti (il [browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)).
       * Trascina il componente richiesto sulla pagina.
+
       Il pannello laterale può essere aperto (e chiuso) con:
 
       ![Pulsante di attivazione/disattivazione pannello laterale](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
@@ -174,6 +176,7 @@ Per modificare la pagina:
 
       * Seleziona **Anteprima** sulla barra degli strumenti.
    * Ritorna alla modalità di modifica (o seleziona un’altra modalità) utilizzando il selettore a discesa **Modifica**.
+
    >[!NOTE]
    >
    >Per spostarsi mediante i collegamenti presenti nel contenuto, è necessario utilizzare la [modalità Anteprima](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
@@ -189,6 +192,7 @@ Esistono due metodi (principali) per [modificare le proprietà di pagina](/help/
 
       * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa appropriata.
       * La barra degli strumenti, se la [pagina è stata selezionata](#selecting-your-page-for-further-action).
+
       ![Pulsante Proprietà](/help/sites-cloud/authoring/assets/properties.png)
 
    1. Verranno visualizzate le proprietà di pagina. È possibile apportare le modifiche desiderate e poi selezionare Salva per applicarle
@@ -212,6 +216,7 @@ Esistono due metodi principali per [pubblicare una pagina](/help/sites-cloud/aut
 
       * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa appropriata.
       * La barra degli strumenti, se la [pagina è stata selezionata](#selecting-your-page-for-further-action) (consente anche di accedere a [Pubblica più tardi](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)).
+
       ![Pulsante Pubblicazione rapida](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
@@ -237,6 +242,7 @@ Queste azioni possono essere attivate da:
 
    * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa richiesta.
    * La barra degli strumenti, se la [pagina è stata selezionata](#selecting-your-page-for-further-action).
+
    Quindi, a seconda dell’azione:
 
    * Copia:
@@ -282,7 +288,7 @@ Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
 
 Per creare una [versione](/help/sites-cloud/authoring/features/page-versions.md) di una pagina:
 
-1. Per aprire la barra laterale Timeline, seleziona l’icona **[Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**dalla barra degli strumenti (prima o dopo aver[selezionato la pagina](#selecting-your-page-for-further-action)):
+1. Per aprire la barra laterale Timeline, seleziona l’icona **[Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** dalla barra degli strumenti (prima o dopo aver [selezionato la pagina](#selecting-your-page-for-further-action)):
 
    ![Opzione per la vista Timeline](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -296,7 +302,7 @@ Per creare una [versione](/help/sites-cloud/authoring/features/page-versions.md)
 
 Lo stesso meccanismo di base viene utilizzato per il ripristino e/o il confronto tra diverse versioni di una pagina:
 
-1. Seleziona l’icona **[Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**dalla barra degli strumenti (prima o dopo aver[selezionato la pagina](#selecting-your-page-for-further-action)):
+1. Seleziona l’icona **[Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** dalla barra degli strumenti (prima o dopo aver [selezionato la pagina](#selecting-your-page-for-further-action)):
 
    ![Opzione per la vista Timeline](/help/sites-cloud/authoring/assets/timeline.png)
 
