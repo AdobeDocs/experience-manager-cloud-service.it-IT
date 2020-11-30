@@ -15,11 +15,11 @@ ht-degree: 15%
 
 In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse che utilizzano lo schema specifico. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e così via.
 
-È possibile utilizzare l&#39;editor Moduli schema metadati per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
+Potete usare l’editor Forms Schema metadati per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
 
 1. Per visualizzare la pagina delle proprietà di una risorsa, toccate o fate clic sull’icona **[!UICONTROL Visualizza proprietà]** da Azioni rapide nella sezione della risorsa nella vista a schede. In alternativa, seleziona la risorsa nell’interfaccia utente, quindi tocca o fai clic sull’icona **[!UICONTROL Proprietà]** nella barra degli strumenti.
 1. Modificate le varie proprietà di metadati nelle varie schede. Tuttavia, non potete modificare il tipo di risorsa nella pagina delle proprietà.
-Per modificare il tipo MIME di una risorsa, utilizzate un modulo schema di metadati personalizzato o modificate un modulo esistente. Per ulteriori informazioni, vedere [Modifica dei moduli](#edit-metadata-schema-forms) dello schema metadati. Se modificate lo schema di metadati per un determinato tipo MIME, il layout della pagina delle proprietà per le risorse con il tipo MIME corrente e tutti i sottotipi di risorse vengono modificati. Ad esempio, modificando uno schema jpeg in `default/image` viene modificato solo il layout dei metadati (proprietà risorsa) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modificate lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
+Per modificare il tipo MIME di una risorsa, utilizzate un modulo schema di metadati personalizzato o modificate un modulo esistente. Per ulteriori informazioni, consultate [Modifica dello schema di metadati Forms](#edit-metadata-schema-forms) . Se modificate lo schema di metadati per un determinato tipo MIME, il layout della pagina delle proprietà per le risorse con il tipo MIME corrente e tutti i sottotipi di risorse vengono modificati. Ad esempio, modificando uno schema jpeg in `default/image` viene modificato solo il layout dei metadati (proprietà risorsa) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modificate lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
 
 1. Per visualizzare un elenco di moduli/modelli, fai clic sul logo AEM, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**.
 AEM offre i seguenti modelli:
@@ -205,11 +205,11 @@ Per eliminare un modulo, selezionarlo e fare clic sull&#39;icona di eliminazione
 
 >[!NOTE]
 >
->In Risorse AEM non è possibile eliminare i moduli di schema di metadati out-of-the-box.
+>Non è possibile eliminare i moduli di schema di metadati out-of-the-box in  AEM Assets.
 
 ## Moduli schema per tipi MIME {#schema-forms-for-mime-types}
 
-Risorse AEM fornisce moduli predefiniti per vari tipi MIME. Tuttavia, è possibile aggiungere moduli personalizzati per risorse di vari tipi MIME.
+ AEM Assets fornisce moduli predefiniti per vari tipi MIME. Tuttavia, è possibile aggiungere moduli personalizzati per risorse di vari tipi MIME.
 
 ### Aggiunta di nuovi moduli per i tipi MIME {#adding-new-forms-for-mime-types}
 
@@ -226,7 +226,7 @@ In questo caso, create un nuovo nodo `/etc/dam/metadataeditor/mimetypemappings` 
 | `exposedmimetype` | Nome del modulo esistente da mappare | Stringa | `image/jpeg` |
 | `mimetypes` | Elenco di tipi MIME che utilizzano il modulo definito nell&#39; `exposedmimetype` attributo | Stringa | `image/png` |
 
-Risorse AEM esegue la mappatura dei seguenti tipi MIME e moduli di schema:
+ AEM Assets mappa i seguenti tipi MIME e moduli di schema:
 
 | Modulo schema | Tipi MIME |
 |---|---|
@@ -248,7 +248,7 @@ La funzione Schema metadati è disponibile solo per gli amministratori. Tuttavia
 
 ## Applicazione di metadati specifici per le cartelle {#applying-folder-specific-metadata}
 
-Risorse AEM consente di definire una variante di uno schema di metadati e applicarlo a una cartella specifica.
+ AEM Assets consente di definire una variante di uno schema di metadati e applicarlo a una cartella specifica.
 
 Ad esempio, potete definire una variante dello schema di metadati predefinito e applicarlo a una cartella. Quando applicate lo schema modificato, questo sostituisce lo schema di metadati predefinito originale applicato alle risorse all&#39;interno della cartella.
 
@@ -263,9 +263,9 @@ Se la cartella dispone di una sottocartella, le risorse all’interno della sott
 1. Fai clic sul logo AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Selezionare la casella di controllo prima di un modulo, ad esempio il modulo di metadati predefinito, quindi fare clic o toccare l&#39;icona di copia e salvarlo come modulo personalizzato. Specificare un nome personalizzato per il modulo, ad esempio `my_default`. In alternativa, è possibile creare un modulo personalizzato.
 
-1. Nella pagina Moduli **[!UICONTROL schema]** metadati selezionare il `my_default` modulo, quindi fare clic sull&#39;icona **[!UICONTROL Modifica]** .
+1. Nella pagina Forms **[!UICONTROL Schema]** metadati selezionare il `my_default` modulo, quindi fare clic sull&#39;icona **[!UICONTROL Modifica]** .
 1. Nella pagina Editor **[!UICONTROL schema]** metadati, aggiungere un campo di testo al modulo schema. Ad esempio, aggiungere un campo con l&#39;etichetta **[!UICONTROL Categoria]**.
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Moduli schema **[!UICONTROL metadati]** .
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Forms **[!UICONTROL Schema]** metadati.
 1. Toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
 1. Selezionare la cartella in cui applicare lo schema modificato, quindi fare clic o toccare **[!UICONTROL Applica]**.
 1. Se alla cartella è applicato un altro schema di metadati, viene visualizzato un messaggio di avviso che informa che lo schema di metadati esistente sta per essere sovrascritto. Fate clic su **Sovrascrivi**.
@@ -283,11 +283,11 @@ Potete definire i campi obbligatori a livello di cartella, che vengono applicati
 1. Fai clic sul logo AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Salvare il modulo di metadati predefinito come modulo personalizzato. Ad esempio, salvatelo con nome `my_default`.
 1. Modificare il modulo personalizzato. Aggiungere un campo obbligatorio. Ad esempio, aggiungere un campo **[!UICONTROL Categoria]** e rendere il campo obbligatorio.
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Moduli schema **[!UICONTROL metadati]** . Selezionate il modulo, quindi toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Forms **[!UICONTROL Schema]** metadati. Selezionate il modulo, quindi toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
 1. Individuate la cartella e caricate alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista Scheda della risorsa viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
 1. (Facoltativo) Accesso `https://[server]:[port]/system/console/components/`. Configura e abilita `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` il componente disabilitato per impostazione predefinita. Impostate la frequenza con cui AEM verifica la validità dei metadati sulle risorse.
 
-   Questa configurazione aggiunge una proprietà `hasValidMetadata` alle `jcr:content` risorse. Con questa proprietà, AEM può filtrare i risultati in una ricerca.
+   Questa configurazione aggiunge una proprietà `hasValidMetadata` alle `jcr:content` risorse. Utilizzando questa proprietà, AEM filtrare i risultati in una ricerca.
 
    >[!NOTE]
    >
