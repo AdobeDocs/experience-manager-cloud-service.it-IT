@@ -1,9 +1,9 @@
 ---
 title: AEM - Domande frequenti sull’integrazione con Magento tramite Commerce Integration Framework
 description: AEM - Domande frequenti sull’integrazione con Magento tramite Commerce Integration Framework
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: cafe8825fe34f158c74b94b95b7252394de26e4d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 100%
 
