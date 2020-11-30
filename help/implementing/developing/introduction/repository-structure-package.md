@@ -1,6 +1,6 @@
 ---
 title: 'Pacchetto per la struttura dell’archivio dei progetti AEM  '
-description: ' Adobe Experience Manager come progetto Cloud Service Maven richiede una definizione di sottopacchetto Struttura archivio il cui unico scopo è definire le radici del repository JCR in cui i sottopacchetti Codice del progetto vengono distribuiti.'
+description: Adobe Experience Manager come progetto di Cloud Service Maven richiede una definizione di sottopacchetto Struttura archivio il cui unico scopo è definire le radici del repository JCR in cui vengono distribuiti i sottopacchetti Codice del progetto.
 translation-type: tm+mt
 source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 9%
 
 # Pacchetto per la struttura dell’archivio dei progetti AEM
 
-I progetti Maven per  Adobe Experience Manager come Cloud Service richiedono una definizione di sottopacchetto della struttura del repository il cui unico scopo è quello di definire le radici del repository JCR in cui vengono distribuiti i sottopacchetti di codice del progetto. In questo modo, l&#39;installazione dei pacchetti nel Experience Manager  come Cloud Service viene ordinata automaticamente dalle dipendenze delle risorse JCR. Le dipendenze mancanti potrebbero causare l&#39;installazione di sottostrutture in anticipo rispetto alle strutture padre e, di conseguenza, la rimozione imprevista, interrompendo la distribuzione.
+I progetti Maven per Adobe Experience Manager come Cloud Service richiedono una definizione di sottopacchetto della struttura del repository il cui unico scopo è definire le radici del repository JCR in cui vengono distribuiti i sottopacchetti di codice del progetto. In questo modo, l&#39;installazione dei pacchetti nel Experience Manager  come Cloud Service viene ordinata automaticamente dalle dipendenze delle risorse JCR. Le dipendenze mancanti potrebbero causare l&#39;installazione di sottostrutture in anticipo rispetto alle strutture padre e, di conseguenza, la rimozione imprevista, interrompendo la distribuzione.
 
 Se il pacchetto di codice viene distribuito in una posizione **non inclusa** nel pacchetto stesso, tutte le risorse precedenti (risorse JCR più vicine alla radice JCR) devono essere enumerate nel pacchetto della struttura dell’archivio per stabilire tali dipendenze.
 
@@ -158,7 +158,7 @@ Nei pacchetti `ui.apps/pom.xml`e altri pacchetti `pom.xml`di codice, aggiungete 
 
 Un caso d’uso meno comune e più complesso supporta la distribuzione di più pacchetti di codice che si installano nelle stesse aree dell’archivio JCR.
 
-Ad esempio:
+Esempio:
 
 + Il pacchetto di codice A si distribuisce in `/apps/a`
 + Il pacchetto di codice B si distribuisce in `/apps/a/b`
