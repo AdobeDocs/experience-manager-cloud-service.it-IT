@@ -1,5 +1,5 @@
 ---
-title: Incorporazione di un visualizzatore video o immagine per contenuti multimediali dinamici in una pagina Web
+title: Incorporamento di un visualizzatore video o immagine per contenuti multimediali dinamici in una pagina Web
 description: Scopri come incorporare video o immagini Dynamic Media in una pagina Web
 translation-type: tm+mt
 source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
@@ -14,7 +14,7 @@ ht-degree: 22%
 
 Utilizza la funzione **[!UICONTROL Incorpora codice]** per riprodurre il video o visualizzare una risorsa incorporata in una pagina web. Puoi copiare il codice da incorporare negli Appunti, per poi incollarlo nelle pagine web. La modifica del codice non è consentita nella finestra di dialogo **[!UICONTROL Incorpora codice]**.
 
-Potete incorporare gli URL solo se _non_ utilizzate AEM come WCM. Se utilizzate AEM come WCM, [potete aggiungere le risorse direttamente sulla pagina.](adding-dynamic-media-assets-to-pages.md)
+Gli URL vengono incorporati solo se _non_ vengono utilizzati AEM come WCM. Se usate AEM come WCM, [potete aggiungere le risorse direttamente sulla pagina.](adding-dynamic-media-assets-to-pages.md)
 
 See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
