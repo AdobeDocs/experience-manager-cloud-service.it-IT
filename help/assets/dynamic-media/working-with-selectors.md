@@ -82,7 +82,7 @@ Utilizzate il selettore del sito per scegliere una pagina Web quando desiderate 
 
 1. In modalità **[!UICONTROL Anteprima]** , toccando il punto di attivazione o la mappa immagine, passate alla pagina del sito AEM specificata.
 
-## Selezione delle risorse in Contenuti multimediali dinamici {#selecting-assets}
+## Selecting assets in Dynamic Media {#selecting-assets}
 
 Usate questo selettore per scegliere le immagini da usare in un banner carosello, un video interattivo, set di immagini, set di file multimediali diversi e set 360 gradi. Nel video interattivo, il selettore delle risorse è disponibile quando toccate **[!UICONTROL Seleziona risorse]** nella scheda **[!UICONTROL Contenuto]** . In Set carosello, il selettore delle risorse è disponibile quando create una nuova diapositiva. In Set immagini, Set di file multimediali diversi e Set 360 gradi, il selettore delle risorse è disponibile rispettivamente per creare un nuovo set di immagini, un set di file multimediali diversi o un set 360 gradi.
 
