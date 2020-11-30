@@ -19,7 +19,7 @@ Se siete un amministratore e avete l’esigenza di gestire, creare, ordinare ed 
 Consultate anche Predefiniti per visualizzatori [di pubblicazione](managing-viewer-presets.md#publishing-viewer-presets).
 
 A seconda della modalità di pubblicazione in uso, potrebbe non essere necessario pubblicare i predefiniti per visualizzatori.
-Per eventuali problemi con i predefiniti per visualizzatori, consultate [Risoluzione di problemi di contenuti multimediali dinamici - Scene7](troubleshoot-dm.md#viewers).
+Per eventuali problemi con i predefiniti per visualizzatori, consultate [Risoluzione di problemi relativi a contenuti multimediali dinamici - Scene7](troubleshoot-dm.md#viewers).
 
 ## Applicazione di un predefinito per visualizzatori per contenuti multimediali dinamici a una risorsa {#applying-a-viewer-preset-to-an-asset}
 
