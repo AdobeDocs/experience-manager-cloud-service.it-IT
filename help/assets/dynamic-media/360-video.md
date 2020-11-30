@@ -20,7 +20,7 @@ Questa sezione descrive come utilizzare il visualizzatore video 360/VR per ripro
 
 L&#39;audio spaziale non è attualmente supportato; se l&#39;audio è mixato in stereo, il bilanciamento (L/R) non cambia quando il cliente cambia l&#39;angolo di visione della telecamera.
 
-Consultate [Utilizzo di video Dynamic Media 360 e Miniatura video personalizzata con Risorse](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html)AEM.
+Consultate [Utilizzo di video Dynamic Media 360 e Miniatura video personalizzata con  AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
 
 See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -30,9 +30,9 @@ Toccate [Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video36
 
 ![360 Video campione](assets/6_5_360videoiss_simplified.png)*Fotogramma video da Space Station 360*
 
-## Video 360/VR e Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
+## Video e Adobe Premiere Pro 360/VR {#vr-video-and-adobe-premiere-pro}
 
-Potete utilizzare Adobe Premiere Pro per visualizzare e modificare il metraggio 360/VR. Ad esempio, potete inserire correttamente logo e testo in una scena e applicare effetti e transizioni progettati specificamente per i supporti equirettangolari.
+Potete utilizzare  Adobe Adobe Premiere Pro per visualizzare e modificare le riprese 360/VR. Ad esempio, potete inserire correttamente logo e testo in una scena e applicare effetti e transizioni progettati specificamente per i supporti equirettangolari.
 
 Consultate [Modificare video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)360/VR.
 
@@ -54,7 +54,7 @@ Consultate [Modificare video](https://helpx.adobe.com/premiere-pro/how-to/edit-3
    * È consigliabile che il contenuto video originale a 360 abbia una delle seguenti risoluzioni:
 
       * 1080p - 1920 x 1080, noto come risoluzione Full HD o FHD oppure
-      * 2160p - 3840 x 2160, noto come risoluzione 4K, UHD o Ultra HD. Questa grande risoluzione del display si trova spesso sui televisori e monitor per computer premium. La risoluzione 2160p è spesso denominata &quot;4K&quot; perché la larghezza è vicina a 4000 pixel. In altre parole, offre quattro volte i pixel di 1080p.
+      * 2160p - 3840 x 2160, noto come risoluzione 4K, UHD o HD Ultra. Questa grande risoluzione del display si trova spesso sui televisori e monitor per computer premium. La risoluzione 2160p è spesso denominata &quot;4K&quot; perché la larghezza è vicina a 4000 pixel. In altre parole, offre quattro volte i pixel di 1080p.
    * [Create un profilo](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) video adattivo personalizzato con rappresentazioni di qualità superiore. Ad esempio, potete creare un profilo video adattivo che contenga le seguenti tre impostazioni:
 
       * width=auto; height=720; bitrate=2500 kbps
@@ -96,7 +96,7 @@ Consultate anche [Modifica dei predefiniti](/help/assets/dynamic-media/managing-
 Quando siete soddisfatti del video 360, potete pubblicarlo.
 
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine AEM Sites.
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
 See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **Per visualizzare in anteprima 360 video**
@@ -132,5 +132,5 @@ Per poter utilizzare il video 360, è necessario pubblicarlo. Quando si pubblica
 
 Consultate [Pubblicazione di risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) multimediali dinamiche per informazioni dettagliate sulla pubblicazione di video 360.
 See also [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine AEM Sites.
+See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
 See also [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
