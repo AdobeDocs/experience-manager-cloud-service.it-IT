@@ -1,6 +1,6 @@
 ---
 title: Organizzare le risorse digitali
-description: Organizzate le risorse digitali utilizzando i vari metodi disponibili in  risorse di Adobe Experience Manager.
+description: Organizza le risorse digitali utilizzando i vari metodi disponibili in Risorse Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Tutte le risorse digitali, i metadati e il contenuto di documenti Microsoft Office e PDF vengono estratti e resi ricercabili. La ricerca consente un filtraggio sofisticato delle risorse e rispetta pienamente le autorizzazioni corrette. I metadati sono descritti dettagliatamente in Metadati in Digital Asset Management.
 
-I AEM Assets supportano diversi metodi di organizzazione del contenuto. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag . Gli utenti possono modificare i tag nell’Editor risorse DAM in cui vengono visualizzate le risorse secondarie, le rappresentazioni e i metadati.
+ AEM Assets supporta diversi metodi per organizzare i contenuti. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag . Gli utenti possono modificare i tag nell’Editor risorse DAM in cui vengono visualizzate le risorse secondarie, le rappresentazioni e i metadati.
 
 ## Creare le cartelle {#create-folders}
 
-Quando organizzate una raccolta di risorse, ad esempio tutte le immagini *Natura* , potete creare delle cartelle per mantenerle unite. Potete usare le cartelle per classificare e organizzare le risorse. I AEM Assets non richiedono l’organizzazione delle risorse in cartelle per migliorare il funzionamento.
+Quando organizzate una raccolta di risorse, ad esempio tutte le immagini *Natura* , potete creare delle cartelle per mantenerle unite. Potete usare le cartelle per classificare e organizzare le risorse.  AEM Assets non richiede l’organizzazione di risorse in cartelle per migliorare il funzionamento.
 
 >[!NOTE]
 >
