@@ -16,7 +16,7 @@ Per gestire i contenuti di destinazione, come le attività, le esperienze e le o
 
 >[!NOTE]
 >
->Utilizzare il supporto per più siti per il contenuto di destinazione è una funzionalità avanzata. Per utilizzare questa funzione, è necessario avere familiarità con Multi Site Manager e con l&#39;integrazione di Adobe Target con AEM.
+>Utilizzare il supporto per più siti per il contenuto di destinazione è una funzionalità avanzata. Per utilizzare questa funzione, è necessario avere familiarità con Multi Site Manager e con l&#39;integrazione Adobe Target  con AEM.
 <!--
 >Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-administering/msm.md) and the [Adobe Target integration](/help/sites-administering/target.md) with AEM.
 -->
@@ -65,13 +65,13 @@ Il contenuto di destinazione è riprodotto ciclicamente nelle cosiddette aree, c
 
 Con il supporto multisito per contenuti di destinazione è possibile, ad esempio, definire due (o più) siti con **un** marchio con una delle seguenti caratteristiche:
 
-* Un insieme completamente *distinto* di contenuti di destinazione: la modifica dei contenuti di destinazione in uno non influisce sull’altro. I siti che rimandano alle aree distinte sono in grado di leggere e scrivere sulla propria area configurata. Ad esempio:
+* Un insieme completamente *distinto* di contenuti di destinazione: la modifica dei contenuti di destinazione in uno non influisce sull’altro. I siti che rimandano alle aree distinte sono in grado di leggere e scrivere sulla propria area configurata. Esempio:
    * Il sito A è collegato all’area X
    * Il sito B è collegato all’Area Y
-* Un insieme *comune* di contenuti di destinazione: la modifica in uno ha un impatto diretto su entrambi i siti; puoi eseguire questa operazione con due siti che fanno riferimento alla stessa area. I siti che si collegano alla stessa area condividono il contenuto di destinazione all’interno di quest’area. Ad esempio:
+* Un insieme *comune* di contenuti di destinazione: la modifica in uno ha un impatto diretto su entrambi i siti; puoi eseguire questa operazione con due siti che fanno riferimento alla stessa area. I siti che si collegano alla stessa area condividono il contenuto di destinazione all’interno di quest’area. Esempio:
    * Il sito A è collegato all’area X
    * Il sito B è collegato all’Area X
-* A distinct set of targeted content *inherited* from another site via MSM - Content can be unidirectionally rolled out from master to live copy. Ad esempio:
+* A distinct set of targeted content *inherited* from another site via MSM - Content can be unidirectionally rolled out from master to live copy. Esempio:
    * Il sito A è collegato all’area X
    * Il sito B è collegato all’Area Y (che è una Live Copy dell’Area X).
 
