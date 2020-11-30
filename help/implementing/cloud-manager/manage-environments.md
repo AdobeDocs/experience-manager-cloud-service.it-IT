@@ -54,7 +54,7 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Durante la creazione di un ambiente, nell&#39;I/O  Adobe vengono create una o più *integrazioni* . Questi sono visibili agli utenti del cliente che hanno accesso alla console I/O del Adobe  e non devono essere eliminati. Questo viene negato nella descrizione nella console I/O del Adobe .
+   >Durante la creazione di un ambiente, in  Adobe I/O vengono create una o più *integrazioni* . Questi sono visibili agli utenti del cliente che hanno accesso alla  Adobe I/O Console e non devono essere eliminati. Questo viene negato nella descrizione nella  Adobe I/O Console.
 
    ![](assets/add-environment-image1.png)
 
