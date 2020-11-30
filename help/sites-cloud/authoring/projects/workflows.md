@@ -44,7 +44,7 @@ I passaggi per avviare e completare i flussi di lavoro sono sempre gli stessi, i
 
 Puoi avviare un flusso di lavoro direttamente da Progetti (eccetto Crea copia per lingua DAM e Crea e traduci copia DAM). Le informazioni relative a tutte le operazioni in sospeso di un progetto sono elencate nella sezione **Attività**. Le notifiche per le attività che devono essere completate appaiono accanto all&#39;icona utente.
 
-Per ulteriori informazioni sull’utilizzo dei flussi di lavoro in AEM, consulta:
+Per ulteriori informazioni sull&#39;utilizzo dei flussi di lavoro in AEM, consulta quanto segue:
 
 * [Partecipare ai flussi di lavoro](/help/sites-cloud/authoring/workflows/participating.md)
 * [Applicazione dei flussi di lavoro alle pagine](/help/sites-cloud/authoring/workflows/applying.md)
