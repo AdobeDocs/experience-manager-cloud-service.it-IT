@@ -1,6 +1,6 @@
 ---
-title: Introduzione e introduzione SPA
-description: Questo articolo introduce i concetti di SPA e illustra come utilizzare un'applicazione SPA di base per l'authoring, mostrando il suo rapporto con l'Editor SPA AEM sottostante.
+title: Introduzione SPA e Procedura dettagliata
+description: Questo articolo introduce i concetti di SPA e illustra come utilizzare un'applicazione SPA di base per la creazione, mostrando come si collega all'Editor SPA sottostante.
 translation-type: tm+mt
 source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
@@ -10,43 +10,43 @@ ht-degree: 0%
 ---
 
 
-# Introduzione e introduzione SPA {#spa-introduction}
+# Introduzione SPA e Procedura dettagliata {#spa-introduction}
 
-Le applicazioni SPA (Single Page Applications) possono offrire esperienze coinvolgenti agli utenti di siti Web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando i framework SPA e gli autori desiderano modificare i contenuti all&#39;interno AEM per un sito creato utilizzando tali framework.
+Le applicazioni a pagina singola (SPA) possono offrire esperienze coinvolgenti agli utenti di siti Web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando SPA framework e gli autori desiderano modificare i contenuti all&#39;interno di AEM per un sito creato utilizzando tali framework.
 
-L&#39;editor SPA offre una soluzione completa per supportare gli SPA in AEM. Questo articolo descrive l’utilizzo di un’applicazione SPA di base per l’authoring e mostra il rapporto con l’Editor SPA AEM sottostante.
+SPA Editor offre una soluzione completa per SPA di supporto in AEM. Questo articolo descrive l’utilizzo di un’applicazione SPA di base per l’authoring e mostra come si collega all’editor SPA AEM sottostante.
 
 ## Introduzione {#introduction}
 
 ### Articolo Obiettivo {#article-objective}
 
-Questo articolo introduce i concetti di base degli SPA prima di guidare il lettore attraverso una panoramica dettagliata dell&#39;editor SPA, utilizzando una semplice applicazione SPA per dimostrare l&#39;editing di base dei contenuti. Viene quindi descritto come creare la pagina e come l&#39;applicazione SPA si collega e interagisce con l&#39;editor AEM SPA.
+In questo articolo vengono introdotti i concetti di base di SPA prima di guidare il lettore attraverso una procedura dettagliata dell&#39;editor SPA, utilizzando una semplice applicazione SPA per illustrare la modifica di base dei contenuti. Viene quindi descritto come creare la pagina e come l’applicazione SPA si collega e interagisce con l’editor SPA AEM.
 
-L&#39;obiettivo di questa introduzione e di questa panoramica è dimostrare a uno sviluppatore AEM perché le SPA sono rilevanti, come funzionano in generale, come una SPA viene gestita dall&#39;editor AEM SPA e come è diversa da un&#39;applicazione AEM standard.
+L&#39;obiettivo di questa introduzione e di questa procedura dettagliata è dimostrare a uno sviluppatore AEM perché SPA rilevanti, come funzionano in generale, come un SPA viene gestito dall&#39;Editor SPA AEM e come è diverso da un&#39;applicazione AEM standard.
 
 La procedura dettagliata si basa sulla funzionalità standard AEM e sull&#39;app di esempio WKND SPA Project. Per seguire, [scaricate e installate l&#39;app di esempio WKND SPA Project da GitHub qui.](https://github.com/adobe/aem-guides-wknd-spa)
 
 >[!CAUTION]
 >
->Questo documento utilizza l&#39;app [WKND SPA Project](https://github.com/adobe/aem-guides-wknd-spa) solo a scopo dimostrativo. Non deve essere utilizzato per nessun progetto.
+>Questo documento utilizza l’app [](https://github.com/adobe/aem-guides-wknd-spa) WKND SPA Project solo a scopo dimostrativo. Non deve essere utilizzato per nessun progetto.
 
 >[!TIP]
 >
->Qualsiasi progetto AEM dovrebbe sfruttare il [AEM Project Archetype](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA utilizzando React o Angular e sfrutta l’SDK SPA.
+>Qualsiasi progetto AEM dovrebbe sfruttare il [AEM Project Archetype](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta SPA progetti utilizzando React o Angular e sfrutta l’SDK SPA.
 
-### Che cos&#39;è un SPA? {#what-is-a-spa}
+### Cos&#39;è un SPA? {#what-is-a-spa}
 
-Un&#39;applicazione a pagina singola (SPA) differisce da una pagina tradizionale in quanto viene sottoposta a rendering sul lato client ed è principalmente guidata da Javascript, basandosi sulle chiamate Ajax per caricare i dati e aggiornare dinamicamente la pagina. La maggior parte o tutto il contenuto viene recuperato una volta in un singolo caricamento di pagina con risorse aggiuntive caricate in modo asincrono in base alle esigenze, in base all&#39;interazione dell&#39;utente con la pagina.
+Un’applicazione a pagina singola (SPA) è diversa da una pagina tradizionale in quanto viene sottoposta a rendering sul lato client ed è principalmente guidata da Javascript, basandosi sulle chiamate Ajax per caricare i dati e aggiornare dinamicamente la pagina. La maggior parte o tutto il contenuto viene recuperato una volta in un singolo caricamento di pagina con risorse aggiuntive caricate in modo asincrono in base alle esigenze, in base all&#39;interazione dell&#39;utente con la pagina.
 
 Questo riduce la necessità di aggiornare le pagine e offre all&#39;utente un&#39;esperienza semplice, rapida e più simile a un&#39;esperienza app nativa.
 
-AEM SPA Editor consente agli sviluppatori front-end di creare SPA che possono essere integrati in un sito AEM, consentendo agli autori di modificare i contenuti SPA con la stessa facilità con cui si trovano altri contenuti AEM.
+AEM SPA Editor consente agli sviluppatori front-end di creare SPA che possono essere integrati in un sito AEM, consentendo agli autori dei contenuti di modificare i contenuti SPA con la stessa facilità con cui si trovano altri contenuti AEM.
 
-### Perché una SPA? {#why-a-spa}
+### Perché un SPA? {#why-a-spa}
 
-Grazie a un&#39;applicazione nativa più veloce, fluida e semplice, l&#39;SPA diventa un&#39;esperienza molto interessante non solo per il visitatore della pagina Web, ma anche per gli esperti di marketing e gli sviluppatori, a causa della natura del funzionamento degli SPA.
+Essendo più veloce, fluido e simile a un&#39;applicazione nativa, un SPA diventa un&#39;esperienza molto interessante non solo per il visitatore della pagina Web, ma anche per gli esperti di marketing e gli sviluppatori a causa della natura del funzionamento SPA.
 
-![Vantaggi SPA](assets/spa-benefits.png)
+![SPA](assets/spa-benefits.png)
 
 #### Visitatori {#visitors}
 
@@ -63,33 +63,33 @@ Grazie a un&#39;applicazione nativa più veloce, fluida e semplice, l&#39;SPA di
 * Gli sviluppatori desiderano una netta separazione tra contenuti e presentazioni.
 * La separazione pulita rende il sistema più estensibile e consente uno sviluppo front-end indipendente.
 
-### Come funziona una SPA? {#how-does-a-spa-work}
+### Come funziona un SPA? {#how-does-a-spa-work}
 
-L&#39;idea principale alla base di uno SPA è che le chiamate e la dipendenza da un server vengono ridotte al fine di minimizzare i ritardi causati dalla latenza del server, in modo che l&#39;SPA si avvicini alla reattività di un&#39;applicazione nativa.
+L&#39;idea principale alla base di un SPA è che le chiamate a un server e le dipendenze vengono ridotte al fine di ridurre i ritardi causati dalla latenza del server, in modo che il SPA si avvicini alla reattività di un&#39;applicazione nativa.
 
 In una pagina Web sequenziale tradizionale, vengono caricati solo i dati necessari per la pagina immediata. Questo significa che quando il visitatore si sposta in un’altra pagina, il server viene chiamato per le risorse aggiuntive. Potrebbero essere necessarie chiamate aggiuntive quando il visitatore interagisce con gli elementi sulla pagina. Queste chiamate multiple possono dare un senso di ritardo o ritardo, in quanto la pagina deve essere in grado di soddisfare le richieste del visitatore.
 
 ![Esperienze sequenziali e fluide](assets/spa-sequential-vs-fluid.png)
 
-Per un&#39;esperienza più fluida, che si avvicina alle aspettative di un visitatore dalle app native per dispositivi mobili, un&#39;app SPA carica tutti i dati necessari per il visitatore al primo caricamento. Anche se inizialmente l&#39;operazione potrebbe richiedere un po&#39; più di tempo, elimina la necessità di ulteriori chiamate server.
+Per un&#39;esperienza più fluida, che si avvicina alle aspettative di un visitatore dalle app native per dispositivi mobili, un SPA carica tutti i dati necessari per il visitatore al primo caricamento. Anche se inizialmente l&#39;operazione potrebbe richiedere un po&#39; più di tempo, elimina la necessità di ulteriori chiamate server.
 
 Rendering sul lato client, gli elementi di pagina reagiscono più rapidamente e le interazioni con la pagina da parte del visitatore sono immediate. Eventuali dati aggiuntivi che potrebbero essere necessari vengono denominati in modo asincrono per massimizzare la velocità della pagina.
 
 >[!TIP]
 >
->Per informazioni tecniche sulle modalità di funzionamento delle ZPS in AEM, consultate gli articoli:
->* [Guida introduttiva alle app SPA in AEM Utilizzo di React](getting-started-react.md)
->* [Guida introduttiva alle app SPA in AEM Utilizzo di Angular](getting-started-angular.md)
+>Per informazioni tecniche sul funzionamento SPA in AEM, consultate gli articoli:
+>* [Guida introduttiva alle SPA in AEM Utilizzo di React](getting-started-react.md)
+>* [Guida introduttiva alle SPA in AEM Utilizzo di Angular](getting-started-angular.md)
 
 >
 >
-Per un&#39;occhiata più dettagliata alla progettazione, all&#39;architettura e al flusso di lavoro tecnico dell&#39;editor SPA, consultate l&#39;articolo:
->* [Panoramica](editor-overview.md)dell&#39;editor SPA.
+Per informazioni più dettagliate sulla progettazione, l’architettura e il flusso di lavoro tecnico dell’editor SPA, consultate l’articolo:
+>* [Panoramica](editor-overview.md)dell’editor SPA.
 
 
-## Esperienza di editing dei contenuti con SPA {#content-editing-experience-with-spa}
+## Esperienza di modifica dei contenuti con SPA {#content-editing-experience-with-spa}
 
-Quando si crea un&#39;app SPA per sfruttare l&#39;editor AEM SPA, l&#39;autore del contenuto non nota alcuna differenza quando si modifica e si crea contenuto. È disponibile una funzionalità AEM comune e non sono necessarie modifiche al flusso di lavoro dell’autore.
+Quando un SPA è creato per sfruttare l&#39;editor SPA AEM, l&#39;autore del contenuto non nota alcuna differenza quando si modifica e si crea contenuto. È disponibile una funzionalità AEM comune e non sono necessarie modifiche al flusso di lavoro dell’autore.
 
 1. Modificate l&#39;app WKND SPA Project in AEM.
 
@@ -117,13 +117,13 @@ Sono supportati ulteriori strumenti di authoring, come il trascinamento di compo
 
 >[!NOTE]
 >
->L’editor SPA non modifica il DOM dell’applicazione. La stessa SPA è responsabile del DOM.
+>L&#39;Editor SPA non modifica il DOM dell&#39;applicazione. Il SPA stesso è responsabile del DOM.
 >
->Per vedere come funziona, continuate con la sezione successiva di questo articolo App [SPA e AEM Editor](#spa-apps-and-the-aem-spa-editor)SPA.
+>Per vedere come funziona, continuate con la sezione successiva di questo articolo [SPA App e l&#39;Editor](#spa-apps-and-the-aem-spa-editor)SPA AEM.
 
-## App SPA e AEM SPA Editor {#spa-apps-and-the-aem-spa-editor}
+## SPA App e l&#39;editor SPA AEM {#spa-apps-and-the-aem-spa-editor}
 
-L&#39;esperienza di come uno SPA si comporta per l&#39;utente finale e quindi l&#39;analisi della pagina SPA aiuta a comprendere meglio come un&#39;app SAP funziona con l&#39;editor SPA in AEM.
+L&#39;esperienza di come un SPA si comporta per l&#39;utente finale e quindi l&#39;analisi della pagina SPA aiuta a comprendere meglio come un&#39;app SAP funziona con l&#39;Editor SPA in AEM.
 
 ### Utilizzo di un&#39;applicazione SPA {#using-an-spa-application}
 
@@ -137,7 +137,7 @@ L&#39;esperienza di come uno SPA si comporta per l&#39;utente finale e quindi l&
 
 1. Passa a una pagina figlia utilizzando il menu e verifica che la pagina venga caricata immediatamente senza che sia necessario effettuare un aggiornamento.
 
-   ![Progetto SPA WKND pagina 1](assets/wknd-page1.png)
+   ![WKND SPA Project pagina 1](assets/wknd-page1.png)
 
 1. Aprite gli strumenti di sviluppo integrati del browser e monitorate l&#39;attività di rete mentre vi spostate nelle pagine figlie.
 
@@ -145,11 +145,11 @@ L&#39;esperienza di come uno SPA si comporta per l&#39;utente finale e quindi l&
 
    Il traffico si riduce notevolmente quando si passa da una pagina all&#39;altra nell&#39;app. La pagina non viene ricaricata e vengono richieste solo le nuove immagini.
 
-   L&#39;SPA gestisce i contenuti e l&#39;indirizzamento interamente sul lato client.
+   Il SPA gestisce il contenuto e il routing interamente sul lato client.
 
 Quindi, se la pagina non viene ricaricata durante la navigazione tra le pagine figlie, come viene caricata?
 
-La sezione successiva, [Caricamento di un&#39;applicazione](#loading-a-spa-application)SPA, approfondisce la procedura di caricamento dell&#39;SPA e spiega come è possibile caricare il contenuto in modo sincrono e asincrono.
+La sezione successiva, [Caricamento di un&#39;applicazione](#loading-a-spa-application)SPA, approfondisce la procedura di caricamento del SPA e spiega come caricare il contenuto in modo sincrono e asincrono.
 
 ### Caricamento di un&#39;applicazione SPA {#loading-a-spa-application}
 
@@ -157,7 +157,7 @@ La sezione successiva, [Caricamento di un&#39;applicazione](#loading-a-spa-appli
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
-   ![Anteprima progetto SPA WKND](assets/wknd-preview.png)
+   ![Anteprima progetto WKND SPA](assets/wknd-preview.png)
 
 1. Utilizzate lo strumento incorporato del browser per visualizzare l’origine della pagina.
 1. Il contenuto dell&#39;origine è limitato.
@@ -238,17 +238,17 @@ La sezione successiva, [Caricamento di un&#39;applicazione](#loading-a-spa-appli
 
    Ignorando le richieste di immagini, tenete presente che le risorse principali caricate per la pagina sono la pagina stessa, CSS, il JavaScript React, le sue dipendenze e i dati JSON per la pagina.
 
-   ![Attività di rete del progetto SPA WKND](assets/wknd-network.png)
+   ![WKND SPA Attività di rete del progetto](assets/wknd-network.png)
 
 1. Caricate il file `home.model.json` in una nuova scheda.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.model.json`
 
-   ![JSON della home page del progetto SPA WKND](assets/wknd-json.png)
+   ![JSON della home page del progetto WKND SPA](assets/wknd-json.png)
 
-   AEM SPA Editor sfrutta [AEM Content Services](/help/assets/content-fragments/content-fragments.md) per distribuire l&#39;intero contenuto della pagina come modello JSON.
+   L&#39;editor AEM SPA utilizza [AEM Content Services](/help/assets/content-fragments/content-fragments.md) per distribuire l&#39;intero contenuto della pagina come modello JSON.
 
-   Implementando interfacce specifiche, Sling Models fornisce le informazioni necessarie alla SPA. La consegna dei dati JSON viene delegata verso il basso a ciascun componente (dalla pagina al paragrafo, al componente, ecc.).
+   Implementando interfacce specifiche, Sling Models fornisce le informazioni necessarie al SPA. La consegna dei dati JSON viene delegata verso il basso a ciascun componente (dalla pagina al paragrafo, al componente, ecc.).
 
    Ciascun componente sceglie le funzioni esposte e di rendering (lato server con HTL o lato client con React o Angular). Questo articolo è incentrato sul rendering lato client con React.
 
@@ -258,21 +258,21 @@ La sezione successiva, [Caricamento di un&#39;applicazione](#loading-a-spa-appli
 
    Questo comportamento non è obbligatorio ed è completamente definibile.
 
-   ![Raggruppamento di elementi del progetto SPA WKND](assets/wknd-pages.png)
+   ![WKND SPA Raggruppamento di elementi del progetto](assets/wknd-pages.png)
 
 1. Per visualizzare questa differenza di comportamento, ricaricare la `home` pagina e cancellare l&#39;attività di rete della finestra di ispezione. Andate `page-1` nel menu della pagina e vedete che l&#39;unica attività di rete è una richiesta per l&#39;immagine di `page-1`. `page-1` non deve essere caricato.
 
    ![WKND SPA Project page-1 attività di rete](assets/wknd-page1-network.png)
 
-### Interazione con l&#39;editor SPA {#interaction-with-the-spa-editor}
+### Interazione con l’editor SPA {#interaction-with-the-spa-editor}
 
-Utilizzando l&#39;applicazione di esempio WKND SPA Project, è chiaro come l&#39;app si comporta e viene caricata quando viene pubblicata, sfruttando i servizi di contenuto per la distribuzione di contenuto JSON e il caricamento asincrono delle risorse.
+Utilizzando l&#39;applicazione di esempio WKND SPA Project, è chiaro il funzionamento dell&#39;app e come viene caricata quando viene pubblicata, sfruttando i servizi di contenuto per la distribuzione di contenuto JSON e il caricamento asincrono delle risorse.
 
-Inoltre, per l&#39;autore dei contenuti, la creazione di contenuti tramite un editor SPA è semplice all&#39;interno AEM.
+Inoltre, per l&#39;autore del contenuto, la creazione di contenuto tramite un editor SPA è perfettamente all&#39;interno di AEM.
 
-Nella sezione seguente verrà illustrato il contratto che consente all&#39;editor SPA di collegare componenti all&#39;interno dell&#39;SPA per AEM componenti e ottenere questa esperienza di editing senza problemi.
+Nella sezione seguente verrà illustrato il contratto che consente all’editor SPA di correlare i componenti all’interno del SPA a AEM componenti e di ottenere questa esperienza di modifica senza soluzione di continuità.
 
-1. Caricate l&#39;applicazione WKND SPA Project nell&#39;editor e passate alla modalità **Anteprima** .
+1. Caricate l’applicazione WKND SPA Project nell’editor e passate alla modalità **Anteprima** .
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
@@ -280,7 +280,7 @@ Nella sezione seguente verrà illustrato il contratto che consente all&#39;edito
 
    Il componente ha un nuovo attributo dati `data-cq-data-path`.
 
-   ![Analisi degli elementi del progetto SPA WKND](assets/wknd-inspector.png)
+   ![Analisi degli elementi del progetto WKND SPA](assets/wknd-inspector.png)
 
    Esempio
 
@@ -288,7 +288,7 @@ Nella sezione seguente verrà illustrato il contratto che consente all&#39;edito
 
    Questo percorso consente il recupero e l&#39;associazione dell&#39;oggetto di configurazione del contesto di modifica di ciascun componente.
 
-   Si tratta dell’unico attributo di markup richiesto all’editor per riconoscere questo componente come modificabile all’interno dell’area di protezione speciale. In base a questo attributo, l&#39;editor SPA determinerà quale configurazione modificabile è associata al componente, in modo che il frame, la barra degli strumenti e così via siano corretti. è caricato.
+   Questo è l&#39;unico attributo di markup richiesto all&#39;editor per riconoscere questo come componente modificabile all&#39;interno del SPA. In base a questo attributo, l’Editor SPA determinerà quale configurazione modificabile è associata al componente, in modo che il frame, la barra degli strumenti e così via siano corretti. è caricato.
 
    Alcuni nomi di classe specifici vengono aggiunti anche per i segnaposto di marketing e per la funzionalità di trascinamento della risorsa.
 
@@ -296,13 +296,13 @@ Nella sezione seguente verrà illustrato il contratto che consente all&#39;edito
    >
    >Questo comportamento è diverso dalle pagine sottoposte a rendering sul lato server in AEM, dove è inserito un `cq` elemento per ciascun componente modificabile.
    >
-   >Questo approccio nell&#39;editor SPA elimina la necessità di inserire elementi personalizzati, basandosi solo su un attributo di dati aggiuntivo, semplificando il markup per lo sviluppatore frontend.
+   >Questo approccio nell&#39;Editor SPA elimina la necessità di inserire elementi personalizzati, basandosi solo su un attributo di dati aggiuntivo, semplificando il markup per lo sviluppatore frontend.
 
 ## Passaggi successivi {#next-steps}
 
-Ora che avete compreso l&#39;esperienza di editing SPA in AEM e come l&#39;SPA si collega all&#39;editor SPA, scoprite meglio come è stata creata una SPA.
+Ora che avete compreso l&#39;esperienza di modifica SPA in AEM e come un SPA si collega all&#39;Editor SPA, approfondisci la conoscenza di come un SPA è costruito.
 
-* [Guida introduttiva alle app SPA in AEM con React](getting-started-react.md) mostra come una piattaforma SPA di base sia stata creata per lavorare con l&#39;editor SPA in AEM utilizzando React
-* [Guida introduttiva alle app SPA in AEM con Angular](getting-started-angular.md) mostra come una piattaforma SPA di base sia progettata per lavorare con l&#39;editor SPA in AEM con Angular
-* [SPA Editor Overview](editor-overview.md) approfondisce il modello di comunicazione tra AEM e SPA.
-* [Lo sviluppo di SPA per AEM](developing.md) descrive come coinvolgere gli sviluppatori front-end nello sviluppo di una SPA per AEM e come le SPA interagiscono con AEM architettura.
+* [La Guida introduttiva alle SPA in AEM con React](getting-started-react.md) mostra come è stato creato un SPA di base per lavorare con l’Editor SPA in AEM con React
+* [Guida introduttiva alle SPA in AEM con Angular](getting-started-angular.md) mostra come è stato creato un SPA di base per lavorare con SPA Editor in AEM con Angular
+* [SPA Editor Overview (Panoramica](editor-overview.md) dell’editor) approfondisce il modello di comunicazione tra AEM e SPA.
+* [Lo sviluppo di SPA per AEM](developing.md) descrive come coinvolgere gli sviluppatori front-end nello sviluppo di un SPA per AEM e come SPA interagire con AEM architettura.
