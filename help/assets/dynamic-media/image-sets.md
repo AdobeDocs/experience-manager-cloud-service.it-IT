@@ -207,7 +207,7 @@ Potete eseguire diverse attività di modifica sui set di immagini, ad esempio:
 1. Effettuate una delle seguenti operazioni:
 
    * Passate il puntatore del mouse su una risorsa del set di immagini, quindi toccate **[!UICONTROL Modifica]** (icona matita).
-   * Passate il puntatore del mouse su una risorsa di set di immagini, toccate **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi toccate **[!UICONTROL Modifica]** sulla barra degli strumenti.
+   * Passate il puntatore del mouse su una risorsa del set di immagini, toccate **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi toccate **[!UICONTROL Modifica]** sulla barra degli strumenti.
    * Toccate una risorsa set di immagini, quindi toccate **[!UICONTROL Modifica]** (icona matita) sulla barra degli strumenti.
 
 1. Per modificare le immagini nel set di immagini, effettuate una delle seguenti operazioni:
