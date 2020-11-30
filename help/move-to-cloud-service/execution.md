@@ -1,9 +1,9 @@
 ---
 title: Fase di esecuzione
 description: Fase di esecuzione
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -77,11 +77,11 @@ Di seguito sono elencate alcune risorse aggiuntive:
 
 * Guarda Install Dispatcher SDK per informazioni su come installare Dispatcher SDK:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601?captions=ita)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * Guarda Configure Dispatcher SDK per informazioni su come configurare Dispatcher SDK:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602?captions=ita)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 * Consulta la documentazione [Local Development Setup](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) per configurare un ambiente di sviluppo locale
 
