@@ -39,6 +39,7 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
    * Il numero di flussi di lavoro a cui è soggetta la pagina. Operazioni disponibili:
       * utilizzare la freccia sinistra/destra per navigare tra le informazioni di stato dei vari flussi di lavoro.
       * fare clic/toccare il numero totale per aprire un elenco a discesa di tutti i flussi di lavoro applicabili e quindi selezionare il flusso di lavoro che si desidera visualizzare nella barra di stato.
+
    ![Pagina con più flussi di lavoro](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
