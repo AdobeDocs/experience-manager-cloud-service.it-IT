@@ -5,10 +5,10 @@ breadcrumb-title: Guida ad Assets
 user-guide-description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 302830f46f5a0cedcb717b4ab2e2d95f1c9904d4
+source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 78%
+source-wordcount: '471'
+ht-degree: 73%
 
 ---
 
@@ -55,6 +55,8 @@ ht-degree: 78%
    + [Facet di ricerca](search-facets.md)
    + [API HTTP di Assets](mac-api-assets.md)
    + [Supporto dei frammenti di contenuto nell&#39;API HTTP di Risorse](content-fragments/assets-api-content-fragments.md)
+   + [API AEM GraphQL per frammenti di contenuto](content-fragments/graphql-api-content-fragments.md)
+   + [AEM GraphQL API con frammenti di contenuto - Contenuto di esempio e query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Risorse collegate](use-assets-across-connected-assets-instances.md)
    + [Rapporti sulle risorse](asset-reports.md)
    + [Metadati a cascata](cascading-metadata.md)
@@ -66,13 +68,17 @@ ht-degree: 78%
    + [Pubblicare le risorse su [!DNL Brand Portal]](publish-to-brand-portal.md)
 + Frammenti di contenuto {#content-fragments}
    + [Utilizzo di frammenti di contenuto](content-fragments/content-fragments.md)
+   + [Distribuzione senza titolo con frammenti di contenuto e GraphQL](content-fragments/content-fragments-graphql.md)
    + [Gestione dei frammenti di contenuto](content-fragments/content-fragments-managing.md)
+   + [Abilita funzionalità frammento di contenuto per la tua istanza](content-fragments/content-fragments-configuration-browser.md)
    + [Modelli per frammenti di contenuto](content-fragments/content-fragments-models.md)
    + [Varianti - Authoring dei contenuti di frammenti](content-fragments/content-fragments-variations.md)
    + [Contenuti associati a frammenti di contenuto](content-fragments/content-fragments-assoc-content.md)
    + [Metadati - Proprietà dei frammenti](content-fragments/content-fragments-metadata.md)
    + [Frammenti di contenuto - Considerazioni sull’eliminazione](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
+   + [Albero struttura](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [Anteprima - RAPPRESENTAZIONE JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Newsletter di Dynamic Media curata da Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Impostazione di Dynamic Media](dynamic-media/administering-dynamic-media.md)
