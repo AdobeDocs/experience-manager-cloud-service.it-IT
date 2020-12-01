@@ -5,19 +5,19 @@ breadcrumb-title: Guida ad Assets
 user-guide-description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
+source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '432'
 ht-degree: 79%
 
 ---
 
 
-# [!DNL Assets] Guida {#assets}
+# [!DNL Assets] Guida  {#assets}
 
 + [[!DNL Assets] come Cloud Service](/help/assets/home.md)
 + [Panoramica e novità](overview.md)
-+ [Modifiche principali [!DNL Assets] al Cloud Service](assets-cloud-changes.md)
++ [Modifiche principali  [!DNL Assets] al Cloud Service](assets-cloud-changes.md)
 + [[!DNL Assets] architettura](architecture.md)
 + [Formati di file supportati](file-format-support.md)
 + [Panoramica dei microservizi per le risorse](asset-microservices-overview.md)
@@ -32,7 +32,7 @@ ht-degree: 79%
    + [Tag avanzati per immagini](smart-tags.md)
    + [Applicazione di tag avanzati alle risorse video](smart-tags-video-assets.md)
    + [Organizzare le risorse](organize-assets.md)
-   + [Risorse [!DNL Adobe Stock] utilizzate in AEM](aem-assets-adobe-stock.md)
+   + [Risorse  [!DNL Adobe Stock] utilizzate in AEM](aem-assets-adobe-stock.md)
    + [Gestire le raccolte](manage-collections.md)
    + [Panoramica sui metadati](manage-metadata.md)
    + [Integrazione con [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -82,12 +82,15 @@ ht-degree: 79%
    + [Gestione delle risorse Dynamic Media](dynamic-media/managing-assets.md)
    + [Best practice per ottimizzare la qualità delle immagini](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Best practice per la gestione dei file](dynamic-media/best-practices-for-file-management.md)
-   + [Gestione dei predefiniti per i visualizzatori Dynamic Media](dynamic-media/managing-viewer-presets.md)
-   + [Applicazione dei predefiniti per i visualizzatori Dynamic Media](dynamic-media/viewer-presets.md)
-   + [Gestione dei predefiniti per le immagini Dynamic Media](dynamic-media/managing-image-presets.md)
-   + [Applicazione dei predefiniti per le immagini Dynamic Media](dynamic-media/image-presets.md)
    + [Profili immagine](dynamic-media/image-profiles.md)
    + [Profili video](dynamic-media/video-profiles.md)
+   + [Gestione dei predefiniti per le immagini Dynamic Media](dynamic-media/managing-image-presets.md)
+   + [Applicazione dei predefiniti per le immagini Dynamic Media](dynamic-media/image-presets.md)
+   + [Gestione dei predefiniti per i visualizzatori Dynamic Media](dynamic-media/managing-viewer-presets.md)
+   + [Applicazione dei predefiniti per i visualizzatori Dynamic Media](dynamic-media/viewer-presets.md)
+   + [Predefiniti set di batch](dynamic-media/batch-set-presets-dm.md)
+   + [Annullamento della validità della cache CDN tramite Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Annullamento della validità della cache CDN tramite Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Imaging avanzato](dynamic-media/imaging-faq.md)
    + [Distribuzione di risorse Dynamic Media](dynamic-media/delivering-dynamic-media-assets.md)
    + [Attivazione della protezione hotlinking in Dynamic Media](dynamic-media/hotlink-protection.md)
@@ -111,8 +114,6 @@ ht-degree: 79%
    + [Utilizzo di set di regole per la trasformazione degli URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Pubblicazione delle risorse Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Utilizzo della pubblicazione selettiva nei file multimediali dinamici](dynamic-media/selective-publishing.md)
-   + [Annullamento della validità della cache CDN tramite Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Annullamento della validità della cache CDN tramite Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Utilizzo dei selettori](dynamic-media/working-with-selectors.md)
    + [Domande frequenti sulla fine del ciclo di vita del visualizzatore DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Avviso sulla fine del ciclo di vita dei visualizzatori Flash](dynamic-media/flash-viewers-eol.md)
