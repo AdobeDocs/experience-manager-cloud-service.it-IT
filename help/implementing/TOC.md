@@ -4,10 +4,10 @@ user-guide-title: Implementazione per AEM as a Cloud Service
 breadcrumb-title: Guida all’implementazione
 user-guide-description: Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione.
 translation-type: tm+mt
-source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
+source-git-commit: 09b23185663164ffa5a6066b67f8f1fb74872cde
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 61%
+source-wordcount: '546'
+ht-degree: 56%
 
 ---
 
@@ -36,54 +36,79 @@ ht-degree: 61%
    + [Pacchetto per la struttura dell’archivio dei progetti AEM](developing/introduction/repository-structure-package.md)
    + [SDK di AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Linee guida per lo sviluppo per AEM as a Cloud Service](developing/introduction/development-guidelines.md)
-   + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [Struttura dell’interfaccia AEM](developing/introduction/ui-structure.md)
-   + [Guida di riferimento rapido per Sling](developing/introduction/sling-cheatsheet.md)
-   + [Utilizzo di adattatori Sling](developing/introduction/sling-adapters.md)
-   + [Utilizzo di Sling Resource Merger in AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
-   + [Sovrapposizioni in AEM as a Cloud Service](developing/introduction/overlays.md)
-   + [Utilizzo delle librerie lato client](developing/introduction/clientlibs.md)
-   + [Configurazioni e browser di configurazione](developing/introduction/configurations.md)
    + [Registrazione](developing/introduction/logging.md)
-   + [Differenze tra pagine](/help/implementing/developing/introduction/page-diff.md)
-   + [Limitazioni per l’editor](/help/implementing/developing/introduction/editor-limitations.md)
-   + [Convenzioni di denominazione](/help/implementing/developing/introduction/naming-conventions.md)
-   + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
-   + [Creazione di tag nelle applicazioni AEM](/help/implementing/developing/introduction/tagging-applications.md)
+   + [Configurazioni e browser di configurazione](developing/introduction/configurations.md)
    + [AEM Fondamenti Tecnici](/help/implementing/developing/introduction/aem-technologies.md)
+   + [API di AEM as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + Sviluppo AEM stack completo {#full-stack}
+      + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](developing/introduction/develop-wknd-tutorial.md)
+      + [Struttura dell’interfaccia AEM](developing/introduction/ui-structure.md)
+      + [Guida di riferimento rapido per Sling](developing/introduction/sling-cheatsheet.md)
+      + [Utilizzo di adattatori Sling](developing/introduction/sling-adapters.md)
+      + [Utilizzo di Sling Resource Merger in AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
+      + [Sovrapposizioni in AEM as a Cloud Service](developing/introduction/overlays.md)
+      + [Utilizzo delle librerie lato client](developing/introduction/clientlibs.md)
+      + [Differenze tra pagine](/help/implementing/developing/introduction/page-diff.md)
+      + [Limitazioni per l’editor](/help/implementing/developing/introduction/editor-limitations.md)
+      + [Convenzioni di denominazione](/help/implementing/developing/introduction/naming-conventions.md)
+      + Componenti e modelli {#components-templates}
+         + [Panoramica sui componenti](developing/components/overview.md)
+         + [Modelli](developing/components/templates.md)
+         + [Componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
+         + [Sistema di stili](/help/sites-cloud/authoring/features/style-system.md)
+         + [Esportatore JSON per Content Services](developing/components/json-exporter.md)
+         + [Abilitazione dell&#39;esportazione JSON per un componente](developing/components/enabling-json-exporter.md)
+         + [Editor immagine](developing/components/image-editor.md)
+         + [Tag per decorazione](developing/components/decoration-tag.md)
+         + [Utilizzo di Nascondi condizioni](developing/components/hide-conditions.md)
+      + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
+      + [Creazione di tag nelle applicazioni AEM](/help/implementing/developing/introduction/tagging-applications.md)
+   + Sviluppo AEM ibrido {#hybrid}
+      + [Ibrido e SPA con AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [Abilitazione dell&#39;esportazione JSON per un componente](developing/components/enabling-json-exporter.md)
+      + [Introduzione SPA e Procedura dettagliata](developing/hybrid/introduction.md)
+      + [SPA Esercitazione WKND](developing/hybrid/wknd-tutorial.md)
+      + [Guida introduttiva a React](developing/hybrid/getting-started-react.md)
+      + [Guida introduttiva all’uso di Angular](developing/hybrid/getting-started-angular.md)
+      + [SPA Dives](developing/hybrid/deep-dives.md)
+      + [Sviluppo di SPA per AEM](developing/hybrid/developing.md)
+      + [Panoramica dell’editor SPA](developing/hybrid/editor-overview.md)
+      + [Blueprint SPA](developing/hybrid/blueprint.md)
+      + [Componente pagina SPA](developing/hybrid/page-component.md)
+      + [Mappatura modello dinamico a componente](developing/hybrid/model-to-component-mapping.md)
+      + [Routing modello](developing/hybrid/routing.md)
+      + [Launch Integration](developing/hybrid/launch-integration.md)
+      + [Rendering lato server](developing/hybrid/ssr.md)
+      + [SPA documenti di riferimento](developing/hybrid/reference-materials.md)
+   + Gestione delle esperienze headless {#headless}
+      + [Senza testa e AEM](developing/headless/introduction.md)
+      + Guide introduttive {#getting-started}
+         + [Creazione di una configurazione](developing/headless/getting-started/create-configuration.md)
+         + [Creazione di un modello di frammento di contenuto](developing/headless/getting-started/create-content-model.md)
+         + [Creazione di una cartella di risorse](developing/headless/getting-started/create-assets-folder.md)
+         + [Creazione di un frammento di contenuto](developing/headless/getting-started/create-content-fragment.md)
+         + [Accesso e distribuzione di frammenti di contenuto](developing/headless/getting-started/create-api-request.md)
+      + Frammenti di contenuto {#content-fragments}
+         + [Distribuzione senza titolo con frammenti di contenuto e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
+         + [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
+         + [Abilita funzionalità frammento di contenuto per la tua istanza](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+         + [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
+         + [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md)
+         + [Varianti - Authoring dei contenuti di frammenti](/help/assets/content-fragments/content-fragments-variations.md)
+         + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
+         + [Uso di contenuti associati ](/help/assets/content-fragments/content-fragments-assoc-content.md)
+         + [Metadati - Proprietà dei frammenti](/help/assets/content-fragments/content-fragments-metadata.md)
+         + [Albero struttura](/help/assets/content-fragments/content-fragments-structure-tree.md)
+         + [Anteprima - RAPPRESENTAZIONE JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+      + API di consegna {#delivery-api}
+         + [API REST per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md)
+         + [API GraphQL per frammenti di contenuto](/help/assets/content-fragments/graphql-api-content-fragments.md)
+         + [AEM GraphQL API con frammenti di contenuto - Contenuto di esempio e query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + Strumenti per gli sviluppatori {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Plug-in Confezione Contenuto](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [Utilizzo di CRXDE Lite](/help/implementing/developing/tools/crxde.md)
-+ Componenti e modelli {#components-templates}
-   + [Panoramica sui componenti](developing/components/overview.md)
-   + [Modelli](developing/components/templates.md)
-   + [Componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
-   + [Sistema di stili](/help/sites-cloud/authoring/features/style-system.md)
-   + [Esportatore JSON per Content Services](developing/components/json-exporter.md)
-   + [Abilitazione dell&#39;esportazione JSON per un componente](developing/components/enabling-json-exporter.md)
-   + [Editor immagine](developing/components/image-editor.md)
-   + [Tag per decorazione](developing/components/decoration-tag.md)
-   + [Utilizzo di Nascondi condizioni](developing/components/hide-conditions.md)
-+ Gestione delle esperienze headless {#headless}
-   + [Senza testa e ibrido con AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [Abilitazione dell&#39;esportazione JSON per un componente](developing/components/enabling-json-exporter.md)
-   + Applicazioni a pagina singola {#spa}
-      + [Introduzione SPA e Procedura dettagliata](developing/spa/introduction.md)
-      + [SPA Esercitazione WKND](developing/spa/wknd-tutorial.md)
-      + [Guida introduttiva a React](developing/spa/getting-started-react.md)
-      + [Guida introduttiva all’uso di Angular](developing/spa/getting-started-angular.md)
-      + [SPA Dives](developing/spa/deep-dives.md)
-      + [Sviluppo di SPA per AEM](developing/spa/developing.md)
-      + [Panoramica dell’editor SPA](developing/spa/editor-overview.md)
-      + [Blueprint SPA](developing/spa/blueprint.md)
-      + [Componente pagina SPA](developing/spa/page-component.md)
-      + [Mappatura modello dinamico a componente](developing/spa/model-to-component-mapping.md)
-      + [Routing modello](developing/spa/routing.md)
-      + [Launch Integration](developing/spa/launch-integration.md)
-      + [Rendering lato server](developing/spa/ssr.md)
-      + [SPA documenti di riferimento](developing/spa/reference-materials.md)
 + Personalizzazione {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configurazione di ContextHub](developing/personalization/configuring-contexthub.md)
