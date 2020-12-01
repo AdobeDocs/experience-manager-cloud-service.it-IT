@@ -1,64 +1,88 @@
 ---
-title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
+description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 05184bbf507fe84ffb69da90502190b1a2793ee3
+source-git-commit: 89f7e60205efc275bbeb97246ccc3add28810cfa
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 5%
+source-wordcount: '1329'
+ht-degree: 3%
 
 ---
 
 
 # Note sulla versione per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
+Nella sezione seguente sono riportate le note generali sulla versione relative a [!DNL Experience Manager] come Cloud Service.
 
 ## Data di rilascio {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
-La seguente release (2020.11.0) sarà il 1° dicembre 2020.
+La data di rilascio per [!DNL Adobe Experience Manager] come Cloud Service 2020.11.0 è il 1 dicembre 2020.
+La seguente release (2020.12.0) sarà del 17 dicembre 2020
 
-## [!DNL Adobe Experience Manager Sites] come Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] come Cloud Service  {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### Novità in [!DNL Sites] {#what-is-new-sites}
 
-<!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
+* **[Avvia Gestione](/help/sites-cloud/authoring/launches/managing-pages.md)  Gerarchia e Timewarp  [futuro](/help/sites-cloud/authoring/launches/preview.md)**: Nuova interfaccia utente per aggiungere/rimuovere pagine all’interno di un lancio, mentre nel sito con Timewarp viene visualizzato lo stato futuro dagli avvii.
 
-* **Tipo archivio progetto 24**: La base consigliata per avviare un nuovo progetto AEM è migliorata, ora incluso il nuovo livello dati client  Adobe, l&#39;opzione per distribuire il sito in AMP e nuovi punti di estensione per aggiungere il progetto CSS/JS.
+* **[Editor e modelli](/help/assets/content-fragments/content-fragments-models.md)** di frammenti di contenuto estesi: Nuove opzioni per la convalida dell&#39;input su vari tipi di dati, il miglioramento del tipo di dati di enumerazione con nuove visualizzazioni di moduli e il nome del modello di frammento di contenuto sono visualizzati e ricercabili nell&#39;interfaccia utente Risorse.
 
-* **Cartelle** ContextHub: Possibilità di creare cartelle di audience per organizzare, trovare e selezionare facilmente i segmenti di pubblico da utilizzare per le funzionalità di targeting delle offerte ContextHub.
+* **Rendi sito installabile**: Nuove proprietà del sito per configurare le funzionalità Progressive Web Application (PWA), che renderanno disponibile un sito installabile e un sito offline facoltativo. Le funzioni richiedono componenti core.
 
-## [!DNL Adobe Experience Manager Assets] come Cloud Service {#assets}
+* **[Componenti di base 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**: AEM come Cloud Service offre aggiornamenti automatici all&#39;ultima versione dei componenti core. La release 2.12.0 include gli ultimi miglioramenti apportati dalla comunità, ad esempio [un nuovo gestore di moduli POST;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) la possibilità di includere tag personalizzati CSS, Javascript e metadati [tramite la configurazione in base al contesto;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) e un&#39;utility [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) per semplificare &#39;integrazione dei livelli di dati dei Adobi nei componenti personalizzati. Vedere l&#39; [elenco di modifiche](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) in 2.12.0.
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+## [!DNL Adobe Experience Manager Assets] come Cloud Service  {#assets}
 
-* **[!DNL Adobe Sensei]smart tag** video motorizzato: Sfruttando i modelli AI per l&#39;analisi dei contenuti video per i tag di oggetti e azioni specifici, gli utenti DAM possono dedicare meno tempo all&#39;aggiunta di tag e più tempo sfruttando le informazioni avanzate disponibili per offrire ai clienti l&#39;esperienza giusta. Consultate Risorse [video con tag](/help/assets/smart-tags-video-assets.md)avanzati.
+### Novità in [!DNL Assets] e [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Miglioramenti** al Brand Portal: Le seguenti nuove funzioni e altro ancora sono disponibili in [!DNL Brand Portal]. For details, see [[!DNL Brand Portal] release notes](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
+* **Caricamento** di massa delle risorse: Offrite ai clienti un servizio di inserimento scalabile e nativo basato su cloud che si basa  [!DNL Experience Manager] su un&#39;architettura di Cloud Service con microservizi per risorse. I casi d’uso chiave includono l’assimilazione su larga scala con monitoraggio, reporting e pianificazione, consentendo al contempo il trasferimento iniziale delle risorse agli store di dati cloud utilizzando i comuni strumenti di caricamento cloud. Vedere [strumento di importazione in blocco](/help/assets/add-assets.md#bulk-ingestion-tool).
+Questo strumento è per gli amministratori di sistema, i consulenti o i partner di implementazione. Questa funzione consente l’inserimento su larga scala ed è ideale per l’assimilazione iniziale o per ingestione di grandi dimensioni. Per processi di assimilazione più piccoli, utilizzate l&#39;app [[!DNL Experience Manager] desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) o [il caricamento mediante l&#39;interfaccia utente di Assets](/help/assets/add-assets.md#upload-assets).
 
-   * [Esperienza](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) di download migliorata per download semplificati e rapidi. Gli amministratori possono configurare configurazioni di download aggiuntive per offrire un&#39;esperienza che soddisfi le esigenze degli utenti e delle aziende.
-   * È ora possibile navigare con un solo clic su File, [Raccolte](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)e Collegamenti condivisi da qualsiasi pagina.
-   * Gli utenti ora possono [selezionare e scaricare rappresentazioni](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) specifiche. La nuova opzione di download della rappresentazione è disponibile nel pannello Rappresentazioni nella pagina dei dettagli della risorsa.
-   * Un timeout di 15 minuti per le sessioni degli utenti ospiti garantisce un&#39;esperienza migliore a tutti gli utenti simultanei.
+   ![Configurazione dell&#39;importatore di massa](/help/assets/assets/bulk-import-config-low-res.png)
 
-* **[!DNL Adobe Asset Link]versione 2.1**: È disponibile una nuova versione dell’estensione [Collegamento](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) risorse Adobe per [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign] . Aggiunge compatibilità con le ultime [!DNL Adobe Creative Cloud] applicazioni con la versione 2021, rilasciata a ottobre 2020.
+* Gli utenti possono ordinare le risorse digitali nelle viste a schede e a colonne.
 
-* **[!DNL Assets]Supporto** file WebP: [!DNL Assets] come Cloud Service ora supporta la creazione di rappresentazioni in formato immagine WebP. WebP è un formato immagine emergente creato da Google. Le immagini in formato file WebP sono visivamente indipendenti dai file JPG o PNG e i file sono molto più piccoli. Le dimensioni ridotte dei file delle risorse migliorano i tempi di caricamento delle pagine e aiutano i creatori di contenuti a fornire un&#39;esperienza Web più veloce. Consultate [Creare un profilo](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)di elaborazione standard.
+   ![ordinare risorse](/help/assets/assets/asset-sort-options.png)
+
+* I seguenti miglioramenti sono stati apportati per l&#39;accessibilità in [ risorse di Experience Manager] in questa versione. Per ulteriori informazioni, vedere [funzioni di accessibilità in [!DNL Assets]](/help/assets/accessibility.md).
+
+   * Quando si naviga nella timeline utilizzando una tastiera, il tasto Esc può comprimere l&#39;opzione Mostra tutto senza perdere lo stato attivo.
+   * Quando si naviga utilizzando il tasto di tabulazione della tastiera, dopo aver rimosso l&#39;ultimo tag dai tag aggiunti, il campo del tag rimane attivo.
+   * [!DNL Experience Manager] i componenti ora contengono informazioni appropriate per nome, ruolo e valore che devono essere utilizzati dagli assistenti vocali.
+   * Dopo aver eliminato la casella combinata Tipo/Dimensione, Collegamento, Lingua o Testo, lo stato attivo torna agli elementi dell&#39;interfaccia utente successivi o precedenti o a un elemento dell&#39;interfaccia utente più rilevante.
+   * Quando si passa il puntatore sulle opzioni, vengono visualizzati suggerimenti come Seleziona e Scarica. Gli utenti che utilizzano una lente di ingrandimento dello schermo potrebbero non visualizzare le miniature dei file a causa di questi suggerimenti. Ora, è possibile mantenere lo stato attivo, dopo aver rimosso l&#39;opzione utilizzando il tasto `Escape`.
+   * Selezionando una cella della griglia presente nella pagina, lo stato attivo si sposta sulla barra delle azioni visualizzata sullo schermo.
+   * Gli utenti visivi possono distinguere tra testo normale e collegamento, in quanto vengono visualizzati indizi visivi (sottolineatura e icona a forma di freccia) per i collegamenti a tutte le soluzioni nella pagina principale [!DNL Experience Manager].
+
+* **Predefiniti set di batch per elementi multimediali** dinamici: Ora potete automatizzare la creazione e l’organizzazione di più risorse in un set di immagini o set 360 gradi al momento di caricare i file di risorse in una cartella singolarmente o utilizzando l’assimilazione in blocco.
+
+   Consultate [I predefiniti per set di batch](/help/assets/dynamic-media/batch-set-presets-dm.md).
+
+* I seguenti miglioramenti dell&#39;accessibilità sono ora disponibili in [!DNL Dynamic Media]:
+
+   * Gli assistenti vocali (JAWS, Assistente vocale) indicano il nome, il ruolo e lo stato delle voci di menu nell&#39;opzione di menu Incorpora dimensioni.
+   * Gli utenti possono navigare nella finestra di dialogo del collegamento E-mail utilizzando la chiave `Tab`.
+   * Il flusso di lavoro per la creazione di profili di codifica video è più semplice da usare, grazie al miglioramento dell’assistente vocale.
+   * Quando si naviga utilizzando il tasto `Tab`, lo stato attivo si sposta sugli elementi dell&#39;interfaccia utente appropriati nel flusso di lavoro per creare un video interattivo.
+   * Sono state migliorate le pagine Pubblica, Modifica risorsa, Modifica Smart Crops e Editor set di immagini per soddisfare gli standard Web. Gli utenti della tecnologia di assistenza (AT) ora possono navigare facilmente in queste pagine e intraprendere azioni come il ritaglio delle immagini.
+   * I visualizzatori sono stati migliorati per consentire agli utenti di spostarsi utilizzando una tastiera.
+   * Gli utenti di tastiera e utilità di lettura dello schermo possono utilizzare la funzionalità di ritaglio.
+   * Gli utenti della tastiera possono gestire meglio i punti di attivazione.
+
+   Vedere [Accessibilità in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Novità {#what-is-new-commerce}
 
-* Sito di riferimento CIF Venia rilasciato - 2020.10.2 che include l&#39;ultima versione CIF Core Components v1.4.0. Per ulteriori informazioni, consultare [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) .
+* Sito di riferimento CIF Venia rilasciato - 2020.11.05 che include l&#39;ultima versione CIF Core Components v1.5.0. Per ulteriori informazioni, fare riferimento a [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27).
 
-* Componenti CIF di base rilasciati v1.4.0. Per ulteriori informazioni, consulta Componenti [di base](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) CIF.
+* Componenti CIF di base rilasciati v1.5.0. Per ulteriori informazioni, consultare [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0).
 
 ### Correzioni di bug {#bug-fixes-commerce}
 
-* Le richieste GraphQL nella console prodotto e nei selettori sono state eseguite tramite POST HTTP. Questo è stato corretto per garantire che il client Apollo GraphQL rispetti l&#39;impostazione nella configurazione OSGi client GraphQL per supportare le richieste di GET, se configurata.
+* La configurazione client GraphQL non è stata letta correttamente se la configurazione non è specificata direttamente nella configurazione Sling CA, ma in una delle configurazioni padre. Questo è stato corretto.
 
-* CIF l’interfaccia utente di configurazione cloud mostrava i pulsanti &quot;Save &amp; Close&quot; per le configurazioni in /lib e /apps/. Ma queste sono di sola lettura, quindi l&#39;interfaccia utente è fissa per visualizzare solo il pulsante &quot;Chiudi&quot;.
 
 
 ## Cloud Manager {#cloud-manager}
@@ -67,10 +91,10 @@ La seguente release (2020.11.0) sarà il 1° dicembre 2020.
 
 La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.11.0 è il 12 novembre 2020.
 
-### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
+### Novità in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Una nuova opzione di menu Accesso **** locale è ora disponibile per gli utenti dalle opzioni del menu di ambiente nelle pagine di riepilogo della scheda **Ambienti** e **Ambienti** .
-Per ulteriori informazioni, consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md##login-locally) .
+* Una nuova opzione di menu **Accesso locale** è ora disponibile per gli utenti dalle opzioni del menu di ambiente nelle pagine di riepilogo **Ambienti** e **Ambienti** della scheda &lt;a2/>Ambienti&lt;a3/>.
+Per ulteriori informazioni, fare riferimento a [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md##login-locally).
 
 * La scheda **Informazioni** in Cloud Manager è stata aggiornata con le nuove immagini nell&#39;interfaccia utente.
 
@@ -85,11 +109,19 @@ Per ulteriori informazioni, consulta [Gestione degli ambienti](/help/implementin
 
 ### Flussi di lavoro {#workflows}
 
-* È stato aggiunto il supporto per la ricerca di istanze del flusso di lavoro in base al titolo del flusso di lavoro, al modello del flusso di lavoro, allo stato, all’iniziatore, al percorso di payload e alla data di inizio. Consultate [Cerca istanze](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)del flusso di lavoro.
+* È stato aggiunto il supporto per la ricerca di istanze del flusso di lavoro in base al titolo del flusso di lavoro, al modello del flusso di lavoro, allo stato, all’iniziatore, al percorso di payload e alla data di inizio. Vedere [Istanze del flusso di lavoro di ricerca](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html).
+
+### Sincronizzazione utente {#user-sync}
+
+* I dati utente, inclusi gli attributi di profilo e le appartenenze ai gruppi, possono essere memorizzati nel livello di pubblicazione. Ulteriori informazioni su questa funzione sono disponibili nella [documentazione relativa a registrazione, login e profilo utente](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md).
+
+### Analizzatori {#analyzers}
+
+Il AEM come Cloud Service SDK Build Analyzer Maven Plugin rileva i problemi in un progetto maven, comprese le dipendenze mancanti. Offre agli sviluppatori l&#39;opportunità di individuare i problemi durante lo sviluppo locale, ben prima di distribuirli in ambienti Cloud con Cloud Manager. Per ulteriori informazioni, consultare la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) e [qui](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
 
 ## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
 
-Follow this section to learn about what is new and the updates for [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
+Segui questa sezione per saperne di più sulle novità e gli aggiornamenti per [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 
 ### Novità {#what-is-new-ctt}
 
@@ -105,7 +137,7 @@ Follow this section to learn about what is new and the updates for [Content Tran
 
 La data di rilascio di Best Practices Analyzer è il 13 novembre 2020.
 
-### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+### Novità in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
 * Il Cloud Readiness Analyzer è ora Best Practices Analyzer (BPA). BPA fornisce una valutazione delle procedure ottimali dell&#39;implementazione AEM corrente e aiuta a valutare la disponibilità a passare da un&#39;istanza AEM esistente a AEM come Cloud Service.
 
@@ -113,4 +145,4 @@ La data di rilascio di Best Practices Analyzer è il 13 novembre 2020.
 
 ### Correzioni di bug {#bpa-bug-fixes}
 
-* È stato corretto il bug che causava i positivi relativi al componente *textfield foundation* .
+* È stato corretto il bug che causava i positivi relativi al componente *textfield foundation*.
