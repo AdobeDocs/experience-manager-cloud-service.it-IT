@@ -2,10 +2,10 @@
 title: 'Utilizzo delle versioni di una pagina  '
 description: Creare, confrontare e ripristinare le versioni di una pagina
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 83c6301cd804ea1bb41204cf68d9a8de0b373678
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 67%
+source-wordcount: '1521'
+ht-degree: 66%
 
 ---
 
@@ -24,7 +24,7 @@ Quando si crea una versione, viene creata un’istantanea di una pagina in un pa
    * Le differenze nel testo e nelle immagini sono evidenziate.
 * Timewarp utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione.
 
-## Creazione di una nuova versione   {#creating-a-new-version}
+## Creazione di una nuova versione    {#creating-a-new-version}
 
 Puoi creare una versione della risorsa da:
 
@@ -63,11 +63,11 @@ Viene aperta la timeline con le informazioni aggiornate per indicare che si trat
 
 Dopo aver creato una versione della pagina, esistono diversi metodi per ripristinare una versione precedente:
 
-* l&#39;opzione **Ripristina versione** nella barra laterale [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
+* l&#39;opzione **Ripristina questa versione** dalla barra laterale [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
    Ripristina una versione precedente di una pagina selezionata.
 
-* le opzioni **Ripristina** dalla barra degli strumenti [Azioni nella parte superiore](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+* le opzioni **Ripristina** nella barra degli strumenti [azioni ](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar) superiore
 
    * **Ripristina versione**
 
@@ -90,9 +90,9 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 >1. Le etichette generati e i nomi dei nodi saranno ora 1.0.0, 1.0.1, 1.0.2 e così via.
 
 
-### Ripristino di una versione {#revert-to-a-version}
+### Ripristino della versione {#revert-to-a-version}
 
-Per **ripristinare** la versione precedente della pagina selezionata:
+Per **Ripristinare** la pagina selezionata a una versione precedente:
 
 1. Passa alla pagina di cui desideri ripristinare una versione precedente.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
@@ -107,9 +107,9 @@ Per **ripristinare** la versione precedente della pagina selezionata:
 
 Questo metodo può essere utilizzato per ripristinare le versioni di pagine specificate nella cartella corrente; può includere anche il ripristino di pagine precedentemente eliminate:
 
-1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+1. Andate alla cartella desiderata e [selezionate](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 
-1. Selezionate **Ripristina**, quindi **Ripristina versione** dalla barra degli strumenti [](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)Azioni in alto.
+1. Selezionare **Ripristina**, quindi **Ripristina versione** dalla barra degli strumenti [azioni ](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar) superiore.
 
    >[!NOTE]
    >
@@ -124,7 +124,7 @@ Questo metodo può essere utilizzato per ripristinare le versioni di pagine spec
 
    ![Ripristina versione - Elenco di tutte le pagine nella cartella](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
-1. Per una pagina specifica, utilizzate il selettore a discesa in **RESTORE TO VERSION** per selezionare la versione richiesta per quella pagina.
+1. Per una pagina specifica, utilizzare il selettore a discesa in **RESTORE TO VERSION** per selezionare la versione richiesta per quella pagina.
 
    ![Ripristina versione - Seleziona versione](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
 
@@ -132,7 +132,7 @@ Questo metodo può essere utilizzato per ripristinare le versioni di pagine spec
 
    ![Ripristina versione - Seleziona pagina](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. Selezionate **Ripristina** per la versione selezionata della pagina selezionata, da ripristinare come versione corrente.
+1. Selezionare **Ripristina** per la versione selezionata della pagina selezionata, da ripristinare come versione corrente.
 
 >[!NOTE]
 >
@@ -142,23 +142,23 @@ Questo metodo può essere utilizzato per ripristinare le versioni di pagine spec
 
 Questo metodo può essere utilizzato per ripristinare una versione di una struttura ad albero in una data e in un&#39;ora specificate; può includere pagine precedentemente eliminate:
 
-1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+1. Andate alla cartella desiderata e [selezionate](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 
-1. Selezionare **Ripristina**, quindi **Ripristina albero** dalla barra degli strumenti [](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)Azioni superiore. Verrà mostrata la versione più recente della struttura:
+1. Selezionare **Ripristina**, quindi **Ripristina albero** dalla barra degli strumenti [azioni ](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar) superiore. Verrà mostrata la versione più recente della struttura:
 
    ![Ripristina albero](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
-1. Utilizzate il selettore data e ora in Versioni **recenti in Data** per selezionare un&#39;altra versione della struttura ad albero, quella da ripristinare.
+1. Utilizzate il selettore data e ora in **Ultime versioni in data** per selezionare un&#39;altra versione della struttura, quella da ripristinare.
 
-1. Impostate il flag **Mantieni pagine** non modificate come richiesto:
+1. Impostate il flag **Pagine non sottoposte a manutenzione** come necessario:
 
    * Se è attiva (selezionata), tutte le pagine senza versione verranno mantenute e non verranno interessate dal ripristino.
 
    * Se le pagine non sono attive (non selezionate), verranno rimosse tutte le pagine senza versione, in quanto non già presenti nella struttura ad albero con le versioni.
 
-1. Selezionate **Ripristina** per ripristinare la versione selezionata della struttura ad albero come versione *corrente* .
+1. Selezionare **Ripristina** per ripristinare la versione selezionata della struttura come *versione corrente*.
 
-## Anteprima di una versione   {#previewing-a-version}
+## Anteprima di una versione    {#previewing-a-version}
 
 Puoi visualizzare in anteprima una versione specifica:
 
@@ -190,9 +190,13 @@ Per confrontare una versione precedente con quella corrente:
 
 1. Seleziona **Confronta con corrente**. Viene visualizzata la finestra delle [differenze tra le pagine](/help/sites-cloud/authoring/features/page-diff.md), che mostra le differenze.
 
-## Timewarp   {#timewarp}
+## Timewarp    {#timewarp}
 
 Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di una pagina in specifici momenti nel passato.
+
+>[!NOTE]
+>
+>[Timewarp può essere utilizzato anche con i lanci per visualizzare l&#39;anteprima del futuro](/help/sites-cloud/authoring/launches/preview.md).
 
 Poiché la creazione di contenuti è un processo continuo e collaborativo, lo scopo di Timewarp è di consentire agli autori di tenere traccia del sito web pubblicato nel tempo, in modo da comprendere in che modo è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione.
 
