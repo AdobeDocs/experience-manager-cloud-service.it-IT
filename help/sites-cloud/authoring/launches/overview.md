@@ -2,10 +2,10 @@
 title: Lanci
 description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per una pubblicazione futura, mantenendo le pagine correnti
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 91%
+source-wordcount: '819'
+ht-degree: 90%
 
 ---
 
@@ -28,10 +28,12 @@ I lanci possono anche essere:
 * Creati per rami principali multipli. Nonostante sia possibile creare il lancio per l&#39;intero sito (e apportare le modifiche desiderate), questa operazione potrebbe risultare poco pratica perché l&#39;intero sito dovrà essere copiato. Quando vengono coinvolte centinaia o persino migliaia di pagine, i requisiti e le prestazioni di sistema sono influenzate sia dall&#39;azione di copia che, in un secondo momento, dai confronti richiesti per le attività di promozione.
 * Nidificato (un lancio all&#39;interno di un lancio), permette di creare un lancio da un lancio esistente, in modo che gli autori possano sfruttare le modifiche già apportate, senza dover eseguire le stesse modifiche più volte per ogni lancio.
 
-This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch pages from within the Sites console or [the Launches console](#the-launches-console):
+Questa sezione descrive come creare, modificare e promuovere (e se necessario [eliminare](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) le pagine di lancio dall&#39;interno della console Siti o [dalla console Lanci](#the-launches-console):
 
 * [Creazione di lanci](/help/sites-cloud/authoring/launches/creating.md)
 * [Modifica dei lanci](/help/sites-cloud/authoring/launches/editing.md)
+* [Gestione delle pagine all’interno dei lanci](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Utilizzo di Timewarp per visualizzare in anteprima i contenuti in base ai lanci](/help/sites-cloud/authoring/launches/preview.md)
 * [Promozione del lancio](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Lanci - Ordine degli eventi {#launches-the-order-of-events}
@@ -78,7 +80,7 @@ I lanci permettono di:
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>La creazione e la modifica di avvii richiede diritti di accesso a `/content/launches`, come nel caso del gruppo predefinito `content-authors`.
 >
 >Per qualsiasi problema riscontrato, contatta l&#39;amministratore del sistema.
 
