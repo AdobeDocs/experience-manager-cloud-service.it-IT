@@ -38,11 +38,11 @@ Ad esempio, se l’utilizzo del file system non è supportato, il livello Pubbli
 
 Analogamente, con tutto ciò che sta accadendo in modo asincrono come agire su eventi di osservazione, non può essere garantito che sia eseguito localmente e quindi deve essere utilizzato con cura. Ciò è vero sia per gli eventi JCR che per gli eventi delle risorse Sling. Nel momento in cui si verifica una modifica, l’istanza può essere chiusa e sostituita da un’altra istanza. Altre istanze della topologia attive in quel momento saranno in grado di reagire a tale evento. In questo caso, tuttavia, non si tratterà di un evento locale e potrebbe addirittura non esserci un leader attivo in caso di elezioni di leader in corso al momento dell&#39;emissione dell&#39;evento.
 
-## Attività in background e processi con esecuzione prolungata {#background-tasks-and-long-running-jobs}
+## Attività in background e processi lunghi {#background-tasks-and-long-running-jobs}
 
 Il codice eseguito come attività in background deve presupporre che l&#39;istanza in cui è in esecuzione possa essere ridotta in qualsiasi momento. Pertanto, il codice deve essere resiliente e la maggior parte delle importazioni deve essere ripristinabile. Ciò significa che se il codice viene rieseguito, non dovrebbe ricominciare dall&#39;inizio ma piuttosto avvicinarsi a quello che ha lasciato. Anche se questo non è un nuovo requisito per questo tipo di codice, in AEM come Cloud Service è più probabile che si verifichi una rimozione dell&#39;istanza.
 
-Per ridurre al minimo i problemi, è necessario evitare i lavori a lungo termine, se possibile, che dovrebbero essere ripresi al minimo. Per eseguire tali processi, utilizzate Processi Sling, che dispongono di una garanzia almeno una volta e quindi se vengono interrotti, verranno rieseguiti il prima possibile. Ma probabilmente non dovrebbero ricominciare dall&#39;inizio. Per la pianificazione di tali processi, è consigliabile utilizzare il pianificatore [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) , in quanto questa è di nuovo l’esecuzione almeno una volta.
+Per ridurre al minimo i problemi, è necessario evitare i lavori a lungo termine, se possibile, che dovrebbero essere ripresi al minimo. Per eseguire tali processi, utilizzate Processi Sling, che dispongono di una garanzia almeno una volta e quindi se vengono interrotti, verranno rieseguiti il prima possibile. Ma probabilmente non dovrebbero ricominciare dall&#39;inizio. Per la pianificazione di tali processi, è consigliabile utilizzare il pianificatore [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), in quanto questa è di nuovo l&#39;esecuzione almeno una volta.
 
 L&#39;Utilità di pianificazione Sling Commons non deve essere utilizzata per la pianificazione, perché non è possibile garantire l&#39;esecuzione. È molto più probabile che venga pianificato.
 
@@ -52,13 +52,13 @@ Allo stesso modo, con tutto ciò che sta accadendo in modo asincrono, come agire
 
 È vivamente consigliato che qualsiasi connessione HTTP in uscita imposti timeout ragionevoli di connessione e lettura. Per il codice che non applica questi timeout, AEM istanze in esecuzione su AEM come Cloud Service applicheranno un timeout globale. Questi valori di timeout sono 10 secondi per le chiamate di connessione e 60 secondi per le chiamate di lettura per le connessioni utilizzate dalle seguenti librerie Java popolari:
 
- Adobe consiglia di utilizzare la libreria [](https://hc.apache.org/httpcomponents-client-ga/) Apache HttpComponents Client 4.x fornita per effettuare connessioni HTTP.
+ Adobe consiglia di utilizzare la libreria [Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) fornita per effettuare connessioni HTTP.
 
 Le alternative che funzionano, ma che possono richiedere di fornire la dipendenza sono:
 
-* [java.net.UR](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) e/o [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (fornito da AEM)
+* [java.net.](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) URLand/o  [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (fornito da AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (non consigliato in quanto è obsoleto e sostituito dalla versione 4.x)
-* [OK Http](https://square.github.io/okhttp/) (non fornito da AEM)
+* [OK Http](https://square.github.io/okhttp/)  (non fornito da AEM)
 
 ## Nessuna personalizzazione interfaccia classica {#no-classic-ui-customizations}
 
@@ -66,7 +66,7 @@ AEM come Cloud Service supporta solo l&#39;interfaccia touch per il codice clien
 
 ## Evitare i binari nativi {#avoid-native-binaries}
 
-Il codice non sarà in grado di scaricare i file binari in fase di esecuzione né di modificarli. Ad esempio, non sarà in grado di decomprimere `jar` o `tar` i file.
+Il codice non sarà in grado di scaricare i file binari in fase di esecuzione né di modificarli. Ad esempio, non sarà in grado di decomprimere i file `jar` o `tar`.
 
 ## Nessun binario in streaming tramite AEM come Cloud Service {#no-streaming-binaries}
 
@@ -78,7 +78,7 @@ Ad esempio, non utilizzare `asset.getOriginal().getStream()`, che attiva il down
 
 La replica inversa da Pubblica a Autore non è supportata in AEM come Cloud Service. Se tale strategia è necessaria, potete utilizzare uno store di persistenza esterno condiviso tra le farm di istanze Pubblica e potenzialmente il cluster Autore.
 
-## È possibile che sia necessario portare gli agenti di replica successivi {#forward-replication-agents}
+## È possibile che gli agenti di replica inoltrati debbano essere portati {#forward-replication-agents}
 
 Il contenuto viene replicato da Autore a Pubblica tramite un meccanismo secondario di pubblicazione. Gli agenti di replica personalizzati non sono supportati.
 
@@ -86,7 +86,7 @@ Il contenuto viene replicato da Autore a Pubblica tramite un meccanismo secondar
 
 ### Registri {#logs}
 
-Per lo sviluppo locale, le voci di registro sono scritte in file locali nella `/crx-quickstart/logs` cartella.
+Per lo sviluppo locale, le voci di registro vengono scritte in file locali nella cartella `/crx-quickstart/logs`.
 
 Negli ambienti Cloud, gli sviluppatori possono scaricare i registri tramite Cloud Manager o utilizzare uno strumento della riga di comando per localizzare i registri. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -96,7 +96,7 @@ Per modificare i livelli di registro per gli ambienti Cloud, la configurazione S
 
 >[!NOTE]
 >
->Per eseguire le modifiche di configurazione elencate di seguito, è necessario crearle in un ambiente di sviluppo locale e quindi inviarle a un AEM come istanza di Cloud Service. Per ulteriori informazioni su come eseguire questa operazione, vedere [Distribuzione di AEM come Cloud Service](/help/implementing/deploying/overview.md).
+>Per eseguire le modifiche di configurazione elencate di seguito, è necessario crearle in un ambiente di sviluppo locale e quindi inviarle a un AEM come istanza di Cloud Service. Per ulteriori informazioni su come eseguire questa operazione, vedere [Implementazione in AEM come Cloud Service](/help/implementing/deploying/overview.md).
 
 **Attivazione del livello di registro DEBUG**
 
@@ -122,15 +122,15 @@ I livelli di registro sono i seguenti:
 
 Le discariche di thread negli ambienti Cloud vengono raccolte in modo continuativo, ma al momento non possono essere scaricate in modo autonomo. Nel frattempo, contattate AEM supporto se sono necessari dei thread dumps per il debug di un problema, specificando la finestra temporale esatta.
 
-## Console di sistema CRX/DE Lite {#crxde-lite-and-system-console}
+## Console CRX/DE Lite e System {#crxde-lite-and-system-console}
 
 ### Sviluppo locale {#local-development}
 
-Per lo sviluppo locale, gli sviluppatori hanno accesso completo ai CRXDE Lite (`/crx/de`) e alla AEM Web Console (`/system/console`).
+Per lo sviluppo locale, gli sviluppatori hanno accesso completo ai CRXDE Lite (`/crx/de`) e alla console Web AEM (`/system/console`).
 
-Sullo sviluppo locale (tramite l&#39;avvio rapido per il cloud) `/apps` e `/libs` può essere scritto direttamente, il che è diverso dagli ambienti Cloud in cui tali cartelle di livello superiore sono immutabili.
+Sullo sviluppo locale (tramite l&#39;avvio rapido per il cloud), `/apps` e `/libs` possono essere scritti direttamente, il che è diverso dagli ambienti Cloud in cui tali cartelle di livello superiore sono immutabili.
 
-### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
+### AEM come strumenti di sviluppo Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 I clienti possono accedere a CRXDE lite nell&#39;ambiente di sviluppo, ma non sullo stage o sulla produzione. L&#39;archivio immutabile (`/libs`, `/apps`) non può essere scritto in fase di esecuzione, pertanto il tentativo di eseguire tale operazione potrebbe causare errori.
 
@@ -142,7 +142,7 @@ Come scelta rapida, il seguente comando CLI di Cloud Manager può essere utilizz
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-Per ulteriori informazioni, consulta [questa pagina](/help/release-notes/home.md) .
+Per ulteriori informazioni, vedere [questa pagina](/help/release-notes/home.md).
 
 Gli sviluppatori possono generare informazioni sullo stato e risolvere diverse risorse.
 
@@ -160,10 +160,10 @@ Utile anche per il debug, la console Sviluppatore dispone di un collegamento all
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Per i programmi regolari, l&#39;accesso alla Developer Console è definito dal &quot;Cloud Manager - ruolo sviluppatore&quot; nel Admin Console , mentre per i programmi sandbox, Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che dia loro accesso a AEM come Cloud Service. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le discariche di stato e gli utenti devono essere definiti anche nel profilo di prodotto Utenti AEM o Amministratori AEM sui servizi di creazione e pubblicazione per visualizzare i dati di dump dello stato di entrambi i servizi. Per ulteriori informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consulta la Documentazione [di](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
+Per i programmi regolari, l&#39;accesso alla Developer Console è definito dal &quot;Cloud Manager - ruolo sviluppatore&quot; nel Admin Console , mentre per i programmi sandbox, Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che dia loro accesso a AEM come Cloud Service. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le discariche di stato e gli utenti devono essere definiti anche nel profilo di prodotto Utenti AEM o Amministratori AEM sui servizi di creazione e pubblicazione per visualizzare i dati di dump dello stato di entrambi i servizi. Per ulteriori informazioni sulla configurazione delle autorizzazioni per l&#39;utente, consultate [Documentazione di Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
-### AEM Staging and Production Service {#aem-staging-and-production-service}
+### AEM Servizio di gestione e produzione {#aem-staging-and-production-service}
 
 I clienti non avranno accesso agli strumenti di sviluppo per gli ambienti di produzione e di staging.
 
@@ -175,7 +175,7 @@ I clienti non avranno accesso agli strumenti di sviluppo per gli ambienti di pro
 
 Su richiesta, AEM un Cloud Service fornirà un indirizzo IP statico e dedicato per il traffico in uscita HTTP (porta 80) e HTTPS (porta 443) programmato nel codice Java.
 
-### Benefits {#benefits}
+### Vantaggi {#benefits}
 
 Questo indirizzo IP dedicato può migliorare la sicurezza durante l&#39;integrazione con fornitori SaaS (come un fornitore CRM) o altre integrazioni esterne a AEM come Cloud Service che offre un  inserì nell&#39;elenco Consentiti di indirizzi IP. Aggiungendo l&#39;indirizzo IP dedicato al inserire nell&#39;elenco Consentiti di , si garantisce che solo il traffico dal Cloud Service del cliente AEM possa fluire nel servizio esterno. Oltre al traffico proveniente da qualsiasi altro IP consentito.
 
@@ -221,14 +221,14 @@ AEM come Cloud Service richiede che la posta in uscita sia crittografata. Le sez
 
 Per impostazione predefinita, le e-mail in uscita sono disattivate. Per attivarlo, inviate un ticket di assistenza con:
 
-1. Nome di dominio completo per il server di posta elettronica (ad esempio `smtp.sendgrid.net`)
+1. Nome di dominio completo per il server di posta (ad esempio `smtp.sendgrid.net`)
 1. La porta da utilizzare. Deve essere la porta 465 se supportata dal server di posta, altrimenti la porta 587 Nota che la porta 587 può essere utilizzata solo se il server di posta richiede e applica TLS su quella porta
 1. ID del programma e ID dell&#39;ambiente per gli ambienti per i quali desiderano inviare messaggi di posta elettronica
 1. Indica se l&#39;accesso SMTP è necessario per l&#39;autore, la pubblicazione o entrambi.
 
-### Invio e-mail {#sending-emails}
+### Invio di e-mail {#sending-emails}
 
-Il servizio [OSGI](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) Day CQ Mail Service deve essere utilizzato e i messaggi e-mail devono essere inviati al server di posta indicato nella richiesta di assistenza, anziché direttamente ai destinatari.
+È necessario utilizzare il servizio OSGI [Day CQ Mail Service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) e i messaggi e-mail devono essere inviati al server di posta indicato nella richiesta di assistenza, anziché direttamente ai destinatari.
 
 AEM CS richiede l&#39;invio della posta tramite la porta 465. Se un server di posta elettronica non supporta la porta 465, è possibile utilizzare la porta 587, purché sia abilitata l&#39;opzione TLS.
 
@@ -238,18 +238,18 @@ AEM CS richiede l&#39;invio della posta tramite la porta 465. Se un server di po
 
 ### Configurazione {#email-configuration}
 
-Le e-mail in AEM devono essere inviate utilizzando il servizio OSGi [Day CQ Mail Service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+Le e-mail in AEM devono essere inviate utilizzando il servizio [Day CQ Mail Service OSGi Service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Per informazioni dettagliate sulla configurazione delle impostazioni delle e-mail, consultate [AEM documentazione](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) 6.5. Per AEM CS, è necessario apportare le seguenti modifiche al `com.day.cq.mailer.DefaultMailService OSGI` servizio:
+Per informazioni dettagliate sulla configurazione delle impostazioni e-mail, vedere la documentazione di [AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html). Per AEM CS, è necessario apportare le seguenti modifiche al servizio `com.day.cq.mailer.DefaultMailService OSGI`:
 
 Se la porta 465 è stata richiesta:
 
-* imposta `smtp.port` su `465`
-* imposta `smtp.ssl` su `true`
-* imposta `smtp.starttls` su `false`
+* impostare `smtp.port` su `465`
+* impostare `smtp.ssl` su `true`
+* impostare `smtp.starttls` su `false`
 
 Se la porta 587 è stata richiesta (consentita solo se il server di posta elettronica non supporta la porta 465):
 
-* imposta `smtp.port` su `587`
-* imposta `smtp.ssl` su `false`
-* imposta `smtp.starttls` su `true`
+* impostare `smtp.port` su `587`
+* impostare `smtp.ssl` su `false`
+* impostare `smtp.starttls` su `true`
