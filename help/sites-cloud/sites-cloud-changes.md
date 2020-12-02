@@ -31,14 +31,14 @@ Le modifiche e le aggiunte  AEM Sites come Cloud Service sono le seguenti:
 * [Operazioni asincrone sulle pagine](#asynchronous-page-operations)
 * [Nuovo sito di riferimento ed esercitazione](#new-reference-site-and-tutorial)
 
-## Operazioni asincrone sulle pagine {#asynchronous-page-operations}
+## Operazioni pagina asincrone {#asynchronous-page-operations}
 
 Nel servizio AEM Cloud, le operazioni che tradizionalmente hanno bloccato l&#39;interfaccia utente sono state suddivise in attività più piccole che vengono eseguite in background.
 
 * Spostare le pagine
 * Pagine di rollout
 
-L’iniziatore di tali azioni può controllarne lo stato in una nuova interfaccia in `/mnt/overlay/dam/gui/content/asyncjobs.html`.
+L&#39;iniziatore di tali azioni può controllarne lo stato in una nuova interfaccia in `/mnt/overlay/dam/gui/content/asyncjobs.html`.
 
 >[!NOTE]
 >
@@ -46,13 +46,13 @@ L’iniziatore di tali azioni può controllarne lo stato in una nuova interfacci
 
 ## Nuovo sito di riferimento ed esercitazione {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), un nuovo sito di riferimento AEM, è stato aggiornato e pubblicato in modo da riflettere le procedure ottimali per la creazione di un sito Web con AEM, e il set completo di funzionalità, componenti e modelli di distribuzione disponibili in AEM. Il nuovo sito di riferimento e l’ [esercitazione](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) che lo accompagna riguardano argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti con  Adobe Experience Manager Sites.
+[WKND](https://wknd.site/), un nuovo sito di riferimento AEM, è stato aggiornato e pubblicato in modo da riflettere le procedure ottimali per la creazione di un sito Web con AEM, e il set completo di funzionalità, componenti e modelli di distribuzione disponibili in AEM. Il nuovo sito di riferimento e l&#39; [esercitazione di accompagnamento](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) riguardano argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti con  Adobe Experience Manager Sites.
 
-In precedenza, We.Retail era installato per impostazione predefinita con AEM (tranne quando avviato in modalità di produzione).  Ora, per impostazione predefinita, un sito di riferimento non verrà installato.  Viene invece fornito [git repo](https://github.com/adobe/aem-guides-wknd/) e [l&#39;esercitazione](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) con il codice del sito di riferimento WKND aggiornato.
+In precedenza, We.Retail era installato per impostazione predefinita con AEM (tranne quando avviato in modalità di produzione).  Ora, per impostazione predefinita, un sito di riferimento non verrà installato.  Viene invece fornito il [git repo](https://github.com/adobe/aem-guides-wknd/) e [tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) con il codice aggiornato del sito di riferimento WKND.
 
 ## Funzionalità non disponibili in Runtime {#capabilities-not-available-at-runtime}
 
-AEM come Cloud Service è sempre attivo e sempre aggiornato. Per ottenere questo risultato è necessario separare l&#39;archivio AEM in contenuto immutabile e modificabile e impedire l&#39;accesso a contenuto immutabile in fase di esecuzione. Per ulteriori dettagli sul contenuto modificabile e immutabile, vedere Aree [variabile e non modificabili del repository](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
+AEM come Cloud Service è sempre attivo e sempre aggiornato. Per ottenere questo risultato è necessario separare l&#39;archivio AEM in contenuto immutabile e modificabile e impedire l&#39;accesso a contenuto immutabile in fase di esecuzione. Per ulteriori informazioni sui contenuti mutabili e immutabili, vedere [Aree variabili rispetto alle aree immutabili del repository](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
 
 A causa dell&#39;impossibilità di accedere al contenuto immutabile in fase di esecuzione, le seguenti operazioni  AEM Sites non sono disponibili in fase di esecuzione:
 
