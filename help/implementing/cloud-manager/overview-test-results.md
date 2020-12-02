@@ -18,7 +18,7 @@ Sono disponibili tre grandi categorie di test supportati da Cloud Manager per pi
 
    Il test della qualità del codice valuta la qualità del codice dell’applicazione. La pipeline Code-Quality viene eseguita immediatamente dopo la fase di creazione in tutti i gasdotti non di produzione e produzione.
 
-   Le regole [di qualità del codice](/help/implementing/cloud-manager/custom-code-quality-rules.md) personalizzate eseguite da Cloud Manager vengono create in base alle best practice AEM Engineering.
+   Le [Regole di qualità del codice personalizzate](/help/implementing/cloud-manager/custom-code-quality-rules.md) eseguite da Cloud Manager vengono create in base alle best practice di AEM Engineering.
 
 1. [Test funzionale](/help/implementing/cloud-manager/functional-testing.md)
 
