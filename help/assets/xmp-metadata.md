@@ -15,7 +15,7 @@ ht-degree: 21%
 
 XMP (Extensible Metadata Platform) è lo standard di metadati utilizzato da  AEM Assets per la gestione di tutti i metadati. XMP fornisce un formato standard per la creazione, l&#39;elaborazione e lo scambio di metadati per un&#39;ampia gamma di applicazioni.
 
-Oltre a offrire una codifica universale dei metadati che può essere incorporata in tutti i formati di file, XMP fornisce un modello [di](#xmp-core-concepts) contenuto avanzato ed è [supportato da  Adobe](#advantages-of-xmp) e da altre aziende, in modo che gli utenti di XMP in combinazione con  AEM Assets abbiano una piattaforma potente su cui costruire.
+Oltre a offrire una codifica universale dei metadati che può essere incorporata in tutti i formati di file, XMP fornisce un modello di contenuto [ricco](#xmp-core-concepts) ed è [supportato da  Adobe](#advantages-of-xmp) e da altre aziende, in modo che gli utenti di XMP in combinazione con  AEM Assets possano contare su una piattaforma potente su cui realizzare l&#39;integrazione.
 
 ## Panoramica XMP ed ecosistema {#xmp-ecosystem}
 
@@ -46,15 +46,16 @@ Lo standard XMP è progettato per essere estensibile e consente di aggiungere ti
 
 >[!NOTE]
 >
->XMP generalmente non consente l&#39;incorporazione di tipi di dati binari. Per trasmettere dati binari in XMP, ad esempio, immagini in miniatura, è necessario codificarli in un formato XML adatto, ad esempio `Base64`.
+>XMP generalmente non consente l&#39;incorporazione di tipi di dati binari. Per trasmettere dati binari in XMP, ad esempio, immagini in miniatura, è necessario codificarli in un formato adatto a XML, ad esempio `Base64`.
 
-### Concetti XMP {#xmp-core-concepts}
+### Concetti di base XMP {#xmp-core-concepts}
 
 **Spazi dei nomi e schemi**
 
-Uno schema XMP è un insieme di nomi di proprietà in uno spazio nomi XML comune che include il tipo di dati e informazioni descrittive. Uno schema XMP è identificato dal relativo URI dello spazio dei nomi XML. L&#39;utilizzo di spazi dei nomi evita conflitti tra proprietà in schemi diversi con lo stesso nome ma con un significato diverso.
+Uno schema XMP è un insieme di nomi di proprietà in uno spazio dei nomi XML comune che include
+il tipo di dati e le informazioni descrittive. Uno schema XMP è identificato dal relativo URI dello spazio dei nomi XML. L&#39;utilizzo di spazi dei nomi evita conflitti tra proprietà in schemi diversi con lo stesso nome ma con un significato diverso.
 
-Ad esempio, la proprietà **Creatore** in due schemi progettati in modo indipendente potrebbe indicare la persona che ha creato la risorsa o l’applicazione che ha creato la risorsa (ad esempio,  Adobe Photoshop).
+Ad esempio, la proprietà **Creator** in due schemi progettati in modo indipendente potrebbe indicare la persona che ha creato la risorsa o l&#39;applicazione che ha creato la risorsa (ad esempio,  Adobe Photoshop).
 
 **XMP proprietà e valori**
 
@@ -67,7 +68,7 @@ XMP possono includere proprietà di uno o più schemi. Ad esempio, un sottoinsie
 
 **Lingue alternative**
 
-XMP consente di aggiungere una `xml:lang` proprietà alle proprietà di testo per specificare la lingua del testo.
+XMP consente di aggiungere una proprietà `xml:lang` alle proprietà di testo per specificare la lingua del testo.
 
 ## Write-back XMP per le rappresentazioni {#xmp-writeback-to-renditions}
 
@@ -77,11 +78,11 @@ Quando modificate i metadati di una risorsa dall’interno  AEM Assets o durante
 
 La funzione di XMP riscrittura propaga le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa.
 
-Considerate uno scenario in cui modificate la proprietà [!UICONTROL Titolo] della risorsa `Classic Leather` con titolo `Nylon`.
+Considerate uno scenario in cui modificate la proprietà [!UICONTROL Title] della risorsa denominata `Classic Leather` in `Nylon`.
 
 ![metadati](assets/metadata.png)
 
-In questo caso, l’AEM Assets  salva le modifiche alla proprietà **[!UICONTROL Titolo]** nel `dc:title` parametro per i metadati delle risorse memorizzati nella gerarchia delle risorse.
+In questo caso, l&#39;AEM Assets  salva le modifiche alla proprietà **[!UICONTROL Title]** nel parametro `dc:title` per i metadati delle risorse memorizzati nella gerarchia delle risorse.
 
 ![metadata_stored](assets/metadata_stored.png)
 
@@ -94,23 +95,23 @@ La funzione di XMP riscrittura consente di estendere le modifiche ai metadati a 
 <!-- asgupta, Engg: Need attention here to update the configuration manager changes.
 -->
 
-Per abilitare la propagazione delle modifiche ai metadati alle rappresentazioni della risorsa al momento del caricamento, modificate la configurazione **[!UICONTROL Adobe CQ DAM Rendition Maker]** in Configuration Manager.
+Per abilitare la propagazione delle modifiche ai metadati alle rappresentazioni della risorsa durante il caricamento, modificate la configurazione di **[!UICONTROL Adobe CQ DAM Rendition Maker]** in Configuration Manager.
 
-1. Per aprire Configuration Manager, accedere `https://[aem_server]:[port]/system/console/configMgr`.
-1. Apri la configurazione **[!UICONTROL Adobe CQ DAM Rendition Maker]** .
-1. Selezionate l’opzione **[!UICONTROL Propaga XMP]** , quindi salvate le modifiche.
+1. Per aprire Configuration Manager, accedere a `https://[aem_server]:[port]/system/console/configMgr`.
+1. Aprire la configurazione **[!UICONTROL Adobe CQ DAM Rendition Maker]**.
+1. Selezionare l&#39;opzione **[!UICONTROL Propaga XMP]**, quindi salvare le modifiche.
 
 ### Abilita XMP riscrittura per rappresentazioni specifiche {#enable-xmp-writeback-for-specific-renditions}
 
-Per consentire alla funzione di XMP di riscrittura di diffondere le modifiche ai metadati per selezionare le rappresentazioni, specificate queste rappresentazioni nel passaggio del flusso di lavoro [!UICONTROL XMP WriteBack del processo] di WriteBack dei metadati DAM. Per impostazione predefinita, questo passaggio è configurato con la rappresentazione originale.
+Per consentire alla funzione di XMP riscrittura di diffondere le modifiche ai metadati per selezionare le rappresentazioni, specificate queste rappresentazioni nel passaggio del flusso di lavoro [!UICONTROL XMP WriteBack Process] del flusso di lavoro ScriviIndietro di metadati DAM. Per impostazione predefinita, questo passaggio è configurato con la rappresentazione originale.
 
 Per estendere i metadati alle miniature delle rappresentazioni 140.100.png e 319.319.png XMP funzione di riscrittura, effettuate le seguenti operazioni.
 
 1. Tocca/fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
-1. Dalla pagina Modelli, aprite il modello di flusso di lavoro **[!UICONTROL DAM Metadata Writeback]** .
+1. Dalla pagina Modelli, aprire il modello di flusso di lavoro **[!UICONTROL Write-back metadati DAM]**.
 1. Nella pagina delle proprietà **[!UICONTROL Writeback di metadati DAM]**, apri il passaggio **[!UICONTROL Processo write-back XMPs]**.
 1. Nella finestra di dialogo **[!UICONTROL Proprietà passaggio]**, tocca/fai clic sulla scheda **[!UICONTROL Processo]**.
-1. Nella casella **[!UICONTROL Argomenti]** , aggiungete `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, quindi toccate o fate clic su **[!UICONTROL OK]**.
+1. Nella casella **[!UICONTROL Argomenti]** aggiungere `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, quindi toccare o fare clic su **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
@@ -123,5 +124,5 @@ Le modifiche ai metadati vengono propagate alle miniature delle rappresentazioni
 
 >[!MORELIKETHIS]
 >
->* [XMP specifica per Adobe](https://www.adobe.com/devnet/xmp.html)
+>* [XMP specifica per Adobe ](https://www.adobe.com/devnet/xmp.html)
 
