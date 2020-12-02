@@ -14,7 +14,7 @@ ht-degree: 87%
 
 Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
 
-* The title appears in the [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) rail, from where authors can access them to work on them.
+* Il titolo viene visualizzato nella barra laterale [Riferimenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references), dalla quale gli autori possono accedervi per utilizzarlo.
 * Per impostazione predefinita nel lancio vengono incluse le pagine figlie della pagina di origine. Se necessario, potete comunque usare anche solo la pagina sorgente.
 * Per impostazione predefinita, Live Copy aggiorna automaticamente le pagine di lancio mano a mano che vengono modificate le pagine sorgente. Per evitare che vengano apportate tali modifiche automatiche, puoi specificare che venga creata una copia statica. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
@@ -81,8 +81,8 @@ Puoi creare un lancio da Sites o dalla console Lanci:
 
    Se torni alla console (con **Fine**), puoi visualizzare il lancio (e accedervi) in uno dei due modi seguenti:
 
-   * The [**Launches** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * The [**References** in the **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * Console [**Lanci**](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * La [**References** nella console **Sites**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### Creare un lancio con un nuovo modello {#create-launch-with-new-template}
 
@@ -107,7 +107,7 @@ Quando selezioni questa opzione:
 >
 >Questo metodo può essere utilizzato per modificare il modello di una [pagina esistente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page); tuttavia, deve essere tenuta in considerazione la perdita di contenuto.
 
-### Creazione di un lancio nidificato {#creating-a-nested-launch}
+### Creazione di un lancio nidificato  {#creating-a-nested-launch}
 
 Un lancio nidificato (lancio all’interno di un altro lancio) dà la possibilità di creare un lancio da un lancio esistente in modo che gli autori possano sfruttare le modifiche già apportate, anziché doverle apportare più volte per ogni lancio.
 
@@ -117,7 +117,7 @@ Un lancio nidificato (lancio all’interno di un altro lancio) dà la possibilit
 
 #### Creazione di un lancio nidificato: console Lanci {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+La creazione di un lancio nidificato dalla console **Lanci** è sostanzialmente la stessa procedura utilizzata per creare qualsiasi altra forma di avvio, con l&#39;eccezione che è necessario passare al ramo avvii `/content/launches`:
 
 1. Nella console **Lanci** seleziona **Crea**.
 1. Fai clic su **Aggiungi pagine**, quindi specifica `/content/launches` nel filtro per individuare il ramo lanci. Scegli il lancio necessario e conferma con **Seleziona**:
