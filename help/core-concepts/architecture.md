@@ -71,7 +71,7 @@ Sono disponibili tre tipi di ambienti con AEM come Cloud Service:
 
 * **Ambiente di sviluppo**: consente agli sviluppatori di implementare le applicazioni AEM nelle medesime condizioni di esecuzione degli ambienti di stage e produzione.
 
-   Per ulteriori informazioni, consulta [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) .
+   Per ulteriori informazioni, fare riferimento a [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager).
 
 ## Programmi {#programs}
 
@@ -82,7 +82,7 @@ Un programma AEM è il contenitore che include:
 |  Elemento del programma |  Numero |
 |--- |--- |
 | Archivio del codice (Git) |  1 |
-| Immagine linea di base (Sites o Assets) |  1 |
+| Immagine linea di base (Sites o Assets) |  3 |
 | Set di ambienti di stage e produzione (1:1) | 0 o 1 |
 | Ambienti non di produzione (sviluppo o dimostrazione) | Da 0 a N |
 | Pipeline per ogni ambiente | 0 o 1 |
