@@ -18,7 +18,7 @@ In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse p
 
 ## Lasciatevi ispirare. Rimanete informati.
 
-[Registratevi](https://www.adobe.com/subscription/dynamic-media-newsletter.html) per ricevere la newsletter per contenuti multimediali dinamici mensilmente nella casella in entrata.
+[Registratevi ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) per ricevere la newsletter per contenuti multimediali dinamici mensilmente nella casella in entrata.
 
 ## È stato risolto un problema della Dynamic Media Newsletter?
 
