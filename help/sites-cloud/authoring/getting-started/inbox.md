@@ -43,7 +43,7 @@ Per le varie console, il numero corrente di elementi nella casella in entrata è
 >
 >Alcune azioni sono anche visualizzate nella [vista a schede della relativa risorsa](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## Apertura della casella in entrata  {#opening-the-inbox}
+## Apertura della casella in entrata   {#opening-the-inbox}
 
 Per aprire la casella in entrata delle notifiche AEM:
 
@@ -183,7 +183,7 @@ Dalla casella in entrata è possibile creare le attività:
 
 1. Seleziona **Invia**.
 
-## Creazione di un progetto  {#creating-a-project}
+## Creazione di un progetto   {#creating-a-project}
 
 Per determinate attività, puoi creare un [Progetto](/help/sites-cloud/authoring/projects/overview.md) basato su tale attività:
 
