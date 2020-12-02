@@ -67,7 +67,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 1. Configura le classi CSS da rendere disponibili agli autori di contenuti come descritto nella sezione [Autore di modelli](#as-a-template-author).
 1. Gli autori di contenuti possono quindi utilizzare gli stili come descritto nella sezione [Autore di contenuti](#as-a-content-author).
 
-### Autore di contenuti  {#as-a-content-author}
+### Autore di contenuti   {#as-a-content-author}
 
 1. Dopo aver installato il progetto WKND, visita la pagina principale in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e modifica la pagina.
 1. Seleziona un componente **Titolo** più in basso nella pagina.
@@ -82,7 +82,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
    >
    >In questo esempio, gli stili **Colori** (**Nero**, **Bianco** e **Grigio**) si escludono a vicenda, mentre le opzioni di **Stile** (**Sottolineato**, **Allinea a destra** e **Spaziatura minima**) possono essere combinate. Tutto questo può essere [configurato nel modello se si è l’autore del modello](#as-a-template-author).
 
-### Autore di modelli  {#as-a-template-author}
+### Autore di modelli   {#as-a-template-author}
 
 1. Durante la modifica della pagina mastro in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifica il modello di pagina da **Informazioni pagina > Modifica modello**.
 
@@ -105,7 +105,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) in order to work.
+>Per poter funzionare, le classi CSS (così come qualsiasi codice JavaScript necessario) configurate come proprietà di stile del criterio di un componente devono essere distribuite come [librerie client](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Configurazione {#setup}
 
@@ -141,7 +141,7 @@ La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo
 >
 >Per impostazione predefinita, la scheda Stili nella finestra di dialogo Modifica non è abilitata.
 
-### Stili con nomi di elementi  {#styles-with-element-names}
+### Stili con nomi di elementi   {#styles-with-element-names}
 
 Uno sviluppatore può anche configurare un elenco di nomi di elementi consentiti per gli stili sul componente con la proprietà string array `cq:styleElements`. Quindi, nella scheda Stili del criterio nella finestra di dialogo della progettazione, l’autore del modello può anche scegliere un nome di elemento da impostare per ogni stile. In questo modo verrà impostato il nome dell’elemento wrapper.
 
