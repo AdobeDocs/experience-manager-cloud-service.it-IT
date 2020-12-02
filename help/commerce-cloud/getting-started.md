@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
+source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 93%
+source-wordcount: '677'
+ht-degree: 80%
 
 ---
 
@@ -64,9 +64,25 @@ Per collegare AEM Commerce a Magento, procedi come segue:
 
 >[!NOTE]
 >
->In alternativa, puoi utilizzare l’[API di Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) per configurare anche le variabili di Cloud Manager.
+>In alternativa, puoi usare l&#39;API [Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) per configurare anche le variabili di Cloud Manager.
 
 Dopodiché, potrai utilizzare AEM Commerce as a Cloud Service e implementare il progetto tramite Cloud Manager.
+
+## Abilitare le funzioni del catalogo in fase (facoltativo) {#staging}
+
+>[!NOTE]
+>
+>Questa funzione è disponibile solo con Magento Enterprise Edition o Magento Cloud.
+
+1. Accedete al Magento e create un token di integrazione. Per ulteriori informazioni, vedere [Autenticazione basata su token](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens). Assicuratevi che il token di integrazione disponga dell&#39;accesso *only* alle risorse `Content -> Staging`. Copiate il valore `Access Token`.
+
+1. Imposta la variabile segreta `COMMERCE_AUTH_HEADER` in Cloud Manager:
+
+   ```bash
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+   ```
+
+   Per informazioni su come configurare  CLI Adobe I/O per Cloud Manager, vedere [Collegamento AEM Commerce con Magento](#magento).
 
 ## Integrazioni con soluzioni commerce di terze parti {#integrations}
 
