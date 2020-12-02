@@ -16,7 +16,7 @@ Questa pagina descrive i parametri configurabili presenti nell&#39;Adobe  AEM fi
 
 ## Parametri {#parameters}
 
-![Finestra HTTP Target](assets/httpwindow.png "WindowTarget HTTP")
+![Finestra HTTP Target ](assets/httpwindow.png "WindowTarget HTTP")
 
 La finestra contiene i seguenti parametri configurabili:
 
