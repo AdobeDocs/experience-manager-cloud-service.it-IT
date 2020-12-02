@@ -3,9 +3,9 @@ title: Condivisione di risorse, cartelle e raccolte come collegamento
 description: Questo articolo descrive come condividere risorse, cartelle e raccolte all'interno  risorse Experience Manager come collegamento ipertestuale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Condividere e distribuire le risorse gestite in  Experience Manager {#share-assets-from-aem}
 
-Risorse Adobe Experience Manager (AEM) consente di condividere risorse, cartelle e raccolte con membri dell’organizzazione ed entità esterne, inclusi partner e fornitori. Utilizzate i seguenti metodi per condividere le risorse da  risorse di Experience Manager come Cloud Service:
+Risorse Adobe Experience Manager (AEM) consente di condividere risorse, cartelle e raccolte con membri dell’organizzazione ed entità esterne, inclusi partner e fornitori. Utilizzate i seguenti metodi per condividere risorse da  risorse di Experience Manager come [!DNL Cloud Service]:
 
 * Condividi come collegamento.
 * Scaricate le risorse e condividetele separatamente.
@@ -187,6 +187,5 @@ Consultate [come configurare AEM da utilizzare con  collegamento risorsa Adobe](
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
