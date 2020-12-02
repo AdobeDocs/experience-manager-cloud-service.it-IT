@@ -19,25 +19,25 @@ Assets Insights acquisisce i dettagli dell’attività dell’utente, ad esempio
 
 Per acquisire le statistiche di utilizzo per le immagini da un sito Web, è necessario includere nel codice del sito Web il codice da incorporare per l’immagine.
 
-Per consentire a Informazioni sulle risorse di visualizzare le statistiche di utilizzo per le risorse, configurate prima la funzione per recuperare i dati di reporting da  Adobe Analytics. Per informazioni dettagliate, consultate [Configurare approfondimenti](#configure-asset-insights)risorse.
+Per consentire a Informazioni sulle risorse di visualizzare le statistiche di utilizzo per le risorse, configurate prima la funzione per recuperare i dati di reporting da  Adobe Analytics. Per informazioni dettagliate, consultate [Configurare le informazioni sulle risorse](#configure-asset-insights).
 
 >[!NOTE]
 >
 >Le informazioni approfondite sono supportate e fornite solo per le immagini.
 
-## Visualizzare le statistiche per un’immagine {#viewing-statistics-for-an-image}
+## Visualizzare le statistiche per un&#39;immagine {#viewing-statistics-for-an-image}
 
 Potete visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
 
-1. Nell’interfaccia utente di Assets, seleziona l’immagine e tocca **[!UICONTROL Proprietà]** dalla barra degli strumenti.
-1. Dalla pagina Proprietà, tocca **[!UICONTROL Approfondimenti]**.
-1. Consultate i dettagli di utilizzo della risorsa nella scheda **[!UICONTROL Insights]** (Approfondimenti). Nella sezione **[!UICONTROL Punteggio]** sono descritte le risorse totali utilizzate e le risorse disponibili per le prestazioni di una risorsa.
+1. Dall’interfaccia utente di Assets, seleziona l’immagine e tocca **[!UICONTROL Properties]** dalla barra degli strumenti.
+1. Dalla pagina Proprietà, toccare **[!UICONTROL Insights]**.
+1. Rivedete i dettagli di utilizzo della risorsa nella scheda **[!UICONTROL Insights]**. La sezione **[!UICONTROL Punteggio]** descrive il totale delle risorse utilizzate e delle prestazioni di una risorsa.
 
    La valutazione dell&#39;utilizzo descrive il numero di volte in cui la risorsa viene utilizzata in varie soluzioni.
 
-   Il punteggio **[!UICONTROL Impression]** indica quante volte la risorsa viene caricata sul sito Web. Il numero visualizzato in **[!UICONTROL Clic]** indica quante volte è possibile fare clic sulla risorsa.
+   Il punteggio **[!UICONTROL Impression]** indica quante volte la risorsa viene caricata sul sito Web. Il numero visualizzato in **[!UICONTROL Clic]** indica quante volte si fa clic sulla risorsa.
 
-1. Consultate la sezione Statistiche **[!UICONTROL di]** utilizzo per sapere di quali entità faceva parte la risorsa e di quali soluzioni creative ha utilizzato di recente. Maggiore è l’utilizzo, maggiori saranno le probabilità che la risorsa sia popolare tra gli utenti. I dati di utilizzo vengono visualizzati sotto le intestazioni seguenti:
+1. Rivedete la sezione **[!UICONTROL Statistiche di utilizzo]** per sapere di quali entità faceva parte la risorsa e quali soluzioni creative ne hanno recentemente utilizzato la risorsa. Maggiore è l’utilizzo, maggiori saranno le probabilità che la risorsa sia popolare tra gli utenti. I dati di utilizzo vengono visualizzati sotto le intestazioni seguenti:
 
    * **[!UICONTROL Risorsa]**: Il numero di volte in cui la risorsa faceva parte di una raccolta o di una risorsa composta.
    * **[!UICONTROL Web e dispositivi mobili]**: Il numero di volte in cui la risorsa faceva parte di siti Web e app.
@@ -58,7 +58,7 @@ Potete visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
    >
    >A differenza dei dati nella sezione Soluzioni, nella sezione Statistiche prestazioni vengono visualizzati i dati più recenti.
 
-1. Per ottenere il codice da incorporare per la risorsa che includete nei siti Web per ottenere i dati sulle prestazioni, toccate o fate clic su **[!UICONTROL Ottieni codice]** da incorporare sotto la miniatura della risorsa. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. Per ottenere il codice da incorporare per la risorsa che includete nei siti Web per ottenere i dati sulle prestazioni, toccate o fate clic su **[!UICONTROL Ottieni codice da incorporare]** sotto la miniatura della risorsa. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -67,15 +67,15 @@ Potete visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
 Dalla **[!UICONTROL Visualizzazione approfondimenti]** puoi visualizzare simultaneamente un punteggio di tutte le risorse presenti all’interno di una cartella.
 
 1. Nell’interfaccia utente Risorse, passa alla cartella contenente le risorse per le quali vuoi visualizzare informazioni.
-1. Toccate o fate clic sull&#39;icona Layout dalla barra degli strumenti, quindi scegliete Visualizzazione **[!UICONTROL approfondimenti]**.
+1. Toccate/fate clic sull&#39;icona Layout dalla barra degli strumenti, quindi scegliete **[!UICONTROL Visualizzazione approfondimenti]**.
 1. Nella pagina vengono visualizzati i punteggi di utilizzo delle risorse. Confronta le valutazioni delle varie risorse e trai informazioni approfondite.
 
-## Pianificazione processo in background {#scheduling-background-job}
+## Pianificare il processo in background {#scheduling-background-job}
 
-Asset Insights recupera i dati di utilizzo delle risorse dalle suite di rapporti di  Adobe Analytics in modo periodico. Per impostazione predefinita, Asset Insights esegue un processo in background ogni 24 ore alle 2 del mattino fino ai dati di recupero. Tuttavia, potete modificare sia la frequenza che l’ora configurando il servizio **[!UICONTROL sincronizzazione dei processi]** di sincronizzazione delle prestazioni delle risorse di Adobe CQ DAM dalla console Web.
+Asset Insights recupera i dati di utilizzo delle risorse dalle suite di rapporti di  Adobe Analytics in modo periodico. Per impostazione predefinita, Asset Insights esegue un processo in background ogni 24 ore alle 2 del mattino fino ai dati di recupero. Tuttavia, potete modificare sia la frequenza che l&#39;ora configurando il servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dalla console Web.
 
 1. Tocca il logo AEM e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
-1. Aprite la configurazione del servizio **[!UICONTROL servizio di sincronizzazione dei processi]** di prestazioni delle risorse Adobe CQ DAM.
+1. Apri la configurazione del servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -100,10 +100,10 @@ Adobe Experience Manager (AEM) Assets recupera i dati di utilizzo AEM risorse ut
 
    *Figura: Configurare  Adobe Analytics per Assets Insights in AEM*
 
-1. Tocca o fai clic su **[!UICONTROL Autentica]**. Dopo aver AEM autenticato le credenziali, dall’elenco Suite **[!UICONTROL di]** rapporti, scegliete una suite di rapporti Adobe Analytics  da cui recuperare i dati in Asset Insights. Fate clic su **[!UICONTROL Aggiungi]**.
+1. Tocca o fai clic su **[!UICONTROL Autentica]**. Dopo aver AEM autenticato le credenziali, dall&#39;elenco **[!UICONTROL Suite di rapporti]**, scegliete una suite di rapporti Adobe Analytics  da dove si desidera che Asset Insights recuperi i dati. Fate clic su **[!UICONTROL Aggiungi]**.
 1. Dopo aver impostato AEM suite di rapporti, toccate **[!UICONTROL Fine]**.
 
-### Tracciatore pagina {#page-tracker}
+### Page Tracker {#page-tracker}
 
 Dopo aver configurato l&#39;account Adobe Analytics , viene generato il codice Page Tracker. Per abilitare Assets Insights a tracciare AEM risorse utilizzate in siti Web di terze parti, includi il codice di tracciamento delle pagine nel codice del sito Web. Utilizzate l&#39;utility Page Tracker in  AEM Assets per generare il codice di tracciamento pagina. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
