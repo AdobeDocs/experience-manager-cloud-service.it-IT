@@ -18,32 +18,32 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * l requisiti di sistema minimi per lo strumento Content Transfer (Trasferimento contenuti) sono AEM 6.3 o versione successiva e JAVA 8. Se utilizzi una precedente versione di AEM, dovrai aggiornare l’archivio dei contenuti ad AEM 6.5 per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-* Java deve essere configurato nell&#39;ambiente AEM, in modo che il `java` comando possa essere eseguito dall&#39;utente che avvia AEM.
+* Java deve essere configurato nell&#39;ambiente AEM, in modo che il comando `java` possa essere eseguito dall&#39;utente che avvia AEM.
 
 * Content Transfer Tool può essere utilizzato con i seguenti tipi di archivio dati: Archivio dati file, Archivio dati S3, Archivio dati S3 condiviso e Archivio dati Azure Blob.
 
-* Se utilizzate un ambiente *sandbox*, accertatevi che l’ambiente sia aggiornato alla versione più recente. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
+* Se utilizzi un ambiente *sandbox*, accertati che l&#39;ambiente sia aggiornato alla versione più recente. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
 
 * Per utilizzare lo strumento di trasferimento dei contenuti, è necessario essere un utente amministratore nell’istanza di origine e appartenere al gruppo di amministratori AEM locali nell’istanza di Cloud Service a cui si sta trasferendo il contenuto. Gli utenti non autorizzati non potranno recuperare il token di accesso per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
 * Attualmente la dimensione predefinita di MongoDB per un AEM come istanza Author di Cloud Service è 32 GB. Si consiglia di inviare un ticket di supporto per le dimensioni dello store del segmento superiori a 20 GB, in modo da aumentare le dimensioni di MongoDB.
 
-* Gli utenti e i gruppi trasferiti dallo strumento di trasferimento dei contenuti sono solo quelli richiesti dal contenuto per soddisfare le autorizzazioni. Il processo *Estrazione* copia l’intero `/home` nel set di migrazione e il processo di *inserimento* copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL del contenuto migrato.
+* Gli utenti e i gruppi trasferiti dallo strumento di trasferimento dei contenuti sono solo quelli richiesti dal contenuto per soddisfare le autorizzazioni. Il processo *Extraction* copia l&#39;intero `/home` nel set di migrazione e il processo *Ingestion* copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL del contenuto migrato.
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 
-* Dopo aver completato la fase di *estrazione* del processo di trasferimento del contenuto e prima di avviare la fase *di* inserimento per assimilare il contenuto nella AEM come *fase* Cloud Service o istanze *produzione* , dovrete registrare un ticket di supporto per notificare  Adobe l&#39;intenzione di eseguire l&#39; *inserimento* ** in modo che  Adobe possa garantire che non si verifichino interruzioni durante il processo di caricamento dei dati. Dovrai registrare il ticket di assistenza 1 settimana prima della data di *inserimento* prevista. Una volta inviato il ticket di assistenza, il team di assistenza fornirà assistenza sui passaggi successivi.
+* Dopo aver completato la fase *Estrazione* del processo di trasferimento del contenuto e prima di avviare le istanze *Ingestion Phase* per assimilare il contenuto nel AEM come Cloud Service *Stage* o *Produzione*, sarà necessario registrare un ticket di supporto per notificare  Adobe l&#39;intenzione di eseguire *Ingestion&lt;a a9/> in modo che  Adobe possa garantire che durante il processo* Ingestion *non si verifichino interruzioni.* Sarà necessario registrare il ticket di assistenza 1 settimana prima della data pianificata *Ingestion*. Una volta inviato il ticket di assistenza, il team di assistenza fornirà assistenza sui passaggi successivi.
    * Registrare un ticket di assistenza con i seguenti dettagli:
-      * Data esatta e ora stimata (con il tuo fuso orario) quando intendi avviare la fase di *inserimento* .
+      * Data esatta e ora stimata (con il tuo fuso orario) quando intendi avviare la fase *Ingestion*.
       * Tipo di ambiente (fase o produzione) in cui si intende inserire i dati.
       * ID programma.
 
-* La *fase di acquisizione* per l’istanza di authoring riduce l’intera implementazione di authoring. Questo significa che l’istanza di authoring di AEM non sarà disponibile durante l’intero processo di acquisizione. Controlla anche che non vengano eseguite pipeline di Cloud Manager durante la fase di *inserimento* .
+* La *fase di acquisizione* per l’istanza di authoring riduce l’intera implementazione di authoring. Questo significa che l’istanza di authoring di AEM non sarà disponibile durante l’intero processo di acquisizione. Controlla anche che non vengano eseguite pipeline di Cloud Manager durante la fase *Ingestion*.
 
 
 ## Disponibilità {#availability}
 
-Content Transfer Tool può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Accertatevi di scaricare la versione più recente. Per ulteriori dettagli sull’ultima versione, consulta [Note](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)sulla versione.
+Content Transfer Tool può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Accertatevi di scaricare la versione più recente. Per ulteriori informazioni sull&#39;ultima versione, consultare [Note sulla versione](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >Scarica lo strumento Content Transfer (Trasferimento contenuti) dal portale di [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
@@ -84,7 +84,7 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
    1. **Access Token** (Token di accesso): inserisci il token di accesso.
 
       >[!NOTE]
-      >Potete recuperare il token di accesso utilizzando il pulsante **Apri token** di accesso. Dovete assicurarvi di appartenere al gruppo di amministratori AEM nell’istanza del Cloud Service di destinazione.
+      >È possibile recuperare il token di accesso utilizzando il pulsante **Open access token**. Dovete assicurarvi di appartenere al gruppo di amministratori AEM nell’istanza del Cloud Service di destinazione.
 
    1. **Parameters** (Parametri): seleziona i seguenti parametri per creare il set di migrazione:
 
@@ -120,7 +120,7 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
 Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 
-1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Extract** (Estrai) per avviare l’estrazione. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
+1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Extract** (Estrai) per avviare l’estrazione. Viene visualizzata la finestra di dialogo **Estrazione set di migrazione**, quindi fare clic su **Estrai** per avviare la fase di estrazione.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
@@ -161,11 +161,11 @@ Una volta completato il processo di estrazione, puoi trasferire il contenuto del
 
 Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 
-1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Ingest** (Acquisisci) per avviare l’acquisizione. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione). Click on **Ingest** to start the ingestion phase. A scopo dimostrativo, l’opzione **Ingest content to Author instance** (Acquisisci contenuto nell’istanza di authoring) è disabilitata. È possibile acquisire contemporaneamente contenuti nelle istanze di authoring e di pubblicazione.
+1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Ingest** (Acquisisci) per avviare l’acquisizione. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione). Fare clic su **Ingest** per avviare la fase di assimilazione. A scopo dimostrativo, l’opzione **Ingest content to Author instance** (Acquisisci contenuto nell’istanza di authoring) è disabilitata. È possibile acquisire contemporaneamente contenuti nelle istanze di authoring e di pubblicazione.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. Al termine dell’assimilazione, lo stato nel campo **PUBLISH INGESTION** viene aggiornato a **FINISHED**.
+1. Una volta completata l&#39;assimilazione, lo stato nel campo **PUBLISH INGESTION** si aggiorna a **FINISHED**.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -183,7 +183,7 @@ Una volta completato il processo di acquisizione, puoi utilizzare il contenuto d
 
    >[!IMPORTANT]
    >
-   >Devi disattivare l&#39;opzione **Elimina contenuto esistente nell&#39;istanza Cloud prima dell&#39;assimilazione** , per evitare di eliminare il contenuto esistente dall&#39;attività di assimilazione precedente.
+   >Per evitare di eliminare il contenuto esistente dall&#39;attività di assimilazione precedente, è necessario disabilitare l&#39;opzione **Elimina contenuto esistente nell&#39;istanza Cloud prima dell&#39;assimilazione.**
    >
    >![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
