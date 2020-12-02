@@ -66,17 +66,17 @@ Le proprietà sono distribuite su più schede.
 
       >[!NOTE]
       >
-      > Per informazioni dettagliate su come configurare la replica automatica correlata, consultate [Ora di attivazione e disattivazione - Configurazione](/help/operations/replication.md#on-and-off-times-trigger-configuration) trigger.
+      > Vedere [Tempi di attivazione e disattivazione - Configurazione trigger](/help/operations/replication.md#on-and-off-times-trigger-configuration) per informazioni dettagliate su come configurare la replica automatica correlata.
 
-      * Se già [pubblicata (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , la pagina rimarrà inattiva (nascosta) fino al rendering alla data e all’ora specificate.
+      * Se già [pubblicato (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), la pagina rimarrà inattiva (nascosta) fino al rendering alla data e all&#39;ora specificate.
       * Se non viene pubblicata e configurata per la replica automatica, la pagina viene automaticamente pubblicata, quindi riprodotta al momento specificato.
       * Se non viene pubblicata e non è configurata per la replica automatica, la pagina non verrà pubblicata automaticamente, pertanto verrà visualizzato un messaggio 404 quando viene eseguito un tentativo di accesso alla pagina.
-   * Lasciate vuoti questi campi (**Ora** di attivazione e Ora **di** disattivazione) per le pagine da pubblicare immediatamente e disponibili nell’ambiente di pubblicazione finché non vengono disattivati (lo scenario più consueto).
+   * Lasciate vuoti questi campi (**Ora di attivazione** e **Ora di disattivazione**) per le pagine da pubblicare immediatamente e disponibili nell&#39;ambiente di pubblicazione finché non vengono disattivati (lo scenario più consueto).
 
 * **Ora di disattivazione**
 
-   * Parallelamente a **Ora** di attivazione, viene definito l’ora in cui la pagina pubblicata verrà nascosta nell’ambiente di pubblicazione.
-   * Lasciate vuoti questi campi (**Ora** di attivazione e Ora **di** disattivazione) per le pagine da pubblicare immediatamente e disponibili nell’ambiente di pubblicazione finché non vengono disattivati (lo scenario più consueto).
+   * Parallelamente a **Ora di attivazione**, viene definito il momento in cui la pagina pubblicata verrà nascosta nell’ambiente di pubblicazione.
+   * Lasciate vuoti questi campi (**Ora di attivazione** e **Ora di disattivazione**) per le pagine da pubblicare immediatamente e disponibili nell&#39;ambiente di pubblicazione finché non vengono disattivati (lo scenario più consueto).
 
 * **URL personalizzato**
 
@@ -156,7 +156,7 @@ Le proprietà sono distribuite su più schede.
 
    * Consente di specificare una configurazione di esportazione.
 
-### Miniatura  {#thumbnail}
+### Miniatura   {#thumbnail}
 
 Mostra la miniatura della pagina. Operazioni disponibili:
 
@@ -211,7 +211,7 @@ Mostra la miniatura della pagina. Operazioni disponibili:
    >[!NOTE]
    >Questa opzione richiede che l’account utente appartenga al gruppo `Target Adminstrators`.
 
-### Autorizzazioni  {#permissions}
+### Autorizzazioni   {#permissions}
 
 * **Autorizzazioni**
 
@@ -236,14 +236,14 @@ Mostra la miniatura della pagina. Operazioni disponibili:
    * Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
 
-### Live Copy  {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Livecopy**
 
    * Consente di definire le proprietà per una pagina Live Copy nella gestione multisito. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
-### Struttura sito  {#site-structure}
+### Struttura sito   {#site-structure}
 
 * Fornisce i collegamenti alle pagine che offrono funzionalità a livello di sito, tra cui **Pagina registrazione** e **Pagina offline**.
 
