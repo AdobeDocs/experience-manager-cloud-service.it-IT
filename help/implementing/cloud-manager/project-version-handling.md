@@ -13,7 +13,7 @@ ht-degree: 6%
 # Gestione delle versioni dei progetti Maven {#maven-project-version-handling}
 
 
-## Understanding Maven Project Version Handling {#understanding-project-version}
+## Comprendere la gestione della versione del progetto di superficie {#understanding-project-version}
 
 Per le distribuzioni di fase e produzione, Cloud Manager genera una versione univoca e incrementale.
 
@@ -25,7 +25,7 @@ Se la versione originale non soddisfa questo criterio, la versione generata verr
 
 | **Versione** | **versione in pom.xml** | **Commento** |
 |---|---|---|
-| 1.0.0 | 1.0.0.2019_0926_121356_0000020490 | Versione originale formata correttamente |
+| 1.0.0 | 1.0.0.2019_0926_121356_000020490 | Versione originale formata correttamente |
 | 1.0.0-SNAPSHOT | 2019.926.121356.0000020490 | Versione snapshot, sovrascritta |
 | 1 | 2019.926.121356.0000020490 | Versione incompleta, sovrascritta |
 
