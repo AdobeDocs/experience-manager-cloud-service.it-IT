@@ -14,11 +14,11 @@ ht-degree: 22%
 
 Gli utenti possono accedere a un elenco dei file di registro disponibili per l&#39;ambiente selezionato utilizzando la scheda Ambiente.  Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato.
 
-Questi file possono essere scaricati tramite l’interfaccia utente, dalla pagina **Panoramica** :
+Questi file possono essere scaricati tramite l&#39;interfaccia utente, dalla pagina **Panoramica**:
 
 ![](assets/download-logs1.png)
 
-Oppure, la pagina **Ambienti** :
+Oppure, la pagina **Ambienti**:
 
 ![](assets/download-logs.png)
 
@@ -28,7 +28,7 @@ Oppure, la pagina **Ambienti** :
 ![](assets/download-logs2.png)
 
 
-## Esegue il login tramite l&#39;API {#logs-through-api}
+## Esegue il login attraverso l&#39;API {#logs-through-api}
 
 Oltre a scaricare i file di registro tramite l’interfaccia utente, i file di registro saranno disponibili tramite l’API e l’interfaccia della riga di comando.
 
@@ -75,4 +75,4 @@ Environment Id Service    Name
 Per ulteriori informazioni sull&#39;API di Cloud Manager e  CLI di Adobe I/O, consulta le seguenti risorse aggiuntive:
 
 * [Documentazione API di Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [ Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
