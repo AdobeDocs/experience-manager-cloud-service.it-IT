@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Adobe Experience Manager come Cloud Service di base per la preparazione alla protezione dei dati e alle normative sulla privacy {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager come Cloud Service di base di preparazione per le normative sulla protezione dei dati e la privacy dei dati {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,9 +20,9 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Per ulteriori informazioni  Adobe  risposta ai problemi di privacy e ciò che ciò significa per voi in quanto clienti  Adobe, consultate [Adobe Centro](https://www.adobe.com/privacy.html)per la privacy.
+>Per ulteriori informazioni  risposta  Adobe ai problemi di privacy e ciò che ciò significa per voi in quanto clienti  Adobe, vedere [ Adobe Centro per la privacy](https://www.adobe.com/privacy.html).
 
-## AEM di protezione e privacy dei dati di base {#aem-foundation-data-privacy-and-protection-support}
+## AEM supporto alla privacy e alla protezione dei dati di base {#aem-foundation-data-privacy-and-protection-support}
 
 A livello di AEM Foundation, i Dati Personali memorizzati sono memorizzati nel Profilo Utente. Pertanto, le informazioni contenute in questo articolo riguardano principalmente come accedere ai profili utente ed eliminarli, rispettivamente per soddisfare le richieste di accesso ed eliminazione.
 
@@ -30,7 +30,7 @@ A livello di AEM Foundation, i Dati Personali memorizzati sono memorizzati nel P
 
 ### Passaggi manuali {#manual-steps}
 
-1. Aprite la console Amministrazione utente, accedendo a **[!UICONTROL Strumenti - Protezione - Utenti]** o sfogliando direttamente il pulsante `https://<serveraddress>:<serverport>/security/users.html`
+1. Aprite la console Amministrazione utente, accedendo a **[!UICONTROL Strumenti - Protezione - Utenti]** o sfogliando direttamente il percorso `https://<serveraddress>:<serverport>/security/users.html`
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -40,11 +40,11 @@ A livello di AEM Foundation, i Dati Personali memorizzati sono memorizzati nel P
 
    ![ricerca account](assets/dpp-foundation-01.png)
 
-1. Infine, aprite il profilo utente facendo clic su di esso, quindi selezionate nella scheda **[!UICONTROL Dettagli]** .
+1. Infine, apri il profilo utente facendo clic su di esso, quindi seleziona la scheda **[!UICONTROL Dettagli]**.
 
    ![profilo utente](assets/dpp-foundation-02.png)
 
-### HTTP API {#http-api}
+### API HTTP {#http-api}
 
 Come già detto,  Adobe fornisce API per l&#39;accesso ai dati utente, al fine di facilitare l&#39;automazione. Esistono diversi tipi di API che potete utilizzare:
 
@@ -82,7 +82,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Aprite la console Amministrazione utente ed effettuate la ricerca dell’utente in questione, come descritto sopra.
 2. Passate il puntatore del mouse sull’utente e fate clic sull’icona di selezione. Il profilo diventa grigio e indica che è selezionato.
 
-3. Premere il pulsante **Disattiva** nel menu superiore per disattivare l&#39;utente:
+3. Premere il tasto **Disable** nel menu superiore per disattivare l&#39;utente:
 
    ![disable account](assets/dpp-foundation-03.png)
 
@@ -98,7 +98,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 >
 >Per AEM come Cloud Service non è disponibile alcuna procedura manuale dall&#39;interfaccia utente per l&#39;eliminazione di un profilo utente, in quanto CRXDE non è accessibile.
 
-### HTTP API {#http-api-1}
+### API HTTP {#http-api-1}
 
 Le procedure seguenti utilizzano lo `curl`strumento della riga di comando per illustrare come disabilitare l’utente con **[!UICONTROL cavery]** `userId` ed eliminare i profili disponibili nel percorso predefinito.
 
