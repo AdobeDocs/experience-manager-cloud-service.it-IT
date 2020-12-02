@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Verifica esperienza {#experience-audit-testing}
+# Test di controllo delle esperienze {#experience-audit-testing}
 
 Experience Audit è una funzione disponibile nelle pipeline di produzione di siti di Cloud Manager, basata su Google Lighthouse, uno strumento open source di Google. Questa funzione è abilitata in tutti i gasdotti di produzione di Cloud Manager.
 
@@ -22,7 +22,7 @@ Convalidare il processo di distribuzione e garantire che le modifiche implementa
 
 Experience Audit in Cloud Manager assicura che l&#39;esperienza digitale degli utenti finali sul sito possa essere mantenuta ai massimi standard. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e la modifica tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se esiste una regressione che verrà introdotta con la distribuzione corrente.
 
-## Informazioni sui risultati di Experience Audit {#understanding-experience-audit-results}
+## Informazioni sui risultati dell&#39;audit esperienza {#understanding-experience-audit-results}
 
 Experience Audit fornisce risultati di test aggregati e dettagliati a livello di pagina tramite la pagina di esecuzione della pipeline di produzione.
 
@@ -33,7 +33,7 @@ Experience Audit fornisce risultati di test aggregati e dettagliati a livello di
 * Sono disponibili dettagli dei punteggi per vedere quali sono i risultati dei singoli test, nonché indicazioni su come risolvere eventuali problemi individuati durante l&#39;audit dell&#39;esperienza.
 * Una cronologia dei risultati del test è persistente in Cloud Manager in modo che i clienti possano vedere se le modifiche introdotte nell&#39;esecuzione della pipeline includono eventuali regressioni dall&#39;esecuzione precedente.
 
-### Aggrega punteggi {#aggregate-scores}
+### Scorte aggregate {#aggregate-scores}
 
 È disponibile una valutazione a livello aggregato per ogni tipo di test, ad esempio prestazioni, accessibilità, SEO e procedure ottimali.
 >[!NOTE]
@@ -43,13 +43,13 @@ Il punteggio del livello aggregato prende il punteggio medio delle pagine inclus
 
 Il valore della metrica Modifica può essere uno dei seguenti:
 
-* **Valore** positivo: le pagine sono migliorate nel test selezionato dall&#39;ultima esecuzione del ciclo di produzione
+* **Valore**  positivo: le pagine sono migliorate nel test selezionato dall&#39;ultima esecuzione del ciclo di produzione
 
-* **Valore** negativo: le pagine sono state raggruppate nel test selezionato dall&#39;ultima esecuzione del ciclo di produzione
+* **Valore**  negativo: le pagine sono state raggruppate nel test selezionato dall&#39;ultima esecuzione del ciclo di produzione
 
 * **Nessuna modifica** : le pagine hanno ottenuto lo stesso punteggio dall&#39;ultima esecuzione del ciclo di produzione
 
-* **N/D** - Non c&#39;era un punteggio precedente disponibile rispetto a
+* **N/D**  - non era disponibile alcun punteggio precedente rispetto a
 
    ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
 
