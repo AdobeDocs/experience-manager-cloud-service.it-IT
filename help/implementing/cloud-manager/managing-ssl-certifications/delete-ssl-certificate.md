@@ -22,6 +22,6 @@ Per eliminare un certificato SSL, effettuate le seguenti operazioni:
 
 1. Passare alla schermata Certificati SSL dalla pagina Ambienti
 1. Identificare la riga in cui è elencato il nome del certificato SSL che si desidera eliminare
-1. Seleziona il **...** menu dall&#39;estremità destra della riga
-1. Seleziona **Elimina**
+1. Selezionare la **...Menu** dall&#39;estremità destra della riga
+1. Selezionare **Elimina**
 1. Conferma invio
