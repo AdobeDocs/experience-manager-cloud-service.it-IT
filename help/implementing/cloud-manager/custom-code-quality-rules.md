@@ -16,7 +16,7 @@ ht-degree: 6%
 Questa pagina descrive le regole di qualità del codice personalizzate eseguite da Cloud Manager create in base alle best practice di AEM Engineering.
 
 >[!NOTE]
->Gli esempi di codice forniti qui sono solo a scopo illustrativo. Consulta [Concetti](https://docs.sonarqube.org/7.4/user-guide/concepts/) per ulteriori informazioni sui concetti e sulle regole di qualità di SonarQube.
+>Gli esempi di codice forniti qui sono solo a scopo illustrativo. Per informazioni sui concetti e sulle regole di qualità di SonarQube, vedere [Concetti](https://docs.sonarqube.org/7.4/user-guide/concepts/).
 
 ## Regole SonarQube {#sonarqube-rules}
 
@@ -195,7 +195,7 @@ L’API AEM contiene interfacce e classi Java che devono essere utilizzate solo 
 
 Quando a queste interfacce vengono aggiunti nuovi metodi, essi non influiscono sul codice esistente che utilizza tali interfacce e, di conseguenza, l’aggiunta di nuovi metodi ad esse è considerata retrocompatibile. Tuttavia, se il codice personalizzato ***implementa*** una di queste interfacce, crea al cliente un rischio di retrocompatibilità con le versioni precedenti.
 
-Le interfacce (e le classi) che devono essere implementate solo da AEM vengono annotate con *org.osgi.annotation.versioning.ProviderType* (o, in alcuni casi, con un&#39;annotazione precedente simile, *aQuute.bnd.annotation.ProviderType*). Questa regola identifica i casi in cui tale interfaccia viene implementata (o una classe viene estesa) dal codice personalizzato.
+Le interfacce (e le classi) che devono essere implementate solo da AEM vengono annotate con *org.osgi.annotation.versioning.ProviderType* (o, in alcuni casi, con un&#39;annotazione precedente simile *Quute.bnd.annotation.ProviderType*). Questa regola identifica i casi in cui tale interfaccia viene implementata (o una classe viene estesa) dal codice personalizzato.
 
 #### Codice non conforme {#non-compliant-code-3}
 
@@ -252,7 +252,7 @@ public void orDoThis(Session session) throws Exception {
 }
 ```
 
-### Non utilizzare i percorsi servlet Sling per registrare i servlet {#do-not-use-sling-servlet-paths-to-register-servlets}
+### Non utilizzare percorsi servlet Sling per registrare i servlet {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 **Chiave**: CQRules:CQBP-75
 
@@ -262,7 +262,7 @@ public void orDoThis(Session session) throws Exception {
 
 **Dal** momento: Versione 2018.4.0
 
-Come descritto nella documentazione [](http://sling.apache.org/documentation/the-sling-engine/servlets.html)Sling, i servlet di binding per percorsi sono scoraggiati. I servlet vincolati al percorso non possono utilizzare controlli di accesso JCR standard e, di conseguenza, richiedono un ulteriore rigore di sicurezza. Anziché utilizzare i servlet associati al percorso, si consiglia di creare nodi nel repository e registrare i servlet in base al tipo di risorsa.
+Come descritto nella [Documentazione Sling](http://sling.apache.org/documentation/the-sling-engine/servlets.html), i servlet di binding per percorsi non sono consigliati. I servlet vincolati al percorso non possono utilizzare controlli di accesso JCR standard e, di conseguenza, richiedono un ulteriore rigore di sicurezza. Anziché utilizzare i servlet associati al percorso, si consiglia di creare nodi nel repository e registrare i servlet in base al tipo di risorsa.
 
 #### Codice non conforme {#non-compliant-code-5}
 
@@ -275,7 +275,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### Le eccezioni rilevate devono essere registrate o generate, ma non entrambe {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### Le eccezioni rilevate devono essere registrate o generate, ma non entrambe{#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 **Chiave**: CQRules:CQBP-44—CatchAndLogOrThrow
 
@@ -349,7 +349,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### Evitate di effettuare l&#39;accesso a INFO quando gestite richieste GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Evitate la registrazione a INFO quando gestite richieste di GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Chiave**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
@@ -379,7 +379,7 @@ public void doGet() throws Exception {
 }
 ```
 
-### Non utilizzare Exception.getMessage() come primo parametro di un&#39;istruzione di registrazione {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
+### Non utilizzate Exception.getMessage() come primo parametro di un&#39;istruzione di registrazione {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 **Chiave**: CQRules:CQBP-44—ExceptionGetMessageIsFirstLogParam
 
@@ -415,7 +415,7 @@ public void doThis() {
 }
 ```
 
-### L&#39;accesso ai blocchi catch deve essere a livello AVVISO o ERRORE {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
+### L&#39;accesso ai blocchi catch deve essere al livello AVVISO o ERRORE {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 **Chiave**: CQRules:CQBP-44—WrongLogLevelInCatchBlock
 
@@ -425,7 +425,7 @@ public void doThis() {
 
 **Dal** momento: Versione 2018.4.0
 
-Come suggerisce il nome, le eccezioni Java devono sempre essere utilizzate in circostanze *eccezionali* . Di conseguenza, quando viene rilevata un&#39;eccezione, è importante assicurarsi che i messaggi di registro siano registrati al livello appropriato, ovvero AVVERTENZA o ERRORE. In questo modo i messaggi verranno visualizzati correttamente nei registri.
+Come suggerisce il nome, le eccezioni Java devono sempre essere utilizzate in circostanze *eccezionali*. Di conseguenza, quando viene rilevata un&#39;eccezione, è importante assicurarsi che i messaggi di registro siano registrati al livello appropriato, ovvero AVVERTENZA o ERRORE. In questo modo i messaggi verranno visualizzati correttamente nei registri.
 
 #### Codice non conforme {#non-compliant-code-10}
 
@@ -461,7 +461,7 @@ public void doThis() {
 
 **Dal** momento: Versione 2018.4.0
 
-Come già detto, il contesto è fondamentale per comprendere i messaggi di registro. Se si utilizza Exception.printStackTrace(), **solo** la traccia dello stack viene restituita al flusso di errore standard, perdendo così tutto il contesto. Inoltre, in un&#39;applicazione multi-thread come AEM se vengono stampate più eccezioni utilizzando questo metodo in parallelo, le loro tracce di stack possono sovrapporsi e generare una notevole confusione. Le eccezioni devono essere registrate solo tramite il framework di registrazione.
+Come già detto, il contesto è fondamentale per comprendere i messaggi di registro. Se si utilizza Exception.printStackTrace(), la traccia dello stack viene generata **solo** nel flusso di errore standard, perdendo così tutto il contesto. Inoltre, in un&#39;applicazione multi-thread come AEM se vengono stampate più eccezioni utilizzando questo metodo in parallelo, le loro tracce di stack possono sovrapporsi e generare una notevole confusione. Le eccezioni devono essere registrate solo tramite il framework di registrazione.
 
 #### Codice non conforme {#non-compliant-code-11}
 
@@ -563,7 +563,7 @@ public void doThis(Resource resource) {
 
 Sling Scheduler non deve essere utilizzato per le attività che richiedono un&#39;esecuzione garantita. I processi pianificati Sling garantiscono l’esecuzione e sono più adatti sia per gli ambienti cluster che per quelli non cluster.
 
-Per ulteriori informazioni sulla gestione dei processi Sling in ambienti cluster, consultate [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) .
+Fare riferimento a [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) per ulteriori informazioni su come i processi Sling vengono gestiti in ambienti cluster.
 
 ### AEM le API obsolete non devono essere utilizzate {#sonarqube-aem-deprecated}
 
@@ -577,7 +577,7 @@ Per ulteriori informazioni sulla gestione dei processi Sling in ambienti cluster
 
 La superficie dell&#39;API AEM è soggetta a revisione costante per identificare le API per le quali l&#39;utilizzo è scoraggiato e quindi considerato obsoleto.
 
-In molti casi, queste API sono obsolete utilizzando l&#39;annotazione standard Java *@Deprecated* e, come tali, identificata da `squid:CallToDeprecatedMethod`.
+In molti casi, queste API sono obsolete utilizzando l&#39;annotazione Java *@Deprecated* standard e, come tali, identificata da `squid:CallToDeprecatedMethod`.
 
 Tuttavia, in alcuni casi un&#39;API è obsoleta nel contesto di AEM ma non può essere rimossa in altri contesti. Questa regola identifica questa seconda classe.
 
@@ -598,7 +598,7 @@ Di seguito sono riportati i controlli OakPAL eseguiti da Cloud Manager.
 
 **Dal** momento: Versione 2019.6.0
 
-È stata una procedura consigliata di vecchia data che la struttura di contenuto /libs nell&#39;archivio dei contenuti AEM venga considerata di sola lettura dai clienti. La modifica di nodi e proprietà in */libs* comporta rischi significativi per gli aggiornamenti principali e secondari. Le modifiche a */libs* devono essere apportate solo  Adobe attraverso canali ufficiali.
+È stata una procedura consigliata di vecchia data che la struttura di contenuto /libs nell&#39;archivio dei contenuti AEM venga considerata di sola lettura dai clienti. La modifica di nodi e proprietà in */libs* comporta rischi significativi per gli aggiornamenti principali e secondari. Le modifiche a */libs* devono essere apportate solo da  Adobe attraverso canali ufficiali.
 
 ### I pacchetti non devono contenere configurazioni OSGi duplicate {#oakpal-package-osgi}
 
@@ -643,7 +643,7 @@ Un problema comune che si verifica in progetti complessi è rappresentato dalla 
 
 Per motivi di sicurezza, i percorsi contenenti */config/ e /install/* sono leggibili solo dagli utenti amministrativi in AEM e devono essere utilizzati solo per la configurazione OSGi e i bundle OSGi. Posizionando altri tipi di contenuto in percorsi che contengono questi segmenti, il comportamento dell&#39;applicazione varia involontariamente tra utenti amministrativi e non amministrativi.
 
-Un problema comune è rappresentato dall’uso di nodi denominati `config` nelle finestre di dialogo dei componenti o quando si specifica la configurazione dell’editor Rich Text per la modifica in linea. Per risolvere questo problema, il nodo che ha commesso l&#39;errore deve essere rinominato in un nome conforme. Per la configurazione dell&#39;editor Rich Text, utilizzate la `configPath` proprietà sul `cq:inplaceEditing` nodo per specificare la nuova posizione.
+Un problema comune è rappresentato dall&#39;uso di nodi denominati `config` nelle finestre di dialogo dei componenti o quando si specifica la configurazione dell&#39;editor Rich Text per la modifica in linea. Per risolvere questo problema, il nodo che ha commesso l&#39;errore deve essere rinominato in un nome conforme. Per la configurazione dell&#39;editor di testo RTF, utilizzare la proprietà `configPath` sul nodo `cq:inplaceEditing` per specificare la nuova posizione.
 
 #### Codice non conforme {#non-compliant-code-config-install}
 
@@ -664,7 +664,7 @@ Un problema comune è rappresentato dall’uso di nodi denominati `config` nelle
       + rtePlugins [nt:unstructured]
 ```
 
-### I Pacchetti Non Devono Sovrapporsi {#oakpal-no-overlap}
+### I Pacchetti Non Devono Sovrapporre {#oakpal-no-overlap}
 
 **Chiave**: PackageOverlaps
 
@@ -674,9 +674,9 @@ Un problema comune è rappresentato dall’uso di nodi denominati `config` nelle
 
 **Dal** momento: Versione 2019.6.0
 
-Simili ai *pacchetti Non devono contenere configurazioni OSGi duplicate* si tratta di un problema comune nei progetti complessi in cui lo stesso percorso nodo è scritto da più pacchetti di contenuto separati. Anche se è possibile utilizzare le dipendenze del pacchetto di contenuti per garantire un risultato coerente, è meglio evitare sovrapposizioni del tutto.
+Analogamente ai *pacchetti Non devono contenere configurazioni OSGi duplicate*, si tratta di un problema comune nei progetti complessi in cui lo stesso percorso nodo è scritto da più pacchetti di contenuto separati. Anche se è possibile utilizzare le dipendenze del pacchetto di contenuti per garantire un risultato coerente, è meglio evitare sovrapposizioni del tutto.
 
-### La Modalità Di Authoring Predefinita Non Deve Essere Interfaccia Classica {#oakpal-default-authoring}
+### La modalità di authoring predefinita non deve essere un&#39;interfaccia classica {#oakpal-default-authoring}
 
 **Chiave**: ClassicUIAuthoringMode
 
@@ -686,9 +686,9 @@ Simili ai *pacchetti Non devono contenere configurazioni OSGi duplicate* si trat
 
 **Dal** momento: Versione 2020.5.0
 
-La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definisce la modalità di authoring predefinita all’interno di AEM. Poiché l’interfaccia classica è obsoleta a partire dalla AEM 6.4, ora viene generato un problema quando la modalità di authoring predefinita è configurata per l’interfaccia classica.
+La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definisce la modalità di authoring predefinita in AEM. Poiché l’interfaccia classica è obsoleta a partire dalla AEM 6.4, ora viene generato un problema quando la modalità di authoring predefinita è configurata per l’interfaccia classica.
 
-### I Componenti Con Finestre Di Dialogo Devono Avere Finestre Di Dialogo Touch {#oakpal-components-dialogs}
+### I componenti con finestre di dialogo devono avere finestre di dialogo dell&#39;interfaccia touch {#oakpal-components-dialogs}
 
 **Chiave**: ComponentWithOnlyClassicUIDialog
 
@@ -700,11 +700,11 @@ La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 
 AEM I componenti che dispongono di una finestra di dialogo dell’interfaccia classica devono sempre disporre di una finestra di dialogo dell’interfaccia utente touch corrispondente sia per fornire un’esperienza di authoring ottimale, sia per essere compatibili con il modello di distribuzione del Cloud Service, in cui l’interfaccia classica non è supportata. Questa regola verifica i seguenti scenari:
 
-* Un componente con una finestra di dialogo dell’interfaccia classica (ovvero un nodo secondario della finestra di dialogo) deve avere una finestra di dialogo dell’interfaccia utente touch corrispondente (ovvero un nodo `cq:dialog` secondario).
-* Un componente con una finestra di dialogo per la progettazione dell’interfaccia classica (ad es. un nodo design_dialog) deve avere una finestra di dialogo corrispondente per la progettazione dell’interfaccia utente touch (ovvero un nodo `cq:design_dialog` secondario).
+* Un componente con una finestra di dialogo dell’interfaccia classica (ovvero un nodo secondario finestra di dialogo) deve avere una finestra di dialogo dell’interfaccia touch corrispondente (ovvero un nodo secondario `cq:dialog`).
+* Un componente con una finestra di dialogo per la progettazione dell’interfaccia classica (ad es. un nodo design_dialog) deve avere una finestra di dialogo corrispondente per la progettazione dell’interfaccia utente touch (ovvero un nodo secondario `cq:design_dialog`).
 * Un componente con una finestra di dialogo per l’interfaccia classica e una finestra di dialogo per la progettazione dell’interfaccia classica deve avere una finestra di dialogo per l’interfaccia utente touch corrispondente e una finestra di dialogo per la progettazione dell’interfaccia touch corrispondente.
 
-La documentazione AEM Strumenti di modernizzazione fornisce documentazione e strumenti per la conversione dei componenti dall’interfaccia classica all’interfaccia utente touch. Per ulteriori informazioni, consulta [AEM Strumenti](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) di modernizzazione.
+La documentazione AEM Strumenti di modernizzazione fornisce documentazione e strumenti per la conversione dei componenti dall’interfaccia classica all’interfaccia utente touch. Per ulteriori informazioni, fare riferimento a [Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html).
 
 ### I pacchetti non devono mescolare contenuto variabile e immutabile {#oakpal-packages-immutable}
 
@@ -716,11 +716,11 @@ La documentazione AEM Strumenti di modernizzazione fornisce documentazione e str
 
 **Dal** momento: Versione 2020.5.0
 
-Per essere compatibile con il modello di distribuzione del Cloud Service, i singoli pacchetti di contenuto devono contenere contenuti per le aree immutabili dell&#39;archivio (ovvero, non `/apps and /libs, although /libs` devono essere modificati dal codice cliente e causeranno una violazione separata) o l&#39;area modificabile (ovvero tutto il resto), ma non entrambi. Ad esempio, un pacchetto che include entrambi `/apps/myco/components/text and /etc/clientlibs/myco` non è compatibile con il Cloud Service e causerà la segnalazione di un problema.
+Per essere compatibile con il modello di distribuzione del Cloud Service, i singoli pacchetti di contenuto devono contenere contenuto per le aree immutabili dell&#39;archivio (ovvero, `/apps and /libs, although /libs` non deve essere modificato dal codice cliente e causerà una violazione separata) o l&#39;area modificabile (ovvero tutto il resto), ma non entrambi. Ad esempio, un pacchetto che include sia `/apps/myco/components/text and /etc/clientlibs/myco` non è compatibile con il Cloud Service e causerà la segnalazione di un problema.
 
-Refer to [AEM Project Structure](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
+Per ulteriori informazioni, fare riferimento a [AEM struttura del progetto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html).
 
-### Gli Agenti Di Replica Inverti Non Devono Essere Utilizzati {#oakpal-reverse-replication}
+### Gli agenti di replica inversi non devono essere utilizzati {#oakpal-reverse-replication}
 
 **Chiave**: ReverseReplication
 
@@ -730,7 +730,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/it-IT/exper
 
 **Dal** momento: Versione 2020.5.0
 
-Il supporto per la replica inversa non è disponibile nelle distribuzioni di Cloud Service, come descritto nelle note [sulla versione: Rimozione degli agenti](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)di replica.
+Il supporto per la replica inversa non è disponibile nelle distribuzioni di Cloud Service, come descritto in [Note sulla versione: Rimozione di agenti di replica](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 I clienti che utilizzano la replica inversa devono contattare  Adobe per soluzioni alternative.
 
