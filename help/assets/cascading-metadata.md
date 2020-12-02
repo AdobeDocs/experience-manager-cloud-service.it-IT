@@ -11,7 +11,7 @@ ht-degree: 13%
 ---
 
 
-# Cascading Metadata {#cascading-metadata}
+# Metadati a cascata {#cascading-metadata}
 
 Quando acquisite le informazioni di metadati di una risorsa, gli utenti forniscono informazioni nei vari campi disponibili. Potete visualizzare campi di metadati o valori di campi specifici che dipendono dalle opzioni selezionate negli altri campi. Tale visualizzazione condizionale dei metadati è denominata metadati CSS. In altre parole, potete creare una dipendenza tra un particolare campo/valore di metadati e uno o più campi e/o relativi valori.
 
@@ -40,21 +40,21 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    ![select_form](assets/select_form.png)
 
-1. (Facoltativo) Nell’editor dello schema di metadati, create un nuovo campo da personalizzare. Specificate un nome e un percorso di proprietà nella scheda **[!UICONTROL Impostazioni]** .
+1. (Facoltativo) Nell’editor dello schema di metadati, create un nuovo campo da personalizzare. Specificare un nome e un percorso di proprietà nella scheda **[!UICONTROL Impostazioni]**.
 
-   Per creare una nuova scheda, toccate o fate clic `+` per aggiungere una scheda, quindi aggiungete un campo di metadati.
+   Per creare una nuova scheda, toccate o fate clic su `+` per aggiungere una scheda, quindi aggiungete un campo di metadati.
 
    ![add_tab](assets/add_tab.png)
 
-1. Aggiungi un campo a discesa per il tipo di risorsa. Specificate un nome e un percorso di proprietà nella scheda **[!UICONTROL Impostazioni]** . Aggiungete una descrizione facoltativa.
+1. Aggiungi un campo a discesa per il tipo di risorsa. Specificare un nome e un percorso di proprietà nella scheda **[!UICONTROL Impostazioni]**. Aggiungete una descrizione facoltativa.
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. Le coppie di valori chiave sono le opzioni fornite all&#39;utente del modulo. Puoi fornire le coppie chiave-valore manualmente o da un file JSON.
 
-   * Per specificare manualmente i valori, selezionate **[!UICONTROL Aggiungi manualmente]**, quindi toccate o fate clic su **[!UICONTROL Aggiungi scelta]** e specificate il testo e il valore dell’opzione. Ad esempio, specificate i tipi di risorse Video, PDF, Word e Immagine.
+   * Per specificare i valori manualmente, selezionare **[!UICONTROL Aggiungi manualmente]**, quindi toccare o fare clic su **[!UICONTROL Aggiungi scelta]** e specificare il testo e il valore dell&#39;opzione. Ad esempio, specificate i tipi di risorse Video, PDF, Word e Immagine.
 
-   * Per recuperare i valori da un file JSON in modo dinamico, selezionate **[!UICONTROL Aggiungi tramite percorso]** JSON e fornite il percorso del file JSON. AEM recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all&#39;utente.
+   * Per recuperare i valori da un file JSON in modo dinamico, selezionate **[!UICONTROL Aggiungi tramite percorso JSON]** e fornite il percorso del file JSON. AEM recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all&#39;utente.
 
    Entrambe le opzioni si escludono a vicenda. Non potete importare le opzioni da un file JSON e modificarle manualmente.
 
@@ -74,11 +74,11 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    ![video_Depend_fields](assets/video_dependent_fields.png)
 
-1. Per creare una dipendenza tra il campo del tipo di risorsa e altri campi, scegliete il campo dipendente e aprite la scheda **[!UICONTROL Regole]** .
+1. Per creare una dipendenza tra il campo del tipo di risorsa e altri campi, scegliete il campo dipendente e aprite la scheda **[!UICONTROL Regole]**.
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
+1. In **[!UICONTROL Requisiti]**, scegliere l&#39;opzione **[!UICONTROL Obbligatorio, in base alla nuova opzione]**.
 1. Tocca o fai clic su **[!UICONTROL Aggiungi regola]** e scegli il campo **[!UICONTROL Tipo di risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Per salvare le modifiche, Tocca o fai clic su **[!UICONTROL Fine]**.
 
    ![define_rule](assets/define_rule.png)
@@ -102,7 +102,7 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
    >Puoi applicare la condizione **[!UICONTROL Requisito]** e **[!UICONTROL Visibilità]**, pur lasciandole indipendenti tra di loro.
 
 1. Analogamente, create una dipendenza tra il valore Video nel campo Tipo risorsa e altri campi, come Codec e Durata.
-1. Ripetete i passaggi per creare una dipendenza tra le risorse del documento (PDF e Word) nel campo Tipo [!UICONTROL di] risorsa e i campi quali Conteggio  pagina e [!UICONTROL Autore].
+1. Ripetete i passaggi per creare una dipendenza tra le risorse del documento (PDF e Word) nel campo [!UICONTROL Tipo risorsa] e nei campi quali [!UICONTROL Conteggio pagina] e [!UICONTROL Autore].
 1. Fai clic su **[!UICONTROL Salva]**. Applicate lo schema di metadati a una cartella.
 
 1. Andate alla cartella alla quale avete applicato lo schema metadati e aprite la pagina delle proprietà di una risorsa. A seconda della scelta effettuata nel campo Tipo risorsa, vengono visualizzati i campi di metadati CSS pertinenti.
