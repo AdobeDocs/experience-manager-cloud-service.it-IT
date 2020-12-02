@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Visualizzazione dell&#39;aggiornamento e sostituzione di un nome di dominio personalizzato  {#view-update-replace-cdn}
+# Visualizzazione dell&#39;aggiornamento e sostituzione di un nome di dominio personalizzato {#view-update-replace-cdn}
 
 Utilizzate il menu Visualizza e aggiorna per visualizzare semplicemente i dettagli di uno o più nomi di dominio personalizzati.
 In alternativa, potete modificare il certificato SSL da utilizzare per il nome del dominio personalizzato.
@@ -25,7 +25,7 @@ L’azione di aggiornamento può essere eseguita da due diverse aree dell’inte
 1. Passate alla pagina Impostazioni dominio dalla schermata Ambienti.
 1. In alternativa, passare alla pagina Dettagli ambiente specifica dalla schermata Ambienti e passare alla tabella Nomi di dominio.
 Identificare la riga in cui è elencato il nome di dominio personalizzato che si desidera visualizzare/aggiornare
-1. Seleziona il **...** menu dall&#39;estremità destra della riga
+1. Selezionare la **...Menu** dall&#39;estremità destra della riga
 1. Selezionate l’opzione Visualizza e aggiorna
 1. Apportate le modifiche necessarie al certificato SSL e confermate l’invio
 
