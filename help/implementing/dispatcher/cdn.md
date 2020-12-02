@@ -1,6 +1,6 @@
 ---
 title: CDN in AEM as a Cloud Service
-description: CDN in AEM as a Cloud Service
+description: CDN in AEM come Cloud Service
 translation-type: tm+mt
 source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
 workflow-type: tm+mt
@@ -16,7 +16,7 @@ AEM come Cloud Service viene fornito con un CDN incorporato. Il suo scopo princi
 
 La rete CDN gestita AEM soddisferà i requisiti di prestazioni e sicurezza della maggior parte dei clienti. Per il livello di pubblicazione, i clienti possono facoltativamente indicarlo dal proprio CDN, che dovranno gestire. Questo sarà consentito caso per caso, in base al soddisfacimento di alcuni prerequisiti, tra cui, ma non solo, il cliente che dispone di un&#39;integrazione legacy con il fornitore CDN difficile da abbandonare.
 
-## CDN gestito AEM  {#aem-managed-cdn}
+## AEM CDN gestito {#aem-managed-cdn}
 
 Per preparare la distribuzione dei contenuti, utilizzate  CDN  Adobe out-of-the-box:
 
@@ -26,8 +26,8 @@ Per preparare la distribuzione dei contenuti, utilizzate  CDN  Adobe out-of-the-
    * quali domini personalizzati devono essere associati a un determinato ambiente, come definito dall&#39;ID del programma e dall&#39;ID dell&#39;ambiente. Fino a 100 domini sono supportati per un determinato ambiente e i domini non possono contenere caratteri jolly. I domini personalizzati dal lato dell&#39;autore non sono supportati.
    * se è necessaria un&#39;inserire nell&#39;elenco Consentiti IP  per limitare il traffico a un determinato ambiente.
 1. Coordinare con l&#39;assistenza clienti la tempistica delle modifiche necessarie ai record DNS. Le istruzioni sono diverse a seconda che sia necessario un record apex:
-   * se non è necessario un record apex, i clienti devono impostare il record DNS CNAME in modo che punti il loro FQDN a `cdn.adobeaemcloud.com`.
-   * se è necessario un record apex, create un record A che indichi i seguenti IP: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. I clienti necessitano di un record apex se il nome FQDN desiderato corrisponde alla zona DNS. Questo può essere verificato utilizzando il comando Unix dig per verificare se il valore SOA dell&#39;output corrisponde al dominio. Ad esempio, il comando `dig anything.dev.adobeaemcloud.com` restituisce un SOA (Inizio dell&#39;Autorità, ovvero la zona) di `dev.adobeaemcloud.com` cui non è un record APEX, mentre `dig dev.adobeaemcloud.com` restituisce un SOA di `dev.adobeaemcloud.com` cui è un record apex.
+   * se non è necessario un record apex, i clienti devono impostare il record DNS CNAME in modo che il loro FQDN sia `cdn.adobeaemcloud.com`.
+   * se è necessario un record apex, create un record A che indichi i seguenti IP: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. I clienti necessitano di un record apex se il nome FQDN desiderato corrisponde alla zona DNS. Questo può essere verificato utilizzando il comando Unix dig per verificare se il valore SOA dell&#39;output corrisponde al dominio. Ad esempio, il comando `dig anything.dev.adobeaemcloud.com` restituisce un SOA (Inizio dell&#39;Autorità, ovvero la zona) di `dev.adobeaemcloud.com`, quindi non è un record APEX, mentre `dig dev.adobeaemcloud.com` restituisce un SOA di `dev.adobeaemcloud.com`, quindi è un record apex.
 1. Al momento della scadenza dei certificati SSL riceverete una notifica per consentirvi di inviare nuovamente i nuovi certificati SSL.
 
 **Limitazione del traffico**
@@ -46,10 +46,10 @@ Se un cliente deve usare la propria CDN esistente, può gestirla e indicarla  Ad
 
 Istruzioni di configurazione:
 
-1. Impostate l’ `X-Forwarded-Host` intestazione con il nome del dominio.
+1. Impostate l&#39;intestazione `X-Forwarded-Host` con il nome del dominio.
 1. Impostate l&#39;intestazione Host con il dominio di origine, che è  ingresso  CDN della Adobe. Il valore deve provenire  Adobe.
 1. Inviate l’intestazione SNI all’origine. Come l&#39;intestazione Host, l&#39;intestazione sni deve essere il dominio di origine.
-1. Impostare il `X-Edge-Key`, necessario per indirizzare correttamente il traffico ai server AEM. Il valore deve provenire  Adobe.
+1. Impostare la `X-Edge-Key`, necessaria per indirizzare correttamente il traffico ai server AEM. Il valore deve provenire  Adobe.
 
 Prima di accettare il traffico live, è necessario verificare con  Adobe il corretto funzionamento del ciclo di traffico end-to-end.
 
