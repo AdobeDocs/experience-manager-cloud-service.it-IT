@@ -3,9 +3,9 @@ title: Riferimenti sviluppatore per  [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1208'
 ht-degree: 1%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # [!DNL Assets] API e materiale di riferimento per sviluppatori  {#assets-cloud-service-apis}
 
-L&#39;articolo contiene materiale di riferimento e risorse per gli sviluppatori di [!DNL Assets] come Cloud Service. Include un nuovo metodo di caricamento, riferimenti API e informazioni sul supporto fornito nei flussi di lavoro di post-elaborazione.
+L&#39;articolo contiene materiale di riferimento e risorse per gli sviluppatori di [!DNL Assets] come [!DNL Cloud Service]. Include un nuovo metodo di caricamento, riferimenti API e informazioni sul supporto fornito nei flussi di lavoro di post-elaborazione.
 
 ## Caricamento risorse {#asset-upload-technical}
 
-[!DNL Experience Manager] come Cloud Service fornisce un nuovo metodo per caricare le risorse nell’archivio. Gli utenti possono caricare direttamente le risorse nell’archiviazione cloud utilizzando l’API HTTP. I passaggi per caricare un file binario sono:
+[!DNL Experience Manager] come  [!DNL Cloud Service] fornisce un nuovo metodo per caricare le risorse nella directory archivio. Gli utenti possono caricare direttamente le risorse nell’archiviazione cloud utilizzando l’API HTTP. I passaggi per caricare un file binario sono:
 
 1. [Invia una richiesta](#initiate-upload) HTTP. Indica a [!DNL Experience Manage]r la distribuzione dell&#39;intento di caricare un nuovo binario.
 1. [POST il contenuto del ](#upload-binary) binariato a uno o più URI forniti dalla richiesta di avvio.
@@ -118,7 +118,7 @@ Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e 
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Il nuovo metodo di caricamento è supportato solo per [!DNL Adobe Experience Manager] come Cloud Service. Le API di [!DNL Adobe Experience Manager] 6.5 sono obsolete. I metodi relativi al caricamento o all&#39;aggiornamento di risorse o rappresentazioni (qualsiasi caricamento binario) sono obsoleti nelle seguenti API:
+Il nuovo metodo di caricamento è supportato solo per [!DNL Adobe Experience Manager] come [!DNL Cloud Service]. Le API di [!DNL Adobe Experience Manager] 6.5 sono obsolete. I metodi relativi al caricamento o all&#39;aggiornamento di risorse o rappresentazioni (qualsiasi caricamento binario) sono obsoleti nelle seguenti API:
 
 * [ API HTTP Risorse Experience Manager](mac-api-assets.md)
 * `AssetManager` API Java, come  `AssetManager.createAsset(..)`
@@ -138,7 +138,7 @@ Per la configurazione del flusso di lavoro di post-elaborazione, utilizzate i fl
 
 I clienti che eseguono l&#39;aggiornamento da versioni precedenti di [!DNL Experience Manager] possono utilizzare i microservizi delle risorse per elaborare le risorse. I microservizi delle risorse nativi nel cloud sono molto più semplici da configurare e utilizzare. Alcuni passaggi del flusso di lavoro utilizzati nel flusso di lavoro [!UICONTROL DAM Update Asset] nella versione precedente non sono supportati.
 
-[!DNL Experience Manager] come Cloud Service supportano i seguenti passaggi del flusso di lavoro:
+[!DNL Experience Manager] come  [!DNL Cloud Service] supporto per i seguenti passaggi del flusso di lavoro:
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -193,5 +193,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [Experience Cloud  come SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) Cloud Service.
+* [Il Experience Cloud  come  [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
