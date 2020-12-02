@@ -261,7 +261,7 @@ Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dett
 
 Inoltre, da **Informazioni pagina** è possibile accedere ad analisi e consigli.
 
-## Modalità pagina   {#page-modes}
+## Modalità pagina    {#page-modes}
 
 Quando si modifica una pagina sono disponibili varie modalità che consentono di configurare diverse azioni:
 
@@ -283,6 +283,7 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* L’accesso ad alcune modalità richiede autorizzazioni o privilegi adeguati.
 >* La modalità Sviluppatore non è disponibile su dispositivi mobili a causa di limitazioni di spazio.
 >* La [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
+
 >
 
 
@@ -291,7 +292,7 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 
 Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso, i [campi percorso](#path-fields) offrono una funzione di auto-completamento e il [browser Percorsi](#path-browser) consente una selezione più affidabile.
 
-### Campi percorso   {#path-fields}
+### Campi percorso    {#path-fields}
 
 L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull’utilizzo e la modifica dei componenti consulta [Componenti per l’authoring di pagine](/help/sites-cloud/authoring/fundamentals/components.md).
 
