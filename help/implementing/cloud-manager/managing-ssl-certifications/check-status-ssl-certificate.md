@@ -16,8 +16,11 @@ Lo stato dei certificati SSL può essere compreso rapidamente dalla pagina del c
 
 Potete identificare lo stato di un certificato SSL utilizzando i seguenti schemi di colori:
 
-* **Verde** Indica che il certificato è valido per almeno 60 giorni nel futuro.
+* ****
+Verde: indica che il certificato è valido per almeno 60 giorni nel futuro.
 
-* **Arancione** Indica che il certificato scade entro 60 giorni. È ora di verificare di disporre di un piano per rinnovare il certificato e sostituirlo tramite l&#39;interfaccia utente di Cloud Manager, al fine di evitare possibili accessi o interruzioni del sito. Cloud Manager invierà notifiche regolari nell&#39;interfaccia utente per avvisarvi della scadenza imminente del certificato.
+* ****
+Arancione: indica che il certificato scade entro 60 giorni. È ora di verificare di disporre di un piano per rinnovare il certificato e sostituirlo tramite l&#39;interfaccia utente di Cloud Manager, al fine di evitare possibili accessi o interruzioni del sito. Cloud Manager invierà notifiche regolari nell&#39;interfaccia utente per avvisarvi della scadenza imminente del certificato.
 
-* **Rosso** Indica che, nonostante più notifiche, il certificato SSL è scaduto.
+* ****
+RossoIndica che, nonostante più notifiche, il certificato SSL è scaduto.
