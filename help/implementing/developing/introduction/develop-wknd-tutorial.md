@@ -22,7 +22,7 @@ L&#39;obiettivo di questa esercitazione con più parti è insegnare a uno svilup
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[L&#39;esercitazione per sviluppatori WKND è disponibile qui](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) e illustra come creare un progetto AEM utilizzando le tecnologie e le procedure ottimali più recenti.
+[L’esercitazione per sviluppatori WKND è disponibile ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) qui e illustra come creare un progetto AEM utilizzando le tecnologie e le procedure ottimali più recenti.
 
 ## Concetti di base {#core-concepts}
 
