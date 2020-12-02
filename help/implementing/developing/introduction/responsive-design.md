@@ -36,7 +36,7 @@ Per informazioni sull’implementazione di comportamenti di progettazione reatti
 * [Griglie fluide](#developing-a-fluid-grid)
 * [Immagini adattive](#using-adaptive-images)
 
-Durante la progettazione, usate la barra degli strumenti **emulatore** per visualizzare in anteprima le pagine per diverse dimensioni di schermo.
+Durante la progettazione, utilizzate la barra degli strumenti **Emulatore** per visualizzare in anteprima le pagine per diverse dimensioni di schermo.
 
 ## Prima di sviluppare {#before-you-develop}
 
@@ -63,12 +63,12 @@ Il gruppo W3C fornisce la raccomandazione [Media Query](https://www.w3.org/TR/cs
 
 Nel file CSS, definite le query multimediali in base alle proprietà dei dispositivi di destinazione. La seguente strategia di implementazione è efficace per la gestione degli stili per ogni media query:
 
-* Utilizzate una cartella [Libreria](clientlibs.md) client per definire il CSS assemblato al momento del rendering della pagina.
+* Utilizzate una [cartella Libreria client](clientlibs.md) per definire il CSS assemblato quando viene eseguito il rendering della pagina.
 * Definite ogni media query e gli stili associati in file CSS separati. È utile utilizzare nomi di file che rappresentano le caratteristiche del dispositivo della query multimediale.
 * Definire stili comuni a tutti i dispositivi in un file CSS separato.
 * Nel file css.txt della cartella Libreria client, ordinate i file CSS dell&#39;elenco come richiesto nel file CSS assemblato.
 
-L&#39;esercitazione [](develop-wknd-tutorial.md) WKND utilizza questa strategia per definire gli stili nella progettazione del sito. Il file CSS utilizzato da WKND si trova in `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+L&#39; [esercitazione WKND](develop-wknd-tutorial.md) utilizza questa strategia per definire gli stili nella progettazione del sito. Il file CSS utilizzato da WKND si trova in `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
 <!--
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
