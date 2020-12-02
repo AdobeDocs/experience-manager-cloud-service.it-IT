@@ -14,11 +14,11 @@ ht-degree: 1%
 
 Abbiamo sviluppato strumenti per automatizzare alcune delle attività di refactoring del codice necessarie per essere compatibili con AEM come Cloud Service. Per ridurre la complessità associata all&#39;installazione e alla configurazione di diversi strumenti di refactoring del codice, abbiamo sviluppato un plugin per unificare gli strumenti che operano su codice e repository.
 
-## Benefits {#benefits}
+## Vantaggi {#benefits}
 
 Il plug-in per l&#39;esperienza unificata offre i seguenti vantaggi:
 
-* Unisce gli strumenti che lavorano sul codice sorgente in un&#39; `node.js` applicazione esposta come `aio-cli ` plug-in per fornire all&#39;utente un&#39;esperienza utente coerente.
+* Unisce gli strumenti che funzionano sul codice sorgente in un&#39;applicazione `node.js` esposta come plug-in `aio-cli ` per fornire all&#39;utente un&#39;esperienza utente coerente.
 
 * Consente di eseguire tutti gli strumenti tramite un singolo comando, fornendo al contempo la flessibilità necessaria per eseguire strumenti specifici.
 
@@ -26,7 +26,7 @@ Il plug-in per l&#39;esperienza unificata offre i seguenti vantaggi:
 
 ## Informazioni sul plug-in {#understanding-plugin}
 
-Il `aio-cli-plugin-aem-cloud-service-migration` plugin è costituito da due parti principali:
+Il plugin `aio-cli-plugin-aem-cloud-service-migration` è costituito da due parti principali:
 
 * **Interfaccia utente**
 
@@ -43,7 +43,7 @@ Il `aio-cli-plugin-aem-cloud-service-migration` plugin è costituito da due part
 
 ## Disponibilità {#availability}
 
-Fare riferimento a Risorse [Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) per saperne di più sull&#39;utilizzo e come puoi contribuire a questo codice plug-in che è open source in GitHub.
+Fare riferimento a [Risorse Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) per saperne di più sull&#39;utilizzo e su come contribuire a questo codice plug-in open source in GitHub.
 
 >[!NOTE]
 >Attualmente il plug-in è integrato con AEM Dispatcher Converter e Repository Modernizer.
