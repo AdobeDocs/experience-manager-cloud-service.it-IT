@@ -12,9 +12,9 @@ ht-degree: 2%
 
 # Integrazione di Git con Adobe Cloud Manager {#git-integration}
 
- Adobe Cloud Manager viene fornito con un unico repository Git che viene utilizzato per distribuire il codice utilizzando le pipeline CI/CD di Cloud Manager. I clienti possono utilizzare il repository Git di Cloud Manager in modo immediato. I clienti possono anche integrare un repository Git locale o gestito **dai** clienti con Cloud Manager.
+ Adobe Cloud Manager viene fornito con un unico repository Git che viene utilizzato per distribuire il codice utilizzando le pipeline CI/CD di Cloud Manager. I clienti possono utilizzare il repository Git di Cloud Manager in modo immediato. I clienti possono anche integrare un repository git gestito dai clienti **locale** con Cloud Manager.
 
-## Panoramica sull’integrazione Git {#git-integration-overview}
+## Panoramica sull&#39;integrazione Git {#git-integration-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28710/)
 
@@ -26,7 +26,7 @@ Questa serie video illustra diversi casi di utilizzo per l’integrazione di un 
 * [Distribuzione di produzione](#production-deployment)
 * [Sincronizzazione dei tag di rilascio](#sync-tags)
 
-La serie video presuppone una conoscenza di base di git e gestione del controllo del codice sorgente. Per ulteriori informazioni su git, consulta le risorse [aggiuntive riportate di seguito](#additional-resources) .
+La serie video presuppone una conoscenza di base di git e gestione del controllo del codice sorgente. Per ulteriori informazioni su git, vedere le [risorse aggiuntive riportate di seguito](#additional-resources).
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Primi passi per la sincronizzazione di un repository Git gestito dai clienti con
 
 >[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
 
-## Strategia di riferimento {#branching-strategy}
+## Strategia di diramazione di base {#branching-strategy}
 
 Seguite il video seguente per apprendere le strategie di base per la ramificazione.
 
@@ -50,7 +50,7 @@ Utilizzate un ramo di funzionalità per isolare le modifiche di codice in un rep
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
-## Distribuzione di produzione {#production-deployment}
+## Distribuzione produzione {#production-deployment}
 
 Prepara il codice per una versione di produzione in un archivio git gestito dal cliente e sincronizza con il repository git di Cloud Manager per distribuirlo nell’area di visualizzazione e negli ambienti di produzione.
 
