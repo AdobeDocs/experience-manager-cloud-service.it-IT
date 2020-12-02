@@ -1,5 +1,5 @@
 ---
-title: Procedure ottimali per l'integrazione [!DNL Adobe Creative Cloud]
+title: Procedure ottimali per l'integrazione con [!DNL Adobe Creative Cloud]
 description: Le best practice integrano un'implementazione  Experience Manager con Adobe Creative Cloud per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere la massima efficienza.
 contentOwner: AG
 mini-toc-levels: 1
@@ -12,7 +12,7 @@ ht-degree: 18%
 ---
 
 
-# Best practice per l&#39;integrazione di AEM e Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
+# Best practice per l&#39;integrazione con AEM e Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
 
 Adobe Experience Manager (AEM) Assets è una soluzione di gestione delle risorse digitali (DAM) che può essere integrata con Adobe Creative Cloud per aiutare gli utenti DAM a collaborare con i team creativi, semplificando la collaborazione nel processo di creazione dei contenuti.
 
@@ -32,7 +32,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 | Fornire risorse pronte all’uso di alta qualità da  Adobe Stock | Gli esperti di marketing contribuiscono ad accelerare il processo di creazione dei contenuti fornendo assistenza per l&#39;origine e l&#39;individuazione delle risorse. I creativi professionisti usano le risorse approvate direttamente dai loro strumenti creativi. |  AEM Assets;  mercato Adobe Stock; campi di metadati |
 | Distribuire e condividere le risorse per organizzazioni | I dipartimenti interni/le filiali locali e i partner esterni, i distributori e le agenzie utilizzano le risorse approvate condivise dall&#39;organizzazione madre. L&#39;organizzazione intende condividere in modo sicuro e senza soluzione di continuità le risorse create per un riutilizzo più ampio. | Portale del marchio, Contenuti di condivisione delle risorse |
 
-## Offerte  Adobe per supportare le esigenze di collaborazione {#adobe-offerings-to-support-the-collaboration-need}
+##  offerte di Adobe per supportare le esigenze di collaborazione {#adobe-offerings-to-support-the-collaboration-need}
 
 | Proposta di valore per le persone coinvolte |  offerta Adobe | Superfici interessate |
 |---|---|---|
@@ -53,13 +53,13 @@ Decidere su quale funzionalità utilizzare
 | Scopri - Sfoglia AEM cartelle | Sì | AEM interfaccia utente Web + azioni desktop | Quando sfogliate la condivisione di rete, disattivate le miniature per evitare di scaricare file binari di risorse. |
 | Discover - accesso alle raccolte AEM | Sì | AEM interfaccia utente Web + azioni desktop |  |
 | Scopri - cercare risorse da AEM | Sì | AEM interfaccia utente Web + azioni desktop |  |
-| Usa - apri risorsa | Sì | Sì - per qualsiasi app | [Apri dall&#39;interfaccia](/help/assets/manage-digital-assets.md#previewing-assets) Web o dal Finder |
+| Usa - apri risorsa | Sì | Sì - per qualsiasi app | [Apri dall&#39;](/help/assets/manage-digital-assets.md#previewing-assets) interfaccia Web dal Finder |
 | Utilizzo: posizionamento di risorse da AEM a documento | Sì - incorporamento | Sì - collegamento o incorporazione | AEM&#39;app desktop consente di accedere alle risorse come file nel file system locale. Tali collegamenti nelle app native sono rappresentati da percorsi locali. |
-| Modifica - aprire per la modifica | Sì - Azione di check-out | Sì - Azione di apertura (nella condivisione di rete) | [Il check-out in AAL](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) salva la risorsa nell’account di archiviazione Creative Cloud dell’utente (sincronizzato dall’app di Creative Cloud) per impostazione predefinita. |
+| Modifica - aprire per la modifica | Sì - Azione di check-out | Sì - Azione di apertura (nella condivisione di rete) | [Check-out in ](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) AALsalva la risorsa nell’account di archiviazione Creative Cloud dell’utente (sincronizzato dall’app di Creative Cloud) per impostazione predefinita. |
 | Modifica - lavoro in corso all&#39;esterno AEM | Sì - Risorsa disponibile nell’account di archiviazione di Creative Cloud dell’utente sincronizzato con il desktop. | Sì |  |
-| Modifica - modifiche di caricamento | Sì - [Check-in azione](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) con commento facoltativo | Sì |  |
+| Modifica - modifiche di caricamento | Sì - [Check-in action](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) con commento facoltativo | Sì |  |
 | Carica - file singolo | Sì - carica il documento attivo corrente | Sì | [Caricamento tramite interfaccia Web](/help/assets/manage-digital-assets.md#uploading-assets) |
-| Caricamento: più file/strutture di cartelle gerarchiche | No | Sì | [Caricamento tramite interfaccia](/help/assets/manage-digital-assets.md#uploading-assets)Web; Strumento o script personalizzato |
+| Caricamento: più file/strutture di cartelle gerarchiche | No | Sì | [Caricamento tramite interfaccia](/help/assets/manage-digital-assets.md#uploading-assets) Web; Strumento o script personalizzato |
 | Varie - utente e login | Creative Cloud utente che ha eseguito l&#39;accesso all&#39;app desktop di Creative Cloud viene riconosciuto (SSO) | AEM utente/login | Gli utenti di entrambe le soluzioni contano sulla quota di utenti AEM. |
 | Varie - rete e accesso | Richiede l&#39;accesso dal desktop dell&#39;utente per AEM la distribuzione in rete | Richiede l&#39;accesso dal desktop dell&#39;utente per AEM la distribuzione in rete |  collegamento risorsa Adobe non condivide l’ambiente proxy di rete. |
 
@@ -70,13 +70,13 @@ Decidere su quale funzionalità utilizzare
 
 Per supportare i casi di utilizzo della distribuzione delle risorse, è necessario considerare altre soluzioni:
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/it/experience-manager/brand-portal/user-guide.html) per un componente aggiuntivo SaaS configurabile  AEM Assets per la pubblicazione delle risorse.
+* [ AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portal per un componente aggiuntivo SaaS configurabile  AEM Assets per la pubblicazione delle risorse.
 
-* Le soluzioni personalizzate vengono create in base al codice di base di [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) .
-* AEM condivisione [di](/help/assets/share-assets.md) collegamenti per condividere risorse ad hoc tramite i collegamenti.
-* [interfaccia](/help/assets/manage-digital-assets.md) Web AEM Assets con aree per soggetti esterni protette dalla configurazione del controllo AEM accesso e con le necessarie regolazioni di configurazione IT/rete, per consentire a questi utenti esterni di accedere a AEM.
+* Le soluzioni personalizzate vengono create in base al codice [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
+* AEM [condivisione di collegamenti](/help/assets/share-assets.md) per condividere risorse ad hoc tramite i collegamenti.
+* [ Web ](/help/assets/manage-digital-assets.md) con aree per soggetti esterni protette dalla configurazione del controllo dell&#39;accesso AEM e con le necessarie regolazioni di configurazione IT/rete, che consentono a questi utenti esterni di accedere a AEM.
 
-## Concetti chiave e casi di utilizzo {#key-concepts-and-use-cases}
+## Concetti chiave e casi d&#39;uso {#key-concepts-and-use-cases}
 
 ### Glossario dei termini comuni {#glossary-of-common-terms}
 
@@ -114,7 +114,7 @@ Questo è un breve riepilogo delle best practice per l&#39;integrazione AEM e Cr
 
 ### Accesso  risorse Adobe Stock da  AEM Assets {#access-to-adobe-stock-assets-from-aem-assets}
 
-[L&#39;integrazione](/help/assets/aem-assets-adobe-stock.md) AEM e  Adobe Stock consente AEM utenti di cercare, visualizzare in anteprima, concedere in licenza e salvare risorse da  Adobe Stock in AEM. Le risorse Adobe Stock  in licenza e salvate hanno selezionato i metadati Stock, che possono essere utilizzati per la ricerca con altri filtri.
+[AEM e  ](/help/assets/aem-assets-adobe-stock.md) integrazione Adobe Stock consente agli utenti AEM di cercare, visualizzare in anteprima, concedere in licenza e salvare le risorse da  Adobe Stock in AEM. Le risorse Adobe Stock  in licenza e salvate hanno selezionato i metadati Stock, che possono essere utilizzati per la ricerca con altri filtri.
 
 Alcuni punti importanti su questa integrazione:
 
@@ -125,7 +125,7 @@ Alcuni punti importanti su questa integrazione:
 Gli utenti creativi che lavorano nelle app di Creative Cloud con ’estensione Collegamento risorse di Adobe presente, oltre a poter accedere alle risorse già concesse in licenza da  Adobe Stock in AEM, possono anche utilizzare il pannello Creative Cloud librerie per cercare, visualizzare in anteprima e concedere  licenza risorse Adobe Stock.
 Le risorse da  Adobe Stock con licenza e salvate in AEM diventano disponibili per i team più grandi che accedono  distribuzione AEM Assets, mentre le risorse per la licenza creativa da  Adobe Stock tramite il pannello Creative Cloud Librerie le rendono disponibili a se stesse solo per impostazione predefinita nel loro account di Creative Cloud.
 
-## Memorizzazione delle risorse in un DAM {#about-storing-assets-in-a-dam}
+## Informazioni sull&#39;archiviazione delle risorse in una DAM {#about-storing-assets-in-a-dam}
 
 Per progettare un flusso di lavoro efficiente tra i team creativi e di marketing/line-of-business (LOB) e scegliere le migliori funzionalità di supporto, è importante comprendere quando e perché le risorse vengono memorizzate in DAM.
 
@@ -183,8 +183,8 @@ Le agenzie esterne e i freelance senza accesso diretto all’istanza DAM possono
 Utilizzate le seguenti strategie per fornire l&#39;accesso alle risorse finali/approvate:
 
 * Utilizzate l’app desktop se il collegamento risorsa non funziona.
-* Utilizzate [Portale](https://helpx.adobe.com/it/experience-manager/brand-portal/user-guide.html) marchio AEM Assets per distribuire le risorse in modo sicuro ai partner esterni
-* Utilizzare un&#39;implementazione personalizzata di un portale di distribuzione e determinazione origine basato su [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
+* Utilizzate [ Portale marchio AEM Assets](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) per distribuire le risorse in modo sicuro ai partner esterni
+* Utilizza un&#39;implementazione personalizzata di un portale di distribuzione e origine basato su [Contenuti di condivisione risorse](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilizza il controllo degli accessi impostato nell&#39;infrastruttura di rete AEM e necessaria (ad esempio, VPN e IP consentiti) per consentire alle parti esterne di accedere a un&#39;area dedicata di contenuto nel tuo DAM. Possono utilizzare AEM&#39;interfaccia utente Web per ottenere risorse e caricare nuovi contenuti in DAM.
 
 #### Lavoro in corso sulle risorse da AEM {#work-in-progress-on-assets-from-aem}
@@ -215,7 +215,7 @@ Questa descrizione fa riferimento al caricamento di file operativamente (ad esem
 
 Potete sfruttare le seguenti funzionalità di caricamento:
 
-* Per caricare cartelle grandi o gerarchiche in massa, utilizzate AEM app desktop che fornisce funzionalità di caricamento [delle](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload) cartelle. Potete anche caricare strutture di cartelle gerarchiche. Le risorse vengono caricate in background e, di conseguenza, non sono collegate a una sessione del browser Web
+* Per caricare cartelle grandi o gerarchiche in massa, utilizzate AEM app desktop che fornisce la funzionalità [caricamento delle cartelle](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload). Potete anche caricare strutture di cartelle gerarchiche. Le risorse vengono caricate in background e, di conseguenza, non sono collegate a una sessione del browser Web
 * Per caricare alcuni file da una singola cartella, trascinateli direttamente nell’interfaccia Web o utilizzate l’opzione Crea nell’interfaccia Web  AEM Assets.
 * A seconda delle esigenze aziendali, potete anche utilizzare il caricatore personalizzato.
 
