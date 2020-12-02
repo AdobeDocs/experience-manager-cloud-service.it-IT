@@ -20,20 +20,20 @@ Adobe Experience Manager as a Cloud Service uses the principle of overlays to al
 
 Sovrapposizione è un termine che può essere utilizzato in molti contesti. In questo contesto (estendendo AEM come Cloud Service) una sovrapposizione significa prendere la funzionalità predefinita e imporre le proprie definizioni su di essa (per personalizzare la funzionalità standard).
 
-In un’istanza standard la funzionalità predefinita è mantenuta in `/libs` ed è consigliabile definire la sovrapposizione (personalizzazioni) sotto il `/apps` ramo (utilizzando un percorso [di](#search-paths) ricerca per risolvere le risorse).
+In un&#39;istanza standard la funzionalità predefinita è mantenuta in `/libs` ed è consigliabile definire la sovrapposizione (personalizzazioni) sotto il ramo `/apps` (utilizzando un percorso di ricerca [](#search-paths) per risolvere le risorse).
 
-* L’interfaccia touch utilizza sovrapposizioni [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html):
+* L&#39;interfaccia touch utilizza le sovrapposizioni relative a [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html):
 
    * Metodo
 
-      * Ricostruire la struttura appropriata sotto `/libs` `/apps`.
+      * Ricostruire la struttura `/libs` appropriata in `/apps`.
 
-         Questa operazione non richiede una copia 1:1, in quanto la fusione [delle risorse](/help/implementing/developing/introduction/sling-resource-merger.md) Sling viene utilizzata per fare riferimento incrociato alle definizioni originali richieste. Sling Resource Merger fornisce servizi per l&#39;accesso e l&#39;unione delle risorse mediante meccanismi diversi (differenziazione).
+         Questa operazione non richiede una copia 1:1, in quanto la [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) viene utilizzata per fare riferimento incrociato alle definizioni originali richieste. Sling Resource Merger fornisce servizi per l&#39;accesso e l&#39;unione delle risorse mediante meccanismi diversi (differenziazione).
 
       * Apportate eventuali modifiche in `/apps`.
    * Vantaggi
 
-      * Più robusto ai cambiamenti in `/libs`.
+      * Più robusto alle modifiche in `/libs`.
       * Ridefinisci solo ciò che è effettivamente richiesto.
 
 
@@ -41,7 +41,7 @@ In un’istanza standard la funzionalità predefinita è mantenuta in `/libs` ed
 
 >[!CAUTION]
 >
->La fusione [di risorse](/help/implementing/developing/introduction/sling-resource-merger.md) Sling e i metodi correlati possono essere utilizzati solo con [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Ciò significa che la creazione di una sovrapposizione con una struttura di ossatura è appropriata solo per l’interfaccia touch standard.
+>La [Fusione risorse Sling](/help/implementing/developing/introduction/sling-resource-merger.md) e i metodi correlati possono essere utilizzati solo con [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Ciò significa che la creazione di una sovrapposizione con una struttura di ossatura è appropriata solo per l’interfaccia touch standard.
 
 Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio per configurare le console o creare la categoria di selezione nel browser delle risorse nel pannello laterale (utilizzato per l’authoring delle pagine). Sono richiesti come:
 
@@ -49,13 +49,13 @@ Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio pe
 Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
 -->
 
-* Non ***è necessario* apportare modifiche al `/libs` ramo **Eventuali modifiche apportate potrebbero andare perdute, perché questo ramo può subire modifiche ogni volta che vengono applicati aggiornamenti all&#39;istanza.
+* ***non è necessario* apportare modifiche al ramo `/libs`**Eventuali modifiche apportate potrebbero andare perse, in quanto questo ramo potrebbe subire modifiche ogni volta che gli aggiornamenti vengono applicati all&#39;istanza.
 
 * Consentono di concentrare le modifiche in un&#39;unica posizione; facilitando il monitoraggio, la migrazione, il backup e/o il debug delle modifiche, se necessario.
 
 ## Percorsi di ricerca {#search-paths}
 
-AEM utilizza un percorso di ricerca per trovare una risorsa, cercando (per impostazione predefinita) prima il `/apps` ramo e quindi il `/libs` ramo. Questo meccanismo significa che la sovrapposizione `/apps` (e le personalizzazioni ivi definite) avranno priorità.
+AEM utilizza un percorso di ricerca per trovare una risorsa, cercando (per impostazione predefinita) prima il ramo `/apps`, quindi il ramo `/libs`. Questo meccanismo significa che la sovrapposizione in `/apps` (e le personalizzazioni ivi definite) avrà priorità.
 
 Per le sovrapposizioni, la risorsa consegnata è un insieme di risorse e proprietà recuperate, a seconda dei percorsi di ricerca definiti nella configurazione OSGi.
 
