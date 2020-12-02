@@ -18,10 +18,10 @@ Il diagramma seguente mostra la gerarchia delle entità in Cloud Manager.
 
 ![immagine](assets/program-types1.png)
 
-## Tipi di programmi {#program-types}
+## Tipi di programma {#program-types}
 
-Un utente può creare un **sandbox** o un programma **regolare** .
+Un utente può creare un programma **Sandbox** o **Regular**.
 
-In genere, viene creata una *sandbox* per scopi di formazione, esecuzione di dimostrazioni, abilitazione, POC o documentazione. Non è destinato a trasportare traffico live e avrà delle restrizioni che un programma regolare non vuole. Includerà Siti e Risorse e verrà distribuito automaticamente con un ramo Git che include codice di esempio, un ambiente Dev e una pipeline non di produzione.
+Di norma, viene creata una *sandbox* per consentire la formazione, l&#39;esecuzione di dimostrazioni, l&#39;abilitazione, i POC o la documentazione. Non è destinato a trasportare traffico live e avrà delle restrizioni che un programma regolare non vuole. Includerà Siti e Risorse e verrà distribuito automaticamente con un ramo Git che include codice di esempio, un ambiente Dev e una pipeline non di produzione.
 
-Viene creato un programma ** regolare per consentire il traffico live al momento opportuno in futuro.
+Viene creato un *Programma regolare* per attivare il traffico live al momento opportuno in futuro.
