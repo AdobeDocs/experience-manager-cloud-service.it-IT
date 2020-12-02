@@ -1,18 +1,18 @@
 ---
-title: Notevoli modifiche in Adobe Experience Manager Assets come Cloud Service
-description: Notevoli modifiche ad Adobe Experience Manager Assets in AEM Cloud Service rispetto ad Adobe Experience Manager 6.5.
+title: Notevoli modifiche in Risorse Adobe Experience Manager come a [!DNL Cloud Service]
+description: Notevoli modifiche alle risorse Adobe Experience Manager in AEM [!DNL Cloud Service] rispetto ad Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 18%
+source-wordcount: '601'
+ht-degree: 8%
 
 ---
 
 
-# Notevoli modifiche a  risorse Experience Manager come Cloud Service {#notable-changes}
+# Notevoli modifiche a  risorse Experience Manager come [!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service offre nuove funzionalità e possibilità per gestire i progetti AEM. Tuttavia, esistono molte differenze tra  risorse di Experience Manager locali o in  servizio gestito del Adobe rispetto a  Experience Manager Cloud Service. In questo documento vengono evidenziate le differenze importanti per le funzionalità di Risorse.
+Adobe Experience Manager come [!DNL Cloud Service] offre molte nuove funzionalità e possibilità per gestire i progetti AEM. Tuttavia, esistono molte differenze tra  risorse di Experience Manager locali o in  servizio gestito del Adobe rispetto a  Experience Manager come [!DNL Cloud Service]. In questo documento vengono evidenziate le differenze importanti per le funzionalità di Risorse.
 
 Le principali differenze rispetto a Experience Manager 6.5 riguardano i seguenti aspetti:
 
@@ -22,14 +22,14 @@ Le principali differenze rispetto a Experience Manager 6.5 riguardano i seguenti
 
 >[!NOTE]
 >
->In questo documento vengono evidenziate le modifiche rilevanti apportate  AEM Assets. Per le modifiche generali alla AEM come Cloud Service e altri moduli, vedere:
+>In questo documento vengono evidenziate le modifiche rilevanti apportate  AEM Assets. Per le modifiche generali  Experience Manager come [!DNL Cloud Service] e altri moduli, vedete:
 >
->* [Introduzione ad Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* [Panoramica di AEM as a Cloud Service: novità e differenze](/help/overview/what-is-new-and-different.md)
->* [Architettura](/help/core-concepts/architecture.md) di Adobe Experience Manager as a Cloud Service
->* [Modifiche di rilievo apportate ad AEM as a Cloud Service (Note sulla versione)](/help/release-notes/aem-cloud-changes.md)
->* [Modifiche di rilievo apportate ad AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Introduzione ad Adobe Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md)
+>* Una [Panoramica delle AEM come a [!DNL Cloud Service] - Novità e cosa è diverso](/help/overview/what-is-new-and-different.md)
+>* [Architettura](/help/core-concepts/architecture.md) di Adobe Experience Manager as a [!DNL Cloud Service]
+>* [Notevoli modifiche a AEM come [!DNL Cloud Service] (Note sulla versione)](/help/release-notes/aem-cloud-changes.md)
+>* [Notevoli modifiche a  AEM Sites come [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager come  [!DNL Cloud Service] esercitazioni](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## Caricamento e caricamento di risorse {#asset-ingestion}
@@ -56,4 +56,4 @@ Per eseguire una convalida end-to-end del codice e del processo, compresi l’as
 
 ## Rimozione dell’interfaccia classica {#classic-ui}
 
-L&#39;interfaccia classica non è più disponibile in  Experience Manager come Cloud Service. L’interfaccia standard è l’interfaccia touch.
+L&#39;interfaccia classica non è più disponibile in  Experience Manager come [!DNL Cloud Service]. L’interfaccia standard è l’interfaccia touch.
