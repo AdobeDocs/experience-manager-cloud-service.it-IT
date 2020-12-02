@@ -16,7 +16,7 @@ I componenti possono essere adattati per generare l’esportazione JSON dei loro
 
 ## Panoramica {#overview}
 
-JSON Export si basa su modelli [](https://sling.apache.org/documentation/bundles/models.html)Sling e sul framework [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (che a sua volta si basa sulle annotazioni [Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
+L&#39;esportazione JSON si basa su [Sling Models](https://sling.apache.org/documentation/bundles/models.html) e sul framework [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (che si basa su [Jackson annotations](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
 Questo significa che il componente deve avere un modello Sling se deve esportare JSON. Pertanto, per abilitare l’esportazione JSON su qualsiasi componente dovrete seguire questi due passaggi.
 
@@ -29,7 +29,7 @@ Per il componente deve essere definito innanzitutto un modello Sling.
 
 >[!NOTE]
 >
->Per un esempio di utilizzo di Sling Models, consultate l&#39;articolo [Sviluppo di Sling Model Exporter in AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+>Per un esempio di utilizzo di Sling Models, vedere l&#39;articolo [Developing Sling Model Exporter in AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
 La classe di implementazione del modello Sling deve essere annotata con le seguenti annotazioni:
 
@@ -39,9 +39,9 @@ La classe di implementazione del modello Sling deve essere annotata con le segue
 @JsonSerialize(as = MyComponent.class)
 ```
 
-In questo modo il componente può essere esportato in modo indipendente, utilizzando il `.model` selettore e l’ `.json` estensione.
+Questo garantisce che il componente possa essere esportato autonomamente, utilizzando il selettore `.model` e l&#39;estensione `.json`.
 
-Inoltre, questo specifica che la classe Sling Model può essere adattata all&#39; `ComponentExporter` interfaccia.
+Inoltre, questo specifica che la classe Sling Model può essere adattata all&#39;interfaccia `ComponentExporter`.
 
 >[!NOTE]
 >
@@ -49,37 +49,37 @@ Inoltre, questo specifica che la classe Sling Model può essere adattata all&#39
 
 >[!NOTE]
 >
->Le `ExporterConstants` e `ComponentExporter` le classi provengono dal `com.adobe.cq.export.json` bundle.
+>Le classi `ExporterConstants` e `ComponentExporter` provengono dal pacchetto `com.adobe.cq.export.json`.
 
 ### Utilizzo di più selettori {#multiple-selectors}
 
-Sebbene non sia un caso d’uso standard, è possibile configurare più selettori oltre al `model` selettore.
+Sebbene non sia un caso d&#39;uso standard, è possibile configurare più selettori oltre al selettore `model`.
 
 ```
 https://<server>:<port>/content/page.model.selector1.selector2.json
 ```
 
-In tal caso, tuttavia, il `model` selettore deve essere il primo e l&#39;estensione deve essere `.json`.
+In tal caso, tuttavia, il selettore `model` deve essere il primo selettore e l&#39;estensione deve essere `.json`.
 
-## Annotazione dell&#39;interfaccia del modello Sling {#annotate-the-sling-model-interface}
+## Annota dell&#39;interfaccia del modello Sling {#annotate-the-sling-model-interface}
 
-Per essere presa in considerazione dal framework JSON Exporter, l&#39;interfaccia Model dovrebbe implementare l&#39; `ComponentExporter` interfaccia (o `ContainerExporter`, nel caso di un componente contenitore).
+Per essere presa in considerazione dal framework JSON Exporter, l&#39;interfaccia Model deve implementare l&#39;interfaccia `ComponentExporter` (o `ContainerExporter`, nel caso di un componente contenitore).
 
-La corrispondente interfaccia Sling Model (`MyComponent`) viene quindi annotata utilizzando le annotazioni [Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) per definire come deve essere esportata (serializzata).
+L&#39;interfaccia del modello Sling corrispondente (`MyComponent`) verrà quindi annotata utilizzando le annotazioni di [Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) per definire come esportare (serializzato).
 
-L&#39;interfaccia Model deve essere annotata correttamente per definire i metodi da serializzare. Per impostazione predefinita, tutti i metodi che rispettano le consuete convenzioni di denominazione per i getter saranno serializzati e deriveranno naturalmente i nomi delle loro proprietà JSON dai nomi dei getter. Questo può essere impedito o ignorato utilizzando `@JsonIgnore` o `@JsonProperty` per rinominare la proprietà JSON.
+L&#39;interfaccia Model deve essere annotata correttamente per definire i metodi da serializzare. Per impostazione predefinita, tutti i metodi che rispettano le consuete convenzioni di denominazione per i getter saranno serializzati e deriveranno naturalmente i nomi delle loro proprietà JSON dai nomi dei getter. Questo può essere impedito o sostituito utilizzando `@JsonIgnore` o `@JsonProperty` per rinominare la proprietà JSON.
 
 ## Esempio {#example}
 
-[I componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) core supportano l’esportazione JSON e possono essere utilizzati come riferimento.
+[Core ](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) Componentsupporta l’esportazione JSON e può essere utilizzato come riferimento.
 
 Per un esempio, consultate Implementazione del modello Sling del componente Image Core e la relativa interfaccia annotata.
 
-## Related Documentation {#related-documentation}
+## Documentazione correlata {#related-documentation}
 
 Per maggiori dettagli, consulta:
 
 * [Frammenti di contenuto nella guida utente di Assets](/help/assets/content-fragments/content-fragments.md)
 * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
 * [Authoring con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) di base e componente Frammento di [contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Componenti ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) di base e componente Frammento di  [contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
