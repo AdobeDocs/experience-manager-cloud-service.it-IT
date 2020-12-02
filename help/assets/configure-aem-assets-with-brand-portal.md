@@ -1,23 +1,23 @@
 ---
-title: Configurare  AEM Assets come Cloud Service con Brand Portal
+title: Configurare  AEM Assets come  [!DNL Cloud Service] con Brand Portal
 description: Configurare AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 19%
+source-wordcount: '1629'
+ht-degree: 20%
 
 ---
 
 
-# Configurare  AEM Assets come Cloud Service con Portale marchio {#configure-aem-assets-with-brand-portal}
+# Configurare  AEM Assets come [!DNL Cloud Service] con Portale marchio {#configure-aem-assets-with-brand-portal}
 
-La configurazione di Adobe Experience Manager Assets Brand Portal consente di pubblicare le risorse del marchio approvate da Adobe Experience Manager Assets come istanza Cloud Service al Brand Portal e distribuirle agli utenti del Brand Portal.
+La configurazione di Adobe Experience Manager Assets Brand Portal consente di pubblicare risorse del marchio approvate da Adobe Experience Manager Assets come istanza [!DNL Cloud Service] in Brand Portal e distribuirle agli utenti del Brand Portal.
 
 **Flusso di lavoro di configurazione**
 
- AEM Assets come Cloud Service è configurato con Brand Portal tramite  Developer Console, che fornisce un token account  Adobe  Identity Management Services (IMS) per l&#39;autorizzazione del tenant del Brand Portal. Richiede configurazioni sia in  AEM Assets che  Adobe Developer Console.
+ AEM Assets come [!DNL Cloud Service] è configurato con Portale marchio tramite  Developer Console, che fornisce un token account  Adobe Identity Management Services (IMS) per l&#39;autorizzazione del tenant del Portale marchio. Richiede configurazioni sia in  AEM Assets che  Adobe Developer Console.
 
 1. In  AEM Assets, create un account IMS e generate una chiave pubblica (certificato).
 1. In  Adobe Developer Console, crea un progetto per il tenant del Brand Portal (organizzazione).
@@ -29,13 +29,13 @@ La configurazione di Adobe Experience Manager Assets Brand Portal consente di pu
 
 >[!NOTE]
 >
->Un AEM Assets  come istanza di Cloud Service può essere configurato solo con un tenant Brand Portal.
+>Un AEM Assets  come istanza [!DNL Cloud Service] può essere configurato solo con un tenant Brand Portal.
 
 ## Prerequisiti {#prerequisites}
 
 Per configurare AEM Assets con Brand Portal, è necessario quanto segue:
 
-* Un AEM Assets funzionante  come istanza di Cloud Service
+* Un AEM Assets funzionante  come istanza [!DNL Cloud Service]
 * URL tenant del Brand Portal
 * Un utente con privilegi di amministratore di sistema nell’organizzazione IMS del tenant di Brand Portal
 
@@ -51,7 +51,7 @@ Effettuate i seguenti passaggi nella sequenza specificata per configurare  AEM A
 
 ### Creare la configurazione IMS {#create-ims-configuration}
 
-La configurazione IMS autentica l’AEM Assets  come istanza di Cloud Service con il tenant del Brand Portal.
+La configurazione IMS autentica l&#39;AEM Assets  come istanza [!DNL Cloud Service] con il tenant del Brand Portal.
 
 La configurazione IMS prevede due passaggi:
 
@@ -231,7 +231,7 @@ Per configurare il servizio cloud Brand Portal, effettuate le seguenti operazion
 
 1. Fai clic su **[!UICONTROL Salva e chiudi]**. Viene creata la configurazione cloud.
 
-   L&#39;AEM Assets  come istanza di Cloud Service ora è configurato con il tenant del Brand Portal.
+   L&#39;AEM Assets  come istanza [!DNL Cloud Service] ora è configurato con il tenant del Brand Portal.
 
 ### Verificare la configurazione {#test-configuration}
 
@@ -262,7 +262,7 @@ Effettuate le seguenti operazioni per convalidare la configurazione:
 
    ![](assets/test-bpconfig3.png)
 
-1. Per verificare la connessione tra  AEM Assets come Cloud Service e Portale marchio, fate clic sull&#39;icona **[!UICONTROL Test Connection]**.
+1. Per verificare la connessione tra  AEM Assets come [!DNL Cloud Service] e Brand Portal, fare clic sull&#39;icona **[!UICONTROL Test Connection]**.
 
    ![](assets/test-bpconfig4.png)
 
