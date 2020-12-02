@@ -38,7 +38,7 @@ In genere, la barra degli strumenti propone le seguenti opzioni:
 
 Per i componenti basati su testo, fai clic sul pulsante di modalità a tutto schermo ![Pulsante per la modalità a tutto schermo nell’editor Rich Text](/help/sites-cloud/authoring/assets/editing-full-screen.png) nella [barra degli strumenti](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) per aprire l’editor Rich Text e nascondere il resto del contenuto della pagina.
 
-Nella modalità a tutto schermo vengono visualizzate tutte le opzioni configurate utilizzabili per l’authoring. The availability of options [depends on the configuration](/help/implementing/developing/extending/rich-text-editor.md).
+Nella modalità a tutto schermo vengono visualizzate tutte le opzioni configurate utilizzabili per l’authoring. La disponibilità delle opzioni [dipende dalla configurazione](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![Editor Rich Text in modalità a tutto schermo](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
