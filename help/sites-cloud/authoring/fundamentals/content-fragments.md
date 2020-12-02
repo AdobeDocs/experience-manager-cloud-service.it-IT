@@ -24,8 +24,10 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 >
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo e di conseguenza frammenti di una pagina web.
+
 >
->I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
+>
+I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 
 >[!CAUTION]
 >
@@ -104,7 +106,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
    * Attributo **ID HTML** da applicare al componente.
 
-### Collegamento rapido all’editor frammento di contenuto  {#quick-connection-to-fragment-editor}
+### Collegamento rapido all’editor frammento di contenuto   {#quick-connection-to-fragment-editor}
 
 Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **Modifica** nella barra degli strumenti del componente, così da poter [modificare e gestire il frammento di contenuto](/help/assets/content-fragments/content-fragments.md).
 
@@ -112,7 +114,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 >
 >Come sempre, la modifica dell’origine del frammento ha un impatto su tutte le pagine che fanno riferimento a tale frammento di contenuto.
 
-### Aggiunta di contenuto intermedio  {#adding-in-between-content}
+### Aggiunta di contenuto intermedio   {#adding-in-between-content}
 
 Quando si aggiunge alla pagina un frammento di contenuto specifico, è disponibile un segnaposto **Trascina qui i componenti** fra ciascun paragrafo HTML (nonché all’inizio e alla fine) del frammento.
 
@@ -144,11 +146,12 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 >
 >* I componenti intermedi hanno una posizione assoluta all’interno della sequenza di componenti nel flusso del frammento. Questa posizione resta invariata, anche quando cambia il contenuto dei paragrafi nel frammento.
 >
->  Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
+>  
+Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
 >* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
 
 
-### Uso di contenuti associati  {#using-associated-content}
+### Uso di contenuti associati   {#using-associated-content}
 
 Se hai [associato del contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
