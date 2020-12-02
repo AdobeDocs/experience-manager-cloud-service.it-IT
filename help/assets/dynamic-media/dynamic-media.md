@@ -18,11 +18,11 @@ Dynamic Media fornisce esperienze di visualizzazione interattive, con funzioni q
 
 >[!NOTE]
 >
->Un articolo della community è disponibile in [Utilizzo di Adobe Experience Manager e Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+>Un articolo della community è disponibile su [Utilizzo di Adobe Experience Manager e contenuti multimediali dinamici](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
 
 ## Operazioni con gli elementi multimediali dinamici {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media consente di gestire le risorse prima di pubblicarle. Come lavorare con le risorse in generale è descritto dettagliatamente in [Utilizzo delle risorse](/help/assets/manage-digital-assets.md)digitali. Gli argomenti generali includono il caricamento, il download, la modifica e la pubblicazione delle risorse; visualizzare e modificare le proprietà e cercare le risorse.
+Dynamic Media consente di gestire le risorse prima di pubblicarle. Come lavorare con le risorse in generale viene descritto dettagliatamente in [Utilizzo di Risorse digitali](/help/assets/manage-digital-assets.md). Gli argomenti generali includono il caricamento, il download, la modifica e la pubblicazione delle risorse; visualizzare e modificare le proprietà e cercare le risorse.
 
 Le funzioni solo per elementi multimediali dinamici includono quanto segue:
 
@@ -39,7 +39,7 @@ Le funzioni solo per elementi multimediali dinamici includono quanto segue:
 * [Gestione delle risorse](managing-assets.md)
 * [Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate](custom-pop-ups.md)
 
-Consultate anche [Impostazione di contenuti multimediali](administering-dynamic-media.md)dinamici.
+Vedere anche [Impostazione di contenuti multimediali dinamici](administering-dynamic-media.md).
 
 <!-- 
 
@@ -50,7 +50,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 -->
 
-## Contenuti multimediali dinamici attivati o contenuti multimediali dinamici disattivati {#dynamic-media-on-versus-dynamic-media-off}
+## Elemento multimediale dinamico attivato o elemento multimediale dinamico disabilitato {#dynamic-media-on-versus-dynamic-media-off}
 
 Potete verificare se l’elemento multimediale dinamico è abilitato (attivato) in base alle seguenti caratteristiche:
 
@@ -62,7 +62,7 @@ Quando fate clic su una risorsa immagine, la vista della risorsa è diversa con 
 
 ### Rappresentazioni dinamiche {#dynamic-renditions}
 
-Le rappresentazioni dinamiche, ad esempio i predefiniti per immagini e visualizzatori (in **[!UICONTROL Dinamico]**), sono disponibili quando è attivato l’elemento multimediale dinamico.
+Le rappresentazioni dinamiche, ad esempio i predefiniti per immagini e visualizzatori (in **[!UICONTROL Dynamic]**), sono disponibili quando è attivato l&#39;elemento multimediale dinamico.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
@@ -74,13 +74,13 @@ I set di immagini, set 360 gradi e set di file multimediali diversi sono disponi
 
 ### Rappresentazioni PTIFF {#ptiff-renditions}
 
-Le risorse abilitate per i contenuti multimediali dinamici includono `pyramid.tiffs`.
+Le risorse multimediali dinamiche abilitate includono `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### Modifica delle visualizzazioni delle risorse {#asset-views-change}
 
-Con l’opzione Contenuti multimediali dinamici attivata, potete ingrandire e ridurre facendo clic sui `+` pulsanti e `-` . Potete anche fare clic o toccare per ingrandire una determinata area. Ripristina consente di passare alla versione originale e di visualizzare l’immagine a schermo intero facendo clic sulle frecce diagonali. Elemento multimediale dinamico abilitato come segue:
+Con l&#39;opzione Contenuti multimediali dinamici attivata, potete ingrandire e ridurre facendo clic sui pulsanti `+` e `-`. Potete anche fare clic o toccare per ingrandire una determinata area. Ripristina consente di passare alla versione originale e di visualizzare l’immagine a schermo intero facendo clic sulle frecce diagonali. Elemento multimediale dinamico abilitato come segue:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
