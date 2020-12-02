@@ -283,7 +283,6 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* L’accesso ad alcune modalità richiede autorizzazioni o privilegi adeguati.
 >* La modalità Sviluppatore non è disponibile su dispositivi mobili a causa di limitazioni di spazio.
 >* La [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
-
 >
 
 
