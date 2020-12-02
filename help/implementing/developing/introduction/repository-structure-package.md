@@ -18,23 +18,23 @@ Se il pacchetto di codice viene distribuito in una posizione **non inclusa** nel
 
 ![Pacchetto struttura archivio](./assets/repository-structure-packages.png)
 
-Il pacchetto della struttura dell&#39;archivio definisce lo stato comune previsto per `/apps` il quale il validatore del pacchetto utilizza per determinare le aree &quot;sicure da potenziali conflitti&quot; in quanto sono radici standard.
+Il pacchetto della struttura del repository definisce lo stato comune previsto di `/apps` che il validatore del pacchetto utilizza per determinare le aree &quot;sicure da potenziali conflitti&quot; in quanto sono radici standard.
 
 I percorsi più comuni da includere nel pacchetto della struttura del repository sono:
 
 + `/apps` che è un nodo fornito dal sistema
-+ `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`e `/apps/sling/...` che forniscono sovrapposizioni comuni per `/libs`.
++ `/apps/cq/...`,  `/apps/dam/...`,  `/apps/wcm/...`e  `/apps/sling/...` che forniscono sovrapposizioni comuni per  `/libs`.
 + `/apps/settings` che è il percorso principale di configurazione basato sul contesto condiviso
 
-Tenete presente che questo sottopacchetto **non contiene** alcun contenuto ed è composto esclusivamente da una `pom.xml` definizione delle radici del filtro.
+Tenete presente che questo sottopacchetto **non contiene** e comprende solo un `pom.xml` che definisce le radici del filtro.
 
 ## Creazione del pacchetto struttura archivio
 
-Per creare un pacchetto di struttura del repository per il progetto Maven, create un nuovo progetto secondario Maven vuoto, con quanto segue, `pom.xml`aggiornando i metadati del progetto in modo che siano conformi al progetto Maven principale.
+Per creare un pacchetto di struttura del repository per il progetto Maven, create un nuovo sottoprogetto Maven vuoto, con il seguente `pom.xml`, aggiornando i metadati del progetto in modo che siano conformi al progetto Maven principale.
 
-Aggiornate il file `<filters>` in modo da includere tutte le directory del percorso del repository JCR, ovvero le directory di origine distribuite dai pacchetti di codice.
+Aggiornate la `<filters>` per includere tutte le radici del percorso del repository JCR nelle quali i pacchetti di codice distribuiscono.
 
-Accertatevi di aggiungere il nuovo sottoprogetto Maven all&#39;elenco dei progetti padre `<modules>` .
+Assicurarsi di aggiungere questo nuovo sottoprogetto Maven all&#39;elenco dei progetti padre `<modules>`.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -117,9 +117,9 @@ Accertatevi di aggiungere il nuovo sottoprogetto Maven all&#39;elenco dei proget
 
 ## Riferimento al pacchetto della struttura dell&#39;archivio
 
-Per utilizzare il pacchetto della struttura del repository, farvi riferimento tramite tutti i pacchetti di codice (i pacchetti secondari che distribuiscono a `/apps`) progetti Maven tramite la configurazione dei plug-in Maven del pacchetto di contenuti FileVault `<repositoryStructurePackage>` .
+Per utilizzare il pacchetto della struttura del repository, farvi riferimento tramite tutti i pacchetti di codice (i pacchetti secondari che distribuiscono a `/apps`) progetti Maven tramite la configurazione dei plug-in Maven del pacchetto di contenuti FileVault `<repositoryStructurePackage>`.
 
-Nei pacchetti `ui.apps/pom.xml`e altri pacchetti `pom.xml`di codice, aggiungete un riferimento alla configurazione della struttura del repository del progetto (#repository-structure-package) al plug-in Maven del pacchetto FileVault.
+In `ui.apps/pom.xml` e in qualsiasi altro pacchetto di codice `pom.xml`s, aggiungere un riferimento alla configurazione del pacchetto della struttura del repository del progetto (#repository-structure-package) al plug-in Maven del pacchetto FileVault.
 
 ```xml
 ...
@@ -160,15 +160,15 @@ Un caso d’uso meno comune e più complesso supporta la distribuzione di più p
 
 Esempio:
 
-+ Il pacchetto di codice A si distribuisce in `/apps/a`
-+ Il pacchetto di codice B si distribuisce in `/apps/a/b`
++ Il pacchetto di codice A viene distribuito in `/apps/a`
++ Il pacchetto di codice B viene distribuito in `/apps/a/b`
 
 Se una dipendenza a livello di pacchetto non viene stabilita dal pacchetto di codice B nel pacchetto di codice A, il pacchetto di codice B può essere implementato prima in `/apps/a`, seguito dal pacchetto di codice B, che si distribuisce in `/apps/a`, con conseguente rimozione dell&#39;installazione precedente `/apps/a/b`.
 
 In questo caso:
 
-+ Il pacchetto di codice A deve definire un pacchetto `<repositoryStructurePackage>` `/apps`sulla struttura del repository del progetto (per il quale deve essere presente un filtro).
-+ Il pacchetto di codice B deve definire un pacchetto `<repositoryStructurePackage>` di codice A, perché il pacchetto di codice B viene distribuito nello spazio condiviso dal pacchetto di codice A.
++ Il pacchetto di codice A deve definire un `<repositoryStructurePackage>` nel pacchetto della struttura del repository del progetto (che deve avere un filtro per `/apps`).
++ Il pacchetto di codice B deve definire un `<repositoryStructurePackage>` nel pacchetto di codice A, perché il pacchetto di codice B si distribuisce nello spazio condiviso dal pacchetto di codice A.
 
 ## Errori e debug
 
@@ -179,7 +179,7 @@ Se i pacchetti della struttura dell&#39;archivio non sono configurati correttame
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-Indica che il pacchetto di codice di interruzione non dispone di un `<repositoryStructurePackage>` elenco `/apps/some/path` nel relativo elenco di filtri.
+Indica che il pacchetto del codice di interruzione non ha un `<repositoryStructurePackage>` in cui è elencato `/apps/some/path` nel relativo elenco di filtri.
 
 ## Risorse aggiuntive
 
