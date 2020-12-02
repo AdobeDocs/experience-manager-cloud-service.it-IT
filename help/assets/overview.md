@@ -21,13 +21,13 @@ L&#39;assimilazione simultanea di molte risorse o risorse complesse richiede mol
 
 Le aziende richiedono il supporto di un&#39;ampia varietà di formati di file e risoluzioni di contenuti per casi di utilizzo multidispositivo, geografia e multilingue. L&#39;elaborazione delle risorse e i requisiti di storage richiedono risorse e funzionalità che possono sovraccaricare una soluzione tradizionale. A volte, le limitazioni tecniche dell&#39;elaborazione delle risorse non danno i risultati desiderati e in altri casi il costo dello storage rappresenta un ostacolo ai margini di profitto.
 
-Per iniziare, comprendere i [vantaggi di un&#39;offerta](#solution-benefits)nativa cloud. Scopri le [modifiche rilevanti apportate a AEM come Cloud Service](/help/release-notes/aem-cloud-changes.md) che influiscono anche su  Risorse Experience Manager e seguono le [modifiche importanti apportate a Risorse](/help/assets/assets-cloud-changes.md).
+Per iniziare, comprendere i [vantaggi di un&#39;offerta nativa cloud](#solution-benefits). Verificare le notevoli [modifiche apportate a AEM come Cloud Service](/help/release-notes/aem-cloud-changes.md) che influiscono anche  risorse Experience Manager e hanno seguito le notevoli [modifiche apportate a Risorse](/help/assets/assets-cloud-changes.md).
 
-Continua a leggere per conoscere i [dettagli delle nuove funzionalità](#whats-new-assets) di Risorse e i problemi [](/help/release-notes/known-issues.md)noti. Consultate un elenco delle funzionalità [](/help/release-notes/deprecated-removed-features.md) obsolete o rimosse per sapere cosa è stato rimosso in questa versione e consultate questo [elenco delle funzionalità](/help/release-notes/known-issues.md#upcoming-assets-capabilities) imminenti per scoprire cosa succederà a breve. Infine, è importante comprendere i termini AEM con l&#39;aiuto di questo [glossario](/help/overview/terminology.md).
+Continua a leggere per conoscere i [dettagli delle nuove funzionalità Risorse](#whats-new-assets) e i [problemi noti](/help/release-notes/known-issues.md). Per informazioni sulle funzionalità rimosse in questa versione, vedere l&#39;elenco delle [funzionalità obsolete o rimosse](/help/release-notes/deprecated-removed-features.md) e consultare questo [elenco delle funzionalità in arrivo](/help/release-notes/known-issues.md#upcoming-assets-capabilities). Infine, è possibile comprendere i termini AEM con l&#39;aiuto di questo [glossario](/help/overview/terminology.md).
 
 ## Vantaggi della soluzione {#solution-benefits}
 
-Di seguito sono riportati i vantaggi principali di Assets come Cloud Service. Per ulteriori informazioni, consultate [panoramica di  Experience Manager come Cloud Service](/help/overview/introduction.md).
+Di seguito sono riportati i vantaggi principali di Assets come Cloud Service. Per ulteriori informazioni, vedere [panoramica del Experience Manager  come Cloud Service](/help/overview/introduction.md).
 
 * **Cloud Service moderno per l’elaborazione** delle risorse: I nuovi microservizi per le risorse sono un servizio di elaborazione delle risorse basato su cloud, scalabile, affidabile e privo di problemi.
 * **Altamente scalabile**: Scalabilità elastica per tutti i tipi di installazioni. Risorse praticamente illimitate disponibili su richiesta, in base alle esigenze. Risparmia i costi di sovraprogettazione rispetto a un sistema tradizionale.
@@ -36,7 +36,7 @@ Di seguito sono riportati i vantaggi principali di Assets come Cloud Service. Pe
 * **Monitoraggio** costante: Il monitoraggio del sistema è automatizzato e integrato di controlli e attivatori che consentono di mantenere le prestazioni, la disponibilità e la robustezza complessiva.
 * **Implementazioni** senza problemi: AEM nelle operazioni Cloud sono completamente automatizzate che non richiedono interventi manuali. Per le distribuzioni automatizzate, il componente Cloud Manager (CM) automatizza la creazione di immagini Docker distribuibili contenenti il codice personalizzato.
 
-## Nuove funzionalità di Risorse {#whats-new-assets}
+## Nuove funzionalità delle risorse {#whats-new-assets}
 
 Le nuove importanti funzionalità sono:
 
