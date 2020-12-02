@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Ambienti con provisioning {#environments-provisioning}
 
-## Provisioning {#provisioning}
+## Provisioning di {#provisioning}
 
 Tutti gli ambienti cloud AEM acquistati da un cliente verranno automaticamente forniti  Adobe e collegati al loro programma in Cloud Manager. Questi ambienti AEM cloud sono inclusi in ogni iscrizione Adobe Managed Services e sono in genere composti da almeno un ambiente di produzione, un ambiente di fase e facoltativamente uno o più ambienti di sviluppo o di test.
 
