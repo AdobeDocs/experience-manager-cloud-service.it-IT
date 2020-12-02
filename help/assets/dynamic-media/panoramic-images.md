@@ -10,13 +10,13 @@ ht-degree: 2%
 ---
 
 
-# Panoramic images{#panoramic-images}
+# Immagini panoramiche{#panoramic-images}
 
 Questa sezione descrive come utilizzare il visualizzatore immagini panoramiche per riprodurre immagini panoramiche sferiche per un’esperienza di visualizzazione a 360° di una stanza, una proprietà, una posizione o un paesaggio.
 
-See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
+Consultate anche [Gestione dei predefiniti per visualizzatori](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![panoramic-image2](assets/panoramic-image2.png)
+![panoramico-immagine2](assets/panoramic-image2.png)
 
 ## Caricamento delle risorse da usare con il visualizzatore immagini panoramiche {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
@@ -26,11 +26,11 @@ Affinché una risorsa caricata possa essere considerata un’immagine panoramica
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Sono stati assegnati tag con le parole chiave `equirectangular`, oppure `spherical`e `panorama`, `spherical` e `panoramic`. Consultate [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md).
+* Tag con le parole chiave `equirectangular`, `spherical`e `panorama`, oppure `spherical` e `panoramic`. Vedere [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
+Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche per la pagina dei dettagli delle risorse che per il componente `Panoramic Media` WCM.
 
-Per caricare le risorse da usare con il visualizzatore immagini panoramiche, consultate [Caricamento delle risorse](/help/assets/manage-digital-assets.md#uploading-assets).
+Per caricare le risorse da usare con il visualizzatore immagini panoramiche, consultate [Caricamento di risorse](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -81,4 +81,4 @@ Consultate [Anteprima delle risorse](/help/assets/dynamic-media/previewing-asset
 
 ## Pubblicazione di immagini panoramiche {#publishing-panoramic-images}
 
-Consultate [Pubblicazione delle risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consultate [Pubblicazione di risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
