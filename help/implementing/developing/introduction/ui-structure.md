@@ -10,7 +10,7 @@ ht-degree: 2%
 ---
 
 
-# Struttura dell’interfaccia AEM {#structure-of-the-aem-ui}
+# Struttura dell&#39;interfaccia AEM {#structure-of-the-aem-ui}
 
 L’interfaccia AEM presenta diversi principi di base ed è composta da diversi elementi chiave:
 
@@ -22,7 +22,7 @@ L’interfaccia utente è destinata sia ai dispositivi mobili che a quelli deskt
 
 Tutti i moduli utilizzano lo stesso layout di base, AEM può essere visto come:
 
-![della console AEM Sites](assets/ui-sites-console.png)
+![ della console AEM Sites](assets/ui-sites-console.png)
 
 Il layout aderisce a uno stile di progettazione reattivo e si adatta alle dimensioni del dispositivo/finestra in uso.
 
@@ -49,11 +49,11 @@ La barra degli strumenti è contestuale agli strumenti relativi alla posizione e
 
 In qualsiasi punto della barra degli strumenti sono visualizzate le azioni attualmente disponibili:
 
-![barra degli strumenti AEM Sites](assets/ui-sites-toolbar.png)
+![ barra degli strumenti AEM Sites](assets/ui-sites-toolbar.png)
 
 Dipende anche dalla selezione di una risorsa:
 
-![barra degli strumenti AEM Sites selezionata](assets/ui-sites-toolbar-selected.png)
+![ barra degli strumenti AEM Sites selezionata](assets/ui-sites-toolbar-selected.png)
 
 ### Barra a sinistra {#left-rail}
 
@@ -65,7 +65,7 @@ La barra a sinistra può essere aperta o nascosta come richiesto per mostrare:
 * **Riferimenti**
 * **Filtro**
 
-Il valore predefinito è Solo **** contenuto (barra laterale nascosta).
+Il valore predefinito è **Solo contenuto** (barra nascosta).
 
 ![Barra a sinistra](assets/ui-left-rail.png)
 
@@ -81,7 +81,7 @@ La cornice contenuto si trova nella sezione destra della finestra, sotto la barr
 
 ![Cornice contenuto](assets/ui-content-frame.png)
 
-### Editor Frame {#editor-frame}
+### Fotogramma editor {#editor-frame}
 
 Il frame dell&#39;editor abilita le funzioni di modifica.
 
@@ -96,7 +96,7 @@ La cornice dell’editor è un contenitore (astratto) per tutti gli elementi di 
 
 ### Pannello laterale {#side-panel}
 
-Contiene tre schede predefinite. Le schede **Risorse** e **Componenti** consentono di selezionare tali elementi e trascinarli dal pannello per poi rilasciarli sulla pagina. La scheda Struttura **** contenuto consente di esaminare la gerarchia del contenuto della pagina.
+Contiene tre schede predefinite. Le schede **Risorse** e **Componenti** consentono di selezionare tali elementi e trascinarli dal pannello e rilasciarli sulla pagina. La scheda **Struttura contenuto** consente di esaminare la gerarchia del contenuto della pagina.
 
 Per impostazione predefinita, il pannello laterale è nascosto. Se selezionata, la finestra viene visualizzata sul lato sinistro oppure scorrerà per coprire l’intera finestra quando la dimensione della finestra è inferiore a 1024 px; ad esempio su un dispositivo mobile.
 
@@ -128,9 +128,9 @@ Nella scheda Struttura contenuto è possibile visualizzare la gerarchia del cont
 
 ### Sovrapposizioni {#overlays}
 
-Questi elementi sovrappongono la cornice contenuto e vengono utilizzati dai [livelli](#layer) per comprendere la tecnica di interazione (completamente trasparente) con i componenti e il relativo contenuto.
+Questi elementi sovrappongono la cornice contenuto e vengono utilizzati dai [livelli](#layer) per comprendere quali sono le modalità di interazione (completamente trasparente) con i componenti e il relativo contenuto.
 
-Le sovrapposizioni sono live nella cornice dell’editor (con tutti gli altri elementi di authoring delle pagine), anche se sovrappongono effettivamente i componenti appropriati nella cornice contenuto.
+Le sovrapposizioni sono presenti nella cornice dell’editor (con tutti gli altri elementi di authoring delle pagine), ma in realtà sovrappongono i componenti appropriati nella cornice contenuto.
 
 ![Sovrapposizioni](assets/ui-overlays.png)
 
@@ -169,4 +169,4 @@ A seconda dello spazio disponibile, le barre degli strumenti dei componenti sono
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Per ulteriori informazioni tecniche, consultate la documentazione [JS impostata](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) per l&#39;editor pagina.
+Per ulteriori informazioni tecniche, vedere la [documentazione JS set](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) per l&#39;editor di pagine.
