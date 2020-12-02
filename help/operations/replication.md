@@ -12,23 +12,23 @@ ht-degree: 2%
 
 # Replica {#replication}
 
-Adobe Experience Manager utilizza, ad Cloud Service, la funzionalità [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) (Distribuzionecontenuto Sling) per spostare il contenuto in modo che venga replicato in un servizio pipeline eseguito su  Adobe I/O che è esterno al runtime AEM.
+Adobe Experience Manager utilizza, ad Cloud Service, la funzionalità [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) per spostare il contenuto in modo che venga replicato in un servizio pipeline eseguito su  Adobe I/O esterno al runtime AEM.
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta [Distribuzione](/help/core-concepts/architecture.md#content-distribution) .
+>Per ulteriori informazioni, leggere [Distribution](/help/core-concepts/architecture.md#content-distribution).
 
-## Metodi di pubblicazione dei contenuti {#methods-of-publishing-content}
+## Metodi di pubblicazione del contenuto {#methods-of-publishing-content}
 
-### Annullamento/Pubblicazione Rapida - Annullamento/Pubblicazione Pianificata {#publish-unpublish}
+### Annullamento/pubblicazione rapida - Annullamento/pubblicazione pianificata {#publish-unpublish}
 
 Queste funzionalità standard AEM per gli autori non cambiano con AEM Cloud Service.
 
 ### Tempi di attivazione e disattivazione - Configurazione trigger {#on-and-off-times-trigger-configuration}
 
-Le ulteriori possibilità di **Ora** di attivazione e Ora **di** disattivazione sono disponibili nella scheda [Base di Proprietà](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)pagina.
+Le possibilità aggiuntive di **Ora di attivazione** e **Ora di disattivazione** sono disponibili nella scheda [Base di Proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
-Per ottenere la replica automatica di questo tipo, è necessario abilitare la replica **automatica** nella configurazione [OSGi](/help/implementing/deploying/configuring-osgi.md) On Off Trigger Configuration ****:
+Per realizzare la replica automatica, è necessario attivare la **Replica automatica** nella [configurazione OSGi](/help/implementing/deploying/configuring-osgi.md) **Configurazione attivatore automatico**:
 
 ![Configurazione attivatore OSGi attivato](/help/operations/assets/replication-on-off-trigger.png)
 
@@ -41,7 +41,7 @@ Per eseguire l&#39;attivazione di una struttura ad albero:
 3. Una volta nell&#39;interfaccia della console Web di Publisher, **selezionare Distribuisci**
 
    ![](assets/distribute.png "Distribuisci")
-4. Selezionate il percorso nel browser dei percorsi, scegliete di aggiungere un nodo, una struttura ad albero o l’eliminazione come necessario e selezionate **Invia**
+4. Selezionate il percorso nel browser dei percorsi, scegliete di aggiungere un nodo, una struttura ad albero o l&#39;eliminazione come necessario e selezionate **Invia**
 
 ## Risoluzione dei problemi {#troubleshooting}
 
@@ -52,7 +52,7 @@ Per risolvere i problemi di replica, andate alle code di replica nell&#39;interf
    ![](assets/status.png "StatusStatus")
 3. Verificare lo stato della coda che deve essere verde
 4. È possibile verificare la connessione al servizio di replica
-5. Selezionate la scheda **Registri** che mostra la cronologia delle pubblicazioni di contenuto
+5. Selezionate la scheda **Logs** che mostra la cronologia delle pubblicazioni di contenuto
 
 ![](assets/logs.png "LogsLogs")
 
