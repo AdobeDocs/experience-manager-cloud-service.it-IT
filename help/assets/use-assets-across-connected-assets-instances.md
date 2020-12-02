@@ -3,9 +3,9 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: 'Utilizzate le risorse disponibili in una distribuzione remota. [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 79c8b5e038a58821b76da665f9342214312008e8
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '2244'
+source-wordcount: '2240'
 ht-degree: 41%
 
 ---
@@ -30,9 +30,9 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna distribuzione.
 * Per i tipi di distribuzione [!DNL Adobe Experience Manager], uno dei criteri supportati è soddisfatto. Per ulteriori informazioni sul funzionamento di questa funzionalità in [!DNL Experience Manager] 6.5, vedere [Risorse collegate nell&#39;Experience Manager  6.5 Risorse](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] come Cloud Service | [!DNL Experience Manager] 6.5  [!DNL Sites] su AMS | [!DNL Experience Manager] 6.5  [!DNL Sites] in sede |
+   |  | [!DNL Sites] come  [!DNL Cloud Service] | [!DNL Experience Manager] 6.5  [!DNL Sites] su AMS | [!DNL Experience Manager] 6.5  [!DNL Sites] in sede |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]come Cloud Service** | Supportato | Supportato | Supportato |
+   | **[!DNL Experience Manager Assets]come[!DNL Cloud Service]** | Supportato | Supportato | Supportato |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] su AMS** | Supportato | Supportato | Supportato |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] in sede** | Non supportato | Non supportato | Non supportato |
 
