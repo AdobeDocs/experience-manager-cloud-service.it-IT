@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Verifica dello stato del nome del dominio {#check-status}
+# Controllo dello stato del nome di dominio {#check-status}
 
 Per determinare se il nome di dominio è stato verificato correttamente, fai clic sull’icona Stato del nome di dominio nella tabella in Ambienti della pagina Impostazioni dominio.
 
@@ -19,17 +19,23 @@ Per determinare se il nome di dominio è stato verificato correttamente, fai cli
 
 Cloud Manager verificherà la proprietà del dominio tramite il valore TXT e visualizzerà uno dei seguenti messaggi di stato:
 
-* **Verifica del dominio non riuscita** Valore TXT mancante o rilevato con errori. Seguite le istruzioni e riprovate. Quando è pronto, è necessario selezionare l&#39;icona &quot;verifica di nuovo&quot; accanto allo stato.
+* **Il valore**
+FailedTXT per la verifica del dominio risulta mancante o rilevato con errori. Seguite le istruzioni e riprovate. Quando è pronto, è necessario selezionare l&#39;icona &quot;verifica di nuovo&quot; accanto allo stato.
 
-* **Verifica del dominio in corso**. Verifica in corso. Questo stato viene generalmente visualizzato dopo che avete selezionato l’icona &quot;verifica di nuovo&quot; accanto allo stato.
+* **Verifica dominio in**
+corsoVerifica in corso. Questo stato viene generalmente visualizzato dopo che avete selezionato l’icona &quot;verifica di nuovo&quot; accanto allo stato.
 
-* **Verificato: verifica della distribuzione non riuscita** TXT. Tuttavia, la distribuzione CDN non è riuscita.  rappresentante del Adobe ne verrà informato automaticamente.
+* **Verificato: verifica della distribuzione**
+non riuscitaTXT. Tuttavia, la distribuzione CDN non è riuscita.  rappresentante del Adobe ne verrà informato automaticamente.
 
-* **Dominio verificato e distribuito** Questo stato indica che il nome di dominio personalizzato è pronto per essere utilizzato. Nota: A questo punto, il tuo nome di dominio personalizzato è pronto per essere testato e punta al nome di dominio di Cloud Manager. Per informazioni su come eseguire questa operazione, vedere Configurazione del collegamento INSERT delle impostazioni DNS.
+* **Dominio verificato e**
+distribuitoQuesto stato indica che il nome di dominio personalizzato è pronto per essere utilizzato. Nota: A questo punto, il tuo nome di dominio personalizzato è pronto per essere testato e punta al nome di dominio di Cloud Manager. Per informazioni su come eseguire questa operazione, vedere Configurazione del collegamento INSERT delle impostazioni DNS.
 
-* **È in corso l&#39;eliminazione** del nome di dominio personalizzato.
+* **Eliminazione**
+del nome di dominio personalizzato in corso.
 
-* **Eliminazione non riuscita** Eliminazione del nome di dominio personalizzato non riuscita. È necessario riprovare. Per ulteriori informazioni sull&#39;argomento, fare clic su Elimina nome di dominio personalizzato.
+* **Eliminazione**
+non riuscitaEliminazione del nome di dominio personalizzato non riuscita. È necessario riprovare. Per ulteriori informazioni sull&#39;argomento, fare clic su Elimina nome di dominio personalizzato.
 
 
 ## Configurazione delle impostazioni DNS {#configure-dns}
@@ -39,13 +45,13 @@ Dopo aver verificato e distribuito correttamente il nome di dominio personalizza
 >[!NOTE]
 >L&#39;utente o l&#39;utente dell&#39;organizzazione deve essere in grado di accedere o contattare il provider DNS (la società da cui hai acquistato il dominio) e di effettuare aggiornamenti nelle impostazioni DNS.
 
-A tal fine, devi determinare se devi configurare le impostazioni DNS su un record `CNAME` o Apex che punta il tuo nome di dominio personalizzato al nome di dominio di Cloud Manager. Un record `CNAME` o A, una volta effettuato il provisioning, indirizza tutto il traffico Internet del dominio a ovunque esso sia puntato. Se la posizione non è predisposta per il traffico, si verificherà un&#39;interruzione. Se non è stato testato, potrebbero verificarsi errori nel contenuto. Questo è il motivo per cui questo passaggio viene sempre fatto dopo che il test è completo e il cliente è pronto per il Go-live.
+A tal fine, devi determinare se devi configurare le impostazioni DNS su un record `CNAME` o Apex che punta il nome di dominio personalizzato al nome di dominio di Cloud Manager. Un record `CNAME` o A, una volta effettuato il provisioning, indirizza tutto il traffico Internet per il dominio a ovunque esso stia puntando. Se la posizione non è predisposta per il traffico, si verificherà un&#39;interruzione. Se non è stato testato, potrebbero verificarsi errori nel contenuto. Questo è il motivo per cui questo passaggio viene sempre fatto dopo che il test è completo e il cliente è pronto per il Go-live.
 
 ### Record CNAME {#cname-record}
 
 Le sezioni seguenti consentono di determinare quale tipo di record è appropriato per la configurazione DNS.
 
-Un nome o `CNAME` record canonico è un tipo di record DNS che mappa un nome alias a un nome di dominio vero o canonico. I record CNAME vengono generalmente utilizzati per mappare un sottodominio, ad esempio `www.example.com` al dominio in cui risiede il contenuto del sottodominio.
+Un record di nome canonico o `CNAME` è un tipo di record DNS che mappa un nome alias a un nome di dominio vero o canonico. I record CNAME vengono generalmente utilizzati per mappare un sottodominio, ad esempio `www.example.com`, al dominio che ospita il contenuto del sottodominio.
 
 Accedi al Registratore di dominio e crea un record CNAME per indirizzare il nome di dominio personalizzato alla destinazione come mostrato di seguito:
 
@@ -55,7 +61,7 @@ Accedi al Registratore di dominio e crea un record CNAME per indirizzare il nome
 
 ### Record APEX {#apex-record}
 
-Un dominio apex è un dominio personalizzato che non contiene un sottodominio, ad esempio example.com. Un dominio apex è configurato con un `A` , `ALIAS` o `ANAME` record tramite il provider DNS. I domini Apex devono puntare a indirizzi IP specifici.
+Un dominio apex è un dominio personalizzato che non contiene un sottodominio, ad esempio example.com. Un dominio apex è configurato con un record `A`, `ALIAS` o `ANAME` tramite il provider DNS. I domini Apex devono puntare a indirizzi IP specifici.
 
 Aggiungi tutti i seguenti record A alle impostazioni DNS del dominio tramite il provider di dominio:
 
@@ -76,13 +82,17 @@ Aggiungi tutti i seguenti record A alle impostazioni DNS del dominio tramite il 
 >[!NOTE]
 >Cloud Manager attiva automaticamente una ricerca DNS quando il nome di dominio personalizzato viene verificato e distribuito per la prima volta. Per i tentativi successivi, devi selezionare attivamente l&#39;icona **resolve again** accanto allo stato. INSERISCI IMMAGINE
 
-* **Lo stato DNS non rilevato** DNS non verrà rilevato finché il nome di dominio personalizzato non sarà stato verificato e distribuito correttamente. Questo stato viene osservato anche quando il nome del dominio personalizzato è in fase di eliminazione.
+* **Lo stato DNS non**
+rilevatoLo stato DNS non verrà rilevato finché il nome di dominio personalizzato non sarà stato verificato e distribuito correttamente. Questo stato viene osservato anche quando il nome del dominio personalizzato è in fase di eliminazione.
 
-* **Il DNS risolve in modo errato** Indica che la configurazione dei record DNS non è ancora stata risolta/puntata o è errata.  rappresentante del Adobe ne verrà informato automaticamente.
+* **Risoluzioni DNS**
+errate: indica che la configurazione dei record DNS non è ancora stata risolta/puntata o è errata.  rappresentante del Adobe ne verrà informato automaticamente.
 
    >[!NOTE]
-   >È necessario configurare un `CNAME` o `A-record` seguendo le istruzioni corrispondenti. Per ulteriori informazioni sull&#39;argomento, vedere Configurazione del collegamento INSERT delle impostazioni DNS. Quando è pronto, è necessario selezionare l&#39;icona &quot;resolve again&quot; accanto allo stato.
+   >È necessario configurare `CNAME` o `A-record` seguendo le istruzioni corrispondenti. Per ulteriori informazioni sull&#39;argomento, vedere Configurazione del collegamento INSERT delle impostazioni DNS. Quando è pronto, è necessario selezionare l&#39;icona &quot;resolve again&quot; accanto allo stato.
 
-* **Risoluzione DNS in corso** Risoluzione. Questo stato viene generalmente visualizzato dopo che avete selezionato l’icona &quot;resolve again&quot; (Risolvi di nuovo) accanto allo stato.
+* **Risoluzione DNS in**
+corsoRisoluzione. Questo stato viene generalmente visualizzato dopo che avete selezionato l’icona &quot;resolve again&quot; (Risolvi di nuovo) accanto allo stato.
 
-* **DNS Risolve correttamente** Le impostazioni DNS sono configurate correttamente. Il sito è al servizio dei visitatori.
+* **DNS Risolve**
+correttamenteLe impostazioni DNS sono configurate correttamente. Il sito è al servizio dei visitatori.
