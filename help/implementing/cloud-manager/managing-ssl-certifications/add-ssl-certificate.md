@@ -43,7 +43,7 @@ Per convertire i file SSL in PEM, effettuate le seguenti operazioni:
 1. Accedi a Cloud Manager.
 1. Passare alla schermata Ambienti dalla pagina Panoramica.
 1. Andate alla schermata Certificati SSL dal menu di navigazione a sinistra. In questa schermata verrà visualizzata una tabella con i dettagli di eventuali certificati SSL esistenti.INSERT IMAGE
-1. Fate clic sul pulsante **Aggiungi certificato** per avviare una procedura guidata.
+1. Selezionare il pulsante **Aggiungi certificato** per avviare una procedura guidata.
 1. Immettete un nome per il certificato. Può trattarsi di un nome qualsiasi che faciliti il riferimento al certificato.
 1. Incollate il contenuto Certificato, Chiave privata e Catena nei rispettivi campi. Utilizzate l&#39;icona Incolla a destra della casella di input.
 1. Seleziona **Salva**.
@@ -53,26 +53,26 @@ Per convertire i file SSL in PEM, effettuate le seguenti operazioni:
 
    Dopo aver inviato il certificato, verrà visualizzato come una nuova riga nella tabella.
 
-## Errori di certificato {#certificate-errors}
+## Errori certificati {#certificate-errors}
 
 ### Ordine certificato corretto {#correct-certificate-order}
 
-Il motivo più comune per cui una distribuzione di certificati non riesce è che i certificati intermedi o a catena non sono nell&#39;ordine corretto. Nello specifico, i file di certificato intermedi devono terminare con il certificato radice o il certificato più vicino alla radice ed essere in ordine decrescente dal `main/server` certificato alla radice.
+Il motivo più comune per cui una distribuzione di certificati non riesce è che i certificati intermedi o a catena non sono nell&#39;ordine corretto. Nello specifico, i file di certificato intermedi devono terminare con il certificato radice o il certificato più vicino alla radice ed essere in ordine decrescente dal certificato `main/server` alla radice.
 
 È possibile determinare l&#39;ordine dei file intermedi utilizzando il seguente comando:
 
 `openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout`
 
-Potete verificare che la chiave privata e il `main/server` certificato corrispondano ai seguenti comandi:
+È possibile verificare che la chiave privata e il certificato `main/server` corrispondano utilizzando i comandi seguenti:
 
 `openssl x509 -noout -modulus -in certificate.pem | openssl md5`
 
 `openssl rsa -noout -modulus -in ssl.key | openssl md5`
 
 >[!NOTE]
->L&#39;output di questi due comandi deve essere esattamente lo stesso. Se non riuscite a individuare una chiave privata corrispondente nel `main/server` certificato, dovrete chiave nuovamente il certificato generando un nuovo CSR e/o richiedendo un certificato aggiornato dal fornitore SSL.
+>L&#39;output di questi due comandi deve essere esattamente lo stesso. Se non riuscite a individuare una chiave privata corrispondente nel certificato `main/server`, dovrete chiave nuovamente del certificato generando un nuovo CSR e/o richiedendo un certificato aggiornato dal fornitore SSL.
 
-### Date validità certificato {#certificate-validity-dates}
+### Date di validità del certificato {#certificate-validity-dates}
 
 Cloud Manager prevede che il certificato SSL sarà valido per almeno 90 giorni nel futuro
 
