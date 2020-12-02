@@ -16,19 +16,19 @@ ht-degree: 47%
 
 Seguite la sezione seguente per comprendere le considerazioni importanti sull’esecuzione di Best Practices Analyzer (BPA):
 
-* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/it-IT/experience-manager-65/deploying/upgrading/pattern-detector.html). La versione del Rilevatore di pattern utilizzata da BPA è inclusa nel pacchetto di installazione BPA.
+* Il rapporto BPA viene creato utilizzando l&#39;output dell&#39;Adobe Experience Manager (AEM) [Rilevatore di pattern](https://docs.adobe.com/content/help/it-IT/experience-manager-65/deploying/upgrading/pattern-detector.html). La versione del Rilevatore di pattern utilizzata da BPA è inclusa nel pacchetto di installazione BPA.
 
-* BPA may only be run by the **admin** user or a user in the **administrators** group.
+* BPA può essere eseguito solo dall&#39;utente **admin** o da un utente nel gruppo **Administrators**.
 
 * BPA è supportato sulle istanze AEM con versione 6.1 e successive.
 
    >[!NOTE]
-   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
+   > Per i requisiti speciali per l&#39;installazione di BPA in AEM 6.1, vedere [Installazione in AEM 6.1](#installing-on-aem61).
 
-* BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
+* BPA può essere eseguito su qualsiasi ambiente, ma è preferibile eseguirlo in un ambiente *Stage*.
 
    >[!NOTE]
-   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. In alternativa, può essere eseguito su un clone dell’ambiente di *authoring* di produzione.
+   >Per evitare un impatto sulle istanze business critical, si consiglia di eseguire BPA in un ambiente *Author* il più vicino possibile all&#39;ambiente *Production* nelle aree di personalizzazioni, configurazioni, contenuti e applicazioni utente. In alternativa, può essere eseguito su un clone dell’ambiente di *authoring* di produzione.
 
 * La generazione dei contenuti dei report BPA può richiedere molto tempo, da alcuni minuti a poche ore. Il tempo richiesto dipende in larga misura dalle dimensioni e dalla natura del contenuto dell’archivio AEM, dalla versione di AEM e da altri fattori.
 
@@ -39,19 +39,19 @@ Seguite la sezione seguente per comprendere le considerazioni importanti sull’
 È possibile scaricare Best Practices Analyzer come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) portal.
+>Scaricate il Best Practices Analyzer dal portale [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
 
-## Visualizzazione del rapporto Best Practices Analyzer {#viewing-report}
+## Visualizzazione del report Best Practices Analyzer {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 e versioni successive {#aem-later-versions}
 
 Seguite questa sezione per apprendere come visualizzare il rapporto Best Practices Analyzer:
 
-1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
+1. Selezionare Adobe Experience Manager e passare agli strumenti -> **Operazioni** -> **Best Practices Analyzer**.
 
    ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Fate clic su **Genera rapporto** per eseguire il Best Practices Analyzer.
+1. Fare clic su **Genera report** per eseguire il Best Practices Analyzer.
 
    ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -68,12 +68,12 @@ Seguite questa sezione per apprendere come visualizzare il rapporto Best Practic
 
    ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+1. Potete scaricare il rapporto in formato CSV facendo clic su **CSV**, come illustrato nella figura riportata di seguito.
 
    ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
+   >Potete forzare il BPA a cancellare la cache e rigenerare il rapporto facendo clic su **Aggiorna report**.
 
    ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -92,7 +92,7 @@ In Adobe Experience Manager 6.1, lo strumento non funziona e può essere utilizz
 >[!NOTE]
 >In tutte le versioni, il rilevatore pattern incluso può essere eseguito in modo indipendente.
 
-## Interpretazione del rapporto Best Practices Analyzer {#cra-report}
+## Interpretazione del report Best Practices Analyzer {#cra-report}
 
 Quando lo strumento Best Practices Analyzer viene eseguito nell&#39;istanza AEM, il rapporto viene visualizzato come risultato nella finestra dello strumento.
 
@@ -109,7 +109,7 @@ Il rapporto si presenta con questo formato:
 A ciascun risultato viene assegnato un livello di importanza per dare un’indicazione approssimativa del grado di priorità dell’intervento richiesto.
 
 >[!NOTE]
->Per ulteriori informazioni su ciascuna categoria di ricerca, vedere Categorie [di rilevamento](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)pattern.
+>Per ulteriori informazioni su ciascuna categoria di ricerca, fare riferimento a [Categorie di rilevamento dei pattern](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 La tabella seguente descrive i livelli di importanza:
 
@@ -123,7 +123,7 @@ La tabella seguente descrive i livelli di importanza:
 
 ## Interpretazione del rapporto CSV di Best Practices Analyzer {#cra-csv-report}
 
-When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. A seconda delle impostazioni del browser, è possibile che venga scaricato automaticamente come file con il nome predefinito `results.csv`.
+Quando fate clic sull&#39;opzione **CSV** dall&#39;istanza AEM, il formato CSV del rapporto Best Practices Analyzer viene creato dalla cache del contenuto e restituito al browser. A seconda delle impostazioni del browser, è possibile che venga scaricato automaticamente come file con il nome predefinito `results.csv`.
 
 Se la cache è scaduta, il rapporto verrà generato nuovamente prima che il file CSV venga creato e scaricato.
 
@@ -147,7 +147,7 @@ Un valore “\N” in una colonna di un singolo risultato indica che non sono st
 
 Il BPA fornisce un&#39;interfaccia HTTP che può essere utilizzata come alternativa all&#39;interfaccia utente in AEM. L’interfaccia supporta sia i comandi HEAD che GET. Può essere utilizzato per generare il rapporto BPA e restituirlo in uno dei tre formati seguenti: Valori JSON, CSV e separati da tabulazioni (TSV).
 
-The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+I seguenti URL sono disponibili per l&#39;accesso HTTP, dove `<host>` è il nome host e la porta, se necessario, del server in cui è installato il BPA:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` per il formato JSON
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` per il formato CSV
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` per il formato TSV
@@ -173,11 +173,11 @@ Le seguenti intestazioni HTTP sono utilizzate da questa interfaccia:
 
 I seguenti parametri di query HTTP sono disponibili per comodità nei casi in cui le intestazioni HTTP potrebbero non essere facilmente utilizzate:
 
-* `max-age` (numero, facoltativo): Specifica la durata della freschezza della cache, in secondi. Questo numero deve essere maggiore o uguale a 0. La durata predefinita della freschezza è di 86400 secondi. Senza questo parametro o l&#39;intestazione corrispondente verrà utilizzata una nuova cache per distribuire le richieste per 24 ore, al momento in cui la cache deve essere rigenerata. Utilizzando `max-age=0` verrà svuotata la cache e verrà avviata una rigenerazione del rapporto, utilizzando il precedente ciclo di vita di freschezza diverso da zero per la cache appena generata.
-* `respond-async` (booleano, facoltativo): Specifica che la risposta deve essere fornita in modo asincrono. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. Se la cache è aggiornata, questo parametro non ha alcun effetto. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` (booleano, facoltativo): Specifica che il server potrebbe aggiornare la cache in risposta a una richiesta se la cache corrente è vuota, obsoleta o presto non disponibile. Se `may-refresh-cache=true`o se non è specificato, il server potrebbe avviare un&#39;attività in background che richiamerà il Rilevatore pattern e aggiornerà la cache. Se `may-refresh-cache=false` il server non avvia alcuna attività di aggiornamento che altrimenti sarebbe stata eseguita se la cache fosse vuota o obsoleta, nel qual caso il rapporto sarà vuoto. Qualsiasi attività di aggiornamento già in corso di elaborazione non verrà interessata da questo parametro.
-* `return-minimal` (booleano, facoltativo): Specifica che la risposta del server deve includere solo lo stato contenente l&#39;indicazione di avanzamento e lo stato della cache nel formato JSON. Se `return-minimal=true`necessario, il corpo della risposta sarà limitato all&#39;oggetto status. Se `return-minimal=false`o se non è specificato, verrà fornita una risposta completa.
-* `log-findings` (booleano, facoltativo): Specifica che il server deve registrare il contenuto della cache quando viene creata o aggiornata per la prima volta. Ogni ricerca dalla cache verrà registrata come stringa JSON. La registrazione si verifica solo se `log-findings=true` e la richiesta genera una nuova cache.
+* `max-age` (numero, facoltativo): Specifica la durata della freschezza della cache, in secondi. Questo numero deve essere maggiore o uguale a 0. La durata predefinita della freschezza è di 86400 secondi. Senza questo parametro o l&#39;intestazione corrispondente verrà utilizzata una nuova cache per distribuire le richieste per 24 ore, al momento in cui la cache deve essere rigenerata. Utilizzando `max-age=0` la cache verrà cancellata e verrà avviata una rigenerazione del rapporto, utilizzando il precedente ciclo di vita di freschezza diverso da zero per la cache appena generata.
+* `respond-async` (booleano, facoltativo): Specifica che la risposta deve essere fornita in modo asincrono. Se si utilizza `respond-async=true` quando la cache non è aggiornata, il server restituirà una risposta di `202 Accepted` senza attendere l&#39;aggiornamento della cache e la generazione del rapporto. Se la cache è aggiornata, questo parametro non ha alcun effetto. Il valore predefinito è `false`. Senza questo parametro o l&#39;intestazione corrispondente, il server risponderà in modo sincrono, il che potrebbe richiedere molto tempo e richiedere una regolazione del tempo di risposta massimo per il client HTTP.
+* `may-refresh-cache` (booleano, facoltativo): Specifica che il server potrebbe aggiornare la cache in risposta a una richiesta se la cache corrente è vuota, obsoleta o presto non disponibile. Se `may-refresh-cache=true` o se non è specificato, il server potrebbe avviare un&#39;attività in background che richiamerà il Rilevatore di pattern e aggiornerà la cache. Se `may-refresh-cache=false`, il server non avvierà alcuna attività di aggiornamento che altrimenti sarebbe stata eseguita se la cache fosse vuota o obsoleta, nel qual caso il rapporto sarà vuoto. Qualsiasi attività di aggiornamento già in corso di elaborazione non verrà interessata da questo parametro.
+* `return-minimal` (booleano, facoltativo): Specifica che la risposta del server deve includere solo lo stato contenente l&#39;indicazione di avanzamento e lo stato della cache nel formato JSON. Se `return-minimal=true`, il corpo della risposta sarà limitato all&#39;oggetto status. Se `return-minimal=false` o se non è specificato, verrà fornita una risposta completa.
+* `log-findings` (booleano, facoltativo): Specifica che il server deve registrare il contenuto della cache quando viene creata o aggiornata per la prima volta. Ogni ricerca dalla cache verrà registrata come stringa JSON. La registrazione si verificherà solo se `log-findings=true` e la richiesta genera una nuova cache.
 
 Se sono presenti sia un’intestazione HTTP che il parametro di query corrispondente, il parametro di query avrà la priorità.
 
@@ -191,8 +191,8 @@ Una volta effettuata la richiesta, non c’è bisogno che il client rimanga atti
 Sono possibili i seguenti valori di risposta:
 
 * `200 OK`: Indica che la risposta contiene i risultati del rilevamento dei pattern generati nel corso della durata di freschezza della cache.
-* `202 Accepted`: Utilizzato per indicare che la cache non è aggiornata. Quando `respond-async=true` e `may-refresh-cache=true` questa risposta indica che è in corso un&#39;attività di aggiornamento. Quando `may-refresh-cache=false` questa risposta indica semplicemente che la cache non è aggiornata.
-* `400 Bad Request`: indica che la richiesta ha restituito un errore. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `202 Accepted`: Utilizzato per indicare che la cache non è aggiornata. Quando `respond-async=true` e `may-refresh-cache=true` questa risposta indica che è in corso un&#39;attività di aggiornamento. Quando `may-refresh-cache=false` questa risposta indica semplicemente che la cache è obsoleta.
+* `400 Bad Request`: indica che la richiesta ha restituito un errore. Un messaggio nel formato Dettagli problema (vedere [RFC 7807](https://tools.ietf.org/html/rfc7807)) fornisce ulteriori dettagli.
 * `401 Unauthorized`: Indica che la richiesta non è stata autorizzata.
 * `500 Internal Server Error`: indica che si è verificato un errore interno del server. Un messaggio nel formato Dettagli del problema fornisce ulteriori dettagli.
 * `503 Service Unavailable`: indica che il server è occupato con un’altra risposta e non può soddisfare questa richiesta in modo tempestivo. È probabile che ciò si verifichi solo quando vengono effettuate richieste sincrone. Un messaggio nel formato Dettagli del problema fornisce ulteriori dettagli.
@@ -210,7 +210,7 @@ Il valore di questa proprietà corrisponde alla durata della cache, in secondi. 
 
 ### Installazione in AEM 6.1 {#installing-on-aem61}
 
-BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. Questo account è disponibile in AEM 6.2 e versioni successive. On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
+BPA utilizza un account utente del servizio di sistema denominato `repository-reader-service` per eseguire il Rilevatore di pattern. Questo account è disponibile in AEM 6.2 e versioni successive. Al AEM 6.1, questo account deve essere creato *prima di* l&#39;installazione di BPA, eseguendo le seguenti operazioni:
 
 1. Per creare un utente segui le istruzioni in [Creazione di un nuovo utente di servizio](https://docs.adobe.com/content/help/it-IT/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user). Imposta UserID su `repository-reader-service` e lascia vuoto il Percorso intermedio, quindi fai clic sul segno di spunta verde.
 
