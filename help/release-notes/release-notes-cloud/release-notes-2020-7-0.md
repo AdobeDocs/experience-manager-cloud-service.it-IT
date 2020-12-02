@@ -30,11 +30,11 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 * Le configurazioni ora sono memorizzate in `/conf` anziché `/etc/cloudsettings` nell’archivio di Experience Manager.
 
-## [!DNL Adobe Experience Manager Assets] come Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] come Cloud Service  {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### Novità in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Administrators can configure [!DNL Experience Manager] to invoke custom applications created using the [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate in casi di utilizzo complessi. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available [!DNL Sensei] services. see [use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Gli amministratori possono configurare [!DNL Experience Manager] per richiamare applicazioni personalizzate create utilizzando [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate in casi di utilizzo complessi. Questo servizio Web può generare miniature per diversi tipi di file, rendering di immagini di alta qualità da  formati di file di Adobe, codificare video (in futuro), estrarre metadati, estrarre testo completo come precursore per l’indicizzazione ed eseguire una risorsa tramite tutti i servizi [!DNL Sensei] disponibili. vedere [utilizzare i microservizi delle risorse e i profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).
 
 * La configurazione iniziale di [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service è stata migliorata ed è ora più robusta. Fornisce agli amministratori indicazioni sull’avanzamento dei processi.
 
@@ -48,7 +48,7 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 * La procedura guidata Sposta risorsa non viene caricata come previsto per le risorse incluse nelle raccolte. (CQ-4296756)
 * I valori di `dam:size` e `dam:sha1` sono esclusi XMP writeback. (CQ-4237355)
-* Quando si annulla la pubblicazione di risorse in massa, [!DNL Brand Portal] viene generato un errore che indica che l’URI della richiesta è troppo lungo. (CQ-4299474)
+* Quando si annulla la pubblicazione di risorse in massa, [!DNL Brand Portal] genera un errore che indica che l&#39;URI della richiesta è troppo lungo. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -94,7 +94,7 @@ La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.7.0 è il 9 lugl
 * Sono ora supportati i repository privati con binding di autenticazione.
 
 * Il contenitore di build di Cloud Manager ora supporta sia Java 8 che Java 11.
-Per ulteriori informazioni, consultate [Utilizzo del supporto](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) Java 11.
+Per ulteriori informazioni, fare riferimento a [Utilizzo del supporto per Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
 ### Correzioni di bug {#bug-fixes-cm}
 
