@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Markdown{#markdown}
 
-Durante la [creazione](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor di frammenti di contenuto utilizza la sintassi di *marketing* per consentire di scrivere facilmente i contenuti:
+Quando si crea [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l&#39;editor di frammenti di contenuto utilizza la sintassi *markdown* per consentire di scrivere facilmente i contenuti:
 
 ![editor marketing](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -178,7 +178,7 @@ I blocchi di codice vengono generalmente utilizzati per illustrare il codice sor
 
         `This is a code block.`
 
-## Backslash {#backslash-escapes}
+## Backslash escape {#backslash-escapes}
 
 È possibile utilizzare gli escape barra rovesciata per generare caratteri letterali con un significato speciale nella sintassi di formattazione. Ad esempio, se desiderate racchiudere una parola con asterischi letterali (invece di un tag HTML &lt;em>), potete utilizzare le barre rovesciate prima degli asterischi, come segue:
 
