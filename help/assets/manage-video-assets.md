@@ -3,9 +3,9 @@ title: Gestire le risorse video
 description: Caricate, visualizzate in anteprima, annotate e pubblicate le risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ Dopo la pubblicazione, potete includere le risorse video in una pagina Web come 
 
 ## Transcodifica tramite profilo di elaborazione {#transcode-video}
 
-[!DNL Experience Manager] come Cloud Service, potete effettuare la transcodifica di base dei file video MP4 utilizzando Profili di elaborazione. La funzionalità consente non solo di caricare, ma anche di visualizzare in anteprima e ridimensionare un file video MP4.
+[!DNL Experience Manager] come  [!DNL Cloud Service] consente di eseguire la transcodifica di base dei file video MP4 utilizzando Profili di elaborazione. La funzionalità consente non solo di caricare, ma anche di visualizzare in anteprima e ridimensionare un file video MP4.
 
 ![Crea profilo di elaborazione per la transcodifica video in  Experience Manager](assets/video-processing-profile-for-mp4.png)
 
