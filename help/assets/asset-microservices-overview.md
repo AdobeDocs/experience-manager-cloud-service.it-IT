@@ -21,7 +21,7 @@ Adobe Experience Manager come Cloud Service fornisce un metodo nativo basato sul
 * È stata migliorata la resilienza dell’elaborazione delle risorse. I potenziali problemi nella gestione di file atipici, come file danneggiati o file di grandi dimensioni, non influiscono più sulle prestazioni della distribuzione.
 * Configurazione semplificata dell’elaborazione delle risorse per gli amministratori.
 * L’impostazione di elaborazione delle risorse è gestita e gestita  Adobe per fornire la configurazione più nota per la gestione di rappresentazioni, metadati ed estrazione del testo per vari tipi di file
-* Se applicabile, vengono utilizzati servizi di elaborazione file di Adobe nativi , che forniscono output ad alta fedeltà e una gestione [efficiente dei formati](file-format-support.md)proprietari  Adobe.
+* Se applicabile, vengono utilizzati servizi di elaborazione file di Adobe nativi , che forniscono output ad alta fedeltà e [gestione efficiente  formati proprietari di Adobe](file-format-support.md).
 * Possibilità di configurare il flusso di lavoro di post-elaborazione per aggiungere azioni e integrazioni specifiche per l’utente.
 
 I microservizi delle risorse consentono di evitare la necessità di strumenti e metodi di rendering di terze parti (come la transcodifica ImageMagick e FFmpeg) e di semplificare le configurazioni, fornendo al contempo funzionalità pronte all’uso per i tipi di file più comuni.
@@ -35,7 +35,7 @@ Un diagramma di architettura di alto livello illustra gli elementi chiave dell�
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![Acquisizione ed elaborazione di risorse con](assets/asset-microservices-overview.png "microservizi di assetAcquisizione ed elaborazione di risorse con microservizi")
+![Acquisizione ed elaborazione di risorse con ](assets/asset-microservices-overview.png "microservizi di assetAcquisizione ed elaborazione di risorse con microservizi")
 
 Le fasi chiave dell’assimilazione e dell’elaborazione mediante i microservizi di asset sono:
 
@@ -53,7 +53,7 @@ Il flusso di assimilazione e di elaborazione sono concetti chiave dell’archite
 * **Accesso** binario diretto: Le risorse vengono trasportate (e caricate) nel Cloud Binary Store una volta configurato per gli ambienti  Experience Manager, e quindi AEM, i microservizi delle risorse, e infine i client possono accedervi direttamente per svolgere il proprio lavoro. Questo riduce al minimo il carico sulle reti e la duplicazione dei binari archiviati
 * **Elaborazione** esternalizzata: L&#39;elaborazione delle risorse viene effettuata al di fuori dell&#39;ambiente AEM e ne salva le risorse (CPU, memoria) per fornire le funzionalità chiave di Gestione delle risorse digitali e supportare il lavoro interattivo con il sistema per gli utenti finali
 
-## Caricamento delle risorse con accesso binario diretto {#asset-upload-with-direct-binary-access}
+## Caricamento risorse con accesso binario diretto {#asset-upload-with-direct-binary-access}
 
  client di Experience Manager, che fanno parte dell&#39;offerta di prodotti, supportano tutti i caricamenti con accesso binario diretto per impostazione predefinita. tra cui il caricamento tramite l’interfaccia Web,  collegamento risorse di Adobe e AEM app desktop.
 
@@ -62,9 +62,9 @@ Potete usare strumenti di caricamento personalizzati, che funzionano direttament
 * [Libreria di caricamento open-source](https://github.com/adobe/aem-upload)
 * [Open-source, strumento da riga di comando](https://github.com/adobe/aio-cli-plugin-aem)
 
-Per ulteriori informazioni, consultate [caricare le risorse](add-assets.md).
+Per ulteriori informazioni, consultate [caricare risorse](add-assets.md).
 
-## Aggiunta post-elaborazione di risorse personalizzata {#add-custom-asset-post-processing}
+## Aggiunta post-elaborazione risorse personalizzata {#add-custom-asset-post-processing}
 
 Anche se la maggior parte dei clienti deve soddisfare tutte le proprie esigenze di elaborazione delle risorse dai microservizi configurabili, alcuni potrebbero richiedere un’ulteriore elaborazione delle risorse. Ciò è particolarmente vero se le risorse devono essere elaborate in base alle informazioni provenienti da altri sistemi tramite integrazioni. In casi come questo, è possibile utilizzare flussi di lavoro post-elaborazione personalizzati.
 
