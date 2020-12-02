@@ -1,6 +1,6 @@
 ---
 title: Formati di file supportati e tipi MIME
-description: Formati di file e tipi MIME supportati [!DNL Experience Manager Assets] da un Cloud Service.
+description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
@@ -11,25 +11,25 @@ ht-degree: 10%
 ---
 
 
-# [!DNL Assets] formati di file supportati {#supported-file-formats}
+# [!DNL Assets] formati di file supportati  {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] come Cloud Service supporta le funzionalità di base di gestione dei contenuti — archiviazione, gestione dei metadati online, controllo delle versioni, caricamento, scaricamento e così via — per qualsiasi file binario, indipendentemente dal suo formato. [!DNL Adobe Experience Manager Assets] supporta un&#39;ampia gamma di formati di file e ogni funzione di prodotto ha un supporto diverso per formati diversi.
 
-Inoltre, [!DNL Experience Manager Assets] offre un ampio supporto per la generazione di anteprime e rappresentazioni e per l’estrazione di metadati e testo per l’indicizzazione full-text. Questo supporto esteso viene fornito utilizzando i microservizi [delle](asset-microservices-configure-and-use.md)risorse.
+Inoltre, [!DNL Experience Manager Assets] offre un ampio supporto per la generazione di anteprime e rappresentazioni e per l&#39;estrazione di metadati e testo per l&#39;indicizzazione full-text. Questo supporto esteso viene fornito utilizzando i [microservizi di risorse](asset-microservices-configure-and-use.md).
 
 I principali elementi di rilievo per la conversione delle risorse mediante i microservizi delle risorse sono:
 
-* Formati [di file di](#adobe-formats) Adobe chiave [!DNL Adobe Photoshop]prodotti da applicazioni e servizi  Adobe, inclusi [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension]e [!DNL Adobe Acrobat] PDF.
-* Formati [di file](#image-formats)di imaging chiave.
-* [Formati](#camera-raw-formats) di file Camera Raw per un&#39;ampia gamma di telecamere, tra cui Canon, Nikon, Fujifilm, Olympus e altri produttori ( Adobe Camera Raw).
-* Formati [comuni di](#document-formats)documenti, inclusi i formati Microsoft Office e Open Document.
+* I formati dei file di Adobe [](#adobe-formats) prodotti da applicazioni e servizi  Adobe, inclusi [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] o PDF.
+* Chiave [formati di file immagine](#image-formats)
+* [Formati di file Camera Raw ](#camera-raw-formats) per una vasta gamma di telecamere, tra cui Canon, Nikon, Fujifilm, Olympus e altri produttori ( Adobe Camera Raw).
+* Formati di documenti [comuni](#document-formats), inclusi i formati Microsoft Office e Open Document.
 * Ampia gamma di formati [video](#video-formats) e [audio.](#audio-formats)
 
 La legenda seguente descrive il livello di supporto.
 
 | Livello di supporto | Descrizione |
 | ------------- | --------------------------- |
-| ✓ | Supportato |
+| AND | Supportato |
 | * | Vedere le osservazioni riportate di seguito. |
 | - | Non applicabile |
 
@@ -37,47 +37,47 @@ La legenda seguente descrive il livello di supporto.
 
 | Formato file | Generazione delle miniature | Estrazione full-text | Estrazione di metadati | Larghezza/Altezza |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | ✓ | - | ✓ | ✓ |
-| COLLAGE | - | - | ✓ | - |
-| DN | ✓ | - | ✓ | ✓ |
-| IDEE | - | - | ✓ | - |
-| INDD | ✓ | - | ✓ | ✓ * |
-| INDT | - | - | ✓ | - |
-| PDF | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | ✓ | - |
-| PSB | ✓ | - | ✓ | ✓ |
-| PSD | ✓ | - | ✓ | ✓ |
-| XD | ✓ | - | ✓ | ✓ |
+| AI | AND | - | AND | AND |
+| COLLAGE | - | - | AND | - |
+| DN | AND | - | AND | AND |
+| IDEE | - | - | AND | - |
+| INDD | AND | - | AND | ▲ |
+| INDT | - | - | AND | - |
+| PDF | AND | AND | AND | AND |
+| PROTO | - | - | AND | - |
+| PSB | AND | - | AND | AND |
+| PSD | AND | - | AND | AND |
+| XD | AND | - | AND | AND |
 
-\* Per [!DNL Adobe InDesign] i file (INDD), la dimensione della rappresentazione è determinata dall&#39;anteprima incorporata nel file INDD. Configura le preferenze in [!DNL InDesign] (**[!UICONTROL Preferenze > Gestione file > Salva sempre immagini di anteprima con documenti, Dimensione]** anteprima) per incorporare una rappresentazione più grande.
+\* Per i file [!DNL Adobe InDesign] (INDD), la dimensione del rendering è determinata dall&#39;anteprima incorporata nel file INDD. Configurate le preferenze in [!DNL InDesign] (**[!UICONTROL Preferenze > Gestione file > Salva sempre immagini di anteprima con documenti, Dimensione anteprima]**) per incorporare una rappresentazione più grande.
 
 ## Formati immagine {#image-formats}
 
 | Formato file | Generazione delle miniature | Estrazione di metadati | Larghezza/Altezza | Ritaglia |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | ✓ | - | ✓ | ✓ |
-| EPS | - | ✓ | - | - |
-| GIF | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ |
-| PNG | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | - |
-| SVG | ✓ | - | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
-| RGB | ✓ | ✓ | ✓ | ✓ |
-| RGBA | ✓ | ✓ | ✓ | ✓ |
+| BMP | AND | - | AND | AND |
+| EPS | - | AND | - | - |
+| GIF | AND | AND | AND | AND |
+| JPEG | AND | AND | AND | AND |
+| PNG | AND | AND | AND | AND |
+| TIFF | AND | AND | AND | - |
+| SVG | AND | - | AND | AND |
+| SGI | AND | AND | AND | AND |
+| RGB | AND | AND | AND | AND |
+| RGBA | AND | AND | AND | AND |
 
 ## Formati immagine in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | Formato | Carica (formato di input) | Creare un predefinito per immagini (formato di output) | Anteprima rappresentazione dinamica | Distribuzione di rappresentazioni dinamiche | Download della rappresentazione dinamica |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | - | - | - | - |
-| PSD | ✓ | - | - | - | - |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ | - | - | - | - |
+| PNG | AND | AND | AND | AND | AND |
+| GIF | AND | AND | AND | AND | AND |
+| TIFF | AND | AND | AND | AND | AND |
+| JPEG | AND | AND | AND | AND | AND |
+| BMP | AND | - | - | - | - |
+| PSD   mso | AND | - | - | - | - |
+| EPS | AND | AND | AND | AND | AND |
+| PICT | AND | - | - | - | - |
 
 † L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da [!DNL Adobe Photoshop] e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
 
@@ -94,109 +94,109 @@ I seguenti sottotipi di formati di file immagine raster non supportati in [!DNL 
 
 È supportato il seguente elenco di formati 3D.
 
-See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+Consultate anche [Utilizzo delle risorse 3D negli elementi multimediali dinamici.](/help/assets/dynamic-media/assets-3d.md)
 
 | Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo di accesso | Anteprima miniature | Anteprima 3D | Distribuzione di contenuti multimediali dinamici |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| DN | AND | AND | AND | - | AND | AND | - | - |
+| gLB | AND | AND | AND | AND | AND | - | AND | AND |
+| gLTF | AND | AND | AND | - | AND | - | AND | - |
+| OBJ | AND | AND | AND | AND | AND | - | AND | AND |
+| STL | AND | AND | AND | AND | AND | - | AND | AND |
+| USDz | AND | AND | AND | AND | AND | - | - | AND |
 
-## [!DNL Camera RAW] format {#camera-raw-formats}
+## [!DNL Camera RAW] format  {#camera-raw-formats}
 
 | Formato file | Generazione delle miniature | Estrazione di metadati | Larghezza/Altezza |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | ✓ | ✓ | ✓ |
-| ARW | ✓ | ✓ | ✓ |
-| CR2 | ✓ | ✓ | ✓ |
-| CR3 | ✓ | ✓ | ✓ |
-| CRW | ✓ | ✓ | ✓ |
-| DCR | ✓ | ✓ | ✓ |
-| DNG | ✓ | ✓ | ✓ |
-| ERF | ✓ | ✓ | ✓ |
-| FFF | ✓ | ✓ | ✓ |
-| GPR | ✓ | ✓ | ✓ |
-| IIQ | ✓ | ✓ | ✓ |
-| KDC | ✓ | ✓ | ✓ |
-| MEF | ✓ | ✓ | ✓ |
-| MFW | ✓ | ✓ | ✓ |
-| MOS | ✓ | ✓ | ✓ |
-| MRW | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ |
-| NRW | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ |
-| PEF | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ |
-| RW2 | ✓ | ✓ | ✓ |
-| RWL | ✓ | ✓ | ✓ |
-| SRF | ✓ | ✓ | ✓ |
-| SRW | ✓ | ✓ | ✓ |
-| X3F | ✓ | ✓ | ✓ |
+| 3FR | AND | AND | AND |
+| ARW | AND | AND | AND |
+| CR2 | AND | AND | AND |
+| CR3 | AND | AND | AND |
+| CRW | AND | AND | AND |
+| DCR | AND | AND | AND |
+| DNG | AND | AND | AND |
+| ERF | AND | AND | AND |
+| FFF | AND | AND | AND |
+| GPR | AND | AND | AND |
+| IIQ | AND | AND | AND |
+| KDC | AND | AND | AND |
+| MEF | AND | AND | AND |
+| MFW | AND | AND | AND |
+| MOS | AND | AND | AND |
+| MRW | AND | AND | AND |
+| NEF | AND | AND | AND |
+| NRW | AND | AND | AND |
+| ORF | AND | AND | AND |
+| PEF | AND | AND | AND |
+| RAF | AND | AND | AND |
+| RAW | AND | AND | AND |
+| RW2 | AND | AND | AND |
+| RWL | AND | AND | AND |
+| SRF | AND | AND | AND |
+| SRW | AND | AND | AND |
+| X3F | AND | AND | AND |
 
-## Formati documento {#document-formats}
+## Formati di documento {#document-formats}
 
 I formati dei documenti supportati per le funzioni di gestione delle risorse sono i seguenti.
 
 | Formato file | Generazione delle miniature | Estrazione full-text | Larghezza/Altezza | Gestione dei metadati | [Risorse collegate](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOC | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLS | - | - | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | - | - |
-| OFG | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
-| HTML | - | ✓ | - | ✓ | ✓ |
-| PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | - | ✓ | - | ✓ | ✓ |
-| XML | - | ✓ | - | - | - |
+| PDF | AND | AND | AND | AND | AND |
+| DOCX | AND | AND | AND | AND | AND |
+| DOC | - | - | - | AND | AND |
+| PPTX | AND | AND | AND | AND | AND |
+| PPT | - | - | - | AND | AND |
+| XLSX | AND | AND | AND | AND | AND |
+| XLS | - | - | - | AND | AND |
+| ODF | AND | AND | AND | - | - |
+| OFG | AND | AND | AND | - | - |
+| ODM | AND | AND | AND | - | - |
+| ODP | AND | AND | AND | - | - |
+| ODS | AND | AND | AND | - | - |
+| ODT | AND | AND | AND | AND | AND |
+| EPUB | - | AND | - | - | - |
+| HTML | - | AND | - | AND | AND |
+| PS | - | - | AND | - | - |
+| RTF | - | AND | - | AND | AND |
+| TXT | - | AND | - | AND | AND |
+| XML | - | AND | - | - | - |
 
-## Formati di documento [!DNL Dynamic Media] {#document-support-dynamic-media}
+## Formati di documento in [!DNL Dynamic Media] {#document-support-dynamic-media}
 
 | Formato | Carica (formato di input) | Creare un predefinito per immagini (formato di output) | Anteprima rappresentazione dinamica | Distribuzione di rappresentazioni dinamiche | Download della rappresentazione dinamica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| INDD | ✓ | - | - | - | - |
+| AI | AND | - | - | - | - |
+| PDF | AND | AND | AND | AND | AND |
+| INDD | AND | - | - | - | - |
 
 ## Formati video {#video-formats}
 
 | Formato file | Generazione delle miniature | Estrazione di metadati | Larghezza/Altezza |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| 3G2 | - | AND | - |
+| 3GP | - | AND | - |
+| AVI | AND | AND | AND |
+| DIVX | AND | - | AND |
+| F4V | AND | AND | AND |
+| FLV | AND | AND | AND |
+| M2T | AND | - | AND |
+| M2TS | AND | - | AND |
+| M2V | AND | - | AND |
+| M4V | AND | AND | AND |
+| MKV | AND | - | AND |
+| MOV | AND | AND | AND |
+| MP4 | AND | AND | AND |
+| MPEG | AND | AND | AND |
+| MPG | AND | AND | AND |
+| MTS | AND | - | AND |
+| OGV | AND | - | AND |
+| QT | AND | - | AND |
+| R3D | - | AND | AND |
+| SWF | AND | - | AND |
+| WebM | AND | - | AND |
+| WMV | AND | AND | AND |
 
 ## Formati video in [!DNL Dynamic Media] per la transcodifica {#video-dynamic-media-transcoding}
 
