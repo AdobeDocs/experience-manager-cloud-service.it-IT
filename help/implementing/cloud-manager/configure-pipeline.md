@@ -18,13 +18,13 @@ In Cloud Manager, ci sono due tipi di pipeline:
 
    È possibile aggiungere una pipeline di produzione solo dopo la creazione di un set di ambienti di produzione e di fase.
 
-   Per ulteriori informazioni, vedere [Impostazione della tubazione](configure-pipeline.md#setting-up-the-pipeline) di produzione.
+   Per ulteriori informazioni, vedere [Impostazione della tubazione di produzione](configure-pipeline.md#setting-up-the-pipeline).
 
 * **Pipeline** non di produzione:
 
    È possibile aggiungere una pipeline non di produzione dalla pagina **Panoramica** dall&#39;interfaccia utente di Cloud Manager.
 
-   Per ulteriori informazioni, fare riferimento alle tubazioni [](configure-pipeline.md#non-production-pipelines) non di produzione e di qualità del codice.
+   Per ulteriori informazioni, fare riferimento alla sezione [Pipeline non produzione e solo qualità del codice](configure-pipeline.md#non-production-pipelines).
 
 >[!NOTE]
 >Per configurare la pipeline, devi:
@@ -40,7 +40,7 @@ Gestione distribuzione è responsabile della configurazione della pipeline di pr
 >[!NOTE]
 >Non è possibile impostare una pipeline di produzione finché non viene completata la creazione di un programma, l&#39;archivio Git ha almeno un ramo e viene creato un ambiente di produzione e fase.
 
-Prima di iniziare a distribuire il codice, devi configurare le impostazioni della pipeline da [!UICONTROL Cloud Manager].
+Prima di iniziare a distribuire il codice, devi configurare le impostazioni della pipeline dal [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -48,15 +48,15 @@ Prima di iniziare a distribuire il codice, devi configurare le impostazioni dell
 
 ## Configurazione delle impostazioni della pipeline da [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
 
-Dopo aver configurato il programma e disporre di almeno un ambiente utilizzando l&#39;interfaccia utente di [!UICONTROL Cloud Manager] , potete configurare la pipeline di distribuzione.
+Dopo aver configurato il programma e disporre di almeno un ambiente utilizzando l&#39;interfaccia utente [!UICONTROL Cloud Manager], è possibile impostare la pipeline di distribuzione.
 
 Per configurare il comportamento e le preferenze della pipeline, effettuate le seguenti operazioni:
 
-1. Fate clic su **Imposta tubazione** per impostare e configurare la tubazione.
+1. Fare clic su **Imposta tubazione** per impostare e configurare la tubazione.
 
    ![](assets/set-up-pipeline1.png)
 
-1. Viene visualizzata la schermata **Configurazione tubazione** . Select the branch and click **Next**.
+1. Viene visualizzata la schermata **Setup Pipeline**. Selezionare il ramo e fare clic su **Next**.
 
    ![](assets/setup-1.png)
 
@@ -67,27 +67,27 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
    È possibile definire l&#39;attivatore per avviare la pipeline:
 
    * **Manuale** : l&#39;utilizzo dell&#39;interfaccia utente consente di avviare manualmente la pipeline.
-   * **Su modifiche** Git - avvia la pipeline CI/CD ogni volta che vengono aggiunti impegni al ramo git configurato. Anche se selezionate questa opzione, potete sempre avviare la pipeline manualmente.
+   * **In Modifiche**  Git: avvia la pipeline CI/CD ogni volta che vengono aggiunti impegni al ramo git configurato. Anche se selezionate questa opzione, potete sempre avviare la pipeline manualmente.
 
    Durante la configurazione o la modifica della pipeline, Gestione distribuzione ha la possibilità di definire il comportamento della pipeline quando si verifica un errore importante in una qualsiasi delle porte di qualità.
 
    Questo è utile per i clienti che desiderano un maggior numero di processi automatizzati. Le opzioni disponibili sono:
 
-   * **Chiedi ogni volta** - Questa è l&#39;impostazione predefinita e richiede l&#39;intervento manuale su qualsiasi errore importante.
-   * **Errore immediato** - Se selezionato, la pipeline verrà annullata ogni volta che si verifica un errore importante. In pratica, questo consente di emulare manualmente un utente che rifiuta ogni errore.
+   * **Chiedi ogni volta**  - Questa è l&#39;impostazione predefinita e richiede l&#39;intervento manuale su qualsiasi errore importante.
+   * **Errore immediato** : se selezionato, la pipeline verrà annullata ogni volta che si verifica un errore importante. In pratica, questo consente di emulare manualmente un utente che rifiuta ogni errore.
    * **Continua immediatamente** : se questa opzione è selezionata, la pipeline procederà automaticamente ogni volta che si verifica un errore importante. Si tratta essenzialmente di un&#39;emulazione manuale di un utente che approva ogni errore.
 
 
 1. Le impostazioni della pipeline di produzione includono una terza scheda etichettata come **Experience Audit**. Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi in Experience Audit.
 
    >[!NOTE]
-   >Fai clic su **Aggiungi nuova pagina** per definire il tuo collegamento personalizzato.
+   >È necessario fare clic su **Aggiungi nuova pagina** per definire il proprio collegamento personalizzato.
 
    ![](assets/setup-3.png)
 
    Fate clic su **Aggiungi nuova pagina** per specificare un percorso URL da includere nel controllo dell&#39;esperienza.
 
-   Ad esempio, se desiderate includere `https://wknd.site/us/en/about-us.html` in Experience Audit, immettete il percorso `us/en/about-us.html` in questo campo e fate clic su **Salva**.
+   Ad esempio, se desiderate includere `https://wknd.site/us/en/about-us.html` nel controllo dell&#39;esperienza, immettete il percorso `us/en/about-us.html` in questo campo e fate clic su **Salva**.
 
    ![](assets/exp-audit4.png)
 
@@ -99,23 +99,23 @@ Per configurare il comportamento e le preferenze della pipeline, effettuate le s
 
    È possibile includere fino a 25 righe. Se non ci sono pagine inviate dall&#39;utente in questa sezione, per impostazione predefinita la pagina iniziale del sito verrà inclusa in Experience Audit.
 
-   Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/cloud-manager/experience-audit-testing.md) dell&#39;audit esperienza.
+   Per ulteriori informazioni, fare riferimento a [Informazioni sui risultati dell&#39;audit esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
 
    >[!NOTE]
    > Le pagine configurate verranno inviate al servizio e valutate in base alle prestazioni, all&#39;accessibilità, al SEO (ottimizzazione motore di ricerca), alle best practice e ai test PWA (app Web progressiva).
 
-1. Fate clic su **Salva** nella schermata **Modifica tubazione** . Nella pagina **Panoramica** è ora visualizzata la scheda **Implementa il programma** . Fate clic sul pulsante **Distribuisci** per distribuire il programma.
+1. Fare clic su **Salva** nella schermata **Modifica tubazione**. La pagina **Panoramica** ora mostra la scheda **Implementa il programma**. Fare clic sul pulsante **Distribuisci** per distribuire il programma.
 
    ![](assets/configure-pipeline5.png)
 
 
-## Tubazioni non di produzione e di qualità del codice {#non-production-pipelines}
+## Pipeline di qualità non di produzione e solo codice {#non-production-pipelines}
 
-Oltre alla pipeline principale che viene implementata per fasi e produzione, i clienti sono in grado di impostare altri oleodotti, denominati **Non-Production Pipelines**. Tali pipeline eseguono sempre i passaggi di creazione e qualità del codice. Facoltativamente, possono anche essere distribuiti nell&#39;ambiente Adobe Managed Services.
+Oltre alla pipeline principale che viene implementata per la fase e la produzione, i clienti possono impostare altri oleodotti, denominati **Non-Production Pipelines**. Tali pipeline eseguono sempre i passaggi di creazione e qualità del codice. Facoltativamente, possono anche essere distribuiti nell&#39;ambiente Adobe Managed Services.
 
 Nella schermata iniziale, queste condotte sono elencate in una nuova scheda:
 
-1. Accedete alla sezione **Tubi** non di produzione dalla schermata iniziale di Cloud Manager.
+1. Accedete alla sezione **Pipeline non di produzione** dalla schermata principale di Cloud Manager.
 
    ![](assets/configure-pipeline6.png)
 
@@ -130,11 +130,11 @@ Nella schermata iniziale, queste condotte sono elencate in una nuova scheda:
    ![](assets/configure-pipeline8.png)
 
    * **Modifica** : consente di modificare le impostazioni della pipeline
-   * **Genera** : consente di passare alla pagina di esecuzione dalla quale è possibile eseguire la pipeline
-   * **Gestione Git** : consente all&#39;utente di ottenere le informazioni necessarie per accedere all&#39;archivio Git di Cloud Manager
+   * **Build** : passa alla pagina di esecuzione dalla quale è possibile eseguire la pipeline
+   * **Manage Git**  - consente all&#39;utente di ottenere le informazioni necessarie per accedere all&#39;archivio Git di Cloud Manager
 
 ## Passaggi successivi {#the-next-steps}
 
 Dopo aver configurato la pipeline, è necessario distribuire il codice.
 
-Per ulteriori informazioni, consulta [Distribuzione del codice](deploy-code.md) .
+Per ulteriori informazioni, vedere [Distribuzione del codice](deploy-code.md).
