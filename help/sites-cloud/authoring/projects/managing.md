@@ -32,17 +32,17 @@ Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di u
 La procedura di creazione di un progetto è la stessa per ciascun progetto. La differenza tra i tipi di progetti include i [ruoli utente](/help/sites-cloud/authoring/projects/overview.md) e i [flussi di lavoro](/help/sites-cloud/authoring/projects/workflows.md) disponibili.  Per creare un nuovo progetto:
 
 1. In **Progetti**, tocca o fai clic su **Crea** per aprire la procedura guidata **Crea progetto**:
-1. Select a template and click **Next**.
+1. Selezionate un modello e fate clic su **Next**.
 
    ![Creazione di un progetto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Define the **Title** and **Description** and add a **Thumbnail** image if required. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
+1. Definire il **Titolo** e **Descrizione** e aggiungere un&#39;immagine **Miniatura** se necessario. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
 
    ![Aggiunta di dettagli al progetto](/help/sites-cloud/authoring/assets/projects-title.png)
 
 1. Tocca o fai clic su **Crea**. Ti viene richiesto se desideri aprire il nuovo progetto o tornare alla console.
 
-### Associazione di risorse a un progetto {#associating-resources-with-your-project}
+### Associazione di risorse a un progetto  {#associating-resources-with-your-project}
 
 Poiché i progetti consentono di raggruppare risorse in un’unica entità, è possibile associare delle risorse a un progetto. Tali risorse sono denominate **porzioni**. I tipi di risorse che è possibile aggiungere sono descritti nella sezione [Porzioni di progetto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
@@ -83,7 +83,7 @@ Per alcune porzioni è possibile aggiungere più di un oggetto. Ad esempio, è p
 
 Per aggiungere elementi a una porzione:
 
-1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
+1. In **Progetti**, andate al progetto e fate clic sull&#39;icona Aggiungi + nella sezione a cui desiderate aggiungere un elemento.
 
    ![Aggiungere un elemento a una sezione](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
@@ -107,19 +107,19 @@ Per aprire una porzione e visualizzare o modificare gli elementi:
 
 ## Visualizzazione delle statistiche di un progetto {#viewing-project-statistics}
 
-Per visualizzare le statistiche di un progetto, dalla console **Progetti** fai clic su **Mostra vista statistiche**. Viene visualizzato il livello di completamento di ciascun progetto. Click **Show Statistics View** again to go to the **Projects** console.
+Per visualizzare le statistiche di un progetto, dalla console **Progetti** fai clic su **Mostra vista statistiche**. Viene visualizzato il livello di completamento di ciascun progetto. Fare di nuovo clic su **Mostra visualizzazione statistiche** per passare alla console **Progetti**.
 
 ![Statistiche progetto](/help/sites-cloud/authoring/assets/projects-stats.png)
 
 ### Visualizzazione della cronologia di un progetto {#viewing-a-project-timeline}
 
-La cronologia di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse associate. To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. Le risorse vengono visualizzate nel riquadro a sinistra. Click/tap **Timeline** to return to the **Projects** console.
+La cronologia di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse associate. Per visualizzare la timeline del progetto, tocca o fai clic su **Timeline**, quindi entra in modalità di selezione e seleziona il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Tocca o fai clic su **Timeline** per tornare alla console **Progetti**.
 
 ![Cronologia progetto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Visualizzazione di progetti attivi e inattivi {#viewing-active-inactive-projects}
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. Se accanto all&#39;icona è presente un segno di spunta, vengono visualizzati i progetti attivi.
+Per alternare tra i progetti attivi e inattivi, nella console **Progetti** fare clic su **Attiva/Disattiva progetti**. Se accanto all&#39;icona è presente un segno di spunta, vengono visualizzati i progetti attivi.
 
 ![Pulsante Attiva progetti](/help/sites-cloud/authoring/assets/projects-active.png)
 
@@ -138,7 +138,7 @@ Per rendere un progetto attivo o inattivo:
    >[!NOTE]
    È necessario aggiungere questa porzione nel caso in cui non sia già presente nel progetto. Consulta [Aggiunta di una porzione](#adding-items-to-a-tile).
 
-1. Tap/click **Edit**.
+1. Toccate/fate clic su **Modifica**.
 1. Modifica il selettore passando da **Attivo** a **Inattivo** (o viceversa).
 
    ![Attivazione di un progetto](/help/sites-cloud/authoring/assets/projects-activate.png)
