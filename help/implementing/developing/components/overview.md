@@ -10,9 +10,9 @@ ht-degree: 7%
 ---
 
 
-# Panoramica sui componenti {#components-overview}
+# Panoramica dei componenti {#components-overview}
 
-Questa pagina fornisce una panoramica dei componenti Adobe Experience Manager (AEM) come quelli [utilizzati per l’authoring](/help/sites-cloud/authoring/fundamentals/components.md)delle pagine.
+Questa pagina fornisce una panoramica dei componenti Adobe Experience Manager (AEM) come quelli [utilizzati per l&#39;authoring delle pagine](/help/sites-cloud/authoring/fundamentals/components.md).
 
 ## Cosa sono i componenti? {#what-are-components}
 
@@ -45,19 +45,19 @@ Ciascun componente AEM:
 
 ## AEM Core Components {#aem-core-components}
 
-[I componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) core AEM sono una serie di componenti standard per la gestione dei contenuti Web (WCM), che consentono di AEM per velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti Web.
+[I ](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) componenti core AEM sono una serie di componenti Web Content Management (WCM) standardizzati che consentono di AEM per velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti Web.
 
-I componenti core sono forniti con AEM come Cloud Service e l’esercitazione [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKND illustra come implementare e usare i componenti. I componenti sono forniti con tutto il codice sorgente e possono essere utilizzati come punti di partenza per componenti modificati o estesi.
+I componenti core sono forniti con AEM come Cloud Service e l&#39; [Esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustra come implementare e utilizzare i componenti. I componenti sono forniti con tutto il codice sorgente e possono essere utilizzati come punti di partenza per componenti modificati o estesi.
 
 ### Visualizzazione dei componenti disponibili {#viewing-available-components}
 
-Per una panoramica di tutti i componenti disponibili nell’istanza AEM, utilizzate la console [](/help/sites-cloud/authoring/features/components-console.md)Componenti.
+Per una panoramica di tutti i componenti disponibili nell&#39;istanza di AEM, utilizzate la [console Componenti](/help/sites-cloud/authoring/features/components-console.md).
 
 In alternativa, potete anche utilizzare CRXDE Lite per ottenere un elenco di tutti i componenti disponibili nella directory archivio.
 
-1. In **[!UICONTROL CRXDE Lite]**, selezionare **[!UICONTROL Strumenti]** dalla barra degli strumenti, quindi **[!UICONTROL Query]**, che apre la scheda **[!UICONTROL Query]** .
+1. In **[!UICONTROL CRXDE Lite]**, selezionare **[!UICONTROL Strumenti]** dalla barra degli strumenti, quindi **[!UICONTROL Query]**, che apre la scheda **[!UICONTROL Query]**.
 
-1. Nella scheda **[!UICONTROL Query]** , selezionare `XPath` come **[!UICONTROL Tipo]**.
+1. Nella scheda **[!UICONTROL Query]**, selezionare `XPath` come **[!UICONTROL Tipo]**.
 
 1. Nel campo di inserimento **[!UICONTROL Query]** immettete la stringa seguente:
 
