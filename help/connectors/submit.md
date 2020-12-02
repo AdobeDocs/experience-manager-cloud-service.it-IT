@@ -15,14 +15,14 @@ Invio di un connettore AEM
 
 Seguono informazioni utili per l’invio dei connettori AEM, che devono essere lette insieme agli articoli relativi all’[implementazione](implement.md) e alla [manutenzione](maintain.md) dei connettori.
 
-AEM Connettori sono elencati in [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
+AEM Connettori sono elencati in [ Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 Nelle soluzioni AEM precedenti, Package Manager veniva utilizzato per installare i connettori su varie istanze AEM. Tuttavia, con AEM come Cloud Service, i connettori vengono distribuiti durante il processo CI/CD in Cloud Manager. Affinché i connettori vengano distribuiti, è necessario fare riferimento ai connettori nel file pom.xml del progetto maven.
 
 Esistono diverse opzioni per l’inclusione dei pacchetti in un progetto:
 
 1. Archivio pubblico del partner: un partner ospiterà il pacchetto di contenuti in un archivio Web accessibile al pubblico
-1. Archivio protetto da password del partner: un partner ospita il pacchetto di contenuti in un archivio Web protetto da password. Per istruzioni, consultate i repository [protetti tramite](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories) password all&#39;indirizzo .
+1. Archivio protetto da password del partner: un partner ospita il pacchetto di contenuti in un archivio Web protetto da password. Per istruzioni, vedere [repository protetti da password in ](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 1. Artefatto in bundle - in questo caso, il pacchetto di connettori è incluso localmente nel progetto del cliente.
 
 Indipendentemente da dove sono ospitati, i pacchetti devono essere indicati come dipendenze nel file pom.xml, come fornito dal fornitore.
