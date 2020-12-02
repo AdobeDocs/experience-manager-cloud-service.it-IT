@@ -25,7 +25,7 @@ Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (
 
 >[!CAUTION]
 >
->Non è possibile promuovere contemporaneamente un singolo lancio. This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>Non è possibile promuovere contemporaneamente un singolo lancio. Ciò significa che due azioni promozionali allo stesso avvio possono causare un errore `Launch could not be promoted` (insieme a errori di conflitto nel registro).
 
 >[!CAUTION]
 >
@@ -47,12 +47,12 @@ Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (
 Puoi promuovere un lancio dalla console **Sites** o dalla console **Lanci**:
 
 1. Apri:
-   * The **Sites** console:
-      1. Open the [references rail](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) and select the required source page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md) (or select and open the references rail, the order is not important). Verranno visualizzati tutti i riferimenti.
+   * La console **Siti**:
+      1. Aprite la barra dei riferimenti [a1/> e selezionate la pagina di origine desiderata utilizzando la modalità di selezione [a3/> (oppure selezionate e aprite la barra dei riferimenti, l&#39;ordine non è importante). ](/help/sites-cloud/authoring/getting-started/basic-handling.md)](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) Verranno visualizzati tutti i riferimenti.
       1. Seleziona **Lanci** (ad esempio Lanci (1)) per visualizzare un elenco dei lanci specifici.
       1. Seleziona il lancio specifico per visualizzare le azioni disponibili.
       1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
-   * The **Launches** console:
+   * Console **Lanci**:
       1. Seleziona il lancio che ti interessa (tocca o fai clic sulla miniatura).
       1. Seleziona **Promuovi**.
 1. Nel primo passaggio puoi specificare i seguenti parametri:
@@ -78,7 +78,7 @@ Puoi promuovere un lancio dalla console **Sites** o dalla console **Lanci**:
 
 1. Seleziona **Promuovi**.
 
-## Promozione di pagine di lancio durante la modifica {#promoting-launch-pages-when-editing}
+## Promozione di pagine di lancio durante la modifica  {#promoting-launch-pages-when-editing}
 
 Durante la modifica di una pagina di lancio, l’azione **Promuovi lancio** è disponibile anche da **Informazioni pagina**. Si aprirà la procedura guidata per raccogliere le informazioni necessarie.
 
@@ -88,7 +88,7 @@ Durante la modifica di una pagina di lancio, l’azione **Promuovi lancio** è d
 >
 >Questa funzione è disponibile per i lanci singoli e per i [lanci nidificati](#promoting-a-nested-launch).
 
-## Promozione di un lancio nidificato {#promoting-a-nested-launch}
+## Promozione di un lancio nidificato  {#promoting-a-nested-launch}
 
 Dopo aver creato un lancio nidificato, puoi promuoverlo di nuovo su qualsiasi sorgente, compresa la sorgente principale (produzione).
 
@@ -98,7 +98,7 @@ Dopo aver creato un lancio nidificato, puoi promuoverlo di nuovo su qualsiasi so
 1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
 1. Immetti i dettagli necessari:
    * **Destinazione**
-      * **Destinazione** promozione - È possibile promuovere a qualsiasi origine.
+      * **Destinazione**  promozione - È possibile promuovere a qualsiasi origine.
       * **Elimina lancio dopo la promozione** : dopo la promozione, il lancio selezionato e tutti gli avvii nidificati al suo interno verranno eliminati.
    * **Ambito** : qui potete scegliere se promuovere l’intero lancio o solo le pagine che sono state effettivamente modificate. Nel secondo caso, puoi scegliere di includere o escludere le pagine secondarie. La configurazione predefinita prevede di promuovere le modifiche solo per la pagina corrente:
       * **Promuovi tutto il lancio**
