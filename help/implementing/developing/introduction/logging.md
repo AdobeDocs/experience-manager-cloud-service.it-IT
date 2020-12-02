@@ -151,7 +151,7 @@ Configurare la registrazione Java per i pacchetti Java personalizzati tramite le
 
 La modifica di altre proprietà di configurazione LogManager OSGi potrebbe causare problemi di disponibilità in AEM come Cloud Service.
 
-Di seguito sono riportati alcuni esempi delle configurazioni di registrazione consigliate (che utilizzano il pacchetto Java segnaposto di `com.example`) per i tre AEM come tipi di ambiente di Cloud Service.
+Di seguito sono riportati alcuni esempi delle configurazioni di registrazione consigliate (utilizzando il pacchetto Java segnaposto di `com.example`) per i tre AEM come tipi di ambiente di Cloud Service.
 
 ### Sviluppo {#development}
 
@@ -325,7 +325,7 @@ Questo set di registri fornisce informazioni approfondite sulle richieste HTTP a
 
 Il registro di accesso al server Web Apache HTTP fornisce istruzioni per ogni richiesta HTTP che raggiunge il server Web/dispatcher del livello Publish. Notate che le richieste servite da una CDN upstream non vengono riportate in questi registri.
 
-Consultate le informazioni sul formato del registro errori nella documentazione [apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog)ufficiale.
+Consultate le informazioni sul formato del registro errori nella [documentazione ufficiale di apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
 **Esempio di output del registro**
 
@@ -348,7 +348,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>-</td>
 </tr>
 <tr>
-<td>User</td>
+<td>Utente</td>
 <td>-</td>
 </tr>
 <tr>
@@ -394,7 +394,7 @@ Questo registro non è configurabile in AEM come Cloud Service.
 
 Il registro errori del server Web Apache HTTP fornisce istruzioni per ogni errore nel server Web/dispatcher del livello di pubblicazione.
 
-Consultate le informazioni sul formato del registro errori nella documentazione [apache](https://httpd.apache.org/docs/2.4/logs.html#errorlog)ufficiale.
+Consultate le informazioni sul formato del registro errori nella [documentazione ufficiale di apache](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
 **Esempio di output del registro**
 
@@ -431,13 +431,13 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 </tbody>
 </table>
 
-### Configurazione del registro errori del server Web Apache HTTPD {#configuring-the-apache-httpd-web-server-error-log}
+### Configurazione del registro errori server Web Apache HTTPD {#configuring-the-apache-httpd-web-server-error-log}
 
-I livelli di registro mod_rewrite sono definiti dalla variabile REWRITE_LOG_LEVEL presente nel file `conf.d/variables/global.var`.
+I livelli di registro mod_rewrite sono definiti dalla variabile REWRITE_LOG_LEVEL nel file `conf.d/variables/global.var`.
 
 Può essere impostato su Errore, Avverti, Informazioni, Debug e Trace1 - Trace8, con il valore predefinito Avverti. Per eseguire il debug delle regole di riscrittura, è consigliabile aumentare il livello di registro a Trace2.
 
-Per ulteriori informazioni, consulta la documentazione [del modulo](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) mod_rewrite.
+Per ulteriori informazioni, consultare la [documentazione del modulo mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging).
 
 Per impostare il livello di registro per l&#39;ambiente, utilizzare il ramo condizionale appropriato nel file global.var, come descritto di seguito:
 
@@ -456,7 +456,7 @@ Define REWRITE_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## Registro dispatcher {#dispatcher-log}
+## Registro del dispatcher {#dispatcher-log}
 
 **Esempio**
 
@@ -492,7 +492,7 @@ Define REWRITE_LOG_LEVEL Debug
 </tr>
 <tr>
 <td>Durata</td>
-<td>1949ms</td>
+<td>1949 ms</td>
 </tr>
 <tr>
 <td>Agriturismo</td>
@@ -511,13 +511,13 @@ Define REWRITE_LOG_LEVEL Debug
 
 ### Configurazione del registro errori del dispatcher {#configuring-the-dispatcher-error-log}
 
-I livelli del registro del dispatcher sono definiti dalla variabile DISP_LOG_LEVEL presente nel file `conf.d/variables/global.var`.
+I livelli del registro del dispatcher sono definiti dalla variabile DISP_LOG_LEVEL nel file `conf.d/variables/global.var`.
 
 Può essere impostato su Errore, Avverti, Informazioni, Debug e Trace1, con il valore predefinito Avverti.
 
 Mentre la registrazione del dispatcher supporta diversi altri livelli di granularità della registrazione, il AEM come Cloud Service consiglia di utilizzare i livelli descritti di seguito.
 
-Per impostare il livello di registro per l&#39;ambiente, utilizzare il ramo condizionale appropriato nel `global.var` file, come descritto di seguito:
+Per impostare il livello di registro per l&#39;ambiente, utilizzare il ramo condizionale appropriato nel file `global.var`, come descritto di seguito:
 
 ```
 Define DISP_LOG_LEVEL Debug
@@ -538,26 +538,26 @@ Define DISP_LOG_LEVEL Debug
 
 ### Ambienti cloud {#cloud-environments}
 
-AEM come Cloud Service, è possibile accedere ai registri dei servizi cloud scaricando l&#39;interfaccia di Cloud Manager o inserendo nella riga di comando i registri utilizzando l&#39;interfaccia  riga di comando Adobe I/O. Per ulteriori informazioni, consulta la documentazione [di registrazione di](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
+AEM come Cloud Service, è possibile accedere ai registri dei servizi cloud scaricando l&#39;interfaccia di Cloud Manager o inserendo nella riga di comando i registri utilizzando l&#39;interfaccia  riga di comando Adobe I/O. Per ulteriori informazioni, consulta la [documentazione di registrazione di Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
 
 ### SDK locale {#local-sdk}
 
 AEM come Cloud Service SDK fornisce file di registro per supportare lo sviluppo locale.
 
-AEM file di registro si trovano nella cartella `crx-quickstart/logs`, dove è possibile visualizzare i seguenti file di registro:
+AEM file di registro si trovano nella cartella `crx-quickstart/logs`, in cui è possibile visualizzare i seguenti file di registro:
 
 * AEM registro Java: `error.log`
 * AEM registro delle richieste HTTP: `request.log`
 * AEM registro di accesso HTTP: `access.log`
 
-I registri dei livelli Apache, incluso il dispatcher, si trovano nel contenitore Docker che contiene il dispatcher. Per informazioni su come avviare il dispatcher, consulta la documentazione [del](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) dispatcher.
+I registri dei livelli Apache, incluso il dispatcher, si trovano nel contenitore Docker che contiene il dispatcher. Per informazioni sull&#39;avvio del dispatcher, vedere la [documentazione del dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html).
 
 Per recuperare i file di registro:
 
 1. Nella riga di comando, digitare `docker ps` per elencare i contenitori
-1. Per accedere al contenitore, digitare &quot;`docker exec -it <container> /bin/sh`&quot;, dove `<container>` corrisponde all&#39;ID del contenitore del dispatcher dal passaggio precedente
+1. Per accedere al contenitore, digitare &quot;`docker exec -it <container> /bin/sh`&quot;, dove `<container>` è l&#39;ID del contenitore del dispatcher dal passaggio precedente
 1. Andate alla directory principale della cache in `/mnt/var/www/html`
-1. I log sono sotto `/etc/httpd/logs`
+1. I file di registro si trovano sotto `/etc/httpd/logs`
 1.  Inspect i registri: sono accessibili nella cartella XYZ, dove è possibile visualizzare i seguenti file di registro:
    * Registro di accesso al server Web Apache HTTPD - `httpd_access.log`
    * Registri di errore del server Web Apache HTTPD - `httpd_error.log`
@@ -567,7 +567,7 @@ I registri vengono inoltre stampati direttamente sull&#39;uscita terminale. Nell
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-## Debug di fase e produzione {#debugging-production-and-stage}
+## Debug di produzione e fase {#debugging-production-and-stage}
 
 In circostanze eccezionali, è necessario modificare i livelli di registro per eseguire il log a una granularità maggiore negli ambienti Stage o Produzione.
 
@@ -584,14 +584,14 @@ I clienti che dispongono di account Splunk possono richiedere tramite ticket di 
 
 La larghezza di banda di rete associata ai registri inviati a Splunk è considerata parte dell&#39;utilizzo di I/O di rete del cliente.
 
-### Abilitazione dell&#39;inoltro splunk {#enabling-splunk-forwarding}
+### Abilitazione dell&#39;inoltro frastagliato {#enabling-splunk-forwarding}
 
 Nella richiesta di assistenza, i clienti devono indicare:
 
 * Indirizzo endpoint HEC splunk
 * Indice Splunk
 * La porta Splunk
-* Il token Splunk HEC. Per ulteriori informazioni, consulta [questa pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) .
+* Il token Splunk HEC. Per ulteriori informazioni, vedere [questa pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
 
 Le proprietà di cui sopra devono essere specificate per ciascuna combinazione di programma/tipo di ambiente pertinente.  Ad esempio, se un cliente voleva un ambiente di sviluppo, staging e produzione, dovrebbe fornire tre serie di informazioni, come indicato di seguito.
 
@@ -622,7 +622,7 @@ Programma 123, Dev Envs
 * Porta splunk: 443
 * Token Splunk HEC: ABC123
 
-Può essere sufficiente che lo stesso indice Splunk venga utilizzato per ogni ambiente, nel qual caso il `aem_env_type` campo può essere utilizzato per differenziare in base ai valori dev, stage e prod. In presenza di più ambienti di sviluppo, è possibile utilizzare anche il `aem_env_id` campo. Alcune organizzazioni possono scegliere un indice separato per i registri dell&#39;ambiente di produzione se l&#39;indice associato limita l&#39;accesso a un set ridotto di utenti Splunk.
+Può essere sufficiente che lo stesso indice Splunk venga utilizzato per ogni ambiente, nel qual caso il campo `aem_env_type` può essere utilizzato per distinguere in base ai valori dev, stage e prod. In presenza di più ambienti di sviluppo, è possibile utilizzare anche il campo `aem_env_id`. Alcune organizzazioni possono scegliere un indice separato per i registri dell&#39;ambiente di produzione se l&#39;indice associato limita l&#39;accesso a un set ridotto di utenti Splunk.
 
 Esempio di voce di registro:
 
