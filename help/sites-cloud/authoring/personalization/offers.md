@@ -29,12 +29,12 @@ Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato
 
    ![Passaggio alla console Offerte](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
-1. Click or tap **Create** and then **Create** **Brand**.
+1. Tocca o fai clic su **Crea**, quindi su **Crea** **Marchio**.
 1. Seleziona il modello di marchio e tocca o fai clic su **Avanti**.
 1. Digita un titolo per il marchio come desideri che appaia nelle console Offerte e Attività. Facoltativamente, digita o seleziona uno o più tag da associare al marchio.
 1. Tocca o fai clic su **Crea**.
 
-## Aggiunta di una cartella a una libreria di offerte {#add-a-folder-to-an-offer-library}
+## Aggiunta di una cartella a una libreria di offerte  {#add-a-folder-to-an-offer-library}
 
 Consente di aggiungere una cartella alla libreria di offerte di un marchio per organizzare e salvare le offerte. Puoi creare una sottocartella sotto il marchio o altre cartelle.
 
@@ -50,7 +50,7 @@ Consente di aggiungere una cartella alla libreria di offerte di un marchio per o
 
 1. Tocca o fai clic su **Crea**.
 
-## Aggiunta di un&#39;offerta a una libreria di offerte {#add-an-offer-to-an-offer-library}
+## Aggiunta di un&#39;offerta a una libreria di offerte  {#add-an-offer-to-an-offer-library}
 
 Consente di aggiungere un&#39;offerta alla libreria delle offerte di un marchio in modo che possa essere aggiunta alle esperienze del marchio. Quando aggiungi un&#39;offerta devi inserire un titolo. Puoi anche associare l&#39;offerta con uno o più tag per migliorare la ricerca.
 
@@ -74,7 +74,7 @@ Puoi aprire un&#39;offerta da una cartella in una libreria di offerte o dai risu
 1. Nella console Offerte, tocca o fai clic sull&#39;icona accanto all&#39;offerta e tocca o fai clic su **Modifica**.
 1. Aggiungi componenti all&#39;offerta e modifica il contenuto dei componenti come d&#39;abitudine.
 
-## Eliminazione di un&#39;offerta {#deleting-an-offer}
+## Eliminazione di un&#39;offerta  {#deleting-an-offer}
 
 Consente di eliminare un&#39;offerta quando non è più necessaria. Quando tenti di eliminare un&#39;offerta utilizzata in un&#39;esperienza, ti viene richiesto di confermare l&#39;eliminazione. Con la conferma viene eliminata l&#39;offerta e la rimuove dalle esperienze.
 
@@ -90,7 +90,7 @@ Puoi eliminare un&#39;offerta visualizzando il contenuto di una cartella in una 
    * Per eliminare l&#39;offerta e rimuoverla dalle esperienze, tocca o fai clic su **Forza eliminazione**.
    * Per mantenere l&#39;offerta, tocca o fai clic su **Annulla**.
 
-## Ricerca delle offerte {#searching-for-offers}
+## Ricerca delle offerte  {#searching-for-offers}
 
 Consente di cercare offerte di qualsiasi marchio utilizzando parole chiave per abbinare il titolo.
 
