@@ -351,7 +351,7 @@ Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML s
 >
 >Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere ai contenuti del frammento esperienza direttamente dall’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
-## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
+## Esportazione di frammenti esperienza    {#exporting-experience-fragments}
 
 Per impostazione predefinita, i frammenti esperienza vengono forniti nel formato HTML che può essere utilizzati sia da AEM che da canali di terze parti.
 
