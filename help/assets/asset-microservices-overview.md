@@ -3,9 +3,9 @@ title: Elaborazione delle risorse tramite i microservizi delle risorse
 description: Elabora le risorse digitali tramite microservizi di elaborazione delle risorse scalabili e nativi basati sul cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Panoramica dell’assimilazione e dell’elaborazione delle risorse con i microservizi {#asset-microservices-overview}
 
-Adobe Experience Manager come Cloud Service fornisce un metodo nativo basato sul cloud per sfruttare  applicazioni e funzionalità Experience Manager. Uno degli elementi chiave di questa nuova architettura è l&#39;assimilazione e l&#39;elaborazione delle risorse, basata sui microservizi di asset. I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente delle risorse mediante i servizi cloud.  Adobe gestisce i servizi cloud per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione. I vantaggi principali dei microservizi di risorse native per il cloud sono:
+Adobe Experience Manager come [!DNL Cloud Service] fornisce un metodo nativo per il cloud per sfruttare  applicazioni e funzionalità di Experience Manager. Uno degli elementi chiave di questa nuova architettura è l&#39;assimilazione e l&#39;elaborazione delle risorse, basata sui microservizi di asset. I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente delle risorse mediante i servizi cloud.  Adobe gestisce i servizi cloud per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione. I vantaggi principali dei microservizi di risorse native per il cloud sono:
 
 * Architettura scalabile che consente un&#39;elaborazione senza soluzione di continuità per le operazioni che richiedono risorse.
 * Indicizzazione ed estrazioni di testo efficienti che non influiscono sulle prestazioni degli ambienti di Experience Manager .
@@ -51,7 +51,7 @@ Questo è il flusso di base dell’assimilazione e dell’elaborazione delle ris
 Il flusso di assimilazione e di elaborazione sono concetti chiave dell’architettura dei microservizi di risorse per  Experience Manager.
 
 * **Accesso** binario diretto: Le risorse vengono trasportate (e caricate) nel Cloud Binary Store una volta configurato per gli ambienti  Experience Manager, e quindi AEM, i microservizi delle risorse, e infine i client possono accedervi direttamente per svolgere il proprio lavoro. Questo riduce al minimo il carico sulle reti e la duplicazione dei binari archiviati
-* **Elaborazione** esternalizzata: L&#39;elaborazione delle risorse viene effettuata al di fuori dell&#39;ambiente AEM e ne salva le risorse (CPU, memoria) per fornire le funzionalità chiave di Gestione delle risorse digitali e supportare il lavoro interattivo con il sistema per gli utenti finali
+* **Elaborazione** esternalizzata: L&#39;elaborazione delle risorse viene effettuata al di fuori dell&#39;ambiente AEM e ne salva le risorse (CPU, memoria) per fornire le principali funzionalità di gestione delle risorse digitali e supportare il lavoro interattivo con il sistema per gli utenti finali
 
 ## Caricamento risorse con accesso binario diretto {#asset-upload-with-direct-binary-access}
 
