@@ -1,11 +1,11 @@
 ---
 title: Formati di file supportati e tipi MIME
-description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come Cloud Service.
+description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '783'
 ht-degree: 10%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # [!DNL Assets] formati di file supportati  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] come Cloud Service supporta le funzionalità di base di gestione dei contenuti — archiviazione, gestione dei metadati online, controllo delle versioni, caricamento, scaricamento e così via — per qualsiasi file binario, indipendentemente dal suo formato. [!DNL Adobe Experience Manager Assets] supporta un&#39;ampia gamma di formati di file e ogni funzione di prodotto ha un supporto diverso per formati diversi.
+[!DNL Adobe Experience Manager] come  [!DNL Cloud Service] supporto delle funzionalità di base per la gestione dei contenuti — archiviazione, gestione dei metadati online, controllo delle versioni, caricamento, scaricamento e così via — per qualsiasi file binario, indipendentemente dal suo formato. [!DNL Adobe Experience Manager Assets] supporta un&#39;ampia gamma di formati di file e ogni funzione di prodotto ha un supporto diverso per formati diversi.
 
 Inoltre, [!DNL Experience Manager Assets] offre un ampio supporto per la generazione di anteprime e rappresentazioni e per l&#39;estrazione di metadati e testo per l&#39;indicizzazione full-text. Questo supporto esteso viene fornito utilizzando i [microservizi di risorse](asset-microservices-configure-and-use.md).
 
@@ -221,7 +221,7 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 
 ## Formati audio {#audio-formats}
 
-[!DNL Assets] come Cloud Service fornisce XMP supporto per l&#39;estrazione dei metadati per i formati audio FIA, ASF, M4A, MP3, WAV e WMA.
+[!DNL Assets] come  [!DNL Cloud Service] fornisce XMP supporto per l&#39;estrazione dei metadati per i formati audio FIA, ASF, M4A, MP3, WAV e WMA.
 
 >[!MORELIKETHIS]
 >
