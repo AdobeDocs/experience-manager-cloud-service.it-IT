@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 6be2ed60f4e672b99a85b55f833b8ae2f1b952b0
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 78%
+source-wordcount: '1070'
+ht-degree: 71%
 
 ---
 
@@ -58,18 +58,18 @@ Il componente aggiuntivo CIF può essere scaricato come file zip dal [portale di
 Per lo sviluppo locale del componente aggiuntivo CIF utilizzando l’SDK di AEM as a Cloud Service, è necessario procedere seguendo questi passaggi:
 
 1. Scarica il più recente SDK di AEM as a Cloud Service.
-2. Decomprimi il file AEM.jar per creare la cartella `crx-quickstart` ed esegui:
+1. Decomprimi il file AEM.jar per creare la cartella `crx-quickstart` ed esegui:
 
    ```bash
    java -jar <jar name> -unpack
    ```
 
-3. Crea una cartella `crx-quickstart/install`.
-4. Copia il file di archivio Sling Feature corretto del componente aggiuntivo CIF nella cartella `crx-quickstart/install`.
+1. Crea una cartella `crx-quickstart/install`.
+1. Copia il file di archivio Sling Feature corretto del componente aggiuntivo CIF nella cartella `crx-quickstart/install`.
 
    Il file ZIP del componente aggiuntivo CIF contiene due file di archivio Sling Feature `.far`. Usa sempre quello corretto per AEM Author o AEM Publish, a seconda di come verrà eseguito l’SDK locale di AEM as a Cloud Service.
 
-5. Crea una variabile di ambiente del sistema operativo locale denominata `COMMERCE_ENDPOINT` contenente l’endpoint GraphQL di Magento.
+1. Crea una variabile di ambiente del sistema operativo locale denominata `COMMERCE_ENDPOINT` contenente l’endpoint GraphQL di Magento.
 
    Esempio Mac OSX:
 
@@ -85,9 +85,21 @@ Per lo sviluppo locale del componente aggiuntivo CIF utilizzando l’SDK di AEM 
 
    Questa variabile deve essere impostata anche per l’ambiente di AEM as a Cloud Service.
 
-6. Avvia l’SDK di AEM as a Cloud Service.
+   Per ulteriori informazioni sulle variabili, vedere [Configurazione di OSGi per AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-7. Avviare il server proxy GraphQL locale
+1. (Facoltativo) Per abilitare le funzioni per i cataloghi in fase, dovete creare un token di integrazione per l’istanza di Magento. Per creare il token, seguire i passaggi descritti in [Guida introduttiva](./getting-started.md#staging).
+
+   Impostate un segreto OSGi con il nome `COMMERCE_AUTH_HEADER` sul seguente valore:
+
+   ```xml
+   Authorization: Bearer <Access Token>
+   ```
+
+   Per ulteriori informazioni sui segreti, vedere [Configurazione di OSGi per AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+
+1. Avvia l’SDK di AEM as a Cloud Service.
+
+1. Avviare il server proxy GraphQL locale
 
    Per rendere l’endpoint GraphQL del Magento disponibile localmente per il componente aggiuntivo CIF e i componenti CIF, utilizzate il comando seguente. L&#39;endpoint GraphQL sarà quindi disponibile in `http://localhost:3002/graphql`.
 Esempio Mac OSX:
@@ -101,11 +113,12 @@ Esempio Mac OSX:
    ```bash
    npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
    ```
+
    L&#39;argomento `--proxyPartial` deve ricevere una stringa vuota.
 
    È possibile testare il proxy GraphQL locale puntando uno strumento di query GraphQL su `http://localhost:3002/graphql` e testare alcune query.
 
-8. Effettua il login a AEM SDK e configura CIF per utilizzare il server proxy GraphQL locale
+1. Effettuate l&#39;accesso a AEM SDK e configurate CIF per utilizzare il server proxy GraphQL locale.
 
    Andate alla configurazione CIF del Cloud Service (Strumenti > Cloud Services > Configurazione CIF). Aprire la vista delle proprietà della configurazione utilizzata dal progetto.
 
