@@ -34,7 +34,7 @@ Di seguito sono riportati i diversi modelli di implementazione di Commerce Integ
 
 >[!NOTE]
 >
->Per ulteriore documentazione su come utilizzare CIF con AEM servizio gestito o AEM locale, consultare [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Per ulteriore documentazione su come utilizzare CIF con AEM servizio gestito o AEM locale, fare riferimento a [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
 
 >[!NOTE]
 >
