@@ -3,9 +3,9 @@ title: API HTTP di Assets
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1473'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Dopo la [!UICONTROL Ora di disattivazione], una risorsa e le relative rappresent
 
 >[!NOTE]
 >
->Tutte le chiamate API relative al caricamento o all&#39;aggiornamento delle risorse o dei file binari in generale (come le rappresentazioni) vengono disattivate per AEM come distribuzione di Cloud Service. Per caricare i file binari, utilizzate le API di caricamento binario diretto [API](developer-reference-material-apis.md#asset-upload-technical).
+>Tutte le chiamate API relative al caricamento o all&#39;aggiornamento di risorse o file binari in generale (come le rappresentazioni) sono AEM come una distribuzione [!DNL Cloud Service]. Per caricare i file binari, utilizzate le API di caricamento binario diretto [API](developer-reference-material-apis.md#asset-upload-technical).
 
 ## Frammenti di contenuto {#content-fragments}
 
