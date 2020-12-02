@@ -10,13 +10,13 @@ ht-degree: 13%
 ---
 
 
-# About managing Dynamic Media assets {#managing-assets}
+# Gestione delle risorse per file multimediali dinamici{#managing-assets}
 
 La gestione delle risorse di elementi multimediali dinamici, immagini, video e risorse interattive, dopo averli caricati, comporta diverse attività, tra cui la visualizzazione in anteprima, il download o la pubblicazione.
 
-Quando visualizzate l’anteprima, potete anche applicare predefiniti per immagini (solo per immagini) o per visualizzatori (per video e immagini). Non potete applicare entrambi a una risorsa. Consultate [Applicazione dei predefiniti](viewer-presets.md) per visualizzatori e [Applicazione dei predefiniti](image-presets.md)per immagini.
+Quando visualizzate l’anteprima, potete anche applicare predefiniti per immagini (solo per immagini) o per visualizzatori (per video e immagini). Non potete applicare entrambi a una risorsa. Consultate [Applicazione dei predefiniti per visualizzatori](viewer-presets.md) e [Applicazione dei predefiniti per immagini](image-presets.md).
 
-Per informazioni generali sulla gestione delle risorse, consulta [Gestione delle risorse con l’interfaccia](/help/assets/manage-digital-assets.md)touch.
+Informazioni generali sulla gestione delle risorse sono disponibili in [Gestione delle risorse con l&#39;interfaccia utente touch](/help/assets/manage-digital-assets.md).
 
 Gli argomenti seguenti descrivono le operazioni necessarie per gestire le risorse per file multimediali dinamici:
 
