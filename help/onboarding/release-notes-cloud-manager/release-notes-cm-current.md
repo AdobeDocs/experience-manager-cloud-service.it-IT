@@ -10,7 +10,7 @@ ht-degree: 4%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.11.0 {#release-notes}
+# Note sulla versione per Cloud Manager in Adobe Experience Manager come Cloud Service 2020.11.0 {#release-notes}
 
 In questa pagina sono delineate le Note sulla versione di Marketing Cloud Manager in AEM come Cloud Service 2020.11.0.
 
@@ -22,8 +22,8 @@ La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.11.0 è il 
 
 ### Novità {#what-is-new}
 
-* Una nuova opzione di menu **Accesso** locale è ora disponibile per gli utenti dalle opzioni del menu di ambiente nelle pagine scheda Ambiente e Riepilogo ambienti.
-Per ulteriori informazioni, consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md##login-locally) .
+* Una nuova opzione di menu **Accesso locale** è ora disponibile per gli utenti dalle opzioni del menu di ambiente nelle pagine scheda Ambiente e Riepilogo ambienti.
+Per ulteriori informazioni, fare riferimento a [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md##login-locally).
 
 * La scheda **Informazioni** in Cloud Manager è stata aggiornata con le nuove immagini nell&#39;interfaccia utente.
 
