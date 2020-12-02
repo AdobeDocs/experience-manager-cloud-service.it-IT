@@ -19,7 +19,7 @@ ht-degree: 0%
 
 1. Passare alla pagina Impostazioni dominio dalla schermata Ambienti
 1. Identificare la riga in cui è elencato il nome di dominio personalizzato che si desidera eliminare
-1. Seleziona il **...** menu dall&#39;estremità destra della riga
+1. Selezionare la **...Menu** dall&#39;estremità destra della riga
 1. Selezionate l’opzione Elimina
 1. Conferma invio
 
@@ -28,6 +28,6 @@ ht-degree: 0%
 
 1. Dalla pagina Ambienti, passare alla schermata Dettagli ambiente dell&#39;ambiente di interesse
 1. Dalla tabella Nomi di dominio, identificare la riga in cui è elencato il nome di dominio personalizzato che si desidera eliminare
-1. Seleziona il **...** menu dall&#39;estremità destra della riga
+1. Selezionare la **...Menu** dall&#39;estremità destra della riga
 1. Selezionate l’opzione Elimina
 1. Conferma invio
