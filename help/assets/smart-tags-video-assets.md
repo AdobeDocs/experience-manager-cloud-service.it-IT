@@ -2,9 +2,9 @@
 title: Applicazione di tag avanzati alle risorse video
 description: Le risorse video con tag avanzati automatizzano i tag delle risorse applicando tag contestuali e descrittivi tramite  servizi Adobe Sensei.
 translation-type: tm+mt
-source-git-commit: 68fe67617f0d63872f13427b3fbc7b58f2497aca
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Assegnare tag avanzati alle risorse video {#video-smart-tags}
 
-La crescente necessità di nuovi contenuti richiede un impegno manuale ridotto per offrire esperienze digitali coinvolgenti in tempi brevi. [!DNL Adobe Experience Manager] come Cloud Service, supporta l’assegnazione automatizzata di tag alle risorse video assistite da intelligenza artificiale. Assegnare manualmente i tag ai video può richiedere molto tempo. Tuttavia,  funzione di smart tag video basata su Adobe Sensei utilizza modelli di intelligenza artificiale per analizzare i contenuti video e aggiungere tag alle risorse video. In questo modo, gli utenti DAM possono dedicare meno tempo alla distribuzione di esperienze avanzate ai propri clienti.  Adobe  servizio di machine learning genera due set di tag per un video. Mentre, un set corrisponde a oggetti, scene e attributi nel video; l&#39;altro insieme riguarda azioni quali bere, correre e fare jogging.
+La crescente necessità di nuovi contenuti richiede un impegno manuale ridotto per offrire esperienze digitali coinvolgenti in tempi brevi. [!DNL Adobe Experience Manager] come  [!DNL Cloud Service] supporta l’assegnazione automatizzata di tag alle risorse video assistite da intelligenza artificiale. Assegnare manualmente i tag ai video può richiedere molto tempo. Tuttavia,  funzione di smart tag video basata su Adobe Sensei utilizza modelli di intelligenza artificiale per analizzare i contenuti video e aggiungere tag alle risorse video. In questo modo, gli utenti DAM possono dedicare meno tempo alla distribuzione di esperienze avanzate ai propri clienti.  Adobe  servizio di machine learning genera due set di tag per un video. Mentre, un set corrisponde a oggetti, scene e attributi nel video; l&#39;altro insieme riguarda azioni quali bere, correre e fare jogging.
 
-I formati di file video (e i relativi codec) supportati per l’assegnazione di smart tag sono MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (index4), FLV (H264/AVC, vp6f) e WMV 2). Inoltre, la funzione consente di aggiungere tag ai video fino a 300 MB. I tag automatici delle risorse video vengono utilizzati come elaborazione standard delle risorse (insieme alla creazione di miniature ed estrazione di metadati) dopo il caricamento di un video o quando viene attivata una nuova elaborazione. Gli smart tag vengono visualizzati in ordine decrescente in base al [punteggio di confidenza](#confidence-score-video-tag) nella risorsa [!UICONTROL Properties]. Per impostazione predefinita, i tag video sono abilitati in [!DNL Adobe Experience Manager] come Cloud Service. Tuttavia, potete [rifiutare l&#39;assegnazione di tag avanzati video](#opt-out-video-smart-tagging) in una cartella.
+I formati di file video (e i relativi codec) supportati per l’assegnazione di smart tag sono MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (index4), FLV (H264/AVC, vp6f) e WMV 2). Inoltre, la funzione consente di aggiungere tag ai video fino a 300 MB. I tag automatici delle risorse video vengono utilizzati come elaborazione standard delle risorse (insieme alla creazione di miniature ed estrazione di metadati) dopo il caricamento di un video o quando viene attivata una nuova elaborazione. Gli smart tag vengono visualizzati in ordine decrescente in base al [punteggio di confidenza](#confidence-score-video-tag) nella risorsa [!UICONTROL Properties]. Per impostazione predefinita, i tag video sono abilitati in [!DNL Adobe Experience Manager] come [!DNL Cloud Service]. Tuttavia, potete [rifiutare l&#39;assegnazione di tag avanzati video](#opt-out-video-smart-tagging) in una cartella.
 
 ## Assegnazione di tag avanzati ai video durante il caricamento {#smart-tag-assets-on-ingestion}
 
-Quando [caricate risorse video](add-assets.md#upload-assets) come Cloud Service, i video vengono sottoposti a ![elaborazione](assets/do-not-localize/assetprocessing.png). [!DNL Adobe Experience Manager] Al termine dell&#39;elaborazione, vedere la scheda [!UICONTROL Base] della risorsa [!UICONTROL Proprietà]. I tag avanzati vengono aggiunti automaticamente al video in [!UICONTROL Smart Tags].  Asset compute Service utilizza  Adobe Sensei per creare questi smart tag.
+Quando [caricate risorse video](add-assets.md#upload-assets) in [!DNL Adobe Experience Manager] come [!DNL Cloud Service], i video vengono sottoposti a ![elaborazione](assets/do-not-localize/assetprocessing.png). Al termine dell&#39;elaborazione, vedere la scheda [!UICONTROL Base] della risorsa [!UICONTROL Proprietà]. I tag avanzati vengono aggiunti automaticamente al video in [!UICONTROL Smart Tags].  Asset compute Service utilizza  Adobe Sensei per creare questi smart tag.
 
 ![I tag avanzati vengono aggiunti ai video e visualizzati nella scheda Base delle proprietà della risorsa](assets/smart-tags-added-to-videos.png)
 
@@ -106,7 +106,7 @@ Per rifiutare la generazione automatica di smart tag video per le risorse carica
 
 La soglia predefinita per i tag azione e oggetto in [!DNL Adobe Experience Manager] è 0,7 (il valore deve essere compreso tra 0 e 1). Se alcune risorse video non dispongono di tag specifici, significa che l’algoritmo è sicuro di meno del 70% nei tag previsti. La soglia predefinita potrebbe non essere sempre ottimale per tutti gli utenti. È quindi possibile modificare il valore del punteggio di confidenza nella configurazione OSGI.
 
-Per aggiungere la configurazione OSGI del punteggio di confidenza al progetto distribuito in [!DNL Adobe Experience Manager] come Cloud Service tramite Cloud Manager:
+Per aggiungere la configurazione OSGI del punteggio di confidenza al progetto distribuito in [!DNL Adobe Experience Manager] come [!DNL Cloud Service] fino a [!DNL Cloud Manager]:
 
 * Nel progetto [!DNL Adobe Experience Manager] (`ui.config` a partire da Archetype 24 o in precedenza `ui.apps`) la configurazione `config.author` OSGi include un file di configurazione denominato `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` con i seguenti contenuti:
 
