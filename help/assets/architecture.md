@@ -1,5 +1,5 @@
 ---
-title: Architettura [!DNL Assets]
+title: Architettura di [!DNL Assets]
 description: Architettura di Adobe Experience Manager Assets come Cloud Service
 contentOwner: AG
 translation-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 7%
 ---
 
 
-# Architecture of Assets as a Cloud Service solution {#assets-architecture}
+# Architettura delle risorse come soluzione di Cloud Service {#assets-architecture}
 
  AEM Assets come Cloud Service è basato su Adobe Experience Manager e si paragona bene con l&#39;offerta più recente  Experience Manager 6.5. L&#39;offerta di Cloud Service è dotata di un&#39;architettura e di funzionalità regolate che offrono un servizio nativo basato sul cloud. Le modifiche apportate all&#39;architettura sottostante non consentono a tutte  funzionalità dell&#39;Experience Manager 6.5 di far parte del Cloud Service.
 
-Per una panoramica dell’architettura dei microservizi per risorse, consultate questa panoramica [sui microservizi per](asset-microservices-overview.md#asset-microservices-architecture)risorse.
+Per una panoramica dell&#39;architettura dei microservizi per risorse, consultate questa [panoramica dei microservizi per risorse](asset-microservices-overview.md#asset-microservices-architecture).
 
 >[!MORELIKETHIS]
 >
