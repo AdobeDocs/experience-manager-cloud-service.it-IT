@@ -10,7 +10,7 @@ ht-degree: 73%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.7.0 {#release-notes}
+# Note sulla versione per Cloud Manager in Adobe Experience Manager come Cloud Service 2020.7.0 {#release-notes}
 
 In questa pagina sono delineate le Note sulla versione di Marketing Cloud Manager in AEM come Cloud Service 2020.7.0.
 
@@ -33,7 +33,7 @@ La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.7.0 è il 0
 * Sono ora supportati i repository privati con binding di autenticazione.
 
 * Il contenitore di build di Cloud Manager ora supporta sia Java 8 che Java 11.
-Per ulteriori informazioni, consultate [Utilizzo del supporto](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) Java 11.
+Per ulteriori informazioni, fare riferimento a [Utilizzo del supporto per Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
 ### Correzioni di bug {#bug-fixes-cm}
 
