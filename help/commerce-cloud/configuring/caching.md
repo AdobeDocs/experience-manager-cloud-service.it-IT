@@ -64,4 +64,4 @@ Con il caching basato su TTL, uno sviluppatore definisce in genere una o più du
 
 - [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Configurazione della cache per GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
