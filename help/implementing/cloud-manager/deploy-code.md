@@ -21,9 +21,9 @@ Dopo aver configurato la pipeline di produzione (repository, ambiente e ambiente
    ![](assets/deploy-code1.png)
 
 
-1. Viene visualizzata la schermata **Esecuzione** tubazione.
+1. Viene visualizzata la schermata **Esecuzione tubazione**.
 
-   Fate clic su **Genera** per avviare il processo.
+   Fare clic su **Build** per avviare il processo.
 
    ![](assets/deploy-code2.png)
 
@@ -42,8 +42,8 @@ Dopo aver configurato la pipeline di produzione (repository, ambiente e ambiente
    La **distribuzione della fase** prevede i seguenti passaggi:
 
    * Convalida: Questo passaggio assicura che la pipeline sia configurata per utilizzare le risorse attualmente disponibili, ad esempio che il ramo configurato esiste, gli ambienti sono disponibili.
-   * Build e unit test: Questo passaggio esegue un processo di compilazione containerizzato. Per informazioni dettagliate sull&#39;ambiente di [generazione, consultate Dettagli](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) sull&#39;ambiente di generazione.
-   * Scansione del codice: Questo passaggio valuta la qualità del codice dell’applicazione. Per informazioni dettagliate sul processo di verifica, consultate Test [della qualità del](/help/implementing/cloud-manager/code-quality-testing.md) codice.
+   * Build e unit test: Questo passaggio esegue un processo di compilazione containerizzato. Per informazioni dettagliate sull&#39;ambiente di generazione, vedere [Dettagli sull&#39;ambiente di generazione](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md).
+   * Scansione del codice: Questo passaggio valuta la qualità del codice dell’applicazione. Per informazioni dettagliate sul processo di verifica, vedere [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md).
    * Genera immagini: Questo passaggio include un file di registro dal processo utilizzato per creare le immagini. Questo processo è responsabile della trasformazione dei pacchetti di contenuti e dispatcher prodotti dalla fase di creazione in immagini Docker e configurazione Kubernetes.
    * Distribuisci nello stage
 
@@ -51,13 +51,13 @@ Dopo aver configurato la pipeline di produzione (repository, ambiente e ambiente
    La **prova della fase** prevede i seguenti passaggi:
 
    * Test funzionale del prodotto: Le esecuzioni della pipeline di Cloud Manager supporteranno l&#39;esecuzione di test che vengono eseguiti nell&#39;ambiente del passaggio.
-Per ulteriori informazioni, consulta Test [delle funzionalità del](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) prodotto.
+Per ulteriori informazioni, fare riferimento a [Test funzionale del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing).
 
    * Test funzionale personalizzato: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita.\
-      Per ulteriori informazioni, consultate Test [funzionale](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) personalizzato.
+      Per ulteriori informazioni, fare riferimento a [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
 
    * Audit esperienza: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Durante l&#39;esecuzione di una pipeline di produzione, viene inclusa una fase di controllo dell&#39;esperienza dopo il test funzionale personalizzato che eseguirà i controlli. Le pagine configurate verranno inviate al servizio e valutate. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e la modifica tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se esiste una regressione che verrà introdotta con la distribuzione corrente.
-Per ulteriori informazioni, consultate [Informazioni sui risultati](/help/implementing/cloud-manager/experience-audit-testing.md) di Experience Audit.
+Per ulteriori informazioni, fare riferimento a [Informazioni sui risultati di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
       ![](assets/testing-tab.png)
 
@@ -94,7 +94,7 @@ Quando Cloud Manager si distribuisce su topologie non di produzione, l&#39;obiet
 
    1. Le configurazioni correnti vengono sottoposte a backup e copiate in una posizione temporanea
    1. Tutte le configurazioni vengono eliminate tranne i file immutabili. Per ulteriori informazioni, consulta Gestione delle configurazioni del dispatcher. In questo modo le directory vengono cancellate per evitare che vengano lasciati indietro i file orfani.
-   1. L&#39;artifact viene estratto nella `httpd` directory.  I file immutabili non vengono sovrascritti. Eventuali modifiche apportate ai file immutabili nel repository git verranno ignorate al momento della distribuzione.  Questi file sono fondamentali per il framework del dispatcher AMS e non possono essere modificati.
+   1. L&#39;artifact viene estratto nella directory `httpd`.  I file immutabili non vengono sovrascritti. Eventuali modifiche apportate ai file immutabili nel repository git verranno ignorate al momento della distribuzione.  Questi file sono fondamentali per il framework del dispatcher AMS e non possono essere modificati.
    1. Apache esegue un test di configurazione. Se non viene rilevato alcun errore, il servizio viene ricaricato. Se si verifica un errore, le configurazioni vengono ripristinate dal backup, il servizio viene ricaricato e l&#39;errore viene riportato a Cloud Manager.
    1. Ogni percorso specificato nella configurazione della pipeline viene invalidato o scaricato dalla cache del dispatcher.
 
@@ -108,7 +108,7 @@ Quando Cloud Manager si distribuisce su topologie non di produzione, l&#39;obiet
    >
    >È possibile ignorare le modifiche del sistema di bilanciamento del carico nelle implementazioni di sviluppo e fasi, ovvero scollegare e allegare i passaggi sia nelle condotte non di produzione, per gli ambienti di sviluppo, sia nel ciclo di produzione, per gli ambienti di fase.
 
-### Fase di distribuzione {#deployment-production-phase}
+### Fase di produzione {#deployment-production-phase}
 
 Il processo di implementazione nelle topologie di produzione è leggermente diverso per ridurre al minimo l&#39;impatto sui visitatori AEM sito.
 
