@@ -10,7 +10,7 @@ ht-degree: 73%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.3.0 {#release-notes}
+# Note sulla versione per Cloud Manager in Adobe Experience Manager come Cloud Service 2020.3.0 {#release-notes}
 
 In questa pagina sono delineate le Note sulla versione di Marketing Cloud Manager in AEM come Cloud Service 2020.3.0.
 
