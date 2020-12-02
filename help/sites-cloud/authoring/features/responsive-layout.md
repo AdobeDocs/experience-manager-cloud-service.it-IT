@@ -231,8 +231,9 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
    >
    >Nell’esempio in alto le azioni Mobile e Nascondi sono disponibili, perché questo Contenitore di layout è nidificato all’interno di un Contenitore di layout principale.
 
-   * **Scopri componenti** Selezionate i componenti padre per visualizzare la barra degli strumenti delle azioni con la 
-**Opzione Mostra componenti** nascosti. In questo esempio, due componenti sono nascosti.
+   * **Scopri**
+componentiSelezionate i componenti padre per visualizzare la barra degli strumenti delle azioni con 
+**Mostra** componente nascosto. In questo esempio, due componenti sono nascosti.
 
       ![Mostra componenti](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Selezionando l’opzione **Mostra componenti nascosti**, i componenti che sono attualmente nascosti nelle posizioni originali vengono visualizzati in blu.
