@@ -18,8 +18,7 @@ La sezione seguente descrive i tipi di ambiente che un utente può creare e come
 
 Un utente con le autorizzazioni richieste può creare i seguenti tipi di ambiente (entro i limiti di ciò che è disponibile per il tenant specifico).
 
-* **Ambiente**di produzione e fase:
-La produzione e lo stage sono disponibili come due elementi e sono utilizzati a scopo di test e produzione.
+* **Ambiente** di produzione e fase: La produzione e lo stage sono disponibili come due elementi e sono utilizzati a scopo di test e produzione.
 
 * **Sviluppo**: Un ambiente di sviluppo può essere creato a scopo di sviluppo e test e sarà associato solo a condotte non di produzione.
 
@@ -39,10 +38,10 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
 
 ## Aggiunta di un ambiente {#adding-environments}
 
-1. Fate clic su **Aggiungi ambiente** per aggiungere un ambiente. Questo pulsante è accessibile dalla schermata **Ambienti** .
+1. Fare clic su **Aggiungi ambiente** per aggiungere un ambiente. Questo pulsante sarà accessibile dalla schermata **Ambienti**.
    ![](assets/environments-tab.png)
 
-   L&#39;opzione **Aggiungi ambiente** è disponibile anche nella scheda **Ambienti** , se il programma non contiene ambienti.
+   L&#39;opzione **Aggiungi ambiente** è disponibile anche sulla scheda **Ambienti** quando il programma non contiene alcun ambiente.
 
    ![](assets/no-environments.png)
 
@@ -54,11 +53,11 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Durante la creazione di un ambiente, in  Adobe I/O vengono create una o più *integrazioni* . Questi sono visibili agli utenti del cliente che hanno accesso alla  Adobe I/O Console e non devono essere eliminati. Questo viene negato nella descrizione nella  Adobe I/O Console.
+   >Durante la creazione di un ambiente, in  Adobe I/O vengono create una o più *integrazioni*. Questi sono visibili agli utenti del cliente che hanno accesso alla  Adobe I/O Console e non devono essere eliminati. Questo viene negato nella descrizione nella  Adobe I/O Console.
 
    ![](assets/add-environment-image1.png)
 
-1. Fate clic su **Salva** per aggiungere un ambiente con i criteri popolati.  Ora nella schermata *Panoramica* viene visualizzata la scheda da cui è possibile impostare la pipeline.
+1. Fare clic su **Salva** per aggiungere un ambiente con i criteri popolati.  A questo punto, nella schermata *Panoramica* viene visualizzata la scheda da cui è possibile impostare la pipeline.
 
    >[!NOTE]
    >Se non avete ancora impostato la pipeline di non produzione, nella schermata *Panoramica* viene visualizzata la scheda da cui potete creare la pipeline non di produzione.
@@ -66,9 +65,9 @@ La produzione e lo stage sono disponibili come due elementi e sono utilizzati a 
 
 ## Ambiente di visualizzazione {#viewing-environment}
 
-Nella scheda **Ambienti** della pagina Panoramica sono elencati fino a tre ambienti.
+La scheda **Ambienti** nella pagina Panoramica elenca fino a tre ambienti.
 
-1. Fate clic sul pulsante **Mostra tutto** per passare alla pagina di riepilogo **Ambiente** e visualizzare una tabella con un elenco completo degli ambienti.
+1. Selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo **Ambiente** per visualizzare una tabella con un elenco completo degli ambienti.
 
    ![](assets/environment-view-1.png)
 
@@ -85,13 +84,13 @@ Nella scheda **Ambienti** della pagina Panoramica sono elencati fino a tre ambie
 
 Gli aggiornamenti degli ambienti Stage e Produzione vengono gestiti automaticamente da  Adobe.
 
-Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del programma. Se un ambiente non esegue l&#39;ultima versione AEM disponibile al pubblico, lo stato della scheda Ambienti nella Home Screen mostra **AGGIORNAMENTO DISPONIBILE**.
+Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del programma. Se un ambiente non esegue l&#39;ultima versione AEM disponibile al pubblico, lo stato della scheda Ambienti nella Home Screen mostrerà **UPDATE AVAILABLE**.
 
 ![](assets/environ-update.png)
 
 
-L&#39;opzione **Aggiorna** è disponibile dalla scheda **Ambienti** .
-Questa opzione è disponibile anche, se fate clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fate clic su **...** e selezionate **Aggiorna**, come illustrato nella figura seguente:
+L&#39;opzione **Aggiorna** è disponibile dalla scheda **Ambienti**.
+Questa opzione è disponibile anche, se si fa clic su **Dettagli** dalla scheda **Ambienti**. Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fare clic su **...** e selezionare **Aggiorna**, come illustrato nella figura seguente:
 
 ![](assets/environ-update2.png)
 
@@ -103,11 +102,11 @@ Se la pipeline è già stata aggiornata, all&#39;utente viene richiesto di esegu
 
 L&#39;utente con le autorizzazioni necessarie sarà in grado di eliminare un ambiente di sviluppo.
 
-L&#39;opzione **Elimina** è disponibile dal menu a discesa nella scheda **Ambienti** . Fate clic su **...** per un ambiente di sviluppo da eliminare.
+L&#39;opzione **Elimina** è disponibile dal menu a discesa nella scheda **Ambienti**. Fare clic su **...** per un ambiente di sviluppo da eliminare.
 
 ![](assets/environ-delete.png)
 
-L&#39;opzione di eliminazione è disponibile anche, se fate clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fate clic su **...** e selezionate **Elimina**, come illustrato nella figura seguente:
+L&#39;opzione di eliminazione è disponibile anche, se si fa clic su **Details** dalla scheda **Environment**. Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fare clic su **...** e selezionare **Elimina**, come illustrato nella figura seguente:
 
 ![](assets/environ-delete2.png)
 
@@ -118,33 +117,33 @@ L&#39;opzione di eliminazione è disponibile anche, se fate clic su **Dettagli**
 
 ## Gestione dell&#39;accesso {#managing-access}
 
-Selezionate **Gestisci accesso** dal menu a discesa nella scheda **Ambienti** . Potete passare direttamente all’istanza di authoring e gestire l’accesso all’ambiente in uso.
+Selezionare **Gestisci accesso** dal menu a discesa nella scheda **Ambienti**. Potete passare direttamente all’istanza di authoring e gestire l’accesso all’ambiente in uso.
 
-Per ulteriori informazioni, fare riferimento a [Gestione dell&#39;accesso all&#39;istanza](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) Author.
+Per ulteriori informazioni, fare riferimento a [Managing Access to Author Instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) (Gestione dell&#39;accesso all&#39;istanza Author).
 
 ![](assets/environ-access.png)
 
 
 ## Accesso alla console per sviluppatori {#accessing-developer-console}
 
-Selezionate **Developer Console** dal menu a discesa nella scheda **Ambienti** . In questo modo si aprirà una nuova scheda nel browser con la pagina di accesso a **Developer Console**.
+Selezionare **Developer Console** dal menu a discesa nella scheda **Ambienti**. In questo modo si aprirà una nuova scheda nel browser con la pagina di accesso su **Developer Console**.
 
-Solo un utente nel ruolo Sviluppatore avrà accesso alla **Developer Console**. Eccezione per i programmi sandbox, in cui qualsiasi utente con accesso al Programma sandbox di Cloud Manager avrà accesso a **Developer Console**.
+Solo un utente nel ruolo Sviluppatore avrà accesso a **Developer Console**. Eccezione per i programmi sandbox, in cui qualsiasi utente con accesso al Programma sandbox di Cloud Manager avrà accesso a **Developer Console**.
 
-Per ulteriori informazioni, consultate [Sospensione e De-hibernating Sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) .
+Per ulteriori informazioni, fare riferimento a [Ambienti sandbox in sospensione e in sospensione](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
 
 
 ![](assets/environ-devconsole.png)
 
-Questa opzione è disponibile anche, se fate clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato un ambiente, fate clic su **...** e selezionate **Developer Console**.
+Questa opzione è disponibile anche, se si fa clic su **Dettagli** dalla scheda **Ambienti**. Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato un ambiente, fare clic su **...** e selezionare **Developer Console**.
 
-## Login localmente {#login-locally}
+## Login Locale {#login-locally}
 
-Selezionate Login **** locale dal menu a discesa nella scheda **Ambienti** per accedere localmente ad Adobe Experience Manager.
+Selezionare **Accesso locale** dal menu a discesa nella scheda **Ambienti** per accedere localmente ad Adobe Experience Manager.
 
 ![](assets/environ-login-locally.png)
 
-Inoltre, potete accedere localmente dalla pagina di riepilogo **Ambienti** .
+È inoltre possibile accedere localmente dalla pagina di riepilogo **Ambienti**.
 
 ![](assets/environ-login-locally-2.png)
 
