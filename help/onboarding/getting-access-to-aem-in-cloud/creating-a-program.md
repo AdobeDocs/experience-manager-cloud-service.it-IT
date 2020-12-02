@@ -16,7 +16,7 @@ La soluzione nativa del cloud fornisce all&#39;utente le autorizzazioni necessar
 
 Una procedura guidata di creazione del programma chiederà all&#39;utente di inviare i dettagli, a seconda dell&#39;obiettivo dell&#39;utente nella creazione del programma entro i limiti di ciò che è disponibile per il cliente o l&#39;organizzazione specifici.
 
-In caso di accesso a Cloud Manager per la prima volta o se nel tenant non sono presenti programmi, l&#39;utente visualizzerà la schermata **Crea il primo programma** . Se l&#39;utente seleziona *Esc* o fa clic per uscire dalla finestra di dialogo, viene visualizzata la schermata seguente:
+In caso di accesso a Cloud Manager per la prima volta o se nel tenant non sono presenti programmi, l&#39;utente visualizzerà la schermata **Crea il tuo primo programma**. Se l&#39;utente seleziona *Esc* o fa clic fuori dalla finestra di dialogo, viene visualizzata la schermata seguente:
 
 ![](assets/create-program1.png)
 
@@ -28,7 +28,7 @@ A seconda dell&#39;obiettivo dell&#39;utente di creare il programma entro i limi
 ![](assets/create-sandbox.png)
 
 >[!NOTE]
->If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
+>Se un programma esiste già, in alto a destra della pagina di destinazione verrà visualizzato **Aggiungi programma**, come illustrato nella figura riportata di seguito.
 
 ![](assets/create-program-add.png)
 
@@ -36,7 +36,7 @@ A seconda dell&#39;obiettivo dell&#39;utente di creare il programma entro i limi
 
 Per creare un programma sandbox, effettuate le seguenti operazioni:
 
-1. Nella procedura guidata di creazione del programma, selezionate **Imposta una sandbox**. L&#39;utente invia il nome del programma prima di selezionare **Crea**.
+1. Nella procedura guidata di creazione del programma, selezionare **Imposta una sandbox**. L&#39;utente invia il nome del programma prima di selezionare **Crea**.
 
    ![](assets/create-sandbox.png)
 
@@ -44,16 +44,16 @@ Per creare un programma sandbox, effettuate le seguenti operazioni:
 
    ![](assets/program-create-setupdemo2.png)
 
-1. Una volta completata la configurazione del programma e la fase di creazione del progetto, l&#39;utente può accedere al collegamento **Gestisci Git** , come illustrato nella figura seguente:
+1. Al termine della configurazione del programma e della fase di creazione del progetto, l&#39;utente può accedere al collegamento **Manage Git**, come illustrato nella figura seguente:
 
    ![](assets/create-program4.png)
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sull’accesso e la gestione del repository Git tramite Gestione account Git self-service dall’interfaccia utente di Cloud Manager, consultate [Accesso a Git](/help/implementing/cloud-manager/accessing-git.md).
+   >Per ulteriori informazioni sull&#39;accesso e la gestione dell&#39;archivio Git tramite Gestione account Git self-service dall&#39;interfaccia utente di Cloud Manager, consultare [Accesso a Git](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. Una volta creato l&#39;ambiente di sviluppo, l&#39;utente può **accedere AEM** collegamento, come illustrato nella figura seguente:
+1. Una volta creato l&#39;ambiente di sviluppo, l&#39;utente può accedere al collegamento **AEM**, come illustrato nella figura seguente:
 
    ![](assets/create-program-5.png)
 
@@ -68,7 +68,7 @@ Per creare un programma sandbox, effettuate le seguenti operazioni:
 
 ## Eliminazione di un programma sandbox {#delete-sandbox-program}
 
-A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
+Un utente del programma sandbox in *Business Owner* o *Deployment Manager* ruolo in Cloud Manager può eliminare il proprio ambiente di produzione e fase impostato tramite l&#39;interfaccia utente di Cloud Manager.
 
 >[!NOTE]
 >Selezionando l’opzione Elimina in Produzione o Stage, viene eliminato anche l’altro nel set.
@@ -79,18 +79,18 @@ L’opzione Elimina è disponibile dalla pagina di destinazione, come illustrato
 
 Oppure,
 
-Selezionate **Elimina programma** dalla pagina Panoramica **** programma per eliminare il programma sandbox.
+Selezionare **Elimina programma** dalla pagina **Panoramica programma** per eliminare il programma sandbox.
 
 ![](assets/delete-sandbox2.png)
 
 
 ## Creazione di un programma regolare {#create-regular-program}
 
-Un programma *Regolare* è destinato a un utente che ha familiarità con AEM e Cloud Manager ed è pronto per iniziare a scrivere, creare e testare il codice con l&#39;obiettivo di distribuirlo in Produzione.
+Un programma *Regular* è destinato a un utente che ha familiarità con AEM e Cloud Manager ed è pronto per iniziare a scrivere, creare e testare il codice con l&#39;obiettivo di distribuirlo in Produzione.
 
 Per creare un programma regolare, effettuate le seguenti operazioni:
 
-1. Selezionate **Imposta per produzione** nella procedura guidata Crea programma per creare un programma regolare. L&#39;utente può accettare il nome predefinito del programma o modificarlo prima di selezionare **Continua**.
+1. Selezionare **Imposta per produzione** nella procedura guidata Crea programma per creare un programma regolare. L&#39;utente può accettare il nome predefinito del programma o modificarlo prima di selezionare **Continue**.
 
    ![](assets/create-prod1.png)
 
@@ -104,11 +104,11 @@ Per creare un programma regolare, effettuate le seguenti operazioni:
 
    ![](assets/set-up-prod2.png)
 
-1. Dopo aver selezionato le soluzioni, fate clic su **Crea**.
+1. Dopo aver selezionato le soluzioni, fare clic su **Crea**.
 
    ![](assets/set-up-prod3.png)
 
-1. Dopo aver visualizzato la scheda del programma sulla pagina di destinazione, passa il mouse sull&#39;icona Cloud Manager per passare alla pagina **Panoramica** di Cloud Manager.
+1. Dopo aver visualizzato la scheda del programma sulla pagina di destinazione, passa il mouse sull&#39;icona di Cloud Manager per passare alla pagina di Cloud Manager **Overview**.
 
    ![](assets/set-up-prod4.png)
 
@@ -118,7 +118,7 @@ Per creare un programma regolare, effettuate le seguenti operazioni:
 
    >[!NOTE]
    >
-   >A regular program does not have **Auto-setup** feature.
+   >Un programma normale non ha la funzione **Configurazione automatica**.
 
 
 
