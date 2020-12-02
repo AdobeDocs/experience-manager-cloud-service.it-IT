@@ -61,7 +61,7 @@ Per ulteriori dettagli, consulta [Struttura consigliata dei pacchetti](https://d
 
 Durante lo sviluppo su AEM as a Cloud Service, considera anche alcune linee guida di sviluppo aggiuntive. Per ulteriori informazioni, consulta [Linee guida per lo sviluppo per AEM as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/development-guidelines.html).
 
-Nella fase di pianificazione, avrai stilato un elenco di aree che richiedono il refactoring affinché siano compatibili con Cloud Service. È inoltre necessario esaminare le [Linee guida per lo sviluppo](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/development-guidelines.html) per ulteriori dettagli su come effettuare il refactoring del codice e ottimizzarlo per il passaggio a Cloud Service.
+Nella fase di pianificazione, avrai stilato un elenco di aree che richiedono il refactoring affinché siano compatibili con Cloud Service. È inoltre necessario esaminare le [Linee guida per lo sviluppo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) per ulteriori dettagli su come effettuare il refactoring del codice e ottimizzarlo per il passaggio a Cloud Service.
 
 Per accelerare alcune delle attività di refactoring del codice, puoi utilizzare i seguenti strumenti:
 
