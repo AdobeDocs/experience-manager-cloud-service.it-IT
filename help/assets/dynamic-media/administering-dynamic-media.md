@@ -10,9 +10,9 @@ ht-degree: 3%
 ---
 
 
-# Setting Up Dynamic Media {#setting-up-dynamic-media}
+# Impostazione di contenuti multimediali dinamici {#setting-up-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) consente di gestire le risorse distribuendo su richiesta risorse di marketing e merchandising visivi avanzate, ridimensionate automaticamente per essere utilizzate sui siti Web, mobili e social. Utilizzando una serie di risorse primarie, Dynamic Media genera e offre diverse varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Mediaconsente di gestire le risorse distribuendo su richiesta risorse di marketing e merchandising visivi avanzate, ridimensionate automaticamente per essere utilizzate sui siti Web, mobili e social. Utilizzando una serie di risorse primarie, Dynamic Media genera e offre diverse varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
