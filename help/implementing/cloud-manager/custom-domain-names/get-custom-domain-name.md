@@ -17,4 +17,4 @@ ht-degree: 0%
 >[!NOTE]
 >Cloud Manager non è un registrar di nomi di dominio e non fornisce servizi DNS.
 
-Il DNS è ciò che ci permette di avere domini personalizzati con marchio collegati a siti Web traducendo indirizzi computer leggibili da computer, come `184.33.123.64` ad esempio indirizzi memorabili come `www.wknd.com`.
+Il DNS è ciò che ci permette di avere domini personalizzati con marchio collegati a siti Web traducendo indirizzi computer leggibili da computer, come `184.33.123.64` in indirizzi memorabili come `www.wknd.com`.
