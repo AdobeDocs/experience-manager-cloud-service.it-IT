@@ -29,7 +29,7 @@ Tramite l’**Editor modelli**, gli autori dei modelli possono:
 
 Questo documento spiega come un **autore di modelli** può usare la console e l’editor per creare e gestire modelli modificabili.
 
-For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
+Per informazioni dettagliate sul funzionamento tecnico dei modelli modificabili, consultare il documento sullo sviluppatore [Page Templates](/help/implementing/developing/components/templates.md) per ulteriori informazioni.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Durante la creazione di un nuovo modello modificabile:
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
-È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
+È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. Si tratta di un&#39;attività di amministrazione ed è descritta nel documento [Page Templates](/help/implementing/developing/components/templates.md#template-folders).—>
 
 ### Creazione di un nuovo modello - Autore del modello {#creating-a-new-template-template-author}
 
@@ -114,7 +114,7 @@ Durante la creazione di un nuovo modello modificabile:
 
    >[!NOTE]
    >
-   >I tipi di modello sono layout predefiniti e possono essere pensati come modelli per un modello. Questi sono predefiniti dagli sviluppatori o dall’amministratore di sistema. More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
+   >I tipi di modello sono layout predefiniti e possono essere pensati come modelli per un modello. Questi sono predefiniti dagli sviluppatori o dall’amministratore di sistema. Ulteriori informazioni sono disponibili nel documento sviluppatore [Modelli di pagina](/help/implementing/developing/components/templates.md#template-type).—>
 
 1. Completa i **Dettagli modello**:
 
@@ -127,7 +127,7 @@ Durante la creazione di un nuovo modello modificabile:
    >
    >Quando viene creato un nuovo modello, questo viene contrassegnato come **Bozza** nella console, a indicare che non è ancora disponibile per l’uso da parte degli autori di pagine.
 
-### Definizione delle proprietà del modello - Autore del modello   {#defining-template-properties-template-author}
+### Definizione delle proprietà del modello - Autore del modello    {#defining-template-properties-template-author}
 
 Un modello può avere le seguenti proprietà:
 
@@ -162,7 +162,7 @@ Per definire la miniatura del modello:
    * Se non è soddisfacente, tocca o fai clic su **Cancella** per caricare un’altra immagine o rigenerare l’anteprima.
 1. Una volta ottenuta la miniatura desiderata, tocca o fai clic su **Salva e chiudi**.
 
-### Abilitazione e autorizzazione di un modello - Autore del modello   {#enabling-and-allowing-a-template-template-author}
+### Abilitazione e autorizzazione di un modello - Autore del modello    {#enabling-and-allowing-a-template-template-author}
 
 Per poter utilizzare un modello quando si crea una pagina, è necessario svolgere le seguenti operazioni:
 
@@ -204,7 +204,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
    >Se l’elenco dei **Modelli consentiti** viene lasciato vuoto, l’albero viene asceso fino a quando non viene trovato un valore o un elenco.
    >
    >
-   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >Vedere [Disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability) - i principi per i modelli consentiti restano invariati.
 
 1. Fai clic su **Salva** per salvare le modifiche alle proprietà della pagina.
 
@@ -221,7 +221,7 @@ Poiché al modello viene fatto riferimento quando viene eseguito il rendering di
 1. Seleziona **Criteri per contenuto** da pubblicare in tandem.
 1. Seleziona **Pubblica** nella barra degli strumenti per completare l’azione.
 
-## Modifica dei modelli - Autori dei modelli   {#editing-templates-template-authors}
+## Modifica dei modelli - Autori dei modelli    {#editing-templates-template-authors}
 
 Quando si crea o si modifica un modello, è possibile definire vari aspetti. La modifica dei modelli è simile alla creazione delle pagine.
 
@@ -527,7 +527,7 @@ Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **
 >
 >Il contenuto iniziale è destinato alla preparazione dei componenti e del layout di pagina che fungono da punto di partenza per la creazione dei contenuti. Non è inteso come contenuto effettivo da mantenere così com’è. Per questo motivo, non può essere tradotto.
 >
->Per includere nel modello il testo traducibile, ad esempio nelle intestazioni o nei piè di pagina, puoi utilizzare le funzioni di [localizzazione dei componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/get-started/localization.html).
+>Per includere nel modello il testo traducibile, ad esempio nelle intestazioni o nei piè di pagina, puoi utilizzare le funzioni di [localizzazione dei componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
 
 ### Modifica di un modello - Layout - Autore del modello {#editing-a-template-layout-template-author}
 
@@ -616,7 +616,7 @@ L’opzione **Proprietà pagina iniziale** consente di definire le [proprietà d
 
 1. Conferma le definizioni con **Fine**.
 
-## Best practice   {#best-practices}
+## Best practice    {#best-practices}
 
 Quando si creano modelli, è necessario considerare i seguenti aspetti:
 
