@@ -23,7 +23,7 @@ I test funzionali di prodotto sono una serie di test di integrazione HTTP (IT) s
 
 I test funzionali del prodotto vengono eseguiti automaticamente ogni volta che un cliente distribuisce il nuovo codice a Cloud Manager e non può essere ignorato.
 
-Per i test di [funzionalità dei](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) prodotti, fare riferimento a Testdi funzionalità dei prodotti.
+Per i test di esempio, fare riferimento a [Test funzionali del prodotto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke).
 
 ## Test funzionale personalizzato {#custom-functional-testing}
 
@@ -32,7 +32,7 @@ Il passaggio di test funzionale personalizzato nella pipeline è sempre presente
 Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita.
 
 >[!NOTE]
->Il pulsante **Download Log (Scarica registro)** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Tali registri non includono i registri del processo AEM runtime effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, consultate [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) .
+>Il pulsante **Download Log (Scarica registro)** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Tali registri non includono i registri del processo AEM runtime effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, vedere [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md).
 
 
 ### Scrittura di test funzionali {#writing-functional-tests}
@@ -74,9 +74,9 @@ Inoltre, il JAR deve avere l’intestazione del manifesto di Cloud-Manager-TestT
 
 All&#39;interno di questo file JAR, i nomi delle classi dei test effettivi da eseguire devono terminare con l&#39;IT.
 
-Ad esempio, una classe denominata `com.myco.tests.aem.ExampleIT` viene eseguita ma non viene `com.myco.tests.aem.ExampleTest` eseguita una classe denominata.
+Ad esempio, una classe denominata `com.myco.tests.aem.ExampleIT` viene eseguita ma non una classe denominata `com.myco.tests.aem.ExampleTest`.
 
-Le classi di test devono essere normali test JUnit. L&#39;infrastruttura di test è progettata e configurata per essere compatibile con le convenzioni utilizzate dalla libreria di test dei client Aem-testing. Gli sviluppatori sono invitati a utilizzare questa libreria e a seguire le procedure ottimali. Per ulteriori informazioni, consultate Collegamento [](https://github.com/adobe/aem-testing-clients) Git.
+Le classi di test devono essere normali test JUnit. L&#39;infrastruttura di test è progettata e configurata per essere compatibile con le convenzioni utilizzate dalla libreria di test dei client Aem-testing. Gli sviluppatori sono invitati a utilizzare questa libreria e a seguire le procedure ottimali. Per ulteriori informazioni, fare riferimento a [Collegamento alla griglia](https://github.com/adobe/aem-testing-clients).
 
 ### Esecuzione test locale {#local-test-execution}
 
