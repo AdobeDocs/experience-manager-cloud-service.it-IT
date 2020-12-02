@@ -14,13 +14,13 @@ ht-degree: 2%
 
 L’Editor immagine è un elemento fondamentale di AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
 
-## Unità relative per la mappa immagine {#relative-units-for-image-map}
+## Unità relative per mappa immagine {#relative-units-for-image-map}
 
 L’Editor immagine persiste nelle aree delle mappe immagine sia come unità assolute che come unità relative. Le unità relative sono utili se fornite come attributi di dati per ridimensionare dinamicamente una mappa immagine (relativa alle dimensioni dell’immagine) sul lato client in un componente immagine reattivo.
 
 ### imageMap, proprietà {#imagemap-property}
 
-Le coordinate della mappa immagine vengono memorizzate in JCR come `imageMap` proprietà dall’Editor immagine. Ha il seguente formato.
+Le coordinate della mappa immagine vengono memorizzate in JCR come proprietà `imageMap` dall’Editor immagini. Ha il seguente formato.
 
 Le aree di mappa vengono memorizzate nel modo seguente:
 
@@ -45,13 +45,13 @@ La grafica vettoriale scalabile (SVG) è supportata dall’Editor immagini.
 
 In alcune situazioni le azioni di creazione devono essere limitate per alcuni tipi MIME, a causa della mancanza di supporto nell&#39;elaborazione sul lato server. Ad esempio, la modifica di immagini SVG potrebbe non essere consentita.
 
-I plug-in nell’Editor immagine possono essere attivati selettivamente dal tipo MIME impostando una `supportedMimeTypes` proprietà sul nodo di configurazione del singolo plug-in.
+I plug-in nell&#39;Editor immagine possono essere attivati selettivamente dal tipo MIME impostando una proprietà `supportedMimeTypes` sul nodo di configurazione del singolo plug-in.
 
 ### Esempio {#example}
 
 Ad esempio, è possibile ritagliare solo le immagini GIF, JPEG, PNG, WEBP e TIFF.
 
-La `supportedMimeTypes` proprietà deve quindi essere impostata come una stringa dei tipi MIME consentiti sul nodo di configurazione del plug-in sul `cq:editConfig` nodo del componente immagine.
+La proprietà `supportedMimeTypes` deve quindi essere impostata come una stringa dei tipi MIME consentiti sul nodo di configurazione del plug-in sul nodo `cq:editConfig` del componente immagine.
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 
