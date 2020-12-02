@@ -40,7 +40,7 @@ Per collegare un sito AEM e i componenti core CIF di AEM a una visualizzazione d
 
 3. Crea una configurazione figlio della configurazione di Cloud Service CIF:
 
-   * In AEM go to Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * AEM andare a Strumenti -> Generale -> [Browser di configurazione](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Seleziona la configurazione di base creata.
    * Crea una nuova configurazione seguendo i passaggi descritti al punto 2 precedente.
 
