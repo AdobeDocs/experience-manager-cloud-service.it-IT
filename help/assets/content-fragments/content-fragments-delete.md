@@ -12,7 +12,7 @@ ht-degree: 12%
 
 # Frammenti di contenuto - Considerazioni sull’eliminazione{#content-fragments-delete-considerations}
 
-## Autorizzazioni - Elimina o Non Elimina {#permissions-delete-or-not-delete}
+## Autorizzazioni - Elimina o Non eliminare {#permissions-delete-or-not-delete}
 
 La possibilità di eliminare contenuti è potente, ma potenzialmente sensibile, e molti settori devono limitare e controllare la modalità di distribuzione di tali privilegi.
 
@@ -20,25 +20,25 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 
 1. **Il frammento di contenuto come entità singola.**
 
-   * **Caso** di utilizzo: Utente che deve modificare/aggiornare un frammento di contenuto **ed eliminare un intero frammento**.
-   * **Autorizzazioni**: L&#39;autorizzazione Elimina può essere assegnata tramite Gestione utente e/o gruppo. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **Caso** di utilizzo: Utente che deve modificare/aggiornare un frammento di contenuto  **ed eliminare un intero frammento**.
+   * **Autorizzazioni**: L&#39;autorizzazione Elimina può essere assegnata tramite Gestione utente e/o gruppo.  <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **Più sottoentità che costituiscono un frammento di contenuto; ad esempio, varianti, nodi secondari.**
 
    Il funzionamento di base dell’editor dei frammenti di contenuto richiede che tali sottoelementi transitori possano essere eliminati. Ad esempio, durante la manipolazione delle variazioni; anche durante la modifica dei metadati o la gestione del contenuto associato.
 
-   * **Caso** di utilizzo: Un utente che deve modificare/aggiornare un frammento di contenuto, **senza la possibilità di eliminare un intero frammento**.
-   * **Autorizzazioni**: Consultate [Autorizzazioni necessarie solo](#permissions-required-for-editor-functionality-only)per la funzionalità dell’editor.
+   * **Caso** di utilizzo: Un utente che deve modificare/aggiornare un frammento di contenuto,  **senza la possibilità di eliminare un intero frammento**.
+   * **Autorizzazioni**: Consultate  [Autorizzazioni necessarie solo](#permissions-required-for-editor-functionality-only) per la funzionalità dell’editor.
 
 >[!NOTE]
 >
->When a user does not have any Delete permissions, the Content Fragment editor operates in *read-only* mode. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>Se un utente non dispone di autorizzazioni Elimina, l&#39;editor dei frammenti di contenuto funziona in modalità *sola lettura*. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
 >Vedere anche Come controllare le operazioni di gestione degli utenti in AEM. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
-## Autorizzazioni necessarie solo per la funzionalità Editor {#permissions-required-for-editor-functionality-only}
+## Autorizzazioni necessarie per la sola funzionalità dell&#39;editor {#permissions-required-for-editor-functionality-only}
 
 Dovrai assegnare autorizzazioni specifiche agli utenti che necessitano di modificare/aggiornare un frammento di contenuto, **ma a cui non vuoi consentire di eliminare un intero frammento**, poiché il funzionamento di base dell’Editor frammento di contenuto richiede l’eliminazione di elementi secondari transitori.
 
@@ -56,9 +56,9 @@ Ad esempio, una cartella contenente tutti i frammenti di contenuto, come:
 
 >[!CAUTION]
 >
->È `/content/dam` inoltre possibile impostare le autorizzazioni in quanto tutti i frammenti di contenuto sono memorizzati in questa cartella.
+>È inoltre possibile impostare le autorizzazioni su `/content/dam`, in quanto tutti i frammenti di contenuto sono memorizzati qui.
 >
->Tuttavia, questa azione applica le stesse autorizzazioni di eliminazione anche a *tutti* gli altri tipi di risorse.
+>Tuttavia, questa azione applica le stesse autorizzazioni di eliminazione anche agli altri tipi di risorse *all*.
 
 I prerequisiti per consentire a un utente e/o gruppo specifico di modificare/aggiornare un frammento di contenuto sono:
 
@@ -70,13 +70,13 @@ I prerequisiti per consentire a un utente e/o gruppo specifico di modificare/agg
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* Per il `jcr:content`nodo di tutti i frammenti di contenuto:
+* Per il nodo `jcr:content`di tutti i frammenti di contenuto:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`
+   * `jcr:addChildNodes`,  `jcr:modifyProperties` e  `jcr:removeChildNodes`
 
 * Per tutti i nodi sotto `jcr:content` di tutti i frammenti di contenuto:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
+   * `jcr:addChildNodes`,  `jcr:modifyProperties` e  `jcr:removeChildNodes`,  `jcr:removeNode`
 
 <!-- There is no CRXDE Lite -->
 
