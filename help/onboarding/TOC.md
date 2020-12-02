@@ -43,7 +43,7 @@ ht-degree: 90%
       + [Utilizzo della procedura guidata](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Impostazione del progetto](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Informazioni sull’ambiente di creazione](getting-access-to-aem-in-cloud/build-environment-details.md)
-   + Note sulla versione per Cloud Manager {#release-notes-cloud-manager}
+   + Note sulla versione di Cloud Manager {#release-notes-cloud-manager}
       + [Note sulla versione corrente (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Note sulla versione 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [Note sulla versione 2020.9.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
