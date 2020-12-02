@@ -15,20 +15,20 @@ ht-degree: 7%
 
 Il formato video è una parte fondamentale delle risorse digitali di un&#39;organizzazione. [!DNL Adobe Experience Manager] offre offerte e funzionalità mature per gestire l’intero ciclo di vita delle risorse video dopo la loro creazione.
 
-Scoprite come gestire e modificare le risorse video in [!DNL Adobe Experience Manager Assets]. La codifica e la transcodifica video, ad esempio la transcodifica FFmpeg, è possibile tramite Profili di elaborazione e mediante [!DNL Dynamic Media] integrazione. Senza [!DNL Dynamic Media] licenza, [!DNL Experience Manager] fornisce il supporto di base per i video, ad esempio la transcodifica mediante FFmpeg, l&#39;estrazione delle miniature di anteprima per i formati file supportati e l&#39;anteprima nell&#39;interfaccia utente per i formati supportati per la riproduzione direttamente nel browser.
+Scopri come gestire e modificare le risorse video in [!DNL Adobe Experience Manager Assets]. La codifica e la transcodifica video, ad esempio la transcodifica FFmpeg, è possibile utilizzando Profili di elaborazione e utilizzando l&#39;integrazione [!DNL Dynamic Media]. Senza [!DNL Dynamic Media] licenza, [!DNL Experience Manager] fornisce il supporto di base per i video, ad esempio la transcodifica mediante FFmpeg, l&#39;estrazione di miniature di anteprima per i formati di file supportati e l&#39;anteprima nell&#39;interfaccia utente per i formati supportati per la riproduzione direttamente nel browser.
 
 ## Caricare e visualizzare in anteprima le risorse video {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] genera anteprime per le risorse video con l’estensione MP4. Potete visualizzare l&#39;anteprima delle rappresentazioni nell&#39;interfaccia [!DNL Assets] utente.
+[!DNL Adobe Experience Manager Assets] genera anteprime per le risorse video con l’estensione MP4. Potete visualizzare l&#39;anteprima delle rappresentazioni nell&#39;interfaccia utente [!DNL Assets].
 
 1. Nella cartella o nelle sottocartelle delle risorse digitali, individuate il percorso in cui desiderate aggiungere le risorse digitali.
-1. Per caricare la risorsa, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti e scegliete **[!UICONTROL File]**. In alternativa, trascinare un file nell’interfaccia utente. Per informazioni dettagliate, consultate [caricare le risorse](manage-digital-assets.md#uploading-assets) .
-1. Per visualizzare l&#39;anteprima di un video nella vista a schede, fate clic sull&#39;opzione **[!UICONTROL Riproduci]** ![riproduzione](assets/do-not-localize/play.png) nella risorsa video. Potete mettere in pausa o riprodurre il video solo nella vista a schede. Le opzioni [!UICONTROL Riproduci] e [!UICONTROL Pausa] non sono disponibili nella vista a elenco.
+1. Per caricare la risorsa, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti e scegliete **[!UICONTROL File]**. In alternativa, trascinare un file nell’interfaccia utente. Per informazioni, consultate [caricare risorse](manage-digital-assets.md#uploading-assets).
+1. Per visualizzare l&#39;anteprima di un video nella vista a schede, fate clic sull&#39;opzione **[!UICONTROL Riproduci]** ![Riproduci](assets/do-not-localize/play.png) nella risorsa video. Potete mettere in pausa o riprodurre il video solo nella vista a schede. Le opzioni [!UICONTROL Riproduci] e [!UICONTROL Pausa] non sono disponibili nella vista a elenco.
 1. Per visualizzare l&#39;anteprima del video nella pagina dei dettagli della risorsa, selezionate **[!UICONTROL Modifica]** nella scheda. Il video viene riprodotto nel lettore video nativo del browser. Potete riprodurre, mettere in pausa, controllare il volume e ingrandire il video a schermo intero.
 
 ## Pubblicare risorse video {#publish-video-assets}
 
-Dopo la pubblicazione, potete includere le risorse video in una pagina Web come URL o incorporarle direttamente. Per informazioni dettagliate, consultate [pubblicare risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)per contenuti multimediali dinamici.
+Dopo la pubblicazione, potete includere le risorse video in una pagina Web come URL o incorporarle direttamente. Per informazioni dettagliate, consultate [pubblicare risorse per file multimediali dinamici](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Transcodifica tramite profilo di elaborazione {#transcode-video}
 
@@ -36,19 +36,19 @@ Dopo la pubblicazione, potete includere le risorse video in una pagina Web come 
 
 ![Crea profilo di elaborazione per la transcodifica video in  Experience Manager](assets/video-processing-profile-for-mp4.png)
 
-*Figura: Profilo di elaborazione per la transcodifica video in [!DNL Experience Manager].*
+*Figura: Profilo di elaborazione per la transcodifica video in  [!DNL Experience Manager].*
 
 Se specificate solo larghezza o altezza e lasciate vuoto l’altro campo, le rappresentazioni mantengono le proporzioni. Al momento, per la transcodifica è disponibile solo il codec h264.
 
-Per elaborare le risorse mediante un profilo di elaborazione, aggiungete un profilo a una cartella. Consultate [Utilizzo dei profili di elaborazione per elaborare le risorse](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Per elaborare le risorse mediante un profilo di elaborazione, aggiungete un profilo a una cartella. Consultate [Utilizzare i profili di elaborazione per elaborare le risorse](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ## Annotazione delle risorse video {#annotate-video-assets}
 
-1. Dalla [!DNL Assets] console, selezionate **[!UICONTROL Modifica]** nella scheda della risorsa per visualizzare la pagina dei dettagli della risorsa.
-1. Per riprodurre il video, fate clic su **[!UICONTROL Anteprima]**.
-1. Per annotare il video, fate clic su **[!UICONTROL Annota]**. Un’annotazione viene aggiunta alla data e all’ora specifiche (fotogramma) del video. Durante l&#39;annotazione, è possibile disegnare sul quadro e inserire un commento con il disegno. I commenti vengono salvati automaticamente. Per uscire dalla procedura guidata di annotazione, fate clic su **[!UICONTROL Chiudi]**.
+1. Dalla console [!DNL Assets], selezionate **[!UICONTROL Modifica]** nella scheda delle risorse per visualizzare la pagina dei dettagli delle risorse.
+1. Per riprodurre il video, fare clic su **[!UICONTROL Anteprima]**.
+1. Per annotare il video, fare clic su **[!UICONTROL Annota]**. Un’annotazione viene aggiunta alla data e all’ora specifiche (fotogramma) del video. Durante l&#39;annotazione, è possibile disegnare sul quadro e inserire un commento con il disegno. I commenti vengono salvati automaticamente. Per uscire dalla procedura guidata di annotazione, fare clic su **[!UICONTROL Chiudi]**.
 1. Individua un punto specifico del video, specifica il tempo in secondi nel campo di **testo**, infine fai clic su **Jump (Passa a)**. Ad esempio, per saltare i primi 20 secondi del video, inserisci 20 nel campo di testo.
-1. Per visualizzarlo nella timeline, fate clic su un’annotazione. Per eliminare l’annotazione dalla timeline, fate clic su **[!UICONTROL Elimina]**.
+1. Per visualizzarlo nella timeline, fate clic su un’annotazione. Per eliminare l&#39;annotazione dalla cronologia, fare clic su **[!UICONTROL Elimina]**.
 
 ## Best practice e limitazioni {#tips-limitations}
 
@@ -57,6 +57,6 @@ Per elaborare le risorse mediante un profilo di elaborazione, aggiungete un prof
 
 >[!MORELIKETHIS]
 >
->* [Documentazione](/help/assets/dynamic-media/video.md)video per contenuti multimediali dinamici.
->* [Ulteriori informazioni sull&#39;uso, i tipi e la configurazione dei profili](/help/assets/asset-microservices-configure-and-use.md)di elaborazione.
+>* [Documentazione](/help/assets/dynamic-media/video.md) video per contenuti multimediali dinamici.
+>* [Ulteriori informazioni sull&#39;uso, i tipi e la configurazione dei profili](/help/assets/asset-microservices-configure-and-use.md) di elaborazione.
 
