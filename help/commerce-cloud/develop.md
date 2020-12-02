@@ -32,7 +32,7 @@ Si consiglia di utilizzare un ambiente di sviluppo locale con progetti CIF. Il c
 
 Il componente aggiuntivo CIF viene fornito come archivio di Sling Feature. Il file zip disponibile nel portale di distribuzione software include due file di archivio Sling Feature, uno per l’istanza AEM di authoring e uno per quella di pubblicazione.
 
-**Ti avvicini adesso ad AEM as a Cloud Service?** Consulta [una guida più dettagliata sulla configurazione di un ambiente di sviluppo locale tramite l’AEM come SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)di Cloud Service.
+**Ti avvicini adesso ad AEM as a Cloud Service?** Consulta  [una guida più dettagliata sulla configurazione di un ambiente di sviluppo locale tramite l’AEM come SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) di Cloud Service.
 
 ### Software richiesto
 
@@ -47,7 +47,7 @@ Il componente aggiuntivo CIF viene fornito come archivio di Sling Feature. Il fi
 
 ### Accesso al componente aggiuntivo CIF
 
-Il componente aggiuntivo CIF può essere scaricato come file zip dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html). The zip file contains the CIF add-on as **Sling Feature archive**, it is not an AEM package. L’accesso agli elenchi dell’SDK è limitato a quelli con licenza di AEM as a Cloud Service.
+Il componente aggiuntivo CIF può essere scaricato come file zip dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Il file zip contiene il componente aggiuntivo CIF come **archivio delle funzioni Sling**, non è un pacchetto AEM. L’accesso agli elenchi dell’SDK è limitato a quelli con licenza di AEM as a Cloud Service.
 
 >[!TIP]
 >
@@ -103,13 +103,13 @@ Esempio Mac OSX:
    ```
    L&#39;argomento `--proxyPartial` deve ricevere una stringa vuota.
 
-   È possibile verificare il proxy GraphQL locale puntando uno strumento di query GraphQL a `http://localhost:3002/graphql` e testare alcune query.
+   È possibile testare il proxy GraphQL locale puntando uno strumento di query GraphQL su `http://localhost:3002/graphql` e testare alcune query.
 
 8. Effettua il login a AEM SDK e configura CIF per utilizzare il server proxy GraphQL locale
 
    Andate alla configurazione CIF del Cloud Service (Strumenti > Cloud Services > Configurazione CIF). Aprire la vista delle proprietà della configurazione utilizzata dal progetto.
 
-   Per la `GraphQL Proxy Path` proprietà utilizzare l&#39;endpoint del server proxy locale `http://localhost:3002/graphql`. Salva la configurazione.
+   Per la proprietà `GraphQL Proxy Path` utilizzare l&#39;endpoint del server proxy locale `http://localhost:3002/graphql`. Salva la configurazione.
 
 >[!NOTE]
 >
@@ -187,4 +187,4 @@ Per iniziare a usare Venia Reference Store, è sufficiente clonare l’archivio 
 
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html)
+- [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
