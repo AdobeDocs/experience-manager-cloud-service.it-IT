@@ -12,9 +12,9 @@ ht-degree: 6%
 
 # Componenti di configurazione dei frammenti di contenuto per il rendering{#content-fragments-configuring-components-for-rendering}
 
-Esistono diversi servizi [](#definition-of-advanced-services-that-need-configuration) avanzati relativi al rendering dei frammenti di contenuto. Per utilizzare questi servizi, i tipi di risorse di tali componenti devono essere resi noti al framework dei frammenti di contenuto.
+Esistono diversi [servizi avanzati](#definition-of-advanced-services-that-need-configuration) correlati al rendering dei frammenti di contenuto. Per utilizzare questi servizi, i tipi di risorse di tali componenti devono essere resi noti al framework dei frammenti di contenuto.
 
-Questa operazione viene eseguita configurando il servizio [OSGi - Configurazione](#osgi-service-content-fragment-component-configuration)componente frammento di contenuto.
+Questa operazione viene eseguita configurando il [servizio OSGi - configurazione componente frammento di contenuto](#osgi-service-content-fragment-component-configuration).
 
 Queste informazioni sono necessarie quando:
 
@@ -25,7 +25,7 @@ Si consiglia di utilizzare i componenti core.
 
 >[!CAUTION]
 >
->* **Se non sono necessari i servizi [](#definition-of-advanced-services-that-need-configuration)** avanzati descritti di seguito, puoi ignorare questa configurazione.
+>* **Se non avete bisogno dei  [servizi](#definition-of-advanced-services-that-need-configuration)** avanzati descritti di seguito, potete ignorare questa configurazione.
    >
    >
 * **Quando si estendono o si utilizzano i componenti forniti**, non è consigliabile modificare la configurazione OSGi.
@@ -42,8 +42,8 @@ I servizi che richiedono la registrazione di un componente sono:
 
 * Determinazione corretta delle dipendenze durante la pubblicazione (ad esempio, verificare che frammenti e modelli possano essere pubblicati automaticamente con una pagina se sono stati modificati dall’ultima pubblicazione).
 * Supporto per i frammenti di contenuto nella ricerca full-text.
-* Gestione/gestione del contenuto *intermedio.*
-* Gestione/gestione di risorse *multimediali diverse.*
+* Gestione/gestione di *contenuti intermedi.*
+* Gestione/gestione di *risorse multimediali diverse.*
 * Dispatcher flush per i frammenti di riferimento (se una pagina contenente un frammento viene pubblicata nuovamente).
 * Utilizzo del rendering basato su paragrafo.
 
@@ -51,13 +51,13 @@ Se hai bisogno di una o più di queste funzionalità, in genere è più semplice
 
 ## Servizio OSGi - Configurazione componente frammento di contenuto {#osgi-service-content-fragment-component-configuration}
 
-La configurazione deve essere associata alla configurazione **del componente frammento di** contenuto del servizio OSGi:
+La configurazione deve essere associata al servizio OSGi **Configurazione componente frammento di contenuto**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consultate Configurazione [](/help/implementing/deploying/overview.md#osgi-configuration) OSGi.
+>Per ulteriori informazioni, vedere [Configurazione OSGi](/help/implementing/deploying/overview.md#osgi-configuration).
 
 Esempio:
 
@@ -82,7 +82,7 @@ La configurazione OSGi è:
   <tr>
    <td><strong>Proprietà Reference</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>Nome della proprietà contenente il riferimento al frammento; ad esempio <code>fragmentPath</code> o <code>fileReference</code></td>
+   <td>Nome della proprietà contenente il riferimento al frammento; ad esempio <code>fragmentPath</code> oppure <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Proprietà Element(s)</strong></td>
@@ -97,7 +97,7 @@ La configurazione OSGi è:
  </tbody>
 </table>
 
-Per alcune funzionalità, il componente dovrà rispettare convenzioni predefinite. Nella tabella seguente sono illustrate le proprietà che devono essere definite dal componente per ogni paragrafo (ovvero `jcr:paragraph` per ogni istanza di componente) in modo che i servizi possano rilevarle ed elaborarle correttamente.
+Per alcune funzionalità, il componente dovrà rispettare convenzioni predefinite. Nella tabella seguente sono illustrate le proprietà che devono essere definite dal componente per ciascun paragrafo (es. `jcr:paragraph` per ogni istanza di componente) in modo che i servizi possano rilevarli ed elaborarli correttamente.
 
 <table>
  <thead>
@@ -109,7 +109,7 @@ Per alcune funzionalità, il componente dovrà rispettare convenzioni predefinit
  <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Una proprietà stringa che definisce la modalità di output dei paragrafi in modalità di rendering di <em>un singolo elemento</em>.</p> <p>Valori:</p>
+   <td><p>Una proprietà stringa che definisce la modalità di output dei paragrafi in <em>modalità di rendering a elemento singolo</em>.</p> <p>Valori:</p>
     <ul>
      <li><code>all</code> : per eseguire il rendering di tutti i paragrafi</li>
      <li><code>range</code> : per eseguire il rendering dell'intervallo di paragrafi fornito da <code>paragraphRange</code></li>
@@ -117,16 +117,16 @@ Per alcune funzionalità, il componente dovrà rispettare convenzioni predefinit
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Una proprietà stringa che definisce l'intervallo di paragrafi da restituire se in modalità <em>di rendering a elemento</em>singolo.</p> <p>Formato:</p>
+   <td><p>Una proprietà stringa che definisce l'intervallo di paragrafi da restituire se in <em>modalità di rendering elemento singolo</em>.</p> <p>Formato:</p>
     <ul>
-     <li><code>1</code> o <code>1-3</code> o <code>1-3;6;7-8</code> <code>*-3;5-*</code>
+     <li><code>1</code> oppure <code>1-3</code> o <code>1-3;6;7-8</code> oppure <code>*-3;5-*</code>
      <ul>
        <li><code>-</code> indicatore di gamma</li>
        <li><code>;</code> separatore elenco</li>
        <li><code>*</code> carattere jolly</li>
      </ul>
      </li>
-     <li>valutato solo se <code>paragraphScope</code> impostato su <code>range</code></li>
+     <li>valutato solo se <code>paragraphScope</code> è impostato su <code>range</code></li>
     </ul> </td>
   </tr>
   <tr>
