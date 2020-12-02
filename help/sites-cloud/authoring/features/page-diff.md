@@ -35,7 +35,7 @@ La visualizzazione affiancata delle differenze permette di confrontare:
 
 Consulta i rispettivi argomenti su come avviare la funzione per il rilevamento delle differenze in questi contesti.
 
-### Presentazione delle differenze   {#presentation-of-differences}
+### Presentazione delle differenze    {#presentation-of-differences}
 
 A prescindere dal contenuto, la presentazione delle differenze rimane la stessa.
 
@@ -68,7 +68,7 @@ Nota: il colore dei componenti modificati e spostati è lo stesso.
 >
 >Quando si confrontano le copie per lingua, l’evidenziazione è disattivata poiché in una traduzione tutto cambia.
 
-### Modalità a schermo intero e Uscita   {#fullscreen-and-exiting}
+### Modalità a schermo intero e Uscita    {#fullscreen-and-exiting}
 
 Per concentrarti su un contenuto particolare, fai clic sull’icona schermo intero di entrambi i “lati” a confronto, per ingrandire il contenuto nella finestra del browser a schermo intero.
 
@@ -88,7 +88,7 @@ Per chiudere la visualizzazione a schermo intero, fai clic sull’icona per usci
 
 Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsiasi momento facendo clic sul pulsante Chiudi, nell’intestazione.
 
-## Limiti   {#limitations}
+## Limiti    {#limitations}
 
 Esistono alcune situazioni in cui il confronto delle differenze della pagina non è in grado di rilevare una differenza nel modo previsto.
 
