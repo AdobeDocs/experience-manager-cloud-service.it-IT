@@ -2,9 +2,9 @@
 title: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager].
 description: Aggiungi le risorse digitali a  [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -178,10 +178,6 @@ Per configurare lo strumento, effettuare le seguenti operazioni:
    * [!UICONTROL Interrompi]: Terminare una configurazione attiva.
    * [!UICONTROL Stato] processo: Visualizzare lo stato della configurazione quando viene utilizzata in un processo di importazione in corso o utilizzata per un processo completato.
    * [!UICONTROL Visualizza risorse]: Visualizzate la cartella di destinazione, se esiste.
-
->[!NOTE]
->
->Il caricamento in blocco come parte della migrazione dei contenuti da altri sistemi durante la configurazione e la distribuzione in [!DNL Experience Manager] richiede un&#39;attenta pianificazione, considerazione e scelta degli strumenti. Per informazioni sugli approcci per la migrazione dei contenuti, consultate la [guida alla distribuzione](/help/implementing/deploying/overview.md).
 
 ## Caricare le risorse mediante client desktop {#upload-assets-desktop-clients}
 
