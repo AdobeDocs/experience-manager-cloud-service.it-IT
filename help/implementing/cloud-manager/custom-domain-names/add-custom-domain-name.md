@@ -21,13 +21,14 @@ Per aggiungere un nome di dominio personalizzato in Cloud Manager, un utente dev
 Ogni ambiente Cloud Manager può ospitare fino a un massimo di 50 domini personalizzati per ambiente.
 Lo stesso nome di dominio non può essere utilizzato in più di un ambiente.
 
-## Aggiunta di un nome di dominio personalizzato dalla pagina Impostazioni di dominio {#adding-cdn-settings}
+## Aggiunta di un nome di dominio personalizzato dalla pagina Impostazioni dominio {#adding-cdn-settings}
 
 Per aggiungere un nome di dominio personalizzato dalla pagina Impostazioni dominio, effettuate le seguenti operazioni:
 
 1. Dalla pagina Ambienti passare alla pagina Impostazioni dominio.
 
-1. Selezionate Aggiungi nome di dominio personalizzatoVerrà avviata la procedura guidata di aggiunta del nome di dominio personalizzato INSERT IMAGE
+1. Seleziona Aggiungi nome di dominio personalizzato
+Verrà avviata la procedura guidata di aggiunta del nome di dominio personalizzato INSERT IMAGE
 
 1. Immettere il nome di dominio personalizzato. Nota: Non includete &#39;http://&#39;, &#39;https://&#39; o spazi quando entrate nel vostro dominio.
 
@@ -51,7 +52,7 @@ Seguite le istruzioni fornite per dimostrare la proprietà del dominio per l’a
 1. Passate alla pagina Dettagli ambiente per l’ambiente di interesse.
 1. Utilizzate i campi di input nella parte superiore della tabella Nomi di dominio per inviare il nome di dominio personalizzato, il certificato SSL. Selezionare Aggiungi.
 1. Verrà avviata la procedura guidata Aggiungi nome di dominio personalizzato con il nome di ambiente precompilato.
-1. Immettere il nome di dominio personalizzato. Nota: Non includete `http://`, `https://`né spazi quando entrate nel dominio. Selezionate Continua.
+1. Immettere il nome di dominio personalizzato. Nota: Non includete `http://`, `https://` o spazi quando entrate nel vostro dominio. Selezionate Continua.
 1. Viene visualizzata la schermata Verifica nome dominio per l’ambiente. Fai clic su Verifica dominio (Aggiungi record TXT) per saperne di più. INSERISCI IMMAGINE
 
 Seguite le istruzioni fornite per dimostrare la proprietà del dominio per l’ambiente in uso:
@@ -59,7 +60,7 @@ Seguite le istruzioni fornite per dimostrare la proprietà del dominio per l’a
 1. Selezionate Continua.
 1. La distribuzione CDN richiede un certificato SSL valido e la verifica TXT completata. Questo è indicato dallo stato &quot;Verified and Deployed&quot;.
 
-A questo punto, il vostro nome di dominio personalizzato è pronto per essere testato e `CNAME` puntato. Vai a Stato nome dominio per saperne di più sui vari stati e su come risolvere il problema.
+A questo punto, il vostro nome di dominio personalizzato è pronto per essere testato e un `CNAME` per indicarlo. Vai a Stato nome dominio per saperne di più sui vari stati e su come risolvere il problema.
 
 >[!NOTE]
 >La prova DNS può richiedere fino a poche ore per il riconoscimento, a causa dei ritardi di propagazione DNS. Cloud Manager verificherà la proprietà e aggiornerà lo stato visibile nella tabella Impostazioni dominio. Vai a Controllo del collegamento INSERT del nome di dominio per saperne di più.
