@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# Adobe Experience Manager come Cloud Service Siti pronti per la protezione dei dati e le normative sulla privacy {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager come Cloud Service Siti pronti per le normative sulla protezione dei dati e la privacy dei dati {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,23 +20,23 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Per ulteriori informazioni  Adobe  risposta ai problemi di privacy e ciò che ciò significa per voi in quanto clienti  Adobe, consultate [Adobe Centro](https://www.adobe.com/privacy.html)per la privacy.
+>Per ulteriori informazioni  risposta  Adobe ai problemi di privacy e ciò che ciò significa per voi in quanto clienti  Adobe, vedere [ Adobe Centro per la privacy](https://www.adobe.com/privacy.html).
 
 Adobe Experience Manager come Cloud Service Siti è pronta ad aiutare i clienti a rispettare i loro obblighi in materia di privacy e protezione dei dati. Questa pagina illustra ai clienti le procedure per gestire tali richieste in  AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con il codice.
 
-Per ulteriori informazioni, vedere il Centro [per la privacy](https://www.adobe.com/privacy.html)Adobe.
+Per ulteriori informazioni, vedere il [ Adobe Privacy Center](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta [Adobe Experience Manager come Cloud Service di preparazione per la protezione dei dati e le normative](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) sulla privacy dei dati.
+>Per ulteriori informazioni, vedere [Adobe Experience Manager come Cloud Service di preparazione per le normative sulla protezione dei dati e la privacy dei dati](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 ## Livello di authoring AEM {#aem-author-tier}
 
-Gli account utente e il contenuto UGC sul server di creazione sono trattati nella documentazione [di](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
+Gli account utente e il contenuto UGC sul server di creazione sono trattati nella [documentazione AEM Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 ## Livello di pubblicazione AEM {#aem-publish-tier}
 
-Gli account utente utilizzati per autenticare i visitatori del sito e i contenuti UGC sul server di pubblicazione sono descritti nella documentazione [di](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
+Gli account utente utilizzati per l&#39;autenticazione dei visitatori sul sito e i contenuti UGC sul server di pubblicazione sono descritti nella [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 Per impostazione predefinita,  componenti AEM Sites non memorizzano i dati dei moduli immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terze parti o  Adobe Campaign per un&#39;ulteriore elaborazione.
 
@@ -53,9 +53,9 @@ Per rifiutare:
 1. Accedi a:
    [Centro per la privacy  Adobe - Rifiuto](https://www.adobe.com/privacy/opt-out.html)
 
-1. Scorri verso il basso fino a **Servizi** - **Experience Cloud dati** di utilizzo del servizio.
+1. Scorri verso il basso fino a **Services** - **dati di utilizzo del servizio di Experience Cloud**.
 
-1. Selezionare il collegamento di riferimento; attualmente **con titolo qui**.
+1. Selezionare il collegamento di riferimento; attualmente denominato **here**.
 
 1. Verranno presentati i seguenti dettagli, insieme alle opzioni per rifiutare o accettare:
 
@@ -63,26 +63,26 @@ Per rifiutare:
 
       Se si elimina il cookie di rinuncia, o se si modifica il computer o il browser Web, sarà necessario scegliere di nuovo il rifiuto.
 
-      Rifiuto - Escludi dall’aggregazione e dall’analisi delle sessioni dei visitatori (installa il cookie di `amcglobal.sc.omtrdc.net` rinuncia) - Fai clic qui.
+      Rifiuto - Escludi dall&#39;aggregazione e dall&#39;analisi delle sessioni dei visitatori (installa il cookie `amcglobal.sc.omtrdc.net` di rinuncia) - Fai clic qui.
 
-      Consenso: includi me nell’aggregazione e nell’analisi delle sessioni dei visitatori (non installa il cookie di `amcglobal.sc.omtrdc.net` rinuncia) - Fai clic qui.
+      Consenso: includi l&#39;utente nell&#39;aggregazione e analisi delle sessioni dei visitatori (non installa il `amcglobal.sc.omtrdc.net` cookie di rifiuto) - fai clic qui.
    Segui i passaggi indicati sopra per accedere ai collegamenti effettivi.
 
    >[!NOTE]
    >
-   > C&#39;è un&#39;ulteriore descrizione nel **2. Privacy.** della sezione [Condizioni generali d&#39;uso](https://www.adobe.com/legal/terms.html)del Adobe.
+   > Un&#39;altra descrizione è riportata nella sezione **2. Privacy.** della sezione  [ Condizioni generali d&#39;uso](https://www.adobe.com/legal/terms.html) del Adobe.
 
 ## Analytics Foundation {#analytics-foundation}
 
  AEM Sites include un&#39;integrazione opzionale con Analytics Foundation che utilizza funzionalità all&#39;interno  Adobe Analytics On-demand Service.
 
-Per ulteriori informazioni sulla gestione delle richieste di dati relativi a  Adobe Analytics, consulta [Adobe Analytics e privacy](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)dei dati.
+Per ulteriori informazioni sulla gestione delle richieste di dati relativi a  Adobe Analytics, vedere [ Adobe Analytics and Data Privacy](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
  AEM Sites include un&#39;integrazione opzionale con Personalization Foundation by Target che utilizza funzionalità all&#39;interno  Adobe Target On-demand Service.
 
-Per ulteriori informazioni sulla gestione delle richieste di dati relative a  Adobe Target, consulta [Adobe Target - Privacy e Regolamento](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)generale sulla protezione dei dati.
+Per ulteriori informazioni sulla gestione delle richieste di dati relativi a  Adobe Target, vedere [ Adobe Target - Privacy e Regolamento generale sulla protezione dei dati](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -94,7 +94,7 @@ AEM fornisce un livello dati opzionale con ContextHub. In questo modo i dati spe
 
 Per impostazione predefinita, questi dati visitatore non sono memorizzati in AEM; AEM invia regole al livello dati per prendere decisioni di personalizzazione nel browser.
 
-### Implementazione del consenso/rifiuto {#implementing-opt-in-opt-out}
+### Implementazione consenso/rifiuto {#implementing-opt-in-opt-out}
 
 Il proprietario del sito deve implementare un componente di rinuncia in base alle seguenti linee guida.
 
