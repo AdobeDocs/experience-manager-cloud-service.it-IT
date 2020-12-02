@@ -16,17 +16,17 @@ ht-degree: 7%
 
 Potete accedere e gestire il repository Git utilizzando la gestione dell&#39;account Git self-service dall&#39;interfaccia utente di Cloud Manager.
 
-## Utilizzo della gestione account Git self-service {#self-service-git}
+## Utilizzo di Self-Service Git Account Management {#self-service-git}
 
-Utilizzate il pulsante **Gestisci Git** disponibile nell&#39;interfaccia utente di Cloud Manager, in particolare sulla scheda della pipeline.
+Utilizzate il pulsante **Gestisci Git** disponibile nell&#39;interfaccia di Cloud Manager, in particolare sulla scheda della pipeline.
 
-1. Passate alla pagina Panoramica *del* programma e alla scheda Pipelines.
+1. Passa alla pagina *Panoramica del programma* e alla scheda Pipelines.
 
 1. Verrà visualizzata l&#39;opzione **Gestisci Git** per accedere e gestire il repository Git.
 
    ![](assets/manage-git1.png)
 
-   Inoltre, se si seleziona la scheda **pipeline non produzione** , verrà visualizzata anche l&#39;opzione **Gestisci Git** .
+   Inoltre, se si seleziona la scheda della pipeline **Non produzione**, verrà visualizzata anche l&#39;opzione **Gestisci Git**.
 
    ![](assets/manage-git-new2.png)
 
