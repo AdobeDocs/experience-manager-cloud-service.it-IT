@@ -65,7 +65,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * Un utente del programma sandbox con il ruolo di *Proprietario business* o *Manager implementazione* in Cloud Manager è ora in grado di eliminare l’ambiente di produzione e stage impostato tramite l’interfaccia di Cloud Manager. L’opzione di eliminazione è ora disponibile sia nella scheda Ambiente nella pagina **Panoramica dei programmi**, sia nella pagina **Ambienti**. Selezionando l’opzione Elimina in Produzione o Stage, viene eliminato anche l’altro nel set.
 
-   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Delle descrizioni sulla pagina di destinazione forniscono all’utente istruzioni di base sulla navigazione.
 
