@@ -14,9 +14,9 @@ ht-degree: 78%
 
 I flussi di lavoro per progetti disponibili includono i seguenti:
 
-* **Flusso** di lavoro di approvazione del progetto: questo flusso di lavoro consente di assegnare contenuti a un utente, rivedere e quindi approvare.
-* **Richiedi lancio** - Un flusso di lavoro per il quale viene richiesto un avvio.
-* **Richiedi pagina** di destinazione - Questo flusso di lavoro richiede una pagina di destinazione.
+* **Flusso**  di lavoro di approvazione del progetto: consente di assegnare contenuti a un utente, di rivederli e quindi di approvarli.
+* **Richiedi lancio**  - Un flusso di lavoro per il quale viene richiesto un avvio.
+* **Richiedi pagina**  di destinazione: questo flusso di lavoro richiede una pagina di destinazione.
 * **Richiedi e-mail**: flusso di lavoro per la richiesta di un’e-mail.
 * **Crea e traduci copia DAM e Crea copia per lingua DAM:** consentono di creare dati binari, metadati ed etichette tradotti per risorse e cartelle.
 
@@ -35,7 +35,7 @@ A seconda del modello di progetto selezionato, hai determinati flussi di lavoro 
 
 >[!NOTE]
 >
->&amp;ast; These workflows are not started from the **Workflow** tile in Projects. Consulta Creazione di copie per lingua per le risorse.
+>&amp;ast; Questi flussi di lavoro non vengono avviati dalla sezione **Flusso di lavoro** in Progetti. Consulta Creazione di copie per lingua per le risorse.
 <!--
 >&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
 -->
@@ -69,7 +69,7 @@ Questo flusso di lavoro consente di richiedere un manoscritto ad un utente, e po
 
 Nel flusso di lavoro di approvazione progetto, assegni i contenuti ad un utente, li revisioni e poi li approvi.
 
-1. In your Simple project, select the **`+`** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. Nel progetto Semplice, seleziona il simbolo **`+`** nella sezione **Flussi di lavoro**, quindi **Flusso di lavoro approvazione progetto**.
 1. Inserisci un titolo e seleziona la persona a cui affidare il compito dall&#39;elenco Team. Se necessario, puoi aggiungere una descrizione, il percorso del contenuto, impostare la priorità e la scadenza.
 
    ![Richiesta approvazione](/help/sites-cloud/authoring/assets/projects-approval.png)
@@ -87,7 +87,7 @@ Questo flusso di lavoro consente di richiedere un lancio.
 
    ![Richiesta avvio](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. Fai clic su **Crea**. Il flusso di lavoro inizia. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
+1. Fai clic su **Crea**. Il flusso di lavoro inizia. Il flusso di lavoro viene visualizzato nell&#39;elenco **Flussi di lavoro** (fare clic su ellissi **...** nella sezione **Flussi di lavoro** per accedere all&#39;elenco).
 
 ## Flusso di lavoro Crea (e traduci) copia per lingua per le risorse {#create-and-translate-language-copy-workflow-for-assets}
 
