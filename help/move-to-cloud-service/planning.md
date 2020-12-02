@@ -46,7 +46,7 @@ Il primo passaggio nella fase di pianificazione consiste nel valutare il grado d
 
 Dovrai effettuare una valutazione completa del codice sorgente AEM corrente rispetto alle modifiche di rilievo e alle funzioni obsolete, al fine di determinare quanto lavoro richiede il percorso di transizione.
 
-Per accelerare il passo di valutazione, eseguite Best Practices Analyzer sulla versione corrente AEM. Per ulteriori dettagli, consulta [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+Per accelerare il passo di valutazione, eseguite Best Practices Analyzer sulla versione corrente AEM. Per ulteriori dettagli, fare riferimento a [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Se disponi già dell’accesso a Cloud Manager e a un ambiente Cloud Service, è consigliabile eseguire il codice corrente in una pipeline di qualità del codice di Cloud Manager per valutare la compatibilità delle modifiche del codice necessarie con Cloud Service.
