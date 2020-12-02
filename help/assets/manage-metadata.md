@@ -4,9 +4,9 @@ description: Scoprite i tipi di metadati e come  [!DNL Adobe Experience Manager 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1930'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Risorse Enterprise Manager consente di modificare i metadati di più risorse con
 
 ## Metadati personalizzati utilizzando il profilo di elaborazione {#metadata-compute-service}
 
-Le risorse come Cloud Service possono generare metadati personalizzati per una risorsa utilizzando i servizi nativi cloud. Configurate un profilo di elaborazione per generare metadati personalizzati. Vedere [come utilizzare il profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Le risorse come [!DNL Cloud Service] possono generare metadati personalizzati per una risorsa utilizzando i servizi nativi cloud. Configurate un profilo di elaborazione per generare metadati personalizzati. Vedere [come utilizzare il profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Rappresentazione dei metadati nel profilo di elaborazione](assets/processing-profile-metadata.png)
 
