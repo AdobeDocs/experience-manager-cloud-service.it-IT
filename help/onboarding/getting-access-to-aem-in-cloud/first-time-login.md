@@ -24,7 +24,7 @@ Dopo aver eseguito l&#39;accesso a [!UICONTROL Cloud Manager], verrà visualizza
 
 >[!NOTE]
 >
->I programmi che si trovano sul Cloud Service sono indicati dal sottotitolo **Experience Manager Cloud** (invece di **Experience Manager programmi** AMS), come mostrato di seguito.
+>I programmi che si trovano sul Cloud Service sono indicati dal sottotitolo **Experience Manager Cloud** (a differenza di **Experience Manager** per i programmi AMS), come mostrato di seguito.
 
 ![](assets/first_timelogin1.png)
 
@@ -45,15 +45,15 @@ La pagina di destinazione vi invita a creare il primo programma, come illustrato
 ## Aggiunta di un nuovo programma in un Cloud Service con programmi esistenti {#existing-program}
 
 
-1. Accedete al **Adobe [!UICONTROL Experience Cloud]** e visualizzerete l&#39;elenco di **Programmi e prodotti**.
+1. Accedete al Adobe **[!UICONTROL  Experience Cloud]** e verrà visualizzato l&#39;elenco **Programmi e prodotti**.
 
    ![](assets/first_timelogin1.png)
 
-   I programmi che si trovano sul Cloud Service sono indicati dal sottotitolo **Experience Manager Cloud** (invece di **Experience Manager programmi** AMS).
+   I programmi che si trovano sul Cloud Service sono indicati dal sottotitolo **Experience Manager Cloud** (invece di **Experience Manager** per i programmi AMS).
 
    >[!NOTE]
-   >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
+   >Ad esempio, nella figura precedente, **We.Retail Global** è un programma AMS e **We.Retail-Prod Program - Prod** è un programma disponibile tramite Cloud Service.
 
-1. Per informazioni su come aggiungere un programma dalla schermata **Programmi e prodotti** per creare un nuovo programma in Cloud Service, vedere [Creazione di un programma](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
+1. Per informazioni su come aggiungere un programma dalla schermata **Programmi e prodotti** per creare un nuovo programma in Cloud Service fare riferimento a [Crea un programma](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
 
 
