@@ -181,7 +181,7 @@ Per modificare la pagina:
    >
    >Per spostarsi mediante i collegamenti presenti nel contenuto, è necessario utilizzare la [modalità Anteprima](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
 
-### Modifica delle proprietà pagina   {#editing-the-page-properties}
+### Modifica delle proprietà pagina    {#editing-the-page-properties}
 
 Esistono due metodi (principali) per [modificare le proprietà di pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md):
 
@@ -233,7 +233,7 @@ Esistono due metodi principali per [pubblicare una pagina](/help/sites-cloud/aut
 
    Per ulteriori informazioni, consulta [Pubblicazione di pagine](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages).
 
-### Spostamento, utilizzo di Copia e Incolla o eliminazione della pagina   {#move-copy-and-paste-or-delete-your-page}
+### Spostamento, utilizzo di Copia e Incolla o eliminazione della pagina    {#move-copy-and-paste-or-delete-your-page}
 
 Queste azioni possono essere attivate da:
 
@@ -284,7 +284,7 @@ Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
 
 1. Tocca/fai clic sul tipo di riferimento richiesto per visualizzare maggiori dettagli e (se necessario) eseguire ulteriori azioni.
 
-### Creazione di una versione della pagina   {#creating-a-version-of-your-page}
+### Creazione di una versione della pagina    {#creating-a-version-of-your-page}
 
 Per creare una [versione](/help/sites-cloud/authoring/features/page-versions.md) di una pagina:
 
