@@ -57,7 +57,7 @@ La navigazione globale presenta due pannelli, rappresentati da icone sul lato si
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
 
-### Pannello di navigazione  {#navigation-panel}
+### Pannello di navigazione   {#navigation-panel}
 
 Pannello di navigazione:
 
@@ -206,7 +206,7 @@ Sono disponibili diverse risorse di Aiuto:
    >* [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
-## Barra delle azioni  {#actions-toolbar}
+## Barra delle azioni   {#actions-toolbar}
 
 Ogni volta che selezioni una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo descrittivo nella barra degli strumenti. Queste azioni dipendono da:
 
@@ -226,7 +226,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 >
 >Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
-## Azioni rapide  {#quick-actions}
+## Azioni rapide   {#quick-actions}
 
 Nella [Vista a schede](#card-view) alcune azioni sono disponibili come icone di scelta rapida, oltre che dalla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un elemento alla volta ed evitano di dover preselezionare le opzioni.
 
@@ -248,7 +248,7 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 >
 >Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
-### Selezionare le risorse  {#selecting-resources}
+### Selezionare le risorse   {#selecting-resources}
 
 La selezione di una specifica risorsa dipende dalla combinazione della vista e del dispositivo utilizzati:
 
@@ -340,7 +340,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](#the-header).
 
-### Vista a elenco  {#list-view}
+### Vista a elenco   {#list-view}
 
 ![Vista a elenco](/help/sites-cloud/authoring/assets/list-view.png)
 
@@ -413,7 +413,7 @@ Mediante il pannello laterale della struttura del contenuto, insieme alla vista 
 >
 >Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
-### Timeline  {#timeline}
+### Timeline   {#timeline}
 
 Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezionata. Per aprire la colonna della timeline, utilizza il selettore della barra a sinistra:
 
