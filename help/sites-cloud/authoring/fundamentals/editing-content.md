@@ -157,7 +157,7 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
 1. Il componente selezionato verrà aggiunto in fondo alla pagina. [Modifica](#edit-content) il componente come preferisci.
 
-### Inserimento di un componente utilizzando il browser Risorse   {#inserting-a-component-using-the-assets-browser}
+### Inserimento di un componente utilizzando il browser Risorse    {#inserting-a-component-using-the-assets-browser}
 
 È possibile aggiungere un nuovo componente alla pagina anche trascinando una risorsa dal [browser Risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Questo determina la creazione automatica di un nuovo componente del tipo appropriato (e che include la risorsa).
 
@@ -270,7 +270,7 @@ Esistono due metodi per aggiungere e/o modificare contenuti nei componenti:
 * Apri la [finestra di dialogo del componente per la modifica](#component-edit-dialog).
 * Per aggiungere direttamente contenuti [trascina una risorsa](#drag-and-drop-assets-into-component) dal browser risorse.
 
-### Finestra di dialogo di modifica del componente   {#component-edit-dialog}
+### Finestra di dialogo di modifica del componente    {#component-edit-dialog}
 
 Puoi aprire un componente per modificarne il contenuto utilizzando l’icona [Modifica (matita) nella barra degli strumenti del componente](#component-toolbar).
 
@@ -394,7 +394,7 @@ Per passare facilmente all’[Editor modelli](/help/sites-cloud/authoring/featur
 
 Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [Vista a colonne](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) o [Vista a elenco](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
 
-## Stato della Live Copy   {#live-copy-status}
+## Stato della Live Copy    {#live-copy-status}
 
 La [modalità di pagina Stato Live Copy](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) consente di visualizzare una panoramica rapida dello stato della live copy e di quali componenti sono ereditati o no:
 
@@ -409,7 +409,7 @@ Esempio:
 
 Le [Annotazioni](/help/sites-cloud/authoring/fundamentals/annotations.md) consentono a revisori e altri autori di fornire un riscontro sui contenuti. Spesso sono utilizzate a scopo di revisione e di convalida.
 
-## Anteprima delle pagine   {#previewing-pages}
+## Anteprima delle pagine    {#previewing-pages}
 
 Esistono due opzioni per visualizzare in anteprima una pagina:
 
