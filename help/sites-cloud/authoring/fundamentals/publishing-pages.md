@@ -55,7 +55,7 @@ A seconda della tua posizione, puoi pubblicare:
 
 >[!NOTE]
 >
-> Per ulteriori possibilità, vedere **Ora** di attivazione e **Ora** di disattivazione nella scheda [Base di Proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> Per ulteriori possibilità, vedere **Ora di attivazione** e **Ora di disattivazione** nella scheda [Proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Pubblicazione dall’editor {#publishing-from-the-editor}
 
@@ -113,7 +113,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 >
 >La pubblicazione rapida è “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
 
-#### Gestisci pubblicazione  {#manage-publication}
+#### Gestisci pubblicazione   {#manage-publication}
 
 **Gestisci pubblicazione** offre più opzioni rispetto alla pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili; consente inoltre di pubblicare la pagina in un secondo momento.
 
@@ -144,7 +144,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    Facendo clic sul pulsante Aggiungi contenuto si avvia il [browser percorsi](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser), che consente di selezionare contenuti.
 
-   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
+   Selezionate le pagine desiderate, quindi fate clic su **Seleziona** per aggiungere il contenuto alla procedura guidata oppure su **Annulla** per annullare la selezione e tornare alla procedura guidata.
 
    Nella procedura guidata puoi selezionare un elemento nell’elenco per configurare ulteriori opzioni, come:
 
@@ -212,11 +212,11 @@ Con una procedura [simile alla pubblicazione](#publishing-pages), è possibile a
 * [Dall’editor di pagine](#unpublishing-from-the-editor)
 * [Dalla console Sites](#unpublishing-from-the-console)
 
-### Annullamento della pubblicazione dall’editor  {#unpublishing-from-the-editor}
+### Annullamento della pubblicazione dall’editor   {#unpublishing-from-the-editor}
 
 Durante la modifica di una pagina, se desideri annullarne la pubblicazione seleziona **Annulla pubblicazione pagina** nel menu **Informazioni pagina**. La procedura è simile a quella di [pubblicazione della pagina](#publishing-from-the-editor).
 
-### Annullamento della pubblicazione dalla console  {#unpublishing-from-the-console}
+### Annullamento della pubblicazione dalla console   {#unpublishing-from-the-console}
 
 Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazione](#manage-publication), ma anche per annullarla.
 
