@@ -3,10 +3,10 @@ title: Rapporti sull’utilizzo e la condivisione
 description: Rapporti sulle risorse in [!DNL Adobe Experience Manager Assets] per comprendere l'utilizzo, l'attività e la condivisione delle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 11%
+source-wordcount: '928'
+ht-degree: 7%
 
 ---
 
@@ -48,17 +48,19 @@ Quando viene generato un rapporto, riceverete una notifica da <!-- through an em
 
    ![Selezionare il tipo di rapporto](assets/choose_report.png)
 
+<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
    >
-   >Prima di generare un rapporto sulle **[!UICONTROL risorse scaricate]**, accertati che il servizio di download delle risorse sia attivato. Dalla console web (`https://[aem_server]:[port]/system/console/configMgr`), apri la configurazione **[!UICONTROL Day CQ DAM Event Recorder]** e seleziona da Tipi di evento l’opzione **[!UICONTROL Risorsa scaricata (DOWNLOADED)]**, se non è già selezionata.
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
 
-   >[!NOTE]
-   >
-   >Per impostazione predefinita, i frammenti di contenuto e le condivisioni di collegamenti sono inclusi nel rapporto Risorse [!UICONTROL Scarica]. Selezionate l&#39;opzione appropriata per creare un rapporto delle condivisioni di collegamenti o per escludere i frammenti di contenuto dal rapporto di download.
+>[!NOTE]
+>
+>Per impostazione predefinita, i frammenti di contenuto e le condivisioni di collegamenti sono inclusi nel rapporto Risorse [!UICONTROL Scarica]. Selezionate l&#39;opzione appropriata per creare un rapporto delle condivisioni di collegamenti o per escludere i frammenti di contenuto dal rapporto di download.
 
-   >[!NOTE]
-   >
-   >Il rapporto [!UICONTROL Download] visualizza i dettagli solo delle risorse che vengono scaricate dopo la selezione individuale o che vengono scaricate tramite la funzione Azione rapida. Tuttavia, non include i dettagli delle risorse che si trovano all’interno di una cartella scaricata.
+>[!NOTE]
+>
+>Il rapporto [!UICONTROL Download] visualizza i dettagli solo delle risorse che vengono scaricate dopo la selezione individuale o che vengono scaricate tramite la funzione Azione rapida. Tuttavia, non include i dettagli delle risorse che si trovano all’interno di una cartella scaricata.
 
 1. Configurare i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella nell&#39;archivio CRX in cui è memorizzato il rapporto. Per impostazione predefinita, il percorso della cartella è `/content/dam`. Potete specificare un percorso diverso.
 
@@ -139,11 +141,18 @@ Per aggiungere colonne personalizzate a questi rapporti, procedere come segue:
 
 1. Fare clic su **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che è stata avviata la generazione del report.
 
-## Configurare il servizio di eliminazione {#configure-purging-service}
+<!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
-Per rimuovere i rapporti non più necessari, configura il servizio Rimozione rapporti DAM dalla console Web per eliminare i rapporti esistenti in base alla loro quantità e età.
+## Configure purging service {#configure-purging-service}
 
-1. Accedete alla console Web (Gestione configurazione) da `https://[aem_server]:[port]/system/console/configMgr`.
-1. Aprire la configurazione **[!UICONTROL DAM Report Purge Service]**.
-1. Specificare la frequenza (intervallo di tempo) per il servizio di eliminazione nel campo `scheduler.expression.name`. Puoi anche configurare la soglia di età e quantità per i rapporti.
-1. Salva le modifiche.
+To remove reports that you no longer require, configure the DAM Report Purge service from the web console to purge existing reports based on their quantity and age.
+
+1. Access the web console (configuration manager) from `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.
+1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
+1. Save the changes.
+-->
+
+## Informazioni, suggerimenti e limitazioni per la risoluzione dei problemi {#best-practices-and-limitations}
+
+* Se il rapporto sull&#39;uso del disco non viene generato e si utilizza [!DNL Dynamic Media], assicurarsi che tutte le risorse procedano correttamente. Per risolvere il problema, rielaborare le risorse e generare di nuovo il rapporto.
