@@ -2,9 +2,9 @@
 title: Set 360 gradi
 description: Scopri come utilizzare i set 360 gradi in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1829'
 ht-degree: 12%
 
 ---
@@ -76,7 +76,7 @@ Se necessario, potete [modificare i set 360 gradi](#editing-spin-sets). Inoltre,
 
 ## Caricamento delle risorse per i set 360 gradi {#uploading-assets-for-spin-sets}
 
-Per un set 360 gradi monodimensionale, sono necessari almeno 8-12 scatti di un elemento e 16-24 scatti per un set 360 gradi bidimensionale. Le riprese devono essere effettuate a intervalli regolari per dare l’impressione che l’elemento stia ruotando e sia capovolto. Ad esempio, se un set 360 gradi monodimensionale include 12 scatti, ruotate l’elemento di 30 gradi (360/12) per ciascuna ripresa.
+Per un set 360 gradi monodimensionale, sono necessari almeno 8-12 scatti di un elemento. Le riprese devono essere effettuate a intervalli regolari per dare l’impressione che l’elemento stia ruotando e sia capovolto. Ad esempio, se un set 360 gradi monodimensionale include 12 scatti, ruotate l’elemento di 30 gradi (360/12) per ciascuna ripresa.
 
 Potete caricare le immagini per i set 360 gradi come fareste per [caricare qualsiasi altra risorsa in  AEM Assets](/help/assets/manage-digital-assets.md).
 
