@@ -2,15 +2,20 @@
 title: Panoramica per l'analizzatore delle best practice
 description: Panoramica per l'analizzatore delle best practice
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 35%
+source-wordcount: '351'
+ht-degree: 29%
 
 ---
 
 
 # Panoramica {#overview-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_overview"
+>title="Panoramica di Best Practices Analyzer"
+>abstract="Best Practices Analyzer fornisce una valutazione dell&#39;implementazione AEM corrente indicando le aree che non seguono AEM best practice. Fornisce inoltre orientamenti sulle prossime fasi per adottare AEM migliori pratiche. Inoltre, consente di accelerare i processi di valutazione della disponibilità a passare da una distribuzione Adobe Experience Manager (AEM) esistente a AEM come Cloud Service."
 
 Best Practices Analyzer fornisce una valutazione dell&#39;implementazione AEM corrente indicando le aree che non seguono AEM best practice. Fornisce inoltre orientamenti sulle prossime fasi per adottare AEM migliori pratiche. Inoltre, consente di accelerare i processi di valutazione della disponibilità a passare da una distribuzione Adobe Experience Manager (AEM) esistente a AEM come Cloud Service.
 
