@@ -2,10 +2,10 @@
 title: 'Differenze tra pagine '
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 100%
+source-wordcount: '622'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ La creazione di contenuti è un processo iterativo. Per un authoring efficace, �
 
 È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 
->[!CAUTION]
+>[!NOTE]
 >
 >Per utilizzare questa funzione, l’utente deve disporre dell’autorizzazione **Modifica/Crea/Elimina** sul nodo `/content/versionhistory`.
 >
@@ -54,10 +54,6 @@ Vengono rilevate le modifiche apportate a livello di componente e di codice HTML
 
 * Verde chiaro - Componente aggiunto
 * Rosa - Componente rimosso
-* Blu - Componente modificato
-* Blu - Componente spostato
-
-Nota: il colore dei componenti modificati e spostati è lo stesso.
 
 **Modifiche HTML**
 
@@ -93,9 +89,7 @@ Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsias
 Esistono alcune situazioni in cui il confronto delle differenze della pagina non è in grado di rilevare una differenza nel modo previsto.
 
 * Nel confronto di versioni e lanci, la funzione non prende in considerazione le differenze dinamiche, come i componenti breadcrumb, i menu, gli elenchi di prodotti o i loghi (componenti che si basano sulla struttura del sito per eseguire il rendering del contenuto).
-* Per le versioni, non viene ricreato il criterio per il controllo degli accessi e le relazioni Live Copy.
-* Le eventuali modifiche apportate a un’immagine, ad esempio agli attributi alt, title o src, vengono evidenziate in blu. Tuttavia, in alcuni casi le immagini hanno una rappresentazione Base64 dell’attributo src e, nonostante siano uguali, vengono contrassegnate come diverse a causa dei differenti attributi src.
-* Il confronto non è in grado di rilevare la rotazione di un’immagine.
+* Per le versioni, la diff non ricrea i criteri di controllo degli accessi e le relazioni Live Copy.
 * Se una pagina viene spostata, non ti sarà più possibile eseguire una rilevazione delle differenze con qualsiasi versione creata prima dello spostamento.
    * Se rilevi dei problemi con una differenza, controlla la [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) per verificare se la pagina è stata spostata.
 
