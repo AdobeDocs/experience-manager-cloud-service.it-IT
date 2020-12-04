@@ -1,11 +1,11 @@
 ---
 title: Come modificare o aggiungere i metadati
-description: Scoprite i metadati delle risorse in  AEM Assets e in vari modi in cui potete modificare i metadati delle risorse.
+description: Scopri i metadati delle risorse in  [!DNL Experience Manager Assets] vari modi per modificare i metadati delle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '422'
 ht-degree: 9%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 I metadati sono informazioni aggiuntive sulla risorsa ricercabile. Viene estratto automaticamente quando caricate un’immagine. Potete modificare i metadati esistenti o aggiungere nuove proprietà di metadati ai campi esistenti (ad esempio, quando un campo di metadati è vuoto).
 
-Poiché le aziende necessitano di vocabolari di metadati controllati e affidabili,  AEM Assets non consente l&#39;aggiunta ad hoc di nuove proprietà di metadati. Sebbene gli autori non possano aggiungere nuovi campi di metadati per le risorse, gli sviluppatori possono farlo. Consultate [Creazione di nuove proprietà di metadati per risorse](meta-edit.md#editing-metadata-schema).
+Poiché le aziende necessitano di vocabolari di metadati controllati e affidabili, [!DNL Experience Manager Assets] non consente l&#39;aggiunta ad hoc di nuove proprietà di metadati. Sebbene gli autori non possano aggiungere nuovi campi di metadati per le risorse, gli sviluppatori possono farlo. Consultate [Creazione di nuove proprietà di metadati per risorse](meta-edit.md#editing-metadata-schema).
 
 ## Modifica dei metadati per una risorsa {#editing-metadata-for-an-asset}
 
