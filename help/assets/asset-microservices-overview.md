@@ -3,9 +3,9 @@ title: Elaborazione delle risorse tramite i microservizi delle risorse
 description: Elabora le risorse digitali tramite microservizi di elaborazione delle risorse scalabili e nativi basati sul cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -50,14 +50,14 @@ Questo è il flusso di base dell’assimilazione e dell’elaborazione delle ris
 
 Il flusso di assimilazione e di elaborazione sono concetti chiave dell’architettura dei microservizi di risorse per  Experience Manager.
 
-* **Accesso** binario diretto: Le risorse vengono trasportate (e caricate) nel Cloud Binary Store una volta configurato per gli ambienti  Experience Manager, e quindi AEM, i microservizi delle risorse, e infine i client possono accedervi direttamente per svolgere il proprio lavoro. Questo riduce al minimo il carico sulle reti e la duplicazione dei binari archiviati
-* **Elaborazione** esternalizzata: L&#39;elaborazione delle risorse viene effettuata al di fuori dell&#39;ambiente AEM e ne salva le risorse (CPU, memoria) per fornire le principali funzionalità di gestione delle risorse digitali e supportare il lavoro interattivo con il sistema per gli utenti finali
+* **Accesso** binario diretto: Le risorse vengono trasportate (e caricate) nel Cloud Binary Store una volta configurato per gli ambienti  Experience Manager, e quindi  [!DNL Experience Manager]i microservizi delle risorse, e infine i client possono accedervi direttamente per svolgere il proprio lavoro. Questo riduce al minimo il carico sulle reti e la duplicazione dei binari archiviati
+* **Elaborazione** esternalizzata: L&#39;elaborazione delle risorse viene effettuata al di fuori dell&#39; [!DNL Experience Manager] ambiente e ne salva le risorse (CPU, memoria) per fornire le principali funzionalità di gestione delle risorse digitali e supportare il lavoro interattivo con il sistema per gli utenti finali
 
 ## Caricamento risorse con accesso binario diretto {#asset-upload-with-direct-binary-access}
 
- client di Experience Manager, che fanno parte dell&#39;offerta di prodotti, supportano tutti i caricamenti con accesso binario diretto per impostazione predefinita. tra cui il caricamento tramite l’interfaccia Web,  collegamento risorse di Adobe e AEM app desktop.
+ client di Experience Manager, che fanno parte dell&#39;offerta di prodotti, supportano tutti i caricamenti con accesso binario diretto per impostazione predefinita. tra cui il caricamento tramite l&#39;interfaccia Web,  collegamento risorse di Adobe e l&#39;app desktop [!DNL Experience Manager].
 
-Potete usare strumenti di caricamento personalizzati, che funzionano direttamente con AEM API HTTP. Potete utilizzare queste API direttamente, oppure utilizzare ed estendere i seguenti progetti open-source che implementano il protocollo di caricamento:
+Potete utilizzare strumenti di caricamento personalizzati, che funzionano direttamente con le [!DNL Experience Manager] API HTTP. Potete utilizzare queste API direttamente, oppure utilizzare ed estendere i seguenti progetti open-source che implementano il protocollo di caricamento:
 
 * [Libreria di caricamento open-source](https://github.com/adobe/aem-upload)
 * [Open-source, strumento da riga di comando](https://github.com/adobe/aio-cli-plugin-aem)
@@ -68,7 +68,7 @@ Per ulteriori informazioni, consultate [caricare risorse](add-assets.md).
 
 Anche se la maggior parte dei clienti deve soddisfare tutte le proprie esigenze di elaborazione delle risorse dai microservizi configurabili, alcuni potrebbero richiedere un’ulteriore elaborazione delle risorse. Ciò è particolarmente vero se le risorse devono essere elaborate in base alle informazioni provenienti da altri sistemi tramite integrazioni. In casi come questo, è possibile utilizzare flussi di lavoro post-elaborazione personalizzati.
 
-I flussi di lavoro di post-elaborazione sono modelli AEM flusso di lavoro regolari, creati e gestiti nell&#39;editor AEM Workflow. I clienti possono configurare i flussi di lavoro per eseguire ulteriori fasi di elaborazione su una risorsa, compreso l’utilizzo dei passaggi di flusso di lavoro out-of-the-box disponibili e dei flussi di lavoro personalizzati.
+I flussi di lavoro post-elaborazione sono normali [!DNL Experience Manager] modelli di flusso di lavoro, creati e gestiti nell&#39;editor [!DNL Experience Manager] Workflow. I clienti possono configurare i flussi di lavoro per eseguire ulteriori fasi di elaborazione su una risorsa, compreso l’utilizzo dei passaggi di flusso di lavoro out-of-the-box disponibili e dei flussi di lavoro personalizzati.
 
 Adobe Experience Manager può essere configurato per attivare automaticamente i flussi di lavoro di post-elaborazione al termine dell’elaborazione delle risorse.
 
