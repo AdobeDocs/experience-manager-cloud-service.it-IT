@@ -4,9 +4,9 @@ description: Comprendere il concetto di raccolta in Adobe Experience Manager Ass
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2396'
 ht-degree: 20%
 
 ---
@@ -140,7 +140,7 @@ La funzione di ricerca all&#39;interno delle raccolte supporta sia [Cerca raccol
 
 ### Cerca raccolte {#search-collections}
 
-Potete cercare le raccolte dalla console Raccolte. Quando eseguite una ricerca con le parole chiave nella casella di ricerca Omnico,  AEM Assets cerca i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
+Potete cercare le raccolte dalla console Raccolte. Quando eseguite una ricerca con le parole chiave nella casella di ricerca Omnico, [!DNL Experience Manager Assets] cerca i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
 
 Se cercate raccolte dal livello principale, nei risultati della ricerca vengono restituite solo singole raccolte. Le risorse o le cartelle all&#39;interno delle raccolte sono escluse. In tutti gli altri casi (ad esempio, all&#39;interno di una singola raccolta o in una gerarchia di cartelle), vengono restituite tutte le risorse, le cartelle e le raccolte pertinenti.
 
@@ -148,7 +148,7 @@ Se cercate raccolte dal livello principale, nei risultati della ricerca vengono 
 
 Nella console Raccolte, toccate o fate clic su una raccolta per aprirla.
 
-All&#39;interno di una raccolta, AEM ricerca delle risorse è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che state visualizzando. Quando eseguite una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle figlie corrispondenti all’interno della cartella corrente. Quando eseguite una ricerca all&#39;interno di una raccolta, vengono restituite solo le risorse, le cartelle e altre raccolte corrispondenti a membri diretti della raccolta.
+All&#39;interno di una raccolta, la ricerca [!DNL Experience Manager] è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che state visualizzando. Quando eseguite una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle figlie corrispondenti all’interno della cartella corrente. Quando eseguite una ricerca all&#39;interno di una raccolta, vengono restituite solo le risorse, le cartelle e altre raccolte corrispondenti a membri diretti della raccolta.
 
 ## Modifica impostazioni raccolta {#edit-collection-settings}
 
@@ -179,7 +179,7 @@ Quando scaricate una raccolta, viene scaricata l&#39;intera gerarchia di risorse
 
 ## Modificare le proprietà dei metadati di più raccolte {#editing-metadata-properties-of-multiple-collections}
 
- risorse Enterprise Manager (AEM) Adobe consente di modificare i metadati di molte raccolte in blocco. Utilizzate la pagina [!UICONTROL Proprietà] per eseguire modifiche ai metadati su più raccolte, ad esempio per modificare le proprietà dei metadati in un valore comune o aggiungere o modificare i tag.
+ Adobe Enterprise Manager Assets consente di modificare i metadati di molte raccolte in blocco. Utilizzate la pagina [!UICONTROL Proprietà] per eseguire modifiche ai metadati su più raccolte, ad esempio per modificare le proprietà dei metadati in un valore comune o aggiungere o modificare i tag.
 
 Per personalizzare la pagina di metadati [!UICONTROL Proprietà], inclusa l&#39;aggiunta, la modifica, l&#39;eliminazione delle proprietà dei metadati, utilizzare l&#39;editor schema.
 
