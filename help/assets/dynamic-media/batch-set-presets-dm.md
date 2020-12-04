@@ -3,7 +3,7 @@ title: Predefiniti set di batch
 description: Scoprite come automatizzare la creazione di set di immagini e set 360 gradi mediante i predefiniti per set di batch in Contenuti multimediali dinamici.
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: c7a2fbb4fa6e81caabab829b876741ecf393a2c3
 workflow-type: tm+mt
 source-wordcount: '3521'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Utilizzate **[!UICONTROL Predefiniti per set di batch]** per semplificare la cre
 1. Create un predefinito per set di batch. Consultate [Creazione di un predefinito per set di batch per un set di immagini o un set 360 gradi](#creating-bsp).
 1. Create una nuova cartella di risorse o usate una cartella di risorse esistente e assicuratevi che sia sincronizzata con [!DNL Dynamic Media]. Vedere [Creazione di cartelle](/help/assets/manage-digital-assets.md#creating-folders).
 1. Applicate il predefinito per set di batch alla cartella delle risorse. Consultate [L&#39;applicazione dei predefiniti per set di batch alle cartelle](#apply-bsp).
-1. Caricate le immagini nella cartella delle risorse. Consultate [Caricamento di risorse per set di immagini](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Caricamento di risorse per set 360 gradi](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) o [Aggiunta di risorse digitali a Adobe Experience Manager](#add-assets-to-experience-manager).
+1. Caricate le immagini nella cartella delle risorse. Consultate [Caricamento di risorse per set di immagini](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Caricamento di risorse per set 360 gradi](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) o [Aggiunta di risorse digitali a Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. Create il set di immagini o il set 360 gradi. Consultate [Set di immagini](/help/assets/dynamic-media/image-sets.md) o [Set 360 gradi](/help/assets/dynamic-media/spin-sets.md).
 1. Pubblicate il set di immagini o il set 360 gradi. Consultate [Pubblicazione di risorse multimediali dinamiche](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
