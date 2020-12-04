@@ -2,10 +2,10 @@
 title: 'Risorse come guida [!DNL Cloud Service] '
 description: Risorse Adobe Experience Manager come risorse di supporto  [!DNL Cloud Service] e collegamenti alla documentazione
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 47%
+source-wordcount: '305'
+ht-degree: 43%
 
 ---
 
@@ -36,7 +36,7 @@ Di seguito sono elencate le risorse di supporto autonomo per Experience Manager 
 | [Guida utente per l’implementazione](/help/implementing/home.md) | Personalizza, sviluppa e implementa Experience Manager as a [!DNL Cloud Service]. |
 | [Guida utente dei connettori](/help/connectors/home.md) | Questa guida contiene informazioni su come integrare i connettori in Experience Manager as a [!DNL Cloud Service]. |
 | [Guida utente sulle operazioni](/help/operations/home.md) | Scopri le operazioni back-end del Experience Manager  come [!DNL Cloud Service], ad esempio le attività di indicizzazione e manutenzione. |
-| [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri Commerce Integration Framework in AEM as a [!DNL Cloud Service]. |
+| [Guida utente di Commerce](/help/commerce-cloud/home.md) | Informazioni su Commerce Integration Framework su [!DNL Experience Manager] come [!DNL Cloud Service]. |
 
 ## Altre risorse su Experience Manager {#other-resources}
 
@@ -48,4 +48,4 @@ Di seguito sono elencate le risorse di supporto autonomo per Experience Manager 
 * [Preparazione all’RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager come  [!DNL Cloud Service] esercitazioni](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
-* [Forum della community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+* [[!DNL Experience Manager] Forum community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
