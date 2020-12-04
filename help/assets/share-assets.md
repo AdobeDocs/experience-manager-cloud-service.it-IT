@@ -3,10 +3,10 @@ title: Condivisione di risorse, cartelle e raccolte come collegamento
 description: Questo articolo descrive come condividere risorse, cartelle e raccolte all'interno  risorse Experience Manager come collegamento ipertestuale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 3%
+source-wordcount: '734'
+ht-degree: 1%
 
 ---
 
@@ -152,14 +152,16 @@ Before you can share assets as links, configure the email service.
 1. Click/tap **[!UICONTROL Save]**.
 -->
 
-### Configurare la dimensione massima dei dati {#maxdatasize}
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+### Configure maximum data size {#maxdatasize}
 
-Quando scaricate le risorse dal collegamento condiviso mediante la funzione Condivisione collegamenti, AEM comprime la gerarchia delle risorse dall’archivio e quindi restituisce la risorsa in un file ZIP. Tuttavia, in assenza di limiti alla quantità di dati che possono essere compressi in un file ZIP, enormi quantità di dati sono soggetti a compressione, il che causa errori di memoria insufficiente in JVM. Per proteggere il sistema da un potenziale attacco di negazione del servizio a causa di questa situazione, potete configurare la dimensione massima dei file scaricati. Se le dimensioni non compresse della risorsa superano il valore configurato, le richieste di download delle risorse vengono rifiutate. Il valore predefinito è 100 MB.
+When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Tocca o fai clic sul logo AEM, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
-1. Dalla console Web, individuate la configurazione **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]**.
-1. Aprite la configurazione in modalità di modifica e modificate il valore del parametro **[!UICONTROL Max Content Size (non compresso)]**.
-1. Salva le modifiche.
+1. Click/Tap the AEM logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the web console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
+1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
+1. Save the changes.
+-->
 
 <!--
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
