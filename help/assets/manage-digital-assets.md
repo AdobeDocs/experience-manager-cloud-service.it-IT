@@ -4,9 +4,9 @@ description: Scopri i diversi metodi di gestione e modifica delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '4429'
+source-wordcount: '4408'
 ht-degree: 13%
 
 ---
@@ -18,7 +18,7 @@ Questo articolo descrive come gestire e modificare le risorse in Adobe Experienc
 
 ## Creare cartelle {#creating-folders}
 
-Quando organizzate una raccolta di risorse, ad esempio tutte le immagini `Nature`, potete creare delle cartelle per mantenerle unite. Potete usare le cartelle per classificare e organizzare le risorse.  AEM Assets non richiede l’organizzazione di risorse in cartelle per migliorare il funzionamento.
+Quando organizzate una raccolta di risorse, ad esempio tutte le immagini `Nature`, potete creare delle cartelle per mantenerle unite. Potete usare le cartelle per classificare e organizzare le risorse. [!DNL Experience Manager Assets] non richiede l’organizzazione di risorse in cartelle per migliorare il funzionamento.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Nel campo **[!UICONTROL Tag]**, selezionare uno o più tag. Per aggiungere un tag personalizzato, digitate il nome del tag nella casella e premete il tasto Invio. Il nuovo tag viene salvato in AEM.
+1. Nel campo **[!UICONTROL Tag]**, selezionare uno o più tag. Per aggiungere un tag personalizzato, digitate il nome del tag nella casella e premete il tasto Invio. Il nuovo tag viene salvato in [!DNL Experience Manager].
 
    YouTube richiede la pubblicazione di tag e un collegamento a YouTube (se è possibile trovare un collegamento appropriato).
 
@@ -139,7 +139,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
    >[!NOTE]
    >
-   >Se copiate una risorsa nella stessa posizione, AEM genera automaticamente una variante del nome. Ad esempio, se copiate una risorsa denominata `Square`, AEM automaticamente il titolo della relativa copia come `Square1`.
+   >Se copiate una risorsa nella stessa posizione, [!DNL Experience Manager] genera automaticamente una variante del nome. Ad esempio, se copiate una risorsa denominata `Square`, [!DNL Experience Manager] genera automaticamente il titolo della relativa copia come `Square1`.
 
 1. Fate clic sull&#39;icona della risorsa **[!UICONTROL Incolla]** dalla barra degli strumenti. Le risorse vengono copiate in questa posizione.
 
@@ -203,7 +203,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
    >[!NOTE]
    >
-   >Per impostazione predefinita,  AEM Assets non visualizza la rappresentazione originale della risorsa in modalità di anteprima. Gli amministratori possono utilizzare le sovrapposizioni per configurare  AEM Assets in modo da visualizzare le rappresentazioni originali in modalità di anteprima.
+   >Per impostazione predefinita, [!DNL Experience Manager Assets] non visualizza la rappresentazione originale della risorsa in modalità di anteprima. Se siete un amministratore, potete utilizzare le sovrapposizioni per configurare [!DNL Assets] per visualizzare le rappresentazioni originali in modalità di anteprima.
 
 1. Selezionate una rappresentazione per visualizzare o eliminare la rappresentazione.
 
@@ -223,7 +223,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    >
    >Se selezioni un rendering dal pannello **[!UICONTROL Rendering]**, la barra degli strumenti cambia contesto, visualizzando solo le azioni del rendering specifico. Le opzioni non sono visualizzate, ad esempio l’icona Carica rappresentazione. Per visualizzare queste opzioni nella barra degli strumenti, vai alla pagina dei dettagli della risorsa.
 
-   Potete configurare le dimensioni per la rappresentazione da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate,  AEM Assets visualizza la rappresentazione con le dimensioni esatte o più vicine.
+   Potete configurare le dimensioni per la rappresentazione da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate, Assets visualizza la rappresentazione con le dimensioni esatte o più vicine.
 
    Per configurare le dimensioni di rendering di un’immagine a livello di dettaglio della risorsa, sovrapponi il nodo `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configura il valore della proprietà larghezza.  Per personalizzare il rendering sulla pagina dei dettagli della risorsa in base alle dimensioni dell’immagine, configura la proprietà **[!UICONTROL size (Long) in KB (dimensione (lunga) in KB)]** al posto della larghezza. Per la personalizzazione basata sulle dimensioni, la proprietà `preferOriginal` assegna le preferenze all’originale se la dimensione del rendering corrispondente è maggiore.
 
@@ -270,7 +270,7 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
 ## Scaricare le risorse {#download-assets}
 
-Consultate [Scaricare risorse da AEM](/help/assets/download-assets-from-aem.md).
+Consultate [Scaricare risorse da [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Pubblicare risorse {#publish-assets}
 
@@ -323,7 +323,7 @@ Consultate [Scaricare risorse da AEM](/help/assets/download-assets-from-aem.md).
 
 ## Gruppo utenti chiuso {#closed-user-group}
 
-Un gruppo di utenti chiuso (CUG) viene usato per limitare l’accesso a specifiche cartelle di risorse pubblicate da AEM. Se create un gruppo di utenti chiuso per una cartella, l’accesso alla cartella (comprese le risorse e le sottocartelle) è limitato solo ai membri o ai gruppi assegnati. Per accedere alla cartella, devono accedere utilizzando le credenziali di protezione.
+Un gruppo di utenti chiuso (CUG) viene usato per limitare l’accesso a specifiche cartelle di risorse pubblicate da [!DNL Experience Manager]. Se create un gruppo di utenti chiuso per una cartella, l’accesso alla cartella (comprese le risorse e le sottocartelle) è limitato solo ai membri o ai gruppi assegnati. Per accedere alla cartella, devono accedere utilizzando le credenziali di protezione.
 
 I COG consentono di limitare l’accesso alle risorse. Potete anche configurare una pagina di login per la cartella.
 
@@ -332,22 +332,22 @@ I COG consentono di limitare l’accesso alle risorse. Potete anche configurare 
 
    ![add_user](assets/add_user.png)
 
-1. Per visualizzare una schermata di login quando gli utenti accedono alla cartella, selezionate l&#39;opzione **[!UICONTROL Abilita]**. Quindi, selezionate il percorso di una pagina di login in AEM e salvate le modifiche.
+1. Per visualizzare una schermata di login quando gli utenti accedono alla cartella, selezionate l&#39;opzione **[!UICONTROL Abilita]**. Quindi, seleziona il percorso di una pagina di login in [!DNL Experience Manager] e salva le modifiche.
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >Se non specificate il percorso di una pagina di login, AEM visualizza la pagina di login predefinita nell’istanza di pubblicazione.
+   >Se non si specifica il percorso di una pagina di login, [!DNL Experience Manager] visualizza la pagina di login predefinita nell&#39;istanza di pubblicazione.
 
 1. Pubblicate la cartella, quindi provate ad accedervi dall’istanza di pubblicazione. Viene visualizzata una schermata di login.
-1. Se siete un membro CUG, immettete le vostre credenziali di protezione. La cartella viene visualizzata dopo AEM l’autenticazione.
+1. Se siete un membro CUG, immettete le vostre credenziali di protezione. La cartella viene visualizzata dopo l&#39;autenticazione di [!DNL Experience Manager].
 
 ## Cercare risorse {#search-assets}
 
 La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e degli esperti di marketing, sia per l’amministrazione da parte degli amministratori DAM.
 
-Per ricerche semplici, avanzate e personalizzate per individuare e utilizzare le risorse più appropriate, consultate [cercare risorse in AEM](/help/assets/search-assets.md).
+Per ricerche semplici, avanzate e personalizzate per individuare e utilizzare le risorse più appropriate, consultate [cercare risorse in [!DNL Experience Manager]](/help/assets/search-assets.md).
 
 ## Azioni rapide {#quick-actions}
 
@@ -358,7 +358,7 @@ Le icone delle azioni rapide sono disponibili per una singola risorsa alla volta
 
 ## Modificare le immagini {#editing-images}
 
-Gli strumenti di modifica nell’interfaccia  AEM Assets consentono di eseguire piccoli processi di modifica sulle risorse di immagine. Potete ritagliare, ruotare, capovolgere ed eseguire altri processi di modifica sulle immagini. Potete anche aggiungere mappe immagine alle risorse.
+Gli strumenti di modifica nell&#39;interfaccia [!DNL Experience Manager Assets] consentono di eseguire piccoli processi di modifica sulle risorse di immagine. Potete ritagliare, ruotare, capovolgere ed eseguire altri processi di modifica sulle immagini. Potete anche aggiungere mappe immagine alle risorse.
 
 >[!NOTE]
 >
@@ -430,7 +430,7 @@ La timeline consente di visualizzare vari eventi per un elemento selezionato, ad
 
 Le annotazioni sono commenti o note esplicative aggiunti alle immagini o ai video. Le annotazioni consentono agli addetti al marketing di collaborare e lasciare commenti sulle risorse.
 
-Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. I formati video supportati  AEM Assets dipendono dal browser.
+Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. I formati video supportati da Risorse dipendono dal browser.
 
 >[!NOTE]
 >
@@ -467,7 +467,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
    >Potete aggiungere più annotazioni prima di salvarle.
 
 1. Toccate/fate clic su **[!UICONTROL Chiudi]** per uscire dalla modalità Annotazione.
-1. Per visualizzare la notifica, accedete a  AEM Assets con le credenziali di Aaron MacDonald e fate clic sull&#39;icona **[!UICONTROL Notifiche]** per visualizzare la notifica.
+1. Per visualizzare la notifica, accedi a Risorse con le credenziali di Aaron MacDonald e fai clic sull&#39;icona **[!UICONTROL Notifiche]** per visualizzare la notifica.
 
    >[!NOTE]
    >
@@ -559,9 +559,9 @@ Il controllo delle versioni crea un’istantanea delle risorse digitali in un mo
 
 Di seguito sono riportati gli scenari in cui si creano le versioni:
 
-* Potete modificare un’immagine in un’altra applicazione e caricarla  AEM Assets. Viene creata una versione dell’immagine in modo che l’immagine originale non venga sovrascritta.
+* Potete modificare un’immagine in un’altra applicazione e caricarla in Risorse. Viene creata una versione dell’immagine in modo che l’immagine originale non venga sovrascritta.
 * Potete modificare i metadati di una risorsa.
-* Utilizzate AEM&#39;app desktop per estrarre una risorsa esistente e salvare le modifiche. Una nuova versione viene creata ogni volta che la risorsa viene salvata.
+* Utilizzate l&#39;app desktop [!DNL Experience Manager] per estrarre una risorsa esistente e salvare le modifiche. Una nuova versione viene creata ogni volta che la risorsa viene salvata.
 
 Potete inoltre abilitare il controllo automatico delle versioni tramite un flusso di lavoro. Quando create una versione per una risorsa, i metadati e le rappresentazioni vengono salvati insieme alla versione. Le rappresentazioni sono alternative per il rendering delle stesse immagini, ad esempio una rappresentazione PNG di un file JPEG caricato.
 
