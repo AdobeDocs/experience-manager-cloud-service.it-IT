@@ -2,10 +2,10 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 4%
+source-wordcount: '1269'
+ht-degree: 3%
 
 ---
 
@@ -25,9 +25,9 @@ La seguente release (2020.12.0) sarà del 17 dicembre 2020
 
 * **[Avvia Gestione](/help/sites-cloud/authoring/launches/managing-pages.md)  Gerarchia e Timewarp  [futuro](/help/sites-cloud/authoring/launches/preview.md)**: Nuova interfaccia utente per aggiungere/rimuovere pagine all’interno di un lancio, mentre nel sito con Timewarp viene visualizzato lo stato futuro dagli avvii.
 
-* **Ordinate le pagine Live Copy disponibili per il rollout**: Nuova opzione per ordinare le pagine Live Copy disponibili per il rollout utilizzando le proprietà  [!UICONTROL Nome], Data ultima modifica e Data  ultimoaggiornamento. La [!UICONTROL Data ultimo rollout] per una pagina è una nuova proprietà introdotta.
+* **[Editor e modelli](/help/assets/content-fragments/content-fragments-models.md)** di frammenti di contenuto estesi: Nuove opzioni per la convalida dell&#39;input su vari tipi di dati, il miglioramento del tipo di dati di enumerazione con nuove visualizzazioni di moduli e il nome del modello di frammento di contenuto sono visualizzati e ricercabili nell&#39;interfaccia utente Risorse.
 
-<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
+* **Ordinate le pagine Live Copy disponibili per il rollout**: Nuova opzione per ordinare le pagine Live Copy disponibili per il rollout utilizzando le proprietà  [!UICONTROL Nome], Data ultima modifica e Data  ultimoaggiornamento. La [!UICONTROL Data ultimo rollout] per una pagina è una nuova proprietà introdotta.
 
 ## [!DNL Adobe Experience Manager Assets] come Cloud Service  {#assets}
 
