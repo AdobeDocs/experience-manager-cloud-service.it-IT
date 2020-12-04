@@ -3,9 +3,9 @@ title: Configurare e utilizzare i microservizi delle risorse
 description: Configurate e utilizzate i microservizi delle risorse native per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2511'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ Per verificare che le risorse siano state elaborate, visualizzate l&#39;anteprim
 
 Per situazioni in cui è necessaria un’ulteriore elaborazione delle risorse che non può essere ottenuta utilizzando i profili di elaborazione, alla configurazione possono essere aggiunti ulteriori flussi di lavoro di post-elaborazione. Questo consente di aggiungere un&#39;elaborazione completamente personalizzata al di sopra dell&#39;elaborazione configurabile tramite i microservizi delle risorse.
 
-I flussi di lavoro post-elaborazione, se configurati, vengono eseguiti automaticamente da AEM al termine dell&#39;elaborazione dei microservizi. Non è necessario aggiungere manualmente gli avviatori del flusso di lavoro per attivarli. Gli esempi includono:
+I flussi di lavoro post-elaborazione, se configurati, vengono eseguiti automaticamente da [!DNL Experience Manager] al termine dell&#39;elaborazione dei microservizi. Non è necessario aggiungere manualmente gli avviatori del flusso di lavoro per attivarli. Gli esempi includono:
 
 * Passaggi del flusso di lavoro personalizzati per l’elaborazione delle risorse.
 * Integrazioni per aggiungere metadati o proprietà alle risorse da sistemi esterni, ad esempio informazioni su prodotti o processi.
@@ -195,7 +195,7 @@ L&#39;aggiunta di una configurazione di flusso di lavoro post-elaborazione a  Ex
 
 ### Creare modelli di flusso di lavoro post-elaborazione {#create-post-processing-workflow-models}
 
-I modelli di flusso di lavoro post-elaborazione sono modelli AEM flusso di lavoro standard. Create modelli diversi se avete bisogno di un&#39;elaborazione diversa per diverse posizioni di repository o tipi di risorse.
+I modelli di flusso di lavoro post-elaborazione sono normali modelli di flusso di lavoro [!DNL Experience Manager]. Create modelli diversi se avete bisogno di un&#39;elaborazione diversa per diverse posizioni di repository o tipi di risorse.
 
 Le fasi di elaborazione devono essere aggiunte in base alle esigenze. Potete utilizzare tutti i passaggi supportati disponibili, nonché eventuali passaggi di flusso di lavoro implementati personalizzati.
 
@@ -213,7 +213,7 @@ Il servizio Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflo
 >[!NOTE]
 >
 >La configurazione di Custom Workflow Runner è una configurazione di un servizio OSGi. Per informazioni su come distribuire una configurazione OSGi, vedere [distribuire a  Experience Manager](/help/implementing/deploying/overview.md).
->La console Web OSGi, a differenza delle distribuzioni di AEM di servizi locali e gestiti, non è direttamente disponibile nelle distribuzioni di servizi cloud.
+>La console Web OSGi, a differenza delle distribuzioni di [!DNL Experience Manager] servizi locali e gestiti, non è direttamente disponibile nelle distribuzioni di servizi cloud.
 
 Per informazioni dettagliate sul passaggio del flusso di lavoro standard da utilizzare nel flusso di lavoro di post-elaborazione, consultate [passaggi del flusso di lavoro nel flusso di lavoro di post-elaborazione](developer-reference-material-apis.md#post-processing-workflows-steps) nel riferimento per lo sviluppatore.
 
