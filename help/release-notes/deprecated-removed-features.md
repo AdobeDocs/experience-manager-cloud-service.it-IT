@@ -2,10 +2,10 @@
 title: Funzioni obsolete e rimosse
 description: Note sulla versione specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 100%
+source-wordcount: '506'
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,7 @@ In questa sezione sono elencate le funzioni e le funzionalità che sono state ri
 | Area | Funzione obsoleta | Sostituzione |
 | ------------ | ------------------ | ----------- |
 | Interfaccia | Alcune finestre di dialogo dell’interfaccia classica rimangono al momento disponibili solo per alcune funzionalità, come Verifica collegamenti, Pulizia delle versioni e alcune configurazioni di Cloud Service, ma l’accesso all’interfaccia classica in generale è stato rimosso nell’interfaccia dei prodotti AEM. | Interfaccia standard |
-| Dynamic Media | Le integrazioni precedenti con [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/scene7.html) e la [modalità ibrida di Dynamic Media](https://helpx.adobe.com/it/experience-manager/6-5/assets/using/config-dynamic.html) non sono disponibili in AEM as a Cloud Service. | Utilizza la versione di [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornita con Experience Manager as a Cloud Service. |
+| Dynamic Media | Le integrazioni precedenti con [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) e [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) non sono disponibili in AEM come Cloud Service. | Utilizza la versione di [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornita con Experience Manager as a Cloud Service. |
 | Sites | Portal Director e componente Portlet | Queste funzionalità sono diventate obsolete in AEM 6.4 e ora sono state rimosse da AEM. |
 | Siti | Importazione progettazione | Questa funzionalità è stata rimossa perché le sezioni non modificabili dell’archivio AEM non sono accessibili in fase di esecuzione. |
 | Risorse | [La condivisione di AEM Assets con il servizio di base Marketing Cloud Assets e i servizi Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html) non è disponibile. | Per l’integrazione con Creative Cloud, utilizza [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html). |
