@@ -1,11 +1,11 @@
 ---
 title: Schema metadati cartelle
-description: Scoprite come creare uno schema di metadati per le cartelle di risorse in  AEM Assets
+description: Scopri come creare uno schema di metadati per le cartelle di risorse in [!DNL Experience Manager Assets]
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dc5cec192a70413e0ebcc27eb5e58577079ae93b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1029'
 ht-degree: 10%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 10%
 
 # Schema metadati cartelle {#folder-metadata-schema}
 
-Adobe Experience Manager (AEM) Assets consente di creare schemi di metadati per le cartelle di risorse, che definiscono il layout e i metadati visualizzati nelle pagine delle proprietà della cartella.
+[!DNL Adobe Experience Manager Assets] consente di creare schemi di metadati per le cartelle delle risorse, che definiscono il layout e i metadati visualizzati nelle pagine di proprietà delle cartelle.
 
 ## Aggiunta di uno schema di metadati di una cartella dal modulo {#add-a-folder-metadata-schema-form}
 
 Usate l’editor Forms Schema metadati cartella per creare e modificare gli schemi di metadati per le cartelle.
 
-1. Tocca/fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cartella Schemi di metadati]**.
+1. Toccate/fate clic sul logo [!DNL Experience Manager], quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati cartella]**.
 1. Nella pagina Forms Schema metadati cartella, toccate o fate clic su **[!UICONTROL Crea]**.
 1. Specificare un nome per il modulo, quindi toccare o fare clic su **[!UICONTROL Crea]**. Il nuovo modulo schema è elencato nella pagina Forms schema.
 
@@ -138,7 +138,7 @@ Se si configura uno schema di metadati per una cartella, il percorso del modulo 
 
 ### Assegna a uno schema dalla pagina Schema metadati cartella {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Tocca/fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cartella Schemi di metadati]**.
+1. Toccate/fate clic sul logo [!DNL Experience Manager], quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**> **[!UICONTROL Schemi metadati cartella]**.
 1. Nella pagina Forms Schema metadati cartella, selezionate il modulo dello schema da applicare a una cartella.
 1. Dalla barra degli strumenti, toccate o fate clic su **[!UICONTROL Applica alle cartelle]**.
 
@@ -155,7 +155,7 @@ Se si configura uno schema di metadati per una cartella, il percorso del modulo 
 
 Quando create una cartella, potete assegnare uno schema di metadati a una cartella. Se nel sistema esiste almeno uno schema di metadati della cartella, nella finestra di dialogo **[!UICONTROL Crea cartella]** viene visualizzato un elenco aggiuntivo. È possibile selezionare lo schema desiderato. Per impostazione predefinita, non è selezionato alcun schema.
 
-1. Dall&#39;interfaccia utente  AEM Assets, toccate o fate clic su **[!UICONTROL Crea]** nella barra degli strumenti.
+1. Dall&#39;interfaccia utente [!DNL Experience Manager Assets], toccate/fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
 1. Specificate un titolo e un nome per la cartella.
 1. Dall’elenco Schema metadati cartella, selezionate lo schema desiderato. Quindi, toccate o fate clic su **[!UICONTROL Crea]**.
 
