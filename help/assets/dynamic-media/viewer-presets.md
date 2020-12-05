@@ -2,9 +2,9 @@
 title: Applicazione dei predefiniti per visualizzatori per contenuti multimediali dinamici
 description: Scoprite come applicare i predefiniti per visualizzatori in Contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '216'
 ht-degree: 25%
 
 ---
@@ -19,7 +19,7 @@ Se siete un amministratore e avete l’esigenza di gestire, creare, ordinare ed 
 Consultate anche [Predefiniti visualizzatore pubblicazione](managing-viewer-presets.md#publishing-viewer-presets).
 
 A seconda della modalità di pubblicazione in uso, potrebbe non essere necessario pubblicare i predefiniti per visualizzatori.
-Per eventuali problemi con i predefiniti per visualizzatori, consultate [Risoluzione di problemi relativi ai contenuti multimediali dinamici - Scene7](troubleshoot-dm.md#viewers).
+Eventuali problemi con i predefiniti per visualizzatori, consultate [Risoluzione di problemi relativi a contenuti multimediali dinamici](troubleshoot-dm.md#viewers).
 
 ## Applicazione di un predefinito per visualizzatori di contenuti multimediali dinamici a una risorsa {#applying-a-viewer-preset-to-an-asset}
 
