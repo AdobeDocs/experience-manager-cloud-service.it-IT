@@ -2,9 +2,9 @@
 title: Video 360/VR
 description: Scopri come lavorare con i video 360 e della realtà virtuale (VR) in contenuti multimediali dinamici.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Vedere [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-
 
 ## Caricamento delle risorse da usare con il visualizzatore video 360 {#uploading-assets-for-use-with-the-video-viewer}
 
-360 risorse video caricate in AEM sono etichettate come **Multimedia** in una pagina delle risorse, in modo simile alla normale risorsa video.
+360 risorse video caricate  Experience Manager sono etichettate come **Multimedia** in una pagina delle risorse, in modo simile alla normale risorsa video.
 
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *select-previewUna risorsa video 360 caricata visibile nella vista a schede. La risorsa è etichettata come Multimedia.*
@@ -98,7 +98,7 @@ Consultate anche [Modifica dei predefiniti per visualizzatori](/help/assets/dyna
 Quando siete soddisfatti del video 360, potete pubblicarlo.
 
 Consultate [Incorporamento del visualizzatore video o di immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md).
-Consultate [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
+Consultate [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine di siti di Experience Manager .
 Vedere [Aggiunta di risorse multimediali dinamiche alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **Per visualizzare in anteprima 360 video**
@@ -134,5 +134,5 @@ Per poter utilizzare il video 360, è necessario pubblicarlo. Quando si pubblica
 
 Per informazioni dettagliate sulla pubblicazione di video 360, consultate [Pubblicazione di risorse multimediali dinamiche](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 Consultate anche [Incorporamento del visualizzatore video o di immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md).
-Vedere anche [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
+Vedere anche [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine di siti di Experience Manager .
 Vedere anche [Aggiunta di risorse multimediali dinamiche alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
