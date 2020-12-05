@@ -2,9 +2,9 @@
 title: Impostazione di contenuti multimediali dinamici
 description: Per impostare i contenuti multimediali dinamici, è necessario configurare i contenuti multimediali dinamici e gestire i predefiniti per immagini e visualizzatori
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '175'
 ht-degree: 3%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into AEM. If you are using Dynamic Media Classic (previously called Scene7) integrated into AEM, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use AEM integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -40,4 +40,4 @@ Vedi anche i seguenti argomenti:
 >
 >**Se state effettuando l&#39;aggiornamento:**
 >
->* Dopo aver AEM e aver eseguito il caricamento, tutte le risorse caricate dispongono di elementi Contenuti multimediali dinamici attivati automaticamente (a meno che non siano stati esplicitamente disattivati dall’amministratore di sistema). Se usate un’istanza aggiornata di AEM e non avete mai usato gli elementi multimediali dinamici, potrebbe essere necessario rielaborare le risorse per consentirne l’abilitazione.
+>* Dopo aver attivato  Experience Manager, tutte le risorse caricate sono automaticamente abilitate (a meno che non siano state esplicitamente disattivate dall’amministratore di sistema). Se vi trovate in un’istanza aggiornata di  Experience Manager e non avete mai usato contenuti multimediali dinamici, potrebbe essere necessario rielaborare le risorse per consentirne l’abilitazione.
