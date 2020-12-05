@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 40d84fc902f872eae276272b6a975c108b655943
+source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Dynamic Media supporta il controllo da tastiera e tecnologie di supporto, come g
 
 ## Supporto per l&#39;accessibilità da tastiera in Contenuti multimediali dinamici
 
-Poiché Dynamic Media è un plug-in per  AEM Assets, la maggior parte del comportamento dei controlli da tastiera è esattamente uguale a  AEM Assets. Ad esempio, il pulsante `Cancel` in elemento multimediale dinamico ha la stessa evidenziazione dello stato attivo di  AEM Assets e reagisce al tasto `Spacebar` come in  AEM Assets. Vedere [Scelte rapide da tastiera in Risorse](/help/assets/accessibility.md#keyboard-shortcuts).
+Poiché l’elemento multimediale dinamico è un plug-in per  risorse di Experience Manager, la maggior parte dei controlli da tastiera è esattamente uguale a  risorse di Experience Manager. Ad esempio, il pulsante `Cancel` in Contenuti multimediali dinamici ha la stessa evidenziazione dello stato attivo  Risorse Experience Manager e reagisce alla chiave `Spacebar` come in  Risorse Experience Manager. Vedere [Scelte rapide da tastiera in Risorse](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Nella maggior parte dei casi, i tasti supportati dai singoli elementi dell’interfaccia utente in Contenuti multimediali dinamici sono evidenti e facili da scoprire. Il controllo della tastiera in Contenuti multimediali dinamici è il seguente:
 
