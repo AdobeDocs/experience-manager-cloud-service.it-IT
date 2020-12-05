@@ -2,9 +2,9 @@
 title: Profili immagine per file multimediali dinamici e profili video
 description: Un profilo immagine o un profilo video è una ricetta per le opzioni da applicare alle risorse caricate in una cartella. Ad esempio, potete specificare la codifica video da applicare alle risorse video per file multimediali dinamici caricate. Oppure, quale profilo immagine applicare alle risorse di immagini per elementi multimediali dinamici per poterle ritagliare correttamente.
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1301'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ Vedere [Regolazione delle dimensioni batch del flusso di lavoro di rielaborazion
 
 >[!NOTE]
 >
->Se state eseguendo una migrazione di massa delle risorse da Dynamic Media Classic a AEM, dovete attivare l’agente di replica della migrazione sul server Dynamic Media. Al termine della migrazione, accertatevi di disabilitare l’agente.
+>Se state eseguendo una migrazione di massa delle risorse da Dynamic Media Classic a  Experience Manager, dovete attivare l’agente di replica della migrazione sul server Dynamic Media. Al termine della migrazione, accertatevi di disabilitare l’agente.
 >
 >L’agente di pubblicazione della migrazione deve essere disabilitato sul server di contenuti multimediali dinamici, in modo che il flusso di lavoro di rielaborazione funzioni come previsto.
 
@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Per rielaborare le risorse per contenuti multimediali dinamici in una cartella**:
-1. In AEM, dalla pagina Risorse, individuate la cartella delle risorse Contenuti multimediali dinamici a cui è assegnato un profilo immagine o video e per la quale desiderate applicare l&#39; **Scene7: Rielabora il flusso di lavoro di Asset**,
+1. In Adobe Experience Manager, dalla pagina Risorse, individuate la cartella delle risorse Contenuti multimediali dinamici a cui è assegnato un profilo immagine o video e per la quale desiderate applicare l&#39; **Scene7: Rielabora il flusso di lavoro di Asset**,
 
    Le cartelle a cui è già stato assegnato un profilo immagine o video sono indicate dalla visualizzazione del nome del profilo direttamente sotto il nome della cartella nella vista a schede.
 
@@ -81,11 +81,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Fare clic su **[!UICONTROL Start]**, quindi su **[!UICONTROL Confirm]**.
 
-   Per monitorare il flusso di lavoro o controllarne l&#39;avanzamento, dalla pagina della console principale AEM fare clic su **[!UICONTROL Strumenti > Workflow]**. Nella pagina Istanze flusso di lavoro, selezionate un flusso di lavoro. Nella barra dei menu, fare clic su **[!UICONTROL Apri cronologia]**. È inoltre possibile terminare, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
+   Per monitorare il flusso di lavoro o controllarne l&#39;avanzamento, nella pagina della console principale del Experience Manager  fare clic su **[!UICONTROL Strumenti > Workflow]**. Nella pagina Istanze flusso di lavoro, selezionate un flusso di lavoro. Nella barra dei menu, fare clic su **[!UICONTROL Apri cronologia]**. È inoltre possibile terminare, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
 
 ### Regolazione delle dimensioni batch del flusso di lavoro di rielaborazione {#adjusting-load}
 
-(Facoltativo) La dimensione predefinita del batch nel flusso di lavoro di rielaborazione è 50 risorse per processo. Questa dimensione batch ottimale è determinata dalla dimensione media delle risorse e dai tipi mime di risorse su cui viene eseguito il riprocesso. Con un valore più elevato potete inserire molti file in un singolo processo di rielaborazione. Di conseguenza, il banner di elaborazione rimane AEM risorse per un periodo di tempo più lungo. Tuttavia, se la dimensione media del file è piccola-1 MB o inferiore  Adobe consiglia di aumentare il valore a diverse centinaia, ma mai più di 1000. Se la dimensione media del file è di grandi centinaia di MB- Adobe si consiglia di ridurre la dimensione del batch fino a 10.
+(Facoltativo) La dimensione predefinita del batch nel flusso di lavoro di rielaborazione è 50 risorse per processo. Questa dimensione batch ottimale è determinata dalla dimensione media delle risorse e dai tipi mime di risorse su cui viene eseguito il riprocesso. Con un valore più elevato potete inserire molti file in un singolo processo di rielaborazione. Di conseguenza, il banner di elaborazione rimane sulle risorse  Experience Manager per un periodo di tempo più lungo. Tuttavia, se la dimensione media del file è piccola-1 MB o inferiore  Adobe consiglia di aumentare il valore a diverse centinaia, ma mai più di 1000. Se la dimensione media del file è di grandi centinaia di MB- Adobe si consiglia di ridurre la dimensione del batch fino a 10.
 
 **Per regolare facoltativamente la dimensione batch del flusso di lavoro di rielaborazione**
 
@@ -137,7 +137,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     ![Saving the new property](/help/security/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
 
 -->
