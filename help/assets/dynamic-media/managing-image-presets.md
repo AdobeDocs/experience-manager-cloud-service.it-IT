@@ -2,9 +2,9 @@
 title: Gestione dei predefiniti per immagini
 description: Comprendere i predefiniti per immagini e imparare a creare, modificare e gestire i predefiniti per immagini
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3608'
 ht-degree: 11%
 
 ---
@@ -401,7 +401,7 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
   </tr>
   <tr>
    <td><strong>Modificatore immagine</strong></td>
-   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell'interfaccia utente, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Image Modifiers</strong>. Questi parametri sono definiti nel <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">riferimento al comando Image Server Protocol</a>.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p>
+   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell'interfaccia utente, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Image Modifiers</strong>. Questi parametri sono definiti nel <a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">riferimento al comando Image Server Protocol</a>.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p>
     <ul>
      <li>Comandi di base per la modellazione e il rendering del testo: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandi di localizzazione: <code>locale=</code> e <code>req=xlate</code></li>
@@ -418,7 +418,7 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
 
 ### Definizione delle opzioni per i predefiniti per immagini con i modificatori di immagini {#defining-image-preset-options-with-image-modifiers}
 
-Oltre alle opzioni disponibili nelle schede Base e Avanzate, potete definire modificatori di immagini per fornire ulteriori opzioni per la definizione dei predefiniti per immagini. Il rendering delle immagini si basa sull&#39;API di rendering delle immagini Scene7 e viene definito in dettaglio in [HTTP Protocol Reference](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html).
+Oltre alle opzioni disponibili nelle schede Base e Avanzate, potete definire modificatori di immagini per fornire ulteriori opzioni per la definizione dei predefiniti per immagini. Il rendering delle immagini si basa sull&#39;API Dynamic Media Image Rendering e sono definiti in dettaglio in [HTTP Protocol Reference](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
 
 Di seguito sono riportati alcuni esempi di base delle operazioni che è possibile eseguire con i modificatori di immagini.
 
@@ -426,7 +426,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 >
 >Non è possibile utilizzare alcuni modificatori di immagini [in AEM](#advanced-tab-options).
 
-* [op_invert](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_invert.html)  - Inverte ogni componente di colore per ottenere un effetto immagine negativo.
+* [op_invert](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  - Inverte ogni componente di colore per ottenere un effetto immagine negativo.
 
    ```xml
    &op_invert=1
@@ -434,7 +434,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
    ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_blur.html) - Applica un filtro di sfocatura all&#39;immagine.
+* [op_blur](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - Applica un filtro di sfocatura all&#39;immagine.
 
    ```xml
    &op_blur=7
@@ -450,7 +450,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_bright](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html) - Diminuisce o aumenta la luminosità.
+* [op_bright](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html) - Diminuisce o aumenta la luminosità.
 
    ```xml
    &op_brightness=58
@@ -458,7 +458,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
    ![6_5_imagepreset-edit-bright](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opaco](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_opac.html)  - Regola l&#39;opacità dell&#39;immagine. Consente di ridurre l’opacità in primo piano.
+* [opaco](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  - Regola l&#39;opacità dell&#39;immagine. Consente di ridurre l’opacità in primo piano.
 
    ```xml
    opac=29
