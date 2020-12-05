@@ -2,9 +2,9 @@
 title: Video
 description: Scopri come lavorare con i video in Contenuti multimediali dinamici
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '10056'
+source-wordcount: '10081'
 ht-degree: 10%
 
 ---
@@ -146,7 +146,7 @@ Per gestire video singoli e set video adattivi, sono supportati i seguenti eleme
 * Organizzate, sfogliate e cercate i video con il supporto completo dei metadati per una gestione efficiente delle risorse video.
 * Distribuite set video adattivi sia sul Web che su computer desktop e dispositivi mobili, inclusi iPhone, iPad, Android, Blackberry e Windows Phone.
 
-Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate la [Guida di riferimento dei visualizzatori Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate la [Guida di riferimento dei visualizzatori per contenuti multimediali dinamici](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 Dynamic Media supporta la riproduzione di video mobile per video MP4 H.264. Per un elenco dei dispositivi BlackBerry che supportano questo formato video, consultate: [Formati video supportati su Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,7 +162,7 @@ Per un elenco dei dispositivi Windows che supportano questo formato video, consu
 
 Vedere [Riproduzione video dinamica](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) esempio.
 
-Consultate anche [Visualizzatori per AEM e Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) e [Visualizzatori per AEM risorse](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) nella guida di riferimento dei visualizzatori  Adobe Scene7.
+Consultate anche [Visualizzatori per  AEM Assets e per contenuti multimediali dinamici Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) e [Visualizzatori per  solo AEM Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) nella [Guida di riferimento per visualizzatori per contenuti multimediali dinamici](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ## Procedura consigliata: Utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -174,7 +174,7 @@ Dal lato della riproduzione del visualizzatore, viene rilevata automaticamente l
 
 Combinando in un singolo lettore la possibilità di progettare i componenti di riproduzione in HTML5 e CSS, di usufruire di riproduzione incorporata e di utilizzare lo streaming adattativo e progressivo a seconda delle funzionalità del browser, i contenuti multimediali potranno essere visti dagli utenti desktop e mobili e potranno così godere di un’esperienza video ottimizzata.
 
-Consultate anche [I visualizzatori HTML5](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) nella guida di riferimento dei visualizzatori Adobe Scene7 .
+Consultate anche [Visualizzatori per  solo AEM Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) nella [Guida di riferimento dei visualizzatori per contenuti multimediali dinamici](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ### Riproduzione di video su computer desktop e dispositivi mobili mediante il visualizzatore video HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -191,7 +191,7 @@ HLS è uno standard Apple per lo streaming di video adattivi che regola automati
 
 Il video progressivo viene distribuito scaricando e memorizzando localmente il video sul sistema desktop o sul dispositivo mobile di un utente.
 
-La tabella seguente riassume il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili che utilizzano il visualizzatore video Scene7.
+La tabella seguente riassume il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili mediante il [visualizzatore video HTML5 per contenuti multimediali dinamici](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video).
 
 <table>
  <tbody>
@@ -355,7 +355,7 @@ Questa tabella descrive la velocità dati delle velocità di connessione tipiche
 
 ### Risoluzione {#resolution}
 
-**La risoluzione **descrive l&#39;altezza e la larghezza di un file video, in pixel. La maggior parte dei video sorgente viene memorizzata ad alta risoluzione (ad esempio, 1920 x 1080). Per lo streaming, il video sorgente viene compresso in una risoluzione più piccola (640 x 480 o inferiore).
+**La** risoluzione descrive l’altezza e la larghezza di un file video, in pixel. La maggior parte dei video sorgente viene memorizzata ad alta risoluzione (ad esempio, 1920 x 1080). Per lo streaming, il video sorgente viene compresso in una risoluzione più piccola (640 x 480 o inferiore).
 
 La risoluzione e la velocità dati sono due fattori strettamente correlati che determinano la qualità video. Per mantenere la stessa qualità video, più elevato è il numero di pixel in un file video (più alta è la risoluzione), più alta deve essere la velocità dati. Ad esempio, considerate il numero di pixel per fotogramma in una risoluzione 320 x 240 e un file video con risoluzione 640 x 480:
 
@@ -402,9 +402,9 @@ Ad esempio, supponete che il video sorgente sia 1920 x 1080. Nella tabella segue
 
 | Tipo video | Larghezza x altezza | Rapporto larghezza | Rapporto altezza |
 |--- |--- |--- |--- |
-| Origine | 1920x1080 | 1 | 1 |
+| Origine | 1920x1080 | 1 | 3 |
 | Codificato | 960 x 540 | 2 | 2 |
-| Codificato | 640 x 360 | 3 | 1 |
+| Codificato | 640 x 360 | 3 | 3 |
 | Codificato | 480 x 270 | 4 | 4 |
 
 ### Formato di file video codificato {#encoded-video-file-format}
@@ -983,13 +983,13 @@ Specificate l&#39;intervallo di date iniziale e finale per il quale desiderate i
 
 1. Nella tabella in cui sono elencati i primi video pubblicati, toccate un nome video per riprodurre il video e visualizzate il rapporto (a discesa) di mantenimento dell’audience del video.
 
-### Visualizzazione di rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori Scene7 HMTL5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Visualizzazione di rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 per file multimediali dinamici {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Se utilizzate un visualizzatore video predefinito fornito da Contenuti multimediali dinamici, o se avete creato un predefinito per visualizzatori personalizzato basato su un visualizzatore video integrato, non sono necessari ulteriori passaggi per visualizzare i rapporti video. Tuttavia, se avete creato un visualizzatore video personalizzato basato sull’SDK per visualizzatori HTML5 di Scene7, effettuate le seguenti operazioni per fare in modo che il visualizzatore video invii eventi di tracciamento a rapporti video per elementi multimediali dinamici.
+Se utilizzate un visualizzatore video predefinito fornito da Contenuti multimediali dinamici, o se avete creato un predefinito per visualizzatori personalizzato basato su un visualizzatore video integrato, non sono necessari ulteriori passaggi per visualizzare i rapporti video. Tuttavia, se avete creato un visualizzatore video personalizzato basato sull’SDK per visualizzatori HTML5 per file multimediali dinamici, effettuate le seguenti operazioni per fare in modo che il visualizzatore video invii eventi di tracciamento a rapporti video per file multimediali dinamici.
 
-Per creare visualizzatori video personalizzati, usate Scene7 Viewers Reference e l’SDK per visualizzatori Scene7 HTML5.
+Per creare visualizzatori video personalizzati, usate Dynamic Media Viewers Reference e l’SDK per visualizzatori HTML5 per contenuti multimediali dinamici.
 
-Consultate la [Guida di riferimento dei visualizzatori Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Consultate la [Guida di riferimento dei visualizzatori per contenuti multimediali dinamici](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
 
 <!-- 
 
@@ -1001,7 +1001,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 -->
 
-Per visualizzare i rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 di Scene7:
+**Per visualizzare i rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatore HTML5 per elementi multimediali dinamici:**
 
 1. Passate a qualsiasi risorsa video pubblicata.
 1. Seleziona **[!UICONTROL Visualizzatori]** dall’elenco a discesa dell’angolo in alto a sinistra della pagina della risorsa.
@@ -1061,9 +1061,9 @@ Il lettore video utilizzato deve supportare la visualizzazione delle didascalie.
 
 Elemento multimediale dinamico è in grado di convertire i file di sottotitoli in formato JSON (JavaScript Object Notation). Questa conversione consente di incorporare il testo JSON in una pagina Web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi individuare e indicizzare i contenuti per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
-Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, consultate [Serving static (non-image) contents](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) (Distribuzione di contenuti statici (non immagini)) nella *Guida API di Scene7 Image Serving*.
+Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, consultate [Trasmissione di contenuti statici (non immagini)](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api).
 
-**Per aggiungere sottotitoli o sottotitoli al video**
+**Per aggiungere sottotitoli o sottotitoli al video:**
 
 1. Usate un’applicazione o un servizio di terze parti per creare il file di sottotitoli o sottotitoli video.
 
