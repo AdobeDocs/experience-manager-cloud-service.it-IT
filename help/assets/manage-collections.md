@@ -4,9 +4,9 @@ description: Comprendere il concetto di raccolta in Adobe Experience Manager Ass
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2393'
 ht-degree: 20%
 
 ---
@@ -73,7 +73,7 @@ Potete trascinare le risorse dall&#39;interfaccia utente delle risorse a una rac
 Una raccolta avanzata utilizza un criterio di ricerca per compilare in modo dinamico le risorse. Potete creare una raccolta avanzata utilizzando solo i file e non le cartelle o i file e le cartelle.
 
 1. Passa all’interfaccia utente Assets e tocca o fai clic sull’icona **[!UICONTROL Ricerca]**.
-1. Digitate la parola chiave search nella casella Cerca Omni e premete Invio. Toccate/fate clic sull’icona Navigazione globale per visualizzare il pannello Filtri e applicare un filtro di ricerca dal pannello Ricerca.
+1. Immettete la parola chiave di ricerca nella casella Cerca Omni e selezionate `Enter`. Toccate/fate clic sull’icona Navigazione globale per visualizzare il pannello Filtri e applicare un filtro di ricerca dal pannello Ricerca.
 1. Dall&#39;elenco **[!UICONTROL File e cartelle]**, selezionare **[!UICONTROL File]**.
 1. Toccate/fate clic su **[!UICONTROL Salva raccolta avanzata]**.
 1. Specificate un nome per la raccolta. Selezionate **[!UICONTROL Pubblico]** per aggiungere il gruppo Utenti DAM con il ruolo Visualizzatore alla raccolta avanzata.
@@ -103,7 +103,7 @@ Potete aggiungere risorse a una raccolta contenente un elenco di risorse o carte
 Le raccolte intelligenti vengono create salvando una ricerca in modo da modificarne il contenuto modificando i parametri di ricerca della [ricerca salvata](#saved-searches).
 
 1. Nell&#39;interfaccia utente Risorse, tocca o fai clic sull&#39;icona **[!UICONTROL Cerca]** nella barra degli strumenti.
-1. Con il cursore nella casella Omnisearch, premere il tasto Invio.
+1. Con il cursore nella casella di ricerca Omnice, selezionare il tasto `Enter`.
 1. Toccate o fate clic sull&#39;icona GlobalNav per visualizzare il pannello Filtri.
 1. Dall’elenco **[!UICONTROL Ricerche salvate]**, seleziona la raccolta avanzata da modificare. Nel pannello Ricerca sono visualizzati i filtri configurati per la ricerca salvata.
 1. Dall&#39;elenco **[!UICONTROL File e cartelle]**, selezionare **[!UICONTROL File]**.
@@ -238,7 +238,7 @@ Per eliminare le ricerche salvate, effettuate le seguenti operazioni:
 
 1. Nell’interfaccia utente Risorse, tocca o fai clic sull’icona di ricerca nella barra degli strumenti.
 
-1. Con il cursore nel campo Omnisearch, premere il tasto Invio.
+1. Con il cursore nel campo Omnisearch, selezionare il tasto `Enter`.
 1. Tocca o fai clic sull’icona GlobalNav per visualizzare il pannello Filtri.
 1. Nell’elenco **[!UICONTROL Ricerche salvate]**, tocca o fai clic su **[!UICONTROL Elimina]** accanto alla raccolta avanzata da eliminare.
 1. Nella finestra di dialogo, toccate o fate clic su **[!UICONTROL Elimina]** per eliminare la ricerca salvata.
@@ -249,7 +249,7 @@ Potete eseguire un flusso di lavoro per le risorse all&#39;interno di una raccol
 
 1. Dalla console Raccolte, selezionate una raccolta in cui desiderate eseguire un flusso di lavoro.
 1. Toccate/fate clic sull&#39;icona di navigazione globale e scegliete **[!UICONTROL Timeline]** dall&#39;elenco.
-1. Dalla timeline, tocca o fai clic sull’icona del cursore verso il basso, quindi tocca o fai clic su **[!UICONTROL Avvia flusso di lavoro]**.
+1. Dalla timeline, selezionate o toccate l&#39;icona Carrello nella parte inferiore, quindi toccate o fate clic su **[!UICONTROL Avvia flusso di lavoro]**.
 1. Nella sezione **[!UICONTROL Avvia flusso di lavoro]**, seleziona un modello di flusso di lavoro dall’elenco. Ad esempio, scegli il modello **[!UICONTROL Risorsa di aggiornamento DAM]**.
 1. Inserite un titolo per il flusso di lavoro e toccate o fate clic su **[!UICONTROL Start]**.
 1. Nella finestra di dialogo, toccate o fate clic su **[!UICONTROL Procedi]**. Il flusso di lavoro viene eseguito su tutte le risorse della raccolta.
