@@ -2,7 +2,7 @@
 title: Facet di ricerca.
 description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in AEM.
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2377'
 ht-degree: 23%
@@ -33,9 +33,9 @@ Per le ricerche full-text, aggiungere il predicato `Fulltext` al modulo. Utilizz
 
 1. Nella pagina Edit Search Forms (Modifica ricerca in), trascinate un predicato dalla scheda **[!UICONTROL Select Predicate]** al riquadro principale. Ad esempio, trascinare **[!UICONTROL Predicato proprietà]**.
 
-   ![Premere e spostare un predicato per personalizzare i filtri di ricerca](assets/drag_predicate.png)
+   ![Selezionate e spostate un predicato per personalizzare i filtri di ricerca](assets/drag_predicate.png)
 
-   *Figura: Premere e spostare un predicato per personalizzare i filtri di ricerca.*
+   *Figura: Selezionate e spostate un predicato per personalizzare i filtri di ricerca.*
 
 1. Nella scheda Impostazioni, inserite un&#39;etichetta di campo, un testo segnaposto e una descrizione per il predicato. Specificate un nome valido per la proprietà di metadati che desiderate associare al predicato. L&#39;etichetta dell&#39;intestazione nella scheda Impostazioni identifica il tipo di predicato selezionato.
 
