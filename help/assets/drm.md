@@ -3,9 +3,9 @@ title: Digital Rights Management in [!DNL Assets]
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager] come a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1343'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,7 @@ Potete cercare le risorse scadute, comprese le risorse secondarie scadute, nel p
 
 1. Nella console [!DNL Assets], fare clic su **[!UICONTROL Cerca]** nella barra degli strumenti per visualizzare la casella di ricerca Omnisearch.
 
-1. Con il cursore nella casella di ricerca Omnice, premere il tasto Invio per visualizzare la pagina dei risultati della ricerca.
+1. Con il cursore nella casella di ricerca Omnice, selezionate il tasto `Enter` per visualizzare la pagina dei risultati della ricerca.
 
 1. Fate clic sull’icona GlobalNav per visualizzare il pannello di ricerca.
 
@@ -95,7 +95,7 @@ La console [!DNL Assets] può visualizzare vari stati per le risorse. A seconda 
 
 1. Per cercare le risorse in base al loro stato, fate clic su **[!UICONTROL Cerca]** per visualizzare la barra di ricerca Omnico.
 
-1. Premere Invio e fare clic su [!DNL Experience Manager] per visualizzare il pannello di ricerca.
+1. Selezionare `Return` e fare clic su [!DNL Experience Manager] per visualizzare il pannello di ricerca.
 1. Nel pannello di ricerca, fate clic su **[!UICONTROL Stato pubblicazione]** e selezionate **[!UICONTROL Pubblicato]** per cercare le risorse pubblicate in [!DNL Assets].
 
 1. Fate clic su **[!UICONTROL Stato approvazione]** e fate clic sull&#39;opzione appropriata per cercare le risorse approvate o rifiutate.
