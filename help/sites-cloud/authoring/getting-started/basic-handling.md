@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e le funzioni di base
 translation-type: tm+mt
-source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
 * [Ricerca](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Pulsante Ricerca](/help/sites-cloud/authoring/assets/search-button.png)
+   ![Icona di ricerca](/help/sites-cloud/authoring/assets/search-icon.png)
 
    È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
 
