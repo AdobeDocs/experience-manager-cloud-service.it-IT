@@ -2,9 +2,9 @@
 title: Convertitore indice
 description: Convertitore indice
 translation-type: tm+mt
-source-git-commit: adfc453729b88a9cc457783806eb7b4d69150b21
+source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
@@ -34,5 +34,5 @@ Esistono due modi per creare definizioni personalizzate di indice Oak:
 >[!NOTE]
 >Sebbene si consiglia di utilizzare lo strumento di conversione indice tramite il plug-in CLI [AIO per la migrazione dell&#39;origine](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration), può anche essere eseguito autonomamente.
 
-Fare riferimento a **[Risorse Git: aem-cs-source-migration-index-converter](https://git.corp.adobe.com/vavarshn/aem-cloud-service-source-migration/blob/master/packages/index-converter/README.md)** per scoprire come installare e usare il plug-in.
+Fare riferimento a **[Risorse Git: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** per scoprire come installare e usare il plug-in.
 
