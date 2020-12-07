@@ -2,9 +2,9 @@
 title: Verifica dello stato del nome del dominio
 description: Verifica dello stato del nome del dominio
 translation-type: tm+mt
-source-git-commit: 5cd22d8af20bb947e4cdab448cf8f20c6596bb2e
+source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Per determinare se il nome di dominio è stato verificato correttamente, fai clic sull’icona Stato del nome di dominio nella tabella in Ambienti della pagina Impostazioni dominio.
 
 >[!NOTE]
->Cloud Manager attiva automaticamente una verifica TXT quando selezioni Salva nel passaggio di verifica della procedura guidata Aggiungi dominio personalizzato. Per le verifiche successive, devi selezionare attivamente l’icona &quot;verifica di nuovo&quot; accanto allo stato. INSERISCI IMMAGINE
+>Cloud Manager attiva automaticamente una verifica TXT quando selezioni Salva nel passaggio di verifica della procedura guidata Aggiungi dominio personalizzato. Per le verifiche successive, devi selezionare attivamente l&#39;icona **verify again** accanto allo stato.
 
 Cloud Manager verificherà la proprietà del dominio tramite il valore TXT e visualizzerà uno dei seguenti messaggi di stato:
 
@@ -29,7 +29,7 @@ corsoVerifica in corso. Questo stato viene generalmente visualizzato dopo che av
 non riuscitaTXT. Tuttavia, la distribuzione CDN non è riuscita.  rappresentante del Adobe ne verrà informato automaticamente.
 
 * **Dominio verificato e**
-distribuitoQuesto stato indica che il nome di dominio personalizzato è pronto per essere utilizzato. Nota: A questo punto, il tuo nome di dominio personalizzato è pronto per essere testato e punta al nome di dominio di Cloud Manager. Per informazioni su come eseguire questa operazione, vedere Configurazione del collegamento INSERT delle impostazioni DNS.
+distribuitoQuesto stato indica che il nome di dominio personalizzato è pronto per essere utilizzato. Nota: A questo punto, il tuo nome di dominio personalizzato è pronto per essere testato e punta al nome di dominio di Cloud Manager. Per informazioni su come eseguire questa operazione, vedere Configurazione delle impostazioni DNS.
 
 * **Eliminazione**
 del nome di dominio personalizzato in corso.
@@ -37,62 +37,3 @@ del nome di dominio personalizzato in corso.
 * **Eliminazione**
 non riuscitaEliminazione del nome di dominio personalizzato non riuscita. È necessario riprovare. Per ulteriori informazioni sull&#39;argomento, fare clic su Elimina nome di dominio personalizzato.
 
-
-## Configurazione delle impostazioni DNS {#configure-dns}
-
-Dopo aver verificato e distribuito correttamente il nome di dominio personalizzato, è possibile aggiornare i record DNS per il nome di dominio personalizzato con il provider DNS. In questo modo il sito potrà servire ai visitatori. Di conseguenza, questa attività viene in genere eseguita prima di Go-live.
-
->[!NOTE]
->L&#39;utente o l&#39;utente dell&#39;organizzazione deve essere in grado di accedere o contattare il provider DNS (la società da cui hai acquistato il dominio) e di effettuare aggiornamenti nelle impostazioni DNS.
-
-A tal fine, devi determinare se devi configurare le impostazioni DNS su un record `CNAME` o Apex che punta il nome di dominio personalizzato al nome di dominio di Cloud Manager. Un record `CNAME` o A, una volta effettuato il provisioning, indirizza tutto il traffico Internet per il dominio a ovunque esso stia puntando. Se la posizione non è predisposta per il traffico, si verificherà un&#39;interruzione. Se non è stato testato, potrebbero verificarsi errori nel contenuto. Questo è il motivo per cui questo passaggio viene sempre fatto dopo che il test è completo e il cliente è pronto per il Go-live.
-
-### Record CNAME {#cname-record}
-
-Le sezioni seguenti consentono di determinare quale tipo di record è appropriato per la configurazione DNS.
-
-Un record di nome canonico o `CNAME` è un tipo di record DNS che mappa un nome alias a un nome di dominio vero o canonico. I record CNAME vengono generalmente utilizzati per mappare un sottodominio, ad esempio `www.example.com`, al dominio che ospita il contenuto del sottodominio.
-
-Accedi al Registratore di dominio e crea un record CNAME per indirizzare il nome di dominio personalizzato alla destinazione come mostrato di seguito:
-
-| CNAME | Nome di dominio personalizzato point to Target |
-|--- |--- |
-| www.customdomain.com | cdn.adobeaemcloud.com |
-
-### Record APEX {#apex-record}
-
-Un dominio apex è un dominio personalizzato che non contiene un sottodominio, ad esempio example.com. Un dominio apex è configurato con un record `A`, `ALIAS` o `ANAME` tramite il provider DNS. I domini Apex devono puntare a indirizzi IP specifici.
-
-Aggiungi tutti i seguenti record A alle impostazioni DNS del dominio tramite il provider di dominio:
-
-* `A RECORD`
-
-* `A record for domain @ pointing to IP 151.101.3.10`
-
-* `A record for domain @ pointing to IP 151.101.67.10`
-
-* `A record for domain @ pointing to IP 151.101.131.10`
-
-* `A record for domain @ pointing to IP 151.101.195.10`
-
-## Verifica dello stato del record DNS {#check-status-dns-record}
-
-È possibile determinare se il nome di dominio viene risolto correttamente nel AEM come sito Web di Cloud Service facendo clic sull&#39;icona Stato per il record DNS nella tabella in Ambienti della pagina Impostazioni di dominio. Cloud Manager esegue una ricerca DNS per il tuo nome di dominio e visualizza uno dei seguenti messaggi di stato:
-
->[!NOTE]
->Cloud Manager attiva automaticamente una ricerca DNS quando il nome di dominio personalizzato viene verificato e distribuito per la prima volta. Per i tentativi successivi, devi selezionare attivamente l&#39;icona **resolve again** accanto allo stato. INSERISCI IMMAGINE
-
-* **Lo stato DNS non**
-rilevatoLo stato DNS non verrà rilevato finché il nome di dominio personalizzato non sarà stato verificato e distribuito correttamente. Questo stato viene osservato anche quando il nome del dominio personalizzato è in fase di eliminazione.
-
-* **Risoluzioni DNS**
-errate: indica che la configurazione dei record DNS non è ancora stata risolta/puntata o è errata.  rappresentante del Adobe ne verrà informato automaticamente.
-
-   >[!NOTE]
-   >È necessario configurare `CNAME` o `A-record` seguendo le istruzioni corrispondenti. Per ulteriori informazioni sull&#39;argomento, vedere Configurazione del collegamento INSERT delle impostazioni DNS. Quando è pronto, è necessario selezionare l&#39;icona &quot;resolve again&quot; accanto allo stato.
-
-* **Risoluzione DNS in**
-corsoRisoluzione. Questo stato viene generalmente visualizzato dopo che avete selezionato l’icona &quot;resolve again&quot; (Risolvi di nuovo) accanto allo stato.
-
-* **DNS Risolve**
-correttamenteLe impostazioni DNS sono configurate correttamente. Il sito è al servizio dei visitatori.
