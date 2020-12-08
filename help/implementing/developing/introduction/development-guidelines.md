@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Linee guida per lo sviluppo per AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
+source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2239'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,7 @@ I livelli di registro sono i seguenti:
 
 Le discariche di thread negli ambienti Cloud vengono raccolte in modo continuativo, ma al momento non possono essere scaricate in modo autonomo. Nel frattempo, contattate AEM supporto se sono necessari dei thread dumps per il debug di un problema, specificando la finestra temporale esatta.
 
-## Console CRX/DE Lite e System {#crxde-lite-and-system-console}
+## Console CRX/DE Lite e Developer {#crxde-lite-and-developer-console}
 
 ### Sviluppo locale {#local-development}
 
@@ -132,7 +132,7 @@ Sullo sviluppo locale (tramite l&#39;avvio rapido per il cloud), `/apps` e `/lib
 
 ### AEM come strumenti di sviluppo Cloud Service {#aem-as-a-cloud-service-development-tools}
 
-I clienti possono accedere a CRXDE lite nell&#39;ambiente di sviluppo, ma non sullo stage o sulla produzione. L&#39;archivio immutabile (`/libs`, `/apps`) non può essere scritto in fase di esecuzione, pertanto il tentativo di eseguire tale operazione potrebbe causare errori.
+I clienti possono accedere a CRXDE lite nell&#39;ambiente di sviluppo del livello di authoring, ma non nell&#39;area di visualizzazione o nella produzione. L&#39;archivio immutabile (`/libs`, `/apps`) non può essere scritto in fase di esecuzione, pertanto il tentativo di eseguire tale operazione potrebbe causare errori.
 
 Un set di strumenti per il debug AEM come ambienti di sviluppo di Cloud Service è disponibile in Developer Console per gli ambienti di sviluppo, fase e produzione. Per determinare l’URL, regolate gli URL del servizio Autore o Pubblica nel modo seguente:
 
