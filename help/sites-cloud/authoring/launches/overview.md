@@ -2,10 +2,10 @@
 title: Lanci
 description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per una pubblicazione futura, mantenendo le pagine correnti
 translation-type: tm+mt
-source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 90%
+source-wordcount: '878'
+ht-degree: 83%
 
 ---
 
@@ -84,22 +84,31 @@ I lanci permettono di:
 >
 >Per qualsiasi problema riscontrato, contatta l&#39;amministratore del sistema.
 
-### La console dei lanci {#the-launches-console}
-
-La console dei lanci fornisce una panoramica dei tuoi lanci e consente di intraprendere azioni su quelli elencati. Puoi accedere alla console da:
-
-* La console **Strumenti**: **Strumenti**, **Sites**, **Lanci**.
-
-* Oppure direttamente con `https://<host>:<port>/libs/launches/content/launches.html`
-
 ## Lanci nei Riferimenti (console Sites) {#launches-in-references-sites-console}
 
 1. Nella console **Sites**, vai all’origine dei lanci.
 1. Apri la barra **Riferimenti** e seleziona la pagina sorgente.
-1. Seleziona **Lanci** per visualizzare l’elenco dei lanci esistenti:
+1. Seleziona **Lanci**, verranno elencati i lanci esistenti, insieme all&#39;accesso alla **Console Lanci**:
 
    ![Riferimenti agli avvii nella console Siti](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Tocca o fai clic sul lancio appropriato per visualizzare l&#39;elenco delle azioni possibili :
 
    ![Azioni da intraprendere agli avvii nella console Siti](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## La console dei lanci {#the-launches-console}
+
+La console dei lanci fornisce una panoramica dei tuoi lanci e consente di intraprendere azioni su quelli elencati. Puoi accedere alla console da:
+
+* La console **Strumenti**: **Strumenti**, **Sites**, **Lanci**.
+
+* **Avvii Consente di** console nella parte inferiore della sezione  **** Avvii della barra laterale  **** Riferimenti durante la navigazione del contenuto sorgente nella console Siti.
+
+   ![Lancia la console nei riferimenti degli avvii nella console Siti](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* Il pulsante **Lanci** in alto a destra, quando si naviga nel contenuto del lancio nella console Siti:
+
+   ![Opzione Lanci nella console Siti](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* o direttamente; ad esempio, con:
+   `https://<host>:<port>/libs/launches/content/launches.html`
