@@ -2,10 +2,10 @@
 title: Creazione dei lanci
 description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 87%
+source-wordcount: '998'
+ht-degree: 85%
 
 ---
 
@@ -120,13 +120,15 @@ Un lancio nidificato (lancio all’interno di un altro lancio) dà la possibilit
 La creazione di un lancio nidificato dalla console **Lanci** è sostanzialmente la stessa procedura utilizzata per creare qualsiasi altra forma di avvio, con l&#39;eccezione che è necessario passare al ramo avvii `/content/launches`:
 
 1. Nella console **Lanci** seleziona **Crea**.
-1. Fai clic su **Aggiungi pagine**, quindi specifica `/content/launches` nel filtro per individuare il ramo lanci. Scegli il lancio necessario e conferma con **Seleziona**:
+1. Selezionare **Aggiungi pagine**, quindi passare al ramo avvii specificando `/content/launches` nella barra **Filtri**. Scegli il lancio necessario e conferma con **Seleziona**:
 
    ![Creazione di un lancio nidificato](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. Procedi con **Successivo** e imposta le **Proprietà** come per un qualsiasi altro lancio.
+1. Procedi con **Successivo**.
 
-   ![Seleziona origine per il lancio nidificato](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. Completa le **Proprietà** come con qualsiasi altro avvio.
+
+1. Completa con **Create**.
 
 #### Creazione di un lancio nidificato: console Sites {#creating-a-nested-launch-sites-console}
 
