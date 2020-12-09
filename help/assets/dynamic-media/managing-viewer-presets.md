@@ -1,10 +1,10 @@
 ---
 title: Gestione dei predefiniti per visualizzatori
-description: Come creare e gestire i predefiniti per visualizzatori
+description: Come creare e gestire i predefiniti per visualizzatori in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4261'
 ht-degree: 17%
 
 ---
@@ -51,7 +51,7 @@ Per aggiungere, modificare, eliminare, pubblicare, annullare la pubblicazione e 
 
 Diverse pagine Web hanno esigenze diverse. Ad esempio, a volte desiderate una pagina Web che fornisca un collegamento per aprire il visualizzatore HTML5 in una finestra browser separata. In altri casi, potrebbe essere necessario incorporare il visualizzatore HTML5 direttamente nella pagina host. In quest’ultimo caso, la pagina Web potrebbe avere un layout statico. Oppure può essere &quot;reattivo&quot; e può essere visualizzato in modo diverso su diversi dispositivi o per diverse dimensioni della finestra del browser. Per soddisfare queste esigenze, tutti i visualizzatori HTML5 predefiniti forniti con Dynamic Media supportano sia le pagine Web statiche che quelle reattive.
 
-Per ulteriori informazioni su come incorporare visualizzatori reattivi nelle pagine Web, consultate la [libreria di immagini statiche reattive](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) nella *Guida API per il server di immagini multimediali dinamiche e il rendering delle API*.
+Per ulteriori informazioni su come incorporare visualizzatori reattivi nelle pagine Web, consultate [Libreria immagini statiche reattive](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) nella *Guida API di Dynamic Media Image Server e di rendering*.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Per ulteriori informazioni su come incorporare visualizzatori reattivi nelle pag
 
 ### Compatibilità del sistema dei predefiniti per visualizzatori {#viewer-preset-system-compatibility}
 
-Tutti i predefiniti per visualizzatori forniti con gli elementi multimediali dinamici sono completamente compatibili con i seguenti sistemi:
+Tutti i predefiniti per visualizzatori forniti con Dynamic Media sono completamente compatibili con i seguenti sistemi:
 
 * Desktop
 * Apple iPhone
@@ -148,7 +148,7 @@ Gli amministratori possono aggiungere e personalizzare i seguenti tipi di conten
 
 ### Elenco di predefiniti per visualizzatori forniti con Scene7 {#list-of-out-of-the-box-viewer-presets}
 
-La tabella seguente identifica tutti i predefiniti per visualizzatori predefiniti forniti con gli elementi multimediali dinamici.
+La tabella seguente identifica tutti i predefiniti per visualizzatori predefiniti forniti con Dynamic Media.
 
 Vedere anche [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
@@ -158,7 +158,7 @@ Consultate &quot;Note sulla versione dei visualizzatori&quot; nel sommario della
 
 >[!NOTE]
 >
->Tutti i predefiniti per visualizzatori inclusi in Contenuti multimediali dinamici sono già attivati (attivato), ma è necessario pubblicarli.
+>Tutti i predefiniti per visualizzatori integrati in Dynamic Media sono già attivati (attivato), ma è necessario pubblicarli.
 >Consultate [Predefiniti visualizzatore pubblicazione](#publishing-viewer-presets).
 >
 >Eventuali nuovi predefiniti per visualizzatori creati e aggiunti devono essere attivati *e *pubblicati.
@@ -389,7 +389,7 @@ AEM mostra un’ampia varietà di predefiniti per visualizzatori quando visualiz
 
 La creazione di predefiniti per visualizzatori consente di applicare diverse impostazioni per visualizzare e interagire con le risorse. Tuttavia, non è necessario creare nuovi predefiniti per visualizzatori. Se preferite, potete usare i predefiniti per visualizzatori predefiniti forniti con  AEM Assets.
 
-Se scegliete di creare un nuovo predefinito per visualizzatori, dopo averlo salvato, lo stato del visualizzatore viene attivato automaticamente (impostato su **[!UICONTROL On]**) nella pagina Predefiniti visualizzatore. Questo stato significa che è visibile nel componente Contenuti multimediali dinamici e nel componente Contenuti multimediali interattivi e ogni volta che visualizzate l’anteprima di un’immagine o di un video.
+Se scegliete di creare un nuovo predefinito per visualizzatori, dopo averlo salvato, lo stato del visualizzatore viene attivato automaticamente (impostato su **[!UICONTROL On]**) nella pagina Predefiniti visualizzatore. Questo stato significa che è visibile nel componente Dynamic Media e nel componente Supporto interattivo e ogni volta che visualizzate l’anteprima di un’immagine o di un video.
 
 Alcuni predefiniti per visualizzatori dispongono di impostazioni esclusive che possono influenzare l’utilizzo e il comportamento generale del visualizzatore. A seconda del predefinito per visualizzatori che state creando, potete essere consapevoli di queste considerazioni speciali.
 
@@ -530,7 +530,7 @@ I predefiniti per visualizzatori disponibili nell’interfaccia utente dipendono
 
 ## Predefiniti visualizzatore di pubblicazione {#publishing-viewer-presets}
 
-Attivando (o attivando &quot;Attivato&quot;) lo stato di un predefinito per visualizzatori significa che è visibile nel componente Contenuti multimediali dinamici, nel componente Contenuti multimediali interattivi e ogni volta che visualizzate una risorsa.
+Attivando (o attivando &quot;Attivato&quot;) lo stato di un predefinito per visualizzatori significa che è visibile nel componente Dynamic Media, nel componente Supporto interattivo e ogni volta che visualizzate una risorsa.
 
 Tuttavia, per fornire* *una risorsa con un predefinito visualizzatore, è necessario pubblicare anche esso. Per ottenere l’URL o il codice da incorporare per una risorsa, tutti i predefiniti visualizzatore devono essere attivati *e* pubblicati. Devi attivare e pubblicare tutti i predefiniti visualizzatore che sono forniti con i Dynamic Media. I predefiniti visualizzatore personalizzati che crei e aggiungi vengono attivati automaticamente, ma devono anche essere pubblicati.
 
@@ -569,7 +569,7 @@ Tenete presente che la modifica di eventuali predefiniti per visualizzatori *pre
 
 ## Eliminazione dei predefiniti per visualizzatori personalizzati {#deleting-custom-viewer-presets}
 
-Potete eliminare i predefiniti per visualizzatori creati e aggiunti agli elementi multimediali dinamici.
+Potete eliminare i predefiniti per visualizzatori creati e aggiunti ad Dynamic Media.
 
 **Per eliminare i predefiniti per visualizzatori personalizzati**
 
@@ -597,4 +597,4 @@ Se hai già pubblicato sia la risorsa che il visualizzatore selezionato, dopo av
 
 Per ottenere gli URL per i predefiniti per visualizzatori, consultate [Collegamento degli URL all’applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Consultate anche [Incorporamento del visualizzatore video in una pagina Web](/help/assets/dynamic-media/embed-code.md).
 
-Se usate AEM WCM, potete aggiungere risorse utilizzando i predefiniti per visualizzatori direttamente sulla pagina. Consultate [Aggiunta di risorse multimediali dinamiche alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Se usate AEM WCM, potete aggiungere risorse utilizzando i predefiniti per visualizzatori direttamente sulla pagina. Consultate [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
