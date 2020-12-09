@@ -2,10 +2,10 @@
 title: Creazione dei lanci
 description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro.
 translation-type: tm+mt
-source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
+source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 85%
+source-wordcount: '1045'
+ht-degree: 81%
 
 ---
 
@@ -19,6 +19,18 @@ Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di p
 * Per impostazione predefinita, Live Copy aggiorna automaticamente le pagine di lancio mano a mano che vengono modificate le pagine sorgente. Per evitare che vengano apportate tali modifiche automatiche, puoi specificare che venga creata una copia statica. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
 Facoltativamente, puoi specificare la **Data lancio** (e l’ora) per definire quando promuovere e attivare le pagine del lancio. Tuttavia, la **Data lancio** funziona solo in combinazione con il flag **Production Ready** (vedi la sezione [Modifica di una configurazione di lancio](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)). Affinché le azioni vengano effettivamente eseguite in automatico, è necessario impostare entrambe.
+
+>[!NOTE]
+>
+>Quando create un lancio, le pagine più in alto nella gerarchia non sono copie delle pagine di origine. Sono segnaposto, creati con il modello:
+>
+>* `/libs/launches/templates/outofscope`
+>
+>
+Queste pagine non possono essere modificate. Verrà visualizzato il messaggio:
+>
+>* **Questa pagina non fa parte del lancio. Vai alla pagina di produzione**
+
 
 ## Creazione di un lancio {#creating-a-launch}
 
