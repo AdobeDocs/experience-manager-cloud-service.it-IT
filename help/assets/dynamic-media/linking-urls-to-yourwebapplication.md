@@ -1,8 +1,8 @@
 ---
 title: Collegamento di URL all’applicazione web
-description: Come collegare gli URL all’applicazione Web in contenuti multimediali dinamici
+description: Come collegare gli URL all’applicazione Web in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 11%
@@ -12,11 +12,11 @@ ht-degree: 11%
 
 # Collegamento di URL all’applicazione web {#linking-urls-to-your-web-application}
 
-I siti Web e le applicazioni accedono ai servizi di Dynamic Media mediante chiamate URL. Dopo la pubblicazione di una risorsa, Dynamic Media attiva una stringa URL che fa riferimento alla risorsa. Potete incollare questi URL in un browser Web per sottoporli a test.
+I siti Web e le applicazioni accedono ai servizi Dynamic Media mediante chiamate URL. Dopo la pubblicazione di una risorsa, Dynamic Media attiva una stringa URL che fa riferimento alla risorsa. Potete incollare questi URL in un browser Web per sottoporli a test.
 
 È possibile impostare un collegamento agli URL solo se *non* si utilizza AEM come WCM. Il collegamento e l’incorporamento vengono utilizzati per distribuire un lettore video come finestra a comparsa o modale. Se utilizzi AEM come WCM, [aggiungi le risorse direttamente sulla pagina.](adding-dynamic-media-assets-to-pages.md)
 
-Per inserire queste stringhe URL nelle pagine Web e nelle applicazioni, copiatele da Contenuti multimediali dinamici.
+Per inserire queste stringhe URL nelle pagine Web e nelle applicazioni, copiatele da Dynamic Media.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 1. Nella pagina **[!UICONTROL Cloud Services]**, scorri verso il basso fino all’intestazione **[!UICONTROL Servizi cloud per elementi multimediali dinamici]**, quindi tocca **[!UICONTROL Mostra configurazioni]**.
 1. In **[!UICONTROL Configurazioni disponibili]**, tocca il nome della configurazione desiderata.
 
-1. Nella pagina **[!UICONTROL Impostazioni Dynamic Media Cloud Settings]**, in **[!UICONTROL URL del servizio video]**, copiate l&#39;intero percorso dell&#39;URL. Sarà necessario che il percorso dell’URL copiato venga completato più avanti nei passaggi descritti.
+1. Nella pagina **[!UICONTROL Dynamic Media Cloud Settings]**, in **[!UICONTROL URL del servizio video]**, copiate l&#39;intero percorso dell&#39;URL. Sarà necessario che il percorso dell’URL copiato venga completato più avanti nei passaggi descritti.
 
    Ad esempio, il percorso dell’URL potrebbe essere simile al seguente:
 
@@ -156,7 +156,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 1. In AEM, andate a **[!UICONTROL Strumenti > Distribuzione > Cloud > Cloud Services]**.
 1. Nella pagina **[!UICONTROL Cloud Services]**, scorri verso il basso fino all’intestazione **[!UICONTROL Servizi cloud per elementi multimediali dinamici]**, quindi tocca **[!UICONTROL Mostra configurazioni]**.
 1. In **[!UICONTROL Configurazioni disponibili]**, tocca il nome della configurazione desiderata.
-1. Nella pagina **[!UICONTROL Impostazioni Cloud Services multimediali dinamici]**, effettuate le seguenti operazioni:
+1. Nella pagina **[!UICONTROL Impostazioni Cloud Services Dynamic Media]**, effettuare le seguenti operazioni:
 
    * In **[!UICONTROL URL servizio video]**, copiate l&#39;intero percorso dell&#39;URL. Successivamente, in questi passaggi, sarà necessario copiare il percorso URL. Ad esempio, il percorso dell’URL potrebbe essere simile al seguente:
 
@@ -188,7 +188,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
     </tbody>
    </table>
 
-1. Copiate il percorso completo della risorsa video in AEM, come elaborato da Contenuti multimediali dinamici. Questo percorso di risorse video copiato sarà necessario più avanti nei seguenti passaggi.
+1. Copiate il percorso completo della risorsa video in AEM, come elaborato da Dynamic Media. Questo percorso di risorse video copiato sarà necessario più avanti nei seguenti passaggi.
 
    Esempio:
 
@@ -206,8 +206,8 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Utilizzo di HTTP/2 per distribuire le risorse multimediali dinamiche {#using-http-to-deliver-your-dynamic-media-assets}
+## Utilizzo di HTTP/2 per distribuire le risorse Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 è il nuovo protocollo Web aggiornato che migliora il modo in cui i browser e i server comunicano. Fornisce un trasferimento più rapido delle informazioni e riduce la quantità di potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media ora può avvenire tramite HTTP/2, migliorando la risposta e i tempi di caricamento.
 
-Per informazioni dettagliate sull&#39;utilizzo di HTTP/2 con l&#39;account Dynamic Media, consultate [HTTP2 Delivery of Content](http2faq.md) (Distribuzione di contenuti HTTP2&lt;a1/>).
+Per informazioni dettagliate sull&#39;utilizzo di HTTP/2 con l&#39;account Dynamic Media, vedere [HTTP2 Delivery of Content](http2faq.md).
