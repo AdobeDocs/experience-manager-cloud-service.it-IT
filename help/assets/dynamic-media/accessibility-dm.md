@@ -1,11 +1,11 @@
 ---
 title: Accessibilità in [!DNL Dynamic Media]
-description: Informazioni sull’accessibilità nei visualizzatori per contenuti multimediali dinamici e per contenuti multimediali dinamici
+description: Informazioni sull’accessibilità nei visualizzatori Dynamic Media e Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 ---
 
 
-# Accessibilità in contenuti multimediali dinamici {#working-with-three-d-assets-dm}
+# Accessibilità in Dynamic Media {#working-with-three-d-assets-dm}
 
-Dynamic Media supporta il controllo da tastiera e tecnologie di supporto, come gli assistenti vocali JAWS e NVDA, nell’interfaccia utente di authoring.
+Dynamic Media supporta le tecnologie di controllo della tastiera e di assistenza, come gli assistenti vocali JAWS e NVDA, nell’interfaccia utente di authoring.
 
-## Supporto per l&#39;accessibilità da tastiera in Contenuti multimediali dinamici
+## Supporto dell&#39;accessibilità da tastiera in Dynamic Media
 
-Poiché l’elemento multimediale dinamico è un plug-in per  risorse di Experience Manager, la maggior parte dei controlli da tastiera è esattamente uguale a  risorse di Experience Manager. Ad esempio, il pulsante `Cancel` in Contenuti multimediali dinamici ha la stessa evidenziazione dello stato attivo  Risorse Experience Manager e reagisce alla chiave `Spacebar` come in  Risorse Experience Manager. Vedere [Scelte rapide da tastiera in Risorse](/help/assets/accessibility.md#keyboard-shortcuts).
+Poiché Dynamic Media è un plug-in per  risorse di Experience Manager, la maggior parte dei controlli da tastiera si comportano esattamente come in  risorse Experience Manager. Ad esempio, il pulsante `Cancel` in Dynamic Media ha la stessa evidenziazione dello stato attivo di  risorse del Experience Manager e reagisce alla chiave `Spacebar` come in  risorse Experience Manager. Vedere [Scelte rapide da tastiera in Risorse](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Nella maggior parte dei casi, i tasti supportati dai singoli elementi dell’interfaccia utente in Contenuti multimediali dinamici sono evidenti e facili da scoprire. Il controllo della tastiera in Contenuti multimediali dinamici è il seguente:
+I tasti supportati dai singoli elementi dell&#39;interfaccia utente in Dynamic Media sono, nella maggior parte dei casi, evidenti e facili da scoprire. Il controllo della tastiera in Dynamic Media è circa quanto segue:
 
 * Possibilità di utilizzare i tasti `Tab` e `Shift+Tab` per spostarsi tra gli elementi interattivi sulla pagina.
 L&#39;utilizzo di `Tab` rende più attivo il successivo elemento dell&#39;interfaccia utente nell&#39;ordine di tabulazione; l&#39;utilizzo di `Shift+Tab` riattiva l&#39;elemento dell&#39;interfaccia utente precedente.
@@ -46,18 +46,18 @@ Vedere [Modifica del ritaglio avanzato o del campione avanzato di una singola im
 
 ## Supporto della tecnologia di assistenza in Dynamic Media {#assistive-technology=support-for-dm}
 
-Gli elementi dell’interfaccia utente per i file multimediali dinamici funzionano con tecnologie di supporto quali gli assistenti vocali. Ad esempio, riconosce i punti di riferimento in una pagina quando si spostano i punti di riferimento utilizzando la scelta rapida da tastiera `D` o aree mediante la scelta rapida da tastiera `R`. Inoltre, viene riportata l&#39;intestazione durante la navigazione tramite la scelta rapida da tastiera del titolo `H`.
+Gli elementi dell&#39;interfaccia utente di Dynamic Media funzionano con tecnologie di assistenza come gli assistenti vocali. Ad esempio, riconosce i punti di riferimento in una pagina quando si spostano i punti di riferimento utilizzando la scelta rapida da tastiera `D` o aree mediante la scelta rapida da tastiera `R`. Inoltre, viene riportata l&#39;intestazione durante la navigazione tramite la scelta rapida da tastiera del titolo `H`.
 
-## Supporto per l&#39;accessibilità da tastiera nei visualizzatori per contenuti multimediali dinamici {#keyboard-accessibility-for-dm-viewers}
+## Supporto per l&#39;accessibilità da tastiera nei visualizzatori Dynamic Media {#keyboard-accessibility-for-dm-viewers}
 
-Tutti i componenti predefiniti per visualizzatori per contenuti multimediali dinamici supportano l’accessibilità da tastiera per i clienti.
+Tutti i componenti forniti dai visualizzatori Dynamic Media supportano l&#39;accessibilità da tastiera per i clienti.
 
-Consultate [Accessibilità e navigazione da tastiera](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella Guida di riferimento dei visualizzatori per contenuti multimediali dinamici.
+Consultate [Accessibilità e navigazione da tastiera](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella guida di riferimento dei visualizzatori Dynamic Media.
 
-## Supporto della tecnologia di supporto nei visualizzatori per contenuti multimediali dinamici {#assistive-technology=support-for-dm-viewers}
+## Supporto della tecnologia di assistenza nei visualizzatori Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
-Tutti i componenti del visualizzatore per contenuti multimediali dinamici supportano ruoli e attributi ARIA (Accessible Rich Internet Applications) per migliorare l’integrazione con tecnologie di supporto come gli assistenti vocali.
-Consultate l&#39;argomento della guida **Supporto per la tecnologia di assistenza** in qualsiasi argomento della personalizzazione del visualizzatore nella Guida di riferimento per i visualizzatori per contenuti multimediali dinamici. Ad esempio, consultate [Supporto per la tecnologia di assistenza](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore video, oppure [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
+Tutti i componenti del visualizzatore Dynamic Media supportano ruoli e attributi ARIA (Accessible Rich Internet Applications) per migliorare l&#39;integrazione con tecnologie di supporto come gli assistenti vocali.
+Consultate l&#39;argomento della guida **Supporto per la tecnologia di assistenza** in qualsiasi argomento della personalizzazione del visualizzatore nella Guida di riferimento dei visualizzatori Dynamic Media. Ad esempio, consultate [Supporto per la tecnologia di assistenza](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore video, oppure [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
 
 >[!MORELIKETHIS]
 >
