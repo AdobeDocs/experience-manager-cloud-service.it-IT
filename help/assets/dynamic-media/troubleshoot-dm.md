@@ -1,10 +1,10 @@
 ---
 title: Risoluzione dei problemi relativi a Dynamic Media
-description: Risoluzione dei problemi relativi a Dynamic Media.
+description: Suggerimenti per la risoluzione dei problemi durante l'utilizzo di Dynamic Media.
 translation-type: tm+mt
-source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '998'
 ht-degree: 2%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 2%
 
 # Risoluzione dei problemi relativi a Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
-L&#39;argomento seguente descrive la risoluzione dei problemi relativi agli elementi multimediali dinamici.
+L&#39;argomento seguente descrive la risoluzione dei problemi per Dynamic Media.
 
-## Nuova configurazione per contenuti multimediali dinamici {#new-dm-config}
+## Nuova configurazione Dynamic Media {#new-dm-config}
 
-Vedere [Risoluzione dei problemi relativi a una nuova configurazione per contenuti multimediali dinamici.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+Vedere [Risoluzione dei problemi relativi a una nuova configurazione Dynamic Media.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## Generale (tutte le risorse) {#general-all-assets}
 
@@ -24,13 +24,13 @@ Di seguito sono riportati alcuni suggerimenti e consigli generali per tutte le r
 
 ### Proprietà stato sincronizzazione risorse {#asset-synchronization-status-properties}
 
-Le seguenti proprietà della risorsa possono essere riviste in CRXDE Lite per confermare l’avvenuta sincronizzazione della risorsa da AEM a elemento multimediale dinamico:
+Le seguenti proprietà delle risorse possono essere riviste in CRXDE Lite per confermare l’avvenuta sincronizzazione della risorsa da AEM ad Dynamic Media:
 
 | **Proprietà** | **Esempio** | **Descrizione** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Indicatore generale che il nodo è collegato a Contenuti multimediali dinamici. |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **Testo di** PublishCompleteo di errore | Stato del caricamento di una risorsa in Contenuti multimediali dinamici. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Per generare gli URL delle risorse remote di elementi multimediali dinamici, è necessario compilarli. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Indicatore generale che il nodo è collegato ad Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **Testo di** PublishCompleteo di errore | Stato del caricamento di una risorsa in Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Deve essere popolato per generare URL per la risorsa remota di Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **** successore  **non riuscito:`<error text>`** | Stato di sincronizzazione di set (set 360 gradi, set di immagini e così via), predefiniti per immagini, predefiniti per visualizzatori, aggiornamenti per mappe immagine per una risorsa o immagini modificate. |
 
 ### Registrazione sincronizzazione {#synchronization-logging}
@@ -39,11 +39,11 @@ Errori e problemi di sincronizzazione vengono registrati in `error.log` (AEM dir
 
 ### Controllo della versione {#version-control}
 
-Quando sostituite una risorsa multimediale dinamica esistente (nome e posizione identici), potete mantenere entrambe le risorse oppure sostituire o creare una versione:
+Quando sostituite una risorsa Dynamic Media esistente (nome e posizione identici), potete mantenere entrambe le risorse oppure sostituire o creare una versione:
 
 * Entrambi gli elementi creeranno una nuova risorsa con un nome univoco per l’URL della risorsa pubblicata. Ad esempio, `image.jpg` è la risorsa originale e `image1.jpg` è la nuova risorsa caricata.
 
-* La creazione di una versione non è supportata negli elementi multimediali dinamici. La nuova versione sostituirà la risorsa esistente in fase di distribuzione.
+* La creazione di una versione non è supportata in Dynamic Media. La nuova versione sostituirà la risorsa esistente in fase di distribuzione.
 
 ## Immagini e set {#images-and-sets}
 
@@ -78,7 +78,7 @@ In caso di problemi con immagini e set, consultate le seguenti istruzioni per la
    <td><p>Utilizzate solo immagini con la stessa dimensione per il carosello.</p> </td>
   </tr>
   <tr>
-   <td>L’immagine non viene visualizzata in anteprima con il visualizzatore per contenuti multimediali dinamici</td>
+   <td>L'immagine non viene visualizzata in anteprima con il visualizzatore Dynamic Media</td>
    <td><p>Verificate che la risorsa contenga <code>dam:scene7File</code> nelle proprietà dei metadati (CRXDE Lite)</p> </td>
    <td><p>Verificate che tutte le risorse abbiano completato l'elaborazione.</p> </td>
   </tr>
@@ -124,7 +124,7 @@ In caso di problemi con il video, consulta le seguenti istruzioni per la risoluz
      <li>Assegnate un profilo video alla cartella.</li>
      <li>Modificate il profilo video per includere più di un predefinito di codifica.</li>
      <li>Attendere il completamento dell'elaborazione video.</li>
-     <li>Ricaricate il video, accertatevi che il flusso di lavoro Codifica video elemento multimediale dinamico non sia in esecuzione.<br/> </li>
+     <li>Ricaricate il video, accertatevi che il flusso di lavoro Dynamic Media Encode Video non sia in esecuzione.<br/> </li>
      <li>Caricate nuovamente il video.</li>
     </ol> </td>
   </tr>
@@ -132,7 +132,7 @@ In caso di problemi con il video, consulta le seguenti istruzioni per la risoluz
    <td>Il video non è codificato</td>
    <td>
     <ul>
-     <li>Verifica se il servizio Dynamic Media Cloud è configurato.</li>
+     <li>Verificate che il servizio cloud Dynamic Media sia configurato.</li>
      <li>Controllate se un profilo video è associato alla cartella di caricamento.</li>
     </ul> </td>
    <td>
@@ -179,7 +179,7 @@ In caso di problemi con i visualizzatori, consultate le seguenti istruzioni per 
   <tr>
    <td>Predefiniti visualizzatore non pubblicati</td>
    <td><p>Passate alla pagina di diagnostica di esempio manager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Osservare i valori calcolati. Quando funziona correttamente, dovresti vedere:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Dopo la configurazione delle impostazioni di Dynamic Media Cloud, la sincronizzazione delle risorse del visualizzatore potrebbe richiedere circa 10 minuti.</p> <p>Se le risorse non attivate rimangono, fate clic su uno dei pulsanti <strong>Elenca tutte le risorse non attivate</strong> per visualizzare i dettagli.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Dopo la configurazione delle impostazioni cloud di Dynamic Media, potrebbero essere necessari circa 10 minuti per la sincronizzazione delle risorse del visualizzatore.</p> <p>Se le risorse non attivate rimangono, fate clic su uno dei pulsanti <strong>Elenca tutte le risorse non attivate</strong> per visualizzare i dettagli.</p> </td>
    <td>
     <ol>
      <li>Passate all’elenco dei predefiniti per visualizzatori negli strumenti di amministrazione: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
@@ -191,7 +191,7 @@ In caso di problemi con i visualizzatori, consultate le seguenti istruzioni per 
    <td>L’immagine del predefinito per visualizzatori restituisce 404 dall’anteprima nei dettagli delle risorse o dal codice URL/incorporato</td>
    <td><p>In CRXDE Lite, effettuate le seguenti operazioni:</p>
     <ol>
-     <li>Andate alla cartella <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> all'interno della cartella di sincronizzazione di elementi multimediali dinamici (ad esempio, <code>/content/dam/_CSS/_OOTB</code>),</li>
+     <li>Andate alla cartella <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> all'interno della cartella di sincronizzazione Dynamic Media (ad esempio, <code>/content/dam/_CSS/_OOTB</code>),</li>
      <li>Individuate il nodo di metadati della risorsa problematica (ad esempio, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
      <li>Verificare la presenza delle proprietà <code>dam:scene7*</code>. Se la sincronizzazione e la pubblicazione della risorsa sono state completate correttamente, il set <code>dam:scene7FileStatus</code> è <strong>PublishComplete</strong>.</li>
      <li>Tentativo di richiedere l'immagine direttamente da Dynamic Media concatenando i valori delle seguenti proprietà e stringhe letterali
