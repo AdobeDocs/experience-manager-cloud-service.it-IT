@@ -1,8 +1,8 @@
 ---
 title: Set di immagini
-description: Scopri come lavorare con i set di immagini in Dynamic Media
+description: Scoprite come utilizzare i set di immagini in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '2070'
 ht-degree: 19%
@@ -79,11 +79,11 @@ Per iniziare subito a lavorare:
 
 Per modificare i set di immagini, consultate [modifica dei set di immagini.](#editing-image-sets) Inoltre, potete visualizzare e modificare le proprietà [ dei set di ](/help/assets/manage-digital-assets.md#editing-properties)immagini.
 
-In caso di problemi durante la creazione di set, consultate Immagini e set in [Risoluzione di problemi relativi a contenuti multimediali dinamici](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
+In caso di problemi durante la creazione di set, vedere Immagini e set in [Risoluzione dei problemi in Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
 ## Caricamento delle risorse per i set di immagini {#uploading-assets-in-image-sets}
 
-Per iniziare, caricate le risorse di immagine per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Accertatevi che la dimensione massima delle immagini sia di almeno 2000 pixel per garantire dettagli di zoom ottimali. Dynamic Media consente di eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, potete usare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
+Per iniziare, caricate le risorse di immagine per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Accertatevi che la dimensione massima delle immagini sia di almeno 2000 pixel per garantire dettagli di zoom ottimali. Dynamic Media può eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, potete usare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
 
 I set di immagini supportano molti formati di file immagine, ma sono consigliate immagini senza perdita di dati TIFF, PNG ed EPS.
 
@@ -184,7 +184,7 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, non *vengono 
 
    ![6_5_imageset-setspullmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Dalla ricerca è possibile selezionare **[!UICONTROL Filtro]**, quindi espandere **[!UICONTROL Contenuti multimediali dinamici]** e selezionare **[!UICONTROL Set]**.
+* Dalla ricerca è possibile selezionare **[!UICONTROL Filtro]**, quindi espandere **[!UICONTROL Dynamic Media]** e selezionare **[!UICONTROL Set]**.
 
    La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando i criteri di ricerca &quot;Inizia con&quot;, diversi dalla ricerca AEM basata sull&#39;utilizzo dei criteri di ricerca &quot;Contiene&quot;. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per eseguire la ricerca nei set automatizzati.
 
