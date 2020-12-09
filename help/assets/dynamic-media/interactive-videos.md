@@ -1,8 +1,8 @@
 ---
 title: Video interattivi
-description: Scopri come lavorare con video interattivi e video acquistabili in Dynamic Media
+description: Scoprite come lavorare con video interattivi e video acquistabili in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '6016'
 ht-degree: 5%
@@ -27,7 +27,7 @@ Per visualizzare un video interattivo e shoppable in azione, fai clic su [Live D
 
 * Fate clic sulla miniatura per mettere in pausa il video e aprire la visualizzazione rapida del prodotto. Ad esempio, fate clic sulla miniatura di KitchenAid nel video per vedere la rotazione a 360 gradi del mixer oppure ingrandite per visualizzare i dettagli del mixer.
 
-Vedere anche [Utilizzo di video interattivi con contenuti multimediali dinamici](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+Vedere anche [Utilizzo di video interattivi con Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
 
 <!-- 
 
@@ -56,7 +56,7 @@ Il webinar [Utilizzo di video interattivi, condivisione di collegamenti e condiv
 
 ## Avvio rapido: Video interattivi {#quick-start-interactive-videos}
 
-La seguente descrizione dettagliata del flusso di lavoro è stata creata per consentirvi di imparare a usare rapidamente i video interattivi in Contenuti multimediali dinamici.
+La seguente descrizione dettagliata del flusso di lavoro è stata creata per consentirvi di imparare a usare i video interattivi in Dynamic Media.
 
 Cercare l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di Avvio rapido. Contiene una breve esercitazione basata su questa [pagina Web iniziale demo che *non* ha ancora aggiunto interattività](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html).
 
@@ -85,7 +85,7 @@ Per terminare, pubblicate le risorse video interattive. Con la pubblicazione vie
 Consultate [Pubblicazione di risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 1. **Aggiunta di un video interattivo al sito Web o al sito Web in**
-AEMIse utilizzate  AEM Sites, AEM eCommerce o entrambi, potete aggiungere il video interattivo direttamente a una pagina Web in AEM trascinando il componente Supporto interattivo sulla pagina. Consultate [Aggiunta di risorse multimediali dinamiche alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+AEMIse utilizzate  AEM Sites, AEM eCommerce o entrambi, potete aggiungere il video interattivo direttamente a una pagina Web in AEM trascinando il componente Supporto interattivo sulla pagina. Consultate [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 Usate il codice o l’URL da incorporare per integrare il video interattivo con le esperienze del sito Web. Consultate [Integrazione di un video interattivo con il sito Web](#integrating-an-interactive-video-with-your-website).
 Se utilizzate un WCM di terze parti (Web Content Manager), dovete integrare il nuovo video interattivo con l’implementazione esistente di Quickview utilizzata sul vostro sito Web. Consultate [Integrazione di un video interattivo con una visualizzazione rapida esistente](#integrating-an-interactive-video-with-an-existing-quickview).
    [Aggiunta di Risorse multimediali dinamiche alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -335,7 +335,7 @@ Per aggiungere interattività al video:
 
    Screenshot B
 
-   Nella schermata B sopra, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. Tenere presente che i timbri temporali della scala della linea temporale sono ora impostati a intervalli di 3 secondi.
+   Nella schermata B sopra, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. Tenere presente che i timbri temporali della scala temporale sono impostati a intervalli di 3 secondi.
 
    ![chlimage_1-25](assets/chlimage_1-131.png)
 
@@ -415,7 +415,7 @@ Per aggiungere interattività al video:
       <td><p>In Tipo azione, toccare <strong>Collegamento ipertestuale</strong>, quindi effettuare una delle seguenti operazioni:</p> 
        <ul> 
        <li>Se siete un cliente AEM Sites , toccate l'icona Selettore sito (cartella) per passare a una pagina Web. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.</li> 
-       <li>Se siete clienti indipendenti di contenuti multimediali dinamici, specificate nel campo HREF il percorso completo dell’URL di una pagina Web collegata.</li> 
+       <li>Se siete clienti Dynamic Media indipendenti, nel campo di testo HREF specificate il percorso completo dell’URL di una pagina Web collegata.</li> 
        </ul> <p>Accertatevi di specificare se aprire il collegamento in una nuova scheda del browser o nella scheda corrente.</p> </td> 
       </tr> 
       <tr> 
@@ -501,7 +501,7 @@ Per informazioni dettagliate sulla pubblicazione di risorse video interattive, c
 
 Dopo aver caricato un video, aggiunto alcuni segmenti della timeline e pubblicato il video interattivo, potete ora aggiungerlo al sito Web esistente.
 
-Se siete un cliente AEM Sites , potete aggiungere il video interattivo trascinando il componente Supporto interattivo sulla pagina. Vedere [Aggiunta di risorse multimediali dinamiche alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se siete un cliente AEM Sites , potete aggiungere il video interattivo trascinando il componente Supporto interattivo sulla pagina. Consultate [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 Se siete clienti indipendenti  AEM Assets, potete aggiungere manualmente il video interattivo al sito Web come descritto in questa sezione.
 
