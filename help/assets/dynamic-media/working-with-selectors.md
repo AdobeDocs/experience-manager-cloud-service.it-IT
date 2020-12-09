@@ -1,16 +1,16 @@
 ---
 title: Utilizzo dei selettori
-description: Selezione delle risorse per immagini interattive, video interattivi e banner carosello
+description: Scoprite i metodi che potete usare per selezionare le risorse per immagini interattive, video interattivi e banner carosello in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 21%
+source-wordcount: '748'
+ht-degree: 20%
 
 ---
 
 
-# Utilizzo dei selettori in elementi multimediali dinamici {#working-with-selectors}
+# Utilizzo dei selettori in Dynamic Media {#working-with-selectors}
 
 Quando lavorate con un’immagine interattiva, un video interattivo o un banner carosello, selezionate le risorse e i siti e i prodotti per i punti attivi e le mappe immagine a cui collegarvi. Quando lavorate con set di immagini, set 360 gradi e set di file multimediali, potete anche selezionare le risorse mediante il selettore delle risorse.
 
@@ -62,7 +62,7 @@ Utilizzate il selettore Prodotto per scegliere un prodotto quando desiderate un 
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Selezione di siti in contenuti multimediali dinamici {#selecting-sites}
+## Selezione di siti in Dynamic Media {#selecting-sites}
 
 Utilizzate il selettore del sito per scegliere una pagina Web quando desiderate che un punto di attivazione o una mappa immagine rimangano collegati a una pagina Web gestita all’interno AEM siti.
 
@@ -82,7 +82,7 @@ Utilizzate il selettore del sito per scegliere una pagina Web quando desiderate 
 
 1. In modalità **[!UICONTROL Anteprima]**, toccando il punto di attivazione o la mappa immagine, si passa alla pagina del sito AEM specificata.
 
-## Selezione delle risorse in Contenuti multimediali dinamici {#selecting-assets}
+## Selezione delle risorse in Dynamic Media {#selecting-assets}
 
 Usate questo selettore per scegliere le immagini da usare in un banner carosello, un video interattivo, set di immagini, set di file multimediali diversi e set 360 gradi. Nel video interattivo, il selettore delle risorse è disponibile quando toccate **[!UICONTROL Seleziona risorse]** nella scheda **[!UICONTROL Contenuto]**. In Set carosello, il selettore delle risorse è disponibile quando create una nuova diapositiva. In Set immagini, Set di file multimediali diversi e Set 360 gradi, il selettore delle risorse è disponibile rispettivamente per creare un nuovo set di immagini, un set di file multimediali diversi o un set 360 gradi.
 
