@@ -1,8 +1,8 @@
 ---
 title: Applicazione dei predefiniti per le immagini Dynamic Media
-description: Scoprite come applicare i predefiniti per immagini in Contenuti multimediali dinamici
+description: Scoprite come applicare i predefiniti per immagini in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 15%
@@ -24,7 +24,7 @@ Questa sezione descrive come usare i predefiniti per immagini. [Gli amministrato
 
 Potete applicare un predefinito per immagini a un’immagine ogni volta che la visualizzate in anteprima.
 
-**Per applicare i predefiniti per immagini per contenuti multimediali dinamici**
+**Per applicare i predefiniti per immagini di Dynamic Media**
 
 1. Aprite la risorsa e, nella barra a sinistra, toccate il menu a discesa, quindi toccate **[!UICONTROL Rendering]**.
 
