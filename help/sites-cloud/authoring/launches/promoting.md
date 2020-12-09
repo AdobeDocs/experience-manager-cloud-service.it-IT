@@ -2,10 +2,10 @@
 title: Promozione dei lanci
 description: 'Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (produzione) prima della pubblicazione. '
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 80%
+source-wordcount: '817'
+ht-degree: 76%
 
 ---
 
@@ -64,6 +64,7 @@ Puoi promuovere un lancio dalla console **Sites** o dalla console **Lanci**:
    * **Ambito**
       * **Promuovi tutto il lancio**
       * **Promuovi pagine modificate**
+      * **Promuovi pagine**  approvate - a seconda del flusso di lavoro di approvazione del lancio
       * **Promuovi la pagina corrente**
       * **Promuovi la pagina corrente e le sottopagine**
 
@@ -75,7 +76,7 @@ Puoi promuovere un lancio dalla console **Sites** o dalla console **Lanci**:
       >
       >Riguarda un singolo lancio; per lanci nidificati, vedi [Promozione di un lancio nidificato](#promoting-a-nested-launch).
 1. Seleziona **Avanti** per continuare.
-1. Puoi rivedere le pagine da promuovere, a seconda dell’intervallo di pagine scelto:
+1. È possibile esaminare le pagine da promuovere; dipendono dall’intervallo di pagine scelto:
 
    ![Rivedi promozione](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
@@ -106,6 +107,7 @@ Dopo aver creato un lancio nidificato, puoi promuoverlo di nuovo su qualsiasi so
    * **Ambito** : qui potete scegliere se promuovere l’intero lancio o solo le pagine che sono state effettivamente modificate. Nel secondo caso, puoi scegliere di includere o escludere le pagine secondarie. La configurazione predefinita prevede di promuovere le modifiche solo per la pagina corrente:
       * **Promuovi tutto il lancio**
       * **Promuovi pagine modificate**
+      * **Promuovi pagine**  approvate - a seconda del flusso di lavoro di approvazione del lancio
       * **Promuovi la pagina corrente**
       * **Promuovi la pagina corrente e le sottopagine**
 
