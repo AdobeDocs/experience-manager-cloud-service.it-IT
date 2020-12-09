@@ -2,7 +2,7 @@
 title: Convertitore indice
 description: Convertitore indice
 translation-type: tm+mt
-source-git-commit: 1117f03b2eff37f8b25726c3dc60d5a3fe98a5d1
+source-git-commit: 3fe19282f9e96d503f4e8be05553c6f48a6f19b6
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -37,11 +37,11 @@ Se è stato utilizzato [Assicurarsi che l&#39;indice Oak](https://adobe-consulti
 
 * Tramite  Adobe I/O CLI: Si consiglia di utilizzare Index Converter tramite `aio-cli-plugin-aem-cloud-service-migration` (AEM come plug-in di refactoring del codice di Cloud Service per la  CLI di Adobe I/O).
 
-Fare riferimento a **[Risorse Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** per scoprire come installare e usare il plug-in.
+   Fare riferimento a **[Risorse Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** per scoprire come installare e usare il plug-in.
 
 * Come utilità indipendente : Index Converter può essere eseguito anche come utilità standalone.
 
-Fare riferimento a **[Risorse Git: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** per scoprire come utilizzare questo strumento.
+   Fare riferimento a **[Risorse Git: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** per scoprire come utilizzare questo strumento.
 
 
 
