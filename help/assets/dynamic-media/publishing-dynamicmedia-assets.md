@@ -1,21 +1,21 @@
 ---
-title: Pubblicazione di risorse multimediali dinamiche
-description: Come pubblicare le risorse multimediali dinamiche
+title: Pubblicazione delle risorse Dynamic Media
+description: Scoprite come pubblicare le risorse Dynamic Media.
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '469'
 ht-degree: 3%
 
 ---
 
 
-# Pubblicazione di risorse multimediali dinamiche {#publishing-dynamic-media-assets}
+# Pubblicazione delle risorse Dynamic Media {#publishing-dynamic-media-assets}
 
-Per pubblicare le risorse per contenuti multimediali dinamici, seleziona le risorse già caricate e tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida]**. Dopo la pubblicazione, le risorse Dynamic Media sono disponibili per l’inclusione in una pagina Web tramite un URL o mediante l’incorporazione di codice nella pagina.
+Per pubblicare le risorse Dynamic Media, selezionate le risorse già caricate e toccate **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida]**. Dopo la pubblicazione, le risorse Dynamic Media sono disponibili per l’inclusione in una pagina Web mediante un URL o mediante l’incorporazione di codice nella pagina.
 
-Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. In alternativa, potete pubblicare le risorse in modo selettivo. Consultate [Configurazione di contenuti multimediali dinamici.](config-dm.md) In alternativa, potete pubblicare selettivamente le risorse su elementi multimediali dinamici o AEM, escludendovi vicendevolmente tra di loro, utilizzando  **[!UICONTROL Pubblicazione selettiva a]** livello di cartella. Consultate [Utilizzo della pubblicazione selettiva nei file multimediali dinamici.](/help/assets/dynamic-media/selective-publishing.md)
+Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. In alternativa, potete pubblicare le risorse in modo selettivo. Vedere [Configurazione di Dynamic Media.](config-dm.md) Oppure, potete pubblicare selettivamente le risorse su Dynamic Media o AEM, escludendovi vicendevolmente, utilizzando  **** Pubblicazione selettiva a livello di cartella. Consultate [Utilizzo della pubblicazione selettiva in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)
 
 Nella **[!UICONTROL vista a schede]**, un&#39;icona a forma di globo viene visualizzata direttamente sotto il nome di una risorsa e a sinistra della data e dell&#39;ora per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
 
@@ -27,7 +27,7 @@ Se intendete pubblicare le risorse video subito dopo la codifica, accertatevi ch
 
 Vedere anche [Collegamento di URL all&#39;applicazione Web.](linking-urls-to-yourwebapplication.md)
 
-Consultate anche [Incorporazione del visualizzatore video o del visualizzatore immagini per file multimediali dinamici in una pagina Web.](embed-code.md)
+Consultate anche [Incorporamento del visualizzatore video o di immagini Dynamic Media in una pagina Web.](embed-code.md)
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Per informazioni dettagliate sulla pubblicazione di un set o di una risorsa, con
 
 ## Distribuzione HTTP/2 di risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM ora supporta la distribuzione di tutti i contenuti multimediali dinamici (immagini e video) su HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
+AEM ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) via HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
 
 Per ulteriori informazioni, vedere [Distribuzione HTTP/2 del contenuto alle domande frequenti](/help/assets/dynamic-media/http2faq.md).
 <!--this md file used to reside under sites-administering-->
