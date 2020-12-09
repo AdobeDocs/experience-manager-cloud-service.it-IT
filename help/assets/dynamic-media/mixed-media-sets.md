@@ -1,8 +1,8 @@
 ---
 title: Set di file multimediali diversi
-description: Scoprite come utilizzare i set di file multimediali diversi in Contenuti multimediali dinamici
+description: Scoprite come utilizzare i set di file multimediali diversi in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 28%
@@ -64,7 +64,7 @@ Se necessario, è possibile modificare i [Set di file multimediali diversi](#edi
 
 >[!NOTE]
 >
->In caso di problemi durante la creazione dei set, vedere [Risoluzione dei problemi relativi ai file multimediali dinamici](/help/assets/dynamic-media/troubleshoot-dm.md).
+>In caso di problemi durante la creazione dei set, vedere [Risoluzione dei problemi in Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 
 ## Caricamento delle risorse {#uploading-assets}
 
