@@ -2,10 +2,10 @@
 title: Lanci
 description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per una pubblicazione futura, mantenendo le pagine correnti
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 83%
+source-wordcount: '907'
+ht-degree: 81%
 
 ---
 
@@ -20,6 +20,11 @@ Ad esempio, le pagine dei prodotti stagionali del tuo negozio online vengono agg
 
 * Modifiche apportate alle pagine sorgenti che si verificano in seguito alle consuete attività di manutenzione. Queste modifiche vengono automaticamente duplicate nelle pagine del lancio.
 * Modifiche eseguite direttamente sulle pagine di lancio in preparazione del trimestre successivo.
+
+È inoltre possibile effettuare le seguenti operazioni:
+
+* Spostarsi nel contenuto del ramo del lancio; aggiunta o rimozione di pagine, a seconda delle necessità.
+* Visualizzate l’anteprima del contenuto pubblicato in base a una data/un obiettivo specifico in futuro.
 
 Nel trimestre successivo, promuovi le pagine di lancio in modo da poter pubblicare le pagine sorgenti (mantenendo i contenuti aggiornati). Puoi promuovere tutte le pagine o solo quelle che hai modificato.
 
