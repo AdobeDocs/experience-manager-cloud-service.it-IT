@@ -1,10 +1,10 @@
 ---
 title: Best practice per ottimizzare la qualità delle immagini
-description: Best practice per ottimizzare la qualità delle immagini in Dynamic Media
+description: Scoprite le best practice che potete utilizzare in Dynamic Media per ottimizzare la qualità delle risorse di immagini.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1497'
 ht-degree: 5%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 5%
 
 L’ottimizzazione della qualità delle immagini può richiedere molto tempo, poiché molti fattori contribuiscono a ottenere risultati accettabili. Il risultato è in parte soggettivo perché gli individui percepiscono la qualità dell’immagine in modo diverso. La sperimentazione strutturata è fondamentale.
 
-AEM include più di 100 comandi per la distribuzione di immagini per elementi multimediali dinamici per ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono aiutarti a semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e procedure ottimali essenziali.
+AEM include più di 100 comandi Dynamic Media per la distribuzione delle immagini per ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono aiutarti a semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e procedure ottimali essenziali.
 
 ## Procedure ottimali per il formato immagine (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * I formati JPG o PNG rappresentano la scelta migliore per la distribuzione di immagini di buona qualità e con dimensioni e peso gestibili.
-* Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita viene utilizzato il formato JPG per la distribuzione delle immagini multimediali dinamiche.
+* Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita viene utilizzato il formato JPG per la distribuzione delle immagini Dynamic Media.
 * Il formato JPG si comprime con un rapporto di 10:1 e in genere produce file di dimensioni ridotte. Il formato PNG viene compresso con un rapporto di circa 2:1, tranne in alcuni casi, ad esempio quando le immagini contengono uno sfondo bianco. In genere, tuttavia, i file PNG sono di dimensioni maggiori rispetto ai file JPG.
 * Il formato JPG utilizza la compressione con perdita di dati, ossia durante la compressione vengono omessi gli elementi dell&#39;immagine (pixel). Il formato PNG utilizza invece la compressione senza perdita di dati.
 * Il formato JPG spesso comprime le immagini fotografiche con una fedeltà migliore rispetto alle immagini sintetiche con bordi netti e contrasto elevato.
@@ -31,7 +31,7 @@ Come procedura ottimale per il formato immagine, iniziate con l&#39;impostazione
 
 La riduzione dinamica delle dimensioni delle immagini è una delle attività più comuni. Si tratta di specificare le dimensioni e, facoltativamente, la modalità di downsampling da usare per ridimensionare l’immagine.
 
-* Per il ridimensionamento delle immagini, l&#39;approccio migliore e più semplice consiste nell&#39;utilizzare `&wid=<value>` e `&hei=<value>,`oppure semplicemente `&hei=<value>`. Questi parametri impostano automaticamente la larghezza dell’immagine in base alle proporzioni.
+* Per il ridimensionamento delle immagini, l&#39;approccio migliore e più semplice consiste nell&#39;utilizzare `&wid=<value>` e `&hei=<value>,`o semplicemente `&hei=<value>`. Questi parametri impostano automaticamente la larghezza dell’immagine in base alle proporzioni.
 * `&resMode=<value>`controlla l’algoritmo utilizzato per il downsampling. Iniziate con `&resMode=sharp2`. Questo valore offre la migliore qualità dell’immagine. L&#39;utilizzo del downsampling `value =bilin` è più veloce, ma spesso comporta l&#39;aliasing degli artefatti.
 
 Come procedura ottimale per il ridimensionamento delle immagini, utilizzate `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
@@ -118,6 +118,6 @@ Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggi
 Per ottimizzare il flusso di lavoro, potete inoltre trovare utili i seguenti suggerimenti generali:
 
 * Provate a utilizzare parametri diversi in tempo reale, direttamente su un URL o utilizzando la funzionalità di regolazione delle immagini di Scene7 Publishing System, che fornisce anteprime in tempo reale per le operazioni di regolazione.
-* Come procedura ottimale, potete raggruppare i comandi Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è in pratica una macro di comandi URL con nomi predefiniti personalizzati, ad esempio `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL richiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito Web e di ridurre la lunghezza complessiva degli URL.
+* Come procedura ottimale, potete raggruppare i comandi di Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è in pratica una macro di comandi URL con nomi predefiniti personalizzati, ad esempio `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL richiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito Web e di ridurre la lunghezza complessiva degli URL.
 * AEM inoltre modalità più avanzate per ottimizzare la qualità delle immagini, ad esempio l’applicazione della nitidezza alle immagini durante l’assimilazione. Per i casi d&#39;uso avanzati in cui questa può essere un&#39;opzione per ottimizzare ulteriormente i risultati di rendering, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) può essere di aiuto con approfondimenti personalizzati e procedure ottimali.
 
