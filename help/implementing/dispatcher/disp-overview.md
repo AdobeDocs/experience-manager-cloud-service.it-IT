@@ -2,9 +2,9 @@
 title: Dispatcher nel cloud
 description: 'Dispatcher nel cloud '
 translation-type: tm+mt
-source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
+source-git-commit: ee53d400627fe2fd97d5cbdea8ddd38e00af191f
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4050'
 ht-degree: 9%
 
 ---
@@ -19,10 +19,10 @@ Questa sezione descrive come strutturare il AEM come configurazioni di Cloud Ser
 >[!NOTE]
 >
 >Gli utenti Windows dovranno utilizzare Windows 10 Professional o altre distribuzioni che supportano Docker. Questo è un prerequisito per l&#39;esecuzione e il debug del dispatcher su un computer locale. Le sezioni seguenti includono comandi che utilizzano le versioni Mac o Linux dell&#39;SDK, ma l&#39;SDK di Windows può essere utilizzato in modo simile.
-
+<!--
 >[!WARNING]
 >
->Utenti Windows: la versione corrente di AEM come Cloud Service di strumenti Dispatcher locali (v2.0.20) è incompatibile con Windows. Per ricevere aggiornamenti sulla compatibilità con Windows, contattare [ supporto Adobe](https://daycare.day.com/home.html).
+>Windows users: the current version of AEM as a Cloud Service local Dispatcher Tools (v2.0.20) is incompatible with Windows. Please contact [Adobe Support](https://daycare.day.com/home.html) to receive updates on Windows compatibility. Alexandru note: removed at the request of Brian C -->
 
 ## Strumenti Dispatcher {#dispatcher-sdk}
 
