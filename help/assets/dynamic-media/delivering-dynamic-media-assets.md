@@ -1,8 +1,8 @@
 ---
 title: Distribuzione di risorse Dynamic Media
-description: Scopri come distribuire risorse multimediali dinamiche
+description: Scoprite come distribuire le risorse Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 7a2eef19a3807d02e7eba0ce177465aabc35a53e
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 15%
@@ -12,7 +12,7 @@ ht-degree: 15%
 
 # Distribuzione di risorse Dynamic Media{#delivering-dynamic-media-assets}
 
-La modalità di distribuzione delle risorse multimediali dinamiche (video e immagini) dipende dall’implementazione del sito Web.
+La modalità di distribuzione delle risorse Dynamic Media, sia video che immagini, dipende dall’implementazione del sito Web.
 
 Con l’elemento multimediale dinamico hai a disposizione diverse opzioni:
 
@@ -29,7 +29,7 @@ Con l’elemento multimediale dinamico hai a disposizione diverse opzioni:
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
-* [Aggiunta di risorse multimediali dinamiche alle pagine Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Aggiunta di risorse Dynamic Media alle pagine Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Incorporazione di un visualizzatore video o di immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md)
 * [Attivazione della protezione hotlinking in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
@@ -41,6 +41,6 @@ Per ulteriori informazioni, consulta i seguenti argomenti:
 
 ## Distribuzione HTTP/2 di risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM ora supporta la distribuzione di tutti i contenuti multimediali dinamici (immagini e video) su HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
+AEM ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) via HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
 
 Per ulteriori informazioni, consulta [Distribuzione HTTP/2 dei contenuti Domande frequenti](/help/assets/dynamic-media/http2faq.md).
