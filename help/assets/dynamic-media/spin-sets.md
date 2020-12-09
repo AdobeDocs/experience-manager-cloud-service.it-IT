@@ -1,8 +1,8 @@
 ---
 title: Set 360 gradi
-description: Scopri come utilizzare i set 360 gradi in Dynamic Media
+description: Scoprite come utilizzare i set 360 gradi in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 12%
@@ -98,7 +98,7 @@ Questa sezione descrive come creare i set 360 gradi.
 >
 >Puoi anche creare in automatico i set 360 gradi da [predefiniti set di batch](/help/assets/dynamic-media/config-dm.md). **Importante:** i set di batch vengono creati dall’IPS (Image Production System) come parte dell’inserimento delle risorse.
 >
->Consultate &quot;Creazione di predefiniti per set di batch per generare automaticamente set di immagini e set 360 gradi&quot; in [Configurazione di elementi multimediali dinamici](/help/assets/dynamic-media/config-dm.md).
+>Consultate &quot;Creazione di predefiniti per set di batch per generare automaticamente set di immagini e set 360 gradi&quot; in [Configurazione di Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 
 >[!NOTE]
 >
