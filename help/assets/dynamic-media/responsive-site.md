@@ -1,11 +1,11 @@
 ---
 title: Distribuzione di immagini ottimizzate per un sito reattivo
-description: Come utilizzare la funzione di codice reattivo per fornire immagini ottimizzate
+description: Scoprite come utilizzare la funzione di codice reattivo per distribuire immagini ottimizzate da Dynamic Media.
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 14%
+source-wordcount: '322'
+ht-degree: 13%
 
 ---
 
@@ -43,8 +43,8 @@ Vedere anche [Collegamento di URL all&#39;applicazione Web.](linking-urls-to-you
 1. Nella finestra di dialogo **[!UICONTROL Incorpora immagine reattiva]**, selezionate e copiate il testo del codice reattivo, quindi incollatelo nel sito Web per accedere alla risorsa reattiva.
 1. Modificate i punti di interruzione predefiniti nel codice da incorporare in modo che corrispondano a quelli del sito Web reattivo direttamente nel codice. Inoltre, provate le diverse risoluzioni immagine trasmesse in punti di interruzione di pagina diversi.
 
-## Utilizzo di HTTP/2 per distribuire le risorse multimediali dinamiche {#using-http-to-delivery-your-dynamic-media-assets}
+## Utilizzo di HTTP/2 per distribuire le risorse Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2 è il nuovo protocollo Web aggiornato che migliora il modo in cui i browser e i server comunicano. Fornisce un trasferimento più rapido delle informazioni e riduce la quantità di potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media è supportata mediante HTTP/2, che fornisce una risposta e tempi di caricamento migliori.
+HTTP/2 è il nuovo protocollo Web aggiornato che migliora il modo in cui i browser e i server comunicano. Fornisce un trasferimento più rapido delle informazioni e riduce la quantità di potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media è supportata mediante HTTP/2, che offre tempi di risposta e caricamento migliori.
 
-Per informazioni dettagliate sull&#39;utilizzo di HTTP/2 con l&#39;account Dynamic Media, consultate [HTTP2 Delivery of Content](http2faq.md) (Distribuzione di contenuti HTTP2&lt;a1/>).
+Per informazioni dettagliate sull&#39;utilizzo di HTTP/2 con l&#39;account Dynamic Media, vedere [HTTP2 Delivery of Content](http2faq.md).
