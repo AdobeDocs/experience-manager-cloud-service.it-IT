@@ -1,8 +1,8 @@
 ---
-title: Applicazione dei predefiniti per visualizzatori per contenuti multimediali dinamici
-description: Scoprite come applicare i predefiniti per visualizzatori in Contenuti multimediali dinamici
+title: Applicazione dei predefiniti per visualizzatori Dynamic Media
+description: Scoprite come applicare i predefiniti per visualizzatori in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 25%
@@ -10,7 +10,7 @@ ht-degree: 25%
 ---
 
 
-# Applicazione dei predefiniti per visualizzatori per contenuti multimediali dinamici {#applying-viewer-presets}
+# Applicazione dei predefiniti per visualizzatori Dynamic Media {#applying-viewer-presets}
 
 Un predefinito per visualizzatori è un insieme di impostazioni che determinano in che modo gli utenti possono visualizzare le risorse multimediali sullo schermo del computer e sui dispositivi mobili. Potete applicare a una risorsa qualsiasi predefinito per visualizzatori creato dall’amministratore.
 
@@ -19,9 +19,9 @@ Se siete un amministratore e avete l’esigenza di gestire, creare, ordinare ed 
 Consultate anche [Predefiniti visualizzatore pubblicazione](managing-viewer-presets.md#publishing-viewer-presets).
 
 A seconda della modalità di pubblicazione in uso, potrebbe non essere necessario pubblicare i predefiniti per visualizzatori.
-Eventuali problemi con i predefiniti per visualizzatori, consultate [Risoluzione di problemi relativi a contenuti multimediali dinamici](troubleshoot-dm.md#viewers).
+Eventuali problemi con i predefiniti per visualizzatori, consultate [Risoluzione dei problemi relativi ad Dynamic Media](troubleshoot-dm.md#viewers).
 
-## Applicazione di un predefinito per visualizzatori di contenuti multimediali dinamici a una risorsa {#applying-a-viewer-preset-to-an-asset}
+## Applicazione di un predefinito per visualizzatori Dynamic Media a una risorsa {#applying-a-viewer-preset-to-an-asset}
 
 1. Apri la risorsa e tocca **[!UICONTROL Visualizzatori]** nella barra a sinistra.
 
