@@ -2,9 +2,9 @@
 title: Controllo dello stato di un certificato SSL - Gestione dei certificati SSL
 description: Controllo dello stato di un certificato SSL - Gestione dei certificati SSL
 translation-type: tm+mt
-source-git-commit: e27e5302802e68dce2a5713626950896bb35420a
+source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Verifica dello stato di un certificato SSL {#checking-status-an-ssl-certificate}
 
-Lo stato dei certificati SSL può essere compreso rapidamente dalla pagina del certificato SSL o dalla pagina dei dettagli Ambiente.
+Lo stato dei certificati SSL può essere compreso immediatamente dalla pagina del certificato SSL.
 
 Potete identificare lo stato di un certificato SSL utilizzando i seguenti schemi di colori:
 
