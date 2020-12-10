@@ -2,9 +2,9 @@
 title: Introduzione - Elenchi consentiti di  IP in Gestione potrebbe
 description: Introduzione - Elenchi consentiti di  IP in Gestione potrebbe
 translation-type: tm+mt
-source-git-commit: ef7d8c340d4c6c47ede89552e6c4bfab49251d79
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ AEM come servizio cloud è aperto a Internet e la sicurezza è gestita tramite a
 Gli Elenchi consentiti di  IP possono essere aggiunti una volta e applicati/non applicati più volte come unità o entità a un servizio Author e/o Publisher in un ambiente.
 
 >[!NOTE]
->I nomi degli elenchi consentiti IP sono supportati in Cloud Manager per i servizi Author e/o Publish in un ambiente.
+>I nomi dei Elenchi consentiti di  IP sono supportati in Cloud Manager per i servizi Author e/o Publish in un ambiente.
 
 Utilizzando la pagina del Elenco consentiti di  IP dell&#39;interfaccia utente di Cloud Manager o la pagina dei dettagli dell&#39;ambiente, un utente con autorizzazioni può eseguire diverse attività per gestire i Elenchi consentiti di  IP per gli ambienti, tra cui:
 
