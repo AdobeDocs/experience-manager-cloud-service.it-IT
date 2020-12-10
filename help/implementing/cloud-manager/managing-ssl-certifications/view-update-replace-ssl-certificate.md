@@ -2,7 +2,7 @@
 title: 'Visualizzazione di un aggiornamento e sostituzione di un certificato SSL - Gestione di SSL '
 description: Visualizzazione dell'aggiornamento e sostituzione di un certificato SSL - Gestione dei certificati SSL
 translation-type: tm+mt
-source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Quando utilizzare queste opzioni nell&#39;interfaccia utente di Cloud Manager:
 
 ## Aggiornamento di un certificato SSL alla scadenza {#update-ssl-certificate}
 
-Quando un certificato scade, tutti i domini in uso con il certificato scaduto non funzioneranno più. Per aggiornare un certificato scaduto, è necessario seguire i passaggi elencati di seguito. In questo modo il dominio continuerà a funzionare come desiderato. Per poter aggiungere un nuovo certificato, è necessario aggiornare il nome di dominio personalizzato con il nuovo certificato. Per ulteriori informazioni, fare riferimento a [Visualizzazione e aggiornamento e sostituzione di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+Quando un certificato scade, tutti i domini in uso con il certificato scaduto non funzioneranno più. Per aggiornare un certificato scaduto, è necessario seguire i passaggi elencati di seguito. In questo modo il dominio continuerà a funzionare come desiderato. Per poter aggiungere un nuovo certificato, è necessario aggiornare il nome di dominio personalizzato con il nuovo certificato. Per ulteriori informazioni, fare riferimento a [Visualizzazione e aggiornamento e sostituzione di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md).
 
 Per aggiornare un certificato SSL, effettuate le seguenti operazioni:
 
