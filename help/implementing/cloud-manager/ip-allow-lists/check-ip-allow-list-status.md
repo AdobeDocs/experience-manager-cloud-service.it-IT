@@ -2,9 +2,9 @@
 title: Verifica dello stato del Elenco consentiti  IP
 description: Verifica dello stato del Elenco consentiti  IP
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Di seguito sono riportate le definizioni di stato che verranno visualizzate in u
 
 * **Non riuscito**: Uno o più processi di applicazione o non applicazione in un aggiornamento non sono riusciti. Ogni applicazione e applicazione verrà elencata insieme a Completato o Non valido.
    * Lo stato avrà esito negativo, anche se una applicazione/non applicazione nell&#39;aggiornamento non riesce.
-   * Lo stato resterà Non riuscito fino a quando tutti gli errori non saranno stati eliminati. Per cancellare l&#39;errore, l&#39;utente deve selezionare l&#39;icona dei tentativi accanto allo stato.
+   * Lo stato resterà Non riuscito fino a quando tutti gli errori non verranno cancellati. L&#39;utente deve selezionare l&#39;icona dei tentativi accanto allo stato per cancellare l&#39;errore.
    * L&#39;utente non sarà in grado di aggiornare o eliminare il Elenco consentiti di  IP mentre lo stato non è riuscito.
 
 * **Eliminazione**: Richiesta di eliminazione in corso. Ciò comporta l&#39;annullamento dell&#39;applicazione di tutti i servizi. Ogni applicazione non applicata verrà elencata insieme a Non avviata/In corso/Completata o Non riuscita.
