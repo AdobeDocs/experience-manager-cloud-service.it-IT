@@ -2,9 +2,9 @@
 title: Aggiunta di un certificato SSL - Gestione dei certificati SSL
 description: Aggiunta di un certificato SSL - Gestione dei certificati SSL
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Per poter essere installati su Cloud Manager, i file SSL devono essere in format
 
 Per convertire i file SSL in PEM, effettuate le seguenti operazioni:
 
-1. Converti PFX in PEM
+* Converti PFX in PEM
 
-`openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
 
-1. Converti P7B in PEM
+* Converti P7B in PEM
 
-`openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
 
-1. Converti DER in PEM
+* Converti DER in PEM
 
-`openssl x509 -inform der -in certificate.cer -out certificate.pem`
+   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
 ## Considerazioni importanti {#important-considerations}
 
@@ -50,9 +50,11 @@ Per aggiungere un certificato, effettuate le operazioni seguenti:
 1. Fare clic su **Certificati SSL** dal menu di navigazione a sinistra. In questa schermata viene visualizzata una tabella con i dettagli di eventuali certificati SSL esistenti.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
-1. Selezionare il pulsante **Aggiungi certificato** per aprire la finestra di dialogo **Aggiungi certificato SSL**.
+
+1. Fare clic su **Aggiungi certificato SSL** per aprire la finestra di dialogo **Aggiungi certificato SSL**.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
    1. Immettere un nome per il certificato in **Nome certificato**. Può trattarsi di un nome qualsiasi che faciliti il riferimento al certificato.
    1. Incollare i **Certificate**, **Private key** e **Certificate chain** nei rispettivi campi. Utilizzate l&#39;icona Incolla a destra della casella di input.
 Tutti e tre i campi non sono facoltativi e devono essere inclusi.
@@ -84,6 +86,4 @@ Il motivo più comune per cui una distribuzione di certificati non riesce è che
 
 ### Date di validità del certificato {#certificate-validity-dates}
 
-Cloud Manager prevede che il certificato SSL sarà valido per almeno 90 giorni nel futuro
-
-Verificare la validità della catena di certificati.
+Cloud Manager prevede che il certificato SSL sarà valido per almeno 90 giorni in futuro. È necessario verificare la validità della catena di certificati.
