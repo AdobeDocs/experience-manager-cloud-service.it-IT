@@ -2,7 +2,7 @@
 title: 'Annulla applicazione Elenco consentiti  IP '
 description: Annulla applicazione Elenco consentiti  IP
 translation-type: tm+mt
-source-git-commit: e92fc7bac289481d046eb6bc27da833f17b29c7e
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -19,7 +19,7 @@ L&#39;annullamento dell&#39;applicazione di un Elenco consentiti di  IP è il pr
 
 Per annullare l’applicazione di un Elenco consentiti di  IP, effettuate le seguenti operazioni:
 
-1. Passa alla pagina Dettagli ambiente specifica dalla schermata Ambienti e passa alla tabella del Elenco consentiti di  IP.
+1. Andate alla pagina Dettagli ambiente specifica dalla schermata **Ambienti** e andate alla tabella del Elenco consentiti di  IP.
 1. Identificare la riga in cui è elencata la regola del Elenco consentiti  IP che si desidera annullare l&#39;applicazione.
 1. Selezionare la **...** menu dall&#39;estremità destra della riga.
-1. Selezionate l’opzione Annulla applicazione e confermate l’invio.
+1. Selezionare l&#39;opzione **Annulla applicazione** e confermare l&#39;invio.
