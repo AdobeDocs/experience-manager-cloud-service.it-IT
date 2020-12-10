@@ -4,10 +4,10 @@ user-guide-title: Onboarding per AEM as a Cloud Service
 breadcrumb-title: Guida all’onboarding
 user-guide-description: Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati.
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 62%
+source-wordcount: '368'
+ht-degree: 61%
 
 ---
 
@@ -63,12 +63,12 @@ ht-degree: 62%
       + [Eliminazione del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + Gestione degli elenchi di indirizzi IP consentiti {#ip-allow-lists}
       + [Introduzione](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-      + [Aggiunta di un elenco indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-      + [Visualizzazione e aggiornamento di un elenco di indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [Applicazione dell&#39;elenco di indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [Annullamento dell&#39;applicazione di un elenco di indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [Eliminazione di un elenco di indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-      + [Verifica dello stato di un elenco indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+      + [Aggiunta di un Elenco consentiti di  IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [Visualizzazione e aggiornamento di un Elenco consentiti di  IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [Applicazione  Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Annullamento dell&#39;applicazione di un Elenco consentiti di  IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [Eliminazione di un Elenco consentiti di  IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [Verifica dello stato di un Elenco consentiti  IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Note sulla versione di Cloud Manager {#release-notes-cloud-manager}
       + [Note sulla versione corrente (2020.12.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Note sulla versione 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
