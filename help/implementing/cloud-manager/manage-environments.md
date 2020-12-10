@@ -2,10 +2,10 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
+source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 6%
+source-wordcount: '1254'
+ht-degree: 5%
 
 ---
 
@@ -146,4 +146,45 @@ Selezionare **Accesso locale** dal menu a discesa nella scheda **Ambienti** per 
 È inoltre possibile accedere localmente dalla pagina di riepilogo **Ambienti**.
 
 ![](assets/environ-login-locally-2.png)
+
+## Gestione dei nomi di dominio personalizzati {#manage-cdn}
+
+Passate alla pagina Dettagli ambiente dalla pagina Riepilogo ambienti.
+
+Per il servizio Pubblica del vostro ambiente potete effettuare le seguenti operazioni, come descritto di seguito:
+
+1. **Aggiunta di un nome** di dominio personalizzato: Fare riferimento a  [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+
+1. **Visualizzazione e aggiornamento del nome** di dominio personalizzato: Consultare  [Visualizzazione e aggiornamento dei nomi di dominio personalizzati e dei certificati SSL](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+
+1. **Eliminazione del nome** di dominio personalizzato: Fare riferimento a  [Eliminazione di nomi di dominio personalizzati e certificati SSL](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+
+## Gestione degli elenchi di indirizzi IP consentiti {#manage-ip-allow-lists}
+
+Passate alla pagina Dettagli ambiente dalla pagina Riepilogo ambienti. Potete eseguire le seguenti operazioni sui servizi Pubblica e/o Autore del vostro ambiente.
+
+### Applicazione di un elenco di indirizzi IP consentiti {#apply-ip-allow-list}
+
+L’applicazione di un Elenco consentiti di  IP è il processo tramite il quale tutti gli intervalli IP inclusi nella definizione di elenco di autorizzazioni sono associati a un servizio di creazione o pubblicazione in un ambiente. Per poter applicare un Elenco consentiti di  IP, è necessario che un utente nel ruolo Proprietario business o Gestione distribuzione abbia eseguito l&#39;accesso.
+
+>[!NOTE]
+>Il Elenco consentiti di  IP deve esistere in Cloud Manager per poterlo applicare a un servizio di ambiente. Per saperne di più sugli elenchi di indirizzi IP consentiti in Cloud Manager, vai a [Introduzione agli elenchi di indirizzi IP consentiti in Gestore delle licenze (Can Manager)](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
+Effettua le seguenti operazioni:
+
+1. Passa alla pagina Dettagli ambiente specifica dalla schermata Ambienti e passa alla tabella del Elenco consentiti di  IP.
+1. Utilizzate i campi di input nella parte superiore della tabella del Elenco consentiti di  IP per selezionare il Elenco consentiti di  IP e il servizio Autore o Pubblica a cui desiderate applicarlo.
+1. Quindi, selezionate Applica e confermate l&#39;invio.
+
+### Annullamento dell&#39;applicazione di un elenco di indirizzi IP consentiti {#unapply-ip-allow-list}
+
+L&#39;annullamento dell&#39;applicazione di un Elenco consentiti di  IP è il processo tramite il quale tutti gli intervalli IP inclusi nella definizione dell&#39;elenco di indirizzi consentiti vengono disassociati da un servizio Author/Publisher in un ambiente.  Per poter annullare l’applicazione di un Elenco consentiti di  IP, è necessario che un utente nel ruolo Proprietario business o Gestione distribuzione abbia eseguito l’accesso.
+
+Effettua le seguenti operazioni:
+
+1. Passa alla pagina Dettagli ambiente specifica dalla schermata Ambienti e passa alla tabella del Elenco consentiti di  IP.
+1. Identificare la riga in cui è elencata la regola del Elenco consentiti  IP che si desidera annullare l&#39;applicazione.
+1. Selezionare la **...** menu dall&#39;estremità destra della riga.
+1. Selezionate l’opzione Annulla applicazione e confermate l’invio.
+
 
