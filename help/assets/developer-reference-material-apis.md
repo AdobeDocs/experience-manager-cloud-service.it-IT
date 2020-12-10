@@ -3,17 +3,65 @@ title: Riferimenti sviluppatore per  [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 1%
+source-wordcount: '1400'
+ht-degree: 2%
 
 ---
 
 
-# [!DNL Assets] API e materiale di riferimento per sviluppatori  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] API e materiale di riferimento per sviluppatori  {#assets-cloud-service-apis}
 
-L&#39;articolo contiene materiale di riferimento e risorse per gli sviluppatori di [!DNL Assets] come [!DNL Cloud Service]. Include un nuovo metodo di caricamento, riferimenti API e informazioni sul supporto fornito nei flussi di lavoro di post-elaborazione.
+L&#39;articolo contiene raccomandazioni, materiali di riferimento e risorse per gli sviluppatori di [!DNL Assets] come [!DNL Cloud Service]. Include un nuovo modulo di caricamento delle risorse, riferimenti API e informazioni sul supporto fornito nei flussi di lavoro di post-elaborazione.
+
+## [!DNL Experience Manager Assets] API e operazioni  {#use-cases-and-apis}
+
+[!DNL Assets] come  [!DNL Cloud Service] fornisce diverse API per interagire in modo programmatico con le risorse digitali. Ciascuna API supporta casi di utilizzo specifici, come indicato nella tabella seguente. L&#39;interfaccia utente [!DNL Assets], [!DNL Experience Manager] l&#39;app desktop e [!DNL Adobe Asset Link] supportano tutte o alcune delle operazioni.
+
+>[!CAUTION]
+>
+>Alcune API continuano a esistere ma non sono supportate attivamente (indicate con un ×) e non devono essere utilizzate.
+
+| Livello di supporto | Descrizione |
+| ------------- | --------------------------- |
+| AND | Supportato |
+| × | Non supportato. Non utilizzare. |
+| - | Non disponibile |
+
+| Caso di utilizzo | [caricamento Aem](https://github.com/adobe/aem-upload) | [API AEM / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava | [servizio Asset compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Preview)_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| **binario originale** |  |  |  |  |  |  |
+| Crea originale | AND | × | - | × | × | - |
+| Leggi originale | - | × | AND | AND | AND | - |
+| Aggiorna originale | AND | × | AND | × | × | - |
+| Elimina originale | - | AND | - | AND | AND | - |
+| Copia originale | - | AND | - | AND | AND | - |
+| Sposta originale | - | AND | - | AND | AND | - |
+| **Metadati** |  |  |  |  |  |  |
+| Creare i metadati | - | AND | AND | AND | AND | - |
+| Leggere i metadati | - | AND | - | AND | AND | - |
+| Aggiornare i metadati | - | AND | AND | AND | AND | - |
+| Eliminare i metadati | - | AND | AND | AND | AND | - |
+| Copiare i metadati | - | AND | - | AND | AND | - |
+| Spostare i metadati | - | AND | - | AND | AND | - |
+| **Frammenti di contenuto (CF)** |  |  |  |  |  |  |
+| Crea CF | - | AND | - | AND | - | - |
+| Leggi CF | - | AND | - | AND | - | AND |
+| Aggiorna CF | - | AND | - | AND | - | - |
+| Elimina CF | - | AND | - | AND | - | - |
+| Copia CF | - | AND | - | AND | - | - |
+| Sposta CF | - | AND | - | AND | - | - |
+| **Versioni** |  |  |  |  |  |  |
+| Crea versione | AND | AND | - | - | - | - |
+| Lettura della versione | - | AND | - | - | - | - |
+| Elimina versione | - | AND | - | - | - | - |
+| **Cartelle** |  |  |  |  |  |  |
+| Crea cartella | AND | AND | - | AND | - | - |
+| Leggi cartella | - | AND | - | AND | - | - |
+| Elimina cartella | AND | AND | - | AND | - | - |
+| Copia cartella | AND | AND | - | AND | - | - |
+| Sposta cartella | AND | AND | - | AND | - | - |
 
 ## Caricamento risorse {#asset-upload-technical}
 
@@ -31,8 +79,7 @@ Questo approccio fornisce una gestione scalabile e più efficace dei caricamenti
 * L&#39;archiviazione cloud binario funziona con una rete CDN (Content Delivery Network) o Edge. Una rete CDN seleziona un endpoint di caricamento più vicino a un client. Quando i dati si spostano a una distanza più breve da un endpoint vicino, le prestazioni di caricamento e l&#39;esperienza dell&#39;utente migliorano, soprattutto per i team distribuiti geograficamente.
 
 >[!NOTE]
->
->Consultate il codice client per implementare questo approccio nella libreria open-source [aem-upload](https://github.com/adobe/aem-upload).
+Consultate il codice client per implementare questo approccio nella libreria open-source [aem-upload](https://github.com/adobe/aem-upload).
 
 ### Avviare il caricamento {#initiate-upload}
 
