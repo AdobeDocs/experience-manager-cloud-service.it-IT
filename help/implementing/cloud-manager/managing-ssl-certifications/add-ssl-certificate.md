@@ -2,9 +2,9 @@
 title: Aggiunta di un certificato SSL - Gestione dei certificati SSL
 description: Aggiunta di un certificato SSL - Gestione dei certificati SSL
 translation-type: tm+mt
-source-git-commit: 88ef9265b40f64f2229e37e5f8ca02959e8d9ce2
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,13 @@ Per convertire i file SSL in PEM, effettuate le seguenti operazioni:
 
 `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
-## Aggiunta del certificato {#adding-certificate}
+## Considerazioni importanti {#important-considerations}
 
->[!NOTE]
->* Per installare un certificato SSL in Cloud Manager, un utente deve avere il ruolo Proprietario business o Gestione distribuzione.
->* In qualsiasi momento, Cloud Manager consentirà un massimo di 10 certificati SSL che possono essere associati a uno o più ambienti nel programma, anche se un certificato è scaduto. L&#39;interfaccia utente di Cloud Manager, tuttavia, consentirà l&#39;installazione di fino a 50 certificati SSL nel programma con questo vincolo.
+* Per installare un certificato SSL in Cloud Manager, un utente deve avere il ruolo Proprietario business o Gestione distribuzione.
 
+* In qualsiasi momento, Cloud Manager consentirà un massimo di 10 certificati SSL che possono essere associati a uno o più ambienti nel programma, anche se un certificato è scaduto. L&#39;interfaccia utente di Cloud Manager, tuttavia, consentirà l&#39;installazione di fino a 50 certificati SSL nel programma con questo vincolo.
+
+## Aggiunta di un certificato {#adding-a-cert}
 
 Per aggiungere un certificato, effettuate le operazioni seguenti:
 
@@ -51,13 +52,14 @@ Per aggiungere un certificato, effettuate le operazioni seguenti:
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 1. Selezionare il pulsante **Aggiungi certificato** per aprire la finestra di dialogo **Aggiungi certificato SSL**.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-2.png)
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
    1. Immettere un nome per il certificato in **Nome certificato**. Può trattarsi di un nome qualsiasi che faciliti il riferimento al certificato.
    1. Incollare i **Certificate**, **Private key** e **Certificate chain** nei rispettivi campi. Utilizzate l&#39;icona Incolla a destra della casella di input.
+Tutti e tre i campi non sono facoltativi e devono essere inclusi.
 
-      >[!NOTE]
-      >Tutti e tre i campi non sono facoltativi e devono essere inclusi.
 1. Fare clic su **Salva** per inviare il certificato. La tabella verrà visualizzata come nuova riga.
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
    >[!NOTE]
    >Eventuali errori rilevati verranno visualizzati. È necessario risolvere tutti gli errori prima di salvare il certificato. Fare riferimento a [Errori certificati](#certificate-errors) per ulteriori informazioni sulla risoluzione di errori comuni.
 
