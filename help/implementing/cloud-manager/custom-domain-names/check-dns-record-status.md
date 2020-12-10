@@ -2,7 +2,7 @@
 title: Verifica dello stato del record DNS
 description: Verifica dello stato del record DNS
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -14,8 +14,7 @@ ht-degree: 0%
 
 È possibile determinare se il nome di dominio viene risolto correttamente nel AEM come sito Web di Cloud Service facendo clic sull&#39;icona Stato per il record DNS nella tabella in Ambienti della pagina Impostazioni di dominio.
 
->[!NOTE]
->Cloud Manager attiva automaticamente una ricerca DNS quando il nome di dominio personalizzato viene verificato e distribuito per la prima volta. Per i tentativi successivi, devi selezionare attivamente l&#39;icona **resolve again** accanto allo stato.
+Cloud Manager attiva automaticamente una ricerca DNS quando il nome di dominio personalizzato viene verificato e distribuito per la prima volta. Per i tentativi successivi, devi selezionare attivamente l&#39;icona **resolve again** accanto allo stato.
 
 Cloud Manager esegue una ricerca DNS per il tuo nome di dominio e visualizza uno dei seguenti messaggi di stato:
 
