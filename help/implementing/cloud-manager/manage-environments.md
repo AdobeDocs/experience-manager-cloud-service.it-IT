@@ -2,9 +2,9 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1264'
 ht-degree: 5%
 
 ---
@@ -149,21 +149,28 @@ Selezionare **Accesso locale** dal menu a discesa nella scheda **Ambienti** per 
 
 ## Gestione dei nomi di dominio personalizzati {#manage-cdn}
 
-Passate alla pagina Dettagli ambiente dalla pagina Riepilogo ambienti.
+Passare alla pagina dei dettagli **Ambienti** dalla pagina Riepilogo ambienti.
 
 Per il servizio Pubblica del vostro ambiente potete effettuare le seguenti operazioni, come descritto di seguito:
 
-1. **Aggiunta di un nome** di dominio personalizzato: Fare riferimento a  [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. **Aggiunta di un**
+nome di dominio personalizzatoFare riferimento a  [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **Visualizzazione e aggiornamento del nome** di dominio personalizzato: Consultare  [Visualizzazione e aggiornamento dei nomi di dominio personalizzati e dei certificati SSL](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+1. **Visualizzazione e aggiornamento del nome di dominio personalizzato e**
+dei certificati SSLFare riferimento a
+   * [Visualizzazione e aggiornamento dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+   * [Visualizzazione e aggiornamento dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
 
-1. **Eliminazione del nome** di dominio personalizzato: Fare riferimento a  [Eliminazione di nomi di dominio personalizzati e certificati SSL](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. **Eliminazione di nome di dominio personalizzato e**
+certificati SSLFare riferimento a
+   * [Eliminazione di nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   * [Certificati SSL](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-## Gestione degli elenchi di indirizzi IP consentiti {#manage-ip-allow-lists}
+## Gestione dei Elenchi consentiti di  IP {#manage-ip-allow-lists}
 
 Passate alla pagina Dettagli ambiente dalla pagina Riepilogo ambienti. Potete eseguire le seguenti operazioni sui servizi Pubblica e/o Autore del vostro ambiente.
 
-### Applicazione di un elenco di indirizzi IP consentiti {#apply-ip-allow-list}
+### Applicazione di un Elenco consentiti di  IP {#apply-ip-allow-list}
 
 L’applicazione di un Elenco consentiti di  IP è il processo tramite il quale tutti gli intervalli IP inclusi nella definizione di elenco di autorizzazioni sono associati a un servizio di creazione o pubblicazione in un ambiente. Per poter applicare un Elenco consentiti di  IP, è necessario che un utente nel ruolo Proprietario business o Gestione distribuzione abbia eseguito l&#39;accesso.
 
