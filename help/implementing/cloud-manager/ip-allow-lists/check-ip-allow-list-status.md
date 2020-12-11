@@ -2,7 +2,7 @@
 title: Verifica dello stato del Elenco consentiti  IP
 description: Verifica dello stato del Elenco consentiti  IP
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -33,7 +33,8 @@ Di seguito sono riportate le definizioni di stato che verranno visualizzate in u
 
 * **Eliminazione**: Richiesta di eliminazione in corso. Ciò comporta l&#39;annullamento dell&#39;applicazione di tutti i servizi. Ogni applicazione non applicata verrà elencata insieme a Non avviata/In corso/Completata o Non riuscita.
 Una volta completata l&#39;operazione di eliminazione, il Elenco consentiti di  IP:
-   * Non viene più visualizzato nella tabella di Elenco consentiti  IP * Non è più possibile applicare alcun servizio nel programma in Cloud Manager
+   * Non viene più visualizzato nella tabella del Elenco consentiti di  IP.
+   * Non verrà più applicato ad alcun servizio nel programma in Cloud Manager.
 
 * **Eliminazione non riuscita**: Uno o più processi non applicabili in un&#39;operazione di eliminazione non riusciti. Ogni applicazione non applicata verrà elencata insieme a Completato o Non valido.
 
