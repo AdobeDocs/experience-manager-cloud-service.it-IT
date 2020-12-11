@@ -2,9 +2,9 @@
 title: Gestione degli ambienti - Cloud Service
 description: Gestione degli ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
+source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1249'
 ht-degree: 4%
 
 ---
@@ -168,7 +168,7 @@ Passate alla pagina Dettagli ambiente dalla pagina Riepilogo ambienti. Potete es
 L’applicazione di un Elenco consentiti di  IP è il processo tramite il quale tutti gli intervalli IP inclusi nella definizione di elenco di autorizzazioni sono associati a un servizio di creazione o pubblicazione in un ambiente. Per poter applicare un Elenco consentiti di  IP, è necessario che un utente nel ruolo Proprietario business o Gestione distribuzione abbia eseguito l&#39;accesso.
 
 >[!NOTE]
->Il Elenco consentiti di  IP deve esistere in Cloud Manager per poterlo applicare a un servizio di ambiente. Per saperne di più sugli elenchi di indirizzi IP consentiti in Cloud Manager, vai a [Introduzione agli Elenchi consentiti di  IP in Gestore delle risorse ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Il Elenco consentiti di  IP deve esistere in Cloud Manager per poterlo applicare a un servizio di ambiente. Per ulteriori informazioni sui Elenchi consentiti di  IP in Cloud Manager, vai a [Introduzione ai Elenchi consentiti di  IP in Gestione risorse ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 Per applicare un Elenco consentiti di  IP, effettuate le seguenti operazioni:
 
