@@ -2,15 +2,15 @@
 title: 'Annulla applicazione Elenco consentiti  IP '
 description: Annulla applicazione Elenco consentiti  IP
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
 
-# Annullamento dell&#39;applicazione dell&#39;Elenco consentiti di  IP {#apply-allow-list}
+# Annullamento dell&#39;applicazione di un Elenco consentiti di  IP {#apply-allow-list}
 
 L&#39;annullamento dell&#39;applicazione di un Elenco consentiti di  IP è il processo tramite il quale tutti gli intervalli IP inclusi nella definizione dell&#39;elenco di indirizzi consentiti vengono disassociati da un servizio Author/Publisher in un ambiente.
 
