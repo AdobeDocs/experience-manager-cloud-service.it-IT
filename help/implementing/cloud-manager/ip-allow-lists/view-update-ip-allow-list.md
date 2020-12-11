@@ -2,15 +2,15 @@
 title: Visualizzazione e aggiornamento - Elenchi consentiti di  IP in Gestione risorse
 description: Visualizzazione e aggiornamento - Elenchi consentiti di  IP in Gestione risorse
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
 
 
-# Visualizzazione e aggiornamento di Elenchi consentiti di  IP {#view-update}
+# Visualizzazione e aggiornamento di un Elenco consentiti di  IP {#view-update}
 
 Puoi visualizzare e aggiornare gli Elenchi consentiti di  IP nei seguenti scenari:
 
