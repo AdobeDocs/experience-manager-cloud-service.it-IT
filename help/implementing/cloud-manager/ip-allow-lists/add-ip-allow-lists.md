@@ -2,7 +2,7 @@
 title: 'Aggiunta di un Elenco consentiti di  IP '
 description: Aggiunta di un Elenco consentiti di  IP
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 701020701fd45af720edea13a70cb459a650fbca
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -10,11 +10,9 @@ ht-degree: 0%
 ---
 
 
-# Introduzione {#introduction}
+# Aggiunta di un Elenco consentiti di  IP {#add-ip-allow-list}
 
 Per poter aggiungere un Elenco consentiti di  IP, è necessario che un utente nel ruolo Proprietario business o Gestione distribuzione abbia eseguito l&#39;accesso.
-
-## Aggiunta di Elenco consentiti di  IP {#add-ip-allow-list}
 
 Per aggiungere un Elenco consentiti di  IP, effettuate le operazioni seguenti:
 
