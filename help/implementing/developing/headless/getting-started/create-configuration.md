@@ -2,7 +2,7 @@
 title: Creazione di una guida rapida alla configurazione senza titolo
 description: Come primo passo per iniziare a utilizzare il AEM headless come Cloud Service, è necessario creare una configurazione.
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 2%
@@ -42,12 +42,14 @@ Un amministratore dovrebbe creare una configurazione solo una volta, o molto rar
 
 Se necessario, potete creare più configurazioni. È inoltre possibile nidificare le configurazioni.
 
->!![NOTE]
-Le opzioni di configurazione oltre a **Modelli di frammenti di contenuto** e **GraphQL Persistent Query** potrebbero essere necessarie a seconda dei requisiti di implementazione.
+>[!NOTE]
+>
+>Le opzioni di configurazione oltre a **Modelli di frammenti di contenuto** e **GraphQL Persistent Query** potrebbero essere necessarie a seconda dei requisiti di implementazione.
 
 ## Passaggi successivi {#next-steps}
 
 Utilizzando questa configurazione, ora puoi passare alla seconda parte della guida introduttiva e [creare modelli di frammenti di contenuto.](create-content-model.md)
 
->!![TIP]
-Per informazioni complete sul browser di configurazione, consultare la documentazione del browser di configurazione.[](/help/implementing/developing/introduction/configurations.md)
+>[!TIP]
+>
+>Per informazioni complete sul browser di configurazione, consultare la documentazione del browser di configurazione.[](/help/implementing/developing/introduction/configurations.md)
