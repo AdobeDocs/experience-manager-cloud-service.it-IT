@@ -2,9 +2,9 @@
 title: Introduzione SPA e Procedura dettagliata
 description: Questo articolo introduce i concetti di SPA e illustra come utilizzare un'applicazione SPA di base per la creazione, mostrando come si collega all'Editor SPA sottostante.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1933'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ La sezione successiva, [Caricamento di un&#39;applicazione SPA](#loading-a-spa-a
 
 ### Caricamento di un&#39;applicazione SPA {#loading-a-spa-application}
 
-1. Se non è già stato caricato, caricate l&#39;applicazione We.Retail Journal sul server di pubblicazione o utilizzando l&#39;opzione **Visualizza come pubblicato** dal menu **Informazioni pagina** nell&#39;editor pagina.
+1. Se non è già stato caricato, caricate l&#39;app WKND SPA Project sul server di pubblicazione o utilizzando l&#39;opzione **Visualizza come pubblicato** dal menu **Informazioni pagina** nell&#39;editor pagina.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -254,7 +254,7 @@ La sezione successiva, [Caricamento di un&#39;applicazione SPA](#loading-a-spa-a
 
 1. Il modello può anche raggruppare le pagine in modo che vengano caricate in modo sincrono, riducendo il numero di ricariche di pagina necessarie.
 
-   Nell&#39;esempio di We.Retail Journal, le pagine `home`, `page-1`, `page-2` e `page-3` vengono caricate in modo sincrono, dal momento che i visitatori visitano comunemente tutte queste pagine.
+   Nell&#39;esempio dell&#39;app progetto WKND SPA, le pagine `home`, `page-1`, `page-2` e `page-3` vengono caricate in modo sincrono, dal momento che i visitatori visitano generalmente tutte queste pagine.
 
    Questo comportamento non è obbligatorio ed è completamente definibile.
 
