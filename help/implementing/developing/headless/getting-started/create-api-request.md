@@ -2,7 +2,7 @@
 title: Accesso e distribuzione di frammenti di contenuto Guida di avvio rapido senza titolo
 description: L’API REST di Assets consente di gestire i frammenti di contenuto e l’API GraphQL consente una distribuzione semplice e senza precedenti del contenuto dei frammenti di contenuto.
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Gli architetti delle informazioni dovranno progettare query per i loro endpoint 
 
 1. Supponendo che il modello creato sia stato denominato `person` con i campi `firstName`, `lastName` e `position`, è possibile creare una semplice query per recuperare il contenuto del frammento di contenuto.
 
-   ```
+   ```text
    query {
      persons {
        items {
