@@ -2,7 +2,7 @@
 title: Guida rapida alla creazione di frammenti di contenuto senza titolo
 description: I frammenti di contenuto consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina che possono essere distribuiti senza problemi da AEM.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 1%
@@ -53,5 +53,6 @@ I frammenti di contenuto possono fare riferimento ad altre risorse in AEM. [Ques
 
 Dopo aver creato un frammento di contenuto, puoi passare alla parte finale della guida introduttiva e [creare richieste API per accedere e distribuire frammenti di contenuto.](create-api-request.md)
 
->!![TIP]
-Per informazioni complete sulla gestione dei frammenti di contenuto, consultare la [documentazione relativa ai frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>Per informazioni complete sulla gestione dei frammenti di contenuto, consultare la [documentazione relativa ai frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
