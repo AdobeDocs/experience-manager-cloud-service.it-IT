@@ -2,7 +2,7 @@
 title: Modelli di pagina
 description: I modelli di pagina vengono utilizzati per creare una pagina che verrà utilizzata come base per la nuova pagina
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 8%
@@ -555,7 +555,7 @@ La valutazione funziona come segue:
 
 * Se `T` dispone di una proprietà `allowedPaths` non vuota, ma nessuno dei valori corrisponde al percorso di `P`, `T` viene rifiutato.
 
-* Se entrambe le proprietà di cui sopra sono vuote o inesistenti, `T` viene rifiutato a meno che non appartengano alla stessa applicazione di `P`. `T` appartiene alla stessa applicazione  `P` if e solo se il nome del secondo livello del percorso  `T` è lo stesso del nome del secondo livello del percorso di  `P`. Ad esempio, il modello `/apps/geometrixx/templates/foo` appartiene alla stessa applicazione della pagina `/content/geometrixx`.
+* Se entrambe le proprietà di cui sopra sono vuote o inesistenti, `T` viene rifiutato a meno che non appartengano alla stessa applicazione di `P`. `T` appartiene alla stessa applicazione  `P` if e solo se il nome del secondo livello del percorso  `T` è lo stesso del nome del secondo livello del percorso di  `P`. Ad esempio, il modello `/apps/wknd/templates/foo` appartiene alla stessa applicazione della pagina `/content/wknd`.
 
 * Se `T` ha una proprietà `allowedParents` non vuota, ma nessuno dei valori corrisponde al percorso di `P`, `T` viene rifiutato.
 
