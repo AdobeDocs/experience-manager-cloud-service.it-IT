@@ -2,7 +2,7 @@
 title: Guida di avvio rapido alla creazione di una cartella di risorse senza titolo
 description: I modelli di frammenti di contenuto definiscono la struttura dei frammenti di contenuto. I frammenti di contenuto vengono quindi memorizzati nelle cartelle delle risorse.
 translation-type: tm+mt
-source-git-commit: 9c801af38142434a5a0302b73b6fc1469a0eaab2
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -53,5 +53,6 @@ Se si utilizza una struttura del sito localizzata, è possibile [creare una radi
 
 Dopo aver creato una cartella per i frammenti di contenuto, puoi passare alla quarta parte della guida introduttiva e [creare frammenti di contenuto.](create-content-fragment.md)
 
->!![TIP]
-Per informazioni complete sulla gestione dei frammenti di contenuto, consultare la [documentazione relativa ai frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>Per informazioni complete sulla gestione dei frammenti di contenuto, consultare la [documentazione relativa ai frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
