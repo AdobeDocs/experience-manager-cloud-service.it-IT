@@ -2,7 +2,7 @@
 title: Guida rapida alla creazione di modelli di frammenti di contenuto senza titolo
 description: I modelli di frammento di contenuto definiscono la struttura del contenuto che verrà creato e distribuito utilizzando AEM funzionalità headless.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -63,5 +63,6 @@ Potete creare più modelli. I modelli possono fare riferimento ad altri framment
 
 Dopo aver definito le strutture dei frammenti di contenuto creando modelli, è possibile passare alla terza parte della guida introduttiva e [creare cartelle in cui memorizzare i frammenti stessi.](create-assets-folder.md)
 
->!![TIP]
-Per informazioni complete sui modelli di frammenti di contenuto, consultare la [Documentazione sui modelli di frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
+>[!TIP]
+>
+>Per informazioni complete sui modelli di frammenti di contenuto, consultare la [Documentazione sui modelli di frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
