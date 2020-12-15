@@ -3,10 +3,10 @@ title: Applicare tag automatici alle immagini con tag generati dall'interfaccia 
 description: Applicate tag alle immagini utilizzando servizi intelligenti artificialmente che applicano tag aziendali contestuali e descrittivi utilizzando i servizi  [!DNL Adobe Sensei] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
+source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ In background, gli Smart Tags utilizzano un framework di intelligenza artificial
 
 Per utilizzare i tag avanzati, effettuate le seguenti operazioni:
 
-* [Integrare  Experience Manager con  Adobe Developer Console](#integrate-aem-with-aio).
+* [ [!DNL Adobe Experience Manager] Integrare con Adobe Developer Console](#integrate-aem-with-aio).
 * [Informazioni sui modelli e sulle linee guida](#understand-tag-models-guidelines) dei tag.
 * [Formare il modello](#train-model).
 * [Assegnare tag alle risorse](#tag-assets) digitali.
@@ -105,6 +105,9 @@ Per creare e formare un modello per i tag aziendali specifici, procedere come se
 1. Fai clic su **[!UICONTROL Crea]**. Specificare un **[!UICONTROL Titolo]**, **[!UICONTROL Descrizione]**.
 1. Sfogliare e selezionare i tag esistenti in `cq:tags` per i quali si desidera formare il modello. Fai clic su **[!UICONTROL Avanti]**.
 1. Nella finestra di dialogo **[!UICONTROL Seleziona risorse]**, fare clic su **[!UICONTROL Aggiungi risorse]** rispetto a ciascun tag. Cercate nell&#39;archivio DAM o sfogliate l&#39;archivio per selezionare almeno 10 e al massimo 50 immagini. Selezionate le risorse e non la cartella. Dopo aver selezionato le immagini, fare clic su **[!UICONTROL Seleziona]**.
+
+   ![Visualizza stato formazione](assets/smart-tags-training-status.png)
+
 1. Per visualizzare in anteprima le miniature delle immagini selezionate, fate clic sulla struttura di navigazione davanti a un tag. Per modificare la selezione, fai clic su **[!UICONTROL Aggiungi risorse]**. Una volta completata la selezione, fare clic su **[!UICONTROL Invia]**. L’interfaccia utente visualizza una notifica nella parte inferiore della pagina per indicare che la formazione è avviata.
 1. Controllate lo stato della formazione nella colonna **[!UICONTROL Stato]** per ciascun modello di tag. Gli stati possibili sono [!UICONTROL In sospeso], [!UICONTROL Formati] e [!UICONTROL Non riusciti].
 
@@ -116,13 +119,13 @@ Per creare e formare un modello per i tag aziendali specifici, procedere come se
 
 Per verificare se il servizio Smart Tags è addestrato sui tag nel set di risorse di formazione, controllate il rapporto sul flusso di lavoro di formazione dalla console Rapporti.
 
-1. Nell&#39;interfaccia [!DNL Experience Manager], passare a **[!UICONTROL Strumenti > Risorse > Rapporti]**.
+1. Nell&#39;interfaccia [!DNL Experience Manager], passare a **[!UICONTROL Strumenti] > **[!UICONTROL Risorse] > **[!UICONTROL Rapporti]**.
 1. Nella pagina **[!UICONTROL Report risorse]**, fate clic su **[!UICONTROL Crea]**.
 1. Selezionare il report **[!UICONTROL Smart Tags Training]**, quindi fare clic su **[!UICONTROL Next]** dalla barra degli strumenti.
 1. Specifica un titolo e una descrizione per il rapporto. In **[!UICONTROL Pianifica rapporto]**, lascia selezionata l’opzione **[!UICONTROL Now (Ora)]**. Se vuoi pianificare il rapporto per un momento successivo, seleziona **[!UICONTROL Later (Più tardi)]** e specifica una data e un’ora. Quindi, fare clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
 1. Nella pagina **[!UICONTROL Rapporti su risorse]**, seleziona il rapporto generato. Per visualizzare il rapporto, fare clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
 1. Rivedete i dettagli del rapporto. Il rapporto mostra lo stato di formazione per i tag che hai appreso. Il colore verde nella colonna **[!UICONTROL Stato formazione]** indica che il servizio Smart Tags è stato addestrato per il tag. Se invece del verde è presente il colore giallo, il training del servizio di contenuti avanzati non è stato completato per un tag specifico. In questo caso, aggiungi altre immagini che contengono il tag in questione ed esegui il flusso di lavoro di formazione per completare il training del servizio per quel tag. Se i tag non vengono visualizzati in questo rapporto, eseguite di nuovo il flusso di lavoro di formazione per questi tag.Tags
-1. Per scaricare il rapporto, selezionatelo dall&#39;elenco e fate clic su **[!UICONTROL Scarica]** dalla barra degli strumenti. Il rapporto viene scaricato come foglio di calcolo di Microsoft Excel.
+1. Per scaricare il rapporto, selezionatelo dall&#39;elenco e fate clic su **[!UICONTROL Scarica]** dalla barra degli strumenti. Il rapporto viene scaricato come un foglio di calcolo [!DNL Microsoft Excel].
 
 ## Assegnare tag alle risorse {#tag-assets}
 
