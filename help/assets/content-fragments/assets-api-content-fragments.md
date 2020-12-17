@@ -2,9 +2,9 @@
 title: Adobe Experience Manager come Cloud Service Supporto dei frammenti di contenuto nell'API HTTP Assets
 description: Informazioni su Adobe Experience Manager come Cloud Service Supporto dei frammenti di contenuto nell'API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
+source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1862'
 ht-degree: 2%
 
 ---
@@ -66,6 +66,7 @@ Ad esempio, per accedere a `/content/dam/wknd/en/adventures/cycling-tuscany`, ri
 
 >[!NOTE]
 >Accesso tramite:
+>
 >* `/api/assets` **non** richiede l&#39;utilizzo del  `.model` selettore.
 >* `/content/path/to/page` **È** necessario utilizzare il  `.model` selettore.
 
@@ -306,32 +307,27 @@ Utilizzo tramite:
 
 Esistono alcuni limiti:
 
-* **Le varianti non possono essere scritte e aggiornate.** Se tali varianti vengono aggiunte a un payload (ad es. per gli aggiornamenti), verranno ignorate. Tuttavia, la variante verrà servita tramite consegna ( `GET`).
-
 * **I modelli di frammento di contenuto non sono attualmente supportati**: non possono essere letti o creati. Per poter creare un nuovo frammento di contenuto o aggiornarne uno esistente, gli sviluppatori devono conoscere il percorso corretto del modello di frammento di contenuto. Attualmente l’unico metodo per ottenere una panoramica di questi metodi è tramite l’interfaccia utente di amministrazione.
 * **I riferimenti vengono ignorati**. Al momento non è disponibile alcun controllo per verificare se a un frammento di contenuto esistente viene fatto riferimento. Pertanto, ad esempio, l&#39;eliminazione di un frammento di contenuto potrebbe causare problemi in una pagina che contiene un riferimento al frammento di contenuto eliminato.
+
+<!--
+* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
+-->
 
 ## Codici di stato e messaggi di errore {#status-codes-and-error-messages}
 
 I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
 
-* **200** (OK)
-
-   Restituito quando:
+* **200** (OK) Restituito quando:
 
    * richiesta di un frammento di contenuto tramite `GET`
-
    * aggiornamento di un frammento di contenuto tramite `PUT`
 
-* **201** (Creato)
-
-   Restituito quando:
+* **201** (Creato) Restituito quando:
 
    * creazione di un frammento di contenuto tramite `POST`
 
-* **404** (non trovato)
-
-   Restituito quando:
+* **404** (Non trovato) Restituito quando:
 
    * il frammento di contenuto richiesto non esiste
 
@@ -341,8 +337,8 @@ I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
    >
    >Questo errore viene restituito:
    >
-   >    * quando si è verificato un errore che non può essere identificato con un codice specifico
-   >    * quando il payload specificato non era valido
+   >* quando si è verificato un errore che non può essere identificato con un codice specifico
+   >* quando il payload specificato non era valido
 
 
    Di seguito sono elencati gli scenari più comuni in cui viene restituito questo stato di errore, insieme al messaggio di errore (spaziatura fissa) generato:
@@ -384,6 +380,7 @@ I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
 ## Riferimento API {#api-reference}
 
 Consultate qui per riferimenti API dettagliati:
+
 <!--
 * [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 -->
