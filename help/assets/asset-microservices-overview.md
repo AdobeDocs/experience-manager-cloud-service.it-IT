@@ -3,9 +3,9 @@ title: Elaborazione delle risorse tramite i microservizi delle risorse
 description: Elabora le risorse digitali tramite microservizi di elaborazione delle risorse scalabili e nativi basati sul cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '829'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Adobe Experience Manager come [!DNL Cloud Service] fornisce un metodo nativo per
 * Se applicabile, vengono utilizzati servizi di elaborazione file di Adobe nativi , che forniscono output ad alta fedeltà e [gestione efficiente  formati proprietari di Adobe](file-format-support.md).
 * Possibilità di configurare il flusso di lavoro di post-elaborazione per aggiungere azioni e integrazioni specifiche per l’utente.
 
-I microservizi delle risorse consentono di evitare la necessità di strumenti e metodi di rendering di terze parti (come la transcodifica ImageMagick e FFmpeg) e di semplificare le configurazioni, fornendo al contempo funzionalità pronte all’uso per i tipi di file più comuni.
+I microservizi delle risorse consentono di evitare la necessità di strumenti e metodi di rendering di terze parti (come la transcodifica ImageMagick e FFmpeg) e di semplificare le configurazioni, fornendo al contempo le funzionalità di base per i tipi di file più comuni per impostazione predefinita.
 
 ## Architettura di alto livello {#asset-microservices-architecture}
 
