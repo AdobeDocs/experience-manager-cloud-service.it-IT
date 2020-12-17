@@ -2,10 +2,10 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: d115f5ce463257af54ae0ff48749df455b863dfd
+source-git-commit: 984914c6147d0ee96575c93496cbdfc4bb9bc094
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 3%
+source-wordcount: '530'
+ht-degree: 5%
 
 ---
 
@@ -16,70 +16,26 @@ Nella sezione seguente sono riportate le note generali sulla versione relative a
 
 ## Data di rilascio {#release-date}
 
-La data di rilascio per [!DNL Adobe Experience Manager] come Cloud Service 2020.11.0 è il 2 dicembre 2020.
-La seguente release (2020.12.0) sarà del 17 dicembre 2020
+La data di rilascio per [!DNL Adobe Experience Manager] come Cloud Service 2020.12.0 è il 17 dicembre 2020.
+La seguente release (2021.1.0) sarà del 28 gennaio 2020.
 
-## [!DNL Adobe Experience Manager Sites] come Cloud Service  {#sites}
+## [!DNL Adobe Experience Manager Assets] come  [!DNL Cloud Service] {#assets}
 
-### Novità in [!DNL Sites] {#what-is-new-sites}
+* L&#39;integrazione con [!DNL Adobe InDesign Server] è ora disponibile per [!DNL Experience Manager] come [!DNL Cloud Service]. Fornisce automazione per elaborare i file [!DNL Adobe InDesign] utilizzando [!DNL Adobe InDesign Server] script e consente agli utenti di utilizzare l&#39;interfaccia utente dei modelli [!DNL Assets] per creare brochure o annunci. Solo [!DNL InDesign Server] ospitato da [!DNL Adobe Managed Services] è supportato per [!DNL Experience Manager as a Cloud Service]. <!-- TBD: Add link to article. -->
 
-* **[Avvia Gestione](/help/sites-cloud/authoring/launches/managing-pages.md)  Gerarchia e Timewarp  [futuro](/help/sites-cloud/authoring/launches/preview.md)**: Nuova interfaccia utente per aggiungere/rimuovere pagine all’interno di un lancio, mentre nel sito con Timewarp viene visualizzato lo stato futuro dagli avvii.
+* [!DNL Experience Manager] è stato migliorato per tenere traccia e visualizzare i riferimenti alle risorse quando una risorsa viene utilizzata in una  [!DNL Experience Manager Sites] distribuzione remota tramite la funzionalità Risorse collegate. Una nuova scheda [!UICONTROL Riferimenti] nella pagina [!UICONTROL Proprietà] della risorsa elenca ora i riferimenti locali e remoti della risorsa. I riferimenti consentono agli utenti DAM di tenere traccia dell’utilizzo delle risorse nelle [!DNL Sites] pagine e nelle risorse composte in [!DNL Assets]. Consulta [configurare e utilizzare le risorse connesse](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* **[Editor e modelli](/help/assets/content-fragments/content-fragments-models.md)** di frammenti di contenuto estesi: Nuove opzioni per la convalida dell&#39;input su vari tipi di dati, il miglioramento del tipo di dati di enumerazione con nuove visualizzazioni di moduli e il nome del modello di frammento di contenuto sono visualizzati e ricercabili nell&#39;interfaccia utente Risorse.
+* [!DNL Dynamic Media] le funzionalità sono ora accessibili tramite i componenti core basati su  [!DNL Sites] immagini. Gli autori possono configurare rapidamente i componenti per l’utilizzo dei predefiniti per immagini, del ritaglio avanzato e dei modificatori immagine durante la creazione di pagine Web. Consultate [Componenti di base 2.13.0 release](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* **Ordinate le pagine Live Copy disponibili per il rollout**: Nuova opzione per ordinare le pagine Live Copy disponibili per il rollout utilizzando le proprietà  [!UICONTROL Nome], Data ultima modifica e Data  ultimoaggiornamento. La [!UICONTROL Data ultimo rollout] per una pagina è una nuova proprietà introdotta.
-
-## [!DNL Adobe Experience Manager Assets] come Cloud Service  {#assets}
-
-### Novità in [!DNL Assets] e [!DNL Dynamic Media] {#what-is-new-assets}
-
-* **Caricamento** di massa delle risorse: Offrite ai clienti un servizio di inserimento scalabile e nativo basato su cloud che si basa  [!DNL Experience Manager] su un&#39;architettura di Cloud Service con microservizi per risorse. I casi d’uso chiave includono l’assimilazione su larga scala con monitoraggio, reporting e pianificazione, consentendo al contempo il trasferimento iniziale delle risorse agli store di dati cloud utilizzando i comuni strumenti di caricamento cloud. Consultate [strumento di caricamento di massa delle risorse](/help/assets/add-assets.md#asset-bulk-ingestor).
-Questo strumento è per gli amministratori di sistema, i consulenti o i partner di implementazione. Questa funzione consente l’inserimento su larga scala ed è ideale per l’assimilazione iniziale o per ingestione di grandi dimensioni. Per processi di assimilazione più piccoli, utilizzate l&#39;app [[!DNL Experience Manager] desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) o [il caricamento mediante l&#39;interfaccia utente di Assets](/help/assets/add-assets.md#upload-assets).
-
-   ![Configurazione dell&#39;importatore di massa](/help/assets/assets/bulk-import-config-low-res.png)
-
-* Gli utenti possono ora ordinare le risorse digitali nelle viste a schede e a colonne.
-
-   ![ordinare risorse](/help/assets/assets/asset-sort-options.png)
-
-* I seguenti miglioramenti sono stati apportati per l&#39;accessibilità in [!DNL Experience Manager Assets] in questa versione. Per ulteriori informazioni, vedere [funzioni di accessibilità in [!DNL Assets]](/help/assets/accessibility.md).
-
-   * Quando si naviga nella timeline utilizzando una tastiera, il tasto Esc può comprimere l&#39;opzione Mostra tutto senza perdere lo stato attivo.
-   * Quando si naviga utilizzando il tasto di tabulazione della tastiera, dopo aver rimosso l&#39;ultimo tag dai tag aggiunti, il campo del tag rimane attivo.
-   * [!DNL Experience Manager] i componenti ora contengono informazioni appropriate per nome, ruolo e valore che devono essere utilizzati dagli assistenti vocali.
-   * Dopo aver eliminato la casella combinata Tipo/Dimensione, Collegamento, Lingua o Testo, lo stato attivo torna agli elementi dell&#39;interfaccia utente successivi o precedenti o a un elemento dell&#39;interfaccia utente più rilevante.
-   * Quando si passa il puntatore sulle opzioni, vengono visualizzati suggerimenti come Seleziona e Scarica. Gli utenti che utilizzano una lente di ingrandimento dello schermo potrebbero non visualizzare le miniature dei file a causa di questi suggerimenti. Ora, è possibile mantenere lo stato attivo, dopo aver rimosso l&#39;opzione utilizzando il tasto `Escape`.
-   * Selezionando una cella della griglia presente nella pagina, lo stato attivo si sposta sulla barra delle azioni visualizzata sullo schermo.
-   * Gli utenti visivi possono distinguere tra testo normale e collegamento, in quanto vengono visualizzati indizi visivi (sottolineatura e icona a forma di freccia) per i collegamenti a tutte le soluzioni nella pagina principale [!DNL Experience Manager].
-
-* **Predefiniti per set di batch in Dynamic Media**: Ora potete automatizzare la creazione e l’organizzazione di più risorse in un set di immagini o set 360 gradi al momento di caricare i file di risorse in una cartella singolarmente o utilizzando l’assimilazione in blocco.
-
-   Consultate [I predefiniti per set di batch](/help/assets/dynamic-media/batch-set-presets-dm.md).
-
-* I seguenti miglioramenti dell&#39;accessibilità sono ora disponibili in [!DNL Dynamic Media]:
-
-   * Gli assistenti vocali (JAWS, Assistente vocale) indicano il nome, il ruolo e lo stato delle voci di menu nell&#39;opzione di menu Incorpora dimensioni.
-   * Gli utenti possono navigare nella finestra di dialogo del collegamento E-mail utilizzando la chiave `Tab`.
-   * Il flusso di lavoro per la creazione di profili di codifica video è più semplice da usare, grazie al miglioramento dell’assistente vocale.
-   * Quando si naviga utilizzando il tasto `Tab`, lo stato attivo si sposta sugli elementi dell&#39;interfaccia utente appropriati nel flusso di lavoro per creare un video interattivo.
-   * Sono state migliorate le pagine Pubblica, Modifica risorsa, Modifica Smart Crops e Editor set di immagini per soddisfare gli standard Web. Gli utenti della tecnologia di assistenza (AT) ora possono navigare facilmente in queste pagine e intraprendere azioni come il ritaglio delle immagini.
-   * I visualizzatori sono stati migliorati per consentire agli utenti di spostarsi utilizzando una tastiera.
-   * Gli utenti di tastiera e utilità di lettura dello schermo possono utilizzare la funzionalità di ritaglio.
-   * Gli utenti della tastiera possono gestire meglio i punti di attivazione.
-
-   Vedere [Accessibilità in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+* [!DNL Experience Manager] l&#39;app desktop consente agli utenti di caricare file e cartelle trascinandoli da Esplora risorse o dal Finder del Mac nell&#39;interfaccia dell&#39;app desktop. Consultate [aggiungere risorse tramite l&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Novità {#what-is-new-commerce}
 
-* Sito di riferimento CIF Venia rilasciato - 2020.11.05 che include l&#39;ultima versione CIF Core Components v1.5.0. Per ulteriori informazioni, fare riferimento a [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27).
+* Sito di riferimento CIF Venia rilasciato - 2020.12.01 che include l&#39;ultima versione CIF Core Components v1.6.0. Per ulteriori informazioni, fare riferimento a [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01).
 
-* Componenti CIF di base rilasciati v1.5.0. Per ulteriori informazioni, consultare [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0).
-
-### Correzioni di bug {#bug-fixes-commerce}
-
-* La configurazione client GraphQL non è stata letta correttamente se la configurazione non è specificata direttamente nella configurazione Sling CA, ma in una delle configurazioni padre. Questo è stato corretto.
+* Componenti CIF di base rilasciati v1.6.0. Per ulteriori informazioni, consultare [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -101,37 +57,16 @@ La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.12.0 è il 
 
 * La scheda ambiente non visualizzava in modo uniforme il pulsante **Aggiungi**.
 
-## Fondamenti di Adobe Experience Manager as a Cloud Service {#cloud-service-foundation}
-
-### Flussi di lavoro {#workflows}
-
-* È stato aggiunto il supporto per la ricerca di istanze del flusso di lavoro in base al titolo del flusso di lavoro, al modello del flusso di lavoro, allo stato, all’iniziatore, al percorso di payload e alla data di inizio. Vedere [Istanze del flusso di lavoro di ricerca](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html).
-
-### Sincronizzazione dati utente livello pubblicazione {#user-sync}
-
-* I dati utente, inclusi gli attributi di profilo e le appartenenze ai gruppi, possono essere memorizzati nel livello di pubblicazione. Ulteriori informazioni su questa funzione sono disponibili nella [documentazione relativa a registrazione, login e profilo utente](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md).
-
-### SDK Build Analytics {#analyzers}
-
-Il AEM come Cloud Service SDK Build Analyzer Maven Plugin rileva i problemi in un progetto maven, comprese le dipendenze mancanti. Offre agli sviluppatori l&#39;opportunità di individuare i problemi durante lo sviluppo locale, ben prima di distribuirli in ambienti Cloud con Cloud Manager. Per ulteriori informazioni, consultare la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) e [qui](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
-
-### Altro {#others-foundation}
-
-Nuova sintassi [&quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overview.md#local-validation) per controllare la configurazione di apache e dispatcher eseguita durante la build di Cloud Manager, che può essere eseguita anche utilizzando AEM come strumenti Dispatcher dell&#39;SDK di Cloud Service.
-
 ## Strumenti di refactoring del codice {#code-refactoring-tools}
 
 ### Novità in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Nuova versione del plugin AIO-CLI rilasciata. La versione più recente di questo plug-in include correzioni di bug per AEM Dispatcher Converter e Repository Modernizer e supporta anche una nuova utility - Index Converter.
-Per ulteriori informazioni su questo plug-in, fare riferimento a [Unified Experience](/help/move-to-cloud-service/unified-experience.md).
+* Nuova versione del plugin AIO-CLI rilasciata. La versione più recente di questo plug-in include correzioni di bug per AEM Dispatcher Converter e Repository Modernizer e supporta anche una nuova utility - Index Converter. Fare riferimento a [Esperienza unificata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) per ulteriori informazioni su questo plug-in.
 
-* [Index ](/help/move-to-cloud-service/refactoring-tools/index-converter.md) Converters è un&#39;utilità che può essere utilizzata per trasformare le definizioni dell&#39;indice OAK personalizzato di un cliente da AEM come definizione dell&#39;indice OAK compatibile con il Cloud Service.
-Per ulteriori informazioni, fare riferimento a [Convertitore indice](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter).
+* Index Converter è un&#39;utility che può essere utilizzata per trasformare le definizioni dell&#39;indice OAK personalizzato di un cliente da AEM come definizione dell&#39;indice OAK compatibile con il Cloud Service. Per ulteriori informazioni, fare riferimento a [Convertitore indice](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter).
 
 * Nuova funzionalità aggiunta a [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) che crea un pacchetto separato `ui.config` contenente tutte le configurazioni OSGi.
 
 ### Correzioni di bug {#crt-bug-fixes}
 
-* Diverse correzioni di bug eseguite sugli strumenti AEM Dispatcher Converter e Repository Modernizer.
-Fare riferimento a [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) e [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* Diverse correzioni di bug eseguite sugli strumenti AEM Dispatcher Converter e Repository Modernizer. Fare riferimento a [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) e [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
