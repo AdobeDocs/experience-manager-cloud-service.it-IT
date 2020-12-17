@@ -2,9 +2,9 @@
 title: Utilizzo dei set di regole per trasformare gli URL
 description: Potete implementare i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
 translation-type: tm+mt
-source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
+source-git-commit: 3a8f63c46e5604a9ce46250ac2d02cc95b473a7c
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '766'
 ht-degree: 5%
 
 ---
@@ -17,11 +17,11 @@ Potete implementare i set di regole in Dynamic Media per trasformare gli URL. I 
 * Aggiunta di un suffisso di tipo MIME. Molti servizi e siti Web richiedono suffissi per immagini, ad esempio l&#39;aggiunta di `.jpg` a un URL.
 * Creazione di un percorso di cartella per l’URL per scopi SEO (Search Engine Optimization).
 
-   Vedere [Come Dynamic Media Classic supporta SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+   Vedere [Come  Adobe Dynamic Media Classic supporta SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Aggiunta di metadati all’URL per scopi SEO (ottimizzazione motore di ricerca).
 
-   Vedere [Come Dynamic Media Classic supporta SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+   Vedere [Come  Adobe Dynamic Media Classic supporta SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Impostazione della disposizione del contenuto per attivare un download.
 * Semplificare gli URL dei modelli di Image Server per la personalizzazione. Ad esempio, trasformare `rgb{XX,YY,ZZ}` in formato RTF`\redXX\greenYY\blueZZ`
@@ -45,9 +45,11 @@ Vedere anche [Set di regole per la risoluzione dei problemi](https://helpx.adobe
 Inoltre, verificare prima il set di regole in un ambiente di staging che non abbia alcun impatto sull&#39;ambiente di produzione live.
 Gli ambienti di produzione e gli ambienti di pre-produzione in genere richiedono accessi diversi.
 
-* **Una pagina di login** dell&#39;ambiente di staging:  [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **Pagina** di login dell&#39;ambiente di staging EMEA:  [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **Pagina** di login dell&#39;ambiente di staging JAPAC:  [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+Per informazioni sull&#39;accesso, vedere l&#39;applicazione desktop [ Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+
+<!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 Vedere anche [Utilizzo dell&#39;immagine &#39;asset&#39; invece di &#39;is&#39; in un set di regole](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
