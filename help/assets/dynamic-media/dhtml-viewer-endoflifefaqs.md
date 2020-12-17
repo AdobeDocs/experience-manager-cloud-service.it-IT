@@ -2,7 +2,7 @@
 title: Fine del ciclo di vita del visualizzatore DHTML
 description: A partire dal 31 gennaio 2014, la piattaforma di visualizzatori DHTML è ufficialmente fuori uso.
 translation-type: tm+mt
-source-git-commit: d9e0c105ad7f9e03bc2120a03a5c613b97ffa17b
+source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
@@ -16,7 +16,7 @@ A partire dal 31 gennaio 2014, la piattaforma di visualizzatori DHTML è ufficia
 
 Per gli ultimi visualizzatori supportati, consultate la [Guida di riferimento dei visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
-<!-- **What is the change?**
+<!-- OBSOLETE CONTENT **What is the change?**
 
 Effective January 31, 2014, Scene7 will officially end-of-life support for the DHTML viewer platform.
 
