@@ -2,7 +2,7 @@
 title: Note sulla versione 2020.11.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] come Cloud Service - Note sulla versione 2020.11.0.'
 translation-type: tm+mt
-source-git-commit: 70974ad7762bd07f68ee883756708799a79cf85f
+source-git-commit: 66374fe5a9126ba92e12c0128d5f60e0f0d09cb6
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 4%
@@ -34,7 +34,8 @@ La seguente release (2020.12.0) sarà del 17 dicembre 2020
 ### Novità in [!DNL Assets] e [!DNL Dynamic Media] {#what-is-new-assets}
 
 * **Caricamento** di massa delle risorse: Offrite ai clienti un servizio di inserimento scalabile e nativo basato su cloud che si basa  [!DNL Experience Manager] su un&#39;architettura di Cloud Service con microservizi per risorse. I casi d’uso chiave includono l’assimilazione su larga scala con monitoraggio, reporting e pianificazione, consentendo al contempo il trasferimento iniziale delle risorse agli store di dati cloud utilizzando i comuni strumenti di caricamento cloud. Consultate [strumento di caricamento di massa delle risorse](/help/assets/add-assets.md#asset-bulk-ingestor).
-Questo strumento è per gli amministratori di sistema, i consulenti o i partner di implementazione. Questa funzione consente l’inserimento su larga scala ed è ideale per l’assimilazione iniziale o per ingestione di grandi dimensioni. Per processi di assimilazione più piccoli, utilizzate l&#39;app [[!DNL Experience Manager] desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) o [il caricamento mediante l&#39;interfaccia utente di Assets](/help/assets/add-assets.md#upload-assets).
+
+   Questo strumento è per gli amministratori di sistema, i consulenti o i partner di implementazione. Questa funzione consente l’inserimento su larga scala ed è ideale per l’assimilazione iniziale o per ingestione di grandi dimensioni. Per processi di assimilazione più piccoli, utilizzate l&#39;app [[!DNL Experience Manager] desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) o [il caricamento mediante l&#39;interfaccia utente di Assets](/help/assets/add-assets.md#upload-assets).
 
    ![Configurazione dell&#39;importatore di massa](/help/assets/assets/bulk-import-config-low-res.png)
 
