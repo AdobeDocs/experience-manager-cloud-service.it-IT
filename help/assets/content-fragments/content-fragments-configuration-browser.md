@@ -2,10 +2,10 @@
 title: Frammenti di contenuto - Browser di configurazione
 description: Scoprite come abilitare determinate funzionalità di frammento di contenuto nel browser di configurazione.
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: c821baff208e563009e68f51700555ea1d516886
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 20%
+source-wordcount: '263'
+ht-degree: 19%
 
 ---
 
@@ -42,19 +42,25 @@ Per [utilizzare alcune funzionalità di frammento di contenuto](#creating-a-cont
 >
 >Per ulteriori dettagli, vedere anche [Browser di configurazione:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
+>[!CAUTION]
+>
+>Le sottoconfigurazioni (una configurazione nidificata all&#39;interno di una configurazione) non sono supportate per l&#39;uso con i frammenti di contenuto.
+
 1. Accedi a **Strumenti**, **Generali**, quindi apri **Browser configurazioni**.
-2. Selezionate la posizione appropriata per il sito Web.
-3. Utilizzate **Create** per aprire la finestra di dialogo in cui:
+
+1. Utilizzate **Create** per aprire la finestra di dialogo in cui:
 
    1. Specificare un **Titolo**.
-   2. Per attivarne l&#39;uso, seleziona
+   1. Per attivarne l&#39;uso, seleziona
       * **Modelli per frammenti di contenuto**
       * **GraphQL - Query persistenti**
 
       ![Definisci configurazione](assets/cfm-conf-01.png)
 
 
-4. Selezionare **Crea** per salvare la definizione.
+1. Selezionare **Crea** per salvare la definizione.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### Applica la configurazione alla cartella delle risorse {#apply-the-configuration-to-your-assets-folder}
 
