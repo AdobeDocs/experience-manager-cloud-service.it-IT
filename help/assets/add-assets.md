@@ -2,7 +2,7 @@
 title: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager].
 description: Aggiungi le risorse digitali a  [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
+source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 1%
@@ -151,6 +151,8 @@ Per caricare un numero maggiore di file, utilizzate uno dei seguenti approcci. V
 
 Lo strumento viene fornito solo al gruppo di amministratori per l&#39;assimilazione su larga scala delle risorse da archivi dati di Azure o S3.
 
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+
 Per configurare lo strumento, effettuare le seguenti operazioni:
 
 1. Passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Importazione in blocco]**. Selezionare l&#39;opzione **[!UICONTROL Crea]**.
@@ -199,12 +201,12 @@ Sono disponibili le seguenti schede:
 
 Inoltre, se [!DNL Dynamic Media] è abilitato nella distribuzione, sono disponibili le seguenti schede:
 
-* [I ](dynamic-media/image-profiles.md) profili Immagine elemento multimediale dinamico consentono di applicare alle risorse caricate specifiche impostazioni di ritaglio (**** Ritaglio avanzato e ritaglio pixel) e nitidezza.
-* [I ](dynamic-media/video-profiles.md) profili video per contenuti multimediali dinamici consentono di applicare specifici profili di codifica video (risoluzione, formato, parametri).
+* [I ](dynamic-media/image-profiles.md) profili immagine di Dynamic Media consentono di applicare alle risorse caricate specifiche impostazioni di ritaglio (**[!UICONTROL Smart]** Cropinging e ritaglio pixel) e nitidezza.
+* [I ](dynamic-media/video-profiles.md) profili video di Dynamic Media consentono di applicare specifici profili di codifica video (risoluzione, formato, parametri).
 
 >[!NOTE]
 >
->Il ritaglio di elementi multimediali dinamici e altre operazioni sulle risorse non sono distruttive, ovvero non modificano l’originale caricato, ma forniscono parametri per il ritaglio o la trasformazione di elementi multimediali da eseguire durante la distribuzione delle risorse
+>Il ritaglio Dynamic Media e altre operazioni sulle risorse non sono distruttive, ovvero non modificano l’originale caricato, ma forniscono parametri per il ritaglio o la trasformazione del supporto da eseguire durante la distribuzione delle risorse
 
 Per le cartelle a cui è assegnato un profilo di elaborazione, il nome del profilo viene visualizzato sulla miniatura nella vista a schede. Nella vista a elenco, il nome del profilo viene visualizzato nella colonna **[!UICONTROL Profilo di elaborazione]**.
 
