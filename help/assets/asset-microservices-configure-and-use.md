@@ -3,9 +3,9 @@ title: Configurare e utilizzare i microservizi delle risorse
 description: Configurate e utilizzate i microservizi delle risorse native per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2532'
 ht-degree: 1%
 
 ---
@@ -221,6 +221,7 @@ Per informazioni dettagliate sul passaggio del flusso di lavoro standard da util
 
 * Considerate le vostre esigenze per tutti i tipi di rappresentazioni durante la progettazione di flussi di lavoro. Se non prevedete la necessità di una rappresentazione in futuro, rimuovete il passaggio di creazione dal flusso di lavoro. Le rappresentazioni non possono essere eliminate in blocco in seguito. Le rappresentazioni indesiderate possono occupare molto spazio di archiviazione dopo un uso prolungato di [!DNL Experience Manager]. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare [!DNL Experience Manager] per eliminare rappresentazioni specifiche oppure eliminare le risorse e caricarle di nuovo.
 * Al momento, il supporto è limitato alla generazione di rappresentazioni. La generazione di nuova risorsa non è supportata.
+* Attualmente, la dimensione massima per l’estrazione dei metadati è di circa 10 GB. Quando si caricano risorse molto grandi, talvolta l’operazione di estrazione dei metadati non riesce.
 
 >[!MORELIKETHIS]
 >
