@@ -2,7 +2,7 @@
 title: Profili immagine di Dynamic Media
 description: Create profili immagine Dynamic Media contenenti impostazioni per maschera di contrasto, ritaglio avanzato, campioni avanzati o entrambi, quindi applicate il profilo a una cartella di risorse immagine.
 translation-type: tm+mt
-source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
 source-wordcount: '2753'
 ht-degree: 11%
