@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -52,12 +52,12 @@ Gli elementi dell&#39;interfaccia utente di Dynamic Media funzionano con tecnolo
 
 Tutti i componenti forniti dai visualizzatori Dynamic Media supportano l&#39;accessibilità da tastiera per i clienti.
 
-Consultate [Accessibilità e navigazione da tastiera](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella guida di riferimento dei visualizzatori Dynamic Media.
+Consultate [Accessibilità e navigazione da tastiera](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella guida di riferimento dei visualizzatori Dynamic Media.
 
 ## Supporto della tecnologia di assistenza nei visualizzatori Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
 Tutti i componenti del visualizzatore Dynamic Media supportano ruoli e attributi ARIA (Accessible Rich Internet Applications) per migliorare l&#39;integrazione con tecnologie di supporto come gli assistenti vocali.
-Consultate l&#39;argomento della guida **Supporto per la tecnologia di assistenza** in qualsiasi argomento della personalizzazione del visualizzatore nella Guida di riferimento dei visualizzatori Dynamic Media. Ad esempio, consultate [Supporto per la tecnologia di assistenza](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore video, oppure [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
+Consultate l&#39;argomento della guida **Supporto per la tecnologia di assistenza** in qualsiasi argomento della personalizzazione del visualizzatore nella Guida di riferimento dei visualizzatori Dynamic Media. Ad esempio, consultate [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore video, oppure [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
 
 >[!MORELIKETHIS]
 >
