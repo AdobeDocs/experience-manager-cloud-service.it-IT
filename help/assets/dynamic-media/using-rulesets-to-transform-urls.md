@@ -2,9 +2,9 @@
 title: Utilizzo dei set di regole per trasformare gli URL
 description: Potete implementare i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
 translation-type: tm+mt
-source-git-commit: 3a8f63c46e5604a9ce46250ac2d02cc95b473a7c
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '764'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ Nel contesto di Dynamic Media, i siti Web che utilizzano un sistema basato su XM
 >Prestare attenzione quando si utilizzano i set di regole; possono impedire la visualizzazione del contenuto Dynamic Media sul sito Web.
 
 Sono disponibili set di regole di esempio che possono facilitare la creazione di un set di regole personalizzato.
-Vedere [Riferimento set di regole](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
+Vedere [Riferimento set di regole](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
 Come per la creazione di tutti i set di regole, accertatevi che il file XML sia valido prima di caricarlo, utilizzando un programma di convalida XML come xmlvalid.
 Vedere anche [Set di regole per la risoluzione dei problemi](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
