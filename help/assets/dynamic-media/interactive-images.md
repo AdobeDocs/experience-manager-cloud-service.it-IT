@@ -2,9 +2,9 @@
 title: Immagini interattive
 description: Scoprite come utilizzare le immagini interattive in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '4253'
+source-wordcount: '4249'
 ht-degree: 2%
 
 ---
@@ -358,9 +358,9 @@ L&#39;integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il 
 
 Per applicare un &quot;ritaglio&quot; a un&#39;immagine interattiva acquistabile per un ambiente reattivo, potete includere l&#39;attributo di configurazione immagine interattiva `ZoomView.iscommand` nel percorso, dove `ZoomView` è il componente da chiamare e `iscommand` è il comando di trasmissione delle immagini &quot;ritagliato&quot; applicato.
 
-Vedere [ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) attributo di configurazione.
+Vedere [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) attributo di configurazione.
 
-Vedere [ritaglio](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) comando di gestione delle immagini.
+Vedere [ritaglio](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) comando di gestione delle immagini.
 
 È ora possibile integrare l’immagine interattiva con una visualizzazione rapida esistente sul sito Web.
 
