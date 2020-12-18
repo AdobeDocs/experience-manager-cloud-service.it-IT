@@ -2,9 +2,9 @@
 title: Generazione di token di accesso per le API lato server
 description: Scoprite come facilitare la comunicazione tra un server di terze parti e AEM come Cloud Service generando un token JWT protetto
 translation-type: tm+mt
-source-git-commit: 9a4cb6d981fdf5eea4d1b9c7ae9e3c99947d9745
+source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Il flusso server-to-server comporta i seguenti passaggi:
 
 ### Generazione del token del portatore JWT {#generating-the-jwt-bearer-token}
 
-Gli utenti con il ruolo di amministratore per un&#39;organizzazione visualizzeranno la scheda integrazioni nella console dello sviluppatore per un determinato ambiente, oltre a due pulsanti. Facendo clic sul pulsante **Ottieni credenziali servizio** si genereranno la chiave privata, il certificato e la configurazione.
+Gli utenti con il ruolo di amministratore per un&#39;organizzazione visualizzeranno la scheda integrazioni nella console dello sviluppatore per un determinato ambiente, oltre a due pulsanti. Facendo clic sul pulsante **Ottieni credenziali servizio** verranno generate la chiave privata, il certificato e la configurazione per i livelli di creazione e pubblicazione dell&#39;ambiente, indipendentemente dalla selezione del contenitore.
 
 ![Generazione JWT](assets/JWTtoken3.png)
 
