@@ -3,9 +3,9 @@ title: Formati di file supportati e tipi MIME
 description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '807'
 ht-degree: 10%
 
 ---
@@ -94,9 +94,9 @@ I seguenti sottotipi di formati di file immagine raster non supportati in [!DNL 
 
 È supportato il seguente elenco di formati 3D.
 
-Consultate anche [Utilizzo delle risorse 3D negli elementi multimediali dinamici.](/help/assets/dynamic-media/assets-3d.md)
+Vedere anche [Utilizzo di risorse 3D in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
-| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo di accesso | Anteprima miniature | Anteprima 3D | Distribuzione di contenuti multimediali dinamici |
+| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo di accesso | Anteprima miniature | Anteprima 3D | Distribuzione Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | AND | AND | AND | - | AND | AND | - | - |
 | gLB | AND | AND | AND | AND | AND | - | AND | AND |
@@ -222,6 +222,10 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 ## Formati audio {#audio-formats}
 
 [!DNL Assets] come  [!DNL Cloud Service] fornisce XMP supporto per l&#39;estrazione dei metadati per i formati audio FIA, ASF, M4A, MP3, WAV e WMA.
+
+## Suggerimenti e limitazioni {#limitations-and-tips}
+
+* Attualmente, la dimensione massima per l’estrazione dei metadati è di circa 10 GB. Quando si caricano risorse molto grandi, talvolta l’operazione di estrazione dei metadati non riesce.
 
 >[!MORELIKETHIS]
 >
