@@ -2,9 +2,9 @@
 title: Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate
 description: La visualizzazione rapida predefinita viene utilizzata nelle esperienze eCommerce per le quali viene visualizzato un pop-up con le informazioni sul prodotto per guidare un acquisto. Potete attivare il contenuto personalizzato da visualizzare nelle finestre a comparsa.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1009'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 La visualizzazione rapida predefinita viene utilizzata nelle esperienze eCommerce per le quali viene visualizzato un pop-up con le informazioni sul prodotto per guidare un acquisto. Tuttavia, potete attivare il contenuto personalizzato per la visualizzazione nelle finestre a comparsa. A seconda del visualizzatore in uso, questa funzione consente agli utenti di fare clic su un punto di attivazione, una miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
 
-Le viste rapide sono supportate dai seguenti visualizzatori in elementi multimediali dinamici:
+Le visualizzazioni rapide sono supportate dai seguenti visualizzatori in Dynamic Media:
 
 * Immagini interattive (aree sensibili selezionabili)
 * Video interattivo (immagini in miniatura cliccabili durante la riproduzione di un video)
@@ -100,8 +100,8 @@ Supponete di usare il seguente codice da incorporare nella pagina Web per un’i
 
    Per ulteriori informazioni sul metodo `setHandlers()`, consulta:
 
-   * Visualizzatore immagini interattivo: [palmari](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * Visualizzatore video interattivo: [palmari](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * Visualizzatore immagini interattivo: [palmari](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Visualizzatore video interattivo: [palmari](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. È ora necessario configurare il gestore `quickViewActivate`.
 
@@ -132,9 +132,9 @@ callIl gestore richiede anche una chiamata di funzione per il funzionamento di Q
 
    Per ulteriori informazioni sul metodo `quickViewActivate`, consulta:
 
-   * Visualizzatore immagini interattivo - [callback evento](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
-   * Visualizzatore video interattivo - [callback evento](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
-   * Supporto dei dati interattivi nel visualizzatore video interattivo - [Supporto dei dati interattivi](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
+   * Visualizzatore immagini interattivo - [callback evento](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * Visualizzatore video interattivo - [callback evento](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * Supporto dei dati interattivi nel visualizzatore video interattivo - [Supporto dei dati interattivi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. Effettua le seguenti operazioni:
 
@@ -210,8 +210,8 @@ callIl gestore richiede anche una chiamata di funzione per il funzionamento di Q
 
    Per ulteriori informazioni sul metodo `init()`, consulta:
 
-   * Visualizzatore immagini interattivo - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
-   * Visualizzatore video interattivo - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
+   * Visualizzatore immagini interattivo - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * Visualizzatore video interattivo - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. Per allegare al visualizzatore la finestra a comparsa (descritta nei passaggi precedenti), usate il seguente codice:
 
