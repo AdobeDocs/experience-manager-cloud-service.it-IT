@@ -2,9 +2,9 @@
 title: Adobe Experience Manager come Cloud Service Supporto dei frammenti di contenuto nell'API HTTP Assets
 description: Informazioni su Adobe Experience Manager come Cloud Service Supporto dei frammenti di contenuto nell'API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
+source-git-commit: c86dac828eabe28ee62748bff64fc091491303b0
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1877'
 ht-degree: 2%
 
 ---
@@ -381,9 +381,7 @@ I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
 
 Consultate qui per riferimenti API dettagliati:
 
-<!--
-* [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
--->
+* [API Adobe Experience Manager Assets - Frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 
