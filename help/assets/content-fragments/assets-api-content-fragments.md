@@ -2,9 +2,9 @@
 title: Adobe Experience Manager come Cloud Service Supporto dei frammenti di contenuto nell'API HTTP Assets
 description: Informazioni su Adobe Experience Manager come Cloud Service Supporto dei frammenti di contenuto nell'API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: c86dac828eabe28ee62748bff64fc091491303b0
+source-git-commit: 42d7ac4fc99ef45c26c23d68ddfe2a5ddf7f62fd
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1914'
 ht-degree: 2%
 
 ---
@@ -82,9 +82,7 @@ Il metodo HTTP determina l’operazione da eseguire:
 >
 >Il corpo della richiesta e/o i parametri URL possono essere utilizzati per configurare alcune di queste operazioni; ad esempio, definite che una cartella o una risorsa debba essere creata da una richiesta **POST**.
 
-<!--
-The exact format of supported requests is defined in the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentation.
--->
+Il formato esatto delle richieste supportate è definito nella documentazione [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference).
 
 ### Comportamento transazionale {#transactional-behavior}
 
@@ -256,11 +254,9 @@ L’utilizzo può variare a seconda se usate un ambiente di authoring o pubblica
 >
 >La configurazione del dispatcher AEM istanze cloud potrebbe bloccare l&#39;accesso a `/api`.
 
-<!--
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html). 
--->
+>Per ulteriori dettagli, vedere [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particolare, [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Lettura/consegna {#read-delivery}
 
@@ -309,10 +305,6 @@ Esistono alcuni limiti:
 
 * **I modelli di frammento di contenuto non sono attualmente supportati**: non possono essere letti o creati. Per poter creare un nuovo frammento di contenuto o aggiornarne uno esistente, gli sviluppatori devono conoscere il percorso corretto del modello di frammento di contenuto. Attualmente l’unico metodo per ottenere una panoramica di questi metodi è tramite l’interfaccia utente di amministrazione.
 * **I riferimenti vengono ignorati**. Al momento non è disponibile alcun controllo per verificare se a un frammento di contenuto esistente viene fatto riferimento. Pertanto, ad esempio, l&#39;eliminazione di un frammento di contenuto potrebbe causare problemi in una pagina che contiene un riferimento al frammento di contenuto eliminato.
-
-<!--
-* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
--->
 
 ## Codici di stato e messaggi di errore {#status-codes-and-error-messages}
 
