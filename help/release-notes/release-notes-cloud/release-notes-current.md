@@ -2,7 +2,7 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 539fa16396519b66d53b91745bf69c819c5d5ea1
+source-git-commit: 6b001ffb9afe73c09d131ef7901cc2c12c57f164
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 5%
@@ -37,7 +37,7 @@ La seguente release (2021.1.0) sarà del 28 gennaio 2020.
 
 ### Novità {#what-is-new-commerce}
 
-* Sito di riferimento CIF Venia rilasciato - 2020.12.01 che include l&#39;ultima versione CIF Core Components v1.6.0. Per ulteriori informazioni, fare riferimento a [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01).
+* Sito di riferimento CIF Venia rilasciato - 2020.12.01 che include la versione più recente CIF Core Components v1.6.0. Per ulteriori informazioni, fare riferimento a [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01).
 
 * Componenti CIF di base rilasciati v1.6.0. Per ulteriori informazioni, consultare [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0).
 
