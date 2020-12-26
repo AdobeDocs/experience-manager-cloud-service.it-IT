@@ -2,9 +2,9 @@
 title: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager].
 description: Aggiungi le risorse digitali a  [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
+source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1903'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ Per rispettare convenzioni di denominazione dei file specifiche per la vostra or
 
 ## Caricamento in blocco delle risorse {#bulk-upload}
 
-L’assimilazione di massa delle risorse può gestire migliaia di risorse in modo efficiente. Tuttavia, un&#39;assimilazione su larga scala non è solo un dump di file ampio e grande o una migrazione cieca. Affinché sia un progetto significativo che possa essere utile al tuo scopo aziendale, la pianificazione e la cura delle risorse portano a un&#39;assimilazione molto più efficiente. Tutte le operazioni di assimilazione non sono le stesse e non è possibile generalizzare senza tenere conto della composizione e delle esigenze aziendali dei repository. Di seguito sono riportati alcuni suggerimenti generali per pianificare ed eseguire un&#39;assimilazione in blocco:
+L’assimilazione di risorse in massa può gestire un numero molto elevato di risorse in modo efficiente. Tuttavia, un&#39;assimilazione su larga scala non è solo un grande dump di file o una migrazione casuale. Affinché un’assimilazione su larga scala sia un progetto significativo per il tuo scopo aziendale ed efficiente, pianifica la migrazione e cura l’organizzazione delle risorse. Tutte le operazioni di assimilazione sono diverse, pertanto, anziché generalizzare, contribuiscono alla composizione e alle esigenze aziendali dei repository. Di seguito sono riportati alcuni suggerimenti generali per pianificare ed eseguire un&#39;assimilazione in blocco:
 
 * Cura risorse: Rimuovere risorse non necessarie nel DAM. Prendete in considerazione la rimozione di risorse inutilizzate, obsolete o duplicate. Questo riduce i dati trasferiti e le risorse assimilate, consentendo un&#39;assimilazione più rapida.
 * Organizzare le risorse: È consigliabile organizzare il contenuto in un ordine logico, ad esempio per dimensione file, formato file, caso di utilizzo o priorità. In generale, i file complessi di grandi dimensioni richiedono maggiore elaborazione. Potete anche considerare l’assimilazione separata dei file di grandi dimensioni utilizzando l’opzione di filtro delle dimensioni dei file (descritta di seguito).
@@ -149,7 +149,7 @@ Per caricare un numero maggiore di file, utilizzate uno dei seguenti approcci. V
 
 ### Strumento di inserimento di massa risorse {#asset-bulk-ingestor}
 
-Lo strumento viene fornito solo al gruppo di amministratori per l&#39;assimilazione su larga scala delle risorse da archivi dati di Azure o S3.
+Lo strumento viene fornito solo al gruppo di amministratori per l&#39;assimilazione su larga scala delle risorse da archivi dati di Azure o S3. Guarda un video introduttivo sulla configurazione e l’assimilazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
