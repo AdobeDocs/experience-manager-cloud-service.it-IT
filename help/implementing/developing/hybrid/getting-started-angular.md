@@ -18,7 +18,7 @@ La funzione di authoring SPA offre una soluzione completa per SPA di supporto in
 
 >[!NOTE]
 >
->Questo articolo è basato sulla cornice angolare. Per il documento corrispondente per il framework React, vedere [Guida introduttiva alle SPA in AEM - React](getting-started-react.md).
+>Questo articolo si basa sulla cornice angolare. Per il documento corrispondente per il framework React, vedere [Guida introduttiva alle SPA in AEM - React](getting-started-react.md).
 
 ## Introduzione {#introduction}
 
