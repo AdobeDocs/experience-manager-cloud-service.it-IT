@@ -61,7 +61,7 @@ Aggiungere una modalità di interfaccia utente ai moduli ContextHub correlati al
 
 ### Aggiunta di un modulo dell&#39;interfaccia utente {#adding-a-ui-module}
 
-Aggiungete un modulo dell’interfaccia utente ContextHub a una modalità dell’interfaccia utente in modo che venga visualizzato nella barra degli strumenti ContextHub per visualizzare l’anteprima del contenuto della pagina. Quando si aggiunge un modulo dell&#39;interfaccia utente, si sta creando un&#39;istanza di un tipo di modulo registrato con ContextHub. Per aggiungere un modulo dell&#39;interfaccia utente, è necessario conoscere il nome del tipo di modulo associato.
+Aggiungete un modulo dell’interfaccia utente ContextHub alla modalità dell’interfaccia utente, in modo che venga visualizzato nella barra degli strumenti ContextHub per visualizzare l’anteprima del contenuto della pagina. Quando si aggiunge un modulo dell&#39;interfaccia utente, si sta creando un&#39;istanza di un tipo di modulo registrato con ContextHub. Per aggiungere un modulo dell&#39;interfaccia utente, è necessario conoscere il nome del tipo di modulo associato.
 
 AEM fornisce un tipo di modulo dell&#39;interfaccia utente di base e diversi tipi di moduli dell&#39;interfaccia utente di esempio sui quali è possibile basare un modulo dell&#39;interfaccia utente. Nella tabella seguente è riportata una breve descrizione di ciascuno di essi. Per informazioni sullo sviluppo di un modulo di interfaccia utente personalizzato, consultate [Creazione di moduli di interfaccia utente ContextHub](extending-contexthub.md#creating-contexthub-ui-module-types).
 
