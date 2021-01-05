@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- Need review information from gklebus -->
 
-Adobe Experience Manager Assets come [!DNL Cloud Service] offre alle aziende una soluzione PaaS nativa per il cloud, che consente non solo di eseguire le operazioni Digital Asset Management e Dynamic Media con velocità ed impatto, ma anche di utilizzare funzionalità intelligenti di nuova generazione, come AI/ML, da un sistema sempre attuale, sempre disponibile e sempre in grado di apprendere.
+Adobe Experience Manager Assets come [!DNL Cloud Service] offre alle aziende una soluzione PaaS nativa per il cloud, che consente non solo di eseguire le operazioni di gestione delle risorse digitali e Dynamic Media con velocità ed impatto, ma anche di utilizzare funzionalità intelligenti di nuova generazione, come AI/ML, da un sistema sempre attuale, sempre disponibile e sempre in grado di apprendere.
 
 L&#39;assimilazione simultanea di molte risorse o risorse complesse richiede molte risorse per un&#39;istanza di AEM Author. L’istanza principale utilizza una quantità considerevole di risorse CPU, memoria e I/O quando vengono aggiunte, elaborate o persino trasferite risorse. Tali problemi di prestazioni influiscono sull’esperienza di authoring e navigazione degli utenti finali.
 
