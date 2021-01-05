@@ -1,6 +1,6 @@
 ---
 title: Profili video di Dynamic Media
-description: Gli elementi multimediali dinamici dispongono già di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Potete anche aggiungere ritaglio avanzato ai video.
+description: Dynamic Media è già dotato di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Potete anche aggiungere ritaglio avanzato ai video.
 translation-type: tm+mt
 source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 17%
 
 # Profili video di Dynamic Media{#video-profiles}
 
-Gli elementi multimediali dinamici dispongono già di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Quando codificate i video sorgente principali utilizzando il profilo di codifica video adattiva, durante la riproduzione il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. È noto come streaming adattivo.
+Dynamic Media è già dotato di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Quando codificate i video sorgente principali utilizzando il profilo di codifica video adattiva, durante la riproduzione il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. È noto come streaming adattivo.
 
 Di seguito sono riportati altri fattori che determinano la qualità dei video:
 
@@ -123,7 +123,7 @@ Vedere anche [Ritaglio avanzato per le immagini](image-profiles.md).
 
 ## Creazione di un profilo video per lo streaming adattivo {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Gli elementi multimediali dinamici sono già dotati di un profilo di codifica video adattiva predefinito, un gruppo di impostazioni di caricamento video per MP4 H.264, ottimizzato per garantire una migliore esperienza di visualizzazione. Potete usare questo profilo quando caricate i video.
+Dynamic Media è già dotato di un profilo di codifica video adattiva predefinito, un gruppo di impostazioni di caricamento video per MP4 H.264, ottimizzato per garantire una migliore esperienza di visualizzazione. Potete usare questo profilo quando caricate i video.
 
 Tuttavia, se questo profilo predefinito non soddisfa le esigenze, potete scegliere di creare un profilo di codifica video adattivo personalizzato. Quando utilizzate l&#39;impostazione **[!UICONTROL Codifica per lo streaming adattivo]** come best practice, tutti i predefiniti di codifica aggiunti al profilo vengono convalidati per garantire che tutti i video abbiano le stesse proporzioni. Inoltre, i video codificati vengono trattati come un set di bitrate multipli per lo streaming.
 
@@ -309,7 +309,7 @@ Potete modificare un profilo di codifica video esistente per sfruttare i paramet
 
 Potete modificare qualsiasi profilo video creato per aggiungere, modificare o eliminare i predefiniti per video all’interno di tale profilo.
 
-Per impostazione predefinita, non è possibile modificare il profilo **[!UICONTROL Codifica video adattiva]** predefinito fornito con gli elementi multimediali dinamici. Potete invece copiare facilmente il profilo e salvarlo con un nuovo nome. Potete quindi modificare i predefiniti desiderati nel profilo copiato.
+Per impostazione predefinita, non è possibile modificare il profilo **[!UICONTROL Codifica video adattiva]** predefinito fornito con Dynamic Media. Potete invece copiare facilmente il profilo e salvarlo con un nuovo nome. Potete quindi modificare i predefiniti desiderati nel profilo copiato.
 
 Vedere anche [Best practice per la codifica video](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -337,7 +337,7 @@ Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni
 1. Nella pagina Profilo codifica video, immettete un nuovo nome per il profilo.
 1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming adattivo]** sia selezionata. Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni. Se copiate un profilo video progressivo, non selezionate la casella di controllo.
 
-   In modalità Dynamic Media - Hybrid, se un predefinito video WebM fa parte del profilo video, non è possibile codificare **[!UICONTROL per lo streaming adattivo]** perché tutti i predefiniti devono essere MP4.
+   In Dynamic Media - Modalità ibrida, se un predefinito video WebM fa parte del profilo video, non è possibile codificare **[!UICONTROL lo streaming adattivo]** perché tutti i predefiniti devono essere MP4.
 1. Nell’intestazione Predefiniti codifica video, potete aggiungere, modificare o eliminare predefiniti di codifica video che compongono il profilo.
 
    Toccate l&#39;icona delle informazioni accanto a ciascuna opzione nelle schede Base e Avanzate per le impostazioni e le descrizioni consigliate.
