@@ -1,7 +1,7 @@
 ---
 sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Guida di Assets as a Cloud Service
-breadcrumb-title: Guida ad Assets
+breadcrumb-title: Guida di Assets
 user-guide-description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
@@ -85,7 +85,7 @@ ht-degree: 73%
    + [Utilizzo di Dynamic Media](dynamic-media/dynamic-media.md)
    + [Configurazione di Dynamic Media](dynamic-media/config-dm.md)
    + [Risoluzione dei problemi relativi a Dynamic Media](dynamic-media/troubleshoot-dm.md)
-   + [Accessibilità in elementi multimediali dinamici](dynamic-media/accessibility-dm.md)
+   + [Accessibilità in Dynamic Media](dynamic-media/accessibility-dm.md)
    + [Gestione delle risorse Dynamic Media](dynamic-media/managing-assets.md)
    + [Best practice per ottimizzare la qualità delle immagini](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Best practice per la gestione dei file](dynamic-media/best-practices-for-file-management.md)
@@ -120,7 +120,7 @@ ht-degree: 73%
    + [Collegamento di URL all’applicazione web](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Utilizzo di set di regole per la trasformazione degli URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Pubblicazione delle risorse Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [Utilizzo della pubblicazione selettiva nei file multimediali dinamici](dynamic-media/selective-publishing.md)
+   + [Utilizzo della pubblicazione selettiva in Dynamic Media](dynamic-media/selective-publishing.md)
    + [Utilizzo dei selettori](dynamic-media/working-with-selectors.md)
    + [Domande frequenti sulla fine del ciclo di vita del visualizzatore DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Avviso sulla fine del ciclo di vita dei visualizzatori Flash](dynamic-media/flash-viewers-eol.md)
