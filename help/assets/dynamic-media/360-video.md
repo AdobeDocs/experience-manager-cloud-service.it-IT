@@ -1,6 +1,6 @@
 ---
 title: Video 360/VR
-description: Scopri come lavorare con i video 360 e della realtà virtuale (VR) in contenuti multimediali dinamici.
+description: Scopri come utilizzare il video 360 e la realtà virtuale (VR) in Dynamic Media.
 translation-type: tm+mt
 source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
@@ -20,7 +20,7 @@ Questa sezione descrive come utilizzare il visualizzatore video 360/VR per ripro
 
 L&#39;audio spaziale non è attualmente supportato; se l&#39;audio è mixato in stereo, il bilanciamento (L/R) non cambia quando il cliente cambia l&#39;angolo di visione della telecamera.
 
-Consultate [Utilizzo di video Dynamic Media 360 e Miniatura video personalizzata con  AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
+Consultate [Utilizzo dei video Dynamic Media 360 e Miniatura video personalizzata con  AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
 
 Consultate anche [Gestione dei predefiniti per visualizzatori](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -51,7 +51,7 @@ Vedere [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-
 
    Il rendering di contenuti video a 360° pone requisiti più elevati per la risoluzione video sorgente e per la risoluzione delle rappresentazioni codificate rispetto al contenuto video standard non 360.
 
-   Potete usare il profilo video adattivo fornito con i file multimediali dinamici. Tuttavia, tenete presente che la qualità video risulterà notevolmente inferiore a 360 rispetto a quella ottenuta per video non codificati con 360 impostazioni con le stesse impostazioni sottoposte a rendering con un visualizzatore video non 360. Pertanto, se è richiesto un video di alta qualità 360, effettuate le seguenti operazioni:
+   Potete usare il profilo video adattivo fornito con Dynamic Media. Tuttavia, tenete presente che la qualità video risulterà notevolmente inferiore a 360 rispetto a quella ottenuta per video non codificati con 360 impostazioni con le stesse impostazioni sottoposte a rendering con un visualizzatore video non 360. Pertanto, se è richiesto un video di alta qualità 360, effettuate le seguenti operazioni:
 
    * È consigliabile che il contenuto video originale a 360 abbia una delle seguenti risoluzioni:
 
@@ -99,7 +99,7 @@ Quando siete soddisfatti del video 360, potete pubblicarlo.
 
 Consultate [Incorporamento del visualizzatore video o di immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md).
 Consultate [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine di siti di Experience Manager .
-Vedere [Aggiunta di risorse multimediali dinamiche alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Vedere [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **Per visualizzare in anteprima 360 video**
 
@@ -130,9 +130,9 @@ Vedere [Aggiunta di risorse multimediali dinamiche alle pagine.](/help/assets/dy
 
 ## Pubblicazione di video 360 {#publishing-video}
 
-Per poter utilizzare il video 360, è necessario pubblicarlo. Quando si pubblica un video 360, vengono attivati l’URL e il codice da incorporare. Pubblica anche il video 360 su Dynamic Media Cloud, integrato con un CDN per una distribuzione scalabile e performante.
+Per poter utilizzare il video 360, è necessario pubblicarlo. Quando si pubblica un video 360, vengono attivati l’URL e il codice da incorporare. Pubblica anche il video 360 sul cloud Dynamic Media, integrato con un CDN per una distribuzione scalabile e performante.
 
-Per informazioni dettagliate sulla pubblicazione di video 360, consultate [Pubblicazione di risorse multimediali dinamiche](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Per informazioni dettagliate sulla pubblicazione di video 360, consultate [Pubblicazione di risorse Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 Consultate anche [Incorporamento del visualizzatore video o di immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md).
 Vedere anche [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine di siti di Experience Manager .
-Vedere anche [Aggiunta di risorse multimediali dinamiche alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Vedere anche [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
