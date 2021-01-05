@@ -1,6 +1,6 @@
 ---
 title: Immagini panoramiche
-description: Scopri come lavorare con immagini panoramiche in Dynamic Media.
+description: Scoprite come utilizzare le immagini panoramiche in Dynamic Media.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 workflow-type: tm+mt
