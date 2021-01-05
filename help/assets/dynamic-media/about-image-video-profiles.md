@@ -1,6 +1,6 @@
 ---
-title: Profili immagine per file multimediali dinamici e profili video
-description: Un profilo immagine o un profilo video è una ricetta per le opzioni da applicare alle risorse caricate in una cartella. Ad esempio, potete specificare la codifica video da applicare alle risorse video per file multimediali dinamici caricate. Oppure, quale profilo immagine applicare alle risorse di immagini per elementi multimediali dinamici per poterle ritagliare correttamente.
+title: Profili immagine e profili video di Dynamic Media
+description: Un profilo immagine o un profilo video è una ricetta per le opzioni da applicare alle risorse caricate in una cartella. Ad esempio, potete specificare la codifica video da applicare alle risorse video Dynamic Media caricate. Oppure, quale profilo immagine applicare alle risorse di immagini Dynamic Media per ritagliarle correttamente.
 translation-type: tm+mt
 source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
 workflow-type: tm+mt
@@ -10,20 +10,20 @@ ht-degree: 2%
 ---
 
 
-# Profili immagine per file multimediali dinamici e profili video{#about-dm-image-video-profiles}
+# Profili immagine e profili video di Dynamic Media{#about-dm-image-video-profiles}
 
-Un profilo immagine o un profilo video è una ricetta per le opzioni da applicare alle risorse caricate in una cartella. Ad esempio, potete specificare la codifica video da applicare alle risorse video per file multimediali dinamici caricate. Oppure, quale profilo immagine applicare alle risorse di immagini per elementi multimediali dinamici per poterle ritagliare correttamente.
+Un profilo immagine o un profilo video è una ricetta per le opzioni da applicare alle risorse caricate in una cartella. Ad esempio, potete specificare la codifica video da applicare alle risorse video Dynamic Media caricate. Oppure, quale profilo immagine applicare alle risorse di immagini Dynamic Media per ritagliarle correttamente.
 
-In Contenuti multimediali dinamici, potete creare due tipi di profili, descritti dettagliatamente nei seguenti collegamenti:
+In Dynamic Media, potete creare due tipi di profili, descritti dettagliatamente nei seguenti collegamenti:
 
-* [Profili immagine per elementi multimediali dinamici](/help/assets/dynamic-media/image-profiles.md)
-* [Profili video per contenuti multimediali dinamici](/help/assets/dynamic-media/video-profiles.md)
+* [Profili immagine Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
+* [Profili video Dynamic Media](/help/assets/dynamic-media/video-profiles.md)
 
 Vedere anche [Profili metadati](/help/assets/metadata-profiles.md).
 
-È necessario disporre dei diritti di amministratore per creare, modificare ed eliminare profili immagine per file multimediali dinamici o profili video per elementi multimediali dinamici.
+È necessario disporre dei diritti di amministratore per creare, modificare ed eliminare profili immagine Dynamic Media o Dynamic Media Video.
 
-Dopo aver creato il profilo immagine o il profilo video, potete assegnarlo a una o più cartelle da usare come destinazione per le risorse per file multimediali dinamici appena caricate.
+Dopo aver creato il profilo immagine o il profilo video, potete assegnarlo a una o più cartelle da usare come destinazione per le risorse Dynamic Media appena caricate.
 
 Consultate anche [Best practice per l&#39;organizzazione delle risorse digitali per l&#39;utilizzo dei profili immagine o video](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
@@ -33,23 +33,23 @@ Consultate anche [Best practice per l&#39;organizzazione delle risorse digitali 
 >
 >Lo stesso vale anche per lo spostamento di risorse tra due cartelle alle quali è assegnato lo stesso profilo.
 
-## Rielaborazione delle risorse di elementi multimediali dinamici in una cartella {#reprocessing-assets}
+## Rielaborazione delle risorse Dynamic Media in una cartella {#reprocessing-assets}
 
-Potete rielaborare le risorse in una cartella che dispone già di un profilo immagine per file multimediali dinamici o di un profilo video per file multimediali dinamici modificato successivamente.
+Potete rielaborare le risorse in una cartella che dispone già di un profilo immagine Dynamic Media o di un profilo video Dynamic Media precedentemente modificato.
 
-Ad esempio, se avete creato un profilo immagine per file multimediali dinamici e lo avete assegnato a una cartella, Per tutte le risorse di immagine caricate nella cartella, alle risorse è stato applicato automaticamente il profilo immagine. Tuttavia, in seguito si decide di aggiungere un nuovo rapporto di ritaglio avanzato al profilo immagine. Ora, invece di dover selezionare e ricaricare nuovamente le risorse nella cartella, è sufficiente eseguire l&#39; *Scene7: Rielabora il flusso di lavoro Risorse*.
+Ad esempio, se avete creato un profilo immagine Dynamic Media e lo avete assegnato a una cartella, Per tutte le risorse di immagine caricate nella cartella, alle risorse è stato applicato automaticamente il profilo immagine. Tuttavia, in seguito si decide di aggiungere un nuovo rapporto di ritaglio avanzato al profilo immagine. Ora, invece di dover selezionare e ricaricare nuovamente le risorse nella cartella, è sufficiente eseguire l&#39; *Scene7: Rielabora il flusso di lavoro Risorse*.
 
 Potete eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale l&#39;elaborazione non è riuscita per la prima volta. Anche se non avete modificato un profilo immagine o video o avete già applicato un profilo immagine o video, potete comunque eseguire il flusso di lavoro di rielaborazione su una cartella di risorse in qualsiasi momento.
 
-Facoltativamente potete regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando si esegue il _Scene7: Elaborate nuovamente il flusso di lavoro di Risorse_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server per elementi multimediali dinamici per l’elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa dell’intero set di batch vengono aggiornati in AEM. Se le dimensioni del batch sono molto grandi, potrebbe verificarsi un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi di andata e ritorno al server Dynamic Media.
+Facoltativamente potete regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando si esegue il _Scene7: Elaborate nuovamente il flusso di lavoro di Risorse_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l&#39;elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa dell’intero set di batch vengono aggiornati in AEM. Se le dimensioni del batch sono molto grandi, potrebbe verificarsi un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi di andata e ritorno al server Dynamic Media.
 
 Vedere [Regolazione delle dimensioni batch del flusso di lavoro di rielaborazione](#adjusting-load).
 
 >[!NOTE]
 >
->Se state eseguendo una migrazione di massa delle risorse da Dynamic Media Classic a  Experience Manager, dovete attivare l’agente di replica della migrazione sul server Dynamic Media. Al termine della migrazione, accertatevi di disabilitare l’agente.
+>Se state eseguendo una migrazione di massa delle risorse da Dynamic Media Classic a  Experience Manager, dovete abilitare l&#39;agente di replica della migrazione sul server Dynamic Media. Al termine della migrazione, accertatevi di disabilitare l’agente.
 >
->L’agente di pubblicazione della migrazione deve essere disabilitato sul server di contenuti multimediali dinamici, in modo che il flusso di lavoro di rielaborazione funzioni come previsto.
+>L’agente di pubblicazione della migrazione deve essere disabilitato sul server Dynamic Media, in modo che il flusso di lavoro di rielaborazione funzioni come previsto.
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
@@ -57,8 +57,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**Per rielaborare le risorse per contenuti multimediali dinamici in una cartella**:
-1. In Adobe Experience Manager, dalla pagina Risorse, individuate la cartella delle risorse Contenuti multimediali dinamici a cui è assegnato un profilo immagine o video e per la quale desiderate applicare l&#39; **Scene7: Rielabora il flusso di lavoro di Asset**,
+**Per rielaborare le risorse Dynamic Media in una cartella**:
+1. In Adobe Experience Manager, dalla pagina Risorse, individuate una cartella di risorse Dynamic Media a cui sia assegnato un profilo immagine o video e per la quale desiderate applicare l&#39; **Scene7: Rielabora il flusso di lavoro di Asset**,
 
    Le cartelle a cui è già stato assegnato un profilo immagine o video sono indicate dalla visualizzazione del nome del profilo direttamente sotto il nome della cartella nella vista a schede.
 
@@ -105,7 +105,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Selezionare **[!UICONTROL Handler Advance]** se il gestore avanzerà fino al passaggio successivo.
    * Nel campo **[!UICONTROL Timeout]**, immettere il timeout del processo esterno (secondi).
    * Nel campo **[!UICONTROL Periodo]**, immettere un intervallo di polling (secondi) per verificare il completamento del processo esterno.
-   * Nel **[!UICONTROL campo Batch]**, immettete il numero massimo di risorse (50-1000) da elaborare in un processo di caricamento batch di elaborazione del server per elementi multimediali dinamici.
+   * Nel campo **[!UICONTROL Batch]**, immettete il numero massimo di risorse (50-1000) da elaborare in un processo di caricamento batch di elaborazione server Dynamic Media.
    * Selezionare **[!UICONTROL Avanza su timeout]** se si desidera avanzare quando viene raggiunto il timeout. Deselezionate questa opzione se desiderate passare alla inbox quando viene raggiunto il timeout.
 
    ![Proprietà, finestra di dialogo](/help/assets/dynamic-media/assets/reprocess-assets3.png)
