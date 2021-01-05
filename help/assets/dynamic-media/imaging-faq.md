@@ -45,11 +45,11 @@ Miglioramenti nell&#39;ultima versione di Smart Imaging:
 
 ## Esistono costi di licenza associati all&#39;imaging intelligente? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-No. La funzione Smart Imaging è inclusa nella licenza esistente di Dynamic Media Classic (Scene7) o AEM Dynamic Media (On Prem, AMS e AEM come Cloud Service).
+No. Smart Imaging è incluso con la licenza esistente di Dynamic Media Classic (Scene7) o AEM Dynamic Media (On Prem, AMS e AEM come Cloud Service).
 
 >[!NOTE]
 >
->La funzione Smart Imaging non è disponibile per i clienti di Dynamic Media - Hybrid.
+>Le immagini intelligenti non sono disponibili per i clienti ibridi di Dynamic Media.
 
 
 ## Come funziona l&#39;imaging intelligente? {#how-does-smart-imaging-work}
@@ -112,7 +112,7 @@ Smart Imaging funziona con immagini distribuite tramite HTTP o HTTPS. Inoltre, f
 
 ## Posso utilizzare la tecnologia di imaging intelligente? {#am-i-eligible-to-use-smart-imaging}
 
-Per utilizzare l&#39;imaging intelligente, l&#39;account Dynamic Media Classic o Dynamic Media della tua azienda deve soddisfare AEM requisiti seguenti:
+Per utilizzare la funzione Smart Imaging, l&#39;account Dynamic Media Classic o Dynamic Media della società deve soddisfare i seguenti requisiti:
 
 * Utilizzate la rete CDN  (Content Delivery Network) inclusa nel Adobe come parte della licenza.
 * Utilizzate un dominio dedicato (ad esempio, `images.company.com` o `mycompany.scene7.com`), non un dominio generico (ad esempio, `s7d1.scene7.com`, `s7d2.scene7.com` o `s7d13.scene7.com`).
@@ -121,7 +121,7 @@ Per trovare i domini, accedi al tuo account o account della società.
 
 Toccate **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**. Cercare il campo con l&#39;etichetta **[!UICONTROL Nome server pubblicato]**. Se utilizzate un dominio generico, potete richiedere il passaggio al vostro dominio personalizzato come parte di questa transizione quando inviate un ticket di assistenza tecnica.
 
-Il primo dominio personalizzato non prevede costi aggiuntivi con una licenza per contenuti multimediali dinamici.
+Il primo dominio personalizzato non prevede costi aggiuntivi con una licenza Dynamic Media.
 
 ## Qual è la procedura per attivare la funzione Smart Imaging per il mio account? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
@@ -154,8 +154,8 @@ Il primo dominio personalizzato non prevede costi aggiuntivi con una licenza per
 1. Una volta completato il corso, riceverete una notifica.
 1. Per ottimizzare le prestazioni di Smart Imaging,  Adobe consiglia di impostare il tempo di trasmissione (TTL) su 24 ore o più. Il TTL definisce il tempo in cui le risorse vengono memorizzate nella cache dalla rete CDN. Per modificare questa impostazione:
 
-   1. Se utilizzate Dynamic Media Classic, fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Image Server]**. Impostare il valore **[!UICONTROL Tempo cache client predefinito su Live]** su 24 o più.
-   1. Se utilizzate gli elementi multimediali dinamici, seguite [le istruzioni riportate di seguito](config-dm.md). Impostare il valore **[!UICONTROL Scadenza]** su 24 ore o più.
+   1. Se utilizzate Dynamic Media Classic, fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Server immagini]**. Impostare il valore **[!UICONTROL Tempo cache client predefinito su Live]** su 24 o più.
+   1. Se utilizzate Dynamic Media, seguite le [presenti istruzioni](config-dm.md). Impostare il valore **[!UICONTROL Scadenza]** su 24 ore o più.
 
 ## Quando posso aspettarmi che il mio account sia abilitato con Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
@@ -166,13 +166,13 @@ Il tempo potrebbe essere lungo perché l&#39;attivazione di Smart Imaging implic
 
 ## Quali sono i rischi legati al passaggio all&#39;immagine per l&#39;utilizzo di Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-Non c&#39;è alcun rischio per una pagina Web del cliente. Tuttavia, tenete presente che la transizione a Smart Imaging cancella la cache del CDN perché comporta il passaggio a una nuova configurazione di Dynamic Media Classic o Dynamic Media su AEM.
+Non c&#39;è alcun rischio per una pagina Web del cliente. Tuttavia, tenete presente che la transizione a Smart Imaging elimina la cache della rete CDN perché comporta il passaggio a una nuova configurazione di Dynamic Media Classic o Dynamic Media su AEM.
 
 Durante la transizione iniziale, le immagini non memorizzate nella cache arrivano direttamente  server di origine  Adobe fino a quando la cache non viene ricreata. Per questo motivo,  Adobe pianifica di gestire alcune transizioni dei clienti alla volta in modo da mantenere prestazioni accettabili quando si richiamano le richieste dalla nostra origine. Per la maggior parte dei clienti, la cache è completamente integrata nuovamente alla rete CDN entro circa 1-2 giorni.
 
 ## Come posso verificare se la funzione di imaging intelligente funziona come previsto?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Dopo aver configurato l’account con l’imaging intelligente, caricate nel browser un URL immagine per elemento multimediale dinamico Classic (Scene7)/elemento multimediale dinamico.
+1. Dopo aver configurato l’account con la funzione di imaging intelligente, caricate nel browser un URL immagine Dynamic Media Classic (Scene7)/Dynamic Media.
 1. Aprite il riquadro per gli sviluppatori di Chrome facendo clic su **[!UICONTROL Visualizza > Sviluppatore > Strumenti per sviluppatori]** nel browser. Oppure, scegliete uno strumento di sviluppo browser a vostra scelta.
 
 1. Verificate che la cache sia disattivata quando gli strumenti di sviluppo sono aperti.
