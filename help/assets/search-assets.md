@@ -26,7 +26,7 @@ ht-degree: 5%
 | [Comprendere i risultati della ricerca e il comportamento](#searchbehavior) | [Modificare i facet di ricerca](#searchfacets) | [Aggiornamenti di massa dei metadati](#metadataupdates) |
 | [Classificazione e incremento della ricerca](#searchrank) | [Estrazione del testo](#extracttextupload) | [Raccolte intelligenti](#collections) |
 | [Ricerca avanzata: filtraggio e ambito di ricerca](#scope) | [predicati personalizzati](#custompredicates) | [Comprendere e risolvere problemi relativi a risultati imprevisti](#unexpectedresults) |
-| [Cerca da altre soluzioni e app](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[ app desktop Experience Manager](#desktopapp)</li><li>[ immagini Adobe Stock](#adobestock)</li><li>[Risorse per file multimediali dinamici](#dynamicmedia)</li></ul> |  |  |
+| [Cerca da altre soluzioni e app](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[ app desktop Experience Manager](#desktopapp)</li><li>[ immagini Adobe Stock](#adobestock)</li><li>[Risorse Dynamic Media](#dynamicmedia)</li></ul> |  |  |
 | [Selettore risorse](#assetselector) |  |  |
 | [](#tips) Limitazioni e  [suggerimenti](#limitations) |  |  |
 | [Esempi illustrati](#samples) |  |  |
@@ -143,7 +143,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 Dall&#39;interfaccia utente AEM, gli utenti possono effettuare ricerche in [ risorse Adobe Stock](/help/assets/aem-assets-adobe-stock.md) e ottenere la licenza per le risorse necessarie. Aggiungete `Location: Adobe Stock` nella barra di ricerca Omnisearch. Potete anche usare il pannello Filtri per trovare tutte le risorse con o senza licenza o per cercare una risorsa specifica usando  numero di file Adobe Stock.
 
-### Risorse per file multimediali dinamici {#dmassets}
+### Risorse Dynamic Media {#dmassets}
 
 Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri seleziona Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi.
 
@@ -209,7 +209,7 @@ Gli utenti e i professionisti del settore della linea di business utilizzano Bra
 
 Dall’interfaccia utente AEM, gli utenti possono effettuare ricerche  risorse Adobe Stock e ottenere la licenza per le risorse necessarie. Aggiungete `Location: Adobe Stock` nel campo Omnisearch. Potete anche utilizzare il pannello **[!UICONTROL Filtri]** per trovare tutte le risorse con o senza licenza o per cercare una risorsa specifica utilizzando  numero di file Adobe Stock. Vedere [gestire  immagini Adobe Stock in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Ricerca di risorse multimediali dinamiche {#dynamicmedia}
+### Ricerca risorse Dynamic Media {#dynamicmedia}
 
 Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri]** seleziona **[!UICONTROL Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi. Durante la creazione di pagine web, gli autori possono cercare i set direttamente da Content Finder. Nel menu pop-up è disponibile un filtro per i set.
 
