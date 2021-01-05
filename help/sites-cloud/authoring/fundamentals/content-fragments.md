@@ -24,8 +24,10 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 >
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo e di conseguenza frammenti di una pagina web.
+
 >
->I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
+>
+I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 
 >[!CAUTION]
 >
@@ -144,7 +146,8 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 >
 >* I componenti intermedi hanno una posizione assoluta all’interno della sequenza di componenti nel flusso del frammento. Questa posizione resta invariata, anche quando cambia il contenuto dei paragrafi nel frammento.
 >
->  Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
+>  
+Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
 >* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
 
 
