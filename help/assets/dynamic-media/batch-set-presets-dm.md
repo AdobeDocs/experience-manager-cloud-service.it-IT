@@ -1,6 +1,6 @@
 ---
 title: Predefiniti set di batch
-description: Scoprite come automatizzare la creazione di set di immagini e set 360 gradi mediante i predefiniti per set di batch in Contenuti multimediali dinamici.
+description: Scoprite come automatizzare la creazione di set di immagini e set 360 gradi utilizzando i predefiniti per set di batch in Dynamic Media.
 contentOwner: Rick Brough
 translation-type: tm+mt
 source-git-commit: c7a2fbb4fa6e81caabab829b876741ecf393a2c3
@@ -26,7 +26,7 @@ Utilizzate **[!UICONTROL Predefiniti per set di batch]** per semplificare la cre
 1. Applicate il predefinito per set di batch alla cartella delle risorse. Consultate [L&#39;applicazione dei predefiniti per set di batch alle cartelle](#apply-bsp).
 1. Caricate le immagini nella cartella delle risorse. Consultate [Caricamento di risorse per set di immagini](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Caricamento di risorse per set 360 gradi](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) o [Aggiunta di risorse digitali a Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. Create il set di immagini o il set 360 gradi. Consultate [Set di immagini](/help/assets/dynamic-media/image-sets.md) o [Set 360 gradi](/help/assets/dynamic-media/spin-sets.md).
-1. Pubblicate il set di immagini o il set 360 gradi. Consultate [Pubblicazione di risorse multimediali dinamiche](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. Pubblicate il set di immagini o il set 360 gradi. Consultate [Pubblicazione di Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Creazione di un predefinito per set di batch per un set di immagini o un set 360 gradi {#creating-bsp}
 
@@ -109,7 +109,7 @@ Consultate [Creazione di un predefinito per set di batch per un set di immagini 
 | Nome predefinito | Sola lettura. Nome specificato al momento della creazione del set di batch. Per rinominare il predefinito, potete copiare il predefinito per set di batch esistente e specificare un nuovo nome. Consultate [Copia di un predefinito per set di batch esistente](#copy-bsp). |
 | Tipo | Sola lettura. Il tipo è stato specificato al momento della creazione del set di batch. La copia di un predefinito per set di batch esistente non consente di modificarne il tipo [!UICONTROL Type]; dovete invece creare un nuovo predefinito. |
 | Includi risorse derivate | Facoltativo. Selezionate **[!UICONTROL Yes]** (impostazione predefinita) affinché l&#39;IPS di [!DNL Dynamic Media] (Image Production System) includa immagini generate o &quot;derivate&quot; con il set 360 gradi o il set di immagini. Una risorsa derivata è un’immagine che non è stata caricata direttamente da un utente. Al contrario, la risorsa è stata prodotta da IPS quando è stata caricata una risorsa principale. Ad esempio, una risorsa immagine generata da IPS da una pagina di un PDF, al momento del caricamento del PDF in [!DNL Dynamic Media], è considerata una risorsa derivata. |
-| Cartella di destinazione | Facoltativo.  Se definite un numero elevato di set di immagini o set 360 gradi, potete preferire tenerli separati dalle cartelle contenenti le risorse. Potete quindi prendere in considerazione la creazione di una cartella di set di immagini o di set 360 gradi e reindirizzare l’applicazione in modo da inserire qui i set generati dai set di batch.<br>In tal caso, specificate quale cartella all’interno della struttura di cartelle di Adobe Experience Manager Assets deve avere il predefinito per set di batch attivo. `/content/dam` Verificate che la cartella sia abilitata per la sincronizzazione [!DNL Dynamic Media] in modo da consentirla come cartella di destinazione. Consultate [Configurazione della pubblicazione selettiva a livello di cartella in Contenuti multimediali dinamici](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Tenete presente che a una cartella può essere assegnato un determinato predefinito per set di batch, se lo applicate tramite  **[!UICONTROL Proprietà]** della cartella. Consultate [Applicazione dei predefiniti per set di batch dalla pagina Proprietà di una cartella di risorse](#apply-bsp-to-folders-via-properties).<br>Se non specificate una cartella, il predefinito per set di batch viene creato nella stessa cartella della cartella di caricamento delle risorse. |
+| Cartella di destinazione | Facoltativo.  Se definite un numero elevato di set di immagini o set 360 gradi, potete preferire tenerli separati dalle cartelle contenenti le risorse. Potete quindi prendere in considerazione la creazione di una cartella di set di immagini o di set 360 gradi e reindirizzare l’applicazione in modo da inserire qui i set generati dai set di batch.<br>In tal caso, specificate quale cartella all’interno della struttura di cartelle di Adobe Experience Manager Assets deve avere il predefinito per set di batch attivo. `/content/dam` Verificate che la cartella sia abilitata per la sincronizzazione [!DNL Dynamic Media] in modo da consentirla come cartella di destinazione. Consultate [Configurazione della pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Tenete presente che a una cartella può essere assegnato un determinato predefinito per set di batch, se lo applicate tramite  **[!UICONTROL Proprietà]** della cartella. Consultate [Applicazione dei predefiniti per set di batch dalla pagina Proprietà di una cartella di risorse](#apply-bsp-to-folders-via-properties).<br>Se non specificate una cartella, il predefinito per set di batch viene creato nella stessa cartella della cartella di caricamento delle risorse. |
 | **[!UICONTROL Imposta convenzione di denominazione]** |  |
 | Prefisso<br>o<br>Suffisso | Facoltativo. Immettete un prefisso, un suffisso o entrambi nei rispettivi campi.<br>I campi prefisso e suffisso consentono di creare tutti i predefiniti per set di batch utilizzando una convenzione di denominazione file personalizzata alternativa che potrebbe essere necessaria per un particolare set di contenuti. Questo metodo è particolarmente utile nei casi in cui esiste un&#39;eccezione allo schema di denominazione predefinito definito da una società.<br>Il prefisso o il suffisso viene aggiunto al  **[!UICONTROL Nome base]** definito nell’area  **[!UICONTROL Denominazione]** risorsa. Aggiungendo un prefisso o un suffisso avrete la certezza che il set di immagini o il set 360 gradi venga creato esclusivamente e indipendentemente da altre risorse. Può essere utile anche per aiutare altri a identificare i tipi di file. Ad esempio, per determinare la modalità colore utilizzata, è possibile aggiungere come prefisso o suffisso `rgb` o `cmyk`.<br>Sebbene non sia necessario specificare una convenzione di denominazione per i set di batch, è comunque consigliabile utilizzare la convenzione di denominazione dei set per definire tutti gli elementi di denominazione da raggruppare in un set, in modo da semplificare la creazione dei set di batch. |
 | **[!UICONTROL Risultati regola - RegX]** |  |
@@ -153,7 +153,7 @@ Potrebbe essere necessario rielaborare le risorse in una cartella se si verifica
 1. Passate alla cartella alla quale desiderate applicare uno o più predefiniti per set di batch.
 1. Sulla pagina, a sinistra della colonna **[!UICONTROL Nome]**, selezionare la casella di controllo della colonna.
 1. Sulla barra degli strumenti, toccare **[!UICONTROL Proprietà]**.
-1. Nella pagina Proprietà della cartella, toccate la scheda **[!UICONTROL Elaborazione multimediale dinamica]**.
+1. Nella pagina Proprietà della cartella, toccate la scheda **[!UICONTROL Dynamic Media Processing]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
@@ -230,7 +230,7 @@ Potete usare due metodi per rimuovere i predefiniti per set di batch dalle carte
 1. Passate alla cartella in cui desiderate rimuovere uno o più predefiniti per set di batch.
 1. Sulla pagina, a sinistra della colonna **[!UICONTROL Nome]**, selezionare la casella di controllo di una cartella.
 1. Sulla barra degli strumenti, toccare **[!UICONTROL Proprietà]**.
-1. Nella pagina Proprietà della cartella, tocca **[!UICONTROL Elaborazione multimediale dinamica]**.
+1. Nella pagina Proprietà della cartella, toccare **[!UICONTROL Dynamic Media Processing]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
@@ -240,7 +240,7 @@ Potete usare due metodi per rimuovere i predefiniti per set di batch dalle carte
 
 ## Eliminazione dei predefiniti per set di batch {#delete-bsp}
 
-Potete eliminare i predefiniti per set di batch per rimuoverli definitivamente da [!DNL Dynamic Media]. In altre parole, non verranno più visualizzati nella pagina [!UICONTROL Predefinito set di batch] né nell&#39;elenco a discesa **[!UICONTROL Predefiniti set di batch]** della scheda **[!UICONTROL Elaborazione multimediale dinamica]** della pagina **[!UICONTROL Proprietà]** della cartella. In questo modo, il predefinito non verrà applicato alle risorse esistenti in una cartella che viene rielaborata o quando nuove risorse vengono caricate nella cartella.
+Potete eliminare i predefiniti per set di batch per rimuoverli definitivamente da [!DNL Dynamic Media]. In altre parole, non verranno più visualizzati nella pagina [!UICONTROL Predefinito set di batch] né nell&#39;elenco a discesa **[!UICONTROL Predefiniti set di batch]** della scheda **[!UICONTROL Dynamic Media Processing]** della cartella **[!UICONTROL Properties]**. In questo modo, il predefinito non verrà applicato alle risorse esistenti in una cartella che viene rielaborata o quando nuove risorse vengono caricate nella cartella.
 
 Se eliminate un predefinito precedentemente applicato a una o più cartelle, tutti i set di immagini o i set 360 gradi creati dalle risorse in tali cartelle continueranno a essere visualizzati così com’è.
 
@@ -264,5 +264,5 @@ Se desiderate semplicemente *rimuovere i predefiniti* dalle cartelle, consultate
 >
 >* [Set di immagini](/help/assets/dynamic-media/image-sets.md)
 >* [Set 360 gradi](/help/assets/dynamic-media/spin-sets.md)
->* [Configurazione della pubblicazione selettiva a livello di cartella in Contenuti multimediali](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  dinamici - Consultate &quot;Modalità sincronizzazione&quot; nell’argomento per ulteriori informazioni sulla sincronizzazione di una singola cartella con  [!DNL Dynamic Media].
->* [Creazione di una nuova configurazione per contenuti multimediali dinamici in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  - Consultate &quot;Modalità di sincronizzazione per file multimediali dinamici&quot; nell’argomento per ulteriori informazioni sulla sincronizzazione di tutte le cartelle in  [!DNL Dynamic Media].
+>* [Configurazione della pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  - Consultate &quot;Modalità sincronizzazione&quot; nell’argomento per ulteriori informazioni sulla sincronizzazione di una singola cartella in  [!DNL Dynamic Media].
+>* [Creazione di una nuova configurazione Dynamic Media in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  - Consultate &quot;Modalità di sincronizzazione Dynamic Media&quot; nell&#39;argomento per ulteriori informazioni sulla sincronizzazione di tutte le cartelle in  [!DNL Dynamic Media].
