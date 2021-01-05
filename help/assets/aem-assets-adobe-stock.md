@@ -52,7 +52,7 @@ Per consentire la comunicazione tra [!DNL Experience Manager] e [!DNL Adobe Stoc
 
 ## Utilizzare e gestire le risorse [!DNL Adobe Stock] in [!DNL Experience Manager] {#usemanage}
 
-Grazie a questa funzionalità, le organizzazioni possono consentire agli utenti di utilizzare le risorse [!DNL Adobe Stock] in [!DNL Experience Manager Assets]. Dall&#39;interfaccia utente [!DNL Experience Manager], gli utenti possono eseguire ricerche nelle risorse [!DNL Adobe Stock] e ottenere la licenza per le risorse necessarie.
+Grazie a questa funzionalità, le organizzazioni possono consentire agli utenti di utilizzare le risorse [!DNL Adobe Stock] in [!DNL Experience Manager Assets]. Dall&#39;interfaccia utente di [!DNL Experience Manager], gli utenti possono cercare [!DNL Adobe Stock] risorse e ottenere la licenza per le risorse necessarie.
 
 Una volta ottenuta la licenza di una risorsa [!DNL Adobe Stock] in [!DNL Experience Manager], questa può essere utilizzata e gestita come una risorsa tipica. In [!DNL Experience Manager], gli utenti possono cercare e visualizzare in anteprima le risorse; copiare e pubblicare le risorse; condividere le risorse su [!DNL Brand Portal]; accedere e utilizzare le risorse tramite l&#39;app desktop [!DNL Experience Manager]; e così via.
 
