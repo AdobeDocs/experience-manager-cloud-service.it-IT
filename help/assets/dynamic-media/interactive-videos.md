@@ -335,7 +335,7 @@ Per aggiungere interattività al video:
 
    Screenshot B
 
-   Nella schermata B sopra, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. Tenere presente che i timbri temporali della scala temporale sono impostati a intervalli di 3 secondi.
+   Nella schermata B sopra, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. Tenere presente che i timbri temporali della scala della linea temporale sono ora impostati a intervalli di 3 secondi.
 
    ![chlimage_1-25](assets/chlimage_1-131.png)
 
