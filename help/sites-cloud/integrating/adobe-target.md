@@ -53,7 +53,6 @@ Per effettuare l&#39;integrazione con Target, effettuate le seguenti operazioni:
 >
 >* 3.x è configurato con [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x è configurato con [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
 >
 
 
@@ -86,7 +85,6 @@ Per integrare AEM come Cloud Service con  Adobe Target è necessario conoscere  
 >* 2.000 esperienze
 >* 50 metriche
 >* 50 segmenti di reporting
-
 >
 
 

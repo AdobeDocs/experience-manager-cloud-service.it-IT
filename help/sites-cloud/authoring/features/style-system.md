@@ -121,6 +121,7 @@ Affinché un componente possa funzionare con il sistema di stili di AEM e visual
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
+>
 >In questo modo si sfruttano [le sovrapposizioni](/help/implementing/developing/introduction/overlays.md) tramite [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Con il componente configurato, gli stili configurati dall’autore della pagina vengono automaticamente inseriti da AEM sull’elemento decorativo in cui AEM racchiude in automatico ciascun componente modificabile. Il componente in sé non deve fare altro affinché questo accada.
@@ -135,6 +136,7 @@ La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
+>
 >In questo modo si sfruttano [le sovrapposizioni](/help/implementing/developing/introduction/overlays.md) tramite [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
@@ -156,7 +158,6 @@ Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 >1. HTL ha la precedenza su tutto: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Poi, tra più stili attivi, viene considerato il primo nell’elenco degli stili configurati nel criterio del componente.
 >1. Infine, il `cq:tagName`/ `cq:htmlTag` del componente sarà considerato un valore di fallback.
-
 >
 
 

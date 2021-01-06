@@ -393,7 +393,8 @@ I formati di paragrafo sono disponibili per la selezione:
    Ripetere i passaggi per ciascun formato richiesto.
 
 >[!CAUTION]
-Se si definiscono formati personalizzati, i formati predefiniti (`<p>`, `<h1>`, `<h2>` e `<h3>`) vengono rimossi. Ricreate il formato `<p>` in quanto è il formato predefinito.
+>
+>Se si definiscono formati personalizzati, i formati predefiniti (`<p>`, `<h1>`, `<h2>` e `<h3>`) vengono rimossi. Ricreate il formato `<p>` in quanto è il formato predefinito.
 
 ## Configurare i caratteri speciali {#spchar}
 
@@ -402,7 +403,8 @@ In un&#39;installazione [!DNL Experience Manager] standard, quando il plug-in `m
 È possibile configurare l’editor Rich Text per rendere disponibile la selezione di caratteri; mediante la definizione di caratteri distinti o di un&#39;intera sequenza.
 
 >[!CAUTION]
-L&#39;aggiunta di caratteri speciali ha la priorità sulla selezione predefinita. Se necessario, ridefinite questi caratteri nella selezione.
+>
+>L&#39;aggiunta di caratteri speciali ha la priorità sulla selezione predefinita. Se necessario, ridefinite questi caratteri nella selezione.
 
 ### Definire un singolo carattere {#definesinglechar}
 
@@ -477,10 +479,12 @@ In CRXDE, una volta salvata la proprietà, viene visualizzato il carattere rappr
 Gli stili vengono in genere applicati al testo, ma su una tabella o su alcune celle di tabella è possibile applicare un set separato di stili. Tali stili sono disponibili per gli autori dalla casella di selezione Stile della finestra di dialogo Proprietà cella o Proprietà tabella. Gli stili sono disponibili quando si modifica una tabella all’interno di un componente Testo (o derivato) e non nel componente Tabella standard.
 
 >[!NOTE]
-È possibile definire stili per tabelle e celle solo per l&#39;interfaccia classica.
+>
+>È possibile definire stili per tabelle e celle solo per l&#39;interfaccia classica.
 
 >[!NOTE]
-Copiare e incollare tabelle in o dal componente RTE dipende dal browser. Non è supportato out-of-box per tutti i browser. È possibile ottenere risultati variabili a seconda della struttura della tabella e del browser. Ad esempio, quando copiate e incollate una tabella in un componente RTE in Mozilla Firefox nell’interfaccia classica e Touch, il layout della tabella non viene mantenuto.
+>
+>Copiare e incollare tabelle in o dal componente RTE dipende dal browser. Non è supportato out-of-box per tutti i browser. È possibile ottenere risultati variabili a seconda della struttura della tabella e del browser. Ad esempio, quando copiate e incollate una tabella in un componente RTE in Mozilla Firefox nell’interfaccia classica e Touch, il layout della tabella non viene mantenuto.
 
 1. All&#39;interno del componente, andate al nodo `<rtePlugins-node>/table`. Creare i nodi se i nodi non esistono. Per ulteriori dettagli, vedere [attivare un plug-in](#activateplugin).
 1. Creare la proprietà `features` sul nodo `table`:
@@ -490,8 +494,9 @@ Copiare e incollare tabelle in o dal componente RTE dipende dal browser. Non è 
    * **Valore** `*`
 
    >[!NOTE]
-   Se non si desidera abilitare tutte le funzionalità della tabella, è possibile creare la proprietà `features` come:
-   * **Tipo** `String[]`
+   >
+   >Se non si desidera abilitare tutte le funzionalità della tabella, è possibile creare la proprietà `features` come:
+   >* **Tipo** `String[]`
 
    * **Valore** uno o entrambi dei valori seguenti, a seconda delle necessità:
       * `table` consentire la modifica delle proprietà della tabella; inclusi gli stili.
@@ -557,7 +562,8 @@ Se specificate sia il CSS che la stringa Stile nel codice, la classe CSS ha la p
 Quando il plug-in per il controllo ortografia è attivato, l&#39;editor Rich Text utilizza i dizionari per ciascuna lingua appropriata. Questi vengono quindi selezionati in base alla lingua del sito Web, ottenendo la proprietà language della struttura ad albero secondaria o estraendo la lingua dall’URL; ad esempio. il ramo `/en/` è controllato come inglese, il ramo `/de/` come tedesco.
 
 >[!NOTE]
-Messaggio &quot;Controllo ortografia non riuscito&quot;. viene visualizzato se viene provato un controllo per una lingua non installata.
+>
+>Messaggio &quot;Controllo ortografia non riuscito&quot;. viene visualizzato se viene provato un controllo per una lingua non installata.
 
 Un’installazione standard  Experience Manager include i dizionari per:
 
@@ -565,7 +571,8 @@ Un’installazione standard  Experience Manager include i dizionari per:
 * Inglese britannico (en_gb)
 
 >[!NOTE]
-I dizionari standard si trovano in `/libs/cq/spellchecker/dictionaries`, insieme ai file Leggimi appropriati. Non modificate i file.
+>
+>I dizionari standard si trovano in `/libs/cq/spellchecker/dictionaries`, insieme ai file Leggimi appropriati. Non modificate i file.
 
 Per aggiungere altri dizionari, se necessario, procedere come segue.
 
@@ -573,15 +580,17 @@ Per aggiungere altri dizionari, se necessario, procedere come segue.
 1. Selezionate la lingua desiderata e scaricate il file ZIP con le definizioni di ortografia. Estrarre il contenuto dell&#39;archivio nel file system.
 
    >[!CAUTION]
-   Sono supportati solo i dizionari nel formato `MySpell` per OpenOffice.org v2.0.1 o versioni precedenti. Poiché i dizionari ora sono file di archivio, si consiglia di verificare l&#39;archivio dopo il download.
+   >
+   >Sono supportati solo i dizionari nel formato `MySpell` per OpenOffice.org v2.0.1 o versioni precedenti. Poiché i dizionari ora sono file di archivio, si consiglia di verificare l&#39;archivio dopo il download.
 
 1. Individuate i file .aff e .dic. Mantieni il nome del file in lettere minuscole. Ad esempio, `de_de.aff` e `de_de.dic`.
 1. Caricate i file .aff e .dic nella directory archivio in `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-Il controllo ortografia RTE è disponibile su richiesta. Non viene eseguito automaticamente quando si inizia a digitare del testo.
-Per eseguire il controllo ortografia, toccate o fate clic sul pulsante Controllo ortografia nella barra degli strumenti. L’editor Rich Text controlla l’ortografia delle parole e evidenzia le parole con errori di ortografia.
-Se si incorporano modifiche suggerite dal controllo ortografia, lo stato del testo cambia e le parole con errori di ortografia non vengono più evidenziate. Per eseguire il controllo ortografia, toccate o fate di nuovo clic sul pulsante Controllo ortografia.
+>
+>Il controllo ortografia RTE è disponibile su richiesta. Non viene eseguito automaticamente quando si inizia a digitare del testo.
+>Per eseguire il controllo ortografia, toccate o fate clic sul pulsante Controllo ortografia nella barra degli strumenti. L’editor Rich Text controlla l’ortografia delle parole e evidenzia le parole con errori di ortografia.
+>Se si incorporano modifiche suggerite dal controllo ortografia, lo stato del testo cambia e le parole con errori di ortografia non vengono più evidenziate. Per eseguire il controllo ortografia, toccate o fate di nuovo clic sul pulsante Controllo ortografia.
 
 ## Configurare la dimensione della cronologia per le azioni di annullamento e ripristino {#undohistory}
 
@@ -616,7 +625,8 @@ Per definire la dimensione della scheda:
 Quando il rientro è abilitato (impostazione predefinita), puoi definire la dimensione del rientro:
 
 >[!NOTE]
-Questa dimensione del rientro è applicata solo ai paragrafi (blocchi) di testo; non incide sul rientro degli elenchi effettivi.
+>
+>Questa dimensione del rientro è applicata solo ai paragrafi (blocchi) di testo; non incide sul rientro degli elenchi effettivi.
 
 1. All&#39;interno del componente, andate al nodo `<rtePlugins-node>/lists`. Creare questi nodi se non esistono. Per ulteriori dettagli, vedere [attivare un plug-in](#activateplugin).
 1. Sul nodo `lists` create il parametro `identSize`:
@@ -648,10 +658,11 @@ Quando aggiungete collegamenti in [!DNL Experience Manager], potete definire gli
    * **Tipo** `nt:unstructured`
 
    >[!NOTE]
-   Il nodo `../items/text` ha la proprietà:
-   * **Nome** `xtype`
-   * **Tipo** `String`
-   * **Valore** `richtext`
+   >
+   >Il nodo `../items/text` ha la proprietà:
+   >* **Nome** `xtype`
+   >* **Tipo** `String`
+   >* **Valore** `richtext`
 
    La posizione del nodo `../items/text` può variare a seconda della struttura della finestra di dialogo. Due esempi sono `/apps/myProject>/components/text/dialog/items/text` e `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 

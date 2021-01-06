@@ -31,9 +31,8 @@ Potete applicare un predefinito per immagini a un’immagine ogni volta che la v
    >[!NOTE]
    >
    >* Le rappresentazioni statiche vengono visualizzate nella metà superiore del riquadro. Le rappresentazioni dinamiche vengono visualizzate nella metà inferiore. Solo per le rappresentazioni dinamiche, potete utilizzare l&#39;URL per visualizzare l&#39;immagine. Il pulsante **[!UICONTROL URL]** viene visualizzato solo se si seleziona una rappresentazione dinamica. Il pulsante **[!UICONTROL RESS]** viene visualizzato solo se selezionate un predefinito immagine reattivo.
-      >
-      >
-   * Il sistema mostra numerose rappresentazioni quando selezionate **[!UICONTROL Rappresentazioni]** nella visualizzazione Dettagli di una risorsa. Puoi aumentare il numero di predefiniti visualizzati. Consultate [Incremento del numero di predefiniti per immagini visualizzati](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+   >
+   >* Il sistema mostra numerose rappresentazioni quando selezionate **[!UICONTROL Rappresentazioni]** nella visualizzazione Dettagli di una risorsa. Puoi aumentare il numero di predefiniti visualizzati. Consultate [Incremento del numero di predefiniti per immagini visualizzati](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)

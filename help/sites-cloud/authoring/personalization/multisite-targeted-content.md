@@ -52,7 +52,6 @@ Un sito o una Live Copy collegano a un’area che contiene le attività che devo
 >
 >* Quando utilizzi il rollout o le Live Copy è richiesta una licenza MSM.
 >* Quando utilizzi la sincronizzazione con Adobe Target è richiesta la licenza per Adobe Target.
-
 >
 
 
@@ -240,7 +239,6 @@ Un’attività che eredita da un altro sito è contrassegnata in verde accanto a
 >
 >* Puoi sospendere o scollegare solo le Live Copy in un’attività.
 >* Non è necessario sospendere o scollegare le Live Copy per estendere un’attività ereditata. Puoi sempre creare **nuove** esperienze e offerte locali per l’attività. Se desideri modificare un’attività esistente, devi sospendere l’ereditarietà.
-
 >
 
 

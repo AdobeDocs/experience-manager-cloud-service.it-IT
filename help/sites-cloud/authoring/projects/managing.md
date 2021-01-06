@@ -136,7 +136,8 @@ Per rendere un progetto attivo o inattivo:
 1. Dalla console **Progetti**, apri il progetto e seleziona la porzione **Informazioni progetto**.
 
    >[!NOTE]
-   È necessario aggiungere questa porzione nel caso in cui non sia già presente nel progetto. Consulta [Aggiunta di una porzione](#adding-items-to-a-tile).
+   >
+   >È necessario aggiungere questa porzione nel caso in cui non sia già presente nel progetto. Consulta [Aggiunta di una porzione](#adding-items-to-a-tile).
 
 1. Toccate/fate clic su **Modifica**.
 1. Modifica il selettore passando da **Attivo** a **Inattivo** (o viceversa).

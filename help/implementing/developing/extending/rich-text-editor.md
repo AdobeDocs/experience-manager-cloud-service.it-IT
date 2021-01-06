@@ -131,10 +131,8 @@ La [modalità di modifica dell&#39;editor Rich Text e l&#39;interfaccia](#editin
 >* **Nome**: `configPath`
 >* **Tipo**: `String`
 >* **Valore**: percorso del nodo contenente la configurazione effettiva
-
 >
->
-Non assegnare al nodo di configurazione RTE il nome `config`. In caso contrario, le configurazioni dell&#39;editor Rich Text hanno effetto solo per gli amministratori e non per gli utenti del gruppo `content-author`.
+>Non assegnare al nodo di configurazione RTE il nome `config`. In caso contrario, le configurazioni dell&#39;editor Rich Text hanno effetto solo per gli amministratori e non per gli utenti del gruppo `content-author`.
 
 Configurare le seguenti proprietà che si applicano in modalità di modifica finestra di dialogo:
 
@@ -161,10 +159,8 @@ Il componente di testo [Componenti di base](https://docs.adobe.com/content/help/
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
->
-Per creare un componente di testo personalizzato, copiate il componente sopra anziché modificarlo.
+>Per creare un componente di testo personalizzato, copiate il componente sopra anziché modificarlo.
 
 ## Configura RTE, barra degli strumenti {#dialogfullscreen}
 
