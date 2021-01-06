@@ -3,9 +3,9 @@ title: Importare ed esportare in blocco i metadati delle risorse
 description: Questo articolo descrive come importare ed esportare i metadati in blocco.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
+source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '665'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## Importa metadati {#import-metadata}
 
-L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse, a causa XMP’attività di reinserimento se è selezionato il flag del flusso di lavoro. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo che le prestazioni per altri utenti non vengano compromesse.
+L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse a causa XMP’attività di reinserimento tramite i microservizi delle risorse.  Adobe consiglia di pianificare qualsiasi operazione in blocco durante l&#39;utilizzo del server magro in modo che le prestazioni per altri utenti non vengano compromesse.
 
 >[!NOTE]
 >
@@ -29,14 +29,14 @@ L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del s
 1. Specificate i seguenti parametri:
 
    | Parametro | Descrizione |
-   | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+   | ---------------------- | ------- |
    | Dimensione batch | Numero di risorse in un batch per cui importare i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
    | Separatore di campi | Il valore predefinito è `,` (una virgola). È possibile specificare qualsiasi altro carattere. |
    | Delimitatore multivalore | Separatore per i valori dei metadati. Il valore predefinito è `|`. |
    | Avvia flussi di lavoro | False per impostazione predefinita. Quando è impostata su `true` e le impostazioni predefinite di Launcher sono attive per il flusso di lavoro di riscrittura metadati DAM (che scrive i metadati nei dati XMP binari). L&#39;attivazione dei flussi di lavoro di avvio rallenta il sistema. |
    | Nome colonna percorso risorsa | Definisce il nome della colonna per il file CSV con le risorse. |
 
-1. Toccate o fate clic su **[!UICONTROL Importa]** dalla barra degli strumenti. Una volta importati i metadati, viene inviata una notifica alla inbox Notifica. Passate alla pagina delle proprietà della risorsa e verificate se i valori dei metadati sono stati importati correttamente per le risorse.
+1. Fare clic su **[!UICONTROL Importa]** dalla barra degli strumenti. Una volta importati i metadati, viene inviata una notifica alla inbox Notifica. Passate alla pagina delle proprietà della risorsa e verificate se i valori dei metadati sono stati importati correttamente per le risorse.
 
 Per aggiungere data e marca temporale durante l&#39;importazione dei metadati, utilizzate il formato `YYYY-MM-DDThh:mm:ss.fff-00:00` per la data e l&#39;ora. Data e ora sono separate da `T`, `hh` è ore in formato 24 ore, `fff` è nanosecondi e `-00:00` è l&#39;offset del fuso orario. Ad esempio, `2020-03-26T11:26:00.000-07:00` è il 26 marzo 2020 alle 11:26:00.000 orario PST.
 
@@ -46,7 +46,7 @@ Per aggiungere data e marca temporale durante l&#39;importazione dei metadati, u
 
 ## Esporta metadati {#export-metadata}
 
-Potete esportare metada per più risorse in formato CSV. I metadati vengono esportati in modo asincrono e non influiscono sulle prestazioni del sistema. Per esportare i metadati, AEM attraversa le proprietà del nodo della risorsa `jcr:content/metadata` e dei relativi nodi secondari ed esporta le proprietà dei metadati in un file CSV.
+Potete esportare i metadati per più risorse in formato CSV. I metadati vengono esportati in modo asincrono e non influiscono sulle prestazioni del sistema. Per esportare i metadati, AEM attraversa le proprietà del nodo della risorsa `jcr:content/metadata` e dei relativi nodi secondari ed esporta le proprietà dei metadati in un file CSV.
 
 Alcuni esempi di utilizzo per l’esportazione di metadati in massa sono:
 
@@ -68,4 +68,5 @@ Alcuni esempi di utilizzo per l’esportazione di metadati in massa sono:
 1. Apri la notifica della casella in entrata del processo di esportazione. Seleziona il processo e fai clic su **[!UICONTROL Apri]** nella barra degli strumenti. Per scaricare il file CSV con i metadati, tocca o fai clic su **[!UICONTROL Scarica CSV]** nella barra degli strumenti. Fai clic su **[!UICONTROL Chiudi]**.
 
    ![Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in massa](assets/csv_download.png)
-   *Figura: Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in massa*
+
+   *Figura: Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in massa.*
