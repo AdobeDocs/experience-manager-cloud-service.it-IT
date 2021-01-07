@@ -2,9 +2,9 @@
 title: Introduzione - Nomi di dominio personalizzati
 description: Introduzione - Nomi di dominio personalizzati
 translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+source-git-commit: 677a5d65bb15c9579f19b0b4e8ef03d1201e4a94
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Introduzione {#introduction}
 
-Cloud Manager consente di aggiungere un dominio personalizzato per identificare il sito con un nome univoco e di marchio in modo self-service tramite l&#39;interfaccia utente. Viene eseguito il provisioning di AEMaaCS con un nome di dominio predefinito, che termina con `*.adobeaemcloud.com`. Questo nome di dominio predefinito rimane, anche dopo che si allegano nomi di dominio personalizzati al sito Web
+Cloud Manager consente di aggiungere un dominio personalizzato per identificare il sito con un nome univoco e di marchio in modo self-service tramite l&#39;interfaccia utente. Il provisioning dell&#39;Adobe Experience Manager come Cloud Service viene eseguito con un nome di dominio predefinito, che termina con `*.adobeaemcloud.com`. Questo nome di dominio predefinito rimane, anche dopo che avete allegato nomi di dominio personalizzati al sito Web.
 
 >[!NOTE]
 >I nomi di dominio personalizzati sono supportati solo in Cloud Manager per il programma Site Program (Servizio pubblicazione). Ogni ambiente Cloud Manager può ospitare fino a un massimo di 100 domini personalizzati per ambiente.
