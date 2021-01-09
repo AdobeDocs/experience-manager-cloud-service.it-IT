@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
+source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 66%
+source-wordcount: '1915'
+ht-degree: 64%
 
 ---
 
@@ -257,12 +257,6 @@ I file creati per coerenza nel percorso *OUT_DIR* indicato sopra possono quindi 
 ### Comportamento dell’interfaccia {#ui-behavior}
 
 Come utente, nell’interfaccia dello strumento Content Transfer (Trasferimento contenuti) potresti osservare le seguenti modifiche comportamentali:
-
-* L’utente crea un set di migrazione per un URL di authoring (Sviluppo/Stage/Produzione) ed esegue correttamente l’estrazione e l’acquisizione.
-
-* L’utente crea quindi un nuovo set di migrazione per lo stesso URL di authoring ed esegue l’estrazione e l’acquisizione nel nuovo set di migrazione. Nell’interfaccia lo stato di acquisizione del primo set di migrazione diventa **FAILED** (NON RIUSCITO) e non sono disponibili registri.
-
-* Ciò non significa che l’acquisizione del primo set di migrazione non sia riuscita. Si osserva questo comportamento perché all’avvio di un nuovo processo di acquisizione viene eliminato il processo di acquisizione precedente. Pertanto, lo stato delle modifiche del primo set di migrazione deve essere ignorato.
 
 * Le icone nell’interfaccia dello strumento Content Transfer (Trasferimento contenuti) possono apparire diverse dalle schermate mostrate in questa guida o possono non apparire affatto, a seconda della versione dell’istanza AEM sorgente.
 
