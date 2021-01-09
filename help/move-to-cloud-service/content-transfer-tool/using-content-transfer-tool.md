@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
+source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 70%
+source-wordcount: '2018'
+ht-degree: 66%
 
 ---
 
@@ -25,6 +25,8 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 * Se utilizzi un ambiente *sandbox*, accertati che l&#39;ambiente sia aggiornato alla versione più recente. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
 
 * Per utilizzare lo strumento di trasferimento dei contenuti, è necessario essere un utente amministratore nell’istanza di origine e appartenere al gruppo di amministratori AEM locali nell’istanza di Cloud Service a cui si sta trasferendo il contenuto. Gli utenti non autorizzati non potranno recuperare il token di accesso per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+
+* Il token di accesso può scadere periodicamente dopo un periodo di tempo specifico o dopo l&#39;aggiornamento dell&#39;ambiente del Cloud Service. Se il token di accesso è scaduto, non sarà possibile connettersi all&#39;istanza di Cloud Service e sarà necessario recuperare il nuovo token di accesso. L&#39;icona di stato associata a un set di migrazione esistente si trasforma in un cloud rosso e viene visualizzato un messaggio quando si passa il puntatore del mouse su di esso.
 
 * Attualmente la dimensione predefinita di MongoDB per un AEM come istanza Author di Cloud Service è 32 GB. Si consiglia di inviare un ticket di supporto per le dimensioni dello store del segmento superiori a 20 GB, in modo da aumentare le dimensioni di MongoDB.
 
@@ -162,6 +164,9 @@ Una volta completato il processo di estrazione, puoi trasferire il contenuto del
 Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 
 1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Ingest** (Acquisisci) per avviare l’acquisizione. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione). Fare clic su **Ingest** per avviare la fase di assimilazione. A scopo dimostrativo, l’opzione **Ingest content to Author instance** (Acquisisci contenuto nell’istanza di authoring) è disabilitata. È possibile acquisire contemporaneamente contenuti nelle istanze di authoring e di pubblicazione.
+
+   >[!IMPORTANT]
+   >Quando l&#39;opzione **Elimina contenuto esistente nell&#39;istanza di Cloud prima dell&#39;assimilazione** è abilitata, elimina l&#39;intero repository esistente e crea un nuovo repository in cui assimilare il contenuto. Ciò significa che ripristina tutte le impostazioni, comprese le autorizzazioni per l’istanza del Cloud Service di destinazione.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
