@@ -2,7 +2,7 @@
 title: Aggiunta di un nome di dominio personalizzato
 description: Aggiunta di un nome di dominio personalizzato
 translation-type: tm+mt
-source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
+source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -50,7 +50,8 @@ Per aggiungere un nome di dominio personalizzato dalla pagina Impostazioni domin
 1. Selezionare il **Certificato SSL di dominio** dall&#39;elenco a discesa e selezionare **Continue**.
 
 1. **Viene visualizzata** la finestra di dialogo Aggiungi nome di dominio. Viene visualizzata la schermata Verifica nome dominio per l’ambiente. Per ulteriori informazioni, fare riferimento a [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
-Seguite le istruzioni fornite per dimostrare la proprietà del dominio per l’ambiente in uso.
+
+   Seguite le istruzioni fornite per dimostrare la proprietà del dominio per l’ambiente in uso:
 
 1. Fare clic su **Crea**.
 1. La distribuzione CDN richiede un certificato SSL valido e la verifica TXT completata. Questo è indicato dallo stato **Verified and Deployed**.
