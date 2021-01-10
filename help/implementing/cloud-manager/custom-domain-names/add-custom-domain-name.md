@@ -2,9 +2,9 @@
 title: Aggiunta di un nome di dominio personalizzato
 description: Aggiunta di un nome di dominio personalizzato
 translation-type: tm+mt
-source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
+source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ Per aggiungere un nome di dominio personalizzato in Cloud Manager, un utente dev
 ## Considerazioni importanti {#important-considerations}
 
 * Prima di aggiungere un nome di dominio personalizzato, al programma deve essere installato un certificato SSL valido contenente il nome di dominio personalizzato. Per ulteriori informazioni, fare riferimento a [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+
+* Non è possibile aggiungere i nomi di dominio agli ambienti se è presente una pipeline in esecuzione corrente collegata a tali ambienti.
 
 * È possibile aggiungere un solo nome di dominio alla volta. Tuttavia, i domini non possono contenere caratteri jolly. I domini personalizzati sul lato dell&#39;autore non sono supportati.
 
