@@ -3,7 +3,7 @@ title: Configurare e utilizzare i microservizi delle risorse
 description: Configurate e utilizzate i microservizi delle risorse native per il cloud per elaborare le risorse su scala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '2532'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Con la configurazione predefinita, è configurato solo il profilo di elaborazion
 
 Il profilo di elaborazione può includere una rappresentazione FPO (solo per posizionamento). Per informazioni su come attivarla per il profilo di elaborazione, vedere [!DNL Adobe Asset Link] [documentazione](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html). Per ulteriori informazioni, consultate la [documentazione completa  collegamento risorse di Adobe](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html).
 
-### Crea profilo standard {#create-standard-profile}
+### Creare un profilo standard {#create-standard-profile}
 
 Per creare un profilo di elaborazione standard, effettuate le seguenti operazioni:
 
@@ -108,7 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 Può trasformare immagini, video, documenti e altri formati di file in diverse rappresentazioni, come miniature, testo estratto e metadati, nonché archivi.
 
-Gli sviluppatori possono utilizzare [!DNL Asset Compute Service] per [creare applicazioni personalizzate](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) in grado di soddisfare i casi di utilizzo supportati. [!DNL Experience Manager] possono chiamare queste applicazioni personalizzate dall&#39;interfaccia utente utilizzando profili personalizzati che gli amministratori configurano. [!DNL Asset Compute Service] supporta i seguenti casi di utilizzo di servizi esterni:
+Gli sviluppatori possono utilizzare [!DNL Asset Compute Service] per [creare applicazioni personalizzate](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) per i casi di utilizzo supportati. [!DNL Experience Manager] possono chiamare queste applicazioni personalizzate dall&#39;interfaccia utente utilizzando profili personalizzati che gli amministratori configurano. [!DNL Asset Compute Service] supporta i seguenti casi di utilizzo di servizi esterni:
 
 * Utilizzate [!DNL Adobe Photoshop]&#39;s [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) e salvate il risultato come rappresentazione.
 * Chiama sistemi di terze parti per aggiornare i dati, ad esempio un sistema PIM.
@@ -123,7 +123,7 @@ Gli sviluppatori possono utilizzare [!DNL Asset Compute Service] per [creare app
 
 Per creare un profilo personalizzato, attenetevi alla procedura seguente:
 
-1. Gli amministratori accedono a **[!UICONTROL Strumenti > Risorse > Profili di elaborazione]**. Fai clic su **[!UICONTROL Crea]**.
+1. Gli amministratori accedono a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili di elaborazione]**. Fai clic su **[!UICONTROL Crea]**.
 1. Fare clic sulla scheda **[!UICONTROL Personalizzato]**. Fare clic su **[!UICONTROL Aggiungi nuovo]**. Specificate il nome file desiderato per la rappresentazione.
 1. Fornite le seguenti informazioni.
 
@@ -145,6 +145,8 @@ Le applicazioni personalizzate sono app [Project Firefly](https://github.com/Ado
 Per illustrare l&#39;utilizzo del profilo personalizzato, consideriamo un caso d&#39;uso per applicare del testo personalizzato alle immagini della campagna. Potete creare un profilo di elaborazione che sfrutta l&#39;API di Photoshop per modificare le immagini.
 
 &#39;integrazione del servizio di Asset compute consente  Experience Manager di trasmettere questi parametri all&#39;applicazione personalizzata utilizzando il campo [!UICONTROL Service Parameters]. L&#39;applicazione personalizzata chiama quindi l&#39;API Photoshop e trasmette questi valori all&#39;API. Ad esempio, potete trasmettere il nome del font, il colore del testo, lo spessore del testo e la dimensione del testo per aggiungere il testo personalizzato alle immagini della campagna.
+
+<!-- TBD: Check screenshot against the interface. -->
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
