@@ -2,9 +2,9 @@
 title: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager].
 description: Aggiungi le risorse digitali a  [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
@@ -44,17 +44,13 @@ Le risorse come [!DNL Cloud Service] forniscono i seguenti metodi di caricamento
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
-
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
    The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
-   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
+   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
-   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
-
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -97,7 +93,7 @@ Uploading numerous assets in bulk consumes significant I/O resources, which may 
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
-Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
+Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in CRX-DE and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -190,23 +186,23 @@ Oltre all&#39;interfaccia utente del browser Web, [!DNL Experience Manager] supp
 
 ## Elabora risorse durante il caricamento di {#process-when-uploaded}
 
-Per eseguire un’ulteriore elaborazione sulle risorse caricate, potete applicare i profili di elaborazione alle cartelle di caricamento. I profili sono disponibili nella pagina **[!UICONTROL Proprietà]** di una cartella in [!DNL Assets].
+Per eseguire un’ulteriore elaborazione sulle risorse caricate, potete applicare i profili di elaborazione alle cartelle di caricamento. I profili sono disponibili nella pagina **[!UICONTROL Proprietà]** di una cartella in [!DNL Assets]. Una risorsa digitale senza estensione o con estensione errata non viene elaborata come desiderato. Ad esempio, quando caricate tali risorse, alla risorsa potrebbe non verificarsi nulla o potrebbe essere applicato un profilo di elaborazione errato. Gli utenti possono comunque archiviare i file binari in DAM.
 
-![assets-folder-properties](assets/assets-folder-properties.png)
+![Proprietà di una cartella di risorse con opzioni per aggiungere un profilo di elaborazione](assets/assets-folder-properties.png)
 
 Sono disponibili le seguenti schede:
 
-* [I ](metadata-profiles.md) profili di metadati consentono di applicare proprietà di metadati predefinite alle risorse caricate in tale cartella
+* [I ](metadata-profiles.md) profili di metadati consentono di applicare proprietà di metadati predefinite alle risorse caricate in tale cartella.
 * [I ](asset-microservices-configure-and-use.md) profili di elaborazione consentono di generare più rappresentazioni di quante siano possibili per impostazione predefinita.
 
 Inoltre, se [!DNL Dynamic Media] è abilitato nella distribuzione, sono disponibili le seguenti schede:
 
-* [I ](dynamic-media/image-profiles.md) profili immagine di Dynamic Media consentono di applicare alle risorse caricate specifiche impostazioni di ritaglio (**[!UICONTROL Smart]** Cropinging e ritaglio pixel) e nitidezza.
-* [I ](dynamic-media/video-profiles.md) profili video di Dynamic Media consentono di applicare specifici profili di codifica video (risoluzione, formato, parametri).
+* [[!DNL Dynamic Media] I ](dynamic-media/image-profiles.md) profili immagine consentono di applicare alle risorse caricate specifiche configurazioni di ritaglio (**[!UICONTROL Smart]** Cropinging e ritaglio pixel) e nitidezza.
+* [[!DNL Dynamic Media] I ](dynamic-media/video-profiles.md) profili video consentono di applicare specifici profili di codifica video (risoluzione, formato, parametri).
 
 >[!NOTE]
 >
->Il ritaglio Dynamic Media e altre operazioni sulle risorse non sono distruttive, ovvero non modificano l’originale caricato, ma forniscono parametri per il ritaglio o la trasformazione del supporto da eseguire durante la distribuzione delle risorse
+>[!DNL Dynamic Media] il ritaglio e altre operazioni sulle risorse non sono distruttive, ovvero le operazioni non modificano l’originale caricato. ma fornisce parametri per ritagliare o trasformare le risorse.
 
 Per le cartelle a cui è assegnato un profilo di elaborazione, il nome del profilo viene visualizzato sulla miniatura nella vista a schede. Nella vista a elenco, il nome del profilo viene visualizzato nella colonna **[!UICONTROL Profilo di elaborazione]**.
 
