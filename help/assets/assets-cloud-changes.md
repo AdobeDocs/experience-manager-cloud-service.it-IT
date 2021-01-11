@@ -1,18 +1,18 @@
 ---
-title: Notevoli modifiche in Risorse Adobe Experience Manager come a [!DNL Cloud Service]
-description: Notevoli modifiche alle risorse Adobe Experience Manager in  Experience Manager [!DNL Cloud Service] rispetto ad Adobe Experience Manager 6.5.
+title: Modifiche principali in [!DNL Adobe Experience Manager Assets] come a [!DNL Cloud Service]
+description: Notevoli modifiche a [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] rispetto a [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 0838f384b31c59fe95087e1a71741656eedcd13b
+source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '605'
 ht-degree: 3%
 
 ---
 
 
-# Notevoli modifiche a  risorse Experience Manager come [!DNL Cloud Service] {#notable-changes}
+# Modifiche notevoli a [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager come [!DNL Cloud Service] offre molte nuove funzionalità e possibilità per gestire i progetti  Experience Manager. Esistono molte differenze tra  risorse di Experience Manager locali o ospitate come  servizio gestito del Adobe rispetto a [!DNL Experience Manager] come [!DNL Cloud Service]. Questo articolo evidenzia le differenze importanti per le funzionalità [!DNL Assets].
+[!DNL Adobe Experience Manager] come  [!DNL Cloud Service] offre molte nuove funzionalità e possibilità per gestire i progetti di Experience Manager . Ci sono molte differenze tra [!DNL Experience Manager Assets] locale o ospitato come servizio gestito  Adobe rispetto a [!DNL Experience Manager] come [!DNL Cloud Service]. Questo articolo evidenzia le differenze importanti per le funzionalità [!DNL Assets].
 
 Le principali differenze rispetto al Experience Manager [] 6.5 si trovano nelle seguenti aree:
 
@@ -22,16 +22,17 @@ Le principali differenze rispetto al Experience Manager [] 6.5 si trovano nelle 
 
 ## Caricamento ed elaborazione delle risorse {#asset-ingestion}
 
-Il caricamento delle risorse è stato ottimizzato per garantire l’efficienza operativa, migliorando il ridimensionamento dell’assimilazione delle risorse, velocizzando i caricamenti, velocizzando l’elaborazione tramite microservizi e l’assimilazione in massa. Sono state aggiornate le funzionalità dei prodotti (interfacce utente Web, client desktop). Tuttavia, questo potrebbe avere un impatto su alcune personalizzazioni esistenti.
+Il caricamento delle risorse è ottimizzato per garantire l’efficienza operativa, migliorando il ridimensionamento dell’assimilazione, caricamenti più rapidi, elaborazione più rapida mediante microservizi e assimilazione in massa. Le funzionalità dei prodotti (interfacce utente Web, client desktop) vengono aggiornate. Inoltre, questo potrebbe avere un impatto su alcune personalizzazioni esistenti.
 
-*  Experience Manager utilizza il principio di accesso binario diretto per caricare e scaricare e per elaborare le risorse, Consultate [panoramica dell&#39;assimilazione delle risorse](/help/assets/asset-microservices-overview.md).
+* [!DNL Experience Manager] utilizza il principio di accesso binario diretto per caricare e scaricare le risorse e utilizza i microservizi delle risorse per elaborare le risorse. Vedere [panoramica dei microservizi](/help/assets/asset-microservices-overview.md).
    * Caricamento risorse [con accesso binario diretto](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
    * Per informazioni tecniche, consultate [protocollo di caricamento binario diretto e API](/help/assets/developer-reference-material-apis.md#upload-binary).
    * Per un confronto dei metodi API disponibili per le operazioni CRUD di base, consultate [API e operazioni di risorse](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
 * Il flusso di lavoro predefinito **[!UICONTROL DAM Asset Update]** incluso nelle versioni precedenti di non è più disponibile. [!DNL Experience Manager] Al contrario, i microservizi delle risorse forniscono un servizio scalabile e facilmente disponibile che copre la maggior parte dell’elaborazione predefinita delle risorse (rappresentazioni, estrazione dei metadati ed estrazione del testo per l’indicizzazione).
-   * Vedere [configurazione e utilizzo di asset microservices](/help/assets/asset-microservices-configure-and-use.md)
+   * Vedere [configurare e utilizzare i microservizi delle risorse](/help/assets/asset-microservices-configure-and-use.md)
    * Per impostare dei passaggi personalizzati per l&#39;elaborazione, è possibile utilizzare i [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows).
-* Per le risorse incluse in Gestione pacchetti è necessaria la rielaborazione manuale tramite l&#39;azione **[!UICONTROL Rielabora risorsa]** nell&#39;interfaccia Risorse.
+* Le risorse caricate tramite Gestione pacchetti richiedono una rielaborazione manuale tramite l&#39;azione **[!UICONTROL Rielabora risorsa]** nell&#39;interfaccia [!DNL Assets].
+* Una risorsa digitale senza estensione o con estensione errata non viene elaborata come desiderato. Ad esempio, quando caricate tali risorse, alla risorsa potrebbe non verificarsi nulla o potrebbe essere applicato un profilo di elaborazione errato. Gli utenti possono comunque archiviare i file binari in DAM.
 
 Le rappresentazioni standard generate con i microservizi delle risorse vengono memorizzate in modo compatibile con le versioni precedenti nei nodi dell’archivio delle risorse (stesse convenzioni di denominazione).
 
