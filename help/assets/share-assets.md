@@ -1,19 +1,19 @@
 ---
 title: Condivisione di risorse, cartelle e raccolte come collegamento
-description: Questo articolo descrive come condividere risorse, cartelle e raccolte all'interno  risorse Experience Manager come collegamento ipertestuale.
+description: Questo articolo descrive come condividere risorse, cartelle e raccolte all'interno di [!DNL Experience Manager Assets] come collegamento ipertestuale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
 
 
-# Condividere e distribuire le risorse gestite in  Experience Manager {#share-assets-from-aem}
+# Condivisione e distribuzione delle risorse gestite in [!DNL Experience Manager] {#share-assets-from-aem}
 
-Risorse Adobe Experience Manager (AEM) consente di condividere risorse, cartelle e raccolte con membri dell’organizzazione ed entità esterne, inclusi partner e fornitori. Utilizzate i seguenti metodi per condividere risorse da  risorse di Experience Manager come [!DNL Cloud Service]:
+[!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte con membri dell&#39;organizzazione ed entità esterne, inclusi partner e fornitori. Utilizzate i seguenti metodi per condividere le risorse da [!DNL Experience Manager Assets] come [!DNL Cloud Service]:
 
 * Condividi come collegamento.
 * Scaricate le risorse e condividetele separatamente.
@@ -23,7 +23,7 @@ Risorse Adobe Experience Manager (AEM) consente di condividere risorse, cartelle
 
 ## Condividere le risorse come collegamento {#sharelink}
 
-Per generare l’URL delle risorse da condividere con gli utenti, usate la finestra di dialogo Condivisione collegamenti. Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro. La condivisione di risorse tramite un collegamento è un modo pratico per rendere disponibili le risorse a soggetti esterni senza dover prima accedere a  AEM Assets.
+Per generare l’URL delle risorse da condividere con gli utenti, usate la finestra di dialogo Condivisione collegamenti. Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro. La condivisione delle risorse tramite un collegamento è un modo pratico per rendere disponibili le risorse a soggetti esterni senza dover prima accedere a [!DNL Assets].
 
 >[!NOTE]
 >
@@ -31,8 +31,8 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 >* Prima di condividere un collegamento con gli utenti, assicurarsi che Day CQ Mail Service sia configurato. In caso contrario, si verifica un errore.
 
 
-1. Nell’interfaccia utente Risorse, seleziona la risorsa da condividere come collegamento.
-1. Dalla barra degli strumenti, tocca o fai clic su **[!UICONTROL Condividi collegamento]**. Il collegamento di una risorsa viene creato automaticamente nel campo **[!UICONTROL Condividi collegamento]**. Copiate questo collegamento e condividetelo con gli utenti. Il tempo di scadenza predefinito per il collegamento è un giorno.
+1. Nell&#39;interfaccia utente [!DNL Assets], seleziona la risorsa da condividere come collegamento.
+1. Dalla barra degli strumenti, fare clic su **[!UICONTROL Condividi collegamento]**. Il collegamento di una risorsa viene creato automaticamente nel campo **[!UICONTROL Condividi collegamento]**. Copiate questo collegamento e condividetelo con gli utenti. Il tempo di scadenza predefinito per il collegamento è un giorno.
 
    >[!NOTE]
    >
@@ -113,9 +113,9 @@ Gli utenti possono scaricare le risorse necessarie e condividerle al di fuori di
 
 Gli addetti al marketing e gli utenti della linea di business possono condividere facilmente le risorse approvate con i loro creativi professionisti che utilizzano,
 
-* **AEM app** desktop: L&#39;app funziona su Windows e Mac. Consultate [Panoramica dell&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Per sapere in che modo qualsiasi utente desktop autorizzato può accedere facilmente alle risorse condivise, consultate [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle con colleghi che sono utenti AEM, ad esempio, caricando nuove immagini. Consultate [caricare risorse tramite l&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **&#39;app** desktop Experience Manager: L&#39;app funziona su Windows e Mac. Consultate [Panoramica dell&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Per sapere in che modo qualsiasi utente desktop autorizzato può accedere facilmente alle risorse condivise, consultate [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle con colleghi che sono utenti AEM, ad esempio, caricando nuove immagini. Consultate [caricare risorse tramite l&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **collegamento** risorsa Adobe: I creativi professionisti possono cercare e utilizzare le risorse direttamente da  Adobe InDesign,  Adobe Illustrator e  Adobe Photoshop.
+* **collegamento** risorsa Adobe: I creativi professionisti possono cercare e utilizzare le risorse direttamente dall&#39;interno  [!DNL Adobe InDesign],  [!DNL Adobe Illustrator]e  [!DNL Adobe Photoshop].
 
 ## Configurare la condivisione delle risorse {#configure-sharing}
 
@@ -125,11 +125,11 @@ Le diverse opzioni per condividere le risorse richiedono una configurazione spec
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Per generare l’URL delle risorse da condividere con gli utenti, usate la finestra di dialogo Condivisione collegamenti. Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro. La condivisione di risorse tramite un collegamento è un modo pratico per rendere disponibili le risorse a soggetti esterni senza dover prima accedere a  AEM Assets.
+Per generare l’URL delle risorse da condividere con gli utenti, usate la finestra di dialogo Condivisione collegamenti. Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro. La condivisione delle risorse tramite un collegamento è un modo pratico per rendere disponibili le risorse a soggetti esterni senza dover prima accedere a [!DNL Assets].
 
 >[!NOTE]
 >
->Se desiderate condividere i collegamenti dall&#39;istanza di AEM Author a entità esterne, accertatevi di esporre solo i seguenti URL per le richieste `GET`. Bloccate altri URL per garantire la protezione dell&#39;istanza di AEM Author.
+>Per condividere i collegamenti dall&#39;istanza Author a entità esterne, accertatevi di esporre solo i seguenti URL per le richieste `GET`. Bloccate altri URL per garantire la protezione dell&#39;istanza Author.
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
@@ -169,15 +169,15 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Abilitare le azioni desktop da utilizzare con l&#39;app desktop {#desktop-actions}
 
-Dall’interfaccia utente di Risorse in un browser, puoi esplorare le posizioni delle risorse o estrarne e aprire la risorsa per la modifica nell’applicazione desktop. Queste opzioni sono denominate azioni desktop e per attivarle, vedere [abilita azioni desktop in AEM&#39;interfaccia Web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+Dall&#39;interfaccia utente di [!DNL Assets] in un browser, potete esplorare i percorsi delle risorse o il check-out e aprire la risorsa per la modifica nell&#39;applicazione desktop. Queste opzioni sono denominate azioni desktop e per attivarle, vedere [abilita azioni desktop in AEM&#39;interfaccia Web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
 ![Abilitare le azioni desktop a essere utilizzate come scelte rapide quando si lavora con l&#39;app desktop](assets/enable_desktop_actions.png)
 
-### Configurazioni per l&#39;utilizzo  collegamento risorse Adobe {#configure-asset-link}
+### Configurazioni per l&#39;utilizzo di [!DNL Adobe Asset Link] {#configure-asset-link}
 
- Collegamento risorse Adobe semplifica la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti. Collega le risorse Adobe Experience Manager (AEM) con Creative Cloud app desktop  Adobe InDesign,  Adobe Photoshop e  Adobe Illustrator. Il pannello Collegamento risorse  Adobe consente ai creativi di accedere e modificare i contenuti memorizzati  AEM Assets senza uscire dalle app creative che conoscono maggiormente.
+ Collegamento risorse Adobe semplifica la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti. Connette [!DNL Adobe Experience Manager Assets] con le [!DNL Creative Cloud] app desktop [!DNL Adobe InDesign], [!DNL Adobe Photoshop] e [!DNL Adobe Illustrator]. Il pannello [!DNL Adobe Asset Link] consente ai creativi di accedere e modificare il contenuto memorizzato in [!DNL Assets] senza uscire dalle app creative che conoscono di più.
 
-Consultate [come configurare AEM da utilizzare con  collegamento risorsa Adobe](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html).
+Vedere [come configurare [!DNL Assets] per utilizzarlo con [!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## Procedure ottimali e risoluzione dei problemi {#bestpractices}
 
