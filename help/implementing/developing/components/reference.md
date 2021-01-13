@@ -2,9 +2,9 @@
 title: Guida di riferimento ai componenti
 description: Guida di riferimento per sviluppatori ai dettagli dei componenti e della loro struttura
 translation-type: tm+mt
-source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
+source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3720'
 ht-degree: 0%
 
 ---
@@ -315,6 +315,39 @@ Il comportamento di modifica di un componente è configurato aggiungendo un nodo
    * `cq:listeners` (tipo di nodo  `cq:EditListenersConfig`): definisce cosa accade prima o dopo un’azione sul componente
 
 Esistono molte configurazioni in AEM. È possibile cercare facilmente proprietà specifiche o nodi secondari utilizzando lo strumento Query in **CRXDE Lite**.
+
+### Segnaposto componente {#component-placeholders}
+
+I componenti devono sempre eseguire il rendering di codice HTML visibile all’autore, anche quando il componente non ha contenuto. In caso contrario, potrebbe scomparire visivamente dall&#39;interfaccia dell&#39;editor, rendendola tecnicamente presente ma invisibile sulla pagina e nell&#39;editor. In tal caso, gli autori non potranno selezionare e interagire con il componente vuoto.
+
+Per questo motivo, i componenti devono eseguire il rendering di un segnaposto purché non rendano alcun output visibile quando la pagina viene sottoposta a rendering nell&#39;editor pagina (quando la modalità WCM è `edit` o `preview`).
+La marcatura HTML tipica di un segnaposto è la seguente:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="Component Name"></div>
+```
+
+Lo script HTL tipico che esegue il rendering del codice HTML segnaposto riportato sopra è il seguente:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
+     data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
+```
+
+Nell&#39;esempio precedente, `isEmpty` è una variabile che è vera solo quando il componente non ha contenuto ed è invisibile all&#39;autore.
+
+Per evitare ripetizioni,  Adobe consiglia agli implementatori di componenti di utilizzare un modello HTL per questi segnaposto, [come quello fornito dai componenti core.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+
+L’utilizzo del modello nel collegamento precedente viene quindi effettuato con la seguente riga di HTL:
+
+```HTML
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
+```
+
+Nell&#39;esempio precedente, `model.text` è la variabile che è true solo quando il contenuto ha contenuto ed è visibile.
+
+Un esempio di utilizzo di questo modello può essere visualizzato nei componenti core, [come nel componente titolo.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### Configurazione con cq:EditConfig Child Nodes {#configuring-with-cq-editconfig-child-nodes}
 
