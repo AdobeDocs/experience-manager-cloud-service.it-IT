@@ -2,10 +2,10 @@
 title: Frammenti di contenuto - Browser di configurazione
 description: Scoprite come abilitare determinate funzionalità di frammento di contenuto nel browser di configurazione.
 translation-type: tm+mt
-source-git-commit: c821baff208e563009e68f51700555ea1d516886
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 19%
+source-wordcount: '278'
+ht-degree: 18%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 19%
 
 >[!CAUTION]
 >
->L&#39;API AEM GraphQL, per la distribuzione dei frammenti di contenuto, verrà rilasciata all&#39;inizio del 2021.
+>L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto è disponibile su richiesta.
 >
->La documentazione correlata è già disponibile a scopo di anteprima.
+>Per abilitare l&#39;API per il AEM come programma di Cloud Service, contattate il supporto di [ Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support).
 
 ## Abilita funzionalità frammento di contenuto per l&#39;istanza {#enable-content-fragment-functionality-instance}
 
