@@ -2,9 +2,9 @@
 title: Anteprima - RAPPRESENTAZIONE JSON
 description: Visualizzazione in anteprima della rappresentazione JSON del frammento.
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '132'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->L&#39;API AEM GraphQL, per la distribuzione dei frammenti di contenuto, verrà rilasciata all&#39;inizio del 2021.
+>L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto è disponibile su richiesta.
 >
->La documentazione correlata è già disponibile a scopo di anteprima.
+>Per abilitare l&#39;API per il AEM come programma di Cloud Service, contattate il supporto di [ Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support).
 
 Nello sviluppo dei modelli per i frammenti di contenuto, potrebbe essere utile visualizzare l&#39;output JSON di esempio per un frammento di contenuto, in base a un modello. Ad esempio, per avere un&#39;idea dell&#39;aspetto dell&#39;output finale. Questo potrebbe essere utile per convalidare la struttura JSON del modello, ad esempio con contenuto di esempio predefinito per tipo di dati.
 
