@@ -2,9 +2,9 @@
 title: Modelli di pagina
 description: I modelli di pagina vengono utilizzati per creare una pagina che verrà utilizzata come base per la nuova pagina
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 8%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 8%
 
 # Modelli di pagina {#page-templates}
 
-Per creare una pagina è necessario selezionare un modello. Il modello di pagina viene utilizzato come base per la nuova pagina. Il modello definisce la struttura della pagina risultante, eventuali contenuti iniziali e i componenti che possono essere utilizzati (proprietà di progettazione). Ciò presenta numerosi vantaggi:
+Per creare una pagina è necessario selezionare un modello. Il modello di pagina viene utilizzato come base per la nuova pagina. Il modello definisce la struttura della pagina risultante, eventuali contenuti iniziali e i componenti che possono essere utilizzati (proprietà di progettazione). Questo offre diversi vantaggi:
 
 * I modelli di pagina consentono agli autori specializzati di [creare e modificare i modelli](/help/sites-cloud/authoring/features/templates.md).
    * Tali autori specializzati sono denominati **autori di modelli**
@@ -61,7 +61,7 @@ Durante la creazione di un nuovo modello modificabile:
 
    Per informazioni dettagliate sulla definizione della struttura da parte dell&#39;autore di un modello, vedere [Creazione di modelli di pagina](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   Per i dettagli tecnici della struttura, vedere [Struttura](#structure) in questo documento.
+   Per informazioni tecniche sulla struttura, vedere [Struttura](#structure) in questo documento.
 
    **Criteri**
 
@@ -72,7 +72,7 @@ Durante la creazione di un nuovo modello modificabile:
 
    Per informazioni dettagliate sulla definizione dei criteri da parte dell&#39;autore di un modello, vedere [Creazione di modelli di pagina](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   Per informazioni tecniche sui criteri, consultare [Criteri di contenuto](#content-policies) in questo documento.
+   Per informazioni tecniche sui criteri, vedere [Criteri di contenuto](#content-policies) in questo documento.
 
    **Contenuto iniziale**
 
@@ -110,6 +110,16 @@ Durante la creazione di un nuovo modello modificabile:
 
    Per informazioni tecniche sulla creazione di pagine con modelli modificabili, consultare [Pagine di contenuti risultanti](#resultant-content-pages) in questo documento.
 
+>[!TIP]
+>
+>Non inserire mai informazioni che devono essere internazionalizzate in un modello. A scopo di internalizzazione, si consigliano le [funzioni di localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+
+>[!NOTE]
+>
+>I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e rendere confusa la creazione delle pagine. Una buona regola è mantenere il numero di modelli al di sotto di 100.
+>
+> Adobe non consiglia di avere più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
+
 >[!NOTE]
 >
 >La libreria client dell&#39;editor presuppone la presenza dello spazio dei nomi `cq.shared` nelle pagine di contenuto, e se è assente, si verificherà l&#39;errore JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined`.
@@ -118,9 +128,7 @@ Durante la creazione di un nuovo modello modificabile:
 >
 >Per ulteriori informazioni, vedere [Utilizzo di librerie lato client](/help/implementing/developing/introduction/clientlibs.md).
 
->[!CAUTION]
->
->Non inserire mai informazioni che devono essere internazionalizzate in un modello.
+
 
 ## Cartelle modello {#template-folders}
 
