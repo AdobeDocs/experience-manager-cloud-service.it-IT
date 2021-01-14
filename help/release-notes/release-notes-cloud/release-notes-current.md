@@ -2,9 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
+source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '692'
 ht-degree: 5%
 
 ---
@@ -45,21 +45,15 @@ La seguente release (2021.1.0) sarà del 28 gennaio 2021.
 
 ### Data di rilascio {#release-date-cm}
 
-La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.12.0 è il 10 dicembre 2020.
-
-### Novità in [!DNL Cloud Manager] {#what-is-new-cm}
-
-* Gestione self-service di [certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) e [nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
-
-* Gestione self-service di [Elenchi consentiti  IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-* La pagina dei dettagli **Environment** aggiornata ora consente agli utenti di gestire i nomi di dominio e i Elenchi consentiti di  IP personalizzati nei propri ambienti.
+La data di rilascio per Cloud Manager in AEM come Cloud Service 2021.1.0 è il 14 gennaio 2021.
 
 ### Correzioni di bug {#bug-fixes-cloud-manager}
 
-* Alcune occorrenze di errori nella fase di scansione del codice senza fornire risultati risolti.
+* In alcuni casi, l&#39;istanza Produzione risorse può mostrare lo stato del Portale marchio nella pagina di dettaglio **Ambienti** come *In sospeso*, senza consentire all&#39;utente di eseguire alcuna azione.
 
-* La scheda ambiente non visualizzava in modo uniforme il pulsante **Aggiungi**.
+* Quando si attiva la disattivazione da Cloud Manager, talvolta veniva visualizzato un messaggio di errore anche quando la disattivazione veniva avviata correttamente.
+
+* Sono stati risolti rari casi di errori nella creazione o eliminazione dell&#39;ambiente.
 
 ## Strumenti di refactoring del codice {#code-refactoring-tools}
 
