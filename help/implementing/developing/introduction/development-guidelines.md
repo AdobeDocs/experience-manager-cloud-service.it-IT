@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Linee guida per lo sviluppo per AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
+source-git-commit: a3d940765796e6a4d8e16d8fe31343074358ebc3
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -222,8 +222,8 @@ AEM come Cloud Service richiede che la posta in uscita sia crittografata. Le sez
 Per impostazione predefinita, le e-mail in uscita sono disattivate. Per attivarlo, inviate un ticket di assistenza con:
 
 1. Nome di dominio completo per il server di posta (ad esempio `smtp.sendgrid.net`)
-1. La porta da utilizzare. Deve essere la porta 465 se supportata dal server di posta, altrimenti la porta 587 Nota che la porta 587 può essere utilizzata solo se il server di posta richiede e applica TLS su quella porta
-1. ID del programma e ID dell&#39;ambiente per gli ambienti per i quali desiderano inviare messaggi di posta elettronica
+1. La porta da utilizzare. Deve essere la porta 465 se supportata dal server di posta, altrimenti la porta 587. Si noti che la porta 587 può essere utilizzata solo se il server di posta richiede e applica TLS su tale porta
+1. L&#39;ID del programma e l&#39;ID dell&#39;ambiente per gli ambienti per i quali desiderano inviare i messaggi di posta elettronica
 1. Indica se l&#39;accesso SMTP è necessario per l&#39;autore, la pubblicazione o entrambi.
 
 ### Invio di e-mail {#sending-emails}
@@ -240,16 +240,16 @@ AEM CS richiede l&#39;invio della posta tramite la porta 465. Se un server di po
 
 Le e-mail in AEM devono essere inviate utilizzando il servizio [Day CQ Mail Service OSGi Service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Per informazioni dettagliate sulla configurazione delle impostazioni e-mail, vedere la documentazione di [AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html). Per AEM CS, è necessario apportare le seguenti modifiche al servizio `com.day.cq.mailer.DefaultMailService OSGI`:
+Per informazioni dettagliate sulla configurazione delle impostazioni e-mail, vedere la documentazione di [AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html). Per AEM come Cloud Service, al servizio `com.day.cq.mailer.DefaultMailService OSGI` devono essere apportate le seguenti modifiche:
 
 Se la porta 465 è stata richiesta:
 
 * impostare `smtp.port` su `465`
 * impostare `smtp.ssl` su `true`
-* impostare `smtp.starttls` su `false`
 
 Se la porta 587 è stata richiesta (consentita solo se il server di posta elettronica non supporta la porta 465):
 
 * impostare `smtp.port` su `587`
 * impostare `smtp.ssl` su `false`
-* impostare `smtp.starttls` su `true`
+
+La proprietà `smtp.starttls` verrà automaticamente impostata da AEM come Cloud Service in fase di esecuzione a un valore appropriato. Sarà `false` per la porta 465 e `true` per la porta 587. Questo è indipendente dai valori `smtp.starttls` impostati nella configurazione OSGI.
