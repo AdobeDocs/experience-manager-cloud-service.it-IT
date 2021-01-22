@@ -2,9 +2,9 @@
 title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
+source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1535'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,15 @@ Questa pagina descrive inoltre come la cache del dispatcher viene invalidata, no
 
 ### HTML/Testo {#html-text}
 
-* per impostazione predefinita, è memorizzata nella cache dal browser per cinque minuti, in base all’intestazione del controllo cache emesso dal livello apache. Anche la CDN rispetta questo valore.
+* per impostazione predefinita, nella cache del browser per cinque minuti, in base all&#39;intestazione `cache-control` emessa dal livello apache. Anche la CDN rispetta questo valore.
+* l&#39;impostazione predefinita di caching HTML/testo può essere disattivata definendo la variabile `DISABLE_DEFAULT_CACHING` in `global.vars`:
+
+```
+Define DISABLE_DEFAULT_CACHING
+```
+
+Questo può essere utile, ad esempio, quando la logica aziendale richiede una regolazione fine dell’intestazione dell’età (con un valore basato sul giorno del calendario), poiché per impostazione predefinita l’intestazione dell’età è impostata su 0. Detto questo, **si prega di prestare attenzione quando si spegne la cache predefinita.**
+
 * può essere ignorato per tutto il contenuto HTML/Testo definendo la variabile `EXPIRATION_TIME` in `global.vars` utilizzando il AEM come strumenti di Cloud Service SDK Dispatcher.
 * possono essere sostituiti a un livello di granulosità più sottile dalle seguenti direttive apache mod_header:
 
