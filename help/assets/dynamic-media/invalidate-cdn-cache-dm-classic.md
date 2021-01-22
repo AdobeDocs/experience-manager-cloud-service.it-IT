@@ -2,9 +2,9 @@
 title: Annullamento della validità della cache CDN tramite Dynamic Media Classic
 description: L’annullamento della validità della rete CDN (Content Delivery Network) nei contenuti memorizzati nella cache consente di aggiornare rapidamente le risorse distribuite da Dynamic Media, anziché attendere la scadenza della cache.
 translation-type: tm+mt
-source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '663'
 ht-degree: 26%
 
 ---
@@ -22,15 +22,9 @@ Vedere anche [Panoramica della cache in Dynamic Media Classic](https://helpx.ado
 
 **Per annullare la validità della cache CDN tramite Dynamic Media Classic:**
 
-1. Effettua una delle operazioni seguenti:
+1. Apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-   * Nel browser Web, accedete al vostro account Dynamic Media Classic:
-
-      [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-      Le credenziali e l&#39;accesso sono stati forniti  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
-
-   * Apri l’applicazione Dynamic Media Classic, quindi accedi al tuo account.
+   Le credenziali e i dettagli di accesso sono stati forniti dal  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
 
 1. Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**.
 1. Nella pagina Impostazioni generali applicazione, sotto l&#39;intestazione del gruppo Server, individuare la casella di testo **[!UICONTROL Modello di annullamento validità CDN]**.
