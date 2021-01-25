@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
 translation-type: tm+mt
-source-git-commit: 664c278494a5ac88362b994946060ab3baa846d8
+source-git-commit: 410b7900981596590fa80b286b40a965700f108e
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '750'
+ht-degree: 1%
 
 ---
 
@@ -42,3 +42,39 @@ Per impostare questa impostazione, effettuate le seguenti operazioni:
 1. Generare una coppia di chiavi o caricare una chiave pubblica (rsa non è buona)
 1. Generare un token di accesso (o un token JWT o un token del portatore).
 1. Salvate tutte queste informazioni (ID client, Segreto cliente, ID account tecnico, E-mail account tecnico, ID organizzazione, Token di accesso) in un luogo sicuro.
+
+## Interfaccia utente {#user-interface}
+
+Lo strumento di mappatura utenti è integrato nello strumento di trasferimento dei contenuti. Potete scaricare lo strumento di trasferimento dei contenuti dal portale di distribuzione del software. Per ulteriori dettagli sull’ultima versione, consulta Note sulla versione.
+
+1. Selezionare l&#39;Adobe Experience Manager e passare agli strumenti -> **Operazioni** -> **Trasferimento dei contenuti**.
+1. Fare clic su **Crea configurazione mappatura utente**.
+
+   >[!NOTE]
+   >Se saltate questo passaggio, la mappatura di utenti e gruppi verrà ignorata durante la fase di estrazione.
+
+   Compilate i campi nella configurazione API di gestione utente come descritto di seguito:
+
+   * **ID** organizzazione: Immettete l’ID organizzazione IMS per l’organizzazione per la quale gli utenti vengono migrati.
+
+      >[!NOTE]
+      >Per ottenere l&#39;ID organizzazione, accedete al Admin Console [](https://adminconsole.adobe.com/) e scegliete l&#39;organizzazione (nell&#39;area in alto a destra) se appartenete a più di uno. L’ID organizzazione sarà nell’URL della pagina, nel formato `xx@AdobeOrg`, dove xx è l’ID organizzazione IMS.  In alternativa, puoi trovare l&#39;ID organizzazione nella pagina [ Developer Console](https://console.adobe.io) del Adobe in cui crei il Token di accesso.
+
+   * **ID** client: Immettere l&#39;ID client salvato dal passaggio Configurazione
+
+   * **Token** di accesso: Immettere il token di accesso salvato dal passaggio Configurazione
+
+      >[!NOTE]
+      >Il token di accesso scade ogni 24 ore e occorre crearne uno nuovo. Per creare un nuovo token, tornate in [ Adobe Developer Console](https://console.adobe.io), scegliete il progetto, fate clic su User Management API e incollate la stessa chiave privata nella casella.
+
+1. Dopo aver inserito le informazioni di cui sopra, fate clic su Salva.
+
+1. Per creare un set di migrazione, fai clic su Crea set di migrazione e compila i campi, quindi fai clic su Salva. Per ulteriori dettagli, vedere Esecuzione di Content Transfer Tool.
+
+   >[!NOTE]
+   >Per impostazione predefinita, l’interruttore di attivazione/disattivazione per includere la mappatura degli utenti da utenti e gruppi IMS è attivato. Con questa impostazione, quando Estrazione viene eseguita su questo set di migrazione, lo strumento di mappatura utente viene eseguito come parte della fase di estrazione. Questo è il metodo consigliato per eseguire la fase di estrazione dello strumento di trasferimento dei contenuti. Se questa opzione è disattivata e/o la configurazione Mappatura utente non viene creata, la mappatura di utenti e gruppi verrà ignorata durante la fase Estrazione.
+
+1. Per eseguire la fase di estrazione, fare riferimento a [Esecuzione di Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
+
+
+
