@@ -3,9 +3,9 @@ title: Gestire le risorse video
 description: Caricate, visualizzate in anteprima, annotate e pubblicate le risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 6%
 
 ---
@@ -57,7 +57,7 @@ Per elaborare le risorse mediante un profilo di elaborazione, aggiungete un prof
 
    * I file Apple ProRes possono transcodificare solo a una risoluzione massima di 1080p.
    * Se il file di origine ha un bitrate > 200 Mbps, potete eseguire la transcodifica solo a una risoluzione massima di 1080p.
-   * Se la frequenza fotogrammi sorgente >= 60 fps, la dimensione massima del file sorgente che potete usare è
+   * Se la frequenza di fotogrammi di origine >=60 fps, la dimensione massima del file di origine utilizzabile è:
 
       * 400 MB per la transcodifica 4k.
       * 800 MB per la transcodifica 1080p.
