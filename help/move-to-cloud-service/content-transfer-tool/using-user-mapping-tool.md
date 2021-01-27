@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
 translation-type: tm+mt
-source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
+source-git-commit: dcba197624b6a7ae668b11f43f60b13a9da0080e
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '757'
 ht-degree: 1%
 
 ---
@@ -35,17 +35,17 @@ Lo strumento di mappatura utenti utilizza un’API che consente di effettuare ri
 Per impostare questa impostazione, effettuate le seguenti operazioni:
 
 1. Andate a [ Adobe Developer Console](https://console.adobe.io) utilizzando l&#39;Adobe ID .
-1. Creazione di un nuovo progetto o apertura di un progetto esistente
-1. Aggiunta di un&#39;API
-1. Scegli API di gestione utente
-1. Creare una credenziale JWT
-1. Generare una coppia di chiavi o caricare una chiave pubblica (rsa non è buona)
+1. Crea un nuovo progetto o apri un progetto esistente.
+1. Aggiungete un&#39;API.
+1. Scegliete API di gestione utente.
+1. Creare una credenziale JWT.
+1. Generare una coppia di chiavi o caricare una chiave pubblica (rsa non è buona).
 1. Generare un token di accesso (o un token JWT o un token del portatore).
-1. Salvate tutte queste informazioni (ID client, Segreto cliente, ID account tecnico, E-mail account tecnico, ID organizzazione, Token di accesso) in un luogo sicuro.
+1. Salvate tutte queste informazioni come **ID client**, **Segreto cliente**, **ID account tecnico**, **E-mail account tecnico**, **ID organizzazione** e **Token di accesso** in modo sicuro.
 
 ## Interfaccia utente {#user-interface}
 
-Lo strumento di mappatura utenti è integrato nello strumento di trasferimento dei contenuti. Potete scaricare lo strumento di trasferimento dei contenuti dal portale di distribuzione del software. Per ulteriori dettagli sull’ultima versione, consulta Note sulla versione.
+Lo strumento di mappatura utenti è integrato nello strumento di trasferimento dei contenuti. Potete scaricare lo strumento di trasferimento dei contenuti dal portale di distribuzione del software. Per ulteriori informazioni sull&#39;ultima versione, fare riferimento alle [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Selezionare l&#39;Adobe Experience Manager e passare agli strumenti -> **Operazioni** -> **Trasferimento dei contenuti**.
 1. Fare clic su **Crea configurazione mappatura utente**.
