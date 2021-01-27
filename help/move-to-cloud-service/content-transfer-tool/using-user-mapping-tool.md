@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
 translation-type: tm+mt
-source-git-commit: 410b7900981596590fa80b286b40a965700f108e
+source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,11 @@ Lo strumento di mappatura utenti è integrato nello strumento di trasferimento d
    >[!NOTE]
    >Se saltate questo passaggio, la mappatura di utenti e gruppi verrà ignorata durante la fase di estrazione.
 
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+
    Compilate i campi nella configurazione API di gestione utente come descritto di seguito:
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
    * **ID** organizzazione: Immettete l’ID organizzazione IMS per l’organizzazione per la quale gli utenti vengono migrati.
 
@@ -67,12 +71,17 @@ Lo strumento di mappatura utenti è integrato nello strumento di trasferimento d
       >[!NOTE]
       >Il token di accesso scade ogni 24 ore e occorre crearne uno nuovo. Per creare un nuovo token, tornate in [ Adobe Developer Console](https://console.adobe.io), scegliete il progetto, fate clic su User Management API e incollate la stessa chiave privata nella casella.
 
-1. Dopo aver inserito le informazioni di cui sopra, fate clic su Salva.
+1. Dopo aver immesso le informazioni di cui sopra, fare clic su **Salva**.
 
-1. Per creare un set di migrazione, fai clic su Crea set di migrazione e compila i campi, quindi fai clic su Salva. Per ulteriori dettagli, vedere Esecuzione di Content Transfer Tool.
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+
+
+1. Per creare un set di migrazione, fare clic su **Crea set di migrazione** e compilare i campi, quindi fare clic su **Salva**. Per ulteriori dettagli, vedere Esecuzione di Content Transfer Tool.
 
    >[!NOTE]
    >Per impostazione predefinita, l’interruttore di attivazione/disattivazione per includere la mappatura degli utenti da utenti e gruppi IMS è attivato. Con questa impostazione, quando Estrazione viene eseguita su questo set di migrazione, lo strumento di mappatura utente viene eseguito come parte della fase di estrazione. Questo è il metodo consigliato per eseguire la fase di estrazione dello strumento di trasferimento dei contenuti. Se questa opzione è disattivata e/o la configurazione Mappatura utente non viene creata, la mappatura di utenti e gruppi verrà ignorata durante la fase Estrazione.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Per eseguire la fase di estrazione, fare riferimento a [Esecuzione di Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
 
