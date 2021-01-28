@@ -2,9 +2,9 @@
 title: Dispatcher nel cloud
 description: 'Dispatcher nel cloud '
 translation-type: tm+mt
-source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
+source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
 workflow-type: tm+mt
-source-wordcount: '4050'
+source-wordcount: '4119'
 ht-degree: 9%
 
 ---
@@ -376,7 +376,8 @@ Phase 2 finished
 Lo script esegue le seguenti operazioni:
 
 1. Esegue la convalida dalla sezione precedente per garantire che siano incluse solo le direttive supportate. Se la configurazione non è valida, lo script non riuscirà.
-2. Viene eseguito il `httpd -t command` per verificare se la sintassi è corretta in modo che apache possa iniziare. In caso di esito positivo, la configurazione dovrebbe essere pronta per la distribuzione
+2. Viene eseguito il `httpd -t command` per verificare se la sintassi è corretta in modo che apache possa iniziare. In caso di esito positivo, la configurazione dovrebbe essere pronta per la distribuzione.
+3. Controlla che il sottoinsieme dei file di configurazione SDK del dispatcher, che devono essere immutabili come descritto nella sezione [Struttura file](#file-structure), non sia stato modificato. Questo è un nuovo controllo, introdotto con AEM versione SDK v2021.1.4738 che include anche Dispatcher Tools versione 2.0.36. Prima di questo aggiornamento, i clienti potevano aver erroneamente ipotizzato che eventuali modifiche SDK locali di tali file immutabili sarebbero state applicate anche all&#39;ambiente Cloud.
 
 Durante la distribuzione di Cloud Manager, verrà eseguito anche il controllo `httpd -t syntax`, che verrà incluso nel registro di Cloud Manager `Build Images step failure`.
 
