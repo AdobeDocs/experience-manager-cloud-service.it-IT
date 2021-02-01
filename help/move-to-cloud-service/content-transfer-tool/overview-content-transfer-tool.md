@@ -2,10 +2,10 @@
 title: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
 description: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 100%
+source-wordcount: '674'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,11 @@ Il trasferimento dei contenuti prevede due fasi:
 
    Per ulteriori informazioni, consulta [Processo di estrazione nel trasferimento dei contenuti](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process).
 
-2. **Acquisizione**: per acquisizione si intende l’acquisizione dei contenuti dal *set di migrazione* nell’istanza Cloud Service di destinazione.
+>[!NOTE]
+>
+> Si consiglia di eseguire lo strumento di mappatura utenti come parte della fase di estrazione. Per ulteriori informazioni, fare riferimento a [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
+
+1. **Acquisizione**: per acquisizione si intende l’acquisizione dei contenuti dal *set di migrazione* nell’istanza Cloud Service di destinazione.
 
    Per ulteriori informazioni, consulta [Processo di acquisizione nel trasferimento dei contenuti](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process).
 
