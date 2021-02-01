@@ -2,9 +2,9 @@
 title: Integrazione con Adobe Target
 description: 'Integrazione con Adobe Target '
 translation-type: tm+mt
-source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
+source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,6 @@ Per modificare la configurazione di Target, attenetevi alla seguente procedura:
 1. Selezionate una configurazione esistente e fate clic su **Proprietà**.
 2. Modificare le proprietà.
 3. Selezionare **Connetti di nuovo a  Adobe Target**.
-   ![Riconnessione ](assets/edit_config_page1.png "di nuovo")
 4. Seleziona **Salva e chiudi**.
 
 ### Aggiunta di una configurazione a un sito {#add-configuration}
