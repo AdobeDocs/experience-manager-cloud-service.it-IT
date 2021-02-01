@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
+source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1906'
 ht-degree: 64%
 
 ---
@@ -28,9 +28,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Il token di accesso può scadere periodicamente dopo un periodo di tempo specifico o dopo l&#39;aggiornamento dell&#39;ambiente del Cloud Service. Se il token di accesso è scaduto, non sarà possibile connettersi all&#39;istanza di Cloud Service e sarà necessario recuperare il nuovo token di accesso. L&#39;icona di stato associata a un set di migrazione esistente si trasforma in un cloud rosso e viene visualizzato un messaggio quando si passa il puntatore del mouse su di esso.
 
-* Attualmente la dimensione predefinita di MongoDB per un AEM come istanza Author di Cloud Service è 32 GB. Si consiglia di inviare un ticket di supporto per le dimensioni dello store del segmento superiori a 20 GB, in modo da aumentare le dimensioni di MongoDB.
-
-* Gli utenti e i gruppi trasferiti dallo strumento di trasferimento dei contenuti sono solo quelli richiesti dal contenuto per soddisfare le autorizzazioni. Il processo *Extraction* copia l&#39;intero `/home` nel set di migrazione e il processo *Ingestion* copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL del contenuto migrato.
+* Gli utenti e i gruppi trasferiti dallo strumento di trasferimento dei contenuti sono solo quelli richiesti dal contenuto per soddisfare le autorizzazioni. Il processo *Extraction* copia l&#39;intero `/home` nel set di migrazione e il processo *Ingestion* copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL del contenuto migrato. Per mappare automaticamente gli utenti e i gruppi esistenti ai loro ID IMS, fare riferimento a [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 
