@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
 translation-type: tm+mt
-source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
+source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 3%
+source-wordcount: '782'
+ht-degree: 4%
 
 ---
 
@@ -47,7 +47,7 @@ Per impostare questa impostazione, effettuate le seguenti operazioni:
 
 Lo strumento di mappatura utenti è integrato nello strumento di trasferimento dei contenuti. È possibile scaricare Content Transfer Tool dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html). Per ulteriori informazioni sull&#39;ultima versione, fare riferimento alle [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Selezionare l&#39;Adobe Experience Manager e passare agli strumenti -> **Operazioni** -> **Trasferimento dei contenuti**.
+1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Content Transfer** (Trasferimento contenuti).
 1. Fare clic su **Crea configurazione mappatura utente**.
 
    >[!NOTE]
