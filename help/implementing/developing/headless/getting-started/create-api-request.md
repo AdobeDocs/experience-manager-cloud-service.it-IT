@@ -2,9 +2,9 @@
 title: Accesso e distribuzione di frammenti di contenuto Guida di avvio rapido senza titolo
 description: L’API REST di Assets consente di gestire i frammenti di contenuto e l’API GraphQL consente una distribuzione semplice e senza precedenti del contenuto dei frammenti di contenuto.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,14 @@ Il resto di questa guida sarà incentrato sull&#39;accesso GraphQL e sulla distr
 
 Gli architetti delle informazioni dovranno progettare query per i loro endpoint di canale per distribuire i contenuti. Queste query in genere devono essere considerate solo una volta per endpoint per modello. Ai fini di questa guida introduttiva, sarà necessario crearne solo una.
 
-1. Accedi al AEM come Cloud Service e dal menu principale seleziona **Strumenti -> Risorse -> GraphQL**
-   * In alternativa, aprite la pagina direttamente in `https://<host>:<port>/content/graphiql.html`.
+<!-- Not in the UI yet - will need updating when it is -->
+<!--
+1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
+   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
+-->
+
+1. Accedi a AEM come Cloud Service e accedi all&#39;interfaccia GraphiQL:
+   * Esempio: `https://<host>:<port>/content/graphiql.html`.
 
 1. GraphiQL è un editor di query interno al browser per GraphQL. Potete utilizzarlo per creare query per recuperare i frammenti di contenuto e distribuirli direttamente come JSON.
    * Il pannello a sinistra consente di creare la query.
@@ -39,8 +45,9 @@ Gli architetti delle informazioni dovranno progettare query per i loro endpoint 
 1. Supponendo che il modello creato sia stato denominato `person` con i campi `firstName`, `lastName` e `position`, è possibile creare una semplice query per recuperare il contenuto del frammento di contenuto.
 
    ```text
-   query {
-     persons {
+   query 
+   {
+     personList {
        items {
          _path
          firstName
