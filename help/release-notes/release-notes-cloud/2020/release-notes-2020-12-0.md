@@ -2,9 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6ea94126d29a470820ee1dc39b239bb10951afac
+source-git-commit: 31e07090e4e3a265269eebce13857f88245788ee
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '691'
 ht-degree: 5%
 
 ---
@@ -74,3 +74,17 @@ La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.12.0 è il 
 ### Correzioni di bug {#crt-bug-fixes}
 
 * Diverse correzioni di bug eseguite sugli strumenti AEM Dispatcher Converter e Repository Modernizer. Fare riferimento a [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) e [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+
+### Data di rilascio {#release-date-ctt}
+
+La Data di rilascio per lo strumento di trasferimento dei contenuti v1.1.20 è il 08 gennaio 2021.
+
+### Novità in [!DNL Content Transfer Tool] {#what-is-new-ctt}
+
+* Gli utenti possono ora sapere se il token di accesso è scaduto passando il puntatore sull&#39;icona di stato nell&#39;interfaccia utente CTT (Content Transfer Tool). Inoltre, nell’interfaccia utente dei dettagli del set di migrazione, verrà loro notificato che non sono in grado di connettersi all’istanza del Cloud Service.
+
+### Correzioni di bug {#ctt-bug-fixes}
+
+* Lo stato dell&#39;interfaccia utente CTT (Content Transfer Tool) per un set di migrazione non è persistente e non è stato modificato dopo un periodo di inattività. Questo è stato corretto.
+* Se i registri non erano disponibili, l’opzione per visualizzare i registri era disabilitata. Questo problema è stato risolto ed è stato aggiunto un messaggio per segnalare all’utente i motivi della mancanza dei registri.
+* Lo stato dell&#39;interfaccia utente dello strumento di trasferimento dei contenuti mostrava *FAILED* quando l&#39;utente arrestava un&#39;assimilazione. È stato risolto il problema per visualizzare *STOPPED*.
