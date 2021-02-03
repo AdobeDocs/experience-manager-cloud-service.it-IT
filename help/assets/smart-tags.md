@@ -1,29 +1,54 @@
 ---
-title: Applicare tag automatici alle immagini con tag generati dall'interfaccia utente
-description: Applicate tag alle immagini utilizzando servizi intelligenti artificialmente che applicano tag aziendali contestuali e descrittivi utilizzando i servizi  [!DNL Adobe Sensei] .
+title: Assegnare automaticamente tag alle risorse con tag generati dall'interfaccia utente
+description: Assegnare tag alle risorse utilizzando servizi intelligenti artificialmente che applicano tag aziendali contestuali e descrittivi utilizzando il servizio [!DNL Adobe Sensei] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '2431'
+source-wordcount: '2557'
 ht-degree: 6%
 
 ---
 
 
-# Training Smart Content Service e assegnazione automatica di tag alle immagini {#train-service-tag-assets}
+# Aggiunta di smart tag alle risorse per eseguire ricerche più rapide {#smart-tag-assets-for-faster-search}
 
-Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare le risorse digitali. L’assegnazione dei tag alle risorse mediante un vocabolario controllato dalla tassonomia consente di individuare e recuperare facilmente le risorse tramite ricerche basate sui tag.
+Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare le risorse digitali. L’assegnazione di tag alle risorse mediante il vocabolario controllato dalla tassonomia consente di identificare e recuperare facilmente le risorse nelle ricerche.
 
 Rispetto ai vocabolari di lingua naturale, l’assegnazione di tag in base alla tassonomia aziendale consente di allineare le risorse all’attività aziendale e garantisce che le risorse più rilevanti vengano visualizzate nelle ricerche. Ad esempio, un produttore di auto può assegnare tag alle immagini di un&#39;auto con nomi di modelli in modo che vengano visualizzate solo le immagini rilevanti quando viene effettuata una ricerca per progettare una campagna promozionale.
 
-In background, gli Smart Tags utilizzano un framework di intelligenza artificiale di [ Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) per formare il proprio algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
+In background, gli Smart Tags utilizzano il framework artificialmente intelligente di [ Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) per formare il proprio algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-Per utilizzare i tag avanzati, effettuate le seguenti operazioni:
+## Tipi di risorse supportati {#smart-tags-supported-file-formats}
+
+I tag avanzati vengono applicati solo ai tipi di file supportati che generano rappresentazioni in formato JPG e PNG. La funzionalità è supportata per i seguenti tipi di risorse:
+
+| Immagini (tipi MIME) | Risorse basate su testo (formati di file) | Risorse video (formati di file e codec) |
+|----|-----|------|
+| image/jpeg | TXT | MP4 (H264/AVC) |
+| image/tiff | RTF | MKV (H264/AVC) |
+| image/png | DITA | MOV (H264/AVC, Motion JPEG) |
+| image/bmp | XML | AVI (index4) |
+| image/gif | JSON | FLV (H264/AVC, vp6f) |
+| image/pjpeg | DOC | WMV (WMV2) |
+| image/x-portatili-anymap | DOCX |  |
+| image/x-portatili-bitmap | PDF |  |
+| immagine/x-portabile-grigio | CSV |  |
+| image/x-portatile-pixmap | PPT |  |
+| image/x-rgb | PPTX |  |
+| image/x-xbitmap | VTT |  |
+| image/x-xpixmap | SRT |  |
+| image/x-icon |  |  |
+| image/photoshop |  |  |
+| image/x-photoshop |  |  |
+| image/psd |  |  |
+| image/vnd.adobe.photoshop |  |  |
+
+[!DNL Experience Manager] per impostazione predefinita, aggiunge automaticamente i tag avanzati alle risorse basate su testo e ai video. Per aggiungere automaticamente tag avanzati alle immagini, effettuate le seguenti operazioni.
 
 * [ [!DNL Adobe Experience Manager] Integrare con Adobe Developer Console](#integrate-aem-with-aio).
 * [Informazioni sui modelli e sulle linee guida](#understand-tag-models-guidelines) dei tag.
@@ -31,7 +56,9 @@ Per utilizzare i tag avanzati, effettuate le seguenti operazioni:
 * [Assegnare tag alle risorse](#tag-assets) digitali.
 * [Gestire tag e ricerche](#manage-smart-tags-and-searches).
 
-I tag avanzati sono applicabili solo ai clienti [!DNL Adobe Experience Manager Assets]. I tag avanzati sono disponibili per l&#39;acquisto come componente aggiuntivo di [!DNL Experience Manager].
+>[!TIP]
+>
+>I tag avanzati sono applicabili solo ai clienti [!DNL Adobe Experience Manager Assets]. I tag avanzati sono disponibili per l&#39;acquisto come componente aggiuntivo di [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -92,7 +119,7 @@ Le immagini nel set di formazione devono essere conformi alle seguenti linee gui
    * un modello di tag che include modelli di auto rilasciati nel 2019 e 2020.
    * modelli di tag multipli che includono gli stessi pochi modelli di auto.
 
-**Immagini utilizzate per la formazione**: Potete usare le stesse immagini per formare diversi modelli di tag. Tuttavia, non associano un’immagine a più tag in un modello di tag. È quindi possibile assegnare alla stessa immagine tag diversi appartenenti a diversi modelli di tag.
+**Immagini utilizzate per la formazione**: Potete usare le stesse immagini per formare diversi modelli di tag. Tuttavia, non associate un’immagine a più tag in un modello di tag. È possibile assegnare alla stessa immagine tag diversi appartenenti a modelli di tag diversi.
 
 Non potete annullare la formazione. Le linee guida di cui sopra dovrebbero aiutarvi a scegliere buone immagini da formare.
 
@@ -125,7 +152,7 @@ Per verificare se il servizio Smart Tags è addestrato sui tag nel set di risors
 1. Specifica un titolo e una descrizione per il rapporto. In **[!UICONTROL Pianifica rapporto]**, lascia selezionata l’opzione **[!UICONTROL Now (Ora)]**. Se vuoi pianificare il rapporto per un momento successivo, seleziona **[!UICONTROL Later (Più tardi)]** e specifica una data e un’ora. Quindi, fare clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
 1. Nella pagina **[!UICONTROL Rapporti su risorse]**, seleziona il rapporto generato. Per visualizzare il rapporto, fare clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
 1. Rivedete i dettagli del rapporto. Il rapporto mostra lo stato di formazione per i tag che hai appreso. Il colore verde nella colonna **[!UICONTROL Stato formazione]** indica che il servizio Smart Tags è stato addestrato per il tag. Se invece del verde è presente il colore giallo, il training del servizio di contenuti avanzati non è stato completato per un tag specifico. In questo caso, aggiungi altre immagini che contengono il tag in questione ed esegui il flusso di lavoro di formazione per completare il training del servizio per quel tag. Se i tag non vengono visualizzati in questo rapporto, eseguite di nuovo il flusso di lavoro di formazione per questi tag.Tags
-1. Per scaricare il rapporto, selezionatelo dall&#39;elenco e fate clic su **[!UICONTROL Scarica]** dalla barra degli strumenti. Il rapporto viene scaricato come un foglio di calcolo [!DNL Microsoft Excel].
+1. Per scaricare il rapporto, selezionatelo dall&#39;elenco e fate clic su **[!UICONTROL Scarica]** dalla barra degli strumenti. Il rapporto viene scaricato come un [!DNL Microsoft Excel] foglio di calcolo.
 
 ## Assegnare tag alle risorse {#tag-assets}
 
@@ -154,15 +181,17 @@ Dopo aver preparato il servizio Smart Tags, potete attivare il flusso di lavoro 
    ![start_workflow](assets/start_workflow.png)
 
 1. Selezionate il flusso di lavoro **[!UICONTROL DAM Smart Tag Assets]** e specificate un titolo per il flusso di lavoro.
-1. Fare clic su **[!UICONTROL Start]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e verificate i tag necessari per verificare se i tag delle risorse sono stati impostati correttamente. Per informazioni dettagliate, vedere [Gestione di smart tag](#manage-smart-tags-and-searches).
+1. Fare clic su **[!UICONTROL Start]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e verificate i tag necessari per verificare che i tag delle risorse siano stati impostati correttamente. Per informazioni dettagliate, vedere [Gestione di smart tag](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->Nei cicli di assegnazione dei tag successivi, solo le risorse modificate dispongono di tag di nuova formazione. Tuttavia, vengono assegnati tag anche alle risorse inalterate se lo spazio tra l’ultimo ciclo di tag e quello corrente per il flusso di lavoro dei tag supera le 24 ore. Per i flussi di lavoro con tag periodici, le risorse inalterate vengono contrassegnate con tag quando l’intervallo di tempo supera i 6 mesi.
+>Nei successivi cicli di assegnazione dei tag, solo le risorse modificate vengono nuovamente etichettate con tag di nuova formazione. Tuttavia, vengono assegnati tag anche alle risorse inalterate se lo spazio tra l’ultimo ciclo di tag e quello corrente per il flusso di lavoro dei tag supera le 24 ore. Per i flussi di lavoro con tag periodici, le risorse inalterate vengono contrassegnate con tag quando l’intervallo di tempo supera i 6 mesi.
 
 ### Assegnare tag alle risorse caricate {#tag-uploaded-assets}
 
  Experience Manager può assegnare automaticamente i tag alle risorse che gli utenti caricano in DAM. A questo scopo, gli amministratori configurano un flusso di lavoro per aggiungere un passaggio disponibile alle risorse degli smart tag. Consultate [come abilitare i tag avanzati per le risorse caricate](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+
+<!-- TBD: Text-based assets are automatically smart tagged. -->
 
 ## Gestione di smart tag e ricerche di risorse {#manage-smart-tags-and-searches}
 
@@ -209,6 +238,8 @@ Gli smart tag avanzati si basano su modelli di apprendimento delle immagini del 
 * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie sottili o regolari.
 * Impossibile identificare i tag in base a piccoli pattern/parti di un’immagine. Ad esempio, i logo delle T-shirt.
 * I tag sono supportati nelle lingue supportate  Experience Manager. Per un elenco delle lingue, consultate [Note sulla versione di Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+
+<!-- TBD: Add limitations related to text-based assets. -->
 
 Per cercare le risorse con gli smart tag (regolari o avanzati), usate la ricerca Omnisearch delle risorse (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
 
