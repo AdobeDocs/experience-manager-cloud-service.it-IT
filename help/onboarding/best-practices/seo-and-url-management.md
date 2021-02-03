@@ -1,8 +1,8 @@
 ---
 title: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
-seo-title: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
+description: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+source-git-commit: d1e789527bed9e846dfc265c757889fcd96feaf5
 workflow-type: tm+mt
 source-wordcount: '3124'
 ht-degree: 100%
@@ -47,7 +47,6 @@ Ecco alcuni suggerimenti di carattere generale su come creare URL per l’ottimi
    * Se utilizzi selettori in una pagina, scegli quelli che forniscono valori semantici.
    * Se un utente non riesce a interpretare l’URL, non può farlo nemmeno un motore di ricerca.
    * Ad esempio:
-
       `mybrand.com/products/product-detail.product-category.product-name.html`
 è da preferirsi a 
 `mybrand.com/products/product-detail.1234.html`
@@ -365,8 +364,8 @@ Per generare una mappa del sito a livello di programmazione, registra un servlet
 >
 >Puoi registrare un servlet Sling in modo che ascolti il selettore `sitemap` con l’estensione `xml`. Il servlet elaborerà quindi la richiesta ogni volta che viene richiesto un URL che termina con
 >    `/<path-to>/page.sitemap.xml`
->Puoi così ottenere la risorsa desiderata dalla richiesta e generare una mappa del sito a partire da tale punto nella struttura del contenuto utilizzando le API JCR.
->Il vantaggio di un simile approccio è che più siti vengono gestiti dalla stessa istanza. Con una richiesta a `/content/siteA.sitemap.xml` viene generata una mappa del sito per `siteA`, mentre con una richiesta a `/content/siteB.sitemap.xml` viene generata una mappa del sito per `siteB` senza dover scrivere codice aggiuntivo.
+Puoi così ottenere la risorsa desiderata dalla richiesta e generare una mappa del sito a partire da tale punto nella struttura del contenuto utilizzando le API JCR.
+Il vantaggio di un simile approccio è che più siti vengono gestiti dalla stessa istanza. Con una richiesta a `/content/siteA.sitemap.xml` viene generata una mappa del sito per `siteA`, mentre con una richiesta a `/content/siteB.sitemap.xml` viene generata una mappa del sito per `siteB` senza dover scrivere codice aggiuntivo.
 
 ### Creazione di reindirizzamenti 301 per gli URL legacy {#creating-redirects-for-legacy-urls}
 
