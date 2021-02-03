@@ -1,10 +1,10 @@
 ---
 title: Applicazione di tag avanzati alle risorse video
-description: Le risorse video con tag avanzati automatizzano i tag delle risorse applicando tag contestuali e descrittivi tramite  servizi Adobe Sensei.
+description: ' Experience Manager aggiunge automaticamente tag avanzati contestuali e descrittivi ai video utilizzando [!DNL Adobe Sensei].'
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Assegnare tag avanzati alle risorse video {#video-smart-tags}
 
-La crescente necessità di nuovi contenuti richiede un impegno manuale ridotto per offrire esperienze digitali coinvolgenti in tempi brevi. [!DNL Adobe Experience Manager] come  [!DNL Cloud Service] supporta l’assegnazione automatizzata di tag alle risorse video assistite da intelligenza artificiale. Assegnare manualmente i tag ai video può richiedere molto tempo. Tuttavia,  funzione di smart tag video basata su Adobe Sensei utilizza modelli di intelligenza artificiale per analizzare i contenuti video e aggiungere tag alle risorse video. In questo modo, gli utenti DAM possono dedicare meno tempo alla distribuzione di esperienze avanzate ai propri clienti.  Adobe  servizio di machine learning genera due set di tag per un video. Mentre, un set corrisponde a oggetti, scene e attributi nel video; l&#39;altro insieme riguarda azioni quali bere, correre e fare jogging.
+La crescente necessità di nuovi contenuti richiede un impegno manuale ridotto per offrire esperienze digitali coinvolgenti in tempi brevi. [!DNL Adobe Experience Manager] come  [!DNL Cloud Service] supporta l’assegnazione automatica di tag alle risorse video mediante l’intelligenza artificiale. Assegnare manualmente i tag ai video può richiedere molto tempo. Tuttavia, [!DNL Adobe Sensei] la funzione di smart tag video attivata utilizza modelli di intelligenza artificiale per analizzare i contenuti video e aggiungere tag alle risorse video. In questo modo, gli utenti DAM possono dedicare meno tempo alla distribuzione di esperienze avanzate ai propri clienti.  Adobe  servizio di machine learning genera due set di tag per un video. Mentre, un set corrisponde a oggetti, scene e attributi nel video; l&#39;altro insieme riguarda azioni quali bere, correre e fare jogging.
 
-I formati di file video (e i relativi codec) supportati per l’assegnazione di smart tag sono MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (index4), FLV (H264/AVC, vp6f) e WMV 2). Inoltre, la funzione consente di aggiungere tag ai video fino a 300 MB. I tag automatici delle risorse video vengono utilizzati come elaborazione standard delle risorse (insieme alla creazione di miniature ed estrazione di metadati) dopo il caricamento di un video o quando viene attivata una nuova elaborazione. Gli smart tag vengono visualizzati in ordine decrescente in base al [punteggio di confidenza](#confidence-score-video-tag) nella risorsa [!UICONTROL Properties]. Per impostazione predefinita, i tag video sono abilitati in [!DNL Adobe Experience Manager] come [!DNL Cloud Service]. Tuttavia, potete [rifiutare l&#39;assegnazione di tag avanzati video](#opt-out-video-smart-tagging) in una cartella.
+L’assegnazione automatica di tag alle risorse video avviene come elaborazione standard delle risorse (con la creazione di miniature ed estrazione di metadati) dopo il caricamento di un video o quando viene attivata una nuova elaborazione. Gli smart tag vengono visualizzati in ordine decrescente in base al [punteggio di confidenza](#confidence-score-video-tag) nella risorsa [!UICONTROL Properties]. Per impostazione predefinita, i tag video sono abilitati in [!DNL Adobe Experience Manager] come [!DNL Cloud Service]. Tuttavia, potete [rifiutare l&#39;assegnazione di tag avanzati video](#opt-out-video-smart-tagging) in una cartella.
 
 ## Assegnazione di tag avanzati ai video durante il caricamento {#smart-tag-assets-on-ingestion}
 
-Quando [caricate risorse video](add-assets.md#upload-assets) in [!DNL Adobe Experience Manager] come [!DNL Cloud Service], i video vengono sottoposti a ![elaborazione](assets/do-not-localize/assetprocessing.png). Al termine dell&#39;elaborazione, vedere la scheda [!UICONTROL Base] della risorsa [!UICONTROL Proprietà]. I tag avanzati vengono aggiunti automaticamente al video in [!UICONTROL Smart Tags].  Asset compute Service utilizza  Adobe Sensei per creare questi smart tag.
+Quando [caricate risorse video](add-assets.md#upload-assets) in [!DNL Adobe Experience Manager] come [!DNL Cloud Service], i video vengono elaborati. Al termine dell&#39;elaborazione, vedere la scheda [!UICONTROL Base] della risorsa [!UICONTROL Proprietà]. I tag avanzati vengono aggiunti automaticamente al video in [!UICONTROL Smart Tags]. I microservizi di risorse si basano su [!DNL Adobe Sensei] per creare questi smart tag.
 
 ![I tag avanzati vengono aggiunti ai video e visualizzati nella scheda Base delle proprietà della risorsa](assets/smart-tags-added-to-videos.png)
 
@@ -43,6 +43,8 @@ Per applicare tag smart alle risorse video o alle cartelle (comprese le sottocar
 1. Selezionate l’intera cartella o specifiche risorse video.
 
 1. Selezionare l&#39;icona ![Rielabora risorse](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Rielabora risorse] e selezionare l&#39;opzione [!UICONTROL Processo completo].
+
+<!-- TBD: Limit size -->
 
 ![Rielaborare le risorse per aggiungere tag ai video nell&#39;archivio DAM esistente](assets/reprocess.gif)
 
@@ -123,13 +125,13 @@ Per aggiungere la configurazione OSGI del punteggio di confidenza al progetto di
 
 ## Limitazioni  {#video-smart-tagging-limitations}
 
-* Non è ancora supportata la formazione di Smart Tag Service (o Enhanced Smart Tags) per l’assegnazione di tag alle risorse video.
+* Non potete addestrare il servizio che applica tag avanzati ai video utilizzando video specifici. Funziona con le impostazioni [!DNL Adobe Sensei] predefinite.
 
-* L’avanzamento dei tag non viene visualizzato.
+* L&#39;avanzamento dei tag non viene visualizzato.
 
-* Solo i video di dimensioni non superiori a 300 MB sono adatti per l’assegnazione di tag. Il servizio  Adobe Sensei consente di aggiungere tag ai video che soddisfano questi criteri e di ignorare l’assegnazione di tag ad altri video in una cartella.
+* I tag automatici vengono assegnati solo ai video di dimensioni inferiori a 300 MB. Il servizio [!DNL Adobe Sensei] ignora i file video di dimensioni maggiori.
 
-* Solo i video in questi formati di file (e codec supportati): MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (index4), FLV (H264/AVC, vp6f) e WMV (WMV2)—può essere taggato.
+* Solo i video nei formati di file e i codec supportati menzionati in [Smart Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats) sono contrassegnati con tag.
 
 >[!MORELIKETHIS]
 >
