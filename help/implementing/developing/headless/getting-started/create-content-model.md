@@ -2,9 +2,9 @@
 title: Guida rapida alla creazione di modelli di frammenti di contenuto senza titolo
 description: I modelli di frammento di contenuto definiscono la struttura del contenuto che verrà creato e distribuito utilizzando AEM funzionalità headless.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Un architetto dell&#39;informazione eseguirebbe queste attività solo sporadicam
 
    ![La cartella models](../assets/models-folder.png)
 1. Tocca o fai clic su **Crea**.
-1. Fornire un **Titolo modello** e **Descrizione**.
+1. Fornire un **Titolo modello**, **Tag** e **Descrizione**. È inoltre possibile selezionare o deselezionare **Abilita modello** per controllare se il modello è immediatamente attivato al momento della creazione.
 
    ![Creare un modello](../assets/models-create.png)
 1. Nella finestra di conferma, toccate o fate clic su **Apri** per configurare il modello.
@@ -45,7 +45,7 @@ Un architetto dell&#39;informazione eseguirebbe queste attività solo sporadicam
 1. Al termine, toccate o fate clic su **Salva**. Il modello appena creato viene salvato in modalità **Bozza**.
 
    ![Modello in modalità bozza](../assets/models-draft.png)
-1. Per utilizzarlo, il modello deve essere abilitato. Selezionare il modello appena creato, quindi toccare o fare clic su **Abilita**.
+1. Il modello deve essere abilitato per poterlo utilizzare (se non è già abilitato). Selezionare il modello appena creato, quindi toccare o fare clic su **Abilita**.
 
    ![Abilitazione del modello](../assets/models-enable.png)
 1. Per confermare l&#39;abilitazione del modello, toccate o fate clic su **Abilita** nella finestra di dialogo di conferma.
