@@ -2,9 +2,9 @@
 title: Adobe Experience Manager come Cloud Service Supporto dei frammenti di contenuto nell'API HTTP Assets
 description: Informazioni su Adobe Experience Manager come Cloud Service Supporto dei frammenti di contenuto nell'API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: 42d7ac4fc99ef45c26c23d68ddfe2a5ddf7f62fd
+source-git-commit: 8563a87bdfc251166590210993b7d9e4cbdee385
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1931'
 ht-degree: 2%
 
 ---
@@ -305,6 +305,7 @@ Esistono alcuni limiti:
 
 * **I modelli di frammento di contenuto non sono attualmente supportati**: non possono essere letti o creati. Per poter creare un nuovo frammento di contenuto o aggiornarne uno esistente, gli sviluppatori devono conoscere il percorso corretto del modello di frammento di contenuto. Attualmente l’unico metodo per ottenere una panoramica di questi metodi è tramite l’interfaccia utente di amministrazione.
 * **I riferimenti vengono ignorati**. Al momento non è disponibile alcun controllo per verificare se a un frammento di contenuto esistente viene fatto riferimento. Pertanto, ad esempio, l&#39;eliminazione di un frammento di contenuto potrebbe causare problemi in una pagina che contiene un riferimento al frammento di contenuto eliminato.
+* **JSON** tipo di datiL&#39;output REST API del  *tipo di dati* JSON è attualmente basato su  *stringhe*.
 
 ## Codici di stato e messaggi di errore {#status-codes-and-error-messages}
 
