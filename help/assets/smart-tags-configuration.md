@@ -3,9 +3,9 @@ title: Tag avanzati migliorati
 description: Applica tag aziendali contestuali e descrittivi utilizzando i servizi di intelligenza artificiale e machine learning di Adobe Sensei per migliorare l’individuazione delle risorse e velocizzare la realizzazione dei contenuti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 97%
 
 ---
@@ -25,7 +25,7 @@ La funzionalità Tag avanzati è acquistabile come componente aggiuntivo per [!D
 
 >[!IMPORTANT]
 >
->Le nuove [!DNL Experience Manager Assets] implementazioni sono integrate con [!DNL Adobe Developer Console] per impostazione predefinita. Consente di configurare più rapidamente la funzionalità smart tag. Per le distribuzioni esistenti, gli amministratori seguono i passaggi indicati di seguito per configurarle.
+>Le nuove [!DNL Experience Manager Assets] implementazioni sono integrate con [!DNL Adobe Developer Console] per impostazione predefinita. Consente di configurare più rapidamente la funzionalità smart tag. Per configurare l&#39;integrazione, gli amministratori devono attenersi alla procedura riportata di seguito.
 
 ## Integrare con Adobe Developer Console {#aio-integration}
 
