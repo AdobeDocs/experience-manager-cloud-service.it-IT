@@ -2,9 +2,9 @@
 title: Guida rapida alla creazione di frammenti di contenuto senza titolo
 description: I frammenti di contenuto consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina che possono essere distribuiti senza problemi da AEM.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: fa2fee3139acd60ea96222752785cf397978a2bc
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Gli autori dei contenuti creeranno un numero qualsiasi di frammenti di contenuto
 1. Fornire i dettagli del frammento di contenuto nell&#39;Editor frammento di contenuto.
 
    ![Editor frammento di contenuto ](../assets/content-fragment-edit.png)
-1. Toccate o fate clic su **Salva**.
+1. Toccate o fate clic su **Salva e chiudi**.
 
 I frammenti di contenuto possono fare riferimento ad altri frammenti di contenuto, consentendo se necessario una struttura di contenuto nidificata.
 
