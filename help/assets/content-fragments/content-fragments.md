@@ -2,21 +2,15 @@
 title: Utilizzo di frammenti di contenuto
 description: Scoprite come i frammenti di contenuto in Adobe Experience Manager (AEM) come Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2027'
 ht-degree: 6%
 
 ---
 
 
 # Utilizzo di frammenti di contenuto{#working-with-content-fragments}
-
->[!CAUTION]
->
->L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto è disponibile su richiesta.
->
->Per abilitare l&#39;API per il AEM come programma di Cloud Service, contattate il supporto di [ Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support).
 
 Con Adobe Experience Manager (AEM) come Cloud Service, i frammenti di contenuto consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Consentono di preparare i contenuti pronti per l’uso in più posizioni/su più canali.
 
@@ -30,12 +24,9 @@ I frammenti di contenuto contengono contenuto strutturato:
    * Complesso
       * Combinazione di numerosi campi con diversi tipi di dati, tra cui testo, numero, valore booleano, dati e ora.
       * Può essere utilizzato per preparare contenuti più strutturati per l’authoring delle pagine o per la distribuzione all’applicazione.
-
-<!--
-  * Nested
-    * The reference data types available allow you to nest your content.
-    * Tends to be used for delivery to your application.
--->
+   * Nidificato
+      * I tipi di dati di riferimento disponibili consentono di nidificare il contenuto.
+      * Tende a essere utilizzato per la consegna all&#39;applicazione.
 
 I frammenti di contenuto possono essere consegnati anche in formato JSON, utilizzando le funzionalità di esportazione JSON (Sling Model) dei componenti core di AEM. Questo modulo di consegna:
 
@@ -78,10 +69,7 @@ I frammenti di contenuto consentono di:
 * Creazione di pool di contenuti per una serie di canali.
 * Progettare varianti di contenuto per canali specifici.
 * Aggiungete immagini al testo inserendo risorse (frammenti multimediali diversi).
-
-<!--
-* Create nested content to reflect the complexity of your data.
--->
+* Crea contenuti nidificati per riflettere la complessità dei dati.
 
 Questi frammenti di contenuto possono quindi essere assemblati per fornire esperienze su diversi canali.
 
@@ -121,11 +109,9 @@ Insieme alle funzionalità di esportazione JSON AEM componenti core, questo cont
 >
 >AEM supporta anche la conversione del contenuto del frammento.
 
-<!--
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
--->
+>AEM supporta anche la conversione del contenuto del frammento. Per ulteriori informazioni, vedere [Traduzione di risorse](/help/assets/translate-assets.md).
 
 ## Tipo di contenuto {#content-type}
 
@@ -306,6 +292,12 @@ Un frammento, con i relativi elementi e varianti, può essere utilizzato per cre
 
 ### Esempio WKND {#wknd-sample}
 
-Gli esempi [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) sono forniti per aiutarvi a conoscere AEM come Cloud Service. Include frammenti di esempio, che possono essere visualizzati in:
+Gli esempi [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) sono forniti per aiutarvi a conoscere AEM come Cloud Service.
 
-`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
+Il progetto WKND include:
+
+* Modelli di frammenti di contenuto disponibili in:
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* Frammenti di contenuto (e altro contenuto) disponibili in:
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
