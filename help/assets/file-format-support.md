@@ -3,9 +3,9 @@ title: Formati di file supportati e tipi MIME
 description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '806'
 ht-degree: 10%
 
 ---
@@ -60,24 +60,24 @@ La legenda seguente descrive il livello di supporto.
 | GIF | AND | AND | AND | AND |
 | JPEG | AND | AND | AND | AND |
 | PNG | AND | AND | AND | AND |
-| TIFF | AND | AND | AND | - |
-| SVG | AND | - | AND | AND |
-| SGI | AND | AND | AND | AND |
 | RGB | AND | AND | AND | AND |
 | RGBA | AND | AND | AND | AND |
+| SGI | AND | AND | AND | AND |
+| SVG | AND | - | AND | AND |
+| TIFF | AND | AND | AND | - |
 
 ## Formati immagine in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | Formato | Carica (formato di input) | Creare un predefinito per immagini (formato di output) | Anteprima rappresentazione dinamica | Distribuzione di rappresentazioni dinamiche | Download della rappresentazione dinamica |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | AND | AND | AND | AND | AND |
-| GIF | AND | AND | AND | AND | AND |
-| TIFF | AND | AND | AND | AND | AND |
-| JPEG | AND | AND | AND | AND | AND |
 | BMP | AND | - | - | - | - |
-| PSD   mso | AND | - | - | - | - |
 | EPS | AND | AND | AND | AND | AND |
+| GIF | AND | AND | AND | AND | AND |
+| JPEG | AND | AND | AND | AND | AND |
 | PICT | AND | - | - | - | - |
+| PNG | AND | AND | AND | AND | AND |
+| PSD   mso | AND | - | - | - | - |
+| TIFF | AND | AND | AND | AND | AND |
 
 † L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da [!DNL Adobe Photoshop] e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
 
@@ -92,7 +92,7 @@ I seguenti sottotipi di formati di file immagine raster non supportati in [!DNL 
 
 ## Formati 3D {#support-3d-formats}
 
-È supportato il seguente elenco di formati 3D.
+Sono supportati i seguenti formati 3D.
 
 Vedere anche [Utilizzo di risorse 3D in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
@@ -143,24 +143,24 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 
 | Formato file | Generazione delle miniature | Estrazione full-text | Larghezza/Altezza | Gestione dei metadati | [Risorse collegate](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | AND | AND | AND | AND | AND |
-| DOCX | AND | AND | AND | AND | AND |
 | DOC | - | - | - | AND | AND |
-| PPTX | AND | AND | AND | AND | AND |
-| PPT | - | - | - | AND | AND |
-| XLSX | AND | AND | AND | AND | AND |
-| XLS | - | - | - | AND | AND |
+| DOCX | AND | AND | AND | AND | AND |
+| EPUB | - | AND | - | - | - |
+| HTML | - | AND | - | AND | AND |
 | ODF | AND | AND | AND | - | - |
-| OFG | AND | AND | AND | - | - |
 | ODM | AND | AND | AND | - | - |
 | ODP | AND | AND | AND | - | - |
 | ODS | AND | AND | AND | - | - |
 | ODT | AND | AND | AND | AND | AND |
-| EPUB | - | AND | - | - | - |
-| HTML | - | AND | - | AND | AND |
+| OFG | AND | AND | AND | - | - |
+| PDF | AND | AND | AND | AND | AND |
+| PPT | - | - | - | AND | AND |
+| PPTX | AND | AND | AND | AND | AND |
 | PS | - | - | AND | - | - |
 | RTF | - | AND | - | AND | AND |
 | TXT | - | AND | - | AND | AND |
+| XLS | - | - | - | AND | AND |
+| XLSX | AND | AND | AND | AND | AND |
 | XML | - | AND | - | - | - |
 
 ## Formati di documento in [!DNL Dynamic Media] {#document-support-dynamic-media}
@@ -168,8 +168,8 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 | Formato | Carica (formato di input) | Creare un predefinito per immagini (formato di output) | Anteprima rappresentazione dinamica | Distribuzione di rappresentazioni dinamiche | Download della rappresentazione dinamica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | AND | - | - | - | - |
-| PDF | AND | AND | AND | AND | AND |
 | INDD | AND | - | - | - | - |
+| PDF | AND | AND | AND | AND | AND |
 
 ## Formati video {#video-formats}
 
@@ -191,6 +191,7 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 | MPEG | AND | AND | AND |
 | MPG | AND | AND | AND |
 | MTS | AND | - | AND |
+| MXF | AND | - | AND |
 | OGV | AND | - | AND |
 | QT | AND | - | AND |
 | R3D | - | AND | AND |
