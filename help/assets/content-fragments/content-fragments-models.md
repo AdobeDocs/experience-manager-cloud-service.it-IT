@@ -2,21 +2,15 @@
 title: Modelli per frammenti di contenuto
 description: I modelli di frammenti di contenuto vengono utilizzati per creare frammenti di contenuto con contenuto strutturato.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 10%
+source-wordcount: '2156'
+ht-degree: 7%
 
 ---
 
 
 # Modelli per frammenti di contenuto {#content-fragment-models}
-
->[!CAUTION]
->
->L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto è disponibile su richiesta.
->
->Per abilitare l&#39;API per il AEM come programma di Cloud Service, contattate il supporto di [ Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support).
 
 I modelli di frammenti di contenuto definiscono la struttura del contenuto per i [frammenti di contenuto](/help/assets/content-fragments/content-fragments.md).
 
@@ -25,6 +19,7 @@ Per utilizzare i modelli di frammenti di contenuto, effettuare le seguenti opera
 1. [Abilitare la funzionalità del modello di frammento di contenuto per l’istanza](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Creare](#creating-a-content-fragment-model) e  [configurare](#defining-your-content-fragment-model) i modelli di frammenti di contenuto
 1. [Abilitare i ](#enabling-disabling-a-content-fragment-model) modelli di frammenti di contenuto per la creazione di frammenti di contenuto da utilizzare durante la creazione di frammenti di contenuto
+1. [Consenti modelli di frammenti di contenuto nelle ](#allowing-content-fragment-models-assets-folder) cartelle Risorse richieste configurando  **i criteri**.
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
@@ -36,7 +31,7 @@ Per utilizzare i modelli di frammenti di contenuto, effettuare le seguenti opera
    >
    >Se l&#39;utilizzo di [modelli di frammento di contenuto non è stato abilitato](/help/assets/content-fragments/content-fragments-configuration-browser.md), l&#39;opzione **Crea** non sarà disponibile.
 
-1. Specifica il **Titolo modello**. È inoltre possibile aggiungere **Tag** e **Descrizione** se necessario.
+1. Specifica il **Titolo modello**. È inoltre possibile aggiungere **Tag**, una **Descrizione**, quindi selezionare **Abilita modello** per [abilitare il modello](#enabling-disabling-a-content-fragment-model), se necessario.
 
    ![titolo e descrizione](assets/cfm-models-02.png)
 
@@ -64,70 +59,35 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
    >
    >Quando un campo è **obbligatorio**, l’**Etichetta** indicata nel riquadro a sinistra sarà contrassegnata con un asterisco (*****).
 
+   ![proprietà](assets/cfm-models-03.png)
+
 1. **Aggiunta di un campo**
 
-   * Trascinare un tipo di dati richiesto nella posizione desiderata per un campo.
+   * Trascinare un tipo di dati richiesto nella posizione desiderata per un campo:
+
+      ![tipo di dati su campo](assets/cfm-models-04.png)
 
    * Una volta aggiunto un campo al modello, il pannello a destra mostrerà le **Proprietà** che possono essere definite per quel particolare tipo di dati. Qui è possibile definire i requisiti necessari per tale campo.
-Molte proprietà sono autoesplicative, per ulteriori dettagli vedere [Proprietà](#properties).
+
+      * Molte proprietà sono autoesplicative, per ulteriori dettagli vedere [Proprietà](#properties).
+      * Digitando una **etichetta campo** si completerà automaticamente il **nome proprietà**, se vuoto, e sarà possibile aggiornarlo manualmente in seguito.
+
+      Esempio:
+
+      ![proprietà del campo](assets/cfm-models-05.png)
+
 
 1. **Rimozione di un campo**
 
    Selezionate il campo desiderato, quindi toccate o fate clic sull&#39;icona del cestino. Viene richiesto di confermare l’operazione.
 
-1. Aggiungete tutti i campi obbligatori e definite le relative proprietà, a seconda delle necessità.
+   ![rimuovere](assets/cfm-models-06.png)
 
-1. Selezionare **Save** per mantenere la definizione.
-
-<!--
-## Defining your Content Fragment Model {#defining-your-content-fragment-model}
-
-The content fragment model effectively defines the structure of the resulting content fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
-
->[!CAUTION]
->
->Editing an existing content fragment model can impact dependent fragments.
-
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-
-1. Navigate to the folder holding your content fragment model.
-1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
-
-   Once open the model editor shows:
-
-    * left: fields already defined
-    * right: **Data Types** available for creating fields (and **Properties** for use once fields have been created)
-
-   >[!NOTE]
-   >
-   >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
-
-   ![properties](assets/cfm-models-03.png)
-
-1. **To Add a Field**
-
-    * Drag a required data type to the required location for a field:
-
-      ![data type to field](assets/cfm-models-04.png)
-
-    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
-      Many properties are self-explanatory, for additional details see [Properties](#properties).
-      For example:
-
-      ![field properties](assets/cfm-models-05.png)
-
-1. **To Remove a Field**
-
-   Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
-
-   ![remove](assets/cfm-models-06.png)
-
-1. Add all required fields, and define the related properties, as required. For example:
+1. Aggiungete tutti i campi obbligatori e definite le relative proprietà, a seconda delle necessità. Esempio:
 
    ![save](assets/cfm-models-07.png)
 
-1. Select **Save** to persist the definition.
--->
+1. Selezionare **Save** per mantenere la definizione.
 
 ## Tipi di dati {#data-types}
 
@@ -149,19 +109,16 @@ The content fragment model effectively defines the structure of the resulting co
    * Consente agli autori dei frammenti di accedere e selezionare le aree dei tag
 * **Riferimento contenuto**
    * riferimenti ad altri contenuti di qualsiasi tipo; può essere utilizzato per [creare contenuto nidificato](#using-references-to-form-nested-content)
-
-<!--
-* **Fragment Reference**
-  * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
-  * The data type can be configured to allow fragment authors to:
-    * Edit the referenced fragment directly.
-    * Create a new content fragment, based on the appropriate model  
-* **JSON Object**
-  * Allows the content fragment author to enter JSON syntax into the corresponding elements of a fragment. 
-    * To allow AEM to store direct JSON that you have copy/pasted from another service.
-    * The JSON will be passed through, and output as JSON in GraphQL.
-    * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
--->
+* **Riferimento frammento**
+   * Riferimenti ad altri frammenti di contenuto; può essere utilizzato per [creare contenuto nidificato](#using-references-to-form-nested-content)
+   * Il tipo di dati può essere configurato per consentire agli autori dei frammenti di:
+      * Modificare direttamente il frammento a cui viene fatto riferimento.
+      * Creare un nuovo frammento di contenuto, in base al modello appropriato
+* **Oggetto JSON**
+   * Consente all&#39;autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
+      * Per consentire AEM memorizzare JSON diretto che hai copiato/incollato da un altro servizio.
+      * Il JSON verrà passato e inviato come JSON in GraphQL.
+      * Include l&#39;evidenziazione della sintassi JSON, la compilazione automatica e l&#39;evidenziazione degli errori nell&#39;editor dei frammenti di contenuto.
 
 ## Proprietà {#properties}
 
@@ -187,15 +144,26 @@ ValidationBasic è disponibile tramite meccanismi quali la proprietà  **** Requ
 
    La modifica del **Tipo predefinito** in un modello per frammenti di contenuto avrà effetto solo su un frammento esistente correlato, una volta che il frammento è stato aperto nell’editor e successivamente salvato.
 
-<!--
-* **Translatable**
-  Checking the "Translatable" checkbox on a field in CF model editor will
+* ****
+UniqueContent (per il campo specifico) deve essere univoco in tutti i frammenti di contenuto creati dal modello corrente.
 
-  * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+   Questo consente di impedire agli autori di contenuti di ripetere il contenuto già aggiunto in un altro frammento dello stesso modello.
 
-* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
--->
+   Ad esempio, un campo **Testo su riga singola** denominato `Country` nel modello di frammento di contenuto non può avere il valore `Japan` in due frammenti di contenuto dipendenti. Viene emesso un avviso quando si tenta di eseguire la seconda istanza.
+
+   >[!NOTE]
+   Uniquità garantita per radice lingua.
+
+   >[!NOTE]
+   Le varianti possono avere lo stesso valore *univoco* delle varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
+
+* ****
+TranslatableSelezionando la casella di controllo &quot;Translatable&quot; su un campo nell&#39;editor modelli CF
+
+   * Assicurarsi che il nome della proprietà del campo sia aggiunto nella configurazione di traduzione, contesto `/content/dam/<tenant>`, se non è già presente.
+   * Per GraphQL: impostare una proprietà `<translatable>` nel campo Frammento di contenuto su `yes`, per consentire il filtro query GraphQL per l&#39;output JSON con solo contenuto convertibile.
+
+* Per ulteriori informazioni su tale tipo di dati specifico e sulle relative proprietà, vedere **[Riferimento frammento (frammenti nidificati)](#fragment-reference-nested-fragments)**.
 
 ## Convalida {#validation}
 
@@ -205,72 +173,65 @@ Diversi tipi di dati ora includono la possibilità di definire i requisiti di co
    * Confrontate con un regex predefinito.
 * **Numero**
    * Verificate la presenza di valori specifici.
+* **Riferimento contenuto**
+   * Eseguire il test per tipi specifici di contenuto.
+   * È possibile fare riferimento solo alle risorse di dimensioni file specificate o inferiori.
+   * È possibile fare riferimento solo alle immagini all’interno di un intervallo predefinito di larghezza e/o altezza (in pixel).
+* **Riferimento frammento**
+   * Eseguire il test per un modello di frammento di contenuto specifico.
 
 <!--
-* **Content Reference**
-  * Test for specific types of content.
-  * Only images within a predefined range of width and height (in pixels) can be referenced. 
-  * Only assets of specified file size or smaller can be referenced. 
   * Only predefined file types can be referenced.
   * No more than the predefined number of assets can be referenced. 
   * No more than the predefined number of fragments can be referenced.
-* **Fragment Reference**
-  * Test for a specific content fragment model.
 -->
 
-<!--
-## Using References to form Nested Content {#using-references-to-form-nested-content}
+## Utilizzo dei riferimenti per il modulo Contenuto nidificato {#using-references-to-form-nested-content}
 
-Content Fragments can form nested content, using either of the following data types:
+I frammenti di contenuto possono formare contenuto nidificato utilizzando uno dei seguenti tipi di dati:
 
-* **[Content Reference](#content-reference)**
-  * Provides a simple reference to other content; of any type.
-  * Can be configured for a one or multiple references (in the resulting fragment).
+* **[Riferimento contenuto](#content-reference)**
+   * Fornisce un semplice riferimento ad altri contenuti; di qualsiasi tipo.
+   * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
-* **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
-  * References other fragments, dependent on the specific models specified.
-  * Allows you to include/retrieve structured data.
-    >[!NOTE]
-    >
-    >This method is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-  * Can be configured for one or multiple references (in the resulting fragment)..
+* **[Riferimento](#fragment-reference-nested-fragments)**  frammento (frammenti nidificati)
+   * Fa riferimento ad altri frammenti, a seconda dei modelli specifici specificati.
+   * Consente di includere/recuperare dati strutturati.
+
+      >[!NOTE]
+      Questo metodo è di particolare interesse in combinazione con [Distribuzione di contenuti headless con frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+   * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
 >[!NOTE]
->
->AEM has a recurrence protection for:
->
->* Content References
->  This prevents the user from adding a reference to the current fragment. This may lead to an empty Fragment Reference picker dialog.
->
->* Fragment References in GraphQL 
->  If you create a deep query that returns multiple Content Fragments referenced by each another, it will return null at first occurence.
+AEM dispone di una protezione di ricorrenza per:
+* Riferimenti contenuto
+Ciò impedisce all&#39;utente di aggiungere un riferimento al frammento corrente. Questo potrebbe causare la visualizzazione di una finestra di dialogo vuota del selettore Riferimento frammento.
 
-### Content Reference {#content-reference}
+* Riferimenti ai frammenti in GraphQL
+Se create una query profonda che restituisce più frammenti di contenuto a cui fanno riferimento l’uno dall’altro, restituisce null alla prima occorrenza.
 
-The Content Reference allows you to render content from another source; for example, image or content fragment.
 
-In addition to standard properties you can specify:
+### Riferimento contenuto {#content-reference}
 
-* The **Root Path** for any referenced content.
-* The content types that can be referenced.
-* Limitations for file sizes.
-* Image restraints.
--->
+Content Reference (Riferimento contenuto) consente di eseguire il rendering del contenuto da un’altra origine; ad esempio, un frammento di immagine o di contenuto.
 
-<!-- Check screenshot - might need update
+Oltre alle proprietà standard è possibile specificare:
 
-   ![Content Reference](assets/cfm-content-reference.png)
--->
+* Il **percorso principale** per qualsiasi contenuto di riferimento.
+* Tipi di contenuto a cui è possibile fare riferimento.
+* Limitazioni per le dimensioni dei file.
+* Restrizioni per l&#39;immagine.
+   <!-- Check screenshot - might need update -->
+   ![Riferimento contenuto](assets/cfm-content-reference.png)
 
-<!--
-### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
+### Riferimento frammento (frammenti nidificati) {#fragment-reference-nested-fragments}
 
-The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+Il riferimento al frammento fa riferimento a uno o più frammenti di contenuto. Questa funzione è particolarmente interessante per il recupero di contenuti da usare nell’app, in quanto consente di recuperare dati strutturati con più livelli.
 
-For example:
+Esempio:
 
-* A model defining details for an employee; these include:
-  * A reference to the model that defines the employer (company)
+* Un modello che definisce i dettagli per un dipendente; tra cui:
+   * Un riferimento al modello che definisce il datore di lavoro (società)
 
 ```xml
 type EmployeeModel {
@@ -287,44 +248,34 @@ type CompanyModel {
 ```
 
 >[!NOTE]
->
->This is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+Questo è di particolare interesse in combinazione con [Distribuzione di contenuti headless con frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
-In addition to standard properties you can define:
+Oltre alle proprietà standard è possibile definire:
 
-* **Render As**:
+* **Rendering come**:
 
-  * **multifield** - the fragment author can create multiple, individual, references
+   * **multicampo** : l’autore del frammento può creare più riferimenti, singoli o singoli
 
-  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+   * **riferimento a frammento** : consente all&#39;autore del frammento di selezionare un singolo riferimento a un frammento
 
-* **Model Type**
-  Multiple models can be selected. When authoring the Content Fragment any referenced fragments must have been created using these models.
+* **Model**
+TypeÈ possibile selezionare più modelli. Durante la creazione del frammento di contenuto, qualsiasi frammento a cui si fa riferimento deve essere stato creato utilizzando questi modelli.
 
-* **Root Path**
-  This specifies a root path for any fragments referenced.
+* **Percorso**
+radice: specifica un percorso principale per tutti i frammenti a cui viene fatto riferimento.
 
-* **Allow Fragment Creation**
+* **Consenti creazione di frammenti**
 
-  This will allow the fragment author to create a new fragment based on the appropriate model.
--->
+   Questo consente all&#39;autore del frammento di creare un nuovo frammento basato sul modello appropriato.
 
-<!--
-  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
--->
+   * **fragmentreferencecomposite** : consente all&#39;autore del frammento di creare un composito, selezionando più frammenti
 
-<!-- Check screenshot - might need update
+   <!-- Check screenshot - might need update -->
+   ![Riferimento frammento](assets/cfm-fragment-reference.png)
 
-   ![Fragment Reference](assets/cfm-fragment-reference.png)
--->
-
-<!--
 >[!NOTE]
->
->A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
->
->There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
--->
+Esiste un meccanismo di protezione contro la ricorrenza. Non consente all&#39;utente di selezionare il frammento di contenuto corrente in Riferimento frammento. Questo potrebbe causare la visualizzazione di una finestra di dialogo vuota del selettore Riferimento frammento.
+Esiste anche una protezione di ricorrenza per i riferimenti ai frammenti in GraphQL. Se si crea una query approfondita tra due frammenti di contenuto che si fanno riferimento l&#39;uno all&#39;altro, viene restituito null.
 
 ## Abilitazione o disattivazione di un modello di frammento di contenuto {#enabling-disabling-a-content-fragment-model}
 
@@ -366,6 +317,40 @@ Per disabilitare un modello contrassegnato come **Abilitato**, utilizzare l&#39;
 * Azione rapida corrispondente (posizionamento del mouse sul modello richiesto).
 
 ![Disattivazione di un modello abilitato](assets/cfm-status-disable.png)
+
+## Consentire modelli di frammenti di contenuto nella cartella delle risorse {#allowing-content-fragment-models-assets-folder}
+
+Per implementare la gestione dei contenuti, puoi configurare **Criteri** nella cartella Risorse per controllare quali modelli di frammenti di contenuto possono essere creati in tale cartella.
+
+>[!NOTE]
+Il meccanismo è simile a [consentendo modelli di pagina](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) per una pagina e i relativi elementi secondari, nelle proprietà avanzate di una pagina.
+
+Per configurare i **criteri** per **modelli di frammenti di contenuto consentiti**:
+
+1. Spostatevi e aprite **Proprietà** per la cartella Risorse richiesta.
+
+1. Aprite la scheda **Criteri** in cui potete configurare:
+
+   * **Ereditato da`<folder>`**
+
+      I criteri vengono ereditati automaticamente quando si creano nuove cartelle figlie. il criterio può essere riconfigurato (e l&#39;ereditarietà interrotta) se le sottocartelle devono consentire modelli diversi dalla cartella principale.
+
+   * **Modelli per frammenti di contenuto consentiti per percorso**
+
+      Possono essere consentiti più modelli.
+
+   * **Modelli di frammenti di contenuto consentiti per tag**
+
+      Possono essere consentiti più modelli.
+   ![Criterio modello frammento di contenuto](assets/cfm-model-policy-assets-folder.png)
+
+1. **Salvare** le modifiche.
+
+I modelli di frammento di contenuto consentiti per una cartella sono risolti come segue:
+* **Criteri** per **Modelli di frammenti di contenuto consentiti**.
+* Se vuoto, provare a determinare il criterio utilizzando le regole di ereditarietà.
+* Se la catena di ereditarietà non fornisce un risultato, verificare la configurazione **Cloud Services** per quella cartella (anche prima direttamente e poi tramite ereditarietà).
+* Se nessuno dei risultati di cui sopra fornisce alcun risultato, non ci sono modelli consentiti per quella cartella.
 
 ## Eliminazione di un modello di frammento di contenuto {#deleting-a-content-fragment-model}
 
