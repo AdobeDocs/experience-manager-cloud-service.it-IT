@@ -2,21 +2,15 @@
 title: Gestione dei frammenti di contenuto
 description: I frammenti di contenuto sono memorizzati come risorse e sono gestiti principalmente dalla console Risorse.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 11%
+source-wordcount: '1593'
+ht-degree: 10%
 
 ---
 
 
 # Gestione dei frammenti di contenuto{#managing-content-fragments}
-
->[!CAUTION]
->
->L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto è disponibile su richiesta.
->
->Per abilitare l&#39;API per il AEM come programma di Cloud Service, contattate il supporto di [ Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support).
 
 I frammenti di contenuto sono memorizzati come **Risorse**, pertanto vengono gestiti principalmente dalla console **Risorse**.
 
@@ -39,8 +33,8 @@ I frammenti di contenuto sono memorizzati come **Risorse**, pertanto vengono ges
 Il metodo di creazione di un frammento di contenuto è:
 
 1. Passa alla cartella **Risorse** in cui desideri creare il frammento.
-2. Per aprire la procedura guidata, seleziona **Crea**, quindi **Frammento di contenuto**.
-3. Il primo passaggio della procedura guidata richiede di specificare la base del nuovo frammento.
+1. Per aprire la procedura guidata, seleziona **Crea**, quindi **Frammento di contenuto**.
+1. Il primo passaggio della procedura guidata richiede di specificare la base del nuovo frammento.
 
    * [Modello](/help/assets/content-fragments/content-fragments-models.md) : utilizzato per creare un frammento che richiede contenuto strutturato; ad esempio,  **** Adventuremodel
 
@@ -50,7 +44,7 @@ Il metodo di creazione di un frammento di contenuto è:
 
    ![base frammento](assets/cfm-managing-01.png)
 
-4. Nel passaggio **Proprietà** specifica:
+1. Nel passaggio **Proprietà** specifica:
 
    * **Base**
 
@@ -72,9 +66,12 @@ Il metodo di creazione di un frammento di contenuto è:
          Obbligatorio; viene derivato automaticamente dal titolo, ma può essere aggiornato.
 
 
-5. Seleziona **Crea** per completare l’azione, quindi **Apri** il frammento per la modifica oppure tornare alla console facendo clic su **Fine**.
+1. Seleziona **Crea** per completare l’azione, quindi **Apri** il frammento per la modifica oppure tornare alla console facendo clic su **Fine**.
 
-## Azioni per un frammento di contenuto {#actions-for-a-content-fragment}
+   >[!NOTE]
+   >Nella modalità **Elenco** della console è possibile aggiornare le **Impostazioni di visualizzazione** per abilitare la colonna **Modello frammento di contenuto**.
+
+## Azioni per un frammento di contenuto nella console Risorse {#actions-for-a-content-fragment-assets-console}
 
 Nella console **Risorse** sono disponibili diverse azioni per i frammenti di contenuto:
 
@@ -125,7 +122,7 @@ Per aprire il frammento per la modifica:
 >Per modificare un frammento di contenuto è necessario disporre delle autorizzazioni appropriate. In caso di problemi, contattate l&#39;amministratore di sistema.
 
 1. Utilizzate la console **Risorse** per individuare la posizione del frammento di contenuto.
-2. Aprire il frammento per la modifica:
+1. Aprire il frammento per la modifica:
 
    * Toccando o facendo clic sul collegamento del frammento o del frammento (a seconda della vista della console).
    * Selezionare il frammento, quindi **Modifica** dalla barra degli strumenti.
@@ -140,23 +137,49 @@ Per aprire il frammento per la modifica:
    >2. Il pannello laterale può essere nascosto o visualizzato utilizzando l&#39;icona **Attiva/disattiva pannello laterale**.
 
 
-3. Per spostarsi tra le tre modalità, usate le icone nel pannello laterale:
-
-   * Variazioni: [Modifica dei contenuti](#editing-the-content-of-your-fragment) e [Gestione delle varianti](#creating-and-managing-variations-within-your-fragment)
-
-   * [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-   * [Contenuto associato](#associating-content-with-your-fragment)
-   * [Metadati](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-   * [Albero struttura](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   * [Anteprima](/help/assets/content-fragments/content-fragments-json-preview.md)
-
-   ![modalità](assets/cfm-managing-04.png)
-
-4. Dopo aver apportato le modifiche, utilizzare **Save** o **Cancel** come necessario.
+1. Dopo aver apportato le modifiche, utilizzare **Save** o **Cancel** come necessario.
 
    >[!NOTE]
    >
    >Sia l’azione **Salva** che **Annulla** causeranno l’uscita dall’editor. Per informazioni complete sul funzionamento di entrambe le opzioni dei frammenti di contenuto, consulta la sezione [Salva, Annulla e Versioni](#save-cancel-and-versions).
+
+## Modalità e azioni nell&#39;Editor frammento di contenuto {#modes-actions-content-fragment-editor}
+
+Dall’Editor frammento di contenuto sono disponibili diverse modalità e azioni.
+
+### Modalità nell&#39;Editor frammento di contenuto {#modes-in-the-content-fragment-editor}
+
+Per spostarsi tra le varie modalità, usate le icone nel pannello laterale:
+
+* Variazioni: [Modifica dei contenuti](#editing-the-content-of-your-fragment) e [Gestione delle varianti](#creating-and-managing-variations-within-your-fragment)
+
+* [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Contenuto associato](#associating-content-with-your-fragment)
+* [Metadati](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Albero struttura](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Anteprima](/help/assets/content-fragments/content-fragments-json-preview.md)
+
+![modalità](assets/cfm-managing-04.png)
+
+### Azioni barra degli strumenti nell&#39;Editor frammento di contenuto {#toolbar-actions-in-the-content-fragment-editor}
+
+Alcune funzioni della barra degli strumenti superiore sono disponibili in diverse modalità:
+
+![modalità](assets/cfm-managing-top-toolbar.png)
+
+* Sotto il nome del frammento è visualizzato il nome del [modello di frammento di contenuto](/help/assets/content-fragments/content-fragments-models.md) utilizzato per creare il frammento corrente:
+
+   * Il nome è anche un collegamento che aprirà l&#39;editor modelli.
+
+* Vedere lo stato del frammento; ad esempio, informazioni su quando è stato creato, modificato o pubblicato. Lo stato è inoltre codificato in base al colore:
+
+   * Nuovo: grigio
+   * Bozza: blu
+   * Pubblicato: verde
+   * Modificato: arancia
+   * Disattivato: rosso
+
+* **[](#publishing-and-referencing-a-fragment)** Pubblicare il frammento.
 
 ## Salva, Annulla e Versioni {#save-cancel-and-versions}
 
@@ -304,7 +327,8 @@ Se si pubblica un frammento di contenuto per il quale il modello non è ancora s
 
 I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione. Possono essere pubblicati:
 
-* Dopo la creazione; dalla console **Risorse**.
+* Dopo la creazione; utilizzando [azioni disponibili nella console Risorse](#actions-for-a-content-fragment-assets-console).
+* Dall&#39; [Editor frammento di contenuto](#toolbar-actions-in-the-content-fragment-editor).
 * Quando si [pubblica una pagina che utilizza il frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); il frammento verrà elencato nei riferimenti di pagina.
 
 >[!CAUTION]
