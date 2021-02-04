@@ -4,10 +4,10 @@ user-guide-title: Onboarding per AEM as a Cloud Service
 breadcrumb-title: Guida all’onboarding
 user-guide-description: Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati.
 translation-type: tm+mt
-source-git-commit: af15539007e264fc473d35529f0f8c41276ec01d
+source-git-commit: 42147d7465ec10a41702e74699a3d54624b7d4bd
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 62%
+source-wordcount: '662'
+ht-degree: 35%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 62%
    + [Autorizzazioni basate sul ruolo](what-is-required/role-based-permissions.md)
    + [Archivio del codice sorgente](what-is-required/source-code-repository.md)
 + Fasi del percorso di transizione {#phases}
-   + [Pianificazione](/help/move-to-cloud-service/planning.md)
-   + [Esecuzione](/help/move-to-cloud-service/execution.md)
-   + [Post-pubblicazione](/help/move-to-cloud-service/post-go-live.md)
+   + [Pianificazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/planning.html)
+   + [Esecuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
+   + [Post-pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + Accesso ad AEM nel cloud {#getting-access}
    + [Accesso a Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
    + Programmi di Cloud Service {#cloud-service-programs}
@@ -32,47 +32,47 @@ ht-degree: 62%
       + [Creazione di un programma](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [Programmi sandbox](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + Utilizzo di Cloud Manager {#using-cloud-manager}
-      + [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md)
-      + [Configurazione della pipeline CI/CD](/help/implementing/cloud-manager/configure-pipeline.md)
-      + [Implementazione del codice](/help/implementing/cloud-manager/deploy-code.md)
+      + [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
+      + [Configurazione della pipeline CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
+      + [Implementazione del codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
    + Risultati dei test {#test-results}
-      + [Panoramica](/help/implementing/cloud-manager/overview-test-results.md)
-      + [Verifica della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md)
-      + [Regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-      + [Test funzionale](/help/implementing/cloud-manager/functional-testing.md)
-      + [Verifica esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
-   + [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md)
-   + [Notifiche](/help/implementing/cloud-manager/notifications.md)
+      + [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html)
+      + [Verifica della qualità del codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/code-quality-testing.html)
+      + [Regole per la qualità del codice personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html)
+      + [Test funzionale](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html)
+      + [Verifica esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/experience-audit-testing.html)
+   + [Accesso e gestione dei registri](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)
+   + [Notifiche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/notifications.html)
    + Creazione di un progetto di applicazione AEM {#create-application-project}
       + [Utilizzo della procedura guidata](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Impostazione del progetto](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Informazioni sull’ambiente di creazione](getting-access-to-aem-in-cloud/build-environment-details.md)
    + Gestione certificati SSL {#manage-ssl-certificates}
-      + [Introduzione](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-      + [Ottenimento di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
-      + [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [Visualizzazione e aggiornamento o sostituzione di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
-      + [Verifica dello stato di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
-      + [Eliminazione di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+      + [Introduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/introduction.html)
+      + [Ottenimento di un certificato SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/get-ssl-certificate.html)
+      + [Aggiunta di un certificato SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html)
+      + [Visualizzazione e aggiornamento o sostituzione di un certificato SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html)
+      + [Verifica dello stato di un certificato SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html)
+      + [Eliminazione di un certificato SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/delete-ssl-certificate.html)
    + Gestione dei nomi di dominio personalizzati {#custom-domain-names}
-      + [Introduzione](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-      + [Ottenimento di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
-      + [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-      + [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
-      + [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-      + [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
-      + [Verifica dello stato del record DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-      + [Visualizzazione e aggiornamento del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-      + [Aggiornamento del certificato SSL del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-      + [Eliminazione del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+      + [Introduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/introduction.html)
+      + [Ottenimento di un nome di dominio personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/get-custom-domain-name.html)
+      + [Aggiunta di un nome di dominio personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html)
+      + [Aggiunta di un record TXT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html)
+      + [Verifica dello stato del nome di dominio personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html)
+      + [Configurazione delle impostazioni DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html)
+      + [Verifica dello stato del record DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html)
+      + [Visualizzazione e aggiornamento del nome di dominio personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html)
+      + [Aggiornamento del certificato SSL del nome di dominio personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/update-cdn-ssl-certificate.html)
+      + [Eliminazione del nome di dominio personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/delete-custom-domain-name.html)
    + Gestione dei Elenchi consentiti di  IP {#ip-allow-lists}
-      + [Introduzione](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-      + [Aggiunta di un Elenco consentiti di  IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-      + [Visualizzazione e aggiornamento di un Elenco consentiti di  IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [Applicazione di un Elenco consentiti di  IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [Annullamento dell&#39;applicazione di un Elenco consentiti di  IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [Eliminazione di un Elenco consentiti di  IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-      + [Verifica dello stato di un Elenco consentiti  IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+      + [Introduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/introduction.html)
+      + [Aggiunta di un Elenco consentiti di  IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html)
+      + [Visualizzazione e aggiornamento di un Elenco consentiti di  IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html)
+      + [Applicazione di un Elenco consentiti di  IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html)
+      + [Annullamento dell&#39;applicazione di un Elenco consentiti di  IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/unapply-ip-allow-list.html)
+      + [Eliminazione di un Elenco consentiti di  IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
+      + [Verifica dello stato di un Elenco consentiti  IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Note sulla versione di Cloud Manager {#release-notes-cloud-manager}
       + [Note sulla versione corrente (2021.1.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Note sulla versione 2020.12.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
