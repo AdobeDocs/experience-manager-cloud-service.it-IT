@@ -2,9 +2,9 @@
 title: Generazione di token di accesso per le API lato server
 description: Scoprite come facilitare la comunicazione tra un server di terze parti e AEM come Cloud Service generando un token JWT protetto
 translation-type: tm+mt
-source-git-commit: a29eda3347502a3a498c2f40ed2e46cda59b2a24
+source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Introduzione {#introduction}
 
->[!IMPORTANT]
->
->Questa funzione non è ancora disponibile. Per un elenco aggiornato delle funzioni, vedere le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
 Alcune architetture si basano sull&#39;effettuazione di chiamate a AEM come Cloud Service da un&#39;applicazione ospitata su un server esterno all&#39;infrastruttura AEM. Ad esempio, un&#39;applicazione mobile che chiama un server, che quindi esegue richieste API da AEM come Cloud Service.
 
 Il flusso server-to-server è descritto di seguito, insieme a un flusso semplificato per lo sviluppo. Il AEM come Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) viene utilizzato per generare i token necessari per il processo di autenticazione.
+
+>[!NOTE]
+>
+>Oltre a questa documentazione, è anche possibile consultare l&#39;esercitazione sull&#39;autenticazione basata su [Token per AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
 
 ## Flusso server {#the-server-to-server-flow}
 
