@@ -4,7 +4,7 @@ user-guide-title: Implementazione per AEM as a Cloud Service
 breadcrumb-title: Guida all’implementazione
 user-guide-description: Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione.
 translation-type: tm+mt
-source-git-commit: 769b45e2546b06edba24c5cd33ad3e4547b3b54c
+source-git-commit: 85c802029f8499ef1d97bc40e2cce5015f19c49b
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 36%
@@ -145,7 +145,7 @@ ht-degree: 36%
          + [API REST per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
          + [API GraphQL per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
          + [AEM GraphQL API con frammenti di contenuto - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
-         + [Autenticazione per query AEM GraphQL remote su frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/graphql-authentication-content-fragments.md)
+         + [Autenticazione per query AEM GraphQL remote su frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
 + Strumenti per gli sviluppatori {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Plug-in Confezione Contenuto](/help/implementing/developing/tools/maven-plugin.md)
