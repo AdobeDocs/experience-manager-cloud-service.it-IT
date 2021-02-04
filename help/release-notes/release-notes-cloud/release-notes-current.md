@@ -2,9 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
+source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '719'
 ht-degree: 5%
 
 ---
@@ -21,9 +21,13 @@ La seguente release (2021.2.0) sarà del 25 febbraio 2021.
 
 ## [!DNL Adobe Experience Manager Sites] come Cloud Service  {#sites}
 
+### Gestione dei contenuti headless {#headless}
+
 * **[API GraphQL per la distribuzione](/help/assets/content-fragments/graphql-api-content-fragments.md)** dei frammenti di contenuto: Possibilità di eseguire query sui frammenti di contenuto utilizzando la sintassi GraphQL e gli schemi basati su modelli di frammenti di contenuto, per l&#39;output in formato JSON.
 
 * **[Supporto dell&#39;autenticazione per le richieste](/help/assets/content-fragments/graphql-authentication-content-fragments.md)** API GraphQL: Possibilità di autenticare le richieste API GraphQL con token di accesso per le API lato server.
+
+* [Il ](/help/implementing/developing/hybrid/remote-page.md) componente RemotePage supporta la visualizzazione e la modifica di SPA esterni all&#39;interno AEM.
 
 * È stato migliorato l&#39;output JSON dall&#39;API GraphQL, inclusa la possibilità di restituire testo RTF in formato JSON e nelle impostazioni internazionali.
 
@@ -37,6 +41,9 @@ La seguente release (2021.2.0) sarà del 25 febbraio 2021.
 
 * Possibilità di visualizzare l&#39;anteprima dell&#39;output JSON direttamente nell&#39;editor frammento di contenuto.
 
+### App Web progressive (PWA) {#pwa}
+
+* [Una versione Progressive Web App (PWA) di un ](/help/sites-cloud/authoring/features/enable-pwa.md)  sito ora può essere abilitata a livello di progetto tramite una semplice configurazione.
 
 ## [!DNL Adobe Experience Manager Assets] come  [!DNL Cloud Service] {#assets}
 
