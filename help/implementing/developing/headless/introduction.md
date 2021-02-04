@@ -2,10 +2,10 @@
 title: Sviluppo senza testa per  AEM Sites come Cloud Service
 description: L'utilizzo di potenti funzioni come Modelli di contenuto, Frammenti di contenuto e API GraphQL, AEM come Cloud Service, consente di gestire le esperienze centralmente e di distribuirle tra i canali.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 3%
+source-wordcount: '573'
+ht-degree: 2%
 
 ---
 
@@ -21,6 +21,14 @@ L&#39;implementazione senza limiti di tempo sta diventando sempre più important
 L&#39;implementazione senza problemi dimentica la gestione delle pagine e dei componenti, come avviene nelle soluzioni complete per stack e ibridi, e si concentra sulla creazione di frammenti di contenuto versatili e versatili e sulla loro distribuzione multicanale. Si tratta di un modello di sviluppo moderno e dinamico per l&#39;implementazione di esperienze Web.
 
 ![Modelli di implementazione AEM](assets/aem-implementation-models.png)
+
+## Confronto tra headful e headless {#headful-headless}
+
+Il presente documento si concentra sul modello di implementazione senza testa di AEM. Tuttavia headful contro headless non devono essere una scelta binaria in AEM. Le funzioni headless consentono di gestire e distribuire i contenuti a diversi endpoint, consentendo agli autori di contenuti di modificare le applicazioni a pagina singola. Tutto in AEM.
+
+>[!TIP]
+>
+>Per ulteriori informazioni, vedere il documento [Cuffia e Senza testa in AEM](/help/implementing/developing/headful-headless.md).
 
 ## AEM come Cloud Service e senza testa {#aem-headless}
 
