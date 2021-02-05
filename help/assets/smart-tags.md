@@ -3,9 +3,9 @@ title: Assegnare automaticamente tag alle risorse con tag generati dall'interfac
 description: Assegnare tag alle risorse utilizzando servizi intelligenti artificialmente che applicano tag aziendali contestuali e descrittivi utilizzando il servizio [!DNL Adobe Sensei] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2807'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ Potete assegnare i tag ai seguenti tipi di risorse:
 
 * **Immagini**: Le immagini in molti formati vengono contrassegnate mediante i servizi di contenuto avanzato di Adobe Sensei . [creare un modello di formazione](#train-model) e quindi [applicare smart tag](#tag-assets) alle immagini.
 * **Risorse** video: Per impostazione predefinita, l’assegnazione di tag ai video è abilitata  [!DNL Adobe Experience Manager] come  [!DNL Cloud Service]. [I video vengono contrassegnati automaticamente ](/help/assets/smart-tags-video-assets.md) quando caricate nuovi video o ne rielaborate quelli esistenti.
-* **Risorse** basate su testo:  [!DNL Experience Manager Assets] assegna automaticamente i tag alle risorse supportate basate su testo al momento del caricamento.
+* **Risorse** basate su testo:  [!DNL Experience Manager Assets] assegna automaticamente i tag alle risorse supportate basate su testo al momento del caricamento. Ulteriori informazioni sull&#39;assegnazione di [smart tag alle risorse basate su testo](#smart-tag-text-based-assets).
 
 ## Tipi di risorse supportati {#smart-tags-supported-file-formats}
 
