@@ -3,15 +3,15 @@ title: Assegnare automaticamente tag alle risorse con tag generati dall'interfac
 description: Assegnare tag alle risorse utilizzando servizi intelligenti artificialmente che applicano tag aziendali contestuali e descrittivi utilizzando il servizio [!DNL Adobe Sensei] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '2557'
+source-wordcount: '2799'
 ht-degree: 6%
 
 ---
 
 
-# Aggiunta di smart tag alle risorse per eseguire ricerche più rapide {#smart-tag-assets-for-faster-search}
+# Aggiunta di smart tag alle risorse per migliorare l&#39;esperienza di ricerca {#smart-tag-assets-for-faster-search}
 
 Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare le risorse digitali. L’assegnazione di tag alle risorse mediante il vocabolario controllato dalla tassonomia consente di identificare e recuperare facilmente le risorse nelle ricerche.
 
@@ -23,25 +23,31 @@ In background, gli Smart Tags utilizzano il framework artificialmente intelligen
 ![flowchart](assets/flowchart.gif) 
 -->
 
+Potete assegnare i tag ai seguenti tipi di risorse:
+
+* **Immagini**: Le immagini in molti formati vengono contrassegnate mediante i servizi di contenuto avanzato di Adobe Sensei . [creare un modello di formazione](#train-model) e quindi [applicare smart tag](#tag-assets) alle immagini.
+* **Risorse** video: Per impostazione predefinita, l’assegnazione di tag ai video è abilitata  [!DNL Adobe Experience Manager] come  [!DNL Cloud Service]. [I video vengono contrassegnati automaticamente ](/help/assets/smart-tags-video-assets.md) quando caricate nuovi video o ne rielaborate quelli esistenti.
+* **Risorse** basate su testo:  [!DNL Experience Manager Assets] assegna automaticamente i tag alle risorse supportate basate su testo al momento del caricamento.
+
 ## Tipi di risorse supportati {#smart-tags-supported-file-formats}
 
-I tag avanzati vengono applicati solo ai tipi di file supportati che generano rappresentazioni in formato JPG e PNG. La funzionalità è supportata per i seguenti tipi di risorse:
+I tag avanzati vengono applicati ai tipi di file supportati che generano rappresentazioni in formato JPG e PNG. La funzionalità è supportata per i seguenti tipi di risorse:
 
 | Immagini (tipi MIME) | Risorse basate su testo (formati di file) | Risorse video (formati di file e codec) |
 |----|-----|------|
-| image/jpeg | TXT | MP4 (H264/AVC) |
-| image/tiff | RTF | MKV (H264/AVC) |
-| image/png | DITA | MOV (H264/AVC, Motion JPEG) |
-| image/bmp | XML | AVI (index4) |
+| image/jpeg | CSV | MP4 (H264/AVC) |
+| image/tiff | DOC | MKV (H264/AVC) |
+| image/png | DOCX | MOV (H264/AVC, Motion JPEG) |
+| image/bmp | HTML | AVI (index4) |
 | image/gif | JSON | FLV (H264/AVC, vp6f) |
-| image/pjpeg | DOC | WMV (WMV2) |
-| image/x-portatili-anymap | DOCX |  |
-| image/x-portatili-bitmap | PDF |  |
-| immagine/x-portabile-grigio | CSV |  |
-| image/x-portatile-pixmap | PPT |  |
-| image/x-rgb | PPTX |  |
+| image/pjpeg | PDF | WMV (WMV2) |
+| image/x-portatili-anymap | PPT |  |
+| image/x-portatili-bitmap | PPTX |  |
+| immagine/x-portabile-grigio | RTF |  |
+| image/x-portatile-pixmap | SRT |  |
+| image/x-rgb | TXT |  |
 | image/x-xbitmap | VTT |  |
-| image/x-xpixmap | SRT |  |
+| image/x-xpixmap | XML |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -62,6 +68,12 @@ I tag avanzati vengono applicati solo ai tipi di file supportati che generano ra
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
+## Assegnazione di tag avanzati alle risorse basate su testo {#smart-tag-text-based-assets}
+
+Le risorse supportate basate su testo vengono contrassegnate automaticamente da [!DNL Experience Manager Assets] al momento del caricamento. È abilitata per impostazione predefinita. L’efficacia dei tag avanzati non dipende dalla quantità di testo presente nella risorsa, ma dalle parole chiave o entità pertinenti presenti nel testo della risorsa. Per le risorse basate su testo, i tag avanzati sono le parole chiave che compaiono nel testo ma che meglio descrivono la risorsa. Per le risorse supportate, [!DNL Experience Manager] estrae già il testo, che viene quindi indicizzato e utilizzato per cercare le risorse. Tuttavia, i tag avanzati basati sulle parole chiave nel testo forniscono un facet di ricerca dedicato, strutturato e con priorità più alta, utilizzato per migliorare l’individuazione delle risorse rispetto all’indice di ricerca completo.
+
+Per le immagini e i video, invece, i tag avanzati vengono derivati in base ad alcune proporzioni visive.
+
 ## Integrare [!DNL Experience Manager] con  Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
@@ -72,12 +84,7 @@ I tag avanzati vengono applicati solo ai tipi di file supportati che generano ra
 
 ## Informazioni sui modelli e sulle linee guida dei tag {#understand-tag-models-guidelines}
 
-Un modello di tag è un gruppo di tag correlati che si trovano per aspetto visivo dell’immagine. Ad esempio, una raccolta di scarpe può avere tag diversi, ma tutti i tag sono correlati a scarpe e possono appartenere allo stesso modello di tag. I tag possono essere correlati solo con gli aspetti visivi delle immagini chiaramente diversi. Per comprendere la rappresentazione del contenuto di un modello di formazione in [!DNL Experience Manager], visualizzate un modello di formazione come entità di livello principale composta da un gruppo di tag aggiunti manualmente e immagini di esempio per ciascun tag. Ogni tag può essere applicato esclusivamente a un’immagine.
-
-I tag che non possono essere gestiti in modo realistico si riferiscono a:
-
-* Aspetti non visivi e astratti come l&#39;anno o la stagione di rilascio di un prodotto, l&#39;umore o le emozioni evocate da un&#39;immagine.
-* Riduzioni visive di prodotti quali camicie con e senza collari o loghi di prodotti di piccole dimensioni incorporati nei prodotti.
+Un modello di tag è un gruppo di tag correlati associati a vari aspetti visivi delle immagini a cui viene applicato il tag. I tag si riferiscono ai diversi aspetti visivi delle immagini, per cui se applicati, i tag consentono di cercare specifici tipi di immagini. Ad esempio, una raccolta di scarpe può avere tag diversi, ma tutti i tag sono correlati a scarpe e possono appartenere allo stesso modello di tag. Se applicati, i tag consentono di trovare tipi diversi di scarpe, ad esempio per colore, per progettazione o per uso. Per comprendere la rappresentazione del contenuto di un modello di formazione in [!DNL Experience Manager], visualizzate un modello di formazione come entità di livello principale composta da un gruppo di tag aggiunti manualmente e immagini di esempio per ciascun tag. Ogni tag può essere applicato esclusivamente a un’immagine.
 
 Prima di creare un modello di tag e di formare il servizio, identificate un set di tag univoci che meglio descrivano gli oggetti contenuti nelle immagini nel contesto della vostra attività. Assicurati che le risorse del set selezionato siano conformi alle [linee guida di formazione](#training-guidelines).
 
@@ -189,9 +196,7 @@ Dopo aver preparato il servizio Smart Tags, potete attivare il flusso di lavoro 
 
 ### Assegnare tag alle risorse caricate {#tag-uploaded-assets}
 
- Experience Manager può assegnare automaticamente i tag alle risorse che gli utenti caricano in DAM. A questo scopo, gli amministratori configurano un flusso di lavoro per aggiungere un passaggio disponibile alle risorse degli smart tag. Consultate [come abilitare i tag avanzati per le risorse caricate](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
-
-<!-- TBD: Text-based assets are automatically smart tagged. -->
+[!DNL Experience Manager] può assegnare automaticamente tag alle risorse che gli utenti caricano in DAM. A questo scopo, gli amministratori configurano un flusso di lavoro per aggiungere un passaggio disponibile alle risorse degli smart tag. Consultate [come abilitare i tag avanzati per le risorse caricate](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
 ## Gestione di smart tag e ricerche di risorse {#manage-smart-tags-and-searches}
 
@@ -231,17 +236,21 @@ I risultati della ricerca che corrispondono a tutti i termini di ricerca nei cam
 1. corrispondenze di `woman running` negli smart tag.
 1. corrispondenze di `woman` o di `running` negli smart tag.
 
-### Limiti di assegnazione tag {#limitations}
+## Limiti e procedure ottimali per l&#39;assegnazione di tag {#limitations}
 
-Gli smart tag avanzati si basano su modelli di apprendimento delle immagini del marchio e dei relativi tag. Questi modelli non sempre sono perfetti per identificare i tag. La versione corrente dei tag avanzati presenta le seguenti limitazioni:
+I tag avanzati sono basati su modelli di apprendimento delle immagini e dei relativi tag. Questi modelli non sempre sono perfetti per identificare i tag. La versione corrente dei tag avanzati presenta le seguenti limitazioni:
 
 * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie sottili o regolari.
 * Impossibile identificare i tag in base a piccoli pattern/parti di un’immagine. Ad esempio, i logo delle T-shirt.
-* I tag sono supportati nelle lingue supportate  Experience Manager. Per un elenco delle lingue, consultate [Note sulla versione di Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* I tag sono supportati nelle lingue supportate da [!DNL Experience Manager]. Per un elenco delle lingue, consultate [Note sulla versione di Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* I tag non gestiti realisticamente si riferiscono a:
+
+   * Aspetti non visivi e astratti come l&#39;anno o la stagione di rilascio di un prodotto, l&#39;umore o le emozioni evocati da un&#39;immagine, la connotazione soggettiva di un video e così via.
+   * Riduzioni visive di prodotti quali camicie con e senza collari o loghi di prodotti di piccole dimensioni incorporati nei prodotti.
 
 <!-- TBD: Add limitations related to text-based assets. -->
 
-Per cercare le risorse con gli smart tag (regolari o avanzati), usate la ricerca Omnisearch delle risorse (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
+Per cercare risorse con smart tag (regolari o migliorati), utilizzate la ricerca Omnisearch (ricerca full-text). [!DNL Assets] Non esiste un predicato di ricerca separato per gli smart tag.
 
 >[!NOTE]
 >
