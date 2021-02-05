@@ -3,10 +3,10 @@ title: Tag avanzati migliorati
 description: Applica tag aziendali contestuali e descrittivi utilizzando i servizi di intelligenza artificiale e machine learning di Adobe Sensei per migliorare l’individuazione delle risorse e velocizzare la realizzazione dei contenuti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 97%
+source-wordcount: '1040'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ La funzionalità Tag avanzati è acquistabile come componente aggiuntivo per [!D
 
 >[!IMPORTANT]
 >
->Le nuove [!DNL Experience Manager Assets] implementazioni sono integrate con [!DNL Adobe Developer Console] per impostazione predefinita. Consente di configurare più rapidamente la funzionalità smart tag. Per configurare l&#39;integrazione, gli amministratori devono attenersi alla procedura riportata di seguito.
+>[!DNL Experience Manager Assets] le implementazioni create dopo il  [rilascio di agosto 2020 ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) sono integrate  [!DNL Adobe Developer Console] per impostazione predefinita. Consente di configurare più rapidamente la funzionalità smart tag. Nelle precedenti distribuzioni, gli amministratori possono seguire i seguenti passaggi per configurare l&#39;integrazione.
 
 ## Integrare con Adobe Developer Console {#aio-integration}
 
@@ -109,7 +109,7 @@ Quando il certificato scade, non è più attendibile. Per aggiungere un nuovo ce
 
 1. Accedi a [https://console.adobe.io](https://console.adobe.io) e naviga fino al servizio esistente nel progetto. Carica il nuovo certificato ed effettua la configurazione. Per ulteriori informazioni sulla configurazione, consulta [Creare un’integrazione con Adobe Developer Console](#create-aio-integration).
 
-## Abilitare l’assegnazione tag avanzati per le nuove risorse caricate (facoltativo) {#enable-smart-tagging-for-uploaded-assets}
+## Abilita l&#39;assegnazione di tag automatica quando le risorse vengono caricate (facoltativo) {#enable-smart-tagging-for-uploaded-assets}
 
 1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 1. Nella pagina **[!UICONTROL Modelli flusso di lavoro]**, seleziona il modello del flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
