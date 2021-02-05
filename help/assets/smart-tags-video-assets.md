@@ -2,9 +2,9 @@
 title: Applicazione di tag avanzati alle risorse video
 description: ' Experience Manager aggiunge automaticamente tag avanzati contestuali e descrittivi ai video utilizzando [!DNL Adobe Sensei].'
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 La crescente necessità di nuovi contenuti richiede un impegno manuale ridotto per offrire esperienze digitali coinvolgenti in tempi brevi. [!DNL Adobe Experience Manager] come  [!DNL Cloud Service] supporta l’assegnazione automatica di tag alle risorse video mediante l’intelligenza artificiale. Assegnare manualmente i tag ai video può richiedere molto tempo. Tuttavia, [!DNL Adobe Sensei] la funzione di smart tag video attivata utilizza modelli di intelligenza artificiale per analizzare i contenuti video e aggiungere tag alle risorse video. In questo modo, gli utenti DAM possono dedicare meno tempo alla distribuzione di esperienze avanzate ai propri clienti.  Adobe  servizio di machine learning genera due set di tag per un video. Mentre, un set corrisponde a oggetti, scene e attributi nel video; l&#39;altro insieme riguarda azioni quali bere, correre e fare jogging.
 
-L’assegnazione automatica di tag alle risorse video avviene come elaborazione standard delle risorse (con la creazione di miniature ed estrazione di metadati) dopo il caricamento di un video o quando viene attivata una nuova elaborazione. Gli smart tag vengono visualizzati in ordine decrescente in base al [punteggio di confidenza](#confidence-score-video-tag) nella risorsa [!UICONTROL Properties]. Per impostazione predefinita, i tag video sono abilitati in [!DNL Adobe Experience Manager] come [!DNL Cloud Service]. Tuttavia, potete [rifiutare l&#39;assegnazione di tag avanzati video](#opt-out-video-smart-tagging) in una cartella.
+Per impostazione predefinita, i tag video sono abilitati in [!DNL Adobe Experience Manager] come [!DNL Cloud Service]. Tuttavia, potete [rifiutare l&#39;assegnazione di tag avanzati video](#opt-out-video-smart-tagging) in una cartella. I video vengono contrassegnati automaticamente quando caricate nuovi video o li rielaborate. [!DNL Experience Manager] crea inoltre le miniature ed estrae i metadati dei file video. Gli smart tag vengono visualizzati in ordine decrescente in base al [punteggio di confidenza](#confidence-score-video-tag) nella risorsa [!UICONTROL Properties].
 
 ## Assegnazione di tag avanzati ai video durante il caricamento {#smart-tag-assets-on-ingestion}
 
