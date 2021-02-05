@@ -3,9 +3,9 @@ title: Formati di file supportati e tipi MIME
 description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '818'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ I principali elementi di rilievo per la conversione delle risorse mediante i mic
 * Formati di documenti [comuni](#document-formats), inclusi i formati Microsoft Office e Open Document.
 * Ampia gamma di formati [video](#video-formats) e [audio.](#audio-formats)
 
-La legenda seguente descrive il livello di supporto.
+La legenda seguente descrive il livello di supporto per ciascun formato.
 
 | Livello di supporto | Descrizione |
 | ------------- | --------------------------- |
@@ -231,4 +231,5 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 >[!MORELIKETHIS]
 >
 >* [Elaborazione delle risorse tramite i microservizi delle risorse](asset-microservices-overview.md)
+>* [Formati di file supportati per l’assegnazione di tag avanzati a risorse basate su testo](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
