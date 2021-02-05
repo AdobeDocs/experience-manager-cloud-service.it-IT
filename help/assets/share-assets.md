@@ -3,9 +3,9 @@ title: Condivisione di risorse, cartelle e raccolte come collegamento
 description: Questo articolo descrive come condividere risorse, cartelle e raccolte all'interno di [!DNL Experience Manager Assets] come collegamento ipertestuale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 >[!NOTE]
 >
 >* È necessario disporre dell’autorizzazione Modifica ACL per la cartella o la risorsa da condividere come collegamento.
->* Prima di condividere un collegamento con gli utenti, assicurarsi che Day CQ Mail Service sia configurato. In caso contrario, si verifica un errore.
+>* Prima di condividere un collegamento con gli utenti, assicurarsi che l&#39;indirizzo [e-mail in uscita sia abilitato](/help/implementing/developing/introduction/development-guidelines.md#sending-email). In caso contrario, si verifica un errore.
 
 
 1. Nell&#39;interfaccia utente [!DNL Assets], seleziona la risorsa da condividere come collegamento.
