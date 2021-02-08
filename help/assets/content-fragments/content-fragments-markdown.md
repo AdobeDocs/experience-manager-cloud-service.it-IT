@@ -2,9 +2,9 @@
 title: Markdown
 description: Durante la fase di creazione, l'editor dei frammenti di contenuto utilizza la sintassi di marketing per consentire di scrivere facilmente il contenuto.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 2ab82c18fedd5e49a9aa1bcb0a774f55327d9b56
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 4%
 
 ---
@@ -188,7 +188,7 @@ Gli escape barra rovesciata sono disponibili per i seguenti caratteri:
 
     `\ backslash`
 
-    ` backtick
+    `` ` backtick``
 
     `* asterisk`
 
