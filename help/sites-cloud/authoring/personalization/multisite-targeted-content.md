@@ -2,9 +2,9 @@
 title: Utilizzo dei contenuti di destinazione in più siti
 description: Se devi gestire contenuti di destinazione, ad esempio attività, esperienze e offerte tra i vari siti, è possibile sfruttare il supporto per più siti AEM integrato per il contenuto di destinazione
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2915'
 ht-degree: 87%
 
 ---
@@ -52,6 +52,7 @@ Un sito o una Live Copy collegano a un’area che contiene le attività che devo
 >
 >* Quando utilizzi il rollout o le Live Copy è richiesta una licenza MSM.
 >* Quando utilizzi la sincronizzazione con Adobe Target è richiesta la licenza per Adobe Target.
+
 >
 
 
@@ -188,9 +189,9 @@ Per creare un’area come Live Copy:
 
 1. Nel menu a discesa **Configurazioni rollout** seleziona la configurazione appropriata.
 
-   Consulta Configurazione di rollout installati per una descrizione di ciascuna opzione. <!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   Consulta [Configurazione di rollout installati](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations) per una descrizione di ciascuna opzione.
 
-   Consulta Creazione e sincronizzazione di Live Copy per ulteriori informazioni sulle Live Copy. <!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   Consulta [Creazione e sincronizzazione di Live Copy](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html) per ulteriori informazioni sulle Live Copy.
 
    >[!NOTE]
    >
@@ -239,6 +240,7 @@ Un’attività che eredita da un altro sito è contrassegnata in verde accanto a
 >
 >* Puoi sospendere o scollegare solo le Live Copy in un’attività.
 >* Non è necessario sospendere o scollegare le Live Copy per estendere un’attività ereditata. Puoi sempre creare **nuove** esperienze e offerte locali per l’attività. Se desideri modificare un’attività esistente, devi sospendere l’ereditarietà.
+
 >
 
 
