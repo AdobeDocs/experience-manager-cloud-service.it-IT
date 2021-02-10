@@ -2,9 +2,9 @@
 title: Video interattivi
 description: Scoprite come lavorare con video interattivi e video acquistabili in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '6016'
+source-wordcount: '6017'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,7 @@ Per visualizzare un video interattivo e shoppable in azione, fai clic su [Live D
 
 * Fate clic sulla miniatura per mettere in pausa il video e aprire la visualizzazione rapida del prodotto. Ad esempio, fate clic sulla miniatura di KitchenAid nel video per vedere la rotazione a 360 gradi del mixer oppure ingrandite per visualizzare i dettagli del mixer.
 
-Vedere anche [Utilizzo di video interattivi con Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+Vedere anche [Utilizzo di video interattivi con Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
 
 <!-- 
 
@@ -93,10 +93,9 @@ Se utilizzate un WCM di terze parti (Web Content Manager), dovete integrare il n
 ## (Facoltativo) Identificazione delle variabili Quickview {#optional-identifying-quickview-variables}
 
 >[!NOTE]
->
->Questa attività è necessaria solo se sono soddisfatte le seguenti condizioni:
->* Per aggiungere interattività al video, attivate l’opzione Visualizzazione rapida.
->* L&#39;implementazione di AEM non utilizza *un* framework di integrazione eCommerce per estrarre i dati di prodotto in AEM da qualsiasi soluzione di eCommerce come IBM Webferfera Commerce, Elastic Path, hybris o Intershop. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+Questa attività è necessaria solo se sono soddisfatte le seguenti condizioni:
+* Per aggiungere interattività al video, attivate l’opzione Visualizzazione rapida.
+* L&#39;implementazione di AEM non utilizza *un* framework di integrazione eCommerce per estrarre i dati di prodotto in AEM da qualsiasi soluzione di eCommerce come IBM Webferfera Commerce, Elastic Path, hybris o Intershop. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
 
 Se l&#39;implementazione di AEM utilizza eCommerce, puoi saltare questa attività e passare all&#39;attività successiva.
 
@@ -257,12 +256,10 @@ Dopo aver aggiunto i segmenti della timeline, potete aggiungere delle miniature 
 Vedere [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->Gli strumenti di condivisione social media in Video interattivo non sono supportati quando incorporate il visualizzatore in un frammento esperienza. Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
+Gli strumenti di condivisione social media in Video interattivo non sono supportati quando incorporate il visualizzatore in un frammento esperienza. Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
 
 >[!NOTE]
->
->Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
+Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
 
 Le opzioni Annulla e Ripristina, accanto all’angolo superiore destro della pagina, sono supportate durante la sessione di creazione/modifica corrente.
 
@@ -338,7 +335,7 @@ Per aggiungere interattività al video:
 
    Screenshot B
 
-   Nella schermata B sopra, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. Tenere presente che i timbri temporali della scala della linea temporale sono ora impostati a intervalli di 3 secondi.
+   Nella schermata B sopra, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. Tenere presente che i timbri temporali della scala temporale sono impostati a intervalli di 3 secondi.
 
    ![chlimage_1-25](assets/chlimage_1-131.png)
 
@@ -483,8 +480,7 @@ Per aggiungere interattività al video:
    Al termine, toccare **[!UICONTROL Save]**.
 
    >[!NOTE]
-   >
-   >Quando salvi il video interattivo, con esso viene salvato automaticamente un file associato `.vtt`. Il file `.vtt`viene salvato nella cartella principale `_VTT` di **[!UICONTROL Assets]**. Il file e la cartella sono necessari affinché il video interattivo possa essere riprodotto correttamente sul sito web. Non spostare, modificare o eliminare la cartella `_VTT` o il relativo contenuto.
+   Quando salvi il video interattivo, con esso viene salvato automaticamente un file associato `.vtt`. Il file `.vtt`viene salvato nella cartella principale `_VTT` di **[!UICONTROL Assets]**. Il file e la cartella sono necessari affinché il video interattivo possa essere riprodotto correttamente sul sito web. Non spostare, modificare o eliminare la cartella `_VTT` o il relativo contenuto.
 
 1. Pubblicate il video interattivo. Con la pubblicazione viene creato il codice o l’URL da incorporare e da copiare e incollare nelle esperienze del sito Web.
 
@@ -493,8 +489,7 @@ Per aggiungere interattività al video:
    Consultate [Pubblicazione di risorse](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   >
-   >Per pubblicare un video acquistabile con Visualizzazioni rapide, accertatevi anche di pubblicare separatamente ciascuna risorsa immagine del video correlata dall’area di commercio.
+   Per pubblicare un video acquistabile con Visualizzazioni rapide, accertatevi anche di pubblicare separatamente ciascuna risorsa immagine del video correlata dall’area di commercio.
 
    Dopo aver aggiunto i segmenti della timeline e pubblicato il video interattivo, potete aggiungerlo alla pagina di destinazione del sito Web esistente. Consultate [Integrazione di un video interattivo con il sito Web.](#integrating-an-interactive-video-with-your-website)
 
@@ -519,9 +514,8 @@ Se avete aggiunto interattività con le visualizzazioni rapide, usate solo il co
 Il codice da incorporare copiato è impostato per un ambiente reattivo, pertanto dovrebbe adattarsi automaticamente all’area precedentemente occupata dal video statico.
 
 >[!NOTE]
->
->A questo punto, se avete aggiunto interattività solo con pagine Web con collegamento ipertestuale, avete finito.
->Tuttavia, se avete aggiunto interattività per attivare una visualizzazione rapida, le miniature adiacenti al video interattivo sono solo a scopo di visualizzazione; non sono ancora integrati con le viste Quickview esistenti. In tal caso, è ora necessario integrare il video interattivo con le visualizzazioni rapide esistenti sul sito Web.
+A questo punto, se avete aggiunto interattività solo con pagine Web con collegamento ipertestuale, avete finito.
+Tuttavia, se avete aggiunto interattività per attivare una visualizzazione rapida, le miniature adiacenti al video interattivo sono solo a scopo di visualizzazione; non sono ancora integrati con le viste Quickview esistenti. In tal caso, è ora necessario integrare il video interattivo con le visualizzazioni rapide esistenti sul sito Web.
 
 **Esempio**
 
@@ -563,8 +557,7 @@ L&#39;integrazione è semplice come rimuovere il codice da incorporare video e s
 ## Integrazione di un video interattivo con una visualizzazione rapida esistente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
->
->Questa attività si applica solo se siete clienti  AEM Assets indipendenti.
+Questa attività si applica solo se siete clienti  AEM Assets indipendenti.
 
 L’ultimo passaggio di questo processo consiste nell’integrare il video interattivo con un’implementazione esistente di Quickview utilizzata sul sito Web. Non esiste una soluzione all&#39;integrazione che funzioni per tutti i casi. Ogni implementazione della visualizzazione rapida è univoca. Di conseguenza, è necessario un approccio specifico che molto probabilmente implichi l&#39;assistenza di una persona IT front-end.
 
