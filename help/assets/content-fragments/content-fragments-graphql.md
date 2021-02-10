@@ -2,10 +2,10 @@
 title: Distribuzione di contenuti headless con frammenti di contenuto con GraphQL
 description: Scoprite come utilizzare i frammenti di contenuto in Adobe Experience Manager (AEM) come Cloud Service con GraphQL per la distribuzione di contenuti headless.
 translation-type: tm+mt
-source-git-commit: 54b377c6d98398fd5066dc4a3337a3877b9e3ed7
+source-git-commit: c5f041f29133718a4260a289255e21b535cde12f
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 1%
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
@@ -17,6 +17,14 @@ Con Adobe Experience Manager (AEM) come Cloud Service, potete utilizzare i framm
 >[!NOTE]
 >
 >Per un&#39;introduzione a Headless Development per  AEM Sites come Cloud Service, vedere [Headless and AEM](/help/implementing/developing/headless/introduction.md).
+
+>[!NOTE]
+>
+>GraphQL è attualmente utilizzato in due scenari (separati) in Adobe Experience Manager (AEM) come Cloud Service:
+>
+>* [AEM Commerce consuma i dati provenienti da una piattaforma di eCommerce tramite GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* [AEM Frammenti di contenuto collaborano con l&#39;API AEM GraphQL (un&#39;implementazione personalizzata, basata su GraphQL standard) per fornire contenuto strutturato da utilizzare nelle applicazioni](/help/assets/content-fragments/graphql-api-content-fragments.md).
+
 
 ## CMS senza testa {#headless-cms}
 
