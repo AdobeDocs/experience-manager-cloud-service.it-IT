@@ -1,8 +1,10 @@
 ---
 title: Abilitazione delle funzioni progressive delle app Web
 description: ' AEM Sites consente all''autore del contenuto di abilitare funzionalità di app Web progressive a qualsiasi sito tramite una configurazione semplice invece di codificare.'
+hide: true
+hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: ba014bb90b1cb08630455b3ac72895272ae8ed5b
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
 source-wordcount: '1725'
 ht-degree: 0%
