@@ -2,9 +2,9 @@
 title: Best practice per ottimizzare la qualità delle immagini
 description: Scoprite le best practice che potete utilizzare in Dynamic Media per ottimizzare la qualità delle risorse di immagini.
 translation-type: tm+mt
-source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1474'
 ht-degree: 5%
 
 ---
@@ -40,9 +40,9 @@ Come procedura ottimale per il ridimensionamento delle immagini, utilizzate `&wi
 
 La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito Web e in cui si verificano numerosi errori. Dedica il tempo necessario per scoprire come funzionano la nitidezza e la maschera di contrasto in AEM, facendo riferimento alle seguenti risorse utili:
 
-Il white paper sulle procedure ottimali [La nitidezza delle immagini in  Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) si applica anche a AEM.
+* Il white paper sulle procedure ottimali [La nitidezza delle immagini in  Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) si applica anche a AEM.
 
-Sul  Adobe TV, guardare [Nitidezza di un&#39;immagine con maschera di contrasto](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+* Guardate [Utilizzo della nitidezza immagine con AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
 Con AEM potete rendere le immagini più nitide in fase di assimilazione, distribuzione o entrambe. Nella maggior parte dei casi, tuttavia, è necessario rendere le immagini più nitide utilizzando un solo metodo, ma non entrambi. La nitidezza delle immagini al momento della distribuzione, con un URL, offre in genere i risultati migliori.
 
@@ -113,7 +113,7 @@ Questa combinazione di impostazioni produce ottimi risultati nella maggior parte
 
 Se l’immagine richiede un’ulteriore ottimizzazione, regolate gradualmente i parametri di nitidezza (maschera di contrasto) iniziando con un raggio impostato su 0.2 o 0.3. Quindi, aumentate gradualmente l&#39;importo da 1,75 a un massimo di 4 (equivalente a 400% in Photoshop). Verificate che il risultato desiderato sia raggiunto.
 
-Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggio in incrementi decimali. Per ogni incremento decimale, riavviate il valore a 1,75 e aumentatelo gradualmente a 4. Ripetere questa procedura fino a ottenere il risultato desiderato. Anche se i valori riportati sopra rappresentano un approccio convalidato dagli studi creativi, è possibile iniziare con altri valori e seguire altre strategie. Se i risultati sono soddisfacenti o meno è una questione soggettiva, quindi la sperimentazione strutturata è fondamentale.
+Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggio in incrementi decimali. Per ogni incremento decimale, riavviate il valore a 1,75 e aumentatelo gradualmente a 4. Ripetere questa procedura fino a ottenere il risultato desiderato. Anche se i valori sopra riportati sono un approccio convalidato dagli studi creativi, potete iniziare con altri valori e seguire altre strategie. Se i risultati sono soddisfacenti o meno è una questione soggettiva, quindi la sperimentazione strutturata è fondamentale.
 
 Per ottimizzare il flusso di lavoro, potete inoltre trovare utili i seguenti suggerimenti generali:
 
