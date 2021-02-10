@@ -2,9 +2,9 @@
 title: Gestione dei predefiniti per immagini
 description: Scoprite come creare, modificare e gestire i predefiniti per immagini.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3607'
+source-wordcount: '3647'
 ht-degree: 11%
 
 ---
@@ -381,7 +381,7 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
     </ul>
     <div>
       La nitidezza è descritta in
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Immagini di nitidezza</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">Utilizzo della nitidezza immagine con AEM video Dynamic Media</a>, in <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Nitidezza di un'immagine</a> argomento della guida in linea e in <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Procedure ottimali per la nitidezza delle immagini nei PDF scaricabili di Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
