@@ -2,9 +2,9 @@
 title: Integrazione dei visualizzatori Dynamic Media con Adobe Analytics e Adobe Launch
 description: Con l’estensione Dynamic Media Viewers per Adobe Launch, rilasciata con Dynamic Media Viewers 5.13, i clienti di Dynamic Media, Adobe Analytics e Adobe Launch possono utilizzare eventi e dati specifici per i visualizzatori Dynamic Media nella propria configurazione di Adobe Launch.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '6628'
+source-wordcount: '6626'
 ht-degree: 17%
 
 ---
@@ -835,4 +835,4 @@ Al momento, AEM autore non supporta l’integrazione dei visualizzatori Dynamic 
 
 È possibile ovviare a questo limite specificando l&#39;URL di sviluppo o di gestione temporanea della libreria di lancio di  Adobe nella configurazione  Adobe Launch Cloud per AEM pubblicazione precedente. In questo modo, il nodo di pubblicazione AEM utilizza la versione Sviluppo o Gestione temporanea della libreria  Lancio Adobe.
 
-Per ulteriori informazioni sulla configurazione  Adobe di Launch Cloud Configuration, vedere [Integrare AEM con  Adobe Launch tramite  Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html).
+Per ulteriori informazioni sulla configurazione  Experience Platform Launch di Launch Cloud Configuration, vedere [Integrate  e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations).
