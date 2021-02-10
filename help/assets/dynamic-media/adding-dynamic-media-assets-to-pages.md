@@ -2,10 +2,10 @@
 title: Aggiunta di risorse Dynamic Media alle pagine
 description: Come aggiungere componenti Dynamic Media a una pagina in Adobe Experience Manager come Cloud Service.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3135'
-ht-degree: 30%
+source-wordcount: '3128'
+ht-degree: 31%
 
 ---
 
@@ -210,7 +210,7 @@ Per modificare le seguenti impostazioni Dynamic Media, fai clic su **[!UICONTROL
 
 Usate il componente Dynamic Media per aggiungere le risorse di immagine SmartCrop alle pagine Web. Quando modifichi il componente puoi scegliere di usare un predefinito visualizzatore video predefinita per la riproduzione del video nella pagina.
 
-Vedere [Utilizzo di Smart Crop con risorse di Experience Manager  Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+Vedere [Utilizzo di Smart Crop con risorse di Experience Manager  Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html#dynamic-media)
 
 Vedere anche [Profili immagine](/help/assets/dynamic-media/image-profiles.md).
 
@@ -337,10 +337,10 @@ Per informazioni dettagliate sull&#39;utilizzo di HTTP/2 con l&#39;account Dynam
 
 >[!MORELIKETHIS]
 >
->* [Utilizzo del lettore video in Dynamic Media  Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Utilizzo di video interattivi con Dynamic Media  Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Il visualizzatore delle risorse con  Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Utilizzo della miniatura video personalizzata con  Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Gestione del colore con Dynamic Media  Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [Utilizzo della nitidezza immagine con  Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Utilizzo del lettore video in Dynamic Media  Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html#dynamic-media)
+>* [Utilizzo di video interattivi con Dynamic Media  Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
+>* [Il visualizzatore delle risorse con  Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html#dynamic-media)
+>* [Utilizzo della miniatura video personalizzata con  Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html#dynamic-media)
+>* [Gestione del colore con Dynamic Media  Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
+>* [Utilizzo della nitidezza immagine con  Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)
 
