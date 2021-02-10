@@ -2,7 +2,7 @@
 title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
+source-git-commit: d4b7aed89e587750b96b13d07a9252ecabee6c03
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Questo può essere utile, ad esempio, quando la logica aziendale richiede una re
 * possono essere sostituiti a un livello di granulosità più sottile dalle seguenti direttive apache mod_header:
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -43,7 +43,7 @@ Questo può essere utile, ad esempio, quando la logica aziendale richiede una re
    Fate attenzione quando impostate intestazioni di controllo cache globali o che corrispondono a un&#39;area ampia, in modo che non vengano applicate al contenuto che intendete mantenere privato. Valutare la possibilità di utilizzare più direttive per garantire che le regole siano applicate in modo preciso. Detto questo, AEM come Cloud Service rimuovere l&#39;intestazione della cache se rileva che è stata applicata a ciò che rileva come non possa essere memorizzata nella cache dal dispatcher, come descritto nella documentazione del dispatcher. Per obbligare AEM ad applicare sempre la memorizzazione nella cache, è possibile aggiungere l&#39;opzione &quot;always&quot; come segue:
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -59,7 +59,7 @@ Questo può essere utile, ad esempio, quando la logica aziendale richiede una re
 * Per evitare che un contenuto specifico venga memorizzato nella cache, impostate l&#39;intestazione Cache-Control su *private*. Ad esempio, quanto segue impedisce al contenuto HTML in una directory denominata **myfolder** di essere memorizzato nella cache:
 
    ```
-      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
       Header set Cache-Control “private”
      </LocationMatch>
    ```
@@ -78,7 +78,7 @@ Questo può essere utile, ad esempio, quando la logica aziendale richiede una re
 * può essere impostato su un livello di granulosità più fine dalle seguenti direttive apache `mod_headers`:
 
    ```
-      <LocationMatch "^\.*.(jpeg|jpg)$">
+      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
         Header set Cache-Control "max-age=222"
         Header set Age 0
       </LocationMatch>
