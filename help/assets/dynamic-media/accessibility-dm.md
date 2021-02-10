@@ -1,38 +1,38 @@
 ---
-title: Accessibilità in [!DNL Dynamic Media]
+title: Accessibilità in Dynamic Media
 description: Informazioni sull’accessibilità nei visualizzatori Dynamic Media e Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 75caf21c399271b23e71c7c0045e3a41cda8a851
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 
-# Accessibilità in Dynamic Media {#working-with-three-d-assets-dm}
+# Accessibilità in Dynamic Media {#accessibility-in-dm}
 
 Dynamic Media supporta le tecnologie di controllo della tastiera e di assistenza, come gli assistenti vocali JAWS e NVDA, nell’interfaccia utente di authoring.
 
-## Supporto dell&#39;accessibilità da tastiera in Dynamic Media
+## Supporto per l&#39;accessibilità da tastiera in Dynamic Media {#keyboard-support-in-dm}
 
-Poiché Dynamic Media è un plug-in per  risorse di Experience Manager, la maggior parte dei controlli da tastiera si comportano esattamente come in  risorse Experience Manager. Ad esempio, il pulsante `Cancel` in Dynamic Media ha la stessa evidenziazione dello stato attivo di  risorse del Experience Manager e reagisce alla chiave `Spacebar` come in  risorse Experience Manager. Vedere [Scelte rapide da tastiera in Risorse](/help/assets/accessibility.md#keyboard-shortcuts).
+Poiché Dynamic Media è un plug-in per  risorse di Experience Manager, la maggior parte dei controlli da tastiera si comportano come in  risorse Experience Manager. Ad esempio, il pulsante `Cancel` in Dynamic Media ha la stessa evidenziazione dello stato attivo  risorse Experience Manager. Reagisce anche alla chiave `Spacebar` come in  risorse di Experience Manager. Vedere [scelte rapide da tastiera in Risorse](/help/assets/accessibility.md#keyboard-shortcuts).
 
-I tasti supportati dai singoli elementi dell&#39;interfaccia utente in Dynamic Media sono, nella maggior parte dei casi, evidenti e facili da scoprire. Il controllo della tastiera in Dynamic Media è circa quanto segue:
+Le sequenze di tasti supportate dai singoli elementi dell&#39;interfaccia utente in Dynamic Media sono, nella maggior parte dei casi, ovvie e facili da trovare. Il controllo della tastiera in Dynamic Media è circa quanto segue:
 
 * Possibilità di utilizzare i tasti `Tab` e `Shift+Tab` per spostarsi tra gli elementi interattivi sulla pagina.
 L&#39;utilizzo di `Tab` rende più attivo il successivo elemento dell&#39;interfaccia utente nell&#39;ordine di tabulazione; l&#39;utilizzo di `Shift+Tab` riattiva l&#39;elemento dell&#39;interfaccia utente precedente.
 La barra laterale di messa a fuoco segue la posizione naturale dell&#39;elemento dell&#39;interfaccia utente sullo schermo e si sposta in ordine da sinistra a destra, quindi dall&#39;alto verso il basso. Inoltre, se un campo ha un errore, è possibile premere `Tab` per attivarlo.
 * Possibilità di utilizzare il tasto `Spacebar` e `Enter` per attivare gli elementi standard dell&#39;interfaccia utente, ad esempio pulsanti, elenco a discesa e così via.
-* Possibilità di visualizzare l&#39;evidenziazione dello stato attivo. L&#39;elemento dell&#39;interfaccia utente attivo può ricevere un&#39;indicazione visiva come bordo intorno all&#39;elemento dell&#39;interfaccia utente.
+* Possibilità di visualizzare l&#39;evidenziazione dello stato attivo. L&#39;elemento dell&#39;interfaccia utente attivo ha ricevuto un&#39;indicazione visiva come bordo intorno all&#39;elemento dell&#39;interfaccia utente.
 * Nell&#39;editor dei punti di attivazione è possibile utilizzare alcuni tasti di scelta rapida personalizzati, ad esempio i tasti freccia, per interagire con elementi dell&#39;interfaccia utente complessi per riposizionare i punti di attivazione.
 * Nell&#39;editor video interattivo, potete utilizzare il simbolo `Spacebar` per selezionare un&#39;immagine e aggiungerla a un segmento. Inoltre, è possibile utilizzare il tasto `Backspace` per eliminare l&#39;elemento selezionato dalla scheda **[!UICONTROL Content]**. Inoltre, premendo `Tab` è possibile navigare tra gli elementi interattivi della pagina.
 * Nell’editor Ritaglio immagine/Ritaglio avanzato, potete effettuare le seguenti operazioni:
    * Usate i tasti freccia per ritagliare le dimensioni della cornice, riposizionare l’immagine o entrambi.
-   * La prima `Tab` interruzione evidenzia l&#39;intera cornice dell&#39;immagine. È quindi possibile utilizzare i tasti freccia sulla tastiera per riposizionare il fotogramma.
+   * La prima `Tab` interruzione evidenzia l&#39;intera cornice dell&#39;immagine. È quindi possibile utilizzare i tasti freccia sulla tastiera per riposizionare la cornice.
    * Le quattro `Tab` fermate successive sono i quattro angoli del telaio. Quando lo stato attivo è posizionato su un angolo cornice, l&#39;angolo è evidenziato. Anche in questo caso, è possibile utilizzare i tasti freccia sulla tastiera per spostare l&#39;angolo attivo.
 Vedere [Modifica del ritaglio avanzato o del campione avanzato di una singola immagine](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
