@@ -2,10 +2,10 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 4%
+source-wordcount: '721'
+ht-degree: 5%
 
 ---
 
@@ -43,9 +43,11 @@ La seguente release (2021.2.0) sarà del 25 febbraio 2021.
 
 * Possibilità di visualizzare l&#39;anteprima dell&#39;output JSON direttamente nell&#39;editor frammento di contenuto.
 
-### App Web progressive (PWA) {#pwa}
+<!--
+### Progressive Web Apps (PWAs) {#pwa}
 
-* [Una versione Progressive Web App (PWA) di un ](/help/sites-cloud/authoring/features/enable-pwa.md)  sito ora può essere abilitata a livello di progetto tramite una semplice configurazione.
+* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
+-->
 
 ## [!DNL Adobe Experience Manager Assets] come  [!DNL Cloud Service] {#assets}
 
