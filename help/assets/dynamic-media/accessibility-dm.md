@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 75caf21c399271b23e71c7c0045e3a41cda8a851
+source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Le sequenze di tasti supportate dai singoli elementi dell&#39;interfaccia utente
 * Possibilità di utilizzare i tasti `Tab` e `Shift+Tab` per spostarsi tra gli elementi interattivi sulla pagina.
 L&#39;utilizzo di `Tab` rende più attivo il successivo elemento dell&#39;interfaccia utente nell&#39;ordine di tabulazione; l&#39;utilizzo di `Shift+Tab` riattiva l&#39;elemento dell&#39;interfaccia utente precedente.
 La barra laterale di messa a fuoco segue la posizione naturale dell&#39;elemento dell&#39;interfaccia utente sullo schermo e si sposta in ordine da sinistra a destra, quindi dall&#39;alto verso il basso. Inoltre, se un campo ha un errore, è possibile premere `Tab` per attivarlo.
-* Possibilità di utilizzare il tasto `Spacebar` e `Enter` per attivare gli elementi standard dell&#39;interfaccia utente, ad esempio pulsanti, elenco a discesa e così via.
+* Possibilità di utilizzare il tasto `Spacebar` e `Enter` per attivare gli elementi standard dell&#39;interfaccia utente, ad esempio pulsanti ed elenchi a discesa.
 * Possibilità di visualizzare l&#39;evidenziazione dello stato attivo. L&#39;elemento dell&#39;interfaccia utente attivo ha ricevuto un&#39;indicazione visiva come bordo intorno all&#39;elemento dell&#39;interfaccia utente.
 * Nell&#39;editor dei punti di attivazione è possibile utilizzare alcuni tasti di scelta rapida personalizzati, ad esempio i tasti freccia, per interagire con elementi dell&#39;interfaccia utente complessi per riposizionare i punti di attivazione.
 * Nell&#39;editor video interattivo, potete utilizzare il simbolo `Spacebar` per selezionare un&#39;immagine e aggiungerla a un segmento. Inoltre, è possibile utilizzare il tasto `Backspace` per eliminare l&#39;elemento selezionato dalla scheda **[!UICONTROL Content]**. Inoltre, premendo `Tab` è possibile navigare tra gli elementi interattivi della pagina.
