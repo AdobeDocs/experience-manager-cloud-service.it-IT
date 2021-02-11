@@ -1,11 +1,12 @@
 ---
 title: Aggiunta di risorse Dynamic Media alle pagine
 description: Come aggiungere componenti Dynamic Media a una pagina in Adobe Experience Manager come Cloud Service.
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: d1f2315de6b96a912b38d4b81f5ea0a672f6c168
+source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
 workflow-type: tm+mt
-source-wordcount: '3123'
-ht-degree: 29%
+source-wordcount: '3082'
+ht-degree: 21%
 
 ---
 
@@ -14,15 +15,15 @@ ht-degree: 29%
 
 Per aggiungere la funzionalità Dynamic Media alle risorse utilizzate sui siti web, puoi inserire direttamente nella pagina il componente **Dynamic Media**, **File multimediali interattivi**, **Elemento multimediale panoramico** o **File multimediali video 360**. Accedete alla modalità Layout e attivate i componenti Dynamic Media. Quindi aggiungete questi componenti alla pagina e aggiungete le risorse al componente. I componenti Dynamic Media sono intelligenti: rilevano l’aggiunta di un’immagine o di un video, dunque le opzioni di configurazione disponibili cambiano di conseguenza.
 
-Potete aggiungere risorse Dynamic Media direttamente alla pagina se utilizzate  Experience Manager come WCM. Se utilizzate una terza parte per WCM, [collegare](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incorporare](/help/assets/dynamic-media/embed-code.md) le risorse. Per un sito web dinamico di terze parti, consulta la sezione [Distribuzione di immagini ottimizzate in un sito dinamico](/help/assets/dynamic-media/responsive-site.md).
+Potete aggiungere risorse Dynamic Media direttamente alla pagina se utilizzate  Experience Manager come WCM. Se utilizzate una terza parte per WCM, [collegare](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incorporare](/help/assets/dynamic-media/embed-code.md) le risorse. Per un sito Web reattivo di terze parti, consultate [Distribuzione di immagini ottimizzate in un sito reattivo](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->È necessario pubblicare le risorse prima di aggiungerle alle pagine  Experience Manager. Consultate [Pubblicazione di Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Assicuratevi di pubblicare le risorse prima di aggiungerle alle pagine  Experience Manager. Consultate [Pubblicazione di Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Aggiunta di un componente Dynamic Media a una pagina {#adding-a-dynamic-media-component-to-a-page}
 
-L’aggiunta a una pagina di un componente di supporto 3D, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop Video o Video 360 equivale all’aggiunta di un componente a qualsiasi pagina. I componenti Dynamic Media sono descritti nelle sezioni seguenti.
+L’aggiunta a una pagina di un componente di supporto 3D, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop Video o Video 360 equivale all’aggiunta di un componente a qualsiasi pagina.
 
 **Aggiunta di un componente Dynamic Media a una pagina**
 
@@ -35,7 +36,7 @@ L’aggiunta a una pagina di un componente di supporto 3D, Dynamic Media, Intera
 
 1. Trascinate un componente **[!UICONTROL Dynamic Media]** e rilasciatelo nella posizione desiderata sulla pagina.
 
-1. Passate il puntatore del mouse direttamente sul componente. Quando il componente è circondato da una casella blu, toccate una volta per visualizzare la barra degli strumenti del componente. Toccate l&#39;icona **[!UICONTROL Configurazione (chiave inglese)]**.
+1. Passate il puntatore direttamente sul componente. Quando il componente è circondato da una casella blu, toccate una volta per visualizzare la barra degli strumenti del componente. Toccate l&#39;icona **[!UICONTROL Configurazione (chiave inglese)]**.
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
@@ -51,10 +52,10 @@ L’aggiunta a una pagina di un componente di supporto 3D, Dynamic Media, Intera
 
 ### Abilitazione dei componenti Dynamic Media {#enabling-dynamic-media-components}
 
-Se non è disponibile alcun componente Dynamic Media da aggiungere a una pagina, è probabile che sia necessario prima abilitare i componenti che si desidera utilizzare.
+Se non è disponibile alcun componente Dynamic Media da aggiungere a una pagina, è probabile che sia necessario abilitare i componenti che si desidera utilizzare.
 
 1. In  Experience Manager, aprite la pagina in cui desiderate aggiungere il componente Dynamic Media.
-1. Sul lato sinistro della barra degli strumenti accanto alla parte superiore della pagina, toccare l&#39;icona Informazioni pagina, quindi toccare **[!UICONTROL Modifica modello]** dall&#39;elenco a discesa.
+1. A sinistra della barra degli strumenti accanto alla parte superiore della pagina, toccate l&#39;icona Informazioni pagina, quindi toccate **[!UICONTROL Modifica modello]** dall&#39;elenco a discesa.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
 
@@ -68,13 +69,14 @@ Se non è disponibile alcun componente Dynamic Media da aggiungere a una pagina,
    ![Componenti consentiti](/help/assets/assets-dm/allowed-components.png)
 
 1. Scorrete fino a visualizzare **[!UICONTROL Dynamic Media]**.
-1. Toccate l&#39;icona > a sinistra di **[!UICONTROL Dynamic Media]** per espandere l&#39;elenco, quindi selezionate i componenti Dynamic Media da abilitare.
+1. Toccate l&#39;icona > a sinistra di **[!UICONTROL Dynamic Media]**, quindi selezionate i componenti Dynamic Media da abilitare.
 
    ![Elenco dei componenti Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
 1. Nell&#39;angolo superiore destro della pagina **[!UICONTROL Contenitore di layout]**, toccate l&#39;icona Fine (segno di spunta).
 
-1. Sul lato destro della barra degli strumenti accanto alla parte superiore della pagina, dall&#39;elenco a discesa, toccare **[!UICONTROL Contenuto iniziale]**, quindi [aggiungere un componente Dynamic Media a una pagina](#adding-a-dynamic-media-component-to-a-page) come al solito.
+1. Sul lato destro della barra degli strumenti accanto alla parte superiore della pagina, toccate **[!UICONTROL Contenuto iniziale]** dall&#39;elenco a discesa.
+1. [Aggiungere un componente Dynamic Media a una ](#adding-a-dynamic-media-component-to-a-page) pagina come al solito.
 
 ## Localizzazione dei componenti Dynamic Media {#localizing-dynamic-media-components}
 
@@ -88,7 +90,7 @@ Potete localizzare i componenti Dynamic Media in uno dei due modi seguenti:
 
    >[!NOTE]
    >
-   >Non tutte le lingue disponibili nel menu **[!UICONTROL Lingua]** dispongono attualmente di token assegnati.
+   >Non tutte le lingue disponibili nel menu **[!UICONTROL Lingua]** dispongono attualmente di token.
 
 ## Componenti Dynamic Media disponibili {#dynamic-media-components}
 
@@ -120,7 +122,7 @@ Il componente Dynamic Media è avanzato. A seconda se aggiungete un’immagine o
 
 >
 >
-Tenete presente che l’assegnazione di un predefinito per visualizzatori diverso a ciascun componente Dynamic Media in quella pagina non è supportata.
+L’assegnazione di un predefinito per visualizzatori diverso a ciascun componente Dynamic Media in quella pagina non è supportata.
 >
 >Tuttavia, potete usare lo stesso predefinito per visualizzatori per tutti i componenti Dynamic Media che utilizzano risorse dello stesso tipo, all’interno della pagina.
 
@@ -132,7 +134,7 @@ Quando aggiungi il Componente elementi multimediali dinamici e le **[!UICONTROL 
 
 Il componente elementi multimediali dinamici consente di aggiungere immagini dinamiche, compresi set di immagini, set di rotazione e set di file multimediali diversi. È possibile ingrandire, ridurre e, se applicabile, ruotare un&#39;immagine all&#39;interno di un set 360 gradi, o selezionare un&#39;immagine da un altro tipo di set.
 
-È possibile anche configurare il predefinito visualizzatore, il predefinito immagine o il formato immagine direttamente nel componente. Per rendere un&#39;immagine reattiva è possibile impostare i punti di interruzione o applicare un predefinito immagine reattiva.
+È possibile anche configurare il predefinito visualizzatore, il predefinito immagine o il formato immagine direttamente nel componente. Per rendere l’immagine reattiva, potete impostare i punti di interruzione o applicare un predefinito per immagini reattivo.
 
 Per modificare le seguenti impostazioni Dynamic Media, toccate l&#39;icona **[!UICONTROL Modifica]** nel componente, quindi **[!UICONTROL Dynamic Media Settings]**.
 
@@ -142,21 +144,21 @@ Per modificare le seguenti impostazioni Dynamic Media, toccate l&#39;icona **[!U
 >
 >Per impostazione predefinita, il componente immagine Dynamic Media è adattivo. Se vuoi impostarne una dimensione fissa, lo puoi fare nella scheda **[!UICONTROL Avanzate]** del componente, alle voci **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
 
-* **[!UICONTROL Predefinito]** visualizzatore - Selezionate un predefinito esistente dal menu a discesa. Se il predefinito per visualizzatori che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. Non è possibile selezionare un predefinito per visualizzatori se si utilizza un predefinito per immagini, e viceversa.
+* **[!UICONTROL Predefinito]** visualizzatore - Selezionate un predefinito esistente dall’elenco a discesa. Se il predefinito per visualizzatori ricercato non è visibile, dovete renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. Non potete selezionare un predefinito per visualizzatori se usate un predefinito per immagini e viceversa.
 
-   Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi. Anche i predefiniti per visualizzatori sono avanzati: vengono visualizzati solo i predefiniti per visualizzatori pertinenti.
+   Questa opzione è l’unica disponibile per la visualizzazione di set di immagini, set 360 gradi o set di file multimediali diversi. I predefiniti per visualizzatori visualizzati sono anche predefiniti per visualizzatori rilevanti solo per gli elementi avanzati.
 
 * **[!UICONTROL Modificatori]** visualizzatore - I modificatori visualizzatore assumono la forma di coppia nome=valore con un carattere di delimitazione &amp; e consentono di modificare i visualizzatori come indicato nella guida di riferimento dei visualizzatori. Un esempio di modificatore di visualizzatore è `posterimage=img.jpg&caption=text.vtt,1` che imposta un’immagine diversa per la miniatura del video e associa un file di sottotitoli/sottotitoli codificati al video.
 
-* **[!UICONTROL Predefinito]** immagine - Selezionate un predefinito per immagini esistente dal menu a discesa. Se il predefinito per immagini che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta Gestione dei predefiniti per immagini. Non è possibile selezionare un predefinito per visualizzatori se si utilizza un predefinito per immagini, e viceversa.
+* **[!UICONTROL Predefinito]** immagine - Selezionate un predefinito per immagini esistente dall’elenco a discesa. Se il predefinito per immagini ricercato non è visibile, dovete renderlo visibile. Consulta Gestione dei predefiniti per immagini. Non potete selezionare un predefinito per visualizzatori se usate un predefinito per immagini e viceversa.
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
-* **[!UICONTROL Modificatori]** immagini - Potete applicare effetti immagine fornendo ulteriori comandi immagine. Questi sono descritti nei predefiniti per immagini e nel riferimento al comando Image Server.
+* **[!UICONTROL Modificatori]** immagini - Potete applicare effetti immagine fornendo ulteriori comandi immagine. Questi comandi sono descritti nei predefiniti per immagini e nel riferimento al comando Image Server.
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
-* **[!UICONTROL Punti di interruzione]**: se utilizzi questa risorsa in un sito reattivo, devi aggiungere i punti di interruzione immagine. I punti di interruzione immagine devono essere separati da virgole (,). Questa opzione funziona quando non è stata definita alcuna altezza o larghezza in un predefinito immagine.
+* **[!UICONTROL Punti di interruzione]**: se utilizzi questa risorsa in un sito reattivo, devi aggiungere i punti di interruzione immagine. I punti di interruzione delle immagini devono essere separati da virgole (,). Questa opzione funziona quando non è stata definita alcuna altezza o larghezza in un predefinito immagine.
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
@@ -179,7 +181,7 @@ Per modificare le seguenti impostazioni Dynamic Media, toccate l&#39;icona **[!U
 
 #### Quando esegui operazioni con i Video {#when-working-with-video}
 
-Usate il componente Dynamic Media per aggiungere video dinamici alle pagine Web. Quando modifichi il componente puoi scegliere di usare un predefinito visualizzatore video predefinita per la riproduzione del video nella pagina.
+Usate il componente Dynamic Media per aggiungere video dinamici alle pagine Web. Quando modificate il componente, potete scegliere di usare un predefinito per visualizzatori video predefinito per riprodurre il video sulla pagina.
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
@@ -189,16 +191,16 @@ Per modificare le seguenti impostazioni Dynamic Media, fai clic su **[!UICONTROL
 >
 >Per impostazione predefinita, il componente video elementi multimediali dinamici è adattivo. Se si desidera impostarne una dimensione fissa, impostarla nel componente con la scheda **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]** nella scheda **[!UICONTROL Avanzate]**.
 
-* **[!UICONTROL Predefinito]** visualizzatore: selezionate un predefinito per visualizzatori video esistente dal menu a discesa. Se il predefinito per visualizzatori che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. 
+* **[!UICONTROL Predefinito]** visualizzatore: selezionate un predefinito per visualizzatori video esistente dall’elenco a discesa. Se il predefinito per visualizzatori ricercato non è visibile, dovete renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. 
 
-* **[!UICONTROL Modificatori]** visualizzatore - I modificatori visualizzatore assumono la forma di coppia nome=valore con un carattere di delimitazione &amp; e consentono di modificare i visualizzatori come indicato nella guida di riferimento dei visualizzatori di Adobi . Un esempio di modificatore visualizzatore è `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Modificatori]** visualizzatore - I modificatori del visualizzatore hanno la forma di una  `name=value` coppia di  `&` delimitatori. Consentono di modificare i visualizzatori come indicato nella guida di riferimento visualizzatori di Adobi . Un esempio di modificatore visualizzatore è `posterimage=img.jpg&caption=text.vtt,1`
 
    I modificatori del visualizzatore consentono, ad esempio, di effettuare le seguenti operazioni:
 
    * Associare un file di sottotitoli a un video: [caption](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Associare un file di navigazione a un video: [navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
-   Per modificare le seguenti impostazioni avanzate, fai clic su **[!UICONTROL Modifica]** nel componente.
+      Per modificare le seguenti impostazioni avanzate, fai clic su **[!UICONTROL Modifica]** nel componente.
 
 * **[!UICONTROL Titolo]** (Title) - Consente di modificare il titolo del video.
 
@@ -208,7 +210,7 @@ Per modificare le seguenti impostazioni Dynamic Media, fai clic su **[!UICONTROL
 
 #### Durante l&#39;utilizzo di SmartCrop {#when-working-with-smart-crop}
 
-Usate il componente Dynamic Media per aggiungere le risorse di immagine SmartCrop alle pagine Web. Quando modifichi il componente puoi scegliere di usare un predefinito visualizzatore video predefinita per la riproduzione del video nella pagina.
+Usate il componente Dynamic Media per aggiungere le risorse di immagine SmartCrop alle pagine Web. Quando modificate il componente, potete scegliere di usare un predefinito per visualizzatori video predefinito per riprodurre il video sulla pagina.
 
 Vedere [Utilizzo di Smart Crop con risorse di Experience Manager  Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html#dynamic-media)
 
@@ -222,13 +224,13 @@ Per modificare la seguente impostazione Dynamic Media, fai clic su **[!UICONTROL
 >
 >Per impostazione predefinita, il componente immagine Dynamic Media è adattivo. Se vuoi impostarne una dimensione fissa, lo puoi fare nella scheda **[!UICONTROL Avanzate]** del componente, alle voci **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
 
-* **[!UICONTROL Modificatori]** immagini - Potete applicare effetti immagine fornendo ulteriori comandi immagine. Questi sono descritti nei predefiniti per immagini e nel riferimento al comando Image Server.
+* **[!UICONTROL Modificatori]** immagini - Potete applicare effetti immagine fornendo ulteriori comandi immagine. Questi comandi sono descritti nei predefiniti per immagini e nel riferimento al comando Image Server.
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
    Per modificare le seguenti impostazioni avanzate, fai clic su **[!UICONTROL Modifica]** nel componente.
 
-* **[!UICONTROL Abilita corrispondenza]** proporzioni - Selezionate questa opzione per consentire ad Dynamic Media di selezionare una rappresentazione di ritaglio avanzato con proporzioni che meglio corrispondono alle proporzioni dell&#39;immagine originale.
+* **[!UICONTROL Abilita corrispondenza]** proporzioni: per consentire ad Dynamic Media di selezionare una rappresentazione di ritaglio avanzato con proporzioni che meglio corrispondono alle proporzioni dell&#39;immagine originale, selezionate questa opzione.
 
 * **[!UICONTROL Titolo]** (Title) - Consente di modificare il titolo dell&#39;immagine SmartCrop.
 
@@ -259,7 +261,7 @@ Il componente Contenuti multimediali interattivi è avanzato. A seconda se aggiu
 
 >
 >
-Tenete presente che l’assegnazione di un predefinito per visualizzatori diverso a ciascun componente per contenuti multimediali interattivi in quella pagina non è supportata.
+L’assegnazione di un predefinito per visualizzatori diverso a ciascun componente per contenuti multimediali interattivi in quella pagina non è supportata.
 >
 >Tuttavia, potete usare lo stesso predefinito per visualizzatori per tutti i componenti per contenuti multimediali interattivi che utilizzano risorse dello stesso tipo, all’interno della pagina.
 
@@ -267,7 +269,7 @@ Tenete presente che l’assegnazione di un predefinito per visualizzatori divers
 
 Per modificare le seguenti impostazioni **[!UICONTROL Generale]**, toccate **[!UICONTROL Modifica]** nel componente.
 
-* **[!UICONTROL Predefinito]** visualizzatore - Selezionate un predefinito esistente dal menu a discesa. Se il predefinito per visualizzatori che cerchi non è visibile, potrebbe essere necessario renderlo visibile. I predefiniti per visualizzatori devono essere pubblicati prima di poter essere utilizzati. Consulta Gestione dei predefiniti per visualizzatori. 
+* **[!UICONTROL Predefinito]** visualizzatore - Selezionate un predefinito esistente dall’elenco a discesa. Se il predefinito per visualizzatori ricercato non è visibile, dovete renderlo visibile. I predefiniti per visualizzatori devono essere pubblicati prima di poter essere utilizzati. Consulta Gestione dei predefiniti per visualizzatori. 
 
 * **[!UICONTROL Titolo]** (Title) - Consente di modificare il titolo del video.
 
@@ -301,7 +303,7 @@ Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse p
 
 >
 >
-Non è supportata l’assegnazione di un predefinito visualizzatore diverso a ciascun componente **[!UICONTROL Elemento multimediale panoramico]** di quella pagina.
+L&#39;assegnazione di un predefinito per visualizzatori diverso a ciascun componente **[!UICONTROL Supporto panoramico]** in quella pagina non è supportata.
 >
 >Tuttavia, potete usare lo stesso predefinito per visualizzatori per tutti i componenti per file multimediali panoramici che utilizzano risorse dello stesso tipo, all’interno della pagina.
 
@@ -309,15 +311,15 @@ Non è supportata l’assegnazione di un predefinito visualizzatore diverso a ci
 
 Per modificare la seguente impostazione, tocca **[!UICONTROL Configura]** nel componente.
 
-* **[!UICONTROL Predefinito]** visualizzatore - Selezionate un visualizzatore esistente dal menu a discesa Predefinito visualizzatore.
+* **[!UICONTROL Predefinito]** visualizzatore - Selezionate un visualizzatore esistente dall’elenco a discesa Predefinito visualizzatore.
 
-Se il predefinito per visualizzatori ricercato non è visibile, accertatevi che sia pubblicato. Per poter usare i predefiniti per visualizzatori, dovete pubblicarli. Consulta [Gestione dei predefiniti per visualizzatori](/help/assets/dynamic-media/managing-viewer-presets.md). 
+Se il predefinito per visualizzatori ricercato non è visibile, accertatevi che sia pubblicato. Pubblicate i predefiniti per visualizzatori prima di utilizzarli. Consulta [Gestione dei predefiniti per visualizzatori](/help/assets/dynamic-media/managing-viewer-presets.md). 
 
 ### Componente: Video 360 Media {#video-media-component}
 
-Utilizzate il componente **[!UICONTROL Video 360 Media]** per eseguire il rendering di video equirettangolari sulla pagina Web per un&#39;esperienza di visualizzazione coinvolgente di una stanza, una proprietà, un luogo, un paesaggio o una procedura medica.
+Utilizzate il componente **[!UICONTROL Video 360 Media]** per eseguire il rendering di video equirettangolari sulla pagina Web. In questo modo si assicura un&#39;esperienza di visualizzazione coinvolgente di una stanza, una proprietà, un luogo, un paesaggio o una procedura medica.
 
-Durante la riproduzione su un display piatto, l&#39;utente ha il controllo dell&#39;angolo di visione; la riproduzione su dispositivi mobili solitamente sfrutta i controlli giroscopici incorporati.
+Durante la riproduzione su uno schermo piatto, l&#39;utente ha il controllo dell&#39;angolo di visione; la riproduzione su dispositivi mobili utilizza generalmente i controlli giroscopici incorporati.
 
 Il visualizzatore include il supporto nativo per la distribuzione di 360 risorse video. Per impostazione predefinita, non è necessaria alcuna configurazione aggiuntiva per la visualizzazione o la riproduzione. Potete distribuire video a 360 gradi utilizzando estensioni video standard come .mp4, .mkv e .mov. Il codec più comune è H.264.
 
@@ -325,9 +327,9 @@ Il visualizzatore include il supporto nativo per la distribuzione di 360 risorse
 
 Per modificare la seguente impostazione, tocca **[!UICONTROL Configura]** nel componente.
 
-* **[!UICONTROL Predefinito]** visualizzatore - Selezionate un visualizzatore esistente dal menu a discesa Predefinito visualizzatore. Utilizzate Video360VR per gli utenti finali che utilizzano occhiali di realtà virtuale. Include controlli di riproduzione video di base e funzioni per social media. Utilizzate Video360_social che include controlli di riproduzione video di base. Il rendering video viene eseguito in modalità stereo. Il controllo manuale del punto di vista è disattivato ma il controllo giroscopico è attivato. Non esistono funzioni per social media.
+* **[!UICONTROL Predefinito]** visualizzatore - Selezionate un visualizzatore esistente dall’elenco a discesa Predefinito visualizzatore. Utilizzate Video360VR per gli utenti finali che utilizzano occhiali di realtà virtuale. Include controlli di riproduzione video di base e funzioni per social media. Utilizzate Video360_social che include controlli di riproduzione video di base. Il rendering video viene eseguito in modalità stereo. Il controllo manuale del punto di vista è disattivato ma il controllo giroscopico è attivato. Non esistono funzioni per social media.
 
-Se il predefinito per visualizzatori ricercato non è visibile, accertatevi che sia pubblicato. Per poter usare i predefiniti per visualizzatori, dovete pubblicarli. Consulta [Gestione dei predefiniti per visualizzatori](/help/assets/dynamic-media/managing-viewer-presets.md). 
+Se il predefinito per visualizzatori ricercato non è visibile, accertatevi che sia pubblicato. Pubblicate i predefiniti per visualizzatori prima di utilizzarli. Consulta [Gestione dei predefiniti per visualizzatori](/help/assets/dynamic-media/managing-viewer-presets.md). 
 
 ### Utilizzo di HTTP/2 per la distribuzione di risorse Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
