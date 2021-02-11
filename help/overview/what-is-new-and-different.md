@@ -2,7 +2,7 @@
 title: Cosa è diverso e cosa è nuovo - Adobe Experience Manager come Cloud Service
 description: 'Che cosa è diverso e che cosa è nuovo - Adobe Experience Manager (AEM) come Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
+source-git-commit: 1563da55c3dfed52088d5309eeac071918ff0d51
 workflow-type: tm+mt
 source-wordcount: '1876'
 ht-degree: 10%
@@ -202,7 +202,7 @@ A causa della netta separazione tra codice e contenuto, gli sviluppatori possono
 
 Al fine di sostenere le fasi e lo sviluppo rapidi, è anche possibile sviluppare applicazioni AEM al di fuori del AEM come contesto Cloud Service. A tal fine, gli sviluppatori possono accedere ai seguenti artifact:
 
-* La AEM come Cloud Service QuickStart: un programma di installazione autonomo `.jar` basato su &lt;a0/> della più recente base di codice AEM, con la stessa superficie funzionale e API.
+* La AEM come Cloud Service QuickStart: un programma di installazione autonomo `.jar` basato su  della più recente base di codice AEM, con la stessa superficie funzionale e API.
 
 * Il AEM come SDK del dispatcher di Cloud Service: un processo basato su immagini per testare e convalidare localmente le configurazioni del dispatcher
 
@@ -262,7 +262,7 @@ Per informazioni dettagliate, vedere la panoramica delle [modifiche a Siti](/hel
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets come Cloud Service offre una soluzione SaaS nativa per il cloud, che consente alle aziende non solo di eseguire le operazioni di gestione delle risorse digitali e Dynamic Media con velocità ed impatto, ma anche di utilizzare funzionalità intelligenti di nuova generazione, come AI/ML, da un sistema sempre attuale, sempre disponibile e sempre in grado di apprendere.
+Adobe Experience Manager Assets come Cloud Service offre una soluzione PaaS nativa per il cloud, che consente alle aziende non solo di eseguire le operazioni di gestione delle risorse digitali e Dynamic Media con velocità ed impatto, ma anche di utilizzare funzionalità intelligenti di nuova generazione, come AI/ML, da un sistema sempre attuale, sempre disponibile e sempre in grado di apprendere.
 
 L’offerta di risorse include l’elaborazione di risorse di nuova generazione nel cloud e l’acquisizione e la ricerca di risorse ad alte prestazioni.
 
