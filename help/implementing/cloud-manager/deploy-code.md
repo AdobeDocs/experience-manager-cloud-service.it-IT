@@ -2,7 +2,7 @@
 title: Distribuzione del codice - Cloud Services
 description: Distribuzione del codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Per ulteriori informazioni, fare riferimento a [Test funzionale del prodotto](/h
    * Audit esperienza: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Durante l&#39;esecuzione di una pipeline di produzione, viene inclusa una fase di controllo dell&#39;esperienza dopo il test funzionale personalizzato che eseguirà i controlli. Le pagine configurate verranno inviate al servizio e valutate. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e la modifica tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se esiste una regressione che verrà introdotta con la distribuzione corrente.
 Per ulteriori informazioni, fare riferimento a [Informazioni sui risultati di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
-      ![](assets/testing-tab.png)
+      ![](/help/implementing/cloud-manager/assets/deploy-testingscreen.png)
 
 
 
