@@ -4,9 +4,9 @@ description: Le best practice integrano un'implementazione  Experience Manager c
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: eaf08018fbbf1cf1e71db2edce9ea673d546073a
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3294'
 ht-degree: 18%
 
 ---
@@ -70,7 +70,7 @@ Decidere su quale funzionalità utilizzare
 
 Per supportare i casi di utilizzo della distribuzione delle risorse, è necessario considerare altre soluzioni:
 
-* [ AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portal per un componente aggiuntivo SaaS configurabile  AEM Assets per la pubblicazione delle risorse.
+* [ AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portal per un componente aggiuntivo configurabile per le risorse da pubblicare.
 
 * Le soluzioni personalizzate vengono create in base al codice [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
 * AEM [condivisione di collegamenti](/help/assets/share-assets.md) per condividere risorse ad hoc tramite i collegamenti.
