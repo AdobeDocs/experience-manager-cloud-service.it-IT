@@ -2,10 +2,10 @@
 title: Regole di qualità del codice personalizzato - Cloud Services
 description: Regole di qualità del codice personalizzato - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 901a660424f5e1fded654ddb09f3d872b7cd01b7
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 6%
+source-wordcount: '3221'
+ht-degree: 4%
 
 ---
 
@@ -733,4 +733,187 @@ Per ulteriori informazioni, fare riferimento a [AEM struttura del progetto](http
 Il supporto per la replica inversa non è disponibile nelle distribuzioni di Cloud Service, come descritto in [Note sulla versione: Rimozione di agenti di replica](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 I clienti che utilizzano la replica inversa devono contattare  Adobe per soluzioni alternative.
+
+### OakPAL - Le risorse contenute nelle librerie client abilitate per il proxy devono trovarsi in una cartella denominata risorse {#oakpal-resources-proxy}
+
+**Chiave**: ClientlibProxyResource
+
+**Tipo**: Bug
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+AEM librerie client possono contenere risorse statiche come immagini e font. Come descritto in [Utilizzo dei preprocessori](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), quando si utilizzano librerie client proxy, queste risorse statiche devono essere contenute in una cartella secondaria denominata resources per poter fare riferimento efficacemente alle istanze di pubblicazione.
+
+#### Codice non conforme {#non-compliant-proxy-enabled}
+
+```
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + images
+        + myimage.jpg
+```
+
+#### Codice conforme {#compliant-proxy-enabled}
+
+```
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + resources
+        + myimage.jpg
+```
+
+### OakPAL - Utilizzo di processi di flusso di lavoro non compatibili con il Cloud Service {#oakpal-usage-cloud-service}
+
+**Chiave**: CloudServiceIncompatibleWorkflowProcess
+
+**Tipo**: Bug
+
+**Gravità**: Maggiore
+
+**Dal** momento: Versione 2021.2.0
+
+Con il passaggio ai micro-servizi Asset per l&#39;elaborazione delle risorse AEM Cloud Service, diversi processi di workflow utilizzati nelle versioni locale e AMS di AEM sono diventati non supportati o non necessari. Lo strumento di migrazione all&#39;indirizzo [aem-cloud-Migration](https://github.com/adobe/aem-cloud-migration) può essere utilizzato per aggiornare i modelli di workflow durante AEM migrazione dei Cloud Service.
+
+### OakPAL - L&#39;utilizzo di modelli statici è sconsigliato a favore di modelli modificabili {#oakpal-static-template}
+
+**Chiave**: StaticTemplateUsage
+
+**Tipo**: Odore di codice
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+Anche se l&#39;utilizzo di modelli statici è stato storicamente molto comune nei progetti AEM, i modelli modificabili sono altamente consigliati in quanto offrono la massima flessibilità e supportano funzionalità aggiuntive non presenti nei modelli statici. Ulteriori informazioni sono disponibili in [Modelli di pagina - Modificabili](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). La migrazione dai modelli statici a quelli modificabili può essere automatizzata in gran parte mediante gli [AEM Strumenti di modernizzazione](https://opensource.adobe.com/aem-modernize-tools/).
+
+### OakPAL - Utilizzo dei componenti di base legacy scoraggiato {#oakpal-usage-legacy}
+
+**Chiave**: LegacyFoundationComponentUsage
+
+**Tipo**: Odore di codice
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+I componenti di base legacy (ovvero i componenti in `/libs/foundation`) sono stati ritirati per diverse versioni AEM a favore dei componenti core di WCM. L’utilizzo dei componenti di base legacy come base per i componenti personalizzati, sia per sovrapposizione che per ereditarietà, viene scoraggiato e deve essere convertito nel componente di base corrispondente. Questa conversione può essere facilitata da [AEM Strumenti di modernizzazione](https://opensource.adobe.com/aem-modernize-tools/).
+
+### OakPAL - Vengono utilizzati solo i nomi e l&#39;ordine delle modalità di esecuzione supportati {#oakpal-supported-runmodes}
+
+**Chiave**: SupportedRunmode
+
+**Tipo**: Odore di codice
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+AEM Cloud Service applica un criterio di denominazione rigoroso per i nomi in modalità di esecuzione e un ordine rigoroso per tali modalità di esecuzione. L&#39;elenco delle modalità di esecuzione supportate è disponibile in [Modalità di esecuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes) e qualsiasi scostamento da tale modalità sarà identificato come un problema.
+
+### OakPAL - I nodi di definizione dell&#39;indice di ricerca personalizzata devono essere figli diretti di /oak:index {#oakpal-custom-search}
+
+**Chiave**: OakIndexLocation
+
+**Tipo**: Odore di codice
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+AEM Cloud Service richiede che le definizioni dell&#39;indice di ricerca personalizzata (ovvero i nodi di tipo oak:QueryIndexDefinition) siano nodi secondari diretti di `/oak:index`. Gli indici in altre posizioni devono essere spostati per essere compatibili con AEM Cloud Service. Ulteriori informazioni sugli indici di ricerca sono disponibili in [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+
+### OakPAL - I nodi di definizione dell&#39;indice di ricerca personalizzati devono avere una versione compat di 2 {#oakpal-custom-search-compatVersion}
+
+**Chiave**: IndexCompatVersion
+
+**Tipo**: Odore di codice
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+AEM Cloud Service richiede che le definizioni dell&#39;indice di ricerca personalizzata (ovvero i nodi di tipo oak:QueryIndexDefinition) abbiano la proprietà compatVersion impostata su 2. Qualsiasi altro valore non è supportato da AEM Cloud Service. Ulteriori informazioni sugli indici di ricerca sono disponibili in [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+
+### OakPAL - I nodi discendenti dei nodi di definizione dell&#39;indice di ricerca personalizzata devono essere di tipo nt:unstructure {#oakpal-descendent-nodes}
+
+**Chiave**: IndexDescendingNodeType
+
+**Tipo**: Odore di codice
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+Difficile risolvere i problemi possono verificarsi quando un nodo di definizione dell&#39;indice di ricerca personalizzato contiene nodi figlio non ordinati. Per evitare questo problema, si consiglia che tutti i nodi discendenti di un nodo `oak:QueryIndexDefinition` siano di tipo nt:unstructure.
+
+### OakPAL - I nodi di definizione dell&#39;indice di ricerca personalizzata devono contenere un nodo secondario denominato indexRules con elementi secondari {#oakpal-custom-search-index}
+
+**Chiave**: IndexRulesNode
+
+**Tipo**: Odore di codice
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+Un nodo di definizione dell&#39;indice di ricerca personalizzato definito correttamente deve contenere un nodo secondario denominato indexRules che, a sua volta, deve avere almeno un nodo figlio. Ulteriori informazioni sono disponibili in [Documentazione quercia](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+
+### OakPAL - I nodi di definizione dell&#39;indice di ricerca personalizzati devono seguire le convenzioni di denominazione {#oakpal-custom-search-definitions}
+
+**Chiave**: NomeIndice
+
+**Tipo**: Odore di codice
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+AEM Cloud Service richiede che le definizioni dell&#39;indice di ricerca personalizzata (ovvero, i nodi di tipo `oak:QueryIndexDefinition`) siano denominati in base a un pattern specifico descritto in [Ricerca e indicizzazione contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+
+### OakPAL - I nodi di definizione dell&#39;indice di ricerca personalizzati devono utilizzare il tipo di indice lucene {#oakpal-index-type-lucene}
+
+**Chiave**: IndexType
+
+**Tipo**: Odore di codice
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+AEM Cloud Service richiede che le definizioni dell&#39;indice di ricerca personalizzata (ovvero i nodi di tipo oak:QueryIndexDefinition) abbiano una proprietà type con il valore impostato su **lucene**. L&#39;indicizzazione utilizzando tipi di indice legacy deve essere aggiornata prima della migrazione al Cloud Service AEM. Per ulteriori informazioni, vedere [Ricerca e indicizzazione dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+
+### OakPAL - I nodi di definizione dell&#39;indice di ricerca personalizzato non devono contenere una proprietà denominata seed {#oakpal-property-name-seed}
+
+**Chiave**: IndexSeedProperty
+
+**Tipo**: Odore di codice
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+AEM Cloud Service non consente alle definizioni dell&#39;indice di ricerca personalizzata (ovvero, ai nodi di tipo `oak:QueryIndexDefinition`) di contenere una proprietà denominata seed. L&#39;indicizzazione utilizzando questa proprietà deve essere aggiornata prima della migrazione al Cloud Service AEM. Per ulteriori informazioni, vedere [Ricerca e indicizzazione dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+
+### OakPAL - I nodi di definizione dell&#39;indice di ricerca personalizzato non devono contenere una proprietà denominata reindex {#oakpal-reindex-property}
+
+**Chiave**: IndexReindexProperty
+
+**Tipo**: Odore di codice
+
+**Gravità**: Minore
+
+**Dal** momento: Versione 2021.2.0
+
+AEM Cloud Service non consente alle definizioni dell&#39;indice di ricerca personalizzata (ovvero, ai nodi di tipo `oak:QueryIndexDefinition`) di contenere una proprietà denominata reindex. L&#39;indicizzazione utilizzando questa proprietà deve essere aggiornata prima della migrazione al Cloud Service AEM. Per ulteriori informazioni, vedere [Ricerca e indicizzazione dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+
+
+
+
+
 
