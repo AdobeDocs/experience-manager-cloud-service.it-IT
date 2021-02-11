@@ -2,9 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
+source-git-commit: 801f1df5ceaa24289e2d88ecfe187a7a1497a6fe
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1108'
 ht-degree: 4%
 
 ---
@@ -120,9 +120,17 @@ Per questa versione sono stati aggiunti due nuovi analizzatori:
 
 Per ulteriori informazioni, consultare la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing).
 
-## Strumenti di transizione verso il cloud {#code-transition-tools}
+## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
 
 ### Data di rilascio {#release-date-ctt}
+
+La data di rilascio per lo strumento di trasferimento dei contenuti v1.2.4 è il 10 febbraio 2021.
+
+### Correzioni di bug {#bug-fixes-ctt}
+
+* Quando si mappavano più utenti, alcuni ID IMS degli utenti venivano mappati in modo non corretto. Questo è stato corretto.
+
+### Data di rilascio {#release-date-ctt-feb}
 
 La Data di rilascio per lo strumento di trasferimento dei contenuti v1.2.2 è il 10 febbraio 2021.
 
@@ -131,3 +139,24 @@ La Data di rilascio per lo strumento di trasferimento dei contenuti v1.2.2 è il
 * Nuove funzionalità e interfaccia utente aggiunte a Content Transfer Tool - Strumento di mappatura utente. Questa funzione mappa automaticamente gli utenti e i gruppi esistenti al loro Adobe   ID di sistema Identity Management nell’ambito dell’attività di migrazione dei contenuti. Per ulteriori informazioni, fare riferimento a [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
 * Content Transfer Tool ora esegue la migrazione di tutti i gruppi e gli utenti a cui viene fatto riferimento nel set di migrazione, inclusi gli elementi figlio.
 * Gli utenti possono selezionare alcuni percorsi in `/etc` al momento della creazione dei set di migrazione.
+
+## Best practice Analyzer {#best-practices-analyzer}
+
+### Data di rilascio {#release-date-bpa}
+
+La data di rilascio per Best Practices Analyzer v2.1.0 è l&#39;11 febbraio 2021.
+
+### Novità in [!DNL Best-Practices-Analyzer] {#what-is-new-bpa}
+
+* Possibilità di rilevare l&#39;utilizzo &#39;implementazione di AEM Forms e  AEM Forms e indicare le aree rilevanti per la migrazione  AEM Forms come Cloud Service.
+* Possibilità di rilevare e segnalare l’utilizzo e il conteggio dei componenti e dei modelli personalizzati.
+* Possibilità di rilevare il tipo di archivio nodi e di archivio dati utilizzato.
+* Possibilità di rilevare l’utilizzo di Dynamic Media.
+* Possibilità di rilevare la versione Java utilizzata.
+
+
+
+
+
+
+
