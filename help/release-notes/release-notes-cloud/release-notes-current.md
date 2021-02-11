@@ -2,9 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: bca0519b3f27ee21df41b2292d19e330c4aa5f7d
+source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '991'
 ht-degree: 4%
 
 ---
@@ -88,6 +88,8 @@ La data di rilascio per Cloud Manager in AEM come Cloud Service 2021.2.0 è l’
 * Le proprietà impostate nei file `pom.xml` del cliente con il prefisso sonar verranno ora rimosse in modo dinamico per evitare errori di creazione e scansione di qualità.
 
 * L&#39;interfaccia utente di Cloud Manager informa l&#39;utente che potrebbe non essere temporaneamente in grado di selezionare un certificato SSL se è in uso da un nome di dominio attualmente distribuito.
+
+* Sono state aggiunte ulteriori regole sulla qualità del codice per i problemi di compatibilità del Cloud Service.
 
 ### Correzioni di bug {#bug-fixes-cloud-manager}
 
