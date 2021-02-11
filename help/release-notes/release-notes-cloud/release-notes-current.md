@@ -2,7 +2,7 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: f1a54ac3f995a6e8cc51f9ef16e14df6210a02cd
+source-git-commit: 6c40641333f2297d7004d792e87f16a7cf081970
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 4%
@@ -146,7 +146,7 @@ La Data di rilascio per lo strumento di trasferimento dei contenuti v1.2.2 è il
 
 La data di rilascio per Best Practices Analyzer v2.1.0 è l&#39;11 febbraio 2021.
 
-### Novità in [!DNL Best-Practices-Analyzer] {#what-is-new-bpa}
+### Novità in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
 * Possibilità di rilevare l&#39;utilizzo &#39;implementazione di AEM Forms e  AEM Forms e indicare le aree rilevanti per la migrazione  AEM Forms come Cloud Service.
 * Possibilità di rilevare e segnalare l’utilizzo e il conteggio dei componenti e dei modelli personalizzati.
