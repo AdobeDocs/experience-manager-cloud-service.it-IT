@@ -2,9 +2,9 @@
 title: Test funzionale - Cloud Services
 description: Test funzionale - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '469'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ Il test funzionale è suddiviso in due tipi:
 
 * Test funzionale del prodotto
 * Test funzionale personalizzato
+* Test interfaccia utente personalizzato
 
 ## Test funzionale del prodotto {#product-functional-testing}
 
@@ -33,6 +34,12 @@ Tuttavia, se la build non produce JAR di prova, il test viene superato per impos
 
 >[!NOTE]
 >Il pulsante **Download Log (Scarica registro)** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Tali registri non includono i registri del processo AEM runtime effettivo, a cui è possibile accedere tramite la regolare funzionalità Download o Registrazione code. Per ulteriori informazioni, vedere [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md).
+
+## Test personalizzato dell&#39;interfaccia utente {#custom-ui-testing}
+
+I test personalizzati dell&#39;interfaccia utente possono essere scritti e consentono ai clienti di creare rapidamente suite di automazione dei test per convalidare le app Web e mobili basate su AEM.
+
+Per ulteriori informazioni sulla scrittura di test personalizzati per l&#39;interfaccia utente, consultare [Creazione di test per l&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests).
 
 
 ### Scrittura di test funzionali {#writing-functional-tests}
