@@ -2,7 +2,7 @@
 title: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2021.2.0
 description: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2021.2.0
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 2%
@@ -30,11 +30,11 @@ La data di rilascio per Cloud Manager in AEM come Cloud Service 2021.2.0 è l’
 
 * L&#39;elenco delle API obsolete identificate durante la scansione del codice è stato ridefinito in modo da includere classi e metodi aggiuntivi obsoleti nelle versioni SDK dell&#39;Cloud Service più recente.
 
-* Profilo SonarQube per Cloud Manager aggiornato per rimuovere Sonar rule squid:S2142. Ciò non entrerà più in conflitto con i controlli di interruzione dei thread.
+* Profilo SonarQube per Cloud Manager aggiornato per rimuovere Sonar rule squid:S2142. Ciò non entrerà più in conflitto con i controlli di Interruzione del thread.
 
 * L&#39;interfaccia utente di Cloud Manager informa l&#39;utente che potrebbe non essere temporaneamente in grado di aggiungere/aggiornare il nome di dominio perché nell&#39;ambiente associato è collegata una pipeline in esecuzione o al momento in attesa del passaggio di approvazione.
 
-* Le proprietà impostate nei file `pom.xml` del cliente con il prefisso sonar verranno rimosse in modo dinamico per evitare errori di creazione e scansione di qualità.
+* Le proprietà impostate nei file `pom.xml` del cliente con il prefisso Sonar verranno ora rimosse in modo dinamico per evitare errori di creazione e scansione di qualità.
 
 * L&#39;interfaccia utente di Cloud Manager informa l&#39;utente che potrebbe non essere temporaneamente in grado di selezionare un certificato SSL se è in uso da un nome di dominio attualmente distribuito.
 
