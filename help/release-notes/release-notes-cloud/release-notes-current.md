@@ -2,7 +2,7 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 801f1df5ceaa24289e2d88ecfe187a7a1497a6fe
+source-git-commit: f1a54ac3f995a6e8cc51f9ef16e14df6210a02cd
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 4%
@@ -124,7 +124,7 @@ Per ulteriori informazioni, consultare la documentazione [qui](https://experienc
 
 ### Data di rilascio {#release-date-ctt}
 
-La data di rilascio per lo strumento di trasferimento dei contenuti v1.2.4 è il 10 febbraio 2021.
+La Data di rilascio per lo strumento di trasferimento dei contenuti v1.2.4 è il 10 febbraio 2021.
 
 ### Correzioni di bug {#bug-fixes-ctt}
 
