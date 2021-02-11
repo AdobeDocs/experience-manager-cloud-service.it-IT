@@ -2,9 +2,9 @@
 title: Distribuzione del codice - Cloud Services
 description: Distribuzione del codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
+source-git-commit: aef8afd3efca4d6d5db9f457e952958ee9ca38de
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
@@ -55,6 +55,9 @@ Per ulteriori informazioni, fare riferimento a [Test funzionale del prodotto](/h
 
    * Test funzionale personalizzato: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Tuttavia, se la build non produce JAR di prova, il test viene superato per impostazione predefinita.\
       Per ulteriori informazioni, fare riferimento a [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
+
+   * Test interfaccia utente personalizzata: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. I test personalizzati dell&#39;interfaccia utente possono essere scritti e consentono ai clienti di creare rapidamente suite di automazione dei test per convalidare le app Web e mobili basate su AEM.
+Per ulteriori informazioni, fare riferimento a [Test personalizzato dell&#39;interfaccia utente](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
    * Audit esperienza: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Durante l&#39;esecuzione di una pipeline di produzione, viene inclusa una fase di controllo dell&#39;esperienza dopo il test funzionale personalizzato che eseguirà i controlli. Le pagine configurate verranno inviate al servizio e valutate. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e la modifica tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se esiste una regressione che verrà introdotta con la distribuzione corrente.
 Per ulteriori informazioni, fare riferimento a [Informazioni sui risultati di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
