@@ -3,9 +3,9 @@ title: AEM Assets e AEM MediaLibrary a confronto
 description: Domande frequenti su  AEM Assets e AEM Media Library, comprese le differenze tra i due elementi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '693'
 ht-degree: 3%
 
 ---
@@ -27,10 +27,10 @@ AEM Media Library è una parte designata dell&#39;archivio di contenuti WCM AEM 
 
 Le funzioni uniche disponibili solo per  clienti di AEM Assets sono:
 
-1. la possibilità di estrarre e modificare metadati diversi da titolo, tag e descrizione.
-1. l&#39;amministratore di AEM Assets , disponibile dalla schermata di benvenuto facendo clic sul secondo pulsante accanto all&#39;amministratore del sito.
+1. Possibilità di estrarre e modificare metadati diversi da titolo, tag e descrizione.
+1. L&#39;amministratore AEM Assets , disponibile dalla schermata di benvenuto facendo clic sulla seconda opzione accanto a `siteadmin`.
 1. Tutti i passaggi del flusso di lavoro relativi alla gestione delle risorse digitali,  ad esempio l’inserimento di AEM Assets,  l’eliminazione di AEM Assets,  la gestione delle risorse secondarie di AEM Assets  l’estrazione di metadati AEM Assets.
-1. librerie che includono &quot;dam&quot; im package space.
+1. Librerie che includono &quot;dam&quot; nello spazio del pacchetto.
 
 L&#39;utilizzo di queste funzioni richiede una licenza valida di  AEM Assets.
 
