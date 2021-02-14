@@ -1,26 +1,26 @@
 ---
 title: API HTTP di Assets
-description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
+description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: f1fa095c7c89be89ed02ebdf14dcc0a4b9f542b1
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1465'
 ht-degree: 1%
 
 ---
 
 
-# API HTTP di Assets {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] API HTTP  {#assets-http-api}
 
 ## Panoramica {#overview}
 
-L&#39;API HTTP Assets consente di creare-leggere-aggiornare-eliminare (CRUD) le operazioni sulle risorse digitali, inclusi i metadati, le rappresentazioni e i commenti, nonché il contenuto strutturato utilizzando [!DNL Experience Manager] Frammenti di contenuto. È esposto in `/api/assets` e viene implementato come REST API. Include il supporto di [frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md).
+L&#39;API HTTP [!DNL Assets] consente di creare-read-update-delete (CRUD) operazioni sulle risorse digitali, inclusi i metadati, sulle rappresentazioni e sui commenti, nonché di utilizzare contenuti strutturati utilizzando [!DNL Experience Manager] Frammenti di contenuto. È esposto in `/api/assets` e viene implementato come REST API. Include il supporto di [frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 Per accedere all&#39;API:
 
 1. Aprite il documento del servizio API in `https://[hostname]:[port]/api.json`.
-1. Segui il collegamento del servizio Risorse fino a `https://[hostname]:[server]/api/assets.json`.
+1. Seguire il collegamento [!DNL Assets] del servizio che porta a `https://[hostname]:[server]/api/assets.json`.
 
 La risposta API è un file JSON per alcuni tipi MIME e un codice di risposta per tutti i tipi MIME. La risposta JSON è facoltativa e potrebbe non essere disponibile, ad esempio per i file PDF. Per ulteriori analisi o azioni, fai affidamento sul codice di risposta.
 
@@ -34,13 +34,11 @@ Dopo la [!UICONTROL Ora di disattivazione], una risorsa e le relative rappresent
 
 Un [frammento di contenuto](/help/assets/content-fragments/content-fragments.md) è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, come testi, numeri, date, ecc. Poiché le risorse `standard` sono diverse (ad esempio immagini o documenti), per la gestione dei frammenti di contenuto si applicano alcune regole aggiuntive.
 
-Per ulteriori informazioni, consultate [Supporto per frammenti di contenuto nell&#39;API HTTP delle risorse del Experience Manager ](/help/assets/content-fragments/assets-api-content-fragments.md).
+Per ulteriori informazioni, vedere [Supporto dei frammenti di contenuto in  [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Dati, modello {#data-model}
 
-L’API HTTP Assets espone due elementi principali, cartelle e risorse (per le risorse standard).
-
-Inoltre, espone elementi più dettagliati per i modelli di dati personalizzati che descrivono il contenuto strutturato nei frammenti di contenuto. Per ulteriori informazioni, vedere [Modelli di dati dei frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
+L&#39;API HTTP [!DNL Assets] espone due elementi, cartelle e risorse principali (per le risorse standard). Inoltre, espone elementi più dettagliati per i modelli di dati personalizzati che descrivono il contenuto strutturato nei frammenti di contenuto. Per ulteriori informazioni, vedere [Modelli di dati dei frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
 
 ### Cartelle {#folders}
 
@@ -81,19 +79,19 @@ In [!DNL Experience Manager] una cartella contiene i seguenti componenti:
 
 ## Funzioni disponibili {#available-features}
 
-L&#39;API HTTP Assets include le seguenti funzionalità:
+L&#39;API HTTP [!DNL Assets] include le seguenti funzionalità:
 
-* Recuperate un elenco di cartelle.
-* Creare una cartella.
-* Creare una risorsa (obsoleto).
-* Aggiorna binario risorsa (obsoleto).
-* Aggiornare i metadati delle risorse.
-* Creare una rappresentazione di una risorsa.
-* Aggiornare una rappresentazione di una risorsa.
-* Create un commento sulla risorsa.
-* Copiate una cartella o una risorsa.
-* Spostate una cartella o una risorsa.
-* Eliminate una cartella, una risorsa o una rappresentazione.
+* [Recuperate un elenco](#retrieve-a-folder-listing) di cartelle.
+* [Creare una cartella](#create-a-folder).
+* [Creare una risorsa (obsoleto)](#create-an-asset)
+* [Aggiorna binario risorsa (obsoleto)](#update-asset-binary).
+* [Aggiornare i metadati](#update-asset-metadata) delle risorse.
+* [Creare una rappresentazione](#create-an-asset-rendition) di una risorsa.
+* [Aggiornare una rappresentazione](#update-an-asset-rendition) di una risorsa.
+* [Create un commento](#create-an-asset-comment) sulla risorsa.
+* [Copiate una cartella o una risorsa](#copy-a-folder-or-asset).
+* [Spostate una cartella o una risorsa](#move-a-folder-or-asset).
+* [Eliminate una cartella, una risorsa o una rappresentazione](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
@@ -144,11 +142,11 @@ Una chiamata API non riesce con un codice di risposta `500` se il nodo padre del
 
 ## Creare una risorsa {#create-an-asset}
 
-Consultate [caricamento delle risorse](developer-reference-material-apis.md) per informazioni su come creare una risorsa mediante le API. La creazione di una risorsa tramite l’API HTTP è obsoleta.
+Per informazioni su come creare una risorsa, consultate [caricamento delle risorse](developer-reference-material-apis.md). Non potete creare una risorsa utilizzando l&#39;API HTTP.
 
 ## Aggiornare il binario di una risorsa {#update-asset-binary}
 
-Consultate [caricamento delle risorse](developer-reference-material-apis.md) per informazioni su come aggiornare i file binari delle risorse mediante le API. L&#39;aggiornamento di un binario di risorse tramite l&#39;API HTTP è obsoleto.
+Consultate [caricamento delle risorse](developer-reference-material-apis.md) per informazioni su come aggiornare i file binari delle risorse. Non potete aggiornare il binario di una risorsa utilizzando l&#39;API HTTP.
 
 ## Aggiornare i metadati di una risorsa {#update-asset-metadata}
 
@@ -262,3 +260,8 @@ Elimina una risorsa (-tree) nel percorso specificato.
 * 200 - OK - Se la cartella è stata eliminata correttamente.
 * 412 - PRECONDIZIONE NON RIUSCITA - se non è possibile trovare o accedere alla raccolta radice.
 * 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro va storto.
+
+>[!MORELIKETHIS]
+>
+>* [Documenti di riferimento per sviluppatori per [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+
