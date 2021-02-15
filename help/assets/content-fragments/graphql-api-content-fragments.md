@@ -2,9 +2,9 @@
 title: AEM GraphQL API per l'utilizzo con frammenti di contenuto
 description: Scoprite come utilizzare i frammenti di contenuto in Adobe Experience Manager (AEM) come Cloud Service con l'API AEM GraphQL per la distribuzione senza titolo dei contenuti.
 translation-type: tm+mt
-source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
+source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 1%
 
 ---
@@ -725,23 +725,90 @@ Di seguito sono riportati i passaggi necessari per mantenere una determinata que
 
 ## Query dell&#39;endpoint GraphQL da un sito Web esterno {#query-graphql-endpoint-from-external-website}
 
+Per accedere all’endpoint GraphQL da un sito Web esterno è necessario configurare:
+
+* [Filtro CORS](#cors-filter)
+* [Filtro referente](#referrer-filter)
+
+### Filtro CORS {#cors-filter}
+
 >[!NOTE]
 >
 >Per una panoramica dettagliata del criterio di condivisione delle risorse CORS, vedere [Comprendere la condivisione delle risorse tra le origini (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
 
-Per consentire a un sito Web di terze parti di utilizzare l&#39;output JSON, è necessario configurare un criterio CORS nell&#39;archivio Git del cliente. A questo scopo, aggiungete un file di configurazione OSGi CORS appropriato per l’endpoint desiderato. Questa configurazione deve specificare un nome di sito Web attendibile (regex) per il quale concedere l&#39;accesso.
+Per accedere all&#39;endpoint GraphQL, è necessario configurare un criterio CORS nell&#39;archivio Git del cliente. A questo scopo, aggiungete un file di configurazione OSGi CORS appropriato per gli endpoint desiderati.
 
-* Accesso all’endpoint GraphQL:
+Questa configurazione deve specificare un&#39;origine di sito Web attendibile `alloworigin` o `alloworiginregexp` per la quale è necessario concedere l&#39;accesso.
 
-   * alloworigin: [il vostro dominio] o alloworiginregexp: [il dominio regex]
-   * metodi supportati: [POST]
-   * Percorsi consentiti: [&quot;/content/graphql/global/endpoint.json&quot;]
+Ad esempio, per concedere l&#39;accesso all&#39;endpoint GraphQL e all&#39;endpoint di query persistenti per `https://my.domain` è possibile utilizzare:
 
-* Accesso all&#39;endpoint di query persistenti GraphQL:
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json",
+    "/graphql/execute.json/.*"
+  ]
+}
+```
 
-   * alloworigin: [il vostro dominio] o alloworiginregexp: [il dominio regex]
-   * metodi supportati: [GET]
-   * Percorsi consentiti: [&quot;/graphql/execute.json/.*&quot;]
+Se hai configurato un percorso personalizzato per l&#39;endpoint, puoi anche utilizzarlo in `allowedpaths`.
+
+### Filtro referente {#referrer-filter}
+
+Oltre alla configurazione CORS, è necessario configurare un filtro Referente per consentire l&#39;accesso da host di terze parti.
+
+A questo scopo, aggiungete un file di configurazione del filtro OSGi Referrer appropriato che:
+
+* specifica un nome host del sito Web affidabile; `allow.hosts` o `allow.hosts.regexp`,
+* concede l&#39;accesso per questo nome host.
+
+Ad esempio, per concedere l&#39;accesso per le richieste con il Referente `my.domain` è possibile:
+
+```xml
+{
+    "allow.empty":false,
+    "allow.hosts":[
+      "my.domain"
+    ],
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "filter.methods":[
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}
+```
 
 >[!CAUTION]
 >
