@@ -2,9 +2,9 @@
 title: Integrazione con Adobe Target
 description: 'Integrazione con Adobe Target '
 translation-type: tm+mt
-source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
+source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Come già detto, il primo caso è il più comune per AEM come Cloud Service. In 
 
 >[!NOTE]
 >
-> Per modificare una configurazione di Target già esistente:
+> Per modificare una configurazione di Target esistente:
 >
 > 1. Reinserite l&#39;ID tenant.
 > 2. Connettetevi di nuovo a Target.
