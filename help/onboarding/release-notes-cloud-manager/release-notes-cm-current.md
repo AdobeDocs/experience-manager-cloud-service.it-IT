@@ -2,9 +2,9 @@
 title: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2021.2.0
 description: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2021.2.0
 translation-type: tm+mt
-source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
+source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '388'
 ht-degree: 2%
 
 ---
@@ -21,8 +21,6 @@ La data di rilascio per Cloud Manager in AEM come Cloud Service 2021.2.0 è l’
 ## Cloud Manager {#cloud-manager}
 
 ### Novità {#what-is-new}
-
-* La pipeline di produzione di Cloud Manager ora include funzionalità di test dell&#39;interfaccia utente personalizzata.
 
 * I clienti delle risorse potranno ora scegliere quando e dove distribuire l’istanza del Portale marchio in modo self-service tramite l’interfaccia utente di Cloud Manager. Per un normale programma (non sandbox) con soluzione Assets, ora è possibile effettuare il provisioning di Brand Portal nell&#39;ambiente Production. Il provisioning può essere eseguito solo una volta nell&#39;ambiente di produzione.
 
