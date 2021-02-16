@@ -2,9 +2,9 @@
 title: Integrazione con Adobe Target
 description: 'Integrazione con Adobe Target '
 translation-type: tm+mt
-source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
+source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '1048'
 ht-degree: 2%
 
 ---
@@ -33,9 +33,33 @@ Come parte dell&#39;Adobe Marketing Cloud,  Adobe Target consente di aumentare l
 4. Compila i dettagli (vedi sotto) e seleziona **Connect**.
    ![](assets/open_screen1.png "Connect")
 
-### Configurazione IMS
+### Configurazione IMS {#ims-configuration}
 
 Per integrare correttamente Target con AEM e Launch è necessaria una configurazione IMS sia per Launch che per Target. Mentre la configurazione IMS per Launch è preconfigurata in AEM come Cloud Service, è necessario creare la configurazione IMS di Target (dopo il provisioning di Target). Fate riferimento a [questo video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [questa pagina](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) per informazioni su come creare la configurazione IMS di Target.
+
+###  ID tenant Adobe Target e  codice client Adobe Target {#tenant-client}
+
+Durante la configurazione dei  campi ID tenant Adobe Target e  Codice client Adobe Target, tenete presente quanto segue:
+
+1. Per la maggior parte dei clienti, l&#39;ID tenant e il codice cliente sono gli stessi. Ciò significa che entrambi i campi contengono le stesse informazioni e sono identici. Accertatevi di inserire l’ID tenant in entrambi i campi.
+2. A fini legacy, è inoltre possibile immettere valori diversi nei campi ID tenant e Codice cliente.
+
+In entrambi i casi, tenete presente che:
+
+* Per impostazione predefinita, anche il Codice client (se aggiunto per primo) viene automaticamente copiato nel campo ID tenant.
+* È possibile modificare l&#39;ID tenant predefinito impostato.
+* Di conseguenza, le chiamate back-end a Target saranno basate sull&#39;ID tenant e le chiamate client-side a Target saranno basate sul codice client.
+
+Come già detto, il primo caso è il più comune per AEM come Cloud Service. In entrambi i casi, accertatevi che i campi **sia** contengano le informazioni corrette a seconda dei requisiti.
+
+>[!NOTE]
+>
+> Per modificare una configurazione di Target già esistente:
+>
+> 1. Reinserite l&#39;ID tenant.
+> 2. Connettetevi di nuovo a Target.
+> 3. Salva la configurazione.
+
 
 ### Modifica della configurazione di destinazione {#edit-target-configuration}
 
