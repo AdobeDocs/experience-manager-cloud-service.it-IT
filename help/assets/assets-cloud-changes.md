@@ -2,9 +2,9 @@
 title: Modifiche principali in [!DNL Adobe Experience Manager Assets] come a [!DNL Cloud Service]
 description: Notevoli modifiche a [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] rispetto a [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 035d77ee4a6f9ef3593a34b2691ab6545d9e4f11
+source-git-commit: 3e7613aa50e69e2c9789df4f2fb429ab74654110
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '693'
 ht-degree: 3%
 
 ---
@@ -31,33 +31,35 @@ Il caricamento delle risorse è ottimizzato per garantire l’efficienza operati
 * Il flusso di lavoro predefinito **[!UICONTROL DAM Asset Update]** incluso nelle versioni precedenti di non è più disponibile. [!DNL Experience Manager] Al contrario, i microservizi delle risorse forniscono un servizio scalabile e facilmente disponibile che copre la maggior parte dell’elaborazione predefinita delle risorse (rappresentazioni, estrazione dei metadati ed estrazione del testo per l’indicizzazione).
    * Vedere [configurare e utilizzare i microservizi delle risorse](/help/assets/asset-microservices-configure-and-use.md)
    * Per impostare dei passaggi personalizzati per l&#39;elaborazione, è possibile utilizzare i [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows).
-* Write-back metadati non supportato.
-* Le risorse caricate tramite Gestione pacchetti richiedono una rielaborazione manuale tramite l&#39;azione **[!UICONTROL Rielabora risorsa]** nell&#39;interfaccia [!DNL Assets].
-* Una risorsa digitale senza estensione o con estensione errata non viene elaborata come desiderato. [Il ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) rilevamento automatico del tipo MIME non è disponibile. Ad esempio, quando caricate tali risorse, alla risorsa potrebbe non verificarsi nulla o potrebbe essere applicato un profilo di elaborazione errato. Gli utenti possono comunque archiviare i file binari senza estensione in DAM.
-* [[!DNL Assets] L&#39;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) esperienza Pagina principale non è disponibile.
-* Il rilevamento duplicato delle risorse funziona diversamente rispetto al funzionamento di [ Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).
-* Le rappresentazioni Solo posizionamento (FPO) vengono generate in modo diverso rispetto a come funzionano nelle versioni precedenti di [!DNL Experience Manager]. Consultate la rappresentazione [FPO per  Experience Manager come Cloud Service](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
+* Write-back metadati non supportato. Vedere [Write-back di metadati in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html).
+* Le risorse caricate tramite Gestione pacchetti richiedono una rielaborazione manuale tramite l&#39;azione **[!UICONTROL Rielabora risorsa]** nell&#39;interfaccia utente [!DNL Assets].
+* [!DNL Assets] non rileva automaticamente il tipo MIME delle risorse caricate. Una risorsa digitale senza estensione o con estensione errata non viene elaborata come desiderato. Ad esempio, quando caricate tali risorse, alla risorsa potrebbe non verificarsi nulla o potrebbe essere applicato un profilo di elaborazione errato. Gli utenti possono comunque archiviare i file binari senza estensione in DAM. Vedere [Rilevamento del tipo MIME in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html).
+* [!DNL Assets] L&#39;esperienza Pagina iniziale non è disponibile. Vedere [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html).
+* Il rilevamento di risorse duplicate funziona diversamente rispetto a [come funzionava in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).
+* Le rappresentazioni Solo posizionamento (FPO) vengono generate in modo diverso rispetto alle versioni precedenti di [!DNL Experience Manager]. Vedere [rappresentazione FPO per [!DNL Experience Manager] come a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
 
-Le rappresentazioni standard generate con i microservizi di risorse vengono memorizzate in modo compatibile nei nodi dell’archivio di risorse utilizzando le stesse convenzioni di denominazione.
+Le rappresentazioni standard generate con i microservizi delle risorse vengono memorizzate in modo compatibile con le versioni precedenti nei nodi dell’archivio delle risorse, utilizzando le stesse convenzioni di denominazione.
 
 ## Sviluppare e testare i microservizi delle risorse {#asset-microservices}
 
 I microservizi delle risorse forniscono un’elaborazione scalabile e resiliente delle risorse mediante i servizi cloud.  Adobe gestisce i servizi cloud per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione. I microservizi delle risorse consentono di evitare la necessità di strumenti e metodi di rendering di terze parti (come ImageMagick) e di semplificare le configurazioni, fornendo al contempo funzionalità pronte all’uso per i tipi di file più comuni. È ora possibile elaborare un [ampio intervallo di tipi di file](/help/assets/file-format-support.md) che include più formati out-of-the-box rispetto a quanto è possibile con le versioni precedenti di  Experience Manager. Ad esempio, l&#39;estrazione delle miniature dei formati PSD e PSB ora è possibile che soluzioni di terze parti come ImageMagick precedentemente richieste. Non è possibile utilizzare le configurazioni complesse di ImageMagick per la configurazione [!UICONTROL Profili di elaborazione]. Utilizzate [!DNL Dynamic Media] per la transcodifica avanzata di FFmpeg di video e utilizzate i profili di elaborazione per la [transcodifica di base di video MP4](/help/assets/manage-video-assets.md#transcode-video).
 
-Asset microservices è un servizio nativo basato su cloud che viene automaticamente fornito e collegato a  Experience Manager nei programmi cliente e negli ambienti gestiti in Cloud Manager. Per estendere o personalizzare  Experience Manager, gli sviluppatori possono utilizzare il contenuto o le risorse esistenti con rappresentazioni generate in un ambiente cloud, per testare e convalidare il codice utilizzando, visualizzando e scaricando le risorse.
+Asset microservices è un servizio nativo basato su cloud che viene automaticamente fornito e collegato a [!DNL Experience Manager] nei programmi cliente e negli ambienti gestiti in Cloud Manager. Per estendere o personalizzare [!DNL Experience Manager], gli sviluppatori possono utilizzare il contenuto o le risorse esistenti con rappresentazioni generate in un ambiente cloud, per testare e convalidare il codice utilizzando, visualizzando e scaricando le risorse.
 
 Per eseguire una convalida end-to-end del codice e del processo, compresi l’assimilazione e l’elaborazione delle risorse, implementate le modifiche del codice in un ambiente di sviluppo cloud utilizzando [la pipeline](/help/implementing/cloud-manager/configure-pipeline.md) e verificate con l’esecuzione completa dell’elaborazione dei microservizi di risorse.
 
 ## Rimozione dell’interfaccia classica {#classic-ui}
 
-L&#39;interfaccia classica non è più disponibile in  Experience Manager come [!DNL Cloud Service]. L’interfaccia standard è l’interfaccia touch.
+L&#39;interfaccia classica non è più disponibile in [!DNL Experience Manager] come [!DNL Cloud Service]. È disponibile solo l’interfaccia touch.
 
 >[!MORELIKETHIS]
 >
->* [Introduzione  [!DNL Adobe Experience Manager] a [!DNL Cloud Service]](/help/overview/introduction.md)
->* Una [panoramica di [!DNL Experience Manager] as a [!DNL Cloud Service] - Novità e Differenze](/help/overview/what-is-new-and-different.md)
->* [architettura](/help/core-concepts/architecture.md) di [!DNL Experience Manager] come [!DNL Cloud Service]
->* [Modifiche principali  [!DNL Experience Manager] a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)
->* [Modifiche principali  [!DNL Experience Manager Sites] a [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] Esercitazioni](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>Le risorse seguenti sono disponibili per [!DNL Experience Manager] come [!DNL Cloud Service]:
+>
+>* [Introduzione](/help/overview/introduction.md)
+>* [Novità e differenze](/help/overview/what-is-new-and-different.md)
+>* [L&#39;architettura](/help/core-concepts/architecture.md)
+>* [Modifiche principali](/help/release-notes/aem-cloud-changes.md)
+>* [Modifiche principali [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Esercitazioni video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
