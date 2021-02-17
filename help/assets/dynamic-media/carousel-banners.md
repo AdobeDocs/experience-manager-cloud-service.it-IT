@@ -2,9 +2,9 @@
 title: Banner a carosello
 description: Scoprite come utilizzare i banner carosello in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: f5627a6e885a556700fbf56c4c63f0f4d6a89da0
+source-git-commit: a3482d4e22ceb11d18a693fe2975d5b78d843de3
 workflow-type: tm+mt
-source-wordcount: '4576'
+source-wordcount: '4575'
 ht-degree: 3%
 
 ---
@@ -224,7 +224,7 @@ Per caricare i banner immagine, consultate [Caricamento delle risorse](/help/ass
    >    * Animazione. Per impostazione predefinita, ogni transizione di diapositiva è una dissolvenza. È possibile modificare questa impostazione in una transizione diapositiva.
    >    * Stile dei pulsanti. Gli utenti possono ruotare i banner toccando ogni punto o numero. È possibile modificare la posizione in cui appaiono i pulsanti degli indicatori di set (e se si tratta di uno stile numerico o punteggiato) e le loro dimensioni.
    >    * Modifica lo stile di evidenziazione di una mappa immagine o dell’icona utilizzata per i punti di attivazione.
-   >    * Prima di modificare un predefinito per visualizzatori, scegliete lo stile su cui basare il predefinito. Se non scegliete uno stile, quando iniziate a modificare il predefinito per visualizzatori perdete tutte le modifiche se decidete di passare a un altro predefinito.
+   >    * Prima di modificare un predefinito per visualizzatori, scegliete lo stile su cui basare il predefinito. Se non scegliete uno stile, quando iniziate a modificare il predefinito per visualizzatori si perdono tutte le modifiche se passate a un altro predefinito.
 
 
    Potete anche visualizzare l’anteprima dell’aspetto del banner del carosello. Consultate [(facoltativo) Anteprima dei banner carosello](#optional-previewing-carousel-banners).
