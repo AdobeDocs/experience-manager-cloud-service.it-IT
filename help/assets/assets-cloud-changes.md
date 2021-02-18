@@ -2,9 +2,9 @@
 title: Modifiche principali in [!DNL Adobe Experience Manager Assets] come a [!DNL Cloud Service]
 description: Notevoli modifiche a [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] rispetto a [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: db08a4365d264383cc143727e423ac9886bed66c
+source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '743'
 ht-degree: 3%
 
 ---
@@ -38,6 +38,7 @@ Il caricamento delle risorse è ottimizzato per garantire l’efficienza operati
 * [!DNL Assets] L&#39;esperienza Pagina iniziale non è disponibile. Vedere [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html).
 * Il rilevamento di risorse duplicate funziona diversamente rispetto a [come funzionava in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).
 * Le rappresentazioni Solo posizionamento (FPO) vengono generate in modo diverso rispetto alle versioni precedenti di [!DNL Experience Manager]. Vedere [rappresentazione FPO per [!DNL Experience Manager] come a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
+* Quando viene caricato un archivio ZIP, [!DNL Experience Manager] come [!DNL Cloud Service] non estrae le risorse incluse nel pacchetto dell&#39;archivio. Vedere [Estrazione ZIP in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip).
 
 Le rappresentazioni standard generate con i microservizi delle risorse vengono memorizzate in modo compatibile con le versioni precedenti nei nodi dell’archivio delle risorse, utilizzando le stesse convenzioni di denominazione.
 
