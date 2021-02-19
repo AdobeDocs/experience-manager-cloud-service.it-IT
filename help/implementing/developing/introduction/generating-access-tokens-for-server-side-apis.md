@@ -2,9 +2,9 @@
 title: Generazione di token di accesso per le API lato server
 description: Scoprite come facilitare la comunicazione tra un server di terze parti e AEM come Cloud Service generando un token JWT protetto
 translation-type: tm+mt
-source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
+source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ exchange(config).then(accessToken => {
 
 Lo stesso scambio può essere eseguito in qualsiasi lingua in grado di generare un token JWT firmato con il formato corretto e di chiamare le API di scambio token IMS.
 
-Il token di accesso definirà la data di scadenza, che in genere corrisponde a 12 ore. È presente un esempio di codice nel repository Git per gestire un token di accesso e aggiornarlo prima della scadenza.
+Il token di accesso definisce la data di scadenza, che in genere corrisponde a 24 ore. È presente un esempio di codice nel repository Git per gestire un token di accesso e aggiornarlo prima della scadenza.
 
 ### Chiamata dell&#39;API AEM {#calling-the-aem-api}
 
@@ -114,13 +114,13 @@ Questo utente tecnico di account in AEM può essere ulteriormente privato con le
 
 ## Flusso sviluppatore {#developer-flow}
 
-È probabile che gli sviluppatori desiderino eseguire il test utilizzando un&#39;istanza di sviluppo dell&#39;applicazione non AEM (in esecuzione sul laptop o in hosting) che esegue richieste a un AEM di sviluppo come ambiente di sviluppo Cloud Service. Tuttavia, poiché gli sviluppatori non dispongono necessariamente delle autorizzazioni per il ruolo di amministratore IMS, non possiamo supporre che possano generare il portatore JWT descritto nel flusso regolare server-to-server. Forniamo quindi un meccanismo che consente a uno sviluppatore di generare direttamente un token di accesso da utilizzare nelle richieste di AEM come ambienti di Cloud Service a cui hanno accesso.
+È probabile che gli sviluppatori desiderino eseguire il test utilizzando un&#39;istanza di sviluppo dell&#39;applicazione non AEM (in esecuzione sul laptop o in hosting) che esegue richieste a un AEM di sviluppo come ambiente di sviluppo Cloud Service. Tuttavia, poiché gli sviluppatori non dispongono necessariamente di autorizzazioni per il ruolo di amministratore IMS, non possiamo supporre che possano generare il portatore JWT descritto nel flusso regolare server-to-server. Forniamo quindi un meccanismo che consente a uno sviluppatore di generare direttamente un token di accesso da utilizzare nelle richieste di AEM come ambienti di Cloud Service a cui hanno accesso.
 
 Per informazioni sulle autorizzazioni necessarie per utilizzare il AEM come console per sviluppatori di Cloud Service, consultate la [Guida per sviluppatori](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
 >[!NOTE]
 >
->Il token di accesso allo sviluppo locale è valido per 24 ore dopo il quale deve essere rigenerato utilizzando lo stesso metodo.
+>Il token di accesso allo sviluppo locale è valido per un massimo di 24 ore dopo il quale deve essere rigenerato utilizzando lo stesso metodo.
 
 Gli sviluppatori possono utilizzare questo token per effettuare chiamate dall&#39;applicazione di prova non AEM a un AEM come ambiente Cloud Service. In genere, lo sviluppatore utilizza questo token con l&#39;applicazione non AEM sul proprio computer portatile. Inoltre, il AEM come cloud è in genere un ambiente non di produzione.
 
