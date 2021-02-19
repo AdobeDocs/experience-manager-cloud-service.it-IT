@@ -2,15 +2,22 @@
 title: Persone giuste, ruoli corretti
 description: Persone giuste, ruoli corretti
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 
 # **Per prima cosa, inserite le persone giuste nei ruoli giusti**
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_chooseteam"
+>title="Scegli il team giusto"
+>abstract="Mettere le persone giuste nei processi giusti per contribuire al successo della distribuzione Adobe Experience Manager."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Allineamento dei KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="Valutazione dei KPI"
 
 È probabile che nella vostra organizzazione diversi dipartimenti possiedano diversi aspetti dell&#39;esperienza digitale. Senza governance, lo scenario è destinato a dibattiti, lotte intestine e confusione senza fine.
 
