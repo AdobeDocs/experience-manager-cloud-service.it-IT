@@ -2,9 +2,9 @@
 title: Registrazione
 description: Scoprite come configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 translation-type: tm+mt
-source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
+source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2314'
 ht-degree: 3%
 
 ---
@@ -598,6 +598,12 @@ Le proprietà di cui sopra devono essere specificate per ciascuna combinazione d
 >[!NOTE]
 >
 >L&#39;inoltro splunk per gli ambienti di programmi sandbox non è supportato.
+
+Accertatevi che la richiesta iniziale includa tutti gli ambienti di sviluppo che devono essere attivati, oltre agli ambienti stage/prod.
+
+Se i nuovi ambienti di sviluppo creati dopo la richiesta iniziale sono destinati all&#39;inoltro Splunk, ma non lo hanno attivato, è necessario effettuare una richiesta aggiuntiva.
+
+Inoltre, se gli ambienti di sviluppo sono stati richiesti, è possibile che altri ambienti di sviluppo non inclusi nella richiesta o persino negli ambienti sandbox avranno l&#39;opzione di inoltro Splunk abilitata e condivideranno un indice Splunk. I clienti possono utilizzare il campo `aem_env_id` per distinguere tra questi ambienti.
 
 Di seguito è riportato un esempio di richiesta di assistenza clienti:
 
