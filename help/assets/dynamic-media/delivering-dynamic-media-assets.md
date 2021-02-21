@@ -2,10 +2,10 @@
 title: Distribuzione di risorse Dynamic Media
 description: Scoprite come distribuire le risorse Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 15%
+ht-degree: 13%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 15%
 
 La modalità di distribuzione delle risorse Dynamic Media, sia video che immagini, dipende dall’implementazione del sito Web.
 
-Con l’elemento multimediale dinamico hai a disposizione diverse opzioni:
+Dynamic Media offre diverse opzioni:
 
 * Se il sito web è ospitato su AEM, allora è necessario aggiungere le risorse dell’elemento multimediale dinamico direttamente sulla pagina.
 * Se il sito Web non è AEM, potete scegliere tra:
@@ -25,7 +25,7 @@ Con l’elemento multimediale dinamico hai a disposizione diverse opzioni:
 
 >[!NOTE]
 >
->La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, vedere [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md).
+>La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti. Utilizza funzionalità intelligenti all&#39;ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, vedere [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md).
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
@@ -43,4 +43,4 @@ Per ulteriori informazioni, consulta i seguenti argomenti:
 
 AEM ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) via HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
 
-Per ulteriori informazioni, consulta [Distribuzione HTTP/2 dei contenuti Domande frequenti](/help/assets/dynamic-media/http2faq.md).
+Per ulteriori informazioni, consultate [HTTP/2 Distribuzione di contenuti Domande frequenti](/help/assets/dynamic-media/http2faq.md).
