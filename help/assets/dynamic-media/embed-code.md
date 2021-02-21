@@ -2,7 +2,7 @@
 title: Incorporamento di un visualizzatore video o immagine Dynamic Media in una pagina Web
 description: Scoprite come incorporare risorse video o immagini Dynamic Media in una pagina Web.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 22%
@@ -42,7 +42,7 @@ Vedere [Distribuzione di immagini ottimizzate per un sito reattivo.](responsive-
 
    Consultate [Pubblicazione di predefiniti per immagini](managing-image-presets.md#publishing-image-presets).
 
-1. Nella barra a sinistra, selezionate il menu a discesa e toccate **[!UICONTROL Visualizzatori]**.
+1. Nella barra a sinistra, selezionate l&#39;elenco a discesa e toccate **[!UICONTROL Visualizzatori]**.
 1. Nella barra a sinistra, toccate il nome di un predefinito per visualizzatori. Il predefinito per visualizzatori viene applicato alla risorsa.
 1. Toccate **[!UICONTROL Incorpora]**.
 1. Nella finestra di dialogo **[!UICONTROL Incorpora codice]**, copiare l&#39;intero codice negli Appunti, quindi toccare **[!UICONTROL Chiudi]**.
