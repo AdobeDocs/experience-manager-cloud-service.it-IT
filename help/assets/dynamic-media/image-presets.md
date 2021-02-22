@@ -2,10 +2,10 @@
 title: Applicazione dei predefiniti per le immagini Dynamic Media
 description: Scoprite come applicare i predefiniti per immagini in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 15%
+source-wordcount: '305'
+ht-degree: 7%
 
 ---
 
@@ -16,35 +16,36 @@ I predefiniti per immagini consentono alle risorse di distribuire dinamicamente 
 
 Inoltre, potete scegliere un predefinito per immagini reattivo (designato dal pulsante **[!UICONTROL RESS]** dopo averlo selezionato).
 
-Questa sezione descrive come usare i predefiniti per immagini. [Gli amministratori possono creare e configurare i predefiniti](managing-image-presets.md) per immagini.
+[Gli amministratori possono creare e configurare i predefiniti](managing-image-presets.md) per immagini.
 
 >[!NOTE]
 >
->La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, vedere [Smart Imaging](imaging-faq.md).
+>La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti. Utilizza funzionalità intelligenti all&#39;ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, vedere [Smart Imaging](imaging-faq.md).
 
 Potete applicare un predefinito per immagini a un’immagine ogni volta che la visualizzate in anteprima.
 
 **Per applicare i predefiniti per immagini di Dynamic Media**
 
-1. Aprite la risorsa e, nella barra a sinistra, toccate il menu a discesa, quindi toccate **[!UICONTROL Rendering]**.
+1. Aprite la risorsa e, nella barra a sinistra, toccate l&#39;elenco a discesa, quindi toccate **[!UICONTROL Rappresentazioni]**.
 
    >[!NOTE]
    >
    >* Le rappresentazioni statiche vengono visualizzate nella metà superiore del riquadro. Le rappresentazioni dinamiche vengono visualizzate nella metà inferiore. Solo per le rappresentazioni dinamiche, potete utilizzare l&#39;URL per visualizzare l&#39;immagine. Il pulsante **[!UICONTROL URL]** viene visualizzato solo se si seleziona una rappresentazione dinamica. Il pulsante **[!UICONTROL RESS]** viene visualizzato solo se selezionate un predefinito immagine reattivo.
-   >
-   >* Il sistema mostra numerose rappresentazioni quando selezionate **[!UICONTROL Rappresentazioni]** nella visualizzazione Dettagli di una risorsa. Puoi aumentare il numero di predefiniti visualizzati. Consultate [Incremento del numero di predefiniti per immagini visualizzati](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+      >
+      >
+   * Il sistema mostra numerose rappresentazioni quando selezionate **[!UICONTROL Rappresentazioni]** nella visualizzazione Dettagli di una risorsa. Puoi aumentare il numero di predefiniti visualizzati. Consultate [Incremento del numero di predefiniti per immagini visualizzati](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
 
 1. Effettua una delle operazioni seguenti:
 
-   * Selezionate una rappresentazione dinamica per visualizzare l’anteprima del predefinito per immagini.
-   * Toccate **[!UICONTROL URL]**, **[!UICONTROL Incorpora]** o **[!UICONTROL RESS]** per visualizzare la finestra a comparsa.
+   * Per visualizzare l’anteprima del predefinito per immagini, selezionate una rappresentazione dinamica.
+   * Per visualizzare la finestra a comparsa, toccare **[!UICONTROL URL]**, **[!UICONTROL Embed]** o **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
-   >Se la risorsa *e* il predefinito immagine non sono ancora stati pubblicati, il pulsante **[!UICONTROL URL]** (o **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se presente) non è disponibile.
+   >Se la risorsa *e* non è ancora stata pubblicata, il pulsante **[!UICONTROL URL]** (o i pulsanti URL e RESS, se applicabile) non è disponibile.
    >
    >I predefiniti per immagini vengono inoltre pubblicati automaticamente su un server Dynamic Media S7.
 
