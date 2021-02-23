@@ -1,38 +1,38 @@
 ---
-title: Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate
-description: La visualizzazione rapida predefinita viene utilizzata nelle esperienze eCommerce per le quali viene visualizzato un pop-up con le informazioni sul prodotto per guidare un acquisto. Potete attivare il contenuto personalizzato da visualizzare nelle finestre a comparsa.
+title: Utilizzo delle viste rapide per creare finestre a comparsa personalizzate
+description: La visualizzazione Rapida predefinita viene utilizzata nelle esperienze eCommerce per le quali viene visualizzato un pop-up con le informazioni sul prodotto per guidare un acquisto. Potete attivare il contenuto personalizzato da visualizzare nelle finestre a comparsa.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 2%
+source-wordcount: '1023'
+ht-degree: 1%
 
 ---
 
 
-# Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate {#using-quickviews-to-create-custom-pop-ups}
+# Uso delle viste rapide per creare finestre a comparsa personalizzate {#using-quickviews-to-create-custom-pop-ups}
 
-La visualizzazione rapida predefinita viene utilizzata nelle esperienze eCommerce per le quali viene visualizzato un pop-up con le informazioni sul prodotto per guidare un acquisto. Tuttavia, potete attivare il contenuto personalizzato per la visualizzazione nelle finestre a comparsa. A seconda del visualizzatore in uso, questa funzione consente agli utenti di fare clic su un punto di attivazione, una miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
+La visualizzazione Rapida predefinita viene utilizzata nelle esperienze eCommerce per le quali viene visualizzato un pop-up con le informazioni sul prodotto per guidare un acquisto. Tuttavia, potete attivare il contenuto personalizzato per la visualizzazione nelle finestre a comparsa. A seconda del visualizzatore in uso, i clienti possono toccare un punto sensibile, un’immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
 
-Le visualizzazioni rapide sono supportate dai seguenti visualizzatori in Dynamic Media:
+Le viste rapide sono supportate dai seguenti visualizzatori in Dynamic Media:
 
 * Immagini interattive (aree sensibili selezionabili)
 * Video interattivo (immagini in miniatura cliccabili durante la riproduzione di un video)
 * Banner carosello (aree sensibili selezionabili o mappe immagine)
 
-Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di creazione di una visualizzazione rapida è lo stesso per tutti e tre i visualizzatori supportati.
+Sebbene le funzionalità di ciascun visualizzatore differiscano, il processo di creazione di una visualizzazione rapida è lo stesso per tutti e tre i visualizzatori supportati.
 
-**Per utilizzare le viste rapida per creare finestre a comparsa personalizzate**
+**Per utilizzare le viste rapide per creare finestre a comparsa personalizzate**
 
 1. Create una visualizzazione rapida per una risorsa caricata.
 
-   In genere, potete creare una visualizzazione rapida contemporaneamente a una risorsa da usare con il visualizzatore in uso.
+   In genere, potete creare una visualizzazione Rapida contemporaneamente a una risorsa da usare con il visualizzatore in uso.
 
    <table>
     <tbody>
     <tr>
     <td><strong>Visualizzatore in uso</strong></td>
-    <td><strong>Completate i seguenti passaggi per creare la visualizzazione rapida</strong></td>
+    <td><strong>Per creare la vista Rapida, completare i seguenti passaggi</strong></td>
     </tr>
     <tr>
     <td>Immagini interattive</td>
@@ -55,7 +55,7 @@ Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di
     <tbody>
     <tr>
     <td><strong>Visualizzatore in uso</strong><br /> </td>
-    <td><strong>Completate i seguenti passaggi per integrare il visualizzatore con il sito Web</strong></td>
+    <td><strong>Per integrare il visualizzatore con il sito Web, effettuate le seguenti operazioni</strong></td>
     </tr>
     <tr>
     <td>Immagine interattiva</td>
@@ -72,9 +72,9 @@ Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di
     </tbody>
    </table>
 
-1. Il visualizzatore che state utilizzando ora deve essere in grado di utilizzare la visualizzazione rapida.
+1. Il visualizzatore utilizzato deve essere in grado di utilizzare la vista Rapida.
 
-   A questo scopo, il visualizzatore utilizza un gestore denominato `QuickViewActive`.
+   Il visualizzatore utilizza un gestore denominato `QuickViewActive`.
 
    **Esempio:**
 Supponete di usare il seguente codice da incorporare nella pagina Web per un’immagine interattiva:
@@ -85,7 +85,7 @@ Supponete di usare il seguente codice da incorporare nella pagina Web per un’i
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **Utilizzando l&#39;esempio di codice da incorporare riportato sopra, è disponibile il seguente codice:**
+   **Utilizzando l’esempio di codice da incorporare riportato sopra, si ottiene il seguente codice:**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -103,12 +103,12 @@ Supponete di usare il seguente codice da incorporare nella pagina Web per un’i
    * Visualizzatore immagini interattivo: [palmari](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Visualizzatore video interattivo: [palmari](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. È ora necessario configurare il gestore `quickViewActivate`.
+1. Configurate ora il gestore `quickViewActivate`.
 
-   Il gestore `quickViewActivate` controlla le visualizzazioni rapide nel visualizzatore. Il gestore contiene l&#39;elenco di variabili e le chiamate di funzioni da utilizzare con la visualizzazione rapida. Il codice embed fornisce la mappatura per la variabile SKU impostata in Quickview e per una chiamata di funzione `loadQuickView` di esempio.
+   Il gestore `quickViewActivate` controlla le viste Rapide nel visualizzatore. Il gestore contiene l&#39;elenco di variabili e le chiamate di funzioni da utilizzare con la vista Rapida. Il codice da incorporare fornisce la mappatura della variabile SKU impostata nella vista Rapida. Esegue inoltre una chiamata di funzione `loadQuickView` di esempio.
 
    **Variabili**
-mappingMappa da usare nella pagina Web per ottenere il valore SKU e le variabili generiche contenute in Quickview:
+mappingMappa per l’utilizzo nella pagina Web in base al valore SKU e alle variabili generiche contenute nella visualizzazione Rapida:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -116,7 +116,7 @@ mappingMappa da usare nella pagina Web per ottenere il valore SKU e le variabili
 
    `var sku=inData.sku`
 
-   Mappate anche altre variabili dalla visualizzazione rapida, come segue:
+   Mappare anche altre variabili dalla vista Rapida, come illustrato di seguito:
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
@@ -124,7 +124,7 @@ mappingMappa da usare nella pagina Web per ottenere il valore SKU e le variabili
    ```
 
    **Funzione**
-callIl gestore richiede anche una chiamata di funzione per il funzionamento di Quickview. Si presume che la funzione sia accessibile dalla pagina host. Il codice embed fornisce un esempio di chiamata di funzione:
+callIl gestore richiede anche una chiamata di funzione per il funzionamento della visualizzazione Rapida. Si presume che la funzione sia accessibile dalla pagina host. Il codice embed fornisce un esempio di chiamata di funzione:
 
    `loadQuickView(sku)`
 
@@ -139,12 +139,12 @@ callIl gestore richiede anche una chiamata di funzione per il funzionamento di Q
 1. Effettua le seguenti operazioni:
 
    * Rimuovete il commento dalla sezione setHandlers del codice da incorporare.
-   * Mappare eventuali ulteriori variabili contenute nella visualizzazione rapida.
+   * Mappare eventuali variabili aggiuntive contenute nella vista Rapida.
 
-      * Aggiorna la chiamata `loadQuickView(sku,*var1*,*var2*)` se stai aggiungendo ulteriori variabili.
+      * Aggiorna la chiamata `loadQuickView(sku,*var1*,*var2*)` se aggiungi altre variabili.
    * Create una semplice funzione `loadQuickView` () sulla pagina, all&#39;esterno del visualizzatore.
 
-      Ad esempio, il valore sku riportato di seguito viene scritto nella console del browser:
+      Ad esempio, il valore SKU viene scritto nella console del browser come segue:
 
    ```xml
    function loadQuickView(sku){
@@ -154,12 +154,12 @@ callIl gestore richiede anche una chiamata di funzione per il funzionamento di Q
 
    * Caricate una pagina HTML di prova su un server Web e apritela.
 
-      Con le variabili di Quickview mappate e la chiamata della funzione in essere, la console del browser scrive il valore della variabile nella console del browser utilizzando la funzione di esempio fornita.
+      Le variabili della vista Rapida sono mappate. La chiamata della funzione è attiva. La console del browser scrive il valore della variabile nella console del browser. A tal fine, utilizza la funzione di esempio fornita.
 
 
 
-1. È ora possibile utilizzare una funzione per richiamare una semplice finestra a comparsa nella visualizzazione rapida. Nell&#39;esempio seguente viene utilizzato un `DIV` per un popup.
-1. Formattare la finestra a comparsa `DIV` nel modo seguente. Aggiungete il vostro stile aggiuntivo come desiderate.
+1. È ora possibile utilizzare una funzione per richiamare una semplice finestra a comparsa nella vista Rapida. Nell&#39;esempio seguente viene utilizzato un `DIV` per un popup.
+1. Formattare la finestra a comparsa `DIV` nel modo seguente. Se necessario, potete aggiungere altri stili.
 
    ```xml
    <style type="text/css">
@@ -173,7 +173,7 @@ callIl gestore richiede anche una chiamata di funzione per il funzionamento di Q
 
 1. Inserite il pop-up `DIV` nel corpo della pagina HTML.
 
-   Uno degli elementi è impostato con un ID aggiornato con il valore sku quando l&#39;utente richiama una visualizzazione rapida. L’esempio include anche un semplice pulsante per nascondere nuovamente la finestra a comparsa dopo che questa diventa visibile.
+   Uno degli elementi è impostato con un ID aggiornato con il valore SKU quando l’utente richiama una vista Rapida. L’esempio include anche un semplice pulsante per nascondere nuovamente la finestra a comparsa dopo che questa diventa visibile.
 
    ```xml
    <div id="quickview_div" >
@@ -184,7 +184,7 @@ callIl gestore richiede anche una chiamata di funzione per il funzionamento di Q
    </div>
    ```
 
-1. Aggiungete una funzione per aggiornare il valore sku nella finestra a comparsa; rendere il pop-up visibile sostituendo la semplice funzione creata al punto 5. con le seguenti caratteristiche:
+1. Per aggiornare il valore SKU nella finestra a comparsa, aggiungere una funzione. Rendete visibile la finestra a comparsa sostituendo la semplice funzione creata al punto 5 con la seguente:
 
    ```xml
    <script type="text/javascript">
@@ -196,11 +196,11 @@ callIl gestore richiede anche una chiamata di funzione per il funzionamento di Q
    ```
 
 1. Caricate una pagina HTML di prova nel server Web e apritela. Il visualizzatore visualizza la finestra a comparsa `DIV` quando un utente richiama una visualizzazione rapida.
-1. **Come visualizzare il pop-up personalizzato in modalità a schermo intero**
+1. **Come visualizzare la finestra a comparsa personalizzata in modalità a schermo intero**
 
    Alcuni visualizzatori, come il visualizzatore per video interattivi, supportano la visualizzazione in modalità a schermo intero. Tuttavia, se si utilizza la finestra a comparsa come descritto nei passaggi precedenti, viene visualizzata dietro il visualizzatore in modalità a schermo intero.
 
-   Per visualizzare la visualizzazione a comparsa sia in modalità standard che a schermo intero, allegate la finestra a comparsa al contenitore del visualizzatore. A tal fine, è possibile utilizzare un secondo metodo di gestione, `initComplete`.
+   Per visualizzare la finestra a comparsa nelle modalità standard e a schermo intero, allegate la finestra a comparsa al contenitore del visualizzatore. In questo caso, utilizzare un secondo metodo del gestore, `initComplete`.
 
    Il gestore `initComplete` viene richiamato dopo l&#39;inizializzazione del visualizzatore.
 
@@ -225,14 +225,14 @@ callIl gestore richiede anche una chiamata di funzione per il funzionamento di Q
    }
    ```
 
-   Nel codice riportato sopra, abbiamo fatto quanto segue:
+   Nel codice precedente, avete eseguito le seguenti operazioni:
 
-   * Identificato il nostro pop-up personalizzato.
+   * Identificata la finestra a comparsa personalizzata.
    * Rimosso dal DOM.
    * Identificato il contenitore del visualizzatore.
    * Associata la finestra a comparsa al contenitore del visualizzatore.
 
-1. Il codice setHandlers deve ora essere simile al seguente (è stato utilizzato il visualizzatore video interattivo):
+1. L’intero codice setHandlers è simile al seguente (è stato utilizzato il visualizzatore video interattivo):
 
    ```xml
    s7interactivevideoviewer.setHandlers({
@@ -260,5 +260,5 @@ Esempio: in questo esempio viene utilizzato il visualizzatore di immagini intera
 
    `s7interactiveimageviewer.init()`
 
-   Dopo aver incorporato il visualizzatore nella pagina host, accertatevi che l&#39;istanza del visualizzatore venga creata e che i gestori vengano caricati prima che il visualizzatore venga richiamato utilizzando `init()`.
+   Dopo aver incorporato il visualizzatore nella pagina host, accertatevi che sia stata creata l’istanza del visualizzatore. Inoltre, verificate che i gestori vengano caricati prima che il visualizzatore venga richiamato utilizzando `init()`.
 
