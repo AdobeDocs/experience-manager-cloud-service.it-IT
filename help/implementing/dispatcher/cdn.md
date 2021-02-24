@@ -2,9 +2,9 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM come Cloud Service
 translation-type: tm+mt
-source-git-commit: f4ac8168dcf394fa66460e6f4cffaff0ee6fdbab
+source-git-commit: e9dd057f3389264a7743d16133f66a9e944d13b1
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '634'
 ht-degree: 5%
 
 ---
@@ -48,7 +48,7 @@ Istruzioni di configurazione:
 1. Impostate l&#39;intestazione `X-Forwarded-Host` con il nome del dominio.
 1. Impostate l&#39;intestazione Host con il dominio di origine, che è l&#39;ingresso AEM CDN. Il valore deve provenire  Adobe.
 1. Inviate l’intestazione SNI all’origine. Come l&#39;intestazione Host, l&#39;intestazione sni deve essere il dominio di origine.
-1. Impostare la `X-Edge-Key`, necessaria per indirizzare correttamente il traffico ai server AEM. Il valore deve provenire  Adobe.
+1. Impostare la `X-Edge-Key` o la `X-AEM-Edge-Key` (se la rete CDN elimina X-Edge-*), necessaria per indirizzare correttamente il traffico ai server AEM. Il valore deve provenire  Adobe. Informare  Adobe se si desidera accedere direttamente all&#39;ingresso  CDN del Adobe (da bloccare quando `X-Edge-Key` non è presente).
 
 Prima di accettare il traffico live, è necessario verificare con  Adobe il corretto funzionamento del ciclo di traffico end-to-end.
 
