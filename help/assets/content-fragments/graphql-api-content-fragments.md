@@ -2,7 +2,7 @@
 title: AEM GraphQL API per l'utilizzo con frammenti di contenuto
 description: Scoprite come utilizzare i frammenti di contenuto in Adobe Experience Manager (AEM) come Cloud Service con l'API AEM GraphQL per la distribuzione senza titolo dei contenuti.
 translation-type: tm+mt
-source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
+source-git-commit: e6553e5f46d87c7214fdfd888a984ca725c773d9
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 1%
@@ -321,7 +321,7 @@ GraphQL per AEM supporta un elenco di tipi. Sono rappresentati tutti i tipi di d
 
 | Modello frammento di contenuto - Tipo di dati | GraphQL Type | Descrizione |
 |--- |--- |--- |
-| Testo su riga singola | String, [String] |  Utilizzata per stringhe semplici come nomi di autore, nomi di posizione ecc. |
+| Testo su riga singola | String, [String] |  Utilizzata per stringhe semplici come nomi di autore, nomi di posizione, ecc. |
 | Testo su più righe | Stringa |  Utilizzato per l&#39;output di testo, ad esempio il corpo di un articolo |
 | Numero |  Mobile, [Mobile] | Utilizzato per visualizzare il numero a virgola mobile e i numeri regolari |
 | Booleano |  Booleano |  Utilizzato per visualizzare le caselle di controllo → semplici istruzioni true/false |
