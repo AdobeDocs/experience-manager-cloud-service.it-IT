@@ -2,9 +2,9 @@
 title: Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query
 description: Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query.
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1707'
 ht-degree: 5%
 
 ---
@@ -49,7 +49,7 @@ Il funzionamento di base delle query con GraphQL per AEM aderire alla specifica 
 * È possibile eseguire query sui nomi dei campi corrispondenti ai campi all&#39;interno del modello di frammento di contenuto
    * Vedere [Esempio di query - Dettagli completi sull&#39;amministratore delegato e sui dipendenti di una società](#sample-full-details-company-ceos-employees)
 
-* Oltre ai campi del modello, sono presenti alcuni campi generati dal sistema (preceduti dal carattere di sottolineatura):
+* Oltre ai campi del modello, sono disponibili alcuni campi generati dal sistema (preceduti dal carattere di sottolineatura):
 
    * Per il contenuto:
 
@@ -61,7 +61,7 @@ Il funzionamento di base delle query con GraphQL per AEM aderire alla specifica 
          * Vedere [Query di esempio per un modello di frammento di contenuto da un modello](#sample-wknd-content-fragment-model-from-model)
       * `_path` : percorso del frammento di contenuto all&#39;interno dell&#39;archivio
          * Vedere [Esempio di query - Un singolo frammento città specifico](#sample-single-specific-city-fragment)
-      * `_reference` : rivelare i riferimenti; inclusione di riferimenti in linea nell&#39;Editor Rich Text
+      * `_reference` : rivelare i riferimenti; inclusione di riferimenti in linea nell’Editor di testo RTF
          * Vedere [Query di esempio per più frammenti di contenuto con riferimenti preimpostati](#sample-wknd-multiple-fragments-prefetched-references)
       * `_variation` : per visualizzare specifiche varianti all’interno del frammento di contenuto
          * Vedere [Esempio di query - Tutte le città con una variante denominata](#sample-cities-named-variation)
@@ -1141,7 +1141,7 @@ Questa query di esempio interroga:
 Questa query interroga:
 
 * per tutti i frammenti di contenuto di tipo `adventure`
-* metadata
+* Metadati
 
 **Query di esempio**
 
