@@ -2,9 +2,9 @@
 title: Annullamento della validità della cache CDN tramite Dynamic Media
 description: L’annullamento della validità della rete CDN (Content Delivery Network) nei contenuti memorizzati nella cache consente di aggiornare rapidamente le risorse distribuite da Dynamic Media, anziché attendere la scadenza della cache.
 translation-type: tm+mt
-source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1305'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 Le risorse Dynamic Media sono memorizzate nella cache dalla rete CDN (Content Delivery Network) per velocizzare la distribuzione ai clienti. Tuttavia, quando apportate gli aggiornamenti a tali risorse, potreste desiderare che le modifiche diventino attive immediatamente sul sito Web. Lo svuotamento o l’annullamento della validità della cache CDN consente di aggiornare rapidamente le risorse distribuite da Dynamic Media. Invece di aspettare che la cache scada utilizzando un valore TTL (Time To Live) (impostazione predefinita: 10 ore), potete inviare una richiesta dall&#39;interfaccia utente di Dynamic Media affinché la cache scada in pochi minuti.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Questa funzione richiede l’utilizzo del CDN out-of-the-box fornito con AEM Dynamic Media; qualsiasi altra CDN personalizzata non è supportata. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>Questa funzione richiede l’utilizzo del CDN fornito con Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione.
 
 Vedere anche [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
