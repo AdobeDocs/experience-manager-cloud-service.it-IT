@@ -2,9 +2,9 @@
 title: Domande frequenti sulla distribuzione dei contenuti HTTP2
 description: Informazioni sulla distribuzione dei contenuti HTTP2.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '786'
 ht-degree: 3%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 3%
 # Domande frequenti sulla distribuzione dei contenuti HTTP2{#http-delivery-of-content-faq}
 
  Adobe è entusiasta di annunciare la disponibilità della distribuzione di contenuti HTTP/2. Con HTTP/2, si verifica un aumento generale delle prestazioni.
+
+>[!NOTE]
+>
+>Questa funzione richiede l’utilizzo del CDN fornito con Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione.
 
 ## Cos’è HTTP/2? {#what-is-http}
 
@@ -40,7 +44,7 @@ La dimostrazione seguente illustra la differenza tra il caricamento HTTP/1 e HTT
 Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 * Usa HTTPS sicuro per le tue richieste rich media.
-* Utilizzate la rete CDN (rete di distribuzione dei contenuti)  inclusa nel Adobe come parte della licenza di Dynamic Media Classic.
+* Utilizzate la rete CDN  (Content Delivery Network) inclusa nel Adobe come parte della licenza di Dynamic Media Classic.
 * Utilizzate un dominio dedicato (ovvero `images.company.com` o `mycompany.scene7.com`), non un dominio Dynamic Media generico (ovvero `s7d1.scene7.com`, `s7d2.scene7.com` o `s7d13.scene7.com`).
 
    Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
