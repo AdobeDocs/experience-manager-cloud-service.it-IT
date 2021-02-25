@@ -2,9 +2,9 @@
 title: Configurazione del Cloud Service Dynamic Media
 description: Informazioni su come configurare Dynamic Media in Adobe Experience Manager come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
 workflow-type: tm+mt
-source-wordcount: '3893'
+source-wordcount: '3883'
 ht-degree: 4%
 
 ---
@@ -28,13 +28,12 @@ Con la nuova architettura,  Experience Manager è responsabile delle risorse di 
 
 >[!NOTE]
 >
->Il seguente elenco di funzioni richiede l’utilizzo del CDN predefinito fornito con Adobe Experience Manager - Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con queste funzioni.
+>Il seguente elenco di funzioni richiede l’utilizzo del CDN fornito con Adobe Experience Manager - Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con queste funzioni.
 >
 >* [Imaging avanzato](/help/assets/dynamic-media/imaging-faq.md)
 >* [Annullamento cache](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [Protezione collegamento ipertestuale](/help/assets/dynamic-media/hotlink-protection.md)
 >* [Distribuzione di contenuti HTTP/2](/help/assets/dynamic-media/http2faq.md)
->* [Integrazione dei visualizzatori Dynamic Media con  Adobe Analytics e Experience Platform Launch](/help/assets/dynamic-media/launch.md)
 >* Reindirizzamento URL a livello CDN
 >* Akamai ChinaCDN (per una consegna ottimale in Cina)
 
@@ -151,7 +150,7 @@ Vedere anche [Posta in arrivo](/help/sites-cloud/authoring/getting-started/inbox
 
 1. Nella pagina **[!UICONTROL DMSETUP]**, controlla i dettagli di configurazione che descrivono l&#39;errore. In particolare, prendere nota di eventuali messaggi di errore o codici di errore. Contatta  Assistenza clienti di Adobe con queste informazioni.
 
-   ![Pagina Configurazione Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+   ![Pagina di configurazione Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
 ### Modifica della password in Dynamic Media {#change-dm-password}
 
