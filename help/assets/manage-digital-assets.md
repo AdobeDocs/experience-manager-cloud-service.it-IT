@@ -4,9 +4,9 @@ description: Scopri i diversi metodi di gestione e modifica delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
+source-git-commit: 61e3f77b7d503b252a00178cebe654038ac6df83
 workflow-type: tm+mt
-source-wordcount: '4358'
+source-wordcount: '4336'
 ht-degree: 13%
 
 ---
@@ -440,7 +440,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 >[!NOTE]
 >
->Per i frammenti di contenuto, nell&#39;editor frammento [ vengono create delle annotazioni.](content-fragments/content-fragments.md)
+>Per i frammenti di contenuto, nell&#39;editor frammento ](content-fragments/content-fragments.md) vengono create delle annotazioni.[
 
 1. Andate alla posizione della risorsa alla quale desiderate aggiungere delle annotazioni.
 1. Toccate/fate clic sull&#39;icona **[!UICONTROL Annota]** da una delle seguenti opzioni:
@@ -541,11 +541,7 @@ Per stampare le annotazioni e verificare lo stato, toccate o fate clic sull&#39;
 
    È possibile scegliere altre impostazioni, a seconda della posizione in cui si desidera visualizzare le annotazioni o lo stato nel PDF stampato. Se vuoi che le annotazioni o lo stato vengano visualizzati in una pagina separata dalla risorsa stampata, scegli **[!UICONTROL Pagina successiva]**.
 
-   >[!NOTE]
-   >
-   >Il rendering delle annotazioni lunghe potrebbe non essere corretto nel file PDF. Per un rendering ottimale,  Adobe consiglia di limitare le annotazioni a 50 parole.
-
-1. Tocca o fai clic su **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, il PDF generato visualizza annotazioni/stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **In alto a sinistra**, l’output generato sarà simile al file PDF qui riportato.
+1. Fare clic su **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, il PDF generato visualizza annotazioni/stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **In alto a sinistra**, l’output generato sarà simile al file PDF qui riportato.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
