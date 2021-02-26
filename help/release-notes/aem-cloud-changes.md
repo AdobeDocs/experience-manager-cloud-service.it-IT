@@ -2,10 +2,10 @@
 title: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 96%
+source-wordcount: '832'
+ht-degree: 90%
 
 ---
 
@@ -65,11 +65,10 @@ La console web, utilizzata nelle versioni precedenti di AEM per modificare le im
 
 ## Non sono consentite modifiche all’archivio di pubblicazione {#changes-to-publish-repo}
 
-Le modifiche dirette nell’archivio di pubblicazione non sono consentite in AEM Cloud Service. Nelle versioni precedenti di AEM on-premise o di AEM in AMS era possibile apportare modifiche al codice direttamente nell’archivio di pubblicazione, ad esempio per creare utenti, aggiornare il profilo utente e creare nodi. Questo non è più possibile, ma puoi ovviare a questa limitazione nei seguenti modi:
+A parte le modifiche apportate nella cartella `/home` sul livello di pubblicazione, le modifiche dirette all&#39;archivio di pubblicazione non sono consentite AEM Cloud Service. Nelle versioni precedenti di AEM locale o AEM su AMS, era possibile apportare modifiche al codice direttamente nell’archivio di pubblicazione. Alcune limitazioni possono essere attenuate nei seguenti modi:
 
 * Per i contenuti e la configurazione basata su contenuti: apporta le modifiche all’istanza di authoring e pubblicale.
 * Per il codice e la configurazione: apporta le modifiche nell’archivio GIT ed esegui la pipeline CI/CD per distribuirle.
-* Per dati correlati all’utente, quali invii di moduli o dati del profilo: usa il servizio Unified Profile di Experience Cloud Platform o un altro archivio di informazioni sulle sessioni di terze parti.
 
 ## Non sono consentite modalità di esecuzione personalizzate {#custom-runmodes}
 
