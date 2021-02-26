@@ -2,9 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
+source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1017'
 ht-degree: 4%
 
 ---
@@ -53,22 +53,18 @@ La seguente release (2021.3.0) sarà del 25 marzo 2021.
 
 ## Novità in [!DNL Assets] {#what-is-new-assets}
 
-* Le risorse possono essere originate utilizzando [!DNL Experience Manager Assets Brand Portal]. Consente di reperire risorse dagli utenti dell&#39;agenzia per nuove campagne di marketing, photoshot e progetti.
+* In [!DNL Brand Portal] viene introdotta una nuova impostazione di download che consente di creare una cartella separata per ogni risorsa quando si scaricano cartelle, raccolte e così via. vedere [impostazioni di download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
-
-Ability to select a root path. select if a minimum number of tags is required. 
-
-Add a Boolean or radio widget type to metadata schema setup. -->
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## Correzioni di bug in [!DNL Assets] {#bug-fixes-assets}
 
 * Quando viene creata una nuova versione di una risorsa esistente dopo la risoluzione del conflitto di denominazione, i metadati della risorsa originale vengono sovrascritti. (CQ-4313594)
 * Quando viene stampata una risorsa con testo di annotazione lungo, il testo dell’annotazione viene troncato, anche se è disponibile spazio. (CQ-4314101)
+* Quando sono selezionate più risorse per aggiornare le proprietà, talvolta si verifica un errore o le proprietà di una risorsa deselezionata vengono aggiornate. (CQ-4316532)
+* Quando si tenta di aprire la [!UICONTROL Barra di ricerca Amministratore risorse], la pagina rimane vuota e facendo clic su [!UICONTROL Edit] > [!UICONTROL Settings] viene generato un errore. (CQ-4315079)
 
 ## Cloud Manager {#cloud-manager}
 
