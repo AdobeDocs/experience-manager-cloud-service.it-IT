@@ -2,7 +2,7 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e le funzioni di base
 translation-type: tm+mt
-source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 99%
@@ -95,7 +95,7 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
 * [Ricerca](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Icona di ricerca](/help/sites-cloud/authoring/assets/search-icon.png)
+   ![Icona Ricerca](/help/sites-cloud/authoring/assets/search-icon.png)
 
    È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
 
@@ -450,8 +450,8 @@ Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**
 **I riferimenti mostrano eventuali collegamenti alla risorsa selezionata.** Ad esempio, nella console **Sites** i [riferimenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) per le pagine visualizzano:
 
 * [Lanci](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
-* Live Copy<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
-* Copie per lingua<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
+* [Live Copy](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
+* [Copie per lingua](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * Riferimenti ai contenuti:
 
    * Collegamenti da altre pagine alla pagina selezionata
