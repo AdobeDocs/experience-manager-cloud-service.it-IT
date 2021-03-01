@@ -2,7 +2,7 @@
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 98%
@@ -130,10 +130,7 @@ Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo conv
 >
 >È consigliabile evitare di utilizzare, come nome di pagina, codici di due lettere specificati dallo standard ISO-639-1, a meno che non si tratti dell’identificativo della lingua.
 >
->Per ulteriori informazioni, consulta l’argomento relativo alla preparazione dei contenuti per la traduzione.
-<!--
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
--->
+>Per ulteriori informazioni, consulta l’argomento relativo alla [preparazione dei contenuti per la traduzione](/help/sites-cloud/administering/translation/preparation.md).
 
 ### Modelli {#templates}
 
@@ -365,7 +362,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
 >[!NOTE]
 >
->Una pagina può essere spostata solo in una posizione in cui è consentito il modello su cui si basa la pagina. Per ulteriori informazioni, vedere [Disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability).
+>Una pagina può essere spostata solo in una posizione in cui è consentito il modello su cui si basa la pagina. Per ulteriori informazioni, consulta [Disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability) .
 
 #### Azioni asincrone {#asynchronous-actions}
 
