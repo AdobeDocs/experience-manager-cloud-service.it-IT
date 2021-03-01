@@ -1,11 +1,11 @@
 ---
-title: Aggiunta di utenti e ruoli - Elementi richiesti
-description: Aggiunta di utenti e ruoli - Elementi richiesti
+title: Aggiungere utenti e ruoli - Requisiti
+description: Aggiungere utenti e ruoli - Requisiti
 translation-type: tm+mt
-source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
+source-git-commit: 2c21414edd6c3178d05c818d2bf57aa152b5956b
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 8%
+source-wordcount: '274'
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 8%
 # Aggiungere utenti e ruoli {#add-users-roles}
 
 
-Molte funzionalità di [!UICONTROL Cloud Manager] richiedono autorizzazioni specifiche per funzionare. Ad esempio, solo alcuni utenti possono impostare i KPI (Key Performance Indicators) per un programma. Tali autorizzazioni sono logicamente raggruppate in ruoli.
+Molte funzionalità in [!UICONTROL Cloud Manager] richiedono autorizzazioni specifiche per funzionare.
 
 [!UICONTROL Cloud ] Manager definisce attualmente quattro ruoli per gli utenti che determinano la disponibilità di funzionalità specifiche:
 
@@ -24,20 +24,24 @@ Molte funzionalità di [!UICONTROL Cloud Manager] richiedono autorizzazioni spec
 
 >[!CAUTION]
 >
->Per utilizzare [!UICONTROL Cloud Manager], è necessario disporre di un Adobe ID  e del contesto di prodotto dei servizi gestiti Adobe.
+>Per utilizzare [!UICONTROL Cloud Manager], è necessario disporre di un Adobe ID e del contesto di prodotto di Adobe Experience Manager as a Cloud Service.
 
 ## Definizioni dei ruoli {#role-definitions}
 
 >[!NOTE]
 >
->La persona Sviluppatore nel  Admin Console non è correlata al ruolo Sviluppatore in [!UICONTROL Cloud Manager].
+>La figura Sviluppatore in Admin Console non è correlata al ruolo Sviluppatore in [!UICONTROL Cloud Manager].
 
 La tabella seguente riepiloga i ruoli:
 
-| [!UICONTROL Cloud ] ManagerRole | Descrizione |
+| [!UICONTROL Ruoli ] di Cloud Manager | Descrizione |
 |--- |--- |
-| Business Owner (Proprietario) | Responsabile della definizione dei KPI, dell&#39;approvazione delle implementazioni di produzione e della risoluzione di importanti errori a 3 livelli. |
-| Program Manager (Responsabile programma) | Utilizza [!UICONTROL Cloud Manager] per eseguire la configurazione del team, esaminare lo stato e visualizzare i KPI. Può approvare importanti fallimenti a 3 livelli. |
-| Deployment Manager (Responsabile implementazione) | Gestisce le operazioni di distribuzione. Utilizza [!UICONTROL Cloud Manager] per eseguire distribuzioni di fase/produzione. È possibile modificare le tubazioni CI/CD. Può approvare importanti fallimenti a 3 livelli. Può accedere al repository Git. |
-| Developer (Sviluppatore) | Sviluppa e verifica il codice applicazione personalizzato. Utilizza principalmente [!UICONTROL Cloud Manager] per visualizzare lo stato. Può accedere all’archivio Git per il commit del codice. |
-| Content Author | Generalmente non interagisce con [!UICONTROL Cloud Manager]. Può utilizzare il commutatore di programma [!UICONTROL Cloud Manager] (dopo aver navigato da [!UICONTROL  Experience Cloud]) per accedere ai AEM. |
+| Business Owner (Proprietario) | Responsabile della definizione dei KPI, dell’approvazione delle implementazioni di produzione e dell’override di importanti errori a 3 livelli. |
+| Program Manager (Responsabile programma) | Utilizza [!UICONTROL Cloud Manager] per eseguire la configurazione del team, esaminare lo stato e visualizzare i KPI. Può approvare importanti errori a 3 livelli. |
+| Deployment Manager (Responsabile implementazione) | Gestisce le operazioni di distribuzione. Utilizza [!UICONTROL Cloud Manager] per eseguire distribuzioni di stage/produzione. È possibile modificare le pipeline CI/CD. Può approvare importanti errori a 3 livelli. È possibile accedere all’archivio Git. |
+| Developer (Sviluppatore) | Sviluppa e verifica il codice personalizzato dell’applicazione. Utilizza principalmente [!UICONTROL Cloud Manager] per visualizzare lo stato. Può accedere all’archivio Git per il commit del codice. |
+| Autore del contenuto | In genere non interagisce con [!UICONTROL Cloud Manager]. Per accedere ad AEM puoi utilizzare il commutatore di programma [!UICONTROL Cloud Manager] (dopo aver navigato da [!UICONTROL Experience Cloud]). |
+
+## Profilo del prodotto di integrazione {#integration-product-profile}
+
+Oltre a quanto sopra, Cloud Manager creerà automaticamente un profilo di prodotto denominato &quot;Integrazioni - Cloud Service&quot;. Questo profilo di prodotto viene utilizzato per le integrazioni tra Adobe Experience Manager e altri prodotti Adobe. Questo profilo di prodotto **non deve essere eliminato**. Se elimini accidentalmente questo profilo, dovrà essere ricreato manualmente. Il nome visualizzato per questo profilo **deve essere** `CM_CS_DEFAULT`.
