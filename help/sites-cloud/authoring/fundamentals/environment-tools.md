@@ -2,10 +2,10 @@
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 100%
+source-wordcount: '2152'
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ Fai clic sul componente per evidenziarlo nell’editor di pagine. Le azioni disp
 
    ![Pulsante modifica Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Una pagina che fa parte di una Live Copy, in cui i componenti vengono ereditati da un’altra pagina, dispone di una selezione ridotta di opzioni, comprese quelle di ereditarietà. <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* Pagina che fa parte di una [Live Copy](/help/sites-cloud/administering/msm/overview.md), in cui i componenti vengono ereditati da un’altra pagina.
 
 >[!NOTE]
 >
@@ -225,9 +225,9 @@ Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determi
 * **Collegamenti in entrata**: fornisce un elenco di pagine che fanno riferimento a una data pagina, insieme all’accesso diretto alla funzione di **Modifica** di una di queste pagine quando selezioni un collegamento specifico.
 * Istanze di contenuto prestato o preso in prestito mediante il componente **Riferimento**: da qui puoi passare alla pagina di riferimento o a cui si fa riferimento.
 * [Lanci](/help/sites-cloud/authoring/launches/overview.md): fornisce accesso ai lanci correlati.
-* Live Copy visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* Blueprint fornisce dettagli e varie azioni <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* Copie per lingua: fornisce dettagli e varie azioni. <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [](/help/sites-cloud/administering/msm/overview.md)Live Copy visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
+* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md), fornisce dettagli e varie azioni
+* [Copie per lingua](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel): fornisce dettagli e varie azioni
 
 ## Eventi - Timeline {#events-timeline}
 
@@ -248,7 +248,7 @@ Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dett
 ![Opzione Informazioni pagina](/help/sites-cloud/authoring/assets/page-information.png)
 
 * [Apri proprietà](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-* Rollout pagina <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
+* [Rollout pagina](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Avvia flusso di lavoro](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Blocca pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [Pubblica pagina](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
@@ -283,6 +283,7 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* L’accesso ad alcune modalità richiede autorizzazioni o privilegi adeguati.
 >* La modalità Sviluppatore non è disponibile su dispositivi mobili a causa di limitazioni di spazio.
 >* La [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
+
 >
 
 
