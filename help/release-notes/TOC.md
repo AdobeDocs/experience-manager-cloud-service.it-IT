@@ -19,7 +19,7 @@ ht-degree: 100%
    + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021{#2021}
       + [Note sulla versione 2021.1.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
-   + 2020 {#2020}
+   + 2020{#2020}
       + [Note sulla versione 2020.12.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
       + [Note sulla versione 2020.11.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
       + [Note sulla versione 2020.10.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-10-0.md)
