@@ -50,7 +50,7 @@ ht-degree: 90%
       + [Console Componenti](authoring/features/components-console.md)
       + [Layout reattivo](authoring/features/responsive-layout.md)
       + [Utilizzo dei tag](authoring/features/tags.md)
-      + [Abilitazione delle funzioni progressive delle app Web](authoring/features/enable-pwa.md)
+      + [Abilitazione delle funzioni progressive delle app web](authoring/features/enable-pwa.md)
    + Progetti {#projects}
       + [Utilizzo dei progetti](authoring/projects/overview.md)
       + [Gestione dei progetti](authoring/projects/managing.md)
@@ -59,9 +59,9 @@ ht-degree: 90%
    + Lanci {#launches}
       + [Utilizzo dei lanci](authoring/launches/overview.md)
       + [Creazione di lanci](authoring/launches/creating.md)
-      + [Gestione delle pagine negli avvii](authoring/launches/managing-pages.md)
+      + [Gestione delle pagine nei lanci](authoring/launches/managing-pages.md)
       + [Modifica dei lanci](authoring/launches/editing.md)
-      + [Anteprima degli avvii con Timewarp](authoring/launches/preview.md)
+      + [Anteprima dei lanci con Timewarp](authoring/launches/preview.md)
       + [Promozione del lancio](authoring/launches/promoting.md)
    + Flussi di lavoro {#workflows}
       + [Utilizzo dei flussi di lavoro](authoring/workflows/overview.md)
@@ -78,7 +78,7 @@ ht-degree: 90%
       + [Creazione e gestione delle offerte](authoring/personalization/offers.md)
       + [Segmentazione](authoring/personalization/segmentation.md)
       + [Configurazione della segmentazione con ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-      + [Registrazione, login e profilo utente](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + [Registrazione, accesso e profilo utente](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Amministrazione {#administering}
    + [Amministrazione dei flussi di lavoro](administering/workflows-administering.md)
 + Integrazione con AEM as a Cloud Service {#integrations}
