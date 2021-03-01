@@ -2,10 +2,10 @@
 title: Authoring di una pagina per dispositivi mobili
 description: Quando si effettua l’authoring per i dispositivi mobili, è possibile alternare tra diversi emulatori per capire che cosa vedrà l’utente finale
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 100%
+source-wordcount: '267'
+ht-degree: 98%
 
 ---
 
@@ -20,13 +20,11 @@ I dispositivi sono raggruppati nelle categorie feature, smart e touch, a seconda
 
 >[!NOTE]
 >
->Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. Consulta Creazione di una Live Copy per canali diversi.
+>Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. Consulta [Creazione di Live Copy.](/help/sites-cloud/administering/msm/creating-live-copies.md)
 >
 >Gli sviluppatori AEM possono creare nuovi gruppi di dispositivi. Consulta Creazione di filtri per i gruppi di dispositivi.
 
 <!--
->To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
->
 >AEM developers can create new device groups. (See [Creating Device Group Filters](/help/sites-developing/groupfilters.md).)
 -->
 
