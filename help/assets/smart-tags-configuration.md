@@ -3,17 +3,17 @@ title: Tag avanzati migliorati
 description: Applica tag aziendali contestuali e descrittivi utilizzando i servizi di intelligenza artificiale e machine learning di Adobe Sensei per migliorare l’individuazione delle risorse e velocizzare la realizzazione dei contenuti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 96%
+source-wordcount: '1031'
+ht-degree: 83%
 
 ---
 
 
-# Configurare Experience Manager per l’assegnazione di tag avanzati alle risorse {#configure-aem-for-smart-tagging}
+# Configurare [!DNL Experience Manager] per l’assegnazione di tag avanzati alle risorse {#configure-aem-for-smart-tagging}
 
-L’assegnazione dei tag alle risorse mediante un vocabolario controllato dalla tassonomia consente di individuare e recuperare facilmente le risorse tramite ricerche basate sui tag. La funzionalità Tag avanzati fornita da Adobe utilizza algoritmi di intelligenza artificiale e machine learning per addestrare il riconoscimento delle immagini. Grazie a un framework di intelligenza artificiale di [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html), l’algoritmo di riconoscimento delle immagini viene addestrato in base alla tua struttura dei tag e alla tassonomia aziendale.
+L’assegnazione dei tag alle risorse mediante un vocabolario controllato dalla tassonomia consente di individuare e recuperare facilmente le risorse tramite ricerche basate sui tag. Adobe fornisce tag avanzati che utilizzano algoritmi di intelligenza artificiale e apprendimento automatico per addestrare le immagini. Grazie a un framework di intelligenza artificiale di [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html), l’algoritmo di riconoscimento delle immagini viene addestrato in base alla tua struttura dei tag e alla tassonomia aziendale.
 
 La funzionalità Tag avanzati è acquistabile come componente aggiuntivo per [!DNL Experience Manager]. Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento ad Adobe Developer Console. L’amministratore accede al collegamento per integrare Tag avanzati con [!DNL Experience Manager] tramite Adobe Developer Console.
 
@@ -25,7 +25,7 @@ La funzionalità Tag avanzati è acquistabile come componente aggiuntivo per [!D
 
 >[!IMPORTANT]
 >
->[!DNL Experience Manager Assets] le implementazioni create dopo il  [rilascio di agosto 2020 ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) sono integrate  [!DNL Adobe Developer Console] per impostazione predefinita. Consente di configurare più rapidamente la funzionalità smart tag. Nelle precedenti distribuzioni, gli amministratori possono seguire i seguenti passaggi per configurare l&#39;integrazione.
+>Se le distribuzioni [!DNL Experience Manager Assets] sono state create dopo la versione [di agosto 2020](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets), [!DNL Adobe Developer Console] è integrato per impostazione predefinita. Consente di configurare più rapidamente la funzionalità dei tag avanzati. Nelle implementazioni precedenti, gli amministratori possono configurare manualmente l’integrazione seguendo le istruzioni riportate di seguito.
 
 ## Integrare con Adobe Developer Console {#aio-integration}
 
@@ -56,7 +56,7 @@ Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer
 
 1. Fai clic su **[!UICONTROL Scarica chiave pubblica]**.
 
-   ![Creare una chiave pubblica tramite Tag avanzati di Experience Manager](assets/aem_smarttags-config1.png)
+   ![[!DNL Experience Manager] Creare una chiave pubblica tramite tag avanzati](assets/aem_smarttags-config1.png)
 
 ### Creare un’integrazione {#create-aio-integration}
 
@@ -64,10 +64,10 @@ Per utilizzare Tag avanzati, crea un’integrazione in Adobe Developer Console p
 
 1. Accedi a [https://console.adobe.io](https://console.adobe.io/) in un browser. Seleziona l’account appropriato e verifica che il ruolo aziendale associato sia quello di amministratore di sistema.
 1. Crea un progetto con il nome desiderato. Fai clic su **[!UICONTROL Aggiungi API]**.
-1. Nella pagina **[!UICONTROL Aggiungi un’API]**, seleziona **[!UICONTROL Experience Cloud]** e **[!UICONTROL Contenuti avanzati]**. Fai clic su **[!UICONTROL Avanti]**.
+1. Nella pagina **[!UICONTROL Aggiungi un&#39;API]**, seleziona **[!UICONTROL Experience Cloud]**, quindi seleziona **[!UICONTROL Smart Content]**. Fai clic su **[!UICONTROL Avanti]**.
 1. Seleziona **[!UICONTROL Carica la chiave pubblica]**. Fornisci il file del certificato scaricato da [!DNL Experience Manager]. Viene visualizzato il messaggio [!UICONTROL Chiavi pubbliche caricate correttamente]. Fai clic su **[!UICONTROL Avanti]**.
-1. Nella pagina per la [!UICONTROL creazione di una nuova credenziale dell’account di servizio (JWT)] viene visualizzata la chiave pubblica per l’account di servizio appena configurato. Fai clic su **[!UICONTROL Avanti]**.
-1. Nella pagina per la **[!UICONTROL selezione dei profili di prodotto]**, seleziona **[!UICONTROL Servizi di contenuti avanzati]**. Fai clic su **[!UICONTROL Salva API configurata]**. In una pagina vengono visualizzate ulteriori informazioni sulla configurazione. Tieni aperta questa pagina per copiare e aggiungere questi valori in Experience Manager durante l’ulteriore configurazione di Tag avanzati in [!DNL Experience Manager].
+1. [!UICONTROL Nella pagina delle ] credenziali Crea un nuovo account di servizio (JWT) viene visualizzata la chiave pubblica per l’account di servizio. Fai clic su **[!UICONTROL Avanti]**.
+1. Nella pagina per la **[!UICONTROL selezione dei profili di prodotto]**, seleziona **[!UICONTROL Servizi di contenuti avanzati]**. Fai clic su **[!UICONTROL Salva API configurata]**. In una pagina vengono visualizzate ulteriori informazioni sulla configurazione. Tieni aperta questa pagina per copiare e aggiungere questi valori in [!DNL Experience Manager] durante l’ulteriore configurazione di Tag avanzati in [!DNL Experience Manager].
 
    ![Nella scheda Panoramica, puoi esaminare le informazioni fornite sull’integrazione.](assets/integration_details.png)
 
@@ -94,22 +94,22 @@ Dopo aver completato la configurazione, segui questi passaggi per convalidarla.
 
 ### Effettuare la riconfigurazione in caso di scadenza del certificato {#certrenew}
 
-Quando il certificato scade, non è più attendibile. Per aggiungere un nuovo certificato, effettua le seguenti operazioni. Non è possibile rinnovare un certificato scaduto.
+Quando il certificato scade, non è più attendibile. Per aggiungere un certificato, effettua le seguenti operazioni. Non è possibile rinnovare un certificato scaduto.
 
 1. Accedi alla tua implementazione di [!DNL Experience Manager] come amministratore. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Utenti]**.
 
-1. Individua e fai clic sull’utente **[!UICONTROL dam-update-service]**. Fai clic sulla scheda **[!UICONTROL Registro chiavi]**.
+1. Individua e fai clic sull’utente **[!UICONTROL dam-update-service]**. Fare clic sulla scheda **[!UICONTROL Registro chiavi]**.
 1. Elimina il registro chiavi esistente **[!UICONTROL similaritysearch]** con il certificato scaduto. Fai clic su **[!UICONTROL Salva e chiudi]**.
 
-   ![Per aggiungere un nuovo certificato di sicurezza, elimina la voce esistente similaritysearch in Registro chiavi](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![Elimina la voce di ricerca per similarità esistente in Registro chiavi per aggiungere un nuovo certificato di sicurezza](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Figura: per aggiungere un nuovo certificato di sicurezza, elimina la voce esistente `similaritysearch` in Registro chiavi*
+   *Figura: Elimina la  `similaritysearch` voce esistente in Registro chiavi per aggiungere un certificato di sicurezza.*
 
 1. Nell’interfaccia utente di [!DNL Experience Manager], accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni Adobe IMS]**. Apri la configurazione di Tag avanzati disponibile. Per scaricare un certificato pubblico, fai clic su **[!UICONTROL Scarica certificato pubblico]**.
 
 1. Accedi a [https://console.adobe.io](https://console.adobe.io) e naviga fino al servizio esistente nel progetto. Carica il nuovo certificato ed effettua la configurazione. Per ulteriori informazioni sulla configurazione, consulta [Creare un’integrazione con Adobe Developer Console](#create-aio-integration).
 
-## Abilita l&#39;assegnazione di tag automatica quando le risorse vengono caricate (facoltativo) {#enable-smart-tagging-for-uploaded-assets}
+## Abilita l’assegnazione tag automatica quando le risorse vengono caricate (facoltativo) {#enable-smart-tagging-for-uploaded-assets}
 
 1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 1. Nella pagina **[!UICONTROL Modelli flusso di lavoro]**, seleziona il modello del flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
@@ -126,7 +126,7 @@ Quando il certificato scade, non è più attendibile. Per aggiungere un nuovo ce
 
 1. Nella scheda **[!UICONTROL Argomenti]**, seleziona **[!UICONTROL Ignora errori]** se desideri che il flusso di lavoro ignori gli errori durante la previsione dei tag. Per assegnare i tag alle risorse quando vengono caricate, a prescindere dal fatto che l’assegnazione tag avanzati sia abilitata o meno per le cartelle, seleziona **[!UICONTROL Ignora flag di tag avanzati]**.
 
-1. Fai clic su **[!UICONTROL OK]** per chiudere il passaggio del processo, quindi salva il flusso di lavoro. Fai clic su **[!UICONTROL Sincronizza]**.
+1. Fai clic su **[!UICONTROL OK]**. Chiude la fase del processo. Salva il flusso di lavoro. Fai clic su **[!UICONTROL Sincronizza]**.
 
 >[!MORELIKETHIS]
 >
