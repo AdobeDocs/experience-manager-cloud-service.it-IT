@@ -2,7 +2,7 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile modificarla per aggiornarne i contenuti
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -367,7 +367,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
 L’ereditarietà è il meccanismo in cui il contenuto può essere inviato automaticamente da un componente all’altro. I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
-* Gestione multisito <!--[Multi site management](/help/sites-administering/msm.md)-->
+* [Gestione multisito](/help/sites-cloud/administering/msm/overview.md)
 * [Lanci](/help/sites-cloud/authoring/launches/overview.md) (se basati su Live Copy).
 
 È possibile annullare l’ereditarietà, quindi riabilitarla. A seconda del componente, questo può essere disponibile dalla barra degli strumenti del componente, se il componente si trova in una pagina che fa parte di una Live Copy o di un lancio (basato su una Live Copy).
