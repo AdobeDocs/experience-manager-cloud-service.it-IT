@@ -2,7 +2,7 @@
 title: 'Differenze tra pagine '
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 translation-type: tm+mt
-source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 97%
@@ -29,9 +29,9 @@ La creazione di contenuti è un processo iterativo. Per un authoring efficace, �
 La visualizzazione affiancata delle differenze permette di confrontare:
 
 * [Versioni](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - Versione precedente di una pagina con il relativo stato corrente
-* Live Copy - Live Copy con la relativa blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy con la relativa blueprint
 * [Lanci](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Lancio con la rispettiva origine
-* Copie per lingua - Una pagina prima e dopo la traduzione o la ritraduzione <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)Copie per lingua - Una pagina prima e dopo la traduzione o la ritraduzione
 
 Consulta i rispettivi argomenti su come avviare la funzione per il rilevamento delle differenze in questi contesti.
 
@@ -89,7 +89,7 @@ Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsias
 Esistono alcune situazioni in cui il confronto delle differenze della pagina non è in grado di rilevare una differenza nel modo previsto.
 
 * Nel confronto di versioni e lanci, la funzione non prende in considerazione le differenze dinamiche, come i componenti breadcrumb, i menu, gli elenchi di prodotti o i loghi (componenti che si basano sulla struttura del sito per eseguire il rendering del contenuto).
-* Per le versioni, la diff non ricrea i criteri di controllo degli accessi e le relazioni Live Copy.
+* Per le versioni, la differenza non ricrea i criteri di controllo accessi e le relazioni Live Copy.
 * Se una pagina viene spostata, non ti sarà più possibile eseguire una rilevazione delle differenze con qualsiasi versione creata prima dello spostamento.
    * Se rilevi dei problemi con una differenza, controlla la [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) per verificare se la pagina è stata spostata.
 
