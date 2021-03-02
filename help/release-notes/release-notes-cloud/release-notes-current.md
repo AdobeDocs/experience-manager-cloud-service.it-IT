@@ -2,10 +2,10 @@
 title: Note sulla versione corrente di  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione corrente di  [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c631e23f714b58c3b906e9ab521f9e88b638d044
+source-git-commit: 5b702dd33169939d7b16df07f29f8149cafa82bd
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 2%
+source-wordcount: '1078'
+ht-degree: 4%
 
 ---
 
@@ -28,27 +28,9 @@ La versione seguente (2021.3.0) sarà del 25 marzo 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service  {#sites}
 
-### Gestione dei contenuti headless {#headless}
-
-* **[API GraphQL per la distribuzione](/help/assets/content-fragments/graphql-api-content-fragments.md)** di frammenti di contenuto: Possibilità di eseguire query sui frammenti di contenuto utilizzando la sintassi GraphQL e gli schemi basati su modelli di frammenti di contenuto per l’output in formato JSON.
-
-* **[Supporto per l’autenticazione per le richieste](/help/assets/content-fragments/graphql-authentication-content-fragments.md)** API GraphQL: Possibilità di autenticare le richieste API GraphQL con token di accesso per le API lato server.
-
 * **[Componente](/help/implementing/developing/hybrid/remote-page.md)** RemotePage: È stato aggiunto il supporto per la visualizzazione e la modifica di applicazioni a pagina singola esterne all’interno di AEM utilizzando.
 
 * **[Modifica di un’applicazione a pagina singola esterna in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: È stata aggiunta la possibilità di caricare un’applicazione a pagina singola autonoma in un’istanza AEM, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
-
-* Output JSON migliorato dall’API GraphQL, inclusa la possibilità di generare testo RTF in formato JSON e impostazioni internazionali.
-
-* Supporto per la nidificazione di modelli di frammenti di contenuto per consentire la creazione di strutture di frammenti di contenuto nidificate tramite tipi di dati di riferimento a frammenti di contenuto dedicati o riferimenti a frammenti di contenuto in linea in campi di testo multilingue.
-
-* Regole di convalida aggiuntive disponibili nei tipi di dati dei modelli di frammento di contenuto, inclusi &quot;univoci&quot;, &quot;obbligatori&quot; e &quot;traducibili&quot;.
-
-* Possibilità di assegnare tag ai modelli di frammenti di contenuto e di creare frammenti di contenuto in una cartella con criteri basati su tag o percorsi.
-
-* Miglioramenti a livello di usabilità nell’editor dei frammenti di contenuto, inclusa l’azione di pubblicazione e la visualizzazione del modello su cui si basa un frammento.
-
-* Possibilità di visualizzare in anteprima l’output JSON direttamente nell’editor frammento di contenuto.
 
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
@@ -56,7 +38,7 @@ La versione seguente (2021.3.0) sarà del 25 marzo 2021.
 * [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
 -->
 
-## [!DNL Adobe Experience Manager Assets] come  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ## Novità in [!DNL Assets] {#what-is-new-assets}
 
@@ -76,6 +58,18 @@ Customers using the Connected Assets feature can now easily view and track asset
 * Quando viene stampata una risorsa con testo di annotazione lungo, il testo dell’annotazione viene troncato, anche se è disponibile spazio. (CQ-4314101)
 * Quando selezioni più risorse per aggiornare le proprietà, a volte si verifica un errore o le proprietà di una risorsa deselezionata vengono aggiornate. (CQ-4316532)
 * Quando tenti di aprire la [!UICONTROL Barra di ricerca amministrazione risorse], la pagina rimane vuota e facendo clic su [!UICONTROL Modifica] > [!UICONTROL Impostazioni] viene generato un errore. (CQ-4315079)
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### Novità {#what-is-new-commerce}
+
+* Gestione dell&#39;esperienza del prodotto: Arricchisci le pagine dei cataloghi di prodotti singolarmente con Frammenti esperienza.
+
+* Proprietà estese della console prodotti per visualizzare le risorse collegate e i frammenti esperienza, con l’azione di passare rapidamente al contenuto associato.
+
+* È stato rilasciato il sito di riferimento CIF Venia - 2021.02.24 che include l’ultima versione dei componenti core CIF v1.8.0. Per ulteriori informazioni, consulta [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) .
+
+* È stata rilasciata la versione 1.8.0 dei componenti core CIF. Per ulteriori informazioni, consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) .
 
 ## Cloud Manager {#cloud-manager}
 
