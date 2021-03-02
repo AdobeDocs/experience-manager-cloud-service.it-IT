@@ -2,10 +2,10 @@
 title: Note sulla versione corrente di  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione corrente di  [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 7c9eea58b8e42902842f5e9658f0fa677f1dc51d
+source-git-commit: c631e23f714b58c3b906e9ab521f9e88b638d044
 workflow-type: tm+mt
-source-wordcount: '1064'
-ht-degree: 3%
+source-wordcount: '1142'
+ht-degree: 2%
 
 ---
 
@@ -60,7 +60,11 @@ La versione seguente (2021.3.0) sarà del 25 marzo 2021.
 
 ## Novità in [!DNL Assets] {#what-is-new-assets}
 
-* In [!DNL Brand Portal] viene introdotta una nuova impostazione di download che consente di creare una cartella separata per ogni risorsa durante il download di cartelle, raccolte e così via. consulta [scarica impostazioni](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
+* Le aziende ora possono creare risorse utilizzando [!DNL Brand Portal]. La funzione Asset sourcing sfrutta [!DNL Brand Portal] per aiutare i clienti a coinvolgere gli utenti dell’agenzia nella creazione di risorse per nuove campagne di marketing, fototiri e progetti. Consulta [determinazione origine risorse in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+
+* Il rapporto di utilizzo [!DNL Brand Portal] ora visualizza solo gli utenti attivi. Gli utenti inattivi non vengono visualizzati ora. Gli utenti attivi sono quelli il cui account è assegnato a un profilo di prodotto in [!DNL Admin Console]. Consulta [[!DNL Brand Portal] reports](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
+
+* In [!DNL Brand Portal] viene introdotta una nuova impostazione di download che consente di creare una cartella separata per ogni risorsa durante il download di cartelle, raccolte e così via. Consulta [scarica impostazioni](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
