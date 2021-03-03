@@ -2,10 +2,10 @@
 title: Modifica dei lanci
 description: 'Quando è stato creato un lancio per una pagina (o per un insieme di pagine), è possibile modificare il contenuto nella copia di lancio della pagina (o delle pagine). '
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 83%
+source-wordcount: '555'
+ht-degree: 78%
 
 ---
 
@@ -22,6 +22,13 @@ Dopo aver creato un lancio per una pagina o un insieme di pagine, è possibile m
 Quando modifichi la pagina viene visualizzata un’indicazione nella barra degli strumenti superiore, insieme alle opzioni **Lascia** e **Passa** :
 
 ![Lascia e naviga all’avvio dall’Editor pagina](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+>[!NOTE]
+>
+>Non puoi spostare una pagina all’interno di un lancio. Il tentativo di eseguire questa azione attiva un messaggio di avviso:
+>
+>* Avviso: Questa pagina è l’origine di un lancio. Lo spostamento della pagina non è consentito.
+
 
 ### Modifica delle pagine di lanci soggette a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
