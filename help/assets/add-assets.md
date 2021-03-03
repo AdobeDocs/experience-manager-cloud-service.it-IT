@@ -1,10 +1,10 @@
 ---
 title: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager].
-description: Aggiungi le risorse digitali a  [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
+description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
+source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '1951'
 ht-degree: 1%
 
 ---
@@ -12,33 +12,33 @@ ht-degree: 1%
 
 # Aggiungere risorse digitali ad Adobe Experience Manager {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager] arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, smart tag, rappresentazioni e altri servizi di gestione delle risorse digitali (DAM). Potete caricare vari tipi di file, ad esempio immagini, documenti e file immagine non elaborati, dalla cartella locale o da un&#39;unità di rete a [!DNL Experience Manager Assets].
+[!DNL Adobe Experience Manager] arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, tag avanzati, rappresentazioni e altri servizi di Digital Asset Management (DAM). È possibile caricare vari tipi di file, ad esempio immagini, documenti e file immagine non elaborati, dalla cartella locale o da un&#39;unità di rete a [!DNL Experience Manager Assets].
 
-Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all&#39;archivio [!DNL Experience Manager], inclusi client desktop, come  collegamento risorsa Adobe o [!DNL Experience Manager] app desktop, script di caricamento e caricamento che i clienti potrebbero creare e integrazioni di assimilazione automatizzate aggiunte come estensioni [!DNL Experience Manager].
+Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all’archivio [!DNL Experience Manager] , inclusi i client desktop, come Adobe Asset Link o l’ [!DNL Experience Manager] app desktop, caricare e acquisire script che i clienti creerebbero, e integrazioni di acquisizione automatizzate aggiunte come estensioni [!DNL Experience Manager].
 
-Qui ci concentreremo sui metodi di caricamento per gli utenti finali e forniremo collegamenti agli articoli che descrivono gli aspetti tecnici del caricamento e dell&#39;assimilazione delle risorse tramite [!DNL Experience Manager] API e SDK.
+Ci concentreremo sui metodi di caricamento per gli utenti finali qui e forniremo collegamenti agli articoli che descrivono gli aspetti tecnici del caricamento e dell’acquisizione delle risorse utilizzando le API e gli SDK [!DNL Experience Manager].
 
-Anche se potete caricare e gestire qualsiasi file binario in [!DNL Experience Manager], i formati file più comunemente utilizzati supportano servizi aggiuntivi, come l&#39;estrazione di metadati o la generazione di anteprime/rappresentazioni. Per ulteriori informazioni, fare riferimento a [formati di file supportati](file-format-support.md).
+Mentre puoi caricare e gestire qualsiasi file binario in [!DNL Experience Manager], i formati di file più comunemente utilizzati supportano servizi aggiuntivi, come l’estrazione dei metadati o la generazione di anteprime/rendering. Per ulteriori informazioni, fare riferimento a [formati di file supportati](file-format-support.md) .
 
-Potete anche scegliere di effettuare un’ulteriore elaborazione sulle risorse caricate. Potete configurare diversi profili di elaborazione delle risorse nella cartella in cui vengono caricate le risorse per aggiungere metadati, rappresentazioni o servizi di elaborazione delle immagini specifici. Consultate [elaborare le risorse durante il caricamento](#process-when-uploaded).
+Puoi anche scegliere di eseguire un’ulteriore elaborazione sulle risorse caricate. È possibile configurare diversi profili di elaborazione delle risorse nella cartella in cui vengono caricate le risorse per aggiungere metadati, rappresentazioni o servizi di elaborazione delle immagini specifici. Consulta [elaborare le risorse durante il caricamento](#process-when-uploaded).
 
 >[!NOTE]
 >
->[!DNL Experience Manager] come strumento  [!DNL Cloud Service] che sfrutta un nuovo metodo di caricamento delle risorse: caricamento binario diretto. È supportato per impostazione predefinita dalle funzionalità e dai client dei prodotti forniti, come l&#39;interfaccia utente [!DNL Experience Manager], l&#39;app [!DNL Adobe Asset Link], [!DNL Experience Manager] desktop, e quindi trasparente per gli utenti finali.
+>[!DNL Experience Manager] as a  [!DNL Cloud Service] sfrutta un nuovo modo di caricare le risorse - caricamento binario diretto. È supportato per impostazione predefinita dalle funzionalità di prodotto e dai client predefiniti, come l’ [!DNL Experience Manager] interfaccia utente, [!DNL Adobe Asset Link], [!DNL Experience Manager] app desktop, e quindi trasparente per gli utenti finali.
 >
->Il codice di caricamento personalizzato o esteso dai team tecnici dei clienti deve usare le nuove API e i nuovi protocolli di caricamento.
+>Per caricare il codice personalizzato o esteso dai clienti, i team tecnici devono utilizzare le nuove API e i nuovi protocolli di caricamento.
 
-Le risorse come [!DNL Cloud Service] forniscono i seguenti metodi di caricamento.  Adobe consiglia di comprendere il caso d’uso e l’applicabilità di un’opzione di caricamento prima di utilizzarla.
+Assets as a [!DNL Cloud Service] fornisce i seguenti metodi di caricamento. Adobe consiglia di comprendere il caso d’uso e l’applicabilità di un’opzione di caricamento prima di utilizzarla.
 
-| Metodo Carica | Quando utilizzare? | Persona principale |
+| Metodo di caricamento | Quando utilizzare? | Persona principale |
 |---------------------|----------------|-----------------|
-| [Interfaccia utente della console Risorse](#upload-assets) | Caricamento occasionale, facilità di pressione e trascinamento, caricamento del mirino. Non usate per caricare un gran numero di risorse. | Tutti gli utenti |
-| [API di caricamento](#upload-using-apis) | Per decisioni dinamiche durante il caricamento. | Developer (Sviluppatore) |
-| [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Caricamento di risorse a basso volume, ma per la migrazione. | Amministratore, Marketer |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Utile quando creativi e professionisti del marketing lavorano sulle risorse dalle app desktop [!DNL Creative Cloud] supportate. | Creative, Marketer |
-| [Caricamento massa risorsa](#asset-bulk-ingestor) | Consigliato per migrazioni su larga scala e ingestioni di massa occasionali. Solo per gli archivi dati supportati. | Amministratore, sviluppatore |
+| [Interfaccia utente della console Assets](#upload-assets) | Caricamento occasionale, facilità di pressione e trascinamento, caricamento del finder. Non utilizzare per caricare un numero elevato di risorse. | Tutti gli utenti |
+| [Carica API](#upload-using-apis) | Per decisioni dinamiche durante il caricamento. | Developer (Sviluppatore) |
+| App desktop [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Acquisizione di risorse a basso volume, ma non per la migrazione. | Amministratore, addetto al marketing |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Utile quando creativi e professionisti del marketing lavorano sulle risorse dalle app [!DNL Creative Cloud] desktop supportate. | Creative, addetto al marketing |
+| [Acquisizione in massa di risorse](#asset-bulk-ingestor) | Consigliato per migrazioni su larga scala e ingestioni di massa occasionali. Solo per i datastore supportati. | Amministratore, sviluppatore |
 
-## Caricare le risorse {#upload-assets}
+## Caricare risorse {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -63,27 +63,27 @@ Le risorse come [!DNL Cloud Service] forniscono i seguenti metodi di caricamento
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-Per caricare uno o più file, potete selezionarli sul desktop e trascinarli sull’interfaccia utente (browser Web) nella cartella di destinazione. In alternativa, potete avviare il caricamento dall’interfaccia utente.
+Per caricare un file (o più file), puoi selezionarlo sul desktop e trascinarlo sull’interfaccia utente (browser web) nella cartella di destinazione. In alternativa, puoi avviare il caricamento da dall’interfaccia utente di .
 
-1. Nell&#39;interfaccia utente [!DNL Assets], andate alla posizione in cui desiderate aggiungere le risorse digitali.
-1. Per caricare le risorse, effettuate una delle seguenti operazioni:
+1. Nell’interfaccia utente di [!DNL Assets] , individua il percorso in cui desideri aggiungere risorse digitali.
+1. Per caricare le risorse, effettua una delle seguenti operazioni:
 
-   * Sulla barra degli strumenti, fare clic su **[!UICONTROL Crea]** > **[!UICONTROL File]**. Se necessario, potete rinominare il file nella finestra di dialogo visualizzata.
-   * In un browser che supporta HTML5, trascinate le risorse direttamente sull&#39;interfaccia utente [!DNL Assets]. La finestra di dialogo per rinominare il file non viene visualizzata.
+   * Sulla barra degli strumenti, fai clic su **[!UICONTROL Crea]** > **[!UICONTROL File]**. Se necessario, rinomina il file nella finestra di dialogo visualizzata.
+   * In un browser che supporta HTML5, trascina le risorse direttamente sull’ interfaccia utente [!DNL Assets] . La finestra di dialogo per rinominare il file non viene visualizzata.
 
-   ![create_menu](assets/create_menu.png)
+   ![crea_menu](assets/create_menu.png)
 
-   Per selezionare più file, selezionate il tasto `Ctrl` o `Command` e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
+   Per selezionare più file, seleziona il tasto `Ctrl` o `Command` e seleziona le risorse nella finestra di dialogo del selettore file. Quando utilizzi un iPad, puoi selezionare un solo file alla volta.
 
-1. Per annullare un caricamento in corso, fate clic su Chiudi (`X`) accanto alla barra di avanzamento. Quando annullate l’operazione di caricamento, [!DNL Assets] elimina la parte parzialmente caricata della risorsa.
-Se annullate un&#39;operazione di caricamento prima del caricamento dei file, [!DNL Assets] interrompe il caricamento del file corrente e aggiorna il contenuto. Tuttavia, i file già caricati non vengono eliminati.
+1. Per annullare un caricamento in corso, fai clic su chiudi (`X`) accanto alla barra di avanzamento. Quando annulli l’operazione di caricamento, [!DNL Assets] elimina la parte parzialmente caricata della risorsa.
+Se annulli un&#39;operazione di caricamento prima del caricamento dei file, [!DNL Assets] interrompe il caricamento del file corrente e aggiorna il contenuto. Tuttavia, i file già caricati non vengono eliminati.
 
-1. La finestra di dialogo di avanzamento del caricamento in [!DNL Assets] mostra il numero di file caricati correttamente e i file che non sono stati caricati correttamente.
-Inoltre, l&#39;interfaccia utente [!DNL Assets] mostra la risorsa più recente caricata o la cartella creata per prima.
+1. La finestra di dialogo di avanzamento del caricamento in [!DNL Assets] visualizza il numero di file caricati correttamente e i file che non sono stati caricati.
+Inoltre, l’interfaccia utente di [!DNL Assets] visualizza la risorsa più recente caricata o la cartella creata per prima.
 
 >[!NOTE]
 >
->Per caricare gerarchie di cartelle nidificate, consultate [caricare in massa risorse](#bulk-upload).
+>Per caricare gerarchie di cartelle nidificate, consulta [caricare in massa le risorse](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -106,113 +106,113 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### Gestione dei caricamenti quando la risorsa esiste già {#handling-upload-existing-file}
 
-Potete caricare una risorsa con lo stesso percorso (lo stesso nome e la stessa posizione) di una risorsa esistente. Tuttavia, viene visualizzata una finestra di dialogo di avviso con le seguenti opzioni:
+Puoi caricare una risorsa con lo stesso percorso (nome e posizione identici) di una risorsa esistente. Tuttavia, viene visualizzata una finestra di dialogo di avviso con le seguenti opzioni:
 
-* Sostituisci risorsa esistente: Se sostituite una risorsa esistente, i metadati della risorsa e le eventuali modifiche precedenti (ad esempio annotazioni, ritaglio e così via) apportate alla risorsa esistente vengono eliminati.
-* Create un&#39;altra versione: Nella directory archivio viene creata una nuova versione della risorsa esistente. È possibile visualizzare le due versioni nella [!UICONTROL Timeline] e, se necessario, ripristinare la versione esistente precedente.
-* Mantieni entrambi: Se scegliete di mantenere entrambe le risorse, la nuova risorsa viene rinominata con il numero `1` aggiunto al nome.
+* Sostituisci la risorsa esistente: Se sostituisci una risorsa esistente, i metadati della risorsa e le eventuali modifiche precedenti (ad esempio annotazioni, ritaglio e così via) apportate alla risorsa esistente vengono eliminati.
+* Crea un&#39;altra versione: Nella directory archivio viene creata una nuova versione della risorsa esistente. È possibile visualizzare le due versioni nella [!UICONTROL Timeline] e, se necessario, ripristinare la versione esistente precedente.
+* Mantieni entrambi: Se scegli di mantenere entrambe le risorse, la nuova risorsa viene rinominata aggiungendo al nome il numero `1` .
 
 >[!NOTE]
 >
->Quando si seleziona **[!UICONTROL Replace]** nella finestra di dialogo [!UICONTROL Name Conflict], l&#39;ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
+>Quando selezioni **[!UICONTROL Sostituisci]** nella finestra di dialogo [!UICONTROL Conflitto nome], l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
 >
->Se Asset Insights è abilitato per tenere traccia delle impression o dei clic con [!DNL Adobe Analytics], l’ID risorsa rigenerata invalida i dati acquisiti per la risorsa su [!DNL Analytics].
+>Se Asset Insights è abilitato per tracciare impression o clic con [!DNL Adobe Analytics], l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa su [!DNL Analytics].
 
-Per mantenere la risorsa duplicata in [!DNL Assets], fate clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, toccate o fate clic su **[!UICONTROL Elimina]**.
+Per mantenere la risorsa duplicata in [!DNL Assets], fai clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, tocca o fai clic su **[!UICONTROL Elimina]**.
 
 ### Gestione dei nomi dei file e caratteri non consentiti {#filename-handling}
 
-[!DNL Experience Manager Assets] tenta di impedire il caricamento di risorse con i caratteri proibiti nel nome del file. Se provate a caricare una risorsa con un nome file contenente un carattere non consentito o più, [!DNL Assets] visualizza un messaggio di avviso e interrompe il caricamento fino a quando non rimuovete questi caratteri o lo caricate con un nome consentito. Alcuni metodi di caricamento non impediscono il caricamento di risorse con caratteri proibiti nei nomi dei file, ma sostituiscono i caratteri con `-`.
+[!DNL Experience Manager Assets] tenta di impedire il caricamento di risorse con i caratteri non consentiti nei nomi dei file. Se tenti di caricare una risorsa con un nome file contenente un carattere non consentito o più, [!DNL Assets] visualizza un messaggio di avviso e interrompe il caricamento fino a quando non rimuovi questi caratteri o lo carichi con un nome consentito. Alcuni metodi di caricamento non ti impediscono di caricare risorse con caratteri non consentiti nei nomi dei file, ma sostituiscono i caratteri con `-`.
 
-Per rispettare convenzioni di denominazione dei file specifiche per la vostra organizzazione, la finestra di dialogo [!UICONTROL Carica risorse] consente di specificare nomi lunghi per i file caricati. I seguenti caratteri (elenco separato da spazi) non sono supportati:
+Per soddisfare convenzioni di denominazione file specifiche per la tua organizzazione, la finestra di dialogo [!UICONTROL Carica risorse] consente di specificare nomi lunghi per i file caricati. I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
-* caratteri non validi per il nome del file di risorse `* / : [ \\ ] | # % { } ? &`
+* caratteri non validi per il nome del file risorsa `* / : [ \\ ] | # % { } ? &`
 * caratteri non validi per il nome della cartella di risorse `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Caricamento in blocco delle risorse {#bulk-upload}
 
-L’assimilazione di risorse in massa può gestire un numero molto elevato di risorse in modo efficiente. Tuttavia, un&#39;assimilazione su larga scala non è solo un grande dump di file o una migrazione casuale. Affinché un’assimilazione su larga scala sia un progetto significativo per il tuo scopo aziendale ed efficiente, pianifica la migrazione e cura l’organizzazione delle risorse. Tutte le operazioni di assimilazione sono diverse, pertanto, anziché generalizzare, contribuiscono alla composizione e alle esigenze aziendali dei repository. Di seguito sono riportati alcuni suggerimenti generali per pianificare ed eseguire un&#39;assimilazione in blocco:
+Il gestore di risorse in blocco può gestire in modo efficiente un numero molto elevato di risorse. Tuttavia, un’acquisizione su larga scala non è solo un’immagine di file ampia o una migrazione casuale. Affinché un’acquisizione su larga scala sia un progetto significativo per il tuo scopo aziendale ed efficiente, pianifica la migrazione e cura l’organizzazione delle risorse. Tutte le acquisizioni sono diverse, quindi invece di generalizzare, sono fattori nella composizione dell’archivio e nelle esigenze aziendali più articolate. Di seguito sono riportati alcuni suggerimenti generali per pianificare ed eseguire un’acquisizione in blocco:
 
-* Cura risorse: Rimuovere risorse non necessarie nel DAM. Prendete in considerazione la rimozione di risorse inutilizzate, obsolete o duplicate. Questo riduce i dati trasferiti e le risorse assimilate, consentendo un&#39;assimilazione più rapida.
-* Organizzare le risorse: È consigliabile organizzare il contenuto in un ordine logico, ad esempio per dimensione file, formato file, caso di utilizzo o priorità. In generale, i file complessi di grandi dimensioni richiedono maggiore elaborazione. Potete anche considerare l’assimilazione separata dei file di grandi dimensioni utilizzando l’opzione di filtro delle dimensioni dei file (descritta di seguito).
-* Assunzioni scaglioni: Considerate la possibilità di suddividere l’assimilazione in più progetti di assimilazione di massa. Questo consente di visualizzare il contenuto prima e di aggiornarlo secondo necessità. Ad esempio, potete assimilare risorse che richiedono molta elaborazione nelle ore non di picco o gradualmente in più blocchi. Tuttavia, potete assimilare risorse più piccole e semplici che non richiedono molta elaborazione contemporaneamente.
+* Cura risorse: Rimuovi le risorse non necessarie nel DAM. È consigliabile rimuovere le risorse inutilizzate, obsolete o duplicate. Questo consente di ridurre i dati trasferiti e le risorse acquisite, con conseguente maggiore velocità di assimilazione.
+* Organizzare le risorse: È consigliabile organizzare il contenuto in un ordine logico, ad esempio per dimensione del file, formato del file, caso d’uso o priorità. In generale, i file complessi di grandi dimensioni richiedono una maggiore elaborazione. Puoi anche considerare l’acquisizione separata di file di grandi dimensioni utilizzando l’opzione di filtro delle dimensioni del file (descritta di seguito).
+* Acquisizioni scaglioni: È consigliabile suddividere l’acquisizione in più progetti di inserimento in blocco. Questo ti consente di visualizzare il contenuto prima e di aggiornarlo secondo necessità. Ad esempio, puoi acquisire risorse ad alta intensità di elaborazione nelle ore non di picco o gradualmente in più blocchi. Tuttavia, puoi acquisire risorse più piccole e semplici che non richiedono molta elaborazione contemporaneamente.
 
-Per caricare un numero maggiore di file, utilizzate uno dei seguenti approcci. Vedere anche i [casi di utilizzo e metodi](#upload-methods-comparison)
+Per caricare un numero maggiore di file, utilizza uno dei seguenti approcci. Inoltre, consulta i [casi d’uso e metodi](#upload-methods-comparison)
 
-* [API](developer-reference-material-apis.md#asset-upload-technical) di caricamento risorse: Usate uno script o uno strumento di caricamento personalizzato che sfrutta le API per aggiungere ulteriore gestione delle risorse (ad esempio, tradurre i metadati o rinominare i file), se necessario.
-* [[!DNL Experience Manager] app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) desktop: Utile per i creativi professionisti del marketing che caricano le risorse dal file system locale. Utilizzatelo per caricare localmente le cartelle nidificate disponibili.
-* [Strumento](#asset-bulk-ingestor) di assimilazione di massa: Utilizzate per l&#39;assimilazione di grandi quantità di risorse occasionalmente o inizialmente durante la distribuzione  [!DNL Experience Manager].
+* [API](developer-reference-material-apis.md#asset-upload-technical) di caricamento risorse: Utilizza uno script o uno strumento di caricamento personalizzato che sfrutta le API per aggiungere ulteriore gestione delle risorse (ad esempio, tradurre metadati o rinominare file), se necessario.
+* [[!DNL Experience Manager] app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) desktop: Utile per i creativi professionisti e gli esperti di marketing che caricano le risorse dal loro file system locale. Utilizzalo per caricare le cartelle nidificate disponibili localmente.
+* [Strumento](#asset-bulk-ingestor) per l’acquisizione in blocco: Da utilizzare per l’acquisizione di grandi quantità di risorse occasionalmente o inizialmente durante la distribuzione  [!DNL Experience Manager].
 
-### Strumento di inserimento di massa risorse {#asset-bulk-ingestor}
+### Strumento per l’acquisizione in blocco delle risorse {#asset-bulk-ingestor}
 
-Lo strumento viene fornito solo al gruppo di amministratori per l&#39;assimilazione su larga scala delle risorse da archivi dati di Azure o S3. Guarda un video introduttivo sulla configurazione e l’assimilazione.
+Lo strumento viene fornito solo al gruppo di amministratori per utilizzare per l’acquisizione su larga scala di risorse dai datastore di Azure o S3. Guarda un video dettagliato sulla configurazione e l’acquisizione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-Per configurare lo strumento, effettuare le seguenti operazioni:
+Per configurare lo strumento, segui questi passaggi:
 
-1. Passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Importazione in blocco]**. Selezionare l&#39;opzione **[!UICONTROL Crea]**.
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Importazione in blocco]**. Selezionare l&#39;opzione **[!UICONTROL Crea]**.
 
 ![Configurazione dell&#39;importatore di massa](assets/bulk-import-config.png)
 
-1. Nella [!UICONTROL configurazione di importazione in blocco], fornire i valori richiesti.
+1. Nella pagina [!UICONTROL configurazione dell&#39;importazione in serie] , specifica i valori richiesti.
 
    * [!UICONTROL Titolo]: Titolo descrittivo.
-   * [!UICONTROL Importa origine]: Selezionare l&#39;origine dati applicabile.
-   * [!UICONTROL Filtra per dimensione] min.: Specificate la dimensione minima dei file delle risorse in MB.
-   * [!UICONTROL Filtra per dimensione] massima: Specificate la dimensione massima dei file delle risorse in MB.
-   * [!UICONTROL Escludi tipi] di mime: Elenco separato da virgole di tipi MIME da escludere dall’assimilazione. Esempio, `image/jpeg, image/.*, video/mp4`.
-   * [!UICONTROL Includi tipi] mime: Elenco di tipi MIME separati da virgole da includere nell&#39;assimilazione. Vedere [tutti i formati di file supportati](/help/assets/file-format-support.md).
-   * [!UICONTROL Modalità] di importazione: Selezionate Ignora, Sostituisci o Crea versione. La modalità Ignora è l’impostazione predefinita e in questa modalità l’assimilatore salta per importare una risorsa, se esiste già. Vedere il significato di [sostituire e creare le opzioni di versione](#handling-upload-existing-file).
-   * [!UICONTROL Cartella] di destinazione risorse: Importare una cartella in DAM in cui importare le risorse. Esempio, `/content/dam/imported_assets`
+   * [!UICONTROL Origine] importazione: Seleziona l’origine dati applicabile.
+   * [!UICONTROL Filtra per dimensione] minima: Fornire la dimensione minima dei file delle risorse in MB.
+   * [!UICONTROL Filtra per dimensione] massima: Fornire la dimensione massima dei file delle risorse in MB.
+   * [!UICONTROL Escludi tipi] di MIME: Elenco di tipi MIME separati da virgole da escludere dall’acquisizione. Esempio, `image/jpeg, image/.*, video/mp4`.
+   * [!UICONTROL Include Mime Types]: Elenco di tipi MIME separati da virgole da includere nell’acquisizione. Vedere [tutti i formati di file supportati](/help/assets/file-format-support.md).
+   * [!UICONTROL Modalità] importazione: Selezionare Ignora, Sostituisci o Crea versione. La modalità Salta è l’impostazione predefinita e in questa modalità l’utente che esegue l’acquisizione salta per importare una risorsa, se esiste già. Vedere il significato di [sostituisci e crea opzioni di versione](#handling-upload-existing-file).
+   * [!UICONTROL Cartella] di destinazione delle risorse: Importa la cartella in DAM in cui devono essere importate le risorse. Esempio, `/content/dam/imported_assets`
 
-1. Puoi eliminare, modificare, eseguire e fare di più con le configurazioni di assimilazione create. Quando selezionate una configurazione per l’inserimento di massa, nella barra degli strumenti sono disponibili le seguenti opzioni.
+1. Puoi eliminare, modificare, eseguire ed eseguire ulteriori operazioni con le configurazioni di acquisizione create. Quando selezioni una configurazione per l’acquisizione in serie, nella barra degli strumenti sono disponibili le seguenti opzioni.
 
    * [!UICONTROL Modifica]: Modifica la configurazione selezionata.
    * [!UICONTROL Elimina]: Elimina la configurazione selezionata.
-   * [!UICONTROL Controlla]: Convalida della connessione all&#39;archivio dati.
-   * [!UICONTROL Prova]: Richiama un&#39;esecuzione di test dell&#39;assimilazione in blocco.
+   * [!UICONTROL Controlla]: Convalida la connessione al datastore.
+   * [!UICONTROL Prova] a secco: Richiama un&#39;esecuzione di test dell&#39;acquisizione in massa.
    * [!UICONTROL Esegui]: Esegui la configurazione selezionata.
-   * [!UICONTROL Interrompi]: Terminare una configurazione attiva.
-   * [!UICONTROL Stato] processo: Visualizzare lo stato della configurazione quando viene utilizzata in un processo di importazione in corso o utilizzata per un processo completato.
-   * [!UICONTROL Visualizza risorse]: Visualizzate la cartella di destinazione, se esiste.
+   * [!UICONTROL Interrompi]: Termina una configurazione attiva.
+   * [!UICONTROL Stato] del processo: Visualizza lo stato della configurazione quando viene utilizzata in un processo di importazione in corso o utilizzata per un processo completato.
+   * [!UICONTROL Visualizzare le risorse]: Visualizza la cartella di destinazione se esiste.
 
-## Caricare le risorse mediante client desktop {#upload-assets-desktop-clients}
+## Caricare risorse utilizzando client desktop {#upload-assets-desktop-clients}
 
-Oltre all&#39;interfaccia utente del browser Web, [!DNL Experience Manager] supporta altri client sul desktop. Offrono inoltre un’esperienza di caricamento senza dover passare al browser Web.
+Oltre all&#39;interfaccia utente del browser Web, [!DNL Experience Manager] supporta altri client sul desktop. Forniscono anche un’esperienza di caricamento senza la necessità di andare al browser web.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) consente di accedere alle risorse  [!DNL Experience Manager] nelle  applicazioni desktop Adobe Photoshop,  Adobe Illustrator e  Adobe InDesign. È possibile caricare il documento aperto in [!DNL Experience Manager] direttamente dall&#39;interfaccia utente di Collegamento risorse di  Adobe direttamente da queste applicazioni desktop.
-* [[!DNL Experience Manager] le ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) applicazioni desktop semplificano l’utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall’applicazione nativa che le gestisce. È particolarmente utile caricare i file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file semplici.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) consente di accedere alle risorse dalle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign.  [!DNL Experience Manager] Puoi caricare il documento attualmente aperto in [!DNL Experience Manager] direttamente dall’interfaccia utente di Adobe Asset Link dall’interno di queste applicazioni desktop.
+* [[!DNL Experience Manager] l’applicazione desktop ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) semplifica l’utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall’applicazione nativa che le gestisce. È particolarmente utile caricare file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file flat.
 
-## Elabora risorse durante il caricamento di {#process-when-uploaded}
+## Elabora le risorse durante il caricamento di {#process-when-uploaded}
 
-Per eseguire un’ulteriore elaborazione sulle risorse caricate, potete applicare i profili di elaborazione alle cartelle di caricamento. I profili sono disponibili nella pagina **[!UICONTROL Proprietà]** di una cartella in [!DNL Assets]. Una risorsa digitale senza estensione o con estensione errata non viene elaborata come desiderato. Ad esempio, quando caricate tali risorse, alla risorsa potrebbe non verificarsi nulla o potrebbe essere applicato un profilo di elaborazione errato. Gli utenti possono comunque archiviare i file binari in DAM.
+Per eseguire un’elaborazione aggiuntiva sulle risorse caricate, puoi applicare i profili di elaborazione sulle cartelle di caricamento. I profili sono disponibili nella pagina **[!UICONTROL Proprietà]** di una cartella in [!DNL Assets]. Una risorsa digitale senza estensione o con estensione errata non viene elaborata come desiderato. Ad esempio, durante il caricamento di tali risorse, non si verifica nulla o un profilo di elaborazione errato può essere applicato alla risorsa. Gli utenti possono comunque memorizzare i file binari nel DAM.
 
 ![Proprietà di una cartella di risorse con opzioni per aggiungere un profilo di elaborazione](assets/assets-folder-properties.png)
 
 Sono disponibili le seguenti schede:
 
-* [I ](metadata-profiles.md) profili di metadati consentono di applicare proprietà di metadati predefinite alle risorse caricate in tale cartella.
+* [I ](metadata-profiles.md) profili metadati consentono di applicare le proprietà metadati predefinite alle risorse caricate in quella cartella.
 * [I ](asset-microservices-configure-and-use.md) profili di elaborazione consentono di generare più rappresentazioni di quante siano possibili per impostazione predefinita.
 
 Inoltre, se [!DNL Dynamic Media] è abilitato nella distribuzione, sono disponibili le seguenti schede:
 
-* [[!DNL Dynamic Media] I ](dynamic-media/image-profiles.md) profili immagine consentono di applicare alle risorse caricate specifiche configurazioni di ritaglio (**[!UICONTROL Smart]** Cropinging e ritaglio pixel) e nitidezza.
-* [[!DNL Dynamic Media] I ](dynamic-media/video-profiles.md) profili video consentono di applicare specifici profili di codifica video (risoluzione, formato, parametri).
+* [[!DNL Dynamic Media] I ](dynamic-media/image-profiles.md) profili immagine consentono di applicare alle risorse caricate specifiche configurazioni di nitidezza e di ritaglio (ritaglio **[!UICONTROL avanzato e]** ritaglio pixel) e di ritaglio (ritaglio avanzato).
+* [[!DNL Dynamic Media] I ](dynamic-media/video-profiles.md) profili video ti consentono di applicare profili di codifica video specifici (risoluzione, formato, parametri).
 
 >[!NOTE]
 >
->[!DNL Dynamic Media] il ritaglio e altre operazioni sulle risorse non sono distruttive, ovvero le operazioni non modificano l’originale caricato. ma fornisce parametri per ritagliare o trasformare le risorse.
+>[!DNL Dynamic Media] le operazioni di ritaglio e altre operazioni sulle risorse non sono distruttive, ovvero le operazioni non modificano l’originale caricato. Fornisce invece parametri per ritagliare o trasformare le risorse durante la loro distribuzione.
 
-Per le cartelle a cui è assegnato un profilo di elaborazione, il nome del profilo viene visualizzato sulla miniatura nella vista a schede. Nella vista a elenco, il nome del profilo viene visualizzato nella colonna **[!UICONTROL Profilo di elaborazione]**.
+Per le cartelle a cui è assegnato un profilo di elaborazione, il nome del profilo viene visualizzato sulla miniatura nella vista a schede. Nella vista a elenco, il nome del profilo viene visualizzato nella colonna **[!UICONTROL Profilo di elaborazione]** .
 
-## Caricare o assimilare le risorse mediante le API {#upload-using-apis}
+## Caricare o acquisire risorse utilizzando le API {#upload-using-apis}
 
-I dettagli tecnici delle API e del protocollo di caricamento e i collegamenti all’SDK open-source e ai client di esempio sono forniti nella sezione [caricamento delle risorse](developer-reference-material-apis.md#asset-upload-technical) del riferimento per gli sviluppatori.
+I dettagli tecnici delle API e del protocollo di caricamento, nonché i collegamenti all’SDK open-source e ai client di esempio sono forniti nella sezione [caricamento delle risorse](developer-reference-material-apis.md#asset-upload-technical) del riferimento per sviluppatori.
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Adobe Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* App desktop [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Informazioni [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentazione](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Riferimento tecnico per il caricamento delle risorse](developer-reference-material-apis.md#asset-upload-technical)
