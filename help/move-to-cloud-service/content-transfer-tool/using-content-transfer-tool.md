@@ -2,7 +2,7 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 495a292eceb7abf6439df15a092d71b58cf2f2f3
+source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
 workflow-type: tm+mt
 source-wordcount: '2053'
 ht-degree: 58%
@@ -178,7 +178,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
    >[!IMPORTANT]
    >Quando l’opzione **Cancella il contenuto esistente nell’istanza Cloud prima dell’acquisizione** è abilitata, elimina l’intero archivio esistente e crea un nuovo archivio in cui inserire il contenuto. Questo significa che ripristina tutte le impostazioni, comprese le autorizzazioni per l’istanza Cloud Service di destinazione.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
 
 
 1. Una volta completata l&#39;acquisizione, lo stato nel campo **PUBLISH INGESTION** viene aggiornato a **FINISHED**.
