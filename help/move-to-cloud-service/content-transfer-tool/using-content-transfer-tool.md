@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
+source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 64%
+source-wordcount: '1916'
+ht-degree: 63%
 
 ---
 
@@ -18,32 +18,32 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * l requisiti di sistema minimi per lo strumento Content Transfer (Trasferimento contenuti) sono AEM 6.3 o versione successiva e JAVA 8. Se utilizzi una precedente versione di AEM, dovrai aggiornare l’archivio dei contenuti ad AEM 6.5 per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-* Java deve essere configurato nell&#39;ambiente AEM, in modo che il comando `java` possa essere eseguito dall&#39;utente che avvia AEM.
+* Java deve essere configurato nell’ambiente AEM, in modo che il comando `java` possa essere eseguito dall’utente che avvia AEM.
 
-* Content Transfer Tool può essere utilizzato con i seguenti tipi di archivio dati: Archivio dati file, Archivio dati S3, Archivio dati S3 condiviso e Archivio dati Azure Blob.
+* Lo strumento Content Transfer (Trasferimento contenuti) può essere utilizzato con i seguenti tipi di archivio dati: Archivio dati file, archivio dati S3, archivio dati S3 condiviso e archivio dati Azure Blob.
 
-* Se utilizzi un ambiente *sandbox*, accertati che l&#39;ambiente sia aggiornato alla versione più recente. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
+* Se utilizzi un *ambiente Sandbox*, assicurati che l’ambiente sia corrente e aggiornato alla versione più recente. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
 
-* Per utilizzare lo strumento di trasferimento dei contenuti, è necessario essere un utente amministratore nell’istanza di origine e appartenere al gruppo di amministratori AEM locali nell’istanza di Cloud Service a cui si sta trasferendo il contenuto. Gli utenti non autorizzati non potranno recuperare il token di accesso per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+* Per utilizzare lo strumento Content Transfer (Trasferimento contenuti), devi essere un utente amministratore nell’istanza sorgente e appartenere al gruppo di amministratori AEM locale nell’istanza Cloud Service a cui stai trasferendo i contenuti. Gli utenti non autorizzati non potranno recuperare il token di accesso per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-* Il token di accesso può scadere periodicamente dopo un periodo di tempo specifico o dopo l&#39;aggiornamento dell&#39;ambiente del Cloud Service. Se il token di accesso è scaduto, non sarà possibile connettersi all&#39;istanza di Cloud Service e sarà necessario recuperare il nuovo token di accesso. L&#39;icona di stato associata a un set di migrazione esistente si trasforma in un cloud rosso e viene visualizzato un messaggio quando si passa il puntatore del mouse su di esso.
+* Il token di accesso può scadere periodicamente dopo un periodo di tempo specifico o dopo l’aggiornamento dell’ambiente Cloud Service . Se il token di accesso è scaduto, non sarà possibile connettersi all’istanza Cloud Service e sarà necessario recuperare il nuovo token di accesso. L’icona di stato associata a un set di migrazione esistente si trasforma in un cloud rosso e viene visualizzato un messaggio al passaggio del mouse.
 
-* Gli utenti e i gruppi trasferiti dallo strumento di trasferimento dei contenuti sono solo quelli richiesti dal contenuto per soddisfare le autorizzazioni. Il processo *Extraction* copia l&#39;intero `/home` nel set di migrazione e il processo *Ingestion* copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL del contenuto migrato. Per mappare automaticamente gli utenti e i gruppi esistenti ai loro ID IMS, fare riferimento a [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
+* Gli utenti e i gruppi trasferiti dallo strumento Content Transfer (Trasferimento contenuti) sono solo quelli richiesti dal contenuto per soddisfare le autorizzazioni. Il processo *Estrazione* copia l&#39;intero `/home` nel set di migrazione e il processo *Acquisizione* copia tutti gli utenti e i gruppi a cui si fa riferimento nelle ACL del contenuto migrato. Per mappare automaticamente gli utenti e i gruppi esistenti ai loro ID IMS, fai riferimento a [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 
-* Dopo aver completato la fase *Estrazione* del processo di trasferimento del contenuto e prima di avviare le istanze *Ingestion Phase* per assimilare il contenuto nel AEM come Cloud Service *Stage* o *Produzione*, sarà necessario registrare un ticket di supporto per notificare  Adobe l&#39;intenzione di eseguire *Ingestion&lt;a a9/> in modo che  Adobe possa garantire che durante il processo* Ingestion *non si verifichino interruzioni.* Sarà necessario registrare il ticket di assistenza 1 settimana prima della data pianificata *Ingestion*. Una volta inviato il ticket di assistenza, il team di assistenza fornirà assistenza sui passaggi successivi.
-   * Registrare un ticket di assistenza con i seguenti dettagli:
-      * Data esatta e ora stimata (con il tuo fuso orario) quando intendi avviare la fase *Ingestion*.
-      * Tipo di ambiente (fase o produzione) in cui si intende inserire i dati.
+* Dopo aver completato la fase *Estrazione* del processo di trasferimento dei contenuti e prima di avviare la fase di acquisizione *Ingestion* per inserire contenuti in AEM as a Cloud Service *Stage* o *Produzione*, dovrai registrare un ticket di supporto per informare Adobe dell’intenzione di eseguire *Acquisizione* in modo che Adobe possa garantire che non si verifichino interruzioni durante il processo *Ingestion*. Sarà necessario registrare il ticket di supporto 1 settimana prima della data *di acquisizione* pianificata. Dopo aver inviato il ticket di assistenza, il team di supporto fornirà indicazioni sui passaggi successivi.
+   * Registra un ticket di supporto con i seguenti dettagli:
+      * Data esatta e ora stimata (con il tuo fuso orario) quando intendi avviare la fase *Acquisizione*.
+      * Tipo di ambiente (Stage o Produzione) in cui si intende inserire i dati.
       * ID programma.
 
-* La *fase di acquisizione* per l’istanza di authoring riduce l’intera implementazione di authoring. Questo significa che l’istanza di authoring di AEM non sarà disponibile durante l’intero processo di acquisizione. Controlla anche che non vengano eseguite pipeline di Cloud Manager durante la fase *Ingestion*.
+* La *fase di acquisizione* per l’istanza di authoring riduce l’intera implementazione di authoring. Questo significa che l’istanza di authoring di AEM non sarà disponibile durante l’intero processo di acquisizione. Assicurati anche che nessuna pipeline di Cloud Manager venga eseguita durante la fase *Acquisizione*.
 
 
 ## Disponibilità {#availability}
 
-Content Transfer Tool può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Accertatevi di scaricare la versione più recente. Per ulteriori informazioni sull&#39;ultima versione, consultare [Note sulla versione](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Assicurati di scaricare la versione più recente. Per ulteriori informazioni sull&#39;ultima versione, consulta [Note sulla versione](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >Scarica lo strumento Content Transfer (Trasferimento contenuti) dal portale di [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
@@ -55,16 +55,20 @@ Content Transfer Tool può essere scaricato come file zip dal portale di distrib
 
 Segui le indicazioni contenute in questa sezione per apprendere come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti in AEM as a Cloud Service (authoring/pubblicazione):
 
-1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Content Transfer** (Trasferimento contenuti).
+1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Migrazione dei contenuti**.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
 
-1. La console seguente viene visualizzata quando create il primo set di migrazione. Fai clic su **Create Migration Set** (Crea set di migrazione) per creare un nuovo set di migrazione.
+1. Seleziona l’opzione **Trasferimento contenuti** dalla procedura guidata **Migrazione contenuti**.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
+
+1. La console seguente viene visualizzata quando crei il primo set di migrazione. Fai clic su **Create Migration Set** (Crea set di migrazione) per creare un nuovo set di migrazione.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
 
    >[!NOTE]
-   >Se disponete di set di migrazione esistenti, nella console verrà visualizzato l’elenco dei set di migrazione esistenti con il relativo stato corrente.
+   >Se disponi di set di migrazione esistenti, nella console viene visualizzato l’elenco dei set di migrazione esistenti con il relativo stato corrente.
 
 1. Compila i campi nella schermata **Content Migrations Set details** (Dettagli set di migrazione contenuti) come descritto di seguito.
 
@@ -84,13 +88,13 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
    1. **Access Token** (Token di accesso): inserisci il token di accesso.
 
       >[!NOTE]
-      >È possibile recuperare il token di accesso utilizzando il pulsante **Open access token**. Dovete assicurarvi di appartenere al gruppo di amministratori AEM nell’istanza del Cloud Service di destinazione.
+      >Puoi recuperare il token di accesso utilizzando il pulsante **Open access token** . Devi accertarti di appartenere al gruppo di amministratori AEM nell’istanza Cloud Service di destinazione.
 
    1. **Parameters** (Parametri): seleziona i seguenti parametri per creare il set di migrazione:
 
       1. **Include Version** (Includi versione): seleziona in base alle esigenze.
 
-      1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore percorso accetta input digitando o selezionando.
+      1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore del percorso accetta l’input digitando o selezionando.
 
          >[!IMPORTANT]
          >Durante la creazione di un set di migrazione, i percorsi seguenti sono soggetti a restrizioni:
@@ -106,7 +110,7 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Tutti i set di migrazione esistenti in questa schermata vengono visualizzati nella pagina *Overview* (Panoramica) con il relativo stato corrente e le informazioni sullo stato. Alcune di queste icone sono descritte di seguito.
+   Tutti i set di migrazione esistenti in questa schermata vengono visualizzati nella pagina *Overview* (Panoramica) con il relativo stato corrente e le informazioni sullo stato. Puoi vedere alcune di queste icone descritte di seguito.
 
    * Una *nuvola rossa* indica che non puoi completare il processo di estrazione.
    * Una *nuvola verde* indica che puoi completare il processo di estrazione.
@@ -120,7 +124,7 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
 Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 
-1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Extract** (Estrai) per avviare l’estrazione. Viene visualizzata la finestra di dialogo **Estrazione set di migrazione**, quindi fare clic su **Estrai** per avviare la fase di estrazione.
+1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Extract** (Estrai) per avviare l’estrazione. Viene visualizzata la finestra di dialogo **Migration Set extraction** (Estrazione set di migrazione) e fai clic su **Extract** (Estrai) per avviare la fase di estrazione.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
@@ -128,7 +132,7 @@ Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferiment
    >È presente l’opzione per sovrascrivere il contenitore di staging durante la fase di estrazione.
 
 
-1. Il campo **EXTRACTION** ora visualizza lo stato **RUNNING** per indicare che l&#39;estrazione è in corso.
+1. Il campo **EXTRACTION** visualizza lo stato **RUNNING** per indicare che l’estrazione è in corso.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
@@ -137,7 +141,7 @@ Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferiment
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
 
    >[!NOTE]
-   >L’interfaccia utente dispone di una funzione di ricarica automatica che ricarica la pagina della panoramica ogni 30 secondi.
+   >L’interfaccia utente dispone di una funzione di ricaricamento automatico che ricarica la pagina della panoramica ogni 30 secondi.
    >Quando si avvia la fase di estrazione, viene applicato il blocco di scrittura, che viene rilasciato dopo *60 secondi*. Pertanto, se si interrompe un’estrazione, prima di riavviare l’estrazione è necessario attendere un minuto affinché il blocco venga rilasciato.
 
 #### Estrazione integrativa {#top-up-extraction-process}
@@ -161,14 +165,14 @@ Una volta completato il processo di estrazione, puoi trasferire il contenuto del
 
 Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 
-1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Ingest** (Acquisisci) per avviare l’acquisizione. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione). Fare clic su **Ingest** per avviare la fase di assimilazione. A scopo dimostrativo, l’opzione **Ingest content to Author instance** (Acquisisci contenuto nell’istanza di authoring) è disabilitata. È possibile acquisire contemporaneamente contenuti nelle istanze di authoring e di pubblicazione.
+1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Ingest** (Acquisisci) per avviare l’acquisizione. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione). Fai clic su **Ingest** per avviare la fase di acquisizione. A scopo dimostrativo, l’opzione **Ingest content to Author instance** (Acquisisci contenuto nell’istanza di authoring) è disabilitata. È possibile acquisire contemporaneamente contenuti nelle istanze di authoring e di pubblicazione.
 
    >[!IMPORTANT]
-   >Quando l&#39;opzione **Elimina contenuto esistente nell&#39;istanza di Cloud prima dell&#39;assimilazione** è abilitata, elimina l&#39;intero repository esistente e crea un nuovo repository in cui assimilare il contenuto. Ciò significa che ripristina tutte le impostazioni, comprese le autorizzazioni per l’istanza del Cloud Service di destinazione.
+   >Quando l’opzione **Cancella il contenuto esistente nell’istanza Cloud prima dell’acquisizione** è abilitata, elimina l’intero archivio esistente e crea un nuovo archivio in cui inserire il contenuto. Questo significa che ripristina tutte le impostazioni, comprese le autorizzazioni per l’istanza Cloud Service di destinazione.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. Una volta completata l&#39;assimilazione, lo stato nel campo **PUBLISH INGESTION** si aggiorna a **FINISHED**.
+1. Una volta completata l&#39;acquisizione, lo stato nel campo **PUBLISH INGESTION** viene aggiornato a **FINISHED**.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -186,7 +190,7 @@ Una volta completato il processo di acquisizione, puoi utilizzare il contenuto d
 
    >[!IMPORTANT]
    >
-   >Per evitare di eliminare il contenuto esistente dall&#39;attività di assimilazione precedente, è necessario disabilitare l&#39;opzione **Elimina contenuto esistente nell&#39;istanza Cloud prima dell&#39;assimilazione.**
+   >Per evitare di eliminare il contenuto esistente dall’attività di acquisizione precedente, disattiva l’opzione **Cancella contenuto esistente nell’istanza Cloud prima dell’acquisizione** .
    >
    >![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
