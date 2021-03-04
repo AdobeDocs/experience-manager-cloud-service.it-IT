@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
+source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 62%
+source-wordcount: '2055'
+ht-degree: 58%
 
 ---
 
@@ -65,16 +65,23 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
+
 1. La console seguente viene visualizzata quando crei il primo set di migrazione. Fai clic su **Create Migration Set** (Crea set di migrazione) per creare un nuovo set di migrazione.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
+
 
    >[!NOTE]
    >Se disponi di set di migrazione esistenti, nella console viene visualizzato l’elenco dei set di migrazione esistenti con il relativo stato corrente.
 
-1. Compila i campi nella schermata **Content Migrations Set details** (Dettagli set di migrazione contenuti) come descritto di seguito.
+   Inoltre, fai clic su **Crea configurazione di mappatura utente** per accedere allo [strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
+1. Compila i campi nella schermata **Set di migrazione dei contenuti** come descritto di seguito.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+
+   >[!NOTE]
+   >Seleziona **Includi mappatura da utenti e gruppi IMS**, come evidenziato nella figura precedente. Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) .
 
 
    1. **Name** (Nome): inserisci il nome del set di migrazione.
@@ -119,7 +126,6 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
    * Un’*icona gialla* indica che non hai creato il set di migrazione esistente e che quello specifico è stato creato da un altro utente nella stessa istanza.
 
 1. Seleziona un set di migrazione dalla pagina della panoramica e fai clic su **Properties** (Proprietà) per visualizzare o modificare le proprietà del set di migrazione. Durante la modifica delle proprietà, non è possibile modificare il nome del contenitore o l&#39;URL del servizio.
-
 
 
 ### Processo di estrazione nel trasferimento dei contenuti {#extraction-process}
@@ -174,6 +180,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
+
 1. Una volta completata l&#39;acquisizione, lo stato nel campo **PUBLISH INGESTION** viene aggiornato a **FINISHED**.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
@@ -190,11 +197,13 @@ Una volta completato il processo di acquisizione, puoi utilizzare il contenuto d
 
 1. Nella pagina *Overview* (Panoramica), seleziona il set di migrazione per il quale desideri eseguire l’acquisizione integrativa. Fai clic su **Ingest (Acquisisci)** per avviare l’acquisizione integrativa. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione).
 
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+
    >[!IMPORTANT]
    >
    >Per evitare di eliminare il contenuto esistente dall’attività di acquisizione precedente, disattiva l’opzione **Cancella contenuto esistente nell’istanza Cloud prima dell’acquisizione** .
-   >
-   >![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+
+   Inoltre, fai riferimento a [Considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) per scoprire come aggiungere informazioni al ticket per l’Assistenza clienti.
 
 ### Visualizzazione dei registri di un set di migrazione {#viewing-logs-migration-set}
 
