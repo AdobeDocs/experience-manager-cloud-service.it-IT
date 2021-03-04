@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
+source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 63%
+source-wordcount: '1969'
+ht-degree: 62%
 
 ---
 
@@ -19,6 +19,8 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 * l requisiti di sistema minimi per lo strumento Content Transfer (Trasferimento contenuti) sono AEM 6.3 o versione successiva e JAVA 8. Se utilizzi una precedente versione di AEM, dovrai aggiornare l’archivio dei contenuti ad AEM 6.5 per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
 * Java deve essere configurato nell’ambiente AEM, in modo che il comando `java` possa essere eseguito dall’utente che avvia AEM.
+
+* Si consiglia di disinstallare le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti) durante l’installazione della versione 1.3.0, in quanto lo strumento ha subito una modifica importante dell’architettura. Con la versione 1.3.0, devi anche creare nuovi set di migrazione ed eseguire nuovamente l’estrazione e l’acquisizione sui nuovi set di migrazione.
 
 * Lo strumento Content Transfer (Trasferimento contenuti) può essere utilizzato con i seguenti tipi di archivio dati: Archivio dati file, archivio dati S3, archivio dati S3 condiviso e archivio dati Azure Blob.
 
@@ -101,7 +103,7 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc`
+         >* `/etc` (alcuni  `/etc` percorsi possono essere selezionati in CTT)
 
 
 1. Fai clic su **Save** (Salva) dopo aver compilato tutti i campi nella schermata **Content Migrations Set details** (Dettagli set di migrazione contenuti).
