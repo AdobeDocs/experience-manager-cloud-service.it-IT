@@ -2,10 +2,10 @@
 title: Integrazione dei visualizzatori Dynamic Media con Adobe Analytics ed Experience Platform Launch
 description: L’estensione Dynamic Media Viewers per Platform Launch e Dynamic Media Viewers 5.13 consente ai clienti di Adobe Analytics e Platform Launch di utilizzare eventi e dati specifici per i visualizzatori nella propria configurazione di Platform Launch.
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: ef20224c59a6282ca6a78b2dfc9d777c67de5cb1
 workflow-type: tm+mt
-source-wordcount: '6684'
-ht-degree: 9%
+source-wordcount: '6658'
+ht-degree: 10%
 
 ---
 
@@ -34,11 +34,11 @@ Per ulteriori informazioni sulle estensioni, consulta [Adobe extensions](https:/
 
 L’integrazione con Experience Platform Launch è un caso d’uso principale per i clienti che utilizzano sia Experience Manager Assets che Experience Manager Sites. In questi scenari, puoi impostare un’integrazione standard tra il nodo di authoring di Experience Manager e Experience Platform Launch, quindi associare l’istanza di Sites alla proprietà Experience Platform Launch. In seguito, qualsiasi componente WCM di Dynamic Media aggiunto a una pagina Sites terrà traccia dei dati e degli eventi dei visualizzatori.
 
-Consulta [Informazioni sul tracciamento dei visualizzatori Dynamic Media in Experience Manager Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
+Consulta [Tracciamento dei visualizzatori Dynamic Media in Experience Manager Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
 Un caso d’uso secondario supportato dall’integrazione è quello dei clienti che utilizzano solo Experience Manager Assets o Dynamic Media Classic. In questi casi, ottieni il codice di incorporamento per il visualizzatore e lo aggiungi alla pagina del sito web. Quindi, ottieni l’URL di produzione della libreria Experience Platform Launch da Experience Platform Launch e aggiungilo manualmente al codice della pagina web.
 
-Consulta [Informazioni sul tracciamento dei visualizzatori Dynamic Media tramite codice di incorporamento](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
+Consulta [Tracciamento dei visualizzatori Dynamic Media tramite codice di incorporamento](#tracking-dynamic-media-viewers-using-embed-code).
 
 ## Funzionamento del tracciamento di dati ed eventi nell’integrazione {#how-data-and-event-tracking-works-in-the-integration}
 
@@ -831,7 +831,7 @@ Ad esempio, `https://ims-na1.adobelogin.com/`
 
 Al momento, l’autore di Experience Manager non supporta l’integrazione dei visualizzatori Dynamic Media con Experience Platform Launch.
 
-È tuttavia supportato nel nodo di pubblicazione di Experience Manager. Utilizzando le impostazioni predefinite di Experience Platform Launch Cloud Configuration, Experience Manager pubblica utilizza l’ambiente di produzione di Experience Platform Launch. Di conseguenza, è necessario inviare ogni volta durante il test gli aggiornamenti della libreria Experience Platform Launch da Sviluppo all’ambiente di produzione.
+È tuttavia supportato nel nodo di pubblicazione di Experience Manager. Utilizzando le impostazioni predefinite di Experience Platform Launch Cloud Configuration, Experience Manager pubblica utilizza l’ambiente di produzione di Experience Platform Launch. Di conseguenza, è necessario inviare ogni volta durante il test gli aggiornamenti della libreria Experience Platform Launch dallo Sviluppo all’ambiente di produzione.
 
 È possibile aggirare questa limitazione. Specifica l’URL di sviluppo o staging della libreria Experience Platform Launch nella configurazione Experience Platform Launch Cloud per Experience Manager, pubblicata qui sopra. In questo modo il nodo di pubblicazione Experience Manager utilizza la versione di sviluppo o staging della libreria Experience Platform Launch.
 
