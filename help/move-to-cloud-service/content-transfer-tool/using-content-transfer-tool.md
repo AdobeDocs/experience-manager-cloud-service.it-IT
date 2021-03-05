@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
+source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 59%
+source-wordcount: '2057'
+ht-degree: 58%
 
 ---
 
@@ -99,7 +99,8 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
       1. **Include Version** (Includi versione): seleziona in base alle esigenze.
 
-      1. **Includi mapping da utenti e gruppi** IMS: Seleziona l’opzione . Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) .
+      1. **Includi mapping da utenti e gruppi** IMS: Seleziona l’opzione per includere la mappatura da utenti e gruppi IMS.
+Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) .
 
       1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore del percorso accetta l’input digitando o selezionando.
 
