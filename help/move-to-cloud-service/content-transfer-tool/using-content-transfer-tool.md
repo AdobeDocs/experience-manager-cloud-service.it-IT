@@ -2,7 +2,7 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
+source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 57%
@@ -112,7 +112,7 @@ Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://exp
          >* `/etc` (alcuni  `/etc` percorsi possono essere selezionati in CTT)
 
 
-1. Fai clic su **Save** (Salva) dopo aver compilato tutti i campi nella schermata **Content Migrations Set details** (Dettagli set di migrazione contenuti).
+1. Fai clic su **Salva** dopo aver compilato tutti i campi nella schermata dei dettagli **Crea set di migrazione** .
 
 1. Il set di migrazione verrà visualizzato nella pagina *Overview* (Panoramica).
 
