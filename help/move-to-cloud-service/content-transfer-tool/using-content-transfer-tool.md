@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
+source-git-commit: c1c352712d88667faa2364160bdb60cc7ef94f63
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 58%
+source-wordcount: '2068'
+ht-degree: 57%
 
 ---
 
@@ -177,7 +177,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
    >[!IMPORTANT]
    >Quando l’opzione **Cancella il contenuto esistente nell’istanza Cloud prima dell’acquisizione** è abilitata, elimina l’intero archivio esistente e crea un nuovo archivio in cui inserire il contenuto. Questo significa che ripristina tutte le impostazioni, comprese le autorizzazioni per l’istanza Cloud Service di destinazione.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    Inoltre, fai clic su **Assistenza clienti** per registrare un ticket, come mostrato nella figura precedente. Per ulteriori informazioni, consulta anche [Considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) .
 
@@ -200,7 +200,7 @@ Una volta completato il processo di acquisizione, puoi utilizzare il contenuto d
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >Per evitare di eliminare il contenuto esistente dall’attività di acquisizione precedente, disattiva l’opzione **Cancella contenuto esistente nell’istanza Cloud prima dell’acquisizione** .
+   >Per evitare di eliminare il contenuto esistente dall’attività di acquisizione precedente, disattiva l’opzione **Cancella contenuto esistente nell’istanza Cloud prima dell’acquisizione** . Inoltre, fai clic su **Assistenza clienti** per registrare un ticket, come mostrato nella figura precedente.
 
 
 ### Visualizzazione dei registri di un set di migrazione {#viewing-logs-migration-set}
