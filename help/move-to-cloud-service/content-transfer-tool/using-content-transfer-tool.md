@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
+source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2065'
 ht-degree: 58%
 
 ---
@@ -202,7 +202,7 @@ Una volta completato il processo di acquisizione, puoi utilizzare il contenuto d
    >
    >Per evitare di eliminare il contenuto esistente dall’attività di acquisizione precedente, disattiva l’opzione **Cancella contenuto esistente nell’istanza Cloud prima dell’acquisizione** .
 
-   Inoltre, fai riferimento a [Considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) per scoprire come aggiungere al ticket di Assistenza clienti.
+   Inoltre, fai clic su **Assistenza clienti** per registrare un ticket, come mostrato nella figura precedente. Per ulteriori informazioni, consulta anche [Considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) .
 
 ### Visualizzazione dei registri di un set di migrazione {#viewing-logs-migration-set}
 
