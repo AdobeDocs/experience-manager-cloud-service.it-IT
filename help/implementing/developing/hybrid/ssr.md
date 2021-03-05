@@ -2,7 +2,7 @@
 title: Rendering lato server e applicazioni a pagina singola
 description: L’utilizzo del rendering lato server (SSR) nell’applicazione a pagina singola può accelerare il caricamento iniziale della pagina e quindi passare un ulteriore rendering al client.
 translation-type: tm+mt
-source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
+source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
