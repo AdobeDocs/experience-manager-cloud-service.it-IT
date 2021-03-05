@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
+source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 58%
+source-wordcount: '2049'
+ht-degree: 59%
 
 ---
 
@@ -76,13 +76,9 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
    Inoltre, fai clic su **Crea configurazione di mappatura utente** per accedere allo [strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
-1. Compila i campi nella schermata **Set di migrazione dei contenuti** come descritto di seguito.
+1. Compila i campi nella schermata **Crea set di migrazione** come descritto di seguito.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
-
-   >[!NOTE]
-   >Seleziona **Includi mappatura da utenti e gruppi IMS**, come evidenziato nella figura precedente. Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) .
-
 
    1. **Name** (Nome): inserisci il nome del set di migrazione.
       >[!NOTE]
@@ -102,6 +98,8 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
    1. **Parameters** (Parametri): seleziona i seguenti parametri per creare il set di migrazione:
 
       1. **Include Version** (Includi versione): seleziona in base alle esigenze.
+
+      1. **Includi mapping da utenti e gruppi** IMS: Seleziona l’opzione . Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) .
 
       1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore del percorso accetta l’input digitando o selezionando.
 
@@ -178,7 +176,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
    >[!IMPORTANT]
    >Quando l’opzione **Cancella il contenuto esistente nell’istanza Cloud prima dell’acquisizione** è abilitata, elimina l’intero archivio esistente e crea un nuovo archivio in cui inserire il contenuto. Questo significa che ripristina tutte le impostazioni, comprese le autorizzazioni per l’istanza Cloud Service di destinazione.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
 
 1. Una volta completata l&#39;acquisizione, lo stato nel campo **PUBLISH INGESTION** viene aggiornato a **FINISHED**.
