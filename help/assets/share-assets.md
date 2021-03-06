@@ -1,42 +1,42 @@
 ---
-title: Condivisione di risorse, cartelle e raccolte come collegamento
+title: Condividere risorse, cartelle e raccolte come collegamento
 description: Questo articolo descrive come condividere risorse, cartelle e raccolte all'interno di [!DNL Experience Manager Assets] come collegamento ipertestuale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
+source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '739'
 ht-degree: 1%
 
 ---
 
 
-# Condivisione e distribuzione delle risorse gestite in [!DNL Experience Manager] {#share-assets-from-aem}
+# Condividere e distribuire le risorse gestite in [!DNL Experience Manager] {#share-assets-from-aem}
 
-[!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte con membri dell&#39;organizzazione ed entità esterne, inclusi partner e fornitori. Utilizzate i seguenti metodi per condividere le risorse da [!DNL Experience Manager Assets] come [!DNL Cloud Service]:
+[!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte con i membri dell’organizzazione ed entità esterne, inclusi partner e fornitori. Utilizza i seguenti metodi per condividere risorse da [!DNL Experience Manager Assets] come [!DNL Cloud Service]:
 
 * Condividi come collegamento.
-* Scaricate le risorse e condividetele separatamente.
-* Condividi tramite AEM&#39;app desktop.
-* Condividi tramite  collegamento risorsa Adobe.
-* (Prossima funzionalità) Condividete tramite Brand Portal.
+* Scarica le risorse e condividi separatamente.
+* Condividi tramite app desktop AEM.
+* Condividi tramite Adobe Asset Link.
+* (Funzionalità in arrivo) Condividi tramite Brand Portal.
 
 ## Condividere le risorse come collegamento {#sharelink}
 
-Per generare l’URL delle risorse da condividere con gli utenti, usate la finestra di dialogo Condivisione collegamenti. Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro. La condivisione delle risorse tramite un collegamento è un modo pratico per rendere disponibili le risorse a soggetti esterni senza dover prima accedere a [!DNL Assets].
+Per generare l’URL per le risorse che desideri condividere con gli utenti, utilizza la finestra di dialogo Condivisione collegamenti . Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro. La condivisione di risorse tramite un collegamento è un modo conveniente per rendere le risorse disponibili a soggetti esterni senza che debbano prima accedere a [!DNL Assets].
 
 >[!NOTE]
 >
->* È necessario disporre dell’autorizzazione Modifica ACL per la cartella o la risorsa da condividere come collegamento.
->* Prima di condividere un collegamento con gli utenti, assicurarsi che l&#39;indirizzo [e-mail in uscita sia abilitato](/help/implementing/developing/introduction/development-guidelines.md#sending-email). In caso contrario, si verifica un errore.
+>* È necessario modificare l&#39;autorizzazione ACL sulla cartella o sulla risorsa che si desidera condividere come collegamento.
+>* Prima di condividere un collegamento con gli utenti, accertati che [e-mail in uscita sia abilitata](/help/implementing/developing/introduction/development-guidelines.md#sending-email). In caso contrario, si verifica un errore.
 
 
-1. Nell&#39;interfaccia utente [!DNL Assets], seleziona la risorsa da condividere come collegamento.
-1. Dalla barra degli strumenti, fare clic su **[!UICONTROL Condividi collegamento]**. Il collegamento di una risorsa viene creato automaticamente nel campo **[!UICONTROL Condividi collegamento]**. Copiate questo collegamento e condividetelo con gli utenti. Il tempo di scadenza predefinito per il collegamento è un giorno.
+1. Nell’interfaccia utente di [!DNL Assets] , seleziona la risorsa da condividere come collegamento.
+1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]**. Un collegamento a una risorsa viene creato automaticamente nel campo **[!UICONTROL Condividi collegamento]** . Copia questo collegamento e condividilo con gli utenti. Il tempo di scadenza predefinito per il collegamento è un giorno.
 
    >[!NOTE]
    >
-   >Se una risorsa condivisa viene spostata in un percorso diverso, il collegamento non funziona più. Crea di nuovo il collegamento e condividi nuovamente con gli utenti.
+   >Se una risorsa condivisa viene spostata in una posizione diversa, il relativo collegamento smette di funzionare. Ricrea il collegamento e condividi nuovamente con gli utenti.
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -105,31 +105,31 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## Download e condivisione di risorse {#download-and-share-assets}
+## Scaricare e condividere risorse {#download-and-share-assets}
 
-Gli utenti possono scaricare le risorse necessarie e condividerle al di fuori di [!DNL Experience Manager]. Per ulteriori informazioni, vedere [come cercare risorse](/help/assets/search-assets.md), [come scaricare risorse](/help/assets/download-assets-from-aem.md) e [come scaricare raccolte](manage-collections.md#download-a-collection)
+Gli utenti possono scaricare le risorse richieste e condividerle al di fuori di [!DNL Experience Manager]. Per ulteriori informazioni, consulta [come cercare le risorse](/help/assets/search-assets.md), [come scaricare le risorse](/help/assets/download-assets-from-aem.md) e [come scaricare le raccolte](manage-collections.md#download-a-collection)
 
-## Condivisione di risorse con creativi professionisti {#share-with-creatives}
+## Condividere risorse con i creativi {#share-with-creatives}
 
 Gli addetti al marketing e gli utenti della linea di business possono condividere facilmente le risorse approvate con i loro creativi professionisti che utilizzano,
 
-* **&#39;app** desktop Experience Manager: L&#39;app funziona su Windows e Mac. Consultate [Panoramica dell&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Per sapere in che modo qualsiasi utente desktop autorizzato può accedere facilmente alle risorse condivise, consultate [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle con colleghi che sono utenti AEM, ad esempio, caricando nuove immagini. Consultate [caricare risorse tramite l&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Experience Manager di app** desktop: L’app funziona su Windows e Mac. Consulta [panoramica dell’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Per sapere in che modo qualsiasi utente desktop autorizzato può accedere facilmente alle risorse condivise, consulta [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle nuovamente con i loro colleghi che sono utenti AEM, ad esempio, caricando nuove immagini. Consulta [caricare le risorse utilizzando l’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **collegamento** risorsa Adobe: I creativi professionisti possono cercare e utilizzare le risorse direttamente dall&#39;interno  [!DNL Adobe InDesign],  [!DNL Adobe Illustrator]e  [!DNL Adobe Photoshop].
+* **Adobe Asset Link**: I professionisti creativi possono cercare e utilizzare le risorse direttamente da  [!DNL Adobe InDesign],  [!DNL Adobe Illustrator] e  [!DNL Adobe Photoshop].
 
 ## Configurare la condivisione delle risorse {#configure-sharing}
 
-Le diverse opzioni per condividere le risorse richiedono una configurazione specifica e dispongono di prerequisiti specifici.
+Le diverse opzioni per la condivisione delle risorse richiedono una configurazione specifica e dispongono di prerequisiti specifici.
 
-### Configurare la condivisione dei collegamenti delle risorse {#asset-link-sharing}
+### Configurare la condivisione dei collegamenti alle risorse {#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Per generare l’URL delle risorse da condividere con gli utenti, usate la finestra di dialogo Condivisione collegamenti. Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro. La condivisione delle risorse tramite un collegamento è un modo pratico per rendere disponibili le risorse a soggetti esterni senza dover prima accedere a [!DNL Assets].
+Per generare l’URL per le risorse che desideri condividere con gli utenti, utilizza la finestra di dialogo Condivisione collegamenti . Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro. La condivisione di risorse tramite un collegamento è un modo conveniente per rendere le risorse disponibili a soggetti esterni senza che debbano prima accedere a [!DNL Assets].
 
 >[!NOTE]
 >
->Per condividere i collegamenti dall&#39;istanza Author a entità esterne, accertatevi di esporre solo i seguenti URL per le richieste `GET`. Bloccate altri URL per garantire la protezione dell&#39;istanza Author.
+>Se desideri condividere collegamenti dall’istanza di authoring a entità esterne, assicurati di esporre solo i seguenti URL per le richieste `GET` . Blocca altri URL per garantire la protezione dell’istanza di authoring.
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
@@ -167,22 +167,24 @@ When you download assets from the link shared using the Link Sharing feature, AE
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### Abilitare le azioni desktop da utilizzare con l&#39;app desktop {#desktop-actions}
+### Abilitare le azioni desktop da utilizzare con l’app desktop {#desktop-actions}
 
-Dall&#39;interfaccia utente di [!DNL Assets] in un browser, potete esplorare i percorsi delle risorse o il check-out e aprire la risorsa per la modifica nell&#39;applicazione desktop. Queste opzioni sono denominate azioni desktop e per attivarle, vedere [abilita azioni desktop in AEM&#39;interfaccia Web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+Dall’interno dell’interfaccia utente di [!DNL Assets] in un browser, puoi esplorare le posizioni delle risorse o estrarre e aprire la risorsa per la modifica nell’applicazione desktop. Queste opzioni sono denominate azioni desktop e per abilitarle, consulta [abilitare le azioni desktop in [!DNL Assets] interfaccia web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
-![Abilitare le azioni desktop a essere utilizzate come scelte rapide quando si lavora con l&#39;app desktop](assets/enable_desktop_actions.png)
+![Abilita le azioni desktop da utilizzare come scelte rapide durante l’utilizzo con l’app desktop](assets/enable_desktop_actions.png)
 
-### Configurazioni per l&#39;utilizzo di [!DNL Adobe Asset Link] {#configure-asset-link}
+### Configurazioni da utilizzare [!DNL Adobe Asset Link] {#configure-asset-link}
 
- Collegamento risorse Adobe semplifica la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti. Connette [!DNL Adobe Experience Manager Assets] con le [!DNL Creative Cloud] app desktop [!DNL Adobe InDesign], [!DNL Adobe Photoshop] e [!DNL Adobe Illustrator]. Il pannello [!DNL Adobe Asset Link] consente ai creativi di accedere e modificare il contenuto memorizzato in [!DNL Assets] senza uscire dalle app creative che conoscono di più.
+Adobe Asset Link semplifica la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. Connette [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] app desktop [!DNL Adobe InDesign], [!DNL Adobe Photoshop] e [!DNL Adobe Illustrator]. Il pannello [!DNL Adobe Asset Link] consente ai creativi di accedere e modificare il contenuto memorizzato in [!DNL Assets] senza lasciare le app creative con cui hanno più familiarità.
 
-Vedere [come configurare [!DNL Assets] per utilizzarlo con [!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html).
+Vedi [come configurare [!DNL Assets] per utilizzarlo con [!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html).
 
-## Procedure ottimali e risoluzione dei problemi {#bestpractices}
+## Procedure consigliate e risoluzione dei problemi {#bestpractices}
 
-* Le cartelle di risorse o le raccolte che contengono uno spazio vuoto nel loro nome potrebbero non essere condivise.
-* Se gli utenti non possono scaricare le risorse condivise, verificate con il vostro amministratore AEM quali sono i limiti di download di [](#maxdatasize).
+* Le cartelle o le raccolte di risorse che contengono uno spazio vuoto nel loro nome potrebbero non essere condivise.
+* Se gli utenti non possono scaricare le risorse condivise, verifica con l&#39;amministratore AEM quali sono i limiti di download [a1/>.](#maxdatasize)
+* Affinché un utente possa visualizzare in anteprima un video condiviso tramite la condivisione dei collegamenti, è necessario che il video disponga di un rendering video statico disponibile nella posizione `/jcr:content/renditions` nel nodo del video nell’archivio. L’anteprima non dipende dalla disponibilità di un rendering [!DNL Dynamic Media].
+* Quando si scarica una risorsa video tramite la condivisione dei collegamenti, le rappresentazioni [!DNL Dynamic Media] non sono incluse nell’archivio scaricato.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
