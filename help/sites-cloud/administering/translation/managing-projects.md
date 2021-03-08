@@ -2,9 +2,9 @@
 title: Gestione dei progetti di traduzione
 description: Scopri come creare e gestire progetti di traduzione automatica e umana in AEM.
 translation-type: tm+mt
-source-git-commit: b22d972adeaec6af4f15e11fa3359758a1ed77c3
+source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
 workflow-type: tm+mt
-source-wordcount: '3799'
+source-wordcount: '3825'
 ht-degree: 1%
 
 ---
@@ -24,10 +24,10 @@ I progetti e i lavori di traduzione vengono creati con flussi di lavoro di prepa
 1. [Aggiungi al progetto esistente](#adding-pages-to-a-translation-project)
 1. [Solo struttura del contenuto](#creating-the-structure-of-a-language-copy)
 
-AEM rileva se viene creato un progetto di traduzione per la traduzione iniziale del contenuto o per aggiornare copie in lingua già tradotte. Quando crei un progetto di traduzione per una pagina e indichi le copie per lingua per le quali stai traducendo, AEM rileva se la pagina sorgente esiste già nelle copie per lingua di destinazione:
+AEM rileva se viene creato un progetto di traduzione per la traduzione iniziale del contenuto o per aggiornare copie in lingua già tradotte. Quando crei un progetto di traduzione per una pagina e indichi le copie della lingua per le quali stai traducendo, AEM rileva se la pagina di origine esiste già nelle copie della lingua di destinazione:
 
-* **La copia in lingua non include la pagina:** AEM considera questa situazione come la traduzione iniziale. La pagina viene immediatamente copiata nella copia per lingua e inclusa nel progetto. Quando la pagina tradotta viene importata in AEM, AEM la copia direttamente nella copia per lingua.
-* **La copia per lingua include già la pagina:** AEM considera questa situazione come una traduzione aggiornata. Viene creato un lancio e una copia della pagina viene aggiunta al lancio e inclusa nel progetto. I lanci consentono di rivedere le traduzioni aggiornate prima di inviarle alla copia per lingua:
+* **La copia in lingua non include la pagina:** AEM considera questa situazione come la traduzione iniziale. La pagina viene immediatamente copiata nella copia per lingua e inclusa nel progetto. Quando la pagina tradotta viene importata in AEM, AEM copiata direttamente nella copia per lingua.
+* **La copia in lingua include già la pagina:** AEM considera questa situazione come una traduzione aggiornata. Viene creato un lancio e una copia della pagina viene aggiunta al lancio e inclusa nel progetto. I lanci consentono di rivedere le traduzioni aggiornate prima di inviarle alla copia per lingua:
 
    * Quando la pagina tradotta viene importata in AEM, sovrascrive la pagina nel lancio.
    * La pagina tradotta sovrascrive la copia in lingua solo quando viene promosso il lancio.
@@ -52,6 +52,10 @@ Crea progetti di traduzione in modo da poter eseguire e gestire il flusso di lav
 È possibile specificare di selezionare anche le pagine figlie della pagina selezionata. In questo caso, a ogni progetto vengono aggiunte anche copie delle pagine figlie in modo che vengano tradotte. Quando delle pagine figlie sono associate a diverse configurazioni del framework di integrazione della traduzione, AEM crea altri progetti.
 
 Puoi anche [creare manualmente progetti di traduzione](#creating-a-translation-project-using-the-projects-console).
+
+>[!NOTE]
+>
+>Per creare un progetto, l’account deve essere membro del gruppo `project-administrators` .
 
 ### Traduzioni iniziali e aggiornamento traduzioni {#initial-and-updating}
 
@@ -188,7 +192,7 @@ Nella console progetti è possibile accedere a numerose attività di traduzione 
 
 ### Informazioni sulla console Progetti
 
-I progetti di traduzione in AEM utilizzano la console standard [Progetti AEM.](/help/sites-cloud/authoring/projects/overview.md) Se non conosci i progetti AEM, consulta la relativa documentazione.
+I progetti di traduzione in AEM utilizzano la console [AEM progetti standard.](/help/sites-cloud/authoring/projects/overview.md) Se non conosci AEM progetti, consulta la relativa documentazione.
 
 Come qualsiasi altro progetto Un progetto di traduzione è costituito da tessere che presentano una panoramica delle attività del progetto.
 
@@ -208,6 +212,10 @@ Utilizzare i comandi e i pulsanti di ellissi nella parte superiore e inferiore d
 ### Creazione di un progetto di traduzione tramite la console Progetti {#creating-a-translation-project-using-the-projects-console}
 
 Puoi creare manualmente un progetto di traduzione se preferisci utilizzare la console dei progetti invece che la console Sites.
+
+>[!NOTE]
+>
+>Per creare un progetto, l’account deve essere membro del gruppo `project-administrators` .
 
 Quando crei manualmente un progetto di traduzione, devi fornire valori per le seguenti proprietà relative alla traduzione in aggiunta alle proprietà di base [a1/>:](/help/sites-cloud/authoring/projects/managing.md#creating-a-project)
 
@@ -292,10 +300,10 @@ La tabella seguente descrive ogni stato di un processo o di un elemento del proc
 | **Impegnato per la traduzione** | Il proprietario del progetto ha accettato l&#39;ambito. Questo stato indica che il fornitore di traduzione deve iniziare a tradurre i file nel processo. |
 | **Traduzione in corso** | Per un processo, la traduzione di uno o più file nel processo non è ancora completa. Per un elemento del processo, l&#39;elemento viene tradotto. |
 | **Tradotto** | Per un lavoro, la traduzione di tutti i file nel processo è completa. Per un elemento del processo, l&#39;elemento viene tradotto. |
-| **Pronto per la revisione** | L’elemento nel processo viene tradotto e il file è stato importato in AEM. |
+| **Pronto per la revisione** | L&#39;elemento nel processo viene tradotto e il file è stato importato in AEM. |
 | **Completa** | Il proprietario del progetto ha indicato che il contratto di traduzione è completo. |
 | **Annulla** | Indica che il fornitore della traduzione deve interrompere il lavoro su un processo di traduzione. |
-| **Aggiornamento errore** | Errore durante il trasferimento di file tra AEM e il servizio di traduzione. |
+| **Aggiornamento errore** | Errore durante il trasferimento dei file tra AEM e il servizio di traduzione. |
 | **Stato sconosciuto** | Errore sconosciuto. |
 
 Per visualizzare lo stato di ciascun file nel processo, tocca o fai clic sui puntini di sospensione nella parte inferiore della tessera.
@@ -422,11 +430,11 @@ Per confrontare le copie della lingua con il master della lingua:
 
 ## Importazione ed esportazione di processi di traduzione {#import-export}
 
-Sebbene AEM offra diverse soluzioni e interfacce di traduzione, è anche possibile importare ed esportare manualmente le informazioni sul processo di traduzione.
+Anche se AEM offre diverse soluzioni e interfacce di traduzione, è anche possibile importare ed esportare manualmente le informazioni sul processo di traduzione.
 
 ### Esportazione di un processo di traduzione {#exporting-a-translation-job}
 
-Puoi scaricare il contenuto di un processo di traduzione, ad esempio per inviare a un provider di traduzione non integrato con AEM tramite un connettore, o per rivedere il contenuto.
+È possibile scaricare il contenuto di un processo di traduzione, ad esempio per inviare a un provider di traduzione che non è integrato con AEM tramite un connettore, o per esaminare il contenuto.
 
 1. Dal menu a discesa del riquadro del lavoro di traduzione, tocca o fai clic su **Esporta**.
 1. Nella finestra di dialogo, fare clic o toccare **Scarica file esportato** e, se necessario, utilizzare la finestra di dialogo del browser Web per salvare il file.
@@ -434,7 +442,7 @@ Puoi scaricare il contenuto di un processo di traduzione, ad esempio per inviare
 
 ### Importazione di un processo di traduzione {#importing-a-translation-job}
 
-Puoi importare contenuti tradotti in AEM, ad esempio quando il provider di traduzione ve li invia perché non sono integrati con AEM tramite un connettore.
+Puoi importare contenuti tradotti in AEM, ad esempio quando il provider di traduzione li invia a te perché non sono integrati con AEM tramite un connettore.
 
 1. Dal menu a discesa del riquadro del lavoro di traduzione, tocca o fai clic su **Importa**.
 1. Utilizzare la finestra di dialogo del browser Web per selezionare il file da importare.
