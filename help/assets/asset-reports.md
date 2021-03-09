@@ -3,9 +3,9 @@ title: Rapporti su utilizzo e condivisione
 description: Rapporti sulle risorse in [!DNL Adobe Experience Manager Assets] per comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6586dfeeef1732ae115eea433a665191773ed283
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '945'
 ht-degree: 8%
 
 ---
@@ -92,13 +92,13 @@ Quando viene generato un rapporto, riceverai una notifica tramite <!-- through a
 
 1. Fare clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
 
-1. Nella pagina **[!UICONTROL Configura colonne]**, alcune colonne sono selezionate per essere visualizzate nel rapporto per impostazione predefinita. Puoi selezionare più colonne. Deseleziona una colonna selezionata per escluderla nel rapporto.
+1. Nella pagina **[!UICONTROL Configura colonne]**, alcune colonne sono selezionate per essere visualizzate nel rapporto per impostazione predefinita. Puoi selezionare più colonne. Annulla la selezione di una colonna per escluderla nel rapporto.
 
-   ![Selezionare o deselezionare le colonne del rapporto](assets/configure_columns.png)
+   ![Selezionare o annullare la selezione delle colonne del rapporto](assets/configure_columns.png)
 
    Per visualizzare un nome di colonna personalizzato o un percorso di proprietà, configura le proprietà per il binario di risorsa sotto il nodo `jcr:content` in CRX. In alternativa, aggiungilo tramite il selettore del percorso della proprietà.
 
-   ![Selezionare o deselezionare le colonne del rapporto](assets/custom_columns.png)
+   ![Selezionare o annullare la selezione delle colonne del rapporto](assets/custom_columns.png)
 
 1. Fai clic su **[!UICONTROL Crea]** nella barra degli strumenti. Un messaggio notifica l’avvio della generazione del rapporto.
 1. Nella pagina [!UICONTROL Rapporti su risorse], lo stato di generazione del rapporto si basa sullo stato corrente del processo di rapporto, ad esempio [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued] o [!UICONTROL Scheduled]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del rapporto, fare clic sul collegamento del rapporto. In alternativa, seleziona il rapporto e fai clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
