@@ -4,9 +4,9 @@ user-guide-title: Onboarding per AEM as a Cloud Service
 breadcrumb-title: Guida all’onboarding
 user-guide-description: Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati.
 translation-type: tm+mt
-source-git-commit: 0c5eac38ca9da8c0a3bd00fe1dd0472710dd3866
+source-git-commit: cef1cba48c70b6bd8d488040ed80ee0c4d6d814c
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '655'
 ht-degree: 35%
 
 ---
@@ -20,10 +20,6 @@ ht-degree: 35%
    + [Aggiungere utenti e ruoli](what-is-required/add-users-roles.md)
    + [Autorizzazioni basate sul ruolo](what-is-required/role-based-permissions.md)
    + [Archivio del codice sorgente](what-is-required/source-code-repository.md)
-+ Fasi del percorso di transizione {#phases}
-   + [Pianificazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/planning.html)
-   + [Esecuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
-   + [Post-pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + Accesso ad AEM nel cloud {#getting-access}
    + [Panoramica del processo di provisioning](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [Accesso a Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
@@ -66,14 +62,14 @@ ht-degree: 35%
       + [Visualizzazione e aggiornamento del nome di dominio personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html)
       + [Aggiornamento del certificato SSL del nome di dominio personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/update-cdn-ssl-certificate.html)
       + [Eliminazione del nome di dominio personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/delete-custom-domain-name.html)
-   + Gestione degli elenchi consentiti IP {#ip-allow-lists}
+   + Gestione degli Elenchi consentiti IP {#ip-allow-lists}
       + [Introduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/introduction.html)
-      + [Aggiunta di un elenco di indirizzi IP consentiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html)
-      + [Visualizzazione e aggiornamento di un elenco di indirizzi IP consentiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html)
-      + [Applicazione di un elenco di indirizzi IP consentiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html)
-      + [Annullamento dell’applicazione di un elenco di indirizzi IP consentiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/unapply-ip-allow-list.html)
-      + [Eliminazione di un elenco di indirizzi IP consentiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
-      + [Controllo dello stato dell’elenco Consentiti IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
+      + [Aggiunta di un Elenco consentiti IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html)
+      + [Visualizzazione e aggiornamento di un Elenco consentiti IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html)
+      + [Applicazione di un Elenco consentiti IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html)
+      + [Annullamento dell’applicazione di un Elenco consentiti IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/unapply-ip-allow-list.html)
+      + [Eliminazione di un Elenco consentiti IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
+      + [Controllo dello stato di un Elenco consentiti IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Note sulla versione per Cloud Manager {#release-notes-cloud-manager}
       + [Note sulla versione corrente (2021.2.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Note sulla versione 2021.1.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
