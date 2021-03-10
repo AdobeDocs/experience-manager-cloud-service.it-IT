@@ -1,13 +1,16 @@
 ---
-source-git-commit: 8d15605dd696f0163229a677b57aa0837dc11704
-workflow-type: tm+mt
+title: Ruoli e responsabilità
+description: Ruoli e responsabilità
 translation-type: tm+mt
-source-wordcount: '417'
+source-git-commit: 843e425e446a4e9ce140fe7d7111b69bd9f4545e
+workflow-type: tm+mt
+source-wordcount: '423'
 ht-degree: 18%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service: Ruoli e responsabilità
+
+# Adobe Experience Manager as a Cloud Service: Ruoli e responsabilità {#roles-responsibilities}
 
 <br></br>
 L&#39;Adobe fornisce una serie di servizi relativi al provisioning, allo sviluppo, alla gestione temporanea e alla produzione di Experienci Manager come Cloud Service. Affinché lo sviluppo e l&#39;implementazione della soluzione procedano nel modo più efficiente possibile, è importante che il cliente e il cliente comprendano e svolgano i loro ruoli, come descritto di seguito.
@@ -49,5 +52,8 @@ L&#39;Adobe fornisce una serie di servizi relativi al provisioning, allo svilupp
 | Produzione | Aggiornamenti a AEM come applicazione di Cloud Service |  |  | Proprietario |  |
 | Produzione | Backup e disaster recovery di produzione |  |  | Proprietario |  |
 
-<br></br>
-Si presuppone che il Premier Support sia incluso. La tabella può essere soggetta a modifiche mediante accordo tra il Cliente e il Cliente. È consigliabile lavorare con i team di vendita e personalizzazione di Adobi se si desidera ottenere chiarimenti su uno dei punti precedenti. I clienti che non desiderano gestire direttamente la personalizzazione devono ottenere i servizi del team Professional Services di Adobe o di un partner Experience Manager. Per mantenere livelli di alta qualità, l&#39;Adobe richiede che i partner impegnati in progetti di sviluppo di Experience Manager siano dotati di almeno una persona che abbia ottenuto la certificazione Advanced Developer per il software di Experience Manager.
+>[!NOTE]
+>
+> Si presuppone che il Premier Support sia incluso. La tabella può essere soggetta a modifiche mediante accordo tra il Cliente e il Cliente. È consigliabile lavorare con i team di vendita e personalizzazione di Adobi se si desidera ottenere chiarimenti su uno dei punti precedenti.
+> I clienti che non desiderano gestire direttamente la personalizzazione devono ottenere i servizi del team Professional Services di Adobe o di un partner Experience Manager.
+>Per mantenere livelli di alta qualità, l&#39;Adobe richiede che i partner impegnati in progetti di sviluppo di Experience Manager siano dotati di almeno una persona che abbia ottenuto la certificazione Advanced Developer per il software di Experience Manager.
