@@ -46,7 +46,7 @@ Per ulteriori informazioni, visita [Onboarding to Experience Manager as a Cloud 
 
 ### 2. Organizzazioni integrate in Adobe Admin Console:
 
->   ![processoverview2.jpg](./assets/processOverview2.jpg)
+ >   ![processoverview2.jpg](./assets/processOverview2.jpg)
 * Amministratore di sistema:
    * Provisioning di programmi e ambienti AEM.
    * Passare all&#39;Admin Console per le attività amministrative.
