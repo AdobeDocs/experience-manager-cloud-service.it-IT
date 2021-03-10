@@ -4,9 +4,9 @@ user-guide-title: Onboarding per AEM as a Cloud Service
 breadcrumb-title: Guida all’onboarding
 user-guide-description: Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati.
 translation-type: tm+mt
-source-git-commit: 4482fe36339db0c544b0b550e0bd414b2a47809e
+source-git-commit: 0c5eac38ca9da8c0a3bd00fe1dd0472710dd3866
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '684'
 ht-degree: 35%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 35%
    + [Esecuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
    + [Post-pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + Accesso ad AEM nel cloud {#getting-access}
-   + [AEM come Cloud Service: Panoramica del processo di provisioning](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
+   + [Panoramica del processo di provisioning](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [Accesso a Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
    + Programmi di Cloud Service {#cloud-service-programs}
       + [Accesso ai programmi](getting-access-to-aem-in-cloud/first-time-login.md)
@@ -88,7 +88,8 @@ ht-degree: 35%
       + [Note sulla versione 2020.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
       + [Note sulla versione 2020.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [Note sulla versione 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-   + [Ruoli e responsabilità](getting-access-to-aem-in-cloud/roles-responsibilities.md)
+   + Ruoli e responsabilità {#getting-access-to-aem-in-cloud}
+      + [Ruoli e responsabilità](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + Preparazione per privacy e protezione dei dati {#data-privacy}
    + [Preparazione di AEM per le normative su privacy e protezione dei dati](data-privacy-and-protection-readiness/aem-readiness.md)
    + [Preparazione di AEM Foundation per le normative su privacy e protezione dei dati](data-privacy-and-protection-readiness/foundation-readiness.md)
