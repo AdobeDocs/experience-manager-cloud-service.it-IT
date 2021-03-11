@@ -2,9 +2,9 @@
 title: Test funzionali - Cloud Services
 description: Test funzionali - Cloud Services
 translation-type: tm+mt
-source-git-commit: 1e0765e6bf2818754c5603c08f055a7c7453bc33
+source-git-commit: 765334cff443d56e37f578647af4bcd133509481
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '847'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Test funzionale {#functional-testing}
 
-Il test funzionale è suddiviso in due tipi:
+I test funzionali sono suddivisi in tre tipi:
 
 * Test funzionale del prodotto
 * Test funzionale personalizzato
@@ -39,7 +39,7 @@ Tuttavia, se la build non produce JAR di test, il test viene superato per impost
 
 AEM fornisce ai suoi clienti una suite integrata di gate di qualità di Cloud Manager per garantire un aggiornamento fluido delle loro applicazioni. In particolare, i gate di test IT consentono già ai clienti di creare e automatizzare i propri test che utilizzano API AEM.
 
-La funzione di test dell’interfaccia utente personalizzata è opzionale e consente ai nostri clienti di creare ed eseguire automaticamente test dell’interfaccia utente per le loro applicazioni. I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium). Per ulteriori informazioni su come creare l’interfaccia utente e scrivere i test dell’interfaccia utente, consulta questo articolo. Inoltre, un progetto di test dell’interfaccia utente può essere facilmente generato utilizzando il AEM Project Archetype.
+La funzione di test dell&#39;interfaccia utente personalizzata è una funzione opzionale [Opt-in del cliente](#customer-opt-in) che consente ai nostri clienti di creare ed eseguire automaticamente i test dell&#39;interfaccia utente per le loro applicazioni. I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium). Per ulteriori informazioni su come creare l’interfaccia utente e scrivere i test dell’interfaccia utente, consulta questo articolo. Inoltre, un progetto di test dell’interfaccia utente può essere facilmente generato utilizzando il AEM Project Archetype.
 
 I clienti possono creare (tramite GIT) test personalizzati e suite di test per l’interfaccia utente. Il test dell’interfaccia utente viene eseguito come parte di un gate di qualità specifico per ogni pipeline di Cloud Manager con il relativo passaggio specifico e le relative informazioni sul feedback. Eventuali test dell’interfaccia utente, tra cui regressione e nuove funzionalità, consentiranno di rilevare gli errori e di segnalarli nel contesto del cliente.
 
