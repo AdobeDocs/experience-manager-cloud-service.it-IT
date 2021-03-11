@@ -1,51 +1,59 @@
 ---
-title: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2021.2.0
-description: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2021.2.0
+title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.3.0
+description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.3.0
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 238ce5ea4327947694851bd0fae5be84614501c9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '400'
 ht-degree: 2%
 
 ---
 
 
-# Note sulla versione per Cloud Manager in Adobe Experience Manager come Cloud Service 2021.2.0 {#release-notes}
+# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.3.0 {#release-notes}
 
-In questa pagina sono delineate le Note sulla versione di Marketing Cloud Manager in AEM come Cloud Service 2021.2.0.
+Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.3.0.
 
 ## Data di rilascio {#release-date}
 
-La data di rilascio per Cloud Manager in AEM come Cloud Service 2021.2.0 è l’11 febbraio 2021.
+La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.3.0 è l’11 marzo 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Novità {#what-is-new}
 
-* I clienti delle risorse potranno ora scegliere quando e dove distribuire l’istanza del Portale marchio in modo self-service tramite l’interfaccia utente di Cloud Manager. Per un normale programma (non sandbox) con soluzione Assets, ora è possibile effettuare il provisioning di Brand Portal nell&#39;ambiente Production. Il provisioning può essere eseguito solo una volta nell&#39;ambiente di produzione.
+* I clienti con ambienti con configurazioni CDN preesistenti per Inserire nell&#39;elenco Consentiti IP, certificati SSL e nomi di dominio personalizzati visualizzeranno il seguente messaggio e saranno in grado di self-service tramite l’interfaccia utente.
 
-* Il tipo di archivio AEM progetto utilizzato nella creazione di progetti e sandbox è stato aggiornato alla versione 25.
+* Gli utenti con le autorizzazioni necessarie possono ora modificare il programma, consentendo loro di effettuare le seguenti operazioni in modo autonomo.
 
-* L&#39;elenco delle API obsolete identificate durante la scansione del codice è stato ridefinito in modo da includere classi e metodi aggiuntivi obsoleti nelle versioni SDK dell&#39;Cloud Service più recente.
+* AEM&#39;etichetta Push Update&quot; verrà ora visualizzata sia per le schermate Pipeline Execution che per Activity.
 
-* Profilo SonarQube per Cloud Manager aggiornato per rimuovere Sonar rule squid:S2142. Ciò non entrerà più in conflitto con i controlli di Interruzione del thread.
+* Se un ambiente è in ibernazione ma è disponibile anche un aggiornamento AEM, lo stato &quot;Sospeso&quot; avrà la precedenza rispetto a &quot;Aggiorna disponibile&quot;.
 
-* L&#39;interfaccia utente di Cloud Manager informa l&#39;utente che potrebbe non essere temporaneamente in grado di aggiungere/aggiornare il nome di dominio perché nell&#39;ambiente associato è collegata una pipeline in esecuzione o al momento in attesa del passaggio di approvazione.
+* Gli utenti possono ora visualizzare i propri ruoli di Cloud Manager selezionando l’opzione &quot;Visualizza ruoli Cloud Manager&quot; dopo aver visualizzato l’icona Profilo utente (in alto a destra) di Unified Shell.
 
-* Le proprietà impostate nei file `pom.xml` del cliente con il prefisso sonar verranno ora rimosse in modo dinamico per evitare errori di creazione e scansione di qualità.
+* L&#39;etichetta &quot;Domanda di approvazione&quot; è stata rinominata &quot;Approvazione produzione&quot; per maggiore chiarezza.
 
-* L&#39;interfaccia utente di Cloud Manager informa l&#39;utente che potrebbe non essere temporaneamente in grado di selezionare un certificato SSL se è in uso da un nome di dominio attualmente distribuito.
+* L’etichetta &quot;Versione&quot; è stata rinominata &quot;Git Tag&quot; nella schermata di esecuzione della pipeline di produzione.
 
-* Sono state aggiunte ulteriori regole sulla qualità del codice per i problemi di compatibilità del Cloud Service.
+* Le etichette che definiscono il comportamento quando le metriche importanti non soddisfano la soglia definita sono state rinominate per rispecchiare il loro comportamento effettivo - Annulla immediatamente e Approva immediatamente.
+
+* Gli elenchi di elementi obsoleti di classi e metodi sono stati aggiornati in base alla versione `2021.3.4997.20210303T022849Z-210225` dell’SDK del Cloud Service AEM.
+
+* La pipeline di produzione di Cloud Manager ora include funzionalità di test dell’interfaccia utente personalizzata.
 
 ### Correzioni di bug {#bug-fixes}
 
-* La corrispondenza del certificato SSL rispetto a un nome di dominio non fa più distinzione tra maiuscole e minuscole.
+* Il controllo delle versioni del pacchetto è stato ignorato in alcuni casi durante AEM aggiornamento push.
 
-* L&#39;interfaccia utente di Cloud Manager ora informa un utente se le chiavi private del certificato non soddisfano il limite di 2048 bit con un messaggio di errore appropriato.
+* Alcuni problemi di qualità non sono stati rilevati correttamente quando i pacchetti sono stati incorporati in altri pacchetti.
 
-* L&#39;interfaccia utente di Cloud Manager informa l&#39;utente che potrebbe non essere temporaneamente in grado di selezionare un certificato SSL se è in uso da un nome di dominio attualmente distribuito.
+* In situazioni oscure, il nome predefinito del programma generato all’apertura della finestra di dialogo Aggiungi programma potrebbe essere un duplicato di un nome di programma esistente.
 
-* In alcuni casi, un problema interno potrebbe causare il blocco dell&#39;eliminazione dell&#39;ambiente.
+* Talvolta, se l’utente si allontana dalla pagina di esecuzione della pipeline immediatamente dopo l’avvio di una pipeline, viene visualizzato un messaggio di errore che indica che l’azione non è riuscita, anche se l’esecuzione viene effettivamente avviata.
 
-* Alcuni guasti della pipeline sono stati erroneamente riportati come errori della pipeline.
+* Il passaggio di compilazione è stato riavviato inutilmente quando le build del cliente hanno generato pacchetti non validi.
+
+* In alcuni casi, l’utente potrebbe visualizzare uno stato verde &quot;attivo&quot; accanto a un Inserire nell&#39;elenco Consentiti IP anche quando tale configurazione non è stata distribuita.
+
+* Tutte le pipeline di produzione esistenti verranno abilitate automaticamente con il passaggio Audit esperienze .
