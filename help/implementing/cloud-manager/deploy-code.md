@@ -2,9 +2,9 @@
 title: Distribuisci il tuo codice - Cloud Services
 description: Distribuisci il tuo codice - Cloud Services
 translation-type: tm+mt
-source-git-commit: 533707b9073231ed16757884afeb968ace0785b3
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1065'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Per ulteriori informazioni, consulta [Test funzionale del prodotto](/help/implem
       Per ulteriori informazioni, consulta [Test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) .
 
    * **Test** interfaccia utente personalizzati: Questo passaggio è una funzione opzionale che consente ai nostri clienti di creare ed eseguire automaticamente i test dell’interfaccia utente per le loro applicazioni. I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium).
-Per ulteriori informazioni, consulta Test personalizzati dell’interfaccia utente .
+Per ulteriori informazioni, consulta [Test personalizzati dell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing) .
 
 
    * **Audit** esperienza: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Quando viene eseguita una pipeline di produzione, viene incluso un passaggio di controllo dell’esperienza dopo un test funzionale personalizzato che eseguirà i controlli. Le pagine configurate verranno inviate al servizio e valutate. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e il cambiamento tra il punteggio corrente e quello precedente. Questa informazione è utile per determinare se vi è una regressione che verrà introdotta con la distribuzione corrente.
