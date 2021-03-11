@@ -2,7 +2,7 @@
 title: 'Ambienti Sandbox sospensione e disattivazione '
 description: 'Ambienti Sandbox sospensione e disattivazione '
 translation-type: tm+mt
-source-git-commit: 213a7237abd4de75be43af430181f4aa914196f4
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 Gli ambienti del programma sandbox immettono una *modalità di sospensione* se non viene rilevata alcuna attività per un determinato periodo di tempo.
 
 >[!NOTE]
->La sospensione è unica negli ambienti del programma sandbox. Gli ambienti di programma regolari non sono in ibernazione.
+>La sospensione è unica negli ambienti del programma sandbox. Gli ambienti dei programmi di produzione non sono in ibernazione.
 
 ## Sospensione {#hibernation-introduction}
 
