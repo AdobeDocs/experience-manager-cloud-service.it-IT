@@ -1,157 +1,157 @@
 ---
-title: Gestione degli ambienti - Cloud Service
-description: Gestione degli ambienti - Cloud Service
+title: Gestisci ambienti - Cloud Service
+description: Gestisci ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1249'
+ht-degree: 4%
 
 ---
 
 
 # Gestione degli ambienti {#manage-environments}
 
-La sezione seguente descrive i tipi di ambiente che un utente può creare e come l&#39;utente può creare un ambiente.
+La sezione seguente descrive i tipi di ambiente che un utente può creare e come l’utente può creare un ambiente.
 
 ## Tipi di ambiente {#environment-types}
 
-Un utente con le autorizzazioni richieste può creare i seguenti tipi di ambiente (entro i limiti di ciò che è disponibile per il tenant specifico).
+Un utente con le autorizzazioni necessarie può creare i seguenti tipi di ambiente (entro i limiti di ciò che è disponibile per il tenant specifico).
 
-* **Ambiente** di produzione e fase: La produzione e lo stage sono disponibili come due elementi e sono utilizzati a scopo di test e produzione.
+* **Ambiente** di produzione e fase: La fase di produzione è disponibile come duo e viene utilizzata a scopo di test e produzione.
 
-* **Sviluppo**: Un ambiente di sviluppo può essere creato a scopo di sviluppo e test e sarà associato solo a condotte non di produzione.
+* **Sviluppo**: Un ambiente di sviluppo può essere creato a scopo di sviluppo e test e sarà associato solo alle pipeline non di produzione.
 
    >[!NOTE]
-   >Un ambiente di sviluppo creato automaticamente in un programma sandbox sarà configurato per includere le soluzioni Siti e Risorse.
+   >Un ambiente di sviluppo creato automaticamente in un programma sandbox verrà configurato per includere le soluzioni Sites e Assets.
 
-   Nella tabella seguente sono riepilogati i tipi di ambiente e i relativi attributi:
+   La tabella seguente riepiloga i tipi di ambiente e i relativi attributi:
 
-   | Nome | Livello di authoring | Pubblica livello | Utente può creare | L&#39;utente può eliminare | Pipeline che può essere associata all&#39;ambiente |
+   | Nome | Livello di authoring | Livello di pubblicazione | Utente può creare | L&#39;utente può eliminare | Pipeline che può essere associata all’ambiente |
    |--- |--- |--- |--- |---|---|
-   | Produzione | Sì | Sì se Siti inclusi | Sì | No | pipeline di produzione |
-   | Area di visualizzazione | Sì | Sì se Siti inclusi | Sì | No | pipeline di produzione |
-   | Sviluppo | Sì | Sì se Siti inclusi | Sì | Sì | pipeline non di produzione |
+   | Produzione | Sì | Sì se Sites include | Sì | No | pipeline di produzione |
+   | Area di visualizzazione | Sì | Sì se Sites include | Sì | No | pipeline di produzione |
+   | Sviluppo | Sì | Sì se Sites include | Sì | Sì | pipeline non di produzione |
 
    >[!NOTE]
-   >La produzione e lo stage sono disponibili come due elementi e sono utilizzati a scopo di test e produzione.  L&#39;utente non sarà in grado di creare solo l&#39;ambiente Stage o solo l&#39;ambiente Production.
+   >La fase di produzione è disponibile come duo e viene utilizzata a scopo di test e produzione.  L’utente non sarà in grado di creare solo l’ambiente Stage o di produzione.
 
-## Aggiunta di un ambiente {#adding-environments}
+## Aggiunta di ambiente {#adding-environments}
 
-1. Fare clic su **Aggiungi ambiente** per aggiungere un ambiente. Questo pulsante sarà accessibile dalla schermata **Ambienti**.
+1. Fai clic su **Aggiungi ambiente** per aggiungere un ambiente. Questo pulsante sarà accessibile dalla schermata **Ambienti** .
    ![](assets/environments-tab.png)
 
-   L&#39;opzione **Aggiungi ambiente** è disponibile anche sulla scheda **Ambienti** quando il programma non contiene alcun ambiente.
+   L&#39;opzione **Aggiungi ambiente** è disponibile anche nella scheda **Ambienti** quando il programma non contiene ambienti.
 
    ![](assets/no-environments.png)
 
    >[!NOTE]
-   >L&#39;opzione **Aggiungi ambiente** verrà disattivata in base alla mancanza di autorizzazioni o agli eventuali contratti.
+   >L&#39;opzione **Aggiungi ambiente** verrà disabilitata per mancanza di autorizzazioni o per elementi che possono essere oggetto di contratti.
 
 1. Viene visualizzata la finestra di dialogo **Aggiungi ambiente**. L’utente deve inviare dettagli quali **tipo di ambiente**, **nome dell’ambiente** e **descrizione dell’ambiente** (a seconda dell’obiettivo dell’utente nella creazione dell’ambiente ed entro i limiti di ciò che è disponibile per il tenant specifico).
 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Durante la creazione di un ambiente, in  Adobe I/O vengono create una o più *integrazioni*. Questi sono visibili agli utenti del cliente che hanno accesso alla  Adobe I/O Console e non devono essere eliminati. Questo viene negato nella descrizione nella  Adobe I/O Console.
+   >Durante la creazione di un ambiente, in Adobe I/O vengono create una o più *integrazioni* . Questi sono visibili agli utenti che hanno accesso alla console Adobe I/O e non devono essere eliminati. Questa operazione è sconosciuta nella descrizione nella console Adobe I/O.
 
    ![](assets/add-environment-image1.png)
 
-1. Fare clic su **Salva** per aggiungere un ambiente con i criteri popolati.  A questo punto, nella schermata *Panoramica* viene visualizzata la scheda da cui è possibile impostare la pipeline.
+1. Fai clic su **Salva** per aggiungere un ambiente con i criteri popolati.  Ora nella schermata *Panoramica* viene visualizzata la scheda da cui è possibile impostare la pipeline.
 
    >[!NOTE]
-   >Se non avete ancora impostato la pipeline di non produzione, nella schermata *Panoramica* viene visualizzata la scheda da cui potete creare la pipeline non di produzione.
+   >Nel caso in cui non sia ancora stata impostata la pipeline non di produzione, nella schermata *Panoramica* viene visualizzata la scheda da cui è possibile creare la pipeline non di produzione.
 
 
 ## Ambiente di visualizzazione {#viewing-environment}
 
 La scheda **Ambienti** nella pagina Panoramica elenca fino a tre ambienti.
 
-1. Selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo **Ambiente** per visualizzare una tabella con un elenco completo degli ambienti.
+1. Selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo **Ambiente** per visualizzare una tabella con un elenco completo di ambienti.
 
    ![](assets/environment-view-1.png)
 
-1. Nella pagina **Ambienti** viene visualizzato l&#39;elenco di tutti gli ambienti esistenti.
+1. La pagina **Ambienti** visualizza l&#39;elenco di tutti gli ambienti esistenti.
 
    ![](assets/environment-view-2.png)
 
-1. Selezionare uno degli ambienti elencati per visualizzare i dettagli dell&#39;ambiente.
+1. Seleziona uno qualsiasi degli ambienti dall’elenco per visualizzare i dettagli dell’ambiente.
 
    ![](assets/environment-view-3.png)
 
 
 ## Aggiornamento dell&#39;ambiente {#updating-dev-environment}
 
-Gli aggiornamenti degli ambienti Stage e Produzione vengono gestiti automaticamente da  Adobe.
+Gli aggiornamenti degli ambienti Stage e Production vengono gestiti automaticamente da Adobe.
 
-Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del programma. Se un ambiente non esegue l&#39;ultima versione AEM disponibile al pubblico, lo stato della scheda Ambienti nella Home Screen mostrerà **UPDATE AVAILABLE**.
+Gli aggiornamenti agli ambienti di sviluppo sono gestiti dagli utenti del programma. Quando un ambiente non esegue l&#39;ultima versione AEM disponibile al pubblico, lo stato della scheda Ambienti nella schermata principale verrà visualizzato **AGGIORNA DISPONIBILE**.
 
 ![](assets/environ-update.png)
 
 
-L&#39;opzione **Aggiorna** è disponibile dalla scheda **Ambienti**.
-Questa opzione è disponibile anche, se si fa clic su **Dettagli** dalla scheda **Ambienti**. Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fare clic su **...** e selezionare **Aggiorna**, come illustrato nella figura seguente:
+L&#39;opzione **Aggiorna** è disponibile dalla scheda **Ambienti** .
+Questa opzione è disponibile anche se fai clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fai clic su **...** e seleziona **Aggiorna**, come illustrato nella figura seguente:
 
 ![](assets/environ-update2.png)
 
 Selezionando questa opzione, un gestore distribuzione potrà aggiornare la pipeline associata a questo ambiente alla versione più recente ed eseguire la pipeline.
 
-Se la pipeline è già stata aggiornata, all&#39;utente viene richiesto di eseguire la pipeline.
+Se la pipeline è già stata aggiornata, all’utente viene richiesto di eseguire la pipeline.
 
 ## Eliminazione dell&#39;ambiente {#deleting-environment}
 
-L&#39;utente con le autorizzazioni necessarie sarà in grado di eliminare un ambiente di sviluppo.
+L&#39;utente con le autorizzazioni necessarie potrà eliminare un ambiente di sviluppo.
 
-L&#39;opzione **Elimina** è disponibile dal menu a discesa nella scheda **Ambienti**. Fare clic su **...** per un ambiente di sviluppo da eliminare.
+L&#39;opzione **Elimina** è disponibile dal menu a discesa nella scheda **Ambienti** . Fai clic su **..** per un ambiente di sviluppo da eliminare.
 
 ![](assets/environ-delete.png)
 
-L&#39;opzione di eliminazione è disponibile anche, se si fa clic su **Details** dalla scheda **Environment**. Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fare clic su **...** e selezionare **Elimina**, come illustrato nella figura seguente:
+È disponibile anche l’opzione Elimina, se fai clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato l&#39;ambiente di sviluppo, fai clic su **...** e seleziona **Elimina**, come illustrato nella figura seguente:
 
 ![](assets/environ-delete2.png)
 
 
 >[!NOTE]
 >
->Questa funzione non è disponibile per l&#39;ambiente Produzione/Fase impostato in un programma regolare impostato a scopo di produzione. La funzione è tuttavia disponibile per gli ambienti Produzione/Fase in un programma sandbox.
+>Questa funzione non è disponibile per l’ambiente Produzione/Stage impostato in un programma di produzione configurato a scopo di produzione. La funzione è tuttavia disponibile per gli ambienti di produzione/stage in un programma sandbox.
 
 ## Gestione dell&#39;accesso {#managing-access}
 
-Selezionare **Gestisci accesso** dal menu a discesa nella scheda **Ambienti**. Potete passare direttamente all’istanza di authoring e gestire l’accesso all’ambiente in uso.
+Seleziona **Gestisci accesso** dal menu a discesa nella scheda **Ambienti**. Puoi passare direttamente all’istanza di authoring e gestire l’accesso per il tuo ambiente.
 
-Per ulteriori informazioni, fare riferimento a [Managing Access to Author Instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) (Gestione dell&#39;accesso all&#39;istanza Author).
+Per ulteriori informazioni, consulta [Gestione dell’accesso all’istanza di authoring](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) .
 
 ![](assets/environ-access.png)
 
 
-## Accesso alla console per sviluppatori {#accessing-developer-console}
+## Accesso alla Console per sviluppatori {#accessing-developer-console}
 
-Selezionare **Developer Console** dal menu a discesa nella scheda **Ambienti**. In questo modo si aprirà una nuova scheda nel browser con la pagina di accesso su **Developer Console**.
+Seleziona **Console per sviluppatori** dal menu a discesa nella scheda **Ambienti** . Verrà aperta una nuova scheda nel browser con la pagina di accesso a **Console per sviluppatori**.
 
-Solo un utente nel ruolo Sviluppatore avrà accesso a **Developer Console**. Eccezione per i programmi sandbox, in cui qualsiasi utente con accesso al Programma sandbox di Cloud Manager avrà accesso a **Developer Console**.
+Solo un utente con il ruolo Sviluppatore avrà accesso a **Console per sviluppatori**. Eccezione per i programmi sandbox, in cui qualsiasi utente con accesso al programma sandbox di Cloud Manager avrà accesso a **Console per sviluppatori**.
 
-Per ulteriori informazioni, fare riferimento a [Ambienti sandbox in sospensione e in sospensione](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
+Per ulteriori informazioni, consulta [Sospensione e disattivazione degli ambienti sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) .
 
 
 ![](assets/environ-devconsole.png)
 
-Questa opzione è disponibile anche, se si fa clic su **Dettagli** dalla scheda **Ambienti**. Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato un ambiente, fare clic su **...** e selezionare **Developer Console**.
+Questa opzione è disponibile anche se fai clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato un ambiente, fai clic su **...** e seleziona **Console per sviluppatori**.
 
-## Login Locale {#login-locally}
+## Accedi localmente {#login-locally}
 
-Selezionare **Accesso locale** dal menu a discesa nella scheda **Ambienti** per accedere localmente ad Adobe Experience Manager.
+Seleziona **Accesso locale** dal menu a discesa nella scheda **Ambienti** per accedere localmente a Adobe Experience Manager.
 
 ![](assets/environ-login-locally.png)
 
-È inoltre possibile accedere localmente dalla pagina di riepilogo **Ambienti**.
+Inoltre, puoi accedere localmente dalla pagina di riepilogo **Ambienti**.
 
 ![](assets/environ-login-locally-2.png)
 
 ## Gestione dei nomi di dominio personalizzati {#manage-cdn}
 
-Passare alla pagina dei dettagli **Ambienti** dalla pagina Riepilogo ambienti.
+Passa alla pagina dei dettagli **Ambienti** dalla pagina Riepilogo ambienti .
 
-Per il servizio Pubblica del vostro ambiente potete effettuare le seguenti operazioni, come descritto di seguito:
+Le seguenti azioni possono essere eseguite sul servizio Publish per il tuo ambiente come descritto di seguito:
 
 1. [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
@@ -159,32 +159,32 @@ Per il servizio Pubblica del vostro ambiente potete effettuare le seguenti opera
 
 1. [Eliminazione di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-## Gestione dei Elenchi consentiti di  IP {#manage-ip-allow-lists}
+## Gestione degli Elenchi consentiti IP {#manage-ip-allow-lists}
 
-Passate alla pagina Dettagli ambiente dalla pagina Riepilogo ambienti. Potete eseguire le seguenti operazioni sui servizi Pubblica e/o Autore del vostro ambiente.
+Passa alla pagina dei dettagli dell’ambiente dalla pagina Riepilogo ambienti . Puoi eseguire le seguenti operazioni sui servizi di pubblicazione e/o authoring per il tuo ambiente qui.
 
-### Applicazione di un Elenco consentiti di  IP {#apply-ip-allow-list}
+### Applicazione di un Elenco consentiti IP {#apply-ip-allow-list}
 
-L’applicazione di un Elenco consentiti di  IP è il processo tramite il quale tutti gli intervalli IP inclusi nella definizione di elenco di autorizzazioni sono associati a un servizio di creazione o pubblicazione in un ambiente. Per poter applicare un Elenco consentiti di  IP, è necessario che un utente nel ruolo Proprietario business o Gestione distribuzione abbia eseguito l&#39;accesso.
+L’applicazione di un Elenco consentiti IP è il processo tramite il quale tutti gli intervalli IP inclusi nella definizione dell’elenco consentiti sono associati a un servizio Author o Publish in un ambiente. Per poter applicare un Elenco consentiti IP, è necessario accedere a un utente con il ruolo Proprietario business o Gestore distribuzione.
 
 >[!NOTE]
->Il Elenco consentiti di  IP deve esistere in Cloud Manager per poterlo applicare a un servizio di ambiente. Per ulteriori informazioni sugli Elenchi consentiti di  IP in Cloud Manager, vai a [Introduzione agli Elenchi consentiti di  IP in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>L’Elenco consentiti IP deve esistere in Cloud Manager per applicarlo a un servizio ambiente. Per ulteriori informazioni sugli Elenchi consentiti IP in Cloud Manager, passa a [Introduzione agli Elenchi consentiti IP in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-Per applicare un Elenco consentiti di  IP, effettuate le seguenti operazioni:
+Per applicare un Elenco consentiti IP, effettua le seguenti operazioni:
 
-1. Andate all&#39;ambiente specifico dalla pagina dei dettagli **Ambienti** e andate alla tabella **Elenchi consentiti  IP**.
-1. Utilizzate i campi di input nella parte superiore della tabella del Elenco consentiti di  IP per selezionare il Elenco consentiti di  IP e il servizio Autore o Pubblica a cui desiderate applicarlo.
-1. Fare clic su **Applica** e confermare l&#39;invio.
+1. Passa all’ambiente specifico dalla pagina dei dettagli **Ambienti** e passa alla tabella **Elenchi consentiti IP** .
+1. Utilizza i campi di input nella parte superiore della tabella dell’Elenco consentiti IP per selezionare l’Elenco consentiti IP e il servizio Author o Publish a cui desideri applicarlo.
+1. Fai clic su **Applica** e conferma l’invio.
 
-### Annullamento dell&#39;applicazione di un Elenco consentiti di  IP {#unapply-ip-allow-list}
+### Annullamento dell&#39;applicazione di un Elenco consentiti IP {#unapply-ip-allow-list}
 
-L&#39;annullamento dell&#39;applicazione di un Elenco consentiti di  IP è il processo tramite il quale tutti gli intervalli IP inclusi nella definizione del Elenco consentiti di  vengono disassociati da un servizio Author o Publisher in un ambiente. Per poter annullare l’applicazione di un Elenco consentiti di  IP, è necessario che un utente nel ruolo Proprietario business o Gestione distribuzione abbia eseguito l’accesso.
+L&#39;annullamento dell&#39;applicazione di un Elenco consentiti IP è il processo tramite il quale tutti gli intervalli IP inclusi nella definizione dell&#39;Elenco consentiti vengono disassociati da un servizio Author o Publisher in un ambiente. Per poter annullare l’applicazione di un Elenco consentiti IP, è necessario che un utente con il ruolo Proprietario business o Gestore distribuzione sia connesso.
 
-Per annullare l’applicazione di un Elenco consentiti di  IP, effettuate le seguenti operazioni:
+Per annullare l’applicazione di un Elenco consentiti IP, effettua le seguenti operazioni:
 
-1. Andate alla pagina dei dettagli **Ambienti** specifica dalla schermata Ambienti e andate alla tabella **Elenchi consentiti  IP**.
-1. Identificare la riga in cui è elencata la regola del Elenco consentiti  IP che si desidera annullare l&#39;applicazione.
-1. Selezionare la **...** menu dall&#39;estremità destra della riga.
-1. Selezionare l&#39;opzione **Annulla applicazione** e confermare l&#39;invio.
+1. Passa alla pagina dei dettagli **Ambienti** specifica dalla schermata Ambienti e passa alla tabella **Elenchi consentiti IP** .
+1. Identifica la riga in cui è elencata la regola dell’Elenco consentiti IP che desideri annullare l’applicazione.
+1. Seleziona il **...Menu** dall&#39;estremità destra della riga.
+1. Seleziona l’opzione **Annulla applicazione** e conferma l’invio.
 
 
