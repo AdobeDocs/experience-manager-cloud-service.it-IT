@@ -1,18 +1,18 @@
 ---
-title: Note sulla versione corrente di  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione corrente di  [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
+description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: aadfc38f62a1e3543810447e91910cf71fa93583
+source-git-commit: 137be7fd0fe89429c0d1f028d81e54ce69cc4ef1
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 4%
+source-wordcount: '1528'
+ht-degree: 3%
 
 ---
 
 
-# Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione corrente per [!DNL Adobe Experience Manager] come Cloud Service {#release-notes}
 
-La sezione seguente illustra le note generali sulla versione per la versione corrente (più recente) di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note generali sulla versione per la versione corrente (più recente) di [!DNL Experience Manager] come Cloud Service.
 
 >[!NOTE]
 >Da qui puoi passare alle note sulla versione delle versioni precedenti; per esempio, per quelli del 2020, 2021 e così via.
@@ -26,11 +26,11 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 è il 25 febbraio 2021.
 La versione seguente (2021.3.0) sarà del 25 marzo 2021.
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service  {#sites}
+## [!DNL Adobe Experience Manager Sites] come Cloud Service  {#sites}
 
-* **[Componente](/help/implementing/developing/hybrid/remote-page.md)** RemotePage: È stato aggiunto il supporto per la visualizzazione e la modifica di applicazioni a pagina singola esterne all’interno di AEM utilizzando.
+* **[Componente](/help/implementing/developing/hybrid/remote-page.md)** RemotePage: È stato aggiunto il supporto per la visualizzazione e la modifica di SPA esterni in AEM utilizzando.
 
-* **[Modifica di un’applicazione a pagina singola esterna in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: È stata aggiunta la possibilità di caricare un’applicazione a pagina singola autonoma in un’istanza AEM, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
+* **[Modifica di un SPA esterno in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: È stata aggiunta la possibilità di caricare un’applicazione a pagina singola autonoma in un’istanza AEM, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
 
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
@@ -73,6 +73,52 @@ Customers using the Connected Assets feature can now easily view and track asset
 
 ## Cloud Manager {#cloud-manager}
 
+Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.3.0.
+
+## Data di rilascio {#release-date-cm-march}
+
+La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.3.0 è l’11 marzo 2021.
+
+
+### Novità {#what-is-new-march}
+
+* I clienti con ambienti con configurazioni CDN preesistenti per Inserire nell&#39;elenco Consentiti IP, certificati SSL e nomi di dominio personalizzati visualizzeranno il seguente messaggio e saranno in grado di self-service tramite l’interfaccia utente.
+
+* Gli utenti con le autorizzazioni necessarie possono ora modificare il programma, consentendo loro di effettuare le seguenti operazioni in modo autonomo.
+
+* AEM&#39;etichetta Push Update&quot; verrà ora visualizzata sia per le schermate Pipeline Execution che per Activity.
+
+* Se un ambiente è in ibernazione ma è disponibile anche un aggiornamento AEM, lo stato &quot;Sospeso&quot; avrà la precedenza rispetto a &quot;Aggiorna disponibile&quot;.
+
+* Gli utenti possono ora visualizzare i propri ruoli di Cloud Manager selezionando l’opzione &quot;Visualizza ruoli Cloud Manager&quot; dopo aver visualizzato l’icona Profilo utente (in alto a destra) di Unified Shell.
+
+* L&#39;etichetta &quot;Domanda di approvazione&quot; è stata rinominata &quot;Approvazione produzione&quot; per maggiore chiarezza.
+
+* L’etichetta &quot;Versione&quot; è stata rinominata &quot;Git Tag&quot; nella schermata di esecuzione della pipeline di produzione.
+
+* Le etichette che definiscono il comportamento quando le metriche importanti non soddisfano la soglia definita sono state rinominate per rispecchiare il loro comportamento effettivo - Annulla immediatamente e Approva immediatamente.
+
+* Gli elenchi di elementi obsoleti di classi e metodi sono stati aggiornati in base alla versione `2021.3.4997.20210303T022849Z-210225` dell’SDK del Cloud Service AEM.
+
+* La pipeline di produzione di Cloud Manager ora include funzionalità di test dell’interfaccia utente personalizzata.
+
+### Correzioni di bug {#bug-fixes-cm-march}
+
+* Il controllo delle versioni del pacchetto è stato ignorato in alcuni casi durante AEM aggiornamento push.
+
+* Alcuni problemi di qualità non sono stati rilevati correttamente quando i pacchetti sono stati incorporati in altri pacchetti.
+
+* In situazioni oscure, il nome predefinito del programma generato all’apertura della finestra di dialogo Aggiungi programma potrebbe essere un duplicato di un nome di programma esistente.
+
+* Talvolta, se l’utente si allontana dalla pagina di esecuzione della pipeline immediatamente dopo l’avvio di una pipeline, viene visualizzato un messaggio di errore che indica che l’azione non è riuscita, anche se l’esecuzione viene effettivamente avviata.
+
+* Il passaggio di compilazione è stato riavviato inutilmente quando le build del cliente hanno generato pacchetti non validi.
+
+* In alcuni casi, l’utente potrebbe visualizzare uno stato verde &quot;attivo&quot; accanto a un Inserire nell&#39;elenco Consentiti IP anche quando tale configurazione non è stata distribuita.
+
+* Tutte le pipeline di produzione esistenti verranno abilitate automaticamente con il passaggio Audit esperienze .
+
+
 ### Data di rilascio {#release-date-cm}
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.2.0 è l’11 febbraio 2021.
@@ -94,7 +140,7 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.2.0 è l’1
 
 * L’interfaccia utente di Cloud Manager informa l’utente che potrebbe non essere temporaneamente in grado di selezionare un certificato SSL se è utilizzato da un nome di dominio attualmente distribuito.
 
-* Sono state aggiunte regole aggiuntive per la qualità del codice per coprire i problemi di compatibilità con Cloud Service.
+* Sono state aggiunte regole aggiuntive per la qualità del codice per risolvere i problemi relativi alla compatibilità dei Cloud Service.
 
 ### Correzioni di bug {#bug-fixes-cloud-manager}
 
@@ -138,7 +184,7 @@ La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v
 
 ### Novità nello strumento Content Transfer (Trasferimento contenuti) {#what-is-new-ctt}
 
-* Aggiunta di nuove funzionalità e interfaccia utente allo strumento Content Transfer (Trasferimento contenuti) - User Mapping Tool (Strumento di mappatura utenti). Queste funzioni mappano automaticamente gli utenti e i gruppi esistenti ai loro ID del sistema di gestione di Adobe Identity come parte dell’attività di migrazione dei contenuti.
+* Aggiunta di nuove funzionalità e interfaccia utente allo strumento Content Transfer (Trasferimento contenuti) - User Mapping Tool (Strumento di mappatura utenti). Questa funzione mappa automaticamente gli utenti e i gruppi esistenti ai loro ID di sistema Identity Management di Adobe come parte dell’attività di migrazione dei contenuti.
 Per ulteriori informazioni, consulta [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) .
 * Lo strumento Content Transfer (Trasferimento contenuti) ora esegue la migrazione di tutti i gruppi e gli utenti a cui viene fatto riferimento nel set di migrazione, inclusi gli elementi figlio.
 * Gli utenti possono selezionare determinati percorsi in `/etc` durante la creazione dei set di migrazione.
@@ -151,7 +197,7 @@ La data di rilascio di Best Practices Analyzer v2.1.2 è il 18 febbraio 2021.
 
 ### Novità di Best Practices Analyzer {#what-is-new-bpa}
 
-* Possibilità di rilevare l’utilizzo dell’implementazione di AEM Forms e AEM Forms e indicare le aree rilevanti per la migrazione ad AEM Forms as a Cloud Service.
+* Possibilità di rilevare l’utilizzo dell’implementazione di AEM Forms e AEM Forms e indicare le aree rilevanti per la migrazione ad AEM Forms come Cloud Service.
 * Possibilità di rilevare e generare rapporti sull’utilizzo e il conteggio dei componenti e dei modelli personalizzati.
 * Possibilità di rilevare il tipo di archivio nodi e archivio dati utilizzati.
 * Possibilità di rilevare l’utilizzo di Dynamic Media.
