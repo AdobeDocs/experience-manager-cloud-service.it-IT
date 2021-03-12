@@ -2,7 +2,7 @@
 title: Diritti Di Accesso Concessi - Requisiti
 description: Diritti Di Accesso Concessi - Requisiti
 translation-type: tm+mt
-source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
+source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 11%
@@ -36,8 +36,8 @@ Una volta creata l’organizzazione per la società, l’amministratore designat
    * [Gestione dei ruoli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-roles)
    * [Gestione dell’accesso all’istanza di authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-access-aem)
 
->[!NOTE]
->Per ulteriori informazioni sugli utenti e le definizioni dei ruoli in Cloud Manager, visita la sezione [Utenti e ruoli](#users-roles) .
+      >[!NOTE]
+      >Per ulteriori informazioni sugli utenti e le definizioni dei ruoli in Cloud Manager, visita la sezione [Utenti e ruoli](#users-roles) .
 
 Con questi diritti concessi, il tuo amministratore è ora configurato con un single sign-on (utilizzando Adobe ID) per accedere ai servizi [!UICONTROL Experience Cloud], accedere agli ambienti cloud AEM e utilizzare [!UICONTROL Cloud Manager].
 
