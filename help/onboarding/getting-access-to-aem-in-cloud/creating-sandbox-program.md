@@ -2,9 +2,9 @@
 title: 'Creazione di un programma sandbox '
 description: 'Creazione di un programma sandbox '
 translation-type: tm+mt
-source-git-commit: 5773683a75254855687266929a3e1876c8f06e61
+source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,13 @@ ht-degree: 0%
 # Creazione di un programma sandbox {#create-sandbox-program}
 
 Per creare un programma sandbox, effettua le seguenti operazioni:
+
+1. Avvia la pagina di destinazione di Cloud Manager e fai clic su **Aggiungi programma** dall’angolo in alto a destra dello schermo.
+
+   ![](assets/first_timelogin1.png)
+
+   >[!NOTE]
+   >Per informazioni su come accedere a Cloud Manager, consulta [Pagina di destinazione di Cloud Manager](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md) per ulteriori dettagli.
 
 1. Dalla procedura guidata di creazione del programma, seleziona **Imposta una sandbox**. L&#39;utente invia il nome del programma prima di selezionare **Crea**.
 
