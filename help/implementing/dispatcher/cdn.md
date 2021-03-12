@@ -2,17 +2,17 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM come Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
+source-git-commit: c71117de502b1ee756e06e756a643c987113ea45
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 4%
+source-wordcount: '695'
+ht-degree: 7%
 
 ---
 
 
 # CDN in AEM as a Cloud Service {#cdn}
 
-AEM come Cloud Service viene fornito con una rete CDN integrata. Lo scopo principale è ridurre la latenza distribuendo contenuti memorizzabili nella cache dai nodi CDN al bordo, vicino al browser. È completamente gestita e configurata per garantire prestazioni ottimali alle applicazioni AEM.
+AEM come Cloud Service viene fornito con una rete CDN integrata. Il suo scopo principale è ridurre la latenza distribuendo contenuti memorizzabili nella cache dai nodi della CDN al perimetro, vicino al browser. È completamente gestita e configurata per garantire prestazioni ottimali alle applicazioni AEM.
 
 La rete CDN gestita AEM soddisferà i requisiti di prestazioni e sicurezza della maggior parte dei clienti. Per il livello di pubblicazione, i clienti possono facoltativamente indicarlo dal proprio CDN, che dovranno gestire. Questo sarà consentito caso per caso, in base al soddisfacimento di alcuni prerequisiti, tra cui, ma non solo, il cliente con un’integrazione legacy con il proprio fornitore CDN che è difficile abbandonare.
 
@@ -31,7 +31,7 @@ Per ulteriori informazioni, consulta [Gestione degli Elenchi consentiti IP](/hel
 
 >[!CAUTION]
 >
->Solo le richieste dagli IP consentiti saranno servite dalla rete CDN gestita di AEM. Se punti la tua CDN alla AEM CDN gestita, assicurati che gli IP della tua CDN siano inclusi nell&#39;inserire nell&#39;elenco Consentiti.
+>Solo le richieste dagli IP consentiti saranno servite dalla rete CDN gestita di AEM. Se punti la tua CDN alla CDN gestita AEM, assicurati che gli IP della tua CDN siano inclusi nell&#39;inserire nell&#39;elenco Consentiti.
 
 ## CDN del cliente punta a AEM CDN gestito {#point-to-point-CDN}
 
@@ -47,10 +47,10 @@ Istruzioni di configurazione:
 
 1. Imposta l&#39;intestazione `X-Forwarded-Host` con il nome di dominio.
 1. Imposta l’intestazione Host con il dominio di origine, che è l’ingresso della CDN AEM. Il valore deve provenire dall&#39;Adobe.
-1. Invia l’intestazione SNI all’origine. Come l’intestazione Host , l’intestazione sni deve essere il dominio di origine.
+1. Invia l’intestazione SNI all’origine. Come l’intestazione Host , l’intestazione SNI deve essere il dominio di origine.
 1. Imposta il `X-Edge-Key` o il `X-AEM-Edge-Key` (se il CDN elimina X-Edge-*), necessario per indirizzare correttamente il traffico ai server AEM. Il valore deve provenire dall&#39;Adobe. Informare l&#39;Adobe se si desidera l&#39;accesso diretto all&#39;ingresso della rete CDN di Adobe (da bloccare quando `X-Edge-Key` non è presente).
 
-Prima di accettare il traffico in tempo reale, è necessario verificare con l’Adobe del supporto clienti che l’indirizzamento del traffico end-to-end funziona correttamente.
+Prima di accettare il traffico live, è necessario verificare con il supporto clienti di Adobe che il indirizzamento del traffico end-to-end funziona correttamente.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Questa configurazione CDN del cliente è supportata per il livello di pubblicazi
 
 ## Intestazioni di geolocalizzazione {#geo-headers}
 
-La CDN gestita AEM aggiungerà intestazioni a ogni richiesta con:
+La CDN gestita AEM aggiunge intestazioni a ogni richiesta con:
 
 * codice del paese: `x-aem-client-country`
 * Codice continente: `x-aem-client-continent`
