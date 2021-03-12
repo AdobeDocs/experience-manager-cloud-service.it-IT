@@ -2,9 +2,9 @@
 title: Supporto per cookie per lo stesso sito per Adobe Experience Manager come Cloud Service
 description: Supporto per cookie per lo stesso sito per Adobe Experience Manager come Cloud Service
 translation-type: tm+mt
-source-git-commit: 4f25aa54bd40644912e0e430a81f1a17d545e3f8
+source-git-commit: 7195709a96422eb701722ef6b398d6577e080058
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ A partire dalla versione 80, Chrome e versioni successive Safari, ha introdotto 
 
 Il valore predefinito di questa impostazione (`SameSite=Lax`) potrebbe causare il mancato funzionamento dell&#39;autenticazione tra istanze o servizi AEM. Questo perché i domini o le strutture URL di questi servizi potrebbero non rientrare nei vincoli di questo criterio dei cookie.
 
-Per ovviare a questo problema, è necessario impostare l’attributo per cookie SameSite su `None` per il token di accesso.
+Per ovviare a questo problema, è necessario impostare l’attributo cookie SameSite su `None` per il token di accesso.
 
 Per farlo, segui i passaggi seguenti:
 
