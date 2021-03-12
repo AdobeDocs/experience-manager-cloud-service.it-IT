@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 translation-type: tm+mt
-source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
+source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2307'
 ht-degree: 51%
 
 ---
@@ -209,6 +209,8 @@ Una volta completato il processo di acquisizione, puoi utilizzare il contenuto d
 
 ### Visualizzazione dei registri di un set di migrazione {#viewing-logs-migration-set}
 
+Al completamento di ogni passaggio (estrazione e acquisizione) controlla i registri e cerca gli errori.  Eventuali errori devono essere risolti immediatamente sia affrontando i problemi segnalati sia contattando il supporto Adobe.
+
 Puoi visualizzare i registri di un set di migrazione esistente nella pagina *Overview* (Panoramica).
 Effettua le seguenti operazioni:
 
@@ -268,6 +270,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 Per ulteriori informazioni, consulta [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run).
 
 I file creati per coerenza nel percorso *OUT_DIR* indicato sopra possono quindi essere controllati per individuare percorsi con binary mancanti e possono essere intraprese azioni appropriate come il ripristino da un backup, l’eliminazione dei percorsi, la reindicizzazione e così via.
+
 
 ### Comportamento dell’interfaccia {#ui-behavior}
 
