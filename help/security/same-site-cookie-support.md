@@ -2,9 +2,9 @@
 title: Supporto per cookie per lo stesso sito per Adobe Experience Manager come Cloud Service
 description: Supporto per cookie per lo stesso sito per Adobe Experience Manager come Cloud Service
 translation-type: tm+mt
-source-git-commit: e51d9c3e4691fb58f3c4b6a2565cc8cad2a1acb0
+source-git-commit: 4f25aa54bd40644912e0e430a81f1a17d545e3f8
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -28,3 +28,5 @@ Per farlo, segui i passaggi seguenti:
 1. Fai clic su Salva
 1. Genera le configurazioni del formato JSON per questa particolare impostazione seguendo i passaggi descritti in [Generazione di configurazioni OSGi tramite l&#39;SDK AEM Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)
 1. Applica le impostazioni seguendo i passaggi descritti nella documentazione [Formato API Cloud Manager per l&#39;impostazione delle proprietà](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi .
+
+Una volta aggiornata questa impostazione e gli utenti vengono disconnessi e connessi di nuovo, i cookie `login-token` avranno impostato l&#39;attributo `None` e saranno inclusi nelle richieste intersito.
