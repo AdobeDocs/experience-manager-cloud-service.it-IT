@@ -3,9 +3,9 @@ title: Metadati XMP
 description: Scopri lo standard di metadati XMP (Extensible Metadata Platform) per la gestione dei metadati. Viene utilizzato da AEM come formato standard per la creazione, l'elaborazione e lo scambio di metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
+source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1003'
 ht-degree: 16%
 
 ---
@@ -72,21 +72,19 @@ XMP consente di aggiungere una proprietà `xml:lang` alle proprietà di testo pe
 
 ## Write-back XMP per le rappresentazioni {#xmp-writeback-to-renditions}
 
-Questa funzione di XMP write-back in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati alle rappresentazioni della risorsa originale. Quando modifichi i metadati di una risorsa da [!DNL Assets] o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo della risorsa nell’archivio. La funzione di XMP write-back propaga le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa.
+Questa funzione di XMP write-back in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati alle rappresentazioni della risorsa originale. Quando modifichi i metadati di una risorsa da [!DNL Assets] o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo della risorsa nell’archivio. Tuttavia, [!DNL Assets] non propaga automaticamente eventuali modifiche ai metadati delle rappresentazioni di una risorsa. La funzione di XMP write-back consente di propagare le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa. Gli aggiornamenti vengono memorizzati nel nodo di metadati nella gerarchia delle risorse. Questa funzione incorpora anche gli aggiornamenti nei file binari delle rappresentazioni. La funzione riscrive solo le proprietà dei metadati che utilizzano uno spazio dei nomi `jcr`.
 
-Considera uno scenario in cui modifichi la proprietà [!UICONTROL Title] della risorsa denominata `Classic Leather` in `Nylon`.
+Ad esempio, considera uno scenario in cui modifichi la proprietà [!UICONTROL Title] della risorsa denominata `Classic Leather` in `Nylon`.
 
 ![Metadati](assets/metadata.png)
 
 In questo caso, [!DNL Assets] salva le modifiche alla proprietà **[!UICONTROL Title]** nel parametro `dc:title` per i metadati delle risorse memorizzati nella gerarchia delle risorse.
 
-![metadata_memorizzati](assets/metadata_stored.png)
+![metadati memorizzati nel nodo risorsa nell’archivio](assets/metadata_stored.png)
 
-Tuttavia, [!DNL Assets] non propaga automaticamente eventuali modifiche ai metadati delle rappresentazioni di una risorsa.
-
-La funzione di XMP write-back consente di propagare le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa. Tuttavia, le modifiche non vengono memorizzate sotto il nodo di metadati nella gerarchia delle risorse. Questa funzione incorpora invece le modifiche nei file binari delle rappresentazioni.
-
-La funzione di ripristino non è abilitata per impostazione predefinita in [!DNL Assets]. Scopri come [abilitare il writeback dei metadati](#enable-xmp-writeback).
+>[!NOTE]
+>
+>La funzione di ripristino non è abilitata per impostazione predefinita in [!DNL Assets]. Scopri come [abilitare il writeback dei metadati](#enable-xmp-writeback).
 
 ### Abilita XMP writeback {#enable-xmp-writeback}
 
@@ -97,9 +95,9 @@ La funzione di ripristino non è abilitata per impostazione predefinita in [!DNL
 
    ![Seleziona DAM metadata writeback launcher per modificarne le proprietà e attivarlo](assets/launcher-properties-metadata-writeback1.png)
 
-1. Seleziona **[!UICONTROL Attiva]** nella pagina [!UICONTROL Proprietà di avvio] . Fai clic su **[!UICONTROL Salva e chiudi]**.
+1. Seleziona **[!UICONTROL Attiva]** nella pagina **[!UICONTROL Proprietà di avvio]** . Fai clic su **[!UICONTROL Salva e chiudi]**.
 
-Per applicare questo flusso di lavoro a una risorsa una sola volta, applica il flusso di lavoro [!UICONTROL Writeback di metadati DAM] dalla barra a sinistra. Per applicare il flusso di lavoro alle risorse caricate, aggiungi il flusso di lavoro a un profilo di post-elaborazione.
+Per applicare questo flusso di lavoro a una risorsa una sola volta, applica il flusso di lavoro [!UICONTROL Writeback di metadati DAM] dalla barra a sinistra. Per applicare il flusso di lavoro a tutte le risorse caricate, aggiungi il flusso di lavoro a un profilo di post-elaborazione.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
