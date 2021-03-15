@@ -1,10 +1,10 @@
 ---
-title: Verifica dello stato del nome del dominio
-description: Verifica dello stato del nome del dominio
+title: Verifica dello stato del nome di dominio
+description: Verifica dello stato del nome di dominio
 translation-type: tm+mt
-source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
+source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -12,32 +12,41 @@ ht-degree: 0%
 
 # Controllo dello stato del nome di dominio {#check-status}
 
-Per determinare se il nome di dominio è stato verificato correttamente, fai clic sull’icona Stato del nome di dominio nella tabella in Ambienti della pagina Impostazioni dominio.
+Per determinare se il nome di dominio è stato verificato correttamente, fai clic sull’icona Stato del nome di dominio nella tabella Ambienti della pagina Impostazioni dominio .
 
 >[!NOTE]
->Cloud Manager attiva automaticamente una verifica TXT quando selezioni Salva nel passaggio di verifica della procedura guidata Aggiungi dominio personalizzato. Per le verifiche successive, devi selezionare attivamente l&#39;icona **verify again** accanto allo stato.
+>Cloud Manager attiva automaticamente una verifica TXT quando selezioni Salva nel passaggio di verifica della procedura guidata Aggiungi dominio personalizzato . Per le verifiche successive, devi selezionare attivamente l&#39;icona **verifica nuovamente** accanto allo stato.
 
-Cloud Manager verificherà la proprietà del dominio tramite il valore TXT e visualizzerà uno dei seguenti messaggi di stato:
+Cloud Manager verificherà la proprietà del dominio tramite il valore TXT e visualizza uno dei seguenti messaggi di stato:
 
 * **Il valore**
-FailedTXT per la verifica del dominio risulta mancante o rilevato con errori. Seguite le istruzioni e riprovate. Quando è pronto, è necessario selezionare il pulsante 
-*verifica* nuovamente accanto allo stato.
+FailedTXT della verifica del dominio è mancante o viene rilevato con errori. Segui le istruzioni e riprova. Quando è pronto, è necessario selezionare la 
+*verifica* nuovamente accanto allo stato .
 
-* **Verifica dominio in**
-corsoVerifica in corso. Questo stato viene generalmente visualizzato dopo la selezione del 
-*verifica* nuovamente accanto allo stato.
+* **Verifica del dominio In**
+corsoVerifica in corso. Questo stato viene generalmente visualizzato dopo aver selezionato 
+*verifica* nuovamente accanto allo stato .
 
-* **Verificato: verifica della distribuzione**
-non riuscitaTXT. Tuttavia, la distribuzione CDN non è riuscita.  rappresentante del Adobe ne verrà informato automaticamente.
+* **Verifica: verifica**
+TXT della distribuzione non riuscita. Tuttavia, la distribuzione CDN non è riuscita. Un rappresentante di Adobe verrà informato automaticamente.
 
 * **Dominio verificato e**
 distribuitoQuesto stato indica che il nome di dominio personalizzato è pronto per essere utilizzato.
    >[!NOTE]
-   >A questo punto, il tuo nome di dominio personalizzato è pronto per essere testato e punta al nome di dominio di Cloud Manager. Per ulteriori informazioni, fare riferimento a [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
+   >A questo punto, il nome di dominio personalizzato è pronto per il test e deve essere indirizzato al nome di dominio di Cloud Manager. Per ulteriori informazioni, consulta [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) .
+
+* ****
+Eliminazione in corso del nome di dominio personalizzato.
 
 * **Eliminazione**
-del nome di dominio personalizzato in corso.
+non riuscitaEliminazione del nome di dominio personalizzato non riuscita. È necessario riprovare. Per ulteriori informazioni, consulta [Eliminazione di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) .
 
-* **Eliminazione**
-non riuscitaEliminazione del nome di dominio personalizzato non riuscita. È necessario riprovare. Per ulteriori informazioni, fare riferimento a [Eliminazione di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md).
 
+## Configurazioni CDN preesistenti per Inserire nell&#39;elenco Consentiti IP {#pre-existing-cdn}
+
+I clienti con ambienti che includono configurazioni CDN preesistenti per gli Inserire nell&#39;elenco Consentiti IP (certificati SSL o nomi di dominio personalizzati) visualizzeranno il seguente messaggio nella pagina dei dettagli **Inserire nell&#39;elenco Consentiti IP** e **Ambiente** .
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+Per visualizzare e gestire le configurazioni preesistenti, è necessario aggiungerle tramite l’interfaccia utente.
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
