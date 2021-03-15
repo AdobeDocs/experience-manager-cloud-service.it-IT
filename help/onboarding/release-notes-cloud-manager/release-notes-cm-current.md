@@ -2,9 +2,9 @@
 title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.3.0
 description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.3.0
 translation-type: tm+mt
-source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
+source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '456'
 ht-degree: 1%
 
 ---
@@ -17,12 +17,16 @@ Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud
 ## Data di rilascio {#release-date}
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.3.0 è l’11 marzo 2021.
+La prossima versione è prevista per il 08 aprile 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Novità {#what-is-new}
 
-* I clienti con ambienti con configurazioni CDN preesistenti per Inserire nell&#39;elenco Consentiti IP, certificati SSL e nomi di dominio personalizzati visualizzeranno un messaggio sulle configurazioni esistenti in precedenza e potranno self-service tramite l’interfaccia utente.
+* I clienti con ambienti con configurazioni di nomi di dominio personalizzati preesistenti per [Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizzeranno un messaggio sulle configurazioni esistenti in precedenza e saranno in grado di self-service tramite l&#39;interfaccia utente. Gli utenti possono ora:
+   * Aggiungi la soluzione Sites a un programma esistente con Assets (o viceversa).
+   * Rimuovi Sites (o Assets) da un programma esistente sia con Sites che con Assets.
+   * Aggiungi il secondo diritto inutilizzato alla soluzione a un programma esistente o a un nuovo programma.
 
 * Gli utenti con le autorizzazioni necessarie possono ora modificare il programma, consentendo loro di effettuare le seguenti operazioni in modo autonomo.
 
