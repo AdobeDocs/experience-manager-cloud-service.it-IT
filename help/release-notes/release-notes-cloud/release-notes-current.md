@@ -2,7 +2,7 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 3%
@@ -87,8 +87,8 @@ La prossima versione è prevista per il 08 aprile 2021.
 
 * Gli utenti con le autorizzazioni necessarie possono ora modificare un programma, consentendo loro di effettuare le seguenti operazioni in modalità self-service:
 
-   * Aggiungi la soluzione Sites a un programma esistente con Assets (o viceversa).
-   * Rimuovi Sites (o Assets) da un programma esistente sia con Sites che con Assets.
+   * Aggiungi la soluzione Sites a un programma esistente con Assets o viceversa.
+   * Rimuovi Sites o Assets da un programma esistente sia con Sites che con Assets.
    * Aggiungi il secondo diritto inutilizzato alla soluzione a un programma esistente o a un nuovo programma.
 
 * **AEM push** Updatelabel verrà ora visualizzato sia per gli schermi  *Pipeline* Execution che per  ** Activityscreens.
@@ -101,11 +101,11 @@ La prossima versione è prevista per il 08 aprile 2021.
 
 * L’etichetta **Versione** è stata rinominata **Tag Git** nella schermata di esecuzione della pipeline di produzione.
 
-* Le etichette che definiscono il comportamento quando le metriche importanti non soddisfano la soglia definita sono state rinominate per riflettere il loro comportamento vero: **Annulla immediatamente** e **Approva immediatamente**.
+* Le etichette che definiscono il comportamento quando metriche importanti non soddisfano la soglia definita sono state rinominate per rispecchiare il loro comportamento effettivo: **Annulla immediatamente** e **Approva immediatamente**.
 
 * Gli elenchi di elementi obsoleti di classi e metodi sono stati aggiornati in base alla versione `2021.3.4997.20210303T022849Z-210225` dell’SDK del Cloud Service AEM.
 
-* La pipeline di produzione di Cloud Manager ora include funzionalità di test dell’interfaccia utente personalizzata.
+* La pipeline di produzione di Cloud Manager ora include la funzionalità [Test personalizzati dell’interfaccia utente](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) .
 
 ### Correzioni di bug {#bug-fixes-cm-march}
 
