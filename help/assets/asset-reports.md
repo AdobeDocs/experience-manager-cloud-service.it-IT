@@ -3,17 +3,17 @@ title: Rapporti su utilizzo e condivisione
 description: Rapporti sulle risorse in [!DNL Adobe Experience Manager Assets] per comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: dc6823d9a0dabcc4fe1537073d90ca53da205556
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '869'
 ht-degree: 8%
 
 ---
 
 
-# Rapporti su risorse {#asset-reports}
+# Rapporti sulle risorse {#asset-reports}
 
-Il reporting delle risorse consente di valutare l’utilità della distribuzione [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets] puoi generare vari rapporti per le risorse digitali. I rapporti forniscono informazioni utili sull’utilizzo del sistema, su come gli utenti interagiscono con le risorse e quali risorse vengono scaricate e condivise.
+Il reporting delle risorse consente di valutare l’utilità della distribuzione [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets] puoi generare vari rapporti per le risorse digitali. I rapporti forniscono informazioni utili sull’utilizzo del sistema, sul modo in cui gli utenti interagiscono con le risorse e sulle risorse <!-- downloaded and --> condivise.
 
 Utilizza le informazioni contenute nei rapporti per derivare le metriche di successo chiave per misurare l’adozione di [!DNL Assets] all’interno dell’azienda e da parte dei clienti.
 
@@ -28,7 +28,6 @@ Quando viene generato un rapporto, riceverai una notifica tramite <!-- through a
 [!DNL Experience Manager Assets] genera i seguenti rapporti standard:
 
 * Carica
-* Scarica
 * Scadenza
 * Modifiche
 * Pubblicazione
@@ -36,6 +35,18 @@ Quando viene generato un rapporto, riceverai una notifica tramite <!-- through a
 * Utilizzo disco
 * File
 * Condivisione collegamenti
+
+<!-- Removed download report.
+* Upload
+* Download
+* Expiration
+* Modification
+* Publish
+* [!DNL Brand Portal] publish
+* Disk Usage
+* Files
+* Link Share
+-->
 
 [!DNL Adobe Experience Manager] gli amministratori possono generare e personalizzare facilmente questi rapporti per la tua implementazione. Un amministratore può seguire questi passaggi per generare un rapporto:
 
@@ -47,20 +58,6 @@ Quando viene generato un rapporto, riceverai una notifica tramite <!-- through a
 1. Dalla pagina **[!UICONTROL Crea rapporto]**, scegli il rapporto che desideri creare e fai clic su **[!UICONTROL Avanti]**.
 
    ![Seleziona tipo di rapporto](assets/choose_report.png)
-
-<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
-   >[!NOTE]
-   >
-   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
--->
-
->[!NOTE]
->
->Per impostazione predefinita, i frammenti di contenuto e le condivisioni di collegamenti sono inclusi nel rapporto della risorsa [!UICONTROL Download]. Seleziona l’opzione appropriata per creare un rapporto di condivisioni di collegamenti o per escludere frammenti di contenuto dal rapporto di download.
-
->[!NOTE]
->
->Il rapporto [!UICONTROL Download] visualizza i dettagli solo delle risorse scaricate dopo la selezione singolarmente o scaricate tramite Azione rapida. Tuttavia, non include i dettagli delle risorse che si trovano all’interno di una cartella scaricata.
 
 1. Configura i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella nell&#39;archivio CRX in cui è memorizzato il rapporto. Per impostazione predefinita, il percorso della cartella è `/content/dam`. È possibile specificare un percorso diverso.
 
@@ -111,6 +108,16 @@ Quando viene generato un rapporto, riceverai una notifica tramite <!-- through a
 
 Puoi aggiungere colonne personalizzate ai seguenti rapporti per visualizzare più dati per le tue esigenze personalizzate:
 
+<!-- Remove download report.
+* Upload
+* Download
+* Expiration
+* Modification
+* Publish
+* [!DNL Brand Portal] publish
+* Files
+-->
+
 * Carica
 * Scarica
 * Scadenza
@@ -152,6 +159,24 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## Informazioni e suggerimenti per la risoluzione dei problemi {#tips-troubleshoot}
+## Informazioni sulla risoluzione dei problemi {#tips-troubleshoot}
 
 * Se il [!UICONTROL Rapporto sull&#39;utilizzo del disco] non viene generato e se utilizzi [!DNL Dynamic Media], assicurati che tutte le risorse procedano correttamente. Per risolvere il problema, rielabora le risorse e genera di nuovo il rapporto.
+
+<!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
+
+TBD: How do enable this in CS now? Is it done using some OSGi config now?
+   >[!NOTE]
+   >
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
+
+<!-- Removed download report.
+   >[!NOTE]
+   >
+   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
+
+   >[!NOTE]
+   >
+   >The [!UICONTROL Download] report displays details of only those assets which are downloaded after selecting individually or are downloaded using Quick Action. However, it does not include the details of the assets that are inside a downloaded folder.
+-->
