@@ -2,10 +2,10 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
+source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 97%
+source-wordcount: '416'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ In questa pagina sono elencate le risorse di supporto autonomo sull’onboarding
 
 Questa sezione riguarda gli articoli principali su:
 
-* requisiti per l’accesso a Experience Manager as a Cloud Service
+* Guida introduttiva ad AEM come Cloud Service
 * ruoli per gli utenti che determinano la disponibilità di funzioni specifiche
 * configurazione dell’archivio Git di Cloud Manager
 * accesso a Experience Manager as a Cloud Service
