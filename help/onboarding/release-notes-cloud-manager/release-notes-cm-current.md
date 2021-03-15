@@ -2,7 +2,7 @@
 title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.3.0
 description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.3.0
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
@@ -26,25 +26,25 @@ La prossima versione è prevista per il 08 aprile 2021.
 * I clienti con ambienti con configurazioni di nomi di dominio personalizzati preesistenti per [Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizzeranno un messaggio sulle configurazioni esistenti in precedenza e saranno in grado di self-service tramite l&#39;interfaccia utente.
 
 * Gli utenti con le autorizzazioni necessarie possono ora modificare un programma, consentendo loro di effettuare le seguenti operazioni in modalità self-service:
-   * Aggiungi la soluzione Sites a un programma esistente con Assets (o viceversa).
-   * Rimuovi Sites (o Assets) da un programma esistente sia con Sites che con Assets.
+   * Aggiungi la soluzione Sites a un programma esistente con Assets o viceversa.
+   * Rimuovi Sites o Assets da un programma esistente sia con Sites che con Assets.
    * Aggiungi il secondo diritto inutilizzato alla soluzione a un programma esistente o a un nuovo programma.
 
-* AEM&#39;etichetta Push Update&quot; verrà ora visualizzata sia per le schermate Pipeline Execution che per Activity.
+* **AEM push** Updatelabel verrà ora visualizzato sia per le schermate di Esecuzione pipeline che per Attività.
 
-* Se un ambiente è in ibernazione ma è disponibile anche un aggiornamento AEM, lo stato &quot;Sospeso&quot; avrà la precedenza rispetto a &quot;Aggiorna disponibile&quot;.
+* Se un ambiente è in ibernazione ma è disponibile anche un aggiornamento AEM, lo stato **Sospeso** avrà la precedenza su **Aggiorna disponibile**.
 
 * Gli utenti possono ora visualizzare i propri ruoli di Cloud Manager selezionando l’opzione &quot;Visualizza ruoli Cloud Manager&quot; dopo aver visualizzato l’icona Profilo utente (in alto a destra) di Unified Shell.
 
-* L&#39;etichetta &quot;Domanda di approvazione&quot; è stata rinominata &quot;Approvazione produzione&quot; per maggiore chiarezza.
+* L&#39;etichetta **Domanda di approvazione** è stata rinominata **Approvazione produzione** per una maggiore chiarezza.
 
-* L’etichetta &quot;Versione&quot; è stata rinominata &quot;Git Tag&quot; nella schermata di esecuzione della pipeline di produzione.
+* L’etichetta **Versione** è stata rinominata **Tag Git** nella schermata di esecuzione della pipeline di produzione.
 
-* Le etichette che definiscono il comportamento quando le metriche importanti non soddisfano la soglia definita sono state rinominate per rispecchiare il loro comportamento effettivo - Annulla immediatamente e Approva immediatamente.
+* Le etichette che definiscono il comportamento quando metriche importanti non soddisfano la soglia definita sono state rinominate per rispecchiare il loro comportamento effettivo: **Annulla immediatamente** e **Approva immediatamente**.
 
 * Gli elenchi di elementi obsoleti di classi e metodi sono stati aggiornati in base alla versione `2021.3.4997.20210303T022849Z-210225` dell’SDK del Cloud Service AEM.
 
-* La pipeline di produzione di Cloud Manager ora include funzionalità di test dell’interfaccia utente personalizzata.
+* La pipeline di produzione di Cloud Manager ora include la funzionalità [Test personalizzati dell’interfaccia utente](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) .
 
 ### Correzioni di bug {#bug-fixes}
 
