@@ -2,9 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
+source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1675'
 ht-degree: 3%
 
 ---
@@ -83,12 +83,13 @@ La prossima versione è prevista per il 08 aprile 2021.
 
 ### Novità {#what-is-new-march}
 
-* I clienti con ambienti con configurazioni di nomi di dominio personalizzati preesistenti per [Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizzeranno un messaggio sulle configurazioni esistenti in precedenza e saranno in grado di self-service tramite l&#39;interfaccia utente. Gli utenti possono ora:
+* I clienti con ambienti con configurazioni di nomi di dominio personalizzati preesistenti per [Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizzeranno un messaggio sulle configurazioni esistenti in precedenza e saranno in grado di self-service tramite l&#39;interfaccia utente.
+
+* Gli utenti con le autorizzazioni necessarie possono ora modificare un programma, consentendo loro di effettuare le seguenti operazioni in modalità self-service:
+
    * Aggiungi la soluzione Sites a un programma esistente con Assets (o viceversa).
    * Rimuovi Sites (o Assets) da un programma esistente sia con Sites che con Assets.
    * Aggiungi il secondo diritto inutilizzato alla soluzione a un programma esistente o a un nuovo programma.
-
-* Gli utenti con le autorizzazioni necessarie possono ora modificare il Programma, consentendo loro di effettuare le seguenti operazioni in modalità self-service.
 
 * **AEM push** Updatelabel verrà ora visualizzato sia per gli schermi  *Pipeline* Execution che per  ** Activityscreens.
 
