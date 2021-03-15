@@ -2,9 +2,9 @@
 title: Verifica dello stato del nome di dominio
 description: Verifica dello stato del nome di dominio
 translation-type: tm+mt
-source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,11 @@ non riuscitaEliminazione del nome di dominio personalizzato non riuscita. È nec
 
 ## Configurazioni CDN preesistenti per Inserire nell&#39;elenco Consentiti IP {#pre-existing-cdn}
 
-I clienti con ambienti che includono configurazioni CDN preesistenti per gli Inserire nell&#39;elenco Consentiti IP (certificati SSL o nomi di dominio personalizzati) visualizzeranno il seguente messaggio nella pagina dei dettagli **Inserire nell&#39;elenco Consentiti IP** e **Ambiente** .
+I clienti con ambienti che includono configurazioni CDN preesistenti per Elenchi consentiti IP, certificati SSL o nomi di dominio personalizzati visualizzeranno il seguente messaggio nella pagina dei dettagli **Elenco consentiti IP** e **Ambiente** .
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
-Per visualizzare e gestire le configurazioni preesistenti, è necessario aggiungerle tramite l’interfaccia utente.
+>[!NOTE]
+>Per visualizzare e gestire le configurazioni preesistenti, è necessario aggiungerle tramite l’interfaccia utente, come illustrato nella figura riportata di seguito.
+
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
