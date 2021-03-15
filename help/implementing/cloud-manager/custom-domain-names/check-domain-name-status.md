@@ -2,9 +2,9 @@
 title: Verifica dello stato del nome di dominio
 description: Verifica dello stato del nome di dominio
 translation-type: tm+mt
-source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
+source-git-commit: 0b04d43c8b5bb28286e616f0bd902c05ec56ec05
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -42,9 +42,9 @@ Eliminazione in corso del nome di dominio personalizzato.
 non riuscitaEliminazione del nome di dominio personalizzato non riuscita. È necessario riprovare. Per ulteriori informazioni, consulta [Eliminazione di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) .
 
 
-## Configurazioni CDN preesistenti per Inserire nell&#39;elenco Consentiti IP {#pre-existing-cdn}
+## Configurazioni CDN preesistenti per Elenchi consentiti IP {#pre-existing-cdn}
 
-I clienti con ambienti che includono configurazioni CDN preesistenti per Elenchi consentiti IP, certificati SSL o nomi di dominio personalizzati visualizzeranno il seguente messaggio nella pagina dei dettagli **Elenco consentiti IP** e **Ambiente** .
+I clienti con ambienti che includono configurazioni CDN preesistenti per Elenchi consentiti IP, certificati SSL o nomi di dominio personalizzati visualizzeranno il seguente messaggio nella pagina dei dettagli **Elenco consentiti IP** e **Ambiente** . Il messaggio visualizzato nell’interfaccia utente scompare dopo la migrazione completa da parte del cliente di tutte le configurazioni di ambiente preesistenti tramite l’interfaccia utente e potrebbero essere necessari 1-2 giorni lavorativi per far scomparire il messaggio.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
