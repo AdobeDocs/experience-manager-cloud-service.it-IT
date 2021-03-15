@@ -2,9 +2,9 @@
 title: Verifica dello stato dell’Elenco consentiti IP
 description: Verifica dello stato dell’Elenco consentiti IP
 translation-type: tm+mt
-source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
+source-git-commit: 0b04d43c8b5bb28286e616f0bd902c05ec56ec05
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -42,9 +42,9 @@ Una volta completata l’operazione di eliminazione, l’Elenco consentiti IP es
    * Lo stato rimarrà Elimina non riuscito finché tutti gli errori non verranno cancellati. L&#39;utente deve selezionare Elimina da **...Menu** all&#39;estrema destra della riga nella tabella per cancellare qualsiasi errore.
    * L&#39;utente non potrà aggiornare l&#39;Elenco consentiti IP quando lo stato non è riuscito.
 
-## Configurazioni CDN preesistenti per Inserire nell&#39;elenco Consentiti IP {#pre-existing-cdn}
+## Configurazioni CDN preesistenti per Elenchi consentiti IP {#pre-existing-cdn}
 
-I clienti con ambienti che includono configurazioni CDN preesistenti per Elenchi consentiti IP, certificati SSL o nomi di dominio personalizzati visualizzeranno il seguente messaggio nella pagina dei dettagli **Elenco consentiti IP** e **Ambiente** .
+I clienti con ambienti che includono configurazioni CDN preesistenti per Elenchi consentiti IP, certificati SSL o nomi di dominio personalizzati visualizzeranno il seguente messaggio nella pagina dei dettagli **Elenco consentiti IP** e **Ambiente** . Il messaggio visualizzato nell’interfaccia utente scompare dopo la migrazione completa da parte del cliente di tutte le configurazioni di ambiente preesistenti tramite l’interfaccia utente e potrebbero essere necessari 1-2 giorni lavorativi per far scomparire il messaggio.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
