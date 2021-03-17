@@ -3,9 +3,9 @@ title: Metadati XMP
 description: Scopri lo standard di metadati XMP (Extensible Metadata Platform) per la gestione dei metadati. Viene utilizzato da AEM come formato standard per la creazione, l'elaborazione e lo scambio di metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
+source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '979'
 ht-degree: 16%
 
 ---
@@ -72,7 +72,10 @@ XMP consente di aggiungere una proprietà `xml:lang` alle proprietà di testo pe
 
 ## Write-back XMP per le rappresentazioni {#xmp-writeback-to-renditions}
 
-Questa funzione di XMP write-back in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati alle rappresentazioni della risorsa originale. Quando modifichi i metadati di una risorsa da [!DNL Assets] o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo della risorsa nell’archivio. Tuttavia, [!DNL Assets] non propaga automaticamente eventuali modifiche ai metadati delle rappresentazioni di una risorsa. La funzione di XMP write-back consente di propagare le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa. Gli aggiornamenti vengono memorizzati nel nodo di metadati nella gerarchia delle risorse. Questa funzione incorpora anche gli aggiornamenti nei file binari delle rappresentazioni. La funzione riscrive solo le proprietà dei metadati che utilizzano uno spazio dei nomi `jcr`.
+Questa funzione di XMP write-back in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati alle rappresentazioni della risorsa originale.
+Quando modifichi i metadati di una risorsa dall’interno di Assets o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo di metadati nella gerarchia delle risorse.
+
+La funzione di XMP write-back consente di propagare le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa. La funzione riscrive solo le proprietà dei metadati che utilizzano lo spazio dei nomi `jcr`, ovvero viene riscritta una proprietà denominata `dc:title` ma non una proprietà denominata `mytitle`.
 
 Ad esempio, considera uno scenario in cui modifichi la proprietà [!UICONTROL Title] della risorsa denominata `Classic Leather` in `Nylon`.
 
