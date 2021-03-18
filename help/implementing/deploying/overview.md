@@ -2,9 +2,9 @@
 title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3246'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ Dopo il passaggio alla nuova versione dell&#39;applicazione:
    * Configurazione in base al contesto (qualsiasi cosa sotto `/conf`) (aggiungere, modificare, rimuovere)
    * Script (i pacchetti possono attivare gli hook di installazione in varie fasi del processo di installazione del pacchetto installazione
 
-È possibile limitare l’installazione di contenuti modificabili all’authoring o alla pubblicazione incorporando i pacchetti in una cartella install.author o install.publish in `/apps`. Dettagli disponibili nella [documentazione AEM](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) sulla ristrutturazione consigliata del progetto.
+È possibile limitare l’installazione di contenuti modificabili all’authoring o alla pubblicazione incorporando i pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per riflettere questa separazione è stata effettuata in AEM 6.5 e i dettagli sulla ristrutturazione del progetto raccomandata si trovano nella documentazione [AEM 6.5.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >I pacchetti di contenuto vengono distribuiti in tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Questa limitazione è in vigore per garantire la possibilità di eseguire un test di esecuzione automatica. I contenuti specifici di un ambiente richiedono l’installazione manuale tramite Gestione pacchetti.
@@ -111,7 +111,7 @@ Inoltre, non esiste un meccanismo per ripristinare le modifiche al pacchetto di 
 
 Eventuali pacchetti di terze parti inclusi devono essere convalidati come AEM compatibili con il servizio Cloud Service, altrimenti la loro inclusione provocherà un errore di distribuzione.
 
-Come indicato in precedenza, i clienti con basi di codice esistenti devono conformarsi all&#39;esercizio di ristrutturazione dell&#39;archivio descritto in [AEM documentazione](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html).
+Come indicato in precedenza, i clienti con basi di codice esistenti devono conformarsi all&#39;esercizio di ristrutturazione dell&#39;archivio richiesto dalle modifiche dell&#39;archivio 6.5 descritte nella documentazione [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## Repoinit {#repoinit}
 
