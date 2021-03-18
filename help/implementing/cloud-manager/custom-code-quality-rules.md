@@ -2,9 +2,9 @@
 title: Regole per la qualità del codice personalizzato - Cloud Services
 description: Regole per la qualità del codice personalizzato - Cloud Services
 translation-type: tm+mt
-source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3299'
+source-wordcount: '3278'
 ht-degree: 4%
 
 ---
@@ -747,7 +747,7 @@ I clienti che utilizzano la replica inversa devono contattare l&#39;Adobe per le
 
 **Da**: Versione 2021.2.0
 
-AEM librerie client possono contenere risorse statiche come immagini e font. Come descritto in [Utilizzo di preprocessori](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), quando si utilizzano librerie client proxy, queste risorse statiche devono essere contenute in una cartella figlio denominata resources per poter essere effettivamente referenziate sulle istanze di pubblicazione.
+AEM librerie client possono contenere risorse statiche come immagini e font. Come descritto in [Utilizzo di preprocessori](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), quando si utilizzano librerie client proxy, queste risorse statiche devono essere contenute in una cartella figlio denominata resources per poter essere effettivamente referenziate sulle istanze di pubblicazione.
 
 #### Codice non conforme {#non-compliant-proxy-enabled}
 
@@ -793,7 +793,7 @@ Con il passaggio ai micro-servizi Asset per l’elaborazione delle risorse AEM C
 
 **Da**: Versione 2021.2.0
 
-Anche se l’utilizzo di modelli statici è sempre stato molto comune nei progetti AEM, i modelli modificabili sono altamente consigliati in quanto offrono la massima flessibilità e supportano funzionalità aggiuntive non presenti nei modelli statici. Ulteriori informazioni sono disponibili su [Modelli di pagina - Modificabili](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). La migrazione dai modelli statici a quelli modificabili può essere in gran parte automatizzata tramite gli [AEM strumenti di modernizzazione](https://opensource.adobe.com/aem-modernize-tools/).
+Anche se l’utilizzo di modelli statici è sempre stato molto comune nei progetti AEM, i modelli modificabili sono altamente consigliati in quanto offrono la massima flessibilità e supportano funzionalità aggiuntive non presenti nei modelli statici. Ulteriori informazioni sono disponibili su [Modelli di pagina.](/help/implementing/developing/components/templates.md) La migrazione da modelli statici a modificabili può essere in gran parte automatizzata tramite gli  [AEM strumenti](https://opensource.adobe.com/aem-modernize-tools/) di modernizzazione.
 
 ### OakPAL - L&#39;utilizzo di componenti di base legacy è scoraggiato {#oakpal-usage-legacy}
 
