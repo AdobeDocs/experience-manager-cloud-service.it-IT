@@ -1,19 +1,20 @@
 ---
 title: Configurazione di Dynamic Media
-description: Per configurare Dynamic Media, dovete configurare Dynamic Media e gestire i predefiniti per immagini e visualizzatori.
+description: Per configurare Dynamic Media, devi configurare Dynamic Media e gestire i predefiniti per immagini e visualizzatori.
 contentOwner: Rick Brough
+topic: Administrator
 translation-type: tm+mt
-source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 3%
+source-wordcount: '180'
+ht-degree: 7%
 
 ---
 
 
 # Configurazione di Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Mediaconsente di gestire le risorse distribuendo su richiesta risorse di marketing e merchandising visivi avanzate, ridimensionate automaticamente per essere utilizzate sui siti Web, mobili e social. Utilizzando una serie di risorse primarie, Dynamic Media genera e offre diverse varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media consente di gestire le risorse offrendo risorse visive di marketing e merchandising su richiesta, ridimensionate automaticamente per essere utilizzate su siti web, mobili e social. Utilizzando un set di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -25,7 +26,7 @@ ht-degree: 3%
 
 -->
 
-Se state amministrando Dynamic Media, i seguenti argomenti sono di interesse:
+Se stai amministrando Dynamic Media, i seguenti argomenti sono di interesse:
 
 * [Configurazione di Dynamic Media](config-dm.md)
 * [Gestione dei predefiniti per immagini](managing-image-presets.md)
@@ -39,6 +40,6 @@ Vedi anche i seguenti argomenti:
 
 >[!NOTE]
 >
->**Se state effettuando l&#39;aggiornamento:**
+>**Per l&#39;aggiornamento:**
 >
->* Dopo aver  l’Experience Manager e l’esecuzione, tutte le risorse caricate dispongono dell’attivazione automatica di Dynamic Media (a meno che non siano state esplicitamente disattivate dall’amministratore di sistema). Se vi trovate in un’istanza aggiornata di  Experience Manager e non avete mai usato Dynamic Media, è probabile che dobbiate rielaborare le risorse per renderle abilitate per Dynamic Media. Consultate [Rielaborazione delle risorse in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Dopo aver avviato e eseguito l’Experience Manager, tutte le risorse caricate dispongono dell’abilitazione automatica di Dynamic Media (a meno che non sia stata esplicitamente disabilitata dall’amministratore di sistema). Se utilizzi un’istanza aggiornata di Experience Manager e le risorse nuove per Dynamic Media, è probabile che dovrai rielaborare le risorse per renderle abilitate per Dynamic Media. Consulta [Rielaborazione delle risorse in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
