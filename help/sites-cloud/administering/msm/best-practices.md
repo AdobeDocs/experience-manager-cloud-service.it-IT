@@ -1,10 +1,12 @@
 ---
 title: Best practice MSM
-description: Scopri le best practice compilate dai team di progettazione e consulenza Adobe per iniziare a utilizzare AEM Multi Site Manager.
+description: Scopri le best practice compilate dai team di progettazione e consulenza di Adobe per iniziare a utilizzare AEM Multi Site Manager.
+feature: Gestione di più siti
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
@@ -20,7 +22,7 @@ MSM è un framework configurabile per automatizzare la distribuzione dei contenu
 * **Personalizza il più possibile, ma il meno possibile.** Anche se MSM supporta un elevato grado di personalizzazione (ad esempio configurazioni di rollout), in genere la best practice per le prestazioni, l’affidabilità e l’aggiornamento del sito web è quella di ridurre al minimo la personalizzazione.
 * Stabilire un modello **governance** in anticipo e addestrare gli utenti di conseguenza per garantire il successo. Dal punto di vista della governance, una best practice consiste nel **ridurre al minimo l’autorità di cui dispongono i produttori di contenuti locali** per allocare/collegare contenuti ad altri utenti locali e alle rispettive Live Copy. Ciò è dovuto al fatto che le ereditarietà non gestite e incatenate possono aumentare notevolmente la complessità di una struttura MSM e comprometterne le prestazioni e l&#39;affidabilità.
 * Quando esiste un piano per la struttura, i flussi di contenuto, l&#39;automazione e la governance, **prototipo e test completo del sistema** prima di avviare un&#39;implementazione live.
-* Tieni presente che **Adobe Consulting e i principali integratori di sistema** dispongono di una pianificazione approfondita dell’esperienza e dell’implementazione dell’automazione dei contenuti con MSM, in modo che possano aiutarti a iniziare con il tuo progetto MSM e l’intera implementazione.
+* Tieni presente che **Adobe Consulting and Lead System Integrators** dispongono di una pianificazione approfondita dell&#39;esperienza e dell&#39;implementazione dell&#39;automazione dei contenuti con MSM, in modo che possano aiutarti a iniziare con il tuo progetto MSM e l&#39;intera implementazione.
 
 ## Origini Live Copy e configurazioni Blueprint {#live-copy-sources-and-blueprint-configurations}
 
@@ -53,7 +55,7 @@ Per supportare la nidificazione dei componenti in modo che i componenti aggiunti
 
 ## Crea sito {#create-site}
 
-Tieni presente che AEM dispone di due approcci principali per la creazione di Live Copy:
+AEM dispone di due approcci principali per la creazione di Live Copy:
 
 * Quando [crei una Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-page) - Questo può essere considerato come l’approccio più generico, che consente di creare Live Copy da qualsiasi pagina. La struttura del contenuto di una Live Copy corrisponde esattamente alla sorgente.
 
@@ -80,7 +82,7 @@ Quando crei un master lingua, tieni presente quanto segue:
    * MSM consente di annullare l’ereditarietà a livello di pagina e/o componente. Questo aiuta a evitare la sovrascrittura dei contenuti tradotti (da una Live Copy, con contenuti non ancora tradotti da una blueprint) al prossimo rollout.
       * Alcuni connettori di traduzione di terze parti automatizzano questa gestione delle ereditarietà MSM.
       * Per ulteriori informazioni, rivolgersi al provider di servizi di traduzione.
-      * Un approccio alternativo per la creazione e la traduzione di master in lingua è quello di utilizzare copie in lingua insieme al framework di integrazione della traduzione standard di AEM.
+      * Un approccio alternativo per la creazione e la traduzione di master in lingua consiste nell’utilizzare copie in lingua insieme AEM framework di integrazione della traduzione preconfigurato.
 
 Per ulteriori informazioni, consulta [Traduzione di contenuti per siti multilingue](/help/sites-cloud/administering/translation/overview.md) e le [Best practice per la traduzione.](/help/sites-cloud/administering/translation/best-practices.md)
 
