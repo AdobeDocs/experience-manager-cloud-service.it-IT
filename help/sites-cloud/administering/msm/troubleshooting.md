@@ -1,10 +1,12 @@
 ---
 title: Risoluzione dei problemi e domande frequenti relativi a MSM
 description: Scopri come risolvere i problemi più comuni relativi a MSM e ottieni le risposte alle domande più comuni relative a MSM.
+feature: Gestione di più siti
+role: Administrator
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -65,7 +67,7 @@ Per ulteriori informazioni su questo argomento, consulta [questo articolo](best-
 
 ### Come posso rimuovere le autorizzazioni di rollout per un gruppo di autori? {#remove-rollout-permissions}
 
-Non esiste un privilegio **rollout** che può essere impostato o rimosso per le entità AEM (utenti o gruppi).
+Non esiste un privilegio **rollout** che può essere impostato o rimosso per AEM entità (utenti o gruppi).
 
 In alternativa, puoi effettuare le seguenti operazioni:
 
