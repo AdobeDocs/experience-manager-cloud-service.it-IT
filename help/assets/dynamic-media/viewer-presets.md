@@ -1,27 +1,29 @@
 ---
 title: Applicazione dei predefiniti per visualizzatori Dynamic Media
-description: Scoprite come applicare i predefiniti per visualizzatori in Dynamic Media.
+description: Scopri come applicare i predefiniti visualizzatore in Dynamic Media.
+feature: Predefiniti visualizzatore, Visualizzatori
+topic: Professionista
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '221'
 ht-degree: 25%
 
 ---
 
 
-# Applicazione dei predefiniti per visualizzatori Dynamic Media {#applying-viewer-presets}
+# Applicazione dei predefiniti visualizzatore Dynamic Media {#applying-viewer-presets}
 
-Un predefinito per visualizzatori è un insieme di impostazioni che determinano in che modo gli utenti possono visualizzare le risorse multimediali sullo schermo del computer e sui dispositivi mobili. Potete applicare a una risorsa qualsiasi predefinito per visualizzatori creato dall’amministratore.
+Un predefinito per visualizzatori è un insieme di impostazioni che determinano il modo in cui gli utenti visualizzano le risorse multimediali sullo schermo del computer e sui dispositivi mobili. Puoi applicare a una risorsa qualsiasi predefinito per visualizzatori creato dall’amministratore.
 
-Se siete un amministratore e avete l’esigenza di gestire, creare, ordinare ed eliminare i predefiniti per visualizzatori, consultate [Gestione dei predefiniti per visualizzatori](managing-viewer-presets.md).
+Gli amministratori che hanno l’esigenza di gestire, creare, ordinare ed eliminare i predefiniti visualizzatore possono consultare [Gestione dei predefiniti visualizzatore](managing-viewer-presets.md).
 
-Consultate anche [Predefiniti visualizzatore pubblicazione](managing-viewer-presets.md#publishing-viewer-presets).
+Consulta anche [Pubblicazione dei predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
 
-A seconda della modalità di pubblicazione in uso, potrebbe non essere necessario pubblicare i predefiniti per visualizzatori.
-Eventuali problemi con i predefiniti per visualizzatori, consultate [Risoluzione dei problemi relativi ad Dynamic Media](troubleshoot-dm.md#viewers).
+Potrebbe non essere necessario pubblicare i predefiniti visualizzatore a seconda della modalità di pubblicazione in uso.
+Per qualsiasi problema con i predefiniti visualizzatore, consulta [Risoluzione dei problemi Dynamic Media](troubleshoot-dm.md#viewers).
 
-## Applicazione di un predefinito per visualizzatori Dynamic Media a una risorsa {#applying-a-viewer-preset-to-an-asset}
+## Applicazione di un predefinito visualizzatore Dynamic Media a una risorsa {#applying-a-viewer-preset-to-an-asset}
 
 1. Apri la risorsa e tocca **[!UICONTROL Visualizzatori]** nella barra a sinistra.
 
@@ -30,8 +32,8 @@ Eventuali problemi con i predefiniti per visualizzatori, consultate [Risoluzione
    * Dopo aver selezionato un predefinito visualizzatore, vengono visualizzati i pulsanti **[!UICONTROL URL]** e **[!UICONTROL Incorpora]**.
    * Quando selezioni Visualizzatori in **[!UICONTROL Vista dettaglio]** di una risorsa, il sistema mostra numerosi predefiniti visualizzatore. Puoi aumentare il numero di predefiniti visualizzati. Consulta la sezione [Aumento del numero di predefiniti visualizzatore](managing-viewer-presets.md).
 
-1. Selezionate un visualizzatore dal riquadro a sinistra per applicarlo alla risorsa come mostrato nel riquadro a destra. Potete anche [copiare l&#39;URL da condividere](linking-urls-to-yourwebapplication.md) con altri utenti.
+1. Seleziona un visualizzatore dal riquadro a sinistra per applicarlo alla risorsa come mostrato nel riquadro a destra. Puoi anche [copiare l&#39;URL da condividere](linking-urls-to-yourwebapplication.md) con altri utenti.
 
-## Ottenimento degli URL dei predefiniti per visualizzatori {#obtaining-viewer-preset-urls}
+## Ottenimento degli URL predefiniti per visualizzatori {#obtaining-viewer-preset-urls}
 
-Per ottenere gli URL per i predefiniti per visualizzatori, consultate [Collegamento degli URL all’applicazione Web](linking-urls-to-yourwebapplication.md).
+Per ottenere gli URL per i predefiniti per visualizzatori, consulta [Collegamento degli URL all’applicazione Web](linking-urls-to-yourwebapplication.md).
