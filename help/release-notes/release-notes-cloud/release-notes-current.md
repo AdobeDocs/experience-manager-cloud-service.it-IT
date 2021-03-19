@@ -2,9 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: eeb9dfba87a6fa980c2f44b52813e4d3ca8e3e57
+source-git-commit: 93ae24247ae36f44e659211f1e7ab2f0888e4ad6
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1793'
 ht-degree: 3%
 
 ---
@@ -163,6 +163,15 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.2.0 è l’1
 
 ## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
 
+### Data di rilascio {#release-date-ctt}
+
+La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.3.4 è il 19 marzo 2021.
+
+### Correzioni di bug {#bug-fixes-ctt}
+
+* Il CTT saltava il contenuto dalle cartelle con lo stesso nome ma con un trattino nel nome. Questo problema è stato risolto.
+
+
 ### Data di rilascio {#release-date-ctt-march}
 
 La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.3.0 è il 4 marzo 2021.
@@ -177,15 +186,15 @@ La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v
 * Durante la migrazione del contenuto da un percorso specifico, CTT effettuava l’estrazione di risorse non correlate. È stato corretto
 
 
-### Data di rilascio {#release-date-ctt}
+### Data di rilascio {#release-date-ctt-feb}
 
 La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.2.4 è il 10 febbraio 2021.
 
-### Correzioni di bug {#bug-fixes-ctt}
+### Correzioni di bug {#bug-fixes-ctt-feb}
 
 * Quando si mappavano più utenti, alcuni ID IMS di alcuni utenti venivano mappati in modo errato. Questo problema è stato risolto.
 
-### Data di rilascio {#release-date-ctt-feb}
+### Data di rilascio {#release-date-ctt-feb01}
 
 La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.2.2 è il 10 febbraio 2021.
 
