@@ -1,18 +1,20 @@
 ---
 title: Traduzione di contenuti per siti multilingue
 description: Ottieni una panoramica delle modalità di traduzione dei contenuti per siti multilingue.
+feature: Copia lingua
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 0%
+source-wordcount: '257'
+ht-degree: 1%
 
 ---
 
 
 # Traduzione di contenuti per siti multilingue {#translating-content-for-multilingual-sites}
 
-Automatizza la traduzione di contenuti e risorse della pagina per creare e gestire siti web multilingue. Per automatizzare i flussi di lavoro di traduzione, è possibile integrare fornitori di servizi di traduzione con AEM e creare progetti per la traduzione di contenuti in più lingue. AEM supporta flussi di lavoro per la traduzione umana e automatica.
+Automatizza la traduzione di contenuti e risorse della pagina per creare e gestire siti web multilingue. Per automatizzare i flussi di lavoro di traduzione, è possibile integrare fornitori di servizi di traduzione con AEM e creare progetti per la traduzione dei contenuti in più lingue. AEM supporta flussi di lavoro di traduzione umana e automatica.
 
 * **Traduzione umana:** il contenuto viene inviato al tuo fornitore di traduzioni e tradotto da traduttori professionisti. Una volta completato, il contenuto tradotto viene restituito e importato in AEM. Quando il provider di traduzione è integrato con AEM, il contenuto viene inviato automaticamente tra AEM e il provider di traduzione.
 * **Traduzione automatica:** il servizio di traduzione automatica traduce immediatamente il tuo contenuto.
@@ -26,7 +28,7 @@ La conversione del contenuto prevede i seguenti passaggi:
 1. [Crea progetti di traduzione per ](managing-projects.md) raccogliere i contenuti da tradurre e preparare il processo di traduzione.
 1. Utilizza i progetti di traduzione per [gestire il processo di traduzione dei contenuti](managing-projects.md).
 
-Se il provider di servizi di traduzione non fornisce un connettore per l’integrazione con AEM, AEM supporta l’estrazione e il reinserimento manuali di contenuti di traduzione in formato XML.
+Se il provider di servizi di traduzione non fornisce un connettore per l’integrazione con AEM, AEM supporta l’estrazione e il reinserimento manuali del contenuto di traduzione in formato XML.
 
 >[!NOTE]
 >
