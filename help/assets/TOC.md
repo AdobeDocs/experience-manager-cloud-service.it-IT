@@ -4,18 +4,19 @@ user-guide-title: Guida di Assets as a Cloud Service
 breadcrumb-title: Guida di Assets
 user-guide-description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 68%
+ht-degree: 71%
 
 ---
 
 
 # [!DNL Assets] Guida  {#assets}
 
-+ [[!DNL Assets] come [!DNL Cloud Service]](/help/assets/home.md)
++ [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Panoramica e novità](overview.md)
 + [Modifiche di rilievo apportate  [!DNL Assets] a [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] architettura](architecture.md)
@@ -32,7 +33,7 @@ ht-degree: 68%
    + [Tag avanzati per immagini](smart-tags.md)
    + [Assegnare tag avanzati alle risorse video](smart-tags-video-assets.md)
    + [Organizzare le risorse](organize-assets.md)
-   + [ [!DNL Adobe Stock] Utilizzare le risorse in AEM](aem-assets-adobe-stock.md)
+   + [ [!DNL Adobe Stock] Utilizzo delle risorse in AEM](aem-assets-adobe-stock.md)
    + [Gestire le raccolte](manage-collections.md)
    + [Panoramica sui metadati](manage-metadata.md)
    + [Integra con [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -55,9 +56,9 @@ ht-degree: 68%
    + [Facet di ricerca](search-facets.md)
    + [API HTTP di Assets](mac-api-assets.md)
    + [Supporto dei frammenti di contenuto nell’API HTTP di Assets](content-fragments/assets-api-content-fragments.md)
-   + [API GraphQL di AEM per frammenti di contenuto](content-fragments/graphql-api-content-fragments.md)
-   + [Autenticazione per query AEM GraphQL remote su frammenti di contenuto](content-fragments/graphql-authentication-content-fragments.md)
-   + [API AEM GraphQL con frammenti di contenuto - Contenuto di esempio e query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [API GraphQL AEM per frammenti di contenuto](content-fragments/graphql-api-content-fragments.md)
+   + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](content-fragments/graphql-authentication-content-fragments.md)
+   + [AEM API GraphQL con frammenti di contenuto - Contenuto di esempio e query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Risorse collegate](use-assets-across-connected-assets-instances.md)
    + [Rapporti sulle risorse](asset-reports.md)
    + [Metadati a cascata](cascading-metadata.md)
@@ -125,5 +126,5 @@ ht-degree: 68%
    + [Utilizzo della pubblicazione selettiva in Dynamic Media](dynamic-media/selective-publishing.md)
    + [Utilizzo dei selettori](dynamic-media/working-with-selectors.md)
    + [Domande frequenti sulla distribuzione dei contenuti HTTP2](dynamic-media/http2faq.md)
-   + [Fine del ciclo di vita dei visualizzatori Flash](dynamic-media/flash-viewers-eol.md)
+   + [Fine del ciclo di vita dei visualizzatori di Flash](dynamic-media/flash-viewers-eol.md)
    + [Fine del ciclo di vita dei visualizzatori DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
