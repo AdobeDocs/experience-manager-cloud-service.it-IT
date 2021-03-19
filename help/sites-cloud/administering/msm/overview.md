@@ -1,10 +1,12 @@
 ---
 title: Riutilizzo dei contenuti - Multi-Site Manager e Live Copy
-description: Ottieni un’introduzione al riutilizzo dei contenuti con le potenti Live Copy di AEM e le funzioni di Multi Site Manager .
+description: Ottieni un’introduzione al riutilizzo dei contenuti con AEM potenti Live Copy e le funzioni di Multi Site Manager .
+feature: Gestione di più siti
+role: Administrator
 translation-type: tm+mt
-source-git-commit: b22d972adeaec6af4f15e11fa3359758a1ed77c3
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2686'
 ht-degree: 1%
 
 ---
@@ -140,7 +142,7 @@ MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse op
 
 >[!NOTE]
 >
->Aspetti della funzionalità MSM sono utilizzati in diverse altre funzioni di AEM, come i lanci. In questi casi la Live Copy è gestita da tale funzione.
+>Aspetti della funzionalità MSM sono utilizzati in diverse altre funzioni AEM come Launch. In questi casi la Live Copy è gestita da tale funzione.
 
 ### Termini utilizzati {#terms-used}
 
@@ -215,7 +217,7 @@ Le modifiche possono essere [sincronizzate](creating-live-copies.md#synchronizin
 
 #### Live Copy con pagine non Live Copy {#live-copy-with-non-live-copy-pages}
 
-Quando crei una Live Copy in AEM, puoi vedere e navigare attraverso il ramo Live Copy e utilizzare le normali funzionalità AEM sul ramo Live Copy. Questo significa che puoi creare (o un processo) nuove risorse (pagine e/o paragrafi) all’interno della Live Copy. Ad esempio, un prodotto per una determinata regione o paese.
+Quando crei una Live Copy in AEM, puoi visualizzare e navigare attraverso il ramo Live Copy e utilizzare le normali funzionalità AEM sul ramo Live Copy. Questo significa che puoi creare (o un processo) nuove risorse (pagine e/o paragrafi) all’interno della Live Copy. Ad esempio, un prodotto per una determinata regione o paese.
 
 * Tali risorse non hanno alcuna relazione diretta con le pagine sorgente/blueprint e non sono sincronizzate.
 * Si possono verificare scenari che MSM gestisce come casi speciali. Ad esempio, quando crei una pagina con la stessa posizione e lo stesso nome nei rami sorgente/blueprint e Live Copy. Per tali situazioni, consulta [Conflitti di rollout MSM](rollout-conflicts.md) per ulteriori informazioni.
@@ -235,7 +237,7 @@ Ad esempio, i collegamenti che puntano dal secondo al primo modello verranno ris
 
 >[!NOTE]
 >
->Se sposti o rinomini una pagina all’interno del ramo Live Copy, questa verrà trattata come una Live Copy nidificata per consentire ad AEM di tenere traccia delle relazioni.
+>Se sposti o rinomini una pagina all’interno del ramo Live Copy, questa verrà trattata come una Live Copy nidificata per consentire AEM tenere traccia delle relazioni.
 
 #### Live Copy sovrapposte {#stacked-live-copies}
 
@@ -286,7 +288,7 @@ Le configurazioni di rollout possono essere riutilizzate, in modo che più di un
 
 ### Conflitti di rollout {#rollout-conflicts}
 
-I rollout possono diventare complicati, specialmente quando gli autori modificano il contenuto sia nella sorgente che nella Live Copy. È quindi utile sapere in che modo AEM gestisce eventuali conflitti [che possono verificarsi durante il rollout.](rollout-conflicts.md)
+I rollout possono diventare complicati, specialmente quando gli autori modificano il contenuto sia nella sorgente che nella Live Copy. È quindi utile sapere come AEM gestire eventuali conflitti che potrebbero verificarsi durante il rollout.](rollout-conflicts.md)[
 
 ### Sospensione e annullamento dell&#39;ereditarietà e della sincronizzazione {#suspending-and-cancelling-inheritance-and-synchronization}
 
