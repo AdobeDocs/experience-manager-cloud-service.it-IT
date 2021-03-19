@@ -1,10 +1,12 @@
 ---
 title: Attivazione della protezione hotlinking in Dynamic Media
-description: Informazioni su come attivare la protezione tramite hotlink in Dynamic Media.
+description: Scopri come attivare la protezione hotlink in Dynamic Media.
+feature: Gestione risorse
+topic: Professionista
 translation-type: tm+mt
-source-git-commit: 5c221505c6a56411b17b52c70ce941258993bfb3
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '194'
 ht-degree: 6%
 
 ---
@@ -12,10 +14,10 @@ ht-degree: 6%
 
 # Attivazione della protezione hotlinking in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
-Il collegamento a caldo si verifica quando un sito Web di terze parti utilizza il codice HTML per visualizzare un’immagine dal sito Web. Usano la larghezza di banda ogni volta che l&#39;immagine viene richiesta, perché il browser del visitatore vi accede direttamente dal server. Hotlink *protected* è un metodo per impedire ad altri siti Web di collegarsi direttamente a immagini, CSS o JavaScript nelle pagine Web. Questo tipo di schermo consente di ridurre l&#39;utilizzo non necessario della larghezza di banda nell&#39;account Dynamic Media.
+Il collegamento a caldo si verifica quando un sito web di terze parti utilizza codice HTML per visualizzare un’immagine dal sito web. Utilizzano la larghezza di banda ogni volta che l&#39;immagine viene richiesta perché il browser del visitatore vi accede direttamente dal server. Hotlink *protection* è un metodo per impedire ad altri siti web di collegarsi direttamente a immagini, CSS o JavaScript sulle tue pagine web. Questo tipo di schermo aiuta a ridurre l&#39;utilizzo di larghezza di banda inutile sotto il tuo account Dynamic Media.
 
-[ Customer ](https://helpx.adobe.com/support.html) Carecce Adobe può configurare un filtro di riferimento a livello CDN. In questo modo, i contenuti Dynamic Media vengono distribuiti solo ai siti Web inclusi nell&#39;elenco dei siti Web consentiti per il dominio.
+[Adobe Customer ](https://helpx.adobe.com/support.html) Carecer può configurare un filtro referrer a livello CDN. In questo modo il contenuto Dynamic Media viene distribuito solo ai siti web inclusi nell’elenco dei siti web consentiti per il dominio.
 
 >[!NOTE]
 >
->Questa funzione richiede l’utilizzo del CDN fornito con Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione. Per attivare la protezione tramite collegamento caldo, un amministratore deve creare un ticket di assistenza per richiedere la modifica alla configurazione dell’account Dynamic Media. Non sono previsti costi aggiuntivi per l&#39;attivazione della protezione tramite collegamento a caldo.
+>Questa funzione richiede l’utilizzo della rete CDN preconfigurata fornita con Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione. Per attivare la protezione hot link, un amministratore deve creare un ticket di supporto per richiedere la modifica della configurazione al tuo account Dynamic Media. Non vi sono costi aggiuntivi per attivare la protezione hot link.
