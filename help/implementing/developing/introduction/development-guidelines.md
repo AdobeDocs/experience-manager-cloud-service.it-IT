@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Linee guida per lo sviluppo per AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2283'
 ht-degree: 1%
 
 ---
@@ -128,7 +128,7 @@ Le immagini di thread sugli ambienti Cloud vengono raccolte su base continuativa
 
 Per lo sviluppo locale, gli sviluppatori possono accedere completamente ad CRXDE Lite (`/crx/de`) e alla AEM Web Console (`/system/console`).
 
-Sullo sviluppo locale (utilizzando l’avvio rapido per il cloud), `/apps` e `/libs` possono essere scritti direttamente, in modo diverso dagli ambienti Cloud in cui tali cartelle di livello superiore non sono modificabili.
+Sullo sviluppo locale (utilizzando l&#39;SDK), è possibile scrivere direttamente `/apps` e `/libs`, diversi dagli ambienti Cloud in cui tali cartelle di livello superiore non sono modificabili.
 
 ### AEM come strumenti di sviluppo del Cloud Service {#aem-as-a-cloud-service-development-tools}
 
