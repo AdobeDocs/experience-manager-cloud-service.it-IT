@@ -3,11 +3,14 @@ sub-product: Panoramica di AEM as a Cloud Service
 user-guide-title: Panoramica di AEM as a Cloud Service
 breadcrumb-title: Guida panoramica
 user-guide-description: Panoramica del servizio Experience Manager as a Cloud Service, con un’introduzione, terminologia e altro ancora.
+feature-set: Experience Manager
+feature: Informazioni sulla versione
+role: Leader, Architetto, Sviluppatore, Architetto dati, Ingegnere dati, Amministratore, Tecnico aziendale
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 100%
+source-wordcount: '72'
+ht-degree: 86%
 
 ---
 
