@@ -1,48 +1,50 @@
 ---
 title: Pubblicazione delle risorse Dynamic Media
-description: Scoprite come pubblicare le risorse Dynamic Media.
+description: Scopri come pubblicare risorse Dynamic Media.
 contentOwner: Rick Brough
+feature: Gestione risorse
+topic: Professionista
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 3%
+source-wordcount: '473'
+ht-degree: 5%
 
 ---
 
 
 # Pubblicazione delle risorse Dynamic Media {#publishing-dynamic-media-assets}
 
-Per pubblicare le risorse Dynamic Media, selezionate le risorse già caricate e toccate **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida]**. Dopo la pubblicazione, le risorse Dynamic Media sono disponibili per l’inclusione in una pagina Web mediante un URL o mediante l’incorporazione di codice nella pagina.
+Per pubblicare le risorse Dynamic Media, seleziona le risorse già caricate e tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida]**. Dopo la pubblicazione delle risorse Dynamic Media, sono disponibili per l’inclusione in una pagina web tramite un URL o tramite l’incorporamento di codice nella pagina.
 
-Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. In alternativa, potete pubblicare le risorse in modo selettivo. Vedere [Configurazione di Dynamic Media.](config-dm.md) Oppure, potete pubblicare selettivamente le risorse su Dynamic Media o AEM, escludendovi vicendevolmente, utilizzando  **** Pubblicazione selettiva a livello di cartella. Consultate [Utilizzo della pubblicazione selettiva in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)
+Puoi anche pubblicare istantaneamente le risorse caricate senza alcun intervento da parte dell’utente. In alternativa, puoi pubblicare selettivamente tali risorse. Consulta [Configurazione di Dynamic Media.](config-dm.md) In alternativa, puoi pubblicare selettivamente le risorse in Dynamic Media o AEM, reciprocamente esclusive, utilizzando  **[!UICONTROL Pubblicazione selettiva]** a livello di cartella. Consulta [Utilizzo della pubblicazione selettiva in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)
 
-Nella **[!UICONTROL vista a schede]**, un&#39;icona a forma di globo viene visualizzata direttamente sotto il nome di una risorsa e a sinistra della data e dell&#39;ora per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
+Nella **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa viene visualizzata una piccola icona a forma di globo, a sinistra della data e dell’ora per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
 
 >[!NOTE]
 >
->Se una risorsa è già pubblicata, usate AEM per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, è &quot;perduta&quot; in AEM e non può essere annullata la pubblicazione. Di conseguenza, è consigliabile annullare la pubblicazione delle risorse prima di spostarle in un’altra cartella.
+>Se una risorsa è già stata pubblicata, utilizza AEM per spostarla in un’altra cartella e ripubblicarla dalla nuova posizione, la posizione originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, è &quot;persa&quot; in AEM e non può essere annullata. Pertanto, come best practice, annulla la pubblicazione delle risorse prima di spostarle in un’altra cartella.
 
-Se intendete pubblicare le risorse video subito dopo la codifica, accertatevi che la codifica sia stata completata. Quando i video vengono ancora codificati, il sistema segnala che è in corso un flusso di lavoro di elaborazione video. Al termine della codifica video, dovreste essere in grado di visualizzare in anteprima le rappresentazioni video. A questo punto, è sicuro pubblicare i video senza che si verifichino errori di pubblicazione.
+Se intendi pubblicare le risorse video subito dopo averle codificate, accertati che la codifica sia completa. Quando i video vengono ancora codificati, il sistema ti informa che è in corso un flusso di lavoro di elaborazione video. Al termine della codifica video, dovresti essere in grado di visualizzare in anteprima le rappresentazioni video. A questo punto, è sicuro per te pubblicare i video senza che si verifichino errori di pubblicazione.
 
 Vedere anche [Collegamento di URL all&#39;applicazione Web.](linking-urls-to-yourwebapplication.md)
 
-Consultate anche [Incorporamento del visualizzatore video o di immagini Dynamic Media in una pagina Web.](embed-code.md)
+Consulta anche [Incorporare il visualizzatore video o immagine Dynamic Media in una pagina web.](embed-code.md)
 
 >[!NOTE]
 >
->* Per usare l’URL, le risorse devono essere pubblicate. Se le risorse non vengono pubblicate, non sarà possibile copiare e incollare l’URL in un browser Web.
->* I predefiniti per immagini e per visualizzatori devono essere attivati e pubblicati per la distribuzione live.
+>* Per utilizzare l’URL, le risorse devono essere pubblicate. Se le risorse non vengono pubblicate, non sarà possibile copiare e incollare l’URL in un browser web.
+>* I predefiniti per immagini e visualizzatori devono essere attivati e pubblicati per la distribuzione in diretta.
 
 >
 
 
 
-Per informazioni dettagliate sulla pubblicazione di un set o di una risorsa, consultate [Pubblicazione delle risorse.](/help/assets/manage-digital-assets.md)
+Per informazioni dettagliate sulla pubblicazione di un set o di una risorsa, consulta [Pubblicazione di risorse.](/help/assets/manage-digital-assets.md)
 
 ## Distribuzione HTTP/2 di risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) via HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
+AEM ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) su HTTP/2. In altre parole, è disponibile un URL o un codice di incorporamento pubblicato per l’immagine o il video da integrare con qualsiasi applicazione che accetta una risorsa in hosting. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di consegna migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
 
-Per ulteriori informazioni, vedere [Distribuzione HTTP/2 del contenuto alle domande frequenti](/help/assets/dynamic-media/http2faq.md).
+Per ulteriori informazioni, consulta [Distribuzione HTTP/2 dei contenuti con domande frequenti](/help/assets/dynamic-media/http2faq.md) .
 <!--this md file used to reside under sites-administering-->
