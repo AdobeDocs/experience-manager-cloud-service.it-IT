@@ -1,10 +1,12 @@
 ---
 title: Set di file multimediali diversi
 description: Scopri come utilizzare i set di file multimediali diversi in Dynamic Media.
+feature: Set di file multimediali diversi
+topic: Professionista
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1469'
 ht-degree: 25%
 
 ---
@@ -54,7 +56,7 @@ Per iniziare rapidamente a usare i set di file multimediali diversi, effettua le
 
 1. [Collega gli URL all’](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) applicazione Web o  [incorpora il visualizzatore](/help/assets/dynamic-media/embed-code.md) video o immagini.
 
-   Risorse Adobe Experience Manager crea chiamate URL per set di file multimediali diversi e li attiva dopo la pubblicazione dei set di file multimediali diversi. Puoi copiare questi URL quando visualizzi l’anteprima delle risorse. In alternativa è possibile incorporarli sul sito Web.
+   Adobe Experience Manager Assets crea chiamate URL per set di file multimediali diversi e li attiva dopo la pubblicazione dei set di file multimediali diversi. Puoi copiare questi URL quando visualizzi l’anteprima delle risorse. In alternativa è possibile incorporarli sul sito Web.
 
    Seleziona il set di file multimediali diversi, quindi seleziona **[!UICONTROL Visualizzatori]** dal menu a discesa della barra a sinistra.
 
@@ -90,7 +92,7 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 
    >[!NOTE]
    >
-   >Quando crei il set di file multimediali diversi, puoi modificare la miniatura del set di file multimediali diversi o consentire a Experience Manager di selezionarla automaticamente in base alle risorse nel set di file multimediali diversi. Per selezionare una miniatura, fai clic su **[!UICONTROL Cambia miniatura]** e seleziona una qualsiasi immagine (puoi passare ad altre cartelle per trovare anche le immagini). Se hai selezionato una miniatura e vuoi che Experience Manager ne generi una dal set di file multimediali diversi, seleziona **[!UICONTROL Passa alla miniatura automatica]**.
+   >Quando crei il set di file multimediali diversi, puoi modificare la miniatura del set di file multimediali diversi o consentire ad Experience Manager di selezionarla automaticamente in base alle risorse nel set di file multimediali diversi. Per selezionare una miniatura, fai clic su **[!UICONTROL Cambia miniatura]** e seleziona una qualsiasi immagine (puoi passare ad altre cartelle per trovare anche le immagini). Se hai selezionato una miniatura e vuoi che l&#39;Experience Manager ne generi una dal set di file multimediali diversi, seleziona **[!UICONTROL Passa alla miniatura automatica]**.
 
 1. Per selezionare le risorse da includere nel set di file multimediali diversi, tocca il selettore delle risorse. Selezionali e fai clic su **[!UICONTROL Seleziona]**.
 
@@ -154,7 +156,7 @@ Puoi eseguire varie attività di modifica alle risorse in Set di file multimedia
 
    >[!NOTE]
    >
-   >* Per modificare le risorse in un set di file multimediali diversi, passa a Set di file multimediali diversi. Tocca (non selezionare) il set per aprirlo nella pagina Anteprima set di Experience Manager. Nella barra a sinistra, fai clic sul cursore verso il basso per aprire l’elenco a discesa, quindi tocca **[!UICONTROL Imposta membri]**. Nella pagina Membri set , passa il puntatore del mouse su una risorsa, quindi tocca **[!UICONTROL Modifica]** (icona a forma di matita) per aprire la pagina di modifica.
+   >* Per modificare le risorse in un set di file multimediali diversi, passa a Set di file multimediali diversi. Tocca (non selezionare) il set per aprirlo nella pagina Anteprima set di Experienci Manager . Nella barra a sinistra, fai clic sul cursore verso il basso per aprire l’elenco a discesa, quindi tocca **[!UICONTROL Imposta membri]**. Nella pagina Membri set , passa il puntatore del mouse su una risorsa, quindi tocca **[!UICONTROL Modifica]** (icona a forma di matita) per aprire la pagina di modifica.
       >
       >
    * Per eliminare un intero set di file multimediali diversi: da qualsiasi modalità di visualizzazione (come Vista a schede o Vista a colonne), vai al set di file multimediali diversi. Passa il puntatore del mouse sul set, quindi tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Premere **[!UICONTROL Backspace]** sulla tastiera oppure toccare **[!UICONTROL Altro]** (riga di tre punti), quindi toccare **[!UICONTROL Elimina]**.
