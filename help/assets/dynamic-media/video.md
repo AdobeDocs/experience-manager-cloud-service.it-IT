@@ -1,10 +1,12 @@
 ---
 title: Video
 description: Scopri come lavorare con i video in Dynamic Media.
+feature: Profili video
+topic: Professionista
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '9537'
+source-wordcount: '9541'
 ht-degree: 9%
 
 ---
@@ -402,7 +404,7 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
 
 | Tipo video | Larghezza x altezza | Rapporto larghezza | Rapporto altezza |
 |--- |--- |--- |--- |
-| Origine | 1920x1080 | 1 | 3 |
+| Origine | 1920x1080 | 1 | 1 |
 | Codificato | 960 x 540 | 2 | 2 |
 | Codificato | 640 x 360 | 3 | 1 |
 | Codificato | 480 x 270 | 4 | 4 |
@@ -1081,7 +1083,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
    >[!NOTE]
    Per il supporto globale dei sottotitoli video in più lingue, tieni presente che lo standard WebVTT richiede la creazione di file .vtt separati e di chiamate per ogni lingua che desideri supportare.
 
-   In genere, è consigliabile denominare il file VTT della didascalia con lo stesso nome del file video e aggiungerlo con le impostazioni internazionali della lingua, ad esempio -EN, -FR, -DE e così via. In questo modo è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti web esistente.
+   In genere, è consigliabile denominare il file VTT della didascalia con lo stesso nome del file video e aggiungerlo con le impostazioni internazionali della lingua, ad esempio -EN, o -FR, o -DE e così via. In questo modo è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti web esistente.
 
 1. In AEM, carica il file della didascalia WebVTT in DAM.
 1. Passa alla risorsa video *pubblicata* da associare al file di didascalia caricato.
