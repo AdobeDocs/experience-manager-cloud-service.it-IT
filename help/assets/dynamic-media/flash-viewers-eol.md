@@ -1,10 +1,11 @@
 ---
 title: Avviso sulla fine del ciclo di vita dei visualizzatori Flash
-description: A partire dal 31 gennaio 2017, il supporto per la piattaforma di visualizzatori di Flash è ufficialmente terminato.
+description: Dal 31 gennaio 2017, il supporto per la piattaforma di visualizzatori di Flash è ufficialmente terminato.
+topic: Professionista
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '47'
+source-wordcount: '49'
 ht-degree: 8%
 
 ---
@@ -12,6 +13,6 @@ ht-degree: 8%
 
 # Fine del ciclo di vita dei visualizzatori di Flash {#flash-viewers-end-of-life-notice}
 
-A partire dal 31 gennaio 2017, il supporto per la piattaforma di visualizzatori di Flash è ufficialmente terminato.
+Dal 31 gennaio 2017, il supporto per la piattaforma di visualizzatori di Flash è ufficialmente terminato.
 
-Per gli ultimi visualizzatori supportati, consultate la [Guida di riferimento dei visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Per gli ultimi visualizzatori supportati, consulta la [Guida di riferimento visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) .
