@@ -1,44 +1,46 @@
 ---
-title: Procedure ottimali per l’organizzazione delle risorse digitali per l’utilizzo dei profili immagine o video di Dynamic Media
-description: Suggerimenti e procedure ottimali per denominare, organizzare e gestire i file di risorse video e immagini Dynamic Media.
+title: Best practice per organizzare le risorse digitali per l’utilizzo dei profili immagine o video di Dynamic Media
+description: '"Suggerimenti e best practice per la denominazione, l’organizzazione e la gestione dei file di immagini e delle risorse video di Dynamic Media."'
 contentOwner: Rick Brough
+feature: Gestione Delle Risorse, Profili Immagine, Profili Video
+topic: Professionista
 translation-type: tm+mt
-source-git-commit: a64a7274f0037789be1a5e2f7427aba551f14ed7
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
 
-# Procedure ottimali per l’organizzazione delle risorse digitali per l’utilizzo dei profili immagine o video{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
+# Best practice per organizzare le risorse digitali per l’utilizzo dei profili immagine o video{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-Un concetto importante per l’utilizzo dei profili immagine o video di Dynamic Media è che vengono assegnati alle cartelle. All’interno di un profilo sono disponibili le impostazioni per un’immagine o un video. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Di conseguenza, il modo in cui denominate file e cartelle, disponete sottocartelle e gestite i file all’interno di tali cartelle ha effetto sul modo in cui tali risorse vengono elaborate in base al profilo.
+Un concetto importante per l&#39;utilizzo dei profili immagine o video di Dynamic Media è che vengono assegnati alle cartelle. All’interno di un profilo sono riportate le impostazioni per un’immagine o un video. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Pertanto, il modo in cui denomini file e cartelle, disponi sottocartelle e gestisci i file all’interno di queste cartelle ha un impatto sul modo in cui tali risorse vengono elaborate dal profilo.
 
-Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate, oltre a buone pratiche in materia di metadati, potete sfruttare al meglio la raccolta di risorse digitali e assicurarvi che i file corretti vengano elaborati dal profilo corretto.
+Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appropriate, insieme a buone pratiche in materia di metadati, puoi sfruttare al massimo la tua raccolta di risorse digitali e garantire che i file giusti vengano elaborati dal profilo giusto.
 
-Consultate [Il profilo immagine e i profili video di Dynamic Media](about-image-video-profiles.md).
+Consulta [Informazioni sul profilo immagine e sui profili video di Dynamic Media](about-image-video-profiles.md).
 
-Di seguito sono riportati consigli per l’organizzazione dei file di risorse digitali.
+Di seguito sono riportati alcuni suggerimenti sulle best practice per organizzare i file di risorse digitali.
 
-* Organizzate i file in base ai metadati aggiunti al posto delle cartelle in cui risiedono. A questo scopo, potete aggiungere profili di metadati.
+* Organizza i file in base ai metadati aggiunti al loro interno anziché alle cartelle in cui risiedono. Puoi seguire questa procedura aggiungendo profili di metadati.
 
    * Vedere [Profili metadati.](/help/assets/metadata-profiles.md)
-   * Consultate [Metadati per Digital Asset Management](/help/assets/manage-metadata.md).
+   * Consulta [Metadati per Digital Asset Management](/help/assets/manage-metadata.md).
 
-* In genere, la raccolta di risorse digitali è in continuo aumento. Pertanto, è importante (in precedenza) formalizzare l’uso dei metadati, la struttura delle cartelle e la denominazione dei file tra tutte le risorse caricate. La standardizzazione di questi elementi assicura che, con l&#39;aumento del numero di risorse digitali, sia possibile applicare profili di elaborazione alle cartelle con maggiore precisione e coerenza.
-* Utilizzate le cartelle solo per imporre una struttura di memorizzazione coerente alle risorse digitali. Ad esempio, le strutture di cartelle che consentono di definire meglio i profili da assegnare possono includere quanto segue:
+* Di solito, la tua raccolta di risorse digitali cresce sempre di più. Pertanto, è importante, in precedenza, formalizzare l’uso dei metadati, la struttura delle cartelle e la denominazione dei file tra tutte le risorse caricate. La standardizzazione su questi elementi assicura che, con l’aumento del pool di risorse digitali, sia possibile applicare profili di elaborazione alle cartelle con maggiore precisione e coerenza.
+* Utilizza solo le cartelle per imporre una struttura di archiviazione coerente per le risorse digitali. Ad esempio, le strutture di cartelle che consentono di definire meglio i profili da assegnare possono includere i seguenti elementi:
 
-   * **Cartelle**  di sviluppo - contiene le risorse digitali su cui state lavorando.
-   * **Cartelle**  client: contiene risorse digitali basate su client o nomi di progetti.
-   * **Cartelle**  sorgente principali - contiene le risorse digitali sorgente originali.
-   * **Cartelle**  di rappresentazione - contiene rappresentazioni e copie delle risorse digitali originali.
-   * **Cartelle**  Dimensione file: contiene risorse digitali basate su file di piccole, medie o grandi dimensioni.
-   * **Cartelle**  di gestione temporanea contiene risorse digitali pronte per la pubblicazione sul sito Web.
-   * **Cartelle**  di tipo mime: contiene risorse digitali specifiche per tipi MIME quali immagini, documenti e contenuti multimediali.
-   * **Archivia cartelle**  - contiene le risorse digitali ritirate.
-   * **Cartelle**  basate su data: contiene risorse digitali basate su una data di creazione o l’ultima data di modifica.
+   * **Cartelle di sviluppo** : contiene le risorse digitali su cui stai lavorando.
+   * **Cartelle client** : contiene risorse digitali basate su client o nomi di progetto.
+   * **Cartelle sorgente principali**  - contiene risorse digitali originali di origine.
+   * **Cartelle di rappresentazione**  - contiene rappresentazioni e copie delle risorse digitali originali di origine.
+   * **Cartelle di dimensioni file** : contiene risorse digitali basate su file di piccole, medie o grandi dimensioni.
+   * **Cartelle di staging** : contiene risorse digitali pronte per la pubblicazione live sul sito web.
+   * **Cartelle di tipo MIME** : contiene risorse digitali specifiche per i tipi MIME quali immagini, documenti e elementi multimediali.
+   * **Archivia cartelle**  - contiene risorse digitali in pensione.
+   * **Cartelle basate su data** : contiene risorse digitali in base a una data di creazione o a un’ultima data di modifica.
 
-* Create una directory di cartelle che probabilmente non verrà modificata in modo che i profili assegnati non vengano interrotti.
-* Supponete che una risorsa sia già pubblicata, quindi utilizzate Adobe Experience Manager per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione. La posizione originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa ripubblicata. La risorsa pubblicata originale, tuttavia, è &quot;persa&quot;  Experience Manager e non può essere annullata la pubblicazione. Di conseguenza, è consigliabile annullare la pubblicazione delle risorse prima di spostarle in un’altra cartella.
+* Crea una directory di cartelle che probabilmente non verrà modificata in modo che i profili assegnati non si interrompano.
+* Supponiamo che una risorsa sia già stata pubblicata e quindi utilizzi Adobe Experience Manager per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione. La posizione originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa ripubblicata. La risorsa pubblicata originale, tuttavia, è &quot;persa&quot; in Experience Manager e non può essere annullata. Pertanto, come best practice, annulla la pubblicazione delle risorse prima di spostarle in un’altra cartella.
 
