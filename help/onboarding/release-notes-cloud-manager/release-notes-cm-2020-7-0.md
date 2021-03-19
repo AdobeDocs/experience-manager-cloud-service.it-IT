@@ -1,22 +1,23 @@
 ---
-title: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2020.7.0
-description: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2020.7.0
+title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.7.0
+description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.7.0
+feature: Informazioni sulla versione
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '311'
 ht-degree: 73%
 
 ---
 
 
-# Note sulla versione per Cloud Manager in Adobe Experience Manager come Cloud Service 2020.7.0 {#release-notes}
+# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.7.0 {#release-notes}
 
-In questa pagina sono delineate le Note sulla versione di Marketing Cloud Manager in AEM come Cloud Service 2020.7.0.
+Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.7.0.
 
 ## Data di rilascio {#release-date}
 
-La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.7.0 è il 09 luglio 2020.
+La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.7.0 è il 9 luglio 2020.
 
 ## Novità {#whats-new-cloud-manager}
 
@@ -30,10 +31,10 @@ La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.7.0 è il 0
 
    Per ulteriori informazioni, consulta [Variabili delle pipeline](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
 
-* Sono ora supportati i repository privati con binding di autenticazione.
+* Gli archivi Maven privati con associazione a autenticazione sono ora supportati.
 
 * Il contenitore di build di Cloud Manager ora supporta sia Java 8 che Java 11.
-Per ulteriori informazioni, fare riferimento a [Utilizzo del supporto per Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
+Per ulteriori informazioni, consulta [Utilizzo del supporto Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) .
 
 ### Correzioni di bug {#bug-fixes-cm}
 
