@@ -1,10 +1,12 @@
 ---
 title: Configurazione della sincronizzazione di una Live Copy
 description: Scopri le potenti opzioni di sincronizzazione Live Copy disponibili e come configurarle e personalizzarle in base alle esigenze del progetto.
+feature: Gestione di più siti
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2358'
 ht-degree: 31%
 
 ---
@@ -41,7 +43,7 @@ Ogni configurazione di rollout utilizza un attivatore (o trigger) di rollout che
 
 ### Configurazioni rollout {#rollout-configurations}
 
-Nella tabella seguente sono elencate le configurazioni di rollout fornite out-of-the-box con AEM. La tabella contiene le azioni di attivazione e sincronizzazione per ciascuna configurazione di rollout. Se le azioni di configurazione di rollout installate non soddisfano le tue esigenze, puoi [creare una nuova configurazione di rollout](#creating-a-rollout-configuration).
+Nella tabella seguente sono elencate le configurazioni di rollout fornite con AEM. La tabella contiene le azioni di attivazione e sincronizzazione per ciascuna configurazione di rollout. Se le azioni di configurazione di rollout installate non soddisfano le tue esigenze, puoi [creare una nuova configurazione di rollout](#creating-a-rollout-configuration).
 
 | Nome | Descrizione | Attivatore | [Azioni di sincronizzazione](#synchronization-actions) |
 |---|---|---|---|
@@ -54,7 +56,7 @@ Nella tabella seguente sono elencate le configurazioni di rollout fornite out-of
 
 ### Azioni di sincronizzazione {#synchronization-actions}
 
-Nella tabella seguente sono elencate le azioni di sincronizzazione fornite out-of-the-box con AEM.
+Nella tabella seguente sono elencate le azioni di sincronizzazione fornite con AEM.
 
 <!--If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).-->
 
@@ -93,7 +95,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 Puoi configurare diversi servizi OSGi che supportano le azioni di sincronizzazione corrispondenti in modo che non influiscano su proprietà e tipi di nodo specifici. Ad esempio, molte proprietà e sottonodi relativi al funzionamento interno di AEM non devono essere inclusi in una Live Copy. Deve essere copiato solo il contenuto rilevante per l’utente della pagina.
 
-Quando si lavora con AEM, sono disponibili diversi metodi per gestire le impostazioni di configurazione di tali servizi. Per ulteriori informazioni e pratiche consigliate, consulta [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md) .
+Quando si lavora con AEM esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi. Per ulteriori informazioni e pratiche consigliate, consulta [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md) .
 
 Nella tabella seguente sono elencate le azioni di sincronizzazione per le quali è possibile specificare i nodi da escludere. La tabella fornisce i nomi dei servizi da configurare mediante la Console web e il PID per la configurazione mediante un nodo di archivio.
 
@@ -132,7 +134,7 @@ Ad esempio, se desideri includere il **Titolo** della pagina nelle modifiche con
 
 Puoi configurare diversi servizi OSGi che supportano le azioni di sincronizzazione corrispondenti, relative all’aggiornamento dei riferimenti.
 
-Quando si lavora con AEM, sono disponibili diversi metodi per gestire le impostazioni di configurazione di tali servizi. Per ulteriori informazioni e pratiche consigliate, consulta [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md) .
+Quando si lavora con AEM esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi. Per ulteriori informazioni e pratiche consigliate, consulta [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md) .
 
 Nella tabella seguente sono elencate le azioni di sincronizzazione per cui è possibile specificare l’aggiornamento dei riferimenti. La tabella fornisce i nomi dei servizi da configurare mediante la Console web e il PID per la configurazione mediante un nodo di archivio.
 
