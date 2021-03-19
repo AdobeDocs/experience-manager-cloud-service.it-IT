@@ -1,10 +1,12 @@
 ---
 title: Identificazione del contenuto da tradurre
 description: Scopri come le regole di traduzione identificano i contenuti da tradurre.
+feature: Copia lingua
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -12,7 +14,7 @@ ht-degree: 0%
 
 # Identificazione del contenuto da tradurre {#identifying-content-to-translate}
 
-Le regole di traduzione identificano il contenuto da tradurre per le pagine, i componenti e le risorse inclusi nei progetti di traduzione o esclusi da essi. Quando una pagina o una risorsa viene tradotta, AEM ne estrae il contenuto in modo che possa essere inviato al servizio di traduzione.
+Le regole di traduzione identificano il contenuto da tradurre per le pagine, i componenti e le risorse inclusi nei progetti di traduzione o esclusi da essi. Quando una pagina o una risorsa viene tradotta, AEM estrae questo contenuto in modo che possa essere inviato al servizio di traduzione.
 
 Le pagine e le risorse sono rappresentate come nodi nell’archivio JCR. Il contenuto estratto è uno o più valori di proprietà dei nodi. Le regole di traduzione identificano le proprietà che contengono il contenuto da estrarre.
 
@@ -106,7 +108,7 @@ L’esempio seguente estrae le immagini dal componente immagine:
 
 ## Regole di sovrascrittura {#overriding-rules}
 
-Il file `translation_rules.xml` è costituito da un elemento `nodelist` con diversi elementi secondari `node`. AEM legge l’elenco dei nodi dall’alto verso il basso. Quando più regole eseguono il targeting dello stesso nodo, viene utilizzata la regola inferiore nel file. Ad esempio, le seguenti regole fanno sì che tutto il contenuto delle proprietà `text` sia tradotto, ad eccezione del ramo `/content/mysite/en` delle pagine:
+Il file `translation_rules.xml` è costituito da un elemento `nodelist` con diversi elementi secondari `node`. AEM legge l&#39;elenco dei nodi dall&#39;alto verso il basso. Quando più regole eseguono il targeting dello stesso nodo, viene utilizzata la regola inferiore nel file. Ad esempio, le seguenti regole fanno sì che tutto il contenuto delle proprietà `text` sia tradotto, ad eccezione del ramo `/content/mysite/en` delle pagine:
 
 ```xml
 <nodelist>
