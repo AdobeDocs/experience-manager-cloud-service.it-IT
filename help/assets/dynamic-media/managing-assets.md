@@ -1,10 +1,12 @@
 ---
 title: Informazioni sulla gestione delle risorse Dynamic Media
 description: Scopri come utilizzare le risorse Dynamic Media.
+feature: Gestione risorse
+topic: Professionista
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '123'
 ht-degree: 13%
 
 ---
@@ -18,7 +20,7 @@ Quando visualizzi l’anteprima, puoi anche applicare i predefiniti immagine (so
 
 Le informazioni generali sulla gestione delle risorse si trovano in [Gestione delle risorse con l&#39;interfaccia utente touch](/help/assets/manage-digital-assets.md).
 
-Gli argomenti seguenti descrivono le operazioni che puoi eseguire per gestire le risorse Dynamic Media:
+I seguenti argomenti descrivono le operazioni che puoi eseguire per gestire le risorse Dynamic Media:
 
 * [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Anteprima delle risorse Dynamic Media](previewing-assets.md)
