@@ -1,11 +1,13 @@
 ---
 title: Conflitti di rollout
 description: Scopri come gestire e risolvere i conflitti di rollout di Multi Site Manager.
+feature: Gestione di più siti
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 2%
+source-wordcount: '927'
+ht-degree: 3%
 
 ---
 
@@ -61,7 +63,7 @@ AEM ha [un comportamento predefinito quando la gestione dei conflitti è stata d
 
 ## Gestori dei conflitti {#conflict-handlers}
 
-AEM utilizza gestori di conflitti per risolvere eventuali conflitti di pagine esistenti durante il rollout di contenuti da una blueprint a una Live Copy. La ridenominazione delle pagine è il metodo consueto (non solo) per risolvere tali conflitti. Per consentire la selezione di diversi comportamenti, è possibile utilizzare più gestori di conflitti.
+AEM utilizza gestori di conflitti per risolvere eventuali conflitti di pagina esistenti durante il rollout del contenuto da una blueprint a una Live Copy. La ridenominazione delle pagine è il metodo consueto (non solo) per risolvere tali conflitti. Per consentire la selezione di diversi comportamenti, è possibile utilizzare più gestori di conflitti.
 
 AEM fornisce:
 
@@ -116,7 +118,7 @@ I gestori di conflitti personalizzati possono:
 
 ### Comportamento quando la gestione dei conflitti è disattivata {#behavior-when-conflict-handling-deactivated}
 
-Se disattivi manualmente la gestione dei conflitti, ](#rollout-manager-and-conflict-handling) AEM non agisce su alcuna pagina in conflitto. [ Le pagine non in conflitto vengono distribuite come previsto.
+Se si disattiva manualmente la gestione dei conflitti, ](#rollout-manager-and-conflict-handling) AEM non esegue alcuna azione su pagine in conflitto. [ Le pagine non in conflitto vengono distribuite come previsto.
 
 >[!CAUTION]
 >
