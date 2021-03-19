@@ -1,10 +1,12 @@
 ---
 title: Gestione multisito e traduzione
 description: Scopri come riutilizzare i contenuti all’interno del progetto e gestire siti web multilingue in AEM.
+feature: Amministrazione
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '374'
 ht-degree: 2%
 
 ---
@@ -45,7 +47,7 @@ Il diagramma seguente illustra l’intersezione dei concetti principali (ma non 
 In questo, e confrontabili, scenari MSM non gestisce le diverse versioni linguistiche in quanto tali.
 
 * [](msm/overview.md) MSM gestisce la distribuzione di contenuti tradotti da un blueprint (cioè un master globale) alle Live Copy (cioè i siti locali), entro i limiti di una lingua.
-* Le funzionalità di integrazione [translation](translation/overview.md) di AEM, in combinazione con i servizi di gestione della traduzione di terze parti, gestiscono le lingue e traducono i contenuti in queste diverse lingue.
+* Le funzionalità di integrazione di [translation](translation/overview.md) di AEM, in combinazione con servizi di gestione della traduzione di terze parti, gestiscono le lingue e traducono i contenuti in queste diverse lingue.
 
 Per casi di utilizzo più avanzati, MSM può essere utilizzato anche tra i master di lingua.
 
