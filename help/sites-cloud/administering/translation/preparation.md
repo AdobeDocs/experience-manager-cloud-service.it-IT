@@ -1,10 +1,12 @@
 ---
 title: Preparazione del contenuto per la traduzione
 description: Scopri come preparare i contenuti per la traduzione.
+feature: Copia lingua
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -140,4 +142,4 @@ Questa `es` copia della lingua non verrà rilevata perché si trova a 2 livelli 
 
 >[!TIP]
 >
->In questa configurazione, le radici della lingua possono avere qualsiasi nome di pagina, anziché solo il codice ISO della lingua. AEM controlla sempre prima il percorso e il nome, ma se il nome della pagina non identifica una lingua, AEM controlla la proprietà `cq:language` della pagina per l’identificazione della lingua.
+>In questa configurazione, le radici della lingua possono avere qualsiasi nome di pagina, anziché solo il codice ISO della lingua. AEM sempre controllare prima il percorso e il nome, ma se il nome della pagina non identifica una lingua, AEM controllerà la proprietà `cq:language` della pagina per l&#39;identificazione della lingua.
