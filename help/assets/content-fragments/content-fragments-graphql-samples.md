@@ -2,9 +2,9 @@
 title: Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query
 description: Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query.
 translation-type: tm+mt
-source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
+source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1741'
 ht-degree: 5%
 
 ---
@@ -69,7 +69,7 @@ Il funzionamento di base delle query con GraphQL per AEM rispettare la specifica
 
       * `_operator` : applicare operatori specifici;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
          * Vedere [Query di esempio - Tutte le persone che non hanno un nome di &quot;Jobs&quot;](#sample-all-persons-not-jobs)
-         * Consulta [Query di esempio - Tutte le avventure la cui `_path` inizia con un prefisso specifico](#sample-wknd-all-adventures-cycling-path-filter)
+         * Consulta [Query di esempio - Tutte le avventure in cui il `_path` inizia con un prefisso specifico](#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : applicare condizioni specifiche; ad esempio,   `AT_LEAST_ONCE`
          * Vedere [Query di esempio - Filtro su una matrice con un elemento che deve verificarsi almeno una volta](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : per ignorare il caso durante la query
@@ -664,7 +664,7 @@ query {
 
 ### Query di esempio - Tutte le avventure la cui `_path` inizia con un prefisso specifico {#sample-wknd-all-adventures-cycling-path-filter}
 
-Tutti `adventures` il cui `_path` inizia con un prefisso specifico (`/content/dam/wknd/en/adventures/cycling`).
+Tutto `adventures` in cui `_path` inizia con un prefisso specifico (`/content/dam/wknd/en/adventures/cycling`).
 
 **Query di esempio**
 
