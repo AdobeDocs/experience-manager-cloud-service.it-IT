@@ -1,63 +1,64 @@
 ---
-title: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2020.8.0
-description: Note sulla versione per Cloud Manager in AEM come versione di Cloud Service 2020.8.0
+title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.8.0
+description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.8.0
+feature: Informazioni sulla versione
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 1%
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
 
-# Note sulla versione per Cloud Manager in Adobe Experience Manager come Cloud Service 2020.8.0 {#release-notes}
+# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.8.0 {#release-notes}
 
-In questa pagina sono delineate le Note sulla versione di Marketing Cloud Manager in AEM come Cloud Service 2020.8.0.
+Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.8.0.
 
 ## Data di rilascio {#release-date}
 
-La data di rilascio per Cloud Manager in AEM come Cloud Service 2020.8.0 è il 6 agosto 2020.
+La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.8.0 è il 6 agosto 2020.
 
 ## Novità {#whats-new-cloud-manager}
 
-* Content Audit è una funzione abilitata nelle pipeline di produzione di siti di Cloud Manager. La configurazione della pipeline di produzione per i programmi con Siti ora include una terza scheda denominata **Content Audit**. Ogni volta che viene eseguita una pipeline di produzione, verrà inclusa una nuova fase di controllo dei contenuti nella pipeline dopo il test funzionale personalizzato che valuterà il sito rispetto a una serie di dimensioni, tra cui prestazioni, SEO (ottimizzazione motore di ricerca), accessibilità, best practice e PWA (app Web progressiva).
+* Verifica del contenuto è una funzione abilitata nelle pipeline di produzione di Cloud Manager Sites. La configurazione della pipeline di produzione per i programmi con Sites ora include una terza scheda denominata **Verifica del contenuto**. Ogni volta che viene eseguita una pipeline di produzione, nella pipeline verrà incluso un nuovo passaggio di Verifica del contenuto dopo un test funzionale personalizzato che valuterà il sito in base a una serie di dimensioni, tra cui prestazioni, SEO (Search Engine Optimization), accessibilità, best practice e PWA (Progressive Web App).
 
 
    >[!NOTE]
-   >L&#39;audit dei contenuti è stato successivamente rinominato in Experience Audit.
+   >La funzione di audit del contenuto è stata successivamente rinominata in Audit esperienze.
 
-   Per ulteriori informazioni, fare riferimento a [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md).
+   Per ulteriori informazioni, consulta [Test di audit esperienza](/help/implementing/cloud-manager/experience-audit-testing.md) .
 
 * Gli ambienti creati di recente nei programmi Assets ora verranno configurati automaticamente con Smart Content Services.
 
-* Gli ambienti disattivati possono essere disattivati dalla pagina **Overview** di Cloud Manager.
+* Gli ambienti sospesi possono essere disattivati dalla pagina **Panoramica** di Cloud Manager.
 
-* Possibilità di eseguire verifiche dell’esperienza sulle pagine, con tecnologia Google Lighthouse. Come parte della pipeline di Cloud Manager, è possibile controllare e convalidare fino a 25 pagine in base ai KPI dell&#39;esperienza e visualizzare i punteggi nell&#39;interfaccia di Cloud Manager.
+* Possibilità di eseguire controlli di esperienza sulle pagine, con tecnologia Google Lighthouse. Come parte della pipeline di Cloud Manager, è possibile controllare e convalidare fino a 25 pagine in base ai KPI di esperienza e visualizzare i punteggi nell’interfaccia utente di Cloud Manager.
 
 ### Correzioni di bug {#bug-fixes-cm}
 
-* Alcuni plug-in SonarQube non necessari e indesiderati venivano eseguiti come parte della scansione Code Quality.
+* Alcuni plug-in SonarQube superflui e indesiderati venivano eseguiti come parte della scansione Code Quality.
 
 * Nella pagina di esecuzione della pipeline, il nome del ramo non era formattato correttamente.
 
-* In alcuni casi, le esecuzioni completate della pipeline non sono state registrate come completate, impedendo così nuove esecuzioni della pipeline.
+* In alcuni casi, le esecuzioni completate della pipeline non sono state registrate correttamente come completate, impedendo così nuove esecuzioni della pipeline.
 
-* A volte le esecuzioni della tubazione vengono bloccate a causa di problemi di comunicazione interni.**
+* Le esecuzioni delle pipeline verrebbero occasionalmente bloccate a causa di problemi di comunicazione interni.**
 
-* Al momento del provisioning di una nuova organizzazione, ad alcuni utenti con ruoli amministrativi diversi dagli amministratori di sistema veniva erroneamente concesso l&#39;accesso a Cloud Manager.
+* Al momento del provisioning di una nuova organizzazione, ad alcuni utenti con ruoli amministrativi diversi dagli amministratori di sistema è stato erroneamente concesso l’accesso a Cloud Manager.
 
-* In alcune condizioni, il processo di indicizzazione degli aggiornamenti è stato avviato più volte in parallelo e ciò ha comportato un errore di distribuzione.
+* In determinate condizioni, il processo di indicizzazione dell&#39;aggiornamento è stato avviato più volte in parallelo, causando un errore di distribuzione.
 
 * La descrizione comandi sulle schede del programma non era corretta in modo coerente.
 
-* L&#39;interfaccia utente ha erroneamente consentito di tentare operazioni in un ambiente durante l&#39;eliminazione.
+* L&#39;interfaccia utente ha erroneamente consentito il tentativo di eseguire operazioni in un ambiente durante l&#39;eliminazione.
 
-* C&#39;è stata una mancata corrispondenza dei colori nella pagina **Overview** di Cloud Manager.
+* C&#39;è stata una mancata corrispondenza dei colori nella pagina **Panoramica** di Cloud Manager.
 
 ### Problemi noti {#known-issues-cm}
 
-* Sono incluse pagine non valide che riportano il punteggio medio di controllo dei contenuti al di sotto di quanto dovrebbero essere.
+* Sono incluse pagine non valide che riportano il punteggio medio di Verifica del contenuto al di sotto di quello che dovrebbe essere.
 
-* La scheda Controllo contenuto visualizza erroneamente l&#39;URL di base utilizzando il dominio dell&#39;autore invece del dominio di pubblicazione.
+* La scheda Verifica del contenuto visualizza in modo errato l’URL di base utilizzando il dominio dell’autore invece del dominio di pubblicazione.
 
-* Per attivare il passaggio Controllo contenuto, gli utenti devono modificare la pipeline e, facoltativamente, aggiungere pagine. Se non viene aggiunta alcuna pagina, la pagina iniziale verrà sottoposta a controllo.
+* Per attivare il passaggio Verifica contenuto, gli utenti devono modificare la pipeline e, facoltativamente, aggiungere pagine. Se non viene aggiunta alcuna pagina, la home page verrà sottoposta a controllo.
