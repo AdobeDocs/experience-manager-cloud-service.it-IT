@@ -7,9 +7,9 @@ feature-set: Experience Manager
 feature: Strumenti per gli sviluppatori
 role: Sviluppatore, architetto
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: d4aacc8d5f0b355cae9f79c10de496f26b3e395a
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '880'
 ht-degree: 37%
 
 ---
@@ -121,6 +121,7 @@ ht-degree: 37%
       + [Indirizzamento modello](developing/hybrid/routing.md)
       + [Componente RemotePage](developing/hybrid/remote-page.md)
       + [Modifica di un SPA esterno in AEM](developing/hybrid/editing-external-spa.md)
+      + [Componenti compositi in SPA](developing/hybrid/composite-components.md)
       + [Rendering lato server](developing/hybrid/ssr.md)
       + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Integrazione Launch](developing/hybrid/launch-integration.md)
