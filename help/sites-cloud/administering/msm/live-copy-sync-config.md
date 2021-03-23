@@ -4,9 +4,9 @@ description: Scopri le potenti opzioni di sincronizzazione Live Copy disponibili
 feature: Gestione di più siti
 role: Administrator
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2340'
 ht-degree: 31%
 
 ---
@@ -43,7 +43,11 @@ Ogni configurazione di rollout utilizza un attivatore (o trigger) di rollout che
 
 ### Configurazioni rollout {#rollout-configurations}
 
-Nella tabella seguente sono elencate le configurazioni di rollout fornite con AEM. La tabella contiene le azioni di attivazione e sincronizzazione per ciascuna configurazione di rollout. Se le azioni di configurazione di rollout installate non soddisfano le tue esigenze, puoi [creare una nuova configurazione di rollout](#creating-a-rollout-configuration).
+Nella tabella seguente sono elencate le configurazioni di rollout fornite con AEM. La tabella contiene le azioni di attivazione e sincronizzazione per ciascuna configurazione di rollout.
+
+<!--
+If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+-->
 
 | Nome | Descrizione | Attivatore | [Azioni di sincronizzazione](#synchronization-actions) |
 |---|---|---|---|
