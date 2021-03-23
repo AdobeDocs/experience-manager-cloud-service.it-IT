@@ -3,9 +3,9 @@ title: Riferimenti per sviluppatori per [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
+source-git-commit: 044740339ea7f164dd4c28650fe71a5eb11615d6
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1388'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ L’articolo contiene raccomandazioni, materiali di riferimento e risorse per gl
 
 >[!CAUTION]
 >
->Alcune API continuano a esistere ma non sono supportate attivamente (contrassegnate con un ×) e non devono essere utilizzate.
+>Alcune API continuano a esistere ma non sono supportate attivamente (contrassegnate da un ×). Per quanto possibile, non utilizzare queste API.
 
 | Livello di supporto | Descrizione |
 | ------------- | --------------------------- |
@@ -65,7 +65,7 @@ L’articolo contiene raccomandazioni, materiali di riferimento e risorse per gl
 
 ## Caricamento risorsa {#asset-upload-technical}
 
-[!DNL Experience Manager] as a  [!DNL Cloud Service] fornisce un nuovo metodo per caricare le risorse nell’archivio. Gli utenti possono caricare direttamente le risorse nell’archiviazione cloud utilizzando l’API HTTP. I passaggi per caricare un file binario sono i seguenti:
+In [!DNL Experience Manager] come [!DNL Cloud Service], puoi caricare direttamente le risorse nell’archiviazione cloud utilizzando l’API HTTP. I passaggi per caricare un file binario sono i seguenti:
 
 1. [Invia una richiesta](#initiate-upload) HTTP. Indica a [!DNL Experience Manage]r la distribuzione dell&#39;intento di caricare un nuovo binario.
 1. [POST il contenuto del ](#upload-binary) binario a uno o più URI forniti dalla richiesta di avvio.
@@ -116,8 +116,8 @@ Il tipo di contenuto del corpo della richiesta deve essere costituito da dati de
 * `mimeType` (stringa): Il tipo mime del binario corrispondente, come specificato nella richiesta di avvio. Questo valore deve essere incluso nella richiesta completa.
 * `uploadToken` (stringa): Un token di caricamento per il binario corrispondente. Questo valore deve essere incluso nella richiesta completa.
 * `uploadURIs` (matrice): Elenco di stringhe i cui valori sono URI completi a cui deve essere caricato il contenuto del binario (consulta  [Carica binario](#upload-binary)).
-* `minPartSize` (numero): Lunghezza minima, in byte, dei dati che possono essere forniti a uno qualsiasi degli URI di caricamento, se sono presenti più URI.
-* `maxPartSize` (numero): La lunghezza massima, in byte, dei dati che possono essere forniti a uno qualsiasi degli URI di caricamento, se sono presenti più URI.
+* `minPartSize` (numero): La lunghezza minima, in byte, dei dati che possono essere forniti a uno qualsiasi degli URI  `uploadURIs`, se sono presenti più di un URI.
+* `maxPartSize` (numero): La lunghezza massima, in byte, dei dati che possono essere forniti a uno qualsiasi degli URI  `uploadURIs`, se sono presenti più di un URI.
 
 ### Carica binario {#upload-binary}
 
@@ -240,5 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [Experience Cloud come  [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
