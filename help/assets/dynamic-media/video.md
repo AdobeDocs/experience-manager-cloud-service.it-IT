@@ -4,7 +4,7 @@ description: Scopri come lavorare con i video in Dynamic Media.
 feature: Profili video
 topic: Professionista
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '9512'
 ht-degree: 6%
@@ -551,9 +551,9 @@ Per pubblicare video su YouTube è necessario disporre di uno o più canali. Se 
 Per creare un canale YouTube:
 
 1. Vai a [https://www.youtube.com](https://www.youtube.com/) e accedi utilizzando le tue credenziali del tuo account Google.
-1. Nell’angolo in alto a destra della pagina YouTube, fai clic sull’immagine del profilo (può anche essere visualizzata come una lettera all’interno di un cerchio colorato), quindi fai clic su **[!UICONTROL Impostazioni YouTube]** (icona a forma di ingranaggio circolare).
-1. Nella pagina Panoramica, sotto l&#39;intestazione Funzioni aggiuntive, fai clic su **[!UICONTROL Vedi tutti i miei canali o crea un nuovo canale]**.
-1. Nella pagina Canali, fai clic su **[!UICONTROL Crea un nuovo canale]**.
+1. Nell’angolo in alto a destra della pagina YouTube, fai clic sull’immagine del profilo (può anche essere visualizzata come una lettera all’interno di un cerchio colorato), quindi tocca **[!UICONTROL Impostazioni YouTube]** (icona a forma di ingranaggio circolare).
+1. Nella pagina Panoramica, sotto l’intestazione Funzioni aggiuntive, tocca **[!UICONTROL Vedi tutti i miei canali o crea un nuovo canale]**.
+1. Nella pagina Canali, tocca **[!UICONTROL Crea un nuovo canale]**.
 1. Nella pagina Account marchio , immetti un nome commerciale o un altro nome di canale scelto per pubblicare le risorse video nel campo Marchio Account , quindi fai clic su **[!UICONTROL Crea]**.
 
    Ricorda il nome immesso in questa sezione perché è necessario immetterlo nuovamente quando si imposta YouTube in Experience Manager.
