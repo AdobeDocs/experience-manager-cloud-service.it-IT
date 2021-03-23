@@ -3,9 +3,9 @@ title: Risoluzione dei problemi relativi a Dynamic Media
 description: Suggerimenti per la risoluzione dei problemi durante l’utilizzo di Dynamic Media.
 topic: '"Amministratore, Business Practitioner"'
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '993'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Di seguito sono riportati alcuni suggerimenti generali per tutte le risorse.
 
 ### Proprietà stato sincronizzazione risorse {#asset-synchronization-status-properties}
 
-Le seguenti proprietà delle risorse possono essere riviste in CRXDE Lite per confermare la sincronizzazione della risorsa da AEM a Dynamic Media:
+Le seguenti proprietà delle risorse possono essere esaminate in CRXDE Lite per confermare la corretta sincronizzazione della risorsa da Adobe Experience Manager a Dynamic Media:
 
 | **Proprietà** | **Esempio** | **Descrizione** |
 |---|---|---|
@@ -36,15 +36,15 @@ Le seguenti proprietà delle risorse possono essere riviste in CRXDE Lite per co
 
 ### Registrazione sincronizzazione {#synchronization-logging}
 
-Gli errori e i problemi di sincronizzazione vengono registrati in `error.log` (AEM directory del server `/crx-quickstart/logs/`). È disponibile una registrazione sufficiente per determinare la causa principale della maggior parte dei problemi, tuttavia è possibile aumentare la registrazione su DEBUG sul pacchetto `com.adobe.cq.dam.ips` tramite la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) per raccogliere ulteriori informazioni.
+Gli errori e i problemi di sincronizzazione vengono registrati in `error.log` (directory del server Experience Manager `/crx-quickstart/logs/`). È disponibile una registrazione sufficiente per determinare la causa principale della maggior parte dei problemi, tuttavia è possibile aumentare la registrazione su DEBUG sul pacchetto `com.adobe.cq.dam.ips` tramite la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) per raccogliere ulteriori informazioni.
 
 ### Controllo della versione {#version-control}
 
-Quando sostituisci una risorsa Dynamic Media esistente (nome e posizione identici), puoi mantenere entrambe le risorse o sostituire o creare una versione:
+Quando sostituisci una risorsa Dynamic Media esistente (nome e posizione identici), puoi mantenere entrambe le risorse o sostituire/creare una versione:
 
-* Mantenere entrambi crea una nuova risorsa con un nome univoco per l’URL della risorsa pubblicata. Ad esempio, `image.jpg` è la risorsa originale e `image1.jpg` è la nuova risorsa caricata.
+* Mantenere entrambi crea una risorsa con un nome univoco per l’URL della risorsa pubblicata. Ad esempio, `image.jpg` è la risorsa originale e `image1.jpg` è la nuova risorsa caricata.
 
-* La creazione di una versione non è supportata in Dynamic Media. La nuova versione sostituirà la risorsa esistente in consegna.
+* La creazione di una versione non è supportata in Dynamic Media. La nuova versione sostituisce la risorsa esistente nella consegna.
 
 ## Immagini e set {#images-and-sets}
 
@@ -63,7 +63,7 @@ Se riscontri problemi con immagini e set, consulta le seguenti indicazioni per l
     <ol>
      <li><p>Vai a CRX/DE:</p>
       <ul>
-       <li>Controlla se il predefinito nel JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> è definito. Tieni presente che questa posizione si applica se hai effettuato l’aggiornamento da AEM 6.x a 6.4 e hai rinunciato alla migrazione. In caso contrario, la posizione è <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Controlla se il predefinito nel JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> è definito. Questa posizione si applica se hai effettuato l’aggiornamento da Experience Manager 6.x a 6.4 e hai rinunciato alla migrazione. In caso contrario, la posizione è <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Verifica che la risorsa nel JCR sia <code>dam:scene7FileStatus</code><strong> </strong>sotto Metadati sia visualizzata come <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
@@ -125,7 +125,7 @@ In caso di problemi con il video, consulta le seguenti indicazioni per la risolu
      <li>Assegna un profilo video alla cartella.</li>
      <li>Modifica il profilo video per includere più di un predefinito di codifica.</li>
      <li>Attendere il completamento dell'elaborazione del video.</li>
-     <li>Ricarica il video e assicurati che il flusso di lavoro Codifica video Dynamic Media non sia in esecuzione.<br/> </li>
+     <li>Prima di ricaricare il video, assicurati che il flusso di lavoro Codifica video Dynamic Media non sia in esecuzione.<br/> </li>
      <li>Ricarica il video.</li>
     </ol> </td>
   </tr>
@@ -133,7 +133,7 @@ In caso di problemi con il video, consulta le seguenti indicazioni per la risolu
    <td>Il video non è codificato</td>
    <td>
     <ul>
-     <li>Verifica se il servizio cloud Dynamic Media è configurato.</li>
+     <li>Verifica se il Cloud Service Dynamic Media è configurato.</li>
      <li>Controlla se un profilo video è associato alla cartella di caricamento.</li>
     </ul> </td>
    <td>
@@ -179,7 +179,7 @@ Se riscontri problemi con i visualizzatori, consulta le seguenti indicazioni per
   </tr>
   <tr>
    <td>I predefiniti per visualizzatori non vengono pubblicati</td>
-   <td><p>Passare alla pagina di diagnostica di sample manager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Osserva i valori calcolati. Quando funziona correttamente, dovresti vedere:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>Passare alla pagina di diagnostica di sample manager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Osserva i valori calcolati. Quando funziona correttamente, puoi vedere:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: La sincronizzazione delle risorse del visualizzatore può richiedere circa 10 minuti dopo la configurazione delle impostazioni cloud di Dynamic Media.</p> <p>Se le risorse non attivate rimangono, fai clic su uno dei pulsanti <strong>Elenca tutte le risorse non attivate</strong> per visualizzare i dettagli.</p> </td>
    <td>
     <ol>
@@ -204,17 +204,17 @@ Se riscontri problemi con i visualizzatori, consulta le seguenti indicazioni per
        <li>Esempio: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>Se le risorse di esempio o l’immagine predefinita del visualizzatore non sono state sincronizzate o pubblicate, riavvia l’intero processo di copia/sincronizzazione:</p>
+   <td><p>Se le risorse di esempio o l’immagine predefinita del visualizzatore non sono sincronizzate o pubblicate, riavvia l’intero processo di copia/sincronizzazione:</p>
     <ol>
      <li>Accedi a <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
      </li>
      <li>Seleziona le azioni seguenti nell’ordine:
       <ol>
        <li>Elimina le cartelle di sincronizzazione.</li>
-       <li>Seleziona la cartella Preset (sotto <code>/conf</code>).
+       <li>Elimina la cartella Preset (sotto <code>/conf</code>).
        <li>Attiva processo asincrono di configurazione DM.</li>
       </ol> </li>
-     <li>Attendi la notifica della sincronizzazione corretta nella casella in entrata AEM.
+     <li>Attendi la notifica della sincronizzazione corretta nella casella in entrata Experience Manager.
      </li>
     </ol> </td>
   </tr>
