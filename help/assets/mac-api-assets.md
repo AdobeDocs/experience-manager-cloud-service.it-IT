@@ -3,9 +3,9 @@ title: API HTTP di Assets
 description: Crea, leggi, aggiorna, elimina, gestisci risorse digitali utilizzando l’API HTTP in [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
+source-git-commit: c9a7dc74e3fc7c637825606a1a92cbe46d86283f
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1489'
 ht-degree: 1%
 
 ---
@@ -267,7 +267,7 @@ Elimina una risorsa (-tree) nel percorso specificato.
 
 * Dopo il [!UICONTROL Tempo di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite l’interfaccia web [!DNL Assets] e tramite l’API HTTP. L&#39;API restituisce un messaggio di errore 404 se il [!UICONTROL Al momento] è nel futuro o se il [!UICONTROL Tempo di disattivazione] è nel passato.
 
-* Non utilizzare `/adobe` come URL o come percorso JCR. Non registrare alcun servlet sotto questa struttura o creare contenuto in JCR.
+* Alcune proprietà della cartella o della risorsa vengono mappate su un prefisso diverso quando vengono aggiornate utilizzando le API. Il prefisso `jcr` di `jcr:title`, `jcr:description` e `jcr:language` viene sostituito con il prefisso `dc`. Quindi nei JSON restituiti, `dc:title` e `dc:description` contengono rispettivamente i valori di `jcr:title` e `jcr:description`.
 
 >[!MORELIKETHIS]
 >
