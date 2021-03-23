@@ -2,9 +2,9 @@
 title: Applicazione dei predefiniti per visualizzatori Dynamic Media
 description: Scopri come applicare i predefiniti visualizzatore in Dynamic Media.
 feature: Predefiniti visualizzatore, Visualizzatori
-topic: Professionista
+topic: Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 25%
@@ -16,7 +16,7 @@ ht-degree: 25%
 
 Un predefinito per visualizzatori è un insieme di impostazioni che determinano il modo in cui gli utenti visualizzano le risorse multimediali sullo schermo del computer e sui dispositivi mobili. Puoi applicare a una risorsa qualsiasi predefinito per visualizzatori creato dall’amministratore.
 
-Gli amministratori che hanno l’esigenza di gestire, creare, ordinare ed eliminare i predefiniti visualizzatore possono consultare [Gestione dei predefiniti visualizzatore](managing-viewer-presets.md).
+Gli amministratori che devono gestire, creare, ordinare ed eliminare i predefiniti visualizzatore devono consultare [Gestione dei predefiniti visualizzatore](managing-viewer-presets.md).
 
 Consulta anche [Pubblicazione dei predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
 
