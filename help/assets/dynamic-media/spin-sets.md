@@ -4,9 +4,9 @@ description: Scopri come utilizzare i set 360 gradi in Dynamic Media.
 feature: Set 360 gradi
 topic: Professionista
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 12%
 
 ---
@@ -24,7 +24,7 @@ I set 360 gradi sono indicati da un banner con la parola **[!UICONTROL SPINSET]*
 
 >[!NOTE]
 >
->Per informazioni sull’interfaccia utente Assets, consulta [Gestione delle risorse con l’interfaccia Touch](/help/assets/manage-digital-assets.md) e applicala a una nuova cartella in cui verranno caricate le risorse del set di immagini.
+>Per informazioni sull’interfaccia utente Assets, consulta [Gestione delle risorse con l’interfaccia Touch](/help/assets/manage-digital-assets.md) e applicala a una nuova cartella in cui vengono caricate le risorse del set di immagini.
 
 ## Avvio rapido: Set 360 gradi {#quick-start-spin-sets}
 
@@ -40,7 +40,7 @@ Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazion
 
 1. [Carica le immagini per più visualizzazioni.](#uploading-assets-for-spin-sets)
 
-   Per un set 360 gradi a una dimensione e per un set 360 gradi a due dimensioni, è necessario effettuare almeno 8-12 scatti di un elemento. Le riprese devono essere effettuate a intervalli regolari per dare l&#39;impressione che l&#39;elemento stia ruotando e sia capovolto. Ad esempio, se un set 360 gradi monodimensionale include 12 scatti, ruotate l’elemento di 30 gradi (360/12) per ogni ripresa.
+   Per un set 360 gradi a una dimensione e per un set 360 gradi a due dimensioni, è necessario effettuare almeno 8-12 scatti di un elemento. Le riprese devono essere effettuate a intervalli regolari per dare l&#39;impressione che l&#39;elemento stia ruotando e sia capovolto. Ad esempio, se un set 360 gradi unidimensionale include 12 scatti, ruotate l’elemento di 30° (360/12) per ogni ripresa.
 
 1. [Crea set 360 gradi.](#creating-spin-sets)
 
@@ -52,7 +52,7 @@ Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazion
 
    Gli amministratori possono creare o modificare i predefiniti visualizzatore di set 360 gradi. Per visualizzare il set 360 con un predefinito visualizzatore, seleziona il set 360 gradi e fai clic su **Visualizzatori** nel menu a discesa della barra a sinistra.
 
-   Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]** .
+   Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]**.
 
    Consulta [Aggiunta e modifica di predefiniti visualizzatore.](/help/assets/dynamic-media/managing-viewer-presets.md)
 
@@ -68,7 +68,7 @@ Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazion
 
 1. [Collega gli URL all’](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) applicazione Web o  [incorpora il visualizzatore](/help/assets/dynamic-media/embed-code.md) video o immagini.
 
-   AEM Assets crea chiamate URL per i set 360 gradi e li attiva dopo la pubblicazione dei set 360 gradi. Puoi copiare questi URL quando visualizzi l’anteprima delle risorse. In alternativa è possibile incorporarli sul sito Web.
+   Adobe Experience Manager Assets crea chiamate URL per set 360 gradi e le attiva dopo la pubblicazione dei set 360 gradi. Puoi copiare questi URL quando visualizzi l’anteprima delle risorse. In alternativa è possibile incorporarli sul sito Web.
 
    Seleziona il set a 360 gradi, quindi fai clic su **[!UICONTROL Visualizzatori]** nel menu a discesa della barra a sinistra.
 
@@ -78,19 +78,19 @@ Se necessario, è possibile [modificare i set 360 gradi](#editing-spin-sets). In
 
 ## Caricamento delle risorse per i set 360 gradi {#uploading-assets-for-spin-sets}
 
-Per un set 360 gradi unidimensionale, è necessario effettuare almeno 8-12 scatti di un elemento. Le riprese devono essere effettuate a intervalli regolari per dare l&#39;impressione che l&#39;elemento stia ruotando e sia capovolto. Ad esempio, se un set 360 gradi monodimensionale include 12 scatti, ruotate l’elemento di 30 gradi (360/12) per ogni ripresa.
+Per un set 360 gradi unidimensionale, è necessario effettuare almeno 8-12 scatti di un elemento. Le riprese devono essere effettuate a intervalli regolari per dare l&#39;impressione che l&#39;elemento stia ruotando e sia capovolto. Ad esempio, se un set 360 gradi unidimensionale include 12 scatti, ruotate l’elemento di 30° (360/12) per ogni ripresa.
 
-Puoi caricare le immagini per i set 360 gradi come faresti con [caricare qualsiasi altra risorsa in AEM Assets](/help/assets/manage-digital-assets.md).
+Puoi caricare le immagini per i set 360 gradi come faresti con [caricare qualsiasi altra risorsa in Experience Manager Assets](/help/assets/manage-digital-assets.md).
 
 ### Linee guida per l’acquisizione di immagini per il set 360 gradi {#guidelines-for-shooting-spin-set-images}
 
-Di seguito sono riportate alcune best practice relative alle immagini di set 360 gradi. In generale, più immagini si hanno in un set 360 gradi, migliore è l&#39;effetto di rotazione dell&#39;immagine. Tuttavia, l&#39;inclusione di molte immagini nel set aumenta anche il tempo necessario al caricamento delle immagini. AEM consiglia le seguenti linee guida per le riprese di immagini da utilizzare nei set 360 gradi:
+Di seguito sono riportate alcune best practice relative alle immagini di set 360 gradi. In generale, più immagini si hanno in un set 360 gradi, migliore è l&#39;effetto di rotazione dell&#39;immagine. Tuttavia, l&#39;inclusione di molte immagini nel set aumenta anche il tempo necessario al caricamento delle immagini. L&#39;Experience Manager consiglia queste linee guida per le riprese di immagini da utilizzare nei set 360 gradi:
 
-* Utilizza almeno 8-12 immagini in un set 360 gradi unidimensionale e 16-24 immagini in un set 360 gradi bidimensionale. Per poter girare a 360 gradi è necessario un minimo di 8 immagini. I set 360 gradi a una dimensione sono più comuni in quanto la creazione di set 360 gradi a due dimensioni richiede un’intensa attività di lavoro.
+* Utilizza almeno 8-12 immagini in un set 360 gradi unidimensionale e 16-24 immagini in un set 360 gradi bidimensionale. Per poter girare a 360° è necessario un minimo di 8 immagini. I set 360 gradi a una dimensione sono più comuni in quanto la creazione di set 360 gradi a due dimensioni richiede un’intensa attività di lavoro.
 * Utilizzare un formato senza perdita; Si consiglia TIFF e PNG.
 * Maschera tutte le immagini in modo che l&#39;elemento venga visualizzato su uno sfondo bianco puro o su un altro sfondo ad alto contrasto. Facoltativamente, aggiungi ombre.
 * Assicurati che i dettagli del prodotto siano ben illuminati e concentrati.
-* Prendere le immagini di spin per abbigliamento moda con un manichino o modello. Spesso il mannequin è completamente mascherato (utilizzando un manichino in vetro) o un mannequin/dressform stilizzato è mostrato nell&#39;immagine. Potete creare un set 360 gradi su modello definendo il numero di angoli. Contrassegnare ogni angolo con nastro sul pavimento per guidare il modello a passo e guardare nella direzione di ogni ripresa.
+* Prendere le immagini di spin per abbigliamento moda con un manichino o modello. Spesso il mannequin è mascherato (utilizzando un manichino in vetro) o un mannequin/dressform stilizzato è mostrato nell&#39;immagine. Potete creare un set 360 gradi su modello definendo il numero di angoli. Contrassegnare ogni angolo con nastro sul pavimento per guidare il modello a passo e guardare nella direzione di ogni ripresa.
 
 ## Creazione di set 360 gradi {#creating-spin-sets}
 
@@ -118,7 +118,7 @@ Questa sezione descrive come creare i set 360 gradi.
 
    >[!NOTE]
    >
-   >Quando crei il set 360 gradi, puoi modificare la miniatura del set 360 gradi o consentire AEM selezionare automaticamente la miniatura in base alle risorse nel set 360 gradi. Per selezionare una miniatura, fai clic su **[!UICONTROL Cambia miniatura]** e seleziona una qualsiasi immagine (puoi passare ad altre cartelle per trovare anche le immagini). Se hai selezionato una miniatura e vuoi AEM generarne una dal set 360 gradi, seleziona **[!UICONTROL Passa alla miniatura automatica]**.
+   >Quando crei il set 360 gradi, puoi modificare la miniatura del set 360 gradi o consentire ad Experience Manager di selezionarla automaticamente in base alle risorse del set 360 gradi. Per selezionare una miniatura, fai clic su **[!UICONTROL Cambia miniatura]** e seleziona una qualsiasi immagine (puoi passare ad altre cartelle per trovare anche le immagini). Se hai selezionato una miniatura e vuoi che l&#39;Experience Manager ne generi una dal set 360 gradi, seleziona **[!UICONTROL Passa alla miniatura automatica]**.
 
 1. Effettua una delle seguenti operazioni:
 
@@ -159,7 +159,7 @@ Questa sezione descrive come creare i set 360 gradi.
 
 **Per visualizzare i set 360 gradi**
 
-1. Quando si aprono le proprietà di una singola risorsa. Le proprietà indicano l’impostazione in cui la risorsa selezionata è membro di (sotto **[!UICONTROL Membro di Set]**). Fare clic sul nome del set per visualizzare l&#39;intero set.
+1. Quando si aprono le proprietà di una singola risorsa. Le proprietà indicano l’impostazione in cui la risorsa selezionata è membro di (sotto **[!UICONTROL Membro di Set]**). Per visualizzare l’intero set, tocca il nome del set.
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
@@ -169,13 +169,13 @@ Questa sezione descrive come creare i set 360 gradi.
 
 1. Dalla ricerca, puoi selezionare **[!UICONTROL Filtri]**, quindi espandere **[!UICONTROL Dynamic Media]** e fare clic su **[!UICONTROL Set]**.
 
-   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando `Starts with` criteri di ricerca diversi dalla ricerca AEM basata sull&#39;utilizzo di `Contains` criteri di ricerca. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per cercare i set automatizzati.
+   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando `Starts with` criteri di ricerca diversi dalla ricerca Experience Manager basata sull’utilizzo di `Contains` criteri di ricerca. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per cercare i set automatizzati.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
 ## Modifica dei set 360 gradi {#editing-spin-sets}
 
-Puoi eseguire diverse attività di modifica sui set 360 gradi, ad esempio:
+Puoi eseguire varie attività di modifica sui set 360 gradi, ad esempio:
 
 * Aggiungi le immagini al set 360 gradi.
 * Riordinare le immagini nel set 360 gradi.
@@ -197,7 +197,7 @@ Puoi eseguire diverse attività di modifica sui set 360 gradi, ad esempio:
    * Per riordinare le immagini, trascinate un’immagine in una nuova posizione (selezionate l’icona di riordino per spostare gli elementi).
    * Per ordinare gli elementi in ordine crescente o decrescente, fai clic sull’intestazione della colonna.
    * Per aggiungere una risorsa o aggiornare una risorsa esistente, fai clic su **[!UICONTROL Aggiungi risorsa]**. Passa a una risorsa, selezionala, quindi tocca **[!UICONTROL Seleziona]** nell’angolo in alto a destra.
-Se elimini l&#39;immagine che AEM utilizzata per la miniatura sostituendola con un&#39;altra immagine, viene comunque visualizzata la risorsa originale.
+Se elimini l&#39;immagine utilizzata dall&#39;Experience Manager per la miniatura sostituendola con un&#39;altra immagine, viene comunque visualizzata la risorsa originale.
    * Per eliminare una risorsa, selezionala e tocca o fai clic su **[!UICONTROL Elimina risorsa]**.
    * Per applicare un predefinito, tocca o fai clic sull’icona Predefinito e seleziona un predefinito.
    * Per eliminare un intero set 360 gradi, accedi al set 360 gradi, selezionalo e seleziona **[!UICONTROL Elimina]**
