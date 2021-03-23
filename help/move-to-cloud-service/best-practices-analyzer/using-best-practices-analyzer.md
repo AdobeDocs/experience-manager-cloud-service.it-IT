@@ -16,7 +16,7 @@ ht-degree: 43%
 >id="aemcloud_bpa_using"
 >title="Utilizzo di Best Practices Analyzer"
 >abstract="Esamina la documentazione relativa all’utilizzo di Best Practices Analyzer (precedentemente Cloud Readiness Analyzer) e il rapporto generato. Il rapporto di Best Practices Analyzer (Analisi di best practice) viene utilizzato per acquisire una comprensione di alto livello della preparazione generale all’aggiornamento."
->additional-url=""
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
 
 ## Considerazioni importanti sull&#39;utilizzo di Best Practices Analyzer {#imp-considerations}
 
