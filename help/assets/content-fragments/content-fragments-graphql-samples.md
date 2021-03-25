@@ -2,10 +2,10 @@
 title: Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query
 description: Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query.
 translation-type: tm+mt
-source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
+source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 5%
+source-wordcount: '1396'
+ht-degree: 6%
 
 ---
 
@@ -29,65 +29,6 @@ Per assistenza, consulta:
 
 * E alcune [query GraphQL di esempio](#graphql-sample-queries), basate sulla struttura del frammento di contenuto di esempio (Modelli di frammenti di contenuto e frammenti di contenuto correlati).
 
-## GraphQL per AEM - Riepilogo delle estensioni {#graphql-extensions}
-
-Il funzionamento di base delle query con GraphQL per AEM rispettare la specifica GraphQL standard. Per le query GraphQL con AEM sono disponibili alcune estensioni:
-
-* Se hai bisogno di un singolo risultato:
-   * utilizzare il nome del modello; città
-
-* Se si prevede un elenco di risultati:
-   * aggiungere `List` al nome del modello; ad esempio, `cityList`
-   * Consulta [Query di esempio - Tutte le informazioni su Tutte le città](#sample-all-information-all-cities)
-
-* Se desideri utilizzare un operatore OR logico:
-   * use ` _logOp: OR`
-   * Vedere [Query di esempio - Tutte le persone con un nome &quot;Jobs&quot; o &quot;Smith&quot;](#sample-all-persons-jobs-smith)
-
-* Esiste anche l&#39;AND logico, ma è (spesso) implicito
-
-* È possibile eseguire query sui nomi di campo corrispondenti ai campi all’interno del modello di frammento di contenuto
-   * Consulta [Query di esempio - Dettagli completi sull&#39;amministratore delegato e sui dipendenti di un&#39;azienda](#sample-full-details-company-ceos-employees)
-
-* Oltre ai campi del modello, sono presenti alcuni campi generati dal sistema (preceduti dal carattere di sottolineatura):
-
-   * Per il contenuto:
-
-      * `_locale` : rivelare la lingua; basato su Language Manager
-         * Consulta [Query di esempio per più frammenti di contenuto di una determinata impostazione internazionale](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata` : per visualizzare i metadati del frammento
-         * Consulta [Esempio di query per metadati - Elenco dei metadati per i premi denominati GB](#sample-metadata-awards-gb)
-      * `_model` : consentire la query per un modello di frammento di contenuto (percorso e titolo)
-         * Consulta [Query di esempio per un modello di frammento di contenuto da un modello](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : percorso del frammento di contenuto all’interno dell’archivio
-         * Vedere [Query di esempio - Un singolo frammento di città specifico](#sample-single-specific-city-fragment)
-      * `_reference` : rivelare riferimenti; inclusione di riferimenti in linea nell’Editor Rich Text
-         * Consulta [Query di esempio per più frammenti di contenuto con riferimenti prerecuperati](#sample-wknd-multiple-fragments-prefetched-references)
-      * `_variation` : per visualizzare varianti specifiche all’interno del frammento di contenuto
-         * Consulta [Query di esempio - Tutte le città con una variante denominata](#sample-cities-named-variation)
-   * e operazioni:
-
-      * `_operator` : applicare operatori specifici;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
-         * Vedere [Query di esempio - Tutte le persone che non hanno un nome di &quot;Jobs&quot;](#sample-all-persons-not-jobs)
-         * Consulta [Query di esempio - Tutte le avventure in cui il `_path` inizia con un prefisso specifico](#sample-wknd-all-adventures-cycling-path-filter)
-      * `_apply` : applicare condizioni specifiche; ad esempio,   `AT_LEAST_ONCE`
-         * Vedere [Query di esempio - Filtro su una matrice con un elemento che deve verificarsi almeno una volta](#sample-array-item-occur-at-least-once)
-      * `_ignoreCase` : per ignorare il caso durante la query
-         * Vedere [Query di esempio - Tutte le città con SAN nel nome, indipendentemente dal caso](#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
-* I tipi di unione GraphQL sono supportati:
-
-   * utilizza `... on`
-      * Consulta [Query di esempio per un frammento di contenuto di un modello specifico con un riferimento di contenuto](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL - Query di esempio utilizzando la struttura dei frammenti di contenuto di esempio {#graphql-sample-queries-sample-content-fragment-structure}
 
