@@ -4,7 +4,7 @@ description: Comprendi il concetto di raccolta in Adobe Experience Manager Asset
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '2397'
 ht-degree: 19%
@@ -185,7 +185,7 @@ Per personalizzare la pagina dei metadati [!UICONTROL Proprietà], inclusa l&#39
 
 >[!NOTE]
 >
->I metodi di modifica collettiva funzionano per le risorse disponibili in una raccolta. Per le risorse disponibili nelle cartelle o che corrispondono a un criterio comune, è possibile [aggiornare in blocco i metadati dopo la ricerca](/help/assets/search-assets.md#metadataupdates).
+>I metodi di modifica collettiva funzionano per le risorse disponibili in una raccolta. Per le risorse disponibili nelle cartelle o che corrispondono a un criterio comune, è possibile [aggiornare in blocco i metadati dopo la ricerca](/help/assets/search-assets.md#metadata-updates).
 
 1. Dalla console Raccolte, seleziona le raccolte da modificare.
 1. Dalla barra degli strumenti, tocca o fai clic su **[!UICONTROL Proprietà]** per aprire la pagina [!UICONTROL Proprietà] per le raccolte selezionate.
