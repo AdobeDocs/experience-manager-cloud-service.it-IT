@@ -2,9 +2,9 @@
 title: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager].
 description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '2017'
 ht-degree: 1%
 
 ---
@@ -174,8 +174,20 @@ Per configurare lo strumento, segui questi passaggi:
    * [!UICONTROL Prova] a secco: Richiama un&#39;esecuzione di test dell&#39;acquisizione in massa.
    * [!UICONTROL Esegui]: Esegui la configurazione selezionata.
    * [!UICONTROL Interrompi]: Termina una configurazione attiva.
+   * [!UICONTROL Pianificazione]: Impostare una pianificazione una tantum o ricorrente per l’acquisizione delle risorse.
    * [!UICONTROL Stato] del processo: Visualizza lo stato della configurazione quando viene utilizzata in un processo di importazione in corso o utilizzata per un processo completato.
+   * [!UICONTROL Cronologia] processo: Istanze precedenti del processo.
    * [!UICONTROL Visualizzare le risorse]: Visualizza la cartella di destinazione se esiste.
+
+   ![Opzioni della barra degli strumenti per le configurazioni di inserimento](assets/bulk-ingest-toolbar-options.png)
+
+Per pianificare un’importazione in serie una tantum o ricorrente, effettua le seguenti operazioni:
+
+1. Crea una configurazione di importazione in serie.
+1. Seleziona la configurazione e seleziona **[!UICONTROL Pianificazione]** dalla barra degli strumenti.
+1. Imposta un’acquisizione una tantum o pianifica una pianificazione oraria, giornaliera o settimanale. Fare clic su **[!UICONTROL Invia]**.
+
+   ![Pianificare il processo di inserimento in blocco](assets/bulk-ingest-schedule1.png)
 
 ## Caricare risorse utilizzando client desktop {#upload-assets-desktop-clients}
 
