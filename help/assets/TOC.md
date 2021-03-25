@@ -6,7 +6,7 @@ user-guide-description: Informazioni su come utilizzare e amministrare Experienc
 solution: Experience Manager, Experience Manager Assets
 feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 9f47f53524ab89c368ab260bc0d16e47ee81a230
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 71%
@@ -72,9 +72,9 @@ ht-degree: 71%
 + Frammenti di contenuto {#content-fragments}
    + [Utilizzo di frammenti di contenuto](content-fragments/content-fragments.md)
    + [Distribuzione headless con frammenti di contenuto e GraphQL](content-fragments/content-fragments-graphql.md)
-   + [Gestione dei frammenti di contenuto](content-fragments/content-fragments-managing.md)
    + [Abilita funzionalità frammento di contenuto per la tua istanza](content-fragments/content-fragments-configuration-browser.md)
    + [Modelli per frammenti di contenuto](content-fragments/content-fragments-models.md)
+   + [Gestione dei frammenti di contenuto](content-fragments/content-fragments-managing.md)
    + [Varianti - Authoring dei contenuti di frammenti](content-fragments/content-fragments-variations.md)
    + [Contenuti associati a frammenti di contenuto](content-fragments/content-fragments-assoc-content.md)
    + [Metadati - Proprietà dei frammenti](content-fragments/content-fragments-metadata.md)
