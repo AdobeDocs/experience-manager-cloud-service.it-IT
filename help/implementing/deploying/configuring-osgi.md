@@ -3,9 +3,9 @@ title: Configurazione di OSGi per Adobe Experience Manager come Cloud Service
 description: 'Configurazione OSGi con valori segreti e valori specifici per l’ambiente '
 feature: Distribuzione
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2737'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Il caso comune per OSGi utilizza valori di configurazione OSGi in linea. Le conf
 
 ![](assets/choose-configuration-value-type_res1.png)
 
-Le configurazioni specifiche per l’ambiente estendono le configurazioni OSGi tradizionali e definite statisticamente che contengono valori in linea, consentendo di gestire i valori di configurazione OSGi esternamente tramite l’API di Cloud Manager. È importante capire quando utilizzare l’approccio comune e tradizionale di definire i valori in linea e memorizzarli in Git, anziché astrarre i valori in configurazioni specifiche per l’ambiente.
+Le configurazioni specifiche per l’ambiente estendono le configurazioni OSGi tradizionali e definite statisticamente che contengono valori in linea, consentendo di gestire i valori di configurazione OSGi esternamente tramite l’API di Cloud Manager. È importante comprendere quando utilizzare l’approccio comune e tradizionale di definire i valori in linea e memorizzarli in Git, anziché astrarre i valori in configurazioni specifiche per l’ambiente.
 
 Le seguenti linee guida riguardano quando utilizzare configurazioni non segrete e specifiche per l’ambiente:
 
@@ -113,7 +113,7 @@ I valori delle configurazioni in linea sono considerati l’approccio standard e
 * I valori sono implicitamente associati alle distribuzioni del codice
 * Non richiedono ulteriori considerazioni sulla distribuzione o sul coordinamento
 
-Ogni volta che definisci un valore di configurazione OSGi, inizia con i valori in linea, qualsiasi configurazione specifica per il segreto o l’ambiente selezionata solo se necessario per il caso d’uso.
+Quando definisci un valore di configurazione OSGi, inizia con i valori in linea e seleziona solo le configurazioni segrete o specifiche per l’ambiente, se necessario per il caso d’uso.
 
 ### Quando utilizzare valori di configurazione specifici dell&#39;ambiente non segreti {#when-to-use-non-secret-environment-specific-configuration-values}
 
@@ -194,6 +194,10 @@ use $[env:ENV_VAR_NAME]
 ```
 
 I clienti devono utilizzare questa tecnica solo per le proprietà di configurazione OSGI correlate al loro codice personalizzato; non deve essere utilizzato per sostituire la configurazione OSGI definita da Adobe.
+
+>[!NOTE]
+>
+>I segnaposto non possono essere utilizzati in [istruzioni di reindirizzamento](/help/implementing/deploying/overview.md#repoinit).
 
 ### Valori di configurazione segreti {#secret-configuration-values}
 
