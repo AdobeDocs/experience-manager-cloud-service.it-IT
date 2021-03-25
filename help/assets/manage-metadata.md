@@ -4,7 +4,7 @@ description: Scopri i tipi di metadati e come  [!DNL Adobe Experience Manager As
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '1854'
 ht-degree: 3%
@@ -116,7 +116,7 @@ Enterprise Manager Assets consente di modificare contemporaneamente i metadati d
 
 >[!NOTE]
 >
->I metodi di modifica collettiva funzionano per le risorse disponibili in una cartella o in una raccolta. Per le risorse disponibili nelle cartelle o che corrispondono a un criterio comune, è possibile [aggiornare in blocco i metadati dopo la ricerca](/help/assets/search-assets.md#metadataupdates).
+>I metodi di modifica collettiva funzionano per le risorse disponibili in una cartella o in una raccolta. Per le risorse disponibili nelle cartelle o che corrispondono a un criterio comune, è possibile [aggiornare in blocco i metadati dopo la ricerca](/help/assets/search-assets.md#metadata-updates).
 
 1. Andate alla posizione delle risorse da modificare.
 1. Seleziona le risorse per le quali desideri modificare le proprietà comuni.
