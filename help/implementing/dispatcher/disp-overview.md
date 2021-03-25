@@ -3,10 +3,10 @@ title: Dispatcher nel cloud
 description: 'Dispatcher nel cloud '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
+source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
 workflow-type: tm+mt
-source-wordcount: '4113'
-ht-degree: 7%
+source-wordcount: '4169'
+ht-degree: 6%
 
 ---
 
@@ -198,7 +198,21 @@ Lo strumento di convalida è disponibile nell&#39;SDK in `bin/validator` come bi
 
 Viene richiamato come: `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-Lo strumento verifica che la configurazione del Dispatcher utilizzi le direttive appropriate supportate da AEM as a Cloud Service tramite la scansione di tutti i file con pattern `conf.d/enabled_vhosts/*.vhost`. Le direttive consentite nei file di configurazione Apache possono essere elencate eseguendo il comando di inserire nell&#39;elenco Consentiti della convalida:
+Lo strumento verifica che la configurazione del Dispatcher utilizzi le direttive appropriate supportate da AEM as a Cloud Service tramite la scansione di tutti i file con pattern `conf.d/enabled_vhosts/*.vhost`.
+
+In Windows, la convalida del dispatcher fa distinzione tra maiuscole e minuscole. Di conseguenza, la convalida della configurazione può non riuscire se non si rispetta la capitalizzazione del percorso in cui si trova la configurazione, ad esempio:
+
+```
+bin\validator.exe full src
+Cloud manager validator 2.0.xx
+2021/03/15 18:15:40 Dispatcher configuration validation failed:
+  conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
+  
+```
+
+Evita questo errore copiando e incollando il percorso da Esplora risorse e quindi dal prompt dei comandi utilizzando un comando `cd` in quel percorso.
+
+Le direttive consentite nei file di configurazione Apache possono essere elencate eseguendo il comando di inserire nell&#39;elenco Consentiti della convalida:
 
 ```
 $ validator allowlist
