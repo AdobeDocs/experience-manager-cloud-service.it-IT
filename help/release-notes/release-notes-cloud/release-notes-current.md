@@ -2,9 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5d3a183efcd1355c1c5dc34519fbabee34e87578
+source-git-commit: 3a21441f11d59a8d2a706bda8e1676aa072650b3
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1318'
 ht-degree: 3%
 
 ---
@@ -23,51 +23,62 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 ## Data di rilascio {#release-date}
 
-La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 è il 25 febbraio 2021.
-La versione seguente (2021.3.0) sarà del 25 marzo 2021.
+La data di rilascio per [!DNL Adobe Experience Manager] come Cloud Service 2021.3.0 è il 25 marzo 2021.
+La versione seguente (2021.4.0) sarà del 29 aprile 2021.
 
 ## [!DNL Adobe Experience Manager Sites] come Cloud Service  {#sites}
 
-* **[Componente](/help/implementing/developing/hybrid/remote-page.md)** RemotePage: È stato aggiunto il supporto per la visualizzazione e la modifica di SPA esterni in AEM utilizzando.
-
-* **[Modifica di un SPA esterno in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: È stata aggiunta la possibilità di caricare un’applicazione a pagina singola autonoma in un’istanza AEM, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
-
-<!--
-### Progressive Web Apps (PWAs) {#pwa}
-
-* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
--->
+* [È ora possibile abilitare a livello di progetto la versione Progressive Web App (PWA) di un ](/help/sites-cloud/authoring/features/enable-pwa.md) sito tramite una configurazione semplice.
+* Estensioni del modello per frammenti di contenuto : ora è possibile definire tipi di dati di testo con più righe come elenchi a più campi.
+* Miglioramenti dell’interfaccia utente dell’Editor frammenti di contenuto : i frammenti secondari nidificati vengono ora visualizzati nella breadcrumb e viene migliorata la visualizzazione delle azioni di pubblicazione, salvataggio e salvataggio/uscita
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-## Novità in [!DNL Assets] {#what-is-new-assets}
+### Novità in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager Assets] come  [!DNL Cloud Service] ha il diritto di avere un’ [!DNL Brand Portal] istanza preconfigurata. L&#39;utente [!DNL Cloud Manager] può attivare [!DNL Brand Portal] su [!DNL Experience Manager Assets] come [!DNL Cloud Service]. Consulta [attivare Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
+<!-- TBD: refine this list of features and enh. for Feb release.
 
-* Le aziende ora possono creare risorse utilizzando [!DNL Brand Portal]. La funzione Asset sourcing sfrutta [!DNL Brand Portal] per aiutare i clienti a coinvolgere gli utenti dell’agenzia nella creazione di risorse per nuove campagne di marketing, fototiri e progetti. Consulta [determinazione origine risorse in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
-* Il rapporto di utilizzo [!DNL Brand Portal] ora visualizza solo gli utenti attivi. Gli utenti inattivi non vengono visualizzati ora. Gli utenti attivi sono quelli il cui account è assegnato a un profilo di prodotto in [!DNL Admin Console]. Consulta [[!DNL Brand Portal] reports](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
+Indicators for expired, approved, and rejected statuses now available for assets in Column view.
 
-* In [!DNL Brand Portal] viene introdotta una nuova impostazione di download che consente di creare una cartella separata per ogni risorsa durante il download di cartelle, raccolte e così via. Consulta [scarica impostazioni](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
+Ability to select a root path. select if a minimum number of tags is required. 
 
-## Correzioni di bug in [!DNL Assets] {#bug-fixes-assets}
+Add a Boolean or radio widget type to metadata schema setup. -->
 
-* Quando viene creata una nuova versione di una risorsa esistente dopo la risoluzione del conflitto di denominazione, i metadati della risorsa originale vengono sovrascritti. (CQ-4313594)
-* Quando viene stampata una risorsa con testo di annotazione lungo, il testo dell’annotazione viene troncato, anche se è disponibile spazio. (CQ-4314101)
-* Quando selezioni più risorse per aggiornare le proprietà, a volte si verifica un errore o le proprietà di una risorsa deselezionata vengono aggiornate. (CQ-4316532)
-* Quando tenti di aprire la [!UICONTROL Barra di ricerca amministrazione risorse], la pagina rimane vuota e facendo clic su [!UICONTROL Modifica] > [!UICONTROL Impostazioni] viene generato un errore. (CQ-4315079)
+* [!DNL Experience Manager] estende la funzionalità Risorse collegate per supportare l’utilizzo di  [!DNL Dynamic Media] immagini nei componenti core supportati. Consulta [Utilizzare le risorse collegate](/help/assets/use-assets-across-connected-assets-instances.md).
+* Gli amministratori di Experience Manager possono pianificare l’inserimento di risorse in blocco in una data o un’ora specifica. Inoltre, gli amministratori possono pianificare acquisizioni ricorrenti in base a data e ora. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
+
+### Correzioni di bug in [!DNL Assets] {#bug-fixes-assets}
+
+* La pagina di copyright non viene visualizzata quando si tenta di scaricare più risorse gestite tramite diritti . (CQ-4314403)
+* Quando si sceglie di modificare un file INDD, la risoluzione cambia in modo imprevisto. (CQ-4317376)
+* Nella rappresentazione PDF è presente solo l’ultima pagina del modello InDesign. (CQ-4317305)
+* L’apertura del selettore tag richiede molto tempo quando il selettore fa parte di uno schema di metadati complesso. (CQ-4316426)
+* Quando si carica una risorsa con lo stesso nome file di una esistente, la finestra di dialogo del conflitto dei nomi non viene visualizzata per richiedere all’utente di creare una versione. (CQ-4315424)
+* Le proprietà dei metadati della cartella possono essere impostate e salvate dal menu a comparsa nella pagina Proprietà di una cartella. Mentre la selezione viene salvata nell’archivio, non viene visualizzata quando le Proprietà metadati cartella vengono aperte nuovamente. (CQ-4314429)
+* Le risorse con nomi file contenenti spazi o caratteri speciali vengono caricate utilizzando il browser. (CQ-4318381)
+
+## [!DNL Adobe Experience Manager Forms] come  [!DNL Cloud Service] {#forms}
+
+AEM Forms ha aiutato molte organizzazioni a fornire esperienze di onboarding e registrazione straordinarie nel corso degli anni. Queste esperienze hanno aiutato le organizzazioni a convertire i lead in vendite, a elaborare i dati dei clienti acquisiti, a fornire esperienze reattive in base al profilo di pubblico e molto altro. Ora AEM Forms è disponibile come servizio cloud.
+
+È possibile utilizzare [AEM Forms come Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) per creare moduli digitali, collegare moduli a origini dati esistenti, integrare moduli con Adobe Sign per aggiungere firme elettroniche ai moduli, generare documenti di record (DoR) per archiviare i moduli inviati come file PDF. Il servizio può anche convertire i PDF forms esistenti in moduli digitali. Oltre alle funzioni standard di AEM Forms, il servizio offre diverse funzionalità native per il cloud, come il ridimensionamento automatico, tempi di inattività zero per gli aggiornamenti e ambiente di sviluppo nativo per il cloud. Leggi [questo post di blog](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) per scoprire le funzionalità e le funzionalità di AEM Forms as a Cloud Service.
+
+Puoi rivolgerti al tuo rappresentante Adobe per una demo o per iscriverti al servizio.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Novità {#what-is-new-commerce}
 
-* Gestione dell&#39;esperienza del prodotto: Arricchisci le pagine dei cataloghi di prodotti singolarmente con Frammenti esperienza.
+* Supporto per Magenti 2.4.2
 
-* Proprietà estese della console prodotti per visualizzare le risorse collegate e i frammenti esperienza, con l’azione di passare rapidamente al contenuto associato.
+* Il componente dettaglio del prodotto può ora essere utilizzato e configurato in qualsiasi pagina di contenuto
 
-* È stato rilasciato il sito di riferimento CIF Venia - 2021.02.24 che include l’ultima versione dei componenti core CIF v1.8.0. Per ulteriori informazioni, consulta [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) .
+* È stato rilasciato il sito di riferimento CIF Venia - 2021.03.25 che include la versione più recente dei componenti core CIF versione v1.9.0. Per ulteriori informazioni, consulta [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) .
 
-* È stata rilasciata la versione 1.8.0 dei componenti core CIF. Per ulteriori informazioni, consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) .
+* È stata rilasciata la versione 1.9.0 dei componenti core CIF. Per ulteriori informazioni, consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) .
+
 
 ## Cloud Manager {#cloud-manager}
 
@@ -77,7 +88,6 @@ Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Clou
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.3.0 è l’11 marzo 2021.
 La prossima versione è prevista per il 08 aprile 2021.
-
 
 ### Novità {#what-is-new-march}
 
@@ -121,42 +131,6 @@ La prossima versione è prevista per il 08 aprile 2021.
 
 * Tutte le pipeline di produzione esistenti verranno abilitate automaticamente con il passaggio Audit esperienze .
 
-
-### Data di rilascio {#release-date-cm}
-
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.2.0 è l’11 febbraio 2021.
-
-### Novità {#what-is-new-cloud-manager}
-
-
-* I clienti di Assets potranno ora scegliere quando e dove implementare la propria istanza di Brand Portal in modo self-service tramite l’interfaccia utente di Cloud Manager. Per un programma normale (non sandbox) con soluzione Assets, ora è possibile eseguire il provisioning di Brand Portal nell’ambiente Produzione. Il provisioning può essere eseguito una sola volta nell’ambiente di produzione.
-
-* L’Archetipo di progetto AEM utilizzato nella creazione di progetti e sandbox è stato aggiornato alla versione 25.
-
-* L’elenco delle API obsolete identificate durante la scansione del codice è stato perfezionato per includere classi e metodi aggiuntivi obsoleti nelle ultime versioni dell’SDK di Cloud Service.
-
-* Profilo SonarQube per Cloud Manager aggiornato per rimuovere Sonar rule squid:S2142. Questo non entrerà più in conflitto con i controlli di interruzione del thread.
-
-* L’interfaccia utente di Cloud Manager informa l’utente che potrebbe non essere temporaneamente in grado di aggiungere/aggiornare il nome di dominio perché all’ambiente associato è collegata una pipeline in esecuzione o attualmente in attesa del passaggio di approvazione.
-
-* Le proprietà impostate nei file `pom.xml` del cliente con prefisso sonar verranno rimosse in modo dinamico per evitare errori di creazione e di scansione della qualità.
-
-* L’interfaccia utente di Cloud Manager informa l’utente che potrebbe non essere temporaneamente in grado di selezionare un certificato SSL se è utilizzato da un nome di dominio attualmente distribuito.
-
-* Sono state aggiunte regole aggiuntive per la qualità del codice per risolvere i problemi relativi alla compatibilità dei Cloud Service.
-
-### Correzioni di bug {#bug-fixes-cloud-manager}
-
-* La corrispondenza del certificato SSL rispetto a un nome di dominio non fa più distinzione tra maiuscole e minuscole.
-
-* L’interfaccia utente di Cloud Manager ora informa un utente se le chiavi private del certificato non soddisfano il limite di 2048 bit con un messaggio di errore appropriato.
-
-* L’interfaccia utente di Cloud Manager informa l’utente che potrebbe non essere temporaneamente in grado di selezionare un certificato SSL se è utilizzato da un nome di dominio attualmente distribuito.
-
-* In alcuni casi, un problema interno può causare il blocco dell’eliminazione dell’ambiente.
-
-* Alcuni errori di pipeline non sono stati segnalati correttamente come errori di pipeline.
-
 ## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
 
 ### Data di rilascio {#release-date-ctt}
@@ -166,7 +140,6 @@ La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v
 ### Correzioni di bug {#bug-fixes-ctt}
 
 * Il CTT saltava il contenuto dalle cartelle con lo stesso nome ma con un trattino nel nome. Questo problema è stato risolto.
-
 
 ### Data di rilascio {#release-date-ctt-march}
 
@@ -181,53 +154,19 @@ La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v
 
 * Durante la migrazione del contenuto da un percorso specifico, CTT effettuava l’estrazione di risorse non correlate. È stato corretto
 
-
-### Data di rilascio {#release-date-ctt-feb}
-
-La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.2.4 è il 10 febbraio 2021.
-
-### Correzioni di bug {#bug-fixes-ctt-feb}
-
-* Quando si mappavano più utenti, alcuni ID IMS di alcuni utenti venivano mappati in modo errato. Questo problema è stato risolto.
-
-### Data di rilascio {#release-date-ctt-feb01}
-
-La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.2.2 è il 10 febbraio 2021.
-
-### Novità nello strumento Content Transfer (Trasferimento contenuti) {#what-is-new-ctt}
-
-* Aggiunta di nuove funzionalità e interfaccia utente allo strumento Content Transfer (Trasferimento contenuti) - User Mapping Tool (Strumento di mappatura utenti). Questa funzione mappa automaticamente gli utenti e i gruppi esistenti ai loro ID di sistema Identity Management di Adobe come parte dell’attività di migrazione dei contenuti.
-Per ulteriori informazioni, consulta [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) .
-* Lo strumento Content Transfer (Trasferimento contenuti) ora esegue la migrazione di tutti i gruppi e gli utenti a cui viene fatto riferimento nel set di migrazione, inclusi gli elementi figlio.
-* Gli utenti possono selezionare determinati percorsi in `/etc` durante la creazione dei set di migrazione.
-
 ## Analisi delle best practice {#best-practices-analyzer}
-
-### Data di rilascio {#release-date-bpa-march}
-
-La data di rilascio di Best Practices Analyzer v2.1.8 è il 22 marzo 2021.
-
-### Novità di Best Practices Analyzer {#what-is-new-bpa-march}
-
-* Possibilità di filtrare i risultati di ACS Commons dal rapporto BPA nell’interfaccia utente e dal rapporto esportato come file CSV.
 
 ### Data di rilascio {#release-date-bpa}
 
-La data di rilascio di Best Practices Analyzer v2.1.2 è il 18 febbraio 2021.
+La data di rilascio di Best Practices Analyzer v2.1.8 è il 22 marzo 2021.
 
 ### Novità di Best Practices Analyzer {#what-is-new-bpa}
 
-* Possibilità di rilevare l’utilizzo dell’implementazione di AEM Forms e AEM Forms e indicare le aree rilevanti per la migrazione ad AEM Forms come Cloud Service.
-* Possibilità di rilevare e generare rapporti sull’utilizzo e il conteggio dei componenti e dei modelli personalizzati.
-* Possibilità di rilevare il tipo di archivio nodi e archivio dati utilizzati.
-* Possibilità di rilevare l’utilizzo di Dynamic Media.
-* Possibilità di rilevare la versione Java utilizzata.
+* Possibilità di filtrare i risultati di ACS Commons dal rapporto BPA nell’interfaccia utente e dal rapporto esportato come file CSV.
 
 ## Strumenti di refactoring del codice {#code-refactoring-tools}
 
 ### Novità degli strumenti di refactoring del codice {#what-is-new-crt}
-
-* È stata rilasciata la nuova versione del plug-in AIO-CLI. La versione più recente di questo plug-in include diverse nuove funzioni e correzioni di bug per Repository Modernizer e Dispatcher Converter.    Per ulteriori informazioni su questo plug-in, consulta [Esperienza unificata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) .
 
 * Nuove funzioni e miglioramenti per Repository Modernizer. Fai riferimento a [Risorsa GitHub: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per la versione più recente.
    * Normalizza le configurazioni OSGi (eccetto le configurazioni RepoInit) al formato .cfg.json preferito.
@@ -239,30 +178,3 @@ La data di rilascio di Best Practices Analyzer v2.1.2 è il 18 febbraio 2021.
    * Creazione di file separati per inclusioni diverse invece che nel rivestimento del contenuto.
    * Possibilità di gestire sia il percorso della cartella dei vhosts che il percorso dei file vhost.
    * Generazione di file farm con configurazioni cliente di grandi dimensioni in una gamma di 600 e più.
-
-## [!DNL Adobe Experience Manager] come base di Cloud Service  {#aem-as-a-cloud-service-foundation}
-
-### Problemi noti {#known-issues-foundation}
-
-**Alcune build potrebbero non riuscire a causa di un problema con il plugin di Build Analyzer**
-
-In alcuni casi una build del progetto può non riuscire durante l&#39;esecuzione di `aemanalyser-maven-plugin` con il seguente messaggio di errore:
-
-```
-[ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
- 
-Was expecting one of:
- 
-     
- 
-[ERROR] Analyser detected errors on feature
-```
-
-**Soluzione alternativa**
-
-Per risolvere questo problema, seleziona la versione più recente di `aemanalyser-maven-plugin` nel file `pom.xml` principale:
-
-```xml
-<aemanalyser.version>0.9.2</aemanalyser.version>
-```
-
