@@ -3,10 +3,10 @@ title: Utilizzo dei selettori
 description: Scopri i metodi per selezionare le risorse per le immagini interattive, i video interattivi e i banner a carosello in Dynamic Media.
 topic: Professionista
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -87,7 +87,7 @@ Utilizza il selettore del sito per scegliere una pagina web quando desideri che 
 
 Utilizza questo selettore per scegliere le immagini da utilizzare in un banner carosello, un video interattivo, set di immagini, set di file multimediali diversi e set 360 gradi. Nel video interattivo, il selettore delle risorse è disponibile quando tocca **[!UICONTROL Seleziona risorse]** nella scheda **[!UICONTROL Contenuto]** . In Set carosello, il selettore delle risorse è disponibile quando crei una diapositiva. In Set immagini, Set di file multimediali diversi e Set 360 gradi, il selettore delle risorse è disponibile rispettivamente quando crei un set di immagini, un set di file multimediali diversi o un set 360 gradi.
 
-Per ulteriori informazioni, consulta anche [Selettore risorse](/help/assets/search-assets.md#assetselector) .
+Per ulteriori informazioni, consulta anche [Selettore risorse](/help/assets/search-assets.md#asset-selector) .
 
 1. Accedete al Set carosello e create una diapositiva. In alternativa, passa al video interattivo, passa alla scheda **[!UICONTROL Contenuto]** , quindi seleziona le risorse. Oppure crea un set di file multimediali diversi, un set di immagini o un set 360 gradi.
 1. Tocca l’icona **[!UICONTROL Selettore risorse]** (cartella con lente di ingrandimento) e accedi a una risorsa.
