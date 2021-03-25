@@ -2,19 +2,19 @@
 title: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager].
 description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
 
 
-# Aggiungere risorse digitali ad Adobe Experience Manager {#add-assets-to-experience-manager}
+# Aggiungere risorse digitali a Adobe Experience Manager {#add-assets-to-experience-manager}
 
 [!DNL Adobe Experience Manager] arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, tag avanzati, rappresentazioni e altri servizi di Digital Asset Management (DAM). È possibile caricare vari tipi di file, ad esempio immagini, documenti e file immagine non elaborati, dalla cartella locale o da un&#39;unità di rete a [!DNL Experience Manager Assets].
 
-Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all’archivio [!DNL Experience Manager] , inclusi i client desktop, come Adobe Asset Link o l’ [!DNL Experience Manager] app desktop, caricare e acquisire script che i clienti creerebbero, e integrazioni di acquisizione automatizzate aggiunte come estensioni [!DNL Experience Manager].
+Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all’archivio [!DNL Experience Manager] , inclusi i client desktop, come Adobe Asset Link o [!DNL Experience Manager] app desktop, caricare e acquisire script che i clienti creerebbero, e integrazioni di acquisizione automatizzate aggiunte come estensioni [!DNL Experience Manager].
 
 Ci concentreremo sui metodi di caricamento per gli utenti finali qui e forniremo collegamenti agli articoli che descrivono gli aspetti tecnici del caricamento e dell’acquisizione delle risorse utilizzando le API e gli SDK [!DNL Experience Manager].
 
@@ -28,7 +28,7 @@ Puoi anche scegliere di eseguire un’ulteriore elaborazione sulle risorse caric
 >
 >Per caricare il codice personalizzato o esteso dai clienti, i team tecnici devono utilizzare le nuove API e i nuovi protocolli di caricamento.
 
-Assets as a [!DNL Cloud Service] fornisce i seguenti metodi di caricamento. Adobe consiglia di comprendere il caso d’uso e l’applicabilità di un’opzione di caricamento prima di utilizzarla.
+Assets as a [!DNL Cloud Service] fornisce i seguenti metodi di caricamento. L’Adobe consiglia di comprendere il caso d’uso e l’applicabilità di un’opzione di caricamento prima di utilizzarla.
 
 | Metodo di caricamento | Quando utilizzare? | Persona principale |
 |---------------------|----------------|-----------------|
@@ -118,7 +118,7 @@ Puoi caricare una risorsa con lo stesso percorso (nome e posizione identici) di 
 >
 >Se Asset Insights è abilitato per tracciare impression o clic con [!DNL Adobe Analytics], l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa su [!DNL Analytics].
 
-Per mantenere la risorsa duplicata in [!DNL Assets], fai clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, tocca o fai clic su **[!UICONTROL Elimina]**.
+Per mantenere la risorsa duplicata in [!DNL Assets], fai clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, fai clic su **[!UICONTROL Elimina]**.
 
 ### Gestione dei nomi dei file e caratteri non consentiti {#filename-handling}
 
@@ -181,7 +181,7 @@ Per configurare lo strumento, segui questi passaggi:
 
 Oltre all&#39;interfaccia utente del browser Web, [!DNL Experience Manager] supporta altri client sul desktop. Forniscono anche un’esperienza di caricamento senza la necessità di andare al browser web.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) consente di accedere alle risorse dalle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign.  [!DNL Experience Manager] Puoi caricare il documento attualmente aperto in [!DNL Experience Manager] direttamente dall’interfaccia utente di Adobe Asset Link dall’interno di queste applicazioni desktop.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) consente di accedere alle risorse dalle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign  [!DNL Experience Manager] . Puoi caricare il documento attualmente aperto in [!DNL Experience Manager] direttamente dall’interfaccia utente di Adobe Asset Link dall’interno di queste applicazioni desktop.
 * [[!DNL Experience Manager] l’applicazione desktop ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) semplifica l’utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall’applicazione nativa che le gestisce. È particolarmente utile caricare file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file flat.
 
 ## Elabora le risorse durante il caricamento di {#process-when-uploaded}
