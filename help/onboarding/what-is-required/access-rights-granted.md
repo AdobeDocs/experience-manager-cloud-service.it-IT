@@ -2,9 +2,9 @@
 title: Diritti Di Accesso Concessi - Requisiti
 description: Diritti Di Accesso Concessi - Requisiti
 translation-type: tm+mt
-source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
+source-git-commit: 8259bf4e7f2004d76fd985ec7ad7c416b6f8d491
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '576'
 ht-degree: 11%
 
 ---
@@ -41,8 +41,6 @@ Una volta creata l’organizzazione per la società, l’amministratore designat
 
 Con questi diritti concessi, il tuo amministratore è ora configurato con un single sign-on (utilizzando Adobe ID) per accedere ai servizi [!UICONTROL Experience Cloud], accedere agli ambienti cloud AEM e utilizzare [!UICONTROL Cloud Manager].
 
-## Utenti e ruoli {#users-roles}
-
 Molte funzionalità in [!UICONTROL Cloud Manager] richiedono autorizzazioni specifiche per funzionare.
 
 [!UICONTROL Cloud ] Manager definisce attualmente quattro ruoli per gli utenti che determinano la disponibilità di funzionalità specifiche:
@@ -53,7 +51,6 @@ Molte funzionalità in [!UICONTROL Cloud Manager] richiedono autorizzazioni spec
 * Developer (Sviluppatore)
 
 >[!CAUTION]
->
 >Per utilizzare [!UICONTROL Cloud Manager], è necessario disporre di un Adobe ID e di Adobe Experience Manager come contesto di prodotto Cloud Service.
 
 ### Definizioni dei ruoli {#role-definitions}
