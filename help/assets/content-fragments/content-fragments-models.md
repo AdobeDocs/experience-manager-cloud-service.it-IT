@@ -1,10 +1,10 @@
 ---
 title: Modelli per frammenti di contenuto
-description: I modelli per frammenti di contenuto vengono utilizzati per creare frammenti di contenuto con contenuto strutturato.
+description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuti strutturati.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2199'
 ht-degree: 7%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # Modelli per frammenti di contenuto {#content-fragment-models}
 
-I modelli per frammenti di contenuto definiscono la struttura del contenuto per i [frammenti di contenuto](/help/assets/content-fragments/content-fragments.md).
+I modelli per frammenti di contenuto in AEM definiscono la struttura del contenuto per i [frammenti di contenuto,](/help/assets/content-fragments/content-fragments.md) che fungono da base per i contenuti headless.
 
 Per utilizzare i modelli di frammento di contenuto:
 
