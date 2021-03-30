@@ -2,10 +2,10 @@
 title: Differenze e novità - Adobe Experience Manager as a Cloud Service
 description: 'Cosa è diverso e cosa è nuovo - Adobe Experience Manager (AEM) come Cloud Service. '
 translation-type: tm+mt
-source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
+source-git-commit: d2786f51edcb84e3d206c400e4faaecb46a54981
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1885'
+ht-degree: 10%
 
 ---
 
@@ -124,7 +124,7 @@ Cloud Manager si è evoluto come portale self-service in cui è possibile creare
 Cloud Manager crea ambienti nei centri dati in molte aree geografiche, fornendo una copertura globale. I punti di presenza CDN (PoPs) garantiscono una distribuzione dei contenuti a bassa latenza per i clienti di tutto il mondo.
 
 >[!NOTE]
->Per iniziare a utilizzare Cloud Manager in AEM come Cloud Service, consulta [Accesso ad Experience Manager as a Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) .
+>Per iniziare a utilizzare Cloud Manager in AEM come Cloud Service, consulta [Accesso ad Experience Manager as a Cloud Service](/help/onboarding/what-is-required/accessing-aem-instance.md) .
 
 ## Onboarding {#onboarding}
 
