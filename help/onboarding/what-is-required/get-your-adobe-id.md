@@ -2,7 +2,7 @@
 title: Scarica il tuo Adobe ID
 description: Scarica il tuo Adobe ID
 translation-type: tm+mt
-source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Ottenere l&#39;Adobe ID {#adobe-id}
+# Scarica il tuo Adobe ID {#adobe-id}
 
 Questa guida fornisce una lista di controllo per iniziare rapidamente con Cloud Manager e il tuo team. Per aggiungere gli utenti a Cloud Manager ai ruoli assegnati (denominati in Admin Console profili di prodotto ) e alle relative autorizzazioni, avrai bisogno del tuo Adobe ID e dell’aiuto dell’amministratore di sistema. Vengono descritte le istruzioni su come l’amministratore di sistema può eseguire questa operazione tramite Admin Console.
 
