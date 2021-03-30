@@ -1,18 +1,18 @@
 ---
-title: 'Accesso a istanze AEM '
-description: Segui questa pagina per scoprire come accedere a un’istanza AEM
+title: 'Consentire agli utenti di accedere a un''istanza AEM '
+description: Segui questa pagina per scoprire in che modo un amministratore di sistema concede l’accesso utente a un’istanza AEM
 translation-type: tm+mt
-source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
 
 
-# Accedere a un&#39;istanza AEM {#accessing-aem-instance}
+# Consentire agli utenti di accedere a un&#39;istanza AEM {#accessing-aem-instance}
 
-Per accedere a un’istanza AEM da Cloud Manager, effettua le seguenti operazioni:
+In qualità di amministratore di sistema, segui i passaggi seguenti per concedere all’utente l’accesso a un’istanza AEM:
 
 1. Passa a Cloud Manager e fai clic sul pulsante **Gestisci accesso** dalla scheda **Ambienti** come mostrato di seguito.
 
