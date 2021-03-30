@@ -2,10 +2,10 @@
 title: Ruoli utente e autorizzazioni
 description: Questa pagina descrive i ruoli utente e le autorizzazioni. Segui questa pagina per scoprire come aggiungere utenti e assegnarli ai ruoli di Cloud Manager.
 translation-type: tm+mt
-source-git-commit: f09b688db23024d59f39b53766060b6f3b14e564
+source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 11%
+source-wordcount: '624'
+ht-degree: 9%
 
 ---
 
@@ -18,6 +18,10 @@ Adobe creerà un identificatore **Organizzazione** per la società in Adobe Iden
 
 Molte funzionalità di Cloud Manager richiedono autorizzazioni specifiche per funzionare.
 
+Molte funzioni di Cloud Manager richiedono autorizzazioni specifiche per funzionare e limitano le azioni eseguite all’interno dell’interfaccia utente in base ai ruoli e alle autorizzazioni assegnate. In alcuni casi, se non si dispone dell&#39;autorizzazione per eseguire un&#39;azione, il controllo dell&#39;interfaccia è presente ma è disabilitato.
+
+Se desideri eseguire un&#39;azione, ma non puoi, controlla [le autorizzazioni associate alle definizioni dei ruoli](#permissions). A seconda dell&#39;obiettivo, è possibile contattare l&#39;amministratore di sistema e richiedere il ruolo necessario.
+
 Cloud Manager definisce attualmente quattro ruoli per gli utenti che determinano la disponibilità di funzionalità specifiche:
 
 * Business Owner (Proprietario)
@@ -28,6 +32,8 @@ Cloud Manager definisce attualmente quattro ruoli per gli utenti che determinano
 >[!NOTE]
 >La persona sviluppatore in Admin Console non è correlata al ruolo Sviluppatore in [!UICONTROL Cloud Manager].
 
+## Definizioni dei ruoli {#role-definitions}
+
 La tabella seguente riepiloga i ruoli:
 
 | [!UICONTROL Ruoli ] di Cloud Manager | Descrizione |
@@ -37,6 +43,12 @@ La tabella seguente riepiloga i ruoli:
 | Deployment Manager (Responsabile implementazione) | Gestisce le operazioni di distribuzione. Utilizza [!UICONTROL Cloud Manager] per eseguire distribuzioni di stage/produzione. È possibile modificare le pipeline CI/CD. Può approvare importanti errori a 3 livelli. È possibile accedere all’archivio Git. |
 | Developer (Sviluppatore) | Sviluppa e verifica il codice personalizzato dell’applicazione. Utilizza principalmente [!UICONTROL Cloud Manager] per visualizzare lo stato. Può accedere all’archivio Git per il commit del codice. |
 | Autore del contenuto | In genere non interagisce con [!UICONTROL Cloud Manager]. Per accedere a AEM può essere utilizzato il commutatore di programma [!UICONTROL Cloud Manager] (dopo aver navigato da [!UICONTROL Experience Cloud]). |
+
+### Visualizzazione dei ruoli {#view-roles}
+
+Per visualizzare il tuo ruolo in Cloud Manager, accedi all’interfaccia utente di Cloud Manager, seleziona l’icona del tuo profilo nell’angolo in alto a destra e seleziona **Ruoli utente**, come illustrato nella figura seguente.
+
+![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### Profilo del prodotto di integrazione {#integration-product-profile}
 
