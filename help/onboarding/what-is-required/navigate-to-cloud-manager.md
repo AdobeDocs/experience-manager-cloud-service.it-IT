@@ -2,7 +2,7 @@
 title: Navigazione a Cloud Manager
 description: Segui questa pagina per scoprire come passare alla pagina di destinazione di Cloud Manager
 translation-type: tm+mt
-source-git-commit: e77fb8bc94d8be2d8613075f4b1638aab1d2fcbe
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Navigazione a Cloud Manager {#cloud-manager}
+# Passa a Cloud Manager {#cloud-manager}
 
 Una volta che l’amministratore di sistema ti concede l’accesso a Cloud Manager, riceverai un’e-mail che ti porterà alla pagina di accesso di Cloud Manager, accessibile anche tramite [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
 
