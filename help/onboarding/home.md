@@ -2,9 +2,9 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 834d41cfb9b2988b5e7ffa03ad0f45d78c53f915
+source-git-commit: b3f9d750c2103f2af97b8348dcdb24a80a06fa06
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '692'
 ht-degree: 49%
 
 ---
@@ -35,7 +35,7 @@ L’amministratore di sistema può aggiungere utenti e assegnarli ai ruoli di Cl
 
 **[Attività amministratore di sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-Gli amministratori di sistema gestiscono tutti gli aspetti dei propri utenti, dall&#39;accesso alle autorizzazioni. Le seguenti pagine della documentazione includono informazioni che descrivono le attività organizzative di base:
+Gli amministratori di sistema gestiscono tutti gli aspetti dei propri utenti, dall&#39;accesso alle autorizzazioni. La documentazione seguente include informazioni che descrivono le attività organizzative di base, ad esempio:
 
 * Aggiunta di utenti
 * Assegnazione di utenti a ruoli e autorizzazioni di Cloud Manager
