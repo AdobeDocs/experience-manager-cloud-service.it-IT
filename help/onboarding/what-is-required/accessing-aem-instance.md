@@ -2,9 +2,9 @@
 title: 'Accesso a istanze AEM '
 description: Segui questa pagina per scoprire come accedere a un’istanza AEM
 translation-type: tm+mt
-source-git-commit: 7ab5c624ccb2b321462c9759946becd79d03689c
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Accesso a un&#39;istanza AEM {#accessing-aem-instance}
 
-Segui i passaggi seguenti per gestire l’accesso da Cloud Manager:
+Per accedere a un’istanza AEM da Cloud Manager, effettua le seguenti operazioni:
 
 1. Passa a Cloud Manager e fai clic sul pulsante **Gestisci accesso** dalla scheda **Ambienti** come mostrato di seguito.
 
