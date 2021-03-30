@@ -2,7 +2,7 @@
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
 translation-type: tm+mt
-source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
+source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 4%
@@ -119,7 +119,7 @@ L&#39;opzione **Elimina** è disponibile dal menu a discesa nella scheda **Ambie
 
 Seleziona **Gestisci accesso** dal menu a discesa nella scheda **Ambienti**. Puoi passare direttamente all’istanza di authoring e gestire l’accesso per il tuo ambiente.
 
-Per ulteriori informazioni, consulta [Gestione dell’accesso all’istanza di authoring](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) .
+Per ulteriori informazioni, consulta [Gestione dell’accesso all’istanza di authoring](/help/onboarding/what-is-required/accessing-aem-instance.md) .
 
 ![](assets/environ-access.png)
 
