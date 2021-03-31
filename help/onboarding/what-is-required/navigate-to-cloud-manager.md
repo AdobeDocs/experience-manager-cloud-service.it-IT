@@ -2,7 +2,7 @@
 title: Navigazione a Cloud Manager
 description: Segui questa pagina per scoprire come passare alla pagina di destinazione di Cloud Manager
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 9fa8c6632188874036ccfe7570e53a6971ff74b4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 7%
@@ -27,7 +27,7 @@ Una volta che l’amministratore di sistema ti concede l’accesso a Cloud Manag
 
 1. Fai clic su **Launch** dalla scheda Cloud Manager.
 Dopo aver effettuato l&#39;accesso a [!UICONTROL Cloud Manager], puoi utilizzare l&#39;interfaccia utente (interfaccia utente).
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Pagina di destinazione di Cloud Manager {#cloud-manager-landing}
