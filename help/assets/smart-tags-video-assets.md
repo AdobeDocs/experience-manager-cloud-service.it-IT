@@ -1,10 +1,12 @@
 ---
-title: Applicazione di tag avanzati alle risorse video
-description: ' Experience Manager aggiunge automaticamente tag avanzati contestuali e descrittivi ai video utilizzando [!DNL Adobe Sensei].'
+title: Assegnare tag avanzati alle risorse video
+description: Experience Manager aggiunge automaticamente tag avanzati contestuali e descrittivi ai video utilizzando [!DNL Adobe Sensei].
+feature: Tag avanzati, assegnazione tag
+role: Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -12,17 +14,17 @@ ht-degree: 0%
 
 # Assegnare tag avanzati alle risorse video {#video-smart-tags}
 
-La crescente necessità di nuovi contenuti richiede un impegno manuale ridotto per offrire esperienze digitali coinvolgenti in tempi brevi. [!DNL Adobe Experience Manager] come  [!DNL Cloud Service] supporta l’assegnazione automatica di tag alle risorse video mediante l’intelligenza artificiale. Assegnare manualmente i tag ai video può richiedere molto tempo. Tuttavia, [!DNL Adobe Sensei] la funzione di smart tag video attivata utilizza modelli di intelligenza artificiale per analizzare i contenuti video e aggiungere tag alle risorse video. In questo modo, gli utenti DAM possono dedicare meno tempo alla distribuzione di esperienze avanzate ai propri clienti.  Adobe  servizio di machine learning genera due set di tag per un video. Mentre, un set corrisponde a oggetti, scene e attributi nel video; l&#39;altro insieme riguarda azioni quali bere, correre e fare jogging.
+La crescente necessità di nuovi contenuti richiede sforzi manuali ridotti per offrire esperienze digitali avvincenti in tempo reale. [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service] supporta l’assegnazione automatica dei tag alle risorse video tramite l’intelligenza artificiale. L’assegnazione di tag ai video manualmente può richiedere molto tempo. Tuttavia, la funzione di assegnazione tag avanzati video basata su [!DNL Adobe Sensei] utilizza modelli di intelligenza artificiale per analizzare i contenuti video e aggiungere tag alle risorse video. In questo modo, gli utenti DAM possono dedicare più tempo alla distribuzione di esperienze avanzate ai propri clienti. Il servizio di machine learning di Adobe genera due set di tag per un video. Mentre, un set corrisponde a oggetti, scene e attributi in quel video; l&#39;altro insieme riguarda azioni come bere, correre e fare jogging.
 
-Per impostazione predefinita, i tag video sono abilitati in [!DNL Adobe Experience Manager] come [!DNL Cloud Service]. Tuttavia, potete [rifiutare l&#39;assegnazione di tag avanzati video](#opt-out-video-smart-tagging) in una cartella. I video vengono contrassegnati automaticamente quando caricate nuovi video o li rielaborate. [!DNL Experience Manager] crea inoltre le miniature ed estrae i metadati dei file video. Gli smart tag vengono visualizzati in ordine decrescente in base al [punteggio di confidenza](#confidence-score-video-tag) nella risorsa [!UICONTROL Properties].
+L’assegnazione tag video è abilitata per impostazione predefinita in [!DNL Adobe Experience Manager] come [!DNL Cloud Service]. Tuttavia, puoi [rinunciare all’assegnazione tag avanzati video](#opt-out-video-smart-tagging) in una cartella. I video vengono contrassegnati automaticamente quando carichi nuovi video o ne rielabori quelli esistenti. [!DNL Experience Manager] crea inoltre le miniature ed estrae i metadati dei file video. Gli smart tag vengono visualizzati in ordine decrescente in base al loro [punteggio di affidabilità](#confidence-score-video-tag) nella risorsa [!UICONTROL Proprietà].
 
-## Assegnazione di tag avanzati ai video durante il caricamento {#smart-tag-assets-on-ingestion}
+## Video con tag avanzati al caricamento {#smart-tag-assets-on-ingestion}
 
-Quando [caricate risorse video](add-assets.md#upload-assets) in [!DNL Adobe Experience Manager] come [!DNL Cloud Service], i video vengono elaborati. Al termine dell&#39;elaborazione, vedere la scheda [!UICONTROL Base] della risorsa [!UICONTROL Proprietà]. I tag avanzati vengono aggiunti automaticamente al video in [!UICONTROL Smart Tags]. I microservizi di risorse si basano su [!DNL Adobe Sensei] per creare questi smart tag.
+Quando [carichi risorse video](add-assets.md#upload-assets) in [!DNL Adobe Experience Manager] come [!DNL Cloud Service], i video vengono elaborati. Al termine dell’elaborazione, consulta la scheda [!UICONTROL Base] della pagina della risorsa [!UICONTROL Proprietà] . I tag avanzati vengono aggiunti automaticamente al video in [!UICONTROL Tag avanzati]. I microservizi per le risorse sfruttano [!DNL Adobe Sensei] per creare questi tag avanzati.
 
 ![I tag avanzati vengono aggiunti ai video e visualizzati nella scheda Base delle proprietà della risorsa](assets/smart-tags-added-to-videos.png)
 
-Gli smart tag applicati sono ordinati in ordine decrescente in [confidence score](#confidence-score-video-tag), combinati per i tag oggetto e azione, all&#39;interno di [!UICONTROL Smart Tags].
+Gli smart tag applicati sono ordinati in ordine decrescente in [punteggio di affidabilità](#confidence-score-video-tag), combinati per i tag oggetto e azione, all&#39;interno di [!UICONTROL Tag avanzati].
 
 >[!IMPORTANT]
 >
@@ -30,87 +32,87 @@ Gli smart tag applicati sono ordinati in ordine decrescente in [confidence score
 
 ## Assegnazione di tag avanzati ai video esistenti in DAM {#smart-tag-existing-videos}
 
-Le risorse video già esistenti in DAM non dispongono di tag avanzati automaticamente. È necessario [!UICONTROL Rielaborare le risorse] manualmente per generare tag avanzati per tali risorse.
+Le risorse video già esistenti in DAM non vengono contrassegnate automaticamente con tag avanzati. Devi [!UICONTROL rielaborare manualmente le risorse] per generare tag avanzati per tali risorse.
 
-Per applicare tag smart alle risorse video o alle cartelle (comprese le sottocartelle) già presenti nell’archivio delle risorse, effettuate le seguenti operazioni:
+Per assegnare tag avanzati alle risorse video o alle cartelle (comprese le sottocartelle) di risorse già esistenti nell’archivio delle risorse, procedi come segue:
 
-1. Selezionate il logo [!DNL Adobe Experience Manager], quindi selezionate le risorse dalla pagina [!UICONTROL Navigazione].
+1. Seleziona il logo [!DNL Adobe Experience Manager], quindi seleziona le risorse dalla pagina [!UICONTROL Navigazione].
 
-1. Selezionare [!UICONTROL File] per visualizzare l&#39;interfaccia Risorse.
+1. Seleziona [!UICONTROL File] per visualizzare l’interfaccia Assets.
 
-1. Passate alla cartella alla quale desiderate applicare gli smart tag.
+1. Passa alla cartella alla quale desideri applicare gli smart tag.
 
-1. Selezionate l’intera cartella o specifiche risorse video.
+1. Seleziona l’intera cartella o le risorse video specifiche.
 
-1. Selezionare l&#39;icona ![Rielabora risorse](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Rielabora risorse] e selezionare l&#39;opzione [!UICONTROL Processo completo].
+1. Seleziona l&#39;icona ![Rielabora risorse](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Rielabora risorse] e seleziona l&#39;opzione [!UICONTROL Processo completo].
 
 <!-- TBD: Limit size -->
 
-![Rielaborare le risorse per aggiungere tag ai video nell&#39;archivio DAM esistente](assets/reprocess.gif)
+![Rielaborazione delle risorse per aggiungere tag ai video dell’archivio DAM esistente](assets/reprocess.gif)
 
-Al termine del processo, andate alla pagina [!UICONTROL Properties] di qualsiasi risorsa video all&#39;interno della cartella. I tag aggiunti automaticamente sono visualizzati nella sezione [!UICONTROL Smart Tags] della scheda [!UICONTROL Basic]. Questi smart tag applicati sono ordinati in ordine decrescente in base al [punteggio di confidenza](#confidence-score-video-tag).
+Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa video all’interno della cartella. I tag aggiunti automaticamente vengono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base] . Questi tag avanzati applicati sono ordinati in ordine decrescente in [punteggio di affidabilità](#confidence-score-video-tag).
 
-## Ricerca di video con tag {#search-smart-tagged-videos}
+## Cerca video con tag {#search-smart-tagged-videos}
 
-Per cercare le risorse video in base agli smart tag generati automaticamente, utilizzate [Omnisearch](search-assets.md#search-assets-in-aem):
+Per cercare le risorse video in base agli smart tag generati automaticamente, utilizza [Omnisearch](search-assets.md#search-assets-in-aem):
 
-1. Selezionate l&#39;icona di ricerca ![icona di ricerca](assets/do-not-localize/search_icon.png) per visualizzare il campo Omnisearch.
+1. Seleziona l’icona di ricerca ![icona di ricerca](assets/do-not-localize/search_icon.png) per visualizzare il campo Omnisearch.
 
-1. Specificate un tag, nel campo Omnisearch, che non è stato aggiunto in modo esplicito a un video.
+1. Specifica un tag nel campo Omnisearch che non è stato aggiunto in modo esplicito a un video.
 
-1. Consente di effettuare ricerche in base al tag .
+1. Cerca in base al tag .
 
 I risultati della ricerca visualizzano le risorse video in base al tag specificato.
 
-I risultati della ricerca sono una combinazione di risorse video con parole chiave ricercate nei metadati e risorse video con tag avanzati associati alle parole chiave cercate. Tuttavia, i risultati di ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati di ricerca che corrispondono a qualsiasi termine di ricerca negli smart tag. Per ulteriori informazioni, vedere [Comprendere [!DNL Experience Manager] i risultati della ricerca con gli smart tag](smart-tags.md#understandsearch).
+I risultati della ricerca sono una combinazione di risorse video con parole chiave cercate nei metadati e risorse video con tag avanzati con le parole chiave cercate. Tuttavia, i risultati di ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati di ricerca che corrispondono a qualsiasi termine di ricerca negli smart tag. Per ulteriori informazioni, consulta [Comprendere [!DNL Experience Manager] i risultati della ricerca con tag avanzati](smart-tags.md#understandsearch).
 
-## Smart tag video moderati {#moderate-video-smart-tags}
+## Tag video avanzati moderati {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] consente di gestire gli smart tag per:
+[!DNL Adobe Experience Manager] consente di curare gli smart tag in:
 
-* rimuovete i tag non accurati assegnati ai video del vostro marchio.
+* rimuovi i tag imprecisi assegnati ai video del tuo marchio.
 
-* potete perfezionare le ricerche di video in base ai tag, accertandovi che il video venga visualizzato nei risultati di ricerca per i tag più rilevanti. Pertanto, elimina le possibilità che video non correlati vengano visualizzati nei risultati della ricerca.
+* perfeziona le ricerche basate su tag per i video assicurando che il video venga visualizzato nei risultati di ricerca per i tag più rilevanti. Pertanto, elimina le possibilità che i video non correlati vengano visualizzati nei risultati della ricerca.
 
-* assegnate un rango più alto a un tag per aumentarne la pertinenza rispetto a un video. La promozione di un tag per un video aumenta le probabilità che il video venga visualizzato nei risultati della ricerca quando viene eseguita una ricerca in base a tale tag.
+* assegna un rango più alto a un tag per aumentarne la pertinenza rispetto a un video. La promozione di un tag per un video aumenta le possibilità che il video venga visualizzato nei risultati della ricerca quando viene eseguita una ricerca basata su tale tag.
 
-Per ulteriori informazioni su come moderare gli smart tag per le risorse, consultate [Gestione di smart tag](smart-tags.md#manage-smart-tags-and-searches).
+Per ulteriori informazioni su come moderare gli smart tag per le risorse, consulta [Gestire gli smart tag](smart-tags.md#manage-smart-tags-and-searches).
 
-![Smart tag video moderati](assets/manage-video-smart-tags.png)
+![Tag video moderati](assets/manage-video-smart-tags.png)
 
 >[!NOTE]
 >
->Eventuali tag sottoposti a moderazione tramite i passaggi descritti in [Gestisci smart tag](smart-tags.md#manage-smart-tags-and-searches) non vengono ricordati durante la rielaborazione della risorsa. Il set di tag originale viene visualizzato di nuovo.
+>Eventuali tag sottoposti a moderazione tramite i passaggi descritti in [Gestione tag avanzati](smart-tags.md#manage-smart-tags-and-searches) non vengono ricordati durante la rielaborazione della risorsa. Viene nuovamente visualizzato il set di tag originale.
 
-## Rifiuto dell&#39;assegnazione di tag avanzati video {#opt-out-video-smart-tagging}
+## Rinuncia all’assegnazione tag avanzati video {#opt-out-video-smart-tagging}
 
-L’applicazione automatizzata di tag ai video avviene in parallelo ad altre attività di elaborazione delle risorse, come la creazione di miniature ed estrazione di metadati. Può richiedere molto tempo. Per accelerare l’elaborazione delle risorse potete rinunciare all’assegnazione di tag video avanzati al caricamento a livello di cartella.
+Poiché l’assegnazione tag automatizzata dei video viene eseguita in parallelo ad altre attività di elaborazione delle risorse, come la creazione di miniature e l’estrazione dei metadati, può richiedere molto tempo. Per accelerare l’elaborazione delle risorse, puoi rinunciare all’assegnazione tag avanzati video al caricamento a livello di cartella.
 
-Per rifiutare la generazione automatica di smart tag video per le risorse caricate in una cartella specifica:
+Per rifiutare la generazione automatica di tag avanzati video per le risorse caricate in una cartella specifica:
 
-1. Aprite la scheda [!UICONTROL Elaborazione risorse] nella cartella [!UICONTROL Proprietà].
+1. Apri la scheda [!UICONTROL Elaborazione risorse] nella cartella [!UICONTROL Proprietà].
 
-1. Nel menu [!UICONTROL Tag avanzati per video], l&#39;opzione [!UICONTROL Ereditato] è selezionata per impostazione predefinita e lo smart tag video è attivato.
+1. Nel menu [!UICONTROL Tag avanzati per video], l’opzione [!UICONTROL Ereditato] è selezionata per impostazione predefinita e lo smart tag video è attivato.
 
-   Quando l&#39;opzione [!UICONTROL Ereditato] è selezionata, anche il percorso della cartella ereditata è visibile insieme alle informazioni se è impostato su [!UICONTROL Abilita] o [!UICONTROL Disattiva].
+   Quando l&#39;opzione [!UICONTROL Ereditato] è selezionata, anche il percorso della cartella ereditato è visibile insieme alle informazioni se è impostato su [!UICONTROL Abilita] o [!UICONTROL Disabilita].
 
-   ![Disabilita tag video avanzati](assets/disable-video-tagging.png)
+   ![Disabilita assegnazione tag video avanzati](assets/disable-video-tagging.png)
 
-1. Selezionate [!UICONTROL Disattiva] per non applicare tag avanzati ai video caricati nella cartella.
+1. Seleziona [!UICONTROL Disabilita] per rinunciare all’assegnazione tag avanzati ai video caricati nella cartella.
 
 >[!IMPORTANT]
 >
->Se avete rinunciato a assegnare tag ai video presenti in una cartella al momento del caricamento e desiderate aggiungere tag avanzati ai video dopo il caricamento, **[!UICONTROL Abilita smart tag per video]** dalla scheda [!UICONTROL Elaborazione risorse] della cartella [!UICONTROL Proprietà] e utilizzate l&#39;opzione [[!UICONTROL Rielabora risorsa]](#smart-tag-existing-videos) per aggiungere smart tag il video.
+>Se hai rinunciato a assegnare tag ai video in una cartella al momento del caricamento e desideri assegnare tag avanzati ai video dopo il caricamento, seleziona l’opzione **[!UICONTROL Abilita tag avanzati per video]** dalla scheda [!UICONTROL Elaborazione risorse] della cartella [!UICONTROL Proprietà] e utilizza l’opzione [[!UICONTROL Rielabora risorsa]](#smart-tag-existing-videos) per aggiungere tag avanzati il video.
 
-## Punteggio di confidenza {#confidence-score-video-tag}
+## Punteggio di affidabilità {#confidence-score-video-tag}
 
-[!DNL Adobe Experience Manager] applica una soglia di confidenza minima per gli smart tag di oggetto e azione per evitare di avere troppi tag per ciascuna risorsa video, il che rallenta l’indicizzazione. I risultati della ricerca delle risorse vengono classificati in base ai punteggi di attendibilità, che in genere migliorano i risultati della ricerca oltre a quanto suggerisce un’ispezione dei tag assegnati di qualsiasi risorsa video. I tag non accurati hanno spesso dei punteggi di confidenza bassi, pertanto vengono raramente visualizzati nella parte superiore dell’elenco dei tag avanzati per le risorse.
+[!DNL Adobe Experience Manager] applica una soglia minima di affidabilità per gli smart tag oggetto e azione per evitare di avere troppi tag per ogni risorsa video, il che rallenta l’indicizzazione. I risultati della ricerca delle risorse vengono classificati in base ai punteggi di affidabilità, che in genere migliorano i risultati della ricerca oltre a quanto suggerisce un’ispezione dei tag assegnati di qualsiasi risorsa video. I tag errati hanno spesso punteggi di affidabilità bassi, quindi raramente compaiono nella parte superiore dell’elenco dei tag avanzati per le risorse.
 
-La soglia predefinita per i tag azione e oggetto in [!DNL Adobe Experience Manager] è 0,7 (il valore deve essere compreso tra 0 e 1). Se alcune risorse video non dispongono di tag specifici, significa che l’algoritmo è sicuro di meno del 70% nei tag previsti. La soglia predefinita potrebbe non essere sempre ottimale per tutti gli utenti. È quindi possibile modificare il valore del punteggio di confidenza nella configurazione OSGI.
+La soglia predefinita per i tag azione e oggetto in [!DNL Adobe Experience Manager] è 0,7 (deve essere un valore compreso tra 0 e 1). Se alcune risorse video non sono contrassegnate da un tag specifico, significa che l’algoritmo è meno del 70% sicuro dei tag previsti. La soglia predefinita potrebbe non essere sempre ottimale per tutti gli utenti. È quindi possibile modificare il valore del punteggio di affidabilità nella configurazione OSGI.
 
-Per aggiungere la configurazione OSGI del punteggio di confidenza al progetto distribuito in [!DNL Adobe Experience Manager] come [!DNL Cloud Service] fino a [!DNL Cloud Manager]:
+Per aggiungere la configurazione OSGI del punteggio di affidabilità al progetto distribuito in [!DNL Adobe Experience Manager] come [!DNL Cloud Service] fino a [!DNL Cloud Manager]:
 
-* Nel progetto [!DNL Adobe Experience Manager] (`ui.config` a partire da Archetype 24 o in precedenza `ui.apps`) la configurazione `config.author` OSGi include un file di configurazione denominato `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` con i seguenti contenuti:
+* Nel progetto [!DNL Adobe Experience Manager] (`ui.config` da Archetype 24 o in precedenza `ui.apps`) la configurazione `config.author` OSGi, includi un file di configurazione denominato `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` con il seguente contenuto:
 
 ```json
 {
@@ -121,20 +123,20 @@ Per aggiungere la configurazione OSGI del punteggio di confidenza al progetto di
 
 >[!NOTE]
 >
->Ai tag manuali viene assegnata una confidenza del 100% (massima affidabilità). Di conseguenza, se sono presenti risorse video con tag manuali corrispondenti alla query di ricerca, queste vengono visualizzate prima di smart tag corrispondenti alla query di ricerca.
+>Ai tag manuali viene assegnata un’affidabilità del 100% (massima affidabilità). Pertanto, se sono presenti risorse video con tag manuali corrispondenti alla query di ricerca, queste vengono visualizzate prima di tag avanzati corrispondenti alla query di ricerca.
 
 ## Limitazioni  {#video-smart-tagging-limitations}
 
-* Non potete addestrare il servizio che applica tag avanzati ai video utilizzando video specifici. Funziona con le impostazioni [!DNL Adobe Sensei] predefinite.
+* Non puoi addestrare il servizio che applica tag avanzati ai video utilizzando uno specifico video. Funziona con le impostazioni [!DNL Adobe Sensei] predefinite.
 
-* L&#39;avanzamento dei tag non viene visualizzato.
+* L’avanzamento dei tag non viene visualizzato.
 
-* I tag automatici vengono assegnati solo ai video di dimensioni inferiori a 300 MB. Il servizio [!DNL Adobe Sensei] ignora i file video di dimensioni maggiori.
+* Solo i video di dimensioni inferiori a 300 MB nelle dimensioni del file sono con tag automatici. Il servizio [!DNL Adobe Sensei] ignora i file video di dimensioni maggiori.
 
-* Solo i video nei formati di file e i codec supportati menzionati in [Smart Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats) sono contrassegnati con tag.
+* Solo i video nei formati di file e nei codec supportati menzionati in [Tag avanzati](/help/assets/smart-tags.md#smart-tags-supported-file-formats) sono taggati.
 
 >[!MORELIKETHIS]
 >
->* [Gestione di smart tag e ricerche di risorse](smart-tags.md#manage-smart-tags-and-searches)
->* [Servizio Smart Tag per formazione e tag delle immagini](smart-tags.md)
+>* [Gestione di tag avanzati e ricerche delle risorse](smart-tags.md#manage-smart-tags-and-searches)
+>* [Addestra il servizio di tag avanzati e assegna tag alle tue immagini](smart-tags.md)
 
