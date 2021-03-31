@@ -1,11 +1,13 @@
 ---
 title: Markdown
 description: Scopri in che modo l’editor Frammento di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti headless.
+feature: Frammenti di contenuto
+role: Professionista
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 4%
+source-wordcount: '524'
+ht-degree: 5%
 
 ---
 
