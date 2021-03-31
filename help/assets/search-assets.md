@@ -3,10 +3,12 @@ title: Cercare risorse digitali e immagini in [!DNL Adobe Experience Manager]
 description: Scopri come trovare le risorse richieste in [!DNL Adobe Experience Manager] utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Ricerca,Metadati,Distribuzione delle risorse
+role: Business Practices, Amministratore
 translation-type: tm+mt
-source-git-commit: c2c453bf8e3b7cf23a9b31cbc4feac117e11a695
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '4912'
+source-wordcount: '4919'
 ht-degree: 6%
 
 ---
