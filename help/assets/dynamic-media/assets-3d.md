@@ -7,10 +7,11 @@ topic-tags: introduction
 content-type: reference
 feature: Risorse 3D
 topic: Professionista
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 890b4d6b519ca682470d40c6615f17c228d233f9
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2273'
 ht-degree: 4%
 
 ---
@@ -94,7 +95,7 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
 >[!TIP]
 >
->Puoi aprire il predefinito visualizzatore dimensionale nell’Editor predefiniti per visualizzatori per esercitarti a navigare su una risorsa 3D senza dover prima caricare alcun file 3D. Il predefinito visualizzatore dimensionale dispone di una risorsa 3D incorporata con cui puoi interagire.
+>Puoi aprire il predefinito visualizzatore dimensionale nell’Editor predefiniti per visualizzatori per esercitarti a navigare su una risorsa 3D senza dover prima caricare alcun file 3D. Il predefinito visualizzatore dimensionale dispone di una risorsa 3D incorporata con cui è possibile interagire.
 >
 >Consulta [Gestione dei predefiniti per visualizzatori.](/help/assets/dynamic-media/managing-viewer-presets.md)
 
@@ -123,7 +124,7 @@ Consulta anche [Anteprima delle risorse tramite l&#39;interfaccia software.](/he
    * **Zoom della fotocamera**  - Zoom della fotocamera per spostarsi in e fuori da aree della scena 3D.
       * _Mouse_: Ruota di scorrimento.
       * _Schermata_ touch: Pizzico a due dita.
-   * **Ricentrate la fotocamera** : inserite nuovamente la fotocamera in un punto della scena 3D.
+   * **Ricentrate la fotocamera**  - Ricentate la fotocamera in un punto su un oggetto nella scena 3D.
       * _Mouse_: Fare doppio clic.
       * _Schermata_ touch: Tocca due volte.
    * **Ripristina** : vicino all’angolo inferiore destro della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole.
