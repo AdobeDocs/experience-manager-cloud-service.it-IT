@@ -2,9 +2,9 @@
 title: 'Consentire agli utenti di accedere a un''istanza AEM '
 description: Segui questa pagina per scoprire in che modo un amministratore di sistema concede l’accesso utente a un’istanza AEM
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
