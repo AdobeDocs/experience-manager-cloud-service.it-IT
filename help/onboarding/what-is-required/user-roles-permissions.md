@@ -2,7 +2,7 @@
 title: Ruoli utente e autorizzazioni
 description: Questa pagina descrive i ruoli utente e le autorizzazioni. Segui questa pagina per scoprire come aggiungere utenti e assegnarli ai ruoli di Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 9%
@@ -12,7 +12,7 @@ ht-degree: 9%
 
 # Ruoli utente e autorizzazioni {#user-roles-permissions}
 
-Adobe creerà un identificatore **Organizzazione** per la società in Adobe Identity Management System (IMS), in cui è possibile gestire tutti gli utenti e le relative autorizzazioni. Ogni utente, che deve essere membro di questa organizzazione e avrà accesso a uno qualsiasi dei servizi [!UICONTROL Experience Cloud], dovrà disporre del proprio **Adobe ID**.
+Adobe creerà un identificatore **Organizzazione** per la società in Adobe Identity Management System (IMS), in cui è possibile gestire tutti gli utenti e le relative autorizzazioni. Ogni utente, che deve essere membro di questa organizzazione e avrà accesso a uno qualsiasi dei servizi [!UICONTROL Experience Cloud], dovrà disporre del proprio **[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**.
 
 ## Ruoli utente {#user-roles}
 
