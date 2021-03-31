@@ -2,7 +2,7 @@
 title: Navigazione a Cloud Manager
 description: Segui questa pagina per scoprire come passare alla pagina di destinazione di Cloud Manager
 translation-type: tm+mt
-source-git-commit: eeee28ac5889f18ae147d390e6dc8c2d7cb96591
+source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 7%
@@ -24,7 +24,7 @@ Una volta che l’amministratore di sistema ti concede l’accesso a Cloud Manag
 
    Oppure,
 
-   1. Passa alla pagina di accesso di Cloud Manager da [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)
+   1. Passa alla pagina di accesso di Cloud Manager da [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
 
    1. Selezionare **Experience Manager**.
       ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
