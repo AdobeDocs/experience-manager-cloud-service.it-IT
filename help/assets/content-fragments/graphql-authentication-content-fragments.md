@@ -1,10 +1,11 @@
 ---
 title: Autenticazione per query GraphQL AEM remote su frammenti di contenuto
 description: Comprendere l’autenticazione necessaria per le query GraphQL AEM remote al fine di proteggere la distribuzione di contenuti headless.
+feature: Frammenti di contenuto, API GraphQL
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
