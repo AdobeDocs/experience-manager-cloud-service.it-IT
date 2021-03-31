@@ -2,9 +2,9 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
+source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '905'
 ht-degree: 41%
 
 ---
@@ -28,7 +28,7 @@ Questa sezione descrive gli articoli chiave sul tuo percorso quando inizi con AE
 
 Una volta firmato il contratto, avranno luogo i seguenti eventi:
 
-1. Adobe completa il provisioning per la tua organizzazione in seguito al quale l’amministratore di sistema della tua organizzazione riceverà un’e-mail di benvenuto che consente loro di eseguire [attività di amministratore](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), includendo l’aggiunta di utenti, assegnandoli ai ruoli e fornendo loro l’accesso [appropriato a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
+1. Adobe completa il provisioning per la tua organizzazione in seguito al quale l’amministratore di sistema della tua organizzazione riceverà un’e-mail di benvenuto che consente loro di eseguire [attività di amministratore di sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), includendo l’aggiunta di utenti, assegnandoli ai ruoli e fornendo loro l’accesso [appropriato a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
 
 1. Gli utenti aggiunti dall’amministratore di sistema riceveranno a loro volta un messaggio e-mail di benvenuto per informarli di avere [accesso a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Gli utenti possono ora utilizzare il proprio [Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md) per accedere e iniziare il proprio percorso con Cloud Manager da qui.
 
