@@ -2,15 +2,21 @@
 title: 'Attività amministratore di sistema '
 description: Segui questa pagina per scoprire come aggiungere utenti e assegnarli ai ruoli di Cloud Manager come amministratore di sistema
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
 
 # Attività amministratore di sistema {#add-users-assign}
+
+Gli amministratori di sistema gestiscono tutti gli aspetti dei propri utenti, dall&#39;accesso alle autorizzazioni. Questo utente è la prima persona ad avere accesso per iniziare a eseguire attività in Admin Console e Cloud Manager.
+Un amministratore di sistema esegue le seguenti attività organizzative:
+
+* Aggiunta di utenti
+* Assegnazione di utenti a ruoli e autorizzazioni di Cloud Manager
 
 ## Aggiunta di utenti {#add-users}
 
