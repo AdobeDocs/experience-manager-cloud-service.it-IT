@@ -3,11 +3,12 @@ title: Distribuzione di risorse Dynamic Media
 description: Scopri come distribuire le risorse Dynamic Media.
 feature: Gestione risorse
 topic: Professionista
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 6%
+source-wordcount: '321'
+ht-degree: 7%
 
 ---
 
