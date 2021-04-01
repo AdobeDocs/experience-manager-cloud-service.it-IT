@@ -3,11 +3,12 @@ title: Applicazione dei predefiniti per visualizzatori Dynamic Media
 description: Scopri come applicare i predefiniti visualizzatore in Dynamic Media.
 feature: Predefiniti visualizzatore, Visualizzatori
 topic: Amministratore, Business Practices
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 25%
+source-wordcount: '223'
+ht-degree: 26%
 
 ---
 
