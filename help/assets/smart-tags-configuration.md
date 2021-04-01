@@ -2,10 +2,12 @@
 title: Tag avanzati migliorati
 description: Applica tag aziendali contestuali e descrittivi utilizzando i servizi di intelligenza artificiale e machine learning di Adobe Sensei per migliorare l’individuazione delle risorse e velocizzare la realizzazione dei contenuti.
 contentOwner: AG
+feature: Tag avanzati, assegnazione tag
+role: Administrator
 translation-type: tm+mt
-source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1035'
 ht-degree: 83%
 
 ---
@@ -13,7 +15,7 @@ ht-degree: 83%
 
 # Configurare [!DNL Experience Manager] per l’assegnazione di tag avanzati alle risorse {#configure-aem-for-smart-tagging}
 
-L’assegnazione dei tag alle risorse mediante un vocabolario controllato dalla tassonomia consente di individuare e recuperare facilmente le risorse tramite ricerche basate sui tag. Adobe fornisce tag avanzati che utilizzano algoritmi di intelligenza artificiale e apprendimento automatico per addestrare le immagini. Grazie a un framework di intelligenza artificiale di [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html), l’algoritmo di riconoscimento delle immagini viene addestrato in base alla tua struttura dei tag e alla tassonomia aziendale.
+L’assegnazione dei tag alle risorse mediante un vocabolario controllato dalla tassonomia consente di individuare e recuperare facilmente le risorse tramite ricerche basate sui tag. Adobe fornisce Tag avanzati che utilizzano l’intelligenza artificiale e algoritmi di apprendimento automatico per addestrare le immagini. Grazie a un framework di intelligenza artificiale di [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html), l’algoritmo di riconoscimento delle immagini viene addestrato in base alla tua struttura dei tag e alla tassonomia aziendale.
 
 La funzionalità Tag avanzati è acquistabile come componente aggiuntivo per [!DNL Experience Manager]. Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento ad Adobe Developer Console. L’amministratore accede al collegamento per integrare Tag avanzati con [!DNL Experience Manager] tramite Adobe Developer Console.
 
@@ -64,7 +66,7 @@ Per utilizzare Tag avanzati, crea un’integrazione in Adobe Developer Console p
 
 1. Accedi a [https://console.adobe.io](https://console.adobe.io/) in un browser. Seleziona l’account appropriato e verifica che il ruolo aziendale associato sia quello di amministratore di sistema.
 1. Crea un progetto con il nome desiderato. Fai clic su **[!UICONTROL Aggiungi API]**.
-1. Nella pagina **[!UICONTROL Aggiungi un&#39;API]**, seleziona **[!UICONTROL Experience Cloud]**, quindi seleziona **[!UICONTROL Smart Content]**. Fai clic su **[!UICONTROL Avanti]**.
+1. Nella pagina **[!UICONTROL Aggiungi un API]**, seleziona **[!UICONTROL Experience Cloud]**, quindi seleziona **[!UICONTROL Contenuto avanzato]**. Fai clic su **[!UICONTROL Avanti]**.
 1. Seleziona **[!UICONTROL Carica la chiave pubblica]**. Fornisci il file del certificato scaricato da [!DNL Experience Manager]. Viene visualizzato il messaggio [!UICONTROL Chiavi pubbliche caricate correttamente]. Fai clic su **[!UICONTROL Avanti]**.
 1. [!UICONTROL Nella pagina delle ] credenziali Crea un nuovo account di servizio (JWT) viene visualizzata la chiave pubblica per l’account di servizio. Fai clic su **[!UICONTROL Avanti]**.
 1. Nella pagina per la **[!UICONTROL selezione dei profili di prodotto]**, seleziona **[!UICONTROL Servizi di contenuti avanzati]**. Fai clic su **[!UICONTROL Salva API configurata]**. In una pagina vengono visualizzate ulteriori informazioni sulla configurazione. Tieni aperta questa pagina per copiare e aggiungere questi valori in [!DNL Experience Manager] durante l’ulteriore configurazione di Tag avanzati in [!DNL Experience Manager].
