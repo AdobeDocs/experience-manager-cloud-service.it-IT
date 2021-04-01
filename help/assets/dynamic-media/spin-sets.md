@@ -3,10 +3,11 @@ title: Set 360 gradi
 description: Scopri come utilizzare i set 360 gradi in Dynamic Media.
 feature: Set 360 gradi
 topic: Professionista
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1833'
 ht-degree: 12%
 
 ---
