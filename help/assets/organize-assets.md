@@ -2,13 +2,13 @@
 title: Organizzare le risorse digitali
 description: Organizza le risorse digitali utilizzando vari metodi disponibili in Risorse Adobe Experience Manager.
 contentOwner: AG
-feature: Gestione risorse
-topic: '"Amministratore, Business Practitioner"'
+feature: Gestione risorse, assegnazione tag, distribuzione risorse
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 1%
+source-wordcount: '452'
+ht-degree: 2%
 
 ---
 
