@@ -2,9 +2,9 @@
 title: 'Consentire agli utenti di accedere a un''istanza AEM '
 description: Segui questa pagina per scoprire in che modo un amministratore di sistema concede l’accesso utente a un’istanza AEM
 translation-type: tm+mt
-source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ In qualità di amministratore di sistema, segui i passaggi seguenti per conceder
 1. Passa a Cloud Manager e fai clic sul pulsante **Gestisci accesso** dalla scheda **Ambienti** come mostrato di seguito.
 
    >[!NOTE]
-   >Per poter aggiungere un utente nell’Admin Console, devi essere un amministratore di sistema o l’utente che ha creato l’ambiente. Solo i ruoli Proprietario business o Manager distribuzione dispongono delle autorizzazioni per creare un ambiente. Per ulteriori informazioni sui ruoli e le autorizzazioni associate, consulta [Ruoli utente e autorizzazioni](/help/onboarding/what-is-required/user-roles-permissions.md) . Inoltre, per informazioni sugli ambienti, consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md) .
+   >Per poter aggiungere un utente nell’Admin Console, devi essere un amministratore di sistema o l’utente che ha creato l’ambiente. Solo i ruoli Proprietario business o Manager distribuzione dispongono delle autorizzazioni per creare un ambiente. Per ulteriori informazioni sui ruoli e le autorizzazioni associate, consulta [Ruoli di Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) . Inoltre, per informazioni sugli ambienti, consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md) .
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    Oppure,
 
-   **Gestisci** accesso è disponibile anche dal pulsante  **** Gestione, se fai clic su  **** Dettagli da  **** Ambiente.
+   Dalla pagina **Ambienti**, seleziona **Gestisci** —> **Gestisci accesso**.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
