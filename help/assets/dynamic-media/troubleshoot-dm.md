@@ -2,10 +2,11 @@
 title: Risoluzione dei problemi relativi a Dynamic Media
 description: Suggerimenti per la risoluzione dei problemi durante l’utilizzo di Dynamic Media.
 topic: '"Amministratore, Business Practitioner"'
+role: Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '996'
 ht-degree: 2%
 
 ---
