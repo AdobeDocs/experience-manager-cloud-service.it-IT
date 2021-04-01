@@ -3,11 +3,12 @@ title: Banner a carosello
 description: Scopri come utilizzare i banner carosello in Dynamic Media.
 feature: Banner a carosello
 topic: Professionista
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '4565'
-ht-degree: 3%
+source-wordcount: '4567'
+ht-degree: 4%
 
 ---
 
