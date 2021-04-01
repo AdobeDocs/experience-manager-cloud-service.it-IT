@@ -3,10 +3,11 @@ title: Profili video di Dynamic Media
 description: Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni di questo profilo predefinito sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Puoi anche aggiungere ritaglio avanzato ai video.
 feature: Gestione Delle Risorse, Profili Video, Rendering
 topic: Professionista
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '3666'
+source-wordcount: '3668'
 ht-degree: 10%
 
 ---
