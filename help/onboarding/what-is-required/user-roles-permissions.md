@@ -2,7 +2,7 @@
 title: Ruoli di Cloud Manager
 description: Questa pagina descrive i ruoli utente e le autorizzazioni. Segui questa pagina per scoprire come aggiungere utenti e assegnarli ai ruoli di Cloud Manager.
 translation-type: tm+mt
-source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
+source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 8%
@@ -65,7 +65,7 @@ La tabella seguente riepiloga i ruoli e le relative autorizzazioni associate in 
 | Aggiungi programma<br>Modifica programma | Aggiungi un nuovo programma.<br>Modificare un programma - Aggiungere o rimuovere soluzioni o componenti aggiuntivi | x |  |  |  |
 | Creare un ambiente | Crea Prod+Stage, Sviluppo, Ambienti. | x | x |  |  |
 | Ambiente di aggiornamento | Aggiorna Prod+Stage, Dev, Ambienti. | x | x |  |  |
-| Elimina ambiente | Elimina ambienti non prod, sviluppo e non. | x | x |  |  |
+| Elimina ambiente di sviluppo | Eliminare gli ambienti di sviluppo. | x | x |  |  |
 | Configurazione della pipeline | Impostare o modificare la pipeline. |  | x |  |  |
 | Esecuzione della pipeline | Avvia la pipeline. | x | x |  |  |
 | Esecuzione della pipeline | Rifiutare/Approvare Importanti Errori A 3 Livelli. | x | x | x |  |
