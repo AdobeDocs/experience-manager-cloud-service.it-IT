@@ -3,10 +3,11 @@ title: Smart imaging
 description: '"Scopri in che modo l''imaging intelligente applica le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, ottenendo prestazioni e coinvolgimento migliori."'
 feature: Gestione risorse, rappresentazioni
 topic: Professionista
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1865'
 ht-degree: 2%
 
 ---
