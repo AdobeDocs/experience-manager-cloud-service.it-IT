@@ -2,10 +2,11 @@
 title: Utilizzo di Dynamic Media
 description: Scopri come utilizzare Dynamic Media per distribuire risorse da utilizzare sui siti web, mobili e social.
 topic: '"Amministratore, Business Practitioner"'
+role: Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '403'
 ht-degree: 14%
 
 ---
