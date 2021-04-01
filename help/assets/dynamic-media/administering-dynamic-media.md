@@ -3,10 +3,11 @@ title: Configurazione di Dynamic Media
 description: Per configurare Dynamic Media, devi configurare Dynamic Media e gestire i predefiniti per immagini e visualizzatori.
 contentOwner: Rick Brough
 topic: Administrator
+role: Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '183'
 ht-degree: 7%
 
 ---
