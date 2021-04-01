@@ -1,11 +1,13 @@
 ---
 title: Frammenti di contenuto - Considerazioni sull’eliminazione
 description: Esamina queste considerazioni importanti prima di definire i criteri di eliminazione dei frammenti di contenuto in AEM. I frammenti di contenuto sono uno strumento potente per la distribuzione di contenuti headless e occorre considerare attentamente le implicazioni relative all’eliminazione di tali contenuti.
+feature: Frammenti di contenuto
+role: Professionista
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 9%
+source-wordcount: '474'
+ht-degree: 10%
 
 ---
 
