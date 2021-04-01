@@ -2,9 +2,9 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 826c15ecca494f98fbe7a4c3ef129a45bd4cea7c
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 40%
 
 ---
@@ -38,7 +38,7 @@ Una volta firmato il contratto, avranno luogo i seguenti eventi:
 
 Per far sì che gli utenti vengano aggiunti a Cloud Manager ai ruoli assegnati, avrai bisogno del tuo Adobe ID e dell’aiuto dell’amministratore di sistema.
 
-**[Ruoli utente e autorizzazioni](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**[Ruoli di Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
 L’amministratore di sistema può aggiungere utenti e assegnarli ai ruoli di Cloud Manager. Questa sezione ti aiuta a capire cosa sono *Ruoli di Cloud Manager* e le autorizzazioni associate ai ruoli prima di iniziare.
 
