@@ -2,11 +2,12 @@
 title: Utilizzare Media Library per la gestione di base delle risorse digitali
 description: '[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse.'
 contentOwner: AG
-role: Architetto, leader
+feature: Gestione risorse,Pubblicazione
+role: Professionista,Architetto,Leader
 translation-type: tm+mt
-source-git-commit: db74b206439e5e9d6c1526c7baa05e5a17997702
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
