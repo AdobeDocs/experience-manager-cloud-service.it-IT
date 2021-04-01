@@ -2,9 +2,9 @@
 title: 'Attività amministratore di sistema '
 description: Segui questa pagina per scoprire come aggiungere utenti e assegnarli ai ruoli di Cloud Manager come amministratore di sistema
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Un amministratore di sistema esegue le seguenti attività organizzative:
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >Fai riferimento a [Ruoli utente e autorizzazioni](#user-roles) e [Autorizzazioni associate alle definizioni dei ruoli](#permissions) per garantire che agli utenti giusti siano assegnati i ruoli giusti nell&#39; **Admin Console**.
+   >Per ulteriori informazioni su ruoli e autorizzazioni offerti in Cloud Manager, consulta [Ruoli di Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) .
 
    Ora hai aggiunto gli utenti a Adobe Experience Manager as a Cloud Service Product Context e sei configurato con i ruoli o i profili di prodotto giusti.
 
