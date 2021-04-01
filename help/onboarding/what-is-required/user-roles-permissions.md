@@ -2,15 +2,15 @@
 title: Ruoli utente e autorizzazioni
 description: Questa pagina descrive i ruoli utente e le autorizzazioni. Segui questa pagina per scoprire come aggiungere utenti e assegnarli ai ruoli di Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 10%
+source-wordcount: '568'
+ht-degree: 8%
 
 ---
 
 
-# Ruoli utente e autorizzazioni {#user-roles-permissions}
+# Ruoli di Cloud Manager {#user-roles-permissions}
 
 ## Ruoli utente {#user-roles}
 
@@ -44,13 +44,25 @@ Oltre a quanto sopra, Cloud Manager creerà automaticamente un profilo di prodot
 
 ## Ruoli utente e autorizzazioni {#permissions}
 
-[!UICONTROL Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. ] Ad esempio, uno sviluppatore sviluppa il codice e dispone dell&#39;autorizzazione per inviare il codice push al **Git Repository**. In alternativa, un proprietario aziendale dispone di autorizzazioni diverse che consentono di aggiungere e modificare programmi, aggiungere ambienti e approvare distribuzioni.
+[!UICONTROL Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. ] Ad esempio, uno sviluppatore sviluppa il codice e dispone dell’autorizzazione per inviare il codice all’archivio Git. In alternativa, un proprietario aziendale dispone di autorizzazioni diverse che consentono di aggiungere e modificare programmi, aggiungere ambienti e approvare distribuzioni.
 
-A ciascun ruolo sono associate autorizzazioni specifiche. La tabella seguente riepiloga i ruoli, elenca le funzioni disponibili e i ruoli che possono eseguire la funzione.
+A ciascuno dei ruoli sono associate autorizzazioni specifiche. Ad esempio, se ti trovi nel ruolo di un:
+
+* ***Proprietario business***, disponi dell’autorizzazione per aggiungere un nuovo programma o modificare un programma, aggiungere o aggiornare un ambiente, aggiungere/modificare/eliminare la pipeline ed eseguire qualsiasi pipeline e distribuire il codice per AEM ambiente o qualità del codice.
+
+* ***Deployment Manager***, è disponibile l’autorizzazione per aggiungere o aggiornare un ambiente, eseguire una pipeline e distribuire il codice per AEM ambiente o qualità del codice.
+
+* ***Sviluppatore***, disponi dell’autorizzazione per generare Token di accesso personale per accedere a Git.
+
+   >[!NOTE]
+   > Un utente può essere assegnato a più ruoli. Ad esempio, l&#39;assegnazione di ruoli Business Owner (Proprietario business) e Deployment Manager a un utente fornisce loro la combinazione o la somma di queste autorizzazioni.
+
+
+La tabella seguente riepiloga i ruoli e le relative autorizzazioni associate in Cloud Manager.
 
 | Autorizzazione | Descrizione | Business Owner (Proprietario) | Deployment Manager (Responsabile implementazione) | Program Manager (Responsabile programma) | Developer (Sviluppatore) |
 |--- |--- |--- |--- |--- |--- |
-| Aggiungi programma | Aggiungi un nuovo programma. | x |  |  |  |
+| Aggiungi programma<br>Modifica programma | Aggiungi un nuovo programma.<br>Modificare un programma - Aggiungere o rimuovere soluzioni o componenti aggiuntivi | x |  |  |  |
 | Creare un ambiente | Crea Prod+Stage, Sviluppo, Ambienti. | x | x |  |  |
 | Ambiente di aggiornamento | Aggiorna Prod+Stage, Dev, Ambienti. | x | x |  |  |
 | Elimina ambiente | Elimina ambienti non prod, sviluppo e non. | x | x |  |  |
@@ -62,3 +74,4 @@ A ciascun ruolo sono associate autorizzazioni specifiche. La tabella seguente ri
 | Elimina pipeline | Consente di eliminare una pipeline. |  | x |  |  |
 | Annulla esecuzione | Annulla esecuzione corrente. |  | x |  |  |
 | Genera token di accesso personale | Accedi a Git. |  | x |  | x |
+
