@@ -2,10 +2,12 @@
 title: Accessibilità in [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aiutano gli utenti con disabilità.
 contentOwner: AG
+feature: Accessibilità, gestione delle risorse
+role: Professionista,Architetto,Leader
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1919'
 ht-degree: 2%
 
 ---
@@ -146,7 +148,7 @@ Quando esplori l’archivio delle risorse, le seguenti funzionalità migliorano 
 * L&#39;utilizzo del tasto `Esc` per rimuovere le icone delle azioni rapide dalla visualizzazione miniatura non rimuove lo stato attivo dall&#39;ultimo elemento attivo.
 * Con una risorsa selezionata, selezionando `Alt + 4` scelte rapide da tastiera si apre l’elenco [!UICONTROL Riferimenti] nella barra a sinistra. Utilizzando la chiave `Tab`, gli utenti possono navigare tra le voci di riferimento diverse da zero. La navigazione solo attraverso le voci di riferimento diverse da zero consente di risparmiare fatica e tasti.
 * I commenti su una risorsa sono disponibili nella timeline della risorsa. È accessibile se si accede alla barra a sinistra utilizzando una tastiera o una scelta rapida da tastiera.
-* [!UICONTROL Le ] impostazioni di visualizzazione  [!DNL Experience Manager] sono accessibili da tastiera. Gli utenti possono navigare tra le dimensioni delle schede disponibili utilizzando i tasti freccia e selezionare e spostarsi tra le varie schede per navigare tra i vari elementi nella vista Impostazioni visualizzazione esistente e impostarli.
+* [!UICONTROL Le ] impostazioni di visualizzazione  [!DNL Experience Manager] sono accessibili da tastiera. Gli utenti possono navigare tra le dimensioni delle schede disponibili utilizzando i tasti freccia, quindi selezionare e spostarsi tra le varie dimensioni per navigare tra i vari elementi nella vista Impostazioni visualizzazione esistente e impostarne altri.
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 
