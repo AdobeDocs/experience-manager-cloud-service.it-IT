@@ -2,10 +2,12 @@
 title: API HTTP di Assets
 description: Crea, leggi, aggiorna, elimina, gestisci risorse digitali utilizzando l’API HTTP in [!DNL Experience Manager Assets].
 contentOwner: AG
+feature: API HTTP di Assets, API
+role: Sviluppatore,Architetto,Amministratore
 translation-type: tm+mt
-source-git-commit: c9a7dc74e3fc7c637825606a1a92cbe46d86283f
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1496'
 ht-degree: 1%
 
 ---
