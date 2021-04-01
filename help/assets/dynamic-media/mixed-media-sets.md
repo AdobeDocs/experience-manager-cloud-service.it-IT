@@ -3,10 +3,11 @@ title: Set di file multimediali diversi
 description: Scopri come utilizzare i set di file multimediali diversi in Dynamic Media.
 feature: Set di file multimediali diversi
 topic: Professionista
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1471'
 ht-degree: 25%
 
 ---
