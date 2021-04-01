@@ -2,10 +2,12 @@
 title: Condividere risorse, cartelle e raccolte come collegamento
 description: Questo articolo descrive come condividere risorse, cartelle e raccolte all'interno di [!DNL Experience Manager Assets] come collegamento ipertestuale.
 contentOwner: AG
+feature: Gestione risorse, collaborazione, distribuzione delle risorse
+role: Business Practices, Amministratore
 translation-type: tm+mt
-source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
@@ -175,7 +177,7 @@ Dall’interno dell’interfaccia utente di [!DNL Assets] in un browser, puoi es
 
 ### Configurazioni da utilizzare [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link semplifica la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. Connette [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] app desktop [!DNL Adobe InDesign], [!DNL Adobe Photoshop] e [!DNL Adobe Illustrator]. Il pannello [!DNL Adobe Asset Link] consente ai creativi di accedere e modificare il contenuto memorizzato in [!DNL Assets] senza lasciare le app creative con cui hanno più familiarità.
+Adobe Asset Link semplifica la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. Connette [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] app desktop [!DNL Adobe InDesign], [!DNL Adobe Photoshop] e [!DNL Adobe Illustrator]. Il pannello [!DNL Adobe Asset Link] consente ai creativi di accedere e modificare i contenuti memorizzati in [!DNL Assets] senza lasciare le app creative con cui hanno più familiarità.
 
 Vedi [come configurare [!DNL Assets] per utilizzarlo con [!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html).
 
