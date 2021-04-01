@@ -2,10 +2,12 @@
 title: Assegnare tag automatici alle risorse con tag generati dall’intelligenza artificiale
 description: Assegna tag alle risorse utilizzando servizi intelligenti artificialmente che applicano tag aziendali contestuali e descrittivi utilizzando il servizio  [!DNL Adobe Sensei] .
 contentOwner: AG
+feature: Tag avanzati, assegnazione tag
+role: Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2806'
 ht-degree: 6%
 
 ---
@@ -98,7 +100,7 @@ Assicurati che le immagini del set di addestramento siano conformi alle seguenti
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/coherence.png)
 
-**Copertura**: Dovrebbe esserci una varietà sufficiente nelle immagini nell&#39;addestramento. L’idea è di fornire alcuni esempi, ma ragionevolmente diversi, in modo che AEM impari a concentrarsi sulle cose giuste. Se applichi lo stesso tag a immagini visivamente diverse, includi almeno cinque esempi di ogni tipo. Ad esempio, per il tag *model-down-pose*, includi più immagini di formazione simili all&#39;immagine evidenziata qui sotto per consentire al servizio di identificare immagini simili con maggiore precisione durante l&#39;assegnazione dei tag.
+**Copertura**: Dovrebbe esserci una varietà sufficiente nelle immagini nell&#39;addestramento. L&#39;idea è quella di fornire alcuni esempi, ma abbastanza diversi, in modo che AEM imparare a concentrarsi sulle cose giuste. Se applichi lo stesso tag a immagini visivamente diverse, includi almeno cinque esempi di ogni tipo. Ad esempio, per il tag *model-down-pose*, includi più immagini di formazione simili all&#39;immagine evidenziata qui sotto per consentire al servizio di identificare immagini simili con maggiore precisione durante l&#39;assegnazione dei tag.
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/coverage_1.png)
 
@@ -112,9 +114,9 @@ Assicurati che le immagini del set di addestramento siano conformi alle seguenti
 
 **Numero di tag**: Adobe consiglia di addestrare un modello utilizzando almeno due tag distinti e almeno dieci immagini diverse per ciascun tag. In un singolo modello di tag, non aggiungere più di 50 tag.
 
-**Numero di esempi**: Per ogni tag, aggiungi almeno dieci esempi. Tuttavia, Adobe consiglia circa 30 esempi. Sono supportati un massimo di 50 esempi per tag.
+**Numero di esempi**: Per ogni tag, aggiungi almeno dieci esempi. Tuttavia, l&#39;Adobe consiglia circa 30 esempi. Sono supportati un massimo di 50 esempi per tag.
 
-**Prevenire falsi positivi e conflitti**: Adobe consiglia di creare un modello di tag singolo per un singolo aspetto visivo. Crea una struttura per i modelli di tag in modo da evitare sovrapposizioni di tag tra i modelli. Ad esempio, non utilizzare tag comuni come `sneakers` in due nomi di modelli di tag diversi `shoes` e `footwear`. Il processo di formazione sovrascrive un modello di tag addestrato con l’altro per una parola chiave comune.
+**Prevenire falsi positivi e conflitti**: Adobe consiglia di creare un singolo modello di tag per un singolo aspetto visivo. Crea una struttura per i modelli di tag in modo da evitare sovrapposizioni di tag tra i modelli. Ad esempio, non utilizzare tag comuni come `sneakers` in due nomi di modelli di tag diversi `shoes` e `footwear`. Il processo di formazione sovrascrive un modello di tag addestrato con l’altro per una parola chiave comune.
 
 **Esempi**: Altri esempi di indicazioni sono:
 
@@ -210,7 +212,7 @@ Per moderare gli smart tag delle risorse:
 
 1. Nel campo di ricerca cerca le risorse basate su un tag .
 
-1. Controlla i risultati della ricerca per identificare le risorse che non sono pertinenti alla ricerca.
+1. Inspect mostra i risultati della ricerca per identificare le risorse che non sono pertinenti alla ricerca.
 
 1. Seleziona la risorsa, quindi seleziona ![Icona Gestisci tag](assets/do-not-localize/manage-tags-icon.png) dalla barra degli strumenti.
 
@@ -222,9 +224,9 @@ Per moderare gli smart tag delle risorse:
 
 1. Passa alla pagina [!UICONTROL Proprietà] della risorsa. Osserva che al tag promosso è assegnata un’elevata rilevanza e, quindi, appare più alta nei risultati della ricerca.
 
-### Comprendere i risultati della ricerca AEM con gli smart tag {#understandsearch}
+### Comprendere AEM risultati della ricerca con tag avanzati {#understandsearch}
 
-Per impostazione predefinita, la ricerca AEM combina i termini di ricerca con una clausola `AND`. L’utilizzo di smart tag non modifica questo comportamento predefinito. L’utilizzo di tag avanzati aggiunge una clausola `OR` per trovare uno dei termini di ricerca negli smart tag applicati. Ad esempio, è consigliabile cercare `woman running`. Le risorse con una semplice `woman` o una semplice `running` parola chiave nei metadati non vengono visualizzate nei risultati di ricerca per impostazione predefinita. Tuttavia, una risorsa con tag `woman` o `running` utilizzando tag avanzati viene visualizzata in una query di ricerca di questo tipo. Quindi i risultati della ricerca sono una combinazione di:
+Per impostazione predefinita, AEM ricerca combina i termini di ricerca con una clausola `AND`. L’utilizzo di smart tag non modifica questo comportamento predefinito. L’utilizzo di tag avanzati aggiunge una clausola `OR` per trovare uno dei termini di ricerca negli smart tag applicati. Ad esempio, è consigliabile cercare `woman running`. Le risorse con una semplice `woman` o una semplice `running` parola chiave nei metadati non vengono visualizzate nei risultati di ricerca per impostazione predefinita. Tuttavia, una risorsa con tag `woman` o `running` utilizzando tag avanzati viene visualizzata in una query di ricerca di questo tipo. Quindi i risultati della ricerca sono una combinazione di:
 
 * risorse con `woman` e `running` parole chiave nei metadati.
 
@@ -255,7 +257,7 @@ Per cercare le risorse con tag avanzati (regolari o migliorati), utilizza la ric
 >[!NOTE]
 >
 >La capacità dei tag avanzati di addestrare i tag e applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione.
->Per ottenere risultati ottimali, Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
+>Per ottenere risultati ottimali, l’Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
 
 >[!MORELIKETHIS]
 >
