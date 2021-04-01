@@ -2,9 +2,9 @@
 title: 'Attività amministratore di sistema '
 description: Segui questa pagina per scoprire come aggiungere utenti e assegnarli ai ruoli di Cloud Manager come amministratore di sistema
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -44,17 +44,7 @@ Un amministratore di sistema esegue le seguenti attività organizzative:
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >Consulta le sezioni precedenti, [Ruoli utente e autorizzazioni](#user-roles) e [Autorizzazioni associate alle definizioni dei ruoli](#permissions) per assicurarti che agli utenti giusti siano assegnati i Ruoli giusti nell&#39; **Admin Console**.
+   >Fai riferimento a [Ruoli utente e autorizzazioni](#user-roles) e [Autorizzazioni associate alle definizioni dei ruoli](#permissions) per garantire che agli utenti giusti siano assegnati i ruoli giusti nell&#39; **Admin Console**.
 
    Ora hai aggiunto gli utenti a Adobe Experience Manager as a Cloud Service Product Context e sei configurato con i ruoli o i profili di prodotto giusti.
 
-   Ad esempio, se ti trovi nel ruolo di un:
-
-   * ***Proprietario business***, disponi dell’autorizzazione per aggiungere un nuovo programma o modificare un programma, aggiungere o aggiornare un ambiente, aggiungere/modificare/eliminare la pipeline ed eseguire qualsiasi pipeline e distribuire il codice per AEM ambiente o qualità del codice.
-
-   * ***Deployment Manager***, è disponibile l’autorizzazione per aggiungere o aggiornare un ambiente, eseguire una pipeline e distribuire il codice per AEM ambiente o qualità del codice.
-
-   * ***Sviluppatore***, disponi dell’autorizzazione per generare Token di accesso personale per accedere a Git.
-
-      >[!NOTE]
-      > Un utente può essere assegnato a più ruoli. Ad esempio, l&#39;assegnazione di ruoli Business Owner (Proprietario business) e Deployment Manager a un utente fornisce loro la combinazione o la somma di queste autorizzazioni.
