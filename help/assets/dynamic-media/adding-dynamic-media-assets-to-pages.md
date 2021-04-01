@@ -4,11 +4,12 @@ description: Scopri come aggiungere componenti Dynamic Media a una pagina in Ado
 contentOwner: Rick Brough
 feature: Gestione risorse
 topic: Professionista
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '3087'
-ht-degree: 21%
+source-wordcount: '3089'
+ht-degree: 22%
 
 ---
 
