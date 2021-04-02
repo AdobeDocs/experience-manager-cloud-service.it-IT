@@ -4,10 +4,10 @@ description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Ass
 feature: Informazioni sulla versione
 role: Professionista,Leader,Architetto,Amministratore
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 6%
+source-wordcount: '770'
+ht-degree: 5%
 
 ---
 
@@ -65,6 +65,7 @@ Per eseguire una convalida end-to-end del codice e del processo, compresi l’in
 >
 >Le risorse seguenti sono disponibili per [!DNL Experience Manager] come [!DNL Cloud Service]:
 >
+>* [Elenco delle funzioni obsolete e rimosse](/help/release-notes/deprecated-removed-features.md)
 >* [Introduzione](/help/overview/introduction.md)
 >* [Novità e differenze](/help/overview/what-is-new-and-different.md)
 >* [L&#39;architettura](/help/core-concepts/architecture.md)
