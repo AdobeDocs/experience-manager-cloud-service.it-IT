@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Gestione risorse, collaborazione, distribuzione delle risorse
 role: Business Practices, Amministratore
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 1%
+source-wordcount: '758'
+ht-degree: 2%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 1%
 [!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte con i membri dell’organizzazione ed entità esterne, inclusi partner e fornitori. Utilizza i seguenti metodi per condividere risorse da [!DNL Experience Manager Assets] come [!DNL Cloud Service]:
 
 * Condividi come collegamento.
-* Scarica le risorse e condividi separatamente.
-* Condividi tramite app desktop AEM.
-* Condividi tramite Adobe Asset Link.
-* (Funzionalità in arrivo) Condividi tramite Brand Portal.
+* [Scaricare ](/help/assets/download-assets-from-aem.md) le risorse e condividerle separatamente.
+* Condividi utilizzando [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+* Condividi utilizzando [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
+* Condividi utilizzando [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
 ## Condividere le risorse come collegamento {#sharelink}
 
@@ -177,7 +177,7 @@ Dall’interno dell’interfaccia utente di [!DNL Assets] in un browser, puoi es
 
 ### Configurazioni da utilizzare [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link semplifica la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. Connette [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] app desktop [!DNL Adobe InDesign], [!DNL Adobe Photoshop] e [!DNL Adobe Illustrator]. Il pannello [!DNL Adobe Asset Link] consente ai creativi di accedere e modificare i contenuti memorizzati in [!DNL Assets] senza lasciare le app creative con cui hanno più familiarità.
+Adobe Asset Link semplifica la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. Connette [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] app desktop [!DNL Adobe InDesign], [!DNL Adobe Photoshop] e [!DNL Adobe Illustrator]. Il pannello [!DNL Adobe Asset Link] consente ai creativi di accedere e modificare il contenuto memorizzato in [!DNL Assets] senza lasciare le app creative con cui hanno più familiarità.
 
 Vedi [come configurare [!DNL Assets] per utilizzarlo con [!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html).
 
