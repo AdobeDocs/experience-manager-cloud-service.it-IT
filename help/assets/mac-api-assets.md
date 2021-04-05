@@ -4,14 +4,14 @@ description: Crea, leggi, aggiorna, elimina, gestisci risorse digitali utilizzan
 contentOwner: AG
 feature: API HTTP di Assets, API
 role: Sviluppatore,Architetto,Amministratore
+exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1522'
 ht-degree: 1%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] API HTTP  {#assets-http-api}
 
@@ -268,6 +268,8 @@ Elimina una risorsa (-tree) nel percorso specificato.
 ## Suggerimenti, best practice e limitazioni {#tips-limitations}
 
 * Dopo il [!UICONTROL Tempo di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite l’interfaccia web [!DNL Assets] e tramite l’API HTTP. L&#39;API restituisce un messaggio di errore 404 se il [!UICONTROL Al momento] è nel futuro o se il [!UICONTROL Tempo di disattivazione] è nel passato.
+
+* L’API HTTP di Assets non restituisce i metadati completi. Gli spazi dei nomi sono codificati e vengono restituiti solo questi spazi dei nomi. Per metadati completi, vedi il percorso della risorsa `/jcr_content/metadata.json`.
 
 * Alcune proprietà della cartella o della risorsa vengono mappate su un prefisso diverso quando vengono aggiornate utilizzando le API. Il prefisso `jcr` di `jcr:title`, `jcr:description` e `jcr:language` viene sostituito con il prefisso `dc`. Quindi nei JSON restituiti, `dc:title` e `dc:description` contengono rispettivamente i valori di `jcr:title` e `jcr:description`.
 
