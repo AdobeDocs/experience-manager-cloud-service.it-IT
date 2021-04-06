@@ -1,14 +1,14 @@
 ---
 title: Guida rapida alla creazione di frammenti di contenuto senza intestazione
 description: Scopri come utilizzare AEM frammenti di contenuto per progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina per la distribuzione headless.
+exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 088fa5c90d549c52ca2832bd026be4fcddb31b78
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
-
 
 # Guida rapida alla creazione di frammenti di contenuto senza intestazione {#creating-content-fragments}
 
@@ -43,7 +43,7 @@ Gli autori dei contenuti creeranno un numero qualsiasi di frammenti di contenuto
 1. Fornisci i dettagli del frammento di contenuto nell’Editor frammento di contenuto.
 
    ![Editor frammento di contenuto ](../assets/content-fragment-edit.png)
-1. Tocca o fai clic su **Salva e chiudi**.
+1. Tocca o fai clic su **Salva** o **Salva e chiudi**.
 
 I frammenti di contenuto possono fare riferimento ad altri frammenti di contenuto, consentendo se necessario una struttura di contenuto nidificata.
 
