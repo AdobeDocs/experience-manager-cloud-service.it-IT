@@ -3,20 +3,30 @@ title: Gestione dei frammenti di contenuto
 description: Scopri come utilizzare la console Risorse per gestire i frammenti di contenuto AEM, alla base dei contenuti headless.
 feature: Frammenti di contenuto
 role: Professionista
+exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1748'
 ht-degree: 9%
 
 ---
-
 
 # Gestione dei frammenti di contenuto {#managing-content-fragments}
 
 Scopri come utilizzare la console Risorse per gestire i frammenti di contenuto AEM, alla base dei contenuti headless.
 
-I frammenti di contenuto sono memorizzati come **Risorse**, quindi vengono gestiti principalmente dalla console **Risorse**.
+Dopo aver definito i [Modelli di frammento di contenuto](#creating-a-content-model) puoi utilizzarli per [creare i frammenti di contenuto](#creating-a-content-fragment).
+
+[Editor frammento di contenuto](#opening-the-fragment-editor) fornisce varie [modalità](#modes-in-the-content-fragment-editor) per consentire di:
+
+* [Modificare il ](#editing-the-content-of-your-fragment) contenuto e  [gestire le varianti](#creating-and-managing-variations-within-your-fragment)
+* [Annotare il frammento](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Associa contenuto al frammento](#associating-content-with-your-fragment)
+* [Configurare i metadati](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Visualizza albero struttura](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Anteprima della rappresentazione JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+
 
 >[!NOTE]
 >
@@ -25,6 +35,10 @@ I frammenti di contenuto sono memorizzati come **Risorse**, quindi vengono gesti
 >* quando si creano pagine; consulta [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* per [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
+
+>[!NOTE]
+>
+>I frammenti di contenuto sono memorizzati come **Risorse**, quindi vengono gestiti principalmente dalla console **Risorse**.
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
@@ -135,11 +149,15 @@ Per aprire il frammento per la modifica:
 
    ![editor frammenti](assets/cfm-managing-03.png)
 
-1. Dopo aver apportato le modifiche, utilizza **Salva e chiudi** o **Annulla** come necessario.
+1. Dopo aver apportato le modifiche, utilizza **Salva**, **Salva e chiudi** o **Chiudi** come necessario.
 
    >[!NOTE]
    >
-   >Sia **Salva e chiudi** che **Annulla** usciranno dall&#39;editor. Per informazioni complete sul funzionamento di entrambe le opzioni per i frammenti di contenuto, consulta [Salva, Annulla e Versioni](#save-cancel-and-versions) .
+   >**Salva e chiudi** è disponibile dal menu a discesa  **** Salvato .
+
+   >[!NOTE]
+   >
+   >Sia **Salva e chiudi** che **Chiudi** chiuderanno l&#39;editor. Per informazioni complete sul funzionamento delle varie opzioni per i frammenti di contenuto, consultate [Salva, Chiudi e Versioni](#save-close-and-versions) .
 
 ## Modalità e azioni nell’Editor frammento di contenuto {#modes-actions-content-fragment-editor}
 
@@ -181,21 +199,29 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
    * **Modificato**: arancia
    * **Disattivato**: rosso
 
+* **** Salva consente di accedere all’opzione  **Salva e** chiudi.
+
 * I tre punti (**...L’elenco a discesa** consente di accedere ad azioni aggiuntive:
+   * **Aggiorna riferimenti di pagina**
+      * Questo aggiorna tutti i riferimenti di pagina.
    * **[Pubblicazione rapida](#publishing-and-referencing-a-fragment)**
    * **[Gestisci pubblicazione](#publishing-and-referencing-a-fragment)**
 
-## Salva, Annulla e Versioni {#save-cancel-and-versions}
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
+
+## Salva, chiudi e versioni {#save-close-and-versions}
 
 >[!NOTE]
 >
 >Le versioni possono anche essere [create, confrontate e ripristinate dalla Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-L’editor dispone di due opzioni:
+L’editor dispone di diverse opzioni:
 
-* **Salva**
+* **** Salva e  **salva e chiudi**
 
-   Salva le modifiche più recenti e chiude l’editor.
+   * **** Le ultime modifiche vengono salvate e rimangono nell’editor.
+   * **Salva e** chiudi salverà le modifiche più recenti e chiuderà l’editor.
 
    >[!CAUTION]
    >
@@ -203,20 +229,19 @@ L’editor dispone di due opzioni:
 
    >[!NOTE]
    >
-   >È possibile rimanere nell&#39;editor, apportando una serie di modifiche, prima di selezionare **Salva**.
+   >È possibile rimanere nell&#39;editor, apportando una serie di modifiche, prima di salvare.
 
    >[!CAUTION]
    >
-   >Oltre a salvare semplicemente le modifiche, **Salva** aggiorna anche tutti i riferimenti e assicura che il Dispatcher venga scaricato come necessario. L’elaborazione di queste modifiche può richiedere del tempo. Per questo motivo, può esserci un impatto sulle prestazioni su un sistema di grandi dimensioni/complesso/pesantemente caricato.
+   >Oltre a salvare semplicemente le modifiche, le azioni aggiornano anche i riferimenti e garantiscono che Dispatcher venga scaricato come necessario. L’elaborazione di queste modifiche può richiedere del tempo. Per questo motivo, può esserci un impatto sulle prestazioni su un sistema di grandi dimensioni/complesso/pesantemente caricato.
    >
-   >
-   >Tieni presente questo aspetto quando utilizzi **Salva** e poi accedi rapidamente all’editor frammenti per apportare e salvare ulteriori modifiche.
+   >Tieni presente questo aspetto quando utilizzi **Salva e chiudi** e poi accedi rapidamente all’editor frammenti per apportare e salvare ulteriori modifiche.
 
-* **Annulla**
+* **Chiudi**
 
-   Uscirà dall’editor senza salvare le modifiche più recenti.
+   Uscirà dall&#39;editor senza salvare le modifiche più recenti (ovvero apportate dall&#39;ultimo **Salva**).
 
-Durante la modifica del frammento di contenuto AEM crea automaticamente delle versioni per garantire che il contenuto precedente possa essere ripristinato se si **Annulla** apportano modifiche:
+Durante la modifica del frammento di contenuto AEM crea automaticamente delle versioni per garantire che il contenuto precedente possa essere ripristinato se si annullano le modifiche (utilizzando **Chiudi** senza salvare):
 
 1. Quando un frammento di contenuto viene aperto per la modifica AEM verifica l’esistenza del token basato su cookie che indica se esiste una *sessione di modifica*:
 
@@ -232,7 +257,7 @@ Durante la modifica del frammento di contenuto AEM crea automaticamente delle ve
    >Valore predefinito, vedi:
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. Se l&#39;utente seleziona **Annulla** la modifica, la versione creata all&#39;inizio della sessione di modifica viene ripristinata e il token viene rimosso per terminare la sessione di modifica.
+3. Se l’utente annulla la modifica, la versione creata all’inizio della sessione di modifica viene ripristinata e il token viene rimosso per terminare la sessione di modifica.
 4. Se l’utente seleziona **Salva** le modifiche, gli elementi/le varianti aggiornati vengono mantenuti e il token viene rimosso per terminare la sessione di modifica.
 
 ## Modifica del contenuto del frammento {#editing-the-content-of-your-fragment}
@@ -296,7 +321,7 @@ Verrà aperto:
 
 * la versione selezionata **v&lt;*x.y*>** (a destra)
 
-Vengono visualizzati uno accanto all’altro, dove:
+Vengono visualizzati affiancati, dove:
 
 * Eventuali differenze sono evidenziate
 
