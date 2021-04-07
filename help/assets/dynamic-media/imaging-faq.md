@@ -3,15 +3,15 @@ title: Smart imaging
 description: '"Scopri in che modo l''imaging intelligente applica le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, ottenendo prestazioni e coinvolgimento migliori."'
 feature: Gestione risorse, rappresentazioni
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e1ca8c3a26fae6e421a087ade03cfeddc7a94a0e
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1926'
 ht-degree: 2%
 
 ---
-
 
 # Imaging avanzato {#smart-imaging}
 
@@ -21,9 +21,9 @@ La tecnologia Smart Imaging applica le funzionalità di Adobe Sensei AI e funzio
 
 >[!NOTE]
 >
->Questa funzione richiede l’utilizzo della rete CDN preconfigurata fornita con Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione.
+>Questa funzione richiede l’utilizzo della rete CDN preconfigurata (Content Delivery Network) inclusa in Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione.
 
-L’imaging intelligente trae inoltre vantaggio dal miglioramento delle prestazioni dell’integrazione completa con il servizio premium CDN (Content Delivery Network) di Adobe. Questo servizio trova il percorso Internet ottimale tra server, reti e punti di peer. Analizza la latenza più bassa, o la perdita di pacchetti più bassa, o entrambe, piuttosto che semplicemente utilizzando il percorso predefinito su Internet.
+L’imaging intelligente trae inoltre vantaggio dal miglioramento delle prestazioni dell’integrazione completa con il servizio premium CDN (Content Delivery Network) di Adobe. Questo servizio trova il percorso Internet ottimale tra server, reti e punti di peer. Trova un percorso che ha la latenza più bassa e la velocità di perdita più bassa del pacchetto invece di utilizzare il percorso predefinito su Internet.
 
 Gli esempi di risorse immagine seguenti illustrano l’ottimizzazione Smart Imaging aggiunta:
 
@@ -43,6 +43,7 @@ Le immagini costituiscono la maggior parte del tempo di caricamento di una pagin
 
 Miglioramenti all&#39;ultima versione di Smart imaging:
 
+* È stata migliorata la classificazione SEO di Google per le pagine web che utilizzano le più recenti Smart imaging.
 * Distribuisce immediatamente il contenuto ottimizzato (in fase di runtime).
 * Utilizza la tecnologia Adobe Sensei per convertire in base alla qualità (qlt) specificata nella richiesta di immagine.
 * L&#39;imaging avanzato può essere disattivato utilizzando il parametro URL &quot;bfc&quot;.
@@ -58,25 +59,26 @@ No. Smart imaging è incluso nella licenza esistente. Questa regola è valida pe
 >
 >La funzione Smart imaging non è disponibile per i clienti ibridi di Dynamic Media.
 
-
 ## Come funziona l&#39;imaging intelligente? {#how-does-smart-imaging-work}
 
-Quando un&#39;immagine viene richiesta da un consumatore, Smart imaging controlla le caratteristiche dell&#39;utente. Viene quindi convertito nel formato immagine appropriato in base al browser in uso. Queste conversioni di formato vengono effettuate in modo da non compromettere la fedeltà visiva. La funzione Smart imaging converte automaticamente le immagini in formati diversi in base alla funzionalità del browser nel modo seguente.
+Quando un&#39;immagine viene richiesta da un consumatore, Smart imaging controlla le caratteristiche dell&#39;utente e la conversione nel formato immagine appropriato in base al browser in uso. Queste conversioni di formato vengono effettuate in modo da non compromettere la fedeltà visiva. La funzione Smart imaging converte automaticamente le immagini in formati diversi in base alla funzionalità del browser nel modo seguente.
+
+<!--   * Safari 14.0 +
+    * Safari 14 only with iOS 14.0 and above and macOS BigSur and above -->
 
 * Converti automaticamente in WebP per i seguenti browser:
    * Chrome
    * Firefox
-   * Microsoft Edge
-   * Safari 14.0 +
-      * Safari 14 solo con iOS 14.0 e versioni successive e macOS BigSur e versioni successive
-   * Android
+   * Microsoft® Edge
+   * Safari (su iOS, macOS, iPadOS), supporto per la versione del browser e del sistema operativo WebP
+   * Android™
    * Opera
 * Supporto di browser legacy per i seguenti elementi:
 
    | Browser | Versione browser/sistema operativo | Formato |
    | --- | --- | --- |
-   | Safari | iOS 14.0 o versione precedente | JPEG2000 |
-   | Bordo | 18 o versioni precedenti | JPEGXR |
+   | Safari | Precedente a iOS/iPad 14.0 o macOS BigSur | JPEG2000 |
+   | Bordo | Anteriore a 18 | JPEGXR |
    | Internet Explorer | 9+ | JPEGXR |
 * Per i browser che non supportano questi formati, viene distribuito il formato immagine richiesto originariamente.
 
@@ -85,6 +87,7 @@ Se la dimensione dell&#39;immagine originale è inferiore a quella prodotta da S
 ## Quali formati immagine sono supportati? {#what-image-formats-are-supported}
 
 I seguenti formati immagine sono supportati per Smart imaging:
+
 * JPEG
 * PNG
 
@@ -97,17 +100,17 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## Come funziona l’imaging avanzato con i predefiniti immagine esistenti già in uso? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-L’imaging avanzato funziona con i &quot;predefiniti immagine&quot; esistenti. Osserva tutte le impostazioni dell&#39;immagine eccetto la qualità (qlt) e il formato (fmt) se il formato del file richiesto è JPEG o PNG. Per la conversione del formato, l&#39;imaging intelligente mantiene la fedeltà visiva completa, come definita dalle impostazioni del predefinito per immagini, ma con dimensioni file inferiori. Se la dimensione dell&#39;immagine originale è inferiore a quella prodotta da Smart imaging, l&#39;immagine originale viene servita.
+L’imaging avanzato funziona con i &quot;predefiniti immagine&quot; esistenti. Osserva tutte le impostazioni dell&#39;immagine eccetto la qualità (`qlt`) e il formato (`fmt`) se il formato del file richiesto è JPEG o PNG. Per la conversione del formato, l&#39;imaging intelligente mantiene la fedeltà visiva completa, come definita dalle impostazioni del predefinito per immagini, ma con dimensioni file inferiori. Se la dimensione dell&#39;immagine originale è inferiore a quella prodotta da Smart imaging, l&#39;immagine originale viene servita.
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
 ## Devo modificare URL, predefiniti per immagini o distribuire un nuovo codice sul mio sito per Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-La funzione Smart Imaging funziona direttamente con gli URL delle immagini esistenti e i predefiniti per immagini se configuri Smart Imaging sul dominio personalizzato esistente. Inoltre, Smart imaging non richiede di aggiungere codice sul sito web per rilevare il browser di un utente. Tutte queste funzionalità vengono gestite automaticamente.
+La funzione Smart Imaging funziona direttamente con gli URL delle immagini esistenti e i predefiniti per immagini se configuri Smart Imaging sul dominio personalizzato esistente. Inoltre, Smart imaging non richiede di aggiungere codice sul sito web per rilevare il browser di un utente. Viene gestito tutto automaticamente.
 
 Se devi configurare un nuovo dominio personalizzato per l’utilizzo di Smart imaging, gli URL devono essere aggiornati per riflettere questo dominio personalizzato.
 
-Per comprendere i prerequisiti per lo Smart imaging, consulta [Sono idoneo all’utilizzo di Smart imaging?](#am-i-eligible-to-use-smart-imaging).
+Per comprendere i prerequisiti per l’imaging intelligente, consulta [Posso utilizzare l’imaging avanzato?](#am-i-eligible-to-use-smart-imaging)
 
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
@@ -124,7 +127,7 @@ Per utilizzare Smart imaging, l’account Dynamic Media Classic o Dynamic Media 
 * Utilizza la rete CDN (Content Delivery Network) in bundle Adobe come parte della tua licenza.
 * Utilizza un dominio dedicato (ad esempio, `images.company.com` o `mycompany.scene7.com`), non un dominio generico (ad esempio, `s7d1.scene7.com`, `s7d2.scene7.com` o `s7d13.scene7.com`).
 
-Per trovare i tuoi domini, accedi al tuo account o account aziendali.
+Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
 Tocca **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**. Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se al momento utilizzi un dominio generico, puoi richiedere di passare al dominio personalizzato. Esegui questa richiesta di transizione quando invii un ticket di assistenza tecnica.
 
@@ -140,7 +143,7 @@ Avviate la richiesta di utilizzare l&#39;imaging intelligente; non è abilitato 
    1. Nome contatto principale, e-mail, telefono.
    1. Tutti i domini da abilitare per l’imaging intelligente (ovvero `images.company.com` o `mycompany.scene7.com`).
 
-      Per trovare i tuoi domini, accedi al tuo account o account aziendali.
+      Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
       Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**.
 
@@ -148,7 +151,7 @@ Avviate la richiesta di utilizzare l&#39;imaging intelligente; non è abilitato 
    1. Verifica di utilizzare la CDN tramite Adobe e di non gestirla con una relazione diretta.
    1. Verifica di utilizzare un dominio dedicato come `images.company.com` o `mycompany.scene7.com` e non un dominio generico, ad esempio `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Per trovare i tuoi domini, accedi al tuo account o account aziendali.
+      Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
       Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**.
 
@@ -166,10 +169,11 @@ Avviate la richiesta di utilizzare l&#39;imaging intelligente; non è abilitato 
 
 ## Quando posso aspettarmi che il mio account sia abilitato con Smart imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-Le richieste vengono elaborate nell’ordine in cui vengono ricevute dal supporto tecnico, in base alla Lista di attesa.
+Le richieste vengono elaborate nell’ordine in cui vengono ricevute dall’Assistenza clienti, in base all’Elenco di attesa.
 
 >[!NOTE]
-A volte, si verifica un lungo lead time perché l’abilitazione di Smart imaging comporta la cancellazione della cache da parte di Adobi. Pertanto, è possibile gestire solo alcune transizioni dei clienti in un dato momento.
+>
+>Ci può essere un lungo tempo di lead perché l’abilitazione di Smart imaging comporta ad Adobe la cancellazione della cache. Pertanto, è possibile gestire solo alcune transizioni dei clienti in un dato momento.
 
 ## Quali sono i rischi connessi al passaggio all’app per l’utilizzo di Smart imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -179,19 +183,20 @@ Durante la transizione iniziale, le immagini non memorizzate nella cache colpisc
 
 ## Come posso verificare se l&#39;imaging intelligente funziona come previsto?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Dopo aver configurato l’account con l’imaging intelligente, carica un URL immagine Dynamic Media Classic (Scene7)/Dynamic Media sul browser.
+1. Dopo aver configurato l&#39;account con l&#39;imaging intelligente, carica un URL immagine Dynamic Media Classic o Adobe Experience Manager - Dynamic Media sul browser.
 1. Apri il riquadro per sviluppatori di Chrome facendo clic su **[!UICONTROL Visualizza > Sviluppatore > Strumenti di sviluppo]** nel browser. Oppure, scegli uno strumento per sviluppatori di browser a tua scelta.
 
 1. Assicurati che la cache sia disabilitata quando gli strumenti per sviluppatori sono aperti.
 
-   * In Windows - passare alle impostazioni nel riquadro degli strumenti per sviluppatori, quindi selezionare la casella di controllo **[!UICONTROL Disattiva cache (mentre devtools è aperto)]**.
-   * In Mac - nel riquadro dello sviluppatore, nella scheda **[!UICONTROL Rete]** , seleziona **[!UICONTROL disabilita cache]** .
+   * In Windows®, passare alle impostazioni nel riquadro degli strumenti per sviluppatori, quindi selezionare la casella di controllo **[!UICONTROL Disabilita cache (mentre devtools è aperto)]**.
+   * In macOS, nel riquadro dello sviluppatore, sotto la scheda **[!UICONTROL Rete]**, selezionare **[!UICONTROL disabilita cache]**.
 
 1. Osserva il tipo di contenuto viene trasformato nel formato appropriato. La schermata seguente mostra un&#39;immagine PNG convertita dinamicamente in WebP su Chrome.
 1. Ripeti questo test su diversi browser e condizioni utente.
 
 >[!NOTE]
-Non tutte le immagini vengono convertite. L’imaging intelligente decide se la conversione è necessaria per migliorare le prestazioni. A volte, quando non si prevede alcun guadagno di prestazioni o il formato non è JPEG o PNG, l&#39;immagine non viene convertita.
+>
+>Non tutte le immagini vengono convertite. L’imaging intelligente decide se la conversione può migliorare le prestazioni. A volte, quando non si prevede alcun guadagno di prestazioni o il formato non è JPEG o PNG, l&#39;immagine non viene convertita.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
