@@ -3,15 +3,15 @@ title: Distribuzione di risorse Dynamic Media
 description: Scopri come distribuire le risorse Dynamic Media.
 feature: Gestione risorse
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 7%
 
 ---
-
 
 # Distribuzione di risorse Dynamic Media{#delivering-dynamic-media-assets}
 
@@ -24,7 +24,7 @@ Con Dynamic Media hai diverse opzioni:
 
    * Incorporare il video o l’immagine sul sito web.
    * Collega URL all’applicazione web. Utilizza il collegamento quando desideri distribuire un lettore video come finestra a comparsa o modale.
-   * Se il sito è reattivo, è possibile [fornire immagini ottimizzate.](/help/assets/dynamic-media/responsive-site.md)
+   * Se il tuo sito è reattivo, puoi [fornire immagini ottimizzate](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
