@@ -1,14 +1,14 @@
 ---
 title: 'Modifica di un programma di produzione '
-description: 'Modifica di un programma di produzione '
+description: Modifica di un programma di produzione
+exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
-
 
 # Modifica di un programma di produzione {#create-production-program}
 
@@ -25,12 +25,10 @@ Segui i passaggi seguenti per modificare un programma di produzione:
 
 1. Passa alla pagina **Modifica programma** dalla pagina *Panoramica* di Cloud Manager
 
-1. Nella pagina **Modifica programma** vengono visualizzate due schede (Generale e Soluzioni) sia per i programmi Produzione che per i programmi Sandbox.
+1. La pagina **Modifica programma** visualizzerà tre opzioni (**Siti**, **Commercio** e **Risorse**) sia per i programmi Produzione che per i programmi Sandbox.
 
-   ![](assets/edit-program.png)
+   ![](assets/edit-prg.png)
 
-   >[!NOTE]
-   >Anche se verranno visualizzati sia Sites che Assets, uno di questi potrebbe essere disabilitato in base a ciò che è stato acquistato e non utilizzato. In particolare, se l&#39;organizzazione non dispone di diritti inutilizzati per una particolare soluzione, questa verrà visualizzata ma disabilitata.
 
 ## Considerazioni durante la modifica di un programma {#considerations-editing}
 
