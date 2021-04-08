@@ -3,15 +3,15 @@ title: Immagini interattive
 description: Scopri come utilizzare le immagini interattive in Dynamic Media.
 feature: Immagini interattive
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4251'
+source-wordcount: '4249'
 ht-degree: 2%
 
 ---
-
 
 # Immagini interattive{#interactive-images}
 
@@ -53,7 +53,7 @@ Consulta [Aggiunta di punti attivi a un banner immagine](#adding-hotspots-to-an-
 Consulta [Anteprima delle immagini interattive](#optional-previewing-interactive-images) - Facoltativo. Se lo desideri, puoi visualizzare una rappresentazione del banner acquistabile e verificarne l’interattività.
 Per informazioni dettagliate su come pubblicare le risorse immagine interattive, consulta [Pubblicazione delle risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) .
 
-1. **Ad Experience Manager**, è possibile aggiungere un’immagine interattiva al sito web o al sito web. Se utilizzi Sites, eCommerce o entrambi, puoi aggiungere immagini interattive direttamente a una pagina web in un Experience Manager. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **Ad Experience Manager**, è possibile aggiungere un’immagine interattiva al sito web o al sito web. Se utilizzi Sites, eCommerce o entrambi, puoi aggiungere immagini interattive direttamente a una pagina web in un Experience Manager. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 Se utilizzi Experience ManagerAssets e Dynamic Media standalone, copia il codice di incorporamento sul tuo sito web. Quindi, integralo con la visualizzazione rapida esistente. Consulta [Integrazione di un’immagine interattiva con il sito web](#integrating-an-interactive-image-with-your-website).
 Se utilizzi un WCM di terze parti (Web Content Manager), integra il nuovo video interattivo con la visualizzazione rapida esistente utilizzata sul sito web. Consulta [Integrazione di un&#39;immagine interattiva con una visualizzazione rapida esistente](#integrating-an-interactive-image-with-an-existing-quickview).
 
@@ -312,7 +312,7 @@ Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experie
 Una volta ottenuta l’immagine interattiva, puoi pubblicarla.
 Consulta [Incorporamento del visualizzatore di video o immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md).
 Consulta [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine AEM Sites.
-Consulta [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **Per visualizzare in anteprima le immagini interattive**
 
@@ -329,7 +329,7 @@ Per informazioni dettagliate su come pubblicare le risorse immagine interattive,
 
 Dopo aver caricato un&#39;immagine del banner, aggiunto degli hotspot ad essa e pubblicato l&#39;immagine interattiva, puoi aggiungerla alla pagina del tuo sito web.
 
-Se sei un cliente di AEM Sites, puoi aggiungere l’immagine interattiva trascinando il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se sei un cliente di AEM Sites, puoi aggiungere l’immagine interattiva trascinando il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Se sei un cliente AEM Assets autonomo, puoi aggiungere manualmente l’immagine interattiva al tuo sito web come descritto in questa sezione.
 
