@@ -3,7 +3,7 @@ title: 'Creazione di un programma di produzione '
 description: Creazione di un programma di produzione
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -23,18 +23,17 @@ Segui i passaggi seguenti per creare un programma di produzione:
    >[!NOTE]
    >Per informazioni su come accedere a Cloud Manager, consulta [Pagina di destinazione di Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) per ulteriori dettagli.
 
-1. Seleziona **Imposta per produzione** nella procedura guidata Crea programma per creare un programma di produzione. L&#39;utente può accettare il nome predefinito del programma o modificarlo prima di selezionare **Continua**.
+1. Seleziona **Imposta per produzione** nella procedura guidata Crea programma per creare un programma di produzione. L&#39;utente può accettare il nome del programma predefinito o modificarlo prima di selezionare **Crea**.
 
    ![](assets/create-prod1.png)
 
 1. L&#39;utente selezionerà le soluzioni da includere nel programma nella schermata che verrà presentata dopo la schermata precedente.
 
 
-   ![](assets/set-up-prod2.png)
+   ![](assets/set-up-prod-2.png)
 
 1. Dopo aver selezionato le soluzioni, fai clic su **Crea**.
 
-   ![](assets/set-up-prod3.png)
 
 1. Una volta visualizzata la scheda del programma nella pagina di destinazione, passa il puntatore del mouse su di essa per selezionare l’icona Cloud Manager per passare alla pagina Cloud Manager **Panoramica**.
 
@@ -45,5 +44,4 @@ Segui i passaggi seguenti per creare un programma di produzione:
 
 
    >[!NOTE]
-   >
    >Un programma di produzione non dispone della funzione **Configurazione automatica**.
