@@ -3,15 +3,15 @@ title: Set di file multimediali diversi
 description: Scopri come utilizzare i set di file multimediali diversi in Dynamic Media.
 feature: Set di file multimediali diversi
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1469'
 ht-degree: 25%
 
 ---
-
 
 # Set di file multimediali diversi{#mixed-media-sets}
 
@@ -33,11 +33,11 @@ Per iniziare rapidamente a usare i set di file multimediali diversi, effettua le
 
    Per iniziare, carica le immagini e i video per i set di file multimediali diversi. Se necessario, crea i [Set di immagini](/help/assets/dynamic-media/image-sets.md) e i [Set 360 gradi](/help/assets/dynamic-media/spin-sets.md). Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di file multimediali diversi, assicurati di tenere conto dello zoom quando scegli le immagini. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel.
 
-1. [Creare set di file multimediali diversi.](#creating-mixed-media-sets)
+1. [Creare set di file multimediali diversi](#creating-mixed-media-sets).
 
    Per creare un set di file multimediali diversi, dalla pagina Risorse tocca **[!UICONTROL Crea > Set di file multimediali diversi]**, quindi assegna un nome al set, scegli le risorse e stabilisci l’ordine in cui vengono visualizzate le immagini.
 
-   Vedere [Uso dei selettori.](/help/assets/dynamic-media/working-with-selectors.md)
+   Vedere [Utilizzo dei selettori](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Imposta i [predefiniti visualizzatore di file multimediali diversi](/help/assets/dynamic-media/managing-viewer-presets.md), a seconda delle esigenze.
 
@@ -45,13 +45,13 @@ Per iniziare rapidamente a usare i set di file multimediali diversi, effettua le
 
    Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]**.
 
-   Consulta [Aggiunta e modifica di predefiniti visualizzatore.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   Consulta [Aggiunta e modifica di predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-1. [Anteprima di set di file multimediali diversi.](#previewing-mixed-media-sets)
+1. [Anteprima di set di file multimediali diversi](#previewing-mixed-media-sets).
 
    Seleziona il set di file multimediali diversi e puoi visualizzarlo in anteprima. Per esaminare il set di file multimediali diversi nel visualizzatore selezionato, fai clic sulle icone delle miniature. Puoi scegliere diversi visualizzatori dal menu a discesa **[!UICONTROL Visualizzatori]** , disponibile nella barra a sinistra.
 
-1. [Pubblicare Set Di File Multimediali Misti.](#publishing-mixed-media-sets)
+1. [Pubblicare Set Di File Multimediali Misti](#publishing-mixed-media-sets).
 
    La pubblicazione di un set di file multimediali diversi attiva l’URL e la stringa di incorporamento. Inoltre, devi [pubblicare il predefinito visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -174,4 +174,3 @@ Per informazioni dettagliate su come pubblicare set di file multimediali diversi
 >[!NOTE]
 >
 >Se il set di file multimediali diversi non termina completamente nel servizio di consegna al primo momento della pubblicazione, pubblica il set di file multimediali diversi una seconda volta.
-
