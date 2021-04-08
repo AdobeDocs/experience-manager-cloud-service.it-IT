@@ -3,7 +3,7 @@ title: 'Modifica di un programma sandbox '
 description: Modifica di un programma sandbox
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
+source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Per modificare un programma Sandbox, effettua le seguenti operazioni:
    ![](assets/edit-prg.png)
 
    >[!NOTE]
-   >È necessario selezionare almeno una soluzione per un programma, ovvero l&#39;utente non potrà deselezionare tutte le soluzioni durante il flusso di lavoro Modifica programma.
+   >È necessario selezionare almeno una soluzione per un programma, ovvero l&#39;utente non può deselezionare tutte le soluzioni durante il flusso di lavoro Modifica programma.
 
 1. Fai clic su **Salva** per completare il processo del programma di modifica.
 
