@@ -6,7 +6,7 @@ topic: Professionista
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 2%
@@ -137,7 +137,7 @@ Il tuo primo dominio personalizzato non comporta costi aggiuntivi con una licenz
 
 Avviate la richiesta di utilizzare l&#39;imaging intelligente; non è abilitato automaticamente.
 
-1. [Utilizza l’Admin Console per creare un caso di supporto.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [Utilizza l’Admin Console per creare un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di supporto.
 1. Fornisci le seguenti informazioni nel tuo caso di assistenza:
 
    1. Nome contatto principale, e-mail, telefono.
