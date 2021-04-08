@@ -3,15 +3,15 @@ title: Video
 description: Scopri come lavorare con i video in Dynamic Media.
 feature: Profili video
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '9514'
+source-wordcount: '9512'
 ht-degree: 6%
 
 ---
-
 
 # Video{#video}
 
@@ -405,9 +405,9 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
 
 | Tipo video | Larghezza x altezza | Rapporto larghezza | Rapporto altezza |
 |--- |--- |--- |--- |
-| Origine | 1920x1080 | 1 | 1 |
+| Origine | 1920x1080 | 1 | 3 |
 | Codificato | 960 x 540 | 2 | 2 |
-| Codificato | 640 x 360 | 3 | 1 |
+| Codificato | 640 x 360 | 3 | 3 |
 | Codificato | 480 x 270 | 4 | 4 |
 
 ### Formato del file video codificato {#encoded-video-file-format}
@@ -1091,7 +1091,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
 
    Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse.
 
-   Consulta [Pubblicazione delle risorse.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   Consulta [Pubblicazione di risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 1. Effettua una delle operazioni seguenti:
 
@@ -1295,7 +1295,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 1. Tap **[!UICONTROL OK]** to return to the Properties tab.
 1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**, then tap the Back Home icon in the upper-left corner to return to Experience Manager.
 
-   See [Adding a video thumbnail.](#adding-a-video-thumbnail)
+   See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
 -->
 
