@@ -3,15 +3,15 @@ title: Distribuzione di immagini ottimizzate per un sito reattivo
 description: Scopri come utilizzare la funzione di codice reattivo per distribuire immagini ottimizzate da Dynamic Media.
 feature: Gestione risorse
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 14%
 
 ---
-
 
 # Distribuzione di immagini ottimizzate per un sito reattivo {#delivering-optimized-images-for-a-responsive-site}
 
@@ -19,9 +19,9 @@ Utilizza la funzione Codice reattivo quando desideri condividere il codice per i
 
 Questa funzione ha senso utilizzare se il sito web si trova su un sito web WCM di terze parti. Tuttavia, se il sito web si trova in AEM, un server di immagini fuori sede esegue il rendering dell&#39;immagine e la fornisce alla pagina web.
 
-Vedere anche [Incorporamento del visualizzatore video in una pagina web.](embed-code.md)
+Vedere anche [Incorporamento del visualizzatore video in una pagina Web](embed-code.md).
 
-Vedere anche [Collegamento di URL all&#39;applicazione Web.](linking-urls-to-yourwebapplication.md)
+Consulta anche [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
 **Per fornire immagini ottimizzate per un sito** reattivo:
 
