@@ -3,15 +3,15 @@ title: Set 360 gradi
 description: Scopri come utilizzare i set 360 gradi in Dynamic Media.
 feature: Set 360 gradi
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 12%
 
 ---
-
 
 # Set 360 gradi{#spin-sets}
 
@@ -39,11 +39,11 @@ Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazion
    >
    >I set di batch vengono creati dall’IPS (Image Production System) come parte dell’inserimento delle risorse.
 
-1. [Carica le immagini per più visualizzazioni.](#uploading-assets-for-spin-sets)
+1. [Carica le immagini per più visualizzazioni](#uploading-assets-for-spin-sets).
 
    Per un set 360 gradi a una dimensione e per un set 360 gradi a due dimensioni, è necessario effettuare almeno 8-12 scatti di un elemento. Le riprese devono essere effettuate a intervalli regolari per dare l&#39;impressione che l&#39;elemento stia ruotando e sia capovolto. Ad esempio, se un set 360 gradi unidimensionale include 12 scatti, ruotate l’elemento di 30° (360/12) per ogni ripresa.
 
-1. [Crea set 360 gradi.](#creating-spin-sets)
+1. [Crea set 360 gradi](#creating-spin-sets).
 
    Per creare un set 360 gradi, seleziona **[!UICONTROL Crea > Set 360 gradi]**, quindi assegna un nome al set, scegli le risorse e scegli l’ordine in cui vengono visualizzate le immagini.
 
@@ -55,15 +55,15 @@ Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazion
 
    Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]**.
 
-   Consulta [Aggiunta e modifica di predefiniti visualizzatore.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   Consulta [Aggiunta e modifica di predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
    È possibile visualizzare e accedere ai set creati mediante i predefiniti per set di batch in tre modi diversi. (I set creati utilizzando i predefiniti per set di batch, *not* vengono visualizzati nell’interfaccia utente.)
 
-1. [Anteprima set 360 gradi.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Anteprima set 360 gradi](/help/assets/dynamic-media/previewing-assets.md).
 
    Seleziona il set 360 gradi e puoi visualizzarlo in anteprima. Ruota il set 360 gradi. Puoi scegliere diversi visualizzatori dal menu a discesa **[!UICONTROL Visualizzatori]**, disponibile dal menu a discesa della barra a sinistra.
 
-1. [Pubblicare Set 360 gradi.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Pubblicare Set 360 gradi](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    La pubblicazione di un set 360 gradi attiva l’URL e la stringa di incorporamento. Inoltre, devi [pubblicare il predefinito visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -138,7 +138,7 @@ Questa sezione descrive come creare i set 360 gradi.
 
    Se necessario, trascina l’icona Riordina di una risorsa a destra del nome del file della risorsa per riordinare le immagini verso l’alto o verso il basso nell’elenco dei set.
 
-   ![Riordinamento del frame 11 nel set 360 gradi trascinandolo in una nuova posizione.](assets/6_5_spinset-reorderassets.png)
+   ![Riordinamento del frame 11 nel set 360 gradi trascinandolo in una nuova posizione](assets/6_5_spinset-reorderassets.png)
 
    Riordinamento del frame 11 nel set 360 gradi trascinandolo in una nuova posizione.
 
