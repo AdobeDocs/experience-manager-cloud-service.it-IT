@@ -3,15 +3,15 @@ title: Video interattivi
 description: Scopri come lavorare con video interattivi e video acquistabili in Dynamic Media.
 feature: Video interattivi
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '6068'
+source-wordcount: '6066'
 ht-degree: 4%
 
 ---
-
 
 # Video interattivi{#interactive-videos}
 
@@ -87,7 +87,7 @@ Il metodo di collegamento basato su URL non è possibile se il contenuto interat
 Per terminare, pubblica le risorse video interattive. La pubblicazione crea il codice di incorporamento o l’URL da copiare e applicare alla pagina di destinazione del sito web. Consulta [Aggiunta di interattività al video](#adding-interactivity-to-your-video).
 Consulta [Pubblicazione di risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. **Aggiunta di un video interattivo al sito web o al sito web, ad Experience Manager** : se utilizzi Experience Manager Sites o Experience Manager eCommerce o entrambi, puoi aggiungere il video interattivo direttamente a una pagina web nell’Experience Manager. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **Aggiunta di un video interattivo al sito web o al sito web, ad Experience Manager** : se utilizzi Experience Manager Sites o Experience Manager eCommerce o entrambi, puoi aggiungere il video interattivo direttamente a una pagina web nell’Experience Manager. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 Utilizza il codice di incorporamento o l’URL per integrare il video interattivo con le esperienze del sito web. Consulta [Integrazione di un video interattivo con il sito web](#integrating-an-interactive-video-with-your-website).
 Se utilizzi un WCM di terze parti (Web Content Manager), devi integrare il nuovo video interattivo con l’implementazione della visualizzazione rapida esistente utilizzata sul sito web. Consulta [Integrazione di un video interattivo con una visualizzazione rapida esistente](#integrating-an-interactive-video-with-an-existing-quickview).
    [Aggiunta di Risorse multimediali dinamiche alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -493,7 +493,7 @@ Dopo aver salvato il video interattivo, il video viene immediatamente aperto in 
    >[!NOTE]
    Per pubblicare un video acquistabile con visualizzazioni rapide, accertati anche di pubblicare separatamente dall’area di e-commerce ciascuna delle risorse immagine correlate al video.
 
-   Dopo aver aggiunto i segmenti della timeline e pubblicato il video interattivo, puoi aggiungerlo alla pagina di destinazione del sito web esistente. Consulta [Integrazione di un video interattivo con il sito web.](#integrating-an-interactive-video-with-your-website)
+   Dopo aver aggiunto i segmenti della timeline e pubblicato il video interattivo, puoi aggiungerlo alla pagina di destinazione del sito web esistente. Consulta [Integrazione di un video interattivo con il sito web](#integrating-an-interactive-video-with-your-website).
 
 ## Pubblicazione delle risorse video interattive {#publishing-interactive-video-assets}
 
@@ -503,7 +503,7 @@ Per informazioni dettagliate su come pubblicare le risorse video interattive, co
 
 Dopo aver caricato un video, aggiunto dei segmenti della timeline e pubblicato il video interattivo, puoi aggiungerlo al sito web esistente.
 
-Se sei un cliente di Experience Manager Sites, puoi aggiungere il video interattivo trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se sei un cliente di Experience Manager Sites, puoi aggiungere il video interattivo trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Se sei un cliente di Experience Manager Assets autonomo, puoi aggiungere manualmente il video interattivo al tuo sito web come descritto in questa sezione.
 
