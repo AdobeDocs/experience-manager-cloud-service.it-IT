@@ -2,15 +2,15 @@
 title: Risoluzione dei problemi relativi a Dynamic Media
 description: Suggerimenti per la risoluzione dei problemi durante l’utilizzo di Dynamic Media.
 topic: '"Amministratore, Business Practitioner"'
-role: Amministratore, Business Practices
+role: Administrator,Business Practitioner
+exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '993'
 ht-degree: 2%
 
 ---
-
 
 # Risoluzione dei problemi relativi a Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
@@ -18,7 +18,7 @@ L&#39;argomento seguente descrive la risoluzione dei problemi relativi a Dynamic
 
 ## Nuova configurazione Dynamic Media {#new-dm-config}
 
-Consulta [Risoluzione dei problemi di una nuova configurazione Dynamic Media.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+Consulta [Risoluzione dei problemi relativi a una nuova configurazione Dynamic Media](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
 ## Generale (tutte le risorse) {#general-all-assets}
 
@@ -221,4 +221,3 @@ Se riscontri problemi con i visualizzatori, consulta le seguenti indicazioni per
   </tr>
  </tbody>
 </table>
-
