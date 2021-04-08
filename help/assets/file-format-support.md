@@ -3,15 +3,15 @@ title: Formati di file e tipi MIME supportati
 description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come a [!DNL Cloud Service].
 contentOwner: AG
 feature: Gestione risorse, rappresentazioni
-role: Business Practices, Amministratore
+role: Business Practitioner,Administrator
+exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '821'
 ht-degree: 10%
 
 ---
-
 
 # [!DNL Assets] formati di file supportati  {#supported-file-formats}
 
@@ -96,7 +96,7 @@ I seguenti sottotipi di formati di file immagine raster non supportati in [!DNL 
 
 Sono supportati i seguenti formati 3D.
 
-Consulta anche [Utilizzo di risorse 3D in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+Consulta anche [Utilizzo di risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 | Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo dell&#39;accesso | Anteprima miniature | Anteprima 3D | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
