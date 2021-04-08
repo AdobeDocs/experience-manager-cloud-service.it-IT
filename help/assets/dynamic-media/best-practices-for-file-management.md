@@ -4,15 +4,15 @@ description: '"Suggerimenti e best practice per la denominazione, l’organizzaz
 contentOwner: Rick Brough
 feature: Gestione Delle Risorse, Profili Immagine, Profili Video
 topic: Professionista
-role: Amministratore, Business Practices
+role: Administrator,Business Practitioner
+exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per organizzare le risorse digitali per l’utilizzo dei profili immagine o video{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
@@ -26,7 +26,7 @@ Di seguito sono riportati alcuni suggerimenti sulle best practice per organizzar
 
 * Organizza i file in base ai metadati aggiunti al loro interno anziché alle cartelle in cui risiedono. Puoi seguire questa procedura aggiungendo profili di metadati.
 
-   * Vedere [Profili metadati.](/help/assets/metadata-profiles.md)
+   * Consulta [Profili metadati](/help/assets/metadata-profiles.md).
    * Consulta [Metadati per Digital Asset Management](/help/assets/manage-metadata.md).
 
 * Di solito, la tua raccolta di risorse digitali cresce sempre di più. Pertanto, è importante, in precedenza, formalizzare l’uso dei metadati, la struttura delle cartelle e la denominazione dei file tra tutte le risorse caricate. La standardizzazione su questi elementi assicura che, con l’aumento del pool di risorse digitali, sia possibile applicare profili di elaborazione alle cartelle con maggiore precisione e coerenza.
@@ -44,4 +44,3 @@ Di seguito sono riportati alcuni suggerimenti sulle best practice per organizzar
 
 * Crea una directory di cartelle che probabilmente non verrà modificata in modo che i profili assegnati non si interrompano.
 * Supponiamo che una risorsa sia già stata pubblicata e quindi utilizzi Adobe Experience Manager per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione. La posizione originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa ripubblicata. La risorsa pubblicata originale, tuttavia, è &quot;persa&quot; in Experience Manager e non può essere annullata. Pertanto, come best practice, annulla la pubblicazione delle risorse prima di spostarle in un’altra cartella.
-
