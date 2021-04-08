@@ -3,7 +3,7 @@ title: 'Modifica di un programma sandbox '
 description: Modifica di un programma sandbox
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 87d4e7d17b6a035a1127b8f8599214bfd763644a
+source-git-commit: 9de1b85f8909709c08cb7358414c18c813aac684
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -40,13 +40,13 @@ Per modificare un programma Sandbox, effettua le seguenti operazioni:
    >[!NOTE]
    >È necessario selezionare almeno una soluzione per un programma, ovvero l&#39;utente non può deselezionare tutte le soluzioni durante il flusso di lavoro Modifica programma.
 
-1. Fai clic su **Salva** per completare il processo del programma di modifica.
+1. Fai clic su **Salva** per completare il flusso di lavoro del programma di modifica.
 
 
 ## Considerazioni durante la modifica di un programma {#considerations-editing}
 
 Durante la modifica di un programma è necessario rivedere alcune considerazioni:
 
-* È necessario selezionare almeno una soluzione per un programma che non consenta all&#39;utente di deselezionare tutte le soluzioni durante il flusso di lavoro Modifica programma.
+* È necessario selezionare almeno una soluzione per un programma, ovvero l&#39;utente non può deselezionare tutte le soluzioni durante il flusso di lavoro Modifica programma.
 
 * Facendo clic sul pulsante **Salva**, se le soluzioni selezionate sono cambiate, gli aggiornamenti della soluzione agli ambienti avranno effetto dopo la distribuzione successiva.
