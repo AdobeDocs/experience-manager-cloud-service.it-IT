@@ -3,15 +3,15 @@ title: Annullare la validità della cache CDN tramite Dynamic Media
 description: '"Scopri come annullare la validità della rete CDN (Content Delivery Network) memorizzata nella cache per consentirti di aggiornare rapidamente le risorse consegnate da Dynamic Media, anziché attendere la scadenza della cache."'
 feature: Gestione risorse
 topic: Professionista
-role: Amministratore, Business Practices
+role: Administrator,Business Practitioner
+exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1303'
 ht-degree: 1%
 
 ---
-
 
 # Annullamento della validità della cache CDN tramite Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
@@ -27,7 +27,7 @@ Vedi anche [Panoramica sulla memorizzazione in cache in Dynamic Media](https://h
 
 *Parte 1 di 2: Creazione di un modello di annullamento della validità CDN*
 
-1. In AEM come Cloud Service, tocca **[!UICONTROL Strumenti > Risorse > Modello di annullamento validità CDN.]**
+1. In AEM come Cloud Service, tocca **[!UICONTROL Strumenti > Risorse > Modello di annullamento validità CDN]**.
 
    ![Funzione di convalida CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -40,12 +40,12 @@ Vedi anche [Panoramica sulla memorizzazione in cache in Dynamic Media](https://h
 
    ![Modello di annullamento validità CDN - Crea](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. Nell&#39;angolo in alto a destra della pagina **[!UICONTROL Modello di annullamento validità CDN]**, tocca **[!UICONTROL Salva]**, quindi tocca **[!UICONTROL OK.]**<br>
+1. Nell&#39;angolo in alto a destra della pagina **[!UICONTROL Modello di annullamento validità CDN]**, tocca **[!UICONTROL Salva]**, quindi tocca **[!UICONTROL OK]**.<br>
 
    *Parte 2 di 2: Impostazione delle opzioni di annullamento della validità CDN*
    <br>
 
-1. In AEM come Cloud Service, tocca **[!UICONTROL Strumenti > Risorse > Invalidazione CDN.]**
+1. In AEM come Cloud Service, tocca **[!UICONTROL Strumenti > Risorse > Invalidazione CDN]**.
 
    ![Funzione di convalida CDN](/help/assets/assets-dm/cdn-invalidation-path.png)
 
@@ -65,7 +65,7 @@ Vedi anche [Panoramica sulla memorizzazione in cache in Dynamic Media](https://h
    | **[!UICONTROL Aggiungi risorse]** | Utilizza il Selettore risorse per selezionare le risorse da annullare la validità. Puoi selezionare le risorse pubblicate o non pubblicate.<br>La memorizzazione nella cache della rete CDN è basata su URL, non su risorse. Pertanto, è necessario conoscere gli URL completi presenti sul sito web. Dopo aver determinato tali URL, puoi aggiungerli al modello. Quindi, puoi selezionare e aggiungere tali risorse e annullare la validità degli URL in un unico passaggio. <br>Utilizza questa opzione con  **[!UICONTROL Annulla validità predefiniti immagine associati alla risorsa in CDN]**,  **[!UICONTROL Annulla validità in base al modello]** o a entrambi. |
    | **[!UICONTROL Aggiungi URL]** | Aggiungi o incolla manualmente percorsi URL completi alle risorse Dynamic Media la cui cache CDN desideri annullare la validità. Utilizza questa opzione se non hai creato un modello di annullamento validità CDN in ***Parte 1 di 2: Creazione di un modello di annullamento validità CDN*** e di alcune risorse da annullare la validità.<br>**Importante:** ogni URL aggiunto deve trovarsi sulla propria riga.<br>Puoi annullare la validità di un massimo di 1000 URL alla volta. Se il numero di URL nel campo di testo **[!UICONTROL Aggiungi URL]** è maggiore di 1000, non è possibile toccare **[!UICONTROL Avanti]**. In questi casi, tocca **[!UICONTROL X]** a destra di una risorsa selezionata o un URL aggiunto manualmente per eliminarla dall’elenco di annullamento della validità.<br>Specifica gli URL per le raccolte avanzate immagini nel modello di annullamento validità CDN o in questo campo  **[!UICONTROL Aggiungi]** URLtext . |
 
-1. Vicino all&#39;angolo superiore destro della pagina, tocca **[!UICONTROL Avanti.]**
+1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Avanti]**.
 1. Nella pagina **[!UICONTROL Invalidazione CDN]** - **[!UICONTROL Conferma]**, nella casella di riepilogo **[!UICONTROL URL]** viene visualizzato un elenco di uno o più URL generati dal modello di invalidazione CDN creato in precedenza e delle risorse appena aggiunte.
 
    Ad esempio, se utilizzi l’esempio Modello di annullamento validità CDN mostrato nei passaggi precedenti, supponi di aver aggiunto una singola risorsa denominata `spinset`. Quando tocchi **[!UICONTROL Strumenti > Risorse > Annullamento della validità della rete CDN]**, nell’interfaccia utente di **[!UICONTROL Annullamento della validità della rete CDN - Conferma]** si ottengono i seguenti cinque URL generati:
@@ -85,7 +85,7 @@ In tutti i casi, l&#39;intero batch viene elaborato per l&#39;annullamento della
 | *Impossibile recuperare gli URL per le risorse selezionate.* | Si verifica se viene soddisfatto uno dei seguenti scenari:<br>- Non viene trovata una configurazione Dynamic Media.<br>- C&#39;è un&#39;eccezione durante il recupero di un utente di servizio attraverso il quale viene letta la configurazione di Dynamic Media.<br>- Il server di pubblicazione o la directory principale aziendale utilizzata per formare gli URL è mancante nella configurazione di Dynamic Media. |
 | *Alcuni URL non sono definiti correttamente. Correggi e invia nuovamente.* | Si verifica se l’API di invalidazione della cache CDN IPS restituisce un errore. L’errore indica che l’URL fa riferimento a un’azienda diversa o che l’URL non è valido in base alla convalida eseguita dall’API IPS cdnCacheInvalidation. |
 | *Impossibile annullare la validità della cache CDN.* | Si verifica se la richiesta di annullamento della validità della cache CDN non riesce per altri motivi. |
-| *Nessun URL immesso da invalidare.* | Si verifica se nella pagina **[!UICONTROL Invalidazione CDN]** - **[!UICONTROL Conferma]** non sono presenti URL e si tocca **[!UICONTROL Invia.]** |
+| *Nessun URL immesso da invalidare.* | Si verifica se nella pagina **[!UICONTROL Invalidazione CDN]** - **[!UICONTROL Conferma]** non sono presenti URL e si tocca **[!UICONTROL Invia]**. |
 
 
 <!--  | I do not want to create a template. | Near the upper-right corner of the page, tap **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
