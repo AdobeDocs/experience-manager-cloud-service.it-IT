@@ -3,9 +3,9 @@ title: 'Modifica di un programma sandbox '
 description: Modifica di un programma sandbox
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,14 @@ Per modificare un programma Sandbox, effettua le seguenti operazioni:
 
 1. Passa alla pagina **Modifica programma** dalla pagina *Panoramica* di Cloud Manager.
 
-1. Nella pagina **Modifica programma** sono visualizzate tre opzioni (**Siti**, **Commercio** e **Risorse**) sia per i programmi Produzione che per i programmi Sandbox.
+1. La pagina **Modifica programma** visualizza tre opzioni (**Siti** e **Risorse**) sia per i programmi Produzione che per i programmi Sandbox. Inoltre, puoi selezionare l&#39;opzione del componente aggiuntivo **Commerce** disponibile in **Sites**, come illustrato nella figura riportata di seguito.
+
    ![](assets/edit-prg.png)
+
+   >[!NOTE]
+   >È necessario selezionare almeno una soluzione per un programma, ovvero l&#39;utente non potrà deselezionare tutte le soluzioni durante il flusso di lavoro Modifica programma.
+
+1. Fai clic su **Salva** per completare il processo del programma di modifica.
 
 
 ## Considerazioni durante la modifica di un programma {#considerations-editing}
