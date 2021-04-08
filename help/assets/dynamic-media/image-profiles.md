@@ -3,15 +3,15 @@ title: Profili immagine di Dynamic Media
 description: '"Scopri come creare profili immagine di Dynamic Media contenenti impostazioni per maschere non nitide, ritaglio avanzato o campione avanzato o entrambi. Quindi, applica il profilo a una cartella di risorse immagine."'
 feature: Gestione Delle Risorse, Profili Immagine, Rendering
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2705'
 ht-degree: 10%
 
 ---
-
 
 # Profili immagine di Dynamic Media {#image-profiles}
 
@@ -96,7 +96,7 @@ In **[!UICONTROL Maschera definizione dettagli]** sono disponibili le seguenti o
  </tbody>
 </table>
 
-La nitidezza è descritta in [Nitidezza delle immagini.](/help/assets/dynamic-media/assets/sharpening_images.pdf)
+La nitidezza è descritta in [Nitidezza delle immagini](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## Creazione di profili immagine Dynamic Media {#creating-image-profiles}
 
@@ -248,7 +248,7 @@ Se necessario, potete eseguire di nuovo il ritaglio avanzato per generare di nuo
       * Se l’immagine presenta solo un ritaglio avanzato o un campione avanzato, trascinate sull’immagine la maniglia d’angolo della casella di ritaglio. Regolare le dimensioni dell&#39;area visibile del ritaglio.
       * Se l’immagine presenta sia un ritaglio avanzato che un campione avanzato, trascinate sull’immagine la maniglia d’angolo della casella di ritaglio. Regolare le dimensioni dell&#39;area visibile del ritaglio. Oppure, tocca il campione avanzato sotto l’immagine (i campioni colore sono statici), quindi trascina la maniglia d’angolo della casella di ritaglio. Regolare le dimensioni dell’area visibile del campione.
 
-      ![Ridimensionamento del ritaglio avanzato di un’immagine.](assets/edit_smart_crops-resize.png)
+      ![Ridimensionamento del ritaglio avanzato di un’immagine](assets/edit_smart_crops-resize.png).
 
    * Spostate la casella di ritaglio avanzato. Effettua una delle seguenti operazioni:
 
