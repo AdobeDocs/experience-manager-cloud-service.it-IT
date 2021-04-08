@@ -3,9 +3,9 @@ title: 'Modifica di un programma di produzione '
 description: Modifica di un programma di produzione
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,20 @@ Segui i passaggi seguenti per modificare un programma di produzione:
 
 1. Passa alla pagina **Modifica programma** dalla pagina *Panoramica* di Cloud Manager
 
-1. La pagina **Modifica programma** visualizzerà tre opzioni (**Siti**, **Commercio** e **Risorse**) sia per i programmi Produzione che per i programmi Sandbox.
+1. La pagina **Modifica programma** visualizza tre opzioni (**Siti** e **Risorse**) sia per i programmi Produzione che per i programmi Sandbox. Inoltre, puoi selezionare l&#39;opzione del componente aggiuntivo **Commerce** disponibile in **Sites**, come illustrato nella figura riportata di seguito.
 
    ![](assets/edit-prg.png)
+
+   >[!NOTE]
+   >È necessario selezionare almeno una soluzione per un programma, ovvero l&#39;utente non potrà deselezionare tutte le soluzioni durante il flusso di lavoro Modifica programma.
+
+1. Fai clic su **Salva** per completare il processo del programma di modifica.
 
 
 ## Considerazioni durante la modifica di un programma {#considerations-editing}
 
 Durante la modifica di un programma è necessario rivedere alcune considerazioni:
 
-* È necessario selezionare almeno una soluzione per un programma, non sarà consentito deselezionare tutte le soluzioni durante il flusso di lavoro Modifica programma.
+* È necessario selezionare almeno una soluzione per un programma che non consenta all&#39;utente di deselezionare tutte le soluzioni durante il flusso di lavoro Modifica programma.
 
 * Facendo clic sul pulsante **Salva**, se le soluzioni selezionate sono cambiate, gli aggiornamenti della soluzione agli ambienti avranno effetto dopo la distribuzione successiva.
