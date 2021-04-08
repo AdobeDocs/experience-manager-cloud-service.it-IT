@@ -3,15 +3,15 @@ title: Set di immagini
 description: Scopri come lavorare con i set di immagini in Dynamic Media.
 feature: Set di immagini
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2051'
 ht-degree: 9%
 
 ---
-
 
 # Set di immagini {#image-sets}
 
@@ -43,11 +43,11 @@ Per farti iniziare a lavorare velocemente:
    >
    >I set di batch vengono creati dall’IPS (Image Production System) come parte dell’inserimento delle risorse.
 
-1. [Carica le immagini sorgente principali per più visualizzazioni.](#uploading-assets-in-image-sets)
+1. [Carica le immagini sorgente principali per più visualizzazioni](#uploading-assets-in-image-sets).
 
    Carica le immagini per i set di immagini. Gli utenti possono ingrandire le immagini nel visualizzatore di set di immagini. Scegli le tue immagini con attenzione. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel. Experience Manager Assets supporta molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG ed EPS senza perdita di dati.
 
-1. [Crea set di immagini.](#creating-image-sets)
+1. [Creare set di immagini](#creating-image-sets).
 
    In Set immagini, gli utenti fanno clic su miniature nel visualizzatore di set di immagini.
 
@@ -55,7 +55,7 @@ Per farti iniziare a lavorare velocemente:
 
    Consulta [Preparazione delle risorse dei set di immagini per il caricamento e il caricamento dei file](#uploading-assets-in-image-sets).
 
-   Vedere [Uso dei selettori.](/help/assets/dynamic-media/working-with-selectors.md)
+   Vedere [Utilizzo dei selettori](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Aggiungi [predefiniti visualizzatore set di immagini](/help/assets/dynamic-media/managing-viewer-presets.md), a seconda delle esigenze.
 
@@ -64,11 +64,11 @@ Per farti iniziare a lavorare velocemente:
    Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]**.
 
 1. (Facoltativo) [Visualizzazione dei set di immagini](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) creati utilizzando i predefiniti per set di batch.
-1. [Anteprima set di immagini.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Anteprima set di immagini](/help/assets/dynamic-media/previewing-assets.md).
 
    Seleziona il set di immagini e puoi visualizzarlo in anteprima. Per esaminare il set di immagini nel visualizzatore selezionato, tocca le icone delle miniature. Puoi scegliere diversi visualizzatori dal menu **[!UICONTROL Visualizzatori]**, disponibile dall’elenco a discesa della barra a sinistra.
 
-1. [Pubblica set di immagini.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Pubblica set di immagini](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    La pubblicazione di un set di immagini attiva l’URL e la stringa di incorporamento. Inoltre, devi [pubblicare qualsiasi predefinito visualizzatore personalizzato](/help/assets/dynamic-media/managing-viewer-presets.md) che hai creato. I predefiniti per visualizzatori sono già stati pubblicati.
 
@@ -80,7 +80,7 @@ Per farti iniziare a lavorare velocemente:
 
    Consulta le sezioni [Collegamento di un set di immagini a una pagina web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) e [Incorporamento di un visualizzatore di video o immagini](/help/assets/dynamic-media/embed-code.md).
 
-Per modificare i set di immagini, vedere [modifica dei set di immagini.](#editing-image-sets) Inoltre, puoi visualizzare e modificare le proprietà del set di  [immagini](/help/assets/manage-digital-assets.md#editing-properties).
+Per modificare i set di immagini, consulta [modifica dei set di immagini](#editing-image-sets). Inoltre, è possibile visualizzare e modificare le proprietà del [set di immagini](/help/assets/manage-digital-assets.md#editing-properties).
 
 In caso di problemi durante la creazione dei set, consulta Immagini e set in [Risoluzione dei problemi Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
@@ -147,7 +147,7 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 
    Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando o facendo clic su **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, tocca l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a elenco]**.
 
-   Vedere [Uso dei selettori.](/help/assets/dynamic-media/working-with-selectors.md)
+   Vedere [Utilizzo dei selettori](/help/assets/dynamic-media/working-with-selectors.md).
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
