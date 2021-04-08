@@ -3,15 +3,15 @@ title: Gestione dei predefiniti per immagini
 description: '"Scopri i predefiniti immagine e come creare, modificare e gestire i predefiniti immagine."'
 feature: Predefiniti immagine,Visualizzatori,Rendering
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 10%
 
 ---
-
 
 # Gestione dei predefiniti per immagini{#managing-image-presets}
 
@@ -49,7 +49,7 @@ Per gestire i predefiniti immagine in Experience Manager, tocca o fai clic sul l
 >
 >*non* è necessario pubblicare i predefiniti per immagini quando i predefiniti per immagini vengono pubblicati automaticamente.
 >
->Consulta [Pubblicazione dei predefiniti per immagini .](#publishing-image-presets)
+>Consulta [Pubblicazione di predefiniti immagine](#publishing-image-presets).
 
 >[!NOTE]
 >
