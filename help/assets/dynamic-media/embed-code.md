@@ -3,25 +3,25 @@ title: Incorporare il visualizzatore video o immagine Dynamic Media in una pagin
 description: Scopri come incorporare risorse video o immagini Dynamic Media in una pagina web.
 feature: Gestione risorse
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '376'
 ht-degree: 22%
 
 ---
-
 
 # Incorporare un visualizzatore video, immagine o dimensionale di Dynamic Media in una pagina web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilizza la funzione **[!UICONTROL Incorpora codice]** per riprodurre il video o visualizzare una risorsa incorporata in una pagina web. Puoi copiare il codice da incorporare negli Appunti, per poi incollarlo nelle pagine web. La modifica del codice non è consentita nella finestra di dialogo **[!UICONTROL Incorpora codice]**.
 
-Incorpora gli URL solo se _non_ utilizzi AEM come WCM. Se utilizzi AEM come WCM, [aggiungi le risorse direttamente sulla pagina.](adding-dynamic-media-assets-to-pages.md)
+Incorpora gli URL solo se _non_ utilizzi AEM come WCM. Se utilizzi AEM come WCM, [aggiungi le risorse direttamente sulla pagina](adding-dynamic-media-assets-to-pages.md).
 
-Consulta [Collegamento di URL all&#39;applicazione Web.](linking-urls-to-yourwebapplication.md)
+Consulta [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
-Consulta [Distribuzione di immagini ottimizzate per un sito reattivo.](responsive-site.md)
+Consulta [Distribuzione di immagini ottimizzate per un sito reattivo](responsive-site.md).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Consulta [Distribuzione di immagini ottimizzate per un sito reattivo.](responsiv
 
    Il codice è disponibile per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito immagine.
 
-   Consulta [Pubblicazione delle risorse.](publishing-dynamicmedia-assets.md)
+   Consulta [Pubblicazione di risorse](publishing-dynamicmedia-assets.md).
 
    Consulta [Pubblicazione dei predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
 
