@@ -3,15 +3,15 @@ title: Profili video di Dynamic Media
 description: Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni di questo profilo predefinito sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Puoi anche aggiungere ritaglio avanzato ai video.
 feature: Gestione Delle Risorse, Profili Video, Rendering
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '3666'
 ht-degree: 10%
 
 ---
-
 
 # Profili video di Dynamic Media{#video-profiles}
 
@@ -37,7 +37,7 @@ Consulta anche [Tecniche consigliate per l’organizzazione delle risorse digita
 >
 >I metadati sono utili nella ricerca delle risorse. Le miniature sono immagini video statiche generate durante la codifica. Sono richieste dal sistema di Experience Manager e utilizzate nell’interfaccia utente per identificare visivamente i video nella vista Schede, nella vista Risultati ricerca e nella vista Elenco risorse. Puoi visualizzare le miniature generate toccando l’icona Rappresentazioni (una palette Pittore) di un video codificato.
 
-Al termine della creazione del profilo video, lo si applica a una o più cartelle. Consulta [Applicazione di un profilo video alle cartelle.](#applying-a-video-profile-to-folders)
+Al termine della creazione del profilo video, lo si applica a una o più cartelle. Consulta [Applicazione di un profilo video alle cartelle](#applying-a-video-profile-to-folders).
 
 Per definire parametri di elaborazione avanzati per altri tipi di risorse, consulta [Configurazione dell’elaborazione delle risorse](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
@@ -429,4 +429,3 @@ Puoi rimuovere un profilo video da una cartella direttamente dal menu **[!UICONT
 1. Tocca o fai clic sul logo Experience Manager, vai a **[!UICONTROL Risorse]** e quindi alla cartella da cui vuoi rimuovere un profilo video.
 1. Nella cartella, tocca o fai clic sul segno di spunta per selezionarlo, quindi tocca **[!UICONTROL Proprietà]**.
 1. Seleziona la scheda **[!UICONTROL Profili video]**, fai clic su **[!UICONTROL Nessuno]** dal menu a discesa e infine tocca **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
-
