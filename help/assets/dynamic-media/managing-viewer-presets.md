@@ -3,15 +3,15 @@ title: Gestione dei predefiniti per visualizzatori
 description: Scopri come creare e gestire i predefiniti per visualizzatori in Dynamic Media.
 feature: Predefiniti visualizzatore, Visualizzatori
 topic: Professionista
-role: Professionista
+role: Business Practitioner
+exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4247'
+source-wordcount: '4245'
 ht-degree: 13%
 
 ---
-
 
 # Gestione dei predefiniti per visualizzatori{#managing-viewer-presets}
 
@@ -59,7 +59,7 @@ Per ulteriori informazioni su come incorporare i visualizzatori reattivi nelle p
 >[!NOTE]
 >
 >Pubblica tutti i visualizzatori predefiniti prima di utilizzarli per i primi.
->Consulta [Pubblicazione dei predefiniti per visualizzatori.](#publishing-viewer-presets)
+>Consulta [Pubblicazione dei predefiniti visualizzatore](#publishing-viewer-presets).
 
 ### Compatibilità del sistema predefinito per visualizzatori {#viewer-preset-system-compatibility}
 
