@@ -3,15 +3,15 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: Utilizzare le risorse disponibili in una distribuzione remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 feature: Gestione delle risorse, Risorse collegate, Distribuzione delle risorse
-role: Amministratore, Business Practices, Architetto
+role: Administrator,Business Practitioner,Architect
+exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '2922'
 ht-degree: 27%
 
 ---
-
 
 # Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -108,9 +108,12 @@ Per configurare le risorse collegate e la connettività locale [!DNL Sites], eff
 
 1. Aggiungi la distribuzione [!DNL Sites] come origine consentita nella configurazione CORS nella distribuzione [!DNL Assets] . Per ulteriori informazioni, consulta [comprendere CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
+1. Configura [lo stesso supporto per cookie del sito](/help/security/same-site-cookie-support.md).
+
 Puoi controllare la connettività tra le distribuzioni [!DNL Sites] configurate e la distribuzione [!DNL Assets].
 
-![Test di connessione delle risorse collegate configurate  [!DNL Sites]](assets/connected-assets-multiple-config.png)
+![Prova di connessione delle risorse collegate configurate  [!DNL Sites]](assets/connected-assets-multiple-config.png)
+*nella figura: Test di connessione delle risorse collegate configurate  [!DNL Sites].*
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
@@ -129,7 +132,7 @@ Per configurare questa connessione, segui questi passaggi.
    * In locale [!DNL Sites], nell&#39;opzione **[!UICONTROL Pubblica risorse]**, seleziona **[!UICONTROL Pubblicazione selettiva]**. Non selezionare **[!UICONTROL Sincronizza tutto il contenuto]**.
    * Nella distribuzione remota [!DNL Assets], in [!UICONTROL Modalità di sincronizzazione Dynamic Media], selezionare **[!UICONTROL Abilitata per impostazione predefinita]**.
 
-1. Abilita il supporto di [[!DNL Dynamic Media] in Componente di base immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Questa funzione consente al componente Immagine predefinito di visualizzare le immagini [!DNL Dynamic Media] quando gli autori utilizzano le immagini [!DNL Dynamic Media] nelle pagine web nella distribuzione locale [!DNL Sites].
+1. Abilita il supporto di [[!DNL Dynamic Media] in Componente di base immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Questa funzione consente al componente immagine [componente immagine](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) predefinito di visualizzare le immagini [!DNL Dynamic Media] quando gli autori utilizzano le immagini [!DNL Dynamic Media] nelle pagine web nella distribuzione locale [!DNL Sites].
 
 ## Utilizzare le risorse remote {#use-remote-assets}
 
@@ -231,11 +234,13 @@ Per visualizzare e gestire i riferimenti nella distribuzione [!DNL Assets], effe
 Per risolvere eventuali errori comuni, procedi come segue:
 
 * Se non riesci a cercare risorse remote da [!UICONTROL Content Finder], assicurati che siano presenti i ruoli e le autorizzazioni richiesti.
-* Una risorsa recuperata dalla dam remota potrebbe non essere pubblicata su una pagina web per uno o più motivi. Non esiste sul server remoto, mancano le autorizzazioni appropriate per recuperarlo o può essere causata da un errore di rete. Assicurati che la risorsa non venga rimossa dal DAM remoto. Assicurati che siano presenti le autorizzazioni appropriate e che siano soddisfatti i prerequisiti. Riprova ad aggiungere la risorsa alla pagina e ripubblica. Controlla l’[elenco dei processi asincroni](/help/operations/asynchronous-jobs.md) per verificare la presenza di errori nel recupero delle risorse.
-* Se non riesci ad accedere alla distribuzione DAM remota dalla distribuzione locale [!DNL Sites], assicurati che siano consentiti i cookie intersito. Se i cookie intersito sono bloccati, le due distribuzioni di [!DNL Experience Manager] potrebbero non essere autenticate. Ad esempio, [!DNL Google Chrome] in modalità in incognito può bloccare i cookie di terze parti. Per consentire i cookie nel browser [!DNL Chrome], fai clic sull’icona &quot;occhio&quot; nella barra degli indirizzi, vai a Sito non funzionante > Bloccato, seleziona l’URL DAM remoto e consenti il cookie login-token. In alternativa, consulta la guida su [come abilitare i cookie di terze parti](https://support.google.com/chrome/answer/95647).
 
-   ![Errore cookie in Chrome in modalità in incognito](assets/chrome-cookies-incognito-dialog.png)
+* Una risorsa recuperata da DAM remoto potrebbe non essere pubblicata su una pagina web per uno o più motivi. Non esiste sul server remoto, mancano le autorizzazioni appropriate per recuperarlo o può essere causata da un errore di rete. Assicurati che la risorsa non venga rimossa dal DAM remoto. Assicurati che siano presenti le autorizzazioni appropriate e che siano soddisfatti i prerequisiti. Riprova ad aggiungere la risorsa alla pagina e ripubblica. Controlla l’[elenco dei processi asincroni](/help/operations/asynchronous-jobs.md) per verificare la presenza di errori nel recupero delle risorse.
 
-* Se i riferimenti remoti non vengono recuperati e si verifica un messaggio di errore, verifica se la distribuzione di Sites è disponibile e verifica la presenza di problemi di connettività di rete. Riprova più tardi per controllare. [!DNL Assets] l&#39;implementazione tenta due volte di stabilire la connessione con  [!DNL Sites] l&#39;implementazione e quindi segnala un errore.
+* Se non riesci ad accedere alla distribuzione DAM remota dalla distribuzione locale [!DNL Sites], assicurati che siano consentiti cookie intersito e che sia configurato [lo stesso supporto cookie del sito](/help/security/same-site-cookie-support.md). Se i cookie intersito sono bloccati, le distribuzioni di [!DNL Experience Manager] potrebbero non essere autenticate. Ad esempio, [!DNL Google Chrome] in modalità in incognito può bloccare i cookie di terze parti. Per consentire i cookie nel browser [!DNL Chrome], fai clic sull&#39;icona &quot;occhio&quot; nella barra degli indirizzi, vai a **Sito non funzionante** > **Bloccato**, seleziona l&#39;URL DAM remoto e consenti il cookie login-token. In alternativa, consulta [come abilitare i cookie di terze parti](https://support.google.com/chrome/answer/95647).
+
+   ![Errore cookie nel browser Chrome in modalità incognito](assets/chrome-cookies-incognito-dialog.png)
+
+* Se i riferimenti remoti non vengono recuperati e si verifica un messaggio di errore, verifica se la distribuzione [!DNL Sites] è disponibile e verifica la presenza di problemi di connettività di rete. Riprova più tardi per controllare. [!DNL Assets] l&#39;implementazione tenta due volte di stabilire la connessione con  [!DNL Sites] l&#39;implementazione e quindi segnala un errore.
 
 ![impossibile ritentare i riferimenti remoti delle risorse](assets/reference-report-failure.png)
