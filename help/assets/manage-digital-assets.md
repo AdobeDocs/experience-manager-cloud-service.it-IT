@@ -7,9 +7,9 @@ feature: Gestione risorse, Pubblicazione, Collaborazione, Elaborazione risorse
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e12638fdda7da178e8dc22163d5ffb822bd980bf
 workflow-type: tm+mt
-source-wordcount: '4342'
+source-wordcount: '4362'
 ht-degree: 13%
 
 ---
@@ -280,54 +280,29 @@ Inoltre, disattiva il pulsante force delete utilizzando una sovrapposizione, per
 
 Consulta [Scaricare risorse da [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## Pubblicare risorse {#publish-assets}
+## Pubblicare o annullare la pubblicazione delle risorse {#publish-assets}
 
-<!--
->[!NOTE]
->
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
--->
+1. Passa alla posizione della risorsa o della cartella di risorse che desideri pubblicare o che desideri rimuovere dall’ambiente di pubblicazione (Annulla pubblicazione).
 
-1. Andate alla posizione delle risorse o della cartella che desiderate pubblicare.
+1. Seleziona la risorsa o la cartella da pubblicare o di cui annullare la pubblicazione e seleziona l’opzione **[!UICONTROL Gestisci pubblicazione]** ![gestisci pubblicazione](assets/do-not-localize/globe-publication.png) nella barra degli strumenti. In alternativa, per pubblicare rapidamente, seleziona l’opzione **[!UICONTROL Pubblicazione rapida]** nella barra degli strumenti. Se la cartella da pubblicare include una cartella vuota, questa non verrà pubblicata.
 
-1. Seleziona l’azione rapida **[!UICONTROL Pubblica]** dalla scheda delle risorse oppure fai clic sulla risorsa e tocca o fai clic sull’icona **[!UICONTROL Pubblicazione rapida]** dalla barra degli strumenti.
-1. Se la risorsa fa riferimento ad altre risorse, i relativi riferimenti sono elencati nella procedura guidata. Vengono visualizzati solo i riferimenti non pubblicati o modificati dopo l’ultima pubblicazione o l’annullamento della pubblicazione. Scegli i riferimenti da pubblicare.
+1. Seleziona l&#39;opzione **[!UICONTROL Pubblica]** o **[!UICONTROL Annulla pubblicazione]** a seconda delle esigenze.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Annulla pubblicazione azione](assets/unpublish_action.png)
+   *Figura: Opzioni di pubblicazione e annullamento della pubblicazione e opzione di pianificazione.*
 
-   >[!NOTE]
-   >
-   >Se la cartella da pubblicare include una cartella vuota, questa non verrà pubblicata.
+1. Seleziona **[!UICONTROL Now]** per agire immediatamente sulla risorsa oppure seleziona **[!UICONTROL Later]** per pianificare l’azione. Selezionare una data e un&#39;ora se si sceglie l&#39;opzione **[!UICONTROL Più tardi]**. Fai clic su **[!UICONTROL Avanti]**.
 
-1. Tocca o fai clic su **[!UICONTROL Pubblica]** per confermare l’attivazione delle risorse.
+1. Durante la pubblicazione, se una risorsa fa riferimento ad altre risorse, i relativi riferimenti sono elencati nella procedura guidata. Vengono visualizzati solo i riferimenti, che vengono annullati o modificati dall’ultima pubblicazione. Scegli i riferimenti da pubblicare.
 
->[!CAUTION]
->
->Se pubblichi una risorsa in fase di elaborazione, viene pubblicato solo il contenuto originale. Mancano i rendering. Attendi il completamento dell’elaborazione, quindi pubblica o ripubblica la risorsa al termine dell’elaborazione.
+1. Quando si annulla la pubblicazione, se una risorsa fa riferimento ad altre risorse, scegliete i riferimenti di cui desiderate annullare la pubblicazione. Fai clic su **[!UICONTROL Annulla pubblicazione]**. Nella finestra di dialogo di conferma, fai clic su **[!UICONTROL Annulla]** per interrompere l’azione oppure fai clic su **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse devono essere annullate alla data specificata.
 
-## Annullare la pubblicazione delle risorse {#unpublishing-assets}
+Scopri i seguenti limiti e suggerimenti relativi alla pubblicazione o all’annullamento della pubblicazione di risorse o cartelle:
 
-1. Passa alla posizione della cartella di risorse o risorse che desideri rimuovere dall’ambiente di pubblicazione (Annulla pubblicazione).
-
-1. Seleziona la risorsa o la cartella da annullare la pubblicazione e tocca o fai clic sull&#39;icona **[!UICONTROL Gestisci pubblicazione]** nella barra degli strumenti.
-
-   ![manage_publishing](assets/manage_publication.png)
-
-1. Seleziona l&#39;azione **[!UICONTROL Annulla pubblicazione]** dall&#39;elenco.
-
-   ![unpublish_action](assets/unpublish_action.png)
-
-1. Per annullare la pubblicazione della risorsa in un secondo momento, seleziona **[!UICONTROL Annulla pubblicazione più tardi]**, quindi seleziona una data per annullare la pubblicazione della risorsa.
-1. Pianifica una data in cui la risorsa non sarà disponibile dall’ambiente di pubblicazione.
-1. Se la risorsa fa riferimento ad altre risorse, scegli i riferimenti da annullare la pubblicazione. Tocca o fai clic su **[!UICONTROL Annulla pubblicazione]**.
-1. Nella finestra di dialogo di conferma, tocca o fai clic su:
-
-   * **** Annulla per interrompere l’azione
-   * **** Annulla pubblicazione per confermare l’annullamento della pubblicazione delle risorse (non più disponibile nell’ambiente di pubblicazione) alla data specificata.
-
-   >[!NOTE]
-   >
-   >Quando si annulla la pubblicazione di una risorsa complessa, è sufficiente annullare la pubblicazione della sola risorsa. Evita di annullare la pubblicazione dei riferimenti, poiché potrebbero essere referenziati da altre risorse pubblicate.
+* L&#39;opzione [!UICONTROL Gestisci pubblicazione] è disponibile solo per gli account utente che dispongono di autorizzazioni di replica.
+* Quando si annulla la pubblicazione di una risorsa complessa, è necessario annullare la pubblicazione solo della risorsa. Evita di annullare la pubblicazione dei riferimenti, poiché altri contenuti pubblicati potrebbero farvi riferimento.
+* Le cartelle vuote non vengono pubblicate.
+* Se pubblichi una risorsa in fase di elaborazione, viene pubblicato solo il contenuto originale. Mancano i rendering. Attendi il completamento dell’elaborazione, quindi pubblica o ripubblica la risorsa al termine dell’elaborazione.
 
 ## Gruppo utenti chiuso {#closed-user-group}
 
@@ -349,7 +324,7 @@ I gruppi di utenti chiusi rappresentano un modo aggiuntivo per limitare l’acce
    >Se non specifichi il percorso di una pagina di accesso, [!DNL Experience Manager] visualizza la pagina di accesso predefinita nell’istanza di pubblicazione.
 
 1. Pubblica la cartella e prova ad accedervi dall&#39;istanza di pubblicazione. Viene visualizzata una schermata di accesso.
-1. Se sei un membro CUG, immetti le tue credenziali di sicurezza. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
+1. Se sei un membro CUG, immetti le tue credenziali di protezione. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
 
 ## Cercare risorse {#search-assets}
 
