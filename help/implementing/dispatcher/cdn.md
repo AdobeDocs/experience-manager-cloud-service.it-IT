@@ -2,14 +2,14 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM come Cloud Service
 feature: Dispatcher
+exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 753d023e1b2c5b76ed5c402c002046cc2c5c1de4
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '758'
 ht-degree: 7%
 
 ---
-
 
 # CDN in AEM as a Cloud Service {#cdn}
 
@@ -46,10 +46,12 @@ Se un cliente deve utilizzare il proprio CDN esistente, può gestirlo e indirizz
 
 Istruzioni di configurazione:
 
-1. Imposta l&#39;intestazione `X-Forwarded-Host` con il nome di dominio.
-1. Imposta l’intestazione Host con il dominio di origine, che è l’ingresso della CDN AEM. Il valore deve provenire dall&#39;Adobe.
+1. Imposta l&#39;intestazione `X-Forwarded-Host` con il nome di dominio. Esempio: `X-Forwarded-Host: example.com`.
+1. Imposta l’intestazione Host con il dominio di origine, che è l’ingresso della CDN AEM. Esempio: `Host: publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Invia l’intestazione SNI all’origine. Come l’intestazione Host , l’intestazione SNI deve essere il dominio di origine.
-1. Imposta il `X-Edge-Key` o il `X-AEM-Edge-Key` (se il CDN elimina X-Edge-*), necessario per indirizzare correttamente il traffico ai server AEM. Il valore deve provenire dall&#39;Adobe. Informare l&#39;Adobe se si desidera l&#39;accesso diretto all&#39;ingresso della rete CDN di Adobe (da bloccare quando `X-Edge-Key` non è presente).
+1. Imposta il `X-Edge-Key` o il `X-AEM-Edge-Key` (se il tuo CDN strips `X-Edge-*`).Il valore deve provenire dall&#39;Adobe.
+   * Questo è necessario in modo che l’Adobe CDN possa convalidare l’origine delle richieste e passare le intestazioni `X-Forwarded-*` all’applicazione AEM. Ad esempio, `X-Forwarded-Host` viene utilizzato da AEM per determinare l&#39;intestazione Host e viene utilizzato `X-Forwarded-For` per determinare l&#39;IP client. Quindi, diventa responsabilità del chiamante affidabile (cioè il CDN gestito dal cliente) garantire la correttezza delle intestazioni `X-Forwarded-*` (vedi la nota qui sotto).
+   * Facoltativamente, l&#39;accesso all&#39;ingresso della rete CDN di Adobe può essere bloccato quando non è presente un `X-Edge-Key`. Informa l&#39;Adobe se hai bisogno di accedere direttamente all&#39;ingresso della CDN Adobe (da bloccare).
 
 Prima di accettare il traffico live, è necessario verificare con il supporto clienti di Adobe che il indirizzamento del traffico end-to-end funziona correttamente.
 
