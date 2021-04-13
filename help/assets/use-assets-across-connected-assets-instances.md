@@ -2,13 +2,13 @@
 title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Sites]
 description: Utilizzare le risorse disponibili in una distribuzione remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
-feature: Gestione delle risorse, Risorse collegate, Distribuzione delle risorse
+feature: Gestione delle risorse, risorse collegate, distribuzione delle risorse, utenti e gruppi
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '2922'
+source-wordcount: '2932'
 ht-degree: 27%
 
 ---
@@ -30,7 +30,7 @@ Per gli autori [!DNL Sites] , le risorse remote sono disponibili come risorse lo
 Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna distribuzione.
-* Per i tipi di distribuzione [!DNL Adobe Experience Manager], viene soddisfatto uno dei criteri supportati. Per ulteriori informazioni sul funzionamento di questa funzionalità in [!DNL Experience Manager] 6.5, consulta [Risorse collegate in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
+* Per i tipi di distribuzione [!DNL Adobe Experience Manager], viene soddisfatto uno dei criteri supportati. [!DNL Experience Manager] come Cloud Service  [!DNL Assets] funziona con  [!DNL Experience Manager] 6.5. Per ulteriori informazioni sul funzionamento di questa funzionalità in  [!DNL Experience Manager] 6.5, consulta  [Risorse collegate in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5  [!DNL Sites] in AMS | [!DNL Experience Manager] 6.5  [!DNL Sites] on-premise |
    |---|---|---|---|
@@ -42,7 +42,7 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 Gli autori ricercano le immagini e i seguenti tipi di documenti in Content Finder e utilizzano le risorse cercate nell’Editor pagina. I documenti vengono aggiunti al componente `Download` e le immagini al componente `Image` . Gli autori possono inoltre aggiungere le risorse remote a qualsiasi componente [!DNL Experience Manager] personalizzato che estenda i componenti predefiniti `Download` o `Image` . I formati supportati sono:
 
-* **Formati** immagine: Formati supportati dal componente  [Immagine ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) .
+* **Formati** immagine: Formati supportati dal componente  [Immagine ](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) .
 * **Formati** documento: Vedere i formati di documento  [supportati](file-format-support.md#document-formats).
 
 ### Utenti e gruppi interessati {#users-and-groups-involved}
@@ -189,7 +189,7 @@ Per visualizzare e gestire i riferimenti nella distribuzione [!DNL Assets], effe
 1. Seleziona una risorsa nella console [!DNL Assets] e fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
 1. Fare clic sulla scheda **[!UICONTROL Riferimenti]**. Consulta **[!UICONTROL Riferimenti locali]** per l’utilizzo della risorsa nella distribuzione [!DNL Assets] . Consulta **[!UICONTROL Riferimenti remoti] per l’utilizzo della risorsa nella distribuzione [!DNL Sites] in cui la risorsa è stata recuperata utilizzando la funzionalità Risorse collegate.
 
-   ![riferimenti remoti nelle proprietà della risorsa](assets/connected-assets-remote-reference.png)
+   ![Riferimenti remoti nella pagina Proprietà risorsa](assets/connected-assets-remote-reference.png)
 
 1. I riferimenti per le pagine [!DNL Sites] visualizzano il conteggio totale dei riferimenti per ciascun [!DNL Sites] locale. Potrebbe essere necessario un po&#39; di tempo per trovare tutti i riferimenti e visualizzare il numero totale di riferimenti.
 1. L’elenco dei riferimenti è interattivo e gli utenti DAM possono fare clic su un riferimento per aprire la pagina di riferimento. Se non è possibile recuperare i riferimenti remoti per qualche motivo, viene visualizzata una notifica che informa l’utente dell’errore.
@@ -243,4 +243,4 @@ Per risolvere eventuali errori comuni, procedi come segue:
 
 * Se i riferimenti remoti non vengono recuperati e si verifica un messaggio di errore, verifica se la distribuzione [!DNL Sites] è disponibile e verifica la presenza di problemi di connettività di rete. Riprova più tardi per controllare. [!DNL Assets] l&#39;implementazione tenta due volte di stabilire la connessione con  [!DNL Sites] l&#39;implementazione e quindi segnala un errore.
 
-![impossibile ritentare i riferimenti remoti delle risorse](assets/reference-report-failure.png)
+   ![impossibile recuperare i riferimenti remoti delle risorse](assets/reference-report-failure.png)
