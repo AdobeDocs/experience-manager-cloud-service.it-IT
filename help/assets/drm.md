@@ -3,15 +3,15 @@ title: Digital Rights Management in [!DNL Assets]
 description: Scopri come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager] come a [!DNL Cloud Service].
 contentOwner: AG
 feature: Gestione risorse, DRM
-role: Business Practices, Amministratore
+role: Business Practitioner,Administrator
+exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1345'
 ht-degree: 7%
 
 ---
-
 
 # Digital Rights Management per le risorse {#digital-rights-management-in-assets}
 
@@ -37,7 +37,7 @@ Puoi visualizzare lo stato di scadenza di una risorsa nei seguenti punti:
 
 Puoi cercare le risorse scadute, incluse le risorse secondarie scadute, nel pannello Ricerca.
 
-1. Nella console [!DNL Assets], fai clic su **[!UICONTROL Cerca]** nella barra degli strumenti per visualizzare la casella di ricerca Omnisearch.
+1. Nella console [!DNL Assets], fai clic su **[!UICONTROL Cerca]** nella barra degli strumenti per visualizzare la casella di ricerca [!DNL Experience Manager].
 
 1. Con il cursore nella casella Omnisearch, selezionare il tasto `Enter` per visualizzare la pagina dei risultati della ricerca.
 
