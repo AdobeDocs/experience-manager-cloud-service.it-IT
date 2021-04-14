@@ -2,9 +2,9 @@
 title: Configurazione di Enterprise Team Development - Cloud Services
 description: Segui questa pagina per ulteriori informazioni su Enterprise Team Development Setup
 translation-type: tm+mt
-source-git-commit: 1695f98cdf10c3bf35d651bd165fb9f2ee113abe
+source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1495'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ La configurazione nell’archivio Git di Cloud Manager ha due rami:
 * A *ramo rilascio stabile*, contenente il codice di produzione di tutti i team
 * A *ramo di sviluppo*, contenente il codice di sviluppo di tutti i team
 
-Ogni push all&#39;archivio Git di un team nello sviluppo o nel ramo stabile attiva un&#39;azione [github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Tutti i progetti seguono la stessa impostazione per il ramo stabile: Un push del ramo stabile di un progetto viene inviato automaticamente al ramo stabile nell’archivio Git di Cloud Manager. La pipeline di produzione in Cloud Manager è configurata per essere attivata da un push al ramo stabile. La pipeline di produzione viene quindi eseguita da ogni push di un team in un ramo stabile e la distribuzione di produzione viene aggiornata se tutti i gate di qualità passano.
+Ogni push all&#39;archivio Git di un team nello sviluppo o nel ramo stabile attiva un&#39;azione [github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Tutti i progetti seguono la stessa impostazione per il ramo stabile. Un push sul ramo stabile di un progetto viene inviato automaticamente al ramo stabile nell’archivio Git di Cloud Manager. La pipeline di produzione in Cloud Manager è configurata per essere attivata da un push al ramo stabile. La pipeline di produzione viene quindi eseguita da ogni push di un team in un ramo stabile e la distribuzione di produzione viene aggiornata se tutti i gate di qualità passano.
 
 ![](assets/team-setup2.png)
 
