@@ -2,9 +2,9 @@
 title: Configurazione di Enterprise Team Development - Cloud Services
 description: Segui questa pagina per ulteriori informazioni su Enterprise Team Development Setup
 translation-type: tm+mt
-source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
+source-git-commit: 8197defd4a73173106e1f013627547a085e51dab
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -82,8 +82,10 @@ Questa configurazione reale può essere utilizzata come blueprint e quindi perso
 
 ### Considerazioni per un&#39;installazione di più team {#considerations}
 
-Il modello sopra descritto per una configurazione multi-team consente di scalare un numero maggiore di team. Con l’archivio Git di Cloud Manager e la pipeline di produzione, il codice di produzione completo viene sempre eseguito attraverso tutti i gate di qualità, trattandolo come un’unica unità di distribuzione. In questo modo il sistema di produzione viene mantenuto *sempre acceso* senza interruzioni o tempi di inattività.
-Al contrario, senza un tale sistema, poiché ogni team può distribuire separatamente, c&#39;è il rischio che un aggiornamento da un singolo team possa portare a problemi di stabilità della produzione. Inoltre, per distribuire gli aggiornamenti è necessario il coordinamento e i tempi di inattività pianificati. Con un numero crescente di squadre, lo sforzo di coordinamento diventerà molto più complesso e rapidamente ingestibile.
-Se viene rilevato un problema nei cancelli di qualità, la produzione non viene influenzata e il problema può essere rilevato e risolto senza il personale Adobe necessario per intervenire. Senza Cloud Service e senza sempre testare l&#39;intera implementazione, le distribuzioni parziali possono causare interruzioni che richiedono il rollback di una richiesta o persino un ripristino completo da un backup. Il test parziale potrebbe anche portare ad altri problemi che devono poi essere risolti dopo il fatto che ancora una volta richiede il coordinamento e il sostegno del personale Adobe.
+>[!NOTE]
+>Per qualsiasi configurazione multi-team è fondamentale definire un modello di governance e un insieme di standard che tutti i team devono seguire. Il modello sopra descritto per una configurazione multi-team consente di scalare un numero maggiore di team e puoi utilizzare questo modello come punto di partenza.
 
-Per qualsiasi configurazione multi-team è fondamentale definire un modello di governance e un insieme di standard che tutti i team devono seguire. Puoi utilizzare la blueprint come punto di partenza.
+Con l’archivio Git di Cloud Manager e la pipeline di produzione, il codice di produzione completo viene sempre eseguito attraverso tutti i gate di qualità, trattandolo come un’unica unità di distribuzione. In questo modo il sistema di produzione viene mantenuto *sempre acceso* senza interruzioni o tempi di inattività.
+Al contrario, senza un tale sistema, poiché ogni team può distribuire separatamente, c&#39;è il rischio che un aggiornamento da un singolo team possa portare a problemi di stabilità della produzione. Inoltre, per distribuire gli aggiornamenti è necessario il coordinamento e i tempi di inattività pianificati. Con un numero crescente di squadre, lo sforzo di coordinamento diventerà molto più complesso e rapidamente ingestibile.
+
+Se viene rilevato un problema nei cancelli di qualità, la produzione non viene influenzata e il problema può essere rilevato e risolto senza il personale Adobe necessario per intervenire. Senza Cloud Service e senza sempre testare l&#39;intera implementazione, le distribuzioni parziali possono causare interruzioni che richiedono il rollback di una richiesta o persino un ripristino completo da un backup. Il test parziale potrebbe anche portare ad altri problemi che devono poi essere risolti dopo il fatto che ancora una volta richiede il coordinamento e il sostegno del personale Adobe.
