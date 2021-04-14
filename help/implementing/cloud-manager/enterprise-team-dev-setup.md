@@ -2,9 +2,9 @@
 title: Configurazione di Enterprise Team Development - Cloud Services
 description: Segui questa pagina per ulteriori informazioni su Enterprise Team Development Setup
 translation-type: tm+mt
-source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
+source-git-commit: 833f8d5bcfb88a6a4c9c945c433bbb731bb5d8a2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Cloud Manager supporta configurazioni multi-team flessibili che possono essere r
 
 Ogni azienda ha requisiti diversi, tra cui configurazione del team, processi e flussi di lavoro di sviluppo diversi. La configurazione descritta di seguito viene utilizzata da Adobe per diversi progetti che forniscono esperienze al di sopra di AEM come Cloud Service.
 
-Ad esempio, le applicazioni Adobe Creative Cloud, come Adobe Photoshop o Adobe Illustrator, includono risorse di contenuto quali esercitazioni, esempi e guide disponibili per gli utenti finali. Questo contenuto viene utilizzato dalle applicazioni client che utilizzano AEM come Cloud Service in modo *headless*, effettuando chiamate API al livello di pubblicazione AEM Cloud per recuperare il contenuto strutturato come flussi JSON e sfruttando la rete CDN del Cloud Service AEM per distribuire contenuti strutturati e non strutturati con prestazioni ottimali.
+Ad esempio, le applicazioni Adobe Creative Cloud, come Adobe Photoshop o Adobe Illustrator, includono risorse di contenuto quali esercitazioni, esempi e guide disponibili per gli utenti finali. Questo contenuto viene utilizzato dalle applicazioni client che utilizzano AEM come Cloud Service in modo *headless*, effettuando chiamate API al livello di pubblicazione di AEM Cloud per recuperare il contenuto strutturato come flussi JSON e sfruttando la [Content Delivery Network (CDN) in AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=en#content-delivery) per distribuire contenuti strutturati e non strutturati con prestazioni ottimali.
 
 I team che contribuiscono a questo progetto seguono il processo descritto di seguito.
 
@@ -68,13 +68,13 @@ La configurazione nell’archivio Git di Cloud Manager ha due rami:
 * A *ramo rilascio stabile*, contenente il codice di produzione di tutti i team
 * A *ramo di sviluppo*, contenente il codice di sviluppo di tutti i team
 
-Ogni push all&#39;archivio Git di un team nello sviluppo o nel ramo stabile attiva un&#39;azione [github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Tutti i progetti seguono la stessa impostazione per il ramo stabile. Un push sul ramo stabile di un progetto viene inviato automaticamente al ramo stabile nell’archivio Git di Cloud Manager. La pipeline di produzione in Cloud Manager è configurata per essere attivata da un push al ramo stabile. La pipeline di produzione viene quindi eseguita da ogni push di un team in un ramo stabile e la distribuzione di produzione viene aggiornata se tutti i gate di qualità passano.
+Ogni push all&#39;archivio Git di un team nello sviluppo o nel ramo stabile attiva un&#39;azione [github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Tutti i progetti seguono la stessa impostazione per il ramo stabile. Un push al ramo stabile di un progetto viene inviato automaticamente al ramo stabile nell’archivio Git di Cloud Manager. La pipeline di produzione in Cloud Manager è configurata per essere attivata da un push al ramo stabile. La pipeline di produzione viene quindi eseguita da ogni push di un team in un ramo stabile e la distribuzione di produzione viene aggiornata se tutti i gate di qualità passano.
 
 ![](assets/team-setup2.png)
 
 I push al ramo di sviluppo vengono gestiti in modo diverso. Anche se un push a un ramo di sviluppatori nell’archivio Git di un team sta attivando un’azione github e il codice viene inviato automaticamente nel ramo di sviluppo nell’archivio Git di Cloud Manager, la pipeline non di produzione non viene attivata automaticamente dal push del codice. Viene attivata da una chiamata all’api di Cloud Manager.
 L’esecuzione della pipeline di produzione include il controllo del codice di tutti i team tramite i gate di qualità forniti. Una volta distribuito il codice sullo stage, i test e i controlli vengono eseguiti per garantire che tutto funzioni come previsto. Una volta passati tutti i cancelli, le modifiche vengono implementate in produzione senza interruzioni o tempi di inattività.
-Per lo sviluppo locale, viene utilizzato l&#39;SDK per Cloud Service . L’SDK consente di configurare un autore, una pubblicazione e un dispatcher locali. Questo consente lo sviluppo offline e tempi di consegna rapidi. A volte solo l’autore viene utilizzato per lo sviluppo, ma la configurazione rapida del dispatcher e la pubblicazione consentono di testare tutto ciò che si trova localmente prima di inviarlo all’archivio Git. In genere, i membri di ogni team estraggono il codice dall’git condiviso per e il codice del loro progetto. Non è necessario effettuare il pagamento di altri progetti in quanto i progetti sono indipendenti.
+Per lo sviluppo locale, viene utilizzato l&#39; [SDK per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) . L’SDK consente di configurare un autore, una pubblicazione e un dispatcher locali. Questo consente lo sviluppo offline e tempi di consegna rapidi. A volte solo l’autore viene utilizzato per lo sviluppo, ma la configurazione rapida del dispatcher e la pubblicazione consentono di testare tutto ciò che si trova localmente prima di inviarlo all’archivio Git. In genere, i membri di ogni team estraggono il codice dall’git condiviso per e il codice del loro progetto. Non è necessario effettuare il pagamento di altri progetti in quanto i progetti sono indipendenti.
 
 ![](assets/team-setup3.png)
 
