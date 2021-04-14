@@ -1,14 +1,14 @@
 ---
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti per la distribuzione nel Cloud Service Adobe Experience Manager.
+exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 translation-type: tm+mt
-source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
+source-git-commit: 800c6db7fed43d706dcf1c26235b2f88ed0a5b62
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2873'
+ht-degree: 13%
 
 ---
-
 
 # Struttura dei progetti AEM
 
@@ -86,6 +86,10 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
          + Utenti del servizio
          + Gruppi
          + ACL (autorizzazioni)
+
+>[!NOTE]
+>
+>Lo stesso codice deve essere distribuito a tutti gli ambienti. Ciò è necessario per garantire un livello di convalide di affidabilità anche nell’ambiente stage. Per ulteriori informazioni, consulta [Codifica conservativa per i rollback](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks).
 
 
 ### Pacchetti di contenuti
