@@ -1,14 +1,14 @@
 ---
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
+exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: fd2009eab27ac14e722f2e9da28fc734834ab892
+source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 2%
 
 ---
-
 
 # Ricerca e indicizzazione dei contenuti {#indexing}
 
@@ -169,7 +169,7 @@ La nuova versione dell’applicazione utilizza la seguente configurazione (modif
 
 ### Annullamento di una modifica {#undoing-a-change}
 
-A volte, è necessario ripristinare una modifica nella definizione di un indice. Le ragioni potrebbero essere che un cambiamento è stato fatto per errore, o che non è più necessario un cambiamento. Ad esempio, la definizione dell&#39;indice `damAssetAssetLucene-8-custom-3` è stata creata per errore ed è già distribuita. Per questo motivo, potrebbe essere utile ripristinare la precedente definizione dell&#39;indice `damAssetAssetLucene-8-custom-2`. A questo scopo, devi aggiungere un nuovo indice denominato `damAssetAssetLucene-8-custom-4` che contiene la definizione dell&#39;indice precedente, `damAssetAssetLucene-8-custom-2`.
+A volte, è necessario ripristinare una modifica nella definizione di un indice. Le ragioni potrebbero essere che un cambiamento è stato fatto per errore, o che non è più necessario un cambiamento. Ad esempio, la definizione dell&#39;indice `damAssetLucene-8-custom-3` è stata creata per errore ed è già distribuita. Per questo motivo, potrebbe essere utile ripristinare la precedente definizione dell&#39;indice `damAssetLucene-8-custom-2`. A questo scopo, devi aggiungere un nuovo indice denominato `damAssetLucene-8-custom-4` che contiene la definizione dell&#39;indice precedente, `damAssetLucene-8-custom-2`.
 
 ### Rimozione di un indice {#removing-an-index}
 
@@ -198,7 +198,7 @@ Se un indice deve essere rimosso in una versione successiva dell&#39;applicazion
     </acme.product-custom-3>
 ```
 
-Se non è più necessario avere una personalizzazione di un indice predefinito, è necessario copiare la definizione di indice preconfigurata. Ad esempio, se hai già distribuito `damAssetAssetLucene-8-custom-3` ma non hai più bisogno delle personalizzazioni e desideri tornare all&#39;indice predefinito `damAssetAssetLucene-8` , devi aggiungere un indice `damAssetAssetLucene-8-custom-4` che contenga la definizione dell&#39;indice di `damAssetAssetLucene-8`.
+Se non è più necessario avere una personalizzazione di un indice predefinito, è necessario copiare la definizione di indice preconfigurata. Ad esempio, se hai già distribuito `damAssetLucene-8-custom-3` ma non hai più bisogno delle personalizzazioni e desideri tornare all&#39;indice predefinito `damAssetLucene-8` , devi aggiungere un indice `damAssetLucene-8-custom-4` che contenga la definizione dell&#39;indice di `damAssetLucene-8`.
 
 ### Disponibilità indice e tolleranza di errore {#index-availability-and-fault-tolerance}
 
