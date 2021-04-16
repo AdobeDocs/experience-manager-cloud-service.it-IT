@@ -1,6 +1,6 @@
 ---
-title: Configurazione di più store
-description: Scopri come mappare più viste store da Magento ad AEM. Questo consente ai progetti di supportare casi d’uso multi-tenant e multilingue.
+title: Configurazione di Commerce Multi-Store
+description: Scopri come mappare più viste store da Magento a AEM. Questo consente ai progetti di supportare casi d’uso multi-tenant e multilingue.
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
@@ -9,16 +9,16 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
+exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: 577e5cb9d465c794f29e1b7ed11d26a954e1c072
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 91%
+source-wordcount: '382'
+ht-degree: 83%
 
 ---
 
-
-# Configurazione di più store {#multi-store}
+# Configurazione multi-store di Commerce {#multi-store}
 
 I componenti core CIF di AEM possono essere utilizzati su più strutture di siti AEM e l’implementazione client GraphQL sottostante può connettersi a diversi store o viste store di Magento. Ciò consente ai progetti di implementare complesse impostazioni per più store o siti.
 
@@ -45,6 +45,10 @@ Per collegare un sito AEM e i componenti core CIF di AEM a una visualizzazione d
    * Crea una nuova configurazione seguendo i passaggi descritti al punto 2 precedente.
 
    Questa nuova configurazione verrà creata come configurazione secondaria di quella di base. Ora passa a Strumenti > Generale > Browser di configurazione e crea le impostazioni di configurazione.
+
+   >[!TIP]
+   >
+   > I cataloghi commerciali possono essere gestiti utilizzando ID o UID. Gli UID sono stati introdotti nel Magento 2.4.2. Abilitalo solo se il backend commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
 
 4. Assegnare la configurazione figlio a un sito AEM
 
