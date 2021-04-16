@@ -10,14 +10,14 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
+exl-id: 75df606f-b22f-4f7e-bd8a-576d215f72bc
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: 1bbe48c772f6e664a6afaff450da7d7987061562
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2567'
+ht-degree: 32%
 
 ---
-
 
 # Personalizzare lo stile dei componenti core CIF di AEM {#style-aem-cif-core-components}
 
@@ -27,7 +27,7 @@ Il [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) è una bas
 >
 > Utilizza l’ [AEM archetipo di progetto](https://github.com/adobe/aem-project-archetype) all’avvio dell’implementazione di e-commerce.
 
-## Cosa verrà creato
+## Cosa Verrà Generato
 
 In questa esercitazione verrà implementato un nuovo stile per il componente Product Teaser che assomiglia a una scheda. Le lezioni apprese nell’esercitazione possono essere applicate ad altri componenti core CIF.
 
@@ -228,7 +228,7 @@ Quindi verifica l’inclusione delle librerie client nella pagina.
 
    ![Visualizza come pubblicato](../assets/style-cif-component/view-as-published.png)
 
-   La pagina viene aperta senza caricare alcun JavaScript di authoring di AEM, come apparirebbe sul sito pubblicato. All’URL è stato aggiunto il parametro di query `?wcmmode=disabled`. Quando si sviluppano CSS e JavaScript, è buona norma utilizzare questo parametro per semplificare la pagina, rimuovendo elementi dell’istanza di authoring di AEM.
+   La pagina viene aperta senza caricare alcun JavaScript di authoring di AEM, come apparirebbe sul sito pubblicato. All’URL è stato aggiunto il parametro di query `?wcmmode=disabled` . Quando si sviluppano CSS e JavaScript, è buona norma utilizzare questo parametro per semplificare la pagina, rimuovendo elementi dell’istanza di authoring di AEM.
 
 1. Visualizza l’origine della pagina e individua diverse librerie client incluse:
 
@@ -287,7 +287,7 @@ Sono disponibili diverse opzioni per includere una libreria lato client. Nella s
 
    Quando si gestisce l’inclusione delle librerie client mediante l’uso di modelli e criteri di pagina, si può modificare il criterio a livello di modello. Ad esempio, supponiamo di dover gestire due marchi diversi nella stessa istanza di AEM. Ogni marchio avrà un proprio stile o un proprio *tema*, ma le librerie e il codice di base saranno gli stessi. Un altro esempio, nel caso di una libreria client più grande che si voglia visualizzare solo su determinate pagine, si può creare un criterio di pagina univoco solo per quel modello.
 
-## Sviluppo di webpack locali {#local-webpack-development}
+## Sviluppo webpack locale {#local-webpack-development}
 
 Nell’esercizio precedente, è stato effettuato un aggiornamento a un file Sass nel modulo `ui.frontend` e dopo aver eseguito una build Maven le modifiche vengono distribuite in AEM. Ora cercheremo di sfruttare un webpack-dev-server per sviluppare rapidamente gli stili front-end.
 
