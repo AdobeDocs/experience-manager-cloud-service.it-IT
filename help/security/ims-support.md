@@ -1,14 +1,14 @@
 ---
 title: Supporto IMS per Adobe Experience Manager as a Cloud Service
 description: Supporto IMS per Adobe Experience Manager as a Cloud Service
+exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 translation-type: tm+mt
-source-git-commit: 70726c373d88f36cdcc9a4a1a944bc8d4c99238c
+source-git-commit: 460cefde9a203b4237aedf01b01e026d37eadfe6
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 100%
+source-wordcount: '1952'
+ht-degree: 95%
 
 ---
-
 
 # Supporto IMS per Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
@@ -125,15 +125,15 @@ Di seguito sono descritte le configurazioni OSGI principali da modificare per ca
 
 ### Gestione dei prodotti e dell’accesso utente in Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Quando l’amministratore di prodotto accede ad Admin Console, visualizza più istanze del contesto di prodotto di AEM Managed Services come mostrato di seguito:
+Quando l’amministratore di prodotto accede all’Admin Console, visualizza più istanze del AEM come contesto di prodotto del Cloud Service, come illustrato di seguito. Ad esempio, seleziona uno dei prodotti dalla pagina **Panoramica** :
 
 ![Accesso alle istanze](/help/security/assets/ims6.png)
 
-In questo esempio l’organizzazione **AEM-MS-Onboard** dispone di 32 istanze distribuite in topologie e ambienti diversi come Stage o Prod.
+Verrà visualizzato un elenco delle istanze esistenti:
 
 ![Accesso alle istanze 2](/help/security/assets/ims7.png)
 
-In ogni istanza del contesto di prodotto sono presenti profili di prodotto associati, che vengono utilizzati per assegnare a utenti e gruppi l’accesso con il privilegio richiesto.
+In ogni istanza del contesto di prodotto, ci saranno istanze che si estendono sui servizi Author o Publish in ambienti di produzione, stage o sviluppo. Ogni istanza sarà associata ai ruoli di Product Profiles o Cloud Manager. Questi profili di prodotto vengono utilizzati per assegnare l’accesso a Utenti e gruppi con i privilegi richiesti.
 
 Il profilo **Administrator_xxx** verrà utilizzato per concedere privilegi di amministratore nell’istanza di AEM associata, mentre il profilo **User_xxx** viene utilizzato per aggiungere utenti normali.
 
@@ -241,4 +241,3 @@ Per accedere alle istanze di AEM, l’utente deve essere aggiunto a un gruppo de
 Ogni istanza di authoring avrà un profilo Amministratori AEM e Utenti AEM e ogni istanza di pubblicazione avrà un profilo Utenti AEM. Puoi aggiungere altri profili in base alle esigenze.
 
 Per poter accedere come amministratore all’istanza di AEM, aggiungi l’utente al profilo degli amministratori di AEM per quel particolare prodotto.
-
