@@ -2,15 +2,15 @@
 title: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager].
 description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
 feature: Gestione risorse,Caricare
-role: Business Practices, Amministratore
+role: Business Practitioner,Administrator
+exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2059'
 ht-degree: 1%
 
 ---
-
 
 # Aggiungere risorse digitali a Adobe Experience Manager {#add-assets-to-experience-manager}
 
@@ -223,6 +223,10 @@ Per le cartelle a cui è assegnato un profilo di elaborazione, il nome del profi
 ## Caricare o acquisire risorse utilizzando le API {#upload-using-apis}
 
 I dettagli tecnici delle API e del protocollo di caricamento, nonché i collegamenti all’SDK open-source e ai client di esempio sono forniti nella sezione [caricamento delle risorse](developer-reference-material-apis.md#asset-upload-technical) del riferimento per sviluppatori.
+
+## Suggerimenti, best practice e limitazioni {#tips-limitations}
+
+* Adobe consiglia di aggiungere fino a 1000 risorse in ogni cartella in [!DNL Experience Manager Assets]. Anche se è possibile aggiungere più risorse a una cartella, è possibile che si verifichino problemi di prestazioni quali la navigazione più lenta a tali cartelle.
 
 >[!MORELIKETHIS]
 >
