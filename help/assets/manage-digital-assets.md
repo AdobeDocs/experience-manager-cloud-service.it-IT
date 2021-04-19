@@ -7,9 +7,9 @@ feature: Gestione risorse, Pubblicazione, Collaborazione, Elaborazione risorse
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4505'
 ht-degree: 12%
 
 ---
@@ -47,8 +47,6 @@ Consulta [aggiungere risorse digitali ad Experience Manager](add-assets.md).
 
 Se un utente DAM carica una o più risorse già esistenti nell’archivio, [!DNL Experience Manager] rileva la duplicazione e notifica l’utente. Il rilevamento dei duplicati è disattivato per impostazione predefinita in quanto può avere un impatto sulle prestazioni a seconda delle dimensioni dell’archivio e del numero di risorse caricate. Per abilitare la funzione, configura [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Vedi [come eseguire le configurazioni OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). Il rilevamento della duplicazione si basa sul valore univoco `dam:sha1` memorizzato in `jcr:content/metadata/dam:sha1`. Ciò significa che le risorse duplicate vengono rilevate anche se i nomi dei file sono diversi.
 
-![Rileva la configurazione OSGi della risorsa duplicata](assets/duplicate-detection.png)
-
 Puoi aggiungere il file di configurazione `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` nel codice personalizzato e il file può contenere quanto segue:
 
 ```json
@@ -58,7 +56,7 @@ Puoi aggiungere il file di configurazione `/apps/example/config.author/com.adobe
 }
 ```
 
-Una volta attivato, Experience Manager invia le notifiche delle risorse duplicate alla casella in entrata. È un risultato aggregato per più duplicati. Gli utenti possono scegliere di rimuovere le risorse in base ai risultati.
+Una volta attivato, Experience Manager invia le notifiche delle risorse duplicate alla casella in entrata dell’Experience Manager. È un risultato aggregato per più duplicati. Gli utenti possono scegliere di rimuovere le risorse in base ai risultati.
 
 ![Notifica della casella in entrata per le risorse duplicate](assets/duplicate-detect-inbox-notification.png)
 
