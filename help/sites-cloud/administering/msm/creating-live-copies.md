@@ -1,7 +1,7 @@
 ---
 title: Creazione e sincronizzazione di Live Copy
 description: Scopri come creare e sincronizzare Live Copy per riutilizzare i contenuti in tutto il sito.
-feature: Gestione di più siti
+feature: Multi Site Manager
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt

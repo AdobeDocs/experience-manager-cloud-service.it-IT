@@ -4,9 +4,9 @@ description: Informazioni sull’accessibilità nei visualizzatori Dynamic Media
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-topic: Professionista
-feature: Accessibilità
-role: Amministratore, Business Practices
+topic: Business Practitioner
+feature: Accessibility
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

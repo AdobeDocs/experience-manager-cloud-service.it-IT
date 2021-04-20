@@ -1,8 +1,8 @@
 ---
 title: Contenuto associato
 description: Scopri in che modo AEM funzione di contenuto associato fornisce la connessione in modo che le risorse possano essere utilizzate facoltativamente con il frammento quando viene aggiunto a una pagina di contenuto, aggiungendo ulteriore flessibilità alla distribuzione di contenuto headless.
-feature: Frammenti di contenuto
-role: Professionista
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

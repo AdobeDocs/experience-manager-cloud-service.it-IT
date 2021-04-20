@@ -1,8 +1,8 @@
 ---
 title: Gestione dei predefiniti per immagini
 description: '"Scopri i predefiniti immagine e come creare, modificare e gestire i predefiniti immagine."'
-feature: Predefiniti immagine,Visualizzatori,Rendering
-topic: Professionista
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt

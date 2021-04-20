@@ -1,8 +1,8 @@
 ---
 title: Assegnare tag avanzati alle risorse video
 description: Experience Manager aggiunge automaticamente tag avanzati contestuali e descrittivi ai video utilizzando [!DNL Adobe Sensei].
-feature: Tag avanzati, assegnazione tag
-role: Amministratore, Business Practices
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

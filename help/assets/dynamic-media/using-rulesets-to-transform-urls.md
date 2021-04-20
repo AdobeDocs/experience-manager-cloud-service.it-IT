@@ -1,8 +1,8 @@
 ---
 title: Utilizzo di set di regole per la trasformazione degli URL
 description: Scopri come distribuire i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript™) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
-topic: Professionista
-role: Professionista
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

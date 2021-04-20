@@ -1,8 +1,8 @@
 ---
 title: Collegamento di URL all’applicazione web
 description: Scopri come collegare gli URL alla tua applicazione web in Dynamic Media.
-topic: Professionista
-role: Professionista
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

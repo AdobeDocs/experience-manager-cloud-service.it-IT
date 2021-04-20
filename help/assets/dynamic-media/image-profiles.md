@@ -1,8 +1,8 @@
 ---
 title: Profili immagine di Dynamic Media
 description: '"Scopri come creare profili immagine di Dynamic Media contenenti impostazioni per maschere non nitide, ritaglio avanzato o campione avanzato o entrambi. Quindi, applica il profilo a una cartella di risorse immagine."'
-feature: Gestione Delle Risorse, Profili Immagine, Rendering
-topic: Professionista
+feature: Asset Management,Image Profiles,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt

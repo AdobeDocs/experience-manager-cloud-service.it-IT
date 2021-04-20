@@ -2,8 +2,8 @@
 title: Configurare e utilizzare i microservizi per le risorse
 description: Configura e utilizza i microservizi per le risorse native per il cloud per elaborare le risorse su larga scala.
 contentOwner: AG
-feature: asset compute Microservices,Flusso di lavoro,Elaborazione delle risorse
-role: Architetto,Amministratore
+feature: Asset Compute Microservices,Workflow,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

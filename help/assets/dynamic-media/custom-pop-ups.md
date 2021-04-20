@@ -1,9 +1,9 @@
 ---
 title: Utilizzo delle visualizzazioni rapide per creare pop-up personalizzati
 description: '"Scopri come viene utilizzata la visualizzazione rapida predefinita nelle esperienze e-commerce, in cui viene visualizzata una finestra a comparsa con informazioni sul prodotto per promuovere un acquisto. È possibile attivare il contenuto personalizzato da visualizzare nelle finestre a comparsa."'
-topic: '"Sviluppatore, amministratore, Business Practitioner"'
-feature: Immagini interattive, video interattivi, banner a carosello
-role: Amministratore, Business Practices
+topic: "Developer,Administrator,Business Practitioner"
+feature: Interactive Images,Interactive Videos,Carousel Banners
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

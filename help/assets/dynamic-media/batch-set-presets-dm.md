@@ -2,8 +2,8 @@
 title: Predefiniti set di batch
 description: Informazioni su come automatizzare la creazione di set di immagini e set 360 gradi utilizzando i set di batch predefiniti in Dynamic Media.
 contentOwner: Rick Brough
-feature: Predefiniti immagine,Predefiniti visualizzatore
-topic: Professionista
+feature: Image Presets,Viewer Presets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt

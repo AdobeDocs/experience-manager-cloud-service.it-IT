@@ -1,8 +1,8 @@
 ---
 title: Fine del ciclo di vita del visualizzatore DHTML
 description: Dal 31 gennaio 2014, la piattaforma di visualizzatori DHTML è ufficialmente terminata.
-topic: Professionista
-role: Amministratore, Business Practices
+topic: Business Practitioner
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

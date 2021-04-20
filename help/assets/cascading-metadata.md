@@ -2,8 +2,8 @@
 title: Metadati a cascata
 description: Questo articolo descrive come definire i metadati a cascata per le risorse.
 contentOwner: AG
-feature: Metadati
-role: Business Practices, Amministratore
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

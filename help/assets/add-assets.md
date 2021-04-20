@@ -1,7 +1,7 @@
 ---
 title: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager].
 description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
-feature: Gestione risorse,Caricare
+feature: Asset Management,Upload
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt

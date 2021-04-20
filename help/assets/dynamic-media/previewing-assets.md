@@ -1,9 +1,9 @@
 ---
 title: Anteprima delle risorse
 description: Scopri come visualizzare in anteprima le risorse in Dynamic Media.
-feature: Gestione risorse
-topic: Professionista
-role: Professionista
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: Formati di file e tipi MIME supportati
 description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come a [!DNL Cloud Service].
 contentOwner: AG
-feature: Gestione risorse, rappresentazioni
+feature: Asset Management,Renditions
 role: Business Practitioner,Administrator
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 translation-type: tm+mt

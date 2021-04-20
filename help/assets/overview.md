@@ -2,8 +2,8 @@
 title: Introduzione alle risorse come a [!DNL Cloud Service]
 description: Novità in Assets come [!DNL Cloud Service].
 contentOwner: AG
-feature: Gestione risorse
-role: Professionista,Leader,Architetto
+feature: Asset Management
+role: Business Practitioner,Leader,Architect
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

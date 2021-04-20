@@ -1,8 +1,8 @@
 ---
 title: Domande frequenti sulla distribuzione dei contenuti HTTP2
 description: Informazioni sulla distribuzione dei contenuti HTTP2.
-topic: '"Amministratore, Business Practitioner"'
-role: Amministratore, Business Practices
+topic: "Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

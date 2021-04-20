@@ -3,7 +3,7 @@ title: Best practice per l’integrazione con [!DNL Adobe Creative Cloud]
 description: Le best practice integrano un’implementazione Experience Manager con Adobe Creative Cloud per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere la massima efficienza.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collaborazione, Adobe Asset Link, App desktop
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,Business Practitioner,Administrator
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 translation-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Set 360 gradi
 description: Scopri come utilizzare i set 360 gradi in Dynamic Media.
-feature: Set 360 gradi
-topic: Professionista
+feature: Spin Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 title: Informazioni sulla risorsa
 description: Monitora le valutazioni degli utenti e le statistiche di utilizzo di immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
 contentOwner: AG
-feature: Informazioni sulla risorsa, rapporti sulle risorse
+feature: Asset Insights,Asset Reports
 role: Business Practitioner
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt

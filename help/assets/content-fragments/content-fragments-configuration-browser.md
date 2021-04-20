@@ -1,8 +1,8 @@
 ---
 title: Frammenti di contenuto - Browser di configurazione
 description: Scopri come abilitare alcune funzionalità dei frammenti di contenuto nel browser di configurazione per sfruttare AEM potenti funzionalità di distribuzione headless.
-feature: Frammenti di contenuto
-role: Professionista
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

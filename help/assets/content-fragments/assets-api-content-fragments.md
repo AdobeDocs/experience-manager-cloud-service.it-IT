@@ -1,7 +1,7 @@
 ---
 title: Supporto dei frammenti di contenuto Adobe Experience Manager as a Cloud Service nell’API HTTP di Assets
 description: Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, una funzione importante AEM consegna headless.
-feature: Frammenti di contenuto, API HTTP Assets
+feature: Content Fragments,Assets HTTP API
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

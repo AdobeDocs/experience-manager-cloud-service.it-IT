@@ -2,8 +2,8 @@
 title: Elabora le risorse utilizzando i microservizi per le risorse
 description: Elabora le risorse digitali utilizzando microservizi di elaborazione delle risorse scalabili e nativi per il cloud.
 contentOwner: AG
-feature: asset compute Microservices,Flusso di lavoro,Informazioni sulla versione,Elaborazione delle risorse
-role: Architetto,Amministratore
+feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

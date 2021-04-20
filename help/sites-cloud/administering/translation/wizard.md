@@ -1,7 +1,7 @@
 ---
 title: Creazione guidata copia lingua
 description: Informazioni sull'utilizzo della Creazione guidata copia in lingua in AEM.
-feature: Copia lingua
+feature: Language Copy
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

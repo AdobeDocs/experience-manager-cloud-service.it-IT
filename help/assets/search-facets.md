@@ -1,8 +1,8 @@
 ---
 title: Facet di ricerca.
 description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in AEM.
-feature: Ricerca,Metadati
-role: Business Practices, Amministratore
+feature: Search,Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

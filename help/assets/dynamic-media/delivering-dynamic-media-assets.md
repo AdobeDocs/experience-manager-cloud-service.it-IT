@@ -1,8 +1,8 @@
 ---
 title: Distribuzione di risorse Dynamic Media
 description: Scopri come distribuire le risorse Dynamic Media.
-feature: Gestione risorse
-topic: Professionista
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt

@@ -2,8 +2,8 @@
 title: Creare e gestire risorse digitali in più lingue
 description: Scopri come automatizzare i flussi di lavoro per la traduzione di risorse, inclusi binari, metadati e tag in più lingue.
 contentOwner: AG
-feature: Gestione risorse, traduzione
-role: Amministratore, Business Practices
+feature: Asset Management,Translation
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

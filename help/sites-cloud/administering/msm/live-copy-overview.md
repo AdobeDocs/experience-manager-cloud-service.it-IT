@@ -1,7 +1,7 @@
 ---
 title: Console Panoramica di Live Copy
 description: Scopri le nozioni di base della console Panoramica di Live Copy per comprendere rapidamente lo stato delle Live Copy al fine di sincronizzare i contenuti.
-feature: Gestione di più siti
+feature: Multi Site Manager
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

@@ -1,7 +1,7 @@
 ---
 title: Riutilizzo dei contenuti - Multi-Site Manager e Live Copy
 description: Ottieni un’introduzione al riutilizzo dei contenuti con AEM potenti Live Copy e le funzioni di Multi Site Manager .
-feature: Gestione di più siti
+feature: Multi Site Manager
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

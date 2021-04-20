@@ -1,8 +1,8 @@
 ---
 title: Avviso sulla fine del ciclo di vita dei visualizzatori Flash
 description: Dal 31 gennaio 2017, il supporto per la piattaforma di visualizzatori di Flash è ufficialmente terminato.
-topic: Professionista
-role: Amministratore, Business Practices
+topic: Business Practitioner
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

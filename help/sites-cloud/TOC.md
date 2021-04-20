@@ -5,8 +5,8 @@ user-guide-title: Creazione di contenuti in AEM as a Cloud Service
 breadcrumb-title: Guida all’authoring
 user-guide-description: Informazioni su come creare con, e amministrare, Experience Manager Sites as a Cloud Service.
 feature-set: Experience Manager Sites
-feature: 'Authoring  '
-role: Professionista
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

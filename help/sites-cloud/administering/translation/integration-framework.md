@@ -1,7 +1,7 @@
 ---
 title: Configurazione del framework di integrazione della traduzione
 description: Scopri come configurare il framework di integrazione della traduzione per l’integrazione con i servizi di traduzione di terze parti.
-feature: Copia lingua
+feature: Language Copy
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4

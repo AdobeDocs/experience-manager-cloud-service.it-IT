@@ -1,8 +1,8 @@
 ---
 title: Banner a carosello
 description: Scopri come utilizzare i banner carosello in Dynamic Media.
-feature: Banner a carosello
-topic: Professionista
+feature: Carousel Banners
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt

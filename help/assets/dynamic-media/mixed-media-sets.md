@@ -1,8 +1,8 @@
 ---
 title: Set di file multimediali diversi
 description: Scopri come utilizzare i set di file multimediali diversi in Dynamic Media.
-feature: Set di file multimediali diversi
-topic: Professionista
+feature: Mixed Media Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt

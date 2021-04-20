@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi relativi a Dynamic Media
 description: Suggerimenti per la risoluzione dei problemi durante l’utilizzo di Dynamic Media.
-topic: '"Amministratore, Business Practitioner"'
+topic: "Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 translation-type: tm+mt

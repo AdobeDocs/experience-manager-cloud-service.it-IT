@@ -1,7 +1,7 @@
 ---
 title: Configurazione di OSGi per Adobe Experience Manager come Cloud Service
 description: 'Configurazione OSGi con valori segreti e valori specifici per l’ambiente '
-feature: Distribuzione
+feature: Deploying
 translation-type: tm+mt
 source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt

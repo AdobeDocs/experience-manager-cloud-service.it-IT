@@ -3,8 +3,8 @@ title: Gestire le raccolte di risorse digitali
 description: Comprendi il concetto di raccolta in Adobe Experience Manager Assets. Scopri come raccogliere, gestire, modificare e raccogliere con altri utenti.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Raccolte, Gestione risorse
-role: Professionista
+feature: Collections,Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

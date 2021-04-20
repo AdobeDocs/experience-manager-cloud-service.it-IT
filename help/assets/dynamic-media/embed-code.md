@@ -1,8 +1,8 @@
 ---
 title: Incorporare il visualizzatore video o immagine Dynamic Media in una pagina web
 description: Scopri come incorporare risorse video o immagini Dynamic Media in una pagina web.
-feature: Gestione risorse
-topic: Professionista
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt

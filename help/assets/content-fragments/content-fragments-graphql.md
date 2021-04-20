@@ -1,7 +1,7 @@
 ---
 title: Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL
 description: Scopri come utilizzare AEM frammenti di contenuto con GraphQL per la distribuzione di contenuti headless.
-feature: Frammenti di contenuto
+feature: Content Fragments
 role: Business Practitioner
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 translation-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Note sulla versione per Cloud Manager in AEM as a Cloud Service, versione 2020.12.0
 description: Note sulla versione per Cloud Manager in AEM as a Cloud Service, versione 2020.12.0
-feature: Informazioni sulla versione
+feature: Release Information
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

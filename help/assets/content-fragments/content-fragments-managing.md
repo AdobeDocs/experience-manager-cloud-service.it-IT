@@ -1,8 +1,8 @@
 ---
 title: Gestione dei frammenti di contenuto
 description: Scopri come utilizzare la console Risorse per gestire i frammenti di contenuto AEM, alla base dei contenuti headless.
-feature: Frammenti di contenuto
-role: Professionista
+feature: Content Fragments
+role: Business Practitioner
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
 source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562

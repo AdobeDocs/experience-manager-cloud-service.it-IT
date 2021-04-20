@@ -1,7 +1,7 @@
 ---
 title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
-feature: Distribuzione
+feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
 source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762

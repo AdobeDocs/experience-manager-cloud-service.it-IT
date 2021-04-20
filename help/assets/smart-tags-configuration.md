@@ -2,7 +2,7 @@
 title: Tag avanzati migliorati
 description: Applica tag aziendali contestuali e descrittivi utilizzando i servizi di intelligenza artificiale e machine learning di Adobe Sensei per migliorare l’individuazione delle risorse e velocizzare la realizzazione dei contenuti.
 contentOwner: AG
-feature: Tag avanzati, assegnazione tag
+feature: Smart Tags, Tagging
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402

@@ -1,7 +1,7 @@
 ---
 title: Identificazione del contenuto da tradurre
 description: Scopri come le regole di traduzione identificano i contenuti da tradurre.
-feature: Copia lingua
+feature: Language Copy
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

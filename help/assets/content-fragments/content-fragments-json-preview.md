@@ -1,8 +1,8 @@
 ---
 title: Anteprima - Rappresentazione JSON
 description: Scopri come visualizzare in anteprima facilmente la rappresentazione JSON dei frammenti di contenuto durante l’implementazione della soluzione AEM headless.
-feature: Frammenti di contenuto
-role: Professionista
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

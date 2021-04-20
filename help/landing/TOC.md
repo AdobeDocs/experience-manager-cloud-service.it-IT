@@ -2,8 +2,8 @@
 sub-product: Guida di Adobe Experience Manager as a Cloud Service
 user-guide-title: Guida di Adobe Experience Manager as a Cloud Service
 feature-set: Experience Manager
-feature: Informazioni sulla versione
-role: Leader, Architetto, Sviluppatore, Architetto dati, Ingegnere dati, Amministratore, Tecnico aziendale
+feature: Release Information
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

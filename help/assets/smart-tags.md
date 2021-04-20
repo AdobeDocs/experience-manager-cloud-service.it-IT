@@ -2,8 +2,8 @@
 title: Assegnare tag automatici alle risorse con tag generati dall’intelligenza artificiale
 description: Assegna tag alle risorse utilizzando servizi intelligenti artificialmente che applicano tag aziendali contestuali e descrittivi utilizzando il servizio  [!DNL Adobe Sensei] .
 contentOwner: AG
-feature: Tag avanzati, assegnazione tag
-role: Amministratore, Business Practices
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

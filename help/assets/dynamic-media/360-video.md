@@ -1,8 +1,8 @@
 ---
 title: Video 360/VR
 description: Scopri come lavorare con i video 360 e Virtual Reality (VR) in Dynamic Media.
-feature: Video VR a 360°
-topic: Professionista
+feature: 360 VR Video
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt

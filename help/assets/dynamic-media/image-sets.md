@@ -1,8 +1,8 @@
 ---
 title: Set di immagini
 description: Scopri come lavorare con i set di immagini in Dynamic Media.
-feature: Set di immagini
-topic: Professionista
+feature: Image Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt

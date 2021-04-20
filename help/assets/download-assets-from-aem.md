@@ -2,8 +2,8 @@
 title: Scaricare le risorse
 description: Scarica le risorse da  [!DNL Adobe Experience Manager Assets] e abilita o disabilita la funzionalità di download.
 contentOwner: AG
-feature: Gestione risorse
-role: Professionista
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Video
 description: Scopri come lavorare con i video in Dynamic Media.
-feature: Profili video
-topic: Professionista
+feature: Video Profiles
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt

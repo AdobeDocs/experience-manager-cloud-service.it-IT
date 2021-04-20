@@ -1,7 +1,7 @@
 ---
 title: Gestione multisito e traduzione
 description: Scopri come riutilizzare i contenuti all’interno del progetto e gestire siti web multilingue in AEM.
-feature: Amministrazione
+feature: Administering
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
