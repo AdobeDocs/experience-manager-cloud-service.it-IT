@@ -5,32 +5,26 @@ feature: Gestione risorse,Caricare
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2065'
 ht-degree: 1%
 
 ---
 
-# Aggiungere risorse digitali a Adobe Experience Manager {#add-assets-to-experience-manager}
+# Aggiungi risorse digitali a [!DNL Adobe Experience Manager] come [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+
+[!DNL Adobe Experience Manager Assets] accetta molti tipi di risorse digitali da molte sorgenti. Memorizza i binari e le rappresentazioni create, può eseguire l’elaborazione delle risorse utilizzando un’ampia gamma di flussi di lavoro e [!DNL Adobe Sensei] servizi, consente la distribuzione attraverso molti canali su più superfici.
 
 [!DNL Adobe Experience Manager] arricchisce il contenuto binario dei file digitali caricati con metadati avanzati, tag avanzati, rappresentazioni e altri servizi di Digital Asset Management (DAM). È possibile caricare vari tipi di file, ad esempio immagini, documenti e file immagine non elaborati, dalla cartella locale o da un&#39;unità di rete a [!DNL Experience Manager Assets].
 
-Sono disponibili diversi metodi di caricamento. Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all’archivio [!DNL Experience Manager] , inclusi i client desktop, come Adobe Asset Link o [!DNL Experience Manager] app desktop, caricare e acquisire script che i clienti creerebbero, e integrazioni di acquisizione automatizzate aggiunte come estensioni [!DNL Experience Manager].
-
-Ci concentreremo sui metodi di caricamento per gli utenti finali qui e forniremo collegamenti agli articoli che descrivono gli aspetti tecnici del caricamento e dell’acquisizione delle risorse utilizzando le API e gli SDK [!DNL Experience Manager].
+Oltre al caricamento del browser più comunemente utilizzato, esistono altri metodi per aggiungere risorse all’archivio [!DNL Experience Manager] , inclusi i client desktop, come Adobe Asset Link o [!DNL Experience Manager] app desktop, caricare e acquisire script che i clienti creerebbero, e integrazioni di acquisizione automatizzate aggiunte come estensioni [!DNL Experience Manager].
 
 Mentre puoi caricare e gestire qualsiasi file binario in [!DNL Experience Manager], i formati di file più comunemente utilizzati supportano servizi aggiuntivi, come l’estrazione dei metadati o la generazione di anteprime/rendering. Per ulteriori informazioni, fare riferimento a [formati di file supportati](file-format-support.md) .
 
 Puoi anche scegliere di eseguire un’ulteriore elaborazione sulle risorse caricate. È possibile configurare diversi profili di elaborazione delle risorse nella cartella in cui vengono caricate le risorse per aggiungere metadati, rappresentazioni o servizi di elaborazione delle immagini specifici. Consulta [elaborare le risorse durante il caricamento](#process-when-uploaded).
 
->[!NOTE]
->
->[!DNL Experience Manager] as a  [!DNL Cloud Service] sfrutta un nuovo modo di caricare le risorse - caricamento binario diretto. È supportato per impostazione predefinita dalle funzionalità di prodotto e dai client predefiniti, come l’ [!DNL Experience Manager] interfaccia utente, [!DNL Adobe Asset Link], [!DNL Experience Manager] app desktop, e quindi trasparente per gli utenti finali.
->
->Per caricare il codice personalizzato o esteso dai clienti, i team tecnici devono utilizzare le nuove API e i nuovi protocolli di caricamento.
-
-Assets as a [!DNL Cloud Service] fornisce i seguenti metodi di caricamento. L’Adobe consiglia di comprendere il caso d’uso e l’applicabilità di un’opzione di caricamento prima di utilizzarla.
+[!DNL Assets] fornisce i seguenti metodi di caricamento. L’Adobe consiglia di comprendere il caso d’uso e l’applicabilità di un’opzione di caricamento prima di utilizzarla.
 
 | Metodo di caricamento | Quando utilizzare? | Persona principale |
 |---------------------|----------------|-----------------|
@@ -112,19 +106,13 @@ Puoi caricare una risorsa con lo stesso percorso (nome e posizione identici) di 
 
 * Sostituisci la risorsa esistente: Se sostituisci una risorsa esistente, i metadati della risorsa e le eventuali modifiche precedenti (ad esempio annotazioni, ritaglio e così via) apportate alla risorsa esistente vengono eliminati.
 * Crea un&#39;altra versione: Nella directory archivio viene creata una nuova versione della risorsa esistente. È possibile visualizzare le due versioni nella [!UICONTROL Timeline] e, se necessario, ripristinare la versione esistente precedente.
-* Mantieni entrambi: Se scegli di mantenere entrambe le risorse, la nuova risorsa viene rinominata aggiungendo al nome il numero `1` .
-
->[!NOTE]
->
->Quando selezioni **[!UICONTROL Sostituisci]** nella finestra di dialogo [!UICONTROL Conflitto nome], l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
->
->Se Asset Insights è abilitato per tracciare impression o clic con [!DNL Adobe Analytics], l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa su [!DNL Analytics].
+* Mantieni entrambi: Se scegli di mantenere entrambe le risorse, la nuova risorsa viene rinominata.
 
 Per mantenere la risorsa duplicata in [!DNL Assets], fai clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, fai clic su **[!UICONTROL Elimina]**.
 
 ### Gestione dei nomi dei file e caratteri non consentiti {#filename-handling}
 
-[!DNL Experience Manager Assets] tenta di impedire il caricamento di risorse con i caratteri non consentiti nei nomi dei file. Se tenti di caricare una risorsa con un nome file contenente un carattere non consentito o più, [!DNL Assets] visualizza un messaggio di avviso e interrompe il caricamento fino a quando non rimuovi questi caratteri o lo carichi con un nome consentito. Alcuni metodi di caricamento non ti impediscono di caricare risorse con caratteri non consentiti nei nomi dei file, ma sostituiscono i caratteri con `-`.
+[!DNL Experience Manager Assets] tenta di impedire il caricamento di risorse con i caratteri non consentiti nei nomi dei file. Se tenti di caricare una risorsa con un nome file contenente un carattere non consentito o più, [!DNL Assets] visualizza un messaggio di avviso e interrompe il caricamento fino a quando non rimuovi questi caratteri o lo carichi con un nome consentito.
 
 Per soddisfare convenzioni di denominazione file specifiche per la tua organizzazione, la finestra di dialogo [!UICONTROL Carica risorse] consente di specificare nomi lunghi per i file caricati. I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
@@ -226,7 +214,18 @@ I dettagli tecnici delle API e del protocollo di caricamento, nonché i collegam
 
 ## Suggerimenti, best practice e limitazioni {#tips-limitations}
 
+* Il caricamento binario diretto è un nuovo metodo per caricare le risorse. È supportato per impostazione predefinita dalle funzionalità e dai client del prodotto, come l’ [!DNL Experience Manager] interfaccia utente, [!DNL Adobe Asset Link] e l’ [!DNL Experience Manager] app desktop. Qualsiasi codice personalizzato personalizzato personalizzato o esteso dai team tecnici dei clienti deve utilizzare le nuove API e i nuovi protocolli di caricamento.
+
 * Adobe consiglia di aggiungere fino a 1000 risorse in ogni cartella in [!DNL Experience Manager Assets]. Anche se è possibile aggiungere più risorse a una cartella, è possibile che si verifichino problemi di prestazioni quali la navigazione più lenta a tali cartelle.
+
+* Quando selezioni **[!UICONTROL Sostituisci]** nella finestra di dialogo [!UICONTROL Conflitto nome], l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente. Se [Asset Insights](/help/assets/assets-insights.md) è abilitato per tracciare impression o clic con [!DNL Adobe Analytics], l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa in [!DNL Analytics].
+
+* Alcuni metodi di caricamento non ti impediscono di caricare risorse con [caratteri proibiti](#filename-handling) nei nomi dei file. I caratteri vengono sostituiti dal simbolo `-`.
+
+* Il caricamento delle risorse tramite il browser supporta solo elenchi di file semplici e non gerarchie di cartelle nidificate. Per caricare tutte le risorse all’interno di una cartella nidificata, considera l’utilizzo dell’ [app desktop](#upload-assets-desktop-clients).
+
+<!-- TBD: Link to file name handling in DA docs when it is documented. 
+-->
 
 >[!MORELIKETHIS]
 >
