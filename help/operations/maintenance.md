@@ -3,9 +3,9 @@ title: Attività di manutenzione in AEM come Cloud Service
 description: Attività di manutenzione in AEM come Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 256363d166591137b53d4a6b5a31436064dfb3d2
+source-git-commit: 7700ad89b1c2a3009c4b64c1af899a0130708a32
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
@@ -147,4 +147,6 @@ Esempio di codice 3
 
 | Configurazione della finestra di manutenzione | A chi appartiene la configurazione | Tipo di configurazione | Dove si trova | Esempio | Parametri |
 |---|---|---|---|---|---|
-| Giornaliero | Cliente | Definizione del nodo JCR | Vedi la posizione 2 di seguito | Vedi il codice di esempio 2 di seguito | `windowSchedule= daily` (questo valore non deve essere modificato).  <br> `windowStartTime=HH:MM` utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite. <br> **windowEndTime= HH:** utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l&#39;esecuzione se non sono già state completate. |
+| Giornaliero | Cliente | Definizione del nodo JCR | Vedi la posizione 1 di seguito | Vedi il codice di esempio 1 di seguito | **windowSchedule= day**  (questo valore non deve essere modificato).  <br> **windowStartTime= HH:** utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite. <br> **windowEndTime= HH:** utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l&#39;esecuzione se non sono già state completate. |
+| Settimanale | Cliente | Definizione del nodo JCR | Vedi la posizione 2 di seguito | Vedi il codice di esempio 2 di seguito | **windowSchedule= settimanale**  (questo valore non deve essere modificato).  <br> **windowStartTime= HH:** utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono iniziare a essere eseguite. <br> **windowEndTime= HH:** utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono interrompere l&#39;esecuzione se non sono già state completate. <br> **windowScheduleWeekdays= Array di 2 valori da 1 a 7**  (ad esempio  [5,5]). Il primo valore dell&#39;array è il giorno iniziale in cui il processo viene pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L&#39;ora esatta dell&#39;inizio e della fine è regolata rispettivamente da windowStartTime e windowEndTime. |
+
