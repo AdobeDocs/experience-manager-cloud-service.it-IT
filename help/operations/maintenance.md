@@ -3,9 +3,9 @@ title: Attività di manutenzione in AEM come Cloud Service
 description: Attività di manutenzione in AEM come Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 90b35554b1238b51ca181c720c86f4062c6d9592
+source-git-commit: 65df5f3fa9db0a37fa3ed10f952c811e1177eafe
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '1004'
 ht-degree: 2%
 
 ---
@@ -144,3 +144,7 @@ Esempio di codice 3
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+
+| Configurazione della finestra di manutenzione | A chi appartiene la configurazione | Tipo di configurazione | Dove si trova | Esempio | Parametri |
+|---|---|---|---|---|---|
+| Giornaliero | Cliente | Definizione del nodo JCR | Vedi la posizione 2 di seguito | Vedi il codice di esempio 2 di seguito | **windowSchedule=daily**  (questo valore non deve essere modificato).  <br> **windowStartTime=HH:** utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite. <br> **windowEndTime= HH:** utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l&#39;esecuzione se non sono già state completate. |
