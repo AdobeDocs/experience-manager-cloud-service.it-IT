@@ -3,9 +3,9 @@ title: Attività di manutenzione in AEM come Cloud Service
 description: Attività di manutenzione in AEM come Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8adead735a5c3c0a03ee6f81372c1714634932ec
+source-git-commit: 256363d166591137b53d4a6b5a31436064dfb3d2
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -147,4 +147,4 @@ Esempio di codice 3
 
 | Configurazione della finestra di manutenzione | A chi appartiene la configurazione | Tipo di configurazione | Dove si trova | Esempio | Parametri |
 |---|---|---|---|---|---|
-| Giornaliero | Cliente | Definizione del nodo JCR | Vedi la posizione 2 di seguito | Vedi il codice di esempio 2 di seguito | **windowSchedule= day**  (questo valore non deve essere modificato).  <br> **windowStartTime= HH:** utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite. <br> **windowEndTime= HH:** utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l&#39;esecuzione se non sono già state completate. |
+| Giornaliero | Cliente | Definizione del nodo JCR | Vedi la posizione 2 di seguito | Vedi il codice di esempio 2 di seguito | `windowSchedule= daily` (questo valore non deve essere modificato).  <br> `windowStartTime=HH:MM` utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite. <br> **windowEndTime= HH:** utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l&#39;esecuzione se non sono già state completate. |
