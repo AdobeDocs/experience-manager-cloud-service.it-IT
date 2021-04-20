@@ -1,17 +1,17 @@
 ---
 title: Informazioni sulla risorsa
-description: Scopri come la funzione Asset Insights ti consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
+description: Monitora le valutazioni degli utenti e le statistiche di utilizzo di immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
 contentOwner: AG
 feature: Informazioni sulla risorsa, rapporti sulle risorse
-role: Professionista
+role: Business Practitioner
+exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '795'
 ht-degree: 9%
 
 ---
-
 
 # Informazioni sulla risorsa {#asset-insights}
 
