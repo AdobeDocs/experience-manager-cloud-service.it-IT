@@ -3,7 +3,7 @@ title: Attività di manutenzione in AEM come Cloud Service
 description: Attività di manutenzione in AEM come Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
+source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 2%
@@ -57,11 +57,10 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <td>Vedi la posizione 1 di seguito</td>
     <td>Vedi il codice di esempio 1 di seguito</td>
    <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = day (questo valore non deve essere modificato)</li>
-    <li><strong>windowStartTime</strong>  = HH:MM utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite.</li>
-    <li><strong>windowEndTime</strong> = HH:MM utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l'esecuzione se non sono già state completate.</li>
-    </ul> </td> 
+    <strong>windowSchedule</strong> = day (questo valore non deve essere modificato) 
+    <strong>windowStartTime</strong>  = HH:MM utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite.
+    <strong>windowEndTime</strong> = HH:MM utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l'esecuzione se non sono già state completate.
+    </td> 
   </tr>
   <tr>
     <td>Settimanale</td>
