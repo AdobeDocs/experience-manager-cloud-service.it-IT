@@ -1,14 +1,13 @@
 ---
 title: Video
 description: Scopri come lavorare con i video in Dynamic Media.
-feature: Video Profiles
-topic: Business Practitioner
+feature: Profili video
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '9512'
+source-wordcount: '9510'
 ht-degree: 6%
 
 ---
@@ -113,7 +112,7 @@ risorse digitaliUlteriori informazioni sulle  [best practice per organizzare le 
 
       * Integra i video utilizzando il codice di incorporamento sulla pagina web:
          [Incorporare il visualizzatore video in una pagina](/help/assets/dynamic-media/embed-code.md) web.
-   * [Pubblicazione di video su YouTube](#publishing-videos-to-youtube).
+   * [Pubblicazione di video in YouTube](#publishing-videos-to-youtube).
    * [Generazione di rapporti video](#viewing-video-reports).
 
    * [Aggiunta di sottotitoli al video](#adding-captions-to-video).
@@ -414,23 +413,23 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
 
 Dynamic Media consiglia di utilizzare i predefiniti di codifica video MP4 H.264. Poiché i file MP4 utilizzano il codec video H.264, fornisce video di alta qualità ma in dimensioni file compresse.
 
-## Pubblicazione di video su YouTube {#publishing-videos-to-youtube}
+## Pubblicazione di video in YouTube {#publishing-videos-to-youtube}
 
-Puoi pubblicare risorse video gestite in Risorse di Experience Manager direttamente su un canale YouTube che hai creato in precedenza.
+Puoi pubblicare risorse video gestite in Risorse di Experience Manager direttamente su un canale YouTube creato in precedenza.
 
-Per pubblicare risorse video su YouTube, tagga le risorse video in Risorse di Experience Manager con tag. Puoi associare questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde al tag di un canale YouTube, il video viene pubblicato su YouTube. La pubblicazione su YouTube avviene insieme a una normale pubblicazione del video, purché venga utilizzato un tag associato.
+Per pubblicare risorse video in YouTube, tagga le risorse video in Risorse Experience Manager con tag . Puoi associare questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde al tag di un canale YouTube, il video viene pubblicato in YouTube. La pubblicazione in YouTube avviene insieme a una normale pubblicazione del video, purché venga utilizzato un tag associato.
 
-YouTube esegue la propria codifica. Pertanto, il file video originale caricato in Experience Manager viene pubblicato su YouTube invece di qualsiasi rendering video creato dalla codifica Dynamic Media. Sebbene non sia necessario elaborare i video con Dynamic Media, è previsto che lo facciano nel caso in cui sia necessario un predefinito visualizzatore per la riproduzione.
+YouTube esegue la propria codifica. Pertanto, il file video originale caricato in Experience Manager viene pubblicato in YouTube invece di qualsiasi rendering video creato dalla codifica di Dynamic Media. Sebbene non sia necessario elaborare i video con Dynamic Media, è previsto che lo facciano nel caso in cui sia necessario un predefinito visualizzatore per la riproduzione.
 
-Quando bypassi il profilo di elaborazione video e lo pubblichi direttamente su YouTube, significa semplicemente che la risorsa video in Experience Manager Asset non riceve una miniatura visibile. Significa anche che i video non codificati non funzionano con nessuno dei tipi di risorse Dynamic Media.
+Quando bypassi il profilo di elaborazione video e lo pubblichi direttamente in YouTube, significa semplicemente che la risorsa video in Experience Manager Asset non riceve una miniatura visibile. Significa anche che i video non codificati non funzionano con nessuno dei tipi di risorse Dynamic Media.
 
-La pubblicazione di risorse video sui server YouTube comporta il completamento delle seguenti attività per garantire l’autenticazione sicura da server a server con YouTube:
+La pubblicazione delle risorse video sui server YouTube comporta il completamento delle seguenti attività per garantire l’autenticazione server-to-server sicura con YouTube:
 
 1. [Configurazione delle impostazioni di Google Cloud](#configuring-google-cloud-settings)
 1. [Creazione di un canale YouTube](#creating-a-youtube-channel)
 1. [Aggiunta di tag per la pubblicazione](#adding-tags-for-publishing)
-1. [Configurazione di YouTube in Experience Manager](#setting-up-youtube-in-aem)
-1. [(Facoltativo) Automazione dell&#39;impostazione delle proprietà YouTube predefinite per i video caricati](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
+1. [Configurazione di YouTube nell’Experience Manager](#setting-up-youtube-in-aem)
+1. [(Facoltativo) Automazione dell&#39;impostazione delle proprietà predefinite di YouTube per i video caricati](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [Pubblicazione di video sul canale YouTube](#publishing-videos-to-your-youtube-channel)
 1. [(Facoltativo) Verifica del video pubblicato su YouTube](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
 1. [Collegamento degli URL YouTube all’applicazione Web](#linking-youtube-urls-to-your-web-application)
@@ -439,11 +438,11 @@ Puoi anche [annullare la pubblicazione dei video per rimuoverli da YouTube](#unp
 
 ### Configurazione delle impostazioni di Google Cloud {#configuring-google-cloud-settings}
 
-Per pubblicare su YouTube, è necessario un account Google. Se disponi di un account GMAIL, disponi già di un account Google; se non disponi di un account Google, puoi facilmente crearne uno. È necessario l’account perché sono necessarie le credenziali per pubblicare le risorse video su YouTube. Se hai già creato un account, salta questa attività e procedi direttamente a [Creazione di un canale YouTube](#creating-a-youtube-channel).
+Per pubblicare su YouTube, è necessario un account Google. Se disponi di un account GMAIL, disponi già di un account Google; se non disponi di un account Google, puoi facilmente crearne uno. È necessario l’account perché sono necessarie le credenziali per pubblicare le risorse video in YouTube. Se hai già creato un account, salta questa attività e passa direttamente a [Creazione di un canale YouTube](#creating-a-youtube-channel).
 
-L’account utilizzato con Google Cloud e l’account Google utilizzato per YouTube non devono essere gli stessi.
+L’account utilizzato con Google Cloud e l’account Google utilizzato per YouTube non deve essere lo stesso.
 
-Google cambia periodicamente la propria interfaccia utente. I passaggi per pubblicare video su YouTube possono quindi variare leggermente rispetto a quanto descritto di seguito. Questa avvertenza si applica anche a YouTube quando tenti di verificare se i video sono caricati su di esso.
+Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i passaggi per pubblicare i video in YouTube possono variare leggermente rispetto a quanto descritto di seguito. Questa avvertenza si applica anche ad YouTube quando tenti di verificare se i video sono caricati su di esso.
 
 >[!NOTE]
 >
@@ -468,7 +467,7 @@ Per configurare le impostazioni di Google Cloud:
 
 1. Nella finestra di dialogo Nuovo progetto digitare il nome del nuovo progetto nel campo Nome progetto.
 
-   L&#39;ID progetto si basa sul nome del progetto. Scegliere con attenzione il nome del progetto; non può essere modificato dopo la creazione. Inoltre, è necessario immettere di nuovo lo stesso ID progetto quando si imposta YouTube in Experience Manager in seguito. Quindi, annotalo.
+   L&#39;ID progetto si basa sul nome del progetto. Scegliere con attenzione il nome del progetto; non può essere modificato dopo la creazione. Inoltre, devi immettere nuovamente lo stesso ID progetto quando configuri YouTube in Experience Manager successivo. Quindi, annotalo.
 
 1. Fai clic su **[!UICONTROL Crea]**.
 
@@ -480,8 +479,8 @@ Per configurare le impostazioni di Google Cloud:
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Nella parte superiore della pagina API e servizi, tocca **[!UICONTROL Abilita API e servizi]**.
-1. Nella pagina Libreria API, a sinistra, sotto **[!UICONTROL Categoria]**, tocca **[!UICONTROL YouTube]**. Sul lato destro della pagina, tocca **[!UICONTROL API dati di YouTube]**.
-1. Nella pagina dell’API dati di YouTube v3, tocca **[!UICONTROL Abilita]**.
+1. Nella pagina Libreria API, a sinistra, sotto **[!UICONTROL Categoria]**, tocca **[!UICONTROL YouTube]**. Sul lato destro della pagina, tocca **[!UICONTROL YouTube Data API]**.
+1. Nella pagina YouTube Data API v3 , tocca **[!UICONTROL Abilita]**.
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
@@ -491,7 +490,7 @@ Per configurare le impostazioni di Google Cloud:
 
 1. Nella pagina **[!UICONTROL Aggiungi credenziali al progetto]** , procedi come segue:
 
-   * Da **[!UICONTROL Quale API utilizzi?]** dall’elenco a discesa, seleziona API dati  **[!UICONTROL YouTube v3]**.
+   * Da **[!UICONTROL Quale API utilizzi?]** dall’elenco a discesa, seleziona  **[!UICONTROL YouTube Data API v3]**.
 
    * Da **[!UICONTROL Da dove chiami l&#39;API?]** elenco a discesa, seleziona Server  **[!UICONTROL web (ad esempio, node.js, Tomcat)]**.
 
@@ -526,7 +525,7 @@ Per configurare le impostazioni di Google Cloud:
 
 1. Sotto l&#39;intestazione **[!UICONTROL Nome prodotto visualizzato agli utenti]**, nel campo di testo, immetti ciò che desideri mostrare nella schermata di consenso.
 
-   La schermata di consenso viene visualizzata dall’amministratore di Experience Manager quando effettua l’autenticazione su YouTube. L&#39;Experience Manager contatta YouTube per l&#39;autorizzazione.
+   Quando effettuano l’autenticazione in YouTube, l’amministratore di Experience Manager visualizza la schermata di consenso. Experience Manager contatta YouTube per l&#39;autorizzazione.
 
 1. Fai clic su **[!UICONTROL Continua]**.
 1. Nella pagina Add credentials to your project (Aggiungi credenziali al progetto), passaggio 4, nell’intestazione **[!UICONTROL Download credentials (Scarica credenziali)]**, tocca **[!UICONTROL Download]**.
@@ -543,11 +542,11 @@ Per configurare le impostazioni di Google Cloud:
 
 ### Creazione di un canale YouTube {#creating-a-youtube-channel}
 
-Per pubblicare video su YouTube è necessario disporre di uno o più canali. Se hai già creato un canale YouTube, puoi saltare questa attività e passare a [Aggiunta di tag per la pubblicazione](/help/assets/dynamic-media/video.md#adding-tags-for-publishing).
+Per pubblicare video in YouTube è necessario disporre di uno o più canali. Se hai già creato un canale YouTube, puoi saltare questa attività e passare a [Aggiunta di tag per la pubblicazione](/help/assets/dynamic-media/video.md#adding-tags-for-publishing).
 
 >[!CAUTION]
 >
->Assicurati di aver già configurato uno o più canali in YouTube *prima* di aggiungere canali in Impostazioni YouTube in Experience Manager (vedi [Configurazione di YouTube in Experience Manager](#setting-up-youtube-in-aem) di seguito). Se non si riesce a eseguire la configurazione del canale, non viene visualizzato alcun avviso di nessun canale esistente. Tuttavia, l’autenticazione Google si verifica ancora quando aggiungi un canale, ma non è disponibile un’opzione per scegliere quale canale viene inviato il video.
+>Assicurati di aver già configurato uno o più canali in YouTube *prima di* aggiungere canali in Impostazioni YouTube nell&#39;Experience Manager (vedi [Configurazione di YouTube nell&#39;Experience Manager](#setting-up-youtube-in-aem) di seguito). Se non si riesce a eseguire la configurazione del canale, non viene visualizzato alcun avviso di nessun canale esistente. Tuttavia, l’autenticazione Google si verifica ancora quando aggiungi un canale, ma non è disponibile un’opzione per scegliere quale canale viene inviato il video.
 
 Per creare un canale YouTube:
 
@@ -557,7 +556,7 @@ Per creare un canale YouTube:
 1. Nella pagina Canali, tocca **[!UICONTROL Crea un nuovo canale]**.
 1. Nella pagina Account marchio , immetti un nome commerciale o un altro nome di canale scelto per pubblicare le risorse video nel campo Marchio Account , quindi fai clic su **[!UICONTROL Crea]**.
 
-   Ricorda il nome immesso in questa sezione perché è necessario immetterlo nuovamente quando si imposta YouTube in Experience Manager.
+   Ricorda il nome immesso in questo campo perché è necessario immetterlo nuovamente quando si imposta YouTube in Experience Manager.
 
 1. (Facoltativo) Se necessario, aggiungi altri canali.
 
@@ -565,13 +564,13 @@ Per creare un canale YouTube:
 
 ### Aggiunta di tag per la pubblicazione {#adding-tags-for-publishing}
 
-Per pubblicare sui video su YouTube, Experience Manager associa i tag a uno o più canali di YouTube. Per aggiungere tag per la pubblicazione, consulta [Amministrazione dei tag](/help/sites-cloud/authoring/features/tags.md).
+Per pubblicare nei video in YouTube, Experience Manager associa i tag a uno o più canali YouTube. Per aggiungere tag per la pubblicazione, consulta [Amministrazione dei tag](/help/sites-cloud/authoring/features/tags.md).
 
 Oppure, se desideri utilizzare i tag predefiniti in Experience Manager, puoi saltare questa attività e passare a [Configurazione YouTube in Experience Manager](#setting-up-youtube-in-aem).
 
 >[!NOTE]
 >
->Una volta configurato il Cloud Service, non è necessaria un’altra configurazione per abilitare l’agente di replica di pubblicazione di YouTube a questo punto. Il motivo è che è stato attivato al momento del salvataggio della configurazione del Cloud Service.
+>Una volta configurato il Cloud Service, non è necessaria un’altra configurazione per abilitare l’agente di replica di YouTube Publish a questo punto. Il motivo è che è stato attivato al momento del salvataggio della configurazione del Cloud Service.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -583,9 +582,9 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
 1. Click **[!UICONTROL OK]**. -->
 
-### Configurazione di YouTube nell&#39;Experience Manager {#setting-up-youtube-in-aem}
+### Configurazione di YouTube nell’Experience Manager {#setting-up-youtube-in-aem}
 
-A partire da Experience Manager 6.4, è stato introdotto un nuovo metodo di interfaccia utente touch per configurare la pubblicazione su YouTube in Experience Manager. In base all’istanza installata dell’Experience Manager in uso, effettua una delle seguenti operazioni:
+A partire da Experience Manager 6.4, è stato introdotto un nuovo metodo di interfaccia utente touch per configurare la pubblicazione YouTube in Experience Manager. In base all’istanza installata dell’Experience Manager in uso, effettua una delle seguenti operazioni:
 
 * Per configurare YouTube in Experience Manager prima della versione 6.4, consulta [Configurazione di YouTube in Experience Manager prima della versione 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
 * Per configurare YouTube in Experience Manager 6.4 o versione successiva, consulta [Configurazione di YouTube in Experience Manager 6.4 e versioni successive](#setting-up-youtube-in-aem-and-later).
@@ -593,7 +592,7 @@ A partire da Experience Manager 6.4, è stato introdotto un nuovo metodo di inte
 #### Configurazione di YouTube in Experience Manager 6.4 e versioni successive {#setting-up-youtube-in-aem-and-later}
 
 1. Assicurati di accedere alla tua istanza di Dynamic Media come amministratore.
-1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca il logo dell’Experience Manager, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]**(icona a forma di martello) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione pubblicazione su YouTube]**.
+1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca il logo dell’Experience Manager, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]**(icona a forma di martello) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione pubblicazione YouTube]**.
 1. Tocca **[!UICONTROL global]** (non selezionarlo).
 
 1. Nell’angolo in alto a destra della pagina globale, tocca **[!UICONTROL Crea]**.
@@ -609,10 +608,10 @@ Lascia aperta la pagina Crea configurazione YouTube; ci ritornate tra un momento
 1. Torna alla finestra di dialogo Impostazioni account YouTube. Nel campo **[!UICONTROL Configurazione JSON]**, incolla il testo JSON.
 1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Salva]**.
 
-   Ora configurerai i canali di YouTube in Experience Manager.
+   Ora configurerai i canali YouTube in Experience Manager.
 
 1. Tocca **[!UICONTROL Aggiungi canale]**.
-1. Nel campo Nome canale , immetti il nome del canale creato nell&#39;attività **[!UICONTROL Aggiunta di uno o più canali a YouTube]** precedente.
+1. Nel campo Nome canale , immetti il nome del canale creato nell&#39;attività **[!UICONTROL Aggiunta di uno o più canali ad YouTube]** precedente.
 
    Facoltativamente, puoi aggiungere una descrizione.
 
@@ -642,7 +641,7 @@ Lascia aperta la pagina Crea configurazione YouTube; ci ritornate tra un momento
 1. Assicurati di accedere alla tua istanza di Dynamic Media come amministratore.
 
 1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca il logo dell’Experience Manager, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Implementazione]** > **[!UICONTROL Cloud Services]**.
-1. Sotto l&#39;intestazione Servizi di terze parti, sotto YouTube, tocca **[!UICONTROL Configura ora]**.
+1. Sotto l’intestazione Servizi di terze parti, in YouTube, tocca **[!UICONTROL Configura ora]**.
 1. Nella finestra di dialogo Crea configurazione, immetti un titolo (obbligatorio) e un nome (facoltativo) nei rispettivi campi.
 1. Tocca **[!UICONTROL Crea]**.
 1. Nella finestra di dialogo Impostazioni account di YouTube, immetti l’ID progetto Google nel campo **[!UICONTROL Nome applicazione]**.
@@ -655,7 +654,7 @@ Lascia aperta la finestra di dialogo Impostazione account YouTube; ci ritornate 
 1. Torna alla finestra di dialogo Impostazioni account YouTube. Nel campo **[!UICONTROL Configurazione JSON]**, incolla il testo JSON.
 1. Toccare **[!UICONTROL OK]**.
 
-   Ora configurerai i canali di YouTube in Experience Manager.
+   Ora configurerai i canali YouTube in Experience Manager.
 
 1. A destra di **[!UICONTROL Canali disponibili]**, tocca **+** (icona del segno più).
 1. Nella finestra di dialogo Impostazioni canale YouTube, fai clic sul campo Titolo e immetti il nome del canale creato nell’attività precedente **[!UICONTROL Aggiunta di uno o più canali a YouTube]**.
@@ -687,9 +686,9 @@ Lascia aperta la finestra di dialogo Impostazione account YouTube; ci ritornate 
 
 Facoltativamente, puoi automatizzare l’impostazione delle proprietà di YouTube al caricamento dei video. Crea un profilo di elaborazione dei metadati in Experience Manager.
 
-Per creare il profilo di elaborazione dei metadati, devi prima copiare i valori dai campi **[!UICONTROL Etichetta campo]**, **[!UICONTROL Mappa su proprietà]** e **[!UICONTROL Scelte]**, tutti disponibili in Schemi metadati per i video. Quindi, puoi creare il tuo profilo di elaborazione dei metadati video di YouTube aggiungendo quei valori ad esso.
+Per creare il profilo di elaborazione dei metadati, devi prima copiare i valori dai campi **[!UICONTROL Etichetta campo]**, **[!UICONTROL Mappa su proprietà]** e **[!UICONTROL Scelte]**, tutti disponibili in Schemi metadati per i video. Quindi, puoi creare il tuo profilo di elaborazione dei metadati video YouTube aggiungendo tali valori a esso.
 
-Per automatizzare l’impostazione delle proprietà YouTube predefinite per i video caricati:
+Per automatizzare l’impostazione delle proprietà predefinite di YouTube per i video caricati:
 
 1. Nell’angolo in alto a sinistra dell’Experience Manager, fai clic sul logo dell’Experience Manager, quindi nella barra a sinistra fai clic su **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi di metadati]**.
 1. Fare clic su **[!UICONTROL default]**. (Non aggiungere un segno di spunta alla casella di selezione a sinistra di &quot;default&quot;.)
@@ -704,7 +703,7 @@ Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà nec
    * In **[!UICONTROL Scelte]**, seleziona e copia il valore predefinito da utilizzare (ad esempio Persone e blog o Scienza e tecnologia).
 Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà necessario in un secondo momento quando crei il profilo di elaborazione dei metadati. Lascia aperto l’editor di testo.
 
-1. Nell’intestazione Pubblicazione su YouTube, fai clic su **[!UICONTROL Privacy su YouTube]**.
+1. Nell’intestazione Pubblicazione YouTube, fai clic su **[!UICONTROL Privacy YouTube]**.
 1. Sul lato destro della pagina, sotto la scheda **[!UICONTROL Impostazioni]** , procedi come segue:
 
    * Nel campo di testo **[!UICONTROL Mappa su proprietà]** , seleziona e copia il valore.
@@ -725,12 +724,12 @@ Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà nec
    * (Facoltativo) Trascina a sinistra il componente con etichetta **[!UICONTROL Intestazione sezione]** e rilascialo nell’area del modulo.
    * (Facoltativo) Fai clic su **[!UICONTROL Etichetta campo]** per selezionare il componente.
    * (Facoltativo) Sul lato destro della pagina, sotto la scheda Impostazioni, nel campo di testo Etichetta campo, immetti `YouTube Publishing`.
-   * Fai clic sulla scheda **[!UICONTROL Genera modulo]** , trascina il componente con etichetta **[!UICONTROL Testo con più valori]** e rilascialo sotto l&#39;intestazione **[!UICONTROL Pubblicazione su YouTube]** creata.
+   * Fai clic sulla scheda **[!UICONTROL Genera modulo]** , trascina il componente con etichetta **[!UICONTROL Testo con più valori]** e rilascialo sotto l&#39;intestazione **[!UICONTROL Pubblicazione YouTube]** creata.
 
    * Per selezionare il componente, fai clic su **[!UICONTROL Etichetta campo]**.
-   * Sul lato destro della pagina, nella scheda Impostazioni , incolla i valori di Pubblicazione su YouTube (valore etichetta campo e Mappa su valore proprietà) copiati in precedenza, nei rispettivi campi del modulo. Incolla il valore di Scelte nel campo Valore predefinito .
+   * Sul lato destro della pagina, nella scheda Impostazioni , incolla i valori di Pubblicazione YouTube (Valore etichetta campo e Mappa su valore proprietà) copiati in precedenza, nei rispettivi campi del modulo. Incolla il valore di Scelte nel campo Valore predefinito .
 
-1. Aggiungi i valori di Privacy YouTube copiati al profilo facendo quanto segue:
+1. Aggiungi i valori di YouTube Privacy copiati al profilo facendo quanto segue:
 
    * Sul lato destro della pagina, fai clic sulla scheda **[!UICONTROL Genera modulo]** .
    * (Facoltativo) Trascina a sinistra il componente con etichetta **[!UICONTROL Intestazione sezione]** e rilascialo nell’area del modulo.
@@ -739,29 +738,29 @@ Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà nec
    * Fai clic sulla scheda **[!UICONTROL Genera modulo]** , trascina il componente con etichetta **[!UICONTROL Testo con più valori]** e rilascialo sotto l&#39;intestazione **[!UICONTROL Privacy YouTube]** creata.
 
    * Per selezionare il componente, fai clic su **[!UICONTROL Etichetta campo]**.
-   * Sul lato destro della pagina, nella scheda Impostazioni , incolla i valori di Pubblicazione su YouTube (valore etichetta campo e Mappa su valore proprietà) copiati in precedenza, nei rispettivi campi del modulo. Incolla il valore di Scelte nel campo Valore predefinito .
+   * Sul lato destro della pagina, nella scheda Impostazioni , incolla i valori di Pubblicazione YouTube (Valore etichetta campo e Mappa su valore proprietà) copiati in precedenza, nei rispettivi campi del modulo. Incolla il valore di Scelte nel campo Valore predefinito .
 
 1. Fai clic su **[!UICONTROL Salva]** nell’angolo superiore destro della pagina.
-1. Applica il profilo di metadati Pubblicazione su YouTube alle cartelle in cui stai per caricare i video. È necessario impostare sia il profilo metadati che il profilo video.
+1. Applica il profilo metadati Pubblicazione YouTube alle cartelle in cui stai per caricare i video. È necessario impostare sia il profilo metadati che il profilo video.
 
    Consulta le sezioni [Profili di metadati](/help/assets/metadata-profiles.md) e [Profili video](/help/assets/dynamic-media/video-profiles.md).
 
 ### Pubblicazione di video sul canale YouTube {#publishing-videos-to-your-youtube-channel}
 
-Ora puoi associare i tag aggiunti in precedenza alle risorse video. Questo processo consente ad Experience Manager di sapere quali risorse pubblicare sul canale YouTube.
+Ora puoi associare i tag aggiunti in precedenza alle risorse video. Questo processo consente ad Experience Manager di sapere quali risorse pubblicare sul tuo canale YouTube.
 
 >[!NOTE]
 >
->La pubblicazione immediata non viene automaticamente pubblicata su YouTube. Quando si imposta Dynamic Media, è possibile scegliere tra due opzioni di pubblicazione: **[!UICONTROL Immediatamente]** o **[!UICONTROL All’attivazione]**.
+>La pubblicazione immediata non viene pubblicata automaticamente in YouTube. Quando si imposta Dynamic Media, è possibile scegliere tra due opzioni di pubblicazione: **[!UICONTROL Immediatamente]** o **[!UICONTROL All’attivazione]**.
 >
->**[!UICONTROL Pubblica]** immediatamente significa che la risorsa caricata dopo la sincronizzazione con IPS viene pubblicata automaticamente nel sistema di consegna. Anche se questo vale per Dynamic Media, non è vero per YouTube. Per pubblicare su YouTube, devi pubblicarlo tramite Experience Manager Author.
+>**[!UICONTROL Pubblica]** immediatamente significa che la risorsa caricata dopo la sincronizzazione con IPS viene pubblicata automaticamente nel sistema di consegna. Anche se questo vale per Dynamic Media, non è vero per YouTube. Per pubblicare in YouTube, devi pubblicarlo tramite Experience Manager Author.
 
 >[!NOTE]
-Per pubblicare contenuti da YouTube, in Experience Manager viene utilizzato il flusso di lavoro **[!UICONTROL Pubblica su YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
+Per pubblicare contenuti da YouTube, in Experience Manager viene utilizzato il flusso di lavoro **[!UICONTROL Pubblica in YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
 Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
-Per informazioni più dettagliate sullo stato, puoi monitorare il registro YouTube sotto replica. Tuttavia, tale monitoraggio richiede l’accesso dell’amministratore.
+Per informazioni più dettagliate sullo stato, è possibile monitorare il log YouTube sotto replica. Tuttavia, tale monitoraggio richiede l’accesso dell’amministratore.
 
-**Per pubblicare video sul tuo canale** YouTube:
+**Per pubblicare i video sul tuo canale** YouTube:
 
 1. Ad Experience Manager, accedi a una risorsa video da pubblicare sul tuo canale YouTube.
 1. Seleziona la risorsa video (il set video adattivo).
@@ -769,7 +768,7 @@ Per informazioni più dettagliate sullo stato, puoi monitorare il registro YouTu
 1. Nella scheda Base, sotto l’intestazione Metadati, fai clic su **[!UICONTROL Apri finestra di dialogo per selezione]** a destra del campo Tag.
 1. Nella pagina Seleziona tag individua i tag da utilizzare, quindi seleziona uno o più tag.
 
-   Ricorda che i tag devono essere associati al canale YouTube.
+   I tag devono essere associati al canale YouTube.
 
 1. Nell&#39;angolo in alto a destra della pagina, fai clic su **[!UICONTROL Seleziona]**.
 1. Nell&#39;angolo superiore destro della pagina delle proprietà del video, fai clic su **[!UICONTROL Salva e chiudi]**.
@@ -781,7 +780,7 @@ Per informazioni più dettagliate sullo stato, puoi monitorare il registro YouTu
 
 ### (Facoltativo) Verifica del video pubblicato su YouTube {#optional-verifying-the-published-video-on-youtube}
 
-Facoltativamente, puoi monitorare l’avanzamento della pubblicazione su YouTube (o l’annullamento della pubblicazione).
+Facoltativamente, puoi monitorare l’avanzamento della pubblicazione di YouTube (o l’annullamento della pubblicazione).
 
 Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
@@ -791,27 +790,27 @@ Dopo otto ore, se vedi ancora un messaggio di stato che dice **[!UICONTROL Caric
 
 ### Collegamento di URL YouTube all&#39;applicazione Web {#linking-youtube-urls-to-your-web-application}
 
-Puoi ottenere una stringa URL YouTube generata da Dynamic Media dopo la pubblicazione del video. Quando copi l’URL di YouTube, questo viene inserito negli Appunti, in modo da poterlo incollare in base alle necessità nelle pagine del sito web o dell’applicazione.
+Puoi ottenere una stringa URL YouTube generata da Dynamic Media dopo la pubblicazione del video. Quando copi l’URL di YouTube, questo viene inserito negli Appunti, in modo da poterlo incollare come necessario nelle pagine del sito web o dell’applicazione.
 
 >[!NOTE]
-L’URL YouTube non è disponibile per la copia finché non hai pubblicato la risorsa video su YouTube.
+L’URL di YouTube non è disponibile per la copia finché non avrai pubblicato la risorsa video in YouTube.
 
 Per collegare gli URL YouTube alla tua applicazione web:
 
-1. Passa alla risorsa video *YouTube pubblicata* di cui desideri copiare l&#39;URL, quindi selezionala.
+1. Passa alla risorsa video *pubblicata da YouTube* di cui desideri copiare l&#39;URL, quindi selezionala.
 
-   Gli URL di YouTube sono disponibili solo per copiare *dopo* hai prima *pubblicato* le risorse video su YouTube.
+   Gli URL di YouTube sono disponibili solo per copiare *dopo* le prime *risorse video pubblicate* in YouTube.
 
 1. Sulla barra degli strumenti, fai clic su **[!UICONTROL Proprietà]**.
 1. Fare clic sulla scheda **[!UICONTROL Avanzate]**.
-1. Sotto l’intestazione Pubblicazione su YouTube, nell’elenco URL di YouTube, seleziona e copia il testo dell’URL nel browser web per visualizzare l’anteprima della risorsa o per aggiungerla alla pagina del contenuto web.
+1. Sotto l’intestazione Pubblicazione YouTube, nell’elenco URL di YouTube, seleziona e copia il testo dell’URL nel browser web per visualizzare l’anteprima della risorsa o per aggiungerla alla pagina del contenuto web.
 
-### Annullamento della pubblicazione di video per rimuoverli da YouTube {#unpublishing-videos-to-remove-them-from-youtube}
+### Annullamento della pubblicazione dei video per rimuoverli da YouTube {#unpublishing-videos-to-remove-them-from-youtube}
 
-Quando annulli la pubblicazione di una risorsa video in Experience Manager, il video viene rimosso da YouTube.
+Quando si annulla la pubblicazione di una risorsa video in Experience Manager, il video viene rimosso da YouTube.
 
 >[!CAUTION]
-Se rimuovi un video direttamente da YouTube, Experience Manager non è consapevole e continua a comportarsi come se il video fosse ancora pubblicato su YouTube. Per Experience Manager, annulla sempre la pubblicazione di una risorsa video da YouTube.
+Se rimuovi un video direttamente da YouTube, Experience Manager ignora e continua a comportarsi come se il video fosse ancora pubblicato in YouTube. Per Experience Manager, annulla sempre la pubblicazione di una risorsa video da YouTube.
 
 >[!NOTE]
 Per rimuovere contenuti da YouTube, in Experience Manager viene utilizzato il flusso di lavoro **[!UICONTROL Annulla pubblicazione da YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
@@ -819,20 +818,20 @@ Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazio
 
 Per annullare la pubblicazione dei video e rimuoverli da YouTube:
 
-1. Passa alle risorse video di cui vuoi annullare la pubblicazione dal canale YouTube.
+1. Passa alle risorse video da cui desideri annullare la pubblicazione dal canale YouTube.
 1. In una modalità di selezione delle risorse, seleziona una o più risorse video pubblicate.
 1. Sulla barra degli strumenti, fai clic su **[!UICONTROL Gestisci pubblicazione]**. Se necessario, tocca l’icona dei tre punti (. . .) sulla barra degli strumenti per visualizzare **[!UICONTROL Gestisci pubblicazione]**.
 1. Nella pagina Gestisci pubblicazione, tocca **[!UICONTROL Annulla pubblicazione]**.
 1. Nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Avanti]**.
 1. Nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Annulla pubblicazione]**.
 
-## Monitoraggio della codifica video e stato di pubblicazione su YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
+## Monitoraggio della codifica video e stato di pubblicazione di YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-Quando carichi un nuovo video in una cartella a cui è stata applicata la codifica video o, pubblichi il video su YouTube, controlla l’avanzamento (o il mancato funzionamento) della codifica video/pubblicazione su Youtube. L’avanzamento effettivo della pubblicazione su YouTube è disponibile solo tramite i registri. Tuttavia, indipendentemente dal suo esito positivo o negativo, viene elencato in altri modi descritti nella procedura seguente. Inoltre, ricevi notifiche e-mail quando un flusso di lavoro di pubblicazione di YouTube o una codifica video viene completata o interrotta.
+Quando carichi un nuovo video in una cartella a cui è stata applicata la codifica video o, pubblichi il video in YouTube, monitora l’avanzamento (o il mancato funzionamento) della codifica video/pubblicazione su Youtube. L’avanzamento effettivo della pubblicazione in YouTube è disponibile solo tramite i registri. Tuttavia, indipendentemente dal suo esito positivo o negativo, viene elencato in altri modi descritti nella procedura seguente. Inoltre, ricevi notifiche e-mail quando un flusso di lavoro o una codifica video di pubblicazione di YouTube viene completata o interrotta.
 
 ### Monitoraggio dello stato di avanzamento {#monitoring-progress}
 
-Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione su YouTube):
+Per monitorare l’avanzamento (compresa la codifica non riuscita/pubblicazione YouTube):
 
 1. Visualizza l’avanzamento della codifica video nella cartella delle risorse:
 
@@ -848,11 +847,11 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
    ![chlimage_1-431](/help/assets/dynamic-media/assets/chlimage_1-431.png)
 
-1. Visualizza l’avanzamento nei dettagli della risorsa. Quando tocchi o fai clic su una risorsa, apri il menu a discesa e seleziona **[!UICONTROL Timeline]**. Per limitare l’attività al flusso di lavoro come la codifica o la pubblicazione su YouTube, seleziona **[!UICONTROL Flussi di lavoro]**.
+1. Visualizza l’avanzamento nei dettagli della risorsa. Quando tocchi o fai clic su una risorsa, apri il menu a discesa e seleziona **[!UICONTROL Timeline]**. Per limitare l&#39;attività del flusso di lavoro come la codifica o la pubblicazione YouTube, seleziona **[!UICONTROL Flussi di lavoro]**.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
-   Tutte le informazioni sul flusso di lavoro, ad esempio la codifica, vengono visualizzate nella timeline. Per la pubblicazione su YouTube, la timeline del flusso di lavoro include anche il nome del canale YouTube e l’URL del video YouTube. Inoltre, puoi visualizzare eventuali notifiche di errore nella timeline del flusso di lavoro al termine della pubblicazione.
+   Tutte le informazioni sul flusso di lavoro, ad esempio la codifica, vengono visualizzate nella timeline. Per la pubblicazione in YouTube, la timeline del flusso di lavoro include anche il nome del canale YouTube e l’URL video YouTube. Inoltre, puoi visualizzare eventuali notifiche di errore nella timeline del flusso di lavoro al termine della pubblicazione.
 
    >[!NOTE]
    Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/errore a causa di più configurazioni del flusso di lavoro su **[!UICONTROL nuovi tentativi]**, **[!UICONTROL nuovo ritardo]** e **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
