@@ -1,15 +1,14 @@
 ---
 title: Gestione dei predefiniti per immagini
 description: '"Scopri i predefiniti immagine e come creare, modificare e gestire i predefiniti immagine."'
-feature: Image Presets,Viewers,Renditions
-topic: Business Practitioner
+feature: Predefiniti immagine,Visualizzatori,Rendering
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '3646'
-ht-degree: 10%
+source-wordcount: '3644'
+ht-degree: 9%
 
 ---
 
@@ -477,7 +476,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che puoi esegui
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
 1. Seleziona un predefinito e fai clic su **[!UICONTROL Modifica]**. Viene visualizzata la finestra **[!UICONTROL Modifica predefinito immagine]**.
-1. Apporta le modifiche desiderate e fai clic su **[!UICONTROL Salva]** per salvarle oppure su **[!UICONTROL Annulla]** per annullare le modifiche.
+1. Apporta le modifiche desiderate e fai clic su **[!UICONTROL Salva]** per salvarle o su **[!UICONTROL Annulla]** per annullare le modifiche.
 
 ### Pubblicazione dei predefiniti per immagini {#publishing-image-presets}
 
