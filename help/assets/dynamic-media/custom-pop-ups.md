@@ -1,17 +1,16 @@
 ---
 title: Utilizzo delle visualizzazioni rapide per creare pop-up personalizzati
 description: '"Scopri come viene utilizzata la visualizzazione rapida predefinita nelle esperienze e-commerce, in cui viene visualizzata una finestra a comparsa con informazioni sul prodotto per promuovere un acquisto. È possibile attivare il contenuto personalizzato da visualizzare nelle finestre a comparsa."'
-topic: "Developer,Administrator,Business Practitioner"
-feature: Interactive Images,Interactive Videos,Carousel Banners
+feature: Immagini interattive, video interattivi, banner a carosello
 role: Administrator,Business Practitioner
+exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1034'
 ht-degree: 1%
 
 ---
-
 
 # Utilizzo delle visualizzazioni rapide per creare finestre pop-up personalizzate {#using-quickviews-to-create-custom-pop-ups}
 
@@ -264,4 +263,3 @@ EsempioQuesto esempio utilizza il visualizzatore di immagini interattivo.
    `s7interactiveimageviewer.init()`
 
    Dopo aver incorporato il visualizzatore nella pagina host, assicurati che l’istanza del visualizzatore sia stata creata. Inoltre, assicurati che i gestori vengano caricati prima che il visualizzatore venga richiamato utilizzando `init()`.
-
