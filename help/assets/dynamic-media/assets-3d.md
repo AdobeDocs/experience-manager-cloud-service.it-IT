@@ -5,14 +5,13 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Service
 topic-tags: introduction
 content-type: reference
-feature: 3D Assets
-topic: Business Practitioner
+feature: Risorse 3D
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2269'
 ht-degree: 4%
 
 ---
@@ -95,7 +94,7 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
 >[!TIP]
 >
->Puoi aprire il predefinito visualizzatore dimensionale nell’Editor predefiniti per visualizzatori per esercitarti a navigare su una risorsa 3D senza dover prima caricare alcun file 3D. Il predefinito visualizzatore dimensionale dispone di una risorsa 3D incorporata con cui è possibile interagire.
+>Puoi aprire il predefinito visualizzatore dimensionale nell’Editor predefiniti per visualizzatori per esercitarti a navigare su una risorsa 3D senza dover prima caricare alcun file 3D. Il predefinito visualizzatore dimensionale dispone di una risorsa 3D incorporata con cui puoi interagire.
 >
 >Consulta [Gestione dei predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -124,7 +123,7 @@ Consulta anche [Anteprima delle risorse tramite l&#39;interfaccia software](/hel
    * **Zoom della fotocamera**  - Zoom della fotocamera per spostarsi in e fuori da aree della scena 3D.
       * _Mouse_: Ruota di scorrimento.
       * _Schermata_ touch: Pizzico a due dita.
-   * **Ricentrate la fotocamera**  - Ricentate la fotocamera in un punto su un oggetto nella scena 3D.
+   * **Ricentrate la fotocamera** : inserite nuovamente la fotocamera in un punto della scena 3D.
       * _Mouse_: Fare doppio clic.
       * _Schermata_ touch: Tocca due volte.
    * **Ripristina** : vicino all’angolo inferiore destro della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole.
@@ -163,7 +162,7 @@ componente File multimediali 3Duna risorsa 3D completamente interattiva come vis
    * **Zoom della fotocamera**  - Zoom della fotocamera per spostarsi in e fuori da aree della scena 3D.
       * _Mouse_: Ruota di scorrimento.
       * _Schermata_ touch: Pizzico a due dita.
-   * **Ricentrate la fotocamera**  - Ricentate la fotocamera in un punto su un oggetto nella scena 3D.
+   * **Ricentrate la fotocamera** : inserite nuovamente la fotocamera in un punto della scena 3D.
       * _Mouse_: Fare doppio clic.
       * _Schermata_ touch: Tocca due volte.
    * **Ripristina** : vicino all’angolo inferiore destro della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole.
