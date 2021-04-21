@@ -1,17 +1,16 @@
 ---
 title: Immagini panoramiche
 description: Scopri come utilizzare le immagini panoramiche in Dynamic Media.
-feature: Panoramic Images
-topic: Business Practitioner
+feature: Immagini panoramiche
 role: Business Practitioner
+exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 5%
+source-wordcount: '149'
+ht-degree: 3%
 
 ---
-
 
 # Immagini panoramiche{#panoramic-images}
 
