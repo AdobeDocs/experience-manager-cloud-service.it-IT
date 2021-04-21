@@ -9,10 +9,10 @@ feature: Risorse 3D
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 58d09d12ce2e8415eb50c288eeab3167a92fae57
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 4%
+source-wordcount: '2251'
+ht-degree: 5%
 
 ---
 
@@ -102,7 +102,7 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
 Consulta anche [Anteprima delle risorse tramite l&#39;interfaccia software](/help/assets/dynamic-media/previewing-assets.md).
 
-**Per visualizzare e interagire con una risorsa 3D dalla pagina dei dettagli della risorsa**
+**Per visualizzare e interagire con una risorsa 3D dalla pagina dei dettagli della risorsa:**
 
 1. Assicurati di aver caricato risorse 3D in Experience Manager.
 
@@ -114,20 +114,14 @@ Consulta anche [Anteprima delle risorse tramite l&#39;interfaccia software](/hel
 1. Per aprire la risorsa nella pagina Dettagli, tocca la scheda della risorsa 3D.
 1. Nella pagina Dettagli della risorsa 3D, effettua una delle seguenti operazioni:
 
-   * **Girare la fotocamera**  - Rotazione la visualizzazione intorno alla scena e agli oggetti 3D.
-      * _Mouse_: Clic a sinistra + trascinamento.
-      * _Schermata_ touch: Premere un dito singolo + trascinare.
-   * **Panning della fotocamera** : effettua il panning della vista a sinistra, a destra, su o giù.
-      * _Mouse_: Fai clic con il pulsante destro del mouse e trascina.
-      * _Schermata_ touch: Premere due dita + trascinare.
-   * **Zoom della fotocamera**  - Zoom della fotocamera per spostarsi in e fuori da aree della scena 3D.
-      * _Mouse_: Ruota di scorrimento.
-      * _Schermata_ touch: Pizzico a due dita.
-   * **Ricentrate la fotocamera** : inserite nuovamente la fotocamera in un punto della scena 3D.
-      * _Mouse_: Fare doppio clic.
-      * _Schermata_ touch: Tocca due volte.
-   * **Ripristina** : vicino all’angolo inferiore destro della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole.
-   * **Modalità a tutto schermo**  - Per passare alla modalità a tutto schermo, tocca l’icona a schermo intero nell’angolo in basso a destra della pagina.
+   | Visualizzazione | Descrizione | Azione del mouse | Azione touch screen |
+   | --- | --- | --- | --- |
+   | **Girare la fotocamera** | Ruota la vista attorno agli oggetti e alla scena 3D. | Clic a sinistra + trascinamento. | Premere un dito singolo + trascinare. |
+   | **Panning della fotocamera** | Consente di scorrere la visualizzazione a sinistra, a destra, in alto o in basso. | Fai clic con il pulsante destro del mouse e trascina. | Premere due dita + trascinare. |
+   | **Zoom della fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Ruota di scorrimento. | Pizzico a due dita. |
+   | **Ricollegare la fotocamera** | Rientra la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic. | Tocca due volte. |
+   | **Ripristina** | Nell’angolo in basso a destra della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
+   | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, tocca l’icona a schermo intero nell’angolo in basso a destra della pagina. |  |  |
 
 1. Nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Chiudi]** per tornare alla schermata Risorse.
 
@@ -141,7 +135,7 @@ Quando una pagina web è in modalità **[!UICONTROL Modifica]**, non è possibil
 
 Consulta anche [Anteprima delle risorse tramite l&#39;interfaccia software](/help/assets/dynamic-media/previewing-assets.md).
 
-**Per visualizzare e interagire con una risorsa 3D all’interno di un componente Media 3D**
+**Per visualizzare e interagire con una risorsa 3D all’interno di un componente File multimediali 3D:**
 
 1. Quando una pagina web è in modalità **[!UICONTROL Modifica]**, effettuare una delle seguenti operazioni:
 
@@ -153,20 +147,14 @@ componente File multimediali 3Duna risorsa 3D completamente interattiva come vis
 
 1. In modalità **[!UICONTROL Anteprima]**, effettuare una delle seguenti operazioni:
 
-   * **Girare la fotocamera**  - Rotazione la visualizzazione intorno alla scena e agli oggetti 3D.
-      * _Mouse_: Clic a sinistra + trascinamento.
-      * _Schermata_ touch: Premere un dito singolo + trascinare.
-   * **Panning della fotocamera** : effettua il panning della vista a sinistra, a destra, su o giù.
-      * _Mouse_: Fai clic con il pulsante destro del mouse e trascina.
-      * _Schermata_ touch: Premere due dita + trascinare.
-   * **Zoom della fotocamera**  - Zoom della fotocamera per spostarsi in e fuori da aree della scena 3D.
-      * _Mouse_: Ruota di scorrimento.
-      * _Schermata_ touch: Pizzico a due dita.
-   * **Ricentrate la fotocamera** : inserite nuovamente la fotocamera in un punto della scena 3D.
-      * _Mouse_: Fare doppio clic.
-      * _Schermata_ touch: Tocca due volte.
-   * **Ripristina** : vicino all’angolo inferiore destro della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole.
-   * **Modalità a tutto schermo**  - Per passare alla modalità a tutto schermo, tocca l’icona a schermo intero nell’angolo in basso a destra della pagina.
+   | Visualizzazione | Descrizione | Azione del mouse | Azione touch screen |
+   | --- | --- | --- | --- |
+   | **Girare la fotocamera** | Ruota la vista attorno agli oggetti e alla scena 3D. | Clic a sinistra + trascinamento. | Premere un dito singolo + trascinare. |
+   | **Panning della fotocamera** | Consente di scorrere la visualizzazione a sinistra, a destra, in alto o in basso. | Fai clic con il pulsante destro del mouse e trascina. | Premere due dita + trascinare. |
+   | **Zoom della fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Ruota di scorrimento. | Pizzico a due dita. |
+   | **Ricollegare la fotocamera** | Rientra la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic. | Tocca due volte. |
+   | **Ripristina** | Nell’angolo in basso a destra della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
+   | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, tocca l’icona a schermo intero nell’angolo in basso a destra della pagina. |  |  |
 
 ## Utilizzo del componente Media 3D {#working-with-three-d-media-component}
 
@@ -176,7 +164,6 @@ Dynamic Media include un componente Media 3D di Dynamic Media che può essere ut
 * [Aggiunta del componente Media 3D a una pagina web](#adding-the-three-d-media-component-to-a-web-page)
    * [Facoltativo - Configurazione del componente File multimediali 3D](#configuring-the-three-d-component)
 * [Assegnazione di una risorsa 3D al componente File multimediali 3D](#assigning-a-three-d-asset-to-the-component)
-
 
 ## Aggiunta del componente Media 3D al modello di pagina {#adding-three-d-media-component-to-page-template}
 
@@ -261,7 +248,7 @@ Consulta anche [Pubblicazione di risorse Dynamic Media](/help/assets/dynamic-med
 
 Vedere anche [Pubblicazione di pagine](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
 
-**Per pubblicare risorse 3D statiche di Dynamic Media**
+**Per pubblicare risorse 3D statiche di Dynamic Media:**
 
 1. Apri una risorsa 3D (formato di file GLB, OBJ o STL) per visualizzarla nella pagina Dettagli.
 1. Sulla barra degli strumenti, tocca **[!UICONTROL Pubblicazione rapida]**.
