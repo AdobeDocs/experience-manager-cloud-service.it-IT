@@ -2,14 +2,13 @@
 title: Best practice per organizzare le risorse digitali per l’utilizzo dei profili immagine o video di Dynamic Media
 description: '"Suggerimenti e best practice per la denominazione, l’organizzazione e la gestione dei file di immagini e delle risorse video di Dynamic Media."'
 contentOwner: Rick Brough
-feature: Asset Management,Image Profiles,Video Profiles
-topic: Business Practitioner
+feature: Gestione Delle Risorse, Profili Immagine, Profili Video
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
