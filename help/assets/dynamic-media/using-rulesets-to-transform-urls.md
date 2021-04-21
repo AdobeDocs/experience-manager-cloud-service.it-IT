@@ -1,16 +1,15 @@
 ---
 title: Utilizzo di set di regole per la trasformazione degli URL
 description: Scopri come distribuire i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript™) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 6%
+source-wordcount: '766'
+ht-degree: 5%
 
 ---
-
 
 # Utilizzo dei set di regole per la trasformazione degli URL {#using-rulesets-to-transform-urls}
 
@@ -81,4 +80,3 @@ Vedi anche [Uso dell&#39;immagine &quot;asset&quot; invece di &quot;is&quot; in 
    Le condizioni del set di regole vengono applicate alle richieste ai server di immagini Dynamic Media live.
 
    Se modifichi il file del set di regole, le modifiche vengono applicate immediatamente quando ricarichi e ripubblichi il file del set di regole aggiornato.
-
