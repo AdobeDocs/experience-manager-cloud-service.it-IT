@@ -2,16 +2,16 @@
 title: Profili metadati
 description: Informazioni sui profili di metadati per le risorse. Scopri come creare un profilo di metadati e applicarlo alle risorse delle cartelle.
 contentOwner: AG
-feature: Metadata
+feature: Metadati
 role: Business Practitioner,Administrator
+exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 7ad68c071d9a4089ec8612a3c55067dc0b072fc8
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1236'
 ht-degree: 20%
 
 ---
-
 
 # Profili metadati {#metadata-profiles}
 
@@ -63,13 +63,11 @@ Modifica le seguenti proprietà per il componente **[!UICONTROL Descrizione]** :
 
 ## Applicare un profilo di metadati alle cartelle {#applying-a-metadata-profile-to-folders}
 
-Quando assegni un profilo di metadati a una cartella, tutte le sottocartelle ereditano automaticamente il profilo dalla relativa cartella padre. Ciò significa che puoi assegnare un solo profilo di metadati a una cartella. Considera attentamente la struttura delle cartelle in cui caricare, archiviare, utilizzare e archiviare le risorse.
+Quando assegni un profilo di metadati a una cartella, tutte le sottocartelle ereditano automaticamente il profilo dalla relativa cartella padre. L’ereditarietà si interrompe quando un profilo diverso viene applicato a una sottocartella. Puoi assegnare un solo profilo di metadati a una cartella. Considera quindi attentamente la struttura delle cartelle in cui caricare, archiviare, utilizzare e archiviare le risorse.
 
-Se hai assegnato un profilo di metadati diverso a una cartella, il nuovo profilo sostituisce il profilo precedente. Le risorse della cartella esistenti in precedenza rimangono invariate. Il nuovo profilo viene applicato alle risorse aggiunte successivamente alla cartella.
+Se hai assegnato un profilo di metadati diverso a una cartella, il nuovo profilo sostituisce il profilo precedente. Le risorse della cartella esistenti in precedenza rimangono invariate. Il nuovo profilo viene applicato alle risorse aggiunte alla cartella dopo la modifica. Puoi applicare i profili di metadati a cartelle specifiche o globalmente a tutte le risorse.
 
 Le cartelle a cui è assegnato un profilo sono indicate nell&#39;interfaccia utente in base al nome del profilo visualizzato nel nome della scheda.
-
-Puoi applicare i profili di metadati a cartelle specifiche o globalmente a tutte le risorse.
 
 Puoi rielaborare le risorse in una cartella che dispone già di un profilo di metadati esistente che hai successivamente modificato. <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
