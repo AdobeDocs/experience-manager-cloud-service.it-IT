@@ -1,17 +1,16 @@
 ---
 title: Annullamento della validità della cache CDN tramite Dynamic Media Classic
 description: '"Scopri come annullare la validità della rete CDN (Content Delivery Network) memorizzata nella cache per consentirti di aggiornare rapidamente le risorse consegnate da Dynamic Media, anziché attendere la scadenza della cache."'
-feature: Asset Management,Dynamic Media Classic
-topic: Business Practitioner
+feature: Gestione risorse, Dynamic Media Classic
 role: Administrator,Business Practitioner
+exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '688'
 ht-degree: 14%
 
 ---
-
 
 # Annullamento della validità della cache CDN tramite Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
@@ -62,4 +61,3 @@ Vedi anche [Panoramica sulla cache in Dynamic Media Classic](https://helpx.adobe
    >Quando selezioni le risorse e poi tocca **[!UICONTROL File > Annulla validità CDN]**, Dynamic Media utilizza un modello CDN non valido per creare automaticamente gli URL da annullare la validità dalla CDN. Se nella casella di testo **[!UICONTROL Modello di annullamento validità CDN]** non è presente alcun elemento, viene visualizzato un elenco URL vuoto. La memorizzazione nella cache della rete CDN non è basata su risorse, bensì su URL. Pertanto, è necessario conoscere gli URL completi presenti sul tuo sito web. Dopo aver determinato questi URL, puoi aggiungerli alla casella di testo **[!UICONTROL Invalidate CDN Template (Annulla validità modello CDN)]** descritta nei passaggi precedenti. A questo punto puoi selezionare queste risorse e annullare la validità degli URL, tutto in un unico passaggio.
    >
    >Un&#39;altra opzione è quella di aggiungere URL completi all&#39;elenco **[!UICONTROL Annulla validità CDN]**. Se segui questo approccio, non è necessario selezionare le risorse in Dynamic Media Classic prima di passare all’opzione **[!UICONTROL File > Annulla validità CDN]** .
-
