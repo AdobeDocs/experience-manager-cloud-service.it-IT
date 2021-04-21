@@ -2,17 +2,16 @@
 title: Best practice per ottimizzare la qualità delle immagini
 description: Scopri le best practice che puoi utilizzare in Dynamic Media per ottimizzare la qualità delle risorse di immagini.
 contentOwner: Rick Brough
-feature: Asset Management
-topic: Business Practitioner
+feature: Gestione risorse
 role: Business Practitioner
+exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1454'
 ht-degree: 5%
 
 ---
-
 
 # Best practice per ottimizzare la qualità delle immagini {#best-practices-for-optimizing-the-quality-of-your-images}
 
@@ -125,4 +124,3 @@ Durante l’esperimento, i seguenti suggerimenti generali sono utili per ottimiz
 * Prova e verifica parametri diversi in tempo reale, direttamente su un URL.
 * Come best practice, ricorda che puoi raggruppare i comandi di Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è fondamentalmente macro di comando URL con nomi predefiniti personalizzati come `$thumb_low$` e `&product_high$`. Il nome predefinito personalizzato in un percorso URL chiama questi predefiniti. Tali funzionalità consentono di gestire i comandi e le impostazioni di qualità per diversi schemi di utilizzo delle immagini sul sito web e di ridurre la lunghezza complessiva degli URL.
 * Experience Manager offre inoltre modalità più avanzate per ottimizzare la qualità delle immagini, ad esempio applicando la nitidezza delle immagini durante l’acquisizione. Per ottimizzare i risultati del rendering, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) può aiutarti con informazioni personalizzate e best practice.
-
