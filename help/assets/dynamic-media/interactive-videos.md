@@ -1,14 +1,13 @@
 ---
 title: Video interattivi
 description: Scopri come lavorare con video interattivi e video acquistabili in Dynamic Media.
-feature: Interactive Videos
-topic: Business Practitioner
+feature: Video interattivi
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '6066'
+source-wordcount: '6064'
 ht-degree: 4%
 
 ---
