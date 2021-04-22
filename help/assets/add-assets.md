@@ -1,13 +1,13 @@
 ---
 title: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager].
 description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
-feature: Asset Management,Upload
+feature: Gestione risorse,Caricare
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
+source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2067'
 ht-degree: 1%
 
 ---
@@ -216,7 +216,7 @@ I dettagli tecnici delle API e del protocollo di caricamento, nonché i collegam
 
 * Il caricamento binario diretto è un nuovo metodo per caricare le risorse. È supportato per impostazione predefinita dalle funzionalità e dai client del prodotto, come l’ [!DNL Experience Manager] interfaccia utente, [!DNL Adobe Asset Link] e l’ [!DNL Experience Manager] app desktop. Qualsiasi codice personalizzato personalizzato personalizzato o esteso dai team tecnici dei clienti deve utilizzare le nuove API e i nuovi protocolli di caricamento.
 
-* Adobe consiglia di aggiungere fino a 1000 risorse in ogni cartella in [!DNL Experience Manager Assets]. Anche se è possibile aggiungere più risorse a una cartella, è possibile che si verifichino problemi di prestazioni quali la navigazione più lenta a tali cartelle.
+* Adobe consiglia di aggiungere non più di 1000 risorse in ciascuna cartella in [!DNL Experience Manager Assets]. Anche se è possibile aggiungere più risorse a una cartella, è possibile che si verifichino problemi di prestazioni, ad esempio una navigazione più lenta a tali cartelle.
 
 * Quando selezioni **[!UICONTROL Sostituisci]** nella finestra di dialogo [!UICONTROL Conflitto nome], l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente. Se [Asset Insights](/help/assets/assets-insights.md) è abilitato per tracciare impression o clic con [!DNL Adobe Analytics], l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa in [!DNL Analytics].
 
