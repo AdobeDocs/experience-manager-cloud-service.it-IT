@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ La complessità delle dipendenze all’interno dello stack diventa rapidamente e
 
 ## Limiti di consegna full-stack {#limits}
 
-L’approccio completo dello stack crea intrinsecamente un silo in cui tutte le esperienze arrivano in un unico sistema. I cambiamenti o le aggiunte a un livello del silo richiedono modifiche ad altri livelli, rendendo i cambiamenti ad alta intensità di tempo e costosi.
+L’approccio completo dello stack crea intrinsecamente un silo in cui tutte le esperienze arrivano in un unico sistema. Le modifiche o le aggiunte componenti del silo richiedono modifiche di altri componenti che richiedono modifiche che richiedono un tempo intensivo e costoso.
 
 Questo vale in particolare per il livello di presentazione, che nei sistemi tradizionali è spesso strettamente legato al CMS. Qualsiasi nuovo canale in genere significa un aggiornamento del livello di presentazione, che interessa tutti gli altri canali.
 
@@ -80,7 +80,7 @@ La distribuzione headless è possibile esponendo un set di API affidabili e fles
 
 Headless è un esempio di scollamento del contenuto dalla presentazione. O in senso più generico, disaccoppiando il front end dal back end della pila di servizi. In una configurazione headless, il livello di presentazione (la testa) viene scollegato dalla gestione dei contenuti (la coda). I due interagiscono solo tramite chiamate API.
 
-Questo disaccoppiamento consente a ogni servizio che consuma (front-end) di creare la propria esperienza in base allo stesso contenuto distribuito tramite le API, garantendo il riutilizzo e la coerenza dei contenuti. I servizi di consumo possono quindi implementare i propri livelli di presentazione, consentendo al livello di gestione dei contenuti (back-end) di scalare facilmente in orizzontale.
+Questo disaccoppiamento consente a ogni servizio che consuma (front-end) di creare la propria esperienza in base allo stesso contenuto distribuito tramite le API, garantendo il riutilizzo e la coerenza dei contenuti. I servizi di consumo possono quindi implementare i propri livelli di presentazione, consentendo la scalabilità orizzontale dello stack di gestione dei contenuti (back-end).
 
 ## Sostanze tecnologiche {#technology}
 
