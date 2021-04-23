@@ -3,9 +3,9 @@ title: Attività di manutenzione in AEM come Cloud Service
 description: Attività di manutenzione in AEM come Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
+source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -55,11 +55,11 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <td>Giornaliero</td>
     <td>Cliente</td>
     <td>Definizione del nodo JCR</td>
-    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
+    <td>Vedi la posizione 1 di seguito</td>
     <td>Vedi il codice di esempio 1 di seguito</td>
-  <td><p><code>windowSchedule= daily</code></p> (questo valore non deve essere modificato)
-  <p><code>windowStartTime= HH:MM</code> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite.</p>
-  <p><code>windowEndTime= HH:MM</code> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l'esecuzione se non sono già state completate.</p>
+  <td><p><strong>windowSchedule= daily</strong></p> (questo valore non deve essere modificato)
+  <p><strong>windowStartTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite.</p>
+  <p><strong>windowEndTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l'esecuzione se non sono già state completate.</p>
   </td> 
   </tr>
   <tr>
