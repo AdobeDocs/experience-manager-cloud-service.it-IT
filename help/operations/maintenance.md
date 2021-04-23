@@ -3,9 +3,9 @@ title: Attività di manutenzione in AEM come Cloud Service
 description: Attività di manutenzione in AEM come Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
+source-git-commit: c7e954e3ed49d6189d050b2c33c04a9266853758
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '919'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
 | Svuotamento flusso di lavoro | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione predefinita in  `/libs` creando proprietà nella `/apps/settings/granite/operations/maintenance/granite_weekly` cartella  `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. <br> Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominalo  `granite_WorkflowPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI consulta la documentazione relativa all’attività di manutenzione  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | Eliminazione progetti | Cliente | Deve essere fatto in github. <br> Ignora il nodo di configurazione della finestra Manutenzione predefinita in  `/libs` creando proprietà sotto la cartella  `/apps/settings/granite/operations/maintenance/granite_weekly` o  `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. <br> Abilita l’attività di manutenzione aggiungendo un nodo sotto il nodo precedente (denominalo  `granite_ProjectPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI consulta la documentazione relativa all’attività di manutenzione  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-I clienti possono pianificare ciascuna delle attività di eliminazione del flusso di lavoro, eliminazione delle attività ad hoc e manutenzione dell’eliminazione dei progetti da eseguire durante le finestre di manutenzione giornaliere, settimanali o mensili. Queste configurazioni devono essere modificate direttamente nel controllo del codice sorgente. La tabella seguente descrive i parametri di configurazione disponibili per ciascuna finestra.
+I clienti possono pianificare ciascuna delle attività di eliminazione del flusso di lavoro, eliminazione delle attività ad hoc e manutenzione dell’eliminazione dei progetti da eseguire durante le finestre di manutenzione giornaliere, settimanali o mensili. Queste configurazioni devono essere modificate direttamente nel controllo del codice sorgente. La tabella seguente descrive i parametri di configurazione disponibili per ciascuna finestra. Inoltre, vedi le posizioni e gli esempi di codice forniti dopo la tabella.
 
 <table>
  <tbody>
@@ -85,15 +85,15 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     </tbody>
 </table>
 
-Posizioni:
+**Posizioni**:
 
-1. /apps/settings/granite/operations/maintenance/granite_daily
-2. /apps/settings/granite/operations/maintenance/granite_weekly
-3. /apps/settings/granite/operations/maintenance/granite_month
+* Giornaliero - /apps/settings/granite/operations/maintenance/granite_daily
+* Settimanale - /apps/settings/granite/operations/maintenance/granite_weekly
+* Mensile - /apps/settings/granite/operations/maintenance/granite_month
 
-Esempi di codice:
+**Esempi** di codice:
 
-Esempio di codice 1
+Esempio di codice 1 (giornaliero)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -108,7 +108,7 @@ Esempio di codice 1
  />
 ```
 
-Esempio di codice 2
+Esempio di codice 2 (settimanale)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -123,7 +123,7 @@ Esempio di codice 2
    windowStartTime="14:30"/>
 ```
 
-Esempio di codice 3
+Esempio di codice 3 (mensile)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
