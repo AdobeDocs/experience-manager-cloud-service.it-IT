@@ -3,7 +3,7 @@ title: Attività di manutenzione in AEM come Cloud Service
 description: Attività di manutenzione in AEM come Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: df44a73b71c26cc9c6488fac14edba5d898eba2f
+source-git-commit: 068ae08fddd482e4367b4bf1c8cc3776bbb4cc6b
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 1%
@@ -54,9 +54,9 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <td>Cliente</td>
     <td>Definizione del nodo JCR</td>
   <td>
-  <p><strong>windowSchedule= daily</strong>  (questo valore non deve essere modificato)</p>
-  <p><strong>windowStartTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite.</p>
-  <p><strong>windowEndTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l'esecuzione se non sono già state completate.</p>
+  <p><strong>windowSchedule=daily</strong>  (questo valore non deve essere modificato)</p>
+  <p><strong>windowStartTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite.</p>
+  <p><strong>windowEndTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l'esecuzione se non sono già state completate.</p>
   </td> 
   </tr>
   <tr>
@@ -64,9 +64,9 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <td>Cliente</td>
     <td>Definizione del nodo JCR</td>
     <td>
-    <p><strong>windowSchedule= settimanale</strong>  (questo valore non deve essere modificato)</p>
-    <p><strong>windowStartTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra di manutenzione settimanale devono iniziare a essere eseguite.</p>
-    <p><strong>windowEndTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono interrompere l'esecuzione se non sono già state completate.</p>
+    <p><strong>windowSchedule=weekly</strong>  (questo valore non deve essere modificato)</p>
+    <p><strong>windowStartTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra di manutenzione settimanale devono iniziare a essere eseguite.</p>
+    <p><strong>windowEndTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono interrompere l'esecuzione se non sono già state completate.</p>
     <p><strong>windowScheduleWeekdays= Array di 2 valori da 1 a 7 (ad esempio [5,5])</strong> Il primo valore dell'array è il giorno di inizio in cui il processo viene pianificato e il secondo valore è il giorno di fine in cui il processo viene interrotto. L'ora esatta dell'inizio e della fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
     </td>
   </tr>
@@ -75,10 +75,10 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <td>Cliente</td>
     <td>Definizione del nodo JCR</td>
     <td>
-    <p><strong>windowSchedule= daily</strong>  (questo valore non deve essere modificato)</p>
-    <p><strong>windowStartTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono iniziare a essere eseguite.</p>
-    <p><strong>windowEndTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono interrompere l'esecuzione se non sono già state completate.</p>
-    <p><strong>windowScheduleWeekdays = Array di 2 valori da 1 a 7 (ad esempio [5,5])</strong> Il primo valore dell'array è il giorno di inizio in cui il processo viene pianificato e il secondo valore è il giorno di fine in cui il processo viene interrotto. L'ora esatta dell'inizio e della fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
+    <p><strong>windowSchedule=daily</strong>  (questo valore non deve essere modificato)</p>
+    <p><strong>windowStartTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono iniziare a essere eseguite.</p>
+    <p><strong>windowEndTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono interrompere l'esecuzione se non sono già state completate.</p>
+    <p><strong>windowScheduleWeekdays=Array di 2 valori da 1 a 7 (ad esempio [5,5])</strong> Il primo valore dell'array è il giorno di inizio in cui il processo viene pianificato e il secondo valore è il giorno di fine in cui il processo viene interrotto. L'ora esatta dell'inizio e della fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 per pianificare la prima settimana del mese o 1 per l'ultima settimana del mese. L'assenza di un valore consente di pianificare in modo efficace i processi ogni giorno secondo le regole di windowScheduleWeekdays ogni mese.</p>
     </td> 
     </tr>
