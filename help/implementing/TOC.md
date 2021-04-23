@@ -6,10 +6,10 @@ user-guide-description: Questa guida spiega come personalizzare l’implementazi
 feature: Strumenti per gli sviluppatori
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: eb404db0cf45bf2ef5003c6e4c07c29758c8166b
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 36%
+source-wordcount: '969'
+ht-degree: 33%
 
 ---
 
@@ -73,6 +73,18 @@ ht-degree: 36%
    + [Fondamenti tecnici AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [API di AEM as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Generazione dei token di accesso per le API lato server](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + Percorso di sviluppatori headless {#headless-journey}
+      + [Capire senza testa in AEM](developing/headless-journey/overview.md)
+      + [Scopri lo sviluppo headless di CMS](developing/headless-journey/learn-about.md)
+      + [Guida introduttiva AEM Headless come Cloud Service](developing/headless-journey/getting-started.md)
+      + [Percorso della tua prima esperienza con AEM Headless](developing/headless-journey/path-to-first-experience.md)
+      + [Come modellare il contenuto come modelli di contenuto AEM](developing/headless-journey/model-your-content.md)
+      + [Come accedere ai contenuti tramite API di consegna AEM](developing/headless-journey/access-your-content.md)
+      + [Come aggiornare il contenuto tramite API di risorse AEM](developing/headless-journey/update-your-content.md)
+      + [Come mettere tutto insieme](developing/headless-journey/put-it-all-together.md)
+      + [Come vivere con la tua applicazione headless](developing/headless-journey/go-live.md)
+      + [Post-lancio](developing/headless-journey/post-launch.md)
+      + [Facoltativo - Come creare applicazioni a pagina singola con AEM](developing/headless-journey/create-spa.md)
    + [Cefalea e senza testa in AEM](developing/headful-headless.md)
    + Sviluppo AEM stack completo {#full-stack}
       + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](developing/introduction/develop-wknd-tutorial.md)
