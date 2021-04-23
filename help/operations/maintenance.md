@@ -3,10 +3,10 @@ title: Attività di manutenzione in AEM come Cloud Service
 description: Attività di manutenzione in AEM come Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
+source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 2%
+source-wordcount: '902'
+ht-degree: 1%
 
 ---
 
@@ -47,16 +47,12 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <th>Configurazione della finestra di manutenzione</th>
     <th>A chi appartiene la configurazione</th>
     <th>Tipo di configurazione</th>
-    <th>Dove si trova</th>
-    <th>Esempio</th>
     <th>Parametri</th>
   </tr>
   <tr>
     <td>Giornaliero</td>
     <td>Cliente</td>
     <td>Definizione del nodo JCR</td>
-    <td>1</td>
-    <td>3</td>
   <td>
   <p><strong>windowSchedule= daily</strong>  (questo valore non deve essere modificato)</p>
   <p><strong>windowStartTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite.</p>
@@ -67,8 +63,6 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <td>Settimanale</td>
     <td>Cliente</td>
     <td>Definizione del nodo JCR</td>
-    <td>Vedi la posizione 2 di seguito</td>
-    <td>Vedi il codice di esempio 2 di seguito</td>
     <td>
     <p><strong>windowSchedule= settimanale</strong>  (questo valore non deve essere modificato)</p>
     <p><strong>windowStartTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra di manutenzione settimanale devono iniziare a essere eseguite.</p>
@@ -80,8 +74,6 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <td>Mensile</td>
     <td>Cliente</td>
     <td>Definizione del nodo JCR</td>
-    <td>Vedi la posizione 3 di seguito</td>
-    <td>Vedi il codice di esempio 3 di seguito</td>
     <td>
     <p><strong>windowSchedule= daily</strong>  (questo valore non deve essere modificato)</p>
     <p><strong>windowStartTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono iniziare a essere eseguite.</p>
