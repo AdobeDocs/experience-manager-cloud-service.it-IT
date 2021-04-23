@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >LAVORO IN CORSO - La creazione di questo documento è in corso e non deve essere inteso come completo o definitivo né deve essere utilizzato a fini di produzione.
 
-In questa continuazione opzionale del [AEM Percorso di sviluppo headless,](#overview.md) scopri come AEM combinare la consegna headless con le tradizionali funzioni CMS full-stack e come creare SPA modificabili utilizzando AEM framework dell’editor di SPA, nonché integrare SPA esterni, abilitando le funzionalità di modifica in base alle esigenze.
+In questa continuazione opzionale del [AEM Percorso di sviluppo headless,](overview.md) scopri come AEM combinare la consegna headless con le tradizionali funzioni CMS full-stack e come creare SPA modificabili utilizzando AEM framework dell’editor di SPA, nonché integrare SPA esterni, abilitando le funzionalità di modifica in base alle esigenze.
 
 ## La storia finora {#story-so-far}
 
