@@ -3,9 +3,9 @@ title: Attività di manutenzione in AEM come Cloud Service
 description: Attività di manutenzione in AEM come Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
+source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '914'
 ht-degree: 2%
 
 ---
@@ -42,6 +42,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
 I clienti possono pianificare ciascuna delle attività di eliminazione del flusso di lavoro, eliminazione delle attività ad hoc e manutenzione dell’eliminazione dei progetti da eseguire durante le finestre di manutenzione giornaliere, settimanali o mensili. Queste configurazioni devono essere modificate direttamente nel controllo del codice sorgente. La tabella seguente descrive i parametri di configurazione disponibili per ciascuna finestra.
 
 <table>
+ <tbody>
   <tr>
     <th>Configurazione della finestra di manutenzione</th>
     <th>A chi appartiene la configurazione</th>
@@ -54,12 +55,11 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <td>Giornaliero</td>
     <td>Cliente</td>
     <td>Definizione del nodo JCR</td>
-    <td>Vedi la posizione 1 di seguito</td>
+    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
     <td>Vedi il codice di esempio 1 di seguito</td>
-  <td>
-  <strong>windowSchedule= daily</strong>  (questo valore non deve essere modificato) 
-  <strong>windowStartTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite.
-  <strong>windowEndTime= HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l'esecuzione se non sono già state completate.
+  <td><p><code>windowSchedule= daily</code></p> (questo valore non deve essere modificato)
+  <p><code>windowStartTime= HH:MM</code> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite.</p>
+  <p><code>windowEndTime= HH:MM</code> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l'esecuzione se non sono già state completate.</p>
   </td> 
   </tr>
   <tr>
@@ -89,6 +89,7 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <strong>windowFirstLastStartDay= 0/1</strong> 0 per pianificare la prima settimana del mese o 1 per l'ultima settimana del mese. L'assenza di un valore consente di pianificare in modo efficace i processi ogni giorno secondo le regole di windowScheduleWeekdays ogni mese.
     </td> 
     </tr>
+    </tbody>
 </table>
 
 Posizioni:
