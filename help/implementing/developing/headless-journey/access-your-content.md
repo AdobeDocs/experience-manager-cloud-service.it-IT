@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >LAVORO IN CORSO - La creazione di questo documento è in corso e non deve essere inteso come completo o definitivo né deve essere utilizzato a fini di produzione.
 
-In questa parte del [AEM Percorso di sviluppatori headless,](#overview.md) scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
+In questa parte del [AEM Percorso di sviluppatori headless,](overview.md) scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
 
 ## La storia finora {#story-so-far}
 
