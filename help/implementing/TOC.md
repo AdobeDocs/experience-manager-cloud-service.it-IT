@@ -6,7 +6,7 @@ user-guide-description: Questa guida spiega come personalizzare l’implementazi
 feature: Strumenti per gli sviluppatori
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: f0357bb2b19d7d44066bf868c3ea3ce0dcf42461
+source-git-commit: 77668ff0937c2af24d73da7f8d6b3c8956acb350
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 33%
@@ -168,7 +168,7 @@ ht-degree: 33%
    + [Plug-in Maven del pacchetto di contenuti](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [Utilizzo di CRXDE Lite](/help/implementing/developing/tools/crxde.md)
-   + [L&#39;esternalizzatore del link](/help/implementing/developing/tools/externalizer.md)
+   + [Esternalizzatore del collegamento](/help/implementing/developing/tools/externalizer.md)
 + Personalizzazione {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configurazione di ContextHub](developing/personalization/configuring-contexthub.md)
