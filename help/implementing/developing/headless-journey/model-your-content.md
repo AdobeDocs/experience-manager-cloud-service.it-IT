@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 5fd190b50f52a3182365a31e1539c5864f42afb4
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 2%
+source-wordcount: '1671'
+ht-degree: 1%
 
 ---
 
@@ -244,6 +244,7 @@ Ora che hai imparato a modellare la tua struttura e a creare contenuti a seconda
 
 ## Risorse aggiuntive {#additional-resources}
 
+* [Guida introduttiva a AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) : breve serie di esercitazioni video che offre una panoramica dell’utilizzo di AEM funzioni headless, tra cui la modellazione dei dati e GraphQL
 * [Utilizzo dei frammenti](/help/assets/content-fragments/content-fragments.md)  di contenuto: pagina iniziale per i frammenti di contenuto
    * [Frammenti di contenuto nel browser](/help/assets/content-fragments/content-fragments-configuration-browser.md)  di configurazione: abilitare la funzionalità Frammento di contenuto nel browser di configurazione
    * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) : creazione e modifica di modelli per frammenti di contenuto
