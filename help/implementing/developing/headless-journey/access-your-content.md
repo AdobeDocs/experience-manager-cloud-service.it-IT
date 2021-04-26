@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '764'
 ht-degree: 2%
 
 ---
@@ -130,6 +130,7 @@ Per semplificare la progettazione e lo sviluppo dei modelli di frammenti di cont
 
 ## Risorse aggiuntive {#additional-resources}
 
+* [Guida introduttiva a AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) : breve serie di esercitazioni video che offre una panoramica dell’utilizzo di AEM funzioni headless, tra cui la modellazione dei dati e GraphQL
 * [GraphQL.org](https://graphql.org)
    * [Schemi](https://graphql.org/learn/schema/)
    * [Librerie Java GraphQL](https://graphql.org/code/#java)
