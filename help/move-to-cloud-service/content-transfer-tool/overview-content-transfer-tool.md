@@ -1,16 +1,23 @@
 ---
 title: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
 description: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
+exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 94%
+source-wordcount: '813'
+ht-degree: 79%
 
 ---
 
-
 # Panoramica {#overview-content-transfer-tool}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_overview"
+>title="Panoramica"
+>abstract="Lo strumento Content Transfer (Trasferimento contenuti) è uno strumento sviluppato da Adobe che può essere utilizzato per spostare il contenuto esistente da un’istanza di AEM di origine (on-premise o AMS) all’istanza di Cloud Service AEM di destinazione. Questo strumento trasferisce automaticamente anche entità principali (utenti o gruppi)."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Processo di estrazione"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Processo di acquisizione"
 
 Lo strumento Content Transfer (Trasferimento contenuti) è uno strumento sviluppato da Adobe che può essere utilizzato per spostare i contenuti esistenti da un’istanza AEM di origine (on-premise o AMS) all’istanza AEM Cloud Service di destinazione.
 
@@ -24,7 +31,7 @@ Il trasferimento dei contenuti prevede due fasi:
 
 >[!NOTE]
 >
-> Si consiglia di eseguire lo strumento di mappatura utenti come parte della fase di estrazione. Per ulteriori informazioni, fare riferimento a [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
+> Si consiglia di eseguire lo strumento di mappatura utente come parte della fase di estrazione. Per ulteriori informazioni, consulta [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) .
 
 1. **Acquisizione**: per acquisizione si intende l’acquisizione dei contenuti dal *set di migrazione* nell’istanza Cloud Service di destinazione.
 
@@ -49,6 +56,12 @@ Nella fase di acquisizione, per applicare il contenuto delta sul contenuto corre
 
 
 ## Linee guida e best practice {#best-practices}
+
+>id=&quot;aemcloud_ctt_Guidelines&quot;
+>title=&quot;Linee guida e best practice&quot;
+>abstract=&quot;Rivedi le linee guida e le best practice per utilizzare lo strumento Content Transfer (Trasferimento contenuti), incluse le attività di pulizia revisioni, considerazioni sullo spazio su disco e altro ancora.&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs&quot; text=&quot;Considerazioni importanti sull’utilizzo dello strumento Content Transfer&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations&quot; text=&quot;Considerazioni importanti sull&#39;utilizzo dello strumento di mappatura utenti&quot;
 
 Leggi la sezione seguente per comprendere le linee guida e le best practice per utilizzare lo strumento Content Transfer (Trasferimento contenuti):
 
