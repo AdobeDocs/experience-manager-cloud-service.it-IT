@@ -1,18 +1,26 @@
 ---
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
+exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 translation-type: tm+mt
-source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1185'
 ht-degree: 3%
 
 ---
 
-
 # Utilizzo dello strumento di mappatura utente {#user-mapping-tool}
 
 ## Panoramica {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_usermapping"
+>title="Strumento di mappatura utente"
+>abstract="Lo strumento Content Transfer (Trasferimento contenuti) consente di spostare gli utenti e i gruppi dal sistema AEM esistente a AEM come Cloud Service. Gli utenti e i gruppi esistenti devono essere mappati ai loro ID IMS per evitare utenti e gruppi duplicati nell’istanza di authoring del Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Considerazioni importanti sull’utilizzo dello strumento di mappatura utente"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Utilizzo dello strumento di mappatura utente"
+
 
 Come parte del percorso di transizione verso Adobe Experience Manager (AEM) come Cloud Service, devi spostare utenti e gruppi dal sistema di AEM esistente a AEM come Cloud Service. Questa operazione viene eseguita dallo strumento Content Transfer (Trasferimento contenuti).
 
@@ -102,4 +110,3 @@ Lo strumento di mappatura utente è integrato nello strumento Content Transfer (
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Per eseguire la fase di estrazione, fai riferimento a [Esecuzione dello strumento Content Transfer (Trasferimento contenuti)](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
-
