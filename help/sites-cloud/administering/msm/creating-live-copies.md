@@ -1,13 +1,13 @@
 ---
 title: Creazione e sincronizzazione di Live Copy
 description: Scopri come creare e sincronizzare Live Copy per riutilizzare i contenuti in tutto il sito.
-feature: Multi Site Manager
+feature: Gestione di più siti
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
+source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4277'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,15 @@ Dopo aver creato la configurazione blueprint, configura le seguenti proprietà:
 
 Quando utilizzi la configurazione blueprint, puoi associarla a una configurazione di rollout che determina la modalità di sincronizzazione delle Live Copy dell’origine/blueprint. Consulta [Specifica delle configurazioni di rollout da utilizzare](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
-### Creazione di una configurazione Blueprint {#creating-a-blueprint-configuration}
+### Creazione e modifica di configurazioni Blueprint {#creating-editing-blueprint-configurations}
+
+Le configurazioni Blueprint sono considerate dati immutabili e come tali non sono modificabili in fase di runtime. Per questo motivo, qualsiasi modifica alla configurazione deve essere implementata tramite Git utilizzando la pipeline CI/CD.
+
+Ulteriori informazioni sono disponibili nell&#39;articolo [Modifiche di rilievo apportate a Adobe Experience Manager (AEM) come Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+
+I passaggi seguenti sono disponibili per un amministratore in un’istanza di sviluppo locale solo a scopo di test e sviluppo. Queste opzioni non sono disponibili in alcuna istanza cloud AEMaaCS.
+
+#### Creazione di una configurazione Blueprint localmente {#creating-a-blueprint-configuration}
 
 Per creare una configurazione blueprint:
 
@@ -61,7 +69,7 @@ Per creare una configurazione blueprint:
 
 1. **** La creazione creerà la configurazione blueprint in base alle tue specifiche.
 
-### Modifica o eliminazione di una configurazione Blueprint {#editing-or-deleting-a-blueprint-configuration}
+### Modifica o eliminazione di una configurazione Blueprint localmente{#editing-or-deleting-a-blueprint-configuration}
 
 Puoi modificare o eliminare una configurazione blueprint esistente:
 
