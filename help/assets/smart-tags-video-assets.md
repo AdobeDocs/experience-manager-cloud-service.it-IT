@@ -1,16 +1,16 @@
 ---
 title: Assegnare tag avanzati alle risorse video
 description: Experience Manager aggiunge automaticamente tag avanzati contestuali e descrittivi ai video utilizzando [!DNL Adobe Sensei].
-feature: Smart Tags,Tagging
+feature: Tag avanzati, assegnazione tag
 role: Administrator,Business Practitioner
+exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
-
 
 # Assegnare tag avanzati alle risorse video {#video-smart-tags}
 
@@ -64,7 +64,7 @@ Per cercare le risorse video in base agli smart tag generati automaticamente, ut
 
 I risultati della ricerca visualizzano le risorse video in base al tag specificato.
 
-I risultati della ricerca sono una combinazione di risorse video con parole chiave cercate nei metadati e risorse video con tag avanzati con le parole chiave cercate. Tuttavia, i risultati di ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati di ricerca che corrispondono a qualsiasi termine di ricerca negli smart tag. Per ulteriori informazioni, consulta [Comprendere [!DNL Experience Manager] i risultati della ricerca con tag avanzati](smart-tags.md#understandsearch).
+I risultati della ricerca sono una combinazione di risorse video con parole chiave cercate nei metadati e risorse video con tag avanzati con le parole chiave cercate. Tuttavia, i risultati di ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati di ricerca che corrispondono a qualsiasi termine di ricerca negli smart tag. Per ulteriori informazioni, consulta [Comprendere [!DNL Experience Manager] i risultati della ricerca con tag avanzati](smart-tags.md#understand-search).
 
 ## Tag video avanzati moderati {#moderate-video-smart-tags}
 
