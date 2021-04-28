@@ -1,13 +1,14 @@
 ---
-title: Assegnare tag automatici alle risorse con tag generati dall’intelligenza artificiale
-description: Assegna tag alle risorse utilizzando servizi intelligenti artificialmente che applicano tag aziendali contestuali e descrittivi utilizzando il servizio  [!DNL Adobe Sensei] .
+title: Assegnare tag automatici alle risorse con  [!DNL Adobe Sensei] servizio avanzato
+description: Assegna tag alle risorse un servizio intelligente artificialmente che applica tag aziendali contestuali e descrittivi.
 contentOwner: AG
-feature: Smart Tags,Tagging
+feature: Tag avanzati, assegnazione tag
 role: Administrator,Business Practitioner
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2709'
 ht-degree: 6%
 
 ---
@@ -19,21 +20,19 @@ Le organizzazioni che si occupano di risorse digitali utilizzano sempre più voc
 
 Rispetto ai vocabolari linguistici naturali, l’assegnazione di tag basati sulla tassonomia aziendale consente di allineare le risorse al business di un’azienda e garantisce che le risorse più rilevanti vengano visualizzate nelle ricerche. Ad esempio, un produttore di automobili può assegnare tag alle immagini di un&#39;automobile con nomi di modello in modo che vengano visualizzate solo le immagini pertinenti quando viene eseguita una ricerca per progettare una campagna promozionale.
 
-In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) per addestrare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e sulla tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse.
+In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) per addestrare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e sulla tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Per impostazione predefinita, le nuove distribuzioni [!DNL Experience Manager Assets] sono integrate con [!DNL Adobe Developer Console] . Consente di configurare più rapidamente la funzionalità dei tag avanzati. Nelle implementazioni precedenti, gli amministratori possono configurare manualmente [l&#39;integrazione di tag avanzati](/help/assets/smart-tags-configuration.md#aio-integration).
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-Puoi assegnare i tag ai seguenti tipi di risorse:
-
-* **Immagini**: Le immagini in molti formati vengono taggate utilizzando i servizi di contenuti avanzati di Adobe Sensei. Si [crea un modello di formazione](#train-model) e quindi [si applicano tag avanzati](#tag-assets) alle immagini.
-* **Risorse** video: L’assegnazione tag video è abilitata per impostazione predefinita in  [!DNL Adobe Experience Manager] come  [!DNL Cloud Service]. [I video vengono contrassegnati automaticamente ](/help/assets/smart-tags-video-assets.md) quando carichi nuovi video o rielabori quelli esistenti.
-* **Risorse** basate su testo:  [!DNL Experience Manager Assets] assegna automaticamente i tag alle risorse basate su testo supportate al momento del caricamento. Ulteriori informazioni sull’ [assegnazione tag alle risorse basate su testo](#smart-tag-text-based-assets).
-
 ## Tipi di risorse supportati {#smart-tags-supported-file-formats}
 
-I tag avanzati vengono applicati ai tipi di file supportati che generano rappresentazioni in formato JPG e PNG. La funzionalità è supportata per i seguenti tipi di risorse:
+Puoi assegnare i tag ai seguenti tipi di risorse:
+
+* **Immagini**: Le immagini in molti formati vengono taggate utilizzando i servizi di contenuti avanzati di Adobe Sensei. Si [crea un modello di formazione](#train-model) e quindi [si applicano tag avanzati](#tag-assets) alle immagini. I tag avanzati vengono applicati ai tipi di file supportati che generano rappresentazioni in formato JPG e PNG.
+* **Risorse** basate su testo:  [!DNL Experience Manager Assets] assegna automaticamente i tag alle risorse basate su testo supportate al momento del caricamento. Ulteriori informazioni sull’ [assegnazione tag alle risorse basate su testo](#smart-tag-text-based-assets).
+* **Risorse** video: L’assegnazione tag video è abilitata per impostazione predefinita in  [!DNL Adobe Experience Manager] come  [!DNL Cloud Service]. [I video vengono contrassegnati automaticamente ](/help/assets/smart-tags-video-assets.md) quando carichi nuovi video o rielabori quelli esistenti.
 
 | Immagini (tipi MIME) | Risorse basate su testo (formati di file) | Risorse video (formati di file e codec) |
 |----|-----|------|
@@ -58,15 +57,10 @@ I tag avanzati vengono applicati ai tipi di file supportati che generano rappres
 
 [!DNL Experience Manager] aggiunge automaticamente i tag avanzati alle risorse basate su testo e ai video per impostazione predefinita. Per aggiungere automaticamente tag avanzati alle immagini, completa le seguenti attività.
 
-* [ [!DNL Adobe Experience Manager] Integrare con Adobe Developer Console](#integrate-aem-with-aio).
 * [Comprendere i modelli e le linee guida dei tag](#understand-tag-models-guidelines).
 * [Addestra il modello](#train-model).
 * [Assegna tag alle risorse](#tag-assets) digitali.
 * [Gestisci i tag e le ricerche](#manage-smart-tags-and-searches).
-
->[!TIP]
->
->I tag avanzati sono applicabili solo ai clienti [!DNL Adobe Experience Manager Assets] . Lo strumento Tag avanzati è acquistabile come componente aggiuntivo per [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -75,14 +69,6 @@ I tag avanzati vengono applicati ai tipi di file supportati che generano rappres
 Le risorse basate su testo supportate vengono contrassegnate automaticamente da [!DNL Experience Manager Assets] al momento del caricamento. È attivata per impostazione predefinita. L’efficacia dei tag avanzati non dipende dalla quantità di testo presente nella risorsa, ma dalle parole chiave o entità pertinenti presenti nel testo della risorsa. Per le risorse basate su testo, i tag avanzati sono le parole chiave che compaiono nel testo ma quelle che descrivono meglio la risorsa. Per le risorse supportate, [!DNL Experience Manager] estrae già il testo, che viene quindi indicizzato e utilizzato per cercare le risorse. Tuttavia, i tag avanzati basati su parole chiave nel testo forniscono un facet di ricerca dedicato, strutturato e con priorità più elevata, utilizzato per migliorare l’individuazione delle risorse rispetto all’indice di ricerca completa.
 
 Per immagini e video, invece, i tag avanzati vengono derivati in base ad alcuni aspetti visivi.
-
-## Integrare [!DNL Experience Manager] con Adobe Developer Console {#integrate-aem-with-aio}
-
->[!IMPORTANT]
->
->Per impostazione predefinita, le nuove distribuzioni [!DNL Experience Manager Assets] sono integrate con [!DNL Adobe Developer Console] . Consente di configurare più rapidamente la funzionalità dei tag avanzati. Nelle implementazioni precedenti, gli amministratori possono configurare manualmente [l&#39;integrazione di tag avanzati](/help/assets/smart-tags-configuration.md#aio-integration).
-
-Puoi integrare [!DNL Adobe Experience Manager] con Tag avanzati utilizzando [!DNL Adobe Developer Console]. Utilizza questa configurazione per accedere al servizio Tag avanzati da [!DNL Experience Manager]. Per informazioni su come configurare i tag avanzati, consulta [configurare [!DNL Experience Manager] per assegnare tag alle risorse](smart-tags-configuration.md) . Nel back-end, il server [!DNL Experience Manager] autentica le credenziali del servizio con il gateway di Adobe Developer Console prima di inoltrare la richiesta al servizio Tag avanzati.
 
 ## Comprendere i modelli e le linee guida dei tag {#understand-tag-models-guidelines}
 
@@ -155,7 +141,7 @@ Per creare e addestrare un modello per i tag specifici dell’azienda, effettua 
 
 Per verificare se il servizio Tag avanzati è addestrato sui tag nel set di risorse di formazione, controlla il rapporto del flusso di lavoro di formazione dalla console Rapporti .
 
-1. Nell&#39;interfaccia [!DNL Experience Manager] vai a **[!UICONTROL Strumenti] > **[!UICONTROL Risorse] > **[!UICONTROL Rapporti]**.
+1. Nell&#39;interfaccia [!DNL Experience Manager] vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
 1. Nella pagina **[!UICONTROL Rapporti su risorse]**, fai clic su **[!UICONTROL Crea]**.
 1. Seleziona il rapporto **[!UICONTROL Formazione tag avanzati]**, quindi fai clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
 1. Specifica un titolo e una descrizione per il rapporto. In **[!UICONTROL Pianifica rapporto]**, lascia selezionata l’opzione **[!UICONTROL Now (Ora)]**. Se vuoi pianificare il rapporto per un momento successivo, seleziona **[!UICONTROL Later (Più tardi)]** e specifica una data e un’ora. Quindi, fai clic su **[!UICONTROL Crea]** nella barra degli strumenti.
@@ -165,7 +151,7 @@ Per verificare se il servizio Tag avanzati è addestrato sui tag nel set di riso
 
 ## Assegnare tag alle risorse {#tag-assets}
 
-Dopo aver completato il training del servizio Tag avanzati, puoi attivare il flusso di lavoro di assegnazione tag per applicare automaticamente i tag appropriati a un set diverso di risorse simili. Puoi applicare il flusso di lavoro di assegnazione tag periodicamente o quando necessario. Il flusso di lavoro di assegnazione tag si applica sia alle risorse che alle cartelle.
+Dopo aver completato la formazione del servizio Tag avanzati, puoi attivare il flusso di lavoro di assegnazione tag per applicare automaticamente i tag a un diverso set di risorse. Puoi applicare il flusso di lavoro di assegnazione tag on-demand o pianificarlo per l’esecuzione periodica. Il flusso di lavoro di assegnazione tag si applica sia alle risorse che alle cartelle.
 
 ### Assegnare tag alle risorse dalla console del flusso di lavoro {#tagging-assets-from-the-workflow-console}
 
@@ -224,7 +210,7 @@ Per moderare gli smart tag delle risorse:
 
 1. Passa alla pagina [!UICONTROL Proprietà] della risorsa. Osserva che al tag promosso è assegnata un’elevata rilevanza e, quindi, appare più alta nei risultati della ricerca.
 
-### Comprendere AEM risultati della ricerca con tag avanzati {#understandsearch}
+### Comprendere AEM risultati della ricerca con tag avanzati {#understand-search}
 
 Per impostazione predefinita, AEM ricerca combina i termini di ricerca con una clausola `AND`. L’utilizzo di smart tag non modifica questo comportamento predefinito. L’utilizzo di tag avanzati aggiunge una clausola `OR` per trovare uno dei termini di ricerca negli smart tag applicati. Ad esempio, è consigliabile cercare `woman running`. Le risorse con una semplice `woman` o una semplice `running` parola chiave nei metadati non vengono visualizzate nei risultati di ricerca per impostazione predefinita. Tuttavia, una risorsa con tag `woman` o `running` utilizzando tag avanzati viene visualizzata in una query di ricerca di questo tipo. Quindi i risultati della ricerca sono una combinazione di:
 
