@@ -6,9 +6,9 @@ feature: Tag avanzati, assegnazione tag
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
+source-git-commit: d86581f61c9dd7339f7deb8ee1f5e469ce2b5f7c
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2707'
 ht-degree: 6%
 
 ---
@@ -40,15 +40,15 @@ Puoi assegnare i tag ai seguenti tipi di risorse:
 | image/tiff | DOC | MKV (H264/AVC) |
 | image/png | DOCX | MOV (H264/AVC, Motion JPEG) |
 | image/bmp | HTML | AVI (indeo4) |
-| image/gif | JSON | FLV (H264/AVC, vp6f) |
-| image/pjpeg | PDF | WMV (WMV2) |
-| immagine/x-portatile-anymap | PPT |  |
-| immagine/x-portatile-bitmap | PPTX |  |
-| immagine/x-portatile-grigio | RTF |  |
-| immagine/x-portatile-pixmap | SRT |  |
-| image/x-rgb | TXT |  |
-| image/x-xbitmap | VTT |  |
-| image/x-xpixmap | XML |  |
+| image/gif | PDF | FLV (H264/AVC, vp6f) |
+| image/pjpeg | PPT | WMV (WMV2) |
+| immagine/x-portatile-anymap | PPTX |  |
+| immagine/x-portatile-bitmap | RTF |  |
+| immagine/x-portatile-grigio | SRT |  |
+| immagine/x-portatile-pixmap | TXT |  |
+| image/x-rgb | VTT |  |
+| image/x-xbitmap |  |  |
+| image/x-xpixmap |  |  |
 | image/x-icon |  |  |
 | immagine/photoshop |  |  |
 | immagine/x-photoshop |  |  |
