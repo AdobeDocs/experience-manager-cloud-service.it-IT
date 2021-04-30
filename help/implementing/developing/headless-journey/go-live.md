@@ -4,14 +4,14 @@ description: In questa parte del Percorso di sviluppatori AEM Headless, scopri c
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
-
 
 # Come andare in diretta con la tua applicazione headless {#go-live}
 
@@ -63,6 +63,8 @@ Il modello di implementazione più comune con AEM applicazioni headless consiste
 3. Configurare la memorizzazione in cache e la scalabilità
 
 ## Distribuzione a produzione {#deploy-to-production}
+
+Dopo aver testato localmente tutto il codice e il contenuto, ora puoi iniziare una distribuzione di produzione con AEM.
 
 ### Struttura del modello e uscita GraphQL {#structure-vs-output}
 
