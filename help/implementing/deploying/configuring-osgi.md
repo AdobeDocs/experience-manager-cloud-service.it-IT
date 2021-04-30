@@ -1,15 +1,15 @@
 ---
 title: Configurazione di OSGi per Adobe Experience Manager come Cloud Service
 description: 'Configurazione OSGi con valori segreti e valori specifici per l’ambiente '
-feature: Deploying
+feature: Distribuzione
+exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 translation-type: tm+mt
-source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
+source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione di OSGi per Adobe Experience Manager come Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
@@ -101,7 +101,7 @@ Il caso comune per OSGi utilizza valori di configurazione OSGi in linea. Le conf
 
 ![](assets/choose-configuration-value-type_res1.png)
 
-Le configurazioni specifiche per l’ambiente estendono le configurazioni OSGi tradizionali e definite statisticamente che contengono valori in linea, consentendo di gestire i valori di configurazione OSGi esternamente tramite l’API di Cloud Manager. È importante comprendere quando utilizzare l’approccio comune e tradizionale di definire i valori in linea e memorizzarli in Git, anziché astrarre i valori in configurazioni specifiche per l’ambiente.
+Le configurazioni specifiche per l’ambiente estendono le configurazioni OSGi tradizionali e definite statisticamente che contengono valori in linea, consentendo di gestire i valori di configurazione OSGi esternamente tramite l’API di Cloud Manager. È importante capire quando utilizzare l’approccio comune e tradizionale di definire i valori in linea e memorizzarli in Git, anziché astrarre i valori in configurazioni specifiche per l’ambiente.
 
 Le seguenti linee guida riguardano quando utilizzare configurazioni non segrete e specifiche per l’ambiente:
 
@@ -219,6 +219,10 @@ I nomi delle variabili devono seguire le regole seguenti:
 
 I valori per le variabili non devono superare i 2048 caratteri.
 
+>[!NOTE]
+>
+>I nomi delle variabili con prefisso `INTERNAL_` sono riservati per Adobe. Tutte le variabili del set di clienti che iniziano con questo prefisso verranno ignorate.
+
 ### Valori predefiniti {#default-values}
 
 Quanto segue si applica sia ai valori di configurazione specifici dell’ambiente che a quelli segreti.
@@ -252,7 +256,10 @@ Ad esempio, se si utilizza `$[secret:server_password]`, è necessario creare un 
 Se una proprietà OSGI richiede valori diversi per l&#39;autore rispetto alla pubblicazione:
 
 * È necessario utilizzare cartelle separate `config.author` e `config.publish` OSGi, come descritto nella sezione [Risoluzione in modalità di esecuzione](#runmode-resolution).
-* È necessario utilizzare nomi di variabili indipendenti. Si consiglia di utilizzare un prefisso come `author_<variablename>` e `publish_<variablename>` in cui i nomi delle variabili sono gli stessi
+* Esistono due opzioni per creare nomi di variabili indipendenti che devono essere utilizzati:
+   * la prima opzione, consigliata: in tutte le cartelle OSGI (come `config.author` e `config.publish`) dichiarate per definire valori diversi, utilizza lo stesso nome di variabile. Esempio
+      `$[env:ENV_VAR_NAME;default=<value>]`, dove il valore predefinito corrisponde al valore predefinito per quel livello (authoring o pubblicazione). Quando imposti la variabile di ambiente tramite [API di Cloud Manager](#cloud-manager-api-format-for-setting-properties) o tramite un client, distingue tra i livelli utilizzando il parametro &quot;service&quot; come descritto in questa [documentazione di riferimento API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). Il parametro &quot;service&quot; associa il valore della variabile al livello OSGI appropriato.
+   * la seconda opzione, ovvero dichiarare variabili distinte utilizzando un prefisso come `author_<samevariablename>` e `publish_<samevariablename>`
 
 ### Esempi di configurazione {#configuration-examples}
 
