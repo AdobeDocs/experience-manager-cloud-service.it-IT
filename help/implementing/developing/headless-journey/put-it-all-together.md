@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
 translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: e8eb9d2c96d24601e50c48f6846a8c8bac8b0252
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Questo articolo si basa su questi fondamentali in modo da capire come preparare 
 
 ## Obiettivo {#objective}
 
+* Comprendere il flusso di lavoro di sviluppo locale per AEM
 * Installa l&#39;SDK AEM per ottenere un runtime di sviluppo locale da utilizzare per testare il contenuto su
-* Scopri gli strumenti di sviluppo necessari
-* Verifica il codice e il contenuto localmente prima di iniziare a lavorare
+* Scopri gli strumenti di sviluppo necessari per lavorare accanto al runtime di sviluppo locale
 
 ## Flusso di lavoro di sviluppo locale {#the-local-development-workflow}
 
