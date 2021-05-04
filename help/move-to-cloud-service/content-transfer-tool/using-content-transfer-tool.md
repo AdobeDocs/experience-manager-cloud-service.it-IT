@@ -3,9 +3,9 @@ title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2675'
 ht-degree: 47%
 
 ---
@@ -14,11 +14,12 @@ ht-degree: 47%
 
 ## Valutazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti) {#pre-reqs}
 
->id=&quot;aemcloud_ctt_prereqs&quot;
->title=&quot;Considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti)&quot;
->abstract=&quot;Rivedi considerazioni importanti per utilizzare lo strumento Content Transfer (Trasferimento contenuti), incluse le versioni Java e AEM, i tipi di Datastore supportati, le considerazioni sui gruppi di utenti e altro ancora.&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices&quot; text=&quot;Best practice e linee guida&quot;
->add-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability&quot; text=&quot;Download Content Transfer Tool&quot;
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_prereqs"
+>title="Considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti)"
+>abstract="Esamina considerazioni importanti per utilizzare lo strumento Content Transfer (Trasferimento contenuti) tra cui versioni Java e AEM, tipi di datastore supportati, considerazioni sui gruppi di utenti e altro ancora."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Best practice e linee guida"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="Download dello strumento Content Transfer (Trasferimento contenuti)"
 
 Segui le indicazioni riportate in questa sezione per comprendere le valutazioni importanti durante l’esecuzione dello strumento Content Transfer (Trasferimento contenuti):
 
