@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '2181'
+source-wordcount: '2120'
 ht-degree: 1%
 
 ---
@@ -146,24 +146,6 @@ Il **Riferimento al frammento**:
 ### Anteprima JSON {#json-preview}
 
 Per facilitare la progettazione e lo sviluppo di modelli di frammenti di contenuto, puoi visualizzare in anteprima l’output JSON nell’Editor frammento di contenuto.
-
-### Creazione di modelli di frammenti di contenuto e frammenti di contenuto {#creating-content-fragment-models-and-content-fragments}
-
-In primo luogo, i modelli di frammento di contenuto sono abilitati per il sito, questo avviene nel browser di configurazione:
-
-![Definire la configurazione](assets/cfm-configuration.png)
-
-Quindi i modelli dei frammenti di contenuto possono essere modellati:
-
-![Modello per frammenti di contenuto](assets/cfm-model.png)
-
-Dopo aver selezionato il modello appropriato, nell’Editor frammento di contenuto viene aperto un frammento di contenuto per la modifica:
-
-![Editor frammento di contenuto ](assets/cfm-editor.png)
-
->[!NOTE]
->
->Consulta Utilizzo dei frammenti di contenuto .
 
 ## Generazione dello schema GraphQL da frammenti di contenuto {#graphql-schema-generation-content-fragments}
 
