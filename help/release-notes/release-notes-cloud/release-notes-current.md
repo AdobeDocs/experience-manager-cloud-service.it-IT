@@ -3,12 +3,13 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 9a2b52a873e4e0662da252bba2af6ac2a46cd08e
+source-git-commit: 6e21c6ffe50d6c030873650e7dd26246dea76b59
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 3%
+source-wordcount: '1473'
+ht-degree: 2%
 
 ---
+
 
 # Note sulla versione corrente per [!DNL Adobe Experience Manager] come Cloud Service {#release-notes}
 
@@ -23,66 +24,125 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 ## Data di rilascio {#release-date}
 
-La data di rilascio per [!DNL Adobe Experience Manager] come Cloud Service 2021.3.0 è il 25 marzo 2021.
-La versione seguente (2021.4.0) sarà del 29 aprile 2021.
+La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 è il 6 maggio 2021.
+La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 
-## [!DNL Adobe Experience Manager Sites] come Cloud Service  {#sites}
+## AEM come Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
-* [È ora possibile abilitare a livello di progetto la versione Progressive Web App (PWA) di un ](/help/sites-cloud/authoring/features/enable-pwa.md) sito tramite una configurazione semplice.
-* Estensioni del modello per frammenti di contenuto : ora è possibile definire tipi di dati di testo con più righe come elenchi a più campi.
-* Miglioramenti dell’interfaccia utente dell’Editor frammenti di contenuto : i frammenti secondari nidificati vengono ora visualizzati nella breadcrumb e viene migliorata la visualizzazione delle azioni di pubblicazione, salvataggio e salvataggio/uscita
+### Novità {#what-is-new-foundation}
 
-## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+* [Flusso di lavoro Pubblica albero contenuto](/help/operations/replication.md#publish-content-tree-workflow) : un nuovo modello di flusso di lavoro e un nuovo passaggio consentono di migliorare le prestazioni durante la pubblicazione di gerarchie profonde di contenuto.
+
+## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Novità in [!DNL Sites] {#what-is-new-sites}
+
+* Endpoint GraphQL: è ora possibile abilitare l’API GraphQL AEM per le singole configurazioni AEM Sites e creare endpoint GraphQL personalizzati per tali configurazioni utilizzando una nuova interfaccia utente della console GraphQL. L’interfaccia utente consente inoltre di gestire gli endpoint GraphQL.
+
+* Modelli di contenuto, tipo di dati Data e ora avanzato: è ora possibile configurare il tipo di data e ora per consentire l’authoring di solo informazioni su data, ora o data e ora.
+
+* Modelli di contenuto, tipo di dati di tag avanzati: è ora possibile configurare il tipo di dati Tag per consentire la creazione di uno o più tag.
+
+* Modelli di contenuto, nuovo tipo di dati segnaposto tabulazione : il nuovo tipo di dati segnaposto per tabulazione consente di raggruppare i tipi di dati in sezioni che verranno sottoposte a rendering in schede nell’editor frammento di contenuto.
+
+### Correzioni di bug in [!DNL Sites] {#bug-fixes-sites}
+
+* Frammenti di contenuto : lo spostamento di frammenti di contenuto o cartelle aggiorna ora i riferimenti nidificati all’interno del frammento (CQ-4320815)
+
+* GraphQL: le query persistenti ora supportano endpoint definiti dall&#39;utente specifici per le configurazioni di AEM Sites (CQ-4315928)
+
+## [!DNL Adobe Experience Manager Assets] come  [!DNL Cloud Service] {#assets}
 
 ### Novità in [!DNL Assets] {#what-is-new-assets}
 
-<!-- TBD: refine this list of features and enh. for Feb release.
+* [!DNL Experience Manager] non archivia i download di singole risorse in cui viene scaricato il file originale. Questo miglioramento consente download più veloci.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
+* Quando una risorsa viene scaricata tramite l’opzione di condivisione dei collegamenti, ora puoi scegliere di scaricare o meno i rendering. In precedenza, venivano scaricate tutte le rappresentazioni delle risorse.
 
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
+* Gli amministratori possono configurare [!DNL Experience Manager] per eliminare l’origine delle risorse dopo l’assimilazione in massa delle risorse. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-Ability to select a root path. select if a minimum number of tags is required. 
+* Durante l’esecuzione di un controllo di integrità per importare le risorse in blocco, Experience Manager fornisce ora ulteriori informazioni sui motivi degli errori. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-Add a Boolean or radio widget type to metadata schema setup. -->
+* Quando si importano le risorse utilizzando lo strumento di importazione in blocco, gli amministratori ora possono eliminare i file di origine dopo il successo dell’importazione. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* [!DNL Experience Manager] estende la funzionalità Risorse collegate per supportare l’utilizzo di  [!DNL Dynamic Media] immagini nei componenti core supportati. Consulta [Utilizzare le risorse collegate](/help/assets/use-assets-across-connected-assets-instances.md).
-* Gli amministratori di Experience Manager possono pianificare l’inserimento di risorse in blocco in una data o un’ora specifica. Inoltre, gli amministratori possono pianificare acquisizioni ricorrenti in base a data e ora. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Durante la modifica di uno schema di metadati, un nuovo campo di selezione del percorso principale consente agli amministratori di effettuare la selezione in modo rapido e semplice, riducendo in tal modo il tempo di configurazione.
+
+* I metadati di molte risorse possono essere importati in blocco utilizzando un file CSV e possono essere esportati in un file CSV. Il formato di data predefinito è ora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gli utenti possono utilizzare un formato diverso aggiornando l’intestazione della colonna. Ad esempio, aggiungi `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` come intestazione di colonna nel file CSV anziché la parola `Date`.
+
+* Nella vista a colonne, un indicatore visivo mostra lo stato di approvazione o rifiuto di ciascuna risorsa.
+
+* Nella vista a colonne, viene visualizzato un indicatore visivo per le risorse scadute.
 
 ### Correzioni di bug in [!DNL Assets] {#bug-fixes-assets}
 
-* La pagina di copyright non viene visualizzata quando si tenta di scaricare più risorse gestite tramite diritti . (CQ-4314403)
-* Quando si sceglie di modificare un file INDD, la risoluzione cambia in modo imprevisto. (CQ-4317376)
-* Nella rappresentazione PDF è presente solo l’ultima pagina del modello InDesign. (CQ-4317305)
-* L’apertura del selettore tag richiede molto tempo quando il selettore fa parte di uno schema di metadati complesso. (CQ-4316426)
-* Quando si carica una risorsa con lo stesso nome file di una esistente, la finestra di dialogo del conflitto dei nomi non viene visualizzata per richiedere all’utente di creare una versione. (CQ-4315424)
-* Le proprietà dei metadati della cartella possono essere impostate e salvate dal menu a comparsa nella pagina Proprietà di una cartella. Mentre la selezione viene salvata nell’archivio, non viene visualizzata quando le Proprietà metadati cartella vengono aperte nuovamente. (CQ-4314429)
-* Le risorse con nomi file contenenti spazi o caratteri speciali vengono caricate utilizzando il browser. (CQ-4318381)
+* Quando tenti di spostare più risorse o cartelle, viene registrato un errore nella console e l’operazione di spostamento non è completata. L’operazione di spostamento non riesce se il titolo non può essere aggiornato. (CQ-4322080)
+
+* Un campo di metadati può essere nascosto in base a una regola in modo che, quando viene soddisfatta una condizione predefinita, i metadati non siano obbligatori. Tuttavia, tali campi di metadati nascosti vengono visualizzati come campi obbligatori. (CQ-4321285)
+
+* Importazione in blocco dei metadati non riuscita a causa di un formato di data non corretto. (CQ-4319014)
+
+* Quando si effettua una selezione nella pagina Proprietà per aggiornare i metadati, l&#39;interfaccia è lenta a rispondere quando ci sono molte opzioni fornite dallo schema. (CQ-4318538)
+
+* Durante l’aggiornamento e il salvataggio del valore dei metadati in un campo di testo a riga singola, i valori nel menu a discesa vengono eliminati, anche se le modifiche sono disabilitate nel menu a discesa. (CQ-4317077)
+
+* Puoi usare i puntini di sospensione come annotazione per esaminare le risorse. Quando si utilizza una piccola ellisse, l&#39;ellisse si sovrappone al numero dell&#39;annotazione nella versione di stampa. (CQ-4316792)
 
 ## [!DNL Adobe Experience Manager Forms] come  [!DNL Cloud Service] {#forms}
 
-AEM Forms ha aiutato molte organizzazioni a fornire esperienze di onboarding e registrazione straordinarie nel corso degli anni. Queste esperienze hanno aiutato le organizzazioni a convertire i lead in vendite, a elaborare i dati dei clienti acquisiti, a fornire esperienze reattive in base al profilo di pubblico e molto altro. Ora AEM Forms è disponibile come servizio cloud.
+### Novità in [!DNL Forms] {#what-is-new-forms}
 
-È possibile utilizzare [AEM Forms come Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) per creare moduli digitali, collegare moduli a origini dati esistenti, integrare moduli con Adobe Sign per aggiungere firme elettroniche ai moduli, generare documenti di record (DoR) per archiviare i moduli inviati come file PDF. Il servizio può anche convertire i PDF forms esistenti in moduli digitali. Oltre alle funzioni standard di AEM Forms, il servizio offre diverse funzionalità native per il cloud, come il ridimensionamento automatico, tempi di inattività zero per gli aggiornamenti e ambiente di sviluppo nativo per il cloud. Leggi [questo post di blog](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) per scoprire le funzionalità e le funzionalità di AEM Forms as a Cloud Service.
+* **Utilizzare il metodo di autenticazione dell&#39;identità ID governativo in Forms adattivo abilitato per Adobe Sign**
 
-Puoi rivolgerti al tuo rappresentante Adobe per una demo o per iscriverti al servizio.
+   Basato su algoritmi avanzati di apprendimento automatico, il processo ID governativo di Adobe Sign consente alle aziende di tutto il mondo di garantire un’autenticazione di alta qualità dell’identità del destinatario. Ora puoi utilizzare il metodo di autenticazione dell&#39;identità governativa in Forms adattivo abilitato per Adobe Sign.
+
+   ID governativo è un metodo di autenticazione dell&#39;identità premium che indica al destinatario di [caricare l&#39;immagine di un documento di identità rilasciato dal governo (patente di guida, ID nazionale, passaporto)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) e quindi valuta tale documento per assicurarne l&#39;autenticità.
+
+* **Supporto per l’utilizzo dell’esperienza di firma nei moduli per l’invio asincrono di moduli adattivi**
+
+   È ora possibile utilizzare l’esperienza di firma all’interno del modulo per gli invii asincroni di moduli adattivi. È inoltre possibile incorporare un modulo adattivo in una pagina [!DNL Experience Manager Sites] e utilizzare l’esperienza di firma all’interno del modulo per l’invio di moduli adattivi.
+
+* **Supporto per l&#39;utilizzo di una variabile per specificare un allegato durante la precompilazione di un modulo adattivo per un passaggio Assegna attività**
+
+   Durante la precompilazione di un modulo adattivo per un passaggio Assegna attività, è ora possibile utilizzare una variabile del tipo di documento per selezionare un allegato di input per il modulo adattivo.
+
+* **Supporto per l’utilizzo dell’opzione letterale per impostare il valore per una variabile di tipo JSON**
+
+   Puoi utilizzare l’opzione letterale per impostare il valore per una variabile di tipo JSON nel passaggio della variabile set di un flusso di lavoro AEM. L’opzione letterale ti consente di specificare un JSON sotto forma di stringa.
+
+* **Utilizzare l&#39;ambiente di sviluppo locale per creare un documento di record (DoR)**
+
+   Puoi utilizzare un XDP come modello Documento di record nelle istanze di Cloud Service e AEM Forms as a Cloud Service SDK (ambiente di sviluppo locale). In precedenza, il supporto era limitato solo alle istanze di Cloud Service.
+
+### Correzioni di bug in [!DNL Forms] {#bug-fixes-forms}
+
+* Quando un modulo adattivo configurato per non generare un documento di record viene inviato a un flusso di lavoro AEM configurato per generare un documento di record, non viene visualizzato alcun messaggio di errore e l’attività non viene inviata.
+
+### Altri aggiornamenti {#misc-2021-04-0-forms}
+
+* Per facilitare il riconoscimento del contenuto, il servizio ora genera miniature live per i file XDP, PDF dinamici e schema.
+* Aggiunta la possibilità di spostare un file PDF in una cartella inserita nell’interfaccia utente di AEM Forms.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Novità {#what-is-new-commerce}
 
-* Supporto per Magenti 2.4.2
+* Supporto per UID categoria : consente di sbloccare le integrazioni di e-commerce di terze parti per i sistemi che utilizzano stringhe per ID categoria
 
-* Il componente dettaglio del prodotto può ora essere utilizzato e configurato in qualsiasi pagina di contenuto
+* Estensione AEM per PWA Studi incl. integrazione di esempio
 
-* È stato rilasciato il sito di riferimento CIF Venia - 2021.03.25 che include la versione più recente dei componenti core CIF versione v1.9.0. Per ulteriori informazioni, consulta [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) .
+* Nuovo componente core di navigazione CIF che estende il componente core di navigazione WCM
 
-* È stata rilasciata la versione 1.9.0 dei componenti core CIF. Per ulteriori informazioni, consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) .
+* Indicatore visivo per i dati di catalogo in fase di AEM vetrina
 
+* L’endpoint Commerce è ora configurato tramite l’interfaccia utente di Cloud Manager
+
+### Correzioni di bug {#bug-fixes-commerce}
+
+* Il campo della categoria principale non veniva visualizzato nella scheda commercio nelle proprietà della pagina delle pagine delle categorie
 
 ## Cloud Manager {#cloud-manager}
 
-Questa sezione illustra le note sulla versione per Cloud Manager in AEM as a Cloud Service 2021.4.0 e 2021.3.0.
+Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.4.0.
 
 ### Data di rilascio {#release-date-cm-april}
 
@@ -121,76 +181,6 @@ La prossima versione è prevista per il 6 maggio 2021.
 
 * Il controllo `Runmode` produceva falsi positivi sui nodi non presenti nelle cartelle.
 
-
-### Data di rilascio {#release-date-cm-march}
-
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.3.0 è l’11 marzo 2021.
-
-### Novità {#what-is-new-march}
-
-* I clienti con ambienti con configurazioni di nomi di dominio personalizzati preesistenti per [Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizzeranno un messaggio sulle configurazioni esistenti in precedenza e saranno in grado di self-service tramite l&#39;interfaccia utente.
-
-* Gli utenti con le autorizzazioni necessarie possono ora modificare un programma, consentendo loro di effettuare le seguenti operazioni in modalità self-service:
-
-   * Aggiungi la soluzione Sites a un programma esistente con Assets o viceversa.
-   * Rimuovi Sites o Assets da un programma esistente sia con Sites che con Assets.
-   * Aggiungi il secondo diritto inutilizzato alla soluzione a un programma esistente o a un nuovo programma.
-
-* **AEM push** Updatelabel verrà ora visualizzato sia per gli schermi  *Pipeline* Execution che per  ** Activityscreens.
-
-* Se un ambiente è in ibernazione ma è disponibile anche un aggiornamento AEM, lo stato **Sospeso** avrà la precedenza su **Aggiorna disponibile**.
-
-* Gli utenti possono ora visualizzare i propri ruoli di Cloud Manager selezionando l’opzione &quot;Visualizza ruoli Cloud Manager&quot; dopo aver visualizzato l’icona Profilo utente (in alto a destra) di Unified Shell.
-
-* L&#39;etichetta **Domanda di approvazione** è stata rinominata **Approvazione produzione** per una maggiore chiarezza.
-
-* L’etichetta **Versione** è stata rinominata **Tag Git** nella schermata di esecuzione della pipeline di produzione.
-
-* Le etichette che definiscono il comportamento quando metriche importanti non soddisfano la soglia definita sono state rinominate per rispecchiare il loro comportamento effettivo: **Annulla immediatamente** e **Approva immediatamente**.
-
-* Gli elenchi di elementi obsoleti di classi e metodi sono stati aggiornati in base alla versione `2021.3.4997.20210303T022849Z-210225` dell’SDK del Cloud Service AEM.
-
-* La pipeline di produzione di Cloud Manager ora include la funzionalità [Test personalizzati dell’interfaccia utente](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) .
-
-### Correzioni di bug {#bug-fixes-cm-march}
-
-* Il controllo delle versioni del pacchetto è stato ignorato in alcuni casi durante AEM aggiornamento push.
-
-* Alcuni problemi di qualità non sono stati rilevati correttamente quando i pacchetti sono stati incorporati in altri pacchetti.
-
-* In situazioni oscure, il nome predefinito del programma generato all’apertura della finestra di dialogo Aggiungi programma potrebbe essere un duplicato di un nome di programma esistente.
-
-* Talvolta, se l’utente si allontana dalla pagina di esecuzione della pipeline immediatamente dopo l’avvio di una pipeline, viene visualizzato un messaggio di errore che indica che l’azione non è riuscita, anche se l’esecuzione viene effettivamente avviata.
-
-* Il passaggio di compilazione è stato riavviato inutilmente quando le build del cliente hanno generato pacchetti non validi.
-
-* In alcuni casi, l’utente potrebbe visualizzare uno stato verde &quot;attivo&quot; accanto a un Inserire nell&#39;elenco Consentiti IP anche quando tale configurazione non è stata distribuita.
-
-* Tutte le pipeline di produzione esistenti verranno abilitate automaticamente con il passaggio Audit esperienze .
-
-## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
-
-### Data di rilascio {#release-date-ctt}
-
-La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.3.4 è il 19 marzo 2021.
-
-### Correzioni di bug {#bug-fixes-ctt}
-
-* Il CTT saltava il contenuto dalle cartelle con lo stesso nome ma con un trattino nel nome. Questo problema è stato risolto.
-
-### Data di rilascio {#release-date-ctt-march}
-
-La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.3.0 è il 4 marzo 2021.
-
-### Novità nello strumento Content Transfer (Trasferimento contenuti) {#what-is-new-ctt-march}
-
-* CTT ora viene installato su `/apps` invece di `/libs` I segnalibri del browser in alcune pagine potrebbero non essere più validi.
-* Quando CTT è installato, l’utente dovrà navigare in un livello aggiuntivo per accedere alla pagina Content Transfer (Trasferimento contenuti). Per ulteriori informazioni, consulta [Utilizzo dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) .
-
-### Correzioni di bug {#bug-fixes-ctt-march}
-
-* Durante la migrazione del contenuto da un percorso specifico, CTT effettuava l’estrazione di risorse non correlate. È stato corretto
-
 ## Analisi delle best practice {#best-practices-analyzer}
 
 ### Data di rilascio {#release-date-bpa}
@@ -202,18 +192,3 @@ La data di rilascio di Best Practices Analyzer v2.1.12 è il 12 aprile 2021.
 * Sono state visualizzate righe duplicate nel BPA segnalato. Questo problema è stato risolto.
 * L’interfaccia utente BPA sulla versione 6.4.2 AEM generava un errore JS che disattivava il pulsante Genera report . È stato corretto
 
-
-## Strumenti di refactoring del codice {#code-refactoring-tools}
-
-### Novità degli strumenti di refactoring del codice {#what-is-new-crt}
-
-* Nuove funzioni e miglioramenti per Repository Modernizer. Fai riferimento a [Risorsa GitHub: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per la versione più recente.
-   * Normalizza le configurazioni OSGi (eccetto le configurazioni RepoInit) al formato .cfg.json preferito.
-   * Rinomina le cartelle di configurazione OSGi nel formato specificato.
-   * Genera il progetto ui.apps.structure.
-   * Crea il modulo di analisi.
-
-* Nuove funzioni e miglioramenti per Dispatcher Converter. Fai riferimento a [Risorsa GitHub: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
-   * Creazione di file separati per inclusioni diverse invece che nel rivestimento del contenuto.
-   * Possibilità di gestire sia il percorso della cartella dei vhosts che il percorso dei file vhost.
-   * Generazione di file farm con configurazioni cliente di grandi dimensioni in una gamma di 600 e più.
