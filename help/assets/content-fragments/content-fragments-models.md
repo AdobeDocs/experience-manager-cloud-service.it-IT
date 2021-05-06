@@ -1,16 +1,16 @@
 ---
 title: Modelli per frammenti di contenuto
-description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuti strutturati.
-feature: Content Fragments
+description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuto strutturato.
+feature: Frammenti di contenuto
 role: Business Practitioner
+exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2309'
 ht-degree: 7%
 
 ---
-
 
 # Modelli per frammenti di contenuto {#content-fragment-models}
 
@@ -61,7 +61,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
    >
    >Quando un campo è **obbligatorio**, l’**Etichetta** indicata nel riquadro a sinistra sarà contrassegnata con un asterisco (*****).
 
-   ![proprietà](assets/cfm-models-03.png)
+![proprietà](assets/cfm-models-03.png)
 
 1. **Aggiunta di un campo**
 
@@ -111,6 +111,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
    * Consente agli autori di frammenti di accedere alle aree dei tag e di selezionarle
 * **Riferimento contenuto**
    * riferimenti ad altri contenuti di qualsiasi tipo; può essere utilizzato per [creare contenuto nidificato](#using-references-to-form-nested-content)
+   * Se si fa riferimento a un&#39;immagine, è possibile scegliere di mostrare una miniatura
 * **Riferimento frammento**
    * fa riferimento ad altri frammenti di contenuto; può essere utilizzato per [creare contenuto nidificato](#using-references-to-form-nested-content)
    * Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
@@ -121,6 +122,13 @@ Per definire il modello è disponibile una selezione di tipi di dati:
       * Per consentire AEM memorizzare JSON diretto che hai copiato/incollato da un altro servizio.
       * Il JSON verrà trasmesso e trasmesso come JSON in GraphQL.
       * Include l’evidenziazione della sintassi JSON, il completamento automatico e l’evidenziazione degli errori nell’editor dei frammenti di contenuto.
+* **Segnaposto scheda**
+   * Consente l’introduzione di schede da utilizzare per la modifica del contenuto dei frammenti di contenuto.
+Questo verrà mostrato come divisore nell&#39;editor modelli, separando le sezioni dell&#39;elenco dei tipi di dati di contenuto. Ogni istanza rappresenta l’inizio di una nuova scheda.
+Nell’editor frammenti ogni istanza viene visualizzata come una scheda .
+
+      >[!NOTE]
+      Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
 
 ## Proprietà {#properties}
 
@@ -165,6 +173,8 @@ TranslatableSelezionando la casella di controllo &quot;Translatable&quot; su un 
    * Verifica che il nome della proprietà del campo sia aggiunto nella configurazione di traduzione, contesto `/content/dam/<tenant>`, se non è già presente.
    * Per GraphQL: imposta una proprietà `<translatable>` nel campo Frammento di contenuto su `yes` per consentire il filtro di query GraphQL per l’output JSON con solo contenuto traducibile.
 
+* Per ulteriori informazioni sul tipo di dati specifico e sulle relative proprietà, consulta **[Riferimento contenuto](#content-reference)** .
+
 * Per ulteriori informazioni sul tipo di dati specifico e sulle relative proprietà, consulta **[Riferimento frammento (frammenti nidificati)](#fragment-reference-nested-fragments)** .
 
 ## Convalida {#validation}
@@ -181,12 +191,6 @@ Diversi tipi di dati includono ora la possibilità di definire requisiti di conv
    * È possibile fare riferimento solo alle immagini entro un intervallo di larghezza e/o altezza predefinito (in pixel).
 * **Riferimento frammento**
    * Test di un modello di frammento di contenuto specifico.
-
-<!--
-  * Only predefined file types can be referenced.
-  * No more than the predefined number of assets can be referenced. 
-  * No more than the predefined number of fragments can be referenced.
--->
 
 ## Utilizzo di riferimenti per il modulo Contenuto nidificato {#using-references-to-form-nested-content}
 
@@ -219,12 +223,14 @@ La funzione Riferimento contenuto consente di eseguire il rendering del contenut
 
 Oltre alle proprietà standard è possibile specificare:
 
-* Il **percorso principale** per qualsiasi contenuto di riferimento.
-* Tipi di contenuto a cui è possibile fare riferimento.
-* Limitazioni per le dimensioni dei file.
-* Restrizioni dell&#39;immagine.
-   <!-- Check screenshot - might need update -->
-   ![Riferimento contenuto](assets/cfm-content-reference.png)
+* Il **percorso principale** per qualsiasi contenuto di riferimento
+* Tipi di contenuto a cui è possibile fare riferimento
+* Limitazioni per le dimensioni dei file
+* Se si fa riferimento a un&#39;immagine:
+   * Mostra miniatura
+   * Restrizioni dell&#39;altezza e della larghezza dell&#39;immagine
+
+![Riferimento contenuto](assets/cfm-content-reference.png)
 
 ### Riferimento frammento (frammenti nidificati) {#fragment-reference-nested-fragments}
 
@@ -272,7 +278,6 @@ PathSpecifica un percorso principale per tutti i frammenti a cui viene fatto rif
 
    * **fragmentreferencecomposite** : consente all’autore del frammento di creare un composito selezionando più frammenti
 
-   <!-- Check screenshot - might need update -->
    ![Riferimento frammento](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -405,17 +410,3 @@ Puoi modificare le **Proprietà** di un modello di frammento di contenuto:
    * **Tag**
    * **Descrizione**
    * **Carica immagine**
-
-<!--
-* **GraphQL**
-  
-  >[!CAUTION]
-  >
-  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
-  >
-  >Updating these properties can impact dependent applications.
-
-  * **API Name**
-  * **Single Query Field Name**
-  * **Multiple Query Field Name**
--->
