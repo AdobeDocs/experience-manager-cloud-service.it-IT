@@ -1,16 +1,16 @@
 ---
 title: Frammenti di contenuto - Browser di configurazione
 description: Scopri come abilitare alcune funzionalità dei frammenti di contenuto nel browser di configurazione per sfruttare AEM potenti funzionalità di distribuzione headless.
-feature: Content Fragments
+feature: Frammenti di contenuto
 role: Business Practitioner
+exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 20%
+source-wordcount: '287'
+ht-degree: 18%
 
 ---
-
 
 # Frammenti di contenuto - Browser di configurazione{#content-fragments-configuration-browser}
 
@@ -25,7 +25,11 @@ Prima di utilizzare Frammenti di contenuto è necessario utilizzare il **Browser
 
 >[!CAUTION]
 >
->Se non abiliti l’opzione **Modelli di frammento di contenuto** , l’opzione **Crea** non sarà disponibile per la creazione di nuovi modelli.
+>Se non abiliti **Modelli di frammento di contenuto**:
+>
+>* l’opzione **Crea** non sarà disponibile per la creazione di nuovi modelli.
+>* non sarà possibile [selezionare il tenant per creare il relativo punto finale](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+
 
 Per abilitare la funzionalità dei frammenti di contenuto è necessario:
 
