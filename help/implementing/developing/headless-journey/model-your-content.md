@@ -1,14 +1,14 @@
 ---
 title: Come modellare il contenuto
-description: In questa parte del Percorso di sviluppatori AEM Headless , scopri come modellare i contenuti per la distribuzione AEM Headless utilizzando la modellazione dei dati con modelli di frammenti di contenuto e frammenti di contenuto.
+description: In questa parte del Percorso di sviluppatori AEM Headless , scopri come modellare i contenuti per la distribuzione AEM Headless utilizzando la modellazione dei contenuti con modelli di frammenti di contenuto e frammenti di contenuto.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
+source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1686'
 ht-degree: 1%
 
 ---
@@ -38,10 +38,10 @@ Questo articolo si basa su questi fondamentali in modo da capire come preparare 
 
 * **Pubblico**: Principiante
 * **Obiettivo**: Scopri come modellare la struttura del contenuto, quindi realizzare tale struttura utilizzando AEM Modelli per frammenti di contenuto e Frammenti di contenuto:
-   * Introdurre concetti e terminologia relativi alla modellazione dei dati [a1/>.](#data-modeling)
-   * Scopri [perché è necessaria la modellazione dei dati per la distribuzione di contenuti headless](#data-modeling-for-aem-headless).
-   * Scopri [come realizzare questa struttura utilizzando modelli di frammenti di contenuto AEM](#create-structure-content-fragment-models) (e creare contenuti con [Frammenti di contenuto](#use-content-to-author-content)).
-   * Scopri [come modellare il contenuto](#getting-started-examples); principi con campioni di base.
+   * Introdurre concetti e terminologia relativi alla modellazione di dati/contenuti.
+   * Scopri perché è necessaria la modellazione dei contenuti per la distribuzione di contenuti headless.
+   * Scopri come realizzare questa struttura utilizzando AEM modelli di frammenti di contenuto (e creare contenuti con frammenti di contenuto).
+   * Scopri come modellare il contenuto; principi con campioni di base.
 
 >[!NOTE]
 >
@@ -49,11 +49,15 @@ Questo articolo si basa su questi fondamentali in modo da capire come preparare 
 >
 >Prenderemo in considerazione solo gli aspetti di interesse nella modellazione dei dati da utilizzare con AEM Headless.
 
-## Modellazione dati {#data-modeling}
+## Modellazione dei contenuti {#content-modeling}
 
 *È un mondo grande e cattivo là* fuori.
 
 Forse, forse no, ma è certamente un grande ***complicato*** mondo là fuori e la modellazione dei dati viene utilizzata per definire una rappresentazione semplificata di una sottosezione molto (molto) piccola, utilizzando le informazioni specifiche necessarie per un certo scopo.
+
+>[!NOTE]
+>
+>Poiché AEM i contenuti, ci riferiamo alla modellazione dei dati come modellazione dei contenuti.
 
 Esempio:
 
@@ -91,7 +95,7 @@ Le informazioni che vogliamo memorizzare su di esse sono le **Attributi** (propr
 
 Poi ci sono varie **Relazioni** tra le entità. Per esempio, di solito una scuola ha solo un insegnante principale e molti insegnanti (e di solito il maestro capo è anche un insegnante).
 
-Il processo di analisi e definizione di queste informazioni, insieme alle relazioni tra di esse, si chiama **Modellazione dati**.
+Il processo di analisi e definizione di queste informazioni, insieme alle relazioni tra di esse, si chiama **Modellazione dei contenuti**.
 
 ### Funzioni di base {#basics}
 
@@ -128,9 +132,9 @@ Tutto è un atto di bilanciamento, ma la creazione di una struttura troppo compl
 
 * Influisce notevolmente sulle prestazioni se la query deve accedere a più frammenti di contenuto nidificati (a cui si fa riferimento) per recuperare il contenuto richiesto.
 
-## Modellazione dati per AEM headless {#data-modeling-for-aem-headless}
+## Modellazione dei contenuti per AEM headless {#content-modeling-for-aem-headless}
 
-Data Modeling è un insieme di tecniche consolidate, spesso utilizzate quando si sviluppano database di relazioni, quindi cosa significa per AEM Headless?
+Data Modeling è un insieme di tecniche consolidate, spesso utilizzate quando si sviluppano database di relazioni, quindi cosa significa Modellazione dei contenuti per AEM Headless?
 
 ### Perché? {#why}
 
@@ -142,7 +146,7 @@ Ciò significa che l&#39;applicazione conosce in anticipo la forma di risposta e
 
 AEM utilizza Frammenti di contenuto per fornire le strutture necessarie per la distribuzione headless dei contenuti alle applicazioni.
 
-La struttura del modello dati è la seguente:
+La struttura del modello di contenuto è la seguente:
 
 * realizzato dalla definizione del modello per frammenti di contenuto,
 * utilizzati come base dei frammenti di contenuto utilizzati per la generazione dei contenuti.
@@ -173,7 +177,7 @@ All&#39;interno di un modello:
 1. **I** tipi di dati ti consentono di definire i singoli attributi.
 Ad esempio, definisci il campo contenente il nome di un insegnante come **Testo** e i relativi anni di servizio come **Numero**.
 1. I tipi di dati **Riferimento contenuto** e **Riferimento frammento** consentono di creare relazioni con altri contenuti all’interno di AEM.
-1. Il tipo di dati **Riferimento frammento** ti consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei dati.
+1. Il tipo di dati **Riferimento frammento** ti consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
 
 Ad esempio:
 ![Modellazione dei contenuti con frammenti di contenuto](assets/headless-modeling-01.png "Modellazione dei contenuti con frammenti di contenuto")
@@ -250,4 +254,4 @@ Ora che hai imparato a modellare la tua struttura e a creare contenuti a seconda
    * [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) : creazione e creazione di frammenti di contenuto; questa pagina ti porterà ad altre sezioni dettagliate
 * [AEM Schemi GraphQL](/help/implementing/developing/headless-journey/access-your-content.md)  - come GraphQL realizza i modelli
 * [Struttura dei frammenti di contenuto di esempio](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Guida introduttiva a AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) : una breve serie di esercitazioni video che offre una panoramica dell’utilizzo di AEM funzioni headless, tra cui la modellazione dei dati e GraphQL
+* [Guida introduttiva a AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - Una breve serie di esercitazioni video che offre una panoramica dell’utilizzo di AEM funzioni headless, tra cui la modellazione dei contenuti e GraphQL
