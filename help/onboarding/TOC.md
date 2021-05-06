@@ -6,10 +6,10 @@ user-guide-description: Questa guida illustra brevemente come iniziare a usare E
 feature: Distribuzione
 role: Architect, Developer
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 29%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,8 @@ ht-degree: 29%
       + [Eliminazione di un Elenco consentiti IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [Controllo dello stato di un Elenco consentiti IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Note sulla versione per Cloud Manager {#release-notes-cloud-manager}
-      + [Note sulla versione corrente (2021.4.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Note sulla versione corrente (2021.5.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Note sulla versione 2021.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
       + [Note sulla versione 2021.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
       + [Note sulla versione 2021.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
       + [Note sulla versione 2021.1.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
