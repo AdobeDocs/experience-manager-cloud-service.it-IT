@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 1%
+source-wordcount: '1752'
+ht-degree: 2%
 
 ---
 
@@ -212,6 +212,20 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
    * Modificare direttamente il frammento a cui si fa riferimento.
    * Crea un nuovo frammento di contenuto basato sul modello appropriato
 
+### Creazione di modelli di frammenti di contenuto {#creating-content-fragment-models}
+
+In primo luogo, i modelli di frammento di contenuto sono abilitati per il sito, questo avviene nel browser di configurazione:
+
+![Definire la configurazione](assets/cfm-configuration.png)
+
+Quindi i modelli dei frammenti di contenuto possono essere modellati:
+
+![Modello per frammenti di contenuto](assets/cfm-model.png)
+
+>[!NOTE]
+>
+>Consulta Utilizzo dei frammenti di contenuto .
+
 ## Uso del modello per creare contenuti con frammenti di contenuto {#use-content-to-author-content}
 
 I frammenti di contenuto si basano sempre su un modello di frammento di contenuto. Il modello fornisce la struttura, il frammento contiene il contenuto.
@@ -231,6 +245,16 @@ Una volta creato il frammento, è possibile aprirlo nell’Editor frammento di c
 * Modifica i metadati.
 * Mostra la struttura ad albero.
 * Visualizzare in anteprima la rappresentazione JSON.
+
+### Creazione di frammenti di contenuto {#creating-content-fragments}
+
+Dopo aver selezionato il modello appropriato, nell’Editor frammento di contenuto viene aperto un frammento di contenuto per la modifica:
+
+![Editor frammento di contenuto ](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>Consulta Utilizzo dei frammenti di contenuto .
 
 ## Guida introduttiva ad alcuni esempi {#getting-started-examples}
 
