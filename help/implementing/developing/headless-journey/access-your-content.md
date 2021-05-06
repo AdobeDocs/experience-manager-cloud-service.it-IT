@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 861ef15a0060d51fd32e2d056871d1679f77a21e
+source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 0%
+source-wordcount: '2181'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >LAVORO IN CORSO - La creazione di questo documento è in corso e non deve essere inteso come completo o definitivo né deve essere utilizzato a fini di produzione.
 
-In questa parte del [AEM Percorso di sviluppatori headless,](overview.md) puoi imparare a utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
+In questa parte del [AEM Percorso di sviluppatori headless,](overview.md) puoi imparare a utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto e inviarlo all&#39;app (consegna headless).
 
 ## La storia finora {#story-so-far}
 
@@ -135,9 +135,7 @@ Questi Modelli Di Frammento Di Contenuto:
 
 Il **Riferimento al frammento**:
 
-* È di particolare interesse in combinazione con GraphQL.
-
-* È un tipo di dati specifico che può essere utilizzato durante la definizione di un modello di frammento di contenuto.
+* È un tipo di dati specifico disponibile quando si definisce un modello di frammento di contenuto.
 
 * Fa riferimento a un altro frammento, a seconda di un modello di frammento di contenuto specifico.
 
@@ -148,6 +146,24 @@ Il **Riferimento al frammento**:
 ### Anteprima JSON {#json-preview}
 
 Per facilitare la progettazione e lo sviluppo di modelli di frammenti di contenuto, puoi visualizzare in anteprima l’output JSON nell’Editor frammento di contenuto.
+
+### Creazione di modelli di frammenti di contenuto e frammenti di contenuto {#creating-content-fragment-models-and-content-fragments}
+
+In primo luogo, i modelli di frammento di contenuto sono abilitati per il sito, questo avviene nel browser di configurazione:
+
+![Definire la configurazione](assets/cfm-configuration.png)
+
+Quindi i modelli dei frammenti di contenuto possono essere modellati:
+
+![Modello per frammenti di contenuto](assets/cfm-model.png)
+
+Dopo aver selezionato il modello appropriato, nell’Editor frammento di contenuto viene aperto un frammento di contenuto per la modifica:
+
+![Editor frammento di contenuto ](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>Consulta Utilizzo dei frammenti di contenuto .
 
 ## Generazione dello schema GraphQL da frammenti di contenuto {#graphql-schema-generation-content-fragments}
 
@@ -239,7 +255,96 @@ Offre funzioni quali evidenziazione della sintassi, completamento automatico, su
 
 ![Interfaccia ](assets/graphiql-interface.png "GraphiQL")
 
-## Utilizzo dell&#39;API GraphQL AEM {#using-aem-graphiql}
+## Utilizzo dell&#39;API GraphQL AEM {#actually-using-aem-graphiql}
+
+Per utilizzare effettivamente l’API GraphQL AEM in una query, possiamo utilizzare le due strutture di modello di frammento di contenuto molto semplici:
+
+* Azienda
+   * Nome
+   * Amministratore delegato (Persona)
+   * Dipendenti (persone)
+* Person
+   * Nome
+   * Nome
+
+Come puoi vedere, i campi Amministratore delegato e Dipendenti fanno riferimento ai frammenti Persona.
+
+I modelli di frammento verranno utilizzati:
+
+* durante la creazione del contenuto nell’Editor frammento di contenuto
+* per generare gli schemi GraphQL su cui eseguire la query
+
+Le query possono essere immesse nell’interfaccia GraphiQL, ad esempio in:
+
+* `http://localhost:4502/content/graphiql.html `
+
+Una query semplice consiste nel restituire il nome di tutte le voci nello schema Azienda. Qui si richiede un elenco di tutti i nomi aziendali:
+
+```xml
+query {
+  companyList {
+    items {
+      name
+    }
+  }
+}
+```
+
+Una query leggermente più complessa consiste nel selezionare tutte le persone che non hanno un nome di &quot;Jobs&quot;. In questo modo verranno filtrate tutte le persone per quelle che non hanno il nome Jobs (Processi). Questo si ottiene con l&#39;operatore EQUALS_NOT (ce ne sono molti altri):
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _expressions: [
+        {
+          value: "Jobs"
+          _operator: EQUALS_NOT
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+È inoltre possibile creare query più complesse. Ad esempio, eseguire una query per tutte le aziende che hanno almeno un dipendente con il nome di &quot;Smith&quot;. Questa query illustra il filtro per qualsiasi persona di nome &quot;Smith&quot;, che restituisce informazioni da tutti i frammenti nidificati:
+
+```xml
+query {
+  companyList(filter: {
+    employees: {
+      _match: {
+        name: {
+          _expressions: [
+            {
+              value: "Smith"
+            }
+          ]
+        }
+      }
+    }
+  }) {
+    items {
+      name
+      ceo {
+        name
+        firstName
+      }
+      employees {
+        name
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- need code / curl / cli examples-->
 
 Per informazioni dettagliate sull’utilizzo dell’API GraphQL AEM e sulla configurazione degli elementi necessari, puoi fare riferimento a:
 
