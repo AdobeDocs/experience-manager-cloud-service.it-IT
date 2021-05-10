@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1830'
 ht-degree: 2%
 
 ---
@@ -214,17 +214,21 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 
 ### Creazione di modelli di frammenti di contenuto {#creating-content-fragment-models}
 
-In primo luogo, i modelli di frammento di contenuto sono abilitati per il sito, questo avviene nel browser di configurazione:
+All’inizio è necessario abilitare i Modelli per frammenti di contenuto per il sito, questo avviene nel Browser configurazioni; in Strumenti -> Generale -> Browser di configurazione. Puoi scegliere di configurare la voce globale o crearne una nuova. Esempio:
 
 ![Definire la configurazione](assets/cfm-configuration.png)
 
-Quindi i modelli dei frammenti di contenuto possono essere modellati:
+>[!NOTE]
+>
+>Consulta Risorse aggiuntive - Frammenti di contenuto nel browser di configurazione
+
+È quindi possibile creare modelli di frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in Strumenti -> Risorse -> Modelli per frammenti di contenuto. Esempio:
 
 ![Modello per frammenti di contenuto](assets/cfm-model.png)
 
 >[!NOTE]
 >
->Consulta Utilizzo dei frammenti di contenuto .
+>Consulta Risorse aggiuntive - Modelli per frammenti di contenuto.
 
 ## Uso del modello per creare contenuti con frammenti di contenuto {#use-content-to-author-content}
 
@@ -232,7 +236,9 @@ I frammenti di contenuto si basano sempre su un modello di frammento di contenut
 
 ### Selezione del modello appropriato {#select-model}
 
-Il primo passaggio per creare effettivamente il contenuto è la creazione di un frammento di contenuto. Si basa su un modello specifico di frammento di contenuto, selezionato come primo passaggio del processo di creazione.
+Il primo passaggio per creare effettivamente il contenuto è la creazione di un frammento di contenuto. Questa operazione viene eseguita utilizzando Crea -> Frammento di contenuto nella cartella richiesta in Risorse -> File. La procedura guidata ti guiderà attraverso i passaggi.
+
+Un frammento di contenuto si basa su un modello di frammento di contenuto specifico, selezionato come primo passaggio del processo di creazione.
 
 ### Creazione e modifica di contenuti strutturati {#create-edit-structured-content}
 
@@ -254,7 +260,7 @@ Dopo aver selezionato il modello appropriato, nell’Editor frammento di contenu
 
 >[!NOTE]
 >
->Consulta Utilizzo dei frammenti di contenuto .
+>Consulta Risorse aggiuntive - Utilizzo dei frammenti di contenuto.
 
 ## Guida introduttiva ad alcuni esempi {#getting-started-examples}
 
