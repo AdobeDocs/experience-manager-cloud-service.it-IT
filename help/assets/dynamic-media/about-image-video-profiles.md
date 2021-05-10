@@ -1,16 +1,16 @@
 ---
 title: Informazioni su profili immagine e profili video di Dynamic Media
 description: Un profilo immagine o un profilo video è una ricetta per le opzioni da applicare alle risorse caricate in una cartella. Ad esempio, puoi specificare la codifica video da applicare alle risorse video Dynamic Media caricate. Oppure, quale profilo immagine applicare alle risorse di immagini Dynamic Media per ritagliarle correttamente.
-feature: Asset Management,Image Profiles,Video Profiles
+feature: Gestione Delle Risorse, Profili Immagine, Profili Video
 role: Administrator,Business Practitioner
+exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1282'
 ht-degree: 2%
 
 ---
-
 
 # Informazioni su profili immagine e profili video di Dynamic Media{#about-dm-image-video-profiles}
 
@@ -43,7 +43,7 @@ Ad esempio, supponi di aver creato un profilo immagine Dynamic Media e di averlo
 
 Puoi eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale l’elaborazione non è riuscita la prima volta. Anche se non hai modificato un profilo immagine o video, o hai già applicato un profilo immagine o un profilo video, puoi comunque eseguire il flusso di lavoro di rielaborazione su una cartella di risorse in qualsiasi momento.
 
-Facoltativamente, puoi regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando esegui _Scene7: Rielabora il flusso di lavoro Assets_ in una cartella. Le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l’elaborazione. Dopo l’elaborazione, i metadati di ogni risorsa nell’intero set di batch vengono aggiornati in AEM. Se la dimensione del batch è grande, è possibile che si verifichi un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi nel server Dynamic Media.
+Facoltativamente, puoi regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando esegui _Scene7: Rielabora il flusso di lavoro Assets_ in una cartella. Le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l’elaborazione. Dopo l’elaborazione, i metadati di ogni risorsa nell’intero set di batch vengono aggiornati in Adobe Experience Manager. Se la dimensione del batch è grande, è possibile che si verifichi un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi nel server Dynamic Media.
 
 Consulta [Regolazione della dimensione batch del flusso di lavoro di rielaborazione](#adjusting-load).
 
@@ -59,8 +59,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**Per rielaborare le risorse Dynamic Media in una cartella**:
-1. In Adobe Experience Manager, dalla pagina Risorse, passa alla cartella delle risorse Dynamic Media a cui è assegnato un profilo immagine o un profilo video e per cui desideri applicare il Scene7: Rielaborazione del flusso di lavoro Asset **,**
+**Per rielaborare le risorse Dynamic Media in una cartella:**
+1. Ad Experience Manager, dalla pagina Risorse, passa a una cartella di risorse a cui è assegnato un profilo immagine o un profilo video e a cui desideri applicare il **Scene7: Rielabora il flusso di lavoro Asset** .
 
    Le cartelle a cui è assegnato un profilo immagine o un profilo video presentano il nome del profilo e vengono visualizzate direttamente sotto il nome della cartella nella Vista a schede.
 
@@ -87,7 +87,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### Regolazione della dimensione batch del flusso di lavoro di rielaborazione {#adjusting-load}
 
-(Facoltativo) La dimensione predefinita del batch nel flusso di lavoro di rielaborazione è 50 risorse per processo. Questa dimensione batch ottimale è governata dalla dimensione media delle risorse e dai tipi MIME delle risorse su cui viene eseguita la rielaborazione. Un valore più alto indica che in un singolo processo di rielaborazione sono presenti molti file. Pertanto, il banner di elaborazione rimane sulle risorse di Experience Manager per un periodo di tempo più lungo. Tuttavia, se la dimensione media del file è piccola-1 MB o inferiore, l&#39;Adobe consiglia di aumentare il valore a diverse centinaia, ma mai più di 1000. Se la dimensione media del file è grande centinaia di megabyte, l&#39;Adobe consiglia di ridurre la dimensione del batch fino a 10.
+(Facoltativo) La dimensione predefinita del batch nel flusso di lavoro di rielaborazione è 50 risorse per processo. Questa dimensione batch ottimale è governata dalla dimensione media delle risorse e dai tipi MIME delle risorse su cui viene eseguita la rielaborazione. Un valore più alto indica che in un singolo processo di rielaborazione sono presenti molti file. Pertanto, il banner di elaborazione rimane sulle risorse di Experience Manager per un periodo di tempo più lungo. Tuttavia, se la dimensione media del file è piccola-1 MB o inferiore, l’Adobe consiglia di aumentare il valore a diversi 100, ma mai più di 1000. Se la dimensione media del file è di centinaia di MB, Adobe consiglia di ridurre la dimensione del batch fino a 10.
 
 **Per regolare facoltativamente la dimensione batch del flusso di lavoro** di rielaborazione:
 
