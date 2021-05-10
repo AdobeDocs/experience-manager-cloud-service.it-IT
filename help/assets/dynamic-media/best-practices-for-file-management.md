@@ -6,9 +6,9 @@ feature: Gestione Delle Risorse, Profili Immagine, Profili Video
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Un concetto importante per l&#39;utilizzo dei profili immagine o video di Dynamic Media è che vengono assegnati alle cartelle. All’interno di un profilo sono riportate le impostazioni per un’immagine o un video. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Pertanto, il modo in cui denomini file e cartelle, disponi sottocartelle e gestisci i file all’interno di queste cartelle ha un impatto sul modo in cui tali risorse vengono elaborate dal profilo.
 
-Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appropriate, insieme a buone pratiche in materia di metadati, puoi sfruttare al massimo la tua raccolta di risorse digitali e garantire che i file giusti vengano elaborati dal profilo giusto.
+Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appropriate, insieme a buone pratiche in materia di metadati, puoi sfruttare al massimo la tua raccolta di risorse digitali e accertarti che i file giusti siano elaborati dal profilo giusto.
 
 Consulta [Informazioni sul profilo immagine e sui profili video di Dynamic Media](about-image-video-profiles.md).
 
