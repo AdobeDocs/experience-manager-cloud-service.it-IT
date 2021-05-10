@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: d21d5a496d4a82dd569e582b5b7d7425bd50077f
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2155'
 ht-degree: 1%
 
 ---
@@ -239,6 +239,14 @@ Offre funzioni quali evidenziazione della sintassi, completamento automatico, su
 
 ## Utilizzo dell&#39;API GraphQL AEM {#actually-using-aem-graphiql}
 
+Prima di iniziare con le query sul contenuto è necessario:
+
+* Abilita l&#39;endpoint
+   * Usa Strumenti -> Siti -> GraphQL
+
+* Installa GraphiQL (se necessario)
+   * Installato come pacchetto dedicato
+
 Per utilizzare effettivamente l’API GraphQL AEM in una query, possiamo utilizzare le due strutture di modello di frammento di contenuto molto semplici:
 
 * Azienda
@@ -346,6 +354,8 @@ Ora che hai imparato ad accedere ai contenuti headless e ad eseguire query trami
    * [Librerie Java GraphQL](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [Imparare a utilizzare GraphQL con AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * [Abilitazione dell’endpoint GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [Installazione dell&#39;interfaccia AEM GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 * [Struttura dei frammenti di contenuto di esempio](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    * [Query Di Esempio - Un Singolo Frammento Di Città Specifico](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
