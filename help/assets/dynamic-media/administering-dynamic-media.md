@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '181'
 ht-degree: 6%
 
 ---
 
 # Configurazione di Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media consente di gestire le risorse offrendo risorse visive di marketing e merchandising su richiesta, ridimensionate automaticamente per essere utilizzate su siti web, mobili e social. Utilizzando un set di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media consente di gestire le risorse offrendo risorse visive di marketing e merchandising su richiesta, ridimensionate automaticamente per essere utilizzate su siti web, mobili e social. Utilizzando un set di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -42,5 +42,5 @@ Vedi anche i seguenti argomenti:
 >
 >**Per l&#39;aggiornamento:**
 >
->* Dopo aver avviato e eseguito l’Experience Manager, tutte le risorse caricate dispongono dell’abilitazione automatica di Dynamic Media (a meno che non sia stata esplicitamente disabilitata dall’amministratore di sistema). Se utilizzi un’istanza aggiornata di Experience Manager e le risorse nuove per Dynamic Media, è probabile che dovrai rielaborare le risorse per renderle abilitate per Dynamic Media. Consulta [Rielaborazione delle risorse in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Dopo aver avviato e eseguito Adobe Experience Manager, tutte le risorse caricate dispongono dell’abilitazione automatica di Dynamic Media (a meno che non sia stata esplicitamente disabilitata dall’amministratore di sistema). Se utilizzi un’istanza aggiornata di Experience Manager e le risorse nuove per Dynamic Media, è probabile che dovrai rielaborare le risorse per renderle abilitate per Dynamic Media. Consulta [Rielaborazione delle risorse in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
