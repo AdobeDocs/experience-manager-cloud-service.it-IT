@@ -3,9 +3,9 @@ title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: 42c6d904fb484435572544147936b50b9a277dcf
+source-git-commit: d2b0fa9448ec3c1150d3c35860ffddb9e4d60d3e
 workflow-type: tm+mt
-source-wordcount: '2731'
+source-wordcount: '2729'
 ht-degree: 46%
 
 ---
@@ -53,7 +53,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * La *fase di acquisizione* per l’istanza di authoring riduce l’intera implementazione di authoring. Questo significa che l’istanza di authoring di AEM non sarà disponibile durante l’intero processo di acquisizione. Assicurati anche che nessuna pipeline di Cloud Manager venga eseguita durante la fase *Acquisizione*.
 
-* Quando utilizzi `Amazon S3` o `Azure` come archivio dati nel sistema di AEM di origine, l’archivio dati deve essere configurato in modo che i BLOB memorizzati non possano essere eliminati (raccolta rifiuti). Ciò per garantire l&#39;integrità dei dati dell&#39;indice. In caso contrario, le estrazioni potrebbero non riuscire a causa della mancanza di integrità dei dati dell&#39;indice.
+* Quando utilizzi `Amazon S3` o `Azure` come archivio dati nel sistema di AEM di origine, l’archivio dati deve essere configurato in modo che i BLOB memorizzati non possano essere eliminati (raccolta rifiuti). In questo modo si garantisce l&#39;integrità dei dati dell&#39;indice e la mancata configurazione di questo modo può causare estrazioni non riuscite a causa della mancanza di integrità dei dati dell&#39;indice.
 
 ## Disponibilità {#availability}
 
