@@ -173,7 +173,7 @@ TranslatableSelezionando la casella di controllo &quot;Translatable&quot; su un 
    * Verifica che il nome della proprietà del campo sia aggiunto nella configurazione di traduzione, contesto `/content/dam/<tenant>`, se non è già presente.
    * Per GraphQL: imposta una proprietà `<translatable>` nel campo Frammento di contenuto su `yes` per consentire il filtro di query GraphQL per l’output JSON con solo contenuto traducibile.
 
-* Per ulteriori informazioni sul tipo di dati specifico e sulle relative proprietà, consulta **[Riferimento contenuto](#content-reference)** .
+* Per ulteriori informazioni su quel tipo di dati specifico e sulle relative proprietà, consulta **[Riferimento contenuto](#content-reference)** .
 
 * Per ulteriori informazioni sul tipo di dati specifico e sulle relative proprietà, consulta **[Riferimento frammento (frammenti nidificati)](#fragment-reference-nested-fragments)** .
 
