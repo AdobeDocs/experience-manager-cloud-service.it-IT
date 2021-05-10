@@ -6,9 +6,9 @@ feature: Gestione risorse
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '3085'
+source-wordcount: '3098'
 ht-degree: 21%
 
 ---
@@ -27,7 +27,7 @@ Puoi aggiungere risorse Dynamic Media direttamente alla pagina se utilizzi Exper
 
 L’aggiunta a una pagina di un componente Media 3D, Dynamic Media, File multimediali interattivi, File multimediali panoramici, Video Ritaglio avanzato o File multimediali video 360 equivale all’aggiunta di un componente a qualsiasi pagina.
 
-**Aggiunta di un componente Dynamic Media a una pagina**
+**Per aggiungere un componente Dynamic Media a una pagina:**
 
 1. Ad Experience Manager, apri la pagina in cui desideri aggiungere il componente Dynamic Media.
 1. Nel riquadro a sinistra, tocca l&#39;icona **[!UICONTROL Componenti]** , quindi filtra per Dynamic Media.
@@ -140,45 +140,45 @@ Il componente elementi multimediali dinamici consente di aggiungere immagini din
 
 Per modificare le seguenti impostazioni di Dynamic Media, tocca l’icona **[!UICONTROL Modifica]** nel componente e quindi **[!UICONTROL Impostazioni Dynamic Media]**.
 
-![dm-settings-image-preset](assets/dm-settings-image-preset.png)
+![Impostazioni predefinite immagine di Dynamic Media](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
 >Per impostazione predefinita, il componente immagine Dynamic Media è adattivo. Se vuoi impostarne una dimensione fissa, lo puoi fare nella scheda **[!UICONTROL Avanzate]** del componente, alle voci **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
 
-* **[!UICONTROL Predefinito]** visualizzatore - Seleziona un predefinito visualizzatore esistente dall’elenco a discesa. Se il predefinito per visualizzatori che stai cercando non è visibile, devi renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. Non puoi selezionare un predefinito visualizzatore se utilizzi un predefinito immagine e viceversa.
+* **[!UICONTROL Predefinito visualizzatore]** : seleziona un predefinito visualizzatore esistente dall’elenco a discesa. Se il predefinito per visualizzatori che stai cercando non è visibile, devi renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. Non puoi selezionare un predefinito visualizzatore se utilizzi un predefinito immagine e viceversa.
 
    Questa opzione è l’unica disponibile se visualizzi set di immagini, set 360 gradi o set di file multimediali diversi. I predefiniti per visualizzatori visualizzati sono anche predefiniti per visualizzatori rilevanti per sola lettura.
 
-* **[!UICONTROL Modificatori visualizzatore]** - I modificatori visualizzatore assumono la forma di coppia nome=valore con un delimitatore &amp; e consentono di modificare i visualizzatori come descritto nella Guida di riferimento visualizzatori. Un esempio di modificatore visualizzatore è `posterimage=img.jpg&caption=text.vtt,1` che imposta un’immagine diversa per la miniatura del video e associa un file di sottotitoli/sottotitoli codificati al video.
+* **[!UICONTROL Modificatori visualizzatore]** : i modificatori visualizzatore assumono la forma di coppia nome=valore con un delimitatore &amp; e consentono di modificare i visualizzatori come descritto nella Guida di riferimento visualizzatori. Un esempio di modificatore visualizzatore è `posterimage=img.jpg&caption=text.vtt,1` che imposta un’immagine diversa per la miniatura del video e associa un file di sottotitoli/sottotitoli codificati al video.
 
-* **[!UICONTROL Predefinito]** immagine (Image Preset) - Seleziona un predefinito immagine esistente dall’elenco a discesa. Se il predefinito immagine che cerchi non è visibile, devi renderlo visibile. Consulta Gestione dei predefiniti per immagini. Non puoi selezionare un predefinito visualizzatore se utilizzi un predefinito immagine e viceversa.
-
-   Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
-
-* **[!UICONTROL Modificatori immagine]** - È possibile applicare effetti immagine fornendo più comandi immagine. Questi comandi sono descritti in Predefiniti immagini e nella Guida di riferimento per il comando Image Serving.
+* **[!UICONTROL Preimpostazione immagine]** : seleziona un predefinito immagine esistente dall’elenco a discesa. Se il predefinito immagine che cerchi non è visibile, devi renderlo visibile. Consulta Gestione dei predefiniti per immagini. Non puoi selezionare un predefinito visualizzatore se utilizzi un predefinito immagine e viceversa.
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
-* **[!UICONTROL Punti di interruzione]** - Se utilizzi questa risorsa su un sito reattivo, devi aggiungere i punti di interruzione immagine. I punti di interruzione dell’immagine devono essere separati da virgole (,). Questa opzione funziona quando non è stata definita alcuna altezza o larghezza in un predefinito immagine.
+* **[!UICONTROL Modificatori immagine]**  - È possibile applicare effetti immagine fornendo più comandi immagine. Questi comandi sono descritti in Predefiniti immagini e nella Guida di riferimento per il comando Image Serving.
+
+   Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
+
+* **[!UICONTROL Punti di interruzione]** : se utilizzi questa risorsa su un sito reattivo, devi aggiungere i punti di interruzione immagine. I punti di interruzione dell’immagine devono essere separati da virgole (,). Questa opzione funziona quando non è stata definita alcuna altezza o larghezza in un predefinito immagine.
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
    Per modificare le seguenti Impostazioni avanzate, tocca **[!UICONTROL Modifica]** nel componente.
 
-* **[!UICONTROL Titolo]** (Title) - Consente di modificare il titolo dell&#39;immagine.
+* **[!UICONTROL Titolo]**  - Consente di modificare il titolo dell’immagine.
 
-* **[!UICONTROL Testo Alt]** - Aggiungi un titolo all’immagine per gli utenti che hanno disattivato la grafica.
-
-   Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
-
-* **[!UICONTROL URL, Apri in]** (Apri in) - Puoi impostare una risorsa per aprire un collegamento. Imposta l’URL e in Apri in indica se desideri aprirlo nella stessa finestra o in una nuova finestra.
+* **[!UICONTROL Testo Alt]**  - Aggiungi un titolo all’immagine per gli utenti che hanno disattivato la grafica.
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
-* **[!UICONTROL Larghezza]** - Immetti il valore in pixel se vuoi che l&#39;immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL URL, Apri in]** : puoi impostare una risorsa per aprire un collegamento. Imposta l’URL e in Apri in indica se desideri aprirlo nella stessa finestra o in una nuova finestra.
 
-* **[!UICONTROL Altezza]** (Height) - Immetti un valore in pixel se desideri che l&#39;immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+   Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
+
+* **[!UICONTROL Larghezza]** : immetti il valore in pixel se vuoi che l’immagine sia a dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+
+* **[!UICONTROL Altezza]** : immetti il valore in pixel se vuoi che l’immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
 
 
 #### Quando esegui operazioni con i Video {#when-working-with-video}
@@ -193,9 +193,9 @@ Per modificare le seguenti impostazioni di Dynamic Media, fai clic su **[!UICONT
 >
 >Per impostazione predefinita, il componente video elementi multimediali dinamici è adattivo. Se vuoi impostarne una dimensione fissa, impostala nel componente con la scheda **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]** nella scheda **[!UICONTROL Avanzate]** .
 
-* **[!UICONTROL Predefinito]** visualizzatore - Seleziona un predefinito visualizzatore video esistente dall’elenco a discesa. Se il predefinito per visualizzatori che stai cercando non è visibile, devi renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. 
+* **[!UICONTROL Predefinito visualizzatore]** : seleziona un predefinito visualizzatore video esistente dall’elenco a discesa. Se il predefinito per visualizzatori che stai cercando non è visibile, devi renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. 
 
-* **[!UICONTROL Modificatori visualizzatore]** - I modificatori visualizzatore assumono la forma di una  `name=value` coppia con un  `&` delimitatore. Consentono di modificare i visualizzatori come descritto nella Guida di riferimento visualizzatori di Adobe. Un esempio di modificatore visualizzatore è `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Modificatori visualizzatore]** : i modificatori visualizzatore assumono la forma di una  `name=value` coppia con un  `&` delimitatore. Consentono di modificare i visualizzatori come descritto nella Guida di riferimento visualizzatori di Adobe. Un esempio di modificatore visualizzatore è `posterimage=img.jpg&caption=text.vtt,1`
 
    Con i modificatori visualizzatore è possibile, ad esempio, effettuare le seguenti operazioni:
 
@@ -204,11 +204,11 @@ Per modificare le seguenti impostazioni di Dynamic Media, fai clic su **[!UICONT
 
       Puoi modificare le seguenti Impostazioni avanzate facendo clic su **[!UICONTROL Modifica]** nel componente.
 
-* **[!UICONTROL Titolo]** - Consente di modificare il titolo del video.
+* **[!UICONTROL Titolo]**  - Modifica il titolo del video.
 
-* **[!UICONTROL Larghezza]** - Immetti il valore in pixel se vuoi che l&#39;immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]** : immetti il valore in pixel se vuoi che l’immagine sia a dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]** (Height) - Immetti un valore in pixel se desideri che l&#39;immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]** : immetti il valore in pixel se vuoi che l’immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
 
 #### Quando si lavora con Smart Crop {#when-working-with-smart-crop}
 
@@ -218,7 +218,7 @@ Consulta [Utilizzo di Smart Crop con Experience Manager Assets Dynamic Media](ht
 
 Vedere anche [Profili immagine](/help/assets/dynamic-media/image-profiles.md).
 
-![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
+![Impostazioni di ritaglio avanzato Dynamic Media](assets/dm-settings-smart-crop.png)
 
 Per modificare la seguente impostazione Dynamic Media, fai clic su **[!UICONTROL Modifica]** nel componente.
 
@@ -226,27 +226,27 @@ Per modificare la seguente impostazione Dynamic Media, fai clic su **[!UICONTROL
 >
 >Per impostazione predefinita, il componente immagine Dynamic Media è adattivo. Se vuoi impostarne una dimensione fissa, lo puoi fare nella scheda **[!UICONTROL Avanzate]** del componente, alle voci **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
 
-* **[!UICONTROL Modificatori immagine]** - È possibile applicare effetti immagine fornendo più comandi immagine. Questi comandi sono descritti in Predefiniti immagini e nella Guida di riferimento per il comando Image Serving.
+* **[!UICONTROL Modificatori immagine]**  - È possibile applicare effetti immagine fornendo più comandi immagine. Questi comandi sono descritti in Predefiniti immagini e nella Guida di riferimento per il comando Image Serving.
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
    Puoi modificare le seguenti Impostazioni avanzate facendo clic su **[!UICONTROL Modifica]** nel componente.
 
-* **[!UICONTROL Abilita corrispondenza proporzioni]**: per consentire a Dynamic Media di scegliere un rendering di ritaglio avanzato con proporzioni che corrispondano al meglio alle proporzioni dell&#39;immagine originale, seleziona questa opzione.
+* **[!UICONTROL Abilita corrispondenza proporzioni]** : per consentire a Dynamic Media di scegliere un rendering di ritaglio avanzato con proporzioni che corrispondano al meglio alle proporzioni dell&#39;immagine originale, seleziona questa opzione.
 
-* **[!UICONTROL Titolo]** (Title) - Consente di modificare il titolo dell&#39;immagine Ritaglio avanzato.
+* **[!UICONTROL Titolo]**  - Modifica il titolo dell’immagine Ritaglio avanzato.
 
-* **[!UICONTROL Testo Alt]** - Aggiungi un titolo all’immagine di ritaglio avanzato per gli utenti che hanno disattivato la grafica.
-
-   Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
-
-* **[!UICONTROL URL, Apri in]** (Apri in) - Puoi impostare una risorsa per aprire un collegamento. Imposta l’URL e in Apri in indica se desideri aprirlo nella stessa finestra o in una nuova finestra.
+* **[!UICONTROL Testo Alt]**  - Aggiungi un titolo all’immagine di ritaglio avanzato per gli utenti che hanno disattivato la grafica.
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
-* **[!UICONTROL Larghezza]** - Immetti il valore in pixel se vuoi che l&#39;immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL URL, Apri in]** : puoi impostare una risorsa per aprire un collegamento. Imposta l’URL e in Apri in indica se desideri aprirlo nella stessa finestra o in una nuova finestra.
 
-* **[!UICONTROL Altezza]** (Height) - Immetti un valore in pixel se desideri che l&#39;immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+   Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
+
+* **[!UICONTROL Larghezza]** : immetti il valore in pixel se vuoi che l’immagine sia a dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+
+* **[!UICONTROL Altezza]** : immetti il valore in pixel se vuoi che l’immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
 
 ### Componente: File multimediali interattivi {#interactive-media-component}
 
@@ -271,21 +271,21 @@ L’assegnazione di un predefinito visualizzatore diverso a ciascun componente F
 
 Per modificare le seguenti impostazioni **[!UICONTROL Generale]**, tocca **[!UICONTROL Modifica]** nel componente.
 
-* **[!UICONTROL Predefinito]** visualizzatore - Seleziona un predefinito visualizzatore esistente dall’elenco a discesa. Se il predefinito per visualizzatori che stai cercando non è visibile, devi renderlo visibile. I predefiniti per visualizzatori devono essere pubblicati prima di poter essere utilizzati. Consulta Gestione dei predefiniti per visualizzatori. 
+* **[!UICONTROL Predefinito visualizzatore]** : seleziona un predefinito visualizzatore esistente dall’elenco a discesa. Se il predefinito per visualizzatori che stai cercando non è visibile, devi renderlo visibile. I predefiniti per visualizzatori devono essere pubblicati prima di poter essere utilizzati. Consulta Gestione dei predefiniti per visualizzatori. 
 
-* **[!UICONTROL Titolo]** - Consente di modificare il titolo del video.
+* **[!UICONTROL Titolo]**  - Modifica il titolo del video.
 
-* **[!UICONTROL Larghezza]** - Immetti il valore in pixel se vuoi che l&#39;immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]** : immetti il valore in pixel se vuoi che l’immagine sia a dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]** (Height) - Immetti un valore in pixel se desideri che l&#39;immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]** : immetti il valore in pixel se vuoi che l’immagine sia di dimensioni fisse. Lasciando vuoto questo valore, la risorsa diventa adattiva.
 
    È possibile modificare le seguenti impostazioni **[!UICONTROL Aggiungi al carrello]**, facendo clic su **[!UICONTROL Modifica]** nel componente.
 
-* **[!UICONTROL Mostra risorsa]** prodotto (Show Product Asset) - Per impostazione predefinita, questo valore è selezionato. La risorsa di prodotto mostra un&#39;immagine del prodotto in base a quanto definito nel modulo Commerce. Rimuovi il segno di spunta per non visualizzare la risorsa di prodotto.
+* **[!UICONTROL Mostra risorsa prodotto]** : per impostazione predefinita, questo valore è selezionato. La risorsa di prodotto mostra un&#39;immagine del prodotto in base a quanto definito nel modulo Commerce. Rimuovi il segno di spunta per non visualizzare la risorsa di prodotto.
 
-* **[!UICONTROL Mostra prezzo]** prodotto - Per impostazione predefinita, questo valore è selezionato. Prezzo del prodotto mostra il prezzo dell&#39;elemento in base a quanto definito nel modulo Commerce. Rimuovi il segno di spunta per non visualizzare il prezzo del prodotto.
+* **[!UICONTROL Mostra prezzo]**  prodotto: per impostazione predefinita, questo valore è selezionato. Prezzo del prodotto mostra il prezzo dell&#39;elemento in base a quanto definito nel modulo Commerce. Rimuovi il segno di spunta per non visualizzare il prezzo del prodotto.
 
-* **[!UICONTROL Mostra modulo]** prodotto (Show Product Form) - Per impostazione predefinita, questo valore non è selezionato. Il Modulo del prodotto include tutte le varianti del prodotto, come la dimensione e il colore. Rimuovi il segno di spunta per non visualizzare le varianti prodotto.
+* **[!UICONTROL Mostra modulo prodotto]** : per impostazione predefinita, questo valore non è selezionato. Il Modulo del prodotto include tutte le varianti del prodotto, come la dimensione e il colore. Rimuovi il segno di spunta per non visualizzare le varianti prodotto.
 
 ### Componente: Supporti panoramici {#panoramic-media-component}
 
@@ -309,11 +309,11 @@ L’assegnazione di un predefinito visualizzatore diverso a ciascun componente *
 >
 >Tuttavia, puoi utilizzare lo stesso predefinito visualizzatore per tutti i componenti Elemento multimediale panoramico che utilizzano risorse dello stesso tipo, all’interno della pagina.
 
-![panoramico-media-viewer-preset](assets/panoramic-media-viewer-preset.png)
+![Predefinito visualizzatore per contenuti multimediali panoramici](assets/panoramic-media-viewer-preset.png)
 
 Per modificare l’impostazione seguente, tocca **[!UICONTROL Configura]** nel componente.
 
-* **[!UICONTROL Predefinito visualizzatore]** - Seleziona un visualizzatore esistente dall’elenco a discesa Predefinito visualizzatore .
+* **[!UICONTROL Predefinito visualizzatore]** : seleziona un visualizzatore esistente dall’elenco a discesa Predefinito visualizzatore .
 
 Se il predefinito per visualizzatori che stai cercando non è visibile, assicurati che sia pubblicato. Pubblica i predefiniti visualizzatore prima di utilizzarli. Consulta [Gestione dei predefiniti per visualizzatori](/help/assets/dynamic-media/managing-viewer-presets.md). 
 
@@ -329,7 +329,7 @@ Il visualizzatore include il supporto nativo per la distribuzione di 360 risorse
 
 Per modificare l’impostazione seguente, tocca **[!UICONTROL Configura]** nel componente.
 
-* **[!UICONTROL Predefinito visualizzatore]** - Seleziona un visualizzatore esistente dall’elenco a discesa Predefinito visualizzatore . Usa Video360VR per gli utenti finali che usano occhiali di realtà virtuale. Include controlli di base sulla riproduzione video e funzioni per social media. Utilizza Video360_social che include controlli di riproduzione video di base. Il rendering video viene eseguito in modalità stereo. Il controllo manuale del punto di vista è disattivato ma il controllo giroscopico è attivato. Non esistono funzioni per social media.
+* **[!UICONTROL Predefinito visualizzatore]** : seleziona un visualizzatore esistente dall’elenco a discesa Predefinito visualizzatore . Usa Video360VR per gli utenti finali che usano occhiali di realtà virtuale. Include controlli di base sulla riproduzione video e funzioni per social media. Utilizza Video360_social che include controlli di riproduzione video di base. Il rendering video viene eseguito in modalità stereo. Il controllo manuale del punto di vista è disattivato ma il controllo giroscopico è attivato. Non esistono funzioni per social media.
 
 Se il predefinito per visualizzatori che stai cercando non è visibile, assicurati che sia pubblicato. Pubblica i predefiniti visualizzatore prima di utilizzarli. Consulta [Gestione dei predefiniti per visualizzatori](/help/assets/dynamic-media/managing-viewer-presets.md). 
 
