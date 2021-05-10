@@ -3,9 +3,9 @@ title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
+source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -57,6 +57,12 @@ Per entrambi i punti 1 e 2 di cui sopra, devi creare una nuova definizione dell�
 che deve quindi andare sotto `ui.apps/src/main/content/jcr_root`. Le cartelle secondarie non sono supportate al momento.
 
 Il pacchetto del campione di cui sopra è costruito come `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+
+>[!NOTE]
+>
+>Qualsiasi pacchetto di contenuto contenente le definizioni degli indici deve avere la seguente proprietà impostata nel file delle proprietà del pacchetto di contenuto, che si trova in `/META-INF/vault/properties.xml`:
+>
+>`noIntermediateSaves=true`
 
 ### Distribuzione delle definizioni degli indici {#deploying-index-definitions}
 
