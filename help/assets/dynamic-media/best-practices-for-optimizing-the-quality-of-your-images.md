@@ -1,14 +1,14 @@
 ---
 title: Best practice per ottimizzare la qualità delle immagini
-description: Scopri le best practice che puoi utilizzare in Dynamic Media per ottimizzare la qualità delle risorse di immagini.
+description: Scopri le best practice per ottimizzare la qualità delle risorse di immagini utilizzando Dynamic Media.
 contentOwner: Rick Brough
 feature: Gestione risorse
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1478'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 L&#39;ottimizzazione della qualità delle immagini può richiedere molto tempo, in quanto molti fattori contribuiscono a rendere i risultati accettabili. Il risultato è in parte soggettivo perché gli individui percepiscono la qualità dell&#39;immagine in modo diverso. La sperimentazione strutturata è fondamentale.
 
-AEM include più di 100 comandi di distribuzione delle immagini Dynamic Media per ottimizzare e ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono essere utili per semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e best practice essenziali.
+Adobe Experience Manager include più di 100 comandi di distribuzione delle immagini Dynamic Media per ottimizzare e ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono essere utili per semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e best practice essenziali.
 
 ## Best practice per il formato immagine (`&fmt=`) {#best-practices-for-image-format-fmt}
 
@@ -41,13 +41,13 @@ Come best practice per il dimensionamento delle immagini, utilizza `&wid=<value>
 
 ## Best practice per la nitidezza delle immagini {#best-practices-for-image-sharpening}
 
-La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito web e in cui vengono commessi molti errori. Prenditi del tempo per saperne di più sul funzionamento di nitidezza e Maschera definizione dettagli in AEM facendo riferimento alle seguenti risorse utili:
+La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito web e in cui vengono commessi molti errori. Prenditi del tempo per saperne di più sul funzionamento di nitidezza e Maschera definizione dettagli in Experience Manager, facendo riferimento alle seguenti risorse utili:
 
-* Il white paper sulle best practice [La nitidezza delle immagini in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) si applica anche a AEM.
+* Il white paper sulle best practice [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) si applica anche all&#39;Experience Manager.
 
-* Guarda [Utilizzo della nitidezza delle immagini con AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Guarda [Utilizzo della nitidezza delle immagini con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-Con AEM è possibile aumentare la nitidezza delle immagini durante l’acquisizione, la distribuzione o entrambe. Di solito, tuttavia, è meglio affinare le immagini utilizzando un solo metodo o l&#39;altro, ma non entrambi. La nitidezza delle immagini sulla consegna, su un URL, in genere fornisce i risultati migliori.
+Ad Experience Manager, puoi rendere più nitide le immagini in fase di acquisizione, consegna o entrambe. Di solito, tuttavia, è meglio affinare le immagini utilizzando un solo metodo o l&#39;altro, ma non entrambi. La nitidezza delle immagini sulla consegna, su un URL, in genere fornisce i risultati migliori.
 
 Sono disponibili due metodi di nitidezza delle immagini:
 
@@ -66,11 +66,11 @@ Sono disponibili due metodi di nitidezza delle immagini:
 
       Per ulteriori informazioni su come impostare questi tre parametri, incluse le best practice da utilizzare con il filtro, consulta le risorse seguenti:
 
-      AEM argomento dell’Aiuto sulla nitidezza di un’immagine.
+      * Il white paper sulle best practice [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) si applica anche all&#39;Experience Manager.
 
-      White paper sulle best practice [Adobe Dynamic Media Classic Image Quality e Best practice per la nitidezza delle immagini](/help/assets/dynamic-media/assets/sharpening_images.pdf).
+      * Guarda [Utilizzo della nitidezza delle immagini con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-      * AEM inoltre consente di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ciascun componente di colore utilizzando il valore 0 o alla luminosità/intensità dell&#39;immagine utilizzando il valore 1.
+      * Experience Manager consente anche di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ciascun componente di colore utilizzando il valore 0 o alla luminosità/intensità dell&#39;immagine utilizzando il valore 1.
 
 
 
@@ -100,7 +100,7 @@ Come best practice per la compressione JPG utilizza `&qlt=85,0`.
 
 ## Best practice per il ridimensionamento JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-`jpegSize` è un parametro utile se desideri garantire che un’immagine non superi una certa dimensione per la distribuzione su dispositivi con memoria limitata.
+Il parametro `jpegSize` è utile se si desidera garantire che un&#39;immagine non superi una certa dimensione per la consegna a dispositivi con memoria limitata.
 
 * Questo parametro è impostato in kilobyte (`jpegSize=&lt;size_in_kilobytes&gt;`). Definisce le dimensioni massime consentite per la distribuzione delle immagini.
 * `&jpegSize=` interagisce con il parametro di compressione JPG  `&qlt=`. Se la risposta JPG con il parametro di compressione JPG specificato (`&qlt=`) non supera il valore jpegSize, l&#39;immagine viene restituita con `&qlt=` come definito. In caso contrario, `&qlt=` viene gradualmente ridotto finché l&#39;immagine non rientra nelle dimensioni massime consentite, o finché il sistema non lo determina e restituisce un errore.
@@ -123,4 +123,4 @@ Durante l’esperimento, i seguenti suggerimenti generali sono utili per ottimiz
 
 * Prova e verifica parametri diversi in tempo reale, direttamente su un URL.
 * Come best practice, ricorda che puoi raggruppare i comandi di Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è fondamentalmente macro di comando URL con nomi predefiniti personalizzati come `$thumb_low$` e `&product_high$`. Il nome predefinito personalizzato in un percorso URL chiama questi predefiniti. Tali funzionalità consentono di gestire i comandi e le impostazioni di qualità per diversi schemi di utilizzo delle immagini sul sito web e di ridurre la lunghezza complessiva degli URL.
-* Experience Manager offre inoltre modalità più avanzate per ottimizzare la qualità delle immagini, ad esempio applicando la nitidezza delle immagini durante l’acquisizione. Per ottimizzare i risultati del rendering, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) può aiutarti con informazioni personalizzate e best practice.
+* Experience Manager offre inoltre modalità più avanzate per ottimizzare la qualità delle immagini, ad esempio applicando la nitidezza delle immagini durante l’acquisizione. Per ottimizzare i risultati del rendering, i [servizi di consulenza di Adobe](https://business.adobe.com/customers/consulting-services/main.html) possono aiutarti con informazioni personalizzate e best practice.
