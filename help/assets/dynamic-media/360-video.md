@@ -5,9 +5,9 @@ feature: Video VR a 360°
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Consulta anche [Gestione dei predefiniti per visualizzatori](/help/assets/dynami
 
 ## 360 Video in azione {#video-in-action}
 
-Toccare [Stazione Spaziale 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) per aprire una finestra del browser e guardare un video a 360 gradi. Durante la riproduzione del video, trascinare il puntatore in una nuova posizione per modificare l’angolo di visualizzazione.
+Toccare [Stazione Spaziale 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) per aprire una finestra del browser e guardare un video a 360 gradi. Durante la riproduzione del video, trascinare il puntatore in una nuova posizione per modificare l’angolo di visualizzazione.
 
 ![360 Video ](assets/6_5_360videoiss_simplified.png)
 *campioneFrame video da Space Station 360*
@@ -93,7 +93,7 @@ Start by uploading 360 Videos.
 
 ## Anteprima dei video 360 {#previewing-video}
 
-Puoi usare Anteprima per vedere come si presenta ai clienti il tuo video 360 e assicurarti che funzioni come previsto.
+È possibile utilizzare Anteprima per vedere come viene visualizzato ai clienti il video 360 e assicurarsi che funzioni come previsto.
 
 Consulta anche [Modifica dei predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets).
 
