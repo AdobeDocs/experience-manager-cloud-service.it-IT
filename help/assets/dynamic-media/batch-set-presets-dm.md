@@ -6,9 +6,9 @@ feature: Predefiniti immagine,Predefiniti visualizzatore
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3435'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ Per comprendere l’importanza dell’utilizzo di una convenzione per i nomi, su
 
 La pagina **[!UICONTROL Preimpostazione set di batch]** in [!DNL Dynamic Media] consente di creare, modificare o eliminare i predefiniti set di batch e di applicare o rimuovere i predefiniti set di batch da o verso le cartelle di risorse. È possibile utilizzare gli elenchi a discesa dei campi modulo per definire un Batch Set Preset oppure il campo **[!UICONTROL Codice non elaborato]**, che consente di digitare la sintassi delle espressioni regolari.
 
-Puoi creare tutti i predefiniti per set di batch necessari per coprire tutti i processi di acquisizione delle risorse necessari.
+Puoi creare molti predefiniti per set di batch per coprire tutti i processi di inserimento delle risorse necessari.
 
-**Informazioni sulla convenzione per la denominazione delle risorse**
+### Informazioni sulla convenzione per la denominazione delle risorse
 
 L&#39;area **[!UICONTROL Convenzione per la denominazione delle risorse]** nella pagina **[!UICONTROL Preimpostazione set di batch]** dispone di due elementi che è possibile utilizzare per definire il predefinito del set di batch: **[!UICONTROL Corrispondenza]** e **[!UICONTROL Nome base]**. Questi elementi consentono di definire una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
@@ -51,7 +51,7 @@ Ad esempio, la sintassi per un&#39;espressione regolare di corrispondenza letter
 
 `(\w+)-\w+-\w+`
 
-**Informazioni sull’ordinamento delle sequenze**
+### Informazioni sull’ordinamento delle sequenze
 
 Facoltativamente, puoi definire l’ordine in cui vengono visualizzate le immagini dopo il raggruppamento del set di immagini o del set 360 gradi in [!DNL Dynamic Media]. Per impostazione predefinita, le risorse vengono ordinate in modo alfanumerico. Tuttavia, per definire l’ordine è possibile utilizzare un elenco di espressioni regolari separate da virgola.
 
@@ -67,7 +67,7 @@ Al termine della creazione di un predefinito per set di batch, lo si applica a u
 
 **Per creare un predefinito per set di batch per un set di immagini o un set 360 gradi:**
 
-1. Tocca il logo Adobe Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -113,7 +113,7 @@ Consulta [Creazione di un Batch Set Preset per un set di immagini o un set 360 g
 | Includi risorse derivate | Facoltativo. Per fare in modo che l’IPS di [!DNL Dynamic Media] (Image Production System) includa immagini generate o &quot;derivate&quot; con il set 360 gradi o il set di immagini, seleziona **[!UICONTROL Sì]** (impostazione predefinita). Una risorsa derivata è un’immagine che non è stata caricata direttamente da un utente. Al contrario, la risorsa è stata prodotta da IPS al momento del caricamento di una risorsa principale. Ad esempio, una risorsa immagine generata da IPS da una pagina in un PDF, al momento del caricamento del PDF in [!DNL Dynamic Media], è considerata una risorsa derivata. |
 | Cartella di destinazione | Facoltativo. Se definisci un numero elevato di set di immagini o set 360 gradi, Adobe consiglia di mantenere questi set separati dalle cartelle contenenti le risorse stesse. È quindi consigliabile creare una cartella Set immagini o Set 360 gradi e reindirizzare l’applicazione in modo che inserisca qui i set generati da set di batch.<br>In questo caso, specifica quale cartella della struttura di cartelle Risorse di Experience Manager (`/content/dam`) dispone del Batch Set Preset attivo. Assicurati che la cartella sia abilitata per la sincronizzazione [!DNL Dynamic Media] per consentirne la creazione come cartella di destinazione. Consulta [Configurazione della pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>A più cartelle può essere assegnato un set di batch specifico, se lo si applica tramite  **[!UICONTROL Proprietà]** della cartella. Consulta [Applicazione dei predefiniti per set di batch dalla pagina Proprietà di una cartella di risorse](#apply-bsp-to-folders-via-properties).<br>Se non si specifica una cartella, il set di immagini o il set 360 gradi predefiniti per set di batch generato viene creato nella stessa cartella della cartella di risorse in cui è stato caricato. |
 | **[!UICONTROL Imposta convenzione di denominazione]** |  |
-| Prefisso<br>o<br>Suffisso | Facoltativo. Immettere un prefisso, un suffisso o entrambi nei rispettivi campi.<br>I campi prefisso e suffisso consentono di creare un numero illimitato di predefiniti per set di batch utilizzando una convenzione di denominazione file alternativa personalizzata per un determinato set di contenuti. Questo metodo è particolarmente utile nei casi in cui vi sia un&#39;eccezione allo schema di denominazione predefinito definito da un&#39;azienda.<br>Il prefisso o il suffisso viene aggiunto al nome  **[!UICONTROL base definito nell’]** area della  **[!UICONTROL convenzione per la denominazione delle]** risorse. Aggiungendo un prefisso o un suffisso, accertati che il set di immagini o il set 360 gradi venga creato esclusivamente e indipendentemente da altre risorse. Può inoltre essere utile per aiutare altri a identificare i tipi di file. Ad esempio, per determinare la modalità colore utilizzata, è possibile aggiungere come prefisso o suffisso `rgb` o `cmyk`.<br>Per utilizzare le funzionalità preimpostate per i set di batch, non è necessario specificare una convenzione di denominazione impostata, ma è consigliabile utilizzare tale convenzione. Questa procedura consente di definire tutti gli elementi della convenzione di denominazione che si desidera raggruppare in un set per semplificare la creazione di set di batch. |
+| Prefisso<br>o<br>Suffisso | Facoltativo. Immettere un prefisso, un suffisso o entrambi nei rispettivi campi.<br>I campi prefisso e suffisso consentono di creare molti predefiniti per set di batch utilizzando una convenzione di denominazione file personalizzata alternativa per un particolare set di contenuti. Questo metodo è particolarmente utile nei casi in cui vi sia un&#39;eccezione allo schema di denominazione predefinito definito da un&#39;azienda.<br>Il prefisso o il suffisso viene aggiunto al nome  **[!UICONTROL base definito nell’]** area della  **[!UICONTROL convenzione per la denominazione delle]** risorse. Aggiungendo un prefisso o un suffisso, accertati che il set di immagini o il set 360 gradi venga creato esclusivamente e indipendentemente da altre risorse. Può inoltre essere utile per aiutare altri a identificare i tipi di file. Ad esempio, per determinare la modalità colore utilizzata, è possibile aggiungere come prefisso o suffisso `rgb` o `cmyk`.<br>Per utilizzare le funzionalità preimpostate per i set di batch, non è necessario specificare una convenzione di denominazione impostata, ma è consigliabile utilizzare tale convenzione. Questa procedura consente di definire tutti gli elementi della convenzione di denominazione che si desidera raggruppare in un set per semplificare la creazione di set di batch. |
 | **[!UICONTROL Risultati regola - RegX]** |  |
 | Convenzione per la denominazione delle risorse - Corrispondenza | Sola lettura. Visualizza la sintassi delle espressioni regolari in base alle opzioni del modulo Match selezionate o al codice non elaborato immesso. |
 | Convenzione per la denominazione delle risorse - Nome base | Sola lettura. Visualizza la sintassi dell&#39;espressione regolare in base alle opzioni del modulo Nome base selezionate o al codice non elaborato immesso. |
@@ -143,7 +143,7 @@ Rielabora le risorse in una cartella se si verifica uno dei due scenari seguenti
 
 ### Applicazione dei predefiniti per set di batch alle cartelle di risorse dalla pagina Predefinito set di batch {#apply-bsp-to-folders-via-bsp-page}
 
-1. Tocca il logo Adobe Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
 1. Nella pagina **[!UICONTROL Predefiniti set di batch]**, a sinistra della colonna **[!UICONTROL Nome predefinito]**, seleziona la casella di controllo di ciascun predefinito set di batch che desideri applicare alle cartelle.
 1. Nella barra degli strumenti, tocca **[!UICONTROL Applica predefinito batch alle cartelle]**.
 1. Nella pagina **[!UICONTROL Seleziona cartelle]**, selezionare la casella di controllo di ciascuna cartella a cui si desidera applicare i predefiniti per set di batch.
@@ -151,7 +151,7 @@ Rielabora le risorse in una cartella se si verifica uno dei due scenari seguenti
 
 ### Applicazione dei predefiniti per set di batch dalla pagina Proprietà di una cartella di risorse {#apply-bsp-to-folders-via-properties}
 
-1. Tocca il logo Adobe Experience Manager e passa a **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 1. Passa a una cartella alla quale desideri applicare uno o più predefiniti per set di batch.
 1. Nella pagina, a sinistra della colonna **[!UICONTROL Nome]**, selezionare la casella di controllo di una cartella.
 1. Nella barra degli strumenti, tocca **[!UICONTROL Proprietà]**.
@@ -179,7 +179,7 @@ Se desideri che il nuovo predefinito modificato venga nuovamente applicato alle 
 
 **Per modificare un predefinito per set di batch:**
 
-1. Tocca il logo Adobe Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
 1. Nella pagina **[!UICONTROL Predefiniti set di batch]**, a sinistra della colonna **[!UICONTROL Nome predefinito]**, seleziona il predefinito set di batch da modificare.
 1. Nella barra degli strumenti, tocca **[!UICONTROL Modifica predefinito set di batch]**.
 1. Se necessario, modifica il predefinito.
@@ -193,7 +193,7 @@ Se copi un predefinito esistente a cui fanno riferimento le cartelle di risorse,
 
 **Per copiare un Batch Set Preset esistente:**
 
-1. Tocca il logo Adobe Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
 1. Nella pagina **[!UICONTROL Predefiniti set di batch]**, a sinistra della colonna **[!UICONTROL Nome predefinito]**, seleziona la casella di controllo del predefinito set di batch da copiare.
 1. Nella barra degli strumenti, tocca **[!UICONTROL Copia]**.
 1. Nella finestra di dialogo **[!UICONTROL Copia predefinito set di batch]**, digitare un nuovo nome per il predefinito nella casella di testo **[!UICONTROL Titolo]**.
@@ -215,7 +215,7 @@ Esistono due metodi per rimuovere i predefiniti per set di batch dalle cartelle.
 
 ### Rimozione dei predefiniti per set di batch dalle cartelle tramite la pagina Predefiniti set di batch {#remove-bsp-from-folders-via-bsp-page}
 
-1. Tocca il logo Adobe Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
 1. Nella pagina **[!UICONTROL Predefiniti set di batch]**, a sinistra della colonna **[!UICONTROL Nome predefinito]**, selezionare la casella di controllo di uno o più predefiniti set di batch che si desidera rimuovere da una o più cartelle.
 1. Nella barra degli strumenti, tocca **[!UICONTROL Rimuovi predefinito batch da cartelle]**.
 
@@ -228,7 +228,7 @@ Esistono due metodi per rimuovere i predefiniti per set di batch dalle cartelle.
 
 ### Rimozione dei predefiniti per set di batch dalla pagina Proprietà di una cartella {#remove-bsp-from-folders-via-properties}
 
-1. Tocca il logo Adobe Experience Manager e passa a **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 1. Passa alla cartella in cui desideri rimuovere uno o più predefiniti per set di batch.
 1. Nella pagina, a sinistra della colonna **[!UICONTROL Nome]**, selezionare la casella di controllo di una cartella.
 1. Nella barra degli strumenti, tocca **[!UICONTROL Proprietà]**.
@@ -250,7 +250,7 @@ Se invece desideri *rimuovere* i predefiniti dalle cartelle, consulta [Rimozione
 
 **Per eliminare i predefiniti per set di batch:**
 
-1. Tocca il logo Adobe Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti set di batch]**.
 1. Nella pagina **[!UICONTROL Predefiniti set di batch]**, a sinistra della colonna **[!UICONTROL Nome predefinito]**, seleziona la casella di controllo di uno o più predefiniti set di batch da eliminare.
 1. Nella barra degli strumenti, tocca **[!UICONTROL Elimina predefiniti set di batch]**.
 
