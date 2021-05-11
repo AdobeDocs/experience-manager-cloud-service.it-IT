@@ -4,9 +4,9 @@ description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience M
 feature: Frammenti di contenuto, API GraphQL
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3935'
 ht-degree: 1%
 
 ---
@@ -121,20 +121,20 @@ Esistono due tipi di endpoint in AEM:
 
 * Globale
    * Disponibile per tutti i siti.
-   * Questo endpoint può utilizzare tutti i modelli di frammenti di contenuto di tutti i tenant.
-   * Se esistono modelli di frammento di contenuto che devono essere condivisi tra i tenant, questi devono essere creati nel tenant globale.
-* Tenant:
-   * Corrisponde a una configurazione tenant, come definita nel [Browser di configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Questo endpoint può utilizzare tutti i modelli di frammenti di contenuto da tutte le configurazioni di Sites (definite in [Browser di configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Se esistono modelli di frammento di contenuto che devono essere condivisi tra le configurazioni di Sites, questi devono essere creati nelle configurazioni di Sites globali.
+* Configurazioni siti:
+   * Corrisponde a una configurazione Sites, come definita nel [Browser di configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
    * Specifico per un sito/progetto specifico.
-   * Un endpoint specifico per il tenant utilizzerà i modelli di frammento di contenuto di quel tenant specifico insieme a quelli del tenant globale.
+   * Un endpoint specifico per la configurazione di Sites utilizzerà i modelli di frammento di contenuto di quella specifica configurazione di Sites insieme a quelli della configurazione di Sites globale.
 
 >[!CAUTION]
 >
->L’editor dei frammenti di contenuto può consentire a un frammento di contenuto di un tenant di fare riferimento a un frammento di contenuto di un altro tenant (tramite criteri).
+>L’Editor frammento di contenuto può consentire a un frammento di contenuto di una configurazione Sites di fare riferimento a un frammento di contenuto di un’altra configurazione Sites (tramite criteri).
 >
->In tal caso, non tutto il contenuto sarà recuperabile utilizzando un endpoint specifico per il tenant.
+>In questo caso non tutti i contenuti saranno recuperabili utilizzando un endpoint specifico per la configurazione di Sites.
 >
->L’autore del contenuto deve controllare questo scenario; ad esempio, potrebbe essere utile considerare l’inserimento di modelli di frammenti di contenuto condivisi nel tenant globale.
+>L’autore del contenuto deve controllare questo scenario; ad esempio, potrebbe essere utile considerare l’idea di inserire modelli di frammenti di contenuto condivisi nella configurazione Siti globali .
 
 Il percorso dell&#39;archivio di GraphQL per AEM endpoint globale è:
 
@@ -196,6 +196,10 @@ Seleziona il nuovo endpoint e **Pubblica** per renderlo completamente disponibil
 ## Interfaccia GraphiQL {#graphiql-interface}
 
 È disponibile un’implementazione dell’interfaccia standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) da utilizzare con AEM GraphQL. Può essere installato [con AEM](#installing-graphiql-interface).
+
+>[!NOTE]
+>
+>GraphiQL è associato all’endpoint globale (e non funziona con altri endpoint per configurazioni specifiche di Sites).
 
 Questa interfaccia ti consente di inserire e testare direttamente le query.
 
@@ -587,21 +591,21 @@ Dopo aver preparato una query con una richiesta POST, può essere eseguita con u
 
 Questo è necessario in quanto le query POST di solito non vengono memorizzate nella cache e se si utilizza GET con la query come parametro esiste un rischio significativo che il parametro diventi troppo grande per i servizi HTTP e gli intermediari.
 
-Le query persistenti devono sempre utilizzare l&#39;endpoint correlato alla configurazione [appropriata (tenant)](#graphql-aem-endpoint); in modo che possano utilizzare una delle due opzioni, oppure entrambe:
+Le query persistenti devono sempre utilizzare l&#39;endpoint correlato alla [configurazione Sites appropriata](#graphql-aem-endpoint); in modo che possano utilizzare una delle due opzioni, oppure entrambe:
 
 * Configurazione globale ed endpoint
 La query ha accesso a tutti i modelli di frammento di contenuto.
-* Configurazioni e endpoint specifici del tenant
-La creazione di una query persistente per una configurazione tenant specifica richiede un endpoint specifico per il tenant corrispondente (per fornire l’accesso ai relativi modelli di frammento di contenuto).
-Ad esempio, per creare una query persistente specifica per il tenant WKND, è necessario creare in anticipo una configurazione tenant specifica per WKND corrispondente e un endpoint specifico per WKND.
+* Configurazione e endpoint di Sites specifici
+La creazione di una query persistente per una configurazione specifica di Sites richiede un endpoint specifico per la configurazione di Sites corrispondente (per fornire accesso ai relativi modelli di frammenti di contenuto).
+Ad esempio, per creare una query persistente specifica per la configurazione di WKND Sites, è necessario creare in anticipo una configurazione di Sites specifica per WKND corrispondente e un endpoint specifico per WKND.
 
 >[!NOTE]
 >
 >Per ulteriori informazioni, consulta [Abilita funzionalità frammento di contenuto nel browser di configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) .
 >
->È necessario abilitare le **query di persistenza GraphQL** per la configurazione tenant appropriata.
+>È necessario abilitare le **query di persistenza GraphQL** per la configurazione Sites appropriata.
 
-Ad esempio, se è presente una particolare query denominata `my-query` che utilizza un modello `my-model` dalla configurazione del tenant `my-conf`:
+Ad esempio, se esiste una particolare query denominata `my-query` che utilizza un modello `my-model` dalla configurazione Sites `my-conf`:
 
 * Puoi creare una query utilizzando l’endpoint specifico `my-conf`, quindi la query verrà salvata come segue:
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
