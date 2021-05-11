@@ -5,7 +5,7 @@ feature: Gestione risorse
 role: Business Practitioner
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 6%
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # Attivazione della protezione hotlinking in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
-Il collegamento a caldo si verifica quando un sito web di terze parti utilizza codice HTML per visualizzare un’immagine dal sito web. Utilizzano la larghezza di banda ogni volta che l&#39;immagine viene richiesta perché il browser del visitatore vi accede direttamente dal server. Hotlink *protection* è un metodo per impedire ad altri siti web di collegarsi direttamente a immagini, CSS o JavaScript sulle tue pagine web. Questo tipo di schermo aiuta a ridurre l&#39;utilizzo di larghezza di banda inutile sotto il tuo account Dynamic Media.
+Il collegamento a caldo si verifica quando un sito web di terze parti utilizza codice HTML per visualizzare un’immagine dal sito web. Utilizzano la larghezza di banda ogni volta che l&#39;immagine viene richiesta perché il browser del visitatore vi accede direttamente dal server. Hotlink *protection* è un metodo per impedire ad altri siti web di collegarsi direttamente a immagini, CSS o JavaScript™ sulle tue pagine web. Questo tipo di schermo aiuta a ridurre l&#39;utilizzo di larghezza di banda inutile sotto il tuo account Dynamic Media.
 
 [Adobe Customer ](https://helpx.adobe.com/support.html) Carecer può configurare un filtro referrer a livello CDN. In questo modo il contenuto Dynamic Media viene distribuito solo ai siti web inclusi nell’elenco dei siti web consentiti per il dominio.
 
