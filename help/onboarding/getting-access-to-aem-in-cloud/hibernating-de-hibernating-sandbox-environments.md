@@ -1,14 +1,14 @@
 ---
 title: 'Ambienti Sandbox sospensione e disattivazione '
-description: 'Ambienti Sandbox sospensione e disattivazione '
+description: Ambienti Sandbox sospensione e disattivazione
+exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
-
 
 # Ambienti Sandbox sospensione e disattivazione {#hibernating-introduction}
 
@@ -121,8 +121,12 @@ Alcune considerazioni chiave relative agli ambienti ibernati e disattivati sono:
 
 * Gli aggiornamenti AEM possono essere applicati agli ambienti in sospensione, attivabili manualmente dai clienti da Cloud Manager. L’ambiente rimarrà in ibernazione e la nuova versione apparirà nell’ambiente una volta disattivata.
 
->[!NOTE]
->Al momento, Cloud Manager non indica se un ambiente è ibernato.
+* Le sandbox vengono messe nel nodo di ibernazione dopo 8 ore di inattività, dopo di che, possono essere deibernate.
+
+* Le sandbox vengono cancellate dopo 6 mesi di essere in modalità di sospensione continua, dopo di che, possono essere ricreati.
+
+   >[!NOTE]
+   >Al momento, Cloud Manager non indica se un ambiente è ibernato.
 
 ## Aggiornamenti AEM ambienti Sandbox {#aem-updates-sandbox}
 
@@ -135,9 +139,4 @@ Per informazioni su come aggiornare un ambiente, consulta [Aggiornamento ambient
 >[!NOTE]
 >* È possibile eseguire un aggiornamento manuale solo se l’ambiente di destinazione dispone di una pipeline configurata correttamente.
 >* Un aggiornamento manuale dell&#39;ambiente *Produzione* o *Stage* aggiornerà automaticamente l&#39;altro ambiente. L’ambiente Production+Stage deve trovarsi nella stessa versione AEM.
-
-
-
-
-
 
