@@ -5,9 +5,9 @@ feature: Gestione risorse
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '321'
 ht-degree: 6%
 
 ---
@@ -18,8 +18,8 @@ La modalità di distribuzione delle risorse Dynamic Media, sia video che immagin
 
 Con Dynamic Media hai diverse opzioni:
 
-* Se il sito web è ospitato su AEM, è necessario aggiungere le risorse Dynamic Media direttamente alla pagina.
-* Se il sito web non è AEM, puoi scegliere tra:
+* Se il sito web è ospitato su Adobe Experience Manager, è necessario aggiungere le risorse Dynamic Media direttamente alla pagina.
+* Se il tuo sito web non è disponibile come Experience Manager, puoi scegliere tra:
 
    * Incorporare il video o l’immagine sul sito web.
    * Collega URL all’applicazione web. Utilizza il collegamento quando desideri distribuire un lettore video come finestra a comparsa o modale.
@@ -43,6 +43,6 @@ Per ulteriori informazioni, consulta i seguenti argomenti:
 
 ## Distribuzione HTTP/2 di risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) su HTTP/2. In altre parole, è disponibile un URL o un codice di incorporamento pubblicato per l’immagine o il video da integrare con qualsiasi applicazione che accetta una risorsa in hosting. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di consegna migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
+Experience Manager ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) su HTTP/2. In altre parole, è disponibile un URL o un codice di incorporamento pubblicato per l’immagine o il video da integrare con qualsiasi applicazione che accetta una risorsa in hosting. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di consegna migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
 
 Per ulteriori informazioni, consulta [Domande frequenti sulla distribuzione dei contenuti HTTP/2](/help/assets/dynamic-media/http2faq.md).
