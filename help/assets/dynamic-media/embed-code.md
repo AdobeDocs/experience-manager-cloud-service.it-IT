@@ -5,9 +5,9 @@ feature: Gestione risorse
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '377'
 ht-degree: 21%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 21%
 
 Utilizza la funzione **[!UICONTROL Incorpora codice]** per riprodurre il video o visualizzare una risorsa incorporata in una pagina web. Puoi copiare il codice da incorporare negli Appunti, per poi incollarlo nelle pagine web. La modifica del codice non è consentita nella finestra di dialogo **[!UICONTROL Incorpora codice]**.
 
-Incorpora gli URL solo se _non_ utilizzi AEM come WCM. Se utilizzi AEM come WCM, [aggiungi le risorse direttamente sulla pagina](adding-dynamic-media-assets-to-pages.md).
+Puoi incorporare gli URL solo se _non_ utilizzi Adobe Experience Manager come WCM. Se utilizzi Experience Manager come WCM, [aggiungi le risorse direttamente sulla pagina](adding-dynamic-media-assets-to-pages.md).
 
 Consulta [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
@@ -32,7 +32,7 @@ Consulta [Distribuzione di immagini ottimizzate per un sito reattivo](responsive
 >
 >Consulta [Pubblicazione di predefiniti immagine](managing-image-presets.md#publishing-image-presets).
 
-**Per incorporare il visualizzatore video o immagine Dynamic Media in una pagina web**
+**Per incorporare il visualizzatore video o immagine Dynamic Media in una pagina web:**
 
 1. Passa al video o alla risorsa immagine *pubblicata* di cui desideri copiare il codice da incorporare.
 
