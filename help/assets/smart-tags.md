@@ -6,9 +6,9 @@ feature: Tag avanzati, assegnazione tag
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: d86581f61c9dd7339f7deb8ee1f5e469ce2b5f7c
+source-git-commit: 2633a8fdd8301a38cd044ba822494ed54c564863
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2401'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ Le organizzazioni che si occupano di risorse digitali utilizzano sempre più voc
 
 Rispetto ai vocabolari linguistici naturali, l’assegnazione di tag basati sulla tassonomia aziendale consente di allineare le risorse al business di un’azienda e garantisce che le risorse più rilevanti vengano visualizzate nelle ricerche. Ad esempio, un produttore di automobili può assegnare tag alle immagini di un&#39;automobile con nomi di modello in modo che vengano visualizzate solo le immagini pertinenti quando viene eseguita una ricerca per progettare una campagna promozionale.
 
-In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) per addestrare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e sulla tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Per impostazione predefinita, le nuove distribuzioni [!DNL Experience Manager Assets] sono integrate con [!DNL Adobe Developer Console] . Consente di configurare più rapidamente la funzionalità dei tag avanzati. Nelle implementazioni precedenti, gli amministratori possono configurare manualmente [l&#39;integrazione di tag avanzati](/help/assets/smart-tags-configuration.md#aio-integration).
+In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) per addestrare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e sulla tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] per impostazione  [!DNL Adobe Developer Console] predefinita, le distribuzioni sono integrate con .
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -151,40 +151,42 @@ Per verificare se il servizio Tag avanzati è addestrato sui tag nel set di riso
 
 ## Assegnare tag alle risorse {#tag-assets}
 
-Dopo aver completato la formazione del servizio Tag avanzati, puoi attivare il flusso di lavoro di assegnazione tag per applicare automaticamente i tag a un diverso set di risorse. Puoi applicare il flusso di lavoro di assegnazione tag on-demand o pianificarlo per l’esecuzione periodica. Il flusso di lavoro di assegnazione tag si applica sia alle risorse che alle cartelle.
+Dopo aver eseguito il training del servizio Tag avanzati, le risorse caricate vengono automaticamente taggate. [!DNL Experience Manager] applica i tag appropriati in tempo quasi reale. Puoi applicare il flusso di lavoro di assegnazione tag on-demand o pianificarlo per l’esecuzione periodica. Il flusso di lavoro di assegnazione tag si applica sia alle risorse che alle cartelle.
 
-### Assegnare tag alle risorse dalla console del flusso di lavoro {#tagging-assets-from-the-workflow-console}
+<!--
+### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
-1. Nell&#39;interfaccia [!DNL Experience Manager] vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
-1. Dalla pagina **[!UICONTROL Modelli di flusso di lavoro]**, seleziona il flusso di lavoro **[!UICONTROL Risorse di tag avanzati DAM]** e fai clic su **[!UICONTROL Avvia flusso di lavoro]** nella barra degli strumenti.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]**, individua la cartella del payload contenente le risorse sulle quali desideri applicare automaticamente i tag.
-1. Specifica un titolo per il flusso di lavoro e un commento facoltativo. Fare clic su **[!UICONTROL Esegui]**.
+1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. Specify a title for the workflow and an optional comment. Click **[!UICONTROL Run]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   *Figura: Passa alla cartella delle risorse ed esamina i tag per verificare se le risorse sono state contrassegnate correttamente. Per informazioni dettagliate, consulta [gestire tag avanzati](#manage-smart-tags-and-searches).*
+   *Figure: Navigate to the asset folder and review the tags to verify whether your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).*
 
-### Assegnare tag alle risorse dalla timeline {#tagging-assets-from-the-timeline}
+### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
-1. Dall’interfaccia utente di [!DNL Assets] , seleziona la cartella contenente le risorse o le risorse specifiche a cui desideri applicare i tag avanzati.
-1. Dall&#39;angolo in alto a sinistra, apri la **[!UICONTROL Timeline]**.
-1. Apri le azioni dalla parte inferiore della barra laterale sinistra e fai clic su **[!UICONTROL Avvia flusso di lavoro]**.
+1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
+1. From upper-left corner, open the **[!UICONTROL Timeline]**.
+1. Open actions from the bottom of the left sidebar and click **[!UICONTROL Start Workflow]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Seleziona il flusso di lavoro **[!UICONTROL DAM Smart Tag Assets]** e specifica un titolo per il flusso di lavoro.
-1. Fare clic su **[!UICONTROL Start]**. Il flusso di lavoro applica i tag alle risorse. Accedi alla cartella delle risorse ed esamina i tag per verificare che le risorse siano state contrassegnate correttamente. Per informazioni dettagliate, consulta [gestire tag avanzati](#manage-smart-tags-and-searches).
+1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
+1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify that your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->Nei cicli di assegnazione tag successivi, solo le risorse modificate vengono nuovamente taggate con tag appena addestrati. Tuttavia, anche le risorse non modificate vengono contrassegnate se il divario tra l’ultimo ciclo di assegnazione tag e quello corrente per il flusso di lavoro di assegnazione tag supera le 24 ore. Per i flussi di lavoro con tag periodici, le risorse non modificate vengono contrassegnate quando il tempo gap supera i sei mesi.
+>In the subsequent tagging cycles, only the modified assets are tagged again with newly trained tags. However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds six months.
 
-### Assegnare tag alle risorse caricate {#tag-uploaded-assets}
+### Tag uploaded assets {#tag-uploaded-assets}
 
-[!DNL Experience Manager] può assegnare automaticamente i tag alle risorse caricate dagli utenti in DAM. A questo scopo, gli amministratori configurano un flusso di lavoro per aggiungere un passaggio disponibile che contrassegna le risorse. Consulta [come abilitare i tag avanzati per le risorse caricate](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+[!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+-->
 
 ## Gestire tag avanzati e ricerche di risorse {#manage-smart-tags-and-searches}
 
@@ -247,7 +249,6 @@ Per cercare le risorse con tag avanzati (regolari o migliorati), utilizza la ric
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Experience Manager] Configurazione per l’assegnazione tag avanzati](smart-tags-configuration.md)
 >* [Informazioni sulla gestione delle risorse tramite tag avanzati](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [Assegnazione di tag avanzati alle risorse video](smart-tags-video-assets.md)
+>* [Assegnare tag avanzati alle risorse video](smart-tags-video-assets.md)
 
