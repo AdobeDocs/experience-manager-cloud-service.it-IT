@@ -1,14 +1,14 @@
 ---
 title: 'Introduzione ai programmi sandbox '
-description: 'Introduzione ai programmi sandbox '
+description: Introduzione ai programmi sandbox
+exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 translation-type: tm+mt
-source-git-commit: d98e3ba930690627bfbe9b90ce5cb93328c30503
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # Introduzione ai programmi sandbox {#sandbox-programs}
 
@@ -38,5 +38,7 @@ I programmi sandbox hanno i seguenti attributi:
 1. **Aggiornamenti AEM:** AEM gli aggiornamenti possono essere applicati manualmente agli ambienti in un programma sandbox e non vengono inviati automaticamente.
 Per ulteriori informazioni, consulta [AEM Aggiornamenti agli ambienti Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) .
 
-1. **Sospensione:** gli ambienti in un programma sandbox vengono ibernati automaticamente se non viene rilevata alcuna attività per un determinato periodo di tempo. Gli ambienti sospesi possono essere disattivati manualmente.
+1. **Sospensione:** gli ambienti in un programma sandbox vengono ibernati automaticamente se non viene rilevata alcuna attività per un determinato periodo di tempo. Le sandbox vengono messe nel nodo di ibernazione dopo 8 ore di inattività, dopo di che, possono essere deibernate. Gli ambienti sospesi possono essere disattivati manualmente.
 Per ulteriori informazioni, consulta [Sospensione e disattivazione degli ambienti sandbox](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) .
+
+1. **Eliminazione**: Le sandbox vengono cancellate dopo 6 mesi di essere in modalità di sospensione continua, dopo di che, possono essere ricreati.
