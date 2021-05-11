@@ -1,14 +1,14 @@
 ---
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.6.0'
 description: 'Experience Manager: note sulla versione 2020.6.0 di'
+exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 99%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
-
 
 # AEM as a Cloud Service: note sulla versione di 2020.6.0 {#release-notes}
 
@@ -110,7 +110,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 I tag avanzati migliorati consentono di addestrare modelli di assegnazione tag avanzati per riconoscere le immagini in base a tag aziendali specifici, oltre che ai tag avanzati generici.
 
 Con questa versione, è disponibile una nuova user experience guidata che consente di impostare l’addestramento di tag avanzati per set di tag specifici dei clienti e di addestrarli con risorse che in futuro dovranno essere riconosciute e a cui dovranno essere assegnati i tag. L’esperienza è ora più intuitiva.
-Addestra i tag avanzati migliorati in modo più intuitivo. Scopri [come aggiungere tag avanzati alle risorse](/help/assets/smart-tags.md) e [configurare l’assegnazione di tag avanzati](/help/assets/smart-tags-configuration.md).
+Addestra i tag avanzati migliorati in modo più intuitivo. Consulta [come aggiungere tag avanzati alle risorse](/help/assets/smart-tags.md).
 
 **Supporto per l’acquisizione, l’anteprima e la distribuzione di contenuti 3D**
 
@@ -190,4 +190,4 @@ Oltre alle nuove funzioni di cui sopra, la versione corrente fornisce le correzi
 * Quando si scarica una risorsa, se è selezionata l’opzione e-mail e viene fornito un ID e-mail valido, l’opzione di download non è disponibile. (CQ-4296535)
 * I filtri personalizzati salvati come raccolte avanzate non vengono applicati correttamente alle risorse. (CQ-4294942)
 * Sono stati introdotti numerosi miglioramenti a livello di ricerca e indicizzazione e correzioni di bug per migliorare le prestazioni. (CQ-4286373)
-* Impossibile accedere alla scheda delle proprietà della cartella in Risorse e restituisce un errore 500. (CQ-4295701)
+* Impossibile accedere alla scheda delle proprietà della cartella in Assets e restituisce un errore 500. (CQ-4295701)
