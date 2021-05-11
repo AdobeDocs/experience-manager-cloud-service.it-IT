@@ -5,9 +5,9 @@ feature: Banner a carosello
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4563'
+source-wordcount: '4556'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Sul sito web, un banner a carosello può essere visualizzato come segue:
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Qui puoi navigare tra le immagini facendo clic sui numeri. Inoltre, le diapositive ruotano automaticamente in base a un intervallo di tempo personalizzabile. Le immagini aggiunte nel banner carosello supportano sia punti attivi che mappe immagine. Gli utenti possono toccare o passare a un collegamento ipertestuale o accedere a una finestra di visualizzazione rapida.
+Qui puoi navigare tra le immagini facendo clic sui numeri. Inoltre, le diapositive ruotano automaticamente in base a un intervallo di tempo personalizzabile. Le immagini in un banner carosello supportano sia punti attivi che mappe immagine. Gli utenti possono toccare o passare a un collegamento ipertestuale o accedere a una finestra di visualizzazione rapida.
 
 In questo esempio, un utente ha toccato o fatto clic su una mappa immagine per accedere alla finestra Quick view per i guanti:
 
@@ -34,7 +34,7 @@ In questo esempio, un utente ha toccato o fatto clic su una mappa immagine per a
 
 ## Guarda come vengono creati i banner a carosello {#watch-how-carousel-banners-are-created}
 
-Guarda una procedura dettagliata di 10 minuti e 33 secondi su [come vengono creati i banner a carosello](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). Scopri anche come visualizzare in anteprima, modificare e distribuire banner a carosello.
+Guarda una procedura dettagliata su [come vengono creati i banner a carosello](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (Durata: 10 minuti e 33 secondi). Scopri anche come visualizzare in anteprima, modificare e distribuire banner a carosello.
 
 >[!NOTE]
 >
@@ -122,12 +122,12 @@ La maggior parte delle implementazioni della visualizzazione rapida utilizza il 
 * I dati della visualizzazione rapida vengono tradotti nel contenuto in preparazione al rendering sulla pagina web.
 * Infine, il codice front-end esegue il rendering visivo di tali contenuti sullo schermo.
 
-L&#39;approccio consiste quindi nel visitare diverse aree del sito web esistente in cui è implementata la funzione di visualizzazione rapida. Quindi attiva la visualizzazione rapida e acquisisci l’URL Ajax inviato dalla pagina web per caricare i dati o il contenuto della visualizzazione rapida.
+L&#39;approccio consiste quindi nel visitare diverse aree del sito web esistente in cui è implementata la funzione di visualizzazione rapida. Quindi attiva la visualizzazione rapida e acquisisci l&#39;URL Ajax inviato dalla pagina web per caricare i dati o il contenuto della visualizzazione rapida.
 
 Normalmente non è necessario utilizzare strumenti di debug specializzati. I browser web moderni dispongono di ispettori web che svolgono un lavoro adeguato. Di seguito sono riportati alcuni esempi di browser web che includono ispettori web:
 
-* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premi F12 (Windows) o Comando-Opzione-I (Mac) per aprire il pannello degli strumenti per sviluppatori. Tocca la scheda Rete .
-* In Firefox, è possibile attivare il plug-in Firebug premendo F12 (Windows) o Comando-Opzione-I (Mac). Utilizzare la relativa scheda Rete oppure utilizzare lo strumento integrato Inspector e la relativa scheda Rete.
+* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premi F12 (Windows®) o Comando-Opzione-I (Mac) per aprire il pannello degli strumenti per sviluppatori. Tocca la scheda Rete .
+* In Firefox, è possibile attivare il plug-in Firebug premendo F12 (Windows®) o Comando-Opzione-I (Mac). Utilizzare la relativa scheda Rete oppure utilizzare lo strumento integrato Inspector e la relativa scheda Rete.
 
 Quando il monitoraggio della rete è attivato nel browser, attivare la visualizzazione rapida nella pagina.
 
@@ -191,7 +191,7 @@ Per caricare i banner immagine, consulta [Caricamento delle risorse](/help/asset
 >
 >Per poter creare o modificare i banner carosello, è necessario aggiungere utenti non amministratori al gruppo **[!UICONTROL dam-users]** . In caso di problemi durante la creazione o la modifica, rivolgiti all&#39;amministratore di sistema che può aggiungerti al gruppo **[!UICONTROL dam-users]** .
 
-**Per creare un set carosello**
+**Per creare un set carosello:**
 
 1. In Assets, individua la cartella in cui vuoi creare il set carosello e tocca **[!UICONTROL Crea > Set carosello]**.
 1. Nella pagina Editor banner carosello, tocca **[!UICONTROL Tocca per aprire Selettore risorse]** per selezionare l’immagine per la prima diapositiva.
@@ -217,19 +217,20 @@ Per caricare i banner immagine, consulta [Caricamento delle risorse](/help/asset
    Per eliminare una diapositiva, tocca o fai clic sulla diapositiva e tocca o fai clic su **[!UICONTROL Elimina diapositiva]** nella barra degli strumenti. Per spostare una diapositiva, toccate l&#39;icona di riordino e tenete premuto e spostate nella posizione desiderata.
 
 1. Dopo aver aggiunto le immagini nelle diapositive, puoi aggiungere un punto attivo, una mappa immagine o entrambi all’immagine. Consulta [aggiunta di punti attivi o mappe immagine](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. È possibile modificare la progettazione visiva e il comportamento dei set carosello. Tocca o fai clic sulle schede Comportamento e aspetto e regola l’aspetto del banner carosello o il comportamento dei componenti specifici. Consulta [Gestione dei predefiniti visualizzatore](/help/assets/dynamic-media/viewer-presets.md) per ulteriori informazioni su come utilizzare l’editor per visualizzatori.
+1. È possibile modificare la progettazione visiva e il comportamento dei set carosello. Tocca o fai clic sulle schede **[!UICONTROL Comportamento]** e **[!UICONTROL Aspetto]** e regola il modo in cui il banner carosello appare o come si comportano i componenti specifici. Consulta [Gestione dei predefiniti visualizzatore](/help/assets/dynamic-media/viewer-presets.md) per ulteriori informazioni su come utilizzare l’editor per visualizzatori.
 
    >[!NOTE]
    >
    >Per i banner a carosello, è possibile regolare quanto segue:
-   >    * Durata visualizzata da un’immagine. Per impostazione predefinita, ogni immagine viene visualizzata per 9 secondi.
-   >    * Animazione. Per impostazione predefinita, ogni transizione di diapositiva è una dissolvenza. È possibile passare a una transizione diapositiva.
-   >    * Stile dei pulsanti. Gli utenti possono ruotare attraverso i banner toccando ogni punto o numero. È possibile modificare la posizione in cui vengono visualizzati i pulsanti degli indicatori impostati (e se si tratta di uno stile numerico o punteggiato) e la loro dimensione.
-   >    * Modifica lo stile di evidenziazione di una mappa immagine o dell’icona utilizzata per gli hotspot.
-   >    * Prima di modificare un predefinito visualizzatore, scegli lo stile su cui desideri basare il predefinito. Se non scegli uno stile, quando inizi a modificare il predefinito visualizzatore, perderai tutte le modifiche se modifichi un predefinito diverso.
+   >
+   >* Durata visualizzata da un’immagine. Per impostazione predefinita, ogni immagine viene visualizzata per 9 secondi.
+   >* Animazione. Per impostazione predefinita, ogni transizione di diapositiva è una dissolvenza. È possibile passare a una transizione diapositiva.
+   >* Stile dei pulsanti. Gli utenti possono ruotare attraverso i banner toccando ogni punto o numero. È possibile modificare la posizione in cui vengono visualizzati i pulsanti degli indicatori impostati (e se si tratta di uno stile numerico o punteggiato) e la loro dimensione.
+   >* Modifica lo stile di evidenziazione di una mappa immagine o dell’icona utilizzata per gli hotspot.
+   >* Prima di modificare un predefinito visualizzatore, scegli lo stile su cui desideri basare il predefinito. Se non scegli uno stile, quando inizi a modificare il predefinito visualizzatore, perderai tutte le modifiche se modifichi un predefinito diverso.
 
 
-   Puoi anche visualizzare un’anteprima dell’aspetto del banner carosello. Consulta [(Facoltativo) Anteprima dei banner carosello](#optional-previewing-carousel-banners).
+   È inoltre possibile visualizzare in anteprima l’aspetto del banner carosello. Consulta [(Facoltativo) Anteprima dei banner carosello](#optional-previewing-carousel-banners).
 
 1. Al termine, tocca **[!UICONTROL Salva]** .
 
@@ -263,7 +264,7 @@ Se modifichi immagini interattive con punti attivi e ritagli l’immagine, quest
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**Per aggiungere punti attivi o mappe immagine a un banner immagine**
+**Per aggiungere punti attivi o mappe immagine a un banner immagine:**
 
 1. Da Risorse, accedi al set carosello che desideri rendere interattivo.
 1. Seleziona il set carosello e tocca **[!UICONTROL Modifica]**. Viene aperto l’Editor visualizzatore carosello.
@@ -316,7 +317,7 @@ Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experie
          Per aggirare questo problema, puoi utilizzare o creare predefiniti visualizzatore privi di strumenti per la condivisione dei social media. Questi predefiniti per visualizzatori consentono di incorporarli correttamente nei Frammenti esperienza.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   Puoi anche visualizzare un’anteprima dell’aspetto del banner carosello. Consulta [(Facoltativo) Anteprima dei banner carosello](#optional-previewing-carousel-banners).
+   È inoltre possibile visualizzare in anteprima l’aspetto del banner carosello. Consulta [(Facoltativo) Anteprima dei banner carosello](#optional-previewing-carousel-banners).
 
 1. Tocca **[!UICONTROL Salva]**.
 1. Pubblica il set carosello. La pubblicazione crea il codice di incorporamento o l’URL che puoi utilizzare sulla pagina del tuo sito web. Se sei un cliente di Experience Manager Sites, aggiungi il set carosello direttamente alla pagina web.
@@ -339,7 +340,7 @@ Per poter creare o modificare i banner carosello, è necessario aggiungere utent
 * Elimina il set carosello.
 * Aggiungi o modifica punti attivi e mappe immagine. Vedere anche [Utilizzo dei selettori](/help/assets/dynamic-media/working-with-selectors.md).
 
-**Per modificare un set carosello**
+**Per modificare un set carosello:**
 
 1. Effettua una delle seguenti operazioni:
 
@@ -364,7 +365,7 @@ Per poter creare o modificare i banner carosello, è necessario aggiungere utent
 
 ## (Facoltativo) Anteprima dei banner carosello {#optional-previewing-carousel-banners}
 
-Puoi utilizzare Anteprima per vedere come si presenta ai clienti il banner carosello. L’opzione Anteprima consente inoltre di testare gli hotspot e le mappe immagine del banner carosello per garantirne il funzionamento come previsto.
+È possibile utilizzare Anteprima per vedere come viene visualizzato il banner carosello ai clienti. L’opzione Anteprima consente inoltre di testare gli hotspot e le mappe immagine del banner carosello per garantirne il funzionamento come previsto.
 
 Quando sei soddisfatto del banner carosello, puoi pubblicarlo.
 Consulta [Incorporamento del visualizzatore di video o immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md).
@@ -373,7 +374,7 @@ Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-me
 
 Puoi visualizzare in anteprima i banner carosello dall’Editor carosello (metodo preferito) o dall’elenco **[!UICONTROL Visualizzatori]**.
 
-**Per visualizzare in anteprima i banner a carosello**
+**Per visualizzare in anteprima i banner carosello:**
 
 1. In **[!UICONTROL Risorse]**, individua il banner carosello esistente creato e tocca per aprirlo.
 1. Tocca **[!UICONTROL Modifica]**.
@@ -384,7 +385,7 @@ Puoi visualizzare in anteprima i banner carosello dall’Editor carosello (metod
 1. Tocca **[!UICONTROL Anteprima]**.
 1. Per testare le azioni associate, tocca i punti attivi o le mappe immagine sull’immagine.
 
-**Per visualizzare in anteprima i banner a carosello dall’elenco Visualizzatori**
+**Per visualizzare in anteprima i banner a carosello dall’elenco Visualizzatori:**
 
 1. In **[!UICONTROL Risorse]**, individua il banner carosello esistente creato e tocca per aprirlo.
 1. Fai clic sull’icona Contenuto nell’angolo in alto a sinistra della pagina Anteprima .
@@ -452,6 +453,6 @@ Consulta [Identificazione delle variabili di punti attivi e mappe immagine](#ide
 
 L&#39;ultimo passaggio per attivare l&#39;URL di visualizzazione rapida e attivare il pannello di visualizzazione rapida richiede molto probabilmente l&#39;assistenza di un esperto IT front-end del reparto IT. Essi hanno la conoscenza di sapere come attivare con precisione l&#39;implementazione della visualizzazione rapida dal passaggio appropriato, avendo un URL di visualizzazione rapida pronto all&#39;uso.
 
-## Utilizzo delle visualizzazioni rapide per creare finestre pop-up personalizzate {#using-quickviews-to-create-custom-pop-ups}
+## Utilizzo delle visualizzazioni rapide per creare finestre pop-up personalizzate Windows® {#using-quickviews-to-create-custom-pop-ups}
 
-Vedere [Uso delle viste rapide per creare finestre pop-up personalizzate](/help/assets/dynamic-media/custom-pop-ups.md).
+Vedere [Uso delle visualizzazioni rapide per creare finestre pop-up personalizzate Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
