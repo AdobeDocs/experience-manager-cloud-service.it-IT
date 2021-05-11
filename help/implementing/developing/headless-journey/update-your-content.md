@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -324,11 +324,10 @@ Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, dev
 
 Continua il tuo percorso AEM headless rivedendo il documento [Come mettere tutto insieme - La tua app e il tuo contenuto in AEM Headless](put-it-all-together.md) dove imparerai come prendere il tuo progetto AEM Headless e prepararlo per il lancio.
 
+[Come creare applicazioni a pagina singola (SPA) con ](create-spa.md) AEMviene inoltre illustrato come creare SPA modificabili utilizzando il framework SPA Editor di AEM, nonché integrare SPA esterni per abilitare le funzionalità di modifica.
+
 ## Risorse aggiuntive {#additional-resources}
 
-* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [Principio delle HATEOAS](https://en.wikipedia.org/wiki/HATEOAS)
-* [Formato SIREN](https://github.com/kevinswiber/siren)
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 * [API REST per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
