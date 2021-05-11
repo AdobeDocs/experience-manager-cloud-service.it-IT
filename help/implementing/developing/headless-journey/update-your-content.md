@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 7732a291d070a5d93a6f490877b909e1331be1e2
+source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1115'
 ht-degree: 2%
 
 ---
@@ -190,26 +190,28 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 I frammenti di contenuto vengono utilizzati per la distribuzione headless e un frammento di contenuto è un tipo speciale di risorsa. Sono utilizzati per accedere a dati strutturati, quali testi, numeri, date, ecc.
 
-Poiché esistono diverse differenze tra le risorse *standard* (come immagini o audio), per gestirle è necessario applicare alcune regole aggiuntive.
+<!--
+As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
 
-### Rappresentazione {#representation}
+### Representation {#representation}
 
-Frammenti di contenuto:
+Content fragments:
 
-* Non esporre dati binari.
-* Sono completamente contenute nell’output JSON (all’interno della proprietà `properties` ).
+* Do not expose any binary data.
+* Are completely contained in the JSON output (within the `properties` property).
 
-* Sono anche considerate atomiche, ovvero gli elementi e le varianti sono esposti come parte delle proprietà del frammento rispetto a come collegamenti o entità secondarie. Ciò consente un accesso efficiente al payload di un frammento.
+* Are also considered atomic, i.e. the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
 
-### Modelli di contenuto e frammenti di contenuto {#content-models-and-content-fragments}
+### Content Models and Content Fragments {#content-models-and-content-fragments}
 
-Attualmente i modelli che definiscono la struttura di un frammento di contenuto non sono esposti tramite un’API HTTP. Pertanto il *consumatore* deve conoscere il modello di un frammento (almeno un minimo), anche se la maggior parte delle informazioni può essere dedotta dal payload; come tipi di dati, ecc. fanno parte della definizione.
+Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
 
-Per creare un nuovo frammento di contenuto, è necessario fornire il percorso (archivio interno) del modello.
+To create a new content fragment, the (internal repository) path of the model has to be provided.
 
-### Contenuto associato {#associated-content}
+### Associated Content {#associated-content}
 
-Il contenuto associato non è attualmente esposto.
+Associated content is currently not exposed.
+-->
 
 ## Utilizzo dell’API REST di Assets {#using-aem-assets-rest-api}
 
