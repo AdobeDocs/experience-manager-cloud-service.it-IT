@@ -5,7 +5,7 @@ feature: Frammenti di contenuto
 role: Business Practitioner
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 7%
@@ -170,7 +170,7 @@ UniqueContent (per il campo specifico) deve essere univoco per tutti i frammenti
 * ****
 TranslatableSelezionando la casella di controllo &quot;Translatable&quot; su un campo nell&#39;editor di modelli CF
 
-   * Verifica che il nome della proprietà del campo sia aggiunto nella configurazione di traduzione, contesto `/content/dam/<tenant>`, se non è già presente.
+   * Verifica che il nome della proprietà del campo sia aggiunto nella configurazione di traduzione, contesto `/content/dam/<sites-configuration>`, se non è già presente.
    * Per GraphQL: imposta una proprietà `<translatable>` nel campo Frammento di contenuto su `yes` per consentire il filtro di query GraphQL per l’output JSON con solo contenuto traducibile.
 
 * Per ulteriori informazioni su quel tipo di dati specifico e sulle relative proprietà, consulta **[Riferimento contenuto](#content-reference)** .
