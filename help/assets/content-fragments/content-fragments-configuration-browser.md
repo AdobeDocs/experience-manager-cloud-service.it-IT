@@ -5,9 +5,9 @@ feature: Frammenti di contenuto
 role: Business Practitioner
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '288'
 ht-degree: 18%
 
 ---
@@ -28,7 +28,7 @@ Prima di utilizzare Frammenti di contenuto è necessario utilizzare il **Browser
 >Se non abiliti **Modelli di frammento di contenuto**:
 >
 >* l’opzione **Crea** non sarà disponibile per la creazione di nuovi modelli.
->* non sarà possibile [selezionare il tenant per creare il relativo punto finale](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* non potrai [selezionare la configurazione Sites per creare il relativo punto finale](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
 
 
 Per abilitare la funzionalità dei frammenti di contenuto è necessario:
