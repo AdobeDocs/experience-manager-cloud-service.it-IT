@@ -1,18 +1,18 @@
 ---
 title: Utilizzo delle visualizzazioni rapide per creare pop-up personalizzati
-description: '"Scopri come viene utilizzata la visualizzazione rapida predefinita nelle esperienze e-commerce, in cui viene visualizzata una finestra a comparsa con informazioni sul prodotto per promuovere un acquisto. È possibile attivare il contenuto personalizzato da visualizzare nelle finestre a comparsa."'
+description: '"Scopri come viene utilizzata la visualizzazione rapida predefinita nelle esperienze e-commerce, in cui viene visualizzata una finestra a comparsa con informazioni sul prodotto per promuovere un acquisto. È possibile attivare il contenuto personalizzato da visualizzare nel pop-up Windows®."'
 feature: Immagini interattive, video interattivi, banner a carosello
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 1%
 
 ---
 
-# Utilizzo delle visualizzazioni rapide per creare finestre pop-up personalizzate {#using-quickviews-to-create-custom-pop-ups}
+# Utilizzo delle visualizzazioni rapide per creare finestre pop-up personalizzate Windows® {#using-quickviews-to-create-custom-pop-ups}
 
 La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore utilizzato, i clienti possono toccare un punto attivo, un’immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
 
@@ -24,7 +24,7 @@ Le visualizzazioni rapide sono supportate dai seguenti visualizzatori in Dynamic
 
 Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di creazione di una visualizzazione rapida è lo stesso in tutti e tre i visualizzatori supportati.
 
-**Per utilizzare le visualizzazioni rapide per creare finestre pop-up personalizzate**
+**Per utilizzare le visualizzazioni rapide per creare un pop-up Windows® personalizzato:**
 
 1. Crea una visualizzazione rapida per una risorsa caricata.
 
@@ -102,8 +102,8 @@ EsempioSupponiamo che tu stia utilizzando il seguente codice di incorporamento s
 
    Per ulteriori informazioni sul metodo `setHandlers()`, consulta:
 
-   * Visualizzatore di immagini interattive: [rivenditori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * Visualizzatore video interattivo: [rivenditori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * Visualizzatore di immagini interattive - [gestori di siti](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Visualizzatore video interattivo - [gestori di siti](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. Ora configura il gestore `quickViewActivate`.
 
