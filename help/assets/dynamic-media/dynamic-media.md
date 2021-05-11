@@ -4,16 +4,16 @@ description: Scopri come utilizzare Dynamic Media per distribuire risorse da uti
 role: Administrator,Business Practitioner
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '399'
 ht-degree: 14%
 
 ---
 
 # Utilizzo di Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) permette di fornire on-demand risorse visive di marketing e merchandising, ridimensionandole automaticamente per siti web, dispositivi mobili e piattaforme social. Utilizzando un set di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) permette di fornire on-demand risorse visive di marketing e merchandising, ridimensionandole automaticamente per siti web, dispositivi mobili e piattaforme social. Utilizzando un set di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
 Dynamic Media offre esperienze di visualizzazione interattive, tra cui zoom, rotazione a 360° e video. Dynamic Media integra in modo esclusivo i flussi di lavoro della soluzione Adobe Experience Manager per la gestione delle risorse digitali (Assets) per semplificare e semplificare il processo di gestione delle campagne digitali.
 
@@ -38,7 +38,7 @@ Le funzioni solo per Dynamic Media includono quanto segue:
 * [Video](video.md)
 * [Distribuzione di risorse Dynamic Media](delivering-dynamic-media-assets.md)
 * [Gestione delle risorse](managing-assets.md)
-* [Utilizzo delle visualizzazioni rapide per creare finestre pop-up personalizzate](custom-pop-ups.md)
+* [Utilizzo delle visualizzazioni rapide per creare un pop-up Windows® personalizzato](custom-pop-ups.md)
 
 Vedere anche [Configurazione di Dynamic Media](administering-dynamic-media.md).
 
@@ -81,7 +81,7 @@ Le risorse abilitate per Dynamic Media includono `pyramid.tiffs`.
 
 ### Modifica delle visualizzazioni delle risorse {#asset-views-change}
 
-Con Dynamic Media abilitato, è possibile ingrandire e ridurre facendo clic sui pulsanti `+` e `-`. Puoi anche fare clic o toccare per ingrandire una determinata area. Ripristina la versione originale consente di visualizzare l’immagine a schermo intero facendo clic sulle frecce diagonali. Dynamic Media abilitato si presenta così:
+Con Dynamic Media abilitato, è possibile ingrandire e ridurre facendo clic sui pulsanti `+` e `-`. Puoi anche fare clic o toccare per ingrandire una determinata area. Ripristina la versione originale consente di visualizzare l’immagine a schermo intero facendo clic sulle frecce diagonali. Dynamic Media abilitato viene visualizzato come segue:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
