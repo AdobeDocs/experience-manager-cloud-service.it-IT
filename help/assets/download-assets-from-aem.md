@@ -2,16 +2,16 @@
 title: Scaricare le risorse
 description: Scarica le risorse da  [!DNL Adobe Experience Manager Assets] e abilita o disabilita la funzionalità di download.
 contentOwner: AG
-feature: Asset Management
+feature: Gestione risorse
 role: Business Practitioner
+exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 5%
+source-wordcount: '921'
+ht-degree: 4%
 
 ---
-
 
 # Scaricare risorse da [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
@@ -68,7 +68,7 @@ Per scaricare le risorse, effettua le seguenti operazioni:
 
 ## Abilita il servlet di download delle risorse {#enable-asset-download-servlet}
 
-Il servlet predefinito in [!DNL Experience Manager] consente agli utenti autenticati di emettere richieste di download simultanee di grandi dimensioni arbitrarie per creare file ZIP di risorse. La preparazione del download può avere implicazioni di prestazioni o può anche sovraccaricare il server e la rete. Per attenuare i rischi simili a DoS causati da questa funzione, il componente `AssetDownloadServlet` OSGi è disabilitato per le istanze di pubblicazione.
+Il servlet predefinito in [!DNL Experience Manager] consente agli utenti autenticati di emettere richieste di download simultanee di grandi dimensioni arbitrarie per creare file ZIP di risorse. La preparazione del download può avere implicazioni di prestazioni o può anche sovraccaricare il server e la rete. Per attenuare i rischi simili a DoS causati da questa funzione, il componente `AssetDownloadServlet` OSGi è disabilitato per le istanze di pubblicazione. Se non hai bisogno della funzione di download sulle istanze dell&#39;autore, disattiva il servlet sull&#39;autore.
 
 Per consentire il download delle risorse dal tuo DAM, ad esempio quando utilizzi qualcosa come Asset Share Commons o un’altra implementazione simile a un portale, abilita manualmente il servlet tramite una configurazione OSGi. L’Adobe consiglia di impostare la dimensione del download consentito il più possibile bassa senza influire sui requisiti di download giornalieri. Un valore elevato può influire sulle prestazioni.
 
@@ -86,7 +86,7 @@ Per consentire il download delle risorse dal tuo DAM, ad esempio quando utilizzi
 
 ## Disattiva il servlet di download delle risorse {#disable-asset-download-servlet}
 
-È possibile disabilitare `Asset Download Servlet` in un’istanza di [!DNL Experience Manager] Publish aggiornando la configurazione del dispatcher per bloccare eventuali richieste di download di risorse. Il servlet può anche essere disabilitato manualmente tramite la console OSGi direttamente.
+Se non hai bisogno della funzionalità di download, disattiva il servlet per evitare rischi simili a quelli di DoS. È possibile disabilitare `Asset Download Servlet` in un’istanza di authoring e pubblicazione [!DNL Experience Manager] aggiornando la configurazione del dispatcher per bloccare eventuali richieste di download delle risorse. Il servlet può anche essere disabilitato manualmente tramite la console OSGi direttamente.
 
 1. Per bloccare le richieste di download delle risorse tramite una configurazione del dispatcher, modifica la configurazione `dispatcher.any` e aggiungi una nuova regola alla sezione [filtro](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 
