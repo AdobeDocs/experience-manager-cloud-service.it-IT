@@ -4,14 +4,14 @@ description: In questa parte del Percorso di sviluppatori headless AEM, comprend
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # Percorso della tua prima esperienza con AEM headless {#path-to-first-experience}
 
@@ -137,7 +137,14 @@ Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, dev
 * Scopri quali strumenti e configurazioni AEM sono necessari.
 * Scopri le best practice per semplificare il tuo percorso headless, garantire l’efficienza nella generazione dei contenuti e la distribuzione rapida dei contenuti.
 
-Continua il tuo percorso AEM headless rivedendo il documento [Come modellare il contenuto come modelli di contenuto AEM](model-your-content.md) dove imparerai a modellare la struttura del contenuto in AEM.
+Vogliamo che si basi su questa conoscenza fondamentale per comprendere appieno il potere e la flessibilità di AEM Headless in modo da poterne trarre vantaggio per i propri progetti. Per fare questo, hai delle opzioni.
+
+### Scegli la tua avventura {#choose-your-path}
+
+Indipendentemente dal tuo stile di apprendimento, l&#39;Adobe vuole che tu riesca a iniziare con il tuo progetto AEM Headless.
+
+* Se preferisci **continuare ad apprendere concetti headless e tecnologie headless**, dovresti continuare il tuo percorso headless AEM esaminando il documento [Come modellare il contenuto come modelli di contenuto AEM](model-your-content.md) dove imparerai a modellare la struttura del contenuto in AEM.
+* Se preferisci **imparare facendo**, puoi passare all&#39;esercitazione [Guida introduttiva AEM senza testa](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) in cui puoi passare direttamente allo sviluppo senza testa AEM implementando un semplice progetto per esporre AEM contenuto headless.
 
 ## Risorse aggiuntive {#additional-resources}
 
