@@ -2,10 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-translation-type: tm+mt
-source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
+source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1829'
 ht-degree: 2%
 
 ---
@@ -49,6 +48,10 @@ La definizione degli indici può comprendere i tre casi d’uso seguenti:
 Per entrambi i punti 1 e 2 di cui sopra, devi creare una nuova definizione dell’indice come parte della base di codice personalizzata nella rispettiva pianificazione della versione di Cloud Manager. Per ulteriori informazioni, consulta la sezione [Distribuzione di AEM come documentazione di Cloud Service](/help/implementing/deploying/overview.md).
 
 ### Preparazione della nuova definizione dell&#39;indice {#preparing-the-new-index-definition}
+
+>[!NOTE]
+>
+>Se personalizzi un indice preconfigurato, ad esempio `damAssetLucene-6`, copia l&#39;ultima definizione dell&#39;indice preconfigurata da un *ambiente di Cloud Service* e aggiungi le tue personalizzazioni in alto, questo assicura che le configurazioni richieste non vengano rimosse inavvertitamente. Ad esempio, il nodo `tika` sotto `/oak:index/damAssetLucene-6/tika` è un nodo obbligatorio che deve far parte anche dell&#39;indice personalizzato e non esiste nell&#39;SDK di Cloud.
 
 È necessario preparare un nuovo pacchetto di definizione dell&#39;indice che contiene la definizione effettiva dell&#39;indice, seguendo questo pattern di denominazione:
 
