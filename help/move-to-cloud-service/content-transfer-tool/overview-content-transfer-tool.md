@@ -2,10 +2,9 @@
 title: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
 description: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-translation-type: tm+mt
-source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
+source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '860'
 ht-degree: 73%
 
 ---
@@ -83,4 +82,4 @@ La formula generale per calcolare lo spazio libero su disco richiesto è la segu
    * *node store size*: dimensione archivio nodi; dimensione della directory dell’archivio segmenti o dimensione del database MongoDB.
 Pertanto, per un archivio segmenti di 20 GB, lo spazio libero su disco richiesto è di 94 GB.
 
-* È necessario mantenere un set di migrazione in tutta l’attività di trasferimento dei contenuti per supportare le integrazioni dei contenuti. Poiché è possibile creare e mantenere un massimo di dieci set di migrazione alla volta durante l’attività di trasferimento dei contenuti, si consiglia di suddividere di conseguenza l’archivio dei contenuti per evitare di esaurire i set di migrazione.  durante/strutturare il set di migrazione di conseguenza.
+* È necessario mantenere un set di migrazione in tutta l’attività di trasferimento dei contenuti per supportare le integrazioni dei contenuti. Poiché è possibile creare e mantenere fino a dieci set di migrazione alla volta durante l’attività di trasferimento dei contenuti, è consigliabile suddividere di conseguenza l’archivio dei contenuti per evitare di esaurire i set di migrazione.
