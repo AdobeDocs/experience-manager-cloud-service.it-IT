@@ -2,9 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
+source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1780'
 ht-degree: 2%
 
 ---
@@ -208,7 +208,3 @@ Se un indice deve essere rimosso in una versione successiva dell&#39;applicazion
 ```
 
 Se non è più necessario avere una personalizzazione di un indice predefinito, è necessario copiare la definizione di indice preconfigurata. Ad esempio, se hai già distribuito `damAssetLucene-8-custom-3` ma non hai più bisogno delle personalizzazioni e desideri tornare all&#39;indice predefinito `damAssetLucene-8` , devi aggiungere un indice `damAssetLucene-8-custom-4` che contenga la definizione dell&#39;indice di `damAssetLucene-8`.
-
-### Disponibilità indice e tolleranza di errore {#index-availability-and-fault-tolerance}
-
-Si consiglia di creare indici duplicati per le funzioni importanti (tenendo presente la convenzione di denominazione per gli indici sopra menzionati), quindi nel caso di corruzione dell’indice o di un evento imprevisto c’è un indice di fallback disponibile per rispondere alle query.
