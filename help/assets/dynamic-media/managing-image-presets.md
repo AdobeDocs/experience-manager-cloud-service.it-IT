@@ -4,10 +4,9 @@ description: '"Scopri i predefiniti immagine e come creare, modificare e gestire
 feature: Predefiniti immagine,Visualizzatori,Rendering
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3653'
 ht-degree: 9%
 
 ---
@@ -30,7 +29,7 @@ Questa sezione descrive come creare, modificare e gestire in genere i predefinit
 
 Come una macro, un predefinito per immagini è un insieme predefinito di comandi di ridimensionamento e formattazione salvati con un nome. Per comprendere il funzionamento dei predefiniti per immagini, supponiamo che il sito web richieda che ogni immagine del prodotto venga visualizzata in dimensioni diverse, in formati diversi e nei tassi di compressione per la distribuzione desktop e mobile.
 
-Puoi creare due predefiniti immagine: uno con 500 x 500 pixel per la versione desktop e 150 x 150 pixel per la versione mobile. È possibile creare due predefiniti per immagini, uno denominato `Enlarge` per visualizzare le immagini a 500x500 pixel e uno chiamato `Thumbnail` per visualizzare le immagini a 150 x 150 pixel. Per fornire immagini con le dimensioni `Enlarge` e `Thumbnail`, Experience Manager cerca la definizione di Ingrandisci predefinito immagine e Predefinito immagine miniatura. Quindi, Experience Manager genera in modo dinamico un&#39;immagine con le specifiche di dimensione e formattazione di ciascun predefinito per immagini.
+Puoi creare due predefiniti immagine: uno con 500 x 500 pixel per la versione desktop e 150 x 150 pixel per la versione mobile. È possibile creare due predefiniti per immagini, uno denominato `Enlarge` per visualizzare le immagini a 500x500 pixel e uno chiamato `Thumbnail` per visualizzare le immagini a 150 x 150 pixel. Per fornire immagini con le dimensioni `Enlarge` e `Thumbnail`, in Experience Manager viene trovata la definizione di Ingrandisci predefinito immagine e Predefinito immagine miniatura. Quindi, Experience Manager genera in modo dinamico un&#39;immagine con le specifiche di dimensione e formattazione di ciascun predefinito per immagini.
 
 Le immagini a dimensioni ridotte quando vengono consegnate in modo dinamico possono perdere nitidezza e dettagli. Per questo motivo, ogni predefinito per immagini contiene controlli di formattazione per l’ottimizzazione di un’immagine quando viene distribuita con una particolare dimensione. Questi controlli assicurano che le immagini siano nitide e chiare quando vengono inviate al sito Web o all&#39;applicazione.
 
@@ -38,7 +37,7 @@ Gli amministratori possono creare i predefiniti per immagini. Per creare un pred
 
 ## Gestione dei predefiniti per immagini {#managing-image-presets-1}
 
-Per gestire i predefiniti immagine in Experience Manager, tocca o fai clic sul logo Experience Manager per accedere alla console di navigazione globale, quindi tocca o fai clic sull’icona Strumenti , infine passa a **[!UICONTROL Risorse > Predefiniti immagine]**.
+Per gestire i predefiniti immagine in Experience Manager, tocca o fai clic sul logo Experience Manager per accedere alla console di navigazione globale, quindi tocca o fai clic sull’icona Strumenti e passa a **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagine]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -63,7 +62,7 @@ Il formato di file Adobe Illustrator è una variante di PDF. Le principali diffe
 * I documenti Adobe Illustrator sono costituiti da una singola pagina con più livelli. Ogni livello viene estratto come risorsa secondaria PNG sotto la risorsa principale Illustrator.
 * I documenti PDF sono costituiti da una o più pagine. Ogni pagina viene estratta come una risorsa PDF a pagina singola sotto il documento PDF principale con più pagine.
 
-Le risorse secondarie vengono create dal componente `Create Sub Asset process` all’interno del flusso di lavoro complessivo `DAM Update Asset`. Per visualizzare questo componente del processo all’interno del flusso di lavoro, tocca **[!UICONTROL Strumenti > Flusso di lavoro > Modelli > Risorsa di aggiornamento DAM > Modifica]**.
+Le risorse secondarie vengono create dal componente `Create Sub Asset process` all’interno del flusso di lavoro complessivo `DAM Update Asset`. Per visualizzare questo componente del processo all&#39;interno del flusso di lavoro, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]** > **[!UICONTROL Aggiorna risorsa DAM]** > **[!UICONTROL Modifica]**.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
@@ -88,7 +87,7 @@ Per utilizzare Dynamic Media per visualizzare in anteprima e generare rappresent
 
 Puoi accedere alle opzioni dei componenti del processo `Rasterize PDF/AI Image Preview Rendition` tramite il flusso di lavoro `DAM Update Asset` .
 
-Tocca Adobe Experience Manager in alto a sinistra, vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**. Nella pagina Modelli flusso di lavoro , seleziona **[!UICONTROL Risorsa di aggiornamento DAM]**, quindi sulla barra degli strumenti tocca **[!UICONTROL Modifica]**. Nella pagina del flusso di lavoro Aggiorna risorsa DAM , tocca due volte il componente di processo `Rasterize PDF/AI Image Preview Rendition` per aprire la relativa finestra di dialogo Proprietà passaggio .
+Tocca Adobe Experience Manager in alto a sinistra, vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**. Nella pagina Modelli flusso di lavoro , seleziona **[!UICONTROL Risorsa di aggiornamento DAM]**, quindi sulla barra degli strumenti tocca **[!UICONTROL Modifica]**. Nella pagina del flusso di lavoro Aggiorna risorsa DAM , tocca due volte il componente di processo `Rasterize PDF/AI Image Preview Rendition` per aprire la relativa finestra di dialogo Proprietà passaggio .
 
 #### Rasterizzare le opzioni di rendering anteprima immagine PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -96,41 +95,18 @@ Tocca Adobe Experience Manager in alto a sinistra, vai a **[!UICONTROL Strumenti
 
 Argomenti per rasterizzare il flusso di lavoro PDF o AI
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Argomento del processo</strong></td>
-   <td><strong>Impostazione predefinita</strong></td>
-   <td><strong>Descrizione</strong></td>
-  </tr>
-  <tr>
-   <td>Tipi mime</td>
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td>
-   <td>Elenco dei tipi di mime dei documenti considerati documenti PDF o Illustrator.<br /> </td>
-  </tr>
-  <tr>
-   <td>Larghezza max.</td>
-   <td>2048</td>
-   <td>Larghezza massima del rendering di anteprima generato, in pixel.<br /> </td>
-  </tr>
-  <tr>
-   <td>Altezza max.</td>
-   <td>2048</td>
-   <td>Altezza massima in pixel del rendering di anteprima generato.<br /> </td>
-  </tr>
-  <tr>
-   <td>Risoluzione</td>
-   <td>72</td>
-   <td>Risoluzione per rasterizzare la prima pagina, in ppi (pixel per pollice).</td>
-  </tr>
- </tbody>
-</table>
+| Argomento del processo | Impostazione predefinita | Descrizione |
+|---|---|---|
+| Tipi mime | application/pdf<br>application/postscript<br>application/illustrator | Elenco di tipi di mime di documenti considerati documenti PDF o Illustrator. |
+| Larghezza max. | 2048 | Larghezza massima del rendering di anteprima generato, in pixel. |
+| Altezza max. | 2048 | Altezza massima in pixel del rendering di anteprima generato. |
+| Risoluzione | 72 | Risoluzione per rasterizzare la prima pagina, in ppi (pixel per pollice). |
 
 Utilizzando gli argomenti di processo predefiniti, la prima pagina di un documento PDF/AI viene rasterizzata a 72 ppi e l’immagine di anteprima generata è dimensionata a 2048 x 2048 pixel. Per una distribuzione tipica, puoi aumentare la risoluzione fino a un minimo di 150 ppi o più. Ad esempio, un documento con dimensioni lettera USA a 300 ppi richiede rispettivamente una larghezza e un&#39;altezza massime di 2550 x 3300 pixel.
 
 Larghezza massima e Altezza massima limitano la risoluzione a cui rasterizzare. Ad esempio, se i valori massimi sono invariati e la risoluzione è impostata su 300 ppi, un documento Lettera USA viene rasterizzato a 186 ppi. Cioè, il documento è di 1581 x 2046 pixel.
 
-Il componente di processo `Rasterize PDF/AI Image Preview Rendition` ha un valore massimo definito per garantire che non crei immagini troppo grandi nella memoria. Immagini di grandi dimensioni possono sovraccaricare la memoria fornita alla JVM (Java Virtual Machine). È necessario prestare attenzione a fornire alla JVM memoria sufficiente per gestire il numero configurato di flussi di lavoro paralleli, ognuno dei quali ha il potenziale per creare un&#39;immagine alle dimensioni massime configurate.
+Il componente di processo `Rasterize PDF/AI Image Preview Rendition` ha un valore massimo definito per garantire che non crei immagini troppo grandi nella memoria. Immagini di grandi dimensioni possono sovraccaricare la memoria fornita alla JVM (Java™ Virtual Machine). È necessario prestare attenzione a fornire alla JVM memoria sufficiente per gestire il numero configurato di flussi di lavoro paralleli, ognuno dei quali ha il potenziale per creare un&#39;immagine alle dimensioni massime configurate.
 
 ### Formato di file InDesign (INDD) {#indesign-indd-file-format}
 
@@ -148,30 +124,12 @@ I percorsi ExtendScript negli argomenti del componente del processo di estrazion
 
 I seguenti script vengono utilizzati dall’integrazione Dynamic Media:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Nome ExtendScript</strong></td>
-   <td><strong>Predefiniti</strong></td>
-   <td><strong>Descrizione</strong></td>
-  </tr>
-  <tr>
-   <td>ThumbnailExport.jsx</td>
-   <td>Sì</td>
-   <td>Genera un rendering a 300 ppi <code>thumbnail.jpg</code> ottimizzato e trasformato in un rendering PTIFF dal componente di processo <code>Dynamic Media Process Image Assets</code>.<br /> </td>
-  </tr>
-  <tr>
-   <td>JPEGPagesExport.jsx</td>
-   <td>Sì</td>
-   <td>Genera una risorsa secondaria JPEG da 300 ppi per ogni pagina. La risorsa secondaria JPEG è una risorsa reale memorizzata nella risorsa InDesign. Viene inoltre ottimizzato e trasformato in PTIFF dal flusso di lavoro <code>DAM Update Asset</code>.<br /> </td>
-  </tr>
-  <tr>
-   <td>PDFPagesExport.jsx</td>
-   <td>No</td>
-   <td>Genera una risorsa secondaria PDF per ogni pagina. La risorsa secondaria PDF viene elaborata come descritto in precedenza. Poiché il PDF contiene una sola pagina, non vengono generate risorse secondarie.<br /> </td>
-  </tr>
- </tbody>
-</table>
+
+| Nome ExtendScript | Predefiniti | Descrizione |
+|---|---|---|
+| ThumbnailExport.jsx | Sì | Genera un rendering a 300 ppi `thumbnail.jpg` ottimizzato e trasformato in un rendering PTIFF dal componente di processo `Dynamic Media Process Image Assets`. |
+| JPEGPagesExport.jsx | Sì | Genera una risorsa secondaria JPEG da 300 ppi per ogni pagina. La risorsa secondaria JPEG è una risorsa reale memorizzata nella risorsa InDesign. Viene inoltre ottimizzato e trasformato in PTIFF dal flusso di lavoro `DAM Update Asset` . |
+| PDFPagesExport.jsx | No | Genera una risorsa secondaria PDF per ogni pagina. La risorsa secondaria PDF viene elaborata come descritto in precedenza. Poiché il PDF contiene una sola pagina, non vengono generate risorse secondarie. |
 
 ### Configurazione della dimensione della miniatura dell’immagine {#configuring-image-thumbnail-size}
 
@@ -194,7 +152,7 @@ Il dimensionamento delle miniature è definito nel seguente formato: **[!UICONTR
 
 **Per configurare le dimensioni delle miniature delle immagini**
 
-1. Tocca **[!UICONTROL Strumenti > Flusso di lavoro > Modelli > Aggiorna risorsa DAM > Modifica]**.
+1. Tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]** > **[!UICONTROL Aggiorna risorsa DAM]** > **[!UICONTROL Modifica]**.
 1. Tocca il passaggio **[!UICONTROL Risorse immagine di processo di Dynamic Media]** e tocca la scheda **[!UICONTROL Miniature]** . Modifica le dimensioni delle miniature in base alle esigenze, quindi tocca **[!UICONTROL OK]**.
 
    ![6_5_dinamicmediaprocesseassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
@@ -211,7 +169,7 @@ Il dimensionamento delle miniature è definito nel seguente formato: **[!UICONTR
 
 I predefiniti immagine creati sono disponibili come rappresentazioni dinamiche quando visualizzi in anteprima le risorse. L&#39;Experience Manager mostra varie rappresentazioni dinamiche quando si visualizza una risorsa da **[!UICONTROL Vista dettagli > Rendering]**. Puoi aumentare o diminuire il limite di rappresentazioni visualizzate.
 
-**Per aumentare o diminuire il numero di predefiniti immagine visualizzati**:
+**Per aumentare o diminuire il numero di predefiniti immagine visualizzati:**
 
 1. Passa a CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Passa al nodo di elenco dei predefiniti immagine in `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -239,11 +197,12 @@ Se desideri supportare l’acquisizione di file AI, PDF ed EPS in modo da poter 
 Consulta [Formati di file Adobe Illustrator (AI), PostScript® (EPS) e PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 Se desideri supportare l’acquisizione di file INDD in modo da poter generare il rendering dinamico di questo formato di file, controlla le seguenti informazioni prima di creare i predefiniti per immagini.
+
 Vedere [Formato del file InDesign (INDD)](#indesign-indd-file-format).
 
-**Per creare un predefinito** immagine:
+**Per creare un predefinito per immagini:**
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti > Risorse > Predefiniti immagini]**.
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagini]**.
 1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la finestra **[!UICONTROL Modifica predefinito immagine]**.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -372,7 +331,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
    <td><strong>Tipo di nitidezza</strong></td>
    <td><p>Selezionare <strong>Nessuno</strong>, <strong>Nitidezza</strong> o <strong>Maschera definizione dettagli</strong>. </p>
     <ul>
-     <li>Selezionare <strong>None</strong> per disabilitare la nitidezza.</li>
+     <li>Selezionare <strong>Nessuno</strong> per disattivare la nitidezza.</li>
      <li>Selezionare <strong>Nitidezza </strong>per applicare all'immagine un filtro di nitidezza di base dopo che è stata effettuata la modifica in scala. La nitidezza può contribuire a compensare la sfocatura che può verificarsi quando si visualizza un'immagine con dimensioni diverse. </li>
      <li>Seleziona<strong> Maschera definizione dettagli</strong> per regolare con precisione un effetto filtro di nitidezza sull'immagine ricampionata verso il basso finale. Puoi controllare l’intensità dell’effetto, il raggio in pixel e una soglia di contrasto da ignorare. L’effetto utilizza le stesse opzioni del filtro “Maschera definizione dettagli” di Photoshop.</li>
     </ul> <p>In <strong>Maschera definizione dettagli</strong> sono disponibili le seguenti opzioni:</p>
@@ -471,7 +430,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che puoi esegui
 
 ### Modifica dei predefiniti per immagini {#modifying-image-presets}
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti > Risorse > Predefiniti immagini]**.
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagini]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -484,5 +443,5 @@ I predefiniti immagine vengono pubblicati automaticamente.
 
 ### Eliminazione dei predefiniti immagine {#deleting-image-presets}
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca o fai clic sull’icona Strumenti , quindi passa a **[!UICONTROL Risorse > Predefiniti immagini]**.
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca o fai clic sull’icona Strumenti , quindi passa a **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagini]**.
 1. Seleziona un predefinito, quindi fai clic su **[!UICONTROL Elimina]**. Dynamic Media conferma che si desidera eliminarlo. Tocca **[!UICONTROL Elimina]** per eliminare o toccare **[!UICONTROL Annulla]** per interrompere l&#39;operazione.
