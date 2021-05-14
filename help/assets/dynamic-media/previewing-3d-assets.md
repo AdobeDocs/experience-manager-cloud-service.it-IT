@@ -1,10 +1,9 @@
 ---
 title: Anteprima delle risorse 3D
 description: Scopri come visualizzare in anteprima le risorse 3D in Dynamic Media.
-translation-type: tm+mt
-source-git-commit: 2fd39221eca36f520d0095339423ac2c6a0c322e
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '562'
 ht-degree: 15%
 
 ---
@@ -25,7 +24,7 @@ L’anteprima 3D interattiva in Experience Manager supporta i seguenti formati d
 | Estensione file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
 | GLB | Trasmissione GL binaria | model/gltf binario |  |
-| GLTF | Formato di trasmissione GL | model/gltf+json | Vedi **Nota** di seguito. |
+| GLTF | Formato di trasmissione GL | model/gltf+json | Vedi la **Nota** di seguito. |
 | OBJ | File oggetto 3D WaveFront | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Sostegno solo all&#39;acquisizione; anteprima non disponibile. |
@@ -52,13 +51,13 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
 1. Assicurati di aver caricato risorse 3D in Experience Manager.
 Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Caricamento delle risorse](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Ad Experience Manager, nella pagina **[!UICONTROL Navigazione]**, tocca **[!UICONTROL Risorse > File]**.
+1. Ad Experience Manager, nella pagina **[!UICONTROL Navigazione]**, tocca **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 
    ![Pagina di navigazione](/help/assets/dynamic-media/assets/navigation-assets.png)
 
 1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Vista a schede]**, quindi individua la risorsa 3D da visualizzare in anteprima.
 
-   ![Selezione scheda 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
+   ![Selezione della scheda 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
    _Nella Vista a schede, tocca la scheda della risorsa 3D da visualizzare in anteprima._
 
 1. Tocca la scheda della risorsa 3D.
