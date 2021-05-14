@@ -4,10 +4,9 @@ description: Scopri come utilizzare le immagini interattive in Dynamic Media.
 feature: Immagini interattive
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '4247'
+source-wordcount: '4263'
 ht-degree: 1%
 
 ---
@@ -24,11 +23,11 @@ Consulta [immagini interattive in action](https://marketing.adobe.com/resources/
 
 ## Guarda come vengono creati i banner immagine interattivi {#watch-how-interactive-image-banners-are-created}
 
-Guarda una procedura dettagliata di 10 minuti e 33 secondi sulla [creazione dei banner immagine interattivi](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). Inoltre, viene illustrato come visualizzare in anteprima, modificare e distribuire banner immagine interattivi.
+Guarda la procedura dettagliata su [come vengono creati i banner immagine interattivi](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minuti e 33 secondi). Inoltre, viene illustrato come visualizzare in anteprima, modificare e distribuire banner immagine interattivi.
 
 ## Avvio rapido: Immagini interattive {#quick-start-interactive-images}
 
-La seguente descrizione dettagliata del flusso di lavoro è stata progettata per aiutarti a iniziare rapidamente a usare le immagini interattive in AEM Assets.
+La seguente descrizione dettagliata del flusso di lavoro è stata progettata per aiutarti a iniziare rapidamente a usare le immagini interattive in Adobe Experience Manager Assets.
 
 Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su un esempio di pagina web [in cui non sono ancora state aggiunte immagini interattive](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
 
@@ -39,7 +38,7 @@ L’esercitazione illustra i passaggi necessari per integrare le immagini intera
 Passaggi per le immagini interattive:
 
 1. **(Facoltativo) Identificazione delle variabili** dei punti attivi. Se utilizzi Adobe Experience Manager Assets e Dynamic Media standalone, identifica le variabili dinamiche utilizzate nell’implementazione della visualizzazione rapida esistente. In questo modo è possibile inserire i dati dei punti attivi durante la creazione dell’immagine interattiva. Consulta [(Facoltativo) Identificazione delle variabili dei punti attivi](#optional-identifying-hotspot-variables).
-Tuttavia, se utilizzi AEM Sites, eCommerce AEM o entrambi, questo passaggio non è necessario.
+Tuttavia, se utilizzi Experience Manager Sites, Experience Manager eCommerce o entrambi, questo passaggio non è necessario.
 
 1. **(Facoltativo) Creazione di un predefinito** visualizzatore di immagini interattive. Personalizza l&#39;immagine grafica utilizzata per rappresentare gli hotspot. La creazione di un proprio predefinito per visualizzatori di immagini interattive non è necessaria se invece desideri utilizzare il predefinito per visualizzatori di immagini interattive preimpostato `Shoppable_Banner`.
 Consulta [(Facoltativo) Creazione di un predefinito visualizzatore di immagini interattive](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -63,11 +62,11 @@ Se utilizzi un WCM di terze parti (Web Content Manager), integra il nuovo video 
 >Questa attività è necessaria solo se sono soddisfatte le seguenti condizioni:
 >
 >* Per aggiungere interattività all’immagine, attiva le visualizzazioni rapide.
->* La tua implementazione di Experience Manager *non* utilizza un framework di integrazione eCommerce per estrarre i dati di prodotto in Experience Manager da qualsiasi soluzione eCommerce. Tali soluzioni includono IBM WebSphere® Commerce, Elastic Path, hybris o Intershop.
+>* La tua implementazione di Experience Manager *non* utilizza un framework di integrazione eCommerce per estrarre i dati di prodotto in Experience Manager da qualsiasi soluzione eCommerce. Tali soluzioni includono IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop.
 
 >
 >
-Se l’implementazione di AEM utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
+Se l’implementazione di Experience Manager utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
 
 Per iniziare, identifica le variabili dinamiche utilizzate dall&#39;implementazione della visualizzazione rapida esistente in modo da poter inserire i dati dei punti attivi per creare l&#39;immagine interattiva.
 
@@ -168,15 +167,15 @@ Dati questi dati, l&#39;intero URL della visualizzazione rapida ha il seguente p
 
 In base a tale analisi, utilizzerai `categoryId` e `SKU` per gli hotspot.
 
-Ora puoi caricare un banner immagine e aggiungervi hotspot utilizzando la funzione di immagine interattiva acquistabile in AEM Assets.
+Ora puoi caricare un banner immagine e aggiungervi degli hotspot utilizzando la funzione immagine interattiva acquistabile in Experience Manager Assets.
 
 ## (Facoltativo) Creazione di un predefinito visualizzatore di immagini interattive {#optional-creating-an-interactive-image-viewer-preset}
 
-È possibile scegliere di utilizzare il predefinito visualizzatore di immagini interattive predefinito disponibile in AEM Assets, denominato `Shoppable_Banner` . Oppure puoi creare un predefinito visualizzatore personalizzato da usare con le immagini interattive.
+Puoi scegliere di utilizzare il predefinito visualizzatore di immagini interattive predefinito disponibile in Experience Manager Assets, denominato `Shoppable_Banner` . Oppure puoi creare un predefinito visualizzatore personalizzato da usare con le immagini interattive.
 
 Quando crei un predefinito visualizzatore di immagini interattive personalizzato, puoi determinare l’aspetto degli hotspot sul banner immagine. Come parte della creazione del predefinito visualizzatore, puoi scegliere di utilizzare un grafico per punti attivi da una raccolta di immagini predefinite.
 
-Dopo aver salvato il predefinito visualizzatore, questo viene attivato automaticamente (attivato) nella pagina dell’elenco Predefiniti visualizzatore di AEM Assets. Questa funzionalità significa che è visibile nel componente File multimediali interattivi e ogni volta che visualizzi una risorsa. Tuttavia, per *consegnare* un banner interattivo con questo predefinito visualizzatore, *pubblicare* anche il tuo predefinito visualizzatore. Questa regola è valida per i predefiniti visualizzatore personalizzati o predefiniti.
+Dopo aver salvato il predefinito visualizzatore, questo viene attivato automaticamente (attivato) nella pagina dell’elenco Predefiniti visualizzatore di Risorse Experience Manager. Questa funzionalità significa che è visibile nel componente File multimediali interattivi e ogni volta che visualizzi una risorsa. Tuttavia, per *consegnare* un banner interattivo con questo predefinito visualizzatore, *pubblicare* anche il tuo predefinito visualizzatore. Questa regola è valida per i predefiniti visualizzatore personalizzati o predefiniti.
 
 **Per creare un predefinito visualizzatore di immagini interattive**
 
@@ -265,7 +264,7 @@ Se modifichi immagini interattive con punti attivi e ritagli l’immagine, quest
 
    * Tocca **[!UICONTROL Visualizzazione rapida]**.
 
-      * Se sei un cliente AEM Sites o eCommerce, tocca o fai clic sull’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Tocca il prodotto da utilizzare, quindi tocca **Seleziona** nell’angolo in alto a destra della pagina. Viene visualizzata nuovamente la pagina Gestione punti attivi.
+      * Se sei un cliente di Experience Manager Sites o eCommerce, tocca o fai clic sull’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Tocca il prodotto da utilizzare, quindi tocca **Seleziona** nell’angolo in alto a destra della pagina. Viene visualizzata nuovamente la pagina Gestione punti attivi.
       * Se sei *non* un cliente Experience Manager Sites o eCommerce
 
          * Consultare [Identificazione di variabili di punti attivi](#optional-identifying-hotspot-variables); devi definire queste variabili.
@@ -282,7 +281,7 @@ Se modifichi immagini interattive con punti attivi e ritagli l’immagine, quest
 
    * Tocca **[!UICONTROL Frammento esperienza]**.
 
-      * Se sei un cliente AEM Sites, tocca o fai clic sull’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza . Tocca il frammento esperienza da utilizzare. Quindi tocca **[!UICONTROL Seleziona]** nell’angolo in alto a destra della pagina. Viene visualizzata nuovamente la pagina Gestione punti attivi.
+      * Se sei un cliente di Experience Manager Sites, tocca o fai clic sull’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza . Tocca il frammento esperienza da utilizzare. Quindi tocca **[!UICONTROL Seleziona]** nell’angolo in alto a destra della pagina. Viene visualizzata nuovamente la pagina Gestione punti attivi.
 Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Specifica la larghezza e l’altezza del frammento esperienza come desideri che appaia sul banner.
@@ -310,7 +309,7 @@ Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experie
 
 Una volta ottenuta l’immagine interattiva, puoi pubblicarla.
 Consulta [Incorporamento del visualizzatore di video o immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md).
-Consulta [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine AEM Sites.
+Consulta [Collegamento di URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.
 Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **Per visualizzare in anteprima le immagini interattive**
@@ -328,9 +327,9 @@ Per informazioni dettagliate su come pubblicare le risorse immagine interattive,
 
 Dopo aver caricato un&#39;immagine del banner, aggiunto degli hotspot ad essa e pubblicato l&#39;immagine interattiva, puoi aggiungerla alla pagina del tuo sito web.
 
-Se sei un cliente di AEM Sites, puoi aggiungere l’immagine interattiva trascinando il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Se sei un cliente di Experience Manager Sites, puoi aggiungere l’immagine interattiva trascinando il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-Se sei un cliente AEM Assets autonomo, puoi aggiungere manualmente l’immagine interattiva al tuo sito web come descritto in questa sezione.
+Se sei un cliente di Experience Manager Assets autonomo, puoi aggiungere manualmente l’immagine interattiva al tuo sito web come descritto in questa sezione.
 
 1. Copia il codice di incorporamento dell’immagine interattiva pubblicata.
 Consulta [Incorporamento del visualizzatore di video o immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md).
@@ -346,7 +345,7 @@ Utilizzando il sito web di dimostrazione [come esempio](https://marketing.adobe.
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-L&#39;integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il codice di incorporamento copiato da AEM Assets. Come puoi vedere, il risultato [mostra l&#39;immagine interattiva acquistabile sulla pagina con tre punti attivi circolari](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
+L’integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il codice di incorporamento copiato da Experience Manager Assets. Come puoi vedere, il risultato [mostra l&#39;immagine interattiva acquistabile sulla pagina con tre punti attivi circolari](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 Come questo punto, gli hotspot sull&#39;immagine interattiva acquistabile del sito web demo sono solo a scopo di visualizzazione. Non sono ancora integrati con le visualizzazioni rapide esistenti.
@@ -362,7 +361,7 @@ Consultare [crop](https://experienceleague.adobe.com/docs/dynamic-media-develope
 ## Integrazione di un&#39;immagine interattiva con una visualizzazione rapida esistente {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
-Questa attività si applica solo se sei un cliente AEM Assets autonomo.
+Questa attività si applica solo se sei un cliente di Experience Manager Assets autonomo.
 
 L’ultimo passaggio di questo processo consiste nell’integrazione dell’immagine interattiva con un’implementazione della visualizzazione rapida esistente sul sito web. Non esiste una soluzione all’integrazione che funzioni per tutti i casi. Ogni implementazione della visualizzazione rapida è univoca ed è necessario un approccio specifico. In quanto tale, è utile coinvolgere l&#39;assistenza di una persona IT front-end.
 
@@ -378,7 +377,7 @@ L&#39;implementazione della visualizzazione rapida esistente rappresenta normalm
 
 Queste chiamate non rappresentano necessariamente chiamate API pubbliche indipendenti richiamate dalla logica della pagina web da un passaggio arbitrario. Si tratta invece di una chiamata concatenata in cui ogni passaggio successivo viene nascosto nell’ultima fase (callback) del passaggio precedente.
 
-Quando l&#39;immagine interattiva acquistabile sostituisce il passaggio 1 e in parte il passaggio 2, un utente tocca un punto attivo all&#39;interno dell&#39;immagine acquistabile. Tale interazione dell’utente viene gestita dal visualizzatore. Il visualizzatore restituisce un evento alla pagina web che contiene tutti i dati del punto attivo precedentemente aggiunti ad AEM Assets.
+Quando l&#39;immagine interattiva acquistabile sostituisce il passaggio 1 e in parte il passaggio 2, un utente tocca un punto attivo all&#39;interno dell&#39;immagine acquistabile. Tale interazione dell’utente viene gestita dal visualizzatore. Il visualizzatore restituisce un evento alla pagina web che contiene tutti i dati del punto attivo precedentemente aggiunti alle risorse di Experience Manager.
 
 In un tale gestore di eventi, il codice front-end effettua le seguenti operazioni:
 
@@ -447,7 +446,7 @@ Utilizzando i precedenti esempi di URL di visualizzazione rapida, è possibile v
  </tbody>
 </table>
 
-L&#39;ultimo passaggio per attivare l&#39;URL di visualizzazione rapida e attivare il pannello di visualizzazione rapida richiede l&#39;assistenza di un esperto IT front-end della tua azienda. Essi hanno la conoscenza di sapere come attivare con precisione l&#39;implementazione della visualizzazione rapida dal passaggio appropriato, avendo un URL di visualizzazione rapida pronto all&#39;uso.
+L&#39;ultimo passaggio per attivare l&#39;URL di visualizzazione rapida e attivare il pannello di visualizzazione rapida richiede l&#39;assistenza di un esperto IT front-end dal proprio lavoro. Essi hanno la conoscenza di sapere come attivare con precisione l&#39;implementazione della visualizzazione rapida dal passaggio appropriato, avendo un URL di visualizzazione rapida pronto all&#39;uso.
 
 Potete vedere come questi passaggi vengono applicati al sito web demo per integrare completamente un&#39;immagine interattiva acquistabile con il codice di visualizzazione rapida. In precedenza, la struttura dell’URL della visualizzazione rapida era identificata come segue:
 
@@ -495,4 +494,4 @@ Il sito web demo [finale con l&#39;immagine interattiva completamente integrata]
 
 ## Utilizzo delle visualizzazioni rapide per creare pop-up personalizzati {#using-quickviews-to-create-custom-pop-ups}
 
-Vedere [Uso delle viste rapide per creare finestre pop-up personalizzate](/help/assets/dynamic-media/custom-pop-ups.md).
+Vedere [Uso delle visualizzazioni rapide per creare finestre pop-up personalizzate Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
