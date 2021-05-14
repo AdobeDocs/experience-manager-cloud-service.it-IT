@@ -1,51 +1,50 @@
 ---
-title: Dettagli ambiente di generazione
-description: Dettagli ambiente build - Cloud Services
-translation-type: tm+mt
-source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
+title: Dettagli dell’ambiente di generazione
+description: Dettagli dell’ambiente di creazione - Cloud Services
+exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
+source-git-commit: c3b70f513455dfeaac6bc20c05fc9c35dcddf73e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
 
+# Informazioni sull’ambiente di creazione {#understanding-build-environment}
 
-# Informazioni sull&#39;ambiente di generazione {#understanding-build-environment}
+## Dettagli dell&#39;ambiente di generazione {#build-environment-details}
 
-## Dettagli ambiente build {#build-environment-details}
+Cloud Manager crea ed esegue il test del codice utilizzando un ambiente di build specializzato. Questo ambiente ha i seguenti attributi:
 
-Cloud Manager crea e verifica il codice utilizzando un ambiente di build specializzato. Questo ambiente ha i seguenti attributi:
-
-* L&#39;ambiente di costruzione è basato su Linux, derivato da Ubuntu 18.04.
+* L&#39;ambiente di creazione è basato su Linux, derivato da Ubuntu 18.04.
 * Apache Maven 3.6.0 è installato.
-* Le versioni Java installate sono  Oracle JDK 8u202 e 11.0.2.
+* Le versioni Java installate sono Oracle JDK 8u202 e 11.0.2.
 * Sono installati alcuni pacchetti di sistema aggiuntivi necessari:
 
    * bzip2
    * decomprimere
    * libpng
-   * imagemagick
+   * immaginemagick
    * graphicsmagick
 
 * Altri pacchetti possono essere installati in fase di creazione come descritto [sotto](#installing-additional-system-packages).
-* Ogni costruzione è fatta su un ambiente incontaminato; il contenitore di compilazione non mantiene alcuno stato tra le esecuzioni.
-* Maven è sempre eseguito con i tre comandi seguenti:
+* Ogni costruzione è fatta su un ambiente incontaminato; il contenitore build non mantiene nessuno stato tra le esecuzioni.
+* Maven viene sempre eseguito con i tre comandi seguenti:
 
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven è configurato a livello di sistema con un file settings.xml che include automaticamente l&#39;archivio dell&#39;Adobe pubblico **Artifact**. Per ulteriori informazioni, vedere [ Adobe Public Maven Repository](https://repo.adobe.com/).
+* Maven è configurato a livello di sistema con un file settings.xml che include automaticamente l’archivio dell’Adobe pubblico **Artifact** utilizzando un profilo denominato `adobe-public`. (Per ulteriori informazioni, consulta [Adobe Public Maven Repository](https://repo.adobe.com/) .
 
 >[!NOTE]
->Sebbene Cloud Manager non definisca una versione specifica di `jacoco-maven-plugin`, la versione utilizzata deve essere almeno `0.7.5.201505241946`.
+>Anche se Cloud Manager non definisce una versione specifica di `jacoco-maven-plugin`, la versione utilizzata deve essere almeno `0.7.5.201505241946`.
 
 ### Utilizzo del supporto Java 11 {#using-java-support}
 
-Cloud Manager ora supporta la creazione di progetti per i clienti con Java 8 e Java 11. Per impostazione predefinita, i progetti vengono creati utilizzando Java 8.
+Cloud Manager ora supporta la creazione di progetti per i clienti sia con Java 8 che con Java 11. Per impostazione predefinita, i progetti vengono generati utilizzando Java 8.
 
-I clienti che desiderano utilizzare Java 11 nei loro progetti possono farlo utilizzando il plug-in [Apache Maven Toolchain Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+I clienti che desiderano utilizzare Java 11 nei loro progetti possono farlo utilizzando il [plugin delle catene degli strumenti Apache Maven](https://maven.apache.org/plugins/maven-toolchains-plugin/).
 
-A questo scopo, nel file pom.xml, aggiungete una voce `<plugin>` simile alla seguente:
+A questo scopo, nel file pom.xml aggiungi una voce `<plugin>` simile a questa:
 
 ```
 <plugin>
@@ -74,7 +73,7 @@ A questo scopo, nel file pom.xml, aggiungete una voce `<plugin>` simile alla seg
 >I valori dei fornitori supportati sono `oracle` e `sun`e i valori delle versioni supportate sono `1.8`, `1.11` e `11`.
 
 >[!NOTE]
->La build del progetto di Cloud Manager utilizza ancora Java 8 per richiamare Maven, pertanto il controllo o l&#39;applicazione della versione Java configurata nel plug-in della catena di strumenti tramite plug-in come il [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) non funziona e tali plug-in non devono essere utilizzati.
+>La build del progetto Cloud Manager utilizza ancora Java 8 per richiamare Maven, pertanto il controllo o l’applicazione della versione Java configurata nel plug-in toolchain tramite plug-in come il [plug-in Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) non funziona e tali plug-in non devono essere utilizzati.
 
 ## Variabili di ambiente {#environment-variables}
 
@@ -82,28 +81,28 @@ A questo scopo, nel file pom.xml, aggiungete una voce `<plugin>` simile alla seg
 
 In alcuni casi, i clienti trovano necessario variare il processo di creazione in base alle informazioni sul programma o sulla pipeline.
 
-Ad esempio, se si sta effettuando una minificazione JavaScript in fase di creazione, attraverso uno strumento come gulp, potrebbe essere necessario utilizzare un livello di minificazione diverso quando si crea un ambiente di sviluppo anziché costruire per il palco e la produzione.
+Ad esempio, se si esegue la minimizzazione JavaScript in fase di creazione, tramite uno strumento come gulp, potrebbe essere utile utilizzare un livello di minimizzazione diverso durante la creazione di un ambiente di sviluppo, anziché per la creazione di stage e produzione.
 
 Per supportare questa funzione, Cloud Manager aggiunge queste variabili di ambiente standard al contenitore di build per ogni esecuzione.
 
-| **Nome variabile** | **Definizione** |
+| **Nome della variabile** | **Definizione** |
 |---|---|
-| CM_BUILD | Sempre impostato su &quot;true&quot; |
-| BRANCH | Il ramo configurato per l&#39;esecuzione |
+| CM_BUILD | Imposta sempre su &quot;true&quot; |
+| BRANCH | Il ramo configurato per l’esecuzione |
 | CM_PIPELINE_ID | Identificatore numerico della pipeline |
-| CM_PIPELINE_NAME | Il nome della pipeline |
+| CM_PIPELINE_NAME | Nome della pipeline |
 | CM_PROGRAM_ID | Identificatore numerico del programma |
 | CM_PROGRAM_NAME | Nome del programma |
 | ARTIFACTS_VERSION | Per una fase o una pipeline di produzione, la versione sintetica generata da Cloud Manager |
-| CM_AEM_PRODUCT_VERSION | Nome della versione |
+| CM_AEM_PRODUCT_VERSION | Nome del rilascio |
 
-### Variabili di tubazione {#pipeline-variables}
+### Variabili di pipeline {#pipeline-variables}
 
-In alcuni casi, il processo di creazione di un cliente può dipendere da variabili di configurazione specifiche che non sarebbero adatte a essere inserite nell&#39;archivio Git o che dovrebbero variare tra le esecuzioni della pipeline che utilizzano lo stesso ramo.
+In alcuni casi, il processo di creazione di un cliente può dipendere da specifiche variabili di configurazione che non sarebbero appropriate per l’inserimento nell’archivio Git o dovrebbero variare tra le esecuzioni della pipeline che utilizzano lo stesso ramo.
 
-Cloud Manager consente di configurare queste variabili tramite l&#39;API di Cloud Manager o l&#39;interfaccia CLI di Cloud Manager in base alla pipeline. Le variabili possono essere memorizzate come testo normale o cifrate a riposo. In entrambi i casi, le variabili sono rese disponibili all&#39;interno dell&#39;ambiente di generazione come variabile di ambiente a cui è possibile fare riferimento all&#39;interno del file `pom.xml` o di altri script di compilazione.
+Cloud Manager consente di configurare queste variabili tramite l’API di Cloud Manager o l’CLI di Cloud Manager in base alla pipeline. Le variabili possono essere memorizzate come testo normale o cifrate a riposo. In entrambi i casi, le variabili sono rese disponibili all&#39;interno dell&#39;ambiente di creazione come variabile di ambiente a cui è possibile fare riferimento all&#39;interno del file `pom.xml` o di altri script di compilazione.
 
-Per impostare una variabile utilizzando CLI, eseguire un comando come:
+Per impostare una variabile utilizzando CLI, esegui un comando simile al seguente:
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
 
@@ -111,9 +110,9 @@ Per impostare una variabile utilizzando CLI, eseguire un comando come:
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-I nomi delle variabili possono contenere solo caratteri alfanumerici e carattere di sottolineatura (_). Per convenzione, i nomi devono essere tutti maiuscoli. Esiste un limite di 200 variabili per pipeline, ogni nome deve essere inferiore a 100 caratteri e ogni valore deve essere inferiore a 2048 caratteri per le variabili di tipo stringa e a 500 caratteri per le variabili di tipo secretString.
+I nomi delle variabili possono contenere solo caratteri alfanumerici e carattere di sottolineatura (_). Per convenzione, i nomi devono essere tutti maiuscoli. Esiste un limite di 200 variabili per pipeline, ogni nome deve essere inferiore a 100 caratteri e ogni valore deve essere inferiore a 2048 caratteri nel caso di variabili di tipo stringa e a 500 caratteri nel caso di variabili di tipo secretString.
 
-Se utilizzata all&#39;interno di un file `Maven pom.xml`, è generalmente utile mappare queste variabili alle proprietà Maven utilizzando una sintassi simile alla seguente:
+Quando viene utilizzato all&#39;interno di un file `Maven pom.xml`, è in genere utile mappare queste variabili alle proprietà Maven utilizzando una sintassi simile alla seguente:
 
 ```xml
         <profile>
@@ -131,7 +130,7 @@ Se utilizzata all&#39;interno di un file `Maven pom.xml`, è generalmente utile 
 
 ## Installazione di pacchetti di sistema aggiuntivi {#installing-additional-system-packages}
 
-Alcune build richiedono l&#39;installazione di pacchetti di sistema aggiuntivi per funzionare completamente. Ad esempio, una build può richiamare uno script Python o ruby e, di conseguenza, deve disporre di un interprete lingua appropriato installato. A tale scopo, è possibile chiamare [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) per richiamare APT. In genere, questa esecuzione deve essere racchiusa in un profilo Maven specifico per Cloud Manager. Ad esempio, per installare python:
+Alcune build richiedono l&#39;installazione di pacchetti di sistema aggiuntivi per funzionare completamente. Ad esempio, una build può richiamare uno script Python o ruby e, di conseguenza, deve disporre di un interprete di lingua appropriato installato. A tale scopo, è necessario chiamare [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) per richiamare APT. Questa esecuzione deve generalmente essere racchiusa in un profilo Maven specifico per Cloud Manager. Ad esempio, per installare python:
 
 ```xml
         <profile>
@@ -184,7 +183,7 @@ Alcune build richiedono l&#39;installazione di pacchetti di sistema aggiuntivi p
         </profile>
 ```
 
-Questa stessa tecnica può essere utilizzata per installare pacchetti specifici per la lingua, ad esempio utilizzando `gem` per RubyGems o `pip` per i pacchetti Python.
+Questa stessa tecnica può essere utilizzata per installare pacchetti specifici per la lingua, ad esempio utilizzando `gem` per RubyGems o `pip` per pacchetti Python.
 
 >[!NOTE]
->L&#39;installazione di un pacchetto di sistema in questo modo **non** lo installa nell&#39;ambiente di runtime utilizzato per eseguire Adobe Experience Manager. Se avete bisogno di installare un pacchetto di sistema nell&#39;ambiente AEM, contattate il rappresentante  Adobe.
+>L&#39;installazione di un pacchetto di sistema in questo modo **non** lo installa nell&#39;ambiente di runtime utilizzato per l&#39;esecuzione di Adobe Experience Manager. Se hai bisogno di un pacchetto di sistema installato nell’ambiente AEM, contatta il tuo rappresentante Adobe.
