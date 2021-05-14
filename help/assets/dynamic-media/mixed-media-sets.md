@@ -4,17 +4,16 @@ description: Scopri come utilizzare i set di file multimediali diversi in Dynami
 feature: Set di file multimediali diversi
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 25%
+source-wordcount: '1471'
+ht-degree: 23%
 
 ---
 
 # Set di file multimediali diversi{#mixed-media-sets}
 
-I set di file multimediali diversi consentono di fornire un mix di immagini, set di immagini, set 360 gradi e video in una presentazione.
+I set di file multimediali diversi consentono di fornire una combinazione di immagini, set di immagini, set 360 gradi e video in una presentazione.
 
 I set di file multimediali diversi sono indicati da un banner con la parola **[!UICONTROL MixedMediaSet]**. Inoltre, se il set di file multimediali diversi è pubblicato, la data di pubblicazione, indicata dall’icona **[!UICONTROL mondo]**, è riportata sul banner insieme all’ultima data di modifica, contrassegnata dall’icona a forma di **[!UICONTROL matita]**.
 
@@ -30,7 +29,7 @@ Per iniziare rapidamente a usare i set di file multimediali diversi, effettua le
 
 1. [Carica le risorse](#uploading-assets).
 
-   Per iniziare, carica le immagini e i video per i set di file multimediali diversi. Se necessario, crea i [Set di immagini](/help/assets/dynamic-media/image-sets.md) e i [Set 360 gradi](/help/assets/dynamic-media/spin-sets.md). Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di file multimediali diversi, assicurati di tenere conto dello zoom quando scegli le immagini. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel.
+   Per iniziare, carica le immagini e i video per i set di file multimediali diversi. Se necessario, crea i [Set di immagini](/help/assets/dynamic-media/image-sets.md) e i [Set 360 gradi](/help/assets/dynamic-media/spin-sets.md). Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di file multimediali diversi, assicurati di tenere conto dello zoom quando scegli le immagini. Assicurati che le immagini siano di almeno 2000 pixel nelle dimensioni più grandi.
 
 1. [Creare set di file multimediali diversi](#creating-mixed-media-sets).
 
@@ -70,7 +69,7 @@ Se necessario, puoi modificare [Set di file multimediali diversi](#editing-mixed
 
 ## Caricamento delle risorse {#uploading-assets}
 
-Per iniziare, carica le immagini e i video per i set di file multimediali diversi. Ricorda che gli utenti possono ingrandire le immagini nel visualizzatore di set di file multimediali diversi. Scegliere le immagini con questa funzionalità di zoom. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel.
+Per iniziare, carica le immagini e i video per i set di file multimediali diversi. Ricorda che gli utenti possono ingrandire le immagini nel visualizzatore di set di file multimediali diversi. Scegliere le immagini con questa funzionalità di zoom. Assicurati che le immagini siano di almeno 2000 pixel nelle dimensioni più grandi.
 
 Inoltre, se desideri aggiungere set 360 gradi o set di immagini al set di file multimediali diversi, creali pure.
 
@@ -80,7 +79,7 @@ Puoi aggiungere immagini, set di immagini, set 360 gradi e video al set di file 
 
 Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in ordine alfanumerico. Puoi riordinare o ordinare manualmente le risorse dopo averle aggiunte.
 
-**Per creare un set di file multimediali diversi**
+**Per creare un set di file multimediali diversi:**
 
 1. In Assets, individua il punto in cui vuoi creare un set di file multimediali diversi, fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Set di file multimediali diversi]**. Puoi anche creare il set dall’interno di una cartella contenente le risorse. Viene visualizzato l’Editor set di file multimediali diversi.
 
@@ -126,7 +125,7 @@ Puoi eseguire varie attività di modifica alle risorse in Set di file multimedia
 * Applica i predefiniti visualizzatore.
 * Modifica la miniatura predefinita.
 
-**Per modificare un set di file multimediali diversi**
+**Per modificare un set di file multimediali diversi:**
 
 1. Effettua una delle seguenti operazioni:
 
@@ -156,7 +155,7 @@ Puoi eseguire varie attività di modifica alle risorse in Set di file multimedia
 
    >[!NOTE]
    >
-   >* Per modificare le risorse in un set di file multimediali diversi, passa a Set di file multimediali diversi. Tocca (non selezionare) il set per aprirlo nella pagina Anteprima set di Experienci Manager . Nella barra a sinistra, fai clic sul cursore verso il basso per aprire l’elenco a discesa, quindi tocca **[!UICONTROL Imposta membri]**. Nella pagina Membri set , passa il puntatore del mouse su una risorsa, quindi tocca **[!UICONTROL Modifica]** (icona a forma di matita) per aprire la pagina di modifica.
+   >* Per modificare le risorse in un set di file multimediali diversi, passa a Set di file multimediali diversi. Toccate (non selezionate) il set per aprirlo nella pagina Anteprima set di Experienci Manager . Nella barra a sinistra, fai clic sul cursore verso il basso per aprire l’elenco a discesa, quindi tocca **[!UICONTROL Imposta membri]**. Nella pagina Membri set , passa il puntatore del mouse su una risorsa, quindi tocca **[!UICONTROL Modifica]** (icona a forma di matita) per aprire la pagina di modifica.
       >
       >
    * Per eliminare un intero set di file multimediali diversi: da qualsiasi modalità di visualizzazione (come Vista a schede o Vista a colonne), vai al set di file multimediali diversi. Passa il puntatore del mouse sul set, quindi tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Premere **[!UICONTROL Backspace]** sulla tastiera oppure toccare **[!UICONTROL Altro]** (riga di tre punti), quindi toccare **[!UICONTROL Elimina]**.
