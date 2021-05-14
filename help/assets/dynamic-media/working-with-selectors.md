@@ -3,10 +3,9 @@ title: Utilizzo dei selettori
 description: Scopri i metodi per selezionare le risorse per le immagini interattive, i video interattivi e i banner a carosello in Dynamic Media.
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '750'
 ht-degree: 16%
 
 ---
@@ -59,7 +58,7 @@ Utilizza il selettore Prodotto per scegliere un prodotto quando desideri un punt
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. In modalità **[!UICONTROL Anteprima]**, è possibile toccare il punto attivo o la mappa immagine per visualizzare l&#39;aspetto della visualizzazione rapida.
+1. In modalità **[!UICONTROL Anteprima]**, è possibile toccare il punto attivo o la mappa immagine per visualizzare la visualizzazione rapida.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
