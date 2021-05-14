@@ -4,10 +4,9 @@ description: Scopri come creare e gestire i predefiniti per visualizzatori in Dy
 feature: Predefiniti visualizzatore, Visualizzatori
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '4243'
+source-wordcount: '4236'
 ht-degree: 13%
 
 ---
@@ -25,7 +24,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-Consulta anche la [Guida di riferimento visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Consulta anche la [Guida di riferimento visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 Questa sezione descrive come creare, modificare e gestire i predefiniti per visualizzatori. Puoi applicare un predefinito visualizzatore a una risorsa ogni volta che la visualizzi in anteprima. Consulta [Applicazione dei predefiniti per visualizzatori](#applying-a-viewer-preset-to-an-asset).
 
@@ -67,9 +66,9 @@ Tutti i predefiniti visualizzatore forniti con Dynamic Media sono completamente 
 * Desktop
 * Apple iPhone
 * Apple iPad
-* Smartphone Android
-* Tablet Android
-* Per i video, è disponibile un supporto aggiuntivo per la riproduzione MP4 per [BlackBerry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) e [Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
+* Smartphone Android™
+* Tablet Android™
+* Per i video, è disponibile un supporto aggiuntivo per la riproduzione MP4 per [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) e [Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
 
 ### Tipi di contenuti multimediali avanzati per predefiniti visualizzatore {#rich-media-types-for-viewer-presets}
 
@@ -79,7 +78,7 @@ Gli amministratori possono aggiungere e personalizzare i seguenti tipi di conten
  <tbody>
   <tr>
    <td><strong>Set carosello</strong><br /> </td>
-   <td><p>I punti attivi, le mappe immagine o entrambi vengono aggiunti a una serie di due o più immagini. Un cliente può scorrere le immagini a sinistra o a destra e quindi fare clic su un punto attivo di un'immagine per ulteriori dettagli o per acquistare direttamente dalla categoria, dalla pagina principale o dalle pagine di destinazione di un sito web.</p> </td>
+   <td><p>I punti attivi, le mappe immagine o entrambi vengono aggiunti a una serie di due o più immagini. Un cliente può scorrere le immagini a sinistra o a destra e quindi fare clic su un punto attivo di un'immagine per ulteriori dettagli o per acquistare direttamente dalle pagine di destinazione, categoria o home di un sito web.</p> </td>
   </tr>
     <tr>
    <td><strong>Dimensionale</strong><br /> </td>
@@ -99,11 +98,11 @@ Gli amministratori possono aggiungere e personalizzare i seguenti tipi di conten
   </tr>
   <tr>
    <td><strong>Immagine interattiva</strong></td>
-   <td>Gli hotspot vengono aggiunti alle parti di un'immagine su cui un cliente può fare clic per ulteriori dettagli o per acquistare direttamente dalla categoria, dalla pagina principale o dalle pagine di destinazione di un sito web.</td>
+   <td>Gli hotspot vengono aggiunti alle parti di un'immagine su cui un cliente può fare clic per ulteriori dettagli o per acquistare direttamente dalle pagine di destinazione, categoria o home di un sito web.</td>
   </tr>
   <tr>
    <td><strong>Video interattivo</strong></td>
-   <td>Le miniature vengono aggiunte ai segmenti della timeline di un video su cui un cliente può fare clic per ulteriori dettagli o per acquistare direttamente dalla categoria, dalla pagina principale o dalle pagine di destinazione di un sito web.</td>
+   <td>Le miniature vengono aggiunte ai segmenti della timeline di un video su cui un cliente può fare clic per ulteriori dettagli o per acquistare direttamente dalle pagine di destinazione, categoria o home di un sito web.</td>
   </tr>
   <tr>
    <td><strong>File multimediali diversi</strong></td>
@@ -156,7 +155,7 @@ Vedere anche [Demo live](https://landing.adobe.com/en/na/dynamic-media/ctir-2755
 
 Per informazioni sulle versioni supportate del browser web e del sistema operativo per i visualizzatori, consulta le Note sulla versione dei visualizzatori.
 
-Consulta &quot;Viewers release notes&quot; nel sommario della [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Consulta &quot;Viewers release notes&quot; nel sommario della [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 >[!NOTE]
 >
@@ -313,7 +312,7 @@ Consulta &quot;Viewers release notes&quot; nel sommario della [Guida di riferime
 
 ### Matrice di gesti dei visualizzatori mobili supportati {#supported-mobile-viewers-gestures-matrix}
 
-La tabella seguente identifica i gesti del visualizzatore mobile supportati sui dispositivi iOS, Android 2.x e Android 3.x.
+La tabella seguente identifica i gesti del visualizzatore mobile supportati sui dispositivi iOS, Android™ 2.x e Android™ 3.x.
 
 <table>
  <tbody>
@@ -344,14 +343,14 @@ La tabella seguente identifica i gesti del visualizzatore mobile supportati sui 
   <tr>
    <td><p><strong>Apri il pizzico</strong></p> </td>
    <td><p>Non applicabile</p> </td>
-   <td><p>Ingrandisce (solo iOS e Android 3x)</p> </td>
-   <td><p>Ingrandisce (solo iOS e Android 3x)</p> </td>
+   <td><p>Ingrandisce (solo iOS e Android™ 3x)</p> </td>
+   <td><p>Ingrandisce (solo iOS e Android™ 3x)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Chiudi</strong></p> </td>
    <td><p>Non applicabile</p> </td>
-   <td><p>Esegue lo zoom indietro (solo per iOS e Android 3x)</p> </td>
-   <td><p>Esegue lo zoom indietro (solo per iOS e Android 3x)</p> </td>
+   <td><p>Zoom out (solo per iOS e Android™ 3x)</p> </td>
+   <td><p>Zoom out (solo per iOS e Android™ 3x)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Passaggio del dito</strong></p> </td>
@@ -372,7 +371,7 @@ La tabella seguente identifica i gesti del visualizzatore mobile supportati sui 
 
 L’Experience Manager mostra un’ampia varietà di predefiniti visualizzatore quando visualizzi le risorse da **[!UICONTROL Vista dettagli > Visualizzatori]**. È possibile aumentare o diminuire il numero di visualizzatori visualizzati.
 
-**Per aumentare il numero di predefiniti visualizzatore visualizzati**:
+**Per aumentare il numero di predefiniti visualizzatore:**
 
 1. Passa a CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Passa al nodo di elenco predefinito del visualizzatore in `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -399,7 +398,7 @@ Consulta [Considerazioni speciali per la creazione di un predefinito visualizzat
 
 Consulta [Considerazioni speciali per la creazione di un predefinito visualizzatore per banner carosello](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
 
-**Per creare un predefinito** visualizzatore:
+**Per creare un predefinito visualizzatore:**
 
 1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca il logo dell’Experience Manager, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse] > [!UICONTROL Predefiniti visualizzatore]**.
 
@@ -421,13 +420,13 @@ Consulta [Considerazioni speciali per la creazione di un predefinito visualizzat
 
       L’editor visivo consente di vedere l’effetto di una determinata proprietà su uno stile. Imposta o regola qualsiasi proprietà per vedere immediatamente quale effetto ha sul visualizzatore utilizzando il campione a sinistra dell’editor.
 
-      Le proprietà di stile CSS per ciascun tipo di predefinito visualizzatore sono descritte nell’argomento della guida &quot;Personalizzazione *`<viewer name>`* visualizzatore&quot; nella [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Ad esempio, se stai creando un predefinito visualizzatore di tipo `Mixed_Media`, consulta [Personalizzazione di visualizzatori di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) per un elenco e una descrizione di ciascuna proprietà.
+      Le proprietà di stile CSS per ciascun tipo di predefinito visualizzatore sono descritte nell’argomento della guida &quot;Personalizzazione *`<viewer name>`* visualizzatore&quot; nella [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Ad esempio, se stai creando un predefinito visualizzatore di tipo `Mixed_Media`, consulta [Personalizzazione di visualizzatori di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) per un elenco e una descrizione di ciascuna proprietà.
 
    * Se hai definito le impostazioni di stile in un file CSS separato, puoi caricare il file CSS in Experience Manager Assets. Per trovare il file CSS caricato e associarlo al predefinito visualizzatore, tocca **[!UICONTROL Importa CSS]** sotto il menu a discesa **[!UICONTROL Tipo selezionato]** (se necessario, scorri l’editor visivo per visualizzarlo).
 
       Quando importi un file CSS, l’editor visivo controlla se il CSS utilizza gli indicatori di visualizzatore corretti. Ad esempio, se crei un visualizzatore zoom, tutte le regole CSS importate devono essere definite utilizzando il nome della classe di visualizzatore `.s7mixedmediaviewer` definito su un elemento visualizzatore principale.
 
-      È possibile importare CSS arbitrari creati a mano, purché definiscano correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in qualsiasi argomento della Guida alla personalizzazione *&lt;nome visualizzatore>* nel [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Ad esempio, per informazioni sui marcatori CSS per il visualizzatore zoom, consulta [Personalizzazione del visualizzatore zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) È tuttavia possibile che l’editor visivo non comprenda alcuni valori CSS. In questi casi, l’editor visivo tenta di ignorare gli errori in modo che il CSS possa ancora funzionare.
+      È possibile importare CSS arbitrari creati a mano, purché definiscano correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in qualsiasi argomento della Guida alla personalizzazione *&lt;nome visualizzatore>* nel [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Ad esempio, per informazioni sui marcatori CSS per il visualizzatore zoom, consulta [Personalizzazione del visualizzatore zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) È tuttavia possibile che l’editor visivo non comprenda alcuni valori CSS. In questi casi, l’editor visivo tenta di ignorare gli errori in modo che il CSS possa ancora funzionare.
    >[!NOTE]
    >
    >Se preferisci modificare il CSS direttamente nel relativo modulo non elaborato, tocca **[!UICONTROL Mostra/Nascondi CSS]** nel menu a discesa Tipo selezionato (se necessario, scorri l’editor visivo per visualizzare l’elemento).
@@ -459,7 +458,7 @@ Consulta [Considerazioni speciali per la creazione di un predefinito visualizzat
 
 ### Considerazioni speciali per la creazione di un predefinito visualizzatore interattivo {#special-considerations-for-creating-an-interactive-viewer-preset}
 
-**Modalità di visualizzazione per le miniature delle immagini nel pannello**:
+**Modalità di visualizzazione per le miniature delle immagini nel pannello:**
 
 Quando crei o modifichi un predefinito visualizzatore video interattivo, puoi scegliere l’impostazione della modalità di visualizzazione da utilizzare. Questa scelta si verifica quando si seleziona `InteractiveSwatches` dal menu a discesa **[!UICONTROL Componente selezionato]** nella scheda **[!UICONTROL Comportamento]** . La modalità di visualizzazione selezionata influisce sulla modalità e sul momento in cui vengono visualizzate le miniature durante la riproduzione del video. Puoi scegliere la Modalità di visualizzazione `segment` (predefinita) o `continuous`.
 
@@ -480,7 +479,7 @@ Quando crei o modifichi un predefinito visualizzatore video interattivo, puoi sc
  </tbody>
 </table>
 
-**Informazioni sul comportamento di scorrimento automatico nel visualizzatore** video interattivo:
+**Informazioni sul comportamento di scorrimento automatico nel visualizzatore video interattivo:**
 
 Il comportamento di scorrimento automatico delle miniature nel visualizzatore video interattivo funziona indipendentemente dalla modalità di visualizzazione scelta.
 
@@ -490,7 +489,7 @@ Se nel predefinito visualizzatore disattivi **[!UICONTROL Scorrimento automatico
 
 Durante la riproduzione del video, se hai abilitato tramite selezione l’opzione **[!UICONTROL Scorrimento automatico]** nel predefinito visualizzatore, le immagini in miniatura assegnate a un segmento video scorrono all’inizio di un segmento. Tuttavia, in alcuni casi, determinate miniature all’interno di un segmento vengono visualizzate con una durata raddoppiata rispetto alle altre miniature precedenti o successive. Questo comportamento si verifica perché il numero di miniature in un segmento è maggiore rispetto al numero visibile nel pannello e non è divisibile in modo uniforme.
 
-Ad esempio, supponiamo di avere un segmento video di 30 secondi. E ci sono in totale nove miniature da visualizzare in 30 secondi. Il browser viene ridimensionato in modo tale che nel pannello di visualizzazione siano presenti quattro miniature visibili. Il segmento a 30 secondi di tempo video è diviso in tre sottosegmenti. La tabella seguente mostra il raggruppamento di cui vengono visualizzate le miniature per un determinato sottosegmento di tempo:
+Ad esempio, supponiamo di avere un segmento video di 30 secondi. E ci sono in totale nove miniature da visualizzare in 30 secondi. Il browser viene ridimensionato in modo tale che nel pannello di visualizzazione siano presenti quattro miniature visibili. Il segmento di tempo video di 30 secondi è suddiviso in tre sottosegmenti. La tabella seguente mostra il raggruppamento di cui vengono visualizzate le miniature per un determinato sottosegmento di tempo:
 
 | **Sottosegmento video** | **Tempo del sottosegmento in secondi** | **Miniature visibili nel pannello** |
 |---|---|---|
@@ -523,7 +522,7 @@ Quando si creano i predefiniti visualizzatore per banner carosello, è possibile
 
 I predefiniti per visualizzatori disponibili nell’interfaccia utente dipendono da quelli attivi nella modalità Creazione. Per impostazione predefinita, dopo la creazione un predefinito visualizzatore è &quot;attivato&quot;. Se disattiva il predefinito, questo non verrà visualizzato in modalità Autore. Se il predefinito viene pubblicato, viene sempre pubblicato indipendentemente dal fatto che sia attivato o disattivato. Disattiva i predefiniti per visualizzatori se l’elenco diventa troppo ingombrante o se non desideri che un predefinito per visualizzatori sia disponibile per l’uso.
 
-**Per attivare o disattivare i predefiniti** visualizzatore:
+**Per attivare o disattivare i predefiniti visualizzatore:**
 
 1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca il logo dell’Experience Manager, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse] > [!UICONTROL Predefiniti visualizzatore]**.
 1. Nella pagina Predefinito visualizzatore , nell’intestazione di colonna **[!UICONTROL Stato]** , tocca l’opzione per attivare o disattivare un predefinito visualizzatore.
@@ -540,7 +539,7 @@ Consulta [Attivazione o disattivazione dei predefiniti per visualizzatori](#acti
 
 Consulta anche [Anteprima delle risorse](/help/assets/dynamic-media/previewing-assets.md).
 
-**Per pubblicare i predefiniti** visualizzatore:
+**Per pubblicare i predefiniti visualizzatore:**
 
 1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca il logo dell’Experience Manager, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse] > [!UICONTROL Predefiniti visualizzatore]**.
 1. Seleziona uno o più predefiniti visualizzatore da pubblicare.
@@ -555,7 +554,7 @@ Consulta anche [Anteprima delle risorse](/help/assets/dynamic-media/previewing-a
 
 La modifica di *predefiniti predefiniti predefiniti per visualizzatori* non è uno scenario supportato. Se modifichi un predefinito per visualizzatori preconfigurato, viene richiesto di salvarlo con un nuovo nome.
 
-**Per modificare i predefiniti** visualizzatore:
+**Per modificare i predefiniti visualizzatore:**
 
 1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca il logo dell’Experience Manager, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorsa] > [!UICONTROL Predefiniti visualizzatore]**.
 1. Seleziona un predefinito selezionando la casella a sinistra del titolo del predefinito visualizzatore.
@@ -573,7 +572,7 @@ La modifica di *predefiniti predefiniti predefiniti per visualizzatori* non è u
 
 È possibile eliminare i predefiniti per visualizzatori creati e aggiunti a Dynamic Media.
 
-**Per eliminare i predefiniti** visualizzatore personalizzati:
+**Per eliminare i predefiniti visualizzatore personalizzati:**
 
 1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca il logo dell’Experience Manager, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse] > [!UICONTROL Predefiniti visualizzatore]**.
 1. Nella pagina Predefiniti visualizzatore , seleziona un Titolo predefinito e tocca l’icona **[!UICONTROL Cestino]** .
@@ -583,7 +582,7 @@ La modifica di *predefiniti predefiniti predefiniti per visualizzatori* non è u
 
 Se hai già pubblicato sia la risorsa che il visualizzatore selezionato, dopo aver selezionato un predefinito visualizzatore vengono visualizzati i pulsanti **[!UICONTROL URL]** e **[!UICONTROL Incorpora]**.
 
-**Per applicare un predefinito visualizzatore a una risorsa**:
+**Per applicare un predefinito visualizzatore a una risorsa:**
 
 1. Apri la risorsa e, vicino all’angolo in alto a sinistra della pagina, tocca il menu a discesa, quindi seleziona **[!UICONTROL Visualizzatori]**.
 
