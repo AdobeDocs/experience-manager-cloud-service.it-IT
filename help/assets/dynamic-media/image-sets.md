@@ -4,10 +4,9 @@ description: Scopri come lavorare con i set di immagini in Dynamic Media.
 feature: Set di immagini
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2049'
+source-wordcount: '2050'
 ht-degree: 9%
 
 ---
@@ -44,7 +43,7 @@ Per farti iniziare a lavorare velocemente:
 
 1. [Carica le immagini sorgente principali per più visualizzazioni](#uploading-assets-in-image-sets).
 
-   Carica le immagini per i set di immagini. Gli utenti possono ingrandire le immagini nel visualizzatore di set di immagini. Scegli le tue immagini con attenzione. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel. Experience Manager Assets supporta molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG ed EPS senza perdita di dati.
+   Carica le immagini per i set di immagini. Gli utenti possono ingrandire le immagini nel visualizzatore di set di immagini. Scegli le tue immagini con attenzione. Assicurati che le immagini siano di almeno 2000 pixel nelle dimensioni più grandi. Experience Manager Assets supporta molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG ed EPS senza perdita di dati.
 
 1. [Creare set di immagini](#creating-image-sets).
 
@@ -85,7 +84,7 @@ In caso di problemi durante la creazione dei set, consulta Immagini e set in [Ri
 
 ## Caricamento delle risorse per i set di immagini {#uploading-assets-in-image-sets}
 
-Per iniziare, carica le risorse immagine per i set di immagini. Gli utenti possono ingrandire le immagini nel visualizzatore di set di immagini. Scegli le tue immagini con attenzione. Assicurati che le immagini abbiano una dimensione massima di almeno 2000 pixel, per ottenere dettagli di zoom ottimali. Dynamic Media può eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, è possibile utilizzare un&#39;immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
+Per iniziare, carica le risorse immagine per i set di immagini. Gli utenti possono ingrandire le immagini nel visualizzatore di set di immagini. Scegli le tue immagini con attenzione. Assicurati che le immagini siano di almeno 2000 pixel nelle dimensioni più grandi, per ottenere dettagli di zoom ottimali. Dynamic Media può eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, è possibile utilizzare un&#39;immagine da 5000x5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
 
 I set di immagini supportano molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG ed EPS senza perdita di dati.
 
@@ -95,9 +94,9 @@ I set di immagini supportano molti formati di file immagine, ma si consiglia di 
 
 Prima di creare i set di immagini, accertati che le immagini siano delle dimensioni e del formato corretti.
 
-Per creare un set di immagini a più visualizzazioni, è necessario che le immagini mostrino un elemento da diversi punti di vista o che mostrino diversi aspetti dello stesso elemento. L’obiettivo è quello di evidenziare le funzioni importanti di un elemento in modo che i visualizzatori abbiano un’immagine completa dell’aspetto o del funzionamento dell’elemento.
+Per creare un set di immagini a più visualizzazioni, è necessario che le immagini mostrino un elemento da diversi punti di vista o che mostrino diversi aspetti dello stesso elemento. L’obiettivo è quello di evidenziare le funzioni importanti di un elemento in modo che i visualizzatori abbiano un quadro completo di come appare o cosa fa.
 
-Poiché gli utenti possono eseguire lo zoom delle immagini in Set di immagini, accertati che le immagini abbiano una dimensione maggiore di almeno 2000 pixel. Experience Manager Assets supporta molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG ed EPS senza perdita di dati.
+Poiché gli utenti possono eseguire lo zoom delle immagini in Set di immagini, accertati che le immagini abbiano una dimensione massima di almeno 2000 pixel. Experience Manager Assets supporta molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG ed EPS senza perdita di dati.
 
 >[!NOTE]
 >
@@ -124,7 +123,7 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 >
 >I set di immagini non sono supportati per le risorse con &quot;,&quot; (virgola) nel nome file.
 
-**Per creare un set di immagini**
+**Per creare un set di immagini:**
 
 1. In Adobe Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale.
 1. Tocca **[!UICONTROL Navigazione > Risorse]**. Vai nel punto in cui vuoi creare un set di immagini, quindi tocca **[!UICONTROL Crea > Set di immagini]** per aprire la pagina Editor set di immagini.
@@ -207,7 +206,7 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, *not* vengono
 * Applica i predefiniti visualizzatore.
 * Elimina il set di immagini.
 
-**Per modificare i set di immagini**
+**Per modificare i set di immagini:**
 
 1. Effettua una delle seguenti operazioni:
 
