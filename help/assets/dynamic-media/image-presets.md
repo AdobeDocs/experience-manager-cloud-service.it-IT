@@ -4,17 +4,16 @@ description: Scopri come applicare i predefiniti immagine in Dynamic Media.
 feature: Predefiniti immagine,Visualizzatori,Rendering
 role: Business Practitioner
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '306'
 ht-degree: 7%
 
 ---
 
 # Applicazione dei predefiniti per le immagini Dynamic Media {#applying-image-presets}
 
-I predefiniti per immagini consentono alle risorse di distribuire dinamicamente le immagini con dimensioni diverse, in formati diversi o con altre proprietà immagine generate in modo dinamico. È possibile scegliere un predefinito quando si esportano le immagini, che riformatta anche le immagini in base alle specifiche specificate dall’amministratore.
+I predefiniti per immagini consentono alle risorse di distribuire dinamicamente le immagini con dimensioni diverse, in formati diversi o con altre proprietà immagine generate in modo dinamico. È possibile scegliere un predefinito quando si esporta per riformattare le immagini in base alle specifiche definite dall&#39;amministratore.
 
 Inoltre, puoi scegliere un predefinito immagine reattivo (designato dal pulsante **[!UICONTROL RESS]** dopo averlo selezionato).
 
@@ -26,7 +25,7 @@ Inoltre, puoi scegliere un predefinito immagine reattivo (designato dal pulsante
 
 È possibile applicare un predefinito immagine a un&#39;immagine in qualsiasi momento in cui viene visualizzata in anteprima.
 
-**Applicazione dei predefiniti per immagini Dynamic Media**
+**Per applicare i predefiniti immagine di Dynamic Media:**
 
 1. Apri la risorsa e, nella barra a sinistra, tocca l’elenco a discesa, quindi tocca **[!UICONTROL Rappresentazioni]**.
 
