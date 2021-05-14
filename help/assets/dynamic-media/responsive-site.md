@@ -4,10 +4,9 @@ description: Scopri come utilizzare la funzione di codice reattivo per distribui
 feature: Gestione risorse
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '328'
 ht-degree: 13%
 
 ---
@@ -16,13 +15,13 @@ ht-degree: 13%
 
 Utilizza la funzione Codice reattivo quando desideri condividere il codice per il servizio reattivo con il tuo sviluppatore web. Puoi copiare il codice reattivo (**[!UICONTROL RESS]**) negli appunti per condividerlo con lo sviluppatore web.
 
-Questa funzione ha senso utilizzare se il sito web si trova su un sito web WCM di terze parti. Tuttavia, se il sito web si trova in AEM, un server di immagini fuori sede esegue il rendering dell&#39;immagine e la fornisce alla pagina web.
+Questa funzione ha senso utilizzare se il sito web si trova su un sito web WCM di terze parti. Tuttavia, se il sito web si trova in Adobe Experience Manager, un server di immagini offsite esegue il rendering dell&#39;immagine e la fornisce alla pagina web.
 
 Vedere anche [Incorporamento del visualizzatore video in una pagina Web](embed-code.md).
 
 Consulta anche [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
-**Per fornire immagini ottimizzate per un sito** reattivo:
+**Per fornire immagini ottimizzate per un sito reattivo:**
 
 1. Passa all’immagine per la quale desideri fornire codice reattivo e, nel menu a discesa, tocca **[!UICONTROL Rendering]**.
 
@@ -43,7 +42,7 @@ Consulta anche [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yo
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
 1. Nella finestra di dialogo **[!UICONTROL Incorpora immagine reattiva]** , seleziona e copia il testo del codice reattivo e incollalo nel sito Web per accedere alla risorsa reattiva.
-1. Modifica i punti di interruzione predefiniti nel codice di incorporamento in modo che corrispondano a quelli del sito web reattivo direttamente nel codice. Inoltre, prova le diverse risoluzioni immagine fornite in diversi punti di interruzione della pagina.
+1. Modifica i punti di interruzione predefiniti nel codice di incorporamento per trovare la corrispondenza con ciò che si trova nel sito web reattivo, direttamente nel codice. Inoltre, prova le diverse risoluzioni immagine fornite in diversi punti di interruzione della pagina.
 
 ## Utilizzo di HTTP/2 per la distribuzione delle risorse Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
