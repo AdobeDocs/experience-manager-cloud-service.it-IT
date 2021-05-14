@@ -4,10 +4,9 @@ description: Scopri come utilizzare i set 360 gradi in Dynamic Media.
 feature: Set 360 gradi
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1830'
 ht-degree: 12%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 12%
 
 Un set 360 gradi simula l’atto reale di trasformare un oggetto per esaminarlo. I set 360 gradi consentono di visualizzare gli elementi da qualsiasi angolo, ottenendo i dettagli visivi chiave da qualsiasi angolo.
 
-Un set 360 gradi simula un’esperienza di visualizzazione a 360 gradi. Dynamic Media offre set 360 gradi a un asse in cui i visualizzatori possono ruotare un elemento. Inoltre, gli utenti possono effettuare lo zoom &quot;in forma libera&quot; e scorrere qualsiasi visualizzazione con pochi semplici clic del mouse. In questo modo, gli utenti possono esaminare un elemento più da vicino da un particolare punto di vista.
+Un set 360 gradi simula un’esperienza di visualizzazione a 360°. Dynamic Media offre set 360 gradi a un asse in cui i visualizzatori possono ruotare un elemento. Inoltre, gli utenti possono effettuare lo zoom &quot;in forma libera&quot; e scorrere qualsiasi visualizzazione con pochi semplici clic del mouse. In questo modo, gli utenti possono esaminare un elemento più da vicino da un particolare punto di vista.
 
 I set 360 gradi sono indicati da un banner con la parola **[!UICONTROL SPINSET]**. Inoltre, se il set 360 gradi è pubblicato, la data di pubblicazione indicata dall’icona **[!UICONTROL Mondo]** è riportata sul banner insieme all’ultima data di modifica, contrassegnata dall’icona **[!UICONTROL Matita]** .
 
@@ -44,7 +43,7 @@ Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazion
 
 1. [Crea set 360 gradi](#creating-spin-sets).
 
-   Per creare un set 360 gradi, seleziona **[!UICONTROL Crea > Set 360 gradi]**, quindi assegna un nome al set, scegli le risorse e scegli l’ordine in cui vengono visualizzate le immagini.
+   Per creare un set 360 gradi, seleziona **[!UICONTROL Crea]** > **[!UICONTROL Set 360 gradi]** e assegna un nome al set, scegli le risorse e scegli l’ordine in cui vengono visualizzate le immagini.
 
    Vedere [Utilizzo dei selettori](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -52,7 +51,7 @@ Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazion
 
    Gli amministratori possono creare o modificare i predefiniti visualizzatore di set 360 gradi. Per visualizzare il set 360 con un predefinito visualizzatore, seleziona il set 360 gradi e fai clic su **Visualizzatori** nel menu a discesa della barra a sinistra.
 
-   Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]**.
+   Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]**.
 
    Consulta [Aggiunta e modifica di predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -90,7 +89,7 @@ Di seguito sono riportate alcune best practice relative alle immagini di set 360
 * Utilizzare un formato senza perdita; Si consiglia TIFF e PNG.
 * Maschera tutte le immagini in modo che l&#39;elemento venga visualizzato su uno sfondo bianco puro o su un altro sfondo ad alto contrasto. Facoltativamente, aggiungi ombre.
 * Assicurati che i dettagli del prodotto siano ben illuminati e concentrati.
-* Prendere le immagini di spin per abbigliamento moda con un manichino o modello. Spesso il mannequin è mascherato (utilizzando un manichino in vetro) o un mannequin/dressform stilizzato è mostrato nell&#39;immagine. Potete creare un set 360 gradi su modello definendo il numero di angoli. Contrassegnare ogni angolo con nastro sul pavimento per guidare il modello a passo e guardare nella direzione di ogni ripresa.
+* Prendere le immagini di spin per abbigliamento moda con un manichino o modello. Spesso il mannequin è mascherato (utilizzando un manichino in vetro) o un mannequin/dressform stilizzato è mostrato nell&#39;immagine. Potete creare un set 360 gradi su modello definendo il numero di angoli. Contrassegnare ogni angolo con il nastro sul pavimento in modo da guidare il modello a passo e guardare nella direzione di ogni ripresa.
 
 ## Creazione di set 360 gradi {#creating-spin-sets}
 
@@ -106,7 +105,7 @@ Questa sezione descrive come creare i set 360 gradi.
 >
 >L&#39;ordine in cui le immagini appaiono in un set 360 gradi ha importanza. Assicurati di ordinarli in modo che la rotazione sia una vista a 360 gradi liscia.
 
-**Per creare set 360 gradi**
+**Per creare dei set 360 gradi:**
 
 1. In Assets, individua il punto in cui vuoi creare un set 360 gradi, fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Set 360 gradi]**. Puoi anche creare il set dall’interno di una cartella contenente le risorse. Viene visualizzato l’Editor set 360 gradi.
 
@@ -157,7 +156,7 @@ Questa sezione descrive come creare i set 360 gradi.
 >
 >Puoi anche visualizzare i set tramite l’interfaccia utente descritta in [Modifica dei set 360 gradi](#editing-spin-sets).
 
-**Per visualizzare i set 360 gradi**
+**Per visualizzare i set 360 gradi:**
 
 1. Quando si aprono le proprietà di una singola risorsa. Le proprietà indicano l’impostazione in cui la risorsa selezionata è membro di (sotto **[!UICONTROL Membro di Set]**). Per visualizzare l’intero set, tocca il nome del set.
 
@@ -183,7 +182,7 @@ Puoi eseguire varie attività di modifica sui set 360 gradi, ad esempio:
 * Applica i predefiniti visualizzatore.
 * Elimina il set 360 gradi.
 
-**Per modificare un set 360 gradi**
+**Per modificare un set 360 gradi:**
 
 1. Effettua una delle seguenti operazioni:
 
