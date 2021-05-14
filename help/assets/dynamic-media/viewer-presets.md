@@ -4,10 +4,9 @@ description: Scopri come applicare i predefiniti visualizzatore in Dynamic Media
 feature: Predefiniti visualizzatore, Visualizzatori
 role: Business Practitioner
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '220'
 ht-degree: 25%
 
 ---
@@ -20,7 +19,8 @@ Gli amministratori che devono gestire, creare, ordinare ed eliminare i predefini
 
 Consulta anche [Pubblicazione dei predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
 
-Potrebbe non essere necessario pubblicare i predefiniti visualizzatore a seconda della modalità di pubblicazione in uso.
+Non è necessario pubblicare i predefiniti visualizzatore a seconda della modalità di pubblicazione in uso.
+
 Per qualsiasi problema con i predefiniti visualizzatore, consulta [Risoluzione dei problemi Dynamic Media](troubleshoot-dm.md#viewers).
 
 ## Applicazione di un predefinito visualizzatore Dynamic Media a una risorsa {#applying-a-viewer-preset-to-an-asset}
