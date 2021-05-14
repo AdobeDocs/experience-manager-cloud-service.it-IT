@@ -3,8 +3,7 @@ title: Utilizzo di set di regole per la trasformazione degli URL
 description: Scopri come distribuire i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript™) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
 role: Business Practitioner
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -31,7 +30,7 @@ Puoi distribuire i set di regole in Dynamic Media per trasformare gli URL. I set
 
    Consulta [Rimozione di caratteri speciali dagli URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-Nel contesto di Dynamic Media, i siti web che utilizzano un sistema basato su XML per gestire le informazioni sulle risorse possono caricare file XML in Dynamic Media. Puoi designare uno di questi file come file del set di regole di pre-elaborazione per il serving della risorsa Dynamic Media. Questo file ristruttura il formato del protocollo URL standard per soddisfare la logica di business dei sistemi che vengono integrati con Dynamic Media. È possibile specificare un file XML da utilizzare come percorso del file delle definizioni del set di regole.
+Nel contesto di Dynamic Media, i siti web che utilizzano un sistema basato su XML per gestire le informazioni sulle risorse possono caricare file XML in Dynamic Media. Puoi designare uno di questi file come file del set di regole di pre-elaborazione per il serving della risorsa Dynamic Media. Questo file ristruttura il formato del protocollo URL standard per soddisfare la logica aziendale dei sistemi che vengono integrati con Dynamic Media. È possibile specificare un file XML da utilizzare come percorso del file delle definizioni del set di regole.
 
 >[!CAUTION]
 >
@@ -71,7 +70,7 @@ Vedi anche [Uso dell&#39;immagine &quot;asset&quot; invece di &quot;is&quot; in 
    * Nell’angolo in basso a destra della pagina, fai clic su **[!UICONTROL Invia caricamento]**.
    * Nella barra di navigazione globale, fai clic su **[!UICONTROL Processi]** per controllare lo stato del processo di caricamento. Quando la colonna **[!UICONTROL Stato]** nella pagina **[!UICONTROL Processo]** indica Caricamento completato, continua con i passaggi successivi.
 
-1. Nella barra di navigazione vicino alla parte superiore della pagina, fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Configurazione pubblicazione > Image Server]**.
+1. Nella barra di navigazione vicino alla parte superiore della pagina, fai clic su **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni pubblicazione]** > **[!UICONTROL Server immagini]**.
 1. Nella pagina **[!UICONTROL Pubblica su Image Server]**, seleziona il gruppo **[!UICONTROL Gestione catalogo]** e individua il **[!UICONTROL Percorso file definizione set regole]**, quindi fai clic su **[!UICONTROL Seleziona]**.
 1. Nella pagina **[!UICONTROL Seleziona file definizione set regole (XML)]**, individua il file del set regole, quindi fai clic su **[!UICONTROL Seleziona]** nell’angolo inferiore destro della pagina.
 1. Nell&#39;angolo in basso a destra della pagina Configurazione, fai clic su **[!UICONTROL Chiudi]**.
