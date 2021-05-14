@@ -4,17 +4,16 @@ description: Scopri come visualizzare in anteprima le risorse in Dynamic Media.
 feature: Gestione risorse
 role: Business Practitioner
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1214'
 ht-degree: 1%
 
 ---
 
 # Anteprima delle risorse{#previewing-assets}
 
-Puoi utilizzare Anteprima per vedere l’aspetto di una risorsa digitale caricata quando viene visualizzata da un cliente nel proprio browser web. Per l’anteprima viene utilizzato il visualizzatore predefinito incorporato per più dispositivi assegnato alla risorsa.
+Puoi utilizzare Anteprima per vedere come viene visualizzata una risorsa digitale caricata quando viene visualizzata da un cliente nel proprio browser web. Per l’anteprima viene utilizzato il visualizzatore predefinito incorporato per più dispositivi assegnato alla risorsa.
 
 Un visualizzatore è una raccolta di varie impostazioni o &quot;predefiniti&quot;. Ad esempio, le dimensioni di visualizzazione, il comportamento di zoom, le combinazioni di colore, i bordi e i font del visualizzatore, che determinano il modo in cui gli utenti visualizzano le risorse multimediali sullo schermo del computer e sui dispositivi mobili.
 
@@ -25,11 +24,11 @@ Oltre a utilizzare la funzione Anteprima dedicata per video, set 360 gradi e set
 
 >[!NOTE]
 >
->Quando ti trovi su una pagina web (Sites) in Adobe Experience Manager, non puoi visualizzare in anteprima le risorse in modalità **Modifica** . Passa invece alla modalità **Anteprima** facendo clic su **Anteprima** nell&#39;angolo in alto a destra della pagina.
+>Quando ti trovi su una pagina web (Sites) in Adobe Experience Manager, non puoi visualizzare in anteprima le risorse in modalità **[!UICONTROL Modifica]** . Passa invece alla modalità Anteprima facendo clic su **[!UICONTROL Anteprima]** nell&#39;angolo in alto a destra della pagina.
 
 Per abilitare o disabilitare i predefiniti visualizzatore nell’interfaccia utente, consulta [Gestione dei predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-**Per visualizzare in anteprima le risorse**
+**Per visualizzare in anteprima le risorse:**
 
 1. Da **[!UICONTROL Experience Manager]**, nella pagina **[!UICONTROL Navigazione]**, tocca **[!UICONTROL Risorse]**, quindi **[!UICONTROL File]** per accedere alle risorse.
 1. Dall’elenco a discesa **[!UICONTROL Visualizza]** nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Vista a elenco]**.
@@ -58,7 +57,7 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell’interfaccia ute
       <ul>
       <li><p><strong>Girare la fotocamera</strong>  3D - Rotazione la visualizzazione intorno alla scena e agli oggetti 3D.</p> Mouse: Fare clic con il pulsante sinistro del mouse e trascinare.</p> Schermo tattile: Premere + trascinamento.</p></li>
       <li><p><strong>Panning della fotocamera</strong> : consente di scorrere la visualizzazione a sinistra, a destra, su e giù.</p> Mouse: Fare clic con il pulsante destro del mouse e trascinare.</p> Schermo tattile: Premere due dita + trascinare.</p></li>
-      <li><p><strong>Zoom della fotocamera</strong>  - Zoom della fotocamera per spostarsi in e fuori dalle aree della scena 3D.</p> Mouse: Ruota di scorrimento.</p> Schermo tattile: Pizzico allo zenzero.</p></li>
+      <li><p><strong>Zoom della fotocamera</strong>  - Zoom della fotocamera per spostarsi all'interno e all'esterno delle aree della scena 3D.</p> Mouse: Ruota di scorrimento.</p> Schermo tattile: Pizzico allo zenzero.</p></li>
       <li><p><strong>Rientra la tua fotocamera</strong>  - Rotazione la tua vista intorno alla scena e agli oggetti 3D.</p> Mouse: Fare doppio clic.</p> Schermo tattile: Doppio tocco.</li></ul></td>
       </tr>
       <tr>
