@@ -1,13 +1,12 @@
 ---
-title: Annullare la validità della cache CDN tramite Dynamic Media
+title: Annullare la validità della cache CDN (Content Delivery Network) tramite Dynamic Media
 description: '"Scopri come annullare la validità della rete CDN (Content Delivery Network) memorizzata nella cache per consentirti di aggiornare rapidamente le risorse consegnate da Dynamic Media, anziché attendere la scadenza della cache."'
 feature: Gestione risorse
 role: Administrator,Business Practitioner
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1308'
 ht-degree: 1%
 
 ---
@@ -22,11 +21,11 @@ Le risorse Dynamic Media sono memorizzate nella cache della rete CDN (Content De
 
 Vedi anche [Panoramica sulla memorizzazione in cache in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**Per annullare la validità della cache CDN tramite Dynamic Media**
+**Per annullare la validità della cache CDN tramite Dynamic Media:**
 
 *Parte 1 di 2: Creazione di un modello di annullamento della validità CDN*
 
-1. In AEM come Cloud Service, tocca **[!UICONTROL Strumenti > Risorse > Modello di annullamento validità CDN]**.
+1. In Adobe Experience Manager as a Cloud Service, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Modello di annullamento validità CDN]**.
 
    ![Funzione di convalida CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -35,7 +34,7 @@ Vedi anche [Panoramica sulla memorizzazione in cache in Dynamic Media](https://h
    | Scenario | Opzione |
    | --- | --- |
    | In passato ho già creato un modello di invalidazione del CDN utilizzando Dynamic Media Classic. | Il campo di testo **[!UICONTROL Crea modello]** è precompilato con i dati del modello. In tal caso, puoi modificare il modello o continuare con il passaggio successivo. |
-   | Devo creare un modello. Cosa entro? | Nel campo di testo **[!UICONTROL Crea modello]**, immetti un URL immagine (compresi i predefiniti immagine o i modificatori) che fa riferimento a `<ID>`, invece di un ID immagine specifico come nell&#39;esempio seguente:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Se il modello contiene solo `<ID>`, Dynamic Media compila `https://<publishserver_name>/is/image/<company_name>/<ID>` dove `<publishserver_name>` è il nome del server di pubblicazione definito in Impostazioni generali in Dynamic Media Classic. Il `<company_name>` è il nome della directory principale dell’azienda associata a questa istanza di AEM e `<ID>` è la risorsa selezionata tramite il selettore delle risorse da invalidare.<br>Eventuali predefiniti/modificatori inseriti  `<ID>` vengono copiati così come sono nella definizione dell’URL.<br>Solo le immagini, ovvero  `/is/image`, possono essere formate automaticamente in base al modello.<br>Ad esempio, l’aggiunta di risorse come video o PDF tramite il selettore risorse non genera automaticamente URL.  `/is/content/` È invece necessario specificare tali risorse nel modello di annullamento validità CDN oppure è possibile aggiungere manualmente l’URL a tali risorse in *Parte 2 di 2: Impostazione delle opzioni di annullamento validità CDN*.<br>**Esempi:**<br> in questo primo esempio, il modello di annullamento della validità contiene  `<ID>` insieme all’URL della risorsa  `/is/content`. Esempio, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. In Dynamic Media l’URL viene creato in base a questo percorso, con `<ID>` come risorse selezionate tramite il selettore delle risorse che desiderate invalidare.<br>In questo secondo esempio, il modello di annullamento della validità contiene l’URL completo della risorsa utilizzata nelle proprietà web con  `/is/content` (non dipendente dal selettore delle risorse). Ad esempio, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` dove zaino è l’ID risorsa.<br>I formati di risorse supportati in Dynamic Media possono essere invalidati. I tipi di file risorsa *non* supportati per l’annullamento della validità della rete CDN includono PostScript®, PostScript® incapsulato, Adobe Illustrator, Adobe InDesign, Microsoft Powerpoint, Microsoft Excel, Microsoft Word e formato RTF.<br>Quando crei il modello, ma assicurati di prestare attenzione alla sintassi e agli errori di battitura; Dynamic Media non esegue alcuna convalida del modello.<br>Specifica gli URL per le raccolte avanzate immagini in questo modello di annullamento validità CDN o nel campo  **[!UICONTROL Aggiungi]** URLtext nella  *parte 2: Impostazione delle opzioni di annullamento validità CDN.*<br>**Importante:**ogni voce in un modello di annullamento validità CDN deve trovarsi sulla propria riga.<br>*L’esempio di modello seguente è solo a scopo illustrativo.* |
+   | Devo creare un modello. Cosa entro? | Nel campo di testo **[!UICONTROL Crea modello]**, immetti un URL immagine (compresi i predefiniti immagine o i modificatori) che fa riferimento a `<ID>`, invece di un ID immagine specifico come nell&#39;esempio seguente:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Se il modello contiene solo `<ID>`, Dynamic Media compila `https://<publishserver_name>/is/image/<company_name>/<ID>` dove `<publishserver_name>` è il nome del server di pubblicazione definito in Impostazioni generali in Dynamic Media Classic. Il `<company_name>` è il nome della directory principale dell’azienda associata a questa istanza di Experience Manager e `<ID>` è la risorsa selezionata tramite il selettore risorse da invalidare.<br>Eventuali predefiniti/modificatori seguenti  `<ID>` vengono copiati così come sono nella definizione dell’URL.<br>Solo le immagini, ovvero  `/is/image`, possono essere formate automaticamente in base al modello.<br>Ad esempio, l’aggiunta di risorse come video o PDF tramite il selettore risorse non genera automaticamente URL.  `/is/content/` È invece necessario specificare tali risorse nel modello di annullamento validità CDN oppure è possibile aggiungere manualmente l’URL a tali risorse in *Parte 2 di 2: Impostazione delle opzioni di annullamento validità CDN*.<br>**Esempi:**<br> in questo primo esempio, il modello di annullamento della validità contiene  `<ID>` insieme all’URL della risorsa  `/is/content`. Esempio, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. In Dynamic Media l’URL viene creato in base a questo percorso, con `<ID>` come risorse selezionate tramite il selettore delle risorse che desiderate invalidare.<br>In questo secondo esempio, il modello di annullamento della validità contiene l’URL completo della risorsa utilizzata nelle proprietà web con  `/is/content` (non dipendente dal selettore delle risorse). Ad esempio, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` dove zaino è l’ID risorsa.<br>I formati di risorse supportati in Dynamic Media possono essere invalidati. I tipi di file risorsa *non* supportati per l’annullamento della validità della rete CDN includono PostScript®, PostScript® incapsulato, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word e Rich Text Format.<br>Quando crei il modello, ma assicurati di prestare attenzione alla sintassi e agli errori di battitura; Dynamic Media non esegue alcuna convalida del modello.<br>Specifica gli URL per le raccolte avanzate immagini in questo modello di annullamento validità CDN o nel campo  **[!UICONTROL Aggiungi]** URLtext nella  *parte 2: Impostazione delle opzioni di annullamento validità CDN.*<br>**Importante:**ogni voce in un modello di annullamento validità CDN deve trovarsi sulla propria riga.<br>*L’esempio di modello seguente è solo a scopo di spiegazione.* |
 
    ![Modello di annullamento validità CDN - Crea](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
@@ -44,7 +43,7 @@ Vedi anche [Panoramica sulla memorizzazione in cache in Dynamic Media](https://h
    *Parte 2 di 2: Impostazione delle opzioni di annullamento della validità CDN*
    <br>
 
-1. In AEM come Cloud Service, tocca **[!UICONTROL Strumenti > Risorse > Invalidazione CDN]**.
+1. Ad Experience Manager, come Cloud Service, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Annullamento validità CDN]**.
 
    ![Funzione di convalida CDN](/help/assets/assets-dm/cdn-invalidation-path.png)
 
