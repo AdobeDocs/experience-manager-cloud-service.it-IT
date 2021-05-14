@@ -4,10 +4,9 @@ description: Dynamic Media dispone già di un profilo di codifica video adattivo
 feature: Gestione Delle Risorse, Profili Video, Rendering
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3664'
+source-wordcount: '3665'
 ht-degree: 10%
 
 ---
@@ -211,7 +210,7 @@ Toccare l’icona delle informazioni accanto a ciascuna opzione per ottenere ult
 1. Effettua le seguenti operazioni:
    * Nel campo **[!UICONTROL Larghezza]**, immetti **[!UICONTROL auto]**.
    * Nel campo **[!UICONTROL Altezza]**, immetti un valore in pixel.
-Per visualizzare le dimensioni del video, tocca l’icona delle informazioni dell’altezza per aprire la pagina **[!UICONTROL Calcolatore dimensioni]** . Utilizza la pagina **[!UICONTROL Calcolatore dimensioni]** per impostare ulteriormente la dimensione video (casella blu) in base alle tue preferenze. Al termine, nell’angolo superiore destro della finestra di dialogo, tocca **[!UICONTROL X]**.
+Per visualizzare le dimensioni del video, tocca l’icona delle informazioni dell’altezza per aprire la pagina **[!UICONTROL Calcolatore dimensioni]** . Utilizza la pagina **[!UICONTROL Calcolatore dimensioni]** per impostare ulteriormente la dimensione del video (casella blu) nel modo desiderato. Al termine, nell’angolo superiore destro della finestra di dialogo, tocca **[!UICONTROL X]**.
 1. (Facoltativo) Effettua una delle seguenti operazioni:
 
    * Toccare la scheda **[!UICONTROL Avanzate]** e assicurarsi che la casella di controllo **[!UICONTROL Usa valori predefiniti]** sia selezionata (scelta consigliata).
@@ -244,7 +243,7 @@ Ora puoi applicare il profilo alle cartelle che contengono video. Consulta [Appl
 
 Puoi modificare un profilo di codifica video esistente per sfruttare parametri di codifica video avanzati che non sono disponibili nell’interfaccia utente quando crei o modifichi un profilo video in Experience Manager. Puoi aggiungere al profilo esistente uno o più parametri avanzati, ad esempio minBitrate e maxBitrate.
 
-**Per utilizzare parametri** di codifica video personalizzati:
+**Per utilizzare parametri di codifica video personalizzati:**
 
 1. Tocca il logo Experience Manager, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 1. Dalla pagina CRXDE Lite, nel pannello Explorer a sinistra, passa alla pagina seguente:
@@ -271,7 +270,7 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Il numero di fotogrammi di destinazione tra i fotogrammi chiave. Calcola questo valore per generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo del fotogramma chiave è di 60-300.<br /> <br /> Intervalli di fotogrammi chiave inferiori migliorano la ricerca del flusso e il comportamento di commutazione del flusso per le codifiche video adattive e possono anche migliorare la qualità dei video che hanno molto movimento. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito si traduce in una qualità video complessiva inferiore a un dato bitrate.</td>
+   <td>Il numero di fotogrammi di destinazione tra i fotogrammi chiave. Calcola questo valore in modo da poter generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo del fotogramma chiave è di 60-300.<br /> <br /> Intervalli di fotogrammi chiave inferiori migliorano la ricerca del flusso e il comportamento di commutazione del flusso per le codifiche video adattive e possono anche migliorare la qualità dei video che hanno molto movimento. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito si traduce in una qualità video complessiva inferiore a un dato bitrate.</td>
    <td><code>String</code></td>
    <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per HLS (HTTP Live Streaming) è 60-90.</p> </td>
   </tr>
@@ -316,7 +315,7 @@ Vedere anche [Best practice per la codifica video](/help/assets/dynamic-media/vi
 
 Per definire parametri di elaborazione avanzati per altri tipi di risorse, consulta [Configurazione dell’elaborazione delle risorse](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Per modificare un profilo** video:
+**Per modificare un profilo video:**
 
 1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
 1. Nella pagina Profili video , seleziona il nome di un profilo video.
@@ -383,7 +382,7 @@ Vedi anche [Rielaborazione delle risorse in una cartella dopo aver modificato il
 
 #### Applicazione di un profilo video alle cartelle da Proprietà {#applying-video-profiles-to-folders-from-properties}
 
-1. Tocca o fai clic sul logo Experience Manager, vai a **[!UICONTROL Risorse]** e quindi alla cartella a cui desideri applicare un profilo video.
+1. Tocca il logo Experience Manager, vai a **[!UICONTROL Risorse]** e quindi alla cartella a cui desideri applicare un profilo video.
 1. Sulla cartella, tocca il segno di spunta per selezionarlo, quindi tocca **[!UICONTROL Proprietà]**.
 1. Seleziona la scheda **[!UICONTROL Profili video]** e fai clic sul profilo dal menu a discesa, infine tocca **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
@@ -396,7 +395,7 @@ Oltre ad applicare un profilo a una cartella, puoi anche applicarne uno a livell
 
 Consulta anche [Rielaborazione delle risorse in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Per applicare un profilo video a livello globale**,
+**Per applicare un profilo video a livello globale:**
 
 * Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungi la proprietà `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e tocca **[!UICONTROL Salva tutto]**.
 
