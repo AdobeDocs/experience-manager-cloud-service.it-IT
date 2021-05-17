@@ -4,14 +4,13 @@ description: Inizia qui per un percorso guidato attraverso le potenti e flessibi
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
-
 
 # AEM Percorso di sviluppatori headless {#aem-headless-developer-journey}
 
@@ -19,7 +18,7 @@ ht-degree: 2%
 >
 >LAVORO IN CORSO - La creazione di questo documento è in corso e non deve essere inteso come completo o definitivo né deve essere utilizzato a fini di produzione.
 
-Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle per il tuo primo progetto di sviluppo.
+Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle sul tuo primo progetto di sviluppo headless.
 
 ## Introduzione {#introduction}
 
@@ -52,3 +51,14 @@ Anche se puoi passare direttamente a una particolare parte del percorso, molti c
 | 8 | [Come vivere con la tua applicazione headless](go-live.md) | Scopri come distribuire l’applicazione in tempo reale e prendere il codice locale in Git e spostarlo nella pipeline CI/CD di Cloud Manager Git. |
 | 9 | [Post-lancio](post-launch.md) | Scopri come mantenere la tua esperienza headless. |
 | 10 | [Facoltativo - Come creare applicazioni a pagina singola (SPA) con AEM](create-spa.md) | Una volta comprese AEM funzionalità headless, scopri come combinare consegne headful e headless e come creare SPA modificabili utilizzando AEM framework di Editor. |
+
+## Novità {#what-is-next}
+
+Ora sei pronto per iniziare sul tuo percorso headless Adobe. Ti invitiamo a passare alla parte successiva del percorso e a leggere l&#39;articolo [Scopri lo sviluppo headless di CMS.](learn-about.md)
+
+### Scegli la tua avventura {#choose-your-path}
+
+Tuttavia, Adobe vuole che tu abbia successo quando inizi a lavorare con il tuo progetto AEM Headless, indipendentemente dal tuo stile di apprendimento. Considerate quindi queste due opzioni.
+
+* Se preferisci continuare a **conoscere concetti headless e tecnologie headless**, dovresti continuare il percorso headless AEM come consigliato nella prossima revisione del documento [Come modellare il contenuto come modelli di contenuto AEM](model-your-content.md), dove imparerai a modellare la struttura del contenuto in AEM.
+* Se preferisci **imparare facendo**, puoi passare all&#39;esercitazione [Guida introduttiva AEM senza testa](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) in cui puoi passare direttamente allo sviluppo senza testa AEM implementando un semplice progetto per esporre AEM contenuto headless.
