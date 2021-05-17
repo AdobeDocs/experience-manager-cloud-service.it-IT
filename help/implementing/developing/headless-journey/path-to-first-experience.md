@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
-translation-type: tm+mt
-source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -141,9 +140,9 @@ Vogliamo che si basi su questa conoscenza fondamentale per comprendere appieno i
 
 ### Scegli la tua avventura {#choose-your-path}
 
-Indipendentemente dal tuo stile di apprendimento, l&#39;Adobe vuole che tu riesca a iniziare con il tuo progetto AEM Headless.
+Indipendentemente dal tuo stile di apprendimento, l&#39;Adobe vuole che tu abbia successo quando inizi con il tuo progetto AEM Headless.
 
-* Se preferisci **continuare ad apprendere concetti headless e tecnologie headless**, dovresti continuare il tuo percorso headless AEM esaminando il documento [Come modellare il contenuto come modelli di contenuto AEM](model-your-content.md) dove imparerai a modellare la struttura del contenuto in AEM.
+* Se preferisci continuare a **conoscere concetti headless e tecnologie headless**, dovresti continuare il tuo percorso headless AEM esaminando il documento [Come modellare il contenuto come modelli di contenuto AEM](model-your-content.md) dove imparerai a modellare la struttura del contenuto in AEM.
 * Se preferisci **imparare facendo**, puoi passare all&#39;esercitazione [Guida introduttiva AEM senza testa](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) in cui puoi passare direttamente allo sviluppo senza testa AEM implementando un semplice progetto per esporre AEM contenuto headless.
 
 ## Risorse aggiuntive {#additional-resources}
