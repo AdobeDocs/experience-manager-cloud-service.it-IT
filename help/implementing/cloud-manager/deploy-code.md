@@ -1,18 +1,17 @@
 ---
 title: Distribuisci il tuo codice - Cloud Services
 description: Distribuisci il tuo codice - Cloud Services
-translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
+source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
 
-
 # Implementazione del codice {#deploy-your-code}
 
-## Distribuzione del codice con Cloud Manager {#deploying-code-with-cloud-manager}
+## Distribuzione di codice con Cloud Manager in AEM come Cloud Service {#deploying-code-with-cloud-manager}
 
 Dopo aver configurato la pipeline di produzione (archivio, ambiente e ambiente di test), è possibile distribuire il codice.
 
@@ -126,5 +125,3 @@ Le distribuzioni di produzione seguono generalmente gli stessi passaggi indicati
 1. Distribuisci pacchetti AEM a publish2 e il pacchetto dispatcher a dispatcher2, svuota la cache del dispatcher.
 1. Rimetti dispatcher2 nel load balancer.
 Questo processo continua fino a quando la distribuzione non raggiunge tutti gli editori e i dispatcher nella topologia.
-
-
