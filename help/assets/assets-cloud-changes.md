@@ -1,16 +1,15 @@
 ---
 title: Modifiche di rilievo in [!DNL Adobe Experience Manager Assets] come a [!DNL Cloud Service]
 description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] rispetto a [!DNL Adobe Experience Manager 6.5.
-feature: Release Information
+feature: Informazioni sulla versione
 role: Business Practitioner,Leader,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
+source-git-commit: bcb747517595943e1ed65d19424f002136877903
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # Modifiche di rilievo apportate a [!DNL Experience Manager Assets] come a [!DNL Cloud Service] {#notable-changes}
 
@@ -53,7 +52,7 @@ Per eseguire una convalida end-to-end del codice e del processo, compresi l’in
 |-----|-----|-----|
 | [Rilevamento di risorse duplicato](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Funziona diversamente. | Vedi [come funzionava in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [Rendering For Placement Only (FPO)](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Funziona diversamente |  |
-| Write-back metadati | Non supportato. | Consulta [write-back di metadati in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| Write-back metadati | Funziona diversamente | Opzione disattivata per impostazione predefinita. Abilita il modulo di avvio del flusso di lavoro corrispondente, se necessario. Il write-back viene gestito dai microservizi per le risorse. |
 | Elaborazione delle risorse caricate tramite Gestione pacchetti | Ha bisogno di intervento manuale. | Rielabora manualmente utilizzando l&#39;azione **[!UICONTROL Rielabora risorsa]** . |
 | Rilevamento del tipo MIME | Non supportato. | Se carichi una risorsa digitale senza un’estensione o con un’estensione errata, potrebbe non essere elaborata come desiderato. Gli utenti possono comunque memorizzare i file binari senza un’estensione nel DAM. Vedi [Rilevamento del tipo MIME in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Generazione di attività secondarie per le attività composte | Non supportato. | I casi di utilizzo dipendenti non vengono soddisfatti. Ad esempio, è interessata l’annotazione di file PDF con più pagine. Consulta [creazione di risorse secondarie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
@@ -66,10 +65,10 @@ Per eseguire una convalida end-to-end del codice e del processo, compresi l’in
 >Le risorse seguenti sono disponibili per [!DNL Experience Manager] come [!DNL Cloud Service]:
 >
 >* [Elenco delle funzioni obsolete e rimosse](/help/release-notes/deprecated-removed-features.md)
->* [Introduzione](/help/overview/introduction.md)
->* [Novità e differenze](/help/overview/what-is-new-and-different.md)
->* [L&#39;architettura](/help/core-concepts/architecture.md)
->* [Modifiche di rilievo](/help/release-notes/aem-cloud-changes.md)
->* [Modifiche di rilievo [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [Esercitazioni video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
+* [Introduzione](/help/overview/introduction.md)
+* [Novità e differenze](/help/overview/what-is-new-and-different.md)
+* [L&#39;architettura](/help/core-concepts/architecture.md)
+* [Modifiche di rilievo](/help/release-notes/aem-cloud-changes.md)
+* [Modifiche di rilievo [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+* [Esercitazioni video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
 
