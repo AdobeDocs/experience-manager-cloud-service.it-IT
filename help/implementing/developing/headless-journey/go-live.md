@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1986'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,23 @@ Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, dev
 * Scopri come proteggere e ridimensionare l’applicazione prima di Launch.
 * Scopri come monitorare i problemi di prestazioni e debug.
 
-Continua il tuo percorso AEM headless rivedendo il documento [Post Launch](post-launch.md) dove imparerai a mantenere la tua esperienza headless.
+## Il Percorso Termina - O Lo Fa? {#journey-ends}
+
+Congratulazioni! Hai completato il Percorso di sviluppo headless AEM! Ora dovresti avere una comprensione di:
+
+* Differenza tra distribuzione headless e headful dei contenuti.
+* AEM senza testa.
+* Come organizzare e AEM il progetto Headless.
+* Come creare contenuti headless in AEM.
+* Come recuperare e aggiornare il contenuto headless in AEM.
+* Come andare a vivere con un progetto senza testa AEM.
+* Cosa fare dopo il go-live.
+
+Hai già lanciato il tuo primo progetto AEM Headless o ora hai tutte le conoscenze necessarie per farlo. Ottimo lavoro!
+
+I negozi senza testa in AEM non devono fermarsi qui, però. È possibile ricordare che nella [Guida introduttiva del percorso](getting-started.md#integration-levels) abbiamo discusso brevemente di come AEM non solo supporta la consegna headless e i modelli tradizionali full-stack, ma anche il supporto di modelli ibridi che combinano i vantaggi di entrambi.
+
+Se questo tipo di flessibilità è necessario per il progetto, continua con la parte facoltativa e aggiuntiva del percorso [Come creare applicazioni a pagina singola (SPA) con AEM.](create-spa.md)
 
 ## Risorse aggiuntive {#additional-resources}
 
