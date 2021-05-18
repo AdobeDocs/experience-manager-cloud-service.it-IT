@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '772'
 ht-degree: 2%
 
 ---
@@ -55,8 +55,7 @@ Anche se puoi passare direttamente a una particolare parte del percorso, molti c
 | 6 | [Come aggiornare il contenuto tramite API di risorse AEM](update-your-content.md) | Scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto. |
 | 7 | [Come mettere tutto insieme - la tua app e il tuo contenuto in AEM Headless](put-it-all-together.md) | Scopri come prendere il progetto AEM, compresi i frammenti di contenuto, le chiamate GraphQL, le chiamate API REST e l’applicazione, e prepararlo per il lancio. |
 | 8 | [Come vivere con la tua applicazione headless](go-live.md) | Scopri come distribuire l’applicazione in tempo reale e prendere il codice locale in Git e spostarlo nella pipeline CI/CD di Cloud Manager Git. |
-| 9 | [Post-lancio](post-launch.md) | Scopri come mantenere la tua esperienza headless. |
-| 10 | [Facoltativo - Come creare applicazioni a pagina singola (SPA) con AEM](create-spa.md) | Una volta comprese AEM funzionalità headless, scopri come combinare consegne headful e headless e come creare SPA modificabili utilizzando AEM framework di Editor. |
+| 9 | [Facoltativo - Come creare applicazioni a pagina singola (SPA) con AEM](create-spa.md) | Una volta comprese AEM funzionalità headless, scopri come combinare consegne headful e headless e come creare SPA modificabili utilizzando AEM framework di Editor. |
 
 ## Novità {#what-is-next}
 
