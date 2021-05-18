@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,13 @@ Questa guida ti guida attraverso gli argomenti più importanti in modo che al te
 * Scopri AEM funzioni headless e come funzionano insieme per offrire un’esperienza headless.
 * Avere la possibilità di compiere i primi passi per implementare il primo progetto headless AEM.
 
-## Percorso senza testa {#the-journey}
+## Pubblico {#audience}
+
+Questo percorso è progettato per l’utente tipo sviluppatore, esponendo i requisiti, i passaggi e l’approccio di un progetto AEM Headless dal punto di vista dello sviluppatore. Il percorso definisce gli utenti tipo aggiuntivi con cui lo sviluppatore deve interagire per un progetto di successo, ma il punto di vista del percorso è quello dello sviluppatore.
+
+Le informazioni in questo percorso possono ovviamente essere utili ad altri utenti, ma alcune informazioni saranno superflue a determinati ruoli. Continuate a seguire i prossimi percorsi per ruoli aggiuntivi.
+
+## Percorso di sviluppatori headless {#the-journey}
 
 Esplorerai molti argomenti in questo percorso. I seguenti articoli ti offrono conoscenze fondamentali sui headless in AEM e ti collegano alla documentazione tecnica dettagliata.
 
