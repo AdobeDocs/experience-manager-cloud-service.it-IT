@@ -2,16 +2,15 @@
 title: Importare ed esportare in blocco i metadati delle risorse
 description: Questo articolo descrive come importare ed esportare i metadati in blocco.
 contentOwner: AG
-feature: Metadata
+feature: Metadati
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fb70a068-3ba3-4459-952d-79155d286c42
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '666'
 ht-degree: 12%
 
 ---
-
 
 # Importare ed esportare in blocco i metadati delle risorse {#import-and-export-asset-metadata-in-bulk}
 
@@ -19,7 +18,7 @@ AEM Assets consente di importare in blocco i metadati delle risorse utilizzando 
 
 ## Importa metadati {#import-metadata}
 
-L’importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse a causa di XMP’attività di writeback tramite i microservizi per le risorse. L&#39;Adobe consiglia di pianificare qualsiasi operazione in blocco durante l&#39;utilizzo snello del server, in modo che le prestazioni per altri utenti non vengano influenzate.
+L’importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse, a causa dell’attività di write-back dei metadati tramite i microservizi per le risorse. L&#39;Adobe consiglia di pianificare qualsiasi operazione in blocco durante l&#39;utilizzo snello del server, in modo che le prestazioni per altri utenti non vengano influenzate.
 
 >[!NOTE]
 >
@@ -35,7 +34,7 @@ L’importazione dei metadati è asincrona e non ostacola le prestazioni del sis
    | Dimensione batch | Numero di risorse in un batch per cui devono essere importati i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
    | Separatore di campi | Il valore predefinito è `,` (una virgola). È possibile specificare qualsiasi altro carattere. |
    | Delimitatore multi valore | Separatore dei valori dei metadati. Il valore predefinito è `|`. |
-   | Avvia flussi di lavoro | False per impostazione predefinita. Quando è impostato su `true` e le impostazioni predefinite di Launcher sono attive per il flusso di lavoro Writebback di metadati DAM (che scrive i metadati nei dati XMP binari). L’abilitazione dei flussi di lavoro di avvio rallenta il sistema. |
+   | Avvia flussi di lavoro | False per impostazione predefinita. Quando è impostato su `true` e le impostazioni predefinite di Launcher sono attive per il flusso di lavoro DAM Metadata WriteBack (che scrive i metadati nei dati XMP binari). L’abilitazione dei flussi di lavoro di avvio rallenta il sistema. |
    | Nome colonna percorso risorsa | Definisce il nome della colonna del file CSV con le risorse. |
 
 1. Fai clic su **[!UICONTROL Importa]** dalla barra degli strumenti. Una volta importati i metadati, viene inviata una notifica alla casella in entrata delle notifiche. Passa alla pagina delle proprietà della risorsa e verifica se i valori dei metadati sono stati importati correttamente per le risorse.
