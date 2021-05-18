@@ -4,14 +4,13 @@ description: In questa parte del Percorso di sviluppo headless AEM, scopri AEM p
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 0%
 
 ---
-
 
 # Guida introduttiva a AEM headless come Cloud Service {#getting-started}
 
@@ -63,7 +62,8 @@ La replica è l’atto di trasferire il contenuto dall’istanza di authoring al
 Al livello più semplice, la creazione di esperienze digitali in AEM richiede i seguenti passaggi:
 
 1. Gli autori dei contenuti creeranno i contenuti headless nell’istanza di authoring.
-1. Quando il contenuto è pronto, viene replicato nell’istanza di pubblicazione. Puoi quindi chiamare le API per recuperare questo contenuto.
+1. Quando il contenuto è pronto, viene replicato nell’istanza di pubblicazione.
+1. Puoi quindi chiamare le API per recuperare questo contenuto.
 
 AEM Headless sfrutta questa base tecnica offrendo potenti strumenti per gestire contenuti headless [descritti nella sezione successiva.](#aem-headless-basics)
 
@@ -159,7 +159,7 @@ I ruoli di ogni singolo progetto variano, ma quelli importanti da considerare ne
 * [Modellatore di contenuti](#content-modeler)
 * [Developer (Sviluppatore)](#developer)
 
-#### Administrator {#administrator}
+#### Amministratore {#administrator}
 
 L&#39;amministratore è responsabile della configurazione e della configurazione di base del sistema. Ad esempio, l’amministratore configurerà la tua organizzazione all’interno del sistema di gestione utenti di Adobe, denominato Identity Management System (IMS). L’amministratore sarà il primo utente dell’organizzazione a ricevere un invito e-mail da Adobe dopo che l’organizzazione è stata creata per Adobe in IMS. L’amministratore potrà accedere a IMS e aggiungere utenti di altri utenti.
 
@@ -227,7 +227,7 @@ Un approccio utile quando si definiscono modelli di frammenti di contenuto, cons
 
 Poiché gli autori dei contenuti interagiscono continuamente con i modelli durante la creazione di nuovi contenuti, l’allineamento dei modelli all’UX li aiuta a visualizzare l’esperienza digitale risultante. Facendo un ulteriore passo avanti, puoi assegnare icone ai Modelli di frammento di contenuto che rappresentano l’elemento UX in modo che gli autori possano selezionare in modo intuitivo il modello corretto in base ai suggerimenti visivi.
 
-#### Developer (Sviluppatore){#developer}
+#### Developer (Sviluppatore) {#developer}
 
 Gli sviluppatori sono responsabili di unire i contenuti creati senza problemi AEM al consumatore di tali contenuti, che spesso possono essere un’applicazione a pagina singola (SPA), un’app web progressiva (PWA), un negozio di web o un altro servizio esterno a AEM.
 
