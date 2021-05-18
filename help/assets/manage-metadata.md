@@ -3,26 +3,19 @@ title: Gestione dei metadati delle risorse digitali
 description: Scopri i tipi di metadati e come  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Metadata
+feature: Gestione risorse, metadati
 role: Business Practitioner,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
+source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1857'
 ht-degree: 3%
 
 ---
 
-
 # Gestire i metadati delle risorse digitali {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] conserva i metadati per ogni risorsa. Consente di organizzare e classificare più facilmente le risorse e aiuta le persone che cercano una specifica risorsa. Grazie alla possibilità di estrarre i metadati dai file caricati su [!DNL Experience Manager Assets], la gestione dei metadati si integra con il flusso di lavoro creativo. Grazie alla possibilità di mantenere e gestire i metadati con le risorse, puoi organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
-
->[!MORELIKETHIS]
->
->* [Metadati XMP](xmp-metadata.md)
->* [Come modificare o aggiungere metadati](meta-edit.md)
-
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -234,3 +227,9 @@ La creazione di flussi di lavoro basati su metadati consente di automatizzare al
 * Il flusso di lavoro può verificare se un’immagine ha o meno un titolo. In caso contrario, il sistema notifica l’aggiunta di un titolo.
 * Il flusso di lavoro può verificare se una notifica di copyright su una risorsa consente o meno la distribuzione. Pertanto, il sistema invia la risorsa a un server o all’altro.
 * Un flusso di lavoro può verificare la presenza di risorse senza metadati obbligatori predefiniti o risorse con metadati *non validi*.
+
+>[!MORELIKETHIS]
+>
+>* [Metadati XMP](xmp-metadata.md)
+* [Come modificare o aggiungere metadati](meta-edit.md)
+
