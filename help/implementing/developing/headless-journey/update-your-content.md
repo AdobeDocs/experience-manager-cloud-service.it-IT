@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-translation-type: tm+mt
-source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -51,7 +50,7 @@ Allora perché è necessaria un&#39;altra API?
 
 L’API HTTP di Assets consente di **leggere** il contenuto, ma consente anche di **creare**, **Aggiornare** e **Eliminare** contenuti - azioni non possibili con l’API GraphQL.
 
-L’API REST di Assets è disponibile per ogni installazione predefinita di una versione Adobe Experience Manager recente come Cloud Service.
+L’API REST di Assets è disponibile per ogni installazione predefinita di una versione di Adobe Experience Manager recente come Cloud Service.
 
 ## API HTTP di Assets {#assets-http-api}
 
@@ -322,7 +321,11 @@ Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, dev
 * Have experience with sample code and know how the API works in practice.
 -->
 
-Continua il tuo percorso AEM headless rivedendo il documento [Come mettere tutto insieme - La tua app e il tuo contenuto in AEM Headless](put-it-all-together.md) dove imparerai come prendere il tuo progetto AEM Headless e prepararlo per il lancio.
+<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+
+<!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
+
+Continua il tuo percorso AEM senza testa rivedendo il documento [Come andare in diretta con la tua applicazione senza testa](go-live.md) in cui prendi in diretta il tuo progetto senza testa AEM!
 
 [Come creare applicazioni a pagina singola (SPA) con ](create-spa.md) AEMviene inoltre illustrato come creare SPA modificabili utilizzando il framework SPA Editor di AEM, nonché integrare SPA esterni per abilitare le funzionalità di modifica.
 
