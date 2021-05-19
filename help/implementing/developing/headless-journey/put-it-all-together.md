@@ -5,13 +5,13 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
-source-git-commit: 58617913f967abbab31054ea9cdb691a9b29415f
+source-git-commit: 5932ece1297512e726ece09217565957da4bda75
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # AEM Headless SDK - Disponibile a breve {#coming-soon}
 
-Questa pagina ha lo scopo di fornire indicazioni su come impostare un progetto di sviluppo locale utilizzando il nuovo SDK headless AEM. Una volta che l’SDK è disponibile al pubblico, puoi continuare a seguirlo.
+Questa pagina ha lo scopo di fornire indicazioni su come impostare un progetto di sviluppo locale utilizzando il nuovo SDK headless AEM. Una volta che l’SDK è disponibile al pubblico, puoi essere sempre aggiornato per ulteriori dettagli.
