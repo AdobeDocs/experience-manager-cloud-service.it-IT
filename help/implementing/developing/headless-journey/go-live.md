@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ In questa parte del [AEM Percorso di sviluppatori headless](overview.md), scopri
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso senza testa AEM, [Come mettere insieme tutto - La tua app e il tuo contenuto in AEM senza testa](put-it-all-together.md) hai imparato a preparare il tuo progetto senza testa AEM per andare in diretta e dovresti ora:
+Nel documento precedente del percorso AEM headless, [Come aggiornare il contenuto tramite API AEM Assets](update-your-content.md) hai imparato ad aggiornare il contenuto esistente headless in AEM tramite API e ora devi:
 
-* Comprendi i requisiti per andare in diretta.
+* Comprendere l’API HTTP di AEM Assets.
 
-Questo articolo si basa su questi elementi fondamentali per capire come portare in diretta il tuo progetto headless AEM.
+Questo articolo si basa su questi fondamentali in modo da capire come preparare il vostro progetto AEM headless per andare live.
 
 ## Obiettivo {#objective}
 
@@ -151,13 +151,13 @@ Per garantire agli utenti la migliore esperienza possibile quando si utilizza l�
 * Verificare le pagine di stato AEM per lo stato di disponibilità del servizio corrente
 * Accedere ai rapporti sulle prestazioni
    * Prestazioni
-      * Flast (CDN) - numero di chiamate, tasso di cache, tassi di errore, traffico payload
+      * Prestazioni CDN (finale): verifica il numero di chiamate, la velocità della cache, i tassi di errore e il traffico del payload
       * Server di origine - numero di chiamate, tassi di errore, carichi della CPU, traffico del payload
    * Prestazioni dell’autore
       * Verifica il numero di utenti, richieste e caricamento
 * Accedere ai rapporti sulle prestazioni specifici per app e spazio
    * Una volta che il server è attivo, controlla se le metriche generali sono verde/arancione/rosso, quindi identifica problemi specifici dell&#39;app
-   * Apri gli stessi rapporti sopra filtrati in app/spazio (ad esempio desktop Photoshop, paywall, ecc.)
+   * Apri gli stessi rapporti sopra filtrati nell’app o nello spazio (ad esempio desktop Photoshop, paywall)
    * Utilizza le API del registro Splunk per accedere alle prestazioni del servizio e dell&#39;applicazione
    * Contatta l’Assistenza clienti in caso di altri problemi.
 
@@ -181,15 +181,6 @@ Per registrare in modo efficiente un bug con il supporto nel caso in cui ti occo
 * Documentare un modo per riprodurre il problema
 * Documentare il contenuto riprodotto dal problema con
 * Segnala un problema tramite il portale di supporto AEM con la priorità appropriata
-
-## Novità {#what-is-next}
-
-Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, devi:
-
-* Scopri AEM Nozioni di base sulla replica dei contenuti e sulla memorizzazione nella cache.
-* Scopri come configurare gli strumenti necessari per simulare il funzionamento live dell’applicazione headless.
-* Scopri come proteggere e ridimensionare l’applicazione prima di Launch.
-* Scopri come monitorare i problemi di prestazioni e debug.
 
 ## Il Percorso Termina - O Lo Fa? {#journey-ends}
 
