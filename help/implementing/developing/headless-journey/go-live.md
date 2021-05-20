@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
+source-git-commit: bc717c544bd4f0449d358b831a5132f85fa85e86
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1818'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Un ambiente AEM completo è costituito da Author, Publish e Dispatcher. Questi s
 
 * **Il** servizio Author consente agli utenti interni di creare, gestire e visualizzare in anteprima i contenuti.
 
-* **Il servizio Publish** è considerato l’ambiente &quot;Live&quot; ed è tipicamente quello con cui gli utenti finali interagiscono. I contenuti, dopo essere stati modificati e approvati nel servizio Author, vengono distribuiti al servizio Publish. Il modello di implementazione più comune con AEM applicazioni headless consiste nella connessione della versione di produzione dell’applicazione a un servizio AEM Publish.
+* **Il servizio Publish** è considerato l’ambiente &quot;Live&quot; ed è tipicamente quello con cui gli utenti finali interagiscono. I contenuti, dopo essere stati modificati e applicati al servizio Author, vengono distribuiti al servizio Publish. Il modello di implementazione più comune con AEM applicazioni headless consiste nella connessione della versione di produzione dell’applicazione a un servizio AEM Publish.
 
 * **Il** Dispatcher è un server web statico integrato con il modulo dispatcher AEM. Memorizza in cache le pagine web prodotte dall’istanza di pubblicazione per migliorare le prestazioni.
 
@@ -99,7 +99,7 @@ L&#39;ambiente di sviluppo locale si articola in tre aree principali:
 1. Local AEM Runtime - versioni locali dei servizi di authoring e pubblicazione AEM che verranno utilizzati per distribuire il codice dal progetto AEM
 1. Il Dispatcher Runtime locale - una versione locale del server Web Apache htttpd che include il modulo Dispatcher
 
-Una volta configurato l’ambiente di sviluppo locale, puoi simulare il servizio dei contenuti all’app React distribuendo localmente un server Node statico.
+Una volta configurato l’ambiente di sviluppo locale, è possibile simulare il servizio dei contenuti all’applicazione React distribuendo localmente un server Node statico.
 
 Per maggiori informazioni sulla configurazione di un ambiente di sviluppo locale e di tutte le dipendenze necessarie per l’anteprima dei contenuti, consulta la [documentazione sulla distribuzione della produzione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
 
@@ -107,7 +107,7 @@ Per maggiori informazioni sulla configurazione di un ambiente di sviluppo locale
 
 Ora è il momento di preparare l&#39;applicazione senza testa AEM per il lancio, seguendo le best practice descritte di seguito.
 
-### Proteggi e ridimensiona l&#39;applicazione headless prima di Launch {#secure-and-scale-before-launch}
+### Proteggi e ridimensiona l&#39;applicazione Headless prima di Launch {#secure-and-scale-before-launch}
 
 1. Configura [Autenticazione basata su token](/help/assets/content-fragments/graphql-authentication-content-fragments.md) con le richieste GraphQL
 1. Configura [Memorizzazione in cache](/help/implementing/dispatcher/caching.md).
@@ -147,7 +147,7 @@ Puoi iniziare a distribuire il codice sfruttando la pipeline CI/CD di Cloud Mana
 
 Per garantire agli utenti la migliore esperienza possibile quando si utilizza l’applicazione senza testa di AEM, è importante monitorare le metriche delle prestazioni chiave, come illustrato di seguito:
 
-* Convalida delle versioni di anteprima e produzione dell’app
+* Convalida delle versioni di anteprima e produzione dell’applicazione
 * Verificare le pagine di stato AEM per lo stato di disponibilità del servizio corrente
 * Accedere ai rapporti sulle prestazioni
    * Prestazioni
@@ -155,10 +155,10 @@ Per garantire agli utenti la migliore esperienza possibile quando si utilizza l�
       * Server di origine - numero di chiamate, tassi di errore, carichi della CPU, traffico del payload
    * Prestazioni dell’autore
       * Verifica il numero di utenti, richieste e caricamento
-* Accedere ai rapporti sulle prestazioni specifici per app e spazio
-   * Una volta che il server è attivo, controlla se le metriche generali sono verde/arancione/rosso, quindi identifica problemi specifici dell&#39;app
-   * Apri gli stessi rapporti sopra filtrati nell’app o nello spazio (ad esempio desktop Photoshop, paywall)
-   * Utilizza le API del registro Splunk per accedere alle prestazioni del servizio e dell&#39;applicazione
+* Accedere ai report delle prestazioni specifici per l&#39;applicazione e lo spazio
+   * Quando il server è attivo, controlla se le metriche generali sono verdi/arancioni/rosse, quindi identifica problemi specifici dell&#39;applicazione
+   * Apri i rapporti sopra menzionati, ma filtrali nell’applicazione o nello spazio (ad esempio desktop Photoshop, paywall)
+   * [Utilizza le ](/help/implementing/developing/introduction/logging.md#splunk-logs) API del registro Splunk per accedere alle prestazioni del servizio e dell&#39;applicazione
    * Contatta l’Assistenza clienti in caso di altri problemi.
 
 ## Risoluzione dei problemi {#troubleshooting}
@@ -169,7 +169,7 @@ Segui queste best practice come approccio generale al debug:
 
 * Convalida funzionalità e prestazioni con la versione di anteprima dell&#39;applicazione
 * Convalidare funzionalità e prestazioni con la versione di produzione dell&#39;applicazione
-* Convalida con l’anteprima JSON dell’Editor frammento di contenuto
+* Convalida con l’ [anteprima JSON](/help/assets/content-fragments/content-fragments-json-preview.md) dell’Editor frammento di contenuto
 * Inspect JSON nell’applicazione client per verificare la presenza di applicazioni client o problemi di consegna
 * Inspect utilizza JSON utilizzando GraphQL per verificare la presenza di problemi relativi al contenuto o AEM memorizzati nella cache
 
@@ -180,7 +180,7 @@ Per registrare in modo efficiente un bug con il supporto nel caso in cui ti occo
 * Se necessario, scegli le schermate del problema
 * Documentare un modo per riprodurre il problema
 * Documentare il contenuto riprodotto dal problema con
-* Segnala un problema tramite il portale di supporto AEM con la priorità appropriata
+* Segnala un problema tramite il portale di supporto AEM con priorità dell&#39;applicazione
 
 ## Il Percorso Termina - O Lo Fa? {#journey-ends}
 
