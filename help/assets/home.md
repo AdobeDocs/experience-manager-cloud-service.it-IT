@@ -1,16 +1,15 @@
 ---
 title: '[!DNL Assets] as a [!DNL Cloud Service] Guida'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] risorse di supporto autonomo e collegamenti alla documentazione'
-feature: Asset Management
+feature: Gestione risorse
 role: Business Practitioner,Leader
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 36%
+source-wordcount: '297'
+ht-degree: 32%
 
 ---
-
 
 # [!DNL Assets] come  [!DNL Cloud Service] guida  {#aem-assets-guide}
 
@@ -20,7 +19,7 @@ Le seguenti risorse di supporto autonomo sono disponibili per [!DNL Experience M
 
 * [Panoramica e novità](overview.md)
 * [Modifiche di rilievo](/help/assets/assets-cloud-changes.md)
-* [Architettura  [!DNL Assets] di [!DNL Cloud Service]](architecture.md)
+* [Architettura di [!DNL Assets] as a [!DNL Cloud Service]](architecture.md)
 * [Panoramica dei microservizi per le risorse](/help/assets/asset-microservices-overview.md)
 
 ## [!DNL Experience Manager] guide  {#aem-guides}
@@ -34,8 +33,9 @@ Le seguenti risorse di supporto autonomo sono disponibili per [!DNL Experience M
 | [Guida utente sulla sicurezza](/help/security/home.md) | Scopri importanti argomenti sulla sicurezza relativi a [!DNL Experience Manager] come [!DNL Cloud Service]. |
 | [Onboarding](/help/onboarding/home.md) | Inizia a utilizzare [!DNL Experience Manager] come [!DNL Cloud Service]: accedi e proteggi i dati importanti. |
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Scopri come creare e amministrare [!DNL Experience Manager Sites] come [!DNL Cloud Service]. |
+| [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando AEM potenti funzionalità esplorando questi argomenti relativi allo sviluppo e alla distribuzione. |
+| [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Esplora questo percorso guidato attraverso le potenti e flessibili funzionalità di AEM per prepararsi al tuo primo progetto headless. |
 | [Spostamento  [!DNL Experience Manager] di [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Comprendi il percorso di transizione in [!DNL Experience Manager] come [!DNL Cloud Service]. |
-| [Guida utente per l’implementazione](/help/implementing/home.md) | Personalizza, sviluppa e distribuisci [!DNL Experience Manager] come [!DNL Cloud Service]. |
 | [Guida utente dei connettori](/help/connectors/home.md) | Scopri come integrare i connettori in [!DNL Experience Manager] come [!DNL Cloud Service]. |
 | [Guida utente sulle operazioni](/help/operations/home.md) | Scopri le operazioni back-end di [!DNL Experience Manager] come [!DNL Cloud Service], ad esempio le attività di indicizzazione e manutenzione. |
 | [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri Commerce Integration Framework in [!DNL Experience Manager] come [!DNL Cloud Service]. |
@@ -47,7 +47,7 @@ Le seguenti risorse di supporto autonomo sono disponibili per [!DNL Experience M
 * [Documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
 * [Documentazione di Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it)
-* [Preparazione all’RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Preparazione al GDPR](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as  [!DNL Cloud Service] Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [[!DNL Experience Manager] Forum della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
