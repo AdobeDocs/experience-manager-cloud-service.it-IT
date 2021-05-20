@@ -1,11 +1,11 @@
 ---
 title: Sviluppo headless per AEM Sites as a Cloud Service
 description: Scopri come AEM potenti funzionalità headless del Cloud Service come Modelli di contenuto, Frammenti di contenuto e API GraphQL collaborano per consentire di gestire le esperienze a livello centrale e distribuirle tra i vari canali.
-translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
+source-git-commit: 469579cfe10227ab22bbe055d4c503d8ea978150
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 2%
+source-wordcount: '489'
+ht-degree: 4%
 
 ---
 
@@ -47,28 +47,12 @@ AEM come Cloud Service è uno strumento flessibile per il modello di implementaz
    * L’API REST di AEM Assets supporta le operazioni CRUD relative ai frammenti di contenuto.
    * La consegna diretta del contenuto è possibile anche con l&#39;esportazione JSON del componente core [Frammento di contenuto .](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
-## Guide introduttive headless {#getting-started}
+## I primi passi con AEM senza testa {#first-steps}
 
-Le guide introduttive headless forniscono un percorso semplice per creare, gestire e distribuire esperienze utilizzando AEM come Cloud Service in cinque passaggi. Ogni guida si basa sul precedente, quindi si consiglia di esplorarle in modo approfondito e in ordine.
+Sono disponibili numerose risorse per iniziare a utilizzare AEM funzionalità headless. Sono destinati a diversi casi d’uso, ma tutti offrono una panoramica solida delle AEM funzioni headless.
 
-1. [Creazione di una configurazione](getting-started/create-configuration.md)
-1. [Creazione di un modello di frammento di contenuto](getting-started/create-content-model.md)
-1. [Creazione di una cartella di risorse](getting-started/create-assets-folder.md)
-1. [Creazione di un frammento di contenuto](getting-started/create-content-fragment.md)
-1. [Accesso e distribuzione di frammenti di contenuto](getting-started/create-api-request.md)
-
-## Pubblico {#audience}
-
-Le attività descritte in [Guide introduttive headless](#getting-started) sono necessarie per una dimostrazione completa e di base delle funzionalità headless AEM. Chiunque abbia accesso come amministratore a un’istanza di test AEM può seguire queste guide per comprendere la consegna headless in AEM, anche se qualcuno con esperienza di sviluppo è ideale.
-
-Tuttavia, in una situazione di produzione, le attività saranno eseguite da diversi utenti tipo in un numero variabile di volte. Esempio:
-
-* **** Gli amministratori dovranno impostare la configurazione iniziale e la struttura delle cartelle per il contenuto normalmente una sola volta o sporadicamente.
-* **Gli** architetti di informazioni in genere aggiungeranno nuovi modelli man mano che le esigenze dell&#39;organizzazione evolvono.
-* **Gli autori dei contenuti** creeranno continuamente nuovi contenuti come Frammenti di contenuto in base ai modelli definiti dagli architetti.
-
-Le Guide introduttive headless indicano chi eseguirebbe in genere le attività descritte e con quale frequenza.
-
-## Passaggio successivo {#next-step}
-
-Pronti per saperne di più? Per iniziare, leggi la prima parte della Guida introduttiva a Headless: [Creazione di una configurazione.](getting-started/create-configuration.md)
+| Risorsa | Descrizione | Tipo | Pubblico | Est Tempo |
+|---|---|---|---|---|
+| [Percorso per sviluppatori headless](/help/implementing/developing/headless-journey/overview.md) | Per una panoramica completa delle AEM funzionalità headless dalla teoria dei headless attraverso il vivere con il tuo primo progetto headless, inizia qui. | Guida | Sviluppatori | 1 ora |
+| [Guida introduttiva a Headless](/help/implementing/developing/headless/getting-started/introduction.md) | Per un breve riepilogo delle funzioni principali AEM headless, consulta questa panoramica di avvio rapido. | Guida introduttiva | Sviluppatori e amministratori | 20 minuti |
+| [Guida introduttiva a AEM tutorial pratico headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | Se preferisci un approccio pratico, questa esercitazione si divide direttamente in creazione di un semplice progetto headless. | Esercitazione | Sviluppatori | 2 ore |
