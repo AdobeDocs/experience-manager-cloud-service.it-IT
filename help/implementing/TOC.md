@@ -5,9 +5,9 @@ breadcrumb-title: Guida all’implementazione
 user-guide-description: Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione.
 feature: Strumenti per gli sviluppatori
 role: Developer, Architect
-source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
+source-git-commit: a902fda5b5ecaa438c690082f65ed9f9cba9a1ee
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '981'
 ht-degree: 33%
 
 ---
@@ -138,7 +138,9 @@ ht-degree: 33%
       + [Documenti di riferimento SPA](developing/hybrid/reference-materials.md)
    + Gestione delle esperienze headless {#headless}
       + [Senza testa e AEM](developing/headless/introduction.md)
+      + [Percorso per sviluppatori headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
       + Guide introduttive {#getting-started}
+         + [Introduzione](developing/headless/getting-started/introduction.md)
          + [Creazione di una configurazione](developing/headless/getting-started/create-configuration.md)
          + [Creazione di un modello di frammento di contenuto](developing/headless/getting-started/create-content-model.md)
          + [Creazione di una cartella di risorse](developing/headless/getting-started/create-assets-folder.md)
