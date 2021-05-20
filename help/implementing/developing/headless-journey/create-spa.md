@@ -4,20 +4,19 @@ description: In questa continuazione opzionale del Percorso di sviluppatori AEM 
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+exl-id: 80b43aae-0027-45c8-b079-e3931d58597f
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
-
 
 # Come creare applicazioni a pagina singola (SPA) con AEM {#create-spa}
 
 >[!CAUTION]
 >
->LAVORO IN CORSO - La creazione di questo documento è in corso e non deve essere inteso come completo o definitivo né deve essere utilizzato a fini di produzione.
+>OUTDATED - Questa bozza di contenuto è stata sostituita dalla nuova documentazione [Headless Developer Percorsi.](/help/journey-headless/developer/overview.md)
 
 In questa continuazione opzionale del [AEM Percorso di sviluppo headless,](overview.md) scopri come AEM combinare la consegna headless con le tradizionali funzioni CMS full-stack e come creare SPA modificabili utilizzando AEM framework dell’editor di SPA, nonché integrare SPA esterni, abilitando le funzionalità di modifica in base alle esigenze.
 
@@ -135,4 +134,4 @@ Di seguito sono riportate alcune risorse aggiuntive che approfondiscono alcuni c
 * [Rendering lato server](/help/implementing/developing/hybrid/ssr.md)  - Come configurare SSR per AEM SPA
 * [SPA documenti di riferimento](/help/implementing/developing/hybrid/reference-materials.md)  - Riferimenti e collegamenti API JavaScript a progetti open source AEM GitHub
 * [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)  - Come creare frammenti di contenuto
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)  - Modello Maven che crea un progetto Adobe Experience Manager (AEM) minimale basato su best practice come punto di partenza per il sito web
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) : modello Maven che crea un progetto Adobe Experience Manager (AEM) minimale basato su best practice come punto di partenza per il sito web
