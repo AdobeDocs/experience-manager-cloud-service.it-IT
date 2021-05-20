@@ -1,7 +1,7 @@
 ---
 title: AEM Percorso di sviluppatori headless
 description: Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle per il tuo primo progetto di sviluppo.
-source-git-commit: 1ac93a066f808e7dd2ed7e34aa7635e9914a4ea9
+source-git-commit: bec1e901e19abc9ae99dbf95878e51c9b000a5ee
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 2%
@@ -17,7 +17,7 @@ Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionali
 
 L’implementazione headless sta diventando sempre più importante per la distribuzione di esperienze al pubblico, ovunque si trovi e indipendentemente dal canale utilizzato.
 
-L’implementazione headless dimentica la gestione delle pagine e dei componenti come avviene nelle soluzioni stack complete e si concentra sulla creazione di frammenti di contenuto riutilizzabili e neutri per i canali e sulla loro distribuzione cross-channel. Si tratta di un modello di sviluppo moderno e dinamico per l’implementazione di esperienze web.
+L’implementazione headless dimentica la gestione delle pagine e dei componenti come avviene nelle soluzioni stack complete e si concentra sulla creazione di frammenti di contenuto riutilizzabili e neutri per i canali e sulla loro distribuzione cross-channel. Si tratta di un modello di sviluppo moderno e dinamico per l&#39;implementazione delle esperienze digitali.
 
 Questa guida ti guida attraverso gli argomenti più importanti in modo che al termine:
 
