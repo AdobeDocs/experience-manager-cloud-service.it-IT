@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '3087'
+source-wordcount: '3073'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->LAVORO IN CORSO - La creazione di questo documento è in corso e non deve essere inteso come completo o definitivo né deve essere utilizzato a fini di produzione.
+>OUTDATED - Questa bozza di contenuto è stata sostituita dalla nuova documentazione [Headless Developer Percorsi.](/help/journey-headless/developer/overview.md)
 
 In questa parte del [AEM Percorso di sviluppatori headless,](overview.md) scopri cosa è necessario per avviare il tuo progetto con AEM Headless.
 
