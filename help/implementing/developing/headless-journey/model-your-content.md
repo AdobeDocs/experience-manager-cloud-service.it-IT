@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
-translation-type: tm+mt
-source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1816'
 ht-degree: 2%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->LAVORO IN CORSO - La creazione di questo documento è in corso e non deve essere inteso come completo o definitivo né deve essere utilizzato a fini di produzione.
+>OUTDATED - Questa bozza di contenuto è stata sostituita dalla nuova documentazione [Headless Developer Percorsi.](/help/journey-headless/developer/overview.md)
 
 In questa parte del [AEM Percorso di sviluppatori headless](overview.md), puoi imparare a modellare la struttura dei contenuti. Quindi realizza quella struttura per Adobe Experience Manager (AEM) utilizzando Modelli per frammenti di contenuto e Frammenti di contenuto, da riutilizzare tra i canali.
 
@@ -87,7 +86,7 @@ Ad esempio, pubblicità di eventi speciali per tutte le scuole della zona:
 * Data dell’evento
 * Insegnante che organizza l’evento
 
-### Concetti {#concepts}
+### Concetti  {#concepts}
 
 Ciò che si desidera descrivere viene definito **Entità** - sostanzialmente le &quot;cose&quot; di cui si desidera memorizzare le informazioni.
 
