@@ -1,14 +1,13 @@
 ---
 title: Connettori di Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione sui connettori di Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
-source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 100%
+source-wordcount: '417'
+ht-degree: 90%
 
 ---
-
 
 # Implementazione di connettori per Experience Manager as a Cloud Service {#aem-connectors-guide}
 
@@ -33,7 +32,8 @@ In questa pagina sono elencate le risorse di supporto autonomo relative ai conne
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Informazioni su come creare con, e amministrare, Experience Manager Sites as a Cloud Service. |
 | [Guida utente di Assets](/help/assets/home.md) | Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service. |
 | [Passaggio ad AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Comprendi il percorso di transizione verso Cloud Service. |
-| [Guida utente sull’implementazione](/help/implementing/home.md) | Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione. |
+| [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando AEM potenti funzionalità esplorando questi argomenti relativi allo sviluppo e alla distribuzione. |
+| [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Esplora questo percorso guidato attraverso le potenti e flessibili funzionalità di AEM per prepararsi al tuo primo progetto headless. |
 | [Guida utente sulle operazioni](/help/operations/home.md) | Questa guida contiene informazioni sulle operazioni back-end di Experience Manager as a Cloud Service, ad esempio le attività di indicizzazione e manutenzione. |
 | [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri Commerce Integration Framework in AEM as a Cloud Service. |
 
@@ -44,7 +44,7 @@ In questa pagina sono elencate le risorse di supporto autonomo relative ai conne
 * [Documentazione di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 * [Documentazione di Core Components](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [Documentazione di Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparazione all’RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Preparazione al GDPR](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
