@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
-translation-type: tm+mt
-source-git-commit: 7df3620e6f58336de2ac29dd496a888b17606d7f
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->LAVORO IN CORSO - La creazione di questo documento è in corso e non deve essere inteso come completo o definitivo né deve essere utilizzato a fini di produzione.
+>OUTDATED - Questa bozza di contenuto è stata sostituita dalla nuova documentazione [Headless Developer Percorsi.](/help/journey-headless/developer/overview.md)
 
 In questa parte del [AEM Percorso di sviluppo headless,](overview.md) scopri la tecnologia headless e perché utilizzarla.
 
@@ -106,7 +105,7 @@ Avere molti canali diversi può significare che ciascuno di essi dispone di prop
 
 Implementando sistemi di progettazione attenti, condividendo librerie di pattern e sfruttando componenti di progettazione riutilizzabili e framework lato client aperti consolidati, è possibile garantire esperienze coerenti, ma questo deve essere pianificato.
 
-## Il futuro è senza testa e il futuro è ora {#future}
+## Il futuro è senza testa e il futuro è adesso {#future}
 
 Le esperienze digitali continueranno a definire il modo in cui i brand interagiscono con i clienti. La novità del design headless è la flessibilità che ci offre per rispondere alle aspettative dei clienti in continua evoluzione.
 
