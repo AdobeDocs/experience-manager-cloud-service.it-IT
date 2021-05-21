@@ -2,10 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-translation-type: tm+mt
-source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1996'
 ht-degree: 2%
 
 ---
@@ -55,19 +54,17 @@ La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 
 ### Novità in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] non archivia i download di singole risorse in cui viene scaricato il file originale. Questo miglioramento consente download più veloci.
+* [!DNL Experience Manager] non archivia i download di singole risorse in cui viene scaricato il file originale. Questo miglioramento consente download più veloci. Consulta [scaricare risorse](/help/assets/download-assets-from-aem.md).
 
-* Quando una risorsa viene scaricata tramite l’opzione di condivisione dei collegamenti, ora puoi scegliere di scaricare o meno i rendering. In precedenza, venivano scaricate tutte le rappresentazioni delle risorse.
-
-* Gli amministratori possono configurare [!DNL Experience Manager] per eliminare l’origine delle risorse dopo l’assimilazione in massa delle risorse. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Quando scarichi una risorsa tramite un’opzione di condivisione dei collegamenti, ora puoi scegliere di scaricare o meno i rendering. In precedenza, venivano scaricate tutte le rappresentazioni delle risorse. Consulta [opzioni di download](/help/assets/download-assets-from-aem.md).
 
 * Durante l’esecuzione di un controllo di integrità per importare le risorse in blocco, Experience Manager fornisce ora ulteriori informazioni sui motivi degli errori. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Quando si importano le risorse utilizzando lo strumento di importazione in blocco, gli amministratori ora possono eliminare i file di origine dopo il successo dell’importazione. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Durante la modifica di uno schema di metadati, un nuovo campo di selezione del percorso principale consente agli amministratori di effettuare la selezione in modo rapido e semplice, riducendo in tal modo il tempo di configurazione.
+* Durante la modifica di uno schema di metadati, un nuovo campo di selezione del percorso principale consente agli amministratori di effettuare la selezione in modo rapido e semplice. Questo miglioramento consente di ridurre i tempi di configurazione dei metadati.
 
-* I metadati di molte risorse possono essere importati in blocco utilizzando un file CSV e possono essere esportati in un file CSV. Il formato di data predefinito è ora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gli utenti possono utilizzare un formato diverso aggiornando l’intestazione della colonna. Ad esempio, aggiungi `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` come intestazione di colonna nel file CSV anziché la parola `Date`.
+* I metadati di molte risorse possono essere importati in blocco utilizzando un file CSV e possono essere esportati in un file CSV. Il formato di data predefinito è ora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gli utenti possono utilizzare un formato diverso aggiornando l’intestazione della colonna. Ad esempio, aggiungi `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` come intestazione di colonna nel file CSV anziché la parola `Date`. Consulta [importare metadati](/help/assets/metadata-import-export.md).
 
 * Nella vista a colonne, un indicatore visivo mostra lo stato di approvazione o rifiuto di ciascuna risorsa.
 
