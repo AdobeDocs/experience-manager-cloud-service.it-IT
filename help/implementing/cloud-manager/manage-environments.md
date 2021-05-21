@@ -1,14 +1,13 @@
 ---
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
-translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
+source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 4%
 
 ---
-
 
 # Gestione degli ambienti {#manage-environments}
 
@@ -63,7 +62,7 @@ Un utente con le autorizzazioni necessarie può creare i seguenti tipi di ambien
    >Nel caso in cui non sia ancora stata impostata la pipeline non di produzione, nella schermata *Panoramica* viene visualizzata la scheda da cui è possibile creare la pipeline non di produzione.
 
 
-## Ambiente di visualizzazione {#viewing-environment}
+## Dettagli ambiente {#viewing-environment}
 
 La scheda **Ambienti** nella pagina Panoramica elenca fino a tre ambienti.
 
@@ -112,7 +111,6 @@ L&#39;opzione **Elimina** è disponibile dal menu a discesa nella scheda **Ambie
 
 
 >[!NOTE]
->
 >Questa funzione non è disponibile per l’ambiente Produzione/Stage impostato in un programma di produzione configurato a scopo di produzione. La funzione è tuttavia disponibile per gli ambienti di produzione/stage in un programma sandbox.
 
 ## Gestione dell&#39;accesso {#managing-access}
@@ -139,7 +137,7 @@ Questa opzione è disponibile anche se fai clic su **Dettagli** dalla scheda **A
 
 ## Accedi localmente {#login-locally}
 
-Seleziona **Accesso locale** dal menu a discesa nella scheda **Ambienti** per accedere localmente a Adobe Experience Manager.
+Seleziona **Accesso locale** dal menu a discesa nella scheda **Ambienti** per accedere localmente ad Adobe Experience Manager.
 
 ![](assets/environ-login-locally.png)
 
@@ -190,5 +188,3 @@ Per annullare l’applicazione di un Elenco consentiti IP, effettua le seguenti 
 1. Identifica la riga in cui è elencata la regola dell’Elenco consentiti IP che desideri annullare l’applicazione.
 1. Seleziona il **...Menu** dall&#39;estremità destra della riga.
 1. Seleziona l’opzione **Annulla applicazione** e conferma l’invio.
-
-
