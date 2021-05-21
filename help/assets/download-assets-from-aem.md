@@ -5,10 +5,9 @@ contentOwner: AG
 feature: Gestione risorse
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-translation-type: tm+mt
-source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
+source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '916'
 ht-degree: 4%
 
 ---
@@ -26,7 +25,6 @@ Non è possibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set di
 Per scaricare le risorse di Experience Manager, utilizza i seguenti metodi:
 
 * [Interfaccia utente di Experience Manager](#download-in-aem)
-* Interfaccia utente Condivisione collegamenti risorsa
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [App desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -95,6 +93,6 @@ Se non hai bisogno della funzionalità di download, disattiva il servlet per evi
 >[!MORELIKETHIS]
 >
 >* [Scaricare risorse protette DRM](drm.md)
->* [Scaricare risorse utilizzando l’app desktop Experience Manager su desktop Win o Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it)
->* [Scaricare le risorse utilizzando il collegamento Risorse di Adobe dalle app Adobe Creative Cloud supportate](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)
+* [Scaricare risorse utilizzando l’app desktop Experience Manager su desktop Win o Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it)
+* [Scaricare le risorse utilizzando il collegamento Risorse di Adobe dalle app Adobe Creative Cloud supportate](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
