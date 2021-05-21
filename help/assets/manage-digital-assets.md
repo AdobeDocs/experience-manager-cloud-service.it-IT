@@ -3,13 +3,12 @@ title: Consente di gestire i contenuti digitali
 description: Scopri vari metodi di gestione e modifica delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Publishing,Collaboration,Asset Processing
+feature: Gestione risorse, Pubblicazione, Collaborazione, Elaborazione risorse
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-translation-type: tm+mt
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '4505'
+source-wordcount: '4502'
 ht-degree: 12%
 
 ---
@@ -97,7 +96,7 @@ Per visualizzare l’anteprima di una risorsa, effettua le seguenti operazioni.
 
 1. Nel campo **[!UICONTROL Tag]** , seleziona uno o più tag. Per aggiungere un tag personalizzato, digita il nome del tag nella casella e seleziona la chiave `Enter` . Il nuovo tag viene salvato in [!DNL Experience Manager].
 
-   YouTube richiede la pubblicazione di tag e un collegamento a YouTube (se è possibile trovare un collegamento appropriato).
+   YouTube richiede la pubblicazione dei tag e dispone di un collegamento ad YouTube (se è possibile trovare un collegamento adatto).
 
    >[!NOTE]
    >
@@ -251,9 +250,7 @@ Inoltre, disattiva il pulsante force delete utilizzando una sovrapposizione, per
 
 1. Andate alla posizione delle risorse che desiderate eliminare.
 
-1. Seleziona la risorsa e tocca o fai clic sull’icona **[!UICONTROL Elimina]** nella barra degli strumenti.
-
-   ![delete_icon](assets/delete_icon.png)
+1. Seleziona la risorsa e fai clic su **[!UICONTROL Elimina]** ![Elimina_icona](assets/do-not-localize/delete-icon.png) nella barra degli strumenti.
 
 1. Nella finestra di dialogo di conferma, fai clic su:
 
@@ -261,7 +258,7 @@ Inoltre, disattiva il pulsante force delete utilizzando una sovrapposizione, per
    * **[!UICONTROL Elimina]** per confermare l’azione:
 
       * Se la risorsa non ha riferimenti, viene eliminata.
-      * Se la risorsa dispone di riferimenti, un messaggio di errore segnala che **Una o più risorse dispongono di riferimenti.** Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+      * Se la risorsa dispone di riferimenti, un messaggio di errore ti informa che **[!UICONTROL Si fa riferimento a una o più risorse]**. Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
 
    >[!NOTE]
    >
@@ -269,14 +266,11 @@ Inoltre, disattiva il pulsante force delete utilizzando una sovrapposizione, per
 
    >[!NOTE]
    >
-   >Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiorna i riferimenti rilevanti prima di eliminare una risorsa.
-   >
-   >
-   >Inoltre, disattiva il pulsante force delete utilizzando una sovrapposizione, per impedire agli utenti di eliminare le risorse di riferimento e di lasciare i collegamenti interrotti.
+   >Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiorna i riferimenti rilevanti prima di eliminare una risorsa. È possibile impedire l’eliminazione delle risorse di riferimento in quanto causa collegamenti interrotti. Disattiva il pulsante di eliminazione forzata utilizzando una sovrapposizione.
 
 ## Scaricare le risorse {#download-assets}
 
-Consulta [Scaricare risorse da [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+Consulta [scaricare risorse da [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Pubblicare o annullare la pubblicazione delle risorse {#publish-assets}
 
