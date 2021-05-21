@@ -2,7 +2,7 @@
 title: Introduzione - Gestione dei certificati SSL
 description: Introduzione - Gestione dei certificati SSL
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 8e09031d1cf17bda9d4eb379f84462b2d29e1aa5
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -19,7 +19,9 @@ Cloud Manager offre ai clienti la funzionalità self-service per installare i ce
 
 * AEM come Cloud Service supporta solo siti `https` sicuri. I clienti con più domini personalizzati non dovranno caricare un certificato ogni volta che aggiungono un dominio. Pertanto, tali clienti trarranno vantaggio ottenendo un certificato con più domini.
 
-* AEM come Cloud Service accetterà solo i certificati OV (Organization Validation) o EV (Extended Validation). I certificati DV (Convalida del dominio) non verranno accettati. Inoltre, qualsiasi certificato deve essere un certificato TLS X.509 di un’autorità di certificazione (CA) affidabile con una chiave privata RSA a 2048 bit corrispondente. AEM come Cloud Service accetterà i certificati SSL con caratteri jolly per un dominio.
+* AEM come Cloud Service accetterà solo i certificati OV (Organization Validation) o EV (Extended Validation). I certificati DV (Convalida del dominio) non verranno accettati. Inoltre, qualsiasi certificato deve essere un certificato TLS X.509 di un’autorità di certificazione (CA) affidabile con una chiave privata RSA a 2048 bit corrispondente.
+
+* AEM come Cloud Service accetterà i certificati SSL con caratteri jolly per un dominio.
 
 Cloud Manager supporta i seguenti requisiti di certificato SSL del cliente:
 
