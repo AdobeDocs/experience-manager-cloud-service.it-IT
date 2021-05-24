@@ -3,10 +3,9 @@ title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 feature: Distribuzione
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3350'
 ht-degree: 1%
 
 ---
@@ -101,7 +100,7 @@ Dopo il passaggio alla nuova versione dell&#39;applicazione:
    * Cartelle (aggiungere, modificare, rimuovere)
    * Modelli modificabili (aggiungere, modificare, rimuovere)
    * Configurazione in base al contesto (qualsiasi cosa sotto `/conf`) (aggiungere, modificare, rimuovere)
-   * Script (i pacchetti possono attivare gli hook di installazione in varie fasi del processo di installazione del pacchetto. Consulta la [documentazione Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sugli hook di installazione, che includono gli utenti autorizzati a eseguirli).
+   * Script (i pacchetti possono attivare gli hook di installazione in varie fasi del processo di installazione del pacchetto. Consulta la [documentazione Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sugli hook di installazione. Nota che AEM CS utilizza attualmente Filevault versione 3.4.0, che limita gli hook di installazione agli utenti amministratori, agli utenti di sistema e al membro del gruppo di amministratori).
 
 È possibile limitare l’installazione di contenuti modificabili all’authoring o alla pubblicazione incorporando i pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per riflettere questa separazione è stata effettuata in AEM 6.5 e i dettagli sulla ristrutturazione del progetto raccomandata si trovano nella documentazione [AEM 6.5.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
