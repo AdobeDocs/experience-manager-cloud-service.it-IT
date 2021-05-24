@@ -1,14 +1,13 @@
 ---
 title: Smart imaging
-description: '"Scopri in che modo l''imaging intelligente applica le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, ottenendo prestazioni e coinvolgimento migliori."'
+description: Scopri come l’imaging intelligente con Adobe Sensei AI applica le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, ottenendo prestazioni e coinvolgimento migliori.
 feature: Gestione risorse, rappresentazioni
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: eef1760407986e47876416c90df6dfb6f5693c1a
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 2%
+source-wordcount: '2634'
+ht-degree: 1%
 
 ---
 
@@ -18,9 +17,9 @@ ht-degree: 2%
 
 La tecnologia Smart Imaging applica le funzionalità di Adobe Sensei AI e funziona con i &quot;predefiniti immagine&quot; esistenti. Funziona per migliorare le prestazioni di distribuzione delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Questa funzione richiede l’utilizzo della rete CDN preconfigurata (Content Delivery Network) inclusa in Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione.
+>L’imaging avanzato richiede l’utilizzo della rete CDN preconfigurata (Content Delivery Network) fornita in bundle con Adobe Experience Manager - Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione.
 
 L’imaging intelligente trae inoltre vantaggio dal miglioramento delle prestazioni dell’integrazione completa con il servizio premium CDN (Content Delivery Network) di Adobe. Questo servizio trova il percorso Internet ottimale tra server, reti e punti di peer. Trova un percorso che ha la latenza più bassa e la velocità di perdita più bassa del pacchetto invece di utilizzare il percorso predefinito su Internet.
 
@@ -36,13 +35,60 @@ Gli esempi di risorse immagine seguenti illustrano l’ottimizzazione Smart Imag
 
 Simile a quanto sopra, Adobe ha anche eseguito un test con 7009 URL dai siti dei clienti live. Sono stati in grado di raggiungere una media del 38% in più di ottimizzazione delle dimensioni del file per JPEG. Per PNG con formato WebP, sono stati in grado di raggiungere una media di 31% ulteriore ottimizzazione delle dimensioni del file. Questo tipo di ottimizzazione è possibile grazie alla capacità di Smart imaging.
 
+Sul web mobile, le sfide sono aggravate da due fattori:
+
+* Ampia varietà di dispositivi con diversi fattori di forma e display ad alta risoluzione.
+* Larghezza di banda di rete vincolata.
+
+In termini di immagini, l&#39;obiettivo è quello di offrire immagini di qualità ottimale nel modo più efficiente possibile.
+
+### Informazioni sull’ottimizzazione del rapporto pixel del dispositivo {#dpr}
+
+Il rapporto pixel del dispositivo (DPR), noto anche come rapporto pixel CSS, è la relazione tra i pixel fisici di un dispositivo e i pixel logici. Soprattutto con l&#39;avvento degli schermi Retina, la risoluzione dei pixel dei moderni dispositivi mobili sta crescendo a un ritmo veloce.
+
+Attivando l’ottimizzazione del rapporto pixel del dispositivo, l’immagine viene riprodotta alla risoluzione nativa dello schermo, che la rende più nitida.
+
+Attivando la configurazione di Smart imaging DPR, l&#39;immagine richiesta viene regolata automaticamente in base alla densità di pixel del display da cui viene servita la richiesta. Attualmente, la densità di pixel del display proviene dai valori di intestazione CDN di Akamai.
+
+| Valori consentiti nell’URL di un’immagine | Descrizione |
+|---|---|
+| `dpr=off` | Disattiva l’ottimizzazione DPR a livello di singolo URL immagine. |
+| `dpr=on,dprValue` | Sostituisci il valore DPR rilevato da Smart Imaging con un valore personalizzato (rilevato da qualsiasi logica lato client o con altri metodi). Il valore consentito per `dprValue` è un numero qualsiasi maggiore di 0. I valori specificati di 1.5, 2 o 3 sono tipici. |
+
+>[!NOTE]
+>
+>* Puoi utilizzare `dpr=on,dprValue` anche se l’impostazione DPR a livello aziendale è disattivata.
+>* Grazie all’ottimizzazione DPR, quando l’immagine risultante è maggiore dell’impostazione MaxPix Dynamic Media, la larghezza MaxPix viene sempre riconosciuta mantenendo le proporzioni dell’immagine.
+
+
+| Dimensione immagine richiesta | Valore DPR | Dimensione dell&#39;immagine |
+|---|---|---|
+| 816 x 500 | 1 | 816 x 500 |
+| 816 x 500 | 2 | 1632x1000 |
+
+Vedi anche [Quando lavori con immagini](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) e [Quando lavori con Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+
+### Informazioni sull&#39;ottimizzazione della larghezza di banda di rete {#network-bandwidth-optimization}
+
+L&#39;attivazione della larghezza di banda della rete regola automaticamente la qualità dell&#39;immagine fornita in base all&#39;effettiva larghezza di banda della rete. Per una larghezza di banda di rete insufficiente, l&#39;ottimizzazione DPR viene automaticamente disattivata, anche se è già attivata.
+
+Se lo desideri, la tua azienda può rinunciare all&#39;ottimizzazione della larghezza di banda di rete a livello di singola immagine aggiungendo `network=off` all&#39;URL dell&#39;immagine.
+
+| Valore consentito nell’URL di un’immagine | Descrizione |
+|---|---|
+| `network=off` | Disattiva l&#39;ottimizzazione della rete a livello di singolo URL immagine. |
+
+>[!NOTE]
+>
+>I valori DPR e della larghezza di banda di rete si basano sui valori rilevati lato client della rete CDN inclusa nel pacchetto. Questi valori a volte sono imprecisi. Ad esempio, iPhone5 con DPR=2 e iPhone12 con DPR=3, entrambi mostrano DPR=2. Tuttavia, per i dispositivi ad alta risoluzione, l&#39;invio di DPR=2 è migliore dell&#39;invio di DPR=1. Disponibile a breve: Adobe sta lavorando sul codice lato client per determinare con precisione il DPR di un utente finale.
+
 ## Quali sono i vantaggi principali dell&#39;ultima generazione di Smart imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
 Le immagini costituiscono la maggior parte del tempo di caricamento di una pagina. Di conseguenza, qualsiasi miglioramento delle prestazioni può avere un impatto profondo su tassi di conversione più elevati, sul tempo trascorso su un sito e su tassi di mancato recapito del sito più bassi.
 
 Miglioramenti all&#39;ultima versione di Smart imaging:
 
-* È stata migliorata la classificazione SEO di Google per le pagine web che utilizzano le più recenti Smart imaging.
+* È stata migliorata la classificazione SEO di Google per le pagine web che utilizzano l’imaging avanzato più recente.
 * Distribuisce immediatamente il contenuto ottimizzato (in fase di runtime).
 * Utilizza la tecnologia Adobe Sensei per convertire in base alla qualità (`qlt`) specificata nella richiesta di immagine.
 * L’imaging avanzato può essere disattivato utilizzando il parametro URL `bfc` .
@@ -50,7 +96,7 @@ Miglioramenti all&#39;ultima versione di Smart imaging:
 * Precedentemente, sia le immagini originali che quelle derivate venivano memorizzate nella cache ed era un processo in due fasi per annullare la validità della cache. Nell’ultimo Smart imaging, solo i derivati vengono memorizzati nella cache, consentendo un processo di invalidazione della cache a un solo passaggio.
 * I clienti che utilizzano intestazioni personalizzate nel loro set di regole beneficiano dell’ultima Smart imaging, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart imaging. Ad esempio, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; come suggerito in [Aggiunta di un valore di intestazione personalizzato alle risposte alle immagini|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Esistono costi di licenza associati all&#39;imaging intelligente? {#are-there-any-licensing-costs-associated-with-smart-imaging}
+## Sono presenti costi di licenza associati all&#39;imaging intelligente? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
 No. Smart imaging è incluso nella licenza esistente. Questa regola è valida per Dynamic Media Classic o Experience Manager Dynamic Media (On-Prem, AMS e Experience Manager as a Cloud Service).
 
@@ -119,7 +165,7 @@ Per comprendere i prerequisiti per l’imaging intelligente, consulta [Posso uti
 
 Smart imaging funziona con le immagini distribuite tramite HTTP o HTTPS. Inoltre, funziona anche su HTTP/2.
 
-## Sono idoneo all’utilizzo di imaging intelligente? {#am-i-eligible-to-use-smart-imaging}
+## Posso utilizzare le Smart imaging? {#am-i-eligible-to-use-smart-imaging}
 
 Per utilizzare Smart imaging, l’account Dynamic Media Classic o Dynamic Media della tua azienda deve soddisfare i seguenti requisiti:
 
@@ -134,17 +180,27 @@ Il tuo primo dominio personalizzato non comporta costi aggiuntivi con una licenz
 
 ## Qual è il processo per abilitare Smart imaging per il mio account? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-Avviate la richiesta di utilizzare l&#39;imaging intelligente; non è abilitato automaticamente.
+Avviate la richiesta per utilizzare Smart imaging; non è abilitato automaticamente.
+
+Per impostazione predefinita, Smart imaging DPR e l’ottimizzazione della rete sono disabilitati (disattivati) per un account aziendale Dynamic Media. Se desideri abilitare (attivare) uno o entrambi questi miglioramenti predefiniti, crea un caso di supporto come descritto di seguito.
+
+La pianificazione della versione per Smart imaging DPR e l’ottimizzazione della rete è la seguente:
+
+| Regione | Data di destinazione |
+|---|---|
+| America del Nord | 24 maggio 2021 |
+| Europa, Medio Oriente, Africa | 25 giugno 2021 |
+| Asia-Pacifico | 19 luglio 2021 |
 
 1. [Utilizza l’Admin Console per creare un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di supporto.
 1. Fornisci le seguenti informazioni nel tuo caso di assistenza:
 
    1. Nome contatto principale, e-mail, telefono.
-   1. Tutti i domini da abilitare per l’imaging intelligente (ovvero `images.company.com` o `mycompany.scene7.com`).
+   1. Tutti i domini da abilitare per Smart imaging (ovvero `images.company.com` o `mycompany.scene7.com`).
 
       Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
-      Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**.
+      Fai clic su **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
       Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**.
    1. Verifica di utilizzare la CDN tramite Adobe e di non gestirla con una relazione diretta.
@@ -152,18 +208,18 @@ Avviate la richiesta di utilizzare l&#39;imaging intelligente; non è abilitato 
 
       Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
-      Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**.
+      Fai clic su **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
       Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se utilizzi un dominio generico Dynamic Media Classic, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione.
    1. Indica se desideri che funzioni su HTTP/2.
 
 1. L’Assistenza clienti di Adobe ti aggiunge all’elenco di attesa del cliente Smart imaging in base all’ordine in cui vengono inviate le richieste.
 1. Quando Adobe è pronto per gestire la richiesta, l’Assistenza clienti ti contatta per coordinare e impostare una data di destinazione.
-1. **Facoltativo**: Facoltativamente, puoi testare l’imaging intelligente in Staging prima che Adobe introduca la nuova funzione in produzione.
+1. **Facoltativo**: Facoltativamente, puoi testare l’imaging avanzato nell’ambiente di staging prima che Adobe introduca la nuova funzione in produzione.
 1. Dopo il completamento, riceverai una notifica dall’Assistenza clienti.
 1. Per ottimizzare le prestazioni dell’imaging avanzato, Adobe consiglia di impostare il valore TTL (Time To Live) a 24 ore o più. Il TTL definisce per quanto tempo le risorse vengono memorizzate nella cache dalla rete CDN. Per modificare questa impostazione:
 
-   1. Se utilizzi Dynamic Media Classic, fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni pubblicazione > Image Server]**. Imposta il valore **[!UICONTROL Default Client Cache Time To Live]** su 24 o più a lungo.
+   1. Se utilizzi Dynamic Media Classic, fai clic su **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni pubblicazione]** > **[!UICONTROL Server immagini]**. Imposta il valore **[!UICONTROL Default Client Cache Time To Live]** su 24 o più a lungo.
    1. Se utilizzi Dynamic Media, segui [queste istruzioni](config-dm.md). Imposta il valore **[!UICONTROL Scadenza]** su 24 ore o più.
 
 ## Quando posso aspettarmi che il mio account sia abilitato con Smart imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
@@ -182,8 +238,8 @@ Durante la transizione iniziale, le immagini non memorizzate nella cache colpisc
 
 ## Come posso verificare se l&#39;imaging intelligente funziona come previsto?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Dopo aver configurato l&#39;account con l&#39;imaging intelligente, carica un URL immagine Dynamic Media Classic o Adobe Experience Manager - Dynamic Media sul browser.
-1. Apri il riquadro per sviluppatori di Chrome facendo clic su **[!UICONTROL Visualizza > Sviluppatore > Strumenti di sviluppo]** nel browser. Oppure, scegli uno strumento per sviluppatori di browser a tua scelta.
+1. Dopo aver configurato il tuo account con Smart imaging, carica un URL immagine Dynamic Media Classic o Adobe Experience Manager - Dynamic Media sul browser.
+1. Apri il riquadro per gli sviluppatori di Chrome facendo clic su **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** nel browser. Oppure, scegli uno strumento per sviluppatori di browser a tua scelta.
 
 1. Assicurati che la cache sia disabilitata quando gli strumenti per sviluppatori sono aperti.
 
@@ -203,14 +259,26 @@ Durante la transizione iniziale, le immagini non memorizzate nella cache colpisc
 
 Sì. Per disattivare l’imaging avanzato, aggiungi il modificatore `bfc=off` all’URL.
 
-## Quale &quot;tuning&quot; è disponibile? Esistono impostazioni o comportamenti che possono essere definiti? (#tuning-settings)
+## Posso richiedere che DPR e l&#39;ottimizzazione della rete siano disattivati a livello aziendale? {#dpr-companylevel-turnoff}
+
+Sì. Per disabilitare il DPR e l’ottimizzazione della rete nella tua azienda, crea un caso di assistenza come descritto in precedenza in questo argomento.
+
+## Quale &quot;tuning&quot; è disponibile? Esistono impostazioni o comportamenti che possono essere definiti? {#tuning-settings}
 
 Attualmente, è possibile abilitare o disabilitare l&#39;imaging avanzato. Nessun&#39;altra sintonizzazione disponibile.
 
-## Se Smart imaging gestisce le impostazioni di qualità, posso impostare valori minimi e massimi? Ad esempio, è possibile impostare &quot;non inferiore a 60&quot; e &quot;non superiore a 80 qualità&quot;? (#minimum-maximum)
+## Se Smart imaging gestisce le impostazioni di qualità, posso impostare valori minimi e massimi? Ad esempio, è possibile impostare &quot;non inferiore a 60&quot; e &quot;non superiore a 80 qualità&quot;? {#minimum-maximum}
 
 L&#39;attuale Smart imaging non è in grado di effettuare il provisioning.
 
-## A volte un&#39;immagine JPEG viene restituita a Chrome invece di un&#39;immagine WebP. Perché cambia? (#jpeg-webp)
+## A volte un&#39;immagine JPEG viene restituita a Chrome invece di un&#39;immagine WebP. Perché cambia? {#jpeg-webp}
 
 L’imaging intelligente determina se la conversione è utile o meno. Restituisce la nuova immagine solo se la conversione si traduce in una dimensione file più piccola con qualità comparabile.
+
+## Come funziona l’ottimizzazione DPR per Smart imaging con i componenti Adobe Experience Manager Sites e i visualizzatori Dynamic Media?
+
+* I componenti core di Experience Manager Sites sono configurati per impostazione predefinita per l’ottimizzazione DPR. Per evitare immagini di dimensioni eccessive dovute all’ottimizzazione DPR per Smart imaging lato server, `dpr=off` viene sempre aggiunto alle immagini Dynamic Media dei componenti core di Experience Manager Sites.
+* Dato che il componente Dynamic Media Foundation è configurato per impostazione predefinita per l’ottimizzazione DPR, per evitare immagini di dimensioni eccessive a causa dell’ottimizzazione DPR Smart imaging lato server, `dpr=off` viene sempre aggiunto alle immagini dei componenti Dynamic Media Foundation. Anche se il cliente deseleziona l’ottimizzazione DPR nel componente di base DM, Smart imaging DPR lato server non viene avviato. In sintesi, nel componente di base DM, l’ottimizzazione DPR entra in vigore solo in base all’impostazione a livello di componente di base DM.
+* L’ottimizzazione DPR lato visualizzatore funziona in parallelo con l’ottimizzazione DPR per le immagini avanzate lato server e non produce immagini di dimensioni eccessive. In altre parole, ogni volta che il visualizzatore gestisce il DPR, ad esempio la visualizzazione principale solo in un visualizzatore abilitato per lo zoom, i valori DPR per l’imaging intelligente lato server non vengono attivati. Allo stesso modo, ogni volta che gli elementi del visualizzatore, come campioni e miniature, non dispongono di gestione DPR, viene attivato il valore DPR per l’imaging intelligente lato server.
+
+Vedi anche [Quando lavori con immagini](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) e [Quando lavori con Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
