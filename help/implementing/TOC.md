@@ -5,10 +5,10 @@ breadcrumb-title: Guida all’implementazione
 user-guide-description: Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione.
 feature: Strumenti per gli sviluppatori
 role: Developer, Architect
-source-git-commit: a902fda5b5ecaa438c690082f65ed9f9cba9a1ee
+source-git-commit: b625eb8a7f293df8022bc24fae66fe1b6825c375
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 33%
+source-wordcount: '904'
+ht-degree: 36%
 
 ---
 
@@ -72,17 +72,6 @@ ht-degree: 33%
    + [Fondamenti tecnici AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [API di AEM as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Generazione dei token di accesso per le API lato server](developing/introduction/generating-access-tokens-for-server-side-apis.md)
-   + Percorso di sviluppatori headless {#headless-journey}
-      + [Capire senza testa in AEM](developing/headless-journey/overview.md)
-      + [Scopri lo sviluppo headless di CMS](developing/headless-journey/learn-about.md)
-      + [Guida introduttiva AEM Headless come Cloud Service](developing/headless-journey/getting-started.md)
-      + [Percorso della tua prima esperienza con AEM Headless](developing/headless-journey/path-to-first-experience.md)
-      + [Come modellare il contenuto come modelli di contenuto AEM](developing/headless-journey/model-your-content.md)
-      + [Come accedere ai contenuti tramite API di consegna AEM](developing/headless-journey/access-your-content.md)
-      + [Come aggiornare il contenuto tramite API di risorse AEM](developing/headless-journey/update-your-content.md)
-      + [Come mettere tutto insieme](developing/headless-journey/put-it-all-together.md)
-      + [Come vivere con la tua applicazione headless](developing/headless-journey/go-live.md)
-      + [Facoltativo - Come creare applicazioni a pagina singola con AEM](developing/headless-journey/create-spa.md)
    + [Cefalea e senza testa in AEM](developing/headful-headless.md)
    + Sviluppo AEM stack completo {#full-stack}
       + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](developing/introduction/develop-wknd-tutorial.md)
@@ -115,27 +104,6 @@ ht-degree: 33%
       + [Pagine di errore personalizzate](/help/implementing/developing/introduction/custom-error-page.md)
       + [Tipi di nodo AEM](/help/implementing/developing/introduction/node-types.md)
       + [Linee guida per le API Java](/help/implementing/developing/introduction/java-api-guidelines.md)
-   + Sviluppo AEM ibrido {#hybrid}
-      + [Ibrido e SPA con AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
-      + [Introduzione SPA e Procedura dettagliata](developing/hybrid/introduction.md)
-      + [Tutorial WKND SPA](developing/hybrid/wknd-tutorial.md)
-      + [Guida introduttiva a React](developing/hybrid/getting-started-react.md)
-      + [Guida introduttiva all&#39;uso di Angular](developing/hybrid/getting-started-angular.md)
-      + [SPA Dives profondi](developing/hybrid/deep-dives.md)
-      + [Sviluppo di SPA per AEM](developing/hybrid/developing.md)
-      + [Panoramica dell’editor di SPA](developing/hybrid/editor-overview.md)
-      + [Blueprint SPA](developing/hybrid/blueprint.md)
-      + [Componente pagina SPA](developing/hybrid/page-component.md)
-      + [Mappatura di un modello dinamico a un componente](developing/hybrid/model-to-component-mapping.md)
-      + [Indirizzamento modello](developing/hybrid/routing.md)
-      + [Componente RemotePage](developing/hybrid/remote-page.md)
-      + [Modifica di un SPA esterno in AEM](developing/hybrid/editing-external-spa.md)
-      + [Componenti compositi in SPA](developing/hybrid/composite-components.md)
-      + [Rendering lato server](developing/hybrid/ssr.md)
-      + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
-      + [Integrazione Launch](developing/hybrid/launch-integration.md)
-      + [Documenti di riferimento SPA](developing/hybrid/reference-materials.md)
    + Gestione delle esperienze headless {#headless}
       + [Senza testa e AEM](developing/headless/introduction.md)
       + [Percorso per sviluppatori headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
@@ -163,6 +131,27 @@ ht-degree: 33%
          + [API GraphQL per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
          + [AEM API GraphQL con frammenti di contenuto - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
          + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
+   + Sviluppo AEM ibrido e SPA {#hybrid}
+      + [Ibrido e SPA con AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+      + [Introduzione SPA e Procedura dettagliata](developing/hybrid/introduction.md)
+      + [Tutorial WKND SPA](developing/hybrid/wknd-tutorial.md)
+      + [Guida introduttiva a React](developing/hybrid/getting-started-react.md)
+      + [Guida introduttiva all&#39;uso di Angular](developing/hybrid/getting-started-angular.md)
+      + [SPA Dives profondi](developing/hybrid/deep-dives.md)
+      + [Sviluppo di SPA per AEM](developing/hybrid/developing.md)
+      + [Panoramica dell’editor di SPA](developing/hybrid/editor-overview.md)
+      + [Blueprint SPA](developing/hybrid/blueprint.md)
+      + [Componente pagina SPA](developing/hybrid/page-component.md)
+      + [Mappatura di un modello dinamico a un componente](developing/hybrid/model-to-component-mapping.md)
+      + [Indirizzamento modello](developing/hybrid/routing.md)
+      + [Componente RemotePage](developing/hybrid/remote-page.md)
+      + [Modifica di un SPA esterno in AEM](developing/hybrid/editing-external-spa.md)
+      + [Componenti compositi in SPA](developing/hybrid/composite-components.md)
+      + [Rendering lato server](developing/hybrid/ssr.md)
+      + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+      + [Integrazione Launch](developing/hybrid/launch-integration.md)
+      + [Documenti di riferimento SPA](developing/hybrid/reference-materials.md)
 + Strumenti per gli sviluppatori {#developer-tools}
    + [AEM Developer Tools per Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Plug-in Maven del pacchetto di contenuti](/help/implementing/developing/tools/maven-plugin.md)
