@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: e0c6a79e6a088423cbc47046f285fb1ac241c476
+source-git-commit: d8ea69fc36a6565d245fe3c01484200b2e744c6c
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 43%
+source-wordcount: '2833'
+ht-degree: 41%
 
 ---
 
@@ -54,6 +54,8 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 * Quando utilizzi `Amazon S3` o `Azure` come archivio dati nel sistema di AEM di origine, l’archivio dati deve essere configurato in modo che i BLOB memorizzati non possano essere eliminati (raccolta rifiuti). In questo modo si garantisce l&#39;integrità dei dati dell&#39;indice e la mancata configurazione di questo modo può causare estrazioni non riuscite a causa della mancanza di integrità dei dati dell&#39;indice.
 
 * Se utilizzi indici personalizzati, assicurati di configurare gli indici personalizzati con il nodo `tika` prima di eseguire lo strumento Content Transfer (Trasferimento contenuti). Per ulteriori informazioni, consulta [Preparazione della nuova definizione di indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) .
+
+* Se intendi eseguire operazioni di integrazione, è essenziale che la struttura del contenuto del contenuto esistente non venga modificata dal momento in cui l’estrazione iniziale viene portata al momento dell’esecuzione dell’estrazione integrativa. Non è possibile eseguire i top-up su contenuto la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questa limitazione durante il processo di migrazione.
 
 ## Disponibilità {#availability}
 
@@ -189,6 +191,7 @@ Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione 
 
 >[!NOTE]
 >Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service.
+>Inoltre, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui l’estrazione iniziale viene portata al momento dell’esecuzione dell’estrazione integrativa. Non è possibile eseguire i top-up su contenuto la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questa limitazione durante il processo di migrazione.
 
 Una volta completato il processo di estrazione, puoi trasferire il contenuto delta utilizzando il metodo di estrazione integrativa. Effettua le seguenti operazioni:
 
