@@ -4,8 +4,7 @@ description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come
 feature: Gestione risorse,Caricare
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-translation-type: tm+mt
-source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -129,7 +128,7 @@ Il gestore di risorse in blocco può gestire in modo efficiente un numero molto 
 
 Per caricare un numero maggiore di file, utilizza uno dei seguenti approcci. Inoltre, consulta i [casi d’uso e metodi](#upload-methods-comparison)
 
-* [API](developer-reference-material-apis.md#asset-upload-technical) di caricamento risorse: Utilizza uno script o uno strumento di caricamento personalizzato che sfrutta le API per aggiungere ulteriore gestione delle risorse (ad esempio, tradurre metadati o rinominare file), se necessario.
+* [API](developer-reference-material-apis.md#asset-upload) di caricamento risorse: Utilizza uno script o uno strumento di caricamento personalizzato che sfrutta le API per aggiungere ulteriore gestione delle risorse (ad esempio, tradurre metadati o rinominare file), se necessario.
 * [[!DNL Experience Manager] app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) desktop: Utile per i creativi professionisti e gli esperti di marketing che caricano le risorse dal loro file system locale. Utilizzalo per caricare le cartelle nidificate disponibili localmente.
 * [Strumento](#asset-bulk-ingestor) per l’acquisizione in blocco: Da utilizzare per l’acquisizione di grandi quantità di risorse occasionalmente o inizialmente durante la distribuzione  [!DNL Experience Manager].
 
@@ -210,7 +209,7 @@ Per le cartelle a cui è assegnato un profilo di elaborazione, il nome del profi
 
 ## Caricare o acquisire risorse utilizzando le API {#upload-using-apis}
 
-I dettagli tecnici delle API e del protocollo di caricamento, nonché i collegamenti all’SDK open-source e ai client di esempio sono forniti nella sezione [caricamento delle risorse](developer-reference-material-apis.md#asset-upload-technical) del riferimento per sviluppatori.
+I dettagli tecnici delle API e del protocollo di caricamento, nonché i collegamenti all’SDK open-source e ai client di esempio sono forniti nella sezione [caricamento delle risorse](developer-reference-material-apis.md#asset-upload) del riferimento per sviluppatori.
 
 ## Suggerimenti, best practice e limitazioni {#tips-limitations}
 
@@ -232,5 +231,5 @@ I dettagli tecnici delle API e del protocollo di caricamento, nonché i collegam
 >* App desktop [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Informazioni [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentazione](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Riferimento tecnico per il caricamento delle risorse](developer-reference-material-apis.md#asset-upload-technical)
+>* [Riferimento tecnico per il caricamento delle risorse](developer-reference-material-apis.md#asset-upload)
 
