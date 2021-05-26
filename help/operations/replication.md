@@ -2,17 +2,16 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-translation-type: tm+mt
-source-git-commit: eb92c66f2b9e8e6ec859114da2de049747ec251e
+source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 2%
 
 ---
 
 # Replica {#replication}
 
-Adobe Experience Manager as a Cloud Service utilizza la funzionalità [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) per spostare il contenuto in una replica in un servizio pipeline eseguito su un Adobe I/O che si trova al di fuori del runtime AEM.
+Adobe Experience Manager as a Cloud Service utilizza la funzionalità [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) per spostare il contenuto in modo da replicarlo in un servizio pipeline eseguito su un Adobe I/O che si trova al di fuori del runtime AEM.
 
 >[!NOTE]
 >
@@ -83,7 +82,7 @@ In alternativa, è possibile ottenere questo risultato anche creando un modello 
 
 * `replicateAsParticipant` (valore booleano, predefinito:  `false`). Se configurata come `true`, la replica utilizza `userid` dell&#39;entità principale che ha eseguito il passaggio del partecipante.
 * `enableVersion` (valore booleano, predefinito:  `true`). Questo parametro determina se una nuova versione viene creata al momento della replica.
-* `agentId` (valore stringa, per impostazione predefinita vengono utilizzati tutti gli agenti abilitati).
+* `agentId` (valore stringa, per impostazione predefinita vengono utilizzati tutti gli agenti abilitati). Si consiglia di essere esplicito sull&#39;agentId; ad esempio, impostandolo come valore: pubblicare
 * `filters` (valore stringa, impostazione predefinita significa che tutti i percorsi sono attivati). I valori disponibili sono:
    * `onlyActivated` - verranno attivati solo i percorsi non contrassegnati come attivati.
    * `onlyModified` - attiva solo i percorsi già attivati e la cui data di modifica è successiva alla data di attivazione.
