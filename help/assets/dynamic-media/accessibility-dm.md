@@ -6,10 +6,9 @@ topic-tags: introduction
 content-type: reference
 feature: Accessibilità
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -21,7 +20,7 @@ Dynamic Media supporta tecnologie per il controllo da tastiera e l’accessibili
 
 ## Supporto per l’accessibilità da tastiera in Dynamic Media {#keyboard-support-in-dm}
 
-Poiché Dynamic Media è un plug-in per Risorse di Experience Manager, la maggior parte del comportamento di controllo da tastiera è lo stesso di in Risorse di Experience Manager. Ad esempio, il pulsante `Cancel` in Dynamic Media ha la stessa evidenziazione dello stato attivo di Risorse di Experience Manager. Reagisce anche alla chiave `Spacebar` come in Experience Manager Assets. Consulta [scelte rapide da tastiera in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Poiché Dynamic Media è un plug-in per [!DNL Experience Manager Assets], la maggior parte del comportamento di controllo da tastiera è lo stesso di in [!DNL Experience Manager Assets]. Ad esempio, il pulsante `Cancel` in Dynamic Media presenta la stessa evidenziazione dello stato attivo di [!DNL Experience Manager Assets]. Reagisce anche alla chiave `Spacebar` come in [!DNL Experience Manager Assets]. Consulta [scelte rapide da tastiera in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Le sequenze di tasti supportate dai singoli elementi dell’interfaccia utente in Dynamic Media sono, nella maggior parte dei casi, ovvie e facili da trovare. Il controllo da tastiera in Dynamic Media riguarda i seguenti elementi:
 
