@@ -4,10 +4,10 @@ description: Un profilo immagine o un profilo video è una ricetta per le opzion
 feature: Gestione Delle Risorse, Profili Immagine, Profili Video
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 2%
+source-wordcount: '1269'
+ht-degree: 1%
 
 ---
 
@@ -42,13 +42,13 @@ Ad esempio, supponi di aver creato un profilo immagine Dynamic Media e di averlo
 
 Puoi eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale l’elaborazione non è riuscita la prima volta. Anche se non hai modificato un profilo immagine o video, o hai già applicato un profilo immagine o un profilo video, puoi comunque eseguire il flusso di lavoro di rielaborazione su una cartella di risorse in qualsiasi momento.
 
-Facoltativamente, puoi regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando esegui _Scene7: Rielabora il flusso di lavoro Assets_ in una cartella. Le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l’elaborazione. Dopo l’elaborazione, i metadati di ogni risorsa nell’intero set di batch vengono aggiornati in Adobe Experience Manager. Se la dimensione del batch è grande, è possibile che si verifichi un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi nel server Dynamic Media.
+Facoltativamente, puoi regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando esegui _Scene7: Rielabora il flusso di lavoro Assets_ in una cartella. Le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l’elaborazione. Dopo l’elaborazione, i metadati di ogni risorsa nell’intero set di batch vengono aggiornati il [!DNL Adobe Experience Manager]. Se la dimensione del batch è grande, è possibile che si verifichi un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi nel server Dynamic Media.
 
 Consulta [Regolazione della dimensione batch del flusso di lavoro di rielaborazione](#adjusting-load).
 
 >[!NOTE]
 >
->Se esegui una migrazione di massa delle risorse da Dynamic Media Classic ad Experience Manager, abilita l’agente di replica di migrazione sul server Dynamic Media. Al termine della migrazione, assicurati di disabilitare l’agente.
+>Se esegui una migrazione di massa delle risorse da Dynamic Media Classic a [!DNL Experience Manager], abilita l’agente di replica di migrazione sul server Dynamic Media. Al termine della migrazione, assicurati di disabilitare l’agente.
 >
 >L’agente di pubblicazione della migrazione deve essere disabilitato sul server Dynamic Media in modo che il flusso di lavoro Rielabora funzioni come previsto.
 
@@ -59,7 +59,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Per rielaborare le risorse Dynamic Media in una cartella:**
-1. Ad Experience Manager, dalla pagina Risorse, passa a una cartella di risorse a cui è assegnato un profilo immagine o un profilo video e a cui desideri applicare il **Scene7: Rielabora il flusso di lavoro Asset** .
+1. In [!DNL Experience Manager], dalla pagina Risorse, passa a una cartella di risorse a cui è assegnato un profilo immagine o un profilo video e per la quale desideri applicare il **Scene7: Rielabora il flusso di lavoro Asset** .
 
    Le cartelle a cui è assegnato un profilo immagine o un profilo video presentano il nome del profilo e vengono visualizzate direttamente sotto il nome della cartella nella Vista a schede.
 
@@ -82,15 +82,15 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Fai clic su **[!UICONTROL Start]**, quindi fai clic su **[!UICONTROL Conferma]**.
 
-   Per monitorare il flusso di lavoro o controllarne l’avanzamento, dalla pagina della console principale Experience Manager fai clic su **[!UICONTROL Strumenti > Flusso di lavoro]**. Nella pagina Istanze flusso di lavoro , seleziona un flusso di lavoro. Nella barra dei menu, fai clic su **[!UICONTROL Apri cronologia]**. Puoi anche interrompere, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
+   Per monitorare il flusso di lavoro o controllarne l’avanzamento, dalla pagina della console principale [!DNL Experience Manager] fai clic su **[!UICONTROL Strumenti > Flusso di lavoro]**. Nella pagina Istanze flusso di lavoro , seleziona un flusso di lavoro. Nella barra dei menu, fai clic su **[!UICONTROL Apri cronologia]**. Puoi anche interrompere, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
 
 ### Regolazione della dimensione batch del flusso di lavoro di rielaborazione {#adjusting-load}
 
-(Facoltativo) La dimensione predefinita del batch nel flusso di lavoro di rielaborazione è 50 risorse per processo. Questa dimensione batch ottimale è governata dalla dimensione media delle risorse e dai tipi MIME delle risorse su cui viene eseguita la rielaborazione. Un valore più alto indica che in un singolo processo di rielaborazione sono presenti molti file. Pertanto, il banner di elaborazione rimane sulle risorse di Experience Manager per un periodo di tempo più lungo. Tuttavia, se la dimensione media del file è piccola-1 MB o inferiore, l’Adobe consiglia di aumentare il valore a diversi 100, ma mai più di 1000. Se la dimensione media del file è di centinaia di MB, Adobe consiglia di ridurre la dimensione del batch fino a 10.
+(Facoltativo) La dimensione predefinita del batch nel flusso di lavoro di rielaborazione è 50 risorse per processo. Questa dimensione batch ottimale è governata dalla dimensione media delle risorse e dai tipi MIME delle risorse su cui viene eseguita la rielaborazione. Un valore più alto indica che in un singolo processo di rielaborazione sono presenti molti file. Pertanto, il banner di elaborazione rimane sulle risorse [!DNL Experience Manager] per un periodo di tempo più lungo. Tuttavia, se la dimensione media del file è piccola-1 MB o inferiore, l’Adobe consiglia di aumentare il valore a diversi 100, ma mai più di 1000. Se la dimensione media del file è di centinaia di MB, Adobe consiglia di ridurre la dimensione del batch fino a 10.
 
 **Per regolare facoltativamente la dimensione batch del flusso di lavoro di rielaborazione:**
 
-1. In Experience Manager, tocca **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, quindi tocca l’icona **[!UICONTROL Strumenti]** (martello) > **[!UICONTROL Flusso di lavoro > Modelli]**.
+1. In [!DNL Experience Manager], tocca **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, quindi tocca l’icona **[!UICONTROL Strumenti]** (martello) > **[!UICONTROL Flusso di lavoro > Modelli]**.
 1. Nella pagina Modelli flusso di lavoro, in Vista a schede o Vista a elenco, seleziona **[!UICONTROL Scene7: Rielabora le risorse]**.
 
    ![Pagina Modelli di flusso di lavoro con Scene7: Rielaborazione del flusso di lavoro delle risorse selezionato nella vista a schede](/help/assets/dynamic-media/assets/reprocess-assets7.png)
