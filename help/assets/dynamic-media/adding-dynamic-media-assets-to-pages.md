@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Gestione risorse
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3226'
 ht-degree: 20%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 20%
 
 Per aggiungere la funzionalità Dynamic Media alle risorse utilizzate sui siti web, puoi inserire direttamente nella pagina il componente **Dynamic Media**, **File multimediali interattivi**, **Elemento multimediale panoramico** o **File multimediali video 360**. Accedi alla modalità Layout e abilita i componenti Dynamic Media. Quindi aggiungi questi componenti alla pagina e aggiungi le risorse al componente. I componenti Dynamic Media sono intelligenti: rilevano l’aggiunta di un’immagine o di un video, dunque le opzioni di configurazione disponibili cambiano di conseguenza.
 
-Puoi aggiungere risorse Dynamic Media direttamente alla pagina se utilizzi Experience Manager come WCM. Se utilizzi una terza parte per WCM, puoi [collegare](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incorporare](/help/assets/dynamic-media/embed-code.md) le risorse. Per un sito web dinamico di terze parti, consulta [Distribuzione di immagini ottimizzate in un sito dinamico](/help/assets/dynamic-media/responsive-site.md).
+Puoi aggiungere risorse Dynamic Media direttamente alla pagina se utilizzi [!DNL Adobe Experience Manager] come WCM. Se utilizzi una terza parte per WCM, puoi [collegare](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incorporare](/help/assets/dynamic-media/embed-code.md) le risorse. Per un sito web dinamico di terze parti, consulta [Distribuzione di immagini ottimizzate in un sito dinamico](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->Accertati di pubblicare le risorse prima di aggiungerle alle pagine di Experience Manager. Consulta [Pubblicazione di risorse Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Assicurati di pubblicare le risorse prima di aggiungerle alle pagine in [!DNL Experience Manager]. Consulta [Pubblicazione di risorse Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Aggiunta di un componente Dynamic Media a una pagina {#adding-a-dynamic-media-component-to-a-page}
 
@@ -28,7 +28,7 @@ L’aggiunta a una pagina di un componente Media 3D, Dynamic Media, File multime
 
 **Per aggiungere un componente Dynamic Media a una pagina:**
 
-1. Ad Experience Manager, apri la pagina in cui desideri aggiungere il componente Dynamic Media.
+1. In [!DNL Experience Manager], apri la pagina in cui desideri aggiungere il componente Dynamic Media.
 1. Nel riquadro a sinistra, tocca l&#39;icona **[!UICONTROL Componenti]** , quindi filtra per Dynamic Media.
 
    Se non è disponibile alcun elenco di componenti Dynamic Media, è probabile che sia necessario abilitare i componenti Dynamic Media che si desidera utilizzare. Consulta [Abilitazione dei componenti Dynamic Media](#enabling-dynamic-media-components).
@@ -55,7 +55,7 @@ L’aggiunta a una pagina di un componente Media 3D, Dynamic Media, File multime
 
 Se non è disponibile alcun componente Dynamic Media da aggiungere a una pagina, è probabile che sia necessario abilitare i componenti che si desidera utilizzare.
 
-1. Ad Experience Manager, apri la pagina in cui desideri aggiungere il componente Dynamic Media.
+1. In [!DNL Experience Manager], apri la pagina in cui desideri aggiungere il componente Dynamic Media.
 1. A sinistra della barra degli strumenti vicino alla parte superiore della pagina, tocca l’icona Informazioni pagina , quindi tocca **[!UICONTROL Modifica modello]** dall’elenco a discesa.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -106,7 +106,7 @@ I componenti Dynamic Media disponibili includono:
 
 >[!NOTE]
 >
->Questi componenti non sono disponibili per impostazione predefinita e devono essere resi disponibili dall’editor modelli prima di utilizzare . Una volta resi disponibili nell’editor modelli, puoi aggiungere i componenti alla pagina come faresti con qualsiasi altro componente di Experience Manager.
+>Questi componenti non sono disponibili per impostazione predefinita e devono essere resi disponibili dall’editor modelli prima di utilizzare . Una volta resi disponibili nell’editor modelli, puoi aggiungere i componenti alla pagina come faresti con qualsiasi altro componente [!DNL Experience Manager].
 
 ![6_5_dynamic_mediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -169,7 +169,7 @@ Per modificare le seguenti impostazioni di Dynamic Media, tocca l’icona **[!UI
 
    Vedere anche [Informazioni sull&#39;ottimizzazione del rapporto pixel del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Eventuali valori DPR di Adobe Experience Manager Dynamic Media Smart imaging vengono ignorati.
+   Eventuali valori DPR [!DNL Experience Manager] di Dynamic Media Smart imaging vengono ignorati.
 
    L&#39;opzione **[!UICONTROL Ottimizza per dispositivi a risoluzione più elevata]** viene visualizzata solo quando è vero quanto segue:
    * In Tipo predefinito, è selezionato **[!UICONTROL Predefinito immagine]** e **[!UICONTROL RESS_IP]** viene selezionato dall&#39;elenco a discesa **[!UICONTROL Predefinito immagine]**.
@@ -247,7 +247,7 @@ Per modificare la seguente impostazione Dynamic Media, fai clic su **[!UICONTROL
 
    Vedere anche [Informazioni sull&#39;ottimizzazione del rapporto pixel del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Eventuali valori DPR di Adobe Experience Manager Dynamic Media Smart imaging vengono ignorati.
+   Eventuali valori DPR [!DNL Experience Manager] di Dynamic Media Smart imaging vengono ignorati.
 
    L&#39;opzione **[!UICONTROL Ottimizza per dispositivi a risoluzione più elevata]** viene visualizzata solo quando è vero quanto segue:
 
