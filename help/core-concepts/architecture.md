@@ -1,16 +1,22 @@
 ---
 title: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service
-description: 'Introduzione all’architettura di Adobe Experience Manager as a Cloud Service. '
-translation-type: tm+mt
-source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+description: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service.
+exl-id: fb169e85-ac19-4962-93d9-abaed812f948
+source-git-commit: 74b2720eae1fbc986cd1a252180a4b7f4187ed16
 workflow-type: tm+mt
-source-wordcount: '1671'
-ht-degree: 98%
+source-wordcount: '1728'
+ht-degree: 95%
 
 ---
 
-
 # Introduzione all’architettura di Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
+
+>[!CONTEXTUALHELP]
+>id="intro_aem_cloudservice_architecture"
+>title="Introduzione a AEM as a Cloud Service Architecture"
+>abstract="In questa scheda, puoi visualizzare la nuova architettura di AEM come Cloud Service e comprendere le modifiche. AEM è stata creata un’architettura dinamica con un numero variabile di immagini, pertanto è importante prendere il tempo necessario per comprendere l’architettura cloud"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Panoramica dell’architettura"
+
 
 Adobe Experience Manager (AEM) as a Cloud Service ha apportato delle modifiche all’architettura.
 
@@ -71,7 +77,7 @@ Sono disponibili tre tipi di ambienti con AEM come Cloud Service:
 
 * **Ambiente di sviluppo**: consente agli sviluppatori di implementare le applicazioni AEM nelle medesime condizioni di esecuzione degli ambienti di stage e produzione.
 
-   Per ulteriori informazioni, fare riferimento a [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager).
+   Per ulteriori informazioni, consulta [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) .
 
 ## Programmi {#programs}
 
@@ -82,7 +88,7 @@ Un programma AEM è il contenitore che include:
 |  Elemento del programma |  Numero |
 |--- |--- |
 | Archivio del codice (Git) |  1 |
-| Immagine linea di base (Sites o Assets) |  3 |
+| Immagine linea di base (Sites o Assets) |  1 |
 | Set di ambienti di stage e produzione (1:1) | 0 o 1 |
 | Ambienti non di produzione (sviluppo o dimostrazione) | Da 0 a N |
 | Pipeline per ogni ambiente | 0 o 1 |
