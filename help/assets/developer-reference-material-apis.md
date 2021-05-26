@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,API HTTP di Assets
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1407'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,7 @@ In [!DNL Experience Manager] come [!DNL Cloud Service], puoi caricare direttamen
 ![Panoramica del protocollo di caricamento binario diretto](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-Esegui questi passaggi in un&#39;applicazione esterna e non all&#39;interno della [!DNL Experience Manager] JVM.
+Esegui i passaggi precedenti in un&#39;applicazione esterna e non all&#39;interno della JVM [!DNL Experience Manager].
 
 L’approccio fornisce una gestione scalabile e più performante del caricamento delle risorse. Le differenze rispetto a [!DNL Experience Manager] 6.5 sono le seguenti:
 
