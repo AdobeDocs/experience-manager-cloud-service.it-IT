@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,API HTTP di Assets
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
+source-git-commit: 5243b02a8168da82674989b9f5abb65af6613096
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1420'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ L’articolo contiene raccomandazioni, materiali di riferimento e risorse per gl
 
 ## Caricamento risorsa {#asset-upload}
 
-In [!DNL Experience Manager] come [!DNL Cloud Service], puoi caricare direttamente le risorse nell’archiviazione cloud utilizzando l’API HTTP. I passaggi per caricare un file binario sono i seguenti:
+In [!DNL Experience Manager] come [!DNL Cloud Service], puoi caricare direttamente le risorse nell’archiviazione cloud utilizzando l’API HTTP. I passaggi per caricare un file binario sono i seguenti. Esegui questi passaggi in un&#39;applicazione esterna e non all&#39;interno della [!DNL Experience Manager] JVM.
 
 1. [Invia una richiesta](#initiate-upload) HTTP. Indica a [!DNL Experience Manage]r la distribuzione dell&#39;intento di caricare un nuovo binario.
 1. [POST il contenuto del ](#upload-binary) binario a uno o più URI forniti dalla richiesta di avvio.
