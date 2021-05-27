@@ -1,23 +1,22 @@
 ---
-title: Condividere risorse, cartelle e raccolte come collegamento
-description: Questo articolo descrive come condividere risorse, cartelle e raccolte all'interno di [!DNL Experience Manager Assets] come collegamento ipertestuale.
+title: Distribuire e condividere risorse, cartelle e raccolte
+description: Distribuisci le risorse digitali utilizzando metodi come condivisione come collegamento, download e tramite [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
-feature: Asset Management,Collaboration,Asset Distribution
+feature: Gestione risorse, collaborazione, distribuzione delle risorse
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
+source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
-
 
 # Condividere e distribuire le risorse gestite in [!DNL Experience Manager] {#share-assets-from-aem}
 
 [!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte con i membri dell’organizzazione ed entità esterne, inclusi partner e fornitori. Utilizza i seguenti metodi per condividere risorse da [!DNL Experience Manager Assets] come [!DNL Cloud Service]:
 
-* Condividi come collegamento.
+* [Condividi come collegamento](#sharelink).
 * [Scaricare ](/help/assets/download-assets-from-aem.md) le risorse e condividerle separatamente.
 * Condividi utilizzando [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 * Condividi utilizzando [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
@@ -27,10 +26,12 @@ ht-degree: 2%
 
 Per generare l’URL per le risorse che desideri condividere con gli utenti, utilizza la finestra di dialogo Condivisione collegamenti . Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro. La condivisione di risorse tramite un collegamento è un modo conveniente per rendere le risorse disponibili a soggetti esterni senza che debbano prima accedere a [!DNL Assets].
 
+![Finestra di dialogo Condivisione collegamenti](assets/link-share-dialog.png)
+
 >[!NOTE]
 >
 >* È necessario modificare l&#39;autorizzazione ACL sulla cartella o sulla risorsa che si desidera condividere come collegamento.
->* Prima di condividere un collegamento con gli utenti, accertati che [e-mail in uscita sia abilitata](/help/implementing/developing/introduction/development-guidelines.md#sending-email). In caso contrario, si verifica un errore.
+>* Prima di condividere un collegamento con gli utenti, [abilita e-mail in uscita](/help/implementing/developing/introduction/development-guidelines.md#sending-email). In caso contrario, si verifica un errore.
 
 
 1. Nell’interfaccia utente di [!DNL Assets] , seleziona la risorsa da condividere come collegamento.
