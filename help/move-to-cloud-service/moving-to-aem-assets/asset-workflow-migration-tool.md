@@ -1,14 +1,13 @@
 ---
 title: Strumento Asset Workflow Migration (Migrazione flussi di lavoro per risorse)
-description: 'Strumento Asset Workflow Migration (Migrazione flussi di lavoro per risorse) '
-translation-type: tm+mt
-source-git-commit: 3a438de3c460d4dc5a8b8617f0ec0eefc56f1665
+description: Strumento Asset Workflow Migration (Migrazione flussi di lavoro per risorse)
+exl-id: 18490295-ead6-4691-8983-a6d4054e4264
+source-git-commit: a0fb2714bc74c620d90153746930757301e62fd7
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 74%
 
 ---
-
 
 # Strumento Asset Workflow Migration (Migrazione flussi di lavoro per risorse) {#asset-workflow-migration}
 
@@ -33,6 +32,8 @@ I vari flussi di lavoro supportano la migrazione in modo diverso. Consulta quest
 * `NUI_MIGRATED`: migrazione a un [profilo di elaborazione per Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
 * `UNSUPPORTED`: attualmente non supportato in [!DNL Experience Manager Assets] as a Cloud Service.
 
-## Installazione dello strumento Asset Workflow Migration (Migrazione flussi di lavoro per risorse) {#installing-tool}
+## Utilizza lo strumento Asset Workflow Migration (Migrazione flussi di lavoro per risorse) {#use-workflow-migrator}
 
-Consulta **[Git Resource: AEM Assets as a Cloud Service - Workflow Migration](https://github.com/adobe/aem-cloud-migration)** per informazioni sull’installazione e la compilazione del codice dalla sorgente.
+* **[!DNL Adobe I/O]CLI**: Adobe consiglia di utilizzare lo strumento Asset Workflow Migration (Migrazione flussi di lavoro per risorse) tramite  `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] come plug-in per il refactoring del  [!DNL Cloud Service] codice per  [!DNL Adobe I/O] CLI). Per informazioni su come installare e utilizzare il plug-in, consulta [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
+
+* **Utility** autonoma: Lo strumento Asset Workflow Migration (Migrazione flussi di lavoro per risorse) può essere eseguito anche come utility autonoma. Per informazioni sull’installazione e la creazione del codice dalla sorgente, consulta **[Risorsa Git: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - migrazione flusso di lavoro](https://github.com/adobe/aem-cloud-migration)**.
