@@ -2,9 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -61,9 +61,9 @@ La versione seguente (2021.6.0) sarà del 24 giugno 2021.
 * Il caricamento di file di grandi dimensioni causa l&#39;arresto anomalo del sistema [!DNL Experience Manager desktop app]. (CQ-4320942)
 * Le opzioni della barra degli strumenti sono diverse quando la stessa raccolta è selezionata all’interno di una cartella e quando è selezionata da un risultato di ricerca. (CQ-4321406)
 
-#### Novità in Dynamic Media {#what-is-new-dm}
+#### Novità in [!DNL Dynamic Media] {#what-is-new-dm}
 
-* L&#39;ottimizzazione DPR (Device Pixel Ratio) e della larghezza di banda della rete consente di fornire immagini di qualità superiore in modo efficiente su dispositivi con display ad alta risoluzione e larghezza di banda limitata della rete. Per ulteriori informazioni, consulta [Domande frequenti sull’imaging avanzato](/help/assets/dynamic-media/imaging-faq.md).
+* Le funzioni DPR (Smart Imaging Device Pixel Ratio) e di ottimizzazione della larghezza di banda della rete consentono di fornire immagini di alta qualità in modo efficiente su dispositivi con display ad alta risoluzione e larghezza di banda limitata della rete. Consulta [domande frequenti sull&#39;imaging intelligente](/help/assets/dynamic-media/imaging-faq.md).
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ La versione seguente (2021.6.0) sarà del 24 giugno 2021.
    * Asia-Pacifico, 19 luglio 2021.
 
 
-* È stato introdotto il supporto per il formato immagine AVIF di nuova generazione nella distribuzione Dynamic Media (modificatore URL fmt).
+* È stato introdotto il supporto per AVIF in formato immagine di nuova generazione in [!DNL Dynamic Media] consegna (modificatore URL fmt).
 
    >[!NOTE]
    >
