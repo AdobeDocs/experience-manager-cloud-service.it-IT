@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Gestione risorse
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
+source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '1016'
 ht-degree: 4%
 
 ---
 
 # Scaricare risorse da [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-Puoi scaricare le risorse, compresi i rendering statici e dinamici. In alternativa, puoi inviare e-mail con collegamenti alle risorse direttamente da [!DNL Adobe Experience Manager Assets]. Le risorse scaricate sono raggruppate in un file ZIP. Il file ZIP compresso ha una dimensione massima del file di 1 GB per il processo di esportazione. È consentito un massimo di 500 risorse totali per processo di esportazione.
+Puoi scaricare le risorse, compresi i rendering statici e dinamici. In alternativa, puoi inviare e-mail con collegamenti alle risorse direttamente da [!DNL Adobe Experience Manager Assets]. Le risorse scaricate sono raggruppate in un file ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -25,6 +25,7 @@ Non è possibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set di
 Per scaricare le risorse di Experience Manager, utilizza i seguenti metodi:
 
 * [Interfaccia utente di Experience Manager](#download-assets)
+* [Condivisione collegamenti](#link-share-download)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [App desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -63,6 +64,16 @@ Per scaricare le risorse, effettua le seguenti operazioni:
    | **[!UICONTROL Rappresentazioni dinamiche]** | Seleziona questa opzione per generare una serie di rappresentazioni alternative in tempo reale. Quando selezioni questa opzione, selezioni anche i rendering che desideri creare in modo dinamico selezionando dall&#39;elenco [Predefinito immagine](/help/assets/dynamic-media/image-presets.md). <br>È inoltre possibile selezionare le dimensioni e l&#39;unità di misura, il formato, lo spazio colore, la risoluzione e qualsiasi modificatore di immagine opzionale, ad esempio l&#39;inversione dell&#39;immagine. L’opzione è disponibile solo se è stato abilitato [!DNL Dynamic Media] . |
 
 1. Nella finestra di dialogo, fai clic su **[!UICONTROL Scarica]**.
+
+## Scaricare le risorse condivise utilizzando la condivisione dei collegamenti {#link-share-download}
+
+La condivisione di risorse tramite un collegamento è un modo conveniente per renderle disponibili alle persone interessate senza che queste debbano prima accedere a [!DNL Assets]. Per generare un URL per la condivisione delle risorse, utilizza la funzionalità [Condivisione collegamenti](/help/assets/share-assets.md#sharelink).
+
+Quando gli utenti scaricano le risorse dai collegamenti condivisi, [!DNL Assets] utilizza un servizio asincrono che offre download più rapidi e ininterrotti. Le risorse da scaricare vengono messe in coda in background in una casella in entrata in archivi ZIP di dimensioni file gestibili. Per i download di grandi dimensioni, il download viene suddiviso in file di dimensioni pari a 100 GB.
+
+Nella casella in entrata viene visualizzato lo stato di elaborazione di ciascun archivio. Una volta completata l’elaborazione, puoi scaricare gli archivi dalla casella in entrata.
+
+![Scarica casella in entrata](assets/download-inbox.png)
 
 ## Abilita il servlet di download delle risorse {#enable-asset-download-servlet}
 
