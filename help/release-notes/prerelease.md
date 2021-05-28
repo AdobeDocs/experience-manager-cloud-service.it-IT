@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Experience Manager] come canale pre-rilascio Cloud Service'
 description: '[!DNL Adobe Experience Manager] come canale pre-rilascio Cloud Service'
-source-git-commit: 7519c937fdc36711a5f558d787257cee713baf7e
+source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 [!DNL Adobe Experience Manager] come Cloud Service offre nuove funzioni su cadenza mensile, in base alla pianificazione della roadmap dei rilasci di  [Experienci Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). Per acquisire familiarità con le funzioni programmate per andare in diretta il mese successivo, i clienti possono iscriversi al canale pre-rilascio, che è accessibile configurando in modo appropriato negli ambienti di sviluppo dei programmi standard o in qualsiasi ambiente di programma sandbox. I clienti possono visualizzare in anteprima le modifiche apportate alla console Sites e generare il codice rispetto a qualsiasi nuova API prerelease.
 
 L&#39;elenco delle funzioni prerelease per un dato mese è pubblicato nelle [note sulla versione mensili](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+>[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## Come abilitare la versione pre-rilascio {#enable-prerelease}
 
@@ -110,8 +112,7 @@ Per generare in base all’SDK della versione prerelease:
 1. Se si è certi che funziona come previsto localmente, effettua il commit del codice in un ramo di sviluppo e utilizza una pipeline non di produzione di Cloud Manager per l’implementazione in un ambiente che si abbona al canale prerelease
 
 >[!CAUTION]
-> 
-> L’ `aem-prerelease-sdk-api` artifactId non deve mai essere utilizzato durante la distribuzione in Stage o Production. Utilizza sempre l’api aem-sdk-api quando distribuisci tramite la pipeline di produzione. Allo stesso modo, il codice che fa riferimento alle API prerelease non deve essere distribuito tramite la pipeline di produzione .
+L’ `aem-prerelease-sdk-api` artifactId non deve mai essere utilizzato durante la distribuzione in Stage o Production. Utilizza sempre l’api aem-sdk-api quando distribuisci tramite la pipeline di produzione. Allo stesso modo, il codice che fa riferimento alle API prerelease non deve essere distribuito tramite la pipeline di produzione .
 
 Il plug-in maven di [AEM CS SDK build Analyzer v1.0 e versioni successive](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) rileverà se l&#39;api prerelease è utilizzata in un progetto ispezionando le dipendenze. Se l’analizzatore lo trova, utilizza l’api sdk prerelease per analizzare il progetto.
 
