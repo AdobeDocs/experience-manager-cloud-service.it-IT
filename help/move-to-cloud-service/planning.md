@@ -1,14 +1,13 @@
 ---
 title: Fase di pianificazione
 description: Fase di pianificazione
-translation-type: tm+mt
-source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
+exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 91%
+source-wordcount: '470'
+ht-degree: 88%
 
 ---
-
 
 # Pianificazione {#planning-phase}
 
@@ -16,7 +15,7 @@ ht-degree: 91%
 >id="aemcloud_cam_planning"
 >title="Pianificazione della transizione"
 >abstract="Prima di iniziare il percorso di transizione verso Cloud Service, devi acquisire familiarità con AEM as a Cloud Service, esaminare le modifiche rilevanti apportate al servizio e rivedere inoltre le funzioni che sono state sostituite o dichiarate obsolete."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best practice Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Analisi delle best practice"
 
 Prima di iniziare il percorso di transizione verso Cloud Service, devi acquisire familiarità con AEM as a Cloud Service, esaminare le modifiche rilevanti apportate al servizio e rivedere inoltre le funzioni che sono state sostituite o dichiarate obsolete.
 
@@ -26,13 +25,13 @@ AEM as a Cloud Service include molte nuove funzioni e opportunità per gestire i
 
 Tuttavia, esistono alcune differenze tra AEM On-Premise o in Adobe Managed Services e AEM as a Cloud Service.
 
-Per informazioni sulle differenze più importanti, consulta [Modifiche di rilievo apportate ad AEM Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/aem-cloud-changes.html).
+Per informazioni sulle differenze più importanti, consulta [Modifiche di rilievo apportate ad AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html).
 
 ## Funzioni obsolete {#deprecated-features}
 
 Adobe valuta costantemente le funzionalità dei prodotti per reinventare o sostituire nel tempo le funzioni meno recenti con alternative più moderne al fine di migliorare il valore complessivo per il cliente, tenendo comunque in considerazione la compatibilità con le versioni precedenti.
 
-Per ulteriori informazioni sulle funzioni e funzionalità dichiarate obsolete in Experience Manager as a Cloud Service, consulta [Funzioni obsolete](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
+Per ulteriori informazioni sulle funzioni e funzionalità dichiarate obsolete in Experience Manager as a Cloud Service, consulta [Funzioni obsolete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
 
 ## Informazioni sulla fase di pianificazione {#introduction}
 
@@ -46,7 +45,7 @@ Il primo passaggio nella fase di pianificazione consiste nel valutare il grado d
 
 Dovrai effettuare una valutazione completa del codice sorgente AEM corrente rispetto alle modifiche di rilievo e alle funzioni obsolete, al fine di determinare quanto lavoro richiede il percorso di transizione.
 
-Per accelerare il passo di valutazione, eseguite Best Practices Analyzer sulla versione corrente AEM. Per ulteriori dettagli, fare riferimento a [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+Puoi accelerare il passaggio di valutazione eseguendo Best Practices Analyzer (Analisi di best practice) sulla versione corrente AEM. Per ulteriori informazioni, consulta [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Se disponi già dell’accesso a Cloud Manager e a un ambiente Cloud Service, è consigliabile eseguire il codice corrente in una pipeline di qualità del codice di Cloud Manager per valutare la compatibilità delle modifiche del codice necessarie con Cloud Service.
@@ -60,4 +59,3 @@ Dopo aver stimato il lavoro necessario per passare a Cloud Service, devi individ
 Se in precedenza non sono stati definiti indicatori di prestazioni chiave (KPI, Key Performance Indicators), si consiglia di stabilirli per l’implementazione di Adobe Experience Manager (AEM), in modo da aiutare il team a concentrarsi su ciò che conta di più.
 
 Per scoprire come scegliere i giusti KPI per gli obiettivi aziendali, consulta l’articolo sullo [sviluppo dei KPI](https://guided.adobe.com/welcome/aem/part6.html).
-
