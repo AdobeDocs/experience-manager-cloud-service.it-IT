@@ -1,14 +1,13 @@
 ---
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
-translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1907'
 ht-degree: 60%
 
 ---
-
 
 # Modifica delle proprietà di una pagina {#editing-page-properties}
 
@@ -36,7 +35,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Marchio**
 
-   Applica un’identità di marchio coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l&#39;utilizzo del componente Pagina dalla versione 2.14.0 o successiva dei [Componenti core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+   Applica un’identità di marchio coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l&#39;utilizzo del componente Pagina dalla versione 2.14.0 o successiva dei [Componenti core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 
    * **Override** : seleziona per definire il brand lumg in questa pagina.
       * Il valore viene ereditato da qualsiasi pagina figlia a meno che non siano impostati anche i valori **Override**.
@@ -136,7 +135,7 @@ Le proprietà sono distribuite su più schede.
 
    * **Configurazione esportazione**  - Specifica una configurazione di esportazione
 
-### Miniatura   {#thumbnail}
+### Miniatura  {#thumbnail}
 
 Configurare la miniatura della pagina
 
@@ -149,7 +148,7 @@ Configurare la miniatura della pagina
 
 * **Condivisione social media**
 
-   Definisce le opzioni di condivisione disponibili sulla pagina. Rende disponibili le opzioni per la [Condivisione dei componenti di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
+   Definisce le opzioni di condivisione disponibili sulla pagina. Rende disponibili le opzioni per la [Condivisione dei componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
 
    * **Abilita condivisione da parte degli utenti su Facebook**
    * **Abilita condivisione da parte degli utenti su Pinterest**
@@ -176,7 +175,7 @@ Configurare la miniatura della pagina
    >[!NOTE]
    >Questa opzione richiede che l’account utente appartenga al gruppo `Target Administrators`.
 
-### Autorizzazioni   {#permissions}
+### Autorizzazioni  {#permissions}
 
 * **Autorizzazioni**
 
@@ -198,7 +197,7 @@ Questa scheda è visibile solo per le pagine che fungono da blueprint. Le bluepr
 
 * **Configurazioni di rollout** : controlla le circostanze in cui le modifiche verranno propagate alla Live Copy
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Sincronizza**  - Sincronizza Live Copy con Blueprint, mantenendo le modifiche locali
 * **Ripristina** : reimposta Live Copy sullo stato della Blueprint, rimuovendo le modifiche locali
