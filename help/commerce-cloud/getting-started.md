@@ -8,17 +8,16 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-translation-type: tm+mt
-source-git-commit: 08e258d4e9cd67de3da2aa57c058036bd104472d
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 31%
+source-wordcount: '1065'
+ht-degree: 30%
 
 ---
 
 # Guida introduttiva ad AEM Commerce as a Cloud Service {#start}
 
-Per iniziare a utilizzare AEM Commerce as a Cloud Service, è necessario eseguire il provisioning di Experience Manager Cloud Service con il componente aggiuntivo Commerce Integration Framework (CIF). Il componente aggiuntivo CIF è un modulo aggiuntivo per [AEM Sites as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/home.html).
+Per iniziare a utilizzare AEM Commerce as a Cloud Service, è necessario eseguire il provisioning di Experience Manager Cloud Service con il componente aggiuntivo Commerce Integration Framework (CIF). Il componente aggiuntivo CIF è un modulo aggiuntivo per [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html).
 
 ## Onboarding {#onboarding}
 
@@ -29,7 +28,7 @@ L’onboarding per AEM Commerce as a Cloud Service è un processo in due fasi:
 
 La prima fase di onboarding viene eseguita per Adobe. Per maggiori informazioni su prezzi e provisioning, contatta il tuo rappresentante commerciale.
 
-Una volta effettuato il provisioning con il componente aggiuntivo CIF, questo verrà applicato a tutti i programmi Cloud Manager esistenti. Se non disponi di un programma Cloud Manager, dovrai crearne uno nuovo. Per ulteriori informazioni, consulta [Configurare il programma](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
+Una volta effettuato il provisioning con il componente aggiuntivo CIF, questo verrà applicato a tutti i programmi Cloud Manager esistenti. Se non disponi di un programma Cloud Manager, dovrai crearne uno nuovo. Per ulteriori informazioni, consulta [Configurare il programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
 Il secondo passaggio è autonomo per ogni ambiente AEM as a Cloud Service. Dopo il provisioning iniziale del componente aggiuntivo CIF, è necessario effettuare alcune configurazioni aggiuntive.
 
@@ -70,7 +69,7 @@ Per collegare AEM con una soluzione commerce tramite Adobe I/O CLI, segui questi
 
 1. Ottieni Adobe I/O CLI con il plugin Cloud Manager.
 
-   Consulta la [documentazione di Adobe Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) su come scaricare, configurare e utilizzare [Adobe I/O CLI](https://github.com/adobe/aio-cli) con il [plugin CLI di Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Consulta la [documentazione di Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it) su come scaricare, configurare e utilizzare [Adobe I/O CLI](https://github.com/adobe/aio-cli) con il [plugin CLI di Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. Autentica l’Adobe I/O CLI con il programma AEM as a Cloud Service
 
