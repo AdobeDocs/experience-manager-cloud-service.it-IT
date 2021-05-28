@@ -1,14 +1,13 @@
 ---
 title: Guida di riferimento dei componenti
 description: Guida di riferimento per sviluppatori per i dettagli dei componenti e della relativa struttura
-translation-type: tm+mt
-source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
+exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3675'
+source-wordcount: '3657'
 ht-degree: 1%
 
 ---
-
 
 # Guida di riferimento dei componenti {#components-reference-guide}
 
@@ -68,7 +67,7 @@ Questa logica (facoltativa) può essere implementata in modi diversi e viene ric
 * Utilizzando JavaScript - [L&#39;API Use-API JavaScript HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) abilita un file HTL per accedere al codice helper scritto in JavaScript. Questo consente di utilizzare il codice JavaScript per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
 * Utilizzo di librerie lato client : i siti web moderni si basano in larga misura sull’elaborazione lato client basata su codice JavaScript e CSS complessi. Per ulteriori informazioni, consulta il documento [Utilizzo delle librerie lato client su AEM come Cloud Service](/help/implementing/developing/introduction/clientlibs.md) .
 
-## Struttura del componente {#structure}
+## Struttura componente {#structure}
 
 La struttura di un componente AEM è potente e flessibile. Le parti principali sono:
 
@@ -241,9 +240,13 @@ Per ulteriori dettagli, consulta le risorse seguenti:
 
 ### Personalizzazione dei campi della finestra di dialogo {#customizing-dialog-fields}
 
+<!--
+Content not found
+
 >[!TIP]
 >
->Consulta la [sessione Gems AEM](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) sulla personalizzazione dei campi di dialogo.
+>See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
+-->
 
 Per creare un nuovo widget da utilizzare in una finestra di dialogo dei componenti è necessario creare un nuovo componente campo dell’interfaccia Granite.
 
@@ -447,7 +450,7 @@ Questo evento viene attivato ogni volta che la finestra di dialogo viene caricat
 
 ## Comportamento anteprima {#preview-behavior}
 
-Il cookie [WCM Mode](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) viene impostato quando si passa alla modalità Anteprima anche quando la pagina non viene aggiornata.
+Il cookie [WCM Mode](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) viene impostato quando si passa alla modalità Anteprima anche quando la pagina non viene aggiornata.
 
 Per i componenti con un rendering sensibile alla modalità WCM, è necessario definirli per aggiornarsi in modo specifico, quindi basarsi sul valore del cookie.
 
