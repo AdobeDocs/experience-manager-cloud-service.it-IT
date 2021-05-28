@@ -1,14 +1,13 @@
 ---
 title: Convenzioni di denominazione
 description: I nodi nell’archivio sono soggetti a denominazioni convenzionali del Java Content Repository
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '219'
+ht-degree: 9%
 
 ---
-
 
 # Convenzioni di denominazione{#naming-conventions}
 
@@ -24,7 +23,7 @@ Queste convenzioni di denominazione sono implementate a vari livelli:
 
 ### Utilità JCR {#jcr-utilities}
 
-[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis l&#39;implementazione AEM delle utility JCR. Di particolare interesse per la convalida dei nomi sono le mappature dei caratteri che controlla e le seguenti convalide:
+[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis l&#39;implementazione AEM delle utility JCR. Di particolare interesse per la convalida dei nomi sono le mappature dei caratteri che controlla e le seguenti convalide:
 
 * `isValidName`
    * Controlla se il nome non è vuoto e contiene solo caratteri validi.
@@ -35,7 +34,7 @@ Queste convenzioni di denominazione sono implementate a vari livelli:
 
 ### Gestore pagina {#page-manager}
 
-[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) PageManager fornisce metodi per le operazioni a livello di pagina, in base a  [JCRUtil](#jcr-utilities).
+[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) PageManager fornisce metodi per le operazioni a livello di pagina, in base a  [JCRUtil](#jcr-utilities).
 
 ### Comportamento dell&#39;interfaccia AEM {#ui-behavior}
 
