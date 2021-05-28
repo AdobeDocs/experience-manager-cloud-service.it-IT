@@ -1,18 +1,17 @@
 ---
 title: Memorizzazione in cache e prestazioni
 description: Scopri le diverse configurazioni disponibili per abilitare GraphQL e la memorizzazione in cache dei contenuti per ottimizzare le prestazioni dell’implementazione commerce.
-exl-id: 8b969821-5073-4540-a997-95c74a11e4f0
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 96%
+source-wordcount: '842'
+ht-degree: 95%
 
 ---
 
 # Memorizzazione in cache e prestazioni {#caching}
 
-## Memorizzazione in cache dei componenti e risposta GraphQL {#graphql}
+## Memorizzazione in cache di componenti e risposte GraphQL {#graphql}
 
 I componenti core CIF di AEM dispongono già del supporto integrato necessario per memorizzare nella cache le risposte GraphQL per i singoli componenti. Questa funzione può essere utilizzata per ridurre notevolmente il numero di chiamate back-end di GraphQL. È possibile ottenere una memorizzazione efficace nella cache, in particolare per query ripetute come il recupero della struttura delle categorie per un componente di navigazione o il recupero di tutti i valori aggregati/facet disponibili visualizzati sulle pagine di ricerca di prodotto e categoria.
 
@@ -48,11 +47,11 @@ La memorizzazione nella cache per altri componenti deve essere definita in base 
 
 ## Memorizzazione in cache del dispatcher {#dispatcher}
 
-La memorizzazione nella cache di pagine o frammenti AEM in [AEM Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html) è una best practice per qualsiasi progetto AEM. In genere, si basa su tecniche di invalidazione che garantiscono che qualsiasi contenuto modificato in AEM venga aggiornato correttamente in Dispatcher. Si tratta di una funzione fondamentale della strategia di caching di AEM Dispatcher.
+La memorizzazione nella cache di pagine o frammenti AEM in [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) è una best practice per qualsiasi progetto AEM. In genere, si basa su tecniche di invalidazione che garantiscono che qualsiasi contenuto modificato in AEM venga aggiornato correttamente in Dispatcher. Si tratta di una funzione fondamentale della strategia di caching di AEM Dispatcher.
 
 Oltre al contenuto CIF puro gestito da AEM, una pagina può in genere visualizzare i dati di e-commerce recuperati dinamicamente da Magento tramite GraphQL. Anche se la struttura di pagina stessa potrebbe non cambiare mai, il contenuto commerciale potrebbe cambiare, ad esempio, se alcuni dati di prodotto (nome, prezzo, ecc.) cambiano in Magento.
 
-Per garantire che le pagine CIF possano essere memorizzate nella cache per un periodo di tempo limitato in AEM Dispatcher, si consiglia quindi di utilizzare [l’invalidazione della cache basata sul tempo](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (o memorizzazione in cache basata su TTL) durante il caching delle pagine CIF in AEM Dispatcher. Questa funzione può essere configurata in AEM utilizzando il pacchetto [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) aggiuntivo.
+Per garantire che le pagine CIF possano essere memorizzate nella cache per un periodo di tempo limitato in AEM Dispatcher, si consiglia quindi di utilizzare [l’invalidazione della cache basata sul tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (o memorizzazione in cache basata su TTL) durante il caching delle pagine CIF in AEM Dispatcher. Questa funzione può essere configurata in AEM utilizzando il pacchetto [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) aggiuntivo.
 
 Con il caching basato su TTL, uno sviluppatore definisce in genere una o più durate di memorizzazione nella cache per le pagine AEM selezionate. In questo modo le pagine CIF vengono memorizzate nella cache solo in AEM Dispatcher fino alla durata configurata e il contenuto viene aggiornato di frequente.
 
@@ -64,4 +63,4 @@ Con il caching basato su TTL, uno sviluppatore definisce in genere una o più du
 
 - [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Configurazione della cache per GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
