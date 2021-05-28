@@ -1,14 +1,13 @@
 ---
 title: Fase di esecuzione
 description: Fase di esecuzione
-translation-type: tm+mt
-source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
+exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 100%
+source-wordcount: '1054'
+ht-degree: 96%
 
 ---
-
 
 # Esecuzione {#execution-phase}
 
@@ -112,6 +111,11 @@ Consulta le risorse elencate di seguito per scoprire come utilizzare Cloud Manag
 * [Implementazione del codice](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
 ## Best practice per la preparazione alla pubblicazione {#go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_prep"
+>title="Preparazione Go-Live"
+>abstract="Per garantire un&#39;esperienza di AEM fluida e di successo come Cloud Service, è necessario pianificare periodi di blocco del codice e dei contenuti, iterazioni di test, integrazioni di contenuto, test delle prestazioni, test di sicurezza e altro ancora."
 
 Per garantire una pubblicazione corretta e priva di problemi in AEM as a Cloud Service, valuta l’esecuzione dei seguenti passaggi:
 
