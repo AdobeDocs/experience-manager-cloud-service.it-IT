@@ -3,8 +3,7 @@ title: AEM API GraphQL per l’utilizzo con frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) come Cloud Service con l’API GraphQL AEM per la distribuzione di contenuti headless.
 feature: Frammenti di contenuto, API GraphQL
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 1%
@@ -159,7 +158,7 @@ Per abilitare un endpoint GraphQL è innanzitutto necessario disporre di una con
 
 Per abilitare l&#39;endpoint corrispondente:
 
-1. Passa a **Strumenti**, **Siti**, quindi seleziona **GraphQL**.
+1. Passa a **Strumenti**, **Risorse**, quindi seleziona **GraphQL**.
 1. Seleziona **Crea**.
 1. Viene aperta la finestra di dialogo **Crea nuovo endpoint GraphQL** . Qui puoi specificare:
    * **Nome**: nome del punto finale; puoi immettere qualsiasi testo.
@@ -227,7 +226,7 @@ I casi di utilizzo possono dipendere dal tipo di AEM come ambiente di Cloud Serv
       * GraphQL in AEM as a Cloud Service è attualmente un&#39;API di sola lettura.
       * L’API REST può essere utilizzata per le operazioni CR(u)D.
 
-## Autorizzazioni  {#permission}
+## Autorizzazioni {#permission}
 
 Le autorizzazioni sono quelle necessarie per accedere ad Assets.
 
