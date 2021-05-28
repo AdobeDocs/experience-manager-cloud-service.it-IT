@@ -1,14 +1,13 @@
 ---
 title: 'Creazione di modelli di pagina  '
 description: Un modello definisce la struttura della pagina risultante. Con l’Editor modelli, la creazione e manutenzione dei modelli non è più un’attività riservata agli sviluppatori.
-translation-type: tm+mt
-source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
+exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4596'
 ht-degree: 97%
 
 ---
-
 
 # Creazione di modelli di pagina   {#creating-page-templates}
 
@@ -29,7 +28,7 @@ Tramite l’**Editor modelli**, gli autori dei modelli possono:
 
 Questo documento spiega come un **autore di modelli** può usare la console e l’editor per creare e gestire modelli modificabili.
 
-Per informazioni dettagliate sul funzionamento tecnico dei modelli modificabili, consultare il documento sullo sviluppatore [Page Templates](/help/implementing/developing/components/templates.md) per ulteriori informazioni.
+Per informazioni dettagliate su come funzionano i modelli modificabili a livello tecnico, consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md) per ulteriori informazioni.
 
 >[!NOTE]
 >
@@ -92,11 +91,11 @@ Durante la creazione di un nuovo modello modificabile:
 >
 >Non inserire mai informazioni che devono essere internazionalizzate in un modello. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Per gli elementi modello che devono essere localizzati, come intestazioni e piè di pagina, utilizza le funzioni di [localizzazione dei componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/get-started/localization.html).
+>Per gli elementi modello che devono essere localizzati, come intestazioni e piè di pagina, utilizza le funzioni di [localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
-È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. Si tratta di un&#39;attività di amministrazione ed è descritta nel documento [Page Templates](/help/implementing/developing/components/templates.md#template-folders).—>
+È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. Si tratta di un&#39;attività amministrativa descritta nel documento [Modelli di pagina](/help/implementing/developing/components/templates.md#template-folders).—>
 
 ### Creazione di un nuovo modello - Autore del modello {#creating-a-new-template-template-author}
 
@@ -114,7 +113,7 @@ Durante la creazione di un nuovo modello modificabile:
 
    >[!NOTE]
    >
-   >I tipi di modello sono layout predefiniti e possono essere pensati come modelli per un modello. Questi sono predefiniti dagli sviluppatori o dall’amministratore di sistema. Ulteriori informazioni sono disponibili nel documento sviluppatore [Modelli di pagina](/help/implementing/developing/components/templates.md#template-type).—>
+   >I tipi di modello sono layout predefiniti e possono essere pensati come modelli per un modello. Questi sono predefiniti dagli sviluppatori o dall’amministratore di sistema. Ulteriori informazioni sono disponibili nel documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md#template-type).—>
 
 1. Completa i **Dettagli modello**:
 
@@ -129,9 +128,9 @@ Durante la creazione di un nuovo modello modificabile:
 
 >[!NOTE]
 >
->I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e rendere confusa la creazione delle pagine. Una buona regola è mantenere il numero di modelli al di sotto di 100.
+>I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e confondere la creazione di pagine. Una buona regola è mantenere il numero di modelli sotto i 100.
 >
-> Adobe non consiglia di avere più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
+>Adobe consiglia di non disporre di più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
 
 ### Definizione delle proprietà del modello - Autore del modello    {#defining-template-properties-template-author}
 
@@ -210,7 +209,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
    >Se l’elenco dei **Modelli consentiti** viene lasciato vuoto, l’albero viene asceso fino a quando non viene trovato un valore o un elenco.
    >
    >
-   >Vedere [Disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability) - i principi per i modelli consentiti restano invariati.
+   >Consulta [Disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability) - i principi per i modelli consentiti rimangono gli stessi.
 
 1. Fai clic su **Salva** per salvare le modifiche alle proprietà della pagina.
 
@@ -533,7 +532,7 @@ Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **
 >
 >Il contenuto iniziale è destinato alla preparazione dei componenti e del layout di pagina che fungono da punto di partenza per la creazione dei contenuti. Non è inteso come contenuto effettivo da mantenere così com’è. Per questo motivo, non può essere tradotto.
 >
->Per includere nel modello il testo traducibile, ad esempio nelle intestazioni o nei piè di pagina, puoi utilizzare le funzioni di [localizzazione dei componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
+>Per includere nel modello il testo traducibile, ad esempio nelle intestazioni o nei piè di pagina, puoi utilizzare le funzioni di [localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Modifica di un modello - Layout - Autore del modello {#editing-a-template-layout-template-author}
 
