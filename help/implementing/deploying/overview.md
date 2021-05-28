@@ -3,9 +3,9 @@ title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 feature: Distribuzione
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3290'
 ht-degree: 1%
 
 ---
@@ -20,8 +20,10 @@ L&#39;aggiornamento della [AEM versione](/help/implementing/deploying/aem-versio
 
 Il resto di questo documento descriverà come gli sviluppatori devono adattare le proprie pratiche in modo che funzionino sia con gli aggiornamenti della versione di un Cloud Service che con gli aggiornamenti dei clienti.
 
+<!--
 >[!NOTE]
->Si consiglia ai clienti con basi di codice esistenti di eseguire l&#39;esercizio di ristrutturazione dell&#39;archivio descritto nella [documentazione AEM](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+-->
 
 ## Rilasci di clienti {#customer-releases}
 
@@ -40,8 +42,10 @@ Il video seguente fornisce una panoramica di alto livello su come distribuire il
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
+<!--
 >[!NOTE]
->Si consiglia ai clienti con basi di codice esistenti di eseguire l&#39;esercizio di ristrutturazione dell&#39;archivio descritto nella [documentazione AEM](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
+-->
 
 ## Distribuzione di pacchetti di contenuti tramite Cloud Manager e Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -102,7 +106,7 @@ Dopo il passaggio alla nuova versione dell&#39;applicazione:
    * Configurazione in base al contesto (qualsiasi cosa sotto `/conf`) (aggiungere, modificare, rimuovere)
    * Script (i pacchetti possono attivare gli hook di installazione in varie fasi del processo di installazione del pacchetto. Consulta la [documentazione Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sugli hook di installazione. Nota che AEM CS utilizza attualmente Filevault versione 3.4.0, che limita gli hook di installazione agli utenti amministratori, agli utenti di sistema e al membro del gruppo di amministratori).
 
-È possibile limitare l’installazione di contenuti modificabili all’authoring o alla pubblicazione incorporando i pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per riflettere questa separazione è stata effettuata in AEM 6.5 e i dettagli sulla ristrutturazione del progetto raccomandata si trovano nella documentazione [AEM 6.5.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+È possibile limitare l’installazione di contenuti modificabili all’authoring o alla pubblicazione incorporando i pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per riflettere questa separazione è stata effettuata in AEM 6.5 e i dettagli sulla ristrutturazione del progetto raccomandata si trovano nella documentazione [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >I pacchetti di contenuto vengono distribuiti in tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Questa limitazione è in vigore per garantire la possibilità di eseguire un test di esecuzione automatica. I contenuti specifici di un ambiente richiedono l’installazione manuale tramite Gestione pacchetti.
