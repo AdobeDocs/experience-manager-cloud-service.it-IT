@@ -2,9 +2,9 @@
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 4%
 
 ---
@@ -128,7 +128,7 @@ Seleziona **Console per sviluppatori** dal menu a discesa nella scheda **Ambient
 
 Solo un utente con il ruolo Sviluppatore avrà accesso a **Console per sviluppatori**. Eccezione per i programmi sandbox, in cui qualsiasi utente con accesso al programma sandbox di Cloud Manager avrà accesso a **Console per sviluppatori**.
 
-Per ulteriori informazioni, consulta [Sospensione e disattivazione degli ambienti sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) .
+Per ulteriori informazioni, consulta [Sospensione e disattivazione degli ambienti sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) .
 
 
 ![](assets/environ-devconsole.png)
