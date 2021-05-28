@@ -1,14 +1,13 @@
 ---
 title: Creazione di contenuti accessibili per Adobe Experience Manager as a Cloud Service (conformità WCAG 2.1)
 description: Utilizzare AEM as a Cloud Service per rendere il contenuto web accessibile e fruibile per le persone con disabilità
-translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '14060'
+source-wordcount: '14050'
 ht-degree: 99%
 
 ---
-
 
 # Creazione di contenuto accessibile (conformità WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
@@ -26,7 +25,7 @@ Inoltre, vedi:
 
 * [Guida rapida alle linee guida WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
 * [Rapporti sulla conformità per l’accessibilità relativi alle soluzioni Adobe](https://www.adobe.com/accessibility/compliance.html).
-* [Accessibilità nelle risorse](/help/assets/accessibility.md)
+* [Accessibilità in Assets](/help/assets/accessibility.md)
 * [Configurazione dell’editor Rich Text per generare contenuto accessibile](/help/implementing/developing/extending/rte-accessible-content.md)
 
 Le linee guida sono classificate in base a tre livelli di conformità: livello A (il più basso), livello AA e livello AAA (il più alto). Brevemente, i livelli sono definiti come segue:
@@ -69,15 +68,15 @@ Un ulteriore vantaggio è rappresentato dal fatto che le alternative testuali co
 
 #### Come soddisfare il criterio - Contenuto non testuale (1.1.1)   {#how-to-meet-non-text-content}
 
-Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire un&#39;alternativa testuale equivalente. Ciò può essere effettuato tramite il campo **Testo alternativo**, vedi ad esempio l’**[Immagine](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/image.html)** del componente di base.
+Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire un&#39;alternativa testuale equivalente. Ciò può essere effettuato tramite il campo **Testo alternativo**, vedi ad esempio l’**[Immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)** del componente di base.
 
 >[!NOTE]
 >
->Alcuni componenti di base predefiniti, come il **[carosello](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**, non forniscono un campo di **testo alternativo** per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se il campo **Etichetta** è disponibile nella scheda per l’**[accessibilità](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** dell’intero componente.
+>Alcuni componenti di base predefiniti, come il **[carosello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, non forniscono un campo di **testo alternativo** per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se il campo **Etichetta** è disponibile nella scheda per l’**[accessibilità](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** dell’intero componente.
 >
 >Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo dovrà configurarli per supportare l’attributo `alt`, affinché gli autori possano aggiungerlo al contenuto (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi).
 >
->Alcuni componenti di base predefiniti, come il **[carosello](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**, non forniscono un campo di **testo alternativo** per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se il campo **Etichetta** è disponibile nella scheda per l’**[accessibilità](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** dell’intero componente.
+>Alcuni componenti di base predefiniti, come il **[carosello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, non forniscono un campo di **testo alternativo** per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se il campo **Etichetta** è disponibile nella scheda per l’**[accessibilità](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** dell’intero componente.
 >
 >Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo dovrà configurarli per supportare l’attributo `alt`[, affinché gli autori possano aggiungerlo al contenuto (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -287,7 +286,7 @@ Segui le indicazioni fornite per [Audiodescrizione o tipo di media alternativo (
 * [Comprendere i criteri di successo 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [Come soddisfare i criteri di successo 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### Adattabile (1.3)   {#adaptable}
+### Adattabile (1.3)  {#adaptable}
 
 [Linea guida 1.3 - Adattabile: creare contenuti che possano essere rappresentati in modalità differenti (ad esempio con un layout più semplice), senza perdere informazioni o struttura.](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -460,7 +459,7 @@ Assicurati che tutte le informazioni che si basano su caratteristiche visive del
 * [Comprendere i criteri di successo 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Come soddisfare i criteri di successo 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### Distinguibile (1.4)   {#distinguishable}
+### Distinguibile (1.4)  {#distinguishable}
 
 [Linea guida 1.4 - Distinguibile: facilitare agli utenti la visione e l’ascolto dei contenuti, separando gli elementi in primo piano dallo sfondo.](https://www.w3.org/TR/WCAG/#distinguishable)
 
@@ -634,7 +633,7 @@ Se è necessario utilizzare le immagini di testo, utilizza CSS per sostituirle c
 
 È necessario che gli utenti possano accedere a tutte le funzionalità utilizzando una tastiera.
 
-### Tastiera (2.1.1) {#keyboard}
+### Tastiera (2.1.1)   {#keyboard}
 
 * Criterio di successo 2.1.1
 * Livello A
@@ -1287,7 +1286,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.3.
 
 Garantire la massima compatibilità con i programmi utente attuali e futuri, comprese le tecnologie per l’accessibilità.
 
-### Analisi sintattica (parsing) (4.1.1) {#parsing}
+### Analisi sintattica (parsing) (4.1.1)   {#parsing}
 
 * Criterio di successo 4.1.1
 * Livello A
