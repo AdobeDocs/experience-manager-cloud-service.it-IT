@@ -1,15 +1,14 @@
 ---
 title: Aggiornamenti AEM versione
 description: 'Aggiornamenti AEM versione '
-feature: Deploying
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Distribuzione
+exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
-
 
 # Aggiornamenti AEM versione {#aem-version-updates}
 
@@ -36,7 +35,7 @@ Gli aggiornamenti delle versioni AEM sono di due tipi:
 
 Gli aggiornamenti AEM passano attraverso una pipeline di convalida del prodotto intensa e completamente automatizzata, che prevede più passaggi per garantire l&#39;assenza di interruzioni del servizio per tutti i sistemi in produzione. I controlli sanitari sono utilizzati per monitorare lo stato di salute della domanda. Se questi controlli non riescono durante un AEM come aggiornamento del Cloud Service, il rilascio non procederà e l’Adobe esaminerà il motivo per cui l’aggiornamento ha causato questo comportamento imprevisto.
 
-[I test dei prodotti e ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) i test funzionali dei clienti che impediscono l’interruzione della produzione da parte degli aggiornamenti dei prodotti e del codice cliente vengono convalidati anche durante un aggiornamento della versione AEM.
+[I test dei prodotti e ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) i test funzionali dei clienti che impediscono l’interruzione della produzione da parte degli aggiornamenti dei prodotti e del codice cliente vengono convalidati anche durante un aggiornamento della versione AEM.
 
 >[!NOTE]
 >
@@ -47,4 +46,3 @@ Gli aggiornamenti AEM passano attraverso una pipeline di convalida del prodotto 
 Come accennato in precedenza, gli aggiornamenti nella maggior parte dei casi non genereranno tempi di inattività, incluso per l’autore, che è un cluster di nodi. Aggiornamenti continui sono possibili a causa della funzione *composita node store* in Oak.
 
 Questa funzione consente AEM fare riferimento contemporaneamente a più archivi. In una distribuzione continua, la nuova versione di AEM verde contiene il proprio `/libs` (l&#39;archivio immutabile basato su TarMK), diverso dalla vecchia versione di AEM blu, anche se entrambi fanno riferimento a un archivio mutabile basato su DocumentMK condiviso che contiene aree come `/content` , `/conf` , `/etc` e altre. Poiché sia il blu che il verde hanno le proprie versioni di `/libs`, possono essere entrambi attivi durante l’aggiornamento continuo, assumendo sia il traffico che il blu viene completamente sostituito dal verde.
-
