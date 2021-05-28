@@ -1,14 +1,13 @@
 ---
 title: Sistema di stili
 description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
-translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1327'
 ht-degree: 97%
 
 ---
-
 
 # Sistema di stili{#style-system}
 
@@ -57,7 +56,7 @@ Il diagramma seguente illustra l’architettura del sistema di stili.
 
 ## Utilizzo {#use}
 
-Per illustrare questa funzione, come esempio verrà utilizzata l’implementazione [WKND](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) del [componente titolo](https://www.adobe.com/go/aem_cmp_title_v2_it) del componente core.
+Per illustrare questa funzione, come esempio verrà utilizzata l’implementazione [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) del [componente titolo](https://www.adobe.com/go/aem_cmp_title_v2_it) del componente core.
 
 Le sezioni seguenti, [Autore di contenuti](#as-a-content-author) e [Autore di modelli](#as-a-template-author) descrivono come verificare la funzionalità del sistema di stili utilizzando il sistema di stili di WKND.
 
@@ -105,7 +104,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 >[!CAUTION]
 >
->Per poter funzionare, le classi CSS (così come qualsiasi codice JavaScript necessario) configurate come proprietà di stile del criterio di un componente devono essere distribuite come [librerie client](/help/implementing/developing/introduction/clientlibs.md).
+>Per poter funzionare, le classi CSS (nonché l’eventuale codice Javascript) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come [librerie client](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Configurazione {#setup}
 
@@ -121,7 +120,6 @@ Affinché un componente possa funzionare con il sistema di stili di AEM e visual
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >In questo modo si sfruttano [le sovrapposizioni](/help/implementing/developing/introduction/overlays.md) tramite [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Con il componente configurato, gli stili configurati dall’autore della pagina vengono automaticamente inseriti da AEM sull’elemento decorativo in cui AEM racchiude in automatico ciascun componente modificabile. Il componente in sé non deve fare altro affinché questo accada.
@@ -136,7 +134,6 @@ La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >In questo modo si sfruttano [le sovrapposizioni](/help/implementing/developing/introduction/overlays.md) tramite [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
@@ -158,6 +155,7 @@ Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 >1. HTL ha la precedenza su tutto: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Poi, tra più stili attivi, viene considerato il primo nell’elenco degli stili configurati nel criterio del componente.
 >1. Infine, il `cq:tagName`/ `cq:htmlTag` del componente sarà considerato un valore di fallback.
+
 >
 
 
