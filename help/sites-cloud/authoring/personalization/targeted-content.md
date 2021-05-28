@@ -1,14 +1,13 @@
 ---
 title: Creazione di contenuti di destinazione utilizzando la modalità di targeting
 description: La modalità di targeting e il componente Target forniscono strumenti per la creazione di contenuti per esperienze
-translation-type: tm+mt
-source-git-commit: 10aba35c0795ef946edce02e9396947fc6348514
+exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '5348'
+source-wordcount: '5342'
 ht-degree: 77%
 
 ---
-
 
 # Creazione di contenuti di destinazione utilizzando la modalità di targeting {#authoring-targeted-content-using-targeting-mode}
 
@@ -23,9 +22,9 @@ Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targe
 * Simulazione dell’esperienza utente.
 * Per ulteriori personalizzazioni, configura il componente Target.
 
-Puoi utilizzare AEM o Adobe Target come motore di targeting (per utilizzare Adobe Target devi disporre di un account Adobe Target valido). Se utilizzi Adobe Target, devi prima di tutto configurare l’integrazione. Consultate le istruzioni per l&#39;integrazione con  Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
+Puoi utilizzare AEM o Adobe Target come motore di targeting (per utilizzare Adobe Target devi disporre di un account Adobe Target valido). Se utilizzi Adobe Target, devi prima di tutto configurare l’integrazione. Vedi le istruzioni per l’integrazione con Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
 
-![Targeting del contenuto](../assets/targeted-content.png)
+![Contenuto di targeting](../assets/targeted-content.png)
 
 Le attività e le esperienze visualizzate in modalità Target riflettono la [console Attività](/help/sites-cloud/authoring/personalization/activities.md):
 
@@ -34,7 +33,7 @@ Le attività e le esperienze visualizzate in modalità Target riflettono la [con
 
 >[!NOTE]
 >
->Quando crei una campagna in Adobe Target, questo assegna una proprietà denominata `thirdPartyId` a ogni campagna. Quando elimini la campagna in Adobe Target, thirdPartyId non viene eliminato. Non è possibile riutilizzare `thirdPartyId` per campagne di tipo diverso (AB, XT) e non può essere rimosso manualmente. Per evitare questo problema, assegnate a ciascuna campagna un nome univoco; i nomi delle campagne non possono quindi essere riutilizzati in tipi di campagne diversi.
+>Quando crei una campagna in Adobe Target, questo assegna una proprietà denominata `thirdPartyId` a ogni campagna. Quando elimini la campagna in Adobe Target, thirdPartyId non viene eliminato. Non è possibile riutilizzare `thirdPartyId` per campagne di tipo diverso (AB, XT) e non può essere rimosso manualmente. Per evitare questo problema, denomina ogni campagna con un nome univoco; i nomi delle campagne non possono quindi essere riutilizzati in diversi tipi di campagne.
 >
 >Se utilizzi lo stesso nome nello stesso tipo di campagna, sovrascriverai la campagna esistente.
 >
@@ -51,13 +50,13 @@ Passa alla modalità di targeting per accedere agli strumenti per la creazione d
 Per passare alla modalità di targeting:
 
 1. Apri la pagina per la quale desideri creare il targeting dei contenuti.
-1. Nella barra degli strumenti nella parte superiore della pagina, fare clic o toccare il menu a discesa della modalità per visualizzare i tipi di modalità disponibili.
+1. Nella barra degli strumenti nella parte superiore della pagina, tocca o fai clic sul menu a discesa della modalità per visualizzare i tipi di modalità disponibili.
 
    ![Modalità di targeting](../assets/targeted-mode.png)
 
 1. Tocca o fai clic su **Targeting**. Le opzioni di targeting vengono visualizzate nella parte superiore della pagina.
 
-   ![Targeting, barra degli strumenti](../assets/targeted-toolbar.png)
+   ![Barra degli strumenti Targeting](../assets/targeted-toolbar.png)
 
 ## Aggiunta di un’attività utilizzando la modalità di targeting {#adding-an-activity-using-targeting-mode}
 
@@ -78,7 +77,7 @@ Per aggiungere un’attività:
    >Si consiglia di [creare marchi mediante la console delle attività](/help/sites-cloud/authoring/personalization/activities.md#creating-a-brand-using-the-activities-console).
    >
    >
-   >Se create un marchio in un altro modo, accertatevi che il nodo `/campaigns/<brand>/master` esista o che si verifichi un errore quando tentate di creare un&#39;attività.
+   >Se crei un marchio in qualsiasi altro modo, assicurati che il nodo `/campaigns/<brand>/master` esista o che si verifichi un errore quando tenti di creare un’attività.
 
 1. Tocca o fai clic su + accanto al menu a comparsa **Attività**.
 1. Digita un nome per l’attività.
@@ -89,7 +88,7 @@ Per aggiungere un’attività:
 
 1. Nel menu a comparsa del motore di **targeting**, seleziona il motore di targeting.
 
-   * Se si seleziona **ContextHub AEM**, i campi rimanenti sono disattivati e non sono disponibili. Tocca o fai clic su **Crea**.
+   * Se selezioni **AEM ContextHub**, i campi rimanenti sono oscurati e non sono disponibili. Tocca o fai clic su **Crea**.
 
    * Se selezioni **Adobe Target**, puoi selezionare una configurazione (per impostazione predefinita, è quella fornita quando hai configurato l’account) e un tipo di attività. <!--If you select **Adobe Target**, you can select a configuration (by default, it is the configuration you provided when you [configured the account](/help/sites-administering/opt-in.md)) and Activity Type.-->
 
@@ -110,7 +109,7 @@ Utilizza la seguente procedura per avviare il processo di targeting dei contenut
 
 >[!NOTE]
 >
->Per utilizzare il processo di targeting, devi essere un membro del gruppo di utenti di Target Activity Authors.
+>Per utilizzare il processo di targeting, devi essere membro del gruppo utenti Autori attività di Target.
 
 Per aggiungere un’attività:
 
@@ -118,7 +117,7 @@ Per aggiungere un’attività:
 1. Nel menu a comparsa **Attività**, seleziona l’attività per la quale stai creando il targeting del contenuto.
 1. Per visualizzare i controlli che guidano attraverso il processo di targeting, tocca o fai clic su **Avvia targeting**.
 
-   ![Avvia targeting](../assets/targeted-start-targeting.png)
+   ![Iniziare il targeting](../assets/targeted-start-targeting.png)
 
    >[!NOTE]
    >
@@ -134,7 +133,7 @@ Dopo aver [avviato il processo di targeting](#the-targeting-process-create-targe
 
 >[!CAUTION]
 >
->Presta attenzione quando disattivi il targeting per un componente che è già assegnato nell’istanza di authoring. Anche l&#39;attività corrispondente verrà eliminata automaticamente dall&#39;istanza di pubblicazione.
+>Presta attenzione quando disattivi il targeting per un componente che è già assegnato nell’istanza di authoring. Anche l’attività corrispondente verrà eliminata automaticamente dall’istanza di pubblicazione.
 
 >[!NOTE]
 >
@@ -152,17 +151,17 @@ Quando un’esperienza è selezionata e il componente di destinazione non includ
 
 ![Aggiungi offerta](../assets/targeted-add-offer.png)
 
-L’esperienza predefinita viene visualizzata anche quando le proprietà del visitatore non corrispondono a nessun segmento mappato per le esperienze. Consultate [Aggiunta di esperienze utilizzando la modalità di targeting](#adding-and-removing-experiences-using-targeting-mode).
+L’esperienza predefinita viene visualizzata anche quando le proprietà del visitatore non corrispondono a nessun segmento mappato per le esperienze. Consulta [Aggiunta di esperienze utilizzando la modalità di targeting](#adding-and-removing-experiences-using-targeting-mode).
 
 ### Offerte personalizzate e offerte dalla libreria {#custom-offers-and-library-offers}
 
 Le offerte che [vengono create sulla pagina](#adding-a-custom-offer) e vengono utilizzate per una sola esperienza sono denominate offerte personalizzate. L’immagine seguente è sovrapposta al contenuto di un’offerta personalizzata:
 
-![Icona offerta personalizzata](../assets/targeted-custom-offer-icon.png)
+![Icona dell’offerta personalizzata](../assets/targeted-custom-offer-icon.png)
 
 Le offerte che vengono [aggiunte da una libreria di offerte](#adding-an-offer-from-an-offer-library) sono sovrapposte con l’immagine seguente:
 
-![Icona offerta libreria](../assets/targeted-library-offer-icon.png)
+![Icona dell’offerta dalla libreria](../assets/targeted-library-offer-icon.png)
 
 Puoi salvare le offerte personalizzate in una libreria di offerte se decidi di riutilizzarle. Puoi anche convertire un’offerta dalla libreria in un’offerta personalizzata se desideri modificare il contenuto per un’esperienza. Dopo la modifica, puoi salvare nuovamente l’offerta nella libreria.
 
@@ -174,16 +173,16 @@ Utilizzando la fase Crea del [processo di targeting](#the-targeting-process-crea
 
 Per aggiungere un’esperienza:
 
-1. Per aggiungere un&#39;esperienza, toccate o fate clic su **+** **Aggiungi targeting esperienza** visualizzata sotto le esperienze esistenti nel riquadro **Audiences**.
+1. Per aggiungere un’esperienza, tocca o fai clic su **+** **Aggiungi targeting esperienza** che viene visualizzato sotto le esperienze esistenti nel riquadro **Tipi di pubblico** .
 1. Seleziona un pubblico. Per impostazione predefinita, questo nome è il nome dell’esperienza. Puoi digitare un altro nome, se necessario. Tocca o fai clic su **OK**.
 
 #### Rimozione di esperienze con la modalità di targeting  {#removing-experiences-using-targeting-mode}
 
 Per eliminare un’esperienza:
 
-1. Tocca o fai clic sulla freccia accanto al nome dell&#39;esperienza.
+1. Tocca o fai clic sulla freccia accanto al nome dell’esperienza.
 
-   ![Eliminazione ed esperienza](../assets/targeted-delete-experiene.png)
+   ![Elimina ed esperienza](../assets/targeted-delete-experiene.png)
 
 1. Fai clic su **Elimina**.
 
@@ -191,23 +190,23 @@ Per eliminare un’esperienza:
 
 Per rinominare le esperienze con la modalità di targeting:
 
-1. Tocca o fai clic sulla freccia accanto al nome dell&#39;esperienza.
-1. Fate clic su **Rinomina esperienza** e digitate il nuovo nome.
+1. Tocca o fai clic sulla freccia accanto al nome dell’esperienza.
+1. Fai clic su **Rinomina esperienza** e digita il nuovo nome.
 1. Tocca o fai clic su un altro punto dello schermo per salvare le modifiche.
 
 #### Modifica del pubblico utilizzando la modalità di targeting {#editing-audiences-using-targeting-mode}
 
 Per modificare il pubblico utilizzando la modalità di targeting:
 
-1. Tocca o fai clic sulla freccia accanto al nome dell&#39;esperienza.
-1. Fate clic su **Modifica audience** e selezionate una nuova audience.
+1. Tocca o fai clic sulla freccia accanto al nome dell’esperienza.
+1. Fai clic su **Modifica pubblico** e seleziona un nuovo pubblico.
 1. Fai clic su **OK**.
 
 #### Duplicazione delle esperienze con la modalità di targeting  {#duplicating-experiences-using-targeting-mode}
 
 Per copiare le esperienze con la modalità di targeting:
 
-1. Tocca o fai clic sulla freccia accanto al nome dell&#39;esperienza.
+1. Tocca o fai clic sulla freccia accanto al nome dell’esperienza.
 1. Fai clic su **Duplica** e scegli il pubblico.
 1. Rinomina l’esperienza, se desiderato, e fai clic su **OK**.
 
@@ -245,17 +244,17 @@ Esegui la seguente procedura dopo [aver avviato il processo di targeting](#the-t
 
    ![Pulsante Target](../assets/targeted-target-button.png)
 
-   Il contenuto del componente è l’offerta dell’esperienza predefinita. Quando viene eseguito il targeting di un componente, il suo nodo predefinito sarà replicato per ogni esperienza. Questo è necessario per modificare il nodo del contenuto corretto durante la creazione specifica dell’esperienza. Per queste esperienze non predefinite, [aggiungete un&#39;offerta personalizzata](#adding-a-custom-offer) o [aggiungete un&#39;offerta libreria](#adding-an-offer-from-an-offer-library).
+   Il contenuto del componente è l’offerta dell’esperienza predefinita. Quando viene eseguito il targeting di un componente, il suo nodo predefinito sarà replicato per ogni esperienza. Questo è necessario per modificare il nodo del contenuto corretto durante la creazione specifica dell’esperienza. Per queste esperienze non predefinite, [aggiungi un&#39;offerta personalizzata](#adding-a-custom-offer) o [aggiungi un&#39;offerta dalla libreria](#adding-an-offer-from-an-offer-library).
 
 #### Creazione di un’offerta aggiungendo un componente Target {#creating-an-offer-by-adding-a-target-component}
 
 Aggiungi un componente Target per creare l’offerta per l’esperienza predefinita. Il componente Target è un contenitore per altri componenti e viene eseguito il targeting di componenti che si trovano al suo interno. Quando utilizzi il componente Target, puoi aggiungere numerosi componenti per creare un’offerta. Inoltre, puoi usare i diversi componenti in ogni esperienza per creare le diverse offerte.
 
-Per informazioni su come personalizzare questo componente, consultate [Configurazione delle opzioni del componente Target](#configuring-target-component-options).
+Per informazioni su come personalizzare questo componente, consulta [Configurazione delle opzioni del componente Target](#configuring-target-component-options) .
 
 >[!NOTE]
 >
->Le offerte create mediante la [console Offerte](/help/sites-cloud/authoring/personalization/offers.md) possono contenere anche diversi componenti. Queste offerte appartengono a una libreria di offerte e possono essere utilizzate per più esperienze.
+>Le offerte create con la [console Offerte](/help/sites-cloud/authoring/personalization/offers.md) possono contenere anche diversi componenti. Queste offerte appartengono a una libreria di offerte e possono essere utilizzate per più esperienze.
 
 Dato che il componente Target è un contenitore, viene visualizzato come area di rilascio per altri componenti.
 
@@ -265,7 +264,7 @@ In modalità Target, il componente Target ha un bordo blu e il messaggio a disce
 
 In modalità di modifica, il componente Target dispone di un’icona a forma di centro del bersaglio.
 
-![Icona della zona di rilascio di destinazione](../assets/targeted-drop-target-icon.png)
+![Icona della zona di rilascio target](../assets/targeted-drop-target-icon.png)
 
 Quando trascini componenti nel componente Target, si tratta di componenti di cui è stato eseguito il targeting.
 
@@ -282,28 +281,28 @@ In caso di modifica del contenuto con targeting, devi toccare o fare clic su **A
 
    >[!NOTE]
    >
-   >Se impostato dall’amministratore, potrebbe essere necessario impostare il percorso in modo esplicito.
+   >Se impostato dal tuo amministratore, potrebbe essere necessario impostare esplicitamente il percorso.
    >
-   >Gli amministratori possono decidere se impostare questa configurazione su `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet`
+   >Gli amministratori possono decidere se impostare questa configurazione in `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet`
    >
    >Per richiedere agli utenti di inserire una posizione, seleziona la casella di controllo **Force location (Forza posizione)**.
 
 1. Seleziona l’esperienza per cui desideri creare l’offerta.
 1. Creazione dell’offerta:
 
-   * Per esperienza predefinita, trascinate i componenti nell’area di rilascio di destinazione e modificate le proprietà dei componenti come al solito per creare il contenuto per l’offerta.
+   * Per l’esperienza predefinita, trascina i componenti nell’area di rilascio di destinazione e modifica le proprietà dei componenti come di consueto per creare il contenuto per l’offerta.
    * Per esperienze non predefinite, [aggiungi un’offerta personalizzata](#adding-a-custom-offer) oppure [aggiungi un’offerta dalla libreria](#adding-an-offer-from-an-offer-library).
 
 #### Aggiunta di un’offerta personalizzata  {#adding-a-custom-offer}
 
 Consente di realizzare un’offerta creando il contenuto di un componente con targeting per il targeting della modalità. Quando crei un’offerta personalizzata, viene utilizzata come offerta da un’unica esperienza.
 
-Se decidete che l&#39;offerta può essere utilizzata per altre esperienze, potete creare un&#39;offerta personalizzata e [aggiungerla alla libreria](#adding-a-custom-offer-to-a-library). Per ulteriori informazioni sull’uso della console delle offerte per creare un’offerta riutilizzabile, consulta [Aggiunta di un’offerta a una libreria di offerte](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
+Se decidi che l&#39;offerta può essere utilizzata per altre esperienze, puoi creare un&#39;offerta personalizzata e [aggiungerla alla libreria](#adding-a-custom-offer-to-a-library). Per ulteriori informazioni sull’uso della console delle offerte per creare un’offerta riutilizzabile, consulta [Aggiunta di un’offerta a una libreria di offerte](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
 
 1. Seleziona l’esperienza a cui aggiungere l’offerta.
 1. Per visualizzare il menu dei componenti, tocca o fai clic sul componente con targeting a cui aggiungere l’offerta.
 
-   ![Aggiunta di un&#39;offerta](../assets/targeted-component-menu.png)
+   ![Aggiunta di un’offerta](../assets/targeted-component-menu.png)
 
 1. Tocca o fai clic sull’icona +.
 
@@ -317,7 +316,7 @@ Se decidete che l&#39;offerta può essere utilizzata per altre esperienze, potet
 
 #### Aggiunta di un’offerta da una libreria delle offerte  {#adding-an-offer-from-an-offer-library}
 
-Aggiungete un&#39;offerta dalla [libreria di offerte](/help/sites-cloud/authoring/personalization/offers.md) a un&#39;esperienza. Puoi aggiungere tutte le offerte dalla libreria del marchio di cui attualmente stai eseguendo il targeting.
+Aggiungi un&#39;offerta dalla [libreria di offerte](/help/sites-cloud/authoring/personalization/offers.md) a un&#39;esperienza. Puoi aggiungere tutte le offerte dalla libreria del marchio di cui attualmente stai eseguendo il targeting.
 
 Non puoi aggiungere offerte dalla libreria all’esperienza predefinita.
 
@@ -328,15 +327,15 @@ Non puoi aggiungere offerte dalla libreria all’esperienza predefinita.
 
 1. Tocca o fai clic sull’icona della cartella.
 
-   ![Icona cartella](../assets/targeted-folder-button.png)
+   ![Icona della cartella](../assets/targeted-folder-button.png)
 
 1. Seleziona l’offerta dalla libreria, quindi tocca o fai clic sull’icona a forma di segno di spunta.
 
-   ![Libreria offerta](../assets/targeted-select-content.png)
+   ![Libreria offerte](../assets/targeted-select-content.png)
 
    Il selettore delle offerte consente di individuare o filtrare le offerte. Durante la navigazione o il filtraggio, è anche possibile ordinare le offerte e modificarne la modalità di visualizzazione. Il numero in alto a destra indica il numero di offerte disponibili nella libreria corrente.
 
-   * Tocca o fai clic su **Sfoglia** per passare a un&#39;altra cartella. Il pannello di navigazione si apre e puoi fare clic sulla freccia per analizzare in profondità le cartelle. Tocca o fai clic nuovamente su **Sfoglia** per chiudere il riquadro di navigazione.
+   * Tocca o fai clic su **Sfoglia** per passare a un&#39;altra cartella. Il pannello di navigazione si apre e puoi fare clic sulla freccia per analizzare in profondità le cartelle. Tocca o fai di nuovo clic su **Sfoglia** per chiudere il riquadro di navigazione.
 
    ![Sfoglia contenuto](../assets/targeted-select-content-browse.png)
 
@@ -346,11 +345,11 @@ Non puoi aggiungere offerte dalla libreria all’esperienza predefinita.
 
    * Puoi modificare l’ordine delle offerte toccando o facendo clic sulla freccia accanto a **Dal più recente al meno recente**. Le offerte possono essere ordinate dalla più recente alla meno recente o dalla meno recente alla più recente.
 
-   ![Filtra ordinamento](../assets/targeted-filter-sort.png)
+   ![Ordinamento dei filtri](../assets/targeted-filter-sort.png)
 
    Tocca o fai clic sull’icona accanto a **Visualizza** per visualizzare le offerte come miniature o come elenco.
 
-   ![Visualizza come pulsante](../assets/targeted-view-as-button.png)
+   ![Pulsante Visualizza come](../assets/targeted-view-as-button.png)
 
 #### Aggiunta di un’offerta personalizzata a una libreria {#adding-a-custom-offer-to-a-library}
 
@@ -379,20 +378,20 @@ Consente di convertire un’offerta dalla libreria in offerta personalizzata per
 Apri un’offerta dalla libreria da un’esperienza in modalità targeting per modificare l’offerta. Le modifiche apportate vengono visualizzate in tutte le esperienze che utilizzano l’offerta.
 
 1. Seleziona l’esperienza per visualizzare l’offerta dalla libreria.
-1. Converti l’offerta dalla libreria in offerta personalizzata/locale. Vedere [Conversione di un&#39;offerta libreria in una libreria personalizzata](#converting-a-library-offer-to-a-custom-library).
+1. Converti l’offerta dalla libreria in offerta personalizzata/locale. Consulta [Conversione di un&#39;offerta dalla libreria in una libreria personalizzata](#converting-a-library-offer-to-a-custom-library).
 1. Modifica il contenuto dell’offerta. 
 
-1. Salvalo nuovamente nella libreria. Vedere [Aggiunta di un&#39;offerta personalizzata a una libreria](#adding-a-custom-offer-to-a-library).
+1. Salvalo nuovamente nella libreria. Consulta [Aggiunta di un&#39;offerta personalizzata a una libreria](#adding-a-custom-offer-to-a-library).
 
 ## Targeting: configurazione del pubblico {#target-configuring-the-audiences}
 
 La fase di targeting del [processo di targeting](#the-targeting-process-create-target-and-goals-settings) comporta la mappatura del pubblico con le esperienze con cui hai lavorato nella fase di creazione. La pagina di targeting mostra il pubblico per ogni esperienza di cui stai eseguendo il targeting. Puoi specificare o modificare il pubblico per ogni esperienza. Se utilizzi Adobe Target, puoi anche creare test A/B che consentono di eseguire il targeting della percentuale del traffico per un pubblico per un’esperienza specifica.
 
-### Se utilizzate AEM targeting o  Adobe Target (targeting delle esperienze) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### Se utilizzi AEM targeting o Adobe Target (targeting delle esperienze) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Il pubblico viene visualizzato sul lato sinistro del diagramma di mappatura, mentre le esperienze vengono visualizzate sul lato destro.
 
-![Mappatura delle audience](../assets/targeted-diagram.png)
+![Mappatura dei tipi di pubblico](../assets/targeted-diagram.png)
 
 Definisci un pubblico utilizzando un segmento. La configurazione cloud per la pagina determina i segmenti disponibili. Se la pagina non è associata a una configurazione cloud di Adobe Target, sono disponibili segmenti AEM per la definizione del pubblico. Se la pagina è associata a una configurazione cloud di Adobe Target, utilizza i segmenti Target.
 
@@ -410,7 +409,7 @@ Segui la procedura seguente per associare un’esperienza a un pubblico quando u
 1. (Facoltativo) Tocca o fai clic su **Modifica**, quindi digita una parola chiave per cercare il segmento desiderato.
 1. Nell’elenco del pubblico, seleziona il pubblico e tocca o fai clic su **OK**.
 
-### Se utilizzate test A/B ( Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
+### Se utilizzi test A/B (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
 Se disponi di un’attività di test A/B, il pubblico è alla tua sinistra, la percentuale di visualizzazione di ogni esperienza viene visualizzata è al centro e le esperienze sono a destra.
 
@@ -428,7 +427,7 @@ Le percentuali possono essere modificate fino a un massimo del 100 per cento. Un
 
 ## Obiettivi e impostazioni: configurazione dell’attività e definizione degli obiettivi  {#goals-settings-configuring-the-activity-and-setting-goals}
 
-Il passaggio Goals &amp; Settings (Obiettivi e impostazioni) di [processo di targeting](#the-targeting-process-create-target-and-goals-settings) prevede la configurazione del comportamento dell&#39;attività del marchio. Specifica quando l’attività inizia e finisce, come anche la priorità dell’attività. Inoltre, è anche possibile monitorare gli obiettivi. In particolare, puoi decidere cosa desideri misurare con le attività.
+Il passaggio Obiettivi e impostazioni di [processo di targeting](#the-targeting-process-create-target-and-goals-settings) comporta la configurazione del comportamento dell&#39;attività del marchio. Specifica quando l’attività inizia e finisce, come anche la priorità dell’attività. Inoltre, è anche possibile monitorare gli obiettivi. In particolare, puoi decidere cosa desideri misurare con le attività.
 
 Le metriche degli obiettivi sono disponibili solo se usi Adobe Target per il motore di targeting. Devi specificare almeno una metrica di obiettivo. Se Adobe Analytics è stato configurato e disponi di una configurazione cloud A4T Analytics, puoi scegliere se l’origine per la generazione dei rapporti deve essere Adobe Target o Adobe Analytics.
 
@@ -440,7 +439,7 @@ Se utilizzi AEM come motore di targeting:
 
 Se utilizzi Adobe Target come motore di targeting:
 
-![ Adobe Target come motore di destinazione](../assets/targeted-engine.png)
+![Adobe Target come motore di destinazione](../assets/targeted-engine.png)
 
 Se utilizzi Adobe Target come motore di targeting e disponi di A4T Analytics configurato per l’account, avrai accesso a un menu a discesa aggiuntivo **Origine per la generazione di rapporti**:
 
@@ -450,21 +449,21 @@ Sono disponibili le seguenti metriche di successo (utilizzate solo per la pubbli
 
 | Metrica | Descrizione | Opzioni |
 |---|---|---|
-| Conversione | La percentuale di visitatori che hanno fatto clic su qualsiasi parte dell&#39;esperienza in fase di test. Una conversione può essere conteggiata una volta per ogni visitatore o ogni volta che un visitatore completa una conversione. La metrica di conversione è impostata su uno dei seguenti | Visualizzata una pagina: potete definire la pagina visualizzata selezionando l&#39;URL e quindi definendo l&#39;URL o più URL, oppure selezionando l&#39;URL che contiene e aggiungendo un percorso o una parola chiave. Visualizzata una mbox - Potete definire quale mbox il pubblico ha visualizzato immettendo il nome della mbox. Potete immettere più mbox facendo clic su Aggiungi una mbox. |
-| Ricavo | Entrate generate dalla visita. Puoi scegliere tra le metriche delle entrate elencate. Per ciascuna di queste opzioni, se una mbox è stata visualizzata indica che l&#39;obiettivo è stato raggiunto. Puoi definire la mbox o più mbox. | Entrate per visitatore (RPV), Valore ordine medio (AOV), Vendite totali, Ordini |
-| Coinvolgimento | Potete misurare tre tipi di coinvolgimento | Visualizzazioni pagina, punteggio personalizzato, Tempo sul sito |
+| Conversione | La percentuale di visitatori che hanno fatto clic su una qualsiasi parte dell’esperienza in fase di test. Una conversione può essere conteggiata una volta per ogni visitatore o ogni volta che un visitatore completa una conversione. La metrica di conversione è impostata su una delle seguenti opzioni | Visualizzazione di una pagina - È possibile definire la pagina visualizzata selezionando URL e quindi definendo l’URL o più URL, oppure selezionando URL contiene e quindi aggiungendo un percorso o una parola chiave. Visualizzazione di una mbox - Puoi definire quale mbox ha visualizzato il tuo pubblico immettendo il nome della mbox. Per immettere più mbox, fai clic su Aggiungi una mbox. |
+| Ricavo | Entrate generate dalla visita. Puoi scegliere tra le metriche entrate elencate. Per una qualsiasi di queste opzioni, se è stata visualizzata una mbox indica che l&#39;obiettivo è stato raggiunto. Puoi definire la mbox o più mbox. | Ricavo per visitatore (RPV), Valore medio dell&#39;ordine (AOV), Vendite totali, Ordini |
+| Coinvolgimento | Puoi misurare tre tipi di coinvolgimento | Visualizzazioni di pagina, Punteggio personalizzato, Tempo sul sito |
 
 Inoltre, esistono impostazioni avanzate che consentono di determinare come calcolare le metriche di successo. Le opzioni includono il conteggio della metrica per impression o una volta per ogni visitatore e la scelta se mantenere gli utenti nell’attività o rimuoverli.
 
 Utilizza le impostazioni avanzate per determinare che cosa succede **dopo** che l’utente raggiunge la metrica di obiettivo. La tabella seguente mostra le opzioni disponibili.
 
-| Dopo che un utente ha incontrato questa metrica di obiettivo... | Selezionare il seguente evento da eseguire... |
+| Dopo che un utente incontra questa metrica di obiettivo... | Seleziona quanto segue... |
 |---|---|
-| Incremento del conteggio e mantenimento dell&#39;utente nell&#39;attività | Specificate in che modo il conteggio viene incrementato: Una volta per partecipante, Su ogni impressione, ad esclusione degli aggiornamenti di pagina, Su ogni impressione |
-| Incremento conteggio, Rilascia utente e Consenti rientro | Selezionate l&#39;esperienza che il visitatore vede se accede nuovamente all&#39;attività: Stessa esperienza, esperienza casuale, esperienza invisibile |
-| Incremento conteggio, rilascio utente e rientro a barre | Determinate cosa vede l&#39;utente invece del contenuto dell&#39;attività: Stessa esperienza, senza tracciamento, contenuto predefinito o altro contenuto dell&#39;attività |
+| Incrementa il conteggio e mantieni l’utente attivo | Specifica come viene incrementato il conteggio: Una volta per partecipante, su ogni impression, escluso l&#39;aggiornamento della pagina, su ogni impression |
+| Incrementa il conteggio, rilascia l’utente e consenti nuovo accesso | Seleziona l’esperienza che il visitatore vede se accede nuovamente all’attività: Stessa esperienza, esperienza casuale, esperienza non vista |
+| Incrementa il conteggio, rilascia l’utente e impedisci nuovo accesso | Determina cosa vede l’utente al posto del contenuto dell’attività: Stessa esperienza, senza tracciamento, contenuto predefinito o altro contenuto dell’attività |
 
-Consulta la [documentazione di Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) per ulteriori informazioni sulle metriche di successo.
+Consulta la [documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) per ulteriori informazioni sulle metriche di successo.
 
 ### Impostazioni di configurazione (targeting di AEM)  {#configuring-settings-aem-targeting}
 
@@ -501,21 +500,21 @@ Per configurare obiettivi e impostazioni con Adobe Target:
 
    Se selezioni **Adobe Analytics**, seleziona la società e la suite di rapporti. Se hai selezionato **Adobe Target**, non è necessaria alcuna azione.
 
-   ![Origine reporting](../assets/targeted-reporting-source.png)
+   ![Origine per la generazione di rapporti](../assets/targeted-reporting-source.png)
 
-1. Da **Obiettivo principale**, vai all’area **Metrica per obiettivo** e seleziona la metrica di successo che desideri monitorare: Conversione, Entrate, Coinvolgimento. Quindi inserisci come viene misurata la metrica (o quale azione intraprende l’audience per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche dell’obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) sulle metriche di successo.
+1. Da **Obiettivo principale**, vai all’area **Metrica per obiettivo** e seleziona la metrica di successo che desideri monitorare: Conversione, Entrate, Coinvolgimento. Quindi inserisci come viene misurata la metrica (o quale azione intraprende l’audience per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche dell’obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) sulle metriche di successo.
 
    Per rinominare l’obiettivo, fai clic sui tre punti nell’angolo in alto a destra e seleziona **Rinomina**.
 
    Per cancellare tutti i campi, fai clic sui tre punti nell’angolo superiore destro e seleziona **Cancella tutti i campi**.
 
-   Tutte le metriche hanno anche impostazioni avanzate che è possibile definire. Seleziona **Impostazioni avanzate** per accedere a queste impostazioni. Vedi la definizione di come vengono conteggiate le metriche di successo nella tabella precedente e consulta la sezione [ documentazione Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
+   Tutte le metriche hanno anche impostazioni avanzate che è possibile definire. Seleziona **Impostazioni avanzate** per accedere a queste impostazioni. Vedi la definizione del conteggio delle metriche di successo nella tabella precedente e consulta la [documentazione Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    >
    >Devi avere almeno un obiettivo definito.
 
-   ![Metrica obiettivo](../assets/targeted-goal-metric.png)
+   ![Metrica per obiettivo](../assets/targeted-goal-metric.png)
 
    >[!NOTE]
    >
@@ -529,7 +528,7 @@ Per configurare obiettivi e impostazioni con Adobe Target:
    >
    >Puoi rimuovere gli obiettivi aggiuntivi toccando o facendo clic sui tre punti e toccando o facendo clic su **Elimina**. AEM richiede che sia impostata almeno un obiettivo.
 
-1. Se desiderate maggiore controllo sul modo in cui vengono conteggiate le metriche di successo, toccate o fate clic su **Impostazioni avanzate** per accedervi.
+1. Se desideri un maggiore controllo sul conteggio delle metriche di successo, tocca o fai clic su **Impostazioni avanzate** per accedervi.
 1. Fai clic su **Salva**.
 
 Dopo la configurazione, puoi [visualizzare le prestazioni delle attività](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) che utilizzano Adobe Target (sia il targeting di esperienza che del test A/B). Inoltre, con il targeting del test A/B, puoi [convertire i vincitori.](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) 
@@ -557,14 +556,14 @@ Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
 * L’attività di simulazione in modalità targeting: nella pagina vengono visualizzate le offerte per l’utente attualmente selezionato in Context Hub. È possibile modificare le offerte con targeting per l’utente.
 * Modalità anteprima: utilizza Context Hub per selezionare gli utenti e le posizioni che soddisfano i criteri dei segmenti su cui si basa l’esperienza. Quando le selezioni di Context Hub cambiano, i contenuti con targeting cambiano di conseguenza.
 
-1. Per passare alla modalità Anteprima, sulla barra degli strumenti fare clic o toccare **Anteprima**.
+1. Per passare alla modalità Anteprima, sulla barra degli strumenti tocca o fai clic su **Anteprima**.
 1. Nella barra degli strumenti, tocca o fai clic sull’icona centrale di Context Hub.
 
    ![Pulsante ContextHub](../assets/targeted-contexthub-button.png)
 
 1. Usa Context Hub per modificare le proprietà di contesto. Ad esempio, tocca o fai clic su Proprietà personale per selezionare un utente diverso.
 
-   ![Barra degli strumenti ContextHub](../assets/targeted-contexthub-toolbar.png)
+   ![Barra degli strumenti di ContextHub](../assets/targeted-contexthub-toolbar.png)
 
    La pagina viene modificata per visualizzare il contenuto a cui è destinato il contesto corrente.
 
@@ -574,13 +573,13 @@ Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
 
 È possibile personalizzare il componente Target accedendo alle opzioni del componente in base a uno dei due modi seguenti:
 
-1. Dopo aver eseguito il targeting del componente, nel componente Target tocca o fai clic sul componente, quindi sull’icona delle impostazioni (ingranaggio).
+1. Dopo aver eseguito il targeting del componente, nel componente Target tocca o fai clic sul componente e quindi sull’icona delle impostazioni (ingranaggio).
 
    ![Impostazioni dei componenti](../assets/targeted-component-settings.png)
 
    AEM mostra la finestra delle opzioni del componente Target.
 
-   ![Finestra di dialogo Target](../assets/targeted-dialog.png)
+   ![Finestra di dialogo di Target](../assets/targeted-dialog.png)
 
 1. In alternativa, per accedere a queste impostazioni in modalità a schermo intero, nella finestra delle opzioni del componente Target, tocca o fai clic sull’icona a schermo intero.
 
@@ -594,8 +593,8 @@ Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
 
 | Opzione | Descrizione |
 |---|---|
-| Dove si trova | La posizione è una stringa che assegna un nome alla posizione del contenuto di destinazione e collega le offerte con i punti (o posizioni o componenti) della pagina in cui tali offerte devono essere inserite. Questo campo è un valore generico. Se inserisci un’offerta in un componente, l’offerta ricorda l’ID della posizione. Quando la pagina viene eseguita, il motore valuta i segmenti dell’utente e in base a questo, risolve le esperienze dalle campagne attive che devono essere visualizzate. Quindi, controlla gli ID di posizione sulla pagina e cerca di far corrispondere le offerte con tali ID. |
-| Motore | Selezionate tra le regole lato client (senza tracciamento),  Adobe Target, ContextHub e  Adobe Campaign a seconda del motore da utilizzare. |
+| Dove si trova | La posizione è una stringa che assegna un nome alla posizione del contenuto di destinazione e collega le offerte con i punti (o posizioni o componenti) della pagina in cui tali offerte devono essere posizionate. Questo campo è un valore generico. Se inserisci un’offerta in un componente, l’offerta ricorda l’ID della posizione. Quando la pagina viene eseguita, il motore valuta i segmenti dell’utente e in base a questo, risolve le esperienze dalle campagne attive che devono essere visualizzate. Quindi, controlla gli ID di posizione sulla pagina e cerca di far corrispondere le offerte con tali ID. |
+| Motore | Seleziona tra le regole lato client (senza monitoraggio), Adobe Target, ContextHub e Adobe Campaign a seconda del motore che desideri utilizzare. |
 
 Se hai selezionato Adobe Target come motore:
 
@@ -603,11 +602,11 @@ Se hai selezionato Adobe Target come motore:
 
 | Opzione | Descrizione |
 |---|---|
-| Impostazione destinazione precisa | L&#39;attivazione di un targeting preciso indica al componente di attendere la disponibilità dei dati contestuali del client o dell&#39;hub di contesto prima di inviare la richiesta a  Adobe Target. Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato. Se selezionate la casella di controllo Impostazione destinazione accurata, la mbox esegue una mboxDefine prima e una mboxUpdate più tardi, generando una richiesta Ajax dopo che i dati sono disponibili. Se non selezionate la casella di controllo Impostazione destinazione accurata, la mbox esegue mboxCreate e genera immediatamente una richiesta sincrona (in questo caso, non tutti i dati contestuali potrebbero essere ancora disponibili). Nota: L&#39;attivazione o la disattivazione di un targeting preciso su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente. |
-| Includi segmenti risolti | La selezione di questa casella di controllo include tutti i segmenti risolti nella chiamata alla mbox ed eventuali parametri configurati nella pagina e nel framework. Questo funziona solo in situazioni con API XML dove stai sincronizzando i segmenti AEM. Se disponi di segmenti in AEM che non vengono gestiti da Adobe Target (come i segmenti di script), questa opzione consente di risolvere il segmento in AEM e segnalare ad Adobe Target che il segmento è attivo. |
-| Parametri di contesto ereditati | Elenca gli eventuali parametri contestuali ereditati dal framework Adobe Target  associato alla pagina selezionata. |
-| Param contesto | Tocca o fai clic su Aggiungi campo per configurare parametri di contesto aggiuntivi (come avviene per ciò che è disponibile nel framework di Target). I parametri di contesto aggiunti al componente si applicano solo al componente e non ad altro componente, come accadrebbe se si aggiungessero parametri di contesto direttamente al framework. |
-| Param statici | Tocca o fai clic su Aggiungi campo per configurare parametri statici aggiuntivi (come avviene per i parametri disponibili nel framework di Target). I parametri statici aggiunti al componente si applicano solo al componente e non ad altro componente, come accadrebbe se si aggiungessero parametri statici direttamente al framework. I parametri statici non sono contenuti nel contesto (contesto cliente del Content Hub). |
+| Impostazione destinazione precisa | L’abilitazione di un targeting accurato indica al componente di attendere che i dati contestuali o contestuali dell’hub siano disponibili prima di inviare la richiesta ad Adobe Target. Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato. Se selezioni la casella di controllo Targeting accurato , la mbox esegue prima una mboxDefine e poi una mboxUpdate dando luogo a una richiesta Ajax una volta che i dati sono disponibili. Se non selezioni la casella di controllo Targeting accurato , la mbox esegue una mboxCreate con conseguente richiesta sincrona immediata (in questo caso, non tutti i dati contestuali potrebbero essere ancora disponibili). Nota: L’abilitazione o la disabilitazione del targeting accurato su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente. |
+| Includi segmenti risolti | Selezionando questa casella di controllo sono inclusi tutti i segmenti risolti nella chiamata mbox e tutti i parametri configurati nella pagina e nel framework. Questo funziona solo in situazioni con API XML dove stai sincronizzando i segmenti AEM. Se disponi di segmenti in AEM che non vengono gestiti da Adobe Target (come i segmenti di script), questa opzione consente di risolvere il segmento in AEM e segnalare ad Adobe Target che il segmento è attivo. |
+| Parametri di contesto ereditati | Elenca i parametri di contesto ereditati dal framework Adobe Target, se presenti, associati alla pagina selezionata. |
+| Parametri di contesto | Tocca o fai clic su Aggiungi campo per configurare parametri di contesto aggiuntivi (come quelli disponibili nel framework di Target). I parametri di contesto aggiunti al componente si applicano solo al componente e non a un altro componente come accadrebbe se si aggiungessero parametri di contesto direttamente al framework. |
+| Parametri statici | Tocca o fai clic su Aggiungi campo per configurare parametri statici aggiuntivi (come quelli disponibili nel framework di Target). I parametri statici aggiunti al componente si applicano solo al componente e non a un altro componente come accadrebbe se si aggiungessero parametri statici direttamente al framework. I parametri statici non sono contenuti nel contesto (contesto cliente del Content Hub). |
 
 >[!NOTE]
 >
@@ -615,6 +614,6 @@ Se hai selezionato Adobe Target come motore:
 >
 >Seleziona **Adobe Campaign** come motore se stai integrando AEM con Adobe Campaign. Consulta Integrazione di AEM con Adobe Campaign per ulteriori informazioni.
 >
->Seleziona **ContextHub** come motore se stai utilizzando ContextHub per il targeting. Per ulteriori informazioni, consulta Configurazione di ContextHub.
+>Seleziona **ContextHub** come motore se stai utilizzando ContextHub per il targeting. Per ulteriori informazioni, consulta Configurazione di ContextHub .
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
 <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub.](/help/sites-administering/contexthub-config.md)-->
