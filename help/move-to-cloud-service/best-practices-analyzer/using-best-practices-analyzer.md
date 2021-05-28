@@ -1,14 +1,13 @@
 ---
 title: Utilizzo di Best Practices Analyzer
 description: Utilizzo di Best Practices Analyzer
-translation-type: tm+mt
-source-git-commit: 3d1aa714bacc74f77672ce2d7265da5239a6c6ff
+exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 43%
+source-wordcount: '2506'
+ht-degree: 42%
 
 ---
-
 
 # Utilizzo di Best Practices Analyzer {#using-best-practices-analyzer}
 
@@ -16,13 +15,13 @@ ht-degree: 43%
 >id="aemcloud_bpa_using"
 >title="Utilizzo di Best Practices Analyzer"
 >abstract="Esamina la documentazione relativa all’utilizzo di Best Practices Analyzer (precedentemente Cloud Readiness Analyzer) e il rapporto generato. Il rapporto di Best Practices Analyzer (Analisi di best practice) viene utilizzato per acquisire una comprensione di alto livello della preparazione generale all’aggiornamento."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considerazioni importanti sull&#39;utilizzo di Best Practices Analyzer {#imp-considerations}
 
 Leggi la sezione seguente per comprendere le considerazioni importanti sull’esecuzione di Best Practices Analyzer (BPA):
 
-* Il rapporto BPA viene creato utilizzando l&#39;output del rilevatore pattern [Adobe Experience Manager (AEM)](https://docs.adobe.com/content/help/it-IT/experience-manager-65/deploying/upgrading/pattern-detector.html). La versione del rilevatore pattern utilizzata da BPA è inclusa nel pacchetto di installazione BPA.
+* Il rapporto BPA viene creato utilizzando l&#39;output di Adobe Experience Manager (AEM) [rilevatore pattern](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). La versione del rilevatore pattern utilizzata da BPA è inclusa nel pacchetto di installazione BPA.
 
 * Il BPA può essere eseguito solo dall&#39;utente **admin** o da un utente nel gruppo **administrators** .
 
@@ -248,8 +247,8 @@ Il valore di questa proprietà corrisponde alla durata della cache, in secondi. 
 
 Per eseguire il rilevatore pattern, BPA utilizza un account utente di servizio di sistema denominato `repository-reader-service` . Questo account è disponibile in AEM 6.2 e versioni successive. Al AEM 6.1, questo account deve essere creato *prima dell&#39;installazione di* BPA, eseguendo le seguenti operazioni:
 
-1. Per creare un utente segui le istruzioni in [Creazione di un nuovo utente di servizio](https://docs.adobe.com/content/help/it-IT/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user). Imposta UserID su `repository-reader-service` e lascia vuoto il Percorso intermedio, quindi fai clic sul segno di spunta verde.
+1. Per creare un utente segui le istruzioni in [Creazione di un nuovo utente di servizio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user). Imposta UserID su `repository-reader-service` e lascia vuoto il Percorso intermedio, quindi fai clic sul segno di spunta verde.
 
-2. Segui le istruzioni riportate nella sezione [Gestione di utenti e gruppi](https://docs.adobe.com/content/help/it-IT/experience-manager-65/administering/security/security.html#managing-users-and-groups), in particolare Aggiunta di utenti a un gruppo, per aggiungere l’utente `repository-reader-service` al gruppo `administrators`.
+2. Segui le istruzioni riportate nella sezione [Gestione di utenti e gruppi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), in particolare Aggiunta di utenti a un gruppo, per aggiungere l’utente `repository-reader-service` al gruppo `administrators`.
 
 3. Installa il pacchetto BPA tramite Gestione pacchetti nell&#39;istanza di AEM sorgente. Questa azione aggiunge la necessaria modifica alla configurazione ServiceUserMapper per l’utente di servizio del sistema `repository-reader-service`.)
