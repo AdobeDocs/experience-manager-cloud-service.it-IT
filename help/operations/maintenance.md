@@ -2,15 +2,21 @@
 title: Attività di manutenzione in AEM come Cloud Service
 description: Attività di manutenzione in AEM come Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-translation-type: tm+mt
-source-git-commit: 068ae08fddd482e4367b4bf1c8cc3776bbb4cc6b
+source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 1%
+source-wordcount: '992'
+ht-degree: 2%
 
 ---
 
 # Attività di manutenzione in AEM come Cloud Service
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_maintenance"
+>title="Attività di manutenzione"
+>abstract="Le attività di manutenzione sono processi eseguiti secondo una pianificazione al fine di ottimizzare il repository. Con AEM come Cloud Service, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando ad Adobe le operazioni dell&#39;infrastruttura."
+>additional-url="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html" text="Guida alla manutenzione AEM"
+>additional-url="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks" text="Attività di manutenzione del dashboard delle operazioni"
 
 Le attività di manutenzione sono processi eseguiti secondo una pianificazione al fine di ottimizzare il repository. Con AEM come Cloud Service, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando ad Adobe le operazioni dell&#39;infrastruttura.
 
