@@ -1,8 +1,7 @@
 ---
 title: Note sulla versione 2021.3.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service - Note sulla versione 2021.3.0.'
-translation-type: tm+mt
-source-git-commit: 63b7c11683425cc20851ee5a16ee099511429b17
+source-git-commit: 3ff105507f4d42f5858a7e3a4c703d9135b36e5b
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 4%
@@ -26,7 +25,7 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 La data di rilascio per [!DNL Adobe Experience Manager] come Cloud Service 2021.3.0 è il 25 marzo 2021.
 La versione seguente (2021.4.0) sarà del 29 aprile 2021.
 
-## [!DNL Adobe Experience Manager Sites] come Cloud Service  {#sites}
+## [!DNL Adobe Experience Manager Sites] come Cloud Service {#sites}
 
 * [È ora possibile abilitare a livello di progetto la versione Progressive Web App (PWA) di un ](/help/sites-cloud/authoring/features/enable-pwa.md) sito tramite una configurazione semplice.
 * Estensioni del modello per frammenti di contenuto : ora è possibile definire tipi di dati di testo con più righe come elenchi a più campi.
@@ -63,7 +62,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms ha aiutato molte organizzazioni a fornire esperienze di onboarding e registrazione straordinarie nel corso degli anni. Queste esperienze hanno aiutato le organizzazioni a convertire i lead in vendite, a elaborare i dati dei clienti acquisiti, a fornire esperienze reattive in base al profilo di pubblico e molto altro. Ora AEM Forms è disponibile come servizio cloud.
 
-È possibile utilizzare [AEM Forms come Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) per creare moduli digitali, collegare moduli a origini dati esistenti, integrare moduli con Adobe Sign per aggiungere firme elettroniche ai moduli, generare documenti di record (DoR) per archiviare i moduli inviati come file PDF. Il servizio può anche convertire i PDF forms esistenti in moduli digitali. Oltre alle funzioni standard di AEM Forms, il servizio offre diverse funzionalità native per il cloud, come il ridimensionamento automatico, tempi di inattività zero per gli aggiornamenti e ambiente di sviluppo nativo per il cloud. Leggi [questo post di blog](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) per scoprire le funzionalità e le funzionalità di AEM Forms as a Cloud Service.
+È possibile utilizzare [AEM Forms come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) per creare moduli digitali, collegare moduli a origini dati esistenti, integrare moduli con Adobe Sign per aggiungere firme elettroniche ai moduli, generare documenti di record (DoR) per archiviare i moduli inviati come file PDF. Il servizio può anche convertire i PDF forms esistenti in moduli digitali. Oltre alle funzioni standard di AEM Forms, il servizio offre diverse funzionalità native per il cloud, come il ridimensionamento automatico, tempi di inattività zero per gli aggiornamenti e ambiente di sviluppo nativo per il cloud. Leggi [questo post di blog](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) per scoprire le funzionalità e le funzionalità di AEM Forms as a Cloud Service.
 
 Puoi rivolgerti al tuo rappresentante Adobe per una demo o per iscriverti al servizio.
 
