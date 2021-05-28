@@ -1,11 +1,10 @@
 ---
 title: Struttura dei progetti AEM
-description: Scopri come definire le strutture dei pacchetti per la distribuzione nel Cloud Service Adobe Experience Manager.
+description: Scopri come definire le strutture dei pacchetti per la distribuzione in Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-translation-type: tm+mt
-source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2869'
 ht-degree: 13%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 13%
 
 >[!TIP]
 >
->Acquisisci familiarità con l&#39;utilizzo di base di [AEM Project Archetype](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/developing/archetype/overview.html) e con il [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md) in quanto questo articolo si basa su questi insegnamenti e concetti.
+>Acquisisci familiarità con l&#39;utilizzo di base di [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) e con il [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md) in quanto questo articolo si basa su questi insegnamenti e concetti.
 
 Questo articolo illustra le modifiche necessarie affinché i progetti Adobe Experience Manager Maven siano AEM come un Cloud Service compatibile, garantendo che rispettino la suddivisione di contenuti mutabili e immutabili, che le dipendenze siano stabilite per creare distribuzioni deterministiche non in conflitto e che siano inserite in una struttura distribuibile.
 
@@ -61,7 +60,7 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
 + Il file Jar del bundle OSGi viene generato e incorporato direttamente in tutto il progetto.
 
 + Il pacchetto `ui.apps` contiene tutto il codice da distribuire e viene distribuito solo su `/apps`. Gli elementi comuni del pacchetto `ui.apps` includono, tra l&#39;altro:
-   + [Definizioni dei componenti e ](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html) script HTL
+   + [Definizioni dei componenti e ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) script HTL
       + `/apps/my-app/components`
    + JavaScript e CSS (tramite [Librerie client](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
