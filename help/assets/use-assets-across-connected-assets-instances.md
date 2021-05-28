@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Gestione delle risorse, risorse collegate, distribuzione delle risorse, utenti e gruppi
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2966'
 ht-degree: 26%
@@ -198,7 +198,7 @@ Per visualizzare e gestire i riferimenti nella distribuzione [!DNL Assets], effe
 
 ## Limitazioni e best practice {#tip-and-limitations}
 
-* Per ottenere informazioni sull’utilizzo delle risorse, configura la funzionalità [Asset Insight](/help/assets/assets-insights.md) sull’istanza [!DNL Sites] .
+* Per ottenere informazioni sull’utilizzo delle risorse, configura la funzionalità [Informazioni sulle risorse](/help/assets/assets-insights.md) sull’istanza [!DNL Sites] .
 
 ### Gestione di autorizzazioni e risorse {#permissions-and-managing-assets}
 
