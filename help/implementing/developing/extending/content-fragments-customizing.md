@@ -2,17 +2,16 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-translation-type: tm+mt
-source-git-commit: 24da05afce75a16ed2223130ac1825b10ee964e1
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 3%
+source-wordcount: '1796'
+ht-degree: 2%
 
 ---
 
 # Personalizzazione ed estensione dei frammenti di contenuto{#customizing-and-extending-content-fragments}
 
-All’interno di Adobe Experience Manager come Cloud Service un frammento di contenuto estende una risorsa standard; vedi:
+In Adobe Experience Manager as a Cloud Service un frammento di contenuto estende una risorsa standard; vedi:
 
 * [Creazione e gestione di ](/help/assets/content-fragments/content-fragments.md) frammenti di contenuto e authoring delle  [pagine con ](/help/sites-cloud/authoring/fundamentals/content-fragments.md) frammenti di contenuto per ulteriori informazioni sui frammenti di contenuto.
 
@@ -102,9 +101,9 @@ Per integrare con Assets core:
 
 >[!CAUTION]
 >
->Il componente [Frammento di contenuto fa parte dei componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html). Per ulteriori informazioni, consulta [Sviluppo di componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) .
+>Il componente [Frammento di contenuto fa parte dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html). Per ulteriori informazioni, consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) .
 
-È possibile fare riferimento ai frammenti di contenuto da AEM pagine, come per qualsiasi altro tipo di risorsa. AEM fornisce il **[componente di base Frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** - un componente [che consente di includere frammenti di contenuto nelle pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere questo componente di base **[Frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)**.
+È possibile fare riferimento ai frammenti di contenuto da AEM pagine, come per qualsiasi altro tipo di risorsa. AEM fornisce il **[componente di base Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)** - un componente [che consente di includere frammenti di contenuto nelle pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere questo componente di base **[Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)**.
 
 * Il componente utilizza la proprietà `fragmentPath` per fare riferimento al frammento di contenuto effettivo. La proprietà `fragmentPath` viene gestita allo stesso modo di proprietà simili di altri tipi di risorse; ad esempio, quando il frammento di contenuto viene spostato in un’altra posizione.
 
@@ -171,7 +170,7 @@ I frammenti di contenuto possono essere integrati con:
 
 Puoi utilizzare l’API lato server per accedere ai frammenti di contenuto; vedi:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -181,7 +180,7 @@ Puoi utilizzare l’API lato server per accedere ai frammenti di contenuto; vedi
 
 Le tre interfacce seguenti possono fungere da punti di ingresso:
 
-* **Frammento di contenuto**  ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Frammento di contenuto**  ([ContentFragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    Questa interfaccia consente di lavorare con un frammento di contenuto in modo astratto.
 
@@ -207,7 +206,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
    Le interfacce che rappresentano gli elementi principali di un frammento sono:
 
-   * **Elemento di contenuto**  ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Elemento di contenuto**  ([ContentElement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Ottenere dati di base (nome, titolo, descrizione)
       * Ottieni/Imposta contenuto
@@ -219,7 +218,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
          * Rimuovere le varianti (vedere [Avvertenze](#caveats))
          * Accedere ai dati delle varianti (vedere `ContentVariation`)
       * Collegamento per la risoluzione delle varianti (se la variante specificata non è disponibile per un elemento, è possibile applicare una logica di fallback aggiuntiva specifica per l’implementazione)
-   * **Variazione di contenuto**  ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Variazione di contenuto**  ([ContentVariation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Ottenere dati di base (nome, titolo, descrizione)
       * Ottieni/Imposta contenuto
@@ -249,9 +248,9 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
 * `ContentElement` può essere adattato a:
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - per accedere alle informazioni strutturali dell&#39;elemento.
+   * [`ElementTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - per accedere alle informazioni strutturali dell&#39;elemento.
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` può essere adattato a:
 
@@ -354,4 +353,4 @@ Se desideri impostare un intervallo di salvataggio automatico di 5 minuti, devi 
 
 Per ulteriori informazioni, consulta
 
-* [Componenti core - Componente frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)  (consigliato)
+* [Componenti core - Componente frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)  (consigliato)
