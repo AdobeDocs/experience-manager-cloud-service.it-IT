@@ -4,7 +4,7 @@ description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come
 feature: Gestione risorse,Caricare
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -217,7 +217,7 @@ I dettagli tecnici delle API e del protocollo di caricamento, nonché i collegam
 
 * Adobe consiglia di aggiungere non più di 1000 risorse in ciascuna cartella in [!DNL Experience Manager Assets]. Anche se è possibile aggiungere più risorse a una cartella, è possibile che si verifichino problemi di prestazioni, ad esempio una navigazione più lenta a tali cartelle.
 
-* Quando selezioni **[!UICONTROL Sostituisci]** nella finestra di dialogo [!UICONTROL Conflitto nome], l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente. Se [Asset Insights](/help/assets/assets-insights.md) è abilitato per tracciare impression o clic con [!DNL Adobe Analytics], l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa in [!DNL Analytics].
+* Quando selezioni **[!UICONTROL Sostituisci]** nella finestra di dialogo [!UICONTROL Conflitto nome], l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente. Se [Informazioni sulle risorse](/help/assets/assets-insights.md) è abilitato per tracciare impression o clic con [!DNL Adobe Analytics], l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa in [!DNL Analytics].
 
 * Alcuni metodi di caricamento non ti impediscono di caricare risorse con [caratteri proibiti](#filename-handling) nei nomi dei file. I caratteri vengono sostituiti dal simbolo `-`.
 
