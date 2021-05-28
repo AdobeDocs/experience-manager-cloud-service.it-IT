@@ -2,14 +2,13 @@
 title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 feature: Dispatcher
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
-
 
 # Introduzione {#intro}
 
@@ -73,7 +72,7 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
 * utilizzando AEM framework di libreria lato client, i codici JavaScript e CSS vengono generati in modo tale che i browser possano memorizzarli nella cache a tempo indefinito, poiché qualsiasi modifica si manifesta come nuovi file con un percorso univoco.  In altre parole, l’HTML che fa riferimento alle librerie client verrà prodotto in base alle esigenze, in modo che i clienti possano vedere nuovi contenuti mentre vengono pubblicati. Il controllo della cache è impostato su &quot;immutabile&quot; o su 30 giorni per i browser meno recenti che non rispettano il valore &quot;immutabile&quot;.
 * per ulteriori informazioni, consulta la sezione [Librerie lato client e coerenza delle versioni](#content-consistency) .
 
-### Immagini e contenuti sufficientemente grandi archiviati nell&#39;archiviazione BLOB {#images}
+### Immagini e contenuti sufficientemente grandi archiviati in BLOB {#images}
 
 * per impostazione predefinita, non memorizzato nella cache
 * può essere impostato a un livello più granulare dalle seguenti direttive apache `mod_headers`:
@@ -113,7 +112,7 @@ In generale, non sarà necessario annullare la validità della cache del dispatc
 
 Come nelle versioni precedenti di AEM, la pubblicazione o l’annullamento della pubblicazione di pagine cancella il contenuto dalla cache del dispatcher. Se si sospetta un problema di caching, i clienti devono ripubblicare le pagine in questione.
 
-Quando l’istanza di pubblicazione riceve una nuova versione di una pagina o di una risorsa dall’autore, utilizza l’agente di eliminazione per annullare la validità dei percorsi appropriati sul proprio dispatcher. Il percorso aggiornato viene rimosso dalla cache del dispatcher, insieme ai relativi genitori, fino a un livello (puoi configurarlo con [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+Quando l’istanza di pubblicazione riceve una nuova versione di una pagina o di una risorsa dall’autore, utilizza l’agente di eliminazione per annullare la validità dei percorsi appropriati sul proprio dispatcher. Il percorso aggiornato viene rimosso dalla cache del dispatcher, insieme ai relativi genitori, fino a un livello (puoi configurarlo con [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
 
 ### Annullamento esplicito della validità della cache del dispatcher {#explicit-invalidation}
 
@@ -124,8 +123,8 @@ Prima di AEM come Cloud Service, c&#39;erano due modi per invalidare la cache de
 1. Richiama l’agente di replica, specificando l’agente di eliminazione del dispatcher di pubblicazione
 2. Chiamata diretta dell’ API `invalidate.cache` (ad esempio, `POST /dispatcher/invalidate.cache`)
 
-L’approccio API del dispatcher `invalidate.cache` non sarà più supportato in quanto si rivolge solo a un nodo specifico del dispatcher. AEM come Cloud Service funziona a livello di servizio, non a livello di singolo nodo, pertanto le istruzioni di invalidazione nella pagina [Invalidazione delle pagine in cache da AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) non sono più valide per AEM come Cloud Service .
-È invece necessario utilizzare l&#39;agente di scaricamento della replica. Questa operazione può essere eseguita utilizzando l’API di replica. La documentazione sulle API di replica è disponibile [qui](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) e per un esempio di scaricamento della cache, consulta la [pagina di esempio API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) in particolare l’ esempio `CustomStep` che invia un’azione di replica di tipo ACTIVATE a tutti gli agenti disponibili. L’endpoint dell’agente di scaricamento non è configurabile ma preconfigurato per puntare al dispatcher, con corrispondenza con il servizio di pubblicazione che esegue l’agente di scaricamento. L’agente di scaricamento può in genere essere attivato da eventi o flussi di lavoro OSGi.
+L’approccio API del dispatcher `invalidate.cache` non sarà più supportato in quanto si rivolge solo a un nodo specifico del dispatcher. AEM come Cloud Service funziona a livello di servizio, non a livello di singolo nodo, pertanto le istruzioni di invalidazione nella pagina [Invalidazione delle pagine in cache da AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) non sono più valide per AEM come Cloud Service .
+È invece necessario utilizzare l&#39;agente di scaricamento della replica. Questa operazione può essere eseguita utilizzando l’API di replica. La documentazione sulle API di replica è disponibile [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) e per un esempio di scaricamento della cache, consulta la [pagina di esempio API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) in particolare l’ esempio `CustomStep` che invia un’azione di replica di tipo ACTIVATE a tutti gli agenti disponibili. L’endpoint dell’agente di scaricamento non è configurabile ma preconfigurato per puntare al dispatcher, con corrispondenza con il servizio di pubblicazione che esegue l’agente di scaricamento. L’agente di scaricamento può in genere essere attivato da eventi o flussi di lavoro OSGi.
 
 Il diagramma che segue illustra questo aspetto.
 
