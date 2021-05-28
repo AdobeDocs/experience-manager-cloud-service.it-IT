@@ -2,17 +2,16 @@
 title: Utilizzo di Nascondi condizioni
 description: È possibile utilizzare le condizioni Nascondi per determinare se è stato eseguito o meno il rendering di una risorsa componente.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-translation-type: tm+mt
-source-git-commit: fa3280defb2a97954c5ab1b70e7600382e370606
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 4%
+source-wordcount: '614'
+ht-degree: 1%
 
 ---
 
 # Utilizzo di Nascondi condizioni {#using-hide-conditions}
 
-È possibile utilizzare le condizioni Nascondi per determinare se è stato eseguito o meno il rendering di una risorsa componente. Un esempio di ciò è quando un autore di modelli configura il componente core [componente elenco](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) nell’ [editor modelli](/help/sites-cloud/authoring/features/templates.md) e decide di disabilitare le opzioni per creare l’elenco in base alle pagine figlie. Se si disabilita questa opzione nella finestra di dialogo di progettazione, viene impostata una proprietà in modo che quando si esegue il rendering del componente elenco, venga valutata la condizione Nascondi e l’opzione per mostrare le pagine figlie non venga visualizzata.
+È possibile utilizzare le condizioni Nascondi per determinare se è stato eseguito o meno il rendering di una risorsa componente. Un esempio di ciò è quando un autore di modelli configura il componente core [componente elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) nell’ [editor modelli](/help/sites-cloud/authoring/features/templates.md) e decide di disabilitare le opzioni per creare l’elenco in base alle pagine figlie. Se si disabilita questa opzione nella finestra di dialogo di progettazione, viene impostata una proprietà in modo che quando si esegue il rendering del componente elenco, venga valutata la condizione Nascondi e l’opzione per mostrare le pagine figlie non venga visualizzata.
 
 ## Panoramica {#overview}
 
@@ -50,7 +49,7 @@ Quando definisci l’espressione nascondi , tieni presente quanto segue:
 
 ## Esempio {#example}
 
-Esempi di condizioni di nascondere sono disponibili in AEM e in particolare nei [componenti principali](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html). Ad esempio, considera il componente di base [elenco](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) come implementato nell&#39;esercitazione [WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Esempi di condizioni di nascondere sono disponibili in AEM e in particolare nei [componenti principali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it). Ad esempio, considera il componente di base [elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) come implementato nell&#39;esercitazione [WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
 [Utilizzando l’editor](/help/sites-cloud/authoring/features/templates.md) modelli, l’autore del modello può definire nella finestra di dialogo della progettazione quali opzioni del componente elenco sono disponibili per l’autore della pagina. Ad esempio, se consentire o meno che l’elenco sia un elenco statico, un elenco di pagine figlie, un elenco di pagine con tag e così via. possono essere abilitate o disabilitate.
 
