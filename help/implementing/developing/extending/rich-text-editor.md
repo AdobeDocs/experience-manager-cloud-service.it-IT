@@ -2,14 +2,13 @@
 title: Configura l’editor Rich Text per creare contenuti in [!DNL Adobe Experience Manager] come Cloud Service.
 description: Configura l’editor Rich Text per creare contenuti in [!DNL Adobe Experience Manager] come Cloud Service.
 contentOwner: AG
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
-
 
 # Configurare l’editor Rich Text {#configure-the-rich-text-editor}
 
@@ -33,7 +32,7 @@ L’interfaccia RTE offre un [design reattivo](/help/sites-cloud/authoring/featu
 
 La barra degli strumenti fornisce le opzioni per l’esperienza di authoring WYSIWYG. [!DNL Experience Manager] gli amministratori possono configurare le opzioni disponibili nella barra degli strumenti dell’interfaccia. Per impostazione predefinita, in [!DNL Experience Manager] è disponibile un set completo di opzioni di modifica. Gli sviluppatori possono personalizzare [!DNL Experience Manager] per aggiungere altre opzioni di modifica.
 
-## Varie modalità di modifica {#editingmodes}
+## Varie modalità di editing {#editingmodes}
 
 Gli autori possono creare e modificare il contenuto testuale in [!DNL Experience Manager] utilizzando le diverse modalità dei componenti. Le opzioni della barra degli strumenti per l’authoring e la formattazione dei contenuti e l’esperienza utente dei componenti abilitati per l’editor Rich Text in diverse modalità di modifica variano a seconda delle configurazioni dell’editor Rich Text.
 
@@ -155,7 +154,7 @@ Per configurazioni dettagliate dei plug-in RTE, consulta [come attivare e config
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-Il [componente di testo Componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) consente agli editor modelli di configurare molti plug-in RTE utilizzando l’interfaccia utente come criteri di contenuto, eliminando la necessità di configurazioni tecniche. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente RTE come descritto in questo documento. Per ulteriori informazioni, consulta [creare modelli di pagina](/help/sites-cloud/authoring/features/templates.md) e la [documentazione per gli sviluppatori dei componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
+Il [componente di testo Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) consente agli editor modelli di configurare molti plug-in RTE utilizzando l’interfaccia utente come criteri di contenuto, eliminando la necessità di configurazioni tecniche. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente RTE come descritto in questo documento. Per ulteriori informazioni, consulta [creare modelli di pagina](/help/sites-cloud/authoring/features/templates.md) e la [documentazione per gli sviluppatori dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >A scopo di riferimento, i componenti Testo predefiniti (forniti nell’ambito di un’installazione standard) sono disponibili all’indirizzo:
 >
@@ -166,7 +165,7 @@ Il [componente di testo Componenti core](https://docs.adobe.com/content/help/en/
 >
 Per creare un componente di testo personalizzato, copia il componente di cui sopra invece di modificare questi componenti.
 
-## Configurare la barra degli strumenti dell’editor Rich Text {#dialogfullscreen}
+## Configura RTE, barra degli strumenti {#dialogfullscreen}
 
 [!DNL Experience Manager] consente di configurare l’interfaccia per l’Editor Rich Text in modo diverso per le diverse modalità di modifica. Le impostazioni predefinite sono fornite di seguito. Puoi ignorare queste impostazioni predefinite in base alle tue esigenze. È possibile personalizzare solo le funzioni della barra degli strumenti che si desidera fornire agli autori. Non è necessario specificare tutte le configurazioni della barra degli strumenti.
 
@@ -221,7 +220,7 @@ Se l&#39;opzione è un pop-over (contenente alcune caratteristiche di un plug-in
 
 Il nodo a comparsa in modalità in linea o a schermo intero contiene un elenco dei pop-up in uso. Ogni nodo figlio sotto il nodo `popovers` prende il nome dal plug-in (ad esempio, formato). Ha una proprietà &quot;items&quot; contenente un elenco delle funzioni del plug-in (ad esempio, format#bold).
 
-## Impostazioni dell’interfaccia utente e criteri dei contenuti dell’editor Rich Text {#rtecontentpolicies}
+## Impostazioni dell’interfaccia utente e criteri del contenuto dell’editor Rich Text {#rtecontentpolicies}
 
 Gli amministratori possono controllare le opzioni dell’editor Rich Text utilizzando i criteri dei contenuti, ad esempio anziché eseguire la configurazione come descritto in precedenza. I criteri dei contenuti definiscono le proprietà di progettazione di un componente quando viene utilizzato come parte di un [modello modificabile](/help/sites-cloud/authoring/features/templates.md). Ad esempio, se un componente di testo che utilizza l’editor Rich Text viene utilizzato con un modello modificabile, i criteri per i contenuti possono definire che l’opzione in grassetto è disponibile e che sono disponibili alcune opzioni di formattazione dei paragrafi. I criteri del contenuto sono riutilizzabili e possono essere applicati a più modelli.
 
@@ -231,7 +230,7 @@ Le opzioni disponibili nell’editor Rich Text scorrono a valle dalle configuraz
 * Se la configurazione dell’interfaccia utente dell’editor Rich Text è stata rimossa o non abilita un elemento, il criterio del contenuto non è in grado di configurarlo.
 * Un autore ha accesso solo alle funzionalità rese disponibili dalle configurazioni dell’interfaccia utente e dai criteri dei contenuti.
 
-Ad esempio, puoi vedere la [documentazione sui componenti di base di testo](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+Ad esempio, puoi vedere la [documentazione sui componenti di base di testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizzare la mappatura tra icone e comandi della barra degli strumenti {#iconstoolbar}
 
@@ -285,6 +284,6 @@ Di seguito è riportato uno snippet di esempio per mappare il comando `Bold` all
 >[!MORELIKETHIS]
 >
 >* [Configurare i plug-in RTE](configure-rich-text-editor-plug-ins.md)
->* [Utilizza l’editor Rich Text per l’authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
->* [Configurare l’editor Rich Text per i siti accessibili](rte-accessible-content.md)
+* [Utilizza l’editor Rich Text per l’authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+* [Configurare l’editor Rich Text per i siti accessibili](rte-accessible-content.md)
 
