@@ -2,11 +2,10 @@
 title: Registrazione di AEM come Cloud Service
 description: Scopri come configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati in AEM come Cloud Service.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-translation-type: tm+mt
-source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2332'
-ht-degree: 3%
+source-wordcount: '2330'
+ht-degree: 2%
 
 ---
 
@@ -164,7 +163,7 @@ Di seguito sono riportati alcuni esempi delle configurazioni di registrazione co
 }
 ```
 
-### Stadio {#stage}
+### Area di visualizzazione {#stage}
 
 /apps/my-app/config.stage/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
 
@@ -550,7 +549,7 @@ I registri AEM si trovano nella cartella `crx-quickstart/logs`, in cui è possib
 * Registro delle richieste HTTP AEM: `request.log`
 * Registro di accesso HTTP AEM: `access.log`
 
-I registri di livello Apache, incluso il dispatcher, si trovano nel contenitore Docker che contiene il Dispatcher. Per informazioni su come avviare il Dispatcher, consulta la [documentazione di Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) .
+I registri di livello Apache, incluso il dispatcher, si trovano nel contenitore Docker che contiene il Dispatcher. Per informazioni su come avviare il Dispatcher, consulta la [documentazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) .
 
 Per recuperare i registri:
 
