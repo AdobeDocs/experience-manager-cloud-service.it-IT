@@ -1,20 +1,19 @@
 ---
 title: Riferimento predicato di Query Builder
 description: Riferimento predicato per l’API di Query Builder.
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2217'
+ht-degree: 1%
 
 ---
-
 
 # Riferimento predicato di Query Builder {#query-builder-predicate-reference}
 
 ## Generale {#general}
 
-### radice {#root}
+### root {#root}
 
 Questo è il gruppo di predicati radice. Supporta tutte le funzionalità di un gruppo e consente di impostare parametri di query globali.
 
@@ -69,7 +68,7 @@ Questo è concettualmente `fulltext AND ( (path AND type) OR (path AND type) )`.
 * **`<predicate>`** - aggiunge predicati nidificati
 * **`N_<predicate>`** - aggiunge più predicati nidificati della stessa volta, come  `1_property, 2_property, ...`
 
-### ordina {#orderby}
+### ordine {#orderby}
 
 Questo predicato consente di ordinare i risultati. Se l’ordinamento è richiesto da più proprietà, questo predicato deve essere aggiunto più volte utilizzando il prefisso del numero, ad esempio `1_orderby=first`, `2_oderby=second`.
 
@@ -188,7 +187,7 @@ Supporta l’estrazione dei facet e fornisce bucket per ogni codice di lingua un
 
 * **`language`** - Codice della lingua ISO, ad esempio  `de`
 
-### risorsa principale {#mainasset}
+### principale {#mainasset}
 
 Questo predicato controlla se un nodo è una risorsa principale DAM e non una risorsa secondaria. In pratica si tratta di ogni nodo non all’interno di un nodo di risorse secondarie. Tieni presente che questo non controlla il tipo di nodo `dam:Asset`. Per utilizzare questo predicato, è sufficiente impostare `mainasset=true` o `mainasset=false`. Non ci sono altre proprietà.
 
@@ -202,7 +201,7 @@ Supporta l’estrazione dei facet e fornisce due bucket per le risorse principal
 
 ### MemberOf {#memberof}
 
-Questo predicato trova gli elementi che sono membri di una raccolta di risorse [sling](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) specifica.
+Questo predicato trova gli elementi che sono membri di una raccolta di risorse [sling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) specifica.
 
 Questo è un predicato solo filtraggio e non può sfruttare un indice di ricerca.
 
@@ -212,7 +211,7 @@ Non supporta l’estrazione dei facet.
 
 * **`memberOf`** - percorso della raccolta di risorse Sling
 
-### nome del nome del nome {#nodename}
+### nodename {#nodename}
 
 Questo predicato corrisponde ai nomi dei nodi JCR.
 
@@ -290,7 +289,7 @@ Non supporta l’estrazione dei facet.
 * **`upperOperation`** -  `<` (predefinito) o  `<=`, si applica al  `lowerValue`
 * **`decimal`** -  `true` se la proprietà selezionata è di tipo Decimal
 
-### relativa a aterange {#relativedaterange}
+### relativa {#relativedaterange}
 
 Questo predicato corrisponde alle proprietà `JCR DATE` rispetto a un intervallo data/ora utilizzando scostamenti di tempo relativi all&#39;ora corrente del server. Puoi specificare `lowerBound` e `upperBound` utilizzando un valore di millisecondi o la sintassi Bugzilla `1s 2m 3h 4d 5w 6M 7y` (un secondo, due minuti, tre ore, quattro giorni, cinque settimane, sei mesi, sette anni). Prefisso con `-` per indicare un offset negativo prima dell&#39;ora corrente. Se si specifica solo `lowerBound` o `upperBound`, l&#39;altro valore predefinito sarà `0`, che rappresenta l&#39;ora corrente.
 
@@ -327,7 +326,7 @@ Non supporta l’estrazione dei facet per i predicati della query salvata.
 
 * **`savedquery`** - percorso della query salvata (`String` proprietà o  `nt:file` nodo)
 
-### simili {#similar}
+### simile {#similar}
 
 Questo predicato è una ricerca per similarità utilizzando JCR XPath `rep:similar()`.
 
