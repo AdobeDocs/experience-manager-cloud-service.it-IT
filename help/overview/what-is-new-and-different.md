@@ -1,14 +1,13 @@
 ---
-title: Differenze e novità - Adobe Experience Manager as a Cloud Service
-description: 'Cosa è diverso e cosa è nuovo - Adobe Experience Manager (AEM) come Cloud Service. '
-translation-type: tm+mt
-source-git-commit: d2786f51edcb84e3d206c400e4faaecb46a54981
+title: Quali sono le differenze e le novità - Adobe Experience Manager as a Cloud Service
+description: Novità e differenze - Adobe Experience Manager (AEM) come Cloud Service.
+exl-id: d1ce126e-960c-4367-b741-af709dd81010
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1883'
 ht-degree: 10%
 
 ---
-
 
 # Novità e differenze {#what-is-new-and-what-is-different}
 
@@ -272,4 +271,4 @@ Per ulteriori informazioni, consulta:
 * [Modifiche di rilievo apportate ad AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Modifiche di rilievo apportate ad AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Introduzione ad AEM Assets as a Cloud Service](/help/assets/overview.md)
-* [Tutorial su Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
