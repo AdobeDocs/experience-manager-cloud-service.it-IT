@@ -2,11 +2,10 @@
 title: Plug-in Maven del pacchetto di contenuti di Adobe
 description: Utilizza il plug-in Maven del pacchetto di contenuti per distribuire le applicazioni AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-translation-type: tm+mt
-source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 7%
+source-wordcount: '1847'
+ht-degree: 5%
 
 ---
 
@@ -34,7 +33,7 @@ AEM come Cloud Service aderisce alle best practice più recenti per la gestione 
 
 >[!TIP]
 >
->Per ulteriori dettagli, consulta l’articolo [AEM Struttura del progetto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) nella AEM come documentazione di Cloud Service e la documentazione [AEM Archetipo di progetto](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/developing/archetype/overview.html) . Entrambi sono pienamente supportati per AEM 6.5.
+>Per ulteriori dettagli, consulta l’articolo [AEM Struttura del progetto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) nella AEM come documentazione di Cloud Service e la documentazione [AEM Archetipo di progetto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) . Entrambi sono pienamente supportati per AEM 6.5.
 
 ## Ottenimento del plug-in Maven del pacchetto di contenuti {#obtaining-the-content-package-maven-plugin}
 
@@ -109,7 +108,7 @@ Crea un pacchetto di contenuti già definito in un’istanza AEM.
 
 Tutti i parametri per l&#39;obiettivo di compilazione sono descritti nella sezione [Parametri comuni](#common-parameters) .
 
-### installa {#install}
+### installare {#install}
 
 Installa un pacchetto nella directory archivio. L’esecuzione di questo obiettivo non richiede un progetto Maven. L’obiettivo è associato alla fase `install` del ciclo di vita della build Maven.
 
@@ -148,7 +147,7 @@ Rimuove un pacchetto da Gestione pacchetti.
 
 Tutti i parametri dell&#39;obiettivo rm sono descritti nella sezione [Parametri comuni](#common-parameters) .
 
-### disinstalla {#uninstall}
+### disinstallare {#uninstall}
 
 Disinstalla un pacchetto. Il pacchetto rimane sul server nello stato disinstallato.
 
@@ -266,4 +265,4 @@ L’ultimo archetipo di progetto AEM implementa la struttura dei pacchetti con l
 
 >[!TIP]
 >
->Per ulteriori dettagli, consulta l’articolo [AEM Struttura del progetto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) nella AEM come documentazione di Cloud Service e la documentazione [AEM Archetipo di progetto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) . Entrambi sono pienamente supportati per AEM 6.5.
+>Per ulteriori dettagli, consulta l’articolo [AEM Struttura del progetto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) nella AEM come documentazione di Cloud Service e la documentazione [AEM Archetipo di progetto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) . Entrambi sono pienamente supportati per AEM 6.5.
