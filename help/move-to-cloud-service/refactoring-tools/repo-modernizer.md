@@ -2,21 +2,20 @@
 title: Modernizzatore dell'archivio
 description: Modernizzatore dell'archivio
 exl-id: b89156a8-3d7d-4d36-89a2-beeda35bbc01
-translation-type: tm+mt
-source-git-commit: 0ed18aad48f33fb0504d59a5f583b5a3dbea59f6
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 4%
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
 # Modernizzatore archivio {#repo-modernizer}
 
-Repository Modernizer è un&#39;utility sviluppata per ristrutturare i pacchetti di progetto esistenti separando il contenuto e il codice in pacchetti discreti in modo che sia compatibile con la struttura di progetto definita per Adobe Experience Manager come Cloud Service.
+Repository Modernizer è un&#39;utility sviluppata per ristrutturare i pacchetti di progetto esistenti separando il contenuto e il codice in pacchetti discreti in modo che sia compatibile con la struttura di progetto definita per Adobe Experience Manager as a Cloud Service.
 
 ## Introduzione {#introduction}
 
-Adobe Experience Manager as a Cloud Service introduce molte nuove funzioni e possibilità nei progetti AEM. Tuttavia, sono necessarie alcune modifiche ai progetti Adobe Experience Manager Maven per renderli compatibili con AEM Cloud Service. Ad alto livello, AEM una separazione di **content** e **code** in pacchetti secondari distinti per rispettare la suddivisione tra contenuto mutabile e immutabile. Per ulteriori informazioni sulla nuova struttura del progetto AEM per il Cloud Service, consulta [AEM Struttura del progetto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) .
+Adobe Experience Manager as a Cloud Service introduce molte nuove funzioni e possibilità nei progetti AEM. Tuttavia, sono necessarie alcune modifiche per rendere i progetti Adobe Experience Manager Maven compatibili con il Cloud Service AEM. Ad alto livello, AEM una separazione di **content** e **code** in pacchetti secondari distinti per rispettare la suddivisione tra contenuto mutabile e immutabile. Per ulteriori informazioni sulla nuova struttura del progetto AEM per il Cloud Service, consulta [AEM Struttura del progetto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) .
 
 Il Repository Modernizer crea una struttura di progetto di Cloud Service AEM compatibile creando la seguente struttura di distribuzione:
 
