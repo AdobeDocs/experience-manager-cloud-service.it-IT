@@ -2,18 +2,17 @@
 title: Introduzione e panoramica
 description: Introduzione e panoramica di contenuti e soluzioni commerce. Experience Manager Commerce Integration Framework (CIF) è il modello consigliato di Adobe per integrare ed estendere i servizi commerce da soluzioni commerce di Magenti e di altre soluzioni commerce di terze parti con l’Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
-exl-id: 74e832f9-f8ff-4901-b4c2-6a2862c51411
-translation-type: tm+mt
-source-git-commit: bc2f54d79a0e6138d551778f00fb19714d3adf74
+exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 3%
+source-wordcount: '874'
+ht-degree: 2%
 
 ---
 
 # Contenuto e commercio {#content-commerce}
 
-Con i contenuti e il commercio di Adobe Experience Manager, i brand possono scalare e innovare più rapidamente per differenziare le esperienze di e-commerce e catturare l&#39;accelerazione della spesa online. AEM Content and Commerce combina le esperienze coinvolgenti, omnicanale e personalizzate in Experience Manager con un numero qualsiasi di soluzioni commerce per portare esperienze differenziate in tutte le parti del percorso, riducendo i tempi di valutazione e promuovendo una conversione più elevata.
+Con i contenuti e il commercio di Adobe Experience Manager, i brand possono scalare e innovare più rapidamente per differenziare le esperienze di e-commerce e catturare l’accelerazione della spesa online. AEM Content and Commerce combina le esperienze coinvolgenti, omnicanale e personalizzate in Experience Manager con un numero qualsiasi di soluzioni commerce per portare esperienze differenziate in tutte le parti del percorso, riducendo i tempi di valutazione e promuovendo una conversione più elevata.
 
 ## Come i contenuti e il commercio aiutano i clienti ad avere successo
 
@@ -59,7 +58,7 @@ I potenti strumenti CIF in AEM consentono ai creatori di contenuti di creare rap
 
 ### Time-To-Value (TTV)
 
-Accelera lo sviluppo dei progetti con [AEM Componenti core](https://www.aemcomponents.dev/), [AEM Venia reference storefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html) e pattern di integrazione per PWA (Headless content &amp; commerce).
+Accelera lo sviluppo dei progetti con [AEM Componenti core](https://www.aemcomponents.dev/), [AEM Venia reference storefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) e pattern di integrazione per PWA (Headless content &amp; commerce).
 
 CIF è progettato per l’innovazione continua con un componente aggiuntivo sempre aggiornato, che consente ai clienti di accedere a funzioni nuove e migliorate.
 
