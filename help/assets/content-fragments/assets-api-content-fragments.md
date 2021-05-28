@@ -1,15 +1,14 @@
 ---
 title: Supporto dei frammenti di contenuto Adobe Experience Manager as a Cloud Service nell’API HTTP di Assets
 description: Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, una funzione importante AEM consegna headless.
-feature: Content Fragments,Assets HTTP API
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Frammenti di contenuto, API HTTP Assets
+exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1952'
 ht-degree: 2%
 
 ---
-
 
 # Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
@@ -28,13 +27,13 @@ Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, una f
 >
 L’implementazione corrente dell’API HTTP di Assets si basa sullo stile architettonico [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) .
 
-L’ [API REST di Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di Adobe Experience Manager come Cloud Service di accedere ai contenuti (memorizzati in AEM) direttamente tramite l’API HTTP, tramite operazioni CRUD (Creazione, lettura, aggiornamento, eliminazione).
+L’ [API REST di Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di Adobe Experience Manager as a Cloud Service di accedere ai contenuti (memorizzati in AEM) direttamente tramite l’API HTTP, tramite operazioni CRUD (Creazione, lettura, aggiornamento, eliminazione).
 
 L’API ti consente di utilizzare Adobe Experience Manager come Cloud Service come CMS headless (Content Management System) fornendo servizi di contenuto a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON.
 
 Ad esempio, le applicazioni a pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite l’API HTTP, spesso in formato JSON.
 
-Mentre [AEM Componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html) forniscono un’API molto completa, flessibile e personalizzabile che può servire le operazioni di lettura necessarie a questo scopo e il cui output JSON può essere personalizzato, richiedono AEM know-how WCM (Web Content Management) per l’implementazione in quanto devono essere ospitati in pagine basate su modelli AEM dedicati. Non tutte le SPA organizzazioni di sviluppo hanno accesso diretto a tali conoscenze.
+Mentre [AEM Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) forniscono un’API molto completa, flessibile e personalizzabile che può servire le operazioni di lettura necessarie a questo scopo e il cui output JSON può essere personalizzato, richiedono AEM know-how WCM (Web Content Management) per l’implementazione in quanto devono essere ospitati in pagine basate su modelli AEM dedicati. Non tutte le SPA organizzazioni di sviluppo hanno accesso diretto a tali conoscenze.
 
 Questo è il momento in cui è possibile utilizzare l’API REST di Assets. Consente agli sviluppatori di accedere direttamente alle risorse (ad esempio, immagini e frammenti di contenuto) senza dover prima incorporarle in una pagina e consegnare il contenuto in formato JSON serializzato.
 
@@ -52,7 +51,7 @@ API REST di Assets:
 
 ## Prerequisiti {#prerequisites}
 
-L’API REST di Assets è disponibile per ogni installazione predefinita di una versione Adobe Experience Manager recente come Cloud Service.
+L’API REST di Assets è disponibile per ogni installazione predefinita di una versione di Adobe Experience Manager recente come Cloud Service.
 
 ## Concetti fondamentali {#key-concepts}
 
@@ -259,7 +258,7 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 
 >[!NOTE]
 >
->Per ulteriori dettagli, consulta [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particolare, [API Adobe Experience Manager Assets - Frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>Per ulteriori dettagli, consulta [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particolare, [API Adobe Experience Manager Assets - Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Lettura/consegna {#read-delivery}
 
@@ -377,7 +376,7 @@ I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
 
 Vedi qui per riferimenti API dettagliati:
 
-* [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 
@@ -389,4 +388,3 @@ Per ulteriori informazioni, consulta:
 
 * [Documentazione API HTTP di Assets](/help/assets/mac-api-assets.md)
 * [Sessione Gem AEM: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-
