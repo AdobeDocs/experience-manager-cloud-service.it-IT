@@ -2,20 +2,19 @@
 title: Creare e gestire risorse digitali in più lingue
 description: Scopri come automatizzare i flussi di lavoro per la traduzione di risorse, inclusi binari, metadati e tag in più lingue.
 contentOwner: AG
-feature: Asset Management,Translation
+feature: Gestione risorse, traduzione
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2593'
+source-wordcount: '2590'
 ht-degree: 24%
 
 ---
 
-
 # Risorse multilingue {#multilingual-assets}
 
-Per risorse multilingue si intendono le risorse con file binari, metadati e tag in più lingue. In genere, i binari, i metadati e i tag delle risorse esistono in una lingua, che vengono poi tradotti in altre lingue per l’utilizzo in progetti multilingue. Adobe Experience Manager (AEM) Assets consente di automatizzare i flussi di lavoro di traduzione sulle risorse (inclusi binari, metadati e tag) per generare risorse in altre lingue da utilizzare nei progetti multilingue.
+Per risorse multilingue si intendono le risorse con file binari, metadati e tag in più lingue. In genere, i binari, i metadati e i tag delle risorse esistono in una lingua, che vengono poi tradotti in altre lingue per l’utilizzo in progetti multilingue. Risorse Adobe Experience Manager (AEM) consente di automatizzare i flussi di lavoro di traduzione sulle risorse (inclusi binari, metadati e tag) per generare risorse in altre lingue da utilizzare nei progetti multilingue.
 
 Per automatizzare i flussi di lavoro di traduzione, è possibile integrare fornitori di servizi di traduzione con AEM e creare progetti per la traduzione delle risorse in più lingue. AEM supporta flussi di lavoro di traduzione umana e automatica.
 
@@ -26,11 +25,11 @@ Traduzione automatica: Il servizio di traduzione automatica traduce immediatamen
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
-https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/translation-projects.html
-https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/preparing-assets-for-translation.html
-[Apply translation cloud services to folders](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/transition-cloud-services.html)
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
 
-One of these articles is a copy of [Preparing Content for Translation](https://docs.adobe.com/content/help/en/experience-manager-65/administering/introduction/tc-prep.html
+One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html
 
 -->
 
@@ -53,7 +52,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 Per risorse multilingue si intendono le risorse con file binari, metadati e tag in più lingue. In genere, i binari, i metadati e i tag delle risorse esistono in una lingua, che vengono poi tradotti in altre lingue per l’utilizzo in progetti multilingue.
 
-In Adobe Experience Manager (AEM) Assets, le risorse multilingue sono incluse nelle cartelle, in cui ogni cartella contiene le risorse in una lingua diversa.
+In Risorse Adobe Experience Manager (AEM), le risorse multilingue sono incluse nelle cartelle, in cui ogni cartella contiene le risorse in una lingua diversa.
 
 Ogni cartella della lingua è denominata copia della lingua. La cartella principale di una copia per lingua, nota come radice lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/dam/it` è la directory principale della lingua italiana per la copia in lingua italiana. Le copie in lingua devono utilizzare una [directory principale della lingua configurata correttamente](#create-a-language-root) in modo che la lingua corretta venga utilizzata durante l&#39;esecuzione delle traduzioni delle risorse di origine.
 
@@ -71,7 +70,7 @@ La copia per lingua per la quale hai originariamente aggiunto le risorse è la l
         |- zh
 ```
 
-Per preparare le risorse per la traduzione, effettua le seguenti operazioni:
+Esegui i seguenti passaggi per preparare le risorse per la traduzione:
 
 1. Creare la directory principale lingua della lingua primaria. Ad esempio, la directory principale della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è `/content/dam/en`. Assicurati che la directory principale della lingua sia configurata correttamente in base alle informazioni in [Crea una directory principale della lingua](#create-a-language-root).
 
