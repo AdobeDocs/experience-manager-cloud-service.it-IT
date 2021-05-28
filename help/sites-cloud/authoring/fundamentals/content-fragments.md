@@ -1,14 +1,13 @@
 ---
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redigere e utilizzare contenuti indipendenti dalla pagina.
-translation-type: tm+mt
-source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
+exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 100%
+source-wordcount: '1163'
+ht-degree: 99%
 
 ---
-
 
 # Frammenti di contenuto {#content-fragments}
 
@@ -24,8 +23,10 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 >
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo e di conseguenza frammenti di una pagina web.
+
 >
->I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
+>
+I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 
 >[!CAUTION]
 >
@@ -70,8 +71,8 @@ I frammenti di contenuto si prestano alle seguenti applicazioni:
    >
    >Per informazioni su ulteriori funzionalità di modifica, vedi anche:
    >
-   >* [Layout dinamico](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >* [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Layout reattivo  ](/help/sites-cloud/authoring/features/responsive-layout.md)
+   * [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Selezione dell’elemento o della variante {#selecting-the-element-or-variation}
@@ -79,8 +80,7 @@ I frammenti di contenuto si prestano alle seguenti applicazioni:
 Apri la finestra di dialogo **Configurazione** del frammento per configurare il frammento per la pagina corrente. La finestra di dialogo può dipendere dal componente utilizzato.
 
 >[!NOTE]
->
->Consulta anche [Componenti core, componente Frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+Consulta anche [Componenti core, componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 Nella finestra di dialogo di configurazione appropriata puoi selezionare i parametri disponibili, tra cui:
 
@@ -93,8 +93,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
    * A seconda del modello utilizzato sarà disponibile una selezione.
 
    >[!NOTE]
-   >
-   >Gli elementi disponibili dipendono dal modello utilizzato.
+   Gli elementi disponibili dipendono dal modello utilizzato.
 
 * **Variazione**
    * Il **Master** predefinito sarà sempre disponibile.
@@ -109,8 +108,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **Modifica** nella barra degli strumenti del componente, così da poter [modificare e gestire il frammento di contenuto](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
->
->Come sempre, la modifica dell’origine del frammento ha un impatto su tutte le pagine che fanno riferimento a tale frammento di contenuto.
+Come sempre, la modifica dell’origine del frammento ha un impatto su tutte le pagine che fanno riferimento a tale frammento di contenuto.
 
 ### Aggiunta di contenuto intermedio   {#adding-in-between-content}
 
@@ -125,27 +123,21 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 * Usare [Contenuto associato](#using-associated-content) come origine per il contenuto intermedio.
 
 >[!CAUTION]
->
->Il contenuto intermedio è contento di pagina. Non viene memorizzato nel frammento di contenuto.
+Il contenuto intermedio è contento di pagina. Non viene memorizzato nel frammento di contenuto.
 
 ![Inserisci componente](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
 >[!NOTE]
->
->Puoi anche [inserire risorse visive (immagini) nel frammento stesso](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
->
->Le risorse visive inserite nel frammento stesso sono associate al paragrafo precedente nel frammento. Non è pertanto possibile inserire contenuto intermedio tra una risorsa visiva e il paragrafo precedente. Qualora ti occorra questo livello di connessione, puoi aggiungere l’immagine al frammento (come [frammento con file multimediali diversi](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+Puoi anche [inserire risorse visive (immagini) nel frammento stesso](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+Le risorse visive inserite nel frammento stesso sono associate al paragrafo precedente nel frammento. Non è pertanto possibile inserire contenuto intermedio tra una risorsa visiva e il paragrafo precedente. Qualora ti occorra questo livello di connessione, puoi aggiungere l’immagine al frammento (come [frammento con file multimediali diversi](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
->
->Dopo aver aggiunto contenuto intermedio a un frammento di contenuto nella pagina, se si modifica la struttura del frammento di contenuto sottostante (ovvero nell’editor frammento di contenuto) si potrebbero verificare risultati erronei o imprevisti.
->
->In questi casi, il contenuto intermedio rimane inalterato:
->
->* I componenti intermedi hanno una posizione assoluta all’interno della sequenza di componenti nel flusso del frammento. Questa posizione resta invariata, anche quando cambia il contenuto dei paragrafi nel frammento.
->
->  Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
->* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
+Dopo aver aggiunto contenuto intermedio a un frammento di contenuto nella pagina, se si modifica la struttura del frammento di contenuto sottostante (ovvero nell’editor frammento di contenuto) si potrebbero verificare risultati erronei o imprevisti.
+In questi casi, il contenuto intermedio rimane inalterato:
+* I componenti intermedi hanno una posizione assoluta all’interno della sequenza di componenti nel flusso del frammento. Questa posizione resta invariata, anche quando cambia il contenuto dei paragrafi nel frammento.
+
+Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
+* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
 
 
 ### Uso di contenuti associati   {#using-associated-content}
@@ -153,12 +145,10 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 Se hai [associato del contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
->
->Esistono diversi metodi per aggiungere [risorse visive (ad es. immagini)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
+Esistono diversi metodi per aggiungere [risorse visive (ad es. immagini)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
 >[!NOTE]
->
->Se sulla stessa pagina sono presenti più frammenti di contenuto, la scheda **Contenuto associato** visualizza le risorse appropriate per tutti i frammenti.
+Se sulla stessa pagina sono presenti più frammenti di contenuto, la scheda **Contenuto associato** visualizza le risorse appropriate per tutti i frammenti.
 
 Una volta aggiunto alla pagina un frammento con contenuto associato, nel pannello laterale viene aperta una nuova scheda (**Contenuto associato**).
 
