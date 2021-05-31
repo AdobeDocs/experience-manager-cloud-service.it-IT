@@ -1,9 +1,9 @@
 ---
 title: Come modellare il contenuto
 description: In questa parte del Percorso di sviluppatori AEM Headless , scopri come modellare i contenuti per la distribuzione AEM Headless utilizzando la modellazione dei contenuti con modelli di frammenti di contenuto e frammenti di contenuto.
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: dc1ed5c55cc17bcba97972bc79d04aa3530664e7
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1830'
 ht-degree: 2%
 
 ---
@@ -277,3 +277,4 @@ Ora che hai imparato a modellare la tua struttura e a creare contenuti a seconda
 * [AEM Schemi GraphQL](access-your-content.md)  - come GraphQL realizza i modelli
 * [Struttura dei frammenti di contenuto di esempio](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Guida introduttiva a AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - Una breve serie di esercitazioni video che offre una panoramica dell’utilizzo di AEM funzioni headless, tra cui la modellazione dei contenuti e GraphQL
+   * [Nozioni di base sulla modellazione GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html)  - Scopri come definire e utilizzare frammenti di contenuto in Adobe Experience Manager (AEM) per l’utilizzo con GraphQL.
