@@ -2,9 +2,9 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3452f877960a0067aa4eb1041e58a0b0e64340dd
+source-git-commit: 40897b9194de56251da73cbea8718845882f98af
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1093'
 ht-degree: 3%
 
 ---
@@ -142,7 +142,23 @@ La prossima versione è prevista per il 10 giugno 2021.
 
 ## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
 
-### Data di rilascio {#release-date-ctt}
+### Data di rilascio {#release-date-ctt-latest}
+
+La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.4.6 è il 27 maggio 2021.
+
+### Novità {#what-is-new-ctt-latest}
+
+* È stata aggiunta una nuova istruzione di registrazione al registro degli errori di quickstart, se l’utente non dispone dell’autorizzazione di esecuzione sull’eseguibile Java.
+
+* Quando un utente elimina un set di migrazione dall’interfaccia utente CTT, in cui è stata eseguita un’estrazione, la cartella `tmp` associata a tale set di migrazione verrà eliminata per risparmiare spazio.
+
+### Correzioni di bug {#bug-fixes-ctt-latest}
+
+* Quando si elimina un set di migrazione, occasionalmente nell’interfaccia utente del CTT viene visualizzato un messaggio di errore non utile. Questo problema è stato risolto.
+
+* Durante l’esecuzione di User Mapping, se gli utenti avevano lo stesso indirizzo e-mail sulla destinazione e sull’host ma nomi utente diversi, l’intera acquisizione avrebbe esito negativo. Questo problema è stato risolto. In questo scenario in conflitto, l&#39;utente/gruppo viene ignorato e registrato come conflitto nel file di log.
+
+### Data di rilascio {#release-date-ctt-may}
 
 La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.4.0 è l’11 maggio 2021.
 
