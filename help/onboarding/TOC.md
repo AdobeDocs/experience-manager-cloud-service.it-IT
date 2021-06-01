@@ -5,10 +5,9 @@ breadcrumb-title: Guida all’onboarding
 user-guide-description: Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati.
 feature: Distribuzione
 role: Architect, Developer
-translation-type: tm+mt
-source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
+source-git-commit: 9d9cdcb1b7f08fbfbaa4b0ec19f1b039334329ee
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '703'
 ht-degree: 30%
 
 ---
@@ -17,6 +16,14 @@ ht-degree: 30%
 # Onboarding {#onboarding}
 
 + [Onboarding per AEM as a Cloud Service](/help/onboarding/home.md)
++ Scopri i concetti di onboarding {#onboarding-concepts}
+   + [Amministratore di sistema](/help/onboarding/learn-concepts/system-administrator.md)
+   + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+   + [Sistema Identity Management](/help/onboarding/learn-concepts/ims.md)
+   + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
+   + [Introduzione a Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+   + [AEM come team e profili di prodotto di Cloud Service](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
+   + [Supporto Adobe](/help/onboarding/learn-concepts/onboarding-help-resources.md)
 + Guida introduttiva a AEM come Cloud Service {#what-is-required}
    + [Scarica il tuo Adobe ID](what-is-required/get-your-adobe-id.md)
    + [Ruoli di Cloud Manager](what-is-required/user-roles-permissions.md)
@@ -102,7 +109,7 @@ ht-degree: 30%
    + [AEM as a Cloud Service e le linee guida per l’accessibilità dei contenuti web](accessibility/web-accessibility.md)
    + [Guida rapida alle linee guida WCAG 2.1](accessibility/quick-guide-wcag.md)
 + Metodologia di migrazione {#migration-methodology}
-   + [Migrazione a Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
+   + [Migrazione ad Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Best practice   {#best-practices}
    + [Gestione SEO (Search Engine Optimization) e URL](best-practices/seo-and-url-management.md)
    + [Valutazione dei KPI](best-practices/assessing-kpis.md)
