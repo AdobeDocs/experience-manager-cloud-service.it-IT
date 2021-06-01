@@ -1,7 +1,7 @@
 ---
 title: Scopri cosa è Cloud Manager
 description: Leggi questa pagina per saperne di più su Cloud Manager, sui programmi e sugli ambienti di Cloud Manager.
-source-git-commit: 58d4626da9fccd405cbc32d4a562641359352157
+source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Per ulteriori informazioni, consulta [Introduzione ai programmi sandbox](/help/o
 Gli ambienti cloud verranno creati, aperti e visualizzati tramite Cloud Manager. Possono essere un ambiente di produzione, stage o ambiente di sviluppo. Ambienti diversi supportano scopi diversi e possono essere utilizzati utilizzando pipeline CI/CD diverse. Gli ambienti sono composti di servizi quali:
 
 * [AEM Author Services](#author-services)
-* [AEM Publish Services](publish-services)
+* [AEM Publish Services](#publish-services)
 * [Servizi Dispatcher](#dispatcher-services)
 
    >[!NOTE]
