@@ -2,7 +2,7 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Linee guida per lo sviluppo per AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: b8e7bc6e68bde3e102bf304af5fb8999fccb1624
+source-git-commit: 7fc99376522238f74eb24efd93f079c03f854aa1
 workflow-type: tm+mt
 source-wordcount: '2302'
 ht-degree: 1%
@@ -252,6 +252,6 @@ Se la porta 587 è stata richiesta (consentita solo se il server di posta non su
 
 La proprietà `smtp.starttls` viene impostata automaticamente da AEM come Cloud Service in fase di esecuzione su un valore appropriato. Pertanto, se `smtp.tls` è impostato su true, `smtp.startls` viene ignorato. Se `smtp.ssl` è impostato su false, `smtp.starttls` è impostato su true. Questo è indipendentemente dai valori `smtp.starttls` impostati nella configurazione OSGI.
 
-## Linee guida e raccomandazioni per gli sviluppatori di Assets [!DNL Assets] {#use-cases-assets}
+## [!DNL Assets] Linee guida per lo sviluppo e casi d’uso  {#use-cases-assets}
 
 Per informazioni sui casi d’uso, le raccomandazioni e i materiali di riferimento per Assets as a Cloud Service, consulta [Riferimenti per sviluppatori per Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
