@@ -1,9 +1,9 @@
 ---
 title: AEM come team di Cloud Service e profili di prodotto
 description: Segui questa pagina per informazioni su AEM come team di Cloud Service e profili di prodotto.
-source-git-commit: 312b1ce7dc660d1bb4fe199be0e7403069d30161
+source-git-commit: 44cc8e1b7544fe27d927cdfc66a3ab77901258d7
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -11,12 +11,17 @@ ht-degree: 0%
 
 # AEM come team di Cloud Service e profili di prodotto {#product-profiles}
 
+## Profilo di prodotto {#profiles}
+
+Quando si concede a un utente l&#39;accesso a una soluzione di Adobe specifica, non si desidera necessariamente concedere loro l&#39;accesso completo. I profili di prodotto consentono a ogni soluzione di disporre di un proprio set di autorizzazioni utente. Sono disponibili e accessibili tramite Adobe Admin Console.
+
+Ulteriori informazioni su [AEM come profili di prodotto di Cloud Service](#aem-product-profiles) e [profili di prodotto di Cloud Manager](#cloud-manager-product-profiles) per comprendere in che modo questi funzionano di concerto durante la configurazione del team.
+
+## AEM come profili di prodotto del Cloud Service {#aem-product-profiles}
+
 AEM come Cloud Service è l’offerta completamente nativa per il cloud che fornisce AEM come servizio. Offre AEM in modo nativo cloud, con nuovi attributi come sempre attivi, sempre attuali, sempre sicuri e sempre in scala. Allo stesso tempo, mantiene la proposta di valore principale che AEM fornisce come piattaforma personalizzabile ai clienti e consente ai team di livello Enterprise di integrarsi nella loro procedura di sviluppo e consegna. Per ulteriori informazioni su AEM come Cloud Service, consulta [Introduzione ad Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en) .
 
 I membri del team di Cloud Service AEM verranno aggiunti e assegnati a uno o più dei seguenti profili di prodotto tramite Admin Console durante l’onboarding.
-
-
-## AEM come profili di prodotto del Cloud Service {#aem-product-profiles}
 
 I seguenti profili di prodotto sono disponibili in AEM come team di Cloud Service:
 
@@ -52,4 +57,4 @@ Il team Cloud Manager includerà almeno:
 * Uno sviluppatore
 
    >[!NOTE]
-   >Per poter accedere a AEM come Cloud Service, gli utenti devono appartenere a uno dei due profili di prodotto `AEM Users-xxx` o `AEM Administrators-xxx`. Devi disporre delle autorizzazioni per l’istanza. Le autorizzazioni per amministrare il Cloud Manager associato non saranno sufficienti.
+   >Per poter accedere a AEM come Cloud Service, gli utenti devono appartenere a uno dei due profili di prodotto `AEM Users-xxx` o `AEM Administrators-xxx`, devi disporre delle autorizzazioni per l’istanza. Le autorizzazioni per amministrare il Cloud Manager associato non saranno sufficienti.
