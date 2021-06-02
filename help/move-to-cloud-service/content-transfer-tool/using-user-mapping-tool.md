@@ -2,7 +2,7 @@
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: 44b46358528f768476a8ec73119957bba3880d76
+source-git-commit: d7f74356db14c40ce2e1e76f96211a277fed8b93
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 2%
@@ -20,12 +20,11 @@ ht-degree: 2%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Considerazioni importanti sull’utilizzo dello strumento di mappatura utente"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Utilizzo dello strumento di mappatura utente"
 
-
 Come parte del percorso di transizione verso Adobe Experience Manager (AEM) come Cloud Service, devi spostare utenti e gruppi dal sistema AEM esistente a AEM come Cloud Service. Questa operazione viene eseguita dallo strumento Content Transfer (Trasferimento contenuti).
 
 Un cambiamento importante nell’AEM come Cloud Service è l’utilizzo completamente integrato degli ID Adobe per accedere al livello di authoring.  Questo richiede l&#39;utilizzo di [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate in Adobe Identity Management System (IMS), che fornisce il single sign-on in tutte le applicazioni cloud di Adobe. Per ulteriori informazioni, consulta [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). A causa di questa modifica, gli utenti e i gruppi esistenti devono essere mappati ai loro ID IMS per evitare di duplicare utenti e gruppi nell’istanza di authoring del Cloud Service.
 
-### Strumento di mappatura utente {#user-mapping-tool}
+### Strumento di mappatura utente {#mapping-tool}
 
 Lo strumento Content Transfer (senza User Mapping) eseguirà la migrazione di tutti gli utenti e i gruppi associati al contenuto in corso di migrazione.  Lo strumento di mappatura utenti fa parte dello strumento Content Transfer (Trasferimento contenuti) e il suo unico scopo è modificare gli utenti e i gruppi in modo che possano essere riconosciuti correttamente da IMS, la funzionalità single sign-on utilizzata da AEM come Cloud Service.  Una volta apportate queste modifiche, lo strumento Content Transfer (Trasferimento contenuti) esegue la migrazione usuale degli utenti e dei gruppi del contenuto specificato.
 
