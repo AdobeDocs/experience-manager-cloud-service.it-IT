@@ -2,10 +2,10 @@
 title: Supporto IMS per Adobe Experience Manager as a Cloud Service
 description: Supporto IMS per Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -163,7 +163,7 @@ Per altri utenti, è possibile utilizzare l’accesso basato su IMS dopo che IMS
 
 >[!NOTE]
 >
->Per la creazione di qualsiasi utente in IMS è possibile utilizzare un Adobe ID o un Federated ID. Se un utente viene configurato utilizzando un Adobe ID, l’autenticazione per l’accesso viene effettuata tramite il provider di identità della sua azienda.
+>Per la creazione di qualsiasi utente in IMS è possibile utilizzare un Adobe ID o un Federated ID. Se un utente viene configurato utilizzando il Federated ID, per l&#39;accesso viene eseguito l&#39;autenticazione tramite il provider di identità della propria azienda.
 
 Verrà quindi reindirizzato alla schermata di accesso di IMS e dovrà immettere le proprie credenziali:
 
