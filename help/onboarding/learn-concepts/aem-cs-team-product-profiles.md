@@ -1,9 +1,9 @@
 ---
 title: AEM come team di Cloud Service e profili di prodotto
 description: Segui questa pagina per informazioni su AEM come team di Cloud Service e profili di prodotto.
-source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
+source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Profili di prodotto {#profiles}
 
-Quando si concede a un utente l&#39;accesso a una soluzione di Adobe specifica, non si desidera necessariamente concedere loro l&#39;accesso completo. I profili di prodotto consentono a ogni soluzione di disporre di un proprio set di autorizzazioni utente. Sono disponibili e accessibili tramite Adobe Admin Console.
+Quando si concede a un utente l&#39;accesso a una soluzione di Adobe specifica, non si desidera necessariamente concedere loro l&#39;accesso completo. I profili di prodotto consentono a ogni soluzione di disporre di un proprio set di autorizzazioni utente. Sono disponibili e accessibili tramite [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md).
 
 Ulteriori informazioni su [AEM come profili di prodotto di Cloud Service](#aem-product-profiles) e [profili di prodotto di Cloud Manager](#cloud-manager-product-profiles) per comprendere in che modo questi funzionano di concerto durante la configurazione del team.
 
@@ -46,7 +46,7 @@ A ciascun profilo di prodotto sono associate autorizzazioni specifiche. Ad esemp
 
 * **Sviluppatore**, disponi dell’autorizzazione per generare Token di accesso personale per accedere a Git.
 
-* **Gestione programmi**, disponi dell’autorizzazione per accedere a Git.
+* **Program Manager** (Gestione programmi), si dispone dell&#39;autorizzazione per pianificare le pipeline, sostituire i gate di qualità a 3 livelli e fornire l&#39;approvazione di produzione.
 
 Un utente può essere assegnato a più profili di prodotto. Ad esempio, l&#39;assegnazione di ruoli Business Owner (Proprietario business) e Deployment Manager a un utente fornisce loro la combinazione o la somma di queste autorizzazioni.
 
@@ -57,4 +57,4 @@ Il team Cloud Manager includerà almeno:
 * Uno sviluppatore
 
    >[!NOTE]
-   >Per poter accedere a AEM come Cloud Service, gli utenti devono appartenere a uno dei due profili di prodotto `AEM Users-xxx` o `AEM Administrators-xxx`, devi disporre delle autorizzazioni per l’istanza. Le autorizzazioni per amministrare il Cloud Manager associato non saranno sufficienti.
+   >Per poter accedere a AEM come Cloud Service, gli utenti devono appartenere a uno dei due profili di prodotto, ad esempio `AEM Users` o `AEM Administrators`. È necessario disporre delle autorizzazioni per l’istanza. Le autorizzazioni per amministrare Cloud Manager associato non saranno sufficienti.
