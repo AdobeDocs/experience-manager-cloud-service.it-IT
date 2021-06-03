@@ -2,7 +2,7 @@
 title: Aggiunta di annotazioni di pagina
 description: La modalità di annotazione consente di lasciare annotazioni e sketch sulle pagine, in modo da facilitare il processo di revisione dei contenuti
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
+source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 34%
@@ -45,7 +45,7 @@ Le annotazioni sono visibili solo in modalità Annota.
 
 1. Tocca o fai clic sull’annotazione per aprirla e visualizzarne i dettagli.
 
-   ![Dettagli annotazione](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![Dettagli annotazione](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
 1. Per uscire dalla modalità Annota e tornare alla modalità utilizzata in precedenza, tocca o fai clic sul pulsante x a destra della barra degli strumenti superiore.
 
