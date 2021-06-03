@@ -1,9 +1,9 @@
 ---
 title: AEM come team di Cloud Service e profili di prodotto
 description: Segui questa pagina per informazioni su AEM come team di Cloud Service e profili di prodotto.
-source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
+source-git-commit: 976fc51be0ba8c407ff7d6f7c1a6efecbbdad5c9
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,4 @@ Il team Cloud Manager includerà almeno:
 * Uno sviluppatore
 
    >[!NOTE]
-   >Per poter accedere a AEM come Cloud Service, gli utenti devono appartenere a uno dei due profili di prodotto, ad esempio `AEM Users` o `AEM Administrators`. È necessario disporre delle autorizzazioni per l’istanza. Le autorizzazioni per amministrare Cloud Manager associato non saranno sufficienti.
+   >Per poter accedere a AEM come Cloud Service, gli utenti devono appartenere a uno dei due profili di prodotto: `AEM Users` o `AEM Administrators`. È necessario disporre delle autorizzazioni per l’istanza. Le autorizzazioni per amministrare Cloud Manager associato non saranno sufficienti.
