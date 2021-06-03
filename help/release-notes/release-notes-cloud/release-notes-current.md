@@ -2,10 +2,10 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 40897b9194de56251da73cbea8718845882f98af
+source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 3%
+source-wordcount: '1349'
+ht-degree: 2%
 
 ---
 
@@ -96,6 +96,29 @@ Per un riepilogo delle funzioni aggiunte, guarda il video [Panoramica sulla vers
       >
    * Asia-Pacifico, 24 giugno 2021.
 
+
+## [!DNL Adobe Experience Manager Forms] come  [!DNL Cloud Service] {#forms}
+
+### Novità in [!DNL Forms] {#what-is-new-forms}
+
+* **Aiuto contestuale**: È stata aggiunta l’aiuto contestuale per l’editor di moduli adattivi, l’editor di modelli e l’editor di temi, per aiutare gli autori a comprendere meglio le varie funzioni degli editor.
+* **Messaggi di errore nel browser** Proprietà: Sono stati aggiunti messaggi di errore per ciascuna proprietà nel browser Proprietà adattive Forms. Questi messaggi consentono di comprendere i valori consentiti per un campo.
+
+### Prossima funzionalità beta di [!DNL Forms] {#what-is-new-forms-prerelease}
+
+Output as a Cloud Service: Il servizio di output consente di combinare i modelli XDP e i dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità batch sincrona e asincrona. Il servizio di output consente di creare applicazioni che consentono di:
+
+* Generare documenti modulo finali compilando i file modello con dati XML.
+* Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
+* Genera PDF per la stampa da PDF di moduli XFA.
+
+Puoi scrivere su formscsbeta@adobe.com per iscriverti al programma beta.
+
+### Bug corretti in [!DNL Forms] {#forms-bugs-fixed}
+
+* In una fase Assegna attività dei flussi di lavoro AEM Forms, quando sostituisci l&#39;icona predefinita dei pulsanti di azione con un&#39;icona coral, il flusso di lavoro smette di funzionare e registra un&#39;eccezione. Il flusso di lavoro funziona come previsto quando si utilizzano le icone predefinite.
+* Nel livello di layout, quando si modifica il numero di colonne, si apre il livello di modifica e si trascina alcuni componenti in un pannello, le caselle blu quadrate iniziano a comparire nell’area contenuto dell’editor di moduli adattivi e l’editor non risponde.
+* Il messaggio di errore di un’opzione dell’editor di regole relativa alla fornitura dell’URL di una risorsa adattiva o esterna è troppo lungo e non è di facile utilizzo.
 
 ## Cloud Manager {#cloud-manager}
 
