@@ -2,9 +2,9 @@
 title: Riferimento predicato di Query Builder
 description: Riferimento predicato per l’API di Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2219'
 ht-degree: 1%
 
 ---
@@ -201,7 +201,7 @@ Supporta l’estrazione dei facet e fornisce due bucket per le risorse principal
 
 ### MemberOf {#memberof}
 
-Questo predicato trova gli elementi che sono membri di una raccolta di risorse [sling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) specifica.
+Questo predicato trova gli elementi che sono membri di una raccolta di risorse [sling](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) specifica.
 
 Questo è un predicato solo filtraggio e non può sfruttare un indice di ricerca.
 
