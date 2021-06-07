@@ -3,9 +3,9 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1530'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ Prima di AEM come Cloud Service, c&#39;erano due modi per invalidare la cache de
 2. Chiamata diretta dell’ API `invalidate.cache` (ad esempio, `POST /dispatcher/invalidate.cache`)
 
 L’approccio API del dispatcher `invalidate.cache` non sarà più supportato in quanto si rivolge solo a un nodo specifico del dispatcher. AEM come Cloud Service funziona a livello di servizio, non a livello di singolo nodo, pertanto le istruzioni di invalidazione nella pagina [Invalidazione delle pagine in cache da AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) non sono più valide per AEM come Cloud Service .
-È invece necessario utilizzare l&#39;agente di scaricamento della replica. Questa operazione può essere eseguita utilizzando l’API di replica. La documentazione sulle API di replica è disponibile [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) e per un esempio di scaricamento della cache, consulta la [pagina di esempio API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) in particolare l’ esempio `CustomStep` che invia un’azione di replica di tipo ACTIVATE a tutti gli agenti disponibili. L’endpoint dell’agente di scaricamento non è configurabile ma preconfigurato per puntare al dispatcher, con corrispondenza con il servizio di pubblicazione che esegue l’agente di scaricamento. L’agente di scaricamento può in genere essere attivato da eventi o flussi di lavoro OSGi.
+È invece necessario utilizzare l&#39;agente di scaricamento della replica. Questa operazione può essere eseguita utilizzando l’API di replica. La documentazione sulle API di replica è disponibile [qui](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) e per un esempio di scaricamento della cache, consulta la [pagina di esempio API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) in particolare l’ esempio `CustomStep` che invia un’azione di replica di tipo ACTIVATE a tutti gli agenti disponibili. L’endpoint dell’agente di scaricamento non è configurabile ma preconfigurato per puntare al dispatcher, con corrispondenza con il servizio di pubblicazione che esegue l’agente di scaricamento. L’agente di scaricamento può in genere essere attivato da eventi o flussi di lavoro OSGi.
 
 Il diagramma che segue illustra questo aspetto.
 
