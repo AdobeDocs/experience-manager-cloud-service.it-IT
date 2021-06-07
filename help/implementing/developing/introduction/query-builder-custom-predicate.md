@@ -2,9 +2,9 @@
 title: Implementazione di un valutatore del predicato personalizzato per il Generatore di query
 description: Query Builder in AEM offre un modo semplice e personalizzabile per eseguire query sull’archivio dei contenuti
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Mappa un vincolo di ricerca di livello superiore (ad esempio `width>200`) a una 
 
 >[!TIP]
 >
->Per ulteriori informazioni sul `PredicateEvaluator` e sul pacchetto `com.day.cq.search`, consulta la [documentazione Java](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html).
+>Per ulteriori informazioni sul `PredicateEvaluator` e sul pacchetto `com.day.cq.search`, consulta la [documentazione Java](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementazione di un valutatore del predicato personalizzato per i metadati di replica {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -131,7 +131,7 @@ Il progetto `cq-search` contiene la classe astratta `AbstractPredicateEvaluator`
 
 >[!NOTE]
 >
->La procedura seguente spiega come creare un&#39;espressione `Xpath` per filtrare i dati. Un&#39;altra opzione consiste nell&#39;implementare il metodo `includes` che seleziona i dati su base di riga. Per ulteriori informazioni, consulta la [documentazione Java](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html) .
+>La procedura seguente spiega come creare un&#39;espressione `Xpath` per filtrare i dati. Un&#39;altra opzione consiste nell&#39;implementare il metodo `includes` che seleziona i dati su base di riga. Per ulteriori informazioni, consulta la [documentazione Java](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html) .
 
 1. Crea una nuova classe Java che estende `com.day.cq.search.eval.AbstractPredicateEvaluator`
 1. Annota la classe con un `@Component` come mostrato nello snippet in [formato diff unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
