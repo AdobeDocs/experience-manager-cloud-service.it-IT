@@ -4,9 +4,9 @@ description: Scopri come lavorare con i video in Dynamic Media.
 feature: Profili video
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
 workflow-type: tm+mt
-source-wordcount: '9475'
+source-wordcount: '9471'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
 >[!NOTE]
 >
->Prima di lavorare con i video in Dynamic Media, assicurati che il tuo amministratore Adobe Experience Manager abbia già abilitato e configurato i Cloud Services Dynamic Media.
+>Prima di lavorare con i video in Dynamic Media, accertati che il tuo amministratore Adobe Experience Manager abbia già abilitato e configurato i Cloud Services Dynamic Media.
 >
 >* Consulta [Configurazione di Cloud Services Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media e [Risoluzione dei problemi di Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 
@@ -403,9 +403,9 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
 
 | Tipo video | Larghezza x altezza | Rapporto larghezza | Rapporto altezza |
 |--- |--- |--- |--- |
-| Origine | 1920x1080 | 1 | 3 |
+| Origine | 1920x1080 | 1 | 1 |
 | Codificato | 960 x 540 | 2 | 2 |
-| Codificato | 640 x 360 | 3 | 3 |
+| Codificato | 640 x 360 | 3 | 1 |
 | Codificato | 480 x 270 | 4 | 4 |
 
 ### Formato del file video codificato {#encoded-video-file-format}
@@ -499,7 +499,7 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
 
 1. Toccare **[!UICONTROL Quali credenziali sono necessarie?]**
 1. Inserisci un nome univoco nel campo Nome della pagina **[!UICONTROL Add credentials to your project (Aggiungi credenziali alla pagina del progetto)]**, al passaggio 2, sotto l’intestazione **[!UICONTROL Create an OAuth 2.0 client ID (Crea un ID client OAuth 2.0)]**. Oppure puoi utilizzare il nome predefinito specificato da Google.
-1. Sotto l&#39;intestazione **[!UICONTROL Origini JavaScript™ autorizzate]**, nel campo di testo, immetti il seguente percorso, sostituendo il tuo dominio e il tuo numero di porta nel percorso, quindi premi **[!UICONTROL Invio]** per aggiungere il percorso all&#39;elenco:
+1. Sotto l&#39;intestazione **[!UICONTROL Origini JavaScript autorizzate]**, nel campo di testo, immetti il seguente percorso, sostituendo il tuo dominio e il tuo numero di porta nel percorso, quindi premi **[!UICONTROL Invio]** per aggiungere il percorso all&#39;elenco:
 
    `https://<servername.domain>:<port_number>`
 
@@ -533,7 +533,7 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
 
 1. Salva il file `client_id.json`.
 
-   È necessario scaricare questo file json quando si configura YouTube in Adobe Experience Manager in seguito.
+   È necessario scaricare questo file json quando si configura YouTube in Adobe Experience Manager in un secondo momento.
 
 1. Fare clic su **[!UICONTROL Fine]**.
 
@@ -545,7 +545,7 @@ Per pubblicare video in YouTube è necessario disporre di uno o più canali. Se 
 
 >[!CAUTION]
 >
->Assicurati di aver già configurato uno o più canali in YouTube *prima di* aggiungere canali in Impostazioni YouTube nell&#39;Experience Manager (vedi [Configurazione di YouTube nell&#39;Experience Manager](#setting-up-youtube-in-aem) di seguito). Se non si riesce a eseguire la configurazione del canale, non viene visualizzato alcun avviso di nessun canale esistente. Tuttavia, la verifica Google si verifica ancora quando aggiungi un canale, ma non è disponibile un&#39;opzione per scegliere quale canale viene inviato il video.
+>Assicurati di aver già configurato uno o più canali in YouTube *prima di* aggiungere canali in Impostazioni YouTube nell&#39;Experience Manager (vedi [Configurazione di YouTube nell&#39;Experience Manager](#setting-up-youtube-in-aem) di seguito). Se non riesci a eseguire la configurazione del canale, non riceverai alcun avviso di canali esistenti. Tuttavia, la verifica Google si verifica ancora quando aggiungi un canale, ma non è disponibile un&#39;opzione per scegliere quale canale viene inviato il video.
 
 **Per creare un canale YouTube:**
 
@@ -607,7 +607,7 @@ Lascia aperta la pagina Crea configurazione YouTube; ci ritornate tra un momento
 1. Torna alla finestra di dialogo Impostazioni account YouTube. Nel campo **[!UICONTROL Configurazione JSON]**, incolla il testo JSON.
 1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Salva]**.
 
-   Ora configurerai i canali YouTube in Experience Manager.
+   Ora configura i canali YouTube nell’Experience Manager.
 
 1. Tocca **[!UICONTROL Aggiungi canale]**.
 1. Nel campo Nome canale , immetti il nome del canale creato nell&#39;attività **[!UICONTROL Aggiunta di uno o più canali ad YouTube]** precedente.
@@ -623,7 +623,7 @@ Lascia aperta la pagina Crea configurazione YouTube; ci ritornate tra un momento
 
 1. Tocca **[!UICONTROL Consenti]**.
 
-   Ora imposterai i tag per la pubblicazione.
+   Ora imposta i tag per la pubblicazione.
 
 1. **[!UICONTROL Impostazione dei tag per la pubblicazione]** : nella pagina Cloud Services > YouTube, tocca l’icona a forma di matita per modificare l’elenco dei tag da utilizzare.
 1. Per visualizzare l’elenco dei tag disponibili in Experience Manager, tocca l’icona dell’elenco a discesa (cursore verso il basso).
@@ -653,7 +653,7 @@ Lascia aperta la finestra di dialogo Impostazione account YouTube; ci ritornate 
 1. Torna alla finestra di dialogo Impostazioni account YouTube. Nel campo **[!UICONTROL Configurazione JSON]**, incolla il testo JSON.
 1. Toccare **[!UICONTROL OK]**.
 
-   Ora configurerai i canali YouTube in Experience Manager.
+   Ora configura i canali YouTube nell’Experience Manager.
 
 1. A destra di **[!UICONTROL Canali disponibili]**, tocca **+** (icona del segno più).
 1. Nella finestra di dialogo Impostazioni canale YouTube, fai clic sul campo Titolo e immetti il nome del canale creato nell’attività precedente **[!UICONTROL Aggiunta di uno o più canali a YouTube]**.
@@ -669,7 +669,7 @@ Lascia aperta la finestra di dialogo Impostazione account YouTube; ci ritornate 
 
 1. Tocca **[!UICONTROL Consenti]**.
 
-   Ora imposterai i tag per la pubblicazione.
+   Ora imposta i tag per la pubblicazione.
 
 1. **[!UICONTROL Impostazione dei tag per la pubblicazione]** : nella pagina Cloud Services > YouTube, tocca l’icona a forma di matita per modificare l’elenco dei tag da utilizzare.
 1. Per visualizzare l’elenco dei tag disponibili in Experience Manager, tocca l’icona dell’elenco a discesa (cursore verso il basso).
@@ -960,7 +960,7 @@ I rapporti video mostrano diverse metriche aggregate in un determinato periodo p
 
 Quando tocchi un nome video nell’elenco, questo ti mostra il rapporto di fidelizzazione (a discesa) del video sotto forma di grafico a linee. Il grafico mostra il numero di visualizzazioni per un dato momento di tempo durante la riproduzione del video. Quando si riproduce il video, la barra verticale traccia in sincronizzazione con l&#39;indicatore del tempo nel lettore. Le perdite nei dati del grafico a linee indicano dove il pubblico si allontana dal disinteresse.
 
-Se il video è stato codificato all’esterno di Adobe Experience Manager Dynamic Media, il grafico a discesa di conservazione del pubblico e i dati in percentuale di riproduzione nella tabella non sono disponibili.
+Se il video è stato codificato al di fuori di Adobe Experience Manager Dynamic Media, il grafico a discesa di conservazione del pubblico e i dati in percentuale di riproduzione nella tabella non sono disponibili.
 
 >[!NOTE]
 Il tracciamento e il reporting dei dati si basano esclusivamente sull’uso del lettore video Dynamic Media e del lettore video associato preimpostati. Di conseguenza, non è possibile tenere traccia e generare rapporti sui video riprodotti da altri lettori video.
@@ -1057,7 +1057,7 @@ I sottotitoli consentono inoltre una maggiore accessibilità tramite l’uso di 
 >[!NOTE]
 Il lettore video utilizzato deve supportare la visualizzazione dei sottotitoli.
 
-Dynamic Media può convertire i file di didascalia in formato JSON (JavaScript™ Object Notation). Questa conversione significa che puoi incorporare il testo JSON in una pagina web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi eseguire ricerche per indicizzazione o per indicizzazione del contenuto per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
+Dynamic Media può convertire i file di didascalia in formato JSON (JavaScript Object Notation). Questa conversione significa che puoi incorporare il testo JSON in una pagina web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi eseguire ricerche per indicizzazione o per indicizzazione del contenuto per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
 Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consulta [Distribuzione di contenuti statici (non immagini)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) .
 
