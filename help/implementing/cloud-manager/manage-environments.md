@@ -2,9 +2,9 @@
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
+source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1642'
 ht-degree: 3%
 
 ---
@@ -89,9 +89,7 @@ Visualizza l’anteprima dell’esperienza finale di un sito web prima che raggi
 
 1. **Versione** AEM: L&#39;ambiente deve essere in AEM versione  `2021.5.5343.20210542T070738Z` o successiva. Per eseguire questa operazione, assicurati che nell’ambiente sia stata eseguita correttamente una pipeline di aggiornamento.
 
-1. **Blocco** di Elenco consentiti IP predefinito: Al momento della creazione, al servizio di anteprima verrà applicato un Elenco consentiti IP predefinito, etichettato  `Preview Default [Env ID]`, come mostrato nella figura riportata di seguito.
-
-   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
+1. **Blocco** di Elenco consentiti IP predefinito: Al momento della creazione, al servizio di anteprima verrà applicato un Elenco consentiti IP predefinito, contrassegnato con  `Preview Default [Env ID]`.
 
    >[!NOTE]
    >Al momento della prima creazione, per abilitare l’accesso è necessario annullare attivamente l’applicazione dell’Elenco consentiti IP predefinito dal servizio di anteprima nell’ambiente.
