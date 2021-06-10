@@ -2,9 +2,9 @@
 title: Regole per la qualità del codice personalizzato - Cloud Services
 description: Regole per la qualità del codice personalizzato - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: bd9cb35016b91e247f14a851ad195a48ac30fda0
 workflow-type: tm+mt
-source-wordcount: '3298'
+source-wordcount: '3403'
 ht-degree: 4%
 
 ---
@@ -181,32 +181,6 @@ public void orDoThis() {
   }
  
   in.close();
-}
-```
-
-### Le API del prodotto annotate con @ProviderType non devono essere implementate o estese dai clienti {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
-
-**Chiave**: Dipendenze CQBP-84, CQBP-84
-
-**Tipo**: Bug
-
-**Gravità**: Critico
-
-**Da**: Versione 2018.7.0
-
-L’API AEM contiene interfacce e classi Java che devono essere utilizzate solo con il codice personalizzato, ma che non devono essere implementate. Ad esempio, l’interfaccia *com.day.cq.wcm.api.Page* è progettata per essere implementata ***solo da AEM***.
-
-Quando a queste interfacce vengono aggiunti nuovi metodi, essi non influiscono sul codice esistente che utilizza tali interfacce e, di conseguenza, l’aggiunta di nuovi metodi ad esse è considerata retrocompatibile. Tuttavia, se il codice personalizzato ***implementa*** una di queste interfacce, crea al cliente un rischio di retrocompatibilità con le versioni precedenti.
-
-Le interfacce (e le classi) che devono essere implementate solo da AEM vengono annotate con *org.osgi.annotation.versioning.ProviderType* (o, in alcuni casi, con un&#39;annotazione legacy simile *aQute.bnd.annotation.ProviderType*). Questa regola identifica i casi in cui tale interfaccia viene implementata (o una classe viene estesa) dal codice personalizzato.
-
-#### Codice non conforme {#non-compliant-code-3}
-
-```java
-import com.day.cq.wcm.api.Page;
-
-public class DontDoThis implements Page {
-// implementation here
 }
 ```
 
@@ -584,12 +558,85 @@ In molti casi, queste API sono obsolete utilizzando l’annotazione Java *@Depre
 
 Tuttavia, in alcuni casi un’API è obsoleta nel contesto di AEM ma potrebbe non essere deprecata in altri contesti. Questa regola identifica questa seconda classe.
 
+
 ## Regole di contenuto OakPAL {#oakpal-rules}
 
 Di seguito sono riportati i controlli OakPAL eseguiti da Cloud Manager.
 
 >[!NOTE]
 >OakPAL è un framework sviluppato da un partner AEM (e vincitore del 2019 AEM Rockstar Nord America) che convalida i pacchetti di contenuti utilizzando un archivio Oak indipendente.
+
+### Le API del prodotto annotate con @ProviderType non devono essere implementate o estese dai clienti {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+
+**Chiave**: CQBP-84
+
+**Tipo**: Bug
+
+**Gravità**: Critico
+
+**Da**: Versione 2018.7.0
+
+L’API AEM contiene interfacce e classi Java che devono essere utilizzate solo con il codice personalizzato, ma che non devono essere implementate. Ad esempio, l’interfaccia *com.day.cq.wcm.api.Page* è progettata per essere implementata ***solo da AEM***.
+
+Quando a queste interfacce vengono aggiunti nuovi metodi, essi non influiscono sul codice esistente che utilizza tali interfacce e, di conseguenza, l’aggiunta di nuovi metodi ad esse è considerata retrocompatibile. Tuttavia, se il codice personalizzato ***implementa*** una di queste interfacce, crea al cliente un rischio di retrocompatibilità con le versioni precedenti.
+
+Le interfacce (e le classi) che devono essere implementate solo da AEM vengono annotate con *org.osgi.annotation.versioning.ProviderType* (o, in alcuni casi, con un&#39;annotazione legacy simile *aQute.bnd.annotation.ProviderType*). Questa regola identifica i casi in cui tale interfaccia viene implementata (o una classe viene estesa) dal codice personalizzato.
+
+#### Codice non conforme {#non-compliant-code-3}
+
+```java
+import com.day.cq.wcm.api.Page;
+
+public class DontDoThis implements Page {
+// implementation here
+}
+```
+
+### Gli indici Oak personalizzati di DAM Asset Lucene sono strutturati correttamente {#oakpal-damAssetLucene-sanity-check}
+
+**Chiave**: IndexDamAssetLucene
+
+**Tipo**: Bug
+
+**Gravità**: Blocco
+
+**Da**: 2021.6.0
+
+Affinché la ricerca delle risorse funzioni correttamente in AEM Assets, l’indice Oak `damAssetLucene` deve seguire una serie di linee guida. Questa regola controlla i seguenti pattern specificatamente per gli indici il cui nome contiene `damAssetLucene`:
+
+Il nome deve seguire le linee guida per personalizzare le definizioni degli indici descritte qui.
+
+* Specificamente il nome deve seguire il pattern `damAssetLucene-<indexNumber>-custom-<customerVersionNumber>`.
+
+* La definizione dell&#39;indice deve avere una proprietà con più valori denominata tags che contiene il valore `visualSimilaritySearch`.
+
+* La definizione dell&#39;indice deve avere un nodo figlio denominato `tika` e tale nodo figlio deve avere un nodo figlio denominato config.xml .
+
+#### Codice non conforme {#non-compliant-code-damAssetLucene}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+```
+
+#### Codice conforme {#compliant-code-damAssetLucene}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - reindexCount: -6952249853801250000
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
 
 ### I pacchetti cliente non devono creare o modificare nodi sotto /libs {#oakpal-customer-package}
 
