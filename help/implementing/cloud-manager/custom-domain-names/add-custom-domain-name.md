@@ -2,9 +2,9 @@
 title: Aggiunta di un nome di dominio personalizzato
 description: Aggiunta di un nome di dominio personalizzato
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Per aggiungere un nome di dominio personalizzato in Cloud Manager, un utente dev
 
 * AEM come Cloud Service non supporta i domini con caratteri jolly.
 
-* Ogni ambiente Cloud Manager può ospitare fino a un massimo di 100 domini personalizzati per ambiente.
+* Ogni ambiente Cloud Manager può ospitare fino a un massimo di 250 domini personalizzati per ambiente.
 
 * Lo stesso nome di dominio non può essere utilizzato in più di un ambiente.
 
@@ -39,7 +39,7 @@ Per aggiungere un nome di dominio personalizzato dalla pagina Impostazioni domin
 
 1. Fare clic sul pulsante **Aggiungi dominio** per aprire la finestra di dialogo **Aggiungi nome di dominio**.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+   ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. Immetti il nome di dominio personalizzato in **Nome di dominio**.
 
@@ -47,6 +47,11 @@ Per aggiungere un nome di dominio personalizzato dalla pagina Impostazioni domin
    >Non includere `http://`, `https://` o spazi quando si accede al dominio.
 
 1. Seleziona il **Ambiente** il cui servizio di pubblicazione sarà associato al nome di dominio.
+
+1. Seleziona il servizio come **Pubblica** o **Anteprima**.
+
+   >[!NOTE]
+   >I nomi di dominio personalizzati sono ora supportati in Cloud Manager per i programmi Sites per i servizi di pubblicazione e anteprima. Ogni ambiente Cloud Manager può ospitare fino a un massimo di 250 domini personalizzati per ambiente. Per ulteriori informazioni sul servizio Anteprima, consulta [Servizio anteprima](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
 1. Seleziona il **Certificato SSL di dominio** dal menu a discesa e seleziona **Continua**.
 
