@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 73822fb3b74472d48a3db59267ed133fc1a40ad6
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 28%
+source-wordcount: '2582'
+ht-degree: 27%
 
 ---
 
@@ -336,6 +336,10 @@ I componenti AEM vengono spesso estesi per modificare il markup generato dal com
 
 Nel nostro caso, vogliamo eseguire il rendering di un banner sopra il teaser per indicare che il prodotto è &quot;eco-compatibile&quot; in base a un attributo personalizzato. Il modello di progettazione per [personalizzare il markup](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) di un componente è in realtà standard per tutti i componenti di AEM, non solo per i componenti core CIF di AEM.
 
+>[!NOTE]
+>
+> Se personalizzi un componente utilizzando i selettori di prodotti e categorie CIF come questo Product Teaser o il componente di pagina CIF, accertati di includere la `cif.shell.picker` clientlib richiesta per le finestre di dialogo dei componenti. Per ulteriori informazioni, consulta [Utilizzo del selettore di prodotti CIF e categorie](use-cif-pickers.md) .
+
 1. Nell’IDE, naviga nel modulo `ui.apps` ed espandi la gerarchia delle cartelle fino a: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` e controlla il file `.content.xml`.
 
    ![ui.apps di Product Teaser](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
@@ -499,3 +503,4 @@ Rivedi le funzionalità del contrassegno **Nuovo** già implementato nel Product
 - [Personalizzazione dei componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [Personalizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 - [Guida introduttiva di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Utilizzo del selettore di prodotti e categorie CIF](use-cif-pickers.md)
