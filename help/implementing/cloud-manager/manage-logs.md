@@ -1,18 +1,17 @@
 ---
-title: Gestisci registri - Cloud Service
-description: Gestisci registri - Cloud Service
-translation-type: tm+mt
-source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
+title: Gestire i registri - Cloud Service
+description: Gestire i registri - Cloud Service
+exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
+source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 22%
+source-wordcount: '264'
+ht-degree: 17%
 
 ---
 
-
 # Accesso e gestione dei registri {#manage-logs}
 
-Gli utenti possono accedere a un elenco dei file di registro disponibili per l&#39;ambiente selezionato utilizzando la scheda Ambiente.  Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato.
+Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato utilizzando la scheda Ambiente.  Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato.
 
 Questi file possono essere scaricati tramite l&#39;interfaccia utente, dalla pagina **Panoramica**:
 
@@ -23,28 +22,43 @@ Oppure, la pagina **Ambienti**:
 ![](assets/download-logs.png)
 
 >[!NOTE]
->Indipendentemente da dove viene aperto, viene visualizzata la stessa finestra di dialogo e è possibile scaricare un singolo file di registro.
+>Indipendentemente da dove viene aperto, viene visualizzata la stessa finestra di dialogo e consente di scaricare un singolo file di log.
 
 ![](assets/download-logs2.png)
 
+## Download dei registri per il servizio di anteprima {#download-preview-service}
 
-## Esegue il login attraverso l&#39;API {#logs-through-api}
+L&#39;utente può scaricare i registri del servizio di anteprima
 
-Oltre a scaricare i file di registro tramite l’interfaccia utente, i file di registro saranno disponibili tramite l’API e l’interfaccia della riga di comando.
+1. Passa alla scheda **Ambienti** dalla pagina **Panoramica** di Cloud Manager.
 
-Ad esempio, per scaricare i file di registro per un ambiente specifico, il comando potrebbe essere solo delle righe di
+1. Seleziona i registri di download dal menu ... .
+
+1. Dall’elenco a discesa del servizio, seleziona **Anteprima** o **Anteprima Dispatcher**, quindi fai clic sull’icona di download.
+
+   >[!NOTE]
+   >Puoi eseguire questa azione anche dalla pagina dei dettagli dell’ambiente .
+
+   ![](assets/download-preview.png)
+
+
+## Effettua l’accesso tramite API {#logs-through-api}
+
+Oltre a scaricare i registri tramite l’interfaccia utente, i registri saranno disponibili tramite l’API e l’interfaccia della riga di comando.
+
+Ad esempio, per scaricare i file di registro per un ambiente specifico, il comando è qualcosa di unico nelle righe di
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Il seguente comando consente la coda dei registri:
+Il seguente comando consente la coda dei log:
 
 ```java
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Per ottenere l&#39;ID ambiente (in questo caso 1884) e le opzioni del servizio o del nome di registro disponibili è possibile utilizzare:
+Per ottenere l’ID ambiente (in questo caso 1884) e le opzioni del servizio o del nome di registro disponibili puoi utilizzare:
 
 ```java
 $ aio cloudmanager:list-environments
@@ -72,7 +86,7 @@ Environment Id Service    Name
 
 ### Risorse aggiuntive {#resources}
 
-Per ulteriori informazioni sull&#39;API di Cloud Manager e  CLI di Adobe I/O, consulta le seguenti risorse aggiuntive:
+Per ulteriori informazioni sull’API di Cloud Manager e su Adobe I/O CLI, consulta le seguenti risorse aggiuntive:
 
 * [Documentazione API di Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [ Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
