@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2785'
 ht-degree: 42%
 
 ---
@@ -12,12 +12,6 @@ ht-degree: 42%
 # Utilizzo dello strumento Content Transfer (Trasferimento contenuti) {#using-content-transfer-tool}
 
 ## Valutazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti) {#pre-reqs}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_prereqs"
->title="Considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti)"
->abstract="Esamina considerazioni importanti per utilizzare lo strumento Content Transfer (Trasferimento contenuti) tra cui versioni Java e AEM, tipi di datastore supportati, considerazioni sui gruppi di utenti e altro ancora."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Best practice e linee guida"
 
 Segui le indicazioni riportate in questa sezione per comprendere le valutazioni importanti durante l’esecuzione dello strumento Content Transfer (Trasferimento contenuti):
 
