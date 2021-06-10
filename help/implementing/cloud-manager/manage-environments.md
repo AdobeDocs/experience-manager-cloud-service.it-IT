@@ -2,9 +2,9 @@
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
+source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1623'
 ht-degree: 3%
 
 ---
@@ -104,7 +104,9 @@ Un utente con le autorizzazioni necessarie deve effettuare una delle seguenti op
    >[!NOTE]
    >I passaggi precedenti devono essere eseguiti prima di condividere l’URL del servizio di anteprima con uno dei tuoi team per garantire che i membri appropriati del tuo team siano in grado di accedere all’URL di anteprima.
 
-   Una volta sbloccato l&#39;accesso al servizio di anteprima, l&#39;icona del lucchetto non verrà più visualizzata.
+   Una volta sbloccato l’accesso al servizio di anteprima, l’icona a forma di lucchetto non viene più visualizzata, come illustrato di seguito.
+
+   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## Aggiornamento dell&#39;ambiente {#updating-dev-environment}
 
