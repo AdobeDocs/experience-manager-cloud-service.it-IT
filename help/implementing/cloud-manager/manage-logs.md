@@ -2,22 +2,24 @@
 title: Gestire i registri - Cloud Service
 description: Gestire i registri - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
+source-git-commit: 8a70a343be8a6843436f1df26adae5b1935ad4c3
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 17%
+source-wordcount: '275'
+ht-degree: 16%
 
 ---
 
 # Accesso e gestione dei registri {#manage-logs}
 
-Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato utilizzando la scheda Ambiente.  Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato.
+Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato utilizzando la scheda Ambiente. Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato.
 
-Questi file possono essere scaricati tramite l&#39;interfaccia utente, dalla pagina **Panoramica**:
+## Download dei registri {#download-logs}
+
+Questi file possono essere scaricati tramite l&#39;interfaccia utente, dalla scheda **Ambienti** dalla pagina **Panoramica** :
 
 ![](assets/download-logs1.png)
 
-Oppure, la pagina **Ambienti**:
+Oppure, dalla pagina Dettagli ambiente :
 
 ![](assets/download-logs.png)
 
@@ -28,13 +30,13 @@ Oppure, la pagina **Ambienti**:
 
 ## Download dei registri per il servizio di anteprima {#download-preview-service}
 
-L&#39;utente può scaricare i registri del servizio di anteprima
+Segui i passaggi riportati di seguito per scaricare i registri del servizio Preview
 
 1. Passa alla scheda **Ambienti** dalla pagina **Panoramica** di Cloud Manager.
 
-1. Seleziona i registri di download dal menu ... .
+1. Seleziona **Download Logs** dal **...Menu** .
 
-1. Dall’elenco a discesa del servizio, seleziona **Anteprima** o **Anteprima Dispatcher**, quindi fai clic sull’icona di download.
+1. Dal menu a discesa **Servizio**, seleziona **Anteprima** o **Anteprima Dispatcher**, quindi fai clic sull&#39;icona di download.
 
    >[!NOTE]
    >Puoi eseguire questa azione anche dalla pagina dei dettagli dell’ambiente .
