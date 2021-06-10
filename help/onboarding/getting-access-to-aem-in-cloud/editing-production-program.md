@@ -2,8 +2,7 @@
 title: 'Modifica di un programma di produzione '
 description: Modifica di un programma di produzione
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
-translation-type: tm+mt
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -31,7 +30,7 @@ Segui i passaggi seguenti per modificare un programma di produzione:
 
    Passa alla scheda **Generale** per modificare la descrizione del programma.
 
-   ![](assets/edit-program-general.png)
+   ![](assets/edit-program-prod1.png)
 
    La scheda **Soluzioni e componenti aggiuntivi** visualizza due opzioni, ad esempio **Siti** e **Risorse** sia per i programmi Produzione che per i programmi sandbox. Inoltre, puoi selezionare l&#39;opzione del componente aggiuntivo **Commerce** disponibile in **Sites**, come illustrato nella figura riportata di seguito.
 
@@ -40,7 +39,7 @@ Segui i passaggi seguenti per modificare un programma di produzione:
    >[!NOTE]
    >È necessario selezionare almeno una soluzione per un programma, ovvero l&#39;utente non può deselezionare tutte le soluzioni durante il flusso di lavoro Modifica programma.
 
-1. Fai clic su **Salva** per completare il flusso di lavoro del programma di modifica.
+1. Fai clic su **Aggiorna** per completare il flusso di lavoro del programma di modifica.
 
 
 ## Considerazioni durante la modifica di un programma {#considerations-editing}
