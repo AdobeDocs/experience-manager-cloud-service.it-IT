@@ -2,10 +2,10 @@
 title: Distribuisci il tuo codice - Cloud Services
 description: Distribuisci il tuo codice - Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
+source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '616'
+ht-degree: 2%
 
 ---
 
@@ -70,46 +70,7 @@ Per ulteriori informazioni, consulta [Informazioni sui risultati di Experience A
 
 ## Processo di distribuzione {#deployment-process}
 
-La sezione seguente descrive come i pacchetti AEM e dispatcher vengono distribuiti nella fase di stage e nella fase di produzione.
-
-Cloud Manager carica tutti i file target/*.zip prodotti dal processo di compilazione in una posizione di archiviazione.  Questi artefatti vengono recuperati da questa posizione durante le fasi di distribuzione della pipeline.
-
-Quando Cloud Manager viene implementato in topologie non di produzione, l’obiettivo è quello di completare l’implementazione il più rapidamente possibile e, pertanto, gli artefatti vengono distribuiti simultaneamente su tutti i nodi come segue:
-
-1. Cloud Manager determina se ogni artefatto è un pacchetto AEM o dispatcher.
-1. Cloud Manager rimuove tutti i dispatcher dal Load Balancer per isolare l’ambiente durante la distribuzione.
-
-   A meno che non sia configurato diversamente, è possibile saltare le modifiche del Load Balancer nelle implementazioni di sviluppo e stage, ovvero scollegare e allegare i passaggi sia nelle pipeline non di produzione, per gli ambienti di sviluppo e nella pipeline di produzione, per gli ambienti di stage.
-
-   >[!NOTE]
-   >
-   >Questa funzione dovrebbe essere utilizzata principalmente da 1-1-1 clienti.
-
-1. Ciascun artefatto AEM viene distribuito a ogni istanza AEM tramite API di Gestione pacchetti, con dipendenze dei pacchetti che determinano l’ordine di distribuzione.
-
-   Per ulteriori informazioni su come utilizzare i pacchetti per installare nuove funzionalità, trasferire contenuti tra le istanze e eseguire il backup del contenuto dell’archivio, consulta Come utilizzare i pacchetti.
-
-   >[!NOTE]
-   >
-   >Tutti gli artefatti AEM vengono distribuiti sia all’autore che agli editori. Le modalità di esecuzione devono essere utilizzate quando sono necessarie configurazioni specifiche per il nodo. Per ulteriori informazioni su come le modalità di esecuzione ti consentono di regolare la tua istanza AEM per uno scopo specifico, fai riferimento alle modalità di esecuzione.
-
-1. L’artefatto del dispatcher viene distribuito a ciascun dispatcher come segue:
-
-   1. Le configurazioni correnti vengono sottoposte a backup e copiate in una posizione temporanea
-   1. Tutte le configurazioni vengono eliminate tranne i file immutabili. Per ulteriori informazioni, consulta Gestire le configurazioni del Dispatcher . Questo cancella le directory per garantire che non vengano lasciati indietro i file orfani.
-   1. L’artefatto viene estratto nella directory `httpd`.  I file immutabili non vengono sovrascritti. Eventuali modifiche apportate ai file immutabili nell’archivio Git verranno ignorate al momento della distribuzione.  Questi file sono di base del framework del dispatcher AMS e non possono essere modificati.
-   1. Apache esegue un test di configurazione. Se non viene rilevato alcun errore, il servizio viene ricaricato. Se si verifica un errore, le configurazioni vengono ripristinate dal backup, il servizio viene ricaricato e l&#39;errore viene riportato a Cloud Manager.
-   1. Ogni percorso specificato nella configurazione della pipeline viene invalidato o scaricato dalla cache del dispatcher.
-
-   >[!NOTE]
-   >
-   >Cloud Manager prevede che l’artefatto del dispatcher contenga l’intero set di file.  Tutti i file di configurazione del dispatcher devono essere presenti nell’archivio Git. File o cartelle mancanti causeranno un errore di distribuzione.
-
-1. Dopo la corretta distribuzione di tutti i pacchetti AEM e dispatcher a tutti i nodi, i dispatcher vengono aggiunti nuovamente al load balancer e la distribuzione è completa.
-
-   >[!NOTE]
-   >
-   >È possibile saltare le modifiche al load balancer nelle distribuzioni di sviluppo e stage, ovvero scollegare e allegare i passaggi sia nelle pipeline non di produzione, per gli ambienti di sviluppo e nella pipeline di produzione, per gli ambienti di stage.
+Tutte le distribuzioni di Cloud Service seguono un processo continuo per garantire tempi di inattività pari a zero. Per ulteriori informazioni, consulta [Come funzionano le implementazioni continue](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) .
 
 ### Fase di distribuzione alla produzione {#deployment-production-phase}
 
