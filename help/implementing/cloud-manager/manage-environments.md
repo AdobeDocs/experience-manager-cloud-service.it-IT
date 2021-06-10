@@ -2,7 +2,7 @@
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 11d12e43de7a71a59f565379e95ba57b13180fed
+source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -87,7 +87,7 @@ La funzione Preview Service offre un servizio di anteprima (pubblicazione) aggiu
 
 Visualizza l’anteprima dell’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione ed è disponibile al pubblico. Alcuni puntatori prima di poter vedere e utilizzare Preview Service:
 
-1. **Versione** AEM: L&#39;ambiente deve essere in AEM versione  `2021.5.5343.20210542T070738Z` o successiva. Per eseguire questa operazione, assicurati che nell’ambiente sia stata eseguita correttamente una pipeline di aggiornamento.
+1. **Versione** AEM: L&#39;ambiente deve essere in AEM versione  `2021.05.5368.20210529T101701Z` o successiva. Per eseguire questa operazione, assicurati che nell’ambiente sia stata eseguita correttamente una pipeline di aggiornamento.
 
 1. **Blocco** predefinito dell’Elenco consentiti IP: Al momento della creazione, al servizio di anteprima verrà applicato un Elenco consentiti IP predefinito, contrassegnato con  `Preview Default [Env ID]`.
 
