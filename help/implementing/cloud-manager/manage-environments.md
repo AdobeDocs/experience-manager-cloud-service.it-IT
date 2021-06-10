@@ -2,9 +2,9 @@
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 8e8764dd39e2bc664a577c863a04a7e4c5e99fd0
+source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1648'
 ht-degree: 3%
 
 ---
@@ -89,9 +89,14 @@ Visualizza l’anteprima dell’esperienza finale di un sito web prima che raggi
 
 1. **Versione** AEM: L&#39;ambiente deve essere in AEM versione  `2021.5.5343.20210542T070738Z` o successiva. Per eseguire questa operazione, assicurati che nell’ambiente sia stata eseguita correttamente una pipeline di aggiornamento.
 
-1. **Blocco** di Elenco consentiti IP predefinito: Al momento della prima creazione, per abilitare l’accesso è necessario annullare attivamente l’applicazione dell’Elenco consentiti IP predefinito dal servizio di anteprima nell’ambiente.
+1. **Blocco** di Elenco consentiti IP predefinito: Al momento della creazione, al servizio di anteprima verrà applicato un Elenco consentiti IP predefinito, etichettato  `Preview Default [Env ID]`, come mostrato nella figura riportata di seguito.
 
-   Un utente con le autorizzazioni necessarie deve effettuare una delle seguenti operazioni per *sbloccare* l&#39;accesso al servizio di anteprima e fornire l&#39;accesso desiderato:
+   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
+
+   >[!NOTE]
+   >Al momento della prima creazione, per abilitare l’accesso è necessario annullare attivamente l’applicazione dell’Elenco consentiti IP predefinito dal servizio di anteprima nell’ambiente.
+
+   Per *sbloccare* l&#39;accesso a Preview Service e fornire l&#39;accesso desiderato, un utente con le autorizzazioni necessarie deve effettuare una delle seguenti operazioni:
 
    * Crea un Elenco consentiti IP appropriato e applicalo al servizio di anteprima. Esegui immediatamente l’operazione annullando l’applicazione di `Preview Default [Env ID] IP Allow List` dal servizio di anteprima.
 
