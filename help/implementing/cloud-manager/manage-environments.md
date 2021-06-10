@@ -2,10 +2,10 @@
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 4%
+source-wordcount: '1620'
+ht-degree: 3%
 
 ---
 
@@ -61,7 +61,6 @@ Un utente con le autorizzazioni necessarie può creare i seguenti tipi di ambien
    >[!NOTE]
    >Nel caso in cui non sia ancora stata impostata la pipeline non di produzione, nella schermata *Panoramica* viene visualizzata la scheda da cui è possibile creare la pipeline non di produzione.
 
-
 ## Dettagli ambiente {#viewing-environment}
 
 La scheda **Ambienti** nella pagina Panoramica elenca fino a tre ambienti.
@@ -76,8 +75,36 @@ La scheda **Ambienti** nella pagina Panoramica elenca fino a tre ambienti.
 
 1. Seleziona uno qualsiasi degli ambienti dall’elenco per visualizzare i dettagli dell’ambiente.
 
-   ![](assets/environment-view-3.png)
+   >[!NOTE]
+   >Preview Service verrà distribuito su base continua a tutti i programmi. I clienti riceveranno una notifica interna al prodotto quando il loro programma è abilitato per Preview Service. Per ulteriori informazioni, consulta la sezione [Accesso al servizio di anteprima](#access-preview-service) .
 
+   ![](assets/environ-preview1.png)
+
+
+### Accesso al servizio di anteprima {#access-preview-service}
+
+La funzione Preview Service offre un servizio di anteprima (pubblicazione) aggiuntivo per ogni AEM come ambiente di Cloud Service tramite Cloud Manager.
+
+Visualizza l’anteprima dell’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione ed è disponibile al pubblico. Alcuni puntatori prima di poter vedere e utilizzare Preview Service:
+
+1. **Versione** AEM: L&#39;ambiente deve essere in AEM versione  `2021.5.5343.20210542T070738Z` o successiva. Per eseguire questa operazione, assicurati che nell’ambiente sia stata eseguita correttamente una pipeline di aggiornamento.
+
+1. **Blocco** di Elenco consentiti IP predefinito: Al momento della prima creazione, per abilitare l’accesso è necessario annullare attivamente l’applicazione dell’Elenco consentiti IP predefinito dal servizio di anteprima nell’ambiente.
+
+1. **Pubblica contenuto in anteprima**: Puoi pubblicare contenuti nel servizio di anteprima utilizzando l’interfaccia utente Gestisci pubblicazione in AEM. Per ulteriori informazioni, consulta [Anteprima del contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) .
+
+Un utente con le autorizzazioni necessarie deve effettuare una delle seguenti operazioni per *sbloccare* l&#39;accesso al servizio di anteprima e fornire l&#39;accesso desiderato:
+
+1. Crea un Elenco consentiti IP appropriato e applicalo al servizio di anteprima. Esegui immediatamente l’operazione annullando l’applicazione di `Preview Default [Env ID] IP Allow List` dal servizio di anteprima.
+
+   OPPURE,
+
+1. Utilizza il flusso di lavoro Aggiorna Elenco consentiti IP per rimuovere l&#39;IP predefinito e aggiungere gli IP appropriati. Per ulteriori informazioni, consulta [Visualizzazione e aggiornamento di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
+
+   >[!NOTE]
+   >I passaggi precedenti devono essere eseguiti prima di condividere l’URL del servizio di anteprima con uno dei tuoi team per garantire che i membri appropriati del tuo team siano in grado di accedere all’URL di anteprima.
+
+   Una volta sbloccato l&#39;accesso al servizio di anteprima, l&#39;icona del lucchetto non verrà più visualizzata.
 
 ## Aggiornamento dell&#39;ambiente {#updating-dev-environment}
 
@@ -145,9 +172,13 @@ Inoltre, puoi accedere localmente dalla pagina di riepilogo **Ambienti**.
 
 ![](assets/environ-login-locally-2.png)
 
+
 ## Gestione dei nomi di dominio personalizzati {#manage-cdn}
 
 Passa alla pagina dei dettagli **Ambienti** dalla pagina Riepilogo ambienti .
+
+>[!NOTE]
+>I nomi di dominio personalizzati sono ora supportati in Cloud Manager per i programmi Sites per i servizi di pubblicazione e anteprima. Ogni ambiente Cloud Manager può ospitare fino a un massimo di 250 domini personalizzati per ambiente.
 
 Le seguenti azioni possono essere eseguite sul servizio Publish per il tuo ambiente come descritto di seguito:
 
@@ -161,9 +192,13 @@ Le seguenti azioni possono essere eseguite sul servizio Publish per il tuo ambie
 
 1. [Controllo dello stato di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
+
 ## Gestione degli Elenchi consentiti IP {#manage-ip-allow-lists}
 
 Passa alla pagina dei dettagli dell’ambiente dalla pagina Riepilogo ambienti . Puoi eseguire le seguenti operazioni sui servizi di pubblicazione e/o authoring per il tuo ambiente qui.
+
+>[!NOTE]
+>La funzione di Elenco consentiti IP è ora supportata in Cloud Manager per i servizi Author, Publish e Preview (disponibili nei programmi Sites).
 
 ### Applicazione di un Elenco consentiti IP {#apply-ip-allow-list}
 
