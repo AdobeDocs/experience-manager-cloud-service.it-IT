@@ -2,9 +2,9 @@
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
+source-git-commit: 7e4d75d90b3f6fad024304781225dfcef6df0e2b
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1652'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ Visualizza l’anteprima dell’esperienza finale di un sito web prima che raggi
 
    Per *sbloccare* l&#39;accesso a Preview Service e fornire l&#39;accesso desiderato, un utente con le autorizzazioni necessarie deve effettuare una delle seguenti operazioni:
 
-   * Crea un Elenco consentiti IP appropriato e applicalo al servizio di anteprima. Esegui immediatamente l’operazione annullando l’applicazione di `Preview Default [Env ID] IP Allow List` dal servizio di anteprima.
+   * Crea un Elenco consentiti IP appropriato e applicalo al servizio di anteprima. Esegui immediatamente l’operazione annullando l’applicazione di `Preview Default [Env ID] IP Allow List` dal servizio di anteprima. Per ulteriori informazioni, consulta [Annullamento dell’applicazione di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) .
 
       *OPPURE*,
 
