@@ -5,11 +5,10 @@ breadcrumb-title: Guida alla sicurezza
 user-guide-description: Argomenti importanti sulla sicurezza relativi a Experience Manager as a Cloud Service.
 feature: Configurazione
 role: Administrator
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 71%
+source-wordcount: '69'
+ht-degree: 65%
 
 ---
 
@@ -20,3 +19,4 @@ ht-degree: 71%
 + [Panoramica sulla sicurezza per AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
 + [Supporto IMS per AEM as a Cloud Service](ims-support.md)
 + [Supporto per cookie per lo stesso sito per AEM come Cloud Service](/help/security/same-site-cookie-support.md)
++ [Supporto OAuth2 per il servizio di posta](/help/security/oauth2-support-for-mail-service.md)
