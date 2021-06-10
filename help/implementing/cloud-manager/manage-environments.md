@@ -2,7 +2,7 @@
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
+source-git-commit: c4e788527ab0be8b54f9a0baed2e4e2677129898
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 3%
@@ -93,11 +93,11 @@ Visualizza l’anteprima dell’esperienza finale di un sito web prima che raggi
 
    Un utente con le autorizzazioni necessarie deve effettuare una delle seguenti operazioni per *sbloccare* l&#39;accesso al servizio di anteprima e fornire l&#39;accesso desiderato:
 
-   1. Crea un Elenco consentiti IP appropriato e applicalo al servizio di anteprima. Esegui immediatamente l’operazione annullando l’applicazione di `Preview Default [Env ID] IP Allow List` dal servizio di anteprima.
+   * Crea un Elenco consentiti IP appropriato e applicalo al servizio di anteprima. Esegui immediatamente l’operazione annullando l’applicazione di `Preview Default [Env ID] IP Allow List` dal servizio di anteprima.
 
-      OPPURE,
+      *OPPURE*,
 
-   1. Utilizza il flusso di lavoro Aggiorna Elenco consentiti IP per rimuovere l&#39;IP predefinito e aggiungere gli IP appropriati. Per ulteriori informazioni, consulta [Visualizzazione e aggiornamento di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
+   * Utilizza il flusso di lavoro Aggiorna Elenco consentiti IP per rimuovere l&#39;IP predefinito e aggiungere gli IP appropriati. Per ulteriori informazioni, consulta [Visualizzazione e aggiornamento di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) .
 
       >[!NOTE]
       >I passaggi precedenti devono essere eseguiti prima di condividere l’URL del servizio di anteprima con uno dei tuoi team per garantire che i membri appropriati del tuo team siano in grado di accedere all’URL di anteprima.
