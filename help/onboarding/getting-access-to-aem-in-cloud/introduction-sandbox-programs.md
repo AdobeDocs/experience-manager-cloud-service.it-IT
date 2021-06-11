@@ -2,10 +2,9 @@
 title: 'Introduzione ai programmi sandbox '
 description: Introduzione ai programmi sandbox
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-translation-type: tm+mt
-source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
+source-git-commit: 1ecadc0d2b45ee8c94af8d91b35dbd40b08e89b5
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -20,7 +19,7 @@ Una sandbox viene generalmente creata per scopi di formazione, demo in esecuzion
 
 Gli ambienti creati in una sandbox non sono configurati per il ridimensionamento automatico. Pertanto, questi ambienti non sono adatti per il test delle prestazioni o del carico.
 
-I programmi sandbox includono Sites e Assets e vengono compilati automaticamente con un archivio Git, un ambiente di sviluppo e una pipeline non di produzione.  L’archivio Git viene compilato con un progetto di esempio basato sull’archetipo di progetto AEM.
+I programmi sandbox includono [!DNL Sites] e [!DNL Assets] e vengono compilati automaticamente con un archivio Git, un ambiente di sviluppo e una pipeline non di produzione.  L’archivio Git viene compilato con un progetto di esempio basato sull’archetipo di progetto AEM.
 
 Per ulteriori informazioni sui tipi di programma, consulta [Informazioni su programmi e tipi di programma](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) .
 
@@ -33,7 +32,7 @@ I programmi sandbox hanno i seguenti attributi:
    * creazione di un ambiente di sviluppo
    * creazione di una pipeline non di produzione da distribuire nell’ambiente di sviluppo (distribuzione del ramo principale nell’ambiente di sviluppo)
 
-1. **Soluzioni:** i programmi sandbox includono AEM Sites e Assets.
+1. **Soluzioni:** i programmi sandbox includono AEM  [!DNL Sites] e  [!DNL Assets].
 
 1. **Aggiornamenti AEM:** AEM gli aggiornamenti possono essere applicati manualmente agli ambienti in un programma sandbox e non vengono inviati automaticamente.
 Per ulteriori informazioni, consulta [AEM Aggiornamenti agli ambienti Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) .
