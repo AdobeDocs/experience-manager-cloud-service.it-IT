@@ -4,9 +4,9 @@ description: Scopri come lavorare con video interattivi e video acquistabili in 
 feature: Video interattivi
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
 workflow-type: tm+mt
-source-wordcount: '6051'
+source-wordcount: '6021'
 ht-degree: 4%
 
 ---
@@ -32,7 +32,7 @@ Vedere anche [Uso di video interattivi con Dynamic Media](https://experienceleag
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
 
 -->
 
@@ -59,11 +59,11 @@ Il webinar [Utilizzo di video interattivi, condivisione collegamenti e condivisi
 
 La seguente descrizione dettagliata del flusso di lavoro è stata progettata per aiutarti a iniziare rapidamente a usare i video interattivi in Dynamic Media.
 
-Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su questa [pagina web di dimostrazione iniziale che *non* ha ancora aggiunto interattività](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html).
+Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su questa [pagina web di dimostrazione iniziale che *non* ha ancora aggiunto interattività](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html).
 
 Gli **esempi** illustrano i passaggi necessari per integrare i video interattivi nel sito web.
 
-Al termine dell&#39;esercitazione nell&#39;ultima sezione di esempio, [la pagina Web di dimostrazione finale con il video interattivo completamente integrato viene visualizzata in questo modo](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html).
+Al termine dell&#39;esercitazione nell&#39;ultima sezione di esempio, [la pagina Web di dimostrazione finale con il video interattivo completamente integrato viene visualizzata in questo modo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html).
 
 
 
@@ -180,7 +180,7 @@ Prendi in considerazione i seguenti esempi di URL di visualizzazione rapida e le
 
 Quando l&#39;approccio di cui sopra viene applicato al sito web Example, hai una pagina web con diverse miniature di prodotto, ognuna con un pulsante &quot;SEE MORE&quot;:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Dopo aver attivato tutte le visualizzazioni rapide del prodotto disponibili sulla pagina, si ottiene il seguente elenco di richieste di visualizzazione rapida effettuate al backend:
 
@@ -523,7 +523,7 @@ Tuttavia, se hai aggiunto interattività per attivare una visualizzazione rapida
 
 Utilizzo del sito web demo come esempio:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Il codice di incorporamento video è standard:
 
@@ -554,7 +554,7 @@ Il codice di incorporamento video è standard:
 
 L&#39;integrazione è semplice come rimuovere il codice di incorporamento video e sostituirlo con il codice di incorporamento video interattivo da Experience Manager. Puoi vedere il risultato al seguente URL. Mentre mostra un video interattivo presente sulla pagina, non è ancora integrato con le visualizzazioni rapide esistenti:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## Integrazione di un video interattivo con una visualizzazione rapida esistente {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -753,7 +753,7 @@ Il codice sorgente completo è il seguente:
 
 Il sito web demo finale con il video interattivo completamente integrato viene visualizzato come segue:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Utilizzo delle visualizzazioni rapide per creare finestre pop-up personalizzate Windows® {#using-quickviews-to-create-custom-pop-ups}
 
