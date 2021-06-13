@@ -4,9 +4,9 @@ description: Questa pagina descrive come pubblicare un canale in Screens come Cl
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2f49c34a0d45e4fe2793f0a5bfe04f85dbb892ad
+source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,22 @@ Questo documento è utile per comprendere come creare un nuovo progetto per il p
 
 Segui i passaggi seguenti per pubblicare il canale:
 
-1. Naviga e seleziona il canale dal progetto, ad esempio **FirstDigitalExperience** —> Canali —> ChannelFood.
+1. Naviga e seleziona il canale dal progetto, ad esempio **FirstDigitalExperience** —> **Canali** —> **LoopingChannelOne**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. Fai clic su **Gestisci pubblicazione** nella barra delle azioni.
 
-1. Seleziona l’azione Pubblica e pianificazione come ora dalla procedura guidata Gestisci pubblicazione e fai clic su **Avanti**.
+1. Seleziona **Azione** come **Pubblica** e **Pianificazione** come **Ora** dalla **Procedura guidata Gestisci pubblicazione** e fai clic su **Avanti**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+
+   >[!NOTE]
+   >Fai clic su **+ Include Children** nella barra delle azioni e deseleziona tutte le opzioni per pubblicare tutti i moduli nel progetto, quindi fai clic su Aggiungi per pubblicare. Per impostazione predefinita, tutte le caselle saranno selezionate e dovrai deselezionare manualmente le caselle per pubblicare tutti i moduli nel progetto.
 
 1. Dopo aver selezionato il canale dalla procedura guidata **Gestisci pubblicazione**, fai clic su **Pubblica** per pubblicare il canale.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Novità {#whats-next}
@@ -48,4 +57,4 @@ Dopo aver pubblicato i canali nel progetto, puoi:
 * Creare e gestire posizioni da Screens Content Provider
 * Creare e gestire i lettori da Screens Services Provider
 
-   È necessario continuare a utilizzare Screens come percorso dell&#39;amministratore di rete di Cloud Service esaminando il documento.
+   Continua a usare Screens come percorso di Cloud Service dopo aver esaminato il documento.
