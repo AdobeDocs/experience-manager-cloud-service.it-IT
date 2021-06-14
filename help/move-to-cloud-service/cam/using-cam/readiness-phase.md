@@ -4,12 +4,17 @@ description: Questa pagina fornisce una panoramica della fase di preparazione di
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2a75efe9e2e1ac8e2745608309f12b49eac9843
+source-git-commit: 7d0afd7337cb1011e43d9a7beb4214262fba8200
 workflow-type: tm+mt
-source-wordcount: '25'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
 # Fase di preparazione in Cloud Acceleration Manager {#readiness-phase-cam}
+
+Dopo aver creato un progetto in Cloud Acceleration Manager, ora puoi avviare la fase di preparazione.
+
+## Utilizzo degli strumenti nella fase di preparazione {#readiness-phase}
+
