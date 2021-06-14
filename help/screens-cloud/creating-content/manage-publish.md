@@ -4,9 +4,9 @@ description: Questa pagina descrive come pubblicare un canale in Screens come Cl
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,4 @@ Segui i passaggi seguenti per pubblicare il canale:
 
 ## Novità {#whats-next}
 
-Dopo aver pubblicato i canali nel progetto, puoi:
-
-* Creare e gestire posizioni da Screens Content Provider
-* Creare e gestire i lettori da Screens Services Provider
-
-   Continua a usare Screens come percorso di Cloud Service dopo aver esaminato il documento.
+Dopo aver pubblicato i canali nel progetto, dovresti continuare a usare Screens come percorso di Cloud Service esaminando il documento [Installazione e configurazione dei lettori in Screens come Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).
