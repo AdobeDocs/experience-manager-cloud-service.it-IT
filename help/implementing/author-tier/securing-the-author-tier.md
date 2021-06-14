@@ -1,22 +1,23 @@
 ---
 title: Protezione del livello di authoring
 description: Protezione del livello di authoring
-translation-type: tm+mt
-source-git-commit: e772687c4034a364912aa426a133134571246db9
+exl-id: f5be90a4-266a-4d23-8e8b-94156f0264d5
+source-git-commit: d436dea08fff8b18573bd7eba308e6b3370e11ef
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 100%
+source-wordcount: '124'
+ht-degree: 65%
 
 ---
 
-
 # Protezione del livello di authoring {#securing-the-author-tier}
 
-Quando crei un nuovo ambiente con AEM as a Cloud Service, per impostazione predefinita, il livello di authoring risultante è accessibile da Internet.
+Quando crei un nuovo ambiente con AEM as a Cloud Service, per impostazione predefinita, il livello di authoring risultante è accessibile da Internet. È possibile configurare ulteriormente i criteri di rete per proteggere l’accesso al livello di authoring. Per ulteriori informazioni, consulta [Applicazione di un Elenco consentiti IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=en) .
 
-È possibile configurare ulteriormente i criteri di rete per proteggere l’accesso al livello di authoring. La procedura si basa sull’autorizzare gli intervalli IP che dovranno poter accedere in rete all’ambiente di authoring.
+La procedura si basa sull’autorizzare gli intervalli IP che dovranno poter accedere in rete all’ambiente di authoring.
 
-Per attivare queste regole, crea un ticket di supporto (da Adobe Admin Console) fornendo le informazioni richieste:
-- ID programma
-- ID ambiente
-- Intervalli di indirizzi IP da autorizzare
+Per implementare queste regole, invia una richiesta di supporto da [Adobe Admin Console](https://adminconsole.adobe.com/) con le informazioni richieste:
+
+* ID programma
+* ID ambiente
+* Intervalli di indirizzi IP da autorizzare
+
