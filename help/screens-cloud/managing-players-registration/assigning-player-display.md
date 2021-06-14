@@ -4,9 +4,9 @@ description: Questa pagina descrive come assegnare un lettore a una visualizzazi
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '218'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Una volta completata la configurazione del progetto, devi assegnare il lettore a
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come creare e gestire le visualizzazioni in Screens Services Provider. Dopo aver letto si dovrebbe essere in grado di imparare come assegnare un lettore a un display.
+Questo documento spiega come assegnare un lettore a una visualizzazione in Screens Services Provider. Questi sono i passaggi obbligatori finali prima che il contenuto inizi a essere riprodotto in Screens come lettore di Cloud Service.
 
 ## Passaggi per assegnare un lettore a un display {#create-display}
 
@@ -36,7 +36,7 @@ Per assegnare un lettore a una visualizzazione, effettua le seguenti operazioni:
 
 1. Dopo aver fatto clic su Seleziona, verrà visualizzata la visualizzazione assegnata nel pannello **VISUALIZZAZIONE ASSEGNATA** .
 
-   Ora, lo schermo viene assegnato al lettore e il canale inizierà a riprodurre il contenuto. Il lettore dovrebbe ora scaricare e iniziare a riprodurre il contenuto. Congratulazioni!
+   Ora, lo schermo viene assegnato al lettore e il canale inizierà a riprodurre il contenuto. Il lettore dovrebbe ora scaricare e iniziare a riprodurre il contenuto. **Congratulazioni!**
 
    ![immagine](/help/screens-cloud/assets/player/output.gif)
 
