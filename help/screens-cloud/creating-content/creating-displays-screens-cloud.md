@@ -4,7 +4,7 @@ description: Questa pagina descrive come creare e gestire le visualizzazioni in 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 14%
@@ -55,4 +55,4 @@ Seleziona la visualizzazione e fai clic su **Elimina** nella parte inferiore del
 
 ## Novità {#whats-next}
 
-Ora che hai imparato a creare e gestire le visualizzazioni per il tuo progetto, dovresti continuare a usare Screens come percorso di Cloud Service esaminando il documento [Installazione e configurazione di Screens Player per AEM come Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Ora che hai imparato a creare e gestire le visualizzazioni per il progetto, dovresti continuare a usare Screens come percorso di Cloud Service esaminando il documento [Assegnazione del canale a una visualizzazione in Screens come Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md).
