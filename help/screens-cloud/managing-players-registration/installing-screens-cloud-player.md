@@ -1,12 +1,12 @@
 ---
-title: Installazione dei lettori in Screens come Cloud Service
-description: Questa pagina descrive come installare i lettori in Screens come un Cloud Service.
+title: Installazione e configurazione dei lettori in Screens come Cloud Service
+description: Questa pagina descrive come installare e configurare i lettori in Screens come Cloud Service.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '271'
 ht-degree: 1%
 
 ---
@@ -48,4 +48,4 @@ Per aggiornare il lettore, effettua le seguenti operazioni:
 
 ## Novità {#whats-next}
 
-Ora, dopo aver installato i lettori e configurato le impostazioni richieste, dovresti continuare a usare Screens come percorso di Cloud Service esaminando il documento **Creazione del lettore dal provider di servizi Screens**.
+Ora, dopo aver installato e configurato il lettore in modalità Cloud, dovresti continuare a usare Screens come percorso di Cloud Service esaminando il documento [Registrazione dei lettori in Screens come Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) da Screens Services Provider.
