@@ -5,9 +5,9 @@ breadcrumb-title: Guida all’implementazione
 user-guide-description: Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione.
 feature: Strumenti per gli sviluppatori
 role: Developer, Architect
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 34%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 34%
    + [Registrazione](developing/introduction/logging.md)
    + [Configurazioni e browser di configurazione](developing/introduction/configurations.md)
    + [Fondamenti tecnici AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [API di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [API di AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
    + [Generazione dei token di accesso per le API lato server](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Cefalea e senza testa in AEM](developing/headful-headless.md)
    + Sviluppo AEM stack completo {#full-stack}
