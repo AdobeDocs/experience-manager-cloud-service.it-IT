@@ -4,9 +4,9 @@ description: Questa pagina descrive come creare e gestire i lettori in Screens c
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8c58378660d865e90a0f5e562119c510cf86343a
+source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,12 @@ ht-degree: 0%
 
 # Creazione e gestione dei lettori in Screens come Cloud Service {#creating-players-screens-cloud}
 
-Dopo aver pubblicato i canali dal progetto AEM Screens, devi creare dei lettori.
+Dopo aver pubblicato i canali dal progetto AEM Screens, devi creare i lettori da Screens Services Provider.
+
 A *Player* esegue il software del lettore per produrre un output visivo. È in grado di controllare la visualizzazione di una parte ritagliata, ridimensionata e tradotta di contenuti o esperienze comuni. La configurazione dello schermo è associata a una visualizzazione ma può essere sostituita in caso di difetti tecnici.
+
+>[!NOTE]
+>È inoltre possibile implementare i passaggi indicati in questa Guida, dopo aver installato Screens Player.
 
 ## Obiettivo {#objective}
 
@@ -26,10 +30,12 @@ Questo documento ti aiuta a capire come creare e gestire i lettori per il proget
 
 ## Creazione di un lettore {#creating-players}
 
-Segui i passaggi riportati di seguito per creare la visualizzazione da Screens Services Provider:
+Per creare il lettore da Screens Services Provider, effettua le seguenti operazioni:
 
-1. Passa a Screens Services Provider dalla tua istanza di Cloud Service AEM.
-1. Seleziona la scheda **Display** dalla barra di navigazione a sinistra e fai clic su Crea dall&#39;angolo in alto a destra dello schermo.
+1. Passa a Provider servizi Screens.
+
+1. Seleziona la scheda **Display** dal pannello di navigazione a sinistra e fai clic su Crea dall&#39;angolo in alto a destra dello schermo.
+
 1. Selezionare **Display**.
 1. Inserisci il titolo **ChannelFoodDisplay** in Nome visualizzato e fai clic su Crea.
 1. La visualizzazione denominata ChannelFoodDisplay verrà ora registrata nell’elenco di visualizzazione.
