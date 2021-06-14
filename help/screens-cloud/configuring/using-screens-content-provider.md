@@ -1,12 +1,12 @@
 ---
 title: Utilizzo di Screens Content Provider
-description: Questa pagina descrive l’utilizzo di Screens Content Provider.
+description: Questa pagina descrive come utilizzare Screens Content Provider per la creazione di contenuti.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
@@ -32,5 +32,6 @@ Dopo aver effettuato l’accesso a Screens Content Provider, ora sei pronto per 
 
 ## Novità {#whats-next}
 
-Dopo aver appreso come navigare al provider di contenuti Screens, puoi passare al passaggio successivo, ovvero Creazione e gestione di progetti in Screens come Cloud Service.
+Ora che hai imparato a navigare su Screens Content Provider, dovresti continuare a usare Screens come percorso di Cloud Service esaminando il documento [Creazione e gestione di progetti in Screens come Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+
 
