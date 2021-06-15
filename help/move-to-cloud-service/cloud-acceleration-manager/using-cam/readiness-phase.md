@@ -4,9 +4,9 @@ description: Questa pagina fornisce una panoramica della fase di preparazione di
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 3%
 
 ---
@@ -18,20 +18,20 @@ Dopo aver creato un progetto in Cloud Acceleration Manager, ora puoi iniziare a 
 
 La fase di preparazione include:
 
-* Analisi delle best practice
-* Pianificazione e configurazione
+* [Analisi delle best practice](#best-practices-analysis)
+* [Pianificazione e configurazione](#planning-setup)
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
-## Utilizzo dell&#39;analisi delle best practice {#best-practices-analysis}
+## Utilizzo della scheda di analisi delle best practice {#best-practices-analysis}
 
-Segui i passaggi riportati di seguito per utilizzare l&#39;analisi delle best practice:
+Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle best practice :
 
 1. Fai clic sul pulsante **Rivedi** dalla scheda **Analisi delle best practice** .
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Segui questi passaggi per scaricare Best Practices Analyzer ed eseguirlo su un clone del tuo sistema AEM.
+1. Segui questi passaggi per scaricare Best Practices Analyzer (BPA) ed eseguirlo su un clone del tuo sistema AEM.
 
    1. Passa al portale [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) e scarica Best Practices Analyzer come file zip.
 
@@ -46,10 +46,10 @@ Segui i passaggi riportati di seguito per utilizzare l&#39;analisi delle best pr
 
 1. Rivedi ed esplora il dashboard Analisi delle best practice in CAM.
 
-   * Facendo clic su ogni scheda si aprirà la relativa scheda associata
-   * Tutte le schede dei rapporti (incluso il filtro) possono essere segnalate come condivisione o come recupero futuro
-   * Visualizzare i dettagli di ogni risultato del rapporto tramite l’icona di dettaglio
-   * Il caricamento di un nuovo rapporto reimposta tutte le valutazioni
+   * Fai clic su ciascuna scheda per aprire la relativa scheda associata
+   * È possibile contrassegnare tutte le schede del rapporto (incluso il filtro) per condividerlo o recuperarlo in futuro
+   * Utilizza l’icona dei dettagli per visualizzare i dettagli di ciascun risultato del rapporto
+   * Il caricamento di un nuovo rapporto ripristina tutte le valutazioni
 
 ## Utilizzo di Planning e Setup {#planning-setup}
 
@@ -66,8 +66,5 @@ Segui questa sezione per esplorare la scheda delle attività Pianificazione e Co
 ## Novità {#whats-next}
 
 Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, ora puoi passare alla revisione del passaggio successivo, Utilizzo della fase di implementazione.
-
-
-
 
 
