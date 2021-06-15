@@ -4,9 +4,9 @@ description: Questa pagina fornisce una panoramica della fase di preparazione di
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
    * Utilizza l’icona dei dettagli per visualizzare i dettagli di ciascun risultato del rapporto
    * Il caricamento di un nuovo rapporto ripristina tutte le valutazioni
 
-## Utilizzo di Planning e Setup {#planning-setup}
+## Utilizzo della scheda di pianificazione e configurazione {#planning-setup}
 
 Segui questa sezione per esplorare la scheda delle attività Pianificazione e Configurazione .
 
