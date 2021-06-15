@@ -4,9 +4,9 @@ description: Questa pagina descrive i primi passaggi della procedura introduttiv
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0cc505b7ed96ddf81cae1f92d50d6aa0c9eb7db8
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Fai clic qui per scaricare l&#39;ultimo feature pack.
 
 ## Aggiunta di utenti a Adobe Admin Console {#admin-console}
 
-Dopo aver effettuato il provisioning con un ID organizzazione Adobe Identity Management System (IMS), ora puoi effettuare l’onboarding su [Adobe Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni sull’aggiunta di utenti all’Admin Console, consulta [Utenti Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) .
+Dopo aver effettuato il provisioning con un ID organizzazione Adobe Identity Management System (IMS), ora puoi accedere a [Adobe Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni sull’aggiunta di utenti all’Admin Console, consulta [Utenti Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) .
 
 >[!NOTE]
 >Gli utenti hanno accesso AEM profilo di prodotto del Cloud Service in modo che possano accedere a AEM utilizzando Adobe ID o il Federated ID.
 
 ## Novità {#whats-next}
 
-Ora che hai effettuato il provisioning con un ID organizzazione IMS e aggiunto come utente a Adobe Admin Console, puoi aggiungere il componente aggiuntivo Screens al programma nuovo o esistente per Screens come Cloud Service in Cloud Manager.
+Ora che hai effettuato il provisioning con un ID organizzazione IMS e aggiunto come utente a Adobe Admin Console, puoi aggiungere il componente aggiuntivo [Screens al nuovo programma](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) o a [un programma esistente](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) per Screens come Cloud Service in Cloud Manager.
