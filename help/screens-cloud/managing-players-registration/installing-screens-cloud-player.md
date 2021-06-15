@@ -4,9 +4,9 @@ description: Questa pagina descrive come installare e configurare i lettori in S
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '270'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Installazione e configurazione dei lettori in Screens come Cloud Service {#installing-players-screens-cloud}
 
-La sezione seguente descrive come installare i lettori AEM Screens registrati nelle istanze di AEM on-premise. Inoltre, devi eseguire una reimpostazione di fabbrica del lettore esistente e quindi registrare il nuovo lettore su AEM Screens come Cloud Service.
+Questa sezione descrive come installare i lettori AEM Screens registrati nelle istanze di AEM on-premise. Inoltre, è necessario eseguire una reimpostazione di fabbrica del lettore esistente e quindi registrare il nuovo lettore su AEM Screens come Cloud Service.
 
 ## Obiettivo {#objective}
 
