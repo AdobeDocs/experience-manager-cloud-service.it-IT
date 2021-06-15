@@ -4,9 +4,9 @@ description: Questa pagina descrive come creare un progetto in Screens come Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7e1e1a96b4657c536b999b6deaccfe8d537263bd
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Il primo passaggio nell’implementazione di un nuovo progetto in Screens as a C
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come creare un nuovo progetto per il progetto AEM Screens in Screens Content Provider. Dopo aver letto , dovresti essere in grado di creare il tuo progetto AEM Screens in termini di ambito.
+Questo documento spiega come creare un nuovo progetto AEM Screens in Screens Content Provider. Dopo aver letto , dovresti essere in grado di creare il tuo progetto AEM Screens in termini di ambito.
 
 ## Creazione di un nuovo progetto {#create-new-project}
 
@@ -40,13 +40,9 @@ Per creare un nuovo progetto in Screens come Cloud Service, effettua le seguenti
    >[!NOTE]
    >Il campo **Nome** viene compilato automaticamente nella finestra di dialogo **Crea progetto Screens** in base al titolo scelto.
 
-1. Fai clic su **Salva**. Il progetto Screens verrà visualizzato come *FirstDigitalExperience* nel provider di contenuti Screens.
+1. Fai clic su **Salva**. Il progetto Screens verrà visualizzato come *FirstDigitalExperience* nel provider di contenuti Screens. Il progetto verrà visualizzato in Screens Content Provider, con due cartelle intitolate: **Posizioni** e **Canali**.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
-
-1. Il progetto verrà visualizzato in Screens Content Provider, con due cartelle intitolate: **Posizioni** e **Canali**.
-
-   ![](/help/screens-cloud/assets/create-content/create-screens-project4.png)
 
    Ora che hai impostato un progetto AEM Screens, puoi iniziare ad aggiungere canali e posizioni al progetto.
 
