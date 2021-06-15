@@ -4,10 +4,10 @@ description: Questa pagina fornisce una panoramica su come utilizzare e iniziare
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 4%
+source-wordcount: '480'
+ht-degree: 3%
 
 ---
 
@@ -54,14 +54,41 @@ Per creare un nuovo progetto , procedi come segue:
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-3.png)
 
-   Seleziona il progetto e passa il puntatore del mouse sul progetto per modificarlo o eliminarlo, come illustrato nella figura riportata di seguito.
+1. Il progetto viene ora creato e visualizzato nella pagina di destinazione **Cloud Acceleration Manager** .
 
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing.png)
 
 1. Fai clic sulla scheda del progetto per accedere al progetto. Viene visualizzata la pagina di destinazione del progetto.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
+## Gestione del progetto {#manage-project}
+
+Puoi modificare il nome del progetto, la descrizione, l’immagine miniatura o eliminare il progetto.
+
+### Modifica del progetto {#edit-project}
+
+Per modificare il progetto, effettua le seguenti operazioni:
+
+1. Seleziona il progetto e passa il puntatore del mouse sul progetto, quindi fai clic sull’icona a forma di matita per modificarlo, come illustrato nella figura riportata di seguito.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. Puoi modificare il nome, la descrizione del progetto e persino caricare una nuova immagine o modificarne una esistente dalla finestra di dialogo **Modifica progetto**.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-edit.png)
+
+1. Fai clic su **Aggiorna** per eseguire il commit delle modifiche.
+
+### Eliminazione del progetto {#delete-project}
+
+Per eliminare il progetto, effettua le seguenti operazioni:
+
+1. Seleziona il progetto e passa il puntatore del mouse sul progetto, quindi fai clic sull’icona del bucket per eliminarlo, come illustrato nella figura riportata di seguito.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. Fai clic su **Elimina** per confermare il passaggio.
 
 ## Novità {#whats-next}
 
