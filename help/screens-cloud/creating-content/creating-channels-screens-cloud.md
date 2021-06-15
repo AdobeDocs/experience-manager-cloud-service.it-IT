@@ -4,9 +4,9 @@ description: Questa pagina descrive come creare e gestire i canali in Screens co
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ece3fae8b65b4dbdc38e63a211a3f55f4eb91333
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '540'
 ht-degree: 7%
 
 ---
@@ -19,10 +19,10 @@ Dopo aver creato un progetto AEM Screens, devi creare i canali.
 
 ## Obiettivo {#objective}
 
-Questo documento è utile per comprendere come creare e gestire i canali per il progetto AEM Screens in Screens Content Provider. Dopo la lettura è necessario:
+Questo documento è utile per comprendere come creare e gestire i canali per il progetto AEM Screens in Screens Content Provider. Dopo la lettura dovresti essere a:
 
-* Scopri come creare canali per Screens Content Provider.
-* Puoi gestire i tuoi canali in un progetto AEM Screens, in termini di ambito.
+* informazioni su come creare canali per Screens Content Provider
+* gestire e modificare i contenuti nei canali
 
 ## Passaggi per creare un nuovo canale per sequenza in Screens come Cloud Service {#create-new-channel}
 
@@ -44,7 +44,7 @@ Segui i passaggi seguenti per creare un nuovo canale per sequenza in Screens com
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > La procedura guidata **Crea** fornisce diversi tipi di modelli durante la creazione di un canale. Per ulteriori informazioni, consulta la sezione Modelli disponibili in Creazione guidata .
+   > La procedura guidata **Crea** fornisce diversi tipi di modelli durante la creazione di un canale. Per ulteriori informazioni, consulta la sezione [Modelli disponibili](#available-templates) in Creazione guidata .
 
 1. Inserisci il nome del canale della sequenza, ad esempio **LoopingChannelOne** e fai clic su **Crea**.
 
@@ -52,7 +52,7 @@ Segui i passaggi seguenti per creare un nuovo canale per sequenza in Screens com
 
    Ora vedrai un **LoopingChannelOne** nella cartella Canali del progetto AEM Screens.
 
-1. Dopo aver creato il canale, ora puoi aggiungere contenuto al canale. Per informazioni su come aggiungere risorse (immagini/video) al canale, consulta [Aggiunta di contenuti a un canale](#add-content) .
+   Dopo aver creato il canale, ora puoi aggiungere contenuto al canale. Per informazioni su come aggiungere risorse (immagini/video) al canale, consulta [Aggiunta di contenuti a un canale](#add-content) .
 
 ## Gestione di un canale {#managing-channels}
 
@@ -82,7 +82,7 @@ Per aggiungere o modificare il contenuto di un canale, segui i passaggi riportat
 
 ## Modelli disponibili in Creazione guidata {#available-templates}
 
-I seguenti modelli sono disponibili quando si utilizza la procedura guidata per la creazione dei canali **Crea** , ad esempio:
+I seguenti modelli sono disponibili durante l&#39;utilizzo della procedura guidata per la creazione dei canali **Crea**:
 
 | Modelli disponibili | Descrizione |
 |--- |--- |
