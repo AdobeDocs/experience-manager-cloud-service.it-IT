@@ -4,9 +4,9 @@ description: Questa pagina descrive come registrare i lettori in Screens come Cl
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,10 @@ Una volta installati e configurati i lettori per Screens come Cloud Service, è 
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a capire come registrare i lettori nel provider di servizi Screens. Dopo la lettura è necessario:
+Questo documento ti aiuta a capire come registrare i lettori nel provider di servizi Screens. Dopo aver letto dovrebbe essere in grado di:
 
-* Scopri come registrare i giocatori.
-* Puoi gestire i tuoi canali in un progetto AEM Screens, in termini di ambito.
+* scopri come registrare i giocatori
+* come completare il processo di registrazione da Screens Services Provider
 
 ## Passaggi per registrare un lettore Screens {#register-players}
 
@@ -66,3 +66,6 @@ Per registrare il lettore, effettua le seguenti operazioni:
 
    ![immagine](/help/screens-cloud/assets/player/register-player6.png)
 
+## Novità {#whats-next}
+
+Ora, dopo aver installato e configurato il lettore in modalità Cloud, dovresti continuare a utilizzare Screens come percorso di Cloud Service esaminando il documento [Assegnazione del lettore a un display in Screens come Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) dal provider di servizi Screens.
