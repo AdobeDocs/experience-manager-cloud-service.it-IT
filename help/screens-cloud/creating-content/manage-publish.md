@@ -4,9 +4,9 @@ description: Questa pagina descrive come pubblicare un canale in Screens come Cl
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ Puoi pubblicare contenuti da AEM Screens. La funzione Gestisci pubblicazione con
 
 ## Obiettivo {#objective}
 
-Questo documento è utile per comprendere come creare un nuovo progetto per il progetto AEM Screens in Screens Content Provider. Dopo la lettura è necessario:
+Questo documento è utile per comprendere come creare un nuovo progetto per il progetto AEM Screens in Screens Content Provider. Dopo aver letto dovrebbe essere in grado di:
 
-* Scopri come pubblicare un canale.
-* Puoi gestire la pubblicazione dei canali in termini di ambito.
+* scopri come pubblicare un canale.
+* gestire la pubblicazione, in termini di ambito di applicazione
 
 ## Passaggi per pubblicare un canale {#publish-channel}
 
