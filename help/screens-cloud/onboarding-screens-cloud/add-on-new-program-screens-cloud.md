@@ -4,9 +4,9 @@ description: Questa pagina descrive l’aggiunta di un componente aggiuntivo Scr
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9d3c43f863cff3117186cd6bcf358a7069a6b255
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '311'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ La sezione seguente descrive come aggiungere Screens come componente aggiuntivo 
 
 Per aggiungere Screens come componente aggiuntivo a un nuovo programma in Cloud Manager, effettua le seguenti operazioni:
 
-1. Passa a Cloud Manager.
+1. Passa a [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
    >Per informazioni su Cloud Manager, consulta [Introduzione a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) .
