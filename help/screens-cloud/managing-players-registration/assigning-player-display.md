@@ -4,9 +4,9 @@ description: Questa pagina descrive come assegnare un lettore a una visualizzazi
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '229'
 ht-degree: 2%
 
 ---
@@ -34,9 +34,11 @@ Per assegnare un lettore a una visualizzazione, effettua le seguenti operazioni:
 
    ![immagine](/help/screens-cloud/assets/player/register-player8.png)
 
-1. Dopo aver fatto clic su Seleziona, verrà visualizzata la visualizzazione assegnata nel pannello **VISUALIZZAZIONE ASSEGNATA** .
+## Riproduzione dei contenuti {#content-playback}
 
-   Ora, lo schermo viene assegnato al lettore e il canale inizierà a riprodurre il contenuto. Il lettore dovrebbe ora scaricare e iniziare a riprodurre il contenuto. **Congratulazioni!**
+Dopo aver assegnato una visualizzazione a un lettore, come mostrato nella sezione precedente, verrà visualizzata la visualizzazione assegnata nel pannello **VISUALIZZAZIONE ASSEGNATA**.
 
-   ![immagine](/help/screens-cloud/assets/player/output.gif)
+Ora, lo schermo viene assegnato al lettore e il canale inizierà a riprodurre il contenuto. Il lettore dovrebbe ora scaricare e iniziare a riprodurre il contenuto. **Congratulazioni!**
+
+![immagine](/help/screens-cloud/assets/player/output.gif)
 
