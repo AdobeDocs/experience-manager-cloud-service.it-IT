@@ -4,9 +4,9 @@ description: Questa pagina fornisce una panoramica della fase di preparazione di
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
+source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,12 @@ La fase di preparazione include:
 * [Analisi delle best practice](#best-practices-analysis)
 * [Pianificazione e configurazione](#planning-setup)
 
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+Fai clic sulla scheda del progetto per aprire la pagina di destinazione del progetto e passa alla sezione **Preparazione** , come illustrato nella figura seguente.
+
+![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+>[!NOTE]
+>Per ulteriori informazioni, consulta [Creazione e gestione di un progetto in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) .
 
 ## Utilizzo della scheda di analisi delle best practice {#best-practices-analysis}
 
