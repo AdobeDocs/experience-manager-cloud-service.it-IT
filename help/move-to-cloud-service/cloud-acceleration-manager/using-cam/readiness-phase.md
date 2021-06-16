@@ -4,9 +4,9 @@ description: Questa pagina fornisce una panoramica della fase di preparazione di
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
+source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -61,28 +61,35 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
 
 1. Rivedi ed esplora il dashboard Analisi delle best practice in CAM. Per ulteriori informazioni, fai riferimento alla sezione seguente [Rapporto sull&#39;analisi delle best practice](#analysis-report) .
 
+   >[!NOTE]
+   >Il caricamento di un nuovo rapporto ripristina tutte le valutazioni.
+
 ### Analisi del rapporto di analisi delle best practice {#analysis-report}
 
-Esplora le seguenti schede disponibili nella pagina dei rapporti:
+Esplora le seguenti schede disponibili nella pagina Rapporto di analisi delle best practice :
 
 >[!NOTE]
->Il caricamento di un nuovo rapporto ripristina tutte le valutazioni.
+> Con ogni scheda, è possibile:
+>* fai clic su ogni scheda per aprire la relativa scheda associata
+>* segnalibro di tutte le schede del rapporto (incluso il filtro) per la condivisione o il recupero futuro
+>* utilizza l’icona dei dettagli per visualizzare i dettagli di ogni risultato del rapporto
 
-1. **Proprietà** report: Questa scheda fornisce informazioni nelle proprietà del rapporto quali data, durata, filtri, data di caricamento e così via.
 
-1. **Panoramica** del rapporto:
+#### Proprietà rapporto {#report-properties}
 
-   Questa scheda fornisce i risultati del rapporto
+Questa scheda fornisce informazioni nelle proprietà del rapporto quali data, durata, filtri, data di caricamento e così via.
 
-1. **Valutazione delle best practice**
+#### Panoramica del rapporto {#report-overview}
 
-1. **Valutazione della complessità della migrazione**
+Questa scheda fornisce i risultati del rapporto
 
-   >[!NOTE]
-   > Inoltre, puoi effettuare le seguenti operazioni:
-   >* fai clic su ogni scheda per aprire la relativa scheda associata
-   >* segnalibro di tutte le schede del rapporto (incluso il filtro) per la condivisione o il recupero futuro
-   >* utilizza l’icona dei dettagli per visualizzare i dettagli di ogni risultato del rapporto
+#### Valutazione delle best practice {#best-practices-assessment}
+
+Questa scheda fornisce un
+
+#### Valutazione della complessità della migrazione {#migration-complexity-assessment}
+
+Questa scheda fornisce
 
 
 ## Utilizzo della scheda di pianificazione e configurazione {#planning-setup}
