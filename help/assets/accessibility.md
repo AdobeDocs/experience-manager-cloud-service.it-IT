@@ -2,16 +2,15 @@
 title: Accessibilità in [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aiutano gli utenti con disabilità.
 contentOwner: AG
-feature: Accessibility,Asset Management
+feature: Accessibilità, gestione delle risorse
 role: Business Practitioner,Architect,Leader
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
-source-wordcount: '1919'
+source-wordcount: '1915'
 ht-degree: 2%
 
 ---
-
 
 <!--
 Possible topics to cover in this article are below.
@@ -87,7 +86,7 @@ Le azioni seguenti in [!DNL Assets] funzionano con le scelte rapide da tastiera 
 | Vista a colonne nell’interfaccia utente di [!DNL Assets] | Tasti freccia Su e Giù | Passa a file e cartelle all’interno della stessa gerarchia. |
 | Vista a colonne nell’interfaccia utente di [!DNL Assets] | Tasti freccia sinistra e destra | Passa a file e cartelle sopra o sotto la cartella corrente. |
 | Esplorazione delle cartelle in [!DNL Assets] | `/` | Richiama la ricerca aprendo la casella Omnisearch. |
-| [!DNL Assets] Console | ` | Attiva/disattiva barre laterali |
+| [!DNL Assets] Console |  | Attiva/disattiva barre laterali |
 | [!DNL Assets] Console | `Alt + 1` | Apri la struttura del contenuto. |
 | [!DNL Assets] Console | `Alt + 2` | Apri la barra a sinistra [!UICONTROL Navigazione]. |
 | [!DNL Assets] Console | `Alt + 3` | Visualizza [!UICONTROL Timeline] di una risorsa selezionata. |
