@@ -4,9 +4,9 @@ description: Questa pagina fornisce una panoramica della fase di preparazione di
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '441'
 ht-degree: 3%
 
 ---
@@ -21,12 +21,18 @@ La fase di preparazione include:
 * [Analisi delle best practice](#best-practices-analysis)
 * [Pianificazione e configurazione](#planning-setup)
 
-Fai clic sulla scheda del progetto per aprire la pagina di destinazione del progetto e passa alla sezione **Preparazione** , come illustrato nella figura seguente.
+Segui i passaggi seguenti per passare alla fase di preparazione:
 
-![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+1. Fai clic sulla scheda del progetto per aprire la pagina di destinazione del progetto.
 
->[!NOTE]
->Per ulteriori informazioni, consulta [Creazione e gestione di un progetto in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) .
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+
+1. Passa alla sezione **Preparazione** , come illustrato nella figura riportata di seguito.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+   >[!NOTE]
+   >Per ulteriori informazioni, consulta [Creazione e gestione di un progetto in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) .
 
 ## Utilizzo della scheda di analisi delle best practice {#best-practices-analysis}
 
@@ -49,12 +55,35 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
-1. Rivedi ed esplora il dashboard Analisi delle best practice in CAM.
+1. Dopo aver caricato un nuovo rapporto, verrà visualizzato il rapporto di analisi delle best practice .
 
-   * Fai clic su ciascuna scheda per aprire la relativa scheda associata
-   * È possibile contrassegnare tutte le schede del rapporto (incluso il filtro) per condividerlo o recuperarlo in futuro
-   * Utilizza l’icona dei dettagli per visualizzare i dettagli di ciascun risultato del rapporto
-   * Il caricamento di un nuovo rapporto ripristina tutte le valutazioni
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
+1. Rivedi ed esplora il dashboard Analisi delle best practice in CAM. Per ulteriori informazioni, fai riferimento alla sezione seguente [Rapporto sull&#39;analisi delle best practice](#analysis-report) .
+
+### Analisi del rapporto di analisi delle best practice {#analysis-report}
+
+Esplora le seguenti schede disponibili nella pagina dei rapporti:
+
+>[!NOTE]
+>Il caricamento di un nuovo rapporto ripristina tutte le valutazioni.
+
+1. **Proprietà** report: Questa scheda fornisce informazioni nelle proprietà del rapporto quali data, durata, filtri, data di caricamento e così via.
+
+1. **Panoramica** del rapporto:
+
+   Questa scheda fornisce i risultati del rapporto
+
+1. **Valutazione delle best practice**
+
+1. **Valutazione della complessità della migrazione**
+
+   >[!NOTE]
+   > Inoltre, puoi effettuare le seguenti operazioni:
+   >* fai clic su ogni scheda per aprire la relativa scheda associata
+   >* segnalibro di tutte le schede del rapporto (incluso il filtro) per la condivisione o il recupero futuro
+   >* utilizza l’icona dei dettagli per visualizzare i dettagli di ogni risultato del rapporto
+
 
 ## Utilizzo della scheda di pianificazione e configurazione {#planning-setup}
 
