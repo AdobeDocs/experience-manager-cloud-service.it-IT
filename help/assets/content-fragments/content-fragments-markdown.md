@@ -1,16 +1,15 @@
 ---
 title: Markdown
 description: Scopri in che modo l’editor Frammento di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti headless.
-feature: Content Fragments
+feature: Frammenti di contenuto
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
-
 
 # Markdown {#markdown}
 
@@ -166,7 +165,7 @@ Il testo in grassetto può essere visualizzato come segue:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Per indicare un’estensione di codice, inseriscila con virgolette di zecca (`). A differenza di un blocco di codice preformattato, un intervallo di codice indica il codice all’interno di un paragrafo normale.
+Per indicare un intervallo di codice, inseriscilo con virgolette di backtick (&amp;grave;). A differenza di un blocco di codice preformattato, un intervallo di codice indica il codice all’interno di un paragrafo normale.
 
 Esempio:
 
