@@ -4,10 +4,10 @@ description: Questa pagina fornisce una panoramica della fase di preparazione di
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
+source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 3%
+source-wordcount: '511'
+ht-degree: 4%
 
 ---
 
@@ -68,6 +68,8 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
 
 Esplora le seguenti schede disponibili nella pagina Rapporto di analisi delle best practice :
 
+![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
 >[!NOTE]
 > Con ogni scheda, è possibile:
 >* fai clic su ogni scheda per aprire la relativa scheda associata
@@ -77,11 +79,26 @@ Esplora le seguenti schede disponibili nella pagina Rapporto di analisi delle be
 
 #### Proprietà rapporto {#report-properties}
 
-Questa scheda fornisce informazioni nelle proprietà del rapporto quali data, durata, filtri, data di caricamento e così via.
+Questa scheda fornisce informazioni sulle proprietà del rapporto quali data del rapporto, durata, filtri, data di caricamento e dettagli di Adobe Experience Manager (AEM).
+
+![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Panoramica del rapporto {#report-overview}
 
 Questa scheda fornisce i risultati del rapporto
+
+![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+
+Facendo clic su questo rapporto si apre la scheda **Report** , come illustrato nella figura riportata di seguito.
+
+![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+
+Puoi filtrare il rapporto in base a importanza, sottotipo o conteggio.
+
+![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+
+>[!NOTE]
+>Per informazioni sulle categorie dei risultati e i livelli di importanza, fai riferimento a [Interpretazione del rapporto di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) .
 
 #### Valutazione delle best practice {#best-practices-assessment}
 
