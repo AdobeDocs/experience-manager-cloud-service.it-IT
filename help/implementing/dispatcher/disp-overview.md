@@ -3,7 +3,7 @@ title: Dispatcher nel cloud
 description: 'Dispatcher nel cloud '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 7b8b9ca2881d07482888ac2a53b8c3bdff02b6dd
+source-git-commit: cf42e530136d5eb8afe7204ae0af1353b1f31cbd
 workflow-type: tm+mt
 source-wordcount: '4247'
 ht-degree: 6%
@@ -34,9 +34,9 @@ Gli strumenti di Dispatcher fanno parte del AEM generale come SDK per Cloud Serv
 
 ## Download ed estrazione degli strumenti {#extracting-the-sdk}
 
-Gli strumenti Dispatcher, parte del [AEM come Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), possono essere scaricati da un file zip dal portale [Distribuzione software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) . Qualsiasi nuova configurazione disponibile in quella nuova versione di Dispatcher Tools, può essere utilizzata per distribuire negli ambienti Cloud in cui è in esecuzione la versione di AEM nel Cloud o una versione successiva.
+Gli strumenti Dispatcher, parte del [AEM come Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), possono essere scaricati da un file zip dal portale [Distribuzione software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) . Qualsiasi nuova configurazione disponibile in quella nuova versione di Dispatcher Tools può essere utilizzata per distribuire agli ambienti Cloud che eseguono tale versione di AEM nel Cloud o nella versione successiva.
 
-Decomprimi l’SDK, che crea i bundle degli strumenti Dispatcher per macOS/Linux e Windows.
+Decomprimi l’SDK, che crea i bundle degli strumenti Dispatcher per macOS, Linux e Windows.
 
 **Per macOS/Linux**, esegui l’artefatto dello strumento Dispatcher e eseguilo. Estrae automaticamente i file degli strumenti del Dispatcher sotto la directory in cui è stato memorizzato (dove `version` è la versione degli strumenti del Dispatcher).
 
@@ -112,7 +112,7 @@ Questo file è incluso all&#39;interno dei file `.vhost`. Dispone di un set di r
 
 * `conf.d/variables/custom.vars`
 
-Questo file è incluso all&#39;interno dei file `.vhost`. Puoi inserire le definizioni per le variabili Apache in questa posizione.
+Questo file è incluso all&#39;interno dei file `.vhost`. Puoi aggiungere definizioni per le variabili Apache in questa posizione.
 
 * `conf.d/variables/global.vars`
 
