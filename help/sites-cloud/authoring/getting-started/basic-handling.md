@@ -1,14 +1,13 @@
 ---
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e le funzioni di base
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
+source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
 workflow-type: tm+mt
-source-wordcount: '2864'
-ht-degree: 99%
+source-wordcount: '2876'
+ht-degree: 98%
 
 ---
-
 
 # Operazioni di base {#basic-handling}
 
@@ -72,7 +71,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
 | Progetti | La console Progetti consente di accedere direttamente ai progetti. [I progetti sono dashboard virtuali](/help/sites-cloud/authoring/projects/overview.md) che possono essere utilizzati per creare un team. Potrai quindi fornire al team l’accesso a risorse, flussi di lavoro e attività, facilitando la collaborazione verso un obiettivo comune. |
 | Sites | Le console Sites ti permettono di [creare, visualizzare e gestire siti web](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) in esecuzione sull’istanza AEM. Da questa console puoi creare, modificare, copiare, spostare ed eliminare pagine di siti web, avviare flussi di lavoro e pubblicare pagine. |
 | Frammenti esperienza | Un [frammento di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse. |
-| Assets | La console Assets consente di importare e gestire le risorse digitali quali immagini, video, documenti e file audio. Puoi usare queste risorse da qualunque sito web in esecuzione nell’istanza di AEM.<!--add some kind of assets link--> |
+| Assets | La console Assets consente di importare e gestire [risorse digitali quali immagini, video, documenti e file audio](/help/assets/overview.md). Puoi usare queste risorse da qualunque sito web in esecuzione nell’istanza di AEM. Puoi anche creare e gestire [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) dalla console Risorse. |
 | Personalizzazione | Questa console fornisce un set di strumenti per la [creazione e modifica di contenuti mirati e la presentazione di esperienze personali.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## Pannello Strumenti {#tools-panel}
@@ -203,7 +202,7 @@ Sono disponibili diverse risorse di Aiuto:
    >Per una panoramica di tutte le scelte rapide da tastiera, consulta la documentazione seguente:
    >
    >* [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   * [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Barra delle azioni   {#actions-toolbar}
@@ -223,8 +222,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 ![Opzioni aggiuntive](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
->
->Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
+Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
 ## Azioni rapide   {#quick-actions}
 
@@ -242,11 +240,10 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
-* [Vista a elenco](#list-view)
+* [Vista a elenco ](#list-view)
 
 >[!NOTE]
->
->Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
+Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
 ### Selezionare le risorse   {#selecting-resources}
 
@@ -376,8 +373,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 * Cambia l’ordine degli elementi utilizzando la barra verticale punteggiata all’estrema destra di ciascun elemento dell’elenco.
 
    >[!NOTE]
-   >
-   >La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
+   La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
 
    ![Ordine delle colonne](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -396,8 +392,7 @@ Ad esempio, in **Sites** puoi selezionare solo il contenuto (opzione predefinita
 Se selezioni solo il contenuto, appare solo l’icona della barra. Quando selezioni qualsiasi altra opzione, il nome è visualizzato accanto all’icona della barra.
 
 >[!NOTE]
->
->Sono disponibili [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) per passare rapidamente da un’opzione all’altra della barra.
+Sono disponibili [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) per passare rapidamente da un’opzione all’altra della barra.
 
 ### Struttura contenuto {#content-tree}
 
@@ -408,12 +403,10 @@ Mediante il pannello laterale della struttura del contenuto, insieme alla vista 
 ![Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
->
->Una volta selezionata una voce nella visualizzazione gerarchica, puoi spostarti rapidamente nella gerarchia attraverso i tasti freccia.
->
->Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Una volta selezionata una voce nella visualizzazione gerarchica, puoi spostarti rapidamente nella gerarchia attraverso i tasti freccia.
+Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
-### Timeline   {#timeline}
+### Timeline  {#timeline}
 
 Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezionata. Per aprire la colonna della timeline, utilizza il selettore della barra a sinistra:
 
