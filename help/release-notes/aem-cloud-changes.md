@@ -2,10 +2,10 @@
 title: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 71f05dda4ccd52c66bbf1d9025900976f07227f3
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 85%
+source-wordcount: '810'
+ht-degree: 82%
 
 ---
 
@@ -114,10 +114,4 @@ Per la transizione dei progetti da AMS o da un’installazione on-premise, Adobe
 
 ## Gestione e distribuzione delle risorse {#asset-handling}
 
-Il caricamento, il trattamento e il download delle risorse sono stati ottimizzati in Assets come Cloud Service per essere più efficienti e consentire una migliore scalabilità e caricamenti e download più veloci. Tuttavia, questo comportamento potrebbe influire su eventuale codice personalizzato esistente.
-
-* Il flusso di lavoro predefinito **DAM Asset Update** incluso nelle versioni precedenti di AEM non è più disponibile.
-* I componenti del sito web che forniscono un binario **senza trasformazione** devono utilizzare il download diretto.
-   * Il servlet GET di Sling è stato modificato in modo da eseguire questa operazione per impostazione predefinita.
-* I componenti del sito web che forniscono un binario **con trasformazione**, ad esempio il ridimensionamento tramite servlet, continuano a funzionare normalmente.
-* Le risorse incluse in Gestione pacchetti devono essere rielaborate manualmente tramite l’azione **Rielabora risorse** nell’interfaccia di Assets.
+Il caricamento, l’elaborazione e il download delle risorse sono ottimizzati in Experience Manager Assets come Cloud Service. Ora è più efficiente, consente di eseguire caricamenti e download più veloci e scalare i contenuti. Inoltre, influisce sul codice personalizzato esistente e su alcune operazioni. Vedere le [modifiche a [!DNL Assets]](/help/assets/assets-cloud-changes.md).
