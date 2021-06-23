@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Tag avanzati, assegnazione tag
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 ---
 
 
-# Aggiungi tag avanzati alle risorse per migliorare l’esperienza di ricerca {#smart-tag-assets-for-faster-search}
+# Aggiungere tag avanzati alle risorse per migliorare l’esperienza di ricerca {#smart-tag-assets-for-faster-search}
 
 Le organizzazioni che si occupano di risorse digitali utilizzano sempre più vocabolario controllato dalla tassonomia nei metadati delle risorse. In sostanza, include un elenco di parole chiave a cui i dipendenti, i partner e i clienti utilizzano comunemente per fare riferimento e cercare le loro risorse digitali. L’assegnazione di tag alle risorse tramite un vocabolario controllato dalla tassonomia consente di identificare e recuperare facilmente le risorse nelle ricerche.
 
@@ -25,7 +25,7 @@ In background, la funzionalità utilizza il framework artificialmente intelligen
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## Tipi di risorse supportati {#smart-tags-supported-file-formats}
+## Tipi di risorse supportate {#smart-tags-supported-file-formats}
 
 Puoi assegnare i tag ai seguenti tipi di risorse:
 
@@ -128,7 +128,7 @@ Per creare e addestrare un modello per i tag specifici dell’azienda, effettua 
 
 *Figura: Passaggi del flusso di lavoro di formazione per addestrare il modello di assegnazione tag.*
 
-### Visualizza lo stato e il rapporto del corso di formazione {#training-status}
+### Visualizzare lo stato e il rapporto della formazione {#training-status}
 
 Per verificare se il servizio Tag avanzati è addestrato sui tag nel set di risorse di formazione, controlla il rapporto del flusso di lavoro di formazione dalla console Rapporti .
 
@@ -175,7 +175,7 @@ Per verificare se il servizio Tag avanzati è addestrato sui tag nel set di riso
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Assegnazione di tag alle risorse con tag avanzati {#tag-assets}
+## Assegnare tag alle risorse con tag avanzati {#tag-assets}
 
 Quando viene caricato, tutti i tipi di risorse supportate ricevono automaticamente i tag di [!DNL Experience Manager Assets] . L’assegnazione tag è abilitata per impostazione predefinita. [!DNL Experience Manager] applica i tag appropriati in tempo quasi reale.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
@@ -183,7 +183,7 @@ Per immagini e video, i tag avanzati vengono derivati in base ad alcuni aspetti 
 
 Per le risorse basate su testo, l’efficacia di Tag avanzati non dipende dalla quantità di testo nella risorsa, ma dalle parole chiave o entità pertinenti presenti nel testo della risorsa. Per le risorse basate su testo, i tag avanzati sono le parole chiave che compaiono nel testo ma quelle che descrivono meglio la risorsa. Per le risorse supportate, [!DNL Experience Manager] estrae già il testo, che viene quindi indicizzato e utilizzato per cercare le risorse. Tuttavia, i tag avanzati basati su parole chiave nel testo forniscono un facet di ricerca dedicato, strutturato e con priorità più elevata, utilizzato per migliorare l’individuazione delle risorse rispetto all’indice di ricerca completa.
 
-## Gestire tag avanzati e ricerche di risorse {#manage-smart-tags-and-searches}
+## Gestione di tag avanzati e ricerche delle risorse {#manage-smart-tags-and-searches}
 
 È possibile curare gli smart tag per rimuovere eventuali tag non accurati assegnati alle risorse del brand, in modo da visualizzare solo i tag più rilevanti.
 
@@ -207,7 +207,7 @@ Per moderare gli smart tag delle risorse:
 
 1. Passa alla pagina [!UICONTROL Proprietà] della risorsa. Osserva che al tag promosso è assegnata un’elevata rilevanza e, quindi, appare più alta nei risultati della ricerca.
 
-### Comprendere i risultati della ricerca [!DNL Experience Manager] con tag avanzati {#understand-search}
+### Comprendere i risultati di ricerca [!DNL Experience Manager] con gli smart tag {#understand-search}
 
 Per impostazione predefinita, la ricerca [!DNL Experience Manager] combina i termini di ricerca con una clausola `AND`. L’utilizzo di smart tag non modifica questo comportamento predefinito. L’utilizzo di tag avanzati aggiunge una clausola `OR` per trovare uno dei termini di ricerca negli smart tag applicati. Ad esempio, è consigliabile cercare `woman running`. Le risorse con una semplice `woman` o una semplice `running` parola chiave nei metadati non vengono visualizzate nei risultati di ricerca per impostazione predefinita. Tuttavia, una risorsa con tag `woman` o `running` utilizzando tag avanzati viene visualizzata in una query di ricerca di questo tipo. Quindi i risultati della ricerca sono una combinazione di:
 
