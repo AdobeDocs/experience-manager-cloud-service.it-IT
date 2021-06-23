@@ -1,14 +1,13 @@
 ---
 title: Accesso al livello di authoring
 description: Accesso al livello di authoring
-translation-type: tm+mt
-source-git-commit: e772687c4034a364912aa426a133134571246db9
+exl-id: 4143a125-3d46-4c44-b52c-f55c5194fb9c
+source-git-commit: ebc80a68d250ce5e95657f42419e6b40b843f25b
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 100%
+source-wordcount: '51'
+ht-degree: 78%
 
 ---
-
 
 # Accesso al livello di authoring {#accessing-the-author-tier}
 
@@ -18,8 +17,4 @@ Il formato dell’URL è attualmente il seguente:
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-Questo formato verrà in seguito sostituito da un formato URL standard di Adobe Experience Cloud:
-
-* `https://experience.adobe.com/#/@[TenantId]/`
-
-Pertanto non è supportata la configurazione di nomi di dominio personalizzati per il livello di authoring di AEM.
+I nomi di dominio personalizzati per il livello di authoring AEM non sono supportati.
