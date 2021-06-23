@@ -4,14 +4,14 @@ description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Ass
 feature: Informazioni sulla versione
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 6%
+source-wordcount: '830'
+ht-degree: 5%
 
 ---
 
-# Modifiche di rilievo apportate a [!DNL Experience Manager Assets] come a [!DNL Cloud Service] {#notable-changes}
+# Modifiche di rilievo apportate a [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#notable-changes}
 
 [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service] offre molte nuove funzioni e possibilità per gestire i progetti di Experience Manager. Ci sono molte differenze tra [!DNL Experience Manager Assets] on-premise o in hosting come Adobe Managed Service rispetto a [!DNL Experience Manager] come [!DNL Cloud Service]. Questo articolo evidenzia le differenze importanti per le funzionalità di .[!DNL Assets]
 
@@ -21,7 +21,7 @@ Le principali differenze rispetto all&#39; [Experience Manager] 6.5 riguardano l
 * [Microservizi per risorse per l’elaborazione](#asset-microservices) nativa per il cloud.
 * [Rimozione dell’interfaccia classica](#classic-ui).
 
-## Acquisizione ed elaborazione delle risorse {#asset-ingestion}
+## Acquisizione, elaborazione e distribuzione di risorse {#asset-ingestion-distribution}
 
 Il caricamento delle risorse è ottimizzato per l’efficienza, consentendo una migliore scalabilità dell’acquisizione, caricamenti più rapidi, elaborazione più rapida tramite i microservizi e ingestione in massa. Le funzionalità del prodotto (interfacce utente web, client desktop) vengono aggiornate. Inoltre, questo può influire su alcune personalizzazioni esistenti.
 
@@ -33,16 +33,17 @@ Il caricamento delle risorse è ottimizzato per l’efficienza, consentendo una 
    * Consulta [configurare e utilizzare i microservizi per le risorse](/help/assets/asset-microservices-configure-and-use.md)
    * Per personalizzare i passaggi del flusso di lavoro nell&#39;elaborazione, è possibile utilizzare [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows).
 
+* I componenti del sito web che forniscono un file binario senza alcuna trasformazione possono utilizzare il download diretto. Il servlet Sling GET viene aggiornato per consentire agli sviluppatori di eseguire questa operazione per impostazione predefinita. I componenti del sito web che forniscono un binario con alcune trasformazioni (ad esempio, ridimensionarlo tramite un servlet) possono continuare a funzionare così com’è.
+
 Le rappresentazioni standard generate con i microservizi per le risorse vengono memorizzate in modo compatibile con le versioni precedenti nei nodi dell’archivio delle risorse, utilizzando le stesse convenzioni di denominazione.
 
-## Sviluppare e testare i microservizi per le risorse {#asset-microservices}
+## Sviluppare e testare microservizi per le risorse {#asset-microservices}
 
 I microservizi per le risorse forniscono un’elaborazione scalabile e flessibile delle risorse tramite Cloud Services. Adobe gestisce i servizi cloud per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione. I microservizi per le risorse consentono di evitare la necessità di strumenti e metodi di rendering di terze parti (come ImageMagick) e di semplificare le configurazioni, fornendo al contempo funzionalità pronte all’uso per i tipi di file comuni. È ora possibile elaborare una [vasta gamma di tipi di file](/help/assets/file-format-support.md) che copre più formati pronti all&#39;uso rispetto a quanto è possibile con le versioni precedenti di Experience Manager. Ad esempio, è ora possibile estrarre le miniature dei formati PSD e PSB che in precedenza richiedevano soluzioni di terze parti come ImageMagick. Non è possibile utilizzare le configurazioni complesse di ImageMagick per la configurazione [!UICONTROL Profili di elaborazione]. Utilizza [!DNL Dynamic Media] per la transcodifica avanzata FFmpeg di video e utilizza i profili di elaborazione per [la transcodifica di base di video MP4](/help/assets/manage-video-assets.md#transcode-video).
 
 I microservizi per le risorse sono un servizio nativo per il cloud, fornito automaticamente e collegato a [!DNL Experience Manager] nei programmi e negli ambienti cliente gestiti in Cloud Manager. Per estendere o personalizzare [!DNL Experience Manager], gli sviluppatori possono utilizzare il contenuto o le risorse esistenti con rendering generati in un ambiente cloud, per testare e convalidare il codice utilizzando, visualizzando, scaricando risorse.
 
 Per eseguire una convalida end-to-end del codice e del processo, compresi l’inserimento e l’elaborazione delle risorse, implementa le modifiche al codice in un ambiente di sviluppo cloud utilizzando [la pipeline](/help/implementing/cloud-manager/configure-pipeline.md) e testa con la completa esecuzione dell’elaborazione dei microservizi per le risorse.
-
 
 ## Parità delle funzioni con [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
