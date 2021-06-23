@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM come Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 6c48b25d78ecbf3e30f42b2c2e69687b1f3094b8
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '891'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ AEM come Cloud Service viene fornito con una rete CDN integrata. Il suo scopo pr
 
 La rete CDN gestita AEM soddisferà i requisiti di prestazioni e sicurezza della maggior parte dei clienti. Per il livello di pubblicazione, i clienti possono facoltativamente indicarlo dal proprio CDN, che dovranno gestire. Questo sarà consentito caso per caso, in base al soddisfacimento di alcuni prerequisiti, tra cui, ma non solo, il cliente con un’integrazione legacy con il proprio fornitore CDN che è difficile abbandonare.
 
-## CDN gestito AEM {#aem-managed-cdn}
+## CDN gestito AEM  {#aem-managed-cdn}
 
 Segui le sezioni seguenti per utilizzare l’interfaccia utente self-service di Cloud Manager per prepararsi alla distribuzione dei contenuti utilizzando la rete CDN standard di AEM:
 
@@ -40,7 +40,7 @@ Per ulteriori informazioni, consulta [Gestione degli Elenchi consentiti IP](/hel
 >
 >Solo le richieste dagli IP consentiti saranno servite dalla rete CDN gestita di AEM. Se punti la tua CDN alla CDN gestita AEM, assicurati che gli IP della tua CDN siano inclusi nell&#39;inserire nell&#39;elenco Consentiti.
 
-## CDN del cliente punta a AEM CDN gestito {#point-to-point-CDN}
+## CDN cliente punta a AEM CDN gestito {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -69,6 +69,10 @@ Prima di accettare il traffico live, è necessario verificare con il supporto cl
 >[!NOTE]
 >
 >I clienti che gestiscono il proprio CDN devono garantire l’integrità delle intestazioni inviate a AEM CDN. Ad esempio, si consiglia ai clienti di cancellare tutte le intestazioni `X-Forwarded-*` e impostarle su valori noti e controllati. Ad esempio, `X-Forwarded-For` deve contenere l&#39;indirizzo IP del client, mentre `X-Forwarded-Host` deve contenere l&#39;host del sito.
+
+>[!NOTE]
+>
+>Gli ambienti di programma sandbox non supportano una rete CDN fornita dal cliente.
 
 C&#39;è potenzialmente un piccolo hit di prestazioni a causa dell&#39;hop aggiuntivo, anche se è probabile che i salti dalla CDN del cliente alla CDN gestita AEM siano efficienti.
 
