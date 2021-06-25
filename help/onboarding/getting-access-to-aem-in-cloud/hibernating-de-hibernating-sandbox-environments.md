@@ -2,10 +2,9 @@
 title: 'Ambienti Sandbox sospensione e disattivazione '
 description: Ambienti Sandbox sospensione e disattivazione
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-translation-type: tm+mt
-source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
+source-git-commit: f06fe7f30d9f5e2eb5dcc6c8d542ace5f5e2f419
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
@@ -23,7 +22,7 @@ La sospensione può avvenire automaticamente o manualmente. Per gli ambienti del
 
 La sospensione è classificata come:
 
-* ****  Gli ambienti del programma AutomaticSandbox vengono automaticamente ibernati dopo otto ore di inattività, il che significa che né i servizi di authoring né quelli di pubblicazione ricevono richieste.
+* ****  Gli ambienti del programma AutomaticSandbox vengono automaticamente ibernati dopo otto ore di inattività, il che significa che né i servizi di authoring, né quelli di anteprima o pubblicazione ricevono richieste.
 
 * **Manuale**: In qualità di utente puoi ibernare manualmente un ambiente di programma sandbox, anche se non è necessario farlo, in quanto la sospensione si verifica automaticamente dopo un certo periodo (otto ore) di inattività.
 
@@ -66,7 +65,7 @@ Per informazioni su come accedere alla **Console per sviluppatori** dalla scheda
    ![](assets/hibernate-4.png)
 
 
-## Disiberazione {#de-hibernation-introduction}
+## De-ibernazione {#de-hibernation-introduction}
 
 1. Passa alla **Console per sviluppatori**.
 Per informazioni su come accedere alla **Console per sviluppatori** dalla scheda **Ambienti**, consulta [Accesso alla Console per sviluppatori](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) .
@@ -75,7 +74,7 @@ Per informazioni su come accedere alla **Console per sviluppatori** dalla scheda
    >Il collegamento diretto a **Console per sviluppatori** da Cloud Manager non consente di disattivare l’ambiente di un programma sandbox. La soluzione alternativa si trova una volta nella Console per sviluppatori, aggiungi il seguente pattern alla fine dell’url `#release-cm-p1234-e5678 where 1234` 1234 è il tuo *ID programma* e 5678 è il tuo *ID ambiente*.
 
    >[!NOTE]
-   >In alternativa, puoi passare alla **Console per sviluppatori** per annullare l’ibernazione provando ad accedere al servizio di authoring o pubblicazione di un ambiente già attivato; in tal caso, viene visualizzata una pagina di destinazione con un collegamento alla Console per sviluppatori. Consulta la sezione Accesso a un ambiente sospeso di seguito.
+   >In alternativa, puoi passare alla **Console per sviluppatori** per annullare l’ibernazione provando ad accedere al servizio di authoring, anteprima o pubblicazione di un ambiente già attivato; in tal caso, viene visualizzata una pagina di destinazione con un collegamento alla Console per sviluppatori. Consulta la sezione Accesso a un ambiente sospeso di seguito.
 
    >[!IMPORTANT]
    >L’accesso alla Console per sviluppatori è definito da **Cloud Manager - Developer Role** nell’ **Admin Console**. Un utente con un’autorizzazione per ruolo sviluppatore può disattivare l’ibernazione di un ambiente Programma sandbox.
@@ -109,7 +108,7 @@ Qualsiasi utente con un profilo di prodotto che dia accesso a AEM come Cloud Ser
 
 ## Accesso a un ambiente sospeso {#accessing-hibernated-environment}
 
-Quando effettua richieste del browser sul livello di authoring o pubblicazione di un ambiente in ibernazione, l’utente incontra una pagina di destinazione che descrive lo stato di ibernazione dell’ambiente, come illustrato nella figura seguente:
+Quando esegui richieste del browser rispetto al livello di authoring, anteprima o pubblicazione di un ambiente in ibernazione, l’utente incontrerà una pagina di destinazione che descrive lo stato di ibernazione dell’ambiente, come illustrato nella figura seguente:
 
 ![](assets/de-hibernation-img5.png)
 
@@ -128,7 +127,7 @@ Alcune considerazioni chiave relative agli ambienti ibernati e disattivati sono:
    >[!NOTE]
    >Al momento, Cloud Manager non indica se un ambiente è ibernato.
 
-## Aggiornamenti AEM ambienti Sandbox {#aem-updates-sandbox}
+## Aggiornamenti AEM agli ambienti Sandbox {#aem-updates-sandbox}
 
 Per ulteriori informazioni, consulta [AEM aggiornamenti della versione](/help/implementing/deploying/aem-version-updates.md) .
 
