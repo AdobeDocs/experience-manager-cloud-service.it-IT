@@ -2,10 +2,10 @@
 title: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service
 description: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service.
 exl-id: fb169e85-ac19-4962-93d9-abaed812f948
-source-git-commit: 74b2720eae1fbc986cd1a252180a4b7f4187ed16
+source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 95%
+source-wordcount: '1782'
+ht-degree: 82%
 
 ---
 
@@ -88,7 +88,7 @@ Un programma AEM è il contenitore che include:
 |  Elemento del programma |  Numero |
 |--- |--- |
 | Archivio del codice (Git) |  1 |
-| Immagine linea di base (Sites o Assets) |  1 |
+| Immagine linea di base (Sites o Assets) |  3 |
 | Set di ambienti di stage e produzione (1:1) | 0 o 1 |
 | Ambienti non di produzione (sviluppo o dimostrazione) | Da 0 a N |
 | Pipeline per ogni ambiente | 0 o 1 |
@@ -99,7 +99,7 @@ Per AEM as a Cloud Service, inizialmente sono disponibili due tipi di programmi:
 
 * AEM Cloud Assets Service
 
-Entrambi consentono l’accesso a una serie di funzioni e funzionalità. Il livello di authoring contiene tutte le funzionalità di Sites e Assets per tutti i programmi, ma i programmi Assets non avranno un livello di pubblicazione per impostazione predefinita.
+Entrambi consentono l’accesso a una serie di funzioni e funzionalità. Il livello di authoring conterrà tutte le funzionalità Sites e Assets per tutti i programmi, ma per impostazione predefinita i programmi Assets non avranno un livello di pubblicazione né un livello di anteprima.
 
 ## Architettura runtime {#runtime-architecture}
 
@@ -120,6 +120,8 @@ Questa nuova architettura presenta diversi componenti principali:
       * L’accesso al livello di authoring è gestito da Adobe Identity Management Services (IMS).
 
       * L’integrazione e l’elaborazione di Assets utilizza un servizio dedicato di elaborazione Assets.
+   * Il livello di anteprima è composto da un singolo nodo di anteprima. Utilizzato per il controllo qualità dei contenuti prima della pubblicazione sul livello di pubblicazione.
+
    * Il livello di pubblicazione è composto da due o più nodi all’interno di una singola farm di pubblicazione, che possono operare indipendentemente l’uno dall’altro. Ogni nodo è costituito da un editore AEM e da un server web dotato del modulo AEM Dispatcher. Il nodo viene ridimensionato automaticamente in base alle esigenze di traffico del sito.
 
       * Gli utenti finali o i visitatori del sito visitano il sito web tramite AEM Publish Service.
@@ -129,15 +131,15 @@ Questa nuova architettura presenta diversi componenti principali:
 
    * L’architettura include solo un ambiente di authoring.
 
-* Sia il livello di authoring che quello di pubblicazione leggono e rendono persistente i contenuti da/a un servizio Content Repository.
+* Sia il livello di authoring che il livello di anteprima e il livello di pubblicazione leggono e persistono i contenuti da/verso un servizio Content Repository.
 
-   * Il livello di pubblicazione legge i contenuti solo dal livello di persistenza.
+   * Il livello di pubblicazione e il livello di anteprima leggono i contenuti solo dal livello di persistenza.
 
    * Il livello di authoring legge e scrive i contenuti da e verso il livello di persistenza.
 
-   * L’archiviazione BLOB è condivisa tra il livello di pubblicazione e di authoring; i file non vengono *spostati*.
+   * L’archiviazione BLOB è condivisa tra i livelli di pubblicazione, anteprima e authoring; i file non sono *spostati*.
 
-   * Quando il contenuto viene approvato dal livello di authoring, ciò indica che può essere attivato, e quindi inviato al livello di persistenza del livello di pubblicazione. Ciò avviene tramite il servizio di replica, una pipeline middleware. Questa pipeline riceve il nuovo contenuto: i singoli nodi del servizio di pubblicazione si abbonano al contenuto inviato alla pipeline.
+   * Quando il contenuto viene approvato dal livello di authoring, ciò indica che può essere attivato, quindi inviato al livello di persistenza del livello di pubblicazione; o facoltativamente al livello di anteprima. Ciò avviene tramite il servizio di replica, una pipeline middleware. Questa pipeline riceve il nuovo contenuto; i singoli nodi del servizio di pubblicazione (o servizio di anteprima) si abbonano al contenuto inviato alla pipeline.
 
       >[!NOTE]
       >
@@ -147,15 +149,15 @@ Questa nuova architettura presenta diversi componenti principali:
 
    * L’accesso ai livelli di authoring e pubblicazione avviene sempre tramite un load balancer, che è sempre aggiornato con i nodi attivi in ciascuno dei livelli.
 
-   * Per il livello di pubblicazione, come primo punto di ingresso è disponibile anche un servizio CDN (Continuous Delivery Network).
+   * Per il livello di pubblicazione e il livello di anteprima, come primo punto di ingresso è disponibile anche un servizio CDN (Continuous Delivery Network).
 
 * Per le istanze dimostrative di AEM as a Cloud Service, l’architettura viene semplificata a un singolo nodo di authoring. Pertanto non presenta tutte le caratteristiche dell’ambiente di sviluppo, stage o produzione standard. In altre parole, possono anche verificarsi tempi di inattività e non è incluso il supporto di operazioni di backup e ripristino.
 
 ## Architettura di distribuzione {#deployment-architecture}
 
-Cloud Manager gestisce tutti gli aggiornamenti alle istanze di AEM as a Cloud Service. È una scelta obbligatoria, essendo l’unica soluzione per creare, testare e distribuire l’applicazione del cliente, sia per il livello di authoring che per quello di pubblicazione. Questi aggiornamenti possono essere attivati da Adobe quando è pronta una nuova versione di AEM Cloud Service oppure dal cliente stesso, quando è pronta una nuova versione della sua applicazione.
+Cloud Manager gestisce tutti gli aggiornamenti alle istanze di AEM as a Cloud Service. È obbligatorio, essendo l’unico modo per creare, testare e distribuire l’applicazione del cliente, sia per i livelli di authoring, anteprima e pubblicazione. Questi aggiornamenti possono essere attivati da Adobe quando è pronta una nuova versione di AEM Cloud Service oppure dal cliente stesso, quando è pronta una nuova versione della sua applicazione.
 
-Tecnicamente, l’implementazione avviene grazie al concetto di pipeline di distribuzione, associata a ogni ambiente presente all’interno di un programma. Quando una pipeline di Cloud Manager è in esecuzione, crea una nuova versione dell’applicazione del cliente, sia per il livello di authoring che per quello di pubblicazione. Tale risultato si ottiene combinando gli ultimi pacchetti cliente con la più recente immagine linea di base di Adobe. Quando le nuove immagini vengono create e testate correttamente, Cloud Manager automatizza completamente il cutover alla versione più recente dell’immagine tramite l’aggiornamento di tutti i nodi del servizio, secondo uno schema di aggiornamento in sequenza. Ciò non comporta tempi di inattività né per il servizio di authoring né per quello di pubblicazione.
+Tecnicamente, l’implementazione avviene grazie al concetto di pipeline di distribuzione, associata a ogni ambiente presente all’interno di un programma. Quando una pipeline di Cloud Manager è in esecuzione, crea una nuova versione dell’applicazione del cliente, sia per i livelli di authoring, anteprima e pubblicazione. Tale risultato si ottiene combinando gli ultimi pacchetti cliente con la più recente immagine linea di base di Adobe. Quando le nuove immagini vengono create e testate correttamente, Cloud Manager automatizza completamente il cutover alla versione più recente dell’immagine tramite l’aggiornamento di tutti i nodi del servizio, secondo uno schema di aggiornamento in sequenza. Ciò non comporta tempi di inattività né per il servizio di authoring né per quello di pubblicazione.
 
 <!--- needs reworking -->
 
