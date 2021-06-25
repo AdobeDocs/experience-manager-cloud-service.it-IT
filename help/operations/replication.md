@@ -2,10 +2,10 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
+source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 2%
+source-wordcount: '1071'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,11 @@ Adobe Experience Manager as a Cloud Service utilizza la funzionalità [Sling Con
 
 ## Metodi di pubblicazione dei contenuti {#methods-of-publishing-content}
 
-### Annullamento/Pubblicazione rapida - Pubblicazione programmata {#publish-unpublish}
+### Annullamento/pubblicazione rapida - Annullamento/pubblicazione pianificata {#publish-unpublish}
 
 Queste funzionalità standard AEM per gli autori non cambiano con il Cloud Service AEM.
 
-### Tempi di attivazione e disattivazione - Configurazione del trigger {#on-and-off-times-trigger-configuration}
+### Tempi di attivazione e disattivazione - Configurazione dell&#39;attivatore {#on-and-off-times-trigger-configuration}
 
 Le possibilità aggiuntive di **On Time** e **Off Time** sono disponibili nella scheda [Basic delle Proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
@@ -42,7 +42,7 @@ Per eseguire un&#39;attivazione ad albero:
    ![](assets/distribute.png "DistribuisciDistribuisci")
 4. Seleziona il percorso nel browser percorsi, scegli di aggiungere un nodo, un albero o elimina come richiesto e seleziona **Invia**
 
-### Flusso di lavoro della struttura dei contenuti di pubblicazione {#publish-content-tree-workflow}
+### Flusso di lavoro della struttura del contenuto di Pubblica {#publish-content-tree-workflow}
 
 Puoi attivare una replica ad albero scegliendo **Strumenti - Flusso di lavoro - Modelli** e copiando il modello di flusso di lavoro preconfigurato **Pubblica albero dei contenuti** , come mostrato di seguito:
 
@@ -82,7 +82,7 @@ In alternativa, è possibile ottenere questo risultato anche creando un modello 
 
 * `replicateAsParticipant` (valore booleano, predefinito:  `false`). Se configurata come `true`, la replica utilizza `userid` dell&#39;entità principale che ha eseguito il passaggio del partecipante.
 * `enableVersion` (valore booleano, predefinito:  `true`). Questo parametro determina se una nuova versione viene creata al momento della replica.
-* `agentId` (valore stringa, per impostazione predefinita vengono utilizzati tutti gli agenti abilitati). Si consiglia di essere esplicito sull&#39;agentId; ad esempio, impostandolo come valore: pubblicare
+* `agentId` (valore stringa, per impostazione predefinita vengono utilizzati solo gli agenti per la pubblicazione). Si consiglia di essere esplicito sull&#39;agentId; ad esempio, impostandolo come valore: pubblicare. L’impostazione dell’agente su `preview` consente di pubblicare nel servizio di anteprima
 * `filters` (valore stringa, impostazione predefinita significa che tutti i percorsi sono attivati). I valori disponibili sono:
    * `onlyActivated` - verranno attivati solo i percorsi non contrassegnati come attivati.
    * `onlyModified` - attiva solo i percorsi già attivati e la cui data di modifica è successiva alla data di attivazione.
@@ -111,6 +111,66 @@ Di seguito sono riportati alcuni esempi di registri generati durante un flusso d
 **Riprendi supporto**
 
 Il flusso di lavoro elabora il contenuto in blocchi, ognuno dei quali rappresenta un sottoinsieme del contenuto completo da pubblicare. Se per qualsiasi motivo il flusso di lavoro viene interrotto dal sistema, verrà riavviato ed elaborato il blocco non ancora elaborato. Un’istruzione di registro indicherà che il contenuto è stato ripreso da un percorso specifico.
+
+### API di replica {#replication-api}
+
+Puoi pubblicare il contenuto utilizzando l’API di replica in AEM come Cloud Service.
+
+Per ulteriori informazioni, consulta la [Documentazione API](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
+
+**Utilizzo di base dell’API**
+
+```
+@Reference
+Replicator replicator;
+@Reference
+ReplicationStatusProvider replicationStatusProvider;
+
+....
+Session session = ...
+// Activate a single page to all agents, which are active by default
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en");
+// Activate multiple pages (but try to limit it to approx 100 at max)
+replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/content/we-retail/en","/content/we-retail/de"});
+
+// ways to get the replication status
+Resource enResource = resourceResolver.getResource("/content/we-retail/en");
+Resource deResource = resourceResolver.getResource("/content/we-retail/de");
+ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
+// if you need to get the status for more more than 1 resource at once, this approach is more performant
+Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
+```
+
+**Replica con agenti specifici**
+
+Quando si replicano le risorse come nell’esempio precedente, verranno utilizzati solo gli agenti che sono attivi per impostazione predefinita. In AEM come Cloud Service, questo sarà solo l’agente denominato &quot;publish&quot;, che collega l’autore al livello di pubblicazione.
+
+Per supportare la funzionalità di anteprima, è stato aggiunto un nuovo agente denominato &quot;anteprima&quot;, che non è attivo per impostazione predefinita. Questo agente viene utilizzato per collegare l’autore al livello di anteprima. Se desideri replicare solo tramite l’agente di anteprima, devi selezionare esplicitamente questo agente di anteprima tramite un `AgentFilter`.
+
+Vedi l&#39;esempio seguente su come eseguire questa operazione:
+
+```
+private static final String PREVIEW_AGENT = "preview";
+
+ReplicationStatus beforeStatus = enResource.adaptTo(ReplicationStatus.class); // beforeStatus.isActivated == false
+
+ReplicationOptions options = new ReplicationOptions();
+options.setFilter(new AgentFilter() {
+  @Override
+  public boolean isIncluded (Agent agent) {
+    return agent.getId().equals(PREVIEW_AGENT);
+  }
+});
+// will replicate only to preview
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en", options);
+
+ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // afterStatus.isActivated == false
+ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
+```
+
+Nel caso in cui non si fornisca un filtro di questo tipo e si utilizzi solo l’agente &quot;publish&quot;, l’agente &quot;preview&quot; non viene utilizzato e l’azione di replica non influisce sul livello di anteprima.
+
+La `ReplicationStatus` complessiva di una risorsa viene modificata solo se l&#39;azione di replica include almeno un agente attivo per impostazione predefinita. Nell’esempio precedente questo non avviene, in quanto la replica utilizza solo l’agente &quot;preview&quot;. Pertanto, devi utilizzare il nuovo metodo `getStatusForAgent()`, che consente di eseguire query sullo stato di un agente specifico. Questo metodo funziona anche per l’agente &quot;publish&quot;. Restituisce un valore non-null se è stata eseguita un&#39;azione di replica utilizzando l&#39;agente fornito.
 
 ## Risoluzione dei problemi {#troubleshooting}
 
