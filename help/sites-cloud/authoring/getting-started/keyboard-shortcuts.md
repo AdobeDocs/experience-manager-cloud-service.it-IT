@@ -26,7 +26,7 @@ Le seguenti scelte rapide sono disponibili per le console Sites, Assets, Utenti,
 | Console | `?` | Aiuto per scelte rapide da tastiera |
 |  | `/` | Avvia la [ricerca](/help/sites-cloud/authoring/getting-started/search.md) |
 |  | `Alt+`&lt;`Number`> | Consente di selezionare l’opzione del [selettore della barra](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) da visualizzare |
-|  | ` | Nasconde la barra |
+|  | &grave; | Nasconde la barra |
 |  | `e` | Modifica |
 |  | `p` | Proprietà |
 |  | `m` | Sposta |
