@@ -2,15 +2,15 @@
 title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
+source-git-commit: 344a42f31444d30e9304b3a2198b1a4df17aa9c0
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1663'
 ht-degree: 2%
 
 ---
 
 
-# Note sulla versione corrente per [!DNL Adobe Experience Manager] come Cloud Service {#release-notes}
+# Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La sezione seguente illustra le note generali sulla versione per la versione corrente (più recente) di [!DNL Experience Manager] come Cloud Service.
 
@@ -48,7 +48,7 @@ Per un riepilogo delle funzioni aggiunte, guarda il video [Panoramica sulla vers
 
 ## [!DNL Adobe Experience Manager Assets] come  [!DNL Cloud Service] {#assets}
 
-### Nuove funzioni disponibili nel canale pre-rilascio {#what-is-new-assets-prerelease}
+### Nuove funzioni disponibili nel canale prerelease {#what-is-new-assets-prerelease}
 
 * Gli schemi di metadati possono essere applicati direttamente alle proprietà della cartella.
 
@@ -69,33 +69,7 @@ Per un riepilogo delle funzioni aggiunte, guarda il video [Panoramica sulla vers
 
 * Le funzioni DPR (Smart Imaging Device Pixel Ratio) e di ottimizzazione della larghezza di banda della rete consentono di fornire immagini di alta qualità in modo efficiente su dispositivi con display ad alta risoluzione e larghezza di banda limitata della rete. Consulta [domande frequenti sull&#39;imaging intelligente](/help/assets/dynamic-media/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >La timeline della versione per i miglioramenti di Smart imaging riportati sopra è:
-   >
-   >* Nord America 24 maggio 2021 in NA,
-      >
-      >
-   * Europa, Medio Oriente e Africa 25 giugno 2021,
-      >
-      >
-   * Asia-Pacifico, 19 luglio 2021.
-
-
-* È stato introdotto il supporto per AVIF in formato immagine di nuova generazione in [!DNL Dynamic Media] consegna (modificatore URL fmt).
-
-   >[!NOTE]
-   >
-   >La timeline della versione per il supporto AVIF è la seguente:
-   >
-   >* Nord America 10 maggio 2021,
-      >
-      >
-   * Europa, Medio Oriente e Africa 24 maggio 2021,
-      >
-      >
-   * Asia-Pacifico, 24 giugno 2021.
-
+* È stato introdotto il supporto per il formato immagine AVIF di nuova generazione in [!DNL Dynamic Media] consegna (`fmt` modificatore URL). Per ulteriori dettagli e timeline, consulta [servizio immagini e rendering API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] come  [!DNL Cloud Service] {#forms}
 
@@ -206,7 +180,7 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.5.0 è il 6 
 
 * Durante la configurazione del programma Sandbox, una volta che il progetto con codice di esempio è stato creato correttamente, Manage Git (Gestisci Git) apparirà come collegamento dalla scheda eroe nella pagina Overview (Panoramica).
 
-## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
+## Strumento Content Transfer (Trasferimento contenuti)  {#content-transfer-tool}
 
 ### Data di rilascio {#release-date-ctt-latest}
 
