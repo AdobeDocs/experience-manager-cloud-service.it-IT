@@ -4,9 +4,9 @@ description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Ass
 feature: Informazioni sulla versione
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
+source-git-commit: 19e64cc8239afefd1f17b6cffee5e681f220a68c
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 5%
 
 ---
@@ -59,8 +59,8 @@ Per eseguire una convalida end-to-end del codice e del processo, compresi l’in
 | Generazione di attività secondarie per le attività composte | Non supportato. | I casi di utilizzo dipendenti non vengono soddisfatti. Ad esempio, è interessata l’annotazione di file PDF con più pagine. Consulta [creazione di risorse secondarie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Home page | Non supportato. | Vedere [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Estrarre risorse dall’archivio ZIP | Non supportato. | Consulta [Estrazione ZIP in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
-| Valutazione delle risorse | Non supportato. | Il widget nell’editor dello schema metadati che forniva l’opzione di valutazione delle risorse non è supportato. |
-| Interfaccia classica | Non supportato. | È disponibile solo l’interfaccia touch. |
+| Valutazioni delle risorse | Non supportato. | Il widget di valutazione nell&#39;editor dello schema metadati non è supportato. |
+| Interfaccia classica | Non supportato. | È disponibile solo l’interfaccia utente touch. |
 
 >[!MORELIKETHIS]
 >
