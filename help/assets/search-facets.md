@@ -1,16 +1,15 @@
 ---
 title: Facet di ricerca.
 description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in AEM.
-feature: Search,Metadata
+feature: Ricerca,Metadati
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2361'
 ht-degree: 22%
 
 ---
-
 
 # Facet di ricerca {#search-facets}
 
@@ -22,7 +21,7 @@ In sintesi, i facet di ricerca consentono di cercare le risorse in più modi anz
 
 Ad esempio, se si cerca un&#39;immagine, è possibile scegliere se si desidera una bitmap o un&#39;immagine vettoriale. Puoi ridurre ulteriormente l’ambito della ricerca specificando il tipo MIME per l’immagine. Allo stesso modo, durante la ricerca di documenti, è possibile specificare il formato, ad esempio PDF o MS Word.
 
-## Aggiungi un predicato {#adding-a-predicate}
+## Aggiungere un predicato {#adding-a-predicate}
 
 I facet di ricerca visualizzati nel pannello Filtri sono definiti nel modulo di ricerca sottostante utilizzando i predicati. Per visualizzare più facet o diversi, aggiungere predicati al modulo predefinito o utilizzare un modulo personalizzato che includa facet selezionati.
 
@@ -63,7 +62,7 @@ Per le ricerche full-text, aggiungi il predicato `Fulltext` al modulo. Utilizza 
 1. Passa al pannello Ricerca nell’interfaccia utente Assets. Il predicato Proprietà viene aggiunto al pannello .
 1. Immetti una descrizione della risorsa alla quale cercare nella casella di testo. Ad esempio, immetti &quot;Adobe&quot;. Quando esegui una ricerca, nei risultati della ricerca vengono elencate le risorse con la descrizione corrispondente a &quot;Adobe&quot;.
 
-## Aggiungi un predicato Opzioni {#adding-an-options-predicate}
+## Aggiungere un predicato Opzioni {#adding-an-options-predicate}
 
 Il predicato Opzioni consente di aggiungere più opzioni di ricerca nel pannello Filtri . Per cercare le risorse, seleziona una o più di queste opzioni nel pannello Filtri . Ad esempio, per cercare le risorse in base al tipo di file, configura nel modulo di ricerca opzioni quali Immagini, Multimedia, Documenti e Archivi. Dopo aver configurato queste opzioni, la ricerca viene eseguita sulle risorse di tipo GIF, JPEG, PNG e così via, quando selezioni l’opzione Immagini nel pannello Filtri .
 
@@ -115,7 +114,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 1. Nel campo **Descrizione** immetti una descrizione facoltativa, quindi fai clic su **[!UICONTROL Fine]**.
 1. Passa al pannello Ricerca . Il predicato Opzioni viene aggiunto al pannello **Ricerca** . Le opzioni per **[!UICONTROL Tipo file]** vengono visualizzate come caselle di controllo.
 
-## Aggiungi un predicato Proprietà con più valori {#adding-a-multi-value-property-predicate}
+## Aggiungere un predicato Proprietà con più valori {#adding-a-multi-value-property-predicate}
 
 Il predicato `Multi Value Property` consente di cercare le risorse per più valori. Considera uno scenario in cui hai immagini di più prodotti in AEM Assets e i metadati per ogni immagine includono un numero SKU associato al prodotto. Puoi utilizzare questo predicato per cercare immagini di prodotto basate su più numeri SKU.
 
@@ -128,7 +127,7 @@ Il predicato `Multi Value Property` consente di cercare le risorse per più valo
 1. Nell’interfaccia utente Assets, vai al pannello Filtri. Al pannello viene aggiunto il predicato **[!UICONTROL Proprietà con più valori]**.
 1. Specifica più valori nel campo Valore multiplo separato dai delimitatori ed esegui la ricerca. Il predicato recupera una corrispondenza esatta del testo per i valori specificati.
 
-## Aggiungi un predicato Tag {#adding-a-tags-predicate}
+## Aggiungere un predicato Tag {#adding-a-tags-predicate}
 
 Il predicato `Tags` ti consente di eseguire ricerche basate su tag per le risorse. Per impostazione predefinita, AEM Assets cerca nelle risorse le corrispondenze di uno o più tag in base ai tag specificati. In altre parole, la query di ricerca esegue un’operazione OR utilizzando i tag specificati. Tuttavia, puoi utilizzare l’opzione di corrispondenza con tutti i tag per cercare le risorse che includono tutti i tag specificati.
 
@@ -269,17 +268,6 @@ Simile al modo in cui aggiungi un predicato Proprietà o un predicato Opzioni, p
     <ul>
      <li>Etichetta</li>
      <li>Nome proprietà</li>
-     <li>Descrizione</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Valutazione</td>
-   <td>Ricerca predicato per cercare le risorse in base al loro rating medio </td>
-   <td>
-    <ul>
-     <li>Etichetta</li>
-     <li>Nome proprietà</li>
-     <li>Percorso opzione</li>
      <li>Descrizione</li>
     </ul> </td>
   </tr>
