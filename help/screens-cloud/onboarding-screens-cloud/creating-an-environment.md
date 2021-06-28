@@ -1,13 +1,10 @@
 ---
 title: Creazione di un ramo
 description: Questa pagina descrive come Cloud Service creare un ramo in Cloud Manager per Screens.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 0042b0ba6b652a61ee0ac880bc5b4db8aa679359
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
