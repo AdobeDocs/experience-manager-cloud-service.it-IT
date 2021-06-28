@@ -1,10 +1,7 @@
 ---
 title: Creazione e gestione di canali in Screens come Cloud Service
 description: Questa pagina descrive come creare e gestire i canali in Screens come Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 7%
