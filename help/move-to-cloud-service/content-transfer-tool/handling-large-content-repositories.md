@@ -1,7 +1,7 @@
 ---
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione degli archivi di contenuti di grandi dimensioni
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Puoi utilizzare la scheda Metriche del contenitore per determinare la dimensione
 
 [](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) AzCopy è uno strumento a riga di comando fornito da Microsoft che deve essere disponibile nell’istanza sorgente per abilitare questa funzione.
 
-In breve, molto probabilmente vorrai scaricare il binario Linux x86-64 dalla pagina dei documenti [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) e cancellarlo in una posizione come /usr/bin. Prendi nota del punto in cui hai inserito il binario, in quanto ti servirà il percorso completo in un passaggio successivo.
+In breve, molto probabilmente vorrai scaricare il binario Linux x86-64 dalla pagina dei documenti [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) e cancellarlo in una posizione come /usr/bin. Prendi nota di dove hai posizionato il binario, in quanto ti servirà il percorso completo in un passaggio successivo.
 
 ### 2. Installare una versione dello strumento Content Transfer (CTT) con il supporto AzCopy {#install-ctt-azcopy-support}
 
@@ -134,7 +134,6 @@ Eventuali BLOB copiati prima dell’errore verranno ignorati automaticamente da 
 Con il rilascio dello strumento Content Transfer (Trasferimento contenuti) 1.5.4, è stato aggiunto il supporto AzCopy all’acquisizione di autori.
 
 >[!NOTE]
->
 > Si consiglia di eseguire prima l’acquisizione dell’autore da sola. Questa operazione velocizza l’acquisizione di Publish quando questa viene eseguita in un secondo momento.
 
 Per sfruttare AzCopy durante l’acquisizione, è necessario che tu sia su un AEM come versione di Cloud Service che sia almeno la versione 2021.6.5561.
