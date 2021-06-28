@@ -3,7 +3,7 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: c7cba6217ec960219c607b76ab7f2f096af7459a
+source-git-commit: 10439fbe448152209211a8a1755ffe862f9cf48c
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 2%
@@ -70,7 +70,7 @@ Per un riepilogo delle funzioni aggiunte, guarda il video [Panoramica sulla vers
 
 * Le funzioni DPR (Smart Imaging Device Pixel Ratio) e di ottimizzazione della larghezza di banda della rete consentono di fornire immagini di alta qualità in modo efficiente su dispositivi con display ad alta risoluzione e larghezza di banda limitata della rete. Consulta [domande frequenti sull&#39;imaging intelligente](/help/assets/dynamic-media/imaging-faq.md).
 
-* È stato introdotto il supporto per il formato immagine AVIF di nuova generazione in [!DNL Dynamic Media] consegna (`fmt` modificatore URL). Per ulteriori dettagli e timeline, consulta [servizio immagini e rendering API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
+* È stato introdotto il supporto per il formato immagine AVIF di nuova generazione in [!DNL Dynamic Media] consegna (`fmt` modificatore URL). Per ulteriori dettagli e timeline, consulta [servizio immagini e rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] come  [!DNL Cloud Service] {#forms}
 
