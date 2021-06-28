@@ -1,10 +1,7 @@
 ---
 title: Assegnazione del lettore a un display in Screens come Cloud Service
 description: Questa pagina descrive come assegnare un lettore a una visualizzazione in Screens come Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 2%
