@@ -1,12 +1,9 @@
 ---
 title: Pubblicazione di un canale in Screens come Cloud Service
 description: Questa pagina descrive come pubblicare un canale in Screens come Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 3da578d544ab82c61bdfecc0b470b1cd3315f996
+source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
