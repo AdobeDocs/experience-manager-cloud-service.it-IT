@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 641fd1716555806311e62a020e70b799ab3c621d
+source-git-commit: d08fc076306c54f8551c9df499efa0ded7bcc131
 workflow-type: tm+mt
-source-wordcount: '2907'
+source-wordcount: '2918'
 ht-degree: 40%
 
 ---
@@ -37,11 +37,11 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 
-* Dopo aver completato la fase *Estrazione* del processo di trasferimento dei contenuti e prima di avviare la fase di acquisizione *Ingestion* per acquisire contenuti nel AEM come Cloud Service *Stage* o *Produzione*, dovrai registrare un ticket di supporto per notificare all&#39;Adobe l&#39;intenzione di eseguire *Acquisizione&lt;a7 a9/> in modo che l&#39;Adobe possa garantire che non si verifichino interruzioni durante il processo* Ingestion *.* Sarà necessario registrare il ticket di supporto 1 settimana prima della data *di acquisizione* pianificata. Dopo aver inviato il ticket di assistenza, il team di supporto fornirà indicazioni sui passaggi successivi.
-   * Registra un ticket di supporto con i seguenti dettagli:
-      * Data esatta e ora stimata (con il tuo fuso orario) quando intendi avviare la fase *Acquisizione*.
-      * Tipo di ambiente (Stage o Produzione) in cui si intende inserire i dati.
-      * ID programma.
+* Dopo aver completato la fase *Estrazione* del processo di trasferimento dei contenuti e prima di avviare la fase di acquisizione *Ingestion* per acquisire contenuti nel AEM come Cloud Service *Stage* o *Produzione*, dovrai registrare un ticket di supporto per notificare all&#39;Adobe l&#39;intenzione di eseguire *Acquisizione&lt;a7 a9/> in modo che l&#39;Adobe possa garantire che non si verifichino interruzioni durante il processo* Ingestion *.* Sarà necessario registrare il ticket di supporto 1 settimana prima della data *di acquisizione* pianificata. Dopo aver inviato il ticket di assistenza, il team di supporto fornirà indicazioni sui passaggi successivi. Puoi registrare un ticket di supporto con i seguenti dettagli:
+
+   * Data esatta e ora stimata (con il tuo fuso orario) quando intendi avviare la fase *Acquisizione*.
+   * Tipo di ambiente (Stage o Produzione) in cui si intende inserire i dati.
+   * ID programma.
 
 * La *fase di acquisizione* per l’autore riduce l’intera distribuzione dell’autore. Questo significa che l’istanza di authoring di AEM non sarà disponibile durante l’intero processo di acquisizione. Assicurati anche che nessuna pipeline di Cloud Manager venga eseguita durante la fase *Acquisizione*.
 
@@ -159,7 +159,7 @@ Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://exp
 
 Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 >[!NOTE]
->Se Amazon S3 o Azure Data Store viene utilizzato come tipo di archivio dati, puoi eseguire il passaggio facoltativo di pre-copia per accelerare in modo significativo la fase di estrazione. A questo scopo, devi configurare un file azcopy.config prima di eseguire l&#39;estrazione. Per ulteriori informazioni, consulta [Gestione degli archivi di contenuti di grandi dimensioni] .
+>Se Amazon S3 o Azure Data Store viene utilizzato come tipo di archivio dati, puoi eseguire il passaggio facoltativo di pre-copia per accelerare in modo significativo la fase di estrazione. A questo scopo, devi configurare un file `azcopy.config` prima di eseguire l’estrazione. Per ulteriori informazioni, consulta [Gestione degli archivi di contenuti di grandi dimensioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) .
 
 1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Extract** (Estrai) per avviare l’estrazione. Viene visualizzata la finestra di dialogo **Migration Set extraction** (Estrazione set di migrazione) e fai clic su **Extract** (Estrai) per avviare la fase di estrazione.
 
