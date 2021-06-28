@@ -1,7 +1,7 @@
 ---
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione degli archivi di contenuti di grandi dimensioni
-source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
+source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -38,13 +38,13 @@ Leggi questa sezione per scoprire come configurare per utilizzare AzCopy come pa
 
 ### 0. Determinare la dimensione totale di tutto il contenuto nell&#39;archivio dati {#determine-total-size}
 
-#### Archivio dati archiviazione BLOB di Azure
+#### Archivio dati archiviazione BLOB di Azure {#azure-blob-storage}
 
 Dalla pagina delle proprietà del contenitore nel portale di Azure, utilizza il pulsante **Calcola dimensioni** per determinare la dimensione di tutto il contenuto nel contenitore. Esempio:
 
 ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
-#### Archivio dati Amazon S3
+#### Archivio dati Amazon S3 {#amazon-data}
 
 Puoi utilizzare la scheda Metriche del contenitore per determinare la dimensione di tutto il contenuto del contenitore. Esempio:
 
@@ -67,7 +67,7 @@ Nell&#39;istanza di AEM sorgente, in crx-quickstart/cloud-migration , crea un nu
 
 Il contenuto di questo file di configurazione sarà diverso a seconda che l’istanza AEM di origine utilizzi un archivio dati di Azure o Amazon S3.
 
-#### Archivio dati archiviazione BLOB di Azure
+#### Archivio dati archiviazione BLOB di Azure {#azure-blob-storage-data}
 
 Il file azcopy.config deve includere le seguenti proprietà (assicurati di utilizzare le proprietà azCopyPath e azureSas corrette per la tua istanza).
 
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Archivio dati Amazon S3
+#### Archivio dati Amazon S3 {#amazon-data-store}
 
 Il file azcopy.config deve includere le seguenti proprietà (assicurati di utilizzare i valori corretti per la tua istanza).
 
