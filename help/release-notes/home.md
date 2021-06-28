@@ -2,7 +2,7 @@
 title: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service.
 description: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: f4d646e3898f568d17cfb09bd2974fc55a1260c4
+source-git-commit: 7085772d60f589418f7aeb50083906fab495c376
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 46%
@@ -13,11 +13,11 @@ ht-degree: 46%
 
 | Prodotto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versione | 2021.05.0 |
+| Versione | 2021.06.0 |
 | Tipo | Aggiornamenti continui |
 | Data di disponibilità | Aggiornamento continuo |
 
-## Come preparare un rilascio {#how-to-prepare}
+## Come preparare una versione {#how-to-prepare}
 
 Con il modello di rilascio continuo in [!DNL Adobe Experience Manager] come Cloud Service, l&#39;applicazione viene aggiornata automaticamente su base continua. Esistono due tipi di aggiornamenti, versioni di funzioni e aggiornamenti critici:
 
@@ -35,7 +35,7 @@ Per preparare una versione:
 1. Contrassegnare i calendari: Controlla le date chiave per le versioni mensili nella roadmap delle [versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service) e contrassegna i tuoi calendari per prepararti alle attività chiave per prepararti alla versione.
 1. Consulta le note sulla versione: Leggi le [note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md) per avere familiarità con le funzioni di rilascio e prerelease.
 1. Accedi e prova le nuove funzioni: Abilita il [canale prerelease](/help/release-notes/prerelease.md) negli ambienti non di produzione e inizia a provare le funzioni da valutare negli ambienti personalizzati.
-1. Formazione degli utenti: Utilizza la documentazione e le risorse di Experience League per velocizzare e fornire agli utenti informazioni approfondite sulle nuove funzioni.
+1. Formazione degli utenti: Utilizza la documentazione e le risorse di Experience League per fornire agli utenti informazioni aggiornate sulle nuove funzioni.
 
 ## Informazioni principali sulle versioni {#key-articles}
 
