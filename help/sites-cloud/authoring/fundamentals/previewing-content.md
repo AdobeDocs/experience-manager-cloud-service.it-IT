@@ -2,9 +2,9 @@
 title: Anteprima del contenuto
 description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima il contenuto prima di iniziare la pubblicazione.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,15 @@ Puoi pubblicare il contenuto nel servizio di anteprima utilizzando l’interfacc
 
 1. Fai clic su **Avanti**, quindi su **Pubblica** per confermare.
 
-Per visualizzare il contenuto dell&#39;anteprima, aggiungi **preview** all&#39;URL di pubblicazione dell&#39;istanza di produzione. L’URL deve essere costruito come segue:
+1. Viene visualizzata una finestra di dialogo con gli URL per accedere al contenuto nell’ambiente di anteprima.
 
-```
-https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-```
+   Oppure per visualizzare il contenuto dell&#39;anteprima, puoi anche aggiungere **preview** all&#39;URL di pubblicazione dell&#39;istanza di produzione.
+
+   L’URL deve essere costruito come segue:
+
+   ```
+   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
+   ```
 
 Per ulteriori informazioni su come ottenere gli URL per i tuoi ambienti, consulta [Gestisci gli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) .
 
