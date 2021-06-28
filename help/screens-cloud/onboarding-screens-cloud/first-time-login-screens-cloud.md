@@ -1,12 +1,9 @@
 ---
 title: Primo accesso a Screens come Cloud Service
 description: Questa pagina descrive i primi passaggi della procedura introduttiva a Screens come Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 0%
 # Primo accesso a Screens come Cloud Service {#first-time-login-screens-cloud}
 
 
-## Processo di onboarding {#onboarding-process}
+## Il processo di onboarding {#onboarding-process}
 
 Dopo aver firmato il contratto, Adobe Managed Services (AMS) avvia l’onboarding del cliente. Durante la fase di provisioning, quando AMS effettua il provisioning dell’istanza AMS in seguito al contratto, viene installato AMS-Screens-Cloud Feature Pack. Il Feature Pack consente a Screens Services Provider di connettersi all’istanza AMS o a Screens Content Provider.
 
