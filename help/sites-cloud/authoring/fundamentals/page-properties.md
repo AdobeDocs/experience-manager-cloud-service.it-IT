@@ -2,18 +2,18 @@
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 60%
+source-wordcount: '1930'
+ht-degree: 59%
 
 ---
 
-# Modifica delle proprietà di una pagina {#editing-page-properties}
+# Modifica delle proprietà di una pagina   {#editing-page-properties}
 
 Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
 
-## Proprietà pagina {#page-properties}
+## Proprietà pagina   {#page-properties}
 
 Le proprietà sono distribuite su più schede.
 
@@ -157,7 +157,7 @@ Configurare la miniatura della pagina
 
 ### Cloud Services {#cloud-services}
 
-* **Configurazioni Cloud Service** - Consente di definire le proprietà per Cloud Services
+* **Configurazioni**  Cloud Service: definire le proprietà per i servizi cloud
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -217,6 +217,12 @@ Questa scheda è visibile solo per le pagine che fungono da blueprint. Le bluepr
    * **Ereditarietà Live Copy** : se questa opzione è selezionata, la configurazione Live Copy è efficace per tutti gli elementi figlio
    * **Eredita configurazioni di rollout da padre** : se questa opzione è selezionata, la configurazione di rollout viene ereditata dall’elemento padre della pagina
    * **Scegli configurazione di rollout** : definisce le circostanze in cui le modifiche verranno propagate dalla Blueprint e saranno disponibili solo quando  **Eredita configurazioni di rollout da** Parentis non è selezionato
+
+### Anteprima {#preview}
+
+Quando un ambiente di anteprima è abilitato, vengono visualizzati i seguenti elementi:
+
+* URL anteprima: URL utilizzato per accedere al contenuto nell’ambiente di anteprima
 
 ## Modifica delle proprietà di una pagina {#editing-page-properties-1}
 
