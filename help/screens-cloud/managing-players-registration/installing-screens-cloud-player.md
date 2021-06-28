@@ -1,10 +1,7 @@
 ---
 title: Installazione e configurazione dei lettori in Screens come Cloud Service
 description: Questa pagina descrive come installare e configurare i lettori in Screens come Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 1%
@@ -23,7 +20,7 @@ Questo documento ti aiuta a capire come impostare il lettore prima di registrare
 * da dove installare i lettori
 * come aggiornare il lettore alla modalità Cloud
 
-## Passaggi per impostare il lettore sulla modalità cloud {#cloud-mode-setup}
+## Passaggi per impostare il lettore in modalità Cloud {#cloud-mode-setup}
 
 Dopo aver scaricato l&#39;ultimo lettore da [AEM Screens Player Downloads](https://download.macromedia.com/screens/), ora sei pronto per aggiornare il lettore alla modalità Cloud.
 
