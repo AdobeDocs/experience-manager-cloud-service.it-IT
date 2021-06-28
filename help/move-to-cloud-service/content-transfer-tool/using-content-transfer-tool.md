@@ -2,16 +2,16 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
+source-git-commit: 641fd1716555806311e62a020e70b799ab3c621d
 workflow-type: tm+mt
-source-wordcount: '2785'
-ht-degree: 42%
+source-wordcount: '2907'
+ht-degree: 40%
 
 ---
 
 # Utilizzo dello strumento Content Transfer (Trasferimento contenuti) {#using-content-transfer-tool}
 
-## Valutazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti) {#pre-reqs}
+## Valutazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti)  {#pre-reqs}
 
 Segui le indicazioni riportate in questa sezione per comprendere le valutazioni importanti durante l’esecuzione dello strumento Content Transfer (Trasferimento contenuti):
 
@@ -65,7 +65,7 @@ Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato co
 >[!NOTE]
 >Scarica lo strumento Content Transfer (Trasferimento contenuti) dal portale di [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
 
-## Esecuzione dello strumento Content Transfer (Trasferimento contenuti) {#running-tool}
+## Esecuzione dello strumento Content Transfer (Trasferimento contenuti)  {#running-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
@@ -158,6 +158,8 @@ Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://exp
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Estrazione dall&#39;alto verso l&#39;alto"
 
 Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
+>[!NOTE]
+>Se Amazon S3 o Azure Data Store viene utilizzato come tipo di archivio dati, puoi eseguire il passaggio facoltativo di pre-copia per accelerare in modo significativo la fase di estrazione. A questo scopo, devi configurare un file azcopy.config prima di eseguire l&#39;estrazione. Per ulteriori informazioni, consulta [Gestione degli archivi di contenuti di grandi dimensioni] .
 
 1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Extract** (Estrai) per avviare l’estrazione. Viene visualizzata la finestra di dialogo **Migration Set extraction** (Estrazione set di migrazione) e fai clic su **Extract** (Estrai) per avviare la fase di estrazione.
 
@@ -206,8 +208,13 @@ Una volta completato il processo di estrazione, puoi trasferire il contenuto del
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Acquisizione integrativa"
 
 Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
+>[!NOTE]
+>Se Amazon S3 o Azure Data Store viene utilizzato come tipo di archivio dati, puoi eseguire il passaggio facoltativo di pre-copia per accelerare in modo significativo la fase di acquisizione. Per ulteriori informazioni, consulta [Acquisizione con AzCopy] .
 
-1. Seleziona un set di migrazione dalla pagina *Overview* (Panoramica) e fai clic su **Ingest** (Acquisisci) per avviare l’acquisizione. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione). Fai clic su **Ingest** per avviare la fase di acquisizione. È possibile acquisire contemporaneamente contenuti nelle istanze di authoring e di pubblicazione.
+1. Seleziona un set di migrazione dalla pagina *Overview* e fai clic su **Ingest** per avviare l’acquisizione. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione). Fai clic su **Ingest** per avviare la fase di acquisizione. È possibile acquisire contemporaneamente contenuti nelle istanze di authoring e di pubblicazione.
+
+   >[!IMPORTANT]
+   >Se si utilizza l’acquisizione con la pre-copia (per S3 o Azure Data Store), è consigliabile eseguire prima l’acquisizione da parte dell’autore. Questa operazione velocizza l’acquisizione di Publish quando questa viene eseguita in un secondo momento.
 
    >[!IMPORTANT]
    >Quando l’opzione **Cancella il contenuto esistente nell’istanza Cloud prima dell’acquisizione** è abilitata, elimina l’intero archivio esistente e crea un nuovo archivio in cui inserire il contenuto. Questo significa che reimposta tutte le impostazioni, comprese le autorizzazioni sull&#39;istanza del Cloud Service di destinazione. Questo vale anche per un utente amministratore aggiunto al gruppo **administrators** .
