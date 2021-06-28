@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -154,5 +154,25 @@ Puoi scrivere su [!DNL formscsbeta@adobe.com] per iscriverti al programma beta.
 * I componenti core di Commerce supportano la raccolta dati Adobe Commerce Sensei Recs
 * URL ottimizzati per l’ottimizzazione SEO (Search Engine Optimization) per le pagine di categorie
 * Supporto per intestazioni HTTP personalizzate per sito/configurazione
+
+## Strumento Content Transfer (Trasferimento contenuti)  {#content-transfer-tool}
+
+### Data di rilascio {#release-date-ctt-latest}
+
+La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.5.4 è il 28 giugno 2021.
+
+### Novità {#what-is-new-ctt-latest}
+
+* È stato aggiunto il supporto per un passaggio [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) facoltativo da utilizzare con CTT. Il passaggio di pre-copia può essere utilizzato per accelerare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti quando l’istanza di AEM di origine è configurata per l’utilizzo di un archivio dati di archiviazione BLOB di Amazon S3 o Azure.
+
+* Guardrail aggiunto al CTT per evitare che gli utenti interrompano un’acquisizione e potenzialmente danneggiano i dati una volta raggiunto il punto critico durante la fase di acquisizione.
+
+* I registri di estrazione sono più descrittivi per facilitare la risoluzione dei problemi.
+
+* Nell’interfaccia utente sono stati aggiunti messaggi di stato dell’acquisizione più descrittivi.
+
+### Correzioni di bug {#bug-fixes-ctt-latest}
+
+* Durante l’arresto di un’acquisizione sull’istanza Author, l’interfaccia utente ha sovrascritto un’acquisizione precedente sull’istanza Publish in `STOPPED` da `FINISHED`. Questo problema è stato risolto.
 
 
