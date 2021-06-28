@@ -2,10 +2,10 @@
 title: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ab40ce5b9b57f83562cf279b75979795f5433eda
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 82%
+source-wordcount: '819'
+ht-degree: 81%
 
 ---
 
@@ -114,4 +114,4 @@ Per la transizione dei progetti da AMS o da un’installazione on-premise, Adobe
 
 ## Gestione e distribuzione delle risorse {#asset-handling}
 
-Il caricamento, l’elaborazione e il download delle risorse sono ottimizzati in Experience Manager Assets come Cloud Service. Ora è più efficiente, consente di eseguire caricamenti e download più veloci e scalare i contenuti. Inoltre, influisce sul codice personalizzato esistente e su alcune operazioni. Vedere le [modifiche a [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Il caricamento, l’elaborazione e il download delle risorse sono ottimizzati in [!DNL Experience Manager Assets] come [!DNL Cloud Service]. [!DNL Assets] è ora più efficiente, consente una maggiore scalabilità e consente di caricare e scaricare a una velocità molto più veloce. Inoltre, influisce sul codice personalizzato esistente e su alcune operazioni. Per un elenco delle modifiche e per la parità con le funzioni [!DNL Experience Manager] 6.5, consulta le [modifiche a [!DNL Assets]](/help/assets/assets-cloud-changes.md).
