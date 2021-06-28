@@ -4,9 +4,9 @@ description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Ass
 feature: Informazioni sulla versione
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 19e64cc8239afefd1f17b6cffee5e681f220a68c
+source-git-commit: e3efbaf5cb590b079ccc228a0f130ecec198d2ff
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '858'
 ht-degree: 5%
 
 ---
@@ -56,7 +56,7 @@ Per eseguire una convalida end-to-end del codice e del processo, compresi l’in
 | Write-back metadati | Funziona diversamente | Opzione disattivata per impostazione predefinita. Abilita il modulo di avvio del flusso di lavoro corrispondente, se necessario. Il write-back viene gestito dai microservizi per le risorse. |
 | Elaborazione delle risorse caricate tramite Gestione pacchetti | Ha bisogno di intervento manuale. | Rielabora manualmente utilizzando l&#39;azione **[!UICONTROL Rielabora risorsa]** . |
 | Rilevamento del tipo MIME | Non supportato. | Se carichi una risorsa digitale senza un’estensione o con un’estensione errata, potrebbe non essere elaborata come desiderato. Gli utenti possono comunque memorizzare i file binari senza un’estensione nel DAM. Vedi [Rilevamento del tipo MIME in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
-| Generazione di attività secondarie per le attività composte | Non supportato. | I casi di utilizzo dipendenti non vengono soddisfatti. Ad esempio, è interessata l’annotazione di file PDF con più pagine. Consulta [creazione di risorse secondarie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
+| Generazione di risorse secondarie per o annotazione di attività composte | Non supportato. | I casi di utilizzo dipendenti non vengono soddisfatti. Ad esempio, non è possibile visualizzare o annotare un file PDF, INDD, PPT, PPTX e AI con più pagine. Consulta [creazione di risorse secondarie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Home page | Non supportato. | Vedere [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Estrarre risorse dall’archivio ZIP | Non supportato. | Consulta [Estrazione ZIP in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Valutazioni delle risorse | Non supportato. | Il widget di valutazione nell&#39;editor dello schema metadati non è supportato. |
