@@ -1,10 +1,7 @@
 ---
 title: Creazione e gestione delle visualizzazioni in Screens come Cloud Service
 description: Questa pagina descrive come creare e gestire le visualizzazioni in Screens come Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 14%
