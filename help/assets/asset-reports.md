@@ -2,16 +2,15 @@
 title: Rapporti su utilizzo e condivisione
 description: Rapporti sulle risorse in [!DNL Adobe Experience Manager Assets] per comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
-feature: Asset Reports,Asset Management
+feature: Rapporti sulle risorse,Gestione delle risorse
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
+source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 8%
 
 ---
-
 
 # Rapporti sulle risorse {#asset-reports}
 
@@ -106,7 +105,7 @@ Quando viene generato un rapporto, riceverai una notifica tramite <!-- through a
 
    Fai clic su **[!UICONTROL Scarica]** dalla barra degli strumenti per scaricare il rapporto in formato CSV.
 
-## Aggiungi colonne personalizzate ai rapporti {#add-custom-columns}
+## Aggiungere colonne personalizzate ai rapporti {#add-custom-columns}
 
 Puoi aggiungere colonne personalizzate ai seguenti rapporti per visualizzare più dati per le tue esigenze personalizzate:
 
@@ -121,7 +120,6 @@ Puoi aggiungere colonne personalizzate ai seguenti rapporti per visualizzare pi�
 -->
 
 * Carica
-* Scarica
 * Scadenza
 * Modifiche
 * Pubblicazione
