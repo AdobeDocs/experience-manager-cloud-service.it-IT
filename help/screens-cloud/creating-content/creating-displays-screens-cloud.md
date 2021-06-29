@@ -1,10 +1,10 @@
 ---
 title: Creazione e gestione delle visualizzazioni in Screens come Cloud Service
 description: Questa pagina descrive come creare e gestire le visualizzazioni in Screens come Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 14%
+source-wordcount: '292'
+ht-degree: 13%
 
 ---
 
@@ -52,4 +52,4 @@ Seleziona la visualizzazione e fai clic su **Elimina** nella parte inferiore del
 
 ## Novità {#whats-next}
 
-Ora che hai imparato a creare e gestire le visualizzazioni per il progetto, dovresti continuare a usare Screens come percorso di Cloud Service esaminando il documento [Assegnazione del canale a una visualizzazione in Screens come Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md).
+Ora che hai imparato a creare e gestire le visualizzazioni per il progetto, dovresti continuare a usare Screens come percorso di Cloud Service esaminando il documento [Assegnazione del canale a una visualizzazione in Screens come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
