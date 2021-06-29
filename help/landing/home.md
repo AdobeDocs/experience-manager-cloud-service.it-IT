@@ -2,10 +2,10 @@
 title: Guide utente di Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione di Adobe Experience Manager as a Cloud Service
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 560775956fbf8eb6376150e8fbf08af2ea9e5c1e
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 88%
+source-wordcount: '418'
+ht-degree: 84%
 
 ---
 
@@ -24,6 +24,7 @@ In questa pagina sono elencate le guide utente di supporto autonomo relative a E
 | [Onboarding](/help/onboarding/home.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Informazioni su come creare con, e amministrare, Experience Manager Sites as a Cloud Service. |
 | [Guida utente di Assets](/help/assets/home.md) | Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service. |
+| [Guida utente di Screens](/help/screens-cloud/home.md) | Scopri come utilizzare e amministrare i Experienci Manager Screens come Cloud Service. |
 | [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri come utilizzare e amministrare Experience Manager Commerce as a Cloud Service. |
 | [Passaggio ad AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Comprendi il percorso di transizione verso Cloud Service. |
 | [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando AEM potenti funzionalità esplorando questi argomenti relativi allo sviluppo e alla distribuzione. |
