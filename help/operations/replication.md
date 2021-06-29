@@ -2,7 +2,7 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
+source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 4%
@@ -42,17 +42,17 @@ Per realizzare la replica automatica è necessario abilitare **Auto Replicate** 
 Per eseguire un&#39;attivazione ad albero:
 
 1. Dal menu di avvio AEM passa a **Strumenti > Implementazione > Distribuzione**
-2. Seleziona la scheda **forwardPublisher**
-3. Una volta nell&#39;interfaccia della console Web di Publisher anticipata, **selezionare Distribuisci**
+2. Seleziona la scheda **pubblica**
+3. Una volta nell&#39;interfaccia utente della console Web di pubblicazione, **seleziona Distribuisci**
 
-   ![](assets/distribute.png "DistribuisciDistribuisci")
+   ![](assets/publish-distribute.png "DistribuisciDistribuisci")
 4. Seleziona il percorso nel browser percorsi, scegli di aggiungere un nodo, un albero o elimina come richiesto e seleziona **Invia**
 
 ### Flusso di lavoro della struttura del contenuto di Pubblica {#publish-content-tree-workflow}
 
 Puoi attivare una replica ad albero scegliendo **Strumenti - Flusso di lavoro - Modelli** e copiando il modello di flusso di lavoro preconfigurato **Pubblica albero dei contenuti** , come mostrato di seguito:
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/publish-distribute.png)
 
 Non modificare o richiamare il modello originale. Assicurati invece di copiare prima il modello e quindi modificare o richiamare tale copia.
 
@@ -191,13 +191,13 @@ Per ulteriori informazioni su Gestisci pubblicazione, consulta la documentazione
 Per risolvere i problemi di replica, accedi alle code di replica nell’interfaccia utente Web di AEM Author Service:
 
 1. Dal menu di avvio AEM passa a **Strumenti > Implementazione > Distribuzione**
-2. Seleziona la scheda **forwardPublisher**
-   ![](assets/status.png "StatusStatus")
+2. Seleziona la scheda **pubblica**
+   ![](assets/publish-status.png "StatusStatus")
 3. Controlla lo stato della coda che dovrebbe essere verde
 4. È possibile verificare la connessione al servizio di replica
 5. Seleziona la scheda **Logs** che mostra la cronologia delle pubblicazioni di contenuti
 
-![](assets/logs.png "Registri")
+![](assets/publish-logs.png "Registri")
 
 Se non è stato possibile pubblicare il contenuto, l’intera pubblicazione viene ripristinata da AEM Publish Service.
 In tal caso, le code devono essere riviste per identificare quali elementi hanno causato l&#39;annullamento della pubblicazione. Facendo clic su una coda che mostra uno stato rosso, viene visualizzata la coda con gli elementi in sospeso, da cui è possibile cancellare singoli o tutti gli elementi, se necessario.
