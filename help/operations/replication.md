@@ -2,10 +2,10 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
+source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '1155'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,9 @@ Adobe Experience Manager as a Cloud Service utilizza la funzionalità [Sling Con
 
 ### Annullamento/pubblicazione rapida - Annullamento/pubblicazione pianificata {#publish-unpublish}
 
-Queste funzionalità standard AEM per gli autori non cambiano con il Cloud Service AEM.
+Questo consente di pubblicare immediatamente le pagine selezionate, senza le opzioni aggiuntive possibili con l’approccio Gestisci pubblicazione .
+
+Per ulteriori informazioni, consulta [Gestisci pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### Tempi di attivazione e disattivazione - Configurazione dell&#39;attivatore {#on-and-off-times-trigger-configuration}
 
@@ -110,7 +112,7 @@ Di seguito sono riportati alcuni esempi di registri generati durante un flusso d
 
 **Riprendi supporto**
 
-Il flusso di lavoro elabora il contenuto in blocchi, ognuno dei quali rappresenta un sottoinsieme del contenuto completo da pubblicare. Se per qualsiasi motivo il flusso di lavoro viene interrotto dal sistema, verrà riavviato ed elaborato il blocco non ancora elaborato. Un’istruzione di registro indicherà che il contenuto è stato ripreso da un percorso specifico.
+Il flusso di lavoro elabora il contenuto in blocchi, ciascuno dei quali rappresenta un sottoinsieme del contenuto completo da pubblicare. Se per qualsiasi motivo il flusso di lavoro viene interrotto dal sistema, verrà riavviato ed elaborato il blocco non ancora elaborato. Un’istruzione di registro indicherà che il contenuto è stato ripreso da un percorso specifico.
 
 ### API di replica {#replication-api}
 
@@ -171,6 +173,14 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Nel caso in cui non si fornisca un filtro di questo tipo e si utilizzi solo l’agente &quot;publish&quot;, l’agente &quot;preview&quot; non viene utilizzato e l’azione di replica non influisce sul livello di anteprima.
 
 La `ReplicationStatus` complessiva di una risorsa viene modificata solo se l&#39;azione di replica include almeno un agente attivo per impostazione predefinita. Nell’esempio precedente questo non avviene, in quanto la replica utilizza solo l’agente &quot;preview&quot;. Pertanto, devi utilizzare il nuovo metodo `getStatusForAgent()`, che consente di eseguire query sullo stato di un agente specifico. Questo metodo funziona anche per l’agente &quot;publish&quot;. Restituisce un valore non-null se è stata eseguita un&#39;azione di replica utilizzando l&#39;agente fornito.
+
+### Gestisci pubblicazione  {#manage-publication}
+
+Gestisci pubblicazione offre più opzioni rispetto alla pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili; consente inoltre di pubblicare la pagina in un secondo momento.
+
+L’inclusione degli elementi figlio di una cartella per l’opzione &quot;Pubblica più tardi&quot; richiamerà il flusso di lavoro Pubblica albero del contenuto descritto in questo articolo.
+
+Per ulteriori informazioni su Gestisci pubblicazione, consulta la documentazione [Nozioni di base sulla pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ## Risoluzione dei problemi {#troubleshooting}
 
