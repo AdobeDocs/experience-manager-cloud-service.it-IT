@@ -1,10 +1,10 @@
 ---
 title: Utilizzo di Screens Content Provider
 description: Questa pagina descrive come utilizzare Screens Content Provider per la creazione di contenuti.
-source-git-commit: 00a4601b9c01309425e1a8df952387024167465b
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 3%
+source-wordcount: '209'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ La sezione seguente descrive come utilizzare Screens Content Provider, una volta
 
 >[!NOTE]
 >**Prerequisito**
->Prima di iniziare a leggere questa sezione, consulta Configurazione del provider di servizi Screens per informazioni su come accedere a questa interfaccia utente da Screens Services Provider.
+>Prima di iniziare a leggere questa sezione, consulta [Configurazione del provider di servizi Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) per informazioni su come accedere a questa interfaccia utente da Screens Services Provider.
 
 Dopo aver effettuato l’accesso a Screens Content Provider, ora sei pronto per creare il contenuto in riproduzione. Utilizza il provider di contenuti Screens per creare e gestire:
 
@@ -33,6 +33,6 @@ Dopo aver effettuato l’accesso a Screens Content Provider, ora sei pronto per 
 
 ## Novità {#whats-next}
 
-Ora che hai imparato a navigare su Screens Content Provider, dovresti continuare a usare Screens come percorso di Cloud Service esaminando il documento e selezionando Creazione e gestione di progetti in Screens come Cloud Service.
+Ora che hai imparato a navigare su Screens Content Provider, dovresti continuare a usare Screens come percorso di Cloud Service passando alla revisione successiva del documento [Creazione e gestione di un progetto in Screens come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).
 
 
