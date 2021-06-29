@@ -2,9 +2,9 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
+source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1185'
 ht-degree: 4%
 
 ---
@@ -34,6 +34,10 @@ Per realizzare la replica automatica è necessario abilitare **Auto Replicate** 
 ![Configurazione trigger OSGi On Off](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Attivazione albero {#tree-activation}
+
+>[!NOTE]
+>
+>Questo approccio deve essere considerato obsoleto in quanto non persiste e non è scalabile rispetto ad altri approcci. Il consiglio di Adobe è invece di utilizzare i metodi di pubblicazione o flusso di lavoro di gestione
 
 Per eseguire un&#39;attivazione ad albero:
 
@@ -112,7 +116,7 @@ Di seguito sono riportati alcuni esempi di registri generati durante un flusso d
 
 **Riprendi supporto**
 
-Il flusso di lavoro elabora il contenuto in blocchi, ciascuno dei quali rappresenta un sottoinsieme del contenuto completo da pubblicare. Se per qualsiasi motivo il flusso di lavoro viene interrotto dal sistema, verrà riavviato ed elaborato il blocco non ancora elaborato. Un’istruzione di registro indicherà che il contenuto è stato ripreso da un percorso specifico.
+Il flusso di lavoro elabora il contenuto in blocchi, ognuno dei quali rappresenta un sottoinsieme del contenuto completo da pubblicare. Se per qualsiasi motivo il flusso di lavoro viene interrotto dal sistema, verrà riavviato ed elaborato il blocco non ancora elaborato. Un’istruzione di registro indicherà che il contenuto è stato ripreso da un percorso specifico.
 
 ### API di replica {#replication-api}
 
