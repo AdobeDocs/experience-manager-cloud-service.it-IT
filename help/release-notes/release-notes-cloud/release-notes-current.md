@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
+source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1395'
 ht-degree: 2%
 
 ---
@@ -90,14 +90,12 @@ La prossima versione è prevista per il 15 luglio 2021.
 
 ### Nuove funzioni in [!DNL Assets] {#ga-features-assets}
 
-* La funzionalità di automazione dei contenuti consente a [!DNL Experience Manager Assets] di sfruttare le API [!DNL Adobe Creative Cloud] per automatizzare la produzione delle risorse su larga scala. Migliora la velocità dei contenuti riducendo notevolmente il tempo impiegato e le iterazioni necessarie per creare varianti della stessa risorsa. La funzionalità non richiede alcun codice e funziona dall’interno di DAM.
+* La funzionalità di automazione dei contenuti consente a [!DNL Experience Manager Assets] di sfruttare le API [!DNL Adobe Creative Cloud] per automatizzare la produzione delle risorse su larga scala. Migliora la velocità dei contenuti riducendo notevolmente il tempo impiegato e le iterazioni necessarie per creare varianti della stessa risorsa. La funzionalità non richiede alcuna programmazione e funziona dall’interno di DAM. Consulta [Generare varianti di risorse utilizzando l’integrazione Creative Cloud](/help/assets/cc-api-integration.md).
+
 * [!DNL Adobe Asset Link] Viene rilasciata la versione 3.0 per  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator],  [!DNL Adobe InDesign] e  [!DNL Adobe Asset Link] la versione 2.0 per  [!DNL Adobe XD] . Fornisce:
 
    * Supporto per [!DNL Assets Essentials].
    * Possibilità di connettersi automaticamente a [!DNL Experience Manager] come [!DNL Cloud Service] o [!DNL Assets Essentials].
-
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
--->
 
 ### Nuove funzioni disponibili nel canale pre-rilascio [!DNL Assets] {#beta-features-assets}
 
