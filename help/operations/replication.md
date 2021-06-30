@@ -2,10 +2,10 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
+source-git-commit: 225c47db1af35b29d79ebd16fa437681987b1372
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,6 +32,14 @@ Le possibilità aggiuntive di **On Time** e **Off Time** sono disponibili nella 
 Per realizzare la replica automatica è necessario abilitare **Auto Replicate** nella [configurazione OSGi](/help/implementing/deploying/configuring-osgi.md) **On Off Trigger Configuration**:
 
 ![Configurazione trigger OSGi On Off](/help/operations/assets/replication-on-off-trigger.png)
+
+### Gestisci pubblicazione  {#manage-publication}
+
+Gestisci pubblicazione offre più opzioni rispetto alla pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili; consente inoltre di pubblicare la pagina in un secondo momento.
+
+L’inclusione degli elementi figlio di una cartella per l’opzione &quot;Pubblica più tardi&quot; richiamerà il flusso di lavoro Pubblica albero del contenuto descritto in questo articolo.
+
+Per ulteriori informazioni su Gestisci pubblicazione, consulta la documentazione [Nozioni di base sulla pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### Attivazione albero {#tree-activation}
 
@@ -177,14 +185,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Nel caso in cui non si fornisca un filtro di questo tipo e si utilizzi solo l’agente &quot;publish&quot;, l’agente &quot;preview&quot; non viene utilizzato e l’azione di replica non influisce sul livello di anteprima.
 
 La `ReplicationStatus` complessiva di una risorsa viene modificata solo se l&#39;azione di replica include almeno un agente attivo per impostazione predefinita. Nell’esempio precedente questo non avviene, in quanto la replica utilizza solo l’agente &quot;preview&quot;. Pertanto, devi utilizzare il nuovo metodo `getStatusForAgent()`, che consente di eseguire query sullo stato di un agente specifico. Questo metodo funziona anche per l’agente &quot;publish&quot;. Restituisce un valore non-null se è stata eseguita un&#39;azione di replica utilizzando l&#39;agente fornito.
-
-### Gestisci pubblicazione  {#manage-publication}
-
-Gestisci pubblicazione offre più opzioni rispetto alla pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili; consente inoltre di pubblicare la pagina in un secondo momento.
-
-L’inclusione degli elementi figlio di una cartella per l’opzione &quot;Pubblica più tardi&quot; richiamerà il flusso di lavoro Pubblica albero del contenuto descritto in questo articolo.
-
-Per ulteriori informazioni su Gestisci pubblicazione, consulta la documentazione [Nozioni di base sulla pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ## Risoluzione dei problemi {#troubleshooting}
 
