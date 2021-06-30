@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1430'
 ht-degree: 2%
 
 ---
@@ -97,12 +97,23 @@ La prossima versione è prevista per il 15 luglio 2021.
    * Supporto per [!DNL Assets Essentials].
    * Possibilità di connettersi automaticamente a [!DNL Experience Manager] come [!DNL Cloud Service] o [!DNL Assets Essentials].
 
+* Lo strumento [Asset Bulk Ingestor](/help/assets/add-assets.md#asset-bulk-ingestor) consente di aggiungere metadati durante un’acquisizione in blocco.
+
 ### Nuove funzioni disponibili nel canale pre-rilascio [!DNL Assets] {#beta-features-assets}
 
 * Le impostazioni di visualizzazione vengono migliorate per consentire agli utenti di scegliere una vista predefinita e un parametro di ordinamento predefinito.
+
+   ![Imposta la visualizzazione predefinita in Impostazioni vista](/help/assets/assets/view-settings-for-defaults.png)
+
 * La funzionalità di download di Linkshare utilizza download asincroni che aumentano la velocità di download.
+
 * Gli utenti possono cercare e filtrare le cartelle in base ai predicati delle proprietà.
-* [!DNL Experience Manager Assets] incorpora il visualizzatore PDF basato su  [!DNL Adobe Document Cloud] per visualizzare in anteprima i documenti supportati. Questa funzione consente agli utenti di visualizzare in anteprima PDF e altri file multipagina senza alcuna elaborazione complessa. Questo migliora la parità delle funzioni con [!DNL Experience Manager] 6.5.
+
+   ![Filtrare le cartelle di ricerca utilizzando i predicati di ricerca](/help/assets/assets/search-folders-via-predicates.png)
+
+* [!DNL Experience Manager Assets] incorpora il visualizzatore PDF per visualizzare in anteprima i formati di documento supportati. È alimentato da [!DNL Adobe Document Cloud]. Questa funzione consente agli utenti di visualizzare in anteprima PDF e altri file multipagina senza alcuna elaborazione complessa. Questo migliora la parità delle funzioni con [!DNL Experience Manager] 6.5.
+
+   ![Anteprima di file PDF  [!DNL Experience Manager] con visualizzatore PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
 ### Bug corretti in [!DNL Assets] {#bugs-fixed-assets}
 
