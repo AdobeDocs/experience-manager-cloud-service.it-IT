@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Gestione risorse, Pubblicazione, Collaborazione, Elaborazione risorse
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 76dd50e044038859bb06a02a2b1c2131932db29c
 workflow-type: tm+mt
-source-wordcount: '4502'
+source-wordcount: '4550'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 Questo articolo descrive come gestire e modificare le risorse in Adobe Experience Manager Assets. Per gestire i frammenti di contenuto, consulta le risorse [Frammenti di contenuto](content-fragments/content-fragments.md) .
 
-## Crea cartelle {#creating-folders}
+## Creare cartelle {#creating-folders}
 
 Quando organizzi una raccolta di risorse, ad esempio tutte le immagini `Nature`, puoi creare cartelle per mantenerle intatte. Puoi utilizzare le cartelle per suddividere in categorie e organizzare le risorse. [!DNL Experience Manager Assets] non richiede di organizzare meglio le risorse nelle cartelle.
 
@@ -36,7 +36,7 @@ I seguenti caratteri (elenco separato da spazi) non sono supportati:
 * Il nome di un file di risorsa non può contenere i seguenti caratteri: `* / : [ \\ ] | # % { } ? &`
 * Il nome di una cartella di risorse non può contenere i seguenti caratteri: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Caricare risorse {#uploading-assets}
+## Caricare le risorse {#uploading-assets}
 
 Consulta [aggiungere risorse digitali ad Experience Manager](add-assets.md).
 
@@ -122,7 +122,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 -->
 
-## Copia risorse {#copying-assets}
+## Copiare le risorse {#copying-assets}
 
 Quando copi una risorsa o una cartella, viene copiata l’intera risorsa o la cartella insieme alla relativa struttura del contenuto. Una risorsa o una cartella copiata viene duplicata nel percorso di destinazione. La risorsa nella posizione di origine non viene modificata.
 
@@ -331,7 +331,7 @@ Le icone delle azioni rapide sono disponibili per una singola risorsa alla volta
 * Dispositivi touch: Toccare e tenere premuto. Ad esempio, su un iPad, puoi toccare e tenere premuto un contenuto per visualizzare le azioni rapide.
 * Dispositivi non touch: Puntatore al passaggio del mouse. Ad esempio, su un dispositivo desktop, se passi il puntatore sulla miniatura della risorsa viene visualizzata la barra delle azioni rapide.
 
-## Modifica immagini {#editing-images}
+## Modificare le immagini {#editing-images}
 
 Gli strumenti di modifica nell’ interfaccia [!DNL Experience Manager Assets] consentono di eseguire piccoli processi di modifica sulle risorse di immagini. È possibile ritagliare, ruotare, capovolgere ed eseguire altri lavori di modifica sulle immagini. Puoi anche aggiungere mappe immagine alle risorse.
 
@@ -462,6 +462,14 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 ### Visualizzare le annotazioni salvate {#viewing-saved-annotations}
 
+È possibile visualizzare una sola annotazione alla volta.
+
+>[!NOTE]
+>
+>Se selezioni più annotazioni, l’ultima sarà visibile nell’interfaccia utente.
+>
+>La selezione multipla è supportata solo per la stampa della risorsa annotata come PDF.
+
 1. Per visualizzare le annotazioni salvate per una risorsa, accedi alla posizione della risorsa e apri la pagina della risorsa.
 
 1. Tocca o fai clic sull&#39;icona di navigazione globale e scegli **[!UICONTROL Timeline]** dall&#39;elenco.
@@ -483,6 +491,10 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 Se una risorsa dispone di annotazioni o è stata sottoposta a un flusso di lavoro di revisione, puoi stampare la risorsa insieme ad annotazioni e rivederla come file PDF per la revisione offline.
 
 È inoltre possibile scegliere di stampare solo le annotazioni o lo stato di revisione.
+
+>[!NOTE]
+>
+>È possibile selezionare più annotazioni durante la stampa della risorsa annotata in formato PDF.
 
 Per stampare le annotazioni e controllare lo stato, tocca o fai clic sull&#39;icona **[!UICONTROL Stampa]** e segui le istruzioni della procedura guidata. L’icona **[!UICONTROL Stampa]** viene visualizzata nella barra degli strumenti solo se alla risorsa è assegnata almeno un’annotazione o uno stato di revisione.
 
