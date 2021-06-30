@@ -4,7 +4,7 @@ description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Ass
 feature: Informazioni sulla versione
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
+source-git-commit: 2b6e67503b212f0da0064e1955a82ccf7beaddea
 workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 5%
@@ -60,7 +60,7 @@ Per eseguire una convalida end-to-end del codice e del processo, compresi l’in
 | Home page | Non supportato. | Vedere [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Estrarre risorse dall’archivio ZIP | Non supportato. | Consulta [Estrazione ZIP in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Valutazioni delle risorse | Non supportato. | Il widget di valutazione nell&#39;editor dello schema metadati non è supportato. |
-| Filtro di distribuzione dei contenuti | Non supportato. | Un caso d’uso comune di `ContentDispositionFilter` è quello di consentire agli amministratori di configurare [!DNL Experience Manager] per distribuire i file HTML e aprire i file PDF in linea invece di scaricarli. Nelle istanze di pubblicazione, puoi gestire la disposizione utilizzando la configurazione di Dispatcher. Nelle istanze di authoring, Adobe non consiglia di modificare l’intestazione Content Disposition (Disposizione contenuto). Consulta [Filtro di disposizione del contenuto in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
+| Filtro per la disposizione dei contenuti | Non supportato. | Un caso d’uso comune di `ContentDispositionFilter` è quello di consentire agli amministratori di configurare [!DNL Experience Manager] per distribuire i file HTML e aprire i file PDF in linea invece di scaricarli. Nelle istanze di pubblicazione, puoi gestire la disposizione utilizzando la configurazione di Dispatcher. Nelle istanze di authoring, Adobe non consiglia di modificare l’intestazione Content Disposition (Disposizione contenuto). Consulta [Filtro di disposizione del contenuto in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
 | [Download del rapporto](/help/assets/asset-reports.md) | Non supportato. | Per il momento, il rapporto di download che informa dell’utilizzo delle risorse non è disponibile. Consulta [scarica report in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Modello di servizio fotografico per prodotto | Non supportato. | Consulta [modello di servizio fotografico per prodotto in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | Interfaccia classica | Non supportato. | È disponibile solo l’interfaccia utente touch. |
