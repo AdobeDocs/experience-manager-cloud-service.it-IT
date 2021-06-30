@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
+source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1544'
 ht-degree: 3%
 
 ---
@@ -111,7 +111,7 @@ La prossima versione è prevista per il 15 luglio 2021.
 
    ![Filtrare le cartelle di ricerca utilizzando i predicati di ricerca](/help/assets/assets/search-folders-via-predicates.png)
 
-* [!DNL Experience Manager Assets] incorpora il visualizzatore PDF per visualizzare in anteprima i formati di documento supportati. È alimentato da [!DNL Adobe Document Cloud]. Questa funzione consente agli utenti di visualizzare in anteprima PDF e altri file multipagina senza alcuna elaborazione complessa. Questo migliora la parità delle funzioni con [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] incorpora il visualizzatore PDF per visualizzare in anteprima i formati di documento supportati. È alimentato da [!DNL Adobe Document Cloud]. Questa funzione consente agli utenti di visualizzare in anteprima PDF e altri file multipagina senza alcuna elaborazione complessa. Questo migliora la parità delle funzioni con [!DNL Experience Manager] 6.5. I controlli disponibili nell’anteprima consistono nello zoom, nella navigazione alle pagine, nello sganciare i controlli e nella visualizzazione a schermo intero. Il visualizzatore PDF integrato supporta i formati di file AI, DOCX, INDD, PDF e PSD. È possibile commentare la risorsa stessa, ma i commenti e le annotazioni all’interno del file PDF non sono supportati.
 
    ![Anteprima di file PDF  [!DNL Experience Manager] con visualizzatore PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
