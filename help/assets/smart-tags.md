@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Tag avanzati, assegnazione tag
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2355'
 ht-degree: 6%
 
 ---
@@ -97,13 +97,16 @@ Assicurati che le immagini del set di addestramento siano conformi alle seguenti
 
 **Esempi**: Altri esempi di indicazioni sono:
 
-* Creare un modello di tag che includa:
-   * solo i tag relativi ai modelli di auto.
-   * solo i tag relativi ai colori delle camicie.
-   * solo i tag relativi a giacche per donne e uomini.
+* Creare un modello di tag che includa solo:
+
+   * I tag relativi ai modelli di auto.
+   * I tag relativi ai colori delle camicie.
+   * I tag relativi alle giacche per donne e uomini.
+
 * Non creare,
-   * un modello di tag che include modelli di auto rilasciati nel 2019 e 2020.
-   * modelli di tag multipli che includono gli stessi pochi modelli di auto.
+
+   * Un modello di tag che include modelli di auto rilasciati nel 2019 e 2020.
+   * Modelli di tag multipli che includono gli stessi pochi modelli di auto.
 
 **Immagini utilizzate per la formazione**: Puoi utilizzare le stesse immagini per addestrare diversi modelli di tag. Tuttavia, non associare un’immagine a più tag in un modello di tag. È possibile assegnare tag alla stessa immagine con tag diversi appartenenti a modelli di tag diversi.
 
