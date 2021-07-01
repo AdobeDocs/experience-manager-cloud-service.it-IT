@@ -1,40 +1,39 @@
 ---
-title: Utilizzo delle visualizzazioni rapide per creare pop-up personalizzati
-description: '"Scopri come viene utilizzata la visualizzazione rapida predefinita nelle esperienze e-commerce, in cui viene visualizzata una finestra a comparsa con informazioni sul prodotto per promuovere un acquisto. È possibile attivare il contenuto personalizzato da visualizzare nel pop-up Windows®."'
+title: Creare pop-up personalizzati utilizzando Quickview
+description: '"Scopri come viene utilizzata la visualizzazione rapida predefinita nelle esperienze di e-commerce in cui viene visualizzata una finestra a comparsa con informazioni sul prodotto per promuovere un acquisto. È possibile attivare il contenuto personalizzato da visualizzare nel pop-up Windows®."'
 feature: Immagini interattive, video interattivi, banner a carosello
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-translation-type: tm+mt
-source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1009'
 ht-degree: 1%
 
 ---
 
-# Utilizzo delle visualizzazioni rapide per creare finestre pop-up personalizzate Windows® {#using-quickviews-to-create-custom-pop-ups}
+# Crea Windows® a comparsa personalizzato utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore utilizzato, i clienti possono toccare un punto attivo, un’immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
+La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore utilizzato, i clienti possono selezionare un punto attivo, un&#39;immagine in miniatura o una mappa immagine per visualizzare le informazioni o il contenuto correlato.
 
-Le visualizzazioni rapide sono supportate dai seguenti visualizzatori in Dynamic Media:
+Quickview è supportato dai seguenti visualizzatori in Dynamic Media:
 
-* Immagini interattive (punti attivi cliccabili)
-* Video interattivo (immagini thumbnail cliccabili durante la riproduzione del video)
-* Banner a carosello (hotspot cliccabili o mappe immagine)
+* Immagini interattive (hotspot selezionabili)
+* Video interattivo (immagini in miniatura selezionabili durante la riproduzione del video)
+* Banner a carosello (punti attivi selezionabili o mappe immagine)
 
 Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di creazione di una visualizzazione rapida è lo stesso in tutti e tre i visualizzatori supportati.
 
-**Per utilizzare le visualizzazioni rapide per creare un pop-up Windows® personalizzato:**
+**Per creare un pop-up Windows® personalizzato utilizzando Quickview:**
 
 1. Crea una visualizzazione rapida per una risorsa caricata.
 
-   In genere, quando modifichi una risorsa da utilizzare con il visualizzatore in uso, viene creata una visualizzazione rapida.
+   In genere, quando modifichi una risorsa da utilizzare con il visualizzatore in uso, crei una visualizzazione rapida.
 
    <table>
     <tbody>
     <tr>
     <td><strong>Visualizzatore in uso</strong></td>
-    <td><strong>Per creare la visualizzazione rapida, completare i seguenti passaggi</strong></td>
+    <td><strong>Per creare la visualizzazione rapida, completa questi passaggi</strong></td>
     </tr>
     <tr>
     <td>Immagini interattive</td>
@@ -107,10 +106,10 @@ EsempioSupponiamo che tu stia utilizzando il seguente codice di incorporamento s
 
 1. Ora configura il gestore `quickViewActivate`.
 
-   Il gestore `quickViewActivate` controlla le visualizzazioni rapide nel visualizzatore. Il gestore contiene l&#39;elenco delle variabili e le chiamate di funzioni da utilizzare con la visualizzazione rapida. Il codice di incorporamento fornisce la mappatura per la variabile SKU impostata nella vista Rapida. Effettua anche una chiamata di funzione di esempio `loadQuickView` .
+   Il gestore `quickViewActivate` controlla la visualizzazione rapida nel visualizzatore. Il gestore contiene l&#39;elenco di variabili e le chiamate di funzioni da utilizzare con Quickview. Il codice di incorporamento fornisce la mappatura per la variabile SKU impostata in Quickview. Effettua anche una chiamata di funzione di esempio `loadQuickView` .
 
    **Variabili**
-mappingMappa per l&#39;utilizzo nella pagina Web sul valore SKU e variabili generiche contenute nella visualizzazione rapida:
+mappingMap da utilizzare nella pagina Web in base al valore SKU e alle variabili generiche contenute in Quickview:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -118,15 +117,15 @@ mappingMappa per l&#39;utilizzo nella pagina Web sul valore SKU e variabili gene
 
    `var sku=inData.sku`
 
-   Mappa anche altre variabili dalla vista Rapida, come illustrato di seguito:
+   Mappa anche altre variabili dalla visualizzazione rapida, come illustrato di seguito:
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Funzione**
-callL&#39;handler richiede anche una chiamata di funzione per il funzionamento della visualizzazione rapida. Si presume che la funzione sia accessibile dalla pagina host. Il codice di incorporamento fornisce un esempio di chiamata della funzione :
+   **La funzione**
+callL&#39;handler richiede anche una chiamata di funzione affinché Quickview funzioni. Si presume che la funzione sia accessibile dalla pagina host. Il codice di incorporamento fornisce un esempio di chiamata della funzione :
 
    `loadQuickView(sku)`
 
@@ -141,7 +140,7 @@ callL&#39;handler richiede anche una chiamata di funzione per il funzionamento d
 1. Effettua le seguenti operazioni:
 
    * Rimuovi il commento alla sezione setHandlers del codice di incorporamento.
-   * Mappa tutte le variabili aggiuntive contenute nella visualizzazione rapida.
+   * Mappa eventuali variabili aggiuntive contenute nella visualizzazione rapida.
 
       * Se aggiungi altre variabili, aggiorna la chiamata `loadQuickView(sku,*var1*,*var2*)` .
    * Crea una semplice funzione `loadQuickView` () sulla pagina, all’esterno del visualizzatore.
@@ -156,11 +155,11 @@ callL&#39;handler richiede anche una chiamata di funzione per il funzionamento d
 
    * Carica una pagina HTML di prova su un server web e apri.
 
-      Le variabili della vista Rapida sono mappate. La chiamata della funzione è attiva. E la console del browser scrive il valore della variabile nella console del browser. Lo fa utilizzando la funzione di esempio fornita.
+      Le variabili della visualizzazione rapida sono mappate. La chiamata della funzione è attiva. E la console del browser scrive il valore della variabile nella console del browser. Lo fa utilizzando la funzione di esempio fornita.
 
 
 
-1. È ora possibile utilizzare una funzione per richiamare un semplice pop-up nella visualizzazione rapida. Nell&#39;esempio seguente viene utilizzato un elemento `DIV` per un elemento a comparsa.
+1. È ora possibile utilizzare una funzione per richiamare un semplice pop-up in Quickview. Nell&#39;esempio seguente viene utilizzato un elemento `DIV` per un elemento a comparsa.
 1. Assegna uno stile al pop-up `DIV` nel modo seguente. Aggiungi lo stile extra desiderato.
 
    ```xml
@@ -175,7 +174,7 @@ callL&#39;handler richiede anche una chiamata di funzione per il funzionamento d
 
 1. Posiziona il pop-up `DIV` nel corpo della pagina HTML.
 
-   Uno degli elementi viene impostato con un ID aggiornato con il valore SKU quando l’utente richiama una visualizzazione rapida. L’esempio include anche un semplice pulsante per nascondere nuovamente la finestra a comparsa quando diventa visibile.
+   Uno degli elementi viene impostato con un ID aggiornato con il valore SKU quando l’utente richiama un Quickview. L’esempio include anche un semplice pulsante per nascondere nuovamente la finestra a comparsa quando diventa visibile.
 
    ```xml
    <div id="quickview_div" >
