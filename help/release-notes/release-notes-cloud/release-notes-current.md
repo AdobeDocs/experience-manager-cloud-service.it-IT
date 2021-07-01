@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
+source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1577'
 ht-degree: 3%
 
 ---
@@ -211,5 +211,21 @@ La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v
 ### Correzioni di bug {#bug-fixes-ctt-latest}
 
 * Durante l’arresto di un’acquisizione sull’istanza Author, l’interfaccia utente ha sovrascritto un’acquisizione precedente sull’istanza Publish in `STOPPED` da `FINISHED`. Questo problema è stato risolto.
+
+## Analisi delle best practice {#best-practices-analyzer}
+
+### Data di rilascio {#release-date-bpa}
+
+La data di rilascio di Best Practices Analyzer v2.1.16 è il 30 giugno 2021.
+
+### Novità {#what-is-new-bpa-latest}
+
+* Possibilità di rilevare e segnalare i nodi figlio mancanti nelle cartelle in `/content/dam`.
+
+* Possibilità di rilevare e segnalare la versione di Best Practices Analyzer utilizzata.
+
+### Correzioni di bug {#bug-fixes-bpa-latest}
+
+* Errore di registrazione relativo alla correzione di URS (Unsupported Repository Structure).
 
 
