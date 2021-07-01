@@ -5,10 +5,9 @@ contentOwner: Rick Brough
 feature: Gestione Delle Risorse, Profili Immagine, Profili Video
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -28,7 +27,7 @@ Di seguito sono riportati alcuni suggerimenti sulle best practice per organizzar
    * Consulta [Profili metadati](/help/assets/metadata-profiles.md).
    * Consulta [Metadati per Digital Asset Management](/help/assets/manage-metadata.md).
 
-* Di solito, la tua raccolta di risorse digitali cresce sempre di più. Pertanto, è importante, in precedenza, formalizzare l’uso dei metadati, la struttura delle cartelle e la denominazione dei file tra tutte le risorse caricate. La standardizzazione su questi elementi assicura che, con l’aumento del pool di risorse digitali, sia possibile applicare profili di elaborazione alle cartelle con maggiore precisione e coerenza.
+* Di solito, la tua raccolta di risorse digitali cresce sempre di più. Pertanto, è importante - in data precedente - formalizzare l’uso dei metadati, la struttura delle cartelle e la denominazione dei file tra tutte le risorse caricate. La standardizzazione su questi elementi assicura che, con l’aumento del pool di risorse digitali, sia possibile applicare profili di elaborazione alle cartelle con maggiore precisione e coerenza.
 * Utilizza solo le cartelle per imporre una struttura di archiviazione coerente per le risorse digitali. Ad esempio, le strutture di cartelle che consentono di definire meglio i profili da assegnare possono includere i seguenti elementi:
 
    * **Cartelle di sviluppo** : contiene le risorse digitali su cui stai lavorando.
