@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
+source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1545'
 ht-degree: 3%
 
 ---
@@ -140,15 +140,16 @@ La prossima versione è prevista per il 15 luglio 2021.
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
-* È stata aggiunta la possibilità di filtrare colonne personalizzate nella casella in entrata AEM.
-* È stata aggiunta la possibilità di utilizzare l’editor di temi e il livello di stile dell’editor di moduli adattivi per personalizzare lo stile del componente captcha.
-* Velocità e precisione migliorate per rilevare automaticamente le sezioni logiche nei PDF forms sorgente e convertirle in corrispondenti pannelli di moduli adattivi.
-* È stata aggiunta l’azione Sposta per spostare un file PDF o XDP da una cartella all’altra.
+* Gli amministratori di Forms possono filtrare le colonne personalizzate AEM casella in entrata.
+* Gli sviluppatori Forms possono utilizzare l’editor di temi e il livello di stile dell’editor di moduli adattivi per personalizzare lo stile del componente captcha.
+* È stata migliorata la precisione per rilevare automaticamente le sezioni logiche nei moduli di origine e convertirle in corrispondenti pannelli di moduli adattivi.
+* È stata aggiunta un’azione Sposta per facilitare lo spostamento di un file PDF o XDP da una cartella all’altra.
+* Riduzione del tempo di caricamento e miglioramento delle prestazioni dell’editor di moduli adattivi e dell’editor di temi.
 
 ### Funzione beta di [!DNL Forms] {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: Le API di comunicazione consentono di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che consentono di:
-   * Generare documenti modulo finali compilando i file modello con dati XML.
+   * Genera i documenti compilando i file modello con dati XML.
    * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
    * Genera PDF per la stampa da un modulo XFA PDF e Adobe Acrobat Form (AcroForm).
 
@@ -159,7 +160,7 @@ Puoi scrivere su [!DNL formscsbeta@adobe.com] per iscriverti al programma beta.
 ### Bug corretti in [!DNL Forms] {#forms-bugs-fixed}
 
 * Quando un campo viene convalidato prima dell’invio di dati al servizio back-end tramite Form Data Model (FDM), le convalide hanno esito positivo, ma il servizio Form Data Model non riesce ad avviare la convalida post-convalida.
-* Quando si invia un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file a 0 byte dall’altro lato. Questo è un problema noto in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* Quando si invia un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file a 0 byte dall’altro lato. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Adobe Experience Manager Screens] come  [!DNL Cloud Service] {#screens}
 
