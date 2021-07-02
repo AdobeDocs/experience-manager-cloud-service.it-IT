@@ -2,22 +2,21 @@
 title: Configurare e utilizzare i microservizi per le risorse
 description: Configura e utilizza i microservizi per le risorse native per il cloud per elaborare le risorse su larga scala.
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Asset Processing
+feature: asset compute Microservices,Flusso di lavoro,Elaborazione delle risorse
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2635'
 ht-degree: 1%
 
 ---
 
-
-# Utilizzare i microservizi per le risorse e i profili di elaborazione {#get-started-using-asset-microservices}
+# Utilizzare i microservizi delle risorse e i profili di elaborazione {#get-started-using-asset-microservices}
 
 I microservizi per le risorse forniscono un’elaborazione scalabile e resiliente delle risorse utilizzando applicazioni native per il cloud (o processi di lavoro). Adobe gestisce i servizi per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione.
 
-I microservizi per le risorse consentono di elaborare una [vasta gamma di tipi di file](/help/assets/file-format-support.md) che include più formati pronti all’uso rispetto alle versioni precedenti di [!DNL Experience Manager]. Ad esempio, è ora possibile estrarre le miniature dei formati PSD e PSB che in precedenza richiedevano soluzioni di terze parti come ImageMagick.
+I microservizi per le risorse consentono di elaborare una [vasta gamma di tipi di file](/help/assets/file-format-support.md) che include più formati pronti all’uso rispetto alle versioni precedenti di [!DNL Experience Manager]. Ad esempio, l’estrazione delle miniature dei formati PSD e PSB è ora possibile, ma in precedenza era necessaria una soluzione di terze parti come [!DNL ImageMagick].
 
 L’elaborazione delle risorse dipende dalla configurazione in **[!UICONTROL Profili di elaborazione]**. Experience Manager fornisce una configurazione predefinita di base e consente agli amministratori di aggiungere una configurazione di elaborazione delle risorse più specifica. Gli amministratori creano, gestiscono e modificano le configurazioni dei flussi di lavoro di post-elaborazione, inclusa la personalizzazione facoltativa. La personalizzazione dei flussi di lavoro consente agli sviluppatori di estendere l’offerta predefinita.
 
@@ -34,7 +33,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ## Comprendere le opzioni di elaborazione delle risorse {#get-started}
 
-L’Experience Manager consente i seguenti livelli di elaborazione.
+[!DNL Experience Manager] consente i seguenti livelli di elaborazione.
 
 | Opzione | Descrizione | Casi d&#39;uso coperti |
 |---|---|---|
@@ -100,7 +99,7 @@ The following video demonstrates the usefulness and usage of standard profile.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
-## Casi di utilizzo e profilo personalizzati {#custom-config}
+## Casi di utilizzo e di profilo personalizzati {#custom-config}
 
 [!DNL Asset Compute Service] supporta diversi casi d’uso, ad esempio l’elaborazione predefinita, l’elaborazione di formati specifici per Adobi come i file Photoshop e l’implementazione di un’elaborazione personalizzata o specifica per l’organizzazione. La personalizzazione del flusso di lavoro Risorsa di aggiornamento DAM richiesta in passato viene gestita automaticamente o tramite la configurazione dei profili di elaborazione. Se queste opzioni di elaborazione non soddisfano le esigenze aziendali, Adobe consiglia di sviluppare e utilizzare [!DNL Asset Compute Service] per estendere le funzionalità predefinite. Per una panoramica, consulta [comprendere l&#39;estensibilità e quando usarla](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
@@ -207,17 +206,26 @@ Assicurati che l’ultimo passaggio di ogni flusso di lavoro di post-elaborazion
 
 ### Configurare l’esecuzione del flusso di lavoro di post-elaborazione {#configure-post-processing-workflow-execution}
 
-Per configurare i modelli di flusso di lavoro di post-elaborazione da eseguire per le risorse caricate o aggiornate nel sistema al termine dell’elaborazione dei microservizi per le risorse, è necessario configurare il servizio Flusso di lavoro personalizzato.
+Al termine dell’elaborazione delle risorse caricate da parte dei microservizi per le risorse, puoi definire la post-elaborazione per elaborare ulteriormente alcune risorse. Per configurare la post-elaborazione utilizzando i modelli di flusso di lavoro, puoi effettuare una delle seguenti operazioni:
+
+* Configura il servizio Workflow Runner personalizzato.
+* Applica un modello di flusso di lavoro nella cartella [!UICONTROL Proprietà].
 
 Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) è un servizio OSGi e fornisce due opzioni di configurazione:
 
-* Flussi di lavoro di post-elaborazione per percorso (`postProcWorkflowsByPath`): È possibile elencare più modelli di flusso di lavoro, basati su diversi percorsi di archivio. I percorsi e i modelli devono essere separati da due punti. Sono supportati percorsi di archivio semplici e devono essere mappati su un modello di flusso di lavoro nel percorso `/var` . Esempio: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Flussi di lavoro di post-elaborazione per percorso (`postProcWorkflowsByPath`): È possibile elencare più modelli di flusso di lavoro, basati su diversi percorsi di archivio. Separa i percorsi e i modelli utilizzando due punti. Sono supportati percorsi archivio semplici. Mappa questi elementi su un modello di flusso di lavoro nel percorso `/var` . Esempio: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Flussi di lavoro di post-elaborazione per espressione (`postProcWorkflowsByExpression`): È possibile elencare più modelli di flusso di lavoro, in base a diverse espressioni regolari. Le espressioni e i modelli devono essere separati da due punti. L’espressione regolare deve puntare direttamente al nodo Asset e non a una delle rappresentazioni o dei file. Esempio: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
 >La configurazione di Custom Workflow Runner è una configurazione di un servizio OSGi. Per informazioni su come distribuire una configurazione OSGi, consulta [distribuzione in Experience Manager](/help/implementing/deploying/overview.md) .
 >La console Web OSGi, a differenza delle distribuzioni di servizi on-premise e gestiti di [!DNL Experience Manager], non è direttamente disponibile nelle distribuzioni di servizi cloud.
+
+Per applicare un modello di flusso di lavoro nella cartella [!UICONTROL Proprietà], segui questi passaggi:
+
+1. Crea un modello di flusso di lavoro.
+1. Seleziona una cartella, fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti, quindi fai clic sulla scheda **[!UICONTROL Elaborazione risorse]** .
+1. In **[!UICONTROL Flusso di lavoro con avvio automatico]**, seleziona il flusso di lavoro richiesto, fornisci un titolo del flusso di lavoro e quindi salva le modifiche.
 
 Per informazioni dettagliate su quale passaggio del flusso di lavoro standard può essere utilizzato nel flusso di lavoro di post-elaborazione, vedi [passaggi del flusso di lavoro nel flusso di lavoro di post-elaborazione](developer-reference-material-apis.md#post-processing-workflows-steps) nella guida per gli sviluppatori.
 
