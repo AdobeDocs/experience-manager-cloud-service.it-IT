@@ -5,14 +5,14 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Distribuzione risorse,Configurazione
 role: Administrator
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9d219b8de11fd977dab4f75468836892cb13364a
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2409'
 ht-degree: 12%
 
 ---
 
-# Configura AEM Assets as a [!DNL Cloud Service] con Brand Portal {#configure-aem-assets-with-brand-portal}
+# Configurare AEM Assets as a [!DNL Cloud Service] con Brand Portal {#configure-aem-assets-with-brand-portal}
 
 La configurazione di Adobe Experience Manager Assets Brand Portal consente di pubblicare risorse di marchio approvate da Adobe Experience Manager Assets come istanza [!DNL Cloud Service] in Brand Portal e di distribuirle agli utenti Brand Portal.
 
@@ -61,7 +61,7 @@ Puoi attivare Brand Portal durante la creazione degli ambienti per l’istanza A
 >Se la configurazione cloud Brand Portal esistente e AEM Assets as a [!DNL Cloud Service] utilizzano la stessa organizzazione IMS (org1), è sufficiente attivare Brand Portal da Cloud Manager.
 
 **Consulta anche**:
-* [Aggiungere utenti e ruoli in AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+* [Aggiungere utenti e ruoli in AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en)
 
 * [Gestione degli ambienti in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
 
