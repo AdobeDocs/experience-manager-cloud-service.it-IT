@@ -4,9 +4,9 @@ description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Ass
 feature: Informazioni sulla versione
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 2b6e67503b212f0da0064e1955a82ccf7beaddea
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '967'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ Le rappresentazioni standard generate con i microservizi per le risorse vengono 
 
 ## Sviluppare e testare microservizi per le risorse {#asset-microservices}
 
-I microservizi per le risorse forniscono un’elaborazione scalabile e flessibile delle risorse tramite Cloud Services. Adobe gestisce i servizi cloud per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione. I microservizi per le risorse consentono di evitare la necessità di strumenti e metodi di rendering di terze parti (come ImageMagick) e di semplificare le configurazioni, fornendo al contempo funzionalità pronte all’uso per i tipi di file comuni. È ora possibile elaborare una [vasta gamma di tipi di file](/help/assets/file-format-support.md) che copre più formati pronti all&#39;uso rispetto a quanto è possibile con le versioni precedenti di Experience Manager. Ad esempio, è ora possibile estrarre le miniature dei formati PSD e PSB che in precedenza richiedevano soluzioni di terze parti come ImageMagick. Non è possibile utilizzare le configurazioni complesse di ImageMagick per la configurazione [!UICONTROL Profili di elaborazione]. Utilizza [!DNL Dynamic Media] per la transcodifica avanzata FFmpeg di video e utilizza i profili di elaborazione per [la transcodifica di base di video MP4](/help/assets/manage-video-assets.md#transcode-video).
+I microservizi per le risorse forniscono un’elaborazione scalabile e flessibile delle risorse tramite Cloud Services. Adobe gestisce i servizi cloud per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione. I microservizi per le risorse consentono di evitare la necessità di strumenti e metodi di rendering di terze parti (come [!DNL ImageMagick]) e di semplificare le configurazioni, fornendo al contempo funzionalità pronte all’uso per i tipi di file comuni. È ora possibile elaborare una [vasta gamma di tipi di file](/help/assets/file-format-support.md) che copre più formati pronti all&#39;uso rispetto a quanto è possibile con le versioni precedenti di Experience Manager. Ad esempio, è ora possibile estrarre le miniature dei formati PSD e PSB che in precedenza richiedevano soluzioni di terze parti come [!DNL ImageMagick]. Non è possibile utilizzare le configurazioni complesse di [!DNL ImageMagick] per la configurazione [!UICONTROL Profili di elaborazione]. Utilizza [!DNL Dynamic Media] per la transcodifica avanzata FFmpeg di video e utilizza i profili di elaborazione per [la transcodifica di base di video MP4](/help/assets/manage-video-assets.md#transcode-video).
 
 I microservizi per le risorse sono un servizio nativo per il cloud, fornito automaticamente e collegato a [!DNL Experience Manager] nei programmi e negli ambienti cliente gestiti in Cloud Manager. Per estendere o personalizzare [!DNL Experience Manager], gli sviluppatori possono utilizzare il contenuto o le risorse esistenti con rendering generati in un ambiente cloud, per testare e convalidare il codice utilizzando, visualizzando, scaricando risorse.
 
