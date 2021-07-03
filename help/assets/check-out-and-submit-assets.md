@@ -2,18 +2,17 @@
 title: Archiviare e estrarre i file in [!DNL Assets]
 description: Scopri come estrarre le risorse da modificare e archiviarle nuovamente al termine delle modifiche.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Gestione risorse
+role: User
+exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
-
-# Archiviare e estrarre i file in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
+# Archiviazione e estrazione dei file in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
 [!DNL Adobe Experience Manager Assets] consente di estrarre le risorse da modificare e di archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, puoi modificarla, annotarla, pubblicarla, spostarla o eliminarla. Il ritiro di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non ricontrolli la risorsa in [!DNL Assets]. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
 
