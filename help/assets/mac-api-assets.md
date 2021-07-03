@@ -3,16 +3,16 @@ title: API HTTP di Assets
 description: Crea, leggi, aggiorna, elimina, gestisci risorse digitali utilizzando l’API HTTP in [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: API HTTP di Assets, API
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] API HTTP  {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] API HTTP {#assets-http-api}
 
 ## Panoramica {#overview}
 
@@ -106,7 +106,7 @@ L&#39;API HTTP [!DNL Assets] include le seguenti funzionalità:
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 -->
 
-## Recupera un elenco di cartelle {#retrieve-a-folder-listing}
+## Recupera elenco cartelle {#retrieve-a-folder-listing}
 
 Recupera una rappresentazione Siren di una cartella esistente e delle relative entità secondarie (sottocartelle o risorse).
 
@@ -149,7 +149,7 @@ Una chiamata API non riesce con un codice di risposta `500` se il nodo principal
 
 Per informazioni su come creare una risorsa, consulta [Caricamento risorse](developer-reference-material-apis.md) . Non puoi creare una risorsa utilizzando l’API HTTP.
 
-## Aggiornare il binario di una risorsa {#update-asset-binary}
+## Aggiornare un binario di risorse {#update-asset-binary}
 
 Per informazioni su come aggiornare i file binari delle risorse, consulta [Caricamento risorse](developer-reference-material-apis.md) . Non è possibile aggiornare un binario di risorse utilizzando l’API HTTP.
 
@@ -197,7 +197,7 @@ Gli aggiornamenti sostituiscono rispettivamente il rendering di una risorsa con 
 * 412 - PRECONDIZIONE NON RIUSCITA - se non è possibile trovare o accedere alla raccolta radice.
 * 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro non funziona.
 
-## Aggiungi un commento a una risorsa {#create-an-asset-comment}
+## Aggiungere un commento a una risorsa {#create-an-asset-comment}
 
 **Parametri**: I parametri sono  `message` per il corpo del messaggio del commento e  `annotationData` per i dati di annotazione in formato JSON.
 
