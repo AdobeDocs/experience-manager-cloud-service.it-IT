@@ -3,9 +3,9 @@ title: Importare ed esportare in blocco i metadati delle risorse
 description: Questo articolo descrive come importare ed esportare i metadati in blocco.
 contentOwner: AG
 feature: Metadati
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 12%
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 AEM Assets consente di importare in blocco i metadati delle risorse utilizzando un file CSV. È possibile eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Puoi anche acquisire i metadati delle risorse in blocco da sistemi di terze parti in formato CSV.
 
-## Importa metadati {#import-metadata}
+## Importare metadati {#import-metadata}
 
 L’importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse, a causa dell’attività di write-back dei metadati tramite i microservizi per le risorse. L&#39;Adobe consiglia di pianificare qualsiasi operazione in blocco durante l&#39;utilizzo snello del server, in modo che le prestazioni per altri utenti non vengano influenzate.
 
