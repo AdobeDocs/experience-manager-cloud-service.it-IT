@@ -4,9 +4,9 @@ description: Scopri i tipi di metadati e come  [!DNL Adobe Experience Manager As
 contentOwner: AG
 mini-toc-levels: 1
 feature: Gestione risorse, metadati
-role: Business Practitioner,Architect,Administrator
+role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 3%
@@ -191,7 +191,7 @@ I metadati specifici dell&#39;applicazione includono metadati tecnici e descritt
 * PDF e PDF/X.
 * Photoshop e psAux - [!DNL Adobe Photoshop].
 
-### Metadati del Digital Rights Management {#digital-rights-management-metadata}
+### Metadati Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -215,12 +215,12 @@ I metadati specifici dell&#39;applicazione includono metadati tecnici e descritt
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - Metadati XMP per il testo di paging.
 
-### Metadati multimediali specifici {#multimedia-specific-metadata}
+### Metadati specifici per contenuti multimediali {#multimedia-specific-metadata}
 
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM` - Gestione dei supporti.
 
-## Flussi di lavoro basati su metadati {#metadata-driven-workflows}
+## Workflow basati su metadati {#metadata-driven-workflows}
 
 La creazione di flussi di lavoro basati su metadati consente di automatizzare alcuni processi, migliorando l’efficienza. In un flusso di lavoro basato su metadati, il sistema di gestione del flusso di lavoro legge il flusso di lavoro e, di conseguenza, esegue alcune azioni predefinite. Ad esempio, alcuni dei modi per utilizzare flussi di lavoro basati su metadati:
 
