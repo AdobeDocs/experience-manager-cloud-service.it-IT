@@ -3,9 +3,9 @@ title: Creare e gestire risorse digitali in più lingue
 description: Scopri come automatizzare i flussi di lavoro per la traduzione di risorse, inclusi binari, metadati e tag in più lingue.
 contentOwner: AG
 feature: Gestione risorse, traduzione
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2590'
 ht-degree: 24%
@@ -70,7 +70,7 @@ La copia per lingua per la quale hai originariamente aggiunto le risorse è la l
         |- zh
 ```
 
-Esegui i seguenti passaggi per preparare le risorse per la traduzione:
+Per preparare le risorse per la traduzione, effettua le seguenti operazioni:
 
 1. Creare la directory principale lingua della lingua primaria. Ad esempio, la directory principale della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è `/content/dam/en`. Assicurati che la directory principale della lingua sia configurata correttamente in base alle informazioni in [Crea una directory principale della lingua](#create-a-language-root).
 
@@ -87,7 +87,7 @@ Ad esempio, la pagina principale della copia in lingua italiana della gerarchia 
 1. Nel campo Nome digitare il codice del paese nel formato `<language-code>`.
 1. Tocca o fai clic su **[!UICONTROL Crea]**. La directory principale della lingua viene creata nella console Risorse.
 
-### Visualizza le radici della lingua {#view-language-roots}
+### Visualizzare le radici della lingua {#view-language-roots}
 
 L’interfaccia touch fornisce un pannello Riferimenti che mostra un elenco delle radici della lingua create in AEM Assets.
 
@@ -167,7 +167,7 @@ Se utilizzi questa opzione, il set di risorse viene aggiunto a un progetto di tr
 1. Tocca o fai clic su **[!UICONTROL Avvia]**.
 1. Per completare il resto della procedura, vedi i passaggi 9-14 di [Aggiungi al progetto di traduzione esistente](#add-to-existing-translation-project) .
 
-### Crea copie in lingua temporanea {#creating-temporary-language-copies}
+### Creare copie in lingua temporanea {#creating-temporary-language-copies}
 
 Quando esegui un flusso di lavoro di traduzione per aggiornare una copia in lingua con le versioni modificate delle risorse originali, la copia in lingua esistente viene conservata fino all’approvazione delle risorse tradotte. AEM Assets archivia le risorse appena tradotte in una posizione temporanea e aggiorna la copia in lingua esistente dopo che le risorse sono state esplicitamente approvate. Se si rifiutano le risorse, la copia in lingua rimane invariata.
 
@@ -232,7 +232,7 @@ Utilizza l’opzione **Crea solo struttura** per creare una gerarchia di cartell
 1. Tocca o fai clic su **[!UICONTROL Crea]**. La nuova struttura per la lingua di destinazione è elencata in **[!UICONTROL Copie per lingua]**.
 1. Tocca o fai clic sulla struttura dell’elenco, quindi tocca o fai clic su **[!UICONTROL Mostra in Assets]** per accedere alla struttura delle cartelle nella lingua di destinazione.
 
-## Applica servizi cloud di traduzione alle cartelle {#applying-translation-cloud-services-to-folders}
+## Applicazione di servizi cloud di traduzione alle cartelle {#applying-translation-cloud-services-to-folders}
 
 Adobe Experience Manager (AEM) consente di usufruire di servizi di traduzione basati su cloud dal provider di traduzione scelto per garantire che le risorse vengano tradotte in base alle tue esigenze.
 
