@@ -1,14 +1,13 @@
 ---
 title: Progetti
 description: I progetti consentono di raggruppare le risorse in un’entità con ambiente comune e condiviso, che semplifica la gestione dei progetti
-translation-type: tm+mt
-source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
+exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 77%
+source-wordcount: '1256'
+ht-degree: 76%
 
 ---
-
 
 # Progetti {#projects}
 
@@ -29,7 +28,7 @@ Consulta i seguenti argomenti aggiuntivi:
 
 * [Gestione dei progetti](/help/sites-cloud/authoring/projects/managing.md)
 * [Utilizzo delle attività](/help/sites-cloud/authoring/projects/tasks.md)
-* [Utilizzo dei flussi di lavoro del progetto](/help/sites-cloud/authoring/projects/workflows.md)
+* [Utilizzo dei flussi di lavoro per i progetti](/help/sites-cloud/authoring/projects/workflows.md)
 
 ## Console Progetti {#projects-console}
 
@@ -76,9 +75,9 @@ Come per le risorse, puoi aggiungere [raccolte di risorse](/help/assets/manage-c
 
 ![Raccolta risorse](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
-Aggiungi una raccolta facendo clic su **Aggiungi raccolta** e selezionando la raccolta appropriata dall&#39;elenco.
+Per aggiungere una raccolta, fai clic su **Aggiungi raccolta** e seleziona la raccolta appropriata dall’elenco.
 
-### Esperienze  {#experiences}
+### Esperienze {#experiences}
 
 La sezione **Esperienze** consente di aggiungere un’applicazione per dispositivi mobili, un sito web o una pubblicazione al progetto.
 
@@ -157,12 +156,12 @@ Le attività consentono di controllare lo stato di tutte le attività relative a
 AEM viene fornito con tre modelli diversi:
 
 * Un progetto semplice: un esempio di riferimento per tutti i progetti che non rientrano in altre categorie (un catch-all). Comprende tre ruoli di base (Proprietari, Editor e Osservatori) e quattro flussi di lavoro (Approvazione progetto, Richiedi lancio, Richiedi pagina di destinazione e Richiedi e-mail).
-* Un progetto multimediale: un progetto di esempio di riferimento per attività correlate ai contenuti multimediali. Include diversi ruoli di progetto relativi ai file multimediali (fotografi, editor, copywriter, designer, proprietari e osservatori). Inoltre, include due flussi di lavoro relativi al contenuto multimediale: Richiedi copia (per la richiesta e il controllo del testo) e Servizio fotografico per il prodotto (per la gestione delle fotografie del prodotto)
+* Un progetto multimediale: un progetto di esempio di riferimento per attività correlate ai contenuti multimediali. Include diversi ruoli di progetto relativi ai file multimediali (fotografi, editor, copywriter, designer, proprietari e osservatori). Richiede anche il flusso di lavoro Copia per richiedere e rivedere il testo.
 * Un [progetto di traduzione](/help/sites-cloud/administering/translation/overview.md) - Un esempio di riferimento per la gestione delle attività relative alla traduzione. Comprende tre ruoli di base (Proprietari, Editor e Osservatori). Include due flussi di lavoro a cui è possibile accedere nell’interfaccia utente Flussi di lavoro.
 
 In base al modello selezionato, sono disponibili diverse opzioni, in particolare riguardo ai ruoli dell’utente e ai flussi di lavoro.
 
-## Ruoli utente in un progetto  {#user-roles-in-a-project}
+## Ruoli utente in un progetto {#user-roles-in-a-project}
 
 I diversi ruoli dell’utente vengono impostati in un Modello di progetto e vengono utilizzati per due motivi principali:
 
@@ -174,7 +173,7 @@ Tutti i progetti supportano i seguenti ruoli predefiniti per consentire all’ut
 | Ruolo | Descrizione | Autorizzazioni | Iscrizione al gruppo |
 |---|---|---|---|
 | Osservatore | Un utente con questo ruolo può visualizzare le informazioni di progetto, tra cui lo stato del progetto. | Autorizzazioni di sola lettura per un progetto | `workflow-users` gruppo |
-| Editor | Un utente con questo ruolo può caricare e modificare il contenuto di un progetto. | Accesso in lettura e scrittura a un progetto, ai metadati associati e alle risorse correlate; privilegi per caricare un elenco di foto, un servizio fotografico e rivedere e approvare le risorse; autorizzazione scritta su /etc/commerce; modificare le autorizzazioni per un progetto specifico | gruppo degli utenti del flusso di lavoro |
+| Editor | Un utente con questo ruolo può caricare e modificare il contenuto di un progetto. | Accesso in lettura e scrittura a un progetto, ai metadati associati e alle risorse correlate; privilegi per caricare un elenco di foto e rivedere e approvare le risorse; autorizzazione scritta su /etc/commerce; modificare le autorizzazioni per un progetto specifico | gruppo degli utenti del flusso di lavoro |
 | Proprietario | Un utente con questo ruolo può avviare un progetto. Un proprietario può creare un progetto, avviare il lavoro in un progetto e spostare anche le risorse approvate nella cartella Produzione. Il proprietario può visualizzare ed eseguire anche tutte le altre attività del progetto. | Autorizzazioni di scrittura su `/etc/commerce` | `dam-users` gruppo (per poter creare un progetto) amministratori di progetto (per poter creare un progetto e spostare risorse) |
 
 >[!NOTE]
