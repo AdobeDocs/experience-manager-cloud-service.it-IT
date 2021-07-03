@@ -2,11 +2,10 @@
 title: Digital Rights Management in [!DNL Assets]
 description: Scopri come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager] come a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management,DRM
+feature: Gestione risorse, DRM
 role: Business Practitioner,Administrator
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 7%
@@ -17,7 +16,7 @@ ht-degree: 7%
 
 Le risorse digitali sono spesso associate a una licenza che specifica i termini e la durata dell’utilizzo. Poiché [!DNL Adobe Experience Manager Assets] è completamente integrato con la piattaforma [!DNL Experience Manager], puoi gestire in modo efficiente le informazioni sulla scadenza delle risorse e gli stati delle risorse. È inoltre possibile associare le informazioni sulle licenze alle risorse.
 
-## Scadenza risorsa {#asset-expiration}
+## Scadenza risorse {#asset-expiration}
 
 La scadenza delle risorse è un modo efficace per applicare i requisiti di licenza per le risorse. In questo modo la risorsa pubblicata viene annullata quando scade, evitando così la possibilità di eventuali violazioni della licenza. Un utente senza autorizzazioni di amministratore non può modificare, copiare, spostare, pubblicare e scaricare una risorsa scaduta.
 
@@ -33,7 +32,7 @@ Puoi visualizzare lo stato di scadenza di una risorsa nei seguenti punti:
 1. Scegli **[!UICONTROL Riferimenti]** dal menu .
 1. Per le risorse scadute, nella barra Riferimenti viene visualizzato lo stato di scadenza **[!UICONTROL Risorsa scaduta]** nella parte superiore. Se la risorsa è scaduta, nella barra Riferimenti viene visualizzato lo stato **[!UICONTROL Risorse secondarie scadute]**.
 
-### Cerca risorse scadute {#search-expired-assets}
+### Cercare risorse scadute {#search-expired-assets}
 
 Puoi cercare le risorse scadute, incluse le risorse secondarie scadute, nel pannello Ricerca.
 
