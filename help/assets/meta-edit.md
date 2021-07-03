@@ -2,16 +2,15 @@
 title: Come modificare o aggiungere metadati
 description: Scopri i metadati delle risorse in [!DNL Experience Manager Assets] e vari modi per modificare i metadati delle risorse.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Metadati
+role: User,Admin
+exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '423'
 ht-degree: 9%
 
 ---
-
 
 # Come modificare o aggiungere metadati {#how-to-edit-or-add-metadata}
 
