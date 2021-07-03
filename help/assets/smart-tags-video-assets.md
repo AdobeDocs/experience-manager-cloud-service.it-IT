@@ -2,10 +2,9 @@
 title: Assegnare tag avanzati alle risorse video
 description: Experience Manager aggiunge automaticamente tag avanzati contestuali e descrittivi ai video utilizzando [!DNL Adobe Sensei].
 feature: Tag avanzati, assegnazione tag
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-translation-type: tm+mt
-source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 0%
@@ -52,7 +51,7 @@ Per assegnare tag avanzati alle risorse video o alle cartelle (comprese le sotto
 
 Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa video all’interno della cartella. I tag aggiunti automaticamente vengono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base] . Questi tag avanzati applicati sono ordinati in ordine decrescente in [punteggio di affidabilità](#confidence-score-video-tag).
 
-## Cerca video con tag {#search-smart-tagged-videos}
+## Cercare video con tag {#search-smart-tagged-videos}
 
 Per cercare le risorse video in base agli smart tag generati automaticamente, utilizza [Omnisearch](search-assets.md#search-assets-in-aem):
 
@@ -66,7 +65,7 @@ I risultati della ricerca visualizzano le risorse video in base al tag specifica
 
 I risultati della ricerca sono una combinazione di risorse video con parole chiave cercate nei metadati e risorse video con tag avanzati con le parole chiave cercate. Tuttavia, i risultati di ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati di ricerca che corrispondono a qualsiasi termine di ricerca negli smart tag. Per ulteriori informazioni, consulta [Comprendere [!DNL Experience Manager] i risultati della ricerca con tag avanzati](smart-tags.md#understand-search).
 
-## Tag video avanzati moderati {#moderate-video-smart-tags}
+## Tag video moderati {#moderate-video-smart-tags}
 
 [!DNL Adobe Experience Manager] consente di curare gli smart tag in:
 
@@ -138,5 +137,5 @@ Per aggiungere la configurazione OSGI del punteggio di affidabilità al progetto
 >[!MORELIKETHIS]
 >
 >* [Gestione di tag avanzati e ricerche delle risorse](smart-tags.md#manage-smart-tags-and-searches)
->* [Addestra il servizio di tag avanzati e assegna tag alle tue immagini](smart-tags.md)
+* [Addestra il servizio di tag avanzati e assegna tag alle tue immagini](smart-tags.md)
 
