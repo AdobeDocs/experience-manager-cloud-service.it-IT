@@ -2,18 +2,17 @@
 title: Formati di file e tipi MIME supportati
 description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management,Renditions
-role: Business Practitioner,Administrator
+feature: Gestione risorse, rappresentazioni
+role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 10%
 
 ---
 
-# [!DNL Assets] formati di file supportati  {#supported-file-formats}
+# [!DNL Assets] formati di file supportati {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service] supporta funzionalità di base per la gestione dei contenuti - archiviazione, gestione dei metadati online, controllo delle versioni, caricamento e download e così via - per qualsiasi file binario, indipendentemente dal formato. [!DNL Adobe Experience Manager Assets] supporta un’ampia gamma di formati di file e ogni funzionalità di prodotto supporta diversi formati.
 
@@ -107,7 +106,7 @@ Consulta anche [Utilizzo di risorse 3D in Dynamic Media](/help/assets/dynamic-me
 | STL | . | . | . | . | . | - | . | . |
 | USDz | . | . | . | . | . | - | - | . |
 
-## [!DNL Camera RAW] formati  {#camera-raw-formats}
+## [!DNL Camera RAW] formati {#camera-raw-formats}
 
 | Formato file | Generazione di miniature | Estrazione di metadati | Larghezza/Altezza |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -139,7 +138,7 @@ Consulta anche [Utilizzo di risorse 3D in Dynamic Media](/help/assets/dynamic-me
 | SRW | . | . | . |
 | X3F | . | . | . |
 
-## Formati di documenti {#document-formats}
+## Formati documento {#document-formats}
 
 I formati di documento supportati per le funzioni di gestione delle risorse sono i seguenti.
 
@@ -233,5 +232,5 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 >[!MORELIKETHIS]
 >
 >* [Elaborazione delle risorse tramite i microservizi per le risorse](asset-microservices-overview.md)
->* [Formati di file supportati per l’assegnazione di tag avanzati alle risorse basate su testo](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+* [Formati di file supportati per l’assegnazione di tag avanzati alle risorse basate su testo](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
