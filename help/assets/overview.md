@@ -2,22 +2,21 @@
 title: Introduzione alle risorse come a [!DNL Cloud Service]
 description: Novità in Assets come [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management
+feature: Gestione risorse
 role: Business Practitioner,Leader,Architect
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
-
 
 # Introduzione alle risorse come [!DNL Cloud Service] {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
-Adobe Experience Manager Assets as a [!DNL Cloud Service] offre alle aziende una soluzione PaaS nativa per il cloud, che consente loro non solo di eseguire le operazioni di gestione delle risorse digitali e Dynamic Media in modo rapido ed efficace, ma anche di utilizzare funzionalità avanzate di nuova generazione, come AI/ML, dall’interno di un sistema sempre attuale, sempre disponibile e sempre in grado di apprendere.
+Adobe Experience Manager Assets as a [!DNL Cloud Service] offre una soluzione nativa per il cloud, che consente alle aziende di eseguire non solo le operazioni di gestione delle risorse digitali e Dynamic Media con velocità e impatto, ma anche di utilizzare funzionalità avanzate di nuova generazione, come AI/ML, dall’interno di un sistema sempre attuale, sempre disponibile e sempre in grado di apprendere.
 
 L’assimilazione simultanea di molte risorse o risorse complesse richiede un’attività ad alta intensità di risorse per un’istanza di AEM Author. L’istanza primaria consuma notevoli risorse di CPU, memoria e I/O quando le risorse vengono aggiunte, elaborate o persino migrate. Tali problemi di prestazioni influiscono sull’esperienza di authoring e navigazione degli utenti finali.
 
