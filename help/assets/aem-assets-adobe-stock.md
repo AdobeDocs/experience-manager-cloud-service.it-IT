@@ -2,11 +2,10 @@
 title: 'Gestisci le risorse in [!DNL Assets]. [!DNL Adobe Stock] '
 description: Cerca, recupera, rilascia la licenza e gestisci le risorse [!DNL Adobe Stock] dall’interno di [!DNL Adobe Experience Manager]. Utilizza le risorse con licenza come qualsiasi altra risorsa digitale.
 contentOwner: AG
-feature: Search,Adobe Stock
-role: Administrator,Business Practitioner
+feature: Ricerca,Adobe Stock
+role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-translation-type: tm+mt
-source-git-commit: 0da8eb0eac0c58b5212aa264c9042523460e474e
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 5%
@@ -82,7 +81,7 @@ In alternativa, inizia a digitare `Location: Adobe Stock` nella barra di ricerca
 
 *Figura: Ricerca filtri  [!DNL Experience Manager] e  [!DNL Adobe Stock] risorse evidenziate nei risultati della ricerca.*
 
-### Salva e visualizza le risorse richieste {#saveassets}
+### Salvare e visualizzare le risorse richieste {#saveassets}
 
 Seleziona una risorsa da salvare in [!DNL Experience Manager]. Fai clic su [!UICONTROL Salva] nella barra degli strumenti nella parte superiore e fornisci il nome e la posizione della risorsa. Le risorse senza licenza vengono salvate localmente con una filigrana.
 
@@ -100,7 +99,7 @@ Gli utenti possono concedere in licenza le risorse [!DNL Adobe Stock] utilizzand
 
 *Figura: Finestra di dialogo per concedere in licenza e salvare  [!DNL Adobe Stock] le risorse in  [!DNL Experience Manager Assets].*
 
-### Accedere ai metadati e alle proprietà delle risorse {#access-metadata-and-asset-properties}
+### Accedere a metadati e proprietà delle risorse {#access-metadata-and-asset-properties}
 
 Gli utenti possono accedere ai metadati e visualizzarli in anteprima, comprese le proprietà dei metadati [!DNL Adobe Stock] per le risorse salvate in [!DNL Experience Manager], e aggiungere **[!UICONTROL Riferimenti di licenza]** per una risorsa. Tuttavia, gli aggiornamenti al riferimento di licenza non vengono sincronizzati tra il sito web [!DNL Experience Manager] e [!DNL Adobe Stock].
 
