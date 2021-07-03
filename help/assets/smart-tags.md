@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Tag avanzati, assegnazione tag
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+source-git-commit: 4654706865c6f6511ac2893370db3424b20797cc
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2346'
 ht-degree: 6%
 
 ---
@@ -63,7 +63,7 @@ Puoi assegnare i tag ai seguenti tipi di risorse:
 
 ## Comprendere i modelli e le linee guida dei tag {#understand-tag-models-guidelines}
 
-Un modello di tag è un gruppo di tag correlati associati a vari aspetti visivi delle immagini a cui viene applicato un tag. I tag si riferiscono a diversi aspetti visivi delle immagini, in modo che, se applicati, i tag contribuiscano alla ricerca di specifici tipi di immagini. Ad esempio, una raccolta di scarpe può avere tag diversi, ma tutti i tag sono correlati alle scarpe e possono appartenere allo stesso modello di tag. Se applicati, i tag consentono di trovare diversi tipi di scarpe, ad esempio per colore, design o per uso. Per comprendere la rappresentazione dei contenuti di un modello di formazione in [!DNL Experience Manager], visualizza un modello di formazione come entità di livello superiore composta da un gruppo di tag aggiunti manualmente e immagini di esempio per ciascun tag. Ogni tag può essere applicato esclusivamente a un’immagine.
+Un modello di tag è un gruppo di tag correlati associati a vari aspetti visivi delle immagini a cui viene applicato un tag. I tag si riferiscono a diversi aspetti visivi delle immagini, in modo che, se applicati, i tag contribuiscano alla ricerca di specifici tipi di immagini. Ad esempio, una raccolta di scarpe può avere tag diversi, ma tutti i tag sono correlati alle scarpe e possono appartenere allo stesso modello di tag. Quando applicati, i tag consentono di trovare diversi tipi di scarpe, ad esempio per progettazione o per uso. Per comprendere la rappresentazione dei contenuti di un modello di formazione in [!DNL Experience Manager], visualizza un modello di formazione come entità di livello superiore composta da un gruppo di tag aggiunti manualmente e immagini di esempio per ciascun tag. Ogni tag può essere applicato esclusivamente a un’immagine.
 
 Prima di creare un modello di tag e di addestrare il servizio, identifica un set di tag univoci che descrivono al meglio gli oggetti contenuti nelle immagini nel contesto della tua attività. Assicurati che le risorse nel set curato siano conformi alle [linee guida di formazione](#training-guidelines).
 
@@ -100,7 +100,6 @@ Assicurati che le immagini del set di addestramento siano conformi alle seguenti
 * Creare un modello di tag che includa solo:
 
    * I tag relativi ai modelli di auto.
-   * I tag relativi ai colori delle camicie.
    * I tag relativi alle giacche per donne e uomini.
 
 * Non creare,
