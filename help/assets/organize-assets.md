@@ -2,16 +2,15 @@
 title: Organizzare le risorse digitali
 description: Organizza le risorse digitali utilizzando vari metodi disponibili in Risorse Adobe Experience Manager.
 contentOwner: AG
-feature: Asset Management,Tagging,Asset Distribution
+feature: Gestione risorse, assegnazione tag, distribuzione risorse
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 2%
+source-wordcount: '450'
+ht-degree: 1%
 
 ---
-
 
 # Organizzare le risorse digitali {#organize-digital-assets}
 
@@ -19,7 +18,7 @@ Tutte le risorse digitali, i metadati e il contenuto di Microsoft Office e i doc
 
 AEM Assets supporta diversi modi per organizzare i contenuti. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag. Gli utenti possono modificare i tag nell’editor risorse DAM in cui vengono visualizzate risorse secondarie, rappresentazioni e metadati.
 
-## Crea cartelle {#create-folders}
+## Creare cartelle {#create-folders}
 
 Quando organizzi una raccolta di risorse, ad esempio tutte le immagini *Natura*, puoi creare cartelle per mantenerle intatte. Puoi utilizzare le cartelle per suddividere in categorie e organizzare le risorse. AEM Assets non richiede di organizzare le risorse nelle cartelle per funzionare meglio.
 
