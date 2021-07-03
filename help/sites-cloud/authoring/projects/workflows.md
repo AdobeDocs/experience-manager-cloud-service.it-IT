@@ -1,14 +1,13 @@
 ---
 title: Utilizzo dei flussi di lavoro per i progetti
 description: La soluzione offre diversi flussi di lavoro per progetti già pronti all’uso.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 78%
+source-wordcount: '542'
+ht-degree: 77%
 
 ---
-
 
 # Utilizzo dei flussi di lavoro per i progetti {#working-with-project-workflows}
 
@@ -25,7 +24,6 @@ A seconda del modello di progetto selezionato, hai determinati flussi di lavoro 
 |  | **Progetto semplice** | **Progetto multimediale** | **Progetto di traduzione** |
 |---|:-:|:-:|:-:|
 | Richiedi copia |  | x |  |
-| Servizio fotografico per prodotto |  | x |  |
 | Approvazione del progetto | x |  |  |
 | Richiedi lancio | x |  |  |
 | Richiedi pagina di destinazione | x |  |  |
@@ -41,7 +39,7 @@ I passaggi per avviare e completare i flussi di lavoro sono sempre gli stessi, i
 
 Puoi avviare un flusso di lavoro direttamente da Progetti (eccetto Crea copia per lingua DAM e Crea e traduci copia DAM). Le informazioni relative a tutte le operazioni in sospeso di un progetto sono elencate nella sezione **Attività**. Le notifiche per le attività che devono essere completate appaiono accanto all&#39;icona utente.
 
-Per ulteriori informazioni sulle operazioni con i flussi di lavoro in AEM, consulta:
+Per ulteriori informazioni sulle operazioni con i flussi di lavoro in AEM, consulta quanto segue:
 
 * [Partecipare ai flussi di lavoro](/help/sites-cloud/authoring/workflows/participating.md)
 * [Applicazione dei flussi di lavoro alle pagine](/help/sites-cloud/authoring/workflows/applying.md)
