@@ -3,10 +3,9 @@ title: Profili metadati
 description: Informazioni sui profili di metadati per le risorse. Scopri come creare un profilo di metadati e applicarlo alle risorse delle cartelle.
 contentOwner: AG
 feature: Metadati
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-translation-type: tm+mt
-source-git-commit: 7ad68c071d9a4089ec8612a3c55067dc0b072fc8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1236'
 ht-degree: 20%
@@ -79,7 +78,7 @@ Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visuali
 
 Puoi rielaborare le risorse in una cartella che dispone già di un profilo video esistente che hai successivamente modificato. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
-#### Applicare profili di metadati alle cartelle dall&#39;interfaccia utente Profili {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+#### Applicare profili di metadati alle cartelle dall’interfaccia utente Profili {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 1. Passa a **[!UICONTROL Strumenti > Risorse > Profili metadati]**.
 1. Seleziona il profilo di metadati da applicare a una o più cartelle.
