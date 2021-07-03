@@ -3,9 +3,9 @@ title: Distribuire e condividere risorse, cartelle e raccolte
 description: Distribuisci le risorse digitali utilizzando metodi come condivisione come collegamento, download e tramite [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
 feature: Gestione risorse, collaborazione, distribuzione delle risorse
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 2%
@@ -108,7 +108,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## Scaricare e condividere risorse {#download-and-share-assets}
+## Scaricare e condividere le risorse {#download-and-share-assets}
 
 Gli utenti possono scaricare le risorse richieste e condividerle al di fuori di [!DNL Experience Manager]. Per ulteriori informazioni, consulta [come cercare le risorse](/help/assets/search-assets.md), [come scaricare le risorse](/help/assets/download-assets-from-aem.md) e [come scaricare le raccolte](manage-collections.md#download-a-collection)
 
@@ -124,7 +124,7 @@ Gli addetti al marketing e gli utenti della linea di business possono condivider
 
 Le diverse opzioni per la condivisione delle risorse richiedono una configurazione specifica e dispongono di prerequisiti specifici.
 
-### Configurare la condivisione dei collegamenti alle risorse {#asset-link-sharing}
+### Configurare la condivisione dei collegamenti delle risorse {#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
