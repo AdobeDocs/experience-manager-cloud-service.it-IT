@@ -3,9 +3,9 @@ title: Accessibilità in [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aiutano gli utenti con disabilità.
 contentOwner: AG
 feature: Accessibilità, gestione delle risorse
-role: Business Practitioner,Architect,Leader
+role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 2%
@@ -56,7 +56,7 @@ Gli utenti disabili spesso si affidano a hardware e software per accedere ai con
 * Hardware di supporto, compresi i comandi di switch, display Braille aggiornabili e altri dispositivi di input del computer.
 * Strumenti di ingrandimento dell’interfaccia utente.
 
-## [!DNL Experience Manager Assets] casi d’uso accessibili  {#accessible-assets-use-cases}
+## [!DNL Experience Manager Assets] casi d’uso accessibili {#accessible-assets-use-cases}
 
 In [!DNL Experience Manager], le funzioni di accessibilità soddisfano due requisiti chiave degli utenti [!DNL Experience Manager] e dei loro clienti.
 
@@ -65,7 +65,7 @@ In [!DNL Experience Manager], le funzioni di accessibilità soddisfano due requi
 
 Le funzioni di base di [!DNL Assets] sono più accessibili che in passato e vengono regolarmente aggiornate per migliorare la conformità agli standard globali. Le operazioni CRUD in [!DNL Assets] hanno un certo grado di accessibilità integrato in quelle. I flussi di lavoro DAM come l’aggiunta, la gestione, la ricerca e la distribuzione delle risorse sono accessibili tramite scelte rapide da tastiera, testo per assistenti vocali, contrasto del colore e così via.
 
-## Supporto per l&#39;uso della tastiera {#keyboard-use}
+## Supporto per l’uso della tastiera {#keyboard-use}
 
 È inoltre possibile utilizzare la tastiera per utilizzare molti elementi dell’interfaccia utente cliccabili o utilizzabili con un puntatore. Utilizzando una tastiera, gli utenti possono concentrarsi sugli elementi dell’interfaccia utente e intraprendere un’azione appropriata. Gli utenti possono utilizzare direttamente le scelte rapide da tastiera per attivare un comando o un’azione senza doversi concentrare sugli elementi dell’interfaccia utente e attivarli utilizzando la tastiera. Ad esempio, gli utenti possono aprire la timeline di una risorsa sul lato sinistro navigando nel controllo dell’interfaccia utente tramite tastiera, selezionando `Return` e `Alt + 2` facendo clic sulle scelte rapide da tastiera.
 
@@ -147,7 +147,7 @@ Quando esplori l’archivio delle risorse, le seguenti funzionalità migliorano 
 * L&#39;utilizzo del tasto `Esc` per rimuovere le icone delle azioni rapide dalla visualizzazione miniatura non rimuove lo stato attivo dall&#39;ultimo elemento attivo.
 * Con una risorsa selezionata, selezionando `Alt + 4` scelte rapide da tastiera si apre l’elenco [!UICONTROL Riferimenti] nella barra a sinistra. Utilizzando la chiave `Tab`, gli utenti possono navigare tra le voci di riferimento diverse da zero. La navigazione solo attraverso le voci di riferimento diverse da zero consente di risparmiare fatica e tasti.
 * I commenti su una risorsa sono disponibili nella timeline della risorsa. È accessibile se si accede alla barra a sinistra utilizzando una tastiera o una scelta rapida da tastiera.
-* [!UICONTROL Le ] impostazioni di visualizzazione  [!DNL Experience Manager] sono accessibili da tastiera. Gli utenti possono navigare tra le dimensioni delle schede disponibili utilizzando i tasti freccia, quindi selezionare e spostarsi tra le varie dimensioni per navigare tra i vari elementi nella vista Impostazioni visualizzazione esistente e impostarne altri.
+* [!UICONTROL Le ] impostazioni di visualizzazione  [!DNL Experience Manager] sono accessibili da tastiera. Gli utenti possono navigare tra le dimensioni delle schede disponibili utilizzando i tasti freccia e selezionare e spostarsi tra le varie schede per navigare tra i vari elementi nella vista Impostazioni visualizzazione esistente e impostarli.
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 
