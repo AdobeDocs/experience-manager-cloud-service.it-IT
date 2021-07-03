@@ -3,20 +3,20 @@ title: Riferimenti per sviluppatori per [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 feature: API,API HTTP di Assets
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 9d0fbffa0f66deb230a85fa8d09f9f3be45db3f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 2%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] casi d’uso, API e materiale di riferimento per sviluppatori  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] casi d’uso, API e materiale di riferimento per sviluppatori {#assets-cloud-service-apis}
 
 L’articolo contiene raccomandazioni, materiali di riferimento e risorse per gli sviluppatori di [!DNL Assets] come [!DNL Cloud Service]. Include un nuovo modulo di caricamento delle risorse, riferimenti API e informazioni sul supporto fornito nei flussi di lavoro di post-elaborazione.
 
-## [!DNL Experience Manager Assets] API e operazioni  {#use-cases-and-apis}
+## [!DNL Experience Manager Assets] API e operazioni {#use-cases-and-apis}
 
 [!DNL Assets] as a  [!DNL Cloud Service] fornisce diverse API per interagire in modo programmatico con le risorse digitali. Ciascuna API supporta casi d’uso specifici, come indicato nella tabella seguente. L’ [!DNL Assets] interfaccia utente, l’ [!DNL Experience Manager] app desktop e [!DNL Adobe Asset Link] supportano tutte o parte delle operazioni.
 
@@ -85,7 +85,7 @@ L’approccio fornisce una gestione scalabile e più performante del caricamento
 >[!NOTE]
 Vedi il codice client per implementare questo approccio nella libreria open-source [aem-upload](https://github.com/adobe/aem-upload).
 
-### Avviare il caricamento {#initiate-upload}
+### Avvia caricamento {#initiate-upload}
 
 Invia una richiesta HTTP POST alla cartella desiderata. Le risorse vengono create o aggiornate in questa cartella. Includi il selettore `.initiateUpload.json` per indicare che la richiesta è quella di avviare il caricamento di un file binario. Ad esempio, il percorso della cartella in cui deve essere creata la risorsa è `/assets/folder`. La richiesta POST è `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
@@ -158,7 +158,7 @@ Il processo di caricamento di un binario non viene eseguito finché non viene ri
 
 In caso di esito positivo, il server risponde con un codice di stato `200`.
 
-### Libreria di caricamento open source {#open-source-upload-library}
+### Libreria di caricamento open-source {#open-source-upload-library}
 
 Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e strumenti di caricamento personalizzati, Adobe fornisce librerie e strumenti open source:
 
