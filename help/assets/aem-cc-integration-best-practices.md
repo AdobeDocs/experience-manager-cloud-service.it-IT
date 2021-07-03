@@ -3,11 +3,10 @@ title: Best practice per l’integrazione con [!DNL Adobe Creative Cloud]
 description: Le best practice integrano un’implementazione Experience Manager con Adobe Creative Cloud per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere la massima efficienza.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collaboration,Adobe Asset Link,Desktop App
-role: Architect,Business Practitioner,Administrator
+feature: Collaborazione, Adobe Asset Link, App desktop
+role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-translation-type: tm+mt
-source-git-commit: 522d0363c0207afbed2c51e9d54d921ce9b66c70
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '3300'
 ht-degree: 18%
@@ -94,7 +93,7 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, è necessar
 * **Creative user (Utente creativo):** un professionista che crea risorse digitali utilizzando le app e i servizi Creative Cloud. In alcuni casi, è possibile che un utente creativo sia membro di un team creativo che utilizza Creative Cloud, ma che non crea risorse digitali, ad esempio un direttore creativo o un manager del team creativo.
 * **DAM user (Utente DAM)**: utente tipico di un sistema DAM. A seconda dell’organizzazione, un utente DAM può essere di marketing o non, come un utente Line-of-Business (LOB), un bibliotecario, un venditore e così via.
 
-### Considerazioni sull&#39;utilizzo dell&#39;integrazione di AEM e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
+### Considerazioni sull’utilizzo dell’integrazione AEM e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
 <!--incomplete and TBD: 
 
@@ -189,7 +188,7 @@ Utilizza le seguenti strategie per fornire accesso alle risorse finali/approvate
 * Utilizza un&#39;implementazione personalizzata di un portale di distribuzione e determinazione origine basata su [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilizza il Controllo accessi impostato nell&#39;infrastruttura di rete AEM e necessaria (ad esempio, l&#39;inserimento di VPN e IP nell&#39;elenco Consentiti) per consentire a parti esterne di accedere a un&#39;area dedicata di contenuto nel tuo DAM. Possono utilizzare AEM&#39;interfaccia utente Web per ottenere risorse e caricare nuovi contenuti nel DAM.
 
-#### Lavoro in corso sulle risorse da AEM {#work-in-progress-on-assets-from-aem}
+#### Lavori in corso sulle risorse di AEM {#work-in-progress-on-assets-from-aem}
 
 Come descritto in questo documento, si consiglia di eseguire aggiornamenti importanti sulle risorse, talvolta denominati work in progress, senza che tutte le modifiche salvate nel file locale vengano caricate in AEM come modifiche. Questo consente di velocizzare il lavoro dell’utente desktop, limitare l’ampiezza di banda utilizzata e mantenere pulita la timeline delle risorse e concentrarsi su aggiornamenti principali controllati.
 
