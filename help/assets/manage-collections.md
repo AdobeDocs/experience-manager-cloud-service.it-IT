@@ -3,16 +3,15 @@ title: Gestire le raccolte di risorse digitali
 description: Comprendi il concetto di raccolta in Adobe Experience Manager Assets. Scopri come raccogliere, gestire, modificare e raccogliere con altri utenti.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collections,Asset Management
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Raccolte, Gestione risorse
+role: User
+exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '2402'
-ht-degree: 20%
+source-wordcount: '2400'
+ht-degree: 19%
 
 ---
-
 
 # Gestire le raccolte {#manage-collections}
 
@@ -28,7 +27,7 @@ Le raccolte sono dei tipi seguenti, in base alla modalità di raccolta delle ris
 
 * Una raccolta avanzata che include in modo dinamico le risorse in base a un criterio di ricerca.
 
-## Accedi alla console Raccolte {#navigate-the-collections-console}
+## Accedere alla console Raccolte {#navigate-the-collections-console}
 
 Per aprire la console **[!UICONTROL Raccolte]**:
 
@@ -60,7 +59,7 @@ Puoi creare una raccolta con riferimenti statici, ad esempio una raccolta con ri
 
    Per aggiungere risorse alla raccolta, passa all’interfaccia utente Assets. Per informazioni dettagliate, consulta [Aggiungere risorse a una raccolta](#add-assets-to-a-collection).
 
-### Creare raccolte utilizzando la zona di rilascio {#create-collections-using-dropzone}
+### Creare raccolte con zona di rilascio {#create-collections-using-dropzone}
 
 Puoi trascinare le risorse dall’interfaccia utente di Assets in una raccolta. Puoi anche creare una copia di una raccolta e trascinarvi le risorse.
 
@@ -122,7 +121,7 @@ I metadati della raccolta includono dati sulla raccolta, compresi eventuali tag 
 1. Nella pagina **[!UICONTROL Metadati raccolta]**, seleziona le schede **[!UICONTROL Base]** e **Avanzate** per visualizzare i metadati della raccolta.
 1. Modifica i metadati, se necessario, quindi tocca o fai clic su **[!UICONTROL Salva e chiudi]** nella barra degli strumenti per salvare le modifiche.
 
-### Modifica i metadati della raccolta in blocco {#edit-collection-metadata-in-bulk}
+### Modifica in blocco i metadati della raccolta {#edit-collection-metadata-in-bulk}
 
 Puoi modificare i metadati di più raccolte contemporaneamente. Questa funzionalità consente di replicare rapidamente i metadati comuni in più raccolte.
 
@@ -152,7 +151,7 @@ Nella console Raccolte, tocca o fai clic su una raccolta per aprirla.
 
 All&#39;interno di una raccolta, la ricerca [!DNL Experience Manager] è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che stai visualizzando. Quando esegui una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle secondarie corrispondenti all’interno della cartella corrente. Quando esegui una ricerca all’interno di una raccolta, vengono restituite solo le risorse, le cartelle e le altre raccolte corrispondenti ai membri diretti della raccolta.
 
-## Modifica impostazioni raccolta {#edit-collection-settings}
+## Modificare le impostazioni della raccolta {#edit-collection-settings}
 
 È possibile modificare le impostazioni della raccolta, ad esempio titolo e descrizione, o aggiungere membri a una raccolta.
 
@@ -169,7 +168,7 @@ All&#39;interno di una raccolta, la ricerca [!DNL Experience Manager] è limitat
    >
    >È inoltre possibile eliminare le raccolte avanzate [eliminando le ricerche salvate](#saved-searches).
 
-## Scarica una raccolta {#download-a-collection}
+## Scaricare una raccolta {#download-a-collection}
 
 Quando scarichi una raccolta, viene scaricata l’intera gerarchia delle risorse all’interno della raccolta, incluse le cartelle e le raccolte secondarie.
 
@@ -179,7 +178,7 @@ Quando scarichi una raccolta, viene scaricata l’intera gerarchia delle risorse
 
    Quando selezioni una raccolta da scaricare, viene scaricata la gerarchia completa delle cartelle sotto la raccolta. Per includere ogni raccolta scaricata (incluse le risorse nelle raccolte secondarie nidificate sotto la raccolta principale) in una singola cartella, seleziona **[!UICONTROL Crea una cartella separata per ogni risorsa]**.
 
-## Modifica le proprietà dei metadati di più raccolte {#editing-metadata-properties-of-multiple-collections}
+## Modifica delle proprietà dei metadati di più raccolte {#editing-metadata-properties-of-multiple-collections}
 
 Adobe Enterprise Manager Assets consente di modificare i metadati di molte raccolte in blocco. Utilizza la pagina [!UICONTROL Proprietà] per eseguire modifiche ai metadati su più raccolte, ad esempio, modifica le proprietà dei metadati in un valore comune o aggiungi o modifica tag.
 
@@ -245,7 +244,7 @@ Per eliminare le ricerche salvate, effettua le seguenti operazioni:
 1. Nell’elenco **[!UICONTROL Ricerche salvate]**, tocca o fai clic su **[!UICONTROL Elimina]** accanto alla raccolta avanzata da eliminare.
 1. Nella finestra di dialogo, tocca o fai clic su **[!UICONTROL Elimina]** per eliminare la ricerca salvata.
 
-## Eseguire un flusso di lavoro su una raccolta {#run-a-workflow-on-a-collection}
+## Esecuzione di un flusso di lavoro su una raccolta {#run-a-workflow-on-a-collection}
 
 Puoi eseguire un flusso di lavoro per le risorse all’interno di una raccolta. Se la raccolta contiene raccolte nidificate, il flusso di lavoro viene eseguito anche sulle risorse all’interno delle raccolte nidificate. Tuttavia, se la raccolta e la raccolta nidificata contengono risorse duplicate, il flusso di lavoro viene eseguito una sola volta per tali risorse.
 
