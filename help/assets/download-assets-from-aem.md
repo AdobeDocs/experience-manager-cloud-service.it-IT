@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Gestione risorse
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -66,17 +66,19 @@ Per scaricare le risorse, effettua le seguenti operazioni:
 
 1. Nella finestra di dialogo, fai clic su **[!UICONTROL Scarica]**.
 
-<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
-## Download assets shared using link sharing {#link-share-download}
+## Scaricare le risorse condivise tramite la condivisione dei collegamenti {#link-share-download}
 
-Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
+>[!NOTE]
+>
+>Questa funzionalità è disponibile nel canale prerelease di Experience Manager.
 
-When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
+La condivisione di risorse tramite un collegamento è un modo conveniente per renderle disponibili alle persone interessate senza che queste debbano prima accedere a [!DNL Assets]. Per generare un URL per la condivisione delle risorse, utilizza la funzionalità [Condivisione collegamenti](/help/assets/share-assets.md#sharelink).
 
-The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
+Quando gli utenti scaricano le risorse dai collegamenti condivisi, [!DNL Assets] utilizza un servizio asincrono che offre download più rapidi e ininterrotti. Le risorse da scaricare vengono messe in coda in background in una casella in entrata in archivi ZIP di dimensioni file gestibili. Per i download di grandi dimensioni, il download viene suddiviso in file di dimensioni pari a 100 GB.
 
-![Download inbox](assets/download-inbox.png)
--->
+Nella casella in entrata viene visualizzato lo stato di elaborazione di ciascun archivio. Una volta completata l’elaborazione, puoi scaricare gli archivi dalla casella in entrata.
+
+![Scarica casella in entrata](assets/download-inbox.png)
 
 ## Abilita il servlet di download delle risorse {#enable-asset-download-servlet}
 
