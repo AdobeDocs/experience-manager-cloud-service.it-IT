@@ -5,9 +5,9 @@ breadcrumb-title: Guida all’implementazione
 user-guide-description: Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione.
 feature: Strumenti per gli sviluppatori
 role: Developer, Architect
-source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
+source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '885'
 ht-degree: 34%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 34%
    + [Registrazione](developing/introduction/logging.md)
    + [Configurazioni e browser di configurazione](developing/introduction/configurations.md)
    + [Fondamenti tecnici AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [API di AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
+   + [Materiali di riferimento API](/help/implementing/developing/reference-materials.md)
    + [Generazione dei token di accesso per le API lato server](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Cefalea e senza testa in AEM](developing/headful-headless.md)
    + Sviluppo AEM stack completo {#full-stack}
@@ -103,7 +103,6 @@ ht-degree: 34%
          + [Implementazione di un valutatore del predicato personalizzato](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Pagine di errore personalizzate](/help/implementing/developing/introduction/custom-error-page.md)
       + [Tipi di nodo AEM](/help/implementing/developing/introduction/node-types.md)
-      + [Linee guida per le API Java](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Gestione delle esperienze headless {#headless}
       + [Senza testa e AEM](developing/headless/introduction.md)
       + [Percorso per sviluppatori headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
