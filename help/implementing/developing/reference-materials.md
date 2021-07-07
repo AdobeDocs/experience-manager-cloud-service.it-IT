@@ -1,9 +1,9 @@
 ---
 title: Materiali di riferimento API
 description: AEM dispone di API estese e potenti che puoi sfruttare per il tuo progetto di esperienza digitale.
-source-git-commit: 4134d87ca40f7834605c7d3496f05ef80fbab554
+source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '665'
 ht-degree: 4%
 
 ---
@@ -58,15 +58,15 @@ Se un’API è fornita da AEM, preferiscila rispetto a Sling, JCR e OSGi. Se AEM
 
 AEM offre componenti personalizzabili e opzioni di distribuzione dei contenuti.
 
-| API | Descrizione |
+| Funzione obsoleta | Descrizione |
 |---|---|
 | [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) | Componenti WCM (Web Content Management) standardizzati per AEM per velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti web |
 | [Esportatore JSON](/help/implementing/developing/components/json-exporter.md) | Consegnare il contenuto di qualsiasi pagina AEM in formato modello dati JSON |
 | [Abilitazione dell’esportazione JSON per un componente](/help/implementing/developing/components/enabling-json-exporter.md) | Generare l’esportazione JSON del contenuto di componenti in base a un framework di modelli |
-| [Assets](/help/assets/mac-api-assets.md) | Consente operazioni di creazione-lettura-aggiornamento-eliminazione (CRUD) sulle risorse, tra cui file binari, metadati, rappresentazioni e commenti. Consulta API HTTP AEM Assets |
-| [HTTP Frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md) | Accedere ai contenuti dei frammenti di contenuto direttamente tramite l’API HTTP tramite operazioni CRUD |
-| [Grafico a frammento di contenutoQL](/help/assets/content-fragments/graphql-api-content-fragments.md) | Consentire la distribuzione efficiente di frammenti di contenuto ai client JavaScript in implementazioni CMS headless |
-| [HTTP delle risorse per i frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato esatto delle richieste di risorse HTTP supportate |
+| [API di Assets](/help/assets/mac-api-assets.md) | Consente operazioni di creazione-lettura-aggiornamento-eliminazione (CRUD) sulle risorse, tra cui file binari, metadati, rappresentazioni e commenti. Consulta API HTTP AEM Assets |
+| [API HTTP per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md) | Accedere ai contenuti dei frammenti di contenuto direttamente tramite l’API HTTP tramite operazioni CRUD |
+| [API GraphQL per frammenti di contenuto](/help/assets/content-fragments/graphql-api-content-fragments.md) | Consentire la distribuzione efficiente di frammenti di contenuto ai client JavaScript in implementazioni CMS headless |
+| [API HTTP per le risorse di frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato esatto delle richieste di risorse HTTP supportate |
 
 ## API specifiche per SPA {#spa-apis}
 
