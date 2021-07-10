@@ -4,9 +4,9 @@ description: Questa pagina evidenzia i vantaggi principali dell’utilizzo di Cl
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a38238ed1bf726fa5a123d820bc2ff4d220f3606
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---
@@ -21,3 +21,7 @@ I vantaggi principali dell’utilizzo di Cloud Acceleration Manager sono i segue
 * Fornisce una valutazione in un formato facile da utilizzare.
 * Guida e gestisce il percorso di transizione.
 * Fornisce best practice, aiuto pertinente e accesso agli strumenti per ridurre al minimo i tempi di migrazione.
+
+## Novità {#whats-next}
+
+Dopo aver appreso cos’è Cloud Acceleration Manager, ora puoi utilizzare e iniziare a utilizzare Cloud Acceleration Manager.
