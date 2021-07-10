@@ -4,9 +4,9 @@ description: Questa pagina fornisce una panoramica della fase di preparazione di
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: b5b6a4a84c57805770ec1c72741c2d56d4711309
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '594'
 ht-degree: 4%
 
 ---
@@ -102,12 +102,23 @@ Puoi filtrare il rapporto in base a importanza, sottotipo o conteggio.
 
 #### Valutazione delle best practice {#best-practices-assessment}
 
-Questa scheda fornisce un
+L’opzione Valutazione delle best practice fornisce una valutazione dell’istanza AEM corrente e fornisce indicazioni sui passaggi successivi per adottare AEM best practice. Da questa scheda puoi esaminare le seguenti informazioni:
+
+* Panoramica dell’istanza AEM
+* Componenti e modelli personalizzati
+* Risultati aggiuntivi
+* Query lente
+* Attività di manutenzione
 
 #### Valutazione della complessità della migrazione {#migration-complexity-assessment}
 
-Questa scheda fornisce
+L’opzione Valutazione della complessità della migrazione fornisce una valutazione della complessità necessaria per migrare l’implementazione AEM esistente a AEM come Cloud Service. Da questa scheda puoi esaminare le seguenti informazioni:
 
+* Panoramica dell’istanza AEM
+* Valutazione
+* Considerazioni sulla migrazione dei contenuti
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Utilizzo della scheda Planning e Setup {#planning-setup}
 
@@ -119,10 +130,8 @@ Segui questa sezione per esplorare la scheda delle attività Pianificazione e Co
 
 1. Viene visualizzato un carosello di contenuti con le informazioni pertinenti per questa fase del percorso di migrazione.
 
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Novità {#whats-next}
 
 Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, ora puoi passare alla revisione del passaggio successivo, Utilizzo della fase di implementazione.
-
-
