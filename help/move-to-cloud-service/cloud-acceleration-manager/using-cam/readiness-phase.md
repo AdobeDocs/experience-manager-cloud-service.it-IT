@@ -4,9 +4,9 @@ description: Questa pagina fornisce una panoramica della fase di preparazione di
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '515'
 ht-degree: 4%
 
 ---
@@ -64,7 +64,7 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
    >[!NOTE]
    >Il caricamento di un nuovo rapporto ripristina tutte le valutazioni.
 
-### Analisi del rapporto di analisi delle best practice {#analysis-report}
+### Analisi del rapporto sulle best practice {#analysis-report}
 
 Esplora le seguenti schede disponibili nella pagina Rapporto di analisi delle best practice :
 
@@ -79,17 +79,17 @@ Esplora le seguenti schede disponibili nella pagina Rapporto di analisi delle be
 
 #### Proprietà rapporto {#report-properties}
 
-Questa scheda fornisce informazioni sulle proprietà del rapporto quali data del rapporto, durata, filtri, data di caricamento e dettagli di Adobe Experience Manager (AEM).
+La scheda **Proprietà report** fornisce informazioni sulle proprietà del report quali data del report, durata, filtri, data di caricamento e dettagli di Adobe Experience Manager (AEM).
 
 ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
-#### Panoramica del rapporto {#report-overview}
+#### Panoramica dei rapporti {#report-overview}
 
-Questa scheda fornisce i risultati del rapporto
+Questa scheda **Panoramica rapporto** fornisce i risultati del rapporto, come illustrato nella figura seguente.
 
 ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-Facendo clic su questo rapporto si apre la scheda **Report** , come illustrato nella figura riportata di seguito.
+Facendo clic su questo rapporto si apre la scheda **Report** .
 
 ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -109,7 +109,7 @@ Questa scheda fornisce un
 Questa scheda fornisce
 
 
-## Utilizzo della scheda di pianificazione e configurazione {#planning-setup}
+## Utilizzo della scheda Planning e Setup {#planning-setup}
 
 Segui questa sezione per esplorare la scheda delle attività Pianificazione e Configurazione .
 
