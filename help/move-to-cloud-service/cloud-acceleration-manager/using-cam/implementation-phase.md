@@ -4,7 +4,7 @@ description: Questa pagina fornisce una panoramica della fase di implementazione
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: 8063afa2df9f5007f686afcc4162abde56c188ef
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -75,7 +75,7 @@ Segui questa sezione per esplorare AEM come scheda attività Cloud Service della
 
 1. Viene visualizzato un carosello di contenuti con le informazioni pertinenti per questa fase del percorso di migrazione.
 
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## Utilizzo della scheda di trasferimento dei contenuti {#content-transfer}
@@ -90,7 +90,7 @@ Leggi questa sezione per esplorare la scheda delle attività Content Transfer (T
 
 1. Viene visualizzato un carosello di contenuti con le informazioni pertinenti per questa fase del percorso di migrazione.
 
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >Leggi i [prerequisiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) e le [best practice e linee guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti).
