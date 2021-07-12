@@ -2,9 +2,9 @@
 title: Gestione dei predefiniti per visualizzatori
 description: Scopri come creare e gestire i predefiniti per visualizzatori in Dynamic Media.
 feature: Predefiniti visualizzatore, Visualizzatori
-role: Business Practitioner
+role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4236'
 ht-degree: 13%
@@ -32,7 +32,7 @@ Questa sezione descrive come creare, modificare e gestire i predefiniti per visu
 >
 >La modifica di *predefiniti predefiniti predefiniti per visualizzatori* non è uno scenario supportato. Se tenti di modificare un predefinito visualizzatore predefinito, ti viene richiesto di salvare il predefinito visualizzatore con un nuovo nome.
 
-## Accessibilità da tastiera per visualizzatori {#keyboard-accessibility-for-viewers}
+## Accessibilità della tastiera per i visualizzatori {#keyboard-accessibility-for-viewers}
 
 Tutti i visualizzatori predefiniti supportano l’accessibilità da tastiera.
 
@@ -59,7 +59,7 @@ Per ulteriori informazioni su come incorporare i visualizzatori reattivi nelle p
 >Pubblica tutti i visualizzatori predefiniti prima di utilizzarli per i primi.
 >Consulta [Pubblicazione dei predefiniti visualizzatore](#publishing-viewer-presets).
 
-### Compatibilità del sistema predefinito per visualizzatori {#viewer-preset-system-compatibility}
+### Compatibilità del sistema con i predefiniti per visualizzatori  {#viewer-preset-system-compatibility}
 
 Tutti i predefiniti visualizzatore forniti con Dynamic Media sono completamente compatibili con i seguenti sistemi:
 
@@ -70,7 +70,7 @@ Tutti i predefiniti visualizzatore forniti con Dynamic Media sono completamente 
 * Tablet Android™
 * Per i video, è disponibile un supporto aggiuntivo per la riproduzione MP4 per [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) e [Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
 
-### Tipi di contenuti multimediali avanzati per predefiniti visualizzatore {#rich-media-types-for-viewer-presets}
+### Tipi di contenuti multimediali per predefiniti visualizzatore {#rich-media-types-for-viewer-presets}
 
 Gli amministratori possono aggiungere e personalizzare i seguenti tipi di contenuti multimediali durante la creazione di predefiniti per visualizzatori.
 
@@ -147,7 +147,7 @@ Gli amministratori possono aggiungere e personalizzare i seguenti tipi di conten
  </tbody>
 </table>
 
-### Elenco dei predefiniti per visualizzatori {#list-of-out-of-the-box-viewer-presets}
+### Elenco dei predefiniti per visualizzatori predefiniti {#list-of-out-of-the-box-viewer-presets}
 
 La tabella seguente identifica tutti i predefiniti visualizzatore predefiniti forniti con Dynamic Media.
 
@@ -310,7 +310,7 @@ Consulta &quot;Viewers release notes&quot; nel sommario della [Guida di riferime
  </tbody>
 </table>
 
-### Matrice di gesti dei visualizzatori mobili supportati {#supported-mobile-viewers-gestures-matrix}
+### Matrice di gesti dei visualizzatori per dispositivi mobili supportati {#supported-mobile-viewers-gestures-matrix}
 
 La tabella seguente identifica i gesti del visualizzatore mobile supportati sui dispositivi iOS, Android™ 2.x e Android™ 3.x.
 
@@ -367,7 +367,7 @@ La tabella seguente identifica i gesti del visualizzatore mobile supportati sui 
  </tbody>
 </table>
 
-## Aumento del numero di predefiniti per visualizzatori visualizzati {#increasing-the-number-of-viewer-presets-that-display}
+## Aumento del numero di predefiniti visualizzatore {#increasing-the-number-of-viewer-presets-that-display}
 
 L’Experience Manager mostra un’ampia varietà di predefiniti visualizzatore quando visualizzi le risorse da **[!UICONTROL Vista dettagli > Visualizzatori]**. È possibile aumentare o diminuire il numero di visualizzatori visualizzati.
 
@@ -594,7 +594,7 @@ Se hai già pubblicato sia la risorsa che il visualizzatore selezionato, dopo av
 
    Puoi [copiare l&#39;URL da condividere](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) con altri utenti.
 
-## Distribuzione delle risorse con predefiniti visualizzatore {#delivering-assets-with-viewer-presets}
+## Distribuzione delle risorse con predefiniti per visualizzatori {#delivering-assets-with-viewer-presets}
 
 Per ottenere gli URL per i predefiniti per visualizzatori, consulta [Collegamento degli URL all’applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Vedere anche [Incorporamento del visualizzatore video in una pagina Web](/help/assets/dynamic-media/embed-code.md).
 
