@@ -2,9 +2,9 @@
 title: Set di immagini
 description: Scopri come lavorare con i set di immagini in Dynamic Media.
 feature: Set di immagini
-role: Business Practitioner
+role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 9%
