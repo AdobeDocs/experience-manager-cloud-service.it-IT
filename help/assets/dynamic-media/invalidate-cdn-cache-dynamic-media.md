@@ -2,16 +2,16 @@
 title: Annullare la validità della cache CDN (Content Delivery Network) tramite Dynamic Media
 description: '"Scopri come annullare la validità della rete CDN (Content Delivery Network) memorizzata nella cache per consentirti di aggiornare rapidamente le risorse consegnate da Dynamic Media, anziché attendere la scadenza della cache."'
 feature: Gestione risorse
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 1%
 
 ---
 
-# Annullamento della validità della cache CDN tramite Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
+# Annullare la validità della cache CDN tramite Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
 Le risorse Dynamic Media sono memorizzate nella cache della rete CDN (Content Delivery Network) per velocizzarne la distribuzione ai clienti. Tuttavia, quando apporti aggiornamenti a tali risorse, vuoi che tali modifiche abbiano effetto immediatamente sul tuo sito web. L’eliminazione o l’annullamento della validità della cache CDN consente di aggiornare rapidamente le risorse consegnate da Dynamic Media. Non è più necessario attendere la scadenza della cache utilizzando un valore TTL (Time To Live) (il valore predefinito è dieci ore). Al contrario, puoi inviare una richiesta dall’interno dell’interfaccia utente di Dynamic Media affinché la cache scada in pochi minuti.
 
