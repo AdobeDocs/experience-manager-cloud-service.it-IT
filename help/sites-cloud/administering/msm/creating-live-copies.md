@@ -2,10 +2,9 @@
 title: Creazione e sincronizzazione di Live Copy
 description: Scopri come creare e sincronizzare Live Copy per riutilizzare i contenuti in tutto il sito.
 feature: Gestione di più siti
-role: Administrator
+role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-translation-type: tm+mt
-source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 1%
@@ -46,7 +45,7 @@ Quando utilizzi la configurazione blueprint, puoi associarla a una configurazion
 
 Le configurazioni Blueprint sono considerate dati immutabili e come tali non sono modificabili in fase di runtime. Per questo motivo, qualsiasi modifica alla configurazione deve essere implementata tramite Git utilizzando la pipeline CI/CD.
 
-Ulteriori informazioni sono disponibili nell&#39;articolo [Modifiche di rilievo apportate a Adobe Experience Manager (AEM) come Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+Ulteriori informazioni sono disponibili nell&#39;articolo [Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) come Cloud Service.](/help/release-notes/aem-cloud-changes.md)
 
 I passaggi seguenti sono disponibili per un amministratore in un’istanza di sviluppo locale solo a scopo di test e sviluppo. Queste opzioni non sono disponibili in alcuna istanza cloud AEMaaCS.
 
@@ -244,7 +243,7 @@ Implementa una pagina blueprint per inviare le modifiche al contenuto in Live Co
 
 I rollout vengono elaborati come processi asincroni e possono essere controllati nella pagina [***Stato processi asincroni**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
-#### Implementa una blueprint dalla barra dei riferimenti {#roll-out-a-blueprint-from-the-reference-rail}
+#### Implementare una blueprint dalla barra laterale di riferimento {#roll-out-a-blueprint-from-the-reference-rail}
 
 1. Nella console **Sites** , seleziona la pagina nella Live Copy e apri il pannello **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (dalla barra degli strumenti).
 1. Seleziona l&#39;opzione **Blueprint** dall&#39;elenco per mostrare i progetti associati a questa pagina.
@@ -292,7 +291,7 @@ I rollout vengono elaborati come processi asincroni e possono essere controllati
 
 Sincronizza una pagina Live Copy per estrarre le modifiche al contenuto dalla sorgente alla Live Copy.
 
-#### Sincronizzazione di una Live Copy dalle proprietà pagina {#synchronize-a-live-copy-from-page-properties}
+#### Sincronizzazione di una Live Copy dalle proprietà della pagina {#synchronize-a-live-copy-from-page-properties}
 
 Sincronizza una Live Copy per estrarre le modifiche dalla sorgente alla Live Copy.
 
@@ -321,7 +320,7 @@ L&#39;azione [Sincronizza è disponibile anche dalla Panoramica Live Copy](live-
 
    ![Rollout di pagine con o senza sottopagine](../assets/rollout-page-and-subpages.png)
 
-## Modifica del contenuto della Live Copy {#changing-live-copy-content}
+## Modifica del contenuto di Live Copy {#changing-live-copy-content}
 
 Per modificare il contenuto della Live Copy, puoi:
 
@@ -360,7 +359,7 @@ Puoi sospendere l’ereditarietà di una Live Copy per una pagina Live Copy in m
 >
 >Puoi anche [scollegare una Live Copy](#detaching-a-live-copy) dalla relativa blueprint per rimuovere tutte le connessioni. A differenza della sospensione dell’ereditarietà, l’azione di scollegamento è permanente e non reversibile.
 
-#### Sospensione dell’ereditarietà dalle proprietà pagina {#suspending-inheritance-from-page-properties}
+#### Sospensione dell’ereditarietà dalle proprietà della pagina {#suspending-inheritance-from-page-properties}
 
 Per sospendere l’ereditarietà su una pagina:
 
@@ -416,7 +415,7 @@ Una volta [sospesa](#suspending-inheritance-from-page-properties) l&#39;azione *
 
 Quando questa opzione è selezionata, viene visualizzata la finestra di dialogo . Puoi selezionare una sincronizzazione, se necessario, quindi confermare l’azione.
 
-#### Riprendi una pagina Live Copy dalla panoramica Live Copy {#resume-a-live-copy-page-from-the-live-copy-overview}
+#### Riprendere una pagina Live Copy dalla panoramica Live Copy {#resume-a-live-copy-page-from-the-live-copy-overview}
 
 L&#39;azione [Riprendi è disponibile anche dalla Panoramica Live Copy](live-copy-overview.md#using-the-live-copy-overview) quando è selezionata una pagina Live Copy.
 
@@ -462,7 +461,7 @@ Per specificare o modificare la profondità:
 
 1. Tocca o fai clic su **Salva** per mantenere gli aggiornamenti.
 
-### Annullamento dell&#39;ereditarietà di un componente {#cancelling-inheritance-for-a-component}
+### Annullamento dell’ereditarietà di un componente {#cancelling-inheritance-for-a-component}
 
 Annulla l’ereditarietà Live Copy per un componente in modo che il componente non venga più sincronizzato con il componente sorgente. Se necessario, puoi abilitare l’ereditarietà in un momento successivo.
 
@@ -484,7 +483,7 @@ Annulla ereditarietà per modificare il contenuto del componente o eliminare il 
 
    La barra degli strumenti del componente viene aggiornata per includere tutti i comandi di modifica (appropriati).
 
-### Riabilitazione dell&#39;ereditarietà per un componente {#re-enabling-inheritance-for-a-component}
+### Riabilitazione dell’ereditarietà per un componente {#re-enabling-inheritance-for-a-component}
 
 Per abilitare l’ereditarietà per un componente, tocca o fai clic sull’icona **Riattiva ereditarietà** nella barra degli strumenti del componente.
 
@@ -548,7 +547,7 @@ Puoi reimpostare una pagina Live Copy per:
 
 Il ripristino influisce sulle modifiche apportate alle proprietà della pagina, al sistema di paragrafi e ai componenti.
 
-#### Ripristina una pagina Live Copy dalle proprietà della pagina {#reset-a-live-copy-page-from-the-page-properties}
+#### Reimpostare una pagina Live Copy dalle proprietà della pagina {#reset-a-live-copy-page-from-the-page-properties}
 
 1. Nella console **Sites** , seleziona la pagina Live Copy e seleziona **Visualizza proprietà**.
 1. Apri la scheda **Live Copy.**
@@ -558,7 +557,7 @@ Il ripristino influisce sulle modifiche apportate alle proprietà della pagina, 
 
 1. Nella finestra di dialogo **Ripristina Live Copy**, conferma con **Ripristina**.
 
-#### Ripristina una pagina Live Copy dalla panoramica Live Copy {#reset-a-live-copy-page-from-the-live-copy-overview}
+#### Reimpostare una pagina Live Copy dalla panoramica Live Copy {#reset-a-live-copy-page-from-the-live-copy-overview}
 
 L&#39;azione [**Reset** è disponibile anche dalla Panoramica Live Copy](live-copy-overview.md#using-the-live-copy-overview) quando è selezionata una pagina Live Copy.
 
@@ -627,7 +626,7 @@ Ci sono implicazioni su dove all&#39;interno dell&#39;albero si utilizza **Scoll
    >
    >Per informazioni dettagliate su tali situazioni, consulta [Conflitti di rollout MSM](rollout-conflicts.md) .
 
-### Scollega una pagina Live Copy dalle proprietà pagina {#detach-a-live-copy-page-from-the-page-properties}
+### Scollega una pagina Live Copy dalle proprietà della pagina {#detach-a-live-copy-page-from-the-page-properties}
 
 Per scollegare una Live Copy:
 
