@@ -1,16 +1,15 @@
 ---
 title: Riutilizzo dei contenuti - Multi-Site Manager e Live Copy
 description: Ottieni un’introduzione al riutilizzo dei contenuti con AEM potenti Live Copy e le funzioni di Multi Site Manager .
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Gestione di più siti
+role: Admin
+exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2685'
 ht-degree: 1%
 
 ---
-
 
 # Riutilizzo del contenuto: Multi-Site Manager e Live Copy {#multi-site-manager-and-live-copy}
 
@@ -106,7 +105,7 @@ Ci sono molti casi d’uso per MSM e Live Copy. Alcuni scenari includono:
    >* Quanto delle singole copie deve essere regolato.
 
 
-## MSM dall&#39;interfaccia utente {#msm-from-the-ui}
+## MSM dall’interfaccia utente {#msm-from-the-ui}
 
 MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse opzioni dalla console appropriata.
 
@@ -239,7 +238,7 @@ Ad esempio, i collegamenti che puntano dal secondo al primo modello verranno ris
 >
 >Se sposti o rinomini una pagina all’interno del ramo Live Copy, questa verrà trattata come una Live Copy nidificata per consentire AEM tenere traccia delle relazioni.
 
-#### Live Copy sovrapposte {#stacked-live-copies}
+#### Live Copy impilate {#stacked-live-copies}
 
 Una Live Copy è nota come Live Copy sovrapposta quando viene creata come figlia di una Live Copy poco profonda. Si comporta nello stesso modo di una [Live Copy nidificata](#nested-live-copies).
 
@@ -290,7 +289,7 @@ Le configurazioni di rollout possono essere riutilizzate, in modo che più di un
 
 I rollout possono diventare complicati, specialmente quando gli autori modificano il contenuto sia nella sorgente che nella Live Copy. È quindi utile sapere come AEM gestire eventuali conflitti che potrebbero verificarsi durante il rollout.](rollout-conflicts.md)[
 
-### Sospensione e annullamento dell&#39;ereditarietà e della sincronizzazione {#suspending-and-cancelling-inheritance-and-synchronization}
+### Sospensione e annullamento dell’ereditarietà e della sincronizzazione {#suspending-and-cancelling-inheritance-and-synchronization}
 
 Ogni pagina e componente di una Live Copy è associato alla relativa pagina sorgente e al relativo componente tramite una relazione live. La relazione live configura la sincronizzazione del contenuto Live Copy dall’origine.
 
