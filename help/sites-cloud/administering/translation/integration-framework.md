@@ -1,16 +1,15 @@
 ---
 title: Configurazione del framework di integrazione della traduzione
 description: Scopri come configurare il framework di integrazione della traduzione per l’integrazione con i servizi di traduzione di terze parti.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+feature: Copia lingua
+role: Admin
+exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1383'
 ht-degree: 2%
 
 ---
-
 
 # Configurazione del framework di integrazione della traduzione {#configuring-the-translation-integration-framework}
 
@@ -46,7 +45,7 @@ Se necessario, puoi creare più configurazioni cloud per lo stesso connettore. A
 
 Dopo aver configurato una connessione, puoi creare la configurazione del framework di integrazione di traduzione che la utilizza.
 
-## Creazione di una configurazione dell&#39;integrazione di traduzione {#creating-a-translation-integration-configuration}
+## Creazione di una configurazione dell’integrazione di traduzione {#creating-a-translation-integration-configuration}
 
 Crea una configurazione del framework di integrazione della traduzione per specificare come tradurre il contenuto. La configurazione include le seguenti informazioni:
 
