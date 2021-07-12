@@ -2,9 +2,9 @@
 title: Integrazione con Adobe Analytics
 description: 'Integrazione con Adobe Analytics '
 feature: Amministrazione
-role: Administrator
+role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 4%
@@ -24,7 +24,7 @@ Rispetto alle versioni precedenti di AEM, il supporto del framework non viene fo
 >
 >I clienti Adobe Experience Manager as a Cloud Service che non dispongono di un account Analytics esistente possono richiedere l’accesso ad Analytics Foundation Pack, ad Experience Cloud. Questo Foundation Pack fornisce un utilizzo limitato del volume di Analytics.
 
-## Creazione della configurazione Adobe Analytics {#analytics-configuration}
+## Creazione della configurazione di Adobe Analytics {#analytics-configuration}
 
 1. Passa a **Strumenti** → **Cloud Services**.
 2. Seleziona **Adobe Analytics**.
