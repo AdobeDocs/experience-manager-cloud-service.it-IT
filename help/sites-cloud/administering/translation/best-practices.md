@@ -1,18 +1,17 @@
 ---
 title: Best practice per la traduzione
 description: Scopri le best practice compilate dai team di ingegneria e consulenza di Adobe per aiutarti a iniziare a usare i progetti di traduzione.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Copia lingua
+role: Admin
+exl-id: 51b98c24-5566-4088-9010-bd39841a1633
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
 
-
-# Tecniche consigliate per la traduzione {#translation-best-practices}
+# Best practice per la traduzione {#translation-best-practices}
 
 ## Generale {#general}
 
