@@ -2,10 +2,10 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 225c47db1af35b29d79ebd16fa437681987b1372
+source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1185'
+ht-degree: 4%
 
 ---
 
@@ -60,7 +60,7 @@ Per eseguire un&#39;attivazione ad albero:
 
 Puoi attivare una replica ad albero scegliendo **Strumenti - Flusso di lavoro - Modelli** e copiando il modello di flusso di lavoro preconfigurato **Pubblica albero dei contenuti** , come mostrato di seguito:
 
-![](/help/operations/assets/publish-distribute.png)
+![](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Non modificare o richiamare il modello originale. Assicurati invece di copiare prima il modello e quindi modificare o richiamare tale copia.
 
