@@ -1,18 +1,17 @@
 ---
 title: Console Panoramica di Live Copy
 description: Scopri le nozioni di base della console Panoramica di Live Copy per comprendere rapidamente lo stato delle Live Copy al fine di sincronizzare i contenuti.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Gestione di più siti
+role: Admin
+exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 1%
 
 ---
 
-
-# Console panoramica Live Copy {#live-copy-overview-console}
+# Console Panoramica di Live Copy {#live-copy-overview-console}
 
 La console **Panoramica Live Copy** consente di:
 
@@ -22,7 +21,7 @@ La console **Panoramica Live Copy** consente di:
    * Visualizzare le proprietà blueprint e Live Copy
 * Esegui azioni di rollout.
 
-## Apertura della panoramica Live Copy {#opening-the-live-copy-overview}
+## Apertura della panoramica di Live Copy {#opening-the-live-copy-overview}
 
 Puoi aprire la Panoramica della Live Copy da:
 
@@ -75,7 +74,7 @@ La **Panoramica Live Copy** può essere utilizzata anche per eseguire azioni sul
 1. Apri la **Panoramica Live Copy**.
 1. Seleziona la pagina blueprint o Live Copy richiesta e la barra degli strumenti verrà aggiornata per mostrare le azioni disponibili. Le [azioni](overview.md#terms-used) disponibili dipendono dalla selezione di una pagina [blueprint](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page).
 
-### Azioni per una pagina blueprint {#actions-for-a-blueprint-page}
+### Azioni per una pagina Blueprint {#actions-for-a-blueprint-page}
 
 Quando selezioni una pagina blueprint, sono disponibili le seguenti azioni:
 
