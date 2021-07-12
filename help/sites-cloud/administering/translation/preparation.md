@@ -1,16 +1,15 @@
 ---
 title: Preparazione del contenuto per la traduzione
 description: Scopri come preparare i contenuti per la traduzione.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Copia lingua
+role: Admin
+exl-id: afc577a2-2791-481a-ac77-468011e4302e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # Preparazione del contenuto per la traduzione {#preparing-content-for-translation}
 
