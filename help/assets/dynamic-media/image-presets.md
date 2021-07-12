@@ -2,9 +2,9 @@
 title: Applicazione dei predefiniti per le immagini Dynamic Media
 description: Scopri come applicare i predefiniti immagine in Dynamic Media.
 feature: Predefiniti immagine,Visualizzatori,Rendering
-role: Business Practitioner
+role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 7%
