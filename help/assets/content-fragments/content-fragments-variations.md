@@ -1,16 +1,15 @@
 ---
 title: Varianti - Authoring dei contenuti di frammenti
 description: Scopri in che modo le varianti possono rendere i contenuti headless AEM ancora più flessibili consentendo di creare contenuti per il frammento, quindi di creare varianti di tali contenuti in base allo scopo.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Frammenti di contenuto
+role: User
+exl-id: af05aae6-d535-4007-ba81-7f41213ff152
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2257'
 ht-degree: 15%
 
 ---
-
 
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
@@ -39,7 +38,7 @@ Eseguire una serie di altre azioni a seconda del tipo di dati in corso di modifi
 >
 >Dopo la pubblicazione e/o il riferimento a un frammento, AEM un avviso quando un autore riapre il frammento per la modifica. In questo modo si avverte che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
 
-## Creazione di contenuti {#authoring-your-content}
+## Authoring dei contenuti {#authoring-your-content}
 
 Quando apri il frammento di contenuto per la modifica, la scheda **Variazioni** viene aperta per impostazione predefinita. Qui puoi creare il contenuto, per Master o qualsiasi variante disponibile. Il frammento strutturato contiene vari campi, di vari tipi di dati, definiti nel modello di contenuto.
 
@@ -156,7 +155,7 @@ Puoi anche aprire l&#39;editor a schermo intero per ulteriori [azioni](#actions)
 >
 >Se passi da **Rich Text** a **Markdown**, potresti riscontrare effetti imprevisti con Block Quotes (Citazioni) e Code Blocks (Blocchi di codice), in quanto questi due formati possono presentare differenze nelle modalità di gestione.
 
-### Riferimenti a frammento {#fragment-references}
+### Riferimenti ai frammenti {#fragment-references}
 
 Se il modello per frammenti di contenuto contiene riferimenti a frammento, gli autori dei frammenti potrebbero disporre di opzioni aggiuntive:
 
@@ -199,7 +198,7 @@ Esempio:
 
 Per facilitare il processo di creazione dei frammenti di contenuto, puoi caricare il testo, prepararlo in un editor esterno e aggiungerlo direttamente al frammento.
 
-### Riepilogo del testo {#summarizing-text}
+### Testo riepilogo {#summarizing-text}
 
 Il testo di riepilogo è progettato per aiutare gli utenti a ridurre la lunghezza del testo a un numero predefinito di parole, mantenendo al tempo stesso i punti chiave e il significato generale.
 
@@ -283,7 +282,7 @@ Per annotare un frammento:
 
    ![annotare](assets/cfm-variations-07c.png)
 
-### Visualizzazione, modifica, eliminazione di annotazioni {#viewing-editing-deleting-annotations}
+### Visualizzazione, Modifica, Eliminazione Di Annotazioni {#viewing-editing-deleting-annotations}
 
 Annotazioni:
 
