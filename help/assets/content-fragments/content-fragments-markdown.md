@@ -2,9 +2,9 @@
 title: Markdown
 description: Scopri in che modo l’editor Frammento di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti headless.
 feature: Frammenti di contenuto
-role: Business Practitioner
+role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 4%
@@ -49,7 +49,7 @@ Facoltativamente, è possibile creare un H1 evidenziando il testo in segni ugual
 
     `-------------`
 
-## Interruzioni di paragrafi e righe {#paragraphs-and-line-breaks}
+## Paragrafi e interruzioni di riga {#paragraphs-and-line-breaks}
 
 Un paragrafo è costituito semplicemente da una o più righe di testo consecutive, separate da una o più righe vuote. Una riga vuota è una riga contenente solo spazi o tabulazioni. I paragrafi normali non devono presentare un rientro con spazi o tabulazioni.
 
@@ -103,7 +103,7 @@ Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferiment
 
     `[id]: url/to/image "Optional title attribute"`
 
-## Virgolette bloccate {#block-quotes}
+## Virgolette a blocchi {#block-quotes}
 
 È possibile citare il testo aggiungendo il simbolo > prima del testo. Esempio:
 
