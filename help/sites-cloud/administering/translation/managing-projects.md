@@ -1,16 +1,15 @@
 ---
 title: Gestione dei progetti di traduzione
 description: Scopri come creare e gestire progetti di traduzione automatica e umana in AEM.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+feature: Copia lingua
+role: Admin
+exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '3828'
+source-wordcount: '3827'
 ht-degree: 1%
 
 ---
-
 
 # Gestione dei progetti di traduzione {#managing-translation-projects}
 
@@ -59,7 +58,7 @@ Puoi anche [creare manualmente progetti di traduzione](#creating-a-translation-p
 >
 >Per creare un progetto, l’account deve essere membro del gruppo `project-administrators` .
 
-### Traduzioni iniziali e aggiornamento traduzioni {#initial-and-updating}
+### Traduzioni iniziali e aggiornamento delle traduzioni {#initial-and-updating}
 
 Il pannello Riferimenti indica se si stanno aggiornando le copie della lingua esistenti o se si sta creando la prima versione delle copie della lingua. Quando esiste una copia per lingua per la pagina selezionata, viene visualizzata la scheda Aggiorna copie per lingua per consentire l’accesso ai comandi relativi al progetto.
 
@@ -233,7 +232,7 @@ Quando crei manualmente un progetto di traduzione, devi fornire valori per le se
 1. Tocca o fai clic su **Avanzate** e fornisci valori per le proprietà relative alla traduzione.
 1. Tocca o fai clic su **Crea**. Nella casella di conferma, tocca o fai clic su **Fine** per tornare alla console dei progetti oppure tocca o fai clic su **Apri progetto** per aprire e iniziare a gestire il progetto.
 
-### Aggiunta di pagine e risorse a un lavoro di traduzione {#adding-pages-assets-to-a-translation-job}
+### Aggiunta di pagine e risorse a un processo di traduzione {#adding-pages-assets-to-a-translation-job}
 
 Puoi aggiungere pagine, risorse o tag al processo di traduzione del progetto di traduzione. Per aggiungere pagine o risorse:
 
@@ -259,7 +258,7 @@ Puoi aggiungere pagine, risorse o tag al processo di traduzione del progetto di 
 >
 >Questo metodo aggiunge al progetto le pagine/risorse e i relativi elementi secondari. Seleziona **Risorsa/Pagina (senza elementi figlio)** se desideri aggiungere solo gli elementi principali.
 
-### Aggiunta di tag a un processo di traduzione {#adding-tags-to-a-translation-job}
+### Aggiunta di tag a un lavoro di traduzione {#adding-tags-to-a-translation-job}
 
 Puoi aggiungere tag a un progetto di traduzione in modo analogo a come aggiungi risorse e pagine a un progetto.[](#adding-pages-assets-to-a-translation-job) Seleziona  **** Tag nel menu  **** Aggiungi e segui gli stessi passaggi.
 
@@ -397,7 +396,7 @@ Quando archivi il lavoro di traduzione, la porzione del lavoro di traduzione vie
 
 È possibile utilizzare la console Sites per esaminare il contenuto, confrontare le copie per lingua e attivare il contenuto.
 
-### Promozione del contenuto aggiornato {#promoting-updated-content}
+### Promozione di contenuti aggiornati {#promoting-updated-content}
 
 Quando il contenuto viene tradotto per una copia in lingua esistente, rivedi le traduzioni, apporta modifiche se necessario e quindi promuovi le traduzioni per spostarlo nella copia in lingua. È possibile rivedere i file tradotti quando il processo di traduzione mostra lo stato **Pronto per la revisione**.
 
@@ -416,7 +415,7 @@ Quando il contenuto viene tradotto per una copia in lingua esistente, rivedi le 
 1. Dopo aver rivisto il contenuto e apportato le modifiche necessarie, per promuovere la copia del lancio fai clic su **Promuovi**.
 1. Nella pagina **Promuovi lancio** , specifica le pagine da promuovere, quindi tocca o fai clic su **Promuovi**.
 
-### Confronto delle copie per lingua {#comparing-language-copies}
+### Confronto di copie per lingua {#comparing-language-copies}
 
 Per confrontare le copie della lingua con il master della lingua:
 
