@@ -2,9 +2,9 @@
 title: Informazioni su profili immagine e profili video di Dynamic Media
 description: Un profilo immagine o un profilo video è una ricetta per le opzioni da applicare alle risorse caricate in una cartella. Ad esempio, puoi specificare la codifica video da applicare alle risorse video Dynamic Media caricate. Oppure, quale profilo immagine applicare alle risorse di immagini Dynamic Media per ritagliarle correttamente.
 feature: Gestione Delle Risorse, Profili Immagine, Profili Video
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1270'
 ht-degree: 0%
