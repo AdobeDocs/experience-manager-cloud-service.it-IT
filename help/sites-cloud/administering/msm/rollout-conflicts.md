@@ -1,16 +1,15 @@
 ---
 title: Conflitti di rollout
 description: Scopri come gestire e risolvere i conflitti di rollout di Multi Site Manager.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Gestione di più siti
+role: Admin
+exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 3%
+source-wordcount: '926'
+ht-degree: 2%
 
 ---
-
 
 # Conflitti di rollout {#msm-rollout-conflicts}
 
@@ -30,7 +29,7 @@ Il comportamento predefinito di AEM è che il contenuto pubblicato non sarà int
 
 Oltre alla funzionalità standard, è possibile aggiungere gestori di conflitti personalizzati per implementare regole diverse. Questi possono anche consentire la pubblicazione di azioni come un singolo processo.
 
-### Scenario di esempio {#example-scenario}
+### Esempio di scenario {#example-scenario}
 
 Nelle sezioni seguenti utilizziamo l’esempio di una nuova pagina `b`, creata sia nella blueprint che nel ramo Live Copy (creata manualmente), per illustrare i vari metodi di risoluzione dei conflitti:
 
