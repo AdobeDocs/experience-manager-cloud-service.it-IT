@@ -1,9 +1,9 @@
 ---
 title: Utilizzo dei selettori
 description: Scopri i metodi per selezionare le risorse per le immagini interattive, i video interattivi e i banner a carosello in Dynamic Media.
-role: Business Practitioner
+role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 21%
@@ -62,7 +62,7 @@ Utilizza il selettore Prodotto per scegliere un prodotto quando desideri un punt
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Selezione di Sites in Dynamic Media {#selecting-sites}
+## Selezione di siti in Dynamic Media {#selecting-sites}
 
 Utilizza il selettore del sito per scegliere una pagina web quando desideri che un punto attivo o una mappa immagine si colleghino a una pagina web gestita all’interno di [!DNL Experience Manager] siti.
 
