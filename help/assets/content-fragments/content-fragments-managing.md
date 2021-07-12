@@ -1,13 +1,12 @@
 ---
 title: Gestione dei frammenti di contenuto
 description: Scopri come utilizzare la console Risorse per gestire i frammenti di contenuto AEM, alla base dei contenuti headless.
-feature: Content Fragments
-role: Business Practitioner
+feature: Frammenti di contenuto
+role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-translation-type: tm+mt
-source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1746'
 ht-degree: 9%
 
 ---
@@ -89,7 +88,7 @@ Il metodo di creazione di un frammento di contenuto è:
    >[!NOTE]
    >In modalità **Elenco** della console è possibile aggiornare **Visualizza impostazioni** per abilitare la colonna **Modello frammento di contenuto**.
 
-## Azioni per un frammento di contenuto nella console Assets {#actions-for-a-content-fragment-assets-console}
+## Azioni per un frammento di contenuto nella console Risorse {#actions-for-a-content-fragment-assets-console}
 
 Nella console **Risorse** sono disponibili diverse azioni per i frammenti di contenuto:
 
@@ -127,7 +126,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 >
 >Molte di queste sono azioni [standard per Assets](/help/assets/manage-digital-assets.md) e/o l’ [AEM app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it).
 
-## Apertura dell’editor frammenti {#opening-the-fragment-editor}
+## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 
 Per aprire il frammento per la modifica:
 
@@ -163,7 +162,7 @@ Per aprire il frammento per la modifica:
 
 Sono disponibili varie modalità e azioni dall’Editor frammento di contenuto.
 
-### Modalità nell’ Editor frammento di contenuto {#modes-in-the-content-fragment-editor}
+### Modalità nell’Editor frammento di contenuto {#modes-in-the-content-fragment-editor}
 
 Naviga tra le varie modalità utilizzando le icone nel pannello laterale:
 
@@ -177,7 +176,7 @@ Naviga tra le varie modalità utilizzando le icone nel pannello laterale:
 
 ![modalità](assets/cfm-managing-04.png)
 
-### Azioni barra degli strumenti nell’ Editor frammento di contenuto {#toolbar-actions-in-the-content-fragment-editor}
+### Azioni barra degli strumenti nell’Editor frammento di contenuto {#toolbar-actions-in-the-content-fragment-editor}
 
 Alcune funzioni nella barra degli strumenti superiore sono disponibili in diverse modalità:
 
@@ -202,7 +201,7 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
 * **** Salva consente di accedere all’opzione  **Salva e** chiudi.
 
 * I tre punti (**...L’elenco a discesa** consente di accedere ad azioni aggiuntive:
-   * **Aggiorna riferimenti di pagina**
+   * **Aggiorna i riferimenti pagina**
       * Questo aggiorna tutti i riferimenti di pagina.
    * **[Pubblicazione rapida](#publishing-and-referencing-a-fragment)**
    * **[Gestisci pubblicazione](#publishing-and-referencing-a-fragment)**
@@ -338,7 +337,7 @@ Non è possibile modificare il contenuto del frammento quando si confrontano i f
 
 ![confronto](assets/cfm-managing-06.png)
 
-## Ripristino di una versione {#reverting-to-a-version}
+## Ripristino di una versione  {#reverting-to-a-version}
 
 È possibile ripristinare una versione specifica del frammento:
 
