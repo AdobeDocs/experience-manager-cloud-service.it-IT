@@ -1,9 +1,9 @@
 ---
 title: Collegamento di URL all’applicazione web
 description: Scopri come collegare gli URL alla tua applicazione web in Dynamic Media.
-role: Business Practitioner
+role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 10%
@@ -206,7 +206,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono altre riso
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Utilizzo di HTTP/2 per distribuire le risorse Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Utilizzo di HTTP/2 per fornire le risorse Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 è il nuovo protocollo web aggiornato che migliora il modo in cui i browser e i server comunicano. Fornisce un trasferimento più rapido delle informazioni e riduce la quantità di potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media può ora avvenire tramite HTTP/2, garantendo tempi di risposta e caricamento migliori.
 
