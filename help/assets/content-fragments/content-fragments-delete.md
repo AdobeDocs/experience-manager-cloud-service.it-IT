@@ -1,22 +1,21 @@
 ---
 title: Frammenti di contenuto - Considerazioni sull’eliminazione
 description: Esamina queste considerazioni importanti prima di definire i criteri di eliminazione dei frammenti di contenuto in AEM. I frammenti di contenuto sono uno strumento potente per la distribuzione di contenuti headless e occorre considerare attentamente le implicazioni relative all’eliminazione di tali contenuti.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Frammenti di contenuto
+role: User
+exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '472'
 ht-degree: 10%
 
 ---
-
 
 # Frammenti di contenuto - Considerazioni sull’eliminazione {#content-fragments-delete-considerations}
 
 Esamina queste considerazioni importanti prima di definire i criteri di eliminazione dei frammenti di contenuto in AEM. I frammenti di contenuto sono uno strumento potente per la distribuzione di contenuti headless e occorre considerare attentamente le implicazioni relative all’eliminazione di tali contenuti.
 
-## Autorizzazioni - Elimina o non elimina {#permissions-delete-or-not-delete}
+## Autorizzazioni - Elimina o Non Elimina {#permissions-delete-or-not-delete}
 
 La possibilità di eliminare i contenuti è potente, ma potenzialmente sensibile, e molti settori devono limitare e controllare come questi privilegi vengono distribuiti.
 
@@ -42,7 +41,7 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 >
 >Vedere anche Come controllare le operazioni di gestione degli utenti in AEM. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
-## Autorizzazioni necessarie solo per la funzionalità dell&#39;editor {#permissions-required-for-editor-functionality-only}
+## Autorizzazioni necessarie solo per la funzionalità dell’editor {#permissions-required-for-editor-functionality-only}
 
 Dovrai assegnare autorizzazioni specifiche agli utenti che necessitano di modificare/aggiornare un frammento di contenuto, **ma a cui non vuoi consentire di eliminare un intero frammento**, poiché il funzionamento di base dell’Editor frammento di contenuto richiede l’eliminazione di elementi secondari transitori.
 
