@@ -1,16 +1,15 @@
 ---
 title: Configurazione della sincronizzazione di una Live Copy
 description: Scopri le potenti opzioni di sincronizzazione Live Copy disponibili e come configurarle e personalizzarle in base alle esigenze del progetto.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
+feature: Gestione di più siti
+role: Admin
+exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2339'
 ht-degree: 31%
 
 ---
-
 
 # Configurazione della sincronizzazione di una Live Copy {#configuring-live-copy-synchronization}
 
