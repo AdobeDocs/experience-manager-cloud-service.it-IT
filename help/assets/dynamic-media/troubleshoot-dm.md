@@ -1,10 +1,9 @@
 ---
 title: Risoluzione dei problemi relativi a Dynamic Media
 description: Suggerimenti per la risoluzione dei problemi durante l’utilizzo di Dynamic Media.
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 2%
@@ -19,11 +18,11 @@ L&#39;argomento seguente descrive la risoluzione dei problemi relativi a Dynamic
 
 Consulta [Risoluzione dei problemi relativi a una nuova configurazione Dynamic Media](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
-## Generale (tutte le risorse) {#general-all-assets}
+## Generale (Tutte le attività) {#general-all-assets}
 
 Di seguito sono riportati alcuni suggerimenti generali per tutte le risorse.
 
-### Proprietà stato sincronizzazione risorse {#asset-synchronization-status-properties}
+### Proprietà dello stato di sincronizzazione delle risorse {#asset-synchronization-status-properties}
 
 Le seguenti proprietà delle risorse possono essere esaminate in CRXDE Lite per confermare la corretta sincronizzazione della risorsa da Adobe Experience Manager a Dynamic Media:
 
