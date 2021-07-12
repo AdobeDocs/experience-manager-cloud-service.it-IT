@@ -2,9 +2,9 @@
 title: Immagini interattive
 description: Scopri come utilizzare le immagini interattive in Dynamic Media.
 feature: Immagini interattive
-role: Business Practitioner
+role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4245'
 ht-degree: 1%
@@ -213,7 +213,7 @@ Se hai già caricato le immagini da utilizzare, passa al passaggio successivo, [
 
    Ora puoi aggiungere punti attivi al banner immagine; consulta l’attività successiva di seguito.
 
-## Aggiunta di hotspot a un banner immagine {#adding-hotspots-to-an-image-banner}
+## Aggiunta di punti attivi a un banner immagine {#adding-hotspots-to-an-image-banner}
 
 Puoi aggiungere punti attivi a un banner immagine utilizzando l’editor nella pagina Gestione dei punti attivi.
 
@@ -319,7 +319,7 @@ Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-me
 1. Nell’elenco Visualizzatori, tocca **[!UICONTROL Shoppable_Banner]** o il nome del predefinito visualizzatore di immagini interattivo creato.
 1. Per testare le azioni associate dei punti attivi, tocca i punti attivi sull’immagine.
 
-## Pubblicazione delle risorse di immagini interattive {#publishing-interactive-image-assets}
+## Pubblicazione delle risorse immagine interattive {#publishing-interactive-image-assets}
 
 Per informazioni dettagliate su come pubblicare le risorse immagine interattive, consulta [Pubblicazione delle risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) .
 
@@ -358,7 +358,7 @@ Consultare [crop](https://experienceleague.adobe.com/docs/dynamic-media-develope
 
 È ora possibile integrare l’immagine interattiva con una visualizzazione rapida esistente sul sito web.
 
-## Integrazione di un&#39;immagine interattiva con una visualizzazione rapida esistente {#integrating-an-interactive-image-with-an-existing-quickview}
+## Integrazione di un’immagine interattiva con una visualizzazione rapida esistente {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 Questa attività si applica solo se sei un cliente di Experience Manager Assets autonomo.
