@@ -2,9 +2,9 @@
 title: Distribuzione di immagini ottimizzate per un sito reattivo
 description: Scopri come utilizzare la funzione di codice reattivo per distribuire immagini ottimizzate da Dynamic Media.
 feature: Gestione risorse
-role: Business Practitioner
+role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 13%
