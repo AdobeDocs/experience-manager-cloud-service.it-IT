@@ -2,10 +2,9 @@
 title: Incorporare il visualizzatore video o immagine Dynamic Media in una pagina web
 description: Scopri come incorporare risorse video o immagini Dynamic Media in una pagina web.
 feature: Gestione risorse
-role: Business Practitioner
+role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-translation-type: tm+mt
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 21%
@@ -50,7 +49,7 @@ Consulta [Distribuzione di immagini ottimizzate per un sito reattivo](responsive
 1. Nella finestra di dialogo **[!UICONTROL Incorpora codice]**, copia l’intero codice negli Appunti, quindi tocca **[!UICONTROL Chiudi]**.
 1. Incolla il codice di incorporamento nelle pagine web.
 
-## Utilizzo di HTTP/2 per distribuire le risorse Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Utilizzo di HTTP/2 per fornire le risorse Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 è il nuovo protocollo web aggiornato che migliora il modo in cui i browser e i server comunicano. Fornisce un trasferimento più rapido delle informazioni e riduce la quantità di potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media può ora avvenire tramite HTTP/2, garantendo tempi di risposta e caricamento migliori.
 
