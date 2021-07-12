@@ -2,9 +2,9 @@
 title: Integrazione con Adobe Target
 description: 'Integrazione con Adobe Target '
 feature: Amministrazione
-role: Administrator
+role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Adobe Launch è necessario per gestire le proprietà lato client sia per Analyti
 >
 >I clienti Adobe Experience Manager as a Cloud Service che non dispongono di un account Target esistente possono richiedere l’accesso a Target Foundation Pack, ad Experience Cloud. Foundation Pack fornisce un uso limitato del volume di Target.
 
-## Creazione della configurazione Adobe Target {#create-configuration}
+## Creazione della configurazione di Adobe Target {#create-configuration}
 
 1. Passa a **Strumenti** → **Cloud Services**.
    ![](assets/cloudservice1.png "Navigazione")
@@ -38,7 +38,7 @@ Adobe Launch è necessario per gestire le proprietà lato client sia per Analyti
 
 Per integrare correttamente Target con AEM e Launch è necessaria una configurazione IMS sia per Launch che per Target. Anche se la configurazione IMS per Launch è preconfigurata in AEM come Cloud Service, è necessario creare la configurazione IMS di Target (dopo il provisioning di Target). Per informazioni su come creare la configurazione IMS di Target, consulta [questo video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) .
 
-### ID tenant Adobe Target e codice client Adobe Target {#tenant-client}
+### ID tenant di Adobe Target e codice client di Adobe Target {#tenant-client}
 
 Durante la configurazione dei campi ID tenant di Adobe Target e Codice client di Adobe Target, tieni presente quanto segue:
 
@@ -62,7 +62,7 @@ Come precedentemente affermato, il primo caso è il più comune per AEM come Clo
 > 3. Salva la configurazione.
 
 
-### Modifica della configurazione di destinazione {#edit-target-configuration}
+### Modifica della configurazione di Target {#edit-target-configuration}
 
 Per modificare la configurazione di Target, segui questi passaggi:
 
@@ -136,7 +136,7 @@ In **Regola** definiamo e ordiniamo una sequenza di azioni, eseguite sul sito, p
 
 Per informazioni su come generare e pubblicare, consulta questa [pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
 
-## Modifiche alla struttura del contenuto tra configurazioni di interfaccia classica e touch {#changes-content-structure}
+## Modifiche alla struttura del contenuto tra le configurazioni di interfaccia classica e touch {#changes-content-structure}
 
 | **Cambia** | **Configurazione interfaccia classica** | **Configurazione dell’interfaccia touch** | **Conseguenze** |
 |---|---|---|---|
