@@ -2,10 +2,9 @@
 title: Frammenti di contenuto - Browser di configurazione
 description: Scopri come abilitare alcune funzionalità dei frammenti di contenuto nel browser di configurazione per sfruttare AEM potenti funzionalità di distribuzione headless.
 feature: Frammenti di contenuto
-role: Business Practitioner
+role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 18%
@@ -16,7 +15,7 @@ ht-degree: 18%
 
 Scopri come abilitare alcune funzionalità dei frammenti di contenuto nel browser di configurazione per sfruttare AEM potenti funzionalità di distribuzione headless.
 
-## Abilita la funzionalità dei frammenti di contenuto per la tua istanza {#enable-content-fragment-functionality-instance}
+## Abilita funzionalità frammento di contenuto per la tua istanza {#enable-content-fragment-functionality-instance}
 
 Prima di utilizzare Frammenti di contenuto è necessario utilizzare il **Browser configurazioni** per abilitare:
 
@@ -36,7 +35,7 @@ Per abilitare la funzionalità dei frammenti di contenuto è necessario:
 * Abilita l’utilizzo della funzionalità dei frammenti di contenuto tramite il browser di configurazione
 * Applica la configurazione alla cartella Assets
 
-### Abilita funzionalità frammento di contenuto nel browser di configurazione {#enable-content-fragment-functionality-in-configuration-browser}
+### Abilitare la funzionalità dei frammenti di contenuto nel browser di configurazione {#enable-content-fragment-functionality-in-configuration-browser}
 
 Per [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-content-fragment-model) **è necessario** prima abilitarle tramite il **Browser di configurazione**:
 
