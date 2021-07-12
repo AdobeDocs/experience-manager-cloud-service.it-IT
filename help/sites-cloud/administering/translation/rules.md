@@ -1,16 +1,15 @@
 ---
 title: Identificazione del contenuto da tradurre
 description: Scopri come le regole di traduzione identificano i contenuti da tradurre.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Copia lingua
+role: Admin
+exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
-
 
 # Identificazione del contenuto da tradurre {#identifying-content-to-translate}
 
@@ -87,7 +86,7 @@ L’esempio seguente traduce il contenuto di tutte le proprietà `text` e anche 
 </node>
 ```
 
-## Sintassi delle regole per l’estrazione di risorse dalle pagine {#rule-syntax-for-extracting-assets-from-pages}
+## Sintassi delle regole per l’estrazione delle risorse dalle pagine  {#rule-syntax-for-extracting-assets-from-pages}
 
 Utilizza la sintassi della regola seguente per includere le risorse incorporate nei componenti o a cui si fa riferimento da essi:
 
@@ -138,7 +137,7 @@ Ad esempio, le seguenti regole fanno sì che tutto il contenuto delle proprietà
 <nodelist>
 ```
 
-## Interfaccia utente delle regole di traduzione {#translation-rules-ui}
+## Interfaccia utente per le regole di traduzione {#translation-rules-ui}
 
 È disponibile anche una console per configurare le regole di traduzione.
 
