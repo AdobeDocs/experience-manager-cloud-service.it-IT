@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Serv
 topic-tags: introduction
 content-type: reference
 feature: Risorse 3D
-role: Business Practitioner
+role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2217'
 ht-degree: 5%
@@ -93,7 +93,7 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
 >[!TIP]
 >
->Puoi aprire il predefinito visualizzatore dimensionale nell’Editor predefiniti per visualizzatori per esercitarti a navigare su una risorsa 3D senza dover prima caricare alcun file 3D. Il predefinito visualizzatore dimensionale dispone di una risorsa 3D incorporata con cui puoi interagire.
+>Puoi aprire il predefinito visualizzatore dimensionale nell’Editor predefiniti per visualizzatori per esercitarti a navigare su una risorsa 3D senza dover prima caricare alcun file 3D. Il predefinito visualizzatore dimensionale dispone di una risorsa 3D incorporata con cui è possibile interagire.
 >
 >Consulta [Gestire i predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
