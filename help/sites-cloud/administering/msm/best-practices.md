@@ -2,10 +2,9 @@
 title: Best practice MSM
 description: Scopri le best practice compilate dai team di progettazione e consulenza di Adobe per iniziare a utilizzare AEM Multi Site Manager.
 feature: Gestione di più siti
-role: Administrator
+role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-translation-type: tm+mt
-source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -42,7 +41,7 @@ Quando crei un nuovo sito con Live Copy, è vantaggioso creare configurazioni bl
 >
 > Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione di Live Copy.
 
-## Componenti e sincronizzazione dei contenitori {#components-and-container-synchronization}
+## Sincronizzazione dei componenti e dei contenitori {#components-and-container-synchronization}
 
 In generale, la regola di rollout in MSM per quanto riguarda la sincronizzazione dei componenti è:
 
@@ -101,7 +100,7 @@ Le modifiche alla struttura del contenuto in una struttura blueprint/sorgente ve
       * L’ereditarietà dei contenuti nelle rispettive pagine Live Copy viene aggiornata per riflettere la nuova posizione delle relative origini nella blueprint.
       * Per realizzare completamente lo spostamento di una pagina da una blueprint a Live Copy, considera le [best practice per lo spostamento delle pagine.](#page-move)
 
-### Tecniche consigliate per lo spostamento delle pagine {#page-move}
+### Best practice per lo spostamento delle pagine {#page-move}
 
 Quando consideri lo spostamento di pagine in una Live Copy, considera la seguente best practice.
 
