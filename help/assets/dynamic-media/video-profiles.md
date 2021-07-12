@@ -2,9 +2,9 @@
 title: Profili video di Dynamic Media
 description: Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni di questo profilo predefinito sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Puoi anche aggiungere ritaglio avanzato ai video.
 feature: Gestione Delle Risorse, Profili Video, Rendering
-role: Business Practitioner
+role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3665'
 ht-degree: 10%
@@ -41,7 +41,7 @@ Per definire parametri di elaborazione avanzati per altri tipi di risorse, consu
 
 Vedere anche [Profili per l&#39;elaborazione di metadati, immagini e video](/help/assets/dynamic-media/about-image-video-profiles.md).
 
-## Predefiniti di codifica video adattivo {#adaptive-video-encoding-presets}
+## Predefiniti di codifica video adattivi {#adaptive-video-encoding-presets}
 
 La tabella seguente identifica i profili di codifica best practice per lo streaming di video adattivo su dispositivi mobili e tablet e computer desktop. Puoi usare questi predefiniti per qualsiasi video con proporzioni.
 
