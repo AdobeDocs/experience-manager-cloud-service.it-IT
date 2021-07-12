@@ -2,10 +2,9 @@
 title: Modelli per frammenti di contenuto
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuto strutturato.
 feature: Frammenti di contenuto
-role: Business Practitioner
+role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 7%
@@ -192,7 +191,7 @@ Diversi tipi di dati includono ora la possibilità di definire requisiti di conv
 * **Riferimento frammento**
    * Test di un modello di frammento di contenuto specifico.
 
-## Utilizzo di riferimenti per il modulo Contenuto nidificato {#using-references-to-form-nested-content}
+## Utilizzo di riferimenti per creare contenuti nidificati {#using-references-to-form-nested-content}
 
 I frammenti di contenuto possono formare contenuto nidificato utilizzando uno dei seguenti tipi di dati:
 
@@ -288,7 +287,7 @@ In GraphQL è inoltre disponibile una protezione di ricorrenza per i riferimenti
 
 Per un controllo completo sull’utilizzo dei modelli di frammenti di contenuto, è possibile impostare uno stato .
 
-### Abilitazione di un modello di frammento di contenuto {#enabling-a-content-fragment-model}
+### Abilitazione di un modello per frammenti di contenuto {#enabling-a-content-fragment-model}
 
 Una volta creato un modello, questo deve essere abilitato in modo che:
 
@@ -325,7 +324,7 @@ Per disabilitare un modello contrassegnato come **Abilitato** si utilizza l&#39;
 
 ![Disattiva un modello abilitato](assets/cfm-status-disable.png)
 
-## Consentire modelli di frammenti di contenuto nella cartella Risorse {#allowing-content-fragment-models-assets-folder}
+## Consentire modelli di frammenti di contenuto nella cartella delle risorse {#allowing-content-fragment-models-assets-folder}
 
 Per implementare la governance dei contenuti, puoi configurare **Criteri** nella cartella Risorse per controllare quali modelli di frammenti di contenuto sono consentiti per la creazione dei frammenti in tale cartella.
 
