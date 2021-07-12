@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner
+role: User
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 4%
@@ -129,7 +129,7 @@ Consulta [Creazione di una configurazione Dynamic Media](#configuring-dynamic-me
    * Nell’angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Ambito]**, tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblica in Dynamic Media]**.
 1. Toccare **[!UICONTROL OK]**.
 
-### Annullare selettivamente la pubblicazione delle risorse da Dynamic Media o Experience Manager utilizzando Gestisci pubblicazione {#selective-unpublish-manage-publication}
+### Annullare selettivamente la pubblicazione delle risorse da Dynamic Media o Experience Manager tramite Gestisci pubblicazione {#selective-unpublish-manage-publication}
 
 1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale. A sinistra, tocca l’icona Navigazione (appena sopra l’icona Strumenti), quindi tocca **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 1. In **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]**, effettuare una delle seguenti operazioni:
@@ -186,7 +186,7 @@ Puoi utilizzare **[!UICONTROL Pubblicazione rapida]** per casi semplici di attiv
    | Opzione Pubblicazione rapida | Funzionamento |
    | --- | --- | 
    | Pubblica in Experience Manager | Pubblica immediatamente ad Experience Manager le risorse selezionate. |
-   | Pubblica su Brand Portal | Pubblica immediatamente le risorse selezionate su **[!UICONTROL Brand Portal]**.<br>Questa opzione è disponibile solo se l’istanza Risorse di Experience Manager ha già configurato  **[!UICONTROL Brand]** Portal. |
+   | Pubblica su Brand Portal | Pubblica immediatamente le risorse selezionate in **[!UICONTROL Brand Portal]**.<br>Questa opzione è disponibile solo se l’istanza Risorse di Experience Manager ha già configurato  **[!UICONTROL Brand]** Portal. |
    | Pubblica in Dynamic Media | Pubblica immediatamente le risorse selezionate in Dynamic Media.<br>Una risorsa deve essere già sincronizzata con Dynamic Media. Se necessario, assicurati che **[!UICONTROL Modalità di sincronizzazione]** nelle proprietà di una cartella sia già impostato su **[!UICONTROL Sincronizza tutti gli elementi della struttura secondaria di questa cartella su Dynamic Media]**. |
 
 1. Tocca **[!UICONTROL OK]**, quindi tocca **[!UICONTROL Chiudi]**.
@@ -253,7 +253,7 @@ Facoltativamente, puoi utilizzare queste caselle di controllo con il predicato d
    * Nell&#39;angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Ambito]**, tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Annulla pubblicazione]** per iniziare l&#39;azione.
 1. Toccare **[!UICONTROL OK]**.
 
-## Verifica dello stato di pubblicazione di una risorsa {#check-publish-status-of-asset}
+## Controllo dello stato di pubblicazione di una risorsa {#check-publish-status-of-asset}
 
 Per controllare rapidamente lo stato di pubblicazione di una risorsa, puoi utilizzare **[!UICONTROL Timeline]** con **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]** in Experience Manager.
 
