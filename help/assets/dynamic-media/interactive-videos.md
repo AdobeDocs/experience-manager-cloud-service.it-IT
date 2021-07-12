@@ -2,9 +2,9 @@
 title: Video interattivi
 description: Scopri come lavorare con video interattivi e video acquistabili in Dynamic Media.
 feature: Video interattivi
-role: Business Practitioner
+role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '6021'
 ht-degree: 4%
@@ -755,7 +755,7 @@ Il sito web demo finale con il video interattivo completamente integrato viene v
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Utilizzo delle visualizzazioni rapide per creare finestre pop-up personalizzate Windows® {#using-quickviews-to-create-custom-pop-ups}
+## Utilizzo delle visualizzazioni rapide per creare un pop-up Windows® personalizzato {#using-quickviews-to-create-custom-pop-ups}
 
 Vedere [Uso delle visualizzazioni rapide per creare finestre pop-up personalizzate Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
 —>
