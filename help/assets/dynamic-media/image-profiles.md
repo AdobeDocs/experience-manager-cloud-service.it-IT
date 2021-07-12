@@ -2,9 +2,9 @@
 title: Profili immagine di Dynamic Media
 description: Scopri come creare profili immagine di Dynamic Media contenenti impostazioni per maschere non nitide, ritaglio avanzato o campione avanzato o entrambi. Quindi, applica il profilo a una cartella di risorse di immagini.
 feature: Gestione Delle Risorse, Profili Immagine, Rendering
-role: Business Practitioner
+role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2714'
 ht-degree: 10%
@@ -141,7 +141,7 @@ Le cartelle a cui è stato assegnato un profilo sono indicate nell’interfaccia
 
 Puoi rielaborare le risorse in una cartella che dispone già di un profilo immagine esistente che hai successivamente modificato. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-### Applicazione dei profili immagine Dynamic Media a cartelle specifiche {#applying-image-profiles-to-specific-folders}
+### Applicazione dei profili immagine di Dynamic Media a cartelle specifiche {#applying-image-profiles-to-specific-folders}
 
 Puoi applicare un profilo immagine a una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà]**.
 
@@ -149,7 +149,7 @@ Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visuali
 
 Puoi rielaborare le risorse in una cartella che dispone già di un profilo video esistente che hai successivamente modificato. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-#### Applicazione dei profili immagine Dynamic Media alle cartelle dall&#39;interfaccia utente Profili {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Applicazione dei profili immagine Dynamic Media alle cartelle dall’interfaccia utente Profili {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili immagine]**.
 1. Seleziona il profilo immagine da applicare a una o più cartelle.
@@ -270,7 +270,7 @@ Quando rimuovi un profilo immagine da una cartella, tutte le sottocartelle eredi
 
 Puoi rimuovere un profilo immagine da una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà]**.
 
-### Rimozione di profili immagine Dynamic Media dalle cartelle tramite l&#39;interfaccia utente Profili {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Rimozione dei profili immagine di Dynamic Media dalle cartelle tramite l’interfaccia utente Profili {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili immagine]**.
 1. Seleziona il profilo immagine da rimuovere da una o più cartelle.
@@ -278,7 +278,7 @@ Puoi rimuovere un profilo immagine da una cartella direttamente dal menu **[!UIC
 
    Puoi confermare che il profilo immagine non viene più applicato a una cartella perché il nome non viene più visualizzato sotto il nome della cartella.
 
-### Rimozione di profili immagine Dynamic Media dalle cartelle tramite Proprietà {#removing-image-profiles-from-folders-via-properties}
+### Rimozione dei profili immagine di Dynamic Media dalle cartelle tramite Proprietà {#removing-image-profiles-from-folders-via-properties}
 
 1. Tocca il logo Experience Manager, vai a **[!UICONTROL Risorse]** e quindi alla cartella da cui vuoi rimuovere un profilo immagine.
 1. Sulla cartella, tocca il segno di spunta per selezionarlo, quindi tocca **[!UICONTROL Proprietà]**.
