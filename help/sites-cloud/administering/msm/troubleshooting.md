@@ -1,20 +1,19 @@
 ---
 title: Risoluzione dei problemi e domande frequenti relativi a MSM
 description: Scopri come risolvere i problemi più comuni relativi a MSM e ottieni le risposte alle domande più comuni relative a MSM.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Gestione di più siti
+role: Admin
+exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 
+# Risoluzione dei problemi e domande frequenti relativi a MSM {#troubleshooting-msm}
 
-# Risoluzione dei problemi relativi a MSM e domande frequenti {#troubleshooting-msm}
-
-## Risoluzione dei problemi Primi passi {#first-steps}
+## Risoluzione dei problemi - Primi passi {#first-steps}
 
 Se stai riscontrando un comportamento errato o un errore in MSM, prima di iniziare e risolvere in modo dettagliato i problemi assicurati:
 
