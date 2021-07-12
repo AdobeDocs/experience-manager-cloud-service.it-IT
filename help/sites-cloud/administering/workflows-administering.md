@@ -1,16 +1,15 @@
 ---
 title: Amministrazione delle istanze dei flussi di lavoro
 description: Scopri come amministrare le istanze dei flussi di lavoro
-feature: Administering
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Amministrazione
+role: Admin
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '935'
 ht-degree: 1%
 
 ---
-
 
 # Amministrazione delle istanze dei flussi di lavoro {#administering-workflow-instances}
 
@@ -53,7 +52,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
    * Data di scadenza: Data di scadenza prima o dopo una data specificata
    * Data aggiornamento: Data aggiornata prima o dopo una data specificata
 
-## Sospensione, ripresa e terminazione di un&#39;istanza di flusso di lavoro {#suspending-resuming-and-terminating-a-workflow-instance}
+## Sospensione, ripresa e chiusura di un’istanza di flusso di lavoro {#suspending-resuming-and-terminating-a-workflow-instance}
 
 1. Utilizzando Navigazione selezionare **Strumenti**, quindi **Flusso di lavoro**.
 1. Seleziona **Istanze** per visualizzare l&#39;elenco delle istanze del flusso di lavoro attualmente in corso.
@@ -83,7 +82,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
 
-## Correzione degli errori di istanza del flusso di lavoro {#fixing-workflow-instance-failures}
+## Correzione degli errori di un&#39;istanza del flusso di lavoro {#fixing-workflow-instance-failures}
 
 Quando un flusso di lavoro non riesce, AEM fornisce la console **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
@@ -168,4 +167,3 @@ Puoi impostare la dimensione massima della casella in entrata configurando il **
 | Nome proprietà (console Web) | Nome proprietà OSGi |
 |---|---|
 | Dimensione massima query casella in entrata | granite.workflow.inboxQuerySize |
-
