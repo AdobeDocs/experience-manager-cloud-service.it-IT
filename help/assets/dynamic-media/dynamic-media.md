@@ -1,10 +1,9 @@
 ---
 title: Utilizzo di Dynamic Media
 description: Scopri come utilizzare Dynamic Media per distribuire risorse da utilizzare sui siti web, mobili e social.
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-translation-type: tm+mt
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 14%
