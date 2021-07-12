@@ -2,9 +2,9 @@
 title: Video
 description: Scopri come lavorare con i video in Dynamic Media.
 feature: Profili video
-role: Business Practitioner
+role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '9471'
 ht-degree: 6%
@@ -118,7 +118,7 @@ risorse digitaliUlteriori informazioni sulle  [best practice per organizzare le 
 
 
 
-## Utilizzo di video in Dynamic Media {#working-with-video-in-dynamic-media}
+## Utilizzo dei video in Dynamic Media {#working-with-video-in-dynamic-media}
 
 Video in Dynamic Media è una soluzione end-to-end che semplifica la pubblicazione di video adattivi di alta qualità per lo streaming su diversi schermi, tra cui desktop, iOS, Android™, BlackBerry® e dispositivi mobili Windows®. Un Adaptive Video Set raggruppa versioni dello stesso video codificate con diversi bit rate e formati come 400 kbps, 800 kbps e 1000 kbps. Il computer desktop o il dispositivo mobile rileva la larghezza di banda disponibile.
 
@@ -270,7 +270,7 @@ L’immagine seguente mostra il flusso di lavoro di authoring complessivo dei vi
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
-## Architettura di pubblicazione ibrida per video {#hybrid-publishing-architecture-for-videos}
+## Architettura di pubblicazione ibrida per i video {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
@@ -787,7 +787,7 @@ I tempi di pubblicazione possono variare notevolmente a seconda di numerosi fatt
 
 Dopo otto ore, se vedi ancora un messaggio di stato che dice **[!UICONTROL Caricato (elaborazione, attendi)]**, prova a rimuovere il video dal tuo sito e caricarlo di nuovo.
 
-### Collegamento di URL YouTube all&#39;applicazione Web {#linking-youtube-urls-to-your-web-application}
+### Collegamento degli URL YouTube all’applicazione Web {#linking-youtube-urls-to-your-web-application}
 
 Puoi ottenere una stringa URL YouTube generata da Dynamic Media dopo la pubblicazione del video. Quando copi l’URL di YouTube, questo viene inserito negli Appunti, in modo da poterlo incollare come necessario nelle pagine del sito web o dell’applicazione.
 
@@ -804,7 +804,7 @@ Per collegare gli URL YouTube alla tua applicazione web:
 1. Fare clic sulla scheda **[!UICONTROL Avanzate]**.
 1. Sotto l’intestazione Pubblicazione YouTube, nell’elenco URL di YouTube, seleziona e copia il testo dell’URL nel browser web per visualizzare l’anteprima della risorsa o per aggiungerla alla pagina del contenuto web.
 
-### Annullamento della pubblicazione dei video per rimuoverli da YouTube {#unpublishing-videos-to-remove-them-from-youtube}
+### Annullamento della pubblicazione di video per rimuoverli da YouTube {#unpublishing-videos-to-remove-them-from-youtube}
 
 Quando si annulla la pubblicazione di una risorsa video in Experience Manager, il video viene rimosso da YouTube.
 
@@ -824,11 +824,11 @@ Per annullare la pubblicazione dei video e rimuoverli da YouTube:
 1. Nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Avanti]**.
 1. Nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Annulla pubblicazione]**.
 
-## Monitoraggio della codifica video e stato di pubblicazione di YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
+## Monitoraggio della codifica video e stato della pubblicazione in YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 Quando carichi un nuovo video in una cartella a cui è stata applicata la codifica video o, pubblichi il video in YouTube, monitora l’avanzamento (o il mancato funzionamento) della codifica video/pubblicazione su Youtube. L’avanzamento effettivo della pubblicazione in YouTube è disponibile solo tramite i registri. Tuttavia, indipendentemente dal suo esito positivo o negativo, viene elencato in altri modi descritti nella procedura seguente. Inoltre, ricevi notifiche e-mail quando un flusso di lavoro o una codifica video di pubblicazione di YouTube viene completata o interrotta.
 
-### Monitoraggio dello stato di avanzamento {#monitoring-progress}
+### Monitoraggio dello stato {#monitoring-progress}
 
 **Per monitorare l’avanzamento, inclusa la codifica non riuscita/pubblicazione YouTube:**
 
@@ -1048,7 +1048,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## Aggiunta di sottotitoli al video {#adding-captions-to-video}
+## Aggiunta di sottotitoli a video {#adding-captions-to-video}
 
 Puoi estendere la portata dei tuoi video sui mercati globali aggiungendo sottotitoli a singoli video o a set di video adattivi. Aggiungendo i sottotitoli si evita la necessità di duplicare l&#39;audio o la necessità di utilizzare gli altoparlanti nativi per registrare nuovamente l&#39;audio per ogni lingua diversa. Il video viene riprodotto nella lingua in cui è stato registrato. I sottotitoli in lingua straniera vengono visualizzati in modo che le persone di lingue diverse possano ancora comprendere la porzione audio.
 
