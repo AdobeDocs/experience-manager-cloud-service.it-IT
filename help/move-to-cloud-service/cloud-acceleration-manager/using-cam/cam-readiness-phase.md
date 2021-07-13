@@ -1,17 +1,17 @@
 ---
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di preparazione di Cloud Acceleration Manager.
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 4%
+source-wordcount: '670'
+ht-degree: 5%
 
 ---
 
 
 # Fase di preparazione in Cloud Acceleration Manager {#readiness-phase-cam}
 
-Dopo aver creato un progetto in Cloud Acceleration Manager, ora puoi iniziare a eseguire gli strumenti disponibili nella fase di preparazione.
+Dopo aver creato un progetto in Cloud Acceleration Manager, ora puoi avviare la valutazione dell’implementazione AEM corrente nella fase di preparazione.
 
 La fase di preparazione include:
 
@@ -39,7 +39,10 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Segui questi passaggi per scaricare Best Practices Analyzer (BPA) ed eseguirlo su un clone del tuo sistema AEM.
+1. Segui questi passaggi per scaricare Best Practices Analyzer (BPA).
+
+   >[!NOTE]
+   >Per evitare un impatto sulle istanze aziendali critiche, si consiglia di eseguire BPA in un ambiente di authoring il più simile possibile all’ambiente di produzione nelle aree di personalizzazioni, configurazioni, contenuti e applicazioni utente. In alternativa, può essere eseguito su un clone dell’ambiente di authoring di produzione.
 
    1. Passa al portale [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) e scarica Best Practices Analyzer come file zip.
 
@@ -82,7 +85,7 @@ La scheda **Proprietà report** fornisce informazioni sulle proprietà del repor
 
 #### Panoramica dei rapporti {#report-overview}
 
-Questa scheda **Panoramica rapporto** fornisce i risultati del rapporto, come illustrato nella figura seguente.
+Questa scheda **Panoramica rapporto** fornisce i risultati del rapporto e i livelli di gravità da applicare durante la valutazione della preparazione al passaggio a AEM come Cloud Service, come illustrato nella figura riportata di seguito.
 
 ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -123,14 +126,14 @@ Da questa scheda puoi esaminare le seguenti informazioni:
 
 Segui questa sezione per esplorare la scheda delle attività Pianificazione e Configurazione .
 
-1. Fai clic sul pulsante **Visualizza** dalla scheda **Pianificazione e configurazione** che fornisce tutti i contenuti pertinenti che ti aiuteranno a pianificare e impostare la migrazione AEM.
+1. Fai clic sul pulsante **Visualizza** dalla scheda **Pianificazione e configurazione**. Questa scheda fornisce tutti i contenuti pertinenti che consentono di pianificare e impostare la migrazione AEM.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
-1. Viene visualizzato un carosello di contenuti con le informazioni pertinenti per questa fase del percorso di migrazione.
+1. Un carosello di contenuti visualizza tutte le informazioni rilevanti per questa fase del percorso di migrazione.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Novità {#whats-next}
 
-Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, ora puoi passare alla revisione del passaggio successivo, utilizzando la [fase di implementazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, ora puoi passare alla revisione del passaggio successivo nella [fase di implementazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
