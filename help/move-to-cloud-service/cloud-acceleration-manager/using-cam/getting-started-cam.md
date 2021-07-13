@@ -1,10 +1,7 @@
 ---
 title: Guida introduttiva di Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica su come utilizzare e iniziare a utilizzare Cloud Acceleration Manager.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 3%
