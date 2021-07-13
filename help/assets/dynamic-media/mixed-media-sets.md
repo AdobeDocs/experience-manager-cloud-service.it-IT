@@ -4,10 +4,10 @@ description: Scopri come utilizzare i set di file multimediali diversi in Dynami
 feature: Set di file multimediali diversi
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '1471'
-ht-degree: 23%
+source-wordcount: '1470'
+ht-degree: 15%
 
 ---
 
@@ -33,21 +33,21 @@ Per iniziare rapidamente a usare i set di file multimediali diversi, effettua le
 
 1. [Creare set di file multimediali diversi](#creating-mixed-media-sets).
 
-   Per creare un set di file multimediali diversi, dalla pagina Risorse tocca **[!UICONTROL Crea > Set di file multimediali diversi]**, quindi assegna un nome al set, scegli le risorse e stabilisci l’ordine in cui vengono visualizzate le immagini.
+   Per creare un set di file multimediali diversi, dalla pagina Risorse passa a **[!UICONTROL Crea]** > **[!UICONTROL Set di file multimediali diversi]** e assegna un nome al set, scegli le risorse e scegli l’ordine in cui vengono visualizzate le immagini.
 
-   Vedere [Utilizzo dei selettori](/help/assets/dynamic-media/working-with-selectors.md).
+   Consulta [Operazioni con i selettori](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Imposta i [predefiniti visualizzatore di file multimediali diversi](/help/assets/dynamic-media/managing-viewer-presets.md), a seconda delle esigenze.
 
    Gli amministratori possono creare o modificare i predefiniti visualizzatore di set di file multimediali diversi predefiniti. Per visualizzare i file multimediali diversi con un predefinito per visualizzatori, seleziona il set di file multimediali diversi e fai clic su **[!UICONTROL Visualizzatori]** nel menu a discesa della barra a sinistra.
 
-   Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]**.
+   Per creare o modificare i predefiniti visualizzatore, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]**.
 
-   Consulta [Aggiunta e modifica di predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
+   Consulta [Aggiungere e modificare i predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 1. [Anteprima di set di file multimediali diversi](#previewing-mixed-media-sets).
 
-   Seleziona il set di file multimediali diversi e puoi visualizzarlo in anteprima. Per esaminare il set di file multimediali diversi nel visualizzatore selezionato, fai clic sulle icone delle miniature. Puoi scegliere diversi visualizzatori dal menu a discesa **[!UICONTROL Visualizzatori]** , disponibile nella barra a sinistra.
+   Seleziona il set di file multimediali diversi e puoi visualizzarlo in anteprima. Per esaminare il set di file multimediali diversi nel visualizzatore selezionato, seleziona le icone delle miniature. Puoi scegliere diversi visualizzatori dal menu a discesa **[!UICONTROL Visualizzatori]** , disponibile nella barra a sinistra.
 
 1. [Pubblicare Set Di File Multimediali Misti](#publishing-mixed-media-sets).
 
@@ -59,7 +59,7 @@ Per iniziare rapidamente a usare i set di file multimediali diversi, effettua le
 
    Seleziona il set di file multimediali diversi, quindi seleziona **[!UICONTROL Visualizzatori]** dal menu a discesa della barra a sinistra.
 
-   Consulta le sezioni [Collegamento di un set di file multimediali diversi a una pagina web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) e [Incorporamento di un visualizzatore di video o immagini](/help/assets/dynamic-media/embed-code.md).
+   Consulta [Collegare un set di file multimediali diversi a una pagina web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) e [Incorporare il visualizzatore di video o immagini](/help/assets/dynamic-media/embed-code.md).
 
 Se necessario, puoi modificare [Set di file multimediali diversi](#editing-mixed-media-sets). Inoltre, puoi visualizzare e modificare le proprietà del [set di file multimediali diversi](/help/assets/manage-digital-assets.md#editing-properties).
 
@@ -67,21 +67,21 @@ Se necessario, puoi modificare [Set di file multimediali diversi](#editing-mixed
 >
 >In caso di problemi durante la creazione dei set, consulta [Risoluzione dei problemi relativi a Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 
-## Caricamento delle risorse {#uploading-assets}
+## Caricare le risorse {#uploading-assets}
 
 Per iniziare, carica le immagini e i video per i set di file multimediali diversi. Ricorda che gli utenti possono ingrandire le immagini nel visualizzatore di set di file multimediali diversi. Scegliere le immagini con questa funzionalità di zoom. Assicurati che le immagini siano di almeno 2000 pixel nelle dimensioni più grandi.
 
 Inoltre, se desideri aggiungere set 360 gradi o set di immagini al set di file multimediali diversi, creali pure.
 
-## Creazione di set di file multimediali diversi {#creating-mixed-media-sets}
+## Creare set di file multimediali diversi {#creating-mixed-media-sets}
 
 Puoi aggiungere immagini, set di immagini, set 360 gradi e video al set di file multimediali diversi. Assicurati che i file, i set di immagini e i set 360 gradi siano pronti per la pubblicazione prima di aggiungerli al set di file multimediali diversi.
 
 Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in ordine alfanumerico. Puoi riordinare o ordinare manualmente le risorse dopo averle aggiunte.
 
-**Per creare un set di file multimediali diversi:**
+**Per creare set di file multimediali diversi:**
 
-1. In Assets, individua il punto in cui vuoi creare un set di file multimediali diversi, fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Set di file multimediali diversi]**. Puoi anche creare il set dall’interno di una cartella contenente le risorse. Viene visualizzato l’Editor set di file multimediali diversi.
+1. In Assets, individua il punto in cui vuoi creare un set di file multimediali diversi, seleziona **[!UICONTROL Crea]** e seleziona **[!UICONTROL Set di file multimediali diversi]**. Puoi anche creare il set dall’interno di una cartella contenente le risorse. Viene visualizzato l’Editor set di file multimediali diversi.
 
    ![chlimage_1-138](assets/chlimage_1-349.png)
 
@@ -91,11 +91,11 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 
    >[!NOTE]
    >
-   >Quando crei il set di file multimediali diversi, puoi modificare la miniatura del set di file multimediali diversi o consentire ad Experience Manager di selezionarla automaticamente in base alle risorse nel set di file multimediali diversi. Per selezionare una miniatura, fai clic su **[!UICONTROL Cambia miniatura]** e seleziona una qualsiasi immagine (puoi passare ad altre cartelle per trovare anche le immagini). Se hai selezionato una miniatura e vuoi che l&#39;Experience Manager ne generi una dal set di file multimediali diversi, seleziona **[!UICONTROL Passa alla miniatura automatica]**.
+   >Quando crei il set di file multimediali diversi, puoi modificare la miniatura del set di file multimediali diversi o consentire ad Experience Manager di selezionarla automaticamente in base alle risorse nel set di file multimediali diversi. Per selezionare una miniatura, seleziona **[!UICONTROL Cambia miniatura]** e seleziona una qualsiasi immagine (puoi passare anche ad altre cartelle per trovare le immagini). Se hai selezionato una miniatura e vuoi che l&#39;Experience Manager ne generi una dal set di file multimediali diversi, seleziona **[!UICONTROL Passa alla miniatura automatica]**.
 
-1. Per selezionare le risorse da includere nel set di file multimediali diversi, tocca il selettore delle risorse. Selezionali e fai clic su **[!UICONTROL Seleziona]**.
+1. Per selezionare le risorse da includere nel set di file multimediali diversi, seleziona il selettore delle risorse. Selezionali e seleziona **[!UICONTROL Seleziona]**.
 
-   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, seleziona l’icona **[!UICONTROL Visualizza]** e fai clic su **[!UICONTROL Vista a elenco]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a schede]**.
+   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e selezionando **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e quindi fai clic sull&#39;icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, seleziona l’icona **[!UICONTROL Visualizza]** e fai clic su **[!UICONTROL Vista a elenco]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a schede]**.
 
    Vedere [Utilizzo dei selettori](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -105,17 +105,17 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 
    ![chlimage_1-141](assets/chlimage_1-352.png)
 
-   Per aggiungere delle miniature, fai clic sull’icona **+** **[!UICONTROL miniatura]** accanto all’immagine e individua la miniatura desiderata. Dopo aver selezionato tutte le miniature, fai clic su **[!UICONTROL Salva]**.
+   Per aggiungere le miniature, seleziona l’icona **+** **[!UICONTROL miniatura]** accanto all’immagine e individua la miniatura desiderata. Dopo aver selezionato tutte le miniature, seleziona **[!UICONTROL Salva]**.
 
    >[!NOTE]
    >
-   >Per aggiungere risorse, tocca **[!UICONTROL Aggiungi risorsa]**.
+   >Per aggiungere risorse, seleziona **[!UICONTROL Aggiungi risorsa]**.
 
-1. Per eliminare una risorsa, seleziona la casella di controllo corrispondente e tocca **[!UICONTROL Elimina risorsa]**.
-1. Per applicare un predefinito, tocca **[!UICONTROL Predefinito]** nell’angolo in alto a destra e seleziona un predefinito da applicare alle risorse.
-1. Fai clic su **[!UICONTROL Salva]**. Il set di file multimediali diversi appena creato viene visualizzato nella cartella in cui è stato creato.
+1. Per eliminare una risorsa, seleziona la casella di controllo corrispondente e seleziona **[!UICONTROL Elimina risorsa]**.
+1. Per applicare un predefinito, seleziona **[!UICONTROL Predefinito]** nell’angolo in alto a destra e seleziona un predefinito da applicare alle risorse.
+1. Seleziona **[!UICONTROL Salva]**. Il set di file multimediali diversi appena creato viene visualizzato nella cartella in cui è stato creato.
 
-## Modifica di set di file multimediali diversi {#editing-mixed-media-sets}
+## Modifica set di file multimediali diversi {#editing-mixed-media-sets}
 
 Puoi eseguire varie attività di modifica alle risorse in Set di file multimediali diversi direttamente nell’interfaccia utente [come qualsiasi risorsa in Assets](/help/assets/manage-digital-assets.md). In Set di file multimediali diversi è inoltre possibile effettuare le seguenti operazioni:
 
@@ -125,49 +125,49 @@ Puoi eseguire varie attività di modifica alle risorse in Set di file multimedia
 * Applica i predefiniti visualizzatore.
 * Modifica la miniatura predefinita.
 
-**Per modificare un set di file multimediali diversi:**
+**Per modificare i set di file multimediali diversi:**
 
 1. Effettua una delle seguenti operazioni:
 
-   * Passa il puntatore del mouse su una risorsa del set di file multimediali diversi, quindi tocca **[!UICONTROL Modifica]** (icona a forma di matita).
-   * Passa il puntatore del mouse su una risorsa del set di file multimediali diversi, tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi tocca **[!UICONTROL Modifica]** sulla barra degli strumenti.
+   * Passa il puntatore del mouse su una risorsa del set di file multimediali diversi, quindi seleziona **[!UICONTROL Modifica]** (icona a forma di matita).
+   * Passa il puntatore del mouse su una risorsa del set di file multimediali diversi, seleziona **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi seleziona **[!UICONTROL Modifica]** sulla barra degli strumenti.
 
-   * Tocca una risorsa Set di file multimediali diversi, quindi tocca **[!UICONTROL Modifica]** (icona a forma di matita) sulla barra degli strumenti.
+   * Seleziona una risorsa Set di file multimediali diversi, quindi seleziona **[!UICONTROL Modifica]** (icona a forma di matita) nella barra degli strumenti.
 
 1. Nell’Editor set di file multimediali diversi, effettua una delle seguenti operazioni:
 
-   * Per riordinare le risorse: nel pannello a sinistra, tocca **[!UICONTROL Risorse]** (icona immagine), trascina una risorsa in una nuova posizione.
-   * Per aggiungere risorse, tocca **[!UICONTROL Aggiungi risorsa]** sulla barra degli strumenti. Passa alle risorse. Per ogni risorsa da aggiungere, passa il cursore del mouse sull’immagine della risorsa (non sul nome della risorsa), quindi tocca l’icona a forma di segno di spunta. Nell’angolo in alto a destra, tocca **[!UICONTROL Seleziona]**.
+   * Per riordinare le risorse: nel pannello a sinistra, seleziona **[!UICONTROL Risorse]** (icona immagine), trascina una risorsa in una nuova posizione.
+   * Per aggiungere risorse, nella barra degli strumenti seleziona **[!UICONTROL Aggiungi risorsa]**. Passa alle risorse. Per ogni risorsa da aggiungere, passa il cursore del mouse sull’immagine della risorsa (non sul nome della risorsa), quindi seleziona l’icona a forma di segno di spunta. Nell&#39;angolo in alto a destra, seleziona **[!UICONTROL Seleziona]**.
 
-   * Per eliminare una risorsa: nel pannello a sinistra tocca **[!UICONTROL Risorse]** (icona immagine), quindi seleziona la risorsa. Nella barra degli strumenti, tocca **[!UICONTROL Elimina risorsa]**.
+   * Per eliminare una risorsa: nel pannello a sinistra, seleziona **[!UICONTROL Risorse]** (icona immagine), quindi seleziona la risorsa. Nella barra degli strumenti, seleziona **[!UICONTROL Elimina risorsa]**.
 
-   * Per ordinare le risorse in base al loro nome in ordine crescente o decrescente, nel pannello a sinistra tocca **[!UICONTROL Risorse]** (icona immagine). A destra dell’intestazione **[!UICONTROL Risorse]** , tocca le icone del cursore verso l’alto o il basso.
+   * Per ordinare le risorse in base al loro nome in ordine crescente o decrescente, nel pannello di sinistra seleziona **[!UICONTROL Risorse]** (icona immagine). A destra dell’intestazione **[!UICONTROL Risorse]** , seleziona le icone del cursore verso l’alto o verso il basso.
 
       >[!NOTE]
       >
-      >* Per eliminare un intero set di file multimediali diversi, da qualsiasi modalità di visualizzazione (ad esempio **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a colonne]**) passa al set di file multimediali diversi. Passa il puntatore del mouse sulla risorsa, quindi tocca l’icona del segno di spunta per selezionarla. Premere **[!UICONTROL Backspace]** sulla tastiera oppure fare clic su **[!UICONTROL Altro]** (tre punti) sulla barra degli strumenti, quindi toccare **[!UICONTROL Elimina]**.
+      >* Per eliminare un intero set di file multimediali diversi, da qualsiasi modalità di visualizzazione (ad esempio **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a colonne]**) passa al set di file multimediali diversi. Passa il puntatore del mouse sulla risorsa, quindi seleziona l’icona del segno di spunta per selezionarla. Premere **[!UICONTROL Backspace]** sulla tastiera oppure selezionare **[!UICONTROL Altro]** (tre punti) sulla barra degli strumenti, quindi selezionare **[!UICONTROL Elimina]**.
          >
          >
-      * Per modificare le risorse in un set di file multimediali diversi, passa al set . Nella barra a sinistra, tocca **[!UICONTROL Membri set]**, quindi tocca l’icona **[!UICONTROL Matita]** su una singola risorsa per aprire la finestra di modifica.
+      * Per modificare le risorse in un set di file multimediali diversi, passa al set . Nella barra a sinistra, seleziona **[!UICONTROL Membri set]**, quindi seleziona l’icona **[!UICONTROL Matita]** su una singola risorsa per aprire la finestra di modifica.
 
 
-1. Al termine della modifica, tocca **[!UICONTROL Salva]** .
+1. Selezionare **[!UICONTROL Salva]** al termine della modifica.
 
    >[!NOTE]
    >
-   >* Per modificare le risorse in un set di file multimediali diversi, passa a Set di file multimediali diversi. Toccate (non selezionate) il set per aprirlo nella pagina Anteprima set di Experienci Manager . Nella barra a sinistra, fai clic sul cursore verso il basso per aprire l’elenco a discesa, quindi tocca **[!UICONTROL Imposta membri]**. Nella pagina Membri set , passa il puntatore del mouse su una risorsa, quindi tocca **[!UICONTROL Modifica]** (icona a forma di matita) per aprire la pagina di modifica.
+   >* Per modificare le risorse in un set di file multimediali diversi, passa a Set di file multimediali diversi. Toccate (non selezionate) il set per aprirlo nella pagina Anteprima set di Experienci Manager . Nella barra a sinistra, seleziona il cursore verso il basso per aprire l’elenco a discesa, quindi seleziona **[!UICONTROL Imposta membri]**. Nella pagina Membri set , passa il puntatore del mouse su una risorsa, quindi seleziona **[!UICONTROL Modifica]** (icona a forma di matita) per aprire la pagina di modifica.
       >
       >
-   * Per eliminare un intero set di file multimediali diversi: da qualsiasi modalità di visualizzazione (come Vista a schede o Vista a colonne), vai al set di file multimediali diversi. Passa il puntatore del mouse sul set, quindi tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Premere **[!UICONTROL Backspace]** sulla tastiera oppure toccare **[!UICONTROL Altro]** (riga di tre punti), quindi toccare **[!UICONTROL Elimina]**.
+   * Per eliminare un intero set di file multimediali diversi: da qualsiasi modalità di visualizzazione (come Vista a schede o Vista a colonne), vai al set di file multimediali diversi. Passa il puntatore del mouse sul set, quindi seleziona **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Premere **[!UICONTROL Backspace]** sulla tastiera oppure selezionare **[!UICONTROL Altro]** (riga di tre punti), quindi selezionare **[!UICONTROL Elimina]**.
 
 
-## Anteprima dei set di file multimediali diversi {#previewing-mixed-media-sets}
+## Anteprima set di file multimediali diversi {#previewing-mixed-media-sets}
 
-Per informazioni dettagliate su come visualizzare in anteprima i set di file multimediali diversi, consulta [Anteprima delle risorse](/help/assets/dynamic-media/previewing-assets.md) .
+Per informazioni dettagliate su come visualizzare in anteprima i set di file multimediali diversi, consulta [Anteprima risorse](/help/assets/dynamic-media/previewing-assets.md) .
 
-## Pubblicazione di set di file multimediali diversi {#publishing-mixed-media-sets}
+## Pubblicare set di file multimediali diversi {#publishing-mixed-media-sets}
 
-Per informazioni dettagliate su come pubblicare set di file multimediali diversi, consulta [Pubblicazione di risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) .
+Per informazioni dettagliate su come pubblicare set di file multimediali diversi, consulta [Pubblicare risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) .
 
 >[!NOTE]
 >
