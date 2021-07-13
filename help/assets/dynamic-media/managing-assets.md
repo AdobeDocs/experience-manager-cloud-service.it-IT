@@ -1,21 +1,21 @@
 ---
-title: Informazioni sulla gestione delle risorse Dynamic Media
+title: Gestire le risorse Dynamic Media
 description: Scopri come utilizzare le risorse Dynamic Media.
 feature: Gestione risorse
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 13%
+source-wordcount: '119'
+ht-degree: 7%
 
 ---
 
-# Informazioni sulla gestione delle risorse Dynamic Media {#managing-assets}
+# Gestire le risorse Dynamic Media {#managing-assets}
 
 La gestione delle risorse Dynamic Media (immagini, video e risorse interattive) dopo il caricamento comporta diverse attività, tra cui visualizzazione dell’anteprima, download o pubblicazione.
 
-Quando visualizzi l’anteprima, puoi anche applicare i predefiniti immagine (solo per immagini) o predefiniti visualizzatore (per video e immagini). Non puoi applicare entrambi a una risorsa. Consulta [Applicazione dei predefiniti visualizzatore](viewer-presets.md) e [Applicazione dei predefiniti immagine](image-presets.md).
+Quando visualizzi l’anteprima, puoi anche applicare i predefiniti immagine (solo per immagini) o predefiniti visualizzatore (per video e immagini). Non puoi applicare entrambi a una risorsa. Consulta [Applicare i predefiniti visualizzatore](viewer-presets.md) e [Applicare i predefiniti immagine](image-presets.md).
 
 Le informazioni generali sulla gestione delle risorse si trovano in [Gestione delle risorse con l&#39;interfaccia utente touch](/help/assets/manage-digital-assets.md).
 
@@ -23,5 +23,5 @@ I seguenti argomenti descrivono le operazioni che puoi eseguire per gestire le r
 
 * [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Anteprima delle risorse Dynamic Media](previewing-assets.md)
-* [Pubblicazione delle risorse Dynamic Media](publishing-dynamicmedia-assets.md)
-* [Utilizzo dei selettori](working-with-selectors.md)
+* [Pubblicare risorse Dynamic Media](publishing-dynamicmedia-assets.md)
+* [Utilizzare i selettori](working-with-selectors.md)
