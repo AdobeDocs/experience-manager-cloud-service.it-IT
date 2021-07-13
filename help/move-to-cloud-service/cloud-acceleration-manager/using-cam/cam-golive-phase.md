@@ -1,10 +1,10 @@
 ---
 title: Fase di pubblicazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase Go-live in Cloud Acceleration Manager.
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 2%
+source-wordcount: '157'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Fai clic sulla scheda del progetto per aprire la pagina di destinazione del prog
 ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->Per ulteriori informazioni, consulta Creazione e gestione di un progetto in Cloud Acceleration Manager .
+>Per ulteriori informazioni, consulta [Creazione e gestione di un progetto in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) .
 
 
 ## Utilizzo della scheda Attività Go Live {#go-live}
