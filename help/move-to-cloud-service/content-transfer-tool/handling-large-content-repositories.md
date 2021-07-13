@@ -1,9 +1,9 @@
 ---
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione degli archivi di contenuti di grandi dimensioni
-source-git-commit: c19878b41970f4cd34083395ab11cf82c1db667e
+source-git-commit: 67c6c8af76b414600975fe349f025c7bf7acef5e
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1185'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 >id="aemcloud_ctt_precopy"
 >title="Gestione di archivi di contenuti di grandi dimensioni"
 >abstract="Per accelerare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM come Cloud Service, CTT può sfruttare AzCopy come passaggio opzionale di pre-copia. Una volta configurato questo passaggio preliminare, nella fase di estrazione, AzCopy copia i BLOB da Amazon S3 o Azure Blob Storage nell’archivio BLOB del set di migrazione. Nella fase di acquisizione, AzCopy copia i BLOB dall’archivio BLOB del set di migrazione al AEM di destinazione come archivio BLOB di Cloud Service."
->additional-url="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10" text="Guida introduttiva ad AzCopy"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step" text="Guida introduttiva ad AzCopy come passaggio Pre-Copy"
 
 La copia di un numero elevato di BLOB con lo strumento Content Transfer (CTT) può richiedere più giorni.
 Per accelerare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM come Cloud Service, CTT può sfruttare [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) come passaggio opzionale di pre-copia. Questo passaggio di pre-copia può essere utilizzato quando l’istanza AEM di origine è configurata per utilizzare un archivio dati di archiviazione BLOB di Amazon S3 o Azure.  Una volta configurato questo passaggio preliminare, nella fase di estrazione, AzCopy copia i BLOB da Amazon S3 o Azure Blob Storage nell’archivio BLOB del set di migrazione. Nella fase di acquisizione, AzCopy copia i BLOB dall’archivio BLOB del set di migrazione al AEM di destinazione come archivio BLOB di Cloud Service.
