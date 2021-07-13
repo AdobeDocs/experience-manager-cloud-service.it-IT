@@ -1,17 +1,17 @@
 ---
-title: Distribuzione di risorse Dynamic Media
+title: Fornire risorse Dynamic Media
 description: Scopri come distribuire le risorse Dynamic Media.
 feature: Gestione risorse
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 6%
+ht-degree: 2%
 
 ---
 
-# Distribuzione di risorse Dynamic Media{#delivering-dynamic-media-assets}
+# Fornire risorse Dynamic Media{#delivering-dynamic-media-assets}
 
 La modalità di distribuzione delle risorse Dynamic Media, sia video che immagini, dipende da come viene implementato il sito web.
 
@@ -30,15 +30,15 @@ Con Dynamic Media hai diverse opzioni:
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
-* [Aggiunta di risorse Dynamic Media alle pagine web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-* [Incorporamento del visualizzatore di video o immagini in una pagina web](/help/assets/dynamic-media/embed-code.md)
-* [Attivazione della protezione hotlinking in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
-* [Collegamento di URL all’applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-* [Distribuzione di immagini ottimizzate per un sito reattivo](/help/assets/dynamic-media/responsive-site.md)
+* [Aggiungere risorse Dynamic Media alle pagine Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Incorporare il visualizzatore di video o immagini in una pagina web](/help/assets/dynamic-media/embed-code.md)
+* [Attivare la protezione hotlink in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
+* [Collegare gli URL all’applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+* [Fornire immagini ottimizzate per un sito reattivo](/help/assets/dynamic-media/responsive-site.md)
 * [Distribuzione di contenuti HTTP2](/help/assets/dynamic-media/http2faq.md)
 * [Annullare la validità della cache CDN tramite Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [Annullamento della validità della cache CDN tramite Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-* [Utilizzo di set di regole per la trasformazione degli URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
+* [Annullare la validità della cache CDN tramite Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [Utilizzare i set di regole per trasformare gli URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## Distribuzione di risorse Dynamic Media HTTP/2 {#http-delivery-of-dynamic-media-assets}
 
