@@ -1,9 +1,9 @@
 ---
 title: Fase di implementazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di implementazione in Cloud Acceleration Manager.
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '610'
 ht-degree: 2%
 
 ---
@@ -37,14 +37,14 @@ Segui questa sezione per esplorare la scheda dell&#39;attività Sviluppo locale 
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-2.png)
 
-1. Viene visualizzato un carosello di contenuti con le informazioni pertinenti per questa fase del percorso di migrazione.
+1. Un carosello di contenuti visualizza le informazioni rilevanti per questa fase del percorso di migrazione.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## Utilizzo della scheda di refactoring del codice {#code-refactoring}
 
-La scheda dell’attività Refactoring del codice fornisce tutte le informazioni pertinenti ed evidenzia le aree di refactoring del codice che devi rivedere quando passi a AEM come Cloud Service.
+La scheda dell’attività Refactoring del codice fornisce tutte le informazioni pertinenti ed evidenzia le aree di refactoring del codice che devi rivedere e risolvere quando passi a AEM come Cloud Service.
 
 Leggi questa sezione per esplorare la scheda dell’attività Refactoring del codice :
 
@@ -70,7 +70,7 @@ Segui questa sezione per esplorare AEM come scheda attività Cloud Service della
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
 
-1. Viene visualizzato un carosello di contenuti con le informazioni pertinenti per questa fase del percorso di migrazione.
+1. Un carosello di contenuti visualizza le informazioni rilevanti per questa fase del percorso di migrazione.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
@@ -85,16 +85,19 @@ Leggi questa sezione per esplorare la scheda delle attività Content Transfer (T
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
 
-1. Viene visualizzato un carosello di contenuti con le informazioni pertinenti per questa fase del percorso di migrazione.
+1. Un carosello di contenuti visualizza le informazioni rilevanti per questa fase del percorso di migrazione.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >Leggi i [prerequisiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) e le [best practice e linee guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-### Stima dell’attività dello strumento Content Transfer (Trasferimento contenuti) {#calculating}
+### Stima del tempo di trasferimento dei contenuti {#calculating}
 
 È stato fornito un nuovo calcolatore dello strumento Content Transfer (Trasferimento contenuti) per stimare quanto tempo potrebbe essere necessario per completare l’attività di trasferimento dei contenuti. Puoi utilizzare il cursore delle dimensioni dell’archivio dei contenuti per selezionare le dimensioni da applicare al progetto. I tempi di trasferimento variano per le fasi di estrazione e acquisizione.
+
+>[!NOTE]
+>Questi tempi sono solo stime. In queste stime non sono stati presi in considerazione fattori quali la velocità di rete e il tempo necessario per aumentare le istanze.
 
 Per stimare le dimensioni dell&#39;archivio AEM, è possibile eseguire il rapporto Utilizzo disco in `http://HOST:PORT/etc/reports/diskusage.html`.
 
@@ -102,4 +105,4 @@ Puoi anche stimare le dimensioni di percorsi di archivio specifici utilizzando i
 
 ## Novità {#whats-next}
 
-Dopo aver appreso come accedere a Cloud Acceleration Manager e come utilizzare la fase di implementazione, ora sei pronto per passare alla revisione del passaggio successivo, [Utilizzo di Go Live Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en).
+Dopo aver appreso come accedere a Cloud Acceleration Manager e come utilizzare la fase di implementazione, ora sei pronto per passare alla revisione del passaggio successivo nella [Go Live Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en).
