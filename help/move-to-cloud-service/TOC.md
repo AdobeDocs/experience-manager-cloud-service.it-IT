@@ -5,10 +5,10 @@ breadcrumb-title: Guida al passaggio
 user-guide-description: Comprendi il percorso di transizione verso Cloud Service.
 feature: Distribuzione
 role: Architect, Developer
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 72%
+source-wordcount: '125'
+ht-degree: 54%
 
 ---
 
@@ -17,9 +17,18 @@ ht-degree: 72%
 
 + [Passaggio ad AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Fasi del percorso di transizione {#phases}
-   + [Pianificazione](/help/move-to-cloud-service/planning.md)
-   + [Esecuzione](/help/move-to-cloud-service/execution.md)
-   + [Post-pubblicazione](/help/move-to-cloud-service/post-go-live.md)
+   + [Preparazione](/help/move-to-cloud-service/migration-readiness.md)
+   + [Implementazione](/help/move-to-cloud-service/migration-implementation.md)
+   + [Post-Go live](/help/move-to-cloud-service/migration-post-go-live.md)
++ Cloud Acceleration Manager {#cloud-acceleration-manager}
+   + Introduzione a Cloud Acceleration Manager {#introduction-cam}
+      + [Panoramica](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
+      + [Vantaggi](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
+   + Utilizzo di Cloud Acceleration Manager {#using-cam}
+      + [Guida introduttiva di Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+      + [Fase di preparazione](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+      + [Fase di implementazione](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+      + [Vai alla fase live](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
 + Strumenti di transizione verso il cloud {#cloud-migration}
    + Analisi delle best practice {#best-practices-analyzer}
       + [Panoramica](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
