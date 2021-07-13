@@ -3,10 +3,10 @@ title: Domande frequenti sulla distribuzione dei contenuti HTTP2
 description: Informazioni sulla distribuzione dei contenuti HTTP2.
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 3%
+source-wordcount: '797'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
    Per trovare i tuoi domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-   Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**. Cerca il campo con etichetta **Nome server pubblicato**. Se utilizzi un dominio Dynamic Media generico, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione.
+   Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cerca il campo con etichetta **Nome server pubblicato**. Se utilizzi un dominio Dynamic Media generico, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione.
 
 ## Qual è la procedura per abilitare HTTP/2 per il mio account Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -60,7 +60,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
    Per trovare i tuoi domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-   Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**. Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**.
+   Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**.
 
    * Verifica di utilizzare HTTPS protetto per le richieste rich media.
    * Verifica di utilizzare la CDN tramite Adobe e di non gestirla con una relazione diretta.
@@ -68,7 +68,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
    Per trovare i tuoi domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-   Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**. Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se utilizzi un dominio Dynamic Media generico, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione.
+   Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se utilizzi un dominio Dynamic Media generico, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione.
 
    1. Il supporto tecnico ti aggiunge all’elenco di attesa dei clienti HTTP/2 in base all’ordine in cui sono state inviate le richieste.
    1. Quando Adobe è pronto per gestire la richiesta, l’Assistenza clienti ti contatta per coordinare la transizione e impostare una data di destinazione.
