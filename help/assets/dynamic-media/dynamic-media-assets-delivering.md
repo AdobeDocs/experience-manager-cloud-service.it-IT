@@ -1,16 +1,15 @@
 ---
-title: Distribuzione di risorse Dynamic Media
+title: Fornire risorse Dynamic Media
 description: Con Dynamic Media, hai diverse opzioni per distribuire le tue risorse Dynamic Media - sia video che immagini - al tuo sito web.
-translation-type: tm+mt
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '108'
-ht-degree: 19%
+ht-degree: 6%
 
 ---
 
 
-# Distribuzione di risorse Dynamic Media{#delivering-dynamic-media-assets}
+# Fornire risorse Dynamic Media{#delivering-dynamic-media-assets}
 
 La modalità di distribuzione delle risorse Dynamic Media, sia video che immagini, dipende da come viene implementato il sito web.
 
@@ -21,5 +20,5 @@ Con Dynamic Media hai diverse opzioni:
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
-* [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Aggiungere risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
