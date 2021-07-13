@@ -1,17 +1,17 @@
 ---
-title: Attivazione della protezione hotlinking in Dynamic Media
+title: Attivare la protezione hotlink in Dynamic Media
 description: Scopri come attivare la protezione hotlink in Dynamic Media.
 feature: Gestione risorse
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
-# Attivazione della protezione hotlinking in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
+# Attivare la protezione hotlink in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
 Il collegamento a caldo si verifica quando un sito web di terze parti utilizza codice HTML per visualizzare un’immagine dal sito web. Utilizzano la larghezza di banda ogni volta che l&#39;immagine viene richiesta perché il browser del visitatore vi accede direttamente dal server. Hotlink *protection* è un metodo per impedire ad altri siti web di collegarsi direttamente a immagini, CSS o JavaScript™ sulle tue pagine web. Questo tipo di schermo aiuta a ridurre l&#39;utilizzo di larghezza di banda inutile sotto il tuo account Dynamic Media.
 
