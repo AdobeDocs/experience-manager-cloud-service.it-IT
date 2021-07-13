@@ -4,7 +4,7 @@ description: Scopri come incorporare risorse video o immagini Dynamic Media in u
 feature: Gestione risorse
 role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 21%
@@ -17,19 +17,19 @@ Utilizza la funzione **[!UICONTROL Incorpora codice]** per riprodurre il video o
 
 Puoi incorporare gli URL solo se _non_ utilizzi Adobe Experience Manager come WCM. Se utilizzi Experience Manager come WCM, [aggiungi le risorse direttamente sulla pagina](adding-dynamic-media-assets-to-pages.md).
 
-Consulta [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
+Consulta [Collegare gli URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
-Consulta [Distribuzione di immagini ottimizzate per un sito reattivo](responsive-site.md).
+Consulta [Fornire immagini ottimizzate per un sito reattivo](responsive-site.md).
 
 >[!NOTE]
 >
 >Il codice di incorporamento non è disponibile per la copia finché non avrai pubblicato la risorsa selezionata. Inoltre, devi pubblicare il predefinito visualizzatore o il predefinito immagine.
 >
->Consulta [Pubblicazione di risorse](publishing-dynamicmedia-assets.md).
+>Consulta [Pubblicare risorse](publishing-dynamicmedia-assets.md).
 >
->Consulta [Pubblicazione dei predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
+>Consulta [Pubblica predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
 >
->Consulta [Pubblicazione di predefiniti immagine](managing-image-presets.md#publishing-image-presets).
+>Consulta [Pubblicare predefiniti immagine](managing-image-presets.md#publishing-image-presets).
 
 **Per incorporare il visualizzatore video o immagine Dynamic Media in una pagina web:**
 
@@ -37,19 +37,19 @@ Consulta [Distribuzione di immagini ottimizzate per un sito reattivo](responsive
 
    Il codice è disponibile per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito immagine.
 
-   Consulta [Pubblicazione di risorse](publishing-dynamicmedia-assets.md).
+   Consulta [Pubblicare risorse](publishing-dynamicmedia-assets.md).
 
-   Consulta [Pubblicazione dei predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
+   Consulta [Pubblica predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
 
-   Consulta [Pubblicazione di predefiniti immagine](managing-image-presets.md#publishing-image-presets).
+   Consulta [Pubblicare predefiniti immagine](managing-image-presets.md#publishing-image-presets).
 
-1. Nella barra a sinistra, seleziona l’elenco a discesa e tocca **[!UICONTROL Visualizzatori]**.
-1. Nella barra a sinistra, tocca un nome predefinito per visualizzatori. Il predefinito visualizzatore viene applicato alla risorsa.
-1. Tocca **[!UICONTROL Incorpora]**.
-1. Nella finestra di dialogo **[!UICONTROL Incorpora codice]**, copia l’intero codice negli Appunti, quindi tocca **[!UICONTROL Chiudi]**.
+1. Nella barra a sinistra, seleziona l’elenco a discesa e seleziona **[!UICONTROL Visualizzatori]**.
+1. Nella barra a sinistra, seleziona un nome di predefinito visualizzatore. Il predefinito visualizzatore viene applicato alla risorsa.
+1. Selezionare **[!UICONTROL Incorpora]**.
+1. Nella finestra di dialogo **[!UICONTROL Incorpora codice]**, copia l’intero codice negli Appunti, quindi seleziona **[!UICONTROL Chiudi]**.
 1. Incolla il codice di incorporamento nelle pagine web.
 
-## Utilizzo di HTTP/2 per fornire le risorse Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Utilizza HTTP/2 per distribuire le tue risorse Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 è il nuovo protocollo web aggiornato che migliora il modo in cui i browser e i server comunicano. Fornisce un trasferimento più rapido delle informazioni e riduce la quantità di potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media può ora avvenire tramite HTTP/2, garantendo tempi di risposta e caricamento migliori.
 
