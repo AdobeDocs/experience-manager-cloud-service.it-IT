@@ -1,12 +1,9 @@
 ---
 title: Vantaggi dell'utilizzo di Cloud Acceleration Manager
 description: Questa pagina evidenzia i vantaggi principali dell’utilizzo di Cloud Acceleration Manager.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -14,13 +11,25 @@ ht-degree: 0%
 
 # Vantaggi dell&#39;utilizzo di Cloud Acceleration Manager {#benefits-cam}
 
-Cloud Acceleration Manager è un’applicazione gratuita basata su cloud che fornisce una valutazione dell’implementazione Adobe Experience Manager (AEM) corrente di un cliente e aiuta a gestire il proprio percorso da AEM come Cloud Service seguendo la metodologia di migrazione consigliata dall’Adobe.
+Con una vasta gamma di requisiti e personalizzazioni aziendali, il passaggio al cloud può essere un progetto coinvolto. Cloud Acceleration Manager (CAM) offre ai team un’esperienza guidata con le best practice e la metodologia consigliate dagli Adobi per aiutare i team a pianificare, implementare e vivere con sicurezza.
 
 I vantaggi principali dell’utilizzo di Cloud Acceleration Manager sono i seguenti:
 
-* Fornisce una valutazione in un formato facile da utilizzare.
-* Guida e gestisce il percorso di transizione.
-* Fornisce best practice, aiuto pertinente e accesso agli strumenti per ridurre al minimo i tempi di migrazione.
+1. Pianificazione migliore e più intelligente:
+
+   * Semplifica la valutazione dell’istanza corrente tramite una rappresentazione visiva dei risultati di facile lettura.
+
+   * Valuta e comprendi la complessità stimata del passaggio a AEM come Cloud Service con un rapporto personalizzato dettagliato.
+
+1. Semplifica lo spostamento con indicazioni end-to-end:
+
+   * Gestisci il percorso di migrazione con funzionalità intelligenti incorporate che forniscono aiuto contestuale lungo il percorso.
+
+   * Rivedi e identifica le aree non supportate in AEM come Cloud Service o che richiedono un refactoring per garantire la compatibilità.
+
+1. Ottimizza gli sforzi:
+
+   Accedi alle best practice e agli strumenti di automazione consigliati dagli Adobi per accelerare le operazioni di migrazione e l’accesso agli strumenti per ridurre al minimo i tempi di migrazione.
 
 ## Novità {#whats-next}
 
