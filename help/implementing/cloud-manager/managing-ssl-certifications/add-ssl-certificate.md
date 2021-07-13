@@ -2,9 +2,9 @@
 title: Aggiunta di un certificato SSL - Gestione dei certificati SSL
 description: Aggiunta di un certificato SSL - Gestione dei certificati SSL
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,8 @@ Per convertire il formato dei file SSL in PEM, effettua le seguenti operazioni:
 
 * Per installare un certificato SSL in Cloud Manager, un utente deve trovarsi nel ruolo Proprietario business o Gestore distribuzione.
 
-* In un dato momento, Cloud Manager consentirà un massimo di 10 certificati SSL che possono essere associati a uno o più ambienti nel programma, anche se un certificato è scaduto. L’interfaccia utente di Cloud Manager, tuttavia, consentirà l’installazione di un massimo di 50 certificati SSL nel programma con questo vincolo.
+* In un dato momento, Cloud Manager consentirà un massimo di 10 certificati SSL che possono essere associati a uno o più ambienti nel programma, anche se un certificato è scaduto. L’interfaccia utente di Cloud Manager, tuttavia, consentirà l’installazione di un massimo di 50 certificati SSL nel programma con questo vincolo. In genere un certificato può includere più domini (fino a 100 SAN), pertanto è consigliabile raggruppare più domini nello stesso certificato per rimanere entro questo limite.
+
 
 ## Aggiunta di un certificato {#adding-a-cert}
 
@@ -68,7 +69,7 @@ Tutti e tre i campi non sono facoltativi e devono essere inclusi.
 
 ## Errori di certificato {#certificate-errors}
 
-### Ordine certificato corretto {#correct-certificate-order}
+### Ordine di certificazione corretto {#correct-certificate-order}
 
 Il motivo più comune per cui una distribuzione di certificati non riesce è che i certificati intermedi o a catena non sono nell’ordine corretto. In particolare, i file di certificato intermedio devono terminare con il certificato principale o il certificato più vicino alla radice ed essere in ordine decrescente dal certificato `main/server` alla radice.
 
