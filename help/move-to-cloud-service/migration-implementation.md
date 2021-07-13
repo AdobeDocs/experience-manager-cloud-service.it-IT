@@ -2,10 +2,10 @@
 title: Fase di implementazione
 description: Fase di implementazione
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 87%
+source-wordcount: '950'
+ht-degree: 89%
 
 ---
 
@@ -110,17 +110,4 @@ Consulta le risorse elencate di seguito per scoprire come utilizzare Cloud Manag
 
 * [Implementazione del codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
-## Best practice per la preparazione alla pubblicazione {#go-live}
 
->[!CONTEXTUALHELP]
->id="aemcloud_golive_prep"
->title="Preparazione Go-Live"
->abstract="Per garantire un&#39;esperienza di AEM fluida e di successo come Cloud Service, è necessario pianificare periodi di blocco del codice e dei contenuti, iterazioni di test, integrazioni di contenuto, test delle prestazioni, test di sicurezza e altro ancora."
-
-Per garantire una pubblicazione corretta e priva di problemi in AEM as a Cloud Service, valuta l’esecuzione dei seguenti passaggi:
-
-* Pianificare un periodo di blocco del codice e dei contenuti
-* Eseguire l’integrazione del contenuto finale
-* Completare le iterazioni di test
-* Eseguire test di prestazioni e sicurezza
-* Cutover
