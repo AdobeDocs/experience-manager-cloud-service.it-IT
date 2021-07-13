@@ -1,16 +1,16 @@
 ---
-title: Utilizzo di Dynamic Media
+title: Utilizzare Dynamic Media
 description: Scopri come utilizzare Dynamic Media per distribuire risorse da utilizzare sui siti web, mobili e social.
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 14%
+ht-degree: 12%
 
 ---
 
-# Utilizzo di Dynamic Media {#working-with-dynamic-media}
+# Utilizzare Dynamic Media {#working-with-dynamic-media}
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) permette di fornire on-demand risorse visive di marketing e merchandising, ridimensionandole automaticamente per siti web, dispositivi mobili e piattaforme social. Utilizzando un set di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
