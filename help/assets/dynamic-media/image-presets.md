@@ -1,17 +1,17 @@
 ---
-title: Applicazione dei predefiniti per le immagini Dynamic Media
+title: Applicare i predefiniti per immagini Dynamic Media
 description: Scopri come applicare i predefiniti immagine in Dynamic Media.
 feature: Predefiniti immagine,Visualizzatori,Rendering
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 7%
+ht-degree: 4%
 
 ---
 
-# Applicazione dei predefiniti per le immagini Dynamic Media {#applying-image-presets}
+# Applicare i predefiniti per immagini Dynamic Media {#applying-image-presets}
 
 I predefiniti per immagini consentono alle risorse di distribuire dinamicamente le immagini con dimensioni diverse, in formati diversi o con altre proprietà immagine generate in modo dinamico. È possibile scegliere un predefinito quando si esporta per riformattare le immagini in base alle specifiche definite dall&#39;amministratore.
 
@@ -27,7 +27,7 @@ Inoltre, puoi scegliere un predefinito immagine reattivo (designato dal pulsante
 
 **Per applicare i predefiniti immagine di Dynamic Media:**
 
-1. Apri la risorsa e, nella barra a sinistra, tocca l’elenco a discesa, quindi tocca **[!UICONTROL Rappresentazioni]**.
+1. Apri la risorsa e, nella barra a sinistra, seleziona l’elenco a discesa, quindi seleziona **[!UICONTROL Rappresentazioni]**.
 
    >[!NOTE]
    >
@@ -42,7 +42,7 @@ Inoltre, puoi scegliere un predefinito immagine reattivo (designato dal pulsante
 1. Effettua una delle operazioni seguenti:
 
    * Per visualizzare in anteprima il predefinito per immagini, seleziona un rendering dinamico.
-   * Per visualizzare la finestra a comparsa, tocca **[!UICONTROL URL]**, **[!UICONTROL Incorpora]** o **[!UICONTROL RESS]**.
+   * Per visualizzare la finestra a comparsa, seleziona **[!UICONTROL URL]**, **[!UICONTROL Incorpora]** o **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
