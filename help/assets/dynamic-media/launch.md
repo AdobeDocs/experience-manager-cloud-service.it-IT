@@ -1,17 +1,17 @@
 ---
-title: Integrazione dei visualizzatori Dynamic Media con Adobe Analytics e Experience Platform Launch
+title: Integrare i visualizzatori Dynamic Media con Adobe Analytics e Experience Platform Launch
 description: Scopri l’estensione Dynamic Media Viewers per Platform launch e Dynamic Media Viewers 5.13. Consente ai clienti di Adobe Analytics e Platform launch di utilizzare eventi e dati specifici per i visualizzatori nella configurazione del Platform launch.
 feature: Rapporti su risorse
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '6662'
-ht-degree: 9%
+source-wordcount: '6676'
+ht-degree: 7%
 
 ---
 
-# Integrazione dei visualizzatori Dynamic Media con Adobe Analytics e Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Integrare i visualizzatori Dynamic Media con Adobe Analytics e Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Cos’è l’integrazione dei visualizzatori Dynamic Media con Adobe Analytics e Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -39,11 +39,11 @@ Per ulteriori informazioni sulle estensioni, consulta [Estensioni di Adobe](http
 
 L’integrazione con Experience Platform Launch è un caso d’uso principale per i clienti che utilizzano sia Experience Manager Assets che Experience Manager Sites. In questi scenari, puoi impostare un’integrazione standard tra il nodo e il Experience Platform Launch di authoring di Experience Manager, quindi associare l’istanza Sites alla proprietà Experience Platform Launch. In seguito, qualsiasi componente WCM di Dynamic Media aggiunto a una pagina Sites terrà traccia dei dati e degli eventi dei visualizzatori.
 
-Consulta [Tracciamento dei visualizzatori Dynamic Media in Experience Manager Sites](#tracking-dynamic-media-viewers-in-aem-sites).
+Consulta [Tracciare i visualizzatori Dynamic Media in Experience Manager Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
 Un caso d’uso secondario supportato dall’integrazione è quello dei clienti che utilizzano solo Experience Manager Assets o Dynamic Media Classic. In questi casi, ottieni il codice di incorporamento per il visualizzatore e lo aggiungi alla pagina del sito web. Quindi, ottieni l&#39;URL di produzione della libreria di Experience Platform Launch dal Experience Platform Launch e aggiungilo manualmente al codice della pagina web.
 
-Consulta [Tracciamento dei visualizzatori Dynamic Media tramite codice di incorporamento](#tracking-dynamic-media-viewers-using-embed-code).
+Consulta [Tenere traccia dei visualizzatori Dynamic Media utilizzando il codice di incorporamento](#tracking-dynamic-media-viewers-using-embed-code).
 
 ## Funzionamento del tracciamento di dati ed eventi nell’integrazione {#how-data-and-event-tracking-works-in-the-integration}
 
@@ -59,7 +59,7 @@ Al Experience Platform Launch, i concetti di *Elementi dati* e *Regole* funziona
 
 Un elemento dati nel Experience Platform Launch è una proprietà denominata il cui valore è definito in modo statico o calcolato in modo dinamico in base allo stato di una pagina web o dei dati dei visualizzatori Dynamic Media.
 
-Le opzioni disponibili per una definizione di elemento dati dipendono dall’elenco delle estensioni installate nella proprietà del Experience Platform Launch. L&#39;estensione &quot;Core&quot; è preinstallata ed è disponibile out-of-the-box in qualsiasi configurazione. Questa estensione &quot;Core&quot; consente di definire un elemento dati che viene dal cookie, dal codice JavaScript™, dalla stringa di query e da molte altre sorgenti.
+Le opzioni disponibili per una definizione di elemento dati dipendono dall’elenco delle estensioni installate nella proprietà del Experience Platform Launch. L&#39;estensione &quot;Core&quot; è preinstallata ed è disponibile out-of-the-box in qualsiasi configurazione. Questa estensione &quot;Core&quot; consente di definire un elemento dati che viene dal cookie, dal codice JavaScript, dalla stringa di query e da molte altre sorgenti.
 
 Per il tracciamento di Adobe Analytics è necessario installare diverse altre estensioni, come descritto in [Installazione e configurazione di estensioni](#installing-and-setup-of-extensions). L’estensione Dynamic Media Viewers aggiunge la possibilità di definire un elemento dati il cui valore è un argomento dell’evento Dynamic Viewer. Ad esempio, è possibile fare riferimento al tipo di visualizzatore, o al nome della risorsa segnalato dal visualizzatore al momento del caricamento, al livello di zoom riportato quando l’utente finale effettua uno zoom e molto altro.
 
@@ -129,23 +129,23 @@ Consulta [Installazione e configurazione di estensioni](#installing-and-setup-of
 
 Attualmente, il supporto per il tracciamento video è limitato solo al tracciamento &quot;core playback&quot;, come descritto in [Panoramica tracciamento](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). In particolare, il tracciamento di QoS, annunci, capitoli/segmenti o errori non è supportato.
 
-## Utilizzo dell’estensione Dynamic Media Viewers {#using-the-dynamic-media-viewers-extension}
+## Utilizzare l’estensione Dynamic Media Viewers {#using-the-dynamic-media-viewers-extension}
 
 Come indicato in [Casi di utilizzo per l&#39;integrazione](#use-cases-for-the-integration), è possibile tenere traccia dei visualizzatori Dynamic Media con la nuova integrazione di Experience Platform Launch in Experience Manager Sites e utilizzando il codice di incorporamento.
 
-### Tracciamento dei visualizzatori Dynamic Media in Experience Manager Sites {#tracking-dynamic-media-viewers-in-aem-sites}
+### Tracciare i visualizzatori Dynamic Media in Experience Manager Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
-Per tenere traccia dei visualizzatori Dynamic Media in Experience Manager Sites, è necessario eseguire tutti i passaggi elencati nella sezione [Configurazione di tutti i pezzi di integrazione](#configuring-all-the-integration-pieces) . In particolare, devi creare la configurazione IMS e la configurazione Experience Platform Launch Cloud.
+Per tenere traccia dei visualizzatori Dynamic Media in Experience Manager Sites, è necessario eseguire tutti i passaggi elencati nella sezione [Configura tutti i pezzi di integrazione](#configuring-all-the-integration-pieces) . In particolare, devi creare la configurazione IMS e la configurazione Experience Platform Launch Cloud.
 
 In base alla configurazione corretta, qualsiasi visualizzatore Dynamic Media aggiunto a una pagina Sites, utilizzando un componente WCM supportato da Dynamic Media, traccia automaticamente i dati in Adobe Analytics, o Adobe Analytics for Video, o entrambi.
 
-Consulta [Aggiunta di risorse Dynamic Media alle pagine tramite Adobe Sites](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Consulta [Aggiungere risorse Dynamic Media alle pagine utilizzando Adobe Sites](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-### Tracciamento dei visualizzatori Dynamic Media tramite codice di incorporamento {#tracking-dynamic-media-viewers-using-embed-code}
+### Tracciare i visualizzatori Dynamic Media utilizzando il codice di incorporamento {#tracking-dynamic-media-viewers-using-embed-code}
 
 I clienti che non utilizzano Experience Manager Sites o che incorporano i visualizzatori Dynamic Media in pagine web al di fuori di Experience Manager Sites, o in entrambi, possono comunque utilizzare l’integrazione di Experience Platform Launch.
 
-Completa i passaggi di configurazione delle sezioni [Configurazione di Adobe Analytics](#configuring-adobe-analytics-for-the-integration) e [Configurazione di Experience Platform Launch](#configuring-adobe-launch-for-the-integration) . Tuttavia, non sono necessari passaggi di configurazione relativi ad Experience Manager.
+Completa i passaggi di configurazione delle sezioni [Configura Adobe Analytics](#configuring-adobe-analytics-for-the-integration) e [Configura Experience Platform Launch](#configuring-adobe-launch-for-the-integration) . Tuttavia, non sono necessari passaggi di configurazione relativi ad Experience Manager.
 
 Seguendo la configurazione corretta, è possibile aggiungere il supporto di Experience Platform Launch a una pagina web con un visualizzatore Dynamic Media.
 
@@ -153,12 +153,12 @@ Per ulteriori informazioni su come utilizzare il codice di incorporamento della 
 
 Per ulteriori informazioni su come utilizzare la funzione di codice di incorporamento di Experience Manager Dynamic Media, consulta [Incorporare il visualizzatore di video o immagini in una pagina web](/help/assets/dynamic-media/embed-code.md).
 
-**Per tenere traccia dei visualizzatori Dynamic Media utilizzando il codice di incorporamento:**
+**Tracciare i visualizzatori Dynamic Media utilizzando il codice di incorporamento:**
 
 1. Avere una pagina web pronta per l’incorporazione di un visualizzatore Dynamic Media.
-1. Ottieni il codice di incorporamento per la libreria di Experienci Platform Launch effettuando il primo accesso al Experience Platform Launch (consulta [Configurazione del Experience Platform Launch](#configuring-adobe-launch-for-the-integration)).
-1. Fai clic su **[!UICONTROL Proprietà]**, quindi fai clic sulla scheda **[!UICONTROL Ambienti]** .
-1. Scegli il livello Ambiente appropriato per l’ambiente della pagina web. Quindi, nella colonna **[!UICONTROL Installa]**, fai clic sull&#39;icona della casella.
+1. Ottieni il codice di incorporamento per la libreria di Experienci Platform Launch effettuando il primo accesso al Experience Platform Launch (consulta [Configura Experience Platform Launch](#configuring-adobe-launch-for-the-integration)).
+1. Seleziona **[!UICONTROL Proprietà]**, quindi seleziona la scheda **[!UICONTROL Ambienti]** .
+1. Scegli il livello Ambiente appropriato per l’ambiente della pagina web. Quindi, nella colonna **[!UICONTROL Installa]**, seleziona l’icona della casella.
 1. **[!UICONTROL Nella finestra di dialogo]** Istruzioni di installazione Web, copiare il codice di incorporamento della libreria di Experience Platform Launch completo insieme ai  `<script/>` tag circostanti.
 
 ## Guida di riferimento per l’estensione Dynamic Media Viewers {#reference-guide-for-the-dynamic-media-viewers-extension}
@@ -174,7 +174,7 @@ L’estensione Dynamic Media Viewer si integra automaticamente con la libreria d
 
 Inoltre, esiste un’opzione per disabilitare esplicitamente l’integrazione dei Experienci Platform Launch nel visualizzatore specificando il parametro `launch=0` nella configurazione del visualizzatore. Il valore predefinito di questo parametro è `1`.
 
-### Configurazione dell’estensione Dynamic Media Viewers {#configuring-the-dynamic-media-viewers-extension}
+### Configurare l’estensione Dynamic Media Viewers {#configuring-the-dynamic-media-viewers-extension}
 
 L&#39;unica opzione di configurazione per l&#39;estensione Dynamic Media Viewers è **[!UICONTROL Abilita Adobe Medium Analytics for Audio and Video]**.
 
@@ -195,7 +195,7 @@ Quando è selezionato, l’editor Elemento dati esegue il rendering di un modulo
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Consulta la [guida di riferimento visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) per l’elenco degli eventi supportati per ciascun tipo di visualizzatore; vai a una sezione specifica del visualizzatore, quindi fai clic su Supporto per la sottosezione di tracciamento di Adobe Analytics. Attualmente, la guida di riferimento visualizzatori Dynamic Media non documenta gli argomenti relativi agli eventi.
+Consulta la [guida di riferimento visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) per l’elenco degli eventi supportati per ciascun tipo di visualizzatore; vai a una sezione specifica del visualizzatore, quindi seleziona Supporto per la sottosezione di tracciamento di Adobe Analytics. Attualmente, la guida di riferimento visualizzatori Dynamic Media non documenta gli argomenti relativi agli eventi.
 
 Consideriamo ora il ciclo di vita dei visualizzatori Dynamic Media *Elemento dati*. Il valore di tale elemento dati viene popolato dopo che l’evento corrispondente del visualizzatore Dynamic Media si verifica sulla pagina. Ad esempio, supponiamo che l’elemento dati punti all’evento **[!UICONTROL LOAD]** e al relativo argomento &quot;risorsa&quot;. Il valore di tale elemento dati riceve dati validi dopo che il visualizzatore esegue l’evento LOAD per la prima volta. Se l’elemento dati punta all’evento **[!UICONTROL ZOOM]** e al relativo argomento &quot;scala&quot;, il valore di tale elemento dati rimane vuoto finché il visualizzatore non invia per la prima volta un evento **[!UICONTROL ZOOM]** .
 
@@ -252,7 +252,7 @@ L’estensione Dynamic Media Viewers consente di utilizzare i parametri evento d
 Il metodo più semplice per farlo è quello di completare il seguente processo in due fasi:
 
 * Innanzitutto, definisci uno o più elementi dati, in cui ogni elemento dati rappresenta un parametro di un evento Dynamic Media Viewer.
-* Infine, nell’editor Imposta variabili dell’estensione Adobe Analytics, fai clic sull’icona del selettore Elemento dati (tre dischi sovrapposti) per aprire la finestra di dialogo Seleziona elemento dati , quindi seleziona un elemento dati da esso.
+* Infine, nell’editor Imposta variabili dell’estensione Adobe Analytics, seleziona l’icona del selettore Elemento dati (tre dischi sovrapposti) per aprire la finestra di dialogo Seleziona elemento dati , quindi seleziona un elemento dati da esso.
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
@@ -262,7 +262,7 @@ Il metodo più semplice per farlo è quello di completare il seguente processo i
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-C&#39;è una differenza importante tra l&#39;utilizzo di Elementi dati e il riferimento diretto all&#39;argomento evento. Per l’elemento dati, non importa quale evento attiva l’azione Imposta variabili . L’evento che attiva la regola può non essere correlato al visualizzatore dinamico (come fare clic sulla pagina web dall’estensione Core). Tuttavia, quando si utilizza un riferimento a un argomento diretto, è importante garantire che l&#39;evento che attiva la regola corrisponda all&#39;argomento evento a cui fa riferimento.
+C&#39;è una differenza importante tra l&#39;utilizzo di Elementi dati e il riferimento diretto all&#39;argomento evento. Per l’elemento dati, non importa quale evento attiva l’azione Imposta variabili . L’evento che attiva la regola può non essere correlato al visualizzatore dinamico (come la selezione della pagina web dall’estensione Core). Tuttavia, quando si utilizza un riferimento a un argomento diretto, è importante garantire che l&#39;evento che attiva la regola corrisponda all&#39;argomento evento a cui fa riferimento.
 
 Ad esempio, il riferimento a `%event.detail.dm.LOAD.asset%` restituisce il nome corretto della risorsa se la regola viene attivata dall’evento **[!UICONTROL LOAD]** dell’estensione Dynamic Media Viewer. Tuttavia, restituisce un valore vuoto per qualsiasi altro evento.
 
@@ -397,7 +397,7 @@ Nella tabella seguente sono elencati gli eventi del visualizzatore Dynamic Media
  </tbody>
 </table>
 
-## Configurazione di tutti i pezzi di integrazione {#configuring-all-the-integration-pieces}
+## Configurare tutti i pezzi di integrazione {#configuring-all-the-integration-pieces}
 
 **PRIMA DI INIZIARE**
 
@@ -417,7 +417,7 @@ Inoltre, se questa soluzione di integrazione viene utilizzata con Experience Man
 
 Come parte della configurazione, assicurati di avere accesso a una società in Adobe Experience Cloud che dispone di Adobe Analytics e di un Experience Platform Launch già abilitati.
 
-## Configurazione di Adobe Analytics per l’integrazione {#configuring-adobe-analytics-for-the-integration}
+## Configurare Adobe Analytics per l’integrazione {#configuring-adobe-analytics-for-the-integration}
 
 Dopo aver configurato Adobe Analytics, per l’integrazione verrà impostato quanto segue:
 
@@ -429,13 +429,13 @@ Vedi anche [Guida all&#39;implementazione di Analytics](https://experienceleague
 
 **Per configurare Adobe Analytics per l’integrazione:**
 
-1. Per iniziare, accedi ad Adobe Analytics dall&#39;Experience Cloud [home page](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). Nella barra dei menu, fai clic sull&#39;icona Soluzioni (una tabella di punti tre per tre) vicino all&#39;angolo superiore destro della pagina, quindi fai clic su **[!UICONTROL Analytics]**.
+1. Per iniziare, accedi ad Adobe Analytics dall&#39;Experience Cloud [home page](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). Nella barra dei menu, seleziona l&#39;icona Soluzioni (una tabella di punti tre per tre) vicino all&#39;angolo superiore destro della pagina, quindi seleziona **[!UICONTROL Analytics]**.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
    Ora seleziona una suite di rapporti.
 
-### Selezione di una suite di rapporti {#selecting-a-report-suite}
+### Selezionare una suite di rapporti {#selecting-a-report-suite}
 
 1. Nell’angolo in alto a destra della pagina Adobe Analytics, alla destra del campo **[!UICONTROL Search Reports (Cerca rapporti)]**, seleziona la report suite corretta dall’elenco a discesa. Se sono disponibili più report suite e non sai quale utilizzare, contatta l’amministratore Adobe Analytics che ti fornirà supporto al riguardo.
 
@@ -445,13 +445,13 @@ Vedi anche [Guida all&#39;implementazione di Analytics](https://experienceleague
 
    Consulta [Report e suite per report](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) e [Creare una suite per report](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites).
 
-   In Adobe Analytics, le suite di rapporti sono gestite in **[!UICONTROL Amministratore > Suite di rapporti]**.
+   In Adobe Analytics, le suite di rapporti sono gestite in **[!UICONTROL Amministratore]** > **[!UICONTROL Suite di rapporti]**.
 
    ![2019-07-22_18-09-49](assets/2019-07-22_18-09-49.png)
 
    Ora configura le variabili Adobe Analytics.
 
-### Configurazione delle variabili Adobe Analytics {#setting-up-adobe-analytics-variables}
+### Impostare le variabili di Adobe Analytics {#setting-up-adobe-analytics-variables}
 
 1. Designa una o più variabili Adobe Analytics da utilizzare per monitorare il comportamento dei visualizzatori Dynamic Media sulla pagina web.
 
@@ -461,30 +461,30 @@ Vedi anche [Guida all&#39;implementazione di Analytics](https://experienceleague
 
    Ai fini di questa documentazione, verrà utilizzata solo una variabile Traffico personalizzato (proprietà) perché diventano disponibili in un rapporto di Analytics entro pochi minuti dall’esecuzione di un’azione su una pagina web.
 
-   Per abilitare una nuova variabile Traffico personalizzato, nella barra degli strumenti di Adobe Analytics fai clic su **[!UICONTROL Amministratore > Suite di rapporti]**.
+   Per abilitare una nuova variabile Traffico personalizzato, in Adobe Analytics, sulla barra degli strumenti, vai a **[!UICONTROL Amministratore]** > **[!UICONTROL Suite di rapporti]**.
 
-1. Nella pagina **[!UICONTROL Report Suite Manager]** , seleziona il rapporto corretto, quindi fai clic su **[!UICONTROL Modifica impostazioni]** > **[!UICONTROL Traffico]** > **[!UICONTROL Variabili di traffico]** sulla barra degli strumenti.
+1. Nella pagina **[!UICONTROL Report Suite Manager]** , seleziona il report corretto, quindi nella barra degli strumenti vai a **[!UICONTROL Modifica impostazioni]** > **[!UICONTROL Traffico]** > **[!UICONTROL Variabili di traffico]**.
 1. Scegli una variabile non utilizzata, assegnagli un nome descrittivo ( **[!UICONTROL Viewer asset (Risorsa visualizzatore) (prop 30)]**), quindi modifica la casella combinata in &quot;Enabled&quot; (Abilitato) nella colonna Enabled (Abilitato).
 
    La schermata seguente è un esempio di variabile Traffico personalizzato ( **[!UICONTROL prop30]**) per il tracciamento del nome di una risorsa utilizzata dal visualizzatore:
 
    ![image2019-6-26_23-6-59](/help/assets/dynamic-media/assets/image2019-6-26_23-6-59.png)
 
-1. Nella parte inferiore dell’elenco delle variabili, fai clic su **[!UICONTROL Salva]**.
+1. Nella parte inferiore dell’elenco delle variabili, seleziona **[!UICONTROL Salva]**.
 
-### Impostazione di un rapporto {#setting-up-a-report}
+### Impostare un rapporto {#setting-up-a-report}
 
 1. In genere, l’impostazione di un rapporto in Adobe Analytics è guidata da specifiche esigenze di progetto. Di conseguenza, una configurazione dettagliata dei rapporti va oltre lo scopo di questa integrazione.
 
-   È tuttavia sufficiente sapere che i rapporti Traffico personalizzato diventano automaticamente disponibili in Adobe Analytics dopo aver impostato le variabili Traffico personalizzato in **[Impostazione delle variabili Adobe Analytics](#setting-up-adobe-analytics-variables)**.
+   È tuttavia sufficiente sapere che i rapporti Traffico personalizzato diventano automaticamente disponibili in Adobe Analytics dopo aver impostato le variabili Traffico personalizzato in **[Imposta le variabili Adobe Analytics](#setting-up-adobe-analytics-variables)**.
 
-   Ad esempio, il rapporto per la variabile di **[!UICONTROL Viewer asset (Risorsa visualizzatore) (prop 30)]** è disponibile dal menu Rapporti di **[!UICONTROL Traffico personalizzato > Traffico personalizzato 21-30 > Viewer asset (Risorsa visualizzatore) (prop 30)]**.
+   Ad esempio, il rapporto per la variabile **[!UICONTROL Risorsa visualizzatore (prop 30)]** è disponibile dal menu Rapporti in **[!UICONTROL Traffico personalizzato]** > **[!UICONTROL Traffico personalizzato 21-30]** > **[!UICONTROL Risorsa visualizzatore (prop 30)]**.
 
    Se accedi a questo rapporto subito dopo la creazione di **[!UICONTROL Viewer asset (Risorsa visualizzatore) (prop 30)]** non troverai alcun dato, il che è piuttosto normale a questo punto dell’integrazione.
 
    ![image2019-6-26_23-12-49](/help/assets/dynamic-media/assets/image2019-6-26_23-12-49.png)
 
-## Configurazione del Experience Platform Launch per l’integrazione {#configuring-adobe-launch-for-the-integration}
+## Configurare un Experience Platform Launch per l’integrazione {#configuring-adobe-launch-for-the-integration}
 
 Dopo aver configurato il Experience Platform Launch, per l’integrazione verrà impostato quanto segue:
 
@@ -495,46 +495,48 @@ Dopo aver configurato il Experience Platform Launch, per l’integrazione verrà
 
 **Per configurare un Experience Platform Launch per l’integrazione:**
 
-1. Per iniziare, accedi a Experience Platform Launch dall&#39;Experience Cloud [home page](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). Nella barra dei menu, fai clic sull&#39;icona Soluzioni (tre per tre tabelle di punti) vicino all&#39;angolo superiore destro della pagina, quindi fai clic su **[!UICONTROL Launch]**.
+1. Per iniziare, accedi a Experience Platform Launch dall&#39;Experience Cloud [home page](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). Nella barra dei menu, seleziona l&#39;icona Soluzioni (tre per tre tabelle di punti) vicino all&#39;angolo superiore destro della pagina, quindi seleziona **[!UICONTROL Launch]**.
 
    È inoltre possibile [aprire direttamente il Experience Platform Launch](https://launch.adobe.com/).
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
-### Creazione di una proprietà nel Experience Platform Launch {#creating-a-property-in-adobe-launch}
+### Creare una proprietà nel Experience Platform Launch {#creating-a-property-in-adobe-launch}
 
 Una proprietà in Experience Platform Launch è una configurazione denominata che mantiene tutte le impostazioni insieme. Viene generata e pubblicata una libreria delle impostazioni di configurazione a diversi livelli di ambiente (sviluppo, staging e produzione).
 
 Consulta anche [Creare una proprietà Launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
 
-1. In Experience Platform Launch, fai clic su **[!UICONTROL Nuova proprietà]**.
+**Per creare una proprietà nel Experience Platform Launch:**
+
+1. In Experience Platform Launch, selezionare **[!UICONTROL Nuova proprietà]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea proprietà]**, digita un nome descrittivo nel campo **[!UICONTROL Nome]**, ad esempio il titolo del tuo sito web. Esempio, `DynamicMediaViewersProp.`
 1. Nel campo **[!UICONTROL Domains]** , immetti il dominio del sito web.
 1. Se l’estensione da utilizzare, in questo caso **[!UICONTROL Dynamic Media Viewers]**, non è ancora stata rilasciata, abilita **[!UICONTROL Configure for extension development (Configura per lo sviluppo dell’estensione) (l’opzione non può essere modificata in seguito)]** nel menu a discesa *Opzioni avanzate*.
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
-1. Fai clic su **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Salva]**.
 
-   Fai clic sulla nuova proprietà creata, quindi procedi a *Installazione e configurazione di estensioni*.
+   Seleziona la nuova proprietà creata, quindi procedi a *Installazione e configurazione di estensioni*.
 
-### Installazione e configurazione delle estensioni {#installing-and-setup-of-extensions}
+### Installazione e configurazione di estensioni {#installing-and-setup-of-extensions}
 
-Tutte le estensioni disponibili nel Experience Platform Launch sono elencate in **[!UICONTROL Estensioni > Catalogo]**.
+Tutte le estensioni disponibili nel Experience Platform Launch sono elencate in **[!UICONTROL Estensioni]** > **[!UICONTROL Catalogo]**.
 
-Per installare un&#39;estensione, fai clic su **[!UICONTROL Installa]**. Se necessario, esegui una configurazione di estensione una tantum, quindi fai clic su **[!UICONTROL Salva]**.
+Per installare un&#39;estensione, seleziona **[!UICONTROL Installa]**. Se necessario, esegui una configurazione di estensione una tantum, quindi seleziona **[!UICONTROL Salva]**.
 
 Se necessario, è necessario installare e configurare le seguenti estensioni:
 
 * (Obbligatorio) Estensione *Experience Cloud ID Service*
 
-Non è necessaria alcuna configurazione aggiuntiva, accetta per eventuali valori proposti. Al termine, assicurati di fare clic su **[!UICONTROL Salva]**.
+Non è necessaria alcuna configurazione aggiuntiva, accetta per eventuali valori proposti. Al termine, assicurati di selezionare **[!UICONTROL Salva]**.
 
 Consulta [Estensione del servizio Experience Cloud ID](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html#extensions-ref).
 
 * (Obbligatorio) Estensione *Adobe Analytics*
 
-Per configurare questa estensione, devi disporre dell’ID suite di rapporti presente in Adobe Analytics, alla voce **[!UICONTROL Amministratore > Suite di rapporti]**, nell’intestazione di colonna **[!UICONTROL ID suite di rapporti]** .
+Per configurare questa estensione, devi disporre dell’ID suite di rapporti presente in Adobe Analytics, alla voce **[!UICONTROL Amministratore]** > **[!UICONTROL Suite di rapporti]**, nell’intestazione di colonna **[!UICONTROL ID suite di rapporti]** .
 
 (Solo a scopo dimostrativo, l’ID suite di rapporti di **[!UICONTROL DynamicMediaViewersExtensionDoc]** viene utilizzato nelle schermate seguenti. Questo ID è stato creato e utilizzato nella precedente sezione [Selezione di una report suite](#selecting-a-report-suite).
 
@@ -548,7 +550,7 @@ Nella pagina Installa estensione, immetti l’ID Report Suite nel campo **[!UICO
 
 Nella pagina **[!UICONTROL Installa estensione]** , espandi **[!UICONTROL Generale]**, quindi specifica il server di tracciamento. Il server di tracciamento segue il modello `<trackingNamespace>.sc.omtrdc.net`, dove `<trackingNamespace>` sono le informazioni ottenute nell&#39;e-mail di provisioning.
 
-Fai clic su **[!UICONTROL Salva]**.
+Seleziona **[!UICONTROL Salva]**.
 
 Consulta [Estensione Adobe Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref).
 
@@ -566,13 +568,13 @@ Per attivare il tracking Video Heartbeat, seleziona **[!UICONTROL enable Adobe A
 
 A partire da questa scrittura, l&#39;estensione *Dynamic Media Viewers* è disponibile solo se per lo sviluppo viene creata la proprietà del Experience Platform Launch .
 
-Vedere [Creazione di una proprietà in Experience Platform Launch](#creating-a-property-in-adobe-launch).
+Consulta [Creare una proprietà in Experience Platform Launch](#creating-a-property-in-adobe-launch).
 
 Una volta installate e configurate le estensioni, almeno le seguenti cinque estensioni (quattro se non stai monitorando il video) saranno elencate nell&#39;area Estensioni > Installate .
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
-### Impostazione di elementi dati e regole {#setting-up-data-elements-and-rules}
+### Impostare elementi dati e regole {#setting-up-data-elements-and-rules}
 
 Al Experience Platform Launch, crea elementi dati e regole necessari per tenere traccia dei visualizzatori Dynamic Media.
 
@@ -580,9 +582,9 @@ Per una panoramica del tracciamento con il Experience Platform Launch, consulta 
 
 Consulta [Configurazione di esempio](#sample-configuration) per una configurazione di esempio in un Experience Platform Launch che dimostra come monitorare un nome di risorsa al caricamento del visualizzatore.
 
-Per informazioni approfondite sulle funzionalità dell&#39;estensione, consulta [Configurazione dell&#39;estensione Dynamic Media Viewers](#configuring-the-dynamic-media-viewers-extension) .
+Per informazioni approfondite sulle funzionalità dell&#39;estensione, consulta [Configurare l&#39;estensione Dynamic Media Viewers](#configuring-the-dynamic-media-viewers-extension) .
 
-### Pubblicazione di una libreria {#publishing-a-library}
+### Pubblicare una libreria {#publishing-a-library}
 
 Per modificare la configurazione del Experience Platform Launch (compresa la configurazione di Proprietà, Estensioni, Regole ed Elementi dati), devi *pubblicare* tali modifiche. La pubblicazione nel Experience Platform Launch viene eseguita dalla scheda Pubblicazione nella configurazione Proprietà.
 
@@ -595,11 +597,11 @@ La pubblicazione di una libreria prevede i due passaggi seguenti:
 * Aggiunta e creazione di una nuova libreria includendo tutte le modifiche necessarie (nuove e aggiornate) nella libreria.
 * Spostamento della libreria nei diversi livelli di ambiente (da Sviluppo a Staging e Produzione).
 
-#### Aggiunta e creazione di una nuova libreria {#adding-and-building-a-new-library}
+#### Aggiungi e genera una nuova libreria {#adding-and-building-a-new-library}
 
 1. La prima volta che apri la scheda Pubblicazione in Experience Platform Launch, l’elenco delle librerie è vuoto.
 
-   Nella colonna a sinistra, fai clic su **[!UICONTROL Aggiungi nuova libreria]**.
+   Nella colonna a sinistra, seleziona **[!UICONTROL Aggiungi nuova libreria]**.
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
@@ -607,11 +609,11 @@ La pubblicazione di una libreria prevede i due passaggi seguenti:
 
    *DynamicMediaViewersLib*
 
-   Dall’elenco a discesa Ambiente , scegli il livello Ambiente . Inizialmente, è disponibile solo il livello di sviluppo per la selezione. Fai clic su **[!UICONTROL Aggiungi tutte le risorse modificate]** nell’angolo in basso a sinistra della pagina.
+   Dall’elenco a discesa Ambiente , scegli il livello Ambiente . Inizialmente, è disponibile solo il livello di sviluppo per la selezione. Vicino al lato inferiore sinistro della pagina, selezionare **[!UICONTROL Aggiungi tutte le risorse modificate]**.
 
    ![image2019-7-15_14-49-41](assets/image2019-7-15_14-49-41.png)
 
-1. Fai clic su **[!UICONTROL Salva e genera per sviluppo]** nell’angolo in alto a destra della pagina.
+1. Nell&#39;angolo in alto a destra della pagina, seleziona **[!UICONTROL Salva e genera per sviluppo]**.
 
    In pochi minuti, la libreria viene creata e pronta per l&#39;uso.
 
@@ -619,36 +621,36 @@ La pubblicazione di una libreria prevede i due passaggi seguenti:
 
    >[!NOTE]
    >
-   >La prossima volta che modifichi la configurazione del Experience Platform Launch, vai alla scheda **[!UICONTROL Pubblicazione]** nella configurazione **[!UICONTROL Proprietà]**, quindi fai clic sulla libreria creata in precedenza.
+   >Alla successiva modifica della configurazione del Experience Platform Launch, passa alla scheda **[!UICONTROL Pubblicazione]** nella configurazione **[!UICONTROL Proprietà]**, quindi seleziona la libreria creata in precedenza.
    >
    >
-   >Dalla schermata di pubblicazione della libreria, fai clic su **[!UICONTROL Aggiungi tutte le risorse modificate]**, quindi fai clic su **[!UICONTROL Salva e genera per sviluppo]**.
+   >Dalla schermata di pubblicazione della libreria, seleziona **[!UICONTROL Aggiungi tutte le risorse modificate]**, quindi seleziona **[!UICONTROL Salva e genera per sviluppo]**.
 
-#### Spostamento di una libreria attraverso i livelli di ambiente {#moving-a-library-up-through-environment-levels}
+#### Spostarsi verso l&#39;alto in una libreria attraverso i livelli dell&#39;ambiente {#moving-a-library-up-through-environment-levels}
 
-1. Dopo l&#39;aggiunta di una nuova libreria, questa viene trovata nell&#39;ambiente di sviluppo. Per spostarlo a livello di ambiente di staging (corrispondente alla colonna Inviato), dal menu a discesa della libreria fare clic su **[!UICONTROL Invia per approvazione]**.
+1. Dopo l&#39;aggiunta di una nuova libreria, questa viene trovata nell&#39;ambiente di sviluppo. Per spostarlo a livello di ambiente di staging (corrispondente alla colonna Inviato), dal menu a discesa della libreria, selezionare **[!UICONTROL Invia per approvazione]**.
 
    ![image2019-7-15_15-52-37](assets/image2019-7-15_15-52-37.png)
 
-1. Nella finestra di dialogo di conferma, fai clic su **[!UICONTROL Invia]**.
+1. Nella finestra di dialogo di conferma, seleziona **[!UICONTROL Invia]**.
 
-   Una volta che la libreria si sposta nella colonna Inviato, fai clic su **[!UICONTROL Genera per staging]** dal menu a discesa della libreria.
+   Una volta che la libreria si sposta nella colonna Inviato, dal menu a discesa della libreria, seleziona **[!UICONTROL Genera per staging]**.
 
    ![image2019-7-15_15-54-37](assets/image2019-7-15_15-54-37.png)
 
 1. Per spostare la libreria dall’ambiente di staging all’ambiente di produzione (colonna Pubblicato ), segui un processo simile.
 
-   Innanzitutto, dal menu a discesa, fai clic su **[!UICONTROL Approva per la pubblicazione]**.
+   Innanzitutto, dal menu a discesa, seleziona **[!UICONTROL Approva per la pubblicazione]**.
 
    ![image2019-7-15_16-7-39](assets/image2019-7-15_16-7-39.png)
 
-1. Dal menu a discesa, fai clic su **[!UICONTROL Genera e pubblica in produzione]**.
+1. Dal menu a discesa, seleziona **[!UICONTROL Genera e pubblica in produzione]**.
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
    Per ulteriori informazioni sul processo di pubblicazione in Experience Platform Launch, consulta [Pubblicazione](https://experienceleague.adobe.com/docs/launch/using/publish/overview.html#publish) .
 
-## Configurazione di Adobe Experience Manager per l’integrazione {#configuring-adobe-experience-manager-for-the-integration}
+## Configurare Adobe Experience Manager per l’integrazione {#configuring-adobe-experience-manager-for-the-integration}
 
 <!-- Prerequisites list below should be verified by Sasha -->
 
@@ -663,40 +665,40 @@ La configurazione dell’Experience Manager consiste dei due passaggi principali
 * Configurazione di Experience Manager IMS.
 * Configurazione di Experience Platform Launch Cloud.
 
-### Configurazione di Experience Manager IMS {#configuring-aem-ims}
+### Configurare Experience Manager IMS {#configuring-aem-ims}
 
-1. In Experience Manager Author, fai clic sull’icona Strumenti (martello), quindi fai clic su **[!UICONTROL Sicurezza > Configurazioni IMS Adobe]**.
+1. In Experience Manager Author, seleziona l’icona Strumenti (martello), quindi vai a **[!UICONTROL Sicurezza]** > **[!UICONTROL Adobe configurazioni IMS]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
-1. Nella pagina Configurazione IMC di Adobe, nell’angolo in alto a sinistra, fai clic su **[!UICONTROL Crea]**.
-1. Nella pagina **[!UICONTROL Configurazione account tecnico Adobe IMS]**, nell&#39;elenco a discesa **[!UICONTROL Soluzione cloud]** , fai clic su **[!UICONTROL Raccolta dati Experience Platform]**.
-1. Abilita **[!UICONTROL Crea nuovo certificato]**, quindi inserisci qualsiasi valore significativo per il certificato nel campo di testo. Ad esempio, *AdobeLaunchIMSCert*. Fai clic su **[!UICONTROL Crea certificato]**.
+1. Nella pagina Configurazione IMC di Adobe, nell’angolo in alto a sinistra, seleziona **[!UICONTROL Crea]**.
+1. Nella pagina **[!UICONTROL Configurazione account tecnico Adobe IMS]**, nell&#39;elenco a discesa **[!UICONTROL Soluzione cloud]** , seleziona **[!UICONTROL Raccolta dati Experience Platform]**.
+1. Abilita **[!UICONTROL Crea nuovo certificato]**, quindi inserisci qualsiasi valore significativo per il certificato nel campo di testo. Ad esempio, *AdobeLaunchIMSCert*. Seleziona **[!UICONTROL Crea certificato]**.
 
    Viene visualizzato il seguente messaggio Info:
 
    *Per recuperare un token di accesso valido, la nuova chiave pubblica del certificato deve essere aggiunta all’account tecnico all’Adobe I/O.*
 
-   Per chiudere la finestra di dialogo Informazioni, fare clic su **[!UICONTROL OK]**.
+   Per chiudere la finestra di dialogo Informazioni, selezionare **[!UICONTROL OK]**.
 
    ![24/07/2019](assets/2019-07-25_12-09-24.png)
 
-1. Fai clic su **[!UICONTROL Scarica chiave pubblica]** per scaricare un file di chiave pubblica (`*.crt`) nel sistema locale.
+1. Selezionare **[!UICONTROL Scarica chiave pubblica]** per scaricare un file di chiave pubblica (`*.crt`) nel sistema locale.
 
    >[!NOTE]
    >
-   >A questo punto, ***lascia aperta*** la pagina **[!UICONTROL Adobe IMS Technical Account Configuration]**, ***non*** chiuderla e ***non*** fare clic su Avanti. Tornerai a questa pagina più avanti nei passaggi successivi.
+   >A questo punto, ***lascia aperta*** la pagina **[!UICONTROL Configurazione account tecnico Adobe IMS]**; ***non*** chiude la pagina e ***non*** seleziona **[!UICONTROL Avanti]**. Tornerai a questa pagina più avanti nei passaggi successivi.
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
 1. In una nuova scheda del browser, accedi alla [Console Adobi I/O](https://console.adobe.io/integrations).
 
-1. Dalla pagina **[!UICONTROL Integrazioni console di Adobe I/O]**, nell’angolo in alto a destra, fai clic su **[!UICONTROL Nuova integrazione]**.
-1. Nella finestra di dialogo **[!UICONTROL Create a new integration (Crea una nuova integrazione)]**, accertati che sia selezionato il pulsante di scelta **[!UICONTROL Access an API (Accesso a un API)]**, quindi fai clic su **[!UICONTROL Continua]**.
+1. Dalla pagina **[!UICONTROL Integrazioni console di Adobe I/O]**, nell’angolo in alto a destra, seleziona **[!UICONTROL Nuova integrazione]**.
+1. Nella finestra di dialogo **[!UICONTROL Crea una nuova integrazione]** , accertati che sia selezionato il pulsante di scelta **[!UICONTROL Accedi a un API]** , quindi seleziona **[!UICONTROL Continua]**.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
-1. Nella seconda pagina **[!UICONTROL Crea una nuova integrazione]**, abilita (attiva) il pulsante di scelta **[!UICONTROL Experience Platform Launch API (API di Experience Platform Launch)]**. Nell’angolo inferiore destro della pagina, fai clic su **[!UICONTROL Continua]**.
+1. Nella seconda pagina **[!UICONTROL Crea una nuova integrazione]**, abilita (attiva) il pulsante di scelta **[!UICONTROL Experience Platform Launch API (API di Experience Platform Launch)]**. Nell’angolo in basso a destra della pagina, seleziona **[!UICONTROL Continua]**.
 
    ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
@@ -714,8 +716,8 @@ La configurazione dell’Experience Manager consiste dei due passaggi principali
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
-1. Fai clic su **[!UICONTROL Crea integrazione]**.
-1. Nella pagina **[!UICONTROL Integrazione creata]**, fai clic su **[!UICONTROL Continue to integration details]** (Passa a dettagli integrazione).
+1. Seleziona **[!UICONTROL Crea integrazione]**.
+1. Nella pagina **[!UICONTROL Integrazione creata]**, seleziona **[!UICONTROL Continue to integration details]** (Passa ai dettagli dell&#39;integrazione).
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
@@ -728,9 +730,9 @@ La configurazione dell’Experience Manager consiste dei due passaggi principali
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
    _Pagina dei dettagli di integrazione_
 
-1. Torna alla pagina **[!UICONTROL Configurazione account tecnico Adobe IMS]** che hai lasciato aperta in precedenza. Nell’angolo superiore destro della pagina, fai clic su **[!UICONTROL Avanti]** per aprire la pagina **[!UICONTROL Account]** alla finestra **[!UICONTROL Configurazione account tecnico Adobe IMS]**.
+1. Torna alla pagina **[!UICONTROL Configurazione account tecnico Adobe IMS]** che hai lasciato aperta in precedenza. Nell&#39;angolo in alto a destra della pagina, seleziona **[!UICONTROL Avanti]** per aprire la pagina **[!UICONTROL Account]** nella finestra **[!UICONTROL Configurazione account tecnico IMS Adobe]** .
 
-   Se hai chiuso la pagina in precedenza, torna ad Experience Manager Author e fai clic su **[!UICONTROL Strumenti > Protezione > Configurazioni IMS di Adobe]**. Fai clic su **[!UICONTROL Crea]**. Nell&#39;elenco a discesa **[!UICONTROL Soluzione cloud]** , seleziona **[!UICONTROL Experience Platform Launch]**. Nell’elenco a discesa **[!UICONTROL Certificato]**, fai clic sul nome del certificato creato in precedenza.
+   Se hai chiuso la pagina prima, torna all’autore di Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni IMS Adobi]**. Seleziona **[!UICONTROL Crea]**. Nell&#39;elenco a discesa **[!UICONTROL Soluzione cloud]** , seleziona **[!UICONTROL Experience Platform Launch]**. Nell’elenco a discesa **[!UICONTROL Certificato]**, fai clic sul nome del certificato creato in precedenza.
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
    _Adobe IMS Configurazione account tecnico - Pagina del certificato_
@@ -743,7 +745,7 @@ La configurazione dell’Experience Manager consiste dei due passaggi principali
 1. Nella pagina **[!UICONTROL Account]** , compila i campi seguenti:
 
    * **[!UICONTROL Titolo]**  - Inserisci un titolo descrittivo per l’account.
-   * **[!UICONTROL Server autorizzazioni]** : torna alla pagina dei dettagli di integrazione aperta in precedenza. Fare clic sulla scheda **[!UICONTROL JWT]**. Copia il nome del server, senza il percorso, come evidenziato di seguito.
+   * **[!UICONTROL Server autorizzazioni]** : torna alla pagina dei dettagli di integrazione aperta in precedenza. Seleziona la scheda **[!UICONTROL JWT]** . Copia il nome del server, senza il percorso, come evidenziato di seguito.
 
 (il nome del server di esempio è a scopo di spiegazione)   Torna alla pagina **[!UICONTROL Account]**, quindi incolla il nome nel rispettivo campo.
 Ad esempio, `https://ims-na1.adobelogin.com/`
@@ -752,14 +754,14 @@ Ad esempio, `https://ims-na1.adobelogin.com/`
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    _Pagina dei dettagli dell’integrazione - Scheda JWT_
 
-1. **[!UICONTROL Chiave API]**: torna alla pagina dei dettagli di integrazione. Fai clic sulla scheda **[!UICONTROL Panoramica]**, quindi, a destra del campo **[!UICONTROL Chiave API (ID client)]**, fai clic su **[!UICONTROL Copia]**.
+1. **[!UICONTROL Chiave API]**: torna alla pagina dei dettagli di integrazione. Seleziona la scheda **[!UICONTROL Panoramica]** , quindi a destra del campo **[!UICONTROL Chiave API (ID client)]** , seleziona **[!UICONTROL Copia]**.
 
    Torna alla pagina **[!UICONTROL Account]**, quindi incolla la chiave nel rispettivo campo.
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
    _Pagina dei dettagli di integrazione_
 
-1. **[!UICONTROL Segreto client]**: torna alla pagina dei dettagli di integrazione. Nella scheda **[!UICONTROL Panoramica]**, fai clic su **[!UICONTROL Retrieve Client Secret (Recupera segreto client)]**. A destra del campo **[!UICONTROL Segreto client]**, fai clic su **[!UICONTROL Copia]**.
+1. **[!UICONTROL Segreto client]**: torna alla pagina dei dettagli di integrazione. Dalla scheda **[!UICONTROL Panoramica]**, seleziona **[!UICONTROL Recupera segreto client]**. A destra del campo **[!UICONTROL Segreto client]**, selezionare **[!UICONTROL Copia]**.
 
    Torna alla pagina **[!UICONTROL Account]**, quindi incolla la chiave nel rispettivo campo.
 
@@ -774,15 +776,15 @@ Ad esempio, `https://ims-na1.adobelogin.com/`
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
-1. Fai clic su **[!UICONTROL Crea]** nell’angolo in alto a destra della pagina **[!UICONTROL Account]**.
+1. Vicino all&#39;angolo superiore destro della pagina **[!UICONTROL Account]**, selezionare **[!UICONTROL Crea]**.
 
    Con Experience Manager IMS configurato, ora disponi di un nuovo account IMSA elencato in **[!UICONTROL Configurazioni IMS di Adobe]**.
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-## Configurazione di Experience Platform Launch Cloud per l’integrazione {#configuring-adobe-launch-cloud-for-the-integration}
+## Configurare Experience Platform Launch Cloud per l’integrazione {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. In Experience Manager Author, nell’angolo in alto a sinistra, fai clic sull’icona Strumenti (martello), quindi fai clic su **[!UICONTROL Cloud Services > Configurazioni Experience Platform Launch]**.
+1. In Experience Manager Author, nell’angolo in alto a sinistra, seleziona l’icona Strumenti (martello), quindi vai a **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazioni Experience Platform Launch]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
@@ -792,12 +794,12 @@ Ad esempio, `https://ims-na1.adobelogin.com/`
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
-1. Fai clic su **[!UICONTROL Crea]** nell’angolo superiore sinistro della pagina.
+1. Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Crea]**.
 1. Nella pagina **[!UICONTROL Generale]** (1/3 pagine) della finestra **[!UICONTROL Crea configurazione Experience Platform Launch]**, compila i campi seguenti:
 
    * **[!UICONTROL Titolo]**  - Inserisci un titolo di configurazione descrittivo. Esempio, `We.Retail Launch cloud configuration`.
 
-   * **[!UICONTROL Configurazione IMS per Adobe associato]** : seleziona la configurazione IMS creata in precedenza in  [Configurazione di Experience Manager IMS](#configuring-aem-ims).
+   * **[!UICONTROL Configurazione IMS per Adobe associato]** : seleziona la configurazione IMS creata in precedenza in  [Configura IMS per Experience Manager](#configuring-aem-ims).
 
    * **[!UICONTROL Società]**  - Dall’elenco a discesa  **** Società, seleziona la tua società di Experience Cloud. L’elenco viene compilato automaticamente.
 
@@ -806,7 +808,7 @@ Ad esempio, `https://ims-na1.adobelogin.com/`
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
-1. Fai clic su **[!UICONTROL Avanti]** nell&#39;angolo in alto a sinistra.
+1. Nell&#39;angolo in alto a sinistra, selezionare **[!UICONTROL Avanti]**.
 1. Nella pagina **[!UICONTROL Staging]** (2/3 pagine) della finestra **[!UICONTROL Crea configurazione Experience Platform Launch]**, compila il seguente campo:
 
    Nel campo **[!UICONTROL URI libreria]** , controlla il percorso della versione di staging della libreria del Experience Platform Launch. Experience Manager compila automaticamente questo campo.
@@ -824,13 +826,13 @@ Ad esempio, `https://ims-na1.adobelogin.com/`
 
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
-1. Nell&#39;angolo in alto a destra, fai clic su **[!UICONTROL Avanti]**.
+1. Vicino all&#39;angolo superiore destro, seleziona **[!UICONTROL Avanti]**.
 1. Nella pagina **[!UICONTROL Produzione]** (3/3 pagine) della finestra **[!UICONTROL Crea configurazione Experience Platform Launch]**, se necessario, correggi l’URI di produzione con compilazione automatica in modo simile a come è stato fatto nella pagina precedente **[!UICONTROL Staging]**.
-1. Fai clic su **[!UICONTROL Crea]** nell&#39;angolo in alto a destra.
+1. Vicino all&#39;angolo superiore destro, seleziona **[!UICONTROL Crea]**.
 
    La nuova configurazione di Experience Platform Launch Cloud viene ora creata ed elencata accanto al sito web.
 
-1. Seleziona la nuova configurazione cloud di Experience Platform Launch (viene visualizzato un segno di spunta a sinistra del titolo della configurazione quando è selezionato). Sulla barra degli strumenti, fai clic su **[!UICONTROL Pubblica]**.
+1. Seleziona la nuova configurazione cloud di Experience Platform Launch (viene visualizzato un segno di spunta a sinistra del titolo della configurazione quando è selezionato). Sulla barra degli strumenti, seleziona **[!UICONTROL Pubblica]**.
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
