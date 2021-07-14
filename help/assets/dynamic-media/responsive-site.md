@@ -1,29 +1,29 @@
 ---
-title: Distribuzione di immagini ottimizzate per un sito reattivo
+title: Fornire immagini ottimizzate per un sito reattivo
 description: Scopri come utilizzare la funzione di codice reattivo per distribuire immagini ottimizzate da Dynamic Media.
 feature: Gestione risorse
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 13%
+ht-degree: 11%
 
 ---
 
-# Distribuzione di immagini ottimizzate per un sito reattivo {#delivering-optimized-images-for-a-responsive-site}
+# Fornire immagini ottimizzate per un sito reattivo {#delivering-optimized-images-for-a-responsive-site}
 
 Utilizza la funzione Codice reattivo quando desideri condividere il codice per il servizio reattivo con il tuo sviluppatore web. Puoi copiare il codice reattivo (**[!UICONTROL RESS]**) negli appunti per condividerlo con lo sviluppatore web.
 
 Questa funzione ha senso utilizzare se il sito web si trova su un sito web WCM di terze parti. Tuttavia, se il sito web si trova in Adobe Experience Manager, un server di immagini offsite esegue il rendering dell&#39;immagine e la fornisce alla pagina web.
 
-Vedere anche [Incorporamento del visualizzatore video in una pagina Web](embed-code.md).
+Vedere anche [Incorporare il visualizzatore video in una pagina web](embed-code.md).
 
-Consulta anche [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
+Consulta anche [Collegare gli URL all&#39;applicazione web](linking-urls-to-yourwebapplication.md).
 
 **Per fornire immagini ottimizzate per un sito reattivo:**
 
-1. Passa all’immagine per la quale desideri fornire codice reattivo e, nel menu a discesa, tocca **[!UICONTROL Rendering]**.
+1. Passa all’immagine per la quale desideri fornire codice reattivo e, nel menu a discesa, seleziona **[!UICONTROL Rendering]**.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -37,7 +37,7 @@ Consulta anche [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yo
    >
    >I predefiniti immagine vengono pubblicati automaticamente.
 
-1. Toccare **[!UICONTROL RESS]**.
+1. Selezionare **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
