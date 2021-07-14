@@ -1,14 +1,13 @@
 ---
 title: Ruoli di Cloud Manager
 description: Questa pagina descrive i ruoli utente e le autorizzazioni. Segui questa pagina per scoprire come aggiungere utenti e assegnarli ai ruoli di Cloud Manager.
-translation-type: tm+mt
-source-git-commit: 7b5973aef0d3296a54bcf1e57bda616cdd618346
+exl-id: d1689134-044a-4d96-97a2-cd09f735a680
+source-git-commit: a0edbaf650fdfbc271a000ab4827a4c414321613
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '546'
 ht-degree: 8%
 
 ---
-
 
 # Ruoli di Cloud Manager {#user-roles-permissions}
 
@@ -48,9 +47,9 @@ Oltre a quanto sopra, Cloud Manager creerà automaticamente un profilo di prodot
 
 A ciascuno dei ruoli sono associate autorizzazioni specifiche. Ad esempio, se ti trovi nel ruolo di un:
 
-* ***Proprietario business***, disponi dell’autorizzazione per aggiungere un nuovo programma o modificare un programma, aggiungere o aggiornare un ambiente, aggiungere/modificare/eliminare la pipeline ed eseguire qualsiasi pipeline e distribuire il codice per AEM ambiente o qualità del codice.
+* ***Proprietario business***, si dispone dell&#39;autorizzazione per aggiungere un nuovo programma o modificare un programma, aggiungere o aggiornare un ambiente ed eseguire qualsiasi pipeline.
 
-* ***Deployment Manager***, è disponibile l’autorizzazione per aggiungere o aggiornare un ambiente, eseguire una pipeline e distribuire il codice per AEM ambiente o qualità del codice.
+* ***Gestione distribuzione***: si dispone dell&#39;autorizzazione per aggiungere o aggiornare un ambiente ed eseguire qualsiasi pipeline.
 
 * ***Sviluppatore***, disponi dell’autorizzazione per generare Token di accesso personale per accedere a Git.
 
@@ -74,4 +73,3 @@ La tabella seguente riepiloga i ruoli e le relative autorizzazioni associate in 
 | Elimina pipeline | Consente di eliminare una pipeline. |  | x |  |  |
 | Annulla esecuzione | Annulla esecuzione corrente. |  | x |  |  |
 | Genera token di accesso personale | Accedi a Git. |  | x |  | x |
-
