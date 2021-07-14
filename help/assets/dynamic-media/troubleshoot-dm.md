@@ -1,16 +1,16 @@
 ---
-title: Risoluzione dei problemi relativi a Dynamic Media
-description: Suggerimenti per la risoluzione dei problemi durante l’utilizzo di Dynamic Media.
+title: Risolvere i problemi relativi a Dynamic Media
+description: Suggerimenti per la risoluzione dei problemi quando utilizzi Dynamic Media.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 2%
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
-# Risoluzione dei problemi relativi a Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
+# Risolvere i problemi relativi a Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
 L&#39;argomento seguente descrive la risoluzione dei problemi relativi a Dynamic Media.
 
@@ -137,7 +137,7 @@ In caso di problemi con il video, consulta le seguenti indicazioni per la risolu
     </ul> </td>
    <td>
     <ol>
-     <li>Verifica che la configurazione di Dynamic Media in Cloud Services sia configurata correttamente.</li>
+     <li>Verifica che la configurazione Dynamic Media in Cloud Services sia configurata correttamente.</li>
      <li>Verifica che la cartella disponga di un profilo video. Inoltre, controlla il profilo video.</li>
     </ol> </td>
   </tr>
@@ -179,11 +179,11 @@ Se riscontri problemi con i visualizzatori, consulta le seguenti indicazioni per
   <tr>
    <td>I predefiniti per visualizzatori non vengono pubblicati</td>
    <td><p>Passare alla pagina di diagnostica di sample manager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Osserva i valori calcolati. Quando funziona correttamente, puoi vedere:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: La sincronizzazione delle risorse del visualizzatore può richiedere circa 10 minuti dopo la configurazione delle impostazioni cloud di Dynamic Media.</p> <p>Se le risorse non attivate rimangono, fai clic su uno dei pulsanti <strong>Elenca tutte le risorse non attivate</strong> per visualizzare i dettagli.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: La sincronizzazione delle risorse del visualizzatore può richiedere circa 10 minuti dopo la configurazione delle impostazioni cloud di Dynamic Media.</p> <p>Se le risorse non attivate rimangono, seleziona uno dei pulsanti <strong>Elenca tutte le risorse non attivate</strong> per visualizzare i dettagli.</p> </td>
    <td>
     <ol>
      <li>Passa all’elenco dei predefiniti per visualizzatori in strumenti di amministrazione: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Seleziona tutti i predefiniti visualizzatore, quindi fai clic su <strong>Pubblica</strong>.</li>
+     <li>Seleziona tutti i predefiniti visualizzatore, quindi seleziona <strong>Pubblica</strong>.</li>
      <li>Torna a Sample manager e osserva che il conteggio delle risorse non attivate è ora zero.</li>
     </ol> </td>
   </tr>
