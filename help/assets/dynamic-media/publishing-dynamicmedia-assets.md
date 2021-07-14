@@ -1,22 +1,22 @@
 ---
-title: Pubblicazione delle risorse Dynamic Media
+title: Pubblicare risorse Dynamic Media
 description: Scopri come pubblicare risorse Dynamic Media.
 contentOwner: Rick Brough
 feature: Gestione risorse
 role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
-# Pubblicazione delle risorse Dynamic Media {#publishing-dynamic-media-assets}
+# Pubblicare risorse Dynamic Media {#publishing-dynamic-media-assets}
 
-Per pubblicare le risorse Dynamic Media, seleziona le risorse già caricate e tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida]**. Dopo la pubblicazione delle risorse Dynamic Media, sono disponibili per l’inclusione in una pagina web tramite un URL o tramite l’incorporamento di codice nella pagina.
+Per pubblicare le risorse Dynamic Media, seleziona le risorse già caricate e seleziona **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida]**. Dopo la pubblicazione delle risorse Dynamic Media, sono disponibili per l’inclusione in una pagina web tramite un URL o tramite l’incorporamento di codice nella pagina.
 
-Puoi anche pubblicare istantaneamente le risorse caricate, senza alcun intervento dell’utente. In alternativa, puoi pubblicare selettivamente tali risorse. Consulta [Configurazione di Dynamic Media](config-dm.md). In alternativa, puoi pubblicare in modo selettivo le risorse in Dynamic Media o Adobe Experience Manager, escludendole a vicenda, utilizzando **[!UICONTROL Pubblicazione selettiva]** a livello di cartella. Consulta [Utilizzo della pubblicazione selettiva in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+Puoi anche pubblicare istantaneamente le risorse caricate, senza alcun intervento dell’utente. In alternativa, puoi pubblicare selettivamente tali risorse. Consulta [Configurare Dynamic Media](config-dm.md). In alternativa, puoi pubblicare in modo selettivo le risorse in Dynamic Media o Adobe Experience Manager, escludendole a vicenda, utilizzando **[!UICONTROL Pubblicazione selettiva]** a livello di cartella. Consulta [Operazioni con pubblicazione selettiva in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 Nella **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa viene visualizzata una piccola icona a forma di globo, a sinistra della data e dell’ora per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
 
@@ -26,7 +26,7 @@ Nella **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa viene visual
 
 Se intendi pubblicare le risorse video subito dopo averle codificate, accertati di effettuare la codifica. Quando i video vengono codificati, il sistema ti informa che è in corso un flusso di lavoro di elaborazione video. Al termine della codifica video, puoi visualizzare in anteprima le rappresentazioni video. A questo punto, è sicuro per te pubblicare i video senza che si verifichino errori di pubblicazione.
 
-Consulta anche [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
+Consulta anche [Collegare gli URL all&#39;applicazione web](linking-urls-to-yourwebapplication.md).
 
 Consulta anche [Incorporare il visualizzatore video o immagine Dynamic Media in una pagina web](embed-code.md).
 
