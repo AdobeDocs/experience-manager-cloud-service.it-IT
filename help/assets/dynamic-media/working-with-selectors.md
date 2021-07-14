@@ -1,16 +1,16 @@
 ---
-title: Utilizzo dei selettori
+title: Utilizzare i selettori
 description: Scopri i metodi per selezionare le risorse per le immagini interattive, i video interattivi e i banner a carosello in Dynamic Media.
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 21%
+source-wordcount: '728'
+ht-degree: 3%
 
 ---
 
-# Utilizzo dei selettori in Dynamic Media {#working-with-selectors}
+# Utilizzare i selettori in Dynamic Media {#working-with-selectors}
 
 Quando lavori con un’immagine interattiva, un video interattivo o un banner carosello, seleziona le risorse e i siti e i prodotti per gli hotspot e le mappe immagine a cui collegarti. Quando lavori con Set immagini, Set 360 gradi e Set multimediali, puoi anche selezionare le risorse con il Selettore risorse.
 
@@ -18,7 +18,7 @@ Questo argomento illustra come utilizzare i selettori Prodotto, Sito e Risorsa, 
 
 Puoi accedere ai selettori durante la creazione di set carosello, l’aggiunta di punti attivi e mappe immagine, la creazione di video e immagini interattivi.
 
-Ad esempio, in questo banner carosello, si utilizza il selettore Prodotto se si sta collegando un punto attivo o una mappa immagine a una pagina di visualizzazione rapida. Utilizzare il selettore Sito se si sta collegando un punto attivo o una mappa immagine a un collegamento ipertestuale; utilizzate il selettore Risorsa per creare una diapositiva.
+Ad esempio, in questo banner carosello, puoi utilizzare il selettore Prodotto se stai collegando un punto attivo o una mappa immagine a una pagina Quickview. Utilizzare il selettore Sito se si sta collegando un punto attivo o una mappa immagine a un collegamento ipertestuale; utilizzate il selettore Risorsa per creare una diapositiva.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
@@ -28,13 +28,13 @@ Quando selezioni (anziché immettere manualmente) i punti attivi o le mappe imma
 
 Utilizza il selettore Prodotto per scegliere un prodotto quando desideri un punto attivo o una mappa immagine per fornire una visualizzazione rapida a un prodotto specifico nel catalogo del prodotto.
 
-1. Passa al set carosello, all’immagine interattiva o al video interattivo e tocca la scheda **[!UICONTROL Azioni]**, che è disponibile solo se hai definito un punto attivo o una mappa immagine.
+1. Passa al set carosello, all’immagine interattiva o al video interattivo e seleziona la scheda **[!UICONTROL Azioni]** , disponibile solo se hai definito un punto attivo o una mappa immagine.
 
    Il selettore Prodotto si trova nell&#39;area **[!UICONTROL Tipo azione]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Tocca l’icona **[!UICONTROL Selettore prodotto]** (lente di ingrandimento) e individua un prodotto nel catalogo.
+1. Seleziona l&#39;icona **[!UICONTROL Selettore prodotto]** (lente di ingrandimento) e passa a un prodotto nel catalogo.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
@@ -46,11 +46,11 @@ Utilizza il selettore Prodotto per scegliere un prodotto quando desideri un punt
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tocca **[!UICONTROL Ordina per]** per modificare l&#39;ordinamento in base a [!DNL Experience Manager] da più recente a meno recente o dal meno recente a meno recente.
+   Seleziona **[!UICONTROL Ordina per]** per cambiare se [!DNL Experience Manager] effettua l&#39;ordinamento in base al più recente o dal meno recente al più recente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Per modificare la modalità di visualizzazione dei prodotti, tocca **[!UICONTROL Visualizza come]**, scegliendo tra **[!UICONTROL Vista a elenco]** o **[!UICONTROL Vista a schede]**.
+   Seleziona **[!UICONTROL Visualizza come]** per modificare la modalità di visualizzazione dei prodotti: **[!UICONTROL Vista a elenco]** o **[!UICONTROL Vista a schede]**.
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -58,21 +58,21 @@ Utilizza il selettore Prodotto per scegliere un prodotto quando desideri un punt
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. In modalità **[!UICONTROL Anteprima]**, è possibile toccare il punto attivo o la mappa immagine per visualizzare la visualizzazione rapida.
+1. In modalità **[!UICONTROL Anteprima]**, è possibile selezionare il punto attivo o la mappa immagine e visualizzare l&#39;aspetto della visualizzazione rapida.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Selezione di siti in Dynamic Media {#selecting-sites}
+## Selezionare Sites in Dynamic Media {#selecting-sites}
 
 Utilizza il selettore del sito per scegliere una pagina web quando desideri che un punto attivo o una mappa immagine si colleghino a una pagina web gestita all’interno di [!DNL Experience Manager] siti.
 
-1. Passa al set carosello, all’immagine interattiva o al video interattivo e tocca la scheda **[!UICONTROL Azioni]**, che è disponibile solo se hai definito un punto attivo o una mappa immagine.
+1. Passa al set carosello, all’immagine interattiva o al video interattivo e seleziona la scheda **[!UICONTROL Azioni]** , disponibile solo se hai definito un punto attivo o una mappa immagine.
 
    Il selettore del sito si trova nell’area **[!UICONTROL Tipo di azione]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tocca l’icona **[!UICONTROL Selettore siti]** (cartella con lente di ingrandimento), quindi vai alla pagina dei tuoi Sites a cui vuoi collegare il punto attivo o la mappa immagine.[!DNL Experience Manager]
+1. Seleziona l&#39;icona **[!UICONTROL Selettore sito]** (cartella con lente di ingrandimento) e passa alla pagina dei siti [!DNL Experience Manager] a cui desideri collegare il punto attivo o la mappa immagine.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,16 +80,16 @@ Utilizza il selettore del sito per scegliere una pagina web quando desideri che 
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. In modalità **[!UICONTROL Anteprima]** se tocchi il punto attivo o la mappa immagine, accedi alla pagina del sito [!DNL Experience Manager] specificata.
+1. In modalità **[!UICONTROL Anteprima]** se si seleziona il punto attivo o la mappa immagine, passare alla pagina del sito [!DNL Experience Manager] specificata.
 
-## Selezione delle risorse in Dynamic Media {#selecting-assets}
+## Selezionare le risorse in Dynamic Media {#selecting-assets}
 
-Utilizza questo selettore per scegliere le immagini da utilizzare in un banner carosello, un video interattivo, set di immagini, set di file multimediali diversi e set 360 gradi. Nel video interattivo, il selettore delle risorse è disponibile quando tocca **[!UICONTROL Seleziona risorse]** nella scheda **[!UICONTROL Contenuto]** . In Set carosello, il selettore delle risorse è disponibile quando crei una diapositiva. In Set immagini, Set di file multimediali diversi e Set 360 gradi, il selettore delle risorse è disponibile rispettivamente quando crei un set di immagini, un set di file multimediali diversi o un set 360 gradi.
+Utilizza questo selettore per scegliere le immagini da utilizzare in un banner carosello, un video interattivo, set di immagini, set di file multimediali diversi e set 360 gradi. Nel video interattivo, il selettore delle risorse è disponibile quando selezioni **[!UICONTROL Seleziona risorse]** nella scheda **[!UICONTROL Contenuto]** . In Set carosello, il selettore delle risorse è disponibile quando crei una diapositiva. In Set immagini, Set di file multimediali diversi e Set 360 gradi, il selettore delle risorse è disponibile rispettivamente quando crei un set di immagini, un set di file multimediali diversi o un set 360 gradi.
 
 Per ulteriori informazioni, consulta anche [Selettore risorse](/help/assets/search-assets.md#asset-selector) .
 
 1. Accedete al Set carosello e create una diapositiva. In alternativa, passa al video interattivo, passa alla scheda **[!UICONTROL Contenuto]** , quindi seleziona le risorse. Oppure crea un set di file multimediali diversi, un set di immagini o un set 360 gradi.
-1. Tocca l’icona **[!UICONTROL Selettore risorse]** (cartella con lente di ingrandimento) e accedi a una risorsa.
+1. Seleziona l’icona **[!UICONTROL Selettore risorse]** (cartella con lente di ingrandimento) e passa a una risorsa.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
@@ -99,15 +99,15 @@ Per ulteriori informazioni, consulta anche [Selettore risorse](/help/assets/sear
 
    Puoi cambiare la posizione in cui [!DNL Experience Manager] cerca le risorse passando a un&#39;altra cartella nel campo **[!UICONTROL Percorso]** .
 
-   Tocca **[!UICONTROL Raccolta]** per cercare solo le risorse all’interno delle raccolte.
+   Seleziona **[!UICONTROL Raccolta]** per cercare solo le risorse all&#39;interno delle raccolte.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Per modificare la modalità di visualizzazione dei prodotti, tocca **[!UICONTROL Visualizza come]**, scegliendo tra **[!UICONTROL Vista a elenco]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a schede]**.
+   Seleziona **[!UICONTROL Visualizza come]** per modificare la modalità di visualizzazione dei prodotti: **[!UICONTROL Vista a elenco]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a schede]**.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Per selezionare la risorsa, tocca il segno di spunta. Viene visualizzata la risorsa.
+1. Per selezionare la risorsa, seleziona il segno di spunta. Viene visualizzata la risorsa.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
 -->
