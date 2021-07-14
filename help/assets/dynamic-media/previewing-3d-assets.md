@@ -1,15 +1,18 @@
 ---
 title: Anteprima delle risorse 3D
 description: Scopri come visualizzare in anteprima le risorse 3D in Dynamic Media.
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+feature: Risorse 3D
+role: User
+exl-id: null
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 15%
+source-wordcount: '565'
+ht-degree: 10%
 
 ---
 
 
-# Anteprima delle risorse 3D in Adobe Experience Manager{#previewing-3d-assets}
+# Anteprima di risorse 3D in Adobe Experience Manager{#previewing-3d-assets}
 
 Experience Manager supporta il caricamento, la distribuzione e l’anteprima interattiva di risorse 3D come parte del processo di authoring.
 
@@ -17,7 +20,7 @@ Il visualizzatore 3D interattivo è disponibile nella pagina dei dettagli della 
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formati supportati per l&#39;anteprima 3D in Experience Manager{#supported-3d-previewing-assets}
+## Formati supportati per l’anteprima 3D in Experience Manager{#supported-3d-previewing-assets}
 
 L’anteprima 3D interattiva in Experience Manager supporta i seguenti formati di file:
 
@@ -41,7 +44,7 @@ L’anteprima 3D interattiva in Experience Manager supporta i seguenti formati d
     material_0_baseColor.
     jpegmaterial_0_Normal.jpeg
 
-## Considerazioni sulle prestazioni durante l&#39;anteprima delle risorse 3D in Experience Manager{#performance-3d-previewing-assets}
+## Considerazioni sulle prestazioni quando si visualizzano in anteprima le risorse 3D in Experience Manager{#performance-3d-previewing-assets}
 
 Il tempo necessario per aprire una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa dipende da diversi fattori, come la larghezza di banda, la complessità delle immagini e le latenze al server.
 
@@ -50,17 +53,17 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 **Per visualizzare in anteprima le risorse 3D, ad Experience Manager:**
 
 1. Assicurati di aver caricato risorse 3D in Experience Manager.
-Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Caricamento delle risorse](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Ad Experience Manager, nella pagina **[!UICONTROL Navigazione]**, tocca **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Carica risorse](/help/assets/manage-digital-assets.md#uploading-assets).
+1. Ad Experience Manager, nella pagina **[!UICONTROL Navigazione]**, vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 
    ![Pagina di navigazione](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Vista a schede]**, quindi individua la risorsa 3D da visualizzare in anteprima.
+1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Vista a schede]**, quindi individua la risorsa 3D da visualizzare in anteprima.
 
    ![Selezione della scheda 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
-   _Nella Vista a schede, tocca la scheda della risorsa 3D da visualizzare in anteprima._
+   _In Vista a schede, selezionate la scheda della risorsa 3D da visualizzare in anteprima._
 
-1. Tocca la scheda della risorsa 3D.
+1. Seleziona la scheda della risorsa 3D.
 
    ![Anteprima 3D interattiva](/help/assets/dynamic-media/assets/3d-preview.png)
    _Anteprima interattiva di una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa._
@@ -72,7 +75,7 @@ Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-as
    | **Panning della fotocamera** | Consente di scorrere la visualizzazione a sinistra, a destra, in alto o in basso. | Fai clic con il pulsante destro del mouse e trascina. | Premere due dita + trascinare. |
    | **Zoom della fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Ruota di scorrimento. | Pizzico a due dita. |
    | **Ricollegare la fotocamera** | Rientra la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic. | Tocca due volte. |
-   | **Ripristina** | Nell’angolo in basso a destra della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
-   | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, tocca l’icona a schermo intero nell’angolo in basso a destra della pagina. |  |  |
+   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
+   | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
 
-1. Al termine, vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Chiudi]**.
+1. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Chiudi]**.
