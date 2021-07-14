@@ -1,14 +1,13 @@
 ---
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
-translation-type: tm+mt
-source-git-commit: 97c3ddd5331d55c5d9b45a29251f584e4bac878b
+exl-id: d2024b42-9042-46a0-879e-110b214c7285
+source-git-commit: e3575278fbfd523a2727e4d659deb057bf2cff9e
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione della pipeline CI-CD {#configure-ci-cd-pipeline}
 
@@ -33,7 +32,7 @@ In Cloud Manager sono disponibili due tipi di pipeline:
 > * configurare i parametri del test delle prestazioni.
 
 
-## Configurazione della pipeline di produzione {#setting-up-production-pipeline}
+## Impostazione della pipeline di produzione {#setting-up-production-pipeline}
 
 Gestione distribuzione è responsabile della configurazione della pipeline di produzione.
 
@@ -111,7 +110,7 @@ Per configurare il comportamento e le preferenze per la pipeline, effettua le se
 
 ## Solo pipeline non di produzione e di qualità del codice {#non-production-pipelines}
 
-Oltre alla pipeline principale che viene implementata in fase e produzione, i clienti possono impostare pipeline aggiuntive, denominate **Non-Production Pipelines**. Queste pipeline eseguono sempre i passaggi di creazione e qualità del codice. Facoltativamente, possono anche distribuire in ambiente Adobe Managed Services.
+Oltre alla pipeline principale che viene implementata in fase e produzione, i clienti possono impostare pipeline aggiuntive, denominate **Non-Production Pipelines**. Queste pipeline eseguono sempre i passaggi di creazione e qualità del codice. Facoltativamente, possono anche distribuire in AEM come ambiente di Cloud Service.
 
 Nella schermata iniziale, queste pipeline sono elencate in una nuova scheda:
 
