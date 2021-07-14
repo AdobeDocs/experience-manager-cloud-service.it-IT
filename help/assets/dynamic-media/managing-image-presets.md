@@ -4,9 +4,9 @@ description: Scopri i predefiniti immagine e come creare, modificare e gestire i
 feature: Predefiniti immagine,Visualizzatori,Rendering
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '3634'
+source-wordcount: '3633'
 ht-degree: 8%
 
 ---
@@ -87,7 +87,7 @@ Per utilizzare Dynamic Media per visualizzare in anteprima e generare rappresent
 
 Puoi accedere alle opzioni dei componenti del processo `Rasterize PDF/AI Image Preview Rendition` tramite il flusso di lavoro `DAM Update Asset` .
 
-Seleziona su Adobe Experience Manager in alto a sinistra, vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**. Nella pagina Modelli flusso di lavoro , seleziona **[!UICONTROL Risorsa di aggiornamento DAM]**, quindi nella barra degli strumenti seleziona **[!UICONTROL Modifica]**. Nella pagina del flusso di lavoro Aggiorna risorsa DAM , tocca due volte il componente di processo `Rasterize PDF/AI Image Preview Rendition` per aprire la relativa finestra di dialogo Proprietà passaggio .
+Seleziona Adobe Experience Manager in alto a sinistra, vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**. Nella pagina Modelli flusso di lavoro , seleziona **[!UICONTROL Risorsa di aggiornamento DAM]**, quindi nella barra degli strumenti seleziona **[!UICONTROL Modifica]**. Nella pagina del flusso di lavoro Aggiorna risorsa DAM , tocca due volte il componente di processo `Rasterize PDF/AI Image Preview Rendition` per aprire la relativa finestra di dialogo Proprietà passaggio .
 
 #### Rasterizzare le opzioni di rendering anteprima immagine PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
