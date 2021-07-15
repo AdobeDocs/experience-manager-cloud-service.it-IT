@@ -1,9 +1,9 @@
 ---
 title: Fase di implementazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di implementazione in Cloud Acceleration Manager.
-source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
+source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '689'
 ht-degree: 2%
 
 ---
@@ -54,10 +54,27 @@ Leggi questa sezione per esplorare la scheda dell’attività Refactoring del co
 
 1. Nella pagina viene visualizzato l’elenco delle attività di refactoring del codice organizzate in base al livello di gravità. Per saperne di più, fai clic sulle due icone evidenziate.
 
+   Nella pagina vengono visualizzate le considerazioni sul refactoring del codice in tre schede diverse.
+
+   * Panoramica:
+   * Dispatcher
+   * Test
+
+   Nella scheda **Panoramica** viene visualizzato un elenco delle attività di refactoring del codice.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+
+   La scheda **Dispatcher** fornisce informazioni su come strutturare il AEM come configurazioni di Cloud Service Apache e Dispatcher, nonché su come convalidarlo ed eseguirlo localmente prima della distribuzione negli ambienti Cloud. Descrive anche il debug negli ambienti Cloud.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+
+   La scheda **Test** fornisce informazioni su funzioni, audit esperienza e test dell’interfaccia utente.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
+
+
    >[!NOTE]
    >Inoltre, controlla il contenuto delle schede nella pagina per comprendere alcune aree aggiuntive non coperte da Best Practices Analyzer.
-
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
 ## Utilizzo di AEM come scheda di distribuzione del Cloud Service {#aem-as-a-cloud-service-deployment}
