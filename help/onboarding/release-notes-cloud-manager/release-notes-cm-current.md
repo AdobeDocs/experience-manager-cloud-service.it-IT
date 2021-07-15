@@ -3,9 +3,9 @@ title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0
 description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0
 feature: Informazioni sulla versione
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 06dca3b3e94b27f592681e661cd5c9883c0f6422
+source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '366'
 ht-degree: 4%
 
 ---
@@ -28,17 +28,19 @@ La prossima versione è prevista per il 12 agosto 2021.
 
 * L&#39;IP in uscita verrà ora registrato nel file di registro dei passaggi della build.
 
-* Gli ambienti di stage e produzione che eseguono versioni precedenti di AEM ora segnalano lo stato &quot;Aggiorna disponibile&quot;.
+* Gli ambienti di stage e produzione che eseguono versioni precedenti di AEM ora segnalano lo stato **Aggiorna disponibile**.
 
 * Il numero massimo di certificati SSL supportati è aumentato a 20 per programma.
 
-* Aumento Il numero massimo di domini che è possibile configurare è aumentato a 500 per ambiente.
+* Il numero massimo di domini che è possibile configurare è aumentato a 500 per ambiente.
 
-* I pulsanti Manage Git (Gestisci Git) sono stati ritoccati in Access Git Info e la finestra di dialogo è stata aggiornata visivamente.
+* I pulsanti **Manage Git** sono stati ripetuti **Access Git Info** e la finestra di dialogo è stata aggiornata visivamente.
+
+* La versione di AEM Project Archetype utilizzata da Cloud Manager è stata aggiornata alla versione 28.
 
 ### Correzioni di bug {#bug-fixes}
 
-* In alcune situazioni, l’opzione Anteprima non era disponibile durante il binding di un Inserire nell&#39;elenco Consentiti IP a un ambiente.
+* In alcune situazioni, l’opzione Anteprima non era disponibile durante il binding di un Elenco consentiti IP a un ambiente.
 
 * La navigazione manuale alla pagina dei dettagli di esecuzione per un’esecuzione non esistente non mostrava un errore, ma solo una schermata di caricamento infinita.
 
@@ -48,7 +50,7 @@ La prossima versione è prevista per il 12 agosto 2021.
 
 * Aggiunta guidata programma non corretta: il nome non può essere modificato dopo la creazione.
 
-* In alcune situazioni, l’opzione Anteprima non era disponibile durante il binding di un Inserire nell&#39;elenco Consentiti IP a un ambiente.
+* In alcune situazioni, l’opzione Anteprima non era disponibile durante il binding di un Elenco consentiti IP a un ambiente.
 
 ### Problemi noti {#known-issues}
 
