@@ -3,9 +3,9 @@ title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0
 description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0
 feature: Informazioni sulla versione
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
+source-git-commit: e24610cef6d134ddf9ce8abe9a5893deac08eeb6
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '349'
 ht-degree: 4%
 
 ---
@@ -32,9 +32,9 @@ La prossima versione è prevista per il 12 agosto 2021.
 
 * Il numero massimo di certificati SSL supportati è aumentato a 20 per programma.
 
-* Il numero massimo di domini che è possibile configurare è aumentato a 500 per ambiente.
+* Il numero massimo di domini configurabili è aumentato a 500 per ambiente.
 
-* I pulsanti **Manage Git** sono stati ripetuti **Access Git Info** e la finestra di dialogo è stata aggiornata visivamente.
+* I pulsanti **Manage Git** (Gestisci Git) sono stati rinominati in **Access Git Info** e la finestra di dialogo è stata aggiornata visivamente.
 
 * La versione di AEM Project Archetype utilizzata da Cloud Manager è stata aggiornata alla versione 28.
 
@@ -46,11 +46,9 @@ La prossima versione è prevista per il 12 agosto 2021.
 
 * Il messaggio di errore visualizzato quando è stato raggiunto il numero massimo di certificati SSL non è stato utile.
 
-* In alcune circostanze potrebbe esserci una discrepanza nella versione di rilascio mostrata nella scheda pipeline nella pagina della panoramica.
+* In alcune circostanze, potrebbe esserci una discrepanza nella versione di rilascio mostrata nella scheda della pipeline nella pagina **Panoramica** .
 
 * Aggiunta guidata programma non corretta: il nome non può essere modificato dopo la creazione.
-
-* In alcune situazioni, l’opzione Anteprima non era disponibile durante il binding di un Elenco consentiti IP a un ambiente.
 
 ### Problemi noti {#known-issues}
 
