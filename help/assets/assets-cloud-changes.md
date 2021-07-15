@@ -1,12 +1,12 @@
 ---
 title: Modifiche di rilievo in [!DNL Adobe Experience Manager Assets] come a [!DNL Cloud Service]
-description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] rispetto a [!DNL Adobe Experience Manager 6.5.
+description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5.
 feature: Informazioni sulla versione
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 31810e0a0d5ba2265eab19e5845f07b1198ec466
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '960'
 ht-degree: 5%
 
 ---
