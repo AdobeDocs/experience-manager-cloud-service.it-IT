@@ -2,7 +2,7 @@
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
+source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -35,7 +35,7 @@ Un utente con le autorizzazioni necessarie può creare i seguenti tipi di ambien
    >[!NOTE]
    >La fase di produzione è disponibile come duo e viene utilizzata a scopo di test e produzione.  L’utente non sarà in grado di creare solo l’ambiente Stage o di produzione.
 
-## Aggiunta di ambiente {#adding-environments}
+## Aggiunta di un ambiente {#adding-environments}
 
 1. Fai clic su **Aggiungi ambiente** per aggiungere un ambiente. Questo pulsante sarà accessibile dalla schermata **Ambienti** .
    ![](assets/environments-tab.png)
@@ -61,13 +61,13 @@ Un utente con le autorizzazioni necessarie può creare i seguenti tipi di ambien
    >[!NOTE]
    >Nel caso in cui non sia ancora stata impostata la pipeline non di produzione, nella schermata *Panoramica* viene visualizzata la scheda da cui è possibile creare la pipeline non di produzione.
 
-## Dettagli ambiente {#viewing-environment}
+## Dettagli dell&#39;ambiente {#viewing-environment}
 
 La scheda **Ambienti** nella pagina Panoramica elenca fino a tre ambienti.
 
 1. Selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo **Ambiente** per visualizzare una tabella con un elenco completo di ambienti.
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. La pagina **Ambienti** visualizza l&#39;elenco di tutti gli ambienti esistenti.
 
@@ -111,7 +111,7 @@ Visualizza l’anteprima dell’esperienza finale di un sito web prima che raggi
 
 1. **Pubblica contenuto in anteprima**: Puoi pubblicare contenuti nel servizio di anteprima utilizzando l’interfaccia utente Gestisci pubblicazione in AEM. Per ulteriori informazioni, consulta [Anteprima del contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) .
 
-## Aggiornamento dell&#39;ambiente {#updating-dev-environment}
+## Aggiornamento dell’ambiente {#updating-dev-environment}
 
 Gli aggiornamenti degli ambienti Stage e Production vengono gestiti automaticamente da Adobe.
 
@@ -129,7 +129,7 @@ Selezionando questa opzione, un gestore distribuzione potrà aggiornare la pipel
 
 Se la pipeline è già stata aggiornata, all’utente viene richiesto di eseguire la pipeline.
 
-## Eliminazione dell&#39;ambiente {#deleting-environment}
+## Eliminazione dell’ambiente {#deleting-environment}
 
 L&#39;utente con le autorizzazioni necessarie potrà eliminare un ambiente di sviluppo.
 
@@ -167,7 +167,7 @@ Per ulteriori informazioni, consulta [Sospensione e disattivazione degli ambient
 
 Questa opzione è disponibile anche se fai clic su **Dettagli** dalla scheda **Ambienti** . Viene visualizzata la pagina **Ambienti** e, dopo aver selezionato un ambiente, fai clic su **...** e seleziona **Console per sviluppatori**.
 
-## Accedi localmente {#login-locally}
+## Accesso locale {#login-locally}
 
 Seleziona **Accesso locale** dal menu a discesa nella scheda **Ambienti** per accedere localmente ad Adobe Experience Manager.
 
@@ -218,7 +218,7 @@ Per applicare un Elenco consentiti IP, effettua le seguenti operazioni:
 1. Utilizza i campi di input nella parte superiore della tabella dell’Elenco consentiti IP per selezionare l’Elenco consentiti IP e il servizio Author o Publish a cui desideri applicarlo.
 1. Fai clic su **Applica** e conferma l’invio.
 
-### Annullamento dell&#39;applicazione di un Elenco consentiti IP {#unapply-ip-allow-list}
+### Annullamento dell’applicazione di un Elenco consentiti IP {#unapply-ip-allow-list}
 
 L&#39;annullamento dell&#39;applicazione di un Elenco consentiti IP è il processo tramite il quale tutti gli intervalli IP inclusi nella definizione dell&#39;Elenco consentiti vengono disassociati da un servizio Author o Publisher in un ambiente. Per poter annullare l’applicazione di un Elenco consentiti IP, è necessario che un utente con il ruolo Proprietario business o Gestore distribuzione sia connesso.
 
