@@ -5,10 +5,10 @@ breadcrumb-title: Guida all’implementazione
 user-guide-description: Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione.
 feature: Strumenti per gli sviluppatori
 role: Developer, Architect
-source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
+source-git-commit: 1b52e4af946239309da6eb44d326106d6f552490
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 34%
+source-wordcount: '910'
+ht-degree: 33%
 
 ---
 
@@ -186,5 +186,8 @@ ht-degree: 34%
 + Panoramica della distribuzione dei contenuti {#content-delivery}
    + [Flusso di distribuzione dei contenuti](dispatcher/overview.md)
    + [Dispatcher nel cloud](dispatcher/disp-overview.md)
+   + [Convalida e debug tramite gli strumenti di Dispatcher](dispatcher/validation-debug.md)
+   + [Migrazione della configurazione del Dispatcher da AMS a AEM come Cloud Service](dispatcher/ams-aem.md)
+   + [Convalida e debug tramite la versione legacy degli strumenti di Dispatcher](dispatcher/validation-debug-legacy.md)
    + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
    + [Memorizzazione in cache in AEM as a Cloud Service](dispatcher/caching.md)
