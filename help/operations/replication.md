@@ -2,9 +2,9 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
+source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1229'
 ht-degree: 4%
 
 ---
@@ -55,6 +55,10 @@ Per eseguire un&#39;attivazione ad albero:
 
    ![](assets/publish-distribute.png "DistribuisciDistribuisci")
 4. Seleziona il percorso nel browser percorsi, scegli di aggiungere un nodo, un albero o elimina come richiesto e seleziona **Invia**
+
+Per ottenere le migliori prestazioni, segui queste linee guida quando utilizzi questa funzione:
+* La dimensione totale del pacchetto di contenuti generato per la replica deve essere inferiore a 5 MB.
+* Si consiglia di replicare meno di 100 percorsi alla volta, con un limite rigido del percorso di 500.
 
 ### Flusso di lavoro della struttura del contenuto di Pubblica {#publish-content-tree-workflow}
 
