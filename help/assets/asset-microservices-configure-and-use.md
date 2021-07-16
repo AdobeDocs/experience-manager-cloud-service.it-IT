@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute Microservices,Flusso di lavoro,Elaborazione delle risorse
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 1%
@@ -75,7 +75,7 @@ Per creare un profilo di elaborazione standard, effettua le seguenti operazioni:
 
 1. Gli amministratori accedono a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili di elaborazione]**. Fai clic su **[!UICONTROL Crea]**.
 1. Specifica un nome che ti aiuti a identificare in modo univoco il profilo quando lo applichi a una cartella.
-1. Per generare rappresentazioni FPO, nella scheda **[!UICONTROL Standard]** abilita **[!UICONTROL Crea rappresentazione FPO]**. Immettere un valore **[!UICONTROL Quality]** compreso tra 1 e 100.
+1. Per generare rappresentazioni FPO, nella scheda **[!UICONTROL Immagine]** abilita **[!UICONTROL Crea rappresentazione FPO]**. Immettere un valore **[!UICONTROL Quality]** compreso tra 1 e 100.
 1. Per generare altre rappresentazioni, fai clic su **[!UICONTROL Aggiungi nuovo]** e fornisci le seguenti informazioni:
 
    * Nome file di ogni rendering.
