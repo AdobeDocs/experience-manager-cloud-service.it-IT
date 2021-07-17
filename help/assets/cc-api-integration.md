@@ -4,7 +4,7 @@ description: Generare varianti di risorse utilizzando l’integrazione con Creat
 contentOwner: AG
 feature: Caricare, Elaborazione delle risorse, Pubblicazione, Microservizi di Asset compute, Flusso di lavoro
 role: User,Admin
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: f21f8bf7975fd4e82785a4c368cf4956096608d4
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -42,7 +42,8 @@ Per utilizzare i profili di elaborazione per creare automaticamente le varianti,
 
 1. Seleziona la scheda **[!UICONTROL Creative]** , specifica la cartella di output e seleziona **[!UICONTROL Aggiungi nuovo]** per aggiungere una configurazione creativa.
 
-1. Fornisci **[!UICONTROL Nome rappresentazione]** (o nome output), **[!UICONTROL Estensione]** (o tipo di file), seleziona **[!UICONTROL Qualità]** (o parametri di output), seleziona **[!UICONTROL Include]** e **[!UICONTROL Esclude]** elenchi di tipi MIME (o filtro risorse di input) e seleziona l’operazione creativa richiesta.
+1. Fornisci **[!UICONTROL Nome rappresentazione]** (o nome output), **[!UICONTROL Estensione]** (o tipo di file), seleziona **[!UICONTROL Qualità]** (o parametri di output), seleziona **[!UICONTROL Include]** e **[!UICONTROL Esclude]** elenchi di tipi MIME (o filtro risorse di input) e seleziona l&#39;operazione creativa richiesta.&lt;a 10/<br/>
+
    ![scheda creativa nel profilo di elaborazione](assets/creative-processing-profile.png)
 
 1. Alcune operazioni richiedono parametri aggiuntivi (risorsa). Se necessario, fornisci valori per questi parametri aggiuntivi.
