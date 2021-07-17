@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Tag avanzati, assegnazione tag
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '2346'
+source-wordcount: '2350'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ Le organizzazioni che si occupano di risorse digitali utilizzano sempre più voc
 
 Rispetto ai vocabolari linguistici naturali, l’assegnazione di tag basati sulla tassonomia aziendale consente di allineare le risorse al business di un’azienda e garantisce che le risorse più rilevanti vengano visualizzate nelle ricerche. Ad esempio, un produttore di automobili può assegnare tag alle immagini di un&#39;automobile con nomi di modello in modo che vengano visualizzate solo le immagini pertinenti quando viene eseguita una ricerca per progettare una campagna promozionale.
 
-In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) per addestrare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e sulla tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] per impostazione  [!DNL Adobe Developer Console] predefinita, le distribuzioni sono integrate con .
+In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) per addestrare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e sulla tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] applica automaticamente i tag avanzati alle risorse caricate, per impostazione predefinita.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -179,11 +179,11 @@ Per verificare se il servizio Tag avanzati è addestrato sui tag nel set di riso
 
 ## Assegnare tag alle risorse con tag avanzati {#tag-assets}
 
-Quando viene caricato, tutti i tipi di risorse supportate ricevono automaticamente i tag di [!DNL Experience Manager Assets] . L’assegnazione tag è abilitata per impostazione predefinita. [!DNL Experience Manager] applica i tag appropriati in tempo quasi reale.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Quando viene caricato, tutti i tipi di risorse supportate ricevono automaticamente i tag di [!DNL Experience Manager Assets] . Per impostazione predefinita, l’assegnazione tag è abilitata e funziona. [!DNL Experience Manager] applica i tag appropriati in tempo quasi reale.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
-Per immagini e video, i tag avanzati vengono derivati in base ad alcuni aspetti visivi.
+* Per immagini e video, i tag avanzati si basano su alcuni aspetti visivi.
 
-Per le risorse basate su testo, l’efficacia di Tag avanzati non dipende dalla quantità di testo nella risorsa, ma dalle parole chiave o entità pertinenti presenti nel testo della risorsa. Per le risorse basate su testo, i tag avanzati sono le parole chiave che compaiono nel testo ma quelle che descrivono meglio la risorsa. Per le risorse supportate, [!DNL Experience Manager] estrae già il testo, che viene quindi indicizzato e utilizzato per cercare le risorse. Tuttavia, i tag avanzati basati su parole chiave nel testo forniscono un facet di ricerca dedicato, strutturato e con priorità più elevata, utilizzato per migliorare l’individuazione delle risorse rispetto all’indice di ricerca completa.
+* Per le risorse basate su testo, l’efficacia di Tag avanzati non dipende dalla quantità di testo nella risorsa, ma dalle parole chiave o entità pertinenti presenti nel testo della risorsa. Per le risorse basate su testo, i tag avanzati sono le parole chiave che compaiono nel testo ma quelle che descrivono meglio la risorsa. Per le risorse supportate, [!DNL Experience Manager] estrae già il testo, che viene quindi indicizzato e utilizzato per cercare le risorse. Tuttavia, i tag avanzati basati su parole chiave nel testo forniscono un facet di ricerca dedicato, strutturato e con priorità più elevata, utilizzato per migliorare l’individuazione delle risorse rispetto all’indice di ricerca completa.
 
 ## Gestione di tag avanzati e ricerche delle risorse {#manage-smart-tags-and-searches}
 
