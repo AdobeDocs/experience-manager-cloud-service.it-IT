@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Ricerca,Metadati,Distribuzione delle risorse
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '4916'
+source-wordcount: '4911'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ Puoi individuare più rapidamente le risorse desiderate dalla pagina dei risulta
 
 ## Ricercare suggerimenti durante la digitazione {#searchsuggestions}
 
-Quando si inizia a digitare una parola chiave, AEM suggerisce le parole chiave o le frasi di ricerca possibili. I suggerimenti si basano sulle risorse in AEM. AEM indicizza tutti i campi di metadati per facilitarne la ricerca. Per fornire suggerimenti di ricerca, il sistema utilizza i valori dei seguenti pochi campi di metadati. Per fornire suggerimenti di ricerca, è consigliabile compilare i campi seguenti con le parole chiave appropriate:
+Quando si inizia a digitare una parola chiave, in Experience Manager vengono suggerite le parole chiave o le frasi di ricerca possibili. I suggerimenti si basano sulle risorse nell’Experience Manager. L’Experience Manager indicizza tutti i campi di metadati per facilitarne la ricerca. Per fornire suggerimenti di ricerca, il sistema utilizza i valori dei seguenti pochi campi di metadati. Per fornire suggerimenti di ricerca, è consigliabile compilare i campi seguenti con le parole chiave appropriate:
 
 * Tag delle risorse. (mappa su `jcr:content/metadata/cq:tags`)
 * Titolo della risorsa. (mappa su `jcr:content/metadata/dc:title`)
@@ -281,7 +281,7 @@ La funzionalità di ricerca può presentare limitazioni delle prestazioni nei se
 * La ricerca full-text supporta operatori quali `-` e `^`. Per cercare queste lettere come stringhe letterali, racchiudere l&#39;espressione di ricerca tra virgolette doppie. Ad esempio, utilizza `"Notebook - Beauty"` invece di `Notebook - Beauty`.
 * Se i risultati della ricerca sono troppi, limita l’ [ambito di ricerca](#scope) a zero-in sulle risorse desiderate. Funziona meglio se hai qualche idea su come cercare meglio le risorse desiderate, ad esempio un tipo di file specifico, una posizione specifica, metadati specifici e così via.
 
-* **Assegnazione tag**: I tag consentono di classificare le risorse che possono essere cercate e cercate in modo più efficiente. I tag consentono di propagare la tassonomia appropriata ad altri utenti e flussi di lavoro. [!DNL Experience Manager] offre metodi per assegnare automaticamente tag alle risorse utilizzando i servizi intelligenti artificialmente di Adobe Sensei, che consentono di assegnare tag sempre migliori alle risorse in base all’utilizzo e alla formazione. Quando cerchi le risorse, i tag avanzati vengono inseriti in un factoring se la funzione è abilitata sul tuo account. Funziona insieme alla funzionalità di ricerca incorporata. Consultare [comportamento di ricerca](#searchbehavior). Per ottimizzare l&#39;ordine in cui vengono visualizzati i risultati della ricerca, è possibile [incrementare la classificazione di ricerca](#searchrank) di alcune risorse selezionate.
+* **Assegnazione tag**: I tag consentono di classificare le risorse che possono essere cercate e cercate in modo più efficiente. I tag consentono di propagare la tassonomia appropriata ad altri utenti e flussi di lavoro. [!DNL Experience Manager] offre metodi per assegnare automaticamente tag alle risorse utilizzando i servizi intelligenti artificialmente di Adobe Sensei, che consentono di assegnare tag sempre migliori alle risorse in base all’utilizzo e alla formazione. Quando cerchi delle risorse, i tag avanzati vengono inseriti nei factoring. Funziona insieme alla funzionalità di ricerca incorporata. Consultare [comportamento di ricerca](#searchbehavior). Per ottimizzare l&#39;ordine in cui vengono visualizzati i risultati della ricerca, è possibile [incrementare la classificazione di ricerca](#searchrank) di alcune risorse selezionate.
 
 * **Indicizzazione**: Nei risultati della ricerca vengono restituiti solo i metadati e le risorse indicizzate. Per una migliore copertura e prestazioni, assicurati un’indicizzazione adeguata e segui le best practice. Vedere [indicizzazione](#searchindex).
 
@@ -453,7 +453,7 @@ Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UI
 ## Risultati e problemi della ricerca imprevisti {#unexpected-results}
 
 <!--
-**Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
+**Partially related or unrelated search results**: Experience Manager may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
 -->
 
 | Errore, problemi, sintomi | Possibile motivo | Possibile correzione o comprensione del problema |
