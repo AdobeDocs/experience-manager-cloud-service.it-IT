@@ -4,9 +4,9 @@ description: Generare varianti di risorse utilizzando l’integrazione con Creat
 contentOwner: AG
 feature: Caricare, Elaborazione delle risorse, Pubblicazione, Microservizi di Asset compute, Flusso di lavoro
 role: User,Admin
-source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Il componente aggiuntivo per l’automazione dei contenuti integra le API [!DNL Adobe Experience Manager Assets as a Cloud Service] e [!DNL Adobe Creative Cloud] per elaborare in modo creativo le risorse su larga scala. [!DNL Experience Manager] utilizza  [i microservizi per le ](/help/assets/asset-microservices-overview.md) risorse basati su cloud per utilizzare le  [!DNL Adobe Creative Cloud] funzioni e automatizzare la creazione delle risorse e la gestione dei contenuti multimediali.
 
-Per modificare le risorse in [!DNL Adobe Photoshop] e [!DNL Adobe Lightroom], non è necessario scaricare le risorse da [!DNL Experience Manager Assets], modificarle e caricarle di nuovo. È sufficiente creare e configurare un profilo di elaborazione in [!DNL Experience Manager], applicare il profilo a una cartella e caricare le risorse nella cartella. Le risorse caricate vengono rielaborate in base ai profili di elaborazione e ottieni varianti di tali risorse. L&#39;elaborazione di massa continua e semplice consente di risparmiare lavoro manuale e di aumentare la velocità dei contenuti, anche senza la necessità di competenze creative eccezionali. Inoltre, gli sviluppatori e i partner possono estendere i microservizi per le risorse con accesso diretto a queste API e includere logica personalizzata.
+Per modificare le risorse in [!DNL Adobe Photoshop] e [!DNL Adobe Lightroom], non è necessario scaricare le risorse da [!DNL Experience Manager Assets], modificarle e caricarle di nuovo. Puoi creare e configurare un profilo di elaborazione in [!DNL Experience Manager], applicare il profilo a una cartella e caricare le risorse nella cartella. Le risorse caricate vengono rielaborate in base ai profili di elaborazione e ottieni varianti di tali risorse. L&#39;elaborazione di massa continua e semplice consente di risparmiare lavoro manuale e di aumentare la velocità dei contenuti, anche senza la necessità di competenze creative eccezionali. Inoltre, gli sviluppatori e i partner possono estendere i microservizi per le risorse con accesso diretto a queste API e includere logica personalizzata.
 
 Gli utenti possono creare profili di elaborazione per automatizzare le seguenti operazioni creative sulle risorse:\
 ![automatizzare le operazioni Adobe Photoshop ed Adobe Lightroom sulle risorse](assets/content-automation.png)
