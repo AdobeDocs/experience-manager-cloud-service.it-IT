@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadati
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 9%
+source-wordcount: '2562'
+ht-degree: 8%
 
 ---
 
@@ -99,7 +99,7 @@ La scheda **[!UICONTROL Genera modulo]** elenca gli elementi del modulo utilizza
 | [!UICONTROL Riferimenti sui prodotti] | Aggiungi per visualizzare l’elenco dei prodotti collegati alla risorsa. |
 | [!UICONTROL Metadati contestuali] | Aggiungi per controllare la visualizzazione di altre schede di metadati nella pagina delle proprietà delle risorse. |
 
-<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
+<!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
 | [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
 -->
 
@@ -155,7 +155,7 @@ Fare clic su `+` per aggiungere una scheda a un modulo schema. Per impostazione 
 
 ## Eliminare i moduli schema metadati {#deleting-metadata-schema-forms}
 
-AEM consente di eliminare solo i moduli schema personalizzati. Non consente di eliminare i moduli/modelli di schema predefiniti. Tuttavia, è possibile eliminare qualsiasi modifica personalizzata in questi moduli.
+Experience Manager consente di eliminare solo i moduli schema personalizzati. Non consente di eliminare i moduli/modelli di schema predefiniti. Tuttavia, è possibile eliminare qualsiasi modifica personalizzata in questi moduli.
 
 Per eliminare un modulo, selezionarlo e fare clic sull’icona Elimina.
 
@@ -236,16 +236,16 @@ Puoi definire campi obbligatori a livello di cartella, che vengono applicati all
 
 >[!NOTE]
 >
->Un campo di metadati può essere definito obbligatorio in base al valore di un altro campo. Nella vista Schede, AEM non visualizza il messaggio di avviso relativo ai metadati mancanti per tali campi di metadati obbligatori.
+>Un campo di metadati può essere definito obbligatorio in base al valore di un altro campo. Nella vista Schede, in Experience Manager non viene visualizzato il messaggio di avviso relativo ai metadati mancanti per tali campi di metadati obbligatori.
 
-1. Fai clic sul logo AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
+1. Fai clic sul logo Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi di metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Salvare il modulo metadati predefinito come modulo personalizzato. Ad esempio, salvarlo come `my_default`.
 1. Modificare il modulo personalizzato. Aggiungi un campo obbligatorio. Ad esempio, aggiungi un campo **[!UICONTROL Categoria]** e rendi obbligatorio il campo.
 1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina **[!UICONTROL Forms schema metadati]**. Seleziona il modulo, quindi tocca o fai clic su **[!UICONTROL Applica a cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
 1. Passa alla cartella e carica alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista Scheda della risorsa viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
-1. (Facoltativo) Accedi a `https://[server]:[port]/system/console/components/`. Configura e attiva il componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` disattivato per impostazione predefinita. Imposta una frequenza con cui AEM verifica la validità dei metadati sulle risorse.
+1. (Facoltativo) Accedi a `https://[server]:[port]/system/console/components/`. Configura e attiva il componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` disattivato per impostazione predefinita. Imposta una frequenza con cui l’Experience Manager controlla la validità dei metadati sulle risorse.
 
-   Questa configurazione aggiunge una proprietà `hasValidMetadata` a `jcr:content` delle risorse. Utilizzando questa proprietà, AEM filtrare i risultati in una ricerca.
+   Questa configurazione aggiunge una proprietà `hasValidMetadata` a `jcr:content` delle risorse. Utilizzando questa proprietà, Experience Manager può filtrare i risultati in una ricerca.
 
    >[!NOTE]
    >
