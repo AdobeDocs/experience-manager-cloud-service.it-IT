@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadati
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1236'
 ht-degree: 20%
 
 ---
@@ -98,7 +98,7 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo di me
 
 **Per applicare un profilo di metadati a livello globale, effettua una delle seguenti operazioni**
 
-* Passa a `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e applica il profilo appropriato, quindi fai clic su **[!UICONTROL Salva]**.
+* Passa a `https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e applica il profilo appropriato, quindi fai clic su **Salva**.
 
 * Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungi la proprietà `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Fare clic su **Salva tutto**.
 
@@ -110,7 +110,7 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **St
 
 ### Rimozione dei profili di metadati dalle cartelle tramite l’interfaccia utente Profiles {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Fai clic sul logo Experience Manager e passa a **[!UICONTROL Strumenti > Risorse > Profili metadati]**.
+1. Fai clic sul logo AEM e passa a **[!UICONTROL Strumenti > Risorse > Profili metadati]**.
 1. Seleziona il profilo di metadati da rimuovere da una o più cartelle.
 1. Fai clic su **[!UICONTROL Rimuovi profilo metadati da cartelle]**, seleziona la cartella o le cartelle multiple da cui vuoi rimuovere un profilo e fai clic su **[!UICONTROL Fine]**.
 
@@ -118,6 +118,6 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **St
 
 ### Rimozione dei profili di metadati dalle cartelle tramite Proprietà {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Fai clic sul logo Experience Manager, vai a **[!UICONTROL Risorse]** e quindi alla cartella da cui vuoi rimuovere un profilo di metadati.
+1. Fai clic sul logo AEM e passa a **[!UICONTROL Risorse]**, quindi alla cartella da cui vuoi rimuovere un profilo di metadati.
 1. Nella cartella, fai clic sul segno di spunta per selezionarlo, quindi fai clic su **[!UICONTROL Proprietà]**.
 1. Seleziona la scheda **[!UICONTROL Profili metadati]**, fai clic su **[!UICONTROL Nessuno]** dal menu a discesa e infine tocca **[!UICONTROL Salva]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
