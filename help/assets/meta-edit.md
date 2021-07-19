@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadati
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '423'
 ht-degree: 9%
 
 ---
@@ -28,7 +28,7 @@ Per modificare i metadati:
    * Dalla miniatura della risorsa, seleziona l’azione rapida **[!UICONTROL Visualizza proprietà]** .
    * Dalla pagina della risorsa, tocca o fai clic su **[!UICONTROL Visualizza proprietà]** nella barra degli strumenti.
 
-   Nella pagina della risorsa vengono visualizzati tutti i metadati della risorsa. Questi metadati sono stati estratti automaticamente al caricamento (acquisito) in Experience Manager Assets.
+   Nella pagina della risorsa vengono visualizzati tutti i metadati della risorsa. Questi metadati sono stati estratti automaticamente al momento del caricamento (acquisizione) in AEM Assets.
 
 1. Apporta le modifiche necessarie ai metadati delle varie schede e, al termine, per salvarle tocca o fai clic su **[!UICONTROL Salva]** nella barra degli strumenti. Tocca o fai clic su **[!UICONTROL Chiudi]** per tornare all’interfaccia web Assets.
 
@@ -36,7 +36,7 @@ Per modificare i metadati:
    >
    >Se un campo di testo è vuoto, non sono presenti metadati esistenti. È possibile immettere un valore nel campo e salvarlo per aggiungere tale proprietà di metadati.
 
-Qualsiasi modifica ai metadati di una risorsa viene riscritta nel binario originale come parte dei suoi dati XMP. Questo avviene tramite un flusso di lavoro di write-back dei metadati di Experience Manager. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e le proprietà appena create (comprese le proprietà personalizzate come `cq:tags`) vengono aggiunte insieme allo schema.
+Qualsiasi modifica ai metadati di una risorsa viene riscritta nel binario originale come parte dei suoi dati XMP. Questo avviene tramite AEM flusso di lavoro di write-back dei metadati. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e le proprietà appena create (comprese le proprietà personalizzate come `cq:tags`) vengono aggiunte insieme allo schema.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -44,9 +44,9 @@ Qualsiasi modifica ai metadati di una risorsa viene riscritta nel binario origin
 
 Per informazioni dettagliate su come modificare lo schema dei metadati, vedere [Modifica dei moduli dello schema dei metadati](metadata-schemas.md#edit-metadata-schema-forms).
 
-## Registrazione di uno spazio dei nomi personalizzato in Experience Manager {#registering-a-custom-namespace-within-aem}
+## Registrazione di uno spazio dei nomi personalizzato in AEM {#registering-a-custom-namespace-within-aem}
 
-Puoi aggiungere i tuoi namespace all’interno di Experience Manager. Come ci sono spazi dei nomi predefiniti come cq, jcr e sling, puoi avere uno spazio dei nomi per i metadati del tuo archivio e l&#39;elaborazione xml.
+Puoi aggiungere i tuoi namespace all’interno di AEM. Come ci sono spazi dei nomi predefiniti come cq, jcr e sling, puoi avere uno spazio dei nomi per i metadati del tuo archivio e l&#39;elaborazione xml.
 
 1. Vai alla pagina di amministrazione del tipo di nodo *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
 1. Tocca o fai clic su **[!UICONTROL Namespace]** nella parte superiore della pagina. La pagina di amministrazione dello spazio dei nomi viene visualizzata in una finestra.
