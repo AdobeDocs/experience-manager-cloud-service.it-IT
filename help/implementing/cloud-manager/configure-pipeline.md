@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Nella schermata iniziale, queste pipeline sono elencate in una nuova scheda:
 
 1. Accedi alla sezione **pipeline non di produzione** dalla schermata iniziale di Cloud Manager.
 
-   ![](assets/configure-pipeline6.png)
+   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
 
 1. Fai clic sul pulsante **Aggiungi** per specificare il nome della pipeline, il tipo di pipeline e la diramazione Git.
 
@@ -124,13 +124,15 @@ Nella schermata iniziale, queste pipeline sono elencate in una nuova scheda:
 
    ![](assets/non-prod-pipe1.png)
 
-1. Fai clic su **Salva** e la pipeline viene visualizzata sulla scheda nella schermata iniziale con tre azioni, come illustrato di seguito:
+1. Fai clic su **Salva** e la pipeline viene visualizzata sulla scheda nella schermata iniziale con cinque azioni, come illustrato di seguito:
 
-   ![](assets/configure-pipeline8.png)
+   ![](/help/implementing/cloud-manager/assets/prod-one.png)
 
    * **Modifica** : consente di modificare le impostazioni della pipeline
+   * **Dettagli** : fornisce dettagli sull’esecuzione della pipeline
    * **Build** : consente di passare alla pagina di esecuzione dalla quale è possibile eseguire la pipeline.
-   * **Gestione Git** : consente all’utente di ottenere le informazioni necessarie per accedere all’archivio Git di Cloud Manager
+   * **Accesso a informazioni sul repository** : consente all’utente di ottenere le informazioni necessarie per accedere all’archivio Git di Cloud Manager
+   * **Ulteriori informazioni** : descrive la risorsa della documentazione della pipeline CI/CD.
 
 ## Passaggi successivi {#the-next-steps}
 
