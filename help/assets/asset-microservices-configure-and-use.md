@@ -5,9 +5,9 @@ contentOwner: AG
 feature: asset compute Microservices,Flusso di lavoro,Elaborazione delle risorse
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2678'
+source-wordcount: '2709'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Per creare un profilo di elaborazione standard, effettua le seguenti operazioni:
 
 1. Gli amministratori accedono a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili di elaborazione]**. Fai clic su **[!UICONTROL Crea]**.
 1. Specifica un nome che ti aiuti a identificare in modo univoco il profilo quando lo applichi a una cartella.
-1. Per generare rappresentazioni FPO, nella scheda **[!UICONTROL Standard]** abilita **[!UICONTROL Crea rappresentazione FPO]**. Immettere un valore **[!UICONTROL Quality]** compreso tra 1 e 100.
+1. Per generare rappresentazioni FPO, nella scheda **[!UICONTROL Immagine]** abilita **[!UICONTROL Crea rappresentazione FPO]**. Immettere un valore **[!UICONTROL Quality]** compreso tra 1 e 100.
 1. Per generare altre rappresentazioni, fai clic su **[!UICONTROL Aggiungi nuovo]** e fornisci le seguenti informazioni:
 
    * Nome file di ogni rendering.
@@ -160,8 +160,10 @@ Crea e applica i profili di elaborazione aggiuntivi e personalizzati a cartelle 
 Applica i profili di elaborazione alle cartelle utilizzando uno dei seguenti metodi:
 
 * Gli amministratori possono selezionare una definizione di profilo di elaborazione in **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili di elaborazione]** e utilizzare l&#39;azione **[!UICONTROL Applica profilo a cartelle]**. Apre un browser dei contenuti che ti consente di navigare in cartelle specifiche, selezionarle e confermare l’applicazione del profilo.
-* Gli utenti possono selezionare una cartella nell’interfaccia utente Assets, utilizzare l’azione **[!UICONTROL Proprietà]** per aprire la schermata delle proprietà della cartella, fare clic sulla scheda **[!UICONTROL Profili elaborazione]** e selezionare il profilo di elaborazione appropriato per tale cartella nell’elenco a comparsa. Per salvare le modifiche, fai clic su **[!UICONTROL Salva e chiudi]**.
+* Gli utenti possono selezionare una cartella nell’interfaccia utente Assets, utilizzare l’azione **[!UICONTROL Proprietà]** per aprire la schermata delle proprietà della cartella, fare clic sulla scheda **[!UICONTROL Elaborazione risorse]** e, nell’elenco [!UICONTROL Profilo elaborazione], selezionare il profilo di elaborazione appropriato per tale cartella. Per salvare le modifiche, fai clic su **[!UICONTROL Salva e chiudi]**.
    ![Applicare un profilo di elaborazione a una cartella dalla scheda Proprietà risorsa](assets/folder-properties-processing-profile.png)
+
+* Gli utenti possono selezionare cartelle o risorse specifiche nell’interfaccia utente di Assets per applicare un profilo di elaborazione, quindi selezionare l’opzione ![icona di rielaborazione delle risorse](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Rielabora risorse]** tra le opzioni disponibili nella parte superiore.
 
 >[!TIP]
 >
