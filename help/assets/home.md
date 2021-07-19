@@ -4,9 +4,9 @@ description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] r
 feature: Gestione risorse
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '297'
 ht-degree: 32%
 
 ---
@@ -33,8 +33,8 @@ Le seguenti risorse di supporto autonomo sono disponibili per [!DNL Experience M
 | [Guida utente sulla sicurezza](/help/security/home.md) | Scopri importanti argomenti sulla sicurezza relativi a [!DNL Experience Manager] come [!DNL Cloud Service]. |
 | [Onboarding](/help/onboarding/home.md) | Inizia a utilizzare [!DNL Experience Manager] come [!DNL Cloud Service]: accedi e proteggi i dati importanti. |
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Scopri come creare e amministrare [!DNL Experience Manager Sites] come [!DNL Cloud Service]. |
-| [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando le potenti funzionalità di Experience Manager esplorando questi argomenti relativi allo sviluppo e all’implementazione. |
-| [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Esplora questo percorso guidato attraverso le potenti e flessibili funzionalità di Experience Manager headless per preparare il tuo primo progetto headless. |
+| [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando AEM potenti funzionalità esplorando questi argomenti relativi allo sviluppo e alla distribuzione. |
+| [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Esplora questo percorso guidato attraverso le potenti e flessibili funzionalità di AEM per prepararsi al tuo primo progetto headless. |
 | [Spostamento  [!DNL Experience Manager] di [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Comprendi il percorso di transizione in [!DNL Experience Manager] come [!DNL Cloud Service]. |
 | [Guida utente dei connettori](/help/connectors/home.md) | Scopri come integrare i connettori in [!DNL Experience Manager] come [!DNL Cloud Service]. |
 | [Guida utente sulle operazioni](/help/operations/home.md) | Scopri le operazioni back-end di [!DNL Experience Manager] come [!DNL Cloud Service], ad esempio le attività di indicizzazione e manutenzione. |
