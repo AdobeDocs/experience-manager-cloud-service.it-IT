@@ -1,56 +1,61 @@
 ---
-title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0
-description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0
+title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.5.0
+description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.5.0
 feature: Informazioni sulla versione
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: e24610cef6d134ddf9ce8abe9a5893deac08eeb6
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 4%
+source-wordcount: '419'
+ht-degree: 3%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.7.0 {#release-notes}
+# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.6.0 {#release-notes}
 
-Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0.
+Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.6.0.
 
 >[!NOTE]
 >Per visualizzare il Cloud Service delle note sulla versione corrente per Adobe Experience Manager, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
 ## Data di rilascio {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.7.0 è il 15 luglio 2021.
-La prossima versione è prevista per il 12 agosto 2021.
+La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.6.0 è il 10 giugno 2021.
+La prossima versione è prevista per il 15 luglio 2021.
 
 ### Novità {#what-is-new}
 
-* I clienti ora possono utilizzare Azul 8 e 11 JDK per i processi di creazione di Cloud Manager e possono scegliere di utilizzare uno di questi JDK per i plug-in Maven compatibili con toolchain *o* per l’intera esecuzione del processo Maven.
+* Preview Service verrà distribuito su base continua a tutti i programmi. I clienti riceveranno una notifica interna al prodotto quando il loro programma è abilitato per Preview Service. Per ulteriori informazioni, consulta [Accesso al servizio di anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) .
 
-* L&#39;IP in uscita verrà ora registrato nel file di registro dei passaggi della build.
+* Le dipendenze Maven scaricate durante il passaggio di creazione ora verranno memorizzate nella cache tra le esecuzioni della pipeline. Questa funzione verrà attivata per i clienti nelle prossime settimane.
 
-* Gli ambienti di stage e produzione che eseguono versioni precedenti di AEM ora segnalano lo stato **Aggiorna disponibile**.
+* È ora possibile modificare il nome del programma tramite la finestra di dialogo modifica programma.
 
-* Il numero massimo di certificati SSL supportati è aumentato a 20 per programma.
+* Il nome del ramo predefinito utilizzato sia durante la creazione del progetto che nel comando push predefinito tramite gestione flussi di lavoro Git è stato modificato in `main`.
 
-* Il numero massimo di domini configurabili è aumentato a 500 per ambiente.
+* L’esperienza di modifica del programma nell’interfaccia utente è stata aggiornata.
 
-* I pulsanti **Manage Git** (Gestisci Git) sono stati rinominati in **Access Git Info** e la finestra di dialogo è stata aggiornata visivamente.
+* La regola di qualità `ImmutableMutableMixCheck` è stata aggiornata per classificare i nodi `/oak:index` come immutabili.
 
-* La versione di AEM Project Archetype utilizzata da Cloud Manager è stata aggiornata alla versione 28.
+* Le regole di qualità `CQBP-84` e `CQBP-84--dependencies` sono state consolidate in un’unica regola. Come parte di questo consolidamento, la scansione delle dipendenze identifica più accuratamente i problemi nelle dipendenze di terze parti che vengono distribuiti nel runtime di AEM.
+
+* Per evitare confusione, le righe del segmento Pubblica AEM e Pubblica dispatcher nella pagina Dettagli ambiente sono state consolidate.
+
+   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
+
+* È stata aggiunta una nuova regola di qualità del codice per convalidare la struttura degli indici `damAssetLucene`. Per ulteriori informazioni, consulta [Indici Oak di risorsa Lucene personalizzati DAM](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) .
+
+* Nella pagina dei dettagli dell’ambiente vengono ora visualizzati più nomi di dominio per i servizi di pubblicazione e anteprima (a seconda dei casi). Per ulteriori informazioni, consulta [Dettagli ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) .
 
 ### Correzioni di bug {#bug-fixes}
 
-* In alcune situazioni, l’opzione Anteprima non era disponibile durante il binding di un Elenco consentiti IP a un ambiente.
+* Le definizioni dei nodi JCR contenenti una nuova riga dopo che il nome dell&#39;elemento principale non è stato analizzato correttamente.
 
-* La navigazione manuale alla pagina dei dettagli di esecuzione per un’esecuzione non esistente non mostrava un errore, ma solo una schermata di caricamento infinita.
+* L&#39;API degli archivi di elenchi non filtrerebbe gli archivi eliminati.
 
-* Il messaggio di errore visualizzato quando è stato raggiunto il numero massimo di certificati SSL non è stato utile.
+* Veniva visualizzato un messaggio di errore non corretto quando veniva fornito un valore non valido per il passaggio di pianificazione.
 
-* In alcune circostanze, potrebbe esserci una discrepanza nella versione di rilascio mostrata nella scheda della pipeline nella pagina **Panoramica** .
+* A volte, l&#39;utente può visualizzare uno stato verde *attivo* accanto a un Elenco consentiti IP anche quando tale configurazione non è stata distribuita.
 
-* Aggiunta guidata programma non corretta: il nome non può essere modificato dopo la creazione.
+* Alcune sequenze di modifica dei programmi potrebbero impedire la creazione o la modifica della pipeline di produzione.
 
-### Problemi noti {#known-issues}
-
-I clienti che passano all&#39;uso di Azul JDK dovrebbero essere consapevoli che non tutte le applicazioni esistenti si compileranno senza errori su Azul JDK. Si consiglia vivamente di eseguire il test localmente prima di passare a un altro metodo.
-
+* Alcune sequenze di modifica del programma potrebbero causare la visualizzazione di un messaggio fuorviante della pagina **Panoramica** per la riesecuzione della configurazione del programma.
