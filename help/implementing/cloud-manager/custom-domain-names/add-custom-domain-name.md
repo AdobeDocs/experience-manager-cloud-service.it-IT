@@ -2,7 +2,7 @@
 title: Aggiunta di un nome di dominio personalizzato
 description: Aggiunta di un nome di dominio personalizzato
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Per aggiungere un nome di dominio personalizzato in Cloud Manager, un utente dev
 
 * AEM come Cloud Service non supporta i domini con caratteri jolly.
 
-* Ogni ambiente Cloud Manager può ospitare fino a un massimo di 250 domini personalizzati per ambiente.
+* Ogni ambiente Cloud Manager può ospitare fino a un massimo di 500 domini personalizzati per ambiente.
 
 * Lo stesso nome di dominio non può essere utilizzato in più di un ambiente.
 
