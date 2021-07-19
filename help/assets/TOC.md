@@ -3,11 +3,11 @@ sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Guida di Assets as a Cloud Service
 breadcrumb-title: Guida di Assets
 user-guide-description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
-solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+solution: Experience Manager, Experience Manager Assets, Experience Manager as a Cloud Service
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 72%
+source-wordcount: '484'
+ht-degree: 71%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 72%
    + [Tag avanzati per immagini](smart-tags.md)
    + [Assegnare tag avanzati alle risorse video](smart-tags-video-assets.md)
    + [Organizzare le risorse](organize-assets.md)
-   + [Utilizzare [!DNL Adobe Stock] risorse](aem-assets-adobe-stock.md)
+   + [Utilizzare [!DNL Adobe Stock] risorse in AEM](aem-assets-adobe-stock.md)
    + [Gestire le raccolte](manage-collections.md)
    + [Panoramica sui metadati](manage-metadata.md)
    + [Integrare con [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -54,9 +54,9 @@ ht-degree: 72%
    + [Facet di ricerca](search-facets.md)
    + [API HTTP di Assets](mac-api-assets.md)
    + [Supporto dei frammenti di contenuto nell’API HTTP di Assets](content-fragments/assets-api-content-fragments.md)
-   + [API GraphQL per frammenti di contenuto](content-fragments/graphql-api-content-fragments.md)
-   + [Autenticazione per query GraphQL remote sui frammenti di contenuto](content-fragments/graphql-authentication-content-fragments.md)
-   + [API GraphQL con frammenti di contenuto - Contenuto di esempio e query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [API GraphQL AEM per frammenti di contenuto](content-fragments/graphql-api-content-fragments.md)
+   + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](content-fragments/graphql-authentication-content-fragments.md)
+   + [AEM API GraphQL con frammenti di contenuto - Contenuto di esempio e query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Risorse collegate](use-assets-across-connected-assets-instances.md)
    + [Rapporti sulle risorse](asset-reports.md)
    + [Metadati a cascata](cascading-metadata.md)
