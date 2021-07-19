@@ -2,7 +2,7 @@
 title: Gestisci ambienti - Cloud Service
 description: Gestisci ambienti - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -67,7 +67,7 @@ La scheda **Ambienti** nella pagina Panoramica elenca fino a tre ambienti.
 
 1. Selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo **Ambiente** per visualizzare una tabella con un elenco completo di ambienti.
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. La pagina **Ambienti** visualizza l&#39;elenco di tutti gli ambienti esistenti.
 
