@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Gestione risorse, assegnazione tag, distribuzione risorse
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 Tutte le risorse digitali, i metadati e il contenuto di Microsoft Office e i documenti PDF vengono estratti e resi ricercabili. La ricerca consente un filtraggio sofisticato delle risorse e rispetta completamente le autorizzazioni appropriate. I metadati sono descritti in dettaglio in Metadata in Digital Asset Management.
 
-AEM Assets supporta diversi modi per organizzare i contenuti. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag. Gli utenti possono modificare i tag nell’editor risorse DAM in cui vengono visualizzate risorse secondarie, rappresentazioni e metadati.
+Experience Manager Assets supporta diversi modi per organizzare i contenuti. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag. Gli utenti possono modificare i tag nell’editor risorse DAM in cui vengono visualizzate risorse secondarie, rappresentazioni e metadati.
 
 ## Creare cartelle {#create-folders}
 
-Quando organizzi una raccolta di risorse, ad esempio tutte le immagini *Natura*, puoi creare cartelle per mantenerle intatte. Puoi utilizzare le cartelle per suddividere in categorie e organizzare le risorse. AEM Assets non richiede di organizzare le risorse nelle cartelle per funzionare meglio.
+Quando organizzi una raccolta di risorse, ad esempio tutte le immagini *Natura*, puoi creare cartelle per mantenerle intatte. Puoi utilizzare le cartelle per suddividere in categorie e organizzare le risorse. [!DNL Assets] non richiede di organizzare meglio le risorse nelle cartelle.
 
 >[!NOTE]
 >
