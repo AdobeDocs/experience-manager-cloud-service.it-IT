@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Metadati
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '666'
 ht-degree: 12%
 
 ---
 
 # Importare ed esportare in blocco i metadati delle risorse {#import-and-export-asset-metadata-in-bulk}
 
-Adobe Experience Manager Assets consente di importare in blocco i metadati delle risorse utilizzando un file CSV. È possibile eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Puoi anche acquisire i metadati delle risorse in blocco da sistemi di terze parti in formato CSV.
+AEM Assets consente di importare in blocco i metadati delle risorse utilizzando un file CSV. È possibile eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Puoi anche acquisire i metadati delle risorse in blocco da sistemi di terze parti in formato CSV.
 
 ## Importare metadati {#import-metadata}
 
@@ -47,7 +47,7 @@ Per aggiungere data e marca temporale durante l’importazione dei metadati, uti
 
 ## Esporta metadati {#export-metadata}
 
-Puoi esportare i metadati per più risorse in un formato CSV. I metadati vengono esportati in modo asincrono e non influiscono sulle prestazioni del sistema. Per esportare i metadati, Experience Manager analizza le proprietà del nodo della risorsa `jcr:content/metadata` e dei relativi nodi figlio ed esporta le proprietà dei metadati in un file CSV.
+Puoi esportare i metadati per più risorse in un formato CSV. I metadati vengono esportati in modo asincrono e non influiscono sulle prestazioni del sistema. Per esportare i metadati, AEM analizza le proprietà del nodo della risorsa `jcr:content/metadata` e dei relativi nodi figlio ed esporta le proprietà dei metadati in un file CSV.
 
 Alcuni casi d&#39;uso per esportare i metadati in blocco sono:
 
