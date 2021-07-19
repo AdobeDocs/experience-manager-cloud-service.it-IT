@@ -2,9 +2,9 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1338'
 ht-degree: 4%
 
 ---
@@ -55,6 +55,10 @@ Per eseguire un&#39;attivazione ad albero:
 
    ![](assets/publish-distribute.png "DistribuisciDistribuisci")
 4. Seleziona il percorso nel browser percorsi, scegli di aggiungere un nodo, un albero o elimina come richiesto e seleziona **Invia**
+
+Per ottenere le migliori prestazioni, segui queste linee guida quando utilizzi questa funzione:
+* Si consiglia di replicare meno di 100 percorsi alla volta, con un limite rigido del percorso di 500.
+* La dimensione totale del contenuto replicato deve essere inferiore a 5 MB. Questo include solo i nodi e le proprietà, ma non tutti i binari, che includono pacchetti di flusso di lavoro e pacchetti di contenuto.
 
 ### Flusso di lavoro della struttura del contenuto di Pubblica {#publish-content-tree-workflow}
 
@@ -185,6 +189,11 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Nel caso in cui non si fornisca un filtro di questo tipo e si utilizzi solo l’agente &quot;publish&quot;, l’agente &quot;preview&quot; non viene utilizzato e l’azione di replica non influisce sul livello di anteprima.
 
 La `ReplicationStatus` complessiva di una risorsa viene modificata solo se l&#39;azione di replica include almeno un agente attivo per impostazione predefinita. Nell’esempio precedente questo non avviene, in quanto la replica utilizza solo l’agente &quot;preview&quot;. Pertanto, devi utilizzare il nuovo metodo `getStatusForAgent()`, che consente di eseguire query sullo stato di un agente specifico. Questo metodo funziona anche per l’agente &quot;publish&quot;. Restituisce un valore non-null se è stata eseguita un&#39;azione di replica utilizzando l&#39;agente fornito.
+
+
+**Limiti di percorso e dimensioni dell’API di replica**
+
+Si consiglia di replicare meno di 100 percorsi, con 500 come limite rigido. Al di sopra del limite rigido, verrà lanciata una ReplicationException. Se la logica dell&#39;applicazione non richiede la replica atomica, questo limite può essere superato impostando ReplicationOptions.setUseAtomicCalls su false, che accetta qualsiasi numero di percorsi, ma crea internamente bucket per rimanere al di sotto di questo limite. La quantità di contenuto trasmesso per chiamata di replica non deve superare i 5 MB, che include i nodi e le proprietà, ma non gli eventuali binari (i pacchetti di flusso di lavoro e i pacchetti di contenuto sono considerati binari).
 
 ## Risoluzione dei problemi {#troubleshooting}
 
