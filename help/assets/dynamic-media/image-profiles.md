@@ -4,10 +4,10 @@ description: Scopri come creare profili immagine di Dynamic Media contenenti imp
 feature: Gestione Delle Risorse, Profili Immagine, Rendering
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
 workflow-type: tm+mt
-source-wordcount: '2711'
-ht-degree: 8%
+source-wordcount: '2714'
+ht-degree: 7%
 
 ---
 
@@ -160,7 +160,7 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 
 #### Applicare profili immagine Dynamic Media alle cartelle da Proprietà {#applying-image-profiles-to-folders-from-properties}
 
-1. Seleziona il logo Experience Manager e vai a **[!UICONTROL Risorse]** e quindi alla cartella a cui desideri applicare un profilo immagine.
+1. Tocca il logo AEM e passa a **[!UICONTROL Risorse]**. Quindi passa alla cartella principale della cartella a cui desideri applicare un profilo immagine.
 1. Nella cartella, seleziona il segno di spunta per selezionarlo, quindi seleziona **[!UICONTROL Proprietà]**.
 1. Seleziona la scheda **[!UICONTROL Profili immagine]** . Dall’elenco a discesa **[!UICONTROL Nome profilo]**, seleziona il profilo, quindi seleziona **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
