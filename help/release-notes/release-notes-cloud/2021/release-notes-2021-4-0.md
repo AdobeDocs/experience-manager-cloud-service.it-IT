@@ -2,15 +2,15 @@
 title: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
+source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 4%
+source-wordcount: '1535'
+ht-degree: 3%
 
 ---
 
 
-# Note sulla versione corrente per [!DNL Adobe Experience Manager] come Cloud Service {#release-notes}
+# Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La sezione seguente illustra le note generali sulla versione per la versione corrente (più recente) di [!DNL Experience Manager] come Cloud Service.
 
@@ -26,7 +26,7 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 è il 6 maggio 2021.
 La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 
-## AEM come Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
+## AEM come base di Cloud Service{#aem-as-a-cloud-service-foundation}
 
 ### Novità {#what-is-new-foundation}
 
@@ -65,6 +65,8 @@ La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 * Quando si importano le risorse utilizzando lo strumento di importazione in blocco, gli amministratori ora possono eliminare i file di origine dopo il successo dell’importazione. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Durante la modifica di uno schema di metadati, un nuovo campo di selezione del percorso principale consente agli amministratori di effettuare la selezione in modo rapido e semplice, riducendo in tal modo il tempo di configurazione.
+
+* Durante la modifica di uno schema di metadati, viene aggiunto un tipo di dati che fornisce un’area di testo in formato libero nell’editor di metadati. Gli utenti possono utilizzare questa area di testo per immettere testo in formato libero come metadati di una risorsa. Consulta [Editor schema metadati](/help/assets/metadata-schemas.md).
 
 * I metadati di molte risorse possono essere importati in blocco utilizzando un file CSV e possono essere esportati in un file CSV. Il formato di data predefinito è ora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gli utenti possono utilizzare un formato diverso aggiornando l’intestazione della colonna. Ad esempio, aggiungi `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` come intestazione di colonna nel file CSV anziché la parola `Date`.
 
