@@ -4,7 +4,7 @@ description: Segui questa pagina per scoprire come assegnare i membri del team a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## Obiettivo {#objective}
 
-Questo documento illustra i passaggi che l’amministratore di sistema deve seguire per assegnare i membri del team a AEM come profili di prodotto di Cloud Service e spiega perché è fondamentale consentire agli autori AEM di iniziare il proprio percorso con AEM.
+Questo documento aiuta a comprendere i passaggi che l’amministratore di sistema deve seguire per assegnare i membri del team a AEM come profili di prodotto di Cloud Service e perché è fondamentale per consentire agli autori AEM di iniziare il proprio percorso con AEM.
 
 Dopo aver letto questa sezione devi:
 
