@@ -2,9 +2,9 @@
 title: Regole per la qualità del codice personalizzato - Cloud Services
 description: Regole per la qualità del codice personalizzato - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bd9cb35016b91e247f14a851ad195a48ac30fda0
+source-git-commit: 0217e39ddc8fdaa2aa204568be291d608aef3d0e
 workflow-type: tm+mt
-source-wordcount: '3403'
+source-wordcount: '3520'
 ht-degree: 4%
 
 ---
@@ -106,7 +106,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### Le richieste HTTP devono sempre avere socket e timeout di connessione {#http-requests-should-always-have-socket-and-connect-timeouts}
+### Le richieste HTTP devono sempre avere un socket e un timeout di connessione {#http-requests-should-always-have-socket-and-connect-timeouts}
 
 **Chiave**: CQRules:ConnectionTimeoutMechanism
 
@@ -184,7 +184,7 @@ public void orDoThis() {
 }
 ```
 
-### Gli oggetti ResourceResolver devono essere sempre chiusi {#resourceresolver-objects-should-always-be-closed}
+### Gli oggetti ResourceResolver devono sempre essere chiusi {#resourceresolver-objects-should-always-be-closed}
 
 **Chiave**: CQRules:CQBP-72
 
@@ -252,7 +252,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### Le eccezioni rilevate devono essere registrate o lanciate, ma non entrambe {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### Le eccezioni catturate devono essere registrate o lanciate, ma non entrambe {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 **Chiave**: CQRules:CQBP-44—CatchAndOrLogOrThrow
 
@@ -326,7 +326,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### Evita la registrazione a INFO quando gestisci le richieste GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Evita la registrazione a INFO quando gestisci richieste GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Chiave**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
@@ -392,7 +392,7 @@ public void doThis() {
 }
 ```
 
-### L&#39;accesso ai blocchi di blocco deve essere al livello WARN o ERROR {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
+### L&#39;accesso ai blocchi di blocco deve essere a livello di WARN o ERROR {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 **Chiave**: CQRules:CQBP-44—WrongLogLevelInCatchBlock
 
@@ -428,7 +428,7 @@ public void doThis() {
 }
 ```
 
-### Non stampare tracce di stack nella console {#do-not-print-stack-traces-to-the-console}
+### Non stampare le tracce di stack nella console {#do-not-print-stack-traces-to-the-console}
 
 **Chiave**: CQRules:CQBP-44—ExceptionPrintStackTrace
 
@@ -464,7 +464,7 @@ public void doThis() {
 }
 ```
 
-### Non trasmettere in uscita standard o errore standard {#do-not-output-to-standard-output-or-standard-error}
+### Non trasmettere a Output standard o Errore standard {#do-not-output-to-standard-output-or-standard-error}
 
 **Chiave**: CQRules:CQBP-44—LogLevelConsolePrinters
 
@@ -500,7 +500,7 @@ public void doThis() {
 }
 ```
 
-### Evitare percorsi /apps e /libs codificati {#avoid-hardcoded-apps-and-libs-paths}
+### Evitare percorsi /apps e /libs con codifica hardware {#avoid-hardcoded-apps-and-libs-paths}
 
 **Chiave**: CQRules:CQBP-71
 
@@ -528,7 +528,7 @@ public void doThis(Resource resource) {
 }
 ```
 
-### Lo scheduler Sling non deve essere utilizzato {#sonarqube-sling-scheduler}
+### Lo Scheduler Sling Non Deve Essere Utilizzato {#sonarqube-sling-scheduler}
 
 **Chiave**: CQRules:AMSCORE-554
 
@@ -542,7 +542,7 @@ Lo strumento di pianificazione Sling non deve essere utilizzato per attività ch
 
 Per ulteriori informazioni sulla gestione dei processi Sling in ambienti cluster, consulta [Eventi Sling Apache e Gestione processi](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) .
 
-### AEM Le API obsolete non devono essere utilizzate {#sonarqube-aem-deprecated}
+### AEM Non Utilizzare API Obsolete {#sonarqube-aem-deprecated}
 
 **Chiave**: AMSCORE-553
 
@@ -592,7 +592,88 @@ public class DontDoThis implements Page {
 }
 ```
 
-### Gli indici Oak personalizzati di DAM Asset Lucene sono strutturati correttamente {#oakpal-damAssetLucene-sanity-check}
+### Gli indici Oak Lucene personalizzati devono avere una configurazione tika {#oakpal-indextikanode}
+
+**Chiave**: IndexTikaNode
+
+**Tipo**: Bug
+
+**Gravità**: Blocco
+
+**Da**: 2021.8.0
+
+Più indici Oak predefiniti includono una configurazione tika e personalizzazioni di questi indici **must** includono una configurazione tika. Questa regola verifica la presenza di personalizzazioni degli indici `damAssetLucene`, `lucene` e `graphqlConfig` e solleva un problema se l’  manca un nodo o se al nodo `tika` manca un nodo figlio denominato `config.xml`.`tika`
+
+Per ulteriori informazioni sulla personalizzazione delle definizioni degli indici, consulta [Documentazione sull&#39;indicizzazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) .
+
+#### Codice non conforme {#non-compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+```
+
+#### Codice conforme {#compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Gli indici Oak Lucene personalizzati non devono essere sincroni {#oakpal-indexasync}
+
+**Chiave**: IndexAsyncProperty
+
+**Tipo**: Bug
+
+**Gravità**: Blocco
+
+**Da**: 2021.8.0
+
+Indici Oak del tipo lucene  deve essere sempre indicizzato in modo asincrono. In caso contrario, potrebbe verificarsi un&#39;instabilità del sistema. Ulteriori informazioni sulla struttura degli indici lucene sono disponibili nella [documentazione Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+
+#### Codice non conforme {#non-compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### Codice conforme {#compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Gli indici Oak di DAM Asset Lucene personalizzati sono strutturati correttamente  {#oakpal-damAssetLucene-sanity-check}
 
 **Chiave**: IndexDamAssetLucene
 
@@ -602,38 +683,31 @@ public class DontDoThis implements Page {
 
 **Da**: 2021.6.0
 
-Affinché la ricerca delle risorse funzioni correttamente in AEM Assets, l’indice Oak `damAssetLucene` deve seguire una serie di linee guida. Questa regola controlla i seguenti pattern specificatamente per gli indici il cui nome contiene `damAssetLucene`:
-
-Il nome deve seguire le linee guida per personalizzare le definizioni degli indici descritte qui.
-
-* Specificamente il nome deve seguire il pattern `damAssetLucene-<indexNumber>-custom-<customerVersionNumber>`.
-
-* La definizione dell&#39;indice deve avere una proprietà con più valori denominata tags che contiene il valore `visualSimilaritySearch`.
-
-* La definizione dell&#39;indice deve avere un nodo figlio denominato `tika` e tale nodo figlio deve avere un nodo figlio denominato config.xml .
+Affinché la ricerca delle risorse funzioni correttamente in AEM Assets, le personalizzazioni dell’ `damAssetLucene` indice Oak devono seguire una serie di linee guida specifiche per questo indice. Questa regola controlla che la definizione dell&#39;indice debba avere una proprietà con più valori denominata `tags` che contiene il valore `visualSimilaritySearch`.
 
 #### Codice non conforme {#non-compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - type: lucene
+    + damAssetLucene-1-custom
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      + tika
+        + config.xml
 ```
 
 #### Codice conforme {#compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom-2
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - reindexCount: -6952249853801250000
-      - tags: [visualSimilaritySearch]
-      - type: lucene
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
       + tika
         + config.xml
 ```
@@ -684,7 +758,7 @@ Un problema comune che si verifica in progetti complessi è che lo stesso compon
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-### Le cartelle di configurazione e installazione devono contenere solo i nodi OSGi {#oakpal-config-install}
+### Le cartelle di configurazione e installazione devono contenere solo nodi OSGi {#oakpal-config-install}
 
 **Chiave**: ConfigAndInstallShouldOnlyContainOsgiNodes
 
@@ -717,7 +791,7 @@ Un problema comune è l’utilizzo di nodi denominati `config` nelle finestre di
       + rtePlugins [nt:unstructured]
 ```
 
-### I pacchetti non devono sovrapporsi {#oakpal-no-overlap}
+### I Pacchetti Non Devono Sovrapporsi {#oakpal-no-overlap}
 
 **Chiave**: PackageOverlaps
 
@@ -729,7 +803,7 @@ Un problema comune è l’utilizzo di nodi denominati `config` nelle finestre di
 
 Simile ai *Pacchetti non devono contenere configurazioni OSGi duplicate*, si tratta di un problema comune nei progetti complessi in cui lo stesso percorso nodo viene scritto da più pacchetti di contenuto separati. Quando si utilizzano le dipendenze dei pacchetti di contenuti per garantire un risultato coerente, è meglio evitare completamente sovrapposizioni.
 
-### La modalità di authoring predefinita non deve essere un’interfaccia classica {#oakpal-default-authoring}
+### La Modalità Di Authoring Predefinita Non Deve Essere Interfaccia Classica {#oakpal-default-authoring}
 
 **Chiave**: ClassicUIAuthoringMode
 
@@ -741,7 +815,7 @@ Simile ai *Pacchetti non devono contenere configurazioni OSGi duplicate*, si tra
 
 La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definisce la modalità di authoring predefinita all’interno di AEM. Poiché l’interfaccia utente classica è stata dichiarata obsoleta a partire dalla versione 6.4 di AEM, ora viene generato un problema quando la modalità di authoring predefinita è configurata nell’interfaccia classica.
 
-### I componenti con finestre di dialogo devono avere finestre di dialogo dell&#39;interfaccia touch {#oakpal-components-dialogs}
+### I Componenti Con Finestre Di Dialogo Devono Avere Finestre Di Dialogo Dell’Interfaccia Touch {#oakpal-components-dialogs}
 
 **Chiave**: Finestra di dialogo ComponentWithOnlyClassicUID
 
@@ -759,7 +833,7 @@ I componenti AEM che dispongono di una finestra di dialogo dell’interfaccia cl
 
 La documentazione sugli strumenti di modernizzazione AEM fornisce documentazione e strumenti per la conversione dei componenti dall’interfaccia classica all’interfaccia utente touch. Per ulteriori informazioni, consulta [Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) .
 
-### I pacchetti non devono mixare contenuto variabile e immutabile {#oakpal-packages-immutable}
+### I pacchetti non devono mescolare contenuto variabile e immutabile {#oakpal-packages-immutable}
 
 **Chiave**: ImmutableMeableMixedPackage
 
@@ -773,7 +847,7 @@ Per essere compatibile con il modello di distribuzione del Cloud Service, i sing
 
 Per ulteriori informazioni, consulta [AEM Struttura del progetto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) .
 
-### Gli Agenti Di Replica Inversa Non Devono Essere Utilizzati {#oakpal-reverse-replication}
+### Non Utilizzare Agenti Di Replica Inversa {#oakpal-reverse-replication}
 
 **Chiave**: ReverseReplication
 
@@ -845,7 +919,7 @@ Con il passaggio ai micro-servizi Asset per l’elaborazione delle risorse AEM C
 
 Anche se l’utilizzo di modelli statici è sempre stato molto comune nei progetti AEM, i modelli modificabili sono altamente consigliati in quanto offrono la massima flessibilità e supportano funzionalità aggiuntive non presenti nei modelli statici. Ulteriori informazioni sono disponibili su [Modelli di pagina.](/help/implementing/developing/components/templates.md) La migrazione da modelli statici a modificabili può essere in gran parte automatizzata tramite gli  [AEM strumenti](https://opensource.adobe.com/aem-modernize-tools/) di modernizzazione.
 
-### OakPAL - L&#39;utilizzo di componenti di base legacy è scoraggiato {#oakpal-usage-legacy}
+### OakPAL - Sconsigliato l’utilizzo di componenti di base legacy {#oakpal-usage-legacy}
 
 **Chiave**: UsoComponenteLegacyFoundation
 
@@ -917,7 +991,7 @@ Difficile risolvere i problemi possono verificarsi quando si verifica un nodo di
 
 Un nodo di definizione dell&#39;indice di ricerca personalizzato definito correttamente deve contenere un nodo figlio denominato indexRules che, a sua volta, deve avere almeno un figlio. Ulteriori informazioni sono disponibili su [Documentazione Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-### OakPAL - I nodi di definizione dell&#39;indice di ricerca personalizzato devono seguire le convenzioni di denominazione {#oakpal-custom-search-definitions}
+### OakPAL - I Nodi Di Definizione Dell&#39;Indice Di Ricerca Personalizzati Devono Seguire Le Convenzioni Di Denominazione {#oakpal-custom-search-definitions}
 
 **Chiave**: NomeIndice
 
@@ -929,15 +1003,15 @@ Un nodo di definizione dell&#39;indice di ricerca personalizzato definito corret
 
 AEM Cloud Service richiede che le definizioni degli indici di ricerca personalizzati (ovvero, i nodi di tipo `oak:QueryIndexDefinition`) siano denominati seguendo un pattern specifico descritto in [Ricerca e indicizzazione dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
 
-### OakPAL - I nodi di definizione dell&#39;indice di ricerca personalizzato devono utilizzare il tipo di indice lucene {#oakpal-index-type-lucene}
+### OakPAL - I nodi di definizione dell&#39;indice di ricerca personalizzato devono utilizzare il tipo di indice lucene  {#oakpal-index-type-lucene}
 
 **Chiave**: IndexType
 
-**Tipo**: Odore di codice
+**Tipo**: Bug
 
-**Gravità**: Minore
+**Gravità**: Blocco
 
-**Da**: Versione 2021.2.0
+**Da**: Versione 2021.2.0 (modificato il tipo e la gravità in 2021.8.0)
 
 AEM Cloud Service richiede che le definizioni dell&#39;indice di ricerca personalizzata (cioè i nodi di tipo oak:QueryIndexDefinition) abbiano una proprietà type con il valore impostato su **lucene**. L&#39;indicizzazione utilizzando i tipi di indice legacy deve essere aggiornata prima della migrazione al Cloud Service AEM. Per ulteriori informazioni, consulta [Ricerca e indicizzazione dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) .
 
