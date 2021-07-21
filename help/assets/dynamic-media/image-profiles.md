@@ -4,9 +4,9 @@ description: Scopri come creare profili immagine di Dynamic Media contenenti imp
 feature: Gestione Delle Risorse, Profili Immagine, Rendering
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
+source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: '2762'
 ht-degree: 7%
 
 ---
@@ -160,9 +160,15 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 
 #### Applicare profili immagine Dynamic Media alle cartelle da Proprietà {#applying-image-profiles-to-folders-from-properties}
 
-1. Tocca il logo AEM e passa a **[!UICONTROL Risorse]**. Quindi passa alla cartella principale della cartella a cui desideri applicare un profilo immagine.
-1. Nella cartella, seleziona il segno di spunta per selezionarlo, quindi seleziona **[!UICONTROL Proprietà]**.
-1. Seleziona la scheda **[!UICONTROL Profili immagine]** . Dall’elenco a discesa **[!UICONTROL Nome profilo]**, seleziona il profilo, quindi seleziona **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Risorse]**.
+1. Passa a una *cartella* (non a una risorsa) alla quale desideri applicare un profilo immagine.
+1. A seconda della visualizzazione in cui ti trovi, effettua una delle seguenti operazioni:
+   * In Vista a schede, posiziona il puntatore sulla cartella, quindi seleziona il segno di spunta per selezionarla.
+   * In Vista a colonne o Vista a elenco, seleziona la casella di controllo a sinistra del nome della cartella.
+1. Sulla barra degli strumenti, seleziona **[!UICONTROL Proprietà]**.
+1. Seleziona la scheda **[!UICONTROL Elaborazione Dynamic Media]** .
+1. In **[!UICONTROL Profilo immagine]**, seleziona il profilo da applicare dall’elenco a discesa **[!UICONTROL Nome profilo]**.
+1. Nell&#39;angolo in alto a destra della pagina, seleziona **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
