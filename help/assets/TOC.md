@@ -4,10 +4,10 @@ user-guide-title: Guida di Assets as a Cloud Service
 breadcrumb-title: Guida di Assets
 user-guide-description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 72%
+source-wordcount: '481'
+ht-degree: 66%
 
 ---
 
@@ -112,8 +112,8 @@ ht-degree: 72%
    + [Immagini interattive](dynamic-media/interactive-images.md)
    + [Video interattivi](dynamic-media/interactive-videos.md)
    + [Video VR a 360°](dynamic-media/360-video.md)
-   + [Integrazione dei visualizzatori Dynamic Media con Adobe Analytics e Adobe Launch](dynamic-media/launch.md)
-   + [Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate](dynamic-media/custom-pop-ups.md)
+   + [Integrazione dei visualizzatori Dynamic Media con i tag Adobe Analytics e Adobe Experience Platform](dynamic-media/tags.md)
+   + [Utilizzo di Quickview per creare pop-up personalizzati](dynamic-media/custom-pop-ups.md)
    + [Distribuzione di immagini ottimizzate per un sito reattivo](dynamic-media/responsive-site.md)
    + [Anteprima delle risorse Dynamic Media](dynamic-media/previewing-assets.md)
    + [Aggiunta di risorse Dynamic Media alle pagine](dynamic-media/adding-dynamic-media-assets-to-pages.md)
