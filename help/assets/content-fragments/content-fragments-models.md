@@ -4,9 +4,9 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Frammenti di contenuto
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c8462fe370045ad2dc977fdf2f8ce0a5d3e85bc1
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2312'
 ht-degree: 7%
 
 ---
@@ -167,9 +167,10 @@ UniqueContent (per il campo specifico) deve essere univoco per tutti i frammenti
    Le varianti possono avere lo stesso valore *univoco* delle varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
 
 * ****
-TranslatableSelezionando la casella di controllo &quot;Translatable&quot; su un campo nell&#39;editor di modelli CF
+TranslatableCheck del 
+**** Una casella di controllo traducibile in un campo dell’editor per modelli di frammento di contenuto :
 
-   * Verifica che il nome della proprietà del campo sia aggiunto nella configurazione di traduzione, contesto `/content/dam/<sites-configuration>`, se non è già presente.
+   * Verifica che il nome della proprietà del campo sia aggiunto alla configurazione di traduzione, contesto `/content/dam/<sites-configuration>`, se non è già presente.
    * Per GraphQL: imposta una proprietà `<translatable>` nel campo Frammento di contenuto su `yes` per consentire il filtro di query GraphQL per l’output JSON con solo contenuto traducibile.
 
 * Per ulteriori informazioni su quel tipo di dati specifico e sulle relative proprietà, consulta **[Riferimento contenuto](#content-reference)** .
