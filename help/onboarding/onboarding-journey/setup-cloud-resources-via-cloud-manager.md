@@ -4,9 +4,9 @@ description: Segui questa pagina per scoprire come impostare le risorse di Cloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Segui le sezioni seguenti per scoprire come creare i tuoi [programmi di servizi 
 
 * Comprendere i concetti di Cloud Manager [programmi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) e [ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)
 
-## Navigazione a Cloud Manager {#navigate-cloud-manager}
+## Passa a Cloud Manager {#navigate-cloud-manager}
 
 1. L&#39;utente *Proprietario business* riceverà un&#39;e-mail di benvenuto da dove può iniziare o, se non riesce a trovarlo, passa direttamente a [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) e accedi utilizzando il tuo Adobe ID.
 
@@ -74,8 +74,9 @@ Segui le sezioni seguenti per scoprire come creare i tuoi [programmi di servizi 
 
    Ottimo lavoro! Accesso a Cloud Manager come proprietario aziendale completato.
 
-## Creazione di un programma Cloud Service {#create-cloud-service-program}
+## Crea programma Cloud Service {#create-cloud-service-program}
 
+Per creare il programma di servizi cloud da Cloud Manager, effettua le seguenti operazioni:
 
 1. Passa alla pagina di destinazione di Cloud Manager come mostrato di seguito.
 
@@ -101,11 +102,13 @@ Segui le sezioni seguenti per scoprire come creare i tuoi [programmi di servizi 
    Ottimo lavoro! Dopo la creazione del programma, Cloud Manager Git è disponibile per i tuoi sviluppatori per l’accesso!
 
 
-## Creazione di ambienti Cloud {#create-cloud-environments}
+## Creare gli ambienti cloud {#create-cloud-environments}
+
+Per creare ambienti cloud da Cloud Manager, effettua le seguenti operazioni:
 
 1. Dopo aver creato correttamente il programma cloud, crea gli ambienti cloud passando alla pagina di panoramica di Cloud Manager e selezionando Aggiungi dalla scheda ambiente.
 
-   >[!NOTE]
+   >[!IMPORTANT]
    >Per completare correttamente questo passaggio, è necessario accedere a un utente di Cloud Manager con il ruolo Proprietario business o Gestore distribuzione.
 
    Inoltre, guarda l’esercitazione video rapida per scoprire di più sugli ambienti Cloud Manager e su come aggiungerli al programma.
@@ -119,7 +122,9 @@ Segui le sezioni seguenti per scoprire come creare i tuoi [programmi di servizi 
 
 ## Novità {#whats-next}
 
-Ora ai membri del team devono essere concesse le autorizzazioni all’istanza, in quanto le autorizzazioni per amministrare Cloud Manager non saranno sufficienti. Ora che le risorse cloud sono state create e sono pronte per essere accessibili dal team, l’amministratore di sistema deve assegnare i membri del team a AEM come profili di prodotto di Cloud Service da Admin Console.
+Ai membri del team devono essere concesse le autorizzazioni all’istanza, in quanto le autorizzazioni per amministrare Cloud Manager non sono sufficienti. Ora che le risorse cloud sono state create e sono pronte per l’accesso da parte del team, l’amministratore di sistema deve assegnare i membri del team a AEM come profili di prodotto di Cloud Service da Admin Console.
+
+Continua il tuo percorso di onboarding esaminando il documento Assegnazione di membri del team a AEM come profili di prodotto di Cloud Service.
 
 >[!NOTE]
 >Per poter accedere a AEM come Cloud Service, gli utenti devono appartenere a uno dei due profili di prodotto &quot;Utenti AEM&quot; o &quot;Amministratori AEM&quot;. Per saperne di più.
@@ -128,7 +133,7 @@ Ora ai membri del team devono essere concesse le autorizzazioni all’istanza, i
 
 Segui le risorse aggiuntive per ulteriori informazioni su:
 
-* Tipi di programma e aggiunta di un programma
-* Tipi di ambiente e aggiunta di un ambiente
-* Gestione di Cloud Manager Git
-* Configurazione dell’accesso a AEM come Cloud Service dall’Admin Console
+* [Tipi di programma e aggiunta di un programma](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)
+* [Tipi di ambiente e aggiunta di un ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)
+* [Gestione di Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
+* [Configurazione dell’accesso a AEM come Cloud Service dall’Admin Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#adobe-ims-users)
