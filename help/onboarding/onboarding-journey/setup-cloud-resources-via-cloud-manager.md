@@ -4,25 +4,25 @@ description: Segui questa pagina per scoprire come impostare le risorse di Cloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
 
 # Configurare le risorse Cloud tramite Cloud Manager {#setup-cloud-resources}
 
-L’amministratore di sistema assegnato al ruolo &quot;Proprietario business&quot; deve accedere a Cloud Manager e accedervi. A seguito di ciò, un membro del team assegnato al profilo di prodotto &quot;Proprietario business&quot; deve accedere a Cloud Manager e creare il programma cloud e gli ambienti in modo che il team di esperti possa iniziare.
+L’amministratore di sistema assegnato al ruolo *Proprietario business* deve accedere e accedere a Cloud Manager. Di seguito, un membro del team assegnato al profilo di prodotto *Proprietario business* deve accedere a Cloud Manager e creare il programma cloud e gli ambienti in modo che il team di esperti possa iniziare.
 
 ## Obiettivo {#objective}
 
 Questo documento ti aiuta a capire come vengono create le risorse cloud e chi può farlo.
 
-Dopo aver letto questa sezione devi:
+Dopo aver letto questa sezione è necessario comprendere:
 
-* Un amministratore di sistema assegnato al ruolo &quot;Proprietario business&quot; deve essere il primo ad accedere a Cloud Manager e ad accedervi
-* Scopri come vengono creati il programma cloud e gli ambienti.
+* Un amministratore di sistema assegnato al ruolo *Proprietario business* deve essere il primo ad accedere e accedere a Cloud Manager.
+* Creazione del programma e degli ambienti cloud.
 
 ## Introduzione {#introduction}
 
@@ -32,34 +32,45 @@ Segui le sezioni seguenti per scoprire come creare i tuoi [programmi di servizi 
 
 ### Prerequisiti {#prerequisites}
 
-* L’amministratore di sistema assegnato al ruolo &quot;Proprietario business&quot; deve accedere a Cloud Manager e accedervi.
+* L’amministratore di sistema assegnato al ruolo *Proprietario business* deve accedere e accedere a Cloud Manager.
 
-* Informazioni su come navigare e accedere a Cloud Manager
+* Scopri come [navigare e accedere a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en).
 
-* Acquisisci familiarità con i profili di prodotto di Cloud Manager
+* Acquisisci familiarità con i [profili di prodotto di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
 
 * Scopri le considerazioni per la creazione del programma. Guarda questo video per ulteriori informazioni.
 
-* Comprendere i concetti dei programmi e degli ambienti di Cloud Manager
+* Comprendere i concetti di Cloud Manager [programmi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) e [ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)
 
 ## Navigazione a Cloud Manager {#navigate-cloud-manager}
 
-1. L’utente &quot;Proprietario business&quot; riceverà un’e-mail di benvenuto da dove può iniziare, o se non riesce a trovarlo, visita direttamente experience.adobe.com e accedi utilizzando il tuo Adobe ID.
+1. L&#39;utente *Proprietario business* riceverà un&#39;e-mail di benvenuto da dove può iniziare o, se non riesce a trovarlo, passa direttamente a [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) e accedi utilizzando il tuo Adobe ID.
 
-1. Dalla home page dell’Experience Cloud, seleziona Experience Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
 
+1. Dalla home page di Adobe Experience Cloud, seleziona **Experience Manager**.
 
-1. Verrà visualizzata la home page di AEM. Da qui, seleziona Cloud Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
 
+1. Verrà visualizzata la home page di AEM. Da qui, avvia **Cloud Manager** .
 
-1. Viene visualizzata la pagina di destinazione di Cloud Manager come illustrato di seguito:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
+1. Viene visualizzata la pagina di destinazione di Cloud Manager, come illustrato nella figura riportata di seguito.
 
-1. Ora verifica di aver ricevuto l&#39;assegnazione del profilo di prodotto Proprietario business. A questo scopo, seleziona il tuo profilo in alto a destra come mostrato di seguito:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
+1. Verifica di aver ricevuto l&#39;assegnazione del profilo di prodotto Proprietario business. A tale scopo, seleziona il profilo dall’alto a destra, come illustrato di seguito.
 
-1. Ora seleziona Ruoli utente e assicurati di essere assegnato al proprietario business.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
+1. Selezionare **Ruoli utente** e assicurarsi di essere assegnato al proprietario business.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources6.png)
+
+1. Questo conferma il tuo ruolo utente come Proprietario business.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources7.png)
 
    Ottimo lavoro! Accesso a Cloud Manager come proprietario aziendale completato.
 
