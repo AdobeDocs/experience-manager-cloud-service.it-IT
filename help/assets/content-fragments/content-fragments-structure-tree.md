@@ -4,9 +4,9 @@ description: Utilizza la funzione Struttura ad albero dell’Editor frammento di
 feature: Frammenti di contenuto
 role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 61e3b1d883afe0e9a873991fb8fd148de0fbcd4f
+source-git-commit: 426a05db7062c7823dfaa63e1d918792d3e8a290
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '113'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Nell’Editor frammento di contenuto è possibile selezionare l’icona Struttur
 
 ![Struttura ad albero dei frammenti di contenuto](assets/cfm-structuretree-01.png)
 
-Verrà visualizzata una rappresentazione della struttura del frammento nel riquadro a sinistra. In questo modo è possibile navigare tra i frammenti a cui si fa riferimento e fino a.
+Verrà visualizzata una rappresentazione della struttura del frammento nel riquadro a sinistra. In questo modo è possibile navigare tra i frammenti a cui si fa riferimento e fino a. Quando si seleziona un riferimento, il frammento viene aperto per la modifica.
 
 >[!NOTE]
 >
