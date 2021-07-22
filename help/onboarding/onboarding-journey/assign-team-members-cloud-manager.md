@@ -4,9 +4,9 @@ description: Segui questa pagina per scoprire come assegnare i membri del team a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -155,12 +155,11 @@ Congratulazioni! Ora è stato configurato il team Cloud Manager di nuova formazi
 
 ## Novità {#whats-next}
 
-In qualità di amministratore di sistema assegnato al ruolo *Proprietario business* , devi accedere a Cloud Manager e accedervi.
->[!NOTE]
->Per informazioni su come accedere e accedere a Cloud Manager, consulta [Navigazione a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) .
+1. In qualità di amministratore di sistema assegnato al ruolo *Proprietario business* devi accedere e accedere a Cloud Manager. Per informazioni su come accedere e accedere a Cloud Manager, consulta [Navigazione a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) .
 
-Un utente di Cloud Manager con il ruolo Proprietario business può accedere e configurare le risorse cloud, inclusi i programmi e gli ambienti. In questo modo, il team di esperti potrà iniziare ad accedere al AEM il prima possibile.
-Dopo che il proprietario business ha configurato le risorse cloud, gli sviluppatori e i gestori di distribuzione che sono stati aggiunti con successo ai profili di prodotto di Cloud Manager possono accedere a Cloud Manager e acquisire familiarità con le modalità per continuare il loro percorso di apprendimento.
+1. Successivamente, un utente di Cloud Manager con il ruolo *Proprietario business* può accedere e configurare le risorse cloud, inclusi il programma cloud e gli ambienti. In questo modo, il team di esperti potrà iniziare ad accedere al AEM il prima possibile.
+
+1. Dopo che *Business Owner* ha configurato le risorse cloud, *Developers* e *Deployment Manager* che sono stati aggiunti con successo ai profili di prodotto di Cloud Manager possono accedere a Cloud Manager e acquisire familiarità con il modo in cui possono continuare nel loro percorso di apprendimento.
 
 ## Risorse aggiuntive {#additional-resources}
 
