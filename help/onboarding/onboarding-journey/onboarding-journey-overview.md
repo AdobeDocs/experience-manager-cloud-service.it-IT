@@ -4,10 +4,10 @@ description: Segui questa pagina per scoprire come iniziare a utilizzare il perc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 1%
+source-wordcount: '646'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ Congratulazioni per aver iniziato il tuo percorso con AEM come Cloud Service! Si
 
 ## Introduzione {#introduction}
 
-Questa guida ti guida attraverso gli argomenti più importanti in modo che al termine il lettore:
+Questa guida ti guida attraverso gli argomenti più importanti in modo che al termine:
 
 * Avere una piena comprensione di cosa aspettarsi durante il AEM come percorso di onboarding Cloud Service.
 * Ho consentito al tuo team di iniziare a utilizzare e di intraprendere i primi passi per imparare a creare e sviluppare contenuti per la tua AEM come applicazione di Cloud Service.
@@ -31,18 +31,13 @@ Ciò significa:
 
 ## Pubblico {#audience}
 
-L&#39;onboarding è il processo durante il quale un amministratore di sistema designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale di risorse cloud e l’assegnazione di utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito a cui ogni membro è in grado di accedere e accedere ai propri AEM come risorse di Cloud Service.
+L&#39;onboarding è il processo durante il quale un [amministratore di sistema ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale di risorse cloud e l’assegnazione di utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito a cui ogni membro è in grado di accedere e accedere ai propri AEM come risorse di Cloud Service.
 
 Il percorso di onboarding è illustrato di seguito e ogni fase del percorso è descritto in dettaglio nelle sezioni seguenti.
 
 ## Esplorazione del Percorso di onboarding {#exploring-onboarding-journey}
 
-
 Esplorerai molti argomenti in questo percorso. I seguenti articoli ti danno una conoscenza fondamentale delle fasi di onboarding per AEM come Cloud Service. Anche se puoi passare direttamente a una particolare parte del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se non hai ancora effettuato l’onboarding, ti consigliamo di iniziare dall’inizio e di procedere in sequenza.
-
-Esplorerai molti argomenti in questo percorso. I seguenti articoli forniscono le conoscenze fondamentali necessarie nel processo di onboarding e si collegano alla documentazione tecnica dettagliata.
-
-Anche se puoi passare direttamente a una particolare parte del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se non hai ancora effettuato l’onboarding, ti consigliamo di iniziare esaminando gli articoli menzionati nella sezione Informazioni sui concetti di onboarding della Guida.
 
 | # | Articolo | Descrizione |
 |---|---|---|
