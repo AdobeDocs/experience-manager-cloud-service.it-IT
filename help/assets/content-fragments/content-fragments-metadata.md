@@ -4,10 +4,10 @@ description: Scopri come visualizzare e modificare le proprietà dei metadati pe
 feature: Frammenti di contenuto
 role: User
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 4d20b83c3324e5c082c26e2fa700f03763da2d19
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 9%
+source-wordcount: '208'
+ht-degree: 6%
 
 ---
 
@@ -34,5 +34,7 @@ Puoi visualizzare e modificare i metadati (proprietà) per i frammenti di conten
    * **Titolo**
    * **Descrizione**
    * **Tag**
+      * [](/help/sites-cloud/authoring/features/tags.md) I tag sono particolarmente efficaci nell’organizzazione dei frammenti, in quanto possono essere utilizzati per la classificazione dei contenuti e la tassonomia. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
+Ad esempio, puoi assegnare ai frammenti rilevanti il tag &quot;Avvio di Natale&quot; per consentire la navigazione solo come sottoinsieme o copiarli per utilizzarli con un altro lancio futuro in una nuova cartella.
    * Creato (solo visualizzazione)
    ![Metadati](assets/cfm-metadata-02.png)
