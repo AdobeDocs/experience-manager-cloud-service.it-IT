@@ -1,17 +1,17 @@
 ---
-title: Guida introduttiva al Percorso di onboarding
+title: Guida introduttiva al processo di onboarding
 description: Segui questa pagina per scoprire come iniziare a utilizzare il percorso di onboarding
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
-# Guida introduttiva al Percorso di onboarding {#getting-started}
+# Guida introduttiva al processo di onboarding {#getting-started}
 
 L&#39;onboarding è il processo durante il quale un amministratore di sistema designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale di risorse cloud e l’assegnazione di utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito a cui ogni membro è in grado di accedere e accedere ai propri AEM come risorse di Cloud Service.
 
@@ -21,7 +21,7 @@ In qualità di amministratore di sistema, questo documento riepiloga i primi pas
 
 Dopo aver letto questa sezione dovresti essere in grado di:
 
-* Come accedere e accedere ad Admin Console
+* Accesso e accesso ad Admin Console
 * Rivedi i tuoi privilegi come amministratore di sistema tramite Admin Console
 
 >[!NOTE]
