@@ -4,15 +4,15 @@ description: Segui questa pagina per scoprire come assegnare i membri del team a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
 
 
-# Assegnazione di membri del team ai profili di prodotto di Cloud Manager {#assign-team-members}
+# Assegnare membri del team ai profili di prodotto di Cloud Manager {#assign-team-members}
 
 Dopo aver appreso come accedere a [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) e aver visualizzato i privilegi come [Amministratore di sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en), ora puoi assegnare i membri del team ai profili di prodotto di Cloud Manager.
 
@@ -28,16 +28,16 @@ Dopo aver letto questa sezione dovresti essere in grado di:
 
 ## Prerequisiti {#prerequisites}
 
-Prima di avviare questa sezione, è necessario tenere in considerazione i seguenti prerequisiti. Devi essere un:
+Prima di avviare questa sezione, è necessario tenere in considerazione i seguenti prerequisiti. Devi:
 
-* Un amministratore di sistema e scopri i [profili di prodotto di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
-* Comprende le nozioni di base di [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en).
-* Devono avere i dettagli sui membri del tuo team. Un amministratore di sistema deve disporre dei nomi e degli indirizzi e-mail e dei ruoli e delle responsabilità dei membri del team che avranno bisogno dell’accesso a AEM come Cloud Service.
+* È un amministratore di sistema e scopri i [profili di prodotto di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
+* Informazioni di base su [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en).
+* Dettagli sui membri del tuo team. Un amministratore di sistema deve disporre dei nomi e degli indirizzi e-mail e dei ruoli e delle responsabilità dei membri del team che avranno bisogno dell’accesso a AEM come Cloud Service.
 
    >[!NOTE]
    >Ai fini dell’onboarding, è consigliabile aggiungere inizialmente utenti che parteciperanno alle attività immediate, come amministratori, sviluppatori e autori di contenuti. Puoi continuare il resto dell’onboarding senza aggiungere tutti gli utenti. Dopo aver completato l’onboarding, puoi scalare un numero maggiore di utenti in un secondo momento.
 
-## Verifica dei profili di prodotto di Cloud Manager {#review-product-profiles}
+## Esamina i profili di prodotto di Cloud Manager {#review-product-profiles}
 
 Dall’Admin Console è possibile visualizzare l’elenco dei profili di Cloud Manager.
 
@@ -63,7 +63,7 @@ Per visualizzare l’elenco dei profili di Cloud Manager, effettua le seguenti o
    ![](/help/onboarding/onboarding-journey/assets/assign-team3.png)
 
 
-## Assegnazione di utenti al profilo di prodotto del proprietario business {#assign-users-business-owner}
+## Assegnare utenti al profilo di prodotto proprietario business {#assign-users-business-owner}
 
 Ora puoi aggiungere utenti e assegnarli al profilo di prodotto Proprietario business di Cloud Manager.
 
@@ -100,7 +100,7 @@ I seguenti passaggi ti guideranno attraverso questo:
 
 Congratulazioni! Ora è stato configurato il team Cloud Manager di nuova formazione, incluso l’utente assegnato al ruolo &quot;Proprietario business&quot;. I membri riceveranno un’e-mail di benvenuto che li invita ad accedere e ad accedere a Cloud Manager. Nel ruolo di Business Owner (Proprietario business), ora sei a solo un passo dall’accesso a Cloud Manager e dall’abilitazione della creazione delle risorse cloud.
 
-## Assegnazione di utenti al profilo di prodotto di Deployment Manager {#assign-users-deployment-manager}
+## Assegnare utenti al profilo di prodotto di Deployment Manager {#assign-users-deployment-manager}
 
 1. Identifica gli utenti che gestiranno i programmi Cloud Manager e li aggiungerà al profilo di prodotto di Deployment Manager. L’amministratore di sistema deve essere la prima persona ad accedere e accedere a Cloud Manager. Devi prima aggiungerti (amministratore di sistema) al profilo di prodotto Proprietario business.
 
@@ -126,7 +126,7 @@ Congratulazioni! Ora è stato configurato il team Cloud Manager di nuova formazi
    >[!IMPORTANT]
    >Puoi aggiungere l’utente al profilo di prodotto di Deployment Manager dopo la creazione delle risorse di Cloud Manager.
 
-## Assegnazione di utenti al profilo di prodotto per sviluppatori {#assign-users-developer}
+## Assegnare utenti al profilo di prodotto per sviluppatori {#assign-users-developer}
 
 1. Identifica gli utenti che gestiranno i programmi Cloud Manager e li aggiungerà al profilo di prodotto Sviluppatore. L’amministratore di sistema deve essere la prima persona ad accedere e accedere a Cloud Manager. Devi prima aggiungerti (amministratore di sistema) al profilo di prodotto Proprietario business.
 
@@ -155,7 +155,9 @@ Congratulazioni! Ora è stato configurato il team Cloud Manager di nuova formazi
 
 ## Novità {#whats-next}
 
-1. In qualità di amministratore di sistema assegnato al ruolo *Proprietario business* devi accedere e accedere a Cloud Manager. Per informazioni su come accedere e accedere a Cloud Manager, consulta [Navigazione a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) .
+Dopo aver appreso tre diversi profili di prodotto di Cloud Manager, ad esempio Proprietario business, Manager distribuzione e Sviluppatore, e i membri del team assegnati ai profili di prodotto di Cloud Manager, come Proprietario business, Manager implementazione e Sviluppatore, è necessario continuare il percorso di onboarding esaminando successivamente le risorse di installazione del documento tramite Cloud Manager, dove verrà illustrato:
+
+1. In qualità di amministratore di sistema assegnato al ruolo *Proprietario business* , devi accedere a Cloud Manager e accedervi.
 
 1. Successivamente, un utente di Cloud Manager con il ruolo *Proprietario business* può accedere e configurare le risorse cloud, inclusi il programma cloud e gli ambienti. In questo modo, il team di esperti potrà iniziare ad accedere al AEM il prima possibile.
 
