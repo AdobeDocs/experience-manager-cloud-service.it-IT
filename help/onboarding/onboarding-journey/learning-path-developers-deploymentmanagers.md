@@ -4,9 +4,9 @@ description: Segui questa pagina per scoprire i passaggi successivi al recupero 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ Per saperne di più su questo argomento, visita qui
 
 ## Novità {#whats-next}
 
-I responsabili di sviluppo e distribuzione sono ora pronti per imparare a sviluppare il codice in AEMaaCS. Ulteriori informazioni o ulteriori percorsi di apprendimento sono disponibili nella sezione Risorse aggiuntive di seguito.
+I responsabili di sviluppo e distribuzione sono ora pronti a imparare a sviluppare il codice in AEM come Cloud Service. Ulteriori informazioni o ulteriori percorsi di apprendimento sono disponibili nella sezione Risorse aggiuntive di seguito.
 
 ## Risorse aggiuntive {#additional-resources}
 
