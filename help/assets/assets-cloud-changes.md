@@ -4,9 +4,9 @@ description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Ass
 feature: Informazioni sulla versione
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f0f5d04269ae01f28ce88e87c3269efaf21e657
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '963'
 ht-degree: 5%
 
 ---
@@ -56,13 +56,14 @@ Per eseguire una convalida end-to-end del codice e del processo, compresi l’in
 | Write-back metadati | Funziona diversamente | Opzione disattivata per impostazione predefinita. Abilita il modulo di avvio del flusso di lavoro corrispondente, se necessario. Il write-back viene gestito dai microservizi per le risorse. |
 | Elaborazione delle risorse caricate tramite Gestione pacchetti | Ha bisogno di intervento manuale. | Rielabora manualmente utilizzando l&#39;azione **[!UICONTROL Rielabora risorsa]** . |
 | Rilevamento del tipo MIME | Non supportato. | Se carichi una risorsa digitale senza un’estensione o con un’estensione errata, potrebbe non essere elaborata come desiderato. Gli utenti possono comunque memorizzare i file binari senza un’estensione nel DAM. Vedi [Rilevamento del tipo MIME in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
-| Generazione di risorse secondarie per o annotazione di attività composte | Non supportato. | I casi di utilizzo dipendenti non vengono soddisfatti. Ad esempio, non è possibile visualizzare o annotare un file PDF, INDD, PPT, PPTX e AI con più pagine. Consulta [creazione di risorse secondarie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
+| Generazione di risorse secondarie per o annotazione di attività composte | Non supportato. | I casi d’uso dipendenti potrebbero non essere soddisfatti. Consulta [creazione di risorse secondarie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Home page | Non supportato. | Vedere [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Estrarre risorse dall’archivio ZIP | Non supportato. | Consulta [Estrazione ZIP in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Valutazioni delle risorse | Non supportato. | Il widget di valutazione nell&#39;editor dello schema metadati non è supportato. |
 | Filtro per la disposizione dei contenuti | Non supportato. | Un caso d’uso comune di `ContentDispositionFilter` è quello di consentire agli amministratori di configurare [!DNL Experience Manager] per distribuire i file HTML e aprire i file PDF in linea invece di scaricarli. Nelle istanze di pubblicazione, puoi gestire la disposizione utilizzando la configurazione di Dispatcher. Nelle istanze di authoring, Adobe non consiglia di modificare l’intestazione Content Disposition (Disposizione contenuto). Consulta [Filtro di disposizione del contenuto in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
 | [Download del rapporto](/help/assets/asset-reports.md) | Non supportato. | Per il momento, il rapporto di download che informa dell’utilizzo delle risorse non è disponibile. Consulta [scarica report in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Modello di servizio fotografico per prodotto | Non supportato. | Consulta [modello di servizio fotografico per prodotto in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
+| Traduzione intelligente | Non supportato. | [La ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) traduzione avanzata non è supportata in  [!DNL Experience Manager] come  [!DNL Cloud Service]. |
 | Interfaccia classica | Non supportato. | È disponibile solo l’interfaccia utente touch. |
 
 >[!MORELIKETHIS]
