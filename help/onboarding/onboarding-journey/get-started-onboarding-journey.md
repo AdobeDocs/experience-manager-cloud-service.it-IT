@@ -4,16 +4,16 @@ description: Segui questa pagina per scoprire come iniziare a utilizzare il perc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '517'
+ht-degree: 0%
 
 ---
 
 # Guida introduttiva al processo di onboarding {#getting-started}
 
-L&#39;onboarding è il processo durante il quale un amministratore di sistema designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale di risorse cloud e l’assegnazione di utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito a cui ogni membro è in grado di accedere e accedere ai propri AEM come risorse di Cloud Service.
+L&#39;onboarding è il processo durante il quale un [amministratore di sistema ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale di risorse cloud e l’assegnazione di utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito alle quali ogni membro può accedere e accedere ai propri AEM come risorse di Cloud Service.
 
 ## Obiettivo {#objective}
 
@@ -21,8 +21,8 @@ In qualità di amministratore di sistema, questo documento riepiloga i primi pas
 
 Dopo aver letto questa sezione dovresti essere in grado di:
 
-* Accesso e accesso ad Admin Console
-* Rivedi i tuoi privilegi come amministratore di sistema tramite Admin Console
+* Accedi ad Admin Console e accedi ad esso.
+* Rivedi i tuoi privilegi come amministratore di sistema tramite Admin Console.
 
 >[!NOTE]
 >Prima di avviare il processo di onboarding, assicurati di conoscere Adobe Admin Console. Adobe Admin Console è una posizione centrale per l’amministrazione e la gestione delle licenze e degli utenti dei prodotti Adobe. L’amministratore di sistema effettuerà l’accesso ad Adobe Admin Console per aggiungere o rimuovere utenti e altro ancora. Per ulteriori informazioni, consulta [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) .
@@ -42,12 +42,12 @@ Segui i passaggi seguenti per passare ad Admin Console ed esaminare il ruolo di 
 
    ![](/help/onboarding/onboarding-journey/assets/sys-admin-getstarted.png)
 
-1. Effettua il login utilizzando il tuo Adobe ID. Dopo l’accesso, verrà visualizzata la pagina **Panoramica** di Adobe Admin Console, come mostrato di seguito.
+1. Accedi utilizzando il tuo [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Dopo l’accesso, verrà visualizzata la pagina **Panoramica** di Adobe Admin Console, come mostrato di seguito.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started1.png)
 
    >[!NOTE]
-   >Se hai accesso a più organizzazioni, assicurati di aver effettuato l&#39;accesso all&#39;organizzazione corretta. Per modificare l’organizzazione, fai clic sul nome dell’organizzazione nella barra delle azioni e scegli l’organizzazione a cui devi accedere, come illustrato nella figura riportata di seguito.
+   >Se hai accesso a più organizzazioni, assicurati di aver effettuato l&#39;accesso all&#39;organizzazione corretta. Per modificare l’organizzazione, fai clic sul nome dell’organizzazione nell’angolo in alto a destra e scegli l’organizzazione a cui devi accedere, come illustrato nella figura riportata di seguito.
 
    ![](/help/onboarding/onboarding-journey/assets/admin-console-orgswitch.png)
 
