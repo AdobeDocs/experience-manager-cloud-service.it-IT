@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibilità, gestione delle risorse
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 2%
@@ -22,7 +22,7 @@ Possible topics to cover in this article are below.
 * Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, etc.
 * Do we need to add support matrix of user tasks with browser and screen reader combinations. Everything may not work in all browsers and/or using all screen readers.
 * Any exceptions that users should be aware of. It may help to call out (it may be done in ACR) what tasks are NOT supported.
-* CTAs – what's next and more info from AEM team:
+* CTAs – what's next and more info from the team:
   * Link to ACRs on a.com.
   * Generic a11y info by Adobe to begin with.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
@@ -147,7 +147,7 @@ Quando esplori l’archivio delle risorse, le seguenti funzionalità migliorano 
 * L&#39;utilizzo del tasto `Esc` per rimuovere le icone delle azioni rapide dalla visualizzazione miniatura non rimuove lo stato attivo dall&#39;ultimo elemento attivo.
 * Con una risorsa selezionata, selezionando `Alt + 4` scelte rapide da tastiera si apre l’elenco [!UICONTROL Riferimenti] nella barra a sinistra. Utilizzando la chiave `Tab`, gli utenti possono navigare tra le voci di riferimento diverse da zero. La navigazione solo attraverso le voci di riferimento diverse da zero consente di risparmiare fatica e tasti.
 * I commenti su una risorsa sono disponibili nella timeline della risorsa. È accessibile se si accede alla barra a sinistra utilizzando una tastiera o una scelta rapida da tastiera.
-* [!UICONTROL Le ] impostazioni di visualizzazione  [!DNL Experience Manager] sono accessibili da tastiera. Gli utenti possono navigare tra le dimensioni delle schede disponibili utilizzando i tasti freccia e selezionare e spostarsi tra le varie schede per navigare tra i vari elementi nella vista Impostazioni visualizzazione esistente e impostarli.
+* [!UICONTROL Le ] impostazioni di visualizzazione  [!DNL Experience Manager] sono accessibili da tastiera. Gli utenti possono navigare tra le dimensioni delle schede disponibili utilizzando i tasti freccia, quindi selezionare e spostarsi tra le varie dimensioni per navigare tra i vari elementi nella vista Impostazioni visualizzazione esistente e impostarne altri.
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 
