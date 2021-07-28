@@ -55,7 +55,7 @@ Segui i passaggi seguenti per creare rappresentazioni video in Screens come Clou
 
 1. Fai clic su **Salva**.
 
-1. Seleziona il profilo Elaborazione e fai clic su **Applica profilo a cartelle**.
+1. Seleziona il profilo di elaborazione e fai clic su **Applica profilo a cartelle**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-5.png)
 
