@@ -1,9 +1,9 @@
 ---
 title: Creazione di rappresentazioni video in Screens come Cloud Service
 description: Questa pagina descrive come creare rappresentazioni video in Screens come Cloud Service.
-source-git-commit: 102aab1d550e950ea880d9b9288bdab41866add6
+source-git-commit: e24c368811f0c3e61dc0a48c32ef7368f5fc00f5
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Questa guida descrive come creare rappresentazioni video utilizzate nei lettori Screens.
+Questa sezione descrive come creare rappresentazioni video utilizzate nei lettori Screens.
 
 >[!IMPORTANT]
->I passaggi evidenziati in questa sezione devono essere configurati se intendi utilizzare i video nei canali Screens.
+>I passaggi evidenziati in questa sezione devono essere configurati, se intendi utilizzare i video nei canali Screens.
 
 ## Passaggi per creare rappresentazioni video in Screens come Cloud Service {#steps-creating-screens-video-renditions}
 
-Per creare rappresentazioni video in Screens as a Cloud Service dal Content Provider di Screens, effettua le seguenti operazioni:
+Segui i passaggi seguenti per creare rappresentazioni video in Screens come Cloud Service da Screens Content Provider:
 
 1. Passa al canale nel provider di contenuti Screens.
 
