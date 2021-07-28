@@ -5,21 +5,21 @@ contentOwner: AG
 feature: Tag avanzati, assegnazione tag
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 6%
+source-wordcount: '2379'
+ht-degree: 5%
 
 ---
 
 
-# Aggiungere tag avanzati alle risorse per migliorare l’esperienza di ricerca {#smart-tag-assets-for-faster-search}
+# Aggiungere tag avanzati alle risorse e migliorare l’esperienza di ricerca {#smart-tag-assets-for-faster-search}
 
 Le organizzazioni che si occupano di risorse digitali utilizzano sempre più vocabolario controllato dalla tassonomia nei metadati delle risorse. In sostanza, include un elenco di parole chiave a cui i dipendenti, i partner e i clienti utilizzano comunemente per fare riferimento e cercare le loro risorse digitali. L’assegnazione di tag alle risorse tramite un vocabolario controllato dalla tassonomia consente di identificare e recuperare facilmente le risorse nelle ricerche.
 
 Rispetto ai vocabolari linguistici naturali, l’assegnazione di tag basati sulla tassonomia aziendale consente di allineare le risorse al business di un’azienda e garantisce che le risorse più rilevanti vengano visualizzate nelle ricerche. Ad esempio, un produttore di automobili può assegnare tag alle immagini di un&#39;automobile con nomi di modello in modo che vengano visualizzate solo le immagini pertinenti quando viene eseguita una ricerca per progettare una campagna promozionale.
 
-In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://www.adobe.com/it/sensei/experience-cloud-artificial-intelligence.html) per addestrare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e sulla tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] applica automaticamente i tag avanzati alle risorse caricate, per impostazione predefinita.
+In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) per addestrare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e sulla tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] applica automaticamente i tag avanzati alle risorse caricate, per impostazione predefinita.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -100,7 +100,7 @@ Assicurati che le immagini del set di addestramento siano conformi alle seguenti
 * Creare un modello di tag che includa solo:
 
    * I tag relativi ai modelli di auto.
-   * I tag relativi alle giacche per donne e uomini.
+   * I tag relativi alle giacche per adulti e bambini.
 
 * Non creare,
 
@@ -139,8 +139,8 @@ Per verificare se il servizio Tag avanzati è addestrato sui tag nel set di riso
 1. Seleziona il rapporto **[!UICONTROL Formazione tag avanzati]**, quindi fai clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
 1. Specifica un titolo e una descrizione per il rapporto. In **[!UICONTROL Pianifica rapporto]**, lascia selezionata l’opzione **[!UICONTROL Now (Ora)]**. Se vuoi pianificare il rapporto per un momento successivo, seleziona **[!UICONTROL Later (Più tardi)]** e specifica una data e un’ora. Quindi, fai clic su **[!UICONTROL Crea]** nella barra degli strumenti.
 1. Nella pagina **[!UICONTROL Rapporti su risorse]**, seleziona il rapporto generato. Per visualizzare il rapporto, fai clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
-1. Rivedi i dettagli del rapporto. Il rapporto mostra lo stato di formazione per i tag che hai appreso. Il colore verde nella colonna **[!UICONTROL Stato formazione]** indica che per il tag è stato eseguito il training del servizio Tag avanzati. Se invece del verde è presente il colore giallo, il training del servizio di contenuti avanzati non è stato completato per un tag specifico. In questo caso, aggiungi altre immagini che contengono il tag in questione ed esegui il flusso di lavoro di formazione per completare il training del servizio per quel tag. Se i tag non vengono visualizzati in questo rapporto, esegui nuovamente il flusso di lavoro di formazione per questi tag.Tags
-1. Per scaricare il rapporto, selezionalo dall’elenco e fai clic su **[!UICONTROL Scarica]** nella barra degli strumenti. Il rapporto viene scaricato come foglio di calcolo [!DNL Microsoft Excel].
+1. Rivedi i dettagli del rapporto. Il rapporto mostra lo stato di formazione per i tag che hai appreso. Il colore verde nella colonna **[!UICONTROL Stato formazione]** indica che per il tag è stato eseguito il training del servizio Tag avanzati. Il colore giallo indica che il servizio è parzialmente addestrato per un particolare tag. Per addestrare completamente il servizio per un tag, aggiungi più immagini con il tag specifico ed esegui il flusso di lavoro di formazione. Se i tag non vengono visualizzati in questo rapporto, eseguire nuovamente il flusso di lavoro di formazione per questi tag.Tags
+1. Per scaricare il rapporto, selezionalo dall’elenco e fai clic su **[!UICONTROL Scarica]** nella barra degli strumenti. Il rapporto viene scaricato come foglio di calcolo.
 
 <!--
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
@@ -183,7 +183,7 @@ Quando viene caricato, tutti i tipi di risorse supportate ricevono automaticamen
 
 * Per immagini e video, i tag avanzati si basano su alcuni aspetti visivi.
 
-* Per le risorse basate su testo, l’efficacia di Tag avanzati non dipende dalla quantità di testo nella risorsa, ma dalle parole chiave o entità pertinenti presenti nel testo della risorsa. Per le risorse basate su testo, i tag avanzati sono le parole chiave che compaiono nel testo ma quelle che descrivono meglio la risorsa. Per le risorse supportate, [!DNL Experience Manager] estrae già il testo, che viene quindi indicizzato e utilizzato per cercare le risorse. Tuttavia, i tag avanzati basati su parole chiave nel testo forniscono un facet di ricerca dedicato, strutturato e con priorità più elevata, utilizzato per migliorare l’individuazione delle risorse rispetto all’indice di ricerca completa.
+* Per le risorse basate su testo, l’efficacia di Tag avanzati non dipende dalla quantità di testo nella risorsa, ma dalle parole chiave o entità pertinenti presenti nel testo della risorsa. Per le risorse basate su testo, i tag avanzati sono le parole chiave che compaiono nel testo ma quelle che descrivono meglio la risorsa. Per le risorse supportate, [!DNL Experience Manager] estrae già il testo, che viene quindi indicizzato e utilizzato per cercare le risorse. Tuttavia, i tag avanzati basati su parole chiave nel testo forniscono un facet di ricerca dedicato, strutturato e con priorità più elevata. Questa funzione consente di migliorare l’individuazione delle risorse rispetto a un indice di ricerca.
 
 ## Gestione di tag avanzati e ricerche delle risorse {#manage-smart-tags-and-searches}
 
@@ -193,13 +193,13 @@ La moderazione degli smart tag consente inoltre di perfezionare le ricerche dell
 
 Puoi anche assegnare un rango più alto a un tag per aumentare la pertinenza del tag per la risorsa. La promozione di un tag per una risorsa aumenta le possibilità che la risorsa appaia nei risultati della ricerca quando viene eseguita una ricerca in base al tag specifico.
 
-Per moderare gli smart tag delle risorse:
+Per moderare gli smart tag delle risorse digitali:
 
-1. Nel campo di ricerca cerca le risorse basate su un tag .
+1. Nel campo di ricerca cerca le risorse digitali basate su un tag.
 
-1. Inspect mostra i risultati della ricerca per identificare le risorse che non sono pertinenti alla ricerca.
+1. Per identificare le risorse digitali che non sono rilevanti per la ricerca, controlla i risultati della ricerca.
 
-1. Seleziona la risorsa, quindi seleziona ![Icona Gestisci tag](assets/do-not-localize/manage-tags-icon.png) dalla barra degli strumenti.
+1. Seleziona una risorsa, quindi seleziona ![Icona Gestisci tag](assets/do-not-localize/manage-tags-icon.png) dalla barra degli strumenti.
 
 1. Dalla pagina **[!UICONTROL Gestione tag]** , controlla i tag . Se non desideri che la risorsa venga cercata in base a un tag specifico, seleziona il tag e seleziona ![Icona Elimina](assets/do-not-localize/delete-icon.png) dalla barra degli strumenti. In alternativa, seleziona il simbolo `X` accanto all’etichetta.
 
@@ -213,9 +213,9 @@ Per moderare gli smart tag delle risorse:
 
 Per impostazione predefinita, la ricerca [!DNL Experience Manager] combina i termini di ricerca con una clausola `AND`. L’utilizzo di smart tag non modifica questo comportamento predefinito. L’utilizzo di tag avanzati aggiunge una clausola `OR` per trovare uno dei termini di ricerca negli smart tag applicati. Ad esempio, è consigliabile cercare `woman running`. Le risorse con una semplice `woman` o una semplice `running` parola chiave nei metadati non vengono visualizzate nei risultati di ricerca per impostazione predefinita. Tuttavia, una risorsa con tag `woman` o `running` utilizzando tag avanzati viene visualizzata in una query di ricerca di questo tipo. Quindi i risultati della ricerca sono una combinazione di:
 
-* risorse con `woman` e `running` parole chiave nei metadati.
+* Risorse con `woman` e `running` parole chiave nei metadati.
 
-* risorse con tag avanzati con una delle parole chiave.
+* Risorse con tag avanzati con una delle parole chiave.
 
 I risultati della ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati della ricerca che corrispondono a qualsiasi termine di ricerca negli smart tag. Nell’esempio precedente, l’ordine approssimativo di visualizzazione dei risultati della ricerca è:
 
@@ -223,21 +223,23 @@ I risultati della ricerca che corrispondono a tutti i termini di ricerca nei cam
 1. corrispondenze di `woman running` negli smart tag.
 1. corrispondenze di `woman` o di `running` negli smart tag.
 
-## Limitazioni e best practice per l’assegnazione di tag {#limitations}
+## Limitazioni e best practice relative ai tag {#limitations}
 
 L’assegnazione tag avanzati è basata su modelli di apprendimento delle immagini e dei relativi tag. Questi modelli non sono sempre perfetti per identificare i tag. La versione corrente dei tag avanzati presenta le seguenti limitazioni:
 
 * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie slim-fit contro le magliette normali.
 * Impossibile identificare i tag in base a pattern o parti di un’immagine di dimensioni ridotte. Ad esempio, i loghi sulle camicie.
 * L’assegnazione tag è supportata nelle lingue supportate da [!DNL Experience Manager]. Per un elenco delle lingue, consulta [Note sulla versione del Servizio di contenuti avanzati](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
-* I tag che non vengono gestiti in modo realistico sono correlati a:
+* I tag non gestiti si riferiscono a:
 
-   * Aspetti non visivi e astratti. Ad esempio, l&#39;anno o la stagione di rilascio di un prodotto, l&#39;umore o le emozioni evocate da un&#39;immagine, la connotazione soggettiva di un video e così via.
+   * Aspetti non visivi e astratti. Ad esempio, l&#39;anno o la stagione di rilascio di un prodotto, l&#39;umore o le emozioni evocate da un&#39;immagine e una connotazione soggettiva di un video.
    * Differenze visive fini in prodotti quali camicie con e senza collari o loghi di prodotti di piccole dimensioni incorporati nei prodotti.
 
-<!-- TBD: Add limitations related to text-based assets. -->
+Per addestrare il modello, utilizzare le immagini più appropriate. Non è possibile ripristinare l’addestramento o rimuovere il modello di formazione. La precisione dell’assegnazione tag dipende dall’addestramento corrente, quindi è necessario eseguirlo con attenzione.
 
-Per cercare le risorse con tag avanzati (regolari o migliorati), utilizza la ricerca [!DNL Assets] (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
+<!-- TBD: Add limitations related to text files. -->
+
+Per cercare file con tag avanzati (regolari o migliorati), utilizza la ricerca [!DNL Assets] (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
 
 >[!NOTE]
 >
@@ -246,6 +248,6 @@ Per cercare le risorse con tag avanzati (regolari o migliorati), utilizza la ric
 
 >[!MORELIKETHIS]
 >
->* [Informazioni sulla gestione delle risorse tramite tag avanzati](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [Assegnare tag avanzati alle risorse video](smart-tags-video-assets.md)
+>* [Informazioni su come gli smart tag consentono di gestire i file digitali](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Utilizzare tag avanzati per i video](smart-tags-video-assets.md)
 
