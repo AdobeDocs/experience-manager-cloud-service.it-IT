@@ -5,9 +5,9 @@ breadcrumb-title: Guida all’implementazione
 user-guide-description: Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione.
 feature: Strumenti per gli sviluppatori
 role: Developer, Architect
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '921'
 ht-degree: 33%
 
 ---
@@ -172,7 +172,9 @@ ht-degree: 33%
    + [Estensione dei frammenti esperienza](developing/extending/experience-fragments.md)
    + [Personalizzazione ed estensione dei frammenti di contenuto](developing/extending/content-fragments-customizing.md)
    + [Componenti di configurazione dei frammenti di contenuto per il rendering](developing/extending/content-fragments-configuring-components-rendering.md)
-   + [Configurazione dei moduli di ricerca](developing/extending/search-forms.md)
+   + Gestisci Forms di ricerca {#manage-search-forms}
+      + [Configurazione dei moduli di ricerca](developing/extending/search-forms.md)
+      + [Configurare i filtri di ricerca per la casella in entrata](developing/extending/configure-inbox-search-rail.md)
    + [Configurare l’editor Rich Text](/help/implementing/developing/extending/rich-text-editor.md)
    + [Configurare i plug-in dell’editor Rich Text](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [Configurare l’editor Rich Text per creare siti accessibili](/help/implementing/developing/extending/rte-accessible-content.md)
