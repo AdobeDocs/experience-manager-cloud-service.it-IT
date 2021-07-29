@@ -4,9 +4,9 @@ description: Generare varianti di risorse utilizzando l’integrazione con Creat
 contentOwner: AG
 feature: Caricare, Elaborazione delle risorse, Pubblicazione, Microservizi di Asset compute, Flusso di lavoro
 role: User,Admin
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -14,21 +14,41 @@ ht-degree: 0%
 
 # Generare varianti di risorse utilizzando l’integrazione [!DNL Adobe Creative Cloud] {#content-automation}
 
-Il componente aggiuntivo per l’automazione dei contenuti integra le API [!DNL Adobe Experience Manager Assets as a Cloud Service] e [!DNL Adobe Creative Cloud] per elaborare in modo creativo le risorse su larga scala. [!DNL Experience Manager] utilizza  [i microservizi per le ](/help/assets/asset-microservices-overview.md) risorse basati su cloud per utilizzare le  [!DNL Adobe Creative Cloud] funzioni e automatizzare la creazione delle risorse e la gestione dei contenuti multimediali.
+Il componente aggiuntivo per l’automazione dei contenuti integra [!DNL Adobe Experience Manager Assets] come [!DNL Cloud Service] e [!DNL Adobe Creative Cloud] API per elaborare in modo creativo le risorse su larga scala. [!DNL Experience Manager] utilizza  [i microservizi per le ](/help/assets/asset-microservices-overview.md) risorse basati su cloud per utilizzare le  [!DNL Adobe Creative Cloud] funzioni e automatizzare la creazione delle risorse e la gestione dei contenuti multimediali.
 
 Per modificare le risorse in [!DNL Adobe Photoshop] e [!DNL Adobe Lightroom], non è necessario scaricare le risorse da [!DNL Experience Manager Assets], modificarle e caricarle di nuovo. Puoi creare e configurare un profilo di elaborazione in [!DNL Experience Manager], applicare il profilo a una cartella e caricare le risorse nella cartella. Le risorse caricate vengono rielaborate in base ai profili di elaborazione e ottieni varianti di tali risorse. L&#39;elaborazione di massa continua e semplice consente di risparmiare lavoro manuale e di aumentare la velocità dei contenuti, anche senza la necessità di competenze creative eccezionali. Inoltre, gli sviluppatori e i partner possono estendere i microservizi per le risorse con accesso diretto a queste API e includere logica personalizzata.
 
-Gli utenti possono creare profili di elaborazione per automatizzare le seguenti operazioni creative sulle risorse:\
-![automatizzare le operazioni Adobe Photoshop ed Adobe Lightroom sulle risorse](assets/content-automation.png)
+Gli utenti possono creare profili di elaborazione per automatizzare le seguenti operazioni creative sulle risorse:
+
 * **Tono** automatico: Utilizza l&#39;intelligenza artificiale per analizzare il contenuto dell&#39;immagine e apporta in modo intelligente correzioni di luce e colore in base agli attributi unici dell&#39;immagine.
+
 * **Automatico verticale**: Utilizza l&#39;intelligenza artificiale per analizzare il contenuto dell&#39;immagine e correggere la prospettiva distorta nelle immagini. Ad esempio, per creare orizzonti di livello.
+
+   ![tono automatico](/help/assets/assets/content-automation-autotone.png)
+
+   *Figura: L&#39;ottimizzazione automatica delle tonalità e la raddrizzatura automatica possono migliorare le immagini distorte.*
+
 * **Predefiniti** Lightroom: Applica un aspetto definito dall’utente alle immagini per ottenere un aspetto uniforme utilizzando i predefiniti personalizzati.
+
+   ![Predefinito Lightroom](/help/assets/assets/content-automation-lrpresets.png)
+
+   *Figura: Adobe Preimpostazione Lightroom per migliorare la qualità delle immagini in modo coerente per molte immagini.*
+
 * **Ritaglio** immagine: Utilizza l&#39;intelligenza artificiale per creare una selezione intorno agli oggetti principali e rimuovere lo sfondo con un singolo comando.
+
+   ![Rimuovere lo sfondo e ritagliare un&#39;immagine da una foto](/help/assets/assets/content-automation-backgroundremove.png)
+
 * **Maschera** immagine: Utilizza l&#39;intelligenza artificiale per creare una maschera intorno agli oggetti più importanti con un singolo comando.
-* **Azioni** Photoshop: Applica una serie di attività (in Photoshop) a un file o a un batch di file.
+
+   ![Maschera un’immagine utilizzando l’intelligenza artificiale](/help/assets/assets/content-automation-mask.png)
+
+* **Azioni** Photoshop: Applica una serie di  [!DNL Adobe Photoshop] attività a un file o a un batch di file.
+
+   ![Azioni Photoshop](/help/assets/assets/content-automation-psactions.png)
+
 * **Sostituzione** di oggetti avanzati: Esegue la personalizzazione su scala consentendo di scambiare le immagini mantenendo tutti gli effetti e le regolazioni applicati all&#39;interno di un file PSD.
 
-
+   ![Sostituire gli oggetti in modo intelligente](/help/assets/assets/content-automation-objectreplace.png)
 
 ## Utilizzare un profilo di elaborazione per modificare in blocco le risorse creative {#process-assets}
 
@@ -42,9 +62,9 @@ Per utilizzare i profili di elaborazione per creare automaticamente le varianti,
 
 1. Seleziona la scheda **[!UICONTROL Creative]** , specifica la cartella di output e seleziona **[!UICONTROL Aggiungi nuovo]** per aggiungere una configurazione creativa.
 
-1. Fornisci **[!UICONTROL Nome rappresentazione]** (o nome output), **[!UICONTROL Estensione]** (o tipo di file), seleziona **[!UICONTROL Qualità]** (o parametri di output), seleziona **[!UICONTROL Include]** e **[!UICONTROL Esclude]** elenchi di tipi MIME (o filtro risorse di input) e seleziona l&#39;operazione creativa richiesta.&lt;a 10/<br/>
+1. Fornisci **[!UICONTROL Nome rappresentazione]** (o nome output), **[!UICONTROL Estensione]** (o tipo di file), seleziona **[!UICONTROL Qualità]** (o parametri di output), seleziona **[!UICONTROL Include]** e **[!UICONTROL Esclude]** elenchi di tipi MIME (o filtro risorse di input) e seleziona l’operazione creativa richiesta.
 
-   ![scheda creativa nel profilo di elaborazione](assets/creative-processing-profile.png)
+   ![ Scheda creativa nel profilo  [!UICONTROL di elaborazione]](assets/creative-processing-profile.png)
 
 1. Alcune operazioni richiedono parametri aggiuntivi (risorsa). Se necessario, fornisci valori per questi parametri aggiuntivi.
 
