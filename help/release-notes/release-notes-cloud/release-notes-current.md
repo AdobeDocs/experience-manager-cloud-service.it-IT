@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ec1e83b344b0d237db479f66fbb761db2d8923d5
+source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
@@ -127,6 +127,30 @@ I clienti che passano all&#39;uso di Azul JDK dovrebbero essere consapevoli che 
 ### Bug corretti in [!DNL Assets] {#assets-bugs-fixed}
 
 L&#39;API `com.day.cq.dam.api.collection.SmartCollection` non è disponibile in [!DNL Experience Manager] come [!DNL Cloud Service]. (CQ-4326322)
+
+## [!DNL Experience Manager Screens] come  [!DNL Cloud Service] {#screens}
+
+### Correzioni di bug {#bug-fixes-screens}
+
+* Le impostazioni di Content Provider vengono ora convalidate durante la creazione o l’aggiornamento.
+
+* Tutte le visualizzazioni presentano la colonna delle cartelle.
+
+* È possibile espandere la struttura del contenuto Screens.
+
+* `bulk-offline-update-service` Mancavano tutte le autorizzazioni per alcuni ambienti.
+
+* Aggiorna il collegamento della Guida in linea per far corrispondere la nuova documentazione cloud di screens.
+
+* Annullare l&#39;assegnazione delle playlist e non consentire la rimozione delle playlist con i lettori assegnati.
+
+* Il lettore ora scarica di nuovo le risorse quando la cache &quot;ALL&quot; viene cancellata.
+
+* La pianificazione ripetuta ora funziona se *Ora di fine* è impostato per il giorno successivo.
+
+* `Back&Forward` ora funziona nell’interfaccia utente cloud di Screens.
+
+* Impossibile creare tag con lo stesso nome ma con spazi dei nomi diversi.
 
 ## [!DNL Experience Manager Forms] come  [!DNL Cloud Service] {#forms}
 
