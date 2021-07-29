@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
+source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1286'
 ht-degree: 2%
 
 ---
@@ -140,17 +140,17 @@ L&#39;API `com.day.cq.dam.api.collection.SmartCollection` non è disponibile in 
 
 * `bulk-offline-update-service` Mancavano tutte le autorizzazioni per alcuni ambienti.
 
-* Aggiorna il collegamento della Guida in linea per far corrispondere la nuova documentazione cloud di screens.
+* È stato aggiornato il collegamento dell’Aiuto per far corrispondere la nuova documentazione cloud di screens.
 
-* Annullare l&#39;assegnazione delle playlist e non consentire la rimozione delle playlist con i lettori assegnati.
+* È ora possibile annullare l&#39;assegnazione delle playlist e impedire la rimozione delle playlist con i lettori assegnati.
 
 * Il lettore ora scarica di nuovo le risorse quando la cache &quot;ALL&quot; viene cancellata.
 
 * La pianificazione ripetuta ora funziona se *Ora di fine* è impostato per il giorno successivo.
 
-* `Back&Forward` ora funziona nell’interfaccia utente cloud di Screens.
+* `Back&Forward` ora funziona in Screens come interfaccia utente di Cloud Service.
 
-* Impossibile creare tag con lo stesso nome ma con spazi dei nomi diversi.
+* Impossibile creare in precedenza tag con lo stesso nome ma con spazi dei nomi diversi.
 
 ## [!DNL Experience Manager Forms] come  [!DNL Cloud Service] {#forms}
 
