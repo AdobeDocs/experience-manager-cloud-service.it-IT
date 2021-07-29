@@ -1,9 +1,9 @@
 ---
 title: Guida introduttiva di Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica su come utilizzare e iniziare a utilizzare Cloud Acceleration Manager.
-source-git-commit: 1e13df5c6dfb9c0d28a540ce089cf722978bd8d3
+source-git-commit: 6de2c5a2b7303ea3258839a36eb3939301ad68d3
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '543'
 ht-degree: 3%
 
 ---
@@ -37,6 +37,12 @@ Segui i passaggi seguenti per passare a Cloud Acceleration Manager (CAM):
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
 
 ### Creazione e gestione di un progetto in Cloud Acceleration Manager {#create-project}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_gettingstarted"
+>title="Guida introduttiva di Cloud Acceleration Manager"
+>abstract="Crea il progetto e avvia il percorso per AEM come Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="Vantaggi dell&#39;utilizzo di Cloud Acceleration Manager"
 
 La pagina di destinazione di Cloud Acceleration Manager (CAM) consente di creare e modificare più progetti.
 
