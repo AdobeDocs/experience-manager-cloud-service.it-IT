@@ -2,10 +2,10 @@
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
 workflow-type: tm+mt
-source-wordcount: '2552'
-ht-degree: 98%
+source-wordcount: '2560'
+ht-degree: 94%
 
 ---
 
@@ -264,27 +264,30 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
    ![Copia](/help/sites-cloud/authoring/assets/copy.png)
 
-   >[!NOTE]
-   >
-   >Se sei in modalità di selezione, lascerai tale modalità non appena la pagina viene copiata.
-
 1. Passa al percorso in cui desideri inserire la nuova copia della pagina.
-1. L’icona **Incolla** presenta una freccia a discesa a destra:
+1. Tocca o fai clic sull’icona **Incolla** che è diventata disponibile.
 
    ![Incolla](/help/sites-cloud/authoring/assets/paste.png)
 
-   Puoi effettuare le seguenti operazioni:
+1. La finestra di dialogo Incolla presenta un riepilogo della transazione di incolla e la possibilità di:
+   * **Nuovo nome sito:** modifica il nome della pagina incollata
+   * **Incolla senza elementi figlio:** consente di incollare le pagine figlie della pagina selezionata (per impostazione predefinita le pagine figlie vengono incollate)
 
-   1. Selezionare direttamente l’icona **Incolla** per la pagina. Verrà creata una copia della pagina originale e delle eventuali pagine figlio in questa posizione.
-   1. Selezionare la freccia a discesa per visualizzare l’opzione **Incolla senza elementi secondari**. In questa posizione verrà creata una copia della pagina originale, mentre le pagine figlio non verranno copiate.
+   ![Finestra di dialogo Incolla](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-   >[!NOTE]
-   >
-   >Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventerà `beach1`.
+1. Tocca o fai clic sul pulsante **Incolla** per confermare la transazione e creare le nuove pagine.
+
+>[!NOTE]
+>
+>Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventerà `beach1`.
+
+>[!NOTE]
+>
+>Se si avvia l’azione Incolla in modalità di selezione, questa viene chiusa automaticamente non appena la pagina viene copiata.
 
 ### Spostamento o ridenominazione di una pagina {#moving-or-renaming-a-page}
 
-Per spostare o rinominare la pagina viene utilizzata la stessa procedura guidata. Con questa procedura guidata è possibile:
+La procedura per spostare o rinominare una pagina è sostanzialmente la stessa e entrambe le azioni sono gestite dalla procedura guidata Sposta pagina . Con questa procedura guidata è possibile:
 
 * Rinominare una pagina senza spostarla
 * Spostare la pagina senza rinominarla
@@ -412,7 +415,7 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 >
 >Se una pagina è già stata pubblicata, prima di eliminarla ne verrà automaticamente annullata la pubblicazione.
 
-### Blocco di una pagina {#locking-a-page}
+### Blocco di una pagina   {#locking-a-page}
 
 È possibile [bloccare/sbloccare una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) da una console o quando si modifica una singola pagina. L’indicazione relativa al fatto che una pagina sia bloccata o meno è visualizzata in entrambe le posizioni.
 
