@@ -2,20 +2,14 @@
 title: Passare ad AEM as a Cloud Service
 description: 'Adobe Experience Manager as a Cloud Service: risorse di supporto autonomo e collegamenti alla documentazione sul passaggio ad AEM as a Cloud Service'
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 8737463905ef604e7d42280e25fb1f48ed87c9f3
+source-git-commit: 6de2c5a2b7303ea3258839a36eb3939301ad68d3
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 60%
+source-wordcount: '723'
+ht-degree: 59%
 
 ---
 
 # Passaggio ad AEM as a Cloud Service {#aem-moving-to-aem-guide}
-
->[!CONTEXTUALHELP]
->id="aemcloud_cam_overview"
->title="Informazioni su Cloud Acceleration Manager"
->abstract="Cloud Acceleration Manager è la tua guida personale durante l&#39;intero processo di migrazione a AEM come Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Modifiche di rilievo apportate ad AEM Sites as a Cloud Service"
 
 ## Vantaggi del passaggio ad AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
@@ -40,6 +34,13 @@ La figura seguente mostra una rappresentazione grafica del percorso di transizio
 
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_overview"
+>title="Informazioni su Cloud Acceleration Manager"
+>abstract="Cloud Acceleration Manager è un&#39;applicazione basata su cloud progettata per guidare i team IT durante l&#39;intero percorso di transizione, dalla pianificazione al Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html#aem-moving-to-aem-guide" text="Passaggio ad AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Modifiche di rilievo apportate ad AEM Sites as a Cloud Service"
 
 Cloud Acceleration Manager è un&#39;applicazione basata su cloud progettata per guidare i team IT durante l&#39;intero percorso di transizione, dalla pianificazione al Cloud Service. Imposta i team per una migrazione di successo con best practice, suggerimenti, documentazione e strumenti consigliati da Adobe per aiutarti in ogni fase del percorso a AEM come Cloud Service.
 
