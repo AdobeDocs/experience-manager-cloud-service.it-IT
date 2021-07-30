@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
+source-git-commit: 76d068de881edce2324ceb73f1a724ff0f5f585c
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1313'
 ht-degree: 2%
 
 ---
@@ -156,22 +156,21 @@ L&#39;API `com.day.cq.dam.api.collection.SmartCollection` non è disponibile in 
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
-* È ora possibile utilizzare il servizio Automated forms conversion per convertire i PDF forms in lingua francese, tedesca e spagnola in moduli adattivi.
+* È ora possibile utilizzare il servizio Automated forms conversion per [convertire i PDF forms in francese, tedesco e spagnolo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) nei moduli adattivi.
 * È stato aggiunto un pannello separato all’editor modelli per visualizzare gli errori relativi ai componenti per moduli adattivi. Consente di consolidare tutti gli errori dei moduli adattivi in un&#39;unica posizione e di ridurre i tempi di risoluzione.
 
 ### Nuove funzioni disponibili nel canale pre-rilascio [!DNL Forms] {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: Le API di comunicazione consentono di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che consentono di:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communication ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIshelp combina modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che consentono di:
    * Genera i documenti compilando i file modello con dati XML.
    * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
    * Generare file PDF di stampa da un modulo XFA PDF e Adobe Acrobat Form.
 
 * **Esternalizzatore** dati variabile: È possibile salvare i dati delle variabili AEM flusso di lavoro su un sistema di storage esterno gestito dalla propria organizzazione.
 
-* **Documento di registrazione** basato su Acroform: È inoltre possibile utilizzare Adobe Acrobat Form PDF (Acrobat PDF) come modello per i moduli basati su Document of Record oltre a XFA.
+* **Documento di registrazione** basato su Acroform: È inoltre possibile  [utilizzare Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) come modello per i documenti di record oltre a quello basato su XFA.
 
-* **Connettore** archivio dati di Microsoft Azure: È ora possibile collegare il modello dati modulo all’archiviazione di Microsoft Azure. Consente di memorizzare e recuperare i dati del modulo adattivo in Microsoft Azure Storage as a BLOB.
-
+* **Connettore** archivio dati di Microsoft Azure: È ora possibile  [collegare il modello dati modulo a Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Consente di recuperare e archiviare dati adattivi del modulo in Microsoft Azure Storage as a BLOB.
 
 ## Cloud Acceleration Manager {#cam}
 
