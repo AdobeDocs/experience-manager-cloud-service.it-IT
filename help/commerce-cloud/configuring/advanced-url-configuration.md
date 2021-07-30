@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
+source-git-commit: fe0e93d6f9ab16bf469e52e2b758f5e3f8600413
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '744'
 ht-degree: 45%
 
 ---
@@ -31,7 +31,7 @@ Per configurare il servizio `UrlProvider` in base ai requisiti e alle esigenze S
 >
 > A partire dalla versione 2.0.0 dei componenti core CIF di AEM, la configurazione del provider URL fornisce solo formati url predefiniti, invece dei formati configurabili in formato testo libero noti a partire dalle versioni 1.x. Inoltre, l’uso dei selettori per trasmettere dati negli URL è stato sostituito con suffissi.
 
-### Formato URL della pagina di prodotto {#product}
+### Formato URL pagina di prodotto {#product}
 
 Consente di configurare gli URL delle pagine dei prodotti e supporta le seguenti opzioni:
 
@@ -41,7 +41,7 @@ Consente di configurare gli URL delle pagine dei prodotti e supporta le seguenti
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-dove, nel caso del [negozio di riferimento Venia](https://github.com/adobe/aem-cif-guides-venia)
+Nel caso del [negozio di riferimento Venia](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` è sostituito da  `/content/venia/us/en/products/product-page`
 * `{{sku}}` saranno sostituiti dalla SKU del prodotto, ad esempio  `VP09`
@@ -58,7 +58,7 @@ Consente di configurare gli URL delle pagine di elenchi di prodotti o categorie 
 * `{{page}}.html/{{url_path}}.html` (impostazione predefinita)
 * `{{page}}.html/{{url_key}}.html`
 
-dove, nel caso del [negozio di riferimento Venia](https://github.com/adobe/aem-cif-guides-venia)
+Nel caso del [negozio di riferimento Venia](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` è sostituito da  `/content/venia/us/en/products/category-page`
 * `{{url_key}}` viene sostituito dalla  `url_key` proprietà della categoria
@@ -70,7 +70,7 @@ Con i dati di esempio di cui sopra, un URL di pagina di categoria formattato uti
 > 
 > Il `url_path` è una concatenazione dei `url_keys` predecessori di un prodotto o di una categoria e del prodotto o della categoria `url_key` separato da `/` slash.
 
-## Formati Url Personalizzati {#custom-url-format}
+## Formati URL personalizzati {#custom-url-format}
 
 Per fornire un formato URL personalizzato, un progetto può implementare l&#39; [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) e registrare l&#39;implementazione come servizio OSGI, utilizzandola come pagina di categoria o come formato URL di pagina di prodotto. La proprietà del servizio `UrlFormat#PROP_USE_AS` indica quale dei formati predefiniti configurati per sostituire:
 
