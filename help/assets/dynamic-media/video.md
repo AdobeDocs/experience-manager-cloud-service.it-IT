@@ -1,12 +1,12 @@
 ---
-title: Video
+title: Video in Dynamic Media
 description: Scopri come lavorare con i video in Dynamic Media.
 feature: Profili video
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '9459'
+source-wordcount: '9499'
 ht-degree: 4%
 
 ---
@@ -40,8 +40,10 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
       * [Applicare un profilo video alle cartelle](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * Ulteriori informazioni sulle [Best practice per organizzare le risorse digitali per l&#39;utilizzo dei profili di elaborazione](/help/assets/dynamic-media/best-practices-for-file-management.md).
       * Ulteriori informazioni su [Organizzare risorse digitali](/help/assets/organize-assets.md).
-   * Carica i video sorgente principali nelle cartelle. Puoi caricare file video fino a 15 GB ciascuno. Quando aggiungi dei video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
+   * Carica i video sorgente principali nelle cartelle. Quando aggiungi dei video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
 
+      * Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti.
+      * Puoi caricare file video fino a 15 GB ciascuno.
       * [Carica i video](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Ulteriori informazioni su [Formati di file di input supportati](/help/assets/file-format-support.md).
    * Monitora l&#39;avanzamento della codifica video [dalla visualizzazione della risorsa o del flusso di lavoro.](#monitoring-video-encoding-and-youtube-publishing-progress)
@@ -288,6 +290,9 @@ Di seguito sono riportati alcuni suggerimenti utili per la codifica dei file vid
 ### File video di origine {#source-video-files}
 
 Quando codifichi un file video, utilizza un file video sorgente della massima qualità possibile. Evita di utilizzare file video codificati in precedenza perché sono già compressi e un’ulteriore codifica crea un video di qualità scadente.
+
+* Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti.
+* È possibile caricare file video di origine primaria fino a 15 GB ciascuno.
 
 La tabella seguente descrive le dimensioni, le proporzioni e il bit rate minimo consigliati che i file video sorgente devono avere prima di codificarli:
 
