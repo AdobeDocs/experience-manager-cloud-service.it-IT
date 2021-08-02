@@ -4,9 +4,9 @@ description: Scopri come l’imaging intelligente con Adobe Sensei AI applica le
 feature: Gestione risorse, rappresentazioni
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 771e6b021c4da68ac35437d45ea36bb38eae2f34
 workflow-type: tm+mt
-source-wordcount: '2639'
+source-wordcount: '2613'
 ht-degree: 1%
 
 ---
@@ -184,13 +184,13 @@ Avviate la richiesta per utilizzare Smart imaging; non è abilitato automaticame
 
 Per impostazione predefinita, Smart imaging DPR e l’ottimizzazione della rete sono disabilitati (disattivati) per un account aziendale Dynamic Media. Se desideri abilitare (attivare) uno o entrambi questi miglioramenti predefiniti, crea un caso di supporto come descritto di seguito.
 
-La pianificazione della versione per Smart imaging DPR e l’ottimizzazione della rete è la seguente:
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is available in North as follows:
 
-| Regione | Data di destinazione |
+| Region | Target date |
 |---|---|
-| America del Nord | Live |
-| Europa, Medio Oriente, Africa | 13 agosto 2021 |
-| Asia-Pacifico | 22 luglio 2021 |
+| North America | Live | 
+| Europe, Middle East, Africa | 13 August 2021 | 
+| Asia-Pacific | 22 July 2021 | -->
 
 1. [Utilizza l’Admin Console per creare un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di supporto.
 1. Fornisci le seguenti informazioni nel tuo caso di assistenza:
@@ -281,4 +281,4 @@ Come funziona l’ottimizzazione DPR per Smart imaging con i componenti Adobe Ex
 * Dato che il componente Dynamic Media Foundation è configurato per impostazione predefinita per l’ottimizzazione DPR, per evitare immagini di dimensioni eccessive a causa dell’ottimizzazione DPR Smart imaging lato server, `dpr=off` viene sempre aggiunto alle immagini dei componenti Dynamic Media Foundation. Anche se il cliente deseleziona l’ottimizzazione DPR nel componente di base DM, Smart imaging DPR lato server non viene avviato. In sintesi, nel componente di base DM, l’ottimizzazione DPR entra in vigore solo in base all’impostazione a livello di componente di base DM.
 * L’ottimizzazione DPR lato visualizzatore funziona in parallelo con l’ottimizzazione DPR per le immagini avanzate lato server e non produce immagini di dimensioni eccessive. In altre parole, ogni volta che il visualizzatore gestisce il DPR, ad esempio la visualizzazione principale solo in un visualizzatore abilitato per lo zoom, i valori DPR per l’imaging intelligente lato server non vengono attivati. Allo stesso modo, ogni volta che gli elementi del visualizzatore, come campioni e miniature, non dispongono di gestione DPR, viene attivato il valore DPR per l’imaging intelligente lato server.
 
-Vedere anche [Quando si lavora con immagini](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) e [Quando si lavora con Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop). —>
+Vedi anche [Quando lavori con immagini](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) e [Quando lavori con Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
