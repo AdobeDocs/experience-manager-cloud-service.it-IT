@@ -1,31 +1,30 @@
 ---
 title: Invio di un connettore AEM
 description: Invio di un connettore AEM
-translation-type: tm+mt
-source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
+exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
+source-git-commit: eb6aa8741a07e14727b4e74df66b9643936e9231
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 11%
 
 ---
-
 
 Invio di un connettore AEM
 ===========================
 
 Seguono informazioni utili per l’invio dei connettori AEM, che devono essere lette insieme agli articoli relativi all’[implementazione](implement.md) e alla [manutenzione](maintain.md) dei connettori.
 
-AEM Connettori sono elencati in [ Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
+I connettori AEM sono elencati in [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
-Nelle soluzioni AEM precedenti, Package Manager veniva utilizzato per installare i connettori su varie istanze AEM. Tuttavia, con AEM come Cloud Service, i connettori vengono distribuiti durante il processo CI/CD in Cloud Manager. Affinché i connettori vengano distribuiti, è necessario fare riferimento ai connettori nel file pom.xml del progetto maven.
+Nelle soluzioni AEM precedenti, Gestione pacchetti era utilizzato per installare connettori su varie istanze AEM. Tuttavia, con AEM come Cloud Service, i connettori vengono distribuiti durante il processo CI/CD in Cloud Manager. Per implementare i connettori, è necessario fare riferimento ai connettori nel file pom.xml del progetto maven.
 
-Esistono diverse opzioni per l’inclusione dei pacchetti in un progetto:
+Sono disponibili varie opzioni per l’inclusione dei pacchetti in un progetto:
 
-1. Archivio pubblico del partner: un partner ospiterà il pacchetto di contenuti in un archivio Web accessibile al pubblico
-1. Archivio protetto da password del partner: un partner ospita il pacchetto di contenuti in un archivio Web protetto da password. Per istruzioni, vedere [repository protetti da password in ](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
-1. Artefatto in bundle - in questo caso, il pacchetto di connettori è incluso localmente nel progetto del cliente.
+1. Archivio pubblico del partner : un partner ospiterà il pacchetto di contenuti in un archivio maven accessibile al pubblico
+1. Archivio protetto da password del partner : un partner ospiterà il pacchetto di contenuti in un archivio maven protetto da password. Per istruzioni, consulta gli archivi Maven protetti da password.
+1. Artefatto nel pacchetto : in questo caso, il pacchetto del connettore è incluso localmente nel progetto Maven del cliente.
 
-Indipendentemente da dove sono ospitati, i pacchetti devono essere indicati come dipendenze nel file pom.xml, come fornito dal fornitore.
+Indipendentemente da dove sono ospitati, i pacchetti devono essere indicati come dipendenze nel pom.xml, come fornito dal fornitore.
 
 ```xml
 <!-- UberJAR Dependency to be added to the project's Reactor pom.xml -->
@@ -38,7 +37,7 @@ Indipendentemente da dove sono ospitati, i pacchetti devono essere indicati come
 </dependency>
 ```
 
-Se il partner ISV ospita il connettore su un archivio Web accessibile a Internet (ad esempio, con accesso facilitato a Cloud Manager), il ISV deve fornire la configurazione del repository in cui è possibile inserire il file pom.xml, in modo che le dipendenze del connettore (sopra) possano essere risolte in fase di creazione (sia localmente che da Cloud Manager).
+Se il partner ISV ospita il connettore su un archivio maven accessibile a Internet (ad esempio, con accesso a Cloud Manager), il programma ISV deve fornire la configurazione dell’archivio in cui è possibile inserire il file pom.xml, in modo che le dipendenze del connettore (sopra) possano essere risolte in fase di creazione (sia localmente che da Cloud Manager).
 
 ```xml
 <repository>
@@ -55,4 +54,4 @@ Se il partner ISV ospita il connettore su un archivio Web accessibile a Internet
 </repository>
 ```
 
-Se il partner ISV sceglie di distribuire il connettore come file scaricabili, il ISV deve fornire istruzioni su come i file possono essere distribuiti in un repository locale del sistema di file system che deve essere sottoposto a check-in Git come parte del progetto AEM, in modo che Cloud Manager possa risolvere tali dipendenze.
+Se il partner ISV sceglie di distribuire il connettore come file scaricabili, il programma ISV dovrebbe fornire istruzioni su come i file possono essere distribuiti in un archivio maven di un file system locale che deve essere sottoposto a Check-In come parte del progetto AEM, in modo che Cloud Manager possa risolvere queste dipendenze.
