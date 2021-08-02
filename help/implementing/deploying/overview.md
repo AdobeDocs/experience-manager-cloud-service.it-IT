@@ -3,7 +3,7 @@ title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 feature: Distribuzione
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '3290'
 ht-degree: 1%
@@ -179,9 +179,9 @@ Poiché Gestione pacchetti è un concetto di runtime, non è possibile installar
 
 Tutti i pacchetti di contenuto installati tramite Cloud Manager (mutabili e immutabili) verranno visualizzati in uno stato congelato nell’interfaccia utente di AEM Package Manager. Questi pacchetti non possono essere reinstallati, ricostruiti o persino scaricati e verranno elencati con un suffisso **&quot;cp2fm&quot;** che indica che la loro installazione è stata gestita da Cloud Manager.
 
-### Inclusi pacchetti di terze parti {#including-third-party}
+### Inclusi Pacchetti Di Terze Parti {#including-third-party}
 
-È comune per i clienti includere pacchetti precompilati da fonti di terze parti, come fornitori di software come i partner di traduzione di Adobe. Si consiglia di ospitare questi pacchetti in un archivio remoto e farvi riferimento in `pom.xml`. Questo è possibile per gli archivi pubblici e anche per gli archivi privati con protezione tramite password, come descritto in [archivi maven protetti da password](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
+È comune per i clienti includere pacchetti precompilati da fonti di terze parti, come fornitori di software come i partner di traduzione di Adobe. Si consiglia di ospitare questi pacchetti in un archivio remoto e farvi riferimento in `pom.xml`. Questo è possibile per gli archivi pubblici e anche per gli archivi privati con protezione tramite password, come descritto in [archivi maven protetti da password](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 Se non è possibile memorizzare il pacchetto in un archivio remoto, i clienti possono inserirlo in un archivio Maven locale basato su file system, che è impegnato in SCM come parte del progetto e a cui fa riferimento qualsiasi cosa dipenda da esso. L&#39;archivio sarà dichiarato nei programmi di progetto illustrati di seguito:
 
@@ -271,7 +271,7 @@ Inoltre, la vecchia versione deve essere testata per verificare la compatibilit�
 
 La modifica degli utenti del servizio o delle ACL necessarie per accedere al contenuto o al codice potrebbe causare errori nelle versioni precedenti di AEM e causare l’accesso a tale contenuto o codice con utenti del servizio obsoleti. Per risolvere questo problema, una raccomandazione consiste nell’apportare modifiche distribuite su almeno 2 rilasci, con la prima release che funge da ponte prima di essere ripulita nella versione successiva.
 
-### Modifiche indice {#index-changes}
+### Modifiche all&#39;indice {#index-changes}
 
 Se vengono apportate modifiche agli indici, è importante che la versione blu continui a utilizzare i suoi indici fino alla sua chiusura, mentre la versione verde utilizza il proprio set modificato di indici. Lo sviluppatore deve seguire le tecniche di gestione degli indici descritte [in questo articolo](/help/operations/indexing.md).
 
