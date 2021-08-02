@@ -2,7 +2,7 @@
 title: Note sulla versione 2020.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service - Note sulla versione 2020.7.0.'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 81%
@@ -43,7 +43,7 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 * I modelli di flussi di lavoro creati dai clienti che vengono distribuiti in `/conf/global`[!DNL Cloud Manager] nel progetto Git associato all’ambiente in vengono automaticamente distribuiti in `/var` e sono quindi disponibili in [!DNL Experience Manager]. I modelli di flusso di lavoro dei prodotti in `/libs` che sono stati modificati dai clienti non vengono distribuiti automaticamente in `/var`.
 
-### Bug corretti {#assets-bugs-fixed}
+### Bug fissi {#assets-bugs-fixed}
 
 * La procedura guidata Sposta risorsa non viene caricata come previsto per le risorse incluse nelle raccolte. (CQ-4296756)
 * I valori di `dam:size` e `dam:sha1` sono esclusi XMP writeback. (CQ-4237355)
@@ -88,12 +88,12 @@ La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.7.0 è il 9 lugl
 
 * Le pipeline di Cloud Manager ora supportano variabili e segreti impostati dal cliente.
 
-   Per ulteriori informazioni, consulta [Variabili delle pipeline](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
+   Per ulteriori informazioni, consulta Variabili delle pipeline.
 
 * Gli archivi Maven privati con associazione a autenticazione sono ora supportati.
 
 * Il contenitore di build di Cloud Manager ora supporta sia Java 8 che Java 11.
-Per ulteriori informazioni, consulta [Utilizzo del supporto Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) .
+Per ulteriori informazioni, consulta Utilizzo del supporto Java 11 .
 
 ### Correzioni di bug {#bug-fixes-cm}
 
@@ -129,7 +129,7 @@ Per ulteriori informazioni, consulta [Utilizzo del supporto Java 11](/help/onboa
 
 * L’interfaccia classica di AEM Target Cloud Service è stata convertita nella nuova interfaccia di AEM. Inoltre, la posizione di Target Cloud Service nell’archivio di AEM è stata spostata da `/etc` a `/conf`, in allineamento con altri servizi cloud AEM.
 
-## Cloud Readiness Analyzer (Analisi di preparazione al cloud) {#cloud-readiness-analyzer}
+## Cloud Readiness Analyzer (Analisi di preparazione al cloud)  {#cloud-readiness-analyzer}
 
 Leggi questa sezione per saperne di più sulle novità e sugli aggiornamenti di Cloud Readiness Analyzer v1.0.2.
 
