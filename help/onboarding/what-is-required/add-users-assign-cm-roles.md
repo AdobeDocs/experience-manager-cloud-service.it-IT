@@ -1,14 +1,13 @@
 ---
 title: 'Attività amministratore di sistema '
 description: Segui questa pagina per scoprire come aggiungere utenti e assegnarli ai ruoli di Cloud Manager come amministratore di sistema
-translation-type: tm+mt
-source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
+exl-id: 4c0f5783-02c1-4ea6-871a-03ea8a0847bf
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
 
 ---
-
 
 # Attività amministratore di sistema {#add-users-assign}
 
@@ -27,11 +26,11 @@ Un amministratore di sistema esegue le seguenti attività organizzative:
 
 1. Fai clic sul pulsante **Gestisci accesso**, in alto a destra nella pagina di destinazione di Cloud Manager, per aprire Admin Console in una nuova scheda.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
 
    Dall’ **Admin Console**, puoi aggiungere utenti a Cloud Manager e assegnarli a Ruoli, denominati ad Admin Console Profili di prodotto .
 
-1. Seleziona **Adobe Experience Manager come Cloud Service** dalla scheda **Prodotti e servizi** come mostrato di seguito.
+1. Seleziona **Adobe Experience Manager as a Cloud Service** dalla scheda **Prodotti e servizi** come mostrato di seguito.
 
    ![](/help/onboarding/what-is-required/assets/admin-console-1.png)
 
@@ -46,5 +45,4 @@ Un amministratore di sistema esegue le seguenti attività organizzative:
    >[!NOTE]
    >Per ulteriori informazioni su ruoli e autorizzazioni offerti in Cloud Manager, consulta [Ruoli di Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) .
 
-   Ora hai aggiunto gli utenti a Adobe Experience Manager as a Cloud Service Product Context e sei configurato con i ruoli o i profili di prodotto giusti.
-
+   Ora hai aggiunto gli utenti ad Adobe Experience Manager as a Cloud Service Product Context e sei configurato con i ruoli o i profili di prodotto giusti.
