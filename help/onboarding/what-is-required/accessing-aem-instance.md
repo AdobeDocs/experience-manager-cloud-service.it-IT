@@ -1,14 +1,13 @@
 ---
 title: 'Consentire agli utenti di accedere a un''istanza AEM '
 description: Segui questa pagina per scoprire in che modo un amministratore di sistema concede l’accesso utente a un’istanza AEM
-translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+exl-id: 9f637030-dbcf-4330-9360-99d6aaea45b8
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
 
 ---
-
 
 # Consentire agli utenti di accedere a un&#39;istanza AEM {#accessing-aem-instance}
 
@@ -19,18 +18,18 @@ In qualità di amministratore di sistema, segui i passaggi seguenti per conceder
    >[!NOTE]
    >Per poter aggiungere un utente nell’Admin Console, devi essere un amministratore di sistema o l’utente che ha creato l’ambiente. Solo i ruoli Proprietario business o Manager distribuzione dispongono delle autorizzazioni per creare un ambiente. Per ulteriori informazioni sui ruoli e le autorizzazioni associate, consulta [Ruoli di Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) . Inoltre, per informazioni sugli ambienti, consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md) .
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    Oppure,
 
    Dalla pagina **Ambienti**, seleziona **Gestisci** —> **Gestisci accesso**.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
 
 1. Dopo aver fatto clic su **Gestisci accesso**, una nuova scheda ti consente di passare all&#39; **Admin Console** da dove hai accesso all&#39;istanza di authoring dell&#39;ambiente.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
 
 1. Seleziona la scheda **Utenti** e fai clic su **Aggiungi utente**.
 
@@ -57,4 +56,3 @@ In qualità di amministratore di sistema, segui i passaggi seguenti per conceder
 
       >[!NOTE]
       >Per alcune organizzazioni alle quali è stato concesso l’accesso a AEM come Cloud Service prima di gennaio 2020, queste verranno inviate al Adobe Admin Console e il profilo di prodotto e ambiente dovrà essere selezionato.
-
