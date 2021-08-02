@@ -2,9 +2,9 @@
 title: Scopri cosa è Cloud Manager
 description: Leggi questa pagina per saperne di più su Cloud Manager, sui programmi e sugli ambienti di Cloud Manager.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,10 @@ I programmi Cloud Manager rappresentano set di ambienti Cloud Manager che suppor
 Un utente può creare un programma **Sandbox** o **Produzione**.
 
 * Viene creato un *programma di produzione* per abilitare il traffico live al momento appropriato in futuro.
-Per ulteriori informazioni, consulta Introduzione ai programmi di produzione .
+Per ulteriori informazioni, consulta [Introduzione ai programmi di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en) .
 
 * Un *programma sandbox* viene generalmente creato per scopi di formazione, esecuzione di demo, abilitazione, POC o documentazione. Non è destinato a trasportare traffico live e avrà restrizioni che un programma di produzione non intende. Includerà Sites e Assets e verrà fornito automaticamente con un ramo Git che include codice di esempio, un ambiente di sviluppo e una pipeline non di produzione.
-Per ulteriori informazioni, consulta Introduzione ai programmi sandbox .
+Per ulteriori informazioni, consulta [Introduzione ai programmi sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en) .
 
 ## Ambienti Cloud Manager {#cloud-manager-environments}
 
