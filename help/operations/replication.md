@@ -2,9 +2,9 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1347'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,7 @@ Per ulteriori informazioni su Gestisci pubblicazione, consulta la documentazione
 
 >[!NOTE]
 >
->Questo approccio deve essere considerato obsoleto in quanto non persiste e non è scalabile rispetto ad altri approcci. Il consiglio di Adobe è invece di utilizzare i metodi di pubblicazione o flusso di lavoro di gestione
+>Questo approccio deve essere considerato obsoleto e verrà rimosso il 30 settembre 2021 o dopo tale data, in quanto non persiste dello stato ed è meno scalabile di altri approcci. Il consiglio di Adobe è invece di utilizzare i metodi di pubblicazione o flusso di lavoro di gestione
 
 Per eseguire un&#39;attivazione ad albero:
 
