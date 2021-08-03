@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Informazioni sulla risorsa, rapporti sulle risorse
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '813'
 ht-degree: 8%
 
 ---
@@ -67,8 +67,8 @@ Puoi visualizzare i punteggi di Assets Insights dalla pagina dei metadati.
 
 Dalla **[!UICONTROL Visualizzazione approfondimenti]** puoi visualizzare simultaneamente un punteggio di tutte le risorse presenti all’interno di una cartella.
 
-1. Nell’interfaccia utente di Assets, passa alla cartella contenente le risorse per le quali desideri visualizzare le informazioni.
-1. Fai clic sull’opzione Layout nella barra degli strumenti, quindi scegli **[!UICONTROL Vista approfondimenti]**.
+1. Nell’interfaccia utente Assets, individua la cartella contenente le risorse di cui desideri visualizzare le informazioni.
+1. Fai clic sull&#39;opzione **[!UICONTROL Layout]** nella barra degli strumenti, quindi scegli **[!UICONTROL Vista approfondimenti]**.
 1. Nella pagina vengono visualizzati i punteggi di utilizzo delle risorse. Confronta le valutazioni delle varie risorse e trai informazioni approfondite.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -95,7 +95,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. In [!DNL Experience Manager], fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**.
 
-   ![chlimage_1-72](assets/chlimage_1-72.png)
+   ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Fai clic sulla scheda **[!UICONTROL Configurazione approfondimenti]**.
 1. Nella procedura guidata, seleziona un centro dati e fornisci le tue credenziali, tra cui il nome dell’organizzazione, il nome utente e il segreto condiviso.
@@ -117,6 +117,29 @@ Dopo aver configurato l’account Adobe Analytics, viene generato il codice di t
 
 1. Nella pagina **[!UICONTROL Navigazione]**, fai clic sulla scheda **[!UICONTROL Tracciamento pagina approfondimenti]**.
 1. Fai clic su **[!UICONTROL Scarica]** per scaricare il codice di tracciamento della pagina.
+
+<!--
+Add page tracker code, CQDOC-18045, 30/07/2021
+-->
+Il seguente frammento di codice di esempio visualizza il codice Tracciamento pagina incluso in una pagina web di esempio:
+
+```xml
+ <head>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/sitecatalyst/appmeasurement.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/foundation/assetinsights/pagetracker.js"></script>
+            <script type="text/javascript">
+                                assetAnalytics.attrTrackable = 'trackable';
+                assetAnalytics.defaultTrackable = false;
+                assetAnalytics.attrAssetID = 'aem-asset-id';
+                assetAnalytics.assetImpressionPollInterval = 200; // interval in millis
+                assetAnalytics.charsLimitForGET = 2000; // bytes
+                assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
+            </script>
+
+ </head>
+```
+
+
 
 <!--
 
