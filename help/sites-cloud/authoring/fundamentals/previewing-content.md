@@ -2,9 +2,9 @@
 title: Anteprima del contenuto
 description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima il contenuto prima di iniziare la pubblicazione.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 78c5649c6b9c04cb459f5730161affeb452c916c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La funzione Anteprima fa parte della versione 2021.5.0 e verrà implementata gradualmente nelle prossime settimane.
+>Per abilitare la funzione di anteprima sugli ambienti creati prima del 3 agosto 2021, accertati che l’ambiente sia AEM versione 2021.05.5368.20210529T101701Z o successiva ed esegui una pipeline avviata dal cliente.
 
 AEM offre un servizio di anteprima dei siti progettato per consentire agli sviluppatori e agli autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione ed sia disponibile al pubblico.
 
 Consente di visualizzare in anteprima le esperienze di pagina che non sarebbero altrimenti visibili dall’ambiente di authoring, come le transizioni di pagina e altri contenuti solo lato pubblicazione.
+
+Leggi anche [accesso al servizio Preview](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Pubblicazione del contenuto nell’anteprima {#publishing-content-to-preview}
 
@@ -40,7 +42,7 @@ Puoi pubblicare il contenuto nel servizio di anteprima utilizzando l’interfacc
    https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
    ```
 
-Per ulteriori informazioni su come ottenere gli URL per i tuoi ambienti, consulta [Gestisci gli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) .
+Per ulteriori informazioni su come ottenere gli URL per i tuoi ambienti, consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md) .
 
 Il contenuto può anche essere pubblicato in anteprima utilizzando un [Flusso di lavoro della struttura del contenuto di pubblicazione](/help/operations/replication.md#publish-content-tree-workflow) con il parametro agentId impostato per l&#39;anteprima o utilizzando l&#39; [API di replica](/help/operations/replication.md#replication-api) con un AgentFilter configurato per l&#39;anteprima.
 
@@ -67,4 +69,4 @@ Segui questi passaggi per eseguire il debug del livello di anteprima utilizzando
 
 * In [Console per sviluppatori](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), seleziona **— All Preview —** o un ambiente di produzione che include **prev** nel nome
 * Genera le informazioni rilevanti per l’istanza di anteprima
-Per ulteriori informazioni su come ottenere gli URL per i tuoi ambienti, consulta [Gestisci gli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) .
+Per ulteriori informazioni su come ottenere gli URL per i tuoi ambienti, consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md) .
