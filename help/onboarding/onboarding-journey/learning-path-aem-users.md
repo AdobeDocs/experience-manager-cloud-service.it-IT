@@ -4,9 +4,9 @@ description: Segui questa pagina per scoprire i passaggi successivi al recupero 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '328'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,8 @@ Per accedere a Author è necessario attenersi ai seguenti passaggi:
 
 ## Novità {#whats-next}
 
-Ora puoi avviare il percorso di apprendimento per l’authoring e la pubblicazione delle pagine. Seguire il percorso, rivedendo il percorso di apprendimento del documento per gli utenti AEM.
+È ora possibile creare e pubblicare pagine AEM. Ulteriori informazioni o ulteriori percorsi di apprendimento sono disponibili nella sezione Risorse aggiuntive di seguito.
+
 
 ## Risorse aggiuntive {#additional-resources}
 
