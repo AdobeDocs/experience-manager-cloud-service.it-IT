@@ -4,9 +4,9 @@ description: Segui questa pagina per scoprire come impostare le risorse di Cloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Segui i passaggi seguenti per passare a Cloud Manager:
 1. Vai alla pagina **Programmi e prodotti di Cloud Manager** .
 
    >[!IMPORTANT]
-   >In alternativa, puoi anche accedere direttamente alla pagina di accesso di Cloud Manager da [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+   >In alternativa, puoi anche accedere direttamente alla pagina di accesso di Cloud Manager da [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Aggiungi un segnalibro a questa pagina per il futuro e per aiutarti a passare direttamente alla pagina di destinazione di Cloud Manager.
 
 Inoltre, puoi passare alla pagina **Programmi e prodotti di Cloud Manager** dalla home page di Adobe Experience Cloud. Effettua le seguenti operazioni:
 
@@ -91,7 +91,6 @@ Inoltre, puoi passare alla pagina **Programmi e prodotti di Cloud Manager** dall
       Se nell&#39;organizzazione sono già presenti programmi e si è amministratori di sistema, nella pagina di destinazione viene visualizzato il pulsante **Gestisci accesso** insieme all&#39;opzione **Aggiungi programma** , come illustrato nella figura riportata di seguito.
 
       ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
-
 
 
 ## Verifica dei ruoli utente {#verify-user-roles}
