@@ -1,15 +1,15 @@
 ---
 title: '[!DNL Adobe Experience Manager] come canale pre-rilascio Cloud Service'
 description: '[!DNL Adobe Experience Manager] come canale pre-rilascio Cloud Service'
-source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
+exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] come canale pre-rilascio Cloud Service  {#prerelease-channel}
+# [!DNL Adobe Experience Manager] come canale pre-rilascio Cloud Service {#prerelease-channel}
 
 
 ## Introduzione {#introduction}
@@ -54,7 +54,7 @@ La variabile può essere eliminata o impostata su un valore diverso se desideri 
 
 Puoi vedere le nuove funzioni nella console Sites nell’SDK di Quickstart locale e il codice per le nuove API nella versione prerelease facendo riferimento al progetto maven `API Jar` nella versione prerelease  di Maven Central. Puoi anche vedere queste funzioni prerelease nel computer locale avviando il normale SDK Quickstart in modalità prerelease:
 
-* Scarica l&#39;SDK dal portale di distribuzione software e installalo come descritto in [Accesso al AEM come SDK di Cloud Service](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.)
+* Scarica l&#39;SDK dal portale di distribuzione del software e installalo come descritto in [Accesso al AEM come SDK di Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 * Quando avvii l&#39;SDK Quickstart, includi l&#39;argomento `-r prerelease`.
 * Il valore è *fisso*, quindi può essere selezionato solo al primo avvio. Reinstalla l&#39;SDK per modificare l&#39;opzione della riga di comando.
 
