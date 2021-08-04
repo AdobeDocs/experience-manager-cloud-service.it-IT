@@ -2,7 +2,7 @@
 title: Distribuisci il tuo codice - Cloud Services
 description: Distribuisci il tuo codice - Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 2%
@@ -41,7 +41,7 @@ Dopo aver configurato la pipeline di produzione (archivio, ambiente e ambiente d
    La **distribuzione della fase** prevede i seguenti passaggi:
 
    * Convalida: Questo passaggio assicura che la pipeline sia configurata per utilizzare le risorse attualmente disponibili, ad esempio che il ramo configurato esista, che gli ambienti siano disponibili.
-   * Build &amp; Unit Testing: Questo passaggio esegue un processo di compilazione containerizzato. Per informazioni dettagliate sull’ambiente di compilazione, consulta [Generazione di dettagli ambiente](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) .
+   * Build &amp; Unit Testing: Questo passaggio esegue un processo di compilazione containerizzato. Per informazioni dettagliate sull’ambiente di compilazione, consulta [Generazione di dettagli ambiente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) .
    * Scansione del codice: Questo passaggio valuta la qualità del codice dell&#39;applicazione. Per informazioni dettagliate sul processo di test, consulta [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md) .
    * Crea immagini: Questo passaggio include un file di registro dal processo utilizzato per creare le immagini. Questo processo è responsabile della trasformazione dei pacchetti di contenuti e dispatcher prodotti dalla fase di creazione in immagini Docker e configurazione Kubernetes.
    * Distribuisci su Stage
@@ -72,7 +72,7 @@ Per ulteriori informazioni, consulta [Informazioni sui risultati di Experience A
 
 Tutte le distribuzioni di Cloud Service seguono un processo continuo per garantire tempi di inattività pari a zero. Per ulteriori informazioni, consulta [Come funzionano le implementazioni continue](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) .
 
-### Fase di distribuzione alla produzione {#deployment-production-phase}
+### Fase di implementazione a produzione {#deployment-production-phase}
 
 Il processo di distribuzione nelle topologie di produzione è leggermente diverso per ridurre al minimo l’impatto sui visitatori AEM sito.
 
