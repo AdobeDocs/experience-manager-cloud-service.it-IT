@@ -4,9 +4,9 @@ description: Segui questa pagina per scoprire come assegnare i membri del team a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ I passaggi seguenti devono essere seguiti da un amministratore di sistema che si
 
 ## Novità {#whats-next}
 
-Gli utenti che hai assegnato a AEM come profili di prodotto di Cloud Service ora sono pronti per imparare ad accedere a Author e per acquisire familiarità con l’authoring delle pagine in AEM come Cloud Service. Seguire il percorso, rivedendo il percorso di apprendimento del documento per gli utenti AEM.
+Gli utenti che hai assegnato a AEM come profili di prodotto di Cloud Service ora sono pronti per imparare ad accedere a Author e per acquisire familiarità con l’authoring delle pagine in AEM come Cloud Service. È necessario seguire il percorso, esaminando successivamente il percorso di apprendimento del documento per gli utenti AEM o il percorso di apprendimento per gli sviluppatori e i responsabili della distribuzione.
 
 ## Risorse aggiuntive {#additional-resources}
 
