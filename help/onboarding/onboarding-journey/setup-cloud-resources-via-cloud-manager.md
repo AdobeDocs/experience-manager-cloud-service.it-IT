@@ -4,9 +4,9 @@ description: Segui questa pagina per scoprire come impostare le risorse di Cloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ Segui i passaggi seguenti per passare a Cloud Manager:
    >[!IMPORTANT]
    >In alternativa, puoi anche accedere direttamente alla pagina di accesso di Cloud Manager da [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Aggiungi un segnalibro a questa pagina per il futuro e per aiutarti a passare direttamente alla pagina di destinazione di Cloud Manager.
 
+1. Verrai indirizzato alla pagina di destinazione di Cloud Manager. Per ulteriori informazioni, consulta la sezione [Visualizzazione dei programmi di Cloud Manager](#viewing-programs) .
+
 Inoltre, puoi passare alla pagina **Programmi e prodotti di Cloud Manager** dalla home page di Adobe Experience Cloud. Effettua le seguenti operazioni:
 
 1. Passa direttamente a [Adobe Experience Cloud](https://experience.adobe.com) e accedi utilizzando il tuo Adobe ID.
@@ -68,29 +70,32 @@ Inoltre, puoi passare alla pagina **Programmi e prodotti di Cloud Manager** dall
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. Dopo l’accesso, verrai indirizzato alla pagina di destinazione di Cloud Manager.
+1. Dopo l’accesso, verrai indirizzato alla pagina di destinazione di Cloud Manager. Per ulteriori informazioni, consulta la sezione [Visualizzazione dei programmi di Cloud Manager](#viewing-programs) .
 
    >[!NOTE]
    >A seconda dei ruoli assegnati in [!UICONTROL Cloud Manager] e dello stato dell&#39;applicazione, verranno visualizzate diverse schermate durante l&#39;utilizzo dell&#39;interfaccia utente [!UICONTROL Cloud Manager].
 
-   Verrà visualizzata una delle tre opzioni descritte di seguito:
+### Visualizzazione dei programmi nella pagina di destinazione di Cloud Manager {#viewing-programs}
 
-   * **In Cloud Manager non esiste alcun programma**
+Dopo l’accesso, verrai indirizzato alla pagina di destinazione di Cloud Manager. Verrà visualizzata una delle tre opzioni descritte di seguito:
 
-      Se nell’organizzazione non è presente alcun programma, la pagina di destinazione ti invita a creare il primo programma, come illustrato nella figura riportata di seguito.
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+#### In Cloud Manager non esiste alcun programma {#no-programs}
 
-   * **Quando in Cloud Manager sono già presenti programmi**
+Se nell’organizzazione non è presente alcun programma, la pagina di destinazione ti invita a creare il primo programma, come illustrato nella figura riportata di seguito.
 
-      Se nell’organizzazione sono già presenti programmi, nella pagina di destinazione viene indicato di aggiungere un altro programma e vengono visualizzati anche tutti i programmi esistenti, come illustrato nella figura riportata di seguito.
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+#### Quando in Cloud Manager sono già presenti programmi {#programs-exist}
 
-   * **Quando esiste un programma e l&#39;utente è amministratore di sistema**
+Se nell’organizzazione sono già presenti programmi, nella pagina di destinazione viene indicato di aggiungere un altro programma e vengono visualizzati anche tutti i programmi esistenti, come illustrato nella figura riportata di seguito.
 
-      Se nell&#39;organizzazione sono già presenti programmi e si è amministratori di sistema, nella pagina di destinazione viene visualizzato il pulsante **Gestisci accesso** insieme all&#39;opzione **Aggiungi programma** , come illustrato nella figura riportata di seguito.
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+#### Quando esiste un programma e l&#39;utente è amministratore di sistema {#programs-exist-sysadmin}
+
+Se nell&#39;organizzazione sono già presenti programmi e si è amministratori di sistema, nella pagina di destinazione viene visualizzato il pulsante **Gestisci accesso** insieme all&#39;opzione **Aggiungi programma** , come illustrato nella figura riportata di seguito.
+
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 
 ## Verifica dei ruoli utente {#verify-user-roles}
