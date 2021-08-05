@@ -2,9 +2,9 @@
 title: Navigazione a Cloud Manager
 description: Segui questa pagina per scoprire come passare alla pagina di destinazione di Cloud Manager
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '515'
 ht-degree: 6%
 
 ---
@@ -24,6 +24,8 @@ Una volta che l’amministratore di sistema ti concede l’accesso a Cloud Manag
 
    >[!IMPORTANT]
    >In alternativa, puoi anche accedere direttamente alla pagina di accesso di Cloud Manager da [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Aggiungi un segnalibro a questa pagina per il futuro e per aiutarti a passare direttamente alla pagina di destinazione di Cloud Manager.
+
+1. Verrai indirizzato alla pagina di destinazione di Cloud Manager.
 
 Inoltre, puoi passare dalla home page di Adobe Experience Cloud alla pagina **Programmi e prodotti** di Cloud Manager. Effettua le seguenti operazioni:
 
