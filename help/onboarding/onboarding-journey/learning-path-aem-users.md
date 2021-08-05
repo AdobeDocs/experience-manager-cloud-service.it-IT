@@ -4,9 +4,9 @@ description: Segui questa pagina per scoprire i passaggi successivi al recupero 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
+source-git-commit: e4b0b026e72e3956503966cfc7a57b657501f0f8
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '335'
 ht-degree: 3%
 
 ---
@@ -17,17 +17,17 @@ ht-degree: 3%
 
 Questo documento aiuta i tuoi autori di contenuti AEM come Cloud Service ad accedere ad Adobe Experience Manager (AEM).
 
-Dopo la lettura è necessario:
+Dopo la lettura è necessario comprendere:
 
-* Informazioni su come accedere a Cloud Manager
-* Come accedere a AEM come istanza di Cloud Service
-* Scopri come acquisire familiarità con l’authoring dei contenuti per AEM come Cloud Service
+* Come accedere a Cloud Manager.
+* Come accedere a AEM come istanza di Cloud Service.
+* Crea contenuti per AEM come Cloud Service.
 
 ## Introduzione  {#introduction}
 
 L’accesso a AEM come Cloud Service è un primo passo importante nel percorso cloud AEM per gli autori di contenuti e AEM utenti. Avere un accesso tempestivo significa non perdere la produttività e gli utenti finali sono molto più vicini alle esperienze digitali trasformative.
 
-Ogni membro del team assegnato AEM profilo di prodotto utente dall’amministratore di sistema avrà accesso (in sola lettura) a Cloud Manager. Naturalmente, se questi utenti sono stati assegnati anche ai profili di prodotto di Cloud Manager, avranno la somma di queste autorizzazioni in AEM as a Cloud Service e Cloud Manager.
+Ogni membro del team assegnato AEM profilo di prodotto utente dall’amministratore di sistema avrà accesso (in sola lettura) a Cloud Manager. Naturalmente, se questi utenti sono stati assegnati anche a [Profili di prodotto di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles), avranno la somma di queste autorizzazioni in AEM come Cloud Service e Cloud Manager.
 
 ## Prerequisiti  {#prerequisites}
 
@@ -39,9 +39,9 @@ Per accedere a Author è necessario attenersi ai seguenti passaggi:
 
 1. Segui questi passaggi per passare a Cloud Manager. In alternativa, puoi accedere direttamente a Cloud Manager e accedervi.
 
-1. Dalla pagina della panoramica in Cloud Manager, trova l’URL per l’autore dell’ambiente a cui desideri accedere e fai clic su di esso.
+1. Dalla pagina **Panoramica** in Cloud Manager, fai clic sul collegamento dell’autore dalla scheda **Ambienti** .
 
-1. Viene aperta una nuova SCHEDA in cui è possibile effettuare l’accesso utilizzando il proprio Adobe ID.
+1. Viene aperta una nuova scheda che consente di accedere all’ambiente di authoring tramite Adobe ID.
 
    Congratulazioni! Accesso a Author completato.
 
@@ -49,7 +49,6 @@ Per accedere a Author è necessario attenersi ai seguenti passaggi:
 
 È ora possibile creare e pubblicare pagine AEM. Ulteriori informazioni o ulteriori percorsi di apprendimento sono disponibili nella sezione Risorse aggiuntive di seguito.
 
-
 ## Risorse aggiuntive {#additional-resources}
 
-Guida rapida all’authoring delle pagine
+[Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
