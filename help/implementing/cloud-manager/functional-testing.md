@@ -2,9 +2,9 @@
 title: Test funzionali - Cloud Services
 description: Test funzionali - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
+source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '900'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ I test funzionali del prodotto vengono eseguiti automaticamente ogni volta che u
 
 Per i test di esempio, fai riferimento a [Test funzionali del prodotto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) .
 
-## Test funzionali personalizzati {#custom-functional-testing}
+## Test funzionale personalizzato {#custom-functional-testing}
 
 Il passaggio di test delle funzionalità personalizzate nella pipeline è sempre presente e non può essere ignorato.
 
@@ -56,15 +56,27 @@ A differenza dei test funzionali personalizzati che sono test HTTP scritti in ja
 >[!NOTE]
 >Si consiglia di seguire la struttura e la lingua *(js e wdio)* opportunamente forniti nel [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) come punto di partenza.
 
-### Consenso del cliente {#customer-opt-in}
+### Opt-in del cliente {#customer-opt-in}
 
 Per poter generare ed eseguire i test dell’interfaccia utente, i clienti devono &quot;effettuare l’opt-in&quot; aggiungendo un file al proprio archivio di codice, sotto il sottomodulo maven per i test dell’interfaccia utente (accanto al file pom.xml del sottomodulo dei test dell’interfaccia utente) e assicurarsi che questo file sia nella directory principale del file `tar.gz` generato.
 
 *Nome file*: `testing.properties`
 
-*Contenuto*:  `one line: ui-tests.version=1`
+*Contenuto*:  `ui-tests.version=1`
 
 Se questo non si trova nel file `tar.gz` generato, la build e le esecuzioni dei test dell’interfaccia utente verranno ignorate
+
+Per aggiungere un file `testing.properties` nell&#39;artefatto generato, aggiungi un&#39;istruzione `include` nel file `assembly-ui-test-docker-context.xml` (nel sottomodulo UI test):
+
+    &quot;
+    [..]
+    &lt;includes>
+    &lt;include>&lt;/include>
+    &lt;include>Dockerfilewait-for-grid.&lt;/include>
+    &lt;include>shtesting.properties&lt;/include> &lt;!- modulo di test opt-in in Cloud Manager —>
+    &lt;/include>
+    [...]
+    &quot;
 
 >[!NOTE]
 >Le pipeline di produzione create prima del 10 febbraio 2021 dovranno essere aggiornate per poter utilizzare i test dell’interfaccia utente come descritto in questa sezione. Questo significa essenzialmente che l’utente deve modificare la pipeline di produzione e fare clic su **Salva** dall’interfaccia utente anche se non sono state apportate modifiche.
