@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibilità, gestione delle risorse
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 2%
@@ -60,7 +60,7 @@ Gli utenti disabili spesso si affidano a hardware e software per accedere ai con
 
 In [!DNL Experience Manager], le funzioni di accessibilità soddisfano due requisiti chiave degli utenti [!DNL Experience Manager] e dei loro clienti.
 
-* Per i designer e i creatori di contenuti, sono disponibili funzioni per creare e pubblicare contenuti accessibili che vengono a loro volta utilizzati dai loro clienti e visitatori del sito web. I contenuti possono essere utilizzati da persone con disabilità con l’aiuto di tecnologie per l’accessibilità. Per informazioni dettagliate, consulta [linee guida per l’accessibilità web](/help/onboarding/accessibility/web-accessibility.md).
+* Per i designer e i creatori di contenuti, sono disponibili funzioni per creare e pubblicare contenuti accessibili che vengono a loro volta utilizzati dai loro clienti e visitatori del sito web. I contenuti possono essere utilizzati da persone con disabilità con l’aiuto di tecnologie per l’accessibilità. Per informazioni dettagliate, consulta [linee guida per l’accessibilità web](/help/compliance/accessibility/quick-guide-wcag.md).
 * [!DNL Experience Manager] consente inoltre agli utenti e agli amministratori con disabilità di accedere all’interfaccia utente e ai controlli per creare e gestire i contenuti. L’utente con disabilità può utilizzare tecnologie per l’accessibilità per navigare, utilizzare e gestire la funzionalità [!DNL Assets] .
 
 Le funzioni di base di [!DNL Assets] sono più accessibili che in passato e vengono regolarmente aggiornate per migliorare la conformità agli standard globali. Le operazioni CRUD in [!DNL Assets] hanno un certo grado di accessibilità integrato in quelle. I flussi di lavoro DAM come l’aggiunta, la gestione, la ricerca e la distribuzione delle risorse sono accessibili tramite scelte rapide da tastiera, testo per assistenti vocali, contrasto del colore e così via.
@@ -147,7 +147,7 @@ Quando esplori l’archivio delle risorse, le seguenti funzionalità migliorano 
 * L&#39;utilizzo del tasto `Esc` per rimuovere le icone delle azioni rapide dalla visualizzazione miniatura non rimuove lo stato attivo dall&#39;ultimo elemento attivo.
 * Con una risorsa selezionata, selezionando `Alt + 4` scelte rapide da tastiera si apre l’elenco [!UICONTROL Riferimenti] nella barra a sinistra. Utilizzando la chiave `Tab`, gli utenti possono navigare tra le voci di riferimento diverse da zero. La navigazione solo attraverso le voci di riferimento diverse da zero consente di risparmiare fatica e tasti.
 * I commenti su una risorsa sono disponibili nella timeline della risorsa. È accessibile se si accede alla barra a sinistra utilizzando una tastiera o una scelta rapida da tastiera.
-* [!UICONTROL Le ] impostazioni di visualizzazione  [!DNL Experience Manager] sono accessibili da tastiera. Gli utenti possono navigare tra le dimensioni delle schede disponibili utilizzando i tasti freccia, quindi selezionare e spostarsi tra le varie dimensioni per navigare tra i vari elementi nella vista Impostazioni visualizzazione esistente e impostarne altri.
+* [!UICONTROL Le ] impostazioni di visualizzazione  [!DNL Experience Manager] sono accessibili da tastiera. Gli utenti possono navigare tra le dimensioni delle schede disponibili utilizzando i tasti freccia e selezionare e spostarsi tra le varie schede per navigare tra i vari elementi nella vista Impostazioni visualizzazione esistente e impostarli.
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 
@@ -226,6 +226,6 @@ Per fornire feedback, porre domande e richiedere miglioramenti ai prodotti, rela
 >[!MORELIKETHIS]
 >
 >* [Note sulla versione dei miglioramenti effettuati in ogni versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
->* [[!DNL Adobe Experience Manager] guida all’accessibilità](/help/onboarding/accessibility/web-accessibility.md).
+>* [[!DNL Adobe Experience Manager] guida all’accessibilità](/help/compliance/accessibility/web-accessibility.md).
 >* [Elenco dei rapporti di conformità (ACR) e VPAT per le soluzioni](https://www.adobe.com/accessibility/compliance.html) di Adobe.
 
