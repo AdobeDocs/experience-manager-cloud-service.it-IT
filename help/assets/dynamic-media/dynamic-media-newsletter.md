@@ -4,9 +4,9 @@ description: 'La newsletter Dynamic Media per Experience League è una newslette
 feature: Gestione risorse
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 352b615971329600a82a08c5b5b286877ecac322
+source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ In questa newsletter archiviata con un unico punto vendita, puoi trovare prezios
    * Scopri di più sui controlli Dynamic Media Classic gratuiti di Adobe.
    * Incontra John Monroe, Senior Program Manager for Customer Success Services.
 
-* **[Febbraio 2020, Numero 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
+* **[Febbraio 2020, Numero 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
    In questo numero:
 
