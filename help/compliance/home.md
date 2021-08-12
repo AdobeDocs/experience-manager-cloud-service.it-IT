@@ -2,7 +2,7 @@
 title: Conformità
 description: Conformità
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: b994725c4af3c108aa7c957c8669181379b6728c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 83%
@@ -15,11 +15,11 @@ In questa pagina sono elencate le risorse di supporto autonomo che forniscono in
 
 ## Articoli principali sulla panoramica {#key-articles}
 
-* [Preparazione di per le normative su privacy e protezione dei dati](aem-readiness.md)
-* [Preparazione di Foundation per le normative su privacy e protezione dei dati](foundation-readiness.md)
-* [Preparazione di Sites per le normative su privacy e protezione dei dati](sites-readiness.md)
-* [Linee guida per l’accessibilità dei contenuti web](web-accessibility.md)
-* [Guida rapida alle linee guida WCAG 2.1](quick-guide-wcag.md)
+* [Preparazione di per le normative su privacy e protezione dei dati](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Preparazione di Foundation per le normative su privacy e protezione dei dati](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [Preparazione di Sites per le normative su privacy e protezione dei dati](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [Linee guida per l’accessibilità dei contenuti web](/help/compliance/accessibility/web-accessibility.md)
+* [Guida rapida alle linee guida WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 
 ## Guide di Experience Manager as a Cloud Service {#aem-guides}
 
