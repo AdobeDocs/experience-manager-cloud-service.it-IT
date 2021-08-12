@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,35 @@ Per configurare il comportamento e le preferenze per la pipeline, effettua le se
 
    ![](assets/configure-pipeline5.png)
 
+### Modifica di una pipeline di produzione {#editing-prod-pipeline}
+
+Puoi modificare le configurazioni della pipeline dalla pagina **Panoramica del programma** .
+
+Per modificare la pipeline configurata, effettua le seguenti operazioni:
+
+1. Passa alla scheda **Pipelines** dalla pagina **Panoramica del programma** .
+
+1. Fai clic su **Modifica** dalla scheda **Pipelines** .
+
+   ![](assets/configure-pipeline/edit-pipeline-1.png)
+
+1. La scheda **Codice sorgente** ti consente di aggiornare l’archivio. Fai clic su **Accedi a informazioni sul repository** per aggiornare il repository.
+
+   >[!NOTE]
+   >Per informazioni su come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) .
+
+   ![](assets/configure-pipeline/edit-pipeline-2.png)
+
+
+1. La scheda **Ambienti** consente di aggiornare le opzioni di stage e produzione.
+
+   ![](assets/configure-pipeline/edit-pipeline-3.png)
+
+1. L’opzione **Audit esperienze** consente di aggiornare o aggiungere nuove pagine.
+
+   ![](assets/configure-pipeline/edit-pipeline-4.png)
+
+1. Fai clic su **Salva** una volta completata la modifica della pipeline.
 
 ## Solo pipeline non di produzione e di qualità del codice {#non-production-pipelines}
 
@@ -133,6 +162,22 @@ Nella schermata iniziale, queste pipeline sono elencate in una nuova scheda:
    * **Build** : consente di passare alla pagina di esecuzione dalla quale è possibile eseguire la pipeline.
    * **Accesso a informazioni sul repository** : consente all’utente di ottenere le informazioni necessarie per accedere all’archivio Git di Cloud Manager
    * **Ulteriori informazioni** : descrive la risorsa della documentazione della pipeline CI/CD.
+
+### Modifica di una pipeline non di produzione {#editing-nonprod-pipeline}
+
+Puoi modificare le configurazioni della pipeline dalla pagina **Panoramica del programma** .
+
+Per modificare la pipeline non di produzione configurata, effettua le seguenti operazioni:
+
+1. Passa alla scheda **Pipelines** dalla pagina **Panoramica del programma** .
+
+1. Seleziona la scheda **Non produzione** e fai clic su **Modifica** dopo aver selezionato le pipeline desiderate.
+
+   ![](assets/configure-pipeline/non-prod-edit-1.png)
+
+1. Seleziona l&#39;archivio desiderato e fai clic su **Salva**.
+
+   ![](assets/configure-pipeline/non-prod-edit2.png)
 
 ## Passaggi successivi {#the-next-steps}
 
