@@ -2,7 +2,7 @@
 title: Informazioni sui tipi di programma e di programma
 description: Informazioni sui tipi di programma e di programma - Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Il programma Cloud Manager viene fornito con provisioning automatico con il prop
 
 Per consentire a un utente di accedere all’archivio Git di Cloud Manager, gli utenti dovranno utilizzare un client Git con uno strumento a riga di comando, un client Git visivo indipendente o l’IDE dell’utente come Eclipse, IntelliJ, NetBeans.
 
-Una volta configurato un client Git, puoi gestire l’archivio Git dall’interfaccia utente di Cloud Manager. Per informazioni su come gestire Git utilizzando l’interfaccia utente di Cloud Manager, consulta [Accesso a Git](/help/implementing/cloud-manager/accessing-git.md).
+Una volta configurato un client Git, puoi gestire l’archivio Git dall’interfaccia utente di Cloud Manager. Per informazioni su come gestire Git utilizzando l’interfaccia utente di Cloud Manager, consulta [Accesso a Git](/help/implementing/cloud-manager/accessing-repos.md).
 
 Per iniziare a sviluppare l’applicazione AEM Cloud, è necessario creare una copia locale del codice dell’applicazione estraendolo dall’archivio Cloud Manager in una posizione sul computer locale in cui desiderano creare il proprio archivio.
 
