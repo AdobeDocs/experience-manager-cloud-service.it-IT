@@ -1,56 +1,51 @@
 ---
-title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0
-description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0
+title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0
+description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0
 feature: Informazioni sulla versione
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 05cd993df7293691a0f8b91e9bde278ec7b7af69
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 4%
+source-wordcount: '289'
+ht-degree: 5%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.7.0 {#release-notes}
+# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.8.0 {#release-notes}
 
-Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0.
+Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0.
 
 >[!NOTE]
 >Per visualizzare il Cloud Service delle note sulla versione corrente per Adobe Experience Manager, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
 ## Data di rilascio {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.7.0 è il 15 luglio 2021.
-La prossima versione è prevista per il 12 agosto 2021.
+La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.8.0 è il 12 agosto 2021.
+La prossima versione è prevista per il 9 settembre 2021.
 
 ### Novità {#what-is-new}
 
-* I clienti ora possono utilizzare Azul 8 e 11 JDK per i processi di creazione di Cloud Manager e possono scegliere di utilizzare uno di questi JDK per i plug-in Maven compatibili con toolchain *o* per l’intera esecuzione del processo Maven.
+* I clienti del Cloud Service ora possono visualizzare i rapporti SLA (Service Level Agreement) in Cloud Manager. Ciò sarà progressivamente reso disponibile nei prossimi mesi.
 
-* L&#39;IP in uscita verrà ora registrato nel file di registro dei passaggi della build.
+* Il tipo e la gravità delle regole di qualità IndexType e `IndexDamAssetLucene` sono stati modificati. Questi sono ora due bug di Blocker *serverity*.
 
-* Gli ambienti di stage e produzione che eseguono versioni precedenti di AEM ora segnalano lo stato **Aggiorna disponibile**.
+* Sono state introdotte nuove regole sulla qualità dell&#39;indice Oak per coprire configurazioni asincrone e tika.
 
-* Il numero massimo di certificati SSL supportati è aumentato a 20 per programma.
+* Aumenta il numero massimo di certificati SSL per programma a 50.
 
-* Il numero massimo di domini configurabili è aumentato a 500 per ambiente.
+* Funzionalità self-service per consentire agli utenti di creare e gestire più archivi tramite l’interfaccia utente di Cloud Manager.
 
-* I pulsanti **Manage Git** (Gestisci Git) sono stati rinominati in **Access Git Info** e la finestra di dialogo è stata aggiornata visivamente.
+* SonarQube leggeva inutilmente i dati della cronologia Git. Su basi di codice di grandi dimensioni, ciò potrebbe comportare una multa non necessaria per le prestazioni della build.
+
+* È ora disponibile un’API per annullare la validità della cache di dipendenza Maven per pipeline.
 
 * La versione di AEM Project Archetype utilizzata da Cloud Manager è stata aggiornata alla versione 28.
 
 ### Correzioni di bug {#bug-fixes}
 
-* In alcune situazioni, l’opzione Anteprima non era disponibile durante il binding di un Elenco consentiti IP a un ambiente.
+* Lo stato Aggiorna disponibile non deve essere visualizzato quando l&#39;ultima versione è inferiore alla versione corrente.
 
-* La navigazione manuale alla pagina dei dettagli di esecuzione per un’esecuzione non esistente non mostrava un errore, ma solo una schermata di caricamento infinita.
+* L&#39;onboarding iniziale non riusciva per le nuove organizzazioni con nomi molto lunghi.
 
-* Il messaggio di errore visualizzato quando è stato raggiunto il numero massimo di certificati SSL non è stato utile.
+* Talvolta, quando una pipeline viene attivata due volte per qualche motivo, si verifica un errore di una delle esecuzioni che non riesce con *non è in grado di aggiornare lo stato di esecuzione della pipeline*.
 
-* In alcune circostanze, potrebbe esserci una discrepanza nella versione di rilascio mostrata nella scheda della pipeline nella pagina **Panoramica** .
-
-* Aggiunta guidata programma non corretta: il nome non può essere modificato dopo la creazione.
-
-### Problemi noti {#known-issues}
-
-I clienti che passano all&#39;uso di Azul JDK dovrebbero essere consapevoli che non tutte le applicazioni esistenti si compileranno senza errori su Azul JDK. Si consiglia vivamente di eseguire il test localmente prima di passare a un altro metodo.
 
