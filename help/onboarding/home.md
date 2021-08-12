@@ -2,7 +2,7 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 19%
@@ -56,7 +56,7 @@ Le seguenti pagine della documentazione includono informazioni che descrivono le
 
 **[Passa a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Dopo essere stato aggiunto come utente e assegnato a un ruolo Cloud Manager, puoi accedere a Cloud Manager per iniziare a usare il tuo percorso Cloud con AEM. Gli utenti sono pronti a eseguire varie attività, come la creazione di un programma, l’aggiunta di un ambiente, l’ [accesso a Git](/help/implementing/cloud-manager/accessing-git.md), [la configurazione di una pipeline](/help/implementing/cloud-manager/configure-pipeline.md) e [la distribuzione di codice](/help/implementing/cloud-manager/deploy-code.md).
+Dopo essere stato aggiunto come utente e assegnato a un ruolo Cloud Manager, puoi accedere a Cloud Manager per iniziare a usare il tuo percorso Cloud con AEM. Gli utenti sono pronti a eseguire varie attività, come la creazione di un programma, l’aggiunta di un ambiente, l’accesso a Git, la [configurazione di una pipeline](/help/implementing/cloud-manager/configure-pipeline.md) e la [distribuzione di codice](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager è una parte importante del AEM come Cloud Service. Consente alle organizzazioni di gestire autonomamente [!DNL Experience Manager] nel cloud. Include un framework di integrazione continua e distribuzione continua (CI/CD, Continuous Integration/Continuous Delivery) che consente ai team IT e ai partner dell’implementazione di accelerare la distribuzione di personalizzazioni o aggiornamenti senza compromettere prestazioni o sicurezza. Utilizzando l’interfaccia utente, puoi configurare e avviare la pipeline CI/CD.
 
 **[Consentire agli utenti di accedere a un&#39;istanza AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
