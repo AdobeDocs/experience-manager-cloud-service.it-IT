@@ -4,9 +4,9 @@ description: 'La newsletter Dynamic Media per Experience League è una newslette
 feature: Gestione risorse
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
+source-git-commit: 07f7ec3fae8af6739e49d5bce55a980aca391e06
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ In questa newsletter archiviata con un unico punto vendita, puoi trovare prezios
    * Guarda i webinar on-demand Skill Builder per Dynamic Media Classic.
    * Visualizza le sessioni Dynamic Media da Online Adobe Summit 2020.
    * Scopri di più sui controlli Dynamic Media Classic gratuiti di Adobe.
-   * Incontra John Monroe, Senior Program Manager for Customer Success Services.
+   * Soddisfare `John Monroe`, Senior Program Manager for Customer Success Services.
 
 * **[Febbraio 2020, Numero 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -72,7 +72,7 @@ In questa newsletter archiviata con un unico punto vendita, puoi trovare prezios
    * Un controllo di audit gratuito per ottenere più valore da Dynamic Media Classic.
    * Una stagione di shopping da record per i clienti dei rich media di Adobe.
    * La tua guida per la selezione di un DAM (Digital Asset Manager) che soddisfi le tue esigenze attuali e ti prepara alle novità dei rich media di domani.
-   * Incontra Mark Dean, Digital Media Specialist.
+   * Incontra `Mark Dean`, Digital Media Specialist.
 
 * **[Novembre 2019, numero 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
@@ -103,7 +103,7 @@ In questa newsletter archiviata con un unico punto vendita, puoi trovare prezios
    * Scopri in che modo il team Dynamic Media può aiutarti a prepararti per una giornata con traffico visitatore superiore al normale.
    * Una seconda possibilità di prendere due webinar recenti di Skill Builder.
    * Guarda il webinar on-demand sulla protezione delle risorse digitali dalla pirateria.
-   * Bridget Roman, Senior Product Marketing Manager per Experience Manager Assets.
+   * Per Experienci Manager, scopri `Bridget Roman` Senior Product Marketing Manager .
    * Scopri la velocità su Dynamic Media e Dynamic Media Classic in Experience League.
 
 * **[Agosto 2019, Numero 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
