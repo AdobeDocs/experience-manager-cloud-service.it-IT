@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,API HTTP di Assets
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1438'
 ht-degree: 2%
 
 ---
@@ -185,7 +185,7 @@ Per la configurazione del flusso di lavoro di post-elaborazione, utilizza i flus
 
 ## Supporto dei passaggi del flusso di lavoro nel flusso di lavoro di post-elaborazione {#post-processing-workflows-steps}
 
-Se esegui l’aggiornamento da una versione precedente di [!DNL Experience Manager], puoi utilizzare i microservizi per le risorse per elaborare le risorse. I microservizi per le risorse native per il cloud sono più semplici da configurare e utilizzare. Alcuni passaggi del flusso di lavoro utilizzati nel flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] nella versione precedente non sono supportati. Per ulteriori informazioni sulle classi supportate, consulta [Riferimento API Java](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
+Se esegui l’aggiornamento da una versione precedente di [!DNL Experience Manager], puoi utilizzare i microservizi per le risorse per elaborare le risorse. I microservizi per le risorse native per il cloud sono più semplici da configurare e utilizzare. Alcuni passaggi del flusso di lavoro utilizzati nel flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] nella versione precedente non sono supportati. Per ulteriori informazioni sulle classi supportate, consulta il riferimento [Java API o Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
 
 I seguenti modelli di flusso di lavoro tecnici vengono sostituiti dai microservizi per le risorse o il supporto non è disponibile:
 
