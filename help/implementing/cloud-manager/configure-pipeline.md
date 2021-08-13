@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
+source-git-commit: 5dfe46c6a5cacc3d1d3d863ed5990214d778a1e7
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Nella schermata iniziale, queste pipeline sono elencate in una nuova scheda:
 
    ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
 
-1. Fai clic sul pulsante **Aggiungi** per specificare il nome della pipeline, il tipo di pipeline e la diramazione Git.
+1. Fate clic sul pulsante **Aggiungi** per specificare il nome della pipeline, il tipo di pipeline e la diramazione Git.
 
    Inoltre, è possibile impostare il trigger di distribuzione e il comportamento di errore importante dalle opzioni della pipeline.
 
@@ -175,7 +175,7 @@ Per modificare la pipeline non di produzione configurata, effettua le seguenti o
 
    ![](assets/configure-pipeline/non-prod-edit-1.png)
 
-1. Seleziona l&#39;archivio desiderato e fai clic su **Salva**.
+1. Seleziona l&#39;archivio desiderato e gli altri aggiornamenti richiesti e fai clic su **Salva**.
 
    ![](assets/configure-pipeline/non-prod-edit2.png)
 
