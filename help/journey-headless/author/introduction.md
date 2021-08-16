@@ -1,9 +1,10 @@
 ---
 title: AEM Percorso di authoring dei contenuti headless
 description: Introduzione alle funzioni avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e modalità di creazione di contenuti per il progetto.
+index: false
 hide: true
 hidefromtoc: true
-source-git-commit: b860493d92e7886513fe08e3eb6c56bf88ca58c0
+source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%
