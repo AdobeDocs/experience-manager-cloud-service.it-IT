@@ -5,9 +5,9 @@ breadcrumb-title: AEM Percorso di sviluppatori headless
 user-guide-description: Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle nel tuo progetto.
 feature: Strumenti per gli sviluppatori
 role: Developer, Architect
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: bcfe00727e443e2598beb4dbdeee90644447211c
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '198'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,12 @@ ht-degree: 1%
    + [Come mettere tutto insieme](developer/put-it-all-together.md)
    + [Come vivere con la tua applicazione headless](developer/go-live.md)
    + [Facoltativo - Come creare applicazioni a pagina singola con AEM](developer/create-spa.md)
++ AEM Percorso di authoring di contenuti headless {#content-author}
+   + [percorso di authoring dei contenuti headless AEM - Panoramica](author/overview.md)
+   + [Authoring per headless con AEM - Introduzione](author/introduction.md)
+   + [Nozioni di base sull’authoring per headless con AEM](author/basics.md)
+   + [Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto](author/references.md)
+   + [Scopri come definire metadati e tag per i frammenti di contenuto](author/metadata-tagging.md)
 + AEM Percorso di traduzione headless {#translation}
    + [Comprendere la localizzazione headless in AEM](translation/overview.md)
    + [Guida introduttiva alla localizzazione senza testa AEM](translation/getting-started.md)
