@@ -2,9 +2,9 @@
 title: Repository di Cloud Manager
 description: Repository di Cloud Manager
 exl-id: Cloud Manager Repositories
-source-git-commit: 1f2109731b8efd1c05941b7a7db23e6497257cbf
+source-git-commit: 8a53641745ab2e0cfabdf0b6e13b163aaf6a68bd
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Gli archivi creati e disponibili in Cloud Manager possono essere visualizzati e gestiti tramite la pagina Repository .
 
 >[!NOTE]
->Esiste un limite di 300 archivi in tutti i programmi di una determinata azienda o in [Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html).
+>Esiste un limite di 300 archivi in tutti i programmi di una determinata azienda (o organizzazione IMS).
 
 ## Aggiunta e gestione di archivi {#add-manage-repos}
 
@@ -34,10 +34,10 @@ Segui i passaggi seguenti per visualizzare e gestire gli archivi in Cloud Manage
 
    ![](assets/repos/repo-1.png)
 
-1. Seleziona **Salva**. Il repository appena creato verrà visualizzato nella tabella, come illustrato di seguito. Gli archivi creati in Cloud Manager saranno anche disponibili per la selezione durante i passaggi di aggiunta o modifica della pipeline. Per ulteriori informazioni, consulta [Configurare la pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) .
+1. Seleziona **Salva**. Il repository appena creato verrà visualizzato nella tabella, come illustrato di seguito.
 
    >[!NOTE]
-   >Esiste un singolo archivio *primario* o un ramo per una determinata pipeline. Con [Supporto sottomodulo Git](#git-submodule-support), tuttavia è possibile includere molti rami secondari in fase di creazione.
+   >Gli archivi creati in Cloud Manager saranno anche disponibili per la selezione durante i passaggi di aggiunta o modifica della pipeline. Per ulteriori informazioni, consulta [Configurare la pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) . Esiste un singolo archivio *primario* o un ramo per una determinata pipeline. Con [Supporto sottomodulo Git](#git-submodule-support), tuttavia è possibile includere molti rami secondari in fase di creazione.
 
    ![](assets/repos/create-repo3.png)
 
