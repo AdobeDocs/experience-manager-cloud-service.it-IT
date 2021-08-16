@@ -2,9 +2,9 @@
 title: Repository di Cloud Manager
 description: Repository di Cloud Manager
 exl-id: Cloud Manager Repositories
-source-git-commit: d2a8329fff12be6581f2ee2caf7f9764c765d0e6
+source-git-commit: cebc603aab9c558239588f574f52568d05081b34
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Repository di Cloud Manager {#cloud-manager-repos}
 
 Gli archivi creati e disponibili in Cloud Manager possono essere visualizzati e gestiti tramite la pagina Repository .
+
+>[!NOTE]
+>Esiste un limite di 300 archivi in tutti i programmi di una determinata azienda o [Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)).
 
 ## Aggiunta e gestione di archivi {#add-manage-repos}
 
@@ -32,6 +35,9 @@ Segui i passaggi seguenti per visualizzare e gestire gli archivi in Cloud Manage
    ![](assets/repos/repo-1.png)
 
 1. Seleziona **Salva**. Il repository appena creato verrà visualizzato nella tabella, come illustrato di seguito.
+
+   >[!NOTE]
+   >Esiste un singolo archivio *primario* o un ramo per una determinata pipeline. Con [Supporto sottomodulo Git](#git-submodule-support), tuttavia è possibile includere molti rami secondari in fase di creazione.
 
    ![](assets/repos/create-repo3.png)
 
