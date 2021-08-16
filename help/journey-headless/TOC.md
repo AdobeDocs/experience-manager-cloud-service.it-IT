@@ -1,11 +1,11 @@
 ---
-sub-product: AEM Percorso di sviluppatori headless
-user-guide-title: AEM Percorso di sviluppatori headless
-breadcrumb-title: AEM Percorso di sviluppatori headless
+sub-product: AEM Percorsi headless
+user-guide-title: AEM Percorsi headless
+breadcrumb-title: AEM Percorsi headless
 user-guide-description: Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle nel tuo progetto.
 feature: Strumenti per gli sviluppatori
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -13,8 +13,9 @@ ht-degree: 0%
 ---
 
 
-# AEM Percorso senza testa {#headless-journey}
+# AEM Percorsi headless {#headless-journey}
 
++ [AEM Percorsi headless](/help/journey-headless/home.md)
 + AEM Percorso di sviluppatori headless {#developer}
    + [Capire senza testa in AEM](developer/overview.md)
    + [Scopri lo sviluppo headless di CMS](developer/learn-about.md)
