@@ -1,9 +1,9 @@
 ---
 title: AEM Percorsi headless
 description: Inizia qui per una panoramica dei percorsi guidati disponibili per comprendere AEM potenti funzioni headless.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -52,5 +52,7 @@ I seguenti Percorsi di documentazione sono disponibili per gli argomenti headles
 |---|---|---|
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Scopri le tecnologie headless, cosa portano all’esperienza utente, come AEM supporta i modelli headless e come implementare il tuo progetto di sviluppo headless da A a Z. | Sviluppatori |
 | [Percorso di traduzione headless](/help/journey-headless/translation/overview.md) | Scopri le tecnologie headless, perché utilizzarle nel progetto e come creare e aggiornare progetti di traduzione in AEM da A a Z. | Specialisti di traduzione |
+| [Percorso di authoring headless](/help/journey-headless/author/overview.md) | Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless. | Architetti |
+| [Percorso architetto headless](/help/journey-headless/architect/overview.md) | Inizia qui per un’introduzione alle funzionalità avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e per scoprire come modellare i contenuti per il tuo progetto. | Autori e creatori di contenuti |
 
 Rimani in sintonia con i [prossimi percorsi che coprono ruoli aggiuntivi.](/help/journey-documentation/home.md#journeys)
