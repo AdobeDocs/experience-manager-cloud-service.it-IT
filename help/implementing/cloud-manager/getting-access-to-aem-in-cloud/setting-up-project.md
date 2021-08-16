@@ -2,9 +2,9 @@
 title: Dettagli di configurazione del progetto
 description: Dettagli configurazione progetto - Cloud Services
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
+source-git-commit: b9bb9e7b63a53ea1a6ce1e126285bb84c8351083
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '845'
 ht-degree: 7%
 
 ---
@@ -107,7 +107,7 @@ E se desideri inviare un messaggio semplice solo quando la build viene eseguita 
 ## Supporto dell&#39;archivio Maven protetto da password {#password-protected-maven-repositories}
 
 >[!NOTE]
->Gli artefatti provenienti da un archivio Maven protetto da password devono essere utilizzati con molta cautela, in quanto il codice distribuito tramite questo meccanismo non viene attualmente eseguito tramite i Gates di qualità di Cloud Manager. Pertanto dovrebbe essere utilizzato solo in rari casi e per codice non legato a AEM. Si consiglia inoltre di distribuire le origini Java e l&#39;intero codice sorgente del progetto insieme al binario.
+>Gli artefatti provenienti da un archivio Maven protetto da password devono essere utilizzati con molta cautela, in quanto il codice distribuito tramite questo meccanismo attualmente non viene eseguito attraverso tutte le regole di qualità implementate nei Gates di qualità di Cloud Manager. Pertanto dovrebbe essere utilizzato solo in rari casi e per codice non legato a AEM. Si consiglia inoltre di distribuire le origini Java e l&#39;intero codice sorgente del progetto insieme al binario.
 
 Per utilizzare un archivio Maven protetto da password da Cloud Manager, specifica la password (e facoltativamente il nome utente) come variabile di pipeline segreta e fai riferimento a tale segreto all’interno di un file denominato `.cloudmanager/maven/settings.xml` nell’archivio Git. Questo file segue lo schema [File impostazioni Maven](https://maven.apache.org/settings.html) . All’avvio del processo di compilazione di Cloud Manager, l’elemento `<servers>` in questo file verrà unito al file `settings.xml` predefinito fornito da Cloud Manager. Gli ID server che iniziano con `adobe` e `cloud-manager` sono considerati riservati e non devono essere utilizzati dai server personalizzati. Gli ID server **non** che corrispondono a uno di questi prefissi o l&#39;ID predefinito `central` non verranno mai rispecchiati da Cloud Manager. Con questo file attivo, all&#39;interno di un elemento `<repository>` e/o `<pluginRepository>` all&#39;interno del file `pom.xml` viene fatto riferimento all&#39;ID del server. In genere, questi elementi `<repository>` e/o `<pluginRepository>` sono contenuti all’interno di un profilo specifico di [Cloud Manager](#activating-maven-profiles-in-cloud-manager), anche se ciò non è strettamente necessario.
 
