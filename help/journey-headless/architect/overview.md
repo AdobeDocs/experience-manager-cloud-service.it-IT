@@ -4,9 +4,9 @@ description: Inizia qui per un percorso guidato attraverso le potenti e flessibi
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '655'
 ht-degree: 2%
 
 ---
@@ -52,3 +52,14 @@ Anche se puoi passare direttamente a una particolare parte del percorso, molti c
 ## Novità {#what-is-next}
 
 Ora sei pronto per iniziare sul tuo percorso headless Adobe. Ti invitiamo a passare alla parte successiva del percorso e a leggere l&#39;articolo [Modellazione dei contenuti per senza titolo con AEM - An Introduction](introduction.md) (Introduzione).
+
+## Risorse aggiuntive {#additional-resources}
+
+I percorsi di documentazione mostrano come AEM risolvere un problema aziendale fornendo una narrazione che ti guida attraverso processi e funzionalità complessi e intercorrelati. Un percorso illustra il funzionamento congiunto di più funzioni per soddisfare le esigenze di un&#39;unica azienda.
+
+Come tali percorsi sono progettati per stare da soli. Tuttavia alcuni di essi possono essere correlati tra loro. Consulta questi percorsi aggiuntivi per ulteriori informazioni su come AEM funzioni avanzate funzionano insieme.
+
+* [AEM Percorso di traduzione headless](/help/journey-headless/translation/overview.md)  - Questo percorso di documentazione ti offre un&#39;ampia comprensione della tecnologia headless, di come AEM i contenuti headless e di come tradurli.
+* [Percorso](/help/journey-headless/author/overview.md)  di authoring headless - Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless.
+* [AEM Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md)  - Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro funzionalità e come sfruttarle sul tuo primo progetto di sviluppo.
+* [AEM come documentazione tecnica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it)  Cloud Service - Se hai già una conoscenza approfondita delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
