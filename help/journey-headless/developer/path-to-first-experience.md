@@ -1,15 +1,15 @@
 ---
 title: Percorso per la prima esperienza con AEM Headless
 description: In questa parte del Percorso di sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprendi le best practice per rendere il percorso il più semplice possibile.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
+source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
 
-
-# Percorso della tua prima esperienza con AEM headless {#path-to-first-experience}
+# Percorso per la prima esperienza con AEM Headless {#path-to-first-experience}
 
 In questa parte del [AEM Percorso di sviluppatori headless,](overview.md) comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprendi le best practice per rendere il percorso il più semplice possibile.
 
@@ -50,9 +50,9 @@ Separati da AEM, assicurati anche di disporre di un ambiente di sviluppo appropr
 
 Vuoi creare un’esperienza coerente e gestire campagne personalizzate tra i canali, in modo da poter esaminare ogni singolo canale e superficie come una propria struttura di contenuti distinta a cui eseguire la distribuzione. Tuttavia, disporre di un proprio modello di contenuto per ogni canale sarà difficile da mantenere.
 
-È invece necessario considerare il modo in cui i contenuti su superfici diverse sono correlati in base a principi di organizzazione quali gerarchie di marchi e prodotti, categorie di beni o superfici o passaggi nel percorso cliente. Ad esempio, se si dispone di un insieme di superfici che supportano una marca specifica di auto prodotte, è possibile iniziare con un modello di contenuto per informazioni generali che sarebbe vero per l&#39;intera auto e quindi avere elementi più specifici del contesto, come il contenuto necessario quando l&#39;auto sta iniziando a quando ci sono problemi di servizio. Un modello di questo tipo applicherà un&#39;eredità del contenuto generale del marchio automobilistico, consentendo al tempo stesso turni in base al contesto specifico necessario. Aiuta anche nella gestione futura degli aggiornamenti di questo contenuto in quanto puoi applicare il controllo in base a ruoli come l’addetto al marketing o il responsabile prodotto per l’intero marchio automobilistico rispetto a un autore responsabile dell’esperienza di &quot;automobile di partenza&quot;.
+È invece necessario considerare il modo in cui il contenuto su superfici diverse è correlato in base a principi di organizzazione quali gerarchie di marchi e prodotti, categorie di beni o superfici o passaggi nel percorso di clienti. Ad esempio, se si dispone di un insieme di superfici che supportano una marca specifica di auto prodotte, si può voler iniziare con un modello di contenuto per informazioni generali che sarebbe vero per l&#39;intera auto e poi avere elementi più specifici come il contenuto necessario quando l&#39;auto sta iniziando a quando ci sono problemi di servizio. Un modello di questo tipo applicherà l&#39;ereditarietà del contenuto generale del marchio automobilistico, consentendo al tempo stesso turni in base al contesto specifico necessario. Aiuta anche nella gestione futura degli aggiornamenti di questo contenuto in quanto puoi applicare il controllo in base a ruoli come l’addetto al marketing o il responsabile prodotto per l’intero marchio automobilistico rispetto a un autore responsabile dell’esperienza di &quot;automobile di partenza&quot;.
 
-Una volta ottenuto il modello di contenuto e una visualizzazione chiara dei vari client a cui deve essere applicato il contenuto, è necessario assicurarsi che le API/GraphQL associate all’accesso a vari modelli di contenuto siano pubblicate su tutti i client che necessitano di tali contenuti. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta il caching del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i clienti sfruttino le API più efficienti per le loro esigenze aziendali.
+Una volta ottenuto il modello di contenuto e una visualizzazione chiara dei vari client a cui deve essere applicato il contenuto, è necessario assicurarsi che le API/GraphQL associate all’accesso a vari modelli di contenuto siano pubblicate su tutti i client che necessitano tale contenuto. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta il caching del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i clienti sfruttino le API più efficienti per le loro esigenze aziendali.
 
 ## Informazioni sugli ambienti {#understanding-environments}
 
@@ -142,6 +142,7 @@ Indipendentemente dal tuo stile di apprendimento, l&#39;Adobe vuole che tu abbia
 
 Mentre si consiglia di passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Come modellare i contenuti come modelli di contenuto AEM,](model-your-content.md) di seguito sono riportate alcune risorse aggiuntive facoltative che consentono di approfondire alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
 
+* [AEM Percorso di traduzione headless](/help/journey-headless/translation/overview.md)  - Questo percorso di documentazione ti offre un&#39;ampia comprensione della tecnologia headless, di come AEM i contenuti headless e di come tradurli.
 * [Sviluppo headless per AEM Sites as a Cloud Service](/help/implementing/developing/headless/introduction.md) : introduzione rapida per orientare lo sviluppatore AEM Headless con le funzioni necessarie
 * [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) : utilizza questi tutorial pratici per scoprire come utilizzare le varie opzioni per la distribuzione di contenuti agli endpoint headless con AEM e scegliere ciò che è più adatto alle tue esigenze.
 * [Gestione dei contenuti headless tramite API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) : segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
