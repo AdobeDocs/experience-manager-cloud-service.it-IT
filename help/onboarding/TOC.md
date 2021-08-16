@@ -5,10 +5,10 @@ breadcrumb-title: Guida all’onboarding
 user-guide-description: Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati.
 feature: Distribuzione
 role: Architect, Developer
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: e029e0ffc7e8b1177f83354598307e411b756642
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 49%
+source-wordcount: '133'
+ht-degree: 47%
 
 ---
 
@@ -37,4 +37,3 @@ ht-degree: 49%
    + [Valutazione dei KPI](best-practices/assessing-kpis.md)
    + [Allineamento dei KPI](best-practices/aligning-kpis.md)
    + [Scegli il team giusto](best-practices/choose-right-team.md)
-+ [Panoramica delle console Strumenti](tools-consoles.md)
