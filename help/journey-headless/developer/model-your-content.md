@@ -1,13 +1,13 @@
 ---
 title: Come modellare il contenuto
 description: In questa parte del Percorso di sviluppatori AEM Headless , scopri come modellare i contenuti per la distribuzione AEM Headless utilizzando la modellazione dei contenuti con modelli di frammenti di contenuto e frammenti di contenuto.
-source-git-commit: dc1ed5c55cc17bcba97972bc79d04aa3530664e7
+exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
+source-git-commit: 8107e6fdf4a1e4b49d0ab1ac213cfcf286c5dc86
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 2%
 
 ---
-
 
 # Come modellare il contenuto {#model-your-content}
 
@@ -15,7 +15,7 @@ In questa parte del [AEM Percorso di sviluppatori headless](overview.md), puoi i
 
 ## La storia finora {#story-so-far}
 
-All&#39;inizio [Scopri lo sviluppo headless di CMS](learn-about.md) la distribuzione di contenuti headless coperti e perché dovrebbe essere utilizzata. Quindi [Come iniziare a AEM senza testa come un Cloud Service](getting-started.md) ha descritto AEM senza testa nel contesto del tuo progetto
+All&#39;inizio [Scopri lo sviluppo headless di CMS](learn-about.md) la distribuzione di contenuti headless coperti e perché dovrebbe essere utilizzata. Quindi [Come iniziare a usare AEM Headless come Cloud Service](getting-started.md) ha descritto AEM Headless nel contesto del tuo progetto.
 
 Nel documento precedente del percorso senza testa AEM [Percorso alla prima esperienza con AEM headless](path-to-first-experience.md), hai quindi appreso i passaggi necessari per implementare il primo progetto. Dopo la lettura dovrebbe:
 
@@ -101,7 +101,7 @@ Una volta stabile, è possibile tradurre i modelli in un **Schema logico** che d
 
 Ad esempio, sono necessarie entità separate per `Head Teacher` e `Teacher`, oppure è sufficiente un attributo aggiuntivo sul modello `Teacher`?
 
-### Assicurazione dell&#39;integrità dei dati {#data-integrity}
+### Garantire l’integrità dei dati {#data-integrity}
 
 L’integrità dei dati è necessaria per garantire l’accuratezza e la coerenza dei contenuti durante l’intero ciclo di vita. Ciò include la garanzia che gli autori dei contenuti possano capire facilmente dove archiviare, per cui sono fondamentali i seguenti elementi:
 
@@ -124,7 +124,7 @@ Tutto è un atto di bilanciamento, ma la creazione di una struttura troppo compl
 
 * Influisce notevolmente sulle prestazioni se la query deve accedere a più frammenti di contenuto nidificati (a cui si fa riferimento) per recuperare il contenuto richiesto.
 
-## Modellazione dei contenuti per AEM headless {#content-modeling-for-aem-headless}
+## Modellazione dei contenuti per AEM Headless {#content-modeling-for-aem-headless}
 
 Data Modeling è un insieme di tecniche consolidate, spesso utilizzate quando si sviluppano database di relazioni, quindi cosa significa Modellazione dei contenuti per AEM Headless?
 
@@ -151,7 +151,7 @@ Le richieste di contenuti vengono effettuate utilizzando l’API GraphQL di AEM,
 
 Il contenuto restituito può quindi essere utilizzato dalle applicazioni.
 
-## Creazione della struttura con modelli di frammenti di contenuto {#create-structure-content-fragment-models}
+## Creazione di una struttura con modelli di frammenti di contenuto {#create-structure-content-fragment-models}
 
 I modelli per frammenti di contenuto forniscono vari meccanismi che consentono di definire la struttura del contenuto.
 
