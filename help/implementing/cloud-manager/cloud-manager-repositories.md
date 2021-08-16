@@ -2,9 +2,9 @@
 title: Repository di Cloud Manager
 description: Repository di Cloud Manager
 exl-id: Cloud Manager Repositories
-source-git-commit: cebc603aab9c558239588f574f52568d05081b34
+source-git-commit: 1f2109731b8efd1c05941b7a7db23e6497257cbf
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Gli archivi creati e disponibili in Cloud Manager possono essere visualizzati e gestiti tramite la pagina Repository .
 
 >[!NOTE]
->Esiste un limite di 300 archivi in tutti i programmi di una determinata azienda o [Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)).
+>Esiste un limite di 300 archivi in tutti i programmi di una determinata azienda o in [Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html).
 
 ## Aggiunta e gestione di archivi {#add-manage-repos}
 
@@ -34,15 +34,12 @@ Segui i passaggi seguenti per visualizzare e gestire gli archivi in Cloud Manage
 
    ![](assets/repos/repo-1.png)
 
-1. Seleziona **Salva**. Il repository appena creato verrà visualizzato nella tabella, come illustrato di seguito.
+1. Seleziona **Salva**. Il repository appena creato verrà visualizzato nella tabella, come illustrato di seguito. Gli archivi creati in Cloud Manager saranno anche disponibili per la selezione durante i passaggi di aggiunta o modifica della pipeline. Per ulteriori informazioni, consulta [Configurare la pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) .
 
    >[!NOTE]
    >Esiste un singolo archivio *primario* o un ramo per una determinata pipeline. Con [Supporto sottomodulo Git](#git-submodule-support), tuttavia è possibile includere molti rami secondari in fase di creazione.
 
    ![](assets/repos/create-repo3.png)
-
-   >[!NOTE]
-   >Gli archivi creati in Cloud Manager saranno anche disponibili per la selezione durante i passaggi di aggiunta o modifica della pipeline. Per ulteriori informazioni, consulta [Configurare la pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) .
 
 1. Puoi selezionare l&#39;archivio e fare clic sulle opzioni del menu dall&#39;estrema destra della tabella in **Copia URL archivio**, **Visualizza e aggiorna** o **Elimina** l&#39;archivio, come mostrato nella figura seguente.
 
