@@ -1,9 +1,9 @@
 ---
 title: percorsi di documentazione AEM
 description: I Percorsi di documentazione forniscono una struttura narrativa all'interno AEM documentazione mediante l'unione di funzioni complesse e disparate al fine di risolvere un obiettivo aziendale in modo best practice. Progettati con AEM principianti, i percorsi introducono i concetti e le funzionalità per raggiungere un obiettivo da A a Z.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1262'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,8 @@ Sono già disponibili diversi Percorsi di documentazione. Poiché ogni percorso 
 | Percorso | Descrizione |
 |---|---|
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Inizia qui per vedere come AEM supporta modelli di sviluppo headless e come iniziare a pianificare, implementare e seguire i processi di progettazione. |
-| Percorso di authoring headless | Inizia qui per scoprire come creare e gestire contenuti headless in AEM. |
+| [Percorso di authoring headless](/help/journey-headless/author/overview.md) | Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless. |
+| [Percorso architetto headless](/help/journey-headless/architect/overview.md) | Inizia qui per un’introduzione alle funzionalità avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e per scoprire come modellare i contenuti per il tuo progetto. |
 | [Percorso di traduzione headless](/help/journey-headless/translation/overview.md) | Inizia qui per scoprire come impostare e gestire i tuoi progetti di traduzione headless in AEM. |
 | percorso di onboarding AEM | Presto! |
 | percorso Commerce AEM | Presto! |
