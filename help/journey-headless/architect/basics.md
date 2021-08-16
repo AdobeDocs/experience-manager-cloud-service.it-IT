@@ -1,9 +1,10 @@
 ---
 title: Informazioni di base sulla modellazione dei contenuti
 description: Scopri le nozioni di base per la modellazione dei contenuti per CMS headless utilizzando Frammenti di contenuto.
+index: false
 hide: true
 hidefromtoc: true
-source-git-commit: d0e870f5e49580bb95d347092a2ece4c2497a1c9
+source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 4%
