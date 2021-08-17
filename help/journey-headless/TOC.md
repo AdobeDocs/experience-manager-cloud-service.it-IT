@@ -5,7 +5,7 @@ breadcrumb-title: AEM Percorsi headless
 user-guide-description: Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle nel tuo progetto.
 feature: Strumenti per gli sviluppatori
 role: Developer, Architect
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: fe1d8f29e59f1f54c4f8e3a419103926005c0e48
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -27,17 +27,17 @@ ht-degree: 0%
    + [Come mettere tutto insieme](developer/put-it-all-together.md)
    + [Come vivere con la tua applicazione headless](developer/go-live.md)
    + [Facoltativo - Come creare applicazioni a pagina singola con AEM](developer/create-spa.md)
-+ AEM Percorso di authoring di contenuti headless {#content-author}
++ AEM Percorso di architetti di contenuti headless {#architect}
+   + [Panoramica di AEM architetto di contenuti headless](architect/overview.md)
+   + [Modellazione dei contenuti per headless con AEM - Introduzione](architect/introduction.md)
+   + [Scopri le nozioni di base sulla modellazione dei contenuti per headless con AEM](architect/basics.md)
+   + [Scopri come creare modelli di frammenti di contenuto in AEM](architect/model-structure.md)
++ AEM Percorso di authoring di contenuti headless {#author}
    + [percorso di authoring dei contenuti headless AEM - Panoramica](author/overview.md)
    + [Authoring per headless con AEM - Introduzione](author/introduction.md)
    + [Nozioni di base sull’authoring per headless con AEM](author/basics.md)
    + [Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto](author/references.md)
    + [Scopri come definire metadati e tag per i frammenti di contenuto](author/metadata-tagging.md)
-+ AEM Percorso di architetti di contenuti headless {#content-architect}
-   + [Panoramica di AEM architetto di contenuti headless](architect/overview.md)
-   + [Modellazione dei contenuti per headless con AEM - Introduzione](architect/introduction.md)
-   + [Scopri le nozioni di base sulla modellazione dei contenuti per headless con AEM](architect/basics.md)
-   + [Scopri come creare modelli di frammenti di contenuto in AEM](architect/model-structure.md)
 + AEM Percorso di traduzione headless {#translation}
    + [Comprendere la traduzione headless in AEM](translation/overview.md)
    + [Guida introduttiva alla traduzione senza testa AEM](translation/getting-started.md)
