@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Gestione risorse, rappresentazioni
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 10%
@@ -227,7 +227,7 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 ## Suggerimenti e limitazioni {#limitations-and-tips}
 
-* Attualmente, il limite di dimensione del file per l’estrazione dei metadati è di circa 10 GB. Quando si caricano risorse di grandi dimensioni, a volte l’operazione di estrazione dei metadati non riesce.
+* Attualmente, il limite di dimensione del file per l’estrazione dei metadati è di circa 15 GB. Quando si caricano risorse di grandi dimensioni, a volte l’operazione di estrazione dei metadati non riesce.
 
 >[!MORELIKETHIS]
 >
