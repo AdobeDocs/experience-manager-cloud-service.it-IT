@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute Microservices,Flusso di lavoro,Elaborazione delle risorse
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 1%
@@ -238,7 +238,7 @@ Per informazioni su come distribuire una configurazione OSGi, consulta [distribu
 
 * Considera le tue esigenze per tutti i tipi di rendering durante la progettazione dei flussi di lavoro. Se non prevedete la necessità di un rendering in futuro, rimuovete il relativo passaggio di creazione dal flusso di lavoro. Le rappresentazioni non possono essere eliminate in blocco in seguito. Le rappresentazioni indesiderate possono occupare molto spazio di archiviazione dopo un uso prolungato di [!DNL Experience Manager]. Per le singole risorse, puoi rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, puoi personalizzare [!DNL Experience Manager] per eliminare rappresentazioni specifiche oppure eliminare le risorse e caricarle di nuovo.
 * Al momento, il supporto è limitato alla generazione di rappresentazioni. La generazione di nuove risorse non è supportata.
-* Attualmente, il limite di dimensione del file per l’estrazione dei metadati è di circa 10 GB. Quando si caricano risorse di grandi dimensioni, a volte l’operazione di estrazione dei metadati non riesce.
+* Attualmente, il limite di dimensione del file per l’estrazione dei metadati è di circa 15 GB. Quando si caricano risorse di grandi dimensioni, a volte l’operazione di estrazione dei metadati non riesce.
 
 >[!MORELIKETHIS]
 >
