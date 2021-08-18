@@ -4,7 +4,7 @@ description: Segui questa pagina per scoprire come iniziare a utilizzare il perc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
+source-git-commit: 1ce3849cee513d061df0664ca50d400e6cf41a8d
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Guida introduttiva al processo di onboarding {#getting-started}
 
-L&#39;onboarding è il processo durante il quale un [amministratore di sistema ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale di risorse cloud e l’assegnazione di utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito alle quali ogni membro può accedere e accedere ai propri AEM come risorse di Cloud Service.
+L&#39;onboarding è il processo durante il quale un [amministratore di sistema ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale delle risorse cloud e l’assegnazione di utenti a ruoli in base alle loro responsabilità lavorative. Di conseguenza, ogni membro è in grado di accedere alle proprie AEM come risorse di Cloud Service.
 
 ## Obiettivo {#objective}
 
@@ -55,11 +55,11 @@ Segui i passaggi seguenti per passare ad Admin Console ed esaminare il ruolo di 
 
    ![](/help/onboarding/onboarding-journey/assets/get-started2.png)
 
-1. Dopo aver fatto clic su **Amministratori** dalla scheda **Utenti**, nel passaggio precedente è possibile effettuare ricerche inserendo il proprio indirizzo e-mail, nome utente, nome utente o cognome di Adobe ID.
+1. Dopo aver fatto clic su **Amministratori** dalla scheda **Utenti**, è possibile eseguire la ricerca inserendo il proprio indirizzo e-mail, nome utente, nome utente o cognome di Adobe ID.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started3.png)
 
-1. La ricerca deve restituire il record e-mail con **System** sotto la colonna etichettata **ADMIN ROLE**, come mostrato di seguito. Conferma che sei amministratore di sistema.
+1. La ricerca deve trovare correttamente il record e-mail. Inoltre, il **RUOLO AMMINISTRATORE** deve mostrare **Sistema**, come mostrato di seguito. Questo conferma che sei un amministratore di sistema. Conferma il tuo ruolo di amministratore di sistema.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started4.png)
 
