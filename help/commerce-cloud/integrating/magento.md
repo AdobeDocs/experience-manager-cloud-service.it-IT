@@ -2,18 +2,21 @@
 title: Integrazione di AEM e Adobe Commerce (Magento) tramite Commerce Integration Framework
 description: AEM e Adobe Commerce (Magento) sono perfettamente integrati tramite Commerce Integration Framework (CIF). CIF consente ad AEM di accedere a un’istanza di Magento e di comunicare con Magento tramite GraphQL. Consente inoltre agli autori AEM di utilizzare i selettori di Prodotto e Categoria e la console Prodotti per sfogliare i dati di prodotti e categorie recuperati on-demand da Magento. Inoltre, CIF fornisce una vetrina pronta all’uso che può accelerare i progetti di commerce.
 thumbnail: aem-magento-architecture.jpg
-exl-id: 1cdfda88-a728-432f-b24a-f81347572bcf
-translation-type: tm+mt
-source-git-commit: a4e53fdcb33eab8afabcb13d651155cd247bda1f
+exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
+source-git-commit: b6a9b515724b0a950fc399bec0d746fe273cfd33
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 37%
+source-wordcount: '413'
+ht-degree: 35%
 
 ---
 
 # Integrazione di AEM e Adobe Commerce (Magento) tramite Commerce Integration Framework {#aem-magento-framework}
 
 L’integrazione di Experience Manager e Adobe Commerce (Magento) avviene senza soluzione di continuità tramite Commerce Integration Framework (CIF). CIF consente a AEM di accedere e comunicare direttamente con l’istanza comune utilizzando le API Commerce di Adobe [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/).
+
+>[!NOTE]
+>
+> La versione minima supportata dell’API GraphQL è la 2.3.5. Alcune funzioni sono supportate solo nelle versioni più recenti o solo nell’edizione Commerce di Adobe.
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ Le chiamate API lato server vengono implementate utilizzando il client [GraphQL]
 
 Per i componenti lato client, creati con [React](https://reactjs.org/), viene utilizzato il [client Apollo](https://www.apollographql.com/docs/react/).
 
-## Architettura dei componenti core CIF di AEM{#cif-core-components}
+## Architettura dei componenti core CIF di AEM {#cif-core-components}
 
 ![Architettura dei componenti core CIF di AEM](../assets/cif-component-architecture.jpg)
 
