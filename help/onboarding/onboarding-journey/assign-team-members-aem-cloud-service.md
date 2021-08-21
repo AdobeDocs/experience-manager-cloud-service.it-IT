@@ -4,9 +4,9 @@ description: Segui questa pagina per scoprire come assegnare i membri del team a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Dopo aver letto questa sezione è necessario comprendere:
 
 ## Introduzione {#introduction}
 
-Per poter accedere a AEM come Cloud Service, gli utenti devono appartenere a uno dei due profili di prodotto, ad esempio `AEM Users` o `AEM Administrators`. Ai membri del team devono essere concesse le autorizzazioni per l’istanza AEM, in quanto le autorizzazioni per amministrare Cloud Manager non sono sufficienti. Per saperne di più.
+Per poter accedere a AEM come Cloud Service, gli utenti devono appartenere a uno dei due profili di prodotto:  `AEM Users` o `AEM Administrators`. Ai membri del team devono essere concesse le autorizzazioni per l’istanza AEM, in quanto le autorizzazioni per amministrare Cloud Manager non sono sufficienti. Per saperne di più.
 
 >[!NOTE]
 >Ogni utente assegnato a AEM profilo di prodotto utente dall’amministratore di sistema avrà accesso (in sola lettura) a Cloud Manager.
