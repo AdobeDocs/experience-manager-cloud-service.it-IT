@@ -2,9 +2,8 @@
 title: Configurare le risorse Cloud tramite Cloud Manager
 description: Segui questa pagina per scoprire come impostare le risorse di Cloud tramite Cloud Manager
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: 5f599eb877565c65aad3d54af411bd8d40f4580d
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '1429'
 ht-degree: 0%
