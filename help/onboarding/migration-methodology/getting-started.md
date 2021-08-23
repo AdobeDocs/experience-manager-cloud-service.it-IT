@@ -2,9 +2,9 @@
 title: Migrazione ad Experience Manager come Cloud Service
 description: Migrazione ad Experience Manager come Cloud Service
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: c5b98c25ec8999c36e2aa44266ca42150c3b2906
+source-git-commit: 73c414ed636fea48c4c79a02e71d99fa8d16878f
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2103'
 ht-degree: 10%
 
 ---
@@ -79,7 +79,7 @@ Consulta le risorse di supporto autonomo su come configurare e distribuire in AE
    * [Backup e ripristino](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en)
 
 >[!TIP]
-> Vedi l&#39;esercitazione su come [distribuire WKND ad Experience Manager Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html?lang=en)
+> Vedi l&#39;esercitazione su come [distribuire WKND ad Experience Manager Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ### Aiuto e risorse
 
