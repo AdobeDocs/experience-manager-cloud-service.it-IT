@@ -4,9 +4,9 @@ description: Segui questa pagina per scoprire come iniziare a utilizzare il perc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
+source-git-commit: ae7b9f45b0a50bf6816c85934997c7562718c2be
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '834'
 ht-degree: 2%
 
 ---
@@ -36,6 +36,17 @@ L&#39;onboarding è il processo durante il quale un [amministratore di sistema ]
 Il percorso di onboarding è illustrato di seguito e ogni fase del percorso è descritto in dettaglio nelle sezioni seguenti.
 
 ![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
+Questo percorso è progettato per un utente utente con privilegi di amministratore di sistema, in cui sono illustrati i requisiti, i passaggi e l&#39;approccio. Il percorso definisce gli utenti con cui l’amministratore di sistema deve interagire per il successo di un progetto, ma il punto di vista del percorso è quello di un amministratore.
+
+Di seguito sono riportati gli utenti tipo che interagiscono in questo percorso.
+
+| Persona | Descrizione | Ruolo nel Percorso |
+|---|---|---|
+| Amministratore di sistema | Fornisce il provisioning iniziale delle risorse cloud e l’assegnazione degli utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito alle quali ogni membro può accedere e accedere ai propri AEM come risorse di Cloud Service. | Gestisce tutti gli aspetti dei propri utenti, dall&#39;accesso alle autorizzazioni. |
+| AEM Author | Crea e rivede il contenuto (può essere di diversi tipi; ad esempio pagine, risorse, pubblicazioni) prima che venga pubblicato sul sito web. | Una volta concesse le autorizzazioni, è possibile avviare il percorso del proprio manager di distribuzione. |
+| Developer (Sviluppatore) | Ha esperienza nello sviluppo di applicazioni AEM che utilizzano contenuti provenienti da diverse fonti | Una volta concesse le autorizzazioni, può avviare il proprio percorso di sviluppatori |
+| Deployment Manager (Responsabile implementazione) | Aggiunge o aggiorna un ambiente, esegue qualsiasi pipeline e distribuisce il codice AEM ambiente o qualità del codice. | Una volta concesse le autorizzazioni, è possibile avviare il percorso del proprio manager di distribuzione. |
 
 ## Esplorazione del Percorso di onboarding {#exploring-onboarding-journey}
 
