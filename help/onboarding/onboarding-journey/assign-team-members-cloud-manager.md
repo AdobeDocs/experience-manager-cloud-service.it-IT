@@ -3,7 +3,7 @@ title: 'Assegnazione di membri del team ai profili di prodotto di Cloud Manager 
 description: Segui questa pagina per scoprire come assegnare i membri del team ai profili di prodotto di Cloud Manager
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
@@ -157,7 +157,7 @@ I seguenti passaggi ti guideranno attraverso questo:
 
 ## Novità {#whats-next}
 
-Hai appreso tre profili di prodotto Cloud Manager diversi, ad esempio Proprietario business, Manager distribuzione e Sviluppatore. Successivamente, hai assegnato i membri del team ai profili di prodotto di Cloud Manager, ad esempio Business Owner (Proprietario business), Deployment Manager (Gestore distribuzione) e Developer. È ora possibile continuare il percorso di onboarding esaminando il documento Setup Cloud Resources tramite Cloud Manager, dove verrà illustrato:
+Hai appreso tre profili di prodotto Cloud Manager diversi, ad esempio Proprietario business, Manager distribuzione e Sviluppatore. Successivamente, hai assegnato i membri del team ai profili di prodotto di Cloud Manager, ad esempio Business Owner (Proprietario business), Deployment Manager (Gestore distribuzione) e Developer. È ora possibile continuare il percorso di onboarding esaminando il documento [Configurazione delle risorse cloud tramite Cloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md) dove verrà illustrato:
 
 1. In qualità di amministratore di sistema assegnato al ruolo *Proprietario business* , devi accedere a Cloud Manager e accedervi.
 
