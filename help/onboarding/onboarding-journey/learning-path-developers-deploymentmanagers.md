@@ -2,9 +2,8 @@
 title: Percorso di apprendimento per sviluppatori e gestori di distribuzione
 description: Segui questa pagina per scoprire i passaggi successivi al recupero dell'accesso, se sei uno sviluppatore o un Deployment Manager
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 3%
