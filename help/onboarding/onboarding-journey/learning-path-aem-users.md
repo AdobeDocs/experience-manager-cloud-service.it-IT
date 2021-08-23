@@ -2,9 +2,8 @@
 title: Percorso di apprendimento per gli utenti AEM
 description: Segui questa pagina per scoprire i passaggi successivi al recupero dell’accesso, se sei un utente AEM
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: e4b0b026e72e3956503966cfc7a57b657501f0f8
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 3%
