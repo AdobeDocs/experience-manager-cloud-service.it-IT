@@ -3,7 +3,7 @@ title: Percorso di apprendimento per sviluppatori e gestori di distribuzione
 description: Segui questa pagina per scoprire i passaggi successivi al recupero dell'accesso, se sei uno sviluppatore o un Deployment Manager
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 3%
@@ -50,7 +50,7 @@ Per ulteriori informazioni su questo argomento, consulta [Configurazione della p
 
 ## Novità {#whats-next}
 
-I responsabili di sviluppo e distribuzione sono ora pronti a imparare a sviluppare il codice in AEM come Cloud Service. Ulteriori informazioni o ulteriori percorsi di apprendimento sono disponibili nella sezione Risorse aggiuntive di seguito. Per informazioni sul percorso di apprendimento per gli autori dei contenuti, consulta Percorso di apprendimento per gli autori di AEM.
+I responsabili di sviluppo e distribuzione sono ora pronti a imparare a sviluppare il codice in AEM come Cloud Service. Ulteriori informazioni o ulteriori percorsi di apprendimento sono disponibili nella sezione Risorse aggiuntive di seguito. Per informazioni sul percorso di apprendimento per gli autori dei contenuti, consulta [Percorso di apprendimento per gli autori AEM](/help/onboarding/onboarding-journey/learning-path-aem-users.md).
 
 ## Risorse aggiuntive {#additional-resources}
 
