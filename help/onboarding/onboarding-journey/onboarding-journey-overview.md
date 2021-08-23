@@ -3,7 +3,7 @@ title: Percorso di onboarding
 description: Segui questa pagina per scoprire come iniziare a utilizzare il percorso di onboarding
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 2%
@@ -64,4 +64,4 @@ Esplorerai molti argomenti in questo percorso. I seguenti articoli ti danno una 
 
 ## Novità {#what-is-next}
 
-È ora possibile iniziare a utilizzare il Percorso di onboarding. Ti invitiamo a passare alla parte successiva del percorso e a leggere l&#39;articolo Guida introduttiva al processo di onboarding.
+È ora possibile iniziare a utilizzare il Percorso di onboarding. Ti invitiamo a passare alla parte successiva del percorso e a leggere l&#39;articolo [Inizia con il processo di onboarding](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md).
