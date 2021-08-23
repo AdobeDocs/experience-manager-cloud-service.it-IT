@@ -3,7 +3,7 @@ title: Guida introduttiva al processo di onboarding
 description: Segui questa pagina per scoprire come iniziare a utilizzare il percorso di onboarding
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -66,5 +66,5 @@ Segui i passaggi seguenti per passare ad Admin Console ed esaminare il ruolo di 
 
 ## Novità {#whats-next}
 
-Dopo aver effettuato l’accesso ad Admin Console e aver controllato il profilo come amministratore di sistema, è necessario continuare il percorso di onboarding esaminando il documento Assegnazione di membri del team ai profili di prodotto di Cloud Manager.
+Ora, dopo aver effettuato l’accesso ad Admin Console e aver controllato il profilo come amministratore di sistema, dovresti continuare il percorso di onboarding esaminando il documento [Assegna membri del team ai profili di prodotto di Cloud Manager](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md).
 
