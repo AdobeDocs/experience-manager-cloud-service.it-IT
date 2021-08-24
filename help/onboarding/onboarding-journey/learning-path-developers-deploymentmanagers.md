@@ -3,10 +3,10 @@ title: Percorso di apprendimento per sviluppatori e gestori di distribuzione
 description: Segui questa pagina per scoprire i passaggi successivi al recupero dell'accesso, se sei uno sviluppatore o un Deployment Manager
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 3%
+source-wordcount: '467'
+ht-degree: 2%
 
 ---
 
@@ -68,9 +68,3 @@ I responsabili di sviluppo e distribuzione sono ora pronti a imparare a sviluppa
 
 * [Guida introduttiva AEM editor di SPA per sviluppatori](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
-### Corsi di Experience League {#experience-league-courses}
-
-* Siti tradizionali
-* Editor SPA
-* Senza testa
-* Commerce
