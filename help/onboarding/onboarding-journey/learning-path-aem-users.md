@@ -3,9 +3,9 @@ title: Percorso di apprendimento per gli utenti AEM
 description: Segui questa pagina per scoprire i passaggi successivi al recupero dell’accesso, se sei un utente AEM
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '383'
 ht-degree: 3%
 
 ---
@@ -34,11 +34,24 @@ L’amministratore di sistema deve aver completato tutti i passaggi necessari e 
 
 ## Accedi all’autore {#login-author}
 
-Per accedere a Author è necessario attenersi ai seguenti passaggi:
+Segui i passaggi riportati di seguito per accedere a Author:
 
-1. Segui questi passaggi per passare a Cloud Manager. In alternativa, puoi accedere direttamente a Cloud Manager e accedervi.
+1. Passa direttamente a [Adobe Experience Cloud](https://experience.adobe.com) e accedi utilizzando il tuo Adobe ID.
+
+1. Dalla home page di Adobe Experience Cloud, seleziona **Experience Manager**.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
+
+1. Verrà visualizzata la home page di AEM. Da qui, avvia **Cloud Manager** .
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
+
+   >[!IMPORTANT]
+   >In alternativa, puoi anche accedere direttamente alla pagina di accesso di Cloud Manager da [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Aggiungi un segnalibro a questa pagina per riferimenti futuri e per aiutarti a passare direttamente alla pagina di destinazione di Cloud Manager.
 
 1. Dalla pagina **Panoramica** in Cloud Manager, fai clic sul collegamento dell’autore dalla scheda **Ambienti** .
+
+   ![](/help/onboarding/onboarding-journey/assets/author-environ.png)
 
 1. Viene aperta una nuova scheda che consente di accedere all’ambiente di authoring tramite Adobe ID.
 
