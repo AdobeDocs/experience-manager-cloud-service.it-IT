@@ -1,9 +1,9 @@
 ---
 title: Installazione e configurazione dei lettori in Screens come Cloud Service
 description: Questa pagina descrive come installare e configurare i lettori in Screens come Cloud Service.
-source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
+source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 1%
 
 ---
@@ -49,11 +49,11 @@ Il lettore riporta varie metriche di riproduzione con ciascuna `ping` che per im
 
 Il monitoraggio della riproduzione di base in un lettore AEM Screens consente di:
 
-* Monitorare in remoto se un lettore riproduce correttamente il contenuto
+* Monitoraggio remoto, se un lettore riproduce correttamente il contenuto.
 
-* Migliorare la reattività alle schermate vuote o alle esperienze interrotte nel campo
+* Migliorare la reattività alle schermate vuote o alle esperienze interrotte nel campo .
 
-* Riduci il rischio di mostrare all’utente finale un’esperienza non funzionante
+* Riduce il rischio di mostrare all’utente finale un’esperienza non funzionante.
 
 ### Informazioni sulle proprietà {#understand-properties}
 
@@ -78,11 +78,11 @@ Le seguenti proprietà sono incluse in ogni `ping`:
 
 Di seguito sono elencate alcune limitazioni al monitoraggio della riproduzione di base:
 
-* Poiché il lettore riporta il proprio stato di riproduzione al server, è necessaria una connessione attiva.
+* Il lettore segnala il proprio stato di riproduzione al server, quindi richiede una connessione attiva.
 
 * La proprietà `isContentRendering` che controlla che la GPU sia attualmente ad uso intensivo di risorse, deve essere abilitata per impostazione predefinita e richiede un esplicito consenso alle preferenze del lettore. Si consiglia di non utilizzarlo in combinazione con i video.
 
-* Supportato per i canali di sequenza.
+* Questa funzione è supportata per i canali a sequenza.
 
 ## Novità {#whats-next}
 
