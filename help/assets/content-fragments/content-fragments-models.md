@@ -1,12 +1,12 @@
 ---
 title: Modelli per frammenti di contenuto
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuto strutturato.
-feature: Frammenti di contenuto
+feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f2ddd93d9a6f8e17dc0eb75ee5adab4354249091
+source-git-commit: c82fdc8245846c4fa5daff898aec109579acc2fc
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2256'
 ht-degree: 7%
 
 ---
@@ -213,7 +213,6 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 AEM ha una protezione di ricorrenza per:
 * Riferimenti contenuto
 Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Questo può causare una finestra di dialogo vuota del selettore dei riferimenti ai frammenti.
-
 * Riferimenti a frammenti in GraphQL
 Se crei una query profonda che restituisce più frammenti di contenuto a cui fanno riferimento l’uno dall’altro, alla prima occorrenza restituirà null.
 
@@ -284,6 +283,16 @@ PathSpecifica un percorso principale per tutti i frammenti a cui viene fatto rif
 >[!NOTE]
 È in vigore un meccanismo di protezione contro la recidiva. Non consente all’utente di selezionare il frammento di contenuto corrente nel riferimento al frammento. Questo può causare una finestra di dialogo vuota del selettore dei riferimenti ai frammenti.
 In GraphQL è inoltre disponibile una protezione di ricorrenza per i riferimenti ai frammenti. Se crei una query approfondita tra due frammenti di contenuto che si riferiscono l’uno all’altro, restituirà null.
+
+## Modello frammento di contenuto - Proprietà {#content-fragment-model-properties}
+
+Puoi modificare le **Proprietà** di un modello di frammento di contenuto:
+
+* **Base**
+   * **Titolo modello**
+   * **Tag**
+   * **Descrizione**
+   * **Carica immagine**
 
 ## Abilitazione o disabilitazione di un modello di frammento di contenuto {#enabling-disabling-a-content-fragment-model}
 
@@ -402,12 +411,28 @@ Per annullare la pubblicazione di un modello di frammento di contenuto:
 1. Seleziona il modello, seguito da **Annulla pubblicazione** nella barra degli strumenti.
 Lo stato di pubblicazione sarà indicato nella console.
 
-## Modello frammento di contenuto - Proprietà {#content-fragment-model-properties}
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-Puoi modificare le **Proprietà** di un modello di frammento di contenuto:
+This feature provides governance for Content Fragment Models that have been published. 
 
-* **Base**
-   * **Titolo modello**
-   * **Tag**
-   * **Descrizione**
-   * **Carica immagine**
+The challenge:
+
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+
+The solution:
+
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->

@@ -2,12 +2,12 @@
 title: Formati di file e tipi MIME supportati
 description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come a [!DNL Cloud Service].
 contentOwner: AG
-feature: Gestione risorse, rappresentazioni
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
+source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '792'
 ht-degree: 10%
 
 ---
@@ -159,7 +159,7 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 | PPTX | . | . | . | . | . |
 | PS | - | - | . | - | - |
 | RTF | - | . | - | . | . |
-| TXT | - | . | - | . | . |
+| TXT | . | . | - | . | . |
 | XLS | - | - | - | . | . |
 | XLSX | . | . | . | . | . |
 | XML | - | . | - | - | - |
@@ -228,5 +228,5 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 >[!MORELIKETHIS]
 >
 >* [Elaborazione delle risorse tramite i microservizi per le risorse](asset-microservices-overview.md)
-* [Formati di file supportati per l’assegnazione di tag avanzati alle risorse basate su testo](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Formati di file supportati per l’assegnazione di tag avanzati alle risorse basate su testo](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
