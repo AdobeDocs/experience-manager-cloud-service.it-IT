@@ -1,9 +1,9 @@
 ---
 title: Installazione e configurazione dei lettori in Screens come Cloud Service
 description: Questa pagina descrive come installare e configurare i lettori in Screens come Cloud Service.
-source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
+source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -74,6 +74,15 @@ Le seguenti proprietà sono incluse in ogni `ping`:
 >|—|—|
 >|isContentRendering {boolean}|true se la GPU può confermare che sta riproducendo il contenuto effettivo (in base all&#39;analisi dei pixel)|
 
+### Limitazioni  {#limitations}
+
+Di seguito sono elencate alcune limitazioni al monitoraggio della riproduzione di base:
+
+* Poiché il lettore riporta il proprio stato di riproduzione al server, è necessaria una connessione attiva.
+
+* La proprietà `isContentRendering` che controlla che la GPU sia attualmente ad uso intensivo di risorse, deve essere abilitata per impostazione predefinita e richiede un esplicito consenso alle preferenze del lettore. Si consiglia di non utilizzarlo in combinazione con i video.
+
+* Supportato per i canali di sequenza.
 
 ## Novità {#whats-next}
 
