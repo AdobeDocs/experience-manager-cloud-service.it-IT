@@ -3,9 +3,9 @@ title: Supporto delle miniature per video in Screens come Cloud Service
 description: Questa pagina descrive come aggiungere al Cloud Service il supporto per le miniature per i video in Screens.
 hide: true
 index: false
-source-git-commit: ea96e811c0164e3cc7d323e734c1617d3c0e9308
+source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,21 @@ Per usare le miniature nei video, effettua le seguenti operazioni:
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Modifica le proprietà del componente video.
+1. Seleziona il video e fai clic sull&#39;icona *chiave inglese* per aprire le proprietà del video.
 
-1. Trascina un’immagine dal selettore delle risorse nella zona di rilascio Miniatura .
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. Visualizza l&#39;anteprima del canale.
+1. Viene visualizzata la finestra di dialogo **Video** in cui viene visualizzata la zona di rilascio **Miniatura**.
 
-1. Se un video è impostato sul componente, il video verrà riprodotto. In caso contrario, e la miniatura è impostata, la miniatura viene riprodotta. In caso contrario, il componente viene considerato non configurato e verrà ignorato
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+
+1. Trascina e rilascia un’immagine dal selettore delle risorse nella zona di rilascio **Miniatura** e fai clic su **Fine**.
+
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. Fai clic su **Anteprima**.
+
+1. Se un video è impostato sul componente, il video verrà riprodotto. In caso contrario, e la miniatura è impostata, la miniatura viene riprodotta. In caso contrario, il componente viene considerato non configurato e verrà ignorato.
 
 ## Casi d&#39;uso supportati quando si utilizza la miniatura nei video {#understand-use-case}
 
