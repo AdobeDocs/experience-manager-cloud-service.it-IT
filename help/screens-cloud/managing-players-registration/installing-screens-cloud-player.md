@@ -1,9 +1,9 @@
 ---
 title: Installazione e configurazione dei lettori in Screens come Cloud Service
 description: Questa pagina descrive come installare e configurare i lettori in Screens come Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,38 @@ Per aggiornare il lettore, effettua le seguenti operazioni:
    ![immagine](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Fai clic su **Conferma** per annullare la registrazione del lettore quando si passa alla modalità cloud.
+
+## Monitoraggio della riproduzione di base {#playback-monitoring}
+
+Il lettore riporta varie metriche di riproduzione con ciascuna `ping` che per impostazione predefinita corrisponde a 30 secondi. In base alle metriche, puoi rilevare vari casi edge come esperienza bloccata, schermata vuota e problemi di pianificazione. Questo consente di comprendere e risolvere i problemi del dispositivo, e quindi di accelerare un&#39;indagine e le misure correttive.
+
+Il monitoraggio della riproduzione di base in un lettore AEM Screens consente di:
+
+* Monitorare in remoto se un lettore riproduce correttamente il contenuto
+
+* Migliorare la reattività alle schermate vuote o alle esperienze interrotte nel campo
+
+* Riduci il rischio di mostrare all’utente finale un’esperienza non funzionante
+
+### Informazioni sulle proprietà {#understand-properties}
+
+Le seguenti proprietà sono incluse in ogni `ping`:
+
+| Proprietà | Descrizione |
+|---|---|
+| id {string} | identificatore del lettore |
+| activeChannel {string} | in corso la riproduzione del percorso del canale, o null se non è pianificato nulla |
+| activeElements {string} | stringa separata da virgole, elementi attualmente visibili in tutti i canali di riproduzione a sequenza (multipli in caso di layout a più zone) |
+| isDefaultContent {boolean} | true se il canale di riproduzione è considerato un canale predefinito o di fallback (ovvero, ha priorità 1 e nessuna pianificazione) |
+| hasContentChanged {boolean} | true se il contenuto è cambiato negli ultimi 5 minuti, false in caso contrario |
+| lastContentChange {string} | timestamp dell’ultima modifica del contenuto |
+
+>[!NOTE]
+>Facoltativamente, è possibile abilitare una proprietà più avanzata dalle preferenze del lettore (Abilita monitoraggio riproduzione), ovvero:
+>|Proprietà|Descrizione|
+>|—|—|
+>|isContentRendering {boolean}|true se la GPU può confermare che sta riproducendo il contenuto effettivo (in base all&#39;analisi dei pixel)|
+
 
 ## Novità {#whats-next}
 
