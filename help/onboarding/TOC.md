@@ -1,14 +1,14 @@
 ---
-sub-product: Onboarding per AEM as a Cloud Service
+sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: Onboarding per AEM as a Cloud Service
 breadcrumb-title: Guida all’onboarding
 user-guide-description: Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati.
-feature: Distribuzione
+feature: Deploying
 role: Architect, Developer
-source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
+source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 47%
+source-wordcount: '100'
+ht-degree: 50%
 
 ---
 
@@ -30,5 +30,3 @@ ht-degree: 47%
    + [Attività amministratore di sistema](what-is-required/add-users-assign-cm-roles.md)
    + [Passa a Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
    + [Consentire agli utenti di accedere a un&#39;istanza AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
-+ Metodologia di migrazione {#migration-methodology}
-   + [Migrazione ad Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
