@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
+source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1197'
 ht-degree: 2%
 
 ---
@@ -90,24 +90,6 @@ Puoi scrivere su [!DNL formscsbeta@adobe.com] per iscriverti al programma beta.
 * **Analytics per Forms** adattivo: È ora possibile acquisire e tenere traccia del comportamento dell’utente finale tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni sull’utente finale. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza dell’utente finale.
 
 * **Collega facilmente AEM Forms con Microsoft Dynamics e Salesforce.com**: Il servizio fornisce modelli di dati e configurazione dell’origine dati preconfigurati per Microsoft Dynamics e Salesforce.com, consentendo agli sviluppatori di configurare Microsoft Dynamics e Salesforce.com come origini dati per un modulo [ adattivo in modo ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html)più rapido e semplice.
-
-## [!DNL Screens] come  [!DNL Cloud Service] {#screens}
-
-### Novità {#what-is-new-screens}
-
-* In qualità di autore del contenuto, ora puoi definire una miniatura per i video in modo da poter utilizzare l’immagine come segnaposto e testare correttamente la riproduzione e il targeting del contenuto, mentre il video effettivo è in fase di finalizzazione da parte del team appropriato.
-Per ulteriori informazioni, consulta [Monitoraggio di base della riproduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) .
-
-* Supporto delle miniature per i video in ora supportato in Screens come Cloud Service. Un autore di contenuti può definire una miniatura per i video in modo che l’immagine possa essere utilizzata come segnaposto e possa testare correttamente la riproduzione e il targeting del contenuto, mentre il video effettivo viene finalizzato dal team appropriato. L&#39;immagine può anche essere utilizzata, nel caso in cui la riproduzione del video non riesca.
-
-### Correzioni di bug {#bug-fixes-screens}
-
-* Impossibile visualizzare il contenuto dalla pagina incorporata. Il problema è stato risolto.
-
-* Dopo l&#39;accesso, passare alla pagina (canali) predefinita è finita in una pagina di errore del server interno.
-
-* Le voci di tag associate non sono state rimosse durante la rimozione delle playlist.
-
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 
