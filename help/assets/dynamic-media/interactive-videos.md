@@ -1,12 +1,12 @@
 ---
 title: Video interattivi
 description: Scopri come lavorare con video interattivi e video acquistabili in Dynamic Media.
-feature: Video interattivi
+feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '5941'
+source-wordcount: '5938'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ Per visualizzare un video interattivo e acquistabile in azione, seleziona [Live 
 
 * Durante la riproduzione, quando i prodotti vengono utilizzati nel video, il prodotto identico viene visualizzato a destra come immagine in miniatura.
 
-* Per mettere in pausa il video e aprire la visualizzazione rapida del prodotto, seleziona la miniatura. Ad esempio, selezionare l&#39;immagine di anteprima di KitchenAid nel video per vedere una rotazione a 360 gradi del mixer, oppure ingrandirla per vedere i dettagli del mixer.
+* Per mettere in pausa il video e aprire la visualizzazione rapida del prodotto, seleziona la miniatura. Ad esempio, selezionare l&#39;immagine in miniatura di KitchenAid nel video per vedere una rotazione a 360° del mixer, oppure ingrandirla per vedere i dettagli del mixer.
 
 Vedere anche [Utilizzare video interattivi con Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
 
@@ -99,8 +99,7 @@ Se utilizzi un WCM di terze parti (Web Content Manager), devi integrare il nuovo
 >* La tua implementazione di Experience Manager *non* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in Experience Manager da qualsiasi soluzione eCommerce come IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
 >
->
-Se l’implementazione di Experience Manager utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
+>Se l’implementazione di Experience Manager utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
 
 Per iniziare, identifica le variabili dinamiche utilizzate dall’implementazione di Quickview esistente in modo da poter mappare le miniature dei prodotti sul prodotto corrispondente Quickview durante il processo di creazione di video interattivo.
 

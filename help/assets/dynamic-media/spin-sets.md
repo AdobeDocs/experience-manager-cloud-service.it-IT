@@ -1,12 +1,12 @@
 ---
 title: Set 360 gradi
 description: Scopri come utilizzare i set 360 gradi in Dynamic Media.
-feature: Set 360 gradi
+feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1815'
 ht-degree: 9%
 
 ---
@@ -103,7 +103,7 @@ Questa sezione descrive come creare i set 360 gradi.
 
 >[!NOTE]
 >
->L&#39;ordine in cui le immagini appaiono in un set 360 gradi ha importanza. Assicurati di ordinarli in modo che la rotazione sia una vista a 360 gradi liscia.
+>L&#39;ordine in cui le immagini appaiono in un set 360 gradi ha importanza. Assicurati di ordinarli in modo che la rotazione sia una vista a 360° liscia.
 
 **Per creare dei set 360 gradi:**
 
