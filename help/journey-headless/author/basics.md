@@ -4,9 +4,9 @@ description: Scopri i concetti e le modalità di creazione dei contenuti per i C
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: d925333421b4a9ec1e2a7c553b43e042bb1e6fbe
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1693'
 ht-degree: 3%
 
 ---
@@ -73,7 +73,7 @@ All’interno della console è possibile selezionare le cartelle per passare al 
 
 La console **Risorse** dispone di **Barre degli strumenti delle azioni** dedicate e **Azioni rapide** utilizzabili dopo aver selezionato una risorsa (ad esempio, una cartella o un frammento di contenuto).
 
-Le Azioni rapide sono disponibili per una singola risorsa:
+Le Azioni rapide sono disponibili per una singola risorsa, vedi **Basilea** nell&#39;esempio seguente:
 
 ![Azioni rapide ](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,7 +101,7 @@ A meno che non siano disponibili pochissimi frammenti di contenuto, è consiglia
 
 #### Creazione di una cartella {#creating-folder}
 
-Per farlo, crea una serie di cartelle all’interno della sezione **File** della console Assets. Seleziona l&#39;opzione **Crea** (in alto a destra), seguita da **Crea cartella**:
+Per farlo, crea una serie di cartelle all’interno della sezione **File** della console Assets. Seleziona l&#39;opzione **Crea** (in alto a destra), seguita da **Cartella**:
 
 ![Opzione Crea cartella](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -113,7 +113,7 @@ Viene visualizzata una finestra di dialogo in cui puoi inserire i dettagli, quin
 
 Questa sezione è leggermente più avanzata. Non ne hai veramente bisogno se stai solo iniziando a provare le cose, ma è molto *molto* utile quando hai molti frammenti. Quindi è bene sapere - anche se non lo usi ancora abbastanza.
 
-L’architetto di contenuti avrà creato tutti i modelli di frammento di contenuto necessari per il progetto corrente e forse anche altri progetti. Per facilitare la lettura degli autori, puoi limitare l’elenco dei modelli disponibili per una cartella specifica.
+L’architetto di contenuti avrà creato tutti i modelli di frammento di contenuto necessari per il progetto corrente e forse anche altri progetti. Per semplificare le cose a te stesso e agli altri autori, puoi limitare l’elenco dei modelli disponibili per una cartella specifica.
 
 Dopo aver creato la cartella è possibile aprire la cartella **Proprietà**. Qui ci sono varie schede con informazioni, e dettagli di configurazione, sulla cartella. In particolare per Frammenti di contenuto, puoi utilizzare la scheda **Criteri** per definire percorsi e/o tag specifici per questa cartella. Questo limita i modelli di frammento di contenuto disponibili per l’utilizzo nella cartella, poiché i modelli di frammento di contenuto devono soddisfare questi requisiti prima di poter essere utilizzati per generare frammenti in questa cartella.
 
@@ -147,7 +147,7 @@ Questa volta si apre una procedura guidata. Il primo passaggio consiste nel sele
 
 ![Crea frammento di contenuto - seleziona Modello](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Dopo aver continuato con **Avanti** è possibile fornire i dettagli del frammento:
+Dopo aver continuato con **Avanti** è possibile fornire i dettagli (**Base** e **Avanzate**) per il frammento:
 
 ![Crea frammento di contenuto - specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
