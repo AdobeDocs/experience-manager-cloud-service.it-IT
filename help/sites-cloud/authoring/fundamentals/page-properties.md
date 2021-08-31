@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 59%
+source-wordcount: '1955'
+ht-degree: 58%
 
 ---
 
@@ -55,11 +55,14 @@ Le proprietà sono distribuite su più schede.
 
 * **Ora di attivazione/disattivazione**
 
-   * **Ora di attivazione** : la data e l’ora in cui la pagina pubblicata verrà resa visibile (resa) nell’ambiente di pubblicazione. La pagina deve essere pubblicata, manualmente o tramite replica automatica preconfigurata.
+   >[!NOTE]
+   >
+   > Per informazioni dettagliate su come configurare la relativa replica automatica, consulta [Tempi di attivazione e disattivazione - Configurazione trigger](/help/operations/replication.md#on-and-off-times-trigger-configuration) .
 
-      >[!NOTE]
-      >
-      > Per informazioni dettagliate su come configurare la relativa replica automatica, consulta [Tempi di attivazione e disattivazione - Configurazione trigger](/help/operations/replication.md#on-and-off-times-trigger-configuration) .
+   >[!NOTE]
+   >Se il **On Time** o **Off Time** è in passato e la replica automatica è configurata, l&#39;azione pertinente verrà attivata immediatamente.
+
+   * **Ora di attivazione** : la data e l’ora in cui la pagina pubblicata verrà resa visibile (resa) nell’ambiente di pubblicazione. La pagina deve essere pubblicata, manualmente o tramite replica automatica preconfigurata.
 
       * Se la pagina è già stata [pubblicata (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), rimarrà inattiva (nascosta) fino al rendering alla data e all’ora specificate.
       * Se non viene pubblicata e configurata per la replica automatica, la pagina verrà pubblicata automaticamente e quindi sottoposta a rendering al momento specificato.
@@ -87,8 +90,6 @@ Le proprietà sono distribuite su più schede.
       * Tocca o fai di nuovo clic per aggiungere più elementi.
       * Tocca o fai clic sull’icona **Rimuovi** per eliminare l’URL personalizzato.
    * **Reindirizza URL personalizzato** : indica se desideri che la pagina utilizzi l’URL personalizzato.
-
-
 
 
 ### Avanzate  {#advanced}
