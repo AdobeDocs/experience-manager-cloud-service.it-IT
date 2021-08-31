@@ -4,9 +4,9 @@ description: Segui questa pagina per scoprire come iniziare a utilizzare il perc
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,12 @@ Segui i passaggi seguenti per passare ad Admin Console ed esaminare il ruolo di 
 >[!NOTE]
 >È necessario essere un amministratore di sistema per completare i seguenti passaggi con successo.
 
-1. Fai clic su **Inizia** dal messaggio e-mail di benvenuto per accedere all’Admin Console o per passare direttamente all’Admin Console da [qui](https://adminconsole.adobe.com).
+1. Fai clic su **Inizia** dal messaggio e-mail di benvenuto, come illustrato nella figura seguente, per passare all&#39;Admin Console o per passare direttamente all&#39;Admin Console da [qui](https://adminconsole.adobe.com).
 
    >[!NOTE]
    >In qualità di amministratore di sistema riceverai più e-mail. Cerca l&#39;e-mail di benvenuto che ti fornisce le informazioni sul nome dell&#39;organizzazione a cui ti è stato concesso l&#39;accesso e fai clic su **Inizia**. Se non riesci a trovare l’e-mail, passa direttamente a [Admin Console](https://adminconsole.adobe.com/).
+
+   ![](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Accedi utilizzando il tuo [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Dopo l’accesso, verrà visualizzata la pagina **Panoramica** di Adobe Admin Console, come mostrato di seguito.
 
