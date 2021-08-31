@@ -3,9 +3,9 @@ sub-product: Onboarding Journey
 user-guide-title: Percorso di onboarding
 breadcrumb-title: Percorso di onboarding
 user-guide-description: Iniziare qui per un percorso guidato progettato per un utente utente tipo amministratore di sistema, in cui sono illustrati i requisiti, i passaggi e l'approccio. Il percorso definisce gli utenti con cui l’amministratore di sistema deve interagire per il successo di un progetto, ma il punto di vista del percorso è quello di un amministratore.
-feature: Developer Tools
+feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
