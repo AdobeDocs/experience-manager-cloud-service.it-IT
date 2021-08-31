@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Linee guida per lo sviluppo per AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
+source-git-commit: bacc6335e25387933a1d39dba10c4cc930a71cdb
 workflow-type: tm+mt
-source-wordcount: '2322'
+source-wordcount: '2375'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Se è necessario identificare il principale nel cluster, l&#39;API Sling Discove
 
 Lo stato non deve essere mantenuto in memoria ma mantenuto nell&#39;archivio. In caso contrario, questo stato potrebbe andare perso se un&#39;istanza viene arrestata.
 
-## Stato del file system {#state-on-the-filesystem}
+## Stato del filesystem {#state-on-the-filesystem}
 
 Il file system dell&#39;istanza non deve essere utilizzato in AEM come Cloud Service. Il disco è effimero e verrà eliminato quando le istanze vengono riciclate. L&#39;uso limitato del filesystem per l&#39;archiviazione temporanea in relazione all&#39;elaborazione di singole richieste è possibile, ma non deve essere abusato per file enormi. Questo perché potrebbe avere un impatto negativo sulla quota di utilizzo delle risorse ed essere sottoposto a limitazioni del disco.
 
@@ -37,7 +37,7 @@ Ad esempio, quando l’utilizzo del file system non è supportato, il livello di
 
 Simile, con tutto ciò che accade in modo asincrono come agire sugli eventi di osservazione, non può essere garantito di essere eseguito localmente e quindi deve essere utilizzato con cura. Questo vale sia per gli eventi JCR che per gli eventi di risorse Sling. Al momento in cui si verifica un cambiamento, l’istanza può essere rimossa e sostituita da un’istanza diversa. Altre istanze nella topologia che sono attive in quel momento saranno in grado di reagire a quell&#39;evento. In questo caso, tuttavia, non si tratterà di un evento locale e potrebbe persino non esserci un leader attivo in caso di elezioni di leader in corso al momento dell&#39;evento.
 
-## Attività in background e processi a esecuzione lunga {#background-tasks-and-long-running-jobs}
+## Attività in background e processi con esecuzione lunga {#background-tasks-and-long-running-jobs}
 
 Il codice eseguito come attività in background deve presupporre che l&#39;istanza in cui è in esecuzione possa essere disattivata in qualsiasi momento. Pertanto, il codice deve essere resiliente e la maggior parte delle importazioni deve essere ripristinabile. Ciò significa che, se il codice viene rieseguito, non dovrebbe ricominciare dall&#39;inizio ma piuttosto essere vicino a dove è stato disattivato. Anche se questo non è un nuovo requisito per questo tipo di codice, in AEM come Cloud Service è più probabile che si verifichi una rimozione dell&#39;istanza.
 
@@ -59,7 +59,7 @@ Le alternative che funzionano, ma che possono richiedere di fornire la dipendenz
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)  (non consigliato in quanto è obsoleto e sostituito dalla versione 4.x)
 * [OK Http](https://square.github.io/okhttp/)  (non fornito da AEM)
 
-## Nessuna personalizzazione dell&#39;interfaccia classica {#no-classic-ui-customizations}
+## Nessuna personalizzazione dell’interfaccia classica {#no-classic-ui-customizations}
 
 AEM come Cloud Service supporta solo l’interfaccia utente touch per il codice cliente di terze parti. Interfaccia classica non disponibile per la personalizzazione.
 
@@ -169,7 +169,7 @@ I clienti non avranno accesso agli strumenti per sviluppatori per gli ambienti d
 
 L&#39;Adobe monitora le prestazioni delle applicazioni e adotta misure per risolvere il problema se si osserva un deterioramento. Al momento, le metriche dell’applicazione non possono essere osservate.
 
-## Indirizzo IP dedicato {#dedicated-egress-ip-address}
+## Indirizzo IP Egress dedicato {#dedicated-egress-ip-address}
 
 Su richiesta, AEM come Cloud Service fornirà un indirizzo IP statico e dedicato per il traffico in uscita HTTP (porta 80) e HTTPS (porta 443) programmato nel codice Java.
 
@@ -189,7 +189,7 @@ La funzione è compatibile con il codice Java o con le librerie che generano tra
 
 Di seguito è riportato un esempio di codice:
 
-```
+```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
   String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
   URL finalUrl = endpointUri.resolve(relativeUri).toURL();
@@ -200,6 +200,26 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
   try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
     return new JSONObject(new JSONTokener(responseReader));
   }
+}
+```
+
+Alcune librerie richiedono una configurazione esplicita per utilizzare le proprietà standard del sistema Java per le configurazioni proxy.
+
+Un esempio che utilizza Apache HttpClient, che richiede chiamate esplicite a
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) o utilizza
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
 }
 ```
 
@@ -256,6 +276,6 @@ Se la porta 587 è stata richiesta (consentita solo se il server di posta non su
 
 La proprietà `smtp.starttls` viene impostata automaticamente da AEM come Cloud Service in fase di esecuzione su un valore appropriato. Pertanto, se `smtp.tls` è impostato su true, `smtp.startls` viene ignorato. Se `smtp.ssl` è impostato su false, `smtp.starttls` è impostato su true. Questo è indipendentemente dai valori `smtp.starttls` impostati nella configurazione OSGI.
 
-## [!DNL Assets] Linee guida per lo sviluppo e casi d’uso  {#use-cases-assets}
+## [!DNL Assets] Linee guida per lo sviluppo e casi d’uso {#use-cases-assets}
 
 Per informazioni sui casi d’uso, le raccomandazioni e i materiali di riferimento per Assets as a Cloud Service, consulta [Riferimenti per sviluppatori per Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
