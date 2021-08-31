@@ -4,7 +4,7 @@ description: Segui questa pagina per scoprire come iniziare a utilizzare il perc
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
+source-git-commit: 533e6cb780f908cfa4a30831bab7b80174872f24
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
