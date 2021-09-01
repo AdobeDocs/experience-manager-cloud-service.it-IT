@@ -1,10 +1,10 @@
 ---
 title: Traduci contenuto
 description: Utilizza il connettore di traduzione e le regole per tradurre i contenuti headless.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '2174'
 ht-degree: 0%

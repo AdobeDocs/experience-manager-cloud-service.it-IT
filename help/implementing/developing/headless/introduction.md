@@ -2,10 +2,10 @@
 title: Sviluppo headless per AEM Sites as a Cloud Service
 description: Scopri come AEM potenti funzionalità headless del Cloud Service come Modelli di contenuto, Frammenti di contenuto e API GraphQL collaborano per consentire di gestire le esperienze a livello centrale e distribuirle tra i vari canali.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 2%
+source-wordcount: '515'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ L’implementazione headless dimentica la gestione di pagine e componenti come a
 
 ![Modelli di implementazione AEM](assets/aem-implementation-models.png)
 
-## Confronto tra headful e headless {#headful-headless}
+## Confronto headful e Headless {#headful-headless}
 
 Questo documento si concentra sul modello di implementazione senza testa di AEM completo. Tuttavia headful contro headless non deve essere una scelta binaria in AEM. Le funzioni headless consentono di gestire e distribuire i contenuti a diversi endpoint, consentendo agli autori di contenuti di modificare applicazioni a pagina singola. Tutto in AEM.
 
@@ -30,7 +30,7 @@ Questo documento si concentra sul modello di implementazione senza testa di AEM 
 >
 >Per ulteriori informazioni, consulta il documento [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) .
 
-## AEM come Cloud Service e headless {#aem-headless}
+## AEM come Cloud Service e senza testa {#aem-headless}
 
 AEM come Cloud Service è uno strumento flessibile per il modello di implementazione headless offrendo tre potenti servizi:
 
@@ -47,12 +47,12 @@ AEM come Cloud Service è uno strumento flessibile per il modello di implementaz
    * L’API REST di AEM Assets supporta le operazioni CRUD relative ai frammenti di contenuto.
    * La consegna diretta del contenuto è possibile anche con l&#39;esportazione JSON del componente core [Frammento di contenuto .](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
-## I primi passi con AEM senza testa {#first-steps}
+## I tuoi primi passi con AEM senza testa {#first-steps}
 
 Sono disponibili numerose risorse per iniziare a utilizzare AEM funzionalità headless. Sono destinati a diversi casi d’uso, ma tutti offrono una panoramica solida delle AEM funzioni headless.
 
 | Risorsa | Descrizione | Tipo | Pubblico | Est Tempo |
 |---|---|---|---|---|
-| [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Per una panoramica completa delle AEM funzionalità headless dalla teoria dei headless attraverso il vivere con il tuo primo progetto headless, inizia qui. | Guida | Sviluppatori | 1 ora |
-| [Guida introduttiva a Headless](/help/implementing/developing/headless/getting-started/introduction.md) | Per un breve riepilogo delle funzioni principali AEM headless, consulta questa panoramica di avvio rapido. | Guida introduttiva | Sviluppatori e amministratori | 20 minuti |
-| [Guida introduttiva a AEM tutorial pratico headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | Se preferisci un approccio pratico, questa esercitazione si divide direttamente in creazione di un semplice progetto headless. | Esercitazione | Sviluppatori | 2 ore |
+| [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | **Per gli utenti nuovi a AEM e** headlesstechnology, inizia qui per un&#39;introduzione completa a AEM e le sue caratteristiche headless dalla teoria dei headless attraverso il vivere con il tuo primo progetto headless. | Guida | Sviluppatori **nuovi AEM e headless** | 1 ora |
+| [Guida introduttiva a Headless](/help/implementing/developing/headless/getting-started/introduction.md) | **Per** gli AEM esperti che necessitano di un breve riepilogo delle funzioni principali AEM headless, consulta questa panoramica di avvio rapido. | Guida introduttiva | Sviluppatori, amministratori **con AEM esperienza** | 20 minuti |
+| [Guida introduttiva a AEM tutorial pratico headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **Se preferisci un approccio pratico e conosci AEM**, questa esercitazione si divide direttamente in creazione di un semplice progetto headless. | Esercitazione | Sviluppatori | 2 ore |

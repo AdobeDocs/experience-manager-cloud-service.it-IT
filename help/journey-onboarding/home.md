@@ -1,10 +1,10 @@
 ---
 title: Percorso di onboarding
 description: Inizia qui per una panoramica del percorso di onboarding guidato disponibile per comprendere l’esperienza di onboarding.
-source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
+source-git-commit: 9cea7a8a7adf363b6b969a1a427ebf7ff473469b
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 2%
+source-wordcount: '462'
+ht-degree: 1%
 
 ---
 
@@ -24,6 +24,14 @@ Ciò significa:
 * Il team è configurato e dispone dell&#39;accesso alle risorse cloud,
 * Gli autori AEM avranno accesso a AEM come Cloud Service,
 * Gli sviluppatori AEM e i gestori di distribuzione avranno accesso a AEM come Cloud Service.
+
+## percorsi di documentazione AEM {#documentation-journeys}
+
+[Una Documentazione ](/help/journey-documentation/home.md) Journey unisce molti argomenti e funzionalità diversi e forse complicati, fornendo una narrazione che aiuta il lettore, che può essere nuovo a AEM, capire e risolvere un problema di business dall&#39;inizio alla fine, assumendo al contempo una conoscenza minima dell&#39;argomento precedente o AEM.
+
+I Percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback dai progetti dei clienti.
+
+Se desideri sapere come Adobe consiglia di come avviare la creazione di contenuti per il tuo team come applicazione di Cloud Service, ecco da dove iniziare!
 
 ## Pubblico {#audiences}
 

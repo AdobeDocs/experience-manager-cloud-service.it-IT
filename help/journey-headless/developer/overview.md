@@ -2,9 +2,9 @@
 title: AEM Percorso di sviluppatori headless
 description: Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle per il tuo primo progetto di sviluppo.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: d7d647e2114ed808ad29ed0802d838d257a9df03
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1201'
 ht-degree: 2%
 
 ---
@@ -15,11 +15,9 @@ Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionali
 
 ## Introduzione {#introduction}
 
-L’implementazione headless sta diventando sempre più importante per la distribuzione di esperienze al pubblico, ovunque si trovi e indipendentemente dal canale utilizzato.
-
 L’implementazione headless dimentica la gestione delle pagine e dei componenti come avviene nelle soluzioni stack complete e si concentra sulla creazione di frammenti di contenuto riutilizzabili e neutri per i canali e sulla loro distribuzione cross-channel. Si tratta di un modello di sviluppo moderno e dinamico per l&#39;implementazione delle esperienze digitali.
 
-Questa guida ti guida attraverso gli argomenti più importanti in modo che al termine:
+Questa guida ti guida attraverso gli argomenti di implementazione più headless in AEM, in modo che al momento del completamento:
 
 * Comprendi appieno cosa è la distribuzione di contenuti headless e i relativi vantaggi.
 * Scopri AEM funzioni headless e come funzionano insieme per offrire un’esperienza headless.
@@ -31,7 +29,7 @@ Questa guida ti guida attraverso gli argomenti più importanti in modo che al te
 
 I Percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback dai progetti dei clienti.
 
-Se si desidera sapere come Adobe consiglia di risolvere i casi aziendali headless con AEM, AEM Percorsi headless sono il punto di partenza.
+Se desideri sapere come Adobe consiglia di risolvere i casi aziendali headless con AEM, [AEM Percorsi headless](/help/journey-headless/home.md) sono i punti di partenza.
 
 >[!TIP]
 >
@@ -43,13 +41,12 @@ Questo percorso è progettato per l’utente tipo sviluppatore, esponendo i requ
 
 Di seguito sono riportati gli utenti tipo che interagiscono in questo percorso.
 
-| Persona | Descrizione | Ruolo nel Percorso |
+| Persona | Descrizione | Ruolo in questo Percorso |
 |---|---|---|
-| Developer (Sviluppatore) | Ha esperienza nello sviluppo di applicazioni headless che utilizzano contenuti provenienti da diverse fonti | Pubblico di destinazione di questo percorso |
+| Sviluppatore (pubblico target) | Ha esperienza nello sviluppo di applicazioni headless che utilizzano contenuti provenienti da diverse fonti | Pubblico di destinazione di questo percorso |
 | Autore del contenuto | Crea e gestisce contenuti distribuiti senza problemi | Gli autori dei contenuti creano contenuti che lo sviluppatore offre senza problemi. |
 | Administrator | Gestisce la configurazione e la configurazione di base di AEM | Lo sviluppatore collabora con l’amministratore per apportare le modifiche di configurazione necessarie per lo sviluppo. |
 | Architetto dei contenuti | Analizza i requisiti dei dati che devono essere consegnati senza problemi e definisce la struttura di tali dati | Gli sviluppatori lavorano con l’architetto dei contenuti per comprendere la struttura dei dati e i requisiti necessari per distribuirli senza problemi. |
-| Specialista di traduzione | Definisce il contenuto da tradurre e gestisce tali flussi di lavoro | Lo specialista di traduzione collabora con l&#39;architetto dei contenuti per definire l&#39;organizzazione iniziale dei contenuti e potrebbe avere bisogno di collaborare con lo sviluppatore per qualsiasi esigenza specifica di traduzione. |
 
 Le informazioni in questo percorso possono ovviamente essere utili a tutti gli utenti, ma alcune informazioni possono essere superflue a determinati ruoli. Rimani in sintonia con i [prossimi percorsi che coprono ruoli aggiuntivi.](/help/journey-documentation/home.md#journeys)
 

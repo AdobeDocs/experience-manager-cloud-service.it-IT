@@ -1,23 +1,29 @@
 ---
 title: Guida introduttiva a Headless
 description: Con questa guida rapida, scopri le nozioni di base di AEM come Cloud Service di potenti funzionalità headless come Modelli di contenuto, frammenti di contenuto e API GraphQL.
-source-git-commit: 8dc9bf522a9b1c750ae8c92659cc83b444cb3c94
+exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '308'
 ht-degree: 1%
 
 ---
 
-
 # Guida introduttiva a Headless {#introduction}
 
-Le guide introduttive headless forniscono un percorso semplice per creare, gestire e distribuire esperienze utilizzando AEM come Cloud Service in cinque passaggi. Ogni guida si basa sul precedente, quindi si consiglia di esplorarle in modo approfondito e in ordine.
+Le guide introduttive headless forniscono un percorso semplice per creare, gestire e distribuire esperienze utilizzando AEM come Cloud Service in cinque passaggi per gli utenti che hanno già familiarità con la tecnologia AEM e headless. Ogni guida si basa sul precedente, quindi si consiglia di esplorarle in modo approfondito e in ordine.
 
 1. [Creazione di una configurazione](create-configuration.md)
 1. [Creazione di un modello di frammento di contenuto](create-content-model.md)
 1. [Creazione di una cartella di risorse](create-assets-folder.md)
 1. [Creazione di un frammento di contenuto](create-content-fragment.md)
 1. [Accesso e distribuzione di frammenti di contenuto](create-api-request.md)
+
+>[!TIP]
+>
+>Questa guida introduttiva presuppone la conoscenza delle tecnologie AEM e headless.
+>
+>Se non sei nuovo a AEM o headless, fai riferimento ai nostri [Percorsi di documentazione headless](/help/journey-headless/home.md) per un&#39;introduzione end-to-end a headless e a come AEM lo supporta.
 
 ## Pubblico {#audience}
 

@@ -1,14 +1,14 @@
 ---
-sub-product: Implementazione per AEM as a Cloud Service
+sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementazione per AEM as a Cloud Service
 breadcrumb-title: Guida all’implementazione
 user-guide-description: Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione.
-feature: Strumenti per gli sviluppatori
+feature: Developer Tools
 role: Developer, Architect
-source-git-commit: a9b81e6bcefc95cac305f8387928cf515939aef0
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 36%
+source-wordcount: '1033'
+ht-degree: 35%
 
 ---
 
@@ -144,7 +144,7 @@ ht-degree: 36%
       + [Tipi di nodo AEM](/help/implementing/developing/introduction/node-types.md)
    + Gestione delle esperienze headless {#headless}
       + [Senza testa e AEM](developing/headless/introduction.md)
-      + [Percorso per sviluppatori headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
+      + [Percorsi di documentazione headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
       + Guide introduttive {#getting-started}
          + [Introduzione](developing/headless/getting-started/introduction.md)
          + [Creazione di una configurazione](developing/headless/getting-started/create-configuration.md)

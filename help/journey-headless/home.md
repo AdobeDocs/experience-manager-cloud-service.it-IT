@@ -1,9 +1,9 @@
 ---
 title: AEM Percorsi headless
 description: Inizia qui per una panoramica dei percorsi guidati disponibili per comprendere AEM potenti funzioni headless.
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -30,19 +30,11 @@ Se si desidera sapere come Adobe consiglia di risolvere i casi aziendali headles
 
 ## Pubblico {#audiences}
 
-I Percorsi headless sono progettati per più utenti tipo, definendo requisiti, passaggi e approccio per implementare soluzioni headless da prospettive diverse. Un percorso è definito per una persona specifica, ma definisce anche utenti tipo aggiuntivi con cui il lettore interagisce.
+I Percorsi headless sono progettati per persone diverse, definendo i requisiti, i passaggi e l&#39;approccio per implementare soluzioni headless da diverse prospettive.
 
-Di seguito sono riportati gli utenti tipo che interagiscono nei Percorsi headless.
+Un singolo percorso è definito per una persona o un pubblico specifico, ma definisce anche utenti tipo aggiuntivi con cui il lettore interagisce.
 
-| Persona | Descrizione | Ruolo nel Percorso |
-|---|---|---|
-| Developer (Sviluppatore) | Ha esperienza nello sviluppo di applicazioni headless che utilizzano contenuti provenienti da diverse fonti | Lo sviluppatore collabora con autori, amministratori e architetti per comprendere i dati e creare un’applicazione headless che consuma tali dati. |
-| Autore del contenuto | Crea e gestisce contenuti distribuiti senza problemi | Gli autori dei contenuti creano contenuti che lo sviluppatore offre senza problemi. |
-| Administrator | Gestisce la configurazione e la configurazione di base di AEM | Lo sviluppatore collabora con l’amministratore per apportare le modifiche di configurazione necessarie per lo sviluppo. |
-| Architetto dei contenuti | Analizza i requisiti dei dati che devono essere consegnati senza problemi e definisce la struttura di tali dati | Gli sviluppatori lavorano con l’architetto dei contenuti per comprendere la struttura dei dati e i requisiti necessari per distribuirli senza problemi. |
-| Specialista di traduzione | Definisce il contenuto da tradurre e gestisce tali flussi di lavoro | Lo specialista di traduzione collabora con l&#39;architetto dei contenuti per definire l&#39;organizzazione iniziale dei contenuti e può collaborare con lo sviluppatore per qualsiasi esigenza specifica di traduzione. |
-
-Le informazioni in questi percorsi possono ovviamente essere utili a tutti gli utenti, ma alcune informazioni possono essere superflue a determinati ruoli.
+Le informazioni nei percorsi possono ovviamente essere utili a più utenti tipo, ma un percorso è mirato a un utente specifico e alcune informazioni possono essere superflue a determinati ruoli.
 
 ## Percorsi headless {#headless-journeys}
 

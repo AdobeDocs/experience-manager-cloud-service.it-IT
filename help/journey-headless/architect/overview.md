@@ -1,12 +1,12 @@
 ---
 title: percorso di architetti di contenuti headless AEM
 description: Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '789'
 ht-degree: 2%
 
 ---
@@ -27,6 +27,14 @@ Questa guida ti guida attraverso gli argomenti più importanti in modo che al te
 * Scopri i vantaggi e la distribuzione dei contenuti headless.
 * Scopri come modellare il contenuto per AEM feature headless.
 * Possibilità di eseguire i primi passaggi per modellare i contenuti per il primo progetto senza testa AEM.
+
+## percorsi di documentazione AEM {#documentation-journeys}
+
+[Una Documentazione ](/help/journey-documentation/home.md) Journey unisce molti argomenti e funzionalità diversi e forse complicati, fornendo una narrazione che aiuta il lettore, che può essere nuovo a AEM, capire e risolvere un problema di business dall&#39;inizio alla fine, assumendo al contempo una conoscenza minima dell&#39;argomento precedente o AEM.
+
+I Percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback dai progetti dei clienti.
+
+Se desideri sapere come Adobe consiglia di risolvere i casi aziendali headless con AEM, [AEM Percorsi headless](/help/journey-headless/home.md) sono i punti di partenza.
 
 ## Pubblico {#audience}
 

@@ -1,10 +1,10 @@
 ---
 title: AEM Percorso di traduzione headless
 description: Inizia qui per un percorso guidato traducendo i contenuti headless utilizzando AEM potenti strumenti di traduzione.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 9de8b0b295808d0f0fa5bc21a74345e2ba2655d4
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Se hai già familiarità con AEM, headless e traduzione, potresti avere già la 
 
 I Percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback dai progetti dei clienti.
 
-Se si desidera sapere come Adobe consiglia di risolvere i casi aziendali headless con AEM, AEM Percorsi headless sono il punto di partenza.
+Se desideri sapere come Adobe consiglia di risolvere i casi aziendali headless con AEM, [AEM Percorsi headless](/help/journey-headless/home.md) sono i punti di partenza.
 
 ## Pubblico {#audience}
 

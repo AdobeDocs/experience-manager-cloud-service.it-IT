@@ -1,13 +1,13 @@
 ---
 title: AEM Percorso di authoring dei contenuti headless
 description: Inizia qui per un percorso guidato attraverso le funzioni headless potenti e flessibili di AEM, le loro funzionalità e la creazione di contenuti per il tuo progetto.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 0d7d1150e0156f08f4289054e8fb626713c7bc79
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 2%
+source-wordcount: '868'
+ht-degree: 1%
 
 ---
 
@@ -31,6 +31,14 @@ Questa guida ti guida attraverso gli argomenti più importanti in modo che al te
 * Scopri di più sulla distribuzione dei contenuti headless e sui suoi vantaggi.
 * Scopri AEM funzioni headless e come funzionano insieme per offrire un’esperienza headless.
 * Possibilità di creare contenuti per il progetto headless AEM.
+
+## percorsi di documentazione AEM {#documentation-journeys}
+
+[Una Documentazione ](/help/journey-documentation/home.md) Journey unisce molti argomenti e funzionalità diversi e forse complicati, fornendo una narrazione che aiuta il lettore, che può essere nuovo a AEM, capire e risolvere un problema di business dall&#39;inizio alla fine, assumendo al contempo una conoscenza minima dell&#39;argomento precedente o AEM.
+
+I Percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback dai progetti dei clienti.
+
+Se desideri sapere come Adobe consiglia di risolvere i casi aziendali headless con AEM, [AEM Percorsi headless](/help/journey-headless/home.md) sono i punti di partenza.
 
 ## Pubblico {#audience}
 
