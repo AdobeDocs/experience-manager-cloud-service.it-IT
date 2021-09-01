@@ -1,7 +1,7 @@
 ---
 title: Percorso di onboarding
 description: Inizia qui per una panoramica del percorso di onboarding guidato disponibile per comprendere l’esperienza di onboarding.
-source-git-commit: 39dda310bbe3ca0a47e8d38f18200351730a5b4e
+source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 2%
@@ -34,10 +34,10 @@ Di seguito sono riportati gli utenti tipo che interagiscono in questo percorso.
 | Persona | Descrizione | Ruolo nel Percorso |
 |---|---|---|
 | Amministratore di sistema | Fornisce il provisioning iniziale delle risorse cloud e l’assegnazione degli utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito alle quali ogni membro può accedere e accedere ai propri AEM come risorse di Cloud Service. | Gestisce tutti gli aspetti dei propri utenti, dall&#39;accesso alle autorizzazioni. |
-| AEM Author | Crea e rivede il contenuto (può essere di diversi tipi; ad esempio pagine, risorse, pubblicazioni) prima che venga pubblicato sul sito web. | Una volta concesse le autorizzazioni, è possibile avviare il percorso del proprio manager di distribuzione. |
-| Developer (Sviluppatore) | Ha esperienza nello sviluppo di applicazioni AEM che utilizzano contenuti provenienti da diverse fonti | Una volta concesse le autorizzazioni, può avviare il proprio percorso di sviluppatori |
-| Deployment Manager (Responsabile implementazione) | Aggiunge o aggiorna un ambiente, esegue qualsiasi pipeline e distribuisce il codice AEM ambiente o qualità del codice. | Una volta concesse le autorizzazioni, è possibile avviare il percorso del proprio manager di distribuzione. |
+| AEM Author | Crea e rivede il contenuto (può essere di diversi tipi; ad esempio pagine, risorse, pubblicazioni) prima che venga pubblicato sul sito web. | Una volta concesse le autorizzazioni, può avviare il proprio percorso. |
+| Developer (Sviluppatore) | Sviluppa applicazioni AEM che utilizzano contenuti provenienti da fonti diverse | Una volta concesse le autorizzazioni, può avviare il proprio percorso di sviluppatori |
+| Deployment Manager (Responsabile implementazione) | Aggiunge o aggiorna un ambiente, esegue una pipeline e distribuisce il codice per AEM ambiente o qualità del codice. | Una volta concesse le autorizzazioni, è possibile avviare il percorso del proprio manager di distribuzione. |
 
 ## Esplorazione del Percorso di onboarding {#exploring-onboarding-journey}
 
-Per ulteriori informazioni, visita il [Percorso di onboarding](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md) .
+Esplora il primo passaggio al Percorso di onboarding da [qui](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md) e inizia!

@@ -4,30 +4,14 @@ description: Segui questa pagina per scoprire come iniziare a utilizzare il perc
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 792ec993bd9d628fac49b9553d5923c74195f4c7
+source-git-commit: 5a91f45b4ed933e37f5af61a194d08e204cd1514
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 1%
+source-wordcount: '532'
+ht-degree: 2%
 
 ---
 
 # Percorso di onboarding {#onboarding-jourrney}
-
-Congratulazioni per aver iniziato il tuo percorso con AEM come Cloud Service! Siamo entusiasti che tu sia qui e non vedo l&#39;ora di iniziare con il tuo percorso di onboarding. Che tu stia distribuendo una nuova applicazione o ne esegua la migrazione, questa guida funge da punto di partenza per garantire che i team siano configurati e abbiano accesso a AEM come Cloud Service.
-
-## Introduzione {#introduction}
-
-Questa guida ti guida attraverso gli argomenti più importanti in modo che al termine avrai:
-
-* piena comprensione di cosa aspettarsi durante il AEM come percorso di onboarding del Cloud Service.
-* Il team è stato in grado di iniziare a utilizzare e seguire i primi passi per imparare a creare e sviluppare contenuti per la tua AEM come applicazione di Cloud Service.
-
-Ciò significa:
-
-* Il team è configurato e dispone dell&#39;accesso alle risorse cloud,
-* Gli autori AEM avranno accesso a AEM come Cloud Service,
-* Gli sviluppatori AEM e i gestori di distribuzione avranno accesso a AEM come Cloud Service.
-
 
 ## Esperienza onboarding {#audience}
 
