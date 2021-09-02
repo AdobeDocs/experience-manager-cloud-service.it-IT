@@ -2,7 +2,7 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 646c6884dc7397d69f40f074b6c4c1cef4510796
+source-git-commit: 786ff1c2e715869ecd12cf54ede0fb650e8ef33f
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 19%
@@ -34,7 +34,7 @@ Una volta firmato il contratto, avranno luogo i seguenti eventi:
 
 1. Adobe completa il provisioning per la tua organizzazione in seguito al quale l’amministratore di sistema della tua organizzazione riceverà un messaggio e-mail di benvenuto che consente loro di eseguire [attività di amministratore di sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), includendo l’aggiunta di utenti, l’assegnazione di tali ruoli ai ruoli e quindi concedere loro l’accesso appropriato a Cloud Manager.
 
-1. Gli utenti aggiunti dall’amministratore di sistema riceveranno a loro volta un messaggio e-mail di benvenuto per consentire loro di passare correttamente [a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Gli utenti possono ora utilizzare il proprio Adobe ID per accedere e iniziare il proprio percorso con Cloud Manager da qui.
+1. Gli utenti aggiunti dall’amministratore di sistema riceveranno a loro volta un messaggio e-mail di benvenuto per consentire loro di passare correttamente a Cloud Manager. Gli utenti possono ora utilizzare il proprio Adobe ID per accedere e iniziare il proprio percorso con Cloud Manager da qui.
 
 1. Un amministratore di sistema può [concedere agli utenti l&#39;accesso a un&#39;istanza AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) a scopo di sviluppo.
 
@@ -54,7 +54,7 @@ Le seguenti pagine della documentazione includono informazioni che descrivono le
 * Aggiunta di utenti
 * Assegnazione di utenti a ruoli e autorizzazioni di Cloud Manager
 
-**[Passa a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
+* **Passa a Cloud Manager**
 
 Dopo essere stato aggiunto come utente e assegnato a un ruolo Cloud Manager, puoi accedere a Cloud Manager per iniziare a usare il tuo percorso Cloud con AEM. Gli utenti sono pronti a eseguire varie attività, come la creazione di un programma, l’aggiunta di un ambiente, l’accesso a Git, la [configurazione di una pipeline](/help/implementing/cloud-manager/configure-pipeline.md) e la [distribuzione di codice](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager è una parte importante del AEM come Cloud Service. Consente alle organizzazioni di gestire autonomamente [!DNL Experience Manager] nel cloud. Include un framework di integrazione continua e distribuzione continua (CI/CD, Continuous Integration/Continuous Delivery) che consente ai team IT e ai partner dell’implementazione di accelerare la distribuzione di personalizzazioni o aggiornamenti senza compromettere prestazioni o sicurezza. Utilizzando l’interfaccia utente, puoi configurare e avviare la pipeline CI/CD.
