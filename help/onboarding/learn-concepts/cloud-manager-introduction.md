@@ -2,7 +2,7 @@
 title: Scopri cosa è Cloud Manager
 description: Leggi questa pagina per saperne di più su Cloud Manager, sui programmi e sugli ambienti di Cloud Manager.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 900bcfd2b05b7c996c7ef51118d1f09a16020332
+source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Inoltre, puoi passare alla pagina Programmi e prodotti di Cloud Manager dalla ho
 
 1. Fai clic su **Launch** dalla scheda Cloud Manager. Dopo aver effettuato l’accesso a Cloud Manager, puoi utilizzare l’interfaccia utente (UI).
 
-Dopo l’accesso, verrai indirizzato alla pagina di destinazione di Cloud Manager.
+   Dopo l’accesso, verrai indirizzato alla pagina di destinazione di Cloud Manager.
 
 ## Programmi di Cloud Manager {#cloud-manager-programs}
 
