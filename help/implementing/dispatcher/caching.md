@@ -3,9 +3,9 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1531'
 ht-degree: 1%
 
 ---
@@ -40,10 +40,12 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
    </LocationMatch>
    ```
 
-   Fai attenzione quando imposti le intestazioni di controllo cache globale o quelle che corrispondono a un’area estesa in modo che non vengano applicate al contenuto che potresti voler mantenere privato. Valuta l’utilizzo di più direttive per garantire che le regole vengano applicate in modo dettagliato. Detto questo, AEM come Cloud Service rimuoverà l’intestazione della cache se rileva che è stata applicata a ciò che rileva come non può essere memorizzata nella cache dal dispatcher, come descritto nella documentazione del dispatcher. Per forzare AEM ad applicare sempre la memorizzazione in cache, è possibile aggiungere l’opzione &quot;sempre&quot; come segue:
+   Fai attenzione quando imposti le intestazioni di controllo cache globale o quelle che corrispondono a un’area estesa in modo che non vengano applicate al contenuto che potresti voler mantenere privato. Valuta l’utilizzo di più direttive per garantire che le regole vengano applicate in modo dettagliato. Detto questo, AEM come Cloud Service rimuoverà l’intestazione della cache se rileva che è stata applicata a ciò che rileva come non può essere memorizzata nella cache dal dispatcher, come descritto nella documentazione del dispatcher. Per forzare AEM ad applicare sempre le intestazioni di memorizzazione in cache, è possibile aggiungere l&#39;opzione **always** come segue:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
+        Header unset Cache-Control
+        Header unset Expires
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -56,11 +58,13 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
    { /glob "*" /type "allow" }
    ```
 
-* Per evitare che un contenuto specifico venga memorizzato nella cache, imposta l&#39;intestazione Cache-Control su *private*. Ad esempio, quanto segue impedisce la memorizzazione nella cache del contenuto HTML in una directory denominata **myfolder**:
+* Per evitare che un contenuto specifico venga memorizzato nella cache, imposta l&#39;intestazione Cache-Control su *private*. Ad esempio, quanto segue impedisce la memorizzazione nella cache del contenuto HTML in una directory denominata **secure**:
 
    ```
-      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
-      Header set Cache-Control “private”
+      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+      Header unset Cache-Control
+      Header unset Expires
+      Header always set Cache-Control “private”
      </LocationMatch>
    ```
 
@@ -114,7 +118,7 @@ Come nelle versioni precedenti di AEM, la pubblicazione o l’annullamento della
 
 Quando l’istanza di pubblicazione riceve una nuova versione di una pagina o di una risorsa dall’autore, utilizza l’agente di eliminazione per annullare la validità dei percorsi appropriati sul proprio dispatcher. Il percorso aggiornato viene rimosso dalla cache del dispatcher, insieme ai relativi genitori, fino a un livello (puoi configurarlo con [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
 
-### Annullamento esplicito della validità della cache del dispatcher {#explicit-invalidation}
+### Annullamento della validità della cache del dispatcher esplicito {#explicit-invalidation}
 
 In generale, non sarà necessario annullare manualmente la validità del contenuto nel dispatcher, ma è possibile se necessario, come descritto di seguito.
 
