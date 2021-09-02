@@ -2,9 +2,9 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e5d5e838a027af983db51a3292962200faaf3cfa
+source-git-commit: 646c6884dc7397d69f40f074b6c4c1cef4510796
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '934'
 ht-degree: 19%
 
 ---
@@ -38,7 +38,7 @@ Una volta firmato il contratto, avranno luogo i seguenti eventi:
 
 1. Un amministratore di sistema può [concedere agli utenti l&#39;accesso a un&#39;istanza AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) a scopo di sviluppo.
 
-**[Scarica il tuo Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
+**Scarica il tuo Adobe ID**
 
 Per far sì che gli utenti vengano aggiunti a Cloud Manager ai ruoli assegnati, ti servirà l’aiuto del tuo Adobe ID e dell’amministratore di sistema.
 
