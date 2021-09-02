@@ -5,9 +5,9 @@ breadcrumb-title: percorsi di documentazione AEM
 user-guide-description: Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle nel tuo progetto.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 65f0bc92d0ce60dd55b17b5ee8875d8e88033266
+source-git-commit: de797ba7a59afa911a5a0d719b4b905d6cfcbad4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,14 @@ Please note that all links to other guides need to be absolute references with l
    + [Assegnare i membri del team a AEM come profili di prodotto del Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-aem-cloud-service.html)
    + [Percorso di apprendimento per sviluppatori e gestori di distribuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-developers-deploymentmanagers.html)
    + [Percorso di apprendimento per gli utenti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-aem-users.html)
++ Percorso di traduzione dei siti {#sites-translation}
+   + [Comprendere la traduzione dei siti in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
+   + [Guida introduttiva alla traduzione di siti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/getting-started.html)
+   + [Scopri i contenuti dei siti e come tradurre in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/learn-about.html)
+   + [Configurare il connettore di traduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/configure-connector.html)
+   + [Configurare le regole di traduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translation-rules.html)
+   + [Tradurre il contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translate-content.html)
+   + [Pubblicare contenuti tradotti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/publish-content.html)
 + Percorsi headless {#headless}
    + [Home Percorsi headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
    + Percorso di sviluppatori headless {#developer}
