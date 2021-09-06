@@ -2,10 +2,10 @@
 title: Scopri cosa è Cloud Manager
 description: Leggi questa pagina per saperne di più su Cloud Manager, sui programmi e sugli ambienti di Cloud Manager.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
+source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 1%
+source-wordcount: '907'
+ht-degree: 4%
 
 ---
 
@@ -39,6 +39,26 @@ Inoltre, puoi passare alla pagina Programmi e prodotti di Cloud Manager dalla ho
 1. Fai clic su **Launch** dalla scheda Cloud Manager. Dopo aver effettuato l’accesso a Cloud Manager, puoi utilizzare l’interfaccia utente (UI).
 
    Dopo l’accesso, verrai indirizzato alla pagina di destinazione di Cloud Manager.
+
+## Autorizzazioni basate sul ruolo in Cloud Manager {#role-based-permissions}
+
+| Autorizzazione | Descrizione | Business Owner (Proprietario) | Deployment Manager (Responsabile implementazione) | Program Manager (Responsabile programma) | Developer (Sviluppatore) |
+|--- |--- |--- |--- |--- |--- |
+| Aggiungi programma<br>Modifica programma | Aggiungi un nuovo programma.<br>Modificare un programma - Aggiungere o rimuovere soluzioni o componenti aggiuntivi | x |  |  |  |
+| Creare un ambiente | Crea Prod+Stage, Sviluppo, Ambienti. | x | x |  |  |
+| Ambiente di aggiornamento | Aggiorna Prod+Stage, Dev, Ambienti. | x | x |  |  |
+| Elimina ambiente di sviluppo | Eliminare gli ambienti di sviluppo. | x | x |  |  |
+| Configurazione della pipeline | Impostare o modificare la pipeline. |  | x |  |  |
+| Esecuzione della pipeline | Avvia la pipeline. | x | x |  |  |
+| Esecuzione della pipeline | Rifiutare/Approvare Importanti Errori A 3 Livelli. | x | x | x |  |
+| Esecuzione della pipeline | Fornire l’approvazione GoLive. | x | x | x |  |
+| Esecuzione della pipeline | Pianificazione distribuzione produzione. | x | x | x |  |
+| Elimina pipeline | Consente di eliminare una pipeline. |  | x |  |  |
+| Annulla esecuzione | Annulla esecuzione corrente. |  | x |  |  |
+| Genera token di accesso personale | Accedi a Git. |  | x |  | x |
+
+>[!NOTE]
+>Un utente può essere assegnato a più ruoli. Ad esempio, l&#39;assegnazione di ruoli Business Owner (Proprietario business) e Deployment Manager a un utente fornisce loro la combinazione o la somma di queste autorizzazioni.
 
 ## Programmi di Cloud Manager {#cloud-manager-programs}
 

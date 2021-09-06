@@ -2,7 +2,7 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
+source-git-commit: 5a0c744d848397d9eb9581e0a0a2cd143c5a7412
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 19%
@@ -32,7 +32,7 @@ Questa sezione descrive gli articoli chiave sul tuo percorso quando inizi con AE
 
 Una volta firmato il contratto, avranno luogo i seguenti eventi:
 
-1. Adobe completa il provisioning per la tua organizzazione in seguito al quale l’amministratore di sistema della tua organizzazione riceverà un messaggio e-mail di benvenuto che consente loro di eseguire [attività di amministratore di sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), includendo l’aggiunta di utenti, l’assegnazione di tali ruoli ai ruoli e quindi concedere loro l’accesso appropriato a Cloud Manager.
+1. Adobe completa il provisioning per la tua organizzazione in seguito al quale l’amministratore di sistema della tua organizzazione riceverà un messaggio e-mail di benvenuto che consente loro di eseguire attività di amministratore di sistema, tra cui l’aggiunta di utenti, l’assegnazione di tali ruoli e quindi l’accesso appropriato a Cloud Manager.
 
 1. Gli utenti aggiunti dall’amministratore di sistema riceveranno a loro volta un messaggio e-mail di benvenuto per consentire loro di passare correttamente a Cloud Manager. Gli utenti possono ora utilizzare il proprio Adobe ID per accedere e iniziare il proprio percorso con Cloud Manager da qui.
 
@@ -42,11 +42,11 @@ Una volta firmato il contratto, avranno luogo i seguenti eventi:
 
 Per far sì che gli utenti vengano aggiunti a Cloud Manager ai ruoli assegnati, ti servirà l’aiuto del tuo Adobe ID e dell’amministratore di sistema.
 
-**[Ruoli di Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**Ruoli di Cloud Manager**
 
 L’amministratore di sistema può aggiungere utenti e assegnarli ai ruoli di Cloud Manager. Questa sezione ti aiuta a capire cosa sono *Ruoli di Cloud Manager* e le autorizzazioni associate ai ruoli prima di iniziare.
 
-**[Attività amministratore di sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
+**Attività amministratore di sistema**
 
 Gli amministratori di sistema gestiscono tutti gli aspetti dei propri utenti, dall&#39;accesso alle autorizzazioni. Questo utente è la prima persona ad avere accesso per iniziare a eseguire attività in Admin Console e Cloud Manager.
 Le seguenti pagine della documentazione includono informazioni che descrivono le attività organizzative di base:
@@ -54,12 +54,12 @@ Le seguenti pagine della documentazione includono informazioni che descrivono le
 * Aggiunta di utenti
 * Assegnazione di utenti a ruoli e autorizzazioni di Cloud Manager
 
-* **Passa a Cloud Manager**
+**Passa a Cloud Manager**
 
 Dopo essere stato aggiunto come utente e assegnato a un ruolo Cloud Manager, puoi accedere a Cloud Manager per iniziare a usare il tuo percorso Cloud con AEM. Gli utenti sono pronti a eseguire varie attività, come la creazione di un programma, l’aggiunta di un ambiente, l’accesso a Git, la [configurazione di una pipeline](/help/implementing/cloud-manager/configure-pipeline.md) e la [distribuzione di codice](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager è una parte importante del AEM come Cloud Service. Consente alle organizzazioni di gestire autonomamente [!DNL Experience Manager] nel cloud. Include un framework di integrazione continua e distribuzione continua (CI/CD, Continuous Integration/Continuous Delivery) che consente ai team IT e ai partner dell’implementazione di accelerare la distribuzione di personalizzazioni o aggiornamenti senza compromettere prestazioni o sicurezza. Utilizzando l’interfaccia utente, puoi configurare e avviare la pipeline CI/CD.
 
-* **Consentire agli utenti di accedere a un&#39;istanza AEM**
+**Consentire agli utenti di accedere a un&#39;istanza AEM**
 
 Leggi questa sezione per scoprire come un amministratore di sistema o un utente che ha creato un ambiente può concedere ad altri utenti l’accesso a un’istanza AEM.
 
