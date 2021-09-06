@@ -2,9 +2,10 @@
 title: Convalida e debug tramite gli strumenti di Dispatcher
 description: Convalida e debug tramite gli strumenti di Dispatcher
 feature: Dispatcher
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
+source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2413'
 ht-degree: 1%
 
 ---
@@ -412,7 +413,7 @@ I livelli di registro per tali moduli sono definiti dalle variabili `DISP_LOG_LE
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Quando si esegue Dispatcher localmente, i registri vengono stampati direttamente nell’output del terminale. Nella maggior parte dei casi, si desidera che questi log siano in DEBUG, che può essere fatto passando il livello Debug come parametro durante l&#39;esecuzione di Docker. Esempio: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+Quando si esegue Dispatcher localmente, i registri vengono stampati direttamente nell’output del terminale. Nella maggior parte dei casi, si desidera che questi log siano in DEBUG, che può essere fatto passando il livello Debug come parametro durante l&#39;esecuzione di Docker. Esempio: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 I registri per gli ambienti cloud sono esposti tramite il servizio di registrazione disponibile in Cloud Manager.
 
@@ -446,7 +447,7 @@ Nella configurazione del Dispatcher è disponibile la stessa variabile di ambien
 Quando esegui il test della configurazione localmente, puoi simulare diversi tipi di ambiente passando direttamente la variabile `DISP_RUN_MODE` allo script `docker_run.sh` :
 
 ```
-$ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
+$ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 ```
 
 La modalità di esecuzione predefinita quando non si passa un valore per DISP_RUN_MODE è &quot;dev&quot;.
