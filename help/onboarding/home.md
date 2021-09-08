@@ -2,7 +2,7 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 620972f1a9b4cf9cc4cc888b440b59af28b1127a
+source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 26%
@@ -24,7 +24,7 @@ L’immagine seguente illustra il tuo percorso di onboarding, a partire dall’e
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
-Per iniziare a utilizzare il percorso di onboarding, consulta [Percorso di onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) .
+Per iniziare a utilizzare l’esperienza di onboarding, consulta [Percorso di onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) .
 
 >[!NOTE]
 >Prima di approfondire il percorso di onboarding, si consiglia di esaminare la sezione Informazioni sui concetti di onboarding che tratta i seguenti argomenti:

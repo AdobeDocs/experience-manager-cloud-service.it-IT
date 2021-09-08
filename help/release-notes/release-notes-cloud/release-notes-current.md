@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
+source-git-commit: 56f799b7583c82694f20de096855d6c5c1741f49
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1473'
 ht-degree: 2%
 
 ---
@@ -169,4 +169,20 @@ La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v
 * Il pulsante **Interrompi acquisizione** veniva disattivato durante l’acquisizione nell’istanza Publish. Questo non è necessario perché non esiste un passaggio di ripristino mongo durante l’acquisizione di Publish.
 
 * Il CTT non ha ripulito la directory `/tmp` dopo un’estrazione riuscita. Ciò a volte ha causato problemi di spazio su disco.
+
+## Analisi delle best practice {#best-practices-analyzer}
+
+### Data di rilascio {#release-date-bpa-latest}
+
+La data di rilascio di Best Practices Analyzer v2.1.18 è il 2 settembre 2021.
+
+### Novità {#what-is-new}
+
+* Possibilità di rilevare e segnalare il conteggio totale dei nodi.
+
+* Possibilità di rilevare e segnalare il tipo e la dimensione dell&#39;archivio nodi.
+
+### Correzioni di bug {#bug-fixes-bpa}
+
+* BPA rilevava falsamente la presenza di Commerce Integration Framework.
 
