@@ -1,42 +1,52 @@
 ---
-title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.9.0
-description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.9.0
+title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0
+description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0
 feature: Release Information
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
+source-git-commit: 4a4e473639ccf10410afc07b77b1bfd880b95543
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 5%
+source-wordcount: '300'
+ht-degree: 4%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.9.0 {#release-notes}
+# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.8.0 {#release-notes}
 
-Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.9.0.
+Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0.
 
 >[!NOTE]
 >Per visualizzare il Cloud Service delle note sulla versione corrente per Adobe Experience Manager, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
 ## Data di rilascio {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.9.0 è il 9 settembre 2021.
-La prossima versione è prevista per il 7 ottobre 2021.
+La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.8.0 è il 12 agosto 2021.
+La prossima versione è prevista per il 9 settembre 2021.
 
 ### Novità {#what-is-new}
 
-* Le schede del programma nella pagina di destinazione di Cloud Manager e l’esperienza associata sono state aggiornate.
+* I clienti del Cloud Service ora possono visualizzare i rapporti SLA (Service Level Agreement) in Cloud Manager. Ciò sarà progressivamente reso disponibile nei prossimi mesi.
+Per ulteriori informazioni, consulta [Generazione di rapporti SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) .
 
-* Il registro dettagliato dei passaggi della qualità del codice ora include informazioni di registrazione dettagliate sul processo di scansione di OakPal.
+* Il tipo e la gravità delle regole di qualità IndexType e `IndexDamAssetLucene` sono stati modificati. Questi sono ora due bug di Blocker *serverity*.
 
-* Le opzioni del menu della pagina Attività includeranno ora un&#39;opzione per **Download Log** per le esecuzioni completate di Code Generator. Selezionando questa opzione, il registro del passaggio di compilazione verrà scaricato.
+* Sono state introdotte nuove regole sulla qualità dell&#39;indice Oak per coprire configurazioni asincrone e tika.
 
-* Facendo clic direttamente sulla scheda Programma, passa alla pagina Panoramica di Cloud Manager.
+* Aumenta il numero massimo di certificati SSL per programma a 50.
 
-* La versione dell’Archetipo di progetto AEM utilizzato da Cloud Manager è stata aggiornata alla versione 30.
+* Funzionalità self-service per consentire agli utenti di creare e gestire più archivi tramite l’interfaccia utente di Cloud Manager.
+
+* SonarQube leggeva inutilmente i dati della cronologia Git. Su basi di codice di grandi dimensioni, ciò potrebbe comportare una multa non necessaria per le prestazioni della build.
+
+* È ora disponibile un’API per annullare la validità della cache di dipendenza Maven per pipeline.
+
+* La versione di AEM Project Archetype utilizzata da Cloud Manager è stata aggiornata alla versione 29.
 
 ### Correzioni di bug {#bug-fixes}
 
-* L’utente vedrà ora un messaggio più comprensibile quando tenta di aggiungere un nuovo Elenco consentiti IP in un programma che ha raggiunto il numero massimo consentito di Elenchi consentiti IP configurabili.
+* Lo stato Aggiorna disponibile non deve essere visualizzato quando l&#39;ultima versione è inferiore alla versione corrente.
 
-* L&#39;URL errato è stato copiato quando si seleziona l&#39;opzione di menu Copia URL dalla schermata Repository.
+* L&#39;onboarding iniziale non riusciva per le nuove organizzazioni con nomi molto lunghi.
+
+* Talvolta, quando una pipeline viene attivata due volte per qualche motivo, si verifica un errore di una delle esecuzioni che non riesce con *non è in grado di aggiornare lo stato di esecuzione della pipeline*.
 
 
