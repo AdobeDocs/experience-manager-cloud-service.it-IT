@@ -2,10 +2,10 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 26%
+source-wordcount: '556'
+ht-degree: 27%
 
 ---
 
@@ -18,24 +18,17 @@ ht-degree: 26%
 
 Congratulazioni per aver iniziato il tuo percorso con AEM come Cloud Service! Che tu stia distribuendo una nuova applicazione o ne esegua la migrazione, questa guida funge da punto di partenza per garantire che l&#39;applicazione sia ottimizzata e pronta per il successo sul Cloud Service.
 
-Questa guida ti aiuterà a iniziare rapidamente con Cloud Manager e il tuo team. Per consentire agli utenti di aggiungere a Cloud Manager i ruoli assegnati (denominati in Admin Console profili di prodotto ) e le relative autorizzazioni, avrai bisogno dell’aiuto del tuo Adobe ID e dell’amministratore di sistema. Vengono descritte le istruzioni su come l’amministratore di sistema può eseguire questa operazione tramite Admin Console. L’elenco dei ruoli di Cloud Manager, denominati profili di prodotto in Admin Console e relative autorizzazioni associate, è dettagliato e consente di determinare quali ruoli possono essere necessari per vari utenti dell’organizzazione.
+## Esperienza onboarding {#audience}
 
-L’immagine seguente illustra il tuo percorso di onboarding, a partire dall’e-mail di benvenuto ricevuta dall’amministratore di sistema e fino a raggiungere come Cloud Service gli utenti che accedono a Cloud Manager per AEM.
+L&#39;onboarding è il processo durante il quale un [amministratore di sistema ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale di risorse cloud e l’assegnazione di utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito a cui ogni membro è in grado di accedere e accedere ai propri AEM come risorse di Cloud Service.
 
-![](/help/onboarding/what-is-required/assets/cust-journey.png)
+Il percorso di onboarding è illustrato di seguito e ogni fase del percorso è descritto in dettaglio nelle sezioni seguenti.
 
-Per iniziare a utilizzare l’esperienza di onboarding, consulta [Percorso di onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) .
+![](/help/journey-onboarding/assets/onboarding-journey.png)
 
->[!NOTE]
->Prima di approfondire il percorso di onboarding, si consiglia di esaminare la sezione Informazioni sui concetti di onboarding che tratta i seguenti argomenti:
->* [Amministratore di sistema](/help/onboarding/learn-concepts/system-administrator.md)
->* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
->* [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
->* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
->* [Introduzione a Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
->* [AEM come team e profili di prodotto di Cloud Service](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
->* [Supporto Adobe](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+Questo percorso è progettato per un utente utente con privilegi di amministratore di sistema, in cui sono illustrati i requisiti, i passaggi e l&#39;approccio. Il percorso definisce gli utenti con cui l’amministratore di sistema deve interagire per il successo di un progetto, ma il punto di vista del percorso è quello di un amministratore.
 
+Per iniziare a utilizzare l’esperienza di onboarding, consulta [Percorso di onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) .
 
 ## [!DNL Experience Manager as a Cloud Service] Guide {#aem-guides}
 

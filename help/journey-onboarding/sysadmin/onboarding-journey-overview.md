@@ -3,24 +3,15 @@ title: Percorso di onboarding
 description: Segui questa pagina per scoprire come iniziare a utilizzare il percorso di onboarding
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: fa88a919-af6a-4266-b38c-647706decba4
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '401'
 ht-degree: 2%
 
 ---
 
 # Percorso di onboarding {#onboarding-jourrney}
-
-## Esperienza onboarding {#audience}
-
-L&#39;onboarding è il processo durante il quale un [amministratore di sistema ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale di risorse cloud e l’assegnazione di utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito a cui ogni membro è in grado di accedere e accedere ai propri AEM come risorse di Cloud Service.
-
-Il percorso di onboarding è illustrato di seguito e ogni fase del percorso è descritto in dettaglio nelle sezioni seguenti.
-
-![](/help/journey-onboarding/assets/onboarding-journey.png)
-
-Questo percorso è progettato per un utente utente con privilegi di amministratore di sistema, in cui sono illustrati i requisiti, i passaggi e l&#39;approccio. Il percorso definisce gli utenti con cui l’amministratore di sistema deve interagire per il successo di un progetto, ma il punto di vista del percorso è quello di un amministratore.
 
 ## Esplorazione del Percorso di onboarding {#exploring-onboarding-journey}
 
