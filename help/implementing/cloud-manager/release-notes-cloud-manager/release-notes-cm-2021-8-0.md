@@ -2,11 +2,10 @@
 title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0
 description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0
 feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -48,5 +47,3 @@ Per ulteriori informazioni, consulta [Generazione di rapporti SLA](https://exper
 * L&#39;onboarding iniziale non riusciva per le nuove organizzazioni con nomi molto lunghi.
 
 * Talvolta, quando una pipeline viene attivata due volte per qualche motivo, si verifica un errore di una delle esecuzioni che non riesce con *non è in grado di aggiornare lo stato di esecuzione della pipeline*.
-
-
