@@ -1,11 +1,11 @@
 ---
 title: Supporto dei frammenti di contenuto Adobe Experience Manager as a Cloud Service nell’API HTTP di Assets
 description: Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, una funzione importante AEM consegna headless.
-feature: Frammenti di contenuto, API HTTP Assets
+feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1951'
 ht-degree: 2%
 
 ---
@@ -24,14 +24,13 @@ Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, una f
 >* incluso il supporto per i frammenti di contenuto
 
 >
->
-L’implementazione corrente dell’API HTTP di Assets si basa sullo stile architettonico [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) .
+>L’implementazione corrente dell’API HTTP di Assets si basa sullo stile architettonico [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) .
 
 L’ [API REST di Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di Adobe Experience Manager as a Cloud Service di accedere ai contenuti (memorizzati in AEM) direttamente tramite l’API HTTP, tramite operazioni CRUD (Creazione, lettura, aggiornamento, eliminazione).
 
 L’API ti consente di utilizzare Adobe Experience Manager come Cloud Service come CMS headless (Content Management System) fornendo servizi di contenuto a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON.
 
-Ad esempio, le applicazioni a pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite l’API HTTP, spesso in formato JSON.
+Ad esempio, [Applicazioni a pagina singola (SPA)](/help/implementing/developing/hybrid/introduction.md), basate su framework o personalizzate, richiedono il contenuto fornito tramite l’API HTTP, spesso in formato JSON.
 
 Mentre [AEM Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) forniscono un’API molto completa, flessibile e personalizzabile che può servire le operazioni di lettura necessarie a questo scopo e il cui output JSON può essere personalizzato, richiedono AEM know-how WCM (Web Content Management) per l’implementazione in quanto devono essere ospitati in pagine basate su modelli AEM dedicati. Non tutte le SPA organizzazioni di sviluppo hanno accesso diretto a tali conoscenze.
 
@@ -92,7 +91,7 @@ Tutte le richieste sono atomiche.
 
 Ciò significa che le richieste successive (`write`) non possono essere combinate in una singola transazione che potrebbe avere esito positivo o negativo come singola entità.
 
-### API REST AEM (Assets) rispetto ai componenti AEM {#aem-assets-rest-api-versus-aem-components}
+### API REST AEM (Assets) e componenti AEM {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <thead>
@@ -151,7 +150,6 @@ Se l’API REST di Assets viene utilizzata in un ambiente senza requisiti di aut
 >* [Video: sviluppo per CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 
 >
-
 
 
 In ambienti con requisiti di autenticazione specifici, si consiglia OAuth.

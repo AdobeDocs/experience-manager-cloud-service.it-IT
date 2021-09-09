@@ -2,7 +2,7 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 2%
@@ -16,10 +16,6 @@ In Adobe Experience Manager as a Cloud Service un frammento di contenuto estende
 * [Creazione e gestione di ](/help/assets/content-fragments/content-fragments.md) frammenti di contenuto e authoring delle  [pagine con ](/help/sites-cloud/authoring/fundamentals/content-fragments.md) frammenti di contenuto per ulteriori informazioni sui frammenti di contenuto.
 
 * [Gestione delle ](/help/assets/manage-digital-assets.md) risorse per ulteriori informazioni sulle risorse standard.
-
-<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
-* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
--->
 
 ## Architettura {#architecture}
 
@@ -44,7 +40,7 @@ I singoli frammenti di contenuto si basano su modelli di frammenti di contenuto:
    >
    >Qualsiasi modifica apportata a un modello di frammento di contenuto esistente può avere un impatto sui frammenti dipendenti; questo può portare a proprietà orfane in tali frammenti.
 
-### Integrazione di siti con risorse {#integration-of-sites-with-assets}
+### Integrazione di Sites con Assets {#integration-of-sites-with-assets}
 
 Content Fragment Management (CFM) fa parte di AEM Assets come:
 
@@ -56,7 +52,7 @@ I frammenti di contenuto sono considerati una funzione di Sites come:
 
 * Vengono utilizzati per la creazione delle pagine.
 
-#### Mappatura dei frammenti di contenuto sulle risorse {#mapping-content-fragments-to-assets}
+#### Mappatura di frammenti di contenuto sulle risorse {#mapping-content-fragments-to-assets}
 
 ![frammento di contenuto nelle risorse](assets/content-fragment-to-assets.png)
 
@@ -83,7 +79,7 @@ Come per le risorse standard, un frammento di contenuto è conservato in:
 
 `/content/dam`
 
-#### Autorizzazioni risorsa {#asset-permissions}
+#### Autorizzazioni delle risorse {#asset-permissions}
 
 Per ulteriori dettagli, consulta [Considerazioni sulla cancellazione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-delete.md).
 
@@ -135,7 +131,7 @@ I frammenti di contenuto possono essere integrati con:
 
 * **Traduzioni**
 
-   I frammenti di contenuto sono completamente integrati con il flusso di lavoro di traduzione AEM. A livello architettonico, ciò significa:
+   I frammenti di contenuto sono completamente integrati con il [flusso di lavoro di traduzione AEM](/help/sites-cloud/administering/translation/overview.md). A livello architettonico, ciò significa:
 
    * Le singole traduzioni di un frammento di contenuto sono in realtà frammenti separati; ad esempio:
 
