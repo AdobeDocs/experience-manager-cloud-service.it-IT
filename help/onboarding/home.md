@@ -2,10 +2,10 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
+source-git-commit: 0354f4782ff02d0c0d890ec6a99262b6b5002729
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 27%
+source-wordcount: '542'
+ht-degree: 28%
 
 ---
 
@@ -22,13 +22,13 @@ Congratulazioni per aver iniziato il tuo percorso con AEM come Cloud Service! Ch
 
 L&#39;onboarding è il processo durante il quale un [amministratore di sistema ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale di risorse cloud e l’assegnazione di utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito a cui ogni membro è in grado di accedere e accedere ai propri AEM come risorse di Cloud Service.
 
-Il percorso di onboarding è illustrato di seguito e ogni fase del percorso è descritto in dettaglio nelle sezioni seguenti.
+Il percorso di onboarding è illustrato di seguito.
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
 Questo percorso è progettato per un utente utente con privilegi di amministratore di sistema, in cui sono illustrati i requisiti, i passaggi e l&#39;approccio. Il percorso definisce gli utenti con cui l’amministratore di sistema deve interagire per il successo di un progetto, ma il punto di vista del percorso è quello di un amministratore.
 
-Per iniziare a utilizzare l’esperienza di onboarding, consulta [Percorso di onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) .
+Per iniziare a utilizzare la tua esperienza di onboarding, consulta [Percorso di onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) .
 
 ## [!DNL Experience Manager as a Cloud Service] Guide {#aem-guides}
 
