@@ -2,7 +2,7 @@
 title: API obsolete
 description: Note sulla versione specifiche per le API obsolete e rimosse in [!DNL Adobe Experience Manager] come a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 02b610b830911b737f8caa7356d0e446958bcc2f
+source-git-commit: 70ca1cce6995634d330da68cf8bce8ee12c71f1e
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 7%
@@ -40,7 +40,7 @@ Di seguito è riportato un elenco completo delle API di AEM obsolete e la data d
     <td>com.day.cq.jcrclustersupport</td>
     <td>Utilizza l’API di scoperta di Sling come alternativa</td>
     <td>2015</td>
-    <td>30/07/21</td>
+    <td>rimossa</td>
   </tr>
   <tr>
     <td>org.apache.sling.settings</td>
@@ -58,7 +58,7 @@ Di seguito è riportato un elenco completo delle API di AEM obsolete e la data d
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
     <td></td>
     <td>05/03/21</td>
-    <td>06/06/21</td>
+    <td>rimossa</td>
   </tr>
   <tr>
     <td>org.json</td>
@@ -70,7 +70,7 @@ Di seguito è riportato un elenco completo delle API di AEM obsolete e la data d
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
     <td>I gestori di persistenza personalizzati non sono supportati in AEM come Cloud Service.</td>
     <td>30/04/21</td>
-    <td>30/07/21</td>
+    <td>rimossa</td>
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
@@ -88,7 +88,7 @@ Di seguito è riportato un elenco completo delle API di AEM obsolete e la data d
     <td>org.apache.felix.systemready</td>
     <td>Si consiglia invece di utilizzare l'API di controllo dello stato di Apache Felix</td>
     <td>30/04/21</td>
-    <td>30/07/21</td>
+    <td>rimossa</td>
   </tr>
   <tr>
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n</td>
