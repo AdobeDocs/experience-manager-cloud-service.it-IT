@@ -1,9 +1,9 @@
 ---
 title: Configurazioni del Dispatcher in Screens come Cloud Service
 description: Questa pagina descrive come un Cloud Service le configurazioni del Dispatcher in Screens.
-source-git-commit: b00856e1be8842c4e9fa6ed4ada9129926c73ef5
+source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,7 @@ Questa sezione descrive le configurazioni del dispatcher per Screens come Cloud 
 
 Consenti i seguenti filtri e regole di cache nei dispatcher per le istanze di pubblicazione in Screens come Cloud Service.
 
-### Filtri {#filters}
-
-## Filtri AEM Screens
+### Filtri AEM Screens {#filters}
 
 ```
 ## # Content Configurations
@@ -32,12 +30,12 @@ Consenti i seguenti filtri e regole di cache nei dispatcher per le istanze di pu
 /0210 { /type "allow" /method "GET" /url "/etc.clientlibs/*" }
 ```
 
-## Regole di cache {#cache-rules}
+### Regole di cache {#cache-rules}
 
 * Aggiungi `/statfileslevel "10"` alla sezione `/cache` in `publish_farm.any`/.
 
    >[!NOTE]
-   >Questo supporta il caching fino a 10 livelli dal docroot della cache e invalida quando il contenuto viene pubblicato anziché invalidare tutto. Puoi modificare questo livello in base alla profondità della struttura del contenuto.
+   >Questa regola di cache supporta il caching fino a 10 livelli dal docroot della cache e invalida quando il contenuto viene pubblicato anziché invalidare tutto. Puoi modificare questo livello in base alla profondità di configurazione della struttura del contenuto.
 
 * Aggiungi quanto segue alla sezione `/invalidate` in `publish_farm.any`.
 
@@ -56,7 +54,7 @@ Consenti i seguenti filtri e regole di cache nei dispatcher per le istanze di pu
         {
         /glob "/content/screens/*.html"
         /type "allow"
-            }
+        }
    
    ## Allow Dispatcher Cache for Screens offline manifests
    
