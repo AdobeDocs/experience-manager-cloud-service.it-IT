@@ -2,7 +2,7 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 90d75ddd0ace3eff8c3e1cde68208cf0a483ef86
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -122,7 +122,7 @@ Per modificare la pipeline configurata, effettua le seguenti operazioni:
 1. La scheda **Codice sorgente** ti consente di aggiornare l’archivio. Fai clic su **Accedi a informazioni sul repository** per aggiornare il repository.
 
    >[!NOTE]
-   >Per informazioni su come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) .
+   >Per informazioni su come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) .
 
    ![](assets/configure-pipeline/edit-pipeline-2.png)
 
