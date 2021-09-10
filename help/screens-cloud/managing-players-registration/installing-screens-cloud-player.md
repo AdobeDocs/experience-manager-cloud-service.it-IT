@@ -1,13 +1,13 @@
 ---
 title: Installazione e configurazione dei lettori in Screens come Cloud Service
 description: Questa pagina descrive come installare e configurare i lettori in Screens come Cloud Service.
-source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
+exl-id: a022738a-c543-4629-a244-f70fa294fe7f
+source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
-
 
 # Installazione e configurazione dei lettori in Screens come Cloud Service {#installing-players-screens-cloud}
 
@@ -45,7 +45,7 @@ Per aggiornare il lettore, effettua le seguenti operazioni:
 
 ## Monitoraggio della riproduzione di base {#playback-monitoring}
 
-Il lettore riporta varie metriche di riproduzione con ciascuna `ping` che per impostazione predefinita corrisponde a 30 secondi. In base alle metriche, puoi rilevare vari casi edge come esperienza bloccata, schermata vuota e problemi di pianificazione. Questo consente di comprendere e risolvere i problemi del dispositivo, e quindi di accelerare un&#39;indagine e le misure correttive.
+Il lettore riporta varie metriche di riproduzione con ciascuna `ping` che per impostazione predefinita corrisponde a 30 secondi. In base a queste metriche, possiamo rilevare vari casi edge come esperienza bloccata, schermata vuota e problemi di pianificazione. Questo ci permette di capire e risolvere i problemi del dispositivo, e quindi di accelerare un&#39;indagine e le misure correttive con voi.
 
 Il monitoraggio della riproduzione di base in un lettore AEM Screens consente di:
 
@@ -80,9 +80,11 @@ Di seguito sono elencate alcune limitazioni al monitoraggio della riproduzione d
 
 * Il lettore segnala il proprio stato di riproduzione al server, quindi richiede una connessione attiva.
 
-* La proprietà `isContentRendering` che controlla che la GPU sia attualmente ad uso intensivo di risorse, deve essere abilitata per impostazione predefinita e richiede un esplicito consenso alle preferenze del lettore. Si consiglia di non utilizzarlo in combinazione con i video.
+* La proprietà `isContentRendering` che controlla che la GPU sia attualmente troppo intensa di risorse per essere abilitata per impostazione predefinita e richiede un esplicito consenso dalle preferenze del lettore. Si consiglia di non utilizzarlo insieme ai video in produzione.
 
-* Questa funzione è supportata per i canali a sequenza.
+* Questa funzione è supportata solo per i canali di sequenza e non copre ancora il caso d’uso dei canali interattivi (SPA).
+
+* Le metriche non sono ancora completamente esposte ai nostri clienti, stiamo lavorando sodo per abilitare un meccanismo di reporting e avvisi simile a dashboard in un futuro prossimo.
 
 ## Novità {#whats-next}
 
