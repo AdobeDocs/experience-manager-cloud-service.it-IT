@@ -3,9 +3,9 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
+source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1572'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
    { /glob "*" /type "allow" }
    ```
 
-* Per evitare che un contenuto specifico venga memorizzato nella cache, imposta l&#39;intestazione Cache-Control su *private*. Ad esempio, quanto segue impedisce la memorizzazione nella cache del contenuto HTML in una directory denominata **secure**:
+* Per evitare che contenuti specifici vengano memorizzati nella cache **in CDN**, imposta l&#39;intestazione Cache-Control su *private*. Ad esempio, quanto segue impedisce al contenuto HTML in una directory denominata **secure** di essere memorizzato nella cache del CDN:
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -70,6 +70,9 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
 
    >[!NOTE]
    >Gli altri metodi, incluso il [progetto ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), non sostituiranno correttamente i valori.
+
+   >[!NOTE]
+   >Tieni presente che il dispatcher potrebbe comunque memorizzare in cache il contenuto in base alle proprie [regole di memorizzazione in cache](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Per rendere il contenuto davvero privato, assicurati che non sia memorizzato nella cache dal dispatcher.
 
 ### Librerie lato client (js, css) {#client-side-libraries}
 
