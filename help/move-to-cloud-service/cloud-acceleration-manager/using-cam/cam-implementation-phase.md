@@ -1,13 +1,13 @@
 ---
 title: Fase di implementazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di implementazione in Cloud Acceleration Manager.
-source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
+exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
+source-git-commit: e786fe40d97294b4ab5e8657920f2ecbb401d8e9
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '674'
 ht-degree: 2%
 
 ---
-
 
 # Fase di implementazione in Cloud Acceleration Manager {#implementation-phase-cam}
 
@@ -60,21 +60,16 @@ Leggi questa sezione per esplorare la scheda dell’attività Refactoring del co
    * Dispatcher
    * Test
 
-   Nella scheda **Panoramica** viene visualizzato un elenco delle attività di refactoring del codice.
+>[!NOTE]
+>Controlla il contenuto di queste schede per comprendere alcune aree aggiuntive non coperte da Best Practices Analyzer.
 
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+La scheda **Dispatcher** fornisce informazioni su come strutturare il AEM come configurazioni di Cloud Service Apache e Dispatcher, nonché su come convalidarlo ed eseguirlo localmente prima della distribuzione negli ambienti Cloud. Descrive anche il debug negli ambienti Cloud.
 
-   La scheda **Dispatcher** fornisce informazioni su come strutturare il AEM come configurazioni di Cloud Service Apache e Dispatcher, nonché su come convalidarlo ed eseguirlo localmente prima della distribuzione negli ambienti Cloud. Descrive anche il debug negli ambienti Cloud.
+![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+La scheda **Test** fornisce informazioni su funzioni, audit esperienza e test dell’interfaccia utente.
 
-   La scheda **Test** fornisce informazioni su funzioni, audit esperienza e test dell’interfaccia utente.
-
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
-
-
-   >[!NOTE]
-   >Inoltre, controlla il contenuto delle schede nella pagina per comprendere alcune aree aggiuntive non coperte da Best Practices Analyzer.
+![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## Utilizzo di AEM come scheda di distribuzione del Cloud Service {#aem-as-a-cloud-service-deployment}
