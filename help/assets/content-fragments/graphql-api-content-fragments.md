@@ -1,11 +1,11 @@
 ---
 title: AEM API GraphQL per l’utilizzo con frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) come Cloud Service con l’API GraphQL AEM per la distribuzione di contenuti headless.
-feature: Frammenti di contenuto, API GraphQL
+feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3935'
+source-wordcount: '3929'
 ht-degree: 1%
 
 ---
@@ -148,7 +148,7 @@ Per abilitare un endpoint per GraphQL per AEM è necessario:
 * [Abilita l&#39;endpoint GraphQL](#enabling-graphql-endpoint)
 * [Pubblica l’endpoint GraphQL](#publishing-graphql-endpoint)
 
-### Abilitazione dell&#39;endpoint GraphQL {#enabling-graphql-endpoint}
+### Abilitazione dell’endpoint GraphQL {#enabling-graphql-endpoint}
 
 Per abilitare un endpoint GraphQL è innanzitutto necessario disporre di una configurazione appropriata. Consulta [Frammenti di contenuto - Browser di configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
@@ -180,7 +180,7 @@ Per abilitare l&#39;endpoint corrispondente:
    >
    >Puoi impostare ACL, appropriati al tuo caso d&#39;uso, sull&#39;endpoint.
 
-### Pubblicazione dell&#39;endpoint GraphQL {#publishing-graphql-endpoint}
+### Pubblicazione dell’endpoint GraphQL {#publishing-graphql-endpoint}
 
 Seleziona il nuovo endpoint e **Pubblica** per renderlo completamente disponibile in tutti gli ambienti.
 
@@ -812,7 +812,7 @@ Per accedere all’endpoint GraphQL da un sito Web esterno è necessario configu
 
 >[!NOTE]
 >
->Per una panoramica dettagliata dei criteri di condivisione delle risorse CORS in AEM, consulta [Comprendere la condivisione delle risorse tra le origini (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
+>Per una panoramica dettagliata dei criteri di condivisione delle risorse CORS in AEM, consulta [Comprendere la condivisione delle risorse tra le origini (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
 
 Per accedere all’endpoint GraphQL, è necessario configurare un criterio CORS nell’archivio Git del cliente. Questo viene fatto aggiungendo un file di configurazione OSGi CORS appropriato per gli endpoint desiderati.
 
@@ -855,7 +855,7 @@ Ad esempio, per concedere l’accesso all’endpoint GraphQL e all’endpoint di
 
 Se hai configurato un percorso personalizzato per l’endpoint, puoi utilizzarlo anche in `allowedpaths`.
 
-### Filtro referente {#referrer-filter}
+### Filtro di riferimento {#referrer-filter}
 
 Oltre alla configurazione CORS, è necessario configurare un filtro Referrer per consentire l’accesso da host di terze parti.
 

@@ -1,12 +1,12 @@
 ---
 title: Utilizzo di frammenti di contenuto
 description: Scopri come i frammenti di contenuto in Adobe Experience Manager (AEM) come Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per la distribuzione headless.
-feature: Frammenti di contenuto
+feature: Content Fragments
 role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2033'
 ht-degree: 6%
 
 ---
@@ -51,9 +51,9 @@ Nelle pagine seguenti sono illustrate le attività di creazione, configurazione,
 >
 >* [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* [Personalizzazione ed estensione dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-customizing.md)
-* [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-* [Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
-* [AEM API GraphQL per l’utilizzo con frammenti di contenuto](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+>* [Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [AEM API GraphQL per l’utilizzo con frammenti di contenuto](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Il numero di canali di comunicazione aumenta ogni anno. In genere i canali si riferiscono al meccanismo di consegna, come segue:
@@ -75,12 +75,15 @@ I frammenti di contenuto consentono di:
 Questi frammenti di contenuto possono quindi essere assemblati per fornire esperienze su diversi canali.
 
 >[!NOTE]
-I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sono funzioni diverse in AEM:
-* **I** frammenti di contenuto sono contenuti editoriali che possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date. Sono contenuti puri, con definizione e struttura, ma senza design e/o layout visivi aggiuntivi.
-* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
+>
+>I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sono funzioni diverse in AEM:
+>* **I** frammenti di contenuto sono contenuti editoriali che possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date. Sono contenuti puri, con definizione e struttura, ma senza design e/o layout visivi aggiuntivi.
+>* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
 
-I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
-Per ulteriori informazioni, consulta anche [Informazioni sui frammenti di contenuto e i frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments).
+>
+>I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
+>
+>Per ulteriori informazioni, consulta anche [Informazioni sui frammenti di contenuto e i frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 ## Frammenti di contenuto e servizi di contenuto {#content-fragments-and-content-services}
 
@@ -99,13 +102,16 @@ I frammenti di contenuto AEM possono essere utilizzati per descrivere e gestire 
 Insieme alle funzionalità di esportazione JSON dei componenti di base AEM, questo contenuto strutturato può quindi essere utilizzato per distribuire contenuti AEM a canali diversi dalle AEM pagine.
 
 >[!NOTE]
-Per un&#39;introduzione a Headless Development per AEM Sites as a Cloud Service, consulta [Headless and AEM](/help/implementing/developing/headless/introduction.md) .
+>
+>Per un&#39;introduzione a Headless Development per AEM Sites as a Cloud Service, consulta [Headless and AEM](/help/implementing/developing/headless/introduction.md) .
 
 >[!NOTE]
-AEM supporta anche la traduzione del contenuto del frammento.
+>
+>AEM supporta anche la traduzione del contenuto del frammento.
 
 >[!NOTE]
-AEM supporta anche la traduzione del contenuto del frammento. Per ulteriori informazioni, consulta [Traduzione di risorse](/help/assets/translate-assets.md) .
+>
+>AEM supporta anche la traduzione del contenuto del frammento. Per ulteriori informazioni, consulta [Traduzione di risorse](/help/assets/translate-assets.md) .
 
 ## Tipo di contenuto {#content-type}
 
@@ -144,7 +150,8 @@ Le risorse possono essere utilizzate con un frammento di contenuto in diversi mo
    * Per ulteriori informazioni, consulta [Inserimento di risorse nel frammento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) nell’Editor frammento .
 
    >[!NOTE]
-   Le risorse visive inserite nel frammento di contenuto stesso sono associate al paragrafo precedente. Quando il frammento viene aggiunto a una pagina, queste risorse vengono spostate in relazione a tale paragrafo quando viene aggiunto del contenuto intermedio.
+   >
+   >Le risorse visive inserite nel frammento di contenuto stesso sono associate al paragrafo precedente. Quando il frammento viene aggiunto a una pagina, queste risorse vengono spostate in relazione a tale paragrafo quando viene aggiunto del contenuto intermedio.
 
 * **Contenuto associato**
 
@@ -188,10 +195,12 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
    * sono allegati al testo precedente (paragrafo).
 
       >[!CAUTION]
-      Le risorse possono essere rimosse (inavvertitamente) da un frammento passando al formato Testo normale.
+      >
+      >Le risorse possono essere rimosse (inavvertitamente) da un frammento passando al formato Testo normale.
 
       >[!NOTE]
-      Le risorse possono anche essere aggiunte come [contenuto aggiuntivo (intermedio)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) quando si utilizza un frammento in una pagina; utilizzando Contenuto associato o risorse dal browser Risorse.
+      >
+      >Le risorse possono anche essere aggiunte come [contenuto aggiuntivo (intermedio)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) quando si utilizza un frammento in una pagina; utilizzando Contenuto associato o risorse dal browser Risorse.
 
 * **Contenuto associato**
 
@@ -215,7 +224,8 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
          * Modificando i **metadati** nell’editor frammenti
 
    >[!CAUTION]
-   I profili di elaborazione dei metadati non si applicano ai frammenti di contenuto.
+   >
+   >I profili di elaborazione dei metadati non si applicano ai frammenti di contenuto.
 
 * **Principale**
 
@@ -248,7 +258,8 @@ Contenuto intermedio:
 * È possibile utilizzare il contenuto associato, così come le risorse e/o i componenti dal browser appropriato.
 
 >[!CAUTION]
-Il contenuto intermedio è contento di pagina. Non viene memorizzato nel frammento di contenuto.
+>
+>Il contenuto intermedio è contento di pagina. Non viene memorizzato nel frammento di contenuto.
 
 ### Obbligatorio per frammenti {#required-by-fragments}
 

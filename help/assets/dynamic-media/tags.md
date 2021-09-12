@@ -1,12 +1,12 @@
 ---
 title: Integrare i visualizzatori Dynamic Media con Adobe Analytics e i tag di Experience Platform
 description: Scopri l’estensione Dynamic Media Viewers per Experience Platform Tags e Dynamic Media Viewers 5.13. Consente ai clienti di Adobe Analytics e Platform Tags di utilizzare eventi e dati specifici per i visualizzatori Dynamic Media nella configurazione dei tag Experienci Platform.
-feature: Rapporti su risorse
+feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 13dbce0d8ad25fec47460a41c5ea3e355a4dd486
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '6681'
+source-wordcount: '6675'
 ht-degree: 7%
 
 ---
@@ -231,7 +231,7 @@ Il campione impostato sopra influisce anche sulla durata del valore dell’eleme
 
 In ogni caso, i valori degli elementi dati guidati dai visualizzatori Dynamic Media non vengono memorizzati nell’archivio locale o sul server; vengono invece conservati solo nella libreria dei tag di Experience Platform lato client. I valori di tali elementi dati scompaiono quando la pagina web viene ricaricata.
 
-In genere, l&#39;editor di elementi dati supporta la selezione della durata di archiviazione [a1/>. ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en#create-a-data-element) Tuttavia, gli elementi dati che utilizzano l’estensione Dynamic Media Viewers supportano solo l’opzione della durata di archiviazione di **[!UICONTROL None]**. L’impostazione di qualsiasi altro valore è possibile nell’interfaccia utente, ma in questo caso il comportamento Elemento dati non è definito. L&#39;estensione gestisce il valore dell&#39;elemento dati da sola: l’elemento dati che mantiene il valore dell’argomento evento visualizzatore durante l’intero ciclo di vita del visualizzatore.
+In genere, l&#39;editor di elementi dati supporta la selezione della durata di archiviazione [a1/>. ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element) Tuttavia, gli elementi dati che utilizzano l’estensione Dynamic Media Viewers supportano solo l’opzione della durata di archiviazione di **[!UICONTROL None]**. L’impostazione di qualsiasi altro valore è possibile nell’interfaccia utente, ma in questo caso il comportamento Elemento dati non è definito. L&#39;estensione gestisce il valore dell&#39;elemento dati da sola: l’elemento dati che mantiene il valore dell’argomento evento visualizzatore durante l’intero ciclo di vita del visualizzatore.
 
 ### Informazioni sulle regole nell’estensione Dynamic Media Viewers {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -256,7 +256,7 @@ Il metodo più semplice per farlo è quello di completare il seguente processo i
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-È tuttavia possibile adottare un approccio alternativo e ignorare la creazione di elementi dati. È possibile fare riferimento direttamente a un argomento da un evento Dynamic Media Viewer. Immetti il nome completo dell&#39;argomento dell&#39;evento nel campo di input **[!UICONTROL value]** dell&#39;assegnazione della variabile Analytics. Assicurati di circondare i segni di percentuale (%). Esempio,
+È tuttavia possibile adottare un approccio alternativo e ignorare la creazione di elementi dati. È possibile fare riferimento direttamente a un argomento da un evento Dynamic Media Viewer. Immetti il nome completo dell&#39;argomento dell&#39;evento nel campo di input **[!UICONTROL value]** dell&#39;assegnazione della variabile Analytics. Assicurati di circondare i segni di percentuale (%). Ad esempio:
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -443,7 +443,7 @@ Vedi anche [Guida all&#39;implementazione di Analytics](https://experienceleague
 
    Se non è disponibile alcuna suite di rapporti, è necessario crearne una o più prima di procedere con la configurazione.
 
-   Consulta [Report e suite per report](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) e [Creare una suite per report](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites).
+   Consulta [Report e suite per report](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) e [Creare una suite per report](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#manage-report-suites).
 
    In Adobe Analytics, le suite di rapporti sono gestite in **[!UICONTROL Amministratore]** > **[!UICONTROL Suite di rapporti]**.
 
@@ -568,7 +568,7 @@ Per attivare il tracking Video Heartbeat, seleziona **[!UICONTROL enable Adobe A
 
 A partire da questa scrittura, l’estensione *Dynamic Media Viewers* è disponibile solo se per lo sviluppo viene creata la proprietà Experience Platform Tags.
 
-Consulta [Creare una proprietà in Experience Platform Tags](#creating-a-property-in-adobe-launch).
+Consulta [Creare una proprietà in Tag di Experience Platform](#creating-a-property-in-adobe-launch).
 
 Una volta installate e configurate le estensioni, almeno le seguenti cinque estensioni (quattro se non stai monitorando il video) saranno elencate nell&#39;area Estensioni > Installate .
 
@@ -605,7 +605,7 @@ La pubblicazione di una libreria prevede i due passaggi seguenti:
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
-1. Nella pagina Crea nuova libreria , immetti un nome descrittivo per la nuova libreria nel campo **[!UICONTROL Name]** . Esempio,
+1. Nella pagina Crea nuova libreria , immetti un nome descrittivo per la nuova libreria nel campo **[!UICONTROL Name]** . Ad esempio:
 
    *DynamicMediaViewersLib*
 
@@ -667,7 +667,7 @@ La configurazione dell’Experience Manager consiste dei due passaggi principali
 
 ### Configurare Experience Manager IMS {#configuring-aem-ims}
 
-1. In Experience Manager Author, seleziona l’icona Strumenti (martello), quindi vai a **[!UICONTROL Sicurezza]** > **[!UICONTROL Adobe configurazioni IMS]**.
+1. In Experience Manager Author, seleziona l’icona Strumenti (martello), quindi vai a **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni Adobe IMS]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
@@ -730,12 +730,12 @@ La configurazione dell’Experience Manager consiste dei due passaggi principali
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
    _Pagina dei dettagli di integrazione_
 
-1. Torna alla pagina **[!UICONTROL Configurazione account tecnico Adobe IMS]** che hai lasciato aperta in precedenza. Nell&#39;angolo in alto a destra della pagina, seleziona **[!UICONTROL Avanti]** per aprire la pagina **[!UICONTROL Account]** nella finestra **[!UICONTROL Configurazione account tecnico IMS Adobe]** .
+1. Torna alla pagina **[!UICONTROL Configurazione account tecnico Adobe IMS]** che hai lasciato aperta in precedenza. Nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Avanti]** per aprire la pagina **[!UICONTROL Account]** nella finestra **[!UICONTROL Configurazione account tecnico Adobe IMS]**.
 
-   Se hai chiuso la pagina prima, torna all’autore di Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni IMS Adobi]**. Seleziona **[!UICONTROL Crea]**. Nell’elenco a discesa **[!UICONTROL Soluzione cloud]** , seleziona **[!UICONTROL Tag Experience Platform]**. Nell’elenco a discesa **[!UICONTROL Certificato]**, fai clic sul nome del certificato creato in precedenza.
+   Se hai chiuso la pagina prima, torna all’autore di Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni Adobe IMS]**. Seleziona **[!UICONTROL Crea]**. Nell’elenco a discesa **[!UICONTROL Soluzione cloud]** , seleziona **[!UICONTROL Tag Experience Platform]**. Nell’elenco a discesa **[!UICONTROL Certificato]**, fai clic sul nome del certificato creato in precedenza.
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
-   _Adobe IMS Configurazione account tecnico - Pagina del certificato_
+   _Configurazione dell’account tecnico Adobe IMS - Pagina del certificato_
 
 1. La pagina **[!UICONTROL Account]** contiene cinque campi che richiedono di compilare utilizzando le informazioni della pagina dei dettagli di integrazione del passaggio precedente.
 
@@ -799,7 +799,7 @@ Ad esempio, `https://ims-na1.adobelogin.com/`
 
    * **[!UICONTROL Titolo]**  - Inserisci un titolo di configurazione descrittivo. Esempio, `We.Retail Tags cloud configuration`.
 
-   * **[!UICONTROL Configurazione IMS per Adobe associato]** : seleziona la configurazione IMS creata in precedenza in  [Configura IMS per Experience Manager](#configuring-aem-ims).
+   * **[!UICONTROL Configurazione Adobe IMS associata]** : seleziona la configurazione IMS creata in precedenza in  [Configura Experience Manager IMS](#configuring-aem-ims).
 
    * **[!UICONTROL Società]**  - Dall’elenco a discesa  **** Società, seleziona la tua società di Experience Cloud. L’elenco viene compilato automaticamente.
 

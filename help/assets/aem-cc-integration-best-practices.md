@@ -3,12 +3,12 @@ title: Best practice per l’integrazione con [!DNL Adobe Creative Cloud]
 description: Le best practice integrano un’implementazione Experience Manager con Adobe Creative Cloud per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere la massima efficienza.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collaborazione, Adobe Asset Link, App desktop
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3443'
 ht-degree: 15%
 
 ---
@@ -39,7 +39,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 | Proposta di valore per i soggetti coinvolti | offerta Adobe | Superfici interessate |
 |---|---|---|
 | Gli utenti creativi individuano le risorse da [!DNL Experience Manager], le aprono e le utilizzano, le modificano e caricano le modifiche in [!DNL Experience Manager], nonché caricano nuovi file in [!DNL Experience Manager], senza uscire dall’app [!DNL Creative Cloud]. | [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign. |
-| Gli utenti aziendali semplificano l’apertura e l’utilizzo delle risorse, la modifica e il caricamento delle modifiche a [!DNL Experience Manager] e il caricamento di nuovi file in [!DNL Experience Manager] dall’ambiente desktop. Utilizzano un’integrazione generica per aprire qualsiasi tipo di risorsa nell’applicazione desktop nativa, inclusi quelli non Adobi. | App desktop [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Experience Manager desktop app su desktop Win e Mac |
+| Gli utenti aziendali semplificano l’apertura e l’utilizzo delle risorse, la modifica e il caricamento delle modifiche a [!DNL Experience Manager] e il caricamento di nuovi file in [!DNL Experience Manager] dall’ambiente desktop. Utilizzano un’integrazione generica per aprire qualsiasi tipo di risorsa nell’applicazione desktop nativa, inclusi quelli non Adobi. | App desktop [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Experience Manager desktop app su desktop Win e Mac |
 | Gli addetti al marketing e gli utenti aziendali possono individuare, visualizzare in anteprima, concedere in licenza e salvare le risorse Adobe Stock e gestirle dall’interno di Experience Manager. Le risorse concesse in licenza e salvate forniscono metadati selezionati di Adobe Stock per una migliore governance. | [Integrazione di Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interfaccia web |
 | Migliorare la collaborazione tra designer di prodotti digitali e addetti al marketing. Consentono ai designer di utilizzare le risorse digitali nei modelli di progettazione e wireframe su Adobe XD canvas. | [[!DNL Adobe Asset Link] per [!DNL Adobe XD]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | Gli addetti al marketing possono creare automaticamente varianti e derivati in base alle risorse caricate e alle azioni predefinite create utilizzando la personalizzazione. Utilizza questa automazione per migliorare la velocità dei contenuti e ridurre lo sforzo manuale. | [Automazione dei contenuti](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] interfaccia web |

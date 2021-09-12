@@ -4,9 +4,9 @@ description: Scopri come lavorare con video interattivi e video acquistabili in 
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '5938'
+source-wordcount: '5936'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Per visualizzare un video interattivo e acquistabile in azione, seleziona [Live 
 
 * Per mettere in pausa il video e aprire la visualizzazione rapida del prodotto, seleziona la miniatura. Ad esempio, selezionare l&#39;immagine in miniatura di KitchenAid nel video per vedere una rotazione a 360° del mixer, oppure ingrandirla per vedere i dettagli del mixer.
 
-Vedere anche [Utilizzare video interattivi con Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
+Vedere anche [Utilizzare video interattivi con Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
 
 <!-- 
 
