@@ -1,13 +1,13 @@
 ---
 title: Gestione multisito e traduzione
 description: Scopri come riutilizzare i contenuti all’interno del progetto e gestire siti web multilingue in AEM.
-feature: Amministrazione
+feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 2%
+source-wordcount: '410'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,10 @@ Gli strumenti di traduzione e gestione multisito integrati di Adobe Experience M
    * [Traduzione di contenuti per siti multilingue](translation/overview.md)
 
 Queste due funzioni possono essere combinate per gestire siti web che sono sia [multinazionali che multilingue](#multinational-and-multilingual-sites).
+
+>[!TIP]
+>
+>Se non hai esperienza nella traduzione dei contenuti, consulta il nostro [Percorso di traduzione dei siti,](/help/journey-sites/translation/overview.md) che è un percorso guidato attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideale per chi non ha esperienza di AEM o traduzione.
 
 ## Siti multinazionali e multilingue {#multinational-and-multilingual-sites}
 
@@ -55,5 +59,5 @@ Per casi di utilizzo più avanzati, MSM può essere utilizzato anche tra i maste
 >Per tutti i casi d’uso si consiglia di leggere le seguenti best practice:
 >
 >* [Best practice per MSM](msm/best-practices.md)
-* [Best practice per la traduzione](translation/best-practices.md)
+>* [Best practice per la traduzione](translation/best-practices.md)
 

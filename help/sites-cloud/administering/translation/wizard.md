@@ -1,19 +1,23 @@
 ---
 title: Creazione guidata copia lingua
 description: Informazioni sull'utilizzo della Creazione guidata copia in lingua in AEM.
-feature: Copia lingua
+feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 2%
+source-wordcount: '286'
+ht-degree: 1%
 
 ---
 
 # Creazione guidata copia lingua {#language-copy-wizard}
 
 La Creazione guidata copia in lingua è un’esperienza guidata per la creazione e la strumentazione di una struttura di contenuto multilingue. La creazione guidata rende la creazione di una copia della lingua semplice e veloce.
+
+>[!TIP]
+>
+>Se non hai esperienza nella traduzione dei contenuti, consulta il nostro [Percorso di traduzione dei siti,](/help/journey-sites/translation/overview.md) che è un percorso guidato attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideale per chi non ha esperienza di AEM o traduzione.
 
 >[!NOTE]
 >

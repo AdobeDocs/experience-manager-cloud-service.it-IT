@@ -2,9 +2,9 @@
 title: Gestione dei progetti
 description: I progetti consentono di organizzare il progetto raggruppando le risorse in un’unica entità accessibile e gestibile nella console Progetti
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '894'
 ht-degree: 80%
 
 ---
@@ -15,7 +15,7 @@ La funzione Progetti consente di organizzare un progetto raggruppando le risorse
 
 La console **Progetti** consente di accedere ai progetti e di eseguire azioni su di essi:
 
-![Console Progetti](/help/sites-cloud/authoring/assets/projects-console-detail.png)
+![Console Progetti](/help/sites-cloud/authoring/assets/projects-console.png)
 
 Tramite Progetti è possibile creare un progetto e associarvi risorse, ma anche eliminarlo o eliminare i collegamenti alle risorse. È possibile aprire una porzione per visualizzarne il contenuto e aggiungere elementi. In questo argomento vengono descritte le procedure.
 
@@ -40,7 +40,7 @@ La procedura di creazione di un progetto è la stessa per ciascun progetto. La d
 
 1. Definisci il **Titolo** e **Descrizione** e aggiungi un&#39;immagine **Miniatura** se necessario. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
 
-   ![Aggiunta di dettagli al progetto](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![Aggiunta di dettagli al progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Tocca o fai clic su **Crea**. Ti viene richiesto se desideri aprire il nuovo progetto o tornare alla console.
 
@@ -85,13 +85,11 @@ Per alcune porzioni è possibile aggiungere più di un oggetto. Ad esempio, è p
 
 Per aggiungere elementi a una porzione:
 
-1. In **Progetti**, accedi al progetto e fai clic sull’icona Aggiungi + sulla tessera a cui desideri aggiungere un elemento.
+1. In **Progetti**, accedi al progetto e tocca o fai clic sulla freccia giù sulla tessera a cui desideri aggiungere un elemento.
 
-   ![Aggiungi un elemento a una tessera](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![Aggiungi un elemento a una tessera](/help/sites-cloud/authoring/assets/project-workflows.png)
 
 1. Aggiungi un elemento alla porzione con la stessa procedura che usi quando crei una nuova porzione. Le porzioni di progetto sono descritte [qui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In questo esempio è stato aggiunto un altro flusso di lavoro.
-
-   ![Un altro elemento aggiunto a un riquadro](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### Aprire una porzione {#opening-a-tile}
 
@@ -99,19 +97,17 @@ Per aggiungere elementi a una porzione:
 
 Per aprire una porzione e visualizzare o modificare gli elementi:
 
-1. Dalla console Progetti, tocca o fai clic sui puntini di sospensione (...)
+1. Dalla console Progetti, tocca o fai clic sui puntini di sospensione (...) nella parte inferiore della scheda.
 
-   ![Apertura di una tessera](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+   ![Apertura di una tessera](/help/sites-cloud/authoring/assets/project-links.png)
 
 1. AEM mostra l’elenco degli elementi inclusi nella porzione. Per modificarli o eliminarli, entra nella modalità di selezione.
 
-   ![Riquadro aperto](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![Riquadro aperto](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ## Visualizzazione delle statistiche di un progetto {#viewing-project-statistics}
 
-Per visualizzare le statistiche di un progetto, dalla console **Progetti** fai clic su **Mostra vista statistiche**. Viene visualizzato il livello di completamento di ciascun progetto. Fai di nuovo clic su **Mostra vista statistiche** per passare alla console **Progetti**.
-
-![Statistiche del progetto](/help/sites-cloud/authoring/assets/projects-stats.png)
+Puoi visualizzare le statistiche dei progetti nella console **Progetti** .
 
 ### Visualizzazione della cronologia di un progetto {#viewing-a-project-timeline}
 
@@ -143,6 +139,6 @@ Per rendere un progetto attivo o inattivo:
 1. Tocca o fai clic su **Modifica**.
 1. Modifica il selettore passando da **Attivo** a **Inattivo** (o viceversa).
 
-   ![Attivazione di un progetto](/help/sites-cloud/authoring/assets/projects-activate.png)
+   ![Attivazione di un progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Tocca o fai clic su **Fine** per salvare le modifiche apportate.

@@ -1,12 +1,12 @@
 ---
 title: Configurazione del framework di integrazione della traduzione
 description: Scopri come configurare il framework di integrazione della traduzione per l’integrazione con i servizi di traduzione di terze parti.
-feature: Copia lingua
+feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1419'
 ht-degree: 2%
 
 ---
@@ -20,6 +20,10 @@ Il framework di integrazione della traduzione si integra con servizi di traduzio
 1. [Associa le configurazioni cloud alle pagine.](#configuring-pages-for-translation)
 
 Per una panoramica delle funzioni di traduzione dei contenuti in AEM, consulta [Traduzione di contenuti per siti multilingue](overview.md).
+
+>[!TIP]
+>
+>Se non hai esperienza nella traduzione dei contenuti, consulta il nostro [Percorso di traduzione dei siti,](/help/journey-sites/translation/overview.md) che è un percorso guidato attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideale per chi non ha esperienza di AEM o traduzione.
 
 ## Connessione a un provider di servizi di traduzione {#connecting-to-a-translation-service-provider}
 

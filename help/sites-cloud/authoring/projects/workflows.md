@@ -2,10 +2,10 @@
 title: Utilizzo dei flussi di lavoro per i progetti
 description: La soluzione offre diversi flussi di lavoro per progetti già pronti all’uso.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 77%
+source-wordcount: '452'
+ht-degree: 75%
 
 ---
 
@@ -21,15 +21,14 @@ I flussi di lavoro per progetti disponibili includono i seguenti:
 
 A seconda del modello di progetto selezionato, hai determinati flussi di lavoro disponibili:
 
-|  | **Progetto semplice** | **Progetto multimediale** | **Progetto di traduzione** |
-|---|:-:|:-:|:-:|
-| Richiedi copia |  | x |  |
-| Approvazione del progetto | x |  |  |
-| Richiedi lancio | x |  |  |
-| Richiedi pagina di destinazione | x |  |  |
-| Richiedi e-mail | x |  |  |
-| Crea copia &amp;ast;DAM; |  |  | x |
-| Crea e traduci copia&amp;ast;DAM; |  |  | x |
+|  | **Progetto semplice** | **Progetto di traduzione** |
+|---|:-:|:-:|
+| Flusso di lavoro di approvazione del progetto | x |  |
+| Richiedi lancio | x |  |
+| Richiedi pagina di destinazione | x |  |
+| Richiedi e-mail | x |  |
+| Crea copia &amp;ast;DAM; |  | x |
+| Crea e traduci copia&amp;ast;DAM; |  | x |
 
 >[!NOTE]
 >
@@ -47,19 +46,6 @@ Per ulteriori informazioni sulle operazioni con i flussi di lavoro in AEM, consu
 
 Questa sezione descrive i flussi di lavoro disponibili per Progetti.
 
-## Flusso di lavoro Richiedi copia {#request-copy-workflow}
-
-Questo flusso di lavoro consente di richiedere un manoscritto ad un utente, e poi approvarlo. Per avviare il flusso di lavoro Richiedi copia:
-
-1. Nel progetto Media, seleziona il segno **+** nella sezione **Flussi di lavoro** e fai clic su **Request Copy Workflow (Richiedi copia flusso di lavoro)**.
-1. Immetti il titolo del manoscritto e un breve riassunto della tua richiesta. Se necessario, puoi immettere il numro delle parole di destinazione, impostare la priorità e la scadenza.
-
-   ![Flusso di lavoro Richiedi copia](/help/sites-cloud/authoring/assets/projects-request-copy.png)
-
-1. Fai clic su **Crea**. Il flusso di lavoro inizia. L’attività viene visualizzata nella sezione **Attività**.
-
-   ![È stata aggiunta una copia della richiesta](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
-
 ## Flusso di lavoro di approvazione progetto {#project-approval-workflow}
 
 Nel flusso di lavoro di approvazione progetto, assegni i contenuti ad un utente, li revisioni e poi li approvi.
@@ -70,8 +56,6 @@ Nel flusso di lavoro di approvazione progetto, assegni i contenuti ad un utente,
    ![Richiedi approvazione](/help/sites-cloud/authoring/assets/projects-approval.png)
 
 1. Fai clic su **Crea**. Il flusso di lavoro inizia. L’attività viene visualizzata nella sezione **Attività**.
-
-   ![Richiesta di approvazione aggiunta](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
 ## Flusso di lavoro Richiedi lancio {#request-launch-workflow}
 
@@ -86,4 +70,4 @@ Questo flusso di lavoro consente di richiedere un lancio.
 
 ## Flusso di lavoro Crea (e traduci) copia per lingua per le risorse {#create-and-translate-language-copy-workflow-for-assets}
 
-I flussi di lavoro **Crea copia per lingua** e **Crea e traduci copia lingua** sono descritti in modo dettagliato nella creazione di copie in lingua per le risorse.
+I flussi di lavoro **Crea copia per lingua** e **Crea e traduci copia lingua**[ sono descritti in modo dettagliato nella creazione di copie in lingua per le risorse.](/help/assets/translate-assets.md)

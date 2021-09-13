@@ -1,12 +1,12 @@
 ---
 title: Preparazione del contenuto per la traduzione
 description: Scopri come preparare i contenuti per la traduzione.
-feature: Copia lingua
+feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Preparazione del contenuto per la traduzione {#preparing-content-for-translation}
 
 I siti web multilingue forniscono generalmente una certa quantità di contenuto in più lingue. Il sito viene creato in una lingua e poi tradotto in altre lingue. In genere, i siti multilingue sono composti da rami di pagine, in cui ogni ramo contiene le pagine del sito in una lingua diversa.
+
+>[!TIP]
+>
+>Se non hai esperienza nella traduzione dei contenuti, consulta il nostro [Percorso di traduzione dei siti,](/help/journey-sites/translation/overview.md) che è un percorso guidato attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideale per chi non ha esperienza di AEM o traduzione.
 
 Il [sito di esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) include diversi rami di lingua e utilizza la seguente struttura:
 
@@ -136,8 +140,7 @@ Le radici della lingua possono anche essere raggruppate sotto i nodi, ad esempio
 >* `/content/wknd/language-masters/americas/central-america/es`
 
 >
-> 
-Questa `es` copia della lingua non verrà rilevata perché si trova a 2 livelli (`americas/central-america`) lontano dal nodo `en`.
+> Questa `es` copia della lingua non verrà rilevata perché si trova a 2 livelli (`americas/central-america`) lontano dal nodo `en`.
 
 >[!TIP]
 >

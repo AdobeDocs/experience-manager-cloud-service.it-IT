@@ -1,12 +1,12 @@
 ---
 title: Connessione a Microsoft Translator
 description: Scopri come collegare AEM a Microsoft Translator out-of-the-box per automatizzare il flusso di lavoro di traduzione.
-feature: Copia lingua
+feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '514'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 2%
 # Connessione a Microsoft Translator {#connecting-to-microsoft-translator}
 
 Crea una configurazione per il servizio cloud [Microsoft Translator](https://hub.microsofttranslator.com) per utilizzare il tuo account Microsoft Translation per tradurre AEM contenuto o risorse di pagina.
+
+>[!TIP]
+>
+>Se non hai esperienza nella traduzione dei contenuti, consulta il nostro [Percorso di traduzione dei siti,](/help/journey-sites/translation/overview.md) che è un percorso guidato attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideale per chi non ha esperienza di AEM o traduzione.
 
 >[!NOTE]
 >
