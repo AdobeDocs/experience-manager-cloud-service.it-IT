@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
+source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1315'
 ht-degree: 2%
 
 ---
@@ -50,11 +50,10 @@ Verranno registrati i seguenti casi specifici:
 
 * Quando vengono eseguiti gli integratori di contenuto, se il contenuto non viene trasferito perché non è cambiato dal trasferimento precedente, gli utenti e i gruppi associati a tale contenuto non verranno trasferiti, anche se nel frattempo gli utenti e i gruppi sono cambiati. Questo perché gli utenti e i gruppi vengono migrati insieme al contenuto a cui sono associati.
 
-* L’acquisizione avrà esito negativo nei seguenti scenari:
+* Se l&#39;istanza del Cloud Service di AEM di destinazione ha un utente con un nome utente diverso ma lo stesso indirizzo e-mail di uno degli utenti nell&#39;istanza AEM di origine e la mappatura utente è abilitata, nei registri verrà scritto un messaggio di errore e l&#39;utente AEM di origine non verrà trasferito, in quanto sul sistema di destinazione è consentito un solo utente con un dato indirizzo e-mail.
 
-1. Se l&#39;istanza del Cloud Service AEM di destinazione ha un utente con un nome utente diverso ma lo stesso indirizzo e-mail di uno degli utenti nell&#39;istanza AEM di origine.
+* Se due utenti nell&#39;istanza AEM di origine hanno lo stesso indirizzo e-mail e User Mapping è abilitato, nei registri verrà scritto un messaggio di errore e uno degli utenti AEM di origine non verrà trasferito, in quanto sul sistema di destinazione è consentito un solo utente con un dato indirizzo e-mail.
 
-1. Se nell’istanza di AEM di origine sono presenti due utenti con nomi utente diversi ma con lo stesso indirizzo e-mail. AEM come Cloud Service non consente a due utenti di avere lo stesso indirizzo e-mail.
 
 ## Utilizzo dello strumento di mappatura utente {#using-user-mapping-tool}
 
