@@ -4,10 +4,10 @@ user-guide-title: Guida di Assets as a Cloud Service
 breadcrumb-title: Guida di Assets
 user-guide-description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+source-git-commit: 8ed1d93a11c326df449164d35c7433f21b64d187
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 44%
+source-wordcount: '483'
+ht-degree: 43%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 44%
    + [Profili metadati](metadata-profiles.md)
    + [Schema metadati](metadata-schemas.md)
    + [Gestire le risorse video](manage-video-assets.md)
+   + [Riutilizzare le risorse con MSM](reuse-assets-using-msm.md)
    + [Scaricare le risorse](download-assets-from-aem.md)
    + [Archiviare ed estrarre le risorse da modificare](check-out-and-submit-assets.md)
    + [Digital Rights Management per le risorse](drm.md)
@@ -58,7 +59,7 @@ ht-degree: 44%
    + [Autenticazione per query GraphQL remote sui frammenti di contenuto](content-fragments/graphql-authentication-content-fragments.md)
    + [API GraphQL con frammenti di contenuto - Contenuto di esempio e query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Risorse collegate](use-assets-across-connected-assets-instances.md)
-   + [Generare rappresentazioni FPO per Adobe InDesign](configure-fpo-renditions.md)
+   + [Genera solo rappresentazioni per posizionamento](configure-fpo-renditions.md)
    + [Rapporti sulle risorse](asset-reports.md)
    + [Metadati a cascata](cascading-metadata.md)
    + [Metadati XMP](xmp-metadata.md)
@@ -67,7 +68,7 @@ ht-degree: 44%
 + Condividere e distribuire le risorse {#brand-portal}
    + [Configura [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Pubblicare risorse su [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [Pubblicare risorse  [!DNL Brand Portal] da [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
+   + [Pubblicare risorse  [!DNL Brand Portal] da [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + Frammenti di contenuto {#content-fragments}
    + [Utilizzo di frammenti di contenuto](content-fragments/content-fragments.md)
    + [Distribuzione headless con frammenti di contenuto e GraphQL](content-fragments/content-fragments-graphql.md)
