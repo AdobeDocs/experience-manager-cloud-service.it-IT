@@ -2,7 +2,7 @@
 title: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
 description: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 17%
@@ -17,12 +17,12 @@ AEM Sites as a Cloud Service fornisce funzionalità di gestione delle esperienze
 >Questo documento evidenzia le modifiche di rilievo apportate ad AEM Sites. Per le modifiche generali a AEM come Cloud Service e ad altri moduli, consulta:
 >
 >* [Introduzione ad Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
-* [Panoramica di AEM as a Cloud Service: novità e differenze](/help/overview/what-is-new-and-different.md)
-* [Architettura](/help/core-concepts/architecture.md) di Adobe Experience Manager as a Cloud Service
-* [Modifiche di rilievo apportate ad AEM as a Cloud Service (Note sulla versione)](/help/release-notes/aem-cloud-changes.md)
-* [Modifiche di rilievo apportate ad AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
-* [Introduzione ad AEM Assets as a Cloud Service](/help/assets/overview.md)
-* [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
+>* [Panoramica di AEM as a Cloud Service: novità e differenze](/help/overview/what-is-new-and-different.md)
+>* [Architettura](/help/overview/architecture.md) di Adobe Experience Manager as a Cloud Service
+>* [Modifiche di rilievo apportate ad AEM as a Cloud Service (Note sulla versione)](/help/release-notes/aem-cloud-changes.md)
+>* [Modifiche di rilievo apportate ad AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
+>* [Introduzione ad AEM Assets as a Cloud Service](/help/assets/overview.md)
+>* [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
 
 
 Le modifiche e le aggiunte in AEM Sites come Cloud Service sono le seguenti:
@@ -40,7 +40,8 @@ Nel servizio AEM Cloud, le operazioni che tradizionalmente hanno bloccato l’in
 L’iniziatore di tali azioni può controllarne lo stato in una nuova interfaccia utente in `/mnt/overlay/dam/gui/content/asyncjobs.html`.
 
 >[!NOTE]
-L’utente del sistema non deve apportare alcuna modifica per utilizzare questa nuova funzione. Si nota qui semplicemente come un cambiamento di comportamento rispetto alle versioni on-premise precedenti di AEM.
+>
+>L’utente del sistema non deve apportare alcuna modifica per utilizzare questa nuova funzione. Si nota qui semplicemente come un cambiamento di comportamento rispetto alle versioni on-premise precedenti di AEM.
 
 ## Nuovo sito di riferimento e tutorial {#new-reference-site-and-tutorial}
 

@@ -2,7 +2,7 @@
 title: Percorso per la prima esperienza con AEM Headless
 description: In questa parte del Percorso di sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprendi le best practice per rendere il percorso il più semplice possibile.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
@@ -147,7 +147,7 @@ Mentre si consiglia di passare alla parte successiva del percorso di sviluppo he
 * [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) : utilizza questi tutorial pratici per scoprire come utilizzare le varie opzioni per la distribuzione di contenuti agli endpoint headless con AEM e scegliere ciò che è più adatto alle tue esigenze.
 * [Gestione dei contenuti headless tramite API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) : segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
 * [AEM guide WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  - Questo progetto GitHub include applicazioni di esempio che evidenziano AEM API GraphQL.
-* [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/core-concepts/architecture.md)  - Panoramica completa dell’architettura AEM
+* [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)  - Panoramica completa dell’architettura AEM
 * [Guida introduttiva headless](/help/implementing/developing/headless/introduction.md#getting-started) : introduzione rapida alle funzioni headless per gli utenti già esperti di AEM.
 * [Creare modelli di frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)  - Documentazione tecnica sui modelli di frammenti di contenuto
 * [Creazione di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)  - Documentazione tecnica sui frammenti di contenuto

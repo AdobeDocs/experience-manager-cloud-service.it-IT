@@ -1,12 +1,12 @@
 ---
 title: Modifiche di rilievo in [!DNL Adobe Experience Manager Assets] come a [!DNL Cloud Service]
 description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5.
-feature: Informazioni sulla versione
+feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: b2f68acaf4c88a3a7e0768410cee53eb2d07a76e
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 5%
 
 ---
@@ -71,10 +71,10 @@ Per eseguire una convalida end-to-end del codice e del processo, compresi l’in
 >Le risorse seguenti sono disponibili per [!DNL Experience Manager] come [!DNL Cloud Service]:
 >
 >* [Elenco delle funzioni obsolete e rimosse](/help/release-notes/deprecated-removed-features.md)
-* [Introduzione](/help/overview/introduction.md)
-* [Novità e differenze](/help/overview/what-is-new-and-different.md)
-* [L&#39;architettura](/help/core-concepts/architecture.md)
-* [Modifiche di rilievo](/help/release-notes/aem-cloud-changes.md)
-* [Modifiche di rilievo [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
-* [Esercitazioni video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
+>* [Introduzione](/help/overview/introduction.md)
+>* [Novità e differenze](/help/overview/what-is-new-and-different.md)
+>* [L&#39;architettura](/help/overview/architecture.md)
+>* [Modifiche di rilievo](/help/release-notes/aem-cloud-changes.md)
+>* [Modifiche di rilievo [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Esercitazioni video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
 
