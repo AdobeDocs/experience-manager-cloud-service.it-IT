@@ -2,12 +2,12 @@
 title: Configurare e utilizzare i microservizi per le risorse
 description: Configura e utilizza i microservizi per le risorse native per il cloud per elaborare le risorse su larga scala.
 contentOwner: AG
-feature: asset compute Microservices,Flusso di lavoro,Elaborazione delle risorse
+feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2704'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 I microservizi per le risorse forniscono un’elaborazione scalabile e resiliente delle risorse utilizzando applicazioni native per il cloud (o processi di lavoro). Adobe gestisce i servizi per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione.
 
-I microservizi per le risorse consentono di elaborare una [vasta gamma di tipi di file](/help/assets/file-format-support.md) che include più formati pronti all’uso rispetto alle versioni precedenti di [!DNL Experience Manager]. Ad esempio, l’estrazione delle miniature dei formati PSD e PSB è ora possibile, ma in precedenza era necessaria una soluzione di terze parti come [!DNL ImageMagick].
+I microservizi per le risorse consentono di elaborare una [vasta gamma di tipi di file](/help/assets/file-format-support.md) che include più formati pronti all’uso rispetto alle versioni precedenti di [!DNL Experience Manager]. Ad esempio, l’estrazione delle miniature dei formati PSD e PSB è ora possibile, ma in precedenza è necessaria una soluzione di terze parti come [!DNL ImageMagick].
 
 L’elaborazione delle risorse dipende dalla configurazione in **[!UICONTROL Profili di elaborazione]**. Experience Manager fornisce una configurazione predefinita di base e consente agli amministratori di aggiungere una configurazione di elaborazione delle risorse più specifica. Gli amministratori creano, gestiscono e modificano le configurazioni dei flussi di lavoro di post-elaborazione, inclusa la personalizzazione facoltativa. La personalizzazione dei flussi di lavoro consente agli sviluppatori di estendere l’offerta predefinita.
 
