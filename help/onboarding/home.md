@@ -2,9 +2,9 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '521'
 ht-degree: 28%
 
 ---
@@ -35,9 +35,8 @@ Il percorso di onboarding illustrato di seguito è stato progettato per un utent
 | Guida utente | Descrizione |
 |---|---|
 | [Home page di Experience Manager as a Cloud Service](/help/landing/home.md) | Panoramica della documentazione di Experience Manager as a Cloud Service. |
-| [Panoramica](/help/overview/home.md) | Questa guida offre una panoramica di [!DNL Experience Manager as a Cloud Service], con informazioni introduttive, terminologiche e così via. |
+| [Panoramica](/help/overview/home.md) | Questa guida fornisce una panoramica di [!DNL Experience Manager as a Cloud Service] , che include un’introduzione, una terminologia, un’architettura e così via. |
 | [Note sulla versione](/help/release-notes/home.md) | Questa guida fornisce informazioni importanti sull’ultima versione di [!DNL Experience Manager as a Cloud Service], incluse le funzioni nuove, obsolete e rimosse e i problemi noti. |
-| [Concetti di base](/help/core-concepts/home.md) | Questa guida fornisce un’introduzione ai concetti di base di [!DNL Experience Manager as a Cloud Service], inclusa l’architettura del nuovo servizio. |
 | [Guida utente sulla sicurezza](/help/security/home.md) | Scopri importanti argomenti sulla sicurezza relativi a [!DNL Experience Manager as a Cloud Service]. |
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Scopri come creare e amministrare [!DNL Experience Manager Sites] come Cloud Service. |
 | [Guida utente di Assets](/help/assets/home.md) | Scopri come utilizzare e amministrare [!DNL Experience Manager Assets as a Cloud Service]. |

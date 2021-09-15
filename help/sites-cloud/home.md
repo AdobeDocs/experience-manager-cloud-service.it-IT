@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Sites as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione di Adobe Experience Manager Sites as a Cloud Service
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 88%
+source-wordcount: '406'
+ht-degree: 83%
 
 ---
 
@@ -31,9 +31,8 @@ In questa pagina sono elencate le risorse di supporto autonomo relative a Experi
 | Guida utente | Descrizione |
 |---|---|
 | [Home page di Experience Manager as a Cloud Service](/help/landing/home.md) | Panoramica della documentazione di Experience Manager as a Cloud Service. |
-| [Panoramica](/help/overview/home.md) | Questa guida offre una panoramica di Experience Manager as a Cloud Service, con un’introduzione, terminologia e altro ancora. |
+| [Panoramica](/help/overview/home.md) | Questa guida fornisce una panoramica di Experience Manager as a Cloud Service, con un’introduzione, terminologia, architettura e così via. |
 | [Note sulla versione](/help/release-notes/home.md) | Questa guida include informazioni importanti sull’ultima versione di Experience Manager as a Cloud Service e illustra le funzioni nuove, obsolete e rimosse, nonché i problemi noti. |
-| [Concetti di base](/help/core-concepts/home.md) | In questa guida vengono introdotti i concetti di base di Experience Manager as a Cloud Service e viene illustrata l’architettura del nuovo servizio. |
 | [Guida utente sulla sicurezza](/help/security/home.md) | Argomenti importanti sulla sicurezza relativi a Experience Manager as a Cloud Service. |
 | [Onboarding](/help/onboarding/home.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
 | [Guida utente di Assets](/help/assets/home.md) | Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service. |
