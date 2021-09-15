@@ -1,13 +1,13 @@
 ---
-sub-product: Panoramica di AEM as a Cloud Service
+sub-product: Overview of AEM as a Cloud Service
 user-guide-title: Panoramica di AEM as a Cloud Service
 breadcrumb-title: Guida panoramica
 user-guide-description: Panoramica del servizio Experience Manager as a Cloud Service, con un’introduzione, terminologia e altro ancora.
-feature: Informazioni sulla versione
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
+source-git-commit: b6a6fbc4e1d7b0c3debfc295279e4af0a1be9854
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '76'
 ht-degree: 89%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 89%
 + [Introduzione ad AEM as a Cloud Service](introduction.md)
 + [Novità e differenze](what-is-new-and-different.md)
 + [Terminologia - Novità per il cloud](terminology.md)
++ [Introduzione all’architettura di AEM as a Cloud Service](architecture.md)
 + [Gestione SEO (Search Engine Optimization) e URL](seo-and-url-management.md)
 + [Valutazione dei KPI](assessing-kpis.md)
 + [Allineamento dei KPI](aligning-kpis.md)
