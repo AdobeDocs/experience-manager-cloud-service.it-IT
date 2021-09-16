@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 69242846bcd27a4d70f31cc17688d651e4733b5f
+source-git-commit: 6e7b2dd71f7e5a820ebca5e6e3928c712dfc359c
 workflow-type: tm+mt
-source-wordcount: '3046'
+source-wordcount: '3086'
 ht-degree: 25%
 
 ---
@@ -148,13 +148,24 @@ Solo i tag delle risorse remote vengono recuperati con un tag corrispondente esa
 Utilizza la configurazione precedente per provare l’esperienza di authoring e comprendere il funzionamento di questa caratteristica. Utilizza documenti o immagini di tua scelta nell’implementazione remota di DAM.
 
 1. Passa all&#39;interfaccia [!DNL Assets] nell&#39;implementazione remota accedendo a **[!UICONTROL Risorse]** > **[!UICONTROL File]** dall&#39;area di lavoro [!DNL Experience Manager]. In alternativa, puoi accedere a `https://[assets_servername_ams]:[port]/assets.html/content/dam` in un browser. Carica le risorse che hai scelto.
+&lt;>
 1. Nella distribuzione [!DNL Sites], nell&#39;attivatore del profilo in alto a destra, fai clic su **[!UICONTROL Impersona come]**. Specifica `ksaner` come nome utente, seleziona l’opzione fornita e fai clic su **[!UICONTROL OK]**.
 1. Apri una pagina del sito web in **[!UICONTROL Navigazione]** > **[!UICONTROL Siti]**. Modifica la pagina. In alternativa, accedi a `https://[aem_server]:[port]/editor.html/content/<site page>` tramite un browser per modificare una pagina.
+=======
+1. Nella distribuzione [!DNL Sites], nell&#39;attivatore del profilo in alto a destra, fai clic su **[!UICONTROL Impersona come]**. Fornisci il nome utente desiderato e fai clic su **[!UICONTROL OK]**.
+1. Apri una pagina del sito web da **[!UICONTROL Navigazione]** > **[Siti]**. Modifica la pagina. In alternativa, accedi a `https://[aem_server]:[port]/editor.html/content/<page name>` tramite un browser per modificare una pagina.
+>>>>>>>>>>Modifiche apportate con stack
 
-   Fai clic su **[!UICONTROL Attiva/Disattiva pannello laterale]** nell’angolo in alto a sinistra della pagina.
+
+
+
+
+> 
+
+Fai clic su **[!UICONTROL Attiva/Disattiva pannello laterale]** nell’angolo in alto a sinistra della pagina.
 
 1. Apri la scheda [!UICONTROL Risorse] e fai clic su **[!UICONTROL Accedi a Risorse collegate]**.
-1. Immetti le credenziali: `ksaner` come nome utente e `password` come password. Questo utente dispone delle autorizzazioni di authoring per entrambe le distribuzioni [!DNL Experience Manager].
+1. Fornire le credenziali appropriate. Questo utente dispone delle autorizzazioni di authoring per entrambe le distribuzioni [!DNL Experience Manager].
 1. Cerca la risorsa aggiunta a DAM. Le risorse remote vengono visualizzate nel pannello a sinistra. Filtra immagini o documenti e filtra ulteriormente i tipi di documenti supportati. Trascina le immagini su un componente `Image`, e i documenti su un componente `Download`.
 
    Le risorse recuperate sono di sola lettura nella distribuzione locale [!DNL Sites]. Puoi comunque utilizzare le opzioni fornite dai componenti [!DNL Sites] per modificare la risorsa recuperata. La modifica per componenti non è distruttiva.
@@ -172,12 +183,10 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 1. Quando pubblichi una pagina, [!DNL Experience Manager] visualizza un elenco completo delle risorse utilizzate nella pagina. Assicurati che le risorse remote vengano recuperate correttamente al momento della pubblicazione. Per controllare lo stato di ciascuna risorsa recuperata, consulta l’interfaccia utente [processi asincroni](/help/operations/asynchronous-jobs.md) .
 
    >[!NOTE]
-   >
-   >La pagina viene pubblicata anche se una o più risorse remote non vengono recuperate. Il componente che utilizza la risorsa remota viene pubblicato come vuoto. L&#39;area di notifica [!DNL Experience Manager] visualizza una notifica per gli errori visualizzati nella pagina dei processi asincroni.
+   La pagina viene pubblicata anche se una o più risorse remote non vengono recuperate. Il componente che utilizza la risorsa remota viene pubblicato come vuoto. L&#39;area di notifica [!DNL Experience Manager] visualizza una notifica per gli errori visualizzati nella pagina dei processi asincroni.
 
 >[!CAUTION]
->
->Una volta utilizzate in una pagina web, le risorse remote recuperate possono essere cercate e utilizzate da chiunque disponga delle autorizzazioni per accedere alla cartella locale. Le risorse recuperate vengono memorizzate nella cartella locale (`connectedassets` nel passaggio precedente). Le risorse possono inoltre essere cercate e visualizzate nell’archivio locale tramite [!UICONTROL Content Finder].
+Una volta utilizzate in una pagina web, le risorse remote recuperate possono essere cercate e utilizzate da chiunque disponga delle autorizzazioni per accedere alla cartella locale. Le risorse recuperate vengono memorizzate nella cartella locale (`connectedassets` nel passaggio precedente). Le risorse possono inoltre essere cercate e visualizzate nell’archivio locale tramite [!UICONTROL Content Finder].
 
 Le risorse recuperate possono essere utilizzate come qualsiasi altra risorsa locale, ad eccezione del fatto che i metadati associati non possono essere modificati.
 
