@@ -1,12 +1,12 @@
 ---
 title: Profili video di Dynamic Media
 description: Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni di questo profilo predefinito sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Puoi anche aggiungere ritaglio avanzato ai video.
-feature: Gestione Delle Risorse, Profili Video, Rendering
+feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '3661'
+source-wordcount: '3656'
 ht-degree: 7%
 
 ---
@@ -27,7 +27,8 @@ Di seguito sono riportati altri fattori che determinano la qualità dei video:
 
 Consulta [Best practice per la codifica video](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-Consulta anche [Best practice per organizzare le risorse digitali per l’utilizzo dei profili di elaborazione](/help/assets/dynamic-media/best-practices-for-file-management.md).
+Consulta anche [Tecniche consigliate per l’organizzazione delle risorse digitali per l’utilizzo dei profili di elaborazione](/help/assets/organize-assets.md).
+
 
 >[!NOTE]
 >

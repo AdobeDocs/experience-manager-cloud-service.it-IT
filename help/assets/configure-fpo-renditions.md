@@ -4,12 +4,13 @@ description: Genera rappresentazioni FPO di risorse nuove ed esistenti utilizzan
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
+source-git-commit: 7e82c3c5490c2f6d43167e6784cdbbb60f811a6f
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
+
 
 # Genera solo rappresentazioni per posizionamento per Adobe InDesign {#fpo-renditions}
 
@@ -20,7 +21,9 @@ Assets fornisce rappresentazioni utilizzate solo per il posizionamento (FPO). Qu
 Experience Manager as a Cloud Service offre funzionalità di elaborazione delle risorse native per il cloud per generare le rappresentazioni FPO. Utilizza i microservizi per le risorse per la generazione del rendering. Puoi configurare la generazione di rendering delle nuove risorse caricate e delle risorse esistenti in Experience Manager.
 
 Di seguito sono riportati i passaggi per generare rappresentazioni FPO:
+
 1. [Crea un profilo di elaborazione](#create-processing-profile).
+
 1. Configura Experience Manager per utilizzare questo profilo per [elaborare nuove risorse](#generate-renditions-of-new-assets).
 1. Utilizza i profili per [elaborare le risorse esistenti](#generate-renditions-of-existing-assets).
 

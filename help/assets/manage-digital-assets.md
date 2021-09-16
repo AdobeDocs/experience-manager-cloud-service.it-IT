@@ -3,12 +3,12 @@ title: Consente di gestire i contenuti digitali
 description: Scopri vari metodi di gestione e modifica delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Gestione risorse, Pubblicazione, Collaborazione, Elaborazione risorse
+feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4543'
 ht-degree: 12%
 
 ---
@@ -316,7 +316,7 @@ I gruppi di utenti chiusi rappresentano un modo aggiuntivo per limitare l’acce
    >Se non specifichi il percorso di una pagina di accesso, [!DNL Experience Manager] visualizza la pagina di accesso predefinita nell’istanza di pubblicazione.
 
 1. Pubblica la cartella e prova ad accedervi dall&#39;istanza di pubblicazione. Viene visualizzata una schermata di accesso.
-1. Se sei un membro CUG, immetti le tue credenziali di protezione. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
+1. Se sei un membro CUG, immetti le tue credenziali di sicurezza. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
 
 ## Cercare risorse {#search-assets}
 
@@ -531,8 +531,6 @@ Per stampare le annotazioni e controllare lo stato, tocca o fai clic sull&#39;ic
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
    Per modificare l&#39;aspetto del file PDF renderizzato, ad esempio il colore, la dimensione e lo stile del font, il colore di sfondo dei commenti e degli stati, aprire la **[!UICONTROL Configurazione PDF di annotazione]** in Gestione configurazione e modificare le opzioni desiderate. Ad esempio, per modificare il colore di visualizzazione dello stato approvato, modificare il codice del colore nel campo corrispondente. Per informazioni sulla modifica del colore del font delle annotazioni, vedere [Annotazione](/help/assets/manage-digital-assets.md#annotating).
-
-   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Torna al file PDF renderizzato e aggiornalo. Il PDF aggiornato riflette le modifiche apportate.
 

@@ -2,19 +2,22 @@
 title: Profili metadati
 description: Informazioni sui profili di metadati per le risorse. Scopri come creare un profilo di metadati e applicarlo alle risorse delle cartelle.
 contentOwner: AG
-feature: Metadati
+feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 20%
+source-wordcount: '1356'
+ht-degree: 18%
 
 ---
 
 # Profili metadati {#metadata-profiles}
 
 Un profilo metadati consente di applicare metadati predefiniti alle risorse all’interno di una cartella. Crea un profilo metadati e applicalo a una cartella. Qualsiasi risorsa da caricare successivamente nella cartella eredita i metadati predefiniti configurati nel profilo metadati.
+
+Un concetto importante per l’utilizzo dei profili in Experience Manager Assets è che vengono assegnati alle cartelle. All’interno di un profilo, le impostazioni sono sotto forma di profili di metadati, insieme a profili video o di immagini. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Pertanto, la modalità di denominazione di file e cartelle, la modalità di organizzazione delle sottocartelle e la gestione dei file all’interno di tali cartelle hanno un impatto significativo sul modo in cui tali risorse vengono elaborate da un profilo.
+Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appropriate e buone pratiche in materia di metadati, puoi sfruttare al massimo la tua raccolta di risorse digitali e accertarti che i file giusti siano elaborati dal profilo giusto.
 
 ## Aggiungere un profilo di metadati {#adding-a-metadata-profile}
 
@@ -36,7 +39,7 @@ Modifica le seguenti proprietà per il componente **[!UICONTROL Descrizione]** :
 
 1. (Facoltativo) Aggiungi altri componenti alla scheda Modifica modulo dalla scheda **[!UICONTROL Genera modulo]** e configurane le proprietà nella scheda **[!UICONTROL Impostazioni]**. Le seguenti proprietà sono disponibili dalla scheda **[!UICONTROL Genera modulo]**:
 
-| Componente | Proprietà |
+| Component | Proprietà |
 |------------------|----------------------------------------------------|
 | Intestazione sezione | Etichetta campo, descrizione |
 | Testo su riga singola | Etichetta campo, mappa su proprietà, valore predefinito |
