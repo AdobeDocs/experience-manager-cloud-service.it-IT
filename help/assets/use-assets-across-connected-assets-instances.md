@@ -2,13 +2,13 @@
 title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Sites]
 description: Utilizzare le risorse disponibili in una distribuzione remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
-feature: Gestione delle risorse, risorse collegate, distribuzione delle risorse, utenti e gruppi
+feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 69242846bcd27a4d70f31cc17688d651e4733b5f
 workflow-type: tm+mt
-source-wordcount: '2967'
-ht-degree: 26%
+source-wordcount: '3046'
+ht-degree: 25%
 
 ---
 
@@ -20,9 +20,11 @@ La funzionalità Risorse collegate supporta il caso d’uso precedente integrand
 
 ## Panoramica della funzione Risorse collegate {#overview-of-connected-assets}
 
-Durante la modifica delle pagine in [!UICONTROL Editor pagina] come destinazione di destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di una diversa distribuzione [!DNL Assets] che funge da origine delle risorse. Gli amministratori creano un’integrazione una tantum di una distribuzione di [!DNL Experience Manager] con funzionalità [!DNL Sites] con un’altra distribuzione di [!DNL Experience Manager] con funzionalità [!DNL Assets].
+Durante la modifica delle pagine in [!UICONTROL Editor pagina] come destinazione di destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di una diversa distribuzione [!DNL Assets] che funge da origine delle risorse. Gli amministratori creano un’integrazione una tantum di una distribuzione di [!DNL Experience Manager] con funzionalità [!DNL Sites] con un’altra distribuzione di [!DNL Experience Manager] con funzionalità [!DNL Assets]. Puoi anche utilizzare le immagini Dynamic Media nelle pagine web del sito tramite Risorse collegate e sfruttare le funzionalità di Dynamic Media, ad esempio ritaglio avanzato e predefiniti per immagini.
 
 Per gli autori [!DNL Sites] , le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l’utilizzo di un numero limitato di risorse remote alla volta. Per rendere disponibili molte risorse remote in una distribuzione [!DNL Sites] con una sola operazione, è consigliabile eseguire la migrazione delle risorse in massa.
+
+È possibile configurare una connessione tra la distribuzione di Sites e la distribuzione Dynamic Media che consente agli autori delle pagine web di utilizzare le immagini Dynamic Media nelle proprie pagine web. Durante l’authoring delle pagine web, l’utilizzo di risorse remote e implementazioni Dynamic Media remote rimane invariato. Questo consente di sfruttare la funzionalità Dynamic Media tramite la funzione Risorse collegate, ad esempio i predefiniti per ritaglio avanzato e immagini.
 
 ### Prerequisiti e implementazioni supportate {#prerequisites}
 
@@ -147,7 +149,7 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
 1. Passa all&#39;interfaccia [!DNL Assets] nell&#39;implementazione remota accedendo a **[!UICONTROL Risorse]** > **[!UICONTROL File]** dall&#39;area di lavoro [!DNL Experience Manager]. In alternativa, puoi accedere a `https://[assets_servername_ams]:[port]/assets.html/content/dam` in un browser. Carica le risorse che hai scelto.
 1. Nella distribuzione [!DNL Sites], nell&#39;attivatore del profilo in alto a destra, fai clic su **[!UICONTROL Impersona come]**. Specifica `ksaner` come nome utente, seleziona l’opzione fornita e fai clic su **[!UICONTROL OK]**.
-1. Apri una pagina web `We.Retail` in **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Modifica la pagina. In alternativa, accedi a `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` tramite un browser per modificare una pagina.
+1. Apri una pagina del sito web in **[!UICONTROL Navigazione]** > **[!UICONTROL Siti]**. Modifica la pagina. In alternativa, accedi a `https://[aem_server]:[port]/editor.html/content/<site page>` tramite un browser per modificare una pagina.
 
    Fai clic su **[!UICONTROL Attiva/Disattiva pannello laterale]** nell’angolo in alto a sinistra della pagina.
 
