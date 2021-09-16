@@ -4,7 +4,7 @@ description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Ass
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
+source-git-commit: ab2cc4e62886eaf67099d16312d255ea38686c9d
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 5%
@@ -74,7 +74,7 @@ Per eseguire una convalida end-to-end del codice e del processo, compresi l’in
 >* [Elenco delle funzioni obsolete e rimosse](/help/release-notes/deprecated-removed-features.md)
 >* [Introduzione](/help/overview/introduction.md)
 >* [Novità e differenze](/help/overview/what-is-new-and-different.md)
->* [L&#39;architettura](/help/core-concepts/architecture.md)
+>* [L&#39;architettura](/help/overview/architecture.md)
 >* [Modifiche di rilievo](/help/release-notes/aem-cloud-changes.md)
 >* [Modifiche di rilievo [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Esercitazioni video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
