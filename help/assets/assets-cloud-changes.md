@@ -4,9 +4,9 @@ description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Ass
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab2cc4e62886eaf67099d16312d255ea38686c9d
+source-git-commit: 9235dd41a77242655bf944666bdd5c14db8a83d6
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service] offre molte nuove funzioni e possibilità per gestire i progetti di Experience Manager. Ci sono molte differenze tra [!DNL Experience Manager Assets] on-premise o in hosting come Adobe Managed Service rispetto a [!DNL Experience Manager] come [!DNL Cloud Service]. Questo articolo evidenzia le differenze importanti per le funzionalità di .[!DNL Assets]
 
-Le principali differenze rispetto all&#39; [Experience Manager] 6.5 riguardano le seguenti aree:
+Le principali differenze rispetto a [!DNL Experience Manager] 6.5 riguardano le seguenti aree:
 
 * [Acquisizione, caricamento ed elaborazione delle risorse](#asset-ingestion).
 * [Microservizi per risorse per l’elaborazione](#asset-microservices) nativa per il cloud.
