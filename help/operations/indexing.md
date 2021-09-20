@@ -2,9 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8e978616bd1409c12e8a40eeeeb828c853faa408
+source-git-commit: 10dea59cb196487adc1300b52dd9edc5afb33cb3
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2038'
 ht-degree: 2%
 
 ---
@@ -211,9 +211,9 @@ Se non è più necessario avere una personalizzazione di un indice predefinito, 
 
 ## Ottimizzazioni degli indici
 
-Apache Jackrabbit Oak consente configurazioni di indice flessibili per gestire in modo efficiente le query di ricerca. Anche se le ottimizzazioni degli indici potrebbero non svolgere un ruolo importante per i progetti di piccole e medie dimensioni, è fondamentale che i progetti con archivi di contenuti di grandi dimensioni e una maggiore velocità dei contenuti possano eseguire miglioramenti mirati dell’efficienza per l’indicizzazione. Gli indici non ottimizzati e gli indici di fallback devono essere evitati il più possibile. È consigliabile adottare misure proattive per garantire la disponibilità di indici idonei e ottimizzati per tutte le query in AEM. In assenza di un indice adeguato, le query attraversano l&#39;intero archivio - tali query devono essere identificate analizzando i file di log per ottimizzare di conseguenza le definizioni degli indici, in quanto una query di attraversamento del repository è il metodo di query meno efficiente in AEM. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) .
+Apache Jackrabbit Oak consente configurazioni di indice flessibili per gestire in modo efficiente le query di ricerca. Gli indici sono particolarmente importanti per gli archivi più grandi. Gli indici non ottimizzati e gli indici di fallback devono essere evitati il più possibile. Assicurati che tutte le query siano supportate da un indice appropriato. Le query senza un indice appropriato possono leggere migliaia di nodi, che vengono quindi registrate come avviso. Tali query devono essere identificate analizzando i file di registro, in modo da ottimizzare le definizioni degli indici. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) .
 
 ### Indice full text di Lucene su AEM come Cloud Service
 
-L&#39;indice full-text lucene2, indicizza tutti i contenuti nell&#39;archivio AEM per impostazione predefinita ed è quindi estremamente inefficiente a causa delle dimensioni dipendenti dall&#39;archivio. L’indice full-text di Lucene è stato dichiarato obsoleto internamente e non verrà più distribuito in AEM come Cloud Service a partire da settembre 2021. Di conseguenza, non viene più utilizzato sul lato prodotto in AEM come Cloud Service e non dovrebbe essere richiesto di eseguire il codice cliente. Per gli ambienti AEM come Cloud Service con indici Lucene comuni, Adobe sta lavorando con i clienti singolarmente per un approccio coordinato per compensare questo indice e per utilizzare indici migliori e ottimizzati. Se, contrariamente a tutte le aspettative, è effettivamente necessario un indice full-text per eseguire query nel codice personalizzato, la definizione dell&#39;indice analogica all&#39;indice Lucene deve essere creata con un nome diverso per evitare conflitti nella manutenzione.
+L&#39;indice fulltext `/oak:index/lucene-2` può diventare molto grande perché indicizza tutti i nodi nell&#39;archivio AEM per impostazione predefinita. L’indice full-text di Lucene è stato dichiarato obsoleto internamente e non verrà più distribuito in AEM come Cloud Service a partire da settembre 2021. Di conseguenza, non viene più utilizzato sul lato prodotto in AEM come Cloud Service e non dovrebbe essere richiesto di eseguire il codice cliente. Per gli ambienti AEM come Cloud Service con indici Lucene comuni, Adobe sta lavorando con i clienti singolarmente per un approccio coordinato per compensare questo indice e per utilizzare indici migliori e ottimizzati. Se questo indice è necessario per le query personalizzate, come soluzione temporanea, è necessario creare una copia di questo indice utilizzando un nome diverso, ad esempio `/oak:index/acme.lucene-1-custom-1`, come descritto [here](/help/operations/indexing.md).
 Questa ottimizzazione non si applica ad altri ambienti AEM, ospitati on-premise o gestiti da Adobe Managed Services, se non diversamente consigliato in Adobe.
