@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
+source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
 workflow-type: tm+mt
-source-wordcount: '2929'
-ht-degree: 40%
+source-wordcount: '3063'
+ht-degree: 38%
 
 ---
 
@@ -55,7 +55,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
->title="Scarica"
+>title="Download"
 >abstract="Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Assicurati di scaricare la versione più recente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Note sulla versione"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portale di distribuzione software"
@@ -286,6 +286,23 @@ Effettua le seguenti operazioni:
 1. Fai clic su **Delete** (Elimina) nella finestra di dialogo **Delete Migration Set** (Elimina set di migrazione) per confermare l’eliminazione.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+
+
+## Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza Publish {#running-ctt-on-publish}
+
+Durante lo spostamento del contenuto in un’istanza Publish, è consigliabile installare CTT nell’istanza Publish di origine per spostare il contenuto nell’istanza Publish di destinazione. Segui l’approccio consigliato come descritto di seguito:
+
+* Utilizza la stessa versione del CTT utilizzata nell’istanza di authoring.
+
+* È necessario migrare un solo nodo di pubblicazione. Deve essere rimosso dal load balancer prima di iniziare l’estrazione.
+
+* Quando crei il set di migrazione, utilizza l’URL dell’ambiente AEMaaCS di authoring.
+
+* Durante l’acquisizione per la pubblicazione, il livello di pubblicazione NON viene ridimensionato (a differenza dell’autore). Per precauzione, evitare operazioni di scrittura avviate dall’utente quali:
+
+   * Distribuzione dei contenuti da AEMaaCS Author a Publish in tale ambiente
+   * Sincronizzazione utente tra istanze di pubblicazione
+
 
 ## Risoluzione dei problemi {#troubleshooting}
 
