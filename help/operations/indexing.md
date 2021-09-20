@@ -2,16 +2,16 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
+source-git-commit: 8e978616bd1409c12e8a40eeeeb828c853faa408
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '2098'
 ht-degree: 2%
 
 ---
 
 # Ricerca e indicizzazione dei contenuti {#indexing}
 
-## Modifiche in AEM come Cloud Service {#changes-in-aem-as-a-cloud-service}
+## Modifiche al AEM come Cloud Service {#changes-in-aem-as-a-cloud-service}
 
 Con AEM come Cloud Service, l’Adobe si sta spostando da un modello AEM incentrato sull’istanza a una visualizzazione basata sui servizi con contenitori AEM n-x, guidato da pipeline CI/CD in Cloud Manager. Invece di configurare e mantenere gli indici su singole istanze di AEM, è necessario specificare la configurazione dell&#39;indice prima di una distribuzione. I cambiamenti di configurazione nella produzione stanno chiaramente interrompendo i criteri CI/CD. Lo stesso vale per le modifiche dell&#39;indice in quanto può influire sulla stabilità e sulle prestazioni del sistema se non specificato testato e reindicizzato prima di introdurli nella produzione.
 
@@ -91,7 +91,7 @@ Una volta aggiunta la nuova definizione dell’indice, la nuova applicazione dev
 
 La gestione degli indici riguarda l’aggiunta, la rimozione e la modifica degli indici. Modificare la *definizione* di un indice è veloce, ma l&#39;applicazione della modifica (spesso denominata &quot;creazione di un indice&quot; o, per gli indici esistenti, &quot;reindicizzazione&quot;) richiede tempo. Non è istantaneo: l’archivio deve essere analizzato per individuare i dati da indicizzare.
 
-### Implementazione Blue-Green {#what-is-blue-green-deployment}
+### Installazione Blue-Green {#what-is-blue-green-deployment}
 
 L&#39;implementazione Blue-Green può ridurre i tempi di inattività. Consente inoltre di eseguire senza tempi di inattività gli aggiornamenti e offre rapidi rollback. La vecchia versione dell&#39;applicazione (blu) viene eseguita contemporaneamente alla nuova versione dell&#39;applicazione (verde).
 
@@ -111,11 +111,11 @@ Alcune aree dell’archivio (parti di sola lettura dell’archivio) possono esse
 
 Le aree di lettura-scrittura dell&#39;archivio sono condivise tra tutte le versioni dell&#39;applicazione, mentre per ogni versione dell&#39;applicazione, esiste un set specifico di `/apps` e `/libs`.
 
-### Gestione dell&#39;indice senza implementazione Blue-Green {#index-management-without-blue-green-deployment}
+### Gestione degli indici senza implementazione Blue-Green {#index-management-without-blue-green-deployment}
 
 Durante lo sviluppo o quando si utilizzano installazioni locali, gli indici possono essere aggiunti, rimossi o modificati in fase di runtime. Gli indici vengono utilizzati non appena sono disponibili. Se un indice non deve ancora essere utilizzato nella vecchia versione dell&#39;applicazione, l&#39;indice viene generalmente generato durante un downtime pianificato. Lo stesso si verifica quando si rimuove un indice o si modifica un indice esistente. Quando si rimuove un indice, questo diventa non disponibile non appena viene rimosso.
 
-### Gestione degli indici con implementazione Blue-Green {#index-management-with-blue-green-deployment}
+### Gestione dell&#39;indice con implementazione Blue-Green {#index-management-with-blue-green-deployment}
 
 Con le implementazioni blu-verde, non si verificano tempi di inattività. Tuttavia, per la gestione degli indici, ciò richiede che gli indici siano utilizzati solo da alcune versioni dell&#39;applicazione. Ad esempio, quando si aggiunge un indice nella versione 2 dell&#39;applicazione, non è ancora necessario utilizzarlo nella versione 1 dell&#39;applicazione. Il contrario si verifica quando un indice viene rimosso: un indice rimosso nella versione 2 è ancora necessario nella versione 1. Quando si modifica una definizione di indice, si desidera che la vecchia versione dell&#39;indice venga utilizzata solo per la versione 1 e che la nuova versione dell&#39;indice venga utilizzata solo per la versione 2.
 
@@ -146,7 +146,7 @@ Una volta che l&#39;Adobe cambia un indice predefinito come &quot;damAssetLucene
 | /oak:index/cqPageLucene | Sì | Sì | No |
 | /oak:index/cqPageLucene-2 | Sì | No | Sì |
 
-### Limitazioni correnti {#current-limitations}
+### Limitazioni attuali {#current-limitations}
 
 La gestione degli indici è attualmente supportata solo per gli indici di tipo `lucene`.
 
@@ -208,3 +208,12 @@ Se un indice deve essere rimosso in una versione successiva dell&#39;applicazion
 ```
 
 Se non è più necessario avere una personalizzazione di un indice predefinito, è necessario copiare la definizione di indice preconfigurata. Ad esempio, se hai già distribuito `damAssetLucene-8-custom-3` ma non hai più bisogno delle personalizzazioni e desideri tornare all&#39;indice predefinito `damAssetLucene-8` , devi aggiungere un indice `damAssetLucene-8-custom-4` che contenga la definizione dell&#39;indice di `damAssetLucene-8`.
+
+## Ottimizzazioni degli indici
+
+Apache Jackrabbit Oak consente configurazioni di indice flessibili per gestire in modo efficiente le query di ricerca. Anche se le ottimizzazioni degli indici potrebbero non svolgere un ruolo importante per i progetti di piccole e medie dimensioni, è fondamentale che i progetti con archivi di contenuti di grandi dimensioni e una maggiore velocità dei contenuti possano eseguire miglioramenti mirati dell’efficienza per l’indicizzazione. Gli indici non ottimizzati e gli indici di fallback devono essere evitati il più possibile. È consigliabile adottare misure proattive per garantire la disponibilità di indici idonei e ottimizzati per tutte le query in AEM. In assenza di un indice adeguato, le query attraversano l&#39;intero archivio - tali query devono essere identificate analizzando i file di log per ottimizzare di conseguenza le definizioni degli indici, in quanto una query di attraversamento del repository è il metodo di query meno efficiente in AEM. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) .
+
+### Indice full text di Lucene su AEM come Cloud Service
+
+L&#39;indice full-text lucene2, indicizza tutti i contenuti nell&#39;archivio AEM per impostazione predefinita ed è quindi estremamente inefficiente a causa delle dimensioni dipendenti dall&#39;archivio. L’indice full-text di Lucene è stato dichiarato obsoleto internamente e non verrà più distribuito in AEM come Cloud Service a partire da settembre 2021. Di conseguenza, non viene più utilizzato sul lato prodotto in AEM come Cloud Service e non dovrebbe essere richiesto di eseguire il codice cliente. Per gli ambienti AEM come Cloud Service con indici Lucene comuni, Adobe sta lavorando con i clienti singolarmente per un approccio coordinato per compensare questo indice e per utilizzare indici migliori e ottimizzati. Se, contrariamente a tutte le aspettative, è effettivamente necessario un indice full-text per eseguire query nel codice personalizzato, la definizione dell&#39;indice analogica all&#39;indice Lucene deve essere creata con un nome diverso per evitare conflitti nella manutenzione.
+Questa ottimizzazione non si applica ad altri ambienti AEM, ospitati on-premise o gestiti da Adobe Managed Services, se non diversamente consigliato in Adobe.
