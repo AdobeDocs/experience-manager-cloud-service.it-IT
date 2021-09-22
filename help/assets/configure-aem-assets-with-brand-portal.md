@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2402'
 ht-degree: 12%
 
 ---
@@ -59,6 +59,8 @@ Puoi attivare Brand Portal durante la creazione degli ambienti per l’istanza A
 >Se disponi di una configurazione cloud Brand Portal esistente ([configurata manualmente utilizzando Adobe Developer Console](#manual-configuration)) per un’organizzazione IMS (org1-existing) e l’istanza AEM Assets as a [!DNL Cloud Service] è configurata per un’altra organizzazione IMS (org2-new), l’attivazione di Brand Portal da Cloud Manager reimposta l’organizzazione Brand Portal IMS su `org2-new`. Anche se la configurazione cloud configurata manualmente su `org1-existing` sarà visibile nell’istanza di authoring di AEM Assets, ma non sarà più in uso dopo l’attivazione di Brand Portal da Cloud Manager.
 >
 >Se la configurazione cloud Brand Portal esistente e AEM Assets as a [!DNL Cloud Service] utilizzano la stessa organizzazione IMS (org1), è sufficiente attivare Brand Portal da Cloud Manager.
+>
+>Non modificare le impostazioni generate automaticamente.
 
 **Consulta anche**:
 * [Aggiungere utenti e ruoli in AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
@@ -228,7 +230,7 @@ La chiave pubblica (certificato) autentica il tuo profilo in Adobe Developer Con
 
 1. Accedi ad AEM Assets.
 1. Dal pannello **Strumenti**, passa a **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni Adobe IMS]**.
-1. Nella pagina Configurazioni IMS di Adobe, fai clic su **[!UICONTROL Crea]**. Verrà reindirizzato alla pagina **[!UICONTROL Configurazione account tecnico Adobe IMS]** . Per impostazione predefinita, viene visualizzata la scheda **Certificato** .
+1. Nella pagina Configurazioni Adobe IMS, fai clic su **[!UICONTROL Crea]**. Reindirizzerà alla pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** . Per impostazione predefinita, viene visualizzata la scheda **Certificato** .
 1. Seleziona **[!UICONTROL Adobe Brand Portal]** nell&#39;elenco a discesa **[!UICONTROL Soluzione cloud]** .
 1. Seleziona la casella di controllo **[!UICONTROL Crea nuovo certificato]** e specifica un **alias** per la chiave pubblica. L&#39;alias funge da nome della chiave pubblica.
 1. Fai clic su **[!UICONTROL Crea certificato]**. Quindi, fai clic su **[!UICONTROL OK]** per generare la chiave pubblica.
