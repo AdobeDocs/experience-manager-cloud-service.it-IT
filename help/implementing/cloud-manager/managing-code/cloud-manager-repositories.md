@@ -1,9 +1,9 @@
 ---
 title: Repository di Cloud Manager
 description: Repository di Cloud Manager
-source-git-commit: f2a93373d6f3d6e92dc170fd98315b5989b2b296
+source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,25 @@ Segui i passaggi seguenti per visualizzare e gestire gli archivi in Cloud Manage
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. Puoi selezionare l&#39;archivio e fare clic sulle opzioni del menu dall&#39;estrema destra della tabella in **Copia URL archivio**, **Visualizza e aggiorna** o **Elimina** l&#39;archivio, come mostrato nella figura seguente.
+1. Puoi selezionare l&#39;archivio e fare clic sulle opzioni del menu dall&#39;estrema destra della tabella in **Copia URL archivio** o **Visualizza e aggiorna** o **Elimina** l&#39;archivio, come mostrato nella figura seguente.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+
+## Eliminazione di un archivio {#delete-repo}
+
+Per eliminare un archivio in Cloud Manager, effettua le seguenti operazioni:
+>[!NOTE]
+>L&#39;eliminazione di un repository comporta:
+>1. Rendi il nome del repository eliminato inutilizzabile per i nuovi archivi che possono essere creati in futuro. In questo caso viene visualizzato un messaggio di errore come mostrato di seguito:
+   >*Il nome dell’archivio deve essere univoco all’interno dell’organizzazione.*
+>1. Rendi l’archivio eliminato non disponibile in Cloud Manager e, pertanto, non può essere collegato a una pipeline.
+
+
+1. Dalla pagina **Panoramica del programma**, fai clic sulla scheda **Repository** e passa alla pagina **Repository** .
+
+1. Seleziona l’archivio e fai clic sulle opzioni di menu dall’estrema destra della tabella. Fai clic su **Elimina** per eliminare l&#39;archivio, come illustrato nella figura seguente.
+
+   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 
 ## Supporto per i sottomoduli Git {#git-submodule-support}
