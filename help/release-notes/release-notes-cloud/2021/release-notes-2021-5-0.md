@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 6a81e04a7de657d222cdd965fb6e2d4351b4c338
+exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1355'
 ht-degree: 4%
 
 ---
-
 
 # Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -68,35 +68,8 @@ La versione seguente (2021.6.0) sarà del 28 giugno 2021.
 
 #### Novità in Dynamic Media {#what-is-new-dm}
 
-* L&#39;ottimizzazione DPR (Device Pixel Ratio) e della larghezza di banda della rete consente di fornire immagini di qualità superiore in modo efficiente su dispositivi con display ad alta risoluzione e larghezza di banda limitata della rete. Per ulteriori informazioni, consulta [Domande frequenti sull’imaging avanzato](/help/assets/dynamic-media/imaging-faq.md).
-
-   >[!NOTE]
-   >
-   >La timeline della versione per i miglioramenti di Smart imaging riportati sopra è:
-   >
-   >* Nord America 24 maggio 2021 in NA,
-      >
-      >
-   * Europa, Medio Oriente e Africa 25 giugno 2021,
-      >
-      >
-   * Asia-Pacifico, 19 luglio 2021.
-
-
-* È stato introdotto il supporto per il formato immagine AVIF di nuova generazione nella distribuzione Dynamic Media (modificatore URL fmt).
-
-   >[!NOTE]
-   >
-   >La timeline della versione per il supporto AVIF è la seguente:
-   >
-   >* Nord America 10 maggio 2021,
-      >
-      >
-   * Europa, Medio Oriente e Africa 24 maggio 2021,
-      >
-      >
-   * Asia-Pacifico, 24 giugno 2021.
-
+* L&#39;ottimizzazione DPR (Device Pixel Ratio) e della larghezza di banda della rete consente di fornire immagini di qualità superiore in modo efficiente su dispositivi con display ad alta risoluzione e larghezza di banda limitata della rete. Per ulteriori informazioni, vedere [Domande frequenti sull&#39;imaging intelligente](/help/assets/dynamic-media/imaging-faq.md) e [Ottimizzazione delle immagini con i formati di immagine WebP e AVIF di nuova generazione.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* È stato introdotto il supporto per AVIF in formato immagine di nuova generazione nella distribuzione Dynamic Media (modificatore URL fmt).
 
 ## [!DNL Adobe Experience Manager Forms] come  [!DNL Cloud Service] {#forms}
 

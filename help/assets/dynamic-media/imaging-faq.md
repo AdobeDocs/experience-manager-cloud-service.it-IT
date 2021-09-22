@@ -1,12 +1,12 @@
 ---
 title: Smart imaging
 description: Scopri come l’imaging intelligente con Adobe Sensei AI applica le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, ottenendo prestazioni e coinvolgimento migliori.
-feature: Gestione risorse, rappresentazioni
+feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 771e6b021c4da68ac35437d45ea36bb38eae2f34
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '2613'
+source-wordcount: '2624'
 ht-degree: 1%
 
 ---
@@ -192,7 +192,7 @@ Per impostazione predefinita, Smart imaging DPR e l’ottimizzazione della rete 
 | Europe, Middle East, Africa | 13 August 2021 | 
 | Asia-Pacific | 22 July 2021 | -->
 
-1. [Utilizza l’Admin Console per creare un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di supporto.
+1. [Utilizza l’Admin Console per creare un caso](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) di supporto.
 1. Fornisci le seguenti informazioni nel tuo caso di assistenza:
 
    1. Nome contatto principale, e-mail, telefono.
@@ -282,3 +282,9 @@ Come funziona l’ottimizzazione DPR per Smart imaging con i componenti Adobe Ex
 * L’ottimizzazione DPR lato visualizzatore funziona in parallelo con l’ottimizzazione DPR per le immagini avanzate lato server e non produce immagini di dimensioni eccessive. In altre parole, ogni volta che il visualizzatore gestisce il DPR, ad esempio la visualizzazione principale solo in un visualizzatore abilitato per lo zoom, i valori DPR per l’imaging intelligente lato server non vengono attivati. Allo stesso modo, ogni volta che gli elementi del visualizzatore, come campioni e miniature, non dispongono di gestione DPR, viene attivato il valore DPR per l’imaging intelligente lato server.
 
 Vedi anche [Quando lavori con immagini](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) e [Quando lavori con Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+
+>[!MORELIKETHIS]
+>
+>* [Ottimizzazione delle immagini con i formati di immagine WebP e AVIF di nuova generazione.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
+
