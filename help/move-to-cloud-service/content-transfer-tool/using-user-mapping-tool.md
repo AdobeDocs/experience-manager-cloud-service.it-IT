@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
+source-git-commit: c8e7c6c45d898029b55bcfc09f7f2b7051d03031
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1375'
 ht-degree: 2%
 
 ---
@@ -63,11 +63,12 @@ Segui i passaggi riportati di seguito per configurare questa impostazione:
 
 1. Passa a [Adobe Developer Console](https://console.adobe.io) utilizzando il tuo Adobe ID.
 1. Crea un nuovo progetto o apri un progetto esistente.
-1. Aggiungi un’API .
-1. Scegli API User Management.
+1. Aggiungi un&#39;API - Fai clic su **Aggiungi al progetto** e seleziona **API**
+1. Scegli API User Management.  Potrebbe essere necessario ottenere le autorizzazioni per avere questa opzione.
 1. Crea una credenziale JWT.
-1. Genera una coppia di chiavi o carica una chiave pubblica (rsa non è buona).
-1. Genera un token di accesso (o un token JWT o un token portatore).
+1. Genera una coppia di chiavi o carica una chiave pubblica (rsa non è buona).  È presente un pulsante, **Genera una coppia di chiavi pubblica/privata**, che farà questo per te.  Assicurati di salvare le chiavi pubblica e privata.
+1. Passa all’API User Management.
+1. Genera un token di accesso (o un token portatore) incollando il contenuto della chiave privata nella casella di testo e facendo clic su **Genera token**.
 1. Salva in sicurezza tutte queste informazioni come **ID client**, **Segreto client**, **ID account tecnico**, **E-mail account tecnico**, **ID organizzazione** e **Access Token**.
 
 ## Interfaccia utente {#user-interface}
