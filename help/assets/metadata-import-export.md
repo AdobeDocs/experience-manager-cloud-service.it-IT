@@ -2,12 +2,12 @@
 title: Importare ed esportare in blocco i metadati delle risorse
 description: Questo articolo descrive come importare ed esportare i metadati in blocco.
 contentOwner: AG
-feature: Metadati
+feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 561df1d2a2f7b900470084d28b832b4c7a568d3e
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '667'
 ht-degree: 12%
 
 ---
@@ -34,7 +34,7 @@ L’importazione dei metadati è asincrona e non ostacola le prestazioni del sis
    | Dimensione batch | Numero di risorse in un batch per cui devono essere importati i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
    | Separatore di campi | Il valore predefinito è `,` (una virgola). È possibile specificare qualsiasi altro carattere. |
    | Delimitatore multi valore | Separatore dei valori dei metadati. Il valore predefinito è `|`. |
-   | Avvia flussi di lavoro | False per impostazione predefinita. Quando è impostato su `true` e le impostazioni predefinite di Launcher sono attive per il flusso di lavoro DAM Metadata WriteBack (che scrive i metadati nei dati XMP binari). L’abilitazione dei flussi di lavoro di avvio rallenta il sistema. |
+   | Avvia flussi di lavoro | False per impostazione predefinita. Quando è impostato su `true` e le impostazioni predefinite sono attive per il flusso di lavoro DAM Metadata WriteBack (che scrive i metadati nei dati XMP binari). L&#39;abilitazione dei flussi di lavoro rallenta il sistema. |
    | Nome colonna percorso risorsa | Definisce il nome della colonna del file CSV con le risorse. |
 
 1. Fai clic su **[!UICONTROL Importa]** dalla barra degli strumenti. Una volta importati i metadati, viene inviata una notifica alla casella in entrata delle notifiche. Passa alla pagina delle proprietà della risorsa e verifica se i valori dei metadati sono stati importati correttamente per le risorse.
