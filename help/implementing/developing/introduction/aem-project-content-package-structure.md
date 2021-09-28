@@ -2,9 +2,9 @@
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti per la distribuzione in Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 798cd0f459b668dc372a88773ed6221927e7d02e
 workflow-type: tm+mt
-source-wordcount: '2869'
+source-wordcount: '2880'
 ht-degree: 13%
 
 ---
@@ -65,11 +65,12 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
    + JavaScript e CSS (tramite [Librerie client](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
    + [](/help/implementing/developing/introduction/overlays.md) Sovrapposizioni  `/libs`
-      + `/apps/cq`, `/apps/dam/`, etc.
+      + `/apps/cq`, `/apps/dam/`, ecc.
    + Configurazioni in base al contesto di fallback
       + `/apps/settings`
    + ACL (autorizzazioni)
       + Qualsiasi `rep:policy` per qualsiasi percorso sotto `/apps`
+   + [Script raggruppati precompilati](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + Il pacchetto `ui.config` contiene tutte le configurazioni [OSGi](/help/implementing/deploying/configuring-osgi.md):
    + Cartella organizzativa contenente definizioni di configurazione OSGi specifiche della modalità di esecuzione
@@ -97,7 +98,7 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
    + Configurazioni in base al contesto
       + `/conf`
    + Strutture di contenuto complesse e necessarie (ad esempio Compilazione del contenuto che si basa e si estende oltre le strutture di contenuto della linea di base definite in Repo Init.)
-      + `/content`,  `/content/dam`, ecc.
+      + `/content`, `/content/dam`, ecc.
    + Tassonomie di assegnazione tag gestite
       + `/content/cq:tags`
    + Nodi legacy ecc (Idealmente, esegui la migrazione a posizioni diverse/ecc.)
@@ -161,7 +162,7 @@ Per impostazione predefinita, Adobe Cloud Manager raccoglie tutti i pacchetti pr
 >
 >Per un frammento completo, consulta la sezione [Frammenti XML POM](#pom-xml-snippets) di seguito.
 
-## Repo Init{#repo-init}
+## Inizio repository{#repo-init}
 
 Repo Init fornisce istruzioni, o script, che definiscono strutture JCR, che vanno dalle strutture di nodi comuni come strutture di cartelle, agli utenti, utente di servizio, gruppi e definizione ACL.
 
@@ -234,7 +235,7 @@ Scomposizione della struttura delle cartelle:
    >Per convenzione, le cartelle incorporate in un pacchetto secondario sono denominate con il suffisso `-packages`. In questo modo, il codice di distribuzione e i pacchetti di contenuto **non** vengono distribuiti nelle cartelle di destinazione di qualsiasi pacchetto secondario `/apps/<app-name>/...`, il che provoca un comportamento di installazione distruttivo e ciclico.
 
 + La cartella di terzo livello deve essere
-   `application`,  `content` o  `container`
+   `application`, `content` oppure `container`
    + La cartella `application` contiene pacchetti di codice
    + La cartella `content` contiene pacchetti di contenuto
    + La cartella `container` contiene tutti i [pacchetti applicativi aggiuntivi](#extra-application-packages) che possono essere inclusi dall&#39;applicazione AEM.
@@ -296,7 +297,7 @@ Un&#39;eccezione notevole a questa regola generale è se il pacchetto di codice 
 
 I pattern comuni per le dipendenze dei pacchetti di contenuto sono:
 
-### Dipendenze semplici del pacchetto di distribuzione {#simple-deployment-package-dependencies}
+### Dipendenze dei pacchetti di distribuzione semplici {#simple-deployment-package-dependencies}
 
 Il caso semplice imposta il pacchetto di contenuto variabile `ui.content` in modo che dipenda dal pacchetto di codice immutabile `ui.apps` .
 
@@ -358,7 +359,7 @@ Nelle `ui.apps/pom.xml`, le direttive di configurazione della build `<packageTyp
     ...
 ```
 
-#### Tipi di pacchetti contenuti (variabili) {#mutable-package-types}
+#### Tipi di pacchetti contenuto (variabile) {#mutable-package-types}
 
 I pacchetti di contenuto devono impostare i rispettivi `packageType` su `content`.
 
@@ -385,7 +386,7 @@ Nella `ui.content/pom.xml`, la direttiva di configurazione della build `<package
     ...
 ```
 
-### Contrassegno dei pacchetti per la distribuzione di Adobe Cloud Manager {#cloud-manager-target}
+### Contrassegno dei pacchetti per l’implementazione di Adobe Cloud Manager {#cloud-manager-target}
 
 In ogni progetto che genera un pacchetto, **fatta eccezione** per il progetto contenitore (`all`), aggiungi `<cloudManagerTarget>none</cloudManagerTarget>` alla configurazione `<properties>`della dichiarazione del plug-in `filevault-package-maven-plugin`, in modo da assicurarti che **non siano** distribuiti da Adobe Cloud Manager. Il pacchetto contenitore (`all`) deve essere il singolo pacchetto distribuito tramite Cloud Manager, che a sua volta incorpora tutti i pacchetti di codice e contenuto richiesti.
 
@@ -407,7 +408,7 @@ In ogni progetto che genera un pacchetto, **fatta eccezione** per il progetto co
     ...
 ```
 
-### Repo Init{#snippet-repo-init}
+### Inizio repository{#snippet-repo-init}
 
 Gli script Repo Init che contengono gli script Repo Init sono definiti nella configurazione di fabbrica `RepositoryInitializer` OSGi tramite la proprietà `scripts` . Tieni presente che questi script definiti nelle configurazioni OSGi, possono essere facilmente delimitati dalla modalità di esecuzione utilizzando la semantica di cartelle `../config.<runmode>` usuale.
 
