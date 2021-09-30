@@ -2,9 +2,9 @@
 title: 'Introduzione ai programmi sandbox '
 description: Introduzione ai programmi sandbox
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ Gli ambienti creati in una sandbox non sono configurati per il ridimensionamento
 
 I programmi sandbox includono [!DNL Sites] e [!DNL Assets] e vengono compilati automaticamente con un archivio Git, un ambiente di sviluppo e una pipeline non di produzione.  L’archivio Git viene compilato con un progetto di esempio basato sull’archetipo di progetto AEM.
 
-Per ulteriori informazioni sui tipi di programma, consulta Informazioni su programmi e tipi di programmi .
+>[!NOTE]
+>I domini personalizzati e gli Elenchi consentiti IP non sono disponibili nei programmi sandbox.
+
+Per ulteriori informazioni sui tipi di programma, consulta [Informazioni su programmi e tipi di programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en) .
 
 ### Attributi dei programmi sandbox {#attributes-sandbox}
 
