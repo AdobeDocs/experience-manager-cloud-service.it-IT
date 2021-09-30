@@ -2,12 +2,12 @@
 title: Riferimenti per sviluppatori per [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
-feature: API,API HTTP di Assets
+feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1430'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ L’articolo contiene raccomandazioni, materiali di riferimento e risorse per gl
 | × | Non supportato. Non usare. |
 | - | Non disponibile |
 
-| Caso d’uso | [aem-upload](https://github.com/adobe/aem-upload) | [API Experience Manager / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava | [Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlet Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(anteprima)_ |
+| Caso d’uso | [aem-upload](https://github.com/adobe/aem-upload) | [API Experience Manager / Sling / ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) JCRJava | [Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlet Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(anteprima)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **binario originale** |  |  |  |  |  |  |
 | Crea originale | . | × | - | × | × | - |
@@ -185,7 +185,7 @@ Per la configurazione del flusso di lavoro di post-elaborazione, utilizza i flus
 
 ## Supporto dei passaggi del flusso di lavoro nel flusso di lavoro di post-elaborazione {#post-processing-workflows-steps}
 
-Se esegui l’aggiornamento da una versione precedente di [!DNL Experience Manager], puoi utilizzare i microservizi per le risorse per elaborare le risorse. I microservizi per le risorse native per il cloud sono più semplici da configurare e utilizzare. Alcuni passaggi del flusso di lavoro utilizzati nel flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] nella versione precedente non sono supportati. Per ulteriori informazioni sulle classi supportate, consulta il riferimento [Java API o Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
+Se esegui l’aggiornamento da una versione precedente di [!DNL Experience Manager], puoi utilizzare i microservizi per le risorse per elaborare le risorse. I microservizi per le risorse native per il cloud sono più semplici da configurare e utilizzare. Alcuni passaggi del flusso di lavoro utilizzati nel flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] nella versione precedente non sono supportati. Per ulteriori informazioni sulle classi supportate, consulta il riferimento [Java API o Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html).
 
 I seguenti modelli di flusso di lavoro tecnici vengono sostituiti dai microservizi per le risorse o il supporto non è disponibile:
 
