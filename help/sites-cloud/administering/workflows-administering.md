@@ -1,13 +1,13 @@
 ---
 title: Amministrazione delle istanze dei flussi di lavoro
 description: Scopri come amministrare le istanze dei flussi di lavoro
-feature: Amministrazione
+feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 079c9a64aeee62b36a12083645ca43b115838705
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 1%
+source-wordcount: '1118'
+ht-degree: 0%
 
 ---
 
@@ -167,3 +167,79 @@ Puoi impostare la dimensione massima della casella in entrata configurando il **
 | Nome proprietà (console Web) | Nome proprietà OSGi |
 |---|---|
 | Dimensione massima query casella in entrata | granite.workflow.inboxQuerySize |
+
+## Utilizzo delle variabili del flusso di lavoro per i datastore di proprietà del cliente {#using-workflow-variables-customer-datastore}
+
+I dati utilizzati nei flussi di lavoro vengono memorizzati nell’Adobe fornito di storage (JCR). Questi dati possono essere sensibili in natura. È possibile salvare tutti i metadati/dati definiti dall&#39;utente nell&#39;archivio gestito anziché nell&#39;archiviazione fornita dall&#39;Adobe. In questa sezione viene descritto come impostare queste variabili per lo storage esterno.
+
+### Impostare il modello per l&#39;utilizzo dello storage esterno dei metadati {#set-model-for-external-storage}
+
+A livello di modello di flusso di lavoro, è pianificato l’introduzione di un flag per indicare che il modello (e le sue istanze di runtime) dispone di archiviazione esterna dei metadati. I metadati utente non verranno mantenuti in JCR per le istanze del flusso di lavoro dei modelli contrassegnati per lo storage esterno.
+
+Per attivare questa funzione è necessario attivare il flag di persistenza esterna: **userMetaDataCustomPersistenceEnabled = &quot;true&quot;**.
+La proprietà *userMetadataPersistenceEnabled* verrà memorizzata nel *jcr:content node* del modello di flusso di lavoro. Questo flag viene mantenuto nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
+
+L’illustrazione seguente mostra come impostare il flag su un flusso di lavoro.
+
+![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
+
+### API per metadati nello storage esterno {#apis-for-metadata-external-storage}
+
+UserMetaDataPersistenceContext
+
+Gli esempi seguenti mostrano come utilizzare l’API .
+
+```
+@ProviderType
+public interface UserMetaDataPersistenceContext {
+ 
+    /**
+     * Gets the workflow for persistence
+     * @return workflow
+     */
+    Workflow getWorkflow();
+ 
+    /**
+     * Gets the workflow id for persistence
+     * @return workflowId
+     */
+    String getWorkflowId();
+ 
+    /**
+     * Gets the user metadata persistence id
+     * @return userDataId
+     */
+    String getUserDataId();
+}
+```
+
+UserMetaDataPersistenceProvider
+
+```
+/**
+ * This provider can be implemented to store the user defined workflow-data metadata in a custom storage location
+ */
+@ConsumerType
+public interface UserMetaDataPersistenceProvider {
+ 
+   /**
+    * Retrieves the metadata using a unique identifier
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap of user defined workflow data metaData
+    * @throws WorkflowException
+    */
+   void get(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+   /**
+    * Stores the given metadata to the custom storage location
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap metadata map
+    * @return the unique identifier that can be used to retrieve metadata. If null is returned, then workflowId is used.
+    * @throws WorkflowException
+    */
+   String put(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+} 
+```
+
+
