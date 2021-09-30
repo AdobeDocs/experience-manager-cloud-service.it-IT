@@ -3,7 +3,7 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 534fd193181fe22392fb598625d3a018a4a09e69
+source-git-commit: 29af6f91f5aeb6ad971a35637f1635e0b038a57f
 workflow-type: tm+mt
 source-wordcount: '1628'
 ht-degree: 3%
@@ -23,10 +23,10 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 >
 >Per informazioni sugli aggiornamenti della documentazione non direttamente correlati a una versione, consulta [Ultimi aggiornamenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) .
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio di [!DNL Adobe Experience Manager] come versione corrente [!DNL Cloud Service] (2021.8.0) è il 26 agosto 2021.
-La versione seguente (2021.9.0) è del 30 settembre 2021.
+La versione seguente (2021.9.0) è del 4 ottobre 2021.
 
 ## Video sulla versione {#release-video}
 
@@ -124,7 +124,7 @@ Per ulteriori informazioni, consulta [Supporto miniature per video](https://expe
 
 Questa sezione illustra le note sulla versione per Cloud Manager in AEM as a Cloud Service 2021.9.0 e 2021.8.0.
 
-## Data di rilascio {#release-date-cm-sept}
+## Data di pubblicazione {#release-date-cm-sept}
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.9.0 è il 9 settembre 2021.
 La prossima versione è prevista per il 7 ottobre 2021.
@@ -148,7 +148,7 @@ La prossima versione è prevista per il 7 ottobre 2021.
 
 * L&#39;URL errato è stato copiato quando si seleziona l&#39;opzione di menu Copia URL dalla schermata Repository.
 
-## Data di rilascio {#release-date-cm-aug}
+## Data di pubblicazione {#release-date-cm-aug}
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.8.0 è il 12 agosto 2021.
 
@@ -181,7 +181,7 @@ Per ulteriori informazioni, consulta [Generazione di rapporti SLA](https://exper
 
 ## Strumento Content Transfer (Trasferimento contenuti)  {#content-transfer-tool}
 
-### Data di rilascio {#release-date-ctt-latest}
+### Data di pubblicazione {#release-date-ctt-latest}
 
 La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.5.6 è l’11 agosto 2021.
 
@@ -195,7 +195,7 @@ La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v
 
 ## Analisi delle best practice {#best-practices-analyzer}
 
-### Data di rilascio {#release-date-bpa-latest}
+### Data di pubblicazione {#release-date-bpa-latest}
 
 La data di rilascio di Best Practices Analyzer v2.1.18 è il 2 settembre 2021.
 
