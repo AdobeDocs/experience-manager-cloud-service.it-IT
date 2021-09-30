@@ -2,7 +2,7 @@
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti per la distribuzione in Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 798cd0f459b668dc372a88773ed6221927e7d02e
+source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
 workflow-type: tm+mt
 source-wordcount: '2880'
 ht-degree: 13%
@@ -70,7 +70,7 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
       + `/apps/settings`
    + ACL (autorizzazioni)
       + Qualsiasi `rep:policy` per qualsiasi percorso sotto `/apps`
-   + [Script raggruppati precompilati](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [Script raggruppati precompilati](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + Il pacchetto `ui.config` contiene tutte le configurazioni [OSGi](/help/implementing/deploying/configuring-osgi.md):
    + Cartella organizzativa contenente definizioni di configurazione OSGi specifiche della modalità di esecuzione
