@@ -2,7 +2,7 @@
 title: Gestire i registri - Cloud Service
 description: Gestire i registri - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
+source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 14%
@@ -37,11 +37,11 @@ Segui i passaggi riportati di seguito per scaricare i registri.
    ![](assets/download-preview.png)
 
 
-## Effettua l’accesso tramite API {#logs-through-api}
+## Registri tramite API {#logs-through-api}
 
 Oltre a scaricare i registri tramite l’interfaccia utente, i registri saranno disponibili tramite l’API e l’interfaccia della riga di comando.
 
-Ad esempio, per scaricare i file di registro per un ambiente specifico, il comando è qualcosa di unico nelle righe di
+Ad esempio, per scaricare i file di registro per un ambiente specifico, il comando potrebbe essere simile a quello di
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
