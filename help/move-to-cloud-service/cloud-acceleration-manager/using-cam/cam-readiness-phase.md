@@ -1,13 +1,13 @@
 ---
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di preparazione di Cloud Acceleration Manager.
-source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
+exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
+source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '682'
 ht-degree: 5%
 
 ---
-
 
 # Fase di preparazione in Cloud Acceleration Manager {#readiness-phase-cam}
 
@@ -54,6 +54,9 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
 1. Fai clic su **Carica nuovo report** per caricare il report BPA in CAM.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+
+   >[!IMPORTANT]
+   >Non è possibile caricare il rapporto se ti trovi in modalità in incognito del browser.
 
 1. Dopo aver caricato un nuovo rapporto, verrà visualizzato il rapporto di analisi delle best practice .
 
