@@ -1,18 +1,17 @@
 ---
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 99%
+source-wordcount: '2154'
+ht-degree: 98%
 
 ---
 
-
 # Ambiente e strumenti di authoring {#authoring-the-environment-and-tools}
 
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti disponibili sono accessibili da varie console ed editor di pagina.
 
 ## Gestione del sito {#managing-your-site}
 
@@ -36,7 +35,7 @@ Puoi modificare una pagina con l’editor di pagina. Esempio:
 >
 >Puoi saltare questa presentazione introduttiva e richiamarla in qualsiasi momento dal menu **Informazioni pagina**.
 
-## Accedere all’Aiuto {#accessing-help}
+## Accedere all’Aiuto   {#accessing-help}
 
 Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti aree:
 
@@ -261,7 +260,7 @@ Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dett
 
 Inoltre, da **Informazioni pagina** è possibile accedere ad analisi e consigli.
 
-## Modalità pagina    {#page-modes}
+## Modalità pagina   {#page-modes}
 
 Quando si modifica una pagina sono disponibili varie modalità che consentono di configurare diverse azioni:
 
@@ -270,6 +269,7 @@ Quando si modifica una pagina sono disponibili varie modalità che consentono di
 * [Impostazione destinazione](/help/sites-cloud/authoring/personalization/targeted-content.md): consente di incrementare la rilevanza dei contenuti tramite il targeting e la misurazione su tutti i canali.
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp): consente di visualizzare lo stato delle pagine in un particolare momento.
 * [Stato Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status): consente di visualizzare una panoramica rapida dello stato della live copy e dei componenti ereditati e non.
+* [Modalità Sviluppatore](/help/implementing/developing/tools/developer-mode.md)
 * [Anteprima](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): utilizzato per visualizzare l’aspetto che la pagina avrà nell’ambiente di pubblicazione o per spostarsi utilizzando i collegamenti presenti nel contenuto.
 * [Annota](/help/sites-cloud/authoring/fundamentals/annotations.md): utilizzato per aggiungere o visualizzare annotazioni nella pagina.
 
@@ -287,12 +287,11 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >
 
 
-
 ## Selezione del percorso {#path-selection}
 
 Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso, i [campi percorso](#path-fields) offrono una funzione di auto-completamento e il [browser Percorsi](#path-browser) consente una selezione più affidabile.
 
-### Campi percorso    {#path-fields}
+### Campi percorso   {#path-fields}
 
 L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull’utilizzo e la modifica dei componenti consulta [Componenti per l’authoring di pagine](/help/sites-cloud/authoring/fundamentals/components.md).
 
