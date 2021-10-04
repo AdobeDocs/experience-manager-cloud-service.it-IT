@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] come Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 49e88e18e17a2675151a11339a01b3ea7b71d555
+source-git-commit: 1062b65da46d85e3777656dbef4b7667b130a6ec
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1722'
 ht-degree: 3%
 
 ---
@@ -179,19 +179,35 @@ Per ulteriori informazioni, consulta [Generazione di rapporti SLA](https://exper
 
 * Talvolta, quando una pipeline viene attivata due volte per qualche motivo, si verifica un errore di una delle esecuzioni che non riesce con *non è in grado di aggiornare lo stato di esecuzione della pipeline*.
 
+
+## Cloud Acceleration Manager {#cam}
+
+### Data di pubblicazione {#release-date-october-cam}
+
+La data di rilascio di Cloud Acceleration Manager è il 4 ottobre 2021.
+
+### Novità {#what-is-new-cam}
+
+* Cloud Acceleration Manager offre agli utenti la possibilità di visualizzare i rapporti BPA in un&#39;anteprima stampabile, consentendo di stampare o stampare facilmente i rapporti in formato PDF per facilitarne la condivisione. Fai riferimento ai passaggi 6 e 7 in [Utilizzo della scheda di analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+
+
 ## Strumento Content Transfer (Trasferimento contenuti)  {#content-transfer-tool}
 
 ### Data di pubblicazione {#release-date-ctt-latest}
 
-La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.5.6 è l’11 agosto 2021.
+La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.6.0 è il 4 ottobre 2021.
 
-### Correzioni di bug {#bug-fixes-ctt}
+### Novità {#what-is-new-ctt}
 
-* In alcuni casi non tutti gli utenti sono stati migrati all’istanza di destinazione. Per ottenere questa correzione è necessario CTT v1.5.6 insieme alla versione aem-ethos-tools 1.2.354 o successiva sul AEM di destinazione come istanza di Cloud Service.
+* È stata migliorata la mappatura degli utenti con un’esperienza utente semplificata, incluse le seguenti funzioni elencate di seguito. Per ulteriori informazioni, consulta [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+   * Verificare la connessione all&#39;API User Management prima di eseguire User Mapping
+   * Salta con attenzione gli errori e continua con l’attività Mappatura utente
+   * La mappatura utente non genera più errori se il token di accesso scade (dopo 24 ore). La mappatura utente può essere rieseguita dal punto in cui è stata arrestata per ultima.
 
-* Il pulsante **Interrompi acquisizione** veniva disattivato durante l’acquisizione nell’istanza Publish. Questo non è necessario perché non esiste un passaggio di ripristino mongo durante l’acquisizione di Publish.
+* Per aumentare la robustezza del CTT, il contenuto può essere acquisito sia nell’istanza Author che nell’istanza Publish alla volta.
 
-* Il CTT non ha ripulito la directory `/tmp` dopo un’estrazione riuscita. Ciò a volte ha causato problemi di spazio su disco.
+* Quando sono incluse le versioni, il percorso `/var/audit` viene automaticamente incluso per eseguire la migrazione degli eventi di controllo.
+
 
 ## Analisi delle best practice {#best-practices-analyzer}
 
