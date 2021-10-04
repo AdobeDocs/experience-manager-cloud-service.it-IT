@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Come pubblicare e annullare la pubblicazione di pagine con AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 85%
+source-wordcount: '1769'
+ht-degree: 82%
 
 ---
 
@@ -79,6 +79,10 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 >[!NOTE]
 >
 >La pubblicazione dall’editor è “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
+
+>[!NOTE]
+>
+>Non è possibile pubblicare le pagine accessibili da [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell’editor. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
 
 ### Pubblicazione dalla console {#publishing-from-the-console}
 
@@ -217,6 +221,10 @@ Con una procedura [simile alla pubblicazione](#publishing-pages), è possibile a
 ### Annullamento della pubblicazione dall’editor  {#unpublishing-from-the-editor}
 
 Durante la modifica di una pagina, se desideri annullarne la pubblicazione seleziona **Annulla pubblicazione pagina** nel menu **Informazioni pagina**. La procedura è simile a quella di [pubblicazione della pagina](#publishing-from-the-editor).
+
+>[!NOTE]
+>
+>Le pagine a cui si accede da [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell&#39;editor non possono essere annullate. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
 
 ### Annullamento della pubblicazione dalla console  {#unpublishing-from-the-console}
 
