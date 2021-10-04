@@ -2,9 +2,9 @@
 title: Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)
 description: Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
+source-git-commit: 2c0874ca14b9dd91ef62f2af85a9961b07c1b60b
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '561'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ Rivedi tutte le considerazioni elencate di seguito:
 | Dimensione totale dell&#39;indice | Attualmente è supportata la dimensione totale dell&#39;indice di 25 GB al massimo. Crea un ticket di supporto con l’Assistenza clienti di Adobe per discutere le opzioni per la dimensione dell’indice al di sopra di questo limite. |
 | Lunghezza nome nodo | La lunghezza del nome di un nodo deve essere uguale o inferiore a 150 byte. I nomi di nodo di lunghezza superiore a 150 byte devono essere abbreviati per essere &lt;= 150 byte per essere supportati dall&#39;archivio dei nodi del documento in AEM come Cloud Service. Gli input avranno esito negativo se questi nomi di nodo lunghi non sono fissi. |
 | Contenuto in percorsi immutabili | Lo strumento Content Transfer (Trasferimento contenuti) non può essere utilizzato per migrare il contenuto in percorsi immutabili. Per trasferire il contenuto da `/etc` è possibile selezionare solo alcuni percorsi `/etc`, ma solo supportare [AEM Forms in AEM Forms come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Per tutti gli altri casi d&#39;uso, fai riferimento a [Ristrutturazione del repository comune](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) per ulteriori informazioni sulla ristrutturazione dell&#39;archivio. |
+| Valore della proprietà del nodo in MongoDB | I valori delle proprietà del nodo memorizzati in MongoDB non possono superare i 16 MB. Questo viene applicato da MongoDB. Gli input avranno esito negativo se i valori di proprietà sono maggiori di questo limite. Prima di eseguire un’estrazione, esegui questo script [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar). Esamina tutti i valori delle proprietà di grandi dimensioni e convalida se necessari. Quelli che superano i 16 MB dovranno essere convertiti in valori binari. |
 
 ## Novità {#whats-next}
 
