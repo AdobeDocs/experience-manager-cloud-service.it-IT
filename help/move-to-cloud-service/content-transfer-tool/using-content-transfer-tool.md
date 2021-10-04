@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
+source-git-commit: a9d3547900c84101672cd0400bb374b1a8ccda33
 workflow-type: tm+mt
-source-wordcount: '3063'
-ht-degree: 38%
+source-wordcount: '3104'
+ht-degree: 37%
 
 ---
 
@@ -31,7 +31,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Il token di accesso può scadere periodicamente dopo un determinato periodo di tempo o dopo l’aggiornamento dell’ambiente di Cloud Service. Se il token di accesso è scaduto, non sarà possibile connettersi all’istanza di Cloud Service e sarà necessario recuperare il nuovo token di accesso. L’icona di stato associata a un set di migrazione esistente si trasforma in un cloud rosso e viene visualizzato un messaggio al passaggio del mouse.
 
-* Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferire il contenuto dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione di contenuto in un ambiente di pubblicazione. Qualsiasi contenuto sia specificato nel set di migrazione verrà acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author o Publish o in entrambe. Si consiglia di installare CTT durante lo spostamento del contenuto in un’istanza Production nell’istanza Author di origine per spostare il contenuto nell’istanza Author di destinazione e, allo stesso modo, di installare CTT nell’istanza Publish di origine per spostare il contenuto nell’istanza Publish di destinazione.
+* Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferire il contenuto dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione di contenuto in un ambiente di pubblicazione. Qualsiasi contenuto sia specificato nel set di migrazione verrà acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author o Publish o in entrambe. Si consiglia di installare CTT durante lo spostamento del contenuto in un’istanza Production nell’istanza Author di origine per spostare il contenuto nell’istanza Author di destinazione e, allo stesso modo, di installare CTT nell’istanza Publish di origine per spostare il contenuto nell’istanza Publish di destinazione. Per ulteriori informazioni, consulta [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un&#39;istanza Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) .
 
 * Gli utenti e i gruppi trasferiti dallo strumento Content Transfer (Trasferimento contenuti) sono solo quelli richiesti dal contenuto per soddisfare le autorizzazioni. Il processo *Estrazione* copia l&#39;intero `/home` nel set di migrazione e il processo *Acquisizione* copia tutti gli utenti e i gruppi a cui si fa riferimento nelle ACL del contenuto migrato. Per mappare automaticamente gli utenti e i gruppi esistenti ai loro ID IMS, fai riferimento a [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
@@ -55,7 +55,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
->title="Download"
+>title="Scarica"
 >abstract="Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Assicurati di scaricare la versione più recente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Note sulla versione"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portale di distribuzione software"
@@ -119,7 +119,7 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
    1. **Parameters** (Parametri): seleziona i seguenti parametri per creare il set di migrazione:
 
-      1. **Include Version** (Includi versione): seleziona in base alle esigenze.
+      1. **Include Version** (Includi versione): seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` viene automaticamente incluso per eseguire la migrazione degli eventi di controllo.
 
       1. **Includi mapping da utenti e gruppi** IMS: Seleziona l’opzione per includere la mappatura da utenti e gruppi IMS.
 Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) .
@@ -211,7 +211,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 >[!NOTE]
 >Se Amazon S3 o Azure Data Store viene utilizzato come tipo di archivio dati, puoi eseguire il passaggio facoltativo di pre-copia per accelerare in modo significativo la fase di acquisizione. Per ulteriori informazioni, consulta [Acquisizione con AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) .
 
-1. Seleziona un set di migrazione dalla pagina *Overview* e fai clic su **Ingest** per avviare l’acquisizione. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione). Fai clic su **Ingest** per avviare la fase di acquisizione. È possibile acquisire contemporaneamente contenuti nelle istanze di authoring e di pubblicazione.
+1. Seleziona un set di migrazione dalla pagina *Overview* e fai clic su **Ingest** per avviare l’acquisizione. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione). Il contenuto può essere acquisito nell’istanza Author o Publish alla volta. Seleziona l’istanza in cui inserire il contenuto. Fai clic su **Ingest** per avviare la fase di acquisizione.
 
    >[!IMPORTANT]
    >Se si utilizza l’acquisizione con la pre-copia (per S3 o Azure Data Store), è consigliabile eseguire prima l’acquisizione da parte dell’autore. Questa operazione velocizza l’acquisizione di Publish quando questa viene eseguita in un secondo momento.
@@ -219,11 +219,11 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
    >[!IMPORTANT]
    >Quando l’opzione **Cancella il contenuto esistente nell’istanza Cloud prima dell’acquisizione** è abilitata, elimina l’intero archivio esistente e crea un nuovo archivio in cui inserire il contenuto. Questo significa che reimposta tutte le impostazioni, comprese le autorizzazioni sull&#39;istanza del Cloud Service di destinazione. Questo vale anche per un utente amministratore aggiunto al gruppo **administrators** .
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
    Inoltre, fai clic su **Assistenza clienti** per registrare un ticket, come mostrato nella figura precedente. Per ulteriori informazioni, consulta anche [Considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) .
 
-1. Una volta completata l&#39;acquisizione, lo stato nel campo **PUBLISH INGESTION** viene aggiornato a **FINISHED**.
+1. Una volta completata l’acquisizione, lo stato viene aggiornato a **FINISHED**.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -239,7 +239,7 @@ Una volta completato il processo di acquisizione, puoi utilizzare il contenuto d
 
 1. Nella pagina *Overview* (Panoramica), seleziona il set di migrazione per il quale desideri eseguire l’acquisizione integrativa. Fai clic su **Ingest (Acquisisci)** per avviare l’acquisizione integrativa. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione).
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
 
    >[!IMPORTANT]
    >Per evitare di eliminare il contenuto esistente dall’attività di acquisizione precedente, disattiva l’opzione **Cancella contenuto esistente nell’istanza Cloud prima dell’acquisizione** . Inoltre, fai clic su **Assistenza clienti** per registrare un ticket, come mostrato nella figura precedente.
