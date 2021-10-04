@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: c8e7c6c45d898029b55bcfc09f7f2b7051d03031
+source-git-commit: b290b402fe58d449dd85e9eaaef5b75e61ac1a74
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 2%
+source-wordcount: '1367'
+ht-degree: 1%
 
 ---
 
@@ -75,17 +75,20 @@ Segui i passaggi riportati di seguito per configurare questa impostazione:
 
 Lo strumento di mappatura utente è integrato nello strumento Content Transfer (Trasferimento contenuti). Puoi scaricare lo strumento Content Transfer (Trasferimento contenuti) da [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html). Per ulteriori dettagli sull&#39;ultima versione, consulta le [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Content Transfer** (Trasferimento contenuti).
+1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Mappatura utente**.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing1.png)
+
 1. Fai clic su **Crea configurazione di mappatura utente**.
 
    >[!NOTE]
    >Se salti questo passaggio, la mappatura di utenti e gruppi verrà ignorata durante la fase di estrazione.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing2.png)
 
-   Compila i campi nella configurazione dell’API di gestione utente come descritto di seguito:
+   Compila i campi in **Configurazione API di gestione utente**, come descritto di seguito.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing3.png)
 
    * **ID** organizzazione: Immetti l’ID organizzazione Adobe Identity Management System (IMS) per l’organizzazione di migrazione degli utenti.
 
@@ -99,16 +102,15 @@ Lo strumento di mappatura utente è integrato nello strumento Content Transfer (
       >[!NOTE]
       >Il token di accesso scade ogni 24 ore ed è necessario crearne uno nuovo. Per creare un nuovo token, torna a [Adobe Developer Console](https://console.adobe.io), scegli il progetto, fai clic su **User Management API** e incolla la stessa chiave privata nella casella.
 
-1. Dopo aver inserito le informazioni di cui sopra, fai clic su **Salva**.
+1. Dopo aver compilato i campi, fai clic su **Prova configurazione** per verificare la connessione al servizio API User Management. Se la connessione ha esito positivo, potrai fare clic su **Salva** per salvare la configurazione.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+1. Dopo aver salvato la configurazione, seleziona la configurazione e fai clic su **Avvia mappatura utente**.
 
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
-1. Crea un set di migrazione facendo clic su **Crea set di migrazione** e compilando i campi, quindi facendo clic su **Salva**. Per ulteriori informazioni, consulta [Esecuzione dello strumento Content Transfer (Trasferimento contenuti)](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
+1. Una volta completata la mappatura utente, fai clic su **Risultati** per visualizzare il riepilogo.
 
-   >[!NOTE]
-   >L’opzione di attivazione per includere la mappatura degli utenti da utenti e gruppi IMS è attivata per impostazione predefinita. Con questa impostazione, quando si esegue l’estrazione su questo set di migrazione, lo strumento di mappatura utente viene eseguito come parte della fase di estrazione. Questo è il modo consigliato per eseguire la fase di estrazione dello strumento Content Transfer (Trasferimento contenuti). Se questa opzione è disattivata e/o la configurazione di mappatura utente non viene creata, la mappatura di utenti e gruppi verrà ignorata durante la fase di estrazione.
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
-
-1. Per eseguire la fase di estrazione, fai riferimento a [Esecuzione dello strumento Content Transfer (Trasferimento contenuti)](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
+   >[!IMPORTANT]
+   >Una volta completata la mappatura utente, puoi tornare alla pagina di migrazione dei contenuti utilizzando la breadcrumb. La scheda User Mapping (Mappatura utente) visualizza lo stato e la marca temporale. Fai clic su **Content Transfer** per creare un set di migrazione per eseguire l’estrazione. Per ulteriori informazioni, consulta [Esecuzione dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) .

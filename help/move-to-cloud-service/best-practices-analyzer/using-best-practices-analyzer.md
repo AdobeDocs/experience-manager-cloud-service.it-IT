@@ -2,10 +2,10 @@
 title: Utilizzo di Best Practices Analyzer
 description: Utilizzo di Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
+source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 42%
+source-wordcount: '2591'
+ht-degree: 41%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="Utilizzo di Best Practices Analyzer"
 >abstract="Esamina la documentazione relativa all’utilizzo di Best Practices Analyzer (precedentemente Cloud Readiness Analyzer) e il rapporto generato. Il rapporto di Best Practices Analyzer (Analisi di best practice) viene utilizzato per acquisire una comprensione di alto livello della preparazione generale all’aggiornamento."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considerazioni importanti sull’utilizzo di Best Practices Analyzer {#imp-considerations}
 
@@ -91,6 +91,19 @@ Leggi questa sezione per scoprire come visualizzare il rapporto di Best Practice
 Durante la rigenerazione del rapporto, mostra l’avanzamento in termini di percentuale completata come mostrato nell’immagine seguente.
 
    ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
+1. Fai clic sull&#39;icona **Anteprima di stampa**, come mostrato di seguito, per facilitarne la condivisione.
+
+   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. Facendo clic su **Anteprima di stampa** si apre una nuova scheda con i rapporti visualizzati in un&#39;anteprima stampabile. Fai clic su **Stampa** per stampare il rapporto in formato PDF per facilitarne la condivisione.
+
+   >[!IMPORTANT]
+   * L&#39;opzione **Salva come PDF** è consigliata e supportata per la funzionalità di cui sopra.
+   * Se si utilizza il pulsante di stampa del browser, verrà stampata una sola pagina.
+
+
+   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### Utilizzo dei filtri nel rapporto di Best practice Analyzer {#bpa-filters}
