@@ -2,9 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: dd62f1c0a5c679508c3cf8cc8a1460d86a777759
+source-git-commit: 37e0c3865fb5be6c31e6e4bf1faa5666e77303bc
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2155'
 ht-degree: 2%
 
 ---
@@ -218,7 +218,7 @@ Apache Jackrabbit Oak consente configurazioni di indice flessibili per gestire i
 ### Indice full text di Lucene su AEM come Cloud Service
 
 L&#39;indice fulltext `/oak:index/lucene-2` può diventare molto grande perché indicizza tutti i nodi nell&#39;archivio AEM per impostazione predefinita.  A partire dal settembre 2021, in seguito ai piani dell’Adobe di ritirarsi dall’indice, quest’ultimo non sarà più distribuito in AEM come Cloud Service. Di conseguenza, non viene più utilizzato sul lato prodotto in AEM come Cloud Service e non dovrebbe essere richiesto di eseguire il codice cliente. Per gli ambienti AEM come Cloud Service con indici Lucene comuni, Adobe sta lavorando con i clienti singolarmente per un approccio coordinato per compensare questo indice e per utilizzare indici migliori e ottimizzati. I clienti non devono effettuare alcuna azione senza ulteriore preavviso da parte dell’Adobe. AEM come cliente Cloud Service sarà informato per Adobe quando vi è la necessità di agire in merito a questa ottimizzazione. Se questo indice è necessario per le query personalizzate, come soluzione temporanea, è necessario creare una copia di questo indice utilizzando un nome diverso, ad esempio `/oak:index/acme.lucene-1-custom-1`, come descritto [here](/help/operations/indexing.md).
-Questa ottimizzazione non si applica per impostazione predefinita ad altri ambienti AEM, ospitati on-premise o gestiti da Adobe Managed Services.
+Questa ottimizzazione non si applica per impostazione predefinita ad altri ambienti AEM ospitati in locale o gestiti da Adobe Managed Services.
 
 ## Ottimizzazioni delle query
 
