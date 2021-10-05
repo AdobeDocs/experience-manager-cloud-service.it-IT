@@ -2,9 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
+source-git-commit: 8df5e800cd08fa0eb08edca06e98786a1864db84
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2139'
 ht-degree: 2%
 
 ---
@@ -219,3 +219,9 @@ Apache Jackrabbit Oak consente configurazioni di indice flessibili per gestire i
 
 L&#39;indice fulltext `/oak:index/lucene-2` può diventare molto grande perché indicizza tutti i nodi nell&#39;archivio AEM per impostazione predefinita. L’indice full-text di Lucene è stato dichiarato obsoleto internamente e non verrà più distribuito in AEM come Cloud Service a partire da settembre 2021. Di conseguenza, non viene più utilizzato sul lato prodotto in AEM come Cloud Service e non dovrebbe essere richiesto di eseguire il codice cliente. Per gli ambienti AEM come Cloud Service con indici Lucene comuni, Adobe sta lavorando con i clienti singolarmente per un approccio coordinato per compensare questo indice e per utilizzare indici migliori e ottimizzati. Se questo indice è necessario per le query personalizzate, come soluzione temporanea, è necessario creare una copia di questo indice utilizzando un nome diverso, ad esempio `/oak:index/acme.lucene-1-custom-1`, come descritto [here](/help/operations/indexing.md).
 Questa ottimizzazione non si applica ad altri ambienti AEM, ospitati on-premise o gestiti da Adobe Managed Services, se non diversamente consigliato in Adobe.
+
+## Ottimizzazioni delle query
+
+Lo strumento **Prestazioni query** ti consente di osservare le query JCR popolari e lente. Inoltre è in grado di analizzare le query e visualizzare varie informazioni su, soprattutto se viene utilizzato un indice per questa query o meno.
+
+A differenza di AEM on-premise, AEM come Cloud Service non visualizza più lo strumento **Prestazioni query** nell’interfaccia utente. È ora disponibile tramite la Console per sviluppatori (in Cloud Manager) nella scheda **Query** .
