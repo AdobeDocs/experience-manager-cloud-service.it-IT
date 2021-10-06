@@ -1,8 +1,7 @@
 ---
 title: Rapporti SLA - Cloud Service
 description: Rapporti SLA - Cloud Service
-exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 6b0e5428df2119caefd3d09dd06484410795cb0b
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Generazione rapporti SLA {#sla-reporting}
 
-Segui le sezioni seguenti per informazioni sul reporting SLA in AEM come Cloud Service.
+Segui le sezioni seguenti per informazioni sul reporting SLA in AEM as a Cloud Service.
 
 ## Introduzione {#introduction}
 

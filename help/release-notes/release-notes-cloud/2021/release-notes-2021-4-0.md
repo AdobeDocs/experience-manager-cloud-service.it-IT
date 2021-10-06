@@ -1,8 +1,7 @@
 ---
 title: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 3%
@@ -12,7 +11,7 @@ ht-degree: 3%
 
 # Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note generali sulla versione per la versione corrente (più recente) di [!DNL Experience Manager] come Cloud Service.
+La sezione seguente illustra le note generali sulla versione per la versione corrente (più recente) di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >Da qui puoi passare alle note sulla versione delle versioni precedenti; per esempio, per quelli del 2020, 2021 e così via.
@@ -21,12 +20,12 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 >
 >Per informazioni sugli aggiornamenti della documentazione non direttamente correlati a una versione, consulta [Ultimi aggiornamenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) .
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 è il 6 maggio 2021.
 La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 
-## AEM come base di Cloud Service{#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
 ### Novità {#what-is-new-foundation}
 
@@ -122,8 +121,8 @@ La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 
 ### Altri aggiornamenti {#misc-2021-04-0-forms}
 
-* Per facilitare il riconoscimento del contenuto, il servizio ora genera miniature live per i file XDP, PDF dinamici e schema.
-* Aggiunta la possibilità di spostare un file PDF in una cartella inserita nell’interfaccia utente di AEM Forms.
+* Per facilitare il riconoscimento del contenuto, il servizio ora genera miniature live per i file XDP, Dynamic PDF e Schema.
+* Possibilità di spostare un file PDF in una cartella memorizzata nell’interfaccia utente di AEM Forms.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -147,7 +146,7 @@ La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 
 Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.4.0.
 
-### Data di rilascio {#release-date-cm-april}
+### Data di pubblicazione {#release-date-cm-april}
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.4.0 è l’8 aprile 2021.
 La prossima versione è prevista per il 6 maggio 2021.
@@ -186,7 +185,7 @@ La prossima versione è prevista per il 6 maggio 2021.
 
 ## Analisi delle best practice {#best-practices-analyzer}
 
-### Data di rilascio {#release-date-bpa}
+### Data di pubblicazione {#release-date-bpa}
 
 La data di rilascio di Best Practices Analyzer v2.1.12 è il 12 aprile 2021.
 

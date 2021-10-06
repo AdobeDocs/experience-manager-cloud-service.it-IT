@@ -2,9 +2,9 @@
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti per la distribuzione in Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
+source-git-commit: 6548e05850d5499f1ce7d1f23f2cea2adb9d06fd
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2878'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 >
 >Acquisisci familiarità con l&#39;utilizzo di base di [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) e con il [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md) in quanto questo articolo si basa su questi insegnamenti e concetti.
 
-Questo articolo illustra le modifiche necessarie affinché i progetti Adobe Experience Manager Maven siano AEM come un Cloud Service compatibile, garantendo che rispettino la suddivisione di contenuti mutabili e immutabili, che le dipendenze siano stabilite per creare distribuzioni deterministiche non in conflitto e che siano inserite in una struttura distribuibile.
+Il presente articolo illustra le modifiche necessarie affinché i progetti Adobe Experience Manager Maven siano AEM compatibili con l’as a Cloud Service, garantendo che rispettino la suddivisione dei contenuti mutabili e immutabili, che le dipendenze siano stabilite per creare distribuzioni deterministiche non in conflitto e che siano inserite in una struttura distribuibile.
 
 AEM implementazioni di applicazioni devono essere costituite da un singolo pacchetto AEM. Questo pacchetto deve a sua volta contenere pacchetti secondari che comprendono tutto ciò che l’applicazione deve funzionare, compresi il codice, la configurazione ed eventuali contenuti di base di supporto.
 
@@ -39,13 +39,13 @@ Tutto il resto nel repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`
 
 ### Indici Oak {#oak-indexes}
 
-Gli indici Oak (`/oak:index`) sono gestiti specificamente dal AEM come processo di distribuzione del Cloud Service. Questo perché Cloud Manager deve attendere fino a quando non viene distribuito alcun nuovo indice e completamente reindicizzato prima di passare alla nuova immagine del codice.
+Gli indici Oak (`/oak:index`) sono gestiti in modo specifico dal processo di distribuzione as a Cloud Service AEM. Questo perché Cloud Manager deve attendere fino a quando non viene distribuito alcun nuovo indice e completamente reindicizzato prima di passare alla nuova immagine del codice.
 
 Per questo motivo, anche se gli indici Oak sono modificabili in fase di esecuzione, devono essere distribuiti come codice in modo che possano essere installati prima che vengano installati pacchetti mutabili. Pertanto le configurazioni `/oak:index` fanno parte del pacchetto di codice e non del pacchetto di contenuti [come descritto di seguito](#recommended-package-structure).
 
 >[!TIP]
 >
->Per ulteriori dettagli sull&#39;indicizzazione in AEM come Cloud Service, consulta il documento [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md).
+>Per ulteriori dettagli sull&#39;indicizzazione in AEM as a Cloud Service, consulta il documento [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md).
 
 ## Struttura del pacchetto consigliata {#recommended-package-structure}
 
@@ -64,7 +64,7 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
       + `/apps/my-app/components`
    + JavaScript e CSS (tramite [Librerie client](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
-   + [](/help/implementing/developing/introduction/overlays.md) Sovrapposizioni  `/libs`
+   + [](/help/implementing/developing/introduction/overlays.md) Sovrapposizione  `/libs`
       + `/apps/cq`, `/apps/dam/`, ecc.
    + Configurazioni in base al contesto di fallback
       + `/apps/settings`
@@ -75,9 +75,9 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
 + Il pacchetto `ui.config` contiene tutte le configurazioni [OSGi](/help/implementing/deploying/configuring-osgi.md):
    + Cartella organizzativa contenente definizioni di configurazione OSGi specifiche della modalità di esecuzione
       + `/apps/my-app/osgiconfig`
-   + Cartella di configurazione OSGi comune contenente configurazioni OSGi predefinite che si applicano a tutti i AEM di destinazione come destinazioni di distribuzione di Cloud Service
+   + Cartella di configurazione OSGi comune contenente configurazioni OSGi predefinite che si applicano a tutte le destinazioni di distribuzione as a Cloud Service AEM target
       + `/apps/my-app/osgiconfig/config`
-   + Esegui cartelle di configurazione OSGi specifiche per la modalità che contengono configurazioni OSGi predefinite applicabili a tutti i AEM di destinazione come destinazioni di distribuzione Cloud Service
+   + Cartelle di configurazione OSGi specifiche per la modalità di esecuzione che contengono configurazioni OSGi predefinite applicabili a tutte le destinazioni di distribuzione as a Cloud Service AEM target
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Script di configurazione OSGi di Repo Init
       + [Repo ](#repo-init) Initis è il modo consigliato per distribuire contenuto (mutabile) che fa parte logicamente dell&#39;applicazione AEM. Le configurazioni Repo Init OSGi devono trovarsi nella cartella `config.<runmode>` appropriata come descritto sopra e devono essere utilizzate per definire:
@@ -269,7 +269,7 @@ A causa dell’incorporazione del codice e dei pacchetti secondari del contenuto
 
 ## Incorporazione di pacchetti di terze parti {#embedding-3rd-party-packages}
 
-Tutti i pacchetti devono essere disponibili tramite l’ [archivio degli artefatti Maven pubblico di Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) o un archivio degli artefatti Maven di terze parti accessibile al pubblico e di riferimento.
+Tutti i pacchetti devono essere disponibili tramite l’ [archivio degli artefatti Maven pubblico di Adobe](https://repo1.maven.org/maven2/com/adobe/) o un archivio degli artefatti Maven di terze parti accessibile al pubblico e di riferimento.
 
 Se i pacchetti di terze parti si trovano nell’**archivio di artefatti Maven pubblico di Adobe**, per consentire ad Adobe Cloud Manager di risolvere gli artefatti non è necessario effettuare nessuna ulteriore configurazione.
 

@@ -1,22 +1,22 @@
 ---
 title: Integrazione con Adobe Target
 description: 'Integrazione con Adobe Target '
-feature: Amministrazione
+feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1035'
 ht-degree: 2%
 
 ---
 
 # Integrazione con Adobe Target{#integrating-with-adobe-target}
 
-Come parte di Adobe Marketing Cloud, Adobe Target ti consente di aumentare la pertinenza dei contenuti attraverso il targeting e la misurazione su tutti i canali. L’integrazione di Adobe Target e AEM come Cloud Service richiede:
+Come parte di Adobe Marketing Cloud, Adobe Target ti consente di aumentare la pertinenza dei contenuti attraverso il targeting e la misurazione su tutti i canali. L’integrazione di Adobe Target e AEM as a Cloud Service richiede:
 
-* utilizzo dell’interfaccia utente touch per creare una configurazione di Target in AEM come Cloud Service (è richiesta la configurazione IMS).
-* aggiunta e configurazione di Adobe Target come estensione in [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html).
+* utilizzo dell’interfaccia utente touch per creare una configurazione di Target in AEM as a Cloud Service (è richiesta la configurazione IMS).
+* aggiunta e configurazione di Adobe Target come estensione in [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
 Adobe Launch è necessario per gestire le proprietà lato client sia per Analytics che per Target nelle pagine AEM (librerie/tag JS). Detto questo, l’integrazione con Launch è necessaria per il &quot;targeting delle esperienze&quot;. Per l’esportazione dei frammenti esperienza in Target, è necessario solo Adobe Target Configuration e IMS.
 
@@ -32,11 +32,11 @@ Adobe Launch è necessario per gestire le proprietà lato client sia per Analyti
 3. Selezionare il pulsante **Crea**.
    ![](assets/tenant1.png "Crea")
 4. Compila i dettagli (vedi sotto) e seleziona **Connetti**.
-   ![](assets/open_screen1.png "Connect")
+   ![](assets/open_screen1.png "ConnectConnect")
 
 ### Configurazione IMS {#ims-configuration}
 
-Per integrare correttamente Target con AEM e Launch è necessaria una configurazione IMS sia per Launch che per Target. Anche se la configurazione IMS per Launch è preconfigurata in AEM come Cloud Service, è necessario creare la configurazione IMS di Target (dopo il provisioning di Target). Per informazioni su come creare la configurazione IMS di Target, consulta [questo video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) .
+Per integrare correttamente Target con AEM e Launch è necessaria una configurazione IMS sia per Launch che per Target. Anche se la configurazione IMS per Launch è preconfigurata in AEM as a Cloud Service, è necessario creare la configurazione IMS di Target (dopo il provisioning di Target). Per informazioni su come creare la configurazione IMS di Target, consulta [questo video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) .
 
 ### ID tenant di Adobe Target e codice client di Adobe Target {#tenant-client}
 
@@ -51,7 +51,7 @@ In entrambi i casi, tieni presente che:
 * Hai la possibilità di modificare il set di ID tenant predefinito.
 * Di conseguenza, le chiamate di backend a Target saranno basate sull’ID tenant e le chiamate lato client a Target saranno basate sul codice client.
 
-Come precedentemente affermato, il primo caso è il più comune per AEM come Cloud Service. In entrambi i casi, assicurati che i campi **entrambi** contengano le informazioni corrette a seconda delle tue esigenze.
+Come indicato in precedenza, il primo caso è il più comune per AEM as a Cloud Service. In entrambi i casi, assicurati che i campi **entrambi** contengano le informazioni corrette a seconda delle tue esigenze.
 
 >[!NOTE]
 >
