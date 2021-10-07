@@ -3,7 +3,7 @@ title: Utilizzare i set di regole per trasformare gli URL
 description: Scopri come distribuire i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Vedi anche [Risolvere i problemi relativi ai set di regole](https://helpx.adobe.
 Inoltre, verifica prima il set di regole in un ambiente di staging che non influisce sull’ambiente di produzione live.
 Gli ambienti di produzione e gli ambienti di staging in genere richiedono accessi diversi.
 
-Per informazioni sull&#39;accesso, consulta l&#39; [Adobe applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app) .
+Per informazioni sull&#39;accesso, consulta l&#39; [applicazione desktop Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -57,7 +57,7 @@ Vedi anche [Uso dell&#39;immagine &quot;asset&quot; invece di &quot;is&quot; in 
 
 1. Apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-   Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non si dispone di tali informazioni, contattare il supporto tecnico.
+   Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di tali informazioni, contatta l’Assistenza clienti.
 
 1. Carica il file del set di regole facendo quanto segue:
 

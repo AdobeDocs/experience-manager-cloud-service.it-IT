@@ -71,7 +71,7 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
 
    ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Facendo clic su **Anteprima di stampa** si apre una nuova scheda con il rapporto visualizzato in un&#39;anteprima stampabile. Fai clic su **Stampa** per stampare il rapporto in formato PDF per facilitarne la condivisione.
+1. Facendo clic su **Anteprima di stampa** si apre una nuova scheda con il rapporto visualizzato in un&#39;anteprima stampabile. Fai clic su **Stampa** per stampare il rapporto in un formato PDF per facilitarne la condivisione.
 
    >[!IMPORTANT]
    >* L&#39;opzione **Salva come PDF** è consigliata e supportata per la funzionalità di cui sopra.
@@ -101,7 +101,7 @@ La scheda **Proprietà report** fornisce informazioni sulle proprietà del repor
 
 #### Panoramica dei rapporti {#report-overview}
 
-Questa scheda **Panoramica rapporto** fornisce i risultati del rapporto e i livelli di gravità da applicare durante la valutazione della preparazione al passaggio a AEM come Cloud Service, come illustrato nella figura riportata di seguito.
+Questa scheda **Panoramica rapporto** fornisce i risultati del rapporto e i livelli di gravità da applicare durante la valutazione della preparazione al passaggio a AEM as a Cloud Service, come illustrato nella figura riportata di seguito.
 
 ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -128,7 +128,7 @@ L’opzione Valutazione delle best practice fornisce una valutazione dell’ista
 
 #### Valutazione della complessità della migrazione {#migration-complexity-assessment}
 
-L’opzione Valutazione della complessità della migrazione fornisce una valutazione della complessità necessaria per migrare l’implementazione AEM esistente a AEM come Cloud Service.
+L’opzione Valutazione della complessità della migrazione fornisce una valutazione della complessità necessaria per migrare l’implementazione AEM esistente a AEM as a Cloud Service.
 
 Da questa scheda puoi esaminare le seguenti informazioni:
 

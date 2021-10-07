@@ -37,7 +37,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 
-* Dopo aver completato la fase *Estrazione* del processo di trasferimento dei contenuti e prima di avviare la fase di acquisizione *Ingestion* per acquisire contenuti nel AEM come Cloud Service *Stage* o *Produzione*, dovrai registrare un ticket di supporto per notificare all&#39;Adobe l&#39;intenzione di eseguire *Acquisizione&lt;a7 a9/> in modo che l&#39;Adobe possa garantire che non si verifichino interruzioni durante il processo* Ingestion *.* Sarà necessario registrare il ticket di supporto 1 settimana prima della data *di acquisizione* pianificata. Dopo aver inviato il ticket di assistenza, il team di supporto fornirà indicazioni sui passaggi successivi. Puoi registrare un ticket di supporto con i seguenti dettagli:
+* Dopo aver completato la fase *Estrazione* del processo di trasferimento dei contenuti e prima di avviare la fase di acquisizione *Ingestion* per acquisire contenuti nelle istanze as a Cloud Service *Stage* o *Produzione*, dovrai registrare un ticket di supporto per notificare all&#39;Adobe l&#39;intenzione di eseguire *Acquisizione* in modo che l&#39;Adobe possa garantire che non si verifichino interruzioni durante il processo *Ingestion*. Sarà necessario registrare il ticket di supporto 1 settimana prima della data *di acquisizione* pianificata. Dopo aver inviato il ticket di assistenza, il team di supporto fornirà indicazioni sui passaggi successivi. Puoi registrare un ticket di supporto con i seguenti dettagli:
 
    * Data esatta e ora stimata (con il tuo fuso orario) quando intendi avviare la fase *Acquisizione*.
    * Tipo di ambiente (Stage o Produzione) in cui si intende inserire i dati.
@@ -70,7 +70,7 @@ Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato co
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
 >title="Esecuzione dello strumento Content Transfer (Trasferimento contenuti)"
->abstract="Scopri come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare il contenuto in AEM come Cloud Service (authoring/pubblicazione)."
+>abstract="Scopri come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare il contenuto in AEM as a Cloud Service (authoring/pubblicazione)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Vedere Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial: utilizzo dello strumento Content Transfer (Trasferimento contenuti)"
 

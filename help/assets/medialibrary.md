@@ -2,12 +2,12 @@
 title: Utilizzare Media Library per la gestione di base delle risorse digitali
 description: '[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse.'
 contentOwner: AG
-feature: Gestione risorse,Pubblicazione
+feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: e294ecdefca89bc3fd16ee2166a1a8418d0237ee
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Media Library viene installato come parte di Sites. Non è richiesta alcuna lice
 
 ## [!DNL Assets] rispetto a Media Library {#assets-and-media-library}
 
-Experience Manager Assets fornisce funzionalità DAM di livello Enterprise. La funzionalità Assets viene fornita con [!DNL Experience Manager] in un unico pacchetto. Tuttavia, gli utenti che non hanno acquistato una licenza di Assets non hanno il diritto di utilizzare le funzioni avanzate di DAM. Senza la licenza Assets, sono disponibili solo [funzionalità Media Library](#use-media-library).
+Experience Manager Assets fornisce funzionalità DAM di livello enterprise. La funzionalità Assets viene fornita con [!DNL Experience Manager] in un unico pacchetto. Tuttavia, gli utenti che non hanno acquistato una licenza di Assets non hanno il diritto di utilizzare le funzioni avanzate di DAM. Senza la licenza Assets, sono disponibili solo [funzionalità Media Library](#use-media-library).
 
 Se desideri evitare l’utilizzo non intenzionale di funzionalità [!DNL Assets] prive di licenza, rimuovi tutti i flussi di lavoro, i componenti, le tassonomie, le opzioni e l’amministratore [!DNL Assets] specifici di [!DNL Experience Manager]. [!DNL Assets] In questo modo si evita agli utenti di utilizzare accidentalmente le funzioni [!DNL Assets] che non sono state autorizzate.
 
@@ -52,15 +52,9 @@ Media Library copre ampiamente i seguenti casi di utilizzo:
 
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
-* Basic metadata properties
-* Tag management
-* Version control
 * Static renditions
-* Projects, tasks, workflow authoring
+* Projects, tasks authoring
 * Activity stream (timeline)
-* Query Builder (API)
-* Marketing Cloud integration
-* User interface customization and extension
 * Comments and annotation
 -->
 
@@ -79,13 +73,21 @@ Per utilizzare la funzionalità Media Library, è possibile utilizzare l&#39;int
 * Annotare le risorse.
 * Aggiungi le risorse alle pagine [!DNL Sites] tramite Content Finder.
 * Utilizzo [!DNL Content Fragments].
+* Utilizza le API REST HTTP e GraphQL per [!DNL Content Fragments] e le risorse multimediali a cui si fa riferimento, con licenza Sites.
+* Integrazione del Marketing Cloud.
+* Personalizza ed espandi l’interfaccia utente per la gestione delle risorse.
+* Accedi all’API di Query Builder per estendere la funzionalità di ricerca.
+* Creare tag statici.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
 >
->Molti casi d’uso avanzati di DAM sono soddisfatti da [!DNL Experience Manager Assets]. La licenza Media Library ti consente di soddisfare solo i casi d’uso elencati utilizzando Media Library. Se non è presente un caso d’uso, non utilizzarlo con una licenza Media Library. In caso di domande, contatta l’Assistenza clienti Adobe.
+>Molti casi d’uso avanzati di DAM sono soddisfatti da [!DNL Experience Manager Assets]. La licenza Media Library ti consente di soddisfare solo i casi d’uso elencati utilizzando Media Library. Se non è presente un caso d’uso, non utilizzarlo con una licenza Media Library. In caso di domande, contatta l’Assistenza clienti.
+
+Non è possibile utilizzare tag avanzati, collegamenti [!DNL Asset], selettore [!DNL Asset], assegnazione tag in blocco, modifica flussi di lavoro risorse senza [!DNL Assets] licenza.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

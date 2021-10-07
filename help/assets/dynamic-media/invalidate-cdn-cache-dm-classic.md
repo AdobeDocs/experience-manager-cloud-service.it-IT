@@ -1,12 +1,12 @@
 ---
 title: Annullare la validità della cache CDN (Content Delivery Network) tramite Dynamic Media Classic
 description: Scopri come annullare la validità della rete CDN (Content Delivery Network) memorizzata nella cache per consentirti di aggiornare rapidamente le risorse consegnate da Dynamic Media, anziché attendere la scadenza della cache.
-feature: Gestione risorse, Dynamic Media Classic
+feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '693'
 ht-degree: 13%
 
 ---
@@ -23,13 +23,13 @@ Le risorse Dynamic Media sono memorizzate nella cache della rete CDN (Content De
 >
 >Questi passaggi si applicano solo a Dynamic Media in Adobe Experience Manager 6.5, Service Pack 5 o versioni precedenti. <!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
 
-Vedi anche [Panoramica sulla cache in Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
+Vedi anche [Panoramica della cache in Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
 **Per annullare la validità della cache CDN tramite Dynamic Media Classic:**
 
 1. Apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-   Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non si dispone di tali informazioni, contattare il supporto tecnico.
+   Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di tali informazioni, contatta l’Assistenza clienti.
 
 1. Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 1. Nella pagina Impostazioni generali applicazione, sotto l&#39;intestazione del gruppo Server, individuare la casella di testo **[!UICONTROL Modello di invalidazione CDN]**.

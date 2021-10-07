@@ -2,15 +2,15 @@
 title: Automazione dei contenuti per l'integrazione con Creative Cloud
 description: Generare varianti di risorse utilizzando l’integrazione con Creative Cloud
 contentOwner: AG
-feature: Caricare, Elaborazione delle risorse, Pubblicazione, Microservizi di Asset compute, Flusso di lavoro
+feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
-
 
 # Generare varianti di risorse utilizzando l’integrazione [!DNL Adobe Creative Cloud] {#content-automation}
 
@@ -32,7 +32,7 @@ Gli utenti possono creare profili di elaborazione per automatizzare le seguenti 
 
    ![Predefinito Lightroom](/help/assets/assets/content-automation-lrpresets.png)
 
-   *Figura: Adobe Preimpostazione Lightroom per migliorare la qualità delle immagini in modo coerente per molte immagini.*
+   *Figura: Predefinito Adobe Lightroom per migliorare la qualità delle immagini in modo coerente per molte immagini.*
 
 * **Ritaglio** immagine: Utilizza l&#39;intelligenza artificiale per creare una selezione intorno agli oggetti principali e rimuovere lo sfondo con un singolo comando.
 
@@ -46,7 +46,7 @@ Gli utenti possono creare profili di elaborazione per automatizzare le seguenti 
 
    ![Azioni Photoshop](/help/assets/assets/content-automation-psactions.png)
 
-* **Sostituzione** di oggetti avanzati: Esegue la personalizzazione su scala consentendo di scambiare le immagini mantenendo tutti gli effetti e le regolazioni applicati all&#39;interno di un file PSD.
+* **Sostituzione** di oggetti avanzati: Esegue la personalizzazione su scala consentendo di scambiare le immagini mantenendo tutti gli effetti e le regolazioni applicati all’interno di un file PSD.
 
    ![Sostituire gli oggetti in modo intelligente](/help/assets/assets/content-automation-objectreplace.png)
 
@@ -54,7 +54,7 @@ Gli utenti possono creare profili di elaborazione per automatizzare le seguenti 
 
 Per utilizzare i profili di elaborazione per creare automaticamente le varianti, effettua le seguenti operazioni:
 
-1. Contatta l’ [Adobe Customer Care](https://experienceleague.adobe.com/#support) per ricevere la licenza.
+1. Contatta il [Adobe Customer Support](https://experienceleague.adobe.com/#support) per ricevere la licenza.
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili di elaborazione]**.
 
@@ -84,6 +84,6 @@ Per elaborare le risorse esistenti, seleziona le risorse, seleziona l’opzione 
 >[!MORELIKETHIS]
 >
 >* [Configura e utilizza i microservizi per le risorse tramite i profili](/help/assets/asset-microservices-configure-and-use.md) di elaborazione.
->* [ [!DNL Experience Manager] Effettua l’integrazione con [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [ [!DNL Experience Manager] Effettua l’integrazione con  [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Acquisizione ed elaborazione delle risorse con i microservizi per le risorse: Panoramica](/help/assets/asset-microservices-overview.md).
 

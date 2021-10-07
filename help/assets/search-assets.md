@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: aa5d529b132a4ff517950192a81a13c05fe92b4c
 workflow-type: tm+mt
-source-wordcount: '4898'
+source-wordcount: '4897'
 ht-degree: 6%
 
 ---
@@ -42,7 +42,7 @@ Usa il pannello **[!UICONTROL Filtri]** per cercare risorse, cartelle, tag e met
 
 Acquisisci familiarità con l’interfaccia di ricerca e le azioni disponibili.
 
-![Interfaccia dei risultati di ricerca di Experience Manager Assets](assets/aem_search_results.png)
+![Interfaccia dei risultati di ricerca Experience Manager Assets](assets/aem_search_results.png)
 
 *Figura: Interfaccia dei risultati di  [!DNL Experience Manager Assets] ricerca.*
 
@@ -157,7 +157,7 @@ Puoi cercare le risorse in base ai valori esatti dei campi di metadati, ad esemp
 | Creatore | creatore:John |
 | Dove si trova | posizione:NA |
 | Descrizione | descrizione:&quot;Immagine campione&quot; |
-| Strumento di creazione | strumento creatore:&quot;Adobe Photoshop CC 2015&quot; |
+| Strumento di creazione | creatortool: &quot;Adobe Photoshop&quot; |
 | Proprietario copyright | copyrightowner: &quot;Adobe Systems&quot; |
 | Collaboratore | collaboratore:John |
 | Condizioni d&#39;uso | usageterms:&quot;CopyRights riservati&quot; |
@@ -202,7 +202,7 @@ Utilizzando Adobe Asset Link, i creativi possono ora accedere ai contenuti memor
 
 ### Cercare risorse nell’app desktop [!DNL Experience Manager] {#desktop-app}
 
-I creativi professionisti utilizzano l’app desktop per rendere facilmente ricercabile [!DNL Experience Manager Assets] e disponibile sul desktop locale (Win o Mac). I creativi possono facilmente rivelare le risorse desiderate in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente - le modifiche vengono salvate in [!DNL Experience Manager] con una nuova versione creata nel repository. L&#39;applicazione supporta ricerche di base utilizzando una o più parole chiave, caratteri jolly `*` e `?` e operatore `AND`. Consulta [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) nell’app desktop.
+I creativi professionisti utilizzano l’app desktop per rendere facilmente ricercabile [!DNL Experience Manager Assets] e disponibile sul desktop locale (Win o Mac). I creativi possono facilmente rivelare le risorse desiderate in Mac Finder o Esplora risorse, aperte nelle applicazioni desktop e modificate localmente - le modifiche vengono salvate in [!DNL Experience Manager] con una nuova versione creata nel repository. L&#39;applicazione supporta ricerche di base utilizzando una o più parole chiave, caratteri jolly `*` e `?` e operatore `AND`. Consulta [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) nell’app desktop.
 
 ### Cercare risorse in [!DNL Brand Portal] {#brand-portal}
 
@@ -228,7 +228,7 @@ Gli autori possono utilizzare Content Finder per cercare nell’archivio DAM le 
 
 Il selettore delle risorse (selettore delle risorse nelle versioni precedenti di [!DNL Adobe Experience Manager]) consente di cercare, filtrare e sfogliare le risorse DAM in modo speciale. Il selettore delle risorse è disponibile in `https://[aem_server]:[port]/aem/assetpicker.html`. Puoi recuperare i metadati delle risorse selezionate utilizzando il selettore delle risorse. Puoi avviarlo con i parametri di richiesta supportati, ad esempio il tipo di risorsa (immagine, video, testo) e la modalità di selezione (selezione singola o multipla). Questi parametri impostano il contesto del selettore delle risorse per una particolare istanza di ricerca e rimangono intatti per tutta la selezione.
 
-Il selettore delle risorse utilizza il messaggio HTML5 `Window.postMessage` per inviare i dati della risorsa selezionata al destinatario. Funziona solo in modalità Sfoglia e solo con la pagina dei risultati Omnisearch.
+Il selettore delle risorse utilizza il messaggio HTML5 `Window.postMessage` per inviare al destinatario i dati della risorsa selezionata. Funziona solo in modalità Sfoglia e solo con la pagina dei risultati Omnisearch.
 
 Passa i seguenti parametri di richiesta in un URL per avviare il selettore risorse in un particolare contesto:
 

@@ -62,7 +62,7 @@ ht-degree: 35%
       + [Accesso agli archivi](cloud-manager/managing-code/accessing-repos.md)
       + [Integrazione di Git con Adobe Cloud Manager](cloud-manager/managing-code/integrating-with-git.md)
       + [Utilizzo di più archivi Git di origine](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-      + [Configurazione di Enterprise Team Development per AEM come Cloud Service](cloud-manager/managing-code/enterprise-team-dev-setup.md)
+      + [Configurazione di Enterprise Team Development per AEM as a Cloud Service](cloud-manager/managing-code/enterprise-team-dev-setup.md)
    + [Configurazione della pipeline CI/CD](cloud-manager/configure-pipeline.md)
    + [Implementazione del codice](cloud-manager/deploy-code.md)
    + Risultati dei test {#test-results}
@@ -232,7 +232,7 @@ ht-degree: 35%
    + [Flusso di distribuzione dei contenuti](dispatcher/overview.md)
    + [Dispatcher nel cloud](dispatcher/disp-overview.md)
    + [Convalida e debug tramite gli strumenti di Dispatcher](dispatcher/validation-debug.md)
-   + [Migrazione della configurazione del Dispatcher da AMS a AEM come Cloud Service](dispatcher/ams-aem.md)
+   + [Migrazione della configurazione del Dispatcher da AMS a AEM as a Cloud Service](dispatcher/ams-aem.md)
    + [Convalida e debug tramite la versione legacy degli strumenti di Dispatcher](dispatcher/validation-debug-legacy.md)
    + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
    + [Memorizzazione in cache in AEM as a Cloud Service](dispatcher/caching.md)

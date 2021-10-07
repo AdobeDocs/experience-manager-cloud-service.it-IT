@@ -4,7 +4,7 @@ description: Scopri come l’imaging intelligente con Adobe Sensei AI applica le
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '2624'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Gli esempi di risorse immagine seguenti illustrano l’ottimizzazione Smart Imag
 | [Immagine 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![immagine4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 |  |  |  |  | Media = 51% |
 
-Simile a quanto sopra, Adobe ha anche eseguito un test con 7009 URL dai siti dei clienti live. Sono stati in grado di raggiungere una media del 38% in più di ottimizzazione delle dimensioni del file per JPEG. Per PNG con formato WebP, sono stati in grado di raggiungere una media di 31% ulteriore ottimizzazione delle dimensioni del file. Questo tipo di ottimizzazione è possibile grazie alla capacità di Smart imaging.
+Simile a quanto sopra, Adobe ha anche eseguito un test con 7009 URL dai siti dei clienti live. Sono stati in grado di ottenere in media un ulteriore ottimizzazione del 38% delle dimensioni dei file per JPEG. Per PNG con formato WebP, sono stati in grado di raggiungere una media di 31% ulteriore ottimizzazione delle dimensioni del file. Questo tipo di ottimizzazione è possibile grazie alla capacità di Smart imaging.
 
 Sul web mobile, le sfide sono aggravate da due fattori:
 
@@ -88,7 +88,7 @@ Le immagini costituiscono la maggior parte del tempo di caricamento di una pagin
 
 Miglioramenti all&#39;ultima versione di Smart imaging:
 
-* È stata migliorata la classificazione SEO di Google per le pagine web che utilizzano l’imaging avanzato più recente.
+* È stata migliorata la classificazione SEO di Google per le pagine web che utilizzano l’immagine avanzata più recente.
 * Distribuisce immediatamente il contenuto ottimizzato (in fase di runtime).
 * Utilizza la tecnologia Adobe Sensei per convertire in base alla qualità (`qlt`) specificata nella richiesta di immagine.
 * L’imaging avanzato può essere disattivato utilizzando il parametro URL `bfc` .
@@ -115,14 +115,14 @@ Quando un&#39;immagine viene richiesta da un consumatore, Smart imaging controll
    * Chrome
    * Firefox
    * Microsoft® Edge
-   * Safari (su iOS, macOS, iPadOS), supporto per la versione del browser e del sistema operativo WebP
+   * Safari (in iOS, macOS, iPadOS), supporto del browser e della versione del sistema operativo WebP
    * Android™
    * Opera
 * Supporto di browser legacy per i seguenti elementi:
 
    | Browser | Versione browser/sistema operativo | Formato |
    | --- | --- | --- |
-   | Safari | Precedente a iOS/iPad 14.0 o macOS BigSur | JPEG2000 |
+   | Safari | Precedente ad iOS/iPad 14.0 o macOS BigSur | JPEG2000 |
    | Bordo | Anteriore a 18 | JPEGXR |
    | Internet Explorer | 9+ | JPEGXR |
 * Per i browser che non supportano questi formati, viene distribuito il formato immagine richiesto originariamente.
@@ -172,7 +172,7 @@ Per utilizzare Smart imaging, l’account Dynamic Media Classic o Dynamic Media 
 * Utilizza la rete CDN (Content Delivery Network) in bundle Adobe come parte della tua licenza.
 * Utilizza un dominio dedicato (ad esempio, `images.company.com` o `mycompany.scene7.com`), non un dominio generico (ad esempio, `s7d1.scene7.com`, `s7d2.scene7.com` o `s7d13.scene7.com`).
 
-Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
+Per trovare i tuoi domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
 Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se al momento utilizzi un dominio generico, puoi richiedere di passare al dominio personalizzato. Esegui questa richiesta di transizione quando invii un ticket di assistenza tecnica.
 
@@ -198,7 +198,7 @@ Per impostazione predefinita, Smart imaging DPR e l’ottimizzazione della rete 
    1. Nome contatto principale, e-mail, telefono.
    1. Tutti i domini da abilitare per Smart imaging (ovvero `images.company.com` o `mycompany.scene7.com`).
 
-      Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
+      Per trovare i tuoi domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
       Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
@@ -206,20 +206,20 @@ Per impostazione predefinita, Smart imaging DPR e l’ottimizzazione della rete 
    1. Verifica di utilizzare la CDN tramite Adobe e di non gestirla con una relazione diretta.
    1. Verifica di utilizzare un dominio dedicato come `images.company.com` o `mycompany.scene7.com` e non un dominio generico, ad esempio `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
+      Per trovare i tuoi domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
       Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
-      Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se utilizzi un dominio generico Dynamic Media Classic, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione.
+      Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se utilizzi un dominio Dynamic Media Classic generico, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione.
    1. Indica se desideri che funzioni su HTTP/2.
 
-1. L’Assistenza clienti di Adobe ti aggiunge all’elenco di attesa del cliente Smart imaging in base all’ordine in cui vengono inviate le richieste.
-1. Quando Adobe è pronto per gestire la richiesta, l’Assistenza clienti ti contatta per coordinare e impostare una data di destinazione.
+1. L’Assistenza clienti di Adobe ti aggiunge all’Elenco di attesa clienti di Smart imaging in base all’ordine in cui vengono inviate le richieste.
+1. Quando Adobe è pronto per gestire la richiesta, l&#39;Assistenza clienti ti contatta per coordinare e impostare una data di destinazione.
 1. **Facoltativo**: Facoltativamente, puoi testare l’imaging avanzato nell’ambiente di staging prima che Adobe introduca la nuova funzione in produzione.
-1. Dopo il completamento, riceverai una notifica dall’Assistenza clienti.
+1. Dopo il completamento dell’attività, riceverai una notifica dall’Assistenza clienti.
 1. Per ottimizzare le prestazioni dell’imaging avanzato, Adobe consiglia di impostare il valore TTL (Time To Live) a 24 ore o più. Il TTL definisce per quanto tempo le risorse vengono memorizzate nella cache dalla rete CDN. Per modificare questa impostazione:
 
-   1. Se utilizzi Dynamic Media Classic, vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Configurazione pubblicazione]** > **[!UICONTROL Server immagini]**. Imposta il valore **[!UICONTROL Default Client Cache Time To Live]** su 24 o più a lungo.
+   1. Se utilizzi Dynamic Media Classic, passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Configurazione pubblicazione]** > **[!UICONTROL Server immagini]**. Imposta il valore **[!UICONTROL Default Client Cache Time To Live]** su 24 o più a lungo.
    1. Se utilizzi Dynamic Media, segui [queste istruzioni](config-dm.md). Imposta il valore **[!UICONTROL Scadenza]** su 24 ore o più.
 
 ## Quando posso aspettarmi che il mio account sia abilitato con Smart imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
@@ -271,7 +271,7 @@ Attualmente, è possibile abilitare o disabilitare l&#39;imaging avanzato. Nessu
 
 L&#39;attuale Smart imaging non è in grado di effettuare il provisioning.
 
-## A volte un&#39;immagine JPEG viene restituita a Chrome invece di un&#39;immagine WebP. Perché cambia? {#jpeg-webp}
+## A volte un&#39;immagine di JPEG viene restituita a Chrome invece di un&#39;immagine WebP. Perché cambia? {#jpeg-webp}
 
 L’imaging intelligente determina se la conversione è utile o meno. Restituisce la nuova immagine solo se la conversione si traduce in una dimensione file più piccola con qualità comparabile.
 

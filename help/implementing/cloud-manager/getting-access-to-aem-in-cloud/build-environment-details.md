@@ -206,4 +206,4 @@ Alcune build richiedono l&#39;installazione di pacchetti di sistema aggiuntivi p
 Questa stessa tecnica può essere utilizzata per installare pacchetti specifici per la lingua, ad esempio utilizzando `gem` per RubyGems o `pip` per pacchetti Python.
 
 >[!NOTE]
->L&#39;installazione di un pacchetto di sistema in questo modo **non** lo installa nell&#39;ambiente di runtime utilizzato per l&#39;esecuzione di Adobe Experience Manager. Se hai bisogno di un pacchetto di sistema installato nell’ambiente AEM, contatta il tuo rappresentante Adobe.
+>L&#39;installazione di un pacchetto di sistema in questo modo **non** lo installa nell&#39;ambiente di runtime utilizzato per l&#39;esecuzione di Adobe Experience Manager. Se hai bisogno di installare un pacchetto di sistema nell’ambiente AEM, contatta il tuo rappresentante Adobe.
