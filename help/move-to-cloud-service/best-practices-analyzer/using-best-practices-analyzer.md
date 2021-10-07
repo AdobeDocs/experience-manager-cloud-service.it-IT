@@ -2,7 +2,7 @@
 title: Utilizzo di Best Practices Analyzer
 description: Utilizzo di Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2522'
 ht-degree: 42%
@@ -91,6 +91,7 @@ Leggi questa sezione per scoprire come visualizzare il rapporto di Best Practice
 Durante la rigenerazione del rapporto, mostra l’avanzamento in termini di percentuale completata come mostrato nell’immagine seguente.
 
    ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
 
 
 #### Utilizzo dei filtri nel rapporto di Best practice Analyzer {#bpa-filters}

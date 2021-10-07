@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 91%
 
 ---
 # Linee guida per contribuire alla documentazione di Adobe Experience Manager
@@ -37,9 +37,9 @@ Fanne eccezione le note sulla versione, in cui possono essere elencati i problem
 
 È gradita come contributo qualsiasi idea che punti al miglioramento della documentazione di AEM. Tuttavia, commenti, problemi e richieste sono intesi solo come *contributi*. Non hanno l’obiettivo di rispondere a domande su come usare AEM, come implementare un progetto AEM o risolvere problemi tecnici.
 
-Eventuali domande sull’utilizzo di AEM o su errori tecnici possono essere segnalate attraverso il normale processo di assistenza tramite il [portale di assistenza Enterprise Support di Experience Cloud](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) o discusse nella [community di Experience Manager](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
+Qualsiasi domanda sull&#39;utilizzo di AEM o di errori tecnici che potresti riscontrare deve essere segnalata attraverso il normale processo di supporto tramite il [portale di supporto Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) o discussa nella [community di Experienci Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
-***I contributi alla documentazione di AEM non sostituiscono l’Assistenza clienti di Adobe***. Pertanto, verranno rifiutati tutti i contributi che richiedono risposte a domande correlate al supporto.
+***I contributi alla documentazione AEM non sostituiscono l’*** Assistenza clienti di Adobe e verranno rifiutati tutti i contributi che richiedono risposte a domande correlate al supporto.
 
 ### I contributi devono fare riferimento in modo chiaro alle pagine della documentazione interessate.
 

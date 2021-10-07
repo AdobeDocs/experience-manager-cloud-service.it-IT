@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Gli utenti possono creare profili di elaborazione per automatizzare le seguenti 
 
 Per utilizzare i profili di elaborazione per creare automaticamente le varianti, effettua le seguenti operazioni:
 
-1. Contatta l’ [Adobe Customer Care](https://experienceleague.adobe.com/#support) per ricevere la licenza.
+1. Contatta il [Adobe Customer Support](https://experienceleague.adobe.com/#support) per ricevere la licenza.
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili di elaborazione]**.
 

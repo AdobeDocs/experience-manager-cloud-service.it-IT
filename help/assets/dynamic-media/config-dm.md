@@ -3,9 +3,9 @@ title: Configura Cloud Service Dynamic Media
 description: Scopri come configurare Dynamic Media in Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '4057'
+source-wordcount: '4054'
 ht-degree: 4%
 
 ---
@@ -147,7 +147,7 @@ Vedere anche [Casella in entrata](/help/sites-cloud/authoring/getting-started/in
 
    ![Configurazione Dynamic Media non riuscita](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
-1. Nella pagina **[!UICONTROL DMSETUP]**, controlla i dettagli di configurazione che descrivono l&#39;errore. In particolare, prendere nota di eventuali messaggi di errore o codici di errore. Contatta l’Assistenza clienti Adobe con queste informazioni.
+1. Nella pagina **[!UICONTROL DMSETUP]**, controlla i dettagli di configurazione che descrivono l&#39;errore. In particolare, prendere nota di eventuali messaggi di errore o codici di errore. Contatta l’Assistenza clienti di Adobe con queste informazioni.
 
    ![Pagina Configurazione Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
@@ -391,7 +391,8 @@ La coda del flusso di lavoro di transito Granite viene utilizzata per il flusso 
 
 **Per aggiornare la coda del flusso di lavoro transitorio di Granite:**
 
-1. Vai su [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) e cerca **Coda: Coda flusso di lavoro transitorio Granite**.
+1. Passa alla **Configurazione della console Web Adobe Experience Manager** all&#39;indirizzo `http://<host>:<port>/system/console/configMgr`
+1. Cerca **Coda: Coda flusso di lavoro transitorio Granite**.
 
    >[!NOTE]
    >

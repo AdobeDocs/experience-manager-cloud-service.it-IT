@@ -2,9 +2,9 @@
 title: Verifica dello stato del record DNS
 description: Verifica dello stato del record DNS
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager esegue una ricerca DNS per il nome di dominio e visualizza uno dei
 rilevato. Lo stato DNS non verrà rilevato finché il nome di dominio personalizzato non sarà stato verificato e distribuito correttamente. Questo stato viene osservato anche quando il nome del dominio personalizzato è in fase di eliminazione.
 
 * **Il DNS viene risolto**
-in modo errato. Indica che la configurazione dei record DNS non è ancora stata risolta/puntata o è errata. Un rappresentante di Adobe verrà informato automaticamente.
+in modo errato. Indica che la configurazione dei record DNS non è ancora stata risolta/puntata o è errata.
 
    >[!NOTE]
    >È necessario configurare un `CNAME` o `A-record` seguendo le istruzioni corrispondenti. Per ulteriori informazioni, consulta Configurazione delle impostazioni DNS . Quando è pronto, è necessario selezionare nuovamente l&#39;icona **resolve** accanto allo stato.
