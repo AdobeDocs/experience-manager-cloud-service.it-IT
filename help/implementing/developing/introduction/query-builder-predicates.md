@@ -2,9 +2,9 @@
 title: Riferimento predicato di Query Builder
 description: Riferimento predicato per l’API di Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2218'
 ht-degree: 1%
 
 ---
@@ -167,7 +167,7 @@ Non supporta l’estrazione dei facet.
 
 ### hasPermission {#haspermission}
 
-Questo predicato limita il risultato agli elementi in cui la sessione corrente dispone dei privilegi [JCR specificati.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Questo predicato limita il risultato agli elementi in cui la sessione corrente dispone dei privilegi [JCR specificati.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Questo è un predicato solo filtraggio e non può sfruttare un indice di ricerca. Non supporta l’estrazione dei facet.
 

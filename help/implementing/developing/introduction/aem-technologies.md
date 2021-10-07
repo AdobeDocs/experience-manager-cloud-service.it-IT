@@ -2,9 +2,9 @@
 title: Fondamenti tecnici AEM
 description: Una panoramica delle fondamenta tecniche di AEM, tra cui il modo in cui AEM è strutturato e tecnologie fondamentali come JCR, Sling e OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ L’archivio dei contenuti sottostante e i livelli di logica di business sono co
 * Sling
 * OSGi
 
-## Java Content Repository {#java-content-repository}
+## Archivio dei contenuti Java {#java-content-repository}
 
-Lo standard Java Content Repository (JCR) [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) specifica un modo indipendente dal fornitore e indipendente dall&#39;implementazione per accedere al contenuto bidirezionale a un livello granulare all&#39;interno di un archivio di contenuti. Il lead di specificazione è detenuto da Adobe Research (Switzerland) AG.
+Lo standard Java Content Repository (JCR) [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html) specifica un modo indipendente dal fornitore e indipendente dall&#39;implementazione per accedere al contenuto bidirezionale a un livello granulare all&#39;interno di un archivio di contenuti. Il lead di specificazione è detenuto da Adobe Research (Switzerland) AG.
 
-Il pacchetto [JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) `javax.jcr.*` viene utilizzato per l’accesso diretto e la manipolazione del contenuto dell’archivio.
+Il pacchetto [JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) `javax.jcr.*` viene utilizzato per l’accesso diretto e la manipolazione del contenuto dell’archivio.
 
 AEM è basato su un JCR.
 
@@ -73,7 +73,7 @@ Sling è *incentrato sul contenuto*. Ciò significa che l’elaborazione è ince
 * Il primo target è la risorsa (nodo JCR) che contiene il contenuto
 * In secondo luogo, la rappresentazione, o script, si trova dalle proprietà della risorsa in combinazione con alcune parti della richiesta (ad esempio, selettori e/o estensione)
 
-### Sling REST {#restful-sling}
+### Sling RESTful {#restful-sling}
 
 Grazie alla sua filosofia incentrata sui contenuti, Sling implementa un server orientato al REST e quindi presenta un nuovo concetto nei framework delle applicazioni web. I vantaggi sono:
 
@@ -106,7 +106,7 @@ Possiamo suddividerlo nelle sue parti composite:
 * **suffisso** : può essere utilizzato per specificare informazioni aggiuntive
 * **param(s)**  - Qualsiasi parametro richiesto per il contenuto dinamico
 
-#### Dall’URL al contenuto e agli script {#from-url-to-content-and-scripts}
+#### Da URL a contenuto e script {#from-url-to-content-and-scripts}
 
 Utilizzando i principi di decomposizione URL:
 
@@ -228,7 +228,7 @@ La gerarchia dei tipi di:
 
 Questo perché `/y` dispone della proprietà `sling:resourceSuperType` , mentre `/x` non lo fa e quindi il relativo supertipo viene prelevato dal relativo tipo di risorsa.
 
-#### Gli script Sling non possono essere chiamati direttamente {#sling-scripts-cannot-be-called-directly}
+#### Gli Script Sling Non Possono Essere Chiamati Direttamente {#sling-scripts-cannot-be-called-directly}
 
 All’interno di Sling, gli script non possono essere chiamati direttamente in quanto ciò violerebbe il concetto rigoroso di server REST; puoi combinare risorse e rappresentazioni.
 
@@ -280,9 +280,9 @@ Questo consente di eseguire le seguenti azioni su uno qualsiasi dei pacchetti al
 * Vedi lo stato corrente
 * Accedi a informazioni più dettagliate (ad esempio nome simbolico, versione, posizione, ecc.) sui bundle specifici
 
-Per ulteriori informazioni, consulta [Configurazione di OSGi per AEM come Cloud Service](/help/implementing/deploying/configuring-osgi.md) .
+Per ulteriori informazioni, consulta [Configurazione di OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) .
 
-## Struttura all&#39;interno dell&#39;archivio {#structure-within-the-repository}
+## Struttura all’interno dell’archivio {#structure-within-the-repository}
 
 L’elenco seguente fornisce una panoramica della struttura che verrà visualizzata all’interno dell’archivio.
 
