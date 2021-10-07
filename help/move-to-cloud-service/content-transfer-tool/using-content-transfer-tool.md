@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
 workflow-type: tm+mt
-source-wordcount: '3104'
-ht-degree: 37%
+source-wordcount: '3216'
+ht-degree: 36%
 
 ---
 
@@ -50,6 +50,8 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 * Se utilizzi indici personalizzati, assicurati di configurare gli indici personalizzati con il nodo `tika` prima di eseguire lo strumento Content Transfer (Trasferimento contenuti). Per ulteriori informazioni, consulta [Preparazione della nuova definizione di indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) .
 
 * Se intendi eseguire operazioni di integrazione, è essenziale che la struttura del contenuto del contenuto esistente non venga modificata dal momento in cui l’estrazione iniziale viene portata al momento dell’esecuzione dell’estrazione integrativa. Non è possibile eseguire i top-up su contenuto la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questa limitazione durante il processo di migrazione.
+
+* Se intendi includere versioni come parte di un set di migrazione e stai eseguendo integrazioni con `wipe=false`, devi disattivare l’eliminazione della versione a causa di un limite corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione della versione e stai eseguendo i top-up in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
 ## Disponibilità {#availability}
 
@@ -120,6 +122,8 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
    1. **Parameters** (Parametri): seleziona i seguenti parametri per creare il set di migrazione:
 
       1. **Include Version** (Includi versione): seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` viene automaticamente incluso per eseguire la migrazione degli eventi di controllo.
+      >[!NOTE]
+      >Se intendi includere versioni come parte di un set di migrazione e stai eseguendo integrazioni con `wipe=false`, devi disattivare l’eliminazione della versione a causa di un limite corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione della versione e stai eseguendo i top-up in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
       1. **Includi mapping da utenti e gruppi** IMS: Seleziona l’opzione per includere la mappatura da utenti e gruppi IMS.
 Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) .
@@ -132,6 +136,7 @@ Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://exp
          >* `/libs`
          >* `/home`
          >* `/etc` (alcuni  `/etc` percorsi possono essere selezionati in CTT)
+
 
 
 1. Fai clic su **Salva** dopo aver compilato tutti i campi nella schermata dei dettagli **Crea set di migrazione** .
