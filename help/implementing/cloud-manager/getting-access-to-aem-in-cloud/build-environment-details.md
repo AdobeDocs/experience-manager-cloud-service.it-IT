@@ -2,9 +2,9 @@
 title: Dettagli dell’ambiente di generazione
 description: Dettagli dell’ambiente di creazione - Cloud Services
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 9ae940fb0149a76277aba49a75abfb8b83305788
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Cloud Manager crea ed esegue il test del codice utilizzando un ambiente di build
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven è configurato a livello di sistema con un file settings.xml che include automaticamente l’archivio dell’Adobe pubblico **Artifact** utilizzando un profilo denominato `adobe-public`. (Per ulteriori informazioni, consulta [Adobe Public Maven Repository](https://repo1.maven.org/) .
+* Maven è configurato a livello di sistema con un file settings.xml che include automaticamente l’archivio dell’Adobe pubblico **Artifact** utilizzando un profilo denominato `adobe-public`. (Per ulteriori informazioni, consulta [Adobe Public Maven Repository](https://repo.adobe.com/) .
 
 >[!NOTE]
 >Anche se Cloud Manager non definisce una versione specifica di `jacoco-maven-plugin`, la versione utilizzata deve essere almeno `0.7.5.201505241946`.
@@ -206,4 +206,4 @@ Alcune build richiedono l&#39;installazione di pacchetti di sistema aggiuntivi p
 Questa stessa tecnica può essere utilizzata per installare pacchetti specifici per la lingua, ad esempio utilizzando `gem` per RubyGems o `pip` per pacchetti Python.
 
 >[!NOTE]
->L&#39;installazione di un pacchetto di sistema in questo modo **non** lo installa nell&#39;ambiente di runtime utilizzato per l&#39;esecuzione di Adobe Experience Manager. Se hai bisogno di installare un pacchetto di sistema nell’ambiente AEM, contatta il tuo rappresentante Adobe.
+>L&#39;installazione di un pacchetto di sistema in questo modo **non** lo installa nell&#39;ambiente di runtime utilizzato per l&#39;esecuzione di Adobe Experience Manager. Se hai bisogno di un pacchetto di sistema installato nell’ambiente AEM, contatta il tuo rappresentante Adobe.

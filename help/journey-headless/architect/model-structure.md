@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 117d79b277118f39dfc442957989095bab5670b9
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 2%
+source-wordcount: '603'
+ht-degree: 3%
 
 ---
 
@@ -101,10 +101,6 @@ I modelli di frammento di contenuto devono essere pubblicati quando/prima che ve
 >
 >Se un autore tenta di pubblicare un frammento di contenuto per il quale il modello non è ancora stato pubblicato, un elenco di selezione lo indicherà e il modello verrà pubblicato con il frammento.
 
-Non appena un modello viene pubblicato, viene *bloccato* in modalità DI SOLA LETTURA sull&#39;autore. Questo obiettivo è quello di evitare modifiche che potrebbero causare errori agli schemi e alle query GraphQL esistenti, soprattutto nell’ambiente di pubblicazione. È indicato nella console da **Bloccato**.
-
-Quando il modello è **Bloccato** (in modalità DI SOLA LETTURA), è possibile visualizzare il contenuto e la struttura dei modelli, ma non è possibile modificarli direttamente; anche se puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli.
-
 ## Novità {#whats-next}
 
 Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’iniziare a creare modelli di frammenti di contenuto personalizzati.
@@ -130,8 +126,6 @@ Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’in
       * [Pubblicazione di un modello di frammento di contenuto](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
       * [Annullamento della pubblicazione di un modello di frammento di contenuto](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
-
-      * [Modelli per frammenti di contenuto bloccati (pubblicati)](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * Guide introduttive
 

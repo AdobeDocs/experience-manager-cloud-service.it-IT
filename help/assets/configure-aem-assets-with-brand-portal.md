@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 12%
@@ -178,7 +178,7 @@ Oltre al flusso di lavoro di automazione per attivare Brand Portal su AEM Assets
 
 >[!NOTE]
 >
->Se riscontri problemi durante l’attivazione del tenant Brand Portal, contatta l’Assistenza clienti .
+>Se riscontri problemi durante l’attivazione del tenant Brand Portal, contatta l’Assistenza Adobe .
 
 ## Configurazione manuale tramite Adobe Developer Console {#manual-configuration}
 

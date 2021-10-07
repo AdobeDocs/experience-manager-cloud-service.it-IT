@@ -4,7 +4,7 @@ description: Scopri come l’imaging intelligente con Adobe Sensei AI applica le
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '2624'
 ht-degree: 1%
@@ -213,10 +213,10 @@ Per impostazione predefinita, Smart imaging DPR e l’ottimizzazione della rete 
       Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se utilizzi un dominio Dynamic Media Classic generico, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione.
    1. Indica se desideri che funzioni su HTTP/2.
 
-1. L’Assistenza clienti di Adobe ti aggiunge all’Elenco di attesa clienti di Smart imaging in base all’ordine in cui vengono inviate le richieste.
-1. Quando Adobe è pronto per gestire la richiesta, l&#39;Assistenza clienti ti contatta per coordinare e impostare una data di destinazione.
+1. L’Assistenza clienti di Adobe ti aggiunge all’elenco di attesa del cliente Smart imaging in base all’ordine in cui vengono inviate le richieste.
+1. Quando Adobe è pronto per gestire la richiesta, l’Assistenza clienti ti contatta per coordinare e impostare una data di destinazione.
 1. **Facoltativo**: Facoltativamente, puoi testare l’imaging avanzato nell’ambiente di staging prima che Adobe introduca la nuova funzione in produzione.
-1. Dopo il completamento dell’attività, riceverai una notifica dall’Assistenza clienti.
+1. Dopo il completamento, riceverai una notifica dall’Assistenza clienti.
 1. Per ottimizzare le prestazioni dell’imaging avanzato, Adobe consiglia di impostare il valore TTL (Time To Live) a 24 ore o più. Il TTL definisce per quanto tempo le risorse vengono memorizzate nella cache dalla rete CDN. Per modificare questa impostazione:
 
    1. Se utilizzi Dynamic Media Classic, passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Configurazione pubblicazione]** > **[!UICONTROL Server immagini]**. Imposta il valore **[!UICONTROL Default Client Cache Time To Live]** su 24 o più a lungo.

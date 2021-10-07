@@ -2,9 +2,9 @@
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti per la distribuzione in Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 6548e05850d5499f1ce7d1f23f2cea2adb9d06fd
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2880'
 ht-degree: 13%
 
 ---
@@ -269,7 +269,7 @@ A causa dell’incorporazione del codice e dei pacchetti secondari del contenuto
 
 ## Incorporazione di pacchetti di terze parti {#embedding-3rd-party-packages}
 
-Tutti i pacchetti devono essere disponibili tramite l’ [archivio degli artefatti Maven pubblico di Adobe](https://repo1.maven.org/maven2/com/adobe/) o un archivio degli artefatti Maven di terze parti accessibile al pubblico e di riferimento.
+Tutti i pacchetti devono essere disponibili tramite l’ [archivio degli artefatti Maven pubblico di Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) o un archivio degli artefatti Maven di terze parti accessibile al pubblico e di riferimento.
 
 Se i pacchetti di terze parti si trovano nell’**archivio di artefatti Maven pubblico di Adobe**, per consentire ad Adobe Cloud Manager di risolvere gli artefatti non è necessario effettuare nessuna ulteriore configurazione.
 

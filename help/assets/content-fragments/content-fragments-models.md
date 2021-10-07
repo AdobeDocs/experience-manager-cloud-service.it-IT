@@ -4,18 +4,14 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: ce6741f886cc87b1be5b32dbf34e454d66a3608b
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 6%
+source-wordcount: '2256'
+ht-degree: 7%
 
 ---
 
 # Modelli per frammenti di contenuto {#content-fragment-models}
-
->[!NOTE]
->
->La funzione [Modelli di frammento di contenuto bloccati (pubblicati)](#locked-published-content-fragment-models) è in versione beta.
 
 I modelli per frammenti di contenuto in AEM definiscono la struttura del contenuto per i [frammenti di contenuto,](/help/assets/content-fragments/content-fragments.md) che fungono da base per i contenuti headless.
 
@@ -415,82 +411,28 @@ Per annullare la pubblicazione di un modello di frammento di contenuto:
 1. Seleziona il modello, seguito da **Annulla pubblicazione** nella barra degli strumenti.
 Lo stato di pubblicazione sarà indicato nella console.
 
-Se tenti di annullare la pubblicazione di un modello attualmente utilizzato da uno o più frammenti, un avviso di errore segnala quanto segue:
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-![Messaggio di errore Modello frammento di contenuto quando si annulla la pubblicazione di un modello in uso](assets/cfm-model-unpublish-error.png)
+This feature provides governance for Content Fragment Models that have been published. 
 
-Il messaggio ti consiglierà di controllare il pannello [Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) per ulteriori informazioni:
+The challenge:
 
-![Modello per frammento di contenuto nei riferimenti](assets/cfm-model-references.png)
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
 
-## Modelli per frammenti di contenuto bloccati (pubblicati) {#locked-published-content-fragment-models}
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
 
->[!NOTE]
-La funzione Modelli per frammenti di contenuto bloccati (pubblicati) è in versione beta.
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
 
-Questa funzione fornisce la governance dei modelli di frammenti di contenuto pubblicati.
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
 
-### La sfida {#the-challenge}
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
 
-* I modelli per frammenti di contenuto determinano lo schema per le query GraphQL in AEM.
+The solution:
 
-   * AEM gli schemi GraphQL vengono creati non appena viene creato un modello per frammenti di contenuto e possono esistere sia nell’ambiente di creazione che in quello di pubblicazione.
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
 
-   * Gli schemi in fase di pubblicazione sono i più critici in quanto forniscono le basi per la distribuzione live di contenuti di frammenti di contenuto in formato JSON.
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
 
-* Possono verificarsi problemi quando i modelli di frammento di contenuto vengono modificati o in altre parole modificati. Ciò significa che lo schema cambia, che a sua volta può influenzare le query GraphQL esistenti.
-
-* L’aggiunta di nuovi campi a un modello di frammento di contenuto non dovrebbe avere effetti negativi, in genere. Tuttavia, la modifica dei campi dati esistenti (ad esempio il loro nome) o l’eliminazione delle definizioni dei campi interromperà le query GraphQL esistenti quando richiedono questi campi.
-
-### Requisiti {#the-requirements}
-
-* Per sensibilizzare gli utenti sui rischi derivanti dalla modifica di modelli già utilizzati per la distribuzione di contenuti live, in altre parole, di modelli pubblicati.
-
-* Inoltre, per evitare modifiche non desiderate.
-
-Una di queste potrebbe interrompere le query se i modelli modificati vengono ripubblicati.
-
-### La soluzione {#the-solution}
-
-Per risolvere questi problemi, i modelli di frammenti di contenuto sono *bloccati* in modalità DI SOLA LETTURA sull&#39;autore, non appena pubblicati. Questo è indicato da **Bloccato**:
-
-![Scheda del modello frammento di contenuto bloccato](assets/cfm-model-locked.png)
-
-Quando il modello è **Bloccato** (in modalità DI SOLA LETTURA), è possibile visualizzare il contenuto e la struttura dei modelli, ma non è possibile modificarli.
-
-Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
-
-* Console
-
-   Dalla console è possibile gestire la modalità DI SOLA LETTURA con le azioni **Sblocca** e **Blocca** nella barra degli strumenti:
-
-   ![Barra degli strumenti del modello frammento di contenuto bloccato](assets/cfm-model-locked.png)
-
-   * È possibile **Sbloccare** un modello per abilitare le modifiche.
-
-      Se selezioni **Sblocca** verrà visualizzato un avviso e devi confermare l&#39;azione **Sblocca**:
-      ![Messaggio durante lo sblocco del modello di frammento di contenuto](assets/cfm-model-unlock-message.png)
-
-      Potete quindi aprire il modello per la modifica.
-
-   * È inoltre possibile **Bloccare** il modello in seguito.
-   * La ripubblicazione del modello lo riporta immediatamente in modalità **Bloccato** (SOLA LETTURA).
-
-* Editor modelli
-
-   * Quando apri un modello bloccato, viene visualizzato un avviso e vengono presentate tre azioni: **Annulla**, **Visualizza solo lettura**, **Modifica**:
-
-      ![Messaggio durante la visualizzazione di un modello di frammento di contenuto bloccato](assets/cfm-model-editor-lock-message.png)
-
-   * Se selezioni **Visualizza solo lettura** puoi vedere il contenuto e la struttura del modello:
-
-      ![Visualizza solo lettura - Modello frammento di contenuto bloccato](assets/cfm-model-editor-locked-view-only.png)
-
-   * Se selezioni **Modifica** puoi modificare e salvare gli aggiornamenti:
-
-      ![Modifica - Modello frammento di contenuto bloccato](assets/cfm-model-editor-locked-edit.png)
-
-      >[!NOTE]
-      Potrebbe ancora essere presente un avviso nella parte superiore, ma si verifica quando il modello è già utilizzato dai frammenti di contenuto esistenti.
-
-   * **** L’opzione Annulla consente di tornare alla console.
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->
