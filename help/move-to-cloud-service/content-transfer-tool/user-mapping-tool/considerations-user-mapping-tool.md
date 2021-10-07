@@ -1,9 +1,9 @@
 ---
 title: Considerazioni importanti sullo strumento di mappatura degli utenti
 description: Considerazioni importanti sullo strumento di mappatura degli utenti
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -35,3 +35,7 @@ Verranno registrati i seguenti casi specifici:
 * Se l’istanza AEM Cloud Service di destinazione ha un utente con un nome utente diverso ma lo stesso indirizzo e-mail di uno degli utenti nell’istanza AEM di origine e la mappatura utente è abilitata, nei registri verrà scritto un messaggio di errore e l’utente AEM di origine non verrà trasferito, in quanto sul sistema di destinazione è consentito un solo utente con un dato indirizzo e-mail.
 
 * Se due utenti nell&#39;istanza AEM di origine hanno lo stesso indirizzo e-mail e User Mapping è abilitato, nei registri verrà scritto un messaggio di errore e uno degli utenti AEM di origine non verrà trasferito, in quanto sul sistema di destinazione è consentito un solo utente con un dato indirizzo e-mail.
+
+### Novità {#whats-next}
+
+Dopo aver appreso le considerazioni importanti e i casi eccezionali, è ora possibile utilizzare lo strumento. Per ulteriori informazioni, consulta [Utilizzo dello strumento di mappatura utente](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) .
