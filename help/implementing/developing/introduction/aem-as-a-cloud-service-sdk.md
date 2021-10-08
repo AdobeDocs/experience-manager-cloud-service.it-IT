@@ -1,31 +1,31 @@
 ---
 title: SDK di AEM as a Cloud Service
-description: Panoramica del kit di sviluppo software AEM as a Cloud Service
+description: Panoramica del kit di sviluppo software as a Cloud Service AEM
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 1%
 
 ---
 
-# L&#39;SDK AEM come Cloud Service {#aem-as-a-cloud-service-sdk}
+# L’SDK AEM as a Cloud Service {#aem-as-a-cloud-service-sdk}
 
-L’SDK di AEM come Cloud Service è composto dai seguenti artefatti:
+L’SDK as a Cloud Service AEM è composto dai seguenti artefatti:
 
 * **Jar Quickstart**  - Il runtime AEM utilizzato per lo sviluppo locale
 * **Java API Jar**  - La dipendenza Java Jar/Maven che espone tutte le API Java consentite che possono essere utilizzate per sviluppare rispetto a AEM come Cloud Service. Precedentemente denominato Uberjar
 * **Javadoc Jar**  - I javadocs per Java API Jar
 * **Strumenti Dispatcher** : set di strumenti utilizzati per lo sviluppo locale contro Dispatcher. Artefatti separati per unix e finestre
 
-Inoltre, alcuni clienti che sono stati precedentemente distribuiti con AEM 6.5 o versioni precedenti utilizzeranno gli artefatti riportati di seguito. Se la compilazione locale non funziona con il jar Quickstart e si sospetta che sia dovuto a interfacce rimosse da AEM implementate come Cloud Service, contatta l’Assistenza clienti per determinare se hai bisogno di accedere. Ciò richiederà modifiche nel backend.
+Inoltre, alcuni clienti che sono stati precedentemente distribuiti con AEM 6.5 o versioni precedenti utilizzeranno gli artefatti riportati di seguito. Se la compilazione locale non funziona con il jar Quickstart e si sospetta che sia dovuto a interfacce rimosse da AEM implementato as a Cloud Service, contatta l’Assistenza clienti per determinare se hai bisogno di accedere. Ciò richiederà modifiche nel backend.
 
 * **6.5 Java API Jar**  obsoleto - un set aggiuntivo di interfacciati rimosso dalla versione 6.5 di AEM
 * **6.5 Javadoc Jar**  obsoleto - i Javadocs per l&#39;ulteriore set di interfacciato
 
 ## Creazione per l&#39;SDK {#building-for-the-sdk}
 
-L’SDK AEM as a Cloud Service viene utilizzato per generare e distribuire codice personalizzato. Per ulteriori informazioni, consulta la documentazione [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). Ad alto livello, vengono eseguiti i seguenti passaggi:
+L’SDK AEM as a Cloud Service viene utilizzato per generare e distribuire il codice personalizzato. Per ulteriori informazioni, consulta la documentazione [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). Ad alto livello, vengono eseguiti i seguenti passaggi:
 
 * **Codice di compilazione**. Come previsto, il codice sorgente viene compilato, generando i pacchetti di contenuto risultanti
 * **Creare artefatti**. Artifact costruiti durante questo processo
@@ -34,10 +34,10 @@ L’SDK AEM as a Cloud Service viene utilizzato per generare e distribuire codic
 
 Gli stessi passaggi vengono eseguiti da Cloud Manager durante la distribuzione in ambienti Cloud. L’esecuzione delle build localmente consente lo sviluppo locale e i test in modo che gli sviluppatori possano individuare in modo efficiente il codice o i problemi strutturali ben prima di impegnarsi nel controllo del codice sorgente e attivare le distribuzioni di Cloud Manager, che possono richiedere più tempo.
 
-## Accesso al AEM come SDK di Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
+## Accesso all’SDK AEM as a Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * Puoi controllare l&#39;icona AEM Admin Console **Informazioni su Adobe Experience Manager** per scoprire la versione di AEM in esecuzione in produzione.
-* Gli strumenti jar e Dispatcher di quickstart possono essere scaricati come file zip dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html). L’accesso agli elenchi dell’SDK è limitato a quelli con AEM Managed Services o AEM come ambienti di Cloud Service.
+* Gli strumenti jar e Dispatcher di quickstart possono essere scaricati come file zip dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html). L’accesso agli elenchi dell’SDK è limitato a quelli con AEM ambienti Managed Services o AEM as a Cloud Service.
 * Jar API Java e Javadoc Jar possono essere scaricati tramite strumenti maven, sia dalla riga di comando che con l’IDE preferito.
 * I risultati del progetto Maven devono fare riferimento al seguente pacchetto Jar API. È inoltre necessario fare riferimento a questa dipendenza in tutti i programmi dei pacchetti secondari.
 
@@ -52,7 +52,7 @@ Gli stessi passaggi vengono eseguiti da Cloud Manager durante la distribuzione i
 
 >[!NOTE]
 >
->La voce della versione per l&#39;SDK deve corrispondere alla versione di AEM come Cloud Service. Per visualizzare la versione in uso, accedi a AEM, quindi vai al punto interrogativo nell&#39;angolo in alto a destra dello schermo e seleziona **[!UICONTROL Informazioni su Adobe Experience Manager]**
+>La voce della versione per l&#39;SDK deve corrispondere alla versione di AEM as a Cloud Service. Per visualizzare la versione in uso, accedi a AEM, quindi vai al punto interrogativo nell&#39;angolo in alto a destra dello schermo e seleziona **[!UICONTROL Informazioni su Adobe Experience Manager]**
 
 
 ## Aggiornamento di un progetto locale con una nuova versione SDK {#refreshing-a-local-project-with-a-new-skd-version}
@@ -83,7 +83,7 @@ Se è presente del contenuto da installare con ogni nuova versione di quickstart
 
 Si consiglia di aggiornare frequentemente l’SDK (ad esempio due volte al giorno) e di eliminare ogni giorno lo stato locale completo in modo che non dipenda accidentalmente da dati sullo stato dell’applicazione.
 
-Nel caso in cui tu dipenda da CryptoSupport ([configurando le credenziali di Cloud Services o del servizio di posta SMTP in AEM o utilizzando l&#39;API CryptoSupport nella tua applicazione](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)), le proprietà crittografate saranno crittografate da una chiave che viene generata automaticamente al primo avvio di un ambiente AEM. Mentre il cloud setup si occupa di riutilizzare automaticamente CryptoKey specifico per l&#39;ambiente, è necessario inserire la cryptokey nell&#39;ambiente di sviluppo locale.
+Nel caso in cui tu dipenda da CryptoSupport ([configurando le credenziali di Cloud Services o del servizio di posta SMTP in AEM o utilizzando l&#39;API CryptoSupport nella tua applicazione](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), le proprietà crittografate saranno crittografate da una chiave che viene generata automaticamente al primo avvio di un ambiente AEM. Mentre il cloud setup si occupa di riutilizzare automaticamente CryptoKey specifico per l&#39;ambiente, è necessario inserire la cryptokey nell&#39;ambiente di sviluppo locale.
 
 Per impostazione predefinita AEM è configurato per memorizzare i dati chiave all&#39;interno della cartella di dati di una cartella, ma per facilitare il riutilizzo nello sviluppo, il processo di AEM può essere inizializzato al primo avvio con &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. In questo modo i dati di crittografia verranno generati in &quot;`/etc/key`&quot;.
 

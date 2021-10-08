@@ -2,7 +2,7 @@
 title: Convenzioni di denominazione
 description: I nodi nell’archivio sono soggetti a denominazioni convenzionali del Java Content Repository
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 8%
@@ -23,7 +23,7 @@ Queste convenzioni di denominazione sono implementate a vari livelli:
 
 ### Utilità JCR {#jcr-utilities}
 
-[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis l&#39;implementazione AEM delle utility JCR. Di particolare interesse per la convalida dei nomi sono le mappature dei caratteri che controlla e le seguenti convalide:
+[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis l&#39;implementazione AEM delle utility JCR. Di particolare interesse per la convalida dei nomi sono le mappature dei caratteri che controlla e le seguenti convalide:
 
 * `isValidName`
    * Controlla se il nome non è vuoto e contiene solo caratteri validi.
@@ -32,11 +32,11 @@ Queste convenzioni di denominazione sono implementate a vari livelli:
    * Questo crea un&#39;etichetta valida da una stringa arbitraria.
    * Può essere utilizzato per creare un nome da un titolo.
 
-### Gestore pagina {#page-manager}
+### Gestione pagine {#page-manager}
 
-[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) PageManager fornisce metodi per le operazioni a livello di pagina, in base a  [JCRUtil](#jcr-utilities).
+[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager fornisce metodi per le operazioni a livello di pagina, in base a  [JCRUtil](#jcr-utilities).
 
-### Comportamento dell&#39;interfaccia AEM {#ui-behavior}
+### Comportamento dell’interfaccia AEM {#ui-behavior}
 
 Durante la gestione del contenuto, nell’interfaccia AEM:
 

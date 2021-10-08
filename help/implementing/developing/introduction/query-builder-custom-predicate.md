@@ -2,14 +2,14 @@
 title: Implementazione di un valutatore del predicato personalizzato per il Generatore di query
 description: Query Builder in AEM offre un modo semplice e personalizzabile per eseguire query sull’archivio dei contenuti
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
-# Implementazione di un valutatore del predicato personalizzato per il Query Builder {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
+# Implementazione di un valutatore del predicato personalizzato per il Generatore di query {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 Questo documento descrive come estendere il [Generatore di query](query-builder-api.md) implementando un valutatore di predicati personalizzato.
 
@@ -52,7 +52,7 @@ Mappa un vincolo di ricerca di livello superiore (ad esempio `width>200`) a una 
 
 >[!TIP]
 >
->Per ulteriori informazioni sul `PredicateEvaluator` e sul pacchetto `com.day.cq.search`, consulta la [documentazione Java](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html).
+>Per ulteriori informazioni sul `PredicateEvaluator` e sul pacchetto `com.day.cq.search`, consulta la [documentazione Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementazione di un valutatore del predicato personalizzato per i metadati di replica {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -62,7 +62,7 @@ Ad esempio, in questa sezione viene descritto come creare un valutatore di predi
 * `cq:lastReplicatedBy` che memorizza l&#39;id dell&#39;utente che ha attivato l&#39;ultima azione di replica
 * `cq:lastReplicationAction` che memorizza l’ultima azione di replica (ad esempio Attivazione, Disattivazione)
 
-#### Query dei metadati di replica con valutatori predefiniti {#querying-replication-metadata-with-default-predicate-evaluators}
+#### Query dei metadati di replica con valutatori predefiniti dei predicati {#querying-replication-metadata-with-default-predicate-evaluators}
 
 La seguente query recupera l’elenco dei nodi nel ramo `/content` che sono stati attivati da `admin` dall’inizio dell’anno.
 
@@ -131,7 +131,7 @@ Il progetto `cq-search` contiene la classe astratta `AbstractPredicateEvaluator`
 
 >[!NOTE]
 >
->La procedura seguente spiega come creare un&#39;espressione `Xpath` per filtrare i dati. Un&#39;altra opzione consiste nell&#39;implementare il metodo `includes` che seleziona i dati su base di riga. Per ulteriori informazioni, consulta la [documentazione Java](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html) .
+>La procedura seguente spiega come creare un&#39;espressione `Xpath` per filtrare i dati. Un&#39;altra opzione consiste nell&#39;implementare il metodo `includes` che seleziona i dati su base di riga. Per ulteriori informazioni, consulta la [documentazione Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) .
 
 1. Crea una nuova classe Java che estende `com.day.cq.search.eval.AbstractPredicateEvaluator`
 1. Annota la classe con un `@Component` come mostrato nello snippet in [formato diff unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
@@ -166,7 +166,7 @@ Il progetto `cq-search` contiene la classe astratta `AbstractPredicateEvaluator`
 
    Nel metodo override si genera un&#39;espressione `Xpath` basata su `Predicate` indicato nell&#39;argomento.
 
-### Esempio di un valutatore di predicati personalizzato per metadati di replica {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
+### Esempio di un valutatore di predicati personalizzato per i metadati di replica {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
 L&#39;implementazione completa di questo `PredicateEvaluator` potrebbe essere simile alla classe seguente.
 

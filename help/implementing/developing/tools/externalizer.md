@@ -2,7 +2,7 @@
 title: Esternalizzazione degli URL
 description: L’esternalizzatore è un servizio OSGi che consente di trasformare programmaticamente un percorso di risorsa in un URL esterno e assoluto.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 In AEM, il **esternalizzatore** è un servizio OSGi che consente di trasformare programmaticamente un percorso di risorse (ad esempio `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) prefissando il percorso con un DNS preconfigurato.
 
-Poiché un’istanza di Cloud Service di AEM non può conoscere il proprio URL visibile esternamente e poiché a volte un collegamento deve essere creato al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare tali URL esterni e generarli.
+Poiché un’istanza AEM as a Cloud Service non può conoscere il proprio URL visibile esternamente e poiché a volte un collegamento deve essere creato al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare tali URL esterni e generarli.
 
-Questo articolo spiega come configurare il servizio Externalizer e come utilizzarlo. Per informazioni tecniche sul servizio, fare riferimento a [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+Questo articolo spiega come configurare il servizio Externalizer e come utilizzarlo. Per informazioni tecniche sul servizio, fare riferimento a [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
-## Comportamento predefinito dell&#39;Externalizer e Come ignorare {#default-behavior}
+## Comportamento predefinito dell&#39;esternalizzatore e modalità di esclusione {#default-behavior}
 
 Preconfigurato, il servizio Externalizer dispone di valori quali `author-p12345-e6789.adobeaemcloud.com` e `publish-p12345-e6789.adobeaemcloud.com`.
 
-Per ignorare tali valori, utilizza le variabili di ambiente di Cloud Manager come descritto nell’articolo [Configurazione di OSGi per AEM come Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e imposta le variabili predefinite `AEM_CDN_DOMAIN_AUTHOR` e `AEM_CDN_DOMAIN_PUBLISH`.
+Per ignorare tali valori, utilizza le variabili di ambiente di Cloud Manager come descritto nell’articolo [Configurazione di OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e imposta le variabili predefinite `AEM_CDN_DOMAIN_AUTHOR` e `AEM_CDN_DOMAIN_PUBLISH`.
 
 ## Configurazione del servizio Externalizer {#configuring-the-externalizer-service}
 
@@ -29,7 +29,7 @@ Il servizio Externalizer ti consente di definire centralmente il dominio che pu�
 
 >[!NOTE]
 >
->Come quando si applicano [configurazioni OSGi per AEM come Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) i passaggi seguenti devono essere eseguiti su un&#39;istanza di sviluppo locale e quindi impegnati nel codice del progetto per la distribuzione.
+>Come quando si applicano [configurazioni OSGi per AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) i passaggi seguenti devono essere eseguiti su un&#39;istanza di sviluppo locale e quindi impegnati nel codice del progetto per la distribuzione.
 
 Per definire una mappatura del dominio per il servizio Externalizer:
 
@@ -79,7 +79,7 @@ Questa sezione mostra alcuni esempi di utilizzo del servizio Externalizer.
 
 >[!NOTE]
 >
->Nessun collegamento assoluto deve essere creato nel contesto di HTML. Pertanto, in tali casi, questa utilità non deve essere utilizzata.
+>Non è necessario creare collegamenti assoluti nel contesto di HTML. Pertanto, in tali casi, questa utilità non deve essere utilizzata.
 
 * **Per esternalizzare un percorso con il dominio &quot;pubblica&quot;:**
 
@@ -125,4 +125,4 @@ Questa sezione mostra alcuni esempi di utilizzo del servizio Externalizer.
 
 >[!TIP]
 >
->Puoi trovare altri esempi in [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+>Puoi trovare altri esempi in [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).

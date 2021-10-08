@@ -3,7 +3,7 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Questa pagina descrive anche come la cache del dispatcher viene invalidata, nonc
 ### HTML/Testo {#html-text}
 
 * per impostazione predefinita, è stata memorizzata nella cache dal browser per cinque minuti, in base all&#39; `cache-control` intestazione emessa dal livello apache. Anche la CDN rispetta questo valore.
-* l&#39;impostazione predefinita per la memorizzazione in cache HTML/testo può essere disabilitata definendo la variabile `DISABLE_DEFAULT_CACHING` in `global.vars`:
+* l’impostazione predefinita per la memorizzazione in cache di HTML/Text può essere disabilitata definendo la variabile `DISABLE_DEFAULT_CACHING` in `global.vars`:
 
 ```
 Define DISABLE_DEFAULT_CACHING
@@ -30,7 +30,7 @@ Define DISABLE_DEFAULT_CACHING
 
 Ciò può essere utile, ad esempio, quando la logica di business richiede una regolazione precisa dell’intestazione di pagina (con un valore basato sul giorno del calendario), in quanto per impostazione predefinita l’intestazione di pagina è impostata su 0. Detto questo, **si prega di prestare attenzione quando si disattiva la memorizzazione in cache predefinita.**
 
-* può essere ignorato per tutti i contenuti HTML/testo definendo la variabile `EXPIRATION_TIME` in `global.vars` utilizzando l’AEM come strumenti di Dispatcher SDK per Cloud Service.
+* può essere ignorato per tutti i contenuti di HTML/Testo definendo la variabile `EXPIRATION_TIME` in `global.vars` utilizzando gli strumenti AEM SDK Dispatcher as a Cloud Service.
 * possono essere sovrascritti a un livello più granulare dalle seguenti direttive mod_headers apache:
 
    ```
@@ -40,7 +40,7 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
    </LocationMatch>
    ```
 
-   Fai attenzione quando imposti le intestazioni di controllo cache globale o quelle che corrispondono a un’area estesa in modo che non vengano applicate al contenuto che potresti voler mantenere privato. Valuta l’utilizzo di più direttive per garantire che le regole vengano applicate in modo dettagliato. Detto questo, AEM come Cloud Service rimuoverà l’intestazione della cache se rileva che è stata applicata a ciò che rileva come non può essere memorizzata nella cache dal dispatcher, come descritto nella documentazione del dispatcher. Per forzare AEM ad applicare sempre le intestazioni di memorizzazione in cache, è possibile aggiungere l&#39;opzione **always** come segue:
+   Fai attenzione quando imposti le intestazioni di controllo cache globale o quelle che corrispondono a un’area estesa in modo che non vengano applicate al contenuto che potresti voler mantenere privato. Valuta l’utilizzo di più direttive per garantire che le regole vengano applicate in modo dettagliato. Detto questo, AEM as a Cloud Service rimuoverà l’intestazione della cache se rileva che è stata applicata a ciò che rileva di non essere memorizzabile nella cache dal dispatcher, come descritto nella documentazione del dispatcher. Per forzare AEM ad applicare sempre le intestazioni di memorizzazione in cache, è possibile aggiungere l&#39;opzione **always** come segue:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -76,7 +76,7 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
 
 ### Librerie lato client (js, css) {#client-side-libraries}
 
-* utilizzando AEM framework di libreria lato client, i codici JavaScript e CSS vengono generati in modo tale che i browser possano memorizzarli nella cache a tempo indefinito, poiché qualsiasi modifica si manifesta come nuovi file con un percorso univoco.  In altre parole, l’HTML che fa riferimento alle librerie client verrà prodotto in base alle esigenze, in modo che i clienti possano vedere nuovi contenuti mentre vengono pubblicati. Il controllo della cache è impostato su &quot;immutabile&quot; o su 30 giorni per i browser meno recenti che non rispettano il valore &quot;immutabile&quot;.
+* utilizzando AEM framework di libreria lato client, i codici JavaScript e CSS vengono generati in modo tale che i browser possano memorizzarli nella cache a tempo indefinito, poiché qualsiasi modifica si manifesta come nuovi file con un percorso univoco.  In altre parole, HTML che fa riferimento alle librerie client verrà prodotto in base alle esigenze, in modo che i clienti possano vedere nuovi contenuti mentre vengono pubblicati. Il controllo della cache è impostato su &quot;immutabile&quot; o su 30 giorni per i browser meno recenti che non rispettano il valore &quot;immutabile&quot;.
 * per ulteriori informazioni, consulta la sezione [Librerie lato client e coerenza delle versioni](#content-consistency) .
 
 ### Immagini e contenuti sufficientemente grandi archiviati in BLOB {#images}
@@ -125,13 +125,13 @@ Quando l’istanza di pubblicazione riceve una nuova versione di una pagina o di
 
 In generale, non sarà necessario annullare manualmente la validità del contenuto nel dispatcher, ma è possibile se necessario, come descritto di seguito.
 
-Prima di AEM come Cloud Service, c&#39;erano due modi per invalidare la cache del dispatcher.
+Prima di AEM as a Cloud Service, c&#39;erano due modi per invalidare la cache del dispatcher.
 
 1. Richiama l’agente di replica, specificando l’agente di eliminazione del dispatcher di pubblicazione
 2. Chiamata diretta dell’ API `invalidate.cache` (ad esempio, `POST /dispatcher/invalidate.cache`)
 
-L’approccio API del dispatcher `invalidate.cache` non sarà più supportato in quanto si rivolge solo a un nodo specifico del dispatcher. AEM come Cloud Service funziona a livello di servizio, non a livello di singolo nodo, pertanto le istruzioni di invalidazione nella pagina [Invalidazione delle pagine in cache da AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) non sono più valide per AEM come Cloud Service .
-È invece necessario utilizzare l&#39;agente di scaricamento della replica. Questa operazione può essere eseguita utilizzando l’API di replica. La documentazione sulle API di replica è disponibile [qui](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) e per un esempio di scaricamento della cache, consulta la [pagina di esempio API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) in particolare l’ esempio `CustomStep` che invia un’azione di replica di tipo ACTIVATE a tutti gli agenti disponibili. L’endpoint dell’agente di scaricamento non è configurabile ma preconfigurato per puntare al dispatcher, con corrispondenza con il servizio di pubblicazione che esegue l’agente di scaricamento. L’agente di scaricamento può in genere essere attivato da eventi o flussi di lavoro OSGi.
+L’approccio API del dispatcher `invalidate.cache` non sarà più supportato in quanto si rivolge solo a un nodo specifico del dispatcher. AEM as a Cloud Service funziona a livello di servizio, non a livello di singolo nodo, pertanto le istruzioni di annullamento della validità contenute nella pagina [Annullamento della validità delle pagine in cache da AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) non sono più valide per AEM as a Cloud Service .
+È invece necessario utilizzare l&#39;agente di scaricamento della replica. Questa operazione può essere eseguita utilizzando l’API di replica. La documentazione sulle API di replica è disponibile [qui](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html) e per un esempio di scaricamento della cache, consulta la [pagina di esempio API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) in particolare l’ esempio `CustomStep` che invia un’azione di replica di tipo ACTIVATE a tutti gli agenti disponibili. L’endpoint dell’agente di scaricamento non è configurabile ma preconfigurato per puntare al dispatcher, con corrispondenza con il servizio di pubblicazione che esegue l’agente di scaricamento. L’agente di scaricamento può in genere essere attivato da eventi o flussi di lavoro OSGi.
 
 Il diagramma che segue illustra questo aspetto.
 
@@ -143,15 +143,15 @@ La rete CDN gestita da Adobe rispetta i TTL e non è quindi necessario scaricarl
 
 ## Librerie lato client e coerenza delle versioni {#content-consistency}
 
-Le pagine sono composte da HTML, JavaScript, CSS e immagini. Invitiamo i clienti a sfruttare il framework [Librerie lato client (clientlibs)](/help/implementing/developing/introduction/clientlibs.md) per importare risorse Javascript e CSS nelle pagine HTML, tenendo conto delle dipendenze tra le librerie JS.
+Le pagine sono composte da HTML, Javascript, CSS e immagini. Invitiamo i clienti a sfruttare il framework [Librerie lato client (clientlibs)](/help/implementing/developing/introduction/clientlibs.md) per importare risorse Javascript e CSS nelle pagine HTML, tenendo conto delle dipendenze tra le librerie JS.
 
-Il framework clientlibs fornisce una gestione automatica della versione, il che significa che gli sviluppatori possono archiviare le modifiche alle librerie JS nel controllo del codice sorgente e che la versione più recente sarà resa disponibile quando un cliente invia il rilascio. In caso contrario, gli sviluppatori dovranno modificare manualmente l’HTML con i riferimenti alla nuova versione della libreria, il che è particolarmente oneroso se molti modelli HTML condividono la stessa libreria.
+Il framework clientlibs fornisce una gestione automatica della versione, il che significa che gli sviluppatori possono archiviare le modifiche alle librerie JS nel controllo del codice sorgente e che la versione più recente sarà resa disponibile quando un cliente invia il rilascio. In caso contrario, gli sviluppatori dovranno modificare manualmente HTML con i riferimenti alla nuova versione della libreria, il che è particolarmente oneroso se molti modelli di HTML condividono la stessa libreria.
 
 Quando le nuove versioni delle librerie vengono rilasciate in produzione, le pagine HTML di riferimento vengono aggiornate con nuovi collegamenti alle versioni della libreria aggiornate. Una volta scaduta la cache del browser per una determinata pagina HTML, non c&#39;è alcun problema che le vecchie librerie vengano caricate dalla cache del browser, poiché la pagina aggiornata (da AEM) ora è garantita per fare riferimento alle nuove versioni delle librerie. In altre parole, una pagina HTML aggiornata includerà tutte le versioni della libreria più recenti.
 
 Il meccanismo di questo è un hash serializzato, che viene aggiunto al collegamento della libreria client, garantendo un URL univoco con versione affinché il browser memorizzi nella cache CSS/JS. L’hash serializzato viene aggiornato solo quando il contenuto della libreria client cambia. Ciò significa che se si verificano aggiornamenti non correlati (cioè nessuna modifica al css/js sottostante della libreria client) anche con una nuova distribuzione, il riferimento rimane lo stesso, garantendo una minore interruzione della cache del browser.
 
-### Abilitazione delle versioni Longcache delle librerie lato client - AEM come Cloud Service SDK Quickstart {#enabling-longcache}
+### Abilitazione delle versioni Longcache delle librerie lato client - AEM Quickstart SDK as a Cloud Service {#enabling-longcache}
 
 Le inclusioni clientlib predefinite su una pagina HTML hanno un aspetto simile al seguente:
 
@@ -165,7 +165,7 @@ Quando il controllo delle versioni di clientlib è abilitato, una chiave hash a 
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.lc-7c8c5d228445ff48ab49a8e3c865c562-lc.css" type="text/css">
 ```
 
-Il controllo delle versioni clientlib restrittive è abilitato per impostazione predefinita in tutti gli ambienti AEM come Cloud Service.
+Il controllo delle versioni clientlib restrittive è abilitato per impostazione predefinita in tutti gli ambienti as a Cloud Service AEM.
 
 Per abilitare il controllo delle versioni di clientlib restrittive nell’SDK Quickstart locale, esegui le seguenti azioni:
 
@@ -173,5 +173,5 @@ Per abilitare il controllo delle versioni di clientlib restrittive nell’SDK Qu
 1. Trova la configurazione OSGi per Adobe Granite HTML Library Manager:
    * Seleziona la casella di controllo per abilitare il controllo delle versioni restrittive .
    * Nel campo con etichetta Chiave cache lato client a lungo termine, immetti il valore di /.*;hash
-1. Salva le modifiche. Nota che non è necessario salvare questa configurazione nel controllo del codice sorgente in quanto AEM come Cloud Service abiliterà automaticamente questa configurazione negli ambienti di sviluppo, stage e produzione.
-1. Ogni volta che il contenuto della libreria client viene modificato, viene generata una nuova chiave hash e il riferimento HTML viene aggiornato.
+1. Salva le modifiche. Nota che non è necessario salvare questa configurazione nel controllo del codice sorgente, in quanto AEM as a Cloud Service abiliterà automaticamente questa configurazione negli ambienti di sviluppo, stage e produzione.
+1. Ogni volta che il contenuto della libreria client viene modificato, viene generata una nuova chiave hash e il riferimento di HTML verrà aggiornato.

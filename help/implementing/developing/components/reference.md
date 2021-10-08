@@ -2,7 +2,7 @@
 title: Guida di riferimento dei componenti
 description: Guida di riferimento per sviluppatori per i dettagli dei componenti e della relativa struttura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Prima di iniziare effettivamente a configurare o codificare il componente, è ne
 * Il componente richiederà una logica per selezionare/manipolare il contenuto?
    * La logica deve essere mantenuta separata dal livello dell’interfaccia utente. HTL è progettato per garantire che ciò accada.
 * Il componente avrà bisogno della formattazione CSS?
-   * La formattazione CSS deve essere mantenuta separata dalle definizioni dei componenti. Definisci le convenzioni per denominare gli elementi HTML in modo da poterli modificare tramite file CSS esterni.
+   * La formattazione CSS deve essere mantenuta separata dalle definizioni dei componenti. Definisci le convenzioni per denominare gli elementi di HTML in modo da poterli modificare tramite file CSS esterni.
 * Quali sono le implicazioni per la sicurezza del nuovo componente?
 
 ### Riutilizzo dei componenti esistenti {#reusing-components}
@@ -53,9 +53,9 @@ I componenti possono anche essere ridefiniti con una [sovrapposizione](/help/imp
 
 Ciò significa che è sufficiente ridefinire le differenze richieste, anziché ridefinire l’intera finestra di dialogo.
 
-### Logica dei contenuti e marcatura di rendering {#content-logic-and-rendering-markup}
+### Logica dei contenuti e markup di rendering  {#content-logic-and-rendering-markup}
 
-Viene eseguito il rendering del componente con [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Il componente deve definire l’HTML necessario per prendere il contenuto richiesto e quindi eseguirne il rendering come necessario, sia negli ambienti di authoring che di pubblicazione.
+Verrà eseguito il rendering del componente con [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Il componente deve definire il HTML necessario per prendere il contenuto richiesto e quindi eseguirne il rendering come necessario, sia negli ambienti di authoring che di pubblicazione.
 
 Si consiglia di mantenere il codice responsabile del markup e del rendering separato dal codice che controlla la logica utilizzata per selezionare il contenuto del componente.
 
@@ -65,7 +65,7 @@ Questa logica (facoltativa) può essere implementata in modi diversi e viene ric
 
 * Utilizzando Java - [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) abilita un file HTL per accedere ai metodi helper in una classe Java personalizzata. Questo consente di utilizzare il codice Java per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
 * Utilizzando JavaScript - [L&#39;API Use-API JavaScript HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) abilita un file HTL per accedere al codice helper scritto in JavaScript. Questo consente di utilizzare il codice JavaScript per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
-* Utilizzo di librerie lato client : i siti web moderni si basano in larga misura sull’elaborazione lato client basata su codice JavaScript e CSS complessi. Per ulteriori informazioni, consulta il documento [Utilizzo delle librerie lato client su AEM come Cloud Service](/help/implementing/developing/introduction/clientlibs.md) .
+* Utilizzo di librerie lato client : i siti web moderni si basano in larga misura sull’elaborazione lato client basata su codice JavaScript e CSS complessi. Per ulteriori informazioni, consulta il documento [Utilizzo delle librerie lato client in AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) .
 
 ## Struttura componente {#structure}
 
@@ -270,11 +270,11 @@ Dopo aver creato il tipo di risorsa, puoi creare un’istanza del campo aggiunge
     - groups = ["administrators"]
 ```
 
-## Uso dei componenti {#using-components}
+## Utilizzo dei componenti {#using-components}
 
 Una volta creato un componente, è necessario attivarlo per utilizzarlo. Il suo utilizzo mostra come la struttura del componente si relaziona alla struttura del contenuto risultante nell’archivio.
 
-### Aggiunta del componente al modello {#adding-your-component-to-the-template}
+### Aggiunta di un componente al modello {#adding-your-component-to-the-template}
 
 Una volta definito un componente, questo deve essere reso disponibile per l’uso. Per rendere un componente disponibile per l’utilizzo in un modello, è necessario attivarlo nel criterio del contenitore layout del modello.
 
@@ -319,10 +319,10 @@ Ci sono molte configurazioni esistenti in AEM. È possibile cercare facilmente p
 
 ### Segnaposto Componente {#component-placeholders}
 
-I componenti devono sempre eseguire il rendering di contenuti HTML visibili all’autore, anche quando il componente non dispone di contenuti. In caso contrario, potrebbe scomparire visivamente dall’interfaccia dell’editor, rendendola tecnicamente presente ma invisibile sulla pagina e nell’editor. In tal caso, gli autori non potranno selezionare e interagire con il componente vuoto.
+I componenti devono sempre eseguire il rendering di alcuni HTML visibili all’autore, anche quando il componente non ha contenuto. In caso contrario, potrebbe scomparire visivamente dall’interfaccia dell’editor, rendendola tecnicamente presente ma invisibile sulla pagina e nell’editor. In tal caso, gli autori non potranno selezionare e interagire con il componente vuoto.
 
 Per questo motivo, i componenti devono eseguire il rendering di un segnaposto purché non eseguano il rendering di alcun output visibile quando la pagina viene sottoposta a rendering nell’editor di pagine (quando la modalità WCM è `edit` o `preview`).
-Il markup HTML tipico per un segnaposto è il seguente:
+Il markup tipico di HTML per un segnaposto è il seguente:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
@@ -350,7 +350,7 @@ Nell’esempio precedente, `model.text` è la variabile che è true solo quando 
 
 Un esempio di utilizzo di questo modello può essere visualizzato nei componenti core [come nel componente titolo.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
-### Configurazione con cq:EditConfig Child Nodes {#configuring-with-cq-editconfig-child-nodes}
+### Configurazione con i nodi figlio cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
 #### Eliminazione di risorse in una finestra di dialogo - cq:dropTargets {#cq-droptargets}
 
@@ -450,7 +450,7 @@ Questo evento viene attivato ogni volta che la finestra di dialogo viene caricat
 
 ## Comportamento anteprima {#preview-behavior}
 
-Il cookie [WCM Mode](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) viene impostato quando si passa alla modalità Anteprima anche quando la pagina non viene aggiornata.
+Il cookie [WCM Mode](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) viene impostato quando si passa alla modalità Anteprima anche quando la pagina non viene aggiornata.
 
 Per i componenti con un rendering sensibile alla modalità WCM, è necessario definirli per aggiornarsi in modo specifico, quindi basarsi sul valore del cookie.
 

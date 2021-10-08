@@ -2,7 +2,7 @@
 title: Materiali di riferimento API
 description: AEM dispone di API estese e potenti che puoi sfruttare per il tuo progetto di esperienza digitale.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 4%
@@ -19,7 +19,7 @@ Le seguenti API sono di base per AEM.
 
 | API | Descrizione |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | astrazioni di prodotto come pagine, risorse, flussi di lavoro, ecc. |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | astrazioni di prodotto come pagine, risorse, flussi di lavoro, ecc. |
 | [Interfaccia Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Lo stack Web aperto di Adobe, che fornisce vari componenti essenziali (i materiali Granite 6.5 si applicano ad AEMaaCS) |
 | [Interfaccia Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Stile visivo di Adobe per le interfacce utente cloud, progettato per fornire coerenza nell’esperienza utente |
 
@@ -44,7 +44,7 @@ AEM è basato sui seguenti quattro set principali di API Java in ordine decresce
 
 | Priorità | API | Descrizione |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | astrazioni di prodotto come pagine, risorse, flussi di lavoro, ecc. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | astrazioni di prodotto come pagine, risorse, flussi di lavoro, ecc. |
 | 2 | [Sling Apache](https://sling.apache.org/apidocs/sling11/) | astrazioni REST e basate su risorse come risorse, mappe dei valori e richieste HTTP. |
 | 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | astrazioni di dati e contenuti quali nodo, proprietà e sessioni. |
 | 4 | [Apache Felix](https://felix.apache.org/) | astrazioni del contenitore dell&#39;applicazione OSGi quali servizi e componenti (OSGi). |
