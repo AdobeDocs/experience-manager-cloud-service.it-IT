@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
+source-git-commit: 5f80ad85ddf9ffdda7cd975d00699eb5085d2365
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1476'
 ht-degree: 3%
 
 ---
@@ -75,13 +75,13 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Connetti facilmente AEM Forms con Microsoft Dynamics e Salesforce**: Il servizio fornisce modelli di configurazione e di dati preconfigurati per Microsoft Dynamics e Salesforce per l’origine dati, consentendo agli sviluppatori di configurare Microsoft Dynamics e Salesforce  [in modo più rapido e semplice come origini dati per un modulo](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en) adattivo.
 
-* **Firma elettronica di un modulo adattivo utilizzando DocuSign:** è possibile utilizzare DocuSign per apporre la firma elettronica a un modulo adattivo. Il servizio fornisce un’azione di invio personalizzata per utilizzare DocuSign con un modulo adattivo. È possibile installare il pacchetto disponibile in Distribuzione di software per importare l’azione di invio.
+* **Firma elettronica di un modulo adattivo utilizzando DocuSign:** è possibile utilizzare DocuSign per apporre la firma elettronica a un modulo adattivo. Il servizio fornisce un’azione di invio personalizzata per utilizzare DocuSign con un modulo adattivo.
 
 ### Funzioni beta di [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-* **Connettore di storage unificato:** utilizza il connettore di archiviazione unificato per esternalizzare i dati in-process negli archivi gestiti dai clienti. Ad esempio
-   * Abilita la funzionalità di salvataggio e ripresa di Forms Portal e archivia le bozze dei moduli adattivi in un archivio dati gestito dal cliente.
-   * Archiviare i dati dei flussi di lavoro AEM in-process (AEM dati variabili di flusso di lavoro) contenenti dati personali sensibili (SPD) in un archivio gestito dal cliente.
+* **Connettore di storage unificato:** utilizza il connettore di archiviazione unificato per esternalizzare i dati in-process negli archivi gestiti dai clienti. Ad esempio, è possibile archiviare i dati dei flussi di lavoro AEM in elaborazione (AEM dati variabili di flusso di lavoro) contenenti dati personali sensibili (SPD) in un archivio gestito dal cliente.
+
+   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communication ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) APIshelp combina modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che consentono di:
    * Genera i documenti compilando i file modello con dati XML.
