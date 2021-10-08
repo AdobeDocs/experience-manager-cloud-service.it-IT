@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Linee guida per lo sviluppo per AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: c9ebeefa2a8707cbbf43df15cf90c10aadbba45f
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2059'
 ht-degree: 2%
 
 ---
@@ -190,10 +190,6 @@ Per impostazione predefinita, le porte utilizzate per inviare sono disabilitate.
 È necessario utilizzare il [servizio OSGI Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) e inviare e-mail al server di posta indicato nella richiesta di supporto anziché direttamente ai destinatari.
 
 AEM as a Cloud Service richiede l&#39;invio della posta attraverso la porta 465. Se un server di posta non supporta la porta 465, è possibile utilizzare la porta 587, purché l’opzione TLS sia abilitata.
-
->[!NOTE]
->
->L’Adobe non supporta SMTP che si estende su un indirizzo IP dedicato univoco.
 
 ### Configurazione {#email-configuration}
 
