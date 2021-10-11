@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 5f80ad85ddf9ffdda7cd975d00699eb5085d2365
+source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1488'
 ht-degree: 3%
 
 ---
@@ -71,11 +71,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Utilizzare i ruoli Adobe Sign in un modulo** adattivo: Adobe Sign per i livelli di servizio aziendali e aziendali ha la possibilità di espandere i ruoli per i destinatari del contratto, oltre al solo firmatario, in modo da soddisfare meglio i requisiti del flusso di lavoro. Ora è possibile [abilitare ogni destinatario dell&#39;accordo a configurare il proprio ruolo in un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), con il firmatario come ruolo predefinito.
 
-* **Analytics per Forms** adattivo: È ora possibile acquisire e tenere traccia del comportamento dell’utente finale tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni sull’utente finale. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza dell’utente finale.
+* **Analytics per Forms** adattivo: È ora possibile acquisire e  [tenere traccia del comportamento degli utenti finali tramite Adobe ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-aem-forms-with-adobe-analytics.html) Analytics for Adaptive Forms per raccogliere informazioni sugli utenti finali. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza dell’utente finale.
 
 * **Connetti facilmente AEM Forms con Microsoft Dynamics e Salesforce**: Il servizio fornisce modelli di configurazione e di dati preconfigurati per Microsoft Dynamics e Salesforce per l’origine dati, consentendo agli sviluppatori di configurare Microsoft Dynamics e Salesforce  [in modo più rapido e semplice come origini dati per un modulo](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en) adattivo.
 
-* **Firma elettronica di un modulo adattivo utilizzando DocuSign:** è possibile utilizzare DocuSign per apporre la firma elettronica a un modulo adattivo. Il servizio fornisce un’azione di invio personalizzata per utilizzare DocuSign con un modulo adattivo.
+* **Firma elettronica di un modulo adattivo utilizzando DocuSign:** [è possibile utilizzare DocuSign per apporre la firma elettronica a un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html). Il servizio fornisce un’azione di invio personalizzata per utilizzare DocuSign con un modulo adattivo.
 
 ### Funzioni beta di [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
