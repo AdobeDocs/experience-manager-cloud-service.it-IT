@@ -3,7 +3,7 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cl
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
+source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 3%
@@ -210,14 +210,13 @@ La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v
 
 ### Data di pubblicazione {#release-date-bpa-latest}
 
-La data di rilascio di Best Practices Analyzer v2.1.18 è il 2 settembre 2021.
+La data di rilascio di Best Practices Analyzer v2.1.20 è il 5 ottobre 2021.
 
 ### Novità {#what-is-new}
 
-* Possibilità di rilevare e segnalare il conteggio totale dei nodi.
+* Possibilità di rilevare e segnalare la lunghezza del nome del nodo.
 
-* Possibilità di rilevare e segnalare il tipo e la dimensione dell&#39;archivio nodi.
+* Capacità di rilevare e segnalare la dimensione totale dell&#39;indice.
 
-### Correzioni di bug {#bug-fixes-bpa}
+* Possibilità di rilevare e segnalare le risorse per le quali manca il rendering originale.
 
-* BPA rilevava falsamente la presenza di Commerce Integration Framework.
