@@ -2,7 +2,7 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
+source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # Personalizzazione ed estensione dei frammenti di contenuto{#customizing-and-extending-content-fragments}
 
-In Adobe Experience Manager as a Cloud Service un frammento di contenuto estende una risorsa standard; vedi:
+All’interno di Adobe Experience Manager as a Cloud Service un frammento di contenuto estende una risorsa standard; vedi:
 
 * [Creazione e gestione di ](/help/assets/content-fragments/content-fragments.md) frammenti di contenuto e authoring delle  [pagine con ](/help/sites-cloud/authoring/fundamentals/content-fragments.md) frammenti di contenuto per ulteriori informazioni sui frammenti di contenuto.
 
@@ -166,7 +166,7 @@ I frammenti di contenuto possono essere integrati con:
 
 Puoi utilizzare l’API lato server per accedere ai frammenti di contenuto; vedi:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -176,7 +176,7 @@ Puoi utilizzare l’API lato server per accedere ai frammenti di contenuto; vedi
 
 Le tre interfacce seguenti possono fungere da punti di ingresso:
 
-* **Frammento di contenuto**  ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Frammento di contenuto**  ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    Questa interfaccia consente di lavorare con un frammento di contenuto in modo astratto.
 
@@ -202,7 +202,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
    Le interfacce che rappresentano gli elementi principali di un frammento sono:
 
-   * **Elemento di contenuto**  ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Elemento di contenuto**  ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Ottenere dati di base (nome, titolo, descrizione)
       * Ottieni/Imposta contenuto
@@ -214,7 +214,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
          * Rimuovere le varianti (vedere [Avvertenze](#caveats))
          * Accedere ai dati delle varianti (vedere `ContentVariation`)
       * Collegamento per la risoluzione delle varianti (se la variante specificata non è disponibile per un elemento, è possibile applicare una logica di fallback aggiuntiva specifica per l’implementazione)
-   * **Variazione di contenuto**  ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Variazione di contenuto**  ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Ottenere dati di base (nome, titolo, descrizione)
       * Ottieni/Imposta contenuto
@@ -244,9 +244,9 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
 * `ContentElement` può essere adattato a:
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - per accedere alle informazioni strutturali dell&#39;elemento.
+   * [`ElementTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - per accedere alle informazioni strutturali dell&#39;elemento.
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` può essere adattato a:
 
@@ -284,7 +284,7 @@ Consulta le seguenti risorse:
 >
 >Considera queste informazioni di base. Non devi modificare nulla qui (in quanto è contrassegnato come *area privata* nell&#39;archivio), ma potrebbe aiutare in alcuni casi a capire come funzionano le cose sotto il cofano.
 
-La modifica di un frammento di contenuto, che può estendersi su più viste (= pagine HTML), è atomica. Poiché le funzionalità di modifica a più visualizzazioni atomiche non sono un concetto AEM tipico, i frammenti di contenuto utilizzano una *sessione di modifica*.
+La modifica di un frammento di contenuto, che può estendersi su più visualizzazioni (= pagine di HTML), è atomica. Poiché le funzionalità di modifica a più visualizzazioni atomiche non sono un concetto AEM tipico, i frammenti di contenuto utilizzano una *sessione di modifica*.
 
 Una sessione di modifica viene avviata quando l’utente apre un frammento di contenuto nell’editor. La sessione di modifica è terminata quando l&#39;utente lascia l&#39;editor selezionando **Salva** o **Annulla**.
 

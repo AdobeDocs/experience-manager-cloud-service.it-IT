@@ -1,13 +1,13 @@
 ---
 title: Come aggiornare i contenuti tramite le API di AEM Assets
 description: In questa parte del Percorso di sviluppatori AEM Headless, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
+source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 2%
 
 ---
-
 
 # Come aggiornare i contenuti tramite le API di AEM Assets {#update-your-content}
 
@@ -35,7 +35,7 @@ Questo articolo si basa su questi elementi fondamentali per comprendere come agg
   * Look at sample code to see how things work in practice.
 -->
 
-## Perché è necessaria l’API HTTP delle risorse per il frammento di contenuto {#why-http-api}
+## Perché è necessaria l’API HTTP delle risorse per i frammenti di contenuto {#why-http-api}
 
 Nella fase precedente del Percorso Headless hai appreso dell’utilizzo dell’API GraphQL di AEM per recuperare il contenuto utilizzando le query.
 
@@ -43,7 +43,7 @@ Allora perché è necessaria un&#39;altra API?
 
 L’API HTTP di Assets consente di **leggere** il contenuto, ma consente anche di **creare**, **Aggiornare** e **Eliminare** contenuti - azioni non possibili con l’API GraphQL.
 
-L’API REST di Assets è disponibile per ogni installazione predefinita di una versione di Adobe Experience Manager recente come Cloud Service.
+L’API REST di Assets è disponibile per ogni installazione predefinita di una versione di Adobe Experience Manager as a Cloud Service recente.
 
 ## API HTTP di Assets {#assets-http-api}
 
@@ -54,7 +54,7 @@ L’API HTTP delle risorse include:
 
 L’implementazione corrente dell’API HTTP Assets si basa sullo stile architetturale **REST** e consente di accedere ai contenuti (memorizzati in AEM) tramite le operazioni **CRUD** (Creazione, lettura, aggiornamento, eliminazione).
 
-Con queste operazioni l’API ti consente di utilizzare Adobe Experience Manager come Cloud Service come CMS headless (Content Management System) fornendo Content Services a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON. Ad esempio, le applicazioni a pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite un’API, spesso in formato JSON.
+Con queste operazioni l’API ti consente di utilizzare Adobe Experience Manager as a Cloud Service come CMS headless (Content Management System) fornendo servizi di contenuto a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON. Ad esempio, le applicazioni a pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite un’API, spesso in formato JSON.
 
 <!--
 >[!NOTE]
@@ -178,7 +178,7 @@ The binary data of an asset is exposed as a SIREN link of type `content`.
 Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
 -->
 
-## API HTTP delle risorse e frammenti di contenuto {#assets-http-api-content-fragments}
+## API HTTP Assets e frammenti di contenuto {#assets-http-api-content-fragments}
 
 I frammenti di contenuto vengono utilizzati per la distribuzione headless e un frammento di contenuto è un tipo speciale di risorsa. Sono utilizzati per accedere a dati strutturati, quali testi, numeri, date, ecc.
 
@@ -255,7 +255,7 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 
 >[!NOTE]
 >
->Per ulteriori dettagli, consulta Riferimento API . In particolare, [API Adobe Experience Manager Assets - Frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>Per ulteriori dettagli, consulta Riferimento API . In particolare, [API Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### Lettura/consegna {#read-delivery}
 
@@ -325,8 +325,8 @@ Continua il tuo percorso AEM senza testa rivedendo il documento [Come andare in 
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 * [API REST per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
-* [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
-* [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Spiegazione di CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video: sviluppo per CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
