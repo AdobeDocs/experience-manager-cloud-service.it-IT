@@ -1,11 +1,11 @@
 ---
-title: Supporto dei frammenti di contenuto Adobe Experience Manager as a Cloud Service nell’API HTTP di Assets
+title: Supporto dei frammenti di contenuto Adobe Experience Manager as a Cloud Service nell’API HTTP delle risorse
 description: Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, una funzione importante AEM consegna headless.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 88f43d2f1acaa4e00bc9ce06d188e4b9312a1c08
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1951'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, una f
 
 L’ [API REST di Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di Adobe Experience Manager as a Cloud Service di accedere ai contenuti (memorizzati in AEM) direttamente tramite l’API HTTP, tramite operazioni CRUD (Creazione, lettura, aggiornamento, eliminazione).
 
-L’API ti consente di utilizzare Adobe Experience Manager come Cloud Service come CMS headless (Content Management System) fornendo servizi di contenuto a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON.
+L’API ti consente di utilizzare Adobe Experience Manager as a Cloud Service come CMS headless (Content Management System) fornendo servizi per contenuti a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON.
 
 Ad esempio, [Applicazioni a pagina singola (SPA)](/help/implementing/developing/hybrid/introduction.md), basate su framework o personalizzate, richiedono il contenuto fornito tramite l’API HTTP, spesso in formato JSON.
 
@@ -50,7 +50,7 @@ API REST di Assets:
 
 ## Prerequisiti {#prerequisites}
 
-L’API REST di Assets è disponibile per ogni installazione predefinita di una versione di Adobe Experience Manager recente come Cloud Service.
+L’API REST di Assets è disponibile per ogni installazione predefinita di una versione di Adobe Experience Manager as a Cloud Service recente.
 
 ## Concetti fondamentali {#key-concepts}
 
@@ -256,7 +256,7 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 
 >[!NOTE]
 >
->Per ulteriori dettagli, consulta [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particolare, [API Adobe Experience Manager Assets - Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>Per ulteriori dettagli, consulta [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particolare, [API Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### Lettura/consegna {#read-delivery}
 
@@ -374,7 +374,7 @@ I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
 
 Vedi qui per riferimenti API dettagliati:
 
-* [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 
