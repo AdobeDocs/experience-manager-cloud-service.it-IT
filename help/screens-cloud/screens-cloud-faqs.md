@@ -1,21 +1,21 @@
 ---
 title: Domande frequenti su Screens as a Cloud Service
-description: Questa pagina descrive le Domande frequenti su Screens come un Cloud Service.
-source-git-commit: 7a26bb50a8b95a2358912249e21daeb9c5e9c1a3
+description: Questa pagina descrive le domande frequenti as a Cloud Service di Screens.
+exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
+source-git-commit: cf091056bdb96917a6d22bf1197d9b34ebbf9610
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
-
 # Domande frequenti su Screens as a Cloud Service {#screens-cloud-faqs}
 
-La sezione seguente fornisce le risposte alle domande frequenti (FAQ) relative a Screens come progetto di Cloud Service.
+La sezione seguente fornisce le risposte alle domande frequenti relative al progetto as a Cloud Service Screens.
 
-## Cosa devo fare se AEM Screens Player che punta a Screens come Cloud Service non sceglie le clientlibs personalizzate con il formato /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
+## Cosa devo fare se il lettore AEM Screens che punta a Screens as a Cloud Service non sceglie le clientlib personalizzate con il formato /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
 
-AEM come Cloud Service cambia le chiavi di cache lunghe con ogni distribuzione. AEM Screens genera le cache offline quando il contenuto viene modificato, anziché quando Cloud Manager esegue la distribuzione. Le chiavi di cache lunghe nei manifesti non sono valide, pertanto il lettore non riesce a scaricare questi *clientlibs*.
+AEM as a Cloud Service cambia le chiavi di cache lunghe con ogni distribuzione. AEM Screens genera le cache offline quando il contenuto viene modificato, anziché quando Cloud Manager esegue la distribuzione. Le chiavi di cache lunghe nei manifesti non sono valide, pertanto il lettore non riesce a scaricare questi *clientlibs*.
 
 L&#39;utilizzo di `longCacheKey="none"` nella cartella `clientlib` rimuove completamente le chiavi di cache lunghe per queste *clientlibs*.
 
@@ -35,3 +35,8 @@ scripts=[
         end
         "] 
 ```
+
+## Quali formati immagine sono consigliati per una riproduzione perfetta delle immagini nei canali as a Cloud Service di AEM Screens?{#screens-cloud-image-format}
+
+Si consiglia di utilizzare le immagini in formato `.png` e `.jpeg` in un canale as a Cloud Service di AEM Screens, per una migliore esperienza di segnaletica digitale.
+Le immagini nel formato `*.tif` (formato File immagine tag) non sono supportate in AEM Screens as a Cloud Service. Nel caso in cui un canale abbia questo formato di immagine, sul lato del lettore l&#39;immagine non verrà riprodotta.
