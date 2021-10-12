@@ -1,7 +1,7 @@
 ---
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
-source-git-commit: 6ab32a952a53eed612192ee8359373087e6cf624
+source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 2%
@@ -79,12 +79,12 @@ Lo strumento di mappatura utente è integrato nello strumento Content Transfer (
    >* Una volta completata la mappatura utente, puoi tornare alla pagina di migrazione dei contenuti utilizzando la breadcrumb. La scheda User Mapping (Mappatura utente) visualizza lo stato e la marca temporale. Fai clic su **Content Transfer** per creare un set di migrazione per eseguire l’estrazione. Per ulteriori informazioni, consulta [Esecuzione dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) .
 
 
-### Ripresa del processo di mappatura utente {#resume-user-mapping}
+### Ripresa del processo di mappatura utente {#resume-user-mapping-process}
 
 Se il processo di mappatura utente viene interrotto a causa di uno dei motivi seguenti:
 
 * L&#39;utente ha selezionato **Interrompi mappatura utente**
 * il token di accesso è scaduto durante il processo o,
-* un&#39;altra ragione.
+* qualche altra ragione
 
 L&#39;avanzamento viene salvato dal punto in cui il processo si è interrotto. Rivedi il registro di mappatura utente per controllare l’avanzamento salvato. Fai di nuovo clic sul pulsante **Avvia mappatura utente** per riprendere da dove è stato disattivato. Prima di riavviare, verificare che il token di accesso sia ancora valido o sia stato aggiornato.
