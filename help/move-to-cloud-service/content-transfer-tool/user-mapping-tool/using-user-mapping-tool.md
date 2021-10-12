@@ -1,9 +1,9 @@
 ---
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
-source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
+source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '734'
 ht-degree: 3%
 
 ---
@@ -74,6 +74,11 @@ Lo strumento di mappatura utente è integrato nello strumento Content Transfer (
 1. Fai clic su **Start** nella finestra di dialogo per avviare il processo di mappatura utente.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   Mostra il **Stato** come **ESECUZIONE**.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
+
 
 1. Una volta completata la mappatura utente, fai clic su **Risultati** per visualizzare il riepilogo.
 
