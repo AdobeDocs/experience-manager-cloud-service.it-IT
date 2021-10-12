@@ -1,9 +1,9 @@
 ---
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
-source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
+source-git-commit: 09ab81364f0fd45ddedcd5f918e6ab5a4bdd1f0d
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '752'
 ht-degree: 3%
 
 ---
@@ -115,3 +115,7 @@ Segui i passaggi riportati di seguito per riprendere il processo di mappatura ut
 1. Fai clic su **Start** nella finestra di dialogo per riprendere il processo di mappatura utente.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   Al termine del processo di mappatura utente, visualizzerai la **Stato** come **FINISHED** per la configurazione specifica.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
