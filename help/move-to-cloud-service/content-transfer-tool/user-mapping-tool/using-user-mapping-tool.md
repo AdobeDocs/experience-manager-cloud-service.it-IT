@@ -1,10 +1,10 @@
 ---
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
-source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
+source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -71,6 +71,10 @@ Lo strumento di mappatura utente è integrato nello strumento Content Transfer (
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
+1. Fai clic su **Start** nella finestra di dialogo per avviare il processo di mappatura utente.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
 1. Una volta completata la mappatura utente, fai clic su **Risultati** per visualizzare il riepilogo.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
@@ -87,4 +91,22 @@ Se il processo di mappatura utente viene interrotto a causa di uno dei motivi se
 * il token di accesso è scaduto durante il processo o,
 * qualche altra ragione
 
-L&#39;avanzamento viene salvato dal punto in cui il processo si è interrotto. Rivedi il registro di mappatura utente per controllare l’avanzamento salvato. Fai di nuovo clic sul pulsante **Avvia mappatura utente** per riprendere da dove è stato disattivato. Prima di riavviare, verificare che il token di accesso sia ancora valido o sia stato aggiornato.
+   >[!NOTE]
+   >L&#39;avanzamento viene salvato dal punto in cui il processo si è interrotto.
+
+Segui i passaggi riportati di seguito per riprendere il processo di mappatura utente:
+
+1. Fai clic su **Visualizza registro** per controllare il registro di mappatura utente per controllare l&#39;avanzamento salvato.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+
+1. Fai di nuovo clic sul pulsante **Avvia mappatura utente** per riprendere da dove è stato disattivato.
+
+   >[!NOTE]
+   >Prima di riavviare, verificare che il token di accesso sia ancora valido o sia stato aggiornato.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+
+1. Fai clic su **Start** nella finestra di dialogo per riprendere il processo di mappatura utente.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
