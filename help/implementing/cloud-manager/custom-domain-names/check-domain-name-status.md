@@ -2,14 +2,14 @@
 title: Verifica dello stato del nome di dominio
 description: Verifica dello stato del nome di dominio
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
+source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Controllo dello stato del nome di dominio {#check-status}
+# Verifica dello stato del nome di dominio {#check-status}
 
 Per determinare se il nome di dominio è stato verificato correttamente, fai clic sull’icona Stato del nome di dominio nella tabella Ambienti della pagina Impostazioni dominio .
 
@@ -27,7 +27,7 @@ corsoVerifica in corso. Questo stato viene generalmente visualizzato dopo aver s
 *verifica* nuovamente accanto allo stato .
 
 * **Verifica: verifica**
-TXT della distribuzione non riuscita. Tuttavia, la distribuzione CDN non è riuscita. Un rappresentante di Adobe verrà informato automaticamente.
+TXT della distribuzione non riuscita. Tuttavia, la distribuzione CDN non è riuscita. Contatta il tuo rappresentante Adobe.
 
 * **Dominio verificato e**
 distribuitoQuesto stato indica che il nome di dominio personalizzato è pronto per essere utilizzato.
