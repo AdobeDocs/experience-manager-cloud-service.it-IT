@@ -1,9 +1,9 @@
 ---
 title: Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione
 description: Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '270'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenu
 
 Segui l’approccio consigliato come descritto di seguito:
 
-* Utilizza la stessa versione del CTT utilizzata nell’istanza di authoring.
+* Utilizza la stessa versione dello strumento Content Transfer (Trasferimento contenuti) utilizzato nell’istanza di authoring.
 
 * È necessario migrare un solo nodo di pubblicazione. Deve essere rimosso dal load balancer prima di iniziare l’estrazione.
 
-* Quando crei il set di migrazione, utilizza l’URL dell’ambiente AEMaaCS di authoring.
+* Quando crei il set di migrazione, utilizza l’URL dell’autore AEM l’ambiente as a Cloud Service.
 
 * Durante l’acquisizione per la pubblicazione, il livello di pubblicazione NON viene ridimensionato (a differenza dell’autore). Per precauzione, evitare operazioni di scrittura avviate dall’utente quali:
 
