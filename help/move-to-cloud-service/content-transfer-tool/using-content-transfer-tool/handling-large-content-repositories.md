@@ -2,9 +2,9 @@
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione degli archivi di contenuti di grandi dimensioni
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
@@ -174,3 +174,7 @@ Final Job Status: CompletedWithSkipped
  
 *************** Completed AzCopy pre-copy phase ***************
 ```
+
+## Novità {#whats-next}
+
+Dopo aver imparato a gestire archivi di contenuti di grandi dimensioni per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM as a Cloud Service, ora puoi imparare il processo di estrazione nello strumento Content Transfer (Trasferimento contenuti). Per informazioni su come estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), consulta [Estrazione di contenuto dall’origine nello strumento Content Transfer (Trasferimento contenuti).](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)

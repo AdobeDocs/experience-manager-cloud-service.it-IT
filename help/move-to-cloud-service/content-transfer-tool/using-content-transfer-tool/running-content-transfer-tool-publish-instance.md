@@ -1,9 +1,9 @@
 ---
 title: Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione
 description: Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione
-source-git-commit: 27e68cd282414da4cc23c3ba276b0fb3c330d49c
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -13,10 +13,10 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferire il contenuto dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione di contenuto in un ambiente di pubblicazione. Qualsiasi contenuto sia specificato nel set di migrazione verrà acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author o Publish o in entrambe. Si consiglia di installare CTT durante lo spostamento del contenuto in un’istanza Production nell’istanza Author di origine per spostare il contenuto nell’istanza Author di destinazione e, allo stesso modo, di installare CTT nell’istanza Publish di origine per spostare il contenuto nell’istanza Publish di destinazione.
+Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferire il contenuto dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione di contenuto in un ambiente di pubblicazione. Qualsiasi contenuto sia specificato nel set di migrazione verrà acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author o Publish o in entrambe.
 
 >[!NOTE]
->Si consiglia di installare lo strumento Content Transfer (Trasferimento contenuti) durante lo spostamento del contenuto in un’istanza Publish nell’istanza Publish di origine per spostare il contenuto nell’istanza Publish di destinazione. Per ulteriori informazioni, consulta la sezione [Approccio consigliato](#recommended-approach) di seguito.
+>Si consiglia di installare lo strumento Content Transfer (Trasferimento contenuti) durante lo spostamento del contenuto in un’istanza di produzione nell’istanza di authoring di origine per spostare il contenuto nell’istanza di authoring di destinazione e, analogamente, di installare lo strumento Content Transfer (Trasferimento contenuti) nell’istanza di pubblicazione di origine per spostare il contenuto nell’istanza di pubblicazione di destinazione. Per ulteriori informazioni, consulta la sezione [Approccio consigliato](#recommended-approach) di seguito.
 
 ## Approccio consigliato {#recommended-approach}
 
