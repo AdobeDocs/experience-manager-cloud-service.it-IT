@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
+source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
 workflow-type: tm+mt
-source-wordcount: '3216'
+source-wordcount: '3193'
 ht-degree: 36%
 
 ---
@@ -83,26 +83,24 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
 1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Migrazione dei contenuti**.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. Seleziona l’opzione **Trasferimento contenuti** dalla procedura guidata **Migrazione contenuti**.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. La console seguente viene visualizzata quando crei il primo set di migrazione. Fai clic su **Create Migration Set** (Crea set di migrazione) per creare un nuovo set di migrazione.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
-
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >Se disponi di set di migrazione esistenti, nella console viene visualizzato l’elenco dei set di migrazione esistenti con il relativo stato corrente.
 
-   Inoltre, fai clic su **Crea configurazione di mappatura utente** per accedere allo [strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
 1. Compila i campi nella schermata **Crea set di migrazione** come descritto di seguito.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **Name** (Nome): inserisci il nome del set di migrazione.
       >[!NOTE]
@@ -122,6 +120,9 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
    1. **Parameters** (Parametri): seleziona i seguenti parametri per creare il set di migrazione:
 
       1. **Include Version** (Includi versione): seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` viene automaticamente incluso per eseguire la migrazione degli eventi di controllo.
+
+      ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+
       >[!NOTE]
       >Se intendi includere versioni come parte di un set di migrazione e stai eseguendo integrazioni con `wipe=false`, devi disattivare l’eliminazione della versione a causa di un limite corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione della versione e stai eseguendo i top-up in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
@@ -136,6 +137,7 @@ Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://exp
          >* `/libs`
          >* `/home`
          >* `/etc` (alcuni  `/etc` percorsi possono essere selezionati in CTT)
+
 
 
 
