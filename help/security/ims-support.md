@@ -2,9 +2,9 @@
 title: Supporto IMS per Adobe Experience Manager as a Cloud Service
 description: Supporto IMS per Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
+source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2022'
 ht-degree: 90%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 90%
 
 >[!TIP]
 >
->Consulta il nostro corso di Experience League [Configurare l’accesso alle AEM per gli amministratori](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) per un’introduzione al modo in cui gli utenti si autenticano utilizzando Adobe IMS per AEM come Cloud Service e come gli utenti, i gruppi di utenti e i profili di prodotto Adobe IMS vengono utilizzati per controllare l’accesso alle AEM e alle relative funzioni e funzionalità. Adobe ID richiesto.
+>Consulta il nostro corso di Experience League [Configurare l’accesso alle AEM per gli amministratori](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) per un’introduzione al modo in cui gli utenti si autenticano utilizzando Adobe IMS per AEM as a Cloud Service e al modo in cui gli utenti Adobe IMS, i gruppi di utenti e i profili di prodotto vengono utilizzati per controllare l’accesso alle AEM e alle relative funzioni e funzionalità. Adobe ID richiesto.
 
 >[!NOTE]
 >
->L’accesso IMS per AEM come Cloud Service non supporta i gruppi nidificati nell’Admin Console.
+>AEM attualmente non supporta l’assegnazione di gruppi ai profili. Gli utenti devono essere aggiunti singolarmente.
 
 ## Elementi di rilievo {#key-highlights}
 
@@ -132,7 +132,7 @@ Di seguito sono descritte le configurazioni OSGI principali da modificare per ca
 
 ### Gestione dei prodotti e dell’accesso utente in Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Quando l’amministratore di prodotto accede all’Admin Console, visualizza più istanze del AEM come contesto di prodotto del Cloud Service, come illustrato di seguito. Ad esempio, seleziona uno dei prodotti dalla pagina **Panoramica** :
+Quando l’amministratore di prodotto accede all’Admin Console, visualizzerà più istanze del contesto di prodotto as a Cloud Service AEM, come mostrato di seguito. Ad esempio, seleziona uno dei prodotti dalla pagina **Panoramica** :
 
 ![Accesso alle istanze](/help/security/assets/ims6.png)
 
