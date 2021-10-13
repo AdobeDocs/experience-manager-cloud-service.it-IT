@@ -2,10 +2,10 @@
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
+source-git-commit: 5243efa12fdca7e2e2d6ab23b38e8d09c6ea4945
 workflow-type: tm+mt
-source-wordcount: '3193'
-ht-degree: 36%
+source-wordcount: '3199'
+ht-degree: 35%
 
 ---
 
@@ -143,17 +143,19 @@ Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://exp
 
 1. Fai clic su **Salva** dopo aver compilato tutti i campi nella schermata dei dettagli **Crea set di migrazione** .
 
-1. Il set di migrazione verrà visualizzato nella pagina *Overview* (Panoramica).
+1. Il set di migrazione verrà visualizzato nella procedura guidata **Trasferimento contenuti** , come illustrato nella figura riportata di seguito.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Tutti i set di migrazione esistenti in questa schermata vengono visualizzati nella pagina *Panoramica* con il relativo stato corrente e le informazioni sullo stato. Puoi vedere alcune di queste icone descritte di seguito.
+   Tutti i set di migrazione esistenti vengono visualizzati nella procedura guidata **Trasferimento contenuti** con il relativo stato corrente e le informazioni sullo stato. Puoi vedere alcune di queste icone descritte di seguito.
 
    * Una *nuvola rossa* indica che non puoi completare il processo di estrazione.
    * Una *nuvola verde* indica che puoi completare il processo di estrazione.
    * Un’*icona gialla* indica che non hai creato il set di migrazione esistente e che quello specifico è stato creato da un altro utente nella stessa istanza.
 
-1. Seleziona un set di migrazione dalla pagina della panoramica e fai clic su **Properties** (Proprietà) per visualizzare o modificare le proprietà del set di migrazione. Durante la modifica delle proprietà, non è possibile modificare il nome del contenitore o l&#39;URL del servizio.
+1. Seleziona un set di migrazione e fai clic su **Proprietà** per visualizzare o modificare le proprietà del set di migrazione. Durante la modifica delle proprietà, non è possibile modificare il **nome del set di migrazione** o l’ **URL del servizio**.
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ### Processo di estrazione nel trasferimento dei contenuti {#extraction-process}
