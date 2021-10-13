@@ -5,7 +5,7 @@ breadcrumb-title: Guida al passaggio
 user-guide-description: Comprendi il percorso di transizione verso Cloud Service.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 27e68cd282414da4cc23c3ba276b0fb3c330d49c
+source-git-commit: 29211dd24346c10ffc634073c66881709990c6b7
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 36%
@@ -45,7 +45,7 @@ ht-degree: 36%
       + [Visualizzazione dei registri di un set di migrazione](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [Eliminazione di un set di migrazione](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-      + [Risoluzione dei problemi relativi al trasferimento dei contenuti](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+      + [Risoluzione dei problemi dello strumento Content Transfer (Trasferimento contenuti)](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
       + Strumento di mappatura utente {#user-mapping-tool}
          + [Panoramica](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
          + [Considerazioni importanti](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
