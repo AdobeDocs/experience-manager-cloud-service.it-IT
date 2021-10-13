@@ -2,7 +2,7 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
+source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 32%
@@ -103,7 +103,7 @@ Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://exp
 
 1. Il set di migrazione verrà visualizzato nella procedura guidata **Trasferimento contenuti** , come illustrato nella figura riportata di seguito.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
    Tutti i set di migrazione esistenti vengono visualizzati nella procedura guidata **Trasferimento contenuti** con il relativo stato corrente e le informazioni sullo stato. Puoi vedere alcune di queste icone descritte di seguito.
 
