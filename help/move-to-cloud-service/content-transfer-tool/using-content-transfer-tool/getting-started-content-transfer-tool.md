@@ -2,10 +2,10 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
+source-git-commit: 1083f3913bdf0ff64f50f6e731e4fc2804a3036e
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 32%
+source-wordcount: '742'
+ht-degree: 33%
 
 ---
 
@@ -79,13 +79,11 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
       1. **Include Version** (Includi versione): seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` viene automaticamente incluso per eseguire la migrazione degli eventi di controllo.
 
-      ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
-      >[!NOTE]
-      >Se intendi includere versioni come parte di un set di migrazione e stai eseguendo integrazioni con `wipe=false`, devi disattivare l’eliminazione della versione a causa di un limite corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione della versione e stai eseguendo i top-up in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
+         >[!NOTE]
+         >Se intendi includere versioni come parte di un set di migrazione e stai eseguendo integrazioni con `wipe=false`, devi disattivare l’eliminazione della versione a causa di un limite corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione della versione e stai eseguendo i top-up in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
-      1. **Includi mapping da utenti e gruppi** IMS: Seleziona l’opzione per includere la mappatura da utenti e gruppi IMS.
-Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) .
 
       1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore del percorso accetta l’input digitando o selezionando.
 
@@ -95,8 +93,6 @@ Per ulteriori informazioni, consulta [Strumento di mappatura utente](https://exp
          >* `/libs`
          >* `/home`
          >* `/etc` (alcuni  `/etc` percorsi possono essere selezionati in CTT)
-
-
 
 
 1. Fai clic su **Salva** dopo aver compilato tutti i campi nella schermata dei dettagli **Crea set di migrazione** .
