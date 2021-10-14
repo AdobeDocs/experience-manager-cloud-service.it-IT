@@ -1,10 +1,10 @@
 ---
 title: Inserimento di contenuti in Target nello strumento Content Transfer (Trasferimento contenuti)
 description: Inserimento di contenuti in Target nello strumento Content Transfer (Trasferimento contenuti)
-source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
+source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 34%
+source-wordcount: '554'
+ht-degree: 27%
 
 ---
 
@@ -47,7 +47,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 
 1. Una volta completata l’acquisizione, lo stato in **Acquisizione autori** viene aggiornato a **FINISHED**.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## Acquisizione integrativa {#top-up-ingestion-process}
 
@@ -58,9 +58,18 @@ Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione 
 
 Una volta completato il processo di acquisizione, puoi utilizzare il contenuto delta utilizzando il metodo di acquisizione integrativa. Effettua le seguenti operazioni:
 
-1. Nella pagina *Overview* (Panoramica), seleziona il set di migrazione per il quale desideri eseguire l’acquisizione integrativa. Fai clic su **Ingest (Acquisisci)** per avviare l’acquisizione integrativa. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione).
+1. Passa alla procedura guidata **Trasferimento contenuti** e seleziona il set di migrazione per il quale desideri eseguire l’acquisizione integrativa. Fai clic su **Ingest (Acquisisci)** per avviare l’acquisizione integrativa.
 
-   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+
+
+1. Viene visualizzata la finestra di dialogo **Migration Set ingestion** (Acquisizione set di migrazione).
+
+   ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >Per evitare di eliminare il contenuto esistente dall’attività di acquisizione precedente, disattiva l’opzione **Cancella contenuto esistente nell’istanza Cloud prima dell’acquisizione** . Inoltre, fai clic su **Assistenza clienti** per registrare un ticket, come mostrato nella figura precedente.
+
+## Novità {#whats-next}
+
+Dopo aver appreso l’inserimento di contenuti in Target nello strumento Content Transfer (Trasferimento contenuti), puoi visualizzare i registri al termine di ogni passaggio (estrazione e acquisizione) e cercare gli errori. Per ulteriori informazioni, consulta [Visualizzazione dei registri di un set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) .
