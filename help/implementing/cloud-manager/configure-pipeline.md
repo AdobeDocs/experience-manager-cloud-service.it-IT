@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
+source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,10 @@ Per modificare la pipeline configurata, effettua le seguenti operazioni:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. La scheda **Origine** consente di ignorare le configurazioni del livello web e di eseguire l&#39;aggiornamento da **Opzioni di distribuzione di produzione**.
+   1. La scheda **Origine** offre l’opzione di ignorare la configurazione del livello web per la pipeline e di controllare o deselezionare le opzioni di implementazione **Pausa prima della distribuzione in Produzione** e **Pianificata** da **Opzioni di distribuzione di produzione**.
+
+      >[!NOTE]
+      >Se **Ignora configurazione livello Web** non è selezionato, la pipeline distribuirà anche la configurazione del livello Web.
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
