@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -129,12 +129,9 @@ Per modificare la pipeline configurata, effettua le seguenti operazioni:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. La scheda **Origine** offre l’opzione di ignorare la configurazione del livello web per la pipeline e di controllare o deselezionare le opzioni di implementazione **Pausa prima della distribuzione in Produzione** e **Pianificata** da **Opzioni di distribuzione di produzione**.
+   1. La scheda **Origine** offre un’opzione per selezionare o deselezionare le opzioni **Pausa prima della distribuzione in Produzione** e **Pianificata** da **Opzioni di distribuzione di produzione**.
 
-      >[!NOTE]
-      >Se **Ignora configurazione livello Web** non è selezionato, la pipeline distribuirà anche la configurazione del livello Web.
-
-      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-editnotier.png)
 
    1. L’opzione **Audit esperienze** consente di aggiornare o aggiungere nuove pagine.
 
@@ -148,41 +145,59 @@ Oltre alla pipeline principale che viene implementata in fase e produzione, i cl
 
 Nella schermata iniziale, queste pipeline sono elencate in una nuova scheda:
 
-1. Accedi alla sezione **pipeline non di produzione** dalla schermata iniziale di Cloud Manager.
+1. Accedi alla scheda **Pipelines** dalla schermata iniziale di Cloud Manager. Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline non di produzione**.
 
-   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Fate clic sul pulsante **Aggiungi** per specificare il nome della pipeline, il tipo di pipeline e la diramazione Git.
+1. **Viene visualizzata la finestra di dialogo Aggiungi**  pipeline non di produzione. Selezionare il tipo di pipeline che si desidera creare, ovvero **Pipeline di qualità del codice** o **Pipeline di distribuzione**.
 
-   Inoltre, è possibile impostare il trigger di distribuzione e il comportamento di errore importante dalle opzioni della pipeline.
+   Inoltre, è possibile impostare **Trigger distribuzione** e **Comportamento errore importante** da **Opzioni di distribuzione**. Fai clic su **Continua**.
 
-   ![](assets/non-prod-pipe1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. Fai clic su **Salva** e la pipeline viene visualizzata sulla scheda nella schermata iniziale con cinque azioni, come illustrato di seguito:
+1. **È selezionato il** codice Stack completo. È possibile scegliere il **Repository** e il **Ramo Git**. Fai clic su **Salva**.
 
-   ![](/help/implementing/cloud-manager/assets/prod-one.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
-   * **Modifica** : consente di modificare le impostazioni della pipeline
-   * **Dettagli** : fornisce dettagli sull’esecuzione della pipeline
-   * **Build** : consente di passare alla pagina di esecuzione dalla quale è possibile eseguire la pipeline.
-   * **Accesso a informazioni sul repository** : consente all’utente di ottenere le informazioni necessarie per accedere all’archivio Git di Cloud Manager
+1. La pipeline non di produzione appena creata viene ora visualizzata nella scheda **Pipelines** .
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add4.png)
+
+
+   La pipeline viene visualizzata sulla scheda nella schermata iniziale con tre azioni, come illustrato di seguito:
+
+   * **Aggiungi** : consente di aggiungere una nuova pipeline.
+   * **Accesso a informazioni sul repository** : consente all’utente di ottenere le informazioni necessarie per accedere all’archivio Git di Cloud Manager.
    * **Ulteriori informazioni** : descrive la risorsa della documentazione della pipeline CI/CD.
 
 ### Modifica di una pipeline non di produzione {#editing-nonprod-pipeline}
 
-Puoi modificare le configurazioni della pipeline dalla pagina **Panoramica del programma** .
+Puoi modificare le configurazioni della pipeline dalla **scheda Pipelines** dalla pagina **Panoramica del programma** .
 
 Per modificare la pipeline non di produzione configurata, effettua le seguenti operazioni:
 
 1. Passa alla scheda **Pipelines** dalla pagina **Panoramica del programma** .
 
-1. Seleziona la scheda **Non produzione** e fai clic su **Modifica** dopo aver selezionato le pipeline desiderate.
+1. Seleziona la pipeline non di produzione e fai clic su **..**. Fai clic su **Modifica**, come illustrato nella figura seguente.
 
-   ![](assets/configure-pipeline/non-prod-edit-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit1.png)
 
-1. Seleziona l&#39;archivio desiderato e gli altri aggiornamenti richiesti e fai clic su **Salva**.
+1. Viene visualizzata la finestra di dialogo **Modifica pipeline di produzione**.
 
-   ![](assets/configure-pipeline/edit-nonprodenv.png)
+   1. La scheda **Configurazione** ti consente di aggiornare il **Nome pipeline**, **Trigger distribuzione** e **Comportamento di errore delle metriche importanti**.
+
+      >[!NOTE]
+      >Per informazioni su come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) .
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit2.png)
+
+
+   1. La scheda **Codice sorgente** consente di aggiornare il **Repository** e il **Ramo Git**.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
+
+1. Fai clic su **Aggiorna** una volta completata la modifica della pipeline non di produzione.
+
 
 ## Passaggi successivi {#the-next-steps}
 
