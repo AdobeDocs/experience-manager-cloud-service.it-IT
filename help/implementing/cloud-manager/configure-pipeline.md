@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
+source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ In Cloud Manager sono disponibili due tipi di pipeline:
 
    Per ulteriori informazioni, consulta [Solo pipeline non di produzione e qualità del codice](configure-pipeline.md#non-production-pipelines) .
 
->[!NOTE]
->Per configurare la pipeline, devi:
-> * definisci il trigger che avvierà la pipeline.
-> * definire i parametri che controllano la distribuzione di produzione.
-> * configurare i parametri del test delle prestazioni.
+   >[!NOTE]
+   >Per configurare la pipeline, devi:
+   > * definisci il trigger che avvierà la pipeline.
+   > * definire i parametri che controllano la distribuzione di produzione.
+   > * configurare i parametri del test delle prestazioni.
 
 
 ## Impostazione della pipeline di produzione {#setting-up-production-pipeline}
@@ -115,31 +115,33 @@ Per modificare la pipeline configurata, effettua le seguenti operazioni:
 
 1. Passa alla scheda **Pipelines** dalla pagina **Panoramica del programma** .
 
-1. Fai clic su **Modifica** dalla scheda **Pipelines** .
+1. Fai clic su **..** dalla scheda **Pipelines** e fai clic su **Modifica**, come illustrato nella figura seguente.
 
-   ![](assets/configure-pipeline/edit-pipeline-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. La scheda **Codice sorgente** ti consente di aggiornare l’archivio. Fai clic su **Accedi a informazioni sul repository** per aggiornare il repository.
+1. Viene visualizzata la finestra di dialogo **Modifica pipeline di produzione**.
 
-   >[!NOTE]
-   >Per informazioni su come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) .
+   1. La scheda **Configurazione** ti consente di aggiornare il **Nome pipeline**, **Trigger distribuzione** e **Comportamento di errore delle metriche importanti**.
 
-   ![](assets/configure-pipeline/edit-pipeline-2.png)
+      >[!NOTE]
+      >Per informazioni su come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) .
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-1. La scheda **Ambienti** consente di aggiornare le opzioni di stage e produzione.
+   1. La scheda **Origine** consente di ignorare le configurazioni del livello web e di eseguire l&#39;aggiornamento da **Opzioni di distribuzione di produzione**.
 
-   ![](assets/configure-pipeline/edit-pipeline-3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
-1. L’opzione **Audit esperienze** consente di aggiornare o aggiungere nuove pagine.
+   1. L’opzione **Audit esperienze** consente di aggiornare o aggiungere nuove pagine.
 
-   ![](assets/configure-pipeline/edit-pipeline-4.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. Fai clic su **Salva** una volta completata la modifica della pipeline.
+1. Una volta completata la modifica della pipeline, fai clic su **Aggiorna** .
 
 ## Solo pipeline non di produzione e di qualità del codice {#non-production-pipelines}
 
-Oltre alla pipeline principale che viene implementata in fase e produzione, i clienti possono impostare pipeline aggiuntive, denominate **Non-Production Pipelines**. Queste pipeline eseguono sempre i passaggi di creazione e qualità del codice. Facoltativamente, possono anche distribuire in AEM come ambiente di Cloud Service.
+Oltre alla pipeline principale che viene implementata in fase e produzione, i clienti possono impostare pipeline aggiuntive, denominate **Non-Production Pipelines**. Queste pipeline eseguono sempre i passaggi di creazione e qualità del codice. Facoltativamente, possono anche distribuire AEM ambiente as a Cloud Service.
 
 Nella schermata iniziale, queste pipeline sono elencate in una nuova scheda:
 
