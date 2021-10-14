@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
@@ -100,6 +100,10 @@ I modelli di frammento di contenuto devono essere pubblicati quando/prima che ve
 >[!NOTE]
 >
 >Se un autore tenta di pubblicare un frammento di contenuto per il quale il modello non è ancora stato pubblicato, un elenco di selezione lo indicherà e il modello verrà pubblicato con il frammento.
+
+>[!NOTE]
+>
+>La funzione Modelli per frammenti di contenuto bloccati (pubblicati) è in versione beta.
 
 Non appena un modello viene pubblicato, viene *bloccato* in modalità DI SOLA LETTURA sull&#39;autore. Questo obiettivo è quello di evitare modifiche che potrebbero causare errori agli schemi e alle query GraphQL esistenti, soprattutto nell’ambiente di pubblicazione. È indicato nella console da **Bloccato**.
 
