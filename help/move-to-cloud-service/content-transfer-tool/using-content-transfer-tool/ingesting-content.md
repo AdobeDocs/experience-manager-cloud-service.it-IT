@@ -1,15 +1,15 @@
 ---
-title: Inserimento di contenuti in Target nello strumento Content Transfer (Trasferimento contenuti)
-description: Inserimento di contenuti in Target nello strumento Content Transfer (Trasferimento contenuti)
-source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
+title: Inserimento di contenuto in Target
+description: Inserimento di contenuto in Target
+source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 27%
+source-wordcount: '542'
+ht-degree: 28%
 
 ---
 
 
-# Inserimento di contenuti in Target nello strumento Content Transfer (Trasferimento contenuti) {#ingesting-content}
+# Inserimento di contenuto in Target {#ingesting-content}
 
 ## Processo di acquisizione nello strumento Content Transfer (Trasferimento contenuti) {#ingestion-process}
 
