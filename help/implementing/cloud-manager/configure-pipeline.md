@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
+source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
@@ -45,44 +45,47 @@ Prima di iniziare a distribuire il codice, devi configurare le impostazioni dell
 >
 >È possibile modificare le impostazioni della pipeline dopo la configurazione iniziale.
 
-## Configurazione delle impostazioni della pipeline da [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
+## Aggiunta di una nuova pipeline di produzione {#adding-production-pipeline}
 
-Dopo aver configurato il programma e disporre di almeno un ambiente utilizzando l&#39;interfaccia utente di [!UICONTROL Cloud Manager], puoi configurare la pipeline di distribuzione.
+Dopo aver configurato il programma e disporre di almeno un ambiente utilizzando l&#39;interfaccia utente di [!UICONTROL Cloud Manager], puoi aggiungere una pipeline di produzione.
 
-Per configurare il comportamento e le preferenze per la pipeline, effettua le seguenti operazioni:
+Segui questi passaggi per configurare il comportamento e le preferenze per la pipeline di produzione:
 
-1. Fai clic su **Imposta pipeline** per impostare e configurare la pipeline.
+1. Passa alla scheda **Pipelines** dalla pagina **Panoramica del programma** .
+Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline di produzione**.
 
-   ![](assets/set-up-pipeline1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
 
-1. Viene visualizzata la schermata **Pipeline di installazione**. Seleziona il ramo e fai clic su **Avanti**.
+1. **Viene visualizzata la finestra di dialogo Aggiungi** pipeline di produzione . Immettere il nome della pipeline.
 
-   ![](assets/setup-1.png)
+   Inoltre, è possibile impostare **Trigger distribuzione** e **Comportamento errore importante** da **Opzioni di distribuzione**. Fai clic su **Continua**.
 
-1. Configura le opzioni di distribuzione.
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
-   ![](assets/setup-pipeline.png)
 
    Puoi definire il trigger per avviare la pipeline:
 
    * **Manuale** : utilizzando l’interfaccia utente si avvia manualmente la pipeline.
    * **In Modifiche Git** : avvia la pipeline CI/CD ogni volta che vengono aggiunti dei commit al ramo Git configurato. Anche se selezioni questa opzione, puoi sempre avviare la pipeline manualmente.
 
-   Durante la configurazione o la modifica della pipeline, Deployment Manager ha la possibilità di definire il comportamento della pipeline quando si verifica un errore importante in uno qualsiasi dei gate di qualità.
+      Durante la configurazione o la modifica della pipeline, Deployment Manager ha la possibilità di definire il comportamento della pipeline quando si verifica un errore importante in uno qualsiasi dei gate di qualità.
 
-   Questo è utile per i clienti che desiderano processi più automatizzati. Le opzioni disponibili sono:
+      Questo è utile per i clienti che desiderano processi più automatizzati. Le opzioni disponibili sono:
 
-   * **Chiedi ogni volta**  - Questa è l&#39;impostazione predefinita e richiede un intervento manuale su qualsiasi errore importante.
-   * **Annulla immediatamente** : se selezionata, la pipeline verrà annullata ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che rifiuta manualmente ogni errore.
-   * **Approva immediatamente** : se selezionata, la pipeline procede automaticamente ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che approva manualmente ogni errore.
+      * **Chiedi ogni volta**  - Questa è l&#39;impostazione predefinita e richiede un intervento manuale su qualsiasi errore importante.
+      * **Annulla immediatamente** : se selezionata, la pipeline verrà annullata ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che rifiuta manualmente ogni errore.
+      * **Approva immediatamente** : se selezionata, la pipeline procede automaticamente ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che approva manualmente ogni errore.
 
+1. **È selezionato il** codice Stack completo. È possibile scegliere il **Repository** e il **Ramo Git**. Fai clic su **Salva**.
 
-1. Le impostazioni della pipeline di produzione includono una terza scheda etichettata come **Audit esperienze**. Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi nel controllo di esperienza.
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+
+1. La finestra di dialogo **Aggiungi pipeline di produzione** include una terza scheda etichettata come **Audit esperienza**. Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi nel controllo di esperienza.
 
    >[!NOTE]
-   >Fai clic su **Aggiungi nuova pagina** per definire il tuo collegamento personalizzato.
+   >Fai clic su **Aggiungi pagina** per definire un collegamento personalizzato.
 
-   ![](assets/setup-3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
 
    Fai clic su **Aggiungi nuova pagina** per fornire un percorso URL da includere nel controllo di esperienza.
 
@@ -103,9 +106,13 @@ Per configurare il comportamento e le preferenze per la pipeline, effettua le se
    >[!NOTE]
    > Le pagine configurate verranno inviate al servizio e valutate in base alle prestazioni, all’accessibilità, all’ottimizzazione SEO (Search Engine Optimization), alle best practice e ai test PWA (Progressive Web App).
 
-1. Fai clic su **Salva** nella schermata **Modifica pipeline** . Nella pagina **Panoramica** viene ora visualizzata la scheda **Implementa il programma** . Fare clic sul pulsante **Distribuisci** per distribuire il programma.
+1. Fai clic su **Salva**. La pipeline di produzione appena creata viene ora visualizzata nella scheda **Pipelines** .
 
-   ![](assets/configure-pipeline5.png)
+   La pipeline viene visualizzata sulla scheda nella schermata iniziale con tre azioni, come illustrato di seguito:
+
+   * **Aggiungi** : consente di aggiungere una nuova pipeline.
+   * **Accesso a informazioni sul repository** : consente all’utente di ottenere le informazioni necessarie per accedere all’archivio Git di Cloud Manager.
+   * **Ulteriori informazioni** : descrive la risorsa della documentazione della pipeline CI/CD.
 
 ### Modifica di una pipeline di produzione {#editing-prod-pipeline}
 
