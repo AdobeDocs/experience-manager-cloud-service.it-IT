@@ -4,9 +4,9 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: e099272245054bdff0bbeaa1fd9b01e564198dee
+source-git-commit: d5032670c243779289e8e86850bbfd137d8d6286
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2858'
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
       * Digitando un **Etichetta campo** si completa automaticamente il **Nome proprietà**, se vuoto, e può essere aggiornato manualmente in seguito.
 
          >[!CAUTION]
-         Quando si aggiorna manualmente un tipo di dati **Nome proprietà**, i nomi devono contenere solo caratteri latini, cifre numeriche e caratteri di sottolineatura &quot;_&quot; come carattere speciale.
+         Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, tieni presente che i nomi devono contenere solo caratteri latini, cifre numeriche e carattere di sottolineatura &quot;_&quot; come carattere speciale.
          Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
       Esempio:
 
@@ -91,7 +91,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
    ![rimuovere](assets/cfm-models-06.png)
 
-1. Aggiungi tutti i campi obbligatori e definisci le relative proprietà in base alle esigenze. Esempio:
+1. Add all required fields, and define the related properties, as required. Esempio:
 
    ![save](assets/cfm-models-07.png)
 
@@ -140,9 +140,12 @@ Nell’editor frammenti ogni istanza viene visualizzata come una scheda .
 
 Molte proprietà sono auto-esplicative, per alcune proprietà ulteriori dettagli sono qui sotto:
 
->[!CAUTION]
-Quando aggiorni manualmente il **Nome proprietà**, tieni presente che i nomi devono contenere solo caratteri latini, cifre numeriche e caratteri di sottolineatura &quot;_&quot; come carattere speciale.
-Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+* **Nome proprietà**
+
+   Quando aggiorni manualmente questa proprietà per un tipo di dati, tieni presente che i nomi **devono** contenere *solo* caratteri latini, cifre numeriche e trattino basso &quot;_&quot; come carattere speciale.
+
+   >[!CAUTION]
+   Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering**
 comeLe varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore visualizza una singola istanza del campo o se può creare più istanze.
@@ -198,7 +201,7 @@ Diversi tipi di dati includono ora la possibilità di definire requisiti di conv
 * **Numero**
    * Verifica la presenza di valori specifici.
 * **Riferimento contenuto**
-   * Test per tipi specifici di contenuto.
+   * Test for specific types of content.
    * È possibile fare riferimento solo alle risorse di dimensioni file specificate o inferiori.
    * È possibile fare riferimento solo alle immagini entro un intervallo di larghezza e/o altezza predefinito (in pixel).
 * **Riferimento frammento**
@@ -275,24 +278,24 @@ Oltre alle proprietà standard puoi definire:
 
    * **multicampo** : l’autore del frammento può creare più riferimenti, singoli o singoli
 
-   * **fragmentreference** : consente all’autore del frammento di selezionare un singolo riferimento a un frammento
+   * **fragmentreference** - allows the fragment author to select a single reference to a fragment
 
-* **Modello**
-TipoÈ possibile selezionare più modelli. Durante la creazione del frammento di contenuto, tutti i frammenti a cui si fa riferimento devono essere stati creati utilizzando questi modelli.
+* **Model Type**
+Multiple models can be selected. When authoring the Content Fragment any referenced fragments must have been created using these models.
 
 * **Root**
 PathSpecifica un percorso principale per tutti i frammenti a cui viene fatto riferimento.
 
 * **Consenti creazione di frammenti**
 
-   In questo modo l’autore del frammento potrà creare un nuovo frammento basato sul modello appropriato.
+   This will allow the fragment author to create a new fragment based on the appropriate model.
 
    * **fragmentreferencecomposite** : consente all’autore del frammento di creare un composito selezionando più frammenti
 
    ![Riferimento frammento](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
-È in vigore un meccanismo di protezione contro la recidiva. Non consente all’utente di selezionare il frammento di contenuto corrente nel riferimento al frammento. Questo può causare una finestra di dialogo vuota del selettore dei riferimenti ai frammenti.
+A recurrence protection mechanism is in place. Non consente all’utente di selezionare il frammento di contenuto corrente nel riferimento al frammento. Questo può causare una finestra di dialogo vuota del selettore dei riferimenti ai frammenti.
 In GraphQL è inoltre disponibile una protezione di ricorrenza per i riferimenti ai frammenti. Se crei una query approfondita tra due frammenti di contenuto che si riferiscono l’uno all’altro, restituirà null.
 
 ## Modello frammento di contenuto - Proprietà {#content-fragment-model-properties}
@@ -314,8 +317,8 @@ Per un controllo completo sull’utilizzo dei modelli di frammenti di contenuto,
 Una volta creato un modello, questo deve essere abilitato in modo che:
 
 * È disponibile per la selezione durante la creazione di un nuovo frammento di contenuto.
-* È possibile fare riferimento a all’interno di un modello di frammento di contenuto.
-* È disponibile per GraphQL; quindi lo schema viene generato.
+* Can be referenced from within a Content Fragment Model.
+* Is available to GraphQL; so the schema is generated.
 
 Per abilitare un modello contrassegnato come:
 
@@ -361,7 +364,7 @@ Per configurare **Criteri** per **Modelli di frammento di contenuto consentiti**
 
    * **Ereditato da`<folder>`**
 
-      I criteri vengono ereditati automaticamente durante la creazione di nuove cartelle secondarie; il criterio può essere riconfigurato (e l’ereditarietà è interrotta) se le sottocartelle devono consentire modelli diversi dalla cartella principale.
+      Policies are automatically inherited when creating new child folders; the policy can be reconfigured (and the inheritance broken) if sub-folders need to allow models different to the parent folder.
 
    * **Modelli per frammenti di contenuto consentiti per percorso**
 
@@ -369,16 +372,16 @@ Per configurare **Criteri** per **Modelli di frammento di contenuto consentiti**
 
    * **Modelli di frammenti di contenuto consentiti per tag**
 
-      Possono essere consentiti più modelli.
+      Multiple models can be allowed.
    ![Criterio modello frammento di contenuto](assets/cfm-model-policy-assets-folder.png)
 
-1. **** Salva le modifiche.
+1. **Save** any changes.
 
-I modelli di frammento di contenuto consentiti per una cartella vengono risolti come segue:
+The Content Fragment Models allowed for a folder are resolved as follows:
 * I **Criteri** per **Modelli di frammento di contenuto consentiti**.
 * Se vuoto, prova a determinare il criterio utilizzando le regole di ereditarietà.
 * Se la catena di ereditarietà non fornisce un risultato, controlla la configurazione **Cloud Services** per quella cartella (anche prima direttamente e poi tramite ereditarietà).
-* Se nessuno dei risultati di cui sopra fornisce risultati, allora non ci sono modelli consentiti per quella cartella.
+* If none of the above deliver any results, then there are no allowed models for that folder.
 
 ## Eliminazione di un modello di frammento di contenuto {#deleting-a-content-fragment-model}
 
@@ -390,10 +393,10 @@ Per eliminare un modello di frammento di contenuto:
 1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli di frammento di contenuto**.
 
 1. Passa alla cartella contenente il modello di frammento di contenuto.
-1. Seleziona il modello, seguito da **Elimina** dalla barra degli strumenti.
+1. Select your model, followed by **Delete** from the toolbar.
 
    >[!NOTE]
-   Se si fa riferimento al modello, viene visualizzato un avviso. Agisci in modo appropriato.
+   If the model is referenced a warning will be given. Agisci in modo appropriato.
 
 ## Pubblicazione di un modello di frammento di contenuto {#publishing-a-content-fragment-model}
 
@@ -419,12 +422,12 @@ Per annullare la pubblicazione di un modello di frammento di contenuto:
 1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli di frammento di contenuto**.
 
 1. Passa alla cartella contenente il modello di frammento di contenuto.
-1. Seleziona il modello, seguito da **Annulla pubblicazione** nella barra degli strumenti.
+1. Select your model, followed by **Unpublish** from the toolbar.
 Lo stato di pubblicazione sarà indicato nella console.
 
 Se tenti di annullare la pubblicazione di un modello attualmente utilizzato da uno o più frammenti, un avviso di errore segnala quanto segue:
 
-![Messaggio di errore Modello frammento di contenuto quando si annulla la pubblicazione di un modello in uso](assets/cfm-model-unpublish-error.png)
+![Content Fragment Model error message when unpublishing a model that is in use](assets/cfm-model-unpublish-error.png)
 
 Il messaggio ti consiglierà di controllare il pannello [Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) per ulteriori informazioni:
 
@@ -478,26 +481,26 @@ Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
       Se selezioni **Sblocca** verrà visualizzato un avviso e devi confermare l&#39;azione **Sblocca**:
       ![Messaggio durante lo sblocco del modello di frammento di contenuto](assets/cfm-model-unlock-message.png)
 
-      Potete quindi aprire il modello per la modifica.
+      You can then open the model for editing.
 
-   * È inoltre possibile **Bloccare** il modello in seguito.
-   * La ripubblicazione del modello lo riporta immediatamente in modalità **Bloccato** (SOLA LETTURA).
+   * You can also **Lock** the model afterwards.
+   * Re-publishing the model will immediately put it back into **Locked** (READ-ONLY) mode.
 
 * Editor modelli
 
    * Quando apri un modello bloccato, viene visualizzato un avviso e vengono presentate tre azioni: **Annulla**, **Visualizza solo lettura**, **Modifica**:
 
-      ![Messaggio durante la visualizzazione di un modello di frammento di contenuto bloccato](assets/cfm-model-editor-lock-message.png)
+      ![Message when viewing a locked Content Fragment Model](assets/cfm-model-editor-lock-message.png)
 
    * Se selezioni **Visualizza solo lettura** puoi vedere il contenuto e la struttura del modello:
 
       ![Visualizza solo lettura - Modello frammento di contenuto bloccato](assets/cfm-model-editor-locked-view-only.png)
 
-   * Se selezioni **Modifica** puoi modificare e salvare gli aggiornamenti:
+   * If you select **Edit** you can edit and save your updates:
 
       ![Modifica - Modello frammento di contenuto bloccato](assets/cfm-model-editor-locked-edit.png)
 
       >[!NOTE]
-      Potrebbe ancora essere presente un avviso nella parte superiore, ma si verifica quando il modello è già utilizzato dai frammenti di contenuto esistenti.
+      There may still a warning at the top, but that is when the model is already in use by existing Content Fragments.
 
    * **** L’opzione Annulla consente di tornare alla console.
