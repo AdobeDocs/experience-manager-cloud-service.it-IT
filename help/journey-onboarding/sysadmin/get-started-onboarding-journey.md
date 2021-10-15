@@ -3,16 +3,17 @@ title: Guida introduttiva al processo di onboarding
 description: Segui questa pagina per scoprire come iniziare a utilizzare il percorso di onboarding
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
+source-git-commit: aeee4c4865e2ba7a8c9c7ffb392a08c45dffb20a
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 0%
+source-wordcount: '549'
+ht-degree: 1%
 
 ---
 
 # Guida introduttiva al processo di onboarding {#getting-started}
 
-L&#39;onboarding è il processo durante il quale un [amministratore di sistema ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale delle risorse cloud e l’assegnazione di utenti a ruoli in base alle loro responsabilità lavorative. Di conseguenza, ogni membro è in grado di accedere alle proprie AEM come risorse di Cloud Service.
+L&#39;onboarding è il processo durante il quale un [amministratore di sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designato viene impostato AEM as a Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale delle risorse cloud e l’assegnazione di utenti a ruoli in base alle loro responsabilità lavorative. Di conseguenza, ogni membro è in grado di accedere e accedere alle risorse AEM as a Cloud Service.
 
 ## Obiettivo {#objective}
 
@@ -26,6 +27,11 @@ Dopo aver letto questa sezione dovresti essere in grado di:
 >[!NOTE]
 >Prima di avviare il processo di onboarding, assicurati di conoscere Adobe Admin Console. Adobe Admin Console è una posizione centrale per l’amministrazione e la gestione delle licenze e degli utenti dei prodotti Adobe. L’amministratore di sistema effettuerà l’accesso ad Adobe Admin Console per aggiungere o rimuovere utenti e altro ancora. Per ulteriori informazioni, consulta [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) .
 
+## Onboarding per AEM as a Cloud Service {#onboarding-process}
+
+Scopri come effettuare l’onboarding per AEM as a Cloud Service a partire dalla fase del contratto fino alla configurazione degli ambienti tramite Cloud Manager.
+
+>[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
 ## Accesso ad Admin Console {#steps-admin-console}
 
@@ -67,4 +73,3 @@ Segui i passaggi seguenti per passare ad Admin Console ed esaminare il ruolo di 
 ## Novità {#whats-next}
 
 Ora, dopo aver effettuato l’accesso ad Admin Console e aver controllato il profilo come amministratore di sistema, dovresti continuare il percorso di onboarding esaminando il documento [Assegna membri del team ai profili di prodotto di Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
-
