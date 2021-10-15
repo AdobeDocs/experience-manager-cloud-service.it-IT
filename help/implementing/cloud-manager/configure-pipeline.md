@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
+source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline di produzione**.
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
 
-   Puoi definire il trigger per avviare la pipeline:
+   Puoi definire gli attivatori di distribuzione per avviare la pipeline.
 
    * **Manuale** : utilizzando l’interfaccia utente si avvia manualmente la pipeline.
    * **In Modifiche Git** : avvia la pipeline CI/CD ogni volta che vengono aggiunti dei commit al ramo Git configurato. Anche se selezioni questa opzione, puoi sempre avviare la pipeline manualmente.
@@ -71,14 +71,16 @@ Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline di produzione**.
       Durante la configurazione o la modifica della pipeline, Deployment Manager ha la possibilità di definire il comportamento della pipeline quando si verifica un errore importante in uno qualsiasi dei gate di qualità.
 
       Questo è utile per i clienti che desiderano processi più automatizzati. Le opzioni disponibili sono:
+   Puoi definire il comportamento delle metriche di errore importanti per avviare la pipeline.
 
-      * **Chiedi ogni volta**  - Questa è l&#39;impostazione predefinita e richiede un intervento manuale su qualsiasi errore importante.
-      * **Annulla immediatamente** : se selezionata, la pipeline verrà annullata ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che rifiuta manualmente ogni errore.
-      * **Approva immediatamente** : se selezionata, la pipeline procede automaticamente ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che approva manualmente ogni errore.
+   * **Chiedi ogni volta**  - Questa è l&#39;impostazione predefinita e richiede un intervento manuale su qualsiasi errore importante.
+   * **Non riuscito Immediatamente**  - Se selezionato, la pipeline verrà annullata ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che rifiuta manualmente ogni errore.
+   * **Continua immediatamente** : se selezionata, la pipeline procede automaticamente ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che approva manualmente ogni errore.
 
-1. **È selezionato il** codice Stack completo. È possibile scegliere il **Repository** e il **Ramo Git**. Fai clic su **Salva**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+1. La finestra di dialogo **Aggiungi pipeline di produzione** include una seconda scheda etichettata come **Codice sorgente**. **È selezionato il** codice Stack completo. È possibile scegliere il **Repository** e il **Ramo Git**. Fai clic su **Salva**.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
 1. La finestra di dialogo **Aggiungi pipeline di produzione** include una terza scheda etichettata come **Audit esperienza**. Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi nel controllo di esperienza.
 
@@ -150,6 +152,8 @@ Per modificare la pipeline configurata, effettua le seguenti operazioni:
 
 Oltre alla pipeline principale che viene implementata in fase e produzione, i clienti possono impostare pipeline aggiuntive, denominate **Non-Production Pipelines**. Queste pipeline eseguono sempre i passaggi di creazione e qualità del codice. Facoltativamente, possono anche distribuire AEM ambiente as a Cloud Service.
 
+### Aggiunta di una nuova pipeline non di produzione {#adding-non-production-pipeline}
+
 Nella schermata iniziale, queste pipeline sono elencate in una nuova scheda:
 
 1. Accedi alla scheda **Pipelines** dalla schermata iniziale di Cloud Manager. Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline non di produzione**.
@@ -158,7 +162,7 @@ Nella schermata iniziale, queste pipeline sono elencate in una nuova scheda:
 
 1. **Viene visualizzata la finestra di dialogo Aggiungi**  pipeline non di produzione. Selezionare il tipo di pipeline che si desidera creare, ovvero **Pipeline di qualità del codice** o **Pipeline di distribuzione**.
 
-   Inoltre, è possibile impostare **Trigger distribuzione** e **Comportamento errore importante** da **Opzioni di distribuzione**. Fai clic su **Continua**.
+   Inoltre, puoi anche impostare **Trigger distribuzione** e **Comportamento errori di metrica importanti** da **Opzioni di distribuzione**. Fai clic su **Continua**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
@@ -191,7 +195,7 @@ Per modificare la pipeline non di produzione configurata, effettua le seguenti o
 
 1. Viene visualizzata la finestra di dialogo **Modifica pipeline di produzione**.
 
-   1. La scheda **Configurazione** ti consente di aggiornare il **Nome pipeline**, **Trigger distribuzione** e **Comportamento di errore delle metriche importanti**.
+   1. La scheda **Configurazione** ti consente di aggiornare il **Nome pipeline**, **Trigger distribuzione** e **Comportamento errori di metrica importanti**.
 
       >[!NOTE]
       >Per informazioni su come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) .
