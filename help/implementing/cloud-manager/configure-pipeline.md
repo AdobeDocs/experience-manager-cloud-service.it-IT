@@ -2,9 +2,9 @@
 title: Configurare la pipeline CI/CD - Cloud Services
 description: Configurare la pipeline CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
+source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,11 @@ Segui questi passaggi per configurare il comportamento e le preferenze per la pi
 1. Passa alla scheda **Pipelines** dalla pagina **Panoramica del programma** .
 Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline di produzione**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **Viene visualizzata la finestra di dialogo Aggiungi** pipeline di produzione . Immettere il nome della pipeline.
 
-   Inoltre, è possibile impostare **Trigger distribuzione** e **Comportamento errore importante** da **Opzioni di distribuzione**. Fai clic su **Continua**.
+   Inoltre, puoi anche impostare **Trigger distribuzione** e **Comportamento errori di metrica importanti** da **Opzioni di distribuzione**. Fai clic su **Continua**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
@@ -78,16 +78,21 @@ Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline di produzione**.
    * **Continua immediatamente** : se selezionata, la pipeline procede automaticamente ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che approva manualmente ogni errore.
 
 
-1. La finestra di dialogo **Aggiungi pipeline di produzione** include una seconda scheda etichettata come **Codice sorgente**. **È selezionato il** codice Stack completo. È possibile scegliere il **Repository** e il **Ramo Git**. Fai clic su **Salva**.
+1. La finestra di dialogo **Aggiungi pipeline di produzione** include una seconda scheda etichettata come **Codice sorgente**. **È selezionato il** codice Stack completo. È possibile scegliere il **Repository** e il **Ramo Git**. Selezionare Opzioni di distribuzione di produzione, come illustrato di seguito. Fai clic su **Continua**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   Opzioni di distribuzione della produzione:
+
+   * **Pausa prima della distribuzione in produzione**: Questa opzione consente la pausa della fase di distribuzione prima della produzione.
+   * **Pianificato**: Questa opzione consente all&#39;utente di abilitare la distribuzione di produzione pianificata.
 
 1. La finestra di dialogo **Aggiungi pipeline di produzione** include una terza scheda etichettata come **Audit esperienza**. Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi nel controllo di esperienza.
 
    >[!NOTE]
    >Fai clic su **Aggiungi pagina** per definire un collegamento personalizzato.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
    Fai clic su **Aggiungi nuova pagina** per fornire un percorso URL da includere nel controllo di esperienza.
 
@@ -234,6 +239,28 @@ Per modificare la pipeline non di produzione configurata, effettua le seguenti o
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
 
 1. Fai clic su **Aggiorna** una volta completata la modifica della pipeline non di produzione.
+
+### Azioni aggiuntive di pipeline non di produzione {#additional-nonprod-actions}
+
+#### Esecuzione di una pipeline non di produzione {#run-nonprod}
+
+Puoi eseguire la pipeline di produzione dalla scheda Pipelines :
+
+1. Passa alla scheda **Pipelines** dalla pagina **Panoramica del programma** .
+
+1. Fai clic su **..** dalla scheda **Pipelines** e fai clic su **Esegui**, come illustrato nella figura seguente.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### Eliminazione di una pipeline non di produzione {#delete-nonprod}
+
+Puoi eliminare la pipeline di produzione dalla scheda Pipelines :
+
+1. Passa alla scheda **Pipelines** dalla pagina **Panoramica del programma** .
+
+1. Fai clic su **..** dalla scheda **Pipelines** e fai clic su **Elimina**, come illustrato nella figura seguente.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
 
 
 ## Passaggi successivi {#the-next-steps}
