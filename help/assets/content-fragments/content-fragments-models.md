@@ -4,9 +4,9 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: e099272245054bdff0bbeaa1fd9b01e564198dee
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2850'
 ht-degree: 6%
 
 ---
@@ -77,6 +77,9 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
       * Molte proprietà sono autoesplicative. Per ulteriori informazioni, consulta [Proprietà](#properties).
       * Digitando un **Etichetta campo** si completa automaticamente il **Nome proprietà**, se vuoto, e può essere aggiornato manualmente in seguito.
 
+         >[!CAUTION]
+         Quando si aggiorna manualmente un tipo di dati **Nome proprietà**, i nomi devono contenere solo caratteri latini, cifre numeriche e caratteri di sottolineatura &quot;_&quot; come carattere speciale.
+         Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
       Esempio:
 
       ![proprietà del campo](assets/cfm-models-05.png)
@@ -136,6 +139,10 @@ Nell’editor frammenti ogni istanza viene visualizzata come una scheda .
 ## Proprietà {#properties}
 
 Molte proprietà sono auto-esplicative, per alcune proprietà ulteriori dettagli sono qui sotto:
+
+>[!CAUTION]
+Quando aggiorni manualmente il **Nome proprietà**, tieni presente che i nomi devono contenere solo caratteri latini, cifre numeriche e caratteri di sottolineatura &quot;_&quot; come carattere speciale.
+Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering**
 comeLe varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore visualizza una singola istanza del campo o se può creare più istanze.
