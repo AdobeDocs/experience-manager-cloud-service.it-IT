@@ -4,7 +4,7 @@ description: Scopri come amministrare le istanze dei flussi di lavoro
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 079c9a64aeee62b36a12083645ca43b115838705
+source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
@@ -94,7 +94,7 @@ DettagliApre una finestra per visualizzare
 cronologiaMostra i dettagli della cronologia del flusso di lavoro.
 
 * **Riprova** StepEsegue di nuovo l&#39;istanza del componente Passaggio script. Utilizzare il comando Riprova passaggio dopo aver risolto la causa dell&#39;errore originale. Ad esempio, prova a ripetere il passaggio dopo aver corretto un bug nello script eseguito dal passaggio del processo.
-* **** TerminareTerminare il flusso di lavoro se l’errore ha causato una situazione inconciliabile per il flusso di lavoro. Ad esempio, il flusso di lavoro può basarsi su condizioni ambientali quali le informazioni nell’archivio che non sono più valide per l’istanza del flusso di lavoro.
+* **** TerminareTerminare il flusso di lavoro se l&#39;errore ha causato una situazione inconciliabile per il flusso di lavoro. Ad esempio, il flusso di lavoro può basarsi su condizioni ambientali quali le informazioni nell’archivio che non sono più valide per l’istanza del flusso di lavoro.
 * **Termina e** RiprovaSimile a  **** Terminateeccetto per il fatto che una nuova istanza di flusso di lavoro viene avviata utilizzando il payload, il titolo e la descrizione originali.
 
 Per indagare gli errori, quindi riprendere o terminare il flusso di lavoro in seguito, utilizza i seguenti passaggi:
@@ -170,13 +170,12 @@ Puoi impostare la dimensione massima della casella in entrata configurando il **
 
 ## Utilizzo delle variabili del flusso di lavoro per i datastore di proprietà del cliente {#using-workflow-variables-customer-datastore}
 
-I dati utilizzati nei flussi di lavoro vengono memorizzati nell’Adobe fornito di storage (JCR). Questi dati possono essere sensibili in natura. È possibile salvare tutti i metadati/dati definiti dall&#39;utente nell&#39;archivio gestito anziché nell&#39;archiviazione fornita dall&#39;Adobe. In questa sezione viene descritto come impostare queste variabili per lo storage esterno.
+I dati elaborati dai flussi di lavoro vengono memorizzati nell’Adobe fornito di storage (JCR). Questi dati possono essere sensibili in natura. È possibile salvare tutti i metadati/dati definiti dall&#39;utente nell&#39;archivio gestito anziché nell&#39;archiviazione fornita dall&#39;Adobe. In queste sezioni viene descritto come impostare queste variabili per lo storage esterno.
 
 ### Impostare il modello per l&#39;utilizzo dello storage esterno dei metadati {#set-model-for-external-storage}
 
-A livello di modello di flusso di lavoro, è pianificato l’introduzione di un flag per indicare che il modello (e le sue istanze di runtime) dispone di archiviazione esterna dei metadati. I metadati utente non verranno mantenuti in JCR per le istanze del flusso di lavoro dei modelli contrassegnati per lo storage esterno.
+A livello di modello di flusso di lavoro, viene fornito un flag per indicare che il modello (e le sue istanze di runtime) dispone di archiviazione esterna dei metadati. Le variabili del flusso di lavoro non verranno mantenute in JCR per le istanze del flusso di lavoro dei modelli contrassegnati per lo storage esterno.
 
-Per attivare questa funzione è necessario attivare il flag di persistenza esterna: **userMetaDataCustomPersistenceEnabled = &quot;true&quot;**.
 La proprietà *userMetadataPersistenceEnabled* verrà memorizzata nel *jcr:content node* del modello di flusso di lavoro. Questo flag viene mantenuto nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustrazione seguente mostra come impostare il flag su un flusso di lavoro.
@@ -184,6 +183,8 @@ L’illustrazione seguente mostra come impostare il flag su un flusso di lavoro.
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
 ### API per metadati nello storage esterno {#apis-for-metadata-external-storage}
+
+Per memorizzare le variabili esternamente, devi implementare le API che il flusso di lavoro espone.
 
 UserMetaDataPersistenceContext
 
