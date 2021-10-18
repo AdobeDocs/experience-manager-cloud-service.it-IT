@@ -1,10 +1,10 @@
 ---
 title: Estrazione del contenuto dall’origine
 description: Estrazione del contenuto dall’origine
-source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
+source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 39%
+source-wordcount: '596'
+ht-degree: 36%
 
 ---
 
@@ -36,6 +36,10 @@ Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferiment
 
    >[!NOTE]
    >È presente l’opzione per sovrascrivere il contenitore di staging durante la fase di estrazione.
+
+   >[!IMPORTANT]
+   >Se la Mappatura utente non è stata eseguita su questo set di migrazione prima di estrarre il contenuto dall’origine, verrà visualizzato un avviso che mostra che il passaggio Mappatura utente è in sospeso, come illustrato nella figura riportata di seguito. Fai clic su **Mappa utenti** per eseguire lo strumento User Mapping (Mappatura utente).
+   >![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. La **Estrazione** viene ora visualizzato il campo **IN ESECUZIONE** stato per indicare che l’estrazione è in corso.
 
