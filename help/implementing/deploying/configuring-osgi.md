@@ -1,11 +1,11 @@
 ---
 title: Configurazione di OSGi per Adobe Experience Manager as a Cloud Service
 description: 'Configurazione OSGi con valori segreti e valori specifici per l’ambiente '
-feature: Distribuzione
+feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
+source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2936'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Quando si sviluppa localmente, è possibile trasmettere un parametro di avvio in
 
 ## Tipi di valori di configurazione OSGi {#types-of-osgi-configuration-values}
 
-Esistono tre varietà di valori di configurazione OSGi che possono essere utilizzati con Adobe Experience Manager as a Cloud Service.
+Ci sono tre varietà di valori di configurazione OSGi che possono essere utilizzati con Adobe Experience Manager as a Cloud Service.
 
 1. **Valori** in linea, che sono valori hardcoded nella configurazione OSGi e memorizzati in Git. Esempio:
 
@@ -80,7 +80,7 @@ Esistono tre varietà di valori di configurazione OSGi che possono essere utiliz
    } 
    ```
 
-1. **Valori** specifici per l’ambiente, ovvero valori che variano da un ambiente di sviluppo all’altro e che pertanto non possono essere oggetto di targeting accurato in modalità di esecuzione (poiché in Adobe Experience Manager as a Cloud Service è presente una sola modalità  `dev` di esecuzione). Esempio:
+1. **Valori** specifici per l’ambiente, ovvero valori che variano da un ambiente di sviluppo all’altro e che pertanto non possono essere oggetto di targeting preciso da parte della modalità di esecuzione (in quanto in Adobe Experience Manager as a Cloud Service è presente una sola modalità di  `dev` esecuzione). Esempio:
 
    ```json
    {
@@ -120,14 +120,14 @@ Quando definisci un valore di configurazione OSGi, inizia con i valori in linea 
 
 ### Quando utilizzare valori di configurazione specifici dell’ambiente non segreti {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Utilizza solo configurazioni specifiche per l’ambiente (`$[env:ENV_VAR_NAME]`) per valori di configurazione non segreti quando i valori variano per il livello di anteprima o variano in ambienti di sviluppo. Ciò include le istanze di sviluppo locali e qualsiasi ambiente di sviluppo Adobe Experience Manager as a Cloud Service. A parte l’impostazione di valori univoci per il livello di anteprima, evita di utilizzare configurazioni non segrete specifiche per l’ambiente per Adobe Experience Manager as a Cloud Service Stage o gli ambienti di produzione.
+Utilizza solo configurazioni specifiche per l’ambiente (`$[env:ENV_VAR_NAME]`) per valori di configurazione non segreti quando i valori variano per il livello di anteprima o variano in ambienti di sviluppo. Questo include le istanze di sviluppo locali e tutti gli ambienti di sviluppo Adobe Experience Manager as a Cloud Service. A parte l’impostazione di valori univoci per il livello di anteprima, evita di utilizzare configurazioni non segrete specifiche per l’ambiente per gli ambienti Adobe Experience Manager as a Cloud Service Stage o Production.
 
 * Utilizza solo configurazioni non segrete specifiche per l’ambiente per i valori di configurazione che differiscono tra il livello di pubblicazione e di anteprima o per i valori che differiscono tra gli ambienti di sviluppo, incluse le istanze di sviluppo locali.
 * Oltre allo scenario in cui il livello di anteprima deve variare dal livello di pubblicazione, utilizza i valori inline standard nelle configurazioni OSGi per i valori non segreti Stage e Produzione. In relazione, si sconsiglia di utilizzare configurazioni specifiche per l&#39;ambiente per facilitare l&#39;esecuzione di modifiche di configurazione in fase di runtime agli ambienti di stage e produzione; queste modifiche devono essere introdotte tramite la gestione del codice sorgente.
 
 ### Quando utilizzare valori di configurazione specifici dell’ambiente segreto {#when-to-use-secret-environment-specific-configuration-values}
 
-Adobe Experience Manager as a Cloud Service richiede l&#39;uso di configurazioni specifiche per l&#39;ambiente (`$[secret:SECRET_VAR_NAME]`) per qualsiasi valore di configurazione OSGi segreto, come password, chiavi API private o qualsiasi altro valore che non può essere memorizzato in Git per motivi di sicurezza.
+Adobe Experience Manager as a Cloud Service richiede l&#39;utilizzo di configurazioni specifiche per l&#39;ambiente (`$[secret:SECRET_VAR_NAME]`) per qualsiasi valore di configurazione OSGi segreto, come password, chiavi API private o qualsiasi altro valore che non può essere memorizzato in Git per motivi di sicurezza.
 
 Utilizza configurazioni specifiche per l’ambiente segreto per memorizzare il valore per i segreti su tutti gli ambienti Adobe Experience Manager as a Cloud Service, inclusi Stage e Produzione.
 
@@ -140,9 +140,9 @@ Esistono due modi per creare configurazioni OSGi, come descritto di seguito. L�
 I file di configurazione OSGi formattati JSON possono essere scritti manualmente direttamente nel progetto AEM. Questo è spesso il modo più rapido per creare configurazioni OSGi per componenti OSGi ben noti, e in particolare per componenti OSGi personalizzati che sono stati progettati e sviluppati dallo stesso sviluppatore che definisce le configurazioni. Questo approccio può anche essere utilizzato per copiare/incollare e aggiornare le configurazioni per lo stesso componente OSGi in varie cartelle in modalità runmode.
 
 1. Nell’IDE, apri il progetto `ui.apps`, individua o crea la cartella di configurazione (`/apps/.../config.<runmode>`) che esegue le modalità di esecuzione necessarie per eseguire la nuova configurazione OSGi
-1. In questa cartella di configurazione, crea un nuovo file `<PID>.cfg.json`. Il PID è l’identità persistente del componente OSGi di solito è il nome completo della classe dell’implementazione del componente OSGi. Esempio:
+1. In questa cartella di configurazione, crea un nuovo file `<PID>.cfg.json`. Il PID è l’identità persistente del componente OSGi. In genere è il nome della classe completa dell’implementazione del componente OSGi. Esempio:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-I nomi dei file di fabbrica della configurazione OSGi utilizzano la convenzione di  `<PID>-<factory-name>.cfg.json` denominazione
+I nomi dei file di fabbrica della configurazione OSGi utilizzano la convenzione di  `<factoryPID>-<name>.cfg.json` denominazione
 1. Apri il nuovo file `.cfg.json` e definisci le combinazioni chiave/valore per le coppie di proprietà e valori OSGi, seguendo il [formato di configurazione OSGi JSON](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Salva le modifiche apportate al nuovo file `.cfg.json`
 1. Aggiungi e esegui il commit del nuovo file di configurazione OSGi su Git
@@ -537,7 +537,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ## Considerazioni sulla distribuzione per valori di configurazione segreti e specifici per l’ambiente {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-Poiché i valori di configurazione segreti e specifici per l’ambiente sono al di fuori di Git e, di conseguenza, non fanno parte dei meccanismi formali di implementazione di Adobe Experience Manager as a Cloud Service, il cliente deve gestire, governare e integrare in Adobe Experience Manager come processo di distribuzione di Cloud Service.
+Poiché i valori di configurazione segreti e specifici per l’ambiente non rientrano in Git e non fanno quindi parte dei meccanismi formali di implementazione di Adobe Experience Manager as a Cloud Service, il cliente deve gestire, gestire e integrare nel processo di distribuzione di Adobe Experience Manager as a Cloud Service.
 
 Come accennato in precedenza, la chiamata dell’API distribuisce le nuove variabili e i nuovi valori agli ambienti Cloud, in modo simile a una tipica pipeline di distribuzione del codice cliente. I servizi di authoring e pubblicazione verranno riavviati e faranno riferimento ai nuovi valori, in genere impiegando alcuni minuti. Tieni presente che i gate e i test di qualità eseguiti da Cloud Manager durante una distribuzione regolare del codice non vengono eseguiti durante questo processo.
 
