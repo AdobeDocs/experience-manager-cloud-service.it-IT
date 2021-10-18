@@ -1,9 +1,9 @@
 ---
 title: Configurazione della rete avanzata per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o indirizzo IP in uscita dedicato per AEM as a Cloud Service
-source-git-commit: 1c9e83a0351d51d96998f7126f0ab76db56144ce
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2798'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ AEM as a Cloud Service offre diversi tipi di funzionalità di rete avanzate, che
 
 * [Uscita](#flexible-port-egress)  porta flessibile: configura AEM as a Cloud Service per consentire il traffico in uscita da porte non standard
 * [Indirizzo](#dedicated-egress-IP-address)  IP di uscita dedicato: configura il traffico in uscita da AEM as a Cloud Service per l&#39;origine da un IP univoco
-* [Rete privata virtuale](#vpn) : traffico sicuro tra l&#39;infrastruttura di un cliente e AEM as a Cloud Service, per i clienti che dispongono di tecnologia VPN
+* [Virtual Private Network (VPN)](#vpn) : traffico sicuro tra l&#39;infrastruttura di un cliente e AEM as a Cloud Service, per i clienti che dispongono di tecnologia VPN
 
 Questo articolo descrive in dettaglio ciascuna di queste opzioni, incluso come configurarle. Come strategia di configurazione generale, l’endpoint API `/networkInfrastructures` viene richiamato a livello di programma per dichiarare il tipo desiderato di rete avanzata, seguito da una chiamata all’ endpoint `/advancedNetworking` per ogni ambiente per abilitare l’infrastruttura e configurare parametri specifici dell’ambiente. Fai riferimento agli endpoint appropriati nella documentazione API di Cloud Manager per ogni sintassi formale, oltre a richieste di esempio e risposte.
 
