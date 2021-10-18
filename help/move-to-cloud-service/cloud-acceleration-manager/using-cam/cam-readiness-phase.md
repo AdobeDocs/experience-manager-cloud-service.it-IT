@@ -2,9 +2,9 @@
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di preparazione di Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '782'
 ht-degree: 5%
 
 ---
@@ -67,11 +67,17 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
    >[!NOTE]
    >Il caricamento di un nuovo rapporto ripristina tutte le valutazioni.
 
+### Utilizzo dell&#39;anteprima di stampa {#print-preview-cam}
+
+È possibile selezionare l’opzione di anteprima di stampa in Cloud Acceleration Manager per un’anteprima stampabile dei rapporti o per stampare il rapporto in un formato PDF per facilitarne la condivisione.
+
+Effettua le seguenti operazioni:
+
 1. Fai clic sull&#39;icona **Anteprima di stampa**, come mostrato di seguito.
 
    ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Facendo clic su **Anteprima di stampa** si apre una nuova scheda con il rapporto visualizzato in un&#39;anteprima stampabile. Fai clic su **Stampa** per stampare il rapporto in un formato PDF per facilitarne la condivisione.
+1. Facendo clic su **Anteprima di stampa** si apre una nuova scheda con il rapporto visualizzato in un&#39;anteprima stampabile. Fare clic su **Stampa** per stampare il rapporto in un formato PDF.
 
    >[!IMPORTANT]
    >* L&#39;opzione **Salva come PDF** è consigliata e supportata per la funzionalità di cui sopra.

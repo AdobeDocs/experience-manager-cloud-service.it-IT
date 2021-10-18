@@ -1,7 +1,7 @@
 ---
 title: Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione
 description: Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: 86b118e05b1e6947610c6032ed973394ba4b68e5
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 1%
@@ -28,7 +28,10 @@ Segui l’approccio consigliato come descritto di seguito:
 
 * Quando crei il set di migrazione, utilizza l’URL dell’autore AEM l’ambiente as a Cloud Service.
 
-* Durante l’acquisizione per la pubblicazione, il livello di pubblicazione NON viene ridimensionato (a differenza dell’autore). Per precauzione, evitare operazioni di scrittura avviate dall’utente quali:
+* Durante l’acquisizione per la pubblicazione, il livello di pubblicazione non viene ridimensionato (a differenza dell’autore).
 
-   * Distribuzione dei contenuti da AEM Author as a Cloud Service a Publish in tale ambiente
-   * Sincronizzazione utente tra istanze di pubblicazione
+   >[!IMPORTANT]
+   >Per precauzione, evitare operazioni di scrittura avviate dall’utente, ad esempio:
+   > * Distribuzione dei contenuti da AEM Author as a Cloud Service a Publish in tale ambiente
+   > * Sincronizzazione utente tra istanze di pubblicazione
+

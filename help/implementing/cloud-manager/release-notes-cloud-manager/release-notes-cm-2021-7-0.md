@@ -1,25 +1,25 @@
 ---
-title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0
-description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0
+title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.7.0
+description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.7.0
 feature: Release Information
-source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
+source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '340'
 ht-degree: 4%
 
 ---
 
 # Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.7.0 {#release-notes}
 
-Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0.
+Questa pagina illustra le note sulla versione di Cloud Manager in AEM 2021.7.0.
 
 >[!NOTE]
->Per visualizzare il Cloud Service delle note sulla versione corrente per Adobe Experience Manager, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+>Per visualizzare le note sulla versione corrente per Adobe Experience Manager as a Cloud Service, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.7.0 è il 15 luglio 2021.
-La prossima versione è prevista per il 12 agosto 2021.
+
 
 ### Novità {#what-is-new}
 
