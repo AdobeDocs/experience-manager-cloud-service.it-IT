@@ -1,10 +1,10 @@
 ---
 title: Estrazione del contenuto dall’origine
 description: Estrazione del contenuto dall’origine
-source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 41%
+source-wordcount: '518'
+ht-degree: 42%
 
 ---
 
@@ -71,4 +71,4 @@ Effettua le seguenti operazioni:
 
 ## Novità {#whats-next}
 
-Dopo aver appreso l’estrazione del contenuto dall’origine nello strumento Content Transfer (Trasferimento contenuti), è ora possibile apprendere il processo di acquisizione nello strumento Content Transfer (Trasferimento contenuti). Per informazioni su come acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), consulta [Inserimento di contenuti in Target nello strumento Content Transfer (Trasferimento contenuti).](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+Dopo aver appreso l’estrazione del contenuto dall’origine nello strumento Content Transfer (Trasferimento contenuti), è ora possibile apprendere il processo di acquisizione nello strumento Content Transfer (Trasferimento contenuti). Per informazioni su come acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), consulta [Inserimento di contenuti in Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) .

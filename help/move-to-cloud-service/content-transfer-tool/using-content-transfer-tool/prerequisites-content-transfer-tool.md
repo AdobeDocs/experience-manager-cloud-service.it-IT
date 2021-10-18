@@ -2,9 +2,9 @@
 title: Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)
 description: Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -34,4 +34,4 @@ Rivedi tutte le considerazioni elencate di seguito:
 
 ## Novità {#whats-next}
 
-Dopo aver esaminato i prerequisiti e aver determinato se è possibile utilizzare lo strumento Content Transfer (Trasferimento contenuti) nel progetto di migrazione, consulta [Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en) durante l’utilizzo dello strumento Content Transfer (Trasferimento contenuti).
+Dopo aver esaminato i prerequisiti e aver determinato se è possibile utilizzare lo strumento Content Transfer (Trasferimento contenuti) nel progetto di migrazione, consulta [Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).

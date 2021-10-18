@@ -1,7 +1,7 @@
 ---
 title: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 25%
@@ -84,4 +84,4 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 ## Novità {#whats-next}
 
-Dopo aver appreso le linee guida, le best practice e le considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti), puoi installare e utilizzare lo strumento, a partire dalla creazione di un set di migrazione. Per ulteriori informazioni, consulta [Guida introduttiva al trasferimento di contenuti ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) .
+Dopo aver appreso le linee guida, le best practice e le considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti), puoi installare e utilizzare lo strumento, a partire dalla creazione di un set di migrazione. Per ulteriori informazioni, consulta [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) .
