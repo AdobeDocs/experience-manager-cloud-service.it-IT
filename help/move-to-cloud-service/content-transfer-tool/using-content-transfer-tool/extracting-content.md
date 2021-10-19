@@ -1,7 +1,7 @@
 ---
 title: Estrazione del contenuto dall’origine
 description: Estrazione del contenuto dall’origine
-source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
+source-git-commit: f549a7d9e1a5732d75489bc327a8cb67876a4483
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 36%
@@ -19,12 +19,13 @@ ht-degree: 36%
 >abstract="Per estrazione si intende l’estrazione del contenuto dall’istanza AEM di origine in un’area temporanea denominata set di migrazione. Un set di migrazione è un’area di archiviazione cloud fornita da Adobe in cui vengono archiviati temporaneamente i contenuti trasferiti tra l’istanza AEM di origine e l’istanza AEM di Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Estrazione dall&#39;alto verso l&#39;alto"
 
->[!IMPORTANT]
->È necessario eseguire lo strumento User Mapping prima di estrarre il contenuto dall’origine. Vedi [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) per ulteriori dettagli.
 
 Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 >[!NOTE]
 >Se Amazon S3 o Azure Data Store viene utilizzato come tipo di archivio dati, puoi eseguire il passaggio facoltativo di pre-copia per accelerare in modo significativo la fase di estrazione. A questo scopo, devi configurare un `azcopy.config` prima di eseguire l’estrazione. Fai riferimento a [Gestione di archivi di contenuti di grandi dimensioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) per ulteriori dettagli.
+
+>[!IMPORTANT]
+>È necessario eseguire lo strumento User Mapping prima di estrarre il contenuto dall’origine. Vedi [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) per ulteriori dettagli.
 
 1. Seleziona un set di migrazione da **Trasferimento dei contenuti** procedura guidata e fai clic su **Extract** per avviare l’estrazione.
 
