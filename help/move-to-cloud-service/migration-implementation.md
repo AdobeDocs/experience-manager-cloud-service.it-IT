@@ -2,7 +2,7 @@
 title: Fase di implementazione
 description: Fase di implementazione
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
+source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 90%
@@ -41,7 +41,7 @@ Con questo strumento, puoi specificare il sottoinsieme di contenuti che desideri
 >[!NOTE]
 >Si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service.
 
-Per ulteriori informazioni, consulta [Strumento Content Transfer (Trasferimento contenuti](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md).
+Per ulteriori informazioni, consulta [Strumento Content Transfer (Trasferimento contenuti](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 >[!IMPORTANT]
 >l requisiti di sistema minimi per lo strumento Content Transfer (Trasferimento contenuti) sono AEM 6.3 o versione successiva e JAVA 8. Se utilizzi una precedente versione di AEM, dovrai aggiornare l’archivio dei contenuti ad AEM 6.5 per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
