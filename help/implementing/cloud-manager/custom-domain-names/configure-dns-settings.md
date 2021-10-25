@@ -1,39 +1,53 @@
 ---
 title: 'Configurazione delle impostazioni DNS '
 description: Configurazione delle impostazioni DNS
-translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
+source-git-commit: 0b24f8c8b88f476a0d1073e873e46441b1b8b821
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
 
-
 # Configurazione delle impostazioni DNS {#configure-dns}
 
-Dopo aver verificato e distribuito correttamente il nome di dominio personalizzato, è possibile aggiornare i record DNS per il nome di dominio personalizzato con il provider DNS. In questo modo il sito potrà servire ai visitatori. Di conseguenza, questa attività viene in genere eseguita prima di Go-live.
+Dopo aver verificato e distribuito correttamente il nome di dominio personalizzato, puoi aggiornare i record DNS per il nome di dominio personalizzato con il provider DNS. In questo modo il tuo sito potrà essere utilizzato dai visitatori. Pertanto, questa attività viene generalmente eseguita prima del lancio.
 
 >[!NOTE]
->L&#39;utente o l&#39;utente dell&#39;organizzazione deve essere in grado di accedere o contattare il provider DNS (la società da cui hai acquistato il dominio) e di effettuare aggiornamenti nelle impostazioni DNS.
+>L’utente o l’utente dell’organizzazione deve essere in grado di accedere o contattare il provider DNS (l’azienda da cui hai acquistato il dominio) e di eseguire aggiornamenti nelle impostazioni DNS.
 
-A tal fine, devi determinare se devi configurare le impostazioni DNS su un record `CNAME` o Apex che punta il nome di dominio personalizzato al nome di dominio di Cloud Manager. Un record `CNAME` o A, una volta effettuato il provisioning, indirizza tutto il traffico Internet per il dominio a ovunque esso stia puntando. Se la posizione non è predisposta per il traffico, si verificherà un&#39;interruzione. Se non è stato testato, potrebbero verificarsi errori nel contenuto. Questo è il motivo per cui questo passaggio viene sempre fatto dopo che il test è completo e il cliente è pronto per il Go-live.
+A questo scopo, è necessario determinare se è necessario configurare le impostazioni DNS in un `CNAME` o record Apex che punta il nome di dominio personalizzato al nome di dominio Cloud Manager. A `CNAME` o Un record, una volta eseguito il provisioning, indirizza tutto il traffico Internet per il dominio a ovunque esso punti. Se tale posizione non è fornita per il servizio del traffico, si verificherà un’interruzione. Se non è stato testato, potrebbero esserci errori nel contenuto. Questo è il motivo per cui questo passaggio viene sempre fatto dopo il completamento del test e il cliente è pronto per il lancio.
+
+I seguenti passaggi devono essere completati come indicato nella tabella seguente:
+
+| Incremento |  | Responsabilità | Ulteriori informazioni |
+|--- |--- |--- |---|
+| Aggiungi certificato SLL | Aggiungi certificato SLL | Cliente | [Aggiunta di un certificato SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
+| Verifica del dominio | Aggiungi record TXT | Cliente | [Aggiunta di un record TXT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
+| Verifica stato di verifica del dominio |  | Cliente |  |
+|  | Stato: Errore di verifica del dominio | Cliente | [Verifica dello stato del nome di dominio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+|  | Stato: Verificato, Distribuzione non riuscita | Contatta il rappresentante Adobe | [Verifica dello stato del nome di dominio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+| Aggiungi record DNS che puntano a AEM as a Cloud Service aggiungendo record CNAME o APEX | Configurare le impostazioni DNS | Cliente | [Configurazione delle impostazioni DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en) |
+| Verifica lo stato del record DNS |  | Cliente | [Verifica dello stato del record DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | Stato: Stato DNS non rilevato | Cliente | [Verifica dello stato del record DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | Stato: Il DNS viene risolto in modo errato | Cliente |  |
+
 
 ## Record CNAME {#cname-record}
 
-Le sezioni seguenti consentono di determinare quale tipo di record è appropriato per la configurazione DNS.
+Le sezioni seguenti ti aiuteranno a determinare quale tipo di record è appropriato per la configurazione DNS.
 
-Un record di nome canonico o `CNAME` è un tipo di record DNS che mappa un nome alias a un nome di dominio vero o canonico. I record CNAME vengono generalmente utilizzati per mappare un sottodominio, ad esempio `www.example.com`, al dominio che ospita il contenuto del sottodominio.
+Un nome canonico o `CNAME` record è un tipo di record DNS che associa un nome alias a un nome di dominio vero o canonico. I record CNAME vengono in genere utilizzati per mappare un sottodominio come `www.example.com`  al dominio che ospita il contenuto del sottodominio.
 
-Accedi al Registratore di dominio e crea un record CNAME per indirizzare il nome di dominio personalizzato alla destinazione come mostrato di seguito:
+Accedi al Registratore di dominio e crea un record CNAME per puntare il nome di dominio personalizzato alla destinazione come mostrato di seguito:
 
-| CNAME | Nome di dominio personalizzato point to Target |
+| CNAME | Nome di dominio personalizzato Punto di destinazione |
 |--- |--- |
 | www.customdomain.com | cdn.adobeaemcloud.com |
 
 ## Record APEX {#apex-record}
 
-Un dominio apex è un dominio personalizzato che non contiene un sottodominio, ad esempio example.com. Un dominio apex è configurato con un record `A`, `ALIAS` o `ANAME` tramite il provider DNS. I domini Apex devono puntare a indirizzi IP specifici.
+Un dominio apex è un dominio personalizzato che non contiene un sottodominio, ad esempio example.com. Un dominio apex è configurato con un `A` , `ALIAS` oppure `ANAME` registra tramite il provider DNS. I domini Apex devono puntare a indirizzi IP specifici.
 
 Aggiungi tutti i seguenti record A alle impostazioni DNS del dominio tramite il provider di dominio:
 
