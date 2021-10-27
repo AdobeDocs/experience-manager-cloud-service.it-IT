@@ -2,14 +2,33 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 2ff6f6be922c3c6a1d13945a4cd1c4d927829186
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 33%
+source-wordcount: '860'
+ht-degree: 29%
 
 ---
 
 # Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti) {#getting-started-content-transfer-tool}
+
+## Connettività ambiente sorgente
+
+L’istanza di origine AEM può essere in esecuzione dietro un firewall in cui può raggiungere solo alcuni host aggiunti a un Elenco consentiti. Per eseguire correttamente un’estrazione, i seguenti endpoint devono essere accessibili dall’istanza in esecuzione AEM:
+
+* Il target AEM ambiente as a Cloud Service:
+   `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* Servizio di archiviazione BLOB di Azure:
+   `*.blob.core.windows.net`
+* Endpoint I/O di mappatura utente:
+   `usermanagement.adobe.io`
+
+Per testare la connettività all&#39;ambiente di destinazione AEM as a Cloud Service, esegui il seguente comando cURL dalla shell dell&#39;istanza di origine (sostituisci `program_id`, `environment_id`e `migration_token`):
+
+```
+curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+```
+
+Se `HTTP/2 200` è stata ricevuta una connessione a AEM as a Cloud Service.
 
 ## Disponibilità {#availability}
 
@@ -20,7 +39,7 @@ ht-degree: 33%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Note sulla versione"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portale di distribuzione software"
 
-Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Assicurati di scaricare la versione più recente. Per ulteriori informazioni sull&#39;ultima versione, consulta [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Assicurati di scaricare la versione più recente. Per ulteriori dettagli sull’ultima versione, consulta [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
 >[!NOTE]
 >Scarica lo strumento Content Transfer (Trasferimento contenuti) dal portale di [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
@@ -43,7 +62,7 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
-1. Seleziona l’opzione **Trasferimento contenuti** dalla procedura guidata **Migrazione contenuti**.
+1. Seleziona la **Trasferimento dei contenuti** opzione da **Migrazione dei contenuti** procedura guidata.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
@@ -56,7 +75,7 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
    >Se disponi di set di migrazione esistenti, nella console viene visualizzato l’elenco dei set di migrazione esistenti con il relativo stato corrente.
 
 
-1. Compila i campi nella schermata **Crea set di migrazione** come descritto di seguito.
+1. Compila i campi in **Crea set di migrazione** come descritto di seguito.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
@@ -73,16 +92,16 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
    1. **Access Token** (Token di accesso): inserisci il token di accesso.
 
       >[!NOTE]
-      >Puoi recuperare il token di accesso utilizzando il pulsante **Open access token** . Devi accertarti di appartenere al gruppo di amministratori di AEM nell’istanza di Cloud Service di destinazione.
+      >Puoi recuperare il token di accesso utilizzando il **Token di accesso aperto** pulsante . Devi accertarti di appartenere al gruppo di amministratori di AEM nell’istanza di Cloud Service di destinazione.
 
    1. **Parameters** (Parametri): seleziona i seguenti parametri per creare il set di migrazione:
 
-      1. **Include Version** (Includi versione): seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` viene automaticamente incluso per eseguire la migrazione degli eventi di controllo.
+      1. **Include Version** (Includi versione): seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` è incluso automaticamente per la migrazione degli eventi di controllo.
 
          ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
-         >Se intendi includere versioni come parte di un set di migrazione e stai eseguendo integrazioni con `wipe=false`, devi disattivare l’eliminazione della versione a causa di un limite corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione della versione e stai eseguendo i top-up in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
+         >Se intendi includere versioni come parte di un set di migrazione e stai eseguendo integrazioni con `wipe=false`, quindi devi disattivare l’eliminazione della versione a causa di un limite corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione della versione e stai eseguendo i top-up in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
 
       1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore del percorso accetta l’input digitando o selezionando.
@@ -92,26 +111,26 @@ Segui le indicazioni contenute in questa sezione per apprendere come utilizzare 
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc` (alcuni  `/etc` percorsi possono essere selezionati in CTT)
+         >* `/etc` (alcuni) `/etc` i percorsi possono essere selezionati in CTT)
 
 
-1. Fai clic su **Salva** dopo aver compilato tutti i campi nella schermata dei dettagli **Crea set di migrazione** .
+1. Fai clic su **Salva** dopo aver compilato tutti i campi nel **Crea set di migrazione** schermata dei dettagli.
 
-1. Il set di migrazione verrà visualizzato nella procedura guidata **Trasferimento contenuti** , come illustrato nella figura riportata di seguito.
+1. Il set di migrazione verrà visualizzato in **Trasferimento dei contenuti** , come illustrato nella figura riportata di seguito.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
-   Tutti i set di migrazione esistenti vengono visualizzati nella procedura guidata **Trasferimento contenuti** con il relativo stato corrente e le informazioni sullo stato. Puoi vedere alcune di queste icone descritte di seguito.
+   Tutti i set di migrazione esistenti vengono visualizzati nella sezione **Trasferimento dei contenuti** procedura guidata con lo stato corrente e le informazioni sullo stato. Puoi vedere alcune di queste icone descritte di seguito.
 
    * Una *nuvola rossa* indica che non puoi completare il processo di estrazione.
-   * Una *nuvola verde* indica che puoi completare il processo di estrazione.
+   * A *nuvola verde* indica che puoi completare il processo di estrazione.
    * Un’*icona gialla* indica che non hai creato il set di migrazione esistente e che quello specifico è stato creato da un altro utente nella stessa istanza.
 
-1. Seleziona un set di migrazione e fai clic su **Proprietà** per visualizzare o modificare le proprietà del set di migrazione. Durante la modifica delle proprietà, non è possibile modificare il **nome del set di migrazione** o l’ **URL del servizio**.
+1. Seleziona un set di migrazione e fai clic su **Proprietà** per visualizzare o modificare le proprietà del set di migrazione. Durante la modifica delle proprietà, non è possibile modificare il **Nome set di migrazione** o **URL servizio**.
 
    ![immagine](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## Novità {#whats-next}
 
-Dopo aver imparato a creare un set di migrazione, ora puoi imparare a usare i processi di estrazione e acquisizione nello strumento Content Transfer (Trasferimento contenuti). Prima di apprendere questi processi, devi rivedere [Gestione di archivi di contenuti di grandi dimensioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM as a Cloud Service.
+Dopo aver imparato a creare un set di migrazione, ora puoi imparare a usare i processi di estrazione e acquisizione nello strumento Content Transfer (Trasferimento contenuti). Prima di apprendere questi processi, è necessario rivedere [Gestione di archivi di contenuti di grandi dimensioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM as a Cloud Service.
