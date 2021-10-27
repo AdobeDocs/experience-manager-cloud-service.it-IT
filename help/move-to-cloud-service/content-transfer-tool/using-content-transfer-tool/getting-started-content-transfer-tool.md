@@ -2,7 +2,7 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
+source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -11,7 +11,7 @@ ht-degree: 29%
 
 # Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti) {#getting-started-content-transfer-tool}
 
-## Connettività ambiente sorgente
+## Connettività ambiente sorgente {#source-environment-connectivity}
 
 L’istanza di origine AEM può essere in esecuzione dietro un firewall in cui può raggiungere solo alcuni host aggiunti a un Elenco consentiti. Per eseguire correttamente un’estrazione, i seguenti endpoint devono essere accessibili dall’istanza in esecuzione AEM:
 
@@ -30,6 +30,7 @@ Per testare la connettività all&#39;ambiente di destinazione AEM as a Cloud Ser
 
 >[!NOTE]
 >Se `HTTP/2 200` è stata ricevuta una connessione a AEM as a Cloud Service.
+
 
 ## Disponibilità {#availability}
 
