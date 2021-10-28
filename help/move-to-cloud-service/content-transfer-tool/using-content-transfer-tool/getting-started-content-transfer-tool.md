@@ -2,10 +2,10 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 4d71cd5f2376d7cf5ea201410890259ae19f2846
+source-git-commit: a8635ce39e2a8f8769975be22cdc431dd7f9423a
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 27%
+source-wordcount: '860'
+ht-degree: 29%
 
 ---
 
@@ -21,12 +21,22 @@ L’istanza di origine AEM può essere in esecuzione dietro un firewall in cui p
 
 Per testare la connettività all&#39;ambiente di destinazione AEM as a Cloud Service, esegui il seguente comando cURL dalla shell dell&#39;istanza di origine (sostituisci `program_id`, `environment_id`e `migration_token`):
 
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
+```
+curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+```
+
 
 >[!NOTE]
 >Se `HTTP/2 200` è stata ricevuta una connessione a AEM as a Cloud Service.
 
 ## Disponibilità {#availability}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_download"
+>title="Scarica"
+>abstract="Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Assicurati di scaricare la versione più recente."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Note sulla versione"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portale di distribuzione software"
 
 Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Assicurati di scaricare la versione più recente. Per ulteriori dettagli sull’ultima versione, consulta [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
