@@ -2,9 +2,9 @@
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di preparazione di Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
+source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1057'
 ht-degree: 5%
 
 ---
@@ -104,7 +104,7 @@ Per visualizzare i rapporti dall’opzione della linea di tendenza, effettua le 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >Il rapporto visualizzato nel **Schermata del report Trendline** è sempre quello con la data del rapporto recente.
+   >Il rapporto visualizzato è sempre il rapporto con la data più recente del rapporto.
 
 1. Fai clic su **Visualizza linea di tendenza**, come illustrato nella figura seguente.
 
@@ -124,33 +124,6 @@ Per visualizzare i rapporti dall’opzione della linea di tendenza, effettua le 
    >
    >Puoi aggiungere o modificare la visualizzazione grafica tramite il menu a discesa, come illustrato nella figura seguente:
    >![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
-
-#### Eliminazione del rapporto {#delete-trendline}
-
-Per eliminare un rapporto dalla vista Linea di tendenza, effettua le seguenti operazioni:
-
->[!IMPORTANT]
->È possibile eliminare un rapporto solo quando sono stati caricati più rapporti in un progetto.
-
-1. Passa al progetto e fai clic su **Revisione** dal **Analisi delle best practice** nella scheda **Preparazione** fase.
-
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
-
-1. Fai clic sul pulsante **...** per visualizzare il menu a discesa.
-
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
-
-1. Fai clic su **Visualizza linea di tendenza**, come illustrato nella figura seguente.
-
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. Fai clic sull’icona Elimina dal **Rapporto Trendline** schermo.
-
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
-
-1. Fai clic su **Elimina** per confermare l’eliminazione.
-
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 
 ### Analisi del rapporto sulle best practice {#analysis-report}
@@ -222,6 +195,33 @@ Segui questa sezione per esplorare la scheda delle attività Pianificazione e Co
 1. Un carosello di contenuti visualizza tutte le informazioni rilevanti per questa fase del percorso di migrazione.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### Eliminazione di un rapporto di analisi delle best practice {#delete-trendline}
+
+Per eliminare un rapporto dalla vista Linea di tendenza, effettua le seguenti operazioni:
+
+>[!IMPORTANT]
+>È possibile eliminare un rapporto solo quando sono stati caricati più rapporti in un progetto.
+
+1. Passa al progetto e fai clic su **Revisione** dal **Analisi delle best practice** nella scheda **Preparazione** fase.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Fai clic sul pulsante **...** per visualizzare il menu a discesa.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Fai clic su **Visualizza linea di tendenza**, come illustrato nella figura seguente.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Fai clic sull’icona Elimina dal **Rapporto Trendline** schermo.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Fai clic su **Elimina** per confermare l’eliminazione.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 ## Novità {#whats-next}
 
