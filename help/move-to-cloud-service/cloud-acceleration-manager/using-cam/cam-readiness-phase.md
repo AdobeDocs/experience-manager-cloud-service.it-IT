@@ -2,9 +2,9 @@
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di preparazione di Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
+source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1042'
 ht-degree: 5%
 
 ---
@@ -90,7 +90,7 @@ Effettua le seguenti operazioni:
 
 Quando carichi più rapporti di Best Practices Analyzer (BPA) in un progetto, puoi selezionare la **Visualizza linea di tendenza** per visualizzare e confrontare i risultati dei vecchi rapporti BPA.
 
-Per visualizzare la linea di tendenza, effettua le seguenti operazioni:
+Per visualizzare i rapporti dall’opzione della linea di tendenza, effettua le seguenti operazioni:
 
 >[!NOTE]
 >Quando carichi più di un rapporto BPA in un progetto, verrà visualizzata l’icona **...**.
@@ -104,7 +104,7 @@ Per visualizzare la linea di tendenza, effettua le seguenti operazioni:
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >Il rapporto visualizzato è sempre il rapporto con la data più recente del rapporto.
+   >Il rapporto visualizzato nel **Schermata del report Trendline** è sempre quello con la data del rapporto recente.
 
 1. Fai clic su **Visualizza linea di tendenza**, come illustrato nella figura seguente.
 
@@ -116,12 +116,14 @@ Per visualizzare la linea di tendenza, effettua le seguenti operazioni:
 
    >[!NOTE]
    >Il rapporto Linee di tendenza visualizza i risultati dei rapporti BPA storici in una rappresentazione grafica.
+   >
    >Vedrete due grafici che mostrano la tendenza di:
-   >1. Tendenza dei risultati dei report
-   >1. Tendenza dei componenti e modelli personalizzati
-      >Puoi aggiungere o modificare la visualizzazione grafica tramite il menu a discesa, come illustrato di seguito.
-      >![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >1. **Tendenza dei risultati dei report**
+   >1. **Componenti personalizzati e tendenze dei modelli**
 
+   >
+   >Puoi aggiungere o modificare la visualizzazione grafica tramite il menu a discesa, come illustrato nella figura seguente:
+   >![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
 #### Eliminazione del rapporto sulle linee di tendenza {#delete-trendline}
 
