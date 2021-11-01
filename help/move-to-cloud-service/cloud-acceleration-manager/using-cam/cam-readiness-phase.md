@@ -2,9 +2,9 @@
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di preparazione di Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
+source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '1032'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ Segui i passaggi seguenti per passare alla fase di preparazione:
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
 
-1. Passa alla sezione **Preparazione** , come illustrato nella figura riportata di seguito.
+1. Passa a **Preparazione** come illustrato nella figura riportata di seguito.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
@@ -35,7 +35,7 @@ Segui i passaggi seguenti per passare alla fase di preparazione:
 
 Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle best practice :
 
-1. Fai clic sul pulsante **Rivedi** dalla scheda **Analisi delle best practice** .
+1. Fai clic sul pulsante **Revisione** dal pulsante **Analisi delle best practice** il Card.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
@@ -44,14 +44,14 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
    >[!NOTE]
    >Per evitare un impatto sulle istanze aziendali critiche, si consiglia di eseguire BPA in un ambiente di authoring il più simile possibile all’ambiente di produzione nelle aree di personalizzazioni, configurazioni, contenuti e applicazioni utente. In alternativa, può essere eseguito su un clone dell’ambiente di authoring di produzione.
 
-   1. Passa al portale [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) e scarica Best Practices Analyzer come file zip.
+   1. Passa a [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) e scarica Best Practices Analyzer come file zip.
 
       >[!NOTE]
-      >Per informazioni su come eseguire BPA, consulta [Utilizzo di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) .
+      >Revisione [Utilizzo di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) per scoprire come eseguire BPA.
 
    1. Esportare il rapporto in formato CSV
 
-1. Fai clic su **Carica nuovo report** per caricare il report BPA in CAM.
+1. Fai clic su **Carica nuovo rapporto** per caricare il rapporto BPA in CAM.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
@@ -62,7 +62,7 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. Rivedi ed esplora il dashboard Analisi delle best practice in CAM. Per ulteriori informazioni, fai riferimento alla sezione seguente [Rapporto sull&#39;analisi delle best practice](#analysis-report) .
+1. Rivedi ed esplora il dashboard Analisi delle best practice in CAM. Consulta la sezione seguente [Analisi del rapporto sulle best practice](#analysis-report) per ulteriori dettagli.
 
    >[!NOTE]
    >Il caricamento di un nuovo rapporto ripristina tutte le valutazioni.
@@ -73,18 +73,80 @@ Segui i passaggi riportati di seguito per utilizzare la scheda Analisi delle bes
 
 Effettua le seguenti operazioni:
 
-1. Fai clic sull&#39;icona **Anteprima di stampa**, come mostrato di seguito.
+1. Fai clic su **Anteprima di stampa** , come illustrato di seguito.
 
    ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Facendo clic su **Anteprima di stampa** si apre una nuova scheda con il rapporto visualizzato in un&#39;anteprima stampabile. Fare clic su **Stampa** per stampare il rapporto in un formato PDF.
+1. Clic su **Anteprima di stampa** apre una nuova scheda con il rapporto visualizzato in un’anteprima stampabile. Fai clic su **Stampa** per stampare il rapporto in un formato PDF.
 
    >[!IMPORTANT]
-   >* L&#39;opzione **Salva come PDF** è consigliata e supportata per la funzionalità di cui sopra.
+   >* Opzione **Salva come PDF** è consigliato e supportato per la funzionalità di cui sopra.
    >* Se si utilizza il pulsante di stampa del browser, verrà stampata una sola pagina.
 
 
    ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
+
+### Utilizzo della linea di tendenza della vista {#trendline-view-cam}
+
+Quando carichi più rapporti di Best Practices Analyzer (BPA) in un progetto, puoi selezionare la **Visualizza linea di tendenza** per visualizzare e confrontare i risultati dei vecchi rapporti BPA.
+
+Per visualizzare la linea di tendenza, effettua le seguenti operazioni:
+
+>[!NOTE]
+>Quando carichi più di un rapporto BPA in un progetto, verrà visualizzata l’icona **...**.
+
+1. Passa al progetto e fai clic su **Revisione** dal **Analisi delle best practice** nella scheda **Preparazione** fase.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Fai clic sul pulsante **...** per visualizzare il menu a discesa.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+   >[!IMPORTANT]
+   >Il rapporto visualizzato è sempre il rapporto con la data più recente del rapporto.
+
+1. Fai clic su **Visualizza linea di tendenza**, come illustrato nella figura seguente.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Clic su **Visualizza linea di tendenza** apre la vista della linea di tendenza del rapporto, come illustrato nella figura riportata di seguito.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+
+   >[!NOTE]
+   >Il rapporto Linee di tendenza visualizza i risultati dei rapporti BPA storici in una rappresentazione grafica.
+   >Vedrete due grafici che mostrano la tendenza di:
+   >1. Tendenza dei risultati dei report
+   >1. Tendenza dei componenti e modelli personalizzati
+      >Puoi aggiungere o modificare la visualizzazione grafica tramite il menu a discesa, come illustrato di seguito.
+      >![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+
+
+#### Eliminazione del rapporto sulle linee di tendenza {#delete-trendline}
+
+Per eliminare un rapporto dalla vista Linea di tendenza, effettua le seguenti operazioni:
+
+1. Passa al progetto e fai clic su **Revisione** dal **Analisi delle best practice** nella scheda **Preparazione** fase.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Fai clic sul pulsante **...** per visualizzare il menu a discesa.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Fai clic su **Visualizza linea di tendenza**, come illustrato nella figura seguente.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Fai clic sull’icona Elimina dal **Rapporto Trendline** schermo.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Fai clic su **Elimina** per confermare l’eliminazione.
+
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+
 
 ### Analisi del rapporto sulle best practice {#analysis-report}
 
@@ -101,17 +163,17 @@ Esplora le seguenti schede disponibili nella pagina Rapporto di analisi delle be
 
 #### Proprietà rapporto {#report-properties}
 
-La scheda **Proprietà report** fornisce informazioni sulle proprietà del report quali data del report, durata, filtri, data di caricamento e dettagli di Adobe Experience Manager (AEM).
+La **Proprietà rapporto** La scheda fornisce informazioni sulle proprietà del rapporto, ad esempio data del rapporto, durata, filtri, data di caricamento e dettagli di Adobe Experience Manager (AEM).
 
 ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Panoramica dei rapporti {#report-overview}
 
-Questa scheda **Panoramica rapporto** fornisce i risultati del rapporto e i livelli di gravità da applicare durante la valutazione della preparazione al passaggio a AEM as a Cloud Service, come illustrato nella figura riportata di seguito.
+Questo **Panoramica dei rapporti** la scheda fornisce i risultati del rapporto e i livelli di gravità che si applicano quando si valuta la disponibilità a passare a AEM as a Cloud Service, come illustrato nella figura riportata di seguito.
 
 ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-Facendo clic su questo rapporto si apre la scheda **Report** .
+Fai clic su questo rapporto per aprire la **Rapporto** scheda .
 
 ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -120,7 +182,7 @@ Puoi filtrare il rapporto in base a importanza, sottotipo o conteggio.
 ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Per informazioni sulle categorie dei risultati e i livelli di importanza, fai riferimento a [Interpretazione del rapporto di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) .
+>Fai riferimento a [Interpretazione del rapporto di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) per informazioni sulle categorie dei risultati e sui livelli di importanza.
 
 #### Valutazione delle best practice {#best-practices-assessment}
 
@@ -148,7 +210,7 @@ Da questa scheda puoi esaminare le seguenti informazioni:
 
 Segui questa sezione per esplorare la scheda delle attività Pianificazione e Configurazione .
 
-1. Fai clic sul pulsante **Visualizza** dalla scheda **Pianificazione e configurazione**. Questa scheda fornisce tutti i contenuti pertinenti che consentono di pianificare e impostare la migrazione AEM.
+1. Fai clic sul pulsante **Visualizza** dal pulsante **Pianificazione E Configurazione** il Card. Questa scheda fornisce tutti i contenuti pertinenti che consentono di pianificare e impostare la migrazione AEM.
 
    ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
@@ -158,4 +220,4 @@ Segui questa sezione per esplorare la scheda delle attività Pianificazione e Co
 
 ## Novità {#whats-next}
 
-Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, ora puoi passare alla revisione del passaggio successivo nella [fase di implementazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, ora puoi passare alla revisione del passaggio successivo nel [Fase di implementazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
