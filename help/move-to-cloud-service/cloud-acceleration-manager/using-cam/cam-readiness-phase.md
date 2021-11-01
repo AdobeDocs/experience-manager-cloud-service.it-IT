@@ -2,7 +2,7 @@
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di preparazione di Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
+source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 5%
@@ -93,7 +93,7 @@ Quando carichi più rapporti di Best Practices Analyzer (BPA) in un progetto, pu
 Per visualizzare i rapporti dall’opzione della linea di tendenza, effettua le seguenti operazioni:
 
 >[!NOTE]
->Quando carichi più di un rapporto BPA in un progetto, verrà visualizzata l’icona **...**.
+>Quando carichi più di un rapporto BPA in un progetto, visualizzerai l’ **...** icona.
 
 1. Passa al progetto e fai clic su **Revisione** dal **Analisi delle best practice** nella scheda **Preparazione** fase.
 
