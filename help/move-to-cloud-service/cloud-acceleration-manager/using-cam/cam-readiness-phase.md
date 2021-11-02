@@ -2,7 +2,7 @@
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di preparazione di Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
+source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -88,7 +88,7 @@ Effettua le seguenti operazioni:
 
 ### Utilizzo della linea di tendenza della vista {#trendline-view-cam}
 
-Quando carichi più rapporti di Best Practices Analyzer (BPA) in un progetto, puoi selezionare la **Visualizza linea di tendenza** per visualizzare e confrontare i risultati dei vecchi rapporti BPA.
+Quando carichi più rapporti di Best Practices Analyzer (BPA) in un progetto, puoi selezionare la **Visualizza linea di tendenza** per visualizzare e confrontare i risultati dei rapporti BPA storici.
 
 Per visualizzare i rapporti dall’opzione della linea di tendenza, effettua le seguenti operazioni:
 

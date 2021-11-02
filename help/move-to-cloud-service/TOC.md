@@ -5,10 +5,10 @@ breadcrumb-title: Guida al passaggio
 user-guide-description: Comprendi il percorso di transizione verso Cloud Service.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
+source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 38%
+source-wordcount: '190'
+ht-degree: 39%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 38%
 # Guida al passaggio ad AEM as a Cloud Service {#moving}
 
 + [Passaggio ad AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
++ Note sulla versione per gli strumenti di migrazione {#release-notes-migration-tools}
+   + [Note sulla versione corrente (2021.11.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+   + 2021 {#2021}
+      + [Note sulla versione 2021.10.0](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
 + Fasi del percorso di transizione {#phases}
    + [Preparazione](/help/move-to-cloud-service/migration-readiness.md)
    + [Implementazione](/help/move-to-cloud-service/migration-implementation.md)
