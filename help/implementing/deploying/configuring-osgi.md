@@ -3,28 +3,28 @@ title: Configurazione di OSGi per Adobe Experience Manager as a Cloud Service
 description: 'Configurazione OSGi con valori segreti e valori specifici per l’ambiente '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
+source-git-commit: f1ad12d308319ecfff6c0138ca77862976594e42
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '2938'
 ht-degree: 0%
 
 ---
 
 # Configurazione di OSGi per Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[](https://www.osgi.org/) OSGiè un elemento fondamentale nello stack tecnologico di Adobe Experience Manager (AEM). Viene utilizzato per controllare i bundle compositi di AEM e le sue configurazioni.
+[OSGi](https://www.osgi.org/) è un elemento fondamentale nello stack tecnologico di Adobe Experience Manager (AEM). Viene utilizzato per controllare i bundle compositi di AEM e le sue configurazioni.
 
-OSGi fornisce le primitive standardizzate che consentono di costruire applicazioni da componenti piccoli, riutilizzabili e collaborativi. Questi componenti possono essere composti in un’applicazione e distribuiti. Questo consente una facile gestione dei bundle OSGi in quanto possono essere arrestati, installati, avviati individualmente. Le interdipendenze vengono gestite automaticamente. Ogni componente OSGi è contenuto in uno dei vari bundle. Per ulteriori informazioni, consulta la [specifica OSGi](https://www.osgi.org/Specifications/HomePage).
+OSGi fornisce le primitive standardizzate che consentono di costruire applicazioni da componenti piccoli, riutilizzabili e collaborativi. Questi componenti possono essere composti in un’applicazione e distribuiti. Questo consente una facile gestione dei bundle OSGi in quanto possono essere arrestati, installati, avviati individualmente. Le interdipendenze vengono gestite automaticamente. Ogni componente OSGi è contenuto in uno dei vari bundle. Per ulteriori informazioni, consulta la sezione [Specifiche OSGi](https://www.osgi.org/Specifications/HomePage).
 
 Puoi gestire le impostazioni di configurazione per i componenti OSGi tramite file di configurazione che fanno parte di un progetto di codice AEM.
 
 ## File di configurazione OSGi {#osgi-configuration-files}
 
-Le modifiche alla configurazione sono definite nei pacchetti di codice del progetto AEM (`ui.apps`) come file di configurazione (`.cfg.json`) in cartelle di configurazione specifiche della modalità di esecuzione:
+Le modifiche di configurazione sono definite nei pacchetti di codice del progetto AEM (`ui.apps`) come file di configurazione (`.cfg.json`) in cartelle di configurazione specifiche della modalità di esecuzione:
 
 `/apps/example/config.<runmode>`
 
-Il formato dei file di configurazione OSGi è basato su JSON utilizzando il formato `.cfg.json` definito dal progetto Apache Sling.
+Il formato dei file di configurazione OSGi è basato su JSON utilizzando `.cfg.json` definito dal progetto Apache Sling.
 
 Le configurazioni OSGi sono destinate ai componenti OSGi tramite la loro identità persistente (PID), che per impostazione predefinita corrisponde al nome della classe Java™ del componente OSGi. Ad esempio, per fornire la configurazione OSGi per un servizio OSGi implementato da:
 
@@ -42,21 +42,21 @@ seguendo il formato di configurazione cfg.json OSGi .
 
 ## Risoluzione in modalità di esecuzione {#runmode-resolution}
 
-Configurazioni OSGi specifiche possono essere indirizzate a istanze AEM specifiche utilizzando le modalità di esecuzione. Per utilizzare la modalità runmode, crea le cartelle di configurazione in `/apps/example` (dove esempio è il nome del progetto), nel formato:
+Configurazioni OSGi specifiche possono essere indirizzate a istanze AEM specifiche utilizzando le modalità di esecuzione. Per utilizzare la modalità runmode, creare le cartelle di configurazione in `/apps/example` (dove esempio è il nome del progetto), nel formato:
 
 `/apps/example/config.<author|publish>.<dev|stage|prod>/`
 
 Tutte le configurazioni OSGi in tali cartelle vengono utilizzate se le modalità di esecuzione definite nel nome della cartella di configurazione corrispondono alle modalità di esecuzione utilizzate da AEM.
 
-Ad esempio, se AEM utilizza le modalità di esecuzione author e dev, vengono applicati i nodi di configurazione in `/apps/example/config.author/` e `/apps/example/config.author.dev/`, mentre i nodi di configurazione in `/apps/example/config.publish/` e `/apps/example/config.author.stage/` non vengono applicati.
+Ad esempio, se AEM utilizza le modalità di esecuzione author e dev, i nodi di configurazione in `/apps/example/config.author/` e `/apps/example/config.author.dev/` vengono applicati, mentre i nodi di configurazione in `/apps/example/config.publish/` e `/apps/example/config.author.stage/` non sono applicati.
 
 Se sono applicabili più configurazioni per lo stesso PID, viene applicata la configurazione con il numero più alto di modalità di esecuzione corrispondenti.
 
-La granularità di questa regola è a livello di PID. Ciò significa che non è possibile definire alcune proprietà per lo stesso PID in `/apps/example/config.author/` e altre specifiche in `/apps/example/config.author.dev/` per lo stesso PID. La configurazione con il maggior numero di modalità di esecuzione corrispondenti sarà efficace per l&#39;intero PID.
+La granularità di questa regola è a livello di PID. Ciò significa che non è possibile definire alcune proprietà per lo stesso PID in `/apps/example/config.author/` e più specifiche in `/apps/example/config.author.dev/` per lo stesso PID. La configurazione con il maggior numero di modalità di esecuzione corrispondenti sarà efficace per l&#39;intero PID.
 
 >[!NOTE]
 >
->Una cartella di configurazione `config.preview` OSGI **non può** essere dichiarata nello stesso modo in cui una cartella `config.publish` può essere dichiarata. Al contrario, il livello di anteprima eredita la propria configurazione OSGI dai valori del livello di pubblicazione.
+>A `config.preview` Cartella di configurazione OSGI **impossibile** devono essere dichiarati allo stesso modo `config.publish` può essere dichiarata cartella. Al contrario, il livello di anteprima eredita la propria configurazione OSGI dai valori del livello di pubblicazione.
 
 Quando si sviluppa localmente, è possibile trasmettere un parametro di avvio in modalità runmode per determinare quale configurazione OSGI in modalità runmode viene utilizzata.
 
@@ -64,7 +64,7 @@ Quando si sviluppa localmente, è possibile trasmettere un parametro di avvio in
 
 Ci sono tre varietà di valori di configurazione OSGi che possono essere utilizzati con Adobe Experience Manager as a Cloud Service.
 
-1. **Valori** in linea, che sono valori hardcoded nella configurazione OSGi e memorizzati in Git. Esempio:
+1. **Valori in linea**, che sono valori hardcoded nella configurazione OSGi e memorizzati in Git. Esempio:
 
    ```json
    {
@@ -72,7 +72,7 @@ Ci sono tre varietà di valori di configurazione OSGi che possono essere utilizz
    }
    ```
 
-1. **Valori** segreti, ovvero valori che non devono essere memorizzati in Git per motivi di sicurezza. Esempio:
+1. **Valori segreti**, valori che non devono essere memorizzati in Git per motivi di sicurezza. Esempio:
 
    ```json
    {
@@ -80,7 +80,7 @@ Ci sono tre varietà di valori di configurazione OSGi che possono essere utilizz
    } 
    ```
 
-1. **Valori** specifici per l’ambiente, ovvero valori che variano da un ambiente di sviluppo all’altro e che pertanto non possono essere oggetto di targeting preciso da parte della modalità di esecuzione (in quanto in Adobe Experience Manager as a Cloud Service è presente una sola modalità di  `dev` esecuzione). Esempio:
+1. **Valori specifici per l’ambiente**, valori che variano da un ambiente di sviluppo all&#39;altro e che pertanto non possono essere oggetto di targeting accurato in modalità di esecuzione (poiché è presente un solo `dev` in modalità runmode in Adobe Experience Manager as a Cloud Service). Esempio:
 
    ```json
    {
@@ -120,14 +120,14 @@ Quando definisci un valore di configurazione OSGi, inizia con i valori in linea 
 
 ### Quando utilizzare valori di configurazione specifici dell’ambiente non segreti {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Utilizza solo configurazioni specifiche per l’ambiente (`$[env:ENV_VAR_NAME]`) per valori di configurazione non segreti quando i valori variano per il livello di anteprima o variano in ambienti di sviluppo. Questo include le istanze di sviluppo locali e tutti gli ambienti di sviluppo Adobe Experience Manager as a Cloud Service. A parte l’impostazione di valori univoci per il livello di anteprima, evita di utilizzare configurazioni non segrete specifiche per l’ambiente per gli ambienti Adobe Experience Manager as a Cloud Service Stage o Production.
+Utilizza solo configurazioni specifiche per l’ambiente (`$[env:ENV_VAR_NAME]`) per i valori di configurazione non segreti quando i valori variano per il livello di anteprima o variano tra gli ambienti di sviluppo. Questo include le istanze di sviluppo locali e tutti gli ambienti di sviluppo Adobe Experience Manager as a Cloud Service. A parte l’impostazione di valori univoci per il livello di anteprima, evita di utilizzare configurazioni non segrete specifiche per l’ambiente per gli ambienti Adobe Experience Manager as a Cloud Service Stage o Production.
 
 * Utilizza solo configurazioni non segrete specifiche per l’ambiente per i valori di configurazione che differiscono tra il livello di pubblicazione e di anteprima o per i valori che differiscono tra gli ambienti di sviluppo, incluse le istanze di sviluppo locali.
 * Oltre allo scenario in cui il livello di anteprima deve variare dal livello di pubblicazione, utilizza i valori inline standard nelle configurazioni OSGi per i valori non segreti Stage e Produzione. In relazione, si sconsiglia di utilizzare configurazioni specifiche per l&#39;ambiente per facilitare l&#39;esecuzione di modifiche di configurazione in fase di runtime agli ambienti di stage e produzione; queste modifiche devono essere introdotte tramite la gestione del codice sorgente.
 
 ### Quando utilizzare valori di configurazione specifici dell’ambiente segreto {#when-to-use-secret-environment-specific-configuration-values}
 
-Adobe Experience Manager as a Cloud Service richiede l&#39;utilizzo di configurazioni specifiche per l&#39;ambiente (`$[secret:SECRET_VAR_NAME]`) per qualsiasi valore di configurazione OSGi segreto, come password, chiavi API private o qualsiasi altro valore che non può essere memorizzato in Git per motivi di sicurezza.
+Adobe Experience Manager as a Cloud Service richiede l’utilizzo di configurazioni specifiche per l’ambiente (`$[secret:SECRET_VAR_NAME]`) per qualsiasi valore di configurazione OSGi segreto, ad esempio password, chiavi API private o qualsiasi altro valore che non può essere memorizzato in Git per motivi di sicurezza.
 
 Utilizza configurazioni specifiche per l’ambiente segreto per memorizzare il valore per i segreti su tutti gli ambienti Adobe Experience Manager as a Cloud Service, inclusi Stage e Produzione.
 
@@ -139,12 +139,12 @@ Esistono due modi per creare configurazioni OSGi, come descritto di seguito. L�
 
 I file di configurazione OSGi formattati JSON possono essere scritti manualmente direttamente nel progetto AEM. Questo è spesso il modo più rapido per creare configurazioni OSGi per componenti OSGi ben noti, e in particolare per componenti OSGi personalizzati che sono stati progettati e sviluppati dallo stesso sviluppatore che definisce le configurazioni. Questo approccio può anche essere utilizzato per copiare/incollare e aggiornare le configurazioni per lo stesso componente OSGi in varie cartelle in modalità runmode.
 
-1. Nell’IDE, apri il progetto `ui.apps`, individua o crea la cartella di configurazione (`/apps/.../config.<runmode>`) che esegue le modalità di esecuzione necessarie per eseguire la nuova configurazione OSGi
-1. In questa cartella di configurazione, crea un nuovo file `<PID>.cfg.json`. Il PID è l’identità persistente del componente OSGi. In genere è il nome della classe completa dell’implementazione del componente OSGi. Esempio:
+1. Nell’IDE, apri la `ui.apps` , individua o crea la cartella di configurazione (`/apps/.../config.<runmode>`) che esegue il targeting delle modalità di esecuzione della nuova configurazione OSGi
+1. In questa cartella di configurazione, crea un nuovo `<PID>.cfg.json` file. Il PID è l’identità persistente del componente OSGi. In genere è il nome della classe completa dell’implementazione del componente OSGi. Esempio:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-I nomi dei file di fabbrica della configurazione OSGi utilizzano la convenzione di  `<factoryPID>-<name>.cfg.json` denominazione
-1. Apri il nuovo file `.cfg.json` e definisci le combinazioni chiave/valore per le coppie di proprietà e valori OSGi, seguendo il [formato di configurazione OSGi JSON](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
-1. Salva le modifiche apportate al nuovo file `.cfg.json`
+I nomi dei file di fabbrica della configurazione OSGi utilizzano il `<factoryPID>-<name>.cfg.json` convenzione di denominazione
+1. Apri il nuovo `.cfg.json` e definire le combinazioni chiave/valore per le coppie di proprietà e valori OSGi, seguendo la [Formato di configurazione JSON OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
+1. Salva le modifiche apportate al nuovo `.cfg.json` file
 1. Aggiungi e esegui il commit del nuovo file di configurazione OSGi su Git
 
 ### Generazione di configurazioni OSGi tramite l’SDK Quickstart AEM {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
@@ -153,7 +153,7 @@ La console Web AEM di Jar dell’SDK AEM Quickstart può essere utilizzata per c
 
 >[!NOTE]
 >
->L&#39;interfaccia utente di configurazione della console Web AEM scrive `.cfg.json` file nell&#39;archivio. Tieni presente questo aspetto per evitare potenziali comportamenti inaspettati durante lo sviluppo locale, quando le configurazioni OSGi AEM definite dal progetto possono differire dalle configurazioni generate.
+>L’interfaccia utente di configurazione della console Web AEM scrive `.cfg.json` file nel repository. Tieni presente questo aspetto per evitare potenziali comportamenti inaspettati durante lo sviluppo locale, quando le configurazioni OSGi AEM definite dal progetto possono differire dalle configurazioni generate.
 
 1. Accedi alla console Web AEM di Jar dell&#39;SDK AEM Quickstart come utente amministratore
 1. Passa a OSGi > Configurazione
@@ -167,10 +167,10 @@ La console Web AEM di Jar dell’SDK AEM Quickstart può essere utilizzata per c
 1. Tocca Stampa
 1. La configurazione OSGi in formato JSON verrà visualizzata nella sezione Proprietà di configurazione serializzate .
    ![Stampante di configurazione del programma di installazione OSGi](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
-1. Nell’IDE, apri il progetto `ui.apps`, individua o crea la cartella di configurazione (`/apps/.../config.<runmode>`) che esegue le modalità di esecuzione necessarie per la nuova configurazione OSGi.
-1. In questa cartella di configurazione, crea un nuovo file `<PID>.cfg.json`. Il PID è lo stesso valore del passaggio 5.
-1. Incolla le proprietà di configurazione serializzata dal passaggio 10 nel file `.cfg.json` .
-1. Salva le modifiche apportate al nuovo file `.cfg.json`.
+1. Nell’IDE, apri la `ui.apps` , individua o crea la cartella di configurazione (`/apps/.../config.<runmode>`), che esegue il targeting delle modalità di esecuzione necessarie per la nuova configurazione OSGi.
+1. In questa cartella di configurazione, crea un nuovo `<PID>.cfg.json` file. Il PID è lo stesso valore del passaggio 5.
+1. Incolla le proprietà di configurazione serializzata dal passaggio 10 nel `.cfg.json` file.
+1. Salva le modifiche apportate al nuovo `.cfg.json` file.
 1. Aggiungi e conferma il tuo nuovo file di configurazione OSGi a Git.
 
 
@@ -200,7 +200,7 @@ I clienti devono utilizzare questa tecnica solo per le proprietà di configurazi
 
 >[!NOTE]
 >
->I segnaposto non possono essere utilizzati in [istruzioni di reindirizzamento](/help/implementing/deploying/overview.md#repoinit).
+>I segnaposto non possono essere utilizzati in [dichiarazioni repoinit](/help/implementing/deploying/overview.md#repoinit).
 
 ### Valori di configurazione segreti {#secret-configuration-values}
 
@@ -222,9 +222,11 @@ I nomi delle variabili devono seguire le regole seguenti:
 
 I valori per le variabili non devono superare i 2048 caratteri.
 
->[!NOTE]
+>[!CAUTION]
 >
->I nomi delle variabili con prefisso `INTERNAL_` sono riservati per Adobe. Tutte le variabili del set di clienti che iniziano con questo prefisso verranno ignorate. I clienti non devono fare riferimento a queste variabili.
+>Nomi di variabile con prefisso `INTERNAL_`, `ADOBE_`oppure `CONST_` sono riservati dall&#39;Adobe. Tutte le variabili impostate dal cliente che iniziano con questi prefissi verranno ignorate.
+>
+>I clienti non devono fare riferimento a variabili con prefisso `INTERNAL_` o `ADOBE_` o.
 
 ### Valori predefiniti {#default-values}
 
@@ -248,20 +250,20 @@ Le variabili possono essere definite nell’ambiente locale in modo che vengano 
 export ENV_VAR_NAME=my_value
 ```
 
-Si consiglia di scrivere un semplice script bash che imposti le variabili di ambiente utilizzate nelle configurazioni ed eseguirle prima di avviare AEM. Strumenti come [https://direnv.net/](https://direnv.net/) aiutano a semplificare questo approccio. A seconda del tipo di valori, possono essere sottoposti a Check-In nella gestione del codice sorgente, se possono essere condivisi tra tutti.
+Si consiglia di scrivere un semplice script bash che imposti le variabili di ambiente utilizzate nelle configurazioni ed eseguirle prima di avviare AEM. Strumenti simili [https://direnv.net/](https://direnv.net/) contribuire a semplificare questo approccio. A seconda del tipo di valori, possono essere sottoposti a Check-In nella gestione del codice sorgente, se possono essere condivisi tra tutti.
 
 I valori per i segreti vengono letti dai file. Pertanto, per ogni segnaposto che utilizza un segreto, deve essere creato un file di testo contenente il valore segreto.
 
-Ad esempio, se si utilizza `$[secret:server_password]`, è necessario creare un file di testo denominato **server_password**. Tutti questi file segreti devono essere memorizzati nella stessa directory e la proprietà del framework `org.apache.felix.configadmin.plugin.interpolation.secretsdir` deve essere configurata con tale directory locale.
+Ad esempio se `$[secret:server_password]` viene utilizzato un file di testo denominato **server_password** deve essere creato. Tutti questi file segreti devono essere archiviati nella stessa directory e nella proprietà framework `org.apache.felix.configadmin.plugin.interpolation.secretsdir` deve essere configurato con quella directory locale.
 
 ### Configurazione autore e pubblicazione {#author-vs-publish-configuration}
 
 Se una proprietà OSGI richiede valori diversi per l&#39;autore rispetto alla pubblicazione:
 
-* È necessario utilizzare cartelle separate `config.author` e `config.publish` OSGi, come descritto nella sezione [Risoluzione in modalità di esecuzione](#runmode-resolution).
+* Separato `config.author` e `config.publish` Le cartelle OSGi devono essere utilizzate, come descritto in [Sezione Risoluzione in modalità di esecuzione](#runmode-resolution).
 * Esistono due opzioni per creare nomi di variabili indipendenti che devono essere utilizzati:
-   * la prima opzione, consigliata: in tutte le cartelle OSGI (come `config.author` e `config.publish`) dichiarate per definire valori diversi, utilizza lo stesso nome di variabile. Esempio
-      `$[env:ENV_VAR_NAME;default=<value>]`, dove il valore predefinito corrisponde al valore predefinito per quel livello (authoring o pubblicazione). Quando imposti la variabile di ambiente tramite [API di Cloud Manager](#cloud-manager-api-format-for-setting-properties) o tramite un client, distingue tra i livelli utilizzando il parametro &quot;service&quot; come descritto in questa [documentazione di riferimento API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). Il parametro &quot;service&quot; associa il valore della variabile al livello OSGI appropriato. Può essere &quot;autore&quot; o &quot;pubblicazione&quot; o &quot;anteprima&quot;.
+   * la prima opzione, consigliata: in tutte le cartelle OSGI (come `config.author` e `config.publish`) dichiarata per definire valori diversi, usa lo stesso nome di variabile. Esempio
+      `$[env:ENV_VAR_NAME;default=<value>]`, dove il valore predefinito corrisponde al valore predefinito per quel livello (authoring o pubblicazione). Quando si imposta la variabile di ambiente tramite [API di Cloud Manager](#cloud-manager-api-format-for-setting-properties) o tramite un client, distinguere tra i livelli utilizzando il parametro &quot;service&quot; come descritto in questo [Documentazione di riferimento API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). Il parametro &quot;service&quot; associa il valore della variabile al livello OSGI appropriato. Può essere &quot;autore&quot; o &quot;pubblicazione&quot; o &quot;anteprima&quot;.
    * la seconda opzione, ovvero dichiarare variabili distinte utilizzando un prefisso come `author_<samevariablename>` e `publish_<samevariablename>`
 
 ### Esempi di configurazione {#configuration-examples}
@@ -270,7 +272,7 @@ Negli esempi seguenti, si supponga che siano presenti tre ambienti di sviluppo, 
 
 **Esempio 1**
 
-L’intento è che il valore della proprietà OSGI `my_var1` sia lo stesso per stage e prod, ma differisca per ciascuno dei tre ambienti di sviluppo.
+L&#39;intento è il valore della proprietà OSGI `my_var1` essere lo stesso per stage e prod, ma differire per ciascuno dei tre ambienti di sviluppo.
 
 <table>
 <tr>
@@ -287,11 +289,7 @@ config
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "val",
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1": "val", "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
@@ -301,11 +299,7 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
@@ -313,7 +307,7 @@ config.dev
 
 **Esempio 2**
 
-L&#39;intento è che il valore della proprietà OSGI `my_var1` differisca per stage, prod e per ciascuno dei tre ambienti di sviluppo. Pertanto, è necessario chiamare l’API di Cloud Manager per impostare il valore per `my_var1` per ogni env di sviluppo.
+L&#39;intento è il valore della proprietà OSGI `my_var1` per diversi ambienti di stage, prod e per ciascuno dei tre ambienti di sviluppo. È pertanto necessario chiamare l’API di Cloud Manager per impostare il valore per `my_var1` per ogni dev env.
 
 <table>
 <tr>
@@ -330,11 +324,7 @@ config.stage
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
@@ -344,11 +334,7 @@ config.prod
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "val2",
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1": "val2", "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
@@ -358,11 +344,7 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
@@ -370,7 +352,7 @@ config.dev
 
 **Esempio 3**
 
-L’intento è che il valore della proprietà OSGi `my_var1` sia lo stesso per gli ambienti di stage, produzione e solo per uno degli ambienti di sviluppo, ma sia diverso per gli altri due ambienti di sviluppo. In questo caso, è necessario chiamare l’API di Cloud Manager per impostare il valore di `my_var1` per ciascuno degli ambienti di sviluppo, anche per l’ambiente di sviluppo che deve avere lo stesso valore di stage e produzione. Non erediterà il valore impostato nella cartella **config**.
+L&#39;intento è il valore della proprietà OSGi `my_var1` essere lo stesso per gli ambienti stage, produzione e solo per uno degli ambienti di sviluppo, ma differire per gli altri due ambienti di sviluppo. In questo caso, l’API di Cloud Manager deve essere chiamata per impostare il valore di `my_var1` per ciascuno degli ambienti di sviluppo, anche per l’ambiente di sviluppo che deve avere lo stesso valore di stage e produzione. Non erediterà il valore impostato nella cartella **config**.
 
 <table>
 <tr>
@@ -387,11 +369,7 @@ config
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
@@ -401,17 +379,13 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
 </table>
 
-Un altro modo per farlo sarebbe quello di impostare un valore predefinito per il token di sostituzione nella cartella config.dev in modo che sia lo stesso valore della cartella **config**.
+Un altro modo per farlo sarebbe quello di impostare un valore predefinito per il token di sostituzione nella cartella config.dev in modo che sia lo stesso valore di nel **config** cartella.
 
 <table>
 <tr>
@@ -428,11 +402,7 @@ config
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
@@ -442,11 +412,7 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "$[env:my_var1;default=val1]"
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1": "$[env:my_var1;default=val1]" "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
@@ -454,7 +420,7 @@ config.dev
 
 ## Formato API di Cloud Manager per l’impostazione delle proprietà {#cloud-manager-api-format-for-setting-properties}
 
-Consulta [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) su come configurare l&#39;API.
+Vedi [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) informazioni sulla configurazione dell’API.
 >[!NOTE]
 >
 >Assicurati che l’API di Cloud Manager utilizzata abbia assegnato il ruolo &quot;Deployment Manager - Cloud Service&quot;. Altri ruoli non sono in grado di eseguire tutti i comandi sottostanti.
@@ -485,7 +451,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >Le variabili predefinite non sono impostate tramite API, ma nella proprietà OSGi stessa.
 >
->Per ulteriori informazioni, consulta [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) .
+>Vedi [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) per ulteriori informazioni.
 
 ### Ottenimento dei valori tramite API {#getting-values-via-api}
 
@@ -493,7 +459,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-Per ulteriori informazioni, consulta [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) .
+Vedi [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) per ulteriori informazioni.
 
 ### Eliminazione di valori tramite API {#deleting-values-via-api}
 
@@ -503,7 +469,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 Per eliminare una variabile, includerla con un valore vuoto.
 
-Per ulteriori informazioni, consulta [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) .
+Vedi [questa pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) per ulteriori informazioni.
 
 ### Ottenimento dei valori tramite la riga di comando {#getting-values-via-cli}
 
@@ -529,7 +495,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->Per ulteriori informazioni su come configurare i valori utilizzando il plug-in Cloud Manager per Adobe I/O CLI, consulta [questa pagina](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) .
+>Vedi [questa pagina](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) per ulteriori informazioni su come configurare i valori utilizzando il plug-in Cloud Manager, ad Adobe I/O CLI.
 
 ### Numero di variabili {#number-of-variables}
 
