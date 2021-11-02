@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 92b8a54f585e25db807914601ea5b3c07da681fc
+source-git-commit: 612082f22895af596247f69c4d57222376d7b519
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '927'
 ht-degree: 8%
 
 ---
@@ -50,7 +50,7 @@ Se un cliente deve utilizzare il proprio CDN esistente, può gestirlo e indirizz
 
 * Il cliente deve disporre di un CDN esistente che sarebbe oneroso da sostituire.
 * Il cliente deve gestirlo.
-* Il cliente deve essere in grado di configurare la rete CDN in modo che funzioni con AEM as a Cloud Service - vedi le istruzioni di configurazione riportate di seguito.
+* Il cliente deve essere in grado di configurare la CDN in modo che funzioni con AEM as a Cloud Service - vedi le istruzioni di configurazione riportate di seguito.
 * Il cliente deve avere esperti CDN tecnici che sono in chiamata in caso di problemi correlati.
 * Il cliente deve eseguire e superare con successo un test di carico prima di passare alla produzione.
 
@@ -69,7 +69,7 @@ Prima di accettare il traffico live, è necessario verificare con il supporto cl
 Dopo aver ottenuto `X-AEM-Edge-Key`, puoi verificare che la richiesta sia instradata correttamente come segue:
 
 ```
-https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+https: //publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
 ```
 
 Tieni presente che quando utilizzi la tua CDN, non è necessario installare i domini e i certificati in Cloud Manager. Il routing in Adobe CDN verrà eseguito utilizzando il dominio predefinito `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
