@@ -2,7 +2,7 @@
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di preparazione di Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
+source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -112,7 +112,8 @@ Per visualizzare i rapporti dall’opzione della linea di tendenza, effettua le 
 
 1. Clic su **Visualizza linea di tendenza** apre la vista della linea di tendenza del rapporto, come illustrato nella figura riportata di seguito.
 
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+
 
    >[!NOTE]
    >Il rapporto Linee di tendenza visualizza i risultati dei rapporti BPA storici in una rappresentazione grafica.
@@ -217,11 +218,11 @@ Per eliminare un rapporto dalla vista Linea di tendenza, effettua le seguenti op
 
 1. Fai clic sull’icona Elimina dal **Rapporto Trendline** schermo.
 
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Fai clic su **Elimina** per confermare l’eliminazione.
 
-   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+   ![immagine](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## Novità {#whats-next}
 
