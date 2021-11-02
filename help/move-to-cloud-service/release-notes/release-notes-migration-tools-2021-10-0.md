@@ -3,7 +3,7 @@ title: Note sulla versione per gli strumenti di migrazione in AEM versione as a 
 description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.10.0
 feature: Release Information
 exl-id: null
-source-git-commit: c7cee58a465887b15994a963448fcba8d546673a
+source-git-commit: 0058cfda65ec8f59dbe3ea1bbcc43c08c5e5fe3e
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 6%
@@ -17,24 +17,6 @@ Questa pagina illustra le note sulla versione per gli strumenti di migrazione in
 
 >[!NOTE]
 >Per visualizzare le note sulla versione corrente per Adobe Experience Manager as a Cloud Service, fai clic su [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
-
-## Strumento Content Transfer (Trasferimento contenuti)  {#ctt-release}
-
-### Data di pubblicazione {#release-date-ctt-latest}
-
-La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.6.0 è il 4 ottobre 2021.
-
-### Novità {#what-is-new-ctt-oct}
-
-* Strumento di mappatura utenti migliorato con un’esperienza utente semplificata, incluse le seguenti funzioni elencate di seguito. Per ulteriori informazioni, consulta [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
-   * Verificare la connessione all&#39;API User Management prima di eseguire User Mapping
-   * Salta con attenzione gli errori e continua con l’attività Mappatura utente
-   * La mappatura utente non ha più esito negativo se **Token di accesso** scade dopo 24 ore. La mappatura utente può essere rieseguita dal punto in cui è stata arrestata per ultima.
-
-* Per aumentare la robustezza dello strumento Content Transfer (Trasferimento contenuti), il contenuto può essere acquisito sia nell’istanza Author che nell’istanza Publish alla volta. Vedi [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) per ulteriori dettagli.
-
-* Quando sono incluse le versioni, il percorso `/var/audit` è incluso automaticamente per la migrazione degli eventi di controllo.
-
 
 ## Cloud Acceleration Manager {#cam-release}
 
@@ -53,6 +35,24 @@ La data di rilascio di Cloud Acceleration Manager è il 4 ottobre 2021.
 ### Novità {#what-is-new-cam-oct}
 
 Cloud Acceleration Manager offre agli utenti la possibilità di visualizzare i rapporti BPA in un&#39;anteprima stampabile, consentendo di stampare o stampare facilmente i rapporti in PDF per facilitarne la condivisione. Fai riferimento ai passaggi 6 e 7 in [Utilizzo della scheda di analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+
+
+## Strumento Content Transfer (Trasferimento contenuti)  {#ctt-release}
+
+### Data di pubblicazione {#release-date-ctt-latest}
+
+La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.6.0 è il 4 ottobre 2021.
+
+### Novità {#what-is-new-ctt-oct}
+
+* Strumento di mappatura utenti migliorato con un’esperienza utente semplificata, incluse le seguenti funzioni elencate di seguito. Per ulteriori informazioni, consulta [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+   * Verificare la connessione all&#39;API User Management prima di eseguire User Mapping
+   * Salta con attenzione gli errori e continua con l’attività Mappatura utente
+   * La mappatura utente non ha più esito negativo se **Token di accesso** scade dopo 24 ore. La mappatura utente può essere rieseguita dal punto in cui è stata arrestata per ultima.
+
+* Per aumentare la robustezza dello strumento Content Transfer (Trasferimento contenuti), il contenuto può essere acquisito sia nell’istanza Author che nell’istanza Publish alla volta. Vedi [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) per ulteriori dettagli.
+
+* Quando sono incluse le versioni, il percorso `/var/audit` è incluso automaticamente per la migrazione degli eventi di controllo.
 
 ## Analisi delle best practice {#best-practices-analyzer}
 
