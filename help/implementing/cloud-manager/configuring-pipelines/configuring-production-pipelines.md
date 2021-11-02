@@ -2,7 +2,7 @@
 title: Configurazione delle pipeline di produzione
 description: Configurazione delle pipeline di produzione
 index: false
-source-git-commit: e0c21561a9a6e2940768ecb86da9b4d16e2fbfa8
+source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -99,3 +99,7 @@ Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline di produzione**.
    * **Aggiungi** - consente di aggiungere una nuova pipeline.
    * **Accesso alle informazioni sul repository** - consente all’utente di ottenere le informazioni necessarie per accedere all’archivio Git di Cloud Manager.
    * **Ulteriori informazioni** - Informazioni sulla risorsa della documentazione della pipeline CI/CD.
+
+
+
+
