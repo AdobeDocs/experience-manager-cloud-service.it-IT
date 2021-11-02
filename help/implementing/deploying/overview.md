@@ -3,7 +3,7 @@ title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '3334'
 ht-degree: 1%
@@ -51,7 +51,7 @@ Il video seguente fornisce una panoramica di alto livello su come distribuire il
 
 ### Implementazioni tramite Cloud Manager {#deployments-via-cloud-manager}
 
-I clienti distribuiscono il codice personalizzato agli ambienti cloud tramite Cloud Manager. È opportuno notare che Cloud Manager trasforma i pacchetti di contenuto assemblati localmente in un artefatto conforme al modello di funzioni Sling. Questo è il modo in cui viene descritta un’applicazione as a Cloud Service AEM quando viene eseguita in un ambiente cloud. Di conseguenza, quando si esaminano i pacchetti in Gestione pacchetti negli ambienti Cloud, il nome includerà &quot;cp2fm&quot; e i pacchetti trasformati avranno tutti i metadati rimossi. Non è possibile interagire con questi elementi, ovvero non è possibile scaricarli, replicarli o aprirli. La documentazione dettagliata sul convertitore può essere [qui](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+I clienti distribuiscono il codice personalizzato agli ambienti cloud tramite Cloud Manager. È opportuno notare che Cloud Manager trasforma i pacchetti di contenuto assemblati localmente in un artefatto conforme al modello di funzioni Sling. Questo è il modo in cui viene descritta un’applicazione as a Cloud Service AEM quando viene eseguita in un ambiente cloud. Di conseguenza, quando si esaminano i pacchetti in [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) negli ambienti cloud, il nome includerà &quot;cp2fm&quot; e i pacchetti trasformati avranno tutti i metadati rimossi. Non è possibile interagire con questi elementi, ovvero non è possibile scaricarli, replicarli o aprirli. La documentazione dettagliata sul convertitore può essere [qui](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 I pacchetti di contenuto scritti per AEM applicazioni as a Cloud Service devono avere una separazione netta tra contenuto immutabile e contenuto mutabile; Cloud Manager installerà solo il contenuto mutabile, producendo anche un messaggio come:
 
@@ -109,7 +109,7 @@ Dopo il passaggio alla nuova versione dell&#39;applicazione:
 È possibile limitare l’installazione di contenuti modificabili all’authoring o alla pubblicazione incorporando pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per rispecchiare tale separazione è stata effettuata nel AEM 6.5 e i dettagli relativi alla ristrutturazione del progetto raccomandata si trovano nella [Documentazione di AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
->I pacchetti di contenuto vengono distribuiti in tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Questa limitazione è in vigore per garantire la possibilità di eseguire un test di esecuzione automatica. I contenuti specifici di un ambiente richiedono l’installazione manuale tramite Gestione pacchetti.
+>I pacchetti di contenuto vengono distribuiti in tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Questa limitazione è in vigore per garantire la possibilità di eseguire un test di esecuzione automatica. I contenuti specifici di un ambiente richiedono l’installazione manuale tramite [Gestione pacchetti.](/help/implementing/developing/tools/package-manager.md)
 
 Inoltre, non esiste un meccanismo per ripristinare le modifiche al pacchetto di contenuti modificabili dopo l’applicazione. Se i clienti rilevano un problema, possono scegliere di correggerlo nella versione successiva del codice o come ultima risorsa, ripristinare l&#39;intero sistema in un punto temporale prima della distribuzione.
 
@@ -173,7 +173,7 @@ above appears to be internal, to confirm with Brian -->
 >abstract="Esplora l’utilizzo di package manager per i casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;, che include l’importazione di contenuti specifici dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, il trasferimento di piccoli pacchetti di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Strumento Content Transfer (Trasferimento contenuti) "
 
-Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;. Ad esempio, per eseguire il debug di un problema di produzione, è necessario importare contenuto specifico dalla produzione nella fase di staging. Per questi scenari, Gestione pacchetti può essere utilizzato in ambienti AEM as a Cloud Service.
+Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;. Ad esempio, per eseguire il debug di un problema di produzione, è necessario importare contenuto specifico dalla produzione nella fase di staging. Per questi scenari, [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) può essere utilizzato in ambienti AEM as a Cloud Service.
 
 Poiché Gestione pacchetti è un concetto di runtime, non è possibile installare contenuto o codice nell’archivio immutabile, quindi questi pacchetti di contenuto devono essere costituiti solo da contenuto variabile (principalmente `/content` o `/conf`). Se il pacchetto di contenuti include contenuti misti (con contenuto modificabile e non modificabile), verrà installato solo il contenuto modificabile.
 

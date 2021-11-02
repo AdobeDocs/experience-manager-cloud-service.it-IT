@@ -1,253 +1,250 @@
 ---
 title: Utilizzo di CRXDE Lite
-description: CRXDE Lite fa parte del AEM quickstart ed è disponibile per accedere e modificare il repository negli ambienti di sviluppo locali all'interno del browser.
-translation-type: tm+mt
-source-git-commit: c40d668cb6dcf5c3e2d09504b547457306a99c85
+description: CRXDE Lite fa parte del quickstart AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
+exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
+source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
 workflow-type: tm+mt
-source-wordcount: '1705'
-ht-degree: 0%
+source-wordcount: '1693'
+ht-degree: 1%
 
 ---
 
+# Utilizzo di CRXDE Lite {#using-crxde-lite}
 
-# Utilizzo del CRXDE Lite {#using-crxde-lite}
-
-CRXDE Lite fa parte del AEM quickstart ed è disponibile per accedere e modificare il repository negli ambienti di sviluppo locali all&#39;interno del browser. Con CRXDE Lite, potete modificare file, cartelle, nodi e proprietà. L&#39;intero repository è accessibile tramite questa interfaccia di facile utilizzo.
+CRXDE Lite fa parte del quickstart AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser. Con CRXDE Lite è possibile modificare file, cartelle, nodi e proprietà. L’intero archivio è accessibile tramite questa interfaccia di facile utilizzo.
 
 >[!NOTE]
 >
->CRXDE Lite è disponibile solo negli ambienti di sviluppo locali. Non è disponibile in AEM come Cloud Service.
+>CRXDE Lite è disponibile solo negli ambienti di sviluppo locali. Non è disponibile in AEM as a Cloud Service.
 
-## Guida introduttiva all&#39;CRXDE Lite {#getting-started-with-crxde-lite}
+## Guida introduttiva di CRXDE Lite {#getting-started-with-crxde-lite}
 
-Per iniziare con CRXDE Lite:
+Per iniziare a utilizzare CRXDE Lite:
 
-1. Avviate la procedura di sviluppo AEM locale.
-1. Nel browser, aprite l&#39;URL `https://<host>:<port>/crx/de`.
-1. Immettere **username** e **password**.
+1. Avvia l&#39;avvio rapido dello sviluppo AEM locale.
+1. Nel browser, apri l’URL `https://<host>:<port>/crx/de`.
+1. Inserisci il tuo **username** e **password**.
 1. Fai clic su **OK**.
 
-L’interfaccia utente CRXDE Lite si presenta come segue nel browser:
+L’interfaccia utente di CRXDE Lite viene visualizzata come segue nel browser:
 
-![Interfaccia CRXDE Lite](assets/crxde-lite.png)
-
-È ora possibile utilizzare CRXDE Lite per sviluppare l&#39;applicazione.
+![Interfaccia di CRXDE Lite](assets/crxde-lite.png)
 
 >[!TIP]
 >
->È inoltre possibile accedere al CRXDE Lite dal menu AEM. Dal menu principale, selezionare **Strumenti** -> **Generale** -> **CRXDE Lite**.
+>È inoltre possibile accedere ad CRXDE Lite dal menu AEM. Dal menu principale seleziona **Strumenti** -> **Generale** -> **CRXDE Lite**.
 
-## Panoramica dell&#39;interfaccia utente {#overview-of-the-user-interface}
+## Panoramica dell’interfaccia utente {#overview-of-the-user-interface}
 
-L&#39;interfaccia utente di CRXDE Lite ha molte parti e molte funzioni.
+L’interfaccia utente di CRXDE Lite ha molte parti e numerose funzioni.
 
 ### Barra di commutazione superiore {#top-switcher-bar}
 
-La barra di commutazione superiore consente di passare rapidamente da CRXDE Lite, Package Manager e Package Share.
+La barra di commutazione superiore consente di passare rapidamente da CRXDE Lite a [Gestione pacchetti.](package-manager.md)
 
 ### Widget percorso nodo {#node-path-widget}
 
 Il widget Percorso nodo visualizza il percorso del nodo attualmente selezionato.
 
-È inoltre possibile utilizzarlo per passare a un nodo immettendo il percorso a mano o incollandolo da un&#39;altra ubicazione e premendo Invio.
+È inoltre possibile utilizzarlo per passare a un nodo inserendo il percorso a mano o incollandolo da un altro punto e premendo Invio.
 
-Fornisce inoltre supporto per la ricerca di nodi con un nome di nodo specifico. Immettere il nome del nodo da trovare e attendere (oppure selezionare l&#39;icona di ricerca sul lato destro). Se un nodo o nodi specifici vengono caricati nel riquadro di esplorazione, verrà visualizzato l&#39;elenco, quindi è possibile selezionare il percorso e premere Invio per individuare il percorso. Si noti che funziona solo per i nodi attualmente caricati nell&#39;applicazione client CRXDE nel browser. Se si desidera eseguire una ricerca nell&#39;intero repository, utilizzare **Strumenti** -&amp;gt: **Query**.
+Fornisce inoltre il supporto per la ricerca di nodi con un nome di nodo specifico. Inserisci il nome del nodo da trovare e attendi (oppure seleziona l’icona di ricerca sul lato destro). Se nel riquadro Esplora risorse viene caricato uno o più nodi, viene visualizzato l&#39;elenco, che consente di selezionare il percorso e premere Invio per passare a tale percorso. Si noti che funziona solo per i nodi attualmente caricati nell&#39;applicazione client CRXDE nel browser. Se desideri eseguire una ricerca nell’intero archivio, utilizza **Strumenti** ->: **Query**.
 
-### Riquadro Esplora risorse {#explorer-pane}
+### Riquadro di Esplora risorse {#explorer-pane}
 
-Nel riquadro **Esplora risorse** viene visualizzata una struttura ad albero di tutti i nodi della directory archivio.
+La **Riquadro di Esplora risorse** visualizza una struttura ad albero di tutti i nodi della directory archivio.
 
-Fare clic su un nodo per visualizzarne le proprietà nella scheda **Proprietà**. Dopo aver fatto clic su un nodo, è possibile selezionare un&#39;azione nella barra degli strumenti. Fare di nuovo clic sul nodo per rinominarlo.
+Fai clic su un nodo per visualizzarne le proprietà nel **Proprietà** scheda . Dopo aver fatto clic su un nodo, puoi selezionare un’azione nella barra degli strumenti. Fare nuovamente clic sul nodo per rinominarlo.
 
-Filtro navigazione albero (icona binocolo) consente di filtrare i nodi della directory archivio per i quali il nome contiene il testo di input. Si applica solo ai nodi caricati localmente.
+Filtro di navigazione ad albero (icona binocolo) consente di filtrare i nodi nell’archivio per i quali il nome contiene il testo di input. Si applica solo ai nodi caricati localmente.
 
 ### Riquadro di modifica {#edit-pane}
 
-Il **riquadro di modifica** consente di visualizzare il contenuto del file attualmente selezionato nella directory archivio. Ogni file aperto sarà rappresentato come una propria scheda nel riquadro.
+La **Riquadro di modifica** consente di visualizzare il contenuto del file attualmente selezionato nella directory archivio. Ogni file aperto viene rappresentato come una propria scheda nel riquadro .
 
-La scheda **Home** consente di eseguire ricerche nei contenuti e/o nella documentazione e di accedere alla documentazione sviluppatore e al supporto  Adobe.
+La **Pagina principale** La scheda ti consente di cercare contenuti e/o documentazione e di accedere alla documentazione per gli sviluppatori e al supporto per gli Adobi.
 
-Fare doppio clic su un file nel **riquadro Esplora risorse** per visualizzarne il contenuto nel **riquadro di modifica**. Potete quindi modificarlo e salvare le modifiche.
+Fai doppio clic su un file nel **Riquadro di Esplora risorse** per visualizzare il relativo contenuto nel **Riquadro di modifica**. Puoi quindi modificarlo e salvare le modifiche.
 
-Dopo aver modificato un file nel **riquadro di modifica**, sulla barra degli strumenti sono disponibili i seguenti strumenti:
+Una volta modificato un file nella **Riquadro di modifica**, nella barra degli strumenti sono disponibili i seguenti strumenti:
 
-* **Mostra nella struttura ad albero** : mostra il file nella struttura ad albero del repository.
-* **Ricerca/Sostituisci**  - Esegue una ricerca o una sostituzione.
+* **Mostra nella struttura** - Mostra il file nella struttura del repository.
+* **Ricerca/Sostituisci** - Esegue una ricerca o una sostituzione.
 
-Fare doppio clic sulla riga di stato del **riquadro di modifica** per aprire la finestra di dialogo **Vai alla riga** in modo da inserire un numero di riga specifico.
+Fare doppio clic sulla linea di stato del **Riquadro di modifica** apre **Vai alla riga** consente di immettere un numero di riga specifico.
 
 ### Scheda Proprietà {#properties-tab}
 
-Nella scheda **Proprietà** vengono visualizzate le proprietà del nodo selezionato. È possibile aggiungere nuove proprietà o eliminare quelle esistenti.
+La **Scheda Proprietà** visualizza le proprietà del nodo selezionato. È possibile aggiungere nuove proprietà o eliminare quelle esistenti.
 
 ### Scheda Controllo accesso {#access-control-tab}
 
-La **scheda Controllo accesso** visualizza le autorizzazioni in base al percorso, al repository o all&#39;entità corrente.
+La **Scheda Controllo accesso** visualizza le autorizzazioni in base al percorso, al repository o all&#39;entità corrente.
 
 Le autorizzazioni sono suddivise nelle seguenti categorie.
 
-* **Criterio**  di controllo degli accessi applicabile - Criteri che possono essere applicati alla selezione corrente
-* **Criteri**  di controllo degli accessi locali - I criteri correnti applicati localmente alla selezione corrente
-* **Criteri**  di controllo di accesso effettivi - Criteri correnti applicati per la selezione corrente, che possono essere impostati localmente o ereditati dai nodi padre
+* **Criteri applicabili per il controllo degli accessi** - Criteri applicabili alla selezione corrente
+* **Criteri di controllo accessi locali** - Le attuali politiche applicate localmente alla selezione corrente
+* **Politiche di controllo dell&#39;accesso efficaci** - Criteri correnti applicati per la selezione corrente, che possono essere impostati localmente o ereditati dai nodi principali
 
 >[!NOTE]
-Per poter visualizzare le informazioni sul controllo di accesso, l&#39;utente che ha eseguito l&#39;accesso al CRXDE Lite deve disporre dei diritti per la lettura delle voci ACL.
+Per poter visualizzare le informazioni sul controllo di accesso, l&#39;utente che ha effettuato l&#39;accesso a CRXDE Lite deve disporre dei diritti per leggere le voci ACL.
 
 ### Scheda Replica {#replication-tab}
 
-La scheda **Replica** visualizza lo stato di replica del nodo corrente. È possibile replicare e replicare l&#39;eliminazione del nodo corrente.
+La **Scheda Replica** visualizza lo stato di replica del nodo corrente. Puoi replicare e replicare l’eliminazione del nodo corrente.
 
 ###  Scheda Console {#console-tab}
 
-Nella scheda **Console** vengono visualizzati i messaggi dei registri. Puoi configurare il livello di registro, cancellare la console, fissare la posizione di scorrimento selezionata e attivare/disattivare la visualizzazione dei messaggi.
+La **Scheda Console** visualizza i messaggi dei registri. Puoi configurare il livello di registro, cancellare la console, fissare la posizione di scorrimento selezionata e abilitare/disabilitare la visualizzazione dei messaggi.
 
 ### Scheda Informazioni build {#build-info-tab}
 
-La **scheda Informazioni build** visualizza informazioni quando viene creato un bundle.
+La **Scheda Informazioni build** visualizza informazioni quando viene generato un bundle.
 
 ### Pulsante Aggiorna {#refresh-button}
 
-Il **Pulsante Aggiorna** aggiorna la selezione corrente. Le modifiche apportate da altri utenti vengono aggiornate nella visualizzazione della directory archivio. Le modifiche apportate non vengono alterate.
+La **Pulsante Aggiorna** aggiorna la selezione corrente. Le modifiche apportate da altri utenti vengono aggiornate nella visualizzazione dell’archivio. Le modifiche apportate non vengono modificate.
 
-### Salva tutto {#save-all-button}
+### Pulsante Salva tutto {#save-all-button}
 
-Il **Pulsante Salva tutto** salva tutte le modifiche apportate. Fino a quando non si sceglie di salvare, le modifiche sono temporanee e andranno perse quando si esce dalla console.
+La **Pulsante Salva tutto** salva tutte le modifiche apportate. Fino a quando non scegli di salvare, le modifiche sono temporanee e andranno perse quando esci dalla console.
 
-* **Ripristina** : tutte le modifiche apportate al nodo selezionato dall&#39;ultima azione di salvataggio vengono eliminate e quindi viene ricaricato lo stato corrente del repository per il nodo selezionato
-* **Ripristina tutto** : ignora tutte le modifiche apportate all’intero repository dall’ultima azione di salvataggio, quindi ricarica lo stato corrente dell’archivio
+* **Ripristina** - Ignora tutte le modifiche apportate al nodo selezionato dall&#39;ultima azione di salvataggio, quindi ricarica lo stato corrente dell&#39;archivio per il nodo selezionato
+* **Ripristina tutto** - Elimina tutte le modifiche apportate all’intero archivio dall’ultima azione di salvataggio, quindi ricarica lo stato corrente dell’archivio
 
 ### Pulsante Crea {#create-button}
 
-Il **Pulsante Crea** è un menu a discesa per creare quanto segue sotto il nodo selezionato:
+La **Pulsante Crea** è un menu a discesa per creare quanto segue sotto il nodo selezionato:
 
 * Nodo: un nodo con un tipo di nodo arbitrario
-* File - un nodo `nt:file` e il relativo nodo secondario nt:resource
-* Cartella - un nodo `nt:folder`
+* File - un `nt:file` nodo e relativo sottonodo nt:resource
+* Cartella - un `nt:folder` nodo
 
 ### Pulsante Elimina {#delete-button}
 
-Il **Pulsante Elimina** elimina il nodo selezionato.
+La **Pulsante Elimina** elimina il nodo selezionato.
 
 ### Pulsante Copia {#copy-button}
 
-Il **Pulsante Copia** copia il nodo selezionato.
+La **Pulsante Copia** copia il nodo selezionato.
 
 ## Pulsante Incolla {#paste-button}
 
-Il **Pulsante Incolla** incolla il nodo copiato sotto il nodo selezionato.
+La **Pulsante Incolla** incolla il nodo copiato sotto il nodo selezionato.
 
 ### Pulsante Sposta {#move-button}
 
-Il **Pulsante Sposta** sposta il nodo selezionato sul nodo impostato attraverso la finestra di dialogo.
+La **Pulsante Sposta** sposta il nodo selezionato sul nodo impostato tramite la finestra di dialogo.
 
 ### Rinomina {#rename-button}
 
-Il **Pulsante Rinomina** rinomina il nodo selezionato.
+La **Pulsante Rinomina** rinomina il nodo selezionato.
 
 ### Mixins {#mixins-button}
 
-Il **Pulsante Mixins** consente di aggiungere tipi di mixin al tipo di nodo. I tipi di mixin vengono utilizzati principalmente per aggiungere funzioni avanzate.
+La **Pulsante Mixins** consente di aggiungere tipi mixin al tipo di nodo. I tipi di mixin vengono utilizzati principalmente per aggiungere funzioni avanzate.
 
 ### Strumenti {#tools-button}
 
-Il **Pulsante Strumenti** è un menu a discesa con i seguenti strumenti disponibili:
+La **Pulsante Strumenti** è un menu a discesa con i seguenti strumenti disponibili:
 
-* **Configurazione**  server - per accedere alla console Felix (disponibile anche in  `https://<host>:<port>/system/console/configMgr`)
-* **Query** - per eseguire una query sull&#39;archivio
-* **Privilegi**  per visualizzare e aggiungere privilegi
-* **Controllo**  dell&#39;accesso di prova - per verificare l&#39;autorizzazione per un determinato percorso e/o entità
-* **Esporta tipo**  nodo - per esportare i tipi di nodi nel sistema come notazione CND
-* **Importa tipo**  nodo - per importare i tipi di nodi utilizzando la notazione CND.
+* **Configurazione server** - per accedere alla console Felix (disponibile anche all&#39;indirizzo `https://<host>:<port>/system/console/configMgr`)
+* **Query** - per eseguire query sul repository
+* **Privilegi** - per visualizzare e aggiungere privilegi
+* **Controllo dell&#39;accesso ai test** - per verificare l&#39;autorizzazione per un determinato percorso e/o entità principale
+* **Esporta tipo di nodo** - per esportare i tipi di nodo nel sistema come notazione CND
+* **Importa tipo di nodo** - per importare i tipi di nodo utilizzando la notazione CND.
 
-### Widget di login {#login-widget}
+### Widget di accesso {#login-widget}
 
-Il **Widget di accesso** visualizza l&#39;utente attualmente connesso.
+La **Widget di accesso** visualizza l&#39;utente attualmente connesso.
 
-Fate clic su di esso per effettuare il login o effettuare nuovamente il login come altro utente. L&#39; `@crx.default` rappresenta l&#39;utente che si trova nell&#39;area di lavoro predefinita (e solo) nella directory archivio.
+Fai clic su di esso per accedere o riaccedere come un altro utente. La `@crx.default` rappresenta che ti trovi nell’area di lavoro predefinita (e solo) nell’archivio.
 
-L&#39;opzione **Preferenze** può essere utilizzata per impostare la lingua dell&#39;interfaccia utente e per visualizzare e personalizzare i tasti di scelta rapida per diverse azioni, ad esempio salvare, cercare, creare note e così via.
+La **Preferenze** può essere utilizzata per impostare la lingua dell’interfaccia utente e per visualizzare e personalizzare gli hot key per varie azioni quali salvataggio, ricerca, creazione di note, ecc.
 
 ## Creazione di una cartella {#creating-a-folder}
 
-Per creare una cartella con un CRXDE Lite:
+Per creare una cartella con CRXDE Lite:
 
-1. Aprite il CRXDE Lite nel browser.
-1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare la nuova cartella, selezionare **Crea ...**, quindi **Crea cartella ...**.
+1. Apri CRXDE Lite nel browser.
+1. Nel riquadro di spostamento fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare la nuova cartella, selezionare **Crea ...**, quindi **Crea cartella ...**.
 
-1. Immettere la cartella **Name** e fare clic su **OK**.
+1. Immettere la cartella **Nome** e fai clic su **OK**.
 
-1. Fare clic su **Salva tutto** per salvare le modifiche sul server.
+1. Fai clic su **Salva tutto** per salvare le modifiche sul server.
 
 ## Creazione di un nodo {#creating-a-node}
 
 Per creare un nodo con CRXDE Lite:
 
-1. Aprite il CRXDE Lite nel browser.
-1. Nel [**riquadro Esploratore**,](#explorer-pane) fare clic con il pulsante destro del mouse sul nodo in cui si desidera creare il nuovo nodo, selezionare **Crea**, quindi **Crea nodo**.
-1. Immettere il **Nome** e selezionare il **Tipo**.
+1. Apri CRXDE Lite nel browser.
+1. In [**Riquadro Esploer**,](#explorer-pane) fare clic con il pulsante destro del mouse sul nodo in cui si desidera creare il nuovo nodo, selezionare **Crea**, quindi **Crea nodo**.
+1. Inserisci il **Nome** e seleziona la **Tipo**.
 1. Fai clic su **OK**.
-1. Fare clic sul pulsante [**Salva tutto**](#save-all-button) per salvare le modifiche sul server.
+1. Fai clic sul pulsante [**Pulsante Salva tutto**](#save-all-button) per salvare le modifiche sul server.
 
-È ora possibile adattare il nodo alle proprie esigenze modificando le proprietà o creando nuovi nodi.
+Ora puoi adattare il nodo alle tue esigenze modificando le proprietà o creando nuovi nodi.
 
 >[!NOTE]
-La maggior parte delle operazioni di modifica, inclusa la **Crea nodo**, conserva tutte le modifiche in memoria e le memorizza solo nella directory archivio al momento del salvataggio (utilizzando il [**Salva tutto pulsante**](#save-all-button)). Tuttavia, alcune operazioni come quella di spostamento vengono automaticamente mantenute.
-La convalida relativa all&#39;eventuale autorizzazione del nodo appena creato da parte del tipo di nodo padre viene eseguita anche dall&#39;archivio al momento del salvataggio delle modifiche. Se ricevete un messaggio di errore durante il salvataggio di un nodo, verificate che la struttura del contenuto sia valida (ad esempio, non potete creare un nodo `nt:unstructured` come elemento secondario di `nt:folder` nodo).
+La maggior parte delle operazioni di modifica, tra cui **Crea nodo**, mantiene tutte le modifiche nella memoria e le memorizza solo nel repository al momento del salvataggio (utilizzando il [**Pulsante Salva tutto**](#save-all-button)). Tuttavia, alcune operazioni come lo spostamento vengono mantenute automaticamente.
+La convalida relativa al fatto che il nodo appena creato sia consentito dal tipo di nodo del nodo padre viene eseguita anche dall&#39;archivio al momento del salvataggio delle modifiche. Se ricevi un messaggio di errore durante il salvataggio di un nodo, controlla se la struttura del contenuto è valida (ad esempio, non puoi creare un `nt:unstructured` come nodo figlio di `nt:folder` node).
 
 ## Creazione di una proprietà {#creating-a-property}
 
-Per creare una proprietà con un CRXDE Lite:
+Per creare una proprietà con CRXDE Lite:
 
-1. Aprite il CRXDE Lite nel browser.
-1. Nel [**riquadro dell&#39;esploratore**,](#explorer-pane) selezionare il nodo in cui si desidera aggiungere la nuova proprietà.
-1. Nella scheda [**Proprietà**](#properties-tab) del riquadro inferiore, immettere **Nome**, **Tipo** e **Valore**.
+1. Apri CRXDE Lite nel browser.
+1. In [**Riquadro Esploer**,](#explorer-pane) seleziona il nodo in cui desideri aggiungere la nuova proprietà.
+1. In [**Scheda Proprietà**](#properties-tab) nel riquadro inferiore, immetti il **Nome**, **Tipo** e **Valore**.
 1. Fate clic su **Aggiungi**.
-1. Fare clic sul pulsante [**Salva tutto**](#save-all-button) per salvare le modifiche sul server.
+1. Fai clic sul pulsante [**Pulsante Salva tutto**](#save-all-button) per salvare le modifiche sul server.
 
 ## Creazione di un file {#creating-a-file}
 
-Per creare un nuovo file con un CRXDE Lite:
+Per creare un nuovo file con CRXDE Lite:
 
-1. Aprite il CRXDE Lite nel browser.
-1. Nel [**riquadro Esploratore**,](#explorer-pane) fare clic con il pulsante destro del mouse sul componente in cui si desidera creare il file, selezionare **Crea**, quindi **Crea file**.
-1. Immettere il file **Name**, inclusa l&#39;estensione.
+1. Apri CRXDE Lite nel browser.
+1. In [**Riquadro Esploer**,](#explorer-pane) fai clic con il pulsante destro del mouse sul componente in cui desideri creare il file, seleziona **Crea**, quindi **Crea file**.
+1. Inserisci il file **Nome** compresa la sua estensione.
 1. Fai clic su **OK**.
-1. Il nuovo file viene aperto come scheda nel [**riquadro di modifica**.](#edit-pane)
-1. Modificate il file.
-1. Fare clic sul pulsante [**Salva tutto**](#save-all-button) per salvare le modifiche.
+1. Il nuovo file viene aperto come scheda nel [**Riquadro di modifica**.](#edit-pane)
+1. Modifica il file.
+1. Fai clic sul pulsante [**Pulsante Salva tutto**](#save-all-button) per salvare le modifiche.
 
 ## Esportazione e importazione di tipi di nodo {#exporting-and-importing-node-types}
 
-Con CRXDE Lite è possibile importare e/o esportare le definizioni dei tipi di nodo in [Nomi compatti e Definizione del tipo di nodo (CND) notazione](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Con CRXDE Lite è possibile importare e/o esportare le definizioni dei tipi di nodo in [Notazione CND (Node Type Definition) e spazio dei nomi compatto](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
-Per esportare una definizione di tipo di nodo in CRXDE Lite:
+Per esportare una definizione del tipo di nodo in CRXDE Lite:
 
-1. Aprite il CRXDE Lite nel browser.
-1. Selezionare il nodo desiderato.
-1. Selezionare **Strumenti**, quindi **Esporta tipo di nodo**.
-1. La definizione verrà visualizzata nella notazione CND in una nuova scheda del browser.
-1. Se necessario, salvate le informazioni.
+1. Apri CRXDE Lite nel browser.
+1. Seleziona il nodo richiesto.
+1. Seleziona **Strumenti** then **Esporta tipo di nodo**.
+1. La definizione verrà visualizzata in notazione CND in una nuova scheda nel browser.
+1. Se necessario, salva le informazioni.
 
-Per importare una definizione di tipo di nodo:
+Per importare una definizione del tipo di nodo:
 
-1. Aprite il CRXDE Lite nel browser.
-1. Selezionare **Strumenti**, quindi **Importa tipo di nodo**.
-1. Si apre una nuova scheda nel [**riquadro di modifica**](#edit-pane) con etichetta **Importa tipo di nodo**.
-1. Immettere la notazione CND per la definizione nella casella di testo della scheda **Importa tipo di nodo**.
-1. Selezionare **Consenti aggiornamento** se si sta aggiornando una definizione esistente.
+1. Apri CRXDE Lite nel browser.
+1. Seleziona **Strumenti** then **Importa tipo di nodo**.
+1. Viene visualizzata una nuova scheda in [**Riquadro di modifica**](#edit-pane) etichettato **Importa tipo di nodo**.
+1. Immettere la notazione CND per la definizione nella casella di testo della **Importa tipo di nodo** scheda .
+1. Controlla **Consenti aggiornamento** se stai aggiornando una definizione esistente.
 1. Fai clic su **Importa**.
 
 ## Registrazione {#logging}
 
-Con CRXDE Lite è possibile visualizzare il file `error.log` che si trova nel file system in `<aem-install-dir>/crx-quickstart/logs` e filtrarlo con il livello di registro appropriato. Procedere come segue:
+Con CRXDE Lite è possibile visualizzare il file `error.log` che si trova nel file system in `<aem-install-dir>/crx-quickstart/logs` e filtrarlo con il livello di log appropriato. Procedere come segue:
 
-1. Aprite il CRXDE Lite nel browser.
-1. Nel menu a discesa nella parte destra della [**scheda Console**](#console-tab) nella parte inferiore della finestra, selezionare **Registri server**.
-1. Fare clic sull&#39;icona **Stop** per visualizzare i messaggi.
+1. Apri CRXDE Lite nel browser.
+1. Nel nel menu a discesa a destra di [**Scheda Console**](#console-tab) nella parte inferiore della finestra, selezionare **Registri server**.
+1. Fai clic sul pulsante **Interrompi** per visualizzare i messaggi.
 
 Operazioni disponibili:
 
-* Per regolare i parametri di registro nella console Felix, fai clic sull&#39;icona **Configurazioni di registrazione**.
-* Cancella i messaggi facendo clic sull&#39;icona **Cancella console**.
-* Fissare il messaggio alla selezione corrente facendo clic sull&#39;icona **Fissa console**.
-* Abilita o disabilita la visualizzazione dei messaggi facendo clic sull&#39;icona **Stop**.
+* Per regolare i parametri di registro nella console Felix, fai clic sul pulsante **Configurazioni di registrazione** icona.
+* Cancella i messaggi facendo clic sul pulsante **Cancella console** icona.
+* Aggiungi il messaggio alla selezione corrente facendo clic sul pulsante **Console a blocchi** icona.
+* Attiva o disattiva la visualizzazione dei messaggi facendo clic sul pulsante **Interrompi** icona.

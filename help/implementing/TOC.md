@@ -5,9 +5,9 @@ breadcrumb-title: Guida all’implementazione
 user-guide-description: Questa guida spiega come personalizzare l’implementazione di Experience Manager as a Cloud Service, e contiene argomenti utili per lo sviluppo e l’implementazione.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
+source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1051'
 ht-degree: 35%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 35%
 + Utilizzo di Cloud Manager {#using-cloud-manager}
    + Note sulla versione per Cloud Manager {#release-notes-cloud-manager}
       + [Note sulla versione corrente (2021.10.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-      + 2021{#2021}
+      + 2021 {#2021}
          + [Note sulla versione 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
          + [Note sulla versione 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [Note sulla versione 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
@@ -29,7 +29,7 @@ ht-degree: 35%
          + [Note sulla versione 2021.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
          + [Note sulla versione 2021.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
          + [Note sulla versione 2021.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-      + 2020{#2020}
+      + 2020 {#2020}
          + [Note sulla versione 2020.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
          + [Note sulla versione 2020.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
          + [Note sulla versione 2020.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
@@ -171,7 +171,7 @@ ht-degree: 35%
          + [API GraphQL per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
          + [AEM API GraphQL con frammenti di contenuto - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
          + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
-   + Sviluppo AEM ibrido e SPA {#hybrid}
+   + Sviluppo ibrido e AEM SPA {#hybrid}
       + [Ibrido e SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Introduzione SPA e Procedura dettagliata](developing/hybrid/introduction.md)
@@ -198,6 +198,7 @@ ht-degree: 35%
    + [Plug-in Maven del pacchetto di contenuti](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [Utilizzo di CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+   + [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md)
    + [Esternalizzatore del collegamento](/help/implementing/developing/tools/externalizer.md)
 + Personalizzazione {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
@@ -215,7 +216,7 @@ ht-degree: 35%
    + [Estensione dei frammenti esperienza](developing/extending/experience-fragments.md)
    + [Personalizzazione ed estensione dei frammenti di contenuto](developing/extending/content-fragments-customizing.md)
    + [Componenti di configurazione dei frammenti di contenuto per il rendering](developing/extending/content-fragments-configuring-components-rendering.md)
-   + Gestisci Forms di ricerca {#manage-search-forms}
+   + Gestisci ricerca in Forms {#manage-search-forms}
       + [Configurazione dei moduli di ricerca](developing/extending/search-forms.md)
       + [Configurare i filtri di ricerca per la casella in entrata](developing/extending/configure-inbox-search-rail.md)
    + [Configurare l’editor Rich Text](/help/implementing/developing/extending/rich-text-editor.md)

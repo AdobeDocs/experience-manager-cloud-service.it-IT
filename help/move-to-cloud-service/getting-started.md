@@ -2,9 +2,9 @@
 title: Guida alla migrazione all’Experience Manager as a Cloud Service per i partner
 description: Guida alla migrazione all’Experience Manager as a Cloud Service per i partner
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 4071bbc7b17abd3a81b231dd4e2f0025f8d520c2
+source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2092'
 ht-degree: 10%
 
 ---
@@ -152,8 +152,8 @@ Cloud Manager consente alle organizzazioni di gestire autonomamente Experience M
 
 #### Migrazione dei contenuti
 
-1. [Strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) : utilizzato per spostare il contenuto esistente da un’istanza di AEM di origine (on-premise o AMS) all’istanza di AEM Cloud Service di destinazione.
-2. [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#package-manager) : utilizzato per importare ed esportare contenuti mutabili dell&#39;archivio.
+1. [Strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) - Utilizzato per spostare il contenuto esistente da un’istanza di AEM di origine (on-premise o AMS) all’istanza di AEM Cloud Service di destinazione.
+2. Gestione pacchetti: utilizzato per importare ed esportare contenuti mutabili dell&#39;archivio.
 
 
 #### Refactoring/ottimizzazione
@@ -196,7 +196,7 @@ Nella fase di post-pubblicazione, devi assicurarti che i file temporanei vengano
 
 | Valutazione | Refactoring | Modernizzazione degli Experienci Manager | Migrazione dei contenuti |
 |------------|-------------|---------------------------------|-------------------|
-| <ul><li>[Analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Plug-in esperienza unificato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul> | <ul><li>[Modelli statici in modelli modificabili](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Configurazioni di progettazione in criteri](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Componenti di base in Componenti core](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[Interfaccia utente classica in interfaccia utente touch](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[Strumento Content Transfer (Trasferimento contenuti) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement)</li></ul> |
+| <ul><li>[Analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Plug-in esperienza unificato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul> | <ul><li>[Modelli statici in modelli modificabili](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Configurazioni di progettazione in criteri](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Componenti di base in Componenti core](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[Interfaccia utente classica in interfaccia utente touch](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[Strumento Content Transfer (Trasferimento contenuti) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[Gestione pacchetti](/help/implementing/developing/tools/package-manager.md)</li></ul> |
 
 >[!NOTE]
 > Per ulteriore assistenza, puoi effettuare le seguenti operazioni:
