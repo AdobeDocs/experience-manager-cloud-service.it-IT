@@ -1,18 +1,19 @@
 ---
-title: Configurazione di pipeline non di produzione
-description: Configurazione di pipeline non di produzione
+title: Configurazione di una pipeline non di produzione
+description: Segui questa pagina per informazioni sulla configurazione di una pipeline non di produzione in Cloud Manager
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 7d45179093366dda2d035b5a8eed219e4846f777
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
 
-# Configurazione di pipeline non di produzione {#configure-non-production-pipeline}
+# Configurazione di una pipeline non di produzione {#configure-non-production-pipeline}
 
 Oltre alla pipeline principale che viene implementata in fase e produzione, i clienti possono impostare pipeline aggiuntive, denominate pipeline non di produzione .
+
 Esistono due tipi di gasdotti non di produzione:
 
 1. Qualità del codice: Esegue la scansione della qualità del codice sul codice nel ramo git. Questa pipeline esegue i passaggi di creazione e qualità del codice.
