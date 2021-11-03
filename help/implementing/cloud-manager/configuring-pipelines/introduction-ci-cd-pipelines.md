@@ -2,9 +2,9 @@
 title: Pipeline CI-CD
 description: Pipeline CI-CD
 index: false
-source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
+source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -43,14 +43,13 @@ Per ulteriori informazioni, consulta Pipelines non di produzione e solo qualità
 
 ## Informazioni sulle pipeline CI-CD in Cloud Manager {#understand-pipelines}
 
-La tabella seguente classifica le pipeline in Cloud Manager con il relativo utilizzo.
+La tabella seguente riepiloga tutte le pipeline in Cloud Manager e il relativo utilizzo.
 
 | Tipo di pipeline | Implementazione o qualità del codice | Codice sorgente | Quando utilizzare | Quando o perché dovrei usare? |
 |--- |--- |--- |---|---|---|
 | Produzione o non produzione | Implementazione | Front end | Per distribuire il codice front-end. Il codice front-end è qualsiasi codice che viene utilizzato come file statico. È separato dal codice dell’interfaccia utente gestito da AEM. Include i temi Sites, le SPA definite dal cliente, Firefly SPA e qualsiasi altra soluzione. Deve essere AEM versione. | Tempi di implementazione rapidi.<br> È possibile configurare più pipeline front-end ed eseguirle contemporaneamente per ogni ambiente. |
 |  | Implementazione | Stack completo | Per implementare la configurazione back-end, front-end e HTTPD/dispatcher contemporaneamente. Nota: Si applicano alcune restrizioni. | Quando le pipeline di configurazione front-end o livello Web non sono ancora state adottate. |
 |  | Implementazione | Configurazione a livello web | Per distribuire esclusivamente la configurazione HTTPD/dispatcher in pochi minuti.  Questa pipeline semplificata fornisce agli utenti che desiderano distribuire solo le modifiche alla configurazione del dispatcher, un metodo accelerato per farlo. Nota: Deve essere su AEM versione [version] | Tempi di implementazione rapidi. |
-
 
 
 ## Pipe front-end di Cloud Manager {#front-end}
@@ -65,10 +64,20 @@ Esistono due tipi di pipeline front-end:
 * Qualità del codice front-end
 * Implementazione front-end
 
+### Prima di configurare le pipeline front-end {#before-start}
+
+Prima di iniziare a configurare le pipeline front-end, vedere AEM Percorso di creazione rapida di siti per un flusso di lavoro end-to-end tramite lo strumento di creazione rapida AEM facile da utilizzare. Questo sito di documentazione ti aiuterà a semplificare lo sviluppo front-end del tuo sito AEM e a personalizzare rapidamente il tuo sito senza AEM conoscenza back-end.
+
+### Configurare la pipeline front-end {#configure-front-end}
+
+Per informazioni su come configurare la pipeline front-end, consulta:
+
+* Aggiunta di una pipeline di produzione
+* Aggiunta di una pipeline non di produzione
+
 ## Pipellini full-stack {#full-stack-pipeline}
 
 La pipeline full Stack offre all’utente la possibilità di implementare la configurazione back-end, front-end e HTTPD/dispatcher contemporaneamente.  Distribuisce codice e contenuto nel runtime di AEM, incluso il codice front-end (JavaScript/CSS) incluso nel pacchetto come librerie client AEM. Può distribuire la configurazione del livello web se non è configurata una pipeline del livello web. Rappresenta la pipeline &quot;uber&quot;, offrendo agli utenti le opzioni per distribuire esclusivamente il codice Front End o la configurazione del dispatcher tramite rispettivamente la pipeline Front End e la pipeline di configurazione del livello Web.
-
 
 Saranno applicate le seguenti restrizioni:
 
@@ -85,3 +94,9 @@ Esistono due tipi di tubazioni full Stack:
 * Pipeline di qualità del codice di stack completo
 * Pipa di distribuzione full stack
 
+### Configurare la pipeline di stack completa {#configure-full-stack}
+
+Per informazioni su come configurare la pipeline a stack completo, consulta:
+
+* Aggiunta di una pipeline di produzione
+* Aggiunta di una pipeline non di produzione

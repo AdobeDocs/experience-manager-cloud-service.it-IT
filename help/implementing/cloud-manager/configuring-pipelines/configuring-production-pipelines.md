@@ -2,9 +2,9 @@
 title: Configurazione delle pipeline di produzione
 description: Configurazione delle pipeline di produzione
 index: false
-source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
+source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline di produzione**.
    * **Continua immediatamente** - Se selezionata, la pipeline procede automaticamente ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che approva manualmente ogni errore.
 
 
-1. La **Aggiungi pipeline di produzione** una seconda scheda etichettata come **Codice sorgente**. **Codice Stack Completo** è selezionato. Puoi scegliere la **Archivio** e **Ramo Git**. Selezionare Opzioni di distribuzione di produzione, come illustrato di seguito. Fai clic su **Continua**.
+1. La **Aggiungi pipeline di produzione** una seconda scheda etichettata come **Codice sorgente**. Puoi selezionare **Codice Stack Completo**, **Codice front-end** o **Configurazione a livello web**. Puoi scegliere la **Archivio** e **Ramo Git**. Selezionare Opzioni di distribuzione di produzione, come illustrato di seguito. Fai clic su **Continua**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
