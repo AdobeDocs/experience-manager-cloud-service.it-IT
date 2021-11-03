@@ -2,9 +2,9 @@
 title: Modifica di una pipeline non di produzione
 description: Modifica di una pipeline non di produzione
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # Modifica di una pipeline non di produzione {#edit-non-prod-pipeline}
 
 Puoi modificare le configurazioni della pipeline dalla sezione **Scheda pipeline** da **Panoramica del programma** pagina.
+
+>[!IMPORTANT]
+>Non è possibile modificare una pipeline in esecuzione.
 
 Per modificare la pipeline non di produzione configurata, effettua le seguenti operazioni:
 
