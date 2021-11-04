@@ -2,9 +2,9 @@
 title: Pipeline CI-CD
 description: Segui questa pagina per informazioni sulle pipeline CI-CD di Cloud Manager
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 71e4a9932ef89ebf263ebbc0300bf2c938fa50f5
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -50,14 +50,14 @@ La tabella seguente riepiloga tutte le pipeline in Cloud Manager e il relativo u
 
 | Tipo di pipeline | Implementazione o qualità del codice | Codice sorgente | Quando utilizzare | Quando o perché dovrei usare? |
 |--- |--- |--- |---|---|---|
-| Produzione o non produzione | Implementazione | Front end | Per distribuire il codice front-end. Il codice front-end è qualsiasi codice che viene utilizzato come file statico. È separato dal codice dell’interfaccia utente gestito da AEM. Include i temi Sites, le SPA definite dal cliente, Firefly SPA e qualsiasi altra soluzione. Deve essere AEM versione. | Tempi di distribuzione rapidi<br> È possibile configurare più pipeline front-end ed eseguirle contemporaneamente in base all’ambiente |
-|  | Implementazione | Stack completo | Per implementare la configurazione back-end, front-end e HTTPD/dispatcher contemporaneamente. Si applicano alcune restrizioni. | Quando le condutture front end non sono ancora state adottate. |
-| Non produzione | Qualità del codice | Front end | Esegui analisi della qualità del codice sul codice front-end | Tempi di distribuzione rapidi<br> È possibile configurare ed eseguire più pipeline |
-|  | Qualità del codice | Stack completo | Esegui la scansione della qualità del codice sull&#39;intero codice dello stack | Tempi di distribuzione rapidi<br> È possibile configurare ed eseguire più pipeline |
+| Produzione o non produzione | Implementazione | Front end | Tempi di implementazione rapidi.<br>È possibile configurare più pipeline front-end ed eseguirle contemporaneamente per ogni ambiente.<br>La build della pipeline Front End invia la build a uno storage. Quando viene servita una pagina HTML, può fare riferimento a file statici Frontend Code che verranno serviti dalla CDN utilizzando questa memorizzazione come origine. | Per distribuire esclusivamente codice front-end contenente una o più applicazioni dell’interfaccia utente lato client. Il codice front-end è qualsiasi codice che viene utilizzato come file statico. È separato dal codice dell’interfaccia utente gestito da AEM. Include i temi Sites, le SPA definite dal cliente, Firefly SPA e qualsiasi altra soluzione.<br>Deve essere su AEM versione `2021.10.5933.20211012T154732Z` |
+| Produzione o non produzione | Implementazione | Stack completo | Quando le condutture front end non sono ancora state adottate.<br>Per i casi in cui il codice Front End deve essere distribuito esattamente nello stesso momento del codice del server AEM. | Per distribuire AEM codice server (contenuto immutabile, codice Java, configurazioni OSGi, configurazione HTTPD/dispatcher, reindirizzamento, contenuto mutabile, font), contenente una o più applicazioni server AEM tutte allo stesso tempo. |
+| Non produzione | Qualità del codice | Front end | Far sì che Cloud Manager valuti il successo della build e la qualità del codice senza eseguire una distribuzione.<br>È possibile configurare ed eseguire più pipeline. | Esegui analisi della qualità del codice sul codice front-end. |
+| Non produzione | Qualità del codice | Stack completo | Far sì che Cloud Manager valuti il successo della build e la qualità del codice senza eseguire una distribuzione.<br>È possibile configurare ed eseguire più pipeline. | Esegui la scansione della qualità del codice sull&#39;intero codice dello stack. |
 
 Il diagramma seguente illustra le configurazioni della pipeline di Cloud Manager con archivio front-end tradizionale singolo o con configurazione dell’archivio front-end indipendente:
 
-![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
+![](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
 ## Pipe front-end di Cloud Manager {#front-end}
 
@@ -72,12 +72,12 @@ Possono essere di tipo Front End Code Quality o le pipeline di distribuzione Fro
 
 Prima di iniziare a configurare le pipeline front-end, vedere AEM Percorso di creazione rapida di siti per un flusso di lavoro end-to-end tramite lo strumento di creazione rapida AEM facile da utilizzare. Questo sito di documentazione ti aiuterà a semplificare lo sviluppo front-end del tuo sito AEM e a personalizzare rapidamente il tuo sito senza AEM conoscenza back-end.
 
-### Configurare la pipeline front-end {#configure-front-end}
+### Configurare una pipeline front-end {#configure-front-end}
 
 Per informazioni su come configurare la pipeline front-end, consulta:
 
-* Aggiunta di una pipeline di produzione
-* Aggiunta di una pipeline non di produzione
+* [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 ## Pipellini full-stack {#full-stack-pipeline}
 
@@ -95,9 +95,9 @@ Saranno applicate le seguenti restrizioni:
 
 Questi possono essere del tipo Stack completo - Qualità codice o Stack completo - pipeline di distribuzione.
 
-### Configurare la pipeline di stack completa {#configure-full-stack}
+### Configurare una pipeline di stack completa {#configure-full-stack}
 
 Per informazioni su come configurare la pipeline a stack completo, consulta:
 
-* Aggiunta di una pipeline di produzione
-* Aggiunta di una pipeline non di produzione
+* [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline))
+* [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
