@@ -1,10 +1,10 @@
 ---
 title: Configurazione di una pipeline non di produzione
 description: Segui questa pagina per informazioni sulla configurazione di una pipeline non di produzione in Cloud Manager
-index: false
-source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
+index: true
+source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,10 @@ Nella schermata iniziale, queste pipeline sono elencate in una nuova scheda:
    >[!IMPORTANT]
    >Se per l’ambiente selezionato esiste già una pipeline del codice di stack completo, questa selezione verrà disabilitata.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-confignew1.png)
 
    >[!NOTE]
-   >Prima di iniziare a configurare le pipeline front-end, vedere AEM Percorso di creazione rapida di siti per un flusso di lavoro end-to-end tramite lo strumento di creazione rapida AEM facile da utilizzare. Questo sito di documentazione ti aiuterà a semplificare lo sviluppo front-end del tuo sito AEM e a personalizzare rapidamente il tuo sito senza AEM conoscenza back-end.
+   >Prima di iniziare a configurare le pipeline Front End, consulta [AEM Percorso di creazione di siti rapidi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) per un flusso di lavoro end-to-end tramite lo strumento di creazione rapida AEM facile da usare. Questo sito di documentazione ti aiuterà a semplificare lo sviluppo front-end del tuo sito AEM e a personalizzare rapidamente il tuo sito senza AEM conoscenza back-end.
 
 1. La nuova pipeline non di produzione creata viene ora visualizzata nella **Tubi** il Card.
 

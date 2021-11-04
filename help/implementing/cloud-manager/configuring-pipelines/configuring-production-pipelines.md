@@ -1,10 +1,10 @@
 ---
 title: Configurazione delle pipeline di produzione
 description: Configurazione delle pipeline di produzione
-index: false
-source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
+index: true
+source-git-commit: 307472d5b9887101b9e365cafc781ec97a1bcdb5
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -57,13 +57,14 @@ Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline di produzione**.
 
 1. La **Aggiungi pipeline di produzione** una seconda scheda etichettata come **Codice sorgente**. Puoi selezionare **[Codice Stack Completo](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** o **[Codice front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Puoi scegliere la **Archivio** e **Ramo Git**. Selezionare Opzioni di distribuzione di produzione, come illustrato di seguito. Fai clic su **Continua**.
 
-   >[!IMPORTANT]
-   >Se per l’ambiente selezionato esiste già una pipeline del codice di stack completo, questa selezione verrà disabilitata.
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
+   >[!IMPORTANT]
+   >Se per l’ambiente selezionato esiste già una pipeline del codice di stack completo, questa selezione verrà disabilitata.
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/full-stack-disabled.png)
+
    >[!NOTE]
-   >Prima di iniziare a configurare le pipeline front-end, vedere AEM Percorso di creazione rapida di siti per un flusso di lavoro end-to-end tramite lo strumento di creazione rapida AEM facile da utilizzare. Questo sito di documentazione ti aiuterà a semplificare lo sviluppo front-end del tuo sito AEM e a personalizzare rapidamente il tuo sito senza AEM conoscenza back-end.
+   >Prima di iniziare a configurare le pipeline Front End, consulta [AEM Percorso di creazione di siti rapidi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) per un flusso di lavoro end-to-end tramite lo strumento di creazione rapida AEM facile da usare. Questo sito di documentazione ti aiuterà a semplificare lo sviluppo front-end del tuo sito AEM e a personalizzare rapidamente il tuo sito senza AEM conoscenza back-end.
 
    Opzioni di distribuzione della produzione:
 
