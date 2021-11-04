@@ -2,9 +2,9 @@
 title: Configurazione delle pipeline di produzione
 description: Configurazione delle pipeline di produzione
 index: true
-source-git-commit: 307472d5b9887101b9e365cafc781ec97a1bcdb5
+source-git-commit: f25e26c84a87cf793f9c8a5ac53009034e6cd2e9
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,18 @@ Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline di produzione**.
 
 1. La **Aggiungi pipeline di produzione** una seconda scheda etichettata come **Codice sorgente**. Puoi selezionare **[Codice Stack Completo](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** o **[Codice front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Puoi scegliere la **Archivio** e **Ramo Git**. Selezionare Opzioni di distribuzione di produzione, come illustrato di seguito. Fai clic su **Continua**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+
+   Se hai selezionato **Codice front-end**, devi selezionare la **Archivio**, **Ramo Git** e **Posizione codice**, come illustrato nella figura seguente:
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+
+   Se hai selezionato **Codice Stack Completo**, devi selezionare la **Archivio**, **Ramo Git** e **Opzioni di distribuzione di produzione**, come illustrato nella figura seguente:
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
+
+   **Opzioni di distribuzione della produzione:**
+
+   * **Sospendi prima della distribuzione in produzione**: Questa opzione consente alla distribuzione di interrompersi prima della produzione.
+   * **Pianificato**: Questa opzione consente all&#39;utente di abilitare la distribuzione di produzione pianificata.
 
    >[!IMPORTANT]
    >Se per l’ambiente selezionato esiste già una pipeline del codice di stack completo, questa selezione verrà disabilitata.
@@ -66,10 +77,9 @@ Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline di produzione**.
    >[!NOTE]
    >Prima di iniziare a configurare le pipeline Front End, consulta [AEM Percorso di creazione di siti rapidi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) per un flusso di lavoro end-to-end tramite lo strumento di creazione rapida AEM facile da usare. Questo sito di documentazione ti aiuterà a semplificare lo sviluppo front-end del tuo sito AEM e a personalizzare rapidamente il tuo sito senza AEM conoscenza back-end.
 
-   Opzioni di distribuzione della produzione:
 
-   * **Sospendi prima della distribuzione in produzione**: Questa opzione consente la pausa della fase di distribuzione prima della produzione.
-   * **Pianificato**: Questa opzione consente all&#39;utente di abilitare la distribuzione di produzione pianificata.
+
+
 
 1. La **Aggiungi pipeline di produzione** una terza scheda etichettata come **Audit delle esperienze**. Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi nel controllo di esperienza.
 
