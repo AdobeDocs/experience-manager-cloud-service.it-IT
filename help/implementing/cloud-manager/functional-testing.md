@@ -2,9 +2,9 @@
 title: Test funzionali - Cloud Services
 description: Test funzionali - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '920'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ Fai riferimento a [Test funzionali del prodotto](https://github.com/adobe/aem-te
 
 Il passaggio di test delle funzionalità personalizzate nella pipeline è sempre presente e non può essere ignorato.
 
-Tuttavia, se la build non produce JAR di test, il test viene superato per impostazione predefinita.
+La build deve produrre zero o un JAR di test. Se genera JAR di prova zero, il passaggio di test viene superato per impostazione predefinita. Se la build produce più di un JAR di test, il JAR selezionato non è deterministico.
 
 >[!NOTE]
 >Il pulsante **Download Log (Scarica registro)** consente di accedere a un file ZIP contenente i registri per il modulo dettagliato di esecuzione del test. Questi registri non includono i registri del processo di runtime effettivo AEM, a cui è possibile accedere utilizzando la regolare funzionalità Download o Tail Logs (Registri code). Fai riferimento a [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) per ulteriori dettagli.
