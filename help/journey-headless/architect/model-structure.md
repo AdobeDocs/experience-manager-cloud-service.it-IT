@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
+source-git-commit: 04e7cd99c98855ca109e112fd87877d0b6b536fc
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '690'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## La storia finora {#story-so-far}
 
-All&#39;inizio del [Percorso di authoring di contenuti headless](overview.md) [Nozioni di base sulla modellazione dei contenuti per headless con AEM](basics.md) sono stati trattati i concetti e la terminologia di base relativi all&#39;authoring per headless.
+All&#39;inizio del [AEM Percorso di authoring dei contenuti headless](overview.md) la [Nozioni di base sulla modellazione dei contenuti per headless con AEM](basics.md) ha trattato i concetti e la terminologia di base relativi all&#39;authoring per headless.
 
 Questo articolo si basa su questi elementi per comprendere come creare modelli di frammenti di contenuto personalizzati per il progetto AEM headless.
 
@@ -46,13 +46,13 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![Modelli per frammenti di contenuto negli strumenti](assets/cfm-tools.png)
 
-Dopo aver selezionato questa opzione, accedi alla posizione del modello e seleziona **Crea**. Qui puoi inserire vari dettagli chiave.
+Dopo aver selezionato questa opzione, si passa alla posizione del modello e si seleziona **Crea**. Qui puoi inserire vari dettagli chiave.
 
-L&#39;opzione **Abilita modello** è attivata per impostazione predefinita. Ciò significa che il modello sarà disponibile per l’uso (nella creazione di frammenti di contenuto) non appena lo avrai salvato. Se lo desideri, puoi disattivarlo; in seguito potrai abilitare (o disabilitare) un modello esistente.
+Opzione **Abilita modello** è attivato per impostazione predefinita. Ciò significa che il modello sarà disponibile per l’uso (nella creazione di frammenti di contenuto) non appena lo avrai salvato. Se lo desideri, puoi disattivarlo; in seguito potrai abilitare (o disabilitare) un modello esistente.
 
 ![Crea modello di frammento di contenuto](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-Confermare con **Crea** e quindi **Apri** il modello per iniziare a definire la struttura.
+Conferma con **Crea** e potete **Apri** il modello per iniziare a definire la struttura.
 
 ## Definizione dei modelli di frammenti di contenuto {#defining-content-fragment-models}
 
@@ -62,7 +62,7 @@ La prima volta che apri un nuovo modello viene visualizzato un grande spazio vuo
 
 Quindi - cosa fare?
 
-Puoi trascinare le istanze di **Tipi di dati** nello spazio a sinistra - stai già definendo il modello!
+Puoi trascinare le istanze della **Tipi di dati** nello spazio a sinistra - state già definendo il vostro modello!
 
 ![Definizione dei campi](/help/assets/content-fragments/assets/cfm-models-04.png)
 
@@ -101,13 +101,9 @@ I modelli di frammento di contenuto devono essere pubblicati quando/prima che ve
 >
 >Se un autore tenta di pubblicare un frammento di contenuto per il quale il modello non è ancora stato pubblicato, un elenco di selezione lo indicherà e il modello verrà pubblicato con il frammento.
 
->[!NOTE]
->
->La funzione Modelli per frammenti di contenuto bloccati (pubblicati) è in versione beta.
+Non appena un modello viene pubblicato, viene *bloccato* in modalità READ-ONLY sull&#39;autore. Questo obiettivo è quello di evitare modifiche che potrebbero causare errori agli schemi e alle query GraphQL esistenti, soprattutto nell’ambiente di pubblicazione. È indicato nella console da **Bloccato**.
 
-Non appena un modello viene pubblicato, viene *bloccato* in modalità DI SOLA LETTURA sull&#39;autore. Questo obiettivo è quello di evitare modifiche che potrebbero causare errori agli schemi e alle query GraphQL esistenti, soprattutto nell’ambiente di pubblicazione. È indicato nella console da **Bloccato**.
-
-Quando il modello è **Bloccato** (in modalità DI SOLA LETTURA), è possibile visualizzare il contenuto e la struttura dei modelli, ma non è possibile modificarli direttamente; anche se puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli.
+Quando il modello è **Bloccato** (in modalità DI SOLA LETTURA), è possibile visualizzare il contenuto e la struttura dei modelli, ma non è possibile modificarli direttamente; anche se puoi gestire **Bloccato** modelli dalla console o dall’editor modelli.
 
 ## Novità {#whats-next}
 
@@ -117,7 +113,7 @@ Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’in
 
 * [Concetti relativi all’authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) : questa pagina si basa principalmente sulla console  **** Sites , ma molte delle funzioni sono anche utili per navigare nei  **modelli di frammenti di** contenuto e per intervenire su di essi nella console  **** Risorse.
+* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - questa pagina si basa principalmente sul **Sites** console, ma molte delle funzioni sono utili anche per navigare verso e intervenire su di esse, **Modelli per frammenti di contenuto** in **Risorse** console.
 
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 

@@ -2,7 +2,7 @@
 title: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service.
 description: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 98c6207e84fda0d4bab3141c84507498f3527337
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 44%
@@ -13,18 +13,18 @@ ht-degree: 44%
 
 | Prodotto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versione | 2021.09.0 |
+| Versione | 2021.10.0 |
 | Tipo | Aggiornamenti continui |
 | Data di disponibilità | Aggiornamento continuo |
 
 ## Come preparare una versione {#how-to-prepare}
 
-Con il modello di rilascio continuo in [!DNL Adobe Experience Manager] as a Cloud Service, l&#39;applicazione viene aggiornata automaticamente su base continua. Esistono due tipi di aggiornamenti, versioni di funzioni e aggiornamenti critici:
+Con il modello di rilascio continuo in [!DNL Adobe Experience Manager] as a Cloud Service, l&#39;applicazione viene aggiornata automaticamente su base continuativa. Esistono due tipi di aggiornamenti, versioni di funzioni e aggiornamenti critici:
 
 * I rilasci di funzioni vengono effettuati con frequenza mensile prevedibile e sono incentrati su nuove funzionalità e innovazioni di prodotto.
-* Gli aggiornamenti critici vengono eseguiti frequentemente e si concentrano su aggiornamenti di sicurezza, correzioni di bug e miglioramenti delle prestazioni. In questo modo [!DNL Adobe Experience Manager] as a Cloud Service è sempre aggiornato con eventuali correzioni critiche.
+* Gli aggiornamenti critici vengono eseguiti frequentemente e si concentrano su aggiornamenti di sicurezza, correzioni di bug e miglioramenti delle prestazioni. Ciò assicura che [!DNL Adobe Experience Manager] L’as a Cloud Service è sempre aggiornato con eventuali correzioni critiche.
 
-Oltre alla velocità dell&#39;innovazione, [!DNL Adobe Experience Manager] as a Cloud Service offre la flessibilità di visualizzare in anteprima le prossime funzionalità con un mese di anticipo rispetto al momento in cui le funzionalità verranno rilasciate in produzione. Questo consente di valutare l’impatto di una versione futura sull’organizzazione sottoponendo a test le funzioni nel proprio ambiente personalizzato e di addestrare/preparare gli utenti interni con largo anticipo.
+Oltre alla rapidità dell&#39;innovazione, [!DNL Adobe Experience Manager] as a Cloud Service offre anche la flessibilità di visualizzare in anteprima le prossime funzionalità con un mese di anticipo rispetto al momento in cui le funzioni verranno rilasciate in produzione. Questo consente di valutare l’impatto di una versione futura sull’organizzazione sottoponendo a test le funzioni nel proprio ambiente personalizzato e di addestrare/preparare gli utenti interni con largo anticipo.
 
 >[!NOTE]
 >
@@ -32,9 +32,9 @@ Oltre alla velocità dell&#39;innovazione, [!DNL Adobe Experience Manager] as a 
 
 Per preparare una versione:
 
-1. Contrassegnare i calendari: Controlla le date chiave per le versioni mensili nella roadmap delle [versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) e contrassegna i tuoi calendari per prepararti alle attività chiave per prepararti alla versione.
-1. Consulta le note sulla versione: Leggi le [note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md) per avere familiarità con le funzioni di rilascio e prerelease.
-1. Accedi e prova le nuove funzioni: Abilita il [canale prerelease](/help/release-notes/prerelease.md) negli ambienti non di produzione e inizia a provare le funzioni da valutare negli ambienti personalizzati.
+1. Contrassegnare i calendari: Controlla le date chiave per i rilasci mensili sul [Roadmap dei rilasci di Experienci Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) contrassegna i tuoi calendari per prepararti alle attività chiave per prepararti alla versione.
+1. Consulta le note sulla versione: Leggi la sezione [note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md) per acquisire familiarità con le funzioni di rilascio e prerelease.
+1. Accedi e prova le nuove funzioni: Abilita la [canale prerelease](/help/release-notes/prerelease.md) negli ambienti non di produzione e inizia a provare le funzioni da valutare negli ambienti personalizzati.
 1. Formazione degli utenti: Utilizza la documentazione e le risorse di Experience League per fornire agli utenti informazioni aggiornate sulle nuove funzioni.
 
 ## Informazioni principali sulle versioni {#key-articles}
