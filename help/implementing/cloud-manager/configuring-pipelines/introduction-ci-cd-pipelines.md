@@ -2,7 +2,7 @@
 title: Pipeline CI-CD
 description: Segui questa pagina per informazioni sulle pipeline CI-CD di Cloud Manager
 index: true
-source-git-commit: 45cb3ea26a86de07f98e576a23542e250c99291f
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -86,6 +86,7 @@ Per informazioni su come configurare la pipeline front-end, consulta:
 ## Pipellini full-stack {#full-stack-pipeline}
 
 La pipeline full Stack offre all’utente la possibilità di implementare la configurazione back-end, front-end e HTTPD/dispatcher contemporaneamente.  Distribuisce codice e contenuto nel runtime di AEM, incluso il codice front-end (JavaScript/CSS) incluso nel pacchetto come librerie client AEM. Può distribuire la configurazione del livello web se non è configurata una pipeline del livello web. Rappresenta la pipeline &quot;uber&quot;, offrendo agli utenti le opzioni per distribuire esclusivamente il codice Front End o la configurazione del dispatcher tramite rispettivamente la pipeline Front End e la pipeline di configurazione del livello Web.
+Questi possono essere del tipo Stack completo - Qualità codice o Stack completo - pipeline di distribuzione.
 
 Saranno applicate le seguenti restrizioni:
 
@@ -97,7 +98,6 @@ Saranno applicate le seguenti restrizioni:
 
 1. La pipeline di stack completa per un ambiente ignorerà la configurazione del dispatcher se esiste la pipeline di configurazione del livello Web corrispondente per l’ambiente.
 
-Questi possono essere del tipo Stack completo - Qualità codice o Stack completo - pipeline di distribuzione.
 
 ### Configurare una pipeline di stack completa {#configure-full-stack}
 
