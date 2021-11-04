@@ -2,9 +2,9 @@
 title: Pipeline CI-CD
 description: Segui questa pagina per informazioni sulle pipeline CI-CD di Cloud Manager
 index: true
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ La tabella seguente riepiloga tutte le pipeline in Cloud Manager e il relativo u
 
 | Tipo di pipeline | Implementazione o qualità del codice | Codice sorgente | Quando utilizzare | Quando o perché dovrei usare? |
 |--- |--- |--- |---|---|
-| Produzione o non produzione | Implementazione | Front end | Tempi di implementazione rapidi.<br>È possibile configurare più pipeline front-end ed eseguirle contemporaneamente per ogni ambiente.<br>La build della pipeline Front End invia la build a uno storage. Quando viene servita una pagina HTML, può fare riferimento a file statici Frontend Code che verranno serviti dalla CDN utilizzando questa memorizzazione come origine. | Per distribuire esclusivamente codice front-end contenente una o più applicazioni dell’interfaccia utente lato client. Il codice front-end è qualsiasi codice che viene utilizzato come file statico. È separato dal codice dell’interfaccia utente gestito da AEM. Include i temi Sites, le SPA definite dal cliente, Firefly SPA e qualsiasi altra soluzione.<br>Deve essere AEM versione 2021.10.5933.20211012T154732Z |
+| Produzione o non produzione | Implementazione | Front end | Tempi di implementazione rapidi.<br>È possibile configurare più pipeline front-end ed eseguirle contemporaneamente per ogni ambiente.<br>La build della pipeline Front End invia la build a uno storage. Quando viene servita una pagina HTML, può fare riferimento a file statici Frontend Code che verranno serviti dalla CDN utilizzando questa memorizzazione come origine. | Per distribuire esclusivamente codice front-end contenente una o più applicazioni dell’interfaccia utente lato client. Il codice front-end è qualsiasi codice che viene utilizzato come file statico. È separato dal codice dell’interfaccia utente gestito da AEM. Include i temi Sites, le SPA definite dal cliente, Firefly SPA e qualsiasi altra soluzione.<br>Deve essere AEM versione 2021.10.5933.20211012T154732Z<br>È necessario che Sites sia abilitato. |
 | Produzione o non produzione | Implementazione | Stack completo | Quando le condutture front end non sono ancora state adottate.<br>Per i casi in cui il codice Front End deve essere distribuito esattamente nello stesso momento del codice del server AEM. | Per distribuire AEM codice server (contenuto immutabile, codice Java, configurazioni OSGi, configurazione HTTPD/dispatcher, reindirizzamento, contenuto mutabile, font), contenente una o più applicazioni server AEM tutte allo stesso tempo. |
 | Non produzione | Qualità del codice | Front end | Avere la valutazione di Cloud Manager. la creazione è riuscita e la qualità del codice senza eseguire una distribuzione.<br>È possibile configurare ed eseguire più pipeline. | Esegui analisi della qualità del codice sul codice front-end. |
 | Non produzione | Qualità del codice | Stack completo | Avere la valutazione di Cloud Manager. la creazione è riuscita e la qualità del codice senza eseguire una distribuzione.<br>È possibile configurare ed eseguire più pipeline. | Esegui la scansione della qualità del codice sull&#39;intero codice dello stack. |
