@@ -2,9 +2,9 @@
 title: Modifica di una pipeline non di produzione
 description: Modifica di una pipeline non di produzione
 index: true
-source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
+source-git-commit: 7dc9f9a189927f3522445fac36a1606521f410b2
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Puoi eseguire la pipeline di produzione dalla scheda Pipelines :
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
-#### Eliminazione di una pipeline non di produzione {#delete-nonprod}
+### Eliminazione di una pipeline non di produzione {#delete-nonprod}
 
 Puoi eliminare la pipeline di produzione dalla scheda Pipelines :
 
