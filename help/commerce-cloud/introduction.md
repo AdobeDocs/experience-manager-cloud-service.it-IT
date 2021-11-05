@@ -3,7 +3,7 @@ title: Introduzione e panoramica
 description: Introduzione e panoramica di contenuti e soluzioni commerce. Experience Manager Commerce Integration Framework (CIF) è il modello consigliato di Adobe per integrare ed estendere i servizi commerce da soluzioni commerce di Magenti e di altre soluzioni commerce di terze parti con l’Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 8a8a1f7f461e5a02bfadfc392508d920bd6c1601
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 2%
@@ -16,9 +16,9 @@ Con i contenuti e il commercio di Adobe Experience Manager, i brand possono scal
 
 ## Come i contenuti e il commercio aiutano i clienti ad avere successo
 
-Con le sempre crescenti aspettative dei clienti per le esperienze di e-commerce online, i brand sono costretti a fornire esperienze differenziate e più contenuti più rapidamente. Tuttavia, l’implementazione di una piattaforma di gestione dei contenuti richiede spesso un forte investimento in termini di tempo e budget per lo sviluppo di elementi fondamentali, come componenti personalizzati e strumenti di authoring, e matura i costi di manutenzione e aggiornamento. Experience Manager Sites offre Contenuto e Commerce come modulo aggiuntivo, ad Experience Manager come Cloud Service che fornisce componenti core di e-commerce pronti all’uso, strumenti di authoring e una vetrina di riferimento per accelerare il go-live, consentire una collaborazione fluida tra i team e favorire la conversione.
+Con le sempre crescenti aspettative dei clienti per le esperienze di e-commerce online, i brand sono costretti a fornire esperienze differenziate e più contenuti più rapidamente. Tuttavia, l’implementazione di una piattaforma di gestione dei contenuti richiede spesso un forte investimento in termini di tempo e budget per lo sviluppo di elementi fondamentali, come componenti personalizzati e strumenti di authoring, e matura i costi di manutenzione e aggiornamento. Experience Manager Sites offre Content and Commerce come modulo aggiuntivo per Experience Manager as a Cloud Service che fornisce componenti core e strumenti di authoring pronti all’uso e una vetrina di riferimento per accelerare il go-live, consentire una collaborazione fluida tra i team e favorire la conversione.
 
-I marchi possono integrare Experience Manager con Adobe Commerce, parte di Adobe Experience Cloud e qualsiasi motore di e-commerce scelto. Con Experience Manager Content and Commerce, i brand possono:
+I marchi possono integrare Experience Manager con Adobe Commerce, parte di Adobe Experience Cloud, nonché qualsiasi motore di e-commerce scelto. Con Experience Manager Content and Commerce, i brand possono:
 
 * Scalabilità e innovazione più veloci
 * Personalizzare le esperienze per favorire la conversione
@@ -26,7 +26,7 @@ I marchi possono integrare Experience Manager con Adobe Commerce, parte di Adobe
 * Arricchire e differenziare le esperienze per i clienti
 * Authoring semplificato con accesso ai dati di e-commerce
 
-## Introduzione di Commerce Integration Framework (CIF) {#cif-intro} AEM
+## Introduzione di AEM Commerce Integration Framework (CIF) {#cif-intro}
 
 Poiché questi progetti devono affrontare la complessità dell&#39;integrazione di una soluzione commerciale. Una soluzione di e-commerce può essere qualsiasi cosa, da una soluzione commerciale come Adobe Commerce Cloud a un set di servizi di e-commerce personalizzati. L&#39;integrazione dipende fortemente dai casi d&#39;uso e dall&#39;ecosistema. Di solito tocca vari luoghi e viene in molti sapori diversi:
 
@@ -58,13 +58,13 @@ I potenti strumenti CIF in AEM consentono ai creatori di contenuti di creare rap
 
 ### Time-To-Value (TTV)
 
-Accelera lo sviluppo dei progetti con [AEM Componenti core](https://www.aemcomponents.dev/), [AEM Venia reference storefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) e pattern di integrazione per PWA (Headless content &amp; commerce).
+Accelera lo sviluppo dei progetti con [Componenti core AEM](https://www.aemcomponents.dev/), [Area di riferimento di AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)e modelli di integrazione per PWA (contenuto headless e commerce).
 
 CIF è progettato per l’innovazione continua con un componente aggiuntivo sempre aggiornato, che consente ai clienti di accedere a funzioni nuove e migliorate.
 
-### Integrations (Integrazioni)
+### Integrazioni
 
-Collega l&#39;ecosistema (ad esempio, la soluzione commerce) con l&#39;Experience Cloud utilizzando [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS basato su micro-servizi senza server e l&#39;implementazione di riferimento di [CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Collegare l&#39;ecosistema (ad esempio, la soluzione commerce) con l&#39;Experience Cloud utilizzando  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS basato su micro-servizi senza server, e [Implementazione di riferimento di CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Pattern collaudati e best practice
 
