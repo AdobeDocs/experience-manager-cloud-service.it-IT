@@ -1,29 +1,29 @@
 ---
 title: Formati di file e tipi MIME supportati
-description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come a [!DNL Cloud Service].
+description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] come [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 10%
+source-wordcount: '834'
+ht-degree: 9%
 
 ---
 
 # [!DNL Assets] formati di file supportati {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a  [!DNL Cloud Service] supporta funzionalità di base per la gestione dei contenuti - archiviazione, gestione dei metadati online, controllo delle versioni, caricamento e download e così via - per qualsiasi file binario, indipendentemente dal formato. [!DNL Adobe Experience Manager Assets] supporta un’ampia gamma di formati di file e ogni funzionalità di prodotto supporta diversi formati.
+[!DNL Adobe Experience Manager] come [!DNL Cloud Service] supporta funzionalità di gestione dei contenuti di base, quali archiviazione, gestione dei metadati online, controllo delle versioni, caricamento e download, e così via, per qualsiasi file binario, indipendentemente dal formato. [!DNL Adobe Experience Manager Assets] supporta un’ampia gamma di formati di file e ogni funzionalità di prodotto supporta diversi formati.
 
-Inoltre, [!DNL Experience Manager Assets] offre un esteso supporto per generare anteprime e rappresentazioni ed estrarre metadati e testo per l’indicizzazione full-text. Questo supporto esteso viene fornito utilizzando i [microservizi per le risorse](asset-microservices-configure-and-use.md).
+Inoltre, [!DNL Experience Manager Assets] fornisce un supporto esteso per generare anteprime e rappresentazioni ed estrarre metadati e testo per l’indicizzazione full-text. Questo supporto esteso viene fornito utilizzando [microservizi per le risorse](asset-microservices-configure-and-use.md).
 
 Gli elementi di rilievo per la conversione delle risorse tramite i microservizi per le risorse includono:
 
-* I formati di file di Adobe [prodotti da applicazioni e servizi Adobe, inclusi [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] o PDF, sono ](#adobe-formats).
+* Chiave [Adobe di formati di file](#adobe-formats) prodotti da applicazioni e servizi di Adobe, compresi [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension]e [!DNL Adobe Acrobat] o PDF.
 * Chiave [formati di file immagine](#image-formats).
-* [Formati di file Camera Raw ](#camera-raw-formats) per una vasta gamma di telecamere, tra cui Canon, Nikon, Fujifilm, Olympus e altri produttori (alimentati da Adobe Camera Raw).
-* Formati di documenti [comuni](#document-formats), inclusi i formati Microsoft Office e Open Document.
+* [Formati di file Camera Raw](#camera-raw-formats) per una vasta gamma di telecamere, tra cui Canon, Nikon, Fujifilm, Olympus e altri produttori (alimentati da Adobe Camera Raw).
+* Comune [formati documento](#document-formats), inclusi i formati Microsoft Office e Open Document.
 * Ampia gamma di formati [video](#video-formats) e [audio.](#audio-formats)
 
 La legenda seguente descrive il livello di supporto per ciascun formato.
@@ -50,7 +50,7 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 | PSD | . | - | . | . |
 | XD | . | - | . | . |
 
-\* Per i file [!DNL Adobe InDesign] (INDD), la dimensione del rendering è determinata dall&#39;anteprima incorporata nel file INDD. Configura le preferenze in [!DNL InDesign] (**[!UICONTROL Preferenze > Gestione file > Salva sempre anteprima immagini con documenti, Dimensione anteprima]**) per incorporare una rappresentazione più grande.
+\* Per [!DNL Adobe InDesign] file (INDD), la dimensione del rendering è determinata dall’anteprima incorporata nel file INDD. Configura le preferenze in [!DNL InDesign] (**[!UICONTROL Preferenze > Gestione file > Salva sempre immagini di anteprima con documenti, Dimensione anteprima]**) per incorporare rappresentazioni di dimensioni maggiori.
 
 ## Formati immagine {#image-formats}
 
@@ -77,10 +77,10 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 | JPEG | . | . | . | . | . |
 | PICT | . | - | - | - | - |
 | PNG | . | . | . | . | . |
-| PSD   infinito | . | - | - | - | - |
+| PSD | . | - | - | - | - |
 | TIFF | . | . | . | . | . |
 
-† L&#39;immagine unita viene estratta dal file PSD. Si tratta di un’immagine generata da [!DNL Adobe Photoshop] e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere o meno l’immagine effettiva.
+† L&#39;immagine unita viene estratta dal file PSD. È un’immagine generata da [!DNL Adobe Photoshop] ed è incluso nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere o meno l’immagine effettiva.
 
 I seguenti sottotipi di formati di file immagine raster non supportati in [!DNL Dynamic Media]:
 
@@ -95,7 +95,7 @@ I seguenti sottotipi di formati di file immagine raster non supportati in [!DNL 
 
 Sono supportati i seguenti formati 3D.
 
-Consulta anche [Utilizzo di risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Vedi anche [Utilizzo di risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 | Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo dell&#39;accesso | Anteprima miniature | Anteprima 3D | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -217,7 +217,20 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 ## Formati audio {#audio-formats}
 
-[!DNL Assets] as a  [!DNL Cloud Service] fornisce supporto per l’estrazione dei metadati XMP per i formati audio AIF, ASF, M4A, MP3, WAV e WMA.
+[!DNL Assets] come [!DNL Cloud Service] fornisce supporto per l’estrazione dei metadati XMP per i formati audio AIF, ASF, M4A, MP3, WAV e WMA.
+
+## Formati di ingresso supportati per la trascrizione audio e video {#audio-video-transcription-formats}
+
+* FLV (con codec H.264 e AAC) (.flv)
+* MXF (.mxf)
+* MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
+* Windows Media Video (WMV)/ASF (.wmv, .asf)
+* AVI (8 bit non compressi/10 bit) (.avi)
+* MP4 (.mp4, .m4a, .m4v)
+* Registrazione video digitale Microsoft (DVR-MS) (.dvr-ms)
+* Matroska/WebM (.mkv)
+* WAVE/WAV (.wav)
+* QuickTime (.mov)
 
 ## Suggerimenti e limitazioni {#limitations-and-tips}
 

@@ -3,9 +3,9 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a0bf314ff8f994dd77c2c124db1ab604dcae74b6
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1436'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di ottobre 2021](https://video
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] ora supporta la generazione automatica di trascrizioni di testo dalle risorse audio e video supportate, utilizzando un connettore integrato per [!DNL Azure Media Services]. I file supportati vengono automaticamente trascritti e il testo viene memorizzato in formato WebVTT. Le didascalie WebVTT vengono utilizzate per operazioni di ricerca, sottotitoli o traduzione più efficaci. Inoltre, la funzione migliora l’accessibilità, la scoperta e la localizzazione delle risorse.
+* [!DNL Experience Manager] ora supporta la generazione automatica di trascrizioni di testo dalle risorse audio e video supportate, utilizzando un connettore integrato per [!DNL Azure Media Services]. La [tipi di file supportati](/help/assets/file-format-support.md#audio-video-transcription-formats) vengono automaticamente trascritti e il testo viene memorizzato in formato WebVTT. Le didascalie WebVTT vengono utilizzate per operazioni di ricerca, sottotitoli o traduzione più efficaci. Inoltre, la funzione migliora l’accessibilità, la scoperta e la localizzazione delle risorse.
 
 ### Nuova funzione nel [!DNL Assets] canale prerelease {#assets-prerelease-features}
 
