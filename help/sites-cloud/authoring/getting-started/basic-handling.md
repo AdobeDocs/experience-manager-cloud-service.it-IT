@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e le funzioni di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
 workflow-type: tm+mt
-source-wordcount: '2881'
-ht-degree: 98%
+source-wordcount: '2939'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
 | Progetti | La console Progetti consente di accedere direttamente ai progetti. [I progetti sono dashboard virtuali](/help/sites-cloud/authoring/projects/overview.md) che possono essere utilizzati per creare un team. Potrai quindi fornire al team l’accesso a risorse, flussi di lavoro e attività, facilitando la collaborazione verso un obiettivo comune. |
 | Sites | Le console Sites ti permettono di [creare, visualizzare e gestire siti web](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) in esecuzione sull’istanza AEM. Da questa console puoi creare, modificare, copiare, spostare ed eliminare pagine di siti web, avviare flussi di lavoro e pubblicare pagine. |
 | Frammenti esperienza | Un [frammento di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse. |
-| Assets | La console Assets consente di importare e gestire [risorse digitali quali immagini, video, documenti e file audio](/help/assets/overview.md). Puoi usare queste risorse da qualunque sito web in esecuzione nell’istanza di AEM. Puoi anche creare e gestire [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) dalla console Risorse. |
+| Assets | La console Risorse consente di importare e gestire [risorse digitali quali immagini, video, documenti e file audio](/help/assets/overview.md). Puoi usare queste risorse da qualunque sito web in esecuzione nell’istanza di AEM. Puoi anche creare e gestire [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) dalla console Risorse . |
 | Personalizzazione | Questa console fornisce un set di strumenti per la [creazione e modifica di contenuti mirati e la presentazione di esperienze personali.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## Pannello Strumenti {#tools-panel}
@@ -202,7 +202,7 @@ Sono disponibili diverse risorse di Aiuto:
    >Per una panoramica di tutte le scelte rapide da tastiera, consulta la documentazione seguente:
    >
    >* [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   * [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   >* [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Barra delle azioni  {#actions-toolbar}
@@ -222,7 +222,8 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 ![Opzioni aggiuntive](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
-Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
+>
+>Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
 ## Azioni rapide  {#quick-actions}
 
@@ -243,7 +244,8 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 * [Vista a elenco ](#list-view)
 
 >[!NOTE]
-Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
+>
+>Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
 ### Selezionare le risorse  {#selecting-resources}
 
@@ -361,7 +363,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
    * **Nome**: nome della pagina, utile in un ambiente di authoring multilingue poiché fa parte dell’URL della pagina e non viene modificato indipendentemente dalla lingua
    * **Modificato**: data dell’ultima modifica e dell’utente che l’ha eseguita
    * **Pubblicato**: stato della pubblicazione
-   * **Anteprima**  - Stato anteprima
+   * **Anteprima** - Stato anteprima
    * **Modello**: modello su cui si basa la pagina
    * **Flusso di lavoro**: flusso di lavoro attualmente applicato alla pagina. Ulteriori informazioni sono disponibili quando passi sopra con il mouse o apri la Timeline.
    * **Dati analitici pagina**
@@ -374,7 +376,8 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 * Cambia l’ordine degli elementi utilizzando la barra verticale punteggiata all’estrema destra di ciascun elemento dell’elenco.
 
    >[!NOTE]
-   La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
+   >
+   >La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
 
    ![Ordine delle colonne](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -388,12 +391,13 @@ Il **selettore della barra** è disponibile in alto a sinistra nella finestra e 
 
 ![Selettore della barra espanso](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-Ad esempio, in **Sites** puoi selezionare solo il contenuto (opzione predefinita), la struttura del contenuto, la timeline, i riferimenti o il pannello laterale del filtro.
+Ad esempio, nella **Sites** console è possibile selezionare solo il contenuto (opzione predefinita), la struttura del contenuto, la timeline, i riferimenti, i dettagli del sito o il pannello laterale del filtro.
 
 Se selezioni solo il contenuto, appare solo l’icona della barra. Quando selezioni qualsiasi altra opzione, il nome è visualizzato accanto all’icona della barra.
 
 >[!NOTE]
-Sono disponibili [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) per passare rapidamente da un’opzione all’altra della barra.
+>
+>Sono disponibili [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) per passare rapidamente da un’opzione all’altra della barra.
 
 ### Struttura contenuto {#content-tree}
 
@@ -404,8 +408,10 @@ Mediante il pannello laterale della struttura del contenuto, insieme alla vista 
 ![Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
-Una volta selezionata una voce nella visualizzazione gerarchica, puoi spostarti rapidamente nella gerarchia attraverso i tasti freccia.
-Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+>
+>Una volta selezionata una voce nella visualizzazione gerarchica, puoi spostarti rapidamente nella gerarchia attraverso i tasti freccia.
+>
+>Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 ### Timeline  {#timeline}
 
@@ -452,6 +458,18 @@ Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**
    * Contenuti presi in prestito da e/o prestati alla pagina selezionata dal componente Riferimento
 
 ![Esempio di riferimenti](/help/sites-cloud/authoring/assets/references-example.png)
+
+### Sito {#site}
+
+**Sito** mostra i dettagli dei siti [creato utilizzando un modello di sito.](/help/sites-cloud/administering/site-creation/create-site.md)
+
+![Barra del sito](../assets/site-rail.png)
+
+Tocca o fai clic sul pulsante **Scaricare le origini dei temi** personalizzare [tema del sito.](/help/sites-cloud/administering/site-creation/site-themes.md)
+
+>[!TIP]
+>
+>Una descrizione end-to-end del processo di creazione di un nuovo sito da un modello e personalizzazione del relativo tema si trova nella [Percorso di creazione rapida del sito.](/help/journey-sites/quick-site/overview.md)
 
 ### Filtro {#filter}
 

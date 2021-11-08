@@ -5,9 +5,9 @@ breadcrumb-title: percorsi AEM Sites
 user-guide-description: Inizia qui per un percorso guidato attraverso le funzionalità di siti potenti e flessibili di AEM, le loro funzionalità e come sfruttarle nel tuo progetto.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: a86b404fc37db0b434ef48108eb4078ed1aa1efa
+source-git-commit: 5c7595b50c53bd37be9648dbdc753a3eb1746e4a
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
@@ -24,3 +24,12 @@ ht-degree: 0%
    + [Configurare le regole di traduzione](translation/translation-rules.md)
    + [Tradurre il contenuto](translation/translate-content.md)
    + [Pubblicare contenuti tradotti](translation/publish-content.md)
++ AEM Percorso di creazione di siti rapidi {#quick-site}
+   + [Comprendere AEM Creazione rapida del sito](quick-site/overview.md)
+   + [Comprendere Cloud Manager](quick-site/cloud-manager.md)
+   + [Crea sito da modello](quick-site/create-site.md)
+   + [Configurare la pipeline](quick-site/pipeline-setup.md)
+   + [Concedere l’accesso allo sviluppatore front-end](quick-site/grant-access.md)
+   + [Recuperare le informazioni di accesso all’archivio Git](quick-site/retrieve-access.md)
+   + [Personalizzare il tema del sito](quick-site/customize-theme.md)
+   + [Distribuisci il tema personalizzato](quick-site/deploy-theme.md)

@@ -1,13 +1,13 @@
 ---
 title: percorsi di documentazione AEM
 description: I Percorsi di documentazione forniscono una struttura narrativa all'interno AEM documentazione mediante l'unione di funzioni complesse e disparate al fine di risolvere un obiettivo aziendale in modo best practice. Progettati con AEM principianti, i percorsi introducono i concetti e le funzionalità per raggiungere un obiettivo da A a Z.
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
+source-git-commit: 1f8f6aea389ecf5416121354876a68273cd653e7
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1313'
 ht-degree: 1%
 
 ---
-
 
 # percorsi di documentazione AEM {#aem-documentation-journeys}
 
@@ -17,7 +17,7 @@ I Percorsi di documentazione forniscono una struttura narrativa all&#39;interno 
 
 Un Percorso di documentazione unisce molti argomenti e funzionalità diversi e complessi fornendo una narrazione che aiuta il lettore, che può essere nuovo a AEM, capire e risolvere un problema aziendale dall&#39;inizio alla fine, assumendo al contempo una conoscenza minima dell&#39;argomento precedente o AEM.
 
-I Percorsi di documentazione sono in contrasto con AEM documenti tecnici esistenti che si concentrano principalmente su un&#39;unica funzione e documentazione delle attività, supponendo che le AEM siano familiari. Concentrandosi sui concetti e rinviando i dettagli approfonditi alla documentazione tecnica esistente, i Percorsi di documentazione offrono ai lettori nuovi strumenti per AEM una posizione in cui iniziare a comprendere come sfruttare la piattaforma utilizzando le best practice per rispondere a esigenze e flussi di lavoro aziendali comuni. Per questo motivo, i Percorsi di documentazione fungono da complemento e non da sostituzione della [AEM documentazione tecnica esistente.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it)
+I Percorsi di documentazione sono in contrasto con AEM documenti tecnici esistenti che si concentrano principalmente su un&#39;unica funzione e documentazione delle attività, supponendo che le AEM siano familiari. Concentrandosi sui concetti e rinviando i dettagli approfonditi alla documentazione tecnica esistente, i Percorsi di documentazione offrono ai lettori nuovi strumenti per AEM una posizione in cui iniziare a comprendere come sfruttare la piattaforma utilizzando le best practice per rispondere a esigenze e flussi di lavoro aziendali comuni. Per questo motivo, i Percorsi di documentazione fungono da complemento e non da sostituzione di [AEM la documentazione tecnica esistente.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it)
 
 ### Apprendimento per narrazione {#narrative}
 
@@ -33,7 +33,7 @@ I percorsi garantiscono che il lettore sappia come AEM risolvere un problema inv
 
 ### Orientamento alle best practice {#best-practices}
 
-I Percorsi di documentazione sono progettati in base ai principi delle best practice, in base alle ultime ricerche condotte da Adobe, all&#39;esperienza comprovata nell&#39;implementazione dei servizi di Adobe e al feedback ricevuto dai progetti dei clienti.
+I Percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte dei servizi Adobe e del feedback dai progetti dei clienti.
 
 Se desideri sapere come Adobe consiglia di risolvere un caso di business con AEM, i Percorsi di documentazione sono la posizione di partenza.
 
@@ -74,10 +74,10 @@ I Percorsi di documentazione sono intesi come complemento alla documentazione te
 
 | Tipo di documentazione | Scopo | Pubblico | Presupposti | Omaggi | Tipo di contenuto | Length |
 |---|---|---|---|---|---|---|
-| Percorso di documentazione | Un percorso definisce come AEM risolvere un problema aziendale generale attraverso una narrazione che guida i lettori attraverso processi e funzionalità complesse e intercorrelate. Illustra come le diverse funzioni funzionano insieme per risolvere un&#39;esigenza aziendale in modo ottimale. | Reader nuovi a AEM | familiarità generale con CMS | Opzioni e configurazione dettagliate | Testo | Ca 1 ora |
+| Percorso di documentazione | Un percorso definisce come AEM risolvere un problema aziendale generale attraverso una narrazione che guida i lettori attraverso processi e funzionalità complesse e intercorrelate. Illustra come le diverse funzioni funzionano insieme per risolvere un&#39;esigenza aziendale in modo ottimale. | Reader nuovi a AEM | familiarità generale con CMS | Opzioni e configurazione dettagliate | Testo | Ca. 1 ora |
 | Documenti tecnici | I documenti tecnici si concentrano sulle singole funzioni, descrivendo in dettaglio il funzionamento tecnico della funzione e ogni opzione disponibile per l&#39;utente. | Utenti AEM esperti | esperienza AEM | Contesto e contesto | Testo | Varie |
 | Esercitazione | Un tutorial è un&#39;immersione approfondita in un argomento che mostra a uno sviluppatore o un amministratore come raggiungere un obiettivo tecnico (generalmente programmazione o configurazione del sistema) in modo dettagliato, fornendo esempi specifici e codice di esempio, solitamente sfruttando un set limitato di funzioni. | Sviluppatori o amministratori AEM | esperienza AEM | Contesto e teoria | Video | >1 ora |
-| Guida introduttiva | Una guida introduttiva è una guida rapida e fulmine di una nuova funzione AEM specifica. Offre una panoramica rapida di una singola funzione e guida l’utente attraverso i passaggi importanti (ma non tutti) per configurare e utilizzare un caso d’uso semplice. | Amministratori AEM | esperienza AEM | Sfondo, teoria, opzioni dettagliate | Testo | &lt;1 hour=&quot;&quot;> |
+| Guida introduttiva | Una guida introduttiva è una guida rapida e fulmine di una nuova funzione AEM specifica. Offre una panoramica rapida di una singola funzione e guida l’utente attraverso i passaggi importanti (ma non tutti) per configurare e utilizzare un caso d’uso semplice. | Amministratori AEM | esperienza AEM | Sfondo, teoria, opzioni dettagliate | Testo | &lt;1 ora |
 
 ## Che Percorsi Ci Sono? {#journeys}
 
@@ -87,9 +87,10 @@ Sono già disponibili diversi Percorsi di documentazione. Poiché ogni percorso 
 |---|---|
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Inizia qui per vedere come AEM supporta modelli di sviluppo headless e come iniziare a pianificare, implementare e seguire i processi di progettazione. |
 | [Percorso di authoring headless](/help/journey-headless/author/overview.md) | Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless. |
-| [Percorso architetto headless](/help/journey-headless/architect/overview.md) | Inizia qui per un’introduzione alle funzionalità avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e per scoprire come modellare i contenuti per il tuo progetto. |
+| [Percorso architetto headless](/help/journey-headless/architect/overview.md) | Inizia qui per un’introduzione alle funzionalità avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e a come modellare i contenuti per il tuo progetto. |
 | [Percorso di traduzione headless](/help/journey-headless/translation/overview.md) | Inizia qui per scoprire come impostare e gestire i tuoi progetti di traduzione headless in AEM. |
-| percorso di onboarding AEM | Presto! |
+| [percorso di onboarding AEM](/help/journey-onboarding/home.md) | Inizia qui per iniziare a lavorare rapidamente con il tuo nuovo ambiente as a Cloud Service AEM! |
+| [AEM Percorso di creazione di siti rapidi](/help/journey-sites/quick-site/overview.md) | Iniziate qui per un percorso guidato attraverso lo strumento di creazione AEM sito rapido semplice da utilizzare per semplificare lo sviluppo front-end del sito di AEM e personalizzare rapidamente il sito senza AEM conoscenza back-end. |
 | percorso Commerce AEM | Presto! |
 | Percorso di migrazione AEMaaCS | Presto! |
 
