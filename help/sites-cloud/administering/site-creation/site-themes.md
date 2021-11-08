@@ -13,17 +13,17 @@ ht-degree: 1%
 
 # Temi del sito {#site-themes}
 
-Learn how AEM site themes can be used to customize the style and design of your site.
+Scopri come utilizzare AEM temi del sito per personalizzare lo stile e la progettazione del sito.
 
 >[!CAUTION]
 >
->Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
+>Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. Esso è messo a disposizione a fini di prova e valutazione e non è destinato all&#39;uso della produzione se non concordato con il sostegno Adobe.
 
 ## Panoramica {#overview}
 
 Un tema del sito AEM è un pacchetto contenente le risorse CSS, JavaScript e statiche che definiscono lo stile del sito AEM e rispetta la struttura di un tema del sito AEM.
 
-Sites created with AEM site templates allow for the easy download, customization, and redeployment of the themes.
+I siti creati con modelli di sito AEM consentono di scaricare, personalizzare e ridistribuire facilmente i temi.
 
 >[!NOTE]
 >
@@ -34,18 +34,18 @@ Sites created with AEM site templates allow for the easy download, customization
 I temi del sito vengono utilizzati in due modi diversi:
 
 * Vengono utilizzati come parte di un modello di sito per definire lo stile quando [creazione di un sito.](create-site.md)
-* They are downloaded after creating a site based on a site template so a front-end developer can further customize the styling.
+* Vengono scaricati dopo la creazione di un sito basato su un modello di sito in modo che uno sviluppatore front-end possa personalizzare ulteriormente lo stile.
 
 >[!TIP]
 >
 >Una descrizione end-to-end del processo di creazione di un sito da un modello e personalizzazione del relativo tema si trova nella [Percorso di creazione rapida del sito.](/help/journey-sites/quick-site/overview.md)
 
-## Site Theme Structure {#structure}
+## Struttura del tema del sito {#structure}
 
-Site themes are simply packages with a logical structure that clearly reflects the purpose of the package content. Un tema del sito ha la seguente struttura tipica di un progetto front-end.
+I temi del sito sono semplicemente pacchetti con una struttura logica che riflette chiaramente lo scopo del contenuto del pacchetto. Un tema del sito ha la seguente struttura tipica di un progetto front-end.
 
 * `src/main.ts`: Il punto di ingresso principale del tema JS e CSS
-* `src/site`: JS &amp; CSS files that apply to the entire site
+* `src/site`: File JS e CSS applicabili all’intero sito
 * `src/components`: File JS e CSS specifici per i componenti AEM
 * `src/resources`: File statici come icone, loghi e font
 
@@ -57,4 +57,4 @@ Adobe fornisce un tema di riferimento sulle best practice da utilizzare come bas
 
 Adobe fornisce e AEM Site Theme Builder come set di script per la creazione di nuovi temi del sito.
 
-[The AEM Site Theme Builder is available along with usage documentation on GitHub.](https://github.com/adobe/aem-site-theme-builder) Front-end development experience is required for customizing the theme.
+[È disponibile AEM Site Theme Builder e la relativa documentazione di utilizzo su GitHub.](https://github.com/adobe/aem-site-theme-builder) Per personalizzare il tema è necessaria un’esperienza di sviluppo front-end.
