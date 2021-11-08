@@ -8,7 +8,7 @@ role: Developer, Architect
 source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 34%
+ht-degree: 36%
 
 ---
 
@@ -138,7 +138,7 @@ ht-degree: 34%
          + [Panoramica dei componenti](developing/components/overview.md)
          + [Modelli](developing/components/templates.md)
          + [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-         + [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
+         + [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=it)
          + [Esportatore JSON per Content Services](developing/components/json-exporter.md)
          + [Abilitazione dell’esportazione JSON per un componente](developing/components/enabling-json-exporter.md)
          + [Editor immagine](developing/components/image-editor.md)
