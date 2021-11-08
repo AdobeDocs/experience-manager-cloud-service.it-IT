@@ -1,10 +1,10 @@
 ---
 title: Recupera informazioni di accesso all’archivio Git
 description: Scopri in che modo lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell’archivio Git.
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 3%
+source-wordcount: '928'
+ht-degree: 4%
 
 ---
 
@@ -82,19 +82,11 @@ Se non hai ricevuto questa e-mail, contatta l’amministratore di Cloud Manager.
 
 1. Accedi a Adobe Experience Cloud all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) oppure fai clic sul collegamento fornito nell’e-mail di benvenuto.
 
-1. Una volta effettuato l’accesso, assicurati di essere nell’organizzazione corretta effettuando il controllo nell’angolo in alto a destra dello schermo. Se sei membro di una sola organizzazione, questo passaggio non è necessario. Quindi tocca o fai clic su **Experience Manager**.
-
-   ![Panoramica dell’Experience Cloud](assets/experience-cloud-overview.png)
-
-1. Nella pagina successiva, tocca o fai clic sul pulsante **Launch** per avviare **Cloud Manager** app.
-
-   ![Experience Manager apps](assets/experience-manager-apps.png)
-
-1. Nella pagina successiva sono elencati i vari programmi disponibili. Tocca o fai clic su quello a cui devi accedere come fornito dall’amministratore di Cloud Manager. Se si tratta del primo progetto front-end per AEMaaCS, probabilmente è disponibile un solo programma.
+1. Cloud Manager elenca i vari programmi disponibili. Tocca o fai clic su quello a cui devi accedere come fornito dall’amministratore di Cloud Manager. Se si tratta del primo progetto front-end per AEMaaCS, probabilmente è disponibile un solo programma.
 
    ![Selezione di un programma in Cloud Manager](assets/cloud-manager-select-program.png)
 
-Viene visualizzata una panoramica di Cloud Manager. La pagina avrà un aspetto diverso ma simile a questo esempio.
+Viene visualizzata una panoramica del programma. La pagina avrà un aspetto diverso ma simile a questo esempio.
 
 ![Panoramica di Cloud Manager](assets/cloud-manager-overview.png)
 

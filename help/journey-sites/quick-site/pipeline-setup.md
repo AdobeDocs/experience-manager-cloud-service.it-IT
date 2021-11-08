@@ -1,9 +1,9 @@
 ---
 title: Imposta la pipeline
 description: Crea una pipeline front-end per gestire la personalizzazione del tema del sito.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -59,21 +59,13 @@ In questo modo, lo sviluppo front-end può funzionare separatamente e parallelam
 
 ## Accesso a Cloud Manager {#login}
 
-1. Accedi a Adobe Experience Cloud all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Accedi ad Adobe Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Una volta effettuato l’accesso, assicurati di essere nell’organizzazione corretta effettuando il controllo nell’angolo in alto a destra dello schermo. Se sei membro di una sola organizzazione, questo passaggio non è necessario. Quindi tocca o fai clic su **Experience Manager**.
-
-   ![Panoramica dell’Experience Cloud](assets/experience-cloud-overview.png)
-
-1. Nella pagina successiva, tocca o fai clic sul pulsante **Launch** per avviare la **Cloud Manager** app.
-
-   ![Experience Manager apps](assets/experience-manager-apps.png)
-
-1. Nella pagina successiva sono elencati i vari programmi disponibili. Tocca o fai clic su quello che desideri gestire. Se inizi con AEM as a Cloud Service, probabilmente avrai a disposizione solo un programma.
+1. Cloud Manager elenca i vari programmi disponibili. Tocca o fai clic su quello che desideri gestire. Se inizi con AEM as a Cloud Service, probabilmente avrai a disposizione solo un programma.
 
    ![Selezione di un programma in Cloud Manager](assets/cloud-manager-select-program.png)
 
-Viene visualizzata una panoramica di Cloud Manager. La pagina avrà un aspetto diverso ma simile a questo esempio.
+Viene visualizzata una panoramica del programma. La pagina avrà un aspetto diverso ma simile a questo esempio.
 
 ![Panoramica di Cloud Manager](assets/cloud-manager-overview.png)
 
