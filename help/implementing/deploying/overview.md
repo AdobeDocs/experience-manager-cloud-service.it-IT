@@ -3,9 +3,9 @@ title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3364'
 ht-degree: 1%
 
 ---
@@ -179,7 +179,11 @@ Poiché Gestione pacchetti è un concetto di runtime, non è possibile installar
 
 >[!IMPORTANT]
 >
->L’interfaccia utente di Gestione pacchetti potrebbe restituire un **indefinito** messaggio di errore se l&#39;installazione di un pacchetto richiede più di 10 minuti. Non ripetere l&#39;installazione in questo caso, perché sta procedendo correttamente in background e alcuni conflitti potrebbero essere introdotti da più processi di importazione simultanei.
+>L’interfaccia utente di Gestione pacchetti potrebbe restituire un **indefinito** messaggio di errore se l&#39;installazione di un pacchetto richiede più di 10 minuti.
+>
+>Questo non è dovuto a un errore con l&#39;installazione, ma a un timeout che il Cloud Service ha per tutte le richieste.
+>
+>Non ripetere l&#39;installazione se viene visualizzato un errore di questo tipo. L&#39;installazione sta procedendo correttamente in background. Se si riavvia l&#39;installazione, alcuni conflitti potrebbero essere introdotti da più processi di importazione simultanei.
 
 Tutti i pacchetti di contenuto installati tramite Cloud Manager (mutabili e immutabili) verranno visualizzati in uno stato congelato nell’interfaccia utente di AEM Package Manager. Questi pacchetti non possono essere reinstallati, ricostruiti o persino scaricati e verranno elencati con un **&quot;cp2fm&quot;** suffisso che indica che l’installazione è stata gestita da Cloud Manager.
 

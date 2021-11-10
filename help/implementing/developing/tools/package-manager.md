@@ -3,9 +3,9 @@ title: Gestione pacchetti
 description: Scopri le basi di AE; Gestione dei pacchetti con Gestione pacchetti.
 feature: Administering
 role: Admin
-source-git-commit: ddccd7f5b145283ff0f0ab39e53fce6584e147a8
+source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
 workflow-type: tm+mt
-source-wordcount: '3554'
+source-wordcount: '3584'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,11 @@ I pacchetti di contenuto creati per AEM applicazioni as a Cloud Service devono a
 
 >[!IMPORTANT]
 >
->L’interfaccia utente di Gestione pacchetti potrebbe restituire un **indefinito** messaggio di errore se l&#39;installazione di un pacchetto richiede più di 10 minuti. Non ripetere l&#39;installazione in questo caso, perché sta procedendo correttamente in background e alcuni conflitti potrebbero essere introdotti da più processi di importazione simultanei.
+>L’interfaccia utente di Gestione pacchetti potrebbe restituire un **indefinito** messaggio di errore se l&#39;installazione di un pacchetto richiede più di 10 minuti.
+>
+>Questo non è dovuto a un errore con l&#39;installazione, ma a un timeout che il Cloud Service ha per tutte le richieste.
+>
+>Non ripetere l&#39;installazione se viene visualizzato un errore di questo tipo. L&#39;installazione sta procedendo correttamente in background. Se si riavvia l&#39;installazione, alcuni conflitti potrebbero essere introdotti da più processi di importazione simultanei.
 
 Per ulteriori dettagli su come gestire i pacchetti per AEMaaCS, consulta il documento [Distribuzione a AEM as a Cloud Service](/help/implementing/deploying/overview.md) nella guida utente per la distribuzione.
 
