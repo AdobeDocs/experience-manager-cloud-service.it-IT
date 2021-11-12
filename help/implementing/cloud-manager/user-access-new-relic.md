@@ -1,9 +1,9 @@
 ---
 title: Accesso utente a nuova reliquia
 description: Segui questa pagina per informazioni sul nuovo monitoraggio delle prestazioni delle applicazioni relic per AEM as a Cloud Service
-source-git-commit: 62bee2d28c92c1d36651eb8b88607255640e511b
+source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Tre per AEM ambiente as a Cloud Service:
 * Un&#39;applicazione per il servizio Publish per ambiente (inclusa la pubblicazione aurea)
 * Un&#39;applicazione per il servizio Preview per ambiente
    >[!IMPORTANT]
-   >Ogni applicazione utilizza una chiave di licenza, AEM gli ambienti as a Cloud Service genereranno rapporti su un solo account New Relic. Le metriche e gli eventi di monitoraggio completi per New Relic APM e Infrastructure vengono conservati per 7 giorni.
+   >Ogni applicazione utilizza una chiave di licenza, AEM gli ambienti as a Cloud Service genereranno rapporti su un solo account New Relic. Le metriche e gli eventi di monitoraggio completi per New Relic APM vengono conservati per 7 giorni.
 
 ### Chi può accedere ai dati del nuovo Cloud Service relic? {#access-new-relic-cloud}
 
