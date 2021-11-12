@@ -1,15 +1,14 @@
 ---
-title: Creazione di esperienze e-commerce
+title: Creazione di esperienze Commerce
 description: Esperienze di e-commerce di lavoro
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: a23b4767d5ef26363fa426c7d0a01a3342a81423
+source-git-commit: a5aa45f150ac6c26be9368edb3bb10cbc7d0c77f
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
-# Creazione di esperienze e-commerce {#authoring-commerce-experiences}
+# Creazione di esperienze Commerce {#authoring-commerce-experiences}
 
 ## Panoramica {#overview}
 
@@ -63,9 +62,9 @@ La scheda &quot;Risorse&quot; nel pannello laterale dell’editor consente di ac
 
 Analogamente alle risorse, i prodotti possono essere eliminati su una pagina (che crea per impostazione predefinita un componente teaser di prodotto) o su componenti (attualmente supportati sono product teaser e product carosello).
 
-### Aggiunta di collegamenti alle pagine di prodotti o categorie nei campi di testo tramite l’editor Rich Text  {#rte}
+### Aggiunta di collegamenti nei campi di testo tramite l’editor Rich Text {#rte}
 
-Le pagine di catalogo dei prodotti CIF sono pagine virtuali di cui viene eseguito il rendering al volo. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine di AEM. CIF aggiunge all’editor Rich Text una nuova azione &quot;Collegamenti commerciali&quot;. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
+Le pagine di catalogo dei prodotti CIF sono pagine virtuali di cui viene eseguito il rendering al volo. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine di AEM. CIF aggiunge una nuova azione &quot;Collegamenti commerciali&quot; all’editor Rich Text. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
 
 ![RTE](../assets/authoring/RTE.png)
 

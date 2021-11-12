@@ -1,8 +1,7 @@
 ---
 title: Cockpit prodotto
 description: Utilizzo di Product Cockpit
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: bdaa70052f3547e45abf99542f042f69d4ccb7a2
+source-git-commit: 5d7c877c158994048c092f310274c01fd2bedbd1
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -73,7 +72,7 @@ Facendo clic sull’icona delle proprietà di un prodotto o di una categoria si 
 
 ### Schede Commerce {#tabs}
 
-Le schede generale e variante mostrano le proprietà di e-commerce predefinite provenienti dal back-end di e-commerce. Questi dati (incl. varianti) è un dato di sola lettura in AEM poiché il sistema di record è il back-end di e-commerce. La scheda variante viene visualizzata solo per i prodotti con varianti e mostra un elenco di tutte le varianti.
+Le schede generale e variante mostrano le proprietà di e-commerce predefinite provenienti dal back-end di e-commerce. Questi dati (incl. varianti) è un dato di sola lettura in AEM in quanto il sistema di record è il back-end commerce. La scheda variante viene visualizzata solo per i prodotti con varianti e mostra un elenco di tutte le varianti.
 
 ![proprietà del catalogo](../assets/catalog-properties.png)
 
