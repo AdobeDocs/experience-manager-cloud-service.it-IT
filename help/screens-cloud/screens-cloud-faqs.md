@@ -2,9 +2,9 @@
 title: Domande frequenti su Screens as a Cloud Service
 description: Questa pagina descrive le domande frequenti as a Cloud Service di Screens.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: cf091056bdb96917a6d22bf1197d9b34ebbf9610
+source-git-commit: 41f057fa2a52068aa6dce97f1a445e072ce2a0af
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 La sezione seguente fornisce le risposte alle domande frequenti relative al progetto as a Cloud Service Screens.
 
-## Cosa devo fare se il lettore AEM Screens che punta a Screens as a Cloud Service non sceglie le clientlib personalizzate con il formato /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
+## Cosa devo fare se AEM Screens Player che punta a Screens as a Cloud Service non sceglie le clientlib personalizzate con il formato /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
 
 AEM as a Cloud Service cambia le chiavi di cache lunghe con ogni distribuzione. AEM Screens genera le cache offline quando il contenuto viene modificato, anziché quando Cloud Manager esegue la distribuzione. Le chiavi di cache lunghe nei manifesti non sono valide, pertanto il lettore non riesce a scaricare questi *clientlibs*.
 
-L&#39;utilizzo di `longCacheKey="none"` nella cartella `clientlib` rimuove completamente le chiavi di cache lunghe per queste *clientlibs*.
+Utilizzo `longCacheKey="none"` nel tuo `clientlib` La cartella rimuove completamente le chiavi di cache lunghe per queste *clientlibs*.
 
 
 ## Cosa fare se il manifesto offline non include tutte le risorse come previsto? {#offline-manifest}
 
-Le cache offline vengono generate utilizzando l&#39;utente di servizio **bulk-offline-update-screens-service** . Alcuni percorsi, non accessibili da `bulk-offline-update-screens-service`, generano contenuti mancanti nei manifesti offline.
+Le cache offline vengono generate utilizzando **bulk-offline-update-screens-service** utente del servizio. Alcuni percorsi, non accessibili da `bulk-offline-update-screens-service`, porta a contenuti mancanti nei manifesti offline.
 
-Nel codice, ovvero `ui.config or ui.apps`, crea una configurazione OSGi nella cartella di configurazione con il seguente contenuto e assegna il titolo al nome del file come `org.apache.sling.jcr.repoinit.RepositoryInitializer-serviceusersandacls-content.config`
+Nel tuo codice, cioè: `ui.config or ui.apps`, crea una configurazione OSGi nella cartella di configurazione con il seguente contenuto e assegna il titolo al nome del file come `org.apache.sling.jcr.repoinit.RepositoryInitializer-serviceusersandacls-content.config`
 
 ```
 scripts=[
@@ -38,5 +38,13 @@ scripts=[
 
 ## Quali formati immagine sono consigliati per una riproduzione perfetta delle immagini nei canali as a Cloud Service di AEM Screens?{#screens-cloud-image-format}
 
-Si consiglia di utilizzare le immagini in formato `.png` e `.jpeg` in un canale as a Cloud Service di AEM Screens, per una migliore esperienza di segnaletica digitale.
-Le immagini nel formato `*.tif` (formato File immagine tag) non sono supportate in AEM Screens as a Cloud Service. Nel caso in cui un canale abbia questo formato di immagine, sul lato del lettore l&#39;immagine non verrà riprodotta.
+Si consiglia di utilizzare le immagini nel formato `.png` e `.jpeg` in un canale as a Cloud Service AEM Screens, per una migliore esperienza di digital signage.
+Le immagini nel formato `*.tif` (Formato del file immagine del tag) non supportato in AEM Screens as a Cloud Service. Nel caso in cui un canale abbia questo formato di immagine, sul lato del lettore l&#39;immagine non verrà riprodotta.
+
+## Cosa devo fare se un canale in modalità Sviluppatore (online) non esegue il rendering su AEM Screens Player?{#screens-cloud-online-channel-blank-iframe}
+
+Si consiglia di sfruttare le funzionalità di memorizzazione in cache di AEM Screens, ma se è necessario eseguire il canale in modalità Sviluppatore e AEM Screens Player mostra uno schermo vuoto, controlla gli strumenti per sviluppatori del lettore e cerca `X-Frame-Options` o `frame-ancestors` errori. La risoluzione consiste nel configurare il dispatcher per consentire l’esecuzione di contenuti in iFrames. Di solito funziona la seguente configurazione:
+
+```
+Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
+```
