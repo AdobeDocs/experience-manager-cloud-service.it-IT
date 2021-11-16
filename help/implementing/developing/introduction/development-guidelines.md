@@ -2,16 +2,16 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Linee guida per lo sviluppo per AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
+source-git-commit: 477546f882197291403e59d8ba2e53dd4918a719
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2178'
 ht-degree: 1%
 
 ---
 
 # Linee guida per lo sviluppo per AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
-Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. Ciò significa che ci sono sempre in esecuzione più di un’istanza. Il codice deve essere resiliente, in particolare perché un’istanza potrebbe essere arrestata in qualsiasi momento.
+Il codice in esecuzione in AEM as a Cloud Service deve essere consapevole del fatto che è sempre in esecuzione in un cluster. Ciò significa che ci sono sempre in esecuzione più di un’istanza. Il codice deve essere resiliente, in particolare perché un’istanza potrebbe essere arrestata in qualsiasi momento.
 
 Durante l&#39;aggiornamento di AEM as a Cloud Service, ci saranno istanze con codice vecchio e nuovo in esecuzione in parallelo. Pertanto, il vecchio codice non deve essere in conflitto con il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il vecchio contenuto.
 <!--
@@ -27,7 +27,7 @@ Se è necessario identificare il principale nel cluster, l&#39;API Sling Discove
 
 Lo stato non deve essere mantenuto in memoria ma mantenuto nell&#39;archivio. In caso contrario, questo stato potrebbe andare perso se un&#39;istanza viene arrestata.
 
-## State on the Filesystem {#state-on-the-filesystem}
+## Stato del filesystem {#state-on-the-filesystem}
 
 Il file system dell&#39;istanza non deve essere utilizzato in AEM as a Cloud Service. Il disco è effimero e verrà eliminato quando le istanze vengono riciclate. L&#39;uso limitato del filesystem per l&#39;archiviazione temporanea in relazione all&#39;elaborazione di singole richieste è possibile, ma non deve essere abusato per file enormi. Questo perché potrebbe avere un impatto negativo sulla quota di utilizzo delle risorse ed essere sottoposto a limitazioni del disco.
 
@@ -39,9 +39,9 @@ Simile, con tutto ciò che accade in modo asincrono come agire sugli eventi di o
 
 ## Attività in background e processi con esecuzione lunga {#background-tasks-and-long-running-jobs}
 
-Il codice eseguito come attività in background deve presupporre che l&#39;istanza in cui è in esecuzione possa essere disattivata in qualsiasi momento. Pertanto, il codice deve essere resiliente e la maggior parte delle importazioni deve essere ripristinabile. Ciò significa che, se il codice viene rieseguito, non dovrebbe ricominciare dall&#39;inizio ma piuttosto essere vicino a dove è stato disattivato. Anche se questo non è un nuovo requisito per questo tipo di codice, in AEM as a Cloud Service è più probabile che si verifichi un&#39;istanza di rimozione.
+Il codice eseguito come attività in background deve presupporre che l&#39;istanza in cui è in esecuzione possa essere disattivata in qualsiasi momento. Pertanto il codice deve essere resiliente e soprattutto riutilizzabile. Ciò significa che, se il codice viene rieseguito, non dovrebbe ricominciare dall&#39;inizio ma piuttosto essere vicino a dove è stato disattivato. Anche se questo non è un nuovo requisito per questo tipo di codice, in AEM as a Cloud Service è più probabile che si verifichi un&#39;istanza di rimozione.
 
-Per ridurre al minimo i problemi, i posti di lavoro a lungo termine dovrebbero essere evitati, se possibile, e dovrebbero essere ripresi al minimo. Per eseguire tali lavori, utilizza Processi Sling, che hanno una garanzia almeno una volta e quindi se vengono interrotti, verrà rieseguito il prima possibile. Ma probabilmente non dovrebbero ricominciare dall&#39;inizio. Per pianificare tali lavori, è consigliabile utilizzare il [Processi Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler come di nuovo l&#39;esecuzione almeno una volta.
+Per ridurre al minimo i problemi, i posti di lavoro a lungo termine dovrebbero essere evitati, se possibile, e dovrebbero essere ripresi al minimo. Per eseguire tali lavori, utilizza Processi Sling, che hanno una garanzia almeno una volta e quindi se vengono interrotti, verrà rieseguito il prima possibile. Ma probabilmente non dovrebbero ricominciare dall&#39;inizio. Per pianificare tali lavori, è consigliabile utilizzare il [Processi Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler in questo modo assicura l’esecuzione almeno una volta.
 
 L’utilità di pianificazione Sling Commons non deve essere utilizzata per la pianificazione in quanto l’esecuzione non può essere garantita. È più probabile che sia programmato.
 
@@ -59,7 +59,7 @@ Le alternative che funzionano, ma che possono richiedere di fornire la dipendenz
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (non consigliato in quanto obsoleto e sostituito dalla versione 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Non fornito da AEM)
 
-## No Classic UI Customizations {#no-classic-ui-customizations}
+## Nessuna personalizzazione dell’interfaccia classica {#no-classic-ui-customizations}
 
 AEM as a Cloud Service supporta solo l’interfaccia utente touch per il codice cliente di terze parti. Interfaccia classica non disponibile per la personalizzazione.
 
@@ -91,7 +91,7 @@ Negli ambienti Cloud, gli sviluppatori possono scaricare i registri tramite Clou
 
 **Impostazione del livello di registro**
 
-Per modificare i livelli di registro per gli ambienti Cloud, la configurazione Sling Logging OSGI deve essere modificata e seguita da una ridistribuzione completa. Poiché questo non è istantaneo, presta attenzione nell&#39;abilitare registri dettagliati su ambienti di produzione che ricevono molto traffico. In the future, it&#39;s possible that there will be mechanisms to more quickly change the log level.
+Per modificare i livelli di registro per gli ambienti Cloud, la configurazione Sling Logging OSGI deve essere modificata e seguita da una ridistribuzione completa. Poiché questo non è istantaneo, presta attenzione nell&#39;abilitare registri dettagliati su ambienti di produzione che ricevono molto traffico. In futuro, è possibile che ci saranno meccanismi per cambiare più rapidamente il livello di log.
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ Una riga nel file di debug solitamente inizia con DEBUG, e quindi fornisce il li
 
 ``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
 
-The log levels are as follows:
+I livelli di log sono i seguenti:
 
 | 0 | Errore irreversibile | L&#39;azione non è riuscita e non è possibile continuare l&#39;installazione. |
 |---|---|---|
@@ -133,7 +133,7 @@ Tieni presente che nello sviluppo locale (utilizzando l’SDK), `/apps` e `/libs
 
 I clienti possono accedere a CRXDE lite nell’ambiente di sviluppo del livello di authoring, ma non in quello di stage o produzione. Archivio immutabile (`/libs`, `/apps`) non può essere scritto in fase di runtime, pertanto il tentativo di eseguire questa operazione genera errori.
 
-A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for dev, stage, and production environments. L’URL può essere determinato regolando gli url del servizio Author o Publish come segue:
+Nella Console per sviluppatori sono disponibili un set di strumenti per il debug AEM ambienti di sviluppo as a Cloud Service per ambienti di sviluppo, stage e produzione. L’URL può essere determinato regolando gli url del servizio Author o Publish come segue:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -181,9 +181,9 @@ Le sezioni seguenti descrivono come richiedere, configurare e inviare e-mail.
 
 Per impostazione predefinita, le porte utilizzate per inviare e-mail sono disabilitate. Per attivare una porta, configura [rete avanzata](/help/security/configuring-advanced-networking.md), assicurandosi di impostare per ogni ambiente necessario il `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` le regole di inoltro porta dell&#39;endpoint, che mappano la porta prevista (ad esempio, 465 o 587) su una porta proxy.
 
-È consigliabile configurare una rete avanzata con un `kind` impostato su `flexiblePortEgress` poiché Adobe può ottimizzare le prestazioni del traffico in uscita flessibile della porta. Se è necessario un indirizzo IP di uscita univoco, scegli una `kind` parametro di `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well.
+È consigliabile configurare una rete avanzata con un `kind` impostato su `flexiblePortEgress` poiché Adobe può ottimizzare le prestazioni del traffico in uscita flessibile della porta. Se è necessario un indirizzo IP di uscita univoco, scegli una `kind` parametro di `dedicatedEgressIp`. Se hai già configurato la VPN per altri motivi, puoi utilizzare anche l’indirizzo IP univoco fornito da tale variante di rete avanzata.
 
-You must send email through a mail server rather than directly to email clients. Otherwise, the emails may be blocked.
+È necessario inviare e-mail tramite un server di posta anziché direttamente ai client di posta elettronica. In caso contrario, le e-mail potrebbero essere bloccate.
 
 ### Invio di e-mail {#sending-emails}
 
@@ -203,17 +203,17 @@ Si raccomanda inoltre che, se è stata richiesta la porta 465:
 * set `smtp.port` a `465`
 * set `smtp.ssl` a `true`
 
-and if port 587 has been requested:
+e se la porta 587 è stata richiesta:
 
 * set `smtp.port` a `587`
 * set `smtp.ssl` a `false`
 
-La `smtp.starttls` la proprietà viene impostata automaticamente da AEM as a Cloud Service in fase di runtime a un valore appropriato. Pertanto, se `smtp.ssl` è impostato su true, `smtp.startls` viene ignorato. Se `smtp.ssl` è impostato su false, `smtp.starttls` è impostato su true. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
+La `smtp.starttls` la proprietà viene impostata automaticamente da AEM as a Cloud Service in fase di runtime a un valore appropriato. Pertanto, se `smtp.ssl` è impostato su true, `smtp.startls` viene ignorato. Se `smtp.ssl` è impostato su false, `smtp.starttls` è impostato su true. Ciò è a prescindere dal `smtp.starttls` i valori impostati nella configurazione OSGI.
 
 
 Facoltativamente, è possibile configurare il servizio di posta con il supporto OAuth2. Per ulteriori informazioni, consulta [Supporto OAuth2 per il servizio di posta](/help/security/oauth2-support-for-mail-service.md).
 
-### Legacy email configuration {#legacy-email-configuration}
+### Configurazione e-mail legacy {#legacy-email-configuration}
 
 Prima della versione 2021.9.0, l’e-mail era configurata tramite una richiesta di assistenza clienti. Si osservano i seguenti adeguamenti necessari `com.day.cq.mailer.DefaultMailService OSGI` servizio:
 
@@ -236,4 +236,4 @@ L&#39;host del server SMTP deve essere impostato su quello del server di posta.
 
 ## [!DNL Assets] Linee guida per lo sviluppo e casi d’uso {#use-cases-assets}
 
-To know about the development use cases, recommendations, and reference materials for Assets as a Cloud Service, see [Developer references for Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Per informazioni sui casi di utilizzo, i consigli e i materiali di riferimento per le risorse as a Cloud Service per lo sviluppo, consulta [Riferimenti per sviluppatori per Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
