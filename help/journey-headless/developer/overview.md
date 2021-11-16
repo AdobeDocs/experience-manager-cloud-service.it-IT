@@ -1,17 +1,17 @@
 ---
 title: AEM Percorso di sviluppatori headless
-description: Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle per il tuo primo progetto di sviluppo.
+description: Documentazione AEM CMS headless. Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle per il tuo primo progetto di sviluppo.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
+source-git-commit: d683b71d823fb6cc756f8fcf04e7393e7bf71c14
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1223'
 ht-degree: 2%
 
 ---
 
 # AEM Percorso di sviluppatori headless {#aem-headless-developer-journey}
 
-Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle sul tuo primo progetto di sviluppo headless.
+Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle sul tuo primo progetto di sviluppo headless. Questo percorso offre tutta la documentazione headless AEM necessaria per sviluppare la tua prima applicazione headless.
 
 ## Introduzione {#introduction}
 
@@ -21,19 +21,19 @@ Questa guida ti guida attraverso gli argomenti di implementazione più headless 
 
 * Comprendi appieno cosa è la distribuzione di contenuti headless e i relativi vantaggi.
 * Scopri AEM funzioni headless e come funzionano insieme per offrire un’esperienza headless.
-* Avere la possibilità di compiere i primi passi per implementare il primo progetto headless AEM.
+* Avere la possibilità di compiere i primi passi per implementare il primo progetto senza testa AEM.
 
 ## percorsi di documentazione AEM {#documentation-journeys}
 
-[Una Documentazione ](/help/journey-documentation/home.md) Journey unisce molti argomenti e funzionalità diversi e forse complicati, fornendo una narrazione che aiuta il lettore, che può essere nuovo a AEM, capire e risolvere un problema di business dall&#39;inizio alla fine, assumendo al contempo una conoscenza minima dell&#39;argomento precedente o AEM.
+[Un Percorso di documentazione](/help/journey-documentation/home.md) unisce molti argomenti e caratteristiche diversi e forse complicati fornendo una narrazione che aiuta il lettore, che può essere nuovo a AEM, capire e risolvere un problema di business dall&#39;inizio alla fine, assumendo al contempo un argomento preliminare minimo o AEM conoscenza.
 
 I Percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback dai progetti dei clienti.
 
-Se desideri sapere come Adobe consiglia di risolvere i casi aziendali headless con AEM, [AEM Percorsi headless](/help/journey-headless/home.md) sono i punti di partenza.
+Se desideri sapere come Adobe consiglia di risolvere i casi aziendali headless con AEM, [AEM Percorsi headless](/help/journey-headless/home.md) sono dove iniziare.
 
 >[!TIP]
 >
-> Se preferisci **imparare facendo** e sei tecnicamente inclinato, visita i tutorial AEM Headless, organizzati per API e framework e disponibili nella sezione [Risorse aggiuntive](#additional-resources) alla fine di questo documento.
+> Se preferisci **imparare facendo** e sono tecnicamente inclinati, visita i tutorial AEM Headless, organizzati per API e framework e disponibili in [Sezione Risorse aggiuntive](#additional-resources) alla fine del presente documento.
 
 ## Pubblico {#audience}
 
@@ -48,7 +48,7 @@ Di seguito sono riportati gli utenti tipo che interagiscono in questo percorso.
 | Administrator | Gestisce la configurazione e la configurazione di base di AEM | Lo sviluppatore collabora con l’amministratore per apportare le modifiche di configurazione necessarie per lo sviluppo. |
 | Architetto dei contenuti | Analizza i requisiti dei dati che devono essere consegnati senza problemi e definisce la struttura di tali dati | Gli sviluppatori lavorano con l’architetto dei contenuti per comprendere la struttura dei dati e i requisiti necessari per distribuirli senza problemi. |
 
-Le informazioni in questo percorso possono ovviamente essere utili a tutti gli utenti, ma alcune informazioni possono essere superflue a determinati ruoli. Rimani in sintonia con i [prossimi percorsi che coprono ruoli aggiuntivi.](/help/journey-documentation/home.md#journeys)
+Le informazioni in questo percorso possono ovviamente essere utili a tutti gli utenti, ma alcune informazioni possono essere superflue a determinati ruoli. Rimani sintonizzato per [percorsi successivi che includeranno ruoli aggiuntivi.](/help/journey-documentation/home.md#journeys)
 
 ## Percorso di sviluppatori headless {#the-journey}
 
@@ -60,7 +60,7 @@ Anche se puoi passare direttamente a una particolare parte del percorso, molti c
 |---|---|---|
 | 0 | AEM Percorso di sviluppatori headless | Questo documento |
 | 1 | [Scopri lo sviluppo headless di CMS](learn-about.md) | Scopri la tecnologia headless e quando usarla. |
-| 2 | [Guida introduttiva AEM Headless come Cloud Service](getting-started.md) | Scopri AEM prerequisiti headless |
+| 2 | [Guida introduttiva a AEM Headless as a Cloud Service](getting-started.md) | Scopri AEM prerequisiti headless |
 | 3 | [Percorso della tua prima esperienza con AEM Headless](path-to-first-experience.md) | Imposta l’ambiente di sviluppo e scopri come integrare un’app semplice con AEM Headless |
 | 4 | [Come modellare il contenuto](model-your-content.md) | Scopri come modellare la struttura del contenuto. Quindi realizza quella struttura per Adobe Experience Manager (AEM) utilizzando Modelli per frammenti di contenuto e Frammenti di contenuto, da riutilizzare tra i canali. |
 | 5 | [Come accedere ai contenuti tramite API di consegna AEM](access-your-content.md) | Scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto. |
@@ -71,14 +71,14 @@ Anche se puoi passare direttamente a una particolare parte del percorso, molti c
 
 ## Novità {#what-is-next}
 
-Ora sei pronto per iniziare sul tuo percorso headless Adobe. Ti invitiamo a passare alla parte successiva del percorso e a leggere l&#39;articolo [Scopri lo sviluppo headless di CMS.](learn-about.md)
+Ora sei pronto per iniziare sul tuo percorso headless Adobe. Ti invitiamo a continuare nella parte successiva del percorso e a leggere l&#39;articolo [Scopri lo sviluppo headless di CMS.](learn-about.md)
 
 ### Scegli la tua avventura {#choose-your-path}
 
 Tuttavia, Adobe vuole che tu abbia successo quando inizi a lavorare con il tuo progetto AEM Headless, indipendentemente dal tuo stile di apprendimento. Considerate quindi queste due opzioni.
 
-* Se preferisci continuare a **conoscere concetti headless e tecnologie headless**, dovresti continuare il percorso headless AEM come consigliato nella prossima revisione del documento [Come modellare il contenuto come modelli di contenuto AEM](model-your-content.md), dove imparerai a modellare la struttura del contenuto in AEM.
-* Se preferisci **imparare facendo**, puoi passare all&#39;esercitazione [Guida introduttiva AEM senza testa](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) in cui puoi passare direttamente allo sviluppo senza testa AEM implementando un semplice progetto per esporre AEM contenuto headless.
+* Se preferisci continuare a **scopri i concetti senza testa e le tecnologie senza testa AEM**, dovresti continuare il tuo percorso AEM headless come consigliato nella prossima revisione del documento [Come modellare il contenuto come modelli di contenuto AEM](model-your-content.md) dove viene illustrato come modellare la struttura del contenuto in AEM.
+* Se preferisci **imparare facendo**, puoi passare alla [Guida introduttiva a AEM tutorial pratico headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) dove puoi passare direttamente AEM sviluppo Headless implementando un semplice progetto per esporre AEM contenuto headless.
 
 ## Risorse aggiuntive {#additional-resources}
 
@@ -86,8 +86,8 @@ I percorsi di documentazione mostrano come AEM risolvere un problema aziendale f
 
 Come tali percorsi sono progettati per stare da soli. Tuttavia alcuni di essi possono essere correlati tra loro. Consulta questi percorsi aggiuntivi per ulteriori informazioni su come AEM funzioni avanzate funzionano insieme.
 
-* [AEM tutorial headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - Se preferisci imparare facendo e sei tecnicamente inclinato, segui i nostri tutorial pratici organizzati da API e framework, che esplorano la creazione e l’utilizzo di applicazioni create su AEM Headless.
-* [AEM Percorso di traduzione headless](/help/journey-headless/translation/overview.md)  - Questo percorso di documentazione ti offre un&#39;ampia comprensione della tecnologia headless, di come AEM i contenuti headless e di come tradurli.
-* [Percorso](/help/journey-headless/author/overview.md)  di authoring headless - Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless.
-* [Percorso architetto headless](/help/journey-headless/architect/overview.md)  - Inizia qui per un’introduzione alle funzioni potenti, flessibili e headless di Adobe Experience Manager as a Cloud Service e per la modellazione dei contenuti per il progetto.
-* [AEM come documentazione tecnica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it)  Cloud Service - Se hai già una conoscenza approfondita delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
+* [Esercitazioni AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Se preferisci imparare facendo e sei tecnicamente inclinato, segui i nostri tutorial pratici organizzati da API e framework, che esplorano la creazione e l’utilizzo di applicazioni create su AEM Headless.
+* [AEM Percorso di traduzione headless](/help/journey-headless/translation/overview.md) - Questo percorso di documentazione ti offre un’ampia comprensione della tecnologia headless, di come AEM i contenuti headless e di come tradurli.
+* [Percorso di authoring headless](/help/journey-headless/author/overview.md) - Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless.
+* [Percorso architetto headless](/help/journey-headless/architect/overview.md) - Inizia qui per un’introduzione alle funzioni potenti, flessibili e headless di Adobe Experience Manager as a Cloud Service e a come modellare i contenuti per il tuo progetto.
+* [AEM documentazione tecnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) - Se hai già una comprensione ferma delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
