@@ -3,9 +3,9 @@ title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
 description: Introduzione all'integrazione tra [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: 533217df95115505535544aaf9d6a8f5a4e2a81f
+source-git-commit: 045387bc02ca5a30e0caa020885d4cf63b4e9aef
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '876'
 ht-degree: 2%
 
 ---
@@ -16,8 +16,6 @@ ht-degree: 2%
 [!DNL Adobe Workfront] è un&#39;applicazione di gestione del lavoro che consente di gestire l&#39;intero ciclo di vita del lavoro in un&#39;unica posizione. Integrazione tra [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] consente alle organizzazioni di migliorare la velocità dei contenuti e il time-to-market collegando intrinsecamente il lavoro e la gestione delle risorse digitali. Nel contesto della gestione del lavoro in Workfront, gli utenti possono accedere ai documenti e alle immagini richiesti.
 
 La [!DNL Workfront for Experience Manager enhanced connector] consente processi aziendali avanzati con flussi di lavoro end-to-end e offre esperienze cliente end-to-end personalizzate e archiviazione centrale. Per ulteriori informazioni sulle funzionalità e le funzionalità della [!DNL enhanced connector], vedi [novità in [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
-
-Adobe offre due connettori diversi per integrare entrambe le soluzioni. I connettori consentono l&#39;automazione, la configurazione e i flussi di lavoro estensibili complessi tra [!DNL Assets] e [!DNL Workfront]. Inoltre, [!DNL Assets Essentials] è disponibile come componente aggiuntivo per il nuovo [!DNL Workfront] i clienti possono acquistare separatamente. Per ulteriori informazioni, consulta [[!DNL Workfront] and [!DNL Assets Essentials] integrazione](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration.html).
 
 [!DNL Workfront for Experience Manage enhanced connector] consente alla tua organizzazione di:
 
