@@ -4,9 +4,9 @@ user-guide-title: Guida di Assets as a Cloud Service
 breadcrumb-title: Guida di Assets
 user-guide-description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: ba962df2fe3a690b50a1f938aef42d9d907e8797
+source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '488'
 ht-degree: 42%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 42%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Panoramica e novità](overview.md)
-+ [Modifiche di rilievo apportate a [!DNL Assets] come a [!DNL Cloud Service]](assets-cloud-changes.md)
++ [Modifiche di rilievo apportate a [!DNL Assets] come [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] architettura](architecture.md)
 + [Formati di file supportati](file-format-support.md)
 + [Panoramica dei microservizi per le risorse](asset-microservices-overview.md)
@@ -31,10 +31,10 @@ ht-degree: 42%
    + [Tag avanzati per immagini](smart-tags.md)
    + [Assegnare tag avanzati alle risorse video](smart-tags-video-assets.md)
    + [Organizzare le risorse](organize-assets.md)
-   + [Utilizzare [!DNL Adobe Stock] risorse](aem-assets-adobe-stock.md)
+   + [Utilizzo [!DNL Adobe Stock] assets](aem-assets-adobe-stock.md)
    + [Gestire le raccolte](manage-collections.md)
    + [Panoramica sui metadati](manage-metadata.md)
-   + [Integrare con [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
+   + [Integra con [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [Aggiungere o modificare i metadati](meta-edit.md)
    + [Esaminare raccolte e risorse delle cartelle](bulk-approval.md)
    + [Utilizzare e configurare Assets Insights](assets-insights.md)
@@ -46,7 +46,7 @@ ht-degree: 42%
    + [Archiviare ed estrarre le risorse da modificare](check-out-and-submit-assets.md)
    + [Digital Rights Management per le risorse](drm.md)
    + [Risorse di filigrana](watermark-assets.md)
-   + [Elabora le risorse utilizzando le API di [!DNL Creative Cloud] ](cc-api-integration.md)
+   + [Elabora risorse utilizzando [!DNL Creative Cloud] API](cc-api-integration.md)
 + Configurare, amministrare ed estendere [!DNL Assets] {#admin}
    + [Riferimenti ai documenti e alle API per sviluppatori](developer-reference-material-apis.md)
    + [Schema metadati per cartelle](folder-metadata-schema.md)
@@ -67,8 +67,8 @@ ht-degree: 42%
    + [Importare ed esportare i metadati delle risorse](metadata-import-export.md)
 + Condividere e distribuire le risorse {#brand-portal}
    + [Configura [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Pubblicare risorse su [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [Pubblicare risorse  [!DNL Brand Portal] da [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+   + [Pubblicare le risorse su [!DNL Brand Portal]](publish-to-brand-portal.md)
+   + [Pubblicare risorse da [!DNL Brand Portal] a [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + Frammenti di contenuto {#content-fragments}
    + [Utilizzo di frammenti di contenuto](content-fragments/content-fragments.md)
    + [Distribuzione headless con frammenti di contenuto e GraphQL](content-fragments/content-fragments-graphql.md)
@@ -127,3 +127,7 @@ ht-degree: 42%
    + [Domande frequenti sulla distribuzione dei contenuti HTTP2](dynamic-media/http2faq.md)
    + [Fine del ciclo di vita dei visualizzatori di Flash](dynamic-media/flash-viewers-eol.md)
    + [Fine del ciclo di vita dei visualizzatori DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
++ Integrazione con altre soluzioni {#integrations}
+   + [Integrazioni con [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Installa [!DNL enhanced connector] per [!DNL Workfront]](workfront-connector-install.md)
+   + [Configura [!DNL enhanced connector] per [!DNL Workfront]](workfront-connector-configure.md)
