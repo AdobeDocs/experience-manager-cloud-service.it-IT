@@ -10,14 +10,14 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c5ae2fb098c30d2be45316367f87725d16d84af7
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '377'
 ht-degree: 81%
 
 ---
 
-# Configurazione multi-store di Commerce {#multi-store}
+# Configurazione di Commerce Multi-Store {#multi-store}
 
 I componenti core CIF di AEM possono essere utilizzati su più strutture di siti AEM e l’implementazione client GraphQL sottostante può connettersi a diversi store o viste store di Magento. Ciò consente ai progetti di implementare complesse impostazioni per più store o siti.
 
@@ -55,7 +55,7 @@ Per collegare un sito AEM e i componenti core CIF di AEM a una visualizzazione d
    * Passa alla directory principale dell’area geografica o della lingua della struttura del sito; ad esempio, per la pagina di esempio di Venia: /content/venia/us _oppure_ /content/venia/us/it
    * Seleziona la pagina e apri le proprietà della pagina.
    * Seleziona la scheda Avanzate.
-   * Nella sezione `Configuration`, seleziona la configurazione creata al passaggio
+   * Nella sezione `Configuration`, seleziona la configurazione creata al passaggio 3
 
 ## Risorse aggiuntive
 
