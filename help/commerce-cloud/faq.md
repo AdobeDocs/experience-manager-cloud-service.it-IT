@@ -2,11 +2,10 @@
 title: Domande frequenti sull'integrazione di AEM e commerce tramite Commerce Integration Framework
 description: Domande frequenti sull'integrazione di AEM e commerce tramite Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-translation-type: tm+mt
-source-git-commit: 36a598961081b7c2229065a031ad163a5336ee43
+source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 47%
+source-wordcount: '956'
+ht-degree: 45%
 
 ---
 
@@ -16,9 +15,9 @@ ht-degree: 47%
 
  Adobe ha adottato le API GraphQL di Magento come API Commerce ufficiali per tutti i dati relativi all’e-commerce. Quindi, AEM utilizza GraphQL per scambiare dati di e-commerce con Magento e con qualsiasi motore di e-commerce tramite I/O Runtime. Questa API GraphQL è indipendente AEM API GraphQL per accedere ai frammenti di contenuto.
 
-## 2. È possibile archiviare le risorse di prodotto (immagini) e farvi riferimento da AEM tramite l’amministratore di Adobe Commerce (Magento)? Come possono essere utilizzate le risorse da Dynamic Media?
+## 2. È possibile memorizzare le risorse di prodotto (immagini) e farvi riferimento da AEM tramite l’amministratore di Adobe Commerce (Magento)? Come possono essere utilizzate le risorse da Dynamic Media?
 
-Non è disponibile l&#39;integrazione ufficiale AEM Assets - Magento. È disponibile un connettore partner sul [marketplace](https://marketplace.magento.com/bounteous-dam.html).
+Non è disponibile l&#39;integrazione ufficiale AEM Assets - Magento. È disponibile un connettore partner sul [mercato](https://marketplace.magento.com/bounteous-dam.html).
 
 Oppure, come soluzione alternativa, puoi archiviare le risorse dei prodotti (immagini) in AEM Assets, ma dovrai memorizzare manualmente gli URL delle risorse nel Magento. Dynamic Media fa ora parte di AEM Assets e funziona allo stesso modo.
 
@@ -48,7 +47,7 @@ I dati dinamici come prezzo o inventario non vengono memorizzati nella cache di 
 
 ## 9. Come funziona l’invalidazione della cache per AEM Dispatcher con AEM e commerce?
 
-È consigliabile impostare l’invalidazione della cache basata su TTL per le pagine memorizzate nella cache di Dispatcher. Per informazioni dinamiche come prezzo o inventario, si consiglia di eseguire il rendering dei dati lato client. Per ulteriori informazioni sull’invalidazione della cache basata su TTL, consulta [AEM Dispatcher](https://helpx.adobe.com/it/experience-manager/kb/optimizing-the-dispatcher-cache.html).
+È consigliabile impostare l’invalidazione della cache basata su TTL per le pagine memorizzate nella cache di Dispatcher. Per informazioni dinamiche come prezzo o stock, si consiglia di eseguire il rendering dei dati lato client. Per ulteriori informazioni sull’invalidazione della cache basata su TTL, consulta [AEM Dispatcher](https://helpx.adobe.com/it/experience-manager/kb/optimizing-the-dispatcher-cache.html).
 
 ## 10. Vi sono consigli sulla ricerca unificata nei contenuti AEM con Commerce?
 
@@ -68,7 +67,7 @@ I dati del prodotto sono generalmente già tradotti in PIM o in Magento. L’int
 
 ## 14. Come possiamo garantire la conformità PCI quando si utilizza AEM per l’intero livello di presentazione?
 
-Si consiglia di utilizzare metodi di pagamento astratti. In questo modo il client browser comunica direttamente con il provider del gateway dei pagamenti in modo che né l&#39;Adobe né le soluzioni commerce detengano o trasmettano i dati del titolare della carta. Questo approccio richiede solo una conformità PCI di livello 3. Tuttavia, vi sono altri elementi da considerare per assicurare la piena conformità allo standard PCI, come il modo in cui i dipendenti interagiscono con il sistema e i dati. Per ulteriori informazioni sulla conformità PCI del Magento, fare riferimento a <https://magento.com/pci-compliance>
+Si consiglia di utilizzare metodi di pagamento astratti. In questo modo il client browser comunica direttamente con il provider del gateway dei pagamenti in modo che né l&#39;Adobe né le soluzioni commerce detengano o trasmettano i dati del titolare della carta. Questo approccio richiede solo una conformità PCI di livello 3. Tuttavia, vi sono altri elementi da considerare per assicurare la piena conformità allo standard PCI, come il modo in cui i dipendenti interagiscono con il sistema e i dati. Per ulteriori informazioni sulla conformità PCI del Magento, consulta [Requisiti di conformità PCI](https://magento.com/pci-compliance).
 
 ## 15. Se uso versioni cloud AEM e di Magento, questa soluzione comune è compatibile con PCI?
 

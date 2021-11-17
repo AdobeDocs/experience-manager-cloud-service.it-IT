@@ -2,10 +2,10 @@
 title: Memorizzazione in cache e prestazioni
 description: Scopri le diverse configurazioni disponibili per abilitare GraphQL e la memorizzazione in cache dei contenuti per ottimizzare le prestazioni dell’implementazione commerce.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 460aa927453964f4878a8a969794a7052a2d3778
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ Prima che il client invii una richiesta GraphQL, verificherà se la **stessa** r
 
 ### Esempi
 
-È consigliabile configurare la memorizzazione in cache per il servizio di ricerca che raccoglie tutti i valori aggregati/facet disponibili visualizzati nelle pagine di ricerca e categoria del prodotto. Questi valori generalmente cambiano solo quando un nuovo attributo viene ad esempio aggiunto ai prodotti, pertanto la durata di questa voce della cache può essere “lunga” se il set di attributi di prodotto non cambia spesso. Anche se si tratta di un progetto specifico, consigliamo valori di alcuni minuti nelle fasi di sviluppo del progetto e di alcune ore per i sistemi di produzione stabili.
+È consigliabile configurare la memorizzazione in cache per il servizio di ricerca che recupera tutti i valori aggregati/facet disponibili visualizzati nelle pagine di ricerca e categoria del prodotto. Questi valori generalmente cambiano solo quando un nuovo attributo viene ad esempio aggiunto ai prodotti, pertanto la durata di questa voce della cache può essere “lunga” se il set di attributi di prodotto non cambia spesso. Anche se si tratta di un progetto specifico, consigliamo valori di alcuni minuti nelle fasi di sviluppo del progetto e di alcune ore per i sistemi di produzione stabili.
 
 Questa configurazione è in genere configurata con la seguente voce cache:
 
