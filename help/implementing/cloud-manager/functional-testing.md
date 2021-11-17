@@ -2,9 +2,9 @@
 title: Test funzionali - Cloud Services
 description: Test funzionali - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '946'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ I test funzionali sono suddivisi in tre tipi:
 
 ## Test funzionale del prodotto {#product-functional-testing}
 
-I test funzionali del prodotto sono un insieme di test di integrazione HTTP stabili (IT) intorno alle funzionalità di base in AEM (ad esempio, authoring e replica) che impediscono la distribuzione delle modifiche del codice dell’applicazione da parte del cliente in caso di interruzione di questa funzionalità di base.
+I test funzionali del prodotto sono un insieme di test di integrazione HTTP stabili (IT) intorno alle funzionalità principali in AEM (ad esempio, authoring e replica) che impediscono la distribuzione delle modifiche del codice dell’applicazione da parte del cliente in caso di interruzione di questa funzionalità di base.
 
 I test funzionali del prodotto vengono eseguiti automaticamente ogni volta che un cliente distribuisce un nuovo codice a Cloud Manager e non può essere ignorato.
 
@@ -119,9 +119,11 @@ Inoltre, il JAR deve avere l&#39;intestazione del manifesto Cloud-Manager-TestTy
     </plugins>
 ```
 
-All&#39;interno di questo file JAR, i nomi delle classi dei test effettivi da eseguire devono terminare in IT.
+All&#39;interno di questo file JAR, i nomi delle classi dei test effettivi da eseguire devono terminare in `IT`.
 
-Ad esempio, una classe denominata `com.myco.tests.aem.ExampleIT` vengono eseguiti ma una classe denominata `com.myco.tests.aem.ExampleTest` non lo farei.
+Ad esempio, una classe denominata `com.myco.tests.aem.it.ExampleIT` vengono eseguiti, ma una classe denominata `com.myco.tests.aem.it.ExampleTest` non lo farei.
+
+Inoltre, per escludere il codice di prova dal controllo di copertura della scansione del codice, il codice di prova deve essere al di sotto di un pacchetto denominato `it` (il filtro di esclusione della copertura è `**/it/**/*.java`).
 
 Le classi di test devono essere normali test JUnit. L’infrastruttura di test è progettata e configurata per essere compatibile con le convenzioni utilizzate dalla libreria di test aem-testing-clients. Invitiamo vivamente gli sviluppatori a utilizzare questa libreria e a seguire le relative best practice. Fai riferimento a [Collegamento Git](https://github.com/adobe/aem-testing-clients) per ulteriori dettagli.
 
