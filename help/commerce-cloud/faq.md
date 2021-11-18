@@ -2,10 +2,10 @@
 title: Domande frequenti sull'integrazione di AEM e commerce tramite Commerce Integration Framework
 description: Domande frequenti sull'integrazione di AEM e commerce tramite Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
+source-git-commit: 283bef84f2d5973150be8f62bd6f86193252d4f4
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 45%
+source-wordcount: '952'
+ht-degree: 42%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 45%
 
 ## 1. CIF GraphQL è utilizzato solo per l’e-commerce o sarà disponibile per eseguire query sui contenuti creati su AEM JCR?
 
- Adobe ha adottato le API GraphQL di Magento come API Commerce ufficiali per tutti i dati relativi all’e-commerce. Quindi, AEM utilizza GraphQL per scambiare dati di e-commerce con Magento e con qualsiasi motore di e-commerce tramite I/O Runtime. Questa API GraphQL è indipendente AEM API GraphQL per accedere ai frammenti di contenuto.
+Adobe ha adottato le API GraphQL del Magento come API Commerce ufficiali per tutti i dati relativi all’e-commerce. Quindi, AEM utilizza GraphQL per scambiare dati di e-commerce con Magento e con qualsiasi motore di e-commerce tramite I/O Runtime. Questa API GraphQL è indipendente AEM API GraphQL per accedere ai frammenti di contenuto.
 
 ## 2. È possibile memorizzare le risorse di prodotto (immagini) e farvi riferimento da AEM tramite l’amministratore di Adobe Commerce (Magento)? Come possono essere utilizzate le risorse da Dynamic Media?
 
@@ -51,7 +51,7 @@ I dati dinamici come prezzo o inventario non vengono memorizzati nella cache di 
 
 ## 10. Vi sono consigli sulla ricerca unificata nei contenuti AEM con Commerce?
 
-Viene fornita un’implementazione di riferimento per la ricerca di prodotti, ma non viene eseguita alcuna ricerca unificata con i contenuti. In genere questa funzione dipende molto dalle specifiche esigenze dei clienti, ed è quindi preferibile gestirla a livello di progetto.
+Viene fornita un’implementazione di riferimento per la ricerca di prodotti, ma non viene eseguita alcuna ricerca unificata con i contenuti. Questa funzione è in genere molto specifica per i clienti e viene meglio risolta a livello di progetto.
 
 ## 11. Come funziona la ricerca con AEM e commercio utilizzando CIF?
 
@@ -63,11 +63,11 @@ I dati del prodotto sono generalmente già tradotti in PIM o in Magento. L’int
 
 ## 13. Esiste un modo per migliorare i dati di prodotto con testo commerciale? Dove si effettua questa procedura? In AEM o nella soluzione commerce?
 
-È consigliabile gestire i dati e i contenuti relativi al marketing in AEM. Decorare i dati di prodotto dalla soluzione commerce con attributi aggiuntivi utilizzando Frammenti di contenuto o creare e collegare Frammenti di esperienza per contenuti non strutturati con i tuoi prodotti.
+È consigliabile gestire dati e contenuti relativi al marketing in AEM. Decorare i dati di prodotto dalla soluzione commerce con attributi aggiuntivi utilizzando Frammenti di contenuto oppure creare e collegare frammenti di esperienza per contenuti non strutturati con i prodotti.
 
 ## 14. Come possiamo garantire la conformità PCI quando si utilizza AEM per l’intero livello di presentazione?
 
-Si consiglia di utilizzare metodi di pagamento astratti. In questo modo il client browser comunica direttamente con il provider del gateway dei pagamenti in modo che né l&#39;Adobe né le soluzioni commerce detengano o trasmettano i dati del titolare della carta. Questo approccio richiede solo una conformità PCI di livello 3. Tuttavia, vi sono altri elementi da considerare per assicurare la piena conformità allo standard PCI, come il modo in cui i dipendenti interagiscono con il sistema e i dati. Per ulteriori informazioni sulla conformità PCI del Magento, consulta [Requisiti di conformità PCI](https://magento.com/pci-compliance).
+È consigliabile utilizzare metodi di pagamento astratti. In questo modo il client browser comunica direttamente con il provider del gateway dei pagamenti in modo che né l&#39;Adobe né le soluzioni commerce detengano o trasmettano i dati del titolare della carta. Questo approccio richiede solo una conformità PCI di livello 3. Tuttavia, vi sono altri elementi da considerare per assicurare la piena conformità allo standard PCI, come il modo in cui i dipendenti interagiscono con il sistema e i dati. Per ulteriori informazioni sulla conformità PCI del Magento, consulta [Requisiti di conformità PCI](https://magento.com/pci-compliance).
 
 ## 15. Se uso versioni cloud AEM e di Magento, questa soluzione comune è compatibile con PCI?
 

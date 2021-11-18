@@ -3,16 +3,16 @@ title: Integrazione di AEM e Adobe Commerce (Magento) tramite Commerce Integrati
 description: AEM e Adobe Commerce (Magento) sono perfettamente integrati utilizzando Commerce Integration Framework (CIF). CIF consente ad AEM di accedere a un’istanza di Magento e di comunicare con Magento tramite GraphQL. Consente inoltre agli autori AEM di utilizzare i selettori di Prodotto e Categoria e la console Prodotti per sfogliare i dati di prodotti e categorie recuperati on-demand da Magento. Inoltre, CIF fornisce una vetrina pronta all’uso che può accelerare i progetti di commerce.
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
-source-git-commit: 52cfd60cde3165fde6b0167783c16b0fc1efc950
+source-git-commit: 96e7a7c38dd1275c9b0d291d12a0f768ab183c38
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
 # Integrazione di AEM e Adobe Commerce (Magento) tramite Commerce Integration Framework {#aem-magento-framework}
 
-Experience Manager e Adobe Commerce (Magento) sono perfettamente integrati tramite Commerce Integration Framework (CIF). CIF consente a AEM di accedere e comunicare direttamente con l’istanza virale utilizzando Adobe Commerce [API GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/).
+Experience Manager e Adobe Commerce (Magento) sono perfettamente integrati tramite Commerce Integration Framework (CIF). CIF consente a AEM di accedere e comunicare direttamente con l’istanza Commerce utilizzando Adobe Commerce [API GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 >[!NOTE]
 >
@@ -32,8 +32,8 @@ L’architettura generale è la seguente:
 
 ![Panoramica dell’architettura CIF ](../assets/AEM_Magento_Architecture.png)
 
-CIF supporta il modello di comunicazione lato server e lato client.
-Le chiamate API lato server vengono implementate utilizzando l’interfaccia predefinita generica [Client GraphQL](https://github.com/adobe/commerce-cif-graphql-client) in combinazione con un [insieme di modelli di dati generati](https://github.com/adobe/commerce-cif-magento-graphql) per lo schema GraphQL di e-commerce Inoltre, è possibile utilizzare qualsiasi query GraphQL o mutazione in formato GQL.
+All’interno di CIF, è disponibile il supporto per modelli di comunicazione lato server e lato client.
+Le chiamate API lato server vengono implementate utilizzando l’interfaccia predefinita generica [Client GraphQL](https://github.com/adobe/commerce-cif-graphql-client) in combinazione con un [insieme di modelli di dati generati](https://github.com/adobe/commerce-cif-magento-graphql) per lo schema GraphQL di e-commerce. Inoltre, è possibile utilizzare qualsiasi query GraphQL o mutazione in formato GQL.
 
 Per i componenti lato client, creati utilizzando [Reagire](https://reactjs.org/), [Client Apollo](https://www.apollographql.com/docs/react/) viene utilizzato.
 
