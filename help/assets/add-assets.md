@@ -4,9 +4,9 @@ description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2192'
 ht-degree: 1%
 
 ---
@@ -156,6 +156,7 @@ Per configurare lo strumento, segui questi passaggi:
    * [!UICONTROL Filtra per dimensione massima]: Fornire la dimensione massima dei file delle risorse in MB.
    * [!UICONTROL Escludi tipi di MIME]: Elenco di tipi MIME separati da virgole da escludere dall’acquisizione. Esempio, `image/jpeg, image/.*, video/mp4`. Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
    * [!UICONTROL Includi tipi di mime]: Elenco di tipi MIME separati da virgole da includere nell’acquisizione. Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
+   * [!UICONTROL Elimina il file sorgente dopo l’importazione]: Selezionare questa opzione per eliminare i file originali dall&#39;archivio dati di origine dopo l&#39;importazione in [!DNL Experience Manager].
    * [!UICONTROL Modalità importazione]: Selezionare Ignora, Sostituisci o Crea versione. La modalità Salta è l’impostazione predefinita e in questa modalità l’utente che esegue l’acquisizione salta per importare una risorsa, se esiste già. Vedere il significato di [opzioni di sostituzione e creazione della versione](#handling-upload-existing-file).
    * [!UICONTROL Cartella di destinazione delle risorse]: Importa la cartella in DAM in cui devono essere importate le risorse. Esempio, `/content/dam/imported_assets`
    * [!UICONTROL File metadati]: Il file di metadati da importare, fornito in formato CSV. Fornisci questo file CSV nella posizione del BLOB di origine e fai riferimento al percorso nella configurazione dello strumento di inserimento in blocco.
