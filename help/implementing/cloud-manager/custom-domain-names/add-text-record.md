@@ -2,10 +2,9 @@
 title: Aggiunta di un record TXT
 description: Aggiunta di un nome di dominio personalizzato
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-translation-type: tm+mt
-source-git-commit: 4903f97c1bf0e7c8e96d604feb005d9611a7d9bb
+source-git-commit: 26ac0c63e4fba167206f43f64f046452c922c10e
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -27,13 +26,13 @@ Fai riferimento agli esempi nella tabella seguente.
 
 | Dominio | Nome | Valore TXT |
 |--- |--- |---|
-| `example.com` | `_aemverification` | Visualizzato nell’interfaccia utente di Cloud Manager ed è specifico per il dominio e l’ambiente Cloud Manager |
-| `test.example.com` | `_aemverification` | Visualizzato nell’interfaccia utente di Cloud Manager ed è specifico per il dominio e l’ambiente Cloud Manager |
+| `example.com` | `_aemverification.example.com` | Copia l’intero valore visualizzato nell’interfaccia utente di Cloud Manager. Questa funzione è specifica del dominio e dell’ambiente. `Ex:adobe-aem-verification=example.com/[program]/[env]/..` |
+| `test.example.com`<br>`www.example.com` | `_aemverification.www.example.com` | Copia l’intero valore visualizzato nell’interfaccia utente di Cloud Manager. Questa funzione è specifica del dominio e dell’ambiente. `Ex:adobe-aem-verification=www.example.com/[program]/[env]/..` |
 
 Al termine, puoi verificare il risultato eseguendo: `dig _aemverification.[yourdomainname] -t txt`.
 Il risultato atteso deve visualizzare il valore TXT fornito nell’interfaccia utente di Cloud Manager.
 
-Ad esempio, se il dominio è `example.com`, esegui: `dig TXT _aemverification.example.com -t txt`.
+Ad esempio, se il dominio è `example.com`, quindi esegui: `dig TXT _aemverification.example.com -t txt`.
 
 >[!NOTE]
->Esistono anche vari [strumenti di ricerca DNS](https://www.ultratools.com/tools/dnsLookup), Google DoH può essere utilizzato per cercare voci di record TXT e identificare se il record TXT è mancante o errato.
+>Ci sono anche varie [Strumenti di ricerca DNS](https://www.ultratools.com/tools/dnsLookup), Google DoH può essere utilizzato per cercare voci di record TXT e identificare se il record TXT è mancante o errato.
