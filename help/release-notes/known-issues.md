@@ -1,20 +1,19 @@
 ---
 title: Problemi noti
-description: Note sulla versione specifiche per i problemi noti relativi ad Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+description: Problemi noti con Adobe Experience Manager as a Cloud Service
+exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
+source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 100%
+source-wordcount: '111'
+ht-degree: 43%
 
 ---
 
-
 # Problemi noti {#known-issues}
 
-In questo articolo sono elencati i problemi noti relativi all’offerta Adobe Experience Manager as a Cloud Service. L’elenco viene rivisto e aggiornato a ogni versione di Experience Manager.
+Questo articolo elenca i problemi noti di [!DNL Adobe Experience Manager] come [!DNL Cloud Service] offerta. L’elenco viene rivisto e aggiornato a ogni versione di [!DNL Experience Manager].
 
-Per ulteriori informazioni sui problemi noti, [contatta il supporto](https://helpx.adobe.com/it/support/experience-manager.html).
+Per ulteriori informazioni sui problemi noti, [contatta il supporto](https://experienceleague.adobe.com/?lang=en&amp;support-solution=Experience+Manager#support).
 
 <!-- 
 ## Platform {#platform}
@@ -22,28 +21,36 @@ Per ulteriori informazioni sui problemi noti, [contatta il supporto](https://hel
 ## Sites {#sites}
 -->
 
-## Assets {#assets}
+## [!DNL Assets] {#assets}
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-Alcuni problemi noti sono:
+Alcuni problemi noti in [!DNL Assets] sono:
+
+* **Scarica**: Se si scarica una cartella vuota, [!DNL Experience Manager] trasmette un messaggio di successo sulla creazione di un archivio ZIP, ma l’archivio non viene creato.
 
 * **Schema metadati**: il widget di valutazione delle risorse causava un errore di compilazione JSP. È stato rimosso dallo schema metadati. <!-- CQ-4282865, CQ-4284633 -->
 
-### Funzionalità di Assets disponibili in futuro {#upcoming-assets-capabilities}
+Vedi anche [modifiche rilevanti [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md).
 
-In futuro verranno attivate alcune funzionalità di Adobe Experience Manager Assets che dipendono dalle funzionalità di base e che non sono ancora disponibili nell’architettura di implementazione di Experience Manager as a Cloud Service:
+<!-- This content was added at GA. Not sure if we should continue to have this commitment about upcoming features/enh. in the docs. Commenting it for now.
 
-* Funzionalità non attivate in questa fase a causa della dipendenza da API di Commerce Integration Framework:
-   * Modelli di flusso di lavoro per servizio fotografico.
-   * La scheda Informazioni prodotto nell’interfaccia delle proprietà della risorsa non è compilata.
-* Funzionalità non attivate in questa fase a causa della dipendenza dall’integrazione di InDesign Server:
-   * Modelli di risorse e cataloghi di risorse.
-   * Anteprima multipagina di file Adobe InDesign.
+### Upcoming Assets capabilities {#upcoming-assets-capabilities}
+
+A few capabilities of Adobe Experience Manager Assets that depend on foundation capabilities, which are not yet available in the Experience Manager as a Cloud Service deployment architecture, are expected to be enabled at a later stage:
+
+* Capabilities not enabled at this stage due to dependency on Commerce Integration Framework APIs:
+  * Photoshoot workflow models.
+  * Product information tab in the asset properties user interface is not populated.
+
+* Capabilities not enabled at this stage due to dependency on InDesign Server integration:
+  * Asset Templates and Asset Catalogs.
+  * Multi-page preview of Adobe InDesign files.
+-->
 
 >[!MORELIKETHIS]
 >
->* [Modifiche principali apportate in AEM](aem-cloud-changes.md)
+>* [Modifiche principali apportate a [!DNL Experience Manager]](aem-cloud-changes.md)
 >* [Funzioni obsolete e rimosse](deprecated-removed-features.md)
 >* [Note sulla versione](home.md)
 

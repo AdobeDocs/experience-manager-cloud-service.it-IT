@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 12%
+source-wordcount: '661'
+ht-degree: 11%
 
 ---
 
@@ -24,10 +24,9 @@ L’importazione dei metadati è asincrona e non ostacola le prestazioni del sis
 >
 >Per importare i metadati negli spazi dei nomi personalizzati, registra innanzitutto gli spazi dei nomi.
 
-1. Passa all’interfaccia utente Assets e tocca o fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
-1. Dal menu , seleziona **[!UICONTROL Metadati]**.
-1. Nella pagina **[!UICONTROL Importazione metadati]**, tocca o fai clic su **[!UICONTROL Seleziona un file]**. Scegli il file CSV con i metadati.
-1. Specifica i seguenti parametri:
+1. Passa a [!DNL Assets] interfaccia utente, seleziona **[!UICONTROL Crea]** dalla barra degli strumenti e seleziona **[!UICONTROL Metadati]** dal menu.
+1. In **[!UICONTROL Importazione metadati]** pagina, fai clic su **[!UICONTROL Seleziona file]**. Scegli il file CSV con i metadati.
+1. Fornisci i seguenti parametri:
 
    | Parametro | Descrizione |
    | ---------------------- | ------- |
@@ -37,13 +36,19 @@ L’importazione dei metadati è asincrona e non ostacola le prestazioni del sis
    | Avvia flussi di lavoro | False per impostazione predefinita. Quando è impostato su `true` e le impostazioni predefinite sono attive per il flusso di lavoro DAM Metadata WriteBack (che scrive metadati nei dati XMP binari). L&#39;abilitazione dei flussi di lavoro rallenta il sistema. |
    | Nome colonna percorso risorsa | Definisce il nome della colonna del file CSV con le risorse. |
 
-1. Fai clic su **[!UICONTROL Importa]** dalla barra degli strumenti. Una volta importati i metadati, viene inviata una notifica alla casella in entrata delle notifiche. Passa alla pagina delle proprietà della risorsa e verifica se i valori dei metadati sono importati correttamente per le risorse.
+1. Seleziona **[!UICONTROL Importa]** dalla barra degli strumenti. Una volta importati i metadati, viene inviata una notifica alla casella in entrata delle notifiche. Passa alla pagina delle proprietà della risorsa e verifica se i valori dei metadati sono importati correttamente per le risorse.
 
-Per aggiungere data e marca temporale durante l’importazione dei metadati, utilizza `YYYY-MM-DDThh:mm:ss.fff-00:00` formato per data e ora. Data e ora sono separate da `T`, `hh` è in formato 24 ore, `fff` è nanosecondi, e `-00:00` è l&#39;offset del fuso orario. Ad esempio: `2020-03-26T11:26:00.000-07:00` è il 26 marzo 2020 alle 11:26:00.000 PST tempo.
+1. Per aggiungere data e marca temporale per importare i metadati, utilizza `YYYY-MM-DDThh:mm:ss.fff-00:00` formato per data e ora. Data e ora sono separate da `T`, `hh` è in formato 24 ore, `fff` è nanosecondi, e `-00:00` è l&#39;offset del fuso orario. Ad esempio: `2020-03-26T11:26:00.000-07:00` è il 26 marzo 2020 alle 11:26:00.000 PST.
+
+   * Il formato della data dipende dall’intestazione della colonna e dal formato in essa contenuto. Ad esempio, se la data è un reclamo con il formato `yyyy-MM-dd'T'HH:mm:ssXXX` quindi la rispettiva intestazione di colonna deve essere `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * Il formato predefinito della data è `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+
+<!-- Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >
->Se il formato della data non corrisponde `YYYY-MM-DDThh:mm:ss.fff-00:00`, i valori di data non sono impostati. Il formato dei formati di data del file CSV dei metadati esportati è `YYYY-MM-DDThh:mm:ss-00:00`. Per importarlo, convertirlo nel formato accettabile aggiungendo il valore nanosecondi indicato da `fff`.
+>If the date format does not match `YYYY-MM-DDThh:mm:ss.fff-00:00`, the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
+-->
 
 ## Esporta metadati {#export-metadata}
 
