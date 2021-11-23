@@ -1,27 +1,27 @@
 ---
 title: API di configurazione OSGi
-description: Descrizione della AEM come superficie di configurazione OSGi Cloud Service
+description: Descrizione della AEM superficie di configurazione OSGi as a Cloud Service
 feature: Deploying
-source-git-commit: 5223d57377f5c00b090aee1ddd4dbfe2d7113181
+exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
+source-git-commit: cba6648d7ef18f3cccbd9562f3a66d9c683ae852
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
-
 # API di configurazione OSGi
 
-I due elenchi seguenti riflettono l’AEM come superficie di configurazione OSGi di Cloud Service, descrivendo cosa i clienti possono configurare.
+I due elenchi riportati di seguito riflettono la AEM superficie di configurazione OSGi as a Cloud Service, che descrive cosa i clienti possono configurare.
 
 1. Un elenco di configurazioni OSGi che non devono essere configurate dal codice cliente
 1. Elenco delle configurazioni OSGi le cui proprietà possono essere configurate, ma devono rispettare le regole di convalida indicate. Queste regole includono se la dichiarazione della proprietà è obbligatoria, il suo tipo e, in alcuni casi, l&#39;intervallo di valori consentito.
 
 Se una configurazione OSGI non è elencata, potrebbe essere configurata dal codice cliente.
 
-Queste regole vengono convalidate durante il processo di compilazione di Cloud Manager. È possibile aggiungere ulteriori regole nel tempo e la data prevista per l’applicazione è indicata nella tabella. I clienti sono tenuti a rispettare queste regole entro la data di implementazione prevista. Il mancato rispetto delle regole dopo la data di rimozione genera errori nel processo di compilazione di Cloud Manager. I progetti Maven devono includere il [AEM come Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) per contrassegnare gli errori di configurazione OSGI durante lo sviluppo dell&#39;SDK locale.
+Queste regole vengono convalidate durante il processo di compilazione di Cloud Manager. È possibile aggiungere ulteriori regole nel tempo e la data prevista per l’applicazione è indicata nella tabella. I clienti sono tenuti a rispettare queste regole entro la data di implementazione prevista. Il mancato rispetto delle regole dopo la data di rimozione genera errori nel processo di compilazione di Cloud Manager. I progetti Maven devono includere [Plug-in Maven di AEM SDK Build Analyzer as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) per contrassegnare gli errori di configurazione OSGI durante lo sviluppo dell&#39;SDK locale.
 
-Ulteriori informazioni sulla configurazione OSGI sono disponibili in [questa posizione](/help/implementing/deploying/configuring-osgi.md).
+Ulteriori informazioni sulla configurazione OSGI sono disponibili all&#39;indirizzo [questa posizione](/help/implementing/deploying/configuring-osgi.md).
 
 ## Configurazioni OSGi che non possono essere modificate {#osgi-configurations-that-cannot-be-modified}
 
@@ -46,7 +46,7 @@ Ulteriori informazioni sulla configurazione OSGI sono disponibili in [questa pos
    * `org.apache.felix.eventadmin.IgnoreTimeout`
       * Obbligatorio
       * Tipo: array di stringhe
-      * Intervallo richiesto: Deve includere almeno tutti i valori `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
+      * Intervallo richiesto: Deve includere almeno `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
    * `org.apache.felix.eventadmin.IgnoreTopic`
       * Tipo: array di stringhe
 * **`org.apache.felix.http`** (Data annuncio: 30/04/2021, Data di applicazione: 31/07/2021)
@@ -141,4 +141,14 @@ Ulteriori informazioni sulla configurazione OSGI sono disponibili in [questa pos
    * `debug.email`
       * Tipo: booleano
    * `oauth.flow`
+      * Tipo: booleano
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (Data annuncio: 16/11/21, Data di esecuzione: 16/02/21)
+   * `org.apache.sling.commons.log.level`
+      * Tipo: enumerazione
+      * Intervallo richiesto: INFORMAZIONI, DEBUG o TRACE
+   * `org.apache.sling.commons.log.names`
+      * Tipo: string
+   * `org.apache.sling.commons.log.file`
+      * Tipo: string
+   * `org.apache.sling.commons.log.additiv`
       * Tipo: booleano
