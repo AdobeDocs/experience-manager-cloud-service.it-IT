@@ -2,10 +2,10 @@
 title: Utilizzo di Best Practices Analyzer
 description: Utilizzo di Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 42%
+source-wordcount: '2470'
+ht-degree: 41%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="Utilizzo di Best Practices Analyzer"
 >abstract="Esamina la documentazione relativa all’utilizzo di Best Practices Analyzer (precedentemente Cloud Readiness Analyzer) e il rapporto generato. Il rapporto di Best Practices Analyzer (Analisi di best practice) viene utilizzato per acquisire una comprensione di alto livello della preparazione generale all’aggiornamento."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considerazioni importanti sull’utilizzo di Best Practices Analyzer {#imp-considerations}
 
@@ -113,14 +113,16 @@ L’icona della barra a sinistra viene visualizzata solo se il BPA rileva l’ut
 I risultati di ACS Commons non devono essere ignorati. Fai riferimento a [documentazione](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) per determinare la compatibilità con AEM as a Cloud Service.
 
 
-### Adobe Experience Manager 6.2 e 6.1 {#aem-specific-versions}
+<!--
+### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
+ 
+The Best Practices Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
 
-In Adobe Experience Manager 6.2, lo strumento Best Practices Analyzer (Analisi best practice) è limitato a un collegamento che consente di generare e scaricare il rapporto CSV.
-
-In Adobe Experience Manager 6.1, lo strumento non funziona e può essere utilizzata solo l’interfaccia HTTP.
+For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
 
 >[!NOTE]
-In tutte le versioni, il rilevatore pattern incluso può essere eseguito in modo indipendente.
+>In all versions, the included Pattern Detector may run independently.
+-->
 
 ## Interpretazione del rapporto di Best Practices Analyzer {#cra-report}
 
