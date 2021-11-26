@@ -2,10 +2,10 @@
 title: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 description: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: b7ed0d16b9cd4ba9fdfaa20e17f3c3c73659f914
+source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
 workflow-type: tm+mt
-source-wordcount: '3641'
-ht-degree: 79%
+source-wordcount: '3787'
+ht-degree: 76%
 
 ---
 
@@ -357,11 +357,11 @@ Bisogna però prestare attenzione quando si inserisce il file `robots.txt` nella
 
 I crawler utilizzano le mappe del sito XML per comprendere meglio la struttura dei siti web. Anche se non è detto che la creazione di una mappa del sito si traduca in un miglioramento dei ranking SEO, si tratta di una best practice comunemente accettata. Puoi gestire manualmente un file XML nel server web da utilizzare come mappa del sito, ma è consigliabile generarne una a livello di programmazione, in modo che, quando gli autori creano nuovi contenuti, le modifiche apportate vengano applicate automaticamente alla mappa.
 
-AEM utilizza il modulo [Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap) per generare sitemap XML, che fornisce un&#39;ampia gamma di opzioni per gli sviluppatori e gli editor per mantenere aggiornata una mappa del sito XML dei siti.
+AEM utilizza [Modulo del sito Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap) per generare sitemap XML, che fornisce un&#39;ampia gamma di opzioni per gli sviluppatori e gli editor per mantenere aggiornata una mappa del sito XML dei siti.
 
-Il modulo Sling Sitemap di Apache distingue tra una mappa del sito di livello superiore e una mappa del sito nidificata, entrambe generate per qualsiasi risorsa con la proprietà `sling:sitemapRoot` impostata su `true`. In generale, le mappe del sito vengono sottoposte a rendering utilizzando i selettori nel percorso della mappa del sito di primo livello della struttura, che è la risorsa che non ha altri predecessori della radice della mappa del sito. Questa radice della mappa del sito di livello superiore espone anche l&#39;indice della mappa del sito, che normalmente è ciò che un proprietario del sito configurerebbe nel portale di configurazione del motore di ricerca o aggiungerebbe al sito `robots.txt`.
+Il modulo Sling Sitemap di Apache distingue tra una mappa del sito di livello superiore e una mappa del sito nidificata, entrambe generate per qualsiasi risorsa con la proprietà `sling:sitemapRoot` proprietà impostata su `true`. In generale, le mappe del sito vengono sottoposte a rendering utilizzando i selettori nel percorso della mappa del sito di primo livello della struttura, che è la risorsa che non ha altri predecessori della radice della mappa del sito. Questa radice di sitemap di livello superiore espone anche l&#39;indice di mappa del sito, che normalmente è ciò che un proprietario del sito configurerebbe nel portale di configurazione del motore di ricerca o aggiungerà al sito `robots.txt`.
 
-Ad esempio, considera un sito che definisce una directory principale della mappa del sito di livello superiore in `my-page` e una directory principale della mappa del sito nidificata in `my-page/news`, per generare una mappa del sito dedicata alle pagine della sottostruttura news. Gli url pertinenti risultanti sarebbero
+Ad esempio, considera un sito che definisce una directory principale della mappa del sito di livello superiore in `my-page` e una radice di sitemap nidificata in `my-page/news`, per generare una mappa del sito dedicata alle pagine nella sottostruttura news. Gli url pertinenti risultanti sarebbero
 
 * https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
 * https://www.mydomain.com/my-brand/my-page.sitemap.xml
@@ -371,20 +371,97 @@ Ad esempio, considera un sito che definisce una directory principale della mappa
 >
 > I selettori `sitemap` e `sitemap-index` possono interferire con le implementazioni personalizzate. Se non desideri utilizzare la funzione del prodotto, configura il tuo servlet che serve questi selettori con un `service.ranking` superiore a 0.
 
-Nella configurazione predefinita, la finestra di dialogo Proprietà pagina offre l’opzione per contrassegnare una pagina come radice di una mappa del sito e quindi, come descritto in precedenza, generare una mappa del sito di se stessa e dei suoi discendenti. Questo comportamento è implementato dalle implementazioni dell&#39;interfaccia `SitemapGenerator` e può essere esteso aggiungendo implementazioni alternative. Tuttavia, poiché la frequenza con cui rigenerare i siti XML dipende fortemente dai flussi di lavoro e dai carichi di lavoro per l’authoring dei contenuti, il prodotto non fornisce alcuna configurazione `SitemapScheduler`. In questo modo la funzione può essere effettivamente opt-in.
+Nella configurazione predefinita, la finestra di dialogo Proprietà pagina consente di contrassegnare una pagina come radice di una mappa del sito e quindi, come descritto in precedenza, di generare una mappa del sito di se stessa e dei suoi discendenti. Questo comportamento è implementato dalle implementazioni di `SitemapGenerator` e può essere esteso aggiungendo implementazioni alternative. Tuttavia, dato che la frequenza con cui rigenerare i siti XML dipende fortemente dai flussi di lavoro e dai carichi di lavoro per l’authoring dei contenuti, il prodotto non viene fornito `SitemapScheduler` configurazione. In questo modo la funzione può essere effettivamente opt-in.
 
-Per abilitare il processo in background che genera i sitemap XML, è necessario configurare un `SitemapScheduler` . Per farlo, crea una configurazione OSGI per il PID `org.apache.sling.sitemap.impl.SitemapScheduler`. L&#39;espressione di pianificazione `0 0 0 * * ?` può essere utilizzata come punto di partenza per rigenerare tutte le mappe del sito XML una volta al giorno a mezzanotte.
+Al fine di abilitare il processo in background che genera i siti XML, `SitemapScheduler` deve essere configurato. Per farlo, crea una configurazione OSGI per il PID `org.apache.sling.sitemap.impl.SitemapScheduler`. Espressione di pianificazione `0 0 0 * * ?` può essere utilizzato come punto di partenza per rigenerare tutte le mappe del sito XML una volta al giorno a mezzanotte.
 
 ![Mappa del sito Apache Sling - Scheduler](assets/sling-sitemap-scheduler.png)
 
-Il processo di generazione della mappa del sito può essere eseguito su istanze di livello sia di authoring che di pubblicazione. Nella maggior parte dei casi, si consiglia di eseguire la generazione sulle istanze del livello di pubblicazione, in quanto è possibile generare solo URL canonici adeguati (a causa delle regole di mappatura risorse Sling comunemente presenti solo sulle istanze del livello di pubblicazione). Tuttavia, è possibile collegare un’implementazione personalizzata del meccanismo di esternalizzazione utilizzato per generare gli URL canonici implementando l’ interfaccia `SitemapLinkExternalizer` . Se un’implementazione personalizzata è in grado di generare gli URL canonici di una mappa del sito nelle istanze del livello di authoring, è possibile configurare la modalità di esecuzione dell’autore e distribuire il carico di lavoro di generazione della mappa del sito XML tra le istanze del cluster del servizio di authoring. `SitemapScheduler` In questo scenario, occorre prestare particolare attenzione alla gestione di contenuti non ancora pubblicati, modificati o visibili solo a gruppi ristretti di utenti.
+Il processo di generazione della mappa del sito può essere eseguito su istanze di livello sia di authoring che di pubblicazione. Nella maggior parte dei casi, si consiglia di eseguire la generazione sulle istanze del livello di pubblicazione, in quanto gli URL canonici corretti possono essere generati solo lì (a causa delle regole di mappatura risorse Sling comunemente presenti solo sulle istanze del livello di pubblicazione). Tuttavia, è possibile collegare un’implementazione personalizzata del meccanismo di esternalizzazione utilizzato per generare gli URL canonici implementando il [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) interfaccia. Se un’implementazione personalizzata è in grado di generare gli URL canonici di una mappa del sito sulle istanze del livello di authoring, la variabile `SitemapScheduler` può essere configurato per la modalità di esecuzione dell&#39;autore e il carico di lavoro di generazione della mappa del sito XML può essere distribuito tra le istanze del cluster del servizio di authoring. In questo scenario, occorre prestare particolare attenzione alla gestione di contenuti non ancora pubblicati, modificati o visibili solo a un gruppo ristretto di utenti.
 
-Inoltre, ai punti di estensione Sling Sitemap di Apache [SitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/SitemapGenerator.html) e [SitemapLinkExternalizer](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/common/SitemapLinkExternalizer.html) descritti sopra, e anche al [SitemapExtensionProvider](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/builder/SitemapExtensionProvider.html), l&#39;implementazione specifica AEM definisce anche un paio di punti di estensione:
+AEM Sites contiene un&#39;implementazione predefinita di un `SitemapGenerator` che attraversa una struttura ad albero di pagine per generare una mappa del sito. È preconfigurato per generare solo gli URL canonici di un sito e qualsiasi alternativa linguistica, se disponibile. Può anche essere configurato in modo da includere la data dell’ultima modifica di una pagina, se necessario. Per questo, abilita _Aggiungi ultima modifica_ opzione _Adobe AEM SEO - Generatore di mappa del sito nella struttura ad albero della pagina_ Configurazione e seleziona una _Ultima origine modificata_. Quando vengono generate le mappe del sito sul livello di pubblicazione, si consiglia di utilizzare la variabile `cq:lastModified` data.
 
-* È possibile implementare un [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) per rimuovere le pagine dai sitemap XML generati dal generatore specifico di Mappa del sito AEM Sites
-* È possibile implementare un [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) o [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) per filtrare prodotti o categorie da sitemap XML generati dai generatori di mappa del sito specifici [Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) .
+![Adobe AEM SEO - Configurazione del generatore di mappa del sito nella struttura ad albero della pagina](assets/sling-sitemap-pagetreegenerator.png)
 
-Inoltre, la funzionalità implementata per le mappe del sito XML può essere utilizzata anche in casi d’uso diversi, ad esempio per aggiungere il collegamento canonico o la lingua si alterna nella sezione head di una pagina. Per ulteriori informazioni, consulta l’ interfaccia [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) .
+Per limitare il contenuto di una mappa del sito, è possibile implementare le seguenti interfacce di servizio quando necessario:
+
+* la [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) può essere implementato per nascondere le pagine da sitemap XML generato dal generatore di mappa del sito specifico di AEM Sites
+* a [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) o [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) può essere implementato per filtrare prodotti o categorie da sitemap XML generati da [Framework di integrazione Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=it) generatori specifici di mappa del sito
+
+Se le implementazioni predefinite non funzionano per un particolare caso d&#39;uso o se i punti di estensione non sono abbastanza flessibili, un `SitemapGenerator` può essere implementato per assumere il controllo completo del contenuto di una mappa del sito generata. L’esempio seguente mostra come eseguire questa operazione, utilizzando la logica di implementazione predefinita per AEM Sites. Utilizza il [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) come punto iniziale per scorrere un albero di pagine:
+
+```
+import java.util.Optional;
+
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.sitemap.SitemapException;
+import org.apache.sling.sitemap.builder.Sitemap;
+import org.apache.sling.sitemap.builder.Url;
+import org.apache.sling.sitemap.spi.common.SitemapLinkExternalizer;
+import org.apache.sling.sitemap.spi.generator.ResourceTreeSitemapGenerator;
+import org.apache.sling.sitemap.spi.generator.SitemapGenerator;
+import org.jetbrains.annotations.NotNull;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.adobe.aem.wcm.seo.sitemap.PageTreeSitemapGenerator;
+import com.day.cq.wcm.api.Page;
+
+@Component(
+    service = SitemapGenerator.class,
+    property = { "service.ranking:Integer=20" }
+)
+public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
+
+    private static final Logger LOG = LoggerFactory.getLogger(SitemapGeneratorImpl.class);
+
+    @Reference
+    private SitemapLinkExternalizer externalizer;
+    @Reference
+    private PageTreeSitemapGenerator defaultGenerator;
+
+    @Override
+    protected void addResource(@NotNull String name, @NotNull Sitemap sitemap, Resource resource) throws SitemapException {
+        Page page = resource.adaptTo(Page.class);
+        if (page == null) {
+            LOG.debug("Skipping resource at {}: not a page", resource.getPath());
+            return;
+        }
+        String location = externalizer.externalize(resource);
+        Url url = sitemap.addUrl(location + ".html");
+        // add any additional content to the Url like lastmod, change frequency, etc
+    }
+
+    @Override
+    protected final boolean shouldFollow(@NotNull Resource resource) {
+        return super.shouldFollow(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldFollow).orElse(Boolean.TRUE);
+    }
+
+    private boolean shouldFollow(Page page) {
+        // add additional conditions to stop traversing some pages
+        return !defaultGenerator.isProtected(page);
+    }
+
+    @Override
+    protected final boolean shouldInclude(@NotNull Resource resource) {
+        return super.shouldInclude(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldInclude).orElse(Boolean.FALSE);
+    }
+
+    private boolean shouldInclude(Page page) {
+        // add additional conditions to stop including some pages
+        return defaultGenerator.isPublished(page)
+            && !defaultGenerator.isNoIndex(page)
+            && !defaultGenerator.isRedirect(page)
+            && !defaultGenerator.isProtected(page);
+    }
+}
+```
+
+Inoltre, la funzionalità implementata per le mappe del sito XML può essere utilizzata anche in casi d’uso diversi, ad esempio per aggiungere il collegamento canonico o la lingua si alterna nella sezione head di una pagina. Fai riferimento alla [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) per ulteriori informazioni.
 
 ### Creazione di reindirizzamenti 301 per gli URL legacy {#creating-redirects-for-legacy-urls}
 
