@@ -2,9 +2,9 @@
 title: Domande frequenti su Screens as a Cloud Service
 description: Questa pagina descrive le domande frequenti as a Cloud Service di Screens.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 41f057fa2a52068aa6dce97f1a445e072ce2a0af
+source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ Si consiglia di sfruttare le funzionalità di memorizzazione in cache di AEM Scr
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
 ```
+
+## Qual è l&#39;utilizzo del limite del codice di registrazione?
+
+Come best practice, puoi limitare l’utilizzo del codice di registrazione. Se un codice di registrazione è compromesso, ma ha un limite di 100 registrazioni, l&#39;autore dell&#39;attacco può registrare solo fino a quel numero, ma non di più. È sempre possibile aggiornare il limite di utilizzo dopo la creazione del codice di registrazione e dopo la registrazione di alcuni giocatori del cliente. Se il cliente osserva un&#39;attività di registrazione insolita per un codice di registrazione specifico, può abbassare il limite in tempo reale mentre indaga e può aumentare il numero se si tratta di un falso allarme, senza influire sui giocatori già registrati.
