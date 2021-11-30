@@ -2,7 +2,7 @@
 title: Registrazione dei lettori in Screens as a Cloud Service
 description: Questa pagina descrive come registrare i lettori in Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
+source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 1%
@@ -63,9 +63,9 @@ Per registrare il lettore, effettua le seguenti operazioni:
 
    ![immagine](/help/screens-cloud/assets/player/register-player6.png)
 
->[!IMPORTANT]
->**Raccomandazione sulle best practice per la sicurezza durante l&#39;utilizzo del codice di registrazione
->Come best practice, puoi limitare l’utilizzo del codice di registrazione. Se un codice di registrazione è compromesso, ma ha un limite di 100 registrazioni, l&#39;autore dell&#39;attacco può registrare solo fino a quel numero, ma non di più. È sempre possibile aggiornare il limite di utilizzo dopo la creazione del codice di registrazione e dopo la registrazione di alcuni giocatori del cliente. Se il cliente osserva un&#39;attività di registrazione insolita per un codice di registrazione specifico, può abbassare il limite in tempo reale mentre indaga e può aumentare il numero se si tratta di un falso allarme, senza influire sui giocatori già registrati.
+   >[!IMPORTANT]
+   >**Raccomandazione sulle best practice per la sicurezza durante l’utilizzo del codice di registrazione**
+   >Come best practice, puoi limitare l’utilizzo del codice di registrazione. Se un codice di registrazione è compromesso, ma ha un limite di 100 registrazioni, l&#39;autore dell&#39;attacco può registrare solo fino a quel numero, ma non di più. È sempre possibile aggiornare il limite di utilizzo dopo la creazione del codice di registrazione e dopo la registrazione di alcuni giocatori del cliente. Se il cliente osserva un&#39;attività di registrazione insolita per un codice di registrazione specifico, può abbassare il limite in tempo reale mentre indaga e può aumentare il numero se si tratta di un falso allarme, senza influire sui giocatori già registrati.
 
 
 ## Novità {#whats-next}
