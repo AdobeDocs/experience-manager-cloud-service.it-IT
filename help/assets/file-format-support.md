@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6c17b048631a7f61305ec4f0a4f84c4b0577aec0
+source-git-commit: 2c6bf90f51628fb1580a2ad287cfb1500063abc0
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '842'
 ht-degree: 9%
 
 ---
@@ -34,15 +34,15 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 | * | Vedere le osservazioni sotto la tabella |
 | - | Non applicabile |
 
-## Formati di Adobe {#adobe-formats}
+## Adobe formats {#adobe-formats}
 
-| Formato file | Generazione di miniature | Estrazione full-text | Estrazione di metadati | Larghezza/Altezza |
+| Formato file | Thumbnail generation | Estrazione full-text | Estrazione di metadati | Width/Height |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | . | - | . | . |
+| AI | ✓ | - | ✓ | . |
 | COLLABORAZIONE | - | - | . | - |
-| DN | . | - | . | . |
-| IDEE | - | - | . | - |
-| INDD | . | - | . | * |
+| DN | ✓ | - | . | ✓ |
+| IDEAS | - | - | . | - |
+| INDD | . | - | . | ✓ * |
 | INDT | - | - | . | - |
 | PDF | . | . | . | . |
 | PROTO | - | - | . | - |
@@ -50,11 +50,11 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 | PSD | . | - | . | . |
 | XD | . | - | . | . |
 
-\* Per [!DNL Adobe InDesign] file (INDD), la dimensione del rendering è determinata dall’anteprima incorporata nel file INDD. Configura le preferenze in [!DNL InDesign] (**[!UICONTROL Preferenze > Gestione file > Salva sempre immagini di anteprima con documenti, Dimensione anteprima]**) per incorporare rappresentazioni di dimensioni maggiori.
+\* For [!DNL Adobe InDesign] files (INDD), the size of rendition is determined by the preview embedded in the INDD file. Configura le preferenze in [!DNL InDesign] (**[!UICONTROL Preferenze > Gestione file > Salva sempre immagini di anteprima con documenti, Dimensione anteprima]**) per incorporare rappresentazioni di dimensioni maggiori.
 
-## Formati immagine {#image-formats}
+## Image formats {#image-formats}
 
-| Formato file | Generazione di miniature | Estrazione di metadati | Larghezza/Altezza | Ritaglia |
+| File format | Generazione di miniature | Estrazione di metadati | Width/Height | Ritaglia |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | . | - | . | . |
 | EPS | - | . | - | - |
@@ -69,7 +69,7 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 
 ## Formati immagine in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
-| Formato | Carica (formato di input) | Crea predefinito per immagini (formato di output) | Anteprima del rendering dinamico | Distribuzione di rendering dinamico | Scaricare il rendering dinamico |
+| Formato | Carica (formato di input) | Crea predefinito per immagini (formato di output) | Anteprima del rendering dinamico | Distribuzione di rendering dinamico | Download dynamic rendition |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | BMP | . | - | - | - | - |
 | EPS | . | . | . | . | . |
@@ -97,7 +97,7 @@ Sono supportati i seguenti formati 3D.
 
 Vedi anche [Utilizzo di risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
-| Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo dell&#39;accesso | Anteprima miniature | Anteprima 3D | Consegna Dynamic Media |
+| Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo dell&#39;accesso | Thumbnail preview | Anteprima 3D | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | . | . | . | - | . | . | - | - |
 | gLB | . | . | . | . | . | - | . | . |
@@ -123,8 +123,8 @@ Vedi anche [Utilizzo di risorse 3D in Dynamic Media](/help/assets/dynamic-media/
 | IIQ | . | . | . |
 | KDC | . | . | . |
 | MEF | . | . | . |
-| MFW | . | . | . |
-| MOS | . | . | . |
+| MFW | . | ✓ | . |
+| MOS | ✓ | . | . |
 | MRW | . | . | . |
 | NEF | . | . | . |
 | NRW | . | . | . |
@@ -166,7 +166,7 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 ## Formati di documenti in [!DNL Dynamic Media] {#document-support-dynamic-media}
 
-| Formato | Carica (formato di input) | Crea predefinito per immagini (formato di output) | Anteprima del rendering dinamico | Distribuzione di rendering dinamico | Scaricare il rendering dinamico |
+| Formato | Upload (Input format) | Crea predefinito per immagini (formato di output) | Anteprima del rendering dinamico | Distribuzione di rendering dinamico | Scaricare il rendering dinamico |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | . | - | - | - | - |
 | INDD | . | - | - | - | - |
@@ -184,11 +184,11 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 | FLV | . | . | . |
 | M2T | . | - | . |
 | M2TS | . | - | . |
-| M2V | . | - | . |
+| M2V | ✓ | - | . |
 | M4V | . | . | . |
-| MKV | . | - | . |
-| MOV | . | . | . |
-| MP4 | . | . | . |
+| MKV | ✓ | - | . |
+| MOV | . | . | ✓ |
+| MP4 | ✓ | . | . |
 | MPEG | . | . | . |
 | MPG | . | . | . |
 | MTS | . | - | . |
@@ -198,20 +198,20 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 | R3D | - | . | . |
 | SWF | . | - | . |
 | WebM | . | - | . |
-| WMV | . | . | . |
+| WMV | . | . | ✓ |
 
 ## Formati video in [!DNL Dynamic Media] per la transcodifica {#video-dynamic-media-transcoding}
 
-| Estensione file video | Contenitore | Codec video consigliati | Codec video non supportati |
+| Estensione file video | Contenitore | Recommended video codecs | Codec video non supportati |
 | --- | --- | --- | --- |
 | AVI | Interleave A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
 | FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
 | M4V | Apple iTunes | H264/AVC | - |
-| MKV | Matroska | H264/AVC | - |
-| MOV, QT | QuickTime di Apple | H264/AVC, Apple ProRes422 HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
+| MKV | Matroska | H264/AVC | − |
+| MOV, QT | QuickTime di Apple | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
 | MP4 | MPEG-4 | H264/AVC (tutti i profili) | - |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF |  | Formato Media eXchange.<br>Apple ProRes422 | - |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Schermo Microsoft (MSS2), Microsoft Photo Story (WVP2) |
@@ -233,12 +233,12 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
-## Suggerimenti e limitazioni {#limitations-and-tips}
+## Tips and limitations {#limitations-and-tips}
 
-* Attualmente, il limite di dimensione del file per l’estrazione dei metadati è di circa 15 GB. Quando si caricano risorse di grandi dimensioni, a volte l’operazione di estrazione dei metadati non riesce.
+* Currently, the file size limit for metadata extraction is approximately 15 GB. Quando si caricano risorse di grandi dimensioni, a volte l’operazione di estrazione dei metadati non riesce.
 
 >[!MORELIKETHIS]
 >
->* [Elaborazione delle risorse tramite i microservizi per le risorse](asset-microservices-overview.md)
+>* [Asset processing using asset microservices](asset-microservices-overview.md)
 >* [Formati di file supportati per l’assegnazione di tag avanzati alle risorse basate su testo](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
