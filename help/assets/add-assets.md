@@ -4,9 +4,9 @@ description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
+source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2263'
 ht-degree: 1%
 
 ---
@@ -159,7 +159,7 @@ Per configurare lo strumento, segui questi passaggi:
    * [!UICONTROL Elimina il file sorgente dopo l’importazione]: Selezionare questa opzione per eliminare i file originali dall&#39;archivio dati di origine dopo l&#39;importazione in [!DNL Experience Manager].
    * [!UICONTROL Modalità importazione]: Selezionare Ignora, Sostituisci o Crea versione. La modalità Salta è l’impostazione predefinita e in questa modalità l’utente che esegue l’acquisizione salta per importare una risorsa, se esiste già. Vedere il significato di [opzioni di sostituzione e creazione della versione](#handling-upload-existing-file).
    * [!UICONTROL Cartella di destinazione delle risorse]: Importa la cartella in DAM in cui devono essere importate le risorse. Esempio, `/content/dam/imported_assets`
-   * [!UICONTROL File metadati]: Il file di metadati da importare, fornito in formato CSV. Fornisci questo file CSV nella posizione del BLOB di origine e fai riferimento al percorso nella configurazione dello strumento di inserimento in blocco.
+   * [!UICONTROL File metadati]: Il file di metadati da importare, fornito in formato CSV. Specifica il file CSV nella posizione del BLOB di origine e fai riferimento al percorso durante la configurazione dello strumento Bulk Ingestor. Il formato di file CSV a cui si fa riferimento in questo campo è lo stesso del formato di file CSV quando [Importare ed esportare in blocco i metadati delle risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Se selezioni la **Elimina il file sorgente dopo l’importazione** , filtra i file CSV utilizzando **Escludi** o **Includi tipo MIME** o **Filtra per percorso/file** campi. Puoi usare un’espressione regolare per filtrare i file CSV in questi campi.
 
 1. Puoi eliminare, modificare, eseguire ed eseguire ulteriori operazioni con le configurazioni di acquisizione create. Quando selezioni una configurazione per l’acquisizione in serie, nella barra degli strumenti sono disponibili le seguenti opzioni:
 
