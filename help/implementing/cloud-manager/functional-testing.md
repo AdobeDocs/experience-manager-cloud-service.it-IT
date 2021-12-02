@@ -2,7 +2,7 @@
 title: Test funzionali - Cloud Services
 description: Test funzionali - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
+source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 3%
@@ -20,9 +20,9 @@ ht-degree: 3%
 I test funzionali sono suddivisi in tre tipi:
 
 
-* Test funzionale del prodotto
-* Test funzionale personalizzato
-* Test personalizzati dell&#39;interfaccia utente
+* [Test funzionale del prodotto](#product-functional-testing)
+* [Test funzionale personalizzato](#custom-functional-testing)
+* [Test personalizzati dell&#39;interfaccia utente](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 ## Test funzionale del prodotto {#product-functional-testing}
 

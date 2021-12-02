@@ -2,9 +2,9 @@
 title: Test interfaccia utente - Cloud Services
 description: Test interfaccia utente - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
+source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1617'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Test dell&#39;interfaccia utente"
->abstract="I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium). L’immagine Docker può essere creata con strumenti standard, ma deve rispettare alcune convenzioni durante l’esecuzione. Quando si esegue l&#39;immagine Docker, viene eseguito automaticamente il provisioning di un server Selenium. Le convenzioni di runtime descritte di seguito consentono al codice di test di accedere sia al server Selenium che alle istanze AEM in fase di test."
+>abstract="I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium). The Docker image can be created with standard tooling, but it must respect certain conventions during its execution. Quando si esegue l&#39;immagine Docker, viene eseguito automaticamente il provisioning di un server Selenium. Le convenzioni di runtime descritte di seguito consentono al codice di test di accedere sia al server Selenium che alle istanze AEM in fase di test."
 
-I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium). L’immagine Docker può essere creata con strumenti standard, ma deve rispettare alcune convenzioni durante l’esecuzione. Quando si esegue l&#39;immagine Docker, viene eseguito automaticamente il provisioning di un server Selenium. Le convenzioni di runtime descritte di seguito consentono al codice di test di accedere sia al server Selenium che alle istanze AEM in fase di test.
+UI tests are Selenium-based tests packaged in a Docker image in order to allow a wide choice in language and frameworks (such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium). The Docker image can be created with standard tooling, but it must respect certain conventions during its execution. Quando si esegue l&#39;immagine Docker, viene eseguito automaticamente il provisioning di un server Selenium. Le convenzioni di runtime descritte di seguito consentono al codice di test di accedere sia al server Selenium che alle istanze AEM in fase di test.
 
 >[!NOTE]
 > Per utilizzare i test dell’interfaccia utente descritti in questa pagina, è necessario aggiornare le pipeline di stage e produzione create prima del 10 febbraio 2021.
@@ -47,7 +47,7 @@ Per poter generare ed eseguire i test dell’interfaccia utente, i clienti devon
 
 Se questo non è presente nella build `tar.gz` file, la build e le esecuzioni dei test dell’interfaccia utente verranno ignorate
 
-Per aggiungere `testing.properties` aggiungi un `include` istruzione in `assembly-ui-test-docker-context.xml` file (nel sottomodulo di test dell’interfaccia utente):
+Per aggiungere `testing.properties` aggiungi un `include` istruzione in `assembly-ui-test-docker-context.xml` file (nel sottomodulo di test dell’interfaccia utente). Se il progetto non include la riga, dovrai modificare questo file per abilitare il consenso al test dell’interfaccia utente. Se il file può avere una riga che consiglia di non modificare, si prega di ignorare quel consiglio.
 
     &quot;
     [..]
@@ -167,7 +167,7 @@ Le seguenti variabili di ambiente verranno passate all’immagine Docker in fase
 | Variabile | Esempi | Descrizione |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | URL del server Selenium |
-| `SELENIUM_BROWSER` | `chrome`, `firefox` | Implementazione del browser utilizzata dal server Selenium |
+| `SELENIUM_BROWSER` | `chrome`, `firefox` | The browser implementation used by the Selenium Server |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | URL dell’istanza di authoring AEM |
 | `AEM_AUTHOR_USERNAME` | `admin` | Nome utente per accedere all’istanza di authoring AEM |
 | `AEM_AUTHOR_PASSWORD` | `admin` | Password per accedere all&#39;istanza di authoring AEM |
