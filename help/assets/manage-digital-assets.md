@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2298aa1a3fbfbaa21d3ce81323221d68c965f7fe
+source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
 workflow-type: tm+mt
-source-wordcount: '4268'
+source-wordcount: '4287'
 ht-degree: 11%
 
 ---
@@ -58,6 +58,10 @@ Puoi aggiungere il file di configurazione `/apps/example/config.author/com.adobe
 Una volta attivato, Experience Manager invia le notifiche delle risorse duplicate alla casella in entrata dell’Experience Manager. È un risultato aggregato per più duplicati. Gli utenti possono scegliere di rimuovere le risorse in base ai risultati.
 
 ![Notifica della casella in entrata per le risorse duplicate](assets/duplicate-detect-inbox-notification.png)
+
+>[!NOTE]
+>
+>Quando carichi le risorse nell’archivio, Experience Manager rileva le duplicazioni e notifica le prime 100 risorse duplicate.
 
 ## Anteprima delle risorse {#previewing-assets}
 
