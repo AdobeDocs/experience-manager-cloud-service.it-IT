@@ -2,14 +2,14 @@
 title: Backup e ripristino in AEM as a Cloud Service
 description: Backup e ripristino in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
+source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
-# Backup e ripristino in AEM as a Cloud Service
+# Backup e ripristino in AEM as a Cloud Service {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -23,7 +23,7 @@ Se la distribuzione di un cliente, ovvero il codice dell&#39;applicazione distri
 >
 >Questa funzione deve essere utilizzata solo in caso di gravi problemi con il codice o il contenuto. I dati recenti tra il momento del backup ripristinato e il presente andranno persi. Lo staging verrà ripristinato anche alla vecchia versione.
 
-## Guida all’uso
+## Guida all’uso {#how-to-use}
 
 I clienti devono presentare una richiesta di supporto per descrivere il problema riscontrato. Ciò porterà ad un&#39;indagine da parte del supporto Adobe, che determinerà se è necessario un ripristino.
 
@@ -41,3 +41,9 @@ Dopo un ripristino, la versione AEM verrà aggiornata alla versione più recente
 >[!CAUTION]
 >
 >I dati provenienti da ambienti eliminati vengono persi in modo permanente e non possono essere recuperati.
+
+## Backup fuori sede {#offsite-backup}
+
+Anche se i backup regolari coprono il rischio di eliminazioni accidentali o errori tecnici in AEM Cloud Services, devono essere coperti anche i rischi che possono derivare dal guasto di una regione. Oltre alla disponibilità, il rischio maggiore in tali interruzioni dell&#39;area dati è principalmente la perdita di dati.
+AEM as a Cloud Service copre questo rischio come standard per tutti gli ambienti di produzione AEM copiando continuamente l&#39;intero contenuto AEM in una regione remota e rendendolo disponibile per il ripristino per un periodo di 3 mesi. Questa funzionalità viene chiamata Offsite Backup.
+Il ripristino di AEM Cloud Services per ambienti di stage e produzione viene eseguito da AEM Service Reliability Engineering in caso di interruzioni dell’area dati.
