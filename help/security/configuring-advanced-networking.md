@@ -1,7 +1,7 @@
 ---
 title: Configurazione della rete avanzata per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
-source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
+source-git-commit: fa11beb1dfdd8dd2a1a5d49ece059f5894c835be
 workflow-type: tm+mt
 source-wordcount: '2836'
 ht-degree: 1%
@@ -159,7 +159,7 @@ La tabella seguente descrive l’indirizzamento del traffico:
 Livello AEM Cloud Service Apache/Dispatcher `mod_proxy` La direttiva può essere configurata utilizzando le proprietà descritte in precedenza.
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:${AEM_HTTP_PROXY_PORT}"
+ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
 ProxyPass "/somepath" "http://example.com"
 ProxyPassReverse "/somepath" "http://example.com"
 ```
@@ -167,7 +167,7 @@ ProxyPassReverse "/somepath" "http://example.com"
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:${AEM_HTTPS_PROXY_PORT}"
+ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
