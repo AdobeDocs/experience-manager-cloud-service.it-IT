@@ -2,8 +2,7 @@
 title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.11.0
 description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.11.0
 feature: Release Information
-exl-id: null
-source-git-commit: ec2719fca19f366e0021fea7429e93c15e9579df
+source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 2%

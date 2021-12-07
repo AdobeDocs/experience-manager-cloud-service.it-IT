@@ -1,12 +1,11 @@
 ---
 title: Anteprima delle risorse 3D
 description: Scopri come visualizzare in anteprima le risorse 3D in Dynamic Media.
-feature: Risorse 3D
+feature: 3D Assets
 role: User
-exl-id: null
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '563'
 ht-degree: 10%
 
 ---
@@ -27,7 +26,7 @@ L’anteprima 3D interattiva in Experience Manager supporta i seguenti formati d
 | Estensione file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
 | GLB | Trasmissione GL binaria | model/gltf binario |  |
-| GLTF | Formato di trasmissione GL | model/gltf+json | Vedi la **Nota** di seguito. |
+| GLTF | Formato di trasmissione GL | model/gltf+json | Consulta la sezione **Nota** sotto. |
 | OBJ | File oggetto 3D WaveFront | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Sostegno solo all&#39;acquisizione; anteprima non disponibile. |
@@ -35,14 +34,14 @@ L’anteprima 3D interattiva in Experience Manager supporta i seguenti formati d
 
 >[!NOTE]
 >
->Se il rendering dei materiali non viene eseguito in anteprima di un modello gLTF, accertarsi che il nome sia corretto e che si trovi in una cartella `textures` nella stessa cartella principale del modello, in modo simile al seguente:
+>Se i materiali non vengono visualizzati in anteprima di un modello gLTF, accertati che siano denominati correttamente e in un `textures` nella stessa cartella principale del modello, simile alla seguente:
 
     Risorsa (cartella)
-    model.
-    gltfmodel.
-    bintextures (cartella)
-    material_0_baseColor.
-    jpegmaterial_0_Normal.jpeg
+    model.gltf
+    model.bin
+    texture (cartella)
+    material_0_baseColor.jpeg
+    material_0_normale.jpeg
 
 ## Considerazioni sulle prestazioni quando si visualizzano in anteprima le risorse 3D in Experience Manager{#performance-3d-previewing-assets}
 
@@ -53,12 +52,12 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 **Per visualizzare in anteprima le risorse 3D, ad Experience Manager:**
 
 1. Assicurati di aver caricato risorse 3D in Experience Manager.
-Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Carica risorse](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Ad Experience Manager, nella pagina **[!UICONTROL Navigazione]**, vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+Vedi [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Caricare le risorse](/help/assets/manage-digital-assets.md#uploading-assets).
+1. Dall’Experience Manager, sul **[!UICONTROL Navigazione]** vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 
    ![Pagina di navigazione](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Vista a schede]**, quindi individua la risorsa 3D da visualizzare in anteprima.
+1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Vista a schede]**, quindi passa alla risorsa 3D da visualizzare in anteprima.
 
    ![Selezione della scheda 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
    _In Vista a schede, selezionate la scheda della risorsa 3D da visualizzare in anteprima._
@@ -78,4 +77,4 @@ Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-as
    | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
    | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
 
-1. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Chiudi]**.
+1. Al termine, seleziona **[!UICONTROL Chiudi]**.
