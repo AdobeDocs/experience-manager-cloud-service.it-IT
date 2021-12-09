@@ -1,9 +1,9 @@
 ---
 title: Configurazione della rete avanzata per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
-source-git-commit: fa11beb1dfdd8dd2a1a5d49ece059f5894c835be
+source-git-commit: 76cc8f5ecac4fc8e1663c1500433a9e3eb1485df
 workflow-type: tm+mt
-source-wordcount: '2836'
+source-wordcount: '2867'
 ht-degree: 1%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 1%
 # Configurazione della rete avanzata per AEM as a Cloud Service {#configuring-advanced-networking}
 
 Questo articolo mira a presentarti le diverse funzionalità di rete avanzate in AEM as a Cloud Service, tra cui il provisioning self-service di VPN, porte non standard e indirizzi IP in uscita dedicati.
+
+>[!INFO]
+>
+>Puoi anche trovare una serie di articoli progettati per guidarti attraverso ciascuna delle opzioni di rete avanzate in questo [posizione](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
 
 ## Panoramica {#overview}
 
