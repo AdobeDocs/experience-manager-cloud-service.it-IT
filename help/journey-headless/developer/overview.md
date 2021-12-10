@@ -1,10 +1,11 @@
 ---
 title: AEM Percorso di sviluppatori headless
 description: Documentazione AEM CMS headless. Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle per il tuo primo progetto di sviluppo.
+landing-page-description: Inizia qui per un percorso guidato attraverso le funzionalità headless di AEM, le loro funzionalità e come sfruttarle per il tuo primo progetto di sviluppo.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1247'
 ht-degree: 2%
 
 ---
