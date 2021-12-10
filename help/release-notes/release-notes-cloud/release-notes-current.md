@@ -3,9 +3,9 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
+source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1619'
 ht-degree: 2%
 
 ---
@@ -205,3 +205,14 @@ La data di rilascio di Best Practices Analyzer v2.1.22 è il 10 dicembre 2021.
 
 * Il rilevamento dei componenti di Foundation è stato perfezionato per ridurre i falsi negativi.
 * Per i clienti AEM Forms, messaggistica BPA riguardante `EMAIL_PDF_SUBMIT_ACTION` non disponibile su AEM as a Cloud Service è stato corretto.
+
+## Strumento Content Transfer (Trasferimento contenuti)  {#ctt-release}
+
+### Data di pubblicazione {#release-date-ctt}
+
+La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.7.10 è l’8 dicembre 2021.
+
+### Novità {#what-is-new-ctt}
+
+* Passa alla fase di acquisizione nello strumento Content Transfer (Trasferimento contenuti) per consentire agli utenti di disattivarla [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) durante l&#39;ingestione. Per una velocità di acquisizione ottimale, la pre-copia durante l’acquisizione deve essere disabilitata per i set di migrazione di piccole dimensioni o se sono stati aggiunti solo pochi BLOB dall’ultima acquisizione.
+* La mappatura utente è stata aggiornata per utilizzare l&#39;API User Management migliorata che consente di ottenere 2000 utenti alla volta, migliorando significativamente le prestazioni.
