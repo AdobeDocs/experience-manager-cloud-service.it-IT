@@ -2,10 +2,10 @@
 title: Sicurezza di Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione sulla sicurezza di Adobe Experience Manager as a Cloud Service
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 78%
+source-wordcount: '377'
+ht-degree: 77%
 
 ---
 
@@ -17,13 +17,12 @@ In questa pagina sono elencate le risorse di supporto autonomo relative alla sic
 
 * [Panoramica sulla sicurezza per AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
 * [Supporto IMS per AEM as a Cloud Service](ims-support.md)
-* [Supporto per cookie per lo stesso sito per AEM come Cloud Service](same-site-cookie-support.md)
+* [Supporto per lo stesso cookie di sito per AEM as a Cloud Service](same-site-cookie-support.md)
 
 ## Guide di Experience Manager as a Cloud Service {#aem-guides}
 
 | Guida utente | Descrizione |
 |---|---|
-| [Home page di Experience Manager as a Cloud Service](/help/landing/home.md) | Panoramica della documentazione di Experience Manager as a Cloud Service. |
 | [Panoramica](/help/overview/home.md) | Questa guida fornisce una panoramica di Experience Manager as a Cloud Service, con un’introduzione, terminologia, architettura e così via. |
 | [Note sulla versione](/help/release-notes/home.md) | Questa guida include informazioni importanti sull’ultima versione di Experience Manager as a Cloud Service e illustra le funzioni nuove, obsolete e rimosse, nonché i problemi noti. |
 | [Onboarding](/help/onboarding/home.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |

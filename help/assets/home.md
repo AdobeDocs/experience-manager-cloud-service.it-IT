@@ -4,39 +4,38 @@ description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] r
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '270'
 ht-degree: 34%
 
 ---
 
-# [!DNL Assets] come  [!DNL Cloud Service] guida {#aem-assets-guide}
+# [!DNL Assets] come [!DNL Cloud Service] Guida {#aem-assets-guide}
 
-Le seguenti risorse di supporto autonomo sono disponibili per [!DNL Experience Manager Assets] come [!DNL Cloud Service].
+Sono disponibili le seguenti risorse di supporto autonomo per [!DNL Experience Manager Assets] come [!DNL Cloud Service].
 
-## Articoli chiave [!DNL Assets] {#key-articles}
+## Chiave [!DNL Assets] articoli {#key-articles}
 
 * [Panoramica e novità](overview.md)
 * [Modifiche di rilievo](/help/assets/assets-cloud-changes.md)
-* [Architettura di [!DNL Assets] as a [!DNL Cloud Service]](architecture.md)
+* [Architettura [!DNL Assets] come [!DNL Cloud Service]](architecture.md)
 * [Panoramica dei microservizi per le risorse](/help/assets/asset-microservices-overview.md)
 
 ## [!DNL Experience Manager] guide {#aem-guides}
 
 | Guida utente | Descrizione |
 |---|---|
-| [[!DNL Experience Manager] as a [!DNL Cloud Service] Pagina principale](/help/landing/home.md) | Documentazione completa su [!DNL Experience Manager] come [!DNL Cloud Service]. |
 | [Panoramica](/help/overview/home.md) | Panoramica introduttiva e glossario di [!DNL Experience Manager] come [!DNL Cloud Service]. |
 | [Note sulla versione](/help/release-notes/home.md) | Note sulla versione, novità, funzionalità obsolete e rimosse e problemi noti. |
-| [Guida utente sulla sicurezza](/help/security/home.md) | Scopri importanti argomenti sulla sicurezza relativi a [!DNL Experience Manager] come [!DNL Cloud Service]. |
-| [Onboarding](/help/onboarding/home.md) | Inizia a utilizzare [!DNL Experience Manager] come [!DNL Cloud Service]: accedi e proteggi i dati importanti. |
-| [Guida utente di Sites](/help/sites-cloud/home.md) | Scopri come creare e amministrare [!DNL Experience Manager Sites] come [!DNL Cloud Service]. |
+| [Guida utente sulla sicurezza](/help/security/home.md) | Scopri importanti argomenti sulla sicurezza riguardanti [!DNL Experience Manager] come [!DNL Cloud Service]. |
+| [Onboarding](/help/onboarding/home.md) | Introduzione a [!DNL Experience Manager] come [!DNL Cloud Service] accesso e protezione di dati importanti. |
+| [Guida utente di Sites](/help/sites-cloud/home.md) | Comprendere come creare e amministrare, [!DNL Experience Manager Sites] come [!DNL Cloud Service]. |
 | [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando le potenti funzionalità di Experience Manager esplorando questi argomenti relativi allo sviluppo e all’implementazione. |
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Esplora questo percorso guidato attraverso le potenti e flessibili funzionalità di Experience Manager headless per preparare il tuo primo progetto headless. |
-| [Spostamento  [!DNL Experience Manager] di [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Comprendi il percorso di transizione in [!DNL Experience Manager] come [!DNL Cloud Service]. |
+| [Passaggio a [!DNL Experience Manager] come [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Comprendere il percorso di transizione verso [!DNL Experience Manager] come [!DNL Cloud Service]. |
 | [Guida utente dei connettori](/help/connectors/home.md) | Scopri come integrare i connettori in [!DNL Experience Manager] come [!DNL Cloud Service]. |
-| [Guida utente sulle operazioni](/help/operations/home.md) | Scopri le operazioni back-end di [!DNL Experience Manager] come [!DNL Cloud Service], ad esempio le attività di indicizzazione e manutenzione. |
+| [Guida utente sulle operazioni](/help/operations/home.md) | Informazioni sulle operazioni back-end di [!DNL Experience Manager] come [!DNL Cloud Service], ad esempio le attività di indicizzazione e manutenzione. |
 | [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri Commerce Integration Framework in [!DNL Experience Manager] come [!DNL Cloud Service]. |
 
 ## Altre risorse su Experience Manager {#other-resources}
@@ -47,6 +46,6 @@ Le seguenti risorse di supporto autonomo sono disponibili per [!DNL Experience M
 * [Documentazione di Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it)
 * [Preparazione al GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager as  [!DNL Cloud Service] Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
+* [Adobe Experience Manager as a [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [[!DNL Experience Manager] Forum della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)

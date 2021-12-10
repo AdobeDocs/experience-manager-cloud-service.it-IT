@@ -2,52 +2,51 @@
 title: Onboarding per Adobe Experience Manager as a Cloud Service
 description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 28%
+source-wordcount: '500'
+ht-degree: 25%
 
 ---
 
-# Avvia l&#39;onboarding su [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
+# Avvia l&#39;onboarding a [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
 >title="Panoramica sull’onboarding"
 >abstract="Che tu stia distribuendo una nuova applicazione o ne esegua la migrazione, questa guida funge da punto di partenza per garantire che l&#39;applicazione sia ottimizzata e pronta per il successo sul Cloud Service. Per consentire agli utenti di aggiungere a Cloud Manager i ruoli assegnati e le autorizzazioni associate, ti servirà l’aiuto del tuo Adobe ID e dell’amministratore di sistema."
 
-Congratulazioni per aver iniziato il tuo percorso con AEM come Cloud Service! Che tu stia distribuendo una nuova applicazione o ne esegua la migrazione, questa guida funge da punto di partenza per garantire che l&#39;applicazione sia ottimizzata e pronta per il successo sul Cloud Service.
+Congratulazioni per aver iniziato il tuo percorso con AEM as a Cloud Service! Che tu stia distribuendo una nuova applicazione o ne esegua la migrazione, questa guida funge da punto di partenza per garantire che l&#39;applicazione sia ottimizzata e pronta per il successo sul Cloud Service.
 
 ## Esperienza onboarding {#audience}
 
-L&#39;onboarding è il processo durante il quale un [amministratore di sistema ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designato imposta AEM come Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale di risorse cloud e l’assegnazione di utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito a cui ogni membro è in grado di accedere e accedere ai propri AEM come risorse di Cloud Service.
+Onboarding è il processo durante il quale un [Amministratore di sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) imposta AEM as a Cloud Service per la tua organizzazione. Ciò include il provisioning iniziale di risorse cloud e l’assegnazione di utenti a ruoli appropriati in base alle loro responsabilità lavorative, in seguito a cui ogni membro è in grado di accedere e accedere alle proprie risorse as a Cloud Service AEM.
 
 Il percorso di onboarding illustrato di seguito è stato progettato per un utente utente utente amministratore di sistema, in cui sono illustrati i requisiti, i passaggi e l&#39;approccio. Il percorso definisce gli utenti con cui l’amministratore di sistema deve interagire per il successo di un progetto, ma il punto di vista del percorso è quello di un amministratore.
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
 >[!NOTE]
->Per iniziare a utilizzare la tua esperienza di onboarding, consulta [Percorso di onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) .
+>Vedi [Percorso di onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) per iniziare a utilizzare la tua esperienza di onboarding.
 
 
 ## [!DNL Experience Manager as a Cloud Service] Guide {#aem-guides}
 
 | Guida utente | Descrizione |
 |---|---|
-| [Home page di Experience Manager as a Cloud Service](/help/landing/home.md) | Panoramica della documentazione di Experience Manager as a Cloud Service. |
-| [Panoramica](/help/overview/home.md) | Questa guida fornisce una panoramica di [!DNL Experience Manager as a Cloud Service] , che include un’introduzione, una terminologia, un’architettura e così via. |
+| [Panoramica](/help/overview/home.md) | Questa guida fornisce una panoramica di [!DNL Experience Manager as a Cloud Service], inclusa un’introduzione, la terminologia, l’architettura e così via. |
 | [Note sulla versione](/help/release-notes/home.md) | Questa guida fornisce informazioni importanti sull’ultima versione di [!DNL Experience Manager as a Cloud Service], incluse le funzioni nuove, obsolete e rimosse e i problemi noti. |
-| [Guida utente sulla sicurezza](/help/security/home.md) | Scopri importanti argomenti sulla sicurezza relativi a [!DNL Experience Manager as a Cloud Service]. |
-| [Guida utente di Sites](/help/sites-cloud/home.md) | Scopri come creare e amministrare [!DNL Experience Manager Sites] come Cloud Service. |
-| [Guida utente di Assets](/help/assets/home.md) | Scopri come utilizzare e amministrare [!DNL Experience Manager Assets as a Cloud Service]. |
+| [Guida utente sulla sicurezza](/help/security/home.md) | Scopri importanti argomenti sulla sicurezza riguardanti [!DNL Experience Manager as a Cloud Service]. |
+| [Guida utente di Sites](/help/sites-cloud/home.md) | Comprendere come creare e amministrare, [!DNL Experience Manager Sites] as a Cloud Service. |
+| [Guida utente di Assets](/help/assets/home.md) | Comprendere come utilizzare e amministrare [!DNL Experience Manager Assets as a Cloud Service]. |
 | [Passaggio ad AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Comprendi il percorso di transizione verso Cloud Service |
 | [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando AEM potenti funzionalità esplorando questi argomenti relativi allo sviluppo e alla distribuzione. |
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Esplora questo percorso guidato attraverso le potenti e flessibili funzionalità di AEM per prepararsi al tuo primo progetto headless. |
 | [Guida utente dei connettori](/help/connectors/home.md) | Scopri come integrare i connettori in [!DNL Experience Manager as a Cloud Service]. |
-| [Guida utente sulle operazioni](/help/operations/home.md) | Scopri le operazioni back-end di [!DNL Experience Manager as a Cloud Service], ad esempio le attività di indicizzazione e manutenzione. |
+| [Guida utente sulle operazioni](/help/operations/home.md) | Informazioni sulle operazioni back-end di [!DNL Experience Manager as a Cloud Service], ad esempio le attività di indicizzazione e manutenzione. |
 | [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri Commerce Integration Framework in [!DNL Experience Manager as a Cloud Service]. |
 
-## Altre risorse [!DNL Experience Manager] {#other-resources}
+## Altro [!DNL Experience Manager] Risorse {#other-resources}
 
 * [Aggiornamenti recenti della documentazione](https://helpx.adobe.com/it/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Documentazione di Dispatcher](/help/implementing/dispatcher/overview.md)

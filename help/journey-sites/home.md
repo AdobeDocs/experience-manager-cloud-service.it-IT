@@ -2,7 +2,7 @@
 title: percorsi AEM Sites
 description: Inizia qui per una panoramica dei percorsi guidati disponibili per comprendere AEM potenti funzionalità dei siti.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: e69d3efbb45f95cbb5f84724c86c3cbd1255b8fb
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Inizia qui per una panoramica dei percorsi guidati disponibili per comprendere A
 
 ## percorsi di documentazione AEM {#documentation-journeys}
 
-[Un Percorso di documentazione](/help/journey-documentation/home.md) unisce molti argomenti e caratteristiche diversi e forse complicati fornendo una narrazione che aiuta il lettore, che può essere nuovo a AEM, capire e risolvere un problema di business dall&#39;inizio alla fine, assumendo al contempo un argomento preliminare minimo o AEM conoscenza.
+[Un Percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e forse complicati fornendo una narrazione che aiuta il lettore, che può essere nuovo a AEM, capire e risolvere un problema di business dall&#39;inizio alla fine, assumendo al contempo un argomento preliminare minimo o AEM conoscenza.
 
 I Percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback dai progetti dei clienti.
 
@@ -42,4 +42,4 @@ Per gli argomenti relativi ad AEM Sites sono disponibili i seguenti Percorsi di 
 | [Percorso di traduzione dei siti](/help/journey-sites/translation/overview.md) | Scopri le tecnologie AEM Sites, come utilizzarle nel progetto e come creare e aggiornare progetti di traduzione in AEM da A a Z. | Specialisti di traduzione |
 | [Percorso di creazione di siti rapidi](/help/journey-sites/quick-site/overview.md) | Iniziate qui per un percorso guidato attraverso il facile da usare AEM strumento di creazione di siti rapidi per semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza AEM conoscenza back-end. | Sviluppatori front-end |
 
-Rimani sintonizzato per [percorsi successivi che includeranno ruoli aggiuntivi.](/help/journey-documentation/home.md#journeys)
+Rimani sintonizzato per [percorsi successivi che includeranno ruoli aggiuntivi.](/help/journey-documentation/documentation-journeys.md#journeys)
