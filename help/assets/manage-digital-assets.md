@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
+source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
 workflow-type: tm+mt
-source-wordcount: '4287'
+source-wordcount: '4320'
 ht-degree: 11%
 
 ---
@@ -244,7 +244,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Non viene cre
 
    >[!NOTE]
    >
-   >Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. Inoltre, a seconda del browser, sono supportati diversi formati video.
+   >Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. Inoltre, a seconda del browser, sono supportati diversi formati video. Tuttavia, il formato video MXF non è ancora supportato con le annotazioni video.
 
 ## Eliminare le risorse {#delete-assets}
 
@@ -410,7 +410,7 @@ La timeline consente di visualizzare vari eventi per un elemento selezionato, ad
 
 Le annotazioni sono commenti o note esplicative aggiunte a immagini o video. Le annotazioni consentono agli addetti al marketing di collaborare e lasciare un feedback sulle risorse.
 
-Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. I formati video supportati da Assets dipendono dal browser.
+Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. I formati video supportati da Assets dipendono dal browser. Tuttavia, il formato video MXF non è ancora supportato con le annotazioni video.
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    >[!NOTE]
    >
-   >Le annotazioni possono essere aggiunte anche alle risorse video. Durante l&#39;annotazione dei video, il lettore si mette in pausa per consentirvi di annotare un fotogramma. Per maggiori dettagli, vedi [gestione delle risorse video](manage-video-assets.md).
+   >Le annotazioni possono essere aggiunte anche alle risorse video. Durante l&#39;annotazione dei video, il lettore si mette in pausa per consentirvi di annotare un fotogramma. Per maggiori dettagli, vedi [gestione delle risorse video](manage-video-assets.md). Tuttavia, il formato video MXF non è ancora supportato con le annotazioni video.
 
 1. Per scegliere un colore diverso per differenziare gli utenti, tocca o fai clic sull’icona Profilo e tocca o fai clic su **[!UICONTROL Preferenze]**.
 
