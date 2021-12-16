@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: dd127862d65ed2f6a2dc2f93f9668552c577181c
+source-git-commit: 7b636396dd9ca34955d2f40a7191821e43cb30f9
 workflow-type: tm+mt
-source-wordcount: '3362'
+source-wordcount: '3365'
 ht-degree: 34%
 
 ---
@@ -432,6 +432,7 @@ ht-degree: 34%
          + [Riutilizzare le proprietà dei metadati di un modulo adattivo](/help/forms/reusing-adaptive-forms.md)
       + Migliorare l’accessibilità di un modulo adattivo {#accessible-adaptive-forms}
          + [Creare un modulo adattivo accessibile](/help/forms/creating-accessible-adaptive-forms.md)
+      + [Configurare Forms Portal](/help/forms/configure-forms-portal.md)
    + Integrare un modulo con una o più origini dati {#use-form-data-model}
       + [Configurare origini dati](/help/forms/configure-data-sources.md)
       + [Configura [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
