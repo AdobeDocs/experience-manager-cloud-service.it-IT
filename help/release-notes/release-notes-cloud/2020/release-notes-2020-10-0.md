@@ -2,7 +2,7 @@
 title: Note sulla versione 2020.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2020.10.0.'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 15908636f916a55008513035e3072cf1b1cc5f1c
+source-git-commit: 95ea603db207d93fa025a2ae20552f790b47f27c
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 21%
@@ -43,7 +43,7 @@ La versione seguente (2020.11.0) sarà il 1° dicembre 2020.
 
 * **[!DNL Assets]Supporto file WebP**: [!DNL Assets] as a Cloud Service ora supporta il formato immagine WebP. WebP è un formato immagine emergente creato da Google. Le immagini in formato file WebP sono visivamente indistinguibili dai file JPG o PNG e i file sono molto più piccoli. Le dimensioni ridotte dei file di risorse migliorano i tempi di caricamento delle pagine e consentono ai creatori di contenuti di offrire un’esperienza web più veloce. Scopri come utilizzare WebP in [creare un profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#forms-oct-2021}
+## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
 ### Novità di [!DNL Forms] {#what-is-new-forms-oct-2021}
 
@@ -77,7 +77,7 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 ### Data di pubblicazione {#release-date-cm}
 
-La data di rilascio per Cloud Manager in Experience Manager as a Cloud Service 2020.10.0 è il 20 ottobre 2020.
+La data di rilascio di Cloud Manager in Experience Manager as a Cloud Service 2020.10.0 è il 20 ottobre 2020.
 
 ### Novità di [!DNL Cloud Manager] {#what-is-new-cm}
 
