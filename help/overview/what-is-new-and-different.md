@@ -191,7 +191,7 @@ A causa della netta separazione di codice e contenuto, gli sviluppatori possono 
 
 ### Sviluppo locale {#aem-as-a-cloud-service-developing-local-development}
 
-Al fine di sostenere le iterazioni e lo sviluppo rapidi, è anche possibile sviluppare applicazioni AEM al di fuori del contesto as a Cloud Service AEM. A questo scopo, gli sviluppatori possono accedere ai seguenti artefatti:
+Al fine di supportare le iterazioni e lo sviluppo rapidi, è anche possibile sviluppare applicazioni AEM al di fuori del contesto as a Cloud Service AEM. A questo scopo, gli sviluppatori possono accedere ai seguenti artefatti:
 
 * Guida rapida AEM as a Cloud Service: a `.jar` installatore indipendente basato su AEM della base di codice più recente, con la stessa superficie funzionale e API.
 
