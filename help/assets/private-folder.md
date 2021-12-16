@@ -4,9 +4,9 @@ description: Scopri come creare una cartella privata nel [!DNL Adobe Experience 
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
-source-git-commit: 2a05822588cdb031a1fe25429910dd44f67f2d36
+source-git-commit: ac8dc2a765aba5be45017cf4adbc8f64b20ff7f3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Puoi creare una cartella privata nel [!DNL Adobe Experience Manager Assets] inte
 >
 >La cartella privata ha almeno un membro con ruolo Proprietario.
 >
->Per creare una cartella privata, è necessario leggere e modificare [autorizzazioni di controllo accessi](/help/sites-administering/security.md#permissions-in-aem) nella cartella principale in cui si desidera creare una cartella privata. Se non sei un amministratore, queste autorizzazioni non sono abilitate per impostazione predefinita in `/content/dam`. In questo caso, prima di cercare di creare cartelle private, ottieni queste autorizzazioni per il tuo ID utente/gruppo.
+>Per creare una cartella privata, è necessario `Read` e `Modify` autorizzazioni per la cartella principale in cui si desidera creare una cartella privata. Se non sei un amministratore, queste autorizzazioni non sono abilitate per impostazione predefinita in `/content/dam`. In questo caso, prima di cercare di creare cartelle private, ottieni queste autorizzazioni per il tuo ID utente/gruppo.
 
 ## Creare e condividere una cartella privata  {#create-share-private-folder}
 
