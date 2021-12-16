@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 479cfffd17dcde12bda7d53a7acddfbb46782a8f
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 9%
+source-wordcount: '985'
+ht-degree: 8%
 
 ---
 
@@ -42,7 +42,7 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 | COLLABORAZIONE | - | - | . | - |
 | DN | . | - | . | . |
 | IDEE | - | - | . | - |
-| INDD | . | - | . | * |
+| INDD | . | - | . | ✓ * |
 | INDT | - | - | . | - |
 | PDF | . | . | . | . |
 | PROTO | - | - | . | - |
@@ -67,35 +67,11 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 | SVG | . | - | . | . |
 | TIFF | . | . | . | - |
 
-## Formati immagine in [!DNL Dynamic Media] {#image-support-dynamic-media}
-
-| Formato | Carica (formato di input) | Crea predefinito per immagini (formato di output) | Anteprima del rendering dinamico | Distribuzione di rendering dinamico | Scaricare il rendering dinamico |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| BMP | . | - | - | - | - |
-| EPS | . | . | . | . | . |
-| GIF | . | . | . | . | . |
-| JPEG | . | . | . | . | . |
-| PICT | . | - | - | - | - |
-| PNG | . | . | . | . | . |
-| PSD | . | - | - | - | - |
-| TIFF | . | . | . | . | . |
-
-† L&#39;immagine unita viene estratta dal file PSD. È un’immagine generata da [!DNL Adobe Photoshop] ed è incluso nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere o meno l’immagine effettiva.
-
-I seguenti sottotipi di formati di file immagine raster non supportati in [!DNL Dynamic Media]:
-
-* File PNG con una dimensione del blocco IDAT superiore a 100 MB.
-* File PSB.
-* I file PSD con uno spazio colore diverso da CMYK, RGB, Scala di grigio o Bitmap non sono supportati. Gli spazi colore DuoTone, Lab e Indexed non sono supportati.
-* File PSD con una profondità di bit maggiore di 16.
-* File TIFF con dati a virgola mobile.
-* File TIFF con spazio colore Lab.
-
 ## Formati 3D {#support-3d-formats}
 
 Sono supportati i seguenti formati 3D.
 
-Vedi anche [Utilizzo di risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Vedi anche [Utilizzare le risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 | Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo dell&#39;accesso | Anteprima miniature | Anteprima 3D | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -164,14 +140,6 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 | XLSX | . | . | . | . | . |
 | XML | - | . | - | - | - |
 
-## Formati di documenti in [!DNL Dynamic Media] {#document-support-dynamic-media}
-
-| Formato | Carica (formato di input) | Crea predefinito per immagini (formato di output) | Anteprima del rendering dinamico | Distribuzione di rendering dinamico | Scaricare il rendering dinamico |
-| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | . | - | - | - | - |
-| INDD | . | - | - | - | - |
-| PDF | . | . | . | . | . |
-
 ## Formati video {#video-formats}
 
 | Formato file | Generazione di miniature | Estrazione di metadati | Larghezza/Altezza |
@@ -200,24 +168,6 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 | WebM | . | - | . |
 | WMV | . | . | . |
 
-## Formati video in [!DNL Dynamic Media] per la transcodifica {#video-dynamic-media-transcoding}
-
-| Estensione file video | Contenitore | Codec video consigliati | Codec video non supportati |
-| --- | --- | --- | --- |
-| AVI | Interleave A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
-| M4V | Apple iTunes | H264/AVC | - |
-| MKV | Matroska | H264/AVC | - |
-| MOV, QT | QuickTime di Apple | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
-| MP4 | MPEG-4 | H264/AVC (tutti i profili) | - |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| WebM | WebM | Google VP8 | - |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Schermo Microsoft (MSS2), Microsoft Photo Story (WVP2) |
-
-† Questo formato video non è ancora supportato per l&#39;uso con video interattivi in Dynamic Media o per l&#39;uso con Annotation in Experience Manager Assets.
-
 ## Formati audio {#audio-formats}
 
 [!DNL Assets] come [!DNL Cloud Service] fornisce supporto per l’estrazione dei metadati XMP per i formati audio AIF, ASF, M4A, MP3, WAV e WMA.
@@ -238,6 +188,69 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 ## Suggerimenti e limitazioni {#limitations-and-tips}
 
 * Attualmente, il limite di dimensione del file per l’estrazione dei metadati è di circa 15 GB. Quando si caricano risorse di grandi dimensioni, a volte l’operazione di estrazione dei metadati non riesce.
+
+## Dynamic Media - Formati video di ingresso supportati per la transcodifica {#video-dynamic-media-transcoding}
+
+| Estensione file video | Contenitore | Codec video consigliati | Codec video non supportati |
+| --- | --- | --- | --- |
+| AVI | Interleave A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
+| M4V | Apple iTunes | H264/AVC | - |
+| MKV | Matroska | H264/AVC | - |
+| MOV, QT | QuickTime di Apple | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
+| MP4 | MPEG-4 | H264/AVC (tutti i profili) | - |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| WebM | WebM | Google VP8 | - |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Schermo Microsoft (MSS2), Microsoft Photo Story (WVP2) |
+
+† Questo formato video non è ancora supportato per l&#39;uso con video interattivi in Dynamic Media o per l&#39;uso con Annotation in Experience Manager Assets.
+
+## Dynamic Media - Formati di documenti supportati {#document-support-dynamic-media}
+
+| Formato | Carica (formato di input) | Crea predefinito per immagini (formato di output) | Anteprima del rendering dinamico | Distribuzione di rendering dinamico | Scaricare il rendering dinamico |
+| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
+| AI | . | - | - | - | - |
+| INDD | . | - | - | - | - |
+| PDF | . | . | . | . | . |
+
+## Dynamic Media - Formati immagine raster supportati {#image-support-dynamic-media}
+
+| Formato | Carica (formato di input) | Crea predefinito per immagini (formato di output) | Anteprima del rendering dinamico | Distribuzione di rendering dinamico | Scaricare il rendering dinamico | Imposta i tipi che supportano questo formato |
+| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
+| BMP | . | - | - | - | - | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
+| EPS | . | . | . | . | . | - |
+| GIF | . | . | . | . | . | - |
+| JPEG | . | . | . | . | . | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | . | - | - | - | - | - |
+| PNG | . | . | . | . | . | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
+| PSD | . | - | - | - | - | - |
+| TIFF | . | . | . | . | . | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
+
+† L&#39;immagine unita viene estratta dal file PSD. È un’immagine generata da [!DNL Adobe Photoshop] ed è incluso nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere o meno l’immagine effettiva.
+
+## Dynamic Media - Formati immagine raster non supportati {#unsupported-raster-image-formats-dm}
+
+I seguenti sottotipi di formati di file immagine raster *not* supportato in [!DNL Dynamic Media]:
+
+* File PNG con una dimensione del blocco IDAT superiore a 100 MB.
+* File PSB.
+* I file PSD con uno spazio colore diverso da CMYK, RGB, Scala di grigio o Bitmap non sono supportati. Gli spazi colore DuoTone, Lab e Indexed non sono supportati.
+* File PSD con una profondità di bit maggiore di 16.
+* File TIFF con dati a virgola mobile.
+* File TIFF con spazio colore Lab.
+
+## Dynamic Media - Formati di file 3D supportati {#support-3d-formats-dynamic-media}
+
+Vedi anche [Formati 3D supportati](/help/assets/file-format-support.md#support-3d-formats)
+
+| Estensione file 3D | Formato file | Tipo MIME | Note |
+|---|---|---|---|
+| GLB | Trasmissione GL binaria | model/gltf binario | Include i materiali e le texture come un’unica risorsa. |
+| OBJ | File oggetto 3D WaveFront | application/x-tgif |  |
+| STL | Stereolitografia | application/vnd.ms-pki.stl |  |
+| USDZ | Universal Scene Descrizione Archivio ZIP | model/vnd.usdz+zip | *Sostegno solo all&#39;acquisizione; non è disponibile alcuna visualizzazione o interazione.* USDZ è un formato 3D proprietario che può essere visualizzato in modalità nativa da Safari o iOS. |
 
 >[!MORELIKETHIS]
 >
