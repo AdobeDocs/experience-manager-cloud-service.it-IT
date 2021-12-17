@@ -3,7 +3,7 @@ title: Passare ad AEM as a Cloud Service
 description: 'Adobe Experience Manager as a Cloud Service: risorse di supporto autonomo e collegamenti alla documentazione sul passaggio ad AEM as a Cloud Service'
 landing-page-description: Comprendi il percorso di transizione verso Cloud Service.
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 54%
@@ -31,7 +31,7 @@ Per una transizione corretta e senza problemi, è necessario garantire una piani
 
 La figura seguente mostra una rappresentazione pittorica del percorso di transizione consigliato AEM as a Cloud Service.
 
-![immagine](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
+![immagine](/help/journey-migration/assets/move-aemcloud-process.png)
 
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}

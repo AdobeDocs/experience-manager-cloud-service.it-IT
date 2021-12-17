@@ -2,10 +2,10 @@
 title: Fase di implementazione
 description: Fase di implementazione
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ I passaggi esatti della transizione verso Cloud Service dipendono dai sistemi ac
 
 La figura seguente mostra i passaggi principali della fase di esecuzione:
 
-![immagine](/help/move-to-cloud-service/assets/exec-image1.png)
+![immagine](/help/journey-migration/assets/exec-image1.png)
 
 ## Trasferimento dei contenuti {#content-transfer}
 
@@ -41,7 +41,7 @@ Con questo strumento, puoi specificare il sottoinsieme di contenuti che desideri
 >[!NOTE]
 >Si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service.
 
-Per ulteriori informazioni, consulta [Strumento Content Transfer (Trasferimento contenuti](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+Per ulteriori informazioni, consulta [Strumento Content Transfer (Trasferimento contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 >[!IMPORTANT]
 >l requisiti di sistema minimi per lo strumento Content Transfer (Trasferimento contenuti) sono AEM 6.3 o versione successiva e JAVA 8. Se utilizzi una precedente versione di AEM, dovrai aggiornare l’archivio dei contenuti ad AEM 6.5 per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
@@ -64,9 +64,9 @@ Nella fase di pianificazione, avrai stilato un elenco di aree che richiedono il 
 
 Per accelerare alcune delle attività di refactoring del codice, puoi utilizzare i seguenti strumenti:
 
-* [Asset Workflow Migration (Migrazione flussi di lavoro per risorse) ](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-* [Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-* [Strumenti di modernizzazione](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
+* [Asset Workflow Migration (Migrazione flussi di lavoro per risorse) ](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+* [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
+* [Strumenti di modernizzazione](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 
 Si consiglia di effettuare il refactoring del codice e testarlo localmente prima di inviarlo a un ambiente Cloud Service tramite Cloud Manager Git.
 
@@ -82,7 +82,7 @@ Di seguito sono elencate alcune risorse aggiuntive:
 
    >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-* Consulta la documentazione [Local Development Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) per configurare un ambiente di sviluppo locale
+* Consulta la documentazione [Local Development Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) per configurare un ambiente di sviluppo locale
 
 
 Per gestire lo sviluppo del codice in corso sul tuo AEM attivo insieme all’attività di refactoring del codice come parte del percorso di transizione, è consigliabile pianificare un periodo di blocco del codice fino a quando non avrai completato la ristrutturazione del progetto Maven per renderlo compatibile con AEM as a Cloud Service.

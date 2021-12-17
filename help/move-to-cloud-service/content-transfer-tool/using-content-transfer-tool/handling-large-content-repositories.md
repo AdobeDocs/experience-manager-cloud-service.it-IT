@@ -1,8 +1,8 @@
 ---
 title: Gestione di archivi di contenuti di grandi dimensioni
-description: Questa sezione descrive la gestione degli archivi di contenuti di grandi dimensioni
+description: Questa sezione descrive la gestione di archivi di contenuti di grandi dimensioni
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 6228e4072ad0042dae8ce415464c7bd5ed36612c
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 1%
@@ -70,14 +70,14 @@ Leggi questa sezione per scoprire come configurare per utilizzare AzCopy come pa
 
 Dalla pagina delle proprietà del contenitore nel portale di Azure, utilizza **Calcola dimensioni** per determinare le dimensioni di tutto il contenuto del contenitore. Esempio:
 
-![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![immagine](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Archivio dati Amazon S3 {#amazon-data}
 
 Puoi utilizzare la scheda Metriche del contenitore per determinare la dimensione di tutto il contenuto del contenitore. Esempio:
 
 
-![immagine](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
+![immagine](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 #### Archivio file di dati {#file-data-store-determine-size}
 
@@ -94,7 +94,7 @@ Puoi utilizzare la scheda Metriche del contenitore per determinare la dimensione
 In breve, molto probabilmente si desidera scaricare il binario Linux x86-64 dal [Pagina docs di AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) e cancellalo in una posizione come /usr/bin.
 
 >[!IMPORTANT]
->Prendi nota del punto in cui hai inserito il binario, in quanto ti servirà il percorso completo in un passaggio successivo.
+>Prendi nota di dove hai posizionato il binario, in quanto ti servirà il percorso completo in un passaggio successivo.
 
 ### 2. Installare una versione dello strumento Content Transfer (CTT) con il supporto AzCopy {#install-ctt-azcopy-support}
 
@@ -243,4 +243,4 @@ Ad esempio, l’estrazione della copia digitale può essere disabilitata con: `m
 
 ## Novità {#whats-next}
 
-Dopo aver imparato a gestire archivi di contenuti di grandi dimensioni per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM as a Cloud Service, ora puoi imparare il processo di estrazione nello strumento Content Transfer (Trasferimento contenuti). Vedi [Estrazione di contenuti dall’origine nello strumento Content Transfer (Trasferimento contenuti)](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) per scoprire come estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti).
+Dopo aver appreso come gestire archivi di contenuti di grandi dimensioni per accelerare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM as a Cloud Service, ora puoi imparare il processo di estrazione nello strumento Content Transfer (Trasferimento contenuti). Vedi [Estrazione di contenuti dall’origine nello strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) per scoprire come estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti).

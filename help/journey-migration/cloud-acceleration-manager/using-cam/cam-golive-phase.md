@@ -1,0 +1,33 @@
+---
+title: Fase di pubblicazione in Cloud Acceleration Manager
+description: Questa pagina fornisce una panoramica della fase Go-live in Cloud Acceleration Manager.
+source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+workflow-type: tm+mt
+source-wordcount: '150'
+ht-degree: 2%
+
+---
+
+# Go Live Phase in Cloud Acceleration Manager {#golive-phase-cam}
+
+La scheda Go Live fornisce tutti i contenuti pertinenti che evidenziano la preparazione, le azioni specifiche da intraprendere e una considerazione approfondita per garantire una corretta e corretta esecuzione AEM as a Cloud Service.
+
+Fai clic sulla scheda del progetto per aprire la pagina di destinazione del progetto e passare alla **Vai in diretta** come illustrato nella figura riportata di seguito.
+
+![immagine](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+
+>[!NOTE]
+>Fai riferimento a [Creazione e gestione di un progetto in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) per saperne di più.
+
+
+## Utilizzo della scheda Attività Go Live {#go-live}
+
+Segui questa sezione per esplorare la scheda dell’attività Vai in tempo reale :
+
+1. Fai clic sul pulsante **Visualizza** dal pulsante **Vai in diretta** il Card.
+
+   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+
+1. Un carosello di contenuti visualizza informazioni rilevanti per questa fase del percorso di migrazione.
+
+   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)

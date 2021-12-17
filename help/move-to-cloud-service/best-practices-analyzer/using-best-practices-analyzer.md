@@ -2,7 +2,7 @@
 title: Utilizzo di Best Practices Analyzer
 description: Utilizzo di Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 41%
@@ -15,7 +15,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="Utilizzo di Best Practices Analyzer"
 >abstract="Esamina la documentazione relativa all’utilizzo di Best Practices Analyzer (precedentemente Cloud Readiness Analyzer) e il rapporto generato. Il rapporto di Best Practices Analyzer (Analisi di best practice) viene utilizzato per acquisire una comprensione di alto livello della preparazione generale all’aggiornamento."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considerazioni importanti sull’utilizzo di Best Practices Analyzer {#imp-considerations}
 
@@ -59,38 +59,38 @@ Leggi questa sezione per scoprire come visualizzare il rapporto di Best Practice
 
 1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Analisi delle best practice**.
 
-   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. Fai clic su **Genera report** per eseguire Best Practices Analyzer.
 
-   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. Durante la generazione del rapporto da parte del BPA, puoi vedere lo stato di avanzamento dello strumento sullo schermo. Mostra il numero di elementi analizzati e mostra anche il numero di risultati rilevati.
 
-   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
 
 1. Una volta generato il rapporto BPA, questo visualizza un riepilogo e il numero dei risultati in un formato tabulare organizzato in base al tipo di risultato e al livello di importanza. Per ottenere ulteriori dettagli su un particolare risultato, puoi fare clic sul numero corrispondente al tipo di risultato nella tabella.
 
-   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
    L’azione precedente scorre automaticamente fino alla posizione del risultato nel rapporto.
 
-   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
 
 1. Puoi scaricare il rapporto in formato CSV facendo clic su **Esportazione in formato CSV**, come illustrato nella figura seguente.
 
-   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
 È possibile forzare il BPA a cancellare la cache e rigenerare il rapporto facendo clic su **Aggiorna rapporto**.
 
-   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
 Durante la rigenerazione del rapporto, mostra l’avanzamento in termini di percentuale completata come mostrato nell’immagine seguente.
 
-   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 
 
@@ -100,14 +100,14 @@ Per filtrare i risultati relativi a [ACS Commons](https://adobe-consulting-servi
 
 1. Fai clic sull’icona della barra a sinistra sul lato sinistro della pagina. Verrà visualizzata la **Filtro ACS Commons**. Fai clic sul pulsante **Filtro ACS Commons** per visualizzare la casella di controllo interattiva, come illustrato nell&#39;immagine seguente.
 
-   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
 L’icona della barra a sinistra viene visualizzata solo se il BPA rileva l’utilizzo di ACS Commons.
 
 1. Deseleziona la casella per filtrare tutti i risultati relativi a ACS Commons. Dovresti visualizzare un **Conteggio risultati filtrati** nel rapporto, come illustrato nell’immagine seguente. Il filtro viene applicato anche al rapporto quando viene esportato in formato CSV.
 
-   ![immagine](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
 I risultati di ACS Commons non devono essere ignorati. Fai riferimento a [documentazione](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) per determinare la compatibilità con AEM as a Cloud Service.

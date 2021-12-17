@@ -2,7 +2,7 @@
 title: Fase di preparazione
 description: Fase di preparazione
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 87%
@@ -37,7 +37,7 @@ Per ulteriori informazioni sulle funzioni e funzionalità dichiarate obsolete in
 
 Nella figura seguente sono illustrati i passaggi chiave della fase di pianificazione:
 
-![immagine](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
+![immagine](/help/journey-migration/assets/planning-phaseimg1.png)
 
 ### Valutazione della preparazione a Cloud Service {#access-cloud-readiness}
 
@@ -45,7 +45,7 @@ Il primo passaggio nella fase di pianificazione consiste nel valutare il grado d
 
 Dovrai effettuare una valutazione completa del codice sorgente AEM corrente rispetto alle modifiche di rilievo e alle funzioni obsolete, al fine di determinare quanto lavoro richiede il percorso di transizione.
 
-Puoi accelerare il passaggio di valutazione eseguendo Best Practices Analyzer (Analisi di best practice) sulla versione corrente AEM. Per ulteriori informazioni, consulta [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+Puoi accelerare il passaggio di valutazione eseguendo Best Practices Analyzer (Analisi di best practice) sulla versione corrente AEM. Per ulteriori dettagli consulta [Analisi delle best practice](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Se disponi già dell’accesso a Cloud Manager e a un ambiente Cloud Service, è consigliabile eseguire il codice corrente in una pipeline di qualità del codice di Cloud Manager per valutare la compatibilità delle modifiche del codice necessarie con Cloud Service.

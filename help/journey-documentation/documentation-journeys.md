@@ -3,9 +3,9 @@ title: percorsi di documentazione AEM
 description: I Percorsi di documentazione forniscono una struttura narrativa all'interno AEM documentazione mediante l'unione di funzioni complesse e disparate al fine di risolvere un obiettivo aziendale in modo best practice. Progettati con AEM principianti, i percorsi introducono i concetti e le funzionalità per raggiungere un obiettivo da A a Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: fee595892367448a95b7f26bb03713e1b6e43822
+source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1352'
 ht-degree: 1%
 
 ---
@@ -93,6 +93,6 @@ Sono già disponibili diversi Percorsi di documentazione. Poiché ogni percorso 
 | [percorso di onboarding AEM](/help/journey-onboarding/home.md) | Inizia qui per iniziare a lavorare rapidamente con il tuo nuovo ambiente as a Cloud Service AEM! |
 | [AEM Percorso di creazione di siti rapidi](/help/journey-sites/quick-site/overview.md) | Iniziate qui per un percorso guidato attraverso lo strumento di creazione AEM sito rapido semplice da utilizzare per semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza AEM conoscenza back-end. |
 | percorso Commerce AEM | Presto! |
-| Percorso di migrazione AEMaaCS | Presto! |
+| [AEM Percorso di migrazione as a Cloud Service](/help/journey-migration/getting-started.md) | Inizia qui per un percorso passo passo su come migrare dall&#39;installazione di AEM gestiti on-premise o Adobe all&#39;AEM completamente basata sul cloud as a Cloud Service e riceverai i suoi numerosi vantaggi. |
 
 Controlla di nuovo se sono disponibili nuovi percorsi.
