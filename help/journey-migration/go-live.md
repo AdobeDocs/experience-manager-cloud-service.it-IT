@@ -1,9 +1,9 @@
 ---
 title: Go-Live
 description: Scopri come eseguire la migrazione quando il codice e il contenuto sono pronti per il cloud
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+source-git-commit: fe0261fa9708b2250b6f5e4931100a9fc006e55d
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,6 @@ Prima di eseguire la migrazione della produzione, segui i passaggi di installazi
 * Avvia la migrazione dalla produzione in base all’esperienza acquisita durante la migrazione del passaggio as a Cloud Service AEM eseguita sui cloni:
    * Autore-autore
    * Publish-Publish
-
->[!NOTE]
->
->L’autore as a Cloud Service di Aem verrà visualizzato durante l’acquisizione, ma AEM pubblicazione as a Cloud Service verrà attivata durante l’acquisizione.
 
 * Convalida il contenuto acquisito nei livelli di authoring e pubblicazione AEM as a Cloud Service.
 * Informare il team di authoring dei contenuti per evitare lo spostamento dei contenuti sia nell’origine che nella destinazione fino al completamento dell’acquisizione
