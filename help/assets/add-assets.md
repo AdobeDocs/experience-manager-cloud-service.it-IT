@@ -4,9 +4,9 @@ description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
+source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2704'
 ht-degree: 1%
 
 ---
@@ -132,49 +132,77 @@ Per caricare un numero maggiore di file, utilizza uno dei seguenti approcci. Ino
 * [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Utile per i creativi professionisti e gli esperti di marketing che caricano le risorse dal loro file system locale. Utilizzalo per caricare le cartelle nidificate disponibili localmente.
 * [Strumento per l’acquisizione in blocco](#asset-bulk-ingestor): Da utilizzare per l’acquisizione di grandi quantità di risorse occasionalmente o inizialmente durante la distribuzione [!DNL Experience Manager].
 
-### Strumento per l’acquisizione collettiva delle risorse {#asset-bulk-ingestor}
+### Strumento di importazione in blocco risorsa {#asset-bulk-ingestor}
 
 Lo strumento viene fornito solo al gruppo di amministratori per utilizzare per l’acquisizione su larga scala di risorse dai datastore di Azure o S3. Guarda un video dettagliato sulla configurazione e l’acquisizione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-Per configurare lo strumento, segui questi passaggi:
+L’immagine seguente illustra le varie fasi durante il caricamento delle risorse in Experience Manager da un archivio dati:
+
+![Strumento di inserimento in blocco](assets/bulk-ingestion.png)
+
+#### Prerequisiti {#prerequisites-bulk-ingestion}
+
+Per collegare l’istanza di Experience Manager a un archivio dati, è necessario disporre dei dettagli di archiviazione BLOB di origine.
+
+#### Configura lo strumento di importazione in blocco {#configure-bulk-ingestor-tool}
+
+Per configurare lo strumento di importazione in blocco, effettua le seguenti operazioni:
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Importazione in blocco]**. Seleziona la **[!UICONTROL Crea]** opzione .
 
-![Configurazione dell&#39;importatore di massa](assets/bulk-import-config.png)
+1. Specifica un titolo per la configurazione di importazione in serie nella **[!UICONTROL Titolo]** campo .
 
-1. On **[!UICONTROL configurazione di importazione in serie]** fornire i valori richiesti e quindi selezionare **[!UICONTROL Salva]**.
+1. Seleziona il tipo di origine dati dal **[!UICONTROL Origine importazione]** elenco a discesa.
 
-   * [!UICONTROL Titolo]: Titolo descrittivo.
-   * [!UICONTROL Origine importazione]: Selezionare l&#39;origine dati applicabile.
-   * [!UICONTROL Account di archiviazione di Azure]: Specifica il nome del [!DNL Azure] account di archiviazione.
-   * [!UICONTROL Contenitore BLOB di Azure]: Fornisci [!DNL Azure] contenitore di archiviazione.
-   * [!UICONTROL Chiave di accesso di Azure]: Fornisci la chiave di accesso a [!DNL Azure] conto.
-   * [!UICONTROL Cartella di origine]: Questo filtro è in genere supportato dai provider di archiviazione cloud di Azure e AWS.
-   * [!UICONTROL Filtra per dimensione minima]: Fornire la dimensione minima dei file delle risorse in MB.
-   * [!UICONTROL Filtra per dimensione massima]: Fornire la dimensione massima dei file delle risorse in MB.
-   * [!UICONTROL Escludi tipi di MIME]: Elenco di tipi MIME separati da virgole da escludere dall’acquisizione. Esempio, `image/jpeg, image/.*, video/mp4`. Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
-   * [!UICONTROL Includi tipi di mime]: Elenco di tipi MIME separati da virgole da includere nell’acquisizione. Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
-   * [!UICONTROL Elimina il file sorgente dopo l’importazione]: Selezionare questa opzione per eliminare i file originali dall&#39;archivio dati di origine dopo l&#39;importazione in [!DNL Experience Manager].
-   * [!UICONTROL Modalità importazione]: Selezionare Ignora, Sostituisci o Crea versione. La modalità Salta è l’impostazione predefinita e in questa modalità l’utente che esegue l’acquisizione salta per importare una risorsa, se esiste già. Vedere il significato di [opzioni di sostituzione e creazione della versione](#handling-upload-existing-file).
-   * [!UICONTROL Cartella di destinazione delle risorse]: Importa la cartella in DAM in cui devono essere importate le risorse. Esempio, `/content/dam/imported_assets`
-   * [!UICONTROL File metadati]: Il file di metadati da importare, fornito in formato CSV. Specifica il file CSV nella posizione del BLOB di origine e fai riferimento al percorso durante la configurazione dello strumento Bulk Ingestor. Il formato di file CSV a cui si fa riferimento in questo campo è lo stesso del formato di file CSV quando [Importare ed esportare in blocco i metadati delle risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Se selezioni la **Elimina il file sorgente dopo l’importazione** , filtra i file CSV utilizzando **Escludi** o **Includi tipo MIME** o **Filtra per percorso/file** campi. Puoi usare un’espressione regolare per filtrare i file CSV in questi campi.
+1. Immetti i valori per creare una connessione con l’origine dati. Ad esempio, se selezioni **Archiviazione BLOB di Azure** come origine dati, specifica i valori per l’account di archiviazione Azure, il contenitore BLOB di Azure e la chiave di accesso di Azure.
 
-1. Puoi eliminare, modificare, eseguire ed eseguire ulteriori operazioni con le configurazioni di acquisizione create. Quando selezioni una configurazione per l’acquisizione in serie, nella barra degli strumenti sono disponibili le seguenti opzioni:
+1. Fornisci il nome della cartella principale che contiene le risorse nell’origine dati in **[!UICONTROL Cartella di origine]** campo .
 
-   * [!UICONTROL Modifica]: Modifica la configurazione selezionata.
-   * [!UICONTROL Elimina]: Elimina la configurazione selezionata.
-   * [!UICONTROL Controlla]: Convalida la connessione al datastore.
-   * [!UICONTROL Prova a secco]: Richiama un&#39;esecuzione di test dell&#39;acquisizione in massa.
-   * [!UICONTROL Esegui]: Esegui la configurazione selezionata.
-   * [!UICONTROL Interrompi]: Termina una configurazione attiva.
-   * [!UICONTROL Pianificazione]: Impostare una pianificazione una tantum o ricorrente per l’acquisizione delle risorse.
-   * [!UICONTROL Stato del processo]: Visualizza lo stato della configurazione quando viene utilizzata in un processo di importazione in corso o utilizzata per un processo completato.
-   * [!UICONTROL Cronologia processi]: Istanze precedenti del processo.
-   * [!UICONTROL Visualizzare le risorse]: Visualizza la cartella di destinazione se esiste.
+1. (Facoltativo) Immetti la dimensione minima dei file in MB per includerli nel processo di acquisizione nel **[!UICONTROL Filtra per dimensione minima]** campo .
 
-   ![Opzioni della barra degli strumenti per le configurazioni di inserimento](assets/bulk-ingest-toolbar-options.png)
+1. (Facoltativo) Immetti la dimensione massima dei file in MB per includerli nel processo di acquisizione nel **[!UICONTROL Filtra per dimensione massima]** campo .
+
+1. (Facoltativo) Specifica un elenco separato da virgole di tipi MIME da escludere dall’acquisizione nel **[!UICONTROL Escludere i tipi MIME]** campo . Esempio, `image/jpeg, image/.*, video/mp4`. Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
+
+1. Specifica l’elenco di tipi MIME separati da virgola da includere dall’acquisizione in **[!UICONTROL Includi tipi MIME]** campo . Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
+
+1. Seleziona la **[!UICONTROL Elimina il file sorgente dopo l’importazione]** opzione per eliminare i file originali dall&#39;archivio dati di origine dopo l&#39;importazione in [!DNL Experience Manager].
+
+1. Seleziona la **[!UICONTROL Modalità importazione]**. Seleziona **Salta**, **Sostituisci** oppure **Crea versione**. La modalità Salta è l’impostazione predefinita e in questa modalità l’utente che esegue l’acquisizione salta per importare una risorsa, se esiste già. Vedere il significato di [opzioni di sostituzione e creazione della versione](#handling-upload-existing-file).
+
+1. Specifica un percorso per definire una posizione in DAM in cui le risorse devono essere importate tramite **[!UICONTROL Cartella di destinazione delle risorse]** campo . Esempio, `/content/dam/imported_assets`.
+
+1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel **[!UICONTROL File metadati]** campo . Specifica il file CSV nella posizione del BLOB di origine e fai riferimento al percorso durante la configurazione dello strumento di importazione in blocco. Il formato di file CSV a cui si fa riferimento in questo campo è lo stesso del formato di file CSV quando [Importare ed esportare in blocco i metadati delle risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Se selezioni la **Elimina il file sorgente dopo l’importazione** , filtra i file CSV utilizzando **Escludi** o **Includi tipo MIME** o **Filtra per percorso/file** campi. Puoi usare un’espressione regolare per filtrare i file CSV in questi campi.
+
+1. Fai clic su **[!UICONTROL Salva]** per salvare la configurazione.
+
+#### Gestire la configurazione dello strumento di importazione in blocco {#manage-bulk-import-configuration}
+
+Dopo aver creato la configurazione dello strumento di importazione in blocco, puoi eseguire attività per valutare la configurazione prima di acquisire in massa le risorse nell’istanza di Experience Manager. Seleziona la configurazione disponibile in **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Importazione in blocco]** per visualizzare le opzioni disponibili per gestire la configurazione dello strumento di importazione in serie.
+
+##### Modificare la configurazione {#edit-configuration}
+
+Seleziona la configurazione e fai clic su **[!UICONTROL Modifica]** per modificare i dettagli di configurazione. Non è possibile modificare il titolo della configurazione e l’origine dati di importazione durante l’operazione di modifica.
+
+##### Elimina la configurazione {#delete-configuration}
+
+Seleziona la configurazione e fai clic su **[!UICONTROL Elimina]** per eliminare la configurazione di importazione in blocco.
+
+##### Convalida della connessione all’origine dati {#validate-connection}
+
+Seleziona la configurazione e fai clic su **[!UICONTROL check]** per convalidare la connessione all’origine dati. In caso di connessione riuscita, in Experience Manager viene visualizzato il seguente messaggio:
+
+![Messaggio di successo Importazione in blocco](assets/bulk-import-success-message.png)
+
+##### Richiamare un&#39;esecuzione di test per il processo di importazione in serie {#invoke-test-run-bulk-import}
+
+Seleziona la configurazione e fai clic su **[!UICONTROL Prova a secco]** per richiamare un&#39;esecuzione di test per il processo di importazione in serie. Nell&#39;Experience Manager vengono visualizzati i seguenti dettagli sul processo di importazione in blocco:
+
+![Risultato esecuzione di prova](assets/dry-assets-result.png)
+
+##### Pianificare un’importazione in serie una tantum o ricorrente {#schedule-bulk-import}
 
 Per pianificare un’importazione in serie una tantum o ricorrente, effettua le seguenti operazioni:
 
@@ -183,6 +211,32 @@ Per pianificare un’importazione in serie una tantum o ricorrente, effettua le 
 1. Imposta un’acquisizione una tantum o pianifica una pianificazione oraria, giornaliera o settimanale. Fai clic su **[!UICONTROL Invia]**.
 
    ![Pianificare il processo di inserimento in blocco](assets/bulk-ingest-schedule1.png)
+
+
+##### Visualizzare la cartella di destinazione delle risorse {#view-assets-target-folder}
+
+Seleziona la configurazione e fai clic su **[!UICONTROL Visualizzare le risorse]** per visualizzare la posizione di destinazione delle risorse in cui vengono importate le risorse dopo l’esecuzione del processo di importazione in blocco.
+
+#### Esegui lo strumento di importazione in blocco {#run-bulk-import-tool}
+
+Dopo [configurazione dello strumento di importazione in blocco](#configure-bulk-ingestor-tool) e facoltativamente [gestione della configurazione dello strumento di importazione in blocco](#manage-bulk-import-configuration), puoi eseguire il processo di configurazione per avviare l’acquisizione in massa delle risorse.
+
+Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Importazione in blocco]**, seleziona [Configurazione dell’importazione in blocco](#configure-bulk-ingestor-tool) e fai clic su **[!UICONTROL Esegui]** per avviare il processo di importazione in blocco. Fai clic su **[!UICONTROL Esegui]** di nuovo per confermare.
+
+L&#39;Experience Manager aggiorna lo stato del processo a **Elaborazione** e **Completato** una volta completato con successo il lavoro. Fai clic su **Visualizzare le risorse** per visualizzare le risorse importate in Experience Manager.
+
+Quando il processo è in corso, puoi anche selezionare la configurazione e fare clic su **Interrompi** per interrompere il processo di inserimento in blocco. Fai clic su **Esegui** per riprendere il processo. Puoi anche fare clic su **Prova a secco** per conoscere i dettagli delle risorse che sono ancora in attesa di importazione.
+
+#### Gestisci processi dopo l&#39;esecuzione {#manage-jobs-after-execution}
+
+L’Experience Manager ti consente di visualizzare la cronologia dei processi di importazione in blocco. La cronologia processo include lo stato del processo, il creatore del processo, i registri, insieme ad altri dettagli quali la data e l&#39;ora di inizio, la data e l&#39;ora di creazione e la data e l&#39;ora di fine.
+
+Per accedere alla cronologia dei processi per una configurazione, seleziona la configurazione e fai clic su **[!UICONTROL Cronologia processi]**. Seleziona un processo e fai clic su **Apri**.
+
+![Pianificare il processo di inserimento in blocco](assets/job-history-bulk-import.png)
+
+Nell&#39;Experience Manager viene visualizzata la cronologia dei processi. Nella pagina della cronologia dei processi di importazione in blocco è inoltre possibile fare clic su **Elimina** per eliminare quel processo per la configurazione di importazione in blocco.
+
 
 ## Caricare risorse utilizzando client desktop {#upload-assets-desktop-clients}
 

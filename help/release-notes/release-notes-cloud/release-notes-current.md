@@ -3,7 +3,7 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 53dd1d2a3b42e25a1da96ab8d06f05c05a36deab
+source-git-commit: e76ee82b44e48e88d5c750ebb22db11067cb11b5
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 2%
@@ -44,13 +44,11 @@ Dai un&#39;occhiata al [Panoramica sulla versione di dicembre 2021](https://vide
 
 * [!DNL Dynamic Media] ora supporta l’acquisizione, l’anteprima, la riproduzione e la pubblicazione per i video MXF. L&#39;annotazione e il video acquistabili per i video MXF non sono ancora supportati.
 
-* Dopo aver configurato una connessione tra le implementazioni remote di DAM e Sites, le risorse in DAM remoto sono rese disponibili nell’implementazione di Sites. È ora possibile eseguire le operazioni di aggiornamento, eliminazione, ridenominazione e spostamento sulle risorse o cartelle DAM remote. Gli aggiornamenti, con un certo ritardo, sono disponibili automaticamente nell’implementazione di Sites.
+* Dopo aver configurato una connessione tra le implementazioni remote di DAM e Sites, le risorse in DAM remoto sono rese disponibili nell’implementazione di Sites. È ora possibile eseguire le [operazioni di aggiornamento, eliminazione, ridenominazione e spostamento](../../assets/use-assets-across-connected-assets-instances.md) nelle risorse o cartelle DAM remote. Gli aggiornamenti, con un certo ritardo, sono disponibili automaticamente nell’implementazione di Sites.
 
 ## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
 
 ### Novità di [!DNL Forms] {#what-is-new-forms}
-
-* **Portale Forms**: È possibile utilizzare [Portale Forms](/help/forms/configure-forms-portal.md) per elencare i moduli adattivi pubblicati in una pagina AEM Sites. Aiuta un visitatore del sito a scoprire tutti i moduli disponibili. Inoltre, il visitatore può utilizzare il portale dei moduli per salvare e accedere alla bozza di un modulo adattivo e consultare la versione PDF di un modulo adattivo inviato.
 
 * **Esternalizzare i dati del flusso di lavoro AEM per un’elaborazione sicura**: È possibile memorizzare i dati dei flussi di lavoro AEM in-process (AEM dati variabili di flusso di lavoro) contenenti elementi di dati personali sensibili (SPD) in un archivio gestito dal cliente per un’elaborazione sicura. Gli elementi dati e le variabili del flusso di lavoro non vengono memorizzati AEM archivio e vengono recuperati su richiesta da un archivio gestito dal cliente durante l’elaborazione del flusso di lavoro.
 
@@ -62,6 +60,8 @@ Dai un&#39;occhiata al [Panoramica sulla versione di dicembre 2021](https://vide
    * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
 
 * **Font personalizzati per documenti Record e PDF creati con API di comunicazione**: È ora possibile utilizzare font approvati dal marchio nei documenti PDF generati utilizzando le API di comunicazione per allinearli ai requisiti organizzativi.
+
+* **Portale Forms**: È possibile utilizzare [Portale Forms](/help/forms/configure-forms-portal.md) per elencare i moduli adattivi pubblicati in una pagina AEM Sites. Aiuta un visitatore del sito a scoprire tutti i moduli disponibili. Inoltre, il visitatore può utilizzare il portale dei moduli per salvare e accedere alla bozza di un modulo adattivo e consultare la versione PDF di un modulo adattivo inviato.
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 
