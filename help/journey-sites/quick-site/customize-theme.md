@@ -1,9 +1,9 @@
 ---
 title: Personalizzare il tema del sito
 description: Scopri come è stato creato il tema del sito, come personalizzarlo e come eseguire il test utilizzando contenuti live AEM.
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,9 @@ ht-degree: 0%
 
 Scopri come è stato creato il tema del sito, come personalizzarlo e come eseguire il test utilizzando contenuti live AEM.
 
->[!CAUTION]
->
->Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. Esso è messo a disposizione a fini di prova e valutazione e non è destinato all&#39;uso della produzione se non concordato con il sostegno Adobe.
-
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di creazione di siti rapidi AEM, [Recuperare Le Informazioni Di Accesso All’Archivio Git,](retrieve-access.md) hai appreso in che modo gli sviluppatori front-end utilizzano Cloud Manager per accedere alle informazioni dell’archivio git, e ora devi:
+Nel documento precedente del percorso di creazione di siti rapidi AEM, [Recuperare Le Informazioni Di Accesso All’Archivio Git,](retrieve-access.md) hai imparato come gli sviluppatori front-end utenti di Cloud Manager per accedere alle informazioni dell’archivio git, e ora dovresti:
 
 * Comprendi ad alto livello cosa è Cloud Manager.
 * Aver recuperato le credenziali per accedere all’Git AEM in modo da poter eseguire il commit delle personalizzazioni.

@@ -1,9 +1,9 @@
 ---
 title: Crea sito da modello
 description: Scopri come creare rapidamente un nuovo sito AEM utilizzando un modello di sito.
-source-git-commit: 73e9d1debe70aff7f53d658bbac074fc53d8f1ae
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Crea sito da modello {#create-site-from-template}
 
 Scopri come creare rapidamente un nuovo sito AEM utilizzando un modello di sito.
-
->[!CAUTION]
->
->Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. Esso è messo a disposizione a fini di prova e valutazione e non è destinato all&#39;uso della produzione se non concordato con il sostegno Adobe.
 
 ## La storia finora {#story-so-far}
 

@@ -1,9 +1,9 @@
 ---
 title: Comprendere Cloud Manager e il flusso di lavoro per la creazione di siti rapidi
 description: Scopri Cloud Manager e come unisce il nuovo processo di creazione rapida dei siti.
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # Comprendere Cloud Manager e il flusso di lavoro per la creazione di siti rapidi {#understand-cloud-manager}
 
 Scopri Cloud Manager e come unisce il nuovo processo di creazione rapida dei siti.
-
->[!CAUTION]
->
->Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. Esso è messo a disposizione a fini di prova e valutazione e non è destinato all&#39;uso della produzione se non concordato con il sostegno Adobe.
 
 >[!TIP]
 >
@@ -32,7 +28,7 @@ Questo documento consente di comprendere il funzionamento dello strumento AEM Cr
 
 Questo documento si concentra sulla comprensione di questi elementi fondamentali della soluzione di creazione di siti rapidi prima di passare al passaggio successivo del percorso in cui si inizia la configurazione.
 
-Anche se è consigliabile procedere in questo percorso passo dopo passo, se hai già capito che AEM Sites e Cloud Manager lavorano insieme e desiderano iniziare direttamente con la configurazione, puoi [passa al passaggio successivo del percorso.](create-site.md)
+Anche se si consiglia di procedere passo dopo percorso, se hai già capito che AEM Sites e Cloud Manager lavorano insieme e desiderano iniziare direttamente con la configurazione, puoi [passa al passaggio successivo del percorso.](create-site.md)
 
 ## Ruolo responsabile {#responsible-role}
 

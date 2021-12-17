@@ -1,9 +1,9 @@
 ---
 title: Concedere l’accesso allo sviluppatore front-end
 description: Adatta gli sviluppatori front-end a Cloud Manager in modo che possano accedere all’archivio Git del sito AEM e alla pipeline.
-source-git-commit: 7c70be541e811e1be236763081d5571db4269b7a
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Concedere l’accesso allo sviluppatore front-end {#grant-fed-access}
 
 Adatta gli sviluppatori front-end a Cloud Manager in modo che possano accedere all’archivio Git del sito AEM e alla pipeline.
-
->[!CAUTION]
->
->Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. Esso è messo a disposizione a fini di prova e valutazione e non è destinato all&#39;uso della produzione se non concordato con il sostegno Adobe.
 
 ## La storia finora {#story-so-far}
 

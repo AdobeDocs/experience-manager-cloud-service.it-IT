@@ -1,9 +1,9 @@
 ---
 title: Distribuire il tema personalizzato
 description: Scopri come distribuire il tema del sito utilizzando la pipeline.
-source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # Distribuire il tema personalizzato {#deploy-your-customized-theme}
 
 Scopri come distribuire il tema del sito utilizzando la pipeline.
-
->[!CAUTION]
->
->Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. Esso è messo a disposizione a fini di prova e valutazione e non è destinato all&#39;uso della produzione se non concordato con il sostegno Adobe.
 
 ## La storia finora {#story-so-far}
 
@@ -95,11 +91,16 @@ Congratulazioni! È stato completato il percorso di creazione AEM siti rapidi. O
 * Come personalizzare e testare un tema utilizzando il contenuto AEM proxy e eseguire il commit di tali modifiche in AEM git.
 * Come distribuire la personalizzazione front-end utilizzando la pipeline.
 
-Ora puoi personalizzare i temi del tuo sito AEM. Tuttavia AEM è uno strumento potente e ci sono molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella sezione [Sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
+Ora puoi personalizzare i temi del tuo sito AEM. Tuttavia, prima di iniziare a creare diversi flussi di lavoro utilizzando più pipeline front-end, controlla il documento [Sviluppo di siti con la pipeline front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) Sarà utile per sfruttare al massimo lo sviluppo front-end:
+
+* Mantenere un&#39;unica fonte di verità.
+* Mantenere una separazione delle preoccupazioni.
+
+AEM è uno strumento potente e ci sono molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella sezione [Sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre si consiglia di passare alla parte successiva del percorso Creazione rapida siti esaminando il documento [Distribuire Il Tema Personalizzato,](deploy-theme.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso.
+Di seguito sono riportate alcune risorse aggiuntive che approfondiscono alcuni concetti menzionati in questo documento.
 
 * [AEM documentazione tecnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) - Se hai già una conoscenza approfondita di AEM, potresti voler consultare direttamente i documenti tecnici approfonditi.
 * [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Per ulteriori informazioni sulle funzioni di Cloud Manager, consulta direttamente i documenti tecnici approfonditi.
@@ -115,3 +116,4 @@ Mentre si consiglia di passare alla parte successiva del percorso Creazione rapi
 * [Percorso di onboarding](/help/journey-onboarding/home.md) - Questa guida funge da punto di partenza per garantire che i team siano configurati e abbiano accesso a AEM as a Cloud Service.
 * [Documentazione di Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it) - Esplorate la documentazione di Cloud Manager per informazioni dettagliate sulle sue funzioni.
 * [Documentazione sull’amministrazione del sito](/help/sites-cloud/administering/site-creation/create-site.md) - Per ulteriori informazioni sulle funzioni dello strumento Creazione rapida di siti, consultare i documenti tecnici sulla creazione del sito.
+* [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Questo documento descrive alcune considerazioni di cui tenere conto per sfruttare appieno il potenziale del processo di sviluppo front-end utilizzando la pipeline front-end.

@@ -3,9 +3,9 @@ title: Temi del sito
 description: Scopri come utilizzare AEM temi del sito per personalizzare lo stile e la progettazione del sito.
 feature: Administering
 role: Admin
-source-git-commit: 9e7ad4a640f1783be5aed75e01e860b647662f52
+source-git-commit: 0b00d579886a106f5f66cfc54d90eab9563724cd
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # Temi del sito {#site-themes}
 
 Scopri come utilizzare AEM temi del sito per personalizzare lo stile e la progettazione del sito.
-
->[!CAUTION]
->
->Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. Esso è messo a disposizione a fini di prova e valutazione e non è destinato all&#39;uso della produzione se non concordato con il sostegno Adobe.
 
 ## Panoramica {#overview}
 
@@ -55,6 +51,6 @@ Adobe fornisce un tema di riferimento sulle best practice da utilizzare come bas
 
 ## Sviluppo di temi del sito {#developing-themes}
 
-Adobe fornisce e AEM Site Theme Builder come set di script per la creazione di nuovi temi del sito.
+Adobe fornisce un Generatore di temi AEM sito come set di script per la creazione di nuovi temi del sito.
 
 [È disponibile AEM Site Theme Builder e la relativa documentazione di utilizzo su GitHub.](https://github.com/adobe/aem-site-theme-builder) Per personalizzare il tema è necessaria un’esperienza di sviluppo front-end.

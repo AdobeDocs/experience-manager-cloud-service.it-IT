@@ -1,9 +1,9 @@
 ---
 title: Imposta la pipeline
 description: Crea una pipeline front-end per gestire la personalizzazione del tema del sito.
-source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Imposta la pipeline {#set-up-your-pipeline}
 
 Crea una pipeline front-end per gestire la personalizzazione del tema del sito.
-
->[!CAUTION]
->
->Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. Esso è messo a disposizione a fini di prova e valutazione e non è destinato all&#39;uso della produzione se non concordato con il sostegno Adobe.
 
 ## La storia finora {#story-so-far}
 

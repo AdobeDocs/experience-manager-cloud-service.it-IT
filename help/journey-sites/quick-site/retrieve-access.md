@@ -1,9 +1,9 @@
 ---
 title: Recupera informazioni di accesso all’archivio Git
 description: Scopri in che modo lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell’archivio Git.
-source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '897'
 ht-degree: 4%
 
 ---
@@ -13,15 +13,11 @@ ht-degree: 4%
 
 Scopri in che modo lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell’archivio Git.
 
->[!CAUTION]
->
->Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. Esso è messo a disposizione a fini di prova e valutazione e non è destinato all&#39;uso della produzione se non concordato con il sostegno Adobe.
-
 ## La storia finora {#story-so-far}
 
 Se sei uno sviluppatore front-end solo responsabile della personalizzazione del tema del sito, non è necessario sapere come è stato impostato AEM e può passare al [Obiettivo](#objective) sezione di questo documento.
 
-Se utilizzi anche il ruolo di amministratore di Cloud Manager o AEM e di sviluppatore front-end, hai appreso nel documento precedente del percorso di creazione siti rapida AEM, [Concedere l’accesso allo sviluppatore front-end,](grant-access.md) come integrare lo sviluppatore front-end in modo che abbia accesso all’archivio Git, e dovresti ora sapere:
+Se utilizzi anche il ruolo di amministratore di Cloud Manager o AEM e di sviluppatore front-end, hai appreso nel documento precedente del percorso di creazione siti rapida AEM, [Concedere l’accesso allo sviluppatore front-end,](grant-access.md) come integrare lo sviluppatore front-end in modo che abbia accesso all’archivio Git e ora dovresti essere a conoscenza di:
 
 * Come aggiungere uno sviluppatore front-end come utente.
 * Come assegnare i ruoli richiesti allo sviluppatore front-end.
