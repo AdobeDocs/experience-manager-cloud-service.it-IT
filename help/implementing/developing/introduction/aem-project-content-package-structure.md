@@ -2,10 +2,10 @@
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti per la distribuzione in Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: ed8150e3b1e7d318a15ad84ebda7df52cf40128b
+source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
-source-wordcount: '2877'
-ht-degree: 13%
+source-wordcount: '2930'
+ht-degree: 12%
 
 ---
 
@@ -72,21 +72,6 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
       + Qualsiasi `rep:policy` per qualsiasi percorso `/apps`
    + [Script raggruppati precompilati](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
-+ La `ui.config` pacchetto, contiene tutto [Configurazioni OSGi](/help/implementing/deploying/configuring-osgi.md):
-   + Cartella organizzativa contenente definizioni di configurazione OSGi specifiche della modalità di esecuzione
-      + `/apps/my-app/osgiconfig`
-   + Cartella di configurazione OSGi comune contenente configurazioni OSGi predefinite che si applicano a tutte le destinazioni di distribuzione as a Cloud Service AEM target
-      + `/apps/my-app/osgiconfig/config`
-   + Cartelle di configurazione OSGi specifiche per la modalità di esecuzione che contengono configurazioni OSGi predefinite applicabili a tutte le destinazioni di distribuzione as a Cloud Service AEM target
-      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
-   + Script di configurazione OSGi di Repo Init
-      + [Inizio repository](#repo-init) è il metodo consigliato per distribuire (variabile) contenuti che fanno parte logica dell’applicazione AEM. Le configurazioni Repo Init OSGi devono essere posizionate nelle posizioni appropriate `config.<runmode>` come descritto in precedenza e può essere utilizzato per definire:
-         + Strutture di contenuto di base
-         + Utenti
-         + Utenti del servizio
-         + Gruppi
-         + ACL (autorizzazioni)
-
 >[!NOTE]
 >
 >Lo stesso codice deve essere distribuito a tutti gli ambienti. Ciò è necessario per garantire un livello di convalide di affidabilità anche nell’ambiente stage. Per ulteriori informazioni, consulta la sezione su [Modalità di esecuzione](/help/implementing/deploying/overview.md#runmodes).
@@ -125,6 +110,22 @@ La struttura di distribuzione dell&#39;applicazione consigliata è la seguente:
       + `site-b.ui.config` distribuisce le configurazioni OSGi richieste dal sito B
       + `site-b.ui.content` distribuisce il contenuto e la configurazione richiesti dal sito B
 
++ La `ui.config` pacchetto contiene tutto [Configurazioni OSGi](/help/implementing/deploying/configuring-osgi.md):
+   + È stato preso in considerazione il codice e appartiene ai bundle OSGi ma non contiene nodi di contenuto regolari. Così è contrassegnato come un pacchetto contenitore
+   + Cartella organizzativa contenente definizioni di configurazione OSGi specifiche della modalità di esecuzione
+      + `/apps/my-app/osgiconfig`
+   + Cartella di configurazione OSGi comune contenente configurazioni OSGi predefinite che si applicano a tutte le destinazioni di distribuzione as a Cloud Service AEM target
+      + `/apps/my-app/osgiconfig/config`
+   + Cartelle di configurazione OSGi specifiche per la modalità di esecuzione che contengono configurazioni OSGi predefinite applicabili a tutte le destinazioni di distribuzione as a Cloud Service AEM target
+      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
+   + Script di configurazione OSGi di Repo Init
+      + [Inizio repository](#repo-init) è il metodo consigliato per distribuire (variabile) contenuti che fanno parte logica dell’applicazione AEM. Le configurazioni Repo Init OSGi devono essere posizionate nelle posizioni appropriate `config.<runmode>` come descritto in precedenza e può essere utilizzato per definire:
+         + Strutture di contenuto di base
+         + Utenti
+         + Utenti del servizio
+         + Gruppi
+         + ACL (autorizzazioni)
+
 ### Pacchetti applicativi aggiuntivi{#extra-application-packages}
 
 Se la distribuzione AEM utilizza altri progetti AEM, che sono essi stessi costituiti da pacchetti di codice e contenuto propri, i relativi pacchetti contenitore devono essere incorporati nel `all` pacchetto.
@@ -141,14 +142,14 @@ Ad esempio, un progetto AEM che include 2 applicazioni AEM fornitori potrebbe av
 
 ## Tipi di pacchetti {#package-types}
 
-I pacchetti devono essere contrassegnati con il tipo di pacchetto dichiarato.
+I pacchetti devono essere contrassegnati con il tipo di pacchetto dichiarato. I tipi di pacchetto consentono di chiarire lo scopo e la distribuzione di un pacchetto.
 
-+ I pacchetti contenitore devono impostare i relativi `packageType` a `container`. I pacchetti contenitore non devono contenere direttamente i bundle OSGi, le configurazioni OSGi e non possono utilizzare [installare gli hook](http://jackrabbit.apache.org/filevault/installhooks.html).
++ I pacchetti contenitore devono impostare i relativi `packageType` a `container`. I pacchetti contenitore non devono contenere nodi regolari. Sono consentiti solo bundle, configurazioni e pacchetti secondari OSGi. I contenitori in AEM as a Cloud Service non possono utilizzare [installare gli hook](http://jackrabbit.apache.org/filevault/installhooks.html).
 + I pacchetti di codice (immutabili) devono impostare i rispettivi `packageType` a `application`.
 + I pacchetti di contenuto (mutabili) devono impostare i relativi `packageType` a `content`.
 
 
-Per ulteriori informazioni consulta [FileVault Apache Jackrabbit - Documentazione del plugin Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) e [Frammento di configurazione FileVault Maven](#marking-packages-for-deployment-by-adoube-cloud-manager) sotto.
+Per ulteriori informazioni consulta [FileVault Apache Jackrabbit - Documentazione del plugin Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Tipi di pacchetti Apache Jackrabbit](http://jackrabbit.apache.org/filevault/packagetypes.html)e [Frammento di configurazione FileVault Maven](#marking-packages-for-deployment-by-adoube-cloud-manager) sotto.
 
 >[!TIP]
 >
