@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f333294f1bb13291a8d947c3fbfd99b5e7b4a9d6
+source-git-commit: 7fb63dba9a72fc04b1d4fe677f65e993ec5a1e47
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3431'
 ht-degree: 33%
 
 ---
@@ -87,6 +87,12 @@ ht-degree: 33%
       + [Assegnare membri del team a AEM profili di prodotto as a Cloud Service](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
       + [Percorso di apprendimento per sviluppatori e gestori di distribuzione](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
       + [Percorso di apprendimento per gli utenti AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+   + [percorso aggiuntivo Demos di riferimento AEM] {#demo-add-on}
+      + [Panoramica](/help/journey-sites/demos-add-on/overview.md)
+      + [Installazione](/help/journey-sites/demos-add-on/installation.md)
+      + [Crea programma](/help/journey-sites/demos-add-on/create-program.md)
+      + [Crea sito demo](/help/journey-sites/demos-add-on/create-site.md)
+      + [Gestire il sito demo](/help/journey-sites/demos-add-on/manage.md)
 + Passaggio ad AEMaaCS {#moving}
    + [Passaggio ad AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
    + Note sulla versione per gli strumenti di migrazione {#release-notes-migration-tools}

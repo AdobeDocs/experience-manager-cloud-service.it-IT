@@ -3,10 +3,11 @@ title: Percorso di apprendimento per sviluppatori e gestori di distribuzione
 description: Segui questa pagina per scoprire i passaggi successivi al recupero dell'accesso, se sei uno sviluppatore o un Deployment Manager
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 2%
+source-wordcount: '607'
+ht-degree: 4%
 
 ---
 
@@ -26,8 +27,8 @@ Dopo aver letto questo documento, è necessario:
 Se stai leggendo questa sezione, è probabile che ti sia assegnato a un profilo di prodotto Developer o Deployment Manager e sia pronto per l’onboarding e continuare il percorso di apprendimento.
 
 >[!NOTE]
->* In qualità di *Sviluppatore*, dovrai accedere a Cloud Manager e acquisire familiarità con l’accesso a Git.
->* In qualità di *Deployment Manager*, è necessario acquisire familiarità con le modalità di configurazione delle pipeline e persino di distribuzione del codice.
+>* Come *Sviluppatore*, accedi a Cloud Manager e acquisisci familiarità con l’accesso a Git.
+>* Come *Gestione distribuzione*, vuoi acquisire familiarità con la configurazione delle pipeline e persino distribuire il codice.
 
 
 ## Prerequisiti {#prerequisites}
@@ -50,15 +51,19 @@ Per ulteriori informazioni su questo argomento, consulta [Configurazione della p
 
 ## Novità {#whats-next}
 
-I responsabili di sviluppo e distribuzione sono ora pronti a imparare a sviluppare il codice in AEM come Cloud Service. Ulteriori informazioni o ulteriori percorsi di apprendimento sono disponibili nella sezione Risorse aggiuntive di seguito. Per informazioni sul percorso di apprendimento per gli autori dei contenuti, consulta [Percorso di apprendimento per gli autori AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+I responsabili di sviluppo e distribuzione sono ora pronti per imparare a sviluppare il codice in AEM as a Cloud Service. Ulteriori informazioni o ulteriori percorsi di apprendimento sono disponibili nella sezione Risorse aggiuntive di seguito. Per informazioni sul percorso di apprendimento per gli autori dei contenuti, consulta [Percorso di apprendimento per gli autori AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+
+>[!TIP]
+>
+>Ora che sei onboarding, puoi [scopri come aggiungere facilmente il componente aggiuntivo Demos di riferimento AEM](/help/journey-sites/demos-add-on/overview.md) in un ambiente sandbox con una configurazione AEM minima ed essere in grado di testare le potenti funzioni di AEM con esempi avanzati basati sulle best practice.
 
 ## Risorse aggiuntive {#additional-resources}
 
 * [Accesso alla gestione degli account Git e Git da Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* [Ambiente di sviluppo locale per AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [Ambiente di sviluppo locale per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
 
-* [Guida introduttiva ad AEM Sites (esercitazione)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Guida introduttiva ad AEM Sites (esercitazione)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
 
 * [Guida introduttiva all&#39;editor SPA AEM e React | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 

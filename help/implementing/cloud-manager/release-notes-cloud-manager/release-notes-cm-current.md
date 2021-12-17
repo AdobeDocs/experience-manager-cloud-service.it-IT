@@ -2,7 +2,7 @@
 title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.12.0
 description: Queste sono le note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.12.0.
 feature: Release Information
-source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
+source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -31,7 +31,7 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.12.0 è il 1
 * Un utente con il ruolo di gestione distribuzione può ora avviare la procedura guidata per la creazione di progetti/rami per un archivio senza rami dal menu azione nella pagina repository.
 * Deployment Manager, che si trova nel flusso di lavoro di aggiunta o modifica della pipeline, ora viene informato su come creare un ramo o un progetto se l’archivio selezionato non dispone di rami.
 * È stata aggiunta una nuova funzione self-service di Cloud Manager per consentire [aggiunta di variabili e segreti in formato libero a livello di ambiente.](/help/implementing/cloud-manager/environment-variables.md)
-* Con il nuovo Reference Demos Add-On (disponibile il 17 dicembre 2021), è possibile installare le ultime basi di codice demo per i prodotti AEM ed essere pronti per essere implementati tramite il nuovo [strumento rapido per la creazione di siti](/help/journey-sites/quick-site/overview.md) in Sites.
+* Con il nuovo [Componente aggiuntivo Demos di riferimento](/help/journey-sites/demos-add-on/overview.md) (disponibile il 17 dicembre 2021), è possibile installare le ultime basi di codice demo per i prodotti AEM ed essere pronti per essere implementati tramite il nuovo [strumento rapido per la creazione di siti](/help/journey-sites/quick-site/overview.md) in Sites.
 * Le pipeline front-end ora supportano le variabili della pipeline.
 * È ora possibile abilitare gli schermi nella finestra di dialogo Modifica programma per tutte le sandbox.
 * Le indicazioni fornite dalla scheda di invito all’azione nella pagina della panoramica sono state aggiornate per riflettere con precisione la sua associazione con la pipeline di stack completa di produzione.
