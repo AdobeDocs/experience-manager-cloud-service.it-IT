@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0e1d43f98d89cbc7534366d2a0546f04ba4b2498
+source-git-commit: a1b1709fb705b509015478c16c32a02af0502a77
 workflow-type: tm+mt
-source-wordcount: '3435'
+source-wordcount: '3437'
 ht-degree: 33%
 
 ---
@@ -361,6 +361,7 @@ ht-degree: 33%
       + [Fornire risorse Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Attivare la protezione hotlink in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Supporto 3D](/help/assets/dynamic-media/assets-3d.md)
+      + [Anteprima-3d-assets](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Set di immagini](/help/assets/dynamic-media/image-sets.md)
       + [Immagini panoramiche](/help/assets/dynamic-media/panoramic-images.md)
       + [Set di file multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)
