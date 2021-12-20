@@ -1,10 +1,10 @@
 ---
 title: percorso aggiuntivo Demos di riferimento AEM
 description: Inizia qui per un percorso guidato attraverso come aggiungere facilmente il AEM Reference Demos Add-On a un ambiente sandbox con una configurazione di AEM minima ed essere in grado di testare le potenti funzionalità di AEM con esempi ricchi basati sulle best practice.
-source-git-commit: f9794f52f2d09723a62e1f19cc951a5032661fce
+source-git-commit: 3dc268060188defcc84971f73baced1f30dccd49
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '813'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,13 @@ Questo percorso descrive i requisiti, i passaggi e l’approccio necessari per c
 
 Verranno esaminati diversi argomenti in questo percorso. I seguenti articoli ti forniscono conoscenze fondamentali sulla creazione di un nuovo programma e sulla configurazione e l&#39;utilizzo del componente aggiuntivo Demos di riferimento AEM e sono destinati a essere letti in ordine. Se necessario, si collegano alla documentazione tecnica dettagliata.
 
-|#|Articolo|Descrizione| |—|—|—|—| |0|AEM Percorso aggiuntivo Demos di riferimento|Questo documento| |1[Comprendere l’installazione del componente aggiuntivo Demo di riferimento](installation.md)|Scopri Cloud Manager e come viene utilizzato per installare il componente aggiuntivo.| |2[Creare un programma e una pipeline](create-program.md)|Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.| |3[Creare un sito demo](create-site.md)|Crea un sito demo in AEM basato su una libreria di modelli preconfigurati.| |4[Gestire i siti demo](manage.md)|Scopri gli strumenti disponibili per gestire i siti demo e come rimuoverli.|
+| # | Articolo | Descrizione |
+|---|---|---|
+| 0 | percorso aggiuntivo Demos di riferimento AEM | Questo documento |
+| 1 | [Comprendere l’installazione del componente aggiuntivo Demo di riferimento](installation.md) | Scopri Cloud Manager e come viene utilizzato per installare il componente aggiuntivo. |
+| 2 | [Creare un programma e una pipeline](create-program.md) | Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo. |
+| 3 | [Creare un sito demo](create-site.md) | Crea un sito demo in AEM basato su una libreria di modelli preconfigurati. |
+| 4 | [Gestire i siti demo](manage.md) | Scopri gli strumenti disponibili per gestire i siti demo e come rimuoverli. |
 
 ## Novità {#what-is-next}
 
