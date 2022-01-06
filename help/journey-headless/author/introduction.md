@@ -1,20 +1,17 @@
 ---
 title: AEM Percorso di authoring dei contenuti headless
-description: Introduzione alle funzioni avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e modalità di creazione di contenuti per il progetto.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+description: Introduzione alle funzioni avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e alle modalità di creazione dei contenuti per il progetto.
+exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%
 
 ---
 
-
 # Authoring per headless con AEM - Introduzione {#author-headless-introduction}
 
-In questa parte del [AEM Percorso di authoring di contenuti headless](overview.md), puoi imparare i concetti e la terminologia di base necessari per comprendere come Cloud Service l’authoring di contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM).
+In questa parte del [AEM Percorso di authoring dei contenuti headless](overview.md), puoi imparare i concetti e la terminologia di base necessari per comprendere l’authoring dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM) as a Cloud Service.
 
 ## Obiettivo {#objective}
 
@@ -50,8 +47,8 @@ Innanzitutto, AEM è un sistema di gestione dei contenuti con un&#39;ampia gamma
 Questo significa che può essere utilizzato come:
 
 * CMS headless
-   * Per gli headless, il contenuto può essere creato come **Frammenti di contenuto**.
-Si tratta di elementi indipendenti di contenuto a cui è possibile accedere direttamente da una serie di applicazioni, in quanto dispongono di una struttura predefinita basata su **Modelli di frammento di contenuto**.
+   * Per i contenuti headless, è possibile creare come **Frammenti di contenuto**.
+Si tratta di elementi autonomi di contenuto a cui è possibile accedere direttamente da una serie di applicazioni, in quanto dispongono di una struttura predefinita basata su **Modelli per frammenti di contenuto**.
 Ciò significa che i contenuti possono raggiungere una vasta gamma di dispositivi, in una vasta gamma di formati e con un&#39;ampia gamma di funzionalità.
 Inoltre, questi frammenti possono essere utilizzati anche per la creazione di pagine web AEM, se lo desideri.
 
@@ -62,11 +59,11 @@ Inoltre, questi frammenti possono essere utilizzati anche per la creazione di pa
 
 Quindi la modellazione dei contenuti (nota anche come modellazione dei dati) è un altro termine tecnico - perché dovrebbe interessarti in qualità di autore?
 
-Affinché le applicazioni headless possano accedere ai contenuti e utilizzarli, il contenuto deve avere una struttura predefinita. Sarebbe possibile avere i contenuti come forma libera, ma renderebbe la vita *molto* complicata per le applicazioni.
+Affinché le applicazioni headless possano accedere ai contenuti e utilizzarli, il contenuto deve avere una struttura predefinita. Sarebbe possibile avere i contenuti come forma libera, ma renderebbe la vita *molto* complicato per le applicazioni.
 
 In sostanza, il processo di definizione della struttura del contenuto da rispettare prevede la progettazione di un modello, denominato modellazione dei dati.
 
-Per AEM il ruolo Architetto contenuto (spesso una persona diversa) eseguirà la modellazione dei dati per progettare un intervallo di **Modelli di frammento di contenuto**, che potrai quindi utilizzare come base per il contenuto utilizzando **Frammenti di contenuto**.
+Per AEM il ruolo Architetto contenuto (spesso una persona diversa) eseguirà la modellazione dei dati per progettare un intervallo di **Modelli per frammenti di contenuto** - da utilizzare come base per i contenuti utilizzando **Frammenti di contenuto**.
 
 >[!NOTE]
 >
@@ -74,7 +71,7 @@ Per AEM il ruolo Architetto contenuto (spesso una persona diversa) eseguirà la 
 
 ## Novità {#whats-next}
 
-Dopo aver appreso i concetti e la terminologia, il passaggio successivo è [Scopri le nozioni di base sull’authoring di frammenti di contenuto](basics.md). Viene introdotta la gestione di base delle AEM e la creazione di frammenti di contenuto.
+Ora che hai imparato i concetti e la terminologia, il passo successivo è [Scopri le nozioni di base sulla creazione di frammenti di contenuto](basics.md). Viene introdotta la gestione di base delle AEM e la creazione di frammenti di contenuto.
 
 ## Risorse aggiuntive {#additional-resources}
 

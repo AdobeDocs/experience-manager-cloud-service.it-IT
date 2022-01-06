@@ -1,11 +1,8 @@
 ---
 title: AEM Percorso di traduzione headless
 description: Inizia qui per un percorso guidato traducendo i contenuti headless utilizzando AEM potenti strumenti di traduzione.
-index: true
-hide: false
-hidefromtoc: false
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 2%

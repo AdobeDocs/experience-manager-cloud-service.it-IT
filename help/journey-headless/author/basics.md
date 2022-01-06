@@ -1,22 +1,19 @@
 ---
 title: Informazioni di base sull’authoring
 description: Scopri i concetti e le modalità di creazione dei contenuti per i CMS headless utilizzando i frammenti di contenuto.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 3%
 
 ---
 
-
 # Nozioni di base sull’authoring per headless con AEM {#author-headless-basics}
 
 ## La storia finora {#story-so-far}
 
-All&#39;inizio del [Percorso di authoring dei contenuti headless](overview.md) [Introduzione](introduction.md) ha trattato i concetti e la terminologia di base relativi all&#39;authoring per headless.
+All&#39;inizio del [AEM Percorso di authoring dei contenuti headless](overview.md) la [Introduzione](introduction.md) ha trattato i concetti e la terminologia di base relativi all&#39;authoring per headless.
 
 Questo articolo si basa su questi elementi per comprendere come creare contenuti personalizzati per il progetto headless AEM.
 
@@ -56,14 +53,14 @@ Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso 
 
 La prima volta che esegui l’accesso a una piccola esercitazione online, verranno evidenziate alcune delle funzioni principali dell’interfaccia utente.
 
-È quindi possibile utilizzare il pannello di navigazione per accedere alle aree chiave di AEM. Per i frammenti di contenuto utilizzerai la **console Risorse**.
+È quindi possibile utilizzare il pannello di navigazione per accedere alle aree chiave di AEM. Per i frammenti di contenuto verrà utilizzato il **Console Risorse**.
 
 Per aprire il pannello di navigazione, seleziona l’icona Adobe in alto a sinistra, seguita dall’icona a forma di piccola bussola:
 
 ![Pannello di navigazione](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->Sebbene i frammenti di contenuto siano una funzione di AEM **Sites**, si trovano nella console **Risorse**. Questo è un dettaglio tecnico che non dovrebbe influenzare l&#39;utente, ma potrebbe essere utile da sapere.
+>Anche se i frammenti di contenuto sono una funzione di AEM **Sites**, si trovano nella **Risorse** console. Questo è un dettaglio tecnico che non dovrebbe influenzare l&#39;utente, ma potrebbe essere utile da sapere.
 
 All’interno della console è possibile selezionare le cartelle per passare al frammento di contenuto oppure le breadcrumb (nell’intestazione) per risalire la struttura.
 
@@ -71,9 +68,9 @@ All’interno della console è possibile selezionare le cartelle per passare al 
 
 ### Azioni, Selezione, Visualizzazione {#actions-selecting-viewing}
 
-La console **Risorse** dispone di **Barre degli strumenti delle azioni** dedicate e **Azioni rapide** utilizzabili dopo aver selezionato una risorsa (ad esempio, una cartella o un frammento di contenuto).
+La **Risorse** console dedicata **Barre degli strumenti Azioni** e **Azioni rapide** che puoi utilizzare dopo aver selezionato una risorsa (ad esempio una cartella o un frammento di contenuto).
 
-Le Azioni rapide sono disponibili per una singola risorsa, vedi **Basilea** nell&#39;esempio seguente:
+Le Azioni rapide sono disponibili per una singola risorsa, vedi **Basilea** nell’esempio seguente:
 
 ![Azioni rapide ](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,7 +98,7 @@ A meno che non siano disponibili pochissimi frammenti di contenuto, è consiglia
 
 #### Creazione di una cartella {#creating-folder}
 
-Per farlo, crea una serie di cartelle all’interno della sezione **File** della console Assets. Seleziona l&#39;opzione **Crea** (in alto a destra), seguita da **Cartella**:
+Per farlo, crea una serie di cartelle all’interno di **File** della console Assets. Seleziona la **Crea** (in alto a destra), seguita da **Cartella**:
 
 ![Opzione Crea cartella](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -111,11 +108,11 @@ Viene visualizzata una finestra di dialogo in cui puoi inserire i dettagli, quin
 
 #### Utilizzo di percorsi e tag per limitare i modelli di frammenti di contenuto disponibili nella cartella {#tags-paths-for-models-in-folder}
 
-Questa sezione è leggermente più avanzata. Non ne hai veramente bisogno se stai solo iniziando a provare le cose, ma è molto *molto* utile quando hai molti frammenti. Quindi è bene sapere - anche se non lo usi ancora abbastanza.
+Questa sezione è leggermente più avanzata. Non ne avete proprio bisogno se state solo cominciando a provare le cose, ma lo è *molto* utile quando si hanno molti frammenti. Quindi è bene sapere - anche se non lo usi ancora abbastanza.
 
 L’architetto di contenuti avrà creato tutti i modelli di frammento di contenuto necessari per il progetto corrente e forse anche altri progetti. Per semplificare le cose a te stesso e agli altri autori, puoi limitare l’elenco dei modelli disponibili per una cartella specifica.
 
-Dopo aver creato la cartella è possibile aprire la cartella **Proprietà**. Qui ci sono varie schede con informazioni, e dettagli di configurazione, sulla cartella. In particolare per Frammenti di contenuto, puoi utilizzare la scheda **Criteri** per definire percorsi e/o tag specifici per questa cartella. Questo limita i modelli di frammento di contenuto disponibili per l’utilizzo nella cartella, poiché i modelli di frammento di contenuto devono soddisfare questi requisiti prima di poter essere utilizzati per generare frammenti in questa cartella.
+Dopo aver creato la cartella è possibile aprire la cartella **Proprietà**. Qui ci sono varie schede con informazioni, e dettagli di configurazione, sulla cartella. In particolare per i frammenti di contenuto, puoi utilizzare la funzione **Criteri** per definire percorsi e/o tag specifici per questa cartella. Questo limita i modelli di frammento di contenuto disponibili per l’utilizzo nella cartella, poiché i modelli di frammento di contenuto devono soddisfare questi requisiti prima di poter essere utilizzati per generare frammenti in questa cartella.
 
 ![Creare proprietà cartella - Criteri](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
 
@@ -129,7 +126,7 @@ Puoi quindi navigare tra queste cartelle per creare e modificare i frammenti di 
 
 Solo nel caso..
 
-Probabilmente ti verrà offerta una cartella iniziale in cui puoi creare le cartelle. Come alcuni dettagli di configurazione devono essere applicati alla cartella principale (in genere da uno sviluppatore o da un amministratore di sistema). Probabilmente non ti interessa, ma se necessario puoi controllare la **Configurazione** nei **Cloud Services** della cartella **Proprietà**:
+Probabilmente ti verrà offerta una cartella iniziale in cui puoi creare le cartelle. Come alcuni dettagli di configurazione devono essere applicati alla cartella principale (in genere da uno sviluppatore o da un amministratore di sistema). Questo probabilmente non vi interesserà, ma se necessario è possibile controllare il **Configurazione** in **Cloud Services** della cartella **Proprietà**:
 
 ![Crea proprietà cartella - Configurazione](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -139,7 +136,7 @@ Probabilmente ti verrà offerta una cartella iniziale in cui puoi creare le cart
 
 ### Creazione di un frammento di contenuto {#creating-fragment}
 
-La creazione di un frammento di contenuto è molto simile. È sufficiente utilizzare l’opzione **Frammento di contenuto**:
+La creazione di un frammento di contenuto è molto simile: è sufficiente utilizzare la **Frammento di contenuto** invece:
 
 ![Opzione Crea frammento di contenuto](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
@@ -147,11 +144,11 @@ Questa volta si apre una procedura guidata. Il primo passaggio consiste nel sele
 
 ![Crea frammento di contenuto - seleziona Modello](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Dopo aver continuato con **Avanti** è possibile fornire i dettagli (**Base** e **Avanzate**) per il frammento:
+Dopo aver continuato con **Successivo** puoi fornire i dettagli (**Base** e **Avanzate**) per il frammento:
 
 ![Crea frammento di contenuto - specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-Conferma con **Crea** e puoi quindi **Apri** il frammento nell’editor.
+Conferma con **Crea** e potete **Apri** il frammento nell’editor.
 
 ### Modifica di un frammento {#editing-fragment}
 
@@ -159,7 +156,7 @@ Conferma con **Crea** e puoi quindi **Apri** il frammento nell’editor.
 
 Quando l’editor si apre per la prima volta, vedrai:
 
-* Un elenco di icone a sinistra permette di accedere a varie aree di funzionalità. L’editor si apre nella scheda **Variazioni** , in cui avviene la maggior parte delle modifiche. Potrebbe interessarti anche le schede **Annotazioni** e **Metadati** .
+* Un elenco di icone a sinistra permette di accedere a varie aree di funzionalità. L’editor si apre nella **Variazioni** in questo punto avviene la maggior parte delle modifiche. Potresti anche essere interessato al **Annotazioni** e **Metadati** schede.
 
 * Intestazione con informazioni sul frammento e accesso a varie azioni.
 
@@ -181,7 +178,7 @@ Come esempi:
 >
 >Consulta Modelli per frammenti di contenuto - Tipi di dati e proprietà per dettagli generici.
 
-Conferma gli aggiornamenti selezionando **Salva** o **Salva e chiudi**.
+Conferma gli aggiornamenti con **Salva** o **Salva e chiudi**.
 
 >[!NOTE]
 >
@@ -212,27 +209,27 @@ I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di con
 
 * **Aggiorna i riferimenti pagina**
 
-   Questa azione è disponibile da **...Menu a discesa** (puntini di sospensione). Non è interessante per gli autori headless in quanto si riferisce all’authoring delle pagine.
+   Questa azione è disponibile nella pagina **...** (puntini di sospensione) a discesa. Non è interessante per gli autori headless in quanto si riferisce all’authoring delle pagine.
 
 ### Pubblicazione {#publishing}
 
 <!-- needs more details -->
 
-Una volta completato il frammento, è possibile **Pubblicare** in modo che sia disponibile per le applicazioni headless.
+Una volta completato il frammento, puoi **Pubblica** in modo che sia disponibile per le applicazioni headless.
 
-Le azioni di pubblicazione sono disponibili nell’editor (o dalla barra degli strumenti della console **Risorse** ):
+Le azioni di pubblicazione sono disponibili nell’editor (o dalla barra degli strumenti di **Risorse** console):
 
 ![Editor frammento di contenuto - Frammento personale](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
 ## Novità {#whats-next}
 
-Ora che hai appreso le nozioni di base, il passaggio successivo è [Scopri come utilizzare i Riferimenti](references.md). Questo introduce e discute i vari riferimenti disponibili e come creare livelli di struttura con i Riferimenti ai frammenti, una parte chiave dell’authoring per gli oggetti headless.
+Ora che hai imparato le nozioni di base, il passo successivo è quello di [Scopri come utilizzare i riferimenti](references.md). Questo introduce e discute i vari riferimenti disponibili e come creare livelli di struttura con i Riferimenti ai frammenti, una parte chiave dell’authoring per gli oggetti headless.
 
 ## Risorse aggiuntive {#additional-resources}
 
 * [Concetti relativi all’authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) : questa pagina si basa principalmente sulla console  **** Sites , ma molte delle funzioni sono anche utili per la creazione di  **frammenti di contenuto** nella console  **** Risorse.
+* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - questa pagina si basa principalmente sul **Sites** console, ma molte delle funzioni sono anche rilevanti per l’authoring **Frammenti di contenuto** in **Risorse** console.
 
    * [Pannello di navigazione ](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 

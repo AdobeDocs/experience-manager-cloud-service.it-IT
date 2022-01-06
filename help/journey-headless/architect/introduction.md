@@ -1,20 +1,17 @@
 ---
 title: percorso di architetti di contenuti headless AEM
-description: Introduzione alle funzioni avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e modello dei contenuti per il progetto.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+description: Introduzione alle funzioni avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e modalità di modellazione dei contenuti per il progetto.
+exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 0%
 
 ---
 
-
 # Modellazione dei contenuti per headless con AEM - Introduzione {#architect-headless-introduction}
 
-In questa parte del Percorso [AEM architetto di contenuti headless](overview.md), puoi imparare i concetti e la terminologia di base necessari per comprendere la modellazione dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM) come Cloud Service.
+In questa parte del [percorso di architetti di contenuti headless AEM](overview.md), puoi imparare i concetti e la terminologia di base necessari per comprendere la modellazione dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM) as a Cloud Service.
 
 Questo documento ti aiuta a comprendere la distribuzione headless dei contenuti, come AEM supporta gli headless e come viene modellato il contenuto per gli headless. Dopo la lettura è necessario:
 
@@ -49,7 +46,7 @@ Tuttavia, la complessità delle dipendenze all’interno dello stack diventa rap
 
 La testa di qualsiasi sistema è generalmente il renderer di output di quel sistema, tipicamente sotto forma di un&#39;interfaccia grafica o di un&#39;altra uscita grafica.
 
-Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, consegnando solo il **contenuto** in modo standardizzato, un CMS headless omette il rendering finale dell&#39;output, lasciando al servizio che consuma la **presentazione** dei contenuti.
+Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, consegnando solo il **content** in modo standardizzato, un CMS headless omette il rendering finale dell&#39;output, lasciando **presentazione** del contenuto al servizio che consuma.
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
@@ -61,9 +58,9 @@ Omettendo la testa si semplifica il CMS rimuovendo la complessità. In questo mo
 
 La modellazione dei contenuti (nota anche come modellazione dei dati) è una vostra specialità, quindi cosa deve essere considerato durante la modellazione per senza testa?
 
-Affinché le applicazioni headless possano accedere ai contenuti e utilizzarli, il contenuto deve avere una struttura predefinita. Sarebbe possibile avere i contenuti come forma libera, ma renderebbe la vita *molto* complicata per le applicazioni.
+Affinché le applicazioni headless possano accedere ai contenuti e utilizzarli, il contenuto deve avere una struttura predefinita. Sarebbe possibile avere i contenuti come forma libera, ma renderebbe la vita *molto* complicato per le applicazioni.
 
-In qualità di architetto di contenuti, AEM eseguire la modellazione dei contenuti per progettare una gamma di **Modelli di frammenti di contenuto**. Definiscono la struttura utilizzata dagli autori dei contenuti per creare i **Frammenti di contenuto** che contengono il contenuto.
+In qualità di architetto di contenuti, AEM eseguire la modellazione dei contenuti per progettare una serie di **Modelli per frammenti di contenuto**. Definiscono la struttura utilizzata dagli autori dei contenuti per creare la **Frammenti di contenuto** che contengono il contenuto.
 
 ### Accesso al contenuto {#access-content}
 
@@ -71,13 +68,13 @@ Questo è più un dettaglio di sviluppo - ma potrebbe interessarvi, solo per com
 
 Dopo aver creato i modelli di frammento di contenuto e dopo che gli autori li hanno utilizzati per generare il contenuto, le applicazioni headless dovranno accedere a tale contenuto.
 
-Adobe Experience Manager (AEM) come Cloud Service, può accedere in modo selettivo ai frammenti di contenuto utilizzando l’API GraphQL di AEM, per restituire solo il contenuto necessario. Utilizzando l’API, uno sviluppatore può formulare query per la selezione di contenuti specifici.Questo processo di selezione si basa sui *modelli di frammenti di contenuto*.
+Adobe Experience Manager (AEM) as a Cloud Service, può accedere in modo selettivo ai frammenti di contenuto utilizzando l’API GraphQL di AEM, per restituire solo il contenuto necessario. Utilizzando l’API, uno sviluppatore può formulare query per la selezione di contenuti specifici.Questo processo di selezione si basa su *le* Modelli per frammenti di contenuto.
 
 Questo significa che il progetto può realizzare una distribuzione headless di contenuti strutturati da utilizzare nelle applicazioni.
 
 ## Novità {#whats-next}
 
-Dopo aver appreso i concetti e la terminologia, il passaggio successivo è [Scopri le basi della modellazione con Modelli di frammenti di contenuto](basics.md).
+Ora che hai imparato i concetti e la terminologia, il passo successivo è [Scopri le nozioni di base sulla modellazione con i modelli di frammenti di contenuto](basics.md).
 
 ## Risorse aggiuntive {#additional-resources}
 

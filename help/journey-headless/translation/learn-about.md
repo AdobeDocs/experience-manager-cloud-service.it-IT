@@ -1,10 +1,8 @@
 ---
 title: Scopri i contenuti headless e come tradurli in AEM
 description: Impara concetti headless, come si mappano a AEM e la teoria della traduzione AEM.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
@@ -45,11 +43,11 @@ Tuttavia, la complessità delle dipendenze all’interno dello stack diventa rap
 
 La testa di qualsiasi sistema è generalmente il renderer di output di quel sistema, tipicamente sotto forma di un&#39;interfaccia grafica o di un&#39;altra uscita grafica.
 
-Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, consegnando solo il **contenuto** in modo standardizzato, un CMS headless omette il rendering finale dell&#39;output, lasciando al servizio che consuma la **presentazione** dei contenuti.
+Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, consegnando solo il **content** in modo standardizzato, un CMS headless omette il rendering finale dell&#39;output, lasciando **presentazione** del contenuto al servizio che consuma.
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
-I servizi che consumano, siano essi esperienze AR, un negozio web, esperienze mobili, app web progressive (PWA), ecc, prendono i contenuti dal CMS headless e forniscono il loro rendering. Si prendono cura di fornire le proprie teste per i contenuti.
+I servizi che consumano, siano essi esperienze AR, un negozio web, esperienze mobili, app web progressive (PWA), ecc, prendere in contenuti dal CMS headless e fornire il loro rendering. Si prendono cura di fornire le proprie teste per i contenuti.
 
 Omettendo la testa si semplifica il CMS rimuovendo la complessità. In questo modo si sposta anche la responsabilità di rendere i contenuti ai servizi che ne hanno effettivamente bisogno e che sono spesso più adatti a tale rendering.
 
@@ -73,10 +71,10 @@ Grazie per aver iniziato sul tuo percorso di traduzione senza testa AEM! Dopo av
 * Comprendi i concetti di base sulla distribuzione di contenuti headless.
 * Sii familiare con come AEM supporta headless e la traduzione.
 
-Sviluppa questa conoscenza e continua il tuo percorso di traduzione senza testa AEM esaminando il documento [Inizia con AEM traduzione senza testa](getting-started.md) dove avrai una panoramica su come AEM gestire i contenuti headless e conoscere i suoi strumenti di traduzione.
+Sviluppa questa conoscenza e continua il tuo percorso di traduzione senza testa AEM prossimo revisione del documento [Guida introduttiva alla traduzione senza testa AEM](getting-started.md) dove avrai una panoramica di come AEM gestire i contenuti headless e conoscere i suoi strumenti di traduzione.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre si consiglia di passare alla parte successiva del percorso di traduzione headless esaminando il documento [Guida introduttiva alla traduzione headless AEM,](getting-started.md) sono riportate di seguito alcune risorse aggiuntive facoltative che consentono di approfondire alcuni concetti menzionati in questo documento, ma non è necessario che continuino nel percorso headless.
+Mentre si consiglia di passare alla parte successiva del percorso di traduzione headless rivedendo il documento [Inizia con AEM traduzione senza testa,](getting-started.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
 
-* [MSM e traduzione](/help/sites-cloud/administering/msm-and-translation.md)  - I dettagli di AEM Multi-Site Manager e come funziona con i suoi strumenti di traduzione
+* [MSM e traduzione](/help/sites-cloud/administering/msm-and-translation.md) - Dettagli di AEM Multi-Site Manager e come funziona con i suoi strumenti di traduzione

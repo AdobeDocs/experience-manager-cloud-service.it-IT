@@ -1,22 +1,19 @@
 ---
 title: Scopri come definire metadati e tag per i frammenti di contenuto
 description: Scopri come definire metadati e tag per i frammenti di contenuto
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 3%
 
 ---
 
-
 # Scopri come definire metadati e tag per i frammenti di contenuto {#author-headless-metadata-tagging}
 
 ## La storia finora {#story-so-far}
 
-All&#39;inizio del [Percorso di authoring dei contenuti headless](overview.md) [Introduzione](introduction.md) ha trattato i concetti e la terminologia di base relativi all&#39;authoring per headless.
+All&#39;inizio del [AEM Percorso di authoring dei contenuti headless](overview.md) la [Introduzione](introduction.md) ha trattato i concetti e la terminologia di base relativi all&#39;authoring per headless.
 
 Nel passaggio precedente è stato introdotto l’uso dei riferimenti per l’authoring CMS headless. Hai imparato quali tipi di riferimenti sono disponibili e quali sono i loro scopi: Riferimenti a contenuti, riferimenti a risorse/contenuti multimediali e riferimenti a frammenti.
 
@@ -35,11 +32,11 @@ Esistono tre metodi per aggiungere metadati e tag:
 
    ![Crea frammento di contenuto - specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* La scheda **Metadati** dell’Editor frammento di contenuto ti consente di aggiungere entrambi i campi di metadati e **Tag** predefiniti dal progetto:
+* La **Metadati** la scheda dell’editor Frammento di contenuto ti consente di aggiungere sia vari campi di metadati sia predefiniti **Tag** dal progetto:
 
    ![Editor frammento di contenuto - Metadati](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * È accessibile direttamente anche tramite l’opzione **Proprietà** nella barra degli strumenti della console Risorse.
+   * È inoltre direttamente accessibile tramite l’ **Proprietà** nella barra degli strumenti della console Risorse.
 
 ## Novità {#whats-next}
 

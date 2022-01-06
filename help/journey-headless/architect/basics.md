@@ -1,22 +1,19 @@
 ---
 title: Informazioni di base sulla modellazione dei contenuti
 description: Scopri le nozioni di base per la modellazione dei contenuti per CMS headless utilizzando Frammenti di contenuto.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 4%
 
 ---
 
-
 # Scopri le nozioni di base sulla modellazione dei contenuti per headless con AEM {#content-modeling-headless-basics}
 
 ## La storia finora {#story-so-far}
 
-All&#39;inizio del Percorso [AEM Headless Content Architect](overview.md) l&#39; [Introduzione](introduction.md) ha trattato i concetti e la terminologia di base relativi alla modellazione dei contenuti per headless.
+All&#39;inizio del [percorso di architetti di contenuti headless AEM](overview.md) la [Introduzione](introduction.md) sono stati trattati i concetti e la terminologia di base relativi alla modellazione dei contenuti senza testa.
 
 Questo articolo si basa su questi elementi per comprendere come modellare i contenuti per il progetto AEM headless.
 
@@ -67,14 +64,14 @@ Un modello di frammento di contenuto descrive un’entità.
 
 All&#39;interno di un modello:
 
-1. **I** tipi di dati ti consentono di definire i singoli attributi.
-Ad esempio, definisci il campo contenente il nome di un insegnante come **Testo** e i relativi anni di servizio come **Numero**.
-1. I tipi di dati **Riferimento contenuto** e **Riferimento frammento** consentono di creare relazioni con altri contenuti all’interno di AEM.
-1. Il tipo di dati **Riferimento frammento** ti consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
+1. **Tipi di dati** consente di definire i singoli attributi.
+Ad esempio, definisci il campo contenente il nome di un insegnante come **Testo** e i loro anni di servizio come **Numero**.
+1. Tipi di dati **Riferimento contenuto** e **Riferimento frammento** consente di creare relazioni con altri contenuti all’interno di AEM.
+1. La **Riferimento frammento** il tipo di dati ti consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
 
 Esempio:
 
-![Modellazione dei contenuti con ](assets/headless-modeling-01.png "frammenti di contenuto Modellazione dei contenuti con frammenti di contenuto")
+![Modellazione dei contenuti con frammenti di contenuto](assets/headless-modeling-01.png "Modellazione dei contenuti con frammenti di contenuto")
 
 ## Tipi di dati {#data-types}
 
@@ -99,8 +96,8 @@ AEM fornisce i seguenti tipi di dati per modellare il contenuto:
 
 Due tipi di dati forniscono riferimenti a contenuti esterni a uno specifico frammento:
 
-* **Content**
-ReferenceQuesto fornisce un semplice riferimento ad altri contenuti di qualsiasi tipo.
+* **Riferimento contenuto**
+Questo fornisce un semplice riferimento ad altri contenuti di qualsiasi tipo.
 Ad esempio, è possibile fare riferimento a un&#39;immagine in una posizione specifica.
 
 * **Riferimento frammento**
@@ -116,13 +113,13 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 
 ## Livelli di struttura (frammenti nidificati) {#levels-of-structure-nested-fragments}
 
-Per la modellazione del contenuto il tipo di dati **Riferimento frammento** consente di creare più livelli di struttura e relazioni.
+Per la modellazione dei contenuti **Riferimento frammento** il tipo di dati consente di creare più livelli di struttura e relazioni.
 
-Con questo riferimento è possibile *collegare* vari modelli di frammenti di contenuto per rappresentare le interrelazioni. Questo consente all’applicazione headless di seguire le connessioni e accedere al contenuto in base alle necessità.
+Con questo riferimento è possibile *connect* vari modelli di frammenti di contenuto per rappresentare le interrelazioni. Questo consente all’applicazione headless di seguire le connessioni e accedere al contenuto in base alle necessità.
 
 >[!NOTE]
 >
->Questo deve essere utilizzato con cautela e la best practice può essere definita come *nidifica quanto necessario, ma il meno possibile*.
+>Questo dovrebbe essere utilizzato con cautela e le migliori pratiche possono essere definite come *nidificare quanto necessario, ma il meno possibile*.
 
 I riferimenti ai frammenti consentono di fare riferimento a un altro frammento.
 
@@ -148,7 +145,7 @@ La rappresentazione di queste interrelazioni può essere ottenuta con i Riferime
 
 ## Novità {#whats-next}
 
-Dopo aver appreso le nozioni di base, il passaggio successivo è [Scopri come creare modelli di frammenti di contenuto in AEM](model-structure.md). Questo introdurrà e discuterà i vari riferimenti disponibili e come creare livelli di struttura con i Riferimenti frammento - una parte chiave della modellazione per gli headless.
+Ora che hai imparato le nozioni di base, il passo successivo è quello di [Scopri come creare modelli di frammenti di contenuto in AEM](model-structure.md). Questo introdurrà e discuterà i vari riferimenti disponibili e come creare livelli di struttura con i Riferimenti frammento - una parte chiave della modellazione per gli headless.
 
 ## Risorse aggiuntive {#additional-resources}
 
@@ -158,6 +155,6 @@ Dopo aver appreso le nozioni di base, il passaggio successivo è [Scopri come cr
 
 * [Concetti relativi all’authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) : questa pagina si basa principalmente sulla console  **** Sites , ma molte delle funzioni sono anche utili per la creazione di  **frammenti di contenuto** nella console  **** Risorse.
+* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - questa pagina si basa principalmente sul **Sites** console, ma molte delle funzioni sono anche rilevanti per l’authoring **Frammenti di contenuto** in **Risorse** console.
 
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
