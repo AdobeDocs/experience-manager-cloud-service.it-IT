@@ -2,10 +2,10 @@
 title: Conformità
 description: In questa pagina sono elencate le risorse di supporto autonomo che forniscono informazioni sulla conformità nell’Experience Manager as a Cloud Service.
 landing-page-description: Inizia qui per una panoramica sulla conformità in AEM as a Cloud Service, comprensiva di privacy e accessibilità.
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 72%
+source-wordcount: '386'
+ht-degree: 73%
 
 ---
 
@@ -43,7 +43,7 @@ In questa pagina sono elencate le risorse di supporto autonomo che forniscono in
 * [Documentazione di Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
 * [Documentazione di Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentazione di Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

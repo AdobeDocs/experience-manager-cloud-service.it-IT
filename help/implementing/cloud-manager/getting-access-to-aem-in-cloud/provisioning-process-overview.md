@@ -1,28 +1,28 @@
 ---
 title: Processo di provisioning - Panoramica
 description: Processo di provisioning - Panoramica
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '331'
 ht-degree: 7%
 
 ---
 
 
-# AEM come Cloud Service: Onboarding e accesso
+# AEM as a Cloud Service: Onboarding e accesso
 
-In questa pagina sono elencate le risorse di supporto autonomo relative al processo di provisioning, ad Experience Manager come Cloud Service.
+In questa pagina sono elencate le risorse di supporto autonomo relative al processo di provisioning, ad Experience Manager as a Cloud Service.
 
-## Panoramica del processo di provisioning AEM as a Cloud Service
+## Panoramica del processo di provisioning as a Cloud Service AEM
 
 Questa sezione riguarda gli articoli principali su:
 
-* Accesso a AEM come Cloud Service
+* Accesso AEM as a Cloud Service
 * Processo di onboarding e provisioning di Adobe Experience Manager as a Cloud Service
 * Aiuto e risorse
 
 
-### Accesso a AEM come Cloud Service
+### Accesso AEM as a Cloud Service
 
 Una volta completato il provisioning automatico:
 
@@ -34,7 +34,7 @@ Una volta completato il provisioning automatico:
 > ![processoverview.jpg](./assets/processOverview.jpg)
 
 
-Per ulteriori informazioni, visita [Onboarding to Experience Manager as a Cloud Service su Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
+Per maggiori informazioni, visita [Onboarding in Experience Manager as a Cloud Service su Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
 
 ### Risorse e collegamenti
 
@@ -50,7 +50,6 @@ Per ulteriori informazioni, visita [Onboarding to Experience Manager as a Cloud 
 ### 2. Organizzazioni integrate in Adobe Admin Console:
 
 >   ![processoverview2.jpg](./assets/processOverview2.jpg)
-
 * Amministratore di sistema:
    * Provisioning di programmi e ambienti AEM.
    * Passare all&#39;Admin Console per le attività amministrative.
@@ -67,12 +66,11 @@ Per ulteriori informazioni, visita [Onboarding to Experience Manager as a Cloud 
 Tre metodi per integrare gli utenti, a seconda delle dimensioni e delle preferenze:
 * Creare manualmente gli utenti in Admin Console
 * Carica file .csv
-* Sincronizza utenti da Enterprise Active
-Directory
+* Sincronizza utenti da Active Directory aziendale
 
 ### 4. L’amministratore configura l’organizzazione e concede agli utenti e ai gruppi l’accesso agli ambienti
 
 ## Aiuto e risorse
 
-* [Primo accesso - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
-* [Configurazione dell’accesso a AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [Primo accesso - Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+* [Configurazione dell’accesso a AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
