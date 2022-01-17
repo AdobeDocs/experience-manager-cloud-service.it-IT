@@ -2,9 +2,9 @@
 title: Backup e ripristino in AEM as a Cloud Service
 description: Backup e ripristino in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
+source-git-commit: 7778430b409bdd6f30530d34f2e8cd10d63df153
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ I clienti devono presentare una richiesta di supporto per descrivere il problema
 
 AEM supporto as a Cloud Service:
 
+* Backup e ripristino per ambienti di stage, produzione e sviluppo.
 * 24 ore di recupero nel tempo, il che significa che il sistema può essere ripristinato in qualsiasi punto nelle ultime 24 ore.
 * Ripristina da una marca temporale specifica definita in Adobe eseguita due volte al giorno per gli ultimi 7 giorni.  Eventuali messaggi di replica (eliminazione, aggiornamenti, creazione) verranno mantenuti.
 
