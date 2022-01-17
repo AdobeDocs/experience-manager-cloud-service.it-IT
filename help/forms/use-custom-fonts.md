@@ -1,9 +1,9 @@
 ---
 title: 'Usa font personalizzati '
 description: 'Usa font personalizzati '
-source-git-commit: 7dd3785206b6d79caa500a155d3a6f3597303e65
+source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 0%
 
 **La documentazione sulle comunicazioni di Cloud Service è disponibile in versione beta**
 
-È possibile utilizzare Forms as a Cloud Service Communications per combinare modelli XDP, documenti PDF basati su XDP o Acrobat Forms (AcroForm) con dati XML per generare documenti PDF. È possibile utilizzare i font di sistema (font inclusi nel Cloud Service) o i font personalizzati (font approvati dall’organizzazione) per eseguire il rendering dei documenti PDF generati.
-
-I font di sistema sono già disponibili nel Cloud Service. Puoi utilizzare il progetto di sviluppo del Cloud Service per aggiungere font personalizzati all’ambiente del Cloud Service.
+È possibile utilizzare Forms as a Cloud Service Communications per combinare un modello XDP, un documento PDF basato su XDP o un modulo Acrobat (AcroForm) con dati XML per generare documenti PDF. È possibile utilizzare i font inclusi nel Cloud Service o i font personalizzati (font approvati dall’organizzazione) per eseguire il rendering dei documenti PDF generati. Puoi utilizzare il progetto di sviluppo del Cloud Service per aggiungere font personalizzati all’ambiente del Cloud Service.
 
 ## Comportamento dei documenti PDF
 
-È possibile [incorporare un font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) in un documento PDF o specificare semplicemente il nome di un font. Quando un font è incorporato, il documento PDF appare identico su tutte le piattaforme. Utilizzava un font incorporato per garantire un aspetto e un aspetto coerenti. Quando un font non è incorporato, il client di rendering PDF cerca il font sul computer client. Se il font è disponibile nel computer client, PDF utilizza il font specificato, altrimenti il font utilizzato per il rendering di PDF sarà un font di fallback.
+È possibile [incorporare un font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) a un documento PDF. Quando un font è incorporato, il documento PDF appare identico su tutte le piattaforme. Utilizzava un font incorporato per garantire un aspetto e un aspetto coerenti. Quando un font non è incorporato, il rendering del font dipende dalle impostazioni di rendering del client di visualizzazione di PDF. Se il font è disponibile nel computer client, PDF utilizza il font specificato, altrimenti il font utilizzato per il rendering di PDF sarà un font di fallback.
 
 ## Aggiungi font personalizzati al tuo ambiente Forms as a Cloud Service
 
