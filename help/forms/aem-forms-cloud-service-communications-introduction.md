@@ -2,9 +2,9 @@
 title: Introduzione alle comunicazioni as a Cloud Service di Forms
 description: Unisci automaticamente i dati con i modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 0673aa4f2f0ad2f0a5205bf929de3f26aea0d879
+source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1840'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Le comunicazioni utilizzano [Modelli PDF e XFA](#supported-document-types) con [
 
 Un’API di comunicazione consente di combinare un modello (XFA o PDF) con i dati del cliente ([Dati XML](#form-data)) per generare documenti nei formati PDF e Print come i formati PS, PCL, DPL, IPL e ZPL.
 
-In genere, si crea un modello utilizzando Designer e si utilizzano le API di comunicazione per unire i dati con il modello. L&#39;applicazione può inviare il documento di output a una stampante di rete, a una stampante locale o a un sistema di storage per l&#39;archiviazione. I flussi di lavoro predefiniti e personalizzati si presentano come segue:
+In genere, si crea un modello utilizzando [Designer](use-forms-designer.md) e utilizza le API di comunicazione per unire i dati con il modello. L&#39;applicazione può inviare il documento di output a una stampante di rete, a una stampante locale o a un sistema di storage per l&#39;archiviazione. I flussi di lavoro predefiniti e personalizzati si presentano come segue:
 
 ![Workflow delle comunicazioni](assets/communicaions-workflow.png)
 
@@ -44,13 +44,13 @@ A seconda del caso d’uso, è anche possibile rendere disponibili questi docume
 
 Le comunicazioni forniscono API HTTP per la generazione di documenti on-demand e batch:
 
-* **API sincrone** sono adatti a scenari di generazione di documenti a richiesta, a bassa latenza e a record singolo. Queste API sono più adatte ai casi d’uso basati su azioni dell’utente. Ad esempio, la generazione di un documento al termine della compilazione del modulo da parte dell’utente.
+* **[API sincrone](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** sono adatti a scenari di generazione di documenti a richiesta, a bassa latenza e a record singolo. Queste API sono più adatte ai casi d’uso basati su azioni dell’utente. Ad esempio, la generazione di un documento al termine della compilazione del modulo da parte dell’utente.
 
-* **API batch (API asincrone)** sono adatti a scenari di generazione pianificati, di alta velocità e di documenti multipli. Queste API generano documenti in batch. Ad esempio, bollette telefoniche, dichiarazioni con carta di credito e dichiarazioni con benefit generate ogni mese.
+* **[API batch (API asincrone)](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** sono adatti a scenari di generazione pianificati, di alta velocità e di documenti multipli. Queste API generano documenti in batch. Ad esempio, bollette telefoniche, dichiarazioni con carta di credito e dichiarazioni con benefit generate ogni mese.
 
 ## Onboarding
 
-Le comunicazioni sono disponibili come modulo indipendente e aggiuntivo per l’utente as a Cloud Service di Forms. Per richiedere l&#39;accesso, contatta il team di vendita di Adobe o il tuo rappresentante di Adobe.
+Le comunicazioni sono disponibili come modulo indipendente e aggiuntivo per l’utente as a Cloud Service di Forms. Per richiedere l’accesso, contatta il team di vendita Adobe o il tuo rappresentante Adobe.
 
 Adobe abilita l’accesso per la tua organizzazione e fornisce i privilegi richiesti alla persona designata come amministratore dell’organizzazione. L’amministratore può concedere l’accesso agli sviluppatori AEM Forms (utenti) della tua organizzazione per utilizzare le API.
 
@@ -143,7 +143,7 @@ Prima di iniziare a generare documenti utilizzando le API di comunicazione, cons
 
 ### Dati modulo {#form-data}
 
-Le API di comunicazione accettano come input una struttura del modulo generalmente creata in Designer e i dati del modulo XML. Per compilare un documento con i dati, nei dati del modulo XML deve esistere un elemento XML per ogni campo del modulo che si desidera compilare. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell’elemento XML non corrisponde al nome del campo. Non è necessario stabilire una corrispondenza con l’ordine di visualizzazione degli elementi XML. Il fattore importante è che gli elementi XML sono specificati con i valori corrispondenti.
+Le API di comunicazione accettano una struttura del modulo tipicamente creata in [Designer](use-forms-designer.md) e i dati del modulo XML come input. Per compilare un documento con i dati, nei dati del modulo XML deve esistere un elemento XML per ogni campo del modulo che si desidera compilare. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell’elemento XML non corrisponde al nome del campo. Non è necessario stabilire una corrispondenza con l’ordine di visualizzazione degli elementi XML. Il fattore importante è che gli elementi XML sono specificati con i valori corrispondenti.
 
 Prendi in considerazione il seguente modulo di richiesta di prestito:
 
@@ -186,13 +186,13 @@ Per unire i dati alla struttura del modulo, creare un’origine dati XML corrisp
 
 Per un accesso completo alle funzionalità di rendering delle API di comunicazione, si consiglia di utilizzare un file XDP come input. A volte è possibile utilizzare un file PDF. Tuttavia, l’utilizzo di un file PDF come input presenta le seguenti limitazioni:
 
-Un documento PDF che non contiene un flusso XFA non può essere rappresentato come PostScript, PCL o ZPL. Le API di comunicazione possono eseguire il rendering dei documenti PDF con flussi XFA (ovvero moduli creati in Designer) in formati laser ed etichette. Se il documento PDF è firmato, certificato o contiene diritti di utilizzo (applicati utilizzando il servizio AEM Forms Reader Extensions), non può essere sottoposto a rendering in questi formati di stampa.
+Un documento PDF che non contiene un flusso XFA non può essere rappresentato come PostScript, PCL o ZPL. Le API di comunicazione possono eseguire il rendering dei documenti PDF con flussi XFA (ovvero, dei moduli creati in [Designer](use-forms-designer.md)) nei formati laser ed etichette. Se il documento PDF è firmato, certificato o contiene diritti di utilizzo (applicati utilizzando il servizio AEM Forms Reader Extensions), non può essere sottoposto a rendering in questi formati di stampa.
 
-&lt;!-* * Le opzioni di esecuzione, come la versione PDF e PDF con tag, non sono supportate per i moduli Acrobat. Sono validi per i PDF forms che contengono flussi XFA; tuttavia, tali moduli non possono essere firmati o certificati.
+<!-- Run-time options such as PDF version and tagged PDF are not supported for Acrobat forms. They are valid for PDF forms that contain XFA streams; however, these forms cannot be signed or certified. 
 
-### Supporto e-mail {#email-support}
+### Email support {#email-support}
 
-Per la funzionalità e-mail, puoi creare un processo in Flussi di lavoro di Experience Manager che utilizza il Passaggio e-mail. Un flusso di lavoro rappresenta un processo aziendale automatizzato. —>
+For email functionality, you can create a process in Experience Manager Workflows that uses the Email Step. A workflow represents a business process that you are automating. -->
 
 ### Aree stampabili {#printable-areas}
 
@@ -202,9 +202,10 @@ Assicurarsi sempre di utilizzare il file XDC corretto per la stampante. Ad esemp
 
 ### Script {#scripts}
 
-Una struttura del modulo utilizzata con le API di comunicazione può contenere script eseguiti sul server. Assicurarsi che una struttura del modulo non contenga script eseguiti sul client. Per informazioni sulla creazione degli script di struttura del modulo, vedere la Guida di Designer.
+Una struttura del modulo utilizzata con le API di comunicazione può contenere script eseguiti sul server. Assicurarsi che una struttura del modulo non contenga script eseguiti sul client. Per informazioni sulla creazione degli script di struttura del modulo, vedere [Guida di Designer](use-forms-designer.md).
 
-&lt;!-* #### Utilizzo delle considerazioni sul documento dei font per l&#39;utilizzo dei font>> —>
+<!-- #### Working with Fonts
+ Document Considerations for Working with Fonts>> -->
 
 ### Mappatura dei font {#font-mapping}
 
@@ -255,7 +256,7 @@ Questi file sono file XDC di riferimento che supportano le caratteristiche di st
 
 ### Utilizzo del file di configurazione XCI {#working-with-xci-files}
 
-Le API di comunicazione utilizzano un file di configurazione XCI per eseguire attività quali controllare se l’output è un singolo pannello o impaginato. Anche se questo file contiene impostazioni che possono essere impostate, non è tipico modificare questo valore. &lt;!-* Il file default.xci si trova nella cartella svcdata\XMLFormService. —>
+Le API di comunicazione utilizzano un file di configurazione XCI per eseguire attività quali controllare se l’output è un singolo pannello o impaginato. Anche se questo file contiene impostazioni che possono essere impostate, non è tipico modificare questo valore. <!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
 
 Puoi trasmettere un file XCI modificato mentre utilizzi un’API di comunicazione. In questo modo, crea una copia del file predefinito, modifica solo i valori che richiedono modifiche per soddisfare i requisiti aziendali e utilizza il file XCI modificato.
 
