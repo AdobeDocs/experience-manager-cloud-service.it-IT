@@ -2,9 +2,9 @@
 title: Introduzione alle comunicazioni as a Cloud Service di Forms
 description: Unisci automaticamente i dati con i modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
+source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1869'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,12 @@ La funzionalità di comunicazione ti consente di creare documenti orientati al m
 
 * funzionalità semplificate di generazione della documentazione on-demand e batch
 
-* API HTTP per una più semplice integrazione con i sistemi esistenti
+* API HTTP per una più semplice integrazione con i sistemi esistenti. Sono incluse API separate per le operazioni on-demand (bassa latenza) e batch (operazioni con throughput elevato). La generazione dei documenti è un compito efficiente.
 
 * un accesso sicuro ai dati. Le API di comunicazione si connettono e accedono ai dati solo dagli archivi di dati designati dal cliente, non effettuano copie locali dei dati, il che rende le comunicazioni altamente sicure.
 
-* API separate per operazioni a bassa latenza e velocità effettiva che rendono efficiente la generazione dei documenti.
-
 ![Esempio di dichiarazione della carta di credito](assets/statement.png)
+È possibile creare un esempio di rendiconto della carta di credito utilizzando le API di comunicazione. L&#39;istruzione utilizza lo stesso modello ma dati separati per ogni cliente a seconda dell&#39;uso della carta di credito.
 
 ## Come funziona?
 
@@ -143,16 +142,15 @@ Prima di iniziare a generare documenti utilizzando le API di comunicazione, cons
 
 ### Dati modulo {#form-data}
 
-Le API di comunicazione accettano una struttura del modulo tipicamente creata in [Designer](use-forms-designer.md) e i dati del modulo XML come input. Per compilare un documento con i dati, nei dati del modulo XML deve esistere un elemento XML per ogni campo del modulo che si desidera compilare. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell’elemento XML non corrisponde al nome del campo. Non è necessario stabilire una corrispondenza con l’ordine di visualizzazione degli elementi XML. Il fattore importante è che gli elementi XML sono specificati con i valori corrispondenti.
+Le API di comunicazione accettano una struttura del modulo tipicamente creata in [Designer](use-forms-designer.md) e i dati del modulo XML come input. Per compilare un documento con i dati, nei dati del modulo XML deve esistere un elemento XML per ogni campo del modulo che si desidera compilare. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Se un elemento XML non corrisponde a un campo modulo o se il nome dell’elemento XML non corrisponde al nome del campo, l’elemento XML viene ignorato. Non è necessario stabilire una corrispondenza con l’ordine di visualizzazione degli elementi XML. Il fattore importante è che gli elementi XML sono specificati con i valori corrispondenti.
 
 Prendi in considerazione il seguente modulo di richiesta di prestito:
 
 ![Modulo di domanda di prestito](assets/loanFormData.png)
 
-Per unire i dati alla struttura del modulo, creare un’origine dati XML corrispondente al modulo. L&#39;XML seguente rappresenta un&#39;origine dati XML corrispondente al modulo di applicazione per l&#39;ipoteca di esempio.
+Per unire i dati alla struttura del modulo, creare un’origine dati XML corrispondente alla gerarchia del modulo, alla denominazione del campo e ai tipi di dati. L&#39;XML seguente rappresenta un&#39;origine dati XML corrispondente al modulo di applicazione per l&#39;ipoteca di esempio.
 
 ```XML
-<?xml version="1.0" encoding="UTF-8" ?>
 * <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
 * <xfa:data>
 * <data>
@@ -196,11 +194,11 @@ For email functionality, you can create a process in Experience Manager Workflow
 
 ### Aree stampabili {#printable-areas}
 
-Il margine non stampabile predefinito da 0,25&quot; non è esatto per le stampanti di etichette e varia dalla stampante alla stampante e dalle dimensioni dell&#39;etichetta alle dimensioni dell&#39;etichetta. Si consiglia di mantenere o ridurre il margine di 0,25&quot;. Tuttavia, si consiglia di non aumentare il margine non stampabile. In caso contrario, le informazioni contenute nell&#39;area stampabile non vengono stampate correttamente.
+Il margine non stampabile predefinito da 0,25&quot; non è esatto per le stampanti di etichette e varia dalla stampante alla stampante e dalle dimensioni dell&#39;etichetta alle dimensioni dell&#39;etichetta, tuttavia, si consiglia di mantenere il margine di 0,25&quot; o ridurlo. Tuttavia, si consiglia di non aumentare il margine non stampabile. In caso contrario, le informazioni contenute nell&#39;area stampabile non vengono stampate correttamente.
 
 Assicurarsi sempre di utilizzare il file XDC corretto per la stampante. Ad esempio, evitare di scegliere un file XDC per una stampante a 300 dpi e inviare il documento a una stampante a 200 dpi.
 
-### Script {#scripts}
+### Script solo per i moduli XFA (XDP/PDF) {#scripts}
 
 Una struttura del modulo utilizzata con le API di comunicazione può contenere script eseguiti sul server. Assicurarsi che una struttura del modulo non contenga script eseguiti sul client. Per informazioni sulla creazione degli script di struttura del modulo, vedere [Guida di Designer](use-forms-designer.md).
 
@@ -250,7 +248,7 @@ Un profilo dispositivo (file XDC) è un file di descrizione della stampante in f
 * dpl600.xdc
 
 È possibile utilizzare i file XDC forniti per generare documenti di stampa o modificarli in base alle proprie esigenze.
-&lt;!-* Non è necessario modificare questi file per creare documenti. Tuttavia, puoi modificarli per soddisfare le tue esigenze aziendali. —>
+<!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
 Questi file sono file XDC di riferimento che supportano le caratteristiche di stampanti specifiche, ad esempio font residenti, vassoi di carta e graffette. Lo scopo di questo riferimento è quello di aiutarti a capire come impostare le tue stampanti utilizzando i profili dei dispositivi. Il riferimento è anche un punto di partenza per stampanti simili della stessa linea di prodotti.
 
