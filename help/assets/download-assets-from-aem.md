@@ -1,13 +1,13 @@
 ---
 title: Scaricare le risorse
 description: Scaricare le risorse da [!DNL Adobe Experience Manager Assets] e abilitare o disabilitare la funzionalità di download.
-contentOwner: AG
+contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1196'
 ht-degree: 3%
 
 ---
@@ -52,15 +52,15 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
-### Abilita notifica e-mail per download di grandi dimensioni {#enable-emails-for-large-downloads}
+### Abilita notifiche e-mail per download di grandi dimensioni {#enable-emails-for-large-downloads}
 
 I download asincroni vengono attivati in uno dei seguenti casi:
 
-* Se sono presenti più di 10 risorse
+* Se ci sono più di dieci risorse
 * Se la dimensione del download è superiore a 100 MB
 * Se il download richiede più di 30 secondi per prepararsi
 
-Mentre il download asincrono viene eseguito sul backend , l&#39;utente può continuare a esplorare e lavorare ulteriormente in Experience Manager. È necessario un meccanismo preconfigurato per informare l’utente al termine del processo di download. Per raggiungere questo obiettivo, gli amministratori possono configurare il servizio e-mail configurando un server SMTP. Vedi [configura servizio posta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Mentre il download asincrono viene eseguito sul backend , l’utente può continuare a esplorare e lavorare ulteriormente in Experience Manager. È necessario un meccanismo preconfigurato per informare l’utente al termine del processo di download. Per raggiungere questo obiettivo, gli amministratori possono configurare il servizio e-mail configurando un server SMTP. Vedi [configura servizio posta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Una volta configurato il servizio e-mail, gli amministratori e gli utenti possono abilitare le notifiche e-mail dall’interfaccia di Experience Manager.
 
