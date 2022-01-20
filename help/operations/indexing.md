@@ -2,10 +2,10 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 7c247f5080c59f07bc9ba549fb746bf62cca80ba
+source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 2%
+source-wordcount: '2224'
+ht-degree: 1%
 
 ---
 
@@ -43,17 +43,27 @@ Di seguito è riportato un elenco delle modifiche principali rispetto a AEM 6.5 
 
 La definizione degli indici può comprendere i tre casi d’uso seguenti:
 
-1. Aggiunta di una nuova definizione dell&#39;indice del cliente
-1. Aggiornamento di una definizione di indice esistente. Ciò significa effettivamente aggiungere una nuova versione di una definizione di indice esistente
+1. Aggiunta di una nuova definizione dell&#39;indice del cliente.
+1. Aggiornamento di una definizione di indice esistente. Ciò significa effettivamente aggiungere una nuova versione di una definizione di indice esistente.
 1. Rimozione di un indice esistente ridondante o obsoleto.
 
 Per entrambi i punti 1 e 2 di cui sopra, devi creare una nuova definizione dell’indice come parte della base di codice personalizzata nella rispettiva pianificazione della versione di Cloud Manager. Per ulteriori informazioni, consulta la sezione [Distribuzione AEM documentazione as a Cloud Service](/help/implementing/deploying/overview.md).
+
+## Nomi indice {#index-names}
+
+Una definizione di indice può essere:
+
+1. Un indice preconfigurato. Un esempio è `/oak:index/cqPageLucene-2`.
+1. Personalizzazione di un indice preconfigurato. Tali personalizzazioni sono definite dal cliente. Un esempio è `/oak:index/cqPageLucene-2-custom-1`.
+1. Un indice completamente personalizzato. Un esempio è `/oak:index/acme.product-1-custom-2`. Per evitare conflitti di denominazione, è necessario che gli indici completamente personalizzati abbiano un prefisso, ad esempio `acme.`
+
+Tieni presente che sia la personalizzazione di un indice predefinito sia gli indici completamente personalizzati devono contenere `-custom-`. Solo gli indici completamente personalizzati devono iniziare con un prefisso .
 
 ### Preparazione della nuova definizione dell&#39;indice {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Se si personalizza un indice preconfigurato, ad esempio `damAssetLucene-6`, copia l&#39;ultima definizione dell&#39;indice predefinita da un *ambiente Cloud Service* e aggiungi le tue personalizzazioni in alto, questo assicura che le configurazioni richieste non vengano rimosse inavvertitamente. Ad esempio, il `tika` nodo sotto `/oak:index/damAssetLucene-6/tika` è un nodo obbligatorio che deve far parte anche dell&#39;indice personalizzato e non esiste nell&#39;SDK di Cloud.
+>Se si personalizza un indice predefinito, ad esempio `damAssetLucene-6`, copia l&#39;ultima definizione di indice preconfigurata da un *ambiente Cloud Service* e aggiungi le tue personalizzazioni in alto, questo assicura che le configurazioni richieste non vengano rimosse inavvertitamente. Ad esempio, il `tika` nodo sotto `/oak:index/damAssetLucene-6/tika` è un nodo obbligatorio che deve far parte anche dell&#39;indice personalizzato e non esiste nell&#39;SDK di Cloud.
 
 È necessario preparare un nuovo pacchetto di definizione dell&#39;indice che contiene la definizione effettiva dell&#39;indice, seguendo questo pattern di denominazione:
 
@@ -154,7 +164,7 @@ La gestione degli indici è attualmente supportata solo per gli indici di tipo `
 
 ### Aggiunta di un indice {#adding-an-index}
 
-Per aggiungere un indice denominato `/oak:index/acme.product-custom-1` per essere utilizzato in una nuova versione dell&#39;applicazione e successivamente, l&#39;indice deve essere configurato come segue:
+Per aggiungere un indice completamente personalizzato denominato `/oak:index/acme.product-custom-1` per essere utilizzato in una nuova versione dell&#39;applicazione e successivamente, l&#39;indice deve essere configurato come segue:
 
 `acme.product-1-custom-1`
 
