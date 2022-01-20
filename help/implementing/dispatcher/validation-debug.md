@@ -3,7 +3,7 @@ title: Convalida e debug tramite gli strumenti di Dispatcher
 description: Convalida e debug tramite gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 03fa3601c7819d469bf4d532ff5020aad0ea7ed9
+source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
 workflow-type: tm+mt
 source-wordcount: '2413'
 ht-degree: 1%
@@ -350,7 +350,7 @@ Questa fase controlla la sintassi Apache avviando Docker in un&#39;immagine. Il 
 >
 >Gli utenti Windows devono utilizzare Windows 10 Professional o altre distribuzioni che supportano Docker. Questo è un prerequisito per l’esecuzione e il debug di Dispatcher su un computer locale.
 
-Questa fase può anche essere eseguita in modo indipendente `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080`.
+Questa fase può anche essere eseguita in modo indipendente `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
 Durante l’implementazione di Cloud Manager, la variabile `httpd -t` viene inoltre eseguito il controllo della sintassi e eventuali errori verranno inclusi nel registro degli errori del passaggio Build Images di Cloud Manager.
 
