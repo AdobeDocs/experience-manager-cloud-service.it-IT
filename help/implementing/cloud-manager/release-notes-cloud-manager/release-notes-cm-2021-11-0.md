@@ -1,11 +1,11 @@
 ---
 title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.11.0
-description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.11.0
+description: Queste sono le note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.11.0
 feature: Release Information
-source-git-commit: d6aa3097e558d4e78f20493f214167db57f1a013
+source-git-commit: e402578fc95fd97f808fde01a860d4c583af4c9b
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 2%
+source-wordcount: '458'
+ht-degree: 1%
 
 ---
 
@@ -14,14 +14,15 @@ ht-degree: 2%
 Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->Per visualizzare le note sulla versione corrente per Adobe Experience Manager as a Cloud Service, fai clic su [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+>
+>Fai riferimento a [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) per le note sulla versione corrente per Adobe Experience Manager as a Cloud Service.
 
 ## Data di pubblicazione {#release-date}
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.11.0 è il 4 novembre 2021.
 La prossima versione è prevista per il 16 dicembre 2021.
 
-### Novità {#what-is-new}
+## Novità {#what-is-new}
 
 * Gli utenti possono ora sfruttare le nuove pipeline Front End per distribuire esclusivamente il codice front-end in modo accelerato. Vedi [Pipe front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per saperne di più.
 
@@ -50,7 +51,7 @@ La prossima versione è prevista per il 16 dicembre 2021.
 
 * Il file CSV del problema qualità conterrà ora la marca temporale per ogni problema di qualità.
 
-### Correzioni di bug {#bug-fixes}
+## Correzioni di bug {#bug-fixes}
 
 * Alcune configurazioni di build non ortodosse hanno comportato la memorizzazione di file non necessari nella cache degli artefatti Maven della pipeline, causando un I/O di rete estranea all’avvio e all’arresto del contenitore di build.
 
@@ -61,4 +62,3 @@ La prossima versione è prevista per il 16 dicembre 2021.
 * Il messaggio di errore quando è stato raggiunto il numero massimo di archivi non specifica il motivo dell&#39;errore.
 
 * In rari casi, le pipeline non riuscivano a causa di una gestione inappropriata dei tentativi di alcuni codici di risposta.
-
