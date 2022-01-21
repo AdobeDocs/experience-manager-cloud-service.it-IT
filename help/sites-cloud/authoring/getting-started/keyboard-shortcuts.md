@@ -1,14 +1,13 @@
 ---
 title: 'Scelte rapide da tastiera per le console  '
 description: Risparmia tempo durante l’authoring utilizzando le scelte rapide da tastiera
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
+source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 100%
 
 ---
-
 
 # Scelte rapide da tastiera per le console   {#keyboard-shortcuts-for-consoles}
 
@@ -26,7 +25,7 @@ Le seguenti scelte rapide sono disponibili per le console Sites, Assets, Utenti,
 | Console | `?` | Aiuto per scelte rapide da tastiera |
 |  | `/` | Avvia la [ricerca](/help/sites-cloud/authoring/getting-started/search.md) |
 |  | `Alt+`&lt;`Number`> | Consente di selezionare l’opzione del [selettore della barra](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) da visualizzare |
-|  | &grave; | Nasconde la barra |
+|  | ``` ` ``` | Nasconde la barra |
 |  | `e` | Modifica |
 |  | `p` | Proprietà |
 |  | `m` | Sposta |
