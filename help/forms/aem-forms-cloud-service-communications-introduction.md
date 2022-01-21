@@ -2,7 +2,7 @@
 title: Introduzione alle comunicazioni as a Cloud Service di Forms
 description: Unisci automaticamente i dati con i modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 1%
@@ -25,7 +25,7 @@ La funzionalità di comunicazione ti consente di creare documenti orientati al m
 * un accesso sicuro ai dati. Le API di comunicazione si connettono e accedono ai dati solo dagli archivi di dati designati dal cliente, non effettuano copie locali dei dati, il che rende le comunicazioni altamente sicure.
 
 ![Esempio di dichiarazione della carta di credito](assets/statement.png)
-È possibile creare un esempio di rendiconto della carta di credito utilizzando le API di comunicazione. L&#39;istruzione utilizza lo stesso modello ma dati separati per ogni cliente a seconda dell&#39;uso della carta di credito.
+È possibile creare un rendiconto della carta di credito utilizzando le API di comunicazione. Questa istruzione di esempio utilizza lo stesso modello ma dati separati per ogni cliente a seconda dell&#39;uso della carta di credito.
 
 ## Come funziona?
 

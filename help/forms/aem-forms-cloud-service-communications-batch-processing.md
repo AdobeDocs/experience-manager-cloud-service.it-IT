@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] Elaborazione batch di comunicazioni as a Cloud Service
 description: Come creare comunicazioni personalizzate e orientate al brand?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2297'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Un&#39;operazione batch è un processo di generazione di più documenti di tipo 
 
 È possibile utilizzare le operazioni batch per generare più documenti a intervalli pianificati.
 
->[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/338349)
 
 Puoi guardare il video o eseguire le istruzioni riportate di seguito per scoprire come generare documenti utilizzando operazioni batch. La documentazione di riferimento API utilizzata nei video è disponibile in formato .yaml. È possibile scaricare [API batch](assets/batch-api.yaml) filma e caricalo su Postman per verificare la funzionalità delle API e segui il video.
 
@@ -100,7 +100,7 @@ La configurazione dei dati in batch consente di configurare contenitori e cartel
 
 Per creare la configurazione:
 
-1. Selezionare Strumenti > Forms > Output Batch - Unified Storage Connector.
+1. Selezionare Strumenti > Forms > Connettore di archiviazione unificata.
 1. Apri una cartella per ospitare la configurazione e fai clic su Crea. Utilizza la cartella Globale o crea una cartella.
 1. Specifica il Titolo e il Nome della configurazione. In Archiviazione selezionare Archiviazione di Microsoft Azure.
 1. In Percorso di configurazione dell&#39;archiviazione, sfoglia e seleziona la configurazione cloud che contiene le credenziali dell&#39;account di archiviazione Azure di proprietà del cliente.
