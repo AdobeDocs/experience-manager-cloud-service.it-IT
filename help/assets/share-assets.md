@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 2%
+source-wordcount: '1295'
+ht-degree: 1%
 
 ---
 
@@ -24,27 +24,72 @@ ht-degree: 2%
 
 ## Condividere le risorse come collegamento {#sharelink}
 
-La condivisione delle risorse tramite un collegamento è un modo conveniente per rendere le risorse disponibili a soggetti esterni senza che debbano prima accedere a [!DNL Assets]. Utenti con privilegi di amministratore o con autorizzazioni di lettura all&#39;indirizzo `/var/dam/share` la posizione consente di visualizzare i collegamenti condivisi con i due.
+La condivisione delle risorse tramite un collegamento è un modo conveniente per rendere le risorse disponibili a soggetti esterni senza che debbano accedere a [!DNL Assets]. La funzionalità consente agli utenti anonimi di accedere e scaricare le risorse condivise con loro. Quando gli utenti scaricano risorse dai collegamenti condivisi, [!DNL Assets] utilizza un servizio asincrono che offre download più rapidi e ininterrotti. Le risorse da scaricare vengono messe in coda in background in una casella in entrata in archivi ZIP di dimensioni file gestibili. Per i download molto grandi, il download è raggruppato in file di dimensioni pari a 100 GB.
 
-![Finestra di dialogo Condivisione collegamenti](assets/link-share-dialog.png)
+<!--
+Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
+-->
 
 >[!NOTE]
 >
 >* È necessario modificare l&#39;autorizzazione ACL sulla cartella o sulla risorsa che si desidera condividere come collegamento.
->* Prima di condividere un collegamento con gli utenti, [abilitare le e-mail in uscita](/help/implementing/developing/introduction/development-guidelines.md#sending-email). In caso contrario, si verifica un errore.
+>* [Abilitare le e-mail in uscita](/help/implementing/developing/introduction/development-guidelines.md#sending-email) prima di condividere un collegamento con gli utenti.
 
 
-1. In [!DNL Assets] interfaccia utente, seleziona la risorsa da condividere come collegamento.
-1. Dalla barra degli strumenti, fai clic sul pulsante **[!UICONTROL Condividi collegamento]**. La [!UICONTROL Condivisione collegamenti] viene visualizzata una finestra di dialogo contenente un collegamento di risorsa generato automaticamente nel **[!UICONTROL Condividi collegamento]** campo .
+Esistono due modi per condividere le risorse utilizzando la funzionalità di condivisione dei collegamenti:
+
+1. Generare un collegamento condiviso, [copiare e condividere il collegamento risorsa](#copy-and-share-assets-link) con altri utenti. La scadenza predefinita del collegamento è di un giorno. Non puoi modificare l’ora di scadenza quando condividi il collegamento copiato con altri utenti.
+
+1. Generare un collegamento condiviso e [condividere il collegamento della risorsa tramite e-mail](#share-assets-link-through-email). In questo caso, puoi modificare i valori predefiniti, ad esempio la data e l’ora di scadenza, e consentire il download delle risorse originali e dei relativi rendering. Puoi inviare e-mail a più utenti aggiungendo i loro indirizzi e-mail.
+
+![Finestra di dialogo Condivisione collegamenti](assets/link-sharing-dialog.png)
+
+### Copiare e condividere il collegamento alla risorsa{#copy-and-share-asset-link}
+
+Per condividere le risorse come URL pubblico:
+
+1. Accedi a [!DNL Experience Manager Assets] e passa a **[!UICONTROL File]**.
+1. Seleziona le risorse o la cartella che le contiene. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]**.
+1. La **[!UICONTROL Condivisione collegamenti]** viene visualizzata una finestra di dialogo contenente un collegamento di risorsa generato automaticamente nel **[!UICONTROL Condividi collegamento]** campo .
+1. Copia il collegamento della risorsa e condividetelo con gli utenti.
+
+### Condividi collegamento risorse tramite notifica e-mail {#share-assets-link-through-email}
+
+Per condividere le risorse tramite e-mail:
+
+1. Seleziona le risorse o la cartella che le contiene. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]**.
+1. La **[!UICONTROL Condivisione collegamenti]** viene visualizzata una finestra di dialogo contenente un collegamento di risorsa generato automaticamente nel **[!UICONTROL Condividi collegamento]** campo .
 
    * Nella casella Indirizzo e-mail, digita l’ID e-mail dell’utente con cui vuoi condividere il collegamento. Puoi condividere il collegamento con più utenti. Se l’utente è membro dell’organizzazione, seleziona il proprio ID e-mail dai suggerimenti visualizzati nell’elenco a discesa. Se l’utente è esterno, digita l’ID e-mail completo e premi **[!UICONTROL Invio]**; l’ID e-mail viene aggiunto all’elenco degli utenti.
 
-   * In **[!UICONTROL Oggetto]** Specifica un oggetto per la risorsa da condividere.
+   * In **[!UICONTROL Oggetto]** digitare un oggetto per specificare lo scopo delle risorse condivise.
    * In **[!UICONTROL Messaggio]** digitare un messaggio se necessario.
-   * In **[!UICONTROL Scadenza]** utilizza il selettore data per specificare una data e un’ora di scadenza per il collegamento. Il tempo di scadenza predefinito per il collegamento è un giorno.
+   * In **[!UICONTROL Scadenza]** utilizza il selettore data per specificare una data e un’ora di scadenza per il collegamento.
    * Abilita la **[!UICONTROL Consenti download del file originale]** casella di controllo per consentire ai destinatari di scaricare il rendering originale.
 
 1. Fate clic su **[!UICONTROL Condividi]**. Un messaggio conferma che il collegamento è condiviso con gli utenti. Gli utenti ricevono un’e-mail contenente il collegamento condiviso.
+
+![E-mail di condivisione dei collegamenti](assets/link-sharing-email-notification.png)
+
+### Scaricare le risorse tramite il collegamento alla risorsa
+
+Qualsiasi utente con accesso al collegamento della risorsa condivisa può scaricare le risorse bundle in una cartella zip. Il processo di download è lo stesso, sia che un utente acceda al collegamento della risorsa copiato, sia che utilizzi il collegamento della risorsa condiviso tramite e-mail.
+
+* Fai clic sul collegamento della risorsa o incolla l’URL nel browser. La [!UICONTROL Condivisione collegamenti] si apre l&#39;interfaccia in cui è possibile passare alla [!UICONTROL Vista a schede] o [!UICONTROL Vista a elenco].
+
+* In [!UICONTROL Vista a schede], puoi passare il cursore del mouse sulla risorsa condivisa o sulla cartella di risorse condivise per selezionarle o accodarle per il download.
+
+* Per impostazione predefinita, l’interfaccia utente mostra **[!UICONTROL Scarica casella in entrata]** opzione . Riflette l&#39;elenco di tutte le risorse o cartelle condivise in coda per il download e il loro stato.
+
+* Quando selezioni le risorse o la cartella, un **[!UICONTROL Download della coda]** sullo schermo viene visualizzata l’opzione . Fai clic sul pulsante **[!UICONTROL Download della coda]** per avviare il processo di download.
+
+   ![Download della coda](assets/queue-download.png)
+
+* Durante la preparazione del file di download, fai clic sul pulsante **[!UICONTROL Scarica casella in entrata]** per visualizzare lo stato del download. Per i download di grandi dimensioni, fai clic sul pulsante **[!UICONTROL Aggiorna]** per aggiornare lo stato.
+
+   ![Scarica casella in entrata](assets/link-sharing-download-inbox.png)
+
+* Al termine dell’elaborazione, fai clic sul pulsante **[!UICONTROL Scarica]** per scaricare il file zip.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -146,6 +191,7 @@ Per generare l’URL per le risorse che desideri condividere con gli utenti, uti
 >[!NOTE]
 >
 >Se desideri condividere collegamenti dall’istanza di authoring a entità esterne, accertati di esporre solo i seguenti URL per `GET` richieste. Blocca altri URL per garantire la protezione dell’istanza di authoring.
+>
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`

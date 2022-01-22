@@ -5,9 +5,9 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 797f0e6585666196acf7972f93d936fc54359c4a
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1032'
 ht-degree: 3%
 
 ---
@@ -57,6 +57,10 @@ Asynchronous downloads are triggered in either of the following case:
 
 <!-- Go live is on 27th Jan 2022
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
+
+>[!NOTE]
+>
+>This functionality is available in the Experience Manager prerelease channel.
 
 Asynchronous downloads are triggered in any of the following cases:
 
@@ -114,13 +118,13 @@ Per scaricare le risorse, effettua le seguenti operazioni:
 >This functionality is available in the Experience Manager prerelease channel.
 -->
 
-La condivisione di risorse tramite un collegamento è un modo conveniente per renderle disponibili alle persone interessate senza che queste debbano prima accedere a [!DNL Assets]. Vedi [Funzionalità Condivisione collegamenti](/help/assets/share-assets.md#sharelink).
+La condivisione di risorse tramite un collegamento è un modo conveniente per renderle disponibili alle persone interessate senza che queste debbano accedere a [!DNL Assets]. Vedi [Funzionalità Condivisione collegamenti](/help/assets/share-assets.md#sharelink).
 
 Quando gli utenti scaricano risorse dai collegamenti condivisi, [!DNL Assets] utilizza un servizio asincrono che offre download più rapidi e ininterrotti. Le risorse da scaricare vengono messe in coda in background in una casella in entrata in archivi ZIP di dimensioni file gestibili. Per i download di grandi dimensioni, il download viene suddiviso in file di dimensioni pari a 100 GB.
 
-Nella casella in entrata viene visualizzato lo stato di elaborazione di ciascun archivio. Una volta completata l’elaborazione, puoi scaricare gli archivi dalla casella in entrata.
+La [!UICONTROL Scarica casella in entrata] visualizza lo stato di elaborazione di ciascun archivio. Una volta completata l’elaborazione, puoi scaricare gli archivi dalla casella in entrata.
 
-![Scarica casella in entrata](assets/download-inbox.png)
+![Scarica casella in entrata](assets/link-sharing-download-inbox.png)
 
 ## Abilita il servlet di download delle risorse {#enable-asset-download-servlet}
 
