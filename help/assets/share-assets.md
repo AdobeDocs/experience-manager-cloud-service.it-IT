@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: c74846dc4d4da9fa5050ce7b8ffce7f27e77269b
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1289'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## Condividere le risorse come collegamento {#sharelink}
 
-La condivisione delle risorse tramite un collegamento è un modo conveniente per rendere le risorse disponibili a soggetti esterni senza che debbano accedere a [!DNL Assets]. La funzionalità consente agli utenti anonimi di accedere e scaricare le risorse condivise con loro. Quando gli utenti scaricano risorse dai collegamenti condivisi, [!DNL Assets] utilizza un servizio asincrono che offre download più rapidi e ininterrotti. Le risorse da scaricare vengono messe in coda in background in una casella in entrata in archivi ZIP di dimensioni file gestibili. Per i download molto grandi, il download è raggruppato in file di dimensioni pari a 100 GB.
+La condivisione delle risorse tramite un collegamento è un modo conveniente per rendere le risorse disponibili a soggetti esterni senza che debbano accedere a [!DNL Assets]. La funzionalità consente agli utenti anonimi di accedere e scaricare le risorse condivise con loro. Quando gli utenti scaricano risorse dai collegamenti condivisi, [!DNL Assets] utilizza un servizio asincrono che offre download più rapidi e ininterrotti. Le risorse da scaricare vengono messe in coda in background in una casella in entrata in archivi ZIP di dimensioni file gestibili. Per i download di grandi dimensioni, il download è raggruppato in file da 100 GB.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -38,7 +38,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 Esistono due modi per condividere le risorse utilizzando la funzionalità di condivisione dei collegamenti:
 
-1. Generare un collegamento condiviso, [copiare e condividere il collegamento risorsa](#copy-and-share-assets-link) con altri utenti. La scadenza predefinita del collegamento è di un giorno. Non puoi modificare l’ora di scadenza quando condividi il collegamento copiato con altri utenti.
+1. Generare un collegamento condiviso, [copiare e condividere il collegamento alla risorsa](#copy-and-share-assets-link) con altri utenti. La scadenza predefinita del collegamento è di un giorno. Non puoi modificare l’ora di scadenza quando condividi il collegamento copiato con altri utenti.
 
 1. Generare un collegamento condiviso e [condividere il collegamento della risorsa tramite e-mail](#share-assets-link-through-email). In questo caso, puoi modificare i valori predefiniti, ad esempio la data e l’ora di scadenza, e consentire il download delle risorse originali e dei relativi rendering. Puoi inviare e-mail a più utenti aggiungendo i loro indirizzi e-mail.
 
@@ -49,7 +49,7 @@ Esistono due modi per condividere le risorse utilizzando la funzionalità di con
 Per condividere le risorse come URL pubblico:
 
 1. Accedi a [!DNL Experience Manager Assets] e passa a **[!UICONTROL File]**.
-1. Seleziona le risorse o la cartella che le contiene. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]**.
+1. Seleziona le risorse o la cartella contenente le risorse. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]**.
 1. La **[!UICONTROL Condivisione collegamenti]** viene visualizzata una finestra di dialogo contenente un collegamento di risorsa generato automaticamente nel **[!UICONTROL Condividi collegamento]** campo .
 1. Copia il collegamento della risorsa e condividetelo con gli utenti.
 
@@ -57,7 +57,7 @@ Per condividere le risorse come URL pubblico:
 
 Per condividere le risorse tramite e-mail:
 
-1. Seleziona le risorse o la cartella che le contiene. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]**.
+1. Seleziona le risorse o la cartella contenente le risorse. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]**.
 1. La **[!UICONTROL Condivisione collegamenti]** viene visualizzata una finestra di dialogo contenente un collegamento di risorsa generato automaticamente nel **[!UICONTROL Condividi collegamento]** campo .
 
    * Nella casella Indirizzo e-mail, digita l’ID e-mail dell’utente con cui vuoi condividere il collegamento. Puoi condividere il collegamento con più utenti. Se l’utente è membro dell’organizzazione, seleziona il proprio ID e-mail dai suggerimenti visualizzati nell’elenco a discesa. Se l’utente è esterno, digita l’ID e-mail completo e premi **[!UICONTROL Invio]**; l’ID e-mail viene aggiunto all’elenco degli utenti.
@@ -98,6 +98,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 >[!NOTE]
 >
 >Se una risorsa condivisa viene spostata in una posizione diversa, il relativo collegamento smette di funzionare. Ricrea il collegamento e condividi nuovamente con gli utenti.
+
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -166,7 +167,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## Scaricare e condividere le risorse {#download-and-share-assets}
+## Scaricare le risorse e condividerle separatamente {#download-and-share-assets}
 
 Gli utenti possono scaricare le risorse richieste e condividerle al di fuori di [!DNL Experience Manager]. Per ulteriori informazioni, consulta [come cercare le risorse](/help/assets/search-assets.md), [come scaricare le risorse](/help/assets/download-assets-from-aem.md)e [come scaricare le raccolte](manage-collections.md#download-a-collection)
 
