@@ -2,9 +2,9 @@
 title: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service
 description: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service.
 source-git-commit: a54841ca2e959e885a997b19dd03c6ece3f00d1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1782'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -12,8 +12,8 @@ ht-degree: 82%
 
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
->title="Introduzione a AEM as a Cloud Service Architecture"
->abstract="In questa scheda, puoi visualizzare la nuova architettura di AEM come Cloud Service e comprendere le modifiche. AEM è stata creata un’architettura dinamica con un numero variabile di immagini, pertanto è importante prendere il tempo necessario per comprendere l’architettura cloud"
+>title="Introduzione all’architettura di AEM as a Cloud Service"
+>abstract="In questa scheda puoi visualizzare la nuova architettura di AEM as a Cloud Service e comprendere le modifiche apportate. Per AEM è stata creata un’architettura dinamica con un numero variabile di immagini, pertanto è importante prendere il tempo necessario per comprenderne l’architettura cloud"
 >additional-url="https://video.tv.adobe.com/v/330542/" text="Panoramica dell’architettura"
 
 
@@ -68,7 +68,7 @@ La scalabilità delle istanze per tenant del servizio può avvenire in modo auto
 
 AEM as a Cloud Service è disponibile come istanza singola, dove ogni istanza rappresenta un ambiente AEM completo.
 
-Sono disponibili tre tipi di ambienti con AEM come Cloud Service:
+Con AEM as a Cloud Service sono disponibili tre tipi di ambienti:
 
 * **Ambiente di produzione**: ospita le applicazioni utilizzate dagli utenti business.
 
@@ -76,7 +76,7 @@ Sono disponibili tre tipi di ambienti con AEM come Cloud Service:
 
 * **Ambiente di sviluppo**: consente agli sviluppatori di implementare le applicazioni AEM nelle medesime condizioni di esecuzione degli ambienti di stage e produzione.
 
-   Per ulteriori informazioni, consulta [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) .
+   Fai riferimento a [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=it#using-cloud-manager) per ulteriori dettagli.
 
 ## Programmi {#programs}
 
@@ -98,7 +98,7 @@ Per AEM as a Cloud Service, inizialmente sono disponibili due tipi di programmi:
 
 * AEM Cloud Assets Service
 
-Entrambi consentono l’accesso a una serie di funzioni e funzionalità. Il livello di authoring conterrà tutte le funzionalità Sites e Assets per tutti i programmi, ma per impostazione predefinita i programmi Assets non avranno un livello di pubblicazione né un livello di anteprima.
+Entrambi consentono l’accesso a una serie di funzioni e funzionalità. Il livello di authoring contiene tutte le funzionalità di Sites e Risorse per tutti i programmi, ma i programmi delle risorse non avranno per impostazione predefinita un livello di pubblicazione né di anteprima.
 
 ## Architettura runtime {#runtime-architecture}
 
@@ -130,15 +130,15 @@ Questa nuova architettura presenta diversi componenti principali:
 
    * L’architettura include solo un ambiente di authoring.
 
-* Sia il livello di authoring che il livello di anteprima e il livello di pubblicazione leggono e persistono i contenuti da/verso un servizio Content Repository.
+* Sia il livello di authoring, livello di anteprima, che quello di pubblicazione leggono e rendono persistente i contenuti da/a un servizio di archiviazione dei contenuti.
 
    * Il livello di pubblicazione e il livello di anteprima leggono i contenuti solo dal livello di persistenza.
 
    * Il livello di authoring legge e scrive i contenuti da e verso il livello di persistenza.
 
-   * L’archiviazione BLOB è condivisa tra i livelli di pubblicazione, anteprima e authoring; i file non sono *spostati*.
+   * L’archiviazione BLOB è condivisa tra il livello di pubblicazione, anteprima e authoring. I file non vengono *moved*.
 
-   * Quando il contenuto viene approvato dal livello di authoring, ciò indica che può essere attivato, quindi inviato al livello di persistenza del livello di pubblicazione; o facoltativamente al livello di anteprima. Ciò avviene tramite il servizio di replica, una pipeline middleware. Questa pipeline riceve il nuovo contenuto; i singoli nodi del servizio di pubblicazione (o servizio di anteprima) si abbonano al contenuto inviato alla pipeline.
+   * Quando il contenuto viene approvato dal livello di authoring, ciò indica che può essere attivato e quindi inviato al livello di persistenza del livello di pubblicazione (oppure al livello di anteprima). Ciò avviene tramite il servizio di replica, una pipeline middleware. Questa pipeline riceve il nuovo contenuto: i singoli nodi del servizio di pubblicazione (o servizio di anteprima) si abbonano al contenuto inviato alla pipeline.
 
       >[!NOTE]
       >
@@ -148,15 +148,15 @@ Questa nuova architettura presenta diversi componenti principali:
 
    * L’accesso ai livelli di authoring e pubblicazione avviene sempre tramite un load balancer, che è sempre aggiornato con i nodi attivi in ciascuno dei livelli.
 
-   * Per il livello di pubblicazione e il livello di anteprima, come primo punto di ingresso è disponibile anche un servizio CDN (Continuous Delivery Network).
+   * Per il livello di pubblicazione e di anteprima, come primo punto di ingresso è disponibile anche un servizio CDN (Continuous Delivery Network).
 
 * Per le istanze dimostrative di AEM as a Cloud Service, l’architettura viene semplificata a un singolo nodo di authoring. Pertanto non presenta tutte le caratteristiche dell’ambiente di sviluppo, stage o produzione standard. In altre parole, possono anche verificarsi tempi di inattività e non è incluso il supporto di operazioni di backup e ripristino.
 
 ## Architettura di distribuzione {#deployment-architecture}
 
-Cloud Manager gestisce tutti gli aggiornamenti alle istanze di AEM as a Cloud Service. È obbligatorio, essendo l’unico modo per creare, testare e distribuire l’applicazione del cliente, sia per i livelli di authoring, anteprima e pubblicazione. Questi aggiornamenti possono essere attivati da Adobe quando è pronta una nuova versione di AEM Cloud Service oppure dal cliente stesso, quando è pronta una nuova versione della sua applicazione.
+Cloud Manager gestisce tutti gli aggiornamenti alle istanze di AEM as a Cloud Service. È una scelta obbligatoria, essendo l’unica soluzione per creare, testare e distribuire l’applicazione del cliente, sia per il livello di authoring che per quello di pubblicazione. Questi aggiornamenti possono essere attivati da Adobe quando è pronta una nuova versione di AEM Cloud Service oppure dal cliente stesso, quando è pronta una nuova versione della sua applicazione.
 
-Tecnicamente, l’implementazione avviene grazie al concetto di pipeline di distribuzione, associata a ogni ambiente presente all’interno di un programma. Quando una pipeline di Cloud Manager è in esecuzione, crea una nuova versione dell’applicazione del cliente, sia per i livelli di authoring, anteprima e pubblicazione. Tale risultato si ottiene combinando gli ultimi pacchetti cliente con la più recente immagine linea di base di Adobe. Quando le nuove immagini vengono create e testate correttamente, Cloud Manager automatizza completamente il cutover alla versione più recente dell’immagine tramite l’aggiornamento di tutti i nodi del servizio, secondo uno schema di aggiornamento in sequenza. Ciò non comporta tempi di inattività né per il servizio di authoring né per quello di pubblicazione.
+Tecnicamente, l’implementazione avviene grazie al concetto di pipeline di distribuzione, associata a ogni ambiente presente all’interno di un programma. Quando una pipeline di Cloud Manager è in esecuzione, crea una nuova versione dell’applicazione del cliente per il livello di authoring, anteprima e pubblicazione. Tale risultato si ottiene combinando gli ultimi pacchetti cliente con la più recente immagine linea di base di Adobe. Quando le nuove immagini vengono create e testate correttamente, Cloud Manager automatizza completamente il cutover alla versione più recente dell’immagine tramite l’aggiornamento di tutti i nodi del servizio, secondo uno schema di aggiornamento in sequenza. Ciò non comporta tempi di inattività né per il servizio di authoring né per quello di pubblicazione.
 
 <!--- needs reworking -->
 
