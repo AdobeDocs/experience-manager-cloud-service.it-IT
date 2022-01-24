@@ -3,9 +3,9 @@ title: Supporto IMS per Adobe Experience Manager as a Cloud Service
 description: Supporto IMS per Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2022'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 90%
 
 >[!TIP]
 >
->Consulta il nostro corso di Experience League [Configurare l’accesso alle AEM per gli amministratori](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) per un’introduzione al modo in cui gli utenti si autenticano utilizzando Adobe IMS per AEM as a Cloud Service e al modo in cui gli utenti Adobe IMS, i gruppi di utenti e i profili di prodotto vengono utilizzati per controllare l’accesso alle AEM e alle relative funzioni e funzionalità. Adobe ID richiesto.
+>Consulta il corso Experience League [Configurare l’accesso a AEM per gli amministratori](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem&amp;lang=it) per un’introduzione al modo in cui gli utenti si autenticano utilizzando Adobe IMS per AEM as a Cloud Service e al modo in cui gli utenti, i gruppi di utenti e i profili di prodotto Adobe IMS vengono utilizzati per controllare l’accesso a AEM e alle relative funzioni e funzionalità. Adobe ID richiesto.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ L’API User Management utilizzata dallo strumento User Sync viene descritta [qu
 >
 >La configurazione di AEM IMS richiesta verrà impostata automaticamente durante il provisioning degli ambienti e delle istanze di AEM. Tuttavia, l’amministratore può modificarla in base alle proprie esigenze utilizzando il metodo descritto [qui](/help/implementing/deploying/overview.md).
 
-La configurazione di AEM IMS richiesta verrà impostata automaticamente durante il provisioning degli ambienti e delle istanze di AEM.  Gli amministratori dei clienti possono modificare parte della configurazione in base alle proprie esigenze.
+La configurazione di AEM IMS richiesta verrà impostata automaticamente durante il provisioning degli ambienti e delle istanze di AEM. Gli amministratori dei clienti possono modificare parte della configurazione in base alle proprie esigenze.
 
 L’approccio generale consiste nel configurare Adobe IMS come provider OAuth. È possibile modificare il **gestore di sincronizzazione predefinito Apache Jackrabbit Oak** in modo analogo alla sincronizzazione LDAP.
 
@@ -132,7 +132,7 @@ Di seguito sono descritte le configurazioni OSGI principali da modificare per ca
 
 ### Gestione dei prodotti e dell’accesso utente in Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Quando l’amministratore di prodotto accede all’Admin Console, visualizzerà più istanze del contesto di prodotto as a Cloud Service AEM, come mostrato di seguito. Ad esempio, seleziona uno dei prodotti dalla pagina **Panoramica** :
+Quando l’amministratore di prodotto accede ad Admin Console, visualizza più istanze del contesto di prodotto di AEM as a Cloud Service, come mostrato di seguito. Ad esempio, seleziona uno dei prodotti dalla pagina **Panoramica**:
 
 ![Accesso alle istanze](/help/security/assets/ims6.png)
 
@@ -140,7 +140,7 @@ Verrà visualizzato un elenco delle istanze esistenti:
 
 ![Accesso alle istanze 2](/help/security/assets/ims7.png)
 
-In ogni istanza del contesto di prodotto, ci saranno istanze che si estendono sui servizi Author o Publish in ambienti di produzione, stage o sviluppo. Ogni istanza sarà associata ai ruoli di Product Profiles o Cloud Manager. Questi profili di prodotto vengono utilizzati per assegnare l’accesso a Utenti e gruppi con i privilegi richiesti.
+In ogni istanza del contesto di prodotto, ci saranno istanze che si estendono sui servizi di authoring o pubblicazione in ambienti di produzione, stage o sviluppo. Ogni istanza sarà associata ai ruoli di Product Profiles o Cloud Manager. che vengono utilizzati per assegnare a utenti e gruppi l’accesso con il privilegio richiesto.
 
 Il profilo **Administrator_xxx** verrà utilizzato per concedere privilegi di amministratore nell’istanza di AEM associata, mentre il profilo **User_xxx** viene utilizzato per aggiungere utenti normali.
 
@@ -167,7 +167,7 @@ Per altri utenti, è possibile utilizzare l’accesso basato su IMS dopo che IMS
 
 >[!NOTE]
 >
->Per la creazione di qualsiasi utente in IMS è possibile utilizzare un Adobe ID o un Federated ID. Se un utente viene configurato utilizzando il Federated ID, per l&#39;accesso viene eseguito l&#39;autenticazione tramite il provider di identità della propria azienda.
+>Per la creazione di qualsiasi utente in IMS è possibile utilizzare un Adobe ID o un Federated ID. Se un utente viene configurato utilizzando Federated ID, l’autenticazione per l’accesso viene effettuata tramite il provider di identità della sua azienda.
 
 Verrà quindi reindirizzato alla schermata di accesso di IMS e dovrà immettere le proprie credenziali:
 
@@ -213,7 +213,7 @@ Per poter accedere a Cloud Manager o AEM as a Cloud Service, l’utente deve ess
 Per ulteriori informazioni sui ruoli degli utenti che determinano la disponibilità di funzionalità specifiche in Cloud Manager, consulta le definizioni dei ruoli.
 
 >[!NOTE]
->Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. Per informazioni su ciascuno dei ruoli con autorizzazioni specifiche, attività preconfigurate o autorizzazioni associate a ogni ruolo, fai riferimento alla descrizione delle [autorizzazioni basate sul ruolo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. Per informazioni su ciascuno dei ruoli con autorizzazioni specifiche, attività preconfigurate o autorizzazioni associate a ogni ruolo, fai riferimento alla descrizione delle [autorizzazioni basate sul ruolo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=it).
 
 **Procedura per aggiungere un utente**
 
