@@ -10,9 +10,9 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 3023fda4543328a0feda259ca58adb95fa4b1317
+source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,13 @@ ht-degree: 0%
 >
 >La funzione per creare un account alias di un&#39;azienda Dynamic Media si trova nel Canale prerelease per gennaio 2022. Questa funzione sarà generalmente disponibile nella versione di febbraio 2022.
 
-Gli URL Dynamic Media e il codice di incorporamento del visualizzatore contengono il nome dell&#39;account aziendale. Questo nome account è stato creato al momento del provisioning di Dynamic Media. Ci possono essere scenari in cui la tua azienda ha subito un&#39;acquisizione, o un rebranding, o semplicemente vuoi usare un nome più memorabile. In tali scenari, non è facile aggiornare manualmente il nome dell’account dell’azienda in tutti gli URL e il codice di incorporamento del visualizzatore che viene fuori dalla scatola. Inoltre, puoi avere un impatto sull’archivio Dynamic Media esistente o sul contenuto live. Per risolvere il problema, puoi configurare un account alias società Dynamic Media.
+Gli URL Dynamic Media e il codice di incorporamento del visualizzatore contengono il nome dell&#39;account aziendale. Questo nome account è stato creato al momento del provisioning di Dynamic Media. Ci possono essere scenari in cui la tua azienda ha subito un&#39;acquisizione, o un rebranding, o semplicemente vuoi usare un nome più memorabile. In tali scenari, non è facile aggiornare manualmente il nome dell’account dell’azienda in tutti gli URL e il codice di incorporamento del visualizzatore che viene fuori dalla scatola. Inoltre, è possibile che tu possa avere un impatto sull’archivio Dynamic Media esistente o sui contenuti live. Per risolvere il problema, puoi configurare un account alias società Dynamic Media.
 
 Un account alias di un’azienda Dynamic Media garantisce che tutti gli URL Dynamic Media predefiniti e il codice da incorporare del visualizzatore nell’interfaccia utente riflettano eventuali aggiornamenti apportati al contesto aziendale, ad esempio il rebranding. Un account alias ha anche un impatto positivo sul tuo SEO (Search Engine Optimization) perché gli URL di Dynamic Media e il codice di incorporamento del visualizzatore riflettono il nome del nuovo account aziendale.
 
 Quando configuri un account alias società Dynamic Media, tieni presente quanto segue:
 
+* Quando configuri un account alias società nel **[!UICONTROL Modifica configurazione Dynamic Media]** per il corretto annullamento della validità della validità della cache, è necessario annullare la validità degli URL per *entrambi* la **[!UICONTROL Azienda]** e **[!UICONTROL Alias società]** account, simultaneamente.
 * Eventuali URL Dynamic Media o codice di incorporamento visualizzatore esistenti sul tuo *live* le proprietà digitali devono essere aggiornate manualmente per riflettere il nuovo nome di alias. Tuttavia, qualsiasi URL o codice da incorporare dei visualizzatori con il nome della società Dynamic Media originale continua a funzionare per le risorse esistenti o nuove.
 * La funzionalità dell’account alias dell’azienda Dynamic Media è limitata alla modalità di authoring e di consegna Experience Manager Assets. Il nome alias della società non funziona con Experience Manager Sites. I componenti WCM (Web Content Management) non vengono aggiornati per questa modifica. Questi componenti continuano a funzionare con il nome originale dell’azienda Dynamic Media per recuperare le risorse Dynamic Media.
 * È possibile impostare un solo account alias società nel **[!UICONTROL Modifica configurazione Dynamic Media]** pagina. Tuttavia, puoi creare un numero illimitato di account alias aziendali tramite un caso di supporto e riflettere manualmente il nome alias necessario negli URL Dynamic Media o nel codice di incorporamento del visualizzatore.
