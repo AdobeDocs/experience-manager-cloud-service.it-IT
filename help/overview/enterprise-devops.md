@@ -2,14 +2,14 @@
 title: DevOps aziendale
 description: Scopri i processi, i metodi e la comunicazione necessari per semplificare l’implementazione e la collaborazione.
 source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1001'
 ht-degree: 100%
 
 ---
 
 
-# Reparti DevOps aziendali{#enterprise-devops}
+# DevOps aziendale {#enterprise-devops}
 
 La metodologia DevOps tratta i processi, i metodi e la comunicazione necessari per:
 
@@ -33,7 +33,7 @@ Adobe Experience Manager (AEM) as a Cloud Service in genere è costituito da pi�
 
 >[!NOTE]
 >
->L’ambiente di produzione deve avere almeno un ambiente di authoring e e uno di pubblicazione.
+>L’ambiente di produzione deve avere almeno un ambiente di authoring e uno di pubblicazione.
 >
 >È consigliabile che anche tutti gli altri ambienti siano composti da un ambiente di authoring e uno di pubblicazione, in modo da riflettere l’ambiente di produzione e consentire di eseguire test in anticipo.
 
