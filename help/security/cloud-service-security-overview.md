@@ -1,19 +1,18 @@
 ---
-title: AEM come panoramica sulla sicurezza di Cloud Service
-description: AEM come panoramica sulla sicurezza di Cloud Service
-translation-type: tm+mt
-source-git-commit: 75d9e5817448489790cc0e4004db59e0f330af71
-workflow-type: tm+mt
+title: Panoramica sulla sicurezza di AEM as a Cloud Service
+description: Panoramica sulla sicurezza di AEM as a Cloud Service
+exl-id: 19b123de-5db5-4fa8-81ec-e5438fed3f7f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+workflow-type: ht
 source-wordcount: '105'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-
-# Panoramica sulla protezione per AEM come Cloud Service {#cloud-service-security-overview}
+# Panoramica sulla sicurezza per AEM as a Cloud Service {#cloud-service-security-overview}
 
 ## Introduzione {#introduction}
 
-AEM come approccio proattivo del Cloud Service alla sicurezza e a procedure rigorose contribuisce a proteggere la sicurezza del AEM come soluzione Cloud Service e dati riservati del cliente. La sicurezza dell&#39;esperienza digitale viene costantemente monitorata per essere al passo con le attività dannose e per garantire la sicurezza dei dati dei clienti.
+L’approccio proattivo di AEM as a Cloud Service alla sicurezza e le procedure rigorose contribuiscono a proteggere la sicurezza della soluzione AEM as a Cloud Service e dei dati riservati dei clienti. La sicurezza dell’esperienza digitale viene costantemente monitorata per stare al passo con le attività dannose e contribuire a garantire la sicurezza dei dati dei clienti.
 
-Per una panoramica approfondita delle AEM come Cloud Service di sicurezza, consultare il documento [Cloud Service Security](https://www.adobe.com/content/dam/cc/en/security/pdfs/AEMCloudService_Security_Overview.pdf) di Adobe Experience Manager.
+Fai riferimento al white paper di [Adobe Experience Manager Cloud Service Security](https://www.adobe.com/content/dam/cc/en/security/pdfs/AEMCloudService_Security_Overview.pdf) per una panoramica approfondita della sicurezza in AEM as a Cloud Service.
