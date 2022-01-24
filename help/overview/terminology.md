@@ -3,9 +3,9 @@ title: Introduzione ad Adobe Experience Manager as a Cloud Service - Terminologi
 description: Introduzione ad Adobe Experience Manager as a Cloud Service - Terminologia.
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ I termini seguenti sono utilizzati in riferimento ad Adobe Experience Manager (A
 |---|---|
 | Pipeline Adobe | Meccanismo di pubblicazione dei contenuti dall’ambiente di authoring a quello di pubblicazione. |
 | Livello di authoring AEM | Riferito all’ambiente di authoring per Sites e Assets. |
-| Livello anteprima AEM | Descrive l’ambiente di anteprima per Sites. |
+| Livello anteprima AEM | Descriva l’ambiente di anteprima per Sites. |
 | Livello di pubblicazione AEM | Riferito all’ambiente di pubblicazione per Sites. |
 
 
