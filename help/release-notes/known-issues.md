@@ -3,17 +3,17 @@ title: Problemi noti
 description: Problemi noti con Adobe Experience Manager as a Cloud Service
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '111'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
 # Problemi noti {#known-issues}
 
-Questo articolo elenca i problemi noti di [!DNL Adobe Experience Manager] come [!DNL Cloud Service] offerta. L’elenco viene rivisto e aggiornato a ogni versione di [!DNL Experience Manager].
+In questo articolo sono elencati i problemi noti relativi all’offerta [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. L’elenco viene rivisto e aggiornato a ogni versione di [!DNL Experience Manager].
 
-Per ulteriori informazioni sui problemi noti, [contatta il supporto](https://experienceleague.adobe.com/?lang=en&amp;support-solution=Experience+Manager#support).
+Per ulteriori informazioni sui problemi noti, [contatta il supporto](https://experienceleague.adobe.com/?lang=it&amp;support-solution=Experience+Manager#support).
 
 <!-- 
 ## Platform {#platform}
@@ -25,9 +25,9 @@ Per ulteriori informazioni sui problemi noti, [contatta il supporto](https://exp
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-Alcuni problemi noti in [!DNL Assets] sono:
+Alcuni problemi noti in [!DNL Assets] includono:
 
-* **Scarica**: Se si scarica una cartella vuota, [!DNL Experience Manager] trasmette un messaggio di successo sulla creazione di un archivio ZIP, ma l’archivio non viene creato.
+* **Download**: se si scarica una cartella vuota, [!DNL Experience Manager] trasmette un messaggio di operazione riuscita della creazione di un archivio ZIP, ma l’archivio non viene creato.
 
 * **Schema metadati**: il widget di valutazione delle risorse causava un errore di compilazione JSP. È stato rimosso dallo schema metadati. <!-- CQ-4282865, CQ-4284633 -->
 
@@ -50,7 +50,7 @@ A few capabilities of Adobe Experience Manager Assets that depend on foundation 
 
 >[!MORELIKETHIS]
 >
->* [Modifiche principali apportate a [!DNL Experience Manager]](aem-cloud-changes.md)
+>* [Modifiche principali [!DNL Experience Manager]](aem-cloud-changes.md)
 >* [Funzioni obsolete e rimosse](deprecated-removed-features.md)
 >* [Note sulla versione](home.md)
 
