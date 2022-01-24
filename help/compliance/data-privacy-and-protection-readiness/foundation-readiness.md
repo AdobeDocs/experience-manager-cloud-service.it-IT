@@ -1,11 +1,11 @@
 ---
 title: Normative sulla protezione dei dati e la privacy dei dati - Preparazione di Adobe Experience Manager as a Cloud Service Foundation
-description: Scopri il supporto di Adobe Experience Manager as a Cloud Service Foundation per le varie normative su privacy e protezione dei dati; incluso il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi all’implementazione di un nuovo AEM come progetto di Cloud Service.
+description: Scopri il supporto di Adobe Experience Manager as a Cloud Service Foundation per le varie normative su privacy e protezione dei dati, incluso il Regolamento generale sulla protezione dei dati (GDPR) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi all’implementazione di un nuovo progetto AEM as a Cloud Service.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
@@ -19,29 +19,29 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla risposta del Adobe ai problemi di privacy e sulle conseguenze per i clienti di Adobe, consulta [Centro per la privacy di Adobe](https://www.adobe.com/privacy.html).
+>Per ulteriori informazioni sulla risposta di Adobe ai problemi di privacy e sulle conseguenze per i clienti di Adobe, consulta [Centro privacy di Adobe](https://www.adobe.com/it/privacy.html).
 
 ## Supporto per la privacy e la protezione dei dati di AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
-A livello di AEM Foundation, i Dati Personali memorizzati vengono memorizzati nel Profilo utente. Pertanto, le informazioni contenute in questo articolo riguardano principalmente come accedere e eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso e di cancellazione.
+A livello di AEM Foundation, i dati personali memorizzati vengono mantenuti nel Profilo utente. Pertanto, le informazioni contenute in questo articolo riguardano principalmente come accedere ed eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso e di cancellazione.
 
 ## Accesso a un profilo utente {#accessing-a-user-profile}
 
 ### Passaggi manuali {#manual-steps}
 
-1. Apri la console User Administration passando a **[!UICONTROL Strumenti - Sicurezza - Utenti]** o sfogliando direttamente a `https://<serveraddress>:<serverport>/security/users.html`
+1. Apri la console di amministrazione degli utenti navigando su **[!UICONTROL Strumenti - Sicurezza - Utenti]** o navigando direttamente in `https://<serveraddress>:<serverport>/security/users.html`
 
 <!--
    ![useradmin2](assets/useradmin2.png)
 -->
 
-1. Quindi, cerca l&#39;utente in questione digitando il nome nella barra di ricerca nella parte superiore della pagina:
+1. Quindi, cerca l’utente in questione digitando il nome nella barra di ricerca nella parte superiore della pagina:
 
    ![cerca account](assets/dpp-foundation-01.png)
 
-1. Infine, apri il profilo utente facendo clic su di esso, quindi seleziona la scheda **[!UICONTROL Dettagli]** .
+1. Infine, apri il profilo utente facendo clic su di esso, quindi seleziona la scheda **[!UICONTROL Dettagli]**.
 
-   ![profilo utente](assets/dpp-foundation-02.png)
+   ![Profilo utente](assets/dpp-foundation-02.png)
 
 ### API HTTP {#http-api}
 
@@ -64,7 +64,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **Recupero dati utente:**
 
-Utilizzando il percorso del nodo dalla proprietà home del payload JSON restituito dal comando precedente:
+Utilizzo del percorso del nodo dalla proprietà home del payload JSON restituito dal comando precedente:
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -79,23 +79,23 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Disattiva utente {#disable-user}
 
 1. Apri la console User Administration e cerca l’utente in questione, come descritto sopra.
-2. Passa il puntatore del mouse sull’utente e fai clic sull’icona di selezione . Il profilo diventa grigio e indica che è selezionato.
+2. Passa il puntatore del mouse sull’utente e fai clic sull’icona di selezione. Il profilo diventa grigio e indica che è selezionato.
 
-3. Premere il tasto **Disattiva** nel menu superiore per disabilitare l&#39;utente:
+3. Premi il pulsante **Disattiva** nel menu superiore per disabilitare l’utente:
 
    ![disattiva account](assets/dpp-foundation-03.png)
 
 4. Infine, conferma l’azione.
 
-   L’interfaccia utente indica quindi che l’account utente è stato disattivato disattivandolo in grigio e aggiungendo un blocco alla scheda del profilo:
+   L’interfaccia utente indica quindi che l’account utente è stato disattivato togliendo il grigio e aggiungendo un blocco alla scheda del profilo:
 
    ![account disabilitato](assets/dpp-foundation-04.png)
 
-### Elimina informazioni sul profilo utente {#delete-user-profile-information}
+### Eliminare informazioni sul profilo utente {#delete-user-profile-information}
 
 >[!NOTE]
 >
->Per AEM come Cloud Service non è disponibile alcuna procedura manuale dall’interfaccia utente per l’eliminazione di un profilo utente, in quanto CRXDE non è accessibile.
+>Per AEM as a Cloud Service non è disponibile alcuna procedura manuale dall’interfaccia utente per l’eliminazione di un profilo utente, in quanto CRXDE non è accessibile.
 
 ### API HTTP {#http-api-1}
 
@@ -108,9 +108,9 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-**Disabilitazione dell&#39;utente:**
+**Disabilitazione dell’utente:**
 
-Utilizzando il percorso del nodo dalla proprietà home del payload JSON restituito dal comando precedente:
+Utilizzo del percorso del nodo dalla proprietà home del payload JSON restituito dal comando precedente:
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
@@ -118,7 +118,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 **Eliminazione dei profili utente**
 
-Utilizzando il percorso del nodo dalla proprietà home del payload JSON restituito dal comando di individuazione account e dalle posizioni note dei nodi del profilo predefinite:
+Utilizzo del percorso del nodo dalla proprietà home del payload JSON restituito dal comando di individuazione account e dalle posizioni note dei nodi del profilo predefinite:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
