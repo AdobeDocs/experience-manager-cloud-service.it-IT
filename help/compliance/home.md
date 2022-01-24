@@ -1,17 +1,17 @@
 ---
 title: Conformità
-description: In questa pagina sono elencate le risorse di supporto autonomo che forniscono informazioni sulla conformità nell’Experience Manager as a Cloud Service.
+description: In questa pagina sono elencate le risorse di supporto autonomo che forniscono informazioni sulla conformità in Experience Manager as a Cloud Service.
 landing-page-description: Inizia qui per una panoramica sulla conformità in AEM as a Cloud Service, comprensiva di privacy e accessibilità.
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Conformità in AEM as a Cloud Service {#aem-compliance}
 
-In questa pagina sono elencate le risorse di supporto autonomo che forniscono informazioni sulla conformità nell’Experience Manager as a Cloud Service.
+In questa pagina sono elencate le risorse di supporto autonomo che forniscono informazioni sulla conformità in Experience Manager as a Cloud Service.
 
 ## Articoli principali sulla panoramica {#key-articles}
 
@@ -31,8 +31,8 @@ In questa pagina sono elencate le risorse di supporto autonomo che forniscono in
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Informazioni su come creare con, e amministrare, Experience Manager Sites as a Cloud Service. |
 | [Guida utente di Assets](/help/assets/home.md) | Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service. |
 | [Passaggio ad AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Comprendi il percorso di transizione verso Cloud Service. |
-| [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando AEM potenti funzionalità esplorando questi argomenti relativi allo sviluppo e alla distribuzione. |
-| [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Esplora questo percorso guidato attraverso le potenti e flessibili funzionalità di AEM per prepararsi al tuo primo progetto headless. |
+| [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando le potenti funzionalità di AEM ed esplorando questi argomenti relativi allo sviluppo e alla distribuzione. |
+| [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Esplora questo percorso guidato attraverso le potenti e flessibili funzionalità di AEM per prepararti al tuo primo progetto headless. |
 | [Guida utente dei connettori](/help/connectors/home.md) | Questa guida contiene informazioni su come integrare i connettori in Experience Manager as a Cloud Service. |
 | [Guida utente sulle operazioni](/help/operations/home.md) | Questa guida contiene informazioni sulle operazioni back-end di Experience Manager as a Cloud Service, ad esempio le attività di indicizzazione e manutenzione. |
 | [Guida utente di Commerce](/help/commerce-cloud/home.md) | Scopri Commerce Integration Framework in AEM as a Cloud Service. |
