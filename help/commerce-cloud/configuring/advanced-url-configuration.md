@@ -1,6 +1,6 @@
 ---
 title: Configurazioni URL avanzate
-description: Scopri come personalizzare gli URL per le pagine di prodotti e categorie. This allows implementations to optimize URLs for search engines and promote discovery.
+description: Scopri come personalizzare gli URL per le pagine di prodotti e categorie. Questo consente alle implementazioni di ottimizzare gli URL per i motori di ricerca e promuovere l’individuazione.
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 78fa346cd2d6ed64c9700b7b2e611db58f7b3d11
+source-git-commit: 8c3a1366d076c009262eeab8129e4e589dc4f7c5
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2046'
 ht-degree: 17%
 
 ---
@@ -33,7 +33,7 @@ Per configurare le `UrlProvider` servizio in base ai requisiti e alle esigenze S
 
 >[!NOTE]
 >
-> Since release 2.0.0 of the AEM CIF Core Components, the URL Provider configuration only provides pre-defined URL formats, instead of the free-text configureable formats known from 1.x releases. Furthermore the use of selectors to pass data in URLs has been replaced with suffixes.
+> A partire dalla versione 2.0.0 dei componenti core CIF di AEM, la configurazione del provider URL fornisce solo formati URL predefiniti, invece dei formati configurabili in testo libero noti dalle versioni 1.x. Inoltre, l’uso dei selettori per trasmettere dati negli URL è stato sostituito con suffissi.
 
 ### Formato URL pagina di prodotto {#product}
 
@@ -59,7 +59,7 @@ Dal momento che `url_path` obsoleti, i formati URL di prodotto predefiniti utili
 
 Con i dati di esempio di cui sopra, un URL di variante del prodotto formattato utilizzando il formato URL predefinito sarà simile a `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
-### Category Page URL Format {#product-list}
+### Formato URL pagina categoria {#product-list}
 
 Consente di configurare gli URL delle pagine di elenchi di prodotti o categorie e supporta le seguenti opzioni:
 
@@ -76,7 +76,7 @@ Con i dati di esempio di cui sopra, un URL di pagina di categoria formattato uti
 
 >[!NOTE]
 > 
-> La `url_path` è una concatenazione di `url_keys` di un prodotto o di una categoria e del prodotto o della categoria `url_key` separato da `/` slash. Each `url_key` is considered unique within a given store.
+> La `url_path` è una concatenazione di `url_keys` di un prodotto o di una categoria e del prodotto o della categoria `url_key` separato da `/` slash. Ogni `url_key` è considerato univoco all&#39;interno di un determinato archivio.
 
 ### Configurazione specifica per l&#39;archivio {#store-specific-urlformats}
 
@@ -84,13 +84,13 @@ I formati di URL per le pagine di prodotti e le categorie di sistema impostati d
 
 Nella configurazione CIF, un editor può selezionare un formato URL di pagina di prodotto o categoria alternativo. Se non viene selezionato nulla, l&#39;implementazione si basa sulla configurazione a livello di sistema.
 
-La modifica del formato URL di un sito web live può avere un impatto negativo sul traffico organico del sito. Please refer to the [Best Practices](#best-practices) below and carefully plan the change of the URL format in advance.
+La modifica del formato URL di un sito web live può avere un impatto negativo sul traffico organico del sito. Fai riferimento alla [Best practice](#best-practices) di seguito e pianifica attentamente la modifica del formato dell’URL in anticipo.
 
 ![Formati URL nella configurazione CIF](assets/store-specific-url-formats.png)
 
 >[!NOTE]
 >
-> The store specific configuration of the URL formats require [CIF Core Components 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) and the latest version of the Adobe Experience Manager Content and Commerce add-on.
+> La configurazione specifica dell’archivio dei formati URL richiede [Componenti core CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) e la versione più recente del componente aggiuntivo Contenuto e Commerce di Adobe Experience Manager.
 
 ## URL di prodotto in base alle categorie {#context-aware-pdps}
 
@@ -161,7 +161,7 @@ La selezione di una pagina di categoria specifica è diretta in avanti, in base 
 Le pagine di prodotto specifiche vengono selezionate in base allo SKU o alla categoria del prodotto. In seguito, alcune informazioni sulla categoria devono essere codificate nell’URL del prodotto. Questa funzione è disponibile solo per alcuni dei formati URL predefiniti. Fai riferimento alla tabella seguente per un confronto tra il formato URL che supporta una selezione specifica di pagina per SKU o categoria.
 
 
-| Formato URL | by sku | per categoria |
+| Formato URL | da sku | per categoria |
 | ----------------------------------------------------- | ------ | ---------------- |
 | `{{page}}.html/{{url_key}}.html` | no | no |
 | `{{page}}.html/{{category}}/{{url_key}}.html` | no | solo corrispondenza esatta |
@@ -171,21 +171,23 @@ Le pagine di prodotto specifiche vengono selezionate in base allo SKU o alla cat
 | `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | sì | solo corrispondenza esatta |
 | `{{page}}.html/{{sku}}/{{url_path}}.html` | sì | sì |
 
+{style=&quot;table-layout:auto&quot;}
+
 >[!NOTE]
 >
-> Selecting specific product pages by category requires [CIF Core Components 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) or newer.
+> La selezione di specifiche pagine di prodotto per categoria richiede [Componenti core CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) o più recente.
 
 ### Collegamento profondo {#specific-pages-deep-linking}
 
-The `UrlProvider` is pre-configured to generate deep links to specific category and product pages on author tier instances. This is useful to editors, that browse a site using Preview mode, navigate to a specific product or category page and switch back to Edit mode to edit the page.
+La `UrlProvider` è preconfigurato per generare collegamenti profondi a specifiche pagine di prodotti e categorie nelle istanze del livello di authoring. È utile per gli editor che navigano su un sito utilizzando la modalità Anteprima, accedono a una pagina di prodotto o categoria specifica e tornano alla modalità Modifica per modificare la pagina.
 
 Sulle istanze del livello di pubblicazione, invece, gli URL delle pagine di catalogo devono essere mantenuti stabili in modo da non perdere, ad esempio, guadagni nella classificazione dei motori di ricerca. Per impostazione predefinita, le istanze del livello di pubblicazione non eseguono il rendering dei collegamenti profondi a pagine di catalogo specifiche. Per modificare questo comportamento, _Strategia di pagina specifica per provider URL CIF_ può essere configurato per generare sempre URL di pagina specifici.
 
 ## Personalizzazioni {#customization}
 
-### Custom URL Formats {#custom-url-format}
+### Formati URL personalizzati {#custom-url-format}
 
-Per fornire un formato URL personalizzato, un progetto può implementare [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) o [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) interfaccia del servizio e registra l&#39;implementazione come servizio OSGI. Those implementations, if available, will replace the configured, pre-defined format. Se sono registrate più implementazioni, quella con la classificazione di servizio superiore sostituisce quella con la classificazione di servizio inferiore.
+Per fornire un formato URL personalizzato, un progetto può implementare [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) o [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) interfaccia del servizio e registra l&#39;implementazione come servizio OSGI. Tali implementazioni, se disponibili, sostituiranno il formato predefinito configurato. Se sono registrate più implementazioni, quella con la classificazione di servizio superiore sostituisce quella con la classificazione di servizio inferiore.
 
 Le implementazioni del formato URL personalizzato devono implementare una coppia di metodi per creare un URL a partire da determinati parametri e per analizzare un URL per restituire gli stessi parametri rispettivamente.
 
@@ -201,7 +203,7 @@ Le riscritture URL possono essere ottenute anche utilizzando AEM server HTTP Dis
 
 ### Scegli il formato URL migliore {#choose-url-format}
 
-As mentioned before selecting one of the available default formats, or even implementing a custom format highly depends on the needs and requirements of a store. I seguenti suggerimenti possono aiutare a fare una descrizione educata.
+Come accennato prima di selezionare uno dei formati predefiniti disponibili, o anche l&#39;implementazione di un formato personalizzato dipende fortemente dalle esigenze e dai requisiti di un negozio. I seguenti suggerimenti possono aiutare a fare una descrizione educata.
 
 _**Utilizza un formato URL della pagina di un prodotto contenente lo SKU.**_
 
