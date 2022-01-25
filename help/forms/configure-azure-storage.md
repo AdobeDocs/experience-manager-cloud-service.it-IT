@@ -2,14 +2,14 @@
 title: Come si configura l’archiviazione di Azure?
 description: Scopri come integrare i moduli con il server di archiviazione Azure.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
 
-# Configura [!DNL Azure] archiviazione {#configure-azure-storage}
+# Configura[!DNL Azure]archiviazione {#configure-azure-storage}
 
 [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce un [!DNL Azure] configurazione di archiviazione per integrare i moduli con [!DNL Azure] servizi di storage. Il modello dati modulo può essere utilizzato per creare un Forms adattivo che interagisca con [!DNL Azure] per abilitare i flussi di lavoro aziendali. Esempio:
 
@@ -93,4 +93,8 @@ Per definire una proprietà dell&#39;oggetto modello dati come chiave di ricerca
 1. Passa alla **[!UICONTROL Chiave di ricerca]** attiva l&#39;opzione. Questa opzione è disponibile solo per i tipi di dati principali.
 1. Tocca **[!UICONTROL Fine]** quindi tocca **[!UICONTROL Salva]** per salvare il modello dati del modulo.
 
-Dopo aver definito le proprietà dell’oggetto del modello dati come chiavi di ricerca, le chiavi vengono salvate come metadati nell’archivio di Azure.
+Dopo aver definito le proprietà dell&#39;oggetto del modello dati come chiavi di ricerca, i valori hash vengono memorizzati nei tag di indice di Azure e i valori codificati di Base64 sono memorizzati nei metadati di Azure.
+
+>[!NOTE]
+>
+>Per l’entità Azure sono consentite solo 10 chiavi di ricerca, in quanto Azure consente solo 10 tag per BLOB e il valore delle proprietà contrassegnato come chiavi di ricerca viene memorizzato nei tag di indice di Azure dopo l’hashing.
