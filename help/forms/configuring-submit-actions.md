@@ -2,9 +2,9 @@
 title: Come configurare un’azione di invio per un modulo adattivo
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. È possibile utilizzare le azioni di invio integrate o crearne una personalizzata.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1886'
 ht-degree: 0%
 
 ---
@@ -145,13 +145,15 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## Richiamare un flusso di lavoro AEM {#invoke-an-aem-workflow}
 
-La **[!UICONTROL Richiamare un flusso di lavoro AEM]** Invia azione associa un modulo adattivo a un [Flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). Quando un modulo viene inviato, il flusso di lavoro associato viene avviato automaticamente nell’istanza di authoring. L’azione Invia inserisce quanto segue nel percorso di payload del flusso di lavoro:
+La **[!UICONTROL Richiamare un flusso di lavoro AEM]** Invia azione associa un modulo adattivo a un [Flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). Quando un modulo viene inviato, il flusso di lavoro associato viene avviato automaticamente nell’istanza di authoring. È possibile salvare il file di dati, gli allegati e il documento di record nella posizione di payload del flusso di lavoro o in una variabile. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni e configurato per un archivio dati esterno, è disponibile solo l’opzione variabile . Puoi selezionare dall’elenco delle variabili disponibili per il modello di flusso di lavoro. Se il flusso di lavoro è contrassegnato per l’archiviazione dei dati esterni in una fase successiva e non al momento della creazione del flusso di lavoro, assicurati che siano presenti le configurazioni delle variabili richieste.
 
-* **File di dati**: Contiene i dati inviati al modulo adattivo. È possibile utilizzare **[!UICONTROL Percorso file dati]** per specificare il nome del file e il percorso del file relativo al payload. Ad esempio, il `/addresschange/data.xml` crea una cartella denominata `addresschange` e lo posiziona rispetto al carico utile. Puoi anche specificare solo `data.xml` per inviare solo i dati inviati senza creare una gerarchia di cartelle.
+L’azione Invia inserisce quanto segue nel percorso di payload del flusso di lavoro o nella variabile se il flusso di lavoro è contrassegnato per l’archiviazione dei dati esterni:
 
-* **Allegati**: È possibile utilizzare **[!UICONTROL Percorso allegato]** opzione per specificare il nome della cartella in cui memorizzare gli allegati caricati nel modulo adattivo. La cartella viene creata in relazione al payload.
+* **File di dati**: Contiene i dati inviati al modulo adattivo. È possibile utilizzare **[!UICONTROL Percorso file dati]** per specificare il nome del file e il percorso del file relativo al payload. Ad esempio, il `/addresschange/data.xml` crea una cartella denominata `addresschange` e lo posiziona rispetto al carico utile. Puoi anche specificare solo `data.xml` per inviare solo i dati inviati senza creare una gerarchia di cartelle. Se il flusso di lavoro è contrassegnato per l’archiviazione dei dati esterni, utilizza l’opzione variabile e seleziona la variabile dall’elenco delle variabili disponibili per il modello di flusso di lavoro.
 
-* **Documento di registrazione**: Contiene il documento di record generato per il modulo adattivo. È possibile utilizzare **[!UICONTROL Percorso del documento di registrazione]** per specificare il nome del file del documento di record e il percorso del file relativo al payload. Ad esempio, il `/addresschange/DoR.pdf` crea una cartella denominata `addresschange` relativo al payload e inserisce il `DoR.pdf` relativo al payload. Puoi anche specificare solo `DoR.pdf` per salvare solo il documento di record senza creare una gerarchia di cartelle.
+* **Allegati**: È possibile utilizzare **[!UICONTROL Percorso allegato]** opzione per specificare il nome della cartella in cui memorizzare gli allegati caricati nel modulo adattivo. La cartella viene creata in relazione al payload. Se il flusso di lavoro è contrassegnato per l’archiviazione dei dati esterni, utilizza l’opzione variabile e seleziona la variabile dall’elenco delle variabili disponibili per il modello di flusso di lavoro.
+
+* **Documento di registrazione**: Contiene il documento di record generato per il modulo adattivo. È possibile utilizzare **[!UICONTROL Percorso del documento di registrazione]** per specificare il nome del file del documento di record e il percorso del file relativo al payload. Ad esempio, il `/addresschange/DoR.pdf` crea una cartella denominata `addresschange` relativo al payload e inserisce il `DoR.pdf` relativo al payload. Puoi anche specificare solo `DoR.pdf` per salvare solo il documento di record senza creare una gerarchia di cartelle. Se il flusso di lavoro è contrassegnato per l’archiviazione dei dati esterni, utilizza l’opzione variabile e seleziona la variabile dall’elenco delle variabili disponibili per il modello di flusso di lavoro.
 
 Prima di utilizzare **[!UICONTROL Richiamare un flusso di lavoro AEM]** Invia azione configura quanto segue per **[!UICONTROL Servizio impostazioni di DS AEM]** configurazione:
 

@@ -1,9 +1,9 @@
 ---
 title: Come si configura Unified Storage Connector per AEM Forms?
 description: Scopri come gestire Unified Storage Connector per AEM Forms. Utilizzare il connettore di archiviazione unificata per collegare AEM Forms a archivi dati esterni.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -53,16 +53,16 @@ Esegui i seguenti passaggi per configurare un modello di flusso di lavoro AEM pe
 
 >[!NOTE]
 >
->Le opzioni per salvare il passaggio Assegna attività come bozza e recuperare la cronologia del passaggio Assegna attività non sono disponibili quando si configura un modello di flusso di lavoro AEM per l’archiviazione dei dati esterni.
+>Le opzioni per salvare il passaggio Assegna attività come bozza e recuperare la cronologia del passaggio Assegna attività sono disabilitate quando si configura un modello di flusso di lavoro AEM per l’archiviazione dei dati esterni.
 
 ### Linee guida per i flussi di lavoro AEM per l’archiviazione dei dati esterni {#guidelines-workflows-external-data-storage}
 
 Di seguito sono riportate le linee guida per l’utilizzo dei flussi di lavoro AEM e la memorizzazione dei dati in archivi di dati esterni, ad esempio il server di archiviazione Microsoft Azure:
 
-* Utilizza le variabili per memorizzare i dati durante la definizione dei file di dati di input e output e degli allegati nei passaggi del modello di flusso di lavoro. Non selezionare **[!UICONTROL Relativo al payload]** e **[!UICONTROL Disponibile in un percorso assoluto]** opzioni. La **[!UICONTROL Relativo al payload]** e **Disponibile in un percorso assoluto** le opzioni non vengono visualizzate automaticamente una volta [configurare un modello di flusso di lavoro AEM per l’archiviazione dei dati esterni](#configure-workflow-external-data-storage).
+* Utilizza le variabili per memorizzare i dati durante la definizione dei file di dati di input e output e degli allegati nei passaggi del modello di flusso di lavoro. Non selezionare **[!UICONTROL Relativo al payload]** e **[!UICONTROL Disponibile in un percorso assoluto]** opzioni. La **[!UICONTROL Relativo al payload]** e **[!UICONTROL Disponibile in un percorso assoluto]** le opzioni non vengono visualizzate automaticamente una volta [configurare un modello di flusso di lavoro AEM per l’archiviazione dei dati esterni](#configure-workflow-external-data-storage).
 
 * Utilizza le variabili per memorizzare file di dati e allegati durante l’invio di un modulo adattivo a un flusso di lavoro AEM. Non selezionare **[!UICONTROL Relativo al payload]** durante l’invio di un modulo adattivo a un flusso di lavoro AEM. La **[!UICONTROL Relativo al payload]** l&#39;opzione non viene visualizzata automaticamente una volta [configurare un modello di flusso di lavoro AEM per l’archiviazione dei dati esterni](#configure-workflow-external-data-storage).
 
 * Non utilizzare un passaggio personalizzato AEM Workflow in un modello di flusso di lavoro per memorizzare i dati nell&#39;archivio CRX DE.
 
-* Quando [configurare un modello di flusso di lavoro AEM per l’archiviazione dei dati esterni](#configure-workflow-external-data-storage), non creare colonne personalizzate per AEM casella in entrata in base ai dati di un flusso di lavoro.
+* Quando [configurare un modello di flusso di lavoro AEM per l’archiviazione dei dati esterni](#configure-workflow-external-data-storage), non creare colonne personalizzate per AEM casella in entrata, poiché i valori delle colonne personalizzate non vengono recuperati se l’elemento di lavoro nella casella in entrata AEM appartiene a un flusso di lavoro contrassegnato per l’archiviazione esterna.

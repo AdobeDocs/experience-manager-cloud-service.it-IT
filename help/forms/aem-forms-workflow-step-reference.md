@@ -2,9 +2,9 @@
 title: 'Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail, utilizzare Adobe Sign in un flusso di lavoro? '
 description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti via e-mail, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '5377'
+source-wordcount: '5467'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ I passaggi del flusso di lavoro incentrati su Forms eseguono operazioni specific
 * Collega un modello di flusso di lavoro con varie origini dati per salvare e recuperare facilmente i dati.
 
 * Utilizza il passaggio e-mail per inviare e-mail di notifica e altri allegati al completamento di un’azione e all’inizio o al completamento di un flusso di lavoro.
+
+>[!NOTE]
+>
+>Se il modello di flusso di lavoro è contrassegnato per uno storage esterno, per tutti i passaggi del flusso di lavoro Forms è possibile selezionare solo l&#39;opzione variabile per archiviare o recuperare file di dati e allegati.
 
 
 ## Assegna passaggio attività {#assign-task-step}
@@ -66,7 +70,7 @@ Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo 
 * **[!UICONTROL Prepopolato]**: I campi seguenti elencati fungono da input per l’attività:
 
    * **[!UICONTROL Seleziona il file di dati di input utilizzando]**: Percorso del file di dati di input (.json, .xml, .doc o modello di dati del modulo). È possibile recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile di tipo di dati Document, XML o JSON. Ad esempio, il file contiene i dati inviati per il modulo tramite un’applicazione Casella in entrata AEM. Un esempio di percorso è [Payload_Directory]/workflow/data.
-   * **[!UICONTROL Selezionare gli allegati di input utilizzando]**: Gli allegati disponibili nella posizione vengono allegati al modulo associato all&#39;attività. Il percorso è sempre relativo al payload. Un esempio di percorso è [Payload_Directory]/attachment/. È possibile specificare gli allegati posizionati in relazione al payload o utilizzare una variabile di tipo documento (Elenco array > Documento) per specificare un allegato di input per il modulo adattivo
+   * **[!UICONTROL Selezionare gli allegati di input utilizzando]**: Gli allegati disponibili nella posizione vengono allegati al modulo associato all&#39;attività. Il percorso può essere relativo al payload o recuperare l&#39;allegato memorizzato in una variabile di un documento. Un esempio di percorso è [Payload_Directory]/attachment/. È possibile specificare gli allegati posizionati in relazione al payload o utilizzare una variabile di tipo documento (Elenco array > Documento) per specificare un allegato di input per il modulo adattivo.
 
    <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -88,7 +92,7 @@ Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo 
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL Assegnatario]** > **[!UICONTROL Opzioni di assegnazione]**: Specificare il metodo per assegnare l&#39;attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selezione partecipanti o assegnarla a un utente o gruppo AEM specifico.
-* **[!UICONTROL Selettore partecipante]**: L’opzione è disponibile quando **[!UICONTROL In modo dinamico per un utente o un gruppo]** l’opzione è selezionata nel campo Assegna opzioni . È possibile utilizzare uno script ECMAScript o un servizio per selezionare in modo dinamico un utente o un gruppo. Per ulteriori informazioni, consulta [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato Adobe Experience Manager Dynamic Participant .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **[!UICONTROL Selettore partecipante]**: L’opzione è disponibile quando **[!UICONTROL In modo dinamico per un utente o un gruppo]** l’opzione è selezionata nel campo Assegna opzioni . È possibile utilizzare uno script ECMAScript o un servizio per selezionare in modo dinamico un utente o un gruppo. Per ulteriori informazioni, consulta [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato Adobe Experience Manager Dynamic Participant .](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL Partecipanti]**: Il campo è disponibile quando la **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata nella **[!UICONTROL Selettore partecipante]** campo . Il campo consente di selezionare utenti o gruppi per l’opzione RandomParticipantChooser.
 
@@ -130,6 +134,10 @@ Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo 
 * **[!UICONTROL Mostra dati dai passaggi precedenti]**: Selezionare questa opzione per consentire agli assegnatari di visualizzare gli assegnatari precedenti, le azioni già eseguite sull&#39;attività, i commenti aggiunti all&#39;attività e il documento di registrazione dell&#39;attività completata, se disponibile.
 * **[!UICONTROL Mostra dati dai passaggi successivi]**: Selezionare questa opzione per consentire all&#39;assegnatario corrente di visualizzare l&#39;azione intrapresa e i commenti aggiunti all&#39;attività dagli assegnatari successivi. Consente inoltre all&#39;assegnatario corrente di visualizzare un documento di registrazione dell&#39;attività completata, se disponibile.
 * **[!UICONTROL Visibilità del tipo di dati]**: Per impostazione predefinita, un assegnatario può visualizzare un documento di registrazione, gli assegnatari, le azioni intraprese e i commenti aggiunti dagli assegnatari precedenti e successivi. Utilizza l’opzione di visibilità del tipo di dati per limitare il tipo di dati visibili agli assegnatari.
+
+>[!NOTE]
+>
+>Le opzioni per salvare il passaggio Assegna attività come bozza e recuperare la cronologia del passaggio Assegna attività sono disabilitate quando si configura un modello di flusso di lavoro AEM per l’archiviazione dei dati esterni. Inoltre, in Posta in arrivo, l’opzione per il salvataggio è disabilitata.
 
 ## Invia passaggio e-mail {#send-email-step}
 
