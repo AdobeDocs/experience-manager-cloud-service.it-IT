@@ -8,7 +8,7 @@ content-type: reference
 feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 251975b825adb5748b6f76c0fdf9d0b7262b2d35
 workflow-type: tm+mt
 source-wordcount: '2219'
 ht-degree: 5%
@@ -41,6 +41,10 @@ Vedi anche [Formati 3D supportati in Experience Manager Assets](/help/assets/fil
 | OBJ | File oggetto 3D WaveFront | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
 | USDZ | Universal Scene Descrizione Archivio ZIP | model/vnd.usdz+zip | *Sostegno solo all&#39;acquisizione; non è disponibile alcuna visualizzazione o interazione.* USDZ è un formato 3D proprietario che può essere visualizzato in modalità nativa da Safari o iOS. |
+
+<!-- >[!NOTE]
+>
+>The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). CQDOC-18921-->
 
 ## Avvio rapido: Risorse 3D in Dynamic Media {#quick-start-three-d}
 
@@ -210,7 +214,7 @@ Vedi [Assegnare una risorsa 3D al componente File multimediali 3D](#assigning-a-
 
    ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-configa.png)
 
-1. Nell’elenco a discesa Predefinito visualizzatore della finestra di dialogo File multimediali 3D , seleziona **[!UICONTROL Dimensionale]** per assegnare il predefinito visualizzatore dimensionale al componente.
+1. Nella finestra di dialogo File multimediali 3D, dall’elenco a discesa Predefinito visualizzatore , seleziona **[!UICONTROL Dimensionale]** per assegnare il predefinito visualizzatore dimensionale al componente.
 
    ![3d-media-component-edit-config](/help/assets/dynamic-media/assets/3d-media-component-edit-configa.png)
 
