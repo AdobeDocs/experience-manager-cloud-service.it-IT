@@ -1,14 +1,14 @@
 ---
 title: Riferimenti per sviluppatori per [!DNL Assets]
-description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
+description: '[!DNL Assets] API e contenuti di riferimento per sviluppatori consentono di gestire le risorse, inclusi file binari, metadati, rappresentazioni, commenti e [!DNL Content Fragments].'
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: bd00cd19852affd24d732c15b03dbf8248f2ff38
+source-git-commit: 2f0521831383c11e1edee8c5d719ec42f7bcfd5e
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 2%
+source-wordcount: '1449'
+ht-degree: 3%
 
 ---
 
@@ -26,43 +26,43 @@ L’articolo contiene raccomandazioni, materiali di riferimento e risorse per gl
 
 | Livello di supporto | Descrizione |
 | ------------- | --------------------------- |
-| . | Supportata |
-| × | Non supportato. Non usare. |
+| ✓ | Supportata |
+| × | Non supportato. Do not use. |
 | - | Non disponibile |
 
-| Caso d’uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API Java | [Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Anteprima)_ |
+| Caso d’uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API Java | [Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **binario originale** |  |  |  |  |  |  |
-| Crea originale | . | × | - | × | × | - |
-| Leggi originale | - | × | . | . | . | - |
-| Aggiorna originale | . | × | . | × | × | - |
-| Elimina originale | - | . | - | . | . | - |
-| Copia originale | - | . | - | . | . | - |
-| Sposta originale | - | . | - | . | . | - |
+| Crea originale | ✓ | × | - | × | × | - |
+| Leggi originale | - | × | ✓ | ✓ | ✓ | - |
+| Aggiorna originale | ✓ | × | ✓ | × | × | - |
+| Elimina originale | - | ✓ | - | ✓ | ✓ | - |
+| Copia originale | - | ✓ | - | ✓ | ✓ | - |
+| Sposta originale | - | ✓ | - | ✓ | ✓ | - |
 | **Metadati** |  |  |  |  |  |  |
-| Creare metadati | - | . | . | . | . | - |
-| Leggi metadati | - | . | - | . | . | - |
-| Aggiornare i metadati | - | . | . | . | . | - |
-| Eliminare i metadati | - | . | . | . | . | - |
-| Copia metadati | - | . | - | . | . | - |
-| Spostare i metadati | - | . | - | . | . | - |
+| Create metadata | - | ✓ | ✓ | ✓ | ✓ | - |
+| Leggi metadati | - | ✓ | - | ✓ | ✓ | - |
+| Aggiornare i metadati | - | ✓ | ✓ | ✓ | ✓ | - |
+| Eliminare i metadati | - | ✓ | ✓ | ✓ | ✓ | - |
+| Copia metadati | - | ✓ | - | ✓ | ✓ | - |
+| Spostare i metadati | - | ✓ | - | ✓ | ✓ | - |
 | **Frammenti di contenuto (CF)** |  |  |  |  |  |  |
-| Crea CF | - | . | - | . | - | - |
-| Leggi CF | - | . | - | . | - | . |
-| Aggiorna CF | - | . | - | . | - | - |
-| Elimina CF | - | . | - | . | - | - |
-| Copia CF | - | . | - | . | - | - |
-| Sposta CF | - | . | - | . | - | - |
+| Crea CF | - | ✓ | - | ✓ | - | - |
+| Leggi CF | - | ✓ | - | ✓ | - | ✓ |
+| Aggiorna CF | - | ✓ | - | ✓ | - | - |
+| Elimina CF | - | ✓ | - | ✓ | - | - |
+| Copia CF | - | ✓ | - | ✓ | - | - |
+| Sposta CF | - | ✓ | - | ✓ | - | - |
 | **Versioni** |  |  |  |  |  |  |
-| Crea versione | . | . | - | - | - | - |
-| Versione lettura | - | . | - | - | - | - |
-| Elimina versione | - | . | - | - | - | - |
+| Crea versione | ✓ | ✓ | - | - | - | - |
+| Versione lettura | - | ✓ | - | - | - | - |
+| Elimina versione | - | ✓ | - | - | - | - |
 | **Cartelle** |  |  |  |  |  |  |
-| Crea cartella | . | . | - | . | - | - |
-| Leggi cartella | - | . | - | . | - | - |
-| Elimina cartella | . | . | - | . | - | - |
-| Copia cartella | . | . | - | . | - | - |
-| Sposta cartella | . | . | - | . | - | - |
+| Crea cartella | ✓ | ✓ | - | ✓ | - | - |
+| Leggi cartella | - | ✓ | - | ✓ | - | - |
+| Elimina cartella | ✓ | ✓ | - | ✓ | - | - |
+| Copia cartella | ✓ | ✓ | - | ✓ | - | - |
+| Sposta cartella | ✓ | ✓ | - | ✓ | - | - |
 
 ## Caricamento risorsa {#asset-upload}
 
@@ -154,7 +154,7 @@ Se la risorsa esiste e nessuna delle due `createVersion` né `replace` viene spe
 
 Come il processo di avvio, i dati completi della richiesta possono contenere informazioni per più di un file.
 
-Il processo di caricamento di un binario non viene eseguito finché non viene richiamato l’URL completo per il file. Una risorsa viene elaborata al termine del processo di caricamento. L’elaborazione non si avvia anche se il file binario della risorsa viene caricato completamente ma il processo di caricamento non è completato. Se il caricamento ha esito positivo, il server risponde con un `200` codice di stato.
+Il processo di caricamento di un binario non viene eseguito finché non viene richiamato l’URL completo per il file. An asset is processed after the upload process is complete. L’elaborazione non si avvia anche se il file binario della risorsa viene caricato completamente ma il processo di caricamento non è completato. Se il caricamento ha esito positivo, il server risponde con un `200` codice di stato.
 
 ### Libreria di caricamento open-source {#open-source-upload-library}
 
@@ -167,9 +167,9 @@ Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e 
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Il nuovo metodo di caricamento è supportato solo per [!DNL Adobe Experience Manager] come [!DNL Cloud Service]. API da [!DNL Adobe Experience Manager] 6.5 è obsoleto. I metodi relativi al caricamento o all’aggiornamento di risorse o rappresentazioni (qualsiasi caricamento binario) sono obsoleti nelle seguenti API:
+Il nuovo metodo di caricamento è supportato solo per [!DNL Adobe Experience Manager] come [!DNL Cloud Service]. The APIs from [!DNL Adobe Experience Manager] 6.5 are deprecated. The methods related to upload or update assets or renditions (any binary upload) are deprecated in the following APIs:
 
-* [API HTTP Experience Manager Assets](mac-api-assets.md)
+* [Experience Manager Assets HTTP API](mac-api-assets.md)
 * `AssetManager` API Java, come `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
