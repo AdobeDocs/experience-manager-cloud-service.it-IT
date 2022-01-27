@@ -1,156 +1,174 @@
 ---
-title: Rimozione dell'indice generico lucene
-description: Rimozione dell'indice generico lucene
+title: Rimozione dell'indice Lucene generico
+description: Scopri la rimozione pianificata degli indici Lucene generici e le possibili conseguenze.
 exl-id: fe0e00ac-f9c8-43cf-83c2-5a353f5eaeab
-source-git-commit: bc7ef6567ad5baa4becd28a7e7d96bd6b579e1ad
+source-git-commit: 7a3c8b59a5a642ffc335fc80898fb956221cfcc2
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
 
-# Rimozione dell&#39;indice generico lucene
 
-L&#39;Adobe intende rimuovere l&#39;indice generico lucene (`/oak:index/lucene-*`) da Adobe Experience Manager as a Cloud Service. Questo indice è stato dichiarato obsoleto a partire dal AEM 6.5. In questa documentazione viene descritto l&#39;impatto di questa decisione, insieme a descrizioni dettagliate su come esaminare se un&#39;istanza AEM è interessata. Infine, contiene modi per modificare le query in modo che funzionino senza che questo indice sia presente.
+# Rimozione dell&#39;indice Lucene generico {#generic-lucene-index-removal}
 
-## Sfondo
+L&#39;Adobe intende rimuovere l&#39;indice &quot;generico Lucene&quot; (`/oak:index/lucene-*`) da Adobe Experience Manager as a Cloud Service. Questo indice è stato dichiarato obsoleto a partire dal AEM 6.5. In questo documento viene descritto l&#39;impatto di questa decisione, insieme a descrizioni dettagliate su come esaminare se un&#39;istanza AEM è interessata. Contiene anche modi per modificare le query in modo che continuino a funzionare senza l&#39;indice Lucene generico.
 
-In AEM, query &#39;fulltext&#39; come quelle che utilizzano le seguenti funzioni:
+## Sfondo {#background}
+
+In AEM, le query full text sono quelle che utilizzano le seguenti funzioni:
 
 * `jcr:contains()` in JCR XPATH
 * `CONTAINS` in JCR-SQL2
 
-Tali query non possono restituire risultati senza utilizzare un indice. A differenza di una query contenente solo restrizioni di percorso o proprietà, una query contenente una restrizione di testo completo per la quale non è possibile trovare alcun indice (e quindi viene eseguito un attraversamento) restituirà sempre 0 risultati.
+Tali query non possono restituire risultati senza utilizzare un indice. A differenza di una query contenente solo restrizioni di percorso o proprietà, una query contenente una restrizione di testo completa per la quale non è possibile trovare alcun indice (e quindi viene eseguito un attraversamento) restituirà sempre zero risultati.
 
-Indice &quot;generico lucene&quot; (`/oak:index/lucene-*`) è esistito a partire da AEM 6.0 / Oak 1.0 per fornire una ricerca full-text nella maggior parte della gerarchia del repository (alcuni percorsi, come `/jcr:system` e `/var` sono sempre stati esclusi da questo) tuttavia questo indice è stato in gran parte sostituito da indici su tipi di nodo più specifici (per esempio `damAssetLucene-*` per il tipo di nodo &#39;dam:Asset&#39;) che supporta sia ricerche full-text che proprietà.
+Indice Lucene generico (`/oak:index/lucene-*`) esiste a partire da AEM 6.0 / Oak 1.0 per fornire una ricerca full-text nella maggior parte della gerarchia dell&#39;archivio, anche se alcuni percorsi, come `/jcr:system` e `/var` sono sempre stati esclusi da questo. Tuttavia, questo indice è stato in gran parte sostituito dagli indici su tipi di nodo più specifici (ad esempio `damAssetLucene-*` per `dam:Asset` tipo di nodo), che supporta sia le ricerche full text che di proprietà.
 
-Nella AEM 6.5 l&#39;indice &quot;generico lucene&quot; è stato contrassegnato come obsoleto (indicato che sarebbe stato rimosso nelle versioni future), e da allora, quando l&#39;indice è stato utilizzato, è stato registrato un avviso:
+Nella AEM 6.5 l&#39;indice generico Lucene è stato contrassegnato come obsoleto, indicando che sarebbe stato rimosso nelle versioni future. Da allora, è stato registrato un WARN quando l&#39;indice è stato utilizzato come illustrato dal seguente frammento di log:
 
-```
+```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Please change the query or the index definitions.
 ```
 
-Nelle versioni recenti AEM, l&#39;indice generico lucene è stato utilizzato per supportare un numero molto ridotto di funzioni. Questi vengono rielaborati per utilizzare altri indici o modificati in altro modo per rimuovere la dipendenza da questo indice.
-Ad esempio, le query di &#39;ricerca di riferimento&#39;, del modulo mostrato di seguito, ora devono utilizzare l&#39;indice in &#39;/oak:index/pathreference&#39; (che indicizza solo i valori delle proprietà String che corrispondono a un&#39;espressione regolare che cerca i percorsi JCR). 
+Nelle versioni recenti AEM, l&#39;indice Lucene generico è stato utilizzato per supportare un numero molto ridotto di funzioni. Questi vengono rielaborati per utilizzare altri indici o modificati in altro modo per rimuovere la dipendenza da questo indice.
 
-```
+Ad esempio, le query di ricerca di riferimento, come nell’esempio seguente, ora devono utilizzare l’indice in `/oak:index/pathreference`, che indicizza solo `String` valori di proprietà che corrispondono a un&#39;espressione regolare che cerca i percorsi JCR.
+
+```text
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Per supportare volumi di dati dei clienti più grandi, Adobe non creerà più l&#39;indice &quot;lucene generico&quot; su nuovi ambienti as a Cloud Service AEM e, di conseguenza, inizierà a rimuovere l&#39;indice dai repository esistenti. Abbiamo già modificato i costi dell&#39;indice (tramite le proprietà &#39;costPerEntry&#39; e &#39;costPerExecution&#39;) per garantire che altri indici (come `/oak:index/pathreference`) sono utilizzate in preferenza per `/oak:index/lucene-*` laddove possibile. 
+Per supportare volumi di dati dei clienti più grandi, Adobe non creerà più l’indice Lucene generico sui nuovi ambienti as a Cloud Service AEM. Inoltre, Adobe inizierà a rimuovere l&#39;indice dagli archivi esistenti. [Visualizzare la timeline](#timeline) alla fine del presente documento per ulteriori dettagli.
 
-Le applicazioni cliente che utilizzano query che dipendono ancora da questo indice devono essere aggiornate immediatamente per sfruttare altri indici esistenti (che possono essere personalizzati se necessario) o nuovi indici personalizzati devono essere aggiunti all&#39;applicazione cliente. Per istruzioni complete sulla gestione degli indici in AEM as a Cloud Service, consulta [documentazione sull&#39;indicizzazione](/help/operations/indexing.md).
+L&#39;Adobe ha già adeguato i costi dell&#39;indice tramite il `costPerEntry` e `costPerExecution` per garantire che altri indici, come `/oak:index/pathreference` sono utilizzati nella preferenza laddove possibile.
 
-## Come dire se la tua applicazione dipende dall&#39;indice &#39;generico lucene&#39;?
+Le applicazioni cliente che utilizzano query che dipendono ancora da questo indice devono essere aggiornate immediatamente per sfruttare altri indici esistenti, personalizzabili se necessario. In alternativa, è possibile aggiungere nuovi indici personalizzati all’applicazione cliente. Le istruzioni complete per la gestione degli indici in AEM as a Cloud Service sono disponibili nella sezione [documentazione sull&#39;indicizzazione.](/help/operations/indexing.md)
 
-L&#39;indice &#39;generico lucene&#39; è attualmente utilizzato come &#39;fallback&#39; se nessun altro indice fulltext può soddisfare una query. Quando si utilizza questo indice obsoleto, un messaggio come questo verrà registrato a livello WARN:
+## Sei Interessata? {#are-you-affected}
 
-```
+L&#39;indice Lucene generico è attualmente utilizzato come fallback se nessun altro indice full text può soddisfare una query. Quando si utilizza questo indice obsoleto, un messaggio come questo verrà registrato a livello WARN:
+
+```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
 ```
 
-In alcune circostanze Oak potrebbe tentare di utilizzare un altro indice fulltext (come `/oak:index/pathreference`) per supportare la query full-text, ma se la stringa di query non corrisponde all’espressione regolare nella definizione dell’indice, verrà registrato un messaggio a livello WARN e la query probabilmente non restituirà risultati.
+In alcune circostanze, Oak potrebbe tentare di utilizzare un altro indice full text (come `/oak:index/pathreference`) per supportare la query full text, ma se la stringa di query non corrisponde all’espressione regolare nella definizione dell’indice, verrà registrato un messaggio a livello WARN e la query probabilmente non restituirà risultati.
 
-```
+```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
 ```
 
-Una volta rimosso l&#39;indice lucene generico, un messaggio come mostrato di seguito verrà registrato a livello WARN se una query di testo completo non è in grado di individuare alcuna definizione di indice adatta:
+Una volta rimosso l&#39;indice Lucene generico, un messaggio come mostrato di seguito verrà registrato a livello WARN se una query full text non è in grado di individuare alcuna definizione di indice adatta:
 
-```
+```text
 org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
 ```
 
-Se qualcuno di questi è registrato, potrebbe essere necessario rielaborare la query per utilizzare un indice fulltext diverso o fornire un nuovo indice per supportare la query. Di seguito sono riportati i dettagli sui tipi di dipendenze che potresti vedere e su come risolverle.
+>[!IMPORTANT]
+>
+>**Azione del cliente richiesta**
+>
+> Se viene registrato uno dei messaggi di avviso di cui sopra, potrebbe essere necessario rielaborare la query per utilizzare un indice di testo completo diverso o fornire un nuovo indice per supportare la query.
+>
+>I dettagli sui tipi di dipendenze che è possibile visualizzare e su come risolverle sono forniti nelle sezioni seguenti.
 
-## Dipendenze potenziali dall&#39;indice &quot;generico lucene&quot;
+## Dipendenze potenziali dagli indici Lucene generici {#potential-dependencies}
 
-### Pubblicazione
+Ci sono diverse aree in cui le applicazioni e le installazioni di AEM possono dipendere da indici Lucene generici sia sulle istanze di authoring che di pubblicazione.
 
-#### Query di applicazione personalizzate
+### Pubblica istanza {#publish-instance}
 
-L&#39;origine più comune di query che utilizzano l&#39;indice lucene generico su Publish saranno le query di applicazione personalizzate.
+#### Query di applicazione personalizzate {#custom-application-queries}
 
-Nei casi più semplici, queste potrebbero essere query prive di nodetype specificato (che implicano &#39;nt:base&#39;) o nt:base specificato esplicitamente, ad esempio:
+L&#39;origine più comune di query che utilizzano l&#39;indice Lucene generico su un&#39;istanza di pubblicazione saranno query di applicazione personalizzate.
 
-```
+Nei casi più semplici, queste potrebbero essere query prive di un tipo di nodo specificato, il che implica `nt:base` o `nt:base` specificato esplicitamente, ad esempio:
+
+```text
 /jcr:root/content/mysite//*[jcr:contains(., 'search term')]
 /jcr:root/content/mysite//element(*, nt:base)[jcr:contains(., 'search term')]
 ```
 
-Azione richiesta : Queste query possono essere modificate per utilizzare un tipo di nodo appropriato - ad esempio, per restituire i risultati che corrispondono alle pagine (o uno qualsiasi degli &quot;aggregati&quot; sotto il nodo cq:Page), la query potrebbe diventare:
+>[!IMPORTANT]
+>
+>**Azione del cliente richiesta**
+>
+>Le query di cui sopra devono essere modificate per utilizzare un tipo di nodo appropriato come descritto nella sezione seguente.
 
-```
+Ad esempio, le query possono essere modificate per restituire i risultati corrispondenti alle pagine o a uno qualsiasi degli aggregati sotto la `cq:Page node`. La query potrebbe quindi diventare:
+
+```text
 /jcr:root/content/mysite//element(*, cq:Page)[jcr:contains(., 'search term')]
 ```
 
-In altri casi, una query può specificare un tipo di nodo ma contiene una restrizione di tipo fulltext che non può essere gestita da un altro indice di tipo fulltext, ad esempio:
+In altri casi, una query può specificare un tipo di nodo ma contiene una restrizione full text che non può essere gestita da un altro indice full text, ad esempio:
 
-```
+```text
 /jcr:root/content/dam//element(*, dam:Asset)[jcr:contains(jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
 ```
 
-In questo caso la query ha il tipo di nodo &#39;dam:Asset&#39;, ma contiene una restrizione full-text sul relativo `jcr:content/metadata/@cq:tags` proprietà.
+In questo caso, la query ha la `dam:Asset` tipo di nodo, ma contiene una restrizione full text sul relativo `jcr:content/metadata/@cq:tags` proprietà.
 
-Questa proprietà non è contrassegnata come &#39;analizzata&#39; nell&#39;indice damAssetLucene (l&#39;indice fulltext più comunemente utilizzato per le query contro il nodetype &#39;dam:Asset&#39;), pertanto questo indice non può essere utilizzato per questa query.
+Questa proprietà non è contrassegnata come analizzata nella `damAssetLucene` index, che è l&#39;indice full text più comunemente utilizzato per le query contro `dam:Asset` tipo di nodo. Pertanto questo indice non può essere utilizzato per questa query.
 
-Di conseguenza, la query rientra nell’indice &quot;generico fulltext&quot; in cui tutte le proprietà incluse sono contrassegnate come analizzate dalla corrispondenza con il carattere jolly in `/oak:index/lucene-2/indexRules/nt:base/properties/prop`.
+Di conseguenza, la query rientra nell’indice generico full text in cui tutte le proprietà incluse vengono contrassegnate come analizzate dalla corrispondenza con il carattere jolly in `/oak:index/lucene-2/indexRules/nt:base/properties/prop`.
 
-Azione cliente richiesta : marcatura `jcr:content/metadata/@cq:tags` la proprietà &#39;analizzata&#39; in una versione personalizzata dell&#39;indice damAssetLucene comporterà la gestione di questa query da parte di questo indice e non verrà registrato alcun WARN.
+>[!IMPORTANT]
+>
+>**Azione del cliente richiesta**
+>
+>Contrassegno del `jcr:content/metadata/@cq:tags` come analizzato in una versione personalizzata del `damAssetLucene` l&#39;indice farà sì che questa query venga gestita da questo indice e non verrà registrato alcun WARN.
 
-### Autore 
+### Istanza autore {#author-instance}
 
-Oltre alle query nei servlet dell&#39;applicazione del cliente, nei componenti OSGI e negli script di rendering possono essere utilizzati diversi utilizzi specifici dell&#39;autore dell&#39;indice lucene generico. 
+Oltre alle query nei servlet dell&#39;applicazione del cliente, nei componenti OSGi e negli script di rendering, possono esserci diversi utilizzi specifici dell&#39;autore dell&#39;indice Lucene generico.
 
-#### Ricerca di riferimento
+#### Ricerca di riferimento {#reference-search}
 
-Storicamente l’indice lucene generico è stato utilizzato per supportare la ricerca di riferimento (ricerca di contenuti che contiene riferimenti a un altro percorso di contenuto). Tali query avrebbero già dovuto essere spostate per utilizzare il nuovo indice &#39;/oak:index/pathreference&#39;.
-Azione cliente richiesta : non è richiesta alcuna azione del cliente.
+Storicamente l’indice Lucene generico è stato utilizzato per supportare la ricerca di riferimenti o la ricerca di contenuti che contengono riferimenti a un altro percorso di contenuto. Tali query avrebbero già dovuto essere aggiornate per utilizzare il nuovo `/oak:index/pathreference` indice.
 
+#### Ricerca selettore campi percorso {#picker-search}
 
-#### Ricerca nel selettore dei percorsi
+AEM include un componente di dialogo personalizzato con il tipo di risorsa Sling `granite/ui/components/coral/foundation/form/pathfield`, che fornisce un browser/selettore per selezionare un altro percorso AEM. Selettore campo percorso predefinito, utilizzato quando non è personalizzato `pickerSrc` viene definita nella struttura del contenuto, esegue il rendering di una barra di ricerca nella finestra di dialogo a comparsa.
 
-AEM include un componente di dialogo personalizzato (tipo di risorsa Sling &quot;granite/ui/components/coral/foundation/form/pathfield&quot;) che fornisce un browser (selettore) per selezionare un altro percorso AEM.  Il selettore di percorsi predefinito (utilizzato quando nessuna proprietà personalizzata &#39;pickerSrc&#39; definita nella struttura del contenuto) esegue il rendering di una barra di ricerca nella finestra di dialogo a comparsa.
-I tipi di nodo rispetto ai quali eseguire la ricerca possono essere specificati utilizzando la proprietà &#39;nodeTypes&#39;.
+I tipi di nodo su cui eseguire la ricerca possono essere specificati utilizzando la variabile `nodeTypes` proprietà.
 
-Al momento, se non è presente alcuna proprietà &#39;nodeTypes&#39;, la query di ricerca sottostante utilizzerà il tipo di nodo &#39;nt:base&#39; e quindi è probabile che utilizzi l&#39;indice &#39;generico lucene&#39; (in genere registra i messaggi WARN mostrati di seguito).
+Attualmente, se no `nodeTypes` la proprietà è presente, la query di ricerca sottostante utilizzerà la proprietà `nt:base` tipo di nodo, e quindi è probabile che utilizzi l&#39;indice Lucene generico, in genere registrando messaggi WARN simili al seguente.
 
-```
+```text
 20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Please change the query or the index definitions.
 ```
 
-Prima della rimozione di &quot;lucene generico&quot;, il componente del campo percorso verrà aggiornato in modo che la casella di ricerca sia nascosta per i componenti che utilizzano il selettore predefinito, che non forniscono una proprietà &#39;nodeTypes&#39;.
+Prima della rimozione dell&#39;indice generico Lucene, il `pathfield` il componente viene aggiornato in modo che la casella di ricerca sia nascosta per i componenti che utilizzano il selettore predefinito, che non fornisce un `nodeTypes` proprietà.
 
-| Selezione campi percorso con ricerca | Selettore di campi percorso senza ricerca |
+| Selettore campo percorso con ricerca | Selettore dei campi di percorso senza ricerca |
 |---|---|
-| ![Selezione campi percorso con ricerca](assets/index-pathfield-picker-with-search.png) | ![Selettore di campi percorso senza ricerca](assets/index-pathfield-picker-without-search.png) |
+| ![Selettore campo percorso con ricerca](assets/index-pathfield-picker-with-search.png) | ![Selettore dei campi di percorso senza ricerca](assets/index-pathfield-picker-without-search.png) |
 
-
-Azione cliente richiesta : Se non è richiesta alcuna ricerca, non è necessaria alcuna azione da parte del cliente.
-
-Se il cliente desidera mantenere la funzionalità di ricerca nel selettore percorsi, è necessario fornire una proprietà &#39;nodeTypes&#39; elencando i tipi di nodo su cui desidera eseguire la query. Questi possono essere specificati come elenco di tipi di nodi separati da virgola in una proprietà String.
-
+>[!IMPORTANT]
+>
+>**Azione del cliente richiesta**
+>
+>Se il cliente desidera mantenere la funzionalità di ricerca nel selettore dei campi del percorso, un `nodeTypes` fornire la proprietà elencando i tipi di nodo su cui si desidera eseguire la query. Questi possono essere specificati come un elenco separato da virgole dei tipi di nodo in un `String` proprietà. Se non è richiesta alcuna ricerca, non è necessaria alcuna azione da parte del cliente.
 
 >[!NOTE]
->L’Editor modello frammento di contenuto utilizza campi di percorso specializzati con Sling Resource Type &quot;dam/cfm/models/editor/components/contentreference&quot;.
-> * Attualmente queste eseguono query senza tipi di nodo specificati - con conseguente registrazione di un WARN a causa dell&#39;utilizzo dell&#39;indice lucene generico.
-> * Le istanze di questi componenti verranno presto automaticamente impostate sui tipi di nodo &#39;cq:Page&#39; e &#39;dam:Asset&#39; senza ulteriori azioni da parte del cliente.
-> * È possibile aggiungere la proprietà &#39;nodeTypes&#39; per ignorare questi tipi di nodo predefiniti. 
+>
+>L’Editor modello frammento di contenuto utilizza un percorso specializzato con il tipo di risorsa Sling `dam/cfm/models/editor/components/contentreference`.
+> * Attualmente queste eseguono query senza tipi di nodo specificati, con conseguente registrazione di un WARN a causa dell&#39;utilizzo dell&#39;indice Lucene generico.
+> * Le istanze di questi componenti verranno presto automaticamente impostate su `cq:Page` e `dam:Asset` tipi di nodo senza ulteriori azioni da parte del cliente.
+> * La `nodeTypes` è possibile aggiungere la proprietà per ignorare questi tipi di nodo predefiniti.
 
 
+## Timeline per rimozione Lucene generica {#timeline}
 
+L&#39;Adobe adotterà un approccio in due fasi per rimuovere l&#39;indice Lucene generico.
 
+* **Fase 1** (inizio previsto: 31 gennaio 2022): Non creare più `/oak:index/lucene-*` sui nuovi ambienti as a Cloud Service AEM.
+* **Fase 2** (inizio previsto: 31 marzo 2022): Rimuovi `/oak:index/lucene-*` da ambienti as a Cloud Service AEM esistenti.
 
-## Timeline per rimuovere &#39;generico lucene&#39;
+L&#39;Adobe controllerà i messaggi di log sopra indicati e cercherà di contattare i clienti che rimangono dipendenti dall&#39;indice Lucene generico.
 
-L&#39;Adobe adotterà un approccio in due fasi alla rimozione dell&#39;indice generico lucene.
-
-**Fase 1** (inizio previsto: 31 gennaio 2022): Non creare più &#39;/oak:index/lucene-*&#39; nei nuovi ambienti as a Cloud Service AEM.
-
-**Fase 2** (inizio previsto: 31 marzo 2022) : Rimuovi l&#39;indice &#39;/oak:index/lucene-*&#39; dai nuovi ambienti as a Cloud Service AEM.
-
-L&#39;Adobe controllerà i messaggi di log sopra indicati e cercherà di contattare i clienti che rimangono dipendenti dall&#39;indice lucene generico.
-
-Come mitigazione a breve termine, se necessario, l&#39;Adobe aggiungerà definizioni di indice personalizzate direttamente ai sistemi dei clienti per evitare problemi funzionali o di prestazioni dovuti alla rimozione dell&#39;indice &quot;lucene generico&quot;.
+Come mitigazione a breve termine, l&#39;Adobe aggiungerà definizioni di indice personalizzate direttamente ai sistemi dei clienti per evitare problemi funzionali o di prestazioni in seguito alla rimozione dell&#39;indice Lucene generico, se necessario.
 
 In questi casi, al cliente verrà fornita la definizione di indice aggiornata e consigliato di includerlo nelle versioni future della sua applicazione tramite Cloud Manager.
