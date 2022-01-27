@@ -1,10 +1,10 @@
 ---
 title: Note sulla versione 2021.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2021.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 7d5850cf3b16885c11d1f450a171493a74008a6c
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 3%
+source-wordcount: '1439'
+ht-degree: 48%
 
 ---
 
@@ -16,11 +16,11 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 >[!NOTE]
 >
->Da qui puoi passare alle note sulla versione delle versioni precedenti; per esempio, per quelli del 2020, 2021 e così via.
+>Da qui puoi passare alle note sulla versione delle versioni precedenti; per esempio, quelle del 2020, 2021 e così via.
 
 >[!NOTE]
 >
->Vedi [Ultimi aggiornamenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) per informazioni dettagliate sugli aggiornamenti della documentazione non direttamente correlati a una versione.
+>Consulta [Ultimi aggiornamenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=it) per informazioni dettagliate sugli aggiornamenti della documentazione non direttamente correlati a una versione.
 
 ## Data di pubblicazione {#release-date}
 
@@ -45,7 +45,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di ottobre 2021](https://video
 
 ### Nuova funzione nel [!DNL Assets] canale prerelease {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Image Smart Crop and Swatch è ora basato sui servizi Sensei più recenti, che genera colture e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali verranno mantenute al momento della rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
+* [!DNL Dynamic Media]Il ritaglio e il campione avanzato dell’immagine di è ora basato sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali verranno mantenute al momento della rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
 
 * I tag avanzati vengono applicati automaticamente alle risorse utilizzando i microservizi per le risorse, anziché i servizi di contenuti avanzati. Il modello sottostante viene aggiornato per migliorare i risultati dei tag e ridurre i pregiudizi. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -57,19 +57,19 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
 
-### Novità di [!DNL Forms] {#what-is-new-forms-oct-2021}
+### Novità in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
 * **Analytics per Forms adattivo**: È ora possibile acquisire e tenere traccia del comportamento sia di accesso che di non accesso (anonimo) tramite Adobe Analytics per Adaptive Forms per raccogliere informazioni sugli utenti finali. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza dell’utente finale.
 
 ### Nuove funzioni disponibili in [!DNL Forms] canale prerelease {#prerelease-features-forms-oct-2021}
 
-* **Esternalizzare i dati del flusso di lavoro AEM per un’elaborazione sicura**: È possibile memorizzare i dati dei flussi di lavoro AEM in-process (AEM dati variabili di flusso di lavoro) contenenti elementi di dati personali sensibili (SPD) in un archivio gestito dal cliente per un’elaborazione sicura. Gli elementi dati e le variabili del flusso di lavoro non vengono memorizzati AEM archivio e vengono recuperati su richiesta da un archivio gestito dal cliente durante l’elaborazione del flusso di lavoro.
+* **Esternalizzare i dati del flusso di lavoro AEM per un’elaborazione sicura**: è possibile memorizzare i dati dei flussi di lavoro AEM in elaborazione (dati variabili di flusso di lavoro AEM) contenenti elementi di dati personali sensibili (SPD) in un archivio gestito dal cliente per un’elaborazione sicura. Gli elementi dei dati e le variabili del flusso di lavoro non vengono memorizzati nell’archivio AEM e vengono recuperati su richiesta da un archivio gestito dal cliente durante l’elaborazione del flusso di lavoro.
 
 ### Funzioni beta di [!DNL Forms] {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) consente di combinare un modello e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch. Le API consentono di creare applicazioni che consentono di:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=it) consente di combinare un modello e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch. Le API consentono di creare applicazioni che permettono di:
 
-   * Genera i documenti compilando i file modello (PDF e XDP) con i dati XML.
+   * Generare i documenti compilando i file modello (PDF e XDP) con i dati XML.
    * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
 
 Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
@@ -82,7 +82,7 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 * Gli autori possono aggiungere collegamenti alle pagine di prodotti e catalogo nei campi di testo mediante l’editor Rich Text. È stata aggiunta un’icona CIF alla barra degli strumenti dell’editor Rich Text che consente di aprire i selettori per cercare e selezionare rapidamente il prodotto o la categoria senza uscire dal contesto.
 
-* Il carrello e il pagamento a comparsa esistenti sono stati sostituiti da pagine dedicate AEM carrello e per il pagamento. I componenti di queste pagine vengono creati utilizzando i componenti di Magento Extensible Peregrine
+* Il carrello e il pagamento a comparsa esistenti sono stati sostituiti da pagine dedicate AEM carrello e per il pagamento. I componenti di queste pagine vengono creati utilizzando i componenti di Adobe Commerce per funzioni estese
 
 * I commercianti possono nascondere alcune categorie di catalogo dei prodotti nella navigazione utilizzando il backend Commerce . Il componente core di navigazione CIF rispetta la configurazione back-end di e-commerce &quot;include nel menu&quot; per mostrare/nascondere categorie nella navigazione
 
@@ -99,7 +99,7 @@ La prossima versione è prevista per il 9 dicembre 2021.
 
 ### Novità {#what-is-new-cm-nov}
 
-* Gli utenti possono ora sfruttare le nuove pipeline Front End per distribuire esclusivamente il codice front-end in modo accelerato. Vedi [Pipe front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per saperne di più.
+* Gli utenti possono ora sfruttare le nuove pipeline Front End per distribuire esclusivamente il codice front-end in modo accelerato. Consulta [Pipeline front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per ulteriori informazioni.
 
    >[!IMPORTANT]
    >È necessario utilizzare AEM versione `2021.10.5933.20211012T154732Z` per sfruttare le nuove pipeline front-end.
@@ -112,29 +112,29 @@ La prossima versione è prevista per il 9 dicembre 2021.
 
 * La creazione di ambiente è ora disponibile tramite API pubblicamente esposte.
 
-* La `x-request-id` l&#39;intestazione di risposta è ora visibile in API Playground on [www.adobe.io](https://www.adobe.io/). Questa intestazione è utile quando si inviano problemi di assistenza clienti per la risoluzione dei problemi.
+* L’`x-request-id` intestazione di risposta è ora visibile in API Playground su [www.adobe.io](https://www.adobe.io/). Questa intestazione è utile quando si inviano problemi di assistenza clienti per la risoluzione dei problemi.
 
-* In qualità di utente, vedo la scheda Pipeline con tubazioni zero che mi forniscono la guida appropriata.
+* In qualità di utente, vedo la scheda Pipeline senza pipeline che mi forniscano la guida appropriata.
 
 * È ora disponibile una nuova pagina Attività in cui è possibile visualizzare le attività come la pipeline e le esecuzioni di codice insieme ai relativi dettagli associati. Nel tempo, le attività elencate in questa pagina si espanderanno nell’ambito insieme ai dettagli forniti.
 
-* È ora disponibile una nuova pagina Pipelines con un puntatore di stato al passaggio del mouse per una facile visualizzazione del riepilogo dei dettagli. Le esecuzioni della pipeline possono essere visualizzate insieme ai relativi dettagli associati.
+* È ora disponibile una nuova pagina di pipeline con un puntatore di stato al passaggio del mouse per una facile visualizzazione del riepilogo dei dettagli. Le esecuzioni della pipeline possono essere visualizzate insieme ai relativi dettagli associati.
 
-* L’API Edit Pipeline ora supporta la modifica dell’ambiente utilizzato nelle fasi di distribuzione.
+* L’API di modifica delle pipeline ora supporta la modifica dell’ambiente utilizzato nelle fasi di distribuzione.
 
 * È stata introdotta un&#39;ottimizzazione nel processo di scansione OakPal per i pacchetti di grandi dimensioni.
 
-* Il file CSV del problema qualità conterrà ora la marca temporale per ogni problema di qualità.
+* Il file CSV del problema qualità conterrà ora la timestamp per ogni problema di qualità.
 
 ### Correzioni di bug {#bug-fixes-nov}
 
-* Alcune configurazioni di build non ortodosse hanno comportato la memorizzazione di file non necessari nella cache degli artefatti Maven della pipeline, causando un I/O di rete estranea all’avvio e all’arresto del contenitore di build.
+* Alcune configurazioni della versione non ortodosse hanno comportato la memorizzazione di file non necessari nella cache degli artefatti Maven della pipeline, causando un I/O di rete estranea all’avvio e all’arresto del contenitore della versione.
 
 * L’API di Pipeline PATCH non riesce se la fase di distribuzione non esiste.
 
 * La `ClientlibProxyResourceCheck` la regola di qualità generava falsi problemi positivi in presenza di librerie client con percorsi di base comuni.
 
-* Il messaggio di errore quando è stato raggiunto il numero massimo di archivi non specifica il motivo dell&#39;errore.
+* Il messaggio di errore quando è stato raggiunto il numero massimo di archivi non specifica il motivo dell’errore.
 
 * In rari casi, le pipeline non riuscivano a causa di una gestione inappropriata dei tentativi di alcuni codici di risposta.
 

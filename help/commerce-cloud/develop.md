@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
+source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 65%
+source-wordcount: '1004'
+ht-degree: 64%
 
 ---
 
@@ -68,25 +68,25 @@ Per lo sviluppo locale del componente aggiuntivo CIF utilizzando l’SDK di AEM 
 
    Il file ZIP del componente aggiuntivo CIF contiene due file di archivio Sling Feature `.far`. Usa sempre quello corretto per AEM Author o AEM Publish, a seconda di come verrà eseguito l’SDK locale di AEM as a Cloud Service.
 
-1. Crea una variabile di ambiente del sistema operativo locale denominata `COMMERCE_ENDPOINT` contenente l’endpoint GraphQL di Magento.
+1. Creare una variabile di ambiente del sistema operativo locale denominata `COMMERCE_ENDPOINT` contenente l’endpoint GraphQL di Adobe Commerce.
 
    Esempio Mac OSX:
 
    ```bash
-   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    Esempio Windows:
 
    ```bash
-   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    Questa variabile viene utilizzata da AEM per connettersi al sistema commerce. Inoltre, il componente aggiuntivo CIF include un proxy inverso locale per rendere l’endpoint Commerce GraphQL disponibile localmente. Viene utilizzato dagli strumenti di authoring CIF (console del prodotto e selettori) e per i componenti CIF lato client che eseguono chiamate GraphQL dirette.
 
    Questa variabile deve essere impostata anche per l’ambiente di AEM as a Cloud Service. Per ulteriori informazioni sulle variabili, vedi [Configurazione di OSGi per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (Facoltativo) Per abilitare le funzioni di catalogo in staging, devi creare un token di integrazione per l’istanza di Magento. Segui i passaggi descritti in [Introduzione](./getting-started.md#staging) per creare il token.
+1. (Facoltativo) Per abilitare le funzioni di catalogo in staging, devi creare un token di integrazione per l’istanza Adobe Commerce. Segui i passaggi descritti in [Introduzione](./getting-started.md#staging) per creare il token.
 
    Imposta un segreto OSGi con il nome `COMMERCE_AUTH_HEADER` al seguente valore:
 

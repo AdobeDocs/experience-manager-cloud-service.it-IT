@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 2afeb12ec7b99da056652fc869da5bc82db30754
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1096'
 ht-degree: 29%
 
 ---
@@ -32,7 +32,7 @@ Una volta effettuato il provisioning con il componente aggiuntivo CIF, questo ve
 
 Il secondo passaggio è autonomo per ogni ambiente AEM as a Cloud Service. Dopo il provisioning iniziale del componente aggiuntivo CIF, è necessario effettuare alcune configurazioni aggiuntive.
 
-## Collegamento di AEM con una soluzione Commerce {#magento}
+## Collegamento di AEM con una soluzione Commerce {#solution}
 
 Per collegare il componente aggiuntivo CIF e la [Componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) con una soluzione commerce, devi fornire l’URL dell’endpoint GraphQL tramite una variabile di ambiente Cloud Manager. Il nome della variabile è `COMMERCE_ENDPOINT`. È necessario configurare una connessione protetta tramite HTTPS.
 
@@ -81,7 +81,7 @@ Per collegare AEM con una soluzione commerce tramite Adobe I/O CLI, segui questi
 
    Per informazioni dettagliate, consulta la [documentazione CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid).
 
-   L’URL dell’endpoint GraphQL di e-commerce deve puntare al servizio GraphQl di e-commerce e utilizzare una connessione HTTPS protetta. Esempio: `https://<yourmagentosystem>/graphql`.
+   L’URL dell’endpoint GraphQL di e-commerce deve puntare al servizio GraphQl di e-commerce e utilizzare una connessione HTTPS protetta. Esempio: `https://<yourcommercesystem>/graphql`.
 
 4. Abilitare le funzioni di catalogo in fase che richiedono l’autenticazione (facoltativo)
 
@@ -103,7 +103,7 @@ Dopodiché, potrai utilizzare AEM Commerce as a Cloud Service e implementare il 
 
 ## Configurazione di archivi e cataloghi {#catalog}
 
-Il componente aggiuntivo CIF e il [Componenti core CIF](https://github.com/adobe/aem-core-cif-components) può essere utilizzato su più strutture di sito AEM collegate a diversi store commerce (o viste store, ecc.). Per impostazione predefinita, il componente aggiuntivo CIF viene distribuito con una configurazione predefinita che si collega all’archivio e al catalogo predefiniti di Adobe Commerce (Magento).
+Il componente aggiuntivo CIF e il [Componenti core CIF](https://github.com/adobe/aem-core-cif-components) può essere utilizzato su più strutture di sito AEM collegate a diversi store commerce (o viste store, ecc.). Per impostazione predefinita, il componente aggiuntivo CIF viene distribuito con una configurazione predefinita che si collega all’archivio e al catalogo predefiniti di Adobe Commerce.
 
 Questa configurazione può essere regolata per il progetto tramite la configurazione del Cloud Service CIF, come descritto di seguito:
 
@@ -118,7 +118,7 @@ Questa configurazione può essere regolata per il progetto tramite la configuraz
 È possibile configurare le seguenti proprietà:
 
 - Client GraphQL: seleziona il client GraphQL configurato per la comunicazione back-end Commerce. In genere questo dovrebbe rimanere il valore predefinito.
-- Visualizzazione archivio: l&#39;identificatore della vista archivio (Magento). Se questo campo viene lasciato vuoto, verrà utilizzata la visualizzazione archivio predefinita.
+- Visualizzazione archivio: l&#39;identificatore della vista archivio. Se questo campo viene lasciato vuoto, verrà utilizzata la visualizzazione archivio predefinita.
 - Percorso proxy GraphQL: percorso URL del proxy GraphQL in AEM per le richieste proxy all’endpoint GraphQL di back-end per e-commerce.
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ Questa configurazione può essere regolata per il progetto tramite la configuraz
 - Abilita supporto UID catalogo : abilita il supporto per UID invece di ID nelle chiamate GraphQL di back-end per e-commerce.
    >[!NOTE]
    >
-   > Il supporto per gli UID è stato introdotto in Adobe Commerce (Magento) 2.4.2. Abilitare questo passaggio solo se il backend commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
+   > Il supporto per gli UID è stato introdotto in Adobe Commerce 2.4.2. Abilitalo solo se il backend commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
 - Identificatore della categoria principale del catalogo: l&#39;identificatore (UID o ID) della directory principale del catalogo store
    >[!CAUTION]
    >

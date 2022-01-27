@@ -2,10 +2,10 @@
 title: Memorizzazione in cache e prestazioni
 description: Scopri le diverse configurazioni disponibili per abilitare GraphQL e la memorizzazione in cache dei contenuti per ottimizzare le prestazioni dell’implementazione commerce.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 11ad29835688b5a6f79ee16760cc03a6ee82d6a3
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 88%
+source-wordcount: '845'
+ht-degree: 84%
 
 ---
 
@@ -23,7 +23,7 @@ Una volta configurata per un determinato componente, la cache inizia a memorizza
 
 Quando si configura la memorizzazione in cache per i componenti, il nome della cache deve corrispondere al nome dei componenti **proxy** definiti nel progetto.
 
-Prima che il client invii una richiesta GraphQL, verificherà se la **stessa** richiesta GraphQL è già stata memorizzata nella cache e potrebbe restituire la risposta nella cache. Per trovare una corrispondenza, la richiesta GraphQL DEVE corrispondere esattamente, ovvero la query, il nome dell’operazione (se presente), le variabili (se presenti) DEVONO essere tutte uguali alla richiesta memorizzata nella cache. Anche tutte le intestazioni HTTP personalizzate che potrebbero essere impostate DEVONO essere uguali. Ad esempio, l’intestazione `Store` di Magento DEVE corrispondere.
+Prima che il client invii una richiesta GraphQL, verificherà se la **stessa** richiesta GraphQL è già stata memorizzata nella cache e potrebbe restituire la risposta nella cache. Per trovare una corrispondenza, la richiesta GraphQL DEVE corrispondere esattamente, ovvero la query, il nome dell’operazione (se presente), le variabili (se presenti) DEVONO essere tutte uguali alla richiesta memorizzata nella cache. Anche tutte le intestazioni HTTP personalizzate che potrebbero essere impostate DEVONO essere uguali. Ad esempio, Adobe Commerce `Store` L&#39;intestazione DEVE corrispondere.
 
 ### Esempi {#examples}
 
@@ -49,7 +49,7 @@ La memorizzazione nella cache per altri componenti deve essere definita in base 
 
 La memorizzazione nella cache di pagine o frammenti AEM in [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) è una best practice per qualsiasi progetto AEM. In genere, si basa su tecniche di invalidazione che garantiscono che qualsiasi contenuto modificato in AEM venga aggiornato correttamente in Dispatcher. Si tratta di una funzione fondamentale della strategia di caching di AEM Dispatcher.
 
-Oltre al contenuto CIF puro gestito da AEM, una pagina può in genere visualizzare i dati di e-commerce recuperati dinamicamente da Magento tramite GraphQL. Anche se la struttura della pagina stessa potrebbe non cambiare mai, il contenuto di e-commerce potrebbe cambiare, ad esempio, se alcuni dati di prodotto (nome, prezzo, ecc.) cambiano nel Magento.
+Oltre al contenuto CIF puro AEM gestito, in genere una pagina può visualizzare i dati di e-commerce recuperati dinamicamente da Adobe Commerce tramite GraphQL. Anche se la struttura della pagina stessa potrebbe non cambiare mai, il contenuto commerciale potrebbe cambiare, ad esempio, se alcuni dati di prodotto (nome, prezzo, ecc.) modifiche in Adobe Commerce.
 
 Per garantire che le pagine CIF possano essere memorizzate nella cache per un periodo di tempo limitato in AEM Dispatcher, si consiglia quindi di utilizzare [l’invalidazione della cache basata sul tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (o memorizzazione in cache basata su TTL) durante il caching delle pagine CIF in AEM Dispatcher. Questa funzione può essere configurata in AEM utilizzando il pacchetto [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) aggiuntivo.
 

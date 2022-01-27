@@ -2,10 +2,10 @@
 title: Migrazione al componente aggiuntivo CIF (AEM Commerce Integration Framework)
 description: Come migrare al componente aggiuntivo CIF di AEM Commerce Integration Framework (CIF) da una versione precedente
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 18%
+source-wordcount: '490'
+ht-degree: 21%
 
 ---
 
@@ -15,19 +15,19 @@ Questa guida aiuta a identificare le aree da aggiornare per la migrazione degli 
 
 ## Componente aggiuntivo CIF
 
-Ad Experience Manager, come Cloud Service, il componente aggiuntivo CIF è l’unica soluzione di integrazione Commerce supportata per le soluzioni Commerce di Adobe e Commerce di terze parti. Il componente aggiuntivo CIF viene distribuito automaticamente per i clienti su Experience Manager come Cloud Service, non è necessaria alcuna distribuzione manuale. Consulta [Guida introduttiva a Commerce as a Cloud Service](getting-started.md) .
+Ad Experience Manager, as a Cloud Service, il componente aggiuntivo CIF è l’unica soluzione di integrazione Commerce supportata per le soluzioni commerce Adobe Commerce e di terze parti. Il componente aggiuntivo CIF viene distribuito automaticamente per i clienti su Experience Manager as a Cloud Service, non è necessaria alcuna distribuzione manuale. Vedi [Guida introduttiva a AEM Commerce as a Cloud Service](getting-started.md).
 
-Per supportare i progetti che utilizzano l’Adobe CIF, fornisci [AEM componenti core CIF](https://github.com/adobe/aem-core-cif-components).
+Per supportare i progetti che utilizzano l’Adobe CIF, fornisci [Componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components).
 
-Il componente aggiuntivo CIF è disponibile per AEM 6.5 e tramite il [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). È compatibile e fornisce le stesse caratteristiche del componente aggiuntivo CIF, ad Experience Manager come Cloud Service - non sono necessarie regolazioni.
+Il componente aggiuntivo CIF è disponibile anche per AEM 6.5 tramite il [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). È compatibile e fornisce le stesse funzionalità del componente aggiuntivo CIF, ad Experience Manager as a Cloud Service, senza richiedere alcuna regolazione.
 
-Classic CIF con le sue dipendenze non è più disponibile. Il codice che si basa su questa versione CIF che utilizza `com.adobe.cq.commerce.api` API Java deve essere regolato in base al componente aggiuntivo CIF e ai relativi principi.
+Classic CIF con le sue dipendenze non è più disponibile. Codice basato su questa versione CIF utilizzando `com.adobe.cq.commerce.api` Le API Java devono essere regolate in base al componente aggiuntivo CIF e ai relativi principi.
 
 Impossibile installare più il connettore CIF precedentemente disponibile. Il codice che si basa su questo connettore deve essere regolato in base al componente aggiuntivo CIF e ai suoi principi.
 
 ## Struttura del progetto
 
-Scopri la [AEM Struttura del progetto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) e le caratteristiche di AEM come Cloud Service. Adatta la configurazione del progetto al layout di AEM as a Cloud Service.
+Scopri le [AEM struttura del progetto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) e le caratteristiche di AEM as a Cloud Service. Adatta la configurazione del progetto al layout di AEM as a Cloud Service.
 Rispetto alle implementazioni di AEM 6.5, le differenze principali sono due:
 
 * Il bundle OSGI client GraphQL **non deve** più essere incluso nel progetto AEM, ma viene distribuito tramite il componente aggiuntivo CIF.
@@ -43,7 +43,7 @@ L&#39;importazione dei dati del catalogo dei prodotti non è più supportata. L�
 
 >[!TIP]
 >
->Se non sono disponibili API in tempo reale, per l’integrazione è necessario utilizzare una cache di prodotto esterna con API. Esempio [Magento open-source](https://magento.com/products/magento-open-source).
+>Se non sono disponibili API in tempo reale, per l’integrazione è necessario utilizzare una cache di prodotto esterna con API. Esempio [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
 ## Esperienze del catalogo dei prodotti con rendering AEM
 
