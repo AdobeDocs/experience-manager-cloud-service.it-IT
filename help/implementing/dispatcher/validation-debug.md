@@ -1,16 +1,16 @@
 ---
-title: Convalida e debug tramite gli strumenti di Dispatcher
-description: Convalida e debug tramite gli strumenti di Dispatcher
+title: Convalida e debug con gli strumenti di Dispatcher
+description: Convalida e debug con gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
+source-git-commit: 5a586e99febac6ee2f0f566e508028812bf89372
 workflow-type: tm+mt
-source-wordcount: '2413'
-ht-degree: 1%
+source-wordcount: '2433'
+ht-degree: 2%
 
 ---
 
-# Convalida e debug tramite gli strumenti di Dispatcher {#Dispatcher-in-the-cloud}
+# Convalida e debug con gli strumenti di Dispatcher {#Dispatcher-in-the-cloud}
 
 ## Introduzione {#apache-and-dispatcher-configuration-and-testing}
 
@@ -126,6 +126,8 @@ Si consiglia che i file di cui sopra facciano riferimento ai file immutabili ele
 * `conf.d/available_vhosts/default.vhost`
 
 Contiene un esempio di host virtuale. Per il tuo host virtuale, crea una copia di questo file, personalizzalo, vai a `conf.d/enabled_vhosts` e crea un collegamento simbolico alla copia personalizzata.
+
+Assicurati che sia sempre disponibile un host virtuale che corrisponda a ServerAlias &quot;\*.local&quot; e anche localhost, necessario per i processi di Adobe interni.
 
 * `conf.d/dispatcher_vhost.conf`
 
