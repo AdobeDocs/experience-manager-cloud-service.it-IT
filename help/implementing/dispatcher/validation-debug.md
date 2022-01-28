@@ -3,9 +3,9 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Convalida e debug con gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 5a586e99febac6ee2f0f566e508028812bf89372
+source-git-commit: 7306afb0ff2e84077673bbd9c728028e0933ebb1
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 2%
 
 ---
@@ -127,7 +127,7 @@ Si consiglia che i file di cui sopra facciano riferimento ai file immutabili ele
 
 Contiene un esempio di host virtuale. Per il tuo host virtuale, crea una copia di questo file, personalizzalo, vai a `conf.d/enabled_vhosts` e crea un collegamento simbolico alla copia personalizzata.
 
-Assicurati che sia sempre disponibile un host virtuale che corrisponda a ServerAlias &quot;\*.local&quot; e anche localhost, necessario per i processi di Adobe interni.
+Assicurati che un host virtuale sia sempre disponibile e che corrisponda a ServerAlias `\*.local` e localhost, necessari per i processi di Adobe interni.
 
 * `conf.d/dispatcher_vhost.conf`
 
