@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo per AEM as a Cloud Service
 description: Linee guida per lo sviluppo per AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
+source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2288'
 ht-degree: 2%
 
 ---
@@ -105,15 +105,34 @@ Per modificare i livelli di registro per gli ambienti Cloud, la configurazione S
 
 **Attivazione del livello di registro DEBUG**
 
-Il livello di registro predefinito è INFO, ovvero i messaggi DEBUG non vengono registrati.
-Per attivare il livello di log DEBUG, imposta la
+Il livello di registro predefinito è INFO, ovvero i messaggi DEBUG non vengono registrati. Per attivare il livello di registro DEBUG, aggiornare la seguente proprietà alla modalità di debug.
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-per eseguire il debug. Non lasciare il registro a livello di registro DEBUG più a lungo del necessario, in quanto genera molti registri.
+Ad esempio, imposta `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` con il seguente valore.
+
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+Non lasciare il registro a livello di registro DEBUG più a lungo del necessario, in quanto questo genera molte voci.
+
+È possibile impostare livelli di registro discreti per i diversi ambienti AEM utilizzando il targeting di configurazione OSGi basato sulla modalità di esecuzione, se è opportuno effettuare sempre l&#39;accesso `DEBUG` durante lo sviluppo. Esempio:
+
+| Ambiente | Posizione di configurazione OSGi in modalità di esecuzione | `org.apache.sling.commons.log.level` valore della proprietà | | - | - | - | | Sviluppo | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | | Stage | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | AVVERTENZA | | Produzione | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERRORE |
+
 Una riga nel file di debug solitamente inizia con DEBUG, e quindi fornisce il livello di log, l&#39;azione di installazione e il messaggio di log. Esempio:
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 I livelli di log sono i seguenti:
 
