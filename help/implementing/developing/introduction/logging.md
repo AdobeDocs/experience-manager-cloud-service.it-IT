@@ -2,10 +2,10 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare Logging per AEM as a Cloud Service per configurare parametri globali per il servizio di registrazione centrale, impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
+source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 2%
+source-wordcount: '2316'
+ht-degree: 3%
 
 ---
 
@@ -112,7 +112,7 @@ AEM I livelli di registro sono impostati per tipo di ambiente tramite la configu
 <tbody>
 <tr>
 <td>Data e ora</td>
-<td>29.04.2020 21:50:13.398</td>
+<td>29.04.2020 21:50:13,398</td>
 </tr>
 <tr>
 <td>ID nodo as a Cloud Service AEM</td>
@@ -243,7 +243,7 @@ Il registro AEM richiesta HTTP non è configurabile in AEM as a Cloud Service.
 
 AEM come registrazione Cloud Service degli accessi HTTP mostra le richieste HTTP in ordine temporale. Ogni voce di registro rappresenta la richiesta HTTP che accede a AEM.
 
-Questo registro è utile per comprendere rapidamente quali richieste HTTP vengono effettuate per AEM, se riescono guardando il codice di stato della risposta HTTP che accompagna e quanto tempo la richiesta HTTP ha impiegato per essere completata. Questo registro può anche essere utile per eseguire il debug di un&#39;attività specifica di un utente filtrando le voci di registro da Utenti.
+Questo registro è utile per comprendere rapidamente quali richieste HTTP vengono effettuate a AEM, se riescono guardando il codice di stato della risposta HTTP che accompagna e quanto tempo la richiesta HTTP ha impiegato per essere completata. Questo registro può anche essere utile per eseguire il debug di un&#39;attività specifica di un utente filtrando le voci di registro da Utenti.
 
 **Esempio di output del registro**
 
@@ -262,7 +262,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | Protocollo | HTTP/1.1 |
 | Stato della risposta HTTP | 200 |
-| Tempo di richiesta HTTP in millisecondi | 1 141 |
+| Dimensioni in byte del corpo della risposta | 1 141 |
 | Referrer | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
 | Agente utente | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
@@ -286,7 +286,7 @@ Questo set di registri fornisce informazioni sulle richieste HTTP al livello di 
 
 Il registro di accesso Apache HTTP Web Server fornisce istruzioni per ogni richiesta HTTP che raggiunge il server Web/Dispatcher del livello Publish. Tieni presente che le richieste che vengono servite da una rete CDN a monte non vengono riportate in questi registri.
 
-Consulta le informazioni sul formato del registro degli errori nella [documentazione ufficiale di apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
+Consulta le informazioni sul formato del registro degli errori nel [documentazione ufficiale apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
 **Esempio di output del registro**
 
@@ -314,7 +314,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Data e ora</td>
-<td>01/maggio/2020:00:09:46 +0000</td>
+<td>01/05/2020:00:09:46 +0000</td>
 </tr>
 <tr>
 <td>Metodo HTTP</td>
@@ -355,7 +355,7 @@ Questo registro non è configurabile in AEM as a Cloud Service.
 
 Il registro degli errori del server Web HTTP Apache fornisce istruzioni per ogni errore nel server Web/Dispatcher del livello di pubblicazione.
 
-Consulta le informazioni sul formato del registro degli errori nella [documentazione ufficiale di apache](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
+Consulta le informazioni sul formato del registro degli errori nel [documentazione ufficiale apache](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
 **Esempio di output del registro**
 
@@ -371,7 +371,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <tbody>
 <tr>
 <td>Data e ora</td>
-<td>Venerdì 17 luglio 02:16:42.608913 2020</td>
+<td>Venerdì 17 luglio 02:16:42,608913 2020</td>
 </tr>
 <tr>
 <td>Livello evento</td>
@@ -398,7 +398,7 @@ I livelli di registro mod_rewrite sono definiti dalla variabile REWRITE_LOG_LEVE
 
 Può essere impostato su Errore, Avverti, Informazioni, Debug e Trace1 - Trace8, con un valore predefinito Avverti. Per eseguire il debug di RewriteRules, si consiglia di elevare il livello di log a Trace2.
 
-Per ulteriori informazioni, consulta la [documentazione del modulo mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) .
+Consulta la sezione [documentazione del modulo mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) per ulteriori informazioni.
 
 Per impostare il livello di log per ambiente, utilizza il ramo condizionale appropriato nel file global.var, come descritto di seguito:
 
@@ -433,7 +433,7 @@ Define REWRITE_LOG_LEVEL Debug
 <tbody>
 <tr>
 <td>Data e ora</td>
-<td>[17/lug/2020:23:48:16 +000]</td>
+<td>[17/lug/2020]:23:48:16 +000]</td>
 </tr>
 <tr>
 <td>Nome Pod</td>
@@ -478,7 +478,7 @@ Può essere impostato su Errore, Avverti, Informazioni, Debug e Trace1, con un v
 
 Mentre la funzione di log del Dispatcher supporta diversi altri livelli di granularità della registrazione, l’AEM as a Cloud Service consiglia di utilizzare i livelli descritti di seguito.
 
-Per impostare il livello di registro per ambiente, utilizza il ramo condizionale appropriato nel file `global.var` come descritto di seguito:
+Per impostare il livello di registro per ambiente, utilizza il ramo condizionale appropriato nel `global.var` come descritto di seguito:
 
 ```
 Define DISP_LOG_LEVEL Debug
@@ -499,30 +499,30 @@ Define DISP_LOG_LEVEL Debug
 
 ### Ambienti cloud {#cloud-environments}
 
-È possibile accedere AEM registri as a Cloud Service per i servizi cloud scaricando tramite l’interfaccia di Cloud Manager o inserendo nella riga di comando i registri nella riga di comando utilizzando l’interfaccia della riga di comando di Adobe I/O. Per ulteriori informazioni, consulta la [documentazione sulla registrazione di Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
+È possibile accedere AEM registri as a Cloud Service per i servizi cloud scaricando tramite l’interfaccia di Cloud Manager o inserendo nella riga di comando i registri nella riga di comando utilizzando l’interfaccia della riga di comando di Adobe I/O. Per ulteriori informazioni, consulta la sezione [Documentazione sulla registrazione di Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
 
 ### SDK locale {#local-sdk}
 
 AEM SDK as a Cloud Service fornisce file di registro per supportare lo sviluppo locale.
 
-I registri AEM si trovano nella cartella `crx-quickstart/logs`, in cui è possibile visualizzare i seguenti registri:
+I registri AEM si trovano nella cartella `crx-quickstart/logs`, dove è possibile visualizzare i seguenti registri:
 
 * Registro Java AEM: `error.log`
 * Registro delle richieste HTTP AEM: `request.log`
 * Registro di accesso HTTP AEM: `access.log`
 
-I registri di livello Apache, incluso il dispatcher, si trovano nel contenitore Docker che contiene il Dispatcher. Per informazioni su come avviare il Dispatcher, consulta la [documentazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) .
+I registri di livello Apache, incluso il dispatcher, si trovano nel contenitore Docker che contiene il Dispatcher. Consulta la sezione [Documentazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) per informazioni su come avviare Dispatcher.
 
 Per recuperare i registri:
 
 1. Nella riga di comando, digita `docker ps` per elencare i contenitori
-1. Per accedere al contenitore, digita &quot;`docker exec -it <container> /bin/sh`&quot;, dove `<container>` è l’ID del contenitore del dispatcher del passaggio precedente
+1. Per accedere al contenitore, digita &quot;`docker exec -it <container> /bin/sh`&quot;, dove `<container>` è l’ID del contenitore dispatcher del passaggio precedente
 1. Passa alla directory principale della cache in `/mnt/var/www/html`
-1. I log si trovano sotto `/etc/httpd/logs`
+1. I log sono in `/etc/httpd/logs`
 1. Inspect registra: sono accessibili nella cartella XYZ, dove è possibile visualizzare i seguenti registri:
-   * Registro di accesso al server Web HTTPD di Apache - `httpd_access.log`
-   * Log degli errori del server web HTTPD di Apache - `httpd_error.log`
-   * Log del dispatcher - `dispatcher.log`
+   * Registro di accesso al server Web HTTPD di Apache `httpd_access.log`
+   * Log degli errori del server web HTTPD di Apache `httpd_error.log`
+   * Log di Dispatcher - `dispatcher.log`
 
 I registri vengono inoltre stampati direttamente nell&#39;uscita terminale. Nella maggior parte dei casi, questi log devono essere DEBUG, che può essere realizzato passando il livello Debug come parametro durante l&#39;esecuzione di Docker. Esempio:
 
@@ -552,7 +552,7 @@ Nella richiesta di assistenza, i clienti devono indicare:
 * Indirizzo endpoint HEC Splunk
 * Indice Splunk
 * Porta Splunk
-* Il token Splunk HEC. Per ulteriori informazioni, consulta [questa pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) .
+* Il token Splunk HEC. Vedi [questa pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) per ulteriori informazioni.
 
 Le proprietà di cui sopra devono essere specificate per ciascuna combinazione di programmi/tipi di ambiente pertinente.  Ad esempio, se un cliente desidera ambienti di sviluppo, staging e produzione, deve fornire tre set di informazioni, come indicato di seguito.
 
@@ -564,7 +564,7 @@ Assicurati che la richiesta iniziale includa tutti gli ambienti di sviluppo che 
 
 Se dopo la richiesta iniziale sono stati creati nuovi ambienti di sviluppo per cui è previsto l’inoltro Splunk, ma non è stato abilitato , è necessario effettuare una richiesta aggiuntiva.
 
-Inoltre, se sono stati richiesti ambienti di sviluppo, è possibile che altri ambienti di sviluppo non inclusi nella richiesta o persino negli ambienti sandbox abbiano abilitato l’inoltro Splunk e condividano un indice Splunk. I clienti possono utilizzare il campo `aem_env_id` per distinguere tra questi ambienti.
+Inoltre, se sono stati richiesti ambienti di sviluppo, è possibile che altri ambienti di sviluppo non inclusi nella richiesta o persino negli ambienti sandbox abbiano abilitato l’inoltro Splunk e condividano un indice Splunk. I clienti possono utilizzare `aem_env_id` per distinguere tra questi ambienti.
 
 Di seguito è riportato un esempio di richiesta di assistenza clienti:
 
@@ -589,7 +589,7 @@ Programma 123, Dev Envs
 * Porta splunk: 443
 * Token HEC Splunk: ABC123
 
-Può essere sufficiente che lo stesso indice Splunk sia utilizzato per ogni ambiente, nel qual caso il campo `aem_env_type` può essere utilizzato per differenziare in base ai valori dev, stage e prod. Se sono presenti più ambienti di sviluppo, è possibile utilizzare anche il campo `aem_env_id` . Alcune organizzazioni possono scegliere un indice separato per i registri dell&#39;ambiente di produzione se l&#39;indice associato limita l&#39;accesso a un set ridotto di utenti Splunk.
+Può essere sufficiente che lo stesso indice Splunk sia utilizzato per ogni ambiente, nel qual caso `aem_env_type` può essere utilizzato per differenziare in base ai valori dev, stage e prod. Se sono presenti più ambienti di sviluppo, la `aem_env_id` può essere utilizzato anche . Alcune organizzazioni possono scegliere un indice separato per i registri dell&#39;ambiente di produzione se l&#39;indice associato limita l&#39;accesso a un set ridotto di utenti Splunk.
 
 Ecco un esempio di voce di registro:
 
