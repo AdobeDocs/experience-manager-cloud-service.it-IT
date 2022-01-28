@@ -1,9 +1,9 @@
 ---
 title: 'Usa font personalizzati '
 description: 'Usa font personalizzati '
-source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 È possibile [incorporare un font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) a un documento PDF. Quando un font è incorporato, il documento PDF appare identico su tutte le piattaforme. Utilizzava un font incorporato per garantire un aspetto e un aspetto coerenti. Quando un font non è incorporato, il rendering del font dipende dalle impostazioni di rendering del client di visualizzazione di PDF. Se il font è disponibile nel computer client, PDF utilizza il font specificato, altrimenti il font utilizzato per il rendering di PDF sarà un font di fallback.
 
-## Aggiungi font personalizzati al tuo ambiente Forms as a Cloud Service
+## Aggiungi font personalizzati al tuo ambiente Forms as a Cloud Service {#custom-fonts-cloud-service}
 
 Per aggiungere font personalizzati all’ambiente del Cloud Service:
 
-1. Imposta e apri il progetto di sviluppo locale. È possibile utilizzare qualsiasi IDE desiderato.
+1. Imposta e apri la [progetto di sviluppo locale](setup-local-development-environment.md). È possibile utilizzare qualsiasi IDE desiderato.
 1. Nella struttura di cartelle di livello superiore del progetto, crea una cartella per salvare i font personalizzati e aggiungere font personalizzati alla cartella. Ad esempio, fonts/src/main/resources
    ![Cartella Font](assets/fonts.png)
 
@@ -71,3 +71,21 @@ Per aggiungere font personalizzati all’ambiente del Cloud Service:
    ```
 
 1. Archivia il codice aggiornato e [eseguire la pipeline](/help/implementing/cloud-manager/deploy-code.md) per distribuire i font nell’ambiente di Cloud Service.
+
+1. Apri il prompt dei comandi, accedi alla cartella del progetto locale ed esegui il comando sottostante. Crea un pacchetto i font in un file .jar. Puoi usare il file .jar per la distribuzione locale del progetto.
+
+```shell
+mvn clean install
+```
+
+## Aggiungi font personalizzati al tuo ambiente di sviluppo del Cloud Service Forms locale {#custom-fonts-cloud-service-sdk}
+
+1. Avvia l&#39;ambiente di sviluppo locale.
+1. Passa a [archivio crx]\install folder
+1. Posiziona il file .jar contenente font personalizzati e codice di distribuzione pertinente nella cartella di installazione. Se non disponi del file .jar, esegui i passaggi elencati in [Aggiungi font personalizzati al tuo ambiente Forms as a Cloud Service](#custom-fonts-cloud-service) per generare il file.
+1. Esegui il [ambiente SDK basato su docker](setup-local-development-environment.md#docker-microservices)
+
+
+   >[!NOTE]
+   >
+   >Ogni volta che distribuisci un file .jar aggiornato per aggiungere o rimuovere font personalizzati nell’ambiente di distribuzione locale, interrompi e avvia l’ambiente SDK basato su docker.
