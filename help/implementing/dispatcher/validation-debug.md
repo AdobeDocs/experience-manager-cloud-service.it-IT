@@ -3,9 +3,9 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Convalida e debug con gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 7306afb0ff2e84077673bbd9c728028e0933ebb1
+source-git-commit: ddc49ef1eed491a4464d17b6a47f924c42381e7f
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2518'
 ht-degree: 2%
 
 ---
@@ -441,6 +441,8 @@ Nella configurazione del Dispatcher è disponibile la stessa variabile di ambien
   { "${VIRTUALHOST}" }
 }
 ```
+
+In alternativa, puoi utilizzare le variabili di ambiente Cloud Manager nella configurazione httpd/dispatcher. Questo metodo è particolarmente importante se un programma dispone di più ambienti di sviluppo e alcuni di questi ambienti di sviluppo hanno valori diversi per la configurazione httpd/dispatcher. La stessa sintassi ${VIRTUALHOST} verrebbe utilizzata come nell&#39;esempio precedente, tuttavia non verranno utilizzate le dichiarazioni Define nel file delle variabili di cui sopra. Leggi la sezione [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en) per istruzioni su come configurare le variabili di ambiente di Cloud Manager.
 
 Quando verifichi la configurazione localmente, puoi simulare diversi tipi di ambiente passando la variabile `DISP_RUN_MODE` al `docker_run.sh` script direttamente:
 
