@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] Elaborazione batch di comunicazioni as a Cloud Service
 description: Come creare comunicazioni personalizzate e orientate al brand?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
@@ -168,55 +168,6 @@ Comprendiamo con l&#39;aiuto di un esempio: Supponiamo che sia presente un file 
 >[!NOTE]
 >
 >L&#39;elaborazione di un batch può richiedere un po&#39; di tempo a seconda del numero di record di input e della complessità del modello, attendere alcuni minuti prima di controllare le cartelle di destinazione per i file di output.
-
-## Considerazioni  {#considerations-for-communications-apis}
-
-### Dati modulo {#form-data}
-
-Le API di comunicazione accettano come input sia una struttura del modulo generalmente creata in Designer che i dati del modulo XML. Per compilare un documento con i dati, nei dati del modulo XML deve esistere un elemento XML per ogni campo del modulo che si desidera compilare. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell’elemento XML non corrisponde al nome del campo. Non è necessario stabilire una corrispondenza con l’ordine di visualizzazione degli elementi XML. Il fattore importante è che gli elementi XML sono specificati con i valori corrispondenti.
-
-Prendi in considerazione il seguente modulo di richiesta di prestito:
-
-![Modulo di domanda di prestito](assets/loanFormData.png)
-
-Per unire i dati alla struttura del modulo, creare un’origine dati XML corrispondente al modulo. L&#39;XML seguente rappresenta un&#39;origine dati XML corrispondente al modulo di applicazione per l&#39;ipoteca di esempio.
-
-```XML
-<?xml version="1.0" encoding="UTF-8" ?>
-- <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
-- <xfa:data>
-- <data>
-    - <Layer>
-        <closeDate>1/26/2007</closeDate>
-        <lastName>Johnson</lastName>
-        <firstName>Jerry</firstName>
-        <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>
-        <city>New York</city>
-        <zipCode>00501</zipCode>
-        <state>NY</state>
-        <dateBirth>26/08/1973</dateBirth>
-        <middleInitials>D</middleInitials>
-        <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>
-        <phoneNumber>5555550000</phoneNumber>
-    </Layer>
-    - <Mortgage>
-        <mortgageAmount>295000.00</mortgageAmount>
-        <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>
-        <purchasePrice>300000</purchasePrice>
-        <downPayment>5000</downPayment>
-        <term>25</term>
-        <interestRate>5.00</interestRate>
-    </Mortgage>
-</data>
-</xfa:data>
-</xfa:datasets>
-```
-
-### Tipi di documenti supportati {#supported-document-types}
-
-Per un accesso completo alle funzionalità di rendering delle API di comunicazione, si consiglia di utilizzare un file XDP come input. A volte è possibile utilizzare un file PDF. Tuttavia, l’utilizzo di un file PDF come input presenta alcune limitazioni:
-
-Un documento PDF che non contiene un flusso XFA non può essere rappresentato come PostScript, PCL o ZPL. Le API di comunicazione possono eseguire il rendering dei documenti PDF con flussi XFA (ovvero moduli creati in Designer) in formati laser ed etichette. Se il documento PDF è firmato, certificato o contiene diritti di utilizzo (applicati utilizzando il servizio AEM Forms Reader Extensions), non può essere sottoposto a rendering in questi formati di stampa.
 
 ## Documentazione di riferimento API
 
