@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] Elaborazione batch di comunicazioni as a Cloud Service
 description: Come creare comunicazioni personalizzate e orientate al brand?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '1957'
 ht-degree: 0%
 
 ---
@@ -221,44 +221,3 @@ Un documento PDF che non contiene un flusso XFA non può essere rappresentato co
 ## Documentazione di riferimento API
 
 La documentazione di riferimento API fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API è disponibile in formato .yaml. È possibile scaricare [API batch](assets/batch-api.yaml) e caricalo su Postman per verificare la funzionalità delle API.
-
-## Problemi noti {#known-issues}
-
-* Quando si specifica PRINT, è possibile specificare un particolare tipo di rendering solo una volta nell&#39;elenco delle opzioni di stampa. Ad esempio, non è possibile avere due opzioni di stampa ciascuna che specificano un tipo di rendering PCL.
-
-* Non modificare la configurazione USC/Azure Cloud dell’origine dati utilizzata in una configurazione batch mentre il batch è in esecuzione. Anche dopo l&#39;esecuzione, se è necessario un aggiornamento, crea una copia della configurazione invece di aggiornare quella utilizzata in una configurazione batch esistente.
-
-## Best practice   {#best-practices}
-
-* Adobe consiglia di ospitare l’archivio dei contenitori BLOB di file di dati nell’area cloud utilizzata da Experience Manager Cloud Service.
-
-## Domande frequenti {#faq}
-
-**È possibile utilizzare una cartella controllata o altri meccanismi di archiviazione per memorizzare l&#39;input e l&#39;output?**
-
-Al momento, è possibile utilizzare l’archiviazione Microsoft Azure per salvare i dati di input e i documenti generati. L’archiviazione di Microsoft Azure offre diverse opzioni per [automatizzare le operazioni di spostamento dei dati](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
-
-**Un account di archiviazione Microsoft Azure è incluso con la licenza di Cloud Service Experience Manager Forms?**
-
-L’account di archiviazione Microsoft Azure è indipendente dalla licenza del Cloud Service Experience Manager Forms.
-
-**Le API di comunicazione memorizzano i dati sui server di Cloud Service Experience Manager Forms?**
-
-I dati di input e output vengono salvati solo nell’archiviazione Microsoft Azure.
-
-**Le API di comunicazione sono disponibili solo per il Cloud Service Experience Manager Forms? Posso ottenere funzionalità simili in ambiente on-premise?**
-
-È possibile utilizzare il servizio AEM Forms Output per combinare un modello (XFA o PDF) con i dati dei clienti per generare documenti nei formati PDF, PS, PCL e ZPL.
-
-Rispetto all&#39;ambiente on-premise, il Cloud Service offre ulteriori vantaggi in termini di scalabilità automatica ed efficienza in termini di costi.
-
-<!--**Where is data processed?**
-
-**Who has access to data?**
-
-**Is data encrypted?**
-
-**Where is data hosted?** -->
-
-**È possibile eseguire più operazioni batch contemporaneamente?**
-Sì, è possibile eseguire più operazioni batch contemporaneamente. Utilizzare sempre cartelle di origine e di destinazione diverse per ogni operazione per evitare conflitti.

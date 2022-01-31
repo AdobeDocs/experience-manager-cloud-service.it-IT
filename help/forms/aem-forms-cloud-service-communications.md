@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Comunicazioni
 description: Unisci automaticamente i dati con i modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2250'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Le API di comunicazione consentono di combinare modelli XDP, documenti PDF basat
 
 - Genera i documenti compilando i file modello con dati XML.
 
-- Generare moduli in vari formati, compresi flussi di stampa PDF non interattivi.
+- Generare moduli di in vari formati, compresi flussi di stampa PDF non interattivi.
 
 - Genera PDF di stampa da PDF modulo XFA.
 
@@ -267,24 +267,8 @@ La tabella seguente specifica le opzioni XCI.
 | config/present/pdf/tagged | Controlla l’inclusione dei tag nel documento PDF di output. I tag, nel contesto di PDF, sono informazioni aggiuntive incluse in un documento per esporre la struttura logica del documento. I tag facilitano gli strumenti di accessibilità e la riformattazione. Ad esempio, un numero di pagina può essere contrassegnato come artefatto in modo che l’assistente vocale non lo pronunci al centro del testo. Anche se i tag rendono un documento più utile, aumentano anche le dimensioni del documento e il tempo di elaborazione necessario per crearlo. |
 | config/present/pdf/version | Specifica la versione del documento PDF da generare. |
 
-### Problemi noti
-
-- Assicurati che le dimensioni del modello e dei file di configurazione XCI siano superiori a 16 KB.
-
-- Assicurati che il file xml dei dati non contenga l&#39;intestazione della dichiarazione XML. Esempio, `<?xml version="1.0" encoding="UTF-8"?>`
-
-- Per una configurazione batch, una sola istanza di combinazione di valori di OutputType(PDF, PRINT) e RenderType(PostScript, PCL, IPL, ZPL, ecc.) è consentito.
-
-- Non modificare la configurazione USC/Azure Cloud dell’origine dati utilizzata in una configurazione batch mentre il batch è in esecuzione. Anche dopo l&#39;esecuzione, se è necessario un aggiornamento, crea una copia della configurazione invece di aggiornare quella utilizzata in una configurazione batch esistente.
-
-### Best practice  
-
-- Adobe consiglia di ospitare l’archivio dei contenitori BLOB di file di dati nell’area cloud utilizzata da AEM Cloud Service.
-
 <!-- Using API
 
  There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as HTTP endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
 
 The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document. -->
-
-

@@ -7,7 +7,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: ea9d8714dca0d30ba2ff33cef220c8b3f8b3c429
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 3%
@@ -33,7 +33,7 @@ Puoi eseguire la migrazione di Forms adattivo, temi, modelli e configurazioni cl
 
 * [Abilita Forms - Registrazione digitale](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) opzione attivata per il programma di Cloud Service Forms e [eseguire la pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
 
-![Risultato esecuzione di prova](assets/enable-add-on.png)
+   ![Risultato esecuzione di prova](assets/enable-add-on.png)
 
 * In un ambiente di Cloud Service, l&#39;utility Migration funziona insieme allo strumento User Mapping e allo strumento Content Transfer (Trasferimento contenuti). L&#39;utilità di migrazione rende [!DNL AEM Forms] le risorse compatibili con il Cloud Service e lo strumento di trasferimento dei contenuti migrano il contenuto dal [!DNL AEM Forms] ambiente a un [!DNL AEM] Ambiente as a Cloud Service. Prima di utilizzare l&#39;utility di migrazione, scopri il processo di [spostamento a AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Il processo prevede due strumenti:
    * [Strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration): Lo strumento di mappatura utente consente di mappare i tuoi utenti con gli account utente Adobe IMS corrispondenti.

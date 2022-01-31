@@ -1,9 +1,9 @@
 ---
 title: 'Usa font personalizzati '
 description: 'Usa font personalizzati '
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: 0bfd75e517e03110d58575b21551d1d553fa36bf
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,10 @@ ht-degree: 0%
 Per aggiungere font personalizzati all’ambiente del Cloud Service:
 
 1. Imposta e apri la [progetto di sviluppo locale](setup-local-development-environment.md). È possibile utilizzare qualsiasi IDE desiderato.
-1. Nella struttura di cartelle di livello superiore del progetto, crea una cartella per salvare i font personalizzati e aggiungere font personalizzati alla cartella. Ad esempio, fonts/src/main/resources
+1. Nella struttura di cartelle di livello superiore del progetto, crea una cartella (modulo) per salvare i font personalizzati e aggiungere font personalizzati alla cartella. Ad esempio, fonts/src/main/resources
    ![Cartella Font](assets/fonts.png)
 
-1. Apri il file pom.xml di primo livello del progetto di sviluppo.
+1. Apri il file pom.xml del modulo dei font del progetto di sviluppo.
 1. Aggiungi `<Font-Archive-Version>` voce manifest al file .pom e imposta il valore della versione a 1:
 
    ```xml
@@ -72,11 +72,11 @@ Per aggiungere font personalizzati all’ambiente del Cloud Service:
 
 1. Archivia il codice aggiornato e [eseguire la pipeline](/help/implementing/cloud-manager/deploy-code.md) per distribuire i font nell’ambiente di Cloud Service.
 
-1. Apri il prompt dei comandi, accedi alla cartella del progetto locale ed esegui il comando sottostante. Crea un pacchetto i font in un file .jar. Puoi usare il file .jar per la distribuzione locale del progetto.
+1. (Facoltativo) Apri il prompt dei comandi, accedi alla cartella del progetto locale ed esegui il comando sottostante. Il comando contiene i font in un file .jar insieme alle informazioni pertinenti. Puoi usare il file .jar per aggiungere font personalizzati a un ambiente di sviluppo locale di un Cloud Service Forms.
 
-```shell
-mvn clean install
-```
+   ```shell
+   mvn clean install
+   ```
 
 ## Aggiungi font personalizzati al tuo ambiente di sviluppo del Cloud Service Forms locale {#custom-fonts-cloud-service-sdk}
 
@@ -88,4 +88,4 @@ mvn clean install
 
    >[!NOTE]
    >
-   >Ogni volta che distribuisci un file .jar aggiornato per aggiungere o rimuovere font personalizzati nell’ambiente di distribuzione locale, interrompi e avvia l’ambiente SDK basato su docker.
+   >Ogni volta che distribuisci un file .jar di font personalizzati aggiornati nell’ambiente di distribuzione locale, riavvia l’ambiente SDK basato su docker.
