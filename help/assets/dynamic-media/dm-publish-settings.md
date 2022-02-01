@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
 source-wordcount: '3448'
 ht-degree: 3%
@@ -43,11 +43,11 @@ Vedi anche [Facoltativo - Configurazione e configurazione delle impostazioni Dyn
 1. Nella pagina Image Server , imposta il contesto Image Server - Publish e quindi utilizza le cinque schede per configurare le impostazioni di pubblicazione predefinite.
 
    * [Server immagini](#image-server)
-   * [Sicurezza](#security-tab) scheda
-   * [Gestione catalogo](#catalog-management-tab) scheda
-   * [Attributi della richiesta](#request-attributes-tab) scheda
-   * [Attributi comuni delle miniature](#common-thumbnail-attributes-tab) scheda
-   * [Attributi di gestione del colore](#color-management-attributes-tab) scheda
+      * [Sicurezza](#security-tab) scheda
+      * [Gestione catalogo](#catalog-management-tab) scheda
+      * [Attributi della richiesta](#request-attributes-tab) scheda
+      * [Attributi comuni delle miniature](#common-thumbnail-attributes-tab) scheda
+      * [Attributi di gestione del colore](#color-management-attributes-tab) scheda
 
    ![Pagina di installazione di Dynamic Media Publish](/help/assets/assets-dm/dm-publish-setup.png)
    *Pagina di installazione di Dynamic Media Publish, con **[!UICONTROL Attributi della richiesta]**scheda selezionata.*<br><br>
