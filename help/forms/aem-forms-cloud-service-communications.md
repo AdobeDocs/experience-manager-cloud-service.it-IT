@@ -2,7 +2,7 @@
 title: AEM Forms as a Cloud Service - Comunicazioni
 description: Unisci automaticamente i dati con i modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: c38a34519822449ff2577a9474b1294d5d45d3ae
+source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -61,7 +61,7 @@ In genere, un&#39;organizzazione dispone di più modelli. Ad esempio, un modello
 1. Fai clic su Crea > Cartella e crea una cartella. Apri la cartella.
 1. Fai clic su Crea > Carica file e carica i modelli.
 
-### Utilizzare l’API sincrona per generare documenti
+### Utilizza l’API sincrona per generare documenti
 
 Sono disponibili API separate per:
 
