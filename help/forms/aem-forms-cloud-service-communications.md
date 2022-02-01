@@ -2,15 +2,15 @@
 title: AEM Forms as a Cloud Service - Comunicazioni
 description: Unisci automaticamente i dati con i modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
+source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
 
 
-# Utilizza le API di comunicazione as a Cloud Service di AEM Forms - Elaborazione sincrona {#frequently-asked-questions}
+# Utilizzare le API di comunicazione as a Cloud Service di AEM Forms - Elaborazione sincrona {#frequently-asked-questions}
 
 **La funzione Comunicazioni è in versione beta.**
 
@@ -31,13 +31,13 @@ Un&#39;operazione sincrona è un processo di generazione di documenti in modo li
 
 * **Autenticazione di base**: L’autenticazione di base è un semplice schema di autenticazione integrato nel protocollo HTTP. Il client invia richieste HTTP con l&#39;intestazione Autorizzazione che contiene la parola Base seguita da uno spazio e da una stringa con codifica base64 username:password. Ad esempio, per autorizzare come amministratore / amministratore il client invia Basic [nome utente stringa codificato base64]: [password della stringa con codifica base64].
 
-* **Autenticazione basata su token:** L’autenticazione basata su token utilizza un token di accesso (token di autenticazione portatore) per effettuare richieste a AEM as a Cloud Service. AEM Forms as a Cloud Service fornisce API per recuperare in modo sicuro il token di accesso. Per recuperare e utilizzare il token per autenticare una richiesta:
+* **Autenticazione basata su token:** L’autenticazione basata su token utilizza un token di accesso (token di autenticazione portatore) per effettuare richieste ad Experience Manager as a Cloud Service. AEM Forms as a Cloud Service fornisce API per recuperare in modo sicuro il token di accesso. Per recuperare e utilizzare il token per autenticare una richiesta:
 
-   1. [Recuperare AEM credenziali as a Cloud Service dalla Console per sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [Installare AEM credenziali as a Cloud Service nell’ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Application Server, Web Server o altri server non AEM) configurati per inviare richieste al servizio cloud (effettuare chiamate).
+   1. [Recuperare le credenziali as a Cloud Service di Experience Manager dalla Console per sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [Installare le credenziali as a Cloud Service di Experience Manager nell’ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Application Server, Web Server o altri server non AEM) configurati per inviare richieste al servizio cloud (effettuare chiamate).
    1. [Generare un token JWT e scambiarlo con le API Adobe IMS per un token di accesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. Esegui l’API AEM con il token di accesso come token di autenticazione portatore.
-   1. [Impostare le autorizzazioni appropriate per l’utente dell’account tecnico nell’ambiente AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. Esegui l’API Experience Manager con il token di accesso come token di autenticazione portatore.
+   1. [Impostare le autorizzazioni appropriate per l’utente dell’account tecnico nell’ambiente Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ Un&#39;operazione sincrona è un processo di generazione di documenti in modo li
 
 ### Prerequisiti {#pre-requisites}
 
-Per utilizzare le API Syncronous, è necessario quanto segue:
+Per utilizzare le API sincrone, è necessario quanto segue:
 
 * Modelli PDF o XDP
 * [Dati da unire con i modelli](#form-data)
