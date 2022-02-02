@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 80483d812d8f8ee6a942d21a87a281a98feddbdd
+source-git-commit: 8c4261b91c16127ac86f5f469d8f309858d2f617
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3487'
 ht-degree: 95%
 
 ---
@@ -528,6 +528,7 @@ ht-degree: 95%
          + [Cockpit prodotto](/help/commerce-cloud/authoring/product-cockpit.md)
          + [Utilizzo di più modelli](/help/commerce-cloud/authoring/multi-template-usage.md)
          + [Arricchire i dati di prodotto con i contenuti associati](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
+         + [Consigli per prodotti](/help/commerce-cloud/authoring/product-recommendations.md)
       + Amministrazione {#administering}
          + [Configurazione di più store](/help/commerce-cloud/configuring/multi-store-setup.md)
          + [Configurazione degli URL per SEO (Search Engine Optimization)](/help/commerce-cloud/configuring/advanced-url-configuration.md)
