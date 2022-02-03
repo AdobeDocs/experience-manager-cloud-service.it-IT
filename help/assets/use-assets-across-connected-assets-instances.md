@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '3358'
-ht-degree: 23%
+source-wordcount: '3328'
+ht-degree: 24%
 
 ---
 
@@ -213,10 +213,6 @@ Per visualizzare e gestire i riferimenti nel [!DNL Assets] implementazione, segu
    ![avviso di eliminazione forzata](assets/delete-referenced-asset.png)
 
 ### Gestire gli aggiornamenti alle risorse in DAM remoto {#handling-updates-to-remote-assets}
-
->[!NOTE]
->
->Questa funzione è disponibile nel canale prerelease. Vedi [Documentazione sul canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) per informazioni su come abilitare la funzione per l’ambiente.
 
 Dopo [configurazione di una connessione](#configure-a-connection-between-sites-and-assets-deployments) tra le implementazioni remote di DAM e Sites, le risorse in DAM remoto sono rese disponibili nell’implementazione di Sites. Puoi quindi eseguire le operazioni di aggiornamento, eliminazione, ridenominazione e spostamento sulle risorse o cartelle DAM remote. Gli aggiornamenti, con un certo ritardo, sono disponibili automaticamente nell’implementazione di Sites. Inoltre, se una risorsa in DAM remoto viene utilizzata in una pagina Experience Manager Sites locale, gli aggiornamenti alla risorsa in DAM remoto vengono visualizzati nella pagina Sites .
 
