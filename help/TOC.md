@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8c4261b91c16127ac86f5f469d8f309858d2f617
+source-git-commit: 523b90a8f536a7ceea3caf11dc71f5ea9abe6844
 workflow-type: tm+mt
-source-wordcount: '3487'
+source-wordcount: '3489'
 ht-degree: 95%
 
 ---
@@ -285,6 +285,7 @@ ht-degree: 95%
       + [Aggiungere e caricare le risorse](/help/assets/add-assets.md)
       + [Cercare risorse](/help/assets/search-assets.md)
       + [Attività comuni di gestione risorse](/help/assets/manage-digital-assets.md)
+      + [Gestisci pubblicazione](/help/assets/manage-publication.md)
       + [Anteprima delle risorse 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Abilita tag avanzati per immagini](/help/assets/smart-tags.md)
       + [Assegnare tag avanzati alle risorse video](/help/assets/smart-tags-video-assets.md)
