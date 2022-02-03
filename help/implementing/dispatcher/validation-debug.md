@@ -3,9 +3,9 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Convalida e debug con gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: dc25b243c2d64d735e553e7ea2fb990fb34cb4cb
+source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2512'
 ht-degree: 2%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 2%
 >[!NOTE]
 >Per ulteriori informazioni su Dispatcher nel cloud e su come scaricare gli strumenti di Dispatcher, consulta la sezione [Dispatcher nel cloud](/help/implementing/dispatcher/disp-overview.md) pagina. Se la configurazione del dispatcher è in modalità legacy, consulta [documentazione sulla modalità legacy](/help/implementing/dispatcher/validation-debug-legacy.md).
 
-The following sections describe the flexible mode file structure, local validation, debugging and migrating from legacy mode to the flexible mode.
+Le sezioni seguenti descrivono la struttura del file in modalità flessibile, la convalida locale, il debug e la migrazione dalla modalità legacy alla modalità flessibile.
 
-This article assumes that your project&#39;s dispatcher configuration includes the file `opt-in/USE_SOURCES_DIRECTLY`, which causes the SDK and runtime to validate and deploy the configuration in an improved way compared to the legacy mode, removing limitations around the number and size of files.
+Questo articolo presuppone che la configurazione del dispatcher del tuo progetto includa il file `opt-in/USE_SOURCES_DIRECTLY`, che consente all’SDK e al runtime di convalidare e distribuire la configurazione in modo migliore rispetto alla modalità legacy, rimuovendo le limitazioni relative al numero e alle dimensioni dei file.
 
 Di conseguenza, se la configurazione del dispatcher non include il file di cui sopra, è **altamente raccomandato** per passare dalla modalità legacy alla modalità flessibile, come descritto in [Migrazione dalla modalità legacy alla modalità flessibile](#migrating) sezione .
 
@@ -81,7 +81,7 @@ Puoi avere uno o più di questi file. Contengono `<VirtualHost>` voci che corris
 
 * `conf.d/rewrites/rewrite.rules`
 
-This file is included from inside your `.vhost` files. Ha una serie di regole di riscrittura per `mod_rewrite`.
+Questo file è incluso all&#39;interno del `.vhost` file. Ha una serie di regole di riscrittura per `mod_rewrite`.
 
 * `conf.d/variables/custom.vars`
 
@@ -139,15 +139,15 @@ Regole di riscrittura predefinite adatte a un progetto standard. Se hai bisogno 
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
-Contains a sample Dispatcher farm. For your own farm, create a copy of this file, customize it, go to `conf.d/enabled_farms` and create a symbolic link to your customized copy.
+Contiene un esempio di farm del Dispatcher. Per la tua farm, crea una copia di questo file, personalizzalo, vai a `conf.d/enabled_farms` e crea un collegamento simbolico alla copia personalizzata.
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
-Part of the base framework, gets generated on startup. Lei è **obbligatorio** per includere questo file in ogni farm definita, nella `cache/allowedClients` sezione .
+Parte del framework di base, viene generato all&#39;avvio. Lei è **obbligatorio** per includere questo file in ogni farm definita, nella `cache/allowedClients` sezione .
 
 * `conf.dispatcher.d/cache/default_rules.any`
 
-Regole di cache predefinite adatte a un progetto standard. Se hai bisogno di personalizzazione, modifica `conf.dispatcher.d/cache/rules.any`. In your customization, you can still include the default rules first, if they suit your needs.
+Regole di cache predefinite adatte a un progetto standard. Se hai bisogno di personalizzazione, modifica `conf.dispatcher.d/cache/rules.any`. Nella personalizzazione, puoi comunque includere prima le regole predefinite, se sono adatte alle tue esigenze.
 
 * `conf.dispatcher.d/clientheaders/default_clientheaders.any`
 
@@ -159,7 +159,7 @@ Parte del framework di base, utilizzato per illustrare come sono incluse le farm
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
-Default filters suitable for a standard project. Se hai bisogno di personalizzazione, modifica `filters.any`. Nella personalizzazione, puoi comunque includere prima i filtri predefiniti, se soddisfano le tue esigenze.
+Filtri predefiniti adatti a un progetto standard. Se hai bisogno di personalizzazione, modifica `filters.any`. Nella personalizzazione, puoi comunque includere prima i filtri predefiniti, se soddisfano le tue esigenze.
 
 * `conf.dispatcher.d/renders/default_renders.any`
 
@@ -227,7 +227,7 @@ Durante l’implementazione di Cloud Manager, la variabile `httpd -t` verrà ese
 
 ### Fase 1 {#first-phase}
 
-Se una direttiva non viene inserita nell&#39;elenco Consentiti, lo strumento registra un errore e restituisce un codice di uscita diverso da zero. Also, it further scans all files with pattern `conf.dispatcher.d/enabled_farms/*.farm` and checks that:
+Se una direttiva non viene inserita nell&#39;elenco Consentiti, lo strumento registra un errore e restituisce un codice di uscita diverso da zero. Inoltre, scansiona ulteriormente tutti i file con pattern `conf.dispatcher.d/enabled_farms/*.farm` e controlla che:
 
 * Non esiste una regola di filtro che utilizza l&#39;autorizzazione tramite `/glob` (vedi [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) per ulteriori dettagli.
 * Non viene visualizzata alcuna funzione di amministrazione. Ad esempio, l’accesso a percorsi come `/crx/de or /system/console`.
@@ -291,7 +291,7 @@ Oltre alle sei sezioni menzionate nei paragrafi precedenti, non è consentito ut
 Questo errore viene generato quando non si specifica un&#39;inclusione per `/renders` e `/allowedClients` in `/cache` sezione . Consulta la sezione
 **il file incluso (..) deve essere denominato: ...** per ulteriori informazioni.
 
-**filter must not use glob pattern to allow requests**
+**Il filtro non deve utilizzare il pattern glob per consentire le richieste**
 
 Non è sicuro consentire le richieste con un `/glob` regola di stile, corrispondente alla riga di richiesta completa, ad esempio
 
@@ -379,15 +379,15 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 Questa fase può anche essere eseguita in modo indipendente `bin/docker_immutability_check.sh src/dispatcher`.
 
-## Debugging your Apache and Dispatcher configuration {#debugging-apache-and-dispatcher-configuration}
+## Debug della configurazione di Apache e Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
 Tieni presente che puoi eseguire apache dispatcher localmente utilizzando `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080`.
 
-Come indicato in precedenza, Docker deve essere installato localmente e non è necessario che AEM sia in esecuzione. Gli utenti Windows devono utilizzare Windows 10 Professional o altre distribuzioni che supportano Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer.
+Come indicato in precedenza, Docker deve essere installato localmente e non è necessario che AEM sia in esecuzione. Gli utenti Windows devono utilizzare Windows 10 Professional o altre distribuzioni che supportano Docker. Questo è un prerequisito per l’esecuzione e il debug di Dispatcher su un computer locale.
 
 La seguente strategia può essere utilizzata per aumentare l’output di log per il modulo Dispatcher e visualizzare i risultati del `RewriteRule` in ambienti sia locali che cloud.
 
-I livelli di registro per tali moduli sono definiti dalle variabili `DISP_LOG_LEVEL` e `REWRITE_LOG_LEVEL`. They can be set in the file `conf.d/variables/global.vars`. La sua parte pertinente è la seguente:
+I livelli di registro per tali moduli sono definiti dalle variabili `DISP_LOG_LEVEL` e `REWRITE_LOG_LEVEL`. Possono essere impostati nel file `conf.d/variables/global.vars`. La sua parte pertinente è la seguente:
 
 ```
 # Log level for the dispatcher
@@ -411,7 +411,7 @@ I livelli di registro per tali moduli sono definiti dalle variabili `DISP_LOG_LE
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-When running Dispatcher locally, logs are printed directly to the terminal output. Nella maggior parte dei casi, si desidera che questi log siano in DEBUG, che può essere fatto passando il livello Debug come parametro durante l&#39;esecuzione di Docker. Esempio: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
+Quando si esegue Dispatcher localmente, i registri vengono stampati direttamente nell’output del terminale. Nella maggior parte dei casi, si desidera che questi log siano in DEBUG, che può essere fatto passando il livello Debug come parametro durante l&#39;esecuzione di Docker. Esempio: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 I registri per gli ambienti cloud sono esposti tramite il servizio di registrazione disponibile in Cloud Manager.
 
@@ -442,7 +442,7 @@ Nella configurazione del Dispatcher è disponibile la stessa variabile di ambien
 }
 ```
 
-In alternativa, puoi utilizzare le variabili di ambiente Cloud Manager nella configurazione httpd/dispatcher. Questo metodo è particolarmente importante se un programma dispone di più ambienti di sviluppo e alcuni di questi ambienti di sviluppo hanno valori diversi per la configurazione httpd/dispatcher. The same ${VIRTUALHOST} syntax would be used as in the example above, however the Define declarations in the above variables file would not be used. Leggi la sezione [Documentazione di Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) per istruzioni su come configurare le variabili di ambiente di Cloud Manager.
+In alternativa, puoi utilizzare le variabili di ambiente Cloud Manager nella configurazione httpd/dispatcher, anche se non i segreti dell’ambiente. Questo metodo è particolarmente importante se un programma dispone di più ambienti di sviluppo e alcuni di questi ambienti di sviluppo hanno valori diversi per la configurazione httpd/dispatcher. La stessa sintassi ${VIRTUALHOST} verrebbe utilizzata come nell&#39;esempio precedente, tuttavia non verranno utilizzate le dichiarazioni Define nel file delle variabili di cui sopra. Leggi la sezione [Documentazione di Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) per istruzioni su come configurare le variabili di ambiente di Cloud Manager.
 
 Quando verifichi la configurazione localmente, puoi simulare diversi tipi di ambiente passando la variabile `DISP_RUN_MODE` al `docker_run.sh` script direttamente:
 
@@ -484,7 +484,7 @@ Con la versione 2021.7.0 di Cloud Manager, i nuovi programmi Cloud Manager gener
 2. **Test di sviluppo cloud:**
    * Commit del file `opt-in/USE_SOURCES_DIRECTLY` a un ramo git distribuito dalla pipeline non di produzione in un ambiente di sviluppo Cloud.
    * Utilizza Cloud Manager per distribuire in un ambiente di sviluppo Cloud.
-   * Esegui il test completo. È fondamentale verificare che la configurazione di apache e dispatcher si comporti come previsto prima di distribuire le modifiche agli ambienti più elevati. Controlla tutti i comportamenti relativi alla tua configurazione personalizzata! File a customer support ticket if you believe the deployed dispatcher configuration does not reflect your custom configuration.
+   * Esegui il test completo. È fondamentale verificare che la configurazione di apache e dispatcher si comporti come previsto prima di distribuire le modifiche agli ambienti più elevati. Controlla tutti i comportamenti relativi alla tua configurazione personalizzata! Invia un ticket di assistenza clienti se ritieni che la configurazione del dispatcher implementato non rifletta la configurazione personalizzata.
 3. **Distribuzione in produzione:**
    * Commit del file `opt-in/USE_SOURCES_DIRECTLY` a un ramo Git distribuito dalla pipeline di produzione nell’area di lavoro e negli ambienti di produzione di Cloud.
    * Utilizza Cloud Manager per distribuire in staging.
