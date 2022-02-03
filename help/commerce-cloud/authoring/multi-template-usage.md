@@ -10,18 +10,18 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: f45021ff09a4874d19fa7d8d40405cfd52bf8434
+source-git-commit: 13ed4f82f441daf95b80b5d015b00ea49f8d1ed2
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '186'
 ht-degree: 49%
 
 ---
 
 # Creazione di più pagine per categorie e prodotti {#multiple}
 
-    >[!NOTE]
-    >
-    > Questa funzionalità funziona solo per le vetrine basate su CIF (ad esempio Venia).
+>[!NOTE]
+>
+> Questa funzionalità funziona solo per le vetrine basate su CIF (ad esempio Venia).
 
 I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) offrono agli autori dei contenuti la possibilità di creare ulteriori pagine di prodotti e categorie. Queste pagine possono essere arricchite con contenuti di marketing aggiuntivi e configurate per categorie e prodotti specifici. Il seguente video illustra la configurazione di questa funzione.
 
