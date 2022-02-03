@@ -3,7 +3,7 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cl
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3c6b25bdcc626946ae7bd4b98da65f4ccfd963f7
+source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 32%
@@ -52,10 +52,10 @@ Dai un&#39;occhiata al [Panoramica sulla versione di gennaio 2022](https://video
 
    * Configura l’aggiunta di watermark digitali alle immagini.
 
-* Gli amministratori possono ora configurare il servizio e-mail per i download di grandi dimensioni. Consente agli utenti di abilitare le notifiche e-mail per i download di grandi dimensioni dal [!DNL Experience Manager Assets] interfaccia. Al termine del processo di download, l’utente riceve una notifica e-mail contenente il collegamento di download della cartella zip archiviata.
+* Gli amministratori possono ora configurare il servizio e-mail per i download di grandi dimensioni. Consente agli utenti di [abilitare le notifiche e-mail per i download di grandi dimensioni](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) dal [!DNL Experience Manager Assets] interfaccia. Al termine del processo di download, l’utente riceve una notifica e-mail contenente il collegamento di download della cartella zip archiviata.
 
 
-* La funzione Gestisci pubblicazione è stata migliorata con un’interfaccia utente migliorata. Gli utenti possono pubblicare o annullare la pubblicazione dei contenuti da e verso la destinazione selezionata, aggiungere contenuti all’elenco di pubblicazione dall’archivio DAM, includere le impostazioni delle cartelle per pubblicare i contenuti delle cartelle selezionate, applicare i filtri e pianificare la pubblicazione in una data o un’ora successiva.
+* La [Gestisci pubblicazione](/help/assets/manage-publication.md) viene migliorata con un’interfaccia utente migliorata. Gli utenti possono pubblicare o annullare la pubblicazione dei contenuti da e verso la destinazione selezionata, [Aggiungi contenuto](/help/assets/manage-publication.md#add-content) all’elenco di pubblicazione dall’archivio DAM, [Includi impostazioni cartella](/help/assets/manage-publication.md#include-folder-settings) per pubblicare il contenuto delle cartelle selezionate e applicare i filtri, e [pianificazione della pubblicazione](/help/assets/manage-publication.md#publish-assets-later) a una data o un&#39;ora successiva.
 
 ### Correzioni di bug {#bug-fixes}
 
