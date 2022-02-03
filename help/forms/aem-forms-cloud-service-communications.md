@@ -2,17 +2,15 @@
 title: AEM Forms as a Cloud Service - Comunicazioni
 description: Unisci automaticamente i dati con i modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
 
 
-# Utilizzare le API di comunicazione as a Cloud Service di AEM Forms - Elaborazione sincrona {#frequently-asked-questions}
-
-**La funzione Comunicazioni è in versione beta.**
+# Utilizzare l’elaborazione sincrona {#sync-processing-introduction}
 
 Le comunicazioni consentono di creare, assemblare e distribuire comunicazioni personalizzate e orientate al marchio, ad esempio corrispondenze aziendali, documenti, dichiarazioni, lettere di elaborazione delle richieste, note sui benefit, lettere di elaborazione delle richieste, fatture mensili e kit di benvenuto. È possibile utilizzare le API di comunicazione per combinare un modello (XFA o PDF) con i dati dei clienti per generare documenti nei formati PDF, PS, PCL, DPL, IPL e ZPL.
 
