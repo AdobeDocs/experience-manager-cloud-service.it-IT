@@ -1,9 +1,9 @@
 ---
 title: Crea sito demo
 description: Crea un sito demo in AEM basato su una libreria di modelli preconfigurati.
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
@@ -15,13 +15,13 @@ Crea un sito demo in AEM basato su una libreria di modelli preconfigurati.
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di creazione di siti rapidi AEM, [Crea programma,](create-program.md) hai fatto il primo passaggio di configurazione per creare un programma a scopo di test e hai utilizzato una pipeline per distribuire il contenuto aggiuntivo. Ora dovresti:
+Nel documento precedente del percorso aggiuntivo Demos di riferimento AEM, [Crea programma,](create-program.md) hai fatto il primo passaggio di configurazione per creare un programma a scopo di test e hai utilizzato una pipeline per distribuire il contenuto aggiuntivo. Ora dovresti:
 
 * Scopri come utilizzare Cloud Manager per creare un nuovo programma.
 * Scopri come attivare il componente aggiuntivo Demo di riferimento per il nuovo programma.
 * Puoi eseguire una pipeline per distribuire il contenuto aggiuntivo.
 
-Questo articolo descrive il passaggio successivo del processo creando un nuovo sito in AEM basato sui modelli del componente aggiuntivo Demo di riferimento.
+Questo articolo descrive il passaggio successivo del processo di creazione di un nuovo sito o progetto AEM Screens in AEM basato sui modelli del componente aggiuntivo Demo di riferimento.
 
 ## Obiettivo {#objective}
 
@@ -31,7 +31,7 @@ Questo documento spiega come creare un nuovo sito basato sui modelli del compone
 * Scopri come creare un sito basato su un modello.
 * Scopri le nozioni di base per navigare nella struttura del sito e modificare una pagina.
 
-## Creare un sito demo {#create-site}
+## Creare un sito demo o un progetto Screens {#create-site}
 
 Una volta implementato il componente aggiuntivo Demo di riferimento, la pipeline può accedere all’ambiente di authoring AEM per creare siti demo in base al contenuto aggiuntivo.
 
@@ -47,11 +47,11 @@ Una volta implementato il componente aggiuntivo Demo di riferimento, la pipeline
 
    ![Crea sito da modello](assets/create-site-from-template.png)
 
-1. Viene avviata la procedura guidata di creazione del sito. Nella colonna a sinistra puoi vedere i modelli demo distribuiti dalla pipeline nell’istanza di authoring. Tocca o fai clic su uno per selezionarlo e visualizzare i dettagli nella colonna a destra. Tocca o fai clic su **Avanti**.
+1. Viene avviata la procedura guidata di creazione del sito. Nella colonna a sinistra puoi vedere i modelli demo distribuiti dalla pipeline nell’istanza di authoring. Tocca o fai clic su uno per selezionarlo e visualizzare i dettagli nella colonna a destra. Se desideri testare o demo AEM Screens, assicurati di scegliere la **Modello del sito We.Cafe**. Tocca o fai clic su **Avanti**.
 
    ![Creazione guidata sito](assets/site-creation-wizard.png)
 
-1. Nella schermata successiva, specifica un titolo per il sito. Se omesso, è possibile specificare un nome di sito o generarlo dal titolo. Tocca o fai clic su **Crea**.
+1. Nella schermata successiva, specifica un titolo per il sito o il progetto Screens. Se omesso, è possibile specificare un nome di sito o generarlo dal titolo. Tocca o fai clic su **Crea**.
 
    * Il titolo del sito viene visualizzato nella barra del titolo del browser.
    * Il nome del sito diventa parte dell’URL.
@@ -101,7 +101,10 @@ Ora che hai completato questa parte del percorso aggiuntivo Demo di riferimento 
 * Scopri come creare un sito basato su un modello.
 * Scopri le nozioni di base per navigare nella struttura del sito e modificare una pagina.
 
-È ora possibile testare le funzioni di AEM utilizzando il contenuto aggiuntivo. Per capire come gestire questo contenuto demo, continua il percorso aggiuntivo Demo di riferimento AEM esaminando il documento successivo [Gestire i siti demo,](manage.md) informazioni sugli strumenti disponibili per gestire i siti demo e su come rimuoverli.
+È ora possibile testare le funzioni di AEM utilizzando il contenuto aggiuntivo. Sono disponibili due opzioni per continuare il percorso:
+
+* Se desideri demo e testare completamente il contenuto di AEM Screens, assicurati di aver implementato un sito basato su **Modello del sito We.Cafe** come descritto in precedenza e continua a [Abilita AEM Screens per il tuo sito dimostrativo.](screens.md)
+* Se utilizzi solo contenuti demo di Sites, continua [Gestire i siti demo,](manage.md) informazioni sugli strumenti disponibili per gestire i siti demo e su come rimuoverli.
 
 ## Risorse aggiuntive {#additional-resources}
 

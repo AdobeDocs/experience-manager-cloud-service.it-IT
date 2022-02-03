@@ -1,9 +1,9 @@
 ---
 title: Gestire i siti demo
 description: Scopri gli strumenti disponibili per gestire i siti demo e come rimuoverli.
-source-git-commit: cb04570664188635d6dc0237eb4ab0a9d347aaf2
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,17 @@ Scopri gli strumenti disponibili per gestire i siti demo e come rimuoverli.
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di creazione di siti rapidi AEM, [Crea sito,](create-site.md) hai creato un nuovo sito demo basato sui modelli del componente aggiuntivo Demo di riferimento. Ora dovresti:
+Nel documento precedente del percorso aggiuntivo Demos di riferimento AEM, [Crea sito,](create-site.md) hai creato un nuovo sito demo basato sui modelli del componente aggiuntivo Demo di riferimento. Ora dovresti:
 
 * Scopri come accedere all’ambiente di authoring AEM.
 * Scopri come creare un sito basato su un modello.
 * Scopri le nozioni di base per navigare nella struttura del sito e modificare una pagina.
+
+Se anche [abilitato AEM Screens per il sito dimostrativo,](screens.md) inoltre:
+
+* Scopri le basi di AEM Screens.
+* Comprendere il contenuto demo di We.Cafe .
+* Scopri come configurare AEM Screens per We.Cafe.
 
 Ora che hai il tuo sito demo da esplorare, questo articolo descrive gli strumenti disponibili per aiutarti a gestire i tuoi siti demo e come rimuoverli.
 

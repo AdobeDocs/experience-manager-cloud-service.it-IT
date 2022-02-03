@@ -1,9 +1,9 @@
 ---
 title: Crea programma
 description: Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di creazione di siti rapidi AEM, [Comprendere l’installazione del componente aggiuntivo Demo di riferimento,](installation.md) hai imparato come funziona il processo di installazione del Reference Demos Add-On, illustrando come funzionano i diversi pezzi insieme. Ora dovresti:
+Nel documento precedente del percorso aggiuntivo Demos di riferimento AEM, [Comprendere l’installazione del componente aggiuntivo Demo di riferimento,](installation.md) hai imparato come funziona il processo di installazione del Reference Demos Add-On, illustrando come funzionano i diversi pezzi insieme. Ora dovresti:
 
 * Conoscenza di base di Cloud Manager.
 * Scopri come le pipeline forniscono contenuto e configurazione a AEM.
@@ -76,7 +76,7 @@ Dopo aver effettuato l’accesso a Cloud Manager, puoi creare un nuovo programma
 
    ![Finestra di dialogo Modifica programma](assets/edit-program-dialog.png)
 
-1. Sulla **Soluzioni e componenti aggiuntivi** scheda , espandi **Sites** voce nell&#39;elenco e quindi controllare **Demo di riferimento**. Tocca o fai clic su **Aggiorna**.
+1. Sulla **Soluzioni e componenti aggiuntivi** scheda , espandi **Sites** voce nell&#39;elenco e quindi controllare **Demo di riferimento**. Se desideri anche creare demo per AEM Screens, controlla la **Schermi** anche nell’elenco. Tocca o fai clic su **Aggiorna**.
 
    ![Opzione Controlla demo di riferimento](assets/edit-program-add-on.png)
 
