@@ -2,16 +2,17 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 45da72dc39a4c2a66957dbbe26f563b00100488e
+source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 99%
+source-wordcount: '1522'
+ht-degree: 95%
 
 ---
 
 # Frammenti di esperienza {#experience-fragments}
 
 In Adobe Experience Manager as a Cloud Service, un frammento esperienza:
+
 * è un gruppo di uno o più componenti;
 * include sia contenuto che layout;
 * può essere aggiunto come riferimento nelle pagine;
@@ -22,10 +23,12 @@ Caratteristiche di un Frammento esperienza:
 * È parte di un’esperienza (pagina).
 * Può essere utilizzato su più pagine.
 * Si basa su un modello (solo modificabile) per la definizione di struttura e componenti.
+* Questo modello viene utilizzato per creare il *pagina principale* del frammento esperienza.
 * È composto da uno o più componenti, con layout, in un sistema di paragrafo.
 * Può contenere altri frammenti esperienza.
 * Può essere combinato con altri componenti (inclusi altri frammenti esperienza) per formare una pagina completa (esperienza).
-* Può avere diverse varianti, che possono condividere contenuti e/o componenti.
+* Puoi creare una o più varianti in base alla pagina principale.
+* Queste varianti possono condividere contenuti e/o componenti.
 * Può essere suddiviso in blocchi predefiniti che possono essere utilizzati in più varianti del frammento.
 
 Puoi utilizzare Frammenti esperienza:
@@ -57,7 +60,6 @@ I frammenti esperienza devono essere utilizzati:
    * Varianti per un canale o per un contesto specifico. .
    * Per esperienze che è utile raggruppare; ad esempio una campagna con diverse esperienze per i vari canali.
 * Quando utilizzi Commerce omnichannel.
-   * Per condividere contenuti commerciali sui canali di [social media](/help/implementing/developing/extending/experience-fragments.md#social-variations) su larga scala.
    * Per assegnare funzioni transazionali ai punti di contatto.
 
 ## Organizzazione dei frammenti esperienza {#organizing-your-experience-fragments}
@@ -151,7 +153,6 @@ Per creare e configurare una cartella per i frammenti esperienza, è consigliabi
 
 1. Seleziona **Salva**.
 
-
 ## Creazione di un frammento esperienza {#creating-an-experience-fragment}
 
 Per creare un frammento esperienza:
@@ -176,6 +177,12 @@ Per creare un frammento esperienza:
    Il campo **Titolo** è obbligatorio. Se il campo **Nome** è lasciato vuoto, verrà derivato dal **Titolo**.
 
    ![Proprietà dei frammenti esperienza](/help/sites-cloud/authoring/assets/xf-04.png)
+
+   >[!NOTE]
+   >
+   >I tag del modello Frammento esperienza non verranno uniti ai tag presenti nella pagina principale Frammento esperienza.
+   >
+   >Queste sono completamente separate.
 
 1. Fai clic su **Crea**.
 
@@ -232,6 +239,7 @@ Puoi creare diverse varianti per un Frammento esperienza a seconda delle tue esi
 
    ![Proprietà della variante](/help/sites-cloud/authoring/assets/xf-07.png)
 
+
 1. Conferma con **Fine**; la nuova variante viene visualizzata nel pannello.
 
 ## Utilizzo del frammento esperienza {#using-your-experience-fragment}
@@ -283,7 +291,7 @@ Per creare un nuovo blocco predefinito:
 
 Il blocco predefinito è visibile nella scheda **Blocchi predefiniti**. Per ogni blocco sono disponibili le azioni seguenti:
 
-* **Vai a principale**: apre la variante principale in una nuova scheda
+* **Vai a principale**: apri la variante della pagina principale in una nuova scheda
 * **Rinomina**
 * **Elimina**
 
@@ -338,8 +346,6 @@ I dettagli vengono visualizzati in tutte le viste della console **Frammenti espe
       * **Bacheca Pinterest**
    * **Riferimenti**
       * Un elenco di riferimenti
-   * **Stato social media**
-      * Dettagli delle varianti per social media
 
 ## Rendering HTML semplice {#the-plain-html-rendition}
 
