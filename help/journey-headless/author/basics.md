@@ -2,10 +2,10 @@
 title: Informazioni di base sull’authoring
 description: Scopri i concetti e le modalità di creazione dei contenuti per i CMS headless utilizzando i frammenti di contenuto.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 3%
+source-wordcount: '1698'
+ht-degree: 5%
 
 ---
 
@@ -243,6 +243,12 @@ Ora che hai imparato le nozioni di base, il passo successivo è quello di [Scopr
 
    * [Selettore della barra](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
+   * Pubblicazione
+
+      * [Pubblicazione rapida ](/help/assets/manage-publication.md#quick-publish)
+
+      * [Gestisci pubblicazione](/help/assets/manage-publication.md#manage-publication)
+
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 
    * [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md)
@@ -264,6 +270,6 @@ Ora che hai imparato le nozioni di base, il passo successivo è quello di [Scopr
 * Guide introduttive
    * [Guida rapida alla creazione di una cartella Assets Headless](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
 
-* percorso di architetti di contenuti headless AEM
+* Percorso Architect di contenuti AEM headless
 
 * AEM Percorso di traduzione headless
