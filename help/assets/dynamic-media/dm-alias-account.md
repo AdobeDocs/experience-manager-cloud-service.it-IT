@@ -8,9 +8,9 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 1932476a2ca8f46c1f73214c15982d7baa6c56ff
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ hidefromtoc: yes -->
 
 >[!NOTE]
 >
->La funzione per creare un account alias di un&#39;azienda Dynamic Media si trova nel Canale prerelease per gennaio 2022. Questa funzione sarà generalmente disponibile nella versione di febbraio 2022.
+>Questa funzione per creare un account alias società Dynamic Media si trova nel Canale prerelease per gennaio 2022. Vedi [Documentazione sul canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) per informazioni su come abilitare la funzione per il tuo ambiente. Questa funzione sarà generalmente disponibile nella versione di febbraio 2022.
 
 Gli URL Dynamic Media e il codice di incorporamento del visualizzatore contengono il nome dell&#39;account aziendale. Questo nome account è stato creato al momento del provisioning di Dynamic Media. Ci possono essere scenari in cui la tua azienda ha subito un&#39;acquisizione, o un rebranding, o semplicemente vuoi usare un nome più memorabile. In tali scenari, non è facile aggiornare manualmente il nome dell’account dell’azienda in tutti gli URL e il codice di incorporamento del visualizzatore che viene fuori dalla scatola. Inoltre, è possibile che tu possa avere un impatto sull’archivio Dynamic Media esistente o sui contenuti live. Per risolvere il problema, puoi configurare un account alias società Dynamic Media.
 
