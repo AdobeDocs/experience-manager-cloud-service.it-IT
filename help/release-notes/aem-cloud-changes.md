@@ -3,9 +3,9 @@ title: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Clo
 description: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '819'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ AEM Cloud Service include molte nuove funzioni e opportunità per gestire i prog
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
->title="Modifiche di rilievo in AEM come Cloud Service"
->abstract="In questa scheda, puoi visualizzare il contenuto che ti aiuterà a comprendere le differenze tra AEM on-premise o in Adobe Managed Services, rispetto a AEM come Cloud Service."
->additional-url="https://video.tv.adobe.com/v/330543" text="Evoluzione del AEM come Cloud Service"
+>title="Modifiche importanti in AEM as a Cloud Service"
+>abstract="In questa scheda, puoi visualizzare contenuti utili a comprendere le differenze tra AEM on-premise o in Adobe Managed Services rispetto a AEM as a Cloud Service."
+>additional-url="https://video.tv.adobe.com/v/330543" text="Evoluzione di AEM as a Cloud Service"
 
 
 >[!NOTE]
->In questo documento sono illustrate le modifiche di rilievo apportate ad AEM a livello generale. Per ulteriori informazioni e modifiche specifiche relative alla soluzione, vedi:
+>Questo documento illustra le modifiche di rilievo apportate ad AEM a livello generale. Per ulteriori informazioni e modifiche specifiche relative alla soluzione, vedi:
 >
 >* [Introduzione ad Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Novità e differenze](/help/overview/what-is-new-and-different.md) tra Adobe Experience Manager as a Cloud Service e le versioni precedenti
@@ -71,7 +71,7 @@ La console web, utilizzata nelle versioni precedenti di AEM per modificare le im
 
 ## Non sono consentite modifiche all’archivio di pubblicazione {#changes-to-publish-repo}
 
-Oltre alle modifiche nella cartella `/home` sul livello di pubblicazione, le modifiche dirette all’archivio di pubblicazione non sono consentite AEM Cloud Service. Nelle versioni precedenti di AEM on-premise o AEM su AMS, è possibile apportare modifiche al codice direttamente nell’archivio di pubblicazione. Alcune limitazioni possono essere attenuate nei seguenti modi:
+A parte le modifiche nella cartella `/home` sul livello di pubblicazione, le modifiche dirette all’archivio di pubblicazione non sono consentite in AEM Cloud Service. Nelle versioni precedenti di AEM on-premise o AEM su AMS, era possibile apportare modifiche al codice direttamente nell’archivio di pubblicazione. Alcune limitazioni possono essere attenuate nei seguenti modi:
 
 * Per i contenuti e la configurazione basata su contenuti: apporta le modifiche all’istanza di authoring e pubblicale.
 * Per il codice e la configurazione: apporta le modifiche nell’archivio GIT ed esegui la pipeline CI/CD per distribuirle.
@@ -114,4 +114,4 @@ Per la transizione dei progetti da AMS o da un’installazione on-premise, Adobe
 
 ## Gestione e distribuzione delle risorse {#asset-handling}
 
-Il caricamento, l’elaborazione e il download delle risorse sono ottimizzati in [!DNL Experience Manager Assets] come [!DNL Cloud Service]. [!DNL Assets] è ora più efficiente, consente una maggiore scalabilità e consente di caricare e scaricare a una velocità molto più veloce. Inoltre, influisce sul codice personalizzato esistente e su alcune operazioni. Per un elenco delle modifiche e per la parità con le funzioni [!DNL Experience Manager] 6.5, consulta le [modifiche a [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Il caricamento, l’elaborazione e il download delle risorse sono ottimizzati in [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] è ora più efficiente, consente una maggiore scalabilità e offre velocità di caricamento e download molto più elevate. Inoltre, influisce sul codice personalizzato esistente e su alcune operazioni. Per un elenco delle modifiche e per il livello di parità con le funzioni di [!DNL Experience Manager] 6.5, vedi le [modifiche apportate a [!DNL Assets]](/help/assets/assets-cloud-changes.md).
