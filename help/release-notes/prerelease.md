@@ -3,9 +3,9 @@ title: Canale prerelease [!DNL Adobe Experience Manager] as a Cloud Service
 description: Canale prerelease [!DNL Adobe Experience Manager] as a Cloud Service
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 La variabile può essere eliminata o impostata su un valore diverso se desideri che l’ambiente venga ripristinato al comportamento del canale regolare (non prerelease)
 
-* In alternativa, puoi anche configurare le variabili di ambiente dal [Interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+* In alternativa, puoi anche configurare le variabili di ambiente dall’[Interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
 ### SDK locale {#local-sdk}
 
