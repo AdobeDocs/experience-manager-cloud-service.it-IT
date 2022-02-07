@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: c135f7c0c5265110774d145bf8c5a73d44d660b1
 workflow-type: tm+mt
 source-wordcount: '3500'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -88,15 +88,15 @@ ht-degree: 95%
       + [Assegnare i membri del team ai profili di prodotto di AEM as a Cloud Service](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
       + [Percorso di apprendimento per sviluppatori e gestori di distribuzione](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
       + [Percorso di apprendimento per gli utenti AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-   + percorso aggiuntivo Demos di riferimento AEM {#demo-add-on}
+   + Percorso AEM Reference Demos Add-On {#demo-add-on}
       + [Panoramica](/help/journey-sites/demos-add-on/overview.md)
       + [Installazione](/help/journey-sites/demos-add-on/installation.md)
       + [Crea programma](/help/journey-sites/demos-add-on/create-program.md)
       + [Crea sito demo](/help/journey-sites/demos-add-on/create-site.md)
       + [Abilita Screens](/help/journey-sites/demos-add-on/screens.md)
       + [Gestire il sito demo](/help/journey-sites/demos-add-on/manage.md)
-+ AEM Percorso di migrazione as a Cloud Service {#migration-journey}
-   + [Guida introduttiva allo spostamento AEM as a Cloud Service](/help/journey-migration/getting-started.md)
++ Percorso di migrazione ad AEM as a Cloud Service {#migration-journey}
+   + [Guida introduttiva di AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase di preparazione](/help/journey-migration/readiness.md)
    + [Fase di implementazione](/help/journey-migration/implementation.md)
    + [Vai in diretta](/help/journey-migration/go-live.md)
@@ -459,7 +459,7 @@ ht-degree: 95%
       + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
    + [Integrare con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [Integrare con DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-   + [Integrazione con Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+   + [Integrare con Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Integrare con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
    + Creare e utilizzare flussi di lavoro {#create-form-centric-workflows}
       + [Utilizzare passaggi incentrati su Forms in un flusso di lavoro + riferimento a passaggi](/help/forms/aem-forms-workflow-step-reference.md)
@@ -736,7 +736,7 @@ ht-degree: 95%
             + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=it)
       + Sviluppo ibrido e SPA {#hybrid}
          + [Ibrido e SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=it)
          + [Introduzione a SPA e procedura dettagliata](/help/implementing/developing/hybrid/introduction.md)
          + [Tutorial WKND per SPA](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Guida introduttiva all’utilizzo di React](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -772,7 +772,7 @@ ht-degree: 95%
       + [Diagnostica ContextHub](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [Estensione di ContextHub](/help/implementing/developing/personalization/extending-contexthub.md)
       + [API ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
-      + [Configurazione della segmentazione con ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
+      + [Configurazione della segmentazione con ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=it)
    + Configurazione ed estensione di AEM as a Cloud Service {#configuring-and-extending}
       + Estensione di AEM con App Builder{#app-builder}
          + [Estensione di AEM con Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
@@ -785,8 +785,8 @@ ht-degree: 95%
          + [Applicazioni basate su eventi](/help/implementing/developing/extending/app-builder/videos/event-driven-applications.md)
          + [Applicazioni front-end](/help/implementing/developing/extending/app-builder/videos/front-end-applications.md)
          + [Sicurezza](/help/implementing/developing/extending/app-builder/videos/security.md)
-         + [Distribuzione di applicazioni](/help/implementing/developing/extending/app-builder/videos/deploy.md)
-         + [Pubblicare applicazioni](/help/implementing/developing/extending/app-builder/videos/publish.md)
+         + [Distribuire le applicazioni](/help/implementing/developing/extending/app-builder/videos/deploy.md)
+         + [Pubblicare le applicazioni](/help/implementing/developing/extending/app-builder/videos/publish.md)
       + [Estensione dei frammenti esperienza](/help/implementing/developing/extending/experience-fragments.md)
       + [Personalizzazione ed estensione dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)

@@ -4,8 +4,8 @@ description: Note sulla versione specifiche per le API obsolete e rimosse in  [!
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 8e205c92b1d3ca14988b7ae9187cd708428774a9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '989'
+ht-degree: 100%
 
 ---
 
@@ -158,7 +158,7 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>La lavagna bianca Apache Felix Http non è più supportata. Esegui la migrazione del codice alla lavagna bianca OSGi Http.</td>
+    <td>Apache Felix Http Whiteboard non è più supportato. Esegui la migrazione del codice a OSGi Http Whiteboard.</td>
     <td>27/01/2022</td>
     <td>24/03/2022</td>
   </tr>

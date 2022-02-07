@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -40,7 +40,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di gennaio 2022](https://video
 
 * [!DNL Dynamic Media] ora supporta l’acquisizione, l’anteprima, la riproduzione e la pubblicazione per i video MXF. L&#39;annotazione e il video acquistabile per i video MXF non sono ancora supportati.
 
-* Dopo aver configurato una connessione tra le implementazioni remote di DAM e Sites, le risorse in DAM remoto sono rese disponibili nell’implementazione di Sites. È ora possibile eseguire le [operazioni di aggiornamento, eliminazione, ridenominazione e spostamento](/help/assets/use-assets-across-connected-assets-instances.md) nelle risorse o cartelle DAM remote. Gli aggiornamenti, con un certo ritardo, sono disponibili automaticamente nell’implementazione di Sites.
+* Dopo aver configurato una connessione tra le implementazioni remote di DAM e Sites, le risorse in DAM remoto sono rese disponibili nell’implementazione di Sites. È ora possibile [aggiornare, eliminare, rinominare e spostare le operazioni](/help/assets/use-assets-across-connected-assets-instances.md) sulle risorse o cartelle DAM remote. Gli aggiornamenti, con un certo ritardo, sono disponibili automaticamente nell’implementazione di Sites.
 
 ### Nuove funzioni nel [!DNL Assets] canale prerelease {#assets-prerelease-features}
 
