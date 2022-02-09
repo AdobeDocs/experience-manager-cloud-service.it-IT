@@ -1,9 +1,9 @@
 ---
 title: Convalida dei trasferimenti di contenuto
 description: Utilizza lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuto
-source-git-commit: 9705af35d4a6064c0b4ad35086d98f4b43158dec
+source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Gli utenti possono determinare in modo affidabile se tutti i contenuti estratti 
 
 >[!INFO]
 >
->Questa funzione sarà disponibile a partire dalla versione 1.8.x dello strumento Content Transfer (CTT) . L’ambiente di destinazione di AEM Cloud Service deve essere in esecuzione almeno nella versione 6158 o successiva.
+>Questa funzione sarà disponibile a partire dalla versione 1.8.x dello strumento Content Transfer (CTT) . L’ambiente di destinazione di AEM Cloud Service deve essere in esecuzione almeno nella versione 6158 o successiva. Richiede inoltre la configurazione dell&#39;ambiente sorgente per l&#39;esecuzione [pre-copia](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La funzione di convalida cerca il file azcopy.config nell&#39;origine. Se il file non viene trovato, la convalida non viene eseguita. Per ulteriori informazioni su come configurare un file azcopy.config, vedi [questa pagina](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 La convalida di un trasferimento di contenuto è facoltativa. L’abilitazione di questa funzione aumenta sia il tempo necessario per eseguire un’estrazione che un’acquisizione. Per utilizzare la funzione, abilitala nella console di sistema dell’ambiente AEM sorgente seguendo questi passaggi:
 
