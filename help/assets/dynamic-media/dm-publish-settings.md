@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3456'
 ht-degree: 3%
 
 ---
@@ -66,6 +66,9 @@ La pagina Image Server stabilisce le impostazioni predefinite per la distribuzio
 ### Scheda Sicurezza {#security-tab}
 
 **[!UICONTROL Indirizzo client]** - Consente di specificare uno o più indirizzi IP o intervalli di indirizzi IP. Se specificato, le richieste a questo catalogo immagini provenienti da un client con un indirizzo IP non elencato vengono rifiutate. Questa regola si applica sia alla distribuzione di immagini che di immagini renderizzate.
+
+![Scheda Sicurezza ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Scheda Sicurezza che mostra il campo &quot;allow&quot; IP.*
+
 
 ### Scheda Gestione catalogo {#catalog-management-tab}
 
