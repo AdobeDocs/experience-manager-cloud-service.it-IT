@@ -1,9 +1,9 @@
 ---
 title: 'Problemi noti '
 description: Best practice e limitazioni relative alle comunicazioni
-source-git-commit: c38a34519822449ff2577a9474b1294d5d45d3ae
+source-git-commit: bf7ce5850700141a8a6d1eeb90ea0fd21ff811e7
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -162,6 +162,12 @@ La tabella seguente specifica le opzioni XCI.
 * È possibile utilizzare un tipo di rendering specifico (PDF, STAMPA) una sola volta nell&#39;elenco delle opzioni di stampa. Ad esempio, non è possibile avere due opzioni PRINT ciascuna che specificano un tipo di rendering PCL.
 
 * Per una configurazione batch, una sola istanza di combinazione di valori di OutputType(PDF, PRINT) e RenderType(PostScript, PCL, IPL, ZPL, ecc.) è consentito.
+
+* Per le API asincrone (elaborazione in batch), il livello di record predefinito è impostato su 2. È possibile utilizzare un valore XCI personalizzato per modificare il livello di record a 1.
+
+* Quando è configurato il file XCI predefinito, include il percorso fino al rendering originale. Esempio `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+
+
 
 ## Best practice  
 
