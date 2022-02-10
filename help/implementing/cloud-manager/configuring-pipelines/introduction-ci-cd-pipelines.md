@@ -2,9 +2,9 @@
 title: Pipeline CI/CD
 description: Scopri le pipeline CI/CD di Cloud Manager e come possono essere utilizzate per distribuire il codice in modo efficiente.
 index: true
-source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1364'
 ht-degree: 1%
 
 ---
@@ -147,16 +147,18 @@ Per informazioni su come configurare le pipeline full-stack, consulta i seguenti
 
 Le pipeline di configurazione a livello web consentono la distribuzione esclusiva della configurazione HTTPD/Dispatcher al runtime AEM disaccoppiandola da altre modifiche del codice. Si tratta di una pipeline semplificata che fornisce agli utenti che desiderano distribuire solo le modifiche alla configurazione del dispatcher, un metodo accelerato per farlo in pochi minuti.
 
->[!IMPORTANT]
+>[!TIP]
 >
->È necessario utilizzare AEM versione `X` o superiore per sfruttare le pipeline di configurazione a livello web.
+>Con le pipeline di configurazione a livello web, puoi scegliere se memorizzare la configurazione web nella stessa posizione di origine della pipeline di stack completa o in una posizione diversa, a seconda della struttura più adatta al tuo progetto.
 
 Si applicano le seguenti restrizioni.
 
+* È necessario utilizzare AEM versione `2021.12.6151.20211217T120950Z` o più recente per sfruttare le pipeline di configurazione a livello web.
+* Devi [consenso alla modalità flessibile degli strumenti del dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) per sfruttare le pipeline di configurazione a livello web.
 * Un utente deve essere registrato con il **Gestione distribuzione** per configurare o eseguire le pipeline.
 * In qualsiasi momento, può essere presente una sola pipeline di configurazione del livello web per ogni ambiente.
 * L’utente non può configurare una pipeline di configurazione del livello web quando è in esecuzione la pipeline a stack intero corrispondente.
-* La struttura del livello web deve rispettare la struttura della modalità flessibile, come definita nel documento [Dispatcher nel cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* La struttura del livello web deve rispettare la struttura della modalità flessibile, come definita nel documento [Dispatcher nel cloud.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
 Inoltre, tieni presente quanto segue [tubazione piena](#full-stack-pipeline) si comporta quando viene introdotta una pipeline di livello web.
 

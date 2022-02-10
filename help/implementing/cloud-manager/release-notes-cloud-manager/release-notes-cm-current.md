@@ -2,9 +2,9 @@
 title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2022.02.0
 description: Queste sono le note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2022.02.0.
 feature: Release Information
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '287'
 ht-degree: 2%
 
 ---
@@ -24,8 +24,8 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2022.02.0 è il 1
 
 ## Novità {#what-is-new}
 
-* Nuova accelerazione [pipeline di configurazione a livello web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) sono stati introdotti per distribuire esclusivamente la configurazione HTTPD/dispatcher
-   * È necessario utilizzare AEM versione `2021.12.6151.20211217T120950Z` per utilizzare questa funzione.
+* Nuova accelerazione [pipeline di configurazione a livello web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) sono stati introdotti per distribuire esclusivamente la configurazione HTTPD/dispatcher.
+   * È necessario utilizzare AEM versione `2021.12.6151.20211217T120950Z` o più recenti e [consenso alla modalità flessibile degli strumenti del dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) per utilizzare questa funzione.
    * Questa funzione verrà implementata in un approccio graduale nelle due settimane successive al rilascio della versione 2022.02.0.
 * L’esperienza della pagina di destinazione di Cloud Manager è stata aggiornata per fornire una navigazione migliore, un passaggio semplice tra le visualizzazioni griglia/riquadro e pop-up per un riepilogo rapido del programma.
 * Una nuova soglia di errore (`< D`) è stato aggiunto al [metrica di valutazione dell’affidabilità.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
