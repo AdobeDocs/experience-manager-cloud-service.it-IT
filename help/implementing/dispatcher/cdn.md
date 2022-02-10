@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: e5522483a15b6253e0b149200bd41d27246d2be1
+source-git-commit: ef0a4d3c8daf091ef10c7ebb2bcaa562cf4357fa
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 8%
+source-wordcount: '946'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 AEM come Cloud Service viene fornito con una rete CDN integrata. Il suo scopo principale è ridurre la latenza distribuendo contenuti memorizzabili nella cache dai nodi della CDN al perimetro, vicino al browser. È completamente gestita e configurata per garantire prestazioni ottimali alle applicazioni AEM.
 
-La rete CDN gestita AEM soddisferà i requisiti di prestazioni e sicurezza della maggior parte dei clienti. Per il livello di pubblicazione, i clienti possono facoltativamente indicarlo dal proprio CDN, che dovranno gestire. Questo sarà consentito caso per caso, in base al soddisfacimento di alcuni prerequisiti, tra cui, ma non solo, il cliente con un’integrazione legacy con il proprio fornitore CDN che è difficile abbandonare.
+La rete CDN gestita AEM soddisferà i requisiti di prestazioni e sicurezza della maggior parte dei clienti. Per il livello di pubblicazione, i clienti possono facoltativamente indicarlo dal proprio CDN, che dovranno gestire. Questo sarà consentito caso per caso, in base al soddisfacimento di alcuni prerequisiti, tra cui, ma non solo, il cliente che ha un’integrazione legacy con il proprio fornitore CDN che è difficile abbandonare.
 
 ## CDN gestito AEM  {#aem-managed-cdn}
 
@@ -43,7 +43,7 @@ Fai riferimento a [Gestione degli Elenchi consentiti IP](/help/implementing/clou
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="CDN cliente punta a AEM CDN gestito"
->abstract="AEM come Cloud Service offre ai clienti un’opzione per utilizzare la propria rete CDN esistente. Per il livello di pubblicazione, i clienti possono facoltativamente indicarlo dal proprio CDN, che dovranno gestire. Questo sarà consentito caso per caso, in base al soddisfacimento di alcuni prerequisiti, tra cui, ma non solo, il cliente con un’integrazione legacy con il proprio fornitore CDN che è difficile abbandonare."
+>abstract="AEM come Cloud Service offre ai clienti un’opzione per utilizzare la propria rete CDN esistente. Per il livello di pubblicazione, i clienti possono facoltativamente indicarlo dal proprio CDN, che dovranno gestire. Questo sarà consentito caso per caso, in base al soddisfacimento di alcuni prerequisiti, tra cui, ma non solo, il cliente che ha un’integrazione legacy con il proprio fornitore CDN che è difficile abbandonare."
 
 Se un cliente deve utilizzare il proprio CDN esistente, può gestirlo e indirizzarlo al CDN gestito AEM, purché siano soddisfatte le seguenti condizioni:
 
@@ -52,6 +52,10 @@ Se un cliente deve utilizzare il proprio CDN esistente, può gestirlo e indirizz
 * Il cliente deve essere in grado di configurare la CDN in modo che funzioni con AEM as a Cloud Service - vedi le istruzioni di configurazione riportate di seguito.
 * Il cliente deve avere esperti CDN tecnici che sono in chiamata in caso di problemi correlati.
 * Il cliente deve eseguire e superare con successo un test di carico prima di passare alla produzione.
+
+>[!NOTE]
+>
+>L&#39;Adobe CDN non è facoltativo. I clienti che portano la propria CDN devono indicarla alla CDN gestita AEM.
 
 Istruzioni di configurazione:
 
