@@ -1,113 +1,174 @@
 ---
-title: Pipeline CI-CD
-description: Segui questa pagina per informazioni sulle pipeline CI-CD di Cloud Manager
+title: Pipeline CI/CD
+description: Scopri le pipeline CI/CD di Cloud Manager e come possono essere utilizzate per distribuire il codice in modo efficiente.
 index: true
-source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
+source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 0%
+source-wordcount: '1311'
+ht-degree: 1%
 
 ---
 
 
-# Pipeline CI-CD di Cloud Manager {#intro-cicd}
+# Pipeline CI/CD di Cloud Manager {#intro-cicd}
+
+Scopri le pipeline CI/CD di Cloud Manager e come possono essere utilizzate per distribuire il codice in modo efficiente.
 
 ## Introduzione {#introduction}
 
-Una pipeline CI/CD in Cloud Manager può essere attivata da un qualche tipo di evento, ad esempio una richiesta di pull da un archivio di codice sorgente, ovvero una modifica del codice o una sorta di pianificazione regolare che corrisponda a una frequenza di rilascio.
+Una pipeline CI/CD in Cloud Manager è un meccanismo per creare il codice da un archivio sorgente e distribuirlo in un ambiente. Una pipeline può essere attivata da un evento, ad esempio una richiesta di pull da un archivio del codice sorgente (cioè una modifica del codice), o da una pianificazione regolare, in modo che corrisponda a una frequenza di rilascio.
 
->[!NOTE]
->Per configurare la pipeline, devi:
->* definire il trigger che avvierà la pipeline
->* definire i parametri che controllano la distribuzione di produzione
->* configurare i parametri del test delle prestazioni
+Per configurare una pipeline, devi:
 
+* Definisci il trigger che avvierà la pipeline.
+* Definisci i parametri che controllano la distribuzione di produzione.
+* Configura i parametri del test delle prestazioni.
 
-In Cloud Manager sono disponibili due tipi di pipeline:
+Cloud Manager offre due tipi di pipeline:
 
-* [Pipeline di produzione](#prod-pipeline)
+* [Pipe di produzione](#prod-pipeline)
 * [Pipeline non di produzione](#non-prod-pipeline)
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
+![Tipi di gasdotti](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
+## Pipe di produzione {#prod-pipeline}
 
-## Pipeline di produzione {#prod-pipeline}
+Una pipeline di produzione è una pipeline appositamente creata che include una serie di passaggi orchestrati per distribuire il codice sorgente per l’utilizzo di produzione. I passaggi includono la prima creazione, la creazione di pacchetti, il test, la convalida e la distribuzione in tutti gli ambienti di staging. Pertanto, una pipeline di produzione può essere aggiunta solo una volta creato un set di ambienti di produzione e di staging.
 
-Una pipeline di produzione è una pipeline appositamente creata che include una serie di passaggi orchestrati per portare il codice sorgente completamente in produzione. I passaggi includono la creazione, la creazione di pacchetti, il test, la convalida e la distribuzione in tutti gli ambienti Stage. Inutile dire che una pipeline di produzione può essere aggiunta solo una volta creato un set di ambienti di produzione e di stage .
-
-Fai riferimento a [Configurazione di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) per ulteriori dettagli.
-
+>[!TIP]
+>
+>Consulta il documento [Configurazione di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) per ulteriori dettagli.
 
 ## Pipeline non di produzione {#non-prod-pipeline}
 
-Una pipeline non di produzione ha lo scopo di eseguire scansioni di qualità del codice o di distribuire il codice sorgente in un ambiente di sviluppo.
+Una pipeline non di produzione serve principalmente per eseguire scansioni di qualità del codice o per distribuire il codice sorgente in un ambiente di sviluppo.
 
-Fai riferimento a [Configurazione di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) per ulteriori dettagli.
+>[!TIP]
+>
+>Consulta il documento [Configurazione di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) per ulteriori dettagli.
 
-## Informazioni sulle pipeline CI-CD in Cloud Manager {#understand-pipelines}
+## Origini del codice {#code-sources}
 
-La tabella seguente riepiloga tutte le pipeline in Cloud Manager e il relativo utilizzo.
+Oltre alla produzione e alla non produzione, le pipeline possono essere differenziate in base al tipo di codice che distribuiscono.
 
-| Tipo di pipeline | Implementazione o qualità del codice | Codice sorgente | Quando utilizzare | Quando o perché dovrei usare? |
+* **[Pipellini full-stack](#full-stack-pipeline)** - Distribuzione simultanea di build di codice back-end e front-end contenenti una o più applicazioni server AEM insieme alle configurazioni di HTTPD/Dispatcher
+* **[Pipeline front-end](#front-end)** - Distribuzione di build di codice front-end contenenti una o più applicazioni dell’interfaccia utente lato client
+* **[Pipe di configurazione a livello web](#web-tier-config-pipelines)** - Implementazione delle configurazioni di HTTPD/Dispatcher
+
+Questi sono descritti in dettaglio più avanti in questo documento.
+
+### Informazioni sulle pipeline CI-CD in Cloud Manager {#understand-pipelines}
+
+La tabella seguente riepiloga tutte le pipeline disponibili in Cloud Manager e i relativi utilizzi.
+
+| Tipo di pipeline | Implementazione o qualità del codice | Codice sorgente | Scopo | Note |
 |--- |--- |--- |---|---|
-| Produzione o non produzione | Implementazione | Front end | Tempi di implementazione rapidi.<br>È possibile configurare più pipeline front-end ed eseguirle contemporaneamente per ogni ambiente.<br>La build della pipeline Front End invia la build a uno storage. Quando viene servita una pagina HTML, può fare riferimento a file statici Frontend Code che verranno serviti dalla CDN utilizzando questa memorizzazione come origine. | Per distribuire esclusivamente codice front-end contenente una o più applicazioni dell’interfaccia utente lato client. Il codice front-end è qualsiasi codice che viene utilizzato come file statico. È separato dal codice dell’interfaccia utente gestito da AEM. Include i temi Sites, le SPA definite dal cliente, Firefly SPA e qualsiasi altra soluzione.<br>Deve essere AEM versione 2021.10.5933.20211012T154732Z<br>È necessario che Sites sia abilitato. |
-| Produzione o non produzione | Implementazione | Stack completo | Quando le condutture front end non sono ancora state adottate.<br>Per i casi in cui il codice Front End deve essere distribuito esattamente nello stesso momento del codice del server AEM. | Per distribuire AEM codice server (contenuto immutabile, codice Java, configurazioni OSGi, configurazione HTTPD/dispatcher, reindirizzamento, contenuto mutabile, font), contenente una o più applicazioni server AEM tutte allo stesso tempo. |
-| Non produzione | Qualità del codice | Front end | Avere la valutazione di Cloud Manager. la creazione è riuscita e la qualità del codice senza eseguire una distribuzione.<br>È possibile configurare ed eseguire più pipeline. | Esegui analisi della qualità del codice sul codice front-end. |
-| Non produzione | Qualità del codice | Stack completo | Avere la valutazione di Cloud Manager. la creazione è riuscita e la qualità del codice senza eseguire una distribuzione.<br>È possibile configurare ed eseguire più pipeline. | Esegui la scansione della qualità del codice sull&#39;intero codice dello stack. |
+| Produzione o non produzione | Implementazione | Pieno stack | Distribuisce simultaneamente build di codice back-end e front-end insieme alle configurazioni di HTTPD/Dispatcher | Quando il codice front-end deve essere distribuito simultaneamente con AEM codice server.<br>Quando le pipeline front-end o le pipeline di configurazione del livello web non sono ancora state adottate. |
+| Produzione o non produzione | Implementazione | Front-end | Implementa la build del codice front-end contenente una o più applicazioni dell’interfaccia utente lato client | Supporta più pipeline front-end simultanee<br>Implementazioni molto più veloci di quelle a stack completo |
+| Produzione o non produzione | Implementazione | Configurazione a livello web | Implementa le configurazioni di HTTPD/Dispatcher | Implementazioni in minuti |
+| Non produzione | Qualità del codice | Pieno stack | Esegue la scansione della qualità del codice su codice full-stack senza una distribuzione | Supporta più pipeline |
+| Non produzione | Qualità del codice | Front-end | Esegue la scansione della qualità del codice sul codice front-end senza una distribuzione | Supporta più pipeline |
+| Non produzione | Qualità del codice | Configurazione a livello web | Esegue la scansione della qualità del codice sulle configurazioni del dispatcher senza una distribuzione | Supporta più pipeline |
 
+Il diagramma seguente illustra le configurazioni della pipeline di Cloud Manager con repository front-end tradizionale singolo o indipendente.
 
-Il diagramma seguente illustra le configurazioni della pipeline di Cloud Manager con archivio front-end tradizionale singolo o con configurazione dell’archivio front-end indipendente:
+![Configurazioni della pipeline di Cloud Manager](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
-![](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
+## Pipeline full-stack {#full-stack-pipeline}
 
-## Pipe front-end di Cloud Manager {#front-end}
+Le pipeline full-stack distribuiscono il codice back-end, il codice front-end e le configurazioni del livello web per AEM runtime contemporaneamente.
 
-Le pipeline front-end consentono ai team di semplificare il processo di progettazione e sviluppo, abilitando pipeline front-end accelerate per l’implementazione del codice front-end. Questa pipeline differenziata distribuisce JavaScript e CSS al livello di distribuzione AEM come tema, dando luogo a una nuova versione del tema a cui è possibile fare riferimento dalle pagine consegnate dal runtime di AEM. Il codice front-end è qualsiasi codice che viene utilizzato come file statico. È separato dal codice dell’interfaccia utente gestito da AEM. Include i temi Sites, le SPA definite dal cliente, Firefly SPA e qualsiasi altra soluzione.
+* Codice back-end: contenuto immutabile come codice Java, configurazioni OSGi, reindirizzamento e contenuto modificabile
+* Codice front-end: risorse dell’interfaccia utente dell’applicazione come JavaScript, CSS, font
+* Configurazione a livello web - Configurazioni HTTPD/Dispatcher
+
+La pipeline full-stack rappresenta una pipeline &quot;uber&quot; che esegue tutte le operazioni in una sola volta, mentre offre agli utenti le opzioni per distribuire esclusivamente le configurazioni del codice front-end o del Dispatcher tramite rispettivamente la pipeline front-end e le pipeline di configurazione del livello web.
+
+Codice front-end del pacchetto pipeline full-stack (JavaScript/CSS) come [AEM librerie client.](/help/implementing/developing/introduction/clientlibs.md)
+
+Le pipeline full-stack possono distribuire configurazioni di livello web se un [pipeline di configurazione livello web](#web-tier-config-pipelines) non è configurato.
+
+Si applicano le seguenti restrizioni.
+
+* Un utente deve essere registrato con il **Gestione distribuzione** per configurare o eseguire le pipeline.
+* In qualsiasi momento, può essere disponibile una sola pipeline full-stack per ogni ambiente.
+
+Inoltre, tieni presente il comportamento della pipeline a stack intero se scegli di introdurre una [pipeline di configurazione del livello web.](#web-tier-config-pipelines)
+
+* La pipeline con stack completo per un ambiente ignorerà la configurazione di Dispatcher se esiste la pipeline di configurazione del livello web corrispondente.
+* Se la pipeline di configurazione del livello web corrispondente per l’ambiente non esiste, l’utente può configurare la pipeline a stack intero includendo o ignorando la configurazione di Dispatcher.
+
+Le pipeline full-stack possono essere pipeline di qualità del codice o distribuzione.
+
+## Pipeline front-end {#front-end}
+
+Per codice front-end si intende qualsiasi codice utilizzato come file statico. È separato dal codice dell’interfaccia utente gestito da AEM e può includere temi del sito, SPA definiti dal cliente, SPA Firefly e altre soluzioni.
+
+Le pipeline front-end consentono ai team di semplificare il processo di progettazione e sviluppo consentendo una distribuzione più rapida del codice front-end in modo asincrono rispetto allo sviluppo back-end. Questa pipeline dedicata distribuisce JavaScript e CSS al livello di distribuzione AEM come tema, dando luogo a una nuova versione del tema a cui è possibile fare riferimento dalle pagine consegnate da AEM.
 
 >[!IMPORTANT]
->È necessario utilizzare AEM versione `2021.10.5933.20211012T154732Z ` per sfruttare le pipeline front-end.
+>
+>È necessario utilizzare AEM versione `2021.10.5933.20211012T154732Z ` o versioni successive con AEM Sites abilitato per l’utilizzo di pipeline front-end.
 
 >[!NOTE]
->Un utente connesso come ruolo di Deployment Manager può creare ed eseguire più pipeline front-end contemporaneamente. Esiste tuttavia un limite massimo di 300 gasdotti per programma (per tutti i tipi).
+>
+>Un utente con **Gestione distribuzione** Il ruolo può creare ed eseguire più pipeline front-end contemporaneamente.
+>
+>Esiste tuttavia un limite massimo di 300 gasdotti per programma (per tutti i tipi). che possono essere di qualità del codice front-end o pipeline di distribuzione front-end.
 
-Possono essere di tipo Front End Code Quality o le pipeline di distribuzione Front End.
+Le pipeline front-end possono essere pipeline di qualità del codice o implementazioni.
 
 ### Prima di configurare le pipeline front-end {#before-start}
 
-Prima di iniziare a configurare le pipeline Front End, consulta [AEM Percorso di creazione di siti rapidi](/help/journey-sites/quick-site/overview.md) per un flusso di lavoro end-to-end tramite lo strumento di creazione rapida AEM facile da usare. Questo sito di documentazione ti aiuterà a semplificare lo sviluppo front-end del tuo sito AEM e a personalizzare rapidamente il tuo sito senza AEM conoscenza back-end.
+Prima di configurare le pipeline front-end, controlla la [AEM Percorso di creazione di siti rapidi](/help/journey-sites/quick-site/overview.md) per una guida end-to-end attraverso lo strumento di facile utilizzo AEM creazione rapida di siti. Questo percorso ti aiuterà a semplificare lo sviluppo front-end e ti permetterà di personalizzare rapidamente il tuo sito senza alcuna conoscenza AEM back-end.
 
 ### Configurare una pipeline front-end {#configure-front-end}
 
-Per informazioni su come configurare la pipeline front-end, consulta:
+Per informazioni su come configurare le pipeline front-end, consulta i seguenti documenti.
 
 * [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 ### Sviluppo di siti con la pipeline front-end {#developing-with-front-end-pipeline}
 
-Con la pipeline front-end, viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può ottenere una notevole velocità.
+Con le condutture front-end, viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può essere accelerato.
 
-Fai riferimento a [presente documento](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) per come questo processo funziona insieme ad alcune considerazioni di cui tenere conto al fine di sfruttare appieno il potenziale di questo processo.
+Fare riferimento al documento [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) per come questo processo funziona insieme ad alcune considerazioni di cui tenere conto al fine di sfruttare appieno il potenziale di questo processo.
 
-## Pipellini full-stack {#full-stack-pipeline}
+### Configurazione di pipeline a stack completo {#configure-full-stack}
 
-La pipeline full Stack offre all’utente la possibilità di implementare la configurazione back-end, front-end e HTTPD/dispatcher contemporaneamente.  Distribuisce codice e contenuto nel runtime di AEM, incluso il codice front-end (JavaScript/CSS) incluso nel pacchetto come librerie client AEM. Può distribuire la configurazione del livello web se non è configurata una pipeline del livello web. Rappresenta la pipeline &quot;uber&quot;, offrendo agli utenti le opzioni per distribuire esclusivamente il codice Front End o la configurazione del dispatcher tramite rispettivamente la pipeline Front End e la pipeline di configurazione del livello Web.
-Questi possono essere del tipo Stack completo - Qualità codice o Stack completo - pipeline di distribuzione.
+Per informazioni su come configurare le pipeline full-stack, consulta i seguenti documenti.
 
-Saranno applicate le seguenti restrizioni:
-
-1. Per configurare o eseguire le pipeline, è necessario che un utente sia connesso come gestore distribuzione.
-
-1. In qualsiasi momento, può essere disponibile una sola pipeline Stack completa per ogni ambiente.
-
-1. L’utente può configurare la pipeline Full Stack per un ambiente in modo che ignori o meno la configurazione del dispatcher, Se la pipeline di configurazione corrispondente al livello Web per l’ambiente non esiste.
-
-1. La pipeline di stack completa per un ambiente ignorerà la configurazione del dispatcher se esiste la pipeline di configurazione del livello Web corrispondente per l’ambiente.
+* [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 
-### Configurare una pipeline di stack completa {#configure-full-stack}
+## Pipe di configurazione a livello web {#web-tier-config-pipelines}
 
-Per informazioni su come configurare la pipeline a stack completo, consulta:
+Le pipeline di configurazione a livello web consentono la distribuzione esclusiva della configurazione HTTPD/Dispatcher al runtime AEM disaccoppiandola da altre modifiche del codice. Si tratta di una pipeline semplificata che fornisce agli utenti che desiderano distribuire solo le modifiche alla configurazione del dispatcher, un metodo accelerato per farlo in pochi minuti.
+
+>[!IMPORTANT]
+>
+>È necessario utilizzare AEM versione `X` o superiore per sfruttare le pipeline di configurazione a livello web.
+
+Si applicano le seguenti restrizioni.
+
+* Un utente deve essere registrato con il **Gestione distribuzione** per configurare o eseguire le pipeline.
+* In qualsiasi momento, può essere presente una sola pipeline di configurazione del livello web per ogni ambiente.
+* L’utente non può configurare una pipeline di configurazione del livello web quando è in esecuzione la pipeline a stack intero corrispondente.
+* La struttura del livello web deve rispettare la struttura della modalità flessibile, come definita nel documento [Dispatcher nel cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+
+Inoltre, tieni presente quanto segue [tubazione piena](#full-stack-pipeline) si comporta quando viene introdotta una pipeline di livello web.
+
+* Se una pipeline di configurazione del livello web non è stata configurata per un ambiente, l’utente può effettuare una selezione durante la configurazione della pipeline completa dello stack corrispondente per includere o ignorare la configurazione del Dispatcher durante l’esecuzione e la distribuzione.
+* Una volta configurata una pipeline di configurazione del livello web per un ambiente, la relativa pipeline a stack intero (se presente) corrispondente ignorerà la configurazione del dispatcher durante l’esecuzione e la distribuzione.
+* Una volta eliminata la pipeline di configurazione del livello web, la relativa pipeline a stack intero verrà reimpostata per distribuire le configurazioni di Dispatcher durante la relativa esecuzione.
+
+Le pipeline di configurazione a livello Web possono essere di tipo qualità o distribuzione del codice.
+
+### Configurazione delle pipeline di configurazione a livello web {#configure-web-tier-config-pipelines}
+
+Per informazioni su come configurare le pipeline di configurazione del livello web, consulta i seguenti documenti.
 
 * [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)

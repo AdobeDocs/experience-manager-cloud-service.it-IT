@@ -1,10 +1,10 @@
 ---
 title: Configurazione delle pipeline di produzione
-description: Configurazione delle pipeline di produzione
+description: Scopri come configurare le pipeline di produzione per generare e distribuire il codice agli ambienti di produzione.
 index: true
-source-git-commit: 8bdc246d1f47e1bdc9a217588f0be69a09982be5
+source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '1367'
 ht-degree: 0%
 
 ---
@@ -12,110 +12,177 @@ ht-degree: 0%
 
 # Configurazione di una pipeline di produzione {#configure-production-pipeline}
 
-Gestione distribuzione è responsabile della configurazione della pipeline di produzione.
+Scopri come configurare le pipeline di produzione per generare e distribuire il codice agli ambienti di produzione.
+
+Un utente deve avere **[Gestione distribuzione](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** ruolo per configurare le pipeline di produzione.
 
 >[!NOTE]
->Non è possibile impostare una pipeline di produzione finché non viene completata la creazione di un programma, l’archivio Git dispone di almeno un ramo e viene creato un set di ambiente Produzione e Stage.
+>
+>Non è possibile impostare una pipeline di produzione fino al completamento della creazione del programma, un archivio Git dispone di almeno un ramo e viene creato un set di ambienti di produzione e staging.
 
 Prima di iniziare a distribuire il codice, devi configurare le impostazioni della pipeline dal [!UICONTROL Cloud Manager].
 
 >[!NOTE]
->È possibile modificare le impostazioni della pipeline dopo la configurazione iniziale.
+>
+>È possibile [modificare le impostazioni della pipeline](managing-pipelines.md) dopo la configurazione iniziale.
 
 ## Aggiunta di una nuova pipeline di produzione {#adding-production-pipeline}
 
-Dopo aver configurato il programma e disporre di almeno un ambiente utilizzando [!UICONTROL Cloud Manager] Interfaccia utente, puoi aggiungere una pipeline di produzione.
+Dopo aver configurato il programma e disporre di almeno un ambiente utilizzando [!UICONTROL Cloud Manager] Interfaccia utente, puoi aggiungere una pipeline di produzione seguendo questi passaggi.
 
-Segui questi passaggi per configurare il comportamento e le preferenze per la pipeline di produzione:
+>[!TIP]
+>
+>Prima di configurare una pipeline front-end, consulta la sezione [AEM Percorso di creazione di siti rapidi](/help/journey-sites/quick-site/overview.md) per una guida end-to-end attraverso lo strumento di facile utilizzo AEM creazione rapida di siti. Questo percorso consente di semplificare lo sviluppo front-end del sito AEM, consentendo di personalizzare rapidamente il sito senza AEM conoscenza back-end.
 
-1. Passa a **Tubi** scheda da **Panoramica del programma** pagina.
-Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline di produzione**.
+1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione e il programma appropriati.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
+1. Passa a **Tubi** scheda da **Panoramica del programma** e fai clic su **Aggiungi** per selezionare **Aggiungi pipeline di produzione**.
 
-1. **Aggiungi pipeline di produzione** viene visualizzata la finestra di dialogo. Immettere il nome della pipeline.
+   ![Panoramica sulla scheda Pipelines in Program Manager](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
-   Inoltre, puoi anche configurare **Trigger distribuzione** e **Comportamento di errori di metrica importanti** da **Opzioni di distribuzione**. Fai clic su **Continua**.
+1. La **Aggiungi pipeline di produzione** viene visualizzata la finestra di dialogo. Fornisci un **Nome della pipeline** per identificare la pipeline con le seguenti opzioni. Fai clic su **Continua**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
+   **Trigger distribuzione** - Quando definisci gli attivatori della distribuzione per avviare la pipeline, sono disponibili le seguenti opzioni.
 
+   * **Manuale** - Utilizzare questa opzione per avviare manualmente la pipeline.
+   * **Su modifiche Git** - Questa opzione avvia la pipeline CI/CD ogni volta che vengono aggiunti dei commit al ramo git configurato. Con questa opzione, potete comunque avviare la pipeline manualmente come necessario.
 
-   Puoi definire gli attivatori di distribuzione per avviare la pipeline.
-
-   * **Manuale** - l’utilizzo dell’interfaccia utente consente di avviare manualmente la pipeline.
-   * **Su modifiche Git** - avvia la pipeline CI/CD ogni volta che vengono aggiunti dei commit al ramo git configurato. Anche se selezioni questa opzione, puoi sempre avviare la pipeline manualmente.
-
-      Durante la configurazione o la modifica della pipeline, Deployment Manager ha la possibilità di definire il comportamento della pipeline quando si verifica un errore importante in uno qualsiasi dei gate di qualità.
-
-      Questo è utile per i clienti che desiderano processi più automatizzati. Le opzioni disponibili sono:
-   Puoi definire il comportamento delle metriche di errore importanti per avviare la pipeline.
+   **Comportamento di errori di metrica importanti** - Durante la configurazione o la modifica della pipeline, il **Gestione distribuzione** ha la possibilità di definire il comportamento della pipeline quando si verifica un errore importante in uno qualsiasi dei cancelli di qualità. Le opzioni disponibili sono:
 
    * **Chiedi sempre** - Questa è l&#39;impostazione predefinita e richiede l&#39;intervento manuale su qualsiasi errore importante.
    * **Non riuscito immediatamente** - Se selezionata, la pipeline verrà annullata ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che rifiuta manualmente ogni errore.
    * **Continua immediatamente** - Se selezionata, la pipeline procede automaticamente ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che approva manualmente ogni errore.
 
+   ![Configurazione della pipeline di produzione](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. La **Aggiungi pipeline di produzione** una seconda scheda etichettata come **Codice sorgente**. Puoi selezionare **[Codice front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** o **[Codice Stack Completo](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**.
+1. Sulla **Codice sorgente** scheda è necessario definire la posizione in cui la pipeline deve recuperare il proprio codice e il tipo di codice in cui si trova.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+   * **[Codice front-end](#front-end-code)**
+   * **[Codice Stack Completo](#full-stack-code)**
+   * **[Configurazione a livello web](#web-tier-config)**
 
-   Se hai selezionato **Codice front-end**, devi selezionare la **Archivio**, **Ramo Git** e **Posizione codice**, come illustrato nella figura seguente:
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+I passaggi per completare la creazione della pipeline di produzione variano a seconda dell’opzione per **Codice sorgente** selezionato. Segui i collegamenti sopra riportati per passare alla sezione successiva del documento per completare la configurazione della pipeline.
 
-   Se hai selezionato **Codice Stack Completo**, devi selezionare la **Archivio**, **Ramo Git** e **Opzioni di distribuzione della produzione** (dettagli qui di seguito), come illustrato nella figura:
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
+### Codice front-end {#front-end-code}
 
-   **Opzioni di distribuzione della produzione:**
+Una pipeline di codice front-end implementa build di codice front-end contenenti una o più applicazioni dell’interfaccia utente lato client. Vedere il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per ulteriori informazioni su questo tipo di pipeline.
 
-   * **Sospendi prima della distribuzione in produzione**: Questa opzione consente alla distribuzione di interrompersi prima della produzione.
-   * **Pianificato**: Questa opzione consente all&#39;utente di abilitare la distribuzione di produzione pianificata.
+Per completare la configurazione della pipeline di produzione del codice front-end, effettua le seguenti operazioni.
 
-   >[!IMPORTANT]
-   >Se per l’ambiente selezionato esiste già una pipeline del codice di stack completo, questa selezione verrà disabilitata.
-   >![](/help/implementing/cloud-manager/assets/configure-pipeline/full-stack-disabled.png)
+1. Sulla **Codice sorgente** è necessario definire le seguenti opzioni.
 
-   >[!NOTE]
-   >Prima di iniziare a configurare le pipeline Front End, consulta [AEM Percorso di creazione di siti rapidi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) per un flusso di lavoro end-to-end tramite lo strumento di creazione rapida AEM facile da usare. Questo sito di documentazione ti aiuterà a semplificare lo sviluppo front-end del tuo sito AEM e a personalizzare rapidamente il tuo sito senza AEM conoscenza back-end.
+   * **Archivio** - Questa opzione definisce da quale git repo la pipeline deve recuperare il codice.
+   >[!TIP]
+   > 
+   >Vedere il documento [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) per scoprire come aggiungere e gestire archivi in Cloud Manager.
 
-1. Fai clic su **Continua** una volta selezionate le opzioni dalla **Codice sorgente** scheda .
+   * **Ramo Git** - Questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
+   * **Posizione codice** - Questa opzione definisce il percorso nel ramo dell’archivio selezionato da cui la pipeline deve recuperare il codice.
+   * **Sospendi prima dell’implementazione in produzione** - Questa opzione mette in pausa la pipeline prima dell’implementazione in produzione.
 
-1. La **Aggiungi pipeline di produzione** una terza scheda etichettata come **Audit delle esperienze**. Questa opzione fornisce una tabella per i percorsi URL che devono sempre essere inclusi nel controllo di esperienza.
+   ![Codice front-end](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+1. Fai clic su **Salva** per salvare la pipeline.
 
-   >[!IMPORTANT]
-   >È necessario fare clic su **Aggiungi pagina** per definire un collegamento personalizzato. Il percorso della pagina deve iniziare con `/`.
-   >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
+La pipeline viene salvata ed è ora possibile [gestire le pipeline](managing-pipelines.md) sulla **Tubi** scheda **Panoramica del programma** pagina.
 
+### Codice Stack Completo {#full-stack-code}
 
-   Fai clic su **Aggiungi nuova pagina** per fornire un percorso URL da includere nel controllo di audit esperienza.
+Una pipeline di codice a stack completo distribuisce simultaneamente build di codice back-end e front-end contenenti una o più applicazioni server AEM insieme alla configurazione HTTPD/Dispatcher. Vedere il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) per ulteriori informazioni su questo tipo di pipeline.
 
-   Ad esempio, se desideri includere `https://wknd.site/us/en/about-us.html` in Audit esperienze, immetti il percorso `/us/en/about-us.html` in questo campo e fai clic su **Salva**.
+>[!NOTE]
+>
+>Se per l’ambiente selezionato esiste già una pipeline di codice con stack completo, questa selezione verrà disabilitata.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
+Per completare la configurazione della pipeline di produzione del codice full-stack, segui questi passaggi.
 
-   L’URL visualizzato nella tabella sarà:
+1. Sulla **Codice sorgente** è necessario definire le seguenti opzioni.
 
-   `https://publish-p12361-e112003.adobeaemcloud.com/us/en/about-us.html`
+   * **Archivio** - Questa opzione definisce da quale git repo la pipeline deve recuperare il codice.
+   >[!TIP]
+   > 
+   >Vedere il documento [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) per scoprire come aggiungere e gestire archivi in Cloud Manager.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
+   * **Ramo Git** - Questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
+   * **Posizione codice** - Questa opzione definisce il percorso nel ramo dell’archivio selezionato da cui la pipeline deve recuperare il codice.
+   * **Sospendi prima dell’implementazione in produzione** - Questa opzione mette in pausa la pipeline prima dell’implementazione in produzione.
+   * **Pianificato** - Questa opzione consente all&#39;utente di abilitare la distribuzione di produzione pianificata.
 
-   È possibile includere un massimo di 25 righe. Se in questa sezione non sono presenti pagine inviate dall’utente, per impostazione predefinita la home page del sito verrà inclusa in Experience Audit.
+   ![Codice stack completo](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-   Fai riferimento a [Risultati di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) per ulteriori dettagli.
+1. Fai clic su **Continua** per passare al **Audit delle esperienze** scheda in cui puoi definire i percorsi che devono sempre essere inclusi nel Experience Audit.
 
-   >[!NOTE]
-   > Le pagine configurate verranno inviate al servizio e valutate in base alle prestazioni, all’accessibilità, all’ottimizzazione SEO (Search Engine Optimization), alle best practice e ai test PWA (Progressive Web App).
+   ![Aggiungi audit esperienza](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
-1. Fai clic su **Salva**. La nuova pipeline di produzione creata viene ora visualizzata in **Tubi** il Card.
+1. Fornisci un percorso da includere nel Experience Audit.
 
-   La pipeline viene visualizzata sulla scheda nella schermata iniziale con quattro azioni, come illustrato di seguito:
+   * I percorsi delle pagine devono iniziare con `/`.
+   * Ad esempio, se desideri includere `https://wknd.site/us/en/about-us.html` in Audit esperienze, immetti il percorso `/us/en/about-us.html`.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
+   ![Definizione di un percorso per il controllo delle esperienze](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-   * **Aggiungi** - consente di aggiungere una nuova pipeline.
-   * **Mostra tutto** - consente all&#39;utente di visualizzare tutte le pipeline.
-   * **Accesso alle informazioni sul repository** - consente all’utente di ottenere le informazioni necessarie per accedere all’archivio Git di Cloud Manager.
-   * **Ulteriori informazioni** - Informazioni sulla risorsa della documentazione della pipeline CI/CD.
+1. Fai clic su **Aggiungi pagina** e il percorso verrà completato automaticamente con l’indirizzo dell’ambiente e aggiunto alla tabella dei percorsi.
 
+   ![Salvataggio del percorso della tabella](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
+1. Continua ad aggiungere i percorsi in base alle necessità ripetendo i due passaggi precedenti.
+
+   * Puoi aggiungere un massimo di 25 percorsi.
+   * Se non definisci alcun percorso, per impostazione predefinita la home page del sito verrà inclusa in Experience Audit.
+
+1. Fai clic su **Salva** per salvare la pipeline.
+
+I percorsi configurati per Experience Audit verranno inviati al servizio e valutati in base alle prestazioni, all’accessibilità, all’ottimizzazione SEO (Search Engine Optimization), alle best practice e ai test PWA (Progressive Web App) durante l’esecuzione della pipeline. Fai riferimento a [Risultati di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) per ulteriori dettagli.
+
+La pipeline viene salvata ed è ora possibile [gestire le pipeline](managing-pipelines.md) sulla **Tubi** scheda **Panoramica del programma** pagina.
+
+### Configurazione a livello web {#web-tier-config}
+
+Una pipeline di configurazione a livello web distribuisce configurazioni HTTPD/Dispatcher. Vedere il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) per ulteriori informazioni su questo tipo di pipeline.
+
+Per completare la configurazione della pipeline di produzione del codice full-stack, segui questi passaggi.
+
+1. Sulla **Codice sorgente** è necessario definire le seguenti opzioni.
+
+   * **Archivio** - Questa opzione definisce da quale git repo la pipeline deve recuperare il codice.
+   >[!TIP]
+   > 
+   >Vedere il documento [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) per scoprire come aggiungere e gestire archivi in Cloud Manager.
+
+   * **Ramo Git** - Questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
+   * **Posizione codice** - Questa opzione definisce il percorso nel ramo dell’archivio selezionato da cui la pipeline deve recuperare il codice.
+      * Per le pipeline di configurazione livello web, in genere si tratta del percorso contenente `conf.d`, `conf.dispatcher.d`e `opt-in` directory.
+      * Ad esempio, se la struttura del progetto è stata generata dal [Archetipo AEM progetto,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) il percorso sarebbe `/dispatcher/src`.
+   * **Sospendi prima dell’implementazione in produzione** - Questa opzione mette in pausa la pipeline prima dell’implementazione in produzione.
+   * **Pianificato** - Questa opzione consente all&#39;utente di abilitare la distribuzione di produzione pianificata.
+
+   ![Codice a livello web](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
+
+1. Fai clic su **Salva** per salvare la pipeline.
+
+>[!NOTE]
+>
+>Se disponi di una pipeline full-stack esistente che viene distribuita in un ambiente, la creazione di una pipeline di configurazione del livello web per lo stesso ambiente comporterà l’eliminazione della configurazione del livello web esistente nella pipeline full-stack.
+
+La pipeline viene salvata ed è ora possibile [gestire le pipeline](managing-pipelines.md) sulla **Tubi** scheda **Panoramica del programma** pagina.
+
+## Ignora pacchetti Dispatcher {#skip-dispatcher-packages}
+
+Se desideri che i pacchetti del dispatcher siano generati come parte della pipeline, ma non desideri che vengano pubblicati per creare l’archiviazione, puoi disattivarli, riducendo la durata dell’esecuzione della pipeline.
+
+Per disabilitare la pubblicazione dei pacchetti dispatcher, devi aggiungere la seguente configurazione tramite il tuo progetto `pom.xml` file. Si basa su una variabile di ambiente, che funge da flag impostabile nel contenitore di build di Cloud Manager per definire quando i pacchetti del dispatcher devono essere ignorati.
+
+```xml
+<profile>
+  <id>only-include-dispatcher-when-it-isnt-ignored</id>
+  <activation>
+    <property>
+      <name>env.IGNORE_DISPATCHER_PACKAGES</name>
+      <value>!true</value>
+    </property>
+  </activation>
+  <modules>
+    <module>dispatcher</module>
+  </modules>
+</profile>
+```

@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c135f7c0c5265110774d145bf8c5a73d44d660b1
+source-git-commit: ad49f5896680f191cd667b2e17ee8e81b7c424a5
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3494'
 ht-degree: 98%
 
 ---
@@ -552,6 +552,8 @@ ht-degree: 98%
    + Utilizzo di Cloud Manager {#using-cloud-manager}
       + Note sulla versione per Cloud Manager {#release-notes-cloud-manager}
          + [Note sulla versione corrente](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+         + 2022 {#2022}
+            + [Note sulla versione 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021 {#2021}
             + [Note sulla versione 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [Note sulla versione 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -602,12 +604,9 @@ ht-degree: 98%
       + [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md)
       + Pipeline CI-CD di Cloud Manager {#cicd-pipelines}
          + [Introduzione](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-         + Pipe di produzione {#production-pipelines}
-            + [Configurazione di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-            + [Modifica di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-         + Pipeline non di produzione {#non-production-pipelines}
-            + [Configurazione di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-            + [Modifica di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
+         + [Configurazione di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Configurazione di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [Gestione delle pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [Implementazione del codice](/help/implementing/cloud-manager/deploy-code.md)
       + Risultati dei test {#test-results}
          + [Panoramica](/help/implementing/cloud-manager/overview-test-results.md)
