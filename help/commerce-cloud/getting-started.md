@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1095'
 ht-degree: 29%
 
 ---
@@ -43,7 +43,7 @@ Questa variabile di ambiente viene utilizzata in due posizioni:
 
 Per ogni ambiente AEM as a Cloud Service, è possibile utilizzare un diverso URL endpoint GraphQL di In questo modo i progetti possono collegare AEM ambienti di staging con sistemi di staging commerce e AEM ambiente di produzione a un sistema di produzione commerce. L’endpoint GraphQL di deve essere disponibile pubblicamente; non sono supportate connessioni VPN private o locali. Facoltativamente, è possibile fornire un’intestazione di autenticazione per utilizzare funzionalità CIF aggiuntive che richiedono l’autenticazione.
 
-Facoltativo e solo per Adobe Commerce Enterprise / Cloud il componente aggiuntivo CIF supporta l’utilizzo di dati di catalogo in staging per gli autori di AEM. Questo richiede la configurazione di un token di autorizzazione. Il token di autorizzazione configurato è disponibile e utilizzato solo nelle istanze AEM autore per motivi di sicurezza. AEM le istanze di pubblicazione non possono mostrare dati in fase.
+Facoltativamente e solo per Adobe Commerce Enterprise / Cloud il componente aggiuntivo CIF supporta l’utilizzo di dati di catalogo in staging per gli autori di AEM. Questo richiede la configurazione di un’intestazione di autorizzazione. Questa intestazione è disponibile e utilizzata solo AEM istanze dell’autore per motivi di sicurezza. AEM le istanze di pubblicazione non possono mostrare dati in fase.
 
 Esistono due opzioni per configurare l’endpoint:
 
@@ -59,7 +59,7 @@ Facendo clic su questo pulsante si apre una finestra di dialogo:
 
 ![Endpoint Commerce di CM](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Dopo aver impostato l’endpoint (facoltativamente un token di autenticazione per il supporto del catalogo in staging), l’endpoint verrà visualizzato nella pagina dei dettagli. Facendo clic sull’icona Modifica si aprirà la stessa finestra di dialogo in cui l’endpoint può essere modificato, se necessario.
+Dopo aver impostato l’endpoint ed eventualmente un’intestazione di autorizzazione per il supporto del catalogo in staging, l’endpoint verrà visualizzato nella pagina dei dettagli. Facendo clic sull’icona Modifica si aprirà la stessa finestra di dialogo in cui l’endpoint può essere modificato, se necessario.
 
 ![Informazioni sull’ambiente CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
