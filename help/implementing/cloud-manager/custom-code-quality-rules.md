@@ -2,25 +2,25 @@
 title: Regole per la qualità del codice personalizzato
 description: Questa pagina descrive le regole di qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice di AEM Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 4567581eb02c928f1493defdab667cc713fc222a
+source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
 workflow-type: tm+mt
-source-wordcount: '3464'
-ht-degree: 3%
+source-wordcount: '3495'
+ht-degree: 4%
 
 ---
 
 # Regole per la qualità del codice personalizzato {#custom-code-quality-rules}
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_customcodequalityrules"
->title="Custom Code Quality Rules"
->abstract="This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering."
+>title="Regole per la qualità del codice personalizzato"
+>abstract="Questa pagina descrive le regole di qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice di AEM Engineering."
 
 Questa pagina descrive le regole per la qualità del codice personalizzato eseguite da Cloud Manager come parte di [test di qualità del codice.](/help/implementing/cloud-manager/code-quality-testing.md) Si basano sulle best practice di AEM Engineering.
 
 >[!NOTE]
-I campioni di codice qui forniti hanno solo scopo illustrativo. Vedi SonarQube [Documentazione sui concetti](https://docs.sonarqube.org/7.4/user-guide/concepts/) per scoprire i concetti e le regole di qualità di SonarQube.
+>
+>I campioni di codice qui forniti hanno solo scopo illustrativo. Vedi SonarQube [Documentazione sui concetti](https://docs.sonarqube.org/7.4/user-guide/concepts/) per scoprire i concetti e le regole di qualità di SonarQube.
 
 ## Regole SonarQube {#sonarqube-rules}
 
@@ -315,7 +315,8 @@ public void doThis() throws Exception {
 In generale, il livello di log INFO deve essere utilizzato per delimitare azioni importanti e, per impostazione predefinita, AEM è configurato per il log al livello INFO o superiore. I metodi di GET e HEAD devono essere sempre di sola lettura e non costituiscono pertanto azioni importanti. È probabile che la registrazione a livello INFO in risposta alle richieste di GET o HEAD generi un notevole rumore di log, rendendo così più difficile identificare informazioni utili nei file di log. La registrazione durante la gestione delle richieste di GET o HEAD deve essere a livello di WARN o ERROR quando si è verificato un errore o a livello di DEBUG o di TRACE se è utile fornire informazioni più approfondite sulla risoluzione dei problemi.
 
 >[!NOTE]
-Questo non si applica a `access.log`Registrazione di tipo -type per ogni richiesta.
+>
+>Questo non si applica a `access.log`Registrazione di tipo -type per ogni richiesta.
 
 #### Codice non conforme {#non-compliant-code-8}
 
@@ -520,7 +521,8 @@ Tuttavia, in alcuni casi un’API è obsoleta nel contesto di AEM ma potrebbe no
 La sezione seguente descrive i controlli OakPAL eseguiti da Cloud Manager.
 
 >[!NOTE]
-OakPAL è un framework che convalida i pacchetti di contenuto utilizzando un archivio Oak autonomo. È stato sviluppato da un partner AEM e vincitore del premio Rockstar Nord America 2019 AEM.
+>
+>OakPAL è un framework che convalida i pacchetti di contenuto utilizzando un archivio Oak autonomo. È stato sviluppato da un partner AEM e vincitore del premio Rockstar Nord America 2019 AEM.
 
 ### Le API di prodotto annotate con @ProviderType non devono essere implementate o estese dai clienti {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -681,9 +683,12 @@ Affinché la ricerca delle risorse funzioni correttamente in AEM Assets, le pers
 Un problema comune che si verifica in progetti complessi è che lo stesso componente OSGi è configurato più volte. Questo crea un’ambiguità in merito alla configurazione da applicare. Questa regola è &quot;in base alla modalità di esecuzione&quot; in quanto identificherà solo i problemi in cui lo stesso componente è configurato più volte nella stessa modalità di esecuzione o nella stessa combinazione di modalità di esecuzione.
 
 >[!NOTE]
-Questa regola produrrà problemi in cui la stessa configurazione, allo stesso percorso, è definita in più pacchetti, compresi i casi in cui lo stesso pacchetto è duplicato nell&#39;elenco complessivo dei pacchetti generati.
-Ad esempio, se la build produce pacchetti denominati `com.myco:com.myco.ui.apps` e `com.myco:com.myco.all` dove `com.myco:com.myco.all` incorporamenti `com.myco:com.myco.ui.apps`quindi tutte le configurazioni in `com.myco:com.myco.ui.apps` saranno segnalati come duplicati.
-Questo è generalmente un caso in cui non si segue [Linee guida per la struttura dei pacchetti di contenuti.](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In questo esempio specifico, il pacchetto `com.myco:com.myco.ui.apps` manca il `<cloudManagerTarget>none</cloudManagerTarget>` proprietà.
+>
+>Questa regola produrrà problemi in cui la stessa configurazione, allo stesso percorso, è definita in più pacchetti, compresi i casi in cui lo stesso pacchetto è duplicato nell&#39;elenco complessivo dei pacchetti generati.
+>
+>Ad esempio, se la build produce pacchetti denominati `com.myco:com.myco.ui.apps` e `com.myco:com.myco.all` dove `com.myco:com.myco.all` incorporamenti `com.myco:com.myco.ui.apps`quindi tutte le configurazioni in `com.myco:com.myco.ui.apps` saranno segnalati come duplicati.
+>
+>Questo è generalmente un caso in cui non si segue [Linee guida per la struttura dei pacchetti di contenuti.](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In questo esempio specifico, il pacchetto `com.myco:com.myco.ui.apps` manca il `<cloudManagerTarget>none</cloudManagerTarget>` proprietà.
 
 #### Codice non conforme {#non-compliant-code-osgi}
 
@@ -779,7 +784,8 @@ La documentazione sugli strumenti di modernizzazione AEM fornisce documentazione
 Per essere compatibile con il modello di distribuzione del Cloud Service, i singoli pacchetti di contenuto devono contenere contenuto per le aree immutabili dell’archivio (ovvero, `/apps` e `/libs`) o l&#39;area mutabile (ovvero tutto ciò che non si trova `/apps` o `/libs`), ma non entrambe. Ad esempio, un pacchetto che include entrambi `/apps/myco/components/text and /etc/clientlibs/myco` non è compatibile con il Cloud Service e causerà la segnalazione di un problema.
 
 >[!NOTE]
-La regola [I pacchetti cliente non devono creare o modificare nodi sotto /libs](#oakpal-customer-package) si applica sempre.
+>
+>La regola [I pacchetti cliente non devono creare o modificare nodi sotto /libs](#oakpal-customer-package) si applica sempre.
 
 Fai riferimento a [AEM struttura del progetto](/help/implementing/developing/introduction/aem-project-content-package-structure.md) per ulteriori dettagli.
 

@@ -2,9 +2,9 @@
 title: Test della qualità del codice
 description: Scopri come funziona il test della qualità del codice delle pipeline e come può migliorare la qualità delle distribuzioni.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ca3c1f255b8441a8d376a55a5353d58848384b8b
+source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1147'
 ht-degree: 2%
 
 ---
@@ -14,10 +14,9 @@ ht-degree: 2%
 Scopri come funziona il test della qualità del codice delle pipeline e come può migliorare la qualità delle distribuzioni.
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_codequalitytests"
->title="Code Quality Testing"
->abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+>title="Test della qualità del codice"
+>abstract="Il test della qualità del codice valuta il codice dell’applicazione in base a un set di regole di qualità. È lo scopo principale di una pipeline di sola qualità del codice e viene eseguita immediatamente dopo la fase di compilazione in tutte le pipeline di produzione e non di produzione."
 
 ## Introduzione {#introduction}
 
@@ -30,7 +29,8 @@ Consulta il documento [Configurazione della pipeline CI-CD](/help/implementing/c
 Il test di qualità del codice esegue la scansione del codice sorgente per garantire che soddisfi determinati criteri di qualità. Questa funzione è implementata tramite una combinazione di SonarQube e un esame a livello di pacchetto dei contenuti tramite OakPAL. Ci sono più di 100 regole, che combinano regole Java generiche e regole specifiche per AEM. Alcune delle regole specifiche AEM vengono create in base alle best practice di AEM Engineering e sono denominate [regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
-Scaricare l’elenco completo delle regole [con questo collegamento.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>
+>Scaricare l’elenco completo delle regole [con questo collegamento.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
 ### Valutazioni a tre livelli {#three-tiered-gate}
 
@@ -58,10 +58,12 @@ Nella tabella seguente sono riepilogati i rating e le soglie di errore per ciasc
 | Compatibilità Cloud Service | Numero di problemi di compatibilità del servizio cloud identificati | Info | > 0 |
 
 >[!NOTE]
-Fai riferimento a [Definizioni delle metriche di SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) definizioni più dettagliate.
+>
+>Fai riferimento a [Definizioni delle metriche di SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) definizioni più dettagliate.
 
 >[!NOTE]
-Per ulteriori informazioni sulle regole di qualità del codice personalizzato eseguite da [!UICONTROL Cloud Manager], consultare il documento [Regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>
+>Per ulteriori informazioni sulle regole di qualità del codice personalizzato eseguite da [!UICONTROL Cloud Manager], consultare il documento [Regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Gestione dei falsi positivi {#dealing-with-false-positives}
 
@@ -94,10 +96,11 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 Quindi la soluzione corretta è quella di rimuovere la password hardcoded.
 
 >[!NOTE]
-Anche se è una best practice fare `@SuppressWarnings` annotazione il più possibile specifica, ovvero annotare solo l’istruzione o il blocco specifici che causano il problema, è possibile annotare a livello di classe.
+>
+>Anche se è una best practice fare `@SuppressWarnings` annotazione il più possibile specifica, ovvero annotare solo l’istruzione o il blocco specifici che causano il problema, è possibile annotare a livello di classe.
 
 >[!NOTE]
-Anche se non esiste un passaggio esplicito di test della sicurezza, durante il passaggio sulla qualità del codice sono state valutate le regole di qualità del codice relative alla sicurezza. Consulta il documento [Panoramica sulla sicurezza per AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) per ulteriori informazioni sulla sicurezza in Cloud Service.
+>Anche se non esiste un passaggio esplicito di test della sicurezza, durante il passaggio sulla qualità del codice sono state valutate le regole di qualità del codice relative alla sicurezza. Consulta il documento [Panoramica sulla sicurezza per AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) per ulteriori informazioni sulla sicurezza in Cloud Service.
 
 ## Ottimizzazione della scansione dei pacchetti di contenuti {#content-package-scanning-optimization}
 
@@ -114,6 +117,7 @@ Per i progetti che producono decine di pacchetti incorporati, questa ottimizzazi
 Un caso speciale può verificarsi quando il pacchetto di contenuti &quot;all&quot; contiene una combinazione di pacchetti di contenuti saltati e bundle OSGi. Ad esempio, se `myco-all-1.0.0-SNAPSHOT.zip` conteneva i due pacchetti incorporati precedentemente menzionati e uno o più bundle OSGi, quindi viene costruito un nuovo pacchetto di contenuti minimali con solo i bundle OSGi. Questo pacchetto viene sempre denominato `cloudmanager-synthetic-jar-package` e i bundle contenuti sono inseriti `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
-* Questa ottimizzazione non influisce sui pacchetti distribuiti in AEM.
-* Poiché la corrispondenza tra i pacchetti di contenuto incorporati e i pacchetti di contenuto saltato si basa sui nomi di file, questa ottimizzazione non può essere eseguita se più pacchetti di contenuto saltato hanno esattamente lo stesso nome di file o se il nome di file viene modificato durante l’incorporazione.
+>
+>* Questa ottimizzazione non influisce sui pacchetti distribuiti in AEM.
+>* Poiché la corrispondenza tra i pacchetti di contenuto incorporati e i pacchetti di contenuto saltato si basa sui nomi di file, questa ottimizzazione non può essere eseguita se più pacchetti di contenuto saltato hanno esattamente lo stesso nome di file o se il nome di file viene modificato durante l’incorporazione.
 
