@@ -2,9 +2,9 @@
 title: Informazioni di base sull’authoring
 description: Scopri i concetti e le modalità di creazione dei contenuti per i CMS headless utilizzando i frammenti di contenuto.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1696'
 ht-degree: 5%
 
 ---
@@ -268,7 +268,7 @@ Ora che hai imparato le nozioni di base, il passo successivo è quello di [Scopr
 
 
 * Guide introduttive
-   * [Guida rapida alla creazione di una cartella Assets Headless](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+   * [Creazione di un’impostazione headless per la cartella Assets](/help/headless/setup/create-assets-folder.md)
 
 * Percorso Architect di contenuti AEM headless
 

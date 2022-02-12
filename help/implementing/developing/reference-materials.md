@@ -2,10 +2,10 @@
 title: Materiali di riferimento API
 description: AEM dispone di API estese e potenti che puoi sfruttare per il tuo progetto di esperienza digitale.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -53,7 +53,7 @@ Se un’API è fornita da AEM, preferiscila rispetto a Sling, JCR e OSGi. Se AEM
 
 >[!TIP]
 >
->Per informazioni dettagliate su queste linee guida, consulta il documento [Comprendere le best practice per le API Java.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+>Per informazioni dettagliate su queste linee guida, consultare il documento [Comprendere le best practice per le API Java.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ## Servizi di distribuzione AEM e gestione dei contenuti e API {#delivery-apis}
 
@@ -66,7 +66,7 @@ AEM offre componenti personalizzabili e opzioni di distribuzione dei contenuti.
 | [Abilitazione dell’esportazione JSON per un componente](/help/implementing/developing/components/enabling-json-exporter.md) | Generare l’esportazione JSON del contenuto di componenti in base a un framework di modelli |
 | [API di Assets](/help/assets/mac-api-assets.md) | Consente operazioni di creazione-lettura-aggiornamento-eliminazione (CRUD) sulle risorse, tra cui file binari, metadati, rappresentazioni e commenti. Consulta API HTTP AEM Assets |
 | [API HTTP per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md) | Accedere ai contenuti dei frammenti di contenuto direttamente tramite l’API HTTP tramite operazioni CRUD |
-| [API GraphQL per frammenti di contenuto](/help/assets/content-fragments/graphql-api-content-fragments.md) | Consentire la distribuzione efficiente di frammenti di contenuto ai client JavaScript in implementazioni CMS headless |
+| [API GraphQL per frammenti di contenuto](/help/headless/graphql-api/content-fragments.md) | Consentire la distribuzione efficiente di frammenti di contenuto ai client JavaScript in implementazioni CMS headless |
 | [API HTTP per le risorse di frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato esatto delle richieste di risorse HTTP supportate |
 
 ## API specifiche per SPA {#spa-apis}
@@ -82,4 +82,4 @@ AEM framework SDK per l’editor di applicazioni a pagina singola (SPA) fornisce
 
 >[!TIP]
 >
->Per ulteriori informazioni sulle applicazioni a pagina singola, consulta [SPA Introduzione e Procedura dettagliata](/help/implementing/developing/hybrid/introduction.md) .
+>Consulta la sezione [Introduzione SPA e Procedura dettagliata](/help/implementing/developing/hybrid/introduction.md) per ulteriori informazioni sulle applicazioni a pagina singola.

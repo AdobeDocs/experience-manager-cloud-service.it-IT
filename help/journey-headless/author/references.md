@@ -2,10 +2,10 @@
 title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Scopri come utilizzare i riferimenti in Frammenti di contenuto, per contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 2%
+source-wordcount: '729'
+ht-degree: 5%
 
 ---
 
@@ -127,8 +127,8 @@ Ora che hai imparato i riferimenti e la struttura nei frammenti di contenuto, il
 
 
 * Guide introduttive
-   * [Guida rapida alla creazione di una cartella Assets Headless](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+   * [Creazione di una cartella di risorse - Configurazione headless](/help/headless/setup/create-assets-folder.md)
 
-* percorso di architetti di contenuti headless AEM
+* Percorso Architect di contenuti AEM headless
 
 * AEM Percorso di traduzione headless

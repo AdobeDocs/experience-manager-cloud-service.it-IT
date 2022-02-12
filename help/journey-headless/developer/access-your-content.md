@@ -1,21 +1,21 @@
 ---
 title: Come accedere ai contenuti tramite API di consegna AEM
 description: In questa parte del Percorso di sviluppatori AEM Headless, scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
-source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
+exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
 
 ---
 
+# Come accedere ai contenuti tramite API di consegna AEM {#access-your-content}
 
-# Come accedere ai contenuti tramite le API di consegna AEM {#access-your-content}
-
-In questa parte del [AEM Percorso di sviluppatori headless,](overview.md) puoi imparare a utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto e inviarlo all&#39;app (consegna headless).
+In questa parte del [AEM Percorso di sviluppo headless,](overview.md) scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto e inviarlo all’app (consegna headless).
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso AEM headless [Come modellare il contenuto](model-your-content.md) hai appreso le nozioni di base sulla modellazione dei contenuti in AEM, quindi ora devi capire come modellare la struttura dei contenuti, quindi realizzare tale struttura utilizzando AEM Modelli di frammento di contenuto e Frammenti di contenuto:
+Nel documento precedente del percorso senza testa AEM, [Come modellare il contenuto](model-your-content.md) hai appreso le nozioni di base sulla modellazione dei contenuti in AEM, quindi ora devi capire come modellare la struttura dei contenuti, quindi realizzare tale struttura utilizzando AEM Modelli di frammento di contenuto e Frammenti di contenuto:
 
 * Riconoscere i concetti e la terminologia relativi alla modellazione dei contenuti.
 * Scopri perché è necessaria la modellazione dei contenuti per la distribuzione di contenuti headless.
@@ -36,7 +36,7 @@ Quindi...hai tutto questo contenuto, ben strutturato (in Frammenti di contenuto)
 
 Ciò di cui hai bisogno è un modo per eseguire il targeting di contenuti specifici, seleziona ciò che ti serve e restituiscilo all’app per un’ulteriore elaborazione.
 
-Con Adobe Experience Manager (AEM) come Cloud Service, puoi accedere in modo selettivo ai frammenti di contenuto, utilizzando l’API GraphQL di AEM, per restituire solo il contenuto necessario. Ciò significa che è possibile realizzare una distribuzione headless di contenuti strutturati da utilizzare nelle applicazioni.
+Con Adobe Experience Manager (AEM) as a Cloud Service, puoi accedere in modo selettivo ai frammenti di contenuto utilizzando l’API GraphQL di AEM per restituire solo il contenuto necessario. Ciò significa che è possibile realizzare una distribuzione headless di contenuti strutturati da utilizzare nelle applicazioni.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ GraphQL è una specifica open source che fornisce:
 * linguaggio di query che consente di selezionare contenuto specifico da oggetti strutturati.
 * un runtime per eseguire queste query con il contenuto strutturato.
 
-GraphQL è un&#39;API tipizzata *fortemente*. Questo significa che il contenuto *tutto* deve essere chiaramente strutturato e organizzato per tipo, in modo che GraphQL *comprenda* cosa accedere e come. I campi dati sono definiti all’interno degli schemi GraphQL, che definiscono la struttura degli oggetti contenuto.
+GraphQL è un *fortemente* API tipizzata. Ciò significa che *tutto* il contenuto deve essere chiaramente strutturato e organizzato per tipo, in modo che GraphQL *comprensivo* accesso e modalità. I campi dati sono definiti all’interno degli schemi GraphQL, che definiscono la struttura degli oggetti contenuto.
 
 Gli endpoint GraphQL forniscono quindi i percorsi che rispondono alle query GraphQL.
 
@@ -57,7 +57,7 @@ Ciò significa che l’app può selezionare in modo preciso, affidabile ed effic
 
 >[!NOTE]
 >
->Consulta *GraphQL*.org e *GraphQL*.com.
+>Vedi *GraphQL*.org e *GraphQL*.com.
 
 <!--
 ## AEM and GraphQL {#aem-graphql}
@@ -111,7 +111,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
     * The REST API can be used for CR(u)D operations.
 -->
 
-## Frammenti di contenuto da utilizzare con AEM API GraphQL {#content-fragments-use-with-aem-graphql-api}
+## Frammenti di contenuto da utilizzare con l’API GraphQL AEM {#content-fragments-use-with-aem-graphql-api}
 
 I frammenti di contenuto possono essere utilizzati come base per GraphQL per AEM schemi e query come:
 
@@ -123,13 +123,13 @@ I frammenti di contenuto possono essere utilizzati come base per GraphQL per AEM
 
 Questi Modelli Di Frammento Di Contenuto:
 
-* Vengono utilizzati per generare gli schemi una volta **Abilitato**.
+* Sono utilizzati per generare gli schemi una volta **Abilitato**.
 * Fornisci i tipi di dati e i campi richiesti per GraphQL. Assicurano che la tua applicazione richieda solo ciò che è possibile e riceva ciò che è previsto.
-* Il tipo di dati **Riferimenti frammento** può essere utilizzato nel modello per fare riferimento a un altro frammento di contenuto e quindi introdurre livelli aggiuntivi di struttura.
+* Tipo di dati **Riferimenti ai frammenti** può essere utilizzato nel modello per fare riferimento a un altro frammento di contenuto e quindi introdurre ulteriori livelli di struttura.
 
-### Riferimenti a frammento {#fragment-references}
+### Riferimenti ai frammenti {#fragment-references}
 
-Il **Riferimento al frammento**:
+La **Riferimento frammento**:
 
 * È un tipo di dati specifico disponibile quando si definisce un modello di frammento di contenuto.
 * Fa riferimento a un altro frammento, a seconda di un modello di frammento di contenuto specifico.
@@ -141,7 +141,7 @@ Il **Riferimento al frammento**:
 
 Per facilitare la progettazione e lo sviluppo di modelli di frammenti di contenuto, puoi visualizzare in anteprima l’output JSON nell’Editor frammento di contenuto.
 
-![Anteprima JSON ](assets/cfm-model-json-preview.png "Anteprima JSON")
+![Anteprima JSON](assets/cfm-model-json-preview.png "Anteprima JSON")
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
@@ -235,7 +235,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 -->
 
-## Utilizzo dell&#39;API GraphQL AEM {#actually-using-aem-graphiql}
+## Utilizzo dell’API GraphQL AEM {#actually-using-aem-graphiql}
 
 ### Configurazione iniziale {#initial-setup}
 
@@ -243,13 +243,13 @@ Prima di iniziare con le query sul contenuto è necessario:
 
 * Abilita l&#39;endpoint
    * Usa strumenti -> Risorse -> GraphQL
-   * [Abilitazione dell’endpoint GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [Abilitazione dell’endpoint GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
 
 * Installa GraphiQL (se necessario)
    * Installato come pacchetto dedicato
-   * [Installazione dell&#39;interfaccia AEM GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
+   * [Installazione dell&#39;interfaccia AEM GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
 
-### Struttura del campione {#sample-structure}
+### Struttura di esempio {#sample-structure}
 
 Per utilizzare effettivamente l’API GraphQL AEM in una query, possiamo utilizzare le due strutture di modello di frammento di contenuto molto semplici:
 
@@ -274,7 +274,7 @@ Le query possono essere immesse nell’interfaccia GraphiQL, ad esempio in:
 
 * `http://localhost:4502/content/graphiql.html`
 
-![Interfaccia ](assets/graphiql-interface.png "GraphiQL")
+![Interfaccia GraphiQL](assets/graphiql-interface.png "Interfaccia GraphiQL")
 
 ### Guida introduttiva alle query {#getting-Started-with-queries}
 
@@ -354,7 +354,7 @@ Per informazioni dettagliate sull’utilizzo dell’API GraphQL AEM e sulla conf
 
 ## Novità {#whats-next}
 
-Ora che hai imparato ad accedere ai contenuti headless e ad eseguire query tramite l’API GraphQL di AEM, ora [scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto](update-your-content.md).
+Ora che hai imparato ad accedere ai contenuti headless e ad eseguire query tramite l’API GraphQL AEM ora puoi [scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto](update-your-content.md).
 
 ## Risorse aggiuntive {#additional-resources}
 
@@ -363,18 +363,18 @@ Ora che hai imparato ad accedere ai contenuti headless e ad eseguire query trami
    * [Variabili](https://graphql.org/learn/queries/#variables)
    * [Librerie Java GraphQL](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
-* [Imparare a utilizzare GraphQL con AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * [Abilitazione dell’endpoint GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
-   * [Installazione dell&#39;interfaccia AEM GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
-* [Struttura dei frammenti di contenuto di esempio](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
-   * [Query Di Esempio - Un Singolo Frammento Di Città Specifico](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-   * [Esempio di query per metadati - Elenco dei metadati per i riconoscimenti denominati GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-   * [Query di esempio - Tutte le città con una variante denominata](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+* [Imparare a utilizzare GraphQL con AEM](/help/headless/graphql-api/content-fragments.md)
+   * [Abilitazione dell’endpoint GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
+   * [Installazione dell&#39;interfaccia AEM GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
+* [Struttura dei frammenti di contenuto di esempio](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
+* [Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query](/help/headless/graphql-api/sample-queries.md)
+   * [Query Di Esempio - Un Singolo Frammento Di Città Specifico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+   * [Esempio di query per metadati - Elenco dei metadati per i riconoscimenti denominati GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+   * [Query di esempio - Tutte le città con una variante denominata](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [Abilitare la funzionalità dei frammenti di contenuto nel browser di configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
    * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
    * [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Comprendere la condivisione delle risorse tra le origini (CORS, Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [Generazione dei token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-* [Guida introduttiva a AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - Una breve serie di esercitazioni video che offre una panoramica dell’utilizzo AEM funzioni headless, tra cui la modellazione dei contenuti e GraphQL.
+* [Guida introduttiva di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Una breve serie di esercitazioni video che offre una panoramica dell’utilizzo delle funzioni senza testa AEM, inclusa la modellazione dei contenuti e GraphQL.

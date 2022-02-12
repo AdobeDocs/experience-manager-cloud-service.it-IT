@@ -2,20 +2,20 @@
 title: Percorso per la prima esperienza con AEM Headless
 description: In questa parte del Percorso di sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprendi le best practice per rendere il percorso il più semplice possibile.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
 
 # Percorso per la prima esperienza con AEM Headless {#path-to-first-experience}
 
-In questa parte del [AEM Percorso di sviluppatori headless,](overview.md) comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprendi le best practice per rendere il percorso il più semplice possibile.
+In questa parte del [AEM Percorso di sviluppo headless,](overview.md) comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprendi le best practice per rendere il percorso il più semplice possibile.
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso senza testa AEM [Guida introduttiva AEM senza testa come Cloud Service](getting-started.md) hai appreso la teoria di base su cosa è un CMS headless e ora dovresti:
+Nel documento precedente del percorso senza testa AEM, [Guida introduttiva a AEM Headless as a Cloud Service](getting-started.md) hai imparato la teoria di base su cosa sia un CMS headless e dovresti ora:
 
 * Comprendere le nozioni di base AEM funzioni headless.
 * Conoscere i prerequisiti per l&#39;utilizzo di AEM funzionalità headless.
@@ -35,7 +35,7 @@ Questo documento illustra i passaggi necessari per implementare il primo progett
 
 ## Requisiti {#requirements}
 
-Prima di continuare con questo documento, accertati di aver rivisto il documento precedente nel Percorso di sviluppatori AEM Headless, [Guida introduttiva AEM Headless come Cloud Service](getting-started.md), verificando di:
+Prima di continuare con questo documento, accertati di aver rivisto il documento precedente nel Percorso di sviluppatori AEM Headless, [Guida introduttiva a AEM Headless as a Cloud Service](getting-started.md) assicurati di:
 
 * Soddisfare i requisiti elencati.
 * Hai preso in considerazione la definizione del tuo progetto, compresi ambito, ruoli e prestazioni.
@@ -44,7 +44,7 @@ Prima di continuare con questo documento, accertati di aver rivisto il documento
 
 Per avviare il tuo primo progetto AEM headless devi disporre di un modello di contenuto che supporti la personalizzazione e gli aggiornamenti che desideri eseguire su tutti i tuoi canali.
 
-Separati da AEM, assicurati anche di disporre di un ambiente di sviluppo appropriato impostato se stai creando un&#39;applicazione lato client in modo da poter testare il client rispetto alle chiamate API a AEM come Cloud Service.
+Separati da AEM, assicurati anche di disporre di un ambiente di sviluppo appropriato impostato se stai creando un&#39;applicazione lato client in modo da poter testare il client rispetto alle chiamate API a AEM as a Cloud Service.
 
 ### Definizione di modelli di contenuto e API {#defining-models}
 
@@ -60,7 +60,7 @@ All&#39;interno di AEM esistono tre tipi di ambienti: sviluppo, staging e produz
 
 Gli ambienti di sviluppo (se ne possono avere diversi) sono un luogo sicuro in cui sperimentare e sperimentare idee. Durante la fase iniziale del progetto, Adobe consiglia di utilizzare gli ambienti di sviluppo per provare le varianti dei modelli di contenuto e vedere quali forniscono l’output previsto per le superfici.
 
-L’ambiente di staging per i progetti headless viene utilizzato per convalidare le nuove versioni di prodotto AEM prima che vengano implementate in produzione. Tieni un elenco aggiornato dei modelli di contenuto di produzione e un sottoinsieme di contenuto, in modo da poter fare eseguire il rendering dei file JSON per confrontarli e comunque fornire lo stesso output, come si aprono modifiche o la versione di AEM introduce modifiche
+L’ambiente di staging per i progetti headless viene utilizzato per convalidare le nuove versioni di prodotto AEM prima che vengano implementate in produzione. Tieni un elenco aggiornato dei modelli di contenuto di produzione e un sottoinsieme di contenuto, in modo da poter fare eseguire il rendering dei file JSON per confrontare i file che comunque forniscono lo stesso output, come si apporta modifiche o la versione di AEM introduce modifiche
 
 La produzione è il luogo in cui gli autori di contenuti creano e gestiscono il contenuto effettivo. I cambiamenti del modello nella produzione devono essere effettuati con cura e con la compatibilità con le versioni precedenti.
 
@@ -74,9 +74,9 @@ Gli autori dei contenuti creano contenuti in base ai modelli di contenuto defini
 
 ## Configurazione {#setup}
 
-Prima di iniziare a utilizzare le funzionalità headless in AEM, assicurati che tutte le funzioni richieste siano abilitate. Questa sezione descrive i requisiti necessari. I passaggi effettivi per eseguire questi passaggi sono descritti più avanti nel [AEM Percorso di sviluppatori headless.](#overview.md)
+Prima di iniziare a utilizzare le funzionalità headless in AEM, assicurati che tutte le funzioni richieste siano abilitate. Questa sezione descrive i requisiti necessari. I passi effettivi per eseguire questi passaggi sono descritti più avanti nella sezione [AEM Percorso di sviluppo headless.](#overview.md)
 
-Facoltativamente, puoi anche fare riferimento alle [risorse aggiuntive](#additional-resources) per ulteriori informazioni sui singoli argomenti.
+Facoltativamente, puoi anche fare riferimento al [risorse aggiuntive](#additional-resources) per ulteriori informazioni sui singoli argomenti.
 
 ### Configurazione {#configuration}
 
@@ -105,7 +105,7 @@ Un progetto senza testa non solo ha successo grazie alla tecnologia implementata
 * Quando si dispone dei requisiti di accesso, questi devono guidare la gerarchia dei contenuti. Raggruppa i contenuti che vengono modificati dallo stesso gruppo di persone.
 * Raggruppa contenuti simili in una cartella.
    * È più probabile che un autore di contenuti copia e incolla contenuti esistenti per creare nuovi contenuti. Pertanto, farlo fare nella stessa cartella lo rende più efficiente.
-   * AEM consente di impostare i modelli consentiti per cartella in modo che il pulsante **Crea nuovo** mostri solo i modelli supportati in tale posizione.
+   * AEM consente di impostare i modelli per cartella in modo che **Crea nuovo** mostrerà solo i modelli supportati in tale posizione.
 * La creazione di nuovi frammenti di contenuto nell’editor frammento di contenuto in linea può essere semplificata se la cartella principale è impostata nel modello. Quindi il professionista non deve scegliere una posizione, ma deve solo fornire un nome e può iniziare a modificare il nuovo riferimento.
 
 ### Creazione di contenuti {#authoring}
@@ -135,20 +135,20 @@ Vogliamo che si basi su questa conoscenza fondamentale per comprendere appieno i
 
 Indipendentemente dal tuo stile di apprendimento, l&#39;Adobe vuole che tu abbia successo quando inizi con il tuo progetto AEM Headless.
 
-* Se preferisci continuare a **conoscere concetti headless e tecnologie headless**, dovresti continuare il tuo percorso headless AEM esaminando il documento [Come modellare il contenuto come modelli di contenuto AEM](model-your-content.md) dove imparerai a modellare la struttura del contenuto in AEM.
-* Se preferisci **imparare facendo**, puoi passare all&#39;esercitazione [Guida introduttiva AEM senza testa](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) in cui puoi passare direttamente allo sviluppo senza testa AEM implementando un semplice progetto per esporre AEM contenuto headless.
+* Se preferisci continuare a **scopri i concetti senza testa e le tecnologie senza testa AEM**, dovresti continuare il tuo percorso AEM headless rivedendo il documento [Come modellare il contenuto come modelli di contenuto AEM](model-your-content.md) dove viene illustrato come modellare la struttura del contenuto in AEM.
+* Se preferisci **imparare facendo**, puoi passare alla [Guida introduttiva a AEM tutorial pratico headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) dove puoi passare direttamente AEM sviluppo Headless implementando un semplice progetto per esporre AEM contenuto headless.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre si consiglia di passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Come modellare i contenuti come modelli di contenuto AEM,](model-your-content.md) di seguito sono riportate alcune risorse aggiuntive facoltative che consentono di approfondire alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
+Mentre è consigliabile passare alla parte successiva del percorso di sviluppo headless rivedendo il documento [Come modellare il contenuto come modelli di contenuto AEM,](model-your-content.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
 
-* [AEM Percorso di traduzione headless](/help/journey-headless/translation/overview.md)  - Questo percorso di documentazione ti offre un&#39;ampia comprensione della tecnologia headless, di come AEM i contenuti headless e di come tradurli.
-* [Sviluppo headless per AEM Sites as a Cloud Service](/help/implementing/developing/headless/introduction.md) : introduzione rapida per orientare lo sviluppatore AEM Headless con le funzioni necessarie
-* [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) : utilizza questi tutorial pratici per scoprire come utilizzare le varie opzioni per la distribuzione di contenuti agli endpoint headless con AEM e scegliere ciò che è più adatto alle tue esigenze.
-* [Gestione dei contenuti headless tramite API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) : segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
-* [AEM guide WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  - Questo progetto GitHub include applicazioni di esempio che evidenziano AEM API GraphQL.
-* [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)  - Panoramica completa dell’architettura AEM
-* [Guida introduttiva headless](/help/implementing/developing/headless/introduction.md#getting-started) : introduzione rapida alle funzioni headless per gli utenti già esperti di AEM.
-* [Creare modelli di frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)  - Documentazione tecnica sui modelli di frammenti di contenuto
-* [Creazione di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)  - Documentazione tecnica sui frammenti di contenuto
-* [Contenuto della query con GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md)  - Documentazione tecnica sull’API GraphQL
+* [AEM Percorso di traduzione headless](/help/journey-headless/translation/overview.md) - Questo percorso di documentazione ti offre un’ampia comprensione della tecnologia headless, di come AEM i contenuti headless e di come tradurli.
+* [Sviluppo headless per AEM Sites as a Cloud Service](/help/headless/introduction.md) - Una rapida introduzione per orientare lo sviluppatore AEM Headless con le funzioni necessarie
+* [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Segui questi tutorial pratici per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello che fa per te.
+* [Gestione dei contenuti headless tramite API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
+* [Guide AEM WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Questo progetto GitHub include applicazioni di esempio che evidenziano AEM API GraphQL.
+* [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Panoramica completa dell&#39;architettura AEM
+* [Configurazione headless](/help/headless/introduction.md#getting-started) - Introduzione rapida alle funzioni AEM headless per gli utenti già esperti di AEM.
+* [Creare modelli di frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) - Documentazione tecnica sui modelli di frammenti di contenuto
+* [Creare frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) - Documentazione tecnica sui frammenti di contenuto
+* [Query del contenuto con GraphQL](/help/headless/graphql-api/content-fragments.md) - Documentazione tecnica sull’API GraphQL
