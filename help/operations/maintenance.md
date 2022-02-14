@@ -2,7 +2,7 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Attività di manutenzione in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 3e0de69033883bb77fae5be83d47167663bea3fd
+source-git-commit: 83fe5c7b3a30f2444cddd982e9cc14a07c410530
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 2%
@@ -34,13 +34,13 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
 | Pulizia delle versioni | Adobe | Di proprietà completa di Adobe, ma in futuro i clienti saranno in grado di configurare alcuni parametri. |
 | Elimina log di controllo | Adobe | Di proprietà completa di Adobe, ma in futuro i clienti saranno in grado di configurare alcuni parametri. |
 | Pulizia binary di Lucene | Adobe | Non utilizzato e quindi disabilitato per Adobe. |
-| Rimozione di attività ad hoc | Cliente | Deve essere fatto in github. <br> Ignora il nodo di configurazione della finestra Manutenzione predefinita in  `/libs` creando proprietà sotto la cartella  `/apps/settings/granite/operations/maintenance/granite_weekly` o  `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. <br> Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominalo  `granite_TaskPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI consulta la documentazione relativa all’attività di manutenzione  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Svuotamento flusso di lavoro | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione predefinita in  `/libs` creando proprietà nella `/apps/settings/granite/operations/maintenance/granite_weekly` cartella  `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. <br> Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominalo  `granite_WorkflowPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI consulta la documentazione relativa all’attività di manutenzione  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Eliminazione progetti | Cliente | Deve essere fatto in github. <br> Ignora il nodo di configurazione della finestra Manutenzione predefinita in  `/libs` creando proprietà sotto la cartella  `/apps/settings/granite/operations/maintenance/granite_weekly` o  `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. <br> Abilita l’attività di manutenzione aggiungendo un nodo sotto il nodo precedente (denominalo  `granite_ProjectPurgeTask`) con le proprietà appropriate. <br> Configurare le proprietà OSGI consulta la documentazione relativa all’attività di manutenzione  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Rimozione di attività ad hoc | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione preconfigurata in `/libs` creando proprietà sotto la cartella `/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. <br> Abilita l&#39;attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominalo `granite_TaskPurgeTask`) con le proprietà appropriate. <br> Configura le proprietà OSGI per visualizzare le [Documentazione relativa alle attività di manutenzione di AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Svuotamento flusso di lavoro | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione preconfigurata in `/libs` creando proprietà sotto la cartella`/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. <br> Abilita l&#39;attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominalo `granite_WorkflowPurgeTask`) con le proprietà appropriate. <br> Configura le proprietà OSGI vedi [Documentazione relativa alle attività di manutenzione di AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Eliminazione progetti | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione preconfigurata in `/libs` creando proprietà sotto la cartella `/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. <br> Abilita l&#39;attività di manutenzione aggiungendo un nodo sotto il nodo sopra (denominalo `granite_ProjectPurgeTask`) con le proprietà appropriate. <br> Configura le proprietà OSGI vedi [Documentazione relativa alle attività di manutenzione di AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 I clienti possono pianificare ciascuna delle attività di eliminazione del flusso di lavoro, eliminazione delle attività ad hoc e manutenzione dell’eliminazione dei progetti da eseguire durante le finestre di manutenzione giornaliere, settimanali o mensili. Queste configurazioni devono essere modificate direttamente nel controllo del codice sorgente. La tabella seguente descrive i parametri di configurazione disponibili per ciascuna finestra. Inoltre, vedi le posizioni e gli esempi di codice forniti dopo la tabella.
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
     <th>Configurazione della finestra di manutenzione</th>
@@ -53,9 +53,9 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <td>Cliente</td>
     <td>Definizione del nodo JCR</td>
   <td>
-  <p><strong>windowSchedule=daily</strong>  (questo valore non deve essere modificato)</p>
-  <p><strong>windowStartTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite.</p>
-  <p><strong>windowEndTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l'esecuzione se non sono già state completate.</p>
+  <p><strong>windowSchedule=daily</strong> (questo valore non deve essere modificato)</p>
+  <p><strong>windowStartTime=HH:MM</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono iniziare a essere eseguite.</p>
+  <p><strong>windowEndTime=HH:MM</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione giornaliera devono interrompere l'esecuzione se non sono già state completate.</p>
   </td> 
   </tr>
   <tr>
@@ -63,10 +63,10 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <td>Cliente</td>
     <td>Definizione del nodo JCR</td>
     <td>
-    <p><strong>windowSchedule=weekly</strong>  (questo valore non deve essere modificato)</p>
-    <p><strong>windowStartTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra di manutenzione settimanale devono iniziare a essere eseguite.</p>
-    <p><strong>windowEndTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono interrompere l'esecuzione se non sono già state completate.</p>
-    <p><strong>windowScheduleWeekdays= Array di 2 valori da 1 a 7 (ad esempio [5,5])</strong> Il primo valore dell'array è il giorno di inizio in cui il processo viene pianificato e il secondo valore è il giorno di fine in cui il processo viene interrotto. L'ora esatta dell'inizio e della fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
+    <p><strong>windowSchedule=weekly</strong> (questo valore non deve essere modificato)</p>
+    <p><strong>windowStartTime=HH:MM</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra di manutenzione settimanale devono iniziare a essere eseguite.</p>
+    <p><strong>windowEndTime=HH:MM</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono interrompere l'esecuzione se non sono già state completate.</p>
+    <p><strong>windowScheduleWeekdays= Array di 2 valori da 1 a 7 (ad esempio [5,5])</strong> Il primo valore dell'array è il giorno iniziale in cui il processo viene pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L'ora esatta dell'inizio e della fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
     </td>
   </tr>
   <tr>
@@ -74,11 +74,11 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
     <td>Cliente</td>
     <td>Definizione del nodo JCR</td>
     <td>
-    <p><strong>windowSchedule=daily</strong>  (questo valore non deve essere modificato)</p>
-    <p><strong>windowStartTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono iniziare a essere eseguite.</p>
-    <p><strong>windowEndTime=HH:</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono interrompere l'esecuzione se non sono già state completate.</p>
-    <p><strong>windowScheduleWeekdays=Array di 2 valori da 1 a 7 (ad esempio [5,5])</strong> Il primo valore dell'array è il giorno di inizio in cui il processo viene pianificato e il secondo valore è il giorno di fine in cui il processo viene interrotto. L'ora esatta dell'inizio e della fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 per pianificare la prima settimana del mese o 1 per l'ultima settimana del mese. L'assenza di un valore consente di pianificare in modo efficace i processi ogni giorno secondo le regole di windowScheduleWeekdays ogni mese.</p>
+    <p><strong>windowSchedule=daily</strong> (questo valore non deve essere modificato)</p>
+    <p><strong>windowStartTime=HH:MM</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono iniziare a essere eseguite.</p>
+    <p><strong>windowEndTime=HH:MM</strong> utilizzando come orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono interrompere l'esecuzione se non sono già state completate.</p>
+    <p><strong>windowScheduleWeekdays=Array di 2 valori da 1 a 7 (ad esempio [5,5])</strong> Il primo valore dell'array è il giorno iniziale in cui il processo viene pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L'ora esatta dell'inizio e della fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 per pianificare la prima settimana del mese o 1 per pianificare l’ultima settimana del mese. L'assenza di un valore consente di pianificare in modo efficace i processi ogni giorno secondo le regole di windowScheduleWeekdays ogni mese.</p>
     </td> 
     </tr>
     </tbody>
@@ -90,7 +90,7 @@ I clienti possono pianificare ciascuna delle attività di eliminazione del fluss
 * Settimanale - /apps/settings/granite/operations/maintenance/granite_weekly
 * Mensile - /apps/settings/granite/operations/maintenance/granite_month
 
-**Esempi** di codice:
+**Esempi di codice**:
 
 Esempio di codice 1 (giornaliero)
 
