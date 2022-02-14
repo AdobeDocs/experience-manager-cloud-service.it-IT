@@ -3,10 +3,10 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cl
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
+source-git-commit: 7935ed5c332934cf1824ef8e6b52b6a7f451dc34
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 32%
+source-wordcount: '1083'
+ht-degree: 31%
 
 ---
 
@@ -31,6 +31,10 @@ La seguente versione (2022.2.0) è del 24 febbraio 2022.
 ## Video sulla versione {#release-video}
 
 Dai un&#39;occhiata al [Panoramica sulla versione di gennaio 2022](https://video.tv.adobe.com/v/340120) video per un riepilogo delle funzioni aggiunte nella versione 2022.1.0.
+
+## Adobe Experience Manager Sites as a Cloud Service {#sites}
+
+* La **[Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** è disponibile nella **Sito** della console Sites per i siti che utilizzano la v2 del componente core pagina. Questo pulsante configura il sito per caricare i temi distribuiti con la pipeline Front End sopra le librerie client esistenti.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
