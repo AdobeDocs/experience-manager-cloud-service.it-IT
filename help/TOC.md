@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7076b5b7db75ebe4f6b381ab2330769f7dcd6904
+source-git-commit: 026004564eb3085717e088381058d579d26083bd
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3447'
 ht-degree: 97%
 
 ---
@@ -217,6 +217,7 @@ ht-degree: 97%
    + Amministrazione {#administering}
       + Creazione di siti {#site-creation}
          + [Creazione di un nuovo sito](/help/sites-cloud/administering/site-creation/create-site.md)
+         + [Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [Modelli per siti](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [Temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md)
          + Percorso di creazione di siti rapidi AEM {#quick-site}
