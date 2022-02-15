@@ -3,9 +3,9 @@ title: Abilita pipeline front-end
 description: Scopri come abilitare la pipeline front-end per i siti esistenti per sfruttare i temi del sito per personalizzare più rapidamente il sito.
 feature: Administering
 role: Admin
-source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
+source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,18 @@ Per impostazione predefinita, i siti basati sui modelli di sito possono sfruttar
 >Se non conosci la pipeline front-end e le modalità di distribuzione rapida dei siti che la utilizzano e i modelli di sito, consulta la sezione [Percorso di creazione di siti rapidi](/help/journey-sites/quick-site/overview.md) per un’introduzione.
 
 Se non hai creato il sito esistente in base a modelli e temi del sito, AEM configurare il sito per caricare i temi distribuiti con la pipeline Front End sopra le librerie client esistenti.
+
+## Dettagli tecnici {#technical-details}
+
+Quando attivi la pipeline front-end per un sito, AEM apporta le seguenti modifiche alla struttura del sito.
+
+* Tutte le pagine del sito includeranno un ulteriore file CSS e JS, che può essere modificato distribuendo aggiornamenti tramite una pipeline front-end di Cloud Manager dedicata.
+* I file CSS e JS aggiunti saranno inizialmente vuoti, ma una cartella &quot;origini tema&quot; può essere scaricata per avviare la struttura delle cartelle che consente di distribuire gli aggiornamenti del codice CSS e JS tramite tale pipeline.
+* Questa modifica può essere annullata solo da uno sviluppatore, eliminando `SiteConfig` e `HtmlPageItemsConfig` nodi sotto creati dall&#39;operazione `/conf/<site-name>/sling:configs`.
+
+>[!NOTE]
+>
+>Questa azione non converte automaticamente le librerie client esistenti del sito per utilizzare la pipeline di tipo font-end. Lo spostamento di queste origini dalla cartella della libreria client alla cartella della pipeline front-end richiede il lavoro manuale di uno sviluppatore front-end.
 
 ## Requisiti {#requirements}
 
