@@ -2,7 +2,7 @@
 title: Configurazione di pipeline non di produzione
 description: Scopri come configurare le pipeline non di produzione per testare la qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -124,7 +124,7 @@ Una pipeline di configurazione a livello web distribuisce configurazioni HTTPD/D
 >
 >Se per l’ambiente selezionato esiste già una pipeline di codice a livello web, questa selezione verrà disabilitata.
 
-Per completare la configurazione della pipeline di non produzione del codice full-stack, segui questi passaggi.
+Per completare la configurazione della pipeline di non produzione del codice livello web, segui questi passaggi.
 
 1. Sulla **Codice sorgente** è necessario definire le seguenti opzioni.
 
