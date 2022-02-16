@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 026004564eb3085717e088381058d579d26083bd
 workflow-type: tm+mt
 source-wordcount: '3447'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -262,7 +262,7 @@ ht-degree: 97%
       + [Integrazione con Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integrazione con Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [Esportazione di frammenti esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [Panoramica e novità](/help/assets/overview.md)
@@ -453,8 +453,8 @@ ht-degree: 97%
       + [Utilizzare l&#39;opzione Fuori sede](/help/forms/configure-out-of-office-settings.md)
    + Utilizzo delle comunicazioni {#using-communications}
       + [Introduzione alle API di comunicazione](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [API di comunicazione - Elaborazione sincrona](/help/forms/aem-forms-cloud-service-communications.md)
-      + [API di comunicazione - Elaborazione batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Elaborazione sincrona delle API di comunicazione](/help/forms/aem-forms-cloud-service-communications.md)
+      + [Elaborazione in batch delle API di comunicazione](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Utilizzo di font personalizzati nei documenti PDF](/help/forms/use-custom-fonts.md)
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)
    + [Migrare a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
@@ -677,7 +677,7 @@ ht-degree: 97%
          + [Ottenimento di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
          + [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Visualizzazione e aggiornamento e sostituzione di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
-         + [Controllo dello stato di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
+         + [Verifica dello stato di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
          + [Eliminazione di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
       + Gestione dei nomi di dominio personalizzati {#custom-domain-names}
          + [Introduzione](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -834,7 +834,7 @@ ht-degree: 97%
    + [Attività di manutenzione](/help/operations/maintenance.md)
    + [Backup e ripristino](/help/operations/backup.md)
    + [Processi asincroni](/help/operations/asynchronous-jobs.md)
-   + [Rimozione dell&#39;indice generico lucene](/help/operations/removal-generic-lucene-index.md)
+   + [Rimozione dell’indice generico Lucene](/help/operations/removal-generic-lucene-index.md)
 + Conformità {#compliance}
    + [Conformità in AEM as a Cloud Service](/help/compliance/home.md)
    + Preparazione per privacy e protezione dei dati {#data-privacy}
