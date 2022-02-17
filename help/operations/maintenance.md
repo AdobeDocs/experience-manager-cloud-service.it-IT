@@ -2,9 +2,9 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Attività di manutenzione in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 83fe5c7b3a30f2444cddd982e9cc14a07c410530
+source-git-commit: 7ff9cabe239c8e474b03c4ecce6d32bf659665a7
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '1211'
 ht-degree: 2%
 
 ---
@@ -39,6 +39,64 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
 | Eliminazione progetti | Cliente | Deve essere fatto in github. <br> Ignorare il nodo di configurazione della finestra Manutenzione preconfigurata in `/libs` creando proprietà sotto la cartella `/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. <br> Abilita l&#39;attività di manutenzione aggiungendo un nodo sotto il nodo sopra (denominalo `granite_ProjectPurgeTask`) con le proprietà appropriate. <br> Configura le proprietà OSGI vedi [Documentazione relativa alle attività di manutenzione di AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 I clienti possono pianificare ciascuna delle attività di eliminazione del flusso di lavoro, eliminazione delle attività ad hoc e manutenzione dell’eliminazione dei progetti da eseguire durante le finestre di manutenzione giornaliere, settimanali o mensili. Queste configurazioni devono essere modificate direttamente nel controllo del codice sorgente. La tabella seguente descrive i parametri di configurazione disponibili per ciascuna finestra. Inoltre, vedi le posizioni e gli esempi di codice forniti dopo la tabella.
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>Attività di manutenzione</th>
+    <th>A chi appartiene la configurazione</th>
+    <th>Come configurare (facoltativo)</th>
+  </tr>  
+  <tr>
+    <td>Raccolta rifiuti di Datastore</td>
+    <td>Adobe</td>
+    <td>N/D - interamente di proprietà Adobe</td>
+  </td> 
+  </tr>
+  <tr>
+    <td>Pulizia delle versioni</td>
+    <td>Adobe</td>
+    <td>Di proprietà completa di Adobe, ma in futuro i clienti saranno in grado di configurare alcuni parametri.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Elimina log di controllo</td>
+    <td>Adobe</td>
+    <td>Di proprietà completa di Adobe, ma in futuro i clienti saranno in grado di configurare alcuni parametri.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Pulizia binary di Lucene</td>
+    <td>Adobe</td>
+    <td>Non utilizzato e quindi disabilitato per Adobe.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Rimozione di attività ad hoc</td>
+    <td>Cliente</td>
+    <td>
+    <p>Deve essere fatto in github. Ignorare il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà sotto la cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> o <code>granite_daily</code>.</p>
+    <p>Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. Abilita l'attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominalo <code>granite_TaskPurgeTask</code>) con le proprietà appropriate. Configura le proprietà OSGI per visualizzare le <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">Documentazione relativa alle attività di manutenzione di AEM 6.5</a>.</p>
+  </td>
+  </tr>
+    <tr>
+    <td>Svuotamento flusso di lavoro</td>
+    <td>Cliente</td>
+    <td>
+    <p>Deve essere fatto in github. Ignorare il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà sotto la cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> o <code>granite_daily</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
+    <p>Abilita l'attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominalo <code>granite_WorkflowPurgeTask</code>) con le proprietà appropriate. Configura le proprietà OSGI vedi <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">Documentazione relativa alle attività di manutenzione di AEM 6.5</a>.</p>
+  </td>
+  </tr>
+  <tr>
+    <td>Eliminazione progetti</td>
+    <td>Cliente</td>
+    <td>
+    <p>Deve essere fatto in github. Ignorare il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà sotto la cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> o <code>granite_daily</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
+    <p>Abilita l'attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Configura le proprietà OSGI vedi <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">Documentazione relativa alle attività di manutenzione di AEM 6.5</a>.</p>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 <table style="table-layout:auto">
  <tbody>
