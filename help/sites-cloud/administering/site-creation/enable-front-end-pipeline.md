@@ -1,17 +1,17 @@
 ---
-title: Abilita pipeline front-end
+title: Abilitazione della pipeline front-end
 description: Scopri come abilitare la pipeline front-end per i siti esistenti per sfruttare i temi del sito per personalizzare più rapidamente il sito.
 feature: Administering
 role: Admin
-source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
+source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
 
-# Abilita pipeline front-end {#enable-front-end-pipeline}
+# Abilitazione della pipeline front-end {#enable-front-end-pipeline}
 
 Scopri come abilitare la pipeline front-end per i siti esistenti per sfruttare i temi del sito per personalizzare più rapidamente il sito.
 
@@ -47,7 +47,7 @@ AEM adattare automaticamente il sito esistente per utilizzare la pipeline front-
 
 ## Abilitazione della pipeline front-end {#enabling}
 
-L’abilitazione del sito viene eseguita dalla console Sites .
+L’abilitazione del sito viene eseguita dalla console Sites utilizzando [Barra del sito.](site-rail.md)
 
 1. Accedi a AEM e naviga sul tuo sito tramite **Navigazione globale** > **Sites**.
 1. Seleziona il sito nella console. È necessario selezionare la directory principale del sito e non le pagine figlie.
@@ -58,7 +58,8 @@ L’abilitazione del sito viene eseguita dalla console Sites .
 
 1. AEM chiede di confermare con una panoramica delle modifiche che verranno apportate. Conferma e il tuo sito è adattato.
 
-Ora il tuo sito è pronto per utilizzare la pipeline front-end. Per ulteriori informazioni sulla pipeline front-end, consulta:
+Ora il tuo sito è pronto per utilizzare la pipeline front-end. Per ulteriori informazioni sulla pipeline front-end e sulla gestione del tema del sito, consulta:
 
+* [Utilizzo della barra del sito per gestire il tema del sito](site-rail.md)
 * [Percorso di creazione di siti rapidi](/help/journey-sites/quick-site/overview.md) - Questo percorso di documentazione offre una panoramica del processo di distribuzione rapida di un sito tramite la pipeline front-end e lo strumento di creazione rapida del sito.
 * [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) - Questo documento descrive la pipeline front-end nel contesto delle pipeline full-stack e web.
