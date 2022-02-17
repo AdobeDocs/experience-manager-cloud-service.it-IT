@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e le funzioni di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
+source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
-source-wordcount: '2939'
-ht-degree: 96%
+source-wordcount: '2954'
+ht-degree: 95%
 
 ---
 
@@ -465,7 +465,7 @@ Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**
 
 ![Barra del sito](../assets/site-rail.png)
 
-Tocca o fai clic sul pulsante **Scaricare le origini dei temi** personalizzare [tema del sito.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Vedere il documento [Utilizzo della barra del sito per gestire il tema del sito](/help/sites-cloud/administering/site-creation/site-rail.md) per ulteriori dettagli su come utilizzare la barra laterale per gestire il [tema del sito.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
