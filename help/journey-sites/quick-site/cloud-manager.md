@@ -1,9 +1,9 @@
 ---
 title: Comprendere Cloud Manager e il flusso di lavoro per la creazione di siti rapidi
 description: Scopri Cloud Manager e come unisce il nuovo processo di creazione rapida dei siti.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1130'
 ht-degree: 1%
 
 ---
@@ -82,11 +82,17 @@ Ai fini del presente percorso, non è necessaria una comprensione completa di Cl
 
 ![Struttura di Cloud Manager](assets/cloud-manager-structure.png)
 
-* **TENDA** - Per ogni cliente viene eseguito il provisioning con un tenant. **WKND Travel and Adventure Enterprises** potrebbe essere un tenant.
-* **PROGRAMMI** - Ogni tenant dispone di uno o più programmi. La **WKND Travel and Adventure Enterprises** tenant potrebbe avere un **Vita notturna WKND** e **Progetti pomeridiani WKND** programma.
-* **AMBIENTI** - Ogni programma dispone di più ambienti, ad esempio la produzione di contenuti live, la gestione temporanea e lo sviluppo a scopo di sviluppo. **Vita notturna WKND** e **Progetti pomeridiani WKND** i programmi avrebbero ambienti di sviluppo, stage e produzione.
+* **TENDA** - Per ogni cliente viene eseguito il provisioning con un tenant.
+* **PROGRAMMI** - Ogni tenant dispone di uno o più programmi che spesso riflettono le soluzioni concesse in licenza dal cliente.
+* **AMBIENTI** - Ogni programma dispone di più ambienti, ad esempio la produzione di contenuti live, uno per la gestione temporanea e uno per lo sviluppo.
 * **ARCHIVIO** - Gli ambienti dispongono di archivi git in cui viene mantenuto l’applicazione e il codice front-end.
 * **STRUMENTI E FLUSSI DI LAVORO** - Le pipeline gestiscono la distribuzione del codice dagli archivi agli ambienti.
+
+Un esempio è spesso utile per contestualizzare questa gerarchia.
+
+* WKND Viaggi e Avventura Le aziende potrebbero essere un **inquilino** che si concentra sui supporti correlati ai viaggi.
+* Il tenant WKND Travel and Adventure Enterprises potrebbe avere due **programmi**: un programma Sites per WKND Magazine e un programma Assets per WKND Media.
+* I programmi WKND Magazine e WKND Media avrebbero sia sviluppo che stage e produzione **ambienti**.
 
 ## Flusso di sviluppo front-end per la creazione rapida di siti {#flow}
 

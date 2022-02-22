@@ -1,49 +1,67 @@
 ---
 title: 'Introduzione ai programmi sandbox '
-description: Introduzione ai programmi sandbox
+description: Scopri quali programmi sandbox differiscono dai programmi di produzione.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 1892900ea3f365e1b5f7d31ffae64d45256d2a3a
+source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
+
 # Introduzione ai programmi sandbox {#sandbox-programs}
+
+Scopri quali programmi sandbox differiscono dai programmi di produzione.
 
 ## Introduzione {#introduction}
 
-Un programma sandbox è uno dei due tipi di programmi disponibili in AEM Cloud Service, l’altro è un programma di produzione.
+Un programma sandbox viene tipicamente creato per scopi di formazione, demo in esecuzione, abilitazione o prova di concetti (POC) e quindi non è destinato a trasportare traffico live.
 
-Una sandbox viene generalmente creata per scopi di formazione, demo in esecuzione, abilitazione o prova di concetto (POC). Non sono fatte per trasportare traffico dal vivo. Non sono soggetti al [AEM impegni as a Cloud Service](https://www.adobe.com/legal/service-commitments.html).
+Un programma sandbox è uno dei due tipi di programmi disponibili in AEM Cloud Service, mentre l’altro è un [programma di produzione.](introduction-production-programs.md) Fare riferimento al documento [Informazioni su programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) per ulteriori informazioni sui tipi di programma.
 
-Gli ambienti creati in una sandbox non sono configurati per il ridimensionamento automatico. Pertanto, questi ambienti non sono adatti per il test delle prestazioni o del carico.
+## Creazione automatica {#auto-creation}
 
-I programmi sandbox includono [!DNL Sites] e [!DNL Assets] e vengono compilati automaticamente con un archivio Git, un ambiente di sviluppo e una pipeline non di produzione.  L’archivio Git viene compilato con un progetto di esempio basato sull’archetipo di progetto AEM.
+I programmi sandbox dispongono di creazione automatica. Ogni volta che crei un nuovo programma sandbox, Cloud Manager automaticamente:
 
->[!IMPORTANT]
->Un programma sandbox avrà un solo ambiente di sviluppo.
+* Aggiunge AEM Sites e AEM Assets come soluzioni nel programma.
+* Imposta un archivio Git del progetto con un progetto di esempio basato su [AEM Archetipo di progetto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* Crea un ambiente di sviluppo.
+* Crea una pipeline non di produzione da distribuire nell’ambiente di sviluppo.
 
->[!NOTE]
->I domini personalizzati e gli Elenchi consentiti IP non sono disponibili nei programmi sandbox.
+Un programma sandbox avrà un solo ambiente di sviluppo.
 
-Fai riferimento a [Informazioni su programmi e tipi di programmi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en) per ulteriori informazioni sui tipi di programma.
+## Limitazioni e condizioni {#limitations}
 
-### Attributi dei programmi sandbox {#attributes-sandbox}
+Poiché non sono destinati al traffico live, i programmi sandbox hanno alcune limitazioni e condizioni sull’utilizzo, che le differenziano dai programmi di produzione.
 
-I programmi sandbox hanno i seguenti attributi:
+### Nessun traffico live {#live-traffic}
 
-1. **Creazione di programmi:** La creazione del programma sandbox include automaticamente:
-   * configurazione del progetto con codice di esempio e contenuto
-   * creazione di un ambiente di sviluppo
-   * creazione di una pipeline non di produzione da distribuire nell’ambiente di sviluppo (distribuzione del ramo principale nell’ambiente di sviluppo)
+I programmi sandbox non sono destinati a trasportare traffico in diretta e non sono pertanto soggetti a tali programmi [AEM impegni as a Cloud Service.](https://www.adobe.com/legal/service-commitments.html)
 
-1. **Soluzioni:** I programmi sandbox includono AEM [!DNL Sites] e [!DNL Assets].
+### Nessun ridimensionamento automatico {#auto-scaling}
 
-1. **Aggiornamenti AEM:** Gli aggiornamenti AEM possono essere applicati manualmente agli ambienti in un programma sandbox e non vengono inviati automaticamente.
-Fai riferimento a [Aggiornamenti AEM agli ambienti Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) per ulteriori dettagli.
+Gli ambienti creati in un programma sandbox non sono configurati per il ridimensionamento automatico. Pertanto, questi ambienti non sono adatti per il test delle prestazioni o del carico.
 
-1. **Sospensione:** Gli ambienti in un programma sandbox vengono ibernati automaticamente se non viene rilevata alcuna attività per un determinato periodo di tempo. Le sandbox vengono messe nel nodo di ibernazione dopo 8 ore di inattività, dopo di che, possono essere deibernate. Gli ambienti sospesi possono essere disattivati manualmente.
-Fai riferimento a [Ambienti Sandbox sospensione e disattivazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) per ulteriori dettagli.
+### Nessun dominio personalizzato o Elenco consentiti IP {#ip-allow}
 
-1. **Eliminazione**: Le sandbox vengono cancellate dopo 6 mesi di essere in modalità di sospensione continua, dopo di che, possono essere ricreati.
+I domini personalizzati e gli elenchi consentiti IP non sono disponibili nei programmi sandbox.
+
+### Aggiornamenti manuali AEM {#updates}
+
+Gli aggiornamenti AEM non vengono inviati automaticamente ai programmi sandbox, ma possono essere applicati manualmente agli ambienti nel programma sandbox.
+
+* È possibile eseguire un aggiornamento manuale solo se l’ambiente di destinazione dispone di una pipeline configurata correttamente.
+* Un aggiornamento manuale a un ambiente di produzione o di staging aggiornerà automaticamente l’altro. L’ambiente Production+Stage deve trovarsi nella stessa versione AEM.
+
+Fare riferimento al documento [Aggiornamenti delle versioni AEM](/help/implementing/deploying/aem-version-updates.md) per ulteriori dettagli.
+
+Fare riferimento al documento [Aggiornamento dell’ambiente](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) per scoprire come aggiornare un ambiente.
+
+### Sospensione e cancellazione {#hibernation}
+
+Gli ambienti in un programma sandbox vengono automaticamente ibernati dopo 8 ore di inattività. Una volta ibernati, possono essere disattivati manualmente.
+
+I programmi sandbox vengono eliminati dopo 6 mesi di essere in modalità di sospensione continua, dopo di che, possono essere ricreati.
+
+Fai riferimento a [Ambienti Sandbox sospensione e disattivazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) per ulteriori dettagli.
