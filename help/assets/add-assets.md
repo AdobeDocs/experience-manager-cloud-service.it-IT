@@ -4,9 +4,9 @@ description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
+source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2744'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,11 @@ L’immagine seguente illustra le varie fasi durante il caricamento delle risors
 
 #### Prerequisiti {#prerequisites-bulk-ingestion}
 
-Per collegare l’istanza di Experience Manager a un archivio dati, è necessario disporre dei dettagli di archiviazione BLOB di origine.
+Per utilizzare questa funzione è necessario un account di archiviazione esterno o un bucket da Azure o AWS.
+
+>[!NOTE]
+>
+>Crea il contenitore o il bucket dell’account di archiviazione come privato e accetta connessioni solo da richieste autorizzate. Tuttavia, non sono supportate ulteriori restrizioni sulle connessioni di rete in ingresso.
 
 #### Configura lo strumento di importazione in blocco {#configure-bulk-ingestor-tool}
 
