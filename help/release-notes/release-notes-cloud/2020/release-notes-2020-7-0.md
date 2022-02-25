@@ -1,11 +1,11 @@
 ---
 title: Note sulla versione 2020.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '[!DNL Adobe Experience Manager] as a Cloud Service - Note sulla versione 2020.7.0.'
+description: '"[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2020.7.0."'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 81%
 
 La sezione seguente illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.7.0.
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio per [!DNL Experience Manager] as a Cloud Service 2020.7.0 è il 30 luglio 2020.
 
@@ -29,11 +29,11 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 * Le configurazioni ora sono memorizzate in `/conf` anziché `/etc/cloudsettings` nell’archivio di Experience Manager.
 
-## [!DNL Adobe Experience Manager Assets] come Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Novità in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Gli amministratori possono configurare [!DNL Experience Manager] per richiamare applicazioni personalizzate create utilizzando [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate per casi d’uso complessi. Questo servizio Web può generare miniature per diversi tipi di file, rendering di immagini di alta qualità da formati di file di Adobe, codificare video (in futuro), estrarre metadati, estrarre testo completo come precursore dell’indicizzazione ed eseguire una risorsa tramite tutti i servizi [!DNL Sensei] disponibili. consulta [utilizzare i microservizi per le risorse e i profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Gli amministratori possono configurare [!DNL Experience Manager] per richiamare applicazioni personalizzate create utilizzando [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate per casi d’uso complessi. Questo servizio web può generare miniature per diversi tipi di file, rendering di immagini di alta qualità da formati di file di Adobe, codificare video (in futuro), estrarre metadati, estrarre testo completo come precursore dell&#39;indicizzazione ed eseguire una risorsa attraverso tutti i disponibili [!DNL Sensei] servizi. vedere [utilizzare i microservizi per le risorse e i profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).
 
 * La configurazione iniziale di [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service è stata migliorata ed è ora più robusta. Fornisce agli amministratori indicazioni sull’avanzamento dei processi.
 
@@ -46,7 +46,7 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 ### Bug fissi {#assets-bugs-fixed}
 
 * La procedura guidata Sposta risorsa non viene caricata come previsto per le risorse incluse nelle raccolte. (CQ-4296756)
-* I valori di `dam:size` e `dam:sha1` sono esclusi XMP writeback. (CQ-4237355)
+* I valori di `dam:size` e `dam:sha1` sono esclusi dal XMP di ritorno. (CQ-4237355)
 * Quando si annulla la pubblicazione in blocco delle risorse, [!DNL Brand Portal] genera un errore che indica che l’URI della richiesta è troppo lungo. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
@@ -74,7 +74,7 @@ Per ulteriori informazioni, consulta [Supporto AMP per i componenti core](https:
 
 ## Cloud Manager {#cloud-manager}
 
-### Data di rilascio {#release-date-cm}
+### Data di pubblicazione {#release-date-cm}
 
 La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.7.0 è il 9 luglio 2020.
 

@@ -1,11 +1,11 @@
 ---
 title: 'Funzioni e funzionalità principali di Adobe Experience Manager (AEM) Forms as a Cloud Service '
-description: '[!DNL AEM Forms] as a Cloud Service è una piattaforma per creare, gestire e pubblicare moduli e processi aziendali di classe enterprise.'
+description: '"[!DNL AEM Forms] as a Cloud Service è una piattaforma per creare, gestire e pubblicare moduli e processi aziendali di classe enterprise."'
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -29,7 +29,7 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 * [Creare PDF forms perfetti in pixel](use-forms-designer.md#create-an-adaptive-form) sembra quasi carta.
 
-* Utilizzo [servizio automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) per convertire un modulo PDF in un modulo adattivo. Consente di accelerare la digitalizzazione e la modernizzazione delle esperienze di acquisizione dei dati della tua organizzazione.
+* Utilizzo [servizio automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it) per convertire un modulo PDF in un modulo adattivo. Consente di accelerare la digitalizzazione e la modernizzazione delle esperienze di acquisizione dei dati della tua organizzazione.
 
    ![servizio automated forms conversion](assets/pdf-to-adaptive-form-gitx50.gif)
 

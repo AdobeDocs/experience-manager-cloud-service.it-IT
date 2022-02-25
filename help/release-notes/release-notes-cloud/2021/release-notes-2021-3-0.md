@@ -1,11 +1,11 @@
 ---
 title: Note sulla versione 2021.3.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2021.3.0.'
+description: '"[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2021.3.0."'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1319'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -130,7 +130,7 @@ La prossima versione è prevista per il 08 aprile 2021.
 
 * Tutte le pipeline di produzione esistenti verranno abilitate automaticamente con il passaggio Audit esperienze .
 
-## Strumento Content Transfer (Trasferimento contenuti)  {#content-transfer-tool}
+## Strumento Trasferimento contenuti {#content-transfer-tool}
 
 ### Data di pubblicazione {#release-date-ctt}
 
@@ -151,7 +151,7 @@ La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v
 
 ### Correzioni di bug {#bug-fixes-ctt-march}
 
-* Durante la migrazione del contenuto da un percorso specifico, CTT effettuava l’estrazione di risorse non correlate. È stato corretto
+* Durante la migrazione del contenuto da un percorso specifico, CTT effettuava l’estrazione di risorse non correlate. Questo problema è stato risolto
 
 ## Analisi delle best practice {#best-practices-analyzer}
 

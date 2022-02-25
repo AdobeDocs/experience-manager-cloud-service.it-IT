@@ -1,11 +1,11 @@
 ---
-title: '[!DNL AEM Forms] Note sulla versione as a Cloud Service'
-description: '[!DNL AEM Forms] Note sulla versione as a Cloud Service'
+title: '"[!DNL AEM Forms] Note sulla versione as a Cloud Service"'
+description: '"[!DNL AEM Forms] Note sulla versione as a Cloud Service"'
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 2%
+ht-degree: 17%
 
 ---
 
@@ -29,26 +29,26 @@ Adobe Experience Manager [!DNL AEM Forms] Gli as a Cloud Service ricevono miglio
 
 ## 2021.10.0 {#sep-2021-10-0}
 
-### Novità di [!DNL Forms] {#what-is-new-forms-oct-2021}
+### Novità in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
 - **Analytics per Forms adattivo**: È ora possibile acquisire e tenere traccia del comportamento sia di accesso che di non accesso (anonimo) tramite Adobe Analytics per Adaptive Forms per raccogliere informazioni sugli utenti finali. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza dell’utente finale.
 
 ### Nuove funzioni disponibili in [!DNL Forms] canale prerelease {#prerelease-features-forms-oct-2021}
 
-- **Esternalizzare i dati del flusso di lavoro AEM per un’elaborazione sicura**: È possibile memorizzare i dati dei flussi di lavoro AEM in-process (AEM dati variabili di flusso di lavoro) contenenti elementi di dati personali sensibili (SPD) in un archivio gestito dal cliente per un’elaborazione sicura. Gli elementi dati e le variabili del flusso di lavoro non vengono memorizzati AEM archivio e vengono recuperati su richiesta da un archivio gestito dal cliente durante l’elaborazione del flusso di lavoro.
+- **Esternalizzare i dati del flusso di lavoro AEM per un’elaborazione sicura**: è possibile memorizzare i dati dei flussi di lavoro AEM in elaborazione (dati variabili di flusso di lavoro AEM) contenenti elementi di dati personali sensibili (SPD) in un archivio gestito dal cliente per un’elaborazione sicura. Gli elementi dei dati e le variabili del flusso di lavoro non vengono memorizzati nell’archivio AEM e vengono recuperati su richiesta da un archivio gestito dal cliente durante l’elaborazione del flusso di lavoro.
 
 ### Funzioni beta di [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](aem-forms-cloud-service-communications.md) consente di combinare un modello e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch. Le API consentono di creare applicazioni che consentono di:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](aem-forms-cloud-service-communications.md) consente di combinare un modello e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch. Le API consentono di creare applicazioni che permettono di:
 
-   - Genera i documenti compilando i file modello (PDF e XDP) con i dati XML.
+   - Generare i documenti compilando i file modello (PDF e XDP) con i dati XML.
    - Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
 
 Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 ## 2021.9.0 {#sep-2021-09-0}
 
-### Novità di [!DNL Forms] {#what-is-new-forms-sep-2021}
+### Novità in [!DNL Forms] {#what-is-new-forms-sep-2021}
 
 - **Utilizzare i ruoli Adobe Sign in un modulo adattivo**: Adobe Sign per i livelli di servizio aziendali e aziendali ha la possibilità di espandere i ruoli per i destinatari del contratto, oltre al solo firmatario, in modo da soddisfare meglio i requisiti del flusso di lavoro. Ora puoi [abilitare ogni destinatario dell&#39;accordo a configurare il proprio ruolo in un modulo adattivo](working-with-adobe-sign.md#addsignerstoanadaptiveform), con il ruolo predefinito Firma .
 
@@ -64,8 +64,8 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](aem-forms-cloud-service-communications.md) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che consentono di:
-   - Genera i documenti compilando i file modello con dati XML.
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](aem-forms-cloud-service-communications.md) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che permettono di:
+   - Generare i documenti compilando i file modello con dati XML.
    - Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
    - Generare file PDF di stampa da un modulo XFA PDF e Adobe Acrobat Form.
 
@@ -97,7 +97,7 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 ## 2021.8.0 {#aug-2021-08-0}
 
-### Novità di [!DNL Forms] {#what-is-new-forms-aug-2021}
+### Novità in [!DNL Forms] {#what-is-new-forms-aug-2021}
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
@@ -114,8 +114,8 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
    - Abilita la funzionalità di salvataggio e ripresa di Forms Portal e archivia le bozze dei moduli adattivi in un archivio dati gestito dal cliente.
    - Archiviare i dati dei flussi di lavoro AEM in-process (AEM dati variabili di flusso di lavoro) contenenti dati personali sensibili (SPD) in un archivio gestito dal cliente.
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](aem-forms-cloud-service-communications.md) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che consentono di:
-   - Genera i documenti compilando i file modello con dati XML.
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](aem-forms-cloud-service-communications.md) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che permettono di:
+   - Generare i documenti compilando i file modello con dati XML.
    - Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
    - Generare file PDF di stampa da un modulo XFA PDF e Adobe Acrobat Form.
 
@@ -131,7 +131,7 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 ## 2021.7.0 {#july-2021-07-0}
 
-### Novità di [!DNL Forms] {#july-what-is-new-forms}
+### Novità in [!DNL Forms] {#july-what-is-new-forms}
 
 - Ora puoi utilizzare il servizio Automated forms conversion per [convertire i PDF forms in francese, tedesco e spagnolo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) ai moduli adattivi.
 - È stato aggiunto un pannello separato all’editor modelli per visualizzare gli errori relativi ai componenti per moduli adattivi. Consente di consolidare tutti gli errori dei moduli adattivi in un&#39;unica posizione e di ridurre i tempi di risoluzione.
@@ -146,14 +146,14 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 ### Funzione beta di [!DNL Forms] {#july-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](aem-forms-cloud-service-communications.md) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che consentono di:
-   - Genera i documenti compilando i file modello con dati XML.
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](aem-forms-cloud-service-communications.md) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che permettono di:
+   - Generare i documenti compilando i file modello con dati XML.
    - Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
    - Generare file PDF di stampa da un modulo XFA PDF e Adobe Acrobat Form.
 
 ## 2021.6.0 {#july-2021-06-0}
 
-### Novità di [!DNL Forms] {#june-what-is-new-forms}
+### Novità in [!DNL Forms] {#june-what-is-new-forms}
 
 - È stata aggiunta la possibilità di filtrare colonne personalizzate nella casella in entrata AEM.
 - È stata aggiunta la possibilità di utilizzare l’editor di temi e il livello di stile dell’editor di moduli adattivi per personalizzare lo stile del componente captcha.
@@ -162,7 +162,7 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 ### Funzione beta di [!DNL Forms] {#june-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: Le API di comunicazione consentono di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che consentono di:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: Le API di comunicazione consentono di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che permettono di:
 
    - Generare documenti modulo finali compilando i file modello con dati XML.
    - Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
@@ -181,7 +181,7 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Novità di [!DNL Forms] {#may-what-is-new-forms}
+### Novità in [!DNL Forms] {#may-what-is-new-forms}
 
 - **Aiuto contestuale**: È stata aggiunta l’aiuto contestuale per l’editor di moduli adattivi, l’editor di modelli e l’editor di temi, per aiutare gli autori a comprendere meglio le varie funzioni degli editor.
 - **Messaggi di errore nel browser Proprietà**: Sono stati aggiunti messaggi di errore per ciascuna proprietà nel browser Proprietà adattive Forms. Questi messaggi consentono di comprendere i valori consentiti per un campo.
@@ -204,7 +204,7 @@ Puoi scrivere su formscsbeta@adobe.com per iscriverti al programma beta.
 
 ## 2021.4.0 {#april-2021-04-0}
 
-### Novità di [!DNL Forms] {#april-what-is-new-forms}
+### Novità in [!DNL Forms] {#april-what-is-new-forms}
 
 - **Utilizzare il metodo di autenticazione dell&#39;identità ID governativo in Forms adattivo abilitato per Adobe Sign**
 

@@ -1,11 +1,11 @@
 ---
 title: Note sulla versione 2020.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2020.10.0.'
+description: '"[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2020.10.0."'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 95ea603db207d93fa025a2ae20552f790b47f27c
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 21%
+ht-degree: 23%
 
 ---
 
@@ -20,7 +20,7 @@ La versione seguente (2020.11.0) sarà il 1° dicembre 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Novità di [!DNL Sites] {#what-is-new-sites}
+### Novità in [!DNL Sites] {#what-is-new-sites}
 
 * **[Componenti core 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)**: Adobe Experience Manager as a Cloud Service beneficia di aggiornamenti automatici all’ultima versione dei componenti core. La versione 2.12.0 include gli ultimi miglioramenti apportati dalla comunità. I miglioramenti includono [un nuovo gestore di moduli POST;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) la possibilità di includere CSS, JavaScript e metadati personalizzati [tag tramite la configurazione in base al contesto;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) e [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) Utilità per semplificare l’integrazione di Adobe Data Layer nei componenti personalizzati. Consulta la sezione [elenco delle modifiche](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 2.12.0.
 
@@ -45,7 +45,7 @@ La versione seguente (2020.11.0) sarà il 1° dicembre 2020.
 
 ## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
-### Novità di [!DNL Forms] {#what-is-new-forms-oct-2021}
+### Novità in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
 * **Analytics per Forms adattivo**: È ora possibile acquisire e tenere traccia del comportamento sia di accesso che di non accesso (anonimo) tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni sugli utenti finali. Consente agli utenti aziendali di prendere decisioni informate sul contenuto, il layout e lo stile dei moduli adattivi in base alle informazioni raccolte.
 
@@ -55,7 +55,7 @@ La versione seguente (2020.11.0) sarà il 1° dicembre 2020.
 
 ### Funzioni beta di [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) consente di combinare un modello e dati XML per generare documenti in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=it) consente di combinare un modello e dati XML per generare documenti in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch.
 
 Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
@@ -79,7 +79,7 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 La data di rilascio di Cloud Manager in Experience Manager as a Cloud Service 2020.10.0 è il 20 ottobre 2020.
 
-### Novità di [!DNL Cloud Manager] {#what-is-new-cm}
+### Novità in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * La pagina Ambienti è stata riprogettata.
 
@@ -116,7 +116,7 @@ Fai riferimento a [Ambiente di visualizzazione](/help/implementing/cloud-manager
 
 * È stato aggiunto il supporto per la ricerca di istanze del flusso di lavoro in base a Titolo flusso di lavoro, Modello flusso di lavoro, Stato, Iniziatore, Percorso payload e Data di inizio. Vedi [Cerca istanze del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
-## Strumento Content Transfer (Trasferimento contenuti)  {#content-transfer-tool}
+## Strumento Trasferimento contenuti {#content-transfer-tool}
 
 Ulteriori informazioni sulle novità e sugli aggiornamenti di [Strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Versione v1.1.12.
 
