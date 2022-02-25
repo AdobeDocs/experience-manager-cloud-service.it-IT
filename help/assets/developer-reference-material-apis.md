@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 3%
+source-wordcount: '1744'
+ht-degree: 2%
 
 ---
 
@@ -22,31 +22,31 @@ L’articolo contiene raccomandazioni, materiali di riferimento e risorse per gl
 
 >[!CAUTION]
 >
->Alcune API continuano a esistere ma non sono supportate attivamente (contrassegnate da un ×). Per quanto possibile, non utilizzare queste API.
+>Some APIs continue to exist but are not actively supported (denoted with an ×). To the extent possible, do not use these APIs.
 
 | Livello di supporto | Descrizione |
 | ------------- | --------------------------- |
 | ✓ | Supportata |
-| × | Non supportato. Non usare. |
+| × | Non supportato. Do not use. |
 | - | Non disponibile |
 
-| Caso d’uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API Java | [Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
+| Use case | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API Java | [Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **binario originale** |  |  |  |  |  |  |
-| Crea originale | ✓ | × | - | × | × | - |
+| Create original | ✓ | × | - | × | × | - |
 | Leggi originale | - | × | ✓ | ✓ | ✓ | - |
 | Aggiorna originale | ✓ | × | ✓ | × | × | - |
-| Elimina originale | - | ✓ | - | ✓ | ✓ | - |
-| Copia originale | - | ✓ | - | ✓ | ✓ | - |
+| Delete original | - | ✓ | - | ✓ | ✓ | - |
+| Copy original | - | ✓ | - | ✓ | ✓ | - |
 | Sposta originale | - | ✓ | - | ✓ | ✓ | - |
 | **Metadati** |  |  |  |  |  |  |
 | Creare metadati | - | ✓ | ✓ | ✓ | ✓ | - |
 | Leggi metadati | - | ✓ | - | ✓ | ✓ | - |
-| Aggiornare i metadati | - | ✓ | ✓ | ✓ | ✓ | - |
+| Update metadata | - | ✓ | ✓ | ✓ | ✓ | - |
 | Eliminare i metadati | - | ✓ | ✓ | ✓ | ✓ | - |
 | Copia metadati | - | ✓ | - | ✓ | ✓ | - |
 | Spostare i metadati | - | ✓ | - | ✓ | ✓ | - |
-| **Frammenti di contenuto (CF)** |  |  |  |  |  |  |
+| **Content Fragments (CF)** |  |  |  |  |  |  |
 | Crea CF | - | ✓ | - | ✓ | - | - |
 | Leggi CF | - | ✓ | - | ✓ | - | ✓ |
 | Aggiorna CF | - | ✓ | - | ✓ | - | - |
@@ -85,13 +85,13 @@ L’approccio fornisce una gestione scalabile e più performante del caricamento
 >[!NOTE]
 Vedi il codice client per implementare questo approccio in open-source [libreria aem-upload](https://github.com/adobe/aem-upload).
 
-### Avvia caricamento {#initiate-upload}
+### Initiate upload {#initiate-upload}
 
-Invia una richiesta HTTP POST alla cartella desiderata. Le risorse vengono create o aggiornate in questa cartella. Includere il selettore `.initiateUpload.json` per indicare che la richiesta è quella di avviare il caricamento di un file binario. Ad esempio, il percorso della cartella in cui deve essere creata la risorsa `/assets/folder`. La richiesta POST è `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
+Invia una richiesta HTTP POST alla cartella desiderata. Assets are created or updated in this folder. Includere il selettore `.initiateUpload.json` per indicare che la richiesta è quella di avviare il caricamento di un file binario. Ad esempio, il percorso della cartella in cui deve essere creata la risorsa `/assets/folder`. La richiesta POST è `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 Il tipo di contenuto del corpo della richiesta deve essere `application/x-www-form-urlencoded` dati del modulo, contenenti i campi seguenti:
 
-* `(string) fileName`: Obbligatorio. Nome della risorsa così come viene visualizzata in [!DNL Experience Manager].
+* `(string) fileName`: Obbligatorio. The name of the asset as it appears in [!DNL Experience Manager].
 * `(number) fileSize`: Obbligatorio. La dimensione del file, in byte, della risorsa da caricare.
 
 È possibile utilizzare una singola richiesta per avviare i caricamenti per più binari, purché ogni binario contenga i campi richiesti. In caso di esito positivo, la richiesta risponde con un `201` codice di stato e un corpo contenente dati JSON nel seguente formato:
@@ -99,7 +99,7 @@ Il tipo di contenuto del corpo della richiesta deve essere `application/x-www-fo
 ```json
 {
     "completeURI": "(string)",
-    "folderPath": (string)",
+    "folderPath": "(string)",
     "files": [
         {
             "fileName": "(string)",
@@ -107,33 +107,50 @@ Il tipo di contenuto del corpo della richiesta deve essere `application/x-www-fo
             "uploadToken": "(string)",
             "uploadURIs": [
                 "(string)"
-            ]
+            ],
+            "minPartSize": (number),
+            "maxPartSize": (number)
         }
     ]
 }
 ```
 
-* `completeURI` (stringa): Chiama questo URI al termine del caricamento del binario. L’URI può essere un URI assoluto o relativo e i client devono essere in grado di gestirlo. Cioè, il valore può essere `"https://[aem_server]:[port]/content/dam.completeUpload.json"` o `"/content/dam.completeUpload.json"` Vedi [caricamento completo](#complete-upload).
+* `completeURI` (string): Call this URI when the binary finishes uploading. The URI can be an absolute or relative URI, and clients should be able to handle either. That is, the value can be `"https://[aem_server]:[port]/content/dam.completeUpload.json"` or `"/content/dam.completeUpload.json"` See [complete upload](#complete-upload).
 * `folderPath` (stringa): Percorso completo della cartella in cui viene caricato il binario.
-* `(files)` (matrice): Elenco di elementi la cui lunghezza e ordine corrispondono alla lunghezza e all’ordine dell’elenco delle informazioni binarie fornite nella richiesta di avvio.
-* `fileName` (stringa): Il nome del binario corrispondente, come specificato nella richiesta di avvio. Questo valore deve essere incluso nella richiesta completa.
+* `(files)` (array): A list of elements whose length and order match the length and order of the list of binary information provided in the initiate request.
+* `fileName` (stringa): Il nome del binario corrispondente, come specificato nella richiesta di avvio. This value should be included in the complete request.
 * `mimeType` (stringa): Il tipo mime del binario corrispondente, come specificato nella richiesta di avvio. Questo valore deve essere incluso nella richiesta completa.
-* `uploadToken` (stringa): Un token di caricamento per il binario corrispondente. Questo valore deve essere incluso nella richiesta completa.
+* `uploadToken` (stringa): Un token di caricamento per il binario corrispondente. This value should be included in the complete request.
 * `uploadURIs` (matrice): Elenco di stringhe i cui valori sono URI completi a cui deve essere caricato il contenuto del binario (vedi [Carica binario](#upload-binary)).
 * `minPartSize` (numero): Lunghezza minima, in byte, dei dati che possono essere forniti a uno qualsiasi dei `uploadURIs`, se è presente più di un URI.
 * `maxPartSize` (numero): La lunghezza massima, in byte, dei dati che possono essere forniti a uno qualsiasi dei `uploadURIs`, se è presente più di un URI.
 
 ### Carica binario {#upload-binary}
 
-L&#39;output di avvio di un caricamento include uno o più valori URI di caricamento. Se viene fornito più di un URI, il client divide il binario in parti ed effettua le richieste PUT di ciascuna parte in ogni URI, in ordine. Usa tutti gli URI. Assicurati che le dimensioni di ogni parte siano entro le dimensioni minime e massime specificate nella risposta di avvio. I nodi edge CDN consentono di accelerare il caricamento richiesto dei binari.
+L&#39;output di avvio di un caricamento include uno o più valori URI di caricamento. Se viene fornito più di un URI, il client può dividere il binario in parti ed effettuare richieste PUT di ciascuna parte agli URI di caricamento forniti, in ordine. Se scegli di dividere il binario in parti, assicurati di attenersi alle seguenti linee guida:
+* Ciascuna parte, ad eccezione dell&#39;ultima, deve essere di dimensioni maggiori o uguali a `minPartSize`.
+* Ogni parte deve avere dimensioni inferiori o uguali a `maxPartSize`.
+* Se la dimensione del binario supera `maxPartSize`, devi dividere il binario in parti per caricarlo.
+* Non è necessario utilizzare tutti gli URI.
 
-Un metodo potenziale per farlo è calcolare la dimensione della parte in base al numero di URI di caricamento forniti dall’API. Ad esempio, si supponga che la dimensione totale del binario sia di 20.000 byte e che il numero di URI di caricamento sia di 2. Quindi segui questi passaggi:
+Se la dimensione del binario è minore o uguale a `maxPartSize`, puoi invece caricare l’intero binario in un singolo URI di caricamento. Se viene fornito più di un URI di caricamento, utilizza il primo e ignora il resto. Non è necessario utilizzare tutti gli URI.
 
-* Calcola la dimensione della parte dividendo la dimensione totale per il numero di URI: 20.000 / 2 = 10.000.
-* Intervallo di byte di POST 0-9.999 del binario al primo URI nell’elenco degli URI di caricamento.
-* Intervallo di byte di POST 10.000 - 19.999 del binario al secondo URI nell’elenco degli URI di caricamento.
+I nodi edge CDN consentono di accelerare il caricamento richiesto dei binari.
+
+Il modo più semplice per farlo è utilizzare il valore di `maxPartSize` come parte. Il contratto API garantisce che vi siano sufficienti URI di caricamento per caricare il binario se utilizzi questo valore come dimensione della parte. A questo scopo, dividi il binario in parti di dimensioni `maxPartSize`, utilizzando un URI per ogni parte, in ordine. La parte finale può essere di qualsiasi dimensione inferiore o uguale a `maxPartSize`. Ad esempio, si supponga che la dimensione totale del binario sia di 20.000 byte, `minPartSize` è di 5.000 byte, `maxPartSize` è di 8.000 byte e il numero di URI di caricamento è 5. Quindi segui questi passaggi:
+* Carica i primi 8.000 byte del binario utilizzando il primo URI di caricamento.
+* Carica i secondi 8.000 byte del binario utilizzando il secondo URI di caricamento.
+* Carica gli ultimi 4.000 byte del binario utilizzando il terzo URI di caricamento. Poiché questa è la parte finale, non deve essere più grande di `minPartSize`.
+* Non è necessario utilizzare gli ultimi due URI di caricamento. Ignoratele e basta.
+
+Un errore comune consiste nel calcolare la dimensione della parte in base al numero di URI di caricamento forniti dall’API. Il contratto API non garantisce il corretto funzionamento di questo approccio e può comportare dimensioni di parte non comprese nell’intervallo tra `minPartSize` e `maxPartSize`. Questo può causare errori di caricamento binario.
+
+Ancora una volta, il modo più semplice e sicuro è quello di utilizzare semplicemente parti di dimensioni uguali a `maxPartSize`.
 
 Se il caricamento ha esito positivo, il server risponde a ogni richiesta con un `201` codice di stato.
+
+>[!NOTE]
+Per ulteriori informazioni sull’algoritmo di caricamento, consulta la sezione [documentazione ufficiale sulle funzioni](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) e [Documentazione API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) nel progetto Apache Jackrabbit Oak.
 
 ### Caricamento completo {#complete-upload}
 
@@ -150,13 +167,13 @@ Dopo aver caricato tutte le parti di un file binario, invia una richiesta HTTP P
 | `replace` | Booleano | Facoltativo | Se `True` e esiste una risorsa con il nome specificato, [!DNL Experience Manager] elimina la risorsa e la ricrea. |
 
 >[!NOTE]
-Se la risorsa esiste e nessuna delle due `createVersion` né `replace` viene specificato, quindi [!DNL Experience Manager] aggiorna la versione corrente della risorsa con il nuovo binario.
+If the asset exists and neither `createVersion` nor `replace` is specified, then [!DNL Experience Manager] updates the asset&#39;s current version with the new binary.
 
-Come il processo di avvio, i dati completi della richiesta possono contenere informazioni per più di un file.
+Like the initiate process, the complete request data may contain information for more than one file.
 
-Il processo di caricamento di un binario non viene eseguito finché non viene richiamato l’URL completo per il file. Una risorsa viene elaborata al termine del processo di caricamento. L’elaborazione non si avvia anche se il file binario della risorsa viene caricato completamente ma il processo di caricamento non è completato. Se il caricamento ha esito positivo, il server risponde con un `200` codice di stato.
+The process of uploading a binary is not done until the complete URL is invoked for the file. Una risorsa viene elaborata al termine del processo di caricamento. L’elaborazione non si avvia anche se il file binario della risorsa viene caricato completamente ma il processo di caricamento non è completato. If upload is successful, the server responds with a `200` status code.
 
-### Libreria di caricamento open-source {#open-source-upload-library}
+### Open-source upload library {#open-source-upload-library}
 
 Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e strumenti di caricamento personalizzati, Adobe fornisce librerie e strumenti open source:
 
@@ -175,6 +192,7 @@ Il nuovo metodo di caricamento è supportato solo per [!DNL Adobe Experience Man
 >[!MORELIKETHIS]
 * [Libreria aem-upload open-source](https://github.com/adobe/aem-upload).
 * [Strumento a riga di comando open source](https://github.com/adobe/aio-cli-plugin-aem).
+* [Documentazione Apache Jackrabbit Oak per il caricamento diretto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 
 ## Flussi di lavoro di elaborazione e post-elaborazione delle risorse {#post-processing-workflows}
@@ -259,7 +277,7 @@ I seguenti modelli di flusso di lavoro tecnici vengono sostituiti dai microservi
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
+<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
