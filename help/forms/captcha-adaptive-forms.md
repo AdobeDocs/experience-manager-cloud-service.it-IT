@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,6 @@ CAPTCHA (Test di Turing Pubblico Completamente Automatizzato per dire Computer e
 >
 >* [!DNL AEM Forms] supportano solo reCaptcha v2. Qualsiasi altra versione non è supportata.
 >* CAPTCHA in Adaptive Forms non è supportato in modalità offline su [!DNL AEM Forms] app.
-
 >
 
 
@@ -57,7 +56,7 @@ Per implementare il servizio reCAPTCHA in [!DNL AEM Forms]:
 
 1. Configura il servizio cloud per reCAPTCHA.
 
-   1. Nell’istanza di authoring di AEM, vai a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. Nell’istanza di authoring di Experience Manager, vai a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. Tocca **[!UICONTROL reCAPTCHA]**. Viene visualizzata la pagina Configurazioni . Seleziona il contenitore di configurazione creato nel passaggio precedente e tocca **[!UICONTROL Crea]**.
    1. Specifica nome, chiave del sito e chiave segreta per il servizio reCAPTCHA e tocca **[!UICONTROL Crea]** per creare la configurazione del servizio cloud.
    1. Nella finestra di dialogo Modifica componente , specifica il sito e le chiavi segrete ottenute nel passaggio 1. Tocca **[!UICONTROL Salva impostazioni]** quindi tocca **[!UICONTROL OK]** per completare la configurazione.
@@ -86,11 +85,14 @@ Per utilizzare CAPTCHA in Forms adattivo:
 
 1. Seleziona il componente Captcha aggiunto e tocca ![cmppr](assets/configure-icon.svg) per modificarne le proprietà.
 1. Specifica un titolo per il widget CAPTCHA. Il valore predefinito è **[!UICONTROL Captcha]**. Seleziona **[!UICONTROL Nascondi titolo]** se non si desidera che il titolo venga visualizzato.
-1. Da **[!UICONTROL Servizio Captcha]** a discesa, seleziona **[!UICONTROL reCaptcha]** per abilitare il servizio reCAPTCHA se lo hai configurato come descritto in [Servizio ReCAPTCHA di Google](#google-recaptcha). Seleziona una configurazione dal menu a discesa Impostazioni . Inoltre, seleziona la dimensione come **[!UICONTROL Normale]** o **[!UICONTROL Compatto]** per il widget reCAPTCHA.
+1. Da **[!UICONTROL Servizio Captcha]** a discesa, seleziona **[!UICONTROL reCaptcha]** per abilitare il servizio reCAPTCHA se lo hai configurato come descritto in [Servizio ReCAPTCHA di Google](#google-recaptcha). Seleziona una configurazione dal menu a discesa Impostazioni .
+1. Seleziona il tipo come **[!UICONTROL Normale]** o **[!UICONTROL Compatto]** per il widget reCAPTCHA. Puoi anche selezionare la **[!UICONTROL Invisibile]** opzione per mostrare la sfida CAPTCHA solo nel caso di un&#39;attività sospetta. Nei moduli protetti viene visualizzato il badge reCAPTCHA protetto, visualizzato di seguito.
+
+   ![Google elaborato dal badge reCAPTCHA](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >Non selezionare **[!UICONTROL Predefinito]** dal menu a discesa del servizio Captcha , poiché il servizio AEM CAPTCHA predefinito è obsoleto.
+   >Non selezionare **[!UICONTROL Predefinito]** dal menu a discesa del servizio Captcha , poiché il servizio Experience Manager CAPTCHA predefinito è obsoleto.
 
 1. Salva le proprietà.
 
@@ -132,7 +134,7 @@ Di seguito è riportato un esempio di `ValidateCAPTCHA` API per convalidare CAPT
 
 ```javascript
 if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
-    	GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
+     GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
         String formPath = slingRequest.getResource().getPath();
         String captchaData = slingRequest.getParameter(GuideConstants.GUIDE_CAPTCHA_DATA);
         if (!apiProvider.validateCAPTCHA(formPath, captchaData).isCaptchaValid()){

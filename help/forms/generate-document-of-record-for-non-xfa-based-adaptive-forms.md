@@ -2,10 +2,10 @@
 title: Genera documento di record per Forms adattivo
 description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
 workflow-type: tm+mt
-source-wordcount: '2926'
-ht-degree: 3%
+source-wordcount: '3686'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ Operazioni disponibili:
 
 Prima di iniziare ad apprendere e a preparare le risorse necessarie per un documento di record:
 
-**Modello di base:** Un modello XFA (file XDP) creato in AEM Designer o in un modulo Acrobat (AcroForm). [Modello di base](#base-template-of-a-document-of-record) viene utilizzato per specificare le informazioni sullo stile e il branding di un documento di record. Carica il modello XFA (file XDP) nella tua istanza AEM Forms prima di
+**Modello di base:** Un modello XFA (file XDP) creato in Forms Designer o in un modulo Acrobat (AcroForm). [Modello di base](#base-template-of-a-document-of-record) viene utilizzato per specificare le informazioni sullo stile e il branding di un documento di record. Carica il modello XFA (file XDP) nella tua istanza AEM Forms prima di
 
 **Modulo adattivo:** Modulo adattivo per il quale deve essere generato il documento di record.
 
@@ -38,7 +38,7 @@ Prima di iniziare ad apprendere e a preparare le risorse necessarie per un docum
 
 Carica il modello XFA (file XDP) nella tua istanza AEM Forms. Esegui i seguenti passaggi per configurare un modulo adattivo per utilizzare il modello XFA (file XDP) come modello per il documento di record:
 
-1. Nell’istanza AEM autore, fai clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
+1. Nell’istanza di authoring di Experience Manager, fai clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
 1. Selezionare un modulo e fare clic su **[!UICONTROL Proprietà]**.
 1. Nella finestra Proprietà, tocca **[!UICONTROL Modello Modulo]**.
 1. Sulla  **[!UICONTROL Modello Modulo]** nella scheda **[!UICONTROL Seleziona da]** a discesa, seleziona **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo quando si crea un modulo.
@@ -51,7 +51,7 @@ Il modulo adattivo è ora configurato per l’utilizzo di un file XDP come model
 
 Carica il tuo Adobe Acrobat PDF (Acroform) nella tua istanza AEM Forms. Esegui i seguenti passaggi per configurare un modulo adattivo per utilizzare Adobe Acrobat PDF (Acroform) come modello per il documento di record:
 
-1. Nell’istanza AEM autore, fai clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
+1. Nell’istanza di authoring di Experience Manager, fai clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
 1. Selezionare un modulo e fare clic su **[!UICONTROL Proprietà]**.
 1. Nella finestra Proprietà, tocca **[!UICONTROL Modello Modulo]**.
 1. Sulla  **[!UICONTROL Modello Modulo]** nella scheda **[!UICONTROL Seleziona da]** a discesa, seleziona **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo quando si crea un modulo.
@@ -65,14 +65,14 @@ Il modulo adattivo è ora configurato per l’utilizzo di un Acroform come model
 Quando un Modulo adattivo è configurato per generare automaticamente un Documento di record, ogni volta che un modulo viene modificato, il relativo Documento di record viene aggiornato immediatamente. Ad esempio, se un campo viene rimosso da un modulo adattivo esistente, anche il campo corrispondente viene rimosso e non è visibile nel documento di record. Ci sono molti altri vantaggi di generare automaticamente Documento di record. :
 
 * Gli sviluppatori di moduli non devono gestire manualmente i binding dei dati. Il documento di record generato automaticamente si occupa degli aggiornamenti relativi al binding dei dati.
-* Gli sviluppatori di moduli non devono nascondere manualmente i campi contrassegnati come esclusi dal documento di record. I documenti generati automaticamente sono preconfigurati per escludere tali campi.
+* Gli sviluppatori di moduli non devono nascondere manualmente i campi contrassegnati come esclusi dal documento di record. Il documento di record generato automaticamente è preconfigurato per escludere tali campi.
 * L’opzione Documento di record generato automaticamente consente di risparmiare tempo per la creazione di un modello di modulo per il documento di record.
 * L’opzione Documento di record generato automaticamente consente di utilizzare stili e apparenze diversi utilizzando modelli di base diversi. Consente di selezionare lo stile e l&#39;aspetto migliori per il documento di record della tua organizzazione. Se non si specifica lo stile, gli stili di sistema vengono impostati come predefiniti.
-* I documenti generati automaticamente garantiscono che qualsiasi modifica del modulo venga immediatamente riflessa nel documento di registrazione.
+* Il documento generato automaticamente assicura che qualsiasi modifica del modulo venga immediatamente riflessa nel documento di registrazione.
 
 Esegui i seguenti passaggi per configurare un modulo adattivo per generare automaticamente un documento di record:
 
-1. Nell’istanza AEM autore, fai clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
+1. Nell’istanza di authoring di Experience Manager, fai clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
 1. Selezionare un modulo e fare clic su **[!UICONTROL Proprietà]**.
 1. Nella finestra Proprietà, tocca **[!UICONTROL Modello Modulo]**.
 1. Sulla  **[!UICONTROL Modello Modulo]** nella scheda **[!UICONTROL Seleziona da]** a discesa, seleziona **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo quando si crea un modulo.
@@ -98,7 +98,7 @@ Eseguire un binding dei campi modulo adattivo con i campi modello per visualizza
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-È possibile utilizzare l’azione Invia e-mail, AEM Invia flusso di lavoro insieme a [Passaggio del documento di record e altre azioni di invio](configuring-submit-actions.md) per ricevere un documento di registrazione.
+Puoi utilizzare l’azione Invia e-mail, Experience Manager Flusso di lavoro, insieme all’azione Invia [Passaggio del documento di record e altre azioni di invio](configuring-submit-actions.md) per ricevere un documento di registrazione.
 
 ## Aggiornamenti incrementali al modello Documento di record {#document-of-record-template-incremental-updates}
 
@@ -148,7 +148,6 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
   
-
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -301,7 +300,7 @@ Un modello di base viene utilizzato per definire intestazione, piè di pagina, s
 
 * Le proprietà di questi campi vengono applicate ai campi nel documento di registrazione. Questi campi devono seguire `AF_<name of field in all caps>_XFO` convenzione di denominazione. Ad esempio, il nome del campo per la casella di controllo deve essere `AF_CHECKBOX_XFO`.
 
-Per creare un modello di base, eseguire le operazioni seguenti in AEM Designer.
+Per creare un modello di base, eseguire le operazioni seguenti in Forms Designer.
 
 1. Fai clic su **[!UICONTROL File]** > **[!UICONTROL Nuovo]**.
 1. Seleziona la **[!UICONTROL Basato su un modello]** opzione .
@@ -326,7 +325,7 @@ Seguire rigorosamente le convenzioni e le istruzioni di cui sopra per progettare
 
 Durante la generazione di un documento di record, è possibile modificare le informazioni di branding per il documento di record nella scheda Documento di record. La scheda Documento di record include opzioni quali logo, aspetto, layout, intestazione e piè di pagina, liberatoria e se si desidera includere o meno le opzioni della casella di controllo e dei pulsanti di scelta non selezionati.
 
-Per localizzare le informazioni di branding immesse nella scheda Documento di record, assicurarsi che le impostazioni internazionali del browser siano impostate in modo appropriato. Per personalizzare le informazioni di branding del documento di registrazione, esegui i seguenti passaggi:
+Per localizzare le informazioni di branding immesse nella scheda Documento di record, accertati che le impostazioni internazionali del browser siano impostate in modo appropriato. Per personalizzare le informazioni di branding del documento di registrazione, esegui i seguenti passaggi:
 
 1. Seleziona un pannello (pannello principale) nel documento di record e tocca ![configurare](assets/configure.png).
 1. Tocca ![scheda](assets/dortab.png). Viene visualizzata la scheda Documento di record.
@@ -388,7 +387,7 @@ Campi di un pannello di cui viene eseguito il rendering in un layout di colonna 
 
 Le impostazioni del documento di record consentono di scegliere le opzioni che si desidera includere nel documento di record. Ad esempio, una banca accetta un modulo nome, età, numero di previdenza sociale e numero di telefono. Il modulo genera un numero di conto bancario e i dettagli della filiale. È possibile scegliere di visualizzare solo il nome, il numero di previdenza sociale, il conto bancario e i dettagli del ramo nel documento di registrazione.
 
-Le impostazioni Documento di record di un componente sono disponibili sotto le relative proprietà. Per accedere alle proprietà di un componente, selezionalo e fai clic su ![cmppr](assets/cmppr.png) nella sovrapposizione. Le proprietà sono elencate nella barra laterale ed è possibile trovare le seguenti impostazioni.
+L’impostazione del componente Documento di record è disponibile nelle relative proprietà. Per accedere alle proprietà di un componente, selezionalo e fai clic su ![cmppr](assets/cmppr.png) nella sovrapposizione. Le proprietà sono elencate nella barra laterale ed è possibile trovare le seguenti impostazioni.
 
 **Impostazioni a livello di campo**
 
@@ -401,4 +400,70 @@ Le impostazioni Documento di record di un componente sono disponibili sotto le r
 **Impostazioni a livello di modulo**
 
 * **Includi campi non associati in DoR:** L&#39;impostazione della proprietà include campi non associati di Modulo adattivo basato su schema nel documento di record. Per impostazione predefinita è true.
-* **Escludere i campi dal DoR se nascosti:** L&#39;impostazione della proprietà sostituisce il comportamento della proprietà a livello di campo &quot;Escludi dal documento di record&quot; quando non è true. Se i campi sono nascosti al momento dell’invio del modulo, verranno esclusi dal documento di registrazione se la proprietà è impostata su true, purché la proprietà &quot;Escludi dal documento di record&quot; non sia impostata.
+* **Escludere i campi dal DoR se nascosti:** L&#39;impostazione della proprietà sostituisce il comportamento della proprietà a livello di campo &quot;Escludi dal documento di record&quot; quando non è true. Se i campi sono nascosti al momento dell’invio del modulo, vengono esclusi dal documento se la proprietà è impostata su true, purché la proprietà &quot;Escludi dal documento di record&quot; non sia impostata.
+
+## Utilizzare un file XCI personalizzato
+
+>[!NOTE]
+>
+> Questa funzione è disponibile nel canale prerelease. Vedi [Documentazione sul canale prerelease](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) per informazioni su come abilitare la funzione per l’ambiente.
+
+Un file XCI consente di impostare varie proprietà di un documento. Forms as a Cloud Service ha un file XCI principale. È possibile utilizzare un file XCI personalizzato per sostituire una o più proprietà predefinite specificate nel file XCI master. Ad esempio, è possibile scegliere di incorporare un font in un documento o di abilitare la proprietà tagged per tutti i documenti. La tabella seguente specifica le opzioni XCI:
+
+| Opzione XCI | Descrizione |
+|--- |--- |
+| config/current/pdf/creator | Identifica il creatore del documento utilizzando la voce Creatore nel dizionario Informazioni documento. Per informazioni su questo dizionario, vedi [Guida di riferimento di PDF](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/pdf/produttore | Identifica il produttore del documento utilizzando la voce Produttore nel dizionario Informazioni documento. Per informazioni su questo dizionario, vedi [Guida di riferimento di PDF](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| configurazione/attuale/layout | Controlla se l&#39;output è un singolo pannello o impaginato. |
+| config/current/pdf/compressione/level | Specifica il grado di compressione da utilizzare per la generazione di un documento PDF. |
+| config/present/pdf/fontInfo/embed | Controlla l&#39;incorporazione del font nel documento di output. |
+| config/current/pdf/scriptModel | Controlla se le informazioni specifiche di XFA sono incluse nel documento PDF di output. |
+| config/current/common/data/adjustData | Controlla se l&#39;applicazione XFA regola i dati dopo l&#39;unione. |
+| config/current/pdf/renderPolicy | Controlla se la generazione del contenuto della pagina viene eseguita sul server o differita al client. |
+| config/present/common/locale | Specifica le impostazioni internazionali predefinite utilizzate nel documento di output. |
+| configurazione/presente/destinazione | Se contenuto da un elemento presente, specifica il formato di output. Se contenuto in un elemento openAction, specifica l&#39;azione da eseguire all&#39;apertura del documento in un client interattivo. |
+| configurazione/attuale/uscita/tipo | Specifica il tipo di compressione da applicare a un file o il tipo di output da produrre. |
+| config/current/common/temp/uri | Specifica l’URI del modulo. |
+| config/present/common/template/base | Fornisce una posizione di base per gli URI nella struttura del modulo. Quando questo elemento è assente o vuoto, la posizione della struttura del modulo viene utilizzata come base. |
+| config/present/common/log/to | Controlla la posizione in cui vengono scritti i dati di registro o di output. |
+| config/current/output/to | Controlla la posizione in cui vengono scritti i dati di registro o di output. |
+| config/present/script/currentPage | Specifica la pagina iniziale all&#39;apertura del documento. |
+| config/present/script/exclude | Informa Forms as a Cloud Service quali eventi ignorare. |
+| config/current/pdf/linearized | Controlla se il documento PDF di output è linearizzato. |
+| config/present/script/runScripts | Controlla quale insieme di script viene eseguito da Forms as a Cloud Service. |
+| config/present/pdf/tagged | Controlla l’inclusione dei tag nel documento PDF di output. I tag, nel contesto di PDF, sono informazioni aggiuntive incluse in un documento per esporre la struttura logica del documento. I tag facilitano gli strumenti di accessibilità e la riformattazione. Ad esempio, un numero di pagina può essere contrassegnato come artefatto in modo che l’assistente vocale non lo pronunci al centro del testo. Anche se i tag rendono un documento più utile, aumentano anche le dimensioni del documento e il tempo di elaborazione necessario per crearlo. |
+| config/present/pdf/fontInfo/alwaysEmbed | Specifica un font incorporato nel documento di output. |
+| config/present/pdf/fontInfo/maiEmbed | Specifica un font che non deve mai essere incorporato nel documento di output. |
+| config/present/pdf/pdfa/part | Specifica il numero di versione della specifica PDF/A a cui è conforme il documento. |
+| config/present/pdf/pdfa/amd | Specifica il livello di modifica della specifica PDF/A. |
+| config/current/pdf/pdfa/conformation | Specifica il livello di conformità con la specifica PDF/A. |
+| config/present/pdf/version | Specifica la versione del documento PDF da generare |
+| config/present/pdf/version/map | Specifica i font di ritorno per il documento |
+
+### Utilizza un file XCI personalizzato nell’ambiente as a Cloud Service di Forms
+
+1. Aggiungi il file XCI personalizzato al tuo progetto di sviluppo.
+1. Specifica quanto segue [proprietà inline](/help/implementing/deploying/configuring-osgi.md):
+
+   ```JSON
+    {
+     "xciFilePath": "[path of XCI file]"
+    }
+   ```
+
+   Ad esempio:
+
+   ```JSON
+    {
+     "xciFilePath": "/content/dam/formsanddocuments/customMinionProBoldAndTagged.xci"
+    }
+   ```
+
+1. Distribuisci il progetto nell’ambiente di Cloud Service.
+
+### Utilizzare un file XCI personalizzato nell’ambiente di sviluppo as a Cloud Service Forms locale
+
+1. Carica il file XCI nell’ambiente di sviluppo locale.
+1. Apri Gestione della configurazione dell&#39;SDK di Cloud Service. L’URL predefinito è: <http://localhost:4502/system/console/configMgr>.
+1. Individua e apri la **[!UICONTROL Canale web di comunicazione interattiva e Forms adattivo]** configurazione.
+1. Specifica il percorso del file XCI e fai clic su **[!UICONTROL Salva]**.
