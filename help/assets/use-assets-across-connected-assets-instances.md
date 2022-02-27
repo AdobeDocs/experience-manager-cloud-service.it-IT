@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f624b287bf5a46d4a20991dae6cd7b521a7fe472
+source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3825'
 ht-degree: 19%
 
 ---
@@ -53,7 +53,7 @@ Gli autori ricercano le immagini e i seguenti tipi di documenti in Content Finde
 Di seguito sono descritti i diversi ruoli coinvolti nella configurazione e nell’utilizzo della funzionalità e i relativi gruppi di utenti. L’ambito locale viene utilizzato per il caso d’uso in cui un autore crea una pagina web. L’ambito remoto viene utilizzato per l’implementazione DAM in cui sono ospitate le risorse necessarie. La [!DNL Sites] le risorse remote vengono recuperate dall’autore.
 
 | Ruolo | Ambito | Gruppo di utenti | Requisito |
-|------|--------|-----------|-----|----------|
+|------|--------|-----------|----------|
 | [!DNL Sites] administrator | Locale | [!DNL Experience Manager] `administrators` | Configurazione [!DNL Experience Manager] e configura l&#39;integrazione con il telecomando [!DNL Assets] distribuzione. |
 | Utente DAM | Locale | `Authors` | Utilizzato per visualizzare e duplicare le risorse recuperate in `/content/DAM/connectedassets/`. |
 | [!DNL Sites] author | Locale | <ul><li>`Authors` (con accesso in lettura sul DAM remoto e accesso all’authoring sul locale) [!DNL Sites]) </li> <li>`dam-users` locale [!DNL Sites]</li></ul> | Gli utenti finali [!DNL Sites] autori che utilizzano questa integrazione per velocizzare i contenuti. Gli autori possono cercare e sfogliare le risorse in DAM remoto utilizzando [!UICONTROL Content Finder] e utilizzando le immagini richieste nelle pagine web locali. |
@@ -136,7 +136,7 @@ Puoi controllare la connettività tra i [!DNL Sites] implementazioni e [!DNL Ass
 
 È possibile configurare una connessione tra [!DNL Sites] distribuzione e [!DNL Dynamic Media] distribuzione che consente agli autori di pagine web di utilizzare [!DNL Dynamic Media] immagini nelle loro pagine web. Durante l’authoring delle pagine web, l’utilizzo di risorse remote e remote [!DNL Dynamic Media] Le distribuzioni rimangono invariate. Ciò ti consente di sfruttare [!DNL Dynamic Media] tramite la funzione Risorse collegate , ad esempio i predefiniti per ritaglio avanzato e immagini.
 
-Con Risorse collegate, puoi sfruttare le [!DNL Dynamic Media] funzionalità per l’elaborazione delle risorse immagine nell’implementazione remota di DAM.
+Con Risorse collegate puoi utilizzare [!DNL Dynamic Media] per elaborare le risorse immagini nell’implementazione remota di DAM.
 
 Per utilizzare [!DNL Dynamic Media] immagini da una distribuzione DAM remota su un [!DNL Sites] distribuzione:
 
