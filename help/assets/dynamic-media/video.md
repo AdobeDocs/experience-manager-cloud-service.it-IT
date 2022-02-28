@@ -4,10 +4,10 @@ description: Scopri come utilizzare i video in Dynamic Media, ad esempio best pr
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: bb04d3bf3b5f4ca9abc12eee2e50b5f3a95ba405
+source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
 workflow-type: tm+mt
-source-wordcount: '9476'
-ht-degree: 5%
+source-wordcount: '9334'
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,7 @@ Questa sezione descrive come lavorare con i video in Dynamic Media.
 
 ## Avvio rapido: Video {#quick-start-videos}
 
-La seguente descrizione dettagliata del flusso di lavoro è stata progettata per aiutarti a iniziare rapidamente a usare i set di video adattivi in Dynamic Media. Dopo ogni passaggio sono presenti riferimenti incrociati alle intestazioni degli argomenti, dove è possibile trovare ulteriori informazioni.
+La seguente descrizione dettagliata del flusso di lavoro è stata progettata per aiutarti a iniziare rapidamente a usare i set di video adattivi in Dynamic Media. After each step is cross-references to topic headings where you can find more information.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
       * Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti e una risoluzione minima superiore a 25 x 25.
       * Puoi caricare file video fino a 15 GB ciascuno.
-      * [Caricare i video](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+      * [Upload your videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Ulteriori informazioni [Formati di file di input supportati](/help/assets/file-format-support.md).
    * Monitorare come [la codifica video è in corso](#monitoring-video-encoding-and-youtube-publishing-progress) dalla visualizzazione della risorsa o del flusso di lavoro.
 
@@ -103,7 +103,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
 ## Utilizzare i video in Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media è una soluzione end-to-end che semplifica la pubblicazione di video adattivi di alta qualità per lo streaming su diversi schermi, tra cui desktop, iOS, Android™, BlackBerry® e dispositivi mobili Windows®. Un Adaptive Video Set raggruppa versioni dello stesso video codificate con diversi bit rate e formati come 400 kbps, 800 kbps e 1000 kbps. Il computer desktop o il dispositivo mobile rileva la larghezza di banda disponibile.
+Video in Dynamic Media è una soluzione end-to-end che semplifica la pubblicazione di video adattivi di alta qualità per lo streaming su più schermi, compresi desktop, tablet e dispositivi mobili. Un Adaptive Video Set raggruppa versioni dello stesso video codificate con diversi bit rate e formati come 400 kbps, 800 kbps e 1000 kbps. Il computer desktop o il dispositivo mobile rileva la larghezza di banda disponibile.
 
 Ad esempio, su un dispositivo mobile iOS, rileva una larghezza di banda come 3G, 4G o Wi-Fi. Quindi, seleziona automaticamente il video codificato a destra tra i vari bit rate video all&#39;interno del set video adattivo. Il video viene inviato in streaming a desktop, dispositivi mobili o tablet.
 
@@ -115,7 +115,7 @@ La logica utilizzata da un lettore video per determinare quale video codificato 
 1. Il lettore video commuta in base ai cambiamenti della velocità della larghezza di banda utilizzando i seguenti criteri:
 
    1. Player sceglie il flusso di banda più alto sotto o uguale alla larghezza di banda stimata.
-   1. Il lettore considera solo l&#39;80% della larghezza di banda disponibile. Tuttavia, se sta cambiando, è più conservativo solo al 70% per evitare sovrastimazioni e immediatamente tornare indietro.
+   1. Il lettore considera solo l&#39;80% della larghezza di banda disponibile. However, if it is switching up, it is more conservative at only 70% to avoid overestimating and immediately switching back.
 
 Per informazioni tecniche dettagliate sull’algoritmo, consulta [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
@@ -128,17 +128,17 @@ Per la gestione di set video singoli e di set video adattivi, sono supportati i 
 
 * sottotitoli video in tutti i visualizzatori video HTML5.
 * Organizza, sfoglia e cerca video con il supporto completo dei metadati per una gestione efficiente delle risorse video.
-* Distribuire set video adattivi sul web e sui desktop e sui dispositivi mobili, compresi iPhone, iPad, Android™, BlackBerry® e Windows®.
+* Distribuisci set video adattivi su web e desktop, tablet e dispositivi mobili.
 
 Lo streaming video adattivo è supportato su varie piattaforme iOS. Vedi [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
-Dynamic Media supporta la riproduzione video mobile per video MP4 H.264. I dispositivi BlackBerry® che supportano questo formato video sono disponibili nel seguente sito: [Formati video supportati su BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-È possibile trovare i dispositivi Windows® che supportano questo formato video nel seguente percorso: [Formati video supportati su Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
+OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 * Riproduci il video utilizzando i predefiniti per visualizzatori video di Dynamic Media, tra cui:
 
-   * Visualizzatori video singoli.
+   * Single video viewers.
    * Visualizzatori per file multimediali diversi che combinano contenuti video e immagine.
 
 * Configura i lettori video per soddisfare le tue esigenze di branding.
@@ -239,13 +239,15 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
    <td>Chrome (iOS)</td>
    <td>HLS</td>
   </tr>
-  <tr>
+ </tbody>
+</table>
+
+<!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
- </tbody>
-</table>
+ -->
 
 ## Architettura della soluzione video Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
@@ -436,21 +438,19 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
 **Per configurare le impostazioni Google Cloud:**
 
 1. Crea un account Google.
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
-
-   Se disponi già di un account Google, passa al passaggio successivo.
+   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
 
 1. Vai a [https://cloud.google.com/](https://cloud.google.com/).
 1. Nella pagina Google Cloud, nell’angolo in alto a destra, seleziona **[!UICONTROL Console]**.
 
    Se necessario, **[!UICONTROL Accedere]** utilizzo delle credenziali del tuo account Google per visualizzare **[!UICONTROL Console]** opzione .
 
-1. Nella pagina Dashboard, a destra di **[!UICONTROL Piattaforma Google Cloud]**, seleziona l’elenco a discesa Progetto per aprire la finestra di dialogo Seleziona un progetto .
-1. Nella finestra di dialogo Seleziona un progetto , seleziona **[!UICONTROL Nuovo progetto]**.
+1. Nella pagina Dashboard, a destra di **[!UICONTROL Piattaforma Google Cloud]**, seleziona l’elenco a discesa Progetto per aprire la **[!UICONTROL Selezionare un progetto]** finestra di dialogo.
+1. In **[!UICONTROL Selezionare un progetto]** finestra di dialogo, seleziona **[!UICONTROL Nuovo progetto]**.
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
-1. Nella finestra di dialogo Nuovo progetto digitare il nome del nuovo progetto nel campo Nome progetto.
+1. In **[!UICONTROL Nuovo progetto]** nella finestra di dialogo **[!UICONTROL Nome del progetto]** digitare il nome del nuovo progetto.
 
    L&#39;ID progetto si basa sul nome del progetto. Scegliere con attenzione il nome del progetto; non può essere modificato dopo la creazione. Inoltre, devi immettere nuovamente lo stesso ID progetto quando configuri YouTube in Experience Manager successivo. Quindi, annotalo.
 
@@ -458,72 +458,71 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
 
 1. Effettua una delle seguenti operazioni:
 
-   * Nella scheda Guida introduttiva della dashboard del progetto, seleziona **[!UICONTROL Esplorare e abilitare le API]**.
-   * Nella scheda API della dashboard del progetto, seleziona **[!UICONTROL Panoramica su API]**.
+   * Nella dashboard del progetto, nella sezione **[!UICONTROL Introduzione]** scheda, seleziona **[!UICONTROL Esplorare e abilitare le API]**.
+   * Nella dashboard del progetto, nella sezione **[!UICONTROL API]** scheda, seleziona **[!UICONTROL Panoramica su API]**.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. Nella parte superiore della pagina API e servizi, seleziona **[!UICONTROL Abilitare API e servizi]**.
-1. Nella pagina Libreria API, a sinistra, in **[!UICONTROL Categoria]**, seleziona **[!UICONTROL YouTube]**. Sul lato destro della pagina, seleziona **[!UICONTROL API dati di YouTube]**.
-1. Nella pagina YouTube Data API v3 , seleziona **[!UICONTROL Abilita]**.
+1. Vicino al centro superiore del **[!UICONTROL API e servizi]** pagina, seleziona **[!UICONTROL ABILITARE API E SERVIZI]**.<!-- NEXT STEP BELOW IS STEP 10 -->
+1. Sulla **[!UICONTROL Libreria API]** pagina, a sinistra, sotto **[!UICONTROL Categoria]**, seleziona **[!UICONTROL YouTube]**. Sul lato destro della pagina, seleziona **[!UICONTROL YouTube]**.
+1. Sulla **[!UICONTROL YouTube]** pagina, seleziona **[!UICONTROL API dati YouTube v3]**.
+1. Sulla **[!UICONTROL API dati YouTube v3]** pagina, seleziona **[!UICONTROL GESTIONE]**.
 
-   ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
+   ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. Per utilizzare l’API, sono necessarie le credenziali. Se necessario, seleziona **[!UICONTROL Crea credenziali]**.
+1. Per utilizzare l’API, sono necessarie le credenziali. Se necessario, sul lato sinistro della pagina API e servizi , seleziona **[!UICONTROL Credenziali]**.
 
-   ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
+1. Nella pagina Credenziali, nella parte superiore, selezionare **[!UICONTROL CREDENZIALI]**, quindi seleziona **[!UICONTROL ID client OAuth]**.
 
-1. Sulla **[!UICONTROL Aggiungi credenziali al progetto]** pagina, passaggio 1, procedi come segue:
+1. Sulla **[!UICONTROL Crea ID client OAuth]** nella pagina **[!UICONTROL Tipo di applicazione]** elenco a discesa, seleziona **[!UICONTROL Applicazione Web]**.
 
-   * Da **[!UICONTROL Quale API stai utilizzando?]** elenco a discesa, seleziona **[!UICONTROL API dati YouTube v3]**.
+   ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
-   * Da **[!UICONTROL Da dove chiami l&#39;API?]** elenco a discesa, seleziona **[!UICONTROL Server web (ad esempio, node.js, Tomcat)]**.
+1. Effettua una delle operazioni seguenti:
 
-   * Da **[!UICONTROL A quali dati accedi?]** elenco a discesa, seleziona **[!UICONTROL Dati utente]**.
+   * In **[!UICONTROL Nome]** immetti un nome univoco per il client OAuth 2.0.
+   * Usa il nome predefinito già fornito da Google nel **[!UICONTROL Nome]** campo .
 
-   ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
+1. Sotto la **[!UICONTROL Origini JavaScript autorizzate]** intestazione, selezionare **[!UICONTROL AGGIUNGI URI]**.
 
-1. Seleziona **[!UICONTROL Di quali credenziali ho bisogno?]**
-1. Inserisci un nome univoco nel campo Nome della pagina **[!UICONTROL Add credentials to your project (Aggiungi credenziali alla pagina del progetto)]**, al passaggio 2, sotto l’intestazione **[!UICONTROL Create an OAuth 2.0 client ID (Crea un ID client OAuth 2.0)]**. Oppure puoi utilizzare il nome predefinito specificato da Google.
-1. Sotto la **[!UICONTROL Origini JavaScript autorizzate]** intestazione, nel campo di testo, immettere il seguente percorso, sostituendo il proprio dominio e il proprio numero di porta nel percorso, quindi premere **[!UICONTROL Invio]** per aggiungere il percorso all’elenco:
+   ![6_5_googleaccount-apis-namepermissions](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
+
+1. In **[!UICONTROL URI]** campo di testo, immettere il seguente percorso, sostituendo il proprio dominio e il proprio numero di porta nel percorso, quindi premere **[!UICONTROL Invio]** per aggiungere il percorso all’elenco:
 
    `https://<servername.domain>:<port_number>`
 
    Esempio, `https://1a2b3c.mycompany.com:4321`
 
-   **Nota**: Gli esempi di percorso di cui sopra sono destinati solo a scopo esplicativo.
+   >[!IMPORTANT]
+   >
+   >Il percorso di esempio sopra è ipotetico e solo a scopo di spiegazione.
 
-   ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
+1. Sotto la **[!UICONTROL URI di reindirizzamento autorizzati]** selezionare ADD URI.
 
-1. Sotto la **[!UICONTROL URI di reindirizzamento autorizzati]** intestazione, nel campo di testo, immettere il seguente percorso, sostituendo il proprio dominio e il proprio numero di porta nel percorso, quindi premere **[!UICONTROL Invio]** per aggiungere il percorso all’elenco:
+1. In **[!UICONTROL URI]** campo di testo, immettere il seguente percorso, sostituendo il proprio dominio e il proprio numero di porta nel percorso, quindi premere **[!UICONTROL Invio]** per aggiungere il percorso all’elenco:
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    Esempio, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **Nota**: L’esempio di percorso sopra è destinato solo a scopo di spiegazione.
+   >[!IMPORTANT]
+   >
+   >Il percorso di esempio sopra è ipotetico e solo a scopo di spiegazione.
 
-1. Seleziona **[!UICONTROL Crea ID client OAuth]**.
-1. Nella pagina **[!UICONTROL Add credentials to your project (Aggiungi credenziali al progetto)]**, al passaggio 3, vai all’intestazione **[!UICONTROL Set up the OAuth 2.0 consent screen (Imposta la schermata di autorizzazione OAuth 2.0)]** e seleziona l’indirizzo e-mail di Gmail che è in uso.
+1. Vicino al fondo del **[!UICONTROL Crea ID client OAuth]** pagina, seleziona **[!UICONTROL Crea]**.
 
-   ![6_5_googleaccount-apis-createcredentials-consenscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
+1. Sulla **[!UICONTROL Client OAuth creato]** effettuare le seguenti operazioni:
 
-1. Sotto la **[!UICONTROL Nome del prodotto visualizzato agli utenti]** nel campo di testo, immetti ciò che desideri visualizzare nella schermata di consenso.
+   * (Facoltativo) Copia il tuo ID client e il tuo segreto client e salva.
+   * Seleziona **[!UICONTROL SCARICA JSON]**, quindi salva il file JSON.
 
-   Quando effettuano l’autenticazione in YouTube, l’amministratore di Experience Manager visualizza la schermata di consenso. Experience Manager contatta YouTube per l&#39;autorizzazione.
+   È necessario scaricare questo file JSON quando si configura YouTube in Adobe Experience Manager in un secondo momento.
 
-1. Seleziona **[!UICONTROL Continua]**.
-1. Nella pagina Add credentials to your project (Aggiungi credenziali al progetto) , al passaggio 4, sotto la sezione **[!UICONTROL Scarica le credenziali]** intestazione, selezionare **[!UICONTROL Scarica]**.
+   ![6_5_googleaccount-apis-oauthclientcreated](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
-   ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
+1. Sulla **[!UICONTROL Client OAuth creato]** finestra di dialogo, seleziona **[!UICONTROL OK]**.
 
-1. Salva il `client_id.json` file.
-
-   È necessario scaricare questo file json quando si configura YouTube in Adobe Experience Manager in un secondo momento.
-
-1. Seleziona **[!UICONTROL Fine]**.
-
-   Esci dal tuo account Google. Ora crea un canale YouTube.
+1. Esci dal tuo account Google. Ora crea un canale YouTube.
 
 ### Creare un canale YouTube {#creating-a-youtube-channel}
 
@@ -709,7 +708,7 @@ Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà nec
    * (Facoltativo) Trascina il componente con etichetta **[!UICONTROL Intestazione sezione]** a sinistra e rilasciarla nell’area del modulo.
    * (Facoltativo) Seleziona **[!UICONTROL Etichetta campo]** per selezionare il componente.
    * (Facoltativo) Sul lato destro della pagina, sotto la scheda Impostazioni, nel campo di testo Etichetta campo, immetti . `YouTube Publishing`.
-   * Seleziona la **[!UICONTROL Crea modulo]** , quindi trascina il componente etichettato **[!UICONTROL Testo con più valori]** e rilasciarlo sotto il **[!UICONTROL Pubblicazione YouTube]** intestazione creata.
+   * Select the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Multi Value Text]** and drop it below the **[!UICONTROL YouTube Publishing]** heading that you created.
 
    * Per selezionare il componente, seleziona **[!UICONTROL Etichetta campo]**.
    * Sul lato destro della pagina, nella scheda Impostazioni , incolla i valori di Pubblicazione YouTube (Valore etichetta campo e Mappa su valore proprietà) copiati in precedenza, nei rispettivi campi del modulo. Incolla il valore di Scelte nel campo Valore predefinito .
@@ -803,7 +802,7 @@ Vedi [Monitorare la codifica video e lo stato di pubblicazione di YouTube](#moni
 
 **Per annullare la pubblicazione dei video e rimuoverli da YouTube:**
 
-1. Passa alle risorse video da cui desideri annullare la pubblicazione dal canale YouTube.
+1. Navigate to the video assets that you want to unpublish from your YouTube channel.
 1. In una modalità di selezione delle risorse, seleziona una o più risorse video pubblicate.
 1. Sulla barra degli strumenti, seleziona **[!UICONTROL Gestisci pubblicazione]**. Se necessario, seleziona l’icona dei tre punti (`. . .`) sulla barra degli strumenti da visualizzare **[!UICONTROL Gestisci pubblicazione]**.
 1. Nella pagina Gestisci pubblicazione, seleziona **[!UICONTROL Annulla pubblicazione]**.
@@ -820,7 +819,7 @@ Puoi monitorare l’avanzamento, inclusa la codifica non riuscita/pubblicazione 
 
 1. Visualizza l’avanzamento della codifica video nella cartella delle risorse:
 
-   * Nella vista a schede, l’avanzamento della codifica video viene visualizzato per percentuale sulla risorsa. In caso di errore, queste informazioni vengono visualizzate anche sulla risorsa.
+   * In card view, video encoding progress displays on the asset by percent. If there is an error, this information also displays on the asset.
 
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
@@ -944,7 +943,7 @@ I rapporti video mostrano diverse metriche aggregate in un determinato periodo p
 
 Un tavolo di tutti *pubblicato* i video sono elencati anche per consentire di tenere traccia dei video più visualizzati sul sito web in base al numero di avvii video totali.
 
-Quando selezioni un nome video nell’elenco, questo ti mostra il rapporto di fidelizzazione (a discesa) del video sotto forma di grafico a linee. Il grafico mostra il numero di visualizzazioni per un dato momento di tempo durante la riproduzione del video. Quando si riproduce il video, la barra verticale traccia in sincronizzazione con l&#39;indicatore del tempo nel lettore. Le perdite nei dati del grafico a linee indicano dove il pubblico si allontana dal disinteresse.
+When you select a video name in the list, it shows you the video’s audience retention (drop-off) report in the form of a line chart. The chart displays the number of views for any given moment of time during video playback. When you play the video, the vertical bar tracks in synchronization with the time indicator in the player. Le perdite nei dati del grafico a linee indicano dove il pubblico si allontana dal disinteresse.
 
 Se il video è stato codificato al di fuori di Adobe Experience Manager Dynamic Media, il grafico a discesa di conservazione del pubblico e i dati in percentuale di riproduzione nella tabella non sono disponibili.
 
@@ -960,7 +959,7 @@ Affinché i rapporti video funzionino correttamente, viene automaticamente creat
 1. Nell’angolo in alto a sinistra dell’Experience Manager, seleziona il logo dell’Experience Manager, quindi nella barra a sinistra individua **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti video]**.
 1. Nella pagina Rapporti video , effettua una delle seguenti operazioni:
 
-   * Nell’angolo in alto a destra, seleziona la **[!UICONTROL Aggiorna rapporto video]** icona.
+   * Near the upper-right corner, select the **[!UICONTROL Refresh Video Report]** icon.
 Utilizzare Aggiorna solo se la data di fine del rapporto è il giorno corrente. Questa funzione ti assicura di visualizzare il tracciamento video che si è verificato dall’ultima volta che hai eseguito il rapporto.
 
    * Nell’angolo in alto a destra, seleziona la **[!UICONTROL Selettore data]** icona.
@@ -1102,7 +1101,7 @@ Il lettore video utilizzato deve supportare l&#39;uso di marcatori capitolo. I l
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-È possibile creare un elenco di capitoli per il video nello stesso modo in cui si creano le didascalie. In altre parole, si crea un file WebVTT. Tuttavia, questo file deve essere separato da qualsiasi file di didascalia WebVTT. Non è possibile combinare didascalie e capitoli in un unico file WebVTT.
+È possibile creare un elenco di capitoli per il video nello stesso modo in cui si creano le didascalie. In altre parole, si crea un file WebVTT. Tuttavia, questo file deve essere separato da qualsiasi file di didascalia WebVTT. You cannot combine captions and chapters into one WebVTT file.
 
 È possibile utilizzare l&#39;esempio seguente come esempio del formato utilizzato per creare un file WebVTT con spostamento dei capitoli:
 
