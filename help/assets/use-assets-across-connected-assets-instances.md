@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
+source-git-commit: 97e704dae32baa52f3e9490aa5dcab8f5081fd1a
 workflow-type: tm+mt
-source-wordcount: '3856'
+source-wordcount: '3796'
 ht-degree: 19%
 
 ---
@@ -148,11 +148,9 @@ Per utilizzare [!DNL Dynamic Media] con risorse collegate:
 >
 >Con risorse collegate e [!DNL Dynamic Media] configurazione, non puoi utilizzare [!DNL Dynamic Media] per elaborare le risorse locali disponibili nel [!DNL Sites] distribuzione.
 
-## Configura una connessione tra [!DNL Sites] e [!DNL Dynamic Media] distribuzioni {#sites-dynamic-media-connected-assets}
+## Configurazione [!DNL Dynamic Media] {#configure-dynamic-media}
 
-È possibile configurare una connessione tra [!DNL Sites] distribuzione e [!DNL Dynamic Media] distribuzione che consente agli autori di pagine web di utilizzare [!DNL Dynamic Media] immagini nelle loro pagine web. Durante l’authoring delle pagine web, l’utilizzo di risorse remote e remote [!DNL Dynamic Media] Le distribuzioni rimangono invariate. Ciò ti consente di sfruttare [!DNL Dynamic Media] tramite la funzione Risorse collegate , ad esempio i predefiniti per ritaglio avanzato e immagini.
-
-Per configurare la connessione, effettua le seguenti operazioni:
+Per configurare [!DNL Dynamic Media] su [!DNL Assets] e [!DNL Sites] distribuzioni:
 
 1. Crea la configurazione delle risorse collegate come descritto in precedenza, tranne per la configurazione della funzionalità, seleziona **[!UICONTROL Recupero del rendering originale per le risorse collegate a Dynamic Media]** opzione .
 
