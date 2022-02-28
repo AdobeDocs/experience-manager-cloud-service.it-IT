@@ -5,12 +5,13 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
+source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3856'
 ht-degree: 19%
 
 ---
+
 
 # Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -132,22 +133,24 @@ Puoi controllare la connettività tra i [!DNL Sites] implementazioni e [!DNL Ass
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
+## Utilizzare le risorse Dynamic Media {#dynamic-media-assets}
+
+
+Con Risorse collegate puoi utilizzare le risorse di immagini elaborate da [!DNL Dynamic Media] dall’implementazione remota di DAM nelle pagine Sites e sfrutta le funzionalità di Dynamic Media, ad esempio ritaglio avanzato e predefiniti immagine.
+
+Per utilizzare [!DNL Dynamic Media] con risorse collegate:
+
+1. Configura [!DNL Dynamic Media] nella distribuzione remota di DAM con modalità di sincronizzazione abilitata.
+1. Configura [Risorse collegate](#configure-a-connection-between-sites-and-assets-deployments).
+1. Configura [!DNL Dynamic Media] nell’istanza Sites con lo stesso nome società configurato nel DAM remoto. L’implementazione Sites deve disporre dell’accesso in sola lettura all’account Dynamic Media per lavorare con le risorse connesse. Pertanto, assicurati di disabilitare la modalità di sincronizzazione nella configurazione di Dynamic Media sull’istanza di Sites.
+
+>[!CAUTION]
+>
+>Con risorse collegate e [!DNL Dynamic Media] configurazione, non puoi utilizzare [!DNL Dynamic Media] per elaborare le risorse locali disponibili nel [!DNL Sites] distribuzione.
+
 ## Configura una connessione tra [!DNL Sites] e [!DNL Dynamic Media] distribuzioni {#sites-dynamic-media-connected-assets}
 
 È possibile configurare una connessione tra [!DNL Sites] distribuzione e [!DNL Dynamic Media] distribuzione che consente agli autori di pagine web di utilizzare [!DNL Dynamic Media] immagini nelle loro pagine web. Durante l’authoring delle pagine web, l’utilizzo di risorse remote e remote [!DNL Dynamic Media] Le distribuzioni rimangono invariate. Ciò ti consente di sfruttare [!DNL Dynamic Media] tramite la funzione Risorse collegate , ad esempio i predefiniti per ritaglio avanzato e immagini.
-
-Con Risorse collegate puoi utilizzare [!DNL Dynamic Media] per elaborare le risorse immagini nell’implementazione remota di DAM.
-
-Per utilizzare [!DNL Dynamic Media] immagini da una distribuzione DAM remota su un [!DNL Sites] distribuzione:
-
-1. Configura [!DNL Dynamic Media] nella distribuzione remota di DAM con le seguenti opzioni:
-   * Modalità di sincronizzazione: Abilitato per impostazione predefinita
-   * Pubblicare le risorse: Sincronizza tutto il contenuto
-1. On [!DNL Sites] distribuzione:
-   1. Configura [!DNL Dynamic Media] utilizzando la stessa società del passaggio 1 (modalità di sincronizzazione disabilitata).
-   1. Configurare le risorse collegate.
-
-   [!DNL Dynamic Media] le risorse sono disponibili su [!DNL Sites] distribuzione in modalità di sola lettura. Di conseguenza, non puoi utilizzare [!DNL Dynamic Media] per elaborare le risorse in [!DNL Sites] distribuzione.
 
 Per configurare la connessione, effettua le seguenti operazioni:
 
