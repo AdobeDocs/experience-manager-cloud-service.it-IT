@@ -4,9 +4,9 @@ description: Scopri come utilizzare i video in Dynamic Media, ad esempio best pr
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 22588f102f5b388d6da3a8aae124c30288ecb0a5
+source-git-commit: e1f0b04dde2eb5a3392a0b9befbc56135b06cff4
 workflow-type: tm+mt
-source-wordcount: '9346'
+source-wordcount: '9361'
 ht-degree: 4%
 
 ---
@@ -433,7 +433,7 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
 
 >[!NOTE]
 >
->I seguenti passaggi erano accurati al momento di questa scrittura. Tuttavia, Google aggiorna periodicamente i propri siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
+>I seguenti passaggi erano accurati al momento della scrittura. Tuttavia, Google aggiorna periodicamente le proprie pagine web cloud senza preavviso. Di conseguenza, alcune opzioni di configurazione possono essere denominate in modo leggermente diverso nell’interfaccia utente di Google rispetto al nome utilizzato nei passaggi.
 
 **Per configurare le impostazioni Google Cloud:**
 
@@ -447,7 +447,7 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
 
    Se necessario, **[!UICONTROL Accedere]** utilizzo delle credenziali del tuo account Google per visualizzare **[!UICONTROL Console]** opzione .
 
-1. Nella pagina Dashboard, a destra di **[!UICONTROL Piattaforma Google Cloud]**, seleziona l’elenco a discesa Progetto per aprire la **[!UICONTROL Selezionare un progetto]** finestra di dialogo.
+1. Nella pagina Dashboard, a destra di **[!UICONTROL Piattaforma Google Cloud]**, seleziona **[!UICONTROL Progetto]** elenco a discesa per aprire **[!UICONTROL Selezionare un progetto]** finestra di dialogo.
 1. In **[!UICONTROL Selezionare un progetto]** finestra di dialogo, seleziona **[!UICONTROL Nuovo progetto]**.
 1. In **[!UICONTROL Nuovo progetto]** nella finestra di dialogo **[!UICONTROL Nome del progetto]** digitare il nome del nuovo progetto.
 
@@ -468,9 +468,7 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
    ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
 1. Per utilizzare l’API, sono necessarie le credenziali. Se necessario, sul lato sinistro della pagina API e servizi , seleziona **[!UICONTROL Credenziali]**.
-
 1. Nella pagina Credenziali, nella parte superiore, selezionare **[!UICONTROL CREDENZIALI]**, quindi seleziona **[!UICONTROL ID client OAuth]**.
-
 1. Sulla **[!UICONTROL Crea ID client OAuth]** nella pagina **[!UICONTROL Tipo di applicazione]** elenco a discesa, seleziona **[!UICONTROL Applicazione Web]**.
 
    ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
@@ -495,7 +493,6 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
    >Il percorso di esempio sopra è ipotetico e solo a scopo di spiegazione.
 
 1. Sotto la **[!UICONTROL URI di reindirizzamento autorizzati]** selezionare ADD URI.
-
 1. In **[!UICONTROL URI]** campo di testo, immettere il seguente percorso, sostituendo il proprio dominio e il proprio numero di porta nel percorso, quindi premere **[!UICONTROL Invio]** per aggiungere il percorso all’elenco:
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
@@ -507,7 +504,6 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
    >Il percorso di esempio sopra è ipotetico e solo a scopo di spiegazione.
 
 1. Vicino al fondo del **[!UICONTROL Crea ID client OAuth]** pagina, seleziona **[!UICONTROL Crea]**.
-
 1. Sulla **[!UICONTROL Client OAuth creato]** effettuare le seguenti operazioni:
 
    * (Facoltativo) Copia il tuo ID client e il tuo segreto client e salva.
@@ -518,7 +514,6 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
    ![6_5_googleaccount-apis-oauthclientcreated](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
 1. Sulla **[!UICONTROL Client OAuth creato]** finestra di dialogo, seleziona **[!UICONTROL OK]**.
-
 1. Esci dal tuo account Google. Ora crea un canale YouTube.
 
 ### Creare un canale YouTube {#creating-a-youtube-channel}
