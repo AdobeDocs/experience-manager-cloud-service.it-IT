@@ -4,9 +4,9 @@ description: Scopri come utilizzare i video in Dynamic Media, ad esempio best pr
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: efdb8304197a76e66e71d6f7b5c510216ac5ff7e
+source-git-commit: 6ab9ec4efdefd6fb850fd59966b2424e6a19a9ab
 workflow-type: tm+mt
-source-wordcount: '9368'
+source-wordcount: '9349'
 ht-degree: 4%
 
 ---
@@ -425,7 +425,7 @@ La pubblicazione delle risorse video sui server YouTube comporta il completament
 
 ### Configurare le impostazioni Google Cloud {#configuring-google-cloud-settings}
 
-Per pubblicare su YouTube, è necessario un account Google. Se disponi di un account GMAIL, disponi già di un account Google; se non disponi di un account Google, puoi facilmente crearne uno. È necessario l’account perché sono necessarie le credenziali per pubblicare le risorse video in YouTube. Se hai già creato un account, salta questa attività e procedi direttamente a [Creare un canale YouTube](#creating-a-youtube-channel).
+Per pubblicare su YouTube, è necessario un account Google. Se disponi di un account GMAIL, disponi già di un account Google; se non disponi di un account Google, puoi facilmente crearne uno. È necessario l’account perché sono necessarie le credenziali per pubblicare le risorse video in YouTube. <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
 
 L’account utilizzato con Google Cloud e l’account Google utilizzato per YouTube non deve essere lo stesso.
 
