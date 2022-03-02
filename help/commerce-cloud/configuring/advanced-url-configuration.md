@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
+source-git-commit: af07bce8618c7b13b4dc5e287c7218316029f565
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 17%
@@ -177,7 +177,7 @@ Le pagine di prodotto specifiche vengono selezionate in base allo SKU o alla cat
 >
 > La selezione di specifiche pagine di prodotto per categoria richiede [Componenti core CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) o più recente.
 
-### Collegamento profondo {#specific-pages-deep-linking}
+### Collegamenti profondi {#specific-pages-deep-linking}
 
 La `UrlProvider` è preconfigurato per generare collegamenti profondi a specifiche pagine di prodotti e categorie nelle istanze del livello di authoring. È utile per gli editor che navigano su un sito utilizzando la modalità Anteprima, accedono a una pagina di prodotto o categoria specifica e tornano alla modalità Modifica per modificare la pagina.
 
