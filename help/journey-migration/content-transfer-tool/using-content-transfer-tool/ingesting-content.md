@@ -1,10 +1,10 @@
 ---
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+source-git-commit: 80e148aa5533963bcd6354e2117a4619bcf5b27f
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 28%
+source-wordcount: '527'
+ht-degree: 31%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 28%
 
 Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 >[!NOTE]
->Se Amazon S3 o Azure Data Store viene utilizzato come tipo di archivio dati, puoi eseguire il passaggio facoltativo di pre-copia per accelerare in modo significativo la fase di acquisizione. Fai riferimento a [Acquisizione con AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) per ulteriori dettagli.
+>Puoi eseguire il passaggio di pre-copia opzionale per velocizzare in modo significativo la fase di acquisizione. Fai riferimento a [Acquisizione con AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) per ulteriori dettagli.
 
 1. Seleziona un set di migrazione da **Trasferimento dei contenuti** e fai clic su **Acquisisci** per iniziare l&#39;acquisizione.
 
