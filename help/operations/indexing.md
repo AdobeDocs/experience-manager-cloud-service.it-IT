@@ -2,9 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
+source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2366'
 ht-degree: 1%
 
 ---
@@ -36,8 +36,9 @@ Di seguito è riportato un elenco delle modifiche principali rispetto a AEM 6.5 
 1. I clienti possono vedere se il processo di indicizzazione è completo nella pagina di compilazione di Cloud Manager e riceveranno una notifica quando la nuova versione è pronta per il traffico.
 
 1. Limiti:
-* Attualmente, la gestione degli indici su AEM as a Cloud Service è supportata solo per gli indici di tipo lucene.
+* Attualmente, la gestione degli indici su AEM as a Cloud Service è supportata solo per gli indici di tipo `lucene`.
 * Sono supportati solo gli analizzatori standard (ovvero quelli forniti con il prodotto). Gli analizzatori personalizzati non sono supportati.
+* Internamente, altri indici possono essere configurati e utilizzati per le query. Ad esempio, le query scritte rispetto al `damAssetLucene` index potrebbe, su Skyline, infatti, essere eseguito contro una versione Elasticsearch di questo indice. Questa differenza generalmente non è visibile all&#39;applicazione e all&#39;utente, tuttavia alcuni strumenti come `explain` report di un indice diverso. Per le differenze tra gli indici Lucene e gli indici Elastic, vedi [la documentazione elastica in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non devono e non possono configurare direttamente gli indici di Elasticsearch.
 
 ## Guida all’uso {#how-to-use}
 
@@ -129,7 +130,9 @@ Durante lo sviluppo o quando si utilizzano installazioni locali, gli indici poss
 
 ### Gestione dell&#39;indice con implementazione Blue-Green {#index-management-with-blue-green-deployment}
 
-Con le implementazioni blu-verde, non si verificano tempi di inattività. Tuttavia, per la gestione degli indici, ciò richiede che gli indici siano utilizzati solo da alcune versioni dell&#39;applicazione. Ad esempio, quando si aggiunge un indice nella versione 2 dell&#39;applicazione, non è ancora necessario utilizzarlo nella versione 1 dell&#39;applicazione. Il contrario si verifica quando un indice viene rimosso: un indice rimosso nella versione 2 è ancora necessario nella versione 1. Quando si modifica una definizione di indice, si desidera che la vecchia versione dell&#39;indice venga utilizzata solo per la versione 1 e che la nuova versione dell&#39;indice venga utilizzata solo per la versione 2.
+Con le implementazioni blu-verde, non si verificano tempi di inattività. Durante un aggiornamento, per un certo periodo di tempo, sia la vecchia versione (ad esempio, la versione 1) dell’applicazione, sia la nuova versione (versione 2), vengono eseguite contemporaneamente sullo stesso archivio. Se la versione 1 richiede la disponibilità di un determinato indice, questo non deve essere rimosso nella versione 2: l&#39;indice deve essere rimosso in un secondo momento, ad esempio nella versione 3, nel quale è garantito che la versione 1 dell&#39;applicazione non è più in esecuzione. Inoltre, le applicazioni devono essere scritte in modo che la versione 1 funzioni bene, anche se la versione 2 è in esecuzione, e se sono disponibili indici della versione 2.
+
+Al termine dell&#39;aggiornamento alla nuova versione, i vecchi indici possono essere raccolti dal sistema. I vecchi indici potrebbero restare ancora per un po&#39; di tempo, al fine di velocizzare i rollback (se dovesse essere necessario un rollback).
 
 La tabella seguente mostra cinque definizioni di indice: index `cqPageLucene` viene utilizzato in entrambe le versioni mentre index `damAssetLucene-custom-1` viene utilizzato solo nella versione 2.
 
@@ -160,7 +163,7 @@ Una volta che Adobe cambia un indice predefinito come &quot;damAssetLucene&quot;
 
 ### Limitazioni attuali {#current-limitations}
 
-La gestione degli indici è attualmente supportata solo per gli indici di tipo `lucene`.
+La gestione degli indici è attualmente supportata solo per gli indici di tipo `lucene`. Internamente, altri indici possono essere configurati e utilizzati per le query, ad esempio indici elastici.
 
 ### Aggiunta di un indice {#adding-an-index}
 
