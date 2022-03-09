@@ -1,17 +1,17 @@
 ---
 title: Configurazione headless
-description: Con questa guida rapida, scopri le nozioni di base delle potenti funzionalità headless di AEM as a Cloud Service come Modelli di contenuto, Frammenti di contenuto e API GraphQL.
+description: Questa guida rapida ti permette di scoprire informazioni fondamentali sulle potenti funzionalità headless di AEM as a Cloud Service, tra cui modelli di contenuto, frammenti di contenuto e API di GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
 # Configurazione headless {#introduction}
 
-Di seguito è riportato un percorso semplice per creare, gestire e distribuire esperienze utilizzando AEM as a Cloud Service in cinque passaggi per gli utenti che hanno già familiarità con la tecnologia AEM e headless. Ogni guida si basa sul precedente, quindi si consiglia di esplorarle in modo approfondito e in ordine.
+Di seguito è riportato un semplice percorso in cinque passaggi per creare, gestire e distribuire esperienze utilizzando AEM as a Cloud Service, destinato agli utenti che hanno già familiarità con la tecnologia AEM e headless. Ogni guida si basa sulla precedente, pertanto si consiglia di esaminarla in modo approfondito e coerente.
 
 1. [Creazione di una configurazione ](create-configuration.md)
 1. [Creazione di un modello di frammento di contenuto](create-content-model.md)
@@ -23,24 +23,24 @@ Di seguito è riportato un percorso semplice per creare, gestire e distribuire e
 >
 >Questa guida introduttiva presuppone la conoscenza delle tecnologie AEM e headless.
 >
->Se non sei nuovo a AEM o headless, consulta i nostri Percorsi di documentazione headless per un’introduzione end-to-end a headless e come AEM supporta tale funzionalità.
+>Se non conosci le tecnologie AEM o headless, consulta i nostri Percorsi di documentazione headless per un’introduzione completa alla tecnologia headless e informazioni su come AEM supporta tale funzionalità.
 >
 >* [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md)
->* [Percorso di architetti di contenuti headless](/help/journey-headless/architect/overview.md)
+>* [Percorso Architect di contenuti headless](/help/journey-headless/architect/overview.md)
 >* [Percorso di authoring di contenuti headless](/help/journey-headless/author/overview.md)
 >* [Percorso di traduzione headless](/help/journey-headless/translation/overview.md).
 
 
 ## Pubblico {#audience}
 
-I compiti descritti sono necessari per una dimostrazione completa e di base delle funzionalità headless AEM. Chiunque abbia accesso come amministratore a un’istanza di test AEM può seguire queste guide per comprendere la consegna headless in AEM, anche se qualcuno con esperienza di sviluppo è ideale.
+Per una dimostrazione di base completa delle funzionalità headless di AEM, sono necessarie le attività specificate. Chiunque abbia accesso come amministratore a un’istanza di prova di AEM può seguire queste istruzioni per comprendere la distribuzione headless in AEM. Tuttavia, è consigliabile avere esperienza come sviluppatore.
 
-Tuttavia, in una situazione di produzione, le attività saranno eseguite da diversi utenti tipo in un numero variabile di volte. Esempio:
+In situazioni di produzione, le attività sono eseguite da diversi utenti per un numero variabile di volte. Ad esempio:
 
-* **Amministratori** deve impostare la configurazione iniziale e la struttura delle cartelle per il contenuto normalmente una sola volta o sporadicamente.
-* **Architetti dell&#39;informazione** in genere aggiungeranno nuovi modelli man mano che le esigenze dell&#39;organizzazione evolvono.
-* **Autori dei contenuti** creerà continuamente nuovi contenuti come Frammenti di contenuto in base ai modelli definiti dagli architetti.
+* Gli **amministratori** devono impostare la configurazione iniziale e la struttura delle cartelle per il contenuto, di solito una sola volta o occasionalmente.
+* Gli **architetti dell’informazione** in genere aggiungono nuovi modelli man mano che le esigenze dell’organizzazione aumentano.
+* Gli **autori di contenuti** creano in modo continuativo nuovi contenuti, come frammenti di contenuto, in base ai modelli definiti dagli architetti.
 
 ## Passaggio successivo {#next-step}
 
-Pronti per saperne di più? Quindi iniziare leggendo la prima parte della Configurazione headless: [Creazione di una configurazione.](create-configuration.md)
+Vuoi saperne di più? Inizia consultando la prima parte della Configurazione headless: [Creazione di una configurazione.](create-configuration.md)
