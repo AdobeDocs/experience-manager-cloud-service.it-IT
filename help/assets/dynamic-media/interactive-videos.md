@@ -4,7 +4,7 @@ description: Scopri come lavorare con video interattivi e video acquistabili in 
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '5966'
 ht-degree: 3%
@@ -101,7 +101,6 @@ Se utilizzi un WCM di terze parti (Web Content Manager), devi integrare il nuovo
 >
 >* Per aggiungere interattività al video, attiva le visualizzazioni rapide.
 >* La tua implementazione di Experience Manager *not* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in Experience Manager da qualsiasi soluzione eCommerce come IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
-
 >
 >Se l’implementazione di Experience Manager utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
 
@@ -541,7 +540,7 @@ Utilizzo del sito web demo come esempio:
 
 Il codice di incorporamento video è standard:
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7video_div.s7videoviewer{
    width:100%;
@@ -602,7 +601,7 @@ Inoltre, il visualizzatore video interattivo supporta la modalità di funzioname
 
 Il codice di incorporamento restituito da Experience Manager dispone già di un gestore eventi ready-to-use. Viene commentato come visto nel seguente frammento di codice evidenziato:
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -686,13 +685,13 @@ L&#39;ultimo passaggio per attivare l&#39;URL Quickview e attivare il pannello Q
 
 Puoi vedere come questi passaggi vengono applicati al sito web dimostrativo per integrare completamente un video interattivo con il codice Quickview. In precedenza, in questo argomento, la struttura dell’URL di visualizzazione rapida era identificata come segue:
 
-```xml
+```xml {.line-numbers}
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
 È facile ricostruire questo URL all’interno del `quickViewActivate` handler che utilizza `categoryId` e `sku` campi disponibili nel `inData` oggetto passato al gestore tramite il codice del visualizzatore, come illustrato di seguito:
 
-```xml
+```js {.line-numbers}
 var sku=inData.sku;
 var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
@@ -700,13 +699,13 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 
 Il sito Web demo sta attivando la finestra di dialogo Quickview utilizzando un semplice `loadQuickView()` chiamata della funzione. Questa funzione accetta un solo argomento, ovvero l’URL dei dati Quickview. Quindi l&#39;ultimo passo per integrare il video interattivo è quello di aggiungere la seguente riga di codice al `quickViewActivate` handler:
 
-```xml
+```xml {.line-numbers}
 loadQuickView(quickViewUrl);
 ```
 
 Infine, accertati che la finestra di dialogo Quickview sia associata all’elemento contenitore del visualizzatore. Il codice di incorporamento predefinito fornisce alcuni passaggi di esempio per ottenere questa funzionalità. Per ottenere un riferimento all’elemento contenitore del visualizzatore, puoi utilizzare le seguenti righe di codice:
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 ```
@@ -717,7 +716,7 @@ I passaggi per individuare effettivamente l’elemento della finestra di dialogo
 
 Per il sito Web di esempio, la finestra di dialogo modale Quickview viene implementata come `DIV` con l’ID quickview-modale collegato direttamente al documento `BODY`. Pertanto, il codice per spostare tale finestra di dialogo nel contenitore del visualizzatore è altrettanto semplice:
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 inner_container.appendChild(document.getElementById("quickview-modal"));
@@ -725,7 +724,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 Il codice sorgente completo è il seguente:
 
-```xml
+```javascript {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -772,4 +771,4 @@ Il sito web demo finale con il video interattivo completamente integrato viene v
 
 ## Crea Windows® a comparsa personalizzato utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-Vedi [Crea Windows® a comparsa personalizzato utilizzando Quickview](/help/assets/dynamic-media/custom-pop-ups.md). —>
+Vedi [Crea Windows® a comparsa personalizzato utilizzando Quickview](/help/assets/dynamic-media/custom-pop-ups.md).

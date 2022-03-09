@@ -4,7 +4,7 @@ description: Scopri come utilizzare i video in Dynamic Media, ad esempio best pr
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 6ab9ec4efdefd6fb850fd59966b2424e6a19a9ab
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '9349'
 ht-degree: 4%
@@ -1099,7 +1099,7 @@ Il lettore video utilizzato deve supportare l&#39;uso di marcatori capitolo. I l
 
 ### File WebVTT con navigazione dei capitoli video {#webvtt-file-with-video-chapter-navigation}
 
-```xml
+```xml {.line-numbers}
 WEBVTT
 Chapter 1
 00:00.000 --> 01:04.364
