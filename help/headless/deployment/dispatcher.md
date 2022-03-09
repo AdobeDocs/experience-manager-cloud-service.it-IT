@@ -3,22 +3,22 @@ title: Configurazione del Dispatcher con AEM Headless
 description: Dispatcher è un livello di memorizzazione in cache e sicurezza davanti agli ambienti di pubblicazione Adobe Experience Manager. Diverse configurazioni vengono utilizzate per aprire gli endpoint GraphQL alle applicazioni headless.
 feature: Dispatcher, GraphQL API
 source-git-commit: 0cc131209f497241949f8da6e8144dfcaffe7e6e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '233'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 
 # Configurazione del Dispatcher con AEM Headless
 
-La [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) è un livello di caching e sicurezza davanti agli ambienti di pubblicazione Adobe Experience Manager. Per impostazione predefinita, sono incluse diverse configurazioni per aprire gli endpoint GraphQL alle applicazioni headless.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) è un livello di caching e sicurezza davanti agli ambienti di pubblicazione Adobe Experience Manager. Per impostazione predefinita, sono incluse diverse configurazioni per aprire gli endpoint GraphQL alle applicazioni headless.
 
 >[!NOTE]
 >
->Per la documentazione dettagliata sul Dispatcher consulta la sezione [Guida a Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+>Per la documentazione dettagliata sul Dispatcher consulta la sezione [Guida a Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
 
-Come parte di un progetto AEM è incluso un modulo dispatcher che contiene configurazioni per il dispatcher. Progetti generati di recente dal [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype) include automaticamente [filtri](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?#defining-a-filter) che abilita gli endpoint GraphQL.
+Come parte di un progetto AEM è incluso un modulo dispatcher che contiene configurazioni per il dispatcher. Progetti generati di recente da [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype) include automaticamente [filtri](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#defining-a-filter) che abilita gli endpoint GraphQL.
 
 ## Endpoint GraphQL
 
@@ -28,11 +28,11 @@ Come parte dei filtri predefiniti, [Endpoint GraphQL](/help/headless/graphql-api
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-La `*` il carattere jolly apre più endpoint sull&#39;istanza AEM. La query tramite un endpoint GraphQL verrà eseguita utilizzando `POST` e la risposta **not** essere memorizzati nella cache.
+Il carattere jolly `*` apre più endpoint sull’istanza AEM. La query tramite un endpoint GraphQL verrà eseguita utilizzando `POST` e la risposta **non** sarà memorizzata nella cache.
 
 ## Query persistenti GraphQL
 
-La richiesta di query persistenti viene eseguita su un endpoint diverso. Come parte della configurazione del filtro predefinita, l’URL di [Query persistenti](/help/headless/graphql-api/persisted-queries.md) sono aperti con la seguente regola:
+La richiesta di query persistenti viene eseguita su un endpoint diverso. Come parte della configurazione del filtro predefinita, l’URL di [Query persistenti](/help/headless/graphql-api/persisted-queries.md) è aperto con la seguente regola:
 
 ```
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
