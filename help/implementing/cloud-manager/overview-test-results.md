@@ -1,39 +1,39 @@
 ---
-title: Panoramica sui risultati del test - Cloud Services
-description: Panoramica sui risultati del test - Cloud Services
-translation-type: tm+mt
-source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
+title: Panoramica dei test di Cloud Manager
+description: Ottieni una panoramica dei tre tipi di test eseguiti automaticamente da Cloud Manager per garantire la qualità del codice personalizzato.
+exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 0%
+source-wordcount: '154'
+ht-degree: 5%
 
 ---
 
 
-# Panoramica {#overview}
+# Panoramica dei test di Cloud Manager {#overview}
 
-Sono disponibili tre grandi categorie di test supportati da Cloud Manager per pipeline di Cloud Services:
+Cloud Manager supporta tre categorie di test per le pipeline dei Cloud Services.
 
-1. [Verifica della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md)
+1. [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md)
 
-   Il test della qualità del codice valuta la qualità del codice dell’applicazione. La pipeline Code-Quality viene eseguita immediatamente dopo la fase di creazione in tutti i gasdotti non di produzione e produzione.
-
-   Le [Regole di qualità del codice personalizzate](/help/implementing/cloud-manager/custom-code-quality-rules.md) eseguite da Cloud Manager vengono create in base alle best practice di AEM Engineering.
+   * Il test della qualità del codice valuta la qualità del codice dell’applicazione.
+   * La pipeline di qualità del codice viene eseguita immediatamente dopo il passaggio di compilazione in tutte le pipeline non di produzione e di produzione.
+   * La [regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md) le esecuzioni di Cloud Manager vengono create in base alle best practice di AEM Engineering.
 
 1. [Test funzionale](/help/implementing/cloud-manager/functional-testing.md)
 
-   Il test funzionale fa parte della fase di test di una tubazione di produzione.
+   * Il test funzionale è una parte della fase di test della fase di una pipeline di produzione.
 
-1. [Verifica esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
+1. [Test di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   Il test di controllo dell&#39;esperienza è abilitato in tutte le pipeline di produzione di Cloud Manager e non può essere ignorato.
+   * Il test del controllo di audit di esperienza è abilitato in tutte le pipeline di produzione di Cloud Manager e non può essere ignorato.
 
 Questi test possono essere:
 
 * Scritto dal cliente
-*  scritto in Adobe
-* Open source, strumento
+* scritto in Adobe
+* Creato con strumenti open source
 
-   >[!NOTE]
-   > Sia i test scritti dal cliente che  test scritti dal Adobe vengono eseguiti in un&#39;infrastruttura containerizzata progettata per eseguire questi tipi di test.
-
+>[!NOTE]
+>
+> I test scritti dai clienti e i test scritti in Adobe vengono eseguiti in un&#39;infrastruttura containerizzata progettata per l&#39;esecuzione di tali test.

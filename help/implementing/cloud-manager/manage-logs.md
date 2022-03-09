@@ -1,61 +1,62 @@
 ---
-title: Gestire i registri - Cloud Service
-description: Gestire i registri - Cloud Service
+title: Accesso e gestione dei registri
+description: Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 14%
+source-wordcount: '272'
+ht-degree: 7%
 
 ---
 
+
 # Accesso e gestione dei registri {#manage-logs}
 
-Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato utilizzando la scheda **Ambienti** presente nella pagina **Panoramica** o nella pagina Dettagli ambiente .
+Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
+
+Puoi accedere a un elenco dei file di registro disponibili per l’ambiente selezionato utilizzando **Ambienti** scheda da **Panoramica** pagina o pagina Dettagli ambiente.
 
 ## Download dei registri {#download-logs}
 
-Segui i passaggi riportati di seguito per scaricare i registri.
+Segui questi passaggi per scaricare i registri.
 
-1. Passa alla scheda **Ambienti** dalla pagina **Panoramica** .
+1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione e il programma appropriati.
 
-1. Seleziona **Download Logs** dal **...Menu** .
+1. Passa a **Ambienti** scheda da **Panoramica** pagina.
 
-   ![](assets/download-logs1.png)
+1. Seleziona **Download dei registri** dal menu ellissi.
 
-   *Oppure*,
+   ![Voce di menu dei registri di download](assets/download-logs1.png)
 
-   Dalla pagina Dettagli ambiente :
+1. In **Download dei registri** seleziona la finestra di dialogo appropriata **Servizio** dal menu a discesa
 
-   ![](assets/download-logs.png)
+   ![Finestra di dialogo Download Logs (Registri di download)](assets/download-preview.png)
 
-   >[!NOTE]
-   >Indipendentemente da dove viene aperto, viene visualizzata la stessa finestra di dialogo e consente di scaricare un singolo file di log.
+1. Dopo aver selezionato il servizio, fai clic sull&#39;icona di download accanto al registro che desideri recuperare.
 
-1. Dal menu a discesa **Servizio**, seleziona le opzioni come **Anteprima** o **Anteprima Dispatcher**, quindi fai clic sull’icona di download.
+Puoi anche accedere ai tuoi registri da **Ambienti** pagina.
 
-   ![](assets/download-preview.png)
-
+![Registri dalla schermata Ambienti](assets/download-logs.png)
 
 ## Registri tramite API {#logs-through-api}
 
-Oltre a scaricare i registri tramite l’interfaccia utente, i registri saranno disponibili tramite l’API e l’interfaccia della riga di comando.
+Oltre a scaricare i registri tramite l’interfaccia utente, i registri sono disponibili tramite l’API e l’interfaccia della riga di comando.
 
-Ad esempio, per scaricare i file di registro per un ambiente specifico, il comando potrebbe essere simile a quello di
+Per scaricare i file di registro per un ambiente specifico, il comando sarà simile al seguente.
 
-```java
+```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Il seguente comando consente la coda dei log:
+È inoltre possibile visualizzare i registri tramite l’interfaccia della riga di comando.
 
-```java
+```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Per ottenere l’ID ambiente (in questo caso 1884) e le opzioni del servizio o del nome di registro disponibili puoi utilizzare:
+Per ottenere l&#39;ID ambiente (1884 in questo esempio) e le opzioni del servizio o del nome di registro disponibili, puoi utilizzare i seguenti comandi.
 
-```java
+```shell
 $ aio cloudmanager:list-environments
 Environment Id Name                     Type  Description                          
 1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
@@ -75,9 +76,6 @@ Environment Id Service    Name
 1884           dispatcher aemdispatcher
 1884           dispatcher httpdaccess
 ```
-
->[!NOTE]
->Mentre i **Log Downloads** (Download dei registri) saranno disponibili sia dall’interfaccia utente che tramite l’API, **Log Tailing** (Coda del registro) è accessibile solo con API/CLI.
 
 ### Risorse aggiuntive {#resources}
 

@@ -1,82 +1,86 @@
 ---
-title: Distribuisci il tuo codice - Cloud Services
-description: Distribuisci il tuo codice - Cloud Services
+title: Implementazione del codice
+description: Scopri come distribuire il codice utilizzando le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
+source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 2%
+source-wordcount: '669'
+ht-degree: 0%
 
 ---
 
+
 # Implementazione del codice {#deploy-your-code}
 
-## Distribuzione di codice con Cloud Manager in AEM come Cloud Service {#deploying-code-with-cloud-manager}
+Scopri come distribuire il codice utilizzando le pipeline di Cloud Manager in AEM as a Cloud Service.
 
-Dopo aver configurato la pipeline di produzione (archivio, ambiente e ambiente di test), è possibile distribuire il codice.
+## Implementazione del codice con Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
-1. Fai clic su **Distribuisci** da Cloud Manager per avviare il processo di distribuzione.
+Una volta che [configurato la pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) tra cui archivio, ambiente e ambiente di test, puoi distribuire il codice.
 
-   ![](assets/deploy-code1.png)
+1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione appropriata.
 
+1. Fai clic sul programma per il quale vuoi distribuire il codice.
 
-1. Viene visualizzata la schermata **Esecuzione pipeline** .
+1. Fai clic su **Distribuzione** dall&#39;invito all&#39;azione sul **Panoramica** per avviare il processo di distribuzione.
 
-   Fai clic su **Genera** per avviare il processo.
+   ![CTA](assets/deploy-code1.png)
 
-   ![](assets/deploy-code2.png)
+1. La **Esecuzione della pipeline** viene visualizzato lo schermo. Fai clic su **Crea** per avviare il processo.
 
-1. Il processo di compilazione completo distribuisce il codice.
+   ![Schermata di esecuzione della pipeline](assets/deploy-code2.png)
 
-   Nel processo di creazione sono coinvolte le seguenti fasi:
+Il processo di compilazione distribuisce il codice in tre fasi.
 
-   1. Implementazione fase
-   1. Test della fase
-   1. Distribuzione di produzione
+1. [Implementazione fase](#stage-deployment)
+1. [Test della fase](#stage-testing)
+1. [Distribuzione di produzione](#production-deployment)
 
-   >[!NOTE]
-   >
-   >Inoltre, puoi rivedere i passaggi dei vari processi di distribuzione visualizzando i registri o rivedendo i risultati per i criteri di test.
+>[!TIP]
+>
+>Puoi rivedere i passaggi da vari processi di distribuzione visualizzando i registri o rivedendo i risultati per i criteri di test.
 
-   La **distribuzione della fase** prevede i seguenti passaggi:
+## Fase di distribuzione {#stage-deployment}
 
-   * Convalida: Questo passaggio assicura che la pipeline sia configurata per utilizzare le risorse attualmente disponibili, ad esempio che il ramo configurato esista, che gli ambienti siano disponibili.
-   * Build &amp; Unit Testing: Questo passaggio esegue un processo di compilazione containerizzato. Per informazioni dettagliate sull’ambiente di compilazione, consulta [Generazione di dettagli ambiente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) .
-   * Scansione del codice: Questo passaggio valuta la qualità del codice dell&#39;applicazione. Per informazioni dettagliate sul processo di test, consulta [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md) .
-   * Crea immagini: Questo passaggio include un file di registro dal processo utilizzato per creare le immagini. Questo processo è responsabile della trasformazione dei pacchetti di contenuti e dispatcher prodotti dalla fase di creazione in immagini Docker e configurazione Kubernetes.
-   * Distribuisci su Stage
+La **Implementazione fase** fase. comporta questi passaggi.
 
-      ![](assets/stage-deployment.png)
-   La **prova della fase** prevede i seguenti passaggi:
+* **Convalida**  - Questo passaggio assicura che la pipeline sia configurata per l’utilizzo delle risorse attualmente disponibili. Ad esempio, verificare che il ramo configurato esista e che gli ambienti siano disponibili.
+* **Build &amp; Unit Testing** - Questo passaggio esegue un processo di compilazione containerizzato.
+   * Vedi il documento [Dettagli dell’ambiente di generazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) per informazioni dettagliate sull’ambiente di creazione.
+* **Scansione del codice** - Questo passaggio valuta la qualità del codice dell&#39;applicazione.
+   * Vedi il documento [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md) per informazioni dettagliate sul processo di test.
+* **Creare immagini** - Questo processo è responsabile della trasformazione dei pacchetti di contenuti e dispatcher prodotti dalla fase di creazione in immagini Docker e configurazioni Kubernetes.
+* **Distribuisci su Stage** - L&#39;immagine viene distribuita nell&#39;ambiente di staging in preparazione della [Fase di prova.](#stage-testing)
 
-   * **Test** funzionale del prodotto: Le esecuzioni della pipeline di Cloud Manager supporteranno l’esecuzione di test eseguiti sull’ambiente stage.
-Per ulteriori informazioni, consulta [Test funzionale del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) .
+![Implementazione fase](assets/stage-deployment.png)
 
-   * **Test** funzionali personalizzati: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Tuttavia, se la build non produce JAR di test, il test viene superato per impostazione predefinita.\
-      Per ulteriori informazioni, consulta [Test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) .
+## Fase di prova {#stage-testing}
 
-   * **Test** interfaccia utente personalizzati: Questo passaggio è una funzione opzionale che consente ai nostri clienti di creare ed eseguire automaticamente i test dell’interfaccia utente per le loro applicazioni. I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium).
-Per ulteriori informazioni, consulta [Test personalizzati dell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing) .
+La **Test della fase** La fase comporta questi passaggi.
 
+* **Test funzionale del prodotto** - La pipeline di Cloud Manager esegue i test eseguiti sull’ambiente stage.
+   * Fare riferimento al documento [Test funzionale del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) per ulteriori dettagli.
 
-   * **Audit** esperienza: Questo passaggio nella pipeline è sempre presente e non può essere ignorato. Quando viene eseguita una pipeline di produzione, viene incluso un passaggio di controllo dell’esperienza dopo un test funzionale personalizzato che eseguirà i controlli. Le pagine configurate verranno inviate al servizio e valutate. I risultati sono informativi e consentono all’utente di visualizzare i punteggi e il cambiamento tra il punteggio corrente e quello precedente. Questa informazione è utile per determinare se vi è una regressione che verrà introdotta con la distribuzione corrente.
-Per ulteriori informazioni, consulta [Informazioni sui risultati di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) .
+* **Test funzionale personalizzato** - Questo passaggio nella pipeline viene sempre eseguito e non può essere ignorato. Se la build non produce JAR di test, il test viene superato per impostazione predefinita.
+   * Fare riferimento al documento [Test funzionale personalizzato](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) per ulteriori dettagli.
 
-      ![](assets/stage-testing.png)
+* **Test personalizzati dell&#39;interfaccia utente** - Questa fase è una funzionalità facoltativa che esegue automaticamente i test dell’interfaccia utente creati per le applicazioni personalizzate.
+   * I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium).
+   * Fare riferimento al documento [Test personalizzati dell&#39;interfaccia utente](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) per ulteriori dettagli.
 
+* **Audit delle esperienze** - Questo passaggio nella pipeline viene sempre eseguito e non può essere ignorato. Quando viene eseguita una pipeline di produzione, viene incluso un passaggio di controllo dell’esperienza dopo un test funzionale personalizzato che eseguirà i controlli.
+   * Le pagine configurate vengono inviate al servizio e valutate.
+   * I risultati sono informativi e mostrano i punteggi e il cambiamento tra il punteggio corrente e quello precedente.
+   * Questa informazione è utile per determinare se vi è una regressione che verrà introdotta con la distribuzione corrente.
+   * Fare riferimento al documento [Informazioni sui risultati di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) per ulteriori dettagli.
 
+![Test della fase](assets/stage-testing.png)
 
+## Fase di distribuzione della produzione {#deployment-production}
 
+Il processo di distribuzione nelle topologie di produzione è leggermente diverso al fine di ridurre l’impatto sui visitatori di un sito AEM.
 
-## Processo di distribuzione {#deployment-process}
-
-Tutte le distribuzioni di Cloud Service seguono un processo continuo per garantire tempi di inattività pari a zero. Per ulteriori informazioni, consulta [Come funzionano le implementazioni continue](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) .
-
-### Fase di implementazione a produzione {#deployment-production-phase}
-
-Il processo di distribuzione nelle topologie di produzione è leggermente diverso per ridurre al minimo l’impatto sui visitatori AEM sito.
-
-Le distribuzioni di produzione seguono generalmente gli stessi passaggi indicati in precedenza, ma in modo continuo:
+Le distribuzioni di produzione seguono generalmente gli stessi passaggi descritti in precedenza, ma in modo continuo.
 
 1. Distribuisci pacchetti AEM per l’authoring.
 1. Scollega dispatcher1 dal load balancer.
@@ -85,4 +89,11 @@ Le distribuzioni di produzione seguono generalmente gli stessi passaggi indicati
 1. Una volta che dispatcher1 è tornato in servizio, scollega dispatcher2 dal load balancer.
 1. Distribuisci pacchetti AEM a publish2 e il pacchetto dispatcher a dispatcher2, svuota la cache del dispatcher.
 1. Rimetti dispatcher2 nel load balancer.
+
 Questo processo continua fino a quando la distribuzione non raggiunge tutti gli editori e i dispatcher nella topologia.
+
+![Fase di implementazione della produzione](assets/production-deployment.png)
+
+## Processo di distribuzione {#deployment-process}
+
+Tutte le distribuzioni di Cloud Service seguono un processo continuo per garantire tempi di inattività pari a zero. Fare riferimento al documento [Funzionamento delle implementazioni continue](/help/implementing/deploying/overview.md#how-rolling-deployments-work) per saperne di più.

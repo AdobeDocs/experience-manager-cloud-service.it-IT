@@ -1,40 +1,44 @@
 ---
-title: Notifiche - Cloud Service
-description: Notifiche - Cloud Service
-translation-type: tm+mt
-source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
+title: Notifiche
+description: Scopri come ricevere informazioni sulle distribuzioni delle pipeline utilizzando il sistema di notifica Adobe Experience Cloud.
+exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
+source-git-commit: 42d4e3bb38e3a7ecb4507d15e2307ed08d752b5c
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 1%
+source-wordcount: '257'
+ht-degree: 0%
 
 ---
 
-
 # Notifiche {#notifications}
 
-[!UICONTROL Cloud ] Manager consente all&#39;utente di ricevere notifiche all&#39;avvio e al completamento (con esito positivo o negativo) della pipeline di produzione all&#39;inizio di una distribuzione di produzione. Queste notifiche vengono inviate tramite il Adobe di notifica [!UICONTROL  Experience Cloud] .
+[!UICONTROL Cloud Manager] consente all’utente di ricevere notifiche all’avvio e al completamento della pipeline di produzione (con successo o senza successo) durante un’implementazione di produzione.
 
->[!NOTE]
->
->L&#39;approvazione e le notifiche pianificate vengono inviate solo agli utenti nei ruoli Business Owner, Program Manager e Deployment Manager.
+Queste notifiche vengono inviate tramite l’Adobe [!UICONTROL Experience Cloud] sistema di notifica agli utenti con i ruoli **Proprietario business**, **Responsabile del programma** e **Gestione distribuzione**.
 
-Le notifiche vengono visualizzate in una barra laterale nell&#39;interfaccia utente [!UICONTROL Cloud Manager] e nell&#39;intero Adobe  [!UICONTROL  Experience Cloud].
-![](assets/notify-1.png)
+Le notifiche vengono visualizzate all’estremità destra della barra dei menu nel [!UICONTROL Cloud Manager] Interfaccia utente e Adobe [!UICONTROL Experience Cloud].
 
-Fate clic sull’icona della campana dall’intestazione per aprire la barra laterale e visualizzare le notifiche, come illustrato nella figura seguente:
+![Icona Notifiche nella barra dei menu](assets/notify-1.png)
 
-![](assets/notify-2.png)
+L&#39;icona della campana viene contrassegnata quando ci sono nuove notifiche. Fai clic su di esso per aprire il pannello a per visualizzare le notifiche.
 
-Nella barra laterale sono elencate le notifiche più recenti.
+![Visualizzazione delle notifiche](assets/notify-2.png)
 
+Il pannello elenca solo le notifiche più recenti. Fai clic su **Visualizza tutto** nella parte inferiore del pannello per visualizzare tutte le notifiche.
 
 ## Notifiche e-mail {#email-notifications}
 
-Per impostazione predefinita, le notifiche sono disponibili nell&#39;interfaccia utente Web tra  soluzioni di Experience Cloud  del Adobe. I singoli utenti possono inoltre scegliere di inviare queste notifiche tramite e-mail, sia in modo immediato che tramite riepilogo.
+Per impostazione predefinita, le notifiche sono disponibili nell’interfaccia utente di Adobe [!UICONTROL Experience Cloud] soluzioni. I singoli utenti possono inoltre scegliere di inviare queste notifiche tramite e-mail seguendo questi passaggi.
 
-In questo modo l&#39;utente passerà alla schermata Preferenze notifiche  Adobe [!UICONTROL  Experience Cloud].
+1. Fai clic sull&#39;icona della campana per visualizzare le notifiche.
+1. Fai clic sul pulsante **Modifica preferenze** icona (a forma di ingranaggio) nella parte superiore del pannello notifiche.
+1. Nella finestra visualizzata, fai clic su **Notifiche** nella navigazione a sinistra.
+   ![Finestra Modifica preferenze](assets/notification-preferences.png)
+1. Scorri verso il basso fino a **E-mail** intestazione.
+   ![Opzioni e-mail](assets/email-preferences.png)
+1. Seleziona come desideri ricevere le e-mail.
+   * Non inviare e-mail (impostazione predefinita)
+   * Notifiche istantanee
+   * Riepilogo giornaliero
+   * Digest settimanale
 
-Gli utenti possono attivare le notifiche e-mail e (facoltativamente) selezionare i tipi di notifiche che desiderano ricevere tramite e-mail.
-
->[!NOTE]
->È inoltre possibile attivare la digestione dal Adobe  [!UICONTROL  Experience Cloud].
+Una volta effettuata la selezione, la scelta viene salvata automaticamente senza dover fare clic su un pulsante salva o applica.

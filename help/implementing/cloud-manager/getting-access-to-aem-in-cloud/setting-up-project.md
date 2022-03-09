@@ -1,38 +1,40 @@
 ---
-title: Dettagli di configurazione del progetto
-description: Dettagli configurazione progetto - Cloud Services
+title: Configurazione del progetto
+description: Scopri come AEM progetti vengono costruiti con Maven e gli standard da osservare durante la creazione del tuo progetto.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 4219c8ce30a0f1cd44bbf8e8de46d6be28a1ddf3
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 5%
+source-wordcount: '1264'
+ht-degree: 1%
 
 ---
 
-# Configurazione del progetto {#project-setup-details}
+# Configurazione del progetto {#project-setup}
 
-## Modifica dei dettagli di configurazione del progetto {#modifying-project-setup-details}
+Scopri come AEM progetti vengono costruiti con Maven e gli standard da osservare durante la creazione del tuo progetto.
 
-Per poter essere generati e implementati correttamente con Cloud Manager, i progetti AEM esistenti devono rispettare alcune regole di base:
+## Dettagli di configurazione del progetto {#project-setup-details}
 
-* I progetti devono essere generati utilizzando Apache Maven.
-* Ci deve essere un *pom.xml* nella directory principale dell’archivio Git. Questo *pom.xml* file può fare riferimento a tutti i sottomoduli (che a loro volta possono avere altri sottomoduli, ecc.) se necessario.
+Per poter essere generati e implementati correttamente con Cloud Manager, i progetti AEM devono rispettare le seguenti linee guida:
 
-* Puoi aggiungere riferimenti ad altri archivi di artefatti Maven nel tuo *pom.xml* file. Accesso a [archivi di artefatti protetti da password](#password-protected-maven-repositories) è supportato quando è configurato. Tuttavia, l&#39;accesso agli archivi di artefatti protetti dalla rete non è supportato.
-* I pacchetti di contenuti distribuibili vengono rilevati mediante la scansione del pacchetto di contenuti *zip* file contenuti in una directory denominata *target*. Un numero qualsiasi di sottomoduli può produrre pacchetti di contenuti.
-
-* Gli artefatti del Dispatcher distribuibili vengono rilevati tramite la ricerca di *zip* file (di nuovo, contenuti in una directory denominata *target*) che hanno directory denominate *conf* e *conf.d*.
-
-* Se sono presenti più pacchetti di contenuto, l’ordine delle distribuzioni dei pacchetti non è garantito. Se è necessario un ordine specifico, le dipendenze del pacchetto di contenuti possono essere utilizzate per definire l’ordine. I pacchetti possono essere [saltato](#skipping-content-packages) dalla distribuzione.
-
+* I progetti devono essere generati utilizzando [Apache Maven.](https://maven.apache.org)
+* Ci deve essere un `pom.xml` nella directory principale dell’archivio git. Questo `pom.xml` file può fare riferimento a tutti i sottomoduli (che a loro volta possono avere altri sottomoduli, ecc.) se necessario.
+* Puoi aggiungere riferimenti ad altri archivi di artefatti Maven nel tuo `pom.xml` file.
+   * Accesso a [archivi di artefatti protetti da password](#password-protected-maven-repositories) è supportato quando è configurato. Tuttavia, l&#39;accesso agli archivi di artefatti protetti dalla rete non è supportato.
+* I pacchetti di contenuti distribuibili vengono rilevati mediante la scansione del pacchetto di contenuti `.zip` file contenuti in una directory denominata `target`.
+   * Un numero qualsiasi di sottomoduli può produrre pacchetti di contenuti.
+* Gli artefatti del dispatcher distribuibili vengono rilevati tramite scansione per `.zip` file (anche contenuti nella directory denominata `target`), che hanno directory denominate `conf` e `conf.d`.
+* Se sono presenti più pacchetti di contenuto, l’ordine delle distribuzioni dei pacchetti non è garantito.
+   * Se è necessario un ordine specifico, le dipendenze del pacchetto di contenuti possono essere utilizzate per definire l’ordine.
+* I pacchetti possono essere [saltato](#skipping-content-packages) durante la distribuzione.
 
 ## Attivazione dei profili Maven in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
-In alcuni casi limitati, potrebbe essere necessario variare leggermente il processo di generazione quando si esegue in Cloud Manager rispetto a quando si esegue su workstation per sviluppatori. Per questi casi, [Profili Maven](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) può essere utilizzato per definire in che modo la build deve essere diversa in ambienti diversi, incluso Cloud Manager.
+In alcuni casi limitati, potrebbe essere necessario variare leggermente il processo di creazione quando si esegue in Cloud Manager rispetto a quando si esegue su workstation sviluppatore. Per questi casi, [Profili Maven](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) può essere utilizzato per definire in che modo la build deve essere diversa in ambienti diversi, incluso Cloud Manager.
 
-L’attivazione di un profilo Maven nell’ambiente di build di Cloud Manager deve essere eseguita cercando la variabile di ambiente CM_BUILD descritta sopra. Al contrario, un profilo destinato a essere utilizzato solo al di fuori dell’ambiente di build di Cloud Manager deve essere fatto cercando l’assenza di questa variabile.
+L’attivazione di un profilo Maven all’interno dell’ambiente di build di Cloud Manager deve essere eseguita cercando l’ `CM_BUILD` [variabile di ambiente.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) Allo stesso modo, un profilo destinato a essere utilizzato solo al di fuori dell’ambiente di build di Cloud Manager deve essere fatto cercando l’assenza di questa variabile.
 
-Ad esempio, se desideri inviare un messaggio semplice solo quando la build viene eseguita in Cloud Manager, effettua le seguenti operazioni:
+Ad esempio, se desideri inviare un messaggio semplice solo quando la build viene eseguita in Cloud Manager, effettua questa operazione.
 
 ```xml
         <profile>
@@ -68,9 +70,9 @@ Ad esempio, se desideri inviare un messaggio semplice solo quando la build viene
 
 >[!NOTE]
 >
->Per testare questo profilo su una workstation sviluppatore, puoi abilitarlo sulla riga di comando (con `-PcmBuild`) o nell&#39;ambiente di sviluppo integrato (IDE).
+>Per testare questo profilo su una workstation sviluppatore, puoi abilitarlo sulla riga di comando (con `-PcmBuild`) o nell’ambiente di sviluppo integrato (IDE).
 
-E se desideri inviare un messaggio semplice solo quando la build viene eseguita al di fuori di Cloud Manager, effettua le seguenti operazioni:
+Se desideri inviare un messaggio semplice solo quando la build viene eseguita al di fuori di Cloud Manager, effettua questa operazione.
 
 ```xml
         <profile>
@@ -107,127 +109,142 @@ E se desideri inviare un messaggio semplice solo quando la build viene eseguita 
 ## Supporto dell&#39;archivio Maven protetto da password {#password-protected-maven-repositories}
 
 >[!NOTE]
->Gli artefatti provenienti da un archivio Maven protetto da password devono essere utilizzati con molta cautela, in quanto il codice distribuito tramite questo meccanismo attualmente non viene eseguito attraverso tutte le regole di qualità implementate nei Gates di qualità di Cloud Manager. Pertanto dovrebbe essere utilizzato solo in rari casi e per codice non legato a AEM. Si consiglia inoltre di distribuire le origini Java e l&#39;intero codice sorgente del progetto insieme al binario.
+>
+>Gli artifact di un archivio Maven protetto da password devono essere utilizzati con molta cautela, in quanto il codice distribuito tramite questo meccanismo non viene attualmente eseguito attraverso tutti gli [regole sulla qualità del codice](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementato nei gate di qualità di Cloud Manager. Pertanto dovrebbe essere utilizzato solo in rari casi e per codice non legato a AEM. Si consiglia inoltre di distribuire le origini Java e l&#39;intero codice sorgente del progetto insieme al binario.
 
-Per utilizzare un archivio Maven protetto da password da Cloud Manager, specifica la password (e facoltativamente il nome utente) come variabile di pipeline segreta e fai riferimento a tale segreto all’interno di un file denominato `.cloudmanager/maven/settings.xml` nell’archivio git. Questo file segue [File impostazioni Maven](https://maven.apache.org/settings.html) schema. All’avvio del processo di creazione di Cloud Manager, la `<servers>` l&#39;elemento in questo file verrà unito all&#39;elemento predefinito `settings.xml` file fornito da Cloud Manager. ID server che iniziano con `adobe` e `cloud-manager` sono considerati riservati e non devono essere utilizzati da server personalizzati. ID server **not** corrispondente a uno di questi prefissi o all&#39;ID predefinito `central` Cloud Manager non verrà mai eseguito il mirroring. Con questo file attivo, si fa riferimento all&#39;ID del server all&#39;interno di un `<repository>` e/o `<pluginRepository>` all’interno dell’elemento `pom.xml` file. In generale, questi `<repository>` e/o `<pluginRepository>` elementi sarebbero contenuti all&#39;interno di un [Profilo specifico di Cloud Manager](#activating-maven-profiles-in-cloud-manager), anche se ciò non è strettamente necessario.
+Per utilizzare un archivio Maven protetto da password in Cloud Manager:
 
-Ad esempio, supponiamo che l’archivio sia all’indirizzo https://repository.myco.com/maven2, il nome utente che Cloud Manager deve utilizzare è `cloudmanager` e la password è `secretword`.
+1. Specifica la password (e facoltativamente il nome utente) come segreto [variabile di pipeline.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+1. Fai riferimento a quel segreto all&#39;interno di un file denominato `.cloudmanager/maven/settings.xml` nell’archivio git, che segue la [File impostazioni Maven](https://maven.apache.org/settings.html) schema.
 
-Innanzitutto, imposta la password come segreto sulla pipeline:
+All’avvio del processo di creazione di Cloud Manager:
 
-`$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+* La `<servers>` l&#39;elemento in questo file verrà unito all&#39;elemento predefinito `settings.xml` file fornito da Cloud Manager.
+   * ID server che iniziano con `adobe` e `cloud-manager` sono considerati riservati e non devono essere utilizzati da server personalizzati.
+   * Gli ID del server che non corrispondono a uno di questi prefissi o all&#39;ID predefinito `central` Cloud Manager non verrà mai eseguito il mirroring.
+* Con questo file attivo, viene fatto riferimento all&#39;ID server all&#39;interno di un `<repository>` e/o `<pluginRepository>` all’interno dell’elemento `pom.xml` file.
+* In generale, questi `<repository>` e/o `<pluginRepository>` elementi sarebbero contenuti all&#39;interno di un [Profilo specifico di Cloud Manager](#activating-maven-profiles-in-cloud-manager), anche se ciò non è strettamente necessario.
 
-Quindi fai riferimento a questo dal `.cloudmanager/maven/settings.xml` file:
+Ad esempio, supponiamo che l’archivio si trovi in `https://repository.myco.com/maven2`, il nome utente Cloud Manager deve utilizzare is `cloudmanager`e la password è `secretword`. Effettua le seguenti operazioni.
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
-    <servers>
-        <server>
-            <id>myco-repository</id>
-            <username>cloudmanager</username>
-            <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
-        </server>
-    </servers>
-</settings>
-```
+1. Imposta la password come segreto nella pipeline.
 
-Infine, fai riferimento all&#39;ID server all&#39;interno del `pom.xml` file:
+   ```text
+   $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+   ```
 
-```xml
-<profiles>
-    <profile>
-        <id>cmBuild</id>
-        <activation>
-                <property>
-                    <name>env.CM_BUILD</name>
-                </property>
-        </activation>
-        <repositories>
-             <repository>
-                 <id>myco-repository</id>
-                 <name>MyCo Releases</name>
-                 <url>https://repository.myco.com/maven2</url>
-                 <snapshots>
-                     <enabled>false</enabled>
-                 </snapshots>
-                 <releases>
-                     <enabled>true</enabled>
-                 </releases>
-             </repository>
-         </repositories>
-         <pluginRepositories>
-             <pluginRepository>
-                 <id>myco-repository</id>
-                 <name>MyCo Releases</name>
-                 <url>https://repository.myco.com/maven2</url>
-                 <snapshots>
-                     <enabled>false</enabled>
-                 </snapshots>
-                 <releases>
-                     <enabled>true</enabled>
-                 </releases>
-             </pluginRepository>
-         </pluginRepositories>
-    </profile>
-</profiles>
-```
+1. Fai riferimento a questo dal `.cloudmanager/maven/settings.xml` file.
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+       <servers>
+           <server>
+               <id>myco-repository</id>
+               <username>cloudmanager</username>
+              <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+           </server>
+       </servers>
+   </settings>
+   ```
+
+1. Infine, fai riferimento all&#39;ID del server all&#39;interno del `pom.xml` file:
+
+   ```xml
+   <profiles>
+       <profile>
+           <id>cmBuild</id>
+           <activation>
+                   <property>
+                       <name>env.CM_BUILD</name>
+                   </property>
+           </activation>
+           <repositories>
+                <repository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+       </profile>
+   </profiles>
+   ```
 
 ### Distribuzione di origini {#deploying-sources}
 
 È buona prassi distribuire le origini Java insieme al binario in un archivio Maven.
 
-Configura il plug-in maven-source nel tuo progetto:
+A questo scopo, configura il plug-in maven-source nel progetto.
 
 ```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-source-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>attach-sources</id>
-                    <goals>
-                        <goal>jar-no-fork</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-source-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <id>attach-sources</id>
+                     <goals>
+                         <goal>jar-no-fork</goal>
+                     </goals>
+                 </execution>
+             </executions>
+         </plugin>
 ```
 
 ### Distribuzione di origini di progetto {#deploying-project-sources}
 
-È buona prassi distribuire l’intera origine del progetto insieme al binario in un archivio Maven, in modo da ricreare l’artefatto esatto.
+È buona prassi distribuire l’intera origine del progetto insieme al binario in un archivio Maven. Questo permette come ricostruire l&#39;artefatto esatto.
 
-Configura il plug-in maven-assembly nel progetto:
+A questo scopo, configura il plug-in maven-assembly nel progetto.
 
 ```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>project-assembly</id>
-                    <phase>package</phase>
-                    <goals>
-                        <goal>single</goal>
-                    </goals>
-                    <configuration>
-                        <descriptorRefs>
-                            <descriptorRef>project</descriptorRef>
-                        </descriptorRefs>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-assembly-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <id>project-assembly</id>
+                     <phase>package</phase>
+                     <goals>
+                         <goal>single</goal>
+                     </goals>
+                     <configuration>
+                         <descriptorRefs>
+                             <descriptorRef>project</descriptorRef>
+                         </descriptorRefs>
+                     </configuration>
+                 </execution>
+             </executions>
+         </plugin>
 ```
 
 ## Ignora pacchetti di contenuto {#skipping-content-packages}
 
-In Cloud Manager, le build possono produrre un numero qualsiasi di pacchetti di contenuto.
-Per vari motivi, può essere opportuno creare un pacchetto di contenuti ma non distribuirlo. Ciò può essere utile, ad esempio, quando si creano pacchetti di contenuto utilizzati solo per il test o che verranno reimballati da un altro passaggio del processo di compilazione, ovvero come pacchetto secondario di un altro pacchetto.
+In Cloud Manager, le build possono produrre un numero qualsiasi di pacchetti di contenuto. Per diversi motivi, può essere utile produrre un pacchetto di contenuti ma non distribuirlo. Un esempio potrebbe essere la creazione di pacchetti di contenuto utilizzati solo per il test o che verranno ricompilati da un altro passaggio del processo di compilazione, ovvero come pacchetto secondario di un altro pacchetto.
 
-Per soddisfare questi scenari, Cloud Manager cercherà una proprietà denominata ***cloudManagerTarget*** tra le proprietà dei pacchetti di contenuto incorporati. Se questa proprietà è impostata su none, il pacchetto verrà ignorato e non distribuito. Il meccanismo per impostare questa proprietà dipende dal modo in cui la build produce il pacchetto di contenuto. Ad esempio, con filevault-maven-plugin si configura il plugin come segue:
+Per soddisfare questi scenari, Cloud Manager cercherà una proprietà denominata `cloudManagerTarget` tra le proprietà dei pacchetti di contenuto incorporati. Se questa proprietà è impostata su `none`, il pacchetto verrà ignorato e non distribuito.
+
+Il meccanismo per impostare questa proprietà dipende dal modo in cui la build produce il pacchetto di contenuto. Ad esempio, con `filevault-maven-plugin` configura il plug-in come segue.
 
 ```xml
         <plugin>
@@ -243,7 +260,7 @@ Per soddisfare questi scenari, Cloud Manager cercherà una proprietà denominata
         </plugin>
 ```
 
-Con content-package-maven-plugin è simile:
+La `content-package-maven-plugin` ha una configurazione simile.
 
 ```xml
         <plugin>
@@ -289,6 +306,6 @@ Se lo desideri, puoi disattivare il comportamento di riutilizzo per specifiche p
 
 ### Avvertenze {#caveats}
 
-* [Gestione delle versioni Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) sostituisci la versione del progetto solo nelle pipeline di produzione. Pertanto, se lo stesso commit viene utilizzato sia su un’esecuzione di distribuzione di sviluppo che su un’esecuzione di pipeline di produzione e la pipeline di distribuzione di sviluppo viene eseguita per prima, le versioni verranno distribuite sullo stage e la produzione senza essere modificate. Tuttavia, in questo caso verrà comunque creato un tag .
+* [Gestione delle versioni Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) sostituisce la versione del progetto solo nelle pipeline di produzione. Pertanto, se lo stesso commit viene utilizzato sia su un’esecuzione di distribuzione di sviluppo che su un’esecuzione di pipeline di produzione e la pipeline di distribuzione di sviluppo viene eseguita per prima, le versioni verranno distribuite sullo stage e la produzione senza essere modificate. Tuttavia, in questo caso verrà comunque creato un tag .
 * Se il recupero degli artefatti memorizzati non ha esito positivo, il passaggio di compilazione verrà eseguito come se non fosse stato memorizzato alcun artefatto.
 * Variabili di pipeline diverse da `CM_DISABLE_BUILD_REUSE` non vengono considerati quando Cloud Manager decide di riutilizzare gli artefatti di build creati in precedenza.

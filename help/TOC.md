@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '3436'
-ht-degree: 97%
+source-wordcount: '3419'
+ht-degree: 96%
 
 ---
 
@@ -641,17 +641,17 @@ ht-degree: 97%
          + [Modifica dei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Ambienti in sospensione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Creazione di un progetto di applicazione AEM {#create-application-project}
-         + [Utilizzo della procedura guidata](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-         + [Impostazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [Informazioni sull’ambiente della versione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [Creazione guidata progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [Configurazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+         + [Ambiente di compilazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md)
       + Gestione del codice {#managing-code}
          + [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [Accesso agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Integrazione di Git con Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [Utilizzo di più archivi Git di origine](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [Configurazione di Enterprise Team Development per AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Utilizzo di Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [Utilizzo di più archivi](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [Configurazione del team di sviluppo aziendale](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md)
       + Pipeline CI-CD di Cloud Manager {#cicd-pipelines}
          + [Introduzione](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -668,7 +668,7 @@ ht-degree: 97%
          + [Test dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md)
       + [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md)
       + [Generazione rapporti SLA](/help/implementing/cloud-manager/sla-reporting.md)
-      + [Accesso utente a New Relic](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [Nuova relè uno](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Notifiche](/help/implementing/cloud-manager/notifications.md)
       + Gestione dei certificati SSL {#manage-ssl-certificates}
          + [Introduzione](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

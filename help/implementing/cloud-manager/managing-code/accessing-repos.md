@@ -1,45 +1,42 @@
 ---
 title: Accesso agli archivi
-seo-title: Accessing Repositories
-description: Questa pagina descrive come accedere e gestire l’archivio Git.
-seo-description: Follow this page to learn how to access and manage your Git repository.
+description: Scopri come accedere e gestire l’archivio Git utilizzando la gestione autonoma dell’account Git di Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
+source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 5%
+source-wordcount: '229'
+ht-degree: 1%
 
 ---
 
 # Accesso agli archivi {#accessing-repos}
 
-Puoi accedere e gestire il tuo archivio Git utilizzando Self-Service Git Account Management (Gestione account Git self-service) dall’interfaccia utente di Cloud Manager.
+Scopri come accedere e gestire l’archivio Git utilizzando la gestione autonoma dell’account Git di Cloud Manager.
 
-## Utilizzo di Self-Service Repository Account Management {#self-service-repos}
+## Utilizzo della gestione dell’account dell’archivio self-service {#self-service-repos}
 
-Utilizza il pulsante **Access Repo Info** disponibile dall’interfaccia utente di Cloud Manager, che si trova più in evidenza sulla scheda della pipeline.
+Cloud Manager consente di recuperare facilmente le informazioni sull’archivio utilizzando **Accesso alle informazioni sul repository** pulsante disponibile in modo visibile sulla scheda della pipeline.
 
-1. Passa alla scheda **Pipelines** dalla pagina **Panoramica del programma**.
+1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione e il programma appropriati.
 
-1. Per accedere e gestire l’archivio Git, visualizzerai l’opzione **Access Repo Info** .
+1. Passa a **Tubi** scheda da **Panoramica del programma** e trova la **Accesso alle informazioni sul repository** per accedere e gestire il tuo archivio Git.
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![Pulsante Accedi alle informazioni sui repository nella scheda Ambienti](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-   Inoltre, se selezioni la scheda della pipeline **Non-Produzione** , visualizzerai anche l&#39;opzione **Accedi alle informazioni sul repository**.
+1. Fai clic sul pulsante **Visualizza informazioni repository** per aprire una finestra di dialogo da visualizzare:
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
-
-   >[!NOTE]
-   >L&#39;opzione **Access Repo Info** è visibile agli utenti nel ruolo Developer o Deployment Manager. Facendo clic su questo pulsante si apre una finestra di dialogo che consente all’utente di trovare l’URL del proprio archivio Git di Cloud Manager insieme al nome utente e alla password.
+   * URL dell’archivio Git di Cloud Manager.
+   * Nome utente git.
+   * La password git, il cui valore viene visualizzato quando **Genera password** fai clic su .
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-   Le considerazioni importanti per gestire il Git in Cloud Manager sono le seguenti:
+Utilizzando queste credenziali, l’utente può clonare una copia locale dell’archivio, apportare modifiche all’archivio locale e, quando è pronto, eseguire il commit di eventuali modifiche al codice nell’archivio del codice remoto in Cloud Manager.
 
-   * **URL**: URL del repository
-   * **Nome utente**: Nome utente
-   * **Password**: valore visualizzato quando si fa clic sul pulsante **Generate Password (Genera password)**.
+La **Accesso alle informazioni sul repository** è disponibile anche nella **Non produzione** scheda pipeline **Tubi** il Card.
 
+![Pulsante Accedi alle informazioni sui repository nella scheda non di produzione](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
 
-      >[!NOTE]
-      >Un utente può estrarre una copia del proprio codice e apportare modifiche nell&#39;archivio del codice locale. Quando è pronto, l’utente può eseguire nuovamente il commit delle modifiche del codice nell’archivio del codice remoto in Cloud Manager.
+>[!NOTE]
+>
+>La **Accesso alle informazioni sul repository** è visibile agli utenti con **Sviluppatore** o **Gestione distribuzione** ruoli.
