@@ -2,9 +2,9 @@
 title: Genera documento di record per Forms adattivo
 description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
+source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3678'
 ht-degree: 2%
 
 ---
@@ -406,7 +406,7 @@ L’impostazione del componente Documento di record è disponibile nelle relativ
 
 >[!NOTE]
 >
-> Questa funzione è disponibile nel canale prerelease. Vedi [Documentazione sul canale prerelease](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) per informazioni su come abilitare la funzione per l’ambiente.
+> Questa funzione è disponibile nel canale prerelease. Vedi [Documentazione sul canale prerelease](/help/release-notes/prerelease.md#enable-prerelease) per informazioni su come abilitare la funzione per l’ambiente.
 
 Un file XCI consente di impostare varie proprietà di un documento. Forms as a Cloud Service ha un file XCI principale. È possibile utilizzare un file XCI personalizzato per sostituire una o più proprietà predefinite specificate nel file XCI master. Ad esempio, è possibile scegliere di incorporare un font in un documento o di abilitare la proprietà tagged per tutti i documenti. La tabella seguente specifica le opzioni XCI:
 
