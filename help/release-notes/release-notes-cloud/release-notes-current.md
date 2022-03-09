@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: 08ed7f06b60ab65a0060c4fa00f902006f3afbdd
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Dai un’occhiata al video [Panoramica sulla versione di gennaio 2022](https://v
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
-* La **[Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** è disponibile nella **Sito** della console Sites per i siti che utilizzano la v2 del componente core pagina. Questo pulsante configura il sito per caricare i temi distribuiti con la pipeline Front End sopra le librerie client esistenti.
+* Il pulsante **[Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** è disponibile nella barra **Sito** della console Sites per i siti che utilizzano la v2 del componente core pagina. Questo pulsante configura il sito per caricare i temi distribuiti con la pipeline front-end sopra le librerie client esistenti.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
