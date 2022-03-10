@@ -2,13 +2,13 @@
 title: Configurazione di pipeline non di produzione
 description: Scopri come configurare le pipeline non di produzione per testare la qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
-source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
+exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
+source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 1%
+source-wordcount: '1058'
+ht-degree: 0%
 
 ---
-
 
 # Configurazione di pipeline non di produzione {#configuring-non-production-pipelines}
 
@@ -47,12 +47,6 @@ Dopo aver configurato il programma e disporre di almeno un ambiente utilizzando 
 
       * **Manuale** - Utilizzare questa opzione per avviare manualmente la pipeline.
       * **Su modifiche Git** - Questa opzione avvia la pipeline CI/CD ogni volta che vengono aggiunti dei commit al ramo git configurato. Con questa opzione, potete comunque avviare la pipeline manualmente come necessario.
-   * **Comportamento di errori di metrica importanti** - Durante la configurazione o la modifica della pipeline, il **Gestione distribuzione** ha la possibilità di definire il comportamento della pipeline quando si verifica un errore importante in uno qualsiasi dei cancelli di qualità. Opzioni disponibili.
-
-      * **Chiedi sempre** - Questa è l&#39;impostazione predefinita e richiede l&#39;intervento manuale su qualsiasi errore importante.
-      * **Non riuscito immediatamente** - Se selezionata, la pipeline verrà annullata ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che rifiuta manualmente ogni errore.
-      * **Continua immediatamente** - Se selezionata, la pipeline procede automaticamente ogni volta che si verifica un errore importante. In sostanza, questo sta simulando un utente che approva manualmente ogni errore.
-
 
 1. Fai clic su **Continua**.
 
