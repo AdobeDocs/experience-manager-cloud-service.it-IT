@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless. I frammenti di contenuto vengono poi memorizzati nelle cartelle di risorse.
 
-##  Cos’è una cartella di risorse? {#what-is-an-assets-folder}
+## Cos’è una cartella di risorse? {#what-is-an-assets-folder}
 
 [Dopo aver creato i modelli per frammenti di contenuto](create-content-model.md) che definiscono la struttura per i futuri frammenti di contenuto, è ora di creare alcuni frammenti.
 
