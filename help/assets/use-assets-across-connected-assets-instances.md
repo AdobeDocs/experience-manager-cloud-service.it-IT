@@ -1,14 +1,15 @@
 ---
 title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Sites]
 description: Utilizzare le risorse disponibili in un remoto [!DNL Adobe Experience Manager Assets] distribuzione durante la creazione di pagine web in un altro [!DNL Adobe Experience Manager Sites] distribuzione.
-contentOwner: AG
+contentOwner: AK
+mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 8457a6eb81b5d28c264e7f75793724b40fe7eb1d
+source-git-commit: 9f90c343aad8a8eaa8624d388e31ad21ef5c02f6
 workflow-type: tm+mt
-source-wordcount: '3796'
-ht-degree: 19%
+source-wordcount: '3770'
+ht-degree: 16%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 19%
 
 Nelle grandi aziende l’infrastruttura necessaria per la creazione di siti web può essere dislocata in luoghi diversi. A volte, le funzionalità per la creazione di siti web e le risorse digitali utilizzate per creare i siti possono trovarsi in implementazioni diverse. Un motivo può essere rappresentato dalla distribuzione geografica delle implementazioni esistenti necessarie per lavorare insieme. Un altro motivo può essere rappresentato dalle acquisizioni che portano a infrastrutture eterogenee, tra cui [!DNL Experience Manager] versioni, che l&#39;azienda madre desidera utilizzare insieme.
 
-La funzionalità Risorse collegate supporta il caso d’uso precedente mediante l’integrazione di [!DNL Experience Manager Sites] e [!DNL Experience Manager Assets]. Gli utenti possono creare pagine web in [!DNL Sites] che utilizzano le risorse digitali da un [!DNL Assets] distribuzioni.
+La funzionalità Risorse collegate supporta i casi d’uso precedenti mediante l’integrazione di [!DNL Experience Manager Sites] e [!DNL Experience Manager Assets]. Gli utenti possono creare pagine web in [!DNL Sites] che utilizzano le risorse digitali da un [!DNL Assets] distribuzioni.
 
 >[!NOTE]
 >
@@ -27,7 +28,7 @@ La funzionalità Risorse collegate supporta il caso d’uso precedente mediante 
 
 Durante la modifica di pagine in [!UICONTROL Editor pagina] come destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di un’altra [!DNL Assets] implementazione che funge da origine di risorse. Gli amministratori creano un’integrazione unica di una distribuzione di [!DNL Experience Manager] con [!DNL Sites] capacità con un&#39;altra implementazione di [!DNL Experience Manager] con [!DNL Assets] funzionalità. Puoi anche utilizzare le immagini Dynamic Media nelle pagine web del sito tramite Risorse collegate e sfruttare le funzionalità di Dynamic Media, ad esempio ritaglio avanzato e predefiniti per immagini.
 
-Per [!DNL Sites] autori, le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l’utilizzo di un numero limitato di risorse remote alla volta. Per rendere disponibili numerose risorse remote in un [!DNL Sites] distribuzione immediata, è consigliabile eseguire la migrazione delle risorse in massa.
+Per [!DNL Sites] autori, le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l’accesso diretti alle risorse remote nell’Editor sito. Per tutti gli altri casi d’uso che possono richiedere che l’intero asset-corpus sia disponibile su Sites, considera la migrazione delle risorse in blocco invece di utilizzare le risorse collegate.
 
 ### Prerequisiti e implementazioni supportate {#prerequisites}
 
@@ -44,16 +45,16 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 ### Formati di file supportati {#mimetypes}
 
-Gli autori ricercano le immagini e i seguenti tipi di documenti in Content Finder e utilizzano le risorse cercate nell’Editor pagina. I documenti vengono aggiunti al `Download` componenti e immagini `Image` componente. Gli autori possono inoltre aggiungere le risorse remote in qualsiasi [!DNL Experience Manager] componente che estende il valore predefinito `Download` o `Image` componenti. I formati supportati sono:
+Gli autori ricercano le immagini e i seguenti tipi di documenti in Content Finder e trascinano le risorse ricercate nell’Editor pagina. I documenti vengono aggiunti al `Download` componenti e immagini `Image` componente. Gli autori possono anche aggiungere le risorse remote in qualsiasi [!DNL Experience Manager] componente che estende il valore predefinito `Download` o `Image` componenti. I formati supportati sono:
 
 * **Formati immagine**: I formati che [Componente immagine](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) supporta.
 * **Formati documento**: Consulta la sezione [formati di documento supportati](file-format-support.md#document-formats).
 
 ### Utenti e gruppi interessati {#users-and-groups-involved}
 
-Di seguito sono descritti i diversi ruoli coinvolti nella configurazione e nell’utilizzo della funzionalità e i relativi gruppi di utenti. L’ambito locale viene utilizzato per il caso d’uso in cui un autore crea una pagina web. L’ambito remoto viene utilizzato per l’implementazione DAM in cui sono ospitate le risorse necessarie. La [!DNL Sites] le risorse remote vengono recuperate dall’autore.
+Di seguito sono descritti i vari ruoli coinvolti nella configurazione e la funzionalità e i relativi gruppi di utenti. L’ambito locale viene utilizzato per il caso d’uso in cui un autore crea una pagina web. L’ambito remoto viene utilizzato per l’implementazione DAM in cui sono ospitate le risorse necessarie. La [!DNL Sites] le risorse remote vengono recuperate dall’autore.
 
-| Ruolo | Ambito | Gruppo di utenti | Requisito |
+| Ruolo | Ambito | Gruppo di utenti | Descrizioni |
 |------|--------|-----------|----------|
 | [!DNL Sites] administrator | Locale | [!DNL Experience Manager] `administrators` | Configurazione [!DNL Experience Manager] e configura l&#39;integrazione con il telecomando [!DNL Assets] distribuzione. |
 | Utente DAM | Locale | `Authors` | Utilizzato per visualizzare e duplicare le risorse recuperate in `/content/DAM/connectedassets/`. |
@@ -81,7 +82,7 @@ Un [!DNL Experience Manager] l’amministratore può creare questa integrazione.
 
 Per configurare le risorse collegate e locali [!DNL Sites] connettività, segui questi passaggi:
 
-1. Accedere a un [!DNL Sites] distribuzione. Questo [!DNL Sites] la distribuzione viene utilizzata per l’authoring delle pagine web, ad esempio in `https://[sites_servername]:port`. Come avviene l’authoring delle pagine [!DNL Sites] distribuzione, chiamiamo il [!DNL Sites] distribuzione locale dal punto di vista dell’authoring delle pagine.
+1. Accedere a un [!DNL Sites] distribuzione. Questo [!DNL Sites] la distribuzione viene utilizzata per l’authoring delle pagine web, ad esempio in `https://<sites_server_fqdn>:[port]`. Come avviene l’authoring delle pagine [!DNL Sites] distribuzione, chiamiamo il [!DNL Sites] distribuzione locale dal punto di vista dell’authoring delle pagine.
 
 1. Accedere a un [!DNL Assets] distribuzione. Questo [!DNL Assets] l’implementazione viene utilizzata per gestire le risorse digitali, ad esempio in `https://[assets_servername]:port`.
 
@@ -96,7 +97,7 @@ Per configurare le risorse collegate e locali [!DNL Sites] connettività, segui 
    1. **[!UICONTROL URL siti locali]** è la posizione del [!DNL Sites] distribuzione. [!DNL Assets] la distribuzione utilizza questo valore per mantenere i riferimenti alle risorse digitali recuperate da questo [!DNL Sites] distribuzione.
    1. Credenziali di [!DNL Sites] utente tecnico.
    1. Il valore di **[!UICONTROL Soglia ottimizzazione trasferimento binario originale]** specifica se le risorse originali (comprese le rappresentazioni) vengono trasferite in modo sincrono o meno. Le risorse con file di dimensioni minori possono essere recuperate rapidamente, mentre le risorse con file di dimensioni relativamente maggiori sono sincronizzate in modo asincrono. Il valore dipende dalle funzionalità di rete.
-   1. Seleziona **[!UICONTROL Archivio dati condiviso con risorse collegate]** se per memorizzare le risorse utilizzi un archivio dati in comune tra le due implementazioni di In questo caso, il limite di soglia non ha importanza in quanto i binari effettivi delle attività sono disponibili nell’archivio dati e non vengono trasferiti.
+   1. Seleziona **[!UICONTROL Archivio dati condiviso con risorse collegate]**, se utilizzi un datastore per memorizzare le risorse e l’archivio dati viene condiviso tra entrambe le implementazioni. In questo caso, il limite di soglia non ha importanza in quanto i binari effettivi delle attività sono disponibili nell’archivio dati e non vengono trasferiti.
 
    ![Configurazione tipica per la funzionalità Risorse collegate](assets/connected-assets-typical-config.png)
 
@@ -165,7 +166,7 @@ Per configurare [!DNL Dynamic Media] su [!DNL Assets] e [!DNL Sites] distribuzio
 
 ## Utilizzare le risorse remote {#use-remote-assets}
 
-Gli autori del sito web utilizzano Content Finder per connettersi alla distribuzione DAM. Gli autori possono sfogliare, cercare e trascinare le risorse remote in un componente. Per eseguire l’autenticazione nel DAM remoto, tieni a portata di mano le credenziali dell’utente DAM fornite dal tuo amministratore.
+Gli autori del sito web utilizzano Content Finder per connettersi alla distribuzione DAM. Gli autori possono sfogliare, cercare e trascinare le risorse remote in un componente. Per eseguire l’autenticazione nel DAM remoto, mantieni a portata di mano le credenziali fornite dall’amministratore (se presenti).
 
 Gli autori possono utilizzare le risorse disponibili nell’implementazione DAM locale e DAM remota, in un’unica pagina web. Utilizza Content Finder per passare dalla ricerca nel DAM locale alla ricerca nel DAM remoto.
 
@@ -183,7 +184,7 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
    Fai clic su **[!UICONTROL Attiva/Disattiva pannello laterale]** nell’angolo in alto a sinistra della pagina.
 
-1. Apri [!UICONTROL Risorse] e fai clic su **[!UICONTROL Accedere alle risorse collegate]**.
+1. Apri [!UICONTROL Risorse] scheda (Ricerca contenuti remoti) e fai clic su **[!UICONTROL Accedere alle risorse collegate]**.
 
 1. Specifica le credenziali per accedere alle risorse collegate. Questo utente dispone delle autorizzazioni di authoring per entrambi i [!DNL Experience Manager] distribuzioni.
 
@@ -195,7 +196,7 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
    *Figura: opzioni di filtro per tipi di documenti e immagini nella ricerca di risorse in DAM remoto.*
 
-1. Un autore del sito riceve una notifica se una risorsa viene recuperata in modo asincrono e se un’attività di recupero ha esito negativo. Durante l’authoring o anche dopo l’authoring, gli autori possono visualizzare informazioni dettagliate sulle attività di recupero e sugli errori nella sezione [processi asincroni](/help/operations/asynchronous-jobs.md) interfaccia utente.
+1. Un autore del sito riceve una notifica se l’originale di una risorsa viene recuperato in modo asincrono e se un’attività di recupero ha esito negativo. Durante l’authoring o anche dopo l’authoring, gli autori possono visualizzare informazioni dettagliate sulle attività di recupero e sugli errori nella sezione [processi asincroni](/help/operations/asynchronous-jobs.md) interfaccia utente.
 
    ![Notifica relativa al recupero asincrono delle risorse in background.](assets/assets_async_transfer_fails.png)
 
@@ -205,7 +206,7 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
    >[!NOTE]
    >
-   >La pagina viene pubblicata anche se una o più risorse remote non vengono recuperate. Il componente che utilizza la risorsa remota viene pubblicato come vuoto. La [!DNL Experience Manager] nell’area di notifica viene visualizzata una notifica per gli errori visualizzati nella pagina processi asincroni.
+   >Anche se una o più risorse remote non vengono recuperate completamente, la pagina viene pubblicata. La [!DNL Experience Manager] nell’area di notifica viene visualizzata una notifica per gli errori visualizzati nella pagina processi asincroni.
 
 >[!CAUTION]
 >
@@ -226,7 +227,7 @@ Per visualizzare e gestire i riferimenti nel [!DNL Assets] implementazione, segu
 
 1. I riferimenti per [!DNL Sites] le pagine visualizzano il conteggio totale dei riferimenti per ogni locale [!DNL Sites]. Potrebbe essere necessario un po&#39; di tempo per trovare tutti i riferimenti e visualizzare il numero totale di riferimenti.
 1. L’elenco dei riferimenti è interattivo e gli utenti DAM possono fare clic su un riferimento per aprire la pagina di riferimento. Se non è possibile recuperare i riferimenti remoti per qualche motivo, viene visualizzata una notifica che informa l’utente dell’errore.
-1. Gli utenti possono spostare o eliminare la risorsa. Quando si sposta o si elimina una risorsa, il numero totale di riferimenti a tutte le risorse o cartelle selezionate viene visualizzato in una finestra di avviso. Quando si elimina una risorsa per la quale i riferimenti non sono ancora stati visualizzati, viene visualizzata una finestra di dialogo di avviso.
+1. Gli utenti possono spostare o eliminare la risorsa. Quando si sposta o si elimina una risorsa, il numero totale di riferimenti a tutte le risorse o cartelle selezionate viene visualizzato in una finestra di avviso. Quando si elimina una risorsa per la quale i riferimenti non sono ancora stati recuperati, viene visualizzata una finestra di dialogo di avviso.
 
    ![avviso di eliminazione forzata](assets/delete-referenced-asset.png)
 
@@ -278,7 +279,7 @@ No, non è possibile utilizzare frammenti di contenuto e risorse video dall’im
 
 ### È possibile utilizzare le risorse Dynamic Media dall’implementazione remota di DAM nel [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate?
 
-Sì, è possibile configurare e utilizzare le risorse Dynamic Media dalla distribuzione remota di DAM nel [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate. Per ulteriori informazioni, consulta [Configurare una connessione tra le implementazioni di Sites e Dynamic Media](#dynamic-media-assets).
+Sì, è possibile configurare e utilizzare le risorse immagini Dynamic Media dalla distribuzione remota di DAM in [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate. Per ulteriori informazioni, consulta [Configurare una connessione tra le implementazioni di Sites e Dynamic Media](#dynamic-media-assets).
 
 ### Dopo aver configurato le risorse collegate, puoi eseguire le operazioni di aggiornamento, eliminazione, ridenominazione e spostamento sulle risorse o cartelle DAM remote?
 
@@ -295,7 +296,6 @@ Puoi aggiungere risorse al [!DNL Sites] tuttavia, tali risorse non possono esser
 
 ### Gestione di autorizzazioni e risorse {#permissions-and-managing-assets}
 
-* Le risorse locali non vengono sincronizzate con le risorse originali nell’implementazione remota. Eventuali modifiche, eliminazioni o revoche delle autorizzazioni nell’implementazione DAM non vengono propagate downstream.
 * Le risorse locali sono copie in sola lettura. [!DNL Experience Manager]I componenti apportano modifiche non distruttive alle risorse. Non sono consentite altre modifiche.
 * Le risorse recuperate localmente sono disponibili solo a scopo di authoring. I flussi di lavoro di aggiornamento delle risorse non possono essere applicati e i metadati non possono essere modificati.
 * Quando utilizzi [!DNL Dynamic Media] in [!DNL Sites] pagine in cui la risorsa originale non viene recuperata e memorizzata nell’implementazione locale. La `dam:Asset` nodo, metadati e rendering generati da [!DNL Assets] tutte le distribuzioni vengono recuperate in [!DNL Sites] distribuzione.
@@ -309,7 +309,7 @@ Puoi aggiungere risorse al [!DNL Sites] tuttavia, tali risorse non possono esser
 ### Configurazione e licenze {#setup-licensing}
 
 * [!DNL Assets] distribuzione [!DNL Adobe Managed Services] è supportato.
-* [!DNL Sites] può connettersi a un singolo [!DNL Assets] archivio alla volta.
+* [!DNL Sites] può connettersi a un singolo [!DNL Assets] distribuzione alla volta.
 * Una licenza di [!DNL Assets] è necessario utilizzare come archivio remoto.
 * Una o più licenze di [!DNL Sites] è necessario utilizzare come implementazione di authoring locale.
 
