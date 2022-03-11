@@ -232,7 +232,6 @@ Per Adaptive Forms, sono disponibili funzionalità aggiuntive che consentono all
 >
 >* Usa un&#39;immagine quadrata per la miniatura. Quando si utilizza un’immagine non quadrata e si visualizza la miniatura nella vista a elenco, la miniatura appare troncata.
 >* Una volta caricata o generata una nuova immagine, la miniatura viene sostituita da questa immagine e non può essere reimpostata sull’immagine precedente.
-
 >
 
 

@@ -1,20 +1,19 @@
 ---
 title: Creazione dei lanci
 description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 81%
 
 ---
 
-
 # Creazione dei lanci {#creating-launches}
 
 Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
 
-* Il titolo viene visualizzato nella barra [Riferimenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references), dalla quale gli autori possono accedervi per utilizzarli.
+* Il titolo viene visualizzato nel [Riferimenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) barra laterale, dalla quale gli autori possono accedervi per utilizzarli.
 * Per impostazione predefinita nel lancio vengono incluse le pagine figlie della pagina di origine. Se necessario, potete comunque usare anche solo la pagina sorgente.
 * Per impostazione predefinita, [Live Copy](/help/sites-cloud/administering/msm/overview.md) aggiorna automaticamente le pagine di lancio mano a mano che vengono modificate le pagine sorgente. Per evitare che vengano apportate tali modifiche automatiche, puoi specificare che venga creata una copia statica.
 
@@ -26,8 +25,7 @@ Facoltativamente, puoi specificare la **Data lancio** (e l’ora) per definire q
 >
 >* `/libs/launches/templates/outofscope`
 >
->
-Non è possibile modificare queste pagine. Viene visualizzato il messaggio:
+>Non è possibile modificare queste pagine. Viene visualizzato il messaggio:
 >
 >* **Questa pagina non fa parte del lancio. Vai alla pagina di produzione**
 
@@ -84,7 +82,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
    * **Titolo lancio**: nome del lancio. Scegli un nome che possa essere facilmente riconosciuto dagli autori.
    * **con contenuto esistente**: il contenuto originale verrà utilizzato per creare il lancio.
    * **con un nuovo modello per sostituire la pagina**: per ulteriori dettagli, vedi [Creare un lancio con un nuovo modello](#create-launch-with-new-template).
-   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Per farlo, il lancio diventa una [Live Copy](/help/sites-cloud/administering/msm/overview.md). Per impostazione predefinita, questa opzione è selezionata.—>
+   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Questa opzione permette di ottenere questo risultato rendendo il lancio un [Live Copy](/help/sites-cloud/administering/msm/overview.md). Per impostazione predefinita, questa opzione è selezionata.—>
    * **Data lancio**: la data e l&#39;ora in cui la copia del lancio deve essere attivata (in base alla segnalazione **Produzione pronta**; consulta [Lanci: l&#39;ordine degli eventi](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Proprietà di Launch](/help/sites-cloud/authoring/assets/launches-properties.png)
@@ -93,8 +91,8 @@ Puoi creare un lancio da Sites o dalla console Lanci:
 
    Se torni alla console (con **Fine**), puoi visualizzare il lancio (e accedervi) in uno dei due modi seguenti:
 
-   * Console [**Lanci**](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * La [**Riferimenti** nella console **Sites**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * La [**Lanci** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * La [**Riferimenti** in **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### Creare un lancio con un nuovo modello {#create-launch-with-new-template}
 
@@ -119,7 +117,7 @@ Quando selezioni questa opzione:
 >
 >Questo metodo può essere utilizzato per modificare il modello di una [pagina esistente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page); tuttavia, deve essere tenuta in considerazione la perdita di contenuto.
 
-### Creazione di un lancio nidificato  {#creating-a-nested-launch}
+### Creazione di un lancio nidificato {#creating-a-nested-launch}
 
 Un lancio nidificato (lancio all’interno di un altro lancio) dà la possibilità di creare un lancio da un lancio esistente in modo che gli autori possano sfruttare le modifiche già apportate, anziché doverle apportare più volte per ogni lancio.
 
@@ -129,16 +127,16 @@ Un lancio nidificato (lancio all’interno di un altro lancio) dà la possibilit
 
 #### Creazione di un lancio nidificato: console Lanci {#creating-a-nested-launch-launches-console}
 
-La creazione di un lancio nidificato dalla console **Lanci** è fondamentalmente identica alla creazione di qualsiasi altra forma di lancio, con l’eccezione che è necessario passare al ramo lanci `/content/launches`:
+Creazione di un lancio nidificato dal **Lanci** la console è sostanzialmente identica alla creazione di qualsiasi altra forma di lancio, con l’eccezione che è necessario passare al ramo lanci `/content/launches`:
 
 1. Nella console **Lanci** seleziona **Crea**.
-1. Seleziona **Aggiungi pagine**, quindi accedi al ramo dei lanci specificando `/content/launches` nella barra **Filtri**. Scegli il lancio necessario e conferma con **Seleziona**:
+1. Seleziona **Aggiungi pagine**, quindi accedi al ramo dei lanci specificando `/content/launches` in **Filtri** barra. Scegli il lancio necessario e conferma con **Seleziona**:
 
    ![Creazione di un lancio nidificato](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
 1. Procedi con **Successivo**.
 
-1. Completa le **Proprietà** come per qualsiasi altro lancio.
+1. Completa il **Proprietà** come con qualsiasi altro lancio.
 
 1. Completa con **Crea**.
 

@@ -1,6 +1,6 @@
 ---
-title: Installazione e configurazione dei lettori in Screens come Cloud Service
-description: Questa pagina descrive come installare e configurare i lettori in Screens come Cloud Service.
+title: Installazione e configurazione dei lettori in Screens as a Cloud Service
+description: Questa pagina descrive come installare e configurare i lettori in Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 1%
 
 ---
 
-# Installazione e configurazione dei lettori in Screens come Cloud Service {#installing-players-screens-cloud}
+# Installing and Configuring Players in Screens as a Cloud Service {#installing-players-screens-cloud}
 
-Questa sezione descrive come installare i lettori AEM Screens registrati nelle istanze di AEM on-premise. Inoltre, è necessario eseguire una reimpostazione di fabbrica del lettore esistente e quindi registrare il nuovo lettore su AEM Screens come Cloud Service.
+This section describes how to install AEM Screens players that are registered to on-premise AEM instances. Additionally, you must do a factory reset of the existing player and then register the new player against AEM Screens as a Cloud Service.
 
 ## Obiettivo {#objective}
 
@@ -22,7 +22,7 @@ Questo documento ti aiuta a capire come impostare il lettore prima di registrare
 
 ## Passaggi per impostare il lettore in modalità Cloud {#cloud-mode-setup}
 
-Dopo aver scaricato l&#39;ultimo lettore da [AEM Screens Player Downloads](https://download.macromedia.com/screens/), ora sei pronto per aggiornare il lettore alla modalità Cloud.
+Dopo aver scaricato l&#39;ultimo lettore da [Download di AEM Screens Player](https://download.macromedia.com/screens/),ora puoi aggiornare il lettore in modalità Cloud.
 
 Per aggiornare il lettore, effettua le seguenti operazioni:
 
@@ -31,21 +31,21 @@ Per aggiornare il lettore, effettua le seguenti operazioni:
    >[!NOTE]
    >Puoi scegliere di testare con dispositivi hardware dedicati o con un&#39;estensione web sul tuo lettore.
 
-1. Fai clic sulla scheda **Configurazione** e fai clic sul pulsante **To Factory** sotto l&#39;opzione **Reset**.
+1. Fai clic sul pulsante **Configurazione** e fai clic su **A fabbrica** pulsante sotto **Reimposta** opzione .
 
    ![immagine](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Fai clic su **Conferma** per ripristinare il lettore.
 
-1. Sempre dalla scheda **Configurazione** e fai clic sul pulsante **Cambia in modalità cloud** sotto l&#39;opzione **Attiva modalità di esecuzione**.
+1. Di nuovo dal **Configurazione** e fai clic su **Cambia in modalità cloud** pulsante sotto **Attiva/disattiva modalità di esecuzione** opzione .
 
    ![immagine](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. Fai clic su **Conferma** per annullare la registrazione del lettore quando si passa alla modalità cloud.
+1. Fai clic su **Conferma** quando si passa alla modalità cloud, il lettore viene cancellato dalla registrazione.
 
-## Monitoraggio della riproduzione di base {#playback-monitoring}
+## Basic Playback Monitoring {#playback-monitoring}
 
-Il lettore riporta varie metriche di riproduzione con ciascuna `ping` che per impostazione predefinita corrisponde a 30 secondi. In base a queste metriche, possiamo rilevare vari casi edge come esperienza bloccata, schermata vuota e problemi di pianificazione. Questo ci permette di capire e risolvere i problemi del dispositivo, e quindi di accelerare un&#39;indagine e le misure correttive con voi.
+Il lettore riporta varie metriche di riproduzione con ciascuna `ping` il valore predefinito è 30 secondi. Based on these metrics, we can detect various edge cases such as stuck experience, blank screen, and scheduling issues. This lets us understand and troubleshoot issues on the device, and thus expedites an investigation and corrective measures with you.
 
 Il monitoraggio della riproduzione di base in un lettore AEM Screens consente di:
 
@@ -66,12 +66,12 @@ Le seguenti proprietà sono incluse in ogni `ping`:
 | activeElements {string} | stringa separata da virgole, elementi attualmente visibili in tutti i canali di riproduzione a sequenza (multipli in caso di layout a più zone) |
 | isDefaultContent {boolean} | true se il canale di riproduzione è considerato un canale predefinito o di fallback (ovvero, ha priorità 1 e nessuna pianificazione) |
 | hasContentChanged {boolean} | true se il contenuto è cambiato negli ultimi 5 minuti, false in caso contrario |
-| lastContentChange {string} | timestamp dell’ultima modifica del contenuto |
+| lastContentChange {string} | timestamp of the last content change |
 
 >[!NOTE]
 >Facoltativamente, è possibile abilitare una proprietà più avanzata dalle preferenze del lettore (Abilita monitoraggio riproduzione), ovvero:
 >|Proprietà|Descrizione|
->|—|—|
+>|---|---|
 >|isContentRendering {boolean}|true se la GPU può confermare che sta riproducendo il contenuto effettivo (in base all&#39;analisi dei pixel)|
 
 ### Limitazioni  {#limitations}
@@ -80,7 +80,7 @@ Di seguito sono elencate alcune limitazioni al monitoraggio della riproduzione d
 
 * Il lettore segnala il proprio stato di riproduzione al server, quindi richiede una connessione attiva.
 
-* La proprietà `isContentRendering` che controlla che la GPU sia attualmente troppo intensa di risorse per essere abilitata per impostazione predefinita e richiede un esplicito consenso dalle preferenze del lettore. Si consiglia di non utilizzarlo insieme ai video in produzione.
+* La `isContentRendering` che controlla che la GPU sia attualmente troppo intensa per essere abilitata per impostazione predefinita e richiede l&#39;esplicito consenso dalle preferenze del lettore. Si consiglia di non utilizzarlo insieme ai video in produzione.
 
 * Questa funzione è supportata solo per i canali di sequenza e non copre ancora il caso d’uso dei canali interattivi (SPA).
 
@@ -88,4 +88,4 @@ Di seguito sono elencate alcune limitazioni al monitoraggio della riproduzione d
 
 ## Novità {#whats-next}
 
-Ora, dopo aver installato e configurato il lettore in modalità Cloud, dovresti continuare a usare Screens come percorso di Cloud Service esaminando il documento [Registrazione dei lettori in Screens come Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) da Screens Services Provider.
+Ora, dopo aver installato e configurato il lettore in modalità Cloud, dovresti continuare il tuo percorso as a Cloud Service Screens esaminando il documento, [Registrazione dei lettori in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) da Screens Services Provider.

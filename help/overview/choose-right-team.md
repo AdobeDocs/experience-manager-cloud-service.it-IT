@@ -3,7 +3,7 @@ title: Persone giuste, ruoli giusti
 description: Persone giuste, ruoli giusti
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 100%
 
@@ -78,4 +78,4 @@ Ora che sai quali ruoli sono richiesti, osserva il grafico seguente per vedere q
 
 >[!TIP]
 >
-> Ulteriori informazioni su Adobe Experience Cloud e utilizzo delle risorse su [Experience League](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager) per ottenere la certificazione tramite [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+> Ulteriori informazioni su Adobe Experience Cloud e utilizzo delle risorse su [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) per ottenere la certificazione tramite [Adobe Digital Learning](https://learning.adobe.com/certification.html).

@@ -1,77 +1,76 @@
 ---
-title: Cloud Manager - Domande frequenti sugli Cloud Services
-seo-title: Domande frequenti su Cloud Manager
-description: Consulta le domande frequenti su Cloud Manager per Cloud Services per ottenere alcuni suggerimenti per la risoluzione dei problemi
-seo-description: Segui questa pagina per ottenere le risposte su Cloud Manager - Domande frequenti sugli Cloud Services
-translation-type: tm+mt
-source-git-commit: 75a5ff02e5f7c0e0e3ba42c8559851d3c98c3c8d
+title: Cloud Manager - Domande frequenti sui Cloud Services
+seo-title: Cloud Manager FAQs
+description: Fai riferimento a Cloud Manager per le domande frequenti sui Cloud Services per ricevere alcuni suggerimenti sulla risoluzione dei problemi
+seo-description: Follow this page to get answers on Cloud Manager - Cloud Services FAQs
+exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 0%
+source-wordcount: '1137'
+ht-degree: 1%
 
 ---
 
-
 # Domande frequenti su Cloud Manager {#cloud-manager-faqs}
 
-La sezione seguente contiene le risposte alle domande frequenti relative a Cloud Manager per Cloud Services.
+La sezione seguente fornisce le risposte alle domande frequenti relative a Cloud Manager per Cloud Services.
 
 ## È possibile utilizzare Java 11 con le build di Cloud Manager? {#java-11-cloud-manager}
 
-AEM build Cloud Manager non riesce quando si tenta di passare da Java 8 a 11. Il problema può avere molte cause e la maggior parte delle cause più comuni sono documentati di seguito:
+La build di AEM Cloud Manager non riesce quando si tenta di passare da Java 8 a 11. Il problema può avere molte cause e la maggior parte delle cause comuni sono documentate di seguito:
 
-* Aggiungete il maven-toolchain-plugin con le impostazioni corrette per Java 11 come documentato [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started).  Ad esempio, vedere il [codice del progetto di esempio wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+* Aggiungi il maven-toolchains-plugin con le impostazioni corrette per Java 11 come documentato [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started).  Ad esempio, consulta [codice progetto di esempio wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-* Se si verifica l&#39;errore riportato di seguito, è necessario rimuovere l&#39;uso di `maven-scr-plugin` e convertire tutte le annotazioni OSGi in annotazioni OSGi R6. Per istruzioni, vedere [qui](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+* Se incontri l&#39;errore qui sotto, devi rimuovere l&#39;uso di `maven-scr-plugin` e convertire tutte le annotazioni OSGi in annotazioni OSGi R6. Per istruzioni, consulta [qui](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
    `[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]`
 
-* Per le build di Cloud Manager, il plug-in maven per l&#39;applicazione non riesce con l&#39;errore `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"`. Si tratta di un problema noto a causa del quale Cloud Manager utilizza una versione diversa di Java per eseguire il comando maven invece di compilare il codice. Per il momento, omettete `requireJavaVersion` dalle configurazioni del plug-in &quot;maven-esecuter&quot;.
+* Per le build di Cloud Manager, il plug-in maven per l’applicazione non riesce e viene restituito un errore. `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"`. Si tratta di un problema noto a causa del quale Cloud Manager utilizza una versione diversa di Java per eseguire il comando maven anziché compilare il codice. Per il momento, ometti `requireJavaVersion` dalle configurazioni maven-enforcer-plugin.
 
-## La nostra distribuzione è bloccata perché il controllo Qualità codice non è riuscito. C&#39;è un modo per aggirare questo assegno? {#deployment-stuck}
+## La distribuzione è bloccata perché il controllo della qualità del codice non è riuscito. C&#39;è un modo per aggirare questo assegno? {#deployment-stuck}
 
-Tutti gli errori di qualità del codice, tranne *Valutazione sicurezza*, sono metriche non critiche, pertanto possono essere ignorate espandendo gli elementi nell&#39;interfaccia utente dei risultati.
+Tutti gli errori relativi alla qualità del codice tranne *Valutazione della sicurezza* sono metriche non critiche, in modo che possano essere ignorate espandendo gli elementi nell’interfaccia utente dei risultati.
 
-Un utente con il ruolo [Gestione distribuzione, Project Manager o Business Owner](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en#requirements) può ignorare i problemi, nel qual caso la pipeline procede o possono accettare i problemi, nel qual caso la pipeline si interrompe con un errore.  Per ulteriori informazioni, vedere [Porte a tre livelli durante l&#39;esecuzione di una tubazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use).
+Un utente con [Responsabile distribuzione, Project Manager o Proprietario business](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en#requirements) Il ruolo può ignorare i problemi, nel qual caso la pipeline procede o può accettare i problemi, nel qual caso la pipeline si interrompe con un errore.  Vedi [Cancelli a tre livelli durante l’esecuzione di una pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use) per ulteriori dettagli.
 
 
-## Siamo autorizzati a usare SNAPSHOT nella versione del progetto Maven? In che modo funziona il controllo delle versioni dei pacchetti e dei file JAR dei bundle per le distribuzioni di fase e produzione? {#snapshot-version}
+## Siamo autorizzati a utilizzare SNAPSHOT nella versione del progetto Maven? Come funziona il controllo delle versioni dei pacchetti e dei file jar dei bundle per le implementazioni di Stage e Production? {#snapshot-version}
 
-Per informazioni sul controllo delle versioni dei pacchetti e dei file JAR per le distribuzioni di fase e produzione, fare riferimento agli scenari seguenti:
+Per informazioni sul controllo delle versioni dei pacchetti e dei file jar dei bundle per le distribuzioni di Stage e Production, consulta i seguenti scenari:
 
-1. Per le implementazioni degli sviluppatori, i file del ramo Git `pom.xml` devono contenere `-SNAPSHOT` alla fine del valore `<version>`. Questo consente la distribuzione successiva in cui la versione non viene modificata per essere ancora installata. Nelle distribuzioni per gli sviluppatori, non viene aggiunta o generata alcuna versione automatica per la build Paradiso.
+1. Per le implementazioni per sviluppatori, il ramo Git `pom.xml` i file devono contenere `-SNAPSHOT` alla fine del `<version>` valore. Questo consente la distribuzione successiva in cui la versione non viene modificata per essere comunque installata. Nelle implementazioni per sviluppatori, non viene aggiunta o generata alcuna versione automatica per la build Maven.
 
-1. Nella distribuzione Stage e Produzione, viene generata una versione automatica come documentato [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code).
+1. Nella distribuzione Stage e Production viene generata una versione automatica come documentato [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code).
 
-1. Per le versioni personalizzate nelle distribuzioni di fase e produzione, impostate una versione pari a 3 parti come `1.0.0`. Aumentate la versione ogni volta che dovete eseguire un&#39;altra distribuzione in produzione.
+1. Per il controllo delle versioni personalizzate nelle implementazioni Stage e Produzione, imposta una versione maven corretta in 3 parti come `1.0.0`. Aumenta la versione ogni volta che devi eseguire un’altra implementazione in produzione.
 
-1. Cloud Manager aggiunge automaticamente la propria versione alle build di Stage e Produzione e crea anche un ramo Git. Non è richiesta alcuna configurazione speciale. Se si ignora il passaggio 3, la distribuzione funzionerebbe comunque correttamente e verrebbe automaticamente impostata una versione.
+1. Cloud Manager aggiunge automaticamente la propria versione alle build di Stage e Production e crea persino un ramo Git. Non è richiesta alcuna configurazione speciale. Se si salta il passaggio 3, la distribuzione funzionerà comunque correttamente e verrà impostata automaticamente una versione.
 
-1. Se lasciate la versione con `-SNAPSHOT` per le build o le distribuzioni di fase e produzione, non si verificano problemi. Cloud Manager imposta automaticamente un numero di versione corretto e crea un tag per voi in Git. Se necessario, potete fare riferimento a questo tag in un secondo momento.
+1. Non ci sono problemi, se lasci la versione con `-SNAPSHOT` per build o implementazioni di Stage e Production. Cloud Manager imposta automaticamente un numero di versione corretto e crea un tag per te in Git. Se necessario, puoi fare riferimento a questo tag in un secondo momento.
 
-1. Se si desidera provare un codice sperimentale sull&#39;ambiente di sviluppo, è possibile creare un nuovo ramo Git e impostare la pipeline in modo che utilizzi quel ramo diverso. Questa funzione è utile quando le distribuzioni iniziano a non funzionare e si desidera eseguire il test con versioni precedenti del codice per vedere quando si è interrotta.
+1. Se desideri provare un codice sperimentale nell’ambiente di sviluppo, puoi creare un nuovo ramo Git e impostare la pipeline in modo che utilizzi tale ramo diverso. Questo è utile quando le distribuzioni iniziano a non funzionare e desideri testare con le versioni precedenti del codice per vedere quando si è verificato un errore.
 
-   Il comando Git di seguito crea un ramo remoto denominato *testbranch1* rispetto a un commit preesistente specifico `485548e4fbafbc83b11c3cb12b035c9d26b6532b`.  Questo ramo speciale può essere utilizzato in Cloud Manager senza influenzare altri rami:
+   Il comando Git seguente crea un ramo remoto denominato *testbranch1* contro un commit preesistente specifico `485548e4fbafbc83b11c3cb12b035c9d26b6532b`.  Questo ramo speciale può essere utilizzato in Cloud Manager senza influenzare altri rami:
 
    `git push origin 485548e4fbafbc83b11c3cb12b035c9d26b6532b:refs/heads/testbranch1`
 
-   Per ulteriori informazioni, consultare la [documentazione Git](https://git-scm.com/book/en/v2/Git-Internals-Git-References).
+   Consulta la sezione [Documentazione Git](https://git-scm.com/book/en/v2/Git-Internals-Git-References) per ulteriori dettagli.
 
-   Se si desidera eliminare il ramo test in un secondo momento, utilizzare il comando delete:
+   Se desideri eliminare il ramo di test in un secondo momento, utilizza il comando delete :
 
    `git push origin --delete testbranch1`
 
-## La build Maven non riesce nelle installazioni di Cloud Manager, ma viene generata localmente senza errori. Come eseguire il debug? {#maven-build-fail}
+## La build Maven non riesce nelle implementazioni di Cloud Manager, ma viene generata localmente senza errori. Come eseguire il debug? {#maven-build-fail}
 
-Per ulteriori informazioni, vedere [Git Resource](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md).
+Vedi [Risorsa Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) per ulteriori dettagli.
 
-## Cosa fare se la distribuzione di Cloud Manager non riesce nel passaggio di distribuzione in AEM come ambiente di Cloud Service? {#cloud-manager-deployment-cloud-service}
+## Cosa fare se l’implementazione di Cloud Manager non riesce al passaggio di implementazione in AEM ambiente as a Cloud Service? {#cloud-manager-deployment-cloud-service}
 
-Il motivo più comune per cui la distribuzione non riesce è dovuto a autorizzazioni insufficienti per l&#39;utente *sling-distribution-importer*.
-Per comprendere un problema, una causa e una soluzione, fare riferimento all&#39;esempio seguente:
+Il motivo più comune per il mancato funzionamento delle implementazioni è dovuto a autorizzazioni insufficienti per *sling-distribution-importer* utente.
+Fai riferimento all’esempio seguente per comprendere un problema, una causa e una soluzione:
 
-****
-ProblemaDurante la distribuzione di Cloud Manager in AEM come ambienti di Cloud Service, il passaggio di distribuzione non riesce e si verificano errori come quelli riportati di seguito.
+**Problema**
+Durante l’implementazione di Cloud Manager in ambienti as a Cloud Service, il passaggio di implementazione non riesce e si verificano errori come quelli riportati di seguito.
 
 `[Queue Processor for Subscriber agent forwardPublisherSubscriber] org.apache.jackrabbit.vault.fs.io.Importer Error while committing changes. Retrying import from checkpoint at /. Retries 4/10`
 `[Queue Processor for Subscriber agent forwardPublisherSubscriber] org.apache.sling.distribution.journal.impl.subscriber DistributionSubscriber Error processing queue item`
@@ -82,44 +81,44 @@ ProblemaDurante la distribuzione di Cloud Manager in AEM come ambienti di Cloud 
 
 **Causa**
 
-L&#39;utente di sling-distribution-importer necessita di autorizzazioni aggiuntive per i percorsi di contenuto definiti nel pacchetto ui.content.  Ciò significa che in genere è necessario aggiungere autorizzazioni sia per /conf che per /var.
+L’utente sling-distribution-importer necessita di autorizzazioni aggiuntive in base ai percorsi di contenuto definiti nel pacchetto ui.content.  Questo solitamente significa che abbiamo bisogno di aggiungere autorizzazioni sia per /conf che per /var.
 
-****
-SoluzioneLa soluzione consiste nell&#39;aggiungere uno script di  [configurazione OSGi ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying) RepositoryInitializer al pacchetto di distribuzione delle app per aggiungere ACL per l&#39;utente di sling-distribution-importer.
-Nell&#39;errore di esempio riportato sopra, il pacchetto myapp-base.ui.content-*.zip include contenuto in `/conf` e `/var/workflow`. Affinché la distribuzione non abbia esito negativo, è necessario aggiungere autorizzazioni per l&#39;importazione sling-distribution in tali percorsi.
-Di seguito è riportato un esempio [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) di una configurazione OSGi di questo tipo che aggiunge autorizzazioni aggiuntive per l&#39;utente sling-distribution-importer.  Questa configurazione aggiunge le autorizzazioni in /var.  Questo file xml sotto [1] deve essere aggiunto al pacchetto dell&#39;applicazione in `/apps/myapp/config` (dove myapp è la cartella in cui è memorizzato il codice dell&#39;applicazione).
+**Soluzione**
+La soluzione a questo problema è aggiungere un [Configurazione di RepositoryInitializer OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#deploying) script sul pacchetto di distribuzione delle app per aggiungere ACL per l&#39;utente sling-distribution-importer.
+Nell’errore di esempio riportato sopra, il pacchetto myapp-base.ui.content-*.zip include il contenuto sotto `/conf` e `/var/workflow`. Affinché la distribuzione non abbia esito negativo, è necessario aggiungere le autorizzazioni per sling-distribution-importer per tali percorsi.
+Ecco un esempio [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) di una configurazione OSGi di questo tipo che aggiunge autorizzazioni aggiuntive per l’utente sling-distribution-importer.  Questa configurazione aggiunge le autorizzazioni in /var.  Questo file xml qui sotto [1] deve essere aggiunto al pacchetto dell&#39;applicazione in `/apps/myapp/config` (dove myapp è la cartella in cui è memorizzato il codice dell&#39;applicazione).
 org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
 
-1. Se la causa non è *sling-distribution-importer*, la distribuzione potrebbe non riuscire a causa di una configurazione OSGi non valida che interrompe un servizio box. Controllate i registri durante la distribuzione per verificare se sono presenti errori evidenti.
+1. Se la *sling-distribution-importer* non è la causa, quindi la distribuzione potrebbe non riuscire a causa di una configurazione OSGi non valida che interrompe un servizio preconfigurato. Controlla i registri durante la distribuzione per vedere se ci sono errori evidenti.
 
-1. La distribuzione potrebbe non riuscire a causa di configurazioni di dispatcher o apache non valide. Verifica le configurazioni Apache e Dispatcher localmente utilizzando l&#39;immagine Docker inclusa nell&#39;SDK. Vedere [Dispatcher in Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=en#content-delivery) su come impostare il contenitore del dispatcher Docker per semplificare i test locali.
+1. La distribuzione potrebbe non riuscire a causa di configurazioni del dispatcher o di Apache non valide. Verifica le configurazioni Apache e Dispatcher localmente utilizzando l’immagine Docker inclusa nell’SDK. Vedi [Dispatcher nel cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=en#content-delivery) su come impostare il contenitore Docker del dispatcher per un semplice test locale.
 
-1. La distribuzione potrebbe non riuscire a causa di altri errori durante la replica dei pacchetti di contenuto (distribuzione sling) dalle istanze di creazione a pubblicazione.
+1. La distribuzione potrebbe non riuscire a causa di altri errori durante la replica dei pacchetti di contenuto (distribuzione sling) dall’istanza di authoring alle istanze di pubblicazione.
 
-   Per simulare il problema in una configurazione locale, fare riferimento alla procedura seguente:
+   Fare riferimento ai passaggi seguenti per simulare questa situazione in un&#39;impostazione locale:
 
-   * Installare un&#39;istanza Author e Publish (autore e pubblicazione) (utilizzando le barre SDK AEM più recenti)
-   * Accedere all&#39;istanza Author
+   * Installa un&#39;istanza Author e Publish (utilizzando i jar dell&#39;SDK AEM più recenti)
+   * Accedi all’istanza Author
    * Vai a **Strumenti** -> **Distribuzione** -> **Distribuzione**
-   * Distribuire i pacchetti di contenuto che fanno parte della base di codice e verificare se la coda viene bloccata con un errore
+   * Distribuisci i pacchetti di contenuto che fanno parte della base di codice e controlla se la coda viene bloccata con un errore
 
-## Impossibile impostare una variabile tramite le variabili della pipeline impostate da aio cloud manager. Come risolvere questi problemi? {#set-variable}
+## Impossibile impostare una variabile tramite variabili della pipeline impostate da aio cloud manager. Come eseguire il debug di questi problemi? {#set-variable}
 
-Se viene visualizzato un errore `403` durante il tentativo di elencare o impostare le variabili della pipeline tramite comandi simili a quelli riportati di seguito, è necessario aggiungere il ruolo di prodotto *Gestione distribuzione* Cloud Manager nel Admin Console .\
-Per ulteriori informazioni, consultate [Autorizzazioni API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md).
+Se ottieni un `403` errore quando si tenta di elencare o impostare le variabili della pipeline tramite comandi simili a quelli riportati di seguito, è necessario aggiungere come *Gestione distribuzione* Ruolo di prodotto di Cloud Manager nell’Admin Console.\
+Vedi [Autorizzazioni API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) per ulteriori dettagli.
 
 Comandi ed errori correlati:
 
 `$ aio cloudmanager:list-pipeline-variables 222`
 
-*Errore*:  `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*Errore*: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
 
 `$ aio cloudmanager:set-pipeline-variables 222 --variable TEST 1`
 
-*Errore*:  `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*Errore*: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
 
 `$ aio cloudmanager:set-environment-variables 1755 --variable TEST 1`
 
 `setting variables... !`
 
-*Errore*:  `Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)`
+*Errore*: `Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)`

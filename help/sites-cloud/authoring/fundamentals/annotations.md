@@ -23,7 +23,7 @@ Per la creazione e la visualizzazione delle annotazioni viene utilizzata una [mo
 
 >[!TIP]
 >
->A seconda delle tue esigenze puoi anche sviluppare un [flusso di lavoro](/help/sites-cloud/authoring/workflows/overview.md) per inviare notifiche quando vengono aggiunte, aggiornate o eliminate delle annotazioni.
+>A seconda delle esigenze è anche possibile sviluppare un [workflow](/help/sites-cloud/authoring/workflows/overview.md) per inviare notifiche quando vengono aggiunte, aggiornate o eliminate delle annotazioni.
 
 ## Indicatore di annotazione {#annotation-indicator}
 
@@ -53,7 +53,7 @@ Le annotazioni sono visibili solo in modalità Annota.
 
 Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, modificare, spostare o eliminare le annotazioni nel contenuto
 
-1. [Avvia il ](#annotate-mode) modem Annota nella pagina.
+1. [Modalità Avvia annotazione](#annotate-mode) sulla pagina.
 
 1. Tocca o fai clic sull’icona Aggiungi annotazione (simbolo più a sinistra della barra degli strumenti) per iniziare ad aggiungere annotazioni.
 
@@ -80,7 +80,7 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 1. Dopo aver modificato un’annotazione, puoi effettuare le seguenti operazioni:
 
-   * Tocca o fai clic sul marcatore di testo per aprire l’annotazione. Una volta aperta, è possibile visualizzare il testo completo, apportare modifiche o [eliminare l&#39;annotazione.](#deleting-annotations)
+   * Tocca o fai clic sul marcatore di testo per aprire l’annotazione. Una volta aperto, è possibile visualizzare il testo completo, apportare modifiche o [elimina l’annotazione.](#deleting-annotations)
    * Riposiziona il marcatore di testo.
    * Tocca o fai clic su una linea dello schizzo per selezionarlo e trascinarlo nella posizione desiderata.
    * Spostare o copiare un componente
@@ -99,7 +99,7 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 È possibile eliminare le annotazioni e gli schizzi associati.
 
-1. [Avvia il ](#annotate-mode) modem Annota nella pagina.
+1. [Modalità Avvia annotazione](#annotate-mode) sulla pagina.
 
 1. Tocca o fai clic sul marcatore di testo per aprire l’annotazione.
 
@@ -117,7 +117,7 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 Con tutti gli schizzi associati è possibile eliminare solo gli schizzi specifici invece dell’intera annotazione.
 
-1. [Avvia il ](#annotate-mode) modem Annota nella pagina.
+1. [Modalità Avvia annotazione](#annotate-mode) sulla pagina.
 
 1. Tocca o fai clic sullo schizzo. AEM lo evidenzia con una casella blu più scura.
 

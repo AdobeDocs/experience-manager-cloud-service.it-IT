@@ -1,14 +1,13 @@
 ---
 title: Lanci
 description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per una pubblicazione futura, mantenendo le pagine correnti
-translation-type: tm+mt
-source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
+exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 81%
 
 ---
-
 
 # Lanci {#launches}
 
@@ -23,8 +22,8 @@ Ad esempio, le pagine dei prodotti stagionali del tuo negozio online vengono agg
 
 È inoltre possibile effettuare le seguenti operazioni:
 
-* Spostarsi nel contenuto del ramo del lancio; aggiunta o rimozione di pagine, a seconda delle necessità.
-* Visualizzate l’anteprima del contenuto pubblicato in base a una data/un obiettivo specifico in futuro.
+* Navigare nel contenuto del ramo lancio; se necessario, aggiungere o rimuovere pagine.
+* Visualizzare in anteprima come il contenuto pubblicato avrà in futuro una data/un obiettivo specifico.
 
 Nel trimestre successivo, promuovi le pagine di lancio in modo da poter pubblicare le pagine sorgenti (mantenendo i contenuti aggiornati). Puoi promuovere tutte le pagine o solo quelle che hai modificato.
 
@@ -33,13 +32,13 @@ I lanci possono anche essere:
 * Creati per rami principali multipli. Nonostante sia possibile creare il lancio per l&#39;intero sito (e apportare le modifiche desiderate), questa operazione potrebbe risultare poco pratica perché l&#39;intero sito dovrà essere copiato. Quando vengono coinvolte centinaia o persino migliaia di pagine, i requisiti e le prestazioni di sistema sono influenzate sia dall&#39;azione di copia che, in un secondo momento, dai confronti richiesti per le attività di promozione.
 * Nidificato (un lancio all&#39;interno di un lancio), permette di creare un lancio da un lancio esistente, in modo che gli autori possano sfruttare le modifiche già apportate, senza dover eseguire le stesse modifiche più volte per ogni lancio.
 
-Questa sezione descrive come creare, modificare e promuovere (e se necessario [eliminare](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) le pagine di lancio dall&#39;interno della console Siti o [dalla console Lanci](#the-launches-console):
+Questa sezione descrive come creare, modificare e promuovere (e se necessario [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) avvia le pagine dall’interno della console Sites o [la console Lanci](#the-launches-console):
 
-* [Creazione di lanci](/help/sites-cloud/authoring/launches/creating.md)
+* [Creazione dei lanci](/help/sites-cloud/authoring/launches/creating.md)
 * [Modifica dei lanci](/help/sites-cloud/authoring/launches/editing.md)
-* [Gestione delle pagine all’interno dei lanci](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Gestione delle pagine nei lanci](/help/sites-cloud/authoring/launches/managing-pages.md)
 * [Utilizzo di Timewarp per visualizzare in anteprima i contenuti in base ai lanci](/help/sites-cloud/authoring/launches/preview.md)
-* [Promozione del lancio](/help/sites-cloud/authoring/launches/promoting.md)
+* [Promozione dei lanci](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Lanci - Ordine degli eventi {#launches-the-order-of-events}
 
@@ -52,7 +51,7 @@ I lanci permettono di:
    * Le pagine sorgente di primo livello sono note come **Produzione**.
       * Le pagine sorgenti possono essere prelevate dai rami multipli (separati).
 
-   ![Ordine di funzionamento dei lanci](/help/sites-cloud/authoring/assets/launches-order.png)
+   ![Ordine di esercizio dei lanci](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * Modifica la configurazione del lancio:
    * Aggiungi o rimuovi pagine e/o rami al/dal lancio.
@@ -77,7 +76,7 @@ I lanci permettono di:
    * L’origine è un lancio esistente.
    * Puoi [promuovere un lancio nidificato](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) per qualsiasi target; può trattarsi di un lancio padre o di pagine sorgenti di primo livello (Produzione).
 
-   ![Un avvio nidificato](/help/sites-cloud/authoring/assets/launches-nested.png)
+   ![Un lancio nidificato](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
    >
@@ -85,7 +84,7 @@ I lanci permettono di:
 
 >[!NOTE]
 >
->La creazione e la modifica di avvii richiede diritti di accesso a `/content/launches`, come nel caso del gruppo predefinito `content-authors`.
+>La creazione e la modifica di lanci richiede diritti di accesso a `/content/launches` - come con il gruppo predefinito `content-authors`.
 >
 >Per qualsiasi problema riscontrato, contatta l&#39;amministratore del sistema.
 
@@ -93,13 +92,13 @@ I lanci permettono di:
 
 1. Nella console **Sites**, vai all’origine dei lanci.
 1. Apri la barra **Riferimenti** e seleziona la pagina sorgente.
-1. Seleziona **Lanci**, verranno elencati i lanci esistenti, insieme all&#39;accesso alla **Console Lanci**:
+1. Seleziona **Lanci**, verranno elencati i lanci esistenti e l&#39;accesso al **Console Lanci**:
 
-   ![Riferimenti agli avvii nella console Siti](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![Riferimenti di lanci nella console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Tocca o fai clic sul lancio appropriato per visualizzare l&#39;elenco delle azioni possibili :
 
-   ![Azioni da intraprendere agli avvii nella console Siti](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+   ![Azioni da intraprendere all’avvio nella console Sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## La console dei lanci {#the-launches-console}
 
@@ -107,13 +106,13 @@ La console dei lanci fornisce una panoramica dei tuoi lanci e consente di intrap
 
 * La console **Strumenti**: **Strumenti**, **Sites**, **Lanci**.
 
-* **Avvii Consente di** console nella parte inferiore della sezione  **** Avvii della barra laterale  **** Riferimenti durante la navigazione del contenuto sorgente nella console Siti.
+* **Console Lanci** nella parte inferiore del **Lanci** della sezione **Riferimenti** quando si naviga nel contenuto sorgente nella console Sites .
 
-   ![Lancia la console nei riferimenti degli avvii nella console Siti](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![Avvia la console in Riferimenti di lanci nella console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-* Il pulsante **Lanci** in alto a destra, quando si naviga nel contenuto del lancio nella console Siti:
+* La **Lanci** in alto a destra, quando si naviga nel contenuto di un lancio nella console Sites :
 
-   ![Opzione Lanci nella console Siti](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+   ![Opzione Lanci nella console Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * o direttamente; ad esempio, con:
    `https://<host>:<port>/libs/launches/content/launches.html`

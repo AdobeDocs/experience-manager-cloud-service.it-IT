@@ -7,7 +7,7 @@ exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -54,7 +54,7 @@ A [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-conte
    1. Specifica una **Titolo**.
    1. Per attivarne l&#39;uso, seleziona
       * **Modelli per frammenti di contenuto**
-      * **Query persistenti GraphQL**
+      * **Query GraphQL persistenti**
 
       ![Definire la configurazione](assets/cfm-conf-01.png)
 

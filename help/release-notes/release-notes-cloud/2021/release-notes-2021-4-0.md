@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
-
 
 # Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -18,18 +18,18 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 >[!NOTE]
 >
->Per informazioni sugli aggiornamenti della documentazione non direttamente correlati a una versione, consulta [Ultimi aggiornamenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) .
+>Consulta [Ultimi aggiornamenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=it) per informazioni dettagliate sugli aggiornamenti della documentazione non direttamente correlati a una versione.
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 è il 6 maggio 2021.
+Data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 è il 6 maggio 2021.
 La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 
 ## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
 ### Novità {#what-is-new-foundation}
 
-* [Flusso di lavoro Pubblica albero contenuto](/help/operations/replication.md#publish-content-tree-workflow) : un nuovo modello di flusso di lavoro e un nuovo passaggio consentono di migliorare le prestazioni durante la pubblicazione di gerarchie profonde di contenuto.
+* [Flusso di lavoro Pubblica albero del contenuto](/help/operations/replication.md#publish-content-tree-workflow) - Un nuovo modello e un nuovo passaggio del flusso di lavoro fornisce prestazioni migliori durante la pubblicazione di gerarchie profonde di contenuti.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 
 * GraphQL: le query persistenti ora supportano endpoint definiti dall&#39;utente specifici per le configurazioni di AEM Sites (CQ-4315928)
 
-## [!DNL Adobe Experience Manager Assets] come  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] come [!DNL Cloud Service] {#assets}
 
 ### Novità in [!DNL Assets] {#what-is-new-assets}
 
@@ -57,17 +57,17 @@ La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 
 * Quando una risorsa viene scaricata tramite l’opzione di condivisione dei collegamenti, ora puoi scegliere di scaricare o meno i rendering. In precedenza, venivano scaricate tutte le rappresentazioni delle risorse.
 
-* Gli amministratori possono configurare [!DNL Experience Manager] per eliminare l’origine delle risorse dopo l’assimilazione in massa delle risorse. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Gli amministratori possono configurare [!DNL Experience Manager] per eliminare l’origine delle risorse dopo l’assimilazione di risorse in massa. Vedi [inserimento di risorse in massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Durante l’esecuzione di un controllo di integrità per importare le risorse in blocco, Experience Manager fornisce ora ulteriori informazioni sui motivi degli errori. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Durante l’esecuzione di un controllo di integrità per importare le risorse in blocco, Experience Manager fornisce ora ulteriori informazioni sui motivi degli errori. Vedi [inserimento di risorse in massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Quando si importano le risorse utilizzando lo strumento di importazione in blocco, gli amministratori ora possono eliminare i file di origine dopo il successo dell’importazione. Consulta [inserimento di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Quando si importano le risorse utilizzando lo strumento di importazione in blocco, gli amministratori ora possono eliminare i file di origine dopo il successo dell’importazione. Vedi [inserimento di risorse in massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Durante la modifica di uno schema di metadati, un nuovo campo di selezione del percorso principale consente agli amministratori di effettuare la selezione in modo rapido e semplice, riducendo in tal modo il tempo di configurazione.
 
-* Durante la modifica di uno schema di metadati, viene aggiunto un tipo di dati che fornisce un’area di testo in formato libero nell’editor di metadati. Gli utenti possono utilizzare questa area di testo per immettere testo in formato libero come metadati di una risorsa. Consulta [Editor schema metadati](/help/assets/metadata-schemas.md).
+* Durante la modifica di uno schema di metadati, viene aggiunto un tipo di dati che fornisce un’area di testo in formato libero nell’editor di metadati. Gli utenti possono utilizzare questa area di testo per immettere testo in formato libero come metadati di una risorsa. Vedi [editor di schemi di metadati](/help/assets/metadata-schemas.md).
 
-* I metadati di molte risorse possono essere importati in blocco utilizzando un file CSV e possono essere esportati in un file CSV. Il formato di data predefinito è ora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gli utenti possono utilizzare un formato diverso aggiornando l’intestazione della colonna. Ad esempio, aggiungi `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` come intestazione di colonna nel file CSV anziché la parola `Date`.
+* I metadati di molte risorse possono essere importati in blocco utilizzando un file CSV e possono essere esportati in un file CSV. Il formato della data predefinito è ora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gli utenti possono utilizzare un formato diverso aggiornando l’intestazione della colonna. Ad esempio, aggiungi `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` come intestazione di colonna nel file CSV anziché come parola `Date`.
 
 * Nella vista a colonne, un indicatore visivo mostra lo stato di approvazione o rifiuto di ciascuna risorsa.
 
@@ -89,7 +89,7 @@ La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 
 * L’opzione di pubblicazione rapida non viene visualizzata quando una risorsa viene selezionata dai risultati della ricerca dopo la ricerca. (CQ-4317748)
 
-## [!DNL Adobe Experience Manager Forms] come  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] come [!DNL Cloud Service] {#forms}
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
@@ -97,11 +97,11 @@ La versione seguente (2021.5.0) sarà il 27 maggio 2021.
 
    Basato su algoritmi avanzati di apprendimento automatico, il processo ID governativo di Adobe Sign consente alle aziende di tutto il mondo di garantire un’autenticazione di alta qualità dell’identità del destinatario. Ora puoi utilizzare il metodo di autenticazione dell&#39;identità governativa in Forms adattivo abilitato per Adobe Sign.
 
-   ID governativo è un metodo di autenticazione dell&#39;identità premium che indica al destinatario di [caricare l&#39;immagine di un documento di identità rilasciato dal governo (patente di guida, ID nazionale, passaporto)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) e quindi valuta tale documento per assicurarne l&#39;autenticità.
+   ID governativo è un metodo di autenticazione dell&#39;identità premium che istruisce il destinatario a [caricare l’immagine di un documento d’identità rilasciato dal governo (patente di guida, ID nazionale, passaporto)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html), quindi valuta il documento per assicurarne l&#39;autenticità.
 
 * **Supporto per l’utilizzo dell’esperienza di firma nei moduli per l’invio asincrono di moduli adattivi**
 
-   È ora possibile utilizzare l’esperienza di firma all’interno del modulo per gli invii asincroni di moduli adattivi. È inoltre possibile incorporare un modulo adattivo in una pagina [!DNL Experience Manager Sites] e utilizzare l’esperienza di firma all’interno del modulo per l’invio di moduli adattivi.
+   È ora possibile utilizzare l’esperienza di firma all’interno del modulo per gli invii asincroni di moduli adattivi. È inoltre possibile incorporare un modulo adattivo in un [!DNL Experience Manager Sites] e utilizzare l’esperienza di firma in-form per l’invio di moduli adattivi.
 
 * **Supporto per l&#39;utilizzo di una variabile per specificare un allegato durante la precompilazione di un modulo adattivo per un passaggio Assegna attività**
 
@@ -157,9 +157,9 @@ La prossima versione è prevista per il 6 maggio 2021.
 
 * Un utente con le autorizzazioni necessarie può ora inviare l’endpoint di e-commerce tramite l’interfaccia utente di .
 
-* Le variabili di ambiente possono ora essere indirizzate a un servizio specifico, sia per l’authoring che per la pubblicazione. Richiede AEM versione `2021.03.5104.20210328T185548Z` o successiva.
+* Le variabili di ambiente possono ora essere indirizzate a un servizio specifico, sia per l’authoring che per la pubblicazione. Richiede AEM versione `2021.03.5104.20210328T185548Z` o superiore.
 
-* Il pulsante **Manage Git** viene visualizzato sulla scheda Pipelines anche quando non è stata configurata alcuna pipeline.
+* La **Gestisci Git** sulla scheda Pipelines viene visualizzato il pulsante anche quando non è stata configurata alcuna pipeline.
 
 * La versione dell’archetipo di progetto AEM utilizzato da Cloud Manager è stata aggiornata alla versione 27.
 
@@ -175,13 +175,13 @@ La prossima versione è prevista per il 6 maggio 2021.
 
 ### Correzioni di bug {#bug-fixes-cm-april}
 
-* Quando modifichi la pagina di audit esperienza di una pipeline, un percorso di input che inizia con una barra `( / )` non bloccherà più il passaggio nello stato in sospeso.
+* Quando modifichi la pagina di audit esperienza di una pipeline, crea un percorso di input che inizia con una barra `( / )` non comporterà più il blocco del passaggio nello stato in sospeso.
 
 * Quando viene creata una nuova pipeline di produzione, se l’utente non aggiunge alcuna sostituzione di controllo del contenuto, la pagina home predefinita non è stata sottoposta a controllo.
 
-* I problemi relativi alla `CloudServiceIncompatibleWorkflowProcess` presentavano una gravità errata nel file CSV del problema scaricabile.
+* Problemi relativi al `CloudServiceIncompatibleWorkflowProcess` aveva la gravità errata nel file CSV del problema scaricabile.
 
-* Il controllo `Runmode` produceva falsi positivi sui nodi non presenti nelle cartelle.
+* La `Runmode` check stava producendo falsi positivi sui nodi non cartelle.
 
 ## Analisi delle best practice {#best-practices-analyzer}
 
@@ -192,5 +192,4 @@ La data di rilascio di Best Practices Analyzer v2.1.12 è il 12 aprile 2021.
 ### Correzioni di bug {#bug-fixes-bpa-april}
 
 * Sono state visualizzate righe duplicate nel BPA segnalato. Questo problema è stato risolto.
-* L’interfaccia utente BPA sulla versione 6.4.2 AEM generava un errore JS che disattivava il pulsante Genera report . È stato corretto
-
+* L’interfaccia utente BPA sulla versione 6.4.2 AEM generava un errore JS che disattivava il pulsante Genera report . Questo problema è stato risolto

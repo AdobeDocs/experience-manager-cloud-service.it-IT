@@ -1,40 +1,39 @@
 ---
-title: Sviluppo e Page Diff
-description: Come funziona la funzione Page Diff e come può avere un impatto sullo sviluppatore
-translation-type: tm+mt
-source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
+title: Sviluppo e differenze tra pagine
+description: Scopri come funziona la funzione Differenze tra pagine e come può avere un impatto su uno sviluppatore
+exl-id: 03c08616-2203-4b90-bed6-4836266e2507
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 11%
 
 ---
 
-
-# Sviluppo e Page Diff {#developing-and-page-diff}
+# Sviluppo e differenze tra pagine {#developing-and-page-diff}
 
 ## Panoramica delle funzioni {#feature-overview}
 
-La creazione di contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. Un autore desidera poter confrontare la pagina corrente con una versione precedente, affiancando le differenze evidenziate.
+La creazione di contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. Un autore desidera poter confrontare la pagina corrente con una versione precedente affiancata alle differenze evidenziate.
 
-Le differenze di pagina consentono a un utente di confrontare la pagina corrente con gli avvii, le versioni precedenti e così via. Per informazioni dettagliate su questa funzione utente, vedere [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
+Le differenze tra pagine consentono a un utente di confrontare la pagina corrente con gli avvii, le versioni precedenti e così via. Per informazioni dettagliate su questa funzione utente, consulta [Differenze tra pagine](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Dettagli operazione {#operation-details}
 
-Quando si confrontano le versioni di una pagina, la versione precedente che l&#39;utente desidera confrontare viene ricreata AEM in background per facilitare la diff. Questo è necessario per poter eseguire il rendering del contenuto [per il confronto affiancato](/help/sites-cloud/authoring/features/page-diff.md).
+Quando si confrontano le versioni di una pagina, la versione precedente che l’utente desidera confrontare viene ricreata da AEM in background per facilitare le differenze. È necessario per poter eseguire il rendering del contenuto [per un confronto affiancato](/help/sites-cloud/authoring/features/page-diff.md).
 
-Questa operazione di ricreazione viene eseguita da AEM internamente ed è trasparente per l&#39;utente e non richiede alcun intervento. Tuttavia, un amministratore che visualizza l&#39;archivio, ad esempio in CRX DE Lite, visualizzerà queste versioni ricreato all&#39;interno della struttura del contenuto.
+Questa operazione di ricreazione viene eseguita da AEM internamente ed è trasparente per l&#39;utente e non richiede alcun intervento. Tuttavia, un amministratore che visualizza l’archivio, ad esempio in CRX DE Lite, vedrebbe queste versioni ricreati all’interno della struttura del contenuto.
 
-Quando si confronta il contenuto, l&#39;intera struttura fino alla pagina da confrontare viene ricreata nel seguente percorso:
+Quando si confronta il contenuto, l’intera struttura fino alla pagina da confrontare viene ricreata nella posizione seguente:
 
 `/tmp/versionhistory/`
 
-Un&#39;attività di pulizia viene eseguita automaticamente per ripulire il contenuto temporaneo.
+Un’attività di pulizia viene eseguita automaticamente per pulire questo contenuto temporaneo.
 
 ## Limitazioni  {#limitations}
 
-La diff si verifica sul lato client tramite il confronto DOM, rendendo il processo di diff semplice, ma ci sono una serie di limitazioni che devono essere considerate dallo sviluppatore.
+La differenza si verifica lato client tramite il confronto DOM, rendendo il processo di diff semplice, tuttavia lo sviluppatore deve tenere in considerazione una serie di limitazioni.
 
-* Questa funzione utilizza classi CSS che non hanno un nome con spazio sul prodotto AEM. Se nella pagina sono incluse altre classi CSS personalizzate o classi CSS di terze parti con gli stessi nomi, la visualizzazione della diff potrebbe essere interessata.
+* Questa funzione utilizza classi CSS che non hanno nomi separati nel Prodotto AEM. Se nella pagina sono incluse altre classi CSS personalizzate o classi CSS di terze parti con gli stessi nomi, la visualizzazione del confronto potrebbe essere interessata.
 
    * `html-added`
    * `html-removed`
@@ -43,8 +42,8 @@ La diff si verifica sul lato client tramite il confronto DOM, rendendo il proces
    * `cq-component-moved`
    * `cq-component-changed`
 
-* Poiché la diff è lato client ed è eseguita al caricamento della pagina, eventuali modifiche al DOM dopo l&#39;esecuzione del servizio diff lato client non verranno prese in considerazione. Ciò può incidere
+* Poiché la differenza è lato client ed è eseguita al caricamento della pagina, non verranno prese in considerazione eventuali modifiche al DOM dopo l’esecuzione del servizio di diff lato client. Ciò può influire
 
-   * Componenti che utilizzano AJAX per includere il contenuto
+   * Componenti che utilizzano AJAX per includere i contenuti
    * Applicazioni a pagina singola
-   * Componenti basati su JavaScript che modificano il DOM in base all’interazione dell’utente.
+   * Componenti basati su JavaScript che manipolano il DOM in base all’interazione dell’utente.

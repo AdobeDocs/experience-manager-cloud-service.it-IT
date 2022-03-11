@@ -225,7 +225,7 @@ Utilizzo [l&#39;IDE che preferisci](https://experienceleague.adobe.com/docs/expe
    private ProductTeaser productTeaser;
    ```
 
-   Per tutti i metodi che non dovranno essere ignorati o modificati, possiamo semplicemente restituire il valore che `ProductTeaser` restituisce. Esempio:
+   Per tutti i metodi che non dovranno essere ignorati o modificati, possiamo semplicemente restituire il valore che `ProductTeaser` restituisce. Ad esempio:
 
    ```java
    @Override

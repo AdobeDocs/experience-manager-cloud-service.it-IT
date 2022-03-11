@@ -165,7 +165,6 @@ Ecco un esempio di schema XML.
 >
 >* Capitalizzazione del primo carattere del nome dell’elemento
 >* Inserimento di spazio bianco ai limiti Camel Case.
-
 >
 >Ad esempio, se aggiungi il `userFirstName` elemento schema, la didascalia generata nel modulo adattivo è `User First Name`.
 

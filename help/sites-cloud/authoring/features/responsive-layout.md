@@ -1,14 +1,13 @@
 ---
-title: 'Layout reattivo  '
+title: Layout reattivo
 description: AEM consente di realizzare un layout reattivo per le pagine
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 99%
 
 ---
-
 
 # Layout reattivo   {#responsive-layout}
 
@@ -206,7 +205,7 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
 
 * In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Viene quindi visualizzata la barra degli strumenti per questa modalità.
 
-   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente del layout e dei componenti che ne fanno parte. Esempio:
+   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente del layout e dei componenti che ne fanno parte. Ad esempio:
 
    * **Elemento padre:** consente di selezionare il componente principale.
 
@@ -231,9 +230,9 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
    >
    >Nell’esempio in alto le azioni Mobile e Nascondi sono disponibili, perché questo Contenitore di layout è nidificato all’interno di un Contenitore di layout principale.
 
-   * **Scopri**
-componentiSelezionate i componenti padre per visualizzare la barra degli strumenti delle azioni con 
-**Mostra** componente nascosto. In questo esempio, due componenti sono nascosti.
+   * **Mostra componenti**
+Seleziona i componenti principali per visualizzare la barra degli strumenti delle azioni con 
+**Mostra componenti nascosti** opzione . In questo esempio, due componenti sono nascosti.
 
       ![Mostra componenti](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Selezionando l’opzione **Mostra componenti nascosti**, i componenti che sono attualmente nascosti nelle posizioni originali vengono visualizzati in blu.

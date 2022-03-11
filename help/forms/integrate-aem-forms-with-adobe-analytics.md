@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# Integra con [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+# Integrare con [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
 
 AEM Forms si integra con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) per acquisire e tenere traccia delle metriche delle prestazioni dei moduli pubblicati. L’obiettivo dell’analisi di queste metriche è quello di consentire agli utenti aziendali di acquisire informazioni sul comportamento degli utenti finali e di ottimizzare l’esperienza di acquisizione dei dati. È possibile acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics per Adaptive Forms.
 

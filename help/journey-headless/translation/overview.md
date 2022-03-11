@@ -5,7 +5,7 @@ exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -65,7 +65,7 @@ Anche se puoi passare direttamente a una particolare parte del percorso, molti c
 |---|---|---|
 | 0 | AEM Percorso di traduzione headless | Questo documento |
 | 1 | [Scopri i contenuti headless e come tradurli in AEM](learn-about.md) | Impara concetti headless, come si mappano a AEM e la teoria della traduzione AEM. |
-| 2 | [Guida introduttiva alla traduzione senza testa AEM](getting-started.md) | Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione AEM. |
+| 2 | [Guida introduttiva alla traduzione headless in AEM](getting-started.md) | Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione AEM. |
 | 3 | [Configurare il connettore di traduzione](configure-connector.md) | Scopri come connettersi AEM a un servizio di traduzione. |
 | 4 | [Configurare le regole di traduzione](translation-rules.md) | Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione. |
 | 5 | [Tradurre il contenuto](translate-content.md) | Utilizza il connettore di traduzione e le regole per tradurre i contenuti headless. |
@@ -85,4 +85,4 @@ Come tali percorsi sono progettati per stare da soli. Tuttavia alcuni di essi po
 * [Percorso architetto headless](/help/journey-headless/architect/overview.md) - Inizia qui per un’introduzione alle funzioni potenti, flessibili e headless di Adobe Experience Manager as a Cloud Service e a come modellare i contenuti per il tuo progetto.
 * [AEM Percorso di sviluppatori headless](/help/journey-headless/developer/overview.md) - Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle per il tuo primo progetto di sviluppo.
 * [AEM documentazione tecnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) - Se hai già una comprensione ferma delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
-* [Esercitazioni AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Se preferisci imparare facendo e sei tecnicamente inclinato, segui i nostri tutorial pratici organizzati da API e framework, che esplorano la creazione e l&#39;utilizzo di applicazioni create su AEM Headless.
+* [Esercitazioni AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Se preferisci imparare facendo e sei tecnicamente inclinato, segui i nostri tutorial pratici organizzati da API e framework, che esplorano la creazione e l&#39;utilizzo di applicazioni create su AEM Headless.

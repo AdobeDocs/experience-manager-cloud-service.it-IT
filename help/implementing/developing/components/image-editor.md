@@ -1,28 +1,27 @@
 ---
 title: Editor immagine
-description: L’Editor immagine è un elemento fondamentale di AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
-translation-type: tm+mt
-source-git-commit: 83c27daae4e8ae2ae6a8f115c9da9527971c6ecb
+description: L’editor di immagini è una parte fondamentale della AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
+exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 2%
+ht-degree: 10%
 
 ---
 
-
 # Editor immagine {#image-editor}
 
-L’Editor immagine è un elemento fondamentale di AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
+L’editor di immagini è una parte fondamentale della AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
 
-## Unità relative per mappa immagine {#relative-units-for-image-map}
+## Unità relative per la mappa immagine {#relative-units-for-image-map}
 
-L’Editor immagine persiste nelle aree delle mappe immagine sia come unità assolute che come unità relative. Le unità relative sono utili se fornite come attributi di dati per ridimensionare dinamicamente una mappa immagine (relativa alle dimensioni dell’immagine) sul lato client in un componente immagine reattivo.
+L’Editor immagini persiste nelle aree della mappa immagine come unità assolute e relative. Le unità relative sono utili se fornite come attributi di dati per ridimensionare dinamicamente una mappa immagine (rispetto alle dimensioni dell’immagine) sul lato client in un componente immagine reattiva.
 
 ### imageMap, proprietà {#imagemap-property}
 
-Le coordinate della mappa immagine vengono memorizzate in JCR come proprietà `imageMap` dall’Editor immagini. Ha il seguente formato.
+Le coordinate della mappa immagine vengono mantenute nel JCR come `imageMap` di Image Editor. Ha il seguente formato.
 
-Le aree di mappa vengono memorizzate nel modo seguente:
+La proprietà memorizza le aree mappa come segue:
 
 `[area1][area2][...]`
 
@@ -35,23 +34,23 @@ Esempio:
 `[rect(0,0,10,10)"https://www.adobe.com"|"_self"|"alt"|(0,0,0.8,0.8)]`
 `[circle(10,10,10)"https://www.adobe.com"|"_self"|"alt"|(0.8,0.8,0.8)]`
 
-## Supporto per immagini SVG {#support-for-svg-images}
+## Supporto per le immagini di SVG {#support-for-svg-images}
 
 La grafica vettoriale scalabile (SVG) è supportata dall’Editor immagini.
 
-* Sono supportati il trascinamento di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale.
+* Il trascinamento e rilascio di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale sono entrambi supportati.
 
 ## Abilitazione dei plug-in per tipo MIME {#enabling-plugins-by-mime-type}
 
-In alcune situazioni le azioni di creazione devono essere limitate per alcuni tipi MIME, a causa della mancanza di supporto nell&#39;elaborazione sul lato server. Ad esempio, la modifica di immagini SVG potrebbe non essere consentita.
+In alcune situazioni le azioni di authoring devono essere limitate per alcuni tipi MIME, a causa della mancanza di supporto nell’elaborazione sul lato server. Ad esempio, la modifica di immagini SVG potrebbe non essere consentita.
 
-I plug-in nell&#39;Editor immagine possono essere attivati selettivamente dal tipo MIME impostando una proprietà `supportedMimeTypes` sul nodo di configurazione del singolo plug-in.
+I plug-in nell’Editor immagini possono essere attivati selettivamente dal tipo MIME impostando un `supportedMimeTypes` sul nodo di configurazione del singolo plug-in.
 
 ### Esempio {#example}
 
-Ad esempio, è possibile ritagliare solo le immagini GIF, JPEG, PNG, WEBP e TIFF.
+Ad esempio, supponiamo che la possibilità di ritagliare sia consentita solo per le immagini GIF, JPEG, PNG, WEBP e TIFF.
 
-La proprietà `supportedMimeTypes` deve quindi essere impostata come una stringa dei tipi MIME consentiti sul nodo di configurazione del plug-in sul nodo `cq:editConfig` del componente immagine.
+La `supportedMimeTypes` la proprietà deve quindi essere impostata come stringa dei tipi MIME consentiti sul nodo di configurazione del plug-in nel `cq:editConfig` nodo del componente immagine.
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

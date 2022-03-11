@@ -1,14 +1,13 @@
 ---
 title: Rimozione dell'indice Lucene generico
 description: Scopri la rimozione pianificata degli indici Lucene generici e le possibili conseguenze.
-exl-id: fe0e00ac-f9c8-43cf-83c2-5a353f5eaeab
-source-git-commit: 7a3c8b59a5a642ffc335fc80898fb956221cfcc2
+exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1349'
 ht-degree: 0%
 
 ---
-
 
 # Rimozione dell&#39;indice Lucene generico {#generic-lucene-index-removal}
 

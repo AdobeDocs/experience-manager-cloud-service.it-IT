@@ -5,11 +5,11 @@ exl-id: 59d81356-2fa9-43db-bfa5-c2896c530eaa
 source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Controllo dello stato di un certificato SSL {#checking-status-an-ssl-certificate}
+# Verifica dello stato di un certificato SSL {#checking-status-an-ssl-certificate}
 
 Lo stato dei certificati SSL può essere compreso immediatamente dalla pagina del certificato SSL.
 

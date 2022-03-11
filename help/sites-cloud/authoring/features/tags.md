@@ -1,21 +1,20 @@
 ---
-title: 'Utilizzo dei tag  '
+title: Utilizzo dei tag
 description: I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web
-translation-type: tm+mt
-source-git-commit: 96bde8b7f169256b352c1663f902b874afd6a73b
+exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 96%
 
 ---
 
-
 # Utilizzo dei tag   {#using-tags}
 
 I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere paragonati a parole chiave o etichette assegnate a una pagina, una risorsa o ad altro contenuto per consentire la ricerca di contenuti specifici e correlati.
 
 * Per informazioni sulla creazione e la gestione dei tag, nonché sulla modalità di applicazione dei tag di contenuto, consulta Gestione dei tag. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* Per informazioni sul framework dei tag, nonché sull&#39;inclusione e l&#39;estensione dei tag nelle applicazioni personalizzate, consultate [Tagging per sviluppatori](/help/implementing/developing/introduction/tagging-framework.md).
+* Vedi [Assegnazione tag per sviluppatori](/help/implementing/developing/introduction/tagging-framework.md) per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag nelle applicazioni personalizzate.
 
 ## Dieci motivi per utilizzare l’assegnazione tag {#ten-reasons-to-use-tagging}
 
@@ -32,7 +31,7 @@ I tag sono un metodo semplice e veloce per classificare i contenuti di un sito w
 
 Quando progetti la struttura dei contenuti di un sito e lo schema di metadati per le risorse, considera l’approccio leggero e accessibile fornito dai tag.
 
-## Applicazione dei tag    {#applying-tags}
+## Applicazione dei tag   {#applying-tags}
 
 Nell’ambiente di authoring gli autori possono applicare i tag accedendo alle proprietà della pagina e immettendo uno o più tag nel campo **Tag/Parole chiave**.
 

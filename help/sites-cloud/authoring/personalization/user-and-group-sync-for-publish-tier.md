@@ -1,12 +1,11 @@
 ---
 title: 'Registrazione, accesso e profilo utente '
-description: Scopri Registrazione, Accesso, Dati utente e Sincronizzazione di gruppo per AEM come Cloud Service
+description: Informazioni su Registrazione, Accesso, Dati utente e Sincronizzazione dei gruppi per AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-translation-type: tm+mt
 source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
 workflow-type: tm+mt
 source-wordcount: '1177'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Le applicazioni web forniscono spesso funzioni di gestione dell’account che consentono agli utenti finali di registrarsi su un sito web e che persistono le informazioni sui dati utente, consentendo loro di accedere in futuro e di godere di un’esperienza coerente. Questo articolo descrive i seguenti concetti per AEM come Cloud Service:
+Le applicazioni web forniscono spesso funzioni di gestione dell’account che consentono agli utenti finali di registrarsi su un sito web e che persistono le informazioni sui dati utente, consentendo loro di accedere in futuro e di godere di un’esperienza coerente. Questo articolo descrive i seguenti concetti per AEM as a Cloud Service:
 
 * Registrazione
 * Accesso
@@ -28,7 +27,7 @@ Le applicazioni web forniscono spesso funzioni di gestione dell’account che co
 
 ## Registrazione {#registration}
 
-Quando un utente finale si registra per un account su un&#39;applicazione AEM, viene creato un account utente sul servizio AEM Publish, come riportato su una risorsa utente in `/home/users` nell&#39;archivio JCR.
+Quando un utente finale si registra per un account su un&#39;applicazione AEM, viene creato un account utente sul servizio AEM Publish, come riportato su una risorsa utente in `/home/users` nell’archivio JCR.
 
 Esistono due approcci per implementare la registrazione, come descritto di seguito.
 
@@ -38,9 +37,9 @@ Il codice di registrazione personalizzato può essere scritto che prende, minima
 
 1. Visualizza un componente AEM personalizzato che raccoglie le informazioni sulla registrazione
 1. Dopo l’invio, un utente di servizio con provisioning appropriato viene utilizzato per
-   1. Verifica che un utente esistente non esista già, utilizzando uno dei metodi `findAuthorizables()` dell&#39;API UserManager
-   1. Creare un record utente utilizzando uno dei metodi `createUser()` dell&#39;API UserManager
-   1. Mantieni i dati del profilo acquisiti utilizzando i metodi `setProperty()` dell’interfaccia autorizzabile
+   1. Verifica che un utente esistente non esista già, utilizzando una delle API di UserManager `findAuthorizables()` Metodi
+   1. Creare un record utente utilizzando una delle API UserManager `createUser()` Metodi
+   1. Mantieni i dati del profilo acquisiti tramite l&#39;interfaccia Authorizable `setProperty()` Metodi
 1. Flussi facoltativi, ad esempio per richiedere all’utente di convalidare la propria e-mail.
 
 ### Esterno {#external-managed-registration}
@@ -59,8 +58,8 @@ L’accesso può essere implementato con i due approcci seguenti:
 
 I clienti possono scrivere i propri componenti personalizzati. Per saperne di più, è consigliabile acquisire familiarità con:
 
-* [Sling Authentication Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
-* Inoltre, considera la possibilità di [chiedere informazioni sull&#39;accesso alla sessione AEM Community Experts](http://bit.ly/ATACEFeb15) .
+* La [Framework di autenticazione Sling](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
+* E considera [chiedere la sessione di esperti della comunità AEM](http://bit.ly/ATACEFeb15) informazioni sull’accesso.
 
 ### Integrazione con un provider di identità {#integration-with-an-idp}
 
@@ -78,13 +77,13 @@ Consulta la documentazione per ulteriori informazioni sul [Gestore autenticazion
 
 **OAuth/SSO**
 
-Per informazioni sull&#39;utilizzo del servizio Gestore autenticazione AEM SSO, consulta la documentazione [Single Sign On (SSO)](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html) .
+Consulta la sezione [Documentazione Single Sign On (SSO)](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html) per informazioni sull&#39;utilizzo AEM servizio Handler autenticazione SSO.
 
-Puoi implementare l’interfaccia `com.adobe.granite.auth.oauth.provider` con il provider OAuth desiderato.
+La `com.adobe.granite.auth.oauth.provider` Puoi implementare l’interfaccia con il provider OAuth desiderato.
 
 ### Sessioni permanenti e token incapsulati {#sticky-sessions-and-encapsulated-tokens}
 
-AEM come Cloud Service dispone di sessioni permanenti basate su cookie abilitate, che garantiscono che un utente finale venga indirizzato allo stesso nodo di pubblicazione su ogni richiesta. Per migliorare le prestazioni, la funzione del token incapsulato è abilitata per impostazione predefinita, pertanto non è necessario fare riferimento al record utente nell’archivio su ogni richiesta. Se viene sostituito il nodo di pubblicazione a cui un utente finale ha un&#39;affinità, il record del relativo ID utente sarà disponibile sul nuovo nodo di pubblicazione, come descritto nella sezione di sincronizzazione dei dati seguente.
+AEM as a Cloud Service dispone di sessioni permanenti basate su cookie abilitate, che garantiscono che un utente finale venga indirizzato allo stesso nodo di pubblicazione su ogni richiesta. Per migliorare le prestazioni, la funzione del token incapsulato è abilitata per impostazione predefinita, pertanto non è necessario fare riferimento al record utente nell’archivio su ogni richiesta. Se viene sostituito il nodo di pubblicazione a cui un utente finale ha un&#39;affinità, il record del relativo ID utente sarà disponibile sul nuovo nodo di pubblicazione, come descritto nella sezione di sincronizzazione dei dati seguente.
 
 ## Profilo utente {#user-profile}
 
@@ -94,18 +93,18 @@ Esistono diversi approcci ai dati persistenti, a seconda della natura di tali da
 
 Le informazioni sul profilo utente possono essere scritte e lette in due modi:
 
-* Uso lato server con l&#39;interfaccia `com.adobe.granite.security.user` UserPropertiesManager dell&#39;interfaccia, che inserisce i dati sotto il nodo dell&#39;utente in `/home/users`. Assicurati che le pagine univoche per utente non siano memorizzate nella cache.
+* Utilizzo lato server con `com.adobe.granite.security.user` Interfaccia UserPropertiesManager, che inserirà i dati sotto il nodo dell&#39;utente in `/home/users`. Assicurati che le pagine univoche per utente non siano memorizzate nella cache.
 * Lato client che utilizza ContextHub, come descritto da [la documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=en#personalization).
 
-### Archiviazione di dati di terze parti {#third-party-data-stores}
+### Archiviazione dati di terze parti {#third-party-data-stores}
 
 I dati dell’utente finale possono essere inviati a fornitori di terze parti come CRM e recuperati tramite API al momento dell’accesso dell’utente a AEM e memorizzati (o aggiornati) sul nodo del profilo dell’utente AEM, e utilizzati da AEM in base alle esigenze.
 
-È possibile accedere in tempo reale a servizi di terze parti per recuperare gli attributi del profilo, tuttavia è importante assicurarsi che questo non influisca in modo rilevante sull’elaborazione delle richieste in AEM.
+È possibile accedere in tempo reale a servizi di terze parti per recuperare gli attributi del profilo, tuttavia è importante assicurarsi che questo non influisca materialmente sull’elaborazione delle richieste in AEM.
 
 ## Autorizzazioni (gruppi di utenti chiusi) {#permissions-closed-user-groups}
 
-I criteri di accesso al livello di pubblicazione, denominati anche gruppi di utenti chiusi (CUG), sono definiti nell’autore AEM come [descritto qui](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=en#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
+I criteri di accesso al livello di pubblicazione, denominati anche gruppi di utenti chiusi, sono definiti nell’autore AEM come [qui descritto](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=en#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
 
 * Se gli utenti effettuano l&#39;accesso autenticandosi con un provider di identità (IdP) utilizzando SAML, il gestore di autenticazione identificherà le appartenenze al gruppo dell&#39;utente (che devono corrispondere ai CUG sul livello di pubblicazione) e persisterà l&#39;associazione tra l&#39;utente e il gruppo attraverso un record del repository
 * Se l&#39;accesso viene eseguito senza l&#39;integrazione IdP, il codice personalizzato può applicare le stesse relazioni di struttura dell&#39;archivio.
@@ -114,9 +113,9 @@ Indipendentemente dall’accesso, il codice personalizzato può anche persistere
 
 ## Sincronizzazione dati {#data-synchronization}
 
-Gli utenti finali del sito web si aspettano un’esperienza coerente su ogni richiesta di pagina web o anche quando effettuano l’accesso utilizzando un browser diverso, anche se non sono a loro conoscenza, vengono portati a diversi nodi server dell’infrastruttura del livello di pubblicazione. AEM come Cloud Service esegue questa operazione sincronizzando rapidamente la gerarchia delle cartelle `/home` (informazioni sul profilo utente, appartenenza al gruppo, ecc.) in tutti i nodi del livello di pubblicazione.
+Gli utenti finali del sito web si aspettano un’esperienza coerente su ogni richiesta di pagina web o anche quando effettuano l’accesso utilizzando un browser diverso, anche se non sono a loro conoscenza, vengono portati a diversi nodi server dell’infrastruttura del livello di pubblicazione. AEM as a Cloud Service esegue questa operazione sincronizzando rapidamente il `/home` gerarchia di cartelle (informazioni sul profilo utente, appartenenza al gruppo, ecc.) in tutti i nodi del livello di pubblicazione.
 
-A differenza di altre soluzioni AEM, la sincronizzazione dell’appartenenza di utenti e gruppi in AEM come Cloud Service non utilizza un approccio di messaggistica punto-to-point, ma implementa un approccio di pubblicazione-sottoscrizione che non richiede la configurazione del cliente.
+A differenza di altre soluzioni AEM, la sincronizzazione dell’appartenenza di utenti e gruppi in AEM as a Cloud Service non utilizza un approccio di messaggistica punto-to-punto, ma implementa un approccio di pubblicazione-sottoscrizione che non richiede la configurazione del cliente.
 
 >[!NOTE]
 >

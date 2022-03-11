@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -30,9 +30,9 @@ Gli Elenchi consentiti IP possono essere aggiunti una volta e applicati/non appl
 
 Utilizzando la pagina di Elenco consentiti IP dell’interfaccia utente di Cloud Manager o la pagina Dettagli ambiente, un utente con autorizzazioni può eseguire diverse attività per gestire gli Elenchi consentiti IP per i tuoi ambienti, tra cui:
 
-* [Aggiunta di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+* [Aggiunta di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
    >[!NOTE]
    > Puoi aggiungere una volta e riutilizzare o applicare la regola per un numero qualsiasi di volte tra i servizi di ambiente nel programma.
 * [Visualizzazione o aggiornamento di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
 * [Applicazione o annullamento dell’applicazione di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-* [Eliminazione di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+* [Eliminazione di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)

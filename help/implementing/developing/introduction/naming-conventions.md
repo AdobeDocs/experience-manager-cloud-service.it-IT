@@ -5,7 +5,7 @@ exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -17,13 +17,13 @@ I nodi nell&#39;archivio sono soggetti a denominazioni convenzionali del Java Co
 
 Queste convenzioni di denominazione sono implementate a vari livelli:
 
-* JcrUtil: implementazione AEM delle [utility JCR](#jcr-utilities).
-* PageManager: il [Page Manager](#page-manager) fornisce metodi per le operazioni a livello di pagina.
+* JcrUtil: l&#39;attuazione AEM [Utilità JCR](#jcr-utilities).
+* PageManager: la [Gestione pagine](#page-manager) fornisce metodi per le operazioni a livello di pagina.
 * Nell’interfaccia AEM {#ui-behavior}
 
 ### Utilità JCR {#jcr-utilities}
 
-[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis l&#39;implementazione AEM delle utility JCR. Di particolare interesse per la convalida dei nomi sono le mappature dei caratteri che controlla e le seguenti convalide:
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) è l’implementazione AEM delle utility JCR. Di particolare interesse per la convalida dei nomi sono le mappature dei caratteri che controlla e le seguenti convalide:
 
 * `isValidName`
    * Controlla se il nome non è vuoto e contiene solo caratteri validi.
@@ -34,7 +34,7 @@ Queste convenzioni di denominazione sono implementate a vari livelli:
 
 ### Gestione pagine {#page-manager}
 
-[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager fornisce metodi per le operazioni a livello di pagina, in base a  [JCRUtil](#jcr-utilities).
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) fornisce metodi per le operazioni a livello di pagina, in base a [JCRUtil](#jcr-utilities).
 
 ### Comportamento dell’interfaccia AEM {#ui-behavior}
 

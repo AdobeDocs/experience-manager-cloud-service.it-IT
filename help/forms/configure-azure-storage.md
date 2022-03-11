@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Configura[!DNL Azure]archiviazione {#configure-azure-storage}
 
-[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce un [!DNL Azure] configurazione di archiviazione per integrare i moduli con [!DNL Azure] servizi di storage. Il modello dati modulo può essere utilizzato per creare un Forms adattivo che interagisca con [!DNL Azure] per abilitare i flussi di lavoro aziendali. Esempio:
+[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce un [!DNL Azure] configurazione di archiviazione per integrare i moduli con [!DNL Azure] servizi di storage. Il modello dati modulo può essere utilizzato per creare un Forms adattivo che interagisca con [!DNL Azure] per abilitare i flussi di lavoro aziendali. Ad esempio:
 
 * Scrivere dati in [!DNL Azure] all’invio di moduli adattivi.
 * Scrivi dati in [!DNL Azure] attraverso entità personalizzate definite in Form Data Model e viceversa.

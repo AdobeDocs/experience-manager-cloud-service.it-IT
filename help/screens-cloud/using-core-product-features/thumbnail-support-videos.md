@@ -1,14 +1,14 @@
 ---
-title: Supporto delle miniature per video in Screens come Cloud Service
-description: Questa pagina descrive come aggiungere al Cloud Service il supporto per le miniature per i video in Screens.
+title: Supporto delle miniature per i video in Screens as a Cloud Service
+description: Questa pagina descrive come aggiungere il supporto per le miniature per i video in Screens as a Cloud Service.
 index: true
-source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
+exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Supporto delle miniature per video {#thumbnail-support-videos}
 
@@ -31,16 +31,16 @@ Il supporto per le miniature consente di:
 
 >[!IMPORTANT]
 >**Prerequisiti**
->Prima di imparare a utilizzare le miniature per i video, assicurati di imparare a creare rappresentazioni video per i canali in Screens come progetto di Cloud Service. Per ulteriori informazioni, consulta [qui](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) .
+>Prima di imparare a utilizzare le miniature per i video, assicurati di imparare a creare rappresentazioni video per i canali nel progetto as a Cloud Service di Screens. Vedi [qui](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) per ulteriori dettagli.
 
 Per usare le miniature nei video, effettua le seguenti operazioni:
 
 1. Passa a un canale Screens esistente o creane uno nuovo.
 
    >[!NOTE]
-   >Per scoprire come creare un canale e aggiungere contenuti a un canale, consulta [Creazione e gestione di un canale in Screens come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
+   >Per scoprire come creare un canale e aggiungere contenuti a un canale, vedi [Creazione e gestione di un canale in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
 
-1. Seleziona il canale e fai clic su **Modifica** nella barra delle azioni per aprire l&#39;editor.
+1. Seleziona il canale e fai clic su **Modifica** dalla barra delle azioni per aprire l’editor.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
@@ -48,15 +48,15 @@ Per usare le miniature nei video, effettua le seguenti operazioni:
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Seleziona il video e fai clic sull&#39;icona *chiave inglese* per aprire le proprietà del video.
+1. Seleziona il video e fai clic sul *chiave* per aprire le proprietà video.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. Viene visualizzata la finestra di dialogo **Video** in cui viene visualizzata la zona di rilascio **Miniatura**.
+1. La **Video** viene visualizzata la finestra di dialogo in cui viene visualizzata la **Miniatura** zona di rilascio.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
-1. Trascina e rilascia un’immagine dal selettore delle risorse nella zona di rilascio **Miniatura** e fai clic su **Fine**.
+1. Trascina e rilascia un’immagine dal selettore delle risorse al **Miniatura** zona di rilascio e fai clic su **Fine**.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
 

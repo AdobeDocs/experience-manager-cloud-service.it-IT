@@ -2,13 +2,13 @@
 title: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2021.12.0
 description: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2021.12.0
 feature: Release Information
-source-git-commit: 2788db9338da5499b4a9e72ce196e4ae9857b5d5
+exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 7%
+ht-degree: 40%
 
 ---
-
 
 # Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2021.12.0 {#release-notes}
 
@@ -21,21 +21,21 @@ Questa pagina illustra le note sulla versione per gli strumenti di migrazione in
 
 ### Data di pubblicazione {#release-date-bpa}
 
-La data di rilascio di Best Practices Analyzer v2.1.22 è il 10 dicembre 2021.
+La data di rilascio di Best Practices Analyzer v2.1.22 è il 1 dicembre 2021.
 
 ### Novità {#what-is-new-bpa}
 
-* Possibilità di rilevare e segnalare la versione di ACS commons utilizzata.
+* Possibilità di rilevare e segnalare la versione di ACS comunemente utilizzata.
 * Possibilità di rilevare e segnalare il numero di utenti e sottogruppi in un gruppo.
 * Possibilità di rilevare e segnalare i valori delle proprietà dei nodi in MongoDB che superano i 16 MB.
 
 ### Correzioni di bug {#bug-fixes-bpa}
 
 * Il rilevamento dei componenti di Foundation è stato perfezionato per ridurre i falsi negativi.
-* Per i clienti AEM Forms, messaggistica BPA riguardante `EMAIL_PDF_SUBMIT_ACTION` non disponibile su AEM as a Cloud Service è stato corretto.
+* Per i clienti AEM Forms, la messaggistica BPA riguardante `EMAIL_PDF_SUBMIT_ACTION` non disponibile su AEM as a Cloud Service è stata corretta.
 
 
-## Strumento Content Transfer (Trasferimento contenuti)  {#ctt-release}
+## Strumento Trasferimento contenuti {#ctt-release}
 
 ### Data di pubblicazione {#release-date-ctt}
 

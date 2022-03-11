@@ -51,7 +51,7 @@ Forse, forse no, ma è certamente un grande ***complicato*** la modellazione dei
 >
 >Poiché AEM i contenuti, ci riferiamo alla modellazione dei dati come modellazione dei contenuti.
 
-Esempio:
+Ad esempio:
 
 Ci sono molte scuole, ma tutte hanno varie cose in comune:
 
@@ -206,7 +206,7 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 
 ### Creazione di modelli di frammenti di contenuto {#creating-content-fragment-models}
 
-All’inizio è necessario abilitare i Modelli per frammenti di contenuto per il sito, questo avviene nel Browser configurazioni; in Strumenti -> Generale -> Browser di configurazione. Puoi scegliere di configurare la voce globale oppure crearne una nuova. Esempio:
+All’inizio è necessario abilitare i Modelli per frammenti di contenuto per il sito, questo avviene nel Browser configurazioni; in Strumenti -> Generale -> Browser di configurazione. Puoi scegliere di configurare la voce globale oppure crearne una nuova. Ad esempio:
 
 ![Definire la configurazione](assets/cfm-configuration.png)
 
@@ -214,7 +214,7 @@ All’inizio è necessario abilitare i Modelli per frammenti di contenuto per il
 >
 >Consulta Risorse aggiuntive - Frammenti di contenuto nel browser di configurazione
 
-È quindi possibile creare modelli di frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in Strumenti -> Risorse -> Modelli per frammenti di contenuto. Esempio:
+È quindi possibile creare modelli di frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in Strumenti -> Risorse -> Modelli per frammenti di contenuto. Ad esempio:
 
 ![Modello per frammenti di contenuto](assets/cfm-model.png)
 
@@ -248,7 +248,7 @@ Una volta creato il frammento, è possibile aprirlo nell’Editor frammento di c
 
 Dopo aver selezionato il modello appropriato, nell’Editor frammento di contenuto viene aperto un frammento di contenuto per la modifica:
 
-![Editor frammento di contenuto ](assets/cfm-editor.png)
+![Editor frammento di contenuto](assets/cfm-editor.png)
 
 >[!NOTE]
 >
@@ -276,5 +276,5 @@ Ora che hai imparato a modellare la tua struttura e a creare contenuti a seconda
    * [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) - creazione e creazione di frammenti di contenuto; questa pagina ti porterà ad altre sezioni dettagliate
 * [Schemi AEM GraphQL](access-your-content.md) - come GraphQL realizza i modelli
 * [Struttura dei frammenti di contenuto di esempio](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [Guida introduttiva di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Una breve serie di esercitazioni video che offre una panoramica dell’utilizzo delle funzioni senza testa AEM, inclusa la modellazione dei contenuti e GraphQL
+* [Guida introduttiva di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) - Una breve serie di esercitazioni video che offre una panoramica dell’utilizzo delle funzioni senza testa AEM, inclusa la modellazione dei contenuti e GraphQL
    * [Nozioni di base sulla modellazione GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - Scopri come definire e utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) per l’utilizzo con GraphQL.

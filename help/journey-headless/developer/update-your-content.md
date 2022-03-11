@@ -5,17 +5,17 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Come aggiornare i contenuti tramite le API di AEM Assets {#update-your-content}
 
-In questa parte del [AEM Percorso di sviluppatori headless,](overview.md) scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
+In questa parte del [AEM Percorso di sviluppo headless,](overview.md) scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso AEM headless, [Come accedere ai contenuti tramite API di distribuzione AEM](access-your-content.md) hai imparato ad accedere ai contenuti headless in AEM tramite l’API GraphQL di AEM e ora dovresti:
+Nel documento precedente del percorso senza testa AEM, [Come accedere ai contenuti tramite API di consegna AEM](access-your-content.md) hai imparato ad accedere ai contenuti headless in AEM tramite l’API GraphQL di AEM e ora dovresti:
 
 * Comprendere ad alto livello GraphQL.
 * Scopri come funziona l’API GraphQL di AEM.
@@ -41,7 +41,7 @@ Nella fase precedente del Percorso Headless hai appreso dell’utilizzo dell’A
 
 Allora perché è necessaria un&#39;altra API?
 
-L’API HTTP di Assets consente di **leggere** il contenuto, ma consente anche di **creare**, **Aggiornare** e **Eliminare** contenuti - azioni non possibili con l’API GraphQL.
+L’API HTTP di Assets consente di: **Leggi** i contenuti, ma consente anche di: **Crea**, **Aggiorna** e **Elimina** contenuto : azioni non possibili con l’API GraphQL.
 
 L’API REST di Assets è disponibile per ogni installazione predefinita di una versione di Adobe Experience Manager as a Cloud Service recente.
 
@@ -52,7 +52,7 @@ L’API HTTP delle risorse include:
 * API REST di Assets
 * incluso il supporto per i frammenti di contenuto
 
-L’implementazione corrente dell’API HTTP Assets si basa sullo stile architetturale **REST** e consente di accedere ai contenuti (memorizzati in AEM) tramite le operazioni **CRUD** (Creazione, lettura, aggiornamento, eliminazione).
+L’implementazione corrente dell’API HTTP Assets si basa sul **REST** stile architettonico e consente di accedere ai contenuti (memorizzati in AEM) tramite **CRUDO** operazioni (Crea, Leggi, Aggiorna, Elimina).
 
 Con queste operazioni l’API ti consente di utilizzare Adobe Experience Manager as a Cloud Service come CMS headless (Content Management System) fornendo servizi di contenuto a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON. Ad esempio, le applicazioni a pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite un’API, spesso in formato JSON.
 
@@ -209,34 +209,34 @@ Associated content is currently not exposed.
 
 ### Accesso {#access}
 
-L’API REST di Assets utilizza l’endpoint `/api/assets` e richiede il percorso della risorsa per accedervi (senza l’ `/content/dam` iniziale).
+L’API REST di Assets utilizza l’ `/api/assets` e richiede il percorso della risorsa per accedervi (senza l’iniziale `/content/dam`).
 
 * Ciò significa che per accedere alla risorsa in:
    * `/content/dam/path/to/asset`
 * È necessario richiedere:
    * `/api/assets/path/to/asset`
 
-Ad esempio, per accedere a `/content/dam/wknd/en/adventures/cycling-tuscany`, richiedi `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Ad esempio, per accedere a `/content/dam/wknd/en/adventures/cycling-tuscany`, richiesta `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >Accedere a:
 >
->* `/api/assets` **non** richiede l’utilizzo del  `.model` selettore.
->* `/content/path/to/page` **** richiede l’utilizzo del  `.model` selettore.
+>* `/api/assets` **non** l&#39;uso `.model` selettore.
+>* `/content/path/to/page` **does** richiedere l&#39;uso `.model` selettore.
 
 
 ### Operazione {#operation}
 
 Il metodo HTTP determina l&#39;operazione da eseguire:
 
-* **GET** : per recuperare una rappresentazione JSON di una risorsa o di una cartella
-* **POST** : per creare nuove risorse o cartelle
-* **PUT** : per aggiornare le proprietà di una risorsa o di una cartella
-* **DELETE** : per eliminare una risorsa o una cartella
+* **GET** - per recuperare una rappresentazione JSON di una risorsa o di una cartella
+* **POST** - per creare nuove risorse o cartelle
+* **PUT** - per aggiornare le proprietà di una risorsa o di una cartella
+* **DELETE** - per eliminare una risorsa o una cartella
 
 >[!NOTE]
 >
->Il corpo della richiesta e/o i parametri URL possono essere utilizzati per configurare alcune di queste operazioni; ad esempio, definisci che una cartella o una risorsa debba essere creata da una richiesta **POST**.
+>Il corpo della richiesta e/o i parametri URL possono essere utilizzati per configurare alcune di queste operazioni; ad esempio, definisci che una cartella o una risorsa debba essere creata da un **POST** richiesta.
 
 Il formato esatto delle richieste supportate è definito nella documentazione Riferimento API.
 
@@ -255,7 +255,7 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 
 >[!NOTE]
 >
->Per ulteriori dettagli, consulta Riferimento API . In particolare, [API Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>Per ulteriori dettagli, consulta Riferimento API . In particolare, [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### Lettura/consegna {#read-delivery}
 
@@ -263,7 +263,7 @@ L’utilizzo avviene tramite:
 
 `GET /{cfParentPath}/{cfName}.json`
 
-Esempio:
+Ad esempio:
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -280,7 +280,7 @@ L’utilizzo avviene tramite:
 
 `POST /{cfParentPath}/{cfName}`
 
-Il corpo deve contenere una rappresentazione JSON del frammento di contenuto da creare, incluso qualsiasi contenuto iniziale da impostare sugli elementi del frammento di contenuto. È obbligatorio impostare la proprietà `cq:model` e deve puntare a un modello di frammento di contenuto valido. In caso contrario si verifica un errore. È inoltre necessario aggiungere un&#39;intestazione `Content-Type` impostata su `application/json`.
+Il corpo deve contenere una rappresentazione JSON del frammento di contenuto da creare, incluso qualsiasi contenuto iniziale da impostare sugli elementi del frammento di contenuto. È obbligatorio impostare il `cq:model` e deve puntare a un modello di frammento di contenuto valido. In caso contrario si verifica un errore. È inoltre necessario aggiungere un’intestazione `Content-Type` che è impostato su `application/json`.
 
 ### Aggiorna {#update}
 
@@ -318,7 +318,7 @@ Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, dev
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Continua il tuo percorso AEM senza testa rivedendo il documento [Come andare in diretta con la tua applicazione senza testa](go-live.md) in cui prendi in diretta il tuo progetto senza testa AEM!
+Continua il tuo percorso AEM headless rivedendo il documento successivo [Come andare in diretta con la tua applicazione headless](go-live.md) dove si prende il vostro progetto AEM Headless in diretta!
 
 ## Risorse aggiuntive {#additional-resources}
 

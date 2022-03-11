@@ -1,17 +1,17 @@
 ---
-title: 'Gestisci pubblicazione  '
+title: 'Gestisci pubblicazione '
 description: Pubblicare o annullare la pubblicazione delle risorse in Experience Manager Assets, Dynamic Media e Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-source-git-commit: 6ffdd6801fffb743314759b6c303723c2599dfa5
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 8%
 
 ---
-
 
 # Gestire la pubblicazione in Experience Manager Assets {#manage-publication-in-aem}
 
@@ -191,4 +191,3 @@ Il processo di pubblicazione per **[!UICONTROL Immediato]** e **[!UICONTROL All&
 * Le cartelle vuote non vengono pubblicate.
 * Se pubblichi una risorsa in fase di elaborazione, viene pubblicato solo il contenuto originale. Mancano i rendering. Attendi il completamento dell’elaborazione, quindi pubblica o ripubblica la risorsa al termine dell’elaborazione.
 * Quando si annulla la pubblicazione di una risorsa complessa, è necessario annullare la pubblicazione solo della risorsa. Evita di annullare la pubblicazione dei riferimenti perché potrebbero essere referenziati da altre risorse pubblicate.
-

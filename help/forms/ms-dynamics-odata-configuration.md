@@ -1,13 +1,13 @@
 ---
 title: Come configurare [!DNL Microsoft Dynamics] OData?
-description: Scopri come creare un modello dati modulo basato su entità, attributi e servizi definiti in [!DNL Microsoft Dynamics] service. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Microsoft Dynamics] per abilitare i flussi di lavoro aziendali.
+description: Scopri come creare un modello dati modulo basato su entità, attributi e servizi definiti in [!DNL Microsoft Dynamics] servizio. Il modello dati modulo può essere utilizzato per creare un Forms adattivo che interagisca con [!DNL Microsoft Dynamics] per abilitare i flussi di lavoro aziendali.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ![integrazione dei dati](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] è un software CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning) che fornisce soluzioni aziendali per la creazione e la gestione di account cliente, contatti, lead, opportunità e casi. [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce una configurazione del servizio cloud OData per integrare Forms sia online che on-premise [!DNL Microsoft Dynamics] server. Consente di creare un modello dati modulo basato su entità, attributi e servizi definiti in [!DNL Microsoft Dynamics] servizio. Il modello dati modulo può essere utilizzato per creare un Forms adattivo che interagisca con [!DNL Microsoft Dynamics] per abilitare i flussi di lavoro aziendali. Esempio:
+[!DNL Microsoft Dynamics] è un software CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning) che fornisce soluzioni aziendali per la creazione e la gestione di account cliente, contatti, lead, opportunità e casi. [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce una configurazione del servizio cloud OData per integrare Forms sia online che on-premise [!DNL Microsoft Dynamics] server. Consente di creare un modello dati modulo basato su entità, attributi e servizi definiti in [!DNL Microsoft Dynamics] servizio. Il modello dati modulo può essere utilizzato per creare un Forms adattivo che interagisca con [!DNL Microsoft Dynamics] per abilitare i flussi di lavoro aziendali. Ad esempio:
 
 * Query [!DNL Microsoft Dynamics] server per i dati e precompilare Adaptive Forms
 * Scrivere dati in [!DNL Microsoft Dynamics] sull’invio di moduli adattivi
@@ -41,7 +41,7 @@ Prima di iniziare a configurare e configurare [!DNL Microsoft Dynamics], assicur
    * [!DNL Microsoft Dynamics] 365 locali
    * [!DNL Microsoft Dynamics] 2016 on-premise
 
-* [Registrazione della domanda di [!DNL Microsoft Dynamics] online service with [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Prendi nota dei valori dell’ID client (noto anche come ID applicazione) e del segreto client per il servizio registrato. Questi valori vengono utilizzati mentre [configurazione del servizio cloud per [!DNL Microsoft Dynamics] servizio](#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Registrazione della domanda di [!DNL Microsoft Dynamics] servizio online con [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Prendi nota dei valori dell’ID client (noto anche come ID applicazione) e del segreto client per il servizio registrato. Questi valori vengono utilizzati mentre [configurazione del servizio cloud per [!DNL Microsoft Dynamics] servizio](#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## Imposta URL di risposta per registrato [!DNL Microsoft Dynamics] applicazione {#set-reply-url-for-registered-microsoft-dynamics-application}
 

@@ -2,19 +2,19 @@
 title: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.1.0
 description: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.1.0
 feature: Release Information
-source-git-commit: 45520a55958030fa053491b921e70da18b16377f
+exl-id: cbd0c316-bda3-48fb-89d6-a8f97bad1970
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 6%
 
 ---
 
-
 # Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.1.0 {#release-notes}
 
 Questa pagina illustra le note sulla versione per gli strumenti di migrazione AEM as a Cloud Service 2022.1.0.
 
-## Strumento Content Transfer (Trasferimento contenuti)  {#ctt-release}
+## Strumento Trasferimento contenuti {#ctt-release}
 
 ### Data di pubblicazione {#release-date-ctt}
 
@@ -27,4 +27,3 @@ La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v
 ### Correzioni di bug {#bug-fixes-ctt}
 
 * Configurazioni predefinite aggiornate per ridurre i timeout di esecuzione durante l’estrazione.
-

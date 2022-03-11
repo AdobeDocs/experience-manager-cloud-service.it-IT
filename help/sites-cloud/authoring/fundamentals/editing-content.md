@@ -1,14 +1,13 @@
 ---
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile modificarla per aggiornarne i contenuti
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
 
 ---
-
 
 # Modifica del contenuto di una pagina{#editing-page-content}
 
@@ -157,7 +156,7 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
 1. Il componente selezionato verrà aggiunto in fondo alla pagina. [Modifica](#edit-content) il componente come preferisci.
 
-### Inserimento di un componente utilizzando il browser Risorse    {#inserting-a-component-using-the-assets-browser}
+### Inserimento di un componente utilizzando il browser Risorse   {#inserting-a-component-using-the-assets-browser}
 
 È possibile aggiungere un nuovo componente alla pagina anche trascinando una risorsa dal [browser Risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Questo determina la creazione automatica di un nuovo componente del tipo appropriato (e che include la risorsa).
 
@@ -270,7 +269,7 @@ Esistono due metodi per aggiungere e/o modificare contenuti nei componenti:
 * Apri la [finestra di dialogo del componente per la modifica](#component-edit-dialog).
 * Per aggiungere direttamente contenuti [trascina una risorsa](#drag-and-drop-assets-into-component) dal browser risorse.
 
-### Finestra di dialogo di modifica del componente    {#component-edit-dialog}
+### Finestra di dialogo di modifica del componente   {#component-edit-dialog}
 
 Puoi aprire un componente per modificarne il contenuto utilizzando l’icona [Modifica (matita) nella barra degli strumenti del componente](#component-toolbar).
 
@@ -394,14 +393,14 @@ Per passare facilmente all’[Editor modelli](/help/sites-cloud/authoring/featur
 
 Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [Vista a colonne](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) o [Vista a elenco](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
 
-## Stato della Live Copy    {#live-copy-status}
+## Stato della Live Copy   {#live-copy-status}
 
 La [modalità di pagina Stato Live Copy](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) consente di visualizzare una panoramica rapida dello stato della live copy e di quali componenti sono ereditati o no:
 
 * Bordo verde: componente ereditato
 * Bordo rosa: l’ereditarietà del componente è stata annullata
 
-Esempio:
+Ad esempio:
 
 ![Esempio di visualizzazione stato Live Copy](/help/sites-cloud/authoring/assets/editing-live-copy-status.png)
 
@@ -409,7 +408,7 @@ Esempio:
 
 Le [Annotazioni](/help/sites-cloud/authoring/fundamentals/annotations.md) consentono a revisori e altri autori di fornire un riscontro sui contenuti. Spesso sono utilizzate a scopo di revisione e di convalida.
 
-## Anteprima delle pagine    {#previewing-pages}
+## Anteprima delle pagine   {#previewing-pages}
 
 Esistono due opzioni per visualizzare in anteprima una pagina:
 
@@ -443,7 +442,7 @@ Quando si creano contenuti, la modalità di anteprima è disponibile utilizzando
 
 L’opzione **Visualizza come pubblicato**, è disponibile nel menu [Informazioni pagina](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information). Permette di aprire la pagina in una nuova scheda, aggiornando il contenuto e visualizzando la pagina esattamente come apparirebbe nell’ambiente di pubblicazione.
 
-## Blocco di una pagina {#locking-a-page}
+## Blocco di una pagina   {#locking-a-page}
 
 AEM consente di bloccare una pagina in modo da impedire che i contenuti possano essere modificati. Questa funzione è utile quando si devono apportare numerose modifiche a una pagina oppure se occorre bloccarla per un breve periodo di tempo.
 

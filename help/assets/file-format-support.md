@@ -30,7 +30,7 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 
 | Livello di supporto | Descrizione |
 | ------------- | --------------------------- |
-| . | Supportata |
+| ✓ | Supportata |
 | * | Vedere le osservazioni sotto la tabella |
 | - | Non applicabile |
 
@@ -38,17 +38,17 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 
 | Formato file | Generazione di miniature | Estrazione full-text | Estrazione di metadati | Larghezza/Altezza |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | . | - | . | . |
-| COLLABORAZIONE | - | - | . | - |
-| DN | . | - | . | . |
-| IDEE | - | - | . | - |
-| INDD | . | - | . | ✓ * |
-| INDT | - | - | . | - |
-| PDF | . | . | . | . |
-| PROTO | - | - | . | - |
-| PSB | . | - | . | . |
-| PSD | . | - | . | . |
-| XD | . | - | . | . |
+| AI | ✓ | - | ✓ | ✓ |
+| COLLABORAZIONE | - | - | ✓ | - |
+| DN | ✓ | - | ✓ | ✓ |
+| IDEE | - | - | ✓ | - |
+| INDD | ✓ | - | ✓ | ✓ * |
+| INDT | - | - | ✓ | - |
+| PDF | ✓ | ✓ | ✓ | ✓ |
+| PROTO | - | - | ✓ | - |
+| PSB | ✓ | - | ✓ | ✓ |
+| PSD | ✓ | - | ✓ | ✓ |
+| XD | ✓ | - | ✓ | ✓ |
 
 \* Per [!DNL Adobe InDesign] file (INDD), la dimensione del rendering è determinata dall’anteprima incorporata nel file INDD. Configura le preferenze in [!DNL InDesign] (**[!UICONTROL Preferenze > Gestione file > Salva sempre immagini di anteprima con documenti, Dimensione anteprima]**) per incorporare rappresentazioni di dimensioni maggiori.
 
@@ -56,16 +56,16 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 
 | Formato file | Generazione di miniature | Estrazione di metadati | Larghezza/Altezza | Ritaglia |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | . | - | . | . |
-| EPS | . | . | - | - |
-| GIF | . | . | . | . |
-| JPEG | . | . | . | . |
-| PNG | . | . | . | . |
-| RGB | . | . | . | . |
-| RGBA | . | . | . | . |
-| SGI | . | . | . | . |
-| SVG | . | - | . | . |
-| TIFF | . | . | . | - |
+| BMP | ✓ | - | ✓ | ✓ |
+| EPS | ✓ | ✓ | - | - |
+| GIF | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ |
+| PNG | ✓ | ✓ | ✓ | ✓ |
+| RGB | ✓ | ✓ | ✓ | ✓ |
+| RGBA | ✓ | ✓ | ✓ | ✓ |
+| SGI | ✓ | ✓ | ✓ | ✓ |
+| SVG | ✓ | - | ✓ | ✓ |
+| TIFF | ✓ | ✓ | ✓ | - |
 
 ## Formati 3D {#support-3d-formats}
 
@@ -75,44 +75,44 @@ Vedi anche [Utilizzare le risorse 3D in Dynamic Media](/help/assets/dynamic-medi
 
 | Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo dell&#39;accesso | Anteprima miniature | Anteprima 3D | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | . | . | . | - | . | . | - | - |
-| gLB | . | . | . | . | . | - | . | . |
-| gLTF | . | . | . | - | . | - | . | - |
-| OBJ | . | . | . | . | . | - | . | . |
-| STL | . | . | . | . | . | - | . | . |
-| USDz | . | . | . | . | . | - | - | . |
+| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## [!DNL Camera RAW] formati {#camera-raw-formats}
 
 | Formato file | Generazione di miniature | Estrazione di metadati | Larghezza/Altezza |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | . | . | . |
-| FRECCIA | . | . | . |
-| CR2 | . | . | . |
-| CR3 | . | . | . |
-| CRW | . | . | . |
-| DCR | . | . | . |
-| DNG | . | . | . |
-| ERF | . | . | . |
-| FFF | . | . | . |
-| RGPD | . | . | . |
-| IIQ | . | . | . |
-| KDC | . | . | . |
-| MEF | . | . | . |
-| MFW | . | . | . |
-| MOS | . | . | . |
-| MRW | . | . | . |
-| NEF | . | . | . |
-| NRW | . | . | . |
-| ORF | . | . | . |
-| PEF | . | . | . |
-| RAF | . | . | . |
-| RAZZA | . | . | . |
-| RW2 | . | . | . |
-| RWL | . | . | . |
-| SRF | . | . | . |
-| SRW | . | . | . |
-| X3F | . | . | . |
+| 3FR | ✓ | ✓ | ✓ |
+| FRECCIA | ✓ | ✓ | ✓ |
+| CR2 | ✓ | ✓ | ✓ |
+| CR3 | ✓ | ✓ | ✓ |
+| CRW | ✓ | ✓ | ✓ |
+| DCR | ✓ | ✓ | ✓ |
+| DNG | ✓ | ✓ | ✓ |
+| ERF | ✓ | ✓ | ✓ |
+| FFF | ✓ | ✓ | ✓ |
+| RGPD | ✓ | ✓ | ✓ |
+| IIQ | ✓ | ✓ | ✓ |
+| KDC | ✓ | ✓ | ✓ |
+| MEF | ✓ | ✓ | ✓ |
+| MFW | ✓ | ✓ | ✓ |
+| MOS | ✓ | ✓ | ✓ |
+| MRW | ✓ | ✓ | ✓ |
+| NEF | ✓ | ✓ | ✓ |
+| NRW | ✓ | ✓ | ✓ |
+| ORF | ✓ | ✓ | ✓ |
+| PEF | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ |
+| RAZZA | ✓ | ✓ | ✓ |
+| RW2 | ✓ | ✓ | ✓ |
+| RWL | ✓ | ✓ | ✓ |
+| SRF | ✓ | ✓ | ✓ |
+| SRW | ✓ | ✓ | ✓ |
+| X3F | ✓ | ✓ | ✓ |
 
 ## Formati documento {#document-formats}
 
@@ -120,53 +120,53 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 | Formato file | Generazione di miniature | Estrazione full-text | Larghezza/Altezza | Gestione dei metadati | [Risorse collegate](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| DOC | - | - | - | . | . |
-| DOCX | . | . | . | . | . |
-| EPUB | - | . | - | - | - |
-| HTML | - | . | - | . | . |
-| ODF | . | . | . | - | - |
-| ODM | . | . | . | - | - |
-| ODP | . | . | . | - | - |
-| ODS | . | . | . | - | - |
-| ODT | . | . | . | . | . |
-| UFG | . | . | . | - | - |
-| PDF | . | . | . | . | . |
-| PPT | - | - | - | . | . |
-| PPTX | . | . | . | . | . |
-| PS | - | - | . | - | - |
-| RTF | - | . | - | . | . |
-| TXT | . | . | - | . | . |
-| XLS | - | - | - | . | . |
-| XLSX | . | . | . | . | . |
-| XML | - | . | - | - | - |
+| DOC | - | - | - | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | ✓ | - | - | - |
+| HTML | - | ✓ | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
+| UFG | ✓ | ✓ | ✓ | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PS | - | - | ✓ | - | - |
+| RTF | - | ✓ | - | ✓ | ✓ |
+| TXT | ✓ | ✓ | - | ✓ | ✓ |
+| XLS | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | - | ✓ | - | - | - |
 
 ## Formati video {#video-formats}
 
 | Formato file | Generazione di miniature | Estrazione di metadati | Larghezza/Altezza |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | . | - |
-| 3GP | - | . | - |
-| AVI | . | . | . |
-| DIVX | . | - | . |
-| F4V | . | . | . |
-| FLV | . | . | . |
-| M2T | . | - | . |
-| M2TS | . | - | . |
-| M2V | . | - | . |
-| M4V | . | . | . |
-| MKV | . | - | . |
-| MOV | . | . | . |
-| MP4 | . | . | . |
-| MPEG | . | . | . |
-| MPG | . | . | . |
-| MTS | . | - | . |
-| MXF | . | - | . |
-| OGV | . | - | . |
-| QT | . | - | . |
-| R3D | - | . | . |
-| SWF | . | - | . |
-| WebM | . | - | . |
-| WMV | . | . | . |
+| 3G2 | - | ✓ | - |
+| 3GP | - | ✓ | - |
+| AVI | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ |
+| F4V | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ |
+| M2TS | ✓ | - | ✓ |
+| M2V | ✓ | - | ✓ |
+| M4V | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ |
+| MOV | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ |
+| MXF | ✓ | - | ✓ |
+| OGV | ✓ | - | ✓ |
+| QT | ✓ | - | ✓ |
+| R3D | - | ✓ | ✓ |
+| SWF | ✓ | - | ✓ |
+| WebM | ✓ | - | ✓ |
+| WMV | ✓ | ✓ | ✓ |
 
 ## Formati audio {#audio-formats}
 
@@ -211,22 +211,22 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 | Formato | Carica (formato di input) | Crea predefinito per immagini (formato di output) | Anteprima del rendering dinamico | Distribuzione di rendering dinamico | Scaricare il rendering dinamico |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | . | - | - | - | - |
-| INDD | . | - | - | - | - |
-| PDF | . | . | . | . | . |
+| AI | ✓ | - | - | - | - |
+| INDD | ✓ | - | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## Dynamic Media - Formati immagine raster supportati {#image-support-dynamic-media}
 
 | Formato | Carica (formato di input) | Crea predefinito per immagini (formato di output) | Anteprima del rendering dinamico | Distribuzione di rendering dinamico | Scaricare il rendering dinamico | Imposta i tipi che supportano questo formato |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP | . | - | - | - | - | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
-| EPS | . | . | . | . | . | - |
-| GIF | . | . | . | . | . | - |
-| JPEG | . | . | . | . | . | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
-| PICT | . | - | - | - | - | - |
-| PNG | . | . | . | . | . | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
-| PSD | . | - | - | - | - | - |
-| TIFF | . | . | . | . | . | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | - | - | - | - | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
+| EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | ✓ | - | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
+| PSD | ✓ | - | - | - | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)e [Centrifuga](/help/assets/dynamic-media/spin-sets.md) |
 
 † L&#39;immagine unita viene estratta dal file PSD. È un’immagine generata da [!DNL Adobe Photoshop] ed è incluso nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere o meno l’immagine effettiva.
 

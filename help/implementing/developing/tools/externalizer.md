@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Esternalizzazione degli URL {#externalizing-urls}
 
-In AEM, il **esternalizzatore** è un servizio OSGi che consente di trasformare programmaticamente un percorso di risorse (ad esempio `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) prefissando il percorso con un DNS preconfigurato.
+In AEM, il **Esternalizzatore** è un servizio OSGi che consente di trasformare programmaticamente un percorso di risorsa (ad esempio `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) prefissando il percorso con un DNS preconfigurato.
 
 Poiché un’istanza AEM as a Cloud Service non può conoscere il proprio URL visibile esternamente e poiché a volte un collegamento deve essere creato al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare tali URL esterni e generarli.
 
-Questo articolo spiega come configurare il servizio Externalizer e come utilizzarlo. Per informazioni tecniche sul servizio, fare riferimento a [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+Questo articolo spiega come configurare il servizio Externalizer e come utilizzarlo. Per i dettagli tecnici del servizio, si prega di fare riferimento al [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Comportamento predefinito dell&#39;esternalizzatore e modalità di esclusione {#default-behavior}
 
-Preconfigurato, il servizio Externalizer dispone di valori quali `author-p12345-e6789.adobeaemcloud.com` e `publish-p12345-e6789.adobeaemcloud.com`.
+Preconfigurato, il servizio Externalizer dispone di valori come `author-p12345-e6789.adobeaemcloud.com` e `publish-p12345-e6789.adobeaemcloud.com`.
 
-Per ignorare tali valori, utilizza le variabili di ambiente di Cloud Manager come descritto nell’articolo [Configurazione di OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e imposta le variabili predefinite `AEM_CDN_DOMAIN_AUTHOR` e `AEM_CDN_DOMAIN_PUBLISH`.
+Per ignorare tali valori, utilizza le variabili di ambiente Cloud Manager come descritto nell’articolo [Configurazione di OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e l&#39;impostazione dei predefiniti `AEM_CDN_DOMAIN_AUTHOR` e `AEM_CDN_DOMAIN_PUBLISH` variabili.
 
 ## Configurazione del servizio Externalizer {#configuring-the-externalizer-service}
 
@@ -29,7 +29,7 @@ Il servizio Externalizer ti consente di definire centralmente il dominio che pu�
 
 >[!NOTE]
 >
->Come quando si applicano [configurazioni OSGi per AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) i passaggi seguenti devono essere eseguiti su un&#39;istanza di sviluppo locale e quindi impegnati nel codice del progetto per la distribuzione.
+>Come quando si applicano [Configurazioni OSGi per AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) i passaggi seguenti devono essere eseguiti su un’istanza di sviluppo locale e quindi essere impegnati nel codice del progetto per la distribuzione.
 
 Per definire una mappatura del dominio per il servizio Externalizer:
 
@@ -45,7 +45,7 @@ Per definire una mappatura del dominio per il servizio Externalizer:
    >
    >Il collegamento diretto alla configurazione è `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
 
-1. Definire una mappatura **Domains**. Una mappatura consiste in un nome univoco che può essere utilizzato nel codice per fare riferimento al dominio, a uno spazio e al dominio:
+1. Definire un **Domini** mappatura. Una mappatura consiste in un nome univoco che può essere utilizzato nel codice per fare riferimento al dominio, a uno spazio e al dominio:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
@@ -69,7 +69,7 @@ Per definire una mappatura del dominio per il servizio Externalizer:
 
    >[!NOTE]
    >
-   >Una configurazione personalizzata consente di aggiungere una nuova categoria, ad esempio `production`, `staging` o anche sistemi esterni non AEM come `my-internal-webservice`. È utile evitare di codificare tali URL in posizioni diverse della codebase di un progetto.
+   >Una configurazione personalizzata consente di aggiungere una nuova categoria, ad esempio `production`, `staging` o anche sistemi esterni non AEM quali `my-internal-webservice`. È utile evitare di codificare tali URL in posizioni diverse della codebase di un progetto.
 
 1. Fai clic su **Salva** per salvare le modifiche.
 
@@ -125,4 +125,4 @@ Questa sezione mostra alcuni esempi di utilizzo del servizio Externalizer.
 
 >[!TIP]
 >
->Puoi trovare altri esempi in [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+>Puoi trovare ulteriori esempi nella sezione [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).

@@ -1,15 +1,15 @@
 ---
-title: percorso di architetti di contenuti headless AEM
+title: Percorso Architect di contenuti AEM headless
 description: Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '789'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# percorso di architetti di contenuti headless AEM {#aem-headless-content-architect-journey}
+# Percorso Architect di contenuti AEM headless {#aem-headless-content-architect-journey}
 
 Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle sul tuo primo progetto headless.
 
@@ -49,7 +49,7 @@ Anche se puoi passare direttamente a una particolare parte del percorso, molti c
 
 | # | Articolo | Descrizione |
 |---|---|---|
-| 0 | percorso di architetti di contenuti headless AEM | Questo documento |
+| 0 | Percorso Architect di contenuti AEM headless | Questo documento |
 | 1 | [Modellazione per headless con AEM - Introduzione](introduction.md) | Scopri la tecnologia headless e cosa significa per la modellazione. |
 | 2 | [Scopri le nozioni di base sulla modellazione](basics.md) | Scopri le basi della modellazione con AEM |
 | 3 | [Come creare strutture del modello](model-structure.md) | Scopri come modellare strutture con più livelli per senza testa |
@@ -68,4 +68,4 @@ Come tali percorsi sono progettati per stare da soli. Tuttavia alcuni di essi po
 * [Percorso di authoring headless](/help/journey-headless/author/overview.md) - Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless.
 * [AEM Percorso di sviluppatori headless](/help/journey-headless/developer/overview.md) - Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle per il tuo primo progetto di sviluppo.
 * [AEM documentazione tecnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) - Se hai già una comprensione ferma delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
-* [Esercitazioni AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Se preferisci imparare facendo e sei tecnicamente inclinato, segui i nostri tutorial pratici organizzati da API e framework, che esplorano la creazione e l&#39;utilizzo di applicazioni create su AEM Headless.
+* [Esercitazioni AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Se preferisci imparare facendo e sei tecnicamente inclinato, segui i nostri tutorial pratici organizzati da API e framework, che esplorano la creazione e l&#39;utilizzo di applicazioni create su AEM Headless.

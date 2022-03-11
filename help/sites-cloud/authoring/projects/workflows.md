@@ -13,9 +13,9 @@ ht-degree: 75%
 
 I flussi di lavoro per progetti disponibili includono i seguenti:
 
-* **Flusso di lavoro di approvazione del progetto** : consente di assegnare contenuti a un utente, rivederli e approvarli.
-* **Richiedi lancio** : flusso di lavoro per richiedere un lancio.
-* **Richiedi pagina di destinazione** : questo flusso di lavoro richiede una pagina di destinazione.
+* **Flusso di lavoro di approvazione del progetto** - Questo flusso di lavoro ti consente di assegnare contenuti a un utente, rivederli e approvarli.
+* **Richiedi lancio** - Un flusso di lavoro per richiedere un lancio.
+* **Richiedi pagina di destinazione** - Questo flusso di lavoro richiede una pagina di destinazione.
 * **Richiedi e-mail**: flusso di lavoro per la richiesta di un’e-mail.
 * **Crea e traduci copia DAM e Crea copia per lingua DAM:** consentono di creare dati binari, metadati ed etichette tradotti per risorse e cartelle.
 
@@ -27,12 +27,12 @@ A seconda del modello di progetto selezionato, hai determinati flussi di lavoro 
 | Richiedi lancio | x |  |
 | Richiedi pagina di destinazione | x |  |
 | Richiedi e-mail | x |  |
-| Crea copia &amp;ast;DAM; |  | x |
-| Crea e traduci copia&amp;ast;DAM; |  | x |
+| Crea copia &amp;ast in lingua DAM; |  | x |
+| Crea e traduci copia&amp;ast in lingua DAM; |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Questi flussi di lavoro non vengono avviati dalla sezione **Flusso di lavoro** in Progetti. Consulta [Creazione di copie per lingua per le risorse.](/help/sites-cloud/administering/translation/managing-projects.md)
+>&amp;ast; Questi flussi di lavoro non vengono avviati dalla **Flusso di lavoro** in Progetti. Consulta [Creazione di copie per lingua per le risorse.](/help/sites-cloud/administering/translation/managing-projects.md)
 
 I passaggi per avviare e completare i flussi di lavoro sono sempre gli stessi, indipendentemente dal flusso di lavoro che scegli. Cambiano solo i passaggi intermedi.
 
@@ -50,7 +50,7 @@ Questa sezione descrive i flussi di lavoro disponibili per Progetti.
 
 Nel flusso di lavoro di approvazione progetto, assegni i contenuti ad un utente, li revisioni e poi li approvi.
 
-1. Nel progetto Semplice, seleziona il simbolo **`+`** nel riquadro **Flussi di lavoro** e seleziona **Flusso di lavoro di approvazione del progetto**.
+1. Nel progetto Semplice, seleziona la **`+`** accedi a **Flussi di lavoro** piastrelle e seleziona **Flusso di lavoro di approvazione del progetto**.
 1. Inserisci un titolo e seleziona la persona a cui affidare il compito dall&#39;elenco Team. Se necessario, puoi aggiungere una descrizione, il percorso del contenuto, impostare la priorità e la scadenza.
 
    ![Richiedi approvazione](/help/sites-cloud/authoring/assets/projects-approval.png)
@@ -66,7 +66,7 @@ Questo flusso di lavoro consente di richiedere un lancio.
 
    ![Richiedi lancio](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. Fai clic su **Crea**. Il flusso di lavoro inizia. Il flusso di lavoro viene visualizzato nell&#39;elenco **Flussi di lavoro** (fare clic su ellissi **...** nel riquadro **Flussi di lavoro** per accedere a questo elenco).
+1. Fai clic su **Crea**. Il flusso di lavoro inizia. Il flusso di lavoro viene visualizzato nella **Flussi di lavoro** elenco (fare clic su ellissi) **...** sulla **Flussi di lavoro** per accedere a questo elenco).
 
 ## Flusso di lavoro Crea (e traduci) copia per lingua per le risorse {#create-and-translate-language-copy-workflow-for-assets}
 

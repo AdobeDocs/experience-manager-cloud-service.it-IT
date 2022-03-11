@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -55,7 +55,7 @@ Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di c
 
 * Città
 * Azienda
-* Person
+* Utente
 * Premi
 
 Sembra abbastanza semplice, ma ovviamente un&#39;Azienda ha sia un amministratore delegato che dei dipendenti....e queste sono tutte persone, ognuna definita come Persona.
@@ -127,7 +127,7 @@ Ora che hai imparato i riferimenti e la struttura nei frammenti di contenuto, il
 
 
 * Guide introduttive
-   * [Creazione di una cartella di risorse - Configurazione headless](/help/headless/setup/create-assets-folder.md)
+   * [Creazione di una cartella di risorse: configurazione headless](/help/headless/setup/create-assets-folder.md)
 
 * Percorso Architect di contenuti AEM headless
 

@@ -3,10 +3,11 @@ title: Percorso di apprendimento per gli utenti AEM
 description: Segui questa pagina per scoprire i passaggi successivi al recupero dell’accesso, se sei un utente AEM
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 12ca20c750d7332ebfaf62c781cbe5ec386c2d64
+exl-id: 86700cce-139f-451e-9c21-b38b6332f773
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -14,23 +15,23 @@ ht-degree: 3%
 
 ## Obiettivo {#objective}
 
-Questo documento aiuta i tuoi autori di contenuti AEM come Cloud Service ad accedere ad Adobe Experience Manager (AEM).
+Questo documento aiuta gli autori di contenuti as a Cloud Service AEM ad accedere ad Adobe Experience Manager (AEM).
 
 Dopo la lettura è necessario comprendere come:
 
 * Accesso a Cloud Manager
-* Accedere AEM come istanza di Cloud Service
-* Creare contenuti per AEM come Cloud Service
+* Accedi AEM&#39;istanza as a Cloud Service
+* Contenuto dell’autore per AEM as a Cloud Service
 
 ## Introduzione  {#introduction}
 
-L’accesso a AEM come Cloud Service è un primo passo importante nel percorso cloud AEM per gli autori di contenuti e AEM utenti. Avere un accesso tempestivo significa non perdere la produttività e gli utenti finali sono molto più vicini alle esperienze digitali trasformative.
+L’accesso a AEM as a Cloud Service è un primo passo importante nel percorso cloud AEM per gli autori di contenuti e AEM utenti. Avere un accesso tempestivo significa non perdere la produttività e gli utenti finali sono molto più vicini alle esperienze digitali trasformative.
 
-Ogni membro del team assegnato AEM profilo di prodotto utente dall’amministratore di sistema avrà accesso (in sola lettura) a Cloud Manager. Naturalmente, se questi utenti sono stati assegnati anche a [Profili di prodotto di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles), avranno la somma di queste autorizzazioni in AEM come Cloud Service e Cloud Manager.
+Ogni membro del team assegnato AEM profilo di prodotto utente dall’amministratore di sistema avrà accesso (in sola lettura) a Cloud Manager. Naturalmente, se anche questi utenti sono stati assegnati a [Profili di prodotto di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles), quindi avranno la somma di queste autorizzazioni in AEM as a Cloud Service e Cloud Manager.
 
 ## Prerequisiti  {#prerequisites}
 
-L’amministratore di sistema deve aver completato tutti i passaggi necessari e aver assegnato correttamente l’utente AEM profilo di prodotto Utenti durante la configurazione del AEM come team di Cloud Service.
+L’amministratore di sistema deve aver completato tutti i passaggi necessari e aver assegnato correttamente l’utente al profilo di prodotto AEM utenti durante la configurazione del team as a Cloud Service AEM.
 
 ## Accedi all’autore {#login-author}
 
@@ -39,11 +40,11 @@ Segui i passaggi riportati di seguito per accedere a Author:
 1. Passa direttamente alla pagina di accesso di Cloud Manager da [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Aggiungi un segnalibro [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) al collegamento per riferimenti futuri e per aiutarti a passare direttamente alla pagina di destinazione di Cloud Manager.
+   >Segnalibro [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) collegamento per riferimenti futuri e per aiutarti a passare direttamente alla pagina di destinazione di Cloud Manager.
 
-1. Seleziona il programma dalla pagina **Programmi e prodotti di Cloud Manager** per avviare la pagina **Panoramica**.
+1. Seleziona il programma da Cloud Manager’s **Programmi e prodotti** per avviare **Panoramica** pagina.
 
-1. Dalla pagina **Panoramica** in Cloud Manager, fai clic sul collegamento dell’autore dalla scheda **Ambienti** .
+1. Da **Panoramica** in Cloud Manager, fai clic sul collegamento dell’autore dal menu **Ambienti** il Card.
 
    ![](/help/journey-onboarding/assets/author-environ.png)
 

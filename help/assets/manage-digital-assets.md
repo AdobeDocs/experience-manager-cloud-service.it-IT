@@ -36,11 +36,11 @@ I seguenti caratteri (elenco separato da spazi) non sono supportati:
 * Il nome di un file di risorsa non può contenere i seguenti caratteri: `* / : [ \\ ] | # % { } ? &`
 * Il nome di una cartella di risorse non può contenere i seguenti caratteri: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Caricare le risorse {#uploading-assets}
+## Upload assets {#uploading-assets}
 
 Vedi [aggiungere risorse digitali ad Experience Manager](add-assets.md).
 
-## Rileva risorse duplicate {#detect-duplicate-assets}
+## Detect duplicate assets {#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
@@ -48,13 +48,13 @@ Se un utente DAM carica una o più risorse già esistenti nell’archivio, [!DNL
 
 >[!NOTE]
 >
->Questa funzione è disponibile nel canale prerelease. Vedi [Documentazione sul canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) per informazioni su come abilitare la funzione per l’ambiente.
+>This feature is available in prerelease channel. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information to enable the feature for your environment.
 
 Per abilitare la funzione:
 
 1. Passa a **[!UICONTROL Strumenti > Risorse > Configurazioni risorse]**.
 
-1. Fai clic su **[!UICONTROL Rilevatore di duplicazione delle risorse]**.
+1. Click **[!UICONTROL Asset Duplication Detector]**.
 
 1. Sulla [!UICONTROL Pagina del rilevatore della duplicazione delle risorse], fai clic su **[!UICONTROL Abilitato]**.
 
@@ -66,10 +66,10 @@ Per abilitare la funzione:
 
 >[!NOTE]
 >
->Se hai configurato il rilevatore di duplicazione utilizzando `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` file di configurazione (configurazione OSGi), è possibile continuare a utilizzarlo, tuttavia, Adobe consiglia di utilizzare il nuovo metodo.
+>If you have configured Duplication Detector using `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends to use the new method.
 
 
-Una volta attivato, Experience Manager invia le notifiche delle risorse duplicate alla casella in entrata dell’Experience Manager. È un risultato aggregato per più duplicati. Gli utenti possono scegliere di rimuovere le risorse in base ai risultati.
+Once enabled, Experience Manager sends notifications of duplicate assets to the Experience Manager Inbox. È un risultato aggregato per più duplicati. Gli utenti possono scegliere di rimuovere le risorse in base ai risultati.
 
 ![Notifica della casella in entrata per le risorse duplicate](assets/duplicate-detect-inbox-notification.png)
 
@@ -77,7 +77,7 @@ Una volta attivato, Experience Manager invia le notifiche delle risorse duplicat
 >
 >Quando carichi le risorse nell’archivio, Experience Manager rileva le duplicazioni e notifica le prime 100 risorse duplicate.
 
-## Anteprima delle risorse {#previewing-assets}
+## Preview assets {#previewing-assets}
 
 Per visualizzare l’anteprima di una risorsa, effettua le seguenti operazioni.
 
@@ -170,7 +170,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Non viene cre
 
    >[!NOTE]
    >
-   >La **[!UICONTROL Incolla]** l’icona è disponibile nella barra degli strumenti fino al completamento dell’operazione Incolla .
+   >The **[!UICONTROL Paste]** icon is available in the toolbar until the paste operation is completed.
 
 ### Spostare o rinominare le risorse {#moving-or-renaming-assets}
 
@@ -180,18 +180,18 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Non viene cre
 
 1. Nella procedura guidata Sposta risorse , effettua una delle seguenti operazioni:
 
-   * Specifica il nome della risorsa dopo averlo spostata. Quindi tocca o fai clic su **[!UICONTROL Successivo]** per procedere.
+   * Specify the name for the asset after it is moved. Quindi tocca o fai clic su **[!UICONTROL Successivo]** per procedere.
 
    * Tocca o fai clic su **[!UICONTROL Annulla]** per interrompere il processo.
    >[!NOTE]
    >
-   >* Potete specificare lo stesso nome per la risorsa se nella nuova posizione non è presente alcuna risorsa con tale nome. Tuttavia, se sposti la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, utilizza un nome diverso. Se utilizzi lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa ha il nome Square, il sistema genera il nome Square1 per la relativa copia.
+   >* Potete specificare lo stesso nome per la risorsa se nella nuova posizione non è presente alcuna risorsa con tale nome. Tuttavia, se sposti la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, utilizza un nome diverso. If you use the same name, the system automatically generates a variation of the name. Ad esempio, se la risorsa ha il nome Square, il sistema genera il nome Square1 per la relativa copia.
    >* Durante la ridenominazione, lo spazio vuoto non è consentito nel nome del file.
 
 
 1. Sulla **[!UICONTROL Seleziona destinazione]** eseguire una delle operazioni seguenti:
 
-   * Passa alla nuova posizione delle risorse, quindi tocca o fai clic su **[!UICONTROL Successivo]** per procedere.
+   * Navigate to the new location for the assets, and then tap/click **[!UICONTROL Next]** to proceed.
 
    * Tocca o fai clic su **[!UICONTROL Indietro]** per tornare al **[!UICONTROL Rinomina]** schermo.
 
@@ -284,7 +284,7 @@ Inoltre, disattiva il pulsante force delete utilizzando una sovrapposizione, per
 
    >[!NOTE]
    >
-   >Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiorna i riferimenti rilevanti prima di eliminare una risorsa. È possibile impedire l’eliminazione delle risorse di riferimento in quanto causa collegamenti interrotti. Disattiva il pulsante di eliminazione forzata utilizzando una sovrapposizione.
+   >Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiorna i riferimenti rilevanti prima di eliminare una risorsa. You can disallow deletion of referenced assets as it causes broken links. Disattiva il pulsante di eliminazione forzata utilizzando una sovrapposizione.
 
 ## Scaricare le risorse {#download-assets}
 
@@ -520,14 +520,14 @@ Per stampare le annotazioni e controllare lo stato, tocca o fai clic sul pulsant
 1. Dall’interfaccia utente Assets, apri la pagina di anteprima per una risorsa.
 1. Effettua una delle operazioni seguenti:
 
-   * Per stampare tutte le annotazioni e lo stato di revisione, saltare il passaggio 3 e passare direttamente al passaggio 4.
+   * To print all the annotations and the review status, skip step 3 and directly go to step 4.
    * Per stampare annotazioni specifiche e controllare lo stato, aprire [timeline](/help/assets/manage-digital-assets.md#timeline) e poi andare al punto 3.
 
 1. Per stampare annotazioni specifiche, selezionate le annotazioni nella timeline.
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-   Per stampare solo lo stato di revisione, selezionarlo dalla timeline.
+   To print the review status only, select it from the timeline.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -611,18 +611,18 @@ La funzionalità di controllo delle versioni consente di effettuare le seguenti 
 
    ![confrontare_versioni](assets/compare_versions.png)
 
-### Avviare un flusso di lavoro su una risorsa {#starting-a-workflow-on-an-asset}
+### Starte a workflow on an asset {#starting-a-workflow-on-an-asset}
 
 1. Andate alla posizione della risorsa per la quale desiderate avviare un flusso di lavoro, quindi toccate o fate clic sulla risorsa per aprire la pagina della risorsa.
 1. Tocca o fai clic sull’icona di Navigazione globale e scegli **[!UICONTROL Timeline]** dal menu per visualizzare la timeline.
 
    ![timeline-1](assets/timeline-1.png)
 
-1. Tocca o fai clic sul pulsante **[!UICONTROL Azioni]** Icona (freccia) in basso per aprire l’elenco delle azioni disponibili per la risorsa.
+1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. Tocca o fai clic su **[!UICONTROL Avvia flusso di lavoro]** dall&#39;elenco.
+1. Tap/click **[!UICONTROL Start Workflow]** from the list.
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
@@ -630,7 +630,7 @@ La funzionalità di controllo delle versioni consente di effettuare le seguenti 
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. (Facoltativo) Specifica un titolo per il flusso di lavoro, che può essere utilizzato per fare riferimento all’istanza del flusso di lavoro.
+1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 

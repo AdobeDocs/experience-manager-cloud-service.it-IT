@@ -1,8 +1,9 @@
 ---
-title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0
-description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0
+title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.8.0
+description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.8.0
 feature: Release Information
-source-git-commit: 11910316836b33e886aeba84f89d1b2eebfe7de2
+exl-id: cf1d5c4f-404a-4ced-90f2-273c710adc0f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 4%
@@ -14,18 +15,18 @@ ht-degree: 4%
 Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0.
 
 >[!NOTE]
->Per visualizzare il Cloud Service delle note sulla versione corrente per Adobe Experience Manager, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+>Per visualizzare le note sulla versione corrente per Adobe Experience Manager as a Cloud Service, fai clic su [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.8.0 è il 12 agosto 2021.
 
 ### Novità {#what-is-new}
 
 * I clienti del Cloud Service ora possono visualizzare i rapporti SLA (Service Level Agreement) in Cloud Manager. Ciò sarà progressivamente reso disponibile nei prossimi mesi.
-Per ulteriori informazioni, consulta [Generazione di rapporti SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) .
+Vedi [Generazione rapporti SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) per saperne di più.
 
-* Il tipo e la gravità delle regole di qualità IndexType e `IndexDamAssetLucene` sono stati modificati. Questi sono ora due bug di Blocker *serverity*.
+* Tipo e gravità dell&#39;IndexType e `IndexDamAssetLucene` le regole di qualità sono state modificate. Questi sono ora entrambi Bugs of Blocker *serenità*.
 
 * Sono state introdotte nuove regole sulla qualità dell&#39;indice Oak per coprire configurazioni asincrone e tika.
 
@@ -45,4 +46,4 @@ Per ulteriori informazioni, consulta [Generazione di rapporti SLA](https://exper
 
 * L&#39;onboarding iniziale non riusciva per le nuove organizzazioni con nomi molto lunghi.
 
-* Talvolta, quando una pipeline viene attivata due volte per qualche motivo, si verifica un errore di una delle esecuzioni che non riesce con *non è in grado di aggiornare lo stato di esecuzione della pipeline*.
+* Talvolta, quando una pipeline viene attivata due volte per qualche motivo, si verifica un errore in una delle esecuzioni con *impossibile aggiornare lo stato di esecuzione della pipeline* errore.

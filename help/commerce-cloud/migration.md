@@ -5,21 +5,21 @@ exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 21%
+ht-degree: 45%
 
 ---
 
 # Guida alla migrazione per l’Experience Manager Cloud Service {#cif-migration}
 
-Questa guida aiuta a identificare le aree da aggiornare per la migrazione degli Experienci Manager Cloud Service.
+Questa guida aiuta a identificare le aree da aggiornare per la migrazione di Experience Manager Cloud Service.
 
 ## Componente aggiuntivo CIF
 
-Ad Experience Manager, as a Cloud Service, il componente aggiuntivo CIF è l’unica soluzione di integrazione Commerce supportata per le soluzioni commerce Adobe Commerce e di terze parti. Il componente aggiuntivo CIF viene distribuito automaticamente per i clienti su Experience Manager as a Cloud Service, non è necessaria alcuna distribuzione manuale. Vedi [Guida introduttiva a AEM Commerce as a Cloud Service](getting-started.md).
+Per Experience Manager as a Cloud Service il componente aggiuntivo CIF è l’unica soluzione di integrazione supportata per le soluzioni commerce di Adobe e di terze parti. Il componente aggiuntivo CIF viene distribuito automaticamente ai clienti con Experience Manager as a Cloud Service, non è necessaria alcuna distribuzione manuale. Consulta [Guida introduttiva di AEM Commerce as a Cloud Service](getting-started.md).
 
 Per supportare i progetti che utilizzano l’Adobe CIF, fornisci [Componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components).
 
-Il componente aggiuntivo CIF è disponibile anche per AEM 6.5 tramite il [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). È compatibile e fornisce le stesse funzionalità del componente aggiuntivo CIF, ad Experience Manager as a Cloud Service, senza richiedere alcuna regolazione.
+Il componente aggiuntivo CIF è disponibile anche per AEM 6.5 tramite il [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). È compatibile e fornisce le stesse funzionalità del componente aggiuntivo CIF per Experience Manager as a Cloud Service, senza richiedere alcuna correzione.
 
 Classic CIF con le sue dipendenze non è più disponibile. Codice basato su questa versione CIF utilizzando `com.adobe.cq.commerce.api` Le API Java devono essere regolate in base al componente aggiuntivo CIF e ai relativi principi.
 

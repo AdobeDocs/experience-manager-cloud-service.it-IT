@@ -1,12 +1,12 @@
 ---
 title: Introduzione a [!DNL AEM Forms] as a Cloud Service
-description: Risorse di supporto autonomo e collegamenti alla documentazione as a Cloud Service di Adobe Experience Manager Forms
+description: Risorse di supporto autonomo e link alla documentazione di Adobe Experience Manager Forms as a Cloud Service
 landing-page-description: Scopri come utilizzare i moduli in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 1%
+ht-degree: 11%
 
 ---
 
@@ -21,5 +21,5 @@ L&#39;organizzazione può utilizzare [!DNL AEM Forms] as a Cloud Service per cre
 L&#39;organizzazione può utilizzare [!DNL AEM Forms] as a Cloud Service e ottieni tutte queste funzionalità nel cloud senza richiedere alcuna infrastruttura locale. Il servizio consente inoltre di liberare le organizzazioni da complessi cicli di aggiornamento in quanto è sempre aggiornato con le funzioni più recenti. Per ulteriori informazioni sul servizio, consulta:
 
 * [Funzioni principali](key-features.md)
-* [Modifiche di rilievo rispetto a AEM 6.5 Forms](notable-changes.md)
+* [Modifiche di rilievo rispetto a Forms 6.5 AEM](notable-changes.md)
 * [Domande frequenti](faq.md)

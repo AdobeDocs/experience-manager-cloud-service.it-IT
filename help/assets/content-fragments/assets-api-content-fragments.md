@@ -22,7 +22,6 @@ Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, una f
 >
 >* API REST di Assets
 >* incluso il supporto per i frammenti di contenuto
-
 >
 >L’implementazione corrente dell’API HTTP Assets si basa sul [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) stile architettonico.
 
@@ -148,7 +147,6 @@ Se l’API REST di Assets viene utilizzata in un ambiente senza requisiti di aut
 >
 >* [Spiegazione di CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Video: sviluppo per CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 
@@ -264,7 +262,7 @@ L’utilizzo avviene tramite:
 
 `GET /{cfParentPath}/{cfName}.json`
 
-Esempio:
+Ad esempio:
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 

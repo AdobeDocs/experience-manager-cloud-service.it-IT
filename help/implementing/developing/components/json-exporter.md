@@ -5,7 +5,7 @@ exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
@@ -25,7 +25,7 @@ Con i frammenti di contenuto che utilizzano contenuti strutturati, puoi fornire 
 
 Utilizzando la funzione di esportazione JSON AEM puoi fornire il contenuto di una pagina (y) AEM nel formato del modello di dati JSON. Questo può quindi essere utilizzato dalle tue applicazioni.
 
-All’interno di AEM la consegna viene ottenuta utilizzando il selettore `model` e l’estensione `.json`.
+All’interno AEM la consegna viene ottenuta utilizzando il selettore `model` e `.json` estensione.
 
 `.model.json`
 
@@ -41,7 +41,7 @@ All’interno di AEM la consegna viene ottenuta utilizzando il selettore `model`
 
 In alternativa, puoi distribuire il contenuto di un frammento di contenuto strutturato specificandone il targeting.
 
-Questa operazione viene eseguita utilizzando l’intero percorso del frammento (tramite `jcr:content`); ad esempio con un suffisso come .
+Questa operazione viene eseguita utilizzando l’intero percorso del frammento (tramite il `jcr:content`); ad esempio con un suffisso come .
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -59,11 +59,11 @@ La pagina può contenere un singolo frammento di contenuto o più componenti di 
 
    >[!NOTE]
    >
-   >Puoi [adattare i tuoi componenti](enabling-json-exporter.md) per accedere e utilizzare questi dati.
+   >È possibile [adattare i propri componenti](enabling-json-exporter.md) per accedere e utilizzare tali dati.
 
    >[!NOTE]
    >
-   >Sebbene non sia un&#39;implementazione standard, [sono supportati più selettori,](enabling-json-exporter.md#multiple-selectors) ma `model` deve essere il primo.
+   >Sebbene non sia un’implementazione standard, [sono supportati più selettori,](enabling-json-exporter.md#multiple-selectors) ma `model` deve essere il primo.
 
 ### Ulteriori informazioni {#further-information}
 
@@ -83,4 +83,4 @@ Per maggiori dettagli vedi:
 * [Frammenti di contenuto nella guida utente Assets](/help/assets/content-fragments/content-fragments.md)
 * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
 * [Authoring con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Componenti core ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e componente Frammento di  [contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)

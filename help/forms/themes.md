@@ -80,7 +80,7 @@ Il tema caricato è disponibile nella pagina dei temi .
 
 ## Metadati di un tema {#metadata-of-a-theme}
 
-List of meta-properties of a theme (found in properties page of a theme).
+Elenco di meta-proprietà di un tema (trovato nella pagina delle proprietà di un tema).
 
 <table>
  <tbody>
@@ -199,7 +199,7 @@ L’Editor tema ti consente di personalizzare gli stili dei componenti formattat
 
 L’Editor tema è diviso in due pannelli:
 
-* **Canvas** - Appare sul lato destro. Mostra un esempio di modulo adattivo <!--  or interactive communication --> in cui tutte le modifiche allo stile riflettono istantaneamente. You can also select objects directly from the canvas to look up styles associated with them, and to edit these styles. Un righello di risoluzione del dispositivo in alto governa il quadro. Quando si seleziona un punto di interruzione della risoluzione dal righello, viene visualizzata l’anteprima del modulo di esempio <!--  or interactive communication --> per la relativa risoluzione. L&#39;area di lavoro viene discussa in dettaglio [di seguito](themes.md#using-canvas).
+* **Canvas** - Appare sul lato destro. Mostra un esempio di modulo adattivo <!--  or interactive communication --> in cui tutte le modifiche allo stile riflettono istantaneamente. È inoltre possibile selezionare gli oggetti direttamente dall’area di lavoro per cercare gli stili ad essi associati e modificare tali stili. Un righello di risoluzione del dispositivo in alto governa il quadro. Quando si seleziona un punto di interruzione della risoluzione dal righello, viene visualizzata l’anteprima del modulo di esempio <!--  or interactive communication --> per la relativa risoluzione. L&#39;area di lavoro viene discussa in dettaglio [di seguito](themes.md#using-canvas).
 
 * **Barra laterale**- Appare sul lato sinistro. Sono disponibili i seguenti elementi:
 
@@ -213,10 +213,10 @@ Quando si formatta un campo, vengono formattati tutti i campi, ad esempio età, 
 
       Ad esempio, un campo casella di testo, ad esempio indirizzo più lungo e un campo casella numerica come età più breve. È possibile selezionare un campo casella numerica, ridurne la lunghezza e applicarlo al modulo. Nel modulo viene ridotta la larghezza di tutti i campi casella numerica.
 
-      When you customize all the field components with a specific background color, all the fields such as age, name, and address inherit the background color. Quando si seleziona una casella numerica, ad esempio l’età, e ne si riduce la larghezza, la larghezza di tutte le caselle numeriche, ad esempio l’età, viene ridotto il numero di persone in una famiglia. La larghezza delle caselle di testo non viene modificata.
+      Quando si personalizzano tutti i componenti campo con un colore di sfondo specifico, tutti i campi, ad esempio età, nome e indirizzo, ereditano il colore di sfondo. Quando si seleziona una casella numerica, ad esempio l’età, e ne si riduce la larghezza, la larghezza di tutte le caselle numeriche, ad esempio l’età, viene ridotto il numero di persone in una famiglia. La larghezza delle caselle di testo non viene modificata.
 
    * **Stato:** Consente di personalizzare gli stili di un oggetto in uno stato specifico. Ad esempio, è possibile specificare l’aspetto di un oggetto quando è in stato di default, lo stato attivo, disattivato, passaggio del mouse o di errore.
-   * **Property Categories:** Styling properties are divided in various categories. Ad esempio Dimension e posizione, testo, sfondo, bordo ed effetti. Sotto ogni categoria vengono fornite informazioni sullo stile. For example, under Background, you can provide Background Color, and Image &amp; Gradient.
+   * **Categorie di proprietà:** Le proprietà di stile sono suddivise in varie categorie. Ad esempio Dimension e posizione, testo, sfondo, bordo ed effetti. Sotto ogni categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo, puoi fornire Colore sfondo e Immagine e sfumatura.
 
    * **Avanzate:** Consente di aggiungere CSS personalizzati a un oggetto, che sostituisce le proprietà definite dai controlli visivi per determinare se è presente una sovrapposizione.
 
@@ -278,7 +278,7 @@ Quando selezionate un componente nell’area di lavoro, le relative proprietà d
 
 L’editor di temi memorizza in cache fino a dieci stili applicati a un componente. Puoi utilizzare gli stili memorizzati nella cache con altri componenti di un tema. Gli stili utilizzati di recente sono disponibili sotto il componente selezionato nella barra laterale come casella di riepilogo. Inizialmente, l’elenco degli stili utilizzati di recente è vuoto.
 
-![Asset-library](assets/asset-library.png)
+![Libreria risorse](assets/asset-library.png)
 
 Mentre si formatta un componente, gli stili vengono memorizzati nella cache ed elencati nella casella di riepilogo. In questo esempio, l&#39;etichetta della casella di testo viene formattata per modificare la dimensione e il colore del font. Puoi seguire passaggi simili per scegliere un’immagine o cambiare i colori in base allo stile di un componente. Osserva come lo stile viene memorizzato nella cache ed elencato nella casella di riepilogo quando viene modificato lo stile dell’etichetta del campo.
 
@@ -294,14 +294,14 @@ Il pulsante più della libreria di risorse consente di salvare in modo permanent
 
 Quando si fornisce un nome personalizzato per uno stile, lo stile è legato a un tema e non è più disponibile per altri temi. Per eliminare uno stile salvato:
 
-1. On the CANVAS toolbar, click **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Manage Styles]**.
+1. Sulla barra degli strumenti CANVAS fare clic su **[!UICONTROL Opzioni tema]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Gestione stili]**.
 1. Nella finestra di dialogo Gestione stili, seleziona uno stile salvato e fai clic su **[!UICONTROL Elimina]**.
 
-   ![Delete the saved style](assets/manage-styles.png)
+   ![Eliminare lo stile salvato](assets/manage-styles.png)
 
 ### Anteprima live, salvataggio ed eliminazione delle modifiche {#live-preview-save-and-discard-changes}
 
-Modifications made in the styling are instantly reflected in the form <!-- or interactive communication --> loaded in the Canvas. L’anteprima live consente di definire e visualizzare in modo interattivo l’impatto dello stile. Quando modifichi lo stile di un componente, la funzione **[!UICONTROL Fine]** è attivato nella barra laterale. Per mantenere le modifiche, utilizza le **[!UICONTROL Fine]** pulsante .
+Le modifiche apportate allo stile vengono immediatamente applicate al modulo <!-- or interactive communication --> caricato nell&#39;area di lavoro. L’anteprima live consente di definire e visualizzare in modo interattivo l’impatto dello stile. Quando modifichi lo stile di un componente, la funzione **[!UICONTROL Fine]** è attivato nella barra laterale. Per mantenere le modifiche, utilizza le **[!UICONTROL Fine]** pulsante .
 
 >[!NOTE]
 >
@@ -363,7 +363,7 @@ Quando selezioni un componente nell’area di lavoro, viene visualizzata la barr
 
 ### Utilizzo della barra laterale {#using-rail}
 
-La barra laterale nell’editor di temi fornisce opzioni per personalizzare gli stili per i componenti di un tema e utilizzare i selettori. I selettori consentono di selezionare un gruppo di componenti o singoli componenti e di cercare i selettori nella barra laterale. You can write selectors for custom components.
+La barra laterale nell’editor di temi fornisce opzioni per personalizzare gli stili per i componenti di un tema e utilizzare i selettori. I selettori consentono di selezionare un gruppo di componenti o singoli componenti e di cercare i selettori nella barra laterale. Puoi scrivere selettori per componenti personalizzati.
 
 Quando selezionate un componente dall’area di lavoro o dai selettori nella barra laterale, la barra laterale mostra tutte le opzioni che consentono di personalizzare gli stili.
 Di seguito sono riportate le opzioni visualizzate nella barra laterale quando si seleziona un componente:
@@ -374,7 +374,7 @@ Di seguito sono riportate le opzioni visualizzate nella barra laterale quando si
 
 #### Stadio {#state}
 
-Uno stato è un indicatore dell’interazione dell’utente con un componente. Ad esempio, quando un utente immette dati errati in una casella di testo, lo stato della casella di testo diventa uno stato di errore. Theme editor lets you specify styling for a particular state.
+Uno stato è un indicatore dell’interazione dell’utente con un componente. Ad esempio, quando un utente immette dati errati in una casella di testo, lo stato della casella di testo diventa uno stato di errore. L’editor dei temi consente di specificare lo stile per uno stato specifico.
 
 Le opzioni per personalizzare gli stili di stato variano per i diversi componenti.
 
@@ -388,7 +388,7 @@ Le opzioni per personalizzare gli stili di stato variano per i diversi component
   </tr>
   <tr>
    <td><p>Dimensioni e posizione</p> </td>
-   <td><p>Consente di definire lo stile, le dimensioni, il posizionamento e il posizionamento dei componenti nel tema. </p> <p>Your options are display setting, padding, margin, width, height, and Z Index.</p> <p>You can also use the Layout mode to define the width of components using an easy drag-and-drop interface. Per ulteriori informazioni, consulta <a href="resize-using-layout-mode.md">Utilizzare la modalità Layout per ridimensionare i componenti</a>.</p> </td>
+   <td><p>Consente di definire lo stile, le dimensioni, il posizionamento e il posizionamento dei componenti nel tema. </p> <p>Le opzioni disponibili sono: impostazione della visualizzazione, spaziatura, margine, larghezza, altezza e indice Z.</p> <p>È inoltre possibile utilizzare la modalità Layout per definire la larghezza dei componenti mediante una semplice interfaccia a trascinamento della selezione. Per ulteriori informazioni, consulta <a href="resize-using-layout-mode.md">Utilizzare la modalità Layout per ridimensionare i componenti</a>.</p> </td>
   </tr>
   <tr>
    <td><p>Testo</p> </td>
@@ -441,9 +441,9 @@ Per personalizzare lo stile di un particolare componente (una casella numerica i
 
 1. Seleziona **[!UICONTROL Widget Casella Numerica]**.
 1. Il titolo della barra laterale diventa Widget per casella numerica e mostra le opzioni per personalizzarne l’aspetto.
-Use **[!UICONTROL Dimension &amp; Position]** option in the sidebar to customize size of the component. Assicurati che lo Stato sia **[!UICONTROL Predefinito]**.
+Utilizzo **[!UICONTROL Dimension e posizione]** nella barra laterale per personalizzare le dimensioni del componente. Assicurati che lo Stato sia **[!UICONTROL Predefinito]**.
 
-Invece di selezionare **[!UICONTROL Widget Casella Numerica]**, seleziona **[!UICONTROL Widget campo]** nella barra degli strumenti del componente ed esegui i passaggi precedenti. When you select dimensions for **[!UICONTROL Field Widget]** option, all the text boxes except the numeric box have the same size.
+Invece di selezionare **[!UICONTROL Widget Casella Numerica]**, seleziona **[!UICONTROL Widget campo]** nella barra degli strumenti del componente ed esegui i passaggi precedenti. Quando selezioni le dimensioni per **[!UICONTROL Widget campo]** le dimensioni di tutte le caselle di testo, ad eccezione della casella numerica, sono uguali.
 
 ### Campi di stile per un dato stato {#styling-fields-given-state}
 
@@ -453,7 +453,7 @@ Per personalizzare lo stile di un componente in uno stato specifico, effettua le
 
 1. Seleziona un componente nell’area di lavoro e seleziona l’opzione appropriata dalla barra degli strumenti del componente.
 La barra laterale mostra le opzioni per personalizzare lo stile del componente.
-1. Seleziona uno stato nella barra laterale. For example, Error state.
+1. Seleziona uno stato nella barra laterale. Ad esempio, Stato errore.
 1. Usa opzioni quali **[!UICONTROL Bordo, sfondo]** nella barra laterale per personalizzare l’aspetto del componente.
 1. Utilizza la **[!UICONTROL Errore Simulazione]** nella parte inferiore della barra laterale per visualizzare l’aspetto dello stile durante la modifica.
 
@@ -461,7 +461,7 @@ Quando si personalizza lo stile di un componente dopo averne specificato lo stat
 
 Per simulare il comportamento di stati diversi da errore e successo, utilizza la modalità Anteprima . Per utilizzare la modalità Anteprima, fai clic su **[!UICONTROL Anteprima]** nella barra degli strumenti della pagina.
 
-### Styling layouts for smaller displays {#styling-layouts-for-smaller-displays}
+### Layout di stile per display più piccoli {#styling-layouts-for-smaller-displays}
 
 Utilizza il righello nell’area di lavoro per selezionare i punti di interruzione per i dispositivi con display più piccoli. Fai clic su emulatore ![righello](assets/emulator-icon.svg) in Area di lavoro per visualizzare righello e punti di interruzione. I punti di interruzione consentono di visualizzare in anteprima un modulo <!-- or interactive communication --> per le dimensioni del display relative a diversi dispositivi, come telefoni e tablet. Nell’Editor tema sono supportate più dimensioni di visualizzazione.
 
@@ -543,7 +543,7 @@ Per applicare un tema a un modulo adattivo:
 1. Apri il modulo in modalità di modifica. Per aprire un modulo in modalità di modifica, selezionalo e fai clic su **[!UICONTROL Apri]**.
 1. In modalità di modifica, seleziona un componente, quindi fai clic su ![a livello di campo](assets/select_parent_icon.svg) > **[!UICONTROL Contenitore di moduli adattivi]**, quindi fai clic su ![cmppr](assets/cmppr.png).
 
-   You can edit properties of your form in the sidebar.
+   È possibile modificare le proprietà del modulo nella barra laterale.
 
 1. Nella barra laterale, fai clic su **[!UICONTROL Stile]**.
 1. Seleziona il tema dal **[!UICONTROL Tema modulo adattivo]** a discesa e fai clic su **[!UICONTROL Fine]** ![pulsante di controllo](assets/check-button.png).

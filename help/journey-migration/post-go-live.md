@@ -1,13 +1,13 @@
 ---
 title: Post-pubblicazione
 description: Scopri come monitorare i problemi e migliorare le prestazioni
-source-git-commit: c9143d77e70476beb7f7dd162c36aeda8d1be506
+exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 21%
+ht-degree: 23%
 
 ---
-
 
 # Post-pubblicazione {#post-go-live}
 
@@ -61,7 +61,7 @@ Per informazioni su come accedere ai registri e gestirli attraverso l’interfac
 >abstract="Rivolgiti al nostro team di supporto AEM per ottenere chiarimenti o per risolvere eventuali problemi."
 >additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Supporto per Experience Cloud"
 
-Per domande sull&#39;accesso al Cloud Service, contatta il tuo rappresentante Adobe o [Supporto per Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) per ulteriori dettagli.
+Per domande sull&#39;accesso al Cloud Service, contatta il tuo rappresentante Adobe o [Supporto per Experience Cloud](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per ulteriori dettagli.
 
 ## Imparazioni dei documenti {#document-learnings}
 

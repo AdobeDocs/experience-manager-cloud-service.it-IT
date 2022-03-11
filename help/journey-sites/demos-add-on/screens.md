@@ -1,13 +1,13 @@
 ---
 title: Abilita AEM Screens per il tuo sito dimostrativo
 description: Scopri i passaggi per abilitare l’esperienza completa AEM Screens as a Cloud Service sul tuo sito dimostrativo.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2666'
 ht-degree: 0%
 
 ---
-
 
 # Abilita AEM Screens per il tuo sito dimostrativo {#enable-screens}
 
@@ -170,7 +170,7 @@ Ora puoi creare un foglio di calcolo Google Sheets per memorizzare i dati meteo.
 1. Individua l&#39;ID del foglio.
 
    * L&#39;ID foglio è la stringa casuale di caratteri nel collegamento foglio copiato dopo `d/` e prima `/edit`.
-   * Esempio:
+   * Ad esempio:
       * Se l&#39;URL è `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0`
       * L&#39;ID del foglio è `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`.
 

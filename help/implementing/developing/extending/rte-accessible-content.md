@@ -16,24 +16,24 @@ ht-degree: 1%
 
 Per informazioni sulle configurazioni tipiche dell’editor Rich Text, consulta [configurare RTE](rich-text-editor.md) e [configurare i plug-in RTE per funzionalità specifiche](configure-rich-text-editor-plug-ins.md).
 
-Utilizza la configurazione dei plug-in RTE per configurare e personalizzare le funzioni relative all’accessibilità. Ad esempio, utilizza `paraformat` per aggiungere elementi semantici a livello di blocco aggiuntivi, tra cui l’estensione del numero di livelli di intestazione supportati oltre i livelli di base `H1`, `H2` e `H3` forniti per impostazione predefinita. La modifica avanzata del testo è possibile utilizzando molti componenti dell’interfaccia utente di authoring. I componenti comunemente utilizzati sono testo, immagine, download e così via.
+Utilizza la configurazione dei plug-in RTE per configurare e personalizzare le funzioni relative all’accessibilità. Ad esempio, utilizza `paraformat` per aggiungere elementi semantici a livello di blocco extra, compreso l’estensione del numero di livelli di intestazione supportati oltre il livello di base `H1`, `H2` e `H3` fornito per impostazione predefinita. La modifica avanzata del testo è possibile utilizzando molti componenti dell’interfaccia utente di authoring. I componenti comunemente utilizzati sono testo, immagine, download e così via.
 
-La funzionalità RTE può essere resa disponibile in molti componenti. Il componente principale è il componente `Text`.
+La funzionalità RTE può essere resa disponibile in molti componenti. Il componente principale è il `Text` componente.
 
-Per il componente `Text` in [!DNL Experience Manager], nella schermata seguente viene visualizzato l’editor Rich Text con una serie di plug-in abilitati, tra cui `paraformat`:
+Per `Text` componente in [!DNL Experience Manager], la schermata seguente visualizza l’editor Rich Text con una serie di plug-in abilitati, tra cui `paraformat`:
 
 ![Componente Testo RTE in modalità a schermo intero](assets/rte-toolbar-full-screen-mode.png)
 
 ## Configurare le funzioni del plug-in {#configuring-the-plugin-features}
 
-Per istruzioni su come configurare l’editor Rich Text, consulta la pagina [configurare l’editor Rich Text](rich-text-editor.md) . L&#39;articolo riguarda:
+Per istruzioni su come configurare l’editor Rich Text, consulta [configurare l’editor Rich Text](rich-text-editor.md) pagina. L&#39;articolo riguarda:
 
 * [Plug-in e relative funzioni](rich-text-editor.md#aboutplugins)
 * [Posizioni di configurazione](rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [Attivare un plug-in e configurare la proprietà features](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configurare altre funzionalità dell’editor Rich Text](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Per attivare alcune o tutte le funzioni di un plug-in, configura il plug-in all’interno del ramo `rtePlugins` appropriato in CRXDE Lite.
+Per attivare alcune o tutte le funzioni di un plug-in, configura il plug-in all’interno dei `rtePlugins` in CRXDE Lite.
 
 ![CRXDE Lite mostra un esempio di rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
@@ -41,20 +41,20 @@ Per attivare alcune o tutte le funzioni di un plug-in, configura il plug-in all�
 
 Nuovi formati di blocchi semantici sono disponibili per la selezione.
 
-1. A seconda dell’editor Rich Text, determina e passa alla [posizione di configurazione](rich-text-editor.md#understand-the-configuration-paths-and-locations).
-1. [Attiva il ](rich-text-editor.md) campo di selezione dei paragrafi  [attivando il plug-in](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-1. [Specificare i formati che si desidera rendere disponibili nel campo](rich-text-editor.md) di selezione dei paragrafi.
+1. A seconda dell’editor Rich Text, determina e naviga fino al [percorso di configurazione](rich-text-editor.md#understand-the-configuration-paths-and-locations).
+1. [Attiva il campo di selezione dei paragrafi](rich-text-editor.md) da [attivazione del plug-in](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Specificare i formati che si desidera rendere disponibili nel campo di selezione dei paragrafi](rich-text-editor.md).
 1. I formati di paragrafo sono quindi disponibili per l’autore del contenuto dai campi di selezione nell’editor Rich Text.
 
 Con gli elementi strutturali disponibili nell’editor Rich Text tramite le opzioni del formato paragrafo, [!DNL Experience Manager] fornisce una buona base per lo sviluppo di contenuti accessibili. Gli autori di contenuti non possono utilizzare l’editor Rich Text per formattare la dimensione del font o i colori o altri attributi correlati, impedendo la creazione di formattazione in linea. Al contrario, gli autori possono selezionare gli elementi strutturali appropriati, come le intestazioni e utilizzare gli stili globali selezionati dall’opzione Stili per garantire un markup pulito e opzioni più avanzate per gli utenti che navigano con i propri fogli di stile e contenuti strutturati correttamente.
 
 ## Utilizzo della funzione Modifica origine {#use-of-the-source-edit-feature}
 
-In alcuni casi, gli autori di contenuti dovranno esaminare e regolare il codice sorgente HTML creato utilizzando l’editor Rich Text. Ad esempio, per garantire la conformità alle linee guida WCAG 2.0, un contenuto creato all’interno dell’editor Rich Text può richiedere più tag. Questo può essere fatto con l’opzione [modifica sorgente](rich-text-editor.md#aboutplugins) dell’editor Rich Text. Puoi specificare la funzione [`sourceedit` nel plug-in `misctools`](rich-text-editor.md#aboutplugins).
+In alcuni casi, gli autori di contenuti dovranno esaminare e regolare il codice sorgente HTML creato utilizzando l’editor Rich Text. Ad esempio, per garantire la conformità alle linee guida WCAG 2.0, un contenuto creato all’interno dell’editor Rich Text può richiedere più markup. Questo può essere fatto con le [modifica sorgente](rich-text-editor.md#aboutplugins) opzione dell’editor Rich Text. Puoi specificare la [`sourceedit` sulla `misctools` plug-in](rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->Utilizza attentamente la funzione `sourceedit` . Eventuali errori di digitazione e le funzioni non supportate possono causare problemi.
+>Utilizza la `sourceedit` con attenzione. Eventuali errori di digitazione e le funzioni non supportate possono causare problemi.
 
 <!--
 TBD ENGREVIEW: Is this only applicable to Classic UI? 
@@ -148,5 +148,5 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Guida rapida agli standard WCAG](/help/compliance/accessibility/quick-guide-wcag.md)
-* [Come creare contenuto accessibile in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
+>* [Come creare contenuto accessibile in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 

@@ -1,16 +1,15 @@
 ---
 title: Ricerca
 description: Individua il contenuto più velocemente con funzionalità complete di ricerca
-translation-type: tm+mt
-source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
+exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 99%
 
 ---
 
-
-# Ricerca {#search-feature}
+# Ricerca   {#search-feature}
 
 L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti, a seconda del tipo di risorsa.
 
@@ -18,7 +17,7 @@ L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti,
 
 La funzione Ricerca è disponibile nella barra degli strumenti superiore:
 
-![Icona di ricerca](/help/sites-cloud/authoring/assets/search-icon.png)
+![Icona Ricerca](/help/sites-cloud/authoring/assets/search-icon.png)
 
 La barra di ricerca consente di effettuare le seguenti operazioni:
 

@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,6 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
 >* Conoscenza del sito e della struttura dei contenuti
 >* Informazioni sulle strategie di caching
 >* Supporto dal team di sviluppo
-
 >
 >Prima di utilizzare questa funzione è consigliabile parlarne con il team di sviluppo per definire il modo migliore per sfruttarla al meglio per il progetto.
 

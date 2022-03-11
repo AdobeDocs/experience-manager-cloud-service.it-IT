@@ -2,8 +2,9 @@
 title: Conformità
 description: In questa pagina sono elencate le risorse di supporto autonomo che forniscono informazioni sulla conformità in Experience Manager as a Cloud Service.
 landing-page-description: Inizia qui per una panoramica sulla conformità in AEM as a Cloud Service, comprensiva di privacy e accessibilità.
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
-workflow-type: ht
+exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 100%
 

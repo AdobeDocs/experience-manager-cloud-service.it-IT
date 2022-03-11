@@ -38,7 +38,7 @@ In qualità di autore dovrai organizzare il sito Web in AEM. Questo richiede che
 
 La struttura del sito web è analoga a una struttura ad albero contenente le pagine dei contenuti. I nomi di queste pagine vengono utilizzati per formare gli URL, mentre i titoli vengono mostrati durante la visualizzazione del contenuto della pagina.
 
-Di seguito è riportato un esempio tratto dal sito [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), in cui è possibile accedere a un articolo sugli skatepark ( `la-skateparks`):
+Di seguito è riportato un esempio tratto dal sito [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it), in cui è possibile accedere a un articolo sugli skatepark ( `la-skateparks`):
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -92,7 +92,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 
-Durante la creazione di una nuova pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte da AEM e JCR.
+Quando si crea una nuova pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto da AEM e dal JCR.
 
 I caratteri minimi consentiti sono:
 
@@ -265,13 +265,13 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
    ![Copia](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Passa al percorso in cui desideri inserire la nuova copia della pagina.
-1. Tocca o fai clic sull’icona **Incolla** che è diventata disponibile.
+1. Tocca o fai clic sul pulsante **Incolla** icona che è diventata disponibile.
 
    ![Incolla](/help/sites-cloud/authoring/assets/paste.png)
 
 1. La finestra di dialogo Incolla presenta un riepilogo della transazione di incolla e la possibilità di:
-   * **Nuovo nome sito:** modifica il nome della pagina incollata
-   * **Incolla senza elementi figlio:** consente di incollare le pagine figlie della pagina selezionata (per impostazione predefinita le pagine figlie vengono incollate)
+   * **Nuovo nome sito:** Modificare il nome della pagina incollata
+   * **Incolla senza elementi figlio:** Ometti le pagine figlie della pagina selezionata quando si incollano (per impostazione predefinita le pagine figlie vengono incollate)
 
    ![Finestra di dialogo Incolla](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
@@ -364,7 +364,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
 >[!NOTE]
 >
->Una pagina può essere spostata solo in una posizione in cui è consentito il modello su cui si basa la pagina. Per ulteriori informazioni, consulta [Disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability) .
+>Una pagina può essere spostata solo in una posizione in cui è consentito il modello su cui si basa la pagina. Vedi [Disponibilità del modello](/help/implementing/developing/components/templates.md#template-availability) per ulteriori informazioni.
 
 #### Azioni asincrone {#asynchronous-actions}
 

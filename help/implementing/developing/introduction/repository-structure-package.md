@@ -1,40 +1,39 @@
 ---
 title: 'Pacchetto per la struttura dell’archivio dei progetti AEM  '
-description: Adobe Experience Manager come progetto di Cloud Service Maven richiede una definizione di sottopacchetto Struttura archivio il cui unico scopo è definire le radici del repository JCR in cui vengono distribuiti i sottopacchetti Codice del progetto.
-translation-type: tm+mt
-source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
+description: I progetti Adobe Experience Manager as a Cloud Service Maven richiedono una definizione di sottopacchetto con struttura dell’archivio il cui unico scopo è quello di definire le radici dell’archivio JCR in cui vengono distribuiti i pacchetti secondari del codice del progetto.
+exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 9%
 
 ---
 
-
 # Pacchetto per la struttura dell’archivio dei progetti AEM
 
-I progetti Maven per Adobe Experience Manager come Cloud Service richiedono una definizione di sottopacchetto della struttura del repository il cui unico scopo è definire le radici del repository JCR in cui vengono distribuiti i sottopacchetti di codice del progetto. In questo modo, l&#39;installazione dei pacchetti nel Experience Manager  come Cloud Service viene ordinata automaticamente dalle dipendenze delle risorse JCR. Le dipendenze mancanti potrebbero causare l&#39;installazione di sottostrutture in anticipo rispetto alle strutture padre e, di conseguenza, la rimozione imprevista, interrompendo la distribuzione.
+I progetti Maven per Adobe Experience Manager as a Cloud Service richiedono una definizione di pacchetto secondario della struttura dell’archivio il cui unico scopo è quello di definire le radici dell’archivio JCR in cui vengono distribuiti i pacchetti secondari del codice del progetto. In questo modo l’installazione dei pacchetti in Experience Manager as a Cloud Service viene ordinata automaticamente dalle dipendenze delle risorse JCR. Le dipendenze mancanti possono portare a scenari in cui le sottostrutture sarebbero installate prima delle loro strutture padre e quindi rimosse inaspettatamente, interrompendo la distribuzione.
 
 Se il pacchetto di codice viene distribuito in una posizione **non inclusa** nel pacchetto stesso, tutte le risorse precedenti (risorse JCR più vicine alla radice JCR) devono essere enumerate nel pacchetto della struttura dell’archivio per stabilire tali dipendenze.
 
 ![Pacchetto struttura archivio](./assets/repository-structure-packages.png)
 
-Il pacchetto della struttura del repository definisce lo stato comune previsto di `/apps` che il validatore del pacchetto utilizza per determinare le aree &quot;sicure da potenziali conflitti&quot; in quanto sono radici standard.
+Il pacchetto della struttura dell&#39;archivio definisce lo stato comune previsto di `/apps` che il validatore del pacchetto utilizza per determinare le aree &quot;sicure da potenziali conflitti&quot; in quanto sono radici standard.
 
-I percorsi più comuni da includere nel pacchetto della struttura del repository sono:
+I percorsi più tipici da includere nel pacchetto della struttura dell&#39;archivio sono:
 
 + `/apps` che è un nodo fornito dal sistema
-+ `/apps/cq/...`,  `/apps/dam/...`,  `/apps/wcm/...`e  `/apps/sling/...` che forniscono sovrapposizioni comuni per  `/libs`.
-+ `/apps/settings` che è il percorso principale di configurazione basato sul contesto condiviso
++ `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`e `/apps/sling/...` che forniscono sovrapposizioni comuni `/libs`.
++ `/apps/settings` che è il percorso principale della configurazione in base al contesto condiviso
 
-Tenete presente che questo sottopacchetto **non contiene** e comprende solo un `pom.xml` che definisce le radici del filtro.
+Tieni presente che questo pacchetto secondario **non ha** qualsiasi contenuto ed è costituito unicamente da un `pom.xml` definizione delle radici del filtro.
 
-## Creazione del pacchetto struttura archivio
+## Creazione del pacchetto della struttura dell’archivio
 
-Per creare un pacchetto di struttura del repository per il progetto Maven, create un nuovo sottoprogetto Maven vuoto, con il seguente `pom.xml`, aggiornando i metadati del progetto in modo che siano conformi al progetto Maven principale.
+Per creare un pacchetto della struttura dell’archivio per il progetto Maven, crea un nuovo sottoprogetto Maven vuoto con le seguenti opzioni `pom.xml`, aggiornamento dei metadati del progetto per adattarli al progetto Maven principale.
 
-Aggiornate la `<filters>` per includere tutte le radici del percorso del repository JCR nelle quali i pacchetti di codice distribuiscono.
+Aggiorna `<filters>` per includere tutte le directory del percorso dell&#39;archivio JCR che i pacchetti di codice distribuiscono in.
 
-Assicurarsi di aggiungere questo nuovo sottoprogetto Maven all&#39;elenco dei progetti padre `<modules>`.
+Aggiungi questo nuovo sottoprogetto Maven ai progetti padre `<modules>` elenco.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -115,11 +114,11 @@ Assicurarsi di aggiungere questo nuovo sottoprogetto Maven all&#39;elenco dei pr
 </project>
 ```
 
-## Riferimento al pacchetto della struttura dell&#39;archivio
+## Riferimento al pacchetto della struttura dell’archivio
 
-Per utilizzare il pacchetto della struttura del repository, farvi riferimento tramite tutti i pacchetti di codice (i pacchetti secondari che distribuiscono a `/apps`) progetti Maven tramite la configurazione dei plug-in Maven del pacchetto di contenuti FileVault `<repositoryStructurePackage>`.
+Per utilizzare il pacchetto della struttura dell&#39;archivio, fai riferimento a esso tramite tutti i pacchetti di codice (i pacchetti secondari che si distribuiscono per `/apps`) Progetti Maven tramite il pacchetto di contenuti FileVault Maven plug-in `<repositoryStructurePackage>` configurazione.
 
-In `ui.apps/pom.xml` e in qualsiasi altro pacchetto di codice `pom.xml`s, aggiungere un riferimento alla configurazione del pacchetto della struttura del repository del progetto (#repository-structure-package) al plug-in Maven del pacchetto FileVault.
+In `ui.apps/pom.xml`e qualsiasi altro pacchetto di codice `pom.xml`s, aggiungi un riferimento alla configurazione del pacchetto della struttura dell&#39;archivio del progetto (#repository-structure-package) al plug-in Maven del pacchetto FileVault.
 
 ```xml
 ...
@@ -154,33 +153,33 @@ In `ui.apps/pom.xml` e in qualsiasi altro pacchetto di codice `pom.xml`s, aggiun
 </dependencies>
 ```
 
-## Caso di utilizzo per più codici
+## Caso di utilizzo di pacchetti multicodice
 
 Un caso d’uso meno comune e più complesso supporta la distribuzione di più pacchetti di codice che si installano nelle stesse aree dell’archivio JCR.
 
-Esempio:
+Ad esempio:
 
 + Il pacchetto di codice A viene distribuito in `/apps/a`
 + Il pacchetto di codice B viene distribuito in `/apps/a/b`
 
-Se una dipendenza a livello di pacchetto non viene stabilita dal pacchetto di codice B nel pacchetto di codice A, il pacchetto di codice B può essere implementato prima in `/apps/a`, seguito dal pacchetto di codice B, che si distribuisce in `/apps/a`, con conseguente rimozione dell&#39;installazione precedente `/apps/a/b`.
+Se una dipendenza a livello di pacchetto non è stabilita dal pacchetto di codice B sul pacchetto di codice A, il pacchetto di codice B può essere distribuito prima in `/apps/a`, seguito dal pacchetto di codice B, che distribuisce in `/apps/a`, con conseguente rimozione dell&#39;installazione precedente `/apps/a/b`.
 
 In questo caso:
 
-+ Il pacchetto di codice A deve definire un `<repositoryStructurePackage>` nel pacchetto della struttura del repository del progetto (che deve avere un filtro per `/apps`).
-+ Il pacchetto di codice B deve definire un `<repositoryStructurePackage>` nel pacchetto di codice A, perché il pacchetto di codice B si distribuisce nello spazio condiviso dal pacchetto di codice A.
++ Il pacchetto di codice A deve definire un `<repositoryStructurePackage>` sul pacchetto della struttura dell’archivio del progetto (che deve avere un filtro per `/apps`).
++ Il pacchetto di codice B deve definire un `<repositoryStructurePackage>` sul pacchetto di codice A, perché il pacchetto di codice B viene distribuito nello spazio condiviso dal pacchetto di codice A.
 
 ## Errori e debug
 
-Se i pacchetti della struttura dell&#39;archivio non sono configurati correttamente, in Maven build verrà segnalato un errore:
+Se i pacchetti della struttura dell&#39;archivio non sono configurati correttamente, in Maven verrà segnalato un errore:
 
 ```
 1 error(s) detected during dependency analysis.
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-Indica che il pacchetto del codice di interruzione non ha un `<repositoryStructurePackage>` in cui è elencato `/apps/some/path` nel relativo elenco di filtri.
+Questo indica che il pacchetto di codice di interruzione non ha un `<repositoryStructurePackage>` elenchi `/apps/some/path` nell’elenco dei filtri.
 
 ## Risorse aggiuntive
 
-+ [FileVault Content Package Maven Plug-in](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [Plug-in Maven pacchetto di contenuti FileVault](http://jackrabbit.apache.org/filevault-package-maven-plugin/)

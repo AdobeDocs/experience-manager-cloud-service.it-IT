@@ -1,13 +1,13 @@
 ---
 title: Crea programma
 description: Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 06287618-0328-40b1-bba8-84002283f23f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Crea programma {#creating-a-program}
 
@@ -86,7 +86,7 @@ Dopo aver effettuato l’accesso a Cloud Manager, puoi creare un nuovo programma
 
 1. La pipeline viene avviata e viene visualizzata una pagina che descrive l’avanzamento della distribuzione. È possibile spostarsi da questa schermata quando il programma viene creato e, se necessario, tornare in un secondo momento.
 
-   ![Implementazione](assets/deployment.png)
+   ![Distribuzione](assets/deployment.png)
 
 Una volta completata la pipeline, il componente aggiuntivo e il relativo contenuto demo sono disponibili per l’utilizzo nell’ambiente di authoring AEM.
 

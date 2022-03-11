@@ -1,18 +1,17 @@
 ---
 title: Applicazione dei flussi di lavoro alle pagine
 description: Durante l’authoring, è possibile ricorrere ai flussi di lavoro per intraprendere azioni sulle pagine; è inoltre possibile applicare più di un flusso di lavoro.
-translation-type: tm+mt
-source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
+exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 81%
 
 ---
 
-
 # Applicazione dei flussi di lavoro alle pagine {#applying-workflows-to-pages}
 
-Durante l’authoring, puoi richiamare i flussi di lavoro per intervenire sulle pagine; è inoltre possibile applicare più flussi di lavoro.
+Durante l’authoring, puoi richiamare i flussi di lavoro per intervenire sulle pagine; è anche possibile applicare più di un flusso di lavoro.
 
 Quando si applica il flusso di lavoro, è necessario specificare le seguenti informazioni:
 
@@ -31,7 +30,7 @@ Puoi avviare i flussi di lavoro a partire da:
 >Consulta anche:
 >
 >* Come applicare i flussi di lavoro alle risorse DAM.
->* [Lavorare con Flussi di lavoro per progetto](/help/sites-cloud/authoring/projects/workflows.md).
+>* [Utilizzo dei flussi di lavoro per i progetti](/help/sites-cloud/authoring/projects/workflows.md).
 
 
 <!-- 
@@ -58,30 +57,30 @@ In entrambi i casi, è necessario:
 
 * [Specificare i Dettagli del flusso di lavoro nella Procedura guidata Crea flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Avviare un flusso di lavoro dalla barra degli strumenti di Sites  {#starting-a-workflow-from-the-sites-toolbar}
+### Avviare un flusso di lavoro dalla barra degli strumenti di Sites {#starting-a-workflow-from-the-sites-toolbar}
 
-È possibile avviare un flusso di lavoro dalla barra degli strumenti della console **Siti**:
+Puoi avviare un flusso di lavoro dalla barra degli strumenti di **Sites** console:
 
 1. Vai alla pagina richiesta e selezionala.
 
-1. Dall&#39;opzione **Crea** nella barra degli strumenti è ora possibile selezionare **Workflow**.
+1. Da **Crea** nella barra degli strumenti è ora possibile selezionare **Flusso di lavoro**.
 
    ![Crea flusso di lavoro dalla barra degli strumenti](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
 1. La procedura guidata **Crea flusso di lavoro** consente di [specificare i dettagli del flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Avviare un flusso di lavoro dalla Timeline  {#starting-a-workflow-from-the-timeline}
+### Avviare un flusso di lavoro dalla Timeline {#starting-a-workflow-from-the-timeline}
 
 Puoi avviare un flusso di lavoro da applicare alla risorsa selezionata dalla **Timeline** 
 
-1. [Selezionate la ](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) risorsa e aprite  [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)  (oppure aprite Timeline e selezionate la risorsa).
+1. [Seleziona la risorsa](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) e aperto [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (oppure apri Timeline e seleziona la risorsa).
 1. Puoi utilizzare la freccia dal campo commento per visualizzare **Avvia flusso di lavoro**:
 
    ![Creare un flusso di lavoro dalla timeline](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
 1. La procedura guidata **Crea flusso di lavoro** consente di [specificare i dettagli del flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Specificazione dei Dettagli del flusso di lavoro nella procedura guidata Crea flusso di lavoro  {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Specificazione dei Dettagli del flusso di lavoro nella procedura guidata Crea flusso di lavoro {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 La procedura guidata **Crea flusso di lavoro** consente di selezionare il flusso di lavoro e specificare i dettagli necessari.
 
@@ -119,7 +118,7 @@ Puoi specificare i dettagli:
 
 1. Al passaggio **Ambito** puoi selezionare:
 
-   * **Aggiungi** contenuto per aprire il  [browser ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) percorso e selezionare ulteriori risorse; nel browser, tocca o fai clic su  **** Seleziona per aggiungere il contenuto all’istanza del flusso di lavoro.
+   * **Aggiungi contenuto** per aprire [browser del percorso](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) e selezionare risorse aggiuntive; nel browser, tocca o fai clic su **Seleziona** per aggiungere il contenuto all’istanza del flusso di lavoro.
 
    * Una risorsa esistente per visualizzare le seguenti azioni:
 
@@ -134,15 +133,15 @@ Una finestra di dialogo si apre per permettere di perfezionare la selezione incl
 
       * **Rimuovi selezione** per rimuovere una determinata risorsa dal flusso di lavoro.
 
-   ![Definizione dell&#39;ambito del flusso di lavoro](/help/sites-cloud/authoring/assets/workflows-scope.png)
+   ![Definire l’ambito del flusso di lavoro](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
    >[!NOTE]
    >
    >Se aggiungi ulteriori risorse, puoi selezionare **Indietro** per regolare l’impostazione di **Mantieni pacchetto flusso di lavoro** nel passaggio **Proprietà**.
 
-1. Utilizzare **Create** per chiudere la procedura guidata e creare l&#39;istanza del flusso di lavoro. Una notifica appare nella console Sites.
+1. Utilizzo **Crea** per chiudere la procedura guidata e creare l’istanza del flusso di lavoro. Una notifica appare nella console Sites.
 
-## Avviare un flusso di lavoro dall&#39;editor pagina  {#starting-a-workflow-from-the-page-editor}
+## Avviare un flusso di lavoro dall&#39;editor pagina {#starting-a-workflow-from-the-page-editor}
 
 Quando modifichi una pagina, puoi selezionare **Informazioni pagina** nella barra degli strumenti. Il menu a discesa contiene l&#39;opzione **Avvia nel flusso di lavoro**. Questa apre una finestra di dialogo nella quale puoi specificare il flusso di lavoro obbligatorio, insieme a un titolo richiesto:
 

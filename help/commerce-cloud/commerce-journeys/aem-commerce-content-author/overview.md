@@ -1,14 +1,15 @@
 ---
 title: percorso di authoring dei contenuti di AEM Commerce
 description: Inizia qui per un percorso guidato tramite AEM Commerce Authoring
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
-# percorso di autori di contenuti AEM e Commerce {#aem-commerce-author-journey}
+# Percorso di authoring di contenuti AEM e Commerce {#aem-commerce-author-journey}
 
 Inizia qui per un percorso guidato attraverso AEM Contenuto e Commerce per scoprire come gestire le esperienze dei prodotti.
 

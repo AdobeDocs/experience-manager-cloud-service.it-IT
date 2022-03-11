@@ -3,7 +3,7 @@ title: Normative sulla protezione dei dati e la privacy dei dati - Preparazione 
 description: Scopri il supporto di Adobe Experience Manager as a Cloud Service per le varie normative su privacy e protezione dei dati, incluso il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi all’implementazione di un nuovo progetto as a Cloud Service AEM.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Adobe fornisce documentazione e procedure (con API se disponibili) per l’ammin
 >
 >I dati provenienti da un altro servizio Adobe on-demand, insieme a eventuali richieste di accesso a dati personali correlate, richiederanno azioni su tale servizio.
 >
->Per ulteriori informazioni consulta [Centro per la privacy di Adobe](https://www.adobe.com/it/privacy.html).
+>Per ulteriori informazioni consulta [Centro per la privacy di Adobe](https://www.adobe.com/privacy.html).
 
 ## Introduzione {#introduction}
 

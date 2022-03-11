@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Scopri lo sviluppo di CMS Headless {#learn-about}
 
-In questa parte del [AEM Percorso di sviluppo headless,](overview.md) scopri la tecnologia headless e perché utilizzarla.
+In questa parte del [AEM Percorso di sviluppo headless,](overview.md) scopri la tecnologia headless e perché usarla.
 
 ## Obiettivo {#objective}
 
@@ -58,7 +58,7 @@ La testa di qualsiasi sistema è generalmente il renderer di output di quel sist
 
 Un server headless, ad esempio, è probabilmente seduto in un rack in una stanza server da qualche parte e non ha monitor collegato. Per accedervi è necessario connettersi in remoto. In questo caso, il monitor è la testina perché si occupa del rendering dell&#39;output del server. In qualità di consumatore del servizio, fornisci la tua testa (il monitor) quando ci si connette da remoto.
 
-Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, consegnando solo il **contenuto** in modo standardizzato, un CMS headless omette il rendering finale dell&#39;output, lasciando al servizio che consuma la **presentazione** dei contenuti.
+Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, consegnando solo il **content** in modo standardizzato, un CMS headless omette il rendering finale dell&#39;output, lasciando **presentazione** del contenuto al servizio che consuma.
 
 ![CMS headless](assets/headless-cms.png)
 
@@ -120,11 +120,11 @@ Grazie per aver iniziato sul tuo percorso AEM senza testa! Dopo aver letto quest
 * Capire perché e quando è richiesto il headless.
 * Scopri ad alto livello come vengono utilizzati i concetti senza testa e come si relazionano.
 
-Sviluppa questa conoscenza e continua il tuo percorso AEM headless esaminando il documento [Guida introduttiva AEM headless come Cloud Service](getting-started.md) dove imparerai come impostare gli strumenti necessari e come iniziare a pensare a come AEM la distribuzione di contenuti headless e ai relativi prerequisiti.
+Sviluppa questa conoscenza e continua il tuo percorso AEM headless rivedendo il documento successivo [Guida introduttiva a AEM Headless as a Cloud Service](getting-started.md) dove verrà illustrato come impostare gli strumenti necessari e come iniziare a pensare a come AEM la distribuzione di contenuti headless e ai relativi prerequisiti.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre è consigliabile passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Guida introduttiva AEM headless come Cloud Service,](getting-started.md) sono riportate di seguito alcune risorse aggiuntive facoltative che consentono di approfondire alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
+Mentre è consigliabile passare alla parte successiva del percorso di sviluppo headless rivedendo il documento [Guida introduttiva a AEM senza testa as a Cloud Service,](getting-started.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
 
-* [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)  - Comprendere AEM come struttura di un Cloud Service
-* [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) : utilizza questi tutorial pratici per scoprire come utilizzare le varie opzioni per la distribuzione di contenuti agli endpoint headless con AEM e scegliere ciò che è più adatto alle tue esigenze.
+* [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Comprendere AEM struttura dell&#39;as a Cloud Service
+* [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui questi tutorial pratici per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello che fa per te.

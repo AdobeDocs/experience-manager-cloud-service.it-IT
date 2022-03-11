@@ -1,13 +1,13 @@
 ---
 title: Convalida dei trasferimenti di contenuto
 description: Utilizza lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuto
-source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
+exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '948'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Convalida dei trasferimenti di contenuto {#validating-content-transfers}
 
@@ -157,7 +157,3 @@ Per verificare, scegli un percorso dal rapporto di convalida e verifica se è pr
 Alcuni percorsi dei digesti di estrazione e acquisizione sono esclusi appositamente per mantenere le dimensioni di questi file gestibili, con l’obiettivo di poter calcolare il risultato della convalida della migrazione entro due ore dal completamento dell’acquisizione.
 
 I percorsi che escludiamo attualmente dai digesti includono: `cqdam.text.txt` rappresentazioni, nodi `/home`e i nodi all&#39;interno di `/jcr:system`.
-
-
-
-

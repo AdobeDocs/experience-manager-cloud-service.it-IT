@@ -1,6 +1,6 @@
 ---
-title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.2.0
-description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.2.0
+title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.2.0
+description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.2.0
 exl-id: 281f9523-dec2-44f1-9459-5a45d48489d9
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
@@ -9,11 +9,11 @@ ht-degree: 2%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.6.0 {#release-notes}
+# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.2.0 {#release-notes}
 
 Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.2.0.
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.2.0 è l’11 febbraio 2021.
 
@@ -31,7 +31,7 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.2.0 è l’1
 
 * L’interfaccia utente di Cloud Manager informa l’utente che potrebbe non essere temporaneamente in grado di aggiungere/aggiornare il nome di dominio perché all’ambiente associato è collegata una pipeline in esecuzione o attualmente in attesa del passaggio di approvazione.
 
-* Le proprietà impostate nei file `pom.xml` del cliente con prefisso sonar verranno rimosse in modo dinamico per evitare errori di creazione e di scansione della qualità.
+* Proprietà impostate nel cliente `pom.xml` i file con prefisso sonar vengono ora rimossi dinamicamente per evitare errori di creazione e di scansione della qualità.
 
 * L’interfaccia utente di Cloud Manager informa l’utente che potrebbe non essere temporaneamente in grado di selezionare un certificato SSL se è utilizzato da un nome di dominio attualmente distribuito.
 

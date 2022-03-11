@@ -1,60 +1,59 @@
 ---
 title: Diagnostica ContextHub
-description: ContextHub fornisce una pagina di diagnostica in cui potete vedere una panoramica del framework ContextHub
-translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+description: ContextHub fornisce una pagina di diagnostica in cui puoi visualizzare una panoramica del framework ContextHub
+exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
 # Diagnostica ContextHub {#contexthub-diagnostics}
 
-ContextHub fornisce una pagina di diagnostica in cui potete vedere una panoramica del framework ContextHub. Per aprire la pagina, passate alla pagina `contexthub.diagnostics.html` dell’istanza di authoring AEM, ad esempio:
+ContextHub fornisce una pagina di diagnostica in cui puoi visualizzare una panoramica del framework ContextHub. Per aprire la pagina, passa alla pagina `contexthub.diagnostics.html` pagina dell’istanza di authoring AEM, ad esempio:
 
 `http://<host>:<port>/conf/<site>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
-La pagina Diagnostica ContextHub fornisce informazioni sugli store e sui moduli dell&#39;interfaccia utente creati, sulle cartelle della libreria client che vengono caricate e sui collegamenti alle pagine utili.
+La pagina Diagnostica ContextHub fornisce informazioni sugli archivi e sui moduli di interfaccia utente creati, sulle cartelle della libreria client caricate e sui collegamenti a pagine utili.
 
 >[!NOTE]
 >
->Per poter restituire le informazioni diagnostiche, è necessario abilitare la modalità di debug, altrimenti la pagina di diagnostica sarà vuota. Per informazioni su come abilitare la modalità di debug, vedere [questo documento](configuring-contexthub.md#debugging-contexthub).
+>Per poter restituire le informazioni di diagnostica, è necessario attivare la modalità di debug, altrimenti la pagina di diagnostica sarà vuota. Vedi [presente documento](configuring-contexthub.md#debugging-contexthub) per informazioni dettagliate su come abilitare la modalità di debug.
 
 ## Negozi {#stores}
 
-Nella sezione Store sono elencati tutti gli store ContextHub configurati. Ogni elemento dell&#39;elenco è costituito dalle seguenti informazioni:
+Nella sezione Stores sono elencati tutti gli archivi ContextHub configurati. Ogni voce dell&#39;elenco è costituita dalle seguenti informazioni:
 
-* **Titolo:** Il tipo di  [store ](sample-stores.md) su cui si basa lo store.
-* **percorso:** percorso del nodo del repository che contiene la configurazione.
-* **resourceType:** il percorso del nodo del repository in cui è definito il tipo di archivio.
-* **clientlibs:** Le categorie delle librerie client caricate che implementano il tipo di store.
+* **Titolo:** La [tipo di archivio](sample-stores.md) su cui si basa il negozio.
+* **percorso:** Percorso del nodo del repository che contiene la configurazione.
+* **resourceType:** Percorso del nodo del repository in cui è definito il tipo di archivio.
+* **clientlibs:** Le categorie delle librerie client caricate che implementano il tipo di archivio.
 
 ## Moduli {#modules}
 
-Nella sezione Moduli sono elencati tutti i moduli di interfaccia utente ContextHub configurati. Ogni elemento dell&#39;elenco è costituito dalle seguenti informazioni:
+La sezione Moduli elenca tutti i moduli dell’interfaccia utente di ContextHub configurati. Ogni voce dell&#39;elenco è costituita dalle seguenti informazioni:
 
-* **Titolo:** Tipo di modulo  [interfaccia ](sample-modules.md) basato sul modulo dell’interfaccia utente.
-* **percorso:** percorso del nodo del repository che contiene la configurazione.
-* **resourceType:** percorso del nodo del repository in cui è definito il tipo di modulo dell&#39;interfaccia utente.
-* **clientlibs:** le categorie delle librerie client caricate che implementano il tipo di modulo dell&#39;interfaccia utente.
+* **Titolo:** La [Tipo di modulo interfaccia utente](sample-modules.md) su cui si basa il modulo dell’interfaccia utente.
+* **percorso:** Percorso del nodo del repository che contiene la configurazione.
+* **resourceType:** Percorso del nodo del repository in cui è definito il tipo di modulo dell&#39;interfaccia utente.
+* **clientlibs:** Le categorie delle librerie client caricate che implementano il tipo di modulo dell’interfaccia utente.
 
 ## Clientlibs {#clientlibs}
 
-La sezione Clientlibs elenca tutte le [cartelle della libreria client](/help/implementing/developing/introduction/clientlibs.md) caricate da ContextHub. Le librerie client sono classificate come segue:
+Nella sezione Clientlibs sono elencati tutti i [cartelle della libreria client](/help/implementing/developing/introduction/clientlibs.md) che ContextHub è stato caricato. Le librerie client sono classificate come segue:
 
-* **kernel.js:librerie** client che implementano il framework ContextHub, il motore del segmento e i tipi di store.
-* **ui.js:librerie** client che implementano l&#39;interfaccia utente e i tipi di moduli dell&#39;interfaccia utente ContextHub.
-* **style.css:file** CSS caricati dalle librerie client.
+* **kernel.js:** Librerie client che implementano il framework ContextHub, il motore dei segmenti e i tipi di archivio.
+* **ui.js:** Librerie client che implementano i tipi di moduli di interfaccia utente e interfaccia utente di ContextHub.
+* **style.css:** File CSS caricati dalle librerie client.
 
 ## URL {#urls}
 
-La sezione URL contiene collegamenti alle funzioni ContextHub:
+La sezione URL contiene collegamenti alle funzioni di ContextHub:
 
-* **Editor di configurazione:** apre la  [pagina Configurazione ](configuring-contexthub.md) ContextHub in cui è possibile configurare store, modalità di interfaccia utente e moduli di interfaccia utente.
-* **Configurazione dei moduli ContextHub:** apre il  `/etc/cloudsettings/default/contexthub.config.kernel.js` file, che contiene la rappresentazione oggetto Javascript delle configurazioni dell&#39;archivio ContextHub.
-* **Configurazione dell’interfaccia utente ContextHub:** apre il  `/etc/cloudsettings/default/contexthub.config.ui.js` file, che contiene la rappresentazione dell’oggetto Javascript delle configurazioni della modalità dell’interfaccia utente ContextHub.
-* **kernel.js:** Apre il  `/etc/cloudsettings/default/contexthub.kernel.js` file, che contiene il codice sorgente delle librerie client che implementano il framework ContextHub, il motore del segmento e i tipi di store.
-* **ui.js:** Apre il  `/etc/cloudsettings/default/contexthub.ui.js` file, che contiene il codice sorgente delle librerie client che implementano l&#39;interfaccia utente ContextHub e i tipi di moduli dell&#39;interfaccia utente.
-* **style.css:** Apre il  `/etc/cloudsettings/default/contexthub.styles.css` file, che contiene gli stili CSS per i moduli dell&#39;interfaccia utente e dell&#39;interfaccia utente ContextHub.
+* **Editor di configurazione:** Apre la [Pagina Configurazione ContextHub](configuring-contexthub.md) dove puoi configurare negozi, modalità di interfaccia utente e moduli di interfaccia utente.
+* **Configurazione dei moduli ContextHub:** Apre la `/etc/cloudsettings/default/contexthub.config.kernel.js` file , che contiene la rappresentazione dell’oggetto Javascript delle configurazioni dell’archivio ContextHub.
+* **Configurazione dell’interfaccia utente di ContextHub:** Apre la `/etc/cloudsettings/default/contexthub.config.ui.js` file , che contiene la rappresentazione dell’oggetto Javascript delle configurazioni della modalità di interfaccia utente ContextHub.
+* **kernel.js:** Apre la `/etc/cloudsettings/default/contexthub.kernel.js` , che contiene il codice sorgente delle librerie client che implementano il framework ContextHub, il motore dei segmenti e i tipi di archivio.
+* **ui.js:** Apre la `/etc/cloudsettings/default/contexthub.ui.js` , che contiene il codice sorgente delle librerie client che implementano i tipi di moduli di interfaccia utente e interfaccia utente di ContextHub.
+* **style.css:** Apre la `/etc/cloudsettings/default/contexthub.styles.css` , che contiene gli stili CSS per i moduli di interfaccia utente e interfaccia utente di ContextHub.

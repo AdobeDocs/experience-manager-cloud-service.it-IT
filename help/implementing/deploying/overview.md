@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
 source-wordcount: '3364'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -100,13 +100,13 @@ Durante l&#39;avvio di una nuova versione dell&#39;applicazione, ma prima del pa
 
 Dopo il passaggio alla nuova versione dell&#39;applicazione:
 
-* Tutti gli altri contenuti definibili tramite vault jackrabbit. Esempio:
+* Tutti gli altri contenuti definibili tramite vault jackrabbit. Ad esempio:
    * Cartelle (aggiungere, modificare, rimuovere)
    * Modelli modificabili (aggiungere, modificare, rimuovere)
    * Configurazione in base al contesto (qualsiasi cosa in `/conf`) (aggiungere, modificare, rimuovere)
    * Script (i pacchetti possono attivare gli hook di installazione in varie fasi del processo di installazione del pacchetto. Consulta la sezione [Documentazione di Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) informazioni sugli hook di installazione. Nota che AEM CS utilizza attualmente Filevault versione 3.4.0, che limita gli hook di installazione agli utenti amministratori, agli utenti di sistema e al membro del gruppo di amministratori).
 
-È possibile limitare l’installazione di contenuti modificabili all’authoring o alla pubblicazione incorporando pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per rispecchiare tale separazione è stata effettuata nel AEM 6.5 e i dettagli relativi alla ristrutturazione del progetto raccomandata si trovano nella [Documentazione di AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+È possibile limitare l’installazione di contenuti modificabili all’authoring o alla pubblicazione incorporando pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per rispecchiare tale separazione è stata effettuata nel AEM 6.5 e i dettagli relativi alla ristrutturazione del progetto raccomandata si trovano nella [Documentazione di AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=it)
 
 >[!NOTE]
 >I pacchetti di contenuto vengono distribuiti in tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Questa limitazione è in vigore per garantire la possibilità di eseguire un test di esecuzione automatica. I contenuti specifici di un ambiente richiedono l’installazione manuale tramite [Gestione pacchetti.](/help/implementing/developing/tools/package-manager.md)
@@ -171,7 +171,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Gestione pacchetti - Migrazione dei pacchetti di contenuto variabile"
 >abstract="Esplora l’utilizzo di package manager per i casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;, che include l’importazione di contenuti specifici dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, il trasferimento di piccoli pacchetti di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Strumento Content Transfer (Trasferimento contenuti) "
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Strumento Trasferimento contenuti"
 
 Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;. Ad esempio, per eseguire il debug di un problema di produzione, è necessario importare contenuto specifico dalla produzione nella fase di staging. Per questi scenari, [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) può essere utilizzato in ambienti AEM as a Cloud Service.
 

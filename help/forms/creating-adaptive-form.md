@@ -8,7 +8,7 @@ exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1500'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -97,7 +97,7 @@ Per informazioni su come progettare uno schema XML o JSON per la creazione di Fo
 
 Effettua le seguenti operazioni per utilizzare lo schema XML o JSON come modello di modulo per un modulo adattivo:
 
-1. Sulla **[!UICONTROL Aggiungi proprietà]** passaggio della pagina Creazione di moduli adattivi, tocca **[!UICONTROL Modello Modulo]** scheda .
+1. Sulla **[!UICONTROL Aggiungi proprietà]** passaggio della pagina di creazione di un modulo adattivo, tocca **[!UICONTROL Modello Modulo]** scheda .
 1. Nella scheda Modello di modulo, selezionare **[!UICONTROL Schema]** dal **[!UICONTROL Seleziona da]** campo a discesa.
 
 1. Tocca **[!UICONTROL Seleziona schema]** ed effettuare una delle seguenti operazioni:

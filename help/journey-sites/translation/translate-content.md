@@ -4,13 +4,13 @@ description: Utilizza il connettore di traduzione e le regole per tradurre il co
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 08127d72c84d6f47f5058ef631dc3128114f1953
+exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 0%
 
 ---
-
 
 # Traduci contenuto {#translate-content}
 
@@ -18,7 +18,7 @@ Utilizza il connettore di traduzione e le regole per tradurre il contenuto.
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione di AEM Sites, [Configura regole di traduzione](translation-rules.md) hai imparato a utilizzare AEM regole di traduzione per identificare il contenuto di traduzione. Ora dovresti:
+Nel documento precedente del percorso di traduzione AEM Sites, [Configurare le regole di traduzione](translation-rules.md) hai imparato a utilizzare AEM regole di traduzione per identificare il contenuto di traduzione. Ora dovresti:
 
 * Comprendi cosa fanno le regole di traduzione.
 * Puoi definire le tue regole di traduzione.
@@ -55,15 +55,15 @@ Entrambi gli approcci sono esaminati nelle sezioni seguenti.
 
 Per i proprietari dei contenuti che sono anche responsabili della traduzione, spesso è più semplice AEM creare automaticamente il progetto di traduzione. Per fare in modo AEM creare automaticamente un progetto di traduzione basato sul percorso del contenuto:
 
-1. Passa a **Navigazione** -> **Siti** e tocca o fai clic sul progetto.
-1. Individua la directory principale della lingua del progetto. Ad esempio, se la directory principale lingua è Italiano, `/content/<your-project>/en`.
+1. Passa a **Navigazione** -> **Sites** quindi tocca o fai clic sul progetto.
+1. Individua la directory principale della lingua del progetto. Ad esempio, se la directory principale lingua è Inglese, `/content/<your-project>/en`.
    * Tieni presente che prima della prima traduzione le cartelle delle altre lingue sono segnaposto vuoti. Questi vengono normalmente creati dall’architetto dei contenuti.
 1. Individua la directory principale della lingua del progetto.
-1. Tocca o fai clic sul selettore della barra e mostra il pannello **Riferimenti** .
+1. Tocca o fai clic sul selettore della barra e mostra il **Riferimenti** pannello.
 1. Tocca o fai clic su **Copie per lingua**.
-1. Seleziona la casella di controllo **Copie per lingua** .
-1. Espandi la sezione **Aggiorna copie per lingua** nella parte inferiore del pannello Riferimenti.
-1. Nel menu a discesa **Progetto**, seleziona **Crea progetto di traduzione**.
+1. Controlla la **Copie per lingua** casella di controllo.
+1. Espandi la sezione . **Aggiorna copie per lingua** nella parte inferiore del pannello dei riferimenti.
+1. In **Progetto** a discesa, seleziona **Crea progetti di traduzione**.
 1. Fornisci un titolo appropriato per il progetto di traduzione.
 1. Tocca o fai clic su **Aggiorna**.
 
@@ -73,7 +73,7 @@ Viene visualizzato un messaggio che informa che il progetto è stato creato.
 
 >[!NOTE]
 >
->Si presume che la struttura linguistica necessaria per le lingue delle traduzioni sia già stata creata come parte della [definizione della struttura dei contenuti.](getting-started.md#content-structure) Questo dovrebbe essere fatto in collaborazione con l&#39;architetto dei contenuti.
+>Si presume che la necessaria struttura linguistica per le lingue di traduzione sia già stata creata come parte del [definizione della struttura del contenuto.](getting-started.md#content-structure) Questo dovrebbe essere fatto in collaborazione con l&#39;architetto dei contenuti.
 >
 >Se le cartelle della lingua non vengono create in anticipo, non sarà possibile creare copie della lingua come descritto nei passaggi precedenti.
 
@@ -82,23 +82,23 @@ Viene visualizzato un messaggio che informa che il progetto è stato creato.
 Per i project manager di traduzione, spesso è necessario selezionare manualmente contenuti specifici da includere in un progetto di traduzione. Per creare un progetto di traduzione manuale di questo tipo, è necessario iniziare creando un progetto vuoto e quindi selezionare il contenuto da aggiungere.
 
 1. Passa a **Navigazione** -> **Progetti**.
-1. Tocca o fai clic su **Crea** -> **Cartella** per creare una cartella per i tuoi progetti.
+1. Tocca o fai clic su **Crea** -> **Cartella** per creare una cartella per i progetti.
    * Questo è facoltativo, ma utile per organizzare le attività di traduzione.
-1. Nella finestra **Crea progetto**, aggiungi un **Titolo** per la cartella, quindi tocca o fai clic su **Crea**.
+1. In **Crea progetto** aggiungi una finestra **Titolo** per la cartella, quindi tocca o fai clic su **Crea**.
 
    ![Crea cartella di progetto](assets/create-project-folder.png)
 
 1. Tocca o fai clic sulla cartella per aprire la cartella.
 1. Nella nuova cartella del progetto, tocca o fai clic su **Crea** -> **Progetto**.
-1. I progetti si basano su modelli. Tocca o fai clic sul modello **Progetto di traduzione** per selezionarlo, quindi tocca o fai clic su **Avanti**.
+1. I progetti si basano su modelli. Tocca o fai clic sul pulsante **Progetto di traduzione** modello per selezionarlo, quindi tocca o fai clic su **Successivo**.
 
    ![Seleziona modello di progetto di traduzione](assets/select-translation-project-template.png)
 
-1. Nella scheda **Base** , immetti un nome per il nuovo progetto.
+1. Sulla **Base** , immetti un nome per il nuovo progetto.
 
    ![Scheda di base del progetto](assets/project-basic-tab.png)
 
-1. Nella scheda **Avanzate** , utilizza il menu a discesa **Lingua di destinazione** per selezionare la lingua o le lingue in cui tradurre il contenuto. Tocca o fai clic su **Crea**.
+1. Sulla **Avanzate** , utilizza **Lingua di destinazione** menu a discesa per selezionare le lingue in cui tradurre il contenuto. Tocca o fai clic su **Crea**.
 
    ![Scheda avanzata del progetto](assets/project-advanced-tab.png)
 
@@ -115,22 +115,22 @@ I progetti di traduzione sono progettati per raccogliere tutti i contenuti e le 
 Per visualizzare il progetto di traduzione:
 
 1. Passa a **Navigazione** -> **Progetti**.
-1. Tocca o fai clic sul progetto creato nella sezione precedente (Creazione automatica di un progetto di traduzione in base al percorso del contenuto](#automatically-creating) o [Creazione manuale di un progetto di traduzione selezionando il contenuto](#manually-creating) a seconda della situazione).[
+1. Tocca o fai clic sul progetto creato nella sezione precedente (o [Creazione automatica di un progetto di traduzione in base al percorso del contenuto](#automatically-creating) o [Creazione manuale di un progetto di traduzione selezionandone il contenuto](#manually-creating) a seconda della tua situazione).
 
 ![Progetto di traduzione](assets/translation-project.png)
 
 Il progetto è diviso in più schede.
 
-* **Riepilogo** : questa scheda mostra le informazioni di intestazione di base del progetto, inclusi il proprietario, la lingua e il provider di traduzione.
-* **Processo di traduzione** : questa scheda o queste schede mostrano una panoramica del lavoro di traduzione effettivo, compreso lo stato, il numero di risorse, ecc. In genere esiste un processo per lingua con il codice della lingua ISO-2 aggiunto al nome del processo.
-   * Tieni presente che quando [crei automaticamente lavori di traduzione,](#automatically-creating) AEM crea i lavori in modo asincrono e potrebbero non essere visualizzati immediatamente all’interno del progetto.
-* **Team** : questa scheda mostra gli utenti che stanno collaborando a questo progetto di traduzione. Questo percorso non tratta questo argomento.
-* **Attività** : attività aggiuntive associate alla traduzione del contenuto, ad esempio per eseguire elementi o elementi del flusso di lavoro. Questo percorso non tratta questo argomento.
+* **Riepilogo** - Questa scheda mostra le informazioni di intestazione di base del progetto, inclusi il proprietario, la lingua e il provider di traduzione.
+* **Processo di traduzione** - Questa scheda o queste schede mostrano una panoramica del processo di traduzione effettivo, compreso lo stato, il numero di risorse, ecc. In genere esiste un processo per lingua con il codice della lingua ISO-2 aggiunto al nome del processo.
+   * Tieni presente che quando [creazione automatica di lavori di traduzione,](#automatically-creating) AEM i processi in modo asincrono e potrebbero non essere visualizzati immediatamente all’interno del progetto.
+* **Team** - Questa scheda mostra gli utenti che stanno collaborando a questo progetto di traduzione. Questo percorso non tratta questo argomento.
+* **Attività** - Attività aggiuntive associate alla traduzione del contenuto, ad esempio per eseguire elementi o elementi del flusso di lavoro. Questo percorso non tratta questo argomento.
 
 Per comprendere meglio il flusso di traduzione in AEM, è utile apportare una modifica alle impostazioni del progetto. Questo passaggio non è necessario per le traduzioni di produzione, ma aiuta a comprendere il processo.
 
-1. Nella scheda **Riepilogo**, tocca o fai clic sul pulsante con i puntini di sospensione nella parte inferiore della scheda.
-1. Nella scheda **Avanzate** , deseleziona l’opzione **Elimina lancio dopo la promozione**.
+1. Sulla **Riepilogo** toccare o fare clic sul pulsante con i puntini di sospensione nella parte inferiore della scheda.
+1. Sulla **Avanzate** , deseleziona l’opzione **Elimina lancio dopo la promozione**.
 
    ![Elimina lancio dopo l&#39;opzione di promozione](assets/delete-launch-option.png)
 
@@ -144,8 +144,8 @@ Quando crei automaticamente il progetto di traduzione, AEM valuta il contenuto n
 
 Per visualizzare i dettagli del contenuto incluso in questo progetto:
 
-1. Tocca o fai clic sul pulsante dei puntini di sospensione nella parte inferiore della scheda **Processo di traduzione** .
-1. Nella finestra **Processo di traduzione** sono elencati tutti gli elementi del processo.
+1. Tocca o fai clic sul pulsante con i puntini di sospensione nella parte inferiore del **Processo di traduzione** il Card.
+1. La **Processo di traduzione** in finestra vengono elencati tutti gli elementi del processo.
 
    ![Dettagli del lavoro di traduzione](assets/translation-job-detail.png)
 
@@ -154,27 +154,27 @@ Per visualizzare i dettagli del contenuto incluso in questo progetto:
 
    ![Opzioni del lavoro di traduzione](assets/translation-job-options.png)
 
-In genere il contenuto del processo di traduzione inizia nello stato **Bozza** come indicato dalla colonna **Stato** nella finestra **Processo di traduzione**.
+In genere il contenuto del processo di traduzione inizia nel **Bozza** come indicato dal **Stato** nella colonna **Processo di traduzione** finestra.
 
-Per avviare il processo di traduzione, torna alla panoramica del progetto di traduzione e tocca o fai clic sul pulsante con freccia nella parte superiore della scheda **Processo di traduzione** e seleziona **Avvia**.
+Per avviare il processo di traduzione, torna alla panoramica del progetto di traduzione e tocca o fai clic sul pulsante con freccia nella parte superiore della **Processo di traduzione** scheda e seleziona **Inizio**.
 
 ![Avvia processo di traduzione](assets/start-translation-job.png)
 
-AEM ora comunica con la configurazione di traduzione e il connettore per inviare il contenuto al servizio di traduzione. Puoi visualizzare l’avanzamento della traduzione tornando alla finestra **Processo di traduzione** e visualizzando la colonna **Stato** delle voci.
+AEM ora comunica con la configurazione di traduzione e il connettore per inviare il contenuto al servizio di traduzione. Per visualizzare l’avanzamento della traduzione, torna alla sezione **Processo di traduzione** visualizzazione della finestra **Stato** colonna delle voci.
 
 ![Processo di traduzione approvato](assets/translation-job-approved.png)
 
-Le traduzioni automatiche restituiscono automaticamente lo stato **Approvato**. La traduzione umana consente una maggiore interazione, ma va oltre lo scopo di questo percorso.
+Le traduzioni automatiche ritornano automaticamente con uno stato di **Approvato**. La traduzione umana consente una maggiore interazione, ma va oltre lo scopo di questo percorso.
 
 >[!TIP]
 >
->L&#39;elaborazione di un processo di traduzione può richiedere un po&#39; di tempo e potresti vedere gli elementi di traduzione spostarsi dallo stato di **Bozza** a **Traduzione in corso** a **Pronti per la revisione** prima che arrivino allo stato **Approvato**. Questo è da aspettarsi.
+>L&#39;elaborazione di un processo di traduzione può richiedere un po&#39; di tempo e potresti vedere gli elementi di traduzione spostarsi dallo stato di **Bozza** a **Traduzione in corso** a **Pronto per la revisione** prima che arrivino al **Approvato** stato. Questo è da aspettarsi.
 
 >[!NOTE]
 >
->Se non hai disattivato l&#39;opzione di progetto **Elimina lancio dopo la promozione** come [descritto nella sezione precedente, gli elementi convertiti](#using-translation-project) verranno visualizzati con lo stato **Eliminato** . Questo è normale in quanto AEM scarta automaticamente i record di traduzione una volta che gli elementi tradotti arrivano. Gli elementi tradotti sono stati importati come copie in lingua, solo i record di traduzione sono stati cancellati in quanto non sono più necessari.
+>Se non hai disattivato l’opzione di progetto **Elimina lancio dopo la promozione** come [descritti nella sezione precedente,](#using-translation-project) gli elementi tradotti verranno visualizzati con **Eliminato** stato. Questo è normale in quanto AEM scarta automaticamente i record di traduzione una volta che gli elementi tradotti arrivano. Gli elementi tradotti sono stati importati come copie in lingua, solo i record di traduzione sono stati cancellati in quanto non sono più necessari.
 >
->Non si preoccupi se questo non è chiaro. Questi sono dettagli approfonditi sul funzionamento di AEM e non influiscono sulla vostra comprensione del percorso. Per informazioni più approfondite su come AEM elaborare le traduzioni, consulta la sezione [risorse aggiuntive](#additional-resources) alla fine di questo articolo.
+>Non si preoccupi se questo non è chiaro. Questi sono dettagli approfonditi sul funzionamento di AEM e non influiscono sulla vostra comprensione del percorso. Per informazioni più approfondite su come AEM elabora le traduzioni, consulta la [risorse aggiuntive](#additional-resources) alla fine di questo articolo.
 
 ### Utilizzo di un progetto di traduzione creato manualmente {#using-manual-project}
 
@@ -182,8 +182,8 @@ Quando crei manualmente un progetto di traduzione, AEM crea i processi necessari
 
 Per aggiungere contenuto a un processo di traduzione:
 
-1. Tocca o fai clic sul pulsante dei puntini di sospensione in fondo a una delle **schede Processo di traduzione**.
-1. Vedi che il processo non contiene contenuto. Tocca o fai clic sul pulsante **Aggiungi** nella parte superiore della finestra, quindi **Risorse/Pagine** dal menu a discesa.
+1. Tocca o fai clic sul pulsante con i puntini di sospensione nella parte inferiore di uno dei **Processo di traduzione** carte.
+1. Vedi che il processo non contiene contenuto. Tocca o fai clic sul pulsante **Aggiungi** nella parte superiore della finestra e quindi **Risorse/pagine** dal menu a discesa.
 
    ![Processo di traduzione vuoto](assets/empty-translation-job.png)
 
@@ -191,8 +191,8 @@ Per aggiungere contenuto a un processo di traduzione:
 
    ![Browser del percorso](assets/path-browser.png)
 
-1. Tocca o fai clic su **Seleziona** per aggiungere al processo il contenuto selezionato.
-1. Nella finestra di dialogo **Traduci**, specifica che desideri **Creare una copia in lingua**.
+1. Tocca o fai clic su **Seleziona** per aggiungere il contenuto selezionato al processo.
+1. In **Traduci** finestra di dialogo, specificare **Crea copia in lingua**.
 
    ![Crea copia per lingua](assets/translate-copy-master.png)
 
@@ -208,39 +208,39 @@ Per aggiungere contenuto a un processo di traduzione:
 
 >[!TIP]
 >
->Il browser Percorsi è un potente strumento che consente di cercare, filtrare e navigare nel contenuto. Tocca o fai clic sul pulsante **Solo contenuto/Filtri** per attivare/disattivare il pannello laterale e visualizzare filtri avanzati come **Data di modifica** o **Stato traduzione**.
+>Il browser Percorsi è un potente strumento che consente di cercare, filtrare e navigare nel contenuto. Tocca o fai clic sul pulsante **Solo contenuto/Filtri** per attivare/disattivare il pannello laterale e visualizzare filtri avanzati, ad esempio **Data di modifica** o **Stato della traduzione**.
 >
->Per ulteriori informazioni sul browser percorsi, consulta la sezione [risorse aggiuntive.](#additional-resources)
+>Per ulteriori informazioni sul browser percorsi in [sezione risorse aggiuntive.](#additional-resources)
 
 Puoi utilizzare i passaggi precedenti per aggiungere il contenuto necessario a tutte le lingue (processi) per il progetto. Dopo aver selezionato tutti i contenuti, puoi avviare la traduzione.
 
-In genere il contenuto del processo di traduzione inizia nello stato **Bozza** come indicato dalla colonna **Stato** nella finestra **Processo di traduzione**.
+In genere il contenuto del processo di traduzione inizia nel **Bozza** come indicato dal **Stato** nella colonna **Processo di traduzione** finestra.
 
-Per avviare il processo di traduzione, torna alla panoramica del progetto di traduzione e tocca o fai clic sul pulsante con freccia nella parte superiore della scheda **Processo di traduzione** e seleziona **Avvia**.
+Per avviare il processo di traduzione, torna alla panoramica del progetto di traduzione e tocca o fai clic sul pulsante con freccia nella parte superiore della **Processo di traduzione** scheda e seleziona **Inizio**.
 
 ![Avvia processo di traduzione](assets/start-translation-job.png)
 
-AEM ora comunica con la configurazione di traduzione e il connettore per inviare il contenuto al servizio di traduzione. Puoi visualizzare l’avanzamento della traduzione tornando alla finestra **Processo di traduzione** e visualizzando la colonna **Stato** delle voci.
+AEM ora comunica con la configurazione di traduzione e il connettore per inviare il contenuto al servizio di traduzione. Per visualizzare l’avanzamento della traduzione, torna alla sezione **Processo di traduzione** visualizzazione della finestra **Stato** colonna delle voci.
 
 ![Processo di traduzione approvato](assets/translation-job-approved.png)
 
-Le traduzioni automatiche restituiscono automaticamente lo stato **Approvato**. La traduzione umana consente una maggiore interazione, ma va oltre lo scopo di questo percorso.
+Le traduzioni automatiche ritornano automaticamente con uno stato di **Approvato**. La traduzione umana consente una maggiore interazione, ma va oltre lo scopo di questo percorso.
 
 >[!TIP]
 >
->L&#39;elaborazione di un processo di traduzione può richiedere un po&#39; di tempo e potresti vedere gli elementi di traduzione spostarsi dallo stato di **Bozza** a **Traduzione in corso** a **Pronti per la revisione** prima che arrivino allo stato **Approvato**. Questo è da aspettarsi.
+>L&#39;elaborazione di un processo di traduzione può richiedere un po&#39; di tempo e potresti vedere gli elementi di traduzione spostarsi dallo stato di **Bozza** a **Traduzione in corso** a **Pronto per la revisione** prima che arrivino al **Approvato** stato. Questo è da aspettarsi.
 
 >[!NOTE]
 >
->Se non hai disattivato l&#39;opzione di progetto **Elimina lancio dopo la promozione** come [descritto nella sezione precedente, gli elementi convertiti](#using-translation-project) verranno visualizzati con lo stato **Eliminato** . Questo è normale in quanto AEM scarta automaticamente i record di traduzione una volta che gli elementi tradotti arrivano. Gli elementi tradotti sono stati importati come copie in lingua, solo i record di traduzione sono stati cancellati in quanto non sono più necessari.
+>Se non hai disattivato l’opzione di progetto **Elimina lancio dopo la promozione** come [descritti nella sezione precedente,](#using-translation-project) gli elementi tradotti verranno visualizzati con **Eliminato** stato. Questo è normale in quanto AEM scarta automaticamente i record di traduzione una volta che gli elementi tradotti arrivano. Gli elementi tradotti sono stati importati come copie in lingua, solo i record di traduzione sono stati cancellati in quanto non sono più necessari.
 >
->Non si preoccupi se questo non è chiaro. Questi sono dettagli approfonditi sul funzionamento di AEM e non influiscono sulla vostra comprensione del percorso. Per informazioni più approfondite su come AEM elaborare le traduzioni, consulta la sezione [risorse aggiuntive](#additional-resources) alla fine di questo articolo.
+>Non si preoccupi se questo non è chiaro. Questi sono dettagli approfonditi sul funzionamento di AEM e non influiscono sulla vostra comprensione del percorso. Per informazioni più approfondite su come AEM elabora le traduzioni, consulta la [risorse aggiuntive](#additional-resources) alla fine di questo articolo.
 
 ## Revisione dei contenuti tradotti {#reviewing}
 
-[Come visto in precedenza, il contenuto tradotto ](#using-translation-project)   **** automaticamente ritorna in AEM con lo stato di Approvato, in quanto si presume che, poiché si utilizza la traduzione automatica, non sia necessario alcun intervento umano. Tuttavia è ancora possibile rivedere il contenuto tradotto.
+[Come visto in precedenza,](#using-translation-project) il contenuto tradotto automaticamente torna in AEM con lo stato **Approvato** poiché si presume che, poiché si utilizza la traduzione automatica, non è necessario alcun intervento umano. Tuttavia è ancora possibile rivedere il contenuto tradotto.
 
-Basta andare al processo di traduzione completato e selezionare una riga toccando o facendo clic sulla casella di controllo. L&#39;icona **Anteprima in Sites** viene visualizzata nella barra degli strumenti.
+Basta andare al processo di traduzione completato e selezionare una riga toccando o facendo clic sulla casella di controllo. Icona **Anteprima in Sites** nella barra degli strumenti.
 
 ![Mostra nei siti](assets/reveal-in-sites.png)
 
@@ -248,7 +248,7 @@ Tocca o fai clic su tale icona per aprire il contenuto tradotto nella console pe
 
 ![Una pagina tradotta](assets/translated-page.png)
 
-È possibile modificare ulteriormente il contenuto tradotto, purché si disponga delle autorizzazioni necessarie, ma la modifica del contenuto va oltre l’ambito di questo percorso. Per ulteriori informazioni su questo argomento, consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine del presente documento.
+È possibile modificare ulteriormente il contenuto tradotto, purché si disponga delle autorizzazioni necessarie, ma la modifica del contenuto va oltre l’ambito di questo percorso. Vedi la [Risorse aggiuntive](#additional-resources) sezione alla fine di questo documento per ulteriori informazioni su questo argomento.
 
 Lo scopo del progetto è quello di raccogliere tutte le risorse relative a una traduzione in un unico luogo per un facile accesso e una chiara panoramica. Tuttavia, come puoi vedere visualizzando i dettagli di un elemento tradotto, le traduzioni stesse scorrono nuovamente nella cartella sites della lingua di traduzione. In questo esempio la cartella è
 
@@ -256,7 +256,7 @@ Lo scopo del progetto è quello di raccogliere tutte le risorse relative a una t
 /content/<your-project>/es
 ```
 
-Se passi a questa cartella tramite **Navigazione** -> **Siti**, viene visualizzato il contenuto tradotto.
+Se passi a questa cartella tramite **Navigazione** -> **Sites**, vengono visualizzati i contenuti tradotti.
 
 ![Struttura delle cartelle di contenuto tradotto](assets/translated-sites-content.png)
 
@@ -266,9 +266,9 @@ AEM framework di traduzione riceve le traduzioni dal connettore di traduzione e 
 
 ## Traduzione manuale {#human-translation}
 
-Se il servizio di traduzione fornisce la traduzione umana, il processo di revisione offre più opzioni. Ad esempio, le traduzioni arrivano nuovamente nel progetto con lo stato **Bozza** e devono essere riviste e approvate o rifiutate manualmente.
+Se il servizio di traduzione fornisce la traduzione umana, il processo di revisione offre più opzioni. Ad esempio, le traduzioni arrivano nuovamente nel progetto con lo stato **Bozza** e deve essere rivisto e approvato o rifiutato manualmente.
 
-La traduzione umana va oltre l&#39;ambito di questo percorso di localizzazione. Per ulteriori informazioni su questo argomento, consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine del presente documento. Tuttavia, oltre alle opzioni di approvazione aggiuntive, il flusso di lavoro per le traduzioni umane è lo stesso delle traduzioni automatiche descritto in questo percorso.
+La traduzione umana va oltre l&#39;ambito di questo percorso di localizzazione. Vedi la [Risorse aggiuntive](#additional-resources) sezione alla fine di questo documento per ulteriori informazioni su questo argomento. Tuttavia, oltre alle opzioni di approvazione aggiuntive, il flusso di lavoro per le traduzioni umane è lo stesso delle traduzioni automatiche descritto in questo percorso.
 
 ## Novità {#what-is-next}
 
@@ -278,11 +278,11 @@ Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dev
 * Potrai creare nuovi progetti di traduzione.
 * Utilizza i progetti di traduzione per tradurre i contenuti.
 
-Sviluppa questa conoscenza e continua il tuo percorso di traduzione AEM Sites esaminando il documento [Pubblica contenuto tradotto](publish-content.md) dove imparerai a pubblicare il contenuto tradotto e come aggiornare tali traduzioni quando il contenuto principale della lingua cambia.
+Sviluppa questa conoscenza e continua il tuo percorso di traduzione AEM Sites esaminando il documento successivo [Pubblicare contenuti tradotti](publish-content.md) dove imparerai a pubblicare i contenuti tradotti e come aggiornare tali traduzioni man mano che il contenuto principale della lingua cambia.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre è consigliabile passare alla parte successiva del percorso di traduzione esaminando il documento [Pubblica contenuto tradotto,](publish-content.md) le seguenti sono alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso.
+Mentre si consiglia di passare alla parte successiva del percorso di traduzione rivedendo il documento [Pubblicare contenuti tradotti,](publish-content.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso.
 
-* [Gestione dei progetti di traduzione](/help/sites-cloud/administering/translation/managing-projects.md) : scopri i dettagli dei progetti di traduzione e le funzioni aggiuntive, come i flussi di lavoro di traduzione umana e i progetti multilingue.
-* [Ambiente e strumenti di authoring](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) : AEM offre diversi metodi per organizzare e modificare i contenuti, tra cui un browser con percorsi affidabili.
+* [Gestione dei progetti di traduzione](/help/sites-cloud/administering/translation/managing-projects.md) - Scopri i dettagli dei progetti di traduzione e le funzioni aggiuntive, come i flussi di lavoro di traduzione umana e i progetti multilingue.
+* [Ambiente e strumenti di authoring](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM offre diversi meccanismi per organizzare e modificare i contenuti, tra cui un browser con percorso affidabile.

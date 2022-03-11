@@ -1,15 +1,15 @@
 ---
-title: AEM Percorso di creazione di siti rapidi
+title: Percorso di creazione di siti rapidi AEM
 description: Iniziate qui per un percorso guidato attraverso il facile da usare AEM strumento di creazione di siti rapidi per semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza AEM conoscenza back-end.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: b8218232-0298-4b16-9dab-fa59be592a24
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1030'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# AEM Percorso di creazione di siti rapidi {#quick-site-creation-journey}
+# Percorso di creazione di siti rapidi AEM {#quick-site-creation-journey}
 
 Iniziate qui per un percorso guidato attraverso il facile da usare AEM strumento di creazione di siti rapidi per semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza AEM conoscenza back-end.
 
@@ -19,7 +19,7 @@ AEM Sites è un potente set di strumenti per la creazione e la gestione di esper
 
 Lo strumento AEM Creazione rapida siti consente agli sviluppatori di creare rapidamente un nuovo sito da zero utilizzando i modelli di sito. Una volta creato, lo strumento di creazione rapida del sito consente inoltre di personalizzare rapidamente il tema e lo stile del sito AEM (risorse JavaScript, CSS e statiche). In questo modo lo sviluppatore front-end, che necessita di una conoscenza di AEM pari a zero, può lavorare separatamente rispetto ai creatori di contenuti e in parallelo ad essi. L’amministratore AEM semplicemente scarica il tema del sito e lo fornisce allo sviluppatore front-end che lo personalizzerà utilizzando i propri strumenti preferiti e quindi commette le modifiche all’archivio del codice AEM, che viene quindi distribuito.
 
-Eliminando le conoscenze per gli sviluppatori per la creazione di siti, eliminando AEM requisiti di conoscenza per lo sviluppo front-end e consentendo lo sviluppo di temi in parallelo con la creazione di contenuti, lo strumento di creazione rapida dei siti AEM accelera notevolmente il time-to-value del sito e aumenta l&#39;agilità di personalizzazione e distribuzione del sito.
+By eliminating any developer knowledge for site creation, eliminating AEM knowledge requirements for front end development, and allowing theme development to proceed in parallel with content creation, the AEM Quick Site Creation tool greatly accelerates your site&#39;s time-to-value and increases your site customization and deployment agility.
 
 ## Panoramica video {#video-overview}
 
@@ -37,13 +37,13 @@ Se desideri sapere come Adobe consiglia di risolvere i casi aziendali relativi a
 
 ## Pubblico {#audience}
 
-Questo percorso descrive i requisiti, i passaggi e l’approccio per personalizzare i temi AEM Sites. Il suo pubblico principale è lo sviluppatore front-end, che non ha bisogno di alcuna conoscenza di AEM. Tuttavia, per illustrare l’intero processo, il percorso coinvolge gli amministratori, che si presume abbiano conoscenze di base su AEM Sites e Cloud Manager. In pratica, più persone possono gestire più ruoli e questo percorso supporta le prospettive degli amministratori e degli sviluppatori front-end.
+This journey lays out the requirements, steps, and approach to customize AEM Sites themes. Its primary audience is the front-end developer, who needs no knowledge of AEM. Tuttavia, per illustrare l’intero processo, il percorso coinvolge gli amministratori, che si presume abbiano conoscenze di base su AEM Sites e Cloud Manager. In pratica, più persone possono gestire più ruoli e questo percorso supporta le prospettive degli amministratori e degli sviluppatori front-end.
 
 | Persona | Descrizione | Ruolo nel Percorso |
 |---|---|---|
 | Sviluppatore front-end | Personalizza il tema del sito | Tema fornito dall’amministratore AEM e lo personalizza in modo che possa essere distribuito sul sito AEM. |
 | Autore del contenuto | Crea e gestisce i contenuti consegnati come siti | Gli autori di contenuti creano contenuti su AEM di cui viene eseguito il rendering con il tema personalizzato dallo sviluppatore front-end. |
-| Amministratore AEM | Crea un nuovo sito AEM | L’amministratore AEM crea un nuovo sito basato su un modello e quindi fornisce allo sviluppatore front-end un tema da personalizzare. |
+| Amministratore AEM | Creates a new AEM site | L’amministratore AEM crea un nuovo sito basato su un modello e quindi fornisce allo sviluppatore front-end un tema da personalizzare. |
 | Amministratore di Cloud Manager | Crea pipeline e concede l’accesso | L’amministratore di Cloud Manager crea la pipeline front-end e concede l’accesso allo sviluppatore front-end per poter eseguire il commit delle personalizzazioni nell’archivio Git AEM. |
 
 ## Il Percorso di creazione rapida AEM sito {#the-journey}
@@ -64,5 +64,5 @@ Esplorerai molti argomenti in questo percorso. I seguenti articoli forniscono in
 
 Consulta queste risorse aggiuntive per ulteriori informazioni su come AEM funzioni potenti funzionano insieme.
 
-* [AEM documentazione tecnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) - Se hai già una conoscenza approfondita di AEM, potresti voler consultare direttamente i documenti tecnici approfonditi.
+* [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) - If you already have a firm understanding of AEM, you may want to directly consult the in-depth technical docs.
 * [Documentazione sull’amministrazione del sito](/help/sites-cloud/administering/site-creation/create-site.md) - Per ulteriori informazioni sulle funzioni dello strumento Creazione rapida di siti, consultare i documenti tecnici sulla creazione del sito.

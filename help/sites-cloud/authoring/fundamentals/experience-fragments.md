@@ -362,4 +362,4 @@ Per impostazione predefinita, i frammenti esperienza vengono forniti nel formato
 Per l’esportazione in Adobe Target, è possibile utilizzare anche il formato JSON. Consulta:
 
 * [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-* [Esportazione di frammenti esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+* [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)

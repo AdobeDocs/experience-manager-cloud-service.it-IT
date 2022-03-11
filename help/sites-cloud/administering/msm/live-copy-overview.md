@@ -1,19 +1,19 @@
 ---
-title: Console Panoramica di Live Copy
+title: Panoramica Live Copy
 description: Scopri le nozioni di base della console Panoramica di Live Copy per comprendere rapidamente lo stato delle Live Copy al fine di sincronizzare i contenuti.
-feature: Gestione di più siti
+feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 1%
+source-wordcount: '735'
+ht-degree: 2%
 
 ---
 
-# Console Panoramica di Live Copy {#live-copy-overview-console}
+# Panoramica Live Copy {#live-copy-overview-console}
 
-La console **Panoramica Live Copy** consente di:
+La **Panoramica di Live Copy** console consente di:
 
 * Visualizza/gestisci l’ereditarietà in un sito.
    * Visualizza la struttura della blueprint e la struttura Live Copy corrispondente, insieme al relativo stato di ereditarietà
@@ -30,10 +30,10 @@ Puoi aprire la Panoramica della Live Copy da:
 
 ### Riferimenti a una pagina blueprint {#references-to-a-blueprint-page}
 
-Il **Panoramica Live Copy** può essere aperto dal pannello laterale **Riferimenti** della console **Sites** :
+La **Panoramica di Live Copy** può essere aperto da **Riferimenti** pannello laterale **Sites** console:
 
-1. Nella console **Sites** , [individua e seleziona la pagina blueprint.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
-1. Apri la barra **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e seleziona **Live Copy**.
+1. In **Sites** console, [passa alla pagina blueprint e selezionala.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. Apri **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** barra e seleziona **Live Copy**.
 
    ![Live Copy dalla barra dei riferimenti](../assets/live-copy-references.png)
 
@@ -41,25 +41,25 @@ Il **Panoramica Live Copy** può essere aperto dal pannello laterale **Riferimen
    >
    >È inoltre possibile aprire prima i riferimenti e quindi selezionare la blueprint.
 
-1. Seleziona **Panoramica Live Copy** per mostrare e utilizzare la panoramica di tutte le Live Copy relative alla blueprint selezionata.
-1. Utilizza **Chiudi** per uscire e tornare alla console **Sites**.
+1. Seleziona **Panoramica di Live Copy** per mostrare e utilizzare la panoramica di tutte le Live Copy relative alla blueprint selezionata.
+1. Utilizzo **Chiudi** per uscire e tornare al **Sites** console.
 
 ### Proprietà di una pagina blueprint {#properties-of-a-blueprint-page}
 
-La **Panoramica Live Copy** può essere aperta quando si visualizzano le proprietà di una pagina blueprint:
+La **Panoramica di Live Copy** può essere aperto quando si visualizzano le proprietà di una pagina blueprint:
 
 1. Apri **Proprietà** per la pagina blueprint appropriata.
-1. Apri la scheda **Blueprint** : l’opzione **Panoramica Live Copy** verrà visualizzata nella barra degli strumenti superiore:
+1. Apri **Blueprint** scheda - **Panoramica di Live Copy** l’opzione è disponibile nella barra degli strumenti superiore:
 
    ![Scheda Proprietà blueprint](../assets/live-copy-blueprint-tab.png)
 
-1. Seleziona **Panoramica Live Copy** per mostrare e utilizzare la panoramica di tutte le Live Copy relative al modello corrente.
+1. Seleziona **Panoramica di Live Copy** per mostrare e utilizzare la panoramica di tutte le Live Copy relative alla blueprint corrente.
 
-1. Utilizza **Chiudi** per uscire e tornare alla console **Sites**.
+1. Utilizzo **Chiudi** per uscire e tornare al **Sites** console.
 
 ## Utilizzo della panoramica Live Copy {#using-the-live-copy-overview}
 
-La finestra **Panoramica Live Copy** fornisce una panoramica dello stato delle Live Copy relative alla pagina selezionata.
+La **Panoramica di Live Copy** fornisce una panoramica dello stato delle Live Copy relative alla pagina selezionata.
 
 ![Finestra Panoramica di Live Copy](../assets/live-copy-overview.png)
 
@@ -69,10 +69,10 @@ I campi di stato dipendono anche dalle azioni di sincronizzazione definite nella
 
 Ad esempio, una configurazione di rollout è definita come `targetActivate`. Pertanto, un rollout dipenderà solo dagli eventi di attivazione. Il campo di stato indica solo se si sono verificati eventi di attivazione dall’ultimo rollout riuscito.
 
-La **Panoramica Live Copy** può essere utilizzata anche per eseguire azioni sulla Live Copy:
+La **Panoramica di Live Copy** può essere utilizzato anche per eseguire azioni sulla Live Copy:
 
-1. Apri la **Panoramica Live Copy**.
-1. Seleziona la pagina blueprint o Live Copy richiesta e la barra degli strumenti verrà aggiornata per mostrare le azioni disponibili. Le [azioni](overview.md#terms-used) disponibili dipendono dalla selezione di una pagina [blueprint](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page).
+1. Apri **Panoramica di Live Copy**.
+1. Seleziona la pagina blueprint o Live Copy richiesta e la barra degli strumenti verrà aggiornata per mostrare le azioni disponibili. La [azioni](overview.md#terms-used) disponibile a seconda che sia stata selezionata una [blueprint](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page) pagina.
 
 ### Azioni per una pagina Blueprint {#actions-for-a-blueprint-page}
 
@@ -80,8 +80,8 @@ Quando selezioni una pagina blueprint, sono disponibili le seguenti azioni:
 
 ![Azioni di panoramica Live Copy per una blueprint](../assets/live-copy-overview-actions-blueprint.png)
 
-* **Modifica** : consente di aprire la pagina blueprint da modificare.
-* **[Rollout](overview.md#rollout-and-synchronize)**  - Esegui un rollout per inviare le modifiche dalla sorgente alla Live Copy.
+* **Modifica** - Apri la pagina blueprint per la modifica.
+* **[Rollout](overview.md#rollout-and-synchronize)** - Esegui un rollout per inviare le modifiche dalla sorgente alla Live Copy.
 
 ### Azioni per una pagina Live Copy {#actions-for-a-live-copy-page}
 
@@ -89,17 +89,17 @@ Quando selezioni una pagina Live Copy, sono disponibili le seguenti azioni:
 
 ![Azioni di panoramica Live Copy per una Live Copy](../assets/live-copy-overview-actions.png)
 
-* **Modifica** : apri la pagina Live Copy per la modifica.
-* **[Stato relazione](#relationship-status)**  - Visualizza informazioni sullo stato e sull&#39;ereditarietà.
-* **[Sincronizza](overview.md#rollout-and-synchronize)**  - Sincronizza una Live Copy per estrarre le modifiche dalla sorgente alla Live Copy.
-* **[Ripristina](creating-live-copies.md#resetting-a-live-copy-page)** : consente di ripristinare una pagina Live Copy per rimuovere tutte le cancellazioni di ereditarietà e ripristinare lo stato della pagina nello stesso della pagina sorgente.
-* **[Sospendi](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** : disattiva temporaneamente la relazione in tempo reale tra una Live Copy e la relativa pagina blueprint.
-* **[Riprendi](creating-live-copies.md#resuming-inheritance-for-a-page)**  - Riprendi ti consente di ripristinare una relazione sospesa.
-* **[Stacca](overview.md#detaching-a-live-copy)** : rimuove definitivamente la relazione live tra una Live Copy e la relativa pagina blueprint.
+* **Modifica** - Apri la pagina Live Copy per la modifica.
+* **[Stato della relazione](#relationship-status)** - Visualizza informazioni sullo stato e sull&#39;ereditarietà.
+* **[Sincronizza](overview.md#rollout-and-synchronize)** - Sincronizza una Live Copy per estrarre le modifiche dalla sorgente alla Live Copy.
+* **[Reimposta](creating-live-copies.md#resetting-a-live-copy-page)** - Reimposta una pagina Live Copy per rimuovere tutte le cancellazioni di ereditarietà e ripristinare la pagina sullo stesso stato della pagina sorgente.
+* **[Sospendi](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** - Disattiva temporaneamente la relazione in tempo reale tra una Live Copy e la relativa pagina blueprint.
+* **[Riprendi](creating-live-copies.md#resuming-inheritance-for-a-page)** - Riprendi consente di ripristinare una relazione sospesa.
+* **[Stacca](overview.md#detaching-a-live-copy)** - Rimuove definitivamente la relazione live tra una Live Copy e la relativa pagina blueprint.
 
 ## Stato di relazione {#relationship-status}
 
-La console **Stato di relazione** dispone di due schede che forniscono una serie di funzionalità.
+La **Stato della relazione** la console dispone di due schede che forniscono una serie di funzionalità.
 
 * [Stato di relazione](#relationship-status-tab)
 * [Live Copy ](#live-copy-tab)

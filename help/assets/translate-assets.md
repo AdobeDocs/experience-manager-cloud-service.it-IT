@@ -70,7 +70,7 @@ La copia per lingua per la quale hai originariamente aggiunto le risorse è la l
         |- zh
 ```
 
-Esegui i seguenti passaggi per preparare le risorse per la traduzione:
+Per preparare le risorse per la traduzione, effettua le seguenti operazioni:
 
 1. Creare la directory principale lingua della lingua primaria. Ad esempio, la directory principale della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è `/content/dam/en`. Assicurati che la directory principale della lingua sia configurata correttamente in base alle informazioni in [Creare una directory principale della lingua](#create-a-language-root).
 

@@ -13,7 +13,7 @@ ht-degree: 97%
 
 Questa pagina illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.6.0.
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio per [!DNL Experience Manager] as a Cloud Service 2020.6.0 è il 4 giugno 2020.
 
@@ -109,7 +109,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 I tag avanzati migliorati consentono di addestrare modelli di assegnazione tag avanzati per riconoscere le immagini in base a tag aziendali specifici, oltre che ai tag avanzati generici.
 
 Con questa versione, è disponibile una nuova user experience guidata che consente di impostare l’addestramento di tag avanzati per set di tag specifici dei clienti e di addestrarli con risorse che in futuro dovranno essere riconosciute e a cui dovranno essere assegnati i tag. L’esperienza è ora più intuitiva.
-Addestra i tag avanzati migliorati in modo più intuitivo. Consulta [come aggiungere tag avanzati alle risorse](/help/assets/smart-tags.md).
+Addestra i tag avanzati migliorati in modo più intuitivo. Vedi [come aggiungere tag avanzati alle risorse](/help/assets/smart-tags.md).
 
 **Supporto per l’acquisizione, l’anteprima e la distribuzione di contenuti 3D**
 

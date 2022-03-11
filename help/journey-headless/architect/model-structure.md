@@ -63,11 +63,11 @@ Puoi trascinare le istanze della **Tipi di dati** nello spazio a sinistra - stat
 
 ![Definizione dei campi](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-Dopo aver aggiunto un tipo di dati, dovrai definire le **Proprietà** per quel campo. Dipendono dal tipo utilizzato. Esempio:
+Dopo aver aggiunto un tipo di dati, dovrai definire le **Proprietà** per quel campo. Dipendono dal tipo utilizzato. Ad esempio:
 
 ![Proprietà dati](/help/assets/content-fragments/assets/cfm-models-05.png)
 
-È possibile aggiungere tutti i campi necessari. Esempio:
+È possibile aggiungere tutti i campi necessari. Ad esempio:
 
 ![Modello per frammenti di contenuto](/help/assets/content-fragments/assets/cfm-models-07.png)
 

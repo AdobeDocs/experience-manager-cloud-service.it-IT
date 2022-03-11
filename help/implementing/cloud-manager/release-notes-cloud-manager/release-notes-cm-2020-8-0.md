@@ -1,12 +1,12 @@
 ---
-title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.8.0
-description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.8.0
-feature: Informazioni sulla versione
+title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2020.8.0
+description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2020.8.0
+feature: Release Information
 exl-id: 70674e16-f9ba-4777-98fe-34161e90a481
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 2%
+source-wordcount: '423'
+ht-degree: 1%
 
 ---
 
@@ -14,25 +14,25 @@ ht-degree: 2%
 
 Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.8.0.
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.8.0 è il 6 agosto 2020.
 
 ## Novità {#whats-new-cloud-manager}
 
-* Verifica del contenuto è una funzione abilitata nelle pipeline di produzione di Cloud Manager Sites. La configurazione della pipeline di produzione per i programmi con Sites ora include una terza scheda denominata **Verifica del contenuto**. Ogni volta che viene eseguita una pipeline di produzione, nella pipeline verrà incluso un nuovo passaggio di Verifica del contenuto dopo un test funzionale personalizzato che valuterà il sito in base a una serie di dimensioni, tra cui prestazioni, SEO (Search Engine Optimization), accessibilità, best practice e PWA (Progressive Web App).
+* Verifica del contenuto è una funzione abilitata nelle pipeline di produzione di Cloud Manager Sites. La configurazione della pipeline di produzione per i programmi con Sites ora include una terza scheda denominata **Audit dei contenuti**. Ogni volta che viene eseguita una pipeline di produzione, nella pipeline verrà incluso un nuovo passaggio di Verifica del contenuto dopo un test funzionale personalizzato che valuterà il sito in base a una serie di dimensioni, tra cui prestazioni, SEO (Search Engine Optimization), accessibilità, best practice e PWA (Progressive Web App).
 
 
    >[!NOTE]
    >La funzione di audit del contenuto è stata successivamente rinominata in Audit esperienze.
 
-   Per ulteriori informazioni, consulta [Test di audit esperienza](/help/implementing/cloud-manager/experience-audit-testing.md) .
+   Fai riferimento a [Test di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) per ulteriori dettagli.
 
 * Gli ambienti creati di recente nei programmi Assets ora verranno configurati automaticamente con Smart Content Services.
 
-* Gli ambienti sospesi possono essere disattivati dalla pagina **Panoramica** di Cloud Manager.
+* Gli ambienti sospesi possono essere riattivati da Cloud Manager **Panoramica** pagina.
 
-* Possibilità di eseguire controlli di esperienza sulle pagine, con tecnologia Google Lighthouse. Come parte della pipeline di Cloud Manager, è possibile controllare e convalidare fino a 25 pagine in base ai KPI di esperienza e visualizzare i punteggi nell’interfaccia utente di Cloud Manager.
+* Possibilità di eseguire controlli di esperienza sulle pagine grazie alla tecnologia Google Lighthouse. Come parte della pipeline di Cloud Manager, è possibile controllare e convalidare fino a 25 pagine in base ai KPI di esperienza e visualizzare i punteggi nell’interfaccia utente di Cloud Manager.
 
 ### Correzioni di bug {#bug-fixes-cm}
 
@@ -42,7 +42,7 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.8.0 è il 6 
 
 * In alcuni casi, le esecuzioni completate della pipeline non sono state registrate correttamente come completate, impedendo così nuove esecuzioni della pipeline.
 
-* Le esecuzioni delle pipeline verrebbero occasionalmente bloccate a causa di problemi di comunicazione interni.**
+* Le esecuzioni delle pipeline vengono occasionalmente eseguite *bloccato* a causa di problemi di comunicazione interna.
 
 * Al momento del provisioning di una nuova organizzazione, ad alcuni utenti con ruoli amministrativi diversi dagli amministratori di sistema è stato erroneamente concesso l’accesso a Cloud Manager.
 
@@ -52,7 +52,7 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.8.0 è il 6 
 
 * L&#39;interfaccia utente ha erroneamente consentito il tentativo di eseguire operazioni in un ambiente durante l&#39;eliminazione.
 
-* C&#39;è stata una mancata corrispondenza dei colori nella pagina **Panoramica** di Cloud Manager.
+* C&#39;è stata una mancata corrispondenza dei colori nel Cloud Manager&#39;s **Panoramica** pagina.
 
 ### Problemi noti {#known-issues-cm}
 

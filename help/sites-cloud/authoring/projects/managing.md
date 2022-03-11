@@ -19,7 +19,7 @@ La console **Progetti** consente di accedere ai progetti e di eseguire azioni su
 
 Tramite Progetti è possibile creare un progetto e associarvi risorse, ma anche eliminarlo o eliminare i collegamenti alle risorse. È possibile aprire una porzione per visualizzarne il contenuto e aggiungere elementi. In questo argomento vengono descritte le procedure.
 
-## Creazione di un progetto  {#creating-a-project}
+## Creazione di un progetto {#creating-a-project}
 
 Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di un progetto:
 
@@ -34,11 +34,11 @@ Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di u
 La procedura di creazione di un progetto è la stessa per ciascun progetto. La differenza tra i tipi di progetti include i [ruoli utente](/help/sites-cloud/authoring/projects/overview.md) e i [flussi di lavoro](/help/sites-cloud/authoring/projects/workflows.md) disponibili.  Per creare un nuovo progetto:
 
 1. In **Progetti**, tocca o fai clic su **Crea** per aprire la procedura guidata **Crea progetto**:
-1. Seleziona un modello e fai clic su **Avanti**.
+1. Seleziona un modello e fai clic su **Successivo**.
 
    ![Creazione di un progetto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Definisci il **Titolo** e **Descrizione** e aggiungi un&#39;immagine **Miniatura** se necessario. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
+1. Definisci la **Titolo** e **Descrizione** e aggiungi un **Miniatura** se necessario. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
 
    ![Aggiunta di dettagli al progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -107,17 +107,17 @@ Per aprire una porzione e visualizzare o modificare gli elementi:
 
 ## Visualizzazione delle statistiche di un progetto {#viewing-project-statistics}
 
-Puoi visualizzare le statistiche dei progetti nella console **Progetti** .
+È possibile visualizzare le statistiche del progetto nella **Progetti** console.
 
 ### Visualizzazione della cronologia di un progetto {#viewing-a-project-timeline}
 
-La cronologia di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse associate. Per visualizzare la timeline del progetto, tocca o fai clic su **Timeline**, quindi entra in modalità di selezione e seleziona il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Tocca o fai clic su **Timeline** per tornare alla console **Progetti**.
+La cronologia di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse associate. Per visualizzare la timeline del progetto, tocca o fai clic su **Timeline**, quindi entra in modalità di selezione e seleziona il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Tocca o fai clic **Timeline** per tornare al **Progetti** console.
 
 ![Timeline del progetto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Visualizzazione di progetti attivi e inattivi {#viewing-active-inactive-projects}
 
-Per passare da un progetto attivo a un progetto inattivo, nella console **Progetti** fai clic su **Attiva/disattiva progetti**. Se accanto all’icona è presente un segno di spunta, vengono visualizzati i progetti attivi.
+Per scegliere tra i progetti attivi e inattivi, nella **Progetti** console, fai clic su **Attiva/Disattiva progetti**. Se accanto all’icona è presente un segno di spunta, vengono visualizzati i progetti attivi.
 
 ![Pulsante Attiva progetti](/help/sites-cloud/authoring/assets/projects-active.png)
 

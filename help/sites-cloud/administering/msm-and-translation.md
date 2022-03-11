@@ -7,7 +7,7 @@ exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -20,11 +20,11 @@ Gli strumenti di traduzione e gestione multisito integrati di Adobe Experience M
 * La traduzione consente di automatizzare la traduzione dei contenuti della pagina per creare e gestire siti web multilingue:
    * [Traduzione di contenuti per siti multilingue](translation/overview.md)
 
-Queste due funzioni possono essere combinate per gestire siti web che sono sia [multinazionali che multilingue](#multinational-and-multilingual-sites).
+Queste due funzioni possono essere combinate per gestire i siti web che sono entrambi [multinazionale e multilingue](#multinational-and-multilingual-sites).
 
 >[!TIP]
 >
->Se non hai esperienza nella traduzione dei contenuti, consulta il nostro [Percorso di traduzione dei siti,](/help/journey-sites/translation/overview.md) che è un percorso guidato attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideale per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta la nostra [Percorso di traduzione dei siti,](/help/journey-sites/translation/overview.md) percorso guidato attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 ## Siti multinazionali e multilingue {#multinational-and-multilingual-sites}
 
@@ -32,8 +32,8 @@ Queste due funzioni possono essere combinate per gestire siti web che sono sia [
 
 In genere si crea un sito principale in una lingua e per un paese specifico, quindi si utilizza tale contenuto come base per gli altri siti, utilizzando la traduzione, se necessario.
 
-1. [](translation/overview.md) Tradurre il sito master in lingue diverse.
-1. Utilizza [Multi Site Manager](msm/overview.md) per:
+1. [Traduci](translation/overview.md) il sito master in lingue diverse.
+1. Utilizzo [Multi Site Manager](msm/overview.md) a:
    1. Riutilizza i contenuti del sito principale e delle sue traduzioni per creare siti per altri paesi e culture.
    1. Se necessario, scollega gli elementi delle Live Copy per aggiungere i dettagli di localizzazione.
 
@@ -49,8 +49,8 @@ Il diagramma seguente illustra l’intersezione dei concetti principali (ma non 
 
 In questo, e confrontabili, scenari MSM non gestisce le diverse versioni linguistiche in quanto tali.
 
-* [](msm/overview.md) MSM gestisce la distribuzione di contenuti tradotti da un blueprint (cioè un master globale) alle Live Copy (cioè i siti locali), entro i limiti di una lingua.
-* Le funzionalità di integrazione di [translation](translation/overview.md) di AEM, in combinazione con servizi di gestione della traduzione di terze parti, gestiscono le lingue e traducono i contenuti in queste diverse lingue.
+* [MSM](msm/overview.md) gestisce la distribuzione dei contenuti tradotti da un blueprint (cioè un master globale) alle Live Copy (cioè i siti locali), entro i limiti di una lingua.
+* La [traduzione](translation/overview.md) le capacità di integrazione di AEM, in collaborazione con servizi di gestione della traduzione di terze parti, gestiscono le lingue e traducono i contenuti in queste diverse lingue.
 
 Per casi di utilizzo più avanzati, MSM può essere utilizzato anche tra i master di lingua.
 

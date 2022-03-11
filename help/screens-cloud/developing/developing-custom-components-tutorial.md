@@ -1,13 +1,13 @@
 ---
 title: Sviluppo di un componente personalizzato per Screens as a Cloud Service
 description: L’esercitazione seguente illustra i passaggi necessari per creare un componente personalizzato per AEM Screens. AEM Screens riutilizza molti modelli di progettazione e tecnologie esistenti di altri prodotti AEM. L’esercitazione evidenzia differenze e considerazioni speciali durante lo sviluppo per AEM Screens.
-source-git-commit: 0ca86e127569e8f6eb92654e4224a4d5da72ebf4
+exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # Sviluppo di un componente personalizzato per AEM Screens as a Cloud Service{#developing-a-custom-component-for-aem-screens}
 

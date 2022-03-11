@@ -20,4 +20,4 @@ Simile al tutorial WKND AEM, questa controparte incentrata sul SPA offre un esem
 * [Crea il tuo primo SPA Angular in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
 * [Crea il tuo primo SPA React in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
 
-Prima di iniziare il progetto SPA per AEM, tuttavia, è possibile esaminare anche il documento [Sviluppo SPA per AEM](developing.md) .
+Prima di iniziare il progetto di SPA per AEM, tuttavia, è anche possibile rivedere il [Sviluppo di SPA per AEM](developing.md) documento.

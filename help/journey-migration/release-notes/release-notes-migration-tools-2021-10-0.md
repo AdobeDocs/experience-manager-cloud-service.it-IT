@@ -2,13 +2,13 @@
 title: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2021.10.0
 description: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2021.11.0
 feature: Release Information
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
-
 
 # Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2021.10.0 {#release-notes}
 
@@ -36,7 +36,7 @@ La data di rilascio di Cloud Acceleration Manager è il 4 ottobre 2021.
 Cloud Acceleration Manager offre agli utenti la possibilità di visualizzare i rapporti BPA in un&#39;anteprima stampabile, consentendo di stampare o stampare facilmente i rapporti in PDF per facilitarne la condivisione. Fai riferimento ai passaggi 6 e 7 in [Utilizzo della scheda di analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 
-## Strumento Content Transfer (Trasferimento contenuti)  {#ctt-release}
+## Strumento Trasferimento contenuti {#ctt-release}
 
 ### Data di pubblicazione {#release-date-ctt-latest}
 

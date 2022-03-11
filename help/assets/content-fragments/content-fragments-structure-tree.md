@@ -1,13 +1,13 @@
 ---
 title: Struttura ad albero dei frammenti di contenuto
 description: Utilizza la funzione Struttura ad albero dell’Editor frammento di contenuto in AEM per comprendere meglio il contenuto headless.
-feature: Frammenti di contenuto
+feature: Content Fragments
 role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 source-git-commit: 426a05db7062c7823dfaa63e1d918792d3e8a290
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 1%
+source-wordcount: '111'
+ht-degree: 0%
 
 ---
 

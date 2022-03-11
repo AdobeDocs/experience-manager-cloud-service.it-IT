@@ -85,7 +85,7 @@ In alternativa, è possibile ottenere questo risultato creando un modello di flu
 
    ![Attivazione ad albero](/help/operations/assets/newstep.png)
 
-1. Imposta eventuali parametri aggiuntivi nella **Argomenti** campo . Gli argomenti separati da virgole multipli possono essere raggruppati. Esempio:
+1. Imposta eventuali parametri aggiuntivi nella **Argomenti** campo . Gli argomenti separati da virgole multipli possono essere raggruppati. Ad esempio:
 
    `enableVersion=true,agentId=publish,includeChildren=true`
 

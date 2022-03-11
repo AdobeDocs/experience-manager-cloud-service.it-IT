@@ -1,11 +1,11 @@
 ---
-title: Guida introduttiva alla traduzione senza testa AEM
+title: Guida introduttiva alla traduzione headless in AEM
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1466'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

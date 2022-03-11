@@ -3,7 +3,7 @@ title: 'Creazione di una cartella di risorse: configurazione headless'
 description: Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 65c20293f2b5481d9c7fdd050af4bee5f64a33e6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless. I frammenti di contenuto vengono poi memorizzati nelle cartelle di risorse.
 
-## Cos’è una cartella di risorse? {#what-is-an-assets-folder}
+##  Cos’è una cartella di risorse? {#what-is-an-assets-folder}
 
 [Dopo aver creato i modelli per frammenti di contenuto](create-content-model.md) che definiscono la struttura per i futuri frammenti di contenuto, è ora di creare alcuni frammenti.
 
@@ -29,7 +29,7 @@ Di solito, un amministratore deve creare cartelle solo occasionalmente, per orga
 1. Tocca o fai clic su **Crea -> Cartella**.
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.
-   * Il **nome** sarà il nome del nodo nell’archivio.
+   * Il **nome** diventerà il nome del nodo nell’archivio.
       * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/implementing/developing/introduction/naming-conventions.md)
       * Se necessario è possibile modificarlo.
 

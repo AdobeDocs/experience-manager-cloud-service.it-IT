@@ -3,13 +3,13 @@ title: Personalizzazione di modelli e temi del sito
 description: Scopri come AEM modelli di sito possono essere utilizzati per predefinire la struttura del sito e il contenuto iniziale e come i temi vengono utilizzati per definire lo stile del sito per consentire di creare rapidamente i siti.
 feature: Administering
 role: Admin
-source-git-commit: 0babdc80421c8a2a4be55d005884475dcebeda84
+exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
-
 
 # Personalizzazione di modelli e temi del sito {#customizing-site-templates-themes}
 

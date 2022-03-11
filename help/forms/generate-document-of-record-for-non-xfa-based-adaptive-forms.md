@@ -155,7 +155,7 @@ When you select a form model, configure Document of Record using options availab
 
 Nella tabella seguente sono descritti i componenti Modulo adattivo e i componenti XFA corrispondenti, nonché quelli visualizzati in un documento di record.
 
-### espandibili {#fields}
+### Campi {#fields}
 
 <table>
  <tbody>

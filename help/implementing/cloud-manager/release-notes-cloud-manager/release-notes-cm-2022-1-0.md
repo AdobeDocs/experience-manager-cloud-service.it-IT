@@ -2,13 +2,13 @@
 title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2022.01.0
 description: Queste sono le note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2022.01.0.
 feature: Release Information
-source-git-commit: 6b0fd14fb2038e09b59fa487427b3202d8f129dc
+exl-id: 2dfdc943-0518-40ea-8712-1dabb97eeaa9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 2%
+ht-degree: 70%
 
 ---
-
 
 # Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2022.01.0 {#release-notes}
 
@@ -20,12 +20,12 @@ Questa pagina illustra le note sulla versione di Cloud Manager in AEM 2022.01.0.
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2022.01.0 è il 20 gennaio 2022. La prossima versione è prevista per il 10 febbraio 2022.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2022.01.0 è il 20 gennaio 2022. La prossima versione è prevista per il 10 febbraio 2022.
 
 ## Novità {#what-is-new}
 
 * Cloud Manager [evita di ricostruire la base di codice quando rileva che viene utilizzato lo stesso commit git](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in più esecuzioni di pipeline full-stack.
-* L&#39;accesso al registro dell&#39;ambiente AEM ora richiede **Gestione distribuzione** profilo di prodotto. Gli utenti senza questo profilo visualizzeranno un pulsante disabilitato nell’interfaccia utente.
+* L’accesso al registro dell’ambiente AEM ora richiede il profilo di prodotto **Gestione distribuzione**. Gli utenti senza questo profilo visualizzeranno un pulsante disabilitato nell’interfaccia utente.
 * L’interfaccia utente non consente la configurazione della pipeline front-end per un programma in cui Sites non è abilitato come soluzione.
 * Al momento della generazione di una password git, verrà visualizzata la data di scadenza.
 

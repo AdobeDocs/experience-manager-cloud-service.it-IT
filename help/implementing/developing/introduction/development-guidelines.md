@@ -1,6 +1,6 @@
 ---
-title: Linee guida per lo sviluppo per AEM as a Cloud Service
-description: Linee guida per lo sviluppo per AEM as a Cloud Service
+title: Linee guida per lo sviluppo in AEM as a Cloud Service
+description: Linee guida per lo sviluppo in AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
 workflow-type: tm+mt
@@ -9,11 +9,11 @@ ht-degree: 2%
 
 ---
 
-# Linee guida per lo sviluppo per AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
+# Linee guida per lo sviluppo in AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
->title="Linee guida per lo sviluppo per AEM as a Cloud Service"
+>title="Linee guida per lo sviluppo in AEM as a Cloud Service"
 >abstract="In questa scheda, puoi visualizzare le best practice consigliate per la codifica in AEM as a Cloud Service. La codifica può essere notevolmente diversa dalle distribuzioni AMS o On-Prem."
 >additional-url="https://video.tv.adobe.com/v/330555/" text="Demo della struttura del pacchetto"
 
@@ -124,11 +124,11 @@ Ad esempio, imposta `/apps/<example>/config/org.apache.sling.commons.log.LogMana
 
 Non lasciare il registro a livello di registro DEBUG più a lungo del necessario, in quanto questo genera molte voci.
 
-È possibile impostare livelli di registro discreti per i diversi ambienti AEM utilizzando il targeting di configurazione OSGi basato sulla modalità di esecuzione, se è opportuno effettuare sempre l&#39;accesso `DEBUG` durante lo sviluppo. Esempio:
+È possibile impostare livelli di registro discreti per i diversi ambienti AEM utilizzando il targeting di configurazione OSGi basato sulla modalità di esecuzione, se è opportuno effettuare sempre l&#39;accesso `DEBUG` durante lo sviluppo. Ad esempio:
 
 | Ambiente | Posizione di configurazione OSGi in modalità di esecuzione | `org.apache.sling.commons.log.level` valore della proprietà | | - | - | - | | Sviluppo | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | | Stage | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | AVVERTENZA | | Produzione | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERRORE |
 
-Una riga nel file di debug solitamente inizia con DEBUG, e quindi fornisce il livello di log, l&#39;azione di installazione e il messaggio di log. Esempio:
+Una riga nel file di debug solitamente inizia con DEBUG, e quindi fornisce il livello di log, l&#39;azione di installazione e il messaggio di log. Ad esempio:
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed

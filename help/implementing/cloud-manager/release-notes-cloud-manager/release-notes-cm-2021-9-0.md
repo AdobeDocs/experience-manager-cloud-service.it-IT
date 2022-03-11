@@ -15,7 +15,7 @@ ht-degree: 5%
 Questa pagina illustra le note sulla versione di Cloud Manager in AEM 2021.9.0.
 
 >[!NOTE]
->Per visualizzare le note sulla versione corrente per Adobe Experience Manager as a Cloud Service, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+>Per visualizzare le note sulla versione corrente per Adobe Experience Manager as a Cloud Service, fai clic su [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
 ## Data di pubblicazione {#release-date}
 
@@ -29,9 +29,9 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.9.0 è il 9 
 
 * Il registro dettagliato dei passaggi della qualità del codice ora include informazioni di registrazione dettagliate sul processo di scansione di OakPal.
 
-* Le opzioni del menu della pagina Attività includeranno ora un&#39;opzione per **Download Log** per le esecuzioni completate di Code Generator. Selezionando questa opzione, il registro del passaggio di compilazione verrà scaricato.
+* Le opzioni del menu della pagina Attività ora includono un’opzione per **Registro di download** per le esecuzioni di Code Generator completate. Selezionando questa opzione, il registro del passaggio di compilazione verrà scaricato.
 
-* Facendo clic direttamente sulla scheda Programma passa alla pagina **Panoramica** di Cloud Manager. Per ulteriori informazioni, consulta [Creazione di un programma di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) .
+* Facendo clic direttamente sulla scheda Programma, ora passa a Cloud Manager’s **Panoramica** pagina. Vedi [Creazione di un programma di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) per ulteriori dettagli.
 
 ### Correzioni di bug {#bug-fixes}
 

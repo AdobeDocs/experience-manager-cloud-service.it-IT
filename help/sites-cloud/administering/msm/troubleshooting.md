@@ -1,12 +1,12 @@
 ---
 title: Risoluzione dei problemi e domande frequenti relativi a MSM
 description: Scopri come risolvere i problemi più comuni relativi a MSM e ottieni le risposte alle domande più comuni relative a MSM.
-feature: Gestione di più siti
+feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 Se stai riscontrando un comportamento errato o un errore in MSM, prima di iniziare e risolvere in modo dettagliato i problemi assicurati:
 
-* Controlla le [Domande frequenti MSM](#faq) in quanto i tuoi problemi o domande possono già essere risolti lì.
-* Controlla l&#39; [articolo sulle best practice MSM](best-practices.md) in quanto sono disponibili diversi suggerimenti insieme a chiarimenti su una serie di malintesi.
+* Controlla la [Domande frequenti su MSM](#faq) poiché i vostri problemi o domande possono già essere affrontati lì.
+* Controlla la [Articolo sulle best practice MSM](best-practices.md) come una serie di suggerimenti sono offerti là insieme a chiarimenti di una serie di malintesi.
 
 ## Ricerca di informazioni avanzate sullo stato della blueprint e della Live Copy {#advanced-info}
 
@@ -29,28 +29,28 @@ MSM registra diversi servlet che possono essere richiesti con i selettori sugli 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Utilizza questo nelle pagine Live Copy per recuperare informazioni avanzate sulla loro connessione con le loro pagine blueprint. Se la pagina non è una Live Copy, non viene restituito nulla.
 
-Questi servlet generano messaggi di log DEBUG attraverso il logger `com.day.cq.wcm.msm` che può essere utile.
+Questi servlet generano messaggi di log DEBUG attraverso `com.day.cq.wcm.msm` logger che può anche essere utile.
 
 ## Verifica delle informazioni specifiche di MSM nell&#39;archivio {#checking-repo}
 
 I servlet precedenti restituivano informazioni calcolate in base ai nodi e ai mixin specifici di MSM. Le informazioni vengono memorizzate nell’archivio nel modo seguente.
 
 * `cq:LiveSync` tipo mixin
-   * Questo è impostato sui nodi `jcr:content` e definisce le pagine Live Copy principali.
-   * Tali pagine avranno un nodo secondario `cq:LiveSyncConfig` di tipo `cq:LiveCopy` che conterrà informazioni di base e obbligatorie sulla Live Copy attraverso le seguenti proprietà:
+   * È impostato su `jcr:content` e definire le pagine Live Copy principali.
+   * Le pagine avranno un `cq:LiveSyncConfig` nodo figlio di tipo `cq:LiveCopy` che conterrà informazioni di base e obbligatorie sulla Live Copy attraverso le seguenti proprietà:
       * `cq:master` punta alla pagina blueprint della Live Copy.
       * `cq:rolloutConfigs` indica le configurazioni di rollout attive applicate alla Live Copy.
       * `cq:isDeep` è true se le pagine figlie di questa pagina Live Copy principale sono incluse nella Live Copy.
 * `cq:LiveRelationship` tipo mixin
-   * Qualsiasi pagina Live Copy ha un tale tipo di mixin sul suo nodo `jcr:content` .
+   * Qualsiasi pagina Live Copy ha un tale tipo mixin sul suo `jcr:content` nodo.
    * In caso contrario, la pagina a un certo punto è stata staccata o creata manualmente tramite l’interfaccia di authoring al di fuori di un’azione Live Copy (creazione o rollout).
 * `cq:LiveSyncCancelled` tipo mixin
-   * Aggiunto ai nodi `jcr:content` delle pagine Live Copy sospese.
-   * Se la sospensione è valida anche per le pagine figlie, una proprietà `cq:isCancelledForChildren` viene impostata su true sullo stesso nodo.
+   * Aggiunto a `jcr:content` nodi di pagine Live Copy sospese.
+   * Se la sospensione è efficace anche per le pagine figlie, un `cq:isCancelledForChildren` su true sullo stesso nodo.
 
 Le informazioni presenti in queste proprietà dovrebbero riflettersi nell’interfaccia utente, tuttavia quando si risolve il problema può essere utile osservare il comportamento di MSM direttamente nell’archivio mentre si verificano le azioni MSM.
 
-Conoscere queste proprietà può essere utile anche per eseguire query sull’archivio e trovare set di pagine che si trovano in determinati stati. Esempio:
+Conoscere queste proprietà può essere utile anche per eseguire query sull’archivio e trovare set di pagine che si trovano in determinati stati. Ad esempio:
 
 * `select * from cq:LiveSync` restituisce tutte le pagine principali di Live Copy.
 
@@ -62,11 +62,11 @@ Ecco alcune domande frequenti relative a MSM e Live Copy.
 
 Le azioni di sincronizzazione MSM sono altamente configurabili. Le proprietà o i componenti modificati durante il rollout dipendono direttamente dalle proprietà di tali configurazioni.
 
-Per ulteriori informazioni su questo argomento, consulta [questo articolo](best-practices.md) .
+Vedi [articolo](best-practices.md) per ulteriori informazioni su questo argomento.
 
 ### Come posso rimuovere le autorizzazioni di rollout per un gruppo di autori? {#remove-rollout-permissions}
 
-Non esiste un privilegio **rollout** che può essere impostato o rimosso per AEM entità (utenti o gruppi).
+Non esiste **rollout** privilegio che può essere impostato o rimosso per AEM entità (utenti o gruppi).
 
 In alternativa, puoi effettuare le seguenti operazioni:
 
@@ -77,12 +77,12 @@ In alternativa, puoi effettuare le seguenti operazioni:
 
 Se viene implementata una pagina blueprint, la pagina Live Copy verrà aggiornata o creata una nuova pagina Live Copy, se non esiste ancora (ad esempio, quando viene lanciata per la prima volta o la pagina Live Copy è stata eliminata manualmente).
 
-In quest’ultimo caso, tuttavia, se esiste una pagina senza una proprietà `cq:LiveRelationship` con lo stesso nome, questa pagina verrà rinominata di conseguenza, prima che venga creata la pagina Live Copy.
+In quest&#39;ultimo caso, tuttavia, se una pagina senza un `cq:LiveRelationship` La proprietà esiste con lo stesso nome, la pagina verrà rinominata di conseguenza prima che venga creata la pagina Live Copy.
 
 Per impostazione predefinita, il rollout prevede una pagina Live Copy collegata, alla quale verranno implementati gli aggiornamenti dei progetti, o nessuna pagina al momento della creazione di una pagina Live Copy.
 
 Se viene trovata una pagina &quot;standalone&quot;, MSM sceglie di rinominare questa pagina e di creare una pagina Live Copy separata collegata.
 
-Tale pagina indipendente in un sottoalbero Live Copy è in genere il risultato di un&#39;operazione **Stacca**, oppure la precedente pagina Live Copy è stata eliminata manualmente da un autore e quindi ricreata con lo stesso nome.
+Una pagina autonoma come questa in un sottoalbero Live Copy è in genere il risultato di un **Stacca** oppure la pagina Live Copy precedente è stata eliminata manualmente da un autore e quindi ricreata con lo stesso nome.
 
-Per evitare questo problema, utilizza la funzione Live Copy **Sospendi** invece di **Stacca**. Maggiori dettagli sull&#39;azione **Stacca** in [questo articolo.](creating-live-copies.md)
+Per evitare questo, utilizza la Live Copy **Sospendi** anziché **Stacca**. Maggiori dettagli sul **Stacca** in azione [questo articolo.](creating-live-copies.md)

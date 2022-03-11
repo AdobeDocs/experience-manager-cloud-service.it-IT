@@ -9,9 +9,9 @@ ht-degree: 1%
 
 ---
 
-# Configura [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud {#configure-azure-storage}
+# Configurazione[!DNL Microsoft Dynamics 365]e[!DNL Salesforce]servizi cloud {#configure-azure-storage}
 
-[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud per integrare moduli adattivi con modelli di dati modulo predefiniti. L&#39;Adaptive Forms può quindi interagire con [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] server per abilitare i flussi di lavoro aziendali. Esempio:
+[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud per integrare moduli adattivi con modelli di dati modulo predefiniti. L&#39;Adaptive Forms può quindi interagire con [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] server per abilitare i flussi di lavoro aziendali. Ad esempio:
 
 * Scrivere dati in [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] all’invio di moduli adattivi.
 * Scrivi dati in [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] attraverso entità personalizzate definite in Form Data Model e viceversa.

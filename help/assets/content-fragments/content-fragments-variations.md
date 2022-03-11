@@ -42,7 +42,7 @@ Eseguire una serie di altre azioni a seconda del tipo di dati in corso di modifi
 
 Quando apri il frammento di contenuto per la modifica, la **Variazioni** per impostazione predefinita viene aperta la scheda . Qui puoi creare il contenuto, per Master o qualsiasi variante disponibile. Il frammento strutturato contiene vari campi, di vari tipi di dati, definiti nel modello di contenuto.
 
-Esempio:
+Ad esempio:
 
 ![editor a schermo intero](assets/cfm-variations-02.png)
 Puoi:
@@ -190,7 +190,7 @@ Potrai quindi creare un nuovo frammento:
 
 Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** visualizzerà una serie di informazioni sul testo.
 
-Esempio:
+Ad esempio:
 
 ![statistics](assets/cfm-variations-04.png)
 
@@ -221,6 +221,7 @@ Altre lingue sono disponibili come Pacchetti modello lingua da Distribuzione sof
 * [Tedesco (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [Spagnolo (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
 
 
 1. Seleziona **Master** o la variazione richiesta.

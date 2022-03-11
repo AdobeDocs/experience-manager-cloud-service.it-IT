@@ -524,7 +524,7 @@ Per recuperare i registri:
    * Log degli errori del server web HTTPD di Apache `httpd_error.log`
    * Log di Dispatcher - `dispatcher.log`
 
-I registri vengono inoltre stampati direttamente nell&#39;uscita terminale. Nella maggior parte dei casi, questi log devono essere DEBUG, che può essere realizzato passando il livello Debug come parametro durante l&#39;esecuzione di Docker. Esempio:
+I registri vengono inoltre stampati direttamente nell&#39;uscita terminale. Nella maggior parte dei casi, questi log devono essere DEBUG, che può essere realizzato passando il livello Debug come parametro durante l&#39;esecuzione di Docker. Ad esempio:
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 

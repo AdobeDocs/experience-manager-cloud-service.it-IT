@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Implementazione di un valutatore del predicato personalizzato per il Generatore di query {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-Questo documento descrive come estendere il [Generatore di query](query-builder-api.md) implementando un valutatore di predicati personalizzato.
+Questo documento descrive come estendere il [Query Builder](query-builder-api.md) implementando un valutatore predicato personalizzato.
 
 ## Panoramica {#overview}
 
-Il [Query Builder](query-builder-api.md) offre un modo semplice per eseguire query sull&#39;archivio dei contenuti. AEM viene fornito con [un set di valutatori predicati](#query-builder-predicates.md) che ti aiutano a eseguire query dei dati.
+La [Query Builder](query-builder-api.md) offre un modo semplice per eseguire query sull’archivio dei contenuti. AEM viene fornito con [un insieme di valutatori predicati](#query-builder-predicates.md) che consentono di eseguire query sui dati.
 
 Tuttavia, potrebbe essere utile semplificare le query implementando un valutatore di predicati personalizzato che nasconde una certa complessità e garantisce una semantica migliore.
 
@@ -30,7 +30,7 @@ Un predicato personalizzato potrebbe anche eseguire altre operazioni non diretta
 
 >[!TIP]
 >
->Puoi trovare esempi di query nel documento [Query Builder](query-builder-api.md) .
+>È possibile trovare esempi di query nel [Query Builder](query-builder-api.md) documento.
 
 >[!TIP]
 >
@@ -48,11 +48,11 @@ Un predicato personalizzato potrebbe anche eseguire altre operazioni non diretta
 
 Un valutatore predicato gestisce la valutazione di alcuni predicati, che sono i vincoli di definizione di una query.
 
-Mappa un vincolo di ricerca di livello superiore (ad esempio `width>200`) a una query JCR specifica che si adatta al modello di contenuto effettivo (ad esempio `metadata/@width > 200`). Oppure può filtrare manualmente i nodi e controllarne i vincoli.
+Associa un vincolo di ricerca di livello superiore (ad esempio `width>200`) a una query JCR specifica che si adatta al modello di contenuto effettivo (ad esempio `metadata/@width > 200`). Oppure può filtrare manualmente i nodi e controllarne i vincoli.
 
 >[!TIP]
 >
->Per ulteriori informazioni sul `PredicateEvaluator` e sul pacchetto `com.day.cq.search`, consulta la [documentazione Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
+>Per ulteriori informazioni sulla `PredicateEvaluator` e `com.day.cq.search` vedi il pacchetto [Documentazione Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementazione di un valutatore del predicato personalizzato per i metadati di replica {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -64,7 +64,7 @@ Ad esempio, in questa sezione viene descritto come creare un valutatore di predi
 
 #### Query dei metadati di replica con valutatori predefiniti dei predicati {#querying-replication-metadata-with-default-predicate-evaluators}
 
-La seguente query recupera l’elenco dei nodi nel ramo `/content` che sono stati attivati da `admin` dall’inizio dell’anno.
+La seguente query recupera l’elenco di nodi in `/content` ramo attivato da `admin` dall&#39;inizio dell&#39;anno.
 
 ```xml
 path=/content
@@ -84,7 +84,7 @@ Questa query è valida ma difficile da leggere e non evidenzia la relazione tra 
 
 #### Obiettivi {#objectives}
 
-L&#39;obiettivo di `ReplicationPredicateEvaluator` è quello di supportare la query di cui sopra utilizzando la seguente sintassi.
+L&#39;obiettivo del `ReplicationPredicateEvaluator` è per supportare la query di cui sopra utilizzando la seguente sintassi.
 
 ```xml
 path=/content
@@ -100,15 +100,15 @@ Il raggruppamento dei predicati dei metadati di replica con un valutatore predic
 
 >[!TIP]
 >
->L&#39;impostazione dei nuovi progetti AEM compreso l&#39;utilizzo di maven è spiegata in dettaglio da [l&#39;esercitazione WKND.](develop-wknd-tutorial.md)
+>L&#39;impostazione di nuovi progetti AEM compreso l&#39;utilizzo di maven è spiegata in dettaglio: [esercitazione WKND.](develop-wknd-tutorial.md)
 
-Prima devi aggiornare le dipendenze Maven del progetto. L’ `PredicateEvaluator` fa parte dell’artefatto `cq-search` in modo che debba essere aggiunto al file pom Maven.
+Prima devi aggiornare le dipendenze Maven del progetto. La `PredicateEvaluator` fa parte del `cq-search` artefatto in modo che debba essere aggiunto al tuo file pom Maven.
 
 >[!NOTE]
 >
->L’ambito della dipendenza `cq-search` è impostato su `provided` perché `cq-search` verrà fornito dal contenitore `OSGi`.
+>Il campo di applicazione `cq-search` la dipendenza è impostata su `provided` perché `cq-search` sono fornite dal `OSGi` contenitore.
 
-Il frammento seguente mostra le differenze nel file `pom.xml`, in [formato diff unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
+Il frammento seguente mostra le differenze nel `pom.xml` in [formato diff unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
 ```text
 @@ -120,6 +120,12 @@
@@ -127,14 +127,14 @@ Il frammento seguente mostra le differenze nel file `pom.xml`, in [formato diff 
 
 #### Scrittura di ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
 
-Il progetto `cq-search` contiene la classe astratta `AbstractPredicateEvaluator`. Questo può essere esteso con alcuni passaggi per implementare un valutatore predicato personalizzato `(PredicateEvaluator`).
+La `cq-search` il progetto contiene `AbstractPredicateEvaluator` classe astratta. Questo può essere esteso con alcuni passaggi per implementare il tuo valutatore di predicati personalizzato `(PredicateEvaluator`).
 
 >[!NOTE]
 >
->La procedura seguente spiega come creare un&#39;espressione `Xpath` per filtrare i dati. Un&#39;altra opzione consiste nell&#39;implementare il metodo `includes` che seleziona i dati su base di riga. Per ulteriori informazioni, consulta la [documentazione Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) .
+>La procedura seguente spiega come creare un `Xpath` espressione per filtrare i dati. Un&#39;altra opzione consiste nell&#39;implementare `includes` metodo che seleziona i dati su base di riga. Consulta la sezione [Documentazione Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) per ulteriori informazioni.
 
-1. Crea una nuova classe Java che estende `com.day.cq.search.eval.AbstractPredicateEvaluator`
-1. Annota la classe con un `@Component` come mostrato nello snippet in [formato diff unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
+1. Crea una nuova classe Java che si estende `com.day.cq.search.eval.AbstractPredicateEvaluator`
+1. Annotare la classe con un `@Component` come lo snippet mostra in [formato diff unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
    ```text
    @@ -19,8 +19,11 @@
@@ -152,11 +152,11 @@ Il progetto `cq-search` contiene la classe astratta `AbstractPredicateEvaluator`
 
    >[!NOTE]
    >
-   >La `factory`deve essere una stringa univoca che inizia con `com.day.cq.search.eval.PredicateEvaluator/`e termina con il nome della `PredicateEvaluator` personalizzata.
+   >La `factory`deve essere una stringa univoca che inizia con `com.day.cq.search.eval.PredicateEvaluator/`e che terminano con il nome del tuo personalizzato `PredicateEvaluator`.
 
    >[!NOTE]
    >
-   >Il nome della `PredicateEvaluator` è il nome del predicato, utilizzato durante la creazione di query.
+   >Nome della `PredicateEvaluator` è il nome del predicato, utilizzato per la creazione di query.
 
 1. Sostituisci:
 
@@ -164,11 +164,11 @@ Il progetto `cq-search` contiene la classe astratta `AbstractPredicateEvaluator`
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   Nel metodo override si genera un&#39;espressione `Xpath` basata su `Predicate` indicato nell&#39;argomento.
+   Nel metodo override viene generato un `Xpath` basato su `Predicate` dati in discussione.
 
 ### Esempio di un valutatore di predicati personalizzato per i metadati di replica {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
-L&#39;implementazione completa di questo `PredicateEvaluator` potrebbe essere simile alla classe seguente.
+La completa attuazione di tale `PredicateEvaluator` potrebbe essere simile alla classe seguente.
 
 ```java
 /*

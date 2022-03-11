@@ -7,7 +7,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
 workflow-type: tm+mt
 source-wordcount: '2838'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -30,7 +30,7 @@ Per utilizzare i modelli di frammento di contenuto:
 
    >[!CAUTION]
    >
-   >Se la [l’uso dei modelli di frammento di contenuto non è stato abilitato](/help/assets/content-fragments/content-fragments-configuration-browser.md), **Crea** l’opzione non sarà disponibile.
+   >Se l’[utilizzo di modelli per frammenti di contenuto non è stato abilitato](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’opzione **Crea** non sarà disponibile.
 
 1. Specifica il **Titolo modello**. È inoltre possibile aggiungere **Tag**, **Descrizione**, quindi seleziona **Abilita modello** a [abilita il modello](#enabling-disabling-a-content-fragment-model) se necessario.
 
@@ -76,7 +76,7 @@ Il modello a frammento di contenuto definisce efficacemente la struttura dei fra
          >[!CAUTION]
          Quando si aggiorna manualmente la proprietà **Nome proprietà** per un tipo di dati, tenere presente che i nomi devono contenere solo caratteri latini, cifre numeriche e caratteri di sottolineatura &quot;_&quot; come carattere speciale.
          Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
-      Esempio:
+      Ad esempio:
 
       ![proprietà del campo](assets/cfm-models-05.png)
 
@@ -87,7 +87,7 @@ Il modello a frammento di contenuto definisce efficacemente la struttura dei fra
 
    ![rimuovere](assets/cfm-models-06.png)
 
-1. Aggiungi tutti i campi obbligatori e definisci le relative proprietà in base alle esigenze. Esempio:
+1. Aggiungi tutti i campi obbligatori e definisci le relative proprietà in base alle esigenze. Ad esempio:
 
    ![save](assets/cfm-models-07.png)
 
@@ -244,7 +244,7 @@ Oltre alle proprietà standard è possibile specificare:
 
 Il riferimento al frammento fa riferimento a uno o più frammenti di contenuto. Questa funzione è particolarmente interessante per il recupero dei contenuti da utilizzare nell’app, in quanto consente di recuperare dati strutturati con più livelli.
 
-Esempio:
+Ad esempio:
 
 * Un modello che definisce i dettagli di un dipendente; tra cui:
    * Un riferimento al modello che definisce il datore di lavoro (azienda)
@@ -270,7 +270,7 @@ Oltre alle proprietà standard puoi definire:
 
 * **Rendering come**:
 
-   * **multicampo** - l’autore del frammento può creare più riferimenti singoli
+   * **multicampo** - l’autore del frammento può creare più riferimenti singoli o multipli
 
    * **fragmentreference** : consente all’autore del frammento di selezionare un singolo riferimento a un frammento
 

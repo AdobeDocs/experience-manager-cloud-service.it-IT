@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
 workflow-type: tm+mt
 source-wordcount: '3058'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -66,20 +66,20 @@ Le funzionalità headless di AEM si basano su alcune funzioni chiave. Questi son
 
 ### Modelli per frammenti di contenuto {#content-fragment-models}
 
-I modelli per frammenti di contenuto definiscono la struttura dei dati e del contenuto creati e gestiti in AEM. Servono come una sorta di impalcatura per i vostri contenuti. Quando scegli di creare un contenuto, gli autori selezionano tra i modelli di frammento di contenuto definiti, che li guida nella creazione di contenuti.
+I modelli per frammenti di contenuto definiscono la struttura dei dati e del contenuto creati e gestiti in AEM. Servono come una sorta di impalcatura per i tuoi contenuti. Quando scegli di creare un contenuto, gli autori selezionano tra i modelli di frammento di contenuto definiti, che li guida nella creazione di contenuti.
 
 ### Frammenti di contenuto {#content-fragments}
 
-I frammenti di contenuto consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalla pagina. Consentono di preparare i contenuti pronti per l’uso in più posizioni e su più canali.
+I Frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Consentono di preparare contenuti pronti per l’uso in più posizioni e su più canali.
 
-I frammenti di contenuto contengono contenuto strutturato e possono essere consegnati in formato JSON.
+I Frammenti di contenuto contengono contenuto strutturato e possono essere consegnati in formato JSON.
 
 ### API GraphQL e REST {#apis}
 
 Per modificare il contenuto senza problemi, AEM offre due solide API.
 
-* L’API GraphQL consente di creare richieste di accesso e distribuzione di frammenti di contenuto.
-* L’API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
+* API GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
+* API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
 
 Scoprirai queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure fai riferimento al [risorse aggiuntive](#additional-resources) per ulteriore documentazione.
 
@@ -277,7 +277,7 @@ Mentre è consigliabile passare alla parte successiva del percorso di sviluppo h
 
 * [AEM Percorso di traduzione headless](/help/journey-headless/translation/overview.md) - Questo percorso di documentazione ti offre un’ampia comprensione della tecnologia headless, di come AEM i contenuti headless e di come tradurli.
 * [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Comprendere AEM struttura dell&#39;as a Cloud Service
-* [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Segui questi tutorial pratici per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello che fa per te.
+* [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui questi tutorial pratici per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello che fa per te.
 * [Gestione dei contenuti headless tramite API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
 * [Guide AEM WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Questo progetto GitHub include applicazioni di esempio che evidenziano AEM API GraphQL.
 * [Authoring dei concetti](/help/sites-cloud/authoring/getting-started/concepts.md) - Documentazione tecnica per l&#39;ambiente di authoring dei AEM, compresi i dettagli sull&#39;impostazione di authoring-pubblicazione

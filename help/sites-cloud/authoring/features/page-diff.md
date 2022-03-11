@@ -1,14 +1,13 @@
 ---
 title: 'Differenze tra pagine '
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 97%
 
 ---
-
 
 # Differenze tra pagine  {#page-diff}
 
@@ -35,7 +34,7 @@ La visualizzazione affiancata delle differenze permette di confrontare:
 
 Consulta i rispettivi argomenti su come avviare la funzione per il rilevamento delle differenze in questi contesti.
 
-### Presentazione delle differenze    {#presentation-of-differences}
+### Presentazione delle differenze   {#presentation-of-differences}
 
 A prescindere dal contenuto, la presentazione delle differenze rimane la stessa.
 
@@ -64,7 +63,7 @@ Vengono rilevate le modifiche apportate a livello di componente e di codice HTML
 >
 >Quando si confrontano le copie per lingua, l’evidenziazione è disattivata poiché in una traduzione tutto cambia.
 
-### Modalità a schermo intero e Uscita    {#fullscreen-and-exiting}
+### Modalità a schermo intero e Uscita   {#fullscreen-and-exiting}
 
 Per concentrarti su un contenuto particolare, fai clic sull’icona schermo intero di entrambi i “lati” a confronto, per ingrandire il contenuto nella finestra del browser a schermo intero.
 
@@ -84,7 +83,7 @@ Per chiudere la visualizzazione a schermo intero, fai clic sull’icona per usci
 
 Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsiasi momento facendo clic sul pulsante Chiudi, nell’intestazione.
 
-## Limiti    {#limitations}
+## Limiti   {#limitations}
 
 Esistono alcune situazioni in cui il confronto delle differenze della pagina non è in grado di rilevare una differenza nel modo previsto.
 

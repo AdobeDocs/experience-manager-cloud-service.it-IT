@@ -28,7 +28,7 @@ Tramite l’**Editor modelli**, gli autori dei modelli possono:
 
 Questo documento spiega come un **autore di modelli** può usare la console e l’editor per creare e gestire modelli modificabili.
 
-Per informazioni dettagliate su come funzionano i modelli modificabili a livello tecnico, consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md) per ulteriori informazioni.
+Per informazioni dettagliate sul funzionamento dei modelli modificabili a livello tecnico, consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md) per ulteriori informazioni.
 
 >[!NOTE]
 >
@@ -91,11 +91,11 @@ Durante la creazione di un nuovo modello modificabile:
 >
 >Non inserire mai informazioni che devono essere internazionalizzate in un modello. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Per gli elementi modello che devono essere localizzati, come intestazioni e piè di pagina, utilizza le funzioni di [localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Per gli elementi modello che devono essere localizzati, come intestazioni e piè di pagina, utilizza le funzioni di [localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it).
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
-È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. Si tratta di un&#39;attività amministrativa descritta nel documento [Modelli di pagina](/help/implementing/developing/components/templates.md#template-folders).—>
+È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. Si tratta di un’attività amministrativa descritta nel documento [Modelli di pagina](/help/implementing/developing/components/templates.md#template-folders)—>
 
 ### Creazione di un nuovo modello - Autore del modello {#creating-a-new-template-template-author}
 
@@ -113,7 +113,7 @@ Durante la creazione di un nuovo modello modificabile:
 
    >[!NOTE]
    >
-   >I tipi di modello sono layout predefiniti e possono essere pensati come modelli per un modello. Questi sono predefiniti dagli sviluppatori o dall’amministratore di sistema. Ulteriori informazioni sono disponibili nel documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md#template-type).—>
+   >I tipi di modello sono layout predefiniti e possono essere pensati come modelli per un modello. Questi sono predefiniti dagli sviluppatori o dall’amministratore di sistema. Ulteriori informazioni sono disponibili nel documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md#template-type)—>
 
 1. Completa i **Dettagli modello**:
 
@@ -132,7 +132,7 @@ Durante la creazione di un nuovo modello modificabile:
 >
 >Adobe consiglia di non disporre di più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
 
-### Definizione delle proprietà del modello - Autore del modello    {#defining-template-properties-template-author}
+### Definizione delle proprietà del modello - Autore del modello   {#defining-template-properties-template-author}
 
 Un modello può avere le seguenti proprietà:
 
@@ -167,7 +167,7 @@ Per definire la miniatura del modello:
    * Se non è soddisfacente, tocca o fai clic su **Cancella** per caricare un’altra immagine o rigenerare l’anteprima.
 1. Una volta ottenuta la miniatura desiderata, tocca o fai clic su **Salva e chiudi**.
 
-### Abilitazione e autorizzazione di un modello - Autore del modello    {#enabling-and-allowing-a-template-template-author}
+### Abilitazione e autorizzazione di un modello - Autore del modello   {#enabling-and-allowing-a-template-template-author}
 
 Per poter utilizzare un modello quando si crea una pagina, è necessario svolgere le seguenti operazioni:
 
@@ -198,7 +198,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 1. Apri la scheda **Avanzate**.
 1. In **Impostazioni modello** utilizza **Aggiungi campo** per specificare il percorso del modello.
 
-   Il percorso può essere esplicito o utilizzare schemi ricorrenti. Esempio:
+   Il percorso può essere esplicito o utilizzare schemi ricorrenti. Ad esempio:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
@@ -209,7 +209,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
    >Se l’elenco dei **Modelli consentiti** viene lasciato vuoto, l’albero viene asceso fino a quando non viene trovato un valore o un elenco.
    >
    >
-   >Consulta [Disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability) - i principi per i modelli consentiti rimangono gli stessi.
+   >Vedi [Disponibilità del modello](/help/implementing/developing/components/templates.md#template-availability) - i principi per i modelli consentiti rimangono gli stessi.
 
 1. Fai clic su **Salva** per salvare le modifiche alle proprietà della pagina.
 
@@ -226,7 +226,7 @@ Poiché al modello viene fatto riferimento quando viene eseguito il rendering di
 1. Seleziona **Criteri per contenuto** da pubblicare in tandem.
 1. Seleziona **Pubblica** nella barra degli strumenti per completare l’azione.
 
-## Modifica dei modelli - Autori dei modelli    {#editing-templates-template-authors}
+## Modifica dei modelli - Autori dei modelli   {#editing-templates-template-authors}
 
 Quando si crea o si modifica un modello, è possibile definire vari aspetti. La modifica dei modelli è simile alla creazione delle pagine.
 
@@ -621,7 +621,7 @@ L’opzione **Proprietà pagina iniziale** consente di definire le [proprietà d
 
 1. Conferma le definizioni con **Fine**.
 
-## Best practice    {#best-practices}
+## Best practice   {#best-practices}
 
 Quando si creano modelli, è necessario considerare i seguenti aspetti:
 

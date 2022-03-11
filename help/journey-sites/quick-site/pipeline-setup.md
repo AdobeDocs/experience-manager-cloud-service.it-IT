@@ -1,13 +1,13 @@
 ---
 title: Imposta la pipeline
 description: Crea una pipeline front-end per gestire la personalizzazione del tema del sito.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 0%
 
 ---
-
 
 # Imposta la pipeline {#set-up-your-pipeline}
 

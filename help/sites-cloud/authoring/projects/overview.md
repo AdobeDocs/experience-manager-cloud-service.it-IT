@@ -11,11 +11,11 @@ ht-degree: 74%
 
 # Progetti {#projects}
 
-La funzione Progetti consente di raggruppare le risorse in una singola entità. Si ottiene così un ambiente comune e condiviso che semplifica la gestione dei progetti. I tipi di risorse che puoi associare a un progetto in AEM vengono definiti porzioni. Le porzioni possono includere informazioni sul progetto e sul team, risorse, flussi di lavoro e altri tipi di informazioni, come descritto in dettaglio in [Porzioni del progetto.](#project-tiles)
+La funzione Progetti consente di raggruppare le risorse in una singola entità. Si ottiene così un ambiente comune e condiviso che semplifica la gestione dei progetti. I tipi di risorse che puoi associare a un progetto in AEM vengono definiti porzioni. Le porzioni possono includere informazioni sul progetto e sul team, risorse, flussi di lavoro e altri tipi di informazioni, come descritto in dettaglio in [Porzioni progetto.](#project-tiles)
 
 >[!CAUTION]
 >
->Affinché gli utenti dei progetti possano vedere altri utenti/gruppi utilizzando le funzionalità Progetti , come la creazione di progetti, la creazione di attività/flussi di lavoro, la visualizzazione e la gestione del team, questi utenti devono avere accesso in lettura alle pagine `/home/users` e `/home/groups`. Il modo più semplice per implementarlo è consentire al gruppo **projects-users** di accedere in lettura a `/home/users` e `/home/groups`.
+>Affinché gli utenti dei progetti possano vedere altri utenti/gruppi utilizzando le funzionalità Progetti come la creazione di progetti, la creazione di attività/flussi di lavoro, la visualizzazione e la gestione del team, questi utenti devono avere accesso in lettura a `/home/users` e `/home/groups`. Il modo più semplice per implementarlo è quello di fornire **utenti dei progetti** accesso in lettura di gruppo a `/home/users` e `/home/groups`.
 
 Come utente, puoi effettuare le seguenti operazioni:
 
@@ -87,7 +87,7 @@ Le icone indicano quale tipo di esperienza è rappresentata: sito web, app mobil
 
 ![Aggiungi un’esperienza](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
-Seleziona il percorso per le miniature, se applicabile, modifica la miniatura per l&#39;esperienza. Le esperienze sono raggruppate insieme nella sezione **Esperienze** .
+Seleziona il percorso per le miniature, se applicabile, modifica la miniatura per l&#39;esperienza. Le esperienze sono raggruppate nel gruppo **Esperienze** piastrelle.
 
 ### Collegamenti {#links}
 
@@ -115,7 +115,7 @@ Dalla porzione Processo di traduzione puoi iniziare una traduzione e visualizzar
 
 ![Processo di traduzione](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Fai clic sull’ellissi nella parte inferiore della scheda **Processo di traduzione** per visualizzare le risorse nel flusso di lavoro di traduzione. Nell’elenco dei processi di traduzione vengono visualizzate anche le voci per i metadati risorsa e i tag. Queste voci indicano che anche i metadati e i tag per le risorse vengono tradotti.
+Fai clic sull&#39;ellissi nella parte inferiore della **Processo di traduzione** per visualizzare le risorse nel flusso di lavoro di traduzione. Nell’elenco dei processi di traduzione vengono visualizzate anche le voci per i metadati risorsa e i tag. Queste voci indicano che anche i metadati e i tag per le risorse vengono tradotti.
 
 ![Dettaglio del lavoro di traduzione](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
@@ -147,7 +147,7 @@ La porzione Lanci mostra tutti i lanci richiesti con un [Flusso di lavoro di ric
 
 ### Attività {#tasks}
 
-Le attività consentono di controllare lo stato di tutte le attività relative al progetto, tra cui i flussi di lavoro. Le attività vengono descritte in dettaglio in [Utilizzo delle attività](/help/sites-cloud/authoring/projects/tasks.md).
+Le attività consentono di controllare lo stato di tutte le attività relative al progetto, tra cui i flussi di lavoro. I compiti sono trattati in dettaglio all&#39;indirizzo [Utilizzo delle attività](/help/sites-cloud/authoring/projects/tasks.md).
 
 ![Attività](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
@@ -157,7 +157,7 @@ AEM viene fornito con tre modelli diversi:
 
 * Un progetto semplice: un esempio di riferimento per tutti i progetti che non rientrano in altre categorie (un catch-all). Comprende tre ruoli di base (Proprietari, Editor e Osservatori) e quattro flussi di lavoro (Approvazione progetto, Richiedi lancio, Richiedi pagina di destinazione e Richiedi e-mail).
 * Un progetto multimediale: un progetto di esempio di riferimento per attività correlate ai contenuti multimediali. Include diversi ruoli di progetto relativi ai file multimediali (fotografi, editor, copywriter, designer, proprietari e osservatori). Richiede anche il flusso di lavoro Copia per richiedere e rivedere il testo.
-* Un [progetto di traduzione](/help/sites-cloud/administering/translation/overview.md) - Un esempio di riferimento per la gestione delle attività relative alla traduzione. Comprende tre ruoli di base (Proprietari, Editor e Osservatori). Include due flussi di lavoro a cui è possibile accedere nell’interfaccia utente Flussi di lavoro.
+* A [progetto di traduzione](/help/sites-cloud/administering/translation/overview.md) - Un esempio di riferimento per la gestione delle attività relative alla traduzione. Comprende tre ruoli di base (Proprietari, Editor e Osservatori). Include due flussi di lavoro a cui è possibile accedere nell’interfaccia utente Flussi di lavoro.
 
 In base al modello selezionato, sono disponibili diverse opzioni, in particolare riguardo ai ruoli dell’utente e ai flussi di lavoro.
 

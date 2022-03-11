@@ -8,7 +8,7 @@ exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Per integrare è necessario quanto segue [!DNL Adobe Sign] con [!DNL AEM Forms]:
 * Utilizzo [chiave crittografica identica](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en#make-sure-you-properly-replicate-encryption-keys-when-needed) per le istanze di authoring e pubblicazione.
 * (Solo per l&#39;autenticazione basata su ID governativi) [Attiva il metodo di autenticazione](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport) per l’autenticazione degli ID governativi.
 
-## Configura [!DNL Adobe Sign] con [!DNL AEM Forms] {#configure-adobe-sign-with-aem-forms}
+## Configurare[!DNL Adobe Sign]con [!DNL AEM Forms] {#configure-adobe-sign-with-aem-forms}
 
 Dopo aver impostato i prerequisiti, esegui i seguenti passaggi per configurare [!DNL Adobe Sign] con [!DNL AEM Forms] nelle istanze Autore .
 
@@ -69,7 +69,7 @@ Dopo aver impostato i prerequisiti, esegui i seguenti passaggi per configurare [
 
    `https://<shard>/public/oAuth/v2`
 
-   Esempio:
+   Ad esempio:
    `https://secure.na1.echosign.com/public/oauth/v2`
 
    Dove:

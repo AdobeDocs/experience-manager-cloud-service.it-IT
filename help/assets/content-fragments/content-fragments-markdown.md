@@ -1,19 +1,19 @@
 ---
 title: Markdown
 description: Scopri in che modo l’editor Frammento di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti headless.
-feature: Frammenti di contenuto
+feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '522'
 ht-degree: 4%
 
 ---
 
 # Markdown {#markdown}
 
-Quando sei [autore](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor dei frammenti di contenuto utilizza la sintassi *markdown* per consentire di scrivere facilmente contenuti headless:
+Quando sei [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor dei frammenti di contenuto utilizza *markdown* sintassi per consentire di scrivere facilmente contenuti headless:
 
 ![editor markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -31,7 +31,7 @@ Puoi definire:
 
 ## Notazione titolo {#heading-notation}
 
-Per creare un’intestazione inserendo un tag hash (#) davanti all’intestazione. Un tag hash (#) viene utilizzato per un valore H1, due tag hash (##) per un valore H2, ecc. Puoi utilizzare fino a 6 hashtag. Esempio:
+Per creare un’intestazione inserendo un tag hash (#) davanti all’intestazione. Un tag hash (#) viene utilizzato per un valore H1, due tag hash (##) per un valore H2, ecc. Puoi utilizzare fino a 6 hashtag. Ad esempio:
 
     `## This is an H2`
 
@@ -39,7 +39,7 @@ Per creare un’intestazione inserendo un tag hash (#) davanti all’intestazion
 
     `###### This is a H6`
 
-Facoltativamente, è possibile creare un H1 evidenziando il testo in segni uguali e creando un H2 evidenziando il testo sotto i segni meno. Esempio:
+Facoltativamente, è possibile creare un H1 evidenziando il testo in segni uguali e creando un H2 evidenziando il testo sotto i segni meno. Ad esempio:
 
     `This is an H1`
 
@@ -105,7 +105,7 @@ Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferiment
 
 ## Virgolette a blocchi {#block-quotes}
 
-È possibile citare il testo aggiungendo il simbolo > prima del testo. Esempio:
+È possibile citare il testo aggiungendo il simbolo > prima del testo. Ad esempio:
 
     `>This is block quotes`
 
@@ -113,7 +113,7 @@ Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferiment
 
     `>asdfahsdlfasdfj`
 
-È possibile disporre di virgolette di blocco nidificate. Esempio:
+È possibile disporre di virgolette di blocco nidificate. Ad esempio:
 
     `> This is the first level of quoting.`
 
@@ -129,7 +129,7 @@ Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferiment
 
 È possibile creare elenchi ordinati e non ordinati.
 
-Per creare un elenco non ordinato, utilizzare &amp;ast; prima degli elementi dell’elenco. Esempio:
+Per creare un elenco non ordinato, utilizzare &amp;ast; prima degli elementi dell’elenco. Ad esempio:
 
     `* item in list`
 
@@ -137,7 +137,7 @@ Per creare un elenco non ordinato, utilizzare &amp;ast; prima degli elementi del
 
     `* item in list`
 
-Per creare un elenco ordinato, aggiungere i numeri, seguiti da un punto, prima di ogni elemento dell’elenco. Esempio:
+Per creare un elenco ordinato, aggiungere i numeri, seguiti da un punto, prima di ogni elemento dell’elenco. Ad esempio:
 
     `1. First item in list.`
 
@@ -165,15 +165,15 @@ Il testo in grassetto può essere visualizzato come segue:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Per indicare un intervallo di codice, inseriscilo con virgolette di backtick (&amp;grave;). A differenza di un blocco di codice preformattato, un intervallo di codice indica il codice all’interno di un paragrafo normale.
+Per indicare un&#39;estensione di codice, inseriscila con virgolette di zecca (&amp;grave;). A differenza di un blocco di codice preformattato, un intervallo di codice indica il codice all’interno di un paragrafo normale.
 
-Esempio:
+Ad esempio:
 
     ``Use the `printf()` function.``
 
 ## Blocchi di codice {#code-blocks}
 
-I blocchi di codice vengono generalmente utilizzati per illustrare il codice sorgente. Puoi creare blocchi di codice applicando un rientro al codice utilizzando una scheda o un minimo di 4 spazi. Esempio:
+I blocchi di codice vengono generalmente utilizzati per illustrare il codice sorgente. Puoi creare blocchi di codice applicando un rientro al codice utilizzando una scheda o un minimo di 4 spazi. Ad esempio:
 
     `This is a normal paragraph.`
 
@@ -181,7 +181,7 @@ I blocchi di codice vengono generalmente utilizzati per illustrare il codice sor
 
 ## Backslash escape {#backslash-escapes}
 
-È possibile utilizzare gli escape barra rovesciata per generare caratteri letterali che hanno un significato speciale nella sintassi di formattazione. Ad esempio, se desideri circondare una parola con asterischi letterali (invece di un tag HTML &lt;em> ), puoi utilizzare le barre rovesciate prima degli asterischi, come segue:
+È possibile utilizzare gli escape barra rovesciata per generare caratteri letterali che hanno un significato speciale nella sintassi di formattazione. Ad esempio, se desideri circondare una parola con asterischi letterali (invece di un tag HTML), puoi utilizzare le barre rovesciate prima degli asterischi, come segue:
 
     `\\*literal asterisks\\*`
 

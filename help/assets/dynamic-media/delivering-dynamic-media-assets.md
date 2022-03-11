@@ -1,13 +1,13 @@
 ---
 title: Fornire risorse Dynamic Media
 description: Scopri come distribuire le risorse Dynamic Media.
-feature: Gestione risorse
+feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 2%
+source-wordcount: '319'
+ht-degree: 11%
 
 ---
 
@@ -21,23 +21,23 @@ Con Dynamic Media hai diverse opzioni:
 * Se il tuo sito web non è disponibile come Experience Manager, puoi scegliere tra:
 
    * Incorporare il video o l’immagine sul sito web.
-   * Collega URL all’applicazione web. Utilizza il collegamento quando desideri distribuire un lettore video come finestra a comparsa o modale.
-   * Se il tuo sito è reattivo, puoi [fornire immagini ottimizzate](/help/assets/dynamic-media/responsive-site.md).
+   * Collegamento degli URL all’applicazione Web. Utilizza il collegamento quando desideri distribuire un lettore video come finestra a comparsa o modale.
+   * Se il sito è reattivo, puoi [fornire immagini ottimizzate](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->La funzione Smart imaging funziona con i predefiniti per immagini esistenti. Utilizza l&#39;intelligenza nell&#39;ultimo millisecondo di consegna per ridurre ulteriormente le dimensioni dei file immagine in base al browser o alla velocità di connessione di rete. Per ulteriori informazioni, consulta [Smart imaging](/help/assets/dynamic-media/imaging-faq.md) .
+>La funzione Smart imaging funziona con i predefiniti per immagini esistenti. Utilizza l&#39;intelligenza nell&#39;ultimo millisecondo di consegna per ridurre ulteriormente le dimensioni dei file immagine in base al browser o alla velocità di connessione di rete. Vedi [Imaging avanzato](/help/assets/dynamic-media/imaging-faq.md) per ulteriori informazioni.
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
 * [Aggiungere risorse Dynamic Media alle pagine Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Incorporare il visualizzatore di video o immagini in una pagina web](/help/assets/dynamic-media/embed-code.md)
-* [Attivare la protezione hotlink in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
+* [Attivazione della protezione hotlinking in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Collegare gli URL all’applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Fornire immagini ottimizzate per un sito reattivo](/help/assets/dynamic-media/responsive-site.md)
 * [Distribuzione di contenuti HTTP2](/help/assets/dynamic-media/http2faq.md)
-* [Annullare la validità della cache CDN tramite Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [Annullare la validità della cache CDN tramite Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [Invalidare la cache CDN tramite Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [Invalidare la cache CDN tramite Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [Utilizzare i set di regole per trasformare gli URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## Distribuzione di risorse Dynamic Media HTTP/2 {#http-delivery-of-dynamic-media-assets}

@@ -5,7 +5,7 @@ exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -79,6 +79,6 @@ Ora che hai imparato i concetti e la terminologia, il passo successivo è [Scopr
    * [Scopri lo sviluppo di CMS Headless](/help/journey-headless/developer/learn-about.md)
    * [Scopri come modellare il contenuto](/help/journey-headless/developer/model-your-content.md)
 
-* percorso di architetti di contenuti headless AEM
+* Percorso Architect di contenuti AEM headless
 
 * AEM Percorso di traduzione dei contenuti headless

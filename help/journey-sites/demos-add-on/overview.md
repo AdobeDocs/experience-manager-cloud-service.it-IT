@@ -1,15 +1,15 @@
 ---
-title: percorso aggiuntivo Demos di riferimento AEM
+title: Percorso AEM Reference Demos Add-On
 description: Inizia qui per un percorso guidato attraverso come aggiungere facilmente il AEM Reference Demos Add-On a un ambiente sandbox con una configurazione di AEM minima ed essere in grado di testare le potenti funzionalità di AEM con esempi ricchi basati sulle best practice.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# percorso aggiuntivo Demos di riferimento AEM {#reference-demos-add-on-journey}
+# Percorso AEM Reference Demos Add-On {#reference-demos-add-on-journey}
 
 Inizia qui per un percorso guidato attraverso come aggiungere facilmente il AEM Reference Demos Add-On a un ambiente sandbox con una configurazione di AEM minima ed essere in grado di testare le potenti funzioni di AEM Sites e AEM Screens con esempi dettagliati basati sulle best practice.
 
@@ -42,7 +42,7 @@ Verranno esaminati diversi argomenti in questo percorso. I seguenti articoli ti 
 
 | # | Articolo | Descrizione |
 |---|---|---|
-| 0 | percorso aggiuntivo Demos di riferimento AEM | Questo documento |
+| 0 | Percorso AEM Reference Demos Add-On | Questo documento |
 | 1 | [Comprendere l’installazione del componente aggiuntivo Demo di riferimento](installation.md) | Scopri Cloud Manager e come viene utilizzato per installare il componente aggiuntivo. |
 | 2 | [Creare un programma e una pipeline](create-program.md) | Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo. |
 | 3 | [Creare un sito demo](create-site.md) | Crea un sito demo in AEM basato su una libreria di modelli preconfigurati. |

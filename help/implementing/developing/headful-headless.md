@@ -21,7 +21,7 @@ AEM può essere utilizzato anche per gestire semplicemente i contenuti, consente
 
 Ma questa non deve essere una scelta binaria. AEM offre una flessibilità senza precedenti, che consente di sfruttare i vantaggi di entrambi i modelli per il progetto.
 
-![Modelli di implementazione AEM](/help/headless/assets/aem-implementation-models.png)
+![Modelli di implementazione di AEM](/help/headless/assets/aem-implementation-models.png)
 
 In un modello headful o full-stack, il contenuto viene gestito nell’archivio AEM e nei componenti AEM basati su Java, HTL, ecc. vengono utilizzati per eseguire il rendering del contenuto per l’esperienza utente. In questo modello, la creazione del contenuto, lo stile, la presentazione e la distribuzione avvengono in AEM.
 

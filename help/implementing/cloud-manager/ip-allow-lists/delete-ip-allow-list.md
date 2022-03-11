@@ -1,25 +1,23 @@
 ---
-title: 'Eliminazione del Elenco consentiti di  IP '
-description: Eliminazione del Elenco consentiti di  IP
-translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+title: 'Eliminazione dell’Elenco consentiti IP '
+description: Eliminazione dell’Elenco consentiti IP
+exl-id: 34414915-0078-4acb-94df-b84043ce63d8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '83'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
+# Eliminazione di un elenco IP consentiti {#delete-allow-list}
 
-# Eliminazione di un Elenco consentiti di  IP {#delete-allow-list}
+Per eliminare un Elenco consentiti IP, effettua le seguenti operazioni:
 
-Per eliminare un Elenco consentiti di  IP, effettuate le operazioni seguenti:
-
-1. Passare alla pagina **Impostazioni dominio** dalla schermata **Ambienti**.
-1. Identificare la riga in cui è elencato il nome di dominio personalizzato che si desidera eliminare.
-1. Selezionare la **...** menu dall&#39;estremità destra della riga.
-1. Selezionare l&#39;opzione **Elimina**.
+1. Passa a **Impostazioni di dominio** dalla pagina **Ambienti** schermo.
+1. Identifica la riga in cui è elencato il nome di dominio personalizzato che desideri eliminare.
+1. Seleziona la **...** dall&#39;estremità destra della riga.
+1. Seleziona la **Elimina** opzione .
 1. Conferma l’invio.
 
 >[!NOTE]
->L&#39;eliminazione di un Elenco consentiti di  IP annullerà automaticamente tutti i servizi e lo eliminerà dalla tabella.
-
+>L’eliminazione di un Elenco consentiti IP ne annullerà automaticamente l’applicazione e l’eliminazione dalla tabella di tutti i servizi.

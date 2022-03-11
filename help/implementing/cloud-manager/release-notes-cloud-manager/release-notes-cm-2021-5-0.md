@@ -1,23 +1,23 @@
 ---
-title: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.5.0
-description: Note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.5.0
-feature: Informazioni sulla versione
+title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.5.0
+description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.5.0
+feature: Release Information
 exl-id: 8ae3cf2f-1865-427a-b612-bdf56e2f0304
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '377'
 ht-degree: 3%
 
 ---
 
 # Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.5.0 {#release-notes}
 
-Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.5.0.
+Questa pagina illustra le note sulla versione di Cloud Manager in AEM 2021.5.0.
 
 >[!NOTE]
->Per visualizzare il Cloud Service delle note sulla versione corrente per Adobe Experience Manager, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+>Per visualizzare le note sulla versione corrente per Adobe Experience Manager as a Cloud Service, fai clic su [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.5.0 è il 6 maggio 2021.
 
@@ -33,11 +33,11 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.5.0 è il 6 
 
 * È ora possibile applicare il componente aggiuntivo Commerce ai programmi Sandbox durante il flusso di lavoro Modifica programma .
 
-* L&#39;esperienza *Modifica programma* è stata aggiornata.
+* La *Modifica programma* l&#39;esperienza è stata aggiornata.
 
 * La tabella Nomi di dominio nella pagina Dettagli ambiente visualizza fino a 250 nomi di dominio tramite impaginazione.
 
-* La scheda **Soluzioni e componenti aggiuntivi** in **Aggiungi programma** e **Modifica programma** mostrerà la soluzione, anche se per il programma è disponibile una sola soluzione.
+* La **Soluzioni e componenti aggiuntivi** scheda in **Aggiungi programma** e **Modifica programma** I flussi di lavoro visualizzeranno la soluzione, anche se per il programma è disponibile una sola soluzione.
 
 * Il messaggio di errore nel registro dei passaggi della build quando la build non produceva pacchetti di contenuto distribuiti non era chiaro.
 

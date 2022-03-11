@@ -5,7 +5,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ Per ulteriori informazioni sui gruppi di AEM specifici di Forms e sulle autorizz
 
 ## Passaggio successivo {#next-steps}
 
-[Configurare un ambiente di sviluppo locale](setup-local-development-environment.md). È possibile utilizzare l’ambiente di sviluppo locale per creare un modulo adattivo e le relative risorse (temi, modelli, azioni di invio personalizzate, servizio di precompilazione e altro) e [convertire PDF forms in Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) senza accedere all’ambiente di sviluppo cloud.
+[Configurare un ambiente di sviluppo locale](setup-local-development-environment.md). È possibile utilizzare l’ambiente di sviluppo locale per creare un modulo adattivo e le relative risorse (temi, modelli, azioni di invio personalizzate, servizio di precompilazione e altro) e [convertire PDF forms in Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it) senza accedere all’ambiente di sviluppo cloud.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 

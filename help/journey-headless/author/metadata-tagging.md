@@ -5,7 +5,7 @@ exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 3%
+ht-degree: 14%
 
 ---
 
@@ -46,6 +46,6 @@ Ora puoi mettere a disposizione tutte queste conoscenze per utilizzare e iniziar
 
 * [Metadati - Proprietà dei frammenti](/help/assets/content-fragments/content-fragments-metadata.md)
 
-* [Utilizzo dei tag  ](/help/sites-cloud/authoring/features/tags.md)
+* [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md)
 
 * [Modelli per frammenti di contenuto - Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

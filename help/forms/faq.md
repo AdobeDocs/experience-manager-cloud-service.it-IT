@@ -6,7 +6,7 @@ exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '909'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -85,7 +85,7 @@ Il modello dati modulo non fornisce un metodo per utilizzare certificati persona
 
 * **Posso usare [!DNL AEM Forms] app con [!DNL AEM Forms] as a Cloud Service?**
 
-   Adaptive Forms offre un design reattivo. Questi moduli modificano l’aspetto, la progettazione e l’interattività in base al dispositivo sottostante. Puoi continuare a utilizzare Adaptive Forms su dispositivi mobili tenendo d&#39;occhio le note sulle versioni mensili per la disponibilità delle funzioni.
+   Forms adattivo offre un design responsive. Questi moduli modificano l’aspetto, la progettazione e l’interattività in base al dispositivo sottostante. Puoi continuare a utilizzare Adaptive Forms su dispositivi mobili tenendo d&#39;occhio le note sulle versioni mensili per la disponibilità delle funzioni.
 
 * **Quali funzioni non fanno parte della versione iniziale GA?**
 Portale Forms, [!DNL AEM Forms] app, integrazione con Adobe Analytics e integrazione con Adobe Target non fanno parte della versione iniziale GA. Per informazioni sulle nuove funzioni, consulta le note sulle versioni mensili.

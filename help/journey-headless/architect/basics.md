@@ -5,11 +5,11 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-# Scopri le nozioni di base sulla modellazione dei contenuti per headless con AEM {#content-modeling-headless-basics}
+# Scopri le nozioni di base sulla modellazione dei contenuti per Headless con AEM {#content-modeling-headless-basics}
 
 ## La storia finora {#story-so-far}
 
@@ -69,7 +69,7 @@ Ad esempio, definisci il campo contenente il nome di un insegnante come **Testo*
 1. Tipi di dati **Riferimento contenuto** e **Riferimento frammento** consente di creare relazioni con altri contenuti all’interno di AEM.
 1. La **Riferimento frammento** il tipo di dati ti consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
 
-Esempio:
+Ad esempio:
 
 ![Modellazione dei contenuti con frammenti di contenuto](assets/headless-modeling-01.png "Modellazione dei contenuti con frammenti di contenuto")
 
@@ -127,7 +127,7 @@ Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di c
 
 * Città
 * Azienda
-* Person
+* Utente
 * Premi
 
 Sembra abbastanza semplice, ma ovviamente un&#39;Azienda ha sia un amministratore delegato che dei dipendenti....e queste sono tutte persone, ognuna definita come Persona.

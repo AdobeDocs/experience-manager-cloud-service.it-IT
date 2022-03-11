@@ -1,28 +1,27 @@
 ---
 title: Eliminazione di un nome di dominio personalizzato
 description: Eliminazione di un nome di dominio personalizzato
-translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+exl-id: febe647b-46df-47cb-b542-c05bf03ac88d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
-
 # Eliminazione di un nome di dominio personalizzato {#deleting-cdn}
 
-Per poter eliminare un nome di dominio personalizzato in Cloud Manager, un utente deve essere incluso nel ruolo Proprietario business o Gestione distribuzione.
+Per poter eliminare un nome di dominio personalizzato in Cloud Manager, un utente deve trovarsi nel ruolo Proprietario business o Gestore distribuzione.
 
 ## Eliminazione di un nome di dominio personalizzato da tutti gli ambienti associati {#delete-cdn-all}
 
-1. Passare alla pagina **Impostazioni dominio** dalla schermata **Ambienti**.
+1. Passa a **Impostazioni di dominio** dalla pagina **Ambienti** schermo.
 
-1. Identificare la riga in cui è elencato il nome di dominio personalizzato che si desidera eliminare.
+1. Identifica la riga in cui è elencato il nome di dominio personalizzato che desideri eliminare.
 
-1. Selezionare la **...** menu dall&#39;estremità destra della riga.
+1. Seleziona la **...** dall&#39;estremità destra della riga.
 
-1. Selezionare l&#39;opzione **Elimina**.
+1. Seleziona la **Elimina** opzione .
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Conferma l’invio.
@@ -30,8 +29,8 @@ Per poter eliminare un nome di dominio personalizzato in Cloud Manager, un utent
 
 ## Eliminazione di un nome di dominio personalizzato da un ambiente specifico {#delete-cdn-specific}
 
-1. Dalla pagina **Ambienti**, passare alla schermata Dettagli ambiente dell&#39;ambiente di interesse.
-1. Dalla tabella Nomi di dominio, identificare la riga in cui è elencato il nome di dominio personalizzato che si desidera eliminare.
-1. Selezionare la **...** menu dall&#39;estremità destra della riga.
-1. Selezionate l’opzione Elimina.
+1. Da **Ambienti** , passa alla schermata dei dettagli dell’ambiente di interesse .
+1. Nella tabella Nomi di dominio , identifica la riga in cui è elencato il nome di dominio personalizzato che desideri eliminare.
+1. Seleziona la **...** dall&#39;estremità destra della riga.
+1. Selezionare l’opzione Elimina.
 1. Conferma l’invio.

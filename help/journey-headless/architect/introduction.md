@@ -1,11 +1,11 @@
 ---
-title: percorso di architetti di contenuti headless AEM
+title: Percorso Architect di contenuti AEM headless
 description: Introduzione alle funzioni avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e modalità di modellazione dei contenuti per il progetto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 

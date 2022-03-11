@@ -56,7 +56,7 @@ Il diagramma seguente illustra l’architettura del sistema di stili.
 
 ## Utilizzo {#use}
 
-Per illustrare questa funzione, come esempio verrà utilizzata l’implementazione [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) del [componente titolo](https://www.adobe.com/go/aem_cmp_title_v2_it) del componente core.
+Per illustrare questa funzione, come esempio verrà utilizzata l’implementazione [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it) del [componente titolo](https://www.adobe.com/go/aem_cmp_title_v2_it) del componente core.
 
 Le sezioni seguenti, [Autore di contenuti](#as-a-content-author) e [Autore di modelli](#as-a-template-author) descrivono come verificare la funzionalità del sistema di stili utilizzando il sistema di stili di WKND.
 
@@ -66,7 +66,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 1. Configura le classi CSS da rendere disponibili agli autori di contenuti come descritto nella sezione [Autore di modelli](#as-a-template-author).
 1. Gli autori di contenuti possono quindi utilizzare gli stili come descritto nella sezione [Autore di contenuti](#as-a-content-author).
 
-### Autore di contenuti   {#as-a-content-author}
+### Autore di contenuti  {#as-a-content-author}
 
 1. Dopo aver installato il progetto WKND, visita la pagina principale in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e modifica la pagina.
 1. Seleziona un componente **Titolo** più in basso nella pagina.
@@ -81,7 +81,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
    >
    >In questo esempio, gli stili **Colori** (**Nero**, **Bianco** e **Grigio**) si escludono a vicenda, mentre le opzioni di **Stile** (**Sottolineato**, **Allinea a destra** e **Spaziatura minima**) possono essere combinate. Tutto questo può essere [configurato nel modello se si è l’autore del modello](#as-a-template-author).
 
-### Autore di modelli   {#as-a-template-author}
+### Autore di modelli  {#as-a-template-author}
 
 1. Durante la modifica della pagina mastro in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifica il modello di pagina da **Informazioni pagina > Modifica modello**.
 
@@ -104,7 +104,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 >[!CAUTION]
 >
->Per poter funzionare, le classi CSS (nonché l’eventuale codice Javascript) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come [librerie client](/help/implementing/developing/introduction/clientlibs.md).
+>Le classi CSS (nonché l’eventuale codice Javascript) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come [Librerie client](/help/implementing/developing/introduction/clientlibs.md) per lavorare.
 
 ## Configurazione {#setup}
 
@@ -140,7 +140,7 @@ La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo
 >
 >Per impostazione predefinita, la scheda Stili nella finestra di dialogo Modifica non è abilitata.
 
-### Stili con nomi di elementi   {#styles-with-element-names}
+### Stili con nomi di elementi  {#styles-with-element-names}
 
 Uno sviluppatore può anche configurare un elenco di nomi di elementi consentiti per gli stili sul componente con la proprietà string array `cq:styleElements`. Quindi, nella scheda Stili del criterio nella finestra di dialogo della progettazione, l’autore del modello può anche scegliere un nome di elemento da impostare per ogni stile. In questo modo verrà impostato il nome dell’elemento wrapper.
 
@@ -157,7 +157,6 @@ Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 >1. Infine, il `cq:tagName`/ `cq:htmlTag` del componente sarà considerato un valore di fallback.
 
 >
-
 
 
 Questa capacità di definire i nomi degli stili è utile per i componenti molto generici, come Contenitore di layout, o il componente Frammento di contenuto, al fine di attribuire loro un significato aggiuntivo.

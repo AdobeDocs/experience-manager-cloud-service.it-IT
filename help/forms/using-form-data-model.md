@@ -1,6 +1,6 @@
 ---
 title: Come si utilizza il modello dati del modulo?
-description: Scopri come creare frammenti di modulo adattivi e Forms basati su un modello di dati del modulo. Dig deeper by generating and editing sample data for data model objects in the form data model. Puoi utilizzare questi dati per visualizzare in anteprima e testare Adaptive Forms.
+description: Scopri come creare frammenti di modulo adattivi e Forms basati su un modello di dati del modulo. Approfondisci la generazione e la modifica di dati di esempio per gli oggetti del modello dati nel modello dati del modulo. Puoi utilizzare questi dati per visualizzare in anteprima e testare Adaptive Forms.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
@@ -8,11 +8,11 @@ exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Use Form Data Model {#use-form-data-model}
+# Utilizzare il modello di dati del modulo {#use-form-data-model}
 
 ![integrazione dei dati](do-not-localize/data-integeration.png)
 
@@ -21,15 +21,15 @@ ht-degree: 0%
 * [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md)
 * [Configurare origini dati](configure-data-sources.md)
 * [Crea modello dati modulo](create-form-data-models.md)
-* [Work with form data model](work-with-form-data-model.md)
+* [Utilizzare il modello dati del modulo](work-with-form-data-model.md)
 
-A Form Data Model is an extension of JSON schema that you can use to:
+Un modello dati modulo è un’estensione dello schema JSON che può essere utilizzata per:
 
-* [Create Adaptive Forms and fragments](#create-af)
+* [Creare frammenti e Forms adattivi](#create-af)
 
 <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
-* [Preview with sample data](#preview-ic)
-* [using Form Data Model service](#prefill)
+* [Anteprima con dati di esempio](#preview-ic)
+* [utilizzo del servizio Form Data Model](#prefill)
 * [Riscrittura dei dati del modulo adattivo inviati nelle origini dati](#write-af)
 * [Richiamare i servizi utilizzando le regole del modulo adattivo](#invoke-services)
 
@@ -47,7 +47,7 @@ Puoi creare [Forms adattivo](creating-adaptive-form.md) e frammenti di modulo ad
 
    ![create-af-2-1](assets/create-af-2-1.png)
 
-1. (**Adaptive Form Fragments only**) You can create an Adaptive Form Fragment based on only one data model object in a form data model. Espandi **[!UICONTROL Definizioni dei modelli di dati del modulo]** a discesa. It lists all data model objects in the specified form data model. Selezionare un oggetto modello dati dall’elenco.
+1. (**Solo frammenti di modulo adattivi**) È possibile creare un frammento di modulo adattivo basato su un solo oggetto modello dati all’interno di un modello dati modulo. Espandi **[!UICONTROL Definizioni dei modelli di dati del modulo]** a discesa. Elenca tutti gli oggetti del modello dati nel modello dati del modulo specificato. Selezionare un oggetto modello dati dall’elenco.
 
    ![create-af-3](assets/create-af-3.png)
 
@@ -55,11 +55,11 @@ Puoi creare [Forms adattivo](creating-adaptive-form.md) e frammenti di modulo ad
 
    >[!NOTE]
    >
-   >For an Adaptive Form Fragment, only the data model object selected at the time of authoring and its associated data model objects appear in the Data Sources tab.
+   >Per un frammento di modulo adattivo, nella scheda Origini dati viene visualizzato solo l’oggetto modello dati selezionato al momento della creazione e gli oggetti modello dati associati.
 
    ![data-model-objects-tab](assets/data-model-objects-tab.png)
 
-   È possibile trascinare gli oggetti modello dati sul modulo adattivo o sul frammento per aggiungere campi modulo. I campi modulo aggiunti mantengono le proprietà dei metadati e il binding con le proprietà dell’oggetto modello dati. The binding ensures that the field values are updated in the corresponding data sources on form submission and prefilled when the form is rendered.
+   È possibile trascinare gli oggetti modello dati sul modulo adattivo o sul frammento per aggiungere campi modulo. I campi modulo aggiunti mantengono le proprietà dei metadati e il binding con le proprietà dell’oggetto modello dati. Il binding assicura che i valori dei campi vengano aggiornati nelle origini dati corrispondenti all’invio del modulo e precompilati al momento del rendering del modulo.
 
 <!-- ## Create interactive communications {#create-ic}
 
@@ -83,7 +83,7 @@ For more information, see:
 
 ## Anteprima con dati di esempio {#preview-ic}
 
-L’editor per modelli dati modulo consente di generare e modificare dati di esempio per gli oggetti modello dati nel modello dati del modulo. Puoi utilizzare questi dati per visualizzare in anteprima e verificare <!--interactive communications and--> Forms adattivo. You must generate the sample data before previewing as described in [Work with form data model](work-with-form-data-model.md#sample).
+L’editor per modelli dati modulo consente di generare e modificare dati di esempio per gli oggetti modello dati nel modello dati del modulo. Puoi utilizzare questi dati per visualizzare in anteprima e verificare <!--interactive communications and--> Forms adattivo. È necessario generare i dati di esempio prima di visualizzare l’anteprima come descritto in [Utilizzare il modello dati del modulo](work-with-form-data-model.md#sample).
 
 <!--To preview an interactive communication with sample Form Data Model data:
 
@@ -95,13 +95,13 @@ The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-To preview an Adaptive Form with sample data, open the Adaptive Form in author mode and tap **[!UICONTROL Preview]**.
+Per visualizzare in anteprima un modulo adattivo con dati di esempio, apri il modulo adattivo in modalità di creazione e tocca **[!UICONTROL Anteprima]**.
 
 ## Precompilazione tramite il servizio Form Data Model {#prefill}
 
 [!DNL Experience Manager Forms] fornisce il servizio di precompilazione del modello di dati del modulo pronto all’uso che è possibile abilitare per l’Adaptive Forms <!--and interactive communications--> basato sul modello dati del modulo. Il servizio di precompilazione richiede le origini dati per gli oggetti del modello dati nel modulo adattivo <!--and interactive communication--> esegue quindi la precompilazione dei dati durante il rendering del modulo o della comunicazione.
 
-To enable the Form Data Model Prefill Service for an Adaptive Form, open the Adaptive Form Container properties and select **[!UICONTROL Form Data Model Prefill service]** from the **[!UICONTROL Prefill Service]** drop-down in the Basic accordion. Quindi, salva le proprietà.
+Per abilitare il servizio di precompilazione del modello di dati del modulo per un modulo adattivo, apri le proprietà del contenitore del modulo adattivo e seleziona **[!UICONTROL Servizio di precompilazione modello dati modulo]** dal **[!UICONTROL Servizio di precompilazione]** a discesa nel pannello a soffietto Base. Quindi, salva le proprietà.
 
 ![servizio di precompilazione](assets/prefill-service.png)
 
@@ -113,11 +113,11 @@ Edit Properties dialog for an interactive communication-->
 
 ## Scrivere i dati del modulo adattivo inviati nelle origini dati {#write-af}
 
-When a user submits a form based on a form data model, you can configure the form to write submitted data for a data model object to its data sources. Per ottenere questo caso d&#39;uso, [!DNL Experience Manager Forms] fornire [Azione di invio del modello dati del modulo](configuring-submit-actions.md)disponibile solo per Adattivo Forms basato su un modello dati del modulo. Scrive i dati inviati per un oggetto modello dati nella relativa origine dati.
+Quando un utente invia un modulo basato su un modello di dati modulo, è possibile configurare il modulo in modo da scrivere i dati inviati per un oggetto modello dati nelle relative origini dati. Per ottenere questo caso d&#39;uso, [!DNL Experience Manager Forms] fornire [Azione di invio del modello dati del modulo](configuring-submit-actions.md)disponibile solo per Adattivo Forms basato su un modello dati del modulo. Scrive i dati inviati per un oggetto modello dati nella relativa origine dati.
 
-Per configurare l’azione di invio del modello dati modulo, apri le proprietà del contenitore del modulo adattivo e seleziona **[!UICONTROL Invia utilizzando il modello dati del modulo]** dal menu a discesa Invia azione sotto il pannello a soffietto Invio. Then, browse and select a data model object from the **[!UICONTROL Name of the data model object to submit]** drop-down. Salva le proprietà.
+Per configurare l’azione di invio del modello dati modulo, apri le proprietà del contenitore del modulo adattivo e seleziona **[!UICONTROL Invia utilizzando il modello dati del modulo]** dal menu a discesa Invia azione sotto il pannello a soffietto Invio. Quindi, sfoglia e seleziona un oggetto modello dati dal **[!UICONTROL Nome dell’oggetto modello dati da inviare]** a discesa. Salva le proprietà.
 
-On form submission, data for the configured data model object is written to the respective data source.
+All’invio del modulo, i dati per l’oggetto modello dati configurato vengono scritti nella rispettiva origine dati.
 
 <!--![data-submission](assets/data-submission.png)-->
 
@@ -126,15 +126,15 @@ On form submission, data for the configured data model object is written to the 
 1. Aggiungere un oggetto modello dati che include una proprietà binaria al modello dati del modulo.
 1. Nel modulo adattivo, trascina **[!UICONTROL File allegato]** dal browser Componenti nel modulo adattivo.
 1. Tocca per selezionare il componente aggiunto e tocca ![settings_icon](assets/configure-icon.svg) per aprire il browser Proprietà del componente.
-1. In the Bind Reference field, tap ![foldersearch_18](assets/folder-search-icon.svg) and navigate to select the binary property you added in the form data model. Configure other properties, as appropriate.
+1. Nel campo Riferimento binding , tocca ![cartella_18](assets/folder-search-icon.svg) e selezionare la proprietà binaria aggiunta nel modello dati del modulo. Configura altre proprietà, a seconda delle necessità.
 
    Tocca ![pulsante di controllo](assets/save_icon.svg) per salvare le proprietà. Il campo allegato è ora associato alla proprietà binaria del modello dati del modulo.
 
 1. Nella sezione Invio delle proprietà del contenitore di moduli adattivi, abilita **[!UICONTROL Invia allegati modulo]**. Invia l’allegato nel campo della proprietà binaria all’origine dati all’invio del modulo.
 
-## Invoke services in Adaptive Forms using rules {#invoke-services}
+## Richiamare i servizi in Adaptive Forms utilizzando le regole {#invoke-services}
 
-In un modulo adattivo basato su un modello di dati del modulo, è possibile [creare regole](rule-editor.md) per richiamare servizi configurati nel modello dati del modulo. La **[!UICONTROL Richiamare i servizi]** in una regola sono elencati tutti i servizi disponibili nel modello dati modulo e consentono di selezionare i campi di input e output per il servizio. You can also use the **[!UICONTROL Set Value]** rule type to invoke a Form Data Model service and set the value of a field to the output returned by the service.
+In un modulo adattivo basato su un modello di dati del modulo, è possibile [creare regole](rule-editor.md) per richiamare servizi configurati nel modello dati del modulo. La **[!UICONTROL Richiamare i servizi]** in una regola sono elencati tutti i servizi disponibili nel modello dati modulo e consentono di selezionare i campi di input e output per il servizio. È inoltre possibile utilizzare **[!UICONTROL Imposta valore]** tipo di regola per richiamare un servizio Form Data Model e impostare il valore di un campo sull&#39;output restituito dal servizio.
 
 Ad esempio, la regola seguente richiama un servizio get che utilizza l&#39;ID dipendente come input e i valori restituiti sono compilati nei corrispondenti campi ID dipendente, Cognome, Nome e Genere del modulo.
 

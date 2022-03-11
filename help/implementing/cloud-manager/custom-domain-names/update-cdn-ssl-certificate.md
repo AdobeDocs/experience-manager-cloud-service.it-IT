@@ -1,8 +1,8 @@
 ---
 title: 'Aggiornamento del certificato SSL del nome di dominio personalizzato '
 description: Aggiornamento del certificato SSL del nome di dominio personalizzato
-translation-type: tm+mt
-source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
+exl-id: 652f7568-dc6a-4ac6-b06f-4ea1540498fa
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
@@ -11,12 +11,12 @@ ht-degree: 0%
 
 # Aggiornamento del certificato SSL del nome di dominio personalizzato {#update-ssl-certificate-cdn}
 
-L’azione di aggiornamento può essere eseguita da due diverse aree dell’interfaccia utente:
+L’azione di aggiornamento può essere eseguita da due posizioni diverse nell’interfaccia utente:
 
-1. Passare alla pagina **Impostazioni dominio** dalla schermata Ambienti.
-1. In alternativa, passare alla pagina Dettagli ambiente specifica dalla schermata **Ambienti** e passare alla tabella Nomi dominio.
+1. Passa a **Impostazioni di dominio** dalla schermata Ambienti .
+1. In alternativa, passa alla pagina dei dettagli dell’ambiente specifica da **Ambienti** e passare alla tabella Nomi di dominio .
    >[!NOTE]
-   >Identificare la riga in cui è elencato il nome di dominio personalizzato che si desidera visualizzare o aggiornare.
-1. Selezionare la **...Menu** dall&#39;estremità destra della riga
-1. Selezionare l&#39;opzione **Visualizza e aggiorna**.
-1. Apportate le modifiche necessarie al certificato SSL e confermate l&#39;invio.
+   >Identifica la riga in cui è elencato il nome di dominio personalizzato che desideri visualizzare o aggiornare.
+1. Seleziona la **...** menu dall&#39;estremità destra della riga
+1. Seleziona la **Visualizza e aggiorna** opzione .
+1. Apporta le modifiche necessarie al certificato SSL e conferma l’invio.

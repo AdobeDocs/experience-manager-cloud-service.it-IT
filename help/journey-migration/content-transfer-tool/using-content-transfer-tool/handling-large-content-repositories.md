@@ -1,10 +1,11 @@
 ---
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione di archivi di contenuti di grandi dimensioni
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -67,13 +68,13 @@ Leggi questa sezione per scoprire come configurare per utilizzare AzCopy come pa
 
 #### Archivio dati archiviazione BLOB di Azure {#azure-blob-storage}
 
-Dalla pagina delle proprietà del contenitore nel portale di Azure, utilizza **Calcola dimensioni** per determinare le dimensioni di tutto il contenuto del contenitore. Esempio:
+Dalla pagina delle proprietà del contenitore nel portale di Azure, utilizza **Calcola dimensioni** per determinare le dimensioni di tutto il contenuto del contenitore. Ad esempio:
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Archivio dati Amazon S3 {#amazon-data}
 
-Puoi utilizzare la scheda Metriche del contenitore per determinare la dimensione di tutto il contenuto del contenitore. Esempio:
+Puoi utilizzare la scheda Metriche del contenitore per determinare la dimensione di tutto il contenuto del contenitore. Ad esempio:
 
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)

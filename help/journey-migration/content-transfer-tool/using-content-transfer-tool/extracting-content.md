@@ -1,13 +1,13 @@
 ---
 title: Estrazione del contenuto dall’origine
 description: Estrazione del contenuto dall’origine
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
-
 
 # Estrazione del contenuto dall’origine {#extracting-content}
 

@@ -5,7 +5,7 @@ exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 16%
+ht-degree: 21%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 16%
 
 ## Panoramica {#overview}
 
-Ti avvicini allo sviluppo di Adobe Experience Manager come Cloud Service? Hai bisogno di un aggiornamento sulle procedure più recenti? Questo è il posto dove cominciare!
+Novità nello sviluppo di Adobe Experience Manager as a Cloud Service? Hai bisogno di un aggiornamento sulle procedure più recenti? Questo è il posto dove cominciare!
 
 L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno sviluppatore che è nuovo di AEM come implementare un sito web in AEM utilizzando gli standard e le tecnologie più recenti. La speranza è alla fine di questo tutorial si comprenderà le basi di base della piattaforma AEM e la conoscenza di alcuni dei modelli di design comuni.
 
@@ -21,7 +21,7 @@ L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[Il tutorial per sviluppatori WKND è disponibile ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) qui e ti guida attraverso la creazione di un progetto AEM utilizzando le tecnologie e le best practice più recenti.
+[L’esercitazione per sviluppatori WKND è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it) e ti guida nella creazione di un progetto AEM utilizzando le tecnologie e le best practice più recenti.
 
 ## Concetti di base {#core-concepts}
 
@@ -31,5 +31,5 @@ L’implementazione delle esercitazioni sfrutta molte funzioni avanzate di AEM. 
 * [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
-* [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
+* [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it)
 * [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)

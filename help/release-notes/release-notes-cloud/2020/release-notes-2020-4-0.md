@@ -13,7 +13,7 @@ ht-degree: 94%
 
 Questa pagina illustra le note generali sulla versione per [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio per [!DNL Experience Manager] as a Cloud Service 2020.4.0 è il 9 aprile 2020.
 

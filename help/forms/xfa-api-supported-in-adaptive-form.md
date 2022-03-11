@@ -32,7 +32,7 @@ Questo articolo elenca gli eventi XFA supportati, le proprietà e le convalide o
 
 ## Elementi XFA supportati e loro mappatura in Forms adattivo {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
-### espandibili {#fields}
+### Campi {#fields}
 
 Quando si crea un modulo adattivo utilizzando un file XDP, è possibile trascinare un campo XFA nel modulo adattivo. La tabella seguente elenca il modo in cui i campi XFA vengono mappati ai campi Modulo adattivo.
 

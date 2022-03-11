@@ -7,7 +7,7 @@ exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
 workflow-type: tm+mt
 source-wordcount: '3234'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,7 @@ Quando crei un profilo immagine, puoi utilizzare la funzione **[!UICONTROL Masch
 
 >[!NOTE]
 >
->Maschera definizione dettagli viene applicata solo alle rappresentazioni ridimensionate all’interno del PTIFF (TIFF piramidale) che vengono sottoposte a sottocampionamento superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del font non sono influenzate da una maschera definizione dettagli. Le rappresentazioni di dimensioni più piccole, come le miniature, vengono invece modificate e mostrano la maschera di contrasto.
+>Maschera definizione dettagli viene applicata solo alle rappresentazioni ridimensionate all’interno del PTIFF (TIFF piramidale) che vengono sottoposte a sottocampionamento superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del font non sono influenzate da una maschera definizione dettagli. Le rappresentazioni di piccole dimensioni, come le miniature, vengono invece modificate e mostrano la maschera di contrasto.
 
 In **[!UICONTROL Maschera definizione dettagli]**, sono disponibili le seguenti opzioni di filtro:
 
@@ -229,7 +229,7 @@ Dopo aver modificato e salvato un ritaglio avanzato, la modifica viene propagata
 
 >[!IMPORTANT]
 >
->Quando riallineate o ridimensionate manualmente la finestra di ritaglio avanzato di più risorse, queste modifiche vengono mantenute e mantenute, anche se successivamente decidete di rielaborarle. Tuttavia, se modifichi la larghezza, l’altezza o entrambi nel **[!UICONTROL Ritaglio immagine reattivo]** nell’area del profilo immagine, le risorse vengono quindi rielaborate.
+>Se si riallinea o ridimensiona manualmente la finestra di ritaglio avanzato per più risorse, le modifiche vengono mantenute anche se successivamente si decide di rielaborare le risorse. Tuttavia, se si modificano la larghezza, l’altezza o entrambe nell’area **[!UICONTROL Ritaglio immagine reattivo]** del profilo immagine, le risorse verranno rielaborate.
 >Vedi [Rielaborazione delle risorse Dynamic Media in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Se necessario, potete eseguire di nuovo il ritaglio avanzato per generare di nuovo il raccolto aggiuntivo.

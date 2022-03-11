@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
 source-wordcount: '1352'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -59,12 +59,12 @@ AEM obiettivo principale dei Percorsi di documentazione è quello di aiutare i l
 
 Quindi, se sei nuovo di AEM e hai in mente un caso di business specifico e vuoi una panoramica di come AEM risolverlo, i Percorsi di documentazione sono dove vuoi iniziare.
 
-Tuttavia esistono molti tipi diversi di utenti AEM con esigenze e aspettative diverse. Esempio:
+Tuttavia esistono molti tipi diversi di utenti AEM con esigenze e aspettative diverse. Ad esempio:
 
 * Amministratori
 * Sviluppatori
 * Autori di contenuti
-* Specialisti di traduzione
+* Specialisti della traduzione
 * Architetti dei contenuti
 
 Ogni percorso inizia con una chiara dichiarazione del pubblico previsto per il percorso. Perché nessuno lavora nel vuoto, quando il lettore richiede l&#39;assistenza di un utente di sistema o di un utente utente tipo, questo è chiaramente spiegato all&#39;interno del percorso.
@@ -77,7 +77,7 @@ I Percorsi di documentazione sono intesi come complemento alla documentazione te
 |---|---|---|---|---|---|---|
 | Percorso di documentazione | Un percorso definisce come AEM risolvere un problema aziendale generale attraverso una narrazione che guida i lettori attraverso processi e funzionalità complesse e intercorrelate. Illustra come le diverse funzioni funzionano insieme per risolvere un&#39;esigenza aziendale in modo ottimale. | Reader nuovi a AEM | familiarità generale con CMS | Opzioni e configurazione dettagliate | Testo | Ca. 1 ora |
 | Documenti tecnici | I documenti tecnici si concentrano sulle singole funzioni, descrivendo in dettaglio il funzionamento tecnico della funzione e ogni opzione disponibile per l&#39;utente. | Utenti AEM esperti | esperienza AEM | Contesto e contesto | Testo | Varie |
-| Esercitazione | Un tutorial è un&#39;immersione approfondita in un argomento che mostra a uno sviluppatore o un amministratore come raggiungere un obiettivo tecnico (generalmente programmazione o configurazione del sistema) in modo dettagliato, fornendo esempi specifici e codice di esempio, solitamente sfruttando un set limitato di funzioni. | Sviluppatori o amministratori AEM | esperienza AEM | Contesto e teoria | Video | >1 ora |
+| Tutorial | Un tutorial è un&#39;immersione approfondita in un argomento che mostra a uno sviluppatore o un amministratore come raggiungere un obiettivo tecnico (generalmente programmazione o configurazione del sistema) in modo dettagliato, fornendo esempi specifici e codice di esempio, solitamente sfruttando un set limitato di funzioni. | Sviluppatori o amministratori AEM | esperienza AEM | Contesto e teoria | Video | >1 ora |
 | Guida introduttiva | Una guida introduttiva è una guida rapida e fulmine di una nuova funzione AEM specifica. Offre una panoramica rapida di una singola funzione e guida l’utente attraverso i passaggi importanti (ma non tutti) per configurare e utilizzare un caso d’uso semplice. | Amministratori AEM | esperienza AEM | Sfondo, teoria, opzioni dettagliate | Testo | &lt;1 ora |
 
 ## Che Percorsi Ci Sono? {#journeys}
@@ -87,12 +87,12 @@ Sono già disponibili diversi Percorsi di documentazione. Poiché ogni percorso 
 | Percorso | Descrizione |
 |---|---|
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Inizia qui per vedere come AEM supporta modelli di sviluppo headless e come iniziare a pianificare, implementare e seguire i processi di progettazione. |
-| [Percorso di authoring headless](/help/journey-headless/author/overview.md) | Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless. |
-| [Percorso architetto headless](/help/journey-headless/architect/overview.md) | Inizia qui per un’introduzione alle funzionalità avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e a come modellare i contenuti per il tuo progetto. |
+| [Percorso per authoring headless](/help/journey-headless/author/overview.md) | Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless. |
+| [Percorso per architetto headless](/help/journey-headless/architect/overview.md) | Inizia qui per un’introduzione alle funzionalità avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e a come modellare i contenuti per il tuo progetto. |
 | [Percorso di traduzione headless](/help/journey-headless/translation/overview.md) | Inizia qui per scoprire come impostare e gestire i tuoi progetti di traduzione headless in AEM. |
 | [percorso di onboarding AEM](/help/journey-onboarding/home.md) | Inizia qui per iniziare a lavorare rapidamente con il tuo nuovo ambiente as a Cloud Service AEM! |
-| [AEM Percorso di creazione di siti rapidi](/help/journey-sites/quick-site/overview.md) | Iniziate qui per un percorso guidato attraverso lo strumento di creazione AEM sito rapido semplice da utilizzare per semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza AEM conoscenza back-end. |
+| [Percorso di creazione di siti rapidi AEM](/help/journey-sites/quick-site/overview.md) | Iniziate qui per un percorso guidato attraverso lo strumento di creazione AEM sito rapido semplice da utilizzare per semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza AEM conoscenza back-end. |
 | percorso Commerce AEM | Presto! |
-| [AEM Percorso di migrazione as a Cloud Service](/help/journey-migration/getting-started.md) | Inizia qui per un percorso passo passo su come migrare dall&#39;installazione di AEM gestiti on-premise o Adobe all&#39;AEM completamente basata sul cloud as a Cloud Service e riceverai i suoi numerosi vantaggi. |
+| [Percorso di migrazione ad AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Inizia qui per un percorso passo passo su come migrare dall&#39;installazione di AEM gestiti on-premise o Adobe all&#39;AEM completamente basata sul cloud as a Cloud Service e riceverai i suoi numerosi vantaggi. |
 
 Controlla di nuovo se sono disponibili nuovi percorsi.

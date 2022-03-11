@@ -11,13 +11,13 @@ ht-degree: 4%
 
 # Introduzione a Cloud Manager {#intro-cloud-manager}
 
-Cloud Manager è un componente essenziale di AEM come Cloud Service e funge da punto di ingresso unico per il tuo team.
+Cloud Manager è un componente essenziale di AEM as a Cloud Service e funge da punto di ingresso unico per il tuo team.
 
 Per supportare i clienti con configurazioni di sviluppo aziendali, AEM as a Cloud Service si integra completamente con Cloud Manager e le sue pipeline CI/CD appositamente progettate, che sono dotate per garantire test approfonditi e la massima qualità del codice per fornire esperienze eccezionali.
 
-Per garantire che i clienti possano iniziare rapidamente con AEM come Cloud Service, Cloud Manager fornisce tutto il necessario per iniziare a utilizzare i servizi self-service, inclusa la possibilità di creare risorse e ambienti cloud. In questo modo, i tuoi sviluppatori AEM possono accedere all’archivio Git tramite Cloud Manager. Utilizzando Cloud Manager, i team di sviluppo possono lavorare spesso per eseguire modifiche in modo autonomo.
+Per garantire che i clienti possano iniziare rapidamente con AEM as a Cloud Service, Cloud Manager fornisce tutto il necessario per iniziare a utilizzare i servizi self-service, inclusa la possibilità di creare risorse e ambienti cloud. In questo modo, i tuoi sviluppatori AEM possono accedere all’archivio Git tramite Cloud Manager. Utilizzando Cloud Manager, i team di sviluppo possono lavorare spesso per eseguire modifiche in modo autonomo.
 
-L’amministratore di sistema sarà responsabile della configurazione del team Cloud Manager, che includerà singoli utenti che creeranno le risorse cloud e gli sviluppatori. Per informazioni sul supporto di Cloud Manager nell&#39;installazione di Enterprise Team Development, consulta [Configurazione di sviluppo team per AEM come Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md) .
+L’amministratore di sistema sarà responsabile della configurazione del team Cloud Manager, che includerà singoli utenti che creeranno le risorse cloud e gli sviluppatori. Fai riferimento a [Configurazione di Enterprise Team Development per AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md) per scoprire come Cloud Manager supporta l’installazione di Enterprise Team Development.
 
 ## Navigazione alla pagina Panoramica di Cloud Manager {#navigate-cloud-manager}
 
@@ -28,13 +28,13 @@ Segui i passaggi seguenti per passare a Cloud Manager:
    >[!NOTE]
    >Aggiungi un segnalibro a questa pagina per riferimenti futuri e per aiutarti a passare direttamente alla pagina di destinazione di Cloud Manager.
 
-1. Seleziona il programma dalla pagina **Programmi e prodotti di Cloud Manager** per avviare la pagina **Panoramica**.
+1. Seleziona il programma da Cloud Manager’s **Programmi e prodotti** per avviare **Panoramica** pagina.
 
 Inoltre, puoi passare alla pagina Programmi e prodotti di Cloud Manager dalla home page di Adobe Experience Cloud. Effettua le seguenti operazioni:
 
 1. Passa direttamente a [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) e accedi utilizzando il tuo Adobe ID.
 
-1. Selezionare **Experience Manager**.
+1. Seleziona **Experience Manager**.
 
 1. Fai clic su **Launch** dalla scheda Cloud Manager. Dopo aver effettuato l’accesso a Cloud Manager, puoi utilizzare l’interfaccia utente (UI).
 
@@ -64,13 +64,13 @@ Inoltre, puoi passare alla pagina Programmi e prodotti di Cloud Manager dalla ho
 
 I programmi Cloud Manager rappresentano set di ambienti Cloud Manager che supportano set logici di iniziative aziendali, in genere corrispondenti a un contratto a livello di servizio (SLA, Service Level Agreement) acquistato. Ad esempio, un programma può rappresentare le risorse AEM per supportare i siti Web pubblici globali, mentre un altro programma rappresenta una DAM centrale interna. Guarda questo [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) per ulteriori informazioni sull’utilizzo dei programmi Cloud Manager.
 
-Un utente può creare un programma **Sandbox** o **Produzione**.
+Un utente può creare un **Sandbox** o **Produzione** programma.
 
-* Viene creato un *programma di produzione* per abilitare il traffico live al momento appropriato in futuro.
-Per ulteriori informazioni, consulta [Introduzione ai programmi di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en) .
+* A *Programma di produzione* viene creato per abilitare il traffico live al momento opportuno in futuro.
+Fai riferimento a [Introduzione ai programmi di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en) per ulteriori dettagli.
 
-* Un *programma sandbox* viene generalmente creato per scopi di formazione, esecuzione di demo, abilitazione, POC o documentazione. Non è destinato a trasportare traffico live e avrà restrizioni che un programma di produzione non intende. Includerà Sites e Assets e verrà fornito automaticamente con un ramo Git che include codice di esempio, un ambiente di sviluppo e una pipeline non di produzione.
-Per ulteriori informazioni, consulta [Introduzione ai programmi sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en) .
+* A *Programma sandbox* viene generalmente creato per scopi di formazione, esecuzione di demo, abilitazione, POC o documentazione. Non è destinato a trasportare traffico live e avrà restrizioni che un programma di produzione non intende. Includerà Sites e Assets e verrà fornito automaticamente con un ramo Git che include codice di esempio, un ambiente di sviluppo e una pipeline non di produzione.
+Fai riferimento a [Introduzione ai programmi sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en) per ulteriori dettagli.
 
 ## Ambienti Cloud Manager {#cloud-manager-environments}
 
@@ -81,7 +81,7 @@ Gli ambienti cloud verranno creati, aperti e visualizzati tramite Cloud Manager.
 * [Servizi Dispatcher](#dispatcher-services)
 
    >[!NOTE]
-   > Per ulteriori informazioni sugli ambienti disponibili, consulta il video [Utilizzo di Adobe Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager) . Inoltre, consulta [Manage Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) per ulteriori informazioni sui tipi di ambiente che un utente può creare e su come l’utente può creare un ambiente.
+   > Fai riferimento al video [Utilizzo degli ambienti Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager) per ulteriori informazioni sugli ambienti disponibili. Inoltre, vedi [Gestire gli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) per ulteriori informazioni sui tipi di ambiente che un utente può creare e su come l’utente può creare un ambiente.
 
 ### AEM Author Service {#author-services}
 
@@ -93,4 +93,4 @@ AEM Publish Service è incluso in un ambiente che ospita l’esperienza dell’u
 
 ### Servizio Dispatcher AEM {#dispatcher-services}
 
-Dispatcher è un modulo `Apache HTTP Web server` che fornisce un livello di sicurezza e prestazioni che si trova davanti al servizio di pubblicazione AEM.
+Il Dispatcher è un `Apache HTTP Web server` modulo che fornisce un livello di sicurezza e prestazioni che si trova davanti al servizio di pubblicazione AEM.

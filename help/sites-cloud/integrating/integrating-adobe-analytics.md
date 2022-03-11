@@ -28,15 +28,15 @@ Rispetto alle versioni precedenti di AEM, il supporto del framework non viene fo
 
 1. Passa a **Strumenti** → **Cloud Services**.
 2. Seleziona **Adobe Analytics**.
-   ![Finestra ](assets/analytics_screen2.png "di Adobe AnalyticsAdobe Analytics")
-3. Selezionare il pulsante **Crea**.
+   ![Finestra Adobe Analytics](assets/analytics_screen2.png "Finestra Adobe Analytics")
+3. Seleziona la **Crea** pulsante .
 4. Compila i dettagli (vedi sotto) e fai clic su **Connetti**.
 
 ### Parametri di configurazione {#configuration-parameters}
 
 I campi di configurazione presenti nella finestra Configurazione Adobe Analytics sono:
 
-![Parametri ](assets/properties_field1.png "di configurazione")
+![Parametri di configurazione](assets/properties_field1.png "Parametri di configurazione")
 
 | Proprietà | Descrizione |
 |---|---|
@@ -44,20 +44,20 @@ I campi di configurazione presenti nella finestra Configurazione Adobe Analytics
 | Nome utente | Utente API di Adobe Analytics |
 | Password | Password Adobe Analytics utilizzata per l&#39;autenticazione |
 | Datacenter | Il data center Adobe Analytics a cui è associato il tuo account (server ad esempio San Jose, Londra) |
-| Segmento | Opzione per utilizzare un segmento di Analytics definito nella suite di rapporti corrente. I rapporti di Analytics verranno filtrati in base al segmento. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) . |
+| Segmento | Opzione per utilizzare un segmento di Analytics definito nella suite di rapporti corrente. I rapporti di Analytics verranno filtrati in base al segmento. Fai riferimento a [questa pagina](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) per ulteriori dettagli. |
 | Suite per report | Un archivio in cui puoi inviare dati e richiamare rapporti. Una suite di rapporti definisce il reporting indipendente e completo su un sito web scelto, su un insieme di siti web o su un sottoinsieme di pagine web. Puoi visualizzare i rapporti recuperati da una singola suite di rapporti e modificare questo campo in una configurazione in qualsiasi momento in base alle tue esigenze. |
 
 ### Aggiunta di una configurazione a un sito {#add-configuration}
 
-Per applicare una configurazione dell&#39;interfaccia utente touch a un sito, vai a: **Siti** → **Seleziona una pagina del sito** → **Proprietà** → **Avanzate** → **Configurazione** → seleziona il tenant di configurazione.
+Per applicare una configurazione dell&#39;interfaccia utente touch a un sito, vai a: **Sites** → **Seleziona una pagina del sito** → **Proprietà** → **Avanzate** → **Configurazione** → selezionare il tenant di configurazione.
 
 ## Integrazione di Adobe Analytics sui siti AEM utilizzando Adobe Launch {#analytics-launch}
 
 Adobe Analytics può essere aggiunto come estensione nella proprietà Launch. È possibile definire regole per eseguire la mappatura e effettuare una chiamata post ad Adobe Analytics:
 
-* Guarda [questo video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) per scoprire come configurare l&#39;estensione Analytics in Launch per un sito di base.
+* Guarda [questo video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) per scoprire come configurare l’estensione Analytics in Launch per un sito di base.
 
-* Per informazioni dettagliate su come creare regole e inviare dati ad Adobe Analytics, consulta [questa pagina](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) .
+* Vedi [questa pagina](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) per informazioni su come creare regole e inviare dati ad Adobe Analytics.
 
 >[!NOTE]
 >

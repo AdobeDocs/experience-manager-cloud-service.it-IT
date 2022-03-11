@@ -1,14 +1,13 @@
 ---
 title: Note sulla versione 2021.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2021.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: bef02a7e72d54b7c9eb5726bb046460c5902fb84
+exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
-
-
 
 # Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -16,11 +15,11 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 >[!NOTE]
 >
->Da qui puoi passare alle note sulla versione delle versioni precedenti; per esempio, per quelli del 2020, 2021 e così via.
+>Da qui puoi passare alle note sulla versione delle versioni precedenti; per esempio, quelle del 2020, 2021 e così via.
 
 >[!NOTE]
 >
->Vedi [Ultimi aggiornamenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) per informazioni dettagliate sugli aggiornamenti della documentazione non direttamente correlati a una versione.
+>Consulta [Ultimi aggiornamenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=it) per informazioni dettagliate sugli aggiornamenti della documentazione non direttamente correlati a una versione.
 
 ## Data di pubblicazione {#release-date}
 
@@ -63,7 +62,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
 
-### Novità di [!DNL Forms] {#what-is-new-forms-sep-2021}
+### Novità in [!DNL Forms] {#what-is-new-forms-sep-2021}
 
 * **Utilizzare i ruoli Adobe Sign in un modulo adattivo**: Adobe Sign per i livelli di servizio aziendali e aziendali ha la possibilità di espandere i ruoli per i destinatari del contratto, oltre al solo firmatario, in modo da soddisfare meglio i requisiti del flusso di lavoro. Ora puoi [abilitare ogni destinatario dell&#39;accordo a configurare il proprio ruolo in un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), con il ruolo predefinito Firma .
 
@@ -79,8 +78,8 @@ CQ-4328183 was not reported on CS so not documented here.
    * Abilita la funzionalità di salvataggio e ripresa di Forms Portal e archivia le bozze dei moduli adattivi in un archivio dati gestito dal cliente.
    * Archiviare i dati dei flussi di lavoro AEM in-process (AEM dati variabili di flusso di lavoro) contenenti dati personali sensibili (SPD) in un archivio gestito dal cliente.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che consentono di:
-   * Genera i documenti compilando i file modello con dati XML.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che permettono di:
+   * Generare i documenti compilando i file modello con dati XML.
    * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
    * Generare file PDF di stampa da un modulo XFA PDF e Adobe Acrobat Form.
 
@@ -185,7 +184,7 @@ La data di rilascio di Cloud Acceleration Manager è il 4 ottobre 2021.
 
 * Cloud Acceleration Manager offre agli utenti la possibilità di visualizzare i rapporti BPA in un&#39;anteprima stampabile, consentendo di stampare o stampare facilmente i rapporti in PDF per facilitarne la condivisione. Fai riferimento ai passaggi 6 e 7 in [Utilizzo della scheda di analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
-## Strumento Content Transfer (Trasferimento contenuti)  {#content-transfer-tool}
+## Strumento Trasferimento contenuti {#content-transfer-tool}
 
 ### Data di pubblicazione {#release-date-ctt-latest}
 

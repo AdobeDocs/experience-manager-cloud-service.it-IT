@@ -4,7 +4,7 @@ description: Comprendere l'architettura [!DNL AEM Forms] as a Cloud Service per 
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ Cloud Manager è un componente essenziale per [AEM as a Cloud Service](https://e
 
 AEM as a Cloud Service include il supporto Admin Console per le istanze AEM e l’autenticazione basata su Adobe Identity Management System (IMS). Admin Console consente agli amministratori di gestire tutti gli utenti di Experience Cloud da una posizione centralizzata. Gli utenti e i gruppi possono essere assegnati a profili di prodotto associati a istanze di AEM as a Cloud Service, per consentire loro di accedere a tale istanza. Per ulteriori informazioni sugli utenti, l&#39;autenticazione e l&#39;accesso a un&#39;istanza di AEM as a Cloud Service, vedi [Supporto IMS per [!DNL Adobe Experience Manager] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction).
 
-Vari utenti sono coinvolti in un [!DNL AEM Forms] progetto. Dopo l&#39;accesso al [!DNL AEM Forms] as a Cloud Service istanza, puoi [aggiungere utenti in admin console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html) per gli utenti tipo applicabili all’organizzazione o al progetto e [assegnare gli utenti a gruppi incorporati](forms-groups-privileges-tasks.md) per fornire loro i privilegi richiesti.
+Vari utenti sono coinvolti in un [!DNL AEM Forms] progetto. Dopo l&#39;accesso al [!DNL AEM Forms] as a Cloud Service istanza, puoi [aggiungere utenti in admin console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=it) per gli utenti tipo applicabili all’organizzazione o al progetto e [assegnare gli utenti a gruppi incorporati](forms-groups-privileges-tasks.md) per fornire loro i privilegi richiesti.
 
 Per apprendere varie [!DNL AEM Forms] specifici gruppi di utenti e privilegi disponibili su [!DNL AEM Forms] come istanza di Cloud Services, vedi [Configurazione, utente, ruoli e gruppi](forms-groups-privileges-tasks.md).
 
@@ -50,7 +50,8 @@ Inoltre, uno dei requisiti più comuni per gli sviluppatori è l’accesso rapid
 * Contenuto standard &quot;predefinito&quot; che fa parte del progetto del cliente (ad esempio cartelle, modelli, flussi di lavoro...)
 * Definizioni degli indici di ricerca
 * ACL e autorizzazioni
-* Utenti e gruppi di utenti del servizio Configurare l&#39;ambiente di sviluppo, [Configurare la pipeline CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html)e impara [distribuire il codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) sull&#39;ambiente.
+* Utenti e gruppi di utenti del servizio
+Imposta l&#39;ambiente di sviluppo, [Configurare la pipeline CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html)e impara [distribuire il codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) sull&#39;ambiente.
 
 ## Sviluppo locale {#local-development}
 

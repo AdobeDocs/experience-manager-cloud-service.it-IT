@@ -1,20 +1,20 @@
 ---
 title: Creazione di un ramo
-description: Questa pagina descrive come Cloud Service creare un ramo in Cloud Manager per Screens.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+description: Questa pagina descrive come creare un ramo in Cloud Manager per Screens as a Cloud Service.
+exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '206'
+ht-degree: 3%
 
 ---
-
 
 # Creazione di un ambiente in Cloud Manager {#create-environment-screens-cloud}
 
 Questa sezione descrive come creare un ambiente per il programma in Cloud Manager.
 
 >[!NOTE]
->Per informazioni su come l’utente può creare un ambiente, consulta [Gestione degli ambienti in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) .
+>Fai riferimento a [Gestione degli ambienti in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) per scoprire come l’utente può creare un ambiente.
 
 ## Obiettivo {#objective}
 
@@ -24,13 +24,13 @@ La sezione seguente descrive come creare un ambiente per il programma in Cloud M
 
 Una volta completata correttamente la creazione del progetto, nella pagina Panoramica di Cloud Manager verrà visualizzato l’aggiornamento della scheda da invito all’azione.
 
-1. Passa a Cloud Manager e seleziona l’icona per accedere alla pagina **Panoramica** di Cloud Manager.
+1. Passa a Cloud Manager e seleziona l’icona per accedere a Cloud Manager’s **Panoramica** pagina.
 
-1. Fai clic su **Aggiungi ambiente** dalla pagina **Panoramica** di Cloud Manager.
+1. Fai clic su **Aggiungi ambiente** da Cloud Manager **Panoramica** pagina.
 
    ![immagine](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. Seleziona i dettagli dell&#39;ambiente dalla finestra di dialogo **Aggiungi ambiente** e fai clic su **Salva**.
+1. Seleziona i dettagli dell’ambiente dal **Aggiungi ambiente** e fai clic su **Salva**.
 
    ![immagine](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
@@ -40,5 +40,4 @@ Una volta completata correttamente la creazione del progetto, nella pagina Panor
 
 ## Novità {#whats-next}
 
-Dopo aver appreso come impostare un ambiente per il programma in Cloud Manager, ora puoi passare al passaggio successivo nel processo di onboarding, ovvero [Esecuzione della pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
-
+Dopo aver appreso come impostare un ambiente per il programma in Cloud Manager, ora puoi passare al passaggio successivo nel processo di onboarding, ovvero: [Esecuzione della pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

@@ -5,11 +5,11 @@ exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Guida introduttiva a SPA in AEM utilizzando React {#getting-started-with-spas-in-aem-using-react}
+# Guida introduttiva a SPA in AEM con React {#getting-started-with-spas-in-aem-using-react}
 
 Le applicazioni a pagina singola (SPA) possono offrire esperienze coinvolgenti agli utenti di siti web. Gli sviluppatori desiderano poter creare siti utilizzando framework SPA e gli autori desiderano modificare i contenuti all’interno di AEM per un sito creato utilizzando framework SPA.
 
@@ -17,7 +17,7 @@ La funzione di authoring SPA offre una soluzione completa per supportare SPA all
 
 >[!NOTE]
 >
->Questo articolo si basa sul quadro di React. Per il documento corrispondente per il framework di Angular, consulta [Guida introduttiva alle SPA in AEM - Angular](getting-started-angular.md).
+>Questo articolo si basa sul quadro di React. Per il documento corrispondente per il framework di Angular vedi [Guida introduttiva a SPA in AEM - Angular](getting-started-angular.md).
 
 ## Introduzione {#introduction}
 
@@ -25,7 +25,7 @@ Questo articolo riassume il funzionamento di base di un SPA semplice e il minimo
 
 Per ulteriori dettagli sul funzionamento SPA in AEM, consulta i seguenti documenti:
 
-* [Introduzione SPA e Procedura dettagliata](introduction.md)
+* [Introduzione a SPA e procedura dettagliata](introduction.md)
 * [Panoramica dell’editor di SPA](editor-overview.md)
 * [Blueprint SPA](blueprint.md)
 
@@ -37,13 +37,13 @@ Per ulteriori dettagli sul funzionamento SPA in AEM, consulta i seguenti documen
 
 Questo documento illustra la struttura di un SPA semplificato creato utilizzando il framework React e illustra come funziona in modo da poter applicare questa comprensione al proprio SPA.
 
-## Dipendenze, configurazione e creazione di {#dependencies-configuration-and-building}
+## Dipendenze, configurazione e creazione {#dependencies-configuration-and-building}
 
 Oltre alla dipendenza React prevista, l’SPA di esempio può sfruttare librerie aggiuntive per rendere più efficiente la creazione dell’SPA.
 
 ### Dipendenze {#dependencies}
 
-Il file `package.json` definisce i requisiti del pacchetto SPA complessivo. Le dipendenze minime AEM per un SPA di lavoro sono elencate qui.
+La `package.json` Il file definisce i requisiti del pacchetto SPA globale. Le dipendenze minime AEM per un SPA di lavoro sono elencate qui.
 
 ```
   "dependencies": {
@@ -53,20 +53,20 @@ Il file `package.json` definisce i requisiti del pacchetto SPA complessivo. Le d
   }
 ```
 
-Poiché questo esempio è basato sul framework React, nel file `package.json` sono presenti due dipendenze specifiche React obbligatorie:
+Poiché questo esempio si basa sul quadro React, esistono due dipendenze specifiche React che sono obbligatorie nel `package.json` file:
 
 ```
  react
  react-dom
 ```
 
-Viene utilizzato `aem-clientlib-generator` per rendere automatica la creazione delle librerie client come parte del processo di compilazione.
+La `aem-clientlib-generator` viene sfruttato per rendere automatica la creazione di librerie client come parte del processo di compilazione.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Ulteriori dettagli sono disponibili [su GitHub qui](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+Maggiori dettagli sono disponibili [su GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
-Il `aem-clientlib-generator` è configurato nel file `clientlib.config.js` come segue.
+La `aem-clientlib-generator` è configurato in `clientlib.config.js` file come segue.
 
 ```
 module.exports = {
@@ -97,15 +97,15 @@ module.exports = {
 
 ### Creazione di {#building}
 
-La creazione dell&#39;app sfrutta [Webpack](https://webpack.js.org/) per la traslazione oltre al generatore aem-clientlib-per la creazione automatica della libreria client. Pertanto, il comando di compilazione sarà simile a:
+In realtà, la creazione di app sfrutta [Webpack](https://webpack.js.org/) per la trasformazione in aggiunta al generatore aem-clientlib-per la creazione automatica della libreria client. Pertanto, il comando di compilazione sarà simile a:
 
 `"build": "webpack && clientlib --verbose"`
 
 Una volta generato, il pacchetto può essere caricato in un&#39;istanza AEM.
 
-### AEM Project Archetype {#aem-project-archetype}
+### Archetipo progetto AEM {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve sfruttare il [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), che supporta SPA progetti utilizzando React o Angular e sfrutta l&#39;SDK SPA.
+Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
 ## Struttura dell&#39;applicazione {#application-structure}
 
@@ -117,7 +117,7 @@ Un componente immagine semplificato viene utilizzato come esempio, ma tutti i co
 
 ### index.js {#index-js}
 
-Il punto di ingresso nel SPA è ovviamente il file `index.js` mostrato qui semplificato per concentrarsi sul contenuto importante.
+Il punto di ingresso nel SPA è ovviamente il `index.js` il file mostrato qui è stato semplificato per concentrarsi sul contenuto importante.
 
 ```
 import ReactDOM from 'react-dom';
@@ -134,7 +134,7 @@ ReactDOM.render(
 });
 ```
 
-La funzione principale di `index.js` consiste nell&#39;utilizzare la funzione `ReactDOM.render` per determinare dove nel DOM inserire l&#39;applicazione.
+La funzione principale di `index.js` utilizza `ReactDOM.render` per determinare dove nel DOM inserire l&#39;applicazione.
 
 Si tratta di un utilizzo standard di questa funzione, non univoco per questa app di esempio.
 
@@ -144,7 +144,7 @@ Quando il componente viene istanziato staticamente utilizzando il modello di com
 
 ### App.js {#app-js}
 
-Eseguendo il rendering dell’app, `index.js` chiama `App.js` , che viene mostrato qui in una versione semplificata per concentrarsi sul contenuto importante.
+Rendering dell’app `index.js` chiama `App.js`, che viene qui mostrato in una versione semplificata per concentrarsi sul contenuto importante.
 
 ```
 import {Page, withModel } from '@adobe/aem-react-editable-components';
@@ -162,7 +162,7 @@ export default withModel(App);
 
 ### Page.js {#page-js}
 
-Effettuando il rendering della pagina, `App.js` effettua le chiamate `Page.js` elencate qui in una versione semplificata.
+Rendering della pagina `App.js` chiama `Page.js` elencati in una versione semplificata.
 
 ```
 import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
@@ -176,13 +176,13 @@ class AppPage extends Page {
 MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppPage));
 ```
 
-In questo esempio la classe `AppPage` estende `Page`, che contiene i metodi di contenuto interno che possono quindi essere utilizzati.
+In questo esempio `AppPage` Estensioni di classe `Page`, che contiene i metodi di contenuto interno che possono essere utilizzati.
 
-Il `Page` acquisisce la rappresentazione JSON del modello di pagina ed elabora il contenuto per racchiudere/decorare ogni elemento della pagina. Ulteriori dettagli sul `Page` sono disponibili nel documento [SPA Blueprint.](blueprint.md)
+La `Page` acquisisce la rappresentazione JSON del modello di pagina ed elabora il contenuto per racchiudere/decorare ogni elemento della pagina. Maggiori dettagli `Page` disponibile nel documento [Blueprint SPA.](blueprint.md)
 
 ### Image.js {#image-js}
 
-Con il rendering della pagina, è possibile eseguire il rendering dei componenti come `Image.js` come mostrato qui.
+Con il rendering della pagina, i componenti come `Image.js` come mostrato qui, è possibile renderizzarlo.
 
 ```
 import React, {Component} from 'react';
@@ -209,11 +209,11 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-L’idea centrale di SPA in AEM è quella di mappare SPA componenti ai componenti AEM e aggiornare il componente quando il contenuto viene modificato (e viceversa). Per un riepilogo di questo modello di comunicazione, consulta il documento [SPA Panoramica editor](editor-overview.md) .
+L’idea centrale di SPA in AEM è quella di mappare SPA componenti ai componenti AEM e aggiornare il componente quando il contenuto viene modificato (e viceversa). Vedere il documento [Panoramica dell’editor di SPA](editor-overview.md) per una sintesi di questo modello di comunicazione.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
-Il metodo `MapTo` mappa il componente SPA al componente AEM. Supporta l&#39;uso di una singola stringa o di una matrice di stringhe.
+La `MapTo` mappa il componente SPA al componente AEM. Supporta l&#39;uso di una singola stringa o di una matrice di stringhe.
 
 `ImageEditConfig` è un oggetto di configurazione che contribuisce ad abilitare le funzionalità di authoring di un componente fornendo i metadati necessari affinché l’editor generi segnaposti
 
@@ -242,28 +242,28 @@ class PageClass extends Component {...};
 export default MapTo('my-react-app/react/components/structure/page')(PageClass, EditConfig);
 ```
 
-La funzione `MapTo` restituisce un `Component` che è il risultato di una composizione che estende il `PageClass` fornito con i nomi e gli attributi della classe che abilitano l&#39;authoring. Questo componente può essere esportato in un secondo momento per essere istanziato nel markup dell’applicazione.
+La `MapTo` restituisce un `Component` che è il risultato di una composizione che estende il `PageClass` con i nomi e gli attributi della classe che abilitano l&#39;authoring. Questo componente può essere esportato in un secondo momento per essere istanziato nel markup dell’applicazione.
 
-Quando viene esportato utilizzando le funzioni `MapTo` o `withModel` , il componente `Page` viene racchiuso con un componente `ModelProvider` che fornisce ai componenti standard l’accesso alla versione più recente del modello di pagina o a una posizione precisa in tale modello di pagina.
+Quando viene esportato utilizzando la variabile `MapTo` o `withModel` le funzioni `Page` è racchiuso in un `ModelProvider` che fornisce ai componenti standard l’accesso alla versione più recente del modello di pagina o a una posizione precisa nel modello di pagina.
 
-Per ulteriori informazioni, consulta il documento [SPA Blueprint](blueprint.md).
+Per ulteriori informazioni, consulta la sezione [Documento Blueprint SPA](blueprint.md).
 
 >[!NOTE]
 >
->Per impostazione predefinita si riceve l’intero modello del componente quando si utilizza la funzione `withModel` .
+>Per impostazione predefinita viene visualizzato l’intero modello del componente quando si utilizza il `withModel` funzione .
 
-## Condivisione di informazioni tra i componenti SPA {#sharing-information-between-spa-components}
+## Condivisione Di Informazioni Tra I Componenti SPA {#sharing-information-between-spa-components}
 
 È regolarmente necessario che i componenti all’interno di un’applicazione a pagina singola condividano informazioni. Ci sono diversi modi raccomandati per farlo, elencati come segue in ordine crescente di complessità.
 
-* **Opzione 1:** centralizzare la logica e la trasmissione ai componenti necessari, ad esempio utilizzando il contesto React.
-* **Opzione 2:** condividere gli stati dei componenti utilizzando una libreria di stati come Redux.
-* **Opzione 3:** sfrutta la gerarchia degli oggetti personalizzando ed estendendo il componente contenitore.
+* **Opzione 1:** Centralizza la logica e la trasmissione ai componenti necessari, ad esempio utilizzando il contesto di reazione.
+* **Opzione 2:** Condividere gli stati dei componenti utilizzando una libreria di stati come Redux.
+* **Opzione 3:** Sfrutta la gerarchia degli oggetti personalizzando ed estendendo il componente contenitore .
 
 ## Passaggi successivi {#next-steps}
 
-* [La Guida introduttiva a SPA in AEM utilizzo di ](getting-started-angular.md) Angularmostra come viene creato un SPA di base per lavorare con l’Editor SPA in AEM utilizzando l’Angular.
-* [SPA Editor ](editor-overview.md) Overview approfondisce il modello di comunicazione tra AEM e SPA.
-* [WKND SPA ](wknd-tutorial.md) Projects un tutorial passo passo che implementa un semplice progetto SPA in AEM.
-* [Mappatura da modello dinamico a componente per ](model-to-component-mapping.md) applicazioni a pagina singola spiega il modello dinamico alla mappatura dei componenti e come funziona all’interno di SPA in AEM.
-* [SPA ](blueprint.md) Blueprintoffre un&#39;analisi approfondita del funzionamento dell&#39;SDK SPA per AEM nel caso in cui desideri implementare SPA in AEM per un framework diverso da React o Angular o desideri semplicemente una comprensione più approfondita.
+* [Guida introduttiva a SPA in AEM con Angular](getting-started-angular.md) mostra come viene creata una SPA di base per lavorare con l’editor di SPA in AEM utilizzando Angular.
+* [Panoramica dell’editor di SPA](editor-overview.md) approfondisce il modello di comunicazione tra AEM e SPA.
+* [Progetto SPA WKND](wknd-tutorial.md) è un tutorial dettagliato che implementa un semplice progetto SPA in AEM.
+* [Mappatura dinamica da modello a componente per SPA](model-to-component-mapping.md) spiega il modello dinamico alla mappatura dei componenti e come funziona all’interno di SPA in AEM.
+* [Blueprint SPA](blueprint.md) offre informazioni approfondite sul funzionamento dell’SDK SPA per AEM nel caso in cui desideri implementare SPA in AEM per un framework diverso da React o Angular o desideri semplicemente una comprensione più approfondita.

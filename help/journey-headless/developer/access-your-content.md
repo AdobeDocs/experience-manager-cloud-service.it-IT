@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '1353'
-ht-degree: 1%
+ht-degree: 8%
 
 ---
 
@@ -257,7 +257,7 @@ Per utilizzare effettivamente l’API GraphQL AEM in una query, possiamo utilizz
    * Nome - Testo
    * Amministratore delegato (Persona) - Riferimento al frammento
    * Dipendenti (persone) - Riferimento/i frammento/i
-* Person
+* Persona
    * Nome - Testo
    * Nome - Testo
 
@@ -274,7 +274,7 @@ Le query possono essere immesse nell’interfaccia GraphiQL, ad esempio in:
 
 * `http://localhost:4502/content/graphiql.html`
 
-![Interfaccia GraphiQL](assets/graphiql-interface.png "Interfaccia GraphiQL")
+![Interfaccia di GraphiQL](assets/graphiql-interface.png "Interfaccia di GraphiQL")
 
 ### Guida introduttiva alle query {#getting-Started-with-queries}
 
@@ -350,7 +350,7 @@ Per informazioni dettagliate sull’utilizzo dell’API GraphQL AEM e sulla conf
 
 * Imparare a utilizzare GraphQL con AEM
 * Struttura dei frammenti di contenuto di esempio
-* Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query
+* Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query
 
 ## Novità {#whats-next}
 
@@ -367,14 +367,14 @@ Ora che hai imparato ad accedere ai contenuti headless e ad eseguire query trami
    * [Abilitazione dell’endpoint GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
    * [Installazione dell&#39;interfaccia AEM GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
 * [Struttura dei frammenti di contenuto di esempio](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query](/help/headless/graphql-api/sample-queries.md)
-   * [Query Di Esempio - Un Singolo Frammento Di Città Specifico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
-   * [Esempio di query per metadati - Elenco dei metadati per i riconoscimenti denominati GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
-   * [Query di esempio - Tutte le città con una variante denominata](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+* [Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query](/help/headless/graphql-api/sample-queries.md)
+   * [Query di esempio: un singolo frammento di città specifico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+   * [Esempio di query per metadati: elenco dei metadati per i riconoscimenti denominati GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+   * [Query di esempio: tutte le città con una variante denominata](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [Abilitare la funzionalità dei frammenti di contenuto nel browser di configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
    * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
    * [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Comprendere la condivisione delle risorse tra le origini (CORS, Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [Generazione dei token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-* [Guida introduttiva di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Una breve serie di esercitazioni video che offre una panoramica dell’utilizzo delle funzioni senza testa AEM, inclusa la modellazione dei contenuti e GraphQL.
+* [Guida introduttiva di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) - Una breve serie di esercitazioni video che offre una panoramica dell’utilizzo delle funzioni senza testa AEM, inclusa la modellazione dei contenuti e GraphQL.

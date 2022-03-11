@@ -306,7 +306,7 @@ Le annotazioni (per i frammenti di contenuto) sono:
 >
 
 
-Esempio:
+Ad esempio:
 
 ![timeline](assets/cfm-managing-05.png)
 

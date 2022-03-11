@@ -2,13 +2,13 @@
 title: Configurazione di Cross-Origin Resource Sharing (CORS) con AEM Headless
 description: La condivisione CORS (Cross-Origin Resource Sharing) di Adobe Experience Manager consente alle applicazioni web headless di effettuare chiamate lato client a AEM. È necessaria una configurazione CORS per abilitare l’accesso all’endpoint GraphQL.
 feature: GraphQL API
-source-git-commit: 0cc131209f497241949f8da6e8144dfcaffe7e6e
-workflow-type: ht
+exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 100%
 
 ---
-
 
 # Configurazione di Cross-Origin Resource Sharing (CORS)
 
@@ -58,5 +58,3 @@ Ad esempio, per consentire l’accesso all’endpoint GraphQL `/content/cq:graph
 ```
 
 Se hai configurato un percorso personalizzato per l’endpoint, puoi utilizzarlo in `allowedpaths`.
-
-

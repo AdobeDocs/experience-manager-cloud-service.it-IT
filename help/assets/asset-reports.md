@@ -1,28 +1,28 @@
 ---
 title: Rapporti su utilizzo e condivisione
-description: Rapporti sulle risorse in [!DNL Adobe Experience Manager Assets] per comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
+description: Rapporti sulle risorse in [!DNL Adobe Experience Manager Assets] che consentono di comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
-feature: Rapporti sulle risorse,Gestione delle risorse
+feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '868'
 ht-degree: 8%
 
 ---
 
 # Rapporti sulle risorse {#asset-reports}
 
-Il reporting delle risorse consente di valutare l’utilità della distribuzione [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets] puoi generare vari rapporti per le risorse digitali. I rapporti forniscono informazioni utili sull’utilizzo del sistema, sul modo in cui gli utenti interagiscono con le risorse e sulle risorse <!-- downloaded and --> condivise.
+Il reporting delle risorse consente di valutare l’utilità del [!DNL Adobe Experience Manager Assets] distribuzione. Con [!DNL Assets], puoi generare vari rapporti per le risorse digitali. I rapporti forniscono informazioni utili sull’utilizzo del sistema, su come gli utenti interagiscono con le risorse e quali sono le risorse <!-- downloaded and --> condiviso.
 
-Utilizza le informazioni contenute nei rapporti per derivare le metriche di successo chiave per misurare l’adozione di [!DNL Assets] all’interno dell’azienda e da parte dei clienti.
+Utilizza le informazioni contenute nei rapporti per derivare le metriche di successo chiave per misurare l’adozione di [!DNL Assets] all’interno dell’azienda e dai clienti.
 
-Il framework di reporting [!DNL Assets] utilizza [!DNL Sling] processi per elaborare in modo asincrono le richieste di report in modo ordinato. È scalabile per archivi di grandi dimensioni. L’elaborazione asincrona dei rapporti aumenta l’efficienza e la velocità con cui vengono generati i rapporti.
+La [!DNL Assets] utilizzo del framework di reporting [!DNL Sling] processi per elaborare in modo asincrono le richieste di rapporti in modo ordinato. È scalabile per archivi di grandi dimensioni. L’elaborazione asincrona dei rapporti aumenta l’efficienza e la velocità con cui vengono generati i rapporti.
 
 L’interfaccia di gestione dei rapporti è intuitiva e include opzioni e controlli a grana fine per accedere ai rapporti archiviati e visualizzare gli stati di esecuzione dei rapporti (con esito positivo, non riuscito e in coda).
 
-Quando viene generato un rapporto, riceverai una notifica tramite <!-- through an email (optional) and --> una notifica nella casella in entrata. Puoi visualizzare, scaricare o eliminare un rapporto dalla pagina di elenco dei rapporti, in cui vengono visualizzati tutti i rapporti generati in precedenza.
+Quando viene generato un rapporto, viene inviata una notifica tramite <!-- through an email (optional) and --> una notifica casella in entrata. Puoi visualizzare, scaricare o eliminare un rapporto dalla pagina di elenco dei rapporti, in cui vengono visualizzati tutti i rapporti generati in precedenza.
 
 ## Genera report {#generate-reports}
 
@@ -51,12 +51,12 @@ Quando viene generato un rapporto, riceverai una notifica tramite <!-- through a
 
 [!DNL Adobe Experience Manager] gli amministratori possono generare e personalizzare facilmente questi rapporti per la tua implementazione. Un amministratore può seguire questi passaggi per generare un rapporto:
 
-1. Nell&#39;interfaccia [!DNL Experience Manager] fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
+1. In [!DNL Experience Manager] interfaccia, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
 
    ![Pagina degli strumenti per navigare nel rapporto delle risorse](assets/navigation.png)
 
-1. Nella pagina [!UICONTROL Rapporti su risorse], fai clic su **[!UICONTROL Crea]** nella barra degli strumenti.
-1. Dalla pagina **[!UICONTROL Crea rapporto]**, scegli il rapporto che desideri creare e fai clic su **[!UICONTROL Avanti]**.
+1. Sulla [!UICONTROL Rapporti sulle risorse] pagina, fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
+1. Da **[!UICONTROL Creare un rapporto]** scegliere il rapporto da creare e fare clic su **[!UICONTROL Successivo]**.
 
    ![Seleziona tipo di rapporto](assets/choose_report.png)
 
@@ -70,7 +70,7 @@ Quando viene generato un rapporto, riceverai una notifica tramite <!-- through a
    >
    >Se scegli di pianificare il rapporto in un secondo momento, accertati di specificare la data e l’ora nei campi Data e ora. Se non si specifica alcun valore, il motore di report lo considera come un report da generare immediatamente.
 
-   I campi di configurazione possono variare a seconda del tipo di rapporto creato. Ad esempio, il rapporto **[!UICONTROL Utilizzo del disco]** fornisce opzioni per includere le rappresentazioni delle risorse nel calcolo dello spazio su disco utilizzato dalle risorse. È possibile scegliere di includere o escludere le risorse nelle sottocartelle per il calcolo dell’utilizzo del disco.
+   I campi di configurazione possono variare a seconda del tipo di rapporto creato. Ad esempio, il **[!UICONTROL Utilizzo del disco]** Il rapporto fornisce opzioni per includere rappresentazioni delle risorse nel calcolo dello spazio su disco utilizzato dalle risorse. È possibile scegliere di includere o escludere le risorse nelle sottocartelle per il calcolo dell’utilizzo del disco.
 
    >[!NOTE]
    >
@@ -78,28 +78,28 @@ Quando viene generato un rapporto, riceverai una notifica tramite <!-- through a
 
    ![Pagina dei dettagli del rapporto Utilizzo disco](assets/disk_usage_configuration.png)
 
-   Quando crei il rapporto **[!UICONTROL File]**, puoi includere o escludere le sottocartelle. Tuttavia, non puoi includere rappresentazioni di risorse per questo rapporto.
+   Quando crei la **[!UICONTROL File]** puoi includere o escludere le sottocartelle. Tuttavia, non puoi includere rappresentazioni di risorse per questo rapporto.
 
    ![Pagina dei dettagli del rapporto File](assets/files_report.png)
 
    Il rapporto **[!UICONTROL Condivisione collegamenti]** visualizza gli URL delle risorse condivise con utenti esterni da [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Le colonne non sono personalizzabili.
 
-   Il rapporto **[!UICONTROL Condivisione collegamenti]** non include opzioni per le sottocartelle e i rendering, in quanto pubblica semplicemente gli URL condivisi visualizzati in `/var/dam/share`.
+   La **[!UICONTROL Condivisione collegamenti]** report, non include opzioni per sottocartelle e rendering perché pubblica solo gli URL condivisi visualizzati in `/var/dam/share`.
 
    ![Pagina dei dettagli del rapporto Condivisione collegamenti](assets/link_share.png)
 
-1. Fare clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
+1. Fai clic su **[!UICONTROL Successivo]** dalla barra degli strumenti.
 
-1. Nella pagina **[!UICONTROL Configura colonne]**, alcune colonne sono selezionate per essere visualizzate nel rapporto per impostazione predefinita. Puoi selezionare più colonne. Annulla la selezione di una colonna per escluderla nel rapporto.
+1. In **[!UICONTROL Configura colonne]** Per impostazione predefinita, alcune colonne sono selezionate per essere visualizzate nel rapporto. Puoi selezionare più colonne. Annulla la selezione di una colonna per escluderla nel rapporto.
 
    ![Selezionare o annullare la selezione delle colonne del rapporto](assets/configure_columns.png)
 
-   Per visualizzare un nome di colonna personalizzato o un percorso di proprietà, configura le proprietà per il binario di risorsa sotto il nodo `jcr:content` in CRX. In alternativa, aggiungilo tramite il selettore del percorso della proprietà.
+   Per visualizzare un nome di colonna o un percorso di proprietà personalizzato, configura le proprietà per il binario della risorsa in `jcr:content` in CRX. In alternativa, aggiungilo tramite il selettore del percorso della proprietà.
 
    ![Selezionare o annullare la selezione delle colonne del rapporto](assets/custom_columns.png)
 
-1. Fai clic su **[!UICONTROL Crea]** nella barra degli strumenti. Un messaggio notifica l’avvio della generazione del rapporto.
-1. Nella pagina [!UICONTROL Rapporti su risorse], lo stato di generazione del rapporto si basa sullo stato corrente del processo di rapporto, ad esempio [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued] o [!UICONTROL Scheduled]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del rapporto, fare clic sul collegamento del rapporto. In alternativa, seleziona il rapporto e fai clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
+1. Fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica l’avvio della generazione del rapporto.
+1. Sulla [!UICONTROL Rapporti sulle risorse] lo stato di generazione del rapporto si basa, ad esempio, sullo stato corrente del processo di rapporto [!UICONTROL Completato], [!UICONTROL Non riuscito], [!UICONTROL In coda]oppure [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del rapporto, fare clic sul collegamento del rapporto. In alternativa, seleziona il rapporto e fai clic su **[!UICONTROL Visualizza]** dalla barra degli strumenti.
 
    ![Un rapporto generato](assets/report_page.png)
 
@@ -129,23 +129,23 @@ Puoi aggiungere colonne personalizzate ai seguenti rapporti per visualizzare pi�
 Per aggiungere colonne personalizzate a questi rapporti, effettua le seguenti operazioni:
 
 1. In [!DNL Manager interface], fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
-1. Nella pagina [!UICONTROL Rapporti su risorse], fai clic su **[!UICONTROL Crea]** nella barra degli strumenti.
+1. Sulla [!UICONTROL Rapporti sulle risorse] pagina, fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
 
-1. Dalla pagina **[!UICONTROL Crea rapporto]**, scegli un rapporto da creare. Fai clic su **[!UICONTROL Avanti]**.
+1. Da **[!UICONTROL Creare un rapporto]** , scegli un rapporto da creare. Fai clic su **[!UICONTROL Avanti]**.
 
 1. Configura i dettagli del rapporto come titolo, descrizione, miniatura, percorso della cartella e intervallo di date, a seconda delle necessità. Fai clic su **[!UICONTROL Avanti]**.
 
-1. Selezionare le informazioni applicabili dall&#39;elenco **[!UICONTROL Colonne predefinite]**. Per visualizzare una colonna personalizzata, specificane il nome **[!UICONTROL Colonne personalizzate]**.
+1. Selezionare le informazioni applicabili dall&#39;elenco di **[!UICONTROL Colonne predefinite]**. Per visualizzare una colonna personalizzata, specificane il nome **[!UICONTROL Colonne personalizzate]**.
 
    ![Specifica il nome della colonna del report personalizzata](assets/custom_columns-1.png)
 
-1. Aggiungi il percorso della proprietà sotto il nodo `jcr:content` in CRXDE utilizzando il selettore del percorso della proprietà. In alternativa, digitare il percorso nel campo percorso della proprietà.
+1. Aggiungi il percorso della proprietà sotto il `jcr:content` in CRXDE utilizzando il selettore del percorso della proprietà. In alternativa, digitare il percorso nel campo percorso della proprietà.
 
    ![Mappa il percorso della proprietà dai percorsi in jcr:content](assets/property_picker.png)
 
    Per aggiungere altre colonne personalizzate, fai clic su **[!UICONTROL Aggiungi]** e ripeti i passaggi precedenti.
 
-1. Fai clic su **[!UICONTROL Crea]** nella barra degli strumenti. Un messaggio notifica l’avvio della generazione del rapporto.
+1. Fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica l’avvio della generazione del rapporto.
 
 <!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
@@ -161,7 +161,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## Informazioni sulla risoluzione dei problemi {#tips-troubleshoot}
 
-* Se il [!UICONTROL Rapporto sull&#39;utilizzo del disco] non viene generato e se utilizzi [!DNL Dynamic Media], assicurati che tutte le risorse procedano correttamente. Per risolvere il problema, rielabora le risorse e genera di nuovo il rapporto.
+* Se la [!UICONTROL Report sull&#39;utilizzo del disco] non genera e se utilizzi [!DNL Dynamic Media], assicurati che tutte le risorse procedano correttamente. Per risolvere il problema, rielabora le risorse e genera di nuovo il rapporto.
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 

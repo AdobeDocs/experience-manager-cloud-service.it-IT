@@ -1,27 +1,26 @@
 ---
-title: Provisioning degli ambienti - Elementi richiesti
-description: Provisioning degli ambienti - Elementi richiesti
-translation-type: tm+mt
+title: Provisioning degli ambienti - Requisiti
+description: Provisioning degli ambienti - Requisiti
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Ambienti con provisioning {#environments-provisioning}
 
-## Provisioning di {#provisioning}
+## Provisioning {#provisioning}
 
-Tutti gli ambienti cloud AEM acquistati da un cliente verranno automaticamente forniti  Adobe e collegati al loro programma in Cloud Manager. Questi ambienti AEM cloud sono inclusi in ogni iscrizione Adobe Managed Services e sono in genere composti da almeno un ambiente di produzione, un ambiente di fase e facoltativamente uno o più ambienti di sviluppo o di test.
+Tutti gli ambienti cloud AEM acquistati da un cliente verranno automaticamente forniti per Adobe e collegati al loro programma in Cloud Manager. Questi ambienti cloud AEM sono inclusi in ogni abbonamento ad Adobe Managed Services e sono solitamente costituiti da almeno un ambiente di produzione, un ambiente di fase ed eventualmente uno o più ambienti di sviluppo o di test.
 
 ## E-mail di benvenuto {#welcome-email}
 
-Al termine del processo di provisioning dell&#39;ambiente, l&#39;amministratore cliente designato riceve un messaggio e-mail di benvenuto con la conferma che gli è stato concesso l&#39;accesso all&#39;Adobe Experience Cloud. Il messaggio e-mail contiene informazioni dettagliate su come iniziare a utilizzare i servizi di Experience Cloud  e il portale dei servizi self-service di Cloud Manager. Inoltre, l&#39;e-mail contiene informazioni importanti come dove andare per Risorse di Supporto, Forum o Domande frequenti e molto altro ancora. Nell&#39;elenco delle risorse fornito nel messaggio e-mail, verranno fornite informazioni su come accedere a Cloud Manager o agli ambienti cloud AEM.
+Al termine del processo di provisioning dell’ambiente, l’amministratore del cliente designato riceve un messaggio e-mail di benvenuto con la conferma che gli è stato concesso l’accesso a Adobe Experience Cloud. L’e-mail contiene informazioni dettagliate su come iniziare a utilizzare i servizi Experience Cloud e il portale self-service di Cloud Manager. Inoltre, l&#39;e-mail contiene informazioni importanti come dove andare per Risorse di supporto, Forum o FAQ e molto altro. Nell’elenco delle risorse fornite nell’e-mail, otterrai anche dettagli su come accedere a Cloud Manager o ai tuoi ambienti cloud AEM.
 
 ## Passaggi successivi {#next-steps}
 
-Dopo aver ricevuto il messaggio e-mail di benvenuto, potete accedere a Cloud Manager come amministratore, utilizzando le credenziali IMS  Adobe. Una volta effettuato l&#39;accesso, sarete in grado di verificare che gli ambienti di produzione cloud AEM e non di produzione siano disponibili ed eseguiti correttamente.
+Dopo aver ricevuto l’e-mail di benvenuto, puoi accedere a Cloud Manager come amministratore utilizzando le tue credenziali Adobe IMS. Una volta effettuato l’accesso, potrai verificare che gli ambienti di produzione e non di produzione cloud AEM siano disponibili ed eseguiti correttamente.
 
-Questi ambienti cloud AEM saranno utilizzati da Cloud Manager per eseguire la pipeline CI/CD al momento della distribuzione del codice, a partire dall&#39;archivio Git di Cloud Manager, dall&#39;ambiente di gestione temporanea e fino all&#39;ambiente di produzione AEM. Potrai anche accedere ai tuoi ambienti cloud AEM direttamente da Cloud Manager, quando sarai pronto per iniziare a creare esperienze digitali per le tue proprietà web.
+Questi ambienti cloud AEM saranno utilizzati da Cloud Manager per eseguire la pipeline CI/CD durante la distribuzione del codice, a partire dall’archivio Git di Cloud Manager, dall’ambiente di staging e fino all’ambiente di produzione AEM. Potrai anche accedere agli ambienti cloud AEM direttamente da Cloud Manager, quando sei pronto per iniziare a creare esperienze digitali per le tue proprietà web.
