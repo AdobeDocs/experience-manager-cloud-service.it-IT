@@ -227,7 +227,6 @@ Una volta che la configurazione della query è in fase di pubblicazione, si appl
 >
 >Ad esempio, nella richiesta di esecuzione di una query persistente:
 >
->
-```xml
+>```xml
 >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
 >```
