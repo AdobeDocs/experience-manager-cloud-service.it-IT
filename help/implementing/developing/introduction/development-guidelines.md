@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Linee guida per lo sviluppo in AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
+source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2306'
 ht-degree: 2%
 
 ---
@@ -158,6 +158,8 @@ Tieni presente che nello sviluppo locale (utilizzando l’SDK), `/apps` e `/libs
 
 I clienti possono accedere a CRXDE lite nell’ambiente di sviluppo del livello di authoring, ma non in quello di stage o produzione. Archivio immutabile (`/libs`, `/apps`) non può essere scritto in fase di runtime, pertanto il tentativo di eseguire questa operazione genera errori.
 
+È invece possibile avviare il browser Repository dalla Console per sviluppatori, fornendo una visualizzazione in sola lettura nell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima. Ulteriori informazioni sul browser Repository [qui](/help/implementing/developing/tools/repository-browser.md).
+
 Nella Console per sviluppatori sono disponibili un set di strumenti per il debug AEM ambienti di sviluppo as a Cloud Service per ambienti di sviluppo, stage e produzione. L’URL può essere determinato regolando gli url del servizio Author o Publish come segue:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
@@ -184,11 +186,7 @@ Utile anche per il debug, la Console per sviluppatori ha un collegamento allo st
 
 ![Console di sviluppo 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Per i programmi di produzione, l’accesso alla Console per sviluppatori è definito nell’Admin Console dal ruolo &quot;Cloud Manager - Developer Role&quot; , mentre per i programmi sandbox, la Console per sviluppatori è disponibile per qualsiasi utente con un profilo di prodotto che consente loro di accedere a AEM as a Cloud Service. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le immagini di stato e gli utenti devono essere definiti anche nel profilo di prodotto Utenti AEM o Amministratori AEM sui servizi di authoring e pubblicazione per visualizzare i dati di dump di stato di entrambi i servizi. Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
-### Servizio di staging e produzione AEM {#aem-staging-and-production-service}
-
-I clienti non avranno accesso agli strumenti per sviluppatori per gli ambienti di staging e produzione.
+Per i programmi di produzione, l’accesso alla Console per sviluppatori è definito nell’Admin Console dal ruolo &quot;Cloud Manager - Developer Role&quot; , mentre per i programmi sandbox, la Console per sviluppatori è disponibile per qualsiasi utente con un profilo di prodotto che consente loro di accedere a AEM as a Cloud Service. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le immagini di stato e per il browser e gli utenti dell’archivio, nonché per visualizzare i dati di entrambi i servizi, è necessario definire il profilo di prodotto Utenti AEM o Amministratori sia sui servizi di authoring che su quelli di pubblicazione. Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Monitoraggio delle prestazioni {#performance-monitoring}
 
