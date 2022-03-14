@@ -2,9 +2,9 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Attività di manutenzione in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 9177741a57bb16c36b51d1a042538b9cee20a0b8
+source-git-commit: cd48b78383974027d8980397632c395a5958edbf
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ Le attività di manutenzione sono processi eseguiti secondo una pianificazione a
 
 ## Configurazione delle attività di manutenzione
 
-Nelle versioni precedenti di AEM, è possibile configurare le attività di manutenzione utilizzando la scheda Manutenzione (Strumenti > Operazioni > Manutenzione). Per AEM as a Cloud Service, la scheda di manutenzione non è più disponibile, pertanto le configurazioni devono essere salvate nel controllo del codice sorgente e distribuite utilizzando Cloud Manager. Adobe gestirà le attività di manutenzione che non richiedono decisioni del cliente (ad esempio, Raccolta rifiuti di Datastore), mentre altre attività di manutenzione possono essere configurate dal cliente (vedi la tabella seguente).
+Nelle versioni precedenti di AEM, è possibile configurare le attività di manutenzione utilizzando la scheda Manutenzione (Strumenti > Operazioni > Manutenzione). Per AEM as a Cloud Service, la scheda di manutenzione non è più disponibile, pertanto le configurazioni devono essere salvate nel controllo del codice sorgente e distribuite utilizzando Cloud Manager. Adobe gestisce le attività di manutenzione che presentano impostazioni non configurabili dai clienti (ad esempio, Raccolta rifiuti del datastore, Eliminazione del log di controllo, Pulizia delle versioni). I clienti possono configurare altre attività di manutenzione, come descritto nella tabella seguente.
 
 >[!CAUTION]
 >
@@ -56,14 +56,22 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>Pulizia delle versioni</td>
     <td>Adobe</td>
-    <td>Di proprietà completa di Adobe, ma in futuro i clienti saranno in grado di configurare alcuni parametri.</td>
+    <td>Affinché il livello di authoring rimanga performante, le versioni precedenti di ogni elemento di contenuto sotto il <code>/content</code> il nodo del repository viene eliminato in base al seguente comportamento:<br><ol>
+  <li>Le versioni con età superiore a 30 giorni vengono rimosse</li>
+  <li>Le ultime 5 versioni negli ultimi 30 giorni sono conservate</li>
+  <li>Indipendentemente dalle regole di cui sopra, viene conservata la versione più recente.</li>
+</ol><br>NOTA: il comportamento descritto sopra viene applicato per i nuovi ambienti a partire dal 14 marzo 2022 e verrà applicato per gli ambienti esistenti (quelli creati prima del 14 marzo 2022) il 21 aprile 2022.</td>
   </td>
   </tr>
   <tr>
     <td>Elimina log di controllo</td>
     <td>Adobe</td>
-    <td>Di proprietà completa di Adobe, ma in futuro i clienti saranno in grado di configurare alcuni parametri.</td>
-  </td>
+    <td>Affinché il livello di authoring rimanga performante, i registri di controllo più vecchi sotto la sezione <code>/content</code> il nodo del repository viene eliminato in base al seguente comportamento:<br><ol>
+  <li>Per il controllo della replica, i registri di controllo più vecchi di 3 giorni vengono rimossi</li>
+  <li>Per il controllo DAM (Assets), i registri di controllo con età maggiore di 30 giorni vengono rimossi</li>
+  <li>Per il controllo delle pagine, i registri più vecchi di 3 giorni vengono rimossi.<br></li>
+</ol><br>NOTA: il comportamento descritto sopra viene applicato per i nuovi ambienti a partire dal 14 marzo 2022 e verrà applicato per gli ambienti esistenti (quelli creati prima del 14 marzo 2022) il 21 aprile 2022.</td>
+   </td>
   </tr>
   <tr>
     <td>Pulizia binary di Lucene</td>
