@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Linee guida per lo sviluppo in AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
+source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2356'
 ht-degree: 2%
 
 ---
@@ -55,15 +55,19 @@ Allo stesso modo, con tutto ciò che sta accadendo in modo asincrono, come agire
 
 ## Connessioni HTTP in uscita {#outgoing-http-connections}
 
-Si consiglia vivamente che tutte le connessioni HTTP in uscita impostino tempi di connessione e di lettura ragionevoli. Per il codice che non applica questi timeout, AEM istanze in esecuzione su AEM as a Cloud Service applicheranno un timeout globale. Questi valori di timeout sono di 10 secondi per le chiamate di connessione e di 60 secondi per le chiamate di lettura per le connessioni utilizzate dalle seguenti librerie Java popolari:
+Si consiglia vivamente che tutte le connessioni HTTP in uscita impostino tempi di connessione e di lettura ragionevoli; i valori consigliati sono 1 secondo per il timeout della connessione e 5 secondi per il timeout della lettura. I numeri esatti devono essere determinati in base alle prestazioni del sistema backend che gestisce queste richieste.
+
+Per il codice che non applica questi timeout, AEM istanze in esecuzione su AEM as a Cloud Service applicheranno un timeout globale. Questi valori di timeout sono di 10 secondi per le chiamate di connessione e di 60 secondi per le chiamate di lettura per le connessioni.
 
 L&#39;Adobe raccomanda l&#39;uso del [Libreria client 4.x Apache HttpComponents Client](https://hc.apache.org/httpcomponents-client-ga/) per la creazione di connessioni HTTP.
 
 Le alternative che funzionano, ma che possono richiedere di fornire la dipendenza sono:
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) e/o [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (Fornito da AEM)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) e/o [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (Fornito da AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (non consigliato in quanto obsoleto e sostituito dalla versione 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Non fornito da AEM)
+
+Oltre a fornire timeout, è necessario implementare anche una corretta gestione di tali timeout e codici di stato HTTP imprevisti.
 
 ## Nessuna personalizzazione dell’interfaccia classica {#no-classic-ui-customizations}
 
