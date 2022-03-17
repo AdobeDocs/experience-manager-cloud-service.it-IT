@@ -3,10 +3,10 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cl
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4d7d3d7fb4430c2027d4d2f3c34d77890c28ad8
+source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 99%
+source-wordcount: '1188'
+ht-degree: 84%
 
 ---
 
@@ -135,15 +135,17 @@ La data di pubblicazione dello strumento Trasferimento contenuti v1.8.6 è il 3 
 
 ### Data di pubblicazione {#release-date-bpa}
 
-La data di pubblicazione di Best Practices Analyzer v2.1.24 è il 1° febbraio 2022.
+La data di rilascio di Best Practices Analyzer v2.1.26 è il 16 marzo 2022.
 
 ### Novità {#what-is-new-bpa}
 
-* Possibilità di rilevare e segnalare il numero di risorse con e senza tag avanzati.
-* Possibilità di rilevare e segnalare la versione di Componenti core comunemente utilizzata.
-* Possibilità di rilevare e creare rapporti sul tipo di livello di origine (Autore o Pubblicazione) in cui è stato eseguito BPA.
+* Possibilità di rilevare le risorse non elaborate. Se vengono rilevate risorse non elaborate, queste risorse devono essere impostate su elaborate o devono essere rimosse dal set di migrazione durante il trasferimento del contenuto per evitare problemi durante l’assimilazione del contenuto.
+* Possibilità di rilevare se il contenuto ha più di 1000 URL personalizzati. L’utilizzo di un numero elevato di URL personalizzati non è una best practice in quanto carica un carico sui server Dispatcher e Publish .
+* Possibilità di identificare i problemi relativi alle definizioni degli indici Oak e di rilevare le incompatibilità con AEM as a Cloud Service.
+* Possibilità di rilevare e creare rapporti sull’utilizzo delle configurazioni di Externalizer. In AEM configurazioni as a Cloud Service di Externalizer sono impostate da Cloud Manager, pertanto le configurazioni esistenti di Externalizer devono essere reimpostate per mantenere la compatibilità.
 
 ### Correzioni di bug {#bug-fixes-bpa}
 
-* La logica di dimensionamento BPA è stata resa più rapida ed efficiente.
-* In alcuni scenari, BPA non incrementava il conteggio analizzato al momento dell’esecuzione. Questo problema è stato risolto.
+* In alcuni scenari, l&#39;esecuzione di BPA non è riuscita a causa di un errore di asserzione generato da FormsSelectiveFeaturesAnalysis. Questo problema è stato risolto.
+* BPA riferiva i risultati relativi al modello WRK come PRINCIPALE invece che CRITICO. Questo problema è stato risolto.
+* BPA segnalava erroneamente i risultati relativi alle definizioni dell&#39;indice OAK in ui.apps come CRITICAL. Questo problema è stato risolto
