@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
 source-wordcount: '3434'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -219,7 +219,7 @@ ht-degree: 98%
       + Creazione di siti {#site-creation}
          + [Creazione di un nuovo sito](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
-         + [Utilizzo della barra del sito](/help/sites-cloud/administering/site-creation/site-rail.md)
+         + [Utilizzo della barra Sito](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [Modelli per siti](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [Temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md)
          + Percorso di creazione di siti rapidi AEM {#quick-site}
@@ -646,7 +646,7 @@ ht-degree: 98%
       + Creazione di un progetto di applicazione AEM {#create-application-project}
          + [Creazione guidata progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configurazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [Ambiente di compilazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [Ambiente build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md)
       + Gestione del codice {#managing-code}
          + [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
@@ -654,7 +654,7 @@ ht-degree: 98%
          + [Accesso agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Utilizzo di Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Utilizzo di più archivi](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [Configurazione del team di sviluppo aziendale](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Configurazione del team di sviluppo Enterprise](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md)
       + Pipeline CI-CD di Cloud Manager {#cicd-pipelines}
          + [Introduzione](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -671,7 +671,7 @@ ht-degree: 98%
          + [Test dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md)
       + [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md)
       + [Generazione rapporti SLA](/help/implementing/cloud-manager/sla-reporting.md)
-      + [Nuova relè uno](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Notifiche](/help/implementing/cloud-manager/notifications.md)
       + Gestione dei certificati SSL {#manage-ssl-certificates}
          + [Introduzione](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
