@@ -1,10 +1,10 @@
 ---
-title: Configurare il connettore di traduzione
+title: Configura il connettore di traduzione (AEM headless)
 description: Scopri come connettersi AEM a un servizio di traduzione.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1166'
 ht-degree: 1%
 
 ---
