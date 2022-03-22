@@ -2,10 +2,10 @@
 title: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6f2a306f54295ec0ec78706fec4b34313e3000c7
 workflow-type: tm+mt
-source-wordcount: '1503'
-ht-degree: 25%
+source-wordcount: '1570'
+ht-degree: 24%
 
 ---
 
@@ -56,7 +56,9 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Per utilizzare lo strumento Content Transfer (Trasferimento contenuti), devi essere un utente amministratore nell’istanza sorgente e appartenere al AEM locale **amministratori** nell’istanza di Cloud Service a cui stai trasferendo il contenuto. Gli utenti non autorizzati non potranno recuperare il token di accesso per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-* Se l’impostazione **Cancella il contenuto esistente sull’istanza Cloud prima dell’acquisizione** viene abilitata, elimina l’intero archivio esistente e crea un nuovo archivio in cui inserire il contenuto. Questo significa che reimposta tutte le impostazioni, comprese le autorizzazioni sull&#39;istanza del Cloud Service di destinazione. Questo vale anche per un utente amministratore aggiunto al **amministratori** gruppo. L’utente deve essere aggiunto nuovamente al **amministratori** gruppo per recuperare il token di accesso per CTT.
+* Se l’impostazione **Cancella il contenuto esistente sull’istanza Cloud prima dell’acquisizione** viene abilitata, elimina l’intero archivio esistente e crea un nuovo archivio in cui inserire il contenuto. Questo significa che reimposta tutte le impostazioni, comprese le autorizzazioni sull&#39;istanza del Cloud Service di destinazione. Questo vale anche per un utente amministratore aggiunto al **amministratori** gruppo. L’utente deve essere aggiunto nuovamente al **amministratori** per recuperare il token di accesso per lo strumento Content Transfer (Trasferimento contenuti).
+
+* Lo strumento Content Transfer (Trasferimento contenuti) non supporta l’unione di contenuti da più sorgenti all’interno dell’istanza del Cloud Service di destinazione se il contenuto dalle due sorgenti viene spostato negli stessi percorsi sul target. Per spostare il contenuto da più sorgenti a un’unica istanza di Cloud Service di destinazione, è necessario assicurarsi che non vi sia sovrapposizione dei percorsi di contenuto dalle sorgenti.
 
 * Il token di accesso può scadere periodicamente dopo un determinato periodo di tempo o dopo l’aggiornamento dell’ambiente di Cloud Service. Se il token di accesso è scaduto, non sarà possibile connettersi all’istanza di Cloud Service e sarà necessario recuperare il nuovo token di accesso. L’icona di stato associata a un set di migrazione esistente si trasforma in un cloud rosso e viene visualizzato un messaggio al passaggio del mouse.
 
