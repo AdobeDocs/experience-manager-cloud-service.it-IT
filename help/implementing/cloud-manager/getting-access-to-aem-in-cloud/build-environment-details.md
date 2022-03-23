@@ -1,15 +1,15 @@
 ---
-title: Ambiente di compilazione
+title: Ambiente build
 description: Scopri l’ambiente di build di Cloud Manager e come crea e verifica il codice.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3bf8764500d2b0068b808a42ecfd1400f78b1d13
+source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 0%
+source-wordcount: '831'
+ht-degree: 1%
 
 ---
 
-# Ambiente di compilazione {#build-environment}
+# Ambiente build {#build-environment}
 
 Scopri l’ambiente di build di Cloud Manager e come crea e verifica il codice.
 
@@ -19,7 +19,7 @@ Cloud Manager crea ed esegue il test del codice utilizzando un ambiente di build
 
 * L&#39;ambiente di creazione è basato su Linux, derivato da Ubuntu 18.04.
 * Apache Maven 3.6.0 è installato.
-* Le versioni Java installate sono Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2 e Azul Zulu 11.0.11.
+* Le versioni Java installate sono Oracle JDK 8u202 e Oracle JDK 11.0.2.
 * Per impostazione predefinita, la `JAVA_HOME` variabile di ambiente impostata su `/usr/lib/jvm/jdk1.8.0_202`  che contiene l&#39;Oracle JDK 8u202. Vedi [Versione JDK di esecuzione Maven alternativa](#alternate-maven-jdk-version) per ulteriori dettagli.
 * Ci sono alcuni pacchetti di sistema aggiuntivi installati che sono necessari.
 
@@ -90,15 +90,10 @@ Le combinazioni fornitore/versione attualmente disponibili sono:
 | `sun` | `1.8` |
 | `sun` | `1.11` |
 | `sun` | `11` |
-| `azul` | `1.8` |
-| `azul` | `1.11` |
-| `azul` | `8` |
 
-#### Versione JDK di esecuzione Maven alternativa {#alternate-maven-jdk-version}
-
-È anche possibile selezionare Azul 8 o Azul 11 come JDK per l&#39;intera esecuzione Maven. A differenza delle opzioni delle catene degli strumenti, questo cambia il JDK utilizzato per tutti i plugin a meno che la configurazione delle catene degli utensili non sia impostata anche nel qual caso la configurazione delle catene degli utensili viene ancora applicata per i plugin Maven consapevoli delle catene degli utensili. Di conseguenza, verifica e applica la versione Java utilizzando il [Plug-in applicazione Apache Maven](https://maven.apache.org/enforcer/maven-enforcer-plugin/) funzionerà.
-
-A questo scopo, crea un file denominato `.cloudmanager/java-version` nel ramo dell’archivio git utilizzato dalla pipeline. Questo file può avere il contenuto 11 o 8. Qualsiasi altro valore viene ignorato. Se è specificato 11, viene utilizzato Azul 11 e il `JAVA_HOME` variabile di ambiente impostata su `/usr/lib/jvm/jdk-11.0.11`. Se si specifica 8, viene utilizzato Azul 8 e il `JAVA_HOME` variabile di ambiente impostata su `/usr/lib/jvm/jdk-8.0.292`.
+>[!NOTE]
+>
+>A partire da aprile 2022, Oracle JDK sarà il JDK predefinito per lo sviluppo e il funzionamento delle applicazioni AEM. Il processo di creazione di Cloud Manager passa automaticamente a utilizzando Oracle JDK, anche se nella toolchain Maven è selezionata esplicitamente un’opzione alternativa. Per ulteriori informazioni, consulta le note sulla versione di aprile pubblicate .
 
 ## Variabili di ambiente {#environment-variables}
 
