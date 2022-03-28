@@ -4,9 +4,9 @@ description: Scopri come annullare la validità della rete CDN (Content Delivery
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: c9944b1ac561b54ad2e2870ab0da967c005f105f
+source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1313'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Le risorse Dynamic Media sono memorizzate nella cache della rete CDN (Content De
 >
 >Questa funzione richiede l’utilizzo della rete CDN preconfigurata fornita con Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione.
 
-Vedi anche [Panoramica sulla cache in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
+<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
 **Per annullare la validità della cache CDN tramite Dynamic Media:**
 
