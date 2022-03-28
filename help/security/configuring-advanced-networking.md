@@ -2,10 +2,10 @@
 title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 100%
+source-wordcount: '2976'
+ht-degree: 99%
 
 ---
 
@@ -305,11 +305,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## Clienti con indirizzi in uscita dedicati legacy {#legacy-dedicated-egress-address-customers}
-
-Se hai effettuato il provisioning con un IP in uscita dedicato prima del 30 settembre 2021, l’indirizzo IP in uscita dedicato funzionerà come descritto di seguito.
-
-### Utilizzo della funzione {#feature-usage}
+## Utilizzo della funzione {#feature-usage}
 
 La funzione è compatibile con il codice o le librerie Java che generano traffico in uscita, purché utilizzino le proprietà standard del sistema Java per le configurazioni proxy. In pratica, dovrebbe essere inclusa la maggior parte delle librerie comuni.
 
@@ -351,11 +347,14 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 Lo stesso IP dedicato viene applicato a tutti i programmi di un cliente nella sua organizzazione Adobe e per tutti gli ambienti in ciascuno dei suoi programmi. Si applica ai servizi sia di authoring che di pubblicazione.
 
-Sono supportate solo le porte HTTP e HTTPS. Questo include HTTP/1.1 e HTTP/2 se crittografati.
-
 ### Considerazioni sul debug {#debugging-considerations}
 
 Per verificare che il traffico sia effettivamente in uscita all’indirizzo IP dedicato previsto, controlla i registri nel servizio di destinazione, se disponibili. Altrimenti può essere utile richiamare un servizio di debug come [https://ifconfig.me/IP](https://ifconfig.me/IP), che restituirà l’indirizzo IP chiamante.
+
+## Clienti con indirizzi in uscita dedicati legacy {#legacy-dedicated-egress-address-customers}
+
+Se hai effettuato il provisioning con un IP in uscita dedicato prima del 2021.09.30, la funzionalità IP in uscita dedicata supporta solo le porte HTTP e HTTPS.
+Questo include HTTP/1.1 e HTTP/2 se crittografati.
 
 ## Virtual Private Network (VPN) {#vpn}
 
