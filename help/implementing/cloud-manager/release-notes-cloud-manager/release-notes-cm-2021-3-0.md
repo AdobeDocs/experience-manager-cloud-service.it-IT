@@ -3,7 +3,7 @@ title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 
 description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.3.0
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -22,7 +22,7 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.3.0 è l’1
 
 ### Novità {#what-is-new}
 
-* Clienti con ambienti con configurazioni di nomi di dominio personalizzati preesistenti per [ELENCHI CONSENTITI IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizzerà un messaggio sulle configurazioni esistenti in precedenza e sarà in grado di self-service tramite l’interfaccia utente di .
+* Clienti con ambienti con configurazioni di nomi di dominio personalizzati preesistenti per [ELENCHI CONSENTITI IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizzerà un messaggio sulle configurazioni esistenti in precedenza e sarà in grado di self-service tramite l’interfaccia utente di .
 
 * Gli utenti con le autorizzazioni necessarie possono ora modificare un programma, consentendo loro di effettuare le seguenti operazioni in modalità self-service:
    * Aggiungi la soluzione Sites a un programma esistente con Assets o viceversa.
