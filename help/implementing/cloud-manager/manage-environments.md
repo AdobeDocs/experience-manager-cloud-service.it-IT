@@ -2,9 +2,9 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare e come crearli per il progetto Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1747'
 ht-degree: 1%
 
 ---
@@ -216,9 +216,7 @@ Per configurare i nomi di dominio personalizzati, passa alla **Ambienti** e fai 
 
 * [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-* [Visualizzazione e aggiornamento di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-
-* [Eliminazione di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+* [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
 
 * [Controllo dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) o [Certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 

@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3c1012469db3e8a947634d5995eaee09a632e7f8
+source-git-commit: 1530763a4817b9d6c17b55fb2d8db98304f1d433
 workflow-type: tm+mt
-source-wordcount: '3417'
+source-wordcount: '3397'
 ht-degree: 99%
 
 ---
@@ -679,15 +679,12 @@ ht-degree: 99%
          + [Gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Gestione dei nomi di dominio personalizzati {#custom-domain-names}
          + [Introduzione](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         + [Ottenimento di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
          + [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Verifica dello stato del record DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-         + [Visualizzazione e aggiornamento e sostituzione di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-         + [Aggiornamento del certificato SSL di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-         + [Eliminazione di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+         + [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + Gestione degli Elenchi IP consentiti {#ip-allow-lists}
          + [Introduzione](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Aggiunta di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
