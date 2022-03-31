@@ -1,38 +1,32 @@
 ---
-title: Introduzione - Elenchi consentiti IP in Cloud Manager
-description: Introduzione - Elenchi consentiti IP in Cloud Manager
+title: Introduzione agli Elenchi consentiti IP
+description: Scopri come gli elenchi consentiti IP possono limitare da quali indirizzi gli utenti possono accedere ai tuoi domini as a Cloud Service AEM.
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
+source-git-commit: 8d1680fa8dbaaefa297cf8c6698097b3c7acc48d
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
 
-# Introduzione {#introduction}
+
+# Introduzione agli Elenchi consentiti IP {#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
 >title="Gestire gli Elenchi consentiti IP"
->abstract="AEM as a cloud service è aperto a Internet e la sicurezza viene gestita tramite autenticazione e autorizzazione utente. L’inserimento degli indirizzi IP nell’elenco Consentiti è una funzione di Cloud Manager che consente di limitare e controllare l’accesso solo agli utenti attendibili. Questa funzione consente agli utenti con autorizzazioni di creare elenchi consentiti di indirizzi IP attendibili da cui gli utenti dei siti possono accedere ai propri domini AEM."
+>abstract="AEM as a cloud service è accessibile via Internet ed è protetto tramite autenticazione e autorizzazione degli utenti. Gli elenchi consentiti IP di Cloud Manager possono essere utilizzati per limitare e controllare l’accesso solo agli indirizzi IP attendibili. Gli utenti di Cloud Manager con le autorizzazioni appropriate possono creare elenchi consentiti di indirizzi IP affidabili da cui gli utenti del sito possono accedere ai loro domini AEM."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html" text="Aggiungere un Elenco consentiti IP"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html" text="Visualizzare e aggiornare un Elenco consentiti IP"
 
-AEM as a cloud service è aperto a Internet e la sicurezza viene gestita tramite autenticazione e autorizzazione utente. L’inserimento degli indirizzi IP nell’elenco Consentiti è una funzione di Cloud Manager che consente di limitare e controllare l’accesso solo agli utenti attendibili. Questa funzione consente agli utenti con autorizzazioni di creare elenchi consentiti di indirizzi IP attendibili da cui gli utenti dei siti possono accedere ai propri domini AEM.
+AEM as a cloud service è accessibile via Internet ed è protetto tramite autenticazione e autorizzazione degli utenti. Gli elenchi consentiti IP di Cloud Manager possono essere utilizzati per limitare e controllare l’accesso solo agli indirizzi IP attendibili. Gli utenti di Cloud Manager con le autorizzazioni appropriate possono creare elenchi consentiti di indirizzi IP affidabili da cui gli utenti del sito possono accedere ai loro domini AEM.
 
->[!NOTE]
->È possibile aggiungere un massimo di 50 Elenchi consentiti IP nel programma e un massimo di 50 indirizzi IP/CIDR a ogni Elenco consentiti IP.
+Gli elenchi consentiti IP possono essere aggiunti una volta e applicati/non applicati più volte come unità o entità a un servizio di authoring e/o pubblicazione in un ambiente.
 
-Gli Elenchi consentiti IP possono essere aggiunti una volta e applicati/non applicati più volte come unità o entità a un servizio Author e/o Publisher in un ambiente.
+## Limitazioni  {#limitations}
 
->[!NOTE]
->I nomi degli Elenchi consentiti IP sono supportati in Cloud Manager per il servizio Author e/o Publish in un ambiente.
+Gli elenchi IP possono essere tenuti presenti in una serie di limitazioni.
 
-Utilizzando la pagina di Elenco consentiti IP dell’interfaccia utente di Cloud Manager o la pagina Dettagli ambiente, un utente con autorizzazioni può eseguire diverse attività per gestire gli Elenchi consentiti IP per i tuoi ambienti, tra cui:
-
-* [Aggiunta di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-   >[!NOTE]
-   > Puoi aggiungere una volta e riutilizzare o applicare la regola per un numero qualsiasi di volte tra i servizi di ambiente nel programma.
-* [Visualizzazione o aggiornamento di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-* [Applicazione o annullamento dell’applicazione di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-* [Eliminazione di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+* È possibile aggiungere al programma fino a 50 elenchi consentiti IP
+* È possibile aggiungere a ogni elenco consentiti IP un massimo di 50 indirizzi IP/CIDR.
+* I nomi degli elenchi consentiti IP sono supportati in Cloud Manager per i servizi di authoring e/o pubblicazione in un ambiente.

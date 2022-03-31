@@ -2,9 +2,9 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare e come crearli per il progetto Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1745'
 ht-degree: 1%
 
 ---
@@ -105,9 +105,9 @@ Un utente con le autorizzazioni necessarie deve completare i passaggi delle segu
 
 1. Crea un elenco consentiti IP appropriato, applicalo al servizio di anteprima e annulla immediatamente l’applicazione del `Preview Default [<envId>]` elenco consentiti.
 
-   * Fai riferimento a [Annullamento dell’applicazione di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) per ulteriori dettagli.
+   * Fare riferimento al documento [Applicazione e annullamento dell’applicazione di Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) per ulteriori dettagli.
 
-1. Utilizzare l&#39;aggiornamento **ELENCO CONSENTITI IP** per rimuovere l’IP predefinito e aggiungere gli IP appropriati. Fai riferimento a [Visualizzazione e aggiornamento di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) per saperne di più.
+1. Utilizzare l&#39;aggiornamento **ELENCO CONSENTITI IP** per rimuovere l’IP predefinito e aggiungere gli IP appropriati. Fai riferimento a [Gestione degli Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) per saperne di più.
 
 Una volta sbloccato l’accesso al servizio di anteprima, l’icona a forma di lucchetto davanti al nome del servizio di anteprima non verrà più visualizzata.
 
@@ -220,7 +220,7 @@ Per configurare i nomi di dominio personalizzati, passa alla **Ambienti** e fai 
 
 * [Controllo dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) o [Certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
-* [Controllo dello stato di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [Gestione degli Elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
 
 ## Gestione degli Elenchi IP consentiti {#manage-ip-allow-lists}

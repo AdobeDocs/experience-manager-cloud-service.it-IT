@@ -1,31 +1,41 @@
 ---
-title: 'Aggiunta di un Elenco consentiti IP '
-description: Aggiunta di un Elenco consentiti IP
+title: Aggiunta di Elenchi consentiti IP
+description: Scopri come aggiungere un tuo elenco consentiti IP utilizzando Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 378ff582435f1ab3db431a0c9c3e80a4661cccc4
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 3%
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
+
 # Aggiunta di un elenco IP consentiti {#add-ip-allow-list}
 
-Per poter aggiungere un Elenco consentiti IP, è necessario accedere a un utente con il ruolo Proprietario business o Gestore distribuzione.
+Scopri come aggiungere un tuo elenco consentiti IP utilizzando Cloud Manager.
 
-Per aggiungere un Elenco consentiti IP, effettua le seguenti operazioni:
+Un utente nel **Proprietario business** o **Gestione distribuzione** Puoi seguire questi passaggi per aggiungere un elenco consentiti IP.
+
+1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione e il programma appropriati.
+
+1. Passa a **Ambienti** dalla schermata **Panoramica** pagina.
 
 1. Passa a **ELENCHI CONSENTITI IP** dalla pagina **Ambienti** schermo.
-   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
+
+   ![Opzione elenchi consentiti IP nel pannello laterale](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
 1. Fai clic su **Aggiungi Elenco consentiti IP** per aprire **Aggiungi Elenco consentiti IP** finestra di dialogo.
 
-   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
+   ![Finestra di dialogo Aggiungi Elenco consentiti IP](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. Immetti un nome descrittivo da utilizzare per fare riferimento alla regola di Elenco consentiti in **Nome Elenco consentiti IP**.
+1. Inserisci un nome da utilizzare per fare riferimento all’elenco consentiti nel **Nome Elenco consentiti IP** campo .
 
-1. Immettere un blocco IP o IP CIDR separato da una virgola o da una TAB in **Indirizzo IP/CIDR**.
+   * Questo è solo informativo e deve essere descrittivo per identificare l’elenco.
 
-1. Seleziona **Salva** per confermare l’invio. Se vengono rilevati errori, è necessario risolvere il problema prima di salvare la regola.
+1. Immetti un blocco IP o IP CIDR nella **Indirizzo IP/CIDR** campo .
 
-1. Al momento del salvataggio, la nuova regola di Elenco consentiti IP creata verrà visualizzata come riga nella tabella nella pagina di Elenco consentiti IP.
+   * È possibile separare più blocchi con una virgola o una scheda.
+
+1. Fai clic su **Salva** per confermare l’invio.
+
+Al momento del salvataggio, l’elenco consentiti IP appena creato verrà visualizzato come riga nella tabella nel **ELENCHI CONSENTITI IP** pagina.

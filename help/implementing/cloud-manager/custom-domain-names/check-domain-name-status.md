@@ -2,9 +2,9 @@
 title: Verifica dello stato del nome di dominio
 description: Scopri come determinare se il nome di dominio personalizzato è stato verificato correttamente da Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,8 @@ Cloud Manager attiva automaticamente una verifica TXT quando selezioni **Salva**
 
 ## Configurazioni CDN preesistenti per nomi di dominio personalizzati {#pre-existing-cdn}
 
-Se disponi di una configurazione CDN preesistente per i nomi di dominio personalizzati, verrà visualizzato un messaggio informativo sul **ELENCO CONSENTITI IP** e **Ambiente** pagine, ti incoraggiano ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
+Se disponi di una configurazione CDN preesistente per i nomi di dominio personalizzati, verrà visualizzato un messaggio informativo sul **Nomi di dominio personalizzati** e **Ambiente** pagine, ti incoraggiano ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
 
 Il messaggio scompare dopo la migrazione di tutte le configurazioni di ambiente preesistenti tramite l’interfaccia utente. Potrebbero essere necessari 1-2 giorni lavorativi per far scomparire il messaggio.
 
 Fare riferimento al documento [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) per ulteriori dettagli.
-
-![Messaggio di configurazione CDN preesistente](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)

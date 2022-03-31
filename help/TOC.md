@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ac5984d9b5c8800287e11fe00e02d60d9727ed43
+source-git-commit: 62c0c4cbc6de202e4fb2aecb02a146a19088d7ee
 workflow-type: tm+mt
-source-wordcount: '3407'
-ht-degree: 99%
+source-wordcount: '3387'
+ht-degree: 98%
 
 ---
 
@@ -675,11 +675,11 @@ ht-degree: 99%
       + [Generazione rapporti SLA](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Notifiche](/help/implementing/cloud-manager/notifications.md)
-      + Gestione dei certificati SSL {#manage-ssl-certificates}
+      + Certificati SSL {#manage-ssl-certificates}
          + [Introduzione](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Gestione dei nomi di dominio personalizzati {#custom-domain-names}
+      + Nomi di dominio personalizzati {#custom-domain-names}
          + [Introduzione](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -687,14 +687,11 @@ ht-degree: 99%
          + [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Verifica dello stato del record DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-      + Gestione degli Elenchi IP consentiti {#ip-allow-lists}
+      + ELENCHI CONSENTITI IP {#ip-allow-lists}
          + [Introduzione](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Aggiunta di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [Visualizzazione e aggiornamento di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-         + [Applicazione di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-         + [Annullamento dell’applicazione di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-         + [Eliminazione di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-         + [Controllo dello stato di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+         + [Applicazione e annullamento dell’applicazione di Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [Gestione degli Elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Domande frequenti su Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + Sviluppo per AEM as a Cloud Service {#developing}
       + [Struttura dei progetti AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
