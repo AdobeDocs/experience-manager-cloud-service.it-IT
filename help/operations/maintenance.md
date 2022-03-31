@@ -2,9 +2,9 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Attività di manutenzione in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
+source-git-commit: 0472c3247f171c7c090444f02b928bbcf3a4e1fe
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1020'
 ht-degree: 4%
 
 ---
@@ -61,7 +61,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Le versioni con età superiore a 30 giorni vengono rimosse</li>
        <li>Le ultime 5 versioni negli ultimi 30 giorni sono conservate</li>
        <li>Indipendentemente dalle regole di cui sopra, viene conservata la versione più recente.</li>
-     </ol><br>NOTA: il comportamento descritto sopra viene applicato per i nuovi ambienti a partire dal 14 marzo 2022 e verrà applicato per gli ambienti esistenti (quelli creati prima del 14 marzo 2022) il 21 aprile 2022.</td>
+     </ol><br>NOTA: il comportamento descritto sopra viene applicato per impostazione predefinita per i nuovi ambienti creati dopo il 14 marzo 2022. Invia un ticket di assistenza clienti se hai bisogno di impostazioni diverse.</td>
   </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Per il controllo della replica, i registri di controllo più vecchi di 3 giorni vengono rimossi</li>
        <li>Per il controllo DAM (Assets), i registri di controllo con età maggiore di 30 giorni vengono rimossi</li>
        <li>Per il controllo delle pagine, i registri più vecchi di 3 giorni vengono rimossi.</li>
-     </ol><br>NOTA: il comportamento descritto sopra viene applicato per i nuovi ambienti a partire dal 14 marzo 2022 e verrà applicato per gli ambienti esistenti (quelli creati prima del 14 marzo 2022) il 21 aprile 2022.</td>
+     </ol><br>NOTA: il comportamento descritto sopra viene applicato per impostazione predefinita per i nuovi ambienti creati dopo il 14 marzo 2022. Invia un ticket di assistenza clienti se hai bisogno di impostazioni diverse.</td>
    </td>
   </tr>
   <tr>
