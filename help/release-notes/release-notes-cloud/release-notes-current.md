@@ -3,10 +3,10 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cl
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
+source-git-commit: 372e40eb90d87d9ed366e08a3c0117068542680b
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 85%
+source-wordcount: '1427'
+ht-degree: 34%
 
 ---
 
@@ -25,111 +25,121 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.1.0) è il 3 febbraio 2022.
-La seguente versione (2022.3.0) è del 31 marzo 2022.
+Data di rilascio di [!DNL Adobe Experience Manager] come [!DNL Cloud Service] la versione corrente (2022.3.0) è il 31 marzo 2022.
+La versione seguente (2022.4.0) è del 28 aprile 2022.
 
 ## Video sulla versione {#release-video}
 
-Dai un’occhiata al video [Panoramica sulla versione di gennaio 2022](https://video.tv.adobe.com/v/340120) per un riepilogo delle funzioni aggiunte alla versione 2022.1.0.
-
-## Adobe Experience Manager Sites as a Cloud Service {#sites}
-
-* Il pulsante **[Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** è disponibile nella barra **Sito** della console Sites per i siti che utilizzano la v2 del componente core pagina. Questo pulsante configura il sito per caricare i temi distribuiti con la pipeline front-end sopra le librerie client esistenti.
+Dai un&#39;occhiata al [Panoramica sulla versione di marzo 2022](https://video.tv.adobe.com/v/341465) video per un riepilogo delle funzioni aggiunte nella versione 2022.3.0.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* [!DNL Dynamic Media] - È ora possibile utilizzare l’interfaccia Dynamic Media di AEM per configurare le impostazioni generali e le impostazioni di pubblicazione anziché passare attraverso l’applicazione desktop Dynamic Media Classic.
-
-* [!DNL Dynamic Media] ora supporta l’acquisizione, l’anteprima, la riproduzione e la pubblicazione per i video MXF. L&#39;annotazione e il video acquistabile per i video MXF non sono ancora supportati.
-
-* Dopo aver configurato una connessione tra le implementazioni remote di DAM e Sites, le risorse in DAM remoto sono rese disponibili nell’implementazione di Sites. È ora possibile [aggiornare, eliminare, rinominare e spostare le operazioni](/help/assets/use-assets-across-connected-assets-instances.md) sulle risorse o cartelle DAM remote. Gli aggiornamenti, con un certo ritardo, sono disponibili automaticamente nell’implementazione di Sites.
-
-### Nuove funzioni nel canale prerelease [!DNL Assets] {#assets-prerelease-features}
-
-* [!DNL AEM Dynamic Media] offre la flessibilità di [configurare un account alias](../../assets/dynamic-media/dm-alias-account.md) nell’interfaccia utente, garantendo in tal modo l’aggiornamento degli URL predefiniti di Dynamic Media e del codice di incorporamento del visualizzatore. Questo è particolarmente utile ai fini dell’ottimizzazione SEO (Search Engine Optimization), per riflettere eventuali aggiornamenti apportati al contesto aziendale, ad esempio in caso di rebranding.
+* [!DNL AEM Dynamic Media] offre la flessibilità di [configurare un account alias](/help/assets/dynamic-media/dm-alias-account.md) nell’interfaccia utente, garantendo in tal modo l’aggiornamento degli URL predefiniti di Dynamic Media e del codice di incorporamento del visualizzatore. Questo è particolarmente utile ai fini dell’ottimizzazione SEO (Search Engine Optimization), per riflettere eventuali aggiornamenti apportati al contesto aziendale, ad esempio in caso di rebranding.
 
 * Ora puoi utilizzare l’interfaccia utente di [!DNL Experience Manager Assets] per:
 
-   * Configura il rilevamento delle risorse duplicate in un archivio.
+   * Configura le [rilevamento di risorse duplicate](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in un archivio.
 
-   * Configura l’aggiunta di watermark digitali alle immagini.
+   * Configura [aggiunta di filigrane digitali](/help/assets/watermark-assets.md) alle immagini.
 
 * Gli amministratori possono ora configurare il servizio e-mail per i download di grandi dimensioni. Consente agli utenti di [abilitare le notifiche e-mail per i download di grandi dimensioni](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) dall’interfaccia [!DNL Experience Manager Assets]. Al termine del processo di download, l’utente riceve una notifica e-mail contenente il collegamento di download della cartella zip archiviata.
 
-
 * La funzione [Gestisci pubblicazione](/help/assets/manage-publication.md) viene migliorata con un’interfaccia utente migliorata. Gli utenti possono pubblicare o annullare la pubblicazione dei contenuti da e verso la destinazione selezionata, [Aggiungi contenuto](/help/assets/manage-publication.md#add-content) all’elenco di pubblicazione dall’archivio DAM, [Includi impostazioni cartella](/help/assets/manage-publication.md#include-folder-settings) per pubblicare il contenuto delle cartelle selezionate e applicare i filtri, e [pianifica la pubblicazione](/help/assets/manage-publication.md#publish-assets-later) a una data o un’ora successiva.
 
-### Correzioni di bug {#bug-fixes}
+### Nuove funzioni disponibili in [!DNL Assets] canale prerelease {#prerelease-features-assets}
 
-* Le risorse non elaborate senza rendering originale vengono inviate ad Asset Compute per l’elaborazione durante la migrazione delle risorse da AEM on-premise a Cloud Services.
+* È possibile [ordinare tag](/help/assets/organize-assets.md#use-tags-to-organize-assets) durante la creazione di tag avanzati e quando si applicano filtri di ricerca utilizzando il predicato tags.
 
 ## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=it) consente di combinare un modello e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch. Le API consentono di creare applicazioni che permettono di:
+* **[!DNL Communications - Document Generation APIs]**: [API per la generazione di documenti](/help/forms/aem-forms-cloud-service-communications.md) combinare, ridisporre e convalidare i documenti PDF. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che permettono di:
 
-   * Generare i documenti compilando i file modello con dati XML.
-   * Genera moduli in vari formati, compresi flussi di stampa PDF non interattivi.
-   * Genera PDF di stampa da PDF modulo XFA.
-   * Genera in blocco documenti PDF, PostScript, PCL e ZPL unendo più set di dati con modelli di origine.
+   * Assemblare documenti PDF.
+   * Smontare i documenti PDF.
+   * Conversione e convalida di documenti conformi a PDF/A.
 
-* **Font personalizzati per documenti Record e PDF creati con API di comunicazione**: ora puoi utilizzare i font approvati dal marchio nei documenti PDF generati utilizzando le API di comunicazione per allinearli ai requisiti organizzativi.
+* **Conversione automatica di PDF forms di dimensioni superiori a 15 pagine in moduli adattivi**: È ora possibile utilizzare il servizio automated forms conversion per convertire PDF forms con un massimo di 40 pagine in moduli adattivi. Il servizio ora fornisce l’opzione per convertire sezioni di moduli di dimensioni superiori a 15 pagine in frammenti di modulo adattivi. Consente di migliorare la velocità di rendering dei moduli convertiti e di caricare più facilmente i moduli di grandi dimensioni nell’editor di moduli adattivi.
 
 ### Nuove funzioni disponibili in [!DNL Forms] canale prerelease {#prerelease-features-forms}
 
-* **[Assemblatore API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assemblatore API per combinare, ridisporre, integrare e ottenere informazioni sui documenti PDF.
+* **Utilizza XCI personalizzato per generare un documento di record**: È ora possibile utilizzare un file XCI personalizzato per impostare varie proprietà di un documento di record. Sostituisce l’XCI principale con le modifiche personalizzate.
 
+* **Utilizzare il CAPTCHA invisibile in un modulo adattivo**: Puoi usare il CAPTCHA invisibile per mostrare la sfida CAPTCHA solo nel caso di un&#39;attività sospetta. Se non viene trovata alcuna attività sospetta, la sfida CAPTCHA non viene visualizzata.
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 
 ### Novità {#what-is-new-cif}
 
-* Componenti myAccount migliorati
-* Il componente Consiglio di prodotto supporta ulteriori tipi di pagina (pagina home, carrello acquisti, conferma ordine)
-* **Lista dei desideri**
-   * I visitatori registrati possono aggiungere prodotti a una lista dei desideri
-   * È possibile gestire la lista dei desideri e i prodotti contenuti tramite myAccount
-   * Il pulsante “Aggiungi alla lista dei desideri” può essere abilitato/disabilitato a livello di componente tramite i criteri (ad esempio, teaser di prodotto, dettaglio di prodotto)
-   * Disponibile come componente core e in AEM Venia Storefront
+* Beta: Supporto per i componenti core di ricerca CIF di AEM Commerce LiveSearch
+* SEO migliorato per scenari multi-store: È ora possibile configurare i formati URL per PDP/PLP a livello di archivio tramite le proprietà CIF Cloud Config
+* Il selettore prodotti supporta i prodotti in staging tramite la nuova opzione di filtro nell’interfaccia utente.  In questo modo i professionisti dei contenuti possono preparare la gestione dei contenuti dei prodotti per i prossimi lanci
+* Gestione semplificata della configurazione CIF e degli errori utilizzando il nome della configurazione cloud CIF anziché l’URL proxy
+* Selezione manuale della categoria per l’elenco dei prodotti e i componenti Carosello. Questo consente agli utenti del contenuto di utilizzare questi componenti sulle pagine di contenuto, al di fuori dell’esperienza del catalogo
 
-![Lista dei desideri](/help/assets/CIF/wishlist.png)
+## [!DNL Experience Manager] come [!DNL Cloud Service] Foundation {#foundation}
+
+### Novità {#what-is-new-foundation}
+
+* Per una risoluzione più efficiente ed efficace dei problemi relativi alle funzioni personalizzate negli ambienti Cloud, abbiamo rilasciato un nuovo strumento per sviluppatori: [Browser del repository](/help/implementing/developing/tools/repository-browser.md). È un browser HTML leggero e di sola lettura che può essere avviato da Developer Console. Ottieni visibilità nell’archivio dei contenuti sui livelli di pubblicazione, authoring e anteprima, e in tutti gli ambienti, compresi produzione, stage e sviluppo. Sfoglia la struttura del contenuto, visualizza le proprietà e visualizza in anteprima e scarica i binari.
+
+   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+
+* Le credenziali utilizzate per autenticare le chiamate API da server a server (ad esempio, per le richieste API GraphQL) ora possono essere aggiornate prima della scadenza in modo self-service dalla Console per sviluppatori. Consulta la sezione [documentazione](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) per ulteriori informazioni.
+
+* Le attività di manutenzione dell’eliminazione della versione e del registro di controllo, che non erano state precedentemente abilitate, verranno abilitate per i nuovi ambienti. Vedi i valori associati in [Attività di manutenzione](/help/operations/maintenance.md) articolo.
+
+* AEM strumenti di Dispatcher SDK as a Cloud Service ora supportano i computer Mac con il chip M1
 
 ## Cloud Manager {#cloud-manager}
 
-### Data di pubblicazione {#release-date-cm}
+### Data di rilascio di febbraio {#release-date-cm-feb}
 
-La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2022.01.0 è il 20 gennaio 2022. La prossima versione è prevista per il 10 febbraio 2022.
+La data di rilascio di Cloud Manager in AEM as a Cloud Service 2022.02.0 è il 10 febbraio 2022. La prossima versione è prevista per il 10 marzo 2022.
 
-### Novità {#what-is-new-cm}
+### Novità {#what-is-new-cm-feb}
 
-* Cloud Manager [evita di ricostruire la base di codice quando rileva che viene utilizzato lo stesso commit git](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in più esecuzioni di pipeline full-stack.
-* L’accesso al registro dell’ambiente AEM ora richiede il profilo di prodotto **Gestione distribuzione**. Gli utenti senza questo profilo visualizzeranno un pulsante disabilitato nell’interfaccia utente.
-* L’interfaccia utente non consente la configurazione della pipeline front-end per un programma in cui Sites non è abilitato come soluzione.
-* Al momento della generazione di una password git, verrà visualizzata la data di scadenza.
+* Nuova accelerazione [pipeline di configurazione a livello web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) sono stati introdotti per distribuire esclusivamente la configurazione HTTPD/dispatcher.
+   * È necessario utilizzare AEM versione `2021.12.6151.20211217T120950Z` o più recenti e [consenso alla modalità flessibile degli strumenti del dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) per utilizzare questa funzione.
+   * Questa funzione verrà implementata in un approccio graduale nelle due settimane successive al rilascio della versione 2022.02.0.
+* L’esperienza della pagina di destinazione di Cloud Manager è stata aggiornata per fornire una navigazione migliore, un passaggio semplice tra le visualizzazioni griglia/riquadro e pop-up per un riepilogo rapido del programma.
+* Una nuova soglia di errore (`< D`) è stato aggiunto al [metrica di valutazione dell’affidabilità.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
+   * I clienti con gravi problemi di qualità che influiscono sulla stabilità del sistema, principalmente correlati a indici e processi di flusso di lavoro non validi, non saranno in grado di distribuire fino a quando tali problemi non saranno risolti.
+* La gravità del `BannedPath` [regola di qualità](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) è stato modificato da blocker a critico.
+* La procedura guidata della pipeline informerà l’utente quando potrebbe essere necessario un aggiornamento dell’ambiente AEM prima di configurare un [pipeline di configurazione a livello web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) associato.
 
-### Correzioni di bug {#bug-fixes-cm}
+### Correzioni di bug {#bug-fixes-cm-feb}
 
-* Sono state corrette le eccezioni Null al puntatore rilevate da alcune distribuzioni di pipeline front-end.
-* È ora possibile aggiungere, aggiornare ed eliminare variabili di ambiente quando un ambiente esegue una versione obsoleta di AEM.
-* Il passaggio dell’immagine della build non verrà più contrassegnato come ERRORE per le pipeline che hanno utilizzato il passaggio pianificato in alcuni rari casi.
-* Per i programmi con un solo archivio, nella schermata di esecuzione della pipeline viene ora visualizzato il nome dell’archivio.
+* Le password dell’archivio Git precedente ora vengono sempre invalidate quando viene generata una nuova password.
+* L’aggiornamento delle variabili di ambiente tramite l’API non interferisce più con l’esecuzione di una pipeline in rare situazioni.
+
+### Data di rilascio di marzo {#release-date-cm-march}
+
+La data di rilascio della versione 2022.3.0 di Cloud Manager in AEM 10 marzo 2022. La prossima versione è prevista per il 7 aprile 2022.
+
+### Novità {#what-is-new-cm-march}
+
+* Per accedere AEM registro dell’ambiente è possibile utilizzare il ruolo Sviluppatore .
+
+### Correzioni di bug {#bug-fixes-cm-march}
+
+* Un sottoinsieme di archivi Git creati manualmente presentava un valore di nome errato che impediva l’efficacia della funzione di riutilizzo degli artefatti di generazione. I nomi di tali archivi sono stati modificati e gli utenti vedranno il nome corretto nell’API/interfaccia utente di Cloud Manager.
+* Gli artefatti di generazione da pipeline non di produzione sono stati riutilizzati in modo inappropriato sulle pipeline di stack complete di produzione.
+* Quando si aggiunge o si modifica una pipeline di qualità del codice, le opzioni per gestire gli errori di metrica non vengono più visualizzate.
+* Alcune configurazioni impreviste di variabili della pipeline potrebbero causare nel passaggio di compilazione.
 
 ## Strumento Trasferimento contenuti {#ctt-release}
 
 ### Data di pubblicazione {#release-date-ctt}
 
-La data di pubblicazione dello strumento Trasferimento contenuti v1.8.6 è il 3 febbraio 2022.
+La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.9.0 è il 28 febbraio 2022.
 
 ### Novità {#what-is-new-ctt}
 
-* Convalida del contenuto: gli utenti possono determinare in modo affidabile se tutti i contenuti estratti dallo strumento Trasferimento contenuti sono stati correttamente acquisiti nell’istanza di destinazione. Per utilizzare questa funzione, è necessario abilitarla nella `System Console` dell’ambiente AEM sorgente. Fai riferimento a [Guida introduttiva alla convalida dei trasferimenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=it#getting-started) per ulteriori dettagli.
-
-### Correzioni di bug {#bug-fixes-ctt}
-
-* Alcuni utenti non venivano mappati perché la mappatura utente faceva distinzione tra maiuscole e minuscole. Questo problema è stato risolto. La mappatura utente non fa più distinzione tra maiuscole e minuscole.
+* Controlla le dimensioni delle protezioni : la funzione di controllo dello strumento di trasferimento dei contenuti consente di ridurre i trasferimenti di contenuto non riusciti.  Con la funzione di controllo dimensioni, gli utenti possono 1) determinare se hanno spazio su disco sufficiente nel `crx-quickstart` sottodirectory prima dell’estrazione e 2) stimare le dimensioni del set di migrazione e verificare se è supportato. Se uno o entrambi questi controlli vengono violati, gli utenti visualizzeranno gli avvisi nell’interfaccia utente del CTT. Con questa soluzione puoi evitare errori di trasferimento dei contenuti e discutere in modo proattivo le opzioni di migrazione con l’Assistenza clienti di Adobe. Fai riferimento a [Determinazione delle dimensioni del set di migrazione e dello spazio su disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) per ulteriori dettagli.
 
 ## Analisi delle best practice {#bpa-release}
 
@@ -139,13 +149,13 @@ La data di rilascio di Best Practices Analyzer v2.1.26 è il 16 marzo 2022.
 
 ### Novità {#what-is-new-bpa}
 
-* Possibilità di rilevare le risorse non elaborate. Se vengono rilevate risorse non elaborate, queste risorse devono essere impostate su elaborate o devono essere rimosse dal set di migrazione durante il trasferimento del contenuto per evitare problemi durante l’assimilazione del contenuto.
-* Possibilità di rilevare se il contenuto ha più di 1000 URL personalizzati. L’utilizzo di un numero elevato di URL personalizzati non è una best practice in quanto carica un carico sui server Dispatcher e Publish .
+* Possibilità di rilevare le risorse non elaborate. Se vengono rilevate risorse non elaborate, tali risorse devono essere impostate su elaborate o devono essere rimosse dal set di migrazione durante il trasferimento del contenuto per evitare problemi durante l’assimilazione del contenuto.
+* Possibilità di rilevare se il contenuto ha più di 1000 URL personalizzati. L’utilizzo di un numero elevato di URL personalizzati non è consigliato in quanto sovraccarica i server Dispatcher e Publish.
 * Possibilità di identificare i problemi relativi alle definizioni degli indici Oak e di rilevare le incompatibilità con AEM as a Cloud Service.
-* Possibilità di rilevare e creare rapporti sull’utilizzo delle configurazioni di Externalizer. In AEM configurazioni as a Cloud Service di Externalizer sono impostate da Cloud Manager, pertanto le configurazioni esistenti di Externalizer devono essere reimpostate per mantenere la compatibilità.
+* Possibilità di rilevare e creare rapporti sull’utilizzo delle configurazioni di Externalizer. In AEM as a Cloud Service le configurazioni di Externalizer sono impostate da Cloud Manager, pertanto le configurazioni esistenti di Externalizer devono essere reimpostate per mantenere la compatibilità.
 
 ### Correzioni di bug {#bug-fixes-bpa}
 
-* In alcuni scenari, l&#39;esecuzione di BPA non è riuscita a causa di un errore di asserzione generato da FormsSelectiveFeaturesAnalysis. Questo problema è stato risolto.
-* BPA riferiva i risultati relativi al modello WRK come PRINCIPALE invece che CRITICO. Questo problema è stato risolto.
-* BPA segnalava erroneamente i risultati relativi alle definizioni dell&#39;indice OAK in ui.apps come CRITICAL. Questo problema è stato risolto
+* In alcuni scenari, l’esecuzione di BPA non è riuscita a causa di un errore di asserzione generato da FormsSelectiveFeaturesAnalysis. Questo problema è stato risolto.
+* BPA riportava i risultati relativi al modello WRK come PRINCIPALE invece di CRITICO. Questo problema è stato risolto.
+* BPA riportava erroneamente i risultati relativi alle definizioni dell’indice OAK in ui.apps come CRITICO. Questo problema è stato risolto

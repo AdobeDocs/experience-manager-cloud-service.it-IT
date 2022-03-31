@@ -4,9 +4,9 @@ description: Questo articolo descrive come creare, modificare e utilizzare i fac
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2397'
 ht-degree: 21%
 
 ---
@@ -144,6 +144,11 @@ La `Tags` Il predicato consente di eseguire ricerche basate su tag per le risors
 1. Passa al pannello Ricerca . La **[!UICONTROL Tag]** viene aggiunto al pannello Ricerca .
 1. Specifica i tag in base ai quali desideri cercare le risorse o selezionali dall’elenco di suggerimenti.
 1. Seleziona **[!UICONTROL Corrispondenza con tutti]** per cercare corrispondenze che includono tutti i tag specificati.
+
+Puoi ordinare la struttura dei tag in ordine crescente o decrescente in base a **[!UICONTROL Nome]** (ordine alfabetico), **[!UICONTROL Creato]** data, oppure **[!UICONTROL Modificato]** data. Nell’illustrazione seguente, la struttura dei tag viene ordinata in ordine alfabetico in base alla variabile **[!UICONTROL Nome]**.
+
+![add-tags](assets/add-tags-to-asset.png)
+
 
 ## Aggiunta di altri predicati {#adding-other-predicates}
 

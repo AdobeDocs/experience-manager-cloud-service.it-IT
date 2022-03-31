@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 62c0c4cbc6de202e4fb2aecb02a146a19088d7ee
+source-git-commit: 170f93e9ef8b92ce258cc6f3e2d35ece27709fd5
 workflow-type: tm+mt
-source-wordcount: '3387'
+source-wordcount: '3409'
 ht-degree: 98%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 98%
    + [Informazioni sulla versione](/help/release-notes/home.md)
    + Note sulla versione {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2022 {#2022}
+         + [Note sulla versione 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
          + [Note sulla versione 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [Note sulla versione 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
@@ -104,7 +106,7 @@ ht-degree: 98%
    + [Guida alla migrazione a Experience Manager as a Cloud Service per i partner](/help/journey-migration/getting-started-partners.md)
    + Note sulla versione per gli strumenti di migrazione {#release-notes-migration-tools}
       + [Note sulla versione corrente (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + [Notea versione 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+      + [Note sulla versione 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [Note sulla versione 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
          + [Note sulla versione 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
@@ -263,7 +265,9 @@ ht-degree: 98%
    + Integrazione con AEM as a Cloud Service {#integrations}
       + [Integrazione con Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integrazione con Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Configurazione IMS da utilizzare per l’integrazione con Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+      + [Configurazione IMS da utilizzare per l’integrazione con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
@@ -767,7 +771,7 @@ ht-degree: 98%
       + [Utilizzo di CRXDE Lite](/help/implementing/developing/tools/crxde.md)
       + [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md)
       + [Link Externalizer](/help/implementing/developing/tools/externalizer.md)
-      + [Browser del repository](/help/implementing/developing/tools/repository-browser.md)
+      + [Browser dell’archivio](/help/implementing/developing/tools/repository-browser.md)
    + Personalizzazione {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [Configurazione di ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)

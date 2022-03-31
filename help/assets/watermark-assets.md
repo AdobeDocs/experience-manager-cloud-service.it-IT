@@ -5,20 +5,16 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
 # Filtrare le risorse {#watermark-assets}
 
 [!DNL Adobe Experience Manager Assets] consente di aggiungere una filigrana digitale alle immagini. [!DNL Assets] supporta l’applicazione di un’immagine come filigrana ad altri file di immagine. Le filigrane possono aiutare gli utenti a verificare l’autenticità e la proprietà del copyright delle risorse. Inoltre, una filigrana può essere utilizzata per indicare lo stato di un documento come confidenziale, bozza, validità e così via.
-
->[!NOTE]
->
->Questa funzione è disponibile nel canale prerelease. Vedi [Documentazione sul canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) per informazioni su come abilitare la funzione per l’ambiente.
 
 Per configurare [!DNL Experience Manager] per applicare una filigrana alle risorse:
 

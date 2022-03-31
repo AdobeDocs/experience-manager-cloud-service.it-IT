@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
+source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -74,14 +74,45 @@ Il modo più semplice per organizzare le risorse è quello di salvarle nelle car
 
 ## Organizzare le risorse utilizzando i tag {#use-tags-to-organize-assets}
 
-Utilizzando i tag come metadati, puoi facilmente cercare le risorse, creare raccolte utilizzando i risultati della ricerca, aumentare la classificazione della ricerca per alcune risorse e applicare gli algoritmi AI di Adobe Sensei per l’individuazione delle risorse.
+<!--
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] utilizza un algoritmo di apprendimento automatico per creare tag altamente descrittivi che consentono di trovare la risorsa giusta in pochi clic. L’assegnazione tag avanzati utilizza Adobe Sensei, l’intelligenza artificiale e il framework di apprendimento automatico, che possono essere addestrati a riconoscere e applicare tag standard e specifici per il business alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+
+For more information, see the following articles:
+
+* [Edit asset metadata](meta-edit.md)
+* [Smart Tags in Assets](smart-tags.md)
+-->
+
+L’aggiunta di tag alle risorse li rende più facili da recuperare durante una ricerca, creare raccolte utilizzando i risultati della ricerca, aumentare la classificazione della ricerca per alcune risorse e applicare gli algoritmi AI di Adobe Sensei per l’individuazione delle risorse.
+
+[!DNL Adobe Experience Manager Assets] utilizza un algoritmo di apprendimento automatico per creare tag altamente descrittivi che consentono di trovare la risorsa giusta in pochi clic. L’assegnazione tag avanzati utilizza Adobe Sensei, l’intelligenza artificiale e il framework di apprendimento automatico, che possono essere addestrati a riconoscere e applicare tag standard e specifici per il business alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse.
+
+Di seguito sono riportati i passaggi per aggiungere tag a una risorsa:
+
+1. Accedi a [!DNL Experience Manager Assets].
+1. Fai clic su **[!UICONTROL Risorse]** > **[!UICONTROL File]**, seleziona la risorsa e fai clic su **[!UICONTROL Proprietà]** per aprire le proprietà della risorsa.
+1. In **[!UICONTROL Base]** , fai clic sull’icona della cartella in **[!UICONTROL Tag]** metadati. Viene visualizzata una finestra a comparsa.
+1. Cerca o seleziona i tag appropriati dai tag esistenti in `cq-tags`. Puoi assegnare più tag alla risorsa.
+
+   Puoi ordinare la struttura dei tag in ordine crescente o decrescente in base a **[!UICONTROL Nome]** (ordine alfabetico), **[!UICONTROL Creato]** data, oppure **[!UICONTROL Modificato]** data. Nell’illustrazione seguente, la struttura dei tag viene ordinata in ordine alfabetico in base alla variabile **[!UICONTROL Nome]**.
+
+   ![add-tags](assets/add-tags-to-asset.png)
+
+1. Fai clic su **Salva** per aggiornare le modifiche ai metadati della risorsa.
+
+>[!NOTE]
+>
+>È possibile ordinare la struttura dei tag durante la creazione di tag avanzati e quando si applicano filtri di ricerca utilizzando il predicato tags.
+>
+>La funzione di ordinamento dei tag è disponibile nel canale prerelease. Vedi [Documentazione sul canale prerelease](/help/release-notes/prerelease.md#enable-prerelease) per informazioni su come abilitare la funzione per l’ambiente.
 
 Per ulteriori informazioni, consulta i seguenti articoli:
 
 * [Modificare i metadati delle risorse](meta-edit.md)
 * [Tag avanzati nelle risorse](smart-tags.md)
+* [Aggiungi un predicato tag al pannello di ricerca](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## Organizza come raccolte {#organize-as-collections}
 

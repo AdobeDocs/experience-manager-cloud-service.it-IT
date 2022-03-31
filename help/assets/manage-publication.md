@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1435'
 ht-degree: 8%
 
 ---
@@ -61,10 +61,6 @@ Per continuare, fai clic su **[!UICONTROL Successivo]**. In base alla selezione,
 
 ### Aggiungi contenuto {#add-content}
 
->[!NOTE]
->
->Questa funzione è disponibile nel canale prerelease. Vedi [Documentazione sul canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) per informazioni su come abilitare la funzione per l’ambiente.
-
 Pubblicazione su [!DNL Experience Manager Assets] consente di aggiungere ulteriori contenuti (risorse e cartelle) all’elenco di pubblicazione. È possibile aggiungere ulteriori risorse o cartelle all’elenco negli archivi dam. Fai clic su **[!UICONTROL Aggiungi contenuto]** per aggiungere altro contenuto.
 
 È possibile aggiungere più risorse da una cartella o più cartelle alla volta. Ma non è possibile aggiungere risorse da più cartelle alla volta.
@@ -72,10 +68,6 @@ Pubblicazione su [!DNL Experience Manager Assets] consente di aggiungere ulterio
 ![Aggiungi contenuto](assets/manage-publication-add-content.png)
 
 ### Includi impostazioni cartella {#include-folder-settings}
-
->[!NOTE]
->
->Questa funzione è disponibile nel canale prerelease. Vedi [Documentazione sul canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) per informazioni su come abilitare la funzione per l’ambiente.
 
 Per impostazione predefinita, quando si pubblica una cartella in [!DNL Experience Manager Assets] pubblica tutte le risorse, le sottocartelle e i relativi riferimenti.
 

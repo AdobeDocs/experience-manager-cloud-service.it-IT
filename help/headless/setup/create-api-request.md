@@ -2,10 +2,10 @@
 title: Creare una richiesta API - Configurazione headless
 description: Scopri come utilizzare l’API GraphQL per la distribuzione headless di contenuti con frammenti di contenuto e API REST di Assets di AEM per gestire i frammenti di contenuto.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 100%
+source-wordcount: '670'
+ht-degree: 92%
 
 ---
 
@@ -48,13 +48,16 @@ Gli architetti di informazioni dovranno progettare query per i loro endpoint di 
 GraphiQL è un IDE che può essere installato in un ambiente AEM. Segui i passaggi su [Utilizzo di IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) per eseguire l’installazione nell’ambiente AEM.
 
 1. Accedi AEM as a Cloud Service e accedi all’interfaccia GraphiQL:
-   * Esempio: `https://<host>:<port>/content/graphiql.html`.
+   * Esempio: `https://<host>:<port>/aem/graphiql.html`.
 
-1. L’IDE GraphiQL è un editor di query interno al browser per GraphQL. Puoi utilizzarlo per creare query per recuperare frammenti di contenuto e distribuirli direttamente come JSON.
-   * Il pannello a sinistra ti consente di creare la query.
-   * Nel pannello a destra vengono visualizzati i risultati.
+1. L’IDE GraphiQL è un editor di query interno al browser per GraphQL. Puoi utilizzarlo per creare query per recuperare frammenti di contenuto e distribuirli senza problemi come JSON.
+   * L’elenco a discesa in alto a destra consente di selezionare l’endpoint.
+   * Un pannello a sinistra elenca le query persistenti (se disponibili)
+   * Il pannello centrale a sinistra consente di generare la query.
+   * Nel pannello centrale a destra sono visualizzati i risultati.
    * L’editor delle query dispone del completamento del codice e dei tasti di scelta rapida per eseguire facilmente la query.
-      ![Editor GraphiQL](../assets/graphiql.png)
+
+   ![Editor GraphiQL](../assets/graphiql.png)
 
 1. Supponendo che il modello che abbiamo creato si chiama `person` con campi `firstName`, `lastName` e `position`, possiamo creare una semplice query per recuperare il contenuto del frammento di contenuto.
 
