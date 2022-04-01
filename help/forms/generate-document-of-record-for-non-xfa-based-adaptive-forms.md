@@ -2,9 +2,9 @@
 title: Genera documento di record per Forms adattivo
 description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
+source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
 workflow-type: tm+mt
-source-wordcount: '3678'
+source-wordcount: '3658'
 ht-degree: 2%
 
 ---
@@ -403,10 +403,6 @@ L’impostazione del componente Documento di record è disponibile nelle relativ
 * **Escludere i campi dal DoR se nascosti:** L&#39;impostazione della proprietà sostituisce il comportamento della proprietà a livello di campo &quot;Escludi dal documento di record&quot; quando non è true. Se i campi sono nascosti al momento dell’invio del modulo, vengono esclusi dal documento se la proprietà è impostata su true, purché la proprietà &quot;Escludi dal documento di record&quot; non sia impostata.
 
 ## Utilizzare un file XCI personalizzato
-
->[!NOTE]
->
-> Questa funzione è disponibile nel canale prerelease. Vedi [Documentazione sul canale prerelease](/help/release-notes/prerelease.md#enable-prerelease) per informazioni su come abilitare la funzione per l’ambiente.
 
 Un file XCI consente di impostare varie proprietà di un documento. Forms as a Cloud Service ha un file XCI principale. È possibile utilizzare un file XCI personalizzato per sostituire una o più proprietà predefinite specificate nel file XCI master. Ad esempio, è possibile scegliere di incorporare un font in un documento o di abilitare la proprietà tagged per tutti i documenti. La tabella seguente specifica le opzioni XCI:
 
