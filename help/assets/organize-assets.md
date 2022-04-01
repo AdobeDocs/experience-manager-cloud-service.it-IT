@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 1%
@@ -73,17 +73,6 @@ Il modo più semplice per organizzare le risorse è quello di salvarle nelle car
 * Se una risorsa è già stata pubblicata, puoi utilizzare [!DNL Experience Manager] per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione. La posizione originale della risorsa pubblicata è ancora disponibile insieme alla nuova risorsa ripubblicata. La risorsa pubblicata originale, tuttavia, è *smarrito* a [!DNL Experience Manager] e non può essere annullata la pubblicazione. Di conseguenza, come best practice, prima annulla la pubblicazione di una risorsa e poi spostala in un’altra cartella.
 
 ## Organizzare le risorse utilizzando i tag {#use-tags-to-organize-assets}
-
-<!--
-Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
-
-[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
-
-For more information, see the following articles:
-
-* [Edit asset metadata](meta-edit.md)
-* [Smart Tags in Assets](smart-tags.md)
--->
 
 L’aggiunta di tag alle risorse li rende più facili da recuperare durante una ricerca, creare raccolte utilizzando i risultati della ricerca, aumentare la classificazione della ricerca per alcune risorse e applicare gli algoritmi AI di Adobe Sensei per l’individuazione delle risorse.
 
