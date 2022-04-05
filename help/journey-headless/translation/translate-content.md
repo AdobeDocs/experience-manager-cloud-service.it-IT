@@ -2,12 +2,13 @@
 title: Traduci contenuto (AEM headless)
 description: Utilizza il connettore di traduzione e le regole per tradurre i contenuti headless.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
+
 
 # Traduci contenuto {#translate-content}
 
@@ -21,6 +22,10 @@ Nel documento precedente del percorso di traduzione senza testa AEM, [Configurar
 * Puoi definire le tue regole di traduzione.
 
 Ora che le regole del connettore e delle traduzioni sono configurate, questo articolo ti guida attraverso il passaggio successivo per tradurre i tuoi contenuti headless.
+
+>[!NOTE]
+>
+>Se hai saltato il [Configurare le regole di traduzione](translation-rules.md) passaggio di questo percorso perché sei sul canale pre-rilascio di AEM as a Cloud Service, non devi preoccuparti di regole di traduzione come indicato in questo documento.
 
 ## Obiettivo {#objective}
 

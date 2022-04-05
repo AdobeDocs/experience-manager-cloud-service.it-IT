@@ -4,9 +4,9 @@ description: Scopri come le regole di traduzione identificano i contenuti da tra
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1292'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,22 @@ Le regole di traduzione identificano il contenuto da tradurre per le pagine, i c
 >[!TIP]
 >
 >Se non hai ancora tradotto i contenuti, consulta la nostra [Percorso di traduzione dei siti,](/help/journey-sites/translation/overview.md) percorso guidato attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
+
+## Frammenti di contenuto e regole di traduzione {#content-fragments}
+
+Le regole di traduzione descritte in questo documento si applicano ai frammenti di contenuto solo se il **Abilita campi del modello di contenuto per la traduzione** l&#39;opzione non è stata attivata nella [livello di configurazione del framework di integrazione della traduzione.](integration-framework.md#assets-configuration-properties)
+
+Se la **Abilita campi del modello di contenuto per la traduzione** è attiva, AEM utilizzerà **Traducibile** campo su [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#properties) per determinare se il campo deve essere tradotto. In questo caso, [regole di traduzione](rules.md) sono sostituiti.
+
+Se desideri utilizzare le regole di traduzione per tradurre i Frammenti di contenuto, l’ **Abilita campi del modello di contenuto per la traduzione** l&#39;opzione nella configurazione del framework di integrazione della traduzione deve essere disabilitata.
+
+>[!NOTE]
+>
+>Questa funzione è disponibile nel canale prerelease.
+> 
+>Consulta la sezione [Documentazione sul canale prerelease](/help/release-notes/prerelease.md#enable-prerelease) per informazioni su come abilitare la funzione per il tuo ambiente.
+
+## Panoramica {#overview}
 
 Le pagine e le risorse sono rappresentate come nodi nell’archivio JCR. Il contenuto estratto è uno o più valori di proprietà dei nodi. Le regole di traduzione identificano le proprietà che contengono il contenuto da estrarre.
 

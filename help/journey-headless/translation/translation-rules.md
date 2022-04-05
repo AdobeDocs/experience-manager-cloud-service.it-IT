@@ -2,9 +2,9 @@
 title: Configura le regole di traduzione (AEM headless)
 description: Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,15 @@ Nel documento precedente del percorso di traduzione senza testa AEM, [Configurar
 * È possibile impostare la propria connessione al servizio di traduzione.
 
 Ora che il connettore è configurato, questo articolo illustra il passaggio successivo per identificare il contenuto da tradurre.
+
+>[!CAUTION]
+>
+>Questo passaggio del percorso di documentazione è necessario solo se non ti trovi sul canale pre-rilascio di AEM as a Cloud Service.
+>
+>* Se ti trovi sul canale prerelease, passa al passaggio successivo del percorso [Traduci il contenuto.](translate-content.md)
+>* Se non sei sul canale prerelease, continua a leggere questo documento.
+>
+>Consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sul canale prerelease.
 
 ## Obiettivo {#objective}
 
@@ -99,3 +108,4 @@ Sviluppa questa conoscenza e continua il tuo percorso di traduzione senza testa 
 Mentre si consiglia di passare alla parte successiva del percorso di traduzione headless rivedendo il documento [Tradurre il contenuto,](translate-content.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
 
 * [Identificazione del contenuto da tradurre](/help/sites-cloud/administering/translation/rules.md) - Scopri come le regole di traduzione identificano i contenuti da tradurre.
+* [AEM Canale pre-rilascio as a Cloud Service](/help/release-notes/prerelease.md#enable-prerelease) - Scopri come effettuare il consenso al canale prerelease di AEM as a Cloud Service per provare nuove funzionalità in arrivo.

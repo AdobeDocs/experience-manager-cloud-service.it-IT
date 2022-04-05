@@ -4,9 +4,9 @@ description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
+source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '2948'
 ht-degree: 1%
 
 ---
@@ -219,36 +219,37 @@ Durante l&#39;importazione alla rinfusa, [!DNL Experience Manager] cerca le cart
 
 **Gestione del nome della risorsa nell’importazione in blocco**
 
-Per i nomi dei file delle risorse, il nome e il percorso Jcr vengono bonificati utilizzando l’API: `JcrUtil.escapeIllegalJcrChars`.
+Per i nomi dei file delle risorse, il nome e il percorso JCR vengono bonificati utilizzando l’API: `JcrUtil.escapeIllegalJcrChars`.
 
-* Mantenere l&#39;unicode così com&#39;è
-* Sostituisci i caratteri speciali con il relativo codice di escape URL, ad esempio: `new*asset.png` è stato aggiornato a `new%2Aasset.png`:
+* I caratteri Unicode non vengono modificati
+* Sostituisci i caratteri speciali con il relativo codice di escape URL, ad esempio: `new asset.png` è stato aggiornato a `new%20asset.png`:
 
    ```
-          URL escape code   
+                   URL escape code   
    
-   "         %22
-   %         %25
-   '         %27
-   *         %2A
-   .         %2E
-   /         %2F
-   :         %3A
-   [         %5B
-   \n        %5Cn
-   \r        %5Cr
-   \t        %5Ct
-   ]         %5D
-   |         %7C
+   "               %22
+   %               %25
+   '               %27
+   *               %2A
+   .               %2E
+   /               %2F
+   :               %3A
+   [               %5B
+   \n              %5Cn
+   \r              %5Cr
+   \t              %5Ct
+   ]               %5D
+   |               %7C
+   space char      %20
    ```
 
 **Gestione del nome della cartella nell’importazione in serie**
 
-Per i nomi dei file delle cartelle, il nome e il percorso Jcr vengono bonificati utilizzando l’API: `JcrUtil.createValidName`.
+Per i nomi dei file delle cartelle, il nome e il percorso JCR vengono bonificati utilizzando l’API: `JcrUtil.createValidName`.
 
-* Converti maiuscole in minuscole
-* Mantieni unicode così com&#39;è
-* Sostituisci i caratteri speciali con il trattino (&#39;-&#39;), ad esempio: `new*asset.png` è stato aggiornato a `new-asset.png`:
+* I caratteri maiuscoli vengono convertiti in lettere minuscole
+* I caratteri Unicode non vengono modificati
+* Sostituisci i caratteri speciali con il trattino (&#39;-&#39;), ad esempio: `new asset.png` è stato aggiornato a `new-asset.png`:
 
    ```
    "                           
@@ -267,9 +268,10 @@ Per i nomi dei file delle cartelle, il nome e il percorso Jcr vengono bonificati
    {                         
    }                         
    |                           
-   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
-   \      Not allowed in Azure, allowed in AWS.
-   \t                          
+   /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \         Not allowed in Azure, allowed in AWS.
+   \t
+   space     It is the space character.
    ```
 
 <!-- 

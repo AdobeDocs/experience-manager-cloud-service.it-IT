@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Comunicazioni
 description: Unisci automaticamente i dati con i modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,10 @@ ht-degree: 0%
 
 # Utilizzare l’elaborazione sincrona {#sync-processing-introduction}
 
-La funzionalità di comunicazione consente di creare documenti approvati, personalizzati e standardizzati per il marchio, ad esempio corrispondenze aziendali, dichiarazioni, lettere di elaborazione delle richieste di rimborso, note sui benefit, fatture mensili o kit di benvenuto.
+Le comunicazioni consentono di creare, assemblare e distribuire comunicazioni personalizzate e orientate al marchio, ad esempio corrispondenze aziendali, documenti, dichiarazioni, lettere di elaborazione delle richieste, note sui benefit, lettere di elaborazione delle richieste, fatture mensili e kit di benvenuto. È possibile utilizzare le API di comunicazione per combinare un modello (XFA o PDF) con i dati dei clienti per generare documenti nei formati PDF, PS, PCL, DPL, IPL e ZPL.
 
-La funzionalità fornisce API per generare e manipolare i documenti. È possibile generare o manipolare un documento su richiesta oppure creare un processo batch per generare più documenti a intervalli definiti.
+Considerare uno scenario in cui si dispone di uno o più modelli e più record di dati XML per ciascun modello. Puoi utilizzare le API di comunicazione per generare un documento di stampa per ogni record. <!-- You can also combine the records into a single document. --> Il risultato è un documento PDF non interattivo. Un documento PDF non interattivo non consente agli utenti di immettere dati nei campi.
+
 
 Le comunicazioni forniscono API per la generazione di documenti on-demand e pianificati. Puoi utilizzare le API sincrone per le API on-demand e batch (API asincrone) per la generazione pianificata dei documenti:
 
@@ -24,7 +25,19 @@ Le comunicazioni forniscono API per la generazione di documenti on-demand e pian
 
 ## Utilizzare le operazioni sincrone {#batch-operations}
 
-Un&#39;operazione sincrona è un processo di generazione o manipolazione di documenti in modo lineare. Supporta due tipi di autenticazione:
+Un&#39;operazione sincrona è un processo di generazione di documenti in modo lineare. Sono disponibili API separate per:
+
+* Genera un documento di PDF da un modello e vi unisce i dati.
+* Generare un documento PostScript (PS), PCL (Printer Command Language), Zebra Printing Language (ZPL) da un file XDP o da un documento PDF.
+* Assemblare documenti PDF
+* Smontare documenti PDF
+* Convertire un documento in un documento conforme a PDF/A
+* Convalida di un documento conforme a PDF/A
+
+
+### Autenticazione di una chiamata API
+
+Le operazioni sincrone supportano due tipi di autenticazione:
 
 * **Autenticazione di base**: L’autenticazione di base è un semplice schema di autenticazione integrato nel protocollo HTTP. Il client invia richieste HTTP con l&#39;intestazione Autorizzazione che contiene la parola Base seguita da uno spazio e da una stringa con codifica base64 username:password. Ad esempio, per autorizzare come amministratore / amministratore il client invia Basic [nome utente stringa codificato base64]: [password della stringa con codifica base64].
 
@@ -40,16 +53,17 @@ Un&#39;operazione sincrona è un processo di generazione o manipolazione di docu
    >
    >Adobe consiglia di utilizzare l’autenticazione basata su token in un ambiente di produzione.
 
-### (Solo API per la generazione di documenti)Prerequisiti {#pre-requisites}
 
-Per utilizzare le API sincrone per la generazione di documenti, è necessario quanto segue:
+### (Solo per le API di generazione dei documenti) Configura risorse e autorizzazioni
+
+Per utilizzare le API sincrone, è necessario quanto segue:
 
 * Modelli PDF o XDP
 * [Dati da unire con i modelli](#form-data)
 * Utenti con privilegi di amministratore di Experience Manager
 * Caricare modelli e altre risorse nell’istanza di Cloud Service Experience Manager Forms
 
-#### Carica modelli e altre risorse nell’istanza di Experience Manager
+### (Solo per le API di generazione dei documenti) Carica modelli e altre risorse nell’istanza di Experience Manager
 
 In genere, un&#39;organizzazione dispone di più modelli. Ad esempio, un modello per i rendiconti della carta di credito, i rendiconti benefici e le applicazioni di credito. Carica tutti i modelli XDP e PDF nella tua istanza Experience Manager. Per caricare un modello:
 
@@ -58,14 +72,10 @@ In genere, un&#39;organizzazione dispone di più modelli. Ad esempio, un modello
 1. Fai clic su Crea > Cartella e crea una cartella. Apri la cartella.
 1. Fai clic su Crea > Carica file e carica i modelli.
 
-### Utilizza l’API sincrona per generare documenti
 
-Sono disponibili API separate per:
+### Richiamare un’API
 
-* Genera un documento di PDF da un modello e vi unisce i dati.
-* Generare un documento PostScript (PS), PCL (Printer Command Language), Zebra Printing Language (ZPL) da un file XDP o da un documento PDF.
-
-La [Documentazione di riferimento API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API è disponibile anche in formato .yaml. Puoi scaricare il file .yaml per [API sincrone](assets/sync.yaml) e caricalo su postman per verificare la funzionalità delle API.
+La [Documentazione di riferimento API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API fornisce anche il file di definizione API in formato .yaml. Puoi scaricare il file .yaml e caricarlo su postman per verificare la funzionalità delle API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 

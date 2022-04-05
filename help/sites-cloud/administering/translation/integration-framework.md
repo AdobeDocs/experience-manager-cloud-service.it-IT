@@ -4,9 +4,9 @@ description: Scopri come configurare il framework di integrazione della traduzio
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 917f5790fb36fd1560ba43c67f8072616b605894
+source-git-commit: 5ef9ac087ec3feab9c68935b81882451c308daed
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1535'
 ht-degree: 2%
 
 ---
@@ -67,11 +67,7 @@ Dopo aver configurato un framework di integrazione della traduzione, puoi [assoc
 >
 >Per una panoramica delle funzioni di traduzione dei contenuti di AEM, vedi [Traduzione di contenuti per siti multilingue](overview.md).
 
-Una singola configurazione del framework controlla come tradurre il contenuto e le risorse della pagina.
-
-![Configurazione della traduzione](../assets/translation-configuration.png)
-
-Per creare una nuova configurazione di traduzione:
+Una singola configurazione del framework controlla come vengono tradotti il contenuto e le risorse della pagina. Per creare una nuova configurazione di traduzione:
 
 1. In [menu di navigazione globale,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) tocca o fai clic su **Strumenti -> Cloud Services - e Cloud Services di traduzione**.
 1. Passa alla posizione in cui desideri creare la configurazione nella struttura del contenuto. Questo è spesso basato su un sito specifico o può essere globale.
@@ -85,28 +81,41 @@ Per creare una nuova configurazione di traduzione:
 
 La **Sites** controlla come viene eseguita la traduzione del contenuto della pagina.
 
+![Configurazione della traduzione per Sites](../assets/translation-configuration.png)
+
 | Proprietà | Descrizione |
 |---|---|
-| Flusso di lavoro per traduzione | Questa proprietà definisce il metodo di traduzione eseguito dal framework per il contenuto del sito:<br>- Traduzione automatica: Il provider di traduzione esegue la traduzione utilizzando la traduzione automatica in tempo reale.<br>- Traduzione umana: Il contenuto viene inviato al provider di traduzione per essere tradotto dai traduttori.<br>- Non Tradurre: Il contenuto non viene inviato per la traduzione. Questo consente di saltare alcuni rami di contenuto che non sarebbero tradotti ma che potrebbero essere aggiornati con i contenuti più recenti. |
+| Metodo di traduzione | Questa proprietà definisce il metodo di traduzione eseguito dal framework per il contenuto del sito:<br>- Traduzione automatica: Il provider di traduzione esegue la traduzione utilizzando la traduzione automatica in tempo reale.<br>- Traduzione umana: Il contenuto viene inviato al provider di traduzione per essere tradotto dai traduttori.<br>- Non Tradurre: Il contenuto non viene inviato per la traduzione. Questo consente di saltare alcuni rami di contenuto che non sarebbero tradotti ma che potrebbero essere aggiornati con i contenuti più recenti. |
 | Provider traduzione | Questa proprietà definisce il provider di traduzione per eseguire la traduzione. Un provider viene visualizzato nell&#39;elenco quando è installato il connettore corrispondente. |
 | Categoria contenuto | (Solo traduzione automatica) Questa proprietà è una categoria che descrive il contenuto che si sta traducendo. La categoria può influenzare la scelta della terminologia e della formulazione durante la traduzione dei contenuti. |
 | Traduci tag | Questa opzione consente di tradurre i tag associati alla pagina. |
 | Traduci risorse di pagina | Questa proprietà definisce come tradurre le risorse aggiunte ai componenti dal file system o a cui si fa riferimento dalle risorse:<br>- Non tradurre: Le risorse di pagina non sono tradotte.<br>- Utilizzo del flusso di lavoro di traduzione dei siti: Le risorse vengono gestite in base alle proprietà di configurazione nel **Sites** scheda .<br>- Utilizzo del flusso di lavoro di traduzione delle risorse: Le risorse vengono gestite in base alle proprietà configurate nel **Risorse** scheda . |
 | Esegui automaticamente traduzione | Abilita questa proprietà per eseguire automaticamente i processi di traduzione dopo la creazione dei progetti di traduzione. Non è possibile esaminare e ampliare il processo di traduzione quando si seleziona questa opzione. |
+| Disattiva la traduzione solo aggiornamento | Quando questa opzione è selezionata, l’aggiornamento del progetto di traduzione invierà tutti i campi traducibili per la traduzione, non solo quelli modificati dall’ultima traduzione. |
 
 ### Proprietà di configurazione delle risorse {#assets-configuration-properties}
 
 Le proprietà delle risorse controllano come configurare le risorse. Per ulteriori informazioni sulla traduzione delle risorse, consulta [Creazione di copie per lingua per le risorse](/help/assets/translate-assets.md).
 
+![Configurazione della traduzione per Sites](../assets/translation-configuration-assets.png)
+
 | Proprietà | Descrizione |
 |---|---|
-| Flusso di lavoro per traduzione | Questa proprietà seleziona il tipo di traduzione eseguito dal framework per le risorse:<br>- Traduzione automatica: Il provider di traduzione esegue la traduzione immediatamente utilizzando la traduzione automatica.<br>- Traduzione umana: Il contenuto viene inviato automaticamente al provider di traduzione per essere tradotto manualmente.<br>-Non tradurre: Le risorse non vengono inviate per la traduzione. |
+| Metodo di traduzione | Questa proprietà seleziona il tipo di traduzione eseguito dal framework per le risorse:<br>- Traduzione automatica: Il provider di traduzione esegue la traduzione immediatamente utilizzando la traduzione automatica.<br>- Traduzione umana: Il contenuto viene inviato automaticamente al provider di traduzione per essere tradotto manualmente.<br>-Non tradurre: Le risorse non vengono inviate per la traduzione. |
 | Provider traduzione | Questa proprietà definisce il provider di traduzione per eseguire la traduzione. Un provider viene visualizzato nell&#39;elenco quando è installato il connettore corrispondente. |
 | Categoria contenuto | (Solo traduzione automatica) Questa proprietà descrive il contenuto che si sta traducendo. La categoria può influenzare la scelta della terminologia e della formulazione durante la traduzione dei contenuti. |
 | Traduci risorse | Attiva questa proprietà per includere le risorse nel progetto di traduzione. |
 | Traduci metadati | Attiva questa proprietà per tradurre i metadati della risorsa. |
 | Traduci tag | Attiva questa proprietà per tradurre i tag associati alla risorsa. |
 | Esegui automaticamente traduzione | Selezionare questa proprietà per eseguire automaticamente i processi di traduzione dopo la creazione dei progetti di traduzione. Non è possibile rivedere o ampliare il processo di traduzione quando si seleziona questa opzione. |
+| Disattiva la traduzione solo aggiornamento | Quando questa opzione è selezionata, l’aggiornamento del progetto di traduzione invierà tutti i campi traducibili per la traduzione, non solo quelli modificati dall’ultima traduzione. |
+| Abilita campi modello di contenuto per la traduzione* | L’abilitazione di questa opzione utilizza la variabile **Traducibile** campo su [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#properties) per determinare se il campo è tradotto. In questo caso, [regole di traduzione](rules.md) sono sostituiti. |
+
+>[!NOTE]
+>
+>*Questa funzione è disponibile nel canale prerelease.
+> 
+>Consulta la sezione [Documentazione sul canale prerelease](/help/release-notes/prerelease.md#enable-prerelease) per informazioni su come abilitare la funzione per il tuo ambiente.
 
 ## Configurazione delle pagine per la traduzione {#configuring-pages-for-translation}
 
