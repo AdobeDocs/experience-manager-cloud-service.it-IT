@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 1e2b58015453c194af02fdae62c3735727981da1
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 1%
+source-wordcount: '1534'
+ht-degree: 0%
 
 ---
 
@@ -84,6 +84,51 @@ Per aggiungere o aggiornare origini dati a un modello dati modulo esistente, pro
 >[!NOTE]
 >
 >Dopo aver aggiunto nuove origini dati o aggiornato le origini dati esistenti in un modello dati del modulo, assicurarsi di aggiornare i riferimenti di binding, come appropriato, in Forms adattivo<!--and interactive communications--> che utilizzano il modello dati del modulo aggiornato.
+
+## Configurazioni in base al contesto per modalità di esecuzione specifiche {#runmode-specific-context-aware-config}
+
+[!UICONTROL Modello dati modulo] utilizza [Configurazioni basate sul contesto Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) per supportare diversi parametri dell’origine dati per la connessione con origini dati diverse [!DNL Experience Manager] modalità di esecuzione.
+
+Quando [!UICONTROL Modello dati modulo] utilizza le configurazioni cloud per memorizzare i parametri, che quando vengono archiviati e distribuiti tramite il controllo del codice sorgente (archivio GIT di Cloud-Manager) crea una configurazione cloud con gli stessi parametri per tutte le modalità di esecuzione (Sviluppo, Stage e Produzione). Tuttavia, per i casi d’uso in cui è necessario disporre di set di dati diversi per gli ambienti di test e produzione, utilizziamo i parametri dell’origine dati (ad esempio l’URL dell’origine dati) per diversi [!DNL Experience Manager] modalità di esecuzione.
+
+A questo scopo, devi creare una configurazione OSGi che contenga coppie parametri-valore dell’origine dati. Questo sostituisce la stessa coppia da [!UICONTROL Modello dati modulo] configurazione cloud in fase di esecuzione. Poiché le configurazioni OSGi supportano queste modalità di esecuzione per impostazione predefinita, è possibile sostituire un parametro di origine dati con valori diversi in base alla modalità di esecuzione.
+
+Per abilitare configurazioni cloud specifiche per la distribuzione in [!UICONTROL Modello dati modulo]:
+
+1. Crea la configurazione cloud nell’istanza di sviluppo locale. Per i passaggi dettagliati vedi [Come configurare le origini dati](/help/forms/configure-data-sources.md).
+
+1. Archivia la configurazione cloud nel file system.
+   1. Crea pacchetto con filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Usa lo stesso `{foldername}` come al punto 1. E sostituiscono `fdm` con `azurestorage` per la configurazione di archiviazione di Azure.
+   1. Crea e scarica il pacchetto. Per maggiori dettagli, vedi [azioni pacchetto](/help/implementing/developing/tools/package-manager.md).
+
+1. Integrare la configurazione cloud in [!DNL Experience Manager] Progetto Archetype.
+   1. Decomprimi il pacchetto scaricato.
+   1. Copia `jcr_root` e inseriscila nella cartella `ui.content` > `src` > `main` > `content`.
+   1. Aggiorna `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` per contenere il filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Per maggiori dettagli, vedi [modulo ui.content di AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Quando questo progetto archetipo viene distribuito tramite la pipeline CM, la stessa configurazione cloud viene installata su tutti gli ambienti (o modalità runmode). Per modificare il valore dei campi (come URL) delle configurazioni cloud basate sull’ambiente, utilizza la configurazione OSGi descritta nel passaggio seguente.
+
+1. Crea una configurazione in base al contesto Apache Sling. Per creare la configurazione OSGi:
+   1. **Configurare i file di configurazione OSGi in [!DNL Experience Manager] Progetto Archetype.**
+Creare file di configurazione OSGi Factory con PID 
+`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Crea un file con lo stesso nome in ciascuna cartella della modalità di esecuzione in cui i valori devono essere modificati in base alla modalità di esecuzione. Per maggiori dettagli, vedi [Configurazione di OSGi per [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+
+   1. **Imposta il json di configurazione OSGI.** Per utilizzare il provider di sostituzione della configurazione in base al contesto Apache Sling:
+      1. Su un&#39;istanza di sviluppo locale `/system/console/configMgr`, seleziona la configurazione OSGi di fabbrica con il nome **[!UICONTROL Provider di sostituzione della configurazione in base al contesto Apache Sling: Configurazione OSGi]**.
+      1. Fornisci una descrizione.
+      1. Seleziona **[!UICONTROL abilitato]**.
+      1. In Sostituzioni, fornisci i campi che devono essere modificati in base all’ambiente nella sintassi di sostituzione sling. Per maggiori dettagli, vedi [Configurazione in base al contesto Apache Sling - Ignora](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Esempio, `cloudconfigs/fdm/{configName}/url="newURL"`.
+È possibile aggiungere più sostituzioni selezionando **[!UICONTROL +]**.
+      1. Seleziona **[!UICONTROL Salva]**.
+      1. Per ottenere il JSON di configurazione OSGi, segui i passaggi in [Generazione di configurazioni OSGi tramite l’SDK Quickstart AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
+      1. Posiziona JSON nei file di configurazione di fabbrica OSGi creati nel passaggio precedente.
+      1. Modifica il valore di `newURL` in base all&#39;ambiente (o modalità runmode).
+      1. Per modificare il valore segreto in base alla modalità di esecuzione, è possibile creare una variabile segreta utilizzando [API di cloud manager](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e successivamente possono essere referenziati nel [Configurazione OSGi](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
+Quando questo progetto archetipo viene distribuito tramite la pipeline CM, override fornisce valori diversi in ambienti diversi (o modalità di esecuzione).
+
+      >[!NOTE]
+      >
+      >[!DNL Adobe Managed Service] gli utenti possono crittografare i valori segreti utilizzando il supporto di crypto (per ulteriori informazioni, consulta [supporto per la crittografia delle proprietà di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) e inserire testo crittografato nel valore dopo [le configurazioni in base al contesto sono disponibili in service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
+
+1. Aggiornare le definizioni delle origini dati utilizzando l’opzione per aggiornare le definizioni delle origini dati in [Editor modelli dati modulo](#data-sources) per aggiornare la cache FDM tramite l’interfaccia utente FDM e ottenere la configurazione più recente.
 
 ## Passaggi successivi {#next-steps}
 
