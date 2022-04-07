@@ -3,9 +3,9 @@ title: Configurazione di pipeline non di produzione
 description: Scopri come configurare le pipeline non di produzione per testare la qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1119'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,7 @@ Per completare la configurazione della pipeline di non produzione del codice fro
    >Vedere il documento [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) per scoprire come aggiungere e gestire archivi in Cloud Manager.
 
    * **Ramo Git** - Questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
+      * Immetti i primi caratteri del nome del ramo e la funzione di completamento automatico di questo campo troverà i rami corrispondenti per aiutarti a selezionare.
    * **Posizione codice** - Questa opzione definisce il percorso nel ramo dell’archivio selezionato da cui la pipeline deve recuperare il codice.
 
    ![Gasdotto front-end](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -102,7 +103,8 @@ Per completare la configurazione della pipeline di non produzione del codice ful
    >Vedere il documento [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) per scoprire come aggiungere e gestire archivi in Cloud Manager.
 
    * **Ramo Git** - Questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
-   * **Ignora configurazione livello web** -
+      * Immetti i primi caratteri del nome del ramo e la funzione di completamento automatico di questo campo troverà i rami corrispondenti per aiutarti a selezionare.
+   * **Ignora configurazione livello web** - Se questa opzione è selezionata, la pipeline non distribuirà la configurazione del livello web.
 
    ![pipeline a stack completo](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

@@ -3,9 +3,9 @@ title: Configurazione delle pipeline di produzione
 description: Scopri come configurare le pipeline di produzione per generare e distribuire il codice agli ambienti di produzione.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ Per completare la configurazione della pipeline di produzione del codice front-e
    >Vedere il documento [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) per scoprire come aggiungere e gestire archivi in Cloud Manager.
 
    * **Ramo Git** - Questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
+      * Immetti i primi caratteri del nome del ramo e la funzione di completamento automatico di questo campo troverà i rami corrispondenti per aiutarti a selezionare.
    * **Posizione codice** - Questa opzione definisce il percorso nel ramo dell’archivio selezionato da cui la pipeline deve recuperare il codice.
    * **Sospendi prima dell’implementazione in produzione** - Questa opzione mette in pausa la pipeline prima dell’implementazione in produzione.
 
@@ -104,6 +105,7 @@ Per completare la configurazione della pipeline di produzione del codice full-st
    >Vedere il documento [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) per scoprire come aggiungere e gestire archivi in Cloud Manager.
 
    * **Ramo Git** - Questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
+      * Immetti i primi caratteri del nome del ramo e la funzione di completamento automatico di questo campo troverà i rami corrispondenti per aiutarti a selezionare.
    * **Posizione codice** - Questa opzione definisce il percorso nel ramo dell’archivio selezionato da cui la pipeline deve recuperare il codice.
    * **Sospendi prima dell’implementazione in produzione** - Questa opzione mette in pausa la pipeline prima dell’implementazione in produzione.
    * **Pianificato** - Questa opzione consente all&#39;utente di abilitare la distribuzione di produzione pianificata.
@@ -150,6 +152,7 @@ Per completare la configurazione della pipeline di produzione del codice full-st
    >Vedere il documento [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) per scoprire come aggiungere e gestire archivi in Cloud Manager.
 
    * **Ramo Git** - Questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
+      * Immetti i primi caratteri del nome del ramo e la funzione di completamento automatico di questo campo troverà i rami corrispondenti per aiutarti a selezionare.
    * **Posizione codice** - Questa opzione definisce il percorso nel ramo dell’archivio selezionato da cui la pipeline deve recuperare il codice.
       * Per le pipeline di configurazione livello web, in genere si tratta del percorso contenente `conf.d`, `conf.dispatcher.d`e `opt-in` directory.
       * Ad esempio, se la struttura del progetto è stata generata dal [Archetipo AEM progetto,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) il percorso sarebbe `/dispatcher/src`.
