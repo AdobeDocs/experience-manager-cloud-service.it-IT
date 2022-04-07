@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: a6268415217894dae5d3aae77256855717798d3c
+source-git-commit: 7d3f553765580c1d81a80bea456e9df908939bc0
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,7 @@ Un servizio OData è identificato dall&#39;URL principale del servizio. Per conf
 
 >[!NOTE]
 >
-> Il modello dati del modulo supporta [OData versione 4.0](https://www.odata.org/documentation/) e successivamente.
+> Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
 >Guida dettagliata alla configurazione [!DNL Microsoft Dynamics 365], on-line o on-premise, vedi [[!DNL Microsoft Dynamics] Configurazione OData](ms-dynamics-odata-configuration.md).
 
 1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
