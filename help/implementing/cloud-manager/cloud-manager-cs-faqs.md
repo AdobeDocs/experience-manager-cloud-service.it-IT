@@ -2,9 +2,9 @@
 title: Domande frequenti su Cloud Manager
 description: Trova le risposte alle domande più frequenti su Cloud Manager in AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 5f4bbedaa5c4630d6f955bb0986e8b32444d6aa3
+source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,9 @@ Questo documento fornisce le risposte alle domande più frequenti su Cloud Manag
 
 Sì. Dovrai aggiungere il `maven-toolchains-plugin` con le impostazioni appropriate per Java 11.
 
-* Questo è documentato [qui](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
-* Ad esempio, consulta [codice progetto di esempio wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+Il processo è documentato [qui](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+
+Ad esempio, consulta [codice progetto di esempio wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## La mia build non riesce con un errore su maven-scr-plugin dopo il passaggio da Java 8 a Java 11. Cosa posso fare? {#build-fails-maven-scr-plugin}
 
@@ -33,7 +34,7 @@ Per istruzioni su come rimuovere questo plug-in, vedi [qui.](https://cqdump.word
 
 ## La mia build non riesce con un errore su RequireJavaVersion dopo il passaggio da Java 8 a Java 11. Cosa posso fare? {#build-fails-requirejavaversion}
 
-Per le build di Cloud Manager, l’ `maven-enforcer-plugin` non riesce con questo errore.
+Per le build di Cloud Manager, l’ `maven-enforcer-plugin` può non riuscire con questo errore.
 
 ```text
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
@@ -55,7 +56,9 @@ Ciò consente di installare la distribuzione successiva anche se la versione non
 
 Puoi anche impostare la versione su `-SNAPSHOT` per build o implementazioni di stage e produzione. Cloud Manager imposta automaticamente un numero di versione corretto e crea un tag per te in git. Se necessario, puoi fare riferimento a questo tag in un secondo momento.
 
-## Come funziona il controllo delle versioni di pacchetti e bundle nelle distribuzioni di stage e produzione? {#snapshot-version}
+Ulteriori dettagli sulla gestione delle versioni sono [qui documentato.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+
+## Come funziona il controllo delle versioni di pacchetti e bundle per le distribuzioni di stage e produzione? {#snapshot-version}
 
 Nelle distribuzioni di stage e produzione, viene generata una versione automatica come [qui documentato.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
@@ -86,12 +89,11 @@ La soluzione è quella di aggiungere un [Configurazione di RepositoryInitializer
 
 Nell&#39;errore precedente, il pacchetto `myapp-base.ui.content-*.zip` include il contenuto sotto `/conf` e `/var/workflow`. Affinché la distribuzione abbia successo, è necessario disporre delle autorizzazioni per `sling-distribution-importer` sotto questi percorsi è necessario.
 
-Ecco un esempio [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) di una configurazione OSGi di questo tipo che aggiunge autorizzazioni aggiuntive per `sling-distribution-importer` utente.  Questa configurazione aggiunge le autorizzazioni in `/var`.  Questo file xml qui sotto [1] deve essere aggiunto al pacchetto dell&#39;applicazione in `/apps/myapp/config` (dove myapp è la cartella in cui è memorizzato il codice dell&#39;applicazione).
-org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
+Ecco un esempio di [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) Configurazione OSGi che aggiunge autorizzazioni aggiuntive per `sling-distribution-importer` utente.  La configurazione aggiunge le autorizzazioni in `/var`.  Tale configurazione deve essere aggiunta al pacchetto dell&#39;applicazione in `/apps/myapp/config` (dove myapp è la cartella in cui è memorizzato il codice dell&#39;applicazione).
 
-## L’implementazione di Cloud Manager non riesce al passaggio di distribuzione in AEM as a Cloud Service e ho già una configurazione OSGi RepositoryInitializer. Che altro posso fare? {#build-failures}
+## L’implementazione di Cloud Manager non riesce al passaggio di distribuzione in AEM as a Cloud Service e ho già aggiunto una configurazione OSGi RepositoryInitializer. Che altro posso fare? {#build-failures}
 
-Se [aggiunta di una configurazione OSGi RepositoryInitializer](##cloud-manager-deployment-cloud-service) l&#39;errore non è stato risolto, potrebbe essere dovuto a uno di questi problemi aggiuntivi.
+Se [aggiunta di una configurazione OSGi RepositoryInitializer](#cloud-manager-deployment-cloud-service) l&#39;errore non è stato risolto, potrebbe essere dovuto a uno di questi problemi aggiuntivi.
 
 * La distribuzione potrebbe non riuscire a causa di una configurazione OSGi non valida che interrompe un servizio preconfigurato.
    * Controlla i registri durante la distribuzione per vedere se ci sono errori evidenti.
