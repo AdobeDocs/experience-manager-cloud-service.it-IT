@@ -2,9 +2,9 @@
 title: Creazione di esperienze Commerce
 description: Esperienze di e-commerce di lavoro
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ L’utilizzo di Omnisearch è un modo semplice per i professionisti di trovare A
 
 Il risultato è raggruppato per tipo.
 
-    >[!NOTE]
-    >
-    > La ricerca full-text in Omnisearch non supporta i frammenti di contenuto associati. Utilizza SKU o UID per trovare i frammenti di contenuto associati.
+>[!NOTE]
+>
+> La ricerca full-text in Omnisearch non supporta i frammenti di contenuto associati. Utilizza SKU o UID per trovare i frammenti di contenuto associati.
