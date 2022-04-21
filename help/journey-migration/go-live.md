@@ -2,10 +2,10 @@
 title: Go-Live
 description: Scopri come eseguire la migrazione quando il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 0%
+source-wordcount: '1644'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,7 @@ Prima di eseguire la migrazione della produzione, segui i passaggi di installazi
 Dopo la migrazione iniziale dalla produzione, è necessario eseguire integrazioni incrementali per assicurarsi che il contenuto venga aggiornato sull’istanza cloud. Per questo motivo, si consiglia di seguire le seguenti best practice:
 
 * Raccogliere dati sulla quantità di contenuto. Ad esempio: per una settimana, due settimane o un mese.
-* Pianifica gli integratori in modo da evitare più di 48 ore di estrazione e acquisizione dei contenuti. Questo è consigliato in modo che le integrazioni dei contenuti si adattino a un arco temporale del fine settimana.
+* Pianifica gli integratori in modo da evitare più di 48 ore di estrazione e acquisizione dei contenuti. Questa opzione è consigliata affinché le integrazioni dei contenuti si adattino a un intervallo di tempo del fine settimana.
 * Pianifica il numero di integrazioni richieste e utilizza tali stime per pianificare la data del lancio.
 
 ## Identificare le timeline di blocco del codice e del contenuto per la migrazione {#code-content-freeze}
@@ -82,7 +82,7 @@ Assicurati di eseguire la migrazione dei contenuti in produzione al posto di un 
 Durante la migrazione di produzione, evita di eseguire lo strumento Content Transfer (Trasferimento contenuti) da un clone perché:
 
 * Se un cliente richiede la migrazione delle versioni di contenuto durante le migrazioni degli integratori, l’esecuzione dello strumento Content Transfer (Trasferimento contenuti) da un clone non esegue la migrazione delle versioni. Anche se il clone viene ricreato frequentemente dall’autore live, ogni volta che viene creato un clone i punti di controllo che verranno utilizzati dallo strumento Content Transfer (Trasferimento contenuti) per calcolare i delta vengono reimpostati.
-* Poiché un clone non può essere aggiornato nel suo insieme, il pacchetto ACL Query deve essere utilizzato per creare un pacchetto e installare il contenuto aggiunto o modificato dalla produzione al clone. Il problema con questo approccio è che qualsiasi contenuto eliminato sull&#39;istanza sorgente non arriverà mai al clone a meno che non venga eliminato manualmente sia dall&#39;origine che dal clone. Questo introduce la possibilità che il contenuto eliminato in produzione non venga eliminato dal clone e AEM as a Cloud Service.
+* Poiché un clone non può essere aggiornato nel suo insieme, il pacchetto ACL Query deve essere utilizzato per creare un pacchetto e installare il contenuto aggiunto o modificato dalla produzione al clone. Il problema con questo approccio è che qualsiasi contenuto eliminato sull&#39;istanza sorgente non arriverà mai al clone a meno che non venga eliminato manualmente sia dall&#39;origine che dal clone. Questo introduce la possibilità che il contenuto eliminato in produzione non venga eliminato sul clone e AEM as a Cloud Service.
 
 **Ottimizzazione del carico sulla sorgente AEM durante l’esecuzione della migrazione dei contenuti**
 
@@ -113,13 +113,45 @@ Entrambi gli elementi di cui sopra saranno identificati e segnalati nella [Best 
 
 ## Lista di controllo per la pubblicazione {#Go-Live-Checklist}
 
-Controlla l’elenco delle attività presentato di seguito per assicurarti di poter eseguire una migrazione senza problemi e con successo:
+Controlla questo elenco di attività per assicurarti di eseguire una migrazione fluida e corretta.
 
-* Pianifica un periodo di blocco del codice e del contenuto. Vedi anche [Timeline per la migrazione a blocchi di codice e contenuti](#code-content-freeze).
-* Eseguire l’integrazione del contenuto finale
-* Completare le iterazioni di test
-* Eseguire test di prestazioni e sicurezza
-* Cutover ed esegui la migrazione sull&#39;istanza di produzione
+* Esegui una pipeline di produzione end-to-end con test funzionali e dell’interfaccia utente per garantire un **sempre corrente** AEM esperienza di prodotto. Consulta le risorse seguenti.
+   * [Aggiornamenti della versione di AEM](/help/implementing/deploying/aem-version-updates.md)
+   * [Test funzionale personalizzato](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
+   * [Test dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md)
+* Esegui la migrazione dei contenuti in produzione e assicurati che un sottoinsieme pertinente sia disponibile nella fase di staging per il test.
+   * Tieni presente che le best practice DevOps per AEM implicano che il codice passi dallo sviluppo all’ambiente di produzione mentre [i contenuti vengono spostati dagli ambienti di produzione.](/help/overview/enterprise-devops.md#code-movement)
+* Pianifica un periodo di blocco del codice e del contenuto.
+   * Vedi anche la sezione [Timeline per la migrazione a blocchi di codice e contenuti](#code-content-freeze)
+* Esegui l’integrazione del contenuto finale.
+* Convalida le configurazioni del dispatcher.
+   * Utilizza una convalida del dispatcher locale che facilita la configurazione, la convalida e la simulazione locale del dispatcher
+      * [Imposta gli strumenti del dispatcher locale.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+   * Esamina attentamente la configurazione dell&#39;host virtuale.
+      * La soluzione più semplice (e predefinita) è quella di includere `ServerAlias *` nel file host virtuale nel `/dispatcher/src/conf.d/available_vhostsfolder`.
+         * In questo modo gli alias host utilizzati dai test funzionali del prodotto, dall’annullamento della validità della cache del dispatcher e dai duplicati funzioneranno.
+      * Tuttavia, se `ServerAlias *` non è accettabile, almeno quanto segue `ServerAlias` oltre ai domini personalizzati, le voci devono essere consentite:
+         * `localhost`
+         * `*.local`
+         * `publish*.adobeaemcloud.net`
+         * `publish*.adobeaemcloud.com`
+* Configura CDN, SSL e DNS.
+   * Se utilizzi una rete CDN personalizzata, inserisci un ticket di supporto per configurare l’indirizzamento appropriato.
+      * Vedi la sezione [CDN cliente punta a AEM CDN gestito](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) nella documentazione CDN per ulteriori informazioni.
+      * Sarà necessario configurare SSL e DNS in base alla documentazione del fornitore CDN.
+   * Se non utilizzi un CDN aggiuntivo, gestisci SSL e DNS in base alla documentazione seguente:
+      * Gestione dei certificati SSL
+         * [Introduzione alla gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Gestione del certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      * Gestione dei nomi di dominio personalizzati (DNS)
+         * [Introduzione ai nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [Gestione del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+   * Ricorda di convalidare il set TTL per il record DNS.
+      * Il TTL è il tempo in cui un record DNS rimane in una cache prima di richiedere un aggiornamento al server.
+      * Se si dispone di un TTL molto alto, gli aggiornamenti al record DNS richiederanno più tempo per propagarsi.
+* Esegui test di prestazioni e sicurezza che soddisfino i requisiti e gli obiettivi aziendali.
+* Effettua i passaggi e assicurati che l’effettivo live sia eseguito senza alcuna nuova distribuzione o aggiornamento del contenuto.
 
 È sempre possibile fare riferimento all’elenco nel caso in cui sia necessario ricalibrare le attività durante l’esecuzione della migrazione.
 
