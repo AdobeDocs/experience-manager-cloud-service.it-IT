@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
 source-wordcount: '3421'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -388,7 +388,7 @@ ht-degree: 98%
       + [Avviso di terminazione dei visualizzatori Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fine del ciclo di vita dei visualizzatori DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Integrazione con Adobe Workfront {#integrations}
-      + [Note sulla versione per Workfront, ad Experience Manager connettore avanzato](/help/assets/release-notes-enhanced-connector-workfront.md)
+      + [Note sulla versione del connettore avanzato Workfront per Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [Integrazioni con [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Installa [!DNL enhanced connector] per [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Rimuovere le dipendenze esterne per le installazioni esistenti](/help/assets/remove-external-dependencies.md)
@@ -424,7 +424,7 @@ ht-degree: 98%
       + Aggiungere componenti a un modulo adattivo {#add-components-to-an-adaptive-form}
          + [Utilizzare il CAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms.md)
          + [Utilizza componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-      + Configurare il layout e applicare lo stile a un modulo adattivo{#configure-layout-of-an-adaptive-form}
+      + Configurare il layout e applicare lo stile a un modulo adattivo {#configure-layout-of-an-adaptive-form}
          + [Impostare il layout di un modulo adattivo](/help/forms/layout-capabilities-adaptive-forms.md)
          + [Utilizzare la modalità Layout per ridimensionare i componenti](/help/forms/resize-using-layout-mode.md)
          + [Creare un’esperienza di acquisizione dati in più passaggi](/help/forms/introduction-form-sequence.md)
@@ -556,7 +556,7 @@ ht-degree: 98%
       + [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=it)
       + [Modelli per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=it)
       + [Gestione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=it)
-      + Authoring{#authoring}
+      + Authoring {#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=it)
          + [Editor di testo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=it)
          + [Contenuto associato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=it)
@@ -685,7 +685,7 @@ ht-degree: 98%
          + [Introduzione](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Nomi di dominio personalizzati {#custom-domain-names}
+      + Nomi dominio personalizzati {#custom-domain-names}
          + [Introduzione](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -693,10 +693,10 @@ ht-degree: 98%
          + [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Verifica dello stato del record DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-      + ELENCHI CONSENTITI IP {#ip-allow-lists}
+      + Elenchi indirizzi IP consentiti {#ip-allow-lists}
          + [Introduzione](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Aggiunta di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [Applicazione e annullamento dell’applicazione di Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [Applicazione e annullamento dell’applicazione di Elenchi indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Gestione degli Elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Domande frequenti su Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + Sviluppo per AEM as a Cloud Service {#developing}
@@ -786,7 +786,7 @@ ht-degree: 98%
       + [API ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
       + [Configurazione della segmentazione con ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=it)
    + Configurazione ed estensione di AEM as a Cloud Service {#configuring-and-extending}
-      + Estensione di AEM con App Builder{#app-builder}
+      + Estensione di AEM con App Builder {#app-builder}
          + [Estensione di AEM con Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Introduzione ad App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Console per sviluppatori di Adobe](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
