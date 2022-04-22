@@ -3,9 +3,9 @@ title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2976'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -353,7 +353,7 @@ Per verificare che il traffico sia effettivamente in uscita all’indirizzo IP d
 
 ## Clienti con indirizzi in uscita dedicati legacy {#legacy-dedicated-egress-address-customers}
 
-Se hai effettuato il provisioning con un IP in uscita dedicato prima del 2021.09.30, la funzionalità IP in uscita dedicata supporta solo le porte HTTP e HTTPS.
+Se hai effettuato il provisioning con un IP in uscita dedicato prima del 30.09.2021, la funzionalità IP in uscita dedicata supporta solo le porte HTTP e HTTPS.
 Questo include HTTP/1.1 e HTTP/2 se crittografati.
 
 ## Virtual Private Network (VPN) {#vpn}
