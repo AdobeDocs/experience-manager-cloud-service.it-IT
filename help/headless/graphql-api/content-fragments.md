@@ -4,7 +4,7 @@ description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience M
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2569'
 ht-degree: 100%
 
@@ -241,7 +241,7 @@ Il seguente codice visualizza i percorsi di tutti i frammenti di contenuto creat
 }
 ```
 
-Inoltre, per recuperare un singolo frammento di contenuto di un tipo specifico, è necessario determinarne prima il percorso. Ad esempio:
+Inoltre, per recuperare un singolo frammento di contenuto di un tipo specifico, è necessario determinarne prima il percorso. Esempio:
 
 ```xml
 {
@@ -311,7 +311,7 @@ Vedi [Query di esempio per metadati: elenca i metadati per riconoscimenti con ti
 
 #### Varianti {#variations}
 
-Il campo `_variations` è stato implementato per semplificare l’esecuzione delle query sulle varianti di un frammento di contenuto. Ad esempio:
+Il campo `_variations` è stato implementato per semplificare l’esecuzione delle query sulle varianti di un frammento di contenuto. Esempio:
 
 ```xml
 {
