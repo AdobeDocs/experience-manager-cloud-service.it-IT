@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2022.1.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2022.1.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 7b4f9e3808e3de933f7c1e1fd4f80be078a9ae1a
-workflow-type: tm+mt
+exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
+source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
+workflow-type: ht
 source-wordcount: '1085'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
-
 
 # Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -63,7 +63,7 @@ Dai un’occhiata al video [Panoramica sulla versione di gennaio 2022](https://v
 
 * Le risorse non elaborate senza rendering originale vengono inviate ad Asset Compute per l’elaborazione durante la migrazione delle risorse da AEM on-premise a Cloud Services.
 
-## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
@@ -86,10 +86,10 @@ Dai un’occhiata al video [Panoramica sulla versione di gennaio 2022](https://v
 ### Novità {#what-is-new-cif}
 
 * Componenti myAccount migliorati
-* Il componente Consiglio prodotto supporta tipi di pagina aggiuntivi (home page, carrello acquisti, conferma dell’ordine)
+* Il componente Consiglio di prodotto supporta ulteriori tipi di pagina (pagina home, carrello acquisti, conferma ordine)
 * **Lista dei desideri**
    * I visitatori registrati possono aggiungere prodotti a una lista dei desideri
-   * La gestione della wishlist e dei suoi prodotti è possibile tramite myAccount
+   * È possibile gestire la lista dei desideri e i prodotti contenuti tramite myAccount
    * Il pulsante “Aggiungi alla lista dei desideri” può essere abilitato/disabilitato a livello di componente tramite i criteri (ad esempio, teaser di prodotto, dettaglio di prodotto)
    * Disponibile come componente core e in AEM Venia Storefront
 
