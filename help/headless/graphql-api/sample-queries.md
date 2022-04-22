@@ -4,7 +4,7 @@ description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti he
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
 ht-degree: 100%
 
@@ -1572,7 +1572,7 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 
 #### Azienda {#fragment-company}
 
-| Nome dell’azienda | Amministratore delegato | Dipendenti |
+| Nome dell’azienda | CEO | Dipendenti |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
 |  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
@@ -1609,4 +1609,4 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
 | San Jose |  USA |  102635 |  city:na |
 | Stoccarda |  Germania |  634830 |  city:emea |
-|  Zurigo |  Svizzera |  415367 |  città:capitale<br>città:emea |
+|  Zurigo |  Svizzera |  415367 |  city:capital<br>city:emea |
