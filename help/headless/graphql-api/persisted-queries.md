@@ -1,20 +1,20 @@
 ---
 title: Query GraphQL persistenti
-description: Scopri come persistere le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
+description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 # Query GraphQL persistenti {#persisted-queries-caching}
 
-Le query persistenti sono query GraphQL create e memorizzate sul server as a Cloud Service di Adobe Experience Manager (AEM). Possono essere richiesti con una richiesta GET da parte delle applicazioni client. La risposta di una richiesta GET può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni dell’applicazione client richiedente. Ciò è diverso dalle query GraphQL standard, che vengono eseguite utilizzando richieste POST in cui la risposta non può essere facilmente memorizzata nella cache.
+Le query persistenti sono query GraphQL create e memorizzate sul server di Adobe Experience Manager (AEM) as a Cloud Service. Possono essere richiamate tramite una richiesta GET da parte delle applicazioni client. La risposta di una richiesta GET può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni dell’applicazione client richiedente. In questo sono diverse dalle query GraphQL standard, che vengono eseguite utilizzando richieste POST in cui la risposta non può essere facilmente memorizzata nella cache.
 
-La [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) è disponibile in AEM (per impostazione predefinita, `dev-author`) per sviluppare, testare e mantenere le query GraphQL, prima di [trasferimento all&#39;ambiente di produzione](#transfer-persisted-query-production). Per i casi che richiedono personalizzazione (ad esempio, quando [personalizzazione della cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) puoi utilizzare l’API; vedi l’esempio curl fornito in [Come persistere una query GraphQL](#how-to-persist-query).
+La [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) è disponibile in AEM (per impostazione predefinita, `dev-author`) per sviluppare, testare e mantenere le query GraphQL, prima del [trasferimento all’ambiente di produzione](#transfer-persisted-query-production). Per i casi che richiedono personalizzazione (come la [personalizzazione della cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) puoi utilizzare l’API; vedi l’esempio curl fornito in [Persistenza di una query GraphQL](#how-to-persist-query).
 
 ## Query ed endpoint persistenti {#persisted-queries-and-endpoints}
 
@@ -30,7 +30,7 @@ Ad esempio, per creare una query persistente per la configurazione di Sites WKND
 >
 >Per ulteriori dettagli, vedi [Abilitare la funzionalità Frammenti di contenuto nel browser configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
 >
->La **Query persistenti GraphQL** deve essere abilitato per la configurazione Sites appropriata.
+>Per la configurazione di Sites appropriata, è necessario abilitare **query GraphQL persistenti**.
 
 Ad esempio, se vi è una particolare query denominata `my-query`, che utilizza un modello `my-model` della configurazione Sites `my-conf`:
 
@@ -47,13 +47,13 @@ Ad esempio, se vi è una particolare query denominata `my-query`, che utilizza u
 
 ## Rendere persistente una query GraphQL {#how-to-persist-query}
 
-Si consiglia di persistere prima delle query in un ambiente di authoring AEM e poi [trasferire la query](#transfer-persisted-query-production) nell&#39;ambiente di produzione AEM pubblicazione, per l&#39;utilizzo da parte delle applicazioni.
+Si consiglia di creare le query persistenti in un ambiente di authoring AEM per poi [trasferire la query](#transfer-persisted-query-production) nell’ambiente di pubblicazione AEM di produzione, per l’utilizzo da parte delle applicazioni.
 
 Esistono diversi metodi per le query persistenti, tra cui:
 
-* IDE GraphiQL - vedi [Salvataggio delle query persistenti](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
-* curl - vedi l&#39;esempio seguente
-* Altri strumenti, compresi [Postman](https://www.postman.com/)
+* IDE GraphiQL: vedi [Salvataggio delle query persistenti](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* curl: vedi l’esempio seguente
+* Altri strumenti, tra cui [Postman](https://www.postman.com/)
 
 Di seguito sono riportati i passaggi per rendere persistente una determinata query utilizzando lo strumento per riga di comando **cURL**:
 
@@ -197,18 +197,18 @@ Di seguito sono riportati i passaggi per rendere persistente una determinata que
 
 ## Trasferimento di una query persistente all’ambiente di produzione  {#transfer-persisted-query-production}
 
-In ultima analisi, la query persistente deve trovarsi nell’ambiente di pubblicazione di produzione (di AEM as a Cloud Service), dove può essere richiesta dalle applicazioni client. Per utilizzare una query persistente nell&#39;ambiente di pubblicazione di produzione, la relativa struttura persistente deve essere replicata:
+In ultima analisi, la query persistente deve trovarsi nell’ambiente di pubblicazione di produzione (di AEM as a Cloud Service), dove può essere richiesta dalle applicazioni client. Per utilizzare una query persistente nell’ambiente di pubblicazione di produzione, è necessario che la relativa struttura persistente venga replicata:
 
 * inizialmente all’autore di produzione per la convalida dei contenuti appena creati con le query,
-* poi infine alla produzione pubblicare per il consumo in diretta
+* infine alla pubblicazione di produzione per l’utilizzo live
 
-Esistono diversi approcci per trasferire la query persistente:
+Esistono diversi approcci per il trasferimento di una query persistente:
 
 1. Utilizzo di un pacchetto:
    1. Crea una nuova definizione di pacchetto.
    1. Includi la configurazione (ad esempio, `/conf/wknd/settings/graphql/persistentQueries`).
    1. Crea il pacchetto.
-   1. Trasferisci il pacchetto (download/caricamento o replica).
+   1. trasferisci il pacchetto (download/caricamento o replica).
    1. Installa il pacchetto.
 
 1. Utilizzo del metodo POST per la replica:
@@ -229,7 +229,7 @@ Esistono diversi approcci per trasferire la query persistente:
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 -->
 
-Una volta che la configurazione della query è nell’ambiente di pubblicazione in produzione, si applicano gli stessi principi di autenticazione, utilizzando solo l’endpoint di pubblicazione.
+Una volta che la configurazione della query si trova nell’ambiente di pubblicazione di produzione, si applicano gli stessi principi di autenticazione, utilizzando semplicemente l’endpoint di pubblicazione.
 
 >[!NOTE]
 >
@@ -239,7 +239,7 @@ Una volta che la configurazione della query è nell’ambiente di pubblicazione 
 
 ## Codifica dell’URL della query per l’utilizzo da parte di un’app {#encoding-query-url}
 
-Per l’utilizzo da parte di un’applicazione, è necessario codificare tutti i punti e virgola (&quot;;&quot;) negli URL.
+Per l’utilizzo da parte di un’applicazione, è necessario codificare tutti i punti e virgola (“;”) negli URL.
 
 Ad esempio, nella richiesta di esecuzione di una query persistente:
 
