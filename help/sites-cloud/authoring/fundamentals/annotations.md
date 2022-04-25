@@ -2,16 +2,16 @@
 title: Aggiunta di annotazioni di pagina
 description: La modalità di annotazione consente di lasciare annotazioni e sketch sulle pagine, in modo da facilitare il processo di revisione dei contenuti
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
+source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '699'
 ht-degree: 34%
 
 ---
 
 # Aggiunta di annotazioni di pagina {#adding-page-annotations}
 
-La creazione di contenuti per la tua esperienza digitale spesso richiede discussioni e feedback prima della pubblicazione. Per facilitare questo processo di feedback, AEM consente di aggiungere annotazioni al contenuto.
+La creazione di contenuti per la tua esperienza digitale richiede spesso discussioni e feedback prima della pubblicazione. Per facilitare questo processo di feedback, AEM consente di aggiungere annotazioni al contenuto.
 
 Un’annotazione si presenta come uno schizzo o una nota semplice (eventuale nota adesiva nel mondo reale) applicata alla pagina. L’annotazione consente di lasciare commenti o domande per altri autori e revisori.
 
