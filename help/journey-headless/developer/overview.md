@@ -1,12 +1,12 @@
 ---
 title: AEM Percorso di sviluppatori headless
-description: Inizia qui per un percorso guidato attraverso Adobe Experience Manager (AEM) as a Cloud Service quando viene utilizzato come CMS (Headless Content Management System). Questo percorso fornisce tutte le informazioni necessarie per sviluppare la tua prima applicazione headless.
+description: Inizia qui per un percorso guidato attraverso Adobe Experience Manager (AEM) as a Cloud Service quando utilizza funzioni quali Modelli di contenuto, Frammenti di contenuto e API GraphQL per sviluppare esperienze headless come sistema di gestione dei contenuti headless (CMS). Questo percorso fornisce tutte le informazioni necessarie per sviluppare la tua prima applicazione headless.
 landing-page-description: Inizia qui per un percorso guidato attraverso le funzionalità headless di AEM, le loro funzionalità e come sfruttarle per il tuo primo progetto di sviluppo.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
+source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 6%
+source-wordcount: '1307'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +16,7 @@ Inizia qui per un percorso guidato attraverso Adobe Experience Manager (AEM) as 
 
 ## Introduzione {#introduction}
 
-L’implementazione headless dimentica la gestione delle pagine e dei componenti come avviene nelle soluzioni stack complete e si concentra sulla creazione di frammenti di contenuto riutilizzabili e neutri per i canali e sulla loro distribuzione cross-channel. Si tratta di un modello di sviluppo moderno e dinamico per l&#39;implementazione delle esperienze digitali.
+L’implementazione headless di AEM utilizza modelli di frammenti di contenuto e frammenti di contenuto per concentrarsi sulla creazione di frammenti di contenuto strutturati, neutri rispetto ai canali e riutilizzabili e sulla loro distribuzione cross-channel. A questo scopo, dimentica la gestione delle pagine e dei componenti come avviene nelle soluzioni stack complete. Si tratta di un modello di sviluppo moderno e dinamico per l&#39;implementazione delle esperienze digitali.
 
 Questa guida ti guida attraverso gli argomenti di implementazione più headless in AEM, in modo che al momento del completamento:
 
@@ -24,11 +24,11 @@ Questa guida ti guida attraverso gli argomenti di implementazione più headless 
 * Scopri AEM funzioni headless e come funzionano insieme per offrire un’esperienza headless.
 * Avere la possibilità di compiere i primi passi per implementare il primo progetto senza testa AEM.
 
-## percorsi di documentazione AEM {#documentation-journeys}
+## Percorsi di documentazione AEM {#documentation-journeys}
 
-[Un Percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e forse complicati fornendo una narrazione che aiuta il lettore, che può essere nuovo a AEM, capire e risolvere un problema di business dall&#39;inizio alla fine, assumendo al contempo un argomento preliminare minimo o AEM conoscenza.
+[Un percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e forse complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente di AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
 
-I Percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback dai progetti dei clienti.
+I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti dei clienti.
 
 Se desideri sapere come Adobe consiglia di risolvere i casi aziendali headless con AEM, [AEM Percorsi headless](/help/journey-documentation/documentation-journeys.md) sono dove iniziare.
 
