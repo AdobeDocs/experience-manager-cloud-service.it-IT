@@ -2,7 +2,7 @@
 title: Go-Live
 description: Scopri come eseguire la migrazione quando il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
+source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 1%
@@ -120,7 +120,7 @@ Controlla questo elenco di attività per assicurarti di eseguire una migrazione 
    * [Test funzionale personalizzato](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Test dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md)
 * Esegui la migrazione dei contenuti in produzione e assicurati che un sottoinsieme pertinente sia disponibile nella fase di staging per il test.
-   * Tieni presente che le best practice DevOps per AEM implicano che il codice passi dallo sviluppo all’ambiente di produzione mentre [i contenuti vengono spostati dagli ambienti di produzione.](/help/overview/enterprise-devops.md#code-movement)
+   * Tieni presente che le best practice DevOps per AEM implicano che il codice passi dallo sviluppo all’ambiente di produzione mentre il contenuto si sposta dagli ambienti di produzione.
 * Pianifica un periodo di blocco del codice e del contenuto.
    * Vedi anche la sezione [Timeline per la migrazione a blocchi di codice e contenuti](#code-content-freeze)
 * Esegui l’integrazione del contenuto finale.
