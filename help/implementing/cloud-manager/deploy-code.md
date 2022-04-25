@@ -2,10 +2,10 @@
 title: Implementazione del codice
 description: Scopri come distribuire il codice utilizzando le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 0%
+source-wordcount: '704'
+ht-degree: 1%
 
 ---
 
@@ -93,6 +93,19 @@ Le distribuzioni di produzione seguono generalmente gli stessi passaggi descritt
 Questo processo continua fino a quando la distribuzione non raggiunge tutti gli editori e i dispatcher nella topologia.
 
 ![Fase di implementazione della produzione](assets/production-deployment.png)
+
+## Timeout {#timeouts}
+
+I seguenti passaggi si interrompono se rimangono in attesa del feedback degli utenti:
+
+| Incremento | Timeout |
+|--- |--- |
+| Test della qualità del codice | 14 giorni |
+| Test di sicurezza | 14 giorni |
+| Test delle prestazioni | 14 giorni |
+| Domanda di approvazione | 14 giorni |
+| Pianificazione distribuzione produzione | 14 giorni |
+| Supporto CSE | 14 giorni |
 
 ## Processo di distribuzione {#deployment-process}
 
