@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,31 @@ Gli utenti possono creare profili di elaborazione per automatizzare le seguenti 
 
    ![Sostituire gli oggetti in modo intelligente](/help/assets/assets/content-automation-objectreplace.png)
 
+## Abilita automazione dei contenuti per AEM programma as a Cloud Service {#enable-content-automation}
+
+Per abilitare il componente aggiuntivo di automazione dei contenuti per AEM programma as a Cloud Service tramite Cloud Manager:
+
+1. Contatta il rappresentante commerciale di riferimento per richiedere la licenza del componente aggiuntivo Content Automation.
+1. Accedi a Cloud Manager e passa alla tua organizzazione utilizzando il selettore dell’organizzazione.
+1. Fai clic su **[!UICONTROL Aggiungi programma]** e specificare un nome di programma.
+1. Fai clic su **[!UICONTROL Continua]**.
+1. Espandi **[!UICONTROL Risorse]** e seleziona **[!UICONTROL Automazione dei contenuti]**.
+1. Fai clic su **[!UICONTROL Crea]**.
+1. Esegui la pipeline in [distribuire le modifiche a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
+Se devi aggiungere il componente aggiuntivo per l’automazione dei contenuti a un programma as a Cloud Service AEM esistente in Cloud Manager:
+
+1. Fai clic su ... sulla scheda del programma.
+
+1. Seleziona **[!UICONTROL Modifica programma]** quindi seleziona **[!UICONTROL Soluzioni e componenti aggiuntivi]** scheda .
+
+1. Espandi **[!UICONTROL Risorse]** e seleziona **[!UICONTROL Automazione dei contenuti]**.
+1. Fai clic su **[!UICONTROL Aggiorna]**.
+1. Esegui la pipeline in [distribuire le modifiche a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
 ## Utilizzare un profilo di elaborazione per modificare in blocco le risorse creative {#process-assets}
 
 Per utilizzare i profili di elaborazione per creare automaticamente le varianti, effettua le seguenti operazioni:
-
-1. Contatto [Adobe Assistenza clienti](https://experienceleague.adobe.com/#support) per ricevere la licenza.
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili di elaborazione]**.
 
