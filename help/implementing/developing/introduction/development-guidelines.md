@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Linee guida per lo sviluppo in AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
+source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2444'
 ht-degree: 2%
 
 ---
@@ -128,11 +128,11 @@ Ad esempio, imposta `/apps/<example>/config/org.apache.sling.commons.log.LogMana
 
 Non lasciare il registro a livello di registro DEBUG più a lungo del necessario, in quanto questo genera molte voci.
 
-È possibile impostare livelli di registro discreti per i diversi ambienti AEM utilizzando il targeting di configurazione OSGi basato sulla modalità di esecuzione, se è opportuno effettuare sempre l&#39;accesso `DEBUG` durante lo sviluppo. Ad esempio:
+È possibile impostare livelli di registro discreti per i diversi ambienti AEM utilizzando il targeting di configurazione OSGi basato sulla modalità di esecuzione, se è opportuno effettuare sempre l&#39;accesso `DEBUG` durante lo sviluppo. Esempio:
 
 | Ambiente | Posizione di configurazione OSGi in modalità di esecuzione | `org.apache.sling.commons.log.level` valore della proprietà | | - | - | - | | Sviluppo | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | | Stage | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | AVVERTENZA | | Produzione | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERRORE |
 
-Una riga nel file di debug solitamente inizia con DEBUG, e quindi fornisce il livello di log, l&#39;azione di installazione e il messaggio di log. Ad esempio:
+Una riga nel file di debug solitamente inizia con DEBUG, e quindi fornisce il livello di log, l&#39;azione di installazione e il messaggio di log. Esempio:
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -225,15 +225,17 @@ Consulta la sezione [Documentazione di AEM 6.5](https://experienceleague.adobe.c
 * Il nome host del server SMTP deve essere impostato su $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * La porta del server SMTP deve essere impostata sul valore della porta proxy originale impostata nel parametro portForwards utilizzato nella chiamata API durante la configurazione della rete avanzata. Ad esempio, 30465 (anziché 465)
 
-Si raccomanda inoltre che, se è stata richiesta la porta 465:
+La porta del server SMTP deve essere impostata come `portDest` valore impostato nel parametro portForwards utilizzato nella chiamata API durante la configurazione di reti avanzate e il `portOrig` Il valore deve essere un valore significativo compreso nell’intervallo richiesto tra 30000 e 30999. Ad esempio, se la porta del server SMTP è 465, utilizzare la porta 30465 come `portOrig` valore.
 
-* set `smtp.port` a `465`
-* set `smtp.ssl` a `true`
+In questo caso e presupponendo che SSL debba essere abilitato, nella configurazione del **OSGI servizio di posta CQ Day** servizio:
 
-e se la porta 587 è stata richiesta:
+* Imposta `smtp.port` a `30465`
+* Imposta `smtp.ssl` a `true`
 
-* set `smtp.port` a `587`
-* set `smtp.ssl` a `false`
+In alternativa, se la porta di destinazione è 587, un `portOrig` è necessario utilizzare il valore 30587. E supponendo che SSL debba essere disabilitato, la configurazione del servizio OSGI Day CQ Mail Service:
+
+* Imposta `smtp.port` a `30587`
+* Imposta `smtp.ssl` a `false`
 
 La `smtp.starttls` la proprietà viene impostata automaticamente da AEM as a Cloud Service in fase di runtime a un valore appropriato. Pertanto, se `smtp.ssl` è impostato su true, `smtp.startls` viene ignorato. Se `smtp.ssl` è impostato su false, `smtp.starttls` è impostato su true. Ciò è a prescindere dal `smtp.starttls` i valori impostati nella configurazione OSGI.
 
