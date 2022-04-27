@@ -1,10 +1,10 @@
 ---
-title: Configura le regole di traduzione (AEM headless)
+title: Configurare le regole di traduzione per i contenuti headless
 description: Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ Ora che il connettore è configurato, questo articolo illustra il passaggio succ
 
 >[!CAUTION]
 >
->Questo passaggio del percorso di documentazione è necessario solo se non ti trovi sul canale pre-rilascio di AEM as a Cloud Service.
+>Questo passaggio del percorso di documentazione è necessario solo se non utilizzi il **Traducibile** Flag nei frammenti di contenuto.
 >
->* Se ti trovi sul canale prerelease, passa al passaggio successivo del percorso [Traduci il contenuto.](translate-content.md)
->* Se non sei sul canale prerelease, continua a leggere questo documento.
->
->Consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sul canale prerelease.
+>* La **Traducibile** flag crea automaticamente le regole di traduzione per te e non richiede alcun intervento.
+>* La **Traducibile** Il flag viene utilizzato solo se la configurazione di Translation Integration Framework è impostata su **[Abilita i campi del modello di contenuto per la traduzione.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* L’abilitazione di questa opzione nella configurazione TIF sostituirà eventuali regole di traduzione create manualmente.|
+
 
 ## Obiettivo {#objective}
 
@@ -108,4 +108,3 @@ Sviluppa questa conoscenza e continua il tuo percorso di traduzione senza testa 
 Mentre si consiglia di passare alla parte successiva del percorso di traduzione headless rivedendo il documento [Tradurre il contenuto,](translate-content.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
 
 * [Identificazione del contenuto da tradurre](/help/sites-cloud/administering/translation/rules.md) - Scopri come le regole di traduzione identificano i contenuti da tradurre.
-* [AEM Canale pre-rilascio as a Cloud Service](/help/release-notes/prerelease.md#enable-prerelease) - Scopri come effettuare il consenso al canale prerelease di AEM as a Cloud Service per provare nuove funzionalità in arrivo.

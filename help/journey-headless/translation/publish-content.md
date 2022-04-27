@@ -1,15 +1,15 @@
 ---
-title: Pubblicare contenuti tradotti (AEM headless)
+title: Pubblica contenuto tradotto senza titolo
 description: Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
 
 ---
 
-# Pubblicare contenuti tradotti {#publish-content}
+# Pubblica contenuto tradotto senza titolo {#publish-content}
 
 Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 

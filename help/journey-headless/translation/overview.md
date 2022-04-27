@@ -2,10 +2,10 @@
 title: AEM Percorso di traduzione headless
 description: Inizia qui per un percorso guidato traducendo i contenuti headless utilizzando AEM potenti strumenti di traduzione.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 4%
+source-wordcount: '1029'
+ht-degree: 11%
 
 ---
 
@@ -30,11 +30,11 @@ L&#39;obiettivo è quello di darvi un&#39;ampia comprensione della tecnologia he
 
 Se hai già familiarità con AEM, headless e traduzione, potresti avere già la conoscenza fondamentale di questo percorso. Considera di fare riferimento alla nostra documentazione tecnica collegata alla [di seguito sono riportate le risorse aggiuntive.](#additional-resources)
 
-## percorsi di documentazione AEM {#documentation-journeys}
+## Percorsi di documentazione AEM {#documentation-journeys}
 
-[Un Percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e forse complicati fornendo una narrazione che aiuta il lettore, che può essere nuovo a AEM, capire e risolvere un problema di business dall&#39;inizio alla fine, assumendo al contempo un argomento preliminare minimo o AEM conoscenza.
+[Un percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e forse complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente di AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
 
-I Percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback dai progetti dei clienti.
+I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti dei clienti.
 
 Se desideri sapere come Adobe consiglia di risolvere i casi aziendali headless con AEM, [AEM Percorsi headless](/help/journey-documentation/documentation-journeys.md) sono dove iniziare.
 
@@ -46,7 +46,7 @@ Questo percorso presuppone che il lettore abbia esperienza nella traduzione dei 
 
 Di seguito sono riportati gli utenti tipo che interagiscono in questo percorso.
 
-| Persona | Descrizione | Ruolo nel Percorso |
+| Persona | Descrizione | Ruolo nel percorso |
 |---|---|---|
 | Specialista di traduzione | Definisce il contenuto da tradurre e gestisce tali flussi di lavoro | Pubblico di questo percorso |
 | Autore del contenuto | Crea e gestisci contenuti consegnati senza problemi | Gli autori dei contenuti creano contenuti che devono essere tradotti dallo specialista della traduzione. |
@@ -67,9 +67,8 @@ Anche se puoi passare direttamente a una particolare parte del percorso, molti c
 | 1 | [Scopri i contenuti headless e come tradurli in AEM](learn-about.md) | Impara concetti headless, come si mappano a AEM e la teoria della traduzione AEM. |
 | 2 | [Guida introduttiva alla traduzione headless in AEM](getting-started.md) | Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione AEM. |
 | 3 | [Configurare il connettore di traduzione](configure-connector.md) | Scopri come connettersi AEM a un servizio di traduzione. |
-| 4 | [Configurare le regole di traduzione](translation-rules.md) | Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione. |
-| 5 | [Tradurre il contenuto](translate-content.md) | Utilizza il connettore di traduzione e le regole per tradurre i contenuti headless. |
-| 6 | [Pubblicare contenuti tradotti](publish-content.md) | Scopri come pubblicare il contenuto tradotto e aggiornare la traduzione quando il contenuto sottostante viene aggiornato. |
+| 4 | [Tradurre il contenuto](translate-content.md) | Utilizza il connettore di traduzione e le regole per tradurre i contenuti headless. |
+| 5 | [Pubblicare contenuti tradotti](publish-content.md) | Scopri come pubblicare il contenuto tradotto e aggiornare la traduzione quando il contenuto sottostante viene aggiornato. |
 
 ## Novità {#what-is-next}
 

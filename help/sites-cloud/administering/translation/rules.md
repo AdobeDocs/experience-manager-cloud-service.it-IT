@@ -4,9 +4,9 @@ description: Scopri come le regole di traduzione identificano i contenuti da tra
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
+source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1297'
 ht-degree: 1%
 
 ---
@@ -23,15 +23,9 @@ Le regole di traduzione identificano il contenuto da tradurre per le pagine, i c
 
 Le regole di traduzione descritte in questo documento si applicano ai frammenti di contenuto solo se il **Abilita campi del modello di contenuto per la traduzione** l&#39;opzione non è stata attivata nella [livello di configurazione del framework di integrazione della traduzione.](integration-framework.md#assets-configuration-properties)
 
-Se la **Abilita campi del modello di contenuto per la traduzione** è attiva, AEM utilizzerà **Traducibile** campo su [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#properties) per determinare se il campo deve essere tradotto. In questo caso, [regole di traduzione](rules.md) sono sostituiti.
+Se la **Abilita campi del modello di contenuto per la traduzione** è attiva, AEM utilizzerà **Traducibile** campo su [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#properties) per determinare se il campo deve essere tradotto e crea automaticamente le regole di traduzione di conseguenza. Questa opzione sostituisce eventuali regole di traduzione create e non richiede alcun intervento o passaggi aggiuntivi.
 
-Se desideri utilizzare le regole di traduzione per tradurre i Frammenti di contenuto, l’ **Abilita campi del modello di contenuto per la traduzione** l&#39;opzione nella configurazione del framework di integrazione della traduzione deve essere disabilitata.
-
->[!NOTE]
->
->Questa funzione è disponibile nel canale prerelease.
-> 
->Consulta la sezione [Documentazione sul canale prerelease](/help/release-notes/prerelease.md#enable-prerelease) per informazioni su come abilitare la funzione per il tuo ambiente.
+Se desideri utilizzare le regole di traduzione per tradurre i Frammenti di contenuto, l’ **Abilita campi del modello di contenuto per la traduzione** l&#39;opzione sulla configurazione del framework di integrazione della traduzione deve essere disabilitata e devi seguire i passaggi descritti di seguito per creare le regole.
 
 ## Panoramica {#overview}
 

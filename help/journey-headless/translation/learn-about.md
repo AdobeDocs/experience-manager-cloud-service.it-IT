@@ -1,10 +1,10 @@
 ---
-title: Scopri i contenuti headless e come tradurli in AEM
+title: Scopri i contenuti headless e tradurli in AEM
 description: Impara concetti headless, come si mappano a AEM e la teoria della traduzione AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---

@@ -1,35 +1,31 @@
 ---
-title: Traduci contenuto (AEM headless)
-description: Utilizza il connettore di traduzione e le regole per tradurre i contenuti headless.
+title: Traduci contenuto headless
+description: Utilizza il connettore di traduzione per tradurre i contenuti headless.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2177'
 ht-degree: 0%
 
 ---
 
 
-# Traduci contenuto {#translate-content}
+# Traduci contenuto headless {#translate-content}
 
-Utilizza il connettore di traduzione e le regole per tradurre i contenuti headless.
+Utilizza il connettore di traduzione per tradurre i contenuti headless.
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione senza testa AEM, [Configurare le regole di traduzione](translation-rules.md) hai imparato a utilizzare AEM regole di traduzione per identificare il contenuto di traduzione. Ora dovresti:
+Nel documento precedente del percorso di traduzione senza testa AEM, [Configurare il connettore di traduzione](configure-connector.md) hai imparato il framework di traduzione in AEM. Ora dovresti:
 
-* Comprendi cosa fanno le regole di traduzione.
-* Puoi definire le tue regole di traduzione.
+* Comprendi gli importanti parametri del framework di integrazione della traduzione in AEM.
+* È possibile impostare la propria connessione al servizio di traduzione.
 
-Ora che le regole del connettore e delle traduzioni sono configurate, questo articolo ti guida attraverso il passaggio successivo per tradurre i tuoi contenuti headless.
-
->[!NOTE]
->
->Se hai saltato il [Configurare le regole di traduzione](translation-rules.md) passaggio di questo percorso perché sei sul canale pre-rilascio di AEM as a Cloud Service, non devi preoccuparti di regole di traduzione come indicato in questo documento.
+Ora che il connettore è configurato, questo articolo ti guida attraverso il passaggio successivo per tradurre il tuo contenuto headless.
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a capire come utilizzare AEM progetti di traduzione insieme al connettore e le regole di traduzione per tradurre il contenuto. Dopo aver letto questo documento è necessario:
+Questo documento ti aiuta a capire come utilizzare i progetti di traduzione AEM insieme al connettore per tradurre i contenuti. Dopo aver letto questo documento è necessario:
 
 * Scopri cos’è un progetto di traduzione.
 * Potrai creare nuovi progetti di traduzione.
@@ -130,7 +126,7 @@ La modalità di utilizzo di un progetto di traduzione dipende da come è stato c
 
 ### Utilizzo di un progetto di traduzione creato automaticamente {#using-automatic-project}
 
-Quando crei automaticamente il progetto di traduzione, AEM valuta il contenuto headless nel percorso selezionato in base alle regole di traduzione definite in precedenza. Sulla base di tale valutazione, estrae il contenuto che richiede la traduzione in un nuovo progetto di traduzione.
+Quando crei automaticamente il progetto di traduzione, AEM valuta il contenuto headless nel percorso selezionato. Sulla base di tale valutazione, estrae il contenuto che richiede la traduzione in un nuovo progetto di traduzione. So quali campi tradurre in base ai campi contrassegnati come **Traducibile** dall&#39;architetto dei contenuti.
 
 Per visualizzare i dettagli del contenuto headless incluso in questo progetto:
 
