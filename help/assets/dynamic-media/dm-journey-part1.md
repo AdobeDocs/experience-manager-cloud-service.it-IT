@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 69d2121323d8a8ab54db3fb0a56195a1271e6112
+source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
 workflow-type: tm+mt
 source-wordcount: '3585'
 ht-degree: 1%
@@ -124,9 +124,9 @@ Per risolvere questo problema, Dynamic Media consente di creare _Set video adatt
 ![Set video adattivo](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 _Un Adaptive Video Set raggruppa le versioni dello stesso video codificate con diversi bit rate e formati._
 
-You start with your original, primary video, which you upload into the system. Dynamic Media automatically sizes, or _transcodes_, that video into multiple videos. Then, at the time of delivery, it intelligently determines which video screen, what quality, and what format to use, and delivers it to either the phone, tablet, or desktop computer.
+Si inizia con il video originale principale, che si carica nel sistema. Dynamic Media ridimensiona automaticamente, oppure _transcodifica_, questo video in più video. Quindi, al momento della distribuzione, determina in modo intelligente quale schermo video, quale qualità e quale formato utilizzare, e lo consegna al telefono, tablet o computer desktop.
 
-Ad esempio, su un dispositivo mobile iOS, rileva una larghezza di banda come 4G, 5G o Wi-Fi. Quindi, seleziona automaticamente il video codificato a destra tra i vari bit rate video all&#39;interno del set video adattivo. The video is streamed to mobile devices, tablets, or desktop computers.
+Ad esempio, su un dispositivo mobile iOS, rileva una larghezza di banda come 4G, 5G o Wi-Fi. Quindi, seleziona automaticamente il video codificato a destra tra i vari bit rate video all&#39;interno del set video adattivo. Il video viene inviato in streaming a dispositivi mobili, tablet o computer desktop.
 
 Inoltre, la qualità video viene commutata in modo dinamico automaticamente in caso di cambiamento delle condizioni della rete. Inoltre, se un cliente entra in modalità a schermo intero su un desktop, il set video adattivo risponde utilizzando una risoluzione migliore, migliorando l’esperienza di visualizzazione del cliente.
 
@@ -138,7 +138,7 @@ Di seguito sono riportati i problemi e le soluzioni comuni per i casi d’uso co
 
 ### Caso di utilizzo: Approccio principale dei file
 
-One of the most important use cases for Dynamic Media is also one of the most obvious. In altre parole, riducendo il peso delle pagine e delle esperienze e la dimensione del contenuto, che si tratti di un&#39;immagine o di un video, che viene distribuito.
+Uno dei casi d’uso più importanti per Dynamic Media è anche uno dei più ovvi. In altre parole, riducendo il peso delle pagine e delle esperienze e la dimensione del contenuto, che si tratti di un&#39;immagine o di un video, che viene distribuito.
 
 Di seguito viene illustrata un’esperienza o una pagina web tipica. Circa il 90% di una pagina è costituito da contenuti multimediali avanzati, come immagini e video, che sono solitamente file molto più pesanti.
 
@@ -194,7 +194,7 @@ Di seguito sono riportati altri casi d’uso da considerare.
 |---|---|
 | Le risorse digitali sono sparse nell’organizzazione, archiviate in team o unità aziendali diversi. | Archivia e gestisci tutte le risorse digitali in una posizione centrale. |
 | I membri del team scaricano e creano versioni locali. | I membri del team utilizzano un singolo file primario per creare _e_ fornire tutte le versioni necessarie su vari schermi e dispositivi. |
-| Single-use assets created for every experience and device. | Eliminates single-use assets, saving time and money creating them. |
+| Risorse monouso create per ogni esperienza e dispositivo. | Elimina le risorse a uso singolo, risparmiando tempo e denaro per crearle. |
 
 ### Caso di utilizzo: Ritaglio avanzato basato sull’intelligenza artificiale per contenuti multimediali avanzati
 
@@ -288,3 +288,5 @@ _Tutorial su Dynamic Media_
 _Visualizzatori Dynamic Media_
 
 * [Demo live](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+
+<!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
