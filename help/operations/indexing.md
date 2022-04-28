@@ -2,9 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
+source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2420'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Tieni presente che sia la personalizzazione di un indice predefinito sia gli ind
 
 che poi deve scendere `ui.apps/src/main/content/jcr_root`. Le cartelle secondarie non sono supportate al momento.
 
-Il filtro per il pacchetto deve essere impostato in modo da mantenere gli indici esistenti (preconfigurati). Esistono due modi per farlo: Il filtro è impostato su `<filter root="/oak:index/" mode="merge"/>` nel file `ui.apps/src/main/content/META-INF/vault/filter.xml`oppure ogni indice personalizzato (o personalizzato) deve essere elencato separatamente nella sezione del filtro, ad esempio `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Se in seguito si verifica una modifica alla versione, è necessario regolare il filtro.
+Il filtro per il pacchetto deve essere impostato in modo da mantenere gli indici esistenti (preconfigurati). Nel file `ui.apps/src/main/content/META-INF/vault/filter.xml`, ogni indice personalizzato (o personalizzato) deve essere elencato, ad esempio `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Se la versione dell&#39;indice viene successivamente modificata, è necessario regolare il filtro.
 
 Il pacchetto del campione di cui sopra è costruito come `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
