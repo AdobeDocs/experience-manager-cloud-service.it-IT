@@ -2,10 +2,10 @@
 title: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 100%
+source-wordcount: '822'
+ht-degree: 86%
 
 ---
 
@@ -34,7 +34,7 @@ Le principali differenze riguardano le seguenti aree:
 
 * [/apps e /libs non sono modificabili in fase di esecuzione](#apps-libs-immutable)
 
-* [I bundle e le impostazioni OSGi devono essere basati su archivio](#osgi)
+* [I bundle e le configurazioni OSGi devono essere trattati come codice](#osgi)
 
 * [Non sono consentite modifiche all’archivio di pubblicazione](#changes-to-publish-repo)
 
@@ -54,7 +54,7 @@ Tutti i contenuti e le sottocartelle in `/apps` e `/libs` sono di sola lettura. 
 
 * Non sono consentite modifiche in `/libs`.
    * Questa non è una nuova regola, ma non veniva applicata nelle versioni on-premise precedenti di AEM.
-* Le sovrapposizioni per le aree in `/libs` in cui è consentita la sovrapposizione sono ancora consentite in `/apps`.
+* Sovrapposizioni per le aree in `/libs` che possono essere sovrapposti sono ancora consentiti entro `/apps`.
    * Tali sovrapposizioni devono provenire da Git tramite la pipeline CI/CD.
 * Le informazioni di progettazione dei modelli statici memorizzate in `/apps` non possono essere modificate tramite l’interfaccia.
    * In alternativa, puoi sfruttare i modelli modificabili.
@@ -62,12 +62,14 @@ Tutti i contenuti e le sottocartelle in `/apps` e `/libs` sono di sola lettura. 
 * Le configurazioni di rollout di blueprint MSM e MSM personalizzato devono essere installate da Git tramite la pipeline CI/CD.
 * Le modifiche per la traduzione I18N devono provenire da Git tramite la pipeline CI/CD.
 
-## I bundle e le impostazioni OSGi devono essere basati su archivio {#osgi}
+## I bundle e le configurazioni OSGi devono essere trattati come codice {#osgi}
 
-La console web, utilizzata nelle versioni precedenti di AEM per modificare le impostazioni OSGi, non è disponibile in AEM Cloud Service, di conseguenza le modifiche apportate al sistema OSGi devono essere introdotte tramite la pipeline CI/CD.
+Le modifiche ai bundle e alle configurazioni OSGi devono essere introdotte tramite la pipeline CI/CD.
 
-* Le modifiche alle impostazioni OSGi possono essere apportate solo tramite la persistenza Git sotto forma di impostazioni OSGi basate su JCR.
-* I bundle OSGi nuovi o aggiornati devono essere introdotti tramite Git nell’ambito del processo di creazione della pipeline CI/CD.
+* I bundle OSGi nuovi o aggiornati devono essere introdotti tramite Git tramite la pipeline CI/CD.
+* Le modifiche alle configurazioni OSGi possono provenire solo da Git tramite la pipeline CI/CD.
+
+La console Web, utilizzata nelle versioni precedenti di AEM per modificare i bundle e le configurazioni di OSGi, non è disponibile in AEM Cloud Service.
 
 ## Non sono consentite modifiche all’archivio di pubblicazione {#changes-to-publish-repo}
 
@@ -114,4 +116,4 @@ Per la transizione dei progetti da AMS o da un’installazione on-premise, Adobe
 
 ## Gestione e distribuzione delle risorse {#asset-handling}
 
-Il caricamento, l’elaborazione e il download delle risorse sono ottimizzati in [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] è ora più efficiente, consente una maggiore scalabilità e offre velocità di caricamento e download molto più elevate. Inoltre, influisce sul codice personalizzato esistente e su alcune operazioni. Per un elenco delle modifiche e per il livello di parità con le funzioni di [!DNL Experience Manager] 6.5, vedi le [modifiche apportate a [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Il caricamento, l’elaborazione e il download delle risorse sono ottimizzati in [!DNL Experience Manager Assets] come [!DNL Cloud Service]. [!DNL Assets] è ora più efficiente, consente una maggiore scalabilità e offre velocità di caricamento e download molto più elevate. Inoltre, influisce sul codice personalizzato esistente e su alcune operazioni. Per un elenco delle modifiche e per il livello di parità con le funzioni di [!DNL Experience Manager] 6.5, vedi le [modifiche apportate a [!DNL Assets]](/help/assets/assets-cloud-changes.md).
