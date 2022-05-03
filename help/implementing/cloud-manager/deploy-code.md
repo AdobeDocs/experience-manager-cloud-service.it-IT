@@ -2,9 +2,9 @@
 title: Implementazione del codice
 description: Scopri come distribuire il codice utilizzando le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
+source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,18 @@ ht-degree: 1%
 
 # Implementazione del codice {#deploy-your-code}
 
-Scopri come distribuire il codice utilizzando le pipeline di Cloud Manager in AEM as a Cloud Service.
+Scopri come distribuire il codice in Produzione utilizzando le pipeline di Cloud Manager in AEM as a Cloud Service.
+
+![Diagramma della pipeline di produzione](./assets/configure-pipeline/production-pipeline-diagram.png)
+
+La distribuzione del codice in Stage e poi in Produzione avviene tramite una pipeline di produzione. L’esecuzione della pipeline di produzione è suddivisa in due fasi logiche.
+
+1. Implementazione in ambiente stage
+   * Il codice viene generato e distribuito nell’ambiente Stage per test funzionali automatizzati, test dell’interfaccia utente, audit dell’esperienza e test di accettazione da parte degli utenti (UAT).
+1. Implementazione in ambiente di produzione
+   * Una volta convalidata la build sullo stage e approvata per la promozione su Produzione, lo stesso artefatto di build viene distribuito nell’ambiente di produzione.
+
+_Solo il tipo di pipeline Full Stack Code supporta la scansione del codice, il test delle funzioni, il test dell’interfaccia utente e il controllo dell’esperienza._
 
 ## Implementazione del codice con Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
