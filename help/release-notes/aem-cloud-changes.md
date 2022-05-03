@@ -2,10 +2,10 @@
 title: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
+source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 86%
+source-wordcount: '846'
+ht-degree: 84%
 
 ---
 
@@ -40,7 +40,7 @@ Le principali differenze riguardano le seguenti aree:
 
 * [Non sono consentite modalità di esecuzione personalizzate](#custom-runmodes)
 
-* [Rimozione degli agenti di replica](#replication-agents)
+* [Rimozione degli agenti di replica e relative modifiche](#replication-agents)
 
 * [Rimozione dell’interfaccia classica](#classic-ui)
 
@@ -96,13 +96,15 @@ Con AEM Cloud Service sono disponibili le seguenti modalità di esecuzione:
 
 In AEM Cloud Service non sono possibili modalità di esecuzione aggiuntive o personalizzate.
 
-## Rimozione degli agenti di replica {#replication-agents}
+## Rimozione degli agenti di replica e relative modifiche {#replication-agents}
 
 In AEM Cloud Service il contenuto viene pubblicato utilizzando il modulo [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html). Gli agenti di replica utilizzati nelle versioni precedenti di AEM non vengono più utilizzati o forniti. Questa limitazione potrebbe interessare le seguenti aree dei progetti AEM esistenti:
 
 * Flussi di lavoro personalizzati che, ad esempio, inviano contenuti agli agenti di replica dei server di anteprima
 * Personalizzazione degli agenti di replica per la trasformazione dei contenuti
 * Utilizzo della replica inversa per riportare i contenuti dall’ambiente di pubblicazione a quello di authoring
+
+Inoltre, i pulsanti di pausa e disattivazione sono stati rimossi dalla console di amministrazione dell’agente di replica.
 
 ## Rimozione dell’interfaccia classica {#classic-ui}
 
