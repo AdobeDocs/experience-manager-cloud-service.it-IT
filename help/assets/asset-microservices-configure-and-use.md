@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
+source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 1%
+source-wordcount: '2899'
+ht-degree: 2%
 
 ---
 
@@ -173,7 +173,7 @@ Dopo aver applicato un profilo di elaborazione a una cartella, tutte le nuove ri
 
 >[!NOTE]
 >
->Un profilo di elaborazione applicato a una cartella funziona per l’intero albero, ma può essere sostituito con un altro profilo applicato a una sottocartella. Quando le risorse vengono caricate in una cartella, Experience Manager controlla le proprietà della cartella contenitore per un profilo di elaborazione. Se non viene applicata alcuna applicazione, viene controllata una cartella padre nella gerarchia per verificare la presenza di un profilo di elaborazione da applicare.
+>Un profilo di elaborazione applicato a una cartella funziona per l’intero albero, ma può essere sostituito con un altro profilo applicato a una sottocartella. Quando le risorse vengono caricate in una cartella, Experience Manager controlla le proprietà della cartella contenitore per un profilo di elaborazione. Se nessun profilo è applicato, viene selezionata una cartella principale nella gerarchia per un profilo di elaborazione da applicare.
 
 Per verificare che le risorse siano state elaborate, visualizza in anteprima le rappresentazioni generate nel [!UICONTROL Rendering] nella barra a sinistra. Apri l’anteprima della risorsa e apri la barra a sinistra per accedere al **[!UICONTROL Rendering]** visualizza. Le rappresentazioni specifiche nel profilo di elaborazione, per le quali il tipo di risorsa specifico corrisponde alle regole di inclusione del tipo MIME, devono essere visibili e accessibili.
 
@@ -185,7 +185,7 @@ Per verificare che le risorse siano state elaborate, visualizza in anteprima le 
 
 In una situazione in cui è necessaria un’elaborazione aggiuntiva delle risorse che non può essere ottenuta utilizzando i profili di elaborazione, è possibile aggiungere alla configurazione flussi di lavoro aggiuntivi di post-elaborazione. La post-elaborazione consente di aggiungere un’elaborazione completamente personalizzata oltre all’elaborazione configurabile tramite i microservizi per le risorse.
 
-I flussi di lavoro di post-elaborazione, se configurati, vengono eseguiti automaticamente da [!DNL Experience Manager] al termine dell&#39;elaborazione dei microservizi. Non è necessario aggiungere manualmente i moduli di avvio del flusso di lavoro per attivare i flussi di lavoro. Gli esempi includono:
+Flussi di lavoro di post-elaborazione, o [Flusso di lavoro con avvio automatico](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), se configurati, vengono eseguiti automaticamente da [!DNL Experience Manager] al termine dell&#39;elaborazione dei microservizi. Non è necessario aggiungere manualmente i moduli di avvio del flusso di lavoro per attivare i flussi di lavoro. Gli esempi includono:
 
 * Passaggi del flusso di lavoro personalizzati per elaborare le risorse.
 * Integrazioni per aggiungere metadati o proprietà alle risorse da sistemi esterni, ad esempio informazioni su prodotti o processi.
@@ -233,6 +233,32 @@ Puoi configurare il servizio di esecuzione dei flussi di lavoro personalizzato p
 * Flussi di lavoro di post-elaborazione per espressione (`postProcWorkflowsByExpression`): È possibile elencare più modelli di flusso di lavoro, in base a diverse espressioni regolari. Le espressioni e i modelli devono essere separati da due punti. L’espressione regolare deve puntare direttamente al nodo Asset e non a una delle rappresentazioni o dei file. Esempio: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 Per informazioni su come distribuire una configurazione OSGi, vedi [distribuire [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
+
+#### Disattiva l’esecuzione del flusso di lavoro di post-elaborazione
+
+Quando non è necessario eseguire la post-elaborazione, crea e utilizza un modello di flusso di lavoro &quot;vuoto&quot; nella sezione __Flusso di lavoro con avvio automatico__ selezione.
+
+##### Creare il modello di flusso di lavoro con avvio automatico disattivato
+
+1. Passa a __Strumenti > Flusso di lavoro > Modelli__
+1. Seleziona __Crea > Crea modello__ dalla barra delle azioni superiore
+1. Specifica un titolo e un nome per il nuovo modello di flusso di lavoro, ad esempio:
+   * Titolo: Disattiva flusso di lavoro con avvio automatico
+   * Nome: disable-auto-start-workflow
+1. Seleziona __Fine__ per creare il modello di flusso di lavoro
+1. __Seleziona__ e __Modifica__ il modello di workflow appena creato
+1. Nell’editor per modelli di flusso di lavoro, seleziona __Passaggio 1__ dalla definizione del modello e eliminalo
+1. Apri __Pannello laterale__, quindi seleziona __Passaggi__
+1. Trascina __Flusso di lavoro della risorsa di aggiornamento DAM completato__ nella definizione del modello
+1. Seleziona la __Informazioni pagina__ (accanto al pulsante __Pannello laterale__ ) e seleziona __Apri proprietà__
+1. Sotto la __Base__ scheda , seleziona __Flusso di lavoro transitorio__
+1. Seleziona __Salva e chiudi__ dalla barra delle azioni superiore
+1. Seleziona __Sincronizzazione__ nella barra delle azioni superiore
+1. Chiudi l’editor per modelli di flusso di lavoro
+
+##### Applicare il modello di flusso di lavoro con avvio automatico disattivato
+
+Segui i passaggi descritti in [applicare un modello di flusso di lavoro a una cartella](#apply-workflow-model-to-folder) e imposta __Disattiva flusso di lavoro con avvio automatico__ come __Flusso di lavoro con avvio automatico__ per le cartelle non è necessaria la post-elaborazione delle risorse.
 
 ## Best practice e limitazioni {#best-practices-limitations-tips}
 
