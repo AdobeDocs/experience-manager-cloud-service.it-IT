@@ -3,10 +3,10 @@ title: Note sulla versione per Cloud Manager 2022.5.0 in Adobe Experience Manage
 description: Queste sono le note sulla versione per Cloud Manager 2022.5.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 48f645d43779a40aaa58b92bb3c8fd8020e32640
+source-git-commit: c48d6f553c6a973a200fb11c2112beaf9be16d1c
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 6%
+source-wordcount: '177'
+ht-degree: 3%
 
 ---
 
@@ -25,4 +25,13 @@ La data di rilascio della versione 2022.5.0 di Cloud Manager in AEM 5 maggio 202
 
 ## Novità {#what-is-new}
 
+* La pagina Ambienti dispone di una colonna per visualizzare AEM versione dell’ambiente.
+* L’esecuzione della pipeline visualizza ora gli errori di livello superiore dell’interfaccia utente nella schermata di esecuzione.
+* Esegui nuovamente il passaggio di distribuzione della produzione tramite l’interfaccia utente di Cloud Manager.
+* Riutilizza le immagini di build per eseguire nuovamente il passaggio di distribuzione di produzione.
+* Nuova API per consentire l’eliminazione self-service dell’infrastruttura di rete.
+
 ## Correzioni di bug {#bug-fixes}
+
+* Il pulsante &quot;Download Logs&quot; dai registri dei passaggi del test dell’interfaccia utente non scaricava i registri.
+* Alcune esecuzioni sono rimaste bloccate nel contesto del trigger di commit e dell&#39;annullamento del passaggio di approvazione.
