@@ -2,9 +2,9 @@
 title: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 description: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 921975034035f9b6a07ae2b76f433cef30f307a3
+source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
 workflow-type: tm+mt
-source-wordcount: '2647'
+source-wordcount: '2704'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,13 @@ ht-degree: 2%
 
 Quando configuri e configuri un [!DNL  Adobe Experience Manager Forms] come [!DNL  Cloud Service] ambiente, puoi configurare ambienti di sviluppo, staging e produzione su cloud. Inoltre, puoi anche configurare un ambiente di sviluppo locale.
 
-È possibile utilizzare l’ambiente di sviluppo locale per creare moduli e risorse correlate (temi, modelli, azioni di invio personalizzate e altro ancora) e [convertire PDF forms in Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=it) senza accedere all’ambiente di sviluppo cloud. Una volta che un Modulo adattivo o risorse correlate sono pronti nell’istanza di sviluppo locale, puoi esportare il Modulo adattivo e le relative risorse dall’ambiente di sviluppo locale in un ambiente di Cloud Service per ulteriori test e pubblicazioni.
+È possibile utilizzare l’ambiente di sviluppo locale per eseguire le azioni seguenti senza accedere all’ambiente di sviluppo cloud:
+
+* [Creazione di moduli](creating-adaptive-form.md) e risorse correlate (temi, modelli, azioni di invio personalizzate e altro)
+* [Conversione di moduli PDF in moduli adattivi](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=it)
+* Creare applicazioni da generare [Comunicazioni dei clienti](aem-forms-cloud-service-communications-introduction.md) su richiesta o in modalità batch.
+
+Dopo che un Modulo adattivo o le risorse correlate sono pronte nell’istanza di sviluppo locale o in un’applicazione per generare [Comunicazioni dei clienti] è pronto, puoi esportare l’applicazione Moduli adattivi o Comunicazioni cliente dall’ambiente di sviluppo locale a un ambiente di Cloud Service per ulteriori test o per il passaggio ad ambienti di produzione.
 
 Puoi anche sviluppare e testare codice personalizzato come componenti personalizzati e servizio di precompilazione nell’ambiente di sviluppo locale. Quando il codice personalizzato è testato e pronto, puoi utilizzare l’archivio Git dell’ambiente di sviluppo del Cloud Service per distribuire il codice personalizzato.
 
@@ -66,15 +72,15 @@ Per configurare un ambiente di sviluppo locale è necessario disporre del softwa
 | Software | Descrizione | Collegamenti di download |
 |---|---|---|
 | Adobe Experience Manager as a Cloud Service SDK | L&#39;SDK include [!DNL Adobe Experience Manager] Strumenti QuickStart e Dispatcher | Scarica l&#39;SDK più recente da [Distribuzione di software](#software-distribution) |  |
-| Archivio delle funzioni di Adobe Experience Manager Forms (componente aggiuntivo di AEM Forms) | Strumenti per creare, personalizzare lo stile e ottimizzare l’Adaptive Forms e altre funzioni di Adobe Experience Manager Form | Scarica da [Distribuzione di software](#software-distribution) |
-| (Facoltativo) Contenuto di riferimento di Adobe Experience Manager Forms | Strumenti per creare, personalizzare lo stile e ottimizzare l’Adaptive Forms e altre funzioni di Adobe Experience Manager Form | Scarica da [Distribuzione di software](#software-distribution) |
-| (Facoltativo) Adobe Experience Manager Forms Designer | Strumenti per creare, personalizzare lo stile e ottimizzare l’Adaptive Forms e altre funzioni di Adobe Experience Manager Form | Scarica da [Distribuzione di software](#software-distribution) |
+| Archivio delle funzioni di Adobe Experience Manager Forms (componente aggiuntivo di AEM Forms) | Strumenti per creare, personalizzare lo stile e ottimizzare Adaptive Forms e altre funzionalità di Adobe Experience Manager Forms | Scarica da [Distribuzione di software](#software-distribution) |
+| (Facoltativo) Contenuto di riferimento di Adobe Experience Manager Forms | Strumenti per creare, personalizzare lo stile e ottimizzare Adaptive Forms e altre funzionalità di Adobe Experience Manager Forms | Scarica da [Distribuzione di software](#software-distribution) |
+| (Facoltativo) Adobe Experience Manager Forms Designer | Strumenti per creare, personalizzare lo stile e ottimizzare Adaptive Forms e altre funzionalità di Adobe Experience Manager Forms | Scarica da [Distribuzione di software](#software-distribution) |
 
 ### Scarica la versione più recente del software da Distribuzione di software {#software-distribution}
 
 Per scaricare la versione più recente dell’SDK Adobe Experience Manager as a Cloud Service, l’archivio delle funzioni di Experience Manager Forms (componente aggiuntivo di AEM Forms), le risorse di riferimento dei moduli o Forms Designer da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html):
 
-1. Accedi a https://experience.adobe.com/#/downloads con il tuo Adobe ID
+1. Accedi a <https://experience.adobe.com/#/downloads> con il tuo Adobe ID
 
    >[!NOTE]
    >
@@ -89,7 +95,7 @@ Per scaricare la versione più recente dell’SDK Adobe Experience Manager as a 
 
 Il progetto Adobe Experience Manager Forms è una base di codice personalizzata. Contiene codice, configurazioni e contenuti distribuiti tramite Cloud Manager su [!DNL Adobe Experience Manager] as a Cloud Service. La [Archetipo AEM progetto Maven](https://github.com/adobe/aem-project-archetype) fornisce la struttura di base per il progetto.
 
-Imposta i seguenti strumenti di sviluppo da utilizzare per il tuo [!DNL Adobe Experience Manager] progetto di sviluppo:
+Imposta i seguenti strumenti di sviluppo da utilizzare per [!DNL Adobe Experience Manager] progetto di sviluppo:
 
 * [Java™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up)
 * [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git)
@@ -132,7 +138,7 @@ Creare utenti come sviluppatore di moduli e sviluppatore di moduli e [aggiungere
 |---|---|
 | Professionista / | [!DNL forms-users] (Utenti AEM Forms), [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors]e [!DNL fdm-authors] |
 | Sviluppatore di moduli | [!DNL forms-users] (Utenti AEM Forms), [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors]e [!DNL fdm-authors] |
-| Progettazione UX o lead di esperienza cliente | [!DNL forms-users], [!DNL template-authors] |
+| Customer Experience Lead o UX Designer | [!DNL forms-users], [!DNL template-authors] |
 | Amministratore AEM | [!DNL aem-administrators], [!DNL fd-administrators] |
 | Utente finale | Quando un utente deve effettuare l’accesso per visualizzare e inviare un modulo adattivo, aggiungi tali utenti a [!DNL forms-users] gruppo. </br> Se non è richiesta alcuna autenticazione utente per accedere a Adaptive Forms, non assegnare alcun gruppo a tali utenti. |
 
@@ -176,18 +182,18 @@ Use this project to update configurations, create overlays, develop custom Adapt
 
 ## Configurare l&#39;ambiente di sviluppo locale per Document of Record (DoR){#docker-microservices}
 
-AEM Forms as a Cloud Services offre un ambiente SDK basato su docker per uno sviluppo più semplice di Document of Record e per l’utilizzo di altri microservizi. Consente di configurare manualmente i binari e le adattazioni specifici per la piattaforma. Per impostare l’ambiente:
+AEM Forms as a Cloud Services offre un ambiente SDK basato su docker per uno sviluppo più semplice di Document of Record e per l’utilizzo di altri microservizi. Consente di configurare manualmente i binari e le adattazioni specifici per la piattaforma. Per configurare l’ambiente:
 
 1. Installa e configura Docker:
 
-   * (Per Microsoft Windows) Installa [Docker Desktop](https://www.docker.com/products/docker-desktop). Configura Docker Engine e docker-compose sulla tua macchina.
+   * (Per Microsoft® Windows) Installa [Docker Desktop](https://www.docker.com/products/docker-desktop). Configura `Docker Engine` e `docker-compose` sulla tua macchina.
 
    * (Apple macOS) Installa [Docker Desktop per Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Include Docker Engine, Docker CLI client, Docker Compose, Docker Content Trust, Kubernetes e Credential Helper.
 
-   * (Per Linux) Installa [Motore Docker](https://docs.docker.com/engine/install/#server) e [Composizione Docker](https://docs.docker.com/compose/install/) sulla tua macchina.
+   * (Per Linux®) Installazione [Motore Docker](https://docs.docker.com/engine/install/#server) e [Composizione Docker](https://docs.docker.com/compose/install/) sulla tua macchina.
    >[!NOTE]
    >
-   > * Per Apple macOS, crea una whitelist delle cartelle contenenti istanze AEM Author locali.
+   > * Per Apple macOS, inserire nell&#39;elenco Consentiti cartelle contenenti istanze AEM Author locali.
    >
    > * Docker Desktop per Windows supporta due backend, Hyper-V
       > (legacy) e WSL2 (moderna). La condivisione dei file viene eseguita automaticamente
@@ -209,8 +215,8 @@ AEM Forms as a Cloud Services offre un ambiente SDK basato su docker per uno svi
 
 1. Assicurati che l’istanza locale di AEM Author sia attiva e in esecuzione. Esegui il seguente comando per avviare l&#39;SDK:
 
-   * (su Microsoft Windows) `sdk.bat start`
-   * (su Linux o Apple Mac OS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * (su Microsoft® Windows) `sdk.bat start`
+   * (su Linux® o Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
 
    >[!NOTE]
    >
@@ -218,7 +224,7 @@ AEM Forms as a Cloud Services offre un ambiente SDK basato su docker per uno svi
 
    ![start-sdk-command](assets/start-sdk.png)
 
-È ora possibile utilizzare l&#39;ambiente di sviluppo locale per eseguire il rendering del documento di record. Per eseguire il test, carica un file XDP nel tuo ambiente ed eseguine il rendering. ad esempio, http://localhost:4502/libs/xfaforms/profiles/default.print.pdf?template=crx:///content/dam/formsanddocuments/check-request.xdp converte il file XDP nel documento PDF.
+È ora possibile utilizzare l&#39;ambiente di sviluppo locale per eseguire il rendering del documento di record. Per eseguire il test, carica un file XDP nel tuo ambiente ed eseguine il rendering. Ad esempio: <http://localhost:4502/libs/xfaforms/profiles/default.print.pdf?template=crx:///content/dam/formsanddocuments/cheque-request.xdp> converte il file XDP nel documento PDF.
 
 ## Imposta un progetto di sviluppo per Forms basato su archetipo di Experience Manager {#forms-cloud-service-local-development-environment}
 
@@ -226,7 +232,7 @@ Utilizza questo progetto per creare Adaptive Forms, distribuire aggiornamenti di
 
 | Temi | Modelli | Modelli dati modulo |
 ---------|----------|---------
-| Area di lavoro 3.0 | Base | Microsoft Dynamics 365 |
+| Area di lavoro 3.0 | Base | Microsoft® Dynamics 365 |
 | Tranquillo | Vuoto | Salesforce |
 | Urbane |  |  |
 | Ultramarina |  |  |
@@ -234,7 +240,7 @@ Utilizza questo progetto per creare Adaptive Forms, distribuire aggiornamenti di
 
 >[!NOTE]
 >
-> Imposta AEM progetto basato su Archetype versione 30 o successiva per ottenere e utilizzare i modelli di dati modulo Microsoft Dynamics 365 e Salesforce con AEM Forms as a Cloud Service.
+> Imposta AEM progetto basato su Archetype versione 30 o successiva per ottenere e utilizzare i modelli di dati dei moduli Microsoft® Dynamics 365 e Salesforce con AEM Forms as a Cloud Service.
 > Imposta AEM Archetype versione 32 o successiva per ottenere e utilizzare i temi Tranquil, Urbane e Ultramarine con AEM Forms as a Cloud Service.
 
 Per impostare il progetto:
@@ -248,13 +254,17 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 1. **Crea un [!DNL Experience Manager Forms] come [Cloud Service] progetto:** Crea un [!DNL Experience Manager Forms] come [Cloud Service] basato su [Archetipo AEM 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) o successiva. L’archetipo aiuta gli sviluppatori a iniziare facilmente a sviluppare per [!DNL AEM Forms] as a Cloud Service. Include inoltre alcuni temi e modelli di esempio per aiutarti a iniziare rapidamente.
 
-   Apri il prompt dei comandi ed esegui il comando sottostante per creare un [!DNL Experience Manager Forms] Progetto as a Cloud Service. Per includere [!DNL Forms] configurazioni, temi e modelli specifici, set `includeFormsenrollment=y`.
+   Apri il prompt dei comandi ed esegui il comando sottostante per creare un [!DNL Experience Manager Forms] Progetto as a Cloud Service.
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y"
+   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y"
    ```
 
-   Inoltre, cambia `appTitle`, `appId`e `groupId`, nel comando precedente per riflettere l&#39;ambiente.
+   Modificare la `appTitle`, `appId`e `groupId` nel comando precedente per riflettere l&#39;ambiente.
+
+   * Utilizza la `includeFormsenrollment=y` per includere configurazioni specifiche di Forms, temi, modelli, componenti core e dipendenze necessarie per creare Forms adattivo. Se utilizzi Forms Portal, imposta la variabile `includeExamples=y` opzione . Aggiunge al progetto componenti core di Forms Portal.
+
+   * Utilizza la `includeFormscommunications=y` l’opzione include i componenti core Forms e le dipendenze necessarie per includere la funzionalità di comunicazioni cliente.
 
 1. Distribuisci il progetto nell’ambiente di sviluppo locale. È possibile utilizzare il comando seguente per distribuire nell&#39;ambiente di sviluppo locale
 
@@ -263,8 +273,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    Per l&#39;elenco completo dei comandi, vedere [Creazione e installazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
 1. [Distribuisci il codice nel tuo [!DNL AEM Forms] Ambiente as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases).
-
-
 
 ## Configurare gli strumenti del Dispatcher locale {#setup-local-dispatcher-tools}
 

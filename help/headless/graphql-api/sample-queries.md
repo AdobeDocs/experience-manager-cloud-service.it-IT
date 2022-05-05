@@ -3,16 +3,22 @@ title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
-workflow-type: ht
-source-wordcount: '1416'
-ht-degree: 100%
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+workflow-type: tm+mt
+source-wordcount: '1474'
+ht-degree: 98%
 
 ---
 
 # Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query {#learn-graphql-with-aem-sample-content-queries}
 
 Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
+
+>[!NOTE]
+>
+>Alcune delle funzionalità di questa caratteristica sono disponibili nel canale prerelease. In particolare, funzionalità relative alle query persistenti.
+> 
+>Consulta la sezione [Documentazione sul canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#enable-prerelease) per informazioni su come abilitare la funzione per il tuo ambiente.
 
 >[!NOTE]
 >
@@ -40,7 +46,11 @@ Approfondisci queste query di esempio per le illustrazioni di creazione query, i
 >
 >A seconda dell’istanza, è possibile accedere direttamente all’[Interfaccia GraphiQL inclusa con API GraphQL AEM](/help/headless/graphql-api/graphiql-ide.md) per l’invio e la verifica delle query.
 >
->Esempio: `http://localhost:4502/aem/graphiql.html`
+>Puoi accedere all’editor delle query da:
+>
+>* **Strumenti** -> **Generale** -> **Editor query GraphQL**
+>* direttamente; ad esempio, `http://localhost:4502/aem/graphiql.html`
+
 
 >[!NOTE]
 >
@@ -1572,7 +1582,7 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 
 #### Azienda {#fragment-company}
 
-| Nome dell’azienda | CEO | Dipendenti |
+| Nome dell’azienda | Amministratore delegato | Dipendenti |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
 |  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
@@ -1609,4 +1619,4 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
 | San Jose |  USA |  102635 |  city:na |
 | Stoccarda |  Germania |  634830 |  city:emea |
-|  Zurigo |  Svizzera |  415367 |  city:capital<br>city:emea |
+|  Zurigo |  Svizzera |  415367 |  città:capitale<br>città:emea |

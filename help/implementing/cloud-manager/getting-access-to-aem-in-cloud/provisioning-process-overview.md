@@ -1,7 +1,7 @@
 ---
 title: Processo di provisioning - Panoramica
 description: Processo di provisioning - Panoramica
-source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
+source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 8%
@@ -31,7 +31,7 @@ Una volta completato il provisioning automatico:
 * L’amministratore può aggiungere utenti e ruoli per altri membri del team tramite l’Admin Console
 * Rivedere le autorizzazioni basate su ruoli per gli utenti al fine di determinare le assegnazioni di autorizzazioni in Cloud Manager
 
-> ![processoverview.jpg](./assets/processOverview.jpg)
+![processoverview.jpg](assets/processOverview.jpg)
 
 
 Per maggiori informazioni, visita [Onboarding in Experience Manager as a Cloud Service su Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
@@ -49,7 +49,7 @@ Per maggiori informazioni, visita [Onboarding in Experience Manager as a Cloud S
 
 ### 2. Organizzazioni integrate in Adobe Admin Console:
 
-![processoverview2.jpg](./assets/processOverview2.jpg)
+![processoverview2.jpg](assets/processOverview2.jpg)
 
 * Amministratore di sistema:
    * Provisioning di programmi e ambienti AEM.
@@ -62,7 +62,7 @@ Per maggiori informazioni, visita [Onboarding in Experience Manager as a Cloud S
 
 ### 3. Utenti onboard e gestione dell&#39;accesso in Admin Console:
 
-![processoverview3.jpg](./assets/processOverview3.jpg)
+![processoverview3.jpg](assets/processOverview3.jpg)
 
 Tre metodi per integrare gli utenti, a seconda delle dimensioni e delle preferenze:
 * Creare manualmente gli utenti in Admin Console

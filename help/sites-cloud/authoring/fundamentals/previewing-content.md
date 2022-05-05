@@ -2,9 +2,9 @@
 title: Anteprima del contenuto
 description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima i contenuti prima di iniziare a utilizzare il servizio.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e70e6ee055c2542752e66e53aa70a9378b1bc5c0
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,10 @@ AEM offre un servizio di anteprima Sites che consente agli sviluppatori e agli a
 Consente di visualizzare in anteprima le esperienze di pagina che non sarebbero altrimenti visibili dall’ambiente di authoring, come le transizioni di pagina e altri contenuti solo lato pubblicazione.
 
 Per ulteriori dettagli sugli ambienti di anteprima, consulta il documento [Gestire gli ambienti.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
+>[!NOTE]
+>
+>La pubblicazione di un frammento esperienza in Anteprima segue sostanzialmente la stessa procedura applicata a una pagina, ma dalla console o dall’editor Frammenti esperienza.
 
 ## Pubblicazione del contenuto nell’anteprima {#publishing-content-to-preview}
 

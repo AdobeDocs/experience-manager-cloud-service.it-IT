@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Come pubblicare e annullare la pubblicazione di pagine con AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 82%
+source-wordcount: '1791'
+ht-degree: 81%
 
 ---
 
@@ -16,6 +16,10 @@ Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, [devi rende
 Questa operazione è denominata pubblicazione della pagina. Quando si rimuove una pagina dall’ambiente di pubblicazione, si parla di annullamento della pubblicazione. Quando si pubblica e si annulla la pubblicazione di una pagina, quest’ultima rimane disponibile nell’ambiente di authoring per ulteriori modifiche, finché non decidi di eliminarla.
 
 Puoi anche pubblicare o annullare la pubblicazione di una pagina immediatamente o in una data/ora futura predefinita.
+
+>[!NOTE]
+>
+>La pubblicazione di un frammento esperienza segue sostanzialmente la stessa procedura utilizzata per la pubblicazione di una pagina, dalla console o dall’editor Frammenti esperienza.
 
 ## Terminologia {#terminology}
 

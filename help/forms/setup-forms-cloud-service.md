@@ -2,9 +2,9 @@
 title: 'Come impostare un [!DNL AEM Forms] Ambiente as a Cloud Service? '
 description: Informazioni su come impostare e configurare un [!DNL AEM Forms] Ambiente as a Cloud Service
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '588'
 ht-degree: 2%
 
 ---
@@ -39,10 +39,32 @@ ht-degree: 2%
 
 * (Solo per sandbox) Dopo l’onboarding del servizio, [creare](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) e [eseguire](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) oleodotti di produzione e di non produzione. Abilita e porta le funzioni più recenti di [!DNL AEM Forms] as a Cloud Service al tuo ambiente.
 
+È possibile utilizzare Forms as a Cloud Service per creare un modulo adattivo (Registrazione digitale) o per generare una comunicazione con il cliente. Dopo il completamento [Onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) al [!DNL Adobe Experience Manager] as a Cloud Service, esegui una delle seguenti azioni per abilitare le funzioni di iscrizione digitale o di comunicazione dei clienti. Puoi anche abilitare entrambe le funzioni:
+
+1. Accedi a Cloud Manager e apri la tua istanza as a Cloud Service di AEM Forms.
+
+1. Apri l’opzione Modifica programma , vai alla scheda Soluzioni e componenti aggiuntivi e seleziona la **[!UICONTROL Forms - Comunicazioni]** opzione .
+
+   ![Comunicazioni](assets/communications.png)
+
+   Se hai già abilitato la **[!UICONTROL Forms - Registrazione digitale]** , quindi seleziona la **[!UICONTROL Forms - Componente aggiuntivo per le comunicazioni]** opzione .
+
+   ![Addon](assets/add-on.png)
+
+1. Fai clic su **[!UICONTROL Aggiorna]**.
+
+1. Esegui la pipeline di compilazione. Una volta che la pipeline di build ha esito positivo, le API di comunicazione sono abilitate per l’ambiente.
+
+>[!NOTE]
+>
+> Per abilitare e configurare le API di manipolazione dei documenti, aggiungi la seguente regola a [Configurazione del Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
+
 ## Configurare gli utenti {#config-users}
 
 Dopo aver completato l&#39;onboarding nel servizio, accedi al tuo [!DNL AEM Forms] Ambiente as a Cloud Service, apri le istanze Author e Publish e aggiungi gli utenti a specifiche Forms [AEM gruppi](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing), in base alla loro personalità. Nella tabella seguente sono elencati i gruppi di AEM specifici di Forms disponibili e i tipi di utente corrispondenti. La tabella fornisce anche AEM tipo di istanza per ogni tipo di utente:
-
 
 | Tipi di utenti (Personas) | Gruppi di utenti | istanza AEM |
 |---|---|---|
@@ -60,7 +82,6 @@ Per ulteriori informazioni sui gruppi di AEM specifici di Forms e sulle autorizz
 [Configurare un ambiente di sviluppo locale](setup-local-development-environment.md). È possibile utilizzare l’ambiente di sviluppo locale per creare un modulo adattivo e le relative risorse (temi, modelli, azioni di invio personalizzate, servizio di precompilazione e altro) e [convertire PDF forms in Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it) senza accedere all’ambiente di sviluppo cloud.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
-
 
 | Role| Organization| Description|
 |-----|-------|-----|
@@ -90,10 +111,7 @@ After you onboard the service, configure a [local development environment](setup
 
 Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title ‘You now have administrator rights to manage Adobe software and services for your organization’. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#onboarding-users-in-admin-console) via IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
 
-
 ## Next step {#next-steps} -->
-
-
 
 <!-- ## Prerequisites {#prerequisites}
 

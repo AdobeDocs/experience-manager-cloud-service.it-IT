@@ -2,16 +2,22 @@
 title: Come accedere ai contenuti tramite API di consegna AEM
 description: In questa parte del Percorso di sviluppatori AEM Headless, scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 8%
+source-wordcount: '1410'
+ht-degree: 11%
 
 ---
 
 # Come accedere ai contenuti tramite API di consegna AEM {#access-your-content}
 
 In questa parte del [AEM Percorso di sviluppo headless,](overview.md) scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto e inviarlo all’app (consegna headless).
+
+>[!NOTE]
+>
+>Alcune delle funzionalità di questa caratteristica sono disponibili nel canale prerelease. In particolare, funzionalità relative alle query persistenti.
+> 
+>Consulta la sezione [Documentazione sul canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#enable-prerelease) per informazioni su come abilitare la funzione per il tuo ambiente.
 
 ## La storia finora {#story-so-far}
 
@@ -242,7 +248,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Prima di iniziare con le query sul contenuto è necessario:
 
 * Abilita l&#39;endpoint
-   * Usa strumenti -> Risorse -> GraphQL
+   * Usa Strumenti -> Generale -> GraphQL
    * [Abilitazione dell’endpoint GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
 
 * Installa GraphiQL (se necessario)
@@ -270,9 +276,10 @@ I modelli di frammento verranno utilizzati:
 
 ### Dove testare le query {#where-to-test-your-queries}
 
-Le query possono essere immesse nell’interfaccia GraphiQL, ad esempio in:
+Le query possono essere immesse nell&#39;interfaccia GraphiQL. Puoi accedere all’editor delle query da:
 
-* `http://localhost:4502/aem/graphiql.html`
+* **Strumenti** -> **Generale** -> **Editor query GraphQL**
+* direttamente; ad esempio, `http://localhost:4502/aem/graphiql.html`
 
 ![Interfaccia di GraphiQL](assets/graphiql-interface.png "Interfaccia di GraphiQL")
 

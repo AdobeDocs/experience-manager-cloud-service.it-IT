@@ -2,10 +2,10 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 95%
+source-wordcount: '1560'
+ht-degree: 93%
 
 ---
 
@@ -354,6 +354,12 @@ Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML s
 >[!NOTE]
 >
 >Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere ai contenuti del frammento esperienza direttamente dall’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+
+## Pubblicazione di frammenti esperienza {#publishing-experience-fragments}
+
+La pubblicazione del frammento esperienza è fondamentalmente identica a [pubblicazione di una pagina](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (dalla console o dall’editor Frammenti esperienza).
+
+In alternativa è possibile [pubblica in anteprima](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (di nuovo dalla console o dall’editor Frammenti esperienza).
 
 ## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
 
