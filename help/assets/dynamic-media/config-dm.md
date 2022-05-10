@@ -3,9 +3,9 @@ title: Configura Cloud Service Dynamic Media
 description: Scopri come configurare Dynamic Media in Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
 workflow-type: tm+mt
-source-wordcount: '3438'
+source-wordcount: '3449'
 ht-degree: 4%
 
 ---
@@ -67,7 +67,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. In Experience Manager as a Cloud Service, seleziona il logo Experience Manager as a Cloud Service per accedere alla console di navigazione globale.
 1. Nella parte sinistra della console, seleziona l’icona Strumenti , quindi vai a **[!UICONTROL Cloud Services > Configurazione Dynamic Media]**.
 1. Nella pagina Browser configurazione Dynamic Media, seleziona nel riquadro a sinistra **[!UICONTROL globale]** (non selezionare l’icona della cartella a sinistra di **[!UICONTROL globale]**). Quindi seleziona **[!UICONTROL Crea]**.
-1. Sulla **[!UICONTROL Crea configurazione Dynamic Media]** , inserisci un titolo, l&#39;indirizzo e-mail dell&#39;account Dynamic Media, la password, quindi seleziona la tua area geografica. Queste informazioni vengono fornite per Adobe nell’e-mail di provisioning. Se non hai ricevuto questa e-mail, contatta l’Assistenza clienti di Adobe.
+1. Sulla **[!UICONTROL Crea configurazione Dynamic Media]** , inserisci il titolo, l&#39;indirizzo e-mail dell&#39;account Dynamic Media e la password dell&#39;amministratore aziendale dell&#39;account Dynamic Media, quindi seleziona la tua area geografica. Queste informazioni vengono fornite per Adobe nell’e-mail di provisioning. Se non hai ricevuto questa e-mail, contatta l’Assistenza clienti di Adobe.
 1. Seleziona **[!UICONTROL Connessione a Dynamic Media]**.
 1. In **[!UICONTROL Modifica password]** nella finestra di dialogo **[!UICONTROL Nuova password]** immetti una nuova password composta da 8-25 caratteri. La password deve contenere almeno uno dei seguenti elementi:
 
@@ -282,7 +282,7 @@ Vedi [Caricare le risorse](/help/assets/add-assets.md).
 
    * Tocca due volte il **[!UICONTROL abilitato]** campo . Per impostazione predefinita, tutti i tipi MIME delle risorse sono abilitati (impostati su **[!UICONTROL true]**), il che significa che le risorse vengono sincronizzate in Dynamic Media per l’elaborazione. Se desideri escludere l’elaborazione di questo tipo MIME della risorsa, modifica questa impostazione in **[!UICONTROL false]**.
 
-   * Doppio tocco **[!UICONTROL jobParam]** per aprire il relativo campo di testo associato. Vedi [Tipi MIME supportati](/help/assets/file-format-support.md) per un elenco dei valori dei parametri di elaborazione consentiti è possibile utilizzare per un determinato tipo MIME.
+   * Doppio tocco **[!UICONTROL jobParam]** per aprire il relativo campo di testo associato. Vedi [Tipi MIME supportati](/help/assets/file-format-support.md) per un elenco dei valori dei parametri di elaborazione consentiti che è possibile utilizzare per un determinato tipo MIME.
 
 1. Effettua una delle operazioni seguenti:
    * Ripeti i passaggi 3-4 per modificare altri tipi MIME.
@@ -292,7 +292,7 @@ Vedi [Caricare le risorse](/help/assets/add-assets.md).
 
 #### Aggiungi tipi MIME per i formati non supportati {#adding-mime-types-for-unsupported-formats}
 
-In Experience Manager Assets puoi aggiungere tipi MIME personalizzati per i formati non supportati. Per fare in modo che qualsiasi nuovo nodo aggiunto in CRXDE Lite non venga eliminato ad Experience Manager, sposta il tipo MIME prima di `image_`. Inoltre, assicurati che il valore abilitato sia impostato su **[!UICONTROL false]**.
+In Experience Manager Assets puoi aggiungere tipi MIME personalizzati per i formati non supportati. Per evitare che un nuovo nodo aggiunto in CRXDE Lite venga eliminato ad Experience Manager, sposta il tipo MIME prima di `image_`. Inoltre, assicurati che il valore abilitato sia impostato su **[!UICONTROL false]**.
 
 **Per aggiungere tipi MIME per i formati non supportati:**
 
