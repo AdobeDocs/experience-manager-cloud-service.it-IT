@@ -2,9 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
+source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2535'
 ht-degree: 1%
 
 ---
@@ -64,13 +64,13 @@ Tieni presente che sia la personalizzazione di un indice predefinito sia gli ind
 
 >[!NOTE]
 >
->Se si personalizza un indice predefinito, ad esempio `damAssetLucene-6`, copia l&#39;ultima definizione di indice preconfigurata da un *ambiente Cloud Service* ambiente di sviluppo utilizzando CRX DE Package Manager (`/crx/packmgr/`). Quindi rinominare la configurazione, ad esempio per `damAssetLucene-6-custom-1`e aggiungi le tue personalizzazioni in alto. In questo modo le configurazioni richieste non vengono rimosse inavvertitamente. Ad esempio, il `tika` nodo sotto `/oak:index/damAssetLucene-6/tika` è richiesto nell&#39;indice personalizzato del servizio cloud. Non esiste nell&#39;SDK di Cloud.
+>Se si personalizza un indice predefinito, ad esempio `damAssetLucene-6`, copia l&#39;ultima definizione di indice preconfigurata da un *ambiente Cloud Service* utilizzando il CRX DE Package Manager (`/crx/packmgr/`). Quindi rinominare la configurazione, ad esempio per `damAssetLucene-6-custom-1`e aggiungi le tue personalizzazioni in alto. In questo modo le configurazioni richieste non vengono rimosse inavvertitamente. Ad esempio, il `tika` nodo sotto `/oak:index/damAssetLucene-6/tika` è richiesto nell&#39;indice personalizzato del servizio cloud. Non esiste nell&#39;SDK di Cloud.
 
 È necessario preparare un nuovo pacchetto di definizione dell&#39;indice che contiene la definizione effettiva dell&#39;indice, seguendo questo pattern di denominazione:
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-che poi deve scendere `ui.apps/src/main/content/jcr_root`. Le cartelle secondarie non sono supportate al momento.
+che poi deve scendere `ui.apps/src/main/content/jcr_root`. Tutte le definizioni di indice personalizzate e personalizzate devono essere memorizzate in `/oak:index`.
 
 Il filtro per il pacchetto deve essere impostato in modo da mantenere gli indici esistenti (preconfigurati). Nel file `ui.apps/src/main/content/META-INF/vault/filter.xml`, ogni indice personalizzato (o personalizzato) deve essere elencato, ad esempio `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Se la versione dell&#39;indice viene successivamente modificata, è necessario regolare il filtro.
 
@@ -84,15 +84,69 @@ Il pacchetto del campione di cui sopra è costruito come `com.adobe.granite:new-
 
 ## Distribuzione delle definizioni degli indici {#deploying-index-definitions}
 
->[!NOTE]
->
->C&#39;è un problema noto con la versione del plug-in pacchetto Maven Jackrabbit Filevault **1.1.0** che non consente di aggiungere `oak:index` a moduli di `<packageType>application</packageType>`. È necessario eseguire l’aggiornamento a una versione più recente del plug-in.
-
-Le definizioni degli indici sono ora contrassegnate come personalizzate e con versione:
+Le definizioni degli indici sono contrassegnate come personalizzate e con versione:
 
 * La definizione stessa dell&#39;indice (ad esempio `/oak:index/ntBaseLucene-custom-1`)
 
-Pertanto, per distribuire un indice, la definizione dell&#39;indice (`/oak:index/definitionname`) deve essere fornita tramite `ui.apps` tramite Git e il processo di implementazione di Cloud Manager.
+Per distribuire un indice personalizzato o personalizzato, la definizione dell&#39;indice (`/oak:index/definitionname`) deve essere fornita tramite `ui.apps` tramite Git e il processo di implementazione di Cloud Manager. Nel filtro FileVault, ad esempio `ui.apps/src/main/content/META-INF/vault/filter.xml`, elencare singolarmente ogni indice personalizzato e personalizzato, ad esempio `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definizione di indice personalizzata/personalizzata verrà quindi memorizzata nel file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, come segue:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="[async,nrt]"
+        compatVersion="{Long}2"
+        ...
+        </indexRules>
+        <tika jcr:primaryType="nt:unstructured">
+            <config.xml jcr:primaryType="nt:file"/>
+        </tika>
+</jcr:root>
+```
+
+L&#39;esempio precedente contiene una configurazione per Apache Tika. Il file di configurazione Tika verrebbe memorizzato in `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+
+### Configurazione del progetto
+
+A seconda della versione del plug-in pacchetto Maven Jackrabbit Filevault, è necessaria un’ulteriore configurazione del progetto. Quando si utilizza la versione del plug-in del pacchetto Maven Jackrabbit Filevault **1.1.6.** o successivo, quindi il file `pom.xml` deve contenere la seguente sezione nella configurazione del plug-in per `filevault-package-maven-plugin`, in `configuration/validatorsSettings` (appena prima `jackrabbit-nodetypes`):
+
+```xml
+<jackrabbit-packagetype>
+    <options>
+        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+    </options>
+</jackrabbit-packagetype>
+```
+
+Inoltre, in questo caso il `vault-validation` la versione deve essere aggiornata a una versione più recente:
+
+```xml
+<dependency>
+    <groupId>org.apache.jackrabbit.vault</groupId>
+    <artifactId>vault-validation</artifactId>
+    <version>3.5.6</version>
+</dependency>
+```
+
+Quindi, in `ui.apps.structure/pom.xml` e `ui.apps/pom.xml`, la configurazione `filevault-package-maven-plugin` deve avere `allowIndexDefinitions` nonché `noIntermediateSaves` abilitato. Opzione `noIntermediateSaves` assicura che le configurazioni dell&#39;indice vengano aggiunte atomicamente.
+
+```xml
+<groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <properties>
+            <cloudManagerTarget>none</cloudManagerTarget>
+            <noIntermediateSaves>true</noIntermediateSaves>
+        </properties>
+    ...
+```
+
+In `ui.apps.structure/pom.xml`, `filters` per questo plug-in deve contenere una radice di filtro come segue:
+
+```xml
+<filter><root>/oak:index</root></filter>
+```
 
 Una volta aggiunta la nuova definizione dell’indice, la nuova applicazione deve essere distribuita tramite Cloud Manager. All’avvio della distribuzione vengono avviati due processi, responsabili dell’aggiunta (e dell’unione, se necessario) delle definizioni dell’indice a MongoDB e Azure Segment Store rispettivamente per l’authoring e la pubblicazione. Gli archivi sottostanti vengono reindicizzati con le nuove definizioni dell&#39;indice, prima che si verifichi lo switch Blue-Green.
 
