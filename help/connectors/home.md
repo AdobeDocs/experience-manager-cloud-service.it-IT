@@ -1,18 +1,18 @@
 ---
 title: Connettori di Adobe Experience Manager as a Cloud Service
-description: Risorse di supporto autonomo e collegamenti alla documentazione sui connettori di Adobe Experience Manager as a Cloud Service
-landing-page-description: Scopri come integrare i connettori in AEM as a Cloud Service.
+description: Scopri i connettori, cosa possono fare e come implementare questi preziosi strumenti in Experience Manager.
+landing-page-description: Scopri i connettori, cosa possono fare e come implementare questi preziosi strumenti in Experience Manager.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 94%
+source-wordcount: '394'
+ht-degree: 80%
 
 ---
 
 # Implementazione di connettori per Experience Manager as a Cloud Service {#aem-connectors-guide}
 
-In questa pagina sono elencate le risorse di supporto autonomo relative ai connettori per Experience Manager as a Cloud Service.
+Scopri quali sono i connettori, ad Experience Manager as a Cloud Service, quali operazioni possono eseguire e come implementare questi preziosi strumenti in Experience Manager.
 
 ## Articoli principali sui connettori di Experience Manager as a Cloud Service {#key-articles}
 
@@ -45,5 +45,5 @@ In questa pagina sono elencate le risorse di supporto autonomo relative ai conne
 * [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it)
 * [Preparazione al GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

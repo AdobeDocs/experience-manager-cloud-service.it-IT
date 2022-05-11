@@ -1,18 +1,18 @@
 ---
 title: AEM Percorso di sviluppatori headless
-description: Inizia qui per un percorso guidato attraverso Adobe Experience Manager (AEM) as a Cloud Service quando utilizza funzioni quali Modelli di contenuto, Frammenti di contenuto e API GraphQL per sviluppare esperienze headless come sistema di gestione dei contenuti headless (CMS). Questo percorso fornisce tutte le informazioni necessarie per sviluppare la tua prima applicazione headless.
-landing-page-description: Inizia qui per un percorso guidato attraverso le funzionalità headless di AEM, le loro funzionalità e come sfruttarle per il tuo primo progetto di sviluppo.
+description: 'Inizia qui per un percorso guidato attraverso Adobe Experience Manager (AEM) as a Cloud Service quando viene utilizzato come CMS (Headless Content Management System). Scopri le funzioni headless potenti e flessibili, le loro funzionalità e come sfruttarle nel tuo primo progetto di sviluppo headless. Questo percorso fornisce tutte le informazioni necessarie per sviluppare la tua prima applicazione headless. '
+landing-page-description: 'Scopri la distribuzione e l’implementazione headless dei contenuti. Ulteriori informazioni sullo sviluppo della strategia all''interno dell''azienda. '
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
+source-git-commit: 2ec6b29800867462bbc2e88048c583d4e5eefa57
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1301'
 ht-degree: 12%
 
 ---
 
 # AEM Percorso di sviluppatori headless {#aem-headless-developer-journey}
 
-Inizia qui per un percorso guidato attraverso Adobe Experience Manager (AEM) as a Cloud Service quando viene utilizzato come CMS (Headless Content Management System). Scopri le funzioni headless potenti e flessibili, le loro funzionalità e come sfruttarle nel tuo primo progetto di sviluppo headless. Questo percorso fornisce tutte le informazioni necessarie per sviluppare la tua prima applicazione headless.
+Inizia qui per un percorso guidato [!DNL Adobe Experience Manager as a Cloud Service] (AEM) quando viene utilizzato come sistema di gestione dei contenuti headless (CMS). Scopri le funzioni headless potenti e flessibili, le loro funzionalità e come sfruttarle nel tuo primo progetto di sviluppo headless. Questo percorso fornisce tutte le informazioni necessarie per sviluppare la tua prima applicazione headless.
 
 ## Introduzione {#introduction}
 
@@ -87,7 +87,7 @@ I percorsi di documentazione mostrano come AEM risolvere un problema aziendale f
 
 Come tali percorsi sono progettati per stare da soli. Tuttavia alcuni di essi possono essere correlati tra loro. Consulta questi percorsi aggiuntivi per ulteriori informazioni su come AEM funzioni avanzate funzionano insieme.
 
-* [Esercitazioni AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Se preferisci imparare facendo e sei tecnicamente inclinato, segui i nostri tutorial pratici organizzati da API e framework, che esplorano la creazione e l’utilizzo di applicazioni create su AEM Headless.
+* [Esercitazioni AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Se preferisci imparare facendo e sei tecnicamente inclinato, segui i nostri tutorial pratici organizzati da API e framework, che esplorano la creazione e l&#39;utilizzo di applicazioni create su AEM Headless.
 * [AEM Percorso di traduzione headless](/help/journey-headless/translation/overview.md) - Questo percorso di documentazione ti offre un’ampia comprensione della tecnologia headless, di come AEM i contenuti headless e di come tradurli.
 * [Percorso di authoring headless](/help/journey-headless/author/overview.md) - Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless.
 * [Percorso architetto headless](/help/journey-headless/architect/overview.md) - Inizia qui per un’introduzione alle funzioni potenti, flessibili e headless di Adobe Experience Manager as a Cloud Service e a come modellare i contenuti per il tuo progetto.

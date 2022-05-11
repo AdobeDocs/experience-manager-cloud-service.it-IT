@@ -1,18 +1,18 @@
 ---
 title: Sicurezza di Adobe Experience Manager as a Cloud Service
-description: Risorse di supporto autonomo e collegamenti alla documentazione sulla sicurezza di Adobe Experience Manager as a Cloud Service
+description: 'Ulteriori informazioni sulle funzioni di sicurezza di Adobe Experience Manager as a Cloud Service. '
 landing-page-description: Argomenti importanti sulla sicurezza relativi a Experience Manager as a Cloud Service.
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 100%
+source-wordcount: '382'
+ht-degree: 92%
 
 ---
 
 # Sicurezza per Experience Manager as a Cloud Service {#aem-security-guide}
 
-In questa pagina sono elencate le risorse di supporto autonomo relative alla sicurezza di Experience Manager as a Cloud Service.
+Ulteriori informazioni sulle funzioni di sicurezza di Adobe Experience Manager as a Cloud Service.
 
 ## Articoli principali sulla sicurezza {#key-articles}
 
@@ -45,5 +45,5 @@ In questa pagina sono elencate le risorse di supporto autonomo relative alla sic
 * [Documentazione di Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Preparazione al GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

@@ -1,12 +1,12 @@
 ---
 title: Onboarding per Adobe Experience Manager as a Cloud Service
-description: Risorse di supporto autonomo e collegamenti alla documentazione per l’onboarding di Adobe Experience Manager as a Cloud Service
+description: 'Inizia con la configurazione di Experience Manager, accedi al cloud e scopri come eseguire il backup dei tuoi dati. '
 landing-page-description: Questa guida fornisce un riepilogo su come iniziare a usare AEM as a Cloud Service, incluso come ottenere l’accesso e importanti informazioni sulla protezione dei dati.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 38%
+source-wordcount: '523'
+ht-degree: 37%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 38%
 >title="Panoramica sull’onboarding"
 >abstract="Che tu stia distribuendo una nuova applicazione o ne esegua la migrazione, questa guida funge da punto di partenza per garantire che l&#39;applicazione sia ottimizzata e pronta per il successo sul Cloud Service. Per consentire agli utenti di aggiungere a Cloud Manager i ruoli assegnati e le autorizzazioni associate, ti servirà l’aiuto del tuo Adobe ID e dell’amministratore di sistema."
 
-Congratulazioni per aver iniziato il tuo percorso con AEM as a Cloud Service! Che tu stia distribuendo una nuova applicazione o ne esegua la migrazione, questa guida funge da punto di partenza per garantire che l&#39;applicazione sia ottimizzata e pronta per il successo sul Cloud Service.
+Congratulazioni per aver iniziato il tuo percorso con AEM as a Cloud Service. Che tu stia distribuendo una nuova applicazione o ne esegua la migrazione, questa guida funge da punto di partenza per garantire che l&#39;applicazione sia ottimizzata e pronta per il successo sul Cloud Service.
 
 ## Esperienza onboarding {#audience}
 
@@ -56,5 +56,5 @@ Il percorso di onboarding illustrato di seguito è stato progettato per un utent
 * [Documentazione di Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Preparazione al GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

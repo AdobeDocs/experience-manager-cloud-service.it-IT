@@ -1,18 +1,18 @@
 ---
 title: AEM Screens as a Cloud Service
-description: Risorse di supporto autonomo e link alla documentazione di Adobe Experience Manager Screens as a Cloud Service
+description: Scopri di più su AEM Screens e come funziona questa soluzione di digital signage.
 landing-page-description: Cos’è AEM Screens as a Cloud Service.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 74%
+source-wordcount: '418'
+ht-degree: 69%
 
 ---
 
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-In questa pagina sono elencate le risorse di supporto autonomo relative ad AEM Screens as a Cloud Service.
+Questa pagina ti aiuta a comprendere meglio AEM Screens e come funziona questa soluzione di digital signage. Risorse di supporto autonomo e informazioni sulle novità.
 
 >[!NOTE]
 >Per AEM Screens con AEM 6.5, consulta [Guida utente di AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
@@ -49,5 +49,5 @@ In questa pagina sono elencate le risorse di supporto autonomo relative ad AEM S
 * [Documentazione di Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Preparazione al GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

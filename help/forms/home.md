@@ -1,18 +1,18 @@
 ---
 title: Introduzione a [!DNL AEM Forms] as a Cloud Service
-description: Utilizza questo Platform-as-a-Service (PaaS) per creare, gestire e pubblicare moduli digitali e processi aziendali di classe enterprise, nonché per collegare i moduli alle origini dati correnti.
+description: Scopri AEM Forms e scopri come è utile per produrre documenti e contenuti di moduli pronti per l’azienda. Informazioni su Platform-as-a-Service (PaaS) e su come gestire moduli digitali e processi aziendali di classe enterprise, nonché collegare Forms alle origini dati correnti.
 landing-page-description: Scopri come utilizzare i moduli in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: fe2f0743d8efaaf9b3fcfc9e20264cca627db6c8
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '296'
 ht-degree: 6%
 
 ---
 
 # Introduzione {#introduction}
 
-Adobe Experience Manager Forms as a Cloud Service offre una soluzione nativa per il cloud, Platform as a Service (PaaS), che consente alle aziende di creare, gestire, pubblicare e aggiornare moduli digitali complessi, integrando i dati inviati con i processi back-end, le regole aziendali e il salvataggio dei dati in un archivio dati esterno. Il servizio è sempre corrente, sempre disponibile e sempre in formazione.
+Adobe [!DNL Experience Manager Forms as a Cloud Service] offre una soluzione nativa per il cloud, Platform as a Service (PaaS), che consente alle aziende di creare, gestire, pubblicare e aggiornare moduli digitali complessi, integrando i dati inviati con i processi back-end, le regole aziendali e il salvataggio dei dati in un archivio dati esterno. Il servizio è sempre corrente, sempre disponibile e sempre in formazione.
 
 È possibile utilizzare il servizio per creare ed eseguire il rollout di moduli digitali interattivi e coinvolgenti. Ad esempio, prendete un&#39;organizzazione che sta cercando di digitalizzare il proprio percorso di iscrizione clienti. Hanno più origini dati con dati cliente esistenti. È in corso la precompilazione dei moduli, l’aggiunta di firme elettroniche e l’archiviazione dei moduli compilati come file di PDF. Inoltre, l&#39;organizzazione dispone di più moduli di stampa (PDF forms), e sta anche cercando di convertire tutti i moduli di stampa in moduli digitali.
 

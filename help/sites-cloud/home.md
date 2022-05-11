@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager Sites as a Cloud Service
-description: Risorse di supporto autonomo e collegamenti alla documentazione di Adobe Experience Manager Sites as a Cloud Service
+title: Risorse di supporto per Experience Manager as a Cloud Service Sites
+description: Ottieni un elenco completo di tutte le risorse di supporto di AEM Cloud Services . Trova le risposte alle tue domande Cloud Service su AEM Sites.
 landing-page-description: Come effettuare l’authoring e come amministrare AEM Sites as a Cloud Service.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '405'
+ht-degree: 87%
 
 ---
 
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-In questa pagina sono elencate le risorse di supporto autonomo relative a Experience Manager Sites as a Cloud Service.
+Questa pagina fornisce un elenco completo di tutte le risorse di supporto di AEM Cloud Services . Risposte al tuo [!DNL AEM Sites as a Cloud Service] domande.
 
 ## Articoli principali su Sites {#key-articles}
 
@@ -52,5 +52,5 @@ In questa pagina sono elencate le risorse di supporto autonomo relative a Experi
 * [Documentazione di Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Preparazione al GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
