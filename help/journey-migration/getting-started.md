@@ -2,9 +2,9 @@
 title: Guida introduttiva al Percorso di migrazione a AEM as a Cloud Service
 description: Inizia il tuo percorso di migrazione acquisendo familiarità con le nozioni di base sul passaggio ad AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '587'
 ht-degree: 11%
 
 ---
@@ -35,9 +35,13 @@ Il percorso di migrazione al Cloud Service prevede le seguenti fasi:
 * Una volta che tutto è pronto, puoi eseguire la migrazione con [Fase Go-Live](/help/journey-migration/go-live.md)
 * Infine, assicurati di monitorare i problemi e migliorare le prestazioni al termine della migrazione, nella [Fase post-pubblicazione](/help/journey-migration/post-go-live.md).
 
-La figura seguente mostra una rappresentazione pittorica del percorso di transizione consigliato AEM as a Cloud Service.
+La figura seguente mostra una rappresentazione di alto livello del percorso di transizione consigliato AEM as a Cloud Service.
 
 ![immagine](/help/journey-migration/assets/move-aemcloud-process.png)
+
+Puoi anche consultare il diagramma seguente per una visualizzazione più dettagliata e granulare del percorso di migrazione.
+
+![immagine](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 

@@ -2,10 +2,10 @@
 title: Guida alla migrazione a Experience Manager as a Cloud Service per i partner
 description: Guida alla migrazione a Experience Manager as a Cloud Service per i partner
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 14%
+source-wordcount: '2126'
+ht-degree: 13%
 
 ---
 
@@ -29,7 +29,9 @@ Questo unico pager delinea l’approccio graduale consigliato per la transizione
 * Developer Journey in Adobe Experience Manager as a Cloud Service
 * Moving to Adobe Experience Manager as a Cloud Service -->
 
-<br>
+Vedi il diagramma seguente per una rappresentazione generale del percorso di migrazione.
+
+![immagine](/help/journey-migration/assets/migration-process.png)
 
 ## Guida introduttiva ad Adobe Experience Manager as a Cloud Service {#getting-started}
 
@@ -113,7 +115,7 @@ Con l’Experience Manager as a Cloud Service, i team possono concentrarsi sull�
 Il percorso di transizione verso Cloud Service prevede tre fasi: pianificazione, esecuzione e post-pubblicazione.
 Per una transizione corretta e senza problemi, è necessario garantire una pianificazione adeguata e attenersi alle best practice descritte nella presente guida.
 
-La figura seguente mostra un’illustrazione del percorso consigliato per la transizione a Cloud Service.
+La figura seguente mostra una rappresentazione di alto livello del percorso di transizione consigliato al Cloud Service.
 
 ![immagine](/help/journey-migration/assets/home-img1.png)
 
