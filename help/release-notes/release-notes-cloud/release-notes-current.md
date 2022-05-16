@@ -3,10 +3,10 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cl
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 7ee2e43ab8a5726b2ecf7f157f67b5f3cc73fcff
+source-git-commit: 092338947ef7c8f34bda4604e1c901344e966be0
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 27%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -85,24 +85,6 @@ Si consiglia vivamente di aggiornare il progetto maven con l’ultima versione d
 
 È possibile trovare un elenco completo delle versioni mensili di Cloud Manager [qui](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
-## Analisi delle best practice {#bpa-release}
+## Strumenti di migrazione {#migration-tools}
 
-### Data di pubblicazione {#release-date-bpa}
-
-La data di rilascio di Best Practices Analyzer v2.1.28 è il 22 aprile 2022.
-
-### Novità {#what-is-new-bpa}
-
-* Possibilità di rilevare e creare rapporti sull’utilizzo delle API di Asset Manager non supportate. Esistono quattro API che non sono più supportate in AEM as a Cloud Service. I clienti devono assicurarsi di non utilizzare più queste API e devono utilizzare il nuovo metodo di caricamento delle risorse.
-
-* Possibilità di rilevare l’utilizzo di modelli di frammenti di contenuto. I modelli per frammenti di contenuto non sono più supportati per la creazione di nuovi frammenti di contenuto in AEM as a Cloud Service. Per sostituire i modelli di frammento di contenuto, i clienti dovranno creare modelli di frammento di contenuto.
-
-* Possibilità di rilevare le risorse con più di 100 discendenti sotto il nodo di metadati della risorsa nell’archivio. È consigliabile rimuovere i nodi di metadati non necessari per migliorare le prestazioni durante il caricamento di cartelle costituite da tali risorse.
-
-* Possibilità di rilevare e segnalare il tipo di archivio dati utilizzato.
-
-* Pattern aggiornato per AEM Portale moduli.
-
-### Correzioni di bug {#bug-fixes-bpa}
-
-* BPA segnalava i risultati per i componenti core invece di generare rapporti solo per i componenti cliente. Questo problema è stato risolto.
+È possibile trovare un elenco completo delle versioni degli strumenti di migrazione [qui](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
