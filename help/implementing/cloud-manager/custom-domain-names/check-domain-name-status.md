@@ -2,9 +2,9 @@
 title: Verifica dello stato del nome di dominio
 description: Scopri come determinare se il nome di dominio personalizzato è stato verificato correttamente da Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,24 @@ Cloud Manager verifica la proprietà del dominio tramite il valore TXT e visuali
    * Fare riferimento al documento [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) per saperne di più.
 
 Cloud Manager attiva automaticamente una verifica TXT quando selezioni **Salva** sulla fase di verifica della **Aggiungi dominio personalizzato** procedura guidata. Per le verifiche successive, devi selezionare attivamente l’icona verifica di nuovo accanto allo stato.
+
+## Errori nome di dominio {#domain-error}
+
+Questa sezione spiega gli errori che potresti visualizzare e come risolverli.
+
+**Dominio non installato** - Si riceve questo errore durante la convalida del dominio del record TXT anche dopo aver verificato che il record sia stato aggiornato in modo appropriato.
+
+**Spiegazione errore** - Blocca infine un dominio all&#39;account iniziale che lo ha registrato e nessun altro account può registrare un sottodominio senza richiedere l&#39;autorizzazione. Inoltre, Flast ti consente di assegnare un dominio apex e i sottodomini associati a un solo servizio e account Flast. Se disponi di un account Flast esistente che collega lo stesso apex e sottodomini utilizzati per i tuoi domini AEM Cloud Service, verrà visualizzato questo errore.
+
+**Risoluzione degli errori** - L&#39;errore viene corretto come segue:
+
+* Rimuovi l’apex e i sottodomini dall’account esistente prima di installare il dominio in Cloud Manager. Utilizza questa opzione per collegare il dominio apex e tutti i sottodomini all’account Flast AEM as a Cloud Service. Vedi [Utilizzo dei domini nella documentazione finale](https://docs.fastly.com/en/guides/working-with-domains) per ulteriori dettagli.
+
+* Se il dominio apex ha più sottodomini per AEM siti as a Cloud Service e non AEM as a Cloud Service che desideri collegare a diversi account Flast, prova a installare il dominio in Cloud Manager e se l’installazione del dominio non riesce a creare un ticket di assistenza clienti con Flast in modo da poter seguire Flast per tuo conto.
+
+>[!NOTE]
+>
+>NOTA: Non instradare il DNS del sito a AEM IP as a Cloud Service se il dominio non è stato installato correttamente.
 
 ## Configurazioni CDN preesistenti per nomi di dominio personalizzati {#pre-existing-cdn}
 
