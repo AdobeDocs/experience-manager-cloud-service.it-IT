@@ -3,9 +3,9 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
+source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1960'
 ht-degree: 0%
 
 ---
@@ -181,6 +181,10 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
          Header set Age 0
       </LocationMatch>
       ```
+
+### Comportamento della richiesta di HEAD {#request-behavior}
+
+Quando viene ricevuta una richiesta di HEAD al CDN di Adobe per una risorsa che è **not** memorizzato in cache, la richiesta viene trasformata e ricevuta dal dispatcher e/o dall’istanza AEM come richiesta GET. Se la risposta è memorizzabile nella cache, le richieste successive di HEAD verranno servite dalla CDN. Se la risposta non è memorizzabile in cache, le richieste successive di HEAD verranno trasmesse al dispatcher e/o all’istanza AEM per un periodo di tempo che dipende dal `Cache-Control` TTL.
 
 ## Annullamento della validità della cache del dispatcher {#disp}
 
