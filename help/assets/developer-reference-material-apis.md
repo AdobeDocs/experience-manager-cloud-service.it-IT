@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f5282d149e80328742ff9008441960f62cea6290
+source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 3%
+source-wordcount: '1795'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +26,7 @@ L’articolo contiene raccomandazioni, materiali di riferimento e risorse per gl
 
 | Livello di supporto | Descrizione |
 | ------------- | --------------------------- |
-| ✓ | Supportata |
+| ✓ | Funzione supportata |
 | × | Non supportato. Non usare. |
 | - | Non disponibile |
 
@@ -167,6 +167,8 @@ Dopo aver caricato tutte le parti di un file binario, invia una richiesta HTTP P
 | `versionLabel` | Stringa | Facoltativo | Se viene creata una nuova versione, l’etichetta associata alla nuova versione di una risorsa . |
 | `versionComment` | Stringa | Facoltativo | Se viene creata una nuova versione, i commenti associati alla versione. |
 | `replace` | Booleano | Facoltativo | Se `True` e esiste una risorsa con il nome specificato, [!DNL Experience Manager] elimina la risorsa e la ricrea. |
+| `uploadDuration` | Numero | Facoltativo | La quantità totale di tempo, in millisecondi, per il caricamento completo del file. Se specificato, la durata del caricamento è inclusa nei file di registro del sistema per l&#39;analisi della velocità di trasferimento. |
+| `fileSize` | Numero | Facoltativo | Dimensione, in byte, del file. Se specificato, la dimensione del file viene inclusa nei file di registro del sistema per l&#39;analisi della velocità di trasferimento. |
 
 >[!NOTE]
 Se la risorsa esiste e nessuna delle due `createVersion` né `replace` viene specificato, quindi [!DNL Experience Manager] aggiorna la versione corrente della risorsa con il nuovo binario.
