@@ -2,10 +2,10 @@
 title: '"Canale prerelease [!DNL Adobe Experience Manager] as a Cloud Service"'
 description: '"Canale prerelease [!DNL Adobe Experience Manager] as a Cloud Service"'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '805'
+ht-degree: 84%
 
 ---
 
@@ -29,28 +29,41 @@ Le funzioni prerelease possono essere utilizzate in diversi modi:
 
 ### Ambienti cloud {#cloud-environments}
 
-Per visualizzare le nuove funzioni nella console Sites sugli ambienti di sviluppo cloud e sul risultato di eventuali personalizzazioni del progetto:
+Per aggiornare un ambiente Cloud per utilizzare la versione prerelease, aggiungi una nuova [variabile di ambiente](../implementing/cloud-manager/environment-variables.md) utilizzo dell’interfaccia utente di configurazione dell’ambiente in Cloud Manager:
 
-* Utilizzando l’[Endpoint per le variabili di ambiente dell’API di Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables), imposta la variabile di ambiente **AEM_RELEASE_CHANNEL** al valore **prerelease**.
+1. Passa a **Programma** > **Ambiente** > **Configurazione dell&#39;ambiente** si desidera aggiornare.
+1. Aggiungi un nuovo [variabile di ambiente](../implementing/cloud-manager/environment-variables.md):
 
-```
-PATCH /program/{programId}/environment/{environmentId}/variables
-[
-        {
-                "name" : "AEM_RELEASE_CHANNEL",
-                "value" : "prerelease",
-                "type" : "string"
-        }
-]
-```
+   | Nome | Valore | Servizio applicato | Tipo |
+   |------|-------|-----------------|------|
+   | `AEM_RELEASE_CHANNEL` | `prerelease` | Tutti i bundle  | Variabile |
 
-È inoltre possibile utilizzare Cloud Manager CLI, come indicato nelle istruzioni all’indirizzo [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
-```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+1. Salva le modifiche e l’ambiente si aggiorna quando la funzione prerelease è attivata.
+
+   ![Nuova variabile di ambiente](assets/env-configuration-prerelease.png)
 
 
-La variabile può essere eliminata o impostata su un valore diverso se desideri che l’ambiente venga ripristinato al comportamento del canale regolare (non prerelease)
+**Alternativa** puoi utilizzare l’API di Cloud Manager e CLI per aggiornare le variabili di ambiente:
 
-* In alternativa, puoi anche configurare le variabili di ambiente dall’[Interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+* Utilizzo [Endpoint per le variabili di ambiente dell’API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), imposta le **AEM_RELEASE_CHANNEL** variabile di ambiente al valore **prerelease**.
+
+   ```
+   PATCH /program/{programId}/environment/{environmentId}/variables
+   [
+           {
+                   "name" : "AEM_RELEASE_CHANNEL",
+                   "value" : "prerelease",
+                   "type" : "string"
+           }
+   ]
+   ```
+
+* È inoltre possibile utilizzare Cloud Manager CLI, come indicato nelle istruzioni all’indirizzo [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
+
+   ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+
+
+La variabile può essere eliminata o impostata su un valore diverso se desideri che l’ambiente venga ripristinato al comportamento del canale normale (non pre-rilascio).
 
 ### SDK locale {#local-sdk}
 
