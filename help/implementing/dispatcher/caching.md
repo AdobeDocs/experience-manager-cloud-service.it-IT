@@ -3,10 +3,10 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
+source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 0%
+source-wordcount: '2183'
+ht-degree: 1%
 
 ---
 
@@ -83,31 +83,42 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
 * utilizzando AEM framework di libreria lato client, i codici JavaScript e CSS vengono generati in modo tale che i browser possano memorizzarli nella cache a tempo indefinito, poiché qualsiasi modifica si manifesta come nuovi file con un percorso univoco.  In altre parole, HTML che fa riferimento alle librerie client verrà prodotto in base alle esigenze, in modo che i clienti possano vedere nuovi contenuti mentre vengono pubblicati. Il controllo della cache è impostato su &quot;immutabile&quot; o su 30 giorni per i browser meno recenti che non rispettano il valore &quot;immutabile&quot;.
 * vedi la sezione [Librerie lato client e coerenza delle versioni](#content-consistency) per ulteriori dettagli.
 
-### Immagini e contenuti sufficientemente grandi archiviati in BLOB {#images}
+### Immagini e contenuti di dimensioni sufficienti per essere archiviati in BLOB {#images}
 
-* per impostazione predefinita, non memorizzato nella cache
-* può essere impostato su un livello di grana più fine dal seguente apache `mod_headers` direttive:
+Il comportamento predefinito per i programmi creati dopo la metà di maggio 2022 (in particolare, per gli ID di programma superiori a 65000) è quello di memorizzare in cache per impostazione predefinita, nel rispetto anche del contesto di autenticazione della richiesta. I programmi precedenti (ID programma uguale o inferiore a 65000) non memorizzano in cache il contenuto BLOB per impostazione predefinita.
 
-   ```
-      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
-        Header set Cache-Control "max-age=222"
-        Header set Age 0
-      </LocationMatch>
-   ```
+In entrambi i casi, le intestazioni di memorizzazione in cache possono essere sostituite a un livello più granulare a livello di apache/dispatcher utilizzando l’apache `mod_headers` direttive, ad esempio:
 
-   Consulta la discussione nella sezione html/text di cui sopra per fare attenzione a non memorizzare la cache troppo su larga scala e anche su come forzare AEM ad applicare sempre la memorizzazione in cache con l&#39;opzione &quot;sempre&quot;.
+```
+   <LocationMatch "^/content/.*\.(jpeg|jpg)$">
+     Header set Cache-Control "max-age=222"
+     Header set Age 0
+   </LocationMatch>
+```
 
-   È necessario garantire che un file in `src/conf.dispatcher.d/`la cache ha la seguente regola (che si trova nella configurazione predefinita):
+Quando modifichi le intestazioni di memorizzazione in cache al livello del dispatcher, presta attenzione a non memorizzare in cache troppo ampiamente, consulta la discussione nella sezione HTML/testo [sopra](#html-text)). Inoltre, assicurati che le risorse destinate a essere mantenute private (anziché memorizzate nella cache) non facciano parte del `LocationMatch` filtri di direttiva.
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+#### Nuovo comportamento predefinito di memorizzazione in cache {#new-caching-behavior}
 
-   Assicurati che le risorse da mantenere private anziché memorizzate nella cache non facciano parte dei filtri di direttiva LocationMatch.
+Il livello AEM imposterà le intestazioni della cache a seconda che l’intestazione della cache sia già stata impostata e il valore del tipo di richiesta. Tieni presente che se non è stata impostata alcuna intestazione di controllo cache, il contenuto pubblico viene memorizzato nella cache e il traffico autenticato è impostato su privato. Se è stata impostata un’intestazione di controllo cache, le intestazioni della cache non verranno toccate.
 
-   >[!NOTE]
-   >Gli altri metodi, compresi i [Progetto ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), non sovrascriverà correttamente i valori.
+| L&#39;intestazione di controllo cache esiste? | Tipo di richiesta | AEM imposta le intestazioni di cache su |
+|------------------------------|---------------|------------------------------------------------|
+| No | pubblico | Controllo cache: pubblico, max-age=600, immutabile |
+| No | autenticato | Controllo cache: privato, max-age=600, immutabile |
+| Sì | qualsiasi | invariato |
+
+Sebbene non sia consigliato, è possibile modificare il nuovo comportamento predefinito in modo che segua il comportamento precedente (ID programma uguale o inferiore a 65000) impostando la variabile di ambiente Cloud Manager. `AEM_BLOB_ENABLE_CACHING_HEADERS` su false.
+
+#### Comportamento precedente della memorizzazione in cache predefinito {#old-caching-behavior}
+
+Per impostazione predefinita, il livello AEM non memorizza in cache il contenuto BLOB.
+
+>[!NOTE]
+>È consigliabile modificare il comportamento predefinito precedente in modo che sia coerente con il nuovo comportamento (ID programma superiori a 65000) impostando la variabile di ambiente Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS su true. Se il programma è già attivo, verifica che dopo le modifiche il contenuto si comporti come previsto.
+
+>[!NOTE]
+>Gli altri metodi, compresi i [Progetto ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), non sovrascriverà correttamente i valori.
 
 ### Altri tipi di file di contenuto nell&#39;archivio nodi {#other-content}
 
@@ -115,7 +126,7 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
 * impossibile impostare il valore predefinito con `EXPIRATION_TIME` variabile utilizzata per i tipi di file html/text
 * la scadenza della cache può essere impostata con la stessa strategia LocationMatch descritta nella sezione html/text specificando il regex appropriato
 
-### Ottimizzazioni di Furthur
+### Ulteriori ottimizzazioni {#further-optimizations}
 
 * Evitare di utilizzare `User-Agent` come parte del `Vary` intestazione. Le versioni precedenti dell’impostazione predefinita del dispatcher (prima dell’archetipo versione 28) includevano questo e ti consigliamo di rimuoverlo utilizzando i passaggi seguenti.
    * Individua i file vhost in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
