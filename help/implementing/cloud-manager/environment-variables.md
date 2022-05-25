@@ -2,12 +2,13 @@
 title: Variabili dell’ambiente di Cloud Manager
 description: Le variabili di ambiente standard possono essere configurate e gestite tramite Cloud Manager e fornite all’ambiente di runtime, da utilizzare nella configurazione OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e03a209079b393d29e02977a2698f8d803a916cd
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
+
 
 # Variabili dell’ambiente di Cloud Manager {#environment-variables}
 
@@ -90,3 +91,14 @@ Dopo aver creato le variabili di ambiente, puoi aggiornarle utilizzando **Aggiun
 >[!TIP]
 >
 >Se desideri aggiornare più variabili, si consiglia di utilizzare il **Configurazione dell&#39;ambiente** per aggiornare tutte le variabili necessarie contemporaneamente prima di toccare o fare clic **Salva**. In questo modo puoi aggiungerli con un aggiornamento all’ambiente.
+
+## Utilizzo delle variabili di ambiente {#using}
+
+Le variabili di ambiente possono rendere i `pom.xml` configurazioni più sicure e flessibili. Ad esempio, le password non devono essere codificate in modo rigido e la configurazione può adattarsi in base ai valori contenuti nelle variabili di ambiente.
+
+È possibile accedere alle variabili di ambiente e ai segreti tramite XML come segue.
+
+* `${env.VARIABLE_NAME}`
+* `${env.SECRET_NAME}`
+
+Vedere il documento [Configurazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) per un esempio di come utilizzare entrambi i tipi di variabili in un `pom.xml` file.
