@@ -3,7 +3,7 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: 'Memorizzazione in cache in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
+source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
@@ -96,7 +96,7 @@ In entrambi i casi, le intestazioni di memorizzazione in cache possono essere so
    </LocationMatch>
 ```
 
-Quando modifichi le intestazioni di memorizzazione in cache al livello del dispatcher, presta attenzione a non memorizzare in cache troppo ampiamente, consulta la discussione nella sezione HTML/testo [sopra](#html-text)). Inoltre, assicurati che le risorse destinate a essere mantenute private (anziché memorizzate nella cache) non facciano parte del `LocationMatch` filtri di direttiva.
+Quando modifichi le intestazioni di memorizzazione in cache al livello del dispatcher, presta attenzione a non memorizzare in cache troppo ampiamente, consulta la discussione nella sezione HTML/testo [sopra](#html-text). Inoltre, assicurati che le risorse destinate a essere mantenute private (anziché memorizzate nella cache) non facciano parte del `LocationMatch` filtri di direttiva.
 
 #### Nuovo comportamento predefinito di memorizzazione in cache {#new-caching-behavior}
 
