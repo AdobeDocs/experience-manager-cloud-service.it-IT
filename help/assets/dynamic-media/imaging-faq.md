@@ -3,8 +3,9 @@ title: Smart imaging
 description: Scopri come l’imaging intelligente con Adobe Sensei AI applica le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, ottenendo prestazioni e coinvolgimento migliori.
 feature: Asset Management,Renditions
 role: User
+mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: e52e0d99bb9b19a74b938a703089159b5caaa3da
+source-git-commit: 70d472776b5530cbb1048b7284780408326df604
 workflow-type: tm+mt
 source-wordcount: '3480'
 ht-degree: 1%

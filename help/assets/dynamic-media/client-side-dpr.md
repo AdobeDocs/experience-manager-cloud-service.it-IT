@@ -2,7 +2,7 @@
 title: Utilizzare l’imaging intelligente con il rapporto pixel del dispositivo lato client
 description: Scopri come utilizzare il rapporto pixel del dispositivo lato client con Smart imaging in Adobe Experience Manager as a Cloud Service con Dynamic Media.
 role: Admin,User
-source-git-commit: 1dabecfc878ad674d071fb47063326b073b0866e
+source-git-commit: 089b32e044c53bee40e5b92456c57412553934a0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
