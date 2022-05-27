@@ -4,9 +4,9 @@ description: Scopri come l’imaging intelligente con Adobe Sensei AI applica le
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 743782e2716aa79491adee2f32da6d746bcc40a7
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2629'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ In termini di immagini, l&#39;obiettivo è quello di offrire immagini di qualit�
 
 Il rapporto pixel del dispositivo (DPR), noto anche come rapporto pixel CSS, è la relazione tra i pixel fisici di un dispositivo e i pixel logici. Soprattutto con l&#39;avvento degli schermi Retina, la risoluzione dei pixel dei moderni dispositivi mobili sta crescendo a un ritmo veloce.
 
-Attivando l&#39;ottimizzazione del rapporto pixel del dispositivo, l&#39;immagine viene riprodotta alla risoluzione nativa dello schermo, rendendo più nitida l&#39;immagine.
+Attivando l’ottimizzazione del rapporto pixel del dispositivo, l’immagine viene riprodotta alla risoluzione nativa dello schermo, che la rende più nitida.
 
 Attivando la configurazione di Smart imaging DPR, l&#39;immagine richiesta viene regolata automaticamente in base alla densità di pixel del display da cui viene servita la richiesta. Attualmente, la densità di pixel del display proviene dai valori di intestazione CDN di Akamai.
 
@@ -78,9 +78,10 @@ Se lo desideri, la tua azienda può rinunciare all&#39;ottimizzazione della larg
 |---|---|
 | `network=off` | Disattiva l&#39;ottimizzazione della rete a livello di singolo URL immagine. |
 
->[!NOTE]
->
->I valori DPR e della larghezza di banda di rete si basano sui valori rilevati lato client della rete CDN inclusa nel pacchetto. Questi valori a volte sono imprecisi. Ad esempio, iPhone5 con DPR=2 e iPhone12 con DPR=3, entrambi mostrano DPR=2. Tuttavia, per i dispositivi ad alta risoluzione, l&#39;invio di DPR=2 è migliore dell&#39;invio di DPR=1. Disponibile a breve: Adobe sta lavorando sul codice lato client per determinare con precisione il DPR di un utente finale.
+I valori DPR e della larghezza di banda di rete si basano sui valori rilevati lato client della rete CDN inclusa nel pacchetto. Questi valori a volte sono imprecisi. Ad esempio, iPhone5 con DPR=2 e iPhone12 con `dpr=3`, entrambi `dpr=2`. Still, per dispositivi ad alta risoluzione, invio `dpr=2` è migliore dell’invio `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->
+
+
+Il DPR lato client fornisce valori precisi al 100% e funziona per qualsiasi dispositivo, sia che si tratti di Apple o di qualsiasi altro nuovo dispositivo appena avviato.
 
 ## Quali sono i vantaggi principali dell&#39;ultima generazione di Smart imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
