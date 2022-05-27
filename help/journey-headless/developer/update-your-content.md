@@ -2,9 +2,9 @@
 title: Come aggiornare i contenuti tramite le API di AEM Assets
 description: In questa parte del Percorso di sviluppatori AEM Headless, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1071'
 ht-degree: 3%
 
 ---
@@ -263,7 +263,7 @@ L’utilizzo avviene tramite:
 
 `GET /{cfParentPath}/{cfName}.json`
 
-Ad esempio:
+Esempio:
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -274,7 +274,7 @@ Sono possibili due tipi di operazioni di lettura:
 * Quando si legge un frammento di contenuto specifico in base al percorso, viene restituita la rappresentazione JSON del frammento di contenuto.
 * Lettura di una cartella di frammenti di contenuto in base al percorso: restituisce le rappresentazioni JSON di tutti i frammenti di contenuto all’interno della cartella.
 
-### Crea {#create}
+### Creare {#create}
 
 L’utilizzo avviene tramite:
 
@@ -318,7 +318,7 @@ Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, dev
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Continua il tuo percorso AEM headless rivedendo il documento successivo [Come andare in diretta con la tua applicazione headless](go-live.md) dove si prende il vostro progetto AEM Headless in diretta!
+Continua il tuo percorso AEM headless rivedendo il documento successivo [Come mettere tutto insieme - La tua app e il tuo contenuto in AEM headless](put-it-all-together.md) dove acquisire familiarità con le nozioni di base e gli strumenti dell&#39;architettura AEM necessari per mettere insieme l&#39;applicazione.
 
 ## Risorse aggiuntive {#additional-resources}
 
