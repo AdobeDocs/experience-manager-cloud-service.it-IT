@@ -4,7 +4,7 @@ description: Utilizza la funzione Struttura ad albero dell’Editor frammento di
 feature: Content Fragments
 role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 426a05db7062c7823dfaa63e1d918792d3e8a290
+source-git-commit: b1047d5ced2db2027ef23f3ac9a4bece23c11435
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 0%
@@ -23,6 +23,6 @@ Verrà visualizzata una rappresentazione della struttura del frammento nel riqua
 
 >[!NOTE]
 >
->Utilizzando le breadcrumb nel pannello principale è possibile tornare al punto iniziale.
+>Utilizzando le breadcrumb nel pannello principale, puoi tornare al punto iniziale.
 
 ![Struttura ad albero dei frammenti di contenuto](assets/cfm-structuretree-02.png)
