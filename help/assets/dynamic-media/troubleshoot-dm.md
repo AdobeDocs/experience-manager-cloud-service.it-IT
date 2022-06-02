@@ -3,10 +3,10 @@ title: Risoluzione dei problemi di Dynamic Media
 description: Suggerimenti per la risoluzione dei problemi quando utilizzi Dynamic Media.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 2%
+source-wordcount: '1135'
+ht-degree: 1%
 
 ---
 
@@ -29,8 +29,8 @@ Le seguenti proprietà delle risorse possono essere esaminate in CRXDE Lite per 
 | **Proprietà** | **Esempio** | **Descrizione** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Indicatore generale che il nodo è collegato a Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** o testo di errore | Status of upload of asset to Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Must be populated to generate URLs to remote asset of Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** o testo di errore | Stato del caricamento della risorsa in Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Deve essere popolato per generare URL per la risorsa remota di Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **success** o **non riuscito:`<error text>`** | Stato di sincronizzazione di set (set 360 gradi, set di immagini e così via), predefiniti immagine, predefiniti visualizzatore, aggiornamenti mappa immagine per una risorsa o immagini modificate. |
 
 ### Registrazione sincronizzazione {#synchronization-logging}
@@ -137,8 +137,8 @@ In caso di problemi con il video, consulta le seguenti indicazioni per la risolu
     </ul> </td>
    <td>
     <ol>
-     <li>Check that the Dynamic Media Configuration under Cloud Services is properly set up.</li>
-     <li>Verifica che la cartella disponga di un profilo video. Also, check the video profile.</li>
+     <li>Verifica che la configurazione Dynamic Media in Cloud Services sia configurata correttamente.</li>
+     <li>Verifica che la cartella disponga di un profilo video. Inoltre, controlla il profilo video.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -169,53 +169,71 @@ In caso di problemi con il video, consulta le seguenti indicazioni per la risolu
 
 Se riscontri problemi con i visualizzatori, consulta le seguenti indicazioni per la risoluzione dei problemi.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Problema  </strong></td>
-   <td><strong>Come eseguire il debug</strong></td>
-   <td><strong>Soluzione</strong></td>
-  </tr>
-  <tr>
-   <td>I predefiniti per visualizzatori non vengono pubblicati</td>
-   <td><p>Passare alla pagina di diagnostica di sample manager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Osserva i valori calcolati. Quando funziona correttamente, puoi vedere:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: La sincronizzazione delle risorse del visualizzatore può richiedere circa 10 minuti dopo la configurazione delle impostazioni cloud di Dynamic Media.</p> <p>Se le risorse non attivate rimangono, seleziona una delle seguenti opzioni <strong>Elenca tutte le risorse non attivate</strong> per visualizzare i dettagli.</p> </td>
-   <td>
-    <ol>
-     <li>Passa all’elenco dei predefiniti per visualizzatori in strumenti di amministrazione: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Seleziona tutti i predefiniti visualizzatore, quindi seleziona <strong>Pubblica</strong>.</li>
-     <li>Torna a Sample manager e osserva che il conteggio delle risorse non attivate è ora zero.</li>
-    </ol> </td>
-  </tr>
-  <tr>
-   <td>L’immagine del predefinito per visualizzatori restituisce 404 dall’anteprima nei dettagli della risorsa o copia l’URL/codice da incorporare</td>
-   <td><p>In CRXDE Lite procedi come segue:</p>
-    <ol>
-     <li>Passa a <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> cartella all’interno della cartella di sincronizzazione Dynamic Media (ad esempio, <code>/content/dam/_CSS/_OOTB</code>),</li>
-     <li>Trova il nodo di metadati della risorsa problematica (ad esempio, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Verifica la presenza di <code>dam:scene7*</code> proprietà. Se la risorsa è stata sincronizzata e pubblicata correttamente, viene visualizzata la <code>dam:scene7FileStatus</code> impostato su <strong>PublishComplete</strong>.</li>
-     <li>Tentativo di richiedere l’immagine direttamente da Dynamic Media concatenando i valori delle seguenti proprietà e valori letterali stringa
-      <ul>
-       <li><code>dam:scene7Domain</code></li>
-       <li><code>"is/content"</code></li>
-       <li><code>dam:scene7Folder</code></li>
-       <li><code>&lt;asset-name&gt;</code></li>
-       <li>Esempio: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
-      </ul> </li>
-    </ol> </td>
-   <td><p>Se le risorse di esempio o l’immagine predefinita del visualizzatore non sono sincronizzate o pubblicate, riavvia l’intero processo di copia/sincronizzazione:</p>
-    <ol>
-     <li>Accedi a <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
-     </li>
-     <li>Seleziona le azioni seguenti nell’ordine:
-      <ol>
-       <li>Elimina le cartelle di sincronizzazione.</li>
-       <li>Elimina cartella predefiniti (di seguito <code>/conf</code>).
-       <li>Attiva processo asincrono di configurazione DM.</li>
-      </ol> </li>
-     <li>Attendi la notifica della sincronizzazione corretta nella casella in entrata Experience Manager.
-     </li>
-    </ol> </td>
-  </tr>
- </tbody>
-</table>
+### Problema: I predefiniti visualizzatore non sono pubblicati {#viewers-not-published}
+
+**Come eseguire il debug**
+
+1. Passare alla pagina di diagnostica di sample manager: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
+1. Osserva i valori calcolati. Quando funziona correttamente, vedi quanto segue: `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+
+   >[!NOTE]
+   >
+   >La sincronizzazione delle risorse del visualizzatore può richiedere circa 10 minuti dopo la configurazione delle impostazioni cloud di Dynamic Media.
+
+1. Se le risorse non attivate rimangono, seleziona una delle seguenti opzioni **Elenca tutte le risorse non attivate** per visualizzare i dettagli.
+
+**Soluzione**
+
+1. Passa all’elenco dei predefiniti per visualizzatori in strumenti di amministrazione: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. Seleziona tutti i predefiniti visualizzatore, quindi seleziona **Pubblica**.
+1. Torna a Sample manager e osserva che il conteggio delle risorse non attivate è ora zero.
+
+### Problema: L’immagine predefinita del visualizzatore restituisce 404 da Anteprima nei dettagli della risorsa o Copia URL/Incorpora codice {#viewer-preset-404}
+
+**Come eseguire il debug**
+
+In CRXDE Lite procedi come segue:
+
+1. Passa a `<sync-folder>/_CSS/_OOTB` cartella all’interno della cartella di sincronizzazione Dynamic Media (ad esempio, `/content/dam/_CSS/_OOTB`).
+1. Trova il nodo di metadati della risorsa problematica (ad esempio, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
+1. Verifica la presenza di `dam:scene7*` proprietà. Se la risorsa è stata sincronizzata e pubblicata correttamente, viene visualizzata la `dam:scene7FileStatus` impostato su **PublishComplete**.
+1. Tentativo di richiedere l’immagine direttamente da Dynamic Media concatenando i valori delle seguenti proprietà e valori letterali stringa:
+
+   * `dam:scene7Domain`
+   * `"is/content"`
+   * `dam:scene7Folder`
+   * `<asset-name>`
+Esempio: 
+`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+
+**Soluzione**
+
+Se le risorse di esempio o l’immagine predefinita del visualizzatore non sono sincronizzate o pubblicate, riavvia l’intero processo di copia/sincronizzazione:
+
+1. Passa a CRXDE Lite.
+1. Eliminare `<sync-folder>/_CSS/_OOTB`.
+1. Passa a Gestione pacchetti CRX: `https://localhost:4502/crx/packmgr/`.
+1. Cerca il pacchetto visualizzatore nell&#39;elenco; inizia con `cq-dam-scene7-viewers-content`.
+1. Seleziona **Reinstalla**.
+1. In Cloud Services, accedi alla pagina Configurazione Dynamic Media, quindi apri la finestra di dialogo di configurazione per la configurazione Dynamic Media - S7.
+1. Non apportare modifiche, seleziona **Salva**.
+Questa azione di salvataggio attiva nuovamente la logica per creare e sincronizzare le risorse di esempio, i CSS predefiniti per visualizzatori e le immagini.
+
+### Problema: L’anteprima dell’immagine non viene caricata nella creazione dei predefiniti visualizzatore {#image-preview-not-loading}
+
+**Soluzione**
+
+1. In Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale, quindi accedi a . **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
+1. Nella barra a sinistra, accedi alla cartella del contenuto di esempio nella posizione seguente:
+
+   `/content/dam/_DMSAMPLE`
+
+1. Elimina `_DMSAMPLE` cartella.
+1. Nella barra a sinistra, accedi alla cartella dei predefiniti nel seguente percorso:
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. Elimina `viewer` cartella.
+1. Nell’angolo in alto a sinistra della pagina CRXDE Lite, seleziona **[!UICONTROL Salva tutto]**.
+1. Nell’angolo in alto a sinistra della pagina CRXDE Lite, seleziona la **Pagina principale** icona.
+1. Ricrea un [Configurazione Dynamic Media nei Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
