@@ -3,14 +3,11 @@ title: Precompilare i campi del modulo adattivo
 seo-title: Prefill Adaptive Form fields
 description: Utilizza i dati esistenti per precompilare i campi di un modulo adattivo.
 seo-description: With Adaptive Forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-uuid: 574de83a-7b5b-4a1f-ad37-b9717e5c14f1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6b3c0abbbd7a5b3c9a3790937b933699389b0cd2
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '1948'
 ht-degree: 0%
 
 ---
@@ -28,11 +25,11 @@ Un modulo adattivo può contenere diversi campi associati o non associati. I cam
 
 È possibile precompilare i campi associati e non associati di un modulo adattivo. I dati di precompilazione contengono le sezioni afBoundData e afUnBoundData per precompilare i campi associati e non associati di un modulo adattivo. La `afBoundData` contiene i dati di precompilazione per i campi e i pannelli associati. Questi dati devono essere conformi allo schema del modello di modulo associato:
 
-* Per Forms adattivo utilizzando la variabile [Modello di modulo XFA](prepopulate-adaptive-form-fields.md), utilizza l’XML di precompilazione conforme allo schema dati del modello XFA.
-* Per Forms adattivo utilizzando [Schema XML](#xml-schema-af), utilizza l’XML di precompilazione conforme alla struttura dello schema XML.
-* Per Forms adattivo utilizzando [Schema JSON](#json-schema-based-adaptive-forms), utilizza il JSON di precompilazione conforme con lo schema JSON.
-* Per Forms adattivo che utilizza lo schema FDM, utilizza il JSON di precompilazione conforme con lo schema FDM.
-* Per Forms adattivo con [nessun modello di modulo](#adaptive-form-with-no-form-model), non sono presenti dati associati. Ogni campo è un campo non associato ed è precompilato utilizzando l’XML non associato.
+- Per Forms adattivo utilizzando la variabile [Modello di modulo XFA](#xfa-based-af), utilizza l’XML di precompilazione conforme allo schema dati del modello XFA.
+- Per Forms adattivo utilizzando [Schema XML](#xml-schema-af), utilizza l’XML di precompilazione conforme alla struttura dello schema XML.
+- Per Forms adattivo utilizzando [Schema JSON](#json-schema-based-adaptive-forms), utilizza il JSON di precompilazione conforme con lo schema JSON.
+- Per Forms adattivo che utilizza lo schema FDM, utilizza il JSON di precompilazione conforme con lo schema FDM.
+- Per Forms adattivo con [nessun modello di modulo](#adaptive-form-with-no-form-model), non sono presenti dati associati. Ogni campo è un campo non associato ed è precompilato utilizzando l’XML non associato.
 
 ### Struttura XML di precompilazione di esempio {#sample-prefill-xml-structure}
 
@@ -51,8 +48,8 @@ Un modulo adattivo può contenere diversi campi associati o non associati. I cam
          .
          .
       <numericbox>12</numericbox>
-         . 
-         .              
+         .
+         .
     </data>
   </afUnboundData>
 </afData>
@@ -80,9 +77,9 @@ Per i campi associati con lo stesso binding o campi non associati con lo stesso 
 
 La struttura dell&#39;XML di precompilazione e dell&#39;XML inviato per Forms adattivo basato su XFA è la seguente:
 
-* **Struttura XML di precompilazione**: Il file XML di precompilazione per il modulo adattivo basato su XFA deve essere conforme allo schema dati del modello di modulo XFA. Per precompilare i campi non associati, racchiudi la struttura XML di precompilazione in `/afData/afBoundData` tag .
+- **Struttura XML di precompilazione**: Il file XML di precompilazione per il modulo adattivo basato su XFA deve essere conforme allo schema dati del modello di modulo XFA. Per precompilare i campi non associati, racchiudi la struttura XML di precompilazione in `/afData/afBoundData` tag .
 
-* **Struttura XML inviata**: Se non viene utilizzato alcun XML di precompilazione, l’XML inviato contiene dati sia per i campi associati che per quelli non associati in `afData` tag wrapper. Se viene utilizzato un XML di precompilazione, l&#39;XML inviato ha la stessa struttura dell&#39;XML di precompilazione. Se l&#39;XML di precompilazione inizia con `afData` tag radice, l&#39;XML di output ha anche lo stesso formato. Se l&#39;XML di precompilazione non ha `afData/afBoundData`wrapper e inizia invece direttamente dal tag principale dello schema come `employeeData`, l&#39;XML inviato inizia anche con `employeeData` tag .
+- **Struttura XML inviata**: Se non viene utilizzato alcun XML di precompilazione, l’XML inviato contiene dati sia per i campi associati che per quelli non associati in `afData` tag wrapper. Se viene utilizzato un XML di precompilazione, l&#39;XML inviato ha la stessa struttura dell&#39;XML di precompilazione. Se l&#39;XML di precompilazione inizia con `afData` tag radice, l&#39;XML di output ha anche lo stesso formato. Se l&#39;XML di precompilazione non ha `afData/afBoundData`wrapper e inizia invece direttamente dal tag principale dello schema come `employeeData`, l&#39;XML inviato inizia anche con `employeeData` tag .
 
 Prefill-Submit-Data-ContentPackage.zip
 
@@ -93,17 +90,17 @@ Esempio contenente dati di precompilazione e dati inviati
 
 La struttura dell&#39;XML di precompilazione e dell&#39;XML inviato per Adattivo Forms basato su schema XML è la seguente:
 
-* **Struttura XML di precompilazione**: L&#39;XML di precompilazione deve essere conforme allo schema XML associato. Per precompilare i campi non associati, racchiudi la struttura XML di precompilazione nel tag /afData/afBoundData .
-* **Struttura XML inviata**: se non viene utilizzato alcun XML di precompilazione, l&#39;XML inviato contiene i dati per i campi associati e non associati in `afData` tag wrapper. Se viene utilizzato il codice XML di precompilazione, il codice XML inviato ha la stessa struttura del codice XML di precompilazione. Se l&#39;XML di precompilazione inizia con `afData` tag radice, l&#39;XML di output ha lo stesso formato. Se l&#39;XML di precompilazione non ha `afData/afBoundData` wrapper e inizia invece direttamente dal tag principale dello schema come `employeeData`, l&#39;XML inviato inizia anche con `employeeData` tag .
+- **Struttura XML di precompilazione**: L&#39;XML di precompilazione deve essere conforme allo schema XML associato. Per precompilare i campi non associati, racchiudi la struttura XML di precompilazione nel tag /afData/afBoundData .
+- **Struttura XML inviata**: se non viene utilizzato alcun XML di precompilazione, l&#39;XML inviato contiene i dati per i campi associati e non associati in `afData` tag wrapper. Se viene utilizzato il codice XML di precompilazione, il codice XML inviato ha la stessa struttura del codice XML di precompilazione. Se l&#39;XML di precompilazione inizia con `afData` tag radice, l&#39;XML di output ha lo stesso formato. Se l&#39;XML di precompilazione non ha `afData/afBoundData` wrapper e inizia invece direttamente dal tag principale dello schema come `employeeData`, l&#39;XML inviato inizia anche con `employeeData` tag .
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?>
 <xs:schema targetNamespace="https://adobe.com/sample.xsd"
             xmlns="https://adobe.com/sample.xsd"
             xmlns:xs="https://www.w3.org/2001/XMLSchema">
- 
+
     <xs:element name="sample" type="SampleType"/>
-         
+
     <xs:complexType name="SampleType">
         <xs:sequence>
             <xs:element name="noOfProjectsAssigned" type="xs:string"/>
@@ -146,24 +143,28 @@ Per i campi il cui modello è lo schema XML, i dati sono precompilati nella `afB
 
 Per la Forms adattiva basata sullo schema JSON, la struttura del JSON precompilato e del JSON inviato è descritta di seguito. Per ulteriori informazioni, consulta [Creazione di Forms adattivo utilizzando lo schema JSON](adaptive-form-json-schema-form-model.md).
 
-* **Precompila struttura JSON**: Il JSON di precompilazione deve essere conforme allo schema JSON associato. Facoltativamente, è possibile racchiudere l&#39;oggetto /afData/afBoundData se si desidera precompilare anche i campi non associati.
-* **Struttura JSON inviata**: se non viene utilizzato alcun JSON di precompilazione, il JSON inviato contiene i dati per i campi associati e non associati nel tag wrapper afData. Se si utilizza il JSON di precompilazione, il JSON inviato ha la stessa struttura del JSON di precompilazione. Se il JSON di precompilazione inizia con l&#39;oggetto radice afData, il JSON di output ha lo stesso formato. Se il JSON di precompilazione non dispone del wrapper afData/afBoundData e inizia invece direttamente dall’oggetto principale dello schema, come l’utente, anche il JSON inviato inizia con l’oggetto utente.
+- **Precompila struttura JSON**: Il JSON di precompilazione deve essere conforme allo schema JSON associato. Facoltativamente, è possibile racchiudere l&#39;oggetto /afData/afBoundData se si desidera precompilare anche i campi non associati.
+- **Struttura JSON inviata**: se non viene utilizzato alcun JSON di precompilazione, il JSON inviato contiene i dati per i campi associati e non associati nel tag wrapper afData. Se si utilizza il JSON di precompilazione, il JSON inviato ha la stessa struttura del JSON di precompilazione. Se il JSON di precompilazione inizia con l&#39;oggetto radice afData, il JSON di output ha lo stesso formato. Se il JSON di precompilazione non dispone del wrapper afData/afBoundData e inizia invece direttamente dall’oggetto principale dello schema, come l’utente, anche il JSON inviato inizia con l’oggetto utente.
 
 ```json
 {
-    "id": "https://some.site.somewhere/entry-schema#",
-    "$schema": "https://json-schema.org/draft-04/schema#",
-    "type": "object",
-    "properties": {
-        "address": {
-            "type": "object",
-            "properties": { 
-    "name": {
-     "type": "string"
-    },
-    "age": {
-     "type": "integer"
-}}}}}
+  "id": "https://some.site.somewhere/entry-schema#",
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
 ```
 
 Per i campi che utilizzano il modello di schema JSON, i dati vengono precompilati nell&#39;oggetto afBoundData come mostrato nel JSON di esempio riportato di seguito. Può essere utilizzato per precompilare un modulo adattivo con uno o più campi di testo non associati. Di seguito è riportato un esempio di dati con `afData/afBoundData` involucro:
@@ -187,16 +188,18 @@ Di seguito è riportato un esempio senza `afData/afBoundData` involucro:
 
 ```json
 {
- "user": {
-  "address": {
-   "city": "Noida",
-   "country": "India"
-}}}
+  "user": {
+    "address": {
+      "city": "Noida",
+      "country": "India"
+    }
+  }
+}
 ```
 
 >[!NOTE]
 >
->L’utilizzo di campi non associati nei pannelli associati (pannelli con bindingRef non vuoto creati trascinando i componenti dalla barra laterale o dalla scheda Origini dati) è **not** consigliato in quanto potrebbe causare la perdita di dati dei campi non associati. È consigliabile assegnare nomi di campo univoci all’interno del modulo, in particolare per i campi non associati.
+> L’utilizzo di campi non associati nei pannelli associati (pannelli con bindingRef non vuoto creati trascinando i componenti dalla barra laterale o dalla scheda Origini dati) è **not** consigliato in quanto potrebbe causare la perdita di dati dei campi non associati. È consigliabile assegnare nomi di campo univoci all’interno del modulo, in particolare per i campi non associati.
 
 ### Modulo adattivo senza modello di modulo {#adaptive-form-with-no-form-model}
 
@@ -225,45 +228,36 @@ I tag XML per i dati utente inviati per vari campi vengono generati utilizzando 
 </afData>
 ```
 
-## Configurazione del servizio di precompilazione tramite Configuration Manager {#configuring-prefill-service-using-configuration-manager}
+## Configurazione del servizio di precompilazione {#configuring-prefill-service-using-configuration-manager}
 
-Per abilitare il servizio di precompilazione, specifica la configurazione predefinita del servizio di precompilazione nella configurazione della console Web AEM. Per configurare il servizio di precompilazione, effettua le seguenti operazioni:
+Utilizza la `alloweddataFileLocations` proprietà **Configurazione predefinita del servizio di precompilazione** per impostare la posizione dei file di dati o un regex (espressione regolare) per le posizioni dei file di dati.
+
+Il seguente file JSON mostra un esempio:
+
+```JSON
+  {
+  "alloweddataFileLocations": "`file:///C:/Users/public/Document/Prefill/.*`"
+  }
+```
+
+Per impostare i valori di una configurazione, [Generare configurazioni OSGi utilizzando l’SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuire la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) all&#39;istanza di Cloud Service.
 
 >[!NOTE]
 >
->La configurazione del servizio di precompilazione è applicabile per i set di moduli Adattivo Forms, HTML5 e HTML5.
+> - Per impostazione predefinita, la precompilazione è consentita tramite file crx per tutti i tipi di Forms adattivo (XSD, XDP, JSON, FDM e senza modello di modulo). La precompilazione è consentita solo con file JSON e XML.
+> - Il protocollo crx si occupa della sicurezza dei dati precompilati e, quindi, è consentito per impostazione predefinita. Precompilazione tramite altri protocolli utilizzando regex generico potrebbe causare vulnerabilità. Nella configurazione , specifica una configurazione URL sicura per la protezione dei dati.
 
-1. Apri **[!UICONTROL Configurazione della console Web di Adobe Experience Manager]** utilizzando l’URL:\
-   https://&lt;server>:&lt;port>/system/console/configMgr
-1. Cerca e apri **[!UICONTROL Configurazione predefinita del servizio di precompilazione]**.
-
-   ![Configurazione della precompilazione](assets/prefill_config_new.png)
-
-1. Immetti la posizione dei dati o un regex (espressione regolare) per il **Posizioni dei file di dati**. Esempi di percorsi di file di dati validi:
-
-   * `file:///C:/Users/public/Document/Prefill/.*`;
-   * `https://servername/somesamplexmlfile.xml`
-
-   >[!NOTE]
-   >
-   >Per impostazione predefinita, la precompilazione è consentita tramite file crx per tutti i tipi di Forms adattivo (XSD, XDP, JSON, FDM e senza modello di modulo). La precompilazione è consentita solo con file JSON e XML.
-
-1. Il servizio di precompilazione è ora configurato per il modulo.
-
-   >[!NOTE]
-   >
-   >Il protocollo crx si occupa della sicurezza dei dati precompilati e, quindi, è consentito per impostazione predefinita. Precompilazione tramite altri protocolli utilizzando regex generico potrebbe causare vulnerabilità. Nella configurazione , specifica una configurazione URL sicura per la protezione dei dati.
 
 ## Il curioso caso di pannelli ripetibili {#the-curious-case-of-repeatable-panels}
 
 In genere, i campi associati (schema modulo) e non associati sono creati nello stesso modulo adattivo, ma le seguenti sono alcune eccezioni nel caso in cui il binding sia ripetibile:
 
-* I pannelli ripetibili non associati non sono supportati per Adaptive Forms utilizzando il modello di modulo XFA, lo schema XSD, JSON o lo schema FDM.
-* Non utilizzare campi non associati in pannelli ripetibili associati.
+- I pannelli ripetibili non associati non sono supportati per Adaptive Forms utilizzando il modello di modulo XFA, lo schema XSD, JSON o lo schema FDM.
+- Non utilizzare campi non associati in pannelli ripetibili associati.
 
 >[!NOTE]
 >
->Di regola, non combinare campi associati e non associati se sono intersecati in dati compilati dall’utente finale in campi non associati. Se possibile, è necessario modificare lo schema o il modello di modulo XFA e aggiungere una voce per i campi non associati, in modo che anch’esso diventi associato e i relativi dati siano disponibili come altri campi nei dati inviati.
+> Di regola, non combinare campi associati e non associati se sono intersecati in dati compilati dall’utente finale in campi non associati. Se possibile, è necessario modificare lo schema o il modello di modulo XFA e aggiungere una voce per i campi non associati, in modo che anch’esso diventi associato e i relativi dati siano disponibili come altri campi nei dati inviati.
 
 ## Protocolli supportati per la precompilazione dei dati utente {#supported-protocols-for-prefilling-user-data}
 
@@ -298,12 +292,12 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-* SERVICE_NAME fa riferimento al nome del servizio di precompilazione OSGI. Fai riferimento a [Creare ed eseguire un servizio di precompilazione](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
-* IDENTIFIER fa riferimento a tutti i metadati richiesti dal servizio di precompilazione OSGI per recuperare i dati di precompilazione. Un identificatore dell&#39;utente connesso è un esempio di metadati che possono essere utilizzati.
+- SERVICE_NAME fa riferimento al nome del servizio di precompilazione OSGI. Fai riferimento a [Creare ed eseguire un servizio di precompilazione](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- IDENTIFIER fa riferimento a tutti i metadati richiesti dal servizio di precompilazione OSGI per recuperare i dati di precompilazione. Un identificatore dell&#39;utente connesso è un esempio di metadati che possono essere utilizzati.
 
 >[!NOTE]
 >
->Il passaggio dei parametri di autenticazione non è supportato.
+> Il passaggio dei parametri di autenticazione non è supportato.
 
 ### Impostazione dell&#39;attributo dei dati in slingRequest {#setting-data-attribute-in-slingrequest}
 
@@ -344,10 +338,10 @@ Esempio di prefill.jsp nel componente pagina
 
 Il servizio di precompilazione è un servizio OSGi e viene fornito tramite il bundle OSGi. Puoi creare il bundle OSGi, caricarlo e installarlo in [!DNL AEM Forms] fasci. Prima di iniziare a creare il bundle:
 
-* [Scarica la [!DNL AEM Forms] SDK client](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
-* Scarica il pacchetto caldaia
+- [Scarica la [!DNL AEM Forms] SDK client](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
+- Scarica il pacchetto caldaia
 
-* Posiziona il file di dati (dati di precompilazione) nell&#39;archivio crx. Puoi posizionare il file in qualsiasi posizione nella cartella \content di crx-repository.
+- Posiziona il file di dati (dati di precompilazione) nell&#39;archivio crx. Puoi posizionare il file in qualsiasi posizione nella cartella \content di crx-repository.
 
 [Ottieni file](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
@@ -358,8 +352,8 @@ Il pacchetto di caldaie (pacchetto del servizio di precompilazione campione) con
 1. Apri il file src\main\java\com\adobe\test\Prefill.java per la modifica.
 1. Nel codice, imposta il valore di:
 
-   * `nodePath:` La variabile del percorso del nodo che punta alla posizione dell&#39;archivio crx contiene il percorso del file di dati (prefill). Ad esempio, /content/prefilldata.xml
-   * `label:` Il parametro label specifica il nome visualizzato del servizio. Ad esempio, Servizio di precompilazione predefinito
+   - `nodePath:` La variabile del percorso del nodo che punta alla posizione dell&#39;archivio crx contiene il percorso del file di dati (prefill). Ad esempio, /content/prefilldata.xml
+   - `label:` Il parametro label specifica il nome visualizzato del servizio. Ad esempio, Servizio di precompilazione predefinito
 
 1. Salva e chiudi il `Prefill.java` file.
 1. Aggiungi il `AEM Forms Client SDK` al percorso di creazione del progetto calderplate.
@@ -373,20 +367,21 @@ Per avviare il servizio di precompilazione, carica il file JAR in [!DNL AEM Form
 1. Nella console Proprietà , passa a [!DNL AEM Forms] contenitore > Base > Servizio di precompilazione.
 1. Seleziona il servizio di precompilazione predefinito e fai clic su **[!UICONTROL Salva]**. Il servizio è associato al modulo.
 
-## Precompilazione dei dati sul client {#prefill-at-client}
+<!-- ## Prepopulate data at client {#prefill-at-client}
 
-Quando si precompila un modulo adattivo, la funzione [!DNL AEM Forms] il server unisce i dati con un modulo adattivo e invia il modulo compilato all’utente. Per impostazione predefinita, l’azione di unione dati viene eseguita sul server.
+When you prefill an Adaptive Form, the [!DNL AEM Forms] server merges data with an Adaptive Form and delivers the filled form to you. By default, the data merge action takes place at the server.
 
-Puoi configurare le [!DNL AEM Forms] server per eseguire l&#39;azione di unione dati sul client anziché sul server. Riduce notevolmente il tempo necessario per precompilare ed eseguire il rendering di Adaptive Forms. Per impostazione predefinita, la funzione è disabilitata. È possibile abilitarlo da Configuration Manager o dalla riga di comando.
+You can configure the [!DNL AEM Forms] server to perform the data merge action at the client instead of the server. It significantly reduces the time required to prefill and render Adaptive Forms. By default, the feature is disabled. You can enable it from the Configuration Manager or command line.
 
-* Per abilitare o disabilitare la gestione della configurazione:
-   1. Apri Gestione configurazione AEM.
-   1. Individua e apri la configurazione del modulo adattivo e del canale web di comunicazione interattiva
-   1. Abilita l’opzione Configuration.af.clientside.datamerge.enabled.name
-* Per attivare o disattivare dalla riga di comando:
-   * Per abilitare, esegui il seguente comando cURL:
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+* To enable or disable from configuration manager:
+  1. Open AEM Configuration Manager.
+  1. Locate and open the Adaptive Form and Interactive Communication Web Channel Configuration
+  1. Enable the Configuration.af.clientside.datamerge.enabled.name option
+* To enable or disable from the command line:
+  * To enable, run the following cURL command:
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   * Per disattivare, esegui il seguente comando cURL:
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
-   Per sfruttare appieno l’opzione di precompilazione dei dati sul client, aggiorna il servizio di precompilazione per restituire [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
+  * To disable, run the following cURL command:
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
