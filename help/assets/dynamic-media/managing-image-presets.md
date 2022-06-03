@@ -4,7 +4,7 @@ description: Scopri i predefiniti immagine e come creare, modificare e gestire i
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
 workflow-type: tm+mt
 source-wordcount: '3629'
 ht-degree: 8%
@@ -236,7 +236,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
 
 * **[!UICONTROL Attiva nitidezza semplice]**: non selezionare **[!UICONTROL Attiva nitidezza semplice]** (il filtro di nitidezza offre un controllo inferiore rispetto alle impostazioni Maschera definizione dettagli).
 
-* **[!UICONTROL Nitidezza: Modalità di ricampionamento]** - Seleziona **[!UICONTROL Bi-Cubic]**.
+* **[!UICONTROL Nitidezza: Modalità di ricampionamento]** - Seleziona **[!UICONTROL Sharp2]**.
 
 #### Opzioni della scheda Base {#basic-tab-options}
 
