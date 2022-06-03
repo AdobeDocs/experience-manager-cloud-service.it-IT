@@ -2,7 +2,7 @@
 title: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9ee931223c3600643fbaeefd790f5f23827da367
+source-git-commit: 98b81d918d60722ddb3f1c7736bc5b3506e05f6f
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 21%
@@ -26,7 +26,7 @@ ht-degree: 21%
 * Miglioramento dell’esperienza utente grazie a stati di caricamento, protezioni e gestione degli errori più efficienti
 * I registri di acquisizione vengono mantenuti e sono sempre disponibili per la risoluzione dei problemi
 
-Per iniziare a utilizzare la nuova versione (Vxx) è necessario disinstallare le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti). Questo è necessario perché la nuova versione è dotata di un grande cambiamento architettonico. Con Vxx, dovrai creare nuovi set di migrazione ed eseguire nuovamente l’estrazione e l’acquisizione sui nuovi set di migrazione. Se una migrazione è già in corso, puoi continuare a utilizzare la versione precedente di CTT fino al completamento della migrazione.
+Per iniziare a utilizzare la nuova versione (v2.0.10), dovrai disinstallare le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti). Questo è necessario perché la nuova versione è dotata di un grande cambiamento architettonico. Con la versione v2.0.10, dovrai creare nuovi set di migrazione ed eseguire nuovamente l’estrazione e l’acquisizione sui nuovi set di migrazione. Se una migrazione è già in corso, puoi continuare a utilizzare la versione precedente di CTT fino al completamento della migrazione.
 
 Le seguenti linee guida e best practice si applicano alla nuova versione dello strumento Content Transfer (Trasferimento contenuti):
 
