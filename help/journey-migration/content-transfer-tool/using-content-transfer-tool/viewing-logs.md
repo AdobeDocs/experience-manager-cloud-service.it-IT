@@ -2,10 +2,10 @@
 title: Visualizzazione dei registri di un set di migrazione nello strumento Content Transfer (Trasferimento contenuti)
 description: Visualizzazione dei registri di un set di migrazione nello strumento Content Transfer (Trasferimento contenuti)
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a098eefbb730ae2930169cf7402ab4799043291
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 52%
+source-wordcount: '238'
+ht-degree: 12%
 
 ---
 
@@ -23,20 +23,17 @@ Al completamento di ogni passaggio (estrazione e acquisizione) controlla i regis
 
 ## Passaggi per la visualizzazione dei registri {#viewing-logs}
 
-Puoi visualizzare i registri di un set di migrazione esistente nella pagina *Overview* (Panoramica).
-Effettua le seguenti operazioni:
+Per visualizzare i registri di estrazione, passa all’istanza Adobe Experience Manager sorgente, quindi seleziona il set di migrazione desiderato.
 
-1. Nella pagina *Overview* (Panoramica), seleziona il set di migrazione da eliminare e fai clic su **View Log** (Visualizza registro) nella barra delle azioni.
+Quindi, segui i passaggi seguenti:
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets/view-log1.png)
+1. Seleziona un set di migrazione e fai clic su **Visualizza registro** dalla barra delle azioni. Verrà visualizzata la finestra di dialogo Registri. Fai clic su **Registro di estrazione** per visualizzare i registri in una nuova scheda.
 
-1. Viene visualizzata la finestra di dialogo **Logs** (Registri). Fai clic su **Extraction Logs** (Registri di estrazione) per visualizzare i registri in una nuova scheda.
-
-   ![immagine](/help/journey-migration/content-transfer-tool/assets/view-log2.png)
-Oppure,
-
-   Puoi visualizzare i registri del set di migrazione anche nella schermata *Overview* (Panoramica). Seleziona il set di migrazione e fai clic sullo stato nel campo **EXTRACTION** (ESTRAZIONE). In questo caso, fai clic su **COMPLETATO** per visualizzare i registri in una nuova scheda.
-
-   ![immagine](/help/journey-migration/content-transfer-tool/assets/view-log3.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   Oppure, fai clic sul pulsante **COMPLETATO** stato per visualizzare i registri in una nuova scheda.
 
 1. Per visualizzare i registri senza utilizzare l’interfaccia utente, puoi accedere all’ambiente AEM sorgente tramite SSH e visualizzare il `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
+
+1. Per visualizzare i registri di acquisizione, vai all’elenco Processi di acquisizione in Cloud Acceleration Manager e fai clic sui tre punti (**...**). Puoi quindi fare clic su **Scarica registro** per scaricare i registri.
+
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

@@ -2,10 +2,10 @@
 title: Fase di implementazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di implementazione in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 2%
+source-wordcount: '793'
+ht-degree: 4%
 
 ---
 
@@ -89,24 +89,32 @@ Segui questa sezione per esplorare AEM scheda attività Scheda distribuzione as 
 
 ## Utilizzo della scheda di trasferimento dei contenuti {#content-transfer}
 
-La scheda attività Content Transfer (Trasferimento contenuti) fornisce indicazioni e considerazioni da rivedere quando si utilizza lo strumento Content Transfer (Trasferimento contenuti) per spostare i contenuti dall’istanza AEM corrente a AEM as a Cloud Service.
+La scheda Content Transfer (Trasferimento contenuti) consente di avviare e gestire il trasferimento dei contenuti dall’istanza AEM corrente a AEM as a Cloud Service.
 
 Leggi questa sezione per esplorare la scheda delle attività Content Transfer (Trasferimento contenuti):
 
-1. Fai clic sul pulsante **Visualizza** dal pulsante **Trasferimento dei contenuti** scheda attività.
+1. Fai clic sul pulsante **Revisione** dal pulsante **Trasferimento dei contenuti** scheda attività.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
+   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. Un carosello di contenuti visualizza le informazioni rilevanti per questa fase del percorso di migrazione.
+1. Per avviare un trasferimento di contenuti, devi creare un set di migrazione. Fai clic su **Creare un set di migrazione**. Un set di migrazione consente di trasferire i contenuti in AEM as a Cloud Service.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/content-transfertool-card.png)
+   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >Controlla la [prerequisiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) e [best practice e linee guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
+1. Sarà necessario scaricare e installare lo strumento Content Transfer (Trasferimento contenuti) per popolare il set di migrazione e completare la fase di estrazione del trasferimento di contenuti. Revisione [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it) per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+
+1. Per acquisire contenuti dal set di migrazione in un ambiente su AEM as a Cloud Service, dovrai avviare un’acquisizione. Passa a **Processi di acquisizione** e fai clic su **Nuova acquisizione**. Revisione [Inserimento di contenuto in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) per scoprire come completare la fase di acquisizione del trasferimento dei contenuti.
+
+   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+
 ### Stima del tempo di trasferimento dei contenuti {#calculating}
 
-È stato fornito un nuovo calcolatore dello strumento Content Transfer (Trasferimento contenuti) per stimare quanto tempo potrebbe essere necessario per completare l’attività di trasferimento dei contenuti. Puoi utilizzare il cursore delle dimensioni dell’archivio dei contenuti per selezionare le dimensioni da applicare al progetto. I tempi di trasferimento variano per le fasi di estrazione e acquisizione.
+È stato fornito un calcolatore dello strumento Content Transfer (Trasferimento contenuti) per stimare quanto tempo potrebbe essere necessario per completare l’attività di trasferimento dei contenuti. Puoi utilizzare il cursore delle dimensioni dell’archivio dei contenuti per selezionare le dimensioni da applicare al progetto. I tempi di trasferimento variano per le fasi di estrazione e acquisizione.
+
+![immagine](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
 >[!NOTE]
 >Questi tempi sono solo stime. In queste stime non sono stati presi in considerazione fattori quali la velocità di rete e il tempo necessario per aumentare le istanze.

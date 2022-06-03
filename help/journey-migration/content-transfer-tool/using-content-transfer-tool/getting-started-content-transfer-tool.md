@@ -2,10 +2,10 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f84806c1579f8ef163dd9454fcae4a57bf22a452
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 24%
+source-wordcount: '1242'
+ht-degree: 9%
 
 ---
 
@@ -27,6 +27,10 @@ Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato co
 >Scarica lo strumento Content Transfer (Trasferimento contenuti) dal portale di [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
 
 ## Connettività ambiente sorgente {#source-environment-connectivity}
+
+>[!NOTE]
+>
+>Un errore di connessione può verificarsi anche se un set di migrazione è stato eliminato da Cloud Acceleration Manager.
 
 L’istanza di origine AEM può essere in esecuzione dietro un firewall in cui può raggiungere solo alcuni host aggiunti a un Elenco consentiti. Per eseguire correttamente un’estrazione, i seguenti endpoint devono essere accessibili dall’istanza in esecuzione AEM:
 
@@ -51,83 +55,104 @@ Per testare la connettività all&#39;ambiente di destinazione AEM as a Cloud Ser
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial: utilizzo dello strumento Content Transfer (Trasferimento contenuti)"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+<!-- Need to remove the video -->
 
+La sezione seguente si applica alla nuova versione dello strumento Content Transfer (Trasferimento contenuti). Leggi questa sezione per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare il contenuto in AEM as a Cloud Service:
 
-Segui le indicazioni contenute in questa sezione per apprendere come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti in AEM as a Cloud Service (authoring/pubblicazione):
+### Fase di configurazione dell&#39;estrazione {#extraction-setup-phase}
 
-1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Migrazione dei contenuti**.
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_extraction_setup"
+>title="Fase di configurazione dell&#39;estrazione"
+>abstract="Scopri come creare un set di migrazione e copiare la chiave di estrazione."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial: utilizzo dello strumento Content Transfer (Trasferimento contenuti)"
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
+<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
-1. Seleziona la **Trasferimento dei contenuti** opzione da **Migrazione dei contenuti** procedura guidata.
+1. Accedi a Cloud Acceleration Manager (CAM) e fai clic sul progetto CAM creato in precedenza per valutare la tua disponibilità a passare a AEM as a Cloud Service. Se non hai creato un progetto CAM, consulta Creazione e gestione di un progetto in CAM.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
+1. Fai clic sul pulsante **Trasferimento dei contenuti** il Card. Viene visualizzata la vista Elenco set di migrazione.
 
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
-1. La console seguente viene visualizzata quando crei il primo set di migrazione. Fai clic su **Create Migration Set** (Crea set di migrazione) per creare un nuovo set di migrazione.
-
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
+1. Crea un set di migrazione facendo clic su **Crea set di migrazione**.
 
    >[!NOTE]
-   >Se disponi di set di migrazione esistenti, nella console viene visualizzato l’elenco dei set di migrazione esistenti con il relativo stato corrente.
+   >
+   >In Cloud Acceleration Manager è possibile creare un massimo di cinque set di migrazione per progetto.
 
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-1. Compila i campi in **Crea set di migrazione** come descritto di seguito.
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
+1. Ora puoi visualizzare l’elenco delle migrazioni nella vista a elenco. Fai clic sul simbolo dei tre punti (**...**) per aprire il menu a discesa e fare clic su **Copia chiave di estrazione**. Questa chiave sarà necessaria durante la fase di estrazione. Copia questa chiave di estrazione.
 
-   1. **Name** (Nome): inserisci il nome del set di migrazione.
+   >[!NOTE]
+   >
+   >La chiave di estrazione consente all’ambiente AEM sorgente di connettersi in modo sicuro al set di migrazione. Tratta questa chiave con la stessa attenzione che vorresti avere una password e non condividerla mai su un supporto non protetto come e-mail.
+
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
+
+### Popolamento del set di migrazione {#populating-the-migration-set}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_populate_migrationset"
+>title="Populate Migration Set&quot; abstract=&quot;Dopo aver creato un set di migrazione, deve essere compilato con il contenuto dell’istanza sorgente che deve essere spostato nell’ambiente as a Cloud Service AEM. A questo scopo, è necessario installare lo strumento Content Transfer (Trasferimento contenuti) nell’istanza sorgente."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Estrazione del contenuto"
+
+Per popolare il set di migrazione creato in Cloud Acceleration Manager, devi installare la versione più recente dello strumento Content Transfer (Trasferimento contenuti) sull’istanza Adobe Experience Manager (AEM) sorgente. Leggi questa sezione per scoprire come compilare il set di migrazione.
+
+1. Dopo aver installato la versione più recente (Vxxx) dello strumento Content Transfer (Trasferimento contenuti) sull’istanza Adobe Experience Manager sorgente, vai a **Operazioni - Migrazione dei contenuti**
+
+1. Fai clic su **Crea set di migrazione**
+
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
+
+1. Incolla la chiave di estrazione copiata da CAM in precedenza nel campo di input della chiave di estrazione di **Crea set di migrazione** modulo. In questo modo, i campi Nome set di migrazione e Nome progetto Cloud Acceleration Manager (CAM) verranno compilati automaticamente. Devono corrispondere al nome del set di migrazione in CAM e al nome del progetto CAM creato. È ora possibile aggiungere percorsi di contenuto. Dopo aver aggiunto i percorsi dei contenuti, potrai salvare il set di migrazione. Puoi eseguire l’estrazione con versioni incluse o escluse.
+
+   >[!NOTE]
+   >
+   >Assicurati che la chiave di estrazione sia valida e non sia vicina alla sua scadenza. Puoi ottenere queste informazioni nel **Crea set di migrazione** dopo aver incollato la chiave di estrazione. Se ricevi un errore di connessione, fai riferimento a [Connettività ambiente sorgente](#source-environment-connectivity) per ulteriori informazioni.
+
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+
+1. Quindi, seleziona i seguenti parametri per creare un set di migrazione:
+
+   1. **Include Version** (Includi versione): seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` è incluso automaticamente per la migrazione degli eventi di controllo.
+
+      ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+
       >[!NOTE]
-      >Il nome del set di migrazione non può contenere caratteri speciali.
-
-   1. **Cloud Service Configuration** (Configurazione Cloud Service): inserisci l’URL dell’istanza di authoring di AEM as a Cloud Service di destinazione.
-
-      >[!NOTE]
-      >Puoi creare e mantenere un massimo di dieci set di migrazione alla volta durante l’attività di trasferimento dei contenuti.
-      >Inoltre, è necessario creare separatamente una migrazione per ciascun ambiente: *Stage*, *Sviluppo* o *Produzione*.
-
-   1. **Access Token** (Token di accesso): inserisci il token di accesso.
-
-      >[!NOTE]
-      >Puoi recuperare il token di accesso utilizzando il **Token di accesso aperto** pulsante . Devi accertarti di appartenere al gruppo &quot;Amministratori&quot; nell’istanza del Cloud Service di destinazione.
-
-   1. **Parameters** (Parametri): seleziona i seguenti parametri per creare il set di migrazione:
-
-      1. **Include Version** (Includi versione): seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` è incluso automaticamente per la migrazione degli eventi di controllo.
-
-         ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
-
-         >[!NOTE]
-         >Se intendi includere versioni come parte di un set di migrazione e stai eseguendo integrazioni con `wipe=false`, quindi devi disattivare l’eliminazione della versione a causa di un limite corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione della versione e stai eseguendo i top-up in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
+      >Se intendi includere versioni come parte di un set di migrazione e stai eseguendo integrazioni con `wipe=false`, quindi devi disattivare l’eliminazione della versione a causa di un limite corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione della versione e stai eseguendo i top-up in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
 
-      1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore del percorso accetta l’input digitando o selezionando.
+   1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore del percorso accetta l’input digitando o selezionando.
 
-         >[!IMPORTANT]
-         >Durante la creazione di un set di migrazione, i percorsi seguenti sono soggetti a restrizioni:
-         >* `/apps`
-         >* `/libs`
-         >* `/home`
-         >* `/etc` (alcuni) `/etc` i percorsi possono essere selezionati in CTT)
+      >[!IMPORTANT]
+      >Durante la creazione di un set di migrazione, i percorsi seguenti sono soggetti a restrizioni:
+      >* `/apps`
+      >* `/libs`
+      >* `/home`
+      >* `/etc` (alcuni) `/etc` i percorsi possono essere selezionati in CTT)
 
 
 1. Fai clic su **Salva** dopo aver compilato tutti i campi nel **Crea set di migrazione** schermata dei dettagli.
 
-1. Il set di migrazione verrà visualizzato in **Trasferimento dei contenuti** , come illustrato nella figura riportata di seguito.
+<!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
-   Tutti i set di migrazione esistenti vengono visualizzati nella sezione **Trasferimento dei contenuti** procedura guidata con lo stato corrente e le informazioni sullo stato. Puoi vedere alcune di queste icone descritte di seguito.
+   All the existing migration sets are displayed on the **Content Transfer** wizard with their current status and status information. You may see some of these icons described below.
 
-   * Una *nuvola rossa* indica che non puoi completare il processo di estrazione.
-   * A *nuvola verde* indica che puoi completare il processo di estrazione.
-   * Un’*icona gialla* indica che non hai creato il set di migrazione esistente e che quello specifico è stato creato da un altro utente nella stessa istanza.
+   * A *red cloud* indicates that you cannot complete the extraction process.
+   * A *green cloud* indicates that you can complete the extraction process.
+   * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Seleziona un set di migrazione e fai clic su **Proprietà** per visualizzare o modificare le proprietà del set di migrazione. Durante la modifica delle proprietà, non è possibile modificare il **Nome set di migrazione** o **URL servizio**.
+1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 
-### Determinazione delle dimensioni del set di migrazione e dello spazio su disco {#migration-set-size}
+### Determinazione delle dimensioni del set di migrazione {#migration-set-size}
 
 Dopo aver creato un set di migrazione, si consiglia vivamente di eseguire un controllo delle dimensioni del set di migrazione prima di avviare un processo di estrazione.
 Eseguendo un controllo delle dimensioni del set di migrazione, potrai:
@@ -138,32 +163,27 @@ Per eseguire un controllo delle dimensioni, effettua le seguenti operazioni:
 
 1. Seleziona un set di migrazione e fai clic su **Dimensioni controllo**.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
 1. Verrà aperto il **Dimensioni controllo** finestra di dialogo.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
 1. Fai clic su **Dimensioni controllo** per avviare il processo. Tornerai quindi alla vista elenco set di migrazione e visualizzerai un messaggio che indica che **Dimensioni controllo** è in esecuzione.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
+1. Una volta **Dimensioni controllo** processo completato, lo stato verrà modificato in **COMPLETATO**. Seleziona lo stesso set di migrazione e fai clic su **Dimensioni controllo** per visualizzare i risultati. Di seguito è riportato un esempio di **Dimensioni controllo** risultati senza avvisi.
 
-1. Una volta **Dimensioni controllo** processo completato, lo stato verrà modificato in **COMPLETATO**. Seleziona lo stesso set di migrazione e fai clic su **Dimensioni controllo** per visualizzare i risultati.
-
-   ![immagine](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
-
-   Di seguito è riportato un esempio di **Dimensioni controllo** risultati senza avvisi.
-
-   ![immagine](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
 1. Se la **Dimensioni controllo** i risultati indicano che lo spazio su disco è insufficiente e/o che il set di migrazione supera i limiti del prodotto, **AVVISO** verrà visualizzato lo stato .
 
-![immagine](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
-
-Di seguito è riportato un esempio di **Dimensioni controllo** risultati con avvisi.
-
-![immagine](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
+<!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+   
+   Below is an example of **Check Size** results with warnings.
+ 
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
 
 
 ## Novità {#whats-next}

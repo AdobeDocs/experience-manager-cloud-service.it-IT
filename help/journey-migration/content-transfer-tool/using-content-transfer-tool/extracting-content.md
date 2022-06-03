@@ -2,10 +2,10 @@
 title: Estrazione del contenuto dall’origine
 description: Estrazione del contenuto dall’origine
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 5075482f48bf9aaf2c7386af74c14a50b4469840
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 38%
+source-wordcount: '765'
+ht-degree: 21%
 
 ---
 
@@ -21,46 +21,55 @@ ht-degree: 38%
 
 
 Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
+
 >[!NOTE]
->Se Amazon S3 o Azure Data Store viene utilizzato come tipo di archivio dati, puoi eseguire il passaggio facoltativo di pre-copia per accelerare in modo significativo la fase di estrazione. A questo scopo, devi configurare un `azcopy.config` prima di eseguire l’estrazione. Fai riferimento a [Gestione di archivi di contenuti di grandi dimensioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) per ulteriori dettagli.
+>Se Amazon S3, Azure Data Store o File Data Store viene utilizzato come tipo di archivio dati, puoi eseguire il passaggio facoltativo di pre-copia per accelerare in modo significativo la fase di estrazione. Il passaggio di pre-copia è più efficace per la prima estrazione e acquisizione completa. A questo scopo, devi configurare un `azcopy.config` prima di eseguire l’estrazione. Fai riferimento a [Gestione di archivi di contenuti di grandi dimensioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) per ulteriori dettagli.
 
 >[!IMPORTANT]
 >È necessario eseguire lo strumento User Mapping prima di estrarre il contenuto dall’origine. Vedi [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) per ulteriori dettagli.
 
 1. Seleziona un set di migrazione da **Trasferimento dei contenuti** procedura guidata e fai clic su **Extract** per avviare l’estrazione.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-01.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
-1. La **Estrazione set di migrazione** viene visualizzata la finestra di dialogo e fai clic su **Extract** per avviare la fase di estrazione.
+   >!![IMPORTANT]
+   Assicurati che la chiave di estrazione sia valida e non sia vicina alla sua scadenza. Se è vicina alla data di scadenza, puoi rinnovare la chiave di estrazione selezionando il set di migrazione e facendo clic su Proprietà . Fai clic su **Rinnova**. Verrà visualizzato Cloud Acceleration Manager, dove puoi fare clic su **Copia chiave di estrazione**. Ogni volta che fai clic su **Copia chiave di estrazione**, viene generata una nuova chiave di estrazione valida per 14 giorni dalla creazione.
+   [!immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-02.png)
+1. Viene visualizzata la finestra di dialogo Estrazione . Fai clic su **Extract** per avviare la fase di estrazione.
+
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
 
    >[!NOTE]
-   >È presente l’opzione per sovrascrivere il contenitore di staging durante la fase di estrazione.
+Puoi sovrascrivere il contenitore di staging durante la fase di estrazione. Se **Sovrascrivi contenitore di staging** è disattivato e può velocizzare le estrazioni per le successive migrazioni in cui i percorsi dei contenuti o le impostazioni delle versioni &quot;include&quot; non sono cambiati. Tuttavia, se i percorsi dei contenuti o le impostazioni delle versioni incluse sono cambiati, allora **Sovrascrivi contenitore di staging** deve essere abilitato.
 
    >[!IMPORTANT]
-   >Se la Mappatura utente non è stata eseguita su questo set di migrazione prima di estrarre il contenuto dall’origine, verrà visualizzato un avviso che mostra che il passaggio Mappatura utente è in sospeso, come illustrato nella figura riportata di seguito. Fai clic su **Mappa utenti** per eseguire lo strumento User Mapping (Mappatura utente).
-   >![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/user-mapping-extract.png)
+Se la Mappatura utente non è stata eseguita su questo set di migrazione prima di estrarre il contenuto dall’origine, verrà visualizzato un avviso che mostra che il passaggio Mappatura utente è in sospeso, come illustrato nella figura precedente. Fai clic su **Mappa utenti** per eseguire lo strumento User Mapping (Mappatura utente).
 
 1. La **Estrazione** viene ora visualizzato il campo **IN ESECUZIONE** stato per indicare che l’estrazione è in corso.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-03.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png)
 
-   Una volta completata l’estrazione, lo stato del set di migrazione diventa **FINISHED** (COMPLETATO) e un’icona di nuvola *verde* viene visualizzata nel campo **INFO**.
+   Puoi fare clic su **Visualizza stato** per ottenere una visualizzazione granulare dell’estrazione in corso.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-04.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   >[!IMPORTANT]
-   >L’interfaccia utente dispone di una funzione di ricaricamento automatico che ricarica il **Trasferimento dei contenuti** procedura guidata ogni 30 secondi.
-   >Quando si avvia la fase di estrazione, viene applicato il blocco di scrittura, che viene rilasciato dopo *60 secondi*. Pertanto, se si interrompe un’estrazione, prima di riavviare l’estrazione è necessario attendere un minuto affinché il blocco venga rilasciato.
+   Puoi anche monitorare lo stato di avanzamento della fase di estrazione da Cloud Acceleration Manager visitando la pagina Content Transfer (Trasferimento contenuti).
+
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
+
+1. Una volta completata l’estrazione, controlla le altre colonne come **Origine** e **Percorsi** per i dettagli del set di migrazione compilato facendo clic su **...** e poi **Visualizza dettagli**.
+
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
+
 
 ## Estrazione integrativa {#top-up-extraction-process}
 
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
 
 >[!NOTE]
->Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service.
->Inoltre, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui l’estrazione iniziale viene portata al momento dell’esecuzione dell’estrazione integrativa. Non è possibile eseguire i top-up su contenuto la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questa limitazione durante il processo di migrazione.
+Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service. Se hai utilizzato il passaggio di pre-copia per la prima estrazione completa, puoi saltare la pre-copia per le successive estrazioni integrative (se la dimensione del set di migrazione integrativa è inferiore a 200 GB) perché potrebbe aggiungere tempo all’intero processo.
+Inoltre, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui l’estrazione iniziale viene portata al momento dell’esecuzione dell’estrazione integrativa. Non è possibile eseguire i top-up su contenuto la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questa limitazione durante il processo di migrazione.
 
 Una volta completato il processo di estrazione, puoi trasferire il contenuto delta utilizzando il metodo di estrazione integrativa.
 
@@ -68,13 +77,12 @@ Effettua le seguenti operazioni:
 
 1. Passa a **Trasferimento dei contenuti** e seleziona il set di migrazione per il quale desideri eseguire l’estrazione integrativa. Fai clic su **Extract** (Estrai) per avviare l’estrazione integrativa.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-05.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
 1. La **Estrazione set di migrazione** viene visualizzata la finestra di dialogo. Fai clic su **Extract**.
 
-   >[!IMPORTANT]
-   >Disattiva l’opzione **Overwrite staging container during extraction** (Sovrascrivi contenitore di staging durante l’estrazione).
-   >![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-06.png)
+   >[!IMPORTANT]Disattiva l’opzione **Overwrite staging container during extraction** (Sovrascrivi contenitore di staging durante l’estrazione).
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
 
 
 ## Novità {#whats-next}

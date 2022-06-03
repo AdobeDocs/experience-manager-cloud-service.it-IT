@@ -1,15 +1,16 @@
 ---
-title: Convalida dei trasferimenti di contenuto
+title: Convalida dei trasferimenti di contenuto (legacy)
 description: Utilizza lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuto
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 2%
+source-wordcount: '950'
+ht-degree: 1%
 
 ---
 
-# Convalida dei trasferimenti di contenuto {#validating-content-transfers}
+# Convalida dei trasferimenti di contenuto (legacy) {#validating-content-transfers}
 
 ## Guida introduttiva {#getting-started}
 
@@ -44,11 +45,11 @@ Per un&#39;illustrazione grafica, si prega di fare riferimento agli esempi segue
 
 * **Estrazione (sovrascrittura)**
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **Acquisizione (Wipe)**
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **Note**
 
@@ -58,11 +59,11 @@ Per un&#39;illustrazione grafica, si prega di fare riferimento agli esempi segue
 
 * **Estrazione**
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **Acquisizione**
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **Note**
 
@@ -127,10 +128,22 @@ Migration validation took 0 minutes
 
 L’esempio di errore di cui sopra è stato ottenuto eseguendo un’acquisizione, e quindi eseguendo nuovamente la stessa acquisizione con Wipe disabilitata, in modo tale che nessun nodo era coinvolto durante l’acquisizione, tutto era già presente sul target.
 
-Oltre a essere incluso nel registro di acquisizione, il rapporto di convalida è accessibile anche dal **Processi di acquisizione** Interfaccia utente in Cloud Acceleration Manager. A tale scopo, fai clic sui tre punti (**...**), quindi fai clic su **Rapporto di convalida** nel menu a discesa per visualizzare il rapporto di convalida.
+Oltre a essere incluso nel registro di acquisizione, il rapporto di convalida è accessibile anche dall’interfaccia utente dello strumento Content Transfer (Trasferimento contenuti). A tale scopo, seleziona un set di migrazione e fai clic sul pulsante **Convalida** dalla barra delle azioni:
 
 
-![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![immagine](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+
+Viene visualizzata la finestra di dialogo Registri di convalida:
+
+![immagine](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+
+Utilizza la **Rapporto Pubblicazione/Autore convalida** per visualizzare il rapporto di convalida per l’acquisizione più recente nel livello specificato dell’ambiente di destinazione. Di seguito è riportato un esempio tratto da una piccola acquisizione di pubblicazione:
+
+![immagine](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+
+>[!NOTE]
+>
+>La **Rapporto Pubblicazione/Autore convalida** al termine dell’acquisizione verrà visualizzato il collegamento . Inoltre, i rapporti di convalida vengono mantenuti e non scadono al termine dell’acquisizione, come fanno i registri di acquisizione.
 
 ## Risoluzione dei problemi {#troubleshooting}
 
