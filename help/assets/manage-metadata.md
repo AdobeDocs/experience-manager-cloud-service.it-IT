@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 3%
+source-wordcount: '1953'
+ht-degree: 7%
 
 ---
 
@@ -33,7 +33,7 @@ I metadati sono la raccolta di tutti i dati disponibili per una risorsa, ma non 
 * Nome della cartella in cui è contenuta.
 * Risorse correlate o tag applicati.
 
-Queste sono le proprietà di metadati di base che [!DNL Experience Manager] può gestire le risorse, consentendo agli utenti di vedere tutte le risorse. Ad esempio, ordinare le risorse per data dell’ultima modifica è utile quando si tenta di individuare le risorse aggiunte di recente.
+Queste sono le proprietà di metadati di base che [!DNL Experience Manager] può gestire le risorse, consentendo agli utenti di vedere tutte le risorse. Ad esempio, ordinare le risorse per data dell’ultima modifica è utile quando si tenta di individuare le risorse aggiunte o modificate di recente.
 
 Puoi aggiungere ulteriori dati di alto livello alle risorse digitali, ad esempio:
 
@@ -45,11 +45,11 @@ Puoi aggiungere ulteriori dati di alto livello alle risorse digitali, ad esempio
 
 Ulteriori metadati ti aiutano a categorizzare ulteriormente le risorse ed è utile man mano che la quantità di informazioni digitali cresce. È possibile gestire poche centinaia di file in base solo ai nomi dei file. Tuttavia, questo approccio non è scalabile. Non è sufficiente che il numero di persone coinvolte e il numero di risorse gestite aumentino.
 
-Con l’aggiunta dei metadati, il valore di una risorsa digitale aumenta, perché la risorsa diventa,
+Con l’aggiunta dei metadati, il valore di una risorsa digitale aumenta, perché la risorsa diventa:
 
-* Più accessibile: i sistemi e gli utenti possono trovarlo facilmente.
-* Gestione più semplice: puoi trovare più facilmente le risorse con lo stesso set di proprietà e applicarvi le modifiche necessarie.
-* Completo : la risorsa contiene ulteriori informazioni e contenuti con più metadati.
+* Più accessibile: i sistemi e gli utenti possono trovarla facilmente.
+* Più semplice da gestire: puoi trovare e modificare più facilmente le risorse che hanno uno stesso set di proprietà.
+* Completa: la risorsa contiene più informazioni e contesto grazie a un maggior numero di metadati.
 
 Per queste ragioni, [!DNL Assets] offre le modalità giuste per creare, gestire e scambiare metadati per le risorse digitali.
 
@@ -67,6 +67,21 @@ I metadati tecnici sono utili per le applicazioni software che si occupano di ri
 I metadati descrittivi sono metadati relativi al dominio dell&#39;applicazione, ad esempio, l&#39;azienda da cui proviene una risorsa. Impossibile determinare automaticamente i metadati descrittivi. Viene creato manualmente o semiautomatico. Ad esempio, una fotocamera con GPS abilitato può tracciare automaticamente la latitudine e la longitudine e aggiungere il geotag all&#39;immagine.
 
 Il costo della creazione manuale di informazioni descrittive sui metadati è elevato. Pertanto, vengono stabiliti degli standard per facilitare lo scambio di metadati tra sistemi software e organizzazioni. [!DNL Experience Manager Assets] supporta tutti gli standard pertinenti per la gestione dei metadati.
+
+## Metadati e ultima modifica {#last-modification}
+
+L’ultima data di modifica di una risorsa corrisponde all’ultima modifica apportata al file originale di una risorsa. Di conseguenza, la data di modifica e l’utente cambiano solo quando:
+
+* Viene caricata una nuova versione della risorsa
+* Una risorsa viene rielaborata
+
+L’ultima data di modifica e l’utente non cambiano:
+
+* Quando una risorsa viene spostata o rinominata
+* Quando una risorsa viene estratta, archiviata o aggiornata
+* Quando una risorsa viene pubblicata o annullata
+* Aggiornamenti dei metadati
+* Aggiornamenti di riferimento o raccolta
 
 ## Standard di codifica {#encoding-standards}
 
