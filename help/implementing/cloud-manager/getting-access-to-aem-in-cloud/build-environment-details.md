@@ -2,9 +2,9 @@
 title: Ambiente build
 description: Scopri l’ambiente di build di Cloud Manager e come crea e verifica il codice.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
+source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '961'
 ht-degree: 1%
 
 ---
@@ -94,6 +94,12 @@ Le combinazioni fornitore/versione attualmente disponibili sono:
 >[!NOTE]
 >
 >A partire da aprile 2022, Oracle JDK sarà il JDK predefinito per lo sviluppo e il funzionamento delle applicazioni AEM. Il processo di creazione di Cloud Manager passa automaticamente a utilizzando Oracle JDK, anche se nella toolchain Maven è selezionata esplicitamente un’opzione alternativa. Per ulteriori informazioni, consulta le note sulla versione di aprile pubblicate .
+
+#### Versione JDK di esecuzione Maven alternativa {#alternate-maven-jdk-version}
+
+È anche possibile selezionare Java 8 o Java 11 come JDK per l&#39;intera esecuzione Maven. A differenza delle opzioni delle catene degli strumenti, questo cambia il JDK utilizzato per tutti i plugin a meno che la configurazione delle catene degli utensili non sia impostata anche nel qual caso la configurazione delle catene degli utensili viene ancora applicata per i plugin Maven consapevoli delle catene degli utensili. Di conseguenza, verifica e applica la versione Java utilizzando il [Plug-in applicazione Apache Maven](https://maven.apache.org/enforcer/maven-enforcer-plugin/) funzionerà.
+
+A questo scopo, crea un file denominato `.cloudmanager/java-version` nel ramo dell’archivio git utilizzato dalla pipeline. Questo file può avere il contenuto 11 o 8. Qualsiasi altro valore viene ignorato. Se è specificato 11, si utilizza l&#39;Oracle 11 e la `JAVA_HOME` variabile di ambiente impostata su `/usr/lib/jvm/jdk-11.0.2`. Se si specifica 8, si utilizza l&#39;Oracle 8 e la `JAVA_HOME` variabile di ambiente impostata su `/usr/lib/jvm/jdk1.8.0_202`.
 
 ## Variabili di ambiente {#environment-variables}
 
