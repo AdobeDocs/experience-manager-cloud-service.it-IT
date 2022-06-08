@@ -2,10 +2,10 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
+source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
 workflow-type: tm+mt
 source-wordcount: '1363'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -58,9 +58,9 @@ Per eseguire un&#39;attivazione ad albero:
 
 Per ottenere le migliori prestazioni, segui queste linee guida quando utilizzi questa funzione:
 * Si consiglia di replicare meno di 100 percorsi alla volta, con un limite rigido del percorso di 500.
-* La dimensione totale del contenuto replicato deve essere inferiore a 5 MB. Questo include solo i nodi e le proprietà, ma non tutti i binari, che includono pacchetti di flusso di lavoro e pacchetti di contenuto.
+* La dimensione totale del contenuto replicato deve essere inferiore a 10 MB. Questo include solo i nodi e le proprietà, ma non tutti i binari, che includono pacchetti di flusso di lavoro e pacchetti di contenuto.
 
-### Flusso di lavoro della struttura del contenuto di Pubblica {#publish-content-tree-workflow}
+### Flusso di lavoro della struttura dei contenuti di pubblicazione {#publish-content-tree-workflow}
 
 È possibile attivare una replica ad albero scegliendo **Strumenti - Flusso di lavoro - Modelli** e copiando **Pubblica struttura contenuto** modello di flusso di lavoro preconfigurato, come mostrato di seguito:
 
@@ -85,7 +85,7 @@ In alternativa, è possibile ottenere questo risultato creando un modello di flu
 
    ![Attivazione ad albero](/help/operations/assets/newstep.png)
 
-1. Imposta eventuali parametri aggiuntivi nella **Argomenti** campo . Gli argomenti separati da virgole multipli possono essere raggruppati. Ad esempio:
+1. Imposta eventuali parametri aggiuntivi nella **Argomenti** campo . Gli argomenti separati da virgole multipli possono essere raggruppati. Esempio:
 
    `enableVersion=true,agentId=publish,includeChildren=true`
 
@@ -194,7 +194,7 @@ Il `ReplicationStatus` di una risorsa viene modificata solo se l&#39;azione di r
 
 **Limiti di percorso e dimensioni dell’API di replica**
 
-Si consiglia di replicare meno di 100 percorsi, con 500 come limite rigido. Al di sopra del limite rigido, verrà lanciata una ReplicationException. Se la logica dell&#39;applicazione non richiede la replica atomica, questo limite può essere superato impostando ReplicationOptions.setUseAtomicCalls su false, che accetta qualsiasi numero di percorsi, ma crea internamente bucket per rimanere al di sotto di questo limite. La quantità di contenuto trasmesso per chiamata di replica non deve superare i 5 MB, che include i nodi e le proprietà, ma non gli eventuali binari (i pacchetti di flusso di lavoro e i pacchetti di contenuto sono considerati binari).
+Si consiglia di replicare meno di 100 percorsi, con 500 come limite rigido. Al di sopra del limite rigido, verrà lanciata una ReplicationException. Se la logica dell&#39;applicazione non richiede la replica atomica, questo limite può essere superato impostando ReplicationOptions.setUseAtomicCalls su false, che accetta qualsiasi numero di percorsi, ma crea internamente bucket per rimanere al di sotto di questo limite. La quantità di contenuto trasmesso per chiamata di replica non deve superare i 10 MB, che include i nodi e le proprietà, ma non eventuali binari (i pacchetti di flusso di lavoro e i pacchetti di contenuto sono considerati binari).
 
 ## Risoluzione dei problemi {#troubleshooting}
 
