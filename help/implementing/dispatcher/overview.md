@@ -2,9 +2,9 @@
 title: Panoramica del flusso di distribuzione dei contenuti
 description: Panoramica del flusso di distribuzione dei contenuti
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 60fc1b8f93c93ca427507dbe56511342f285e6bc
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 1%
 
 ---
@@ -29,6 +29,9 @@ Il flusso di dati è il seguente:
 
 Per impostazione predefinita, il tipo di contenuto HTML/testo è impostato per scadere dopo 300 (5 minuti) al livello del dispatcher, una soglia che sia la cache del dispatcher che il rispetto della CDN. Durante le ridistribuzioni del servizio di pubblicazione, la cache del dispatcher viene svuotata e successivamente riscaldata prima che i nuovi nodi di pubblicazione accetti il traffico.
 
-Le sezioni seguenti forniscono maggiori dettagli sulla distribuzione dei contenuti, inclusa la configurazione CDN e il caching.
+Le sezioni seguenti forniscono ulteriori dettagli sulla distribuzione dei contenuti:
+* [Configurazione CDN](/help/implementing/dispatcher/cdn.md)
+* [Memorizzazione in cache](/help/implementing/dispatcher/caching.md)
+
 
 Sono disponibili informazioni sulla replica dal servizio di authoring al servizio di pubblicazione [qui](/help/operations/replication.md).
