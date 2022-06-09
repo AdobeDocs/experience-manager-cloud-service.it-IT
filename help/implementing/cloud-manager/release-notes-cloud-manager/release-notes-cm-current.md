@@ -1,19 +1,19 @@
 ---
-title: Note sulla versione per Cloud Manager 2022.5.0 in Adobe Experience Manager as a Cloud Service
-description: Queste sono le note sulla versione per Cloud Manager 2022.5.0 in AEM as a Cloud Service.
+title: Note sulla versione per Cloud Manager 202.6.0 in Adobe Experience Manager as a Cloud Service
+description: Queste sono le note sulla versione per Cloud Manager 2022.6.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: c48d6f553c6a973a200fb11c2112beaf9be16d1c
+source-git-commit: af1ab1602506cc174e0226a7572ccb12d8ff527a
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 3%
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
 
-# Note sulla versione per Cloud Manager 2022.5.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Note sulla versione per Cloud Manager 202.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina documenta le note sulla versione di Cloud Manager 2022.5.0 in AEM as a Cloud Service.
+Questa pagina documenta le note sulla versione di Cloud Manager 2022.6.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,17 +21,20 @@ Questa pagina documenta le note sulla versione di Cloud Manager 2022.5.0 in AEM 
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione 2022.5.0 di Cloud Manager in AEM 5 maggio 2022. La prossima versione è prevista per il 9 giugno 2022.
+La data di rilascio della versione 2022.6.0 di Cloud Manager in AEM 9 giugno 2022. La prossima versione è prevista per il 30 giugno 2022.
 
 ## Novità {#what-is-new}
 
-* La pagina Ambienti dispone di una colonna per visualizzare AEM versione dell’ambiente.
-* L’esecuzione della pipeline visualizza ora gli errori di livello superiore dell’interfaccia utente nella schermata di esecuzione.
-* Esegui nuovamente il passaggio di distribuzione della produzione tramite l’interfaccia utente di Cloud Manager.
-* Riutilizza le immagini di build per eseguire nuovamente il passaggio di distribuzione di produzione.
-* Nuova API per consentire l’eliminazione self-service dell’infrastruttura di rete.
+* L’interfaccia utente di Cloud Manager ora consente [ripristino automatico dei contenuti](/help/operations/backup.md) a uno stato valido noto dell&#39;ambiente cloud AEM.
+   * Questa funzione verrà implementata in un approccio graduale nelle settimane successive alla versione 2022.06.0.
+* Una nuova scheda di benvenuto nella pagina di destinazione di Cloud Manager consente agli utenti di accedere rapidamente alle esercitazioni di onboarding e alle metriche di avanzamento correlate al tenant.
+   * Questa funzione verrà implementata in un approccio graduale durante la settimana successiva alla versione 2022.06.0.
+* Gli utenti con le autorizzazioni necessarie possono accedere a un nuovo [Dashboard di licenza](/help/implementing/cloud-manager/license-dashboard.md) nella pagina di destinazione di Cloud Manager per visualizzare i dettagli delle adesioni disponibili per il tenant.
+   * AEM Sites è la prima soluzione per la quale la disponibilità e il consumo di utilizzo vengono distribuiti tramite il dashboard Cloud Manage.
+   * Questa funzione verrà implementata in un approccio graduale nelle settimane successive alla versione 2022.06.0.
+* [Nuovo account secondario relic e gestione utenti self-service](/help/implementing/cloud-manager/user-access-new-relic.md) è ora disponibile tramite l’interfaccia utente di Cloud Manager.
+   * Questa funzione verrà implementata in un approccio graduale nelle settimane successive alla versione 2022.06.0.
+* Un nuovo widget Go Live sulla home page dei programmi di produzione di Cloud Service fornisce ora indicazioni per prepararsi a un&#39;esperienza live di successo.
+* [È ora possibile riutilizzare gli artefatti di creazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) quando si utilizza il mirroring git.
 
 ## Correzioni di bug {#bug-fixes}
-
-* Il pulsante &quot;Download Logs&quot; dai registri dei passaggi del test dell’interfaccia utente non scaricava i registri.
-* Alcune esecuzioni sono rimaste bloccate nel contesto del trigger di commit e dell&#39;annullamento del passaggio di approvazione.

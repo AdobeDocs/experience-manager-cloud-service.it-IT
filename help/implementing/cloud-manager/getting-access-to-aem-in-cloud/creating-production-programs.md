@@ -2,10 +2,10 @@
 title: 'Creazione di programmi di produzione '
 description: Scopri come utilizzare Cloud Manager per creare un tuo programma di produzione per ospitare il traffico live.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 0%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,11 @@ Segui questi passaggi per creare un programma di produzione.
 
    ![Pagina di destinazione di Cloud Manager](assets/first_timelogin1.png)
 
-1. Seleziona **Configurazione per la produzione** nella procedura guidata Crea programma per creare un programma di produzione. È possibile accettare il nome predefinito del programma o modificarlo prima di selezionare **Crea**.
+1. Seleziona **Configurazione per la produzione** nella procedura guidata Crea programma per creare un programma di produzione. È possibile accettare il nome predefinito del programma o modificarlo prima di fare clic su **Continua**.
 
    ![Creazione guidata programma](assets/create-prod1.png)
 
-1. Nella scheda successiva, seleziona le soluzioni da includere nel programma.
+1. Sulla **Soluzioni e componenti aggiuntivi** seleziona le soluzioni da includere nel programma.
 
    ![Selezionare le soluzioni](assets/setup-prod-select.png)
 
@@ -46,7 +46,16 @@ Segui questi passaggi per creare un programma di produzione.
 
    ![Seleziona componenti aggiuntivi](assets/setup-prod-commerce.png)
 
-1. Con le soluzioni e i componenti aggiuntivi selezionati, fai clic su **Crea**.
+1. Con le soluzioni e i componenti aggiuntivi selezionati, fai clic su **Continua**.
+
+1. Sulla **Data di pubblicazione** , immetti la data in cui pianifichi la pubblicazione del programma di produzione.
+
+   ![Definire la data di pubblicazione pianificata](assets/setup-go-live.png)
+
+   * Questa data può essere modificata in qualsiasi momento.
+   * Questa data è solo per uso informativo e attiva il widget Go Live sulla pagina di panoramica del programma per fornire collegamenti all’interno del prodotto alla documentazione sulle best practice as a Cloud Service in modo tempestivo per allinearsi con il percorso che culmina in un’esperienza Go Live di successo e fluida.
+
+1. Fai clic su **Crea**.
 
 Il programma viene creato da Cloud Manager e viene visualizzato e selezionato nella pagina di destinazione.
 

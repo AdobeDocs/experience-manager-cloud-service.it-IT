@@ -2,9 +2,9 @@
 title: Modifica dei programmi
 description: Scopri come modificare i programmi di produzione e sandbox per regolare le loro opzioni dopo averli creati.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,13 @@ Segui questi passaggi per modificare un programma.
 
    ![Opzione Modifica programma](assets/edit-program-overview.png)
 
-1. La **Modifica programma** vengono visualizzate due schede: **Generale** e **Soluzioni e componenti aggiuntivi**. Seleziona la **Generale** per modificare il nome e la descrizione del programma.
+1. La **Modifica programma** viene visualizzata la pagina . Sulla **Generale** , modifica il nome e la descrizione del programma.
 
    * È necessario selezionare almeno una soluzione per un programma.
 
    ![Scheda Generale](assets/edit-program-prod1.png)
 
-1. Seleziona la **Soluzioni e componenti aggiuntivi** per modificare le soluzioni del programma.
+1. Sulla **Soluzioni e componenti aggiuntivi** , modifica le soluzioni per il programma.
 
    ![Selezionare le soluzioni](assets/edit-prg.png)
 
@@ -46,9 +46,15 @@ Segui questi passaggi per modificare un programma.
 
    ![Modificare i componenti aggiuntivi](assets/edit-program-add-on.png)
 
+1. Sulla **Vai alle impostazioni live** , modifica la data di pubblicazione pianificata per il programma.
+
+   ![Modificare le impostazioni in tempo reale](assets/edit-program-go-live.png)
+
+   * Questa data è solo per uso informativo e attiva il widget Go Live sulla pagina di panoramica del programma per fornire collegamenti all’interno del prodotto alla documentazione sulle best practice as a Cloud Service in modo tempestivo per allinearsi con il percorso che culmina in un’esperienza Go Live di successo e fluida.
+
 1. Fai clic su **Aggiorna** per salvare le modifiche apportate al programma.
 
-Una volta effettuati gli aggiornamenti, se le soluzioni selezionate sono cambiate, tali modifiche avranno effetto dopo la distribuzione successiva.
+Tutte le volte che un programma viene modificato, inclusa l&#39;aggiunta o la rimozione di una soluzione o di un componente aggiuntivo, tali modifiche avranno effetto dopo la distribuzione successiva.
 
 ## Eliminazione dei programmi sandbox {#delete-sandbox-program}
 
