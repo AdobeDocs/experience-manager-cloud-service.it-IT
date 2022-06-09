@@ -2,10 +2,10 @@
 title: Guida introduttiva AEM traduzione headless
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,7 @@ L’architetto dei contenuti lavora all’inizio del progetto per definire quest
 
 Poiché i Modelli di contenuto definiscono la struttura del contenuto, è necessario sapere quali campi dei modelli devono essere tradotti. In genere si lavora con l’architettura dei contenuti per definirlo. Per sfogliare i campi dei modelli di contenuto, effettua le seguenti operazioni.
 
-1. Passa a **Strumenti** -> **Risorse** -> **Modelli per frammenti di contenuto**.
+1. Passa a **Strumenti** -> **Generale** -> **Modelli per frammenti di contenuto**.
 1. I modelli per frammenti di contenuto sono generalmente memorizzati in una struttura di cartelle. Tocca o fai clic sulla cartella del progetto.
 1. I modelli sono elencati. Tocca o fai clic sul modello per visualizzare i dettagli.
    ![Modelli per frammenti di contenuto](assets/content-fragment-models.png)

@@ -3,10 +3,10 @@ title: Utilizzo dell’IDE GraphiQL in AEM
 description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,13 +16,9 @@ Un’implementazione dell’IDE [GraphiQL](https://graphql.org/learn/serving-ove
 
 >[!NOTE]
 >
->Alcune delle funzionalità di questa caratteristica sono disponibili nel canale prerelease. In particolare, funzionalità relative alle query persistenti.
-> 
->Consulta la sezione [Documentazione sul canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#enable-prerelease) per informazioni su come abilitare la funzione per il tuo ambiente.
-
->[!NOTE]
+>GraphiQL è incluso in tutti gli ambienti di AEM (ma sarà accessibile/visibile solo quando configuri gli endpoint).
 >
->GraphiQL è incluso in AEM, ma per impostazione predefinita è abilitato solo sugli ambienti `dev-authors`.
+>Nelle versioni precedenti, era necessario un pacchetto per installare l&#39;IDE GraphiQL. Se hai installato questa funzionalità, puoi rimuoverla.
 
 >[!NOTE]
 >Prima di utilizzare l’IDE GraphiQL, devi avere [configurato gli endpoint](/help/headless/graphql-api/graphql-endpoint.md) nel [browser delle configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md).
@@ -35,7 +31,7 @@ Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query G
 * eseguire le query per visualizzare immediatamente i risultati;
 * gestire **variabili di query**;
 * salvare e gestire **query persistenti**;
-* pubblicare o annullare la pubblicazione di **query persistenti** (a/da `dev-publish`);
+* pubblicare o annullare la pubblicazione, **Query persistenti** (ad esempio, a/da `dev-publish`)
 * vedere la **cronologia** delle query precedenti;
 * utilizzare **Esplora documentazione** per accedere alla documentazione, per scoprire e comprendere i metodi disponibili.
 
@@ -46,7 +42,7 @@ Puoi accedere all’editor delle query da:
 
 ![Interfaccia di GraphiQL](assets/cfm-graphiql-interface.png "Interfaccia di GraphiQL")
 
-Puoi utilizzare GraphiQL nel sistema di authoring dell’ambiente di sviluppo in modo che possano essere richieste dall’applicazione client utilizzando richieste GET e pubblicando query. Per l’utilizzo in produzione, devi quindi [spostare le query nell’ambiente di produzione](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inizialmente devi spostarle nell’istanza Author dell’ambiente di produzione per convalidare i contenuti appena creati con le query, e infine nell’istanza Publish di produzione per l’utilizzo live.
+È possibile utilizzare GraphiQL sul sistema in modo che le query possano essere richieste dall&#39;applicazione client utilizzando le richieste GET e per la pubblicazione delle query. Per l&#39;utilizzo in produzione, potete quindi [spostare le query nell&#39;ambiente di produzione](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inizialmente devi spostarle nell’istanza Author dell’ambiente di produzione per convalidare i contenuti appena creati con le query, e infine nell’istanza Publish di produzione per l’utilizzo live.
 
 ## Selezione dell’endpoint {#selecting-endpoint}
 
@@ -100,9 +96,9 @@ Esempio:
 
 ![Variabili GraphQL](assets/cfm-graphqlapi-03.png "Variabili GraphQL")
 
-## Pubblicazione di query persistenti (dev-publish) {#publishing-persisted-queries}
+## Pubblicazione di query persistenti {#publishing-persisted-queries}
 
-Dopo aver selezionato la query persistente dall’elenco (pannello a sinistra), puoi utilizzare le azioni **Pubblica** e **Annulla pubblicazione**. Questo le attiverà nell’istanza Pubblish dell’ambiente di sviluppo (`dev-publish`) per un facile accesso da parte delle applicazioni durante il test.
+Dopo aver selezionato la query persistente dall’elenco (pannello a sinistra), puoi utilizzare le azioni **Pubblica** e **Annulla pubblicazione**. Questo li attiverà nell’ambiente di pubblicazione (ad esempio, `dev-publish`) per un facile accesso da parte delle applicazioni durante il test.
 
 >[!NOTE]
 >

@@ -4,7 +4,7 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '2892'
 ht-degree: 7%
@@ -24,7 +24,7 @@ Per utilizzare i modelli di frammento di contenuto:
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
-1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
+1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
 1. Passa alla cartella appropriata [configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Utilizzo **Crea** per aprire la procedura guidata.
 
@@ -46,7 +46,7 @@ Il modello a frammento di contenuto definisce efficacemente la struttura dei fra
 >
 >La modifica di un modello di frammento di contenuto esistente può avere un impatto sui frammenti dipendenti.
 
-1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
+1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
 
 1. Passa alla cartella contenente il modello di frammento di contenuto.
 1. Apri il modello richiesto per **Modifica**; utilizza l’azione rapida oppure seleziona il modello e quindi l’azione dalla barra degli strumenti.
@@ -400,7 +400,7 @@ I modelli di frammento di contenuto consentiti per una cartella vengono risolti 
 
 Per eliminare un modello di frammento di contenuto:
 
-1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
+1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
 
 1. Passa alla cartella contenente il modello di frammento di contenuto.
 1. Seleziona il modello, seguito da **Elimina** dalla barra degli strumenti.
@@ -415,7 +415,7 @@ I modelli di frammento di contenuto devono essere pubblicati quando/prima che ve
 
 Per pubblicare un modello di frammento di contenuto:
 
-1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
+1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
 
 1. Passa alla cartella contenente il modello di frammento di contenuto.
 1. Seleziona il modello, seguito da **Pubblica** dalla barra degli strumenti.
@@ -431,7 +431,7 @@ I modelli di frammento di contenuto possono essere inediti se non sono indicati 
 
 Per annullare la pubblicazione di un modello di frammento di contenuto:
 
-1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
+1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
 
 1. Passa alla cartella contenente il modello di frammento di contenuto.
 1. Seleziona il modello, seguito da **Annulla pubblicazione** dalla barra degli strumenti.

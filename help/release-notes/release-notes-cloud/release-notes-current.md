@@ -3,10 +3,10 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cl
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8c432f8902d005918c4fd4432d23c3140967c773
+source-git-commit: 036d8b590bc9ca9dcbe4dd3e34bc14cc2d8a79e1
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 30%
+source-wordcount: '779'
+ht-degree: 16%
 
 ---
 
@@ -25,60 +25,72 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 ## Data di pubblicazione {#release-date}
 
-Data di rilascio di [!DNL Adobe Experience Manager] come [!DNL Cloud Service] la versione corrente (2022.4.0) è il 5 maggio 2022.
-La prossima versione (2022.5.0) è prevista per il 9 giugno 2022.
+Data di rilascio di [!DNL Adobe Experience Manager] come [!DNL Cloud Service] la versione corrente (2022.5.0) è il 9 giugno 2022.
+La prossima versione (2022.6.0) è prevista per il 30 giugno 2022.
 
 ## Video sulla versione {#release-video}
 
-Dai un&#39;occhiata al [Panoramica sulla versione di aprile 2022](https://video.tv.adobe.com/v/342612?quality=12) video per un riepilogo delle funzioni aggiunte nella versione 2022.4.0.
+Per un riepilogo delle funzioni aggiunte nella versione 2022.5.0, guarda il video Panoramica sulla versione di maggio 2022:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343321/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nuove funzioni in [!DNL Sites] {#sites-features}
 
-* I tipi di dati del modello di contenuto possono ora essere definiti come [traducibile](/help/assets/content-fragments/content-fragments-models.md#properties) utilizzando una semplice casella di controllo nell’editor del modello di contenuto. Inoltre, AEM regole di traduzione e configurazioni vengono aggiornate automaticamente.
+### Nuove funzioni disponibili nel canale prerelease di [!DNL Sites] {#prerelease-features-sites}
+
+* Varie funzionalità di GraphQL
+* Una nuova console ottimizzata per l’utilizzo headless dei frammenti di contenuto
 
 ## [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#assets}
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* Ora puoi [ordinare tag](/help/assets/organize-assets.md#use-tags-to-organize-assets) nella finestra del selettore tag in ordine crescente o decrescente in base al nome del tag, alla data di creazione o alla data di modifica.
+* [Imaging avanzato Dynamic Media](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) ora supporta il formato di file AVIF - migliora ulteriormente Google Core Web Vital (Largest Contentful Paint), con AVIF che fornisce una riduzione del 20% in più rispetto a WebP. In totale, AVIF fornisce una riduzione delle dimensioni media fino al 41% rispetto a JPEG (in alcune immagini anche fino al 76%).
+
+* [!UICONTROL Experience Manager Assets Brand Portal] ora esegue processi automatici ogni dodici ore per eliminare tutte le risorse Brand Portal pubblicate in AEM. Di conseguenza, non è necessario eliminare manualmente le risorse nella cartella Contribution per mantenere la dimensione della cartella al di sotto del limite di soglia. Vedi [Novità di Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+
+### Nuove funzioni disponibili nel canale prerelease di [!DNL Assets] {#prerelease-features-assets}
+
+Experience Manager Assets utilizza le funzionalità di Adobe Sensei AI per [distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’acquisizione](../../assets/color-tag-images.md). Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine. È possibile configurare il numero di colori, compresi tra uno e quaranta, che vengono assegnati a un’immagine in modo da poter cercare le immagini in base a tali colori in un secondo momento.
+
 
 ## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
 
-### Novità in [!DNL Forms] {#what-is-new-forms}
+### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms}
 
-* **Comunicazioni - Supporto delle API di manipolazione documenti nell’SDK as a Cloud Service di Forms**: [API di manipolazione documenti](/help/forms/aem-forms-cloud-service-communications.md) combinare, ridisporre e convalidare i documenti PDF. Ora puoi utilizzare le API Communications - Document Generation in un ambiente di sviluppo locale con l’aiuto dell’SDK as a Cloud Service di AEM Forms.
+* **Integrare Forms adattivo con Microsoft® Power Automate**: È ora possibile configurare un modulo adattivo per eseguire un flusso cloud Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record a Power Automate Cloud Flow per l&#39;elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche aziendali intorno ai dati acquisiti e automatizzare i flussi di lavoro dei clienti.
 
-* **Utilizzare XCI personalizzato per generare un documento Record**[: ora puoi utilizzare un file XCI personalizzato per impostare varie proprietà di un documento Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Sostituisce l’XCI principale con le modifiche personalizzate. Offre un maggiore controllo sulla generazione di documenti di record, aumentando le opportunità di personalizzazione e personalizzazione.
+* **Creazione guidata di un modulo adattivo**: Puoi utilizzare la procedura guidata di facile utilizzo per creare rapidamente Adaptive Forms. La procedura guidata fornisce una navigazione rapida a schede per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per creare un modulo adattivo.
 
-* **Utilizzare il CAPTCHA invisibile in un modulo adattivo**[: puoi usare il CAPTCHA invisibile per mostrare la richiesta CAPTCHA solo nel caso di attività sospetta](/help/forms/captcha-adaptive-forms.md). Se non viene trovata alcuna attività sospetta, la richiesta CAPTCHA non viene visualizzata. Consente di valutare il completamento dei moduli senza bisogno di caselle di controllo, ridurre le operazioni di personalizzazione e migliorare l’esperienza dell’utente finale.
-
-* **Configurazioni del modello dati del modulo**: Ora puoi [riutilizzo delle configurazioni del modello dati modulo in ambienti diversi](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config), semplificando le integrazioni di dati e riducendo i costi IT.
+   ![Creazione guidata di un modulo adattivo](/help/release-notes/assets/wizard.png)
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 
 ### Novità {#what-is-new-cif}
 
-* Accesso rapido al cockpit del prodotto: Accesso semplice e dettagliato alle informazioni di prodotto con un solo clic in Sites Editor
+* Nuova pagina delle proprietà del cockpit prodotto per una panoramica migliore e semplificata
 
-   ![Abilita elenco dei desideri](/help/assets/CIF/enable-wishlist.png)
+![panoramica delle proprietà del cockpit prodotto](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Supporto per componenti di marketing aggiuntivi: I componenti possono essere configurati per mostrare una chiamata all’azione del componente aggiuntivo al carrello e del componente aggiuntivo all’elenco dei desideri
+* Compatibilità e robustezza migliorate per i connettori di terze parti su I/O Runtime
 
-   ![Collegamento all’editor di siti per il cockpit di prodotto](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+* Supporto migliorato per le sovrascritture della configurazione client GQL (ad esempio, impostazione di un comportamento di caching personalizzato)
+
+### Correzioni di bug {#bug-fixes-cif}
+
+* Il campo del selettore prodotti con più valori mostra il secondo e prodotti aggiuntivi come non validi
+
+* Il selettore dei prodotti viene talvolta nascosto dietro i componenti
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### SDK Build Analytics {#sdk-build-analyzers}
+### Novità {#what-is-new-foundation}
 
-Il plug-in Maven di AEM SDK Build Analyzer as a Cloud Service rileva i problemi in un progetto Maven, incluse le dipendenze mancanti. Offre agli sviluppatori l’opportunità di scoprire i problemi durante lo sviluppo locale, molto prima di distribuirli in ambienti Cloud con Cloud Manager.
+* L&#39;opzione &quot;Aggiungi albero&quot; nella schermata di amministrazione dell&#39;agente di replica **Scheda Distribuisci**, precedentemente dichiarato obsoleto, verrà rimosso il 20 giugno 2022 o poco dopo. I pacchetti con una gerarchia ad albero del contenuto devono essere replicati utilizzando [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Flusso di lavoro Pubblica albero del contenuto](/help/operations/replication.md#publish-content-tree-workflow).
 
-È stato aggiunto di recente un nuovo analizzatore:
-
-* `content-packages-validation` - convalida la sintassi e la struttura dei contenuti di formato corretto per i pacchetti che verranno installati durante la distribuzione
-
-Si consiglia vivamente di aggiornare il progetto maven con l’ultima versione dell’analizzatore o di includere l’analizzatore, se non lo hai ancora fatto. Per ulteriori informazioni, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
+* L’utilizzo della schermata di amministrazione dell’agente di replica o dell’API di replica per la distribuzione di pacchetti di contenuto di dimensioni superiori a 10 MB (nodi con proprietà, esclusi i binari) è obsoleto e verrà applicato il 12 settembre 2022 o subito dopo. Invece, [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Flusso di lavoro Pubblica albero del contenuto](/help/operations/replication.md#publish-content-tree-workflow) deve essere utilizzato per replicare questi pacchetti di contenuti di grandi dimensioni. A luglio verrà visualizzato un messaggio di avviso nella schermata di amministrazione dell’agente di replica **Scheda Distribuisci** se si tenta di replicare questi pacchetti di contenuti di grandi dimensioni e anche nel registro di errore AEM ogni volta che l&#39;API di replica viene utilizzata per replicare questi pacchetti di contenuti di grandi dimensioni. A settembre, gli avvisi saranno sostituiti da errori. Adeguare i processi di conseguenza.
 
 ## [!DNL Experience Manager] come [!DNL Cloud Service] Sicurezza di base {#foundation-security}
 

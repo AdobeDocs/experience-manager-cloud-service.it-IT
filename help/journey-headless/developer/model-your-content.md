@@ -2,10 +2,10 @@
 title: Come modellare il contenuto
 description: In questa parte del Percorso di sviluppatori AEM Headless , scopri come modellare i contenuti per la distribuzione AEM Headless utilizzando la modellazione dei contenuti con modelli di frammenti di contenuto e frammenti di contenuto.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -51,7 +51,7 @@ Forse, forse no, ma è certamente un grande ***complicato*** la modellazione dei
 >
 >Poiché AEM i contenuti, ci riferiamo alla modellazione dei dati come modellazione dei contenuti.
 
-Ad esempio:
+Esempio:
 
 Ci sono molte scuole, ma tutte hanno varie cose in comune:
 
@@ -206,7 +206,7 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 
 ### Creazione di modelli di frammenti di contenuto {#creating-content-fragment-models}
 
-All’inizio è necessario abilitare i Modelli per frammenti di contenuto per il sito, questo avviene nel Browser configurazioni; in Strumenti -> Generale -> Browser di configurazione. Puoi scegliere di configurare la voce globale oppure crearne una nuova. Ad esempio:
+All’inizio è necessario abilitare i Modelli per frammenti di contenuto per il sito, questo avviene nel Browser configurazioni; in Strumenti -> Generale -> Browser di configurazione. Puoi scegliere di configurare la voce globale oppure crearne una nuova. Esempio:
 
 ![Definire la configurazione](assets/cfm-configuration.png)
 
@@ -214,7 +214,7 @@ All’inizio è necessario abilitare i Modelli per frammenti di contenuto per il
 >
 >Consulta Risorse aggiuntive - Frammenti di contenuto nel browser di configurazione
 
-È quindi possibile creare modelli di frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in Strumenti -> Risorse -> Modelli per frammenti di contenuto. Ad esempio:
+È quindi possibile creare modelli di frammenti di contenuto e definire la struttura. Questo può essere fatto in **Strumenti** -> **Generale** -> **Modelli per frammenti di contenuto**. Esempio:
 
 ![Modello per frammenti di contenuto](assets/cfm-model.png)
 

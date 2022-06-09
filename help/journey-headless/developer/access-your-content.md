@@ -2,22 +2,16 @@
 title: Come accedere ai contenuti tramite API di consegna AEM
 description: In questa parte del Percorso di sviluppatori AEM Headless, scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Come accedere ai contenuti tramite API di consegna AEM {#access-your-content}
 
 In questa parte del [AEM Percorso di sviluppo headless,](overview.md) scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto e inviarlo all’app (consegna headless).
-
->[!NOTE]
->
->Alcune delle funzionalità di questa caratteristica sono disponibili nel canale prerelease. In particolare, funzionalità relative alle query persistenti.
-> 
->Consulta la sezione [Documentazione sul canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#enable-prerelease) per informazioni su come abilitare la funzione per il tuo ambiente.
 
 ## La storia finora {#story-so-far}
 
@@ -250,10 +244,7 @@ Prima di iniziare con le query sul contenuto è necessario:
 * Abilita l&#39;endpoint
    * Usa Strumenti -> Generale -> GraphQL
    * [Abilitazione dell’endpoint GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
-
-* Installa GraphiQL (se necessario)
-   * Installato come pacchetto dedicato
-   * [Installazione dell&#39;interfaccia AEM GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
+      * In questo modo sarà possibile abilitare anche GraphiQL IDE.
 
 ### Struttura di esempio {#sample-structure}
 

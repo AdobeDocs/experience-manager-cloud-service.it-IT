@@ -2,10 +2,10 @@
 title: Scopri come creare modelli di frammenti di contenuto in AEM
 description: Scopri i concetti e la meccanica della modellazione dei contenuti per i CMS headless utilizzando Modelli per frammenti di contenuto.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Creazione di modelli di frammenti di contenuto {#creating-content-fragment-models}
 
-È quindi possibile creare modelli di frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in Strumenti -> Risorse -> Modelli per frammenti di contenuto.
+È quindi possibile creare modelli di frammenti di contenuto e definire la struttura. Questo può essere fatto in **Strumenti** -> **Generale** -> **Modelli per frammenti di contenuto**.
 
 ![Modelli per frammenti di contenuto negli strumenti](assets/cfm-tools.png)
 
@@ -63,11 +63,11 @@ Puoi trascinare le istanze della **Tipi di dati** nello spazio a sinistra - stat
 
 ![Definizione dei campi](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-Dopo aver aggiunto un tipo di dati, dovrai definire le **Proprietà** per quel campo. Dipendono dal tipo utilizzato. Ad esempio:
+Dopo aver aggiunto un tipo di dati, dovrai definire le **Proprietà** per quel campo. Dipendono dal tipo utilizzato. Esempio:
 
 ![Proprietà dati](/help/assets/content-fragments/assets/cfm-models-05.png)
 
-È possibile aggiungere tutti i campi necessari. Ad esempio:
+È possibile aggiungere tutti i campi necessari. Esempio:
 
 ![Modello per frammenti di contenuto](/help/assets/content-fragments/assets/cfm-models-07.png)
 
@@ -110,7 +110,7 @@ Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’in
 
 * [Concetti relativi all’authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - questa pagina si basa principalmente sul **Sites** console, ma molte delle funzioni sono utili anche per navigare verso e intervenire su di esse, **Modelli per frammenti di contenuto** in **Risorse** console.
+* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - questa pagina si basa principalmente sul **Sites** console, ma molte delle funzioni sono utili anche per navigare verso e intervenire su di esse, **Modelli per frammenti di contenuto** in **Generale** console.
 
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 
