@@ -3,9 +3,9 @@ title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
+source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
 workflow-type: tm+mt
-source-wordcount: '3364'
+source-wordcount: '3360'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ Durante l&#39;avvio di una nuova versione dell&#39;applicazione, ma prima del pa
 
 Dopo il passaggio alla nuova versione dell&#39;applicazione:
 
-* Tutti gli altri contenuti definibili tramite vault jackrabbit. Ad esempio:
+* Tutti gli altri contenuti definibili tramite vault jackrabbit. Esempio:
    * Cartelle (aggiungere, modificare, rimuovere)
    * Modelli modificabili (aggiungere, modificare, rimuovere)
    * Configurazione in base al contesto (qualsiasi cosa in `/conf`) (aggiungere, modificare, rimuovere)
@@ -191,7 +191,7 @@ Tutti i pacchetti di contenuto installati tramite Cloud Manager (mutabili e immu
 
 È comune per i clienti includere pacchetti precompilati da fonti di terze parti, come fornitori di software come i partner di traduzione di Adobe. Si consiglia di ospitare questi pacchetti in un archivio remoto e farvi riferimento in `pom.xml`. Questo è possibile per gli archivi pubblici e anche per gli archivi privati con protezione tramite password, come descritto in [archivi Maven protetti da password](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-Se non è possibile memorizzare il pacchetto in un archivio remoto, i clienti possono inserirlo in un archivio Maven locale basato su file system, che è impegnato in SCM come parte del progetto e a cui fa riferimento qualsiasi cosa dipenda da esso. L&#39;archivio sarà dichiarato nei programmi di progetto illustrati di seguito:
+Se non è possibile memorizzare il pacchetto in un archivio remoto, i clienti possono inserirlo in un archivio Maven locale basato su file system, che è impegnato in SCM come parte del progetto e a cui fa riferimento qualsiasi cosa dipenda da esso. L’archivio viene dichiarato nell’area di lavoro del progetto come illustrato di seguito:
 
 
 ```
@@ -309,13 +309,17 @@ Le configurazioni supportate per la modalità di esecuzione sono:
 * **config.publish.dev** (*Si applica al servizio Pubblicazione sviluppo AEM*)
 * **config.publish.stage** (*Si applica a AEM servizio di pubblicazione temporanea*)
 * **config.publish.prod** (*Si applica a AEM servizio di pubblicazione di produzione*)
-* **config.dev** (*Si applica ai servizi di sviluppo AEM)
-* **config.stage** (*Si applica ai servizi di staging AEM)
-* **config.prod** (*Si applica ai servizi di produzione AEM)
+* **config.dev** (*Si applica ai servizi di sviluppo AEM*)
+* **config.stage** (*Si applica ai servizi di staging AEM*)
+* **config.prod** (*Si applica ai servizi di produzione AEM*)
 
 Viene utilizzata la configurazione OSGI con le modalità di esecuzione più corrispondenti.
 
-Quando si sviluppa localmente, è possibile trasmettere un parametro di avvio in modalità runmode per determinare quale configurazione OSGI in modalità runmode verrà utilizzata.
+Quando si sviluppa localmente, un parametro di avvio in modalità runmode, `-r`, viene utilizzato per specificare la configurazione OSGI in modalità runmode.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
