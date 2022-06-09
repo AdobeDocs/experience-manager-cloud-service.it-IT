@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cl
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 036d8b590bc9ca9dcbe4dd3e34bc14cc2d8a79e1
+source-git-commit: a2cdc7c4e9d3dfd52ca76afcf951fa67b279918a
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '776'
 ht-degree: 16%
 
 ---
@@ -35,8 +35,6 @@ Per un riepilogo delle funzioni aggiunte nella versione 2022.5.0, guarda il vide
 >[!VIDEO](https://video.tv.adobe.com/v/343321/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Nuove funzioni in [!DNL Sites] {#sites-features}
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Sites] {#prerelease-features-sites}
 
