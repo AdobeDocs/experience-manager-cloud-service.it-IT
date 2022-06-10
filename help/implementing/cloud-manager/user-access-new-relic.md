@@ -2,9 +2,9 @@
 title: New Relic One
 description: Scopri il nuovo servizio di monitoraggio delle prestazioni delle applicazioni Relic One (APM) per AEM as a Cloud Service e come accedervi.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
+source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1612'
 ht-degree: 1%
 
 ---
@@ -46,13 +46,11 @@ Segui questi passaggi per definire gli utenti del tuo nuovo account secondario R
 
 1. Fare clic sul programma per il quale si desidera gestire i nuovi utenti Relic One.
 
-1. Passa alla **Ambienti** dal **Panoramica del programma** facendo clic su **Ambienti** nella parte superiore dello schermo.
-
-1. Sulla **Ambienti** fai clic sul pulsante con i puntini di sospensione nella parte superiore dello schermo accanto al **Aggiungi ambiente** pulsante .
-
-1. Nel menu dei puntini di sospensione, fai clic su **Gestire gli utenti**.
+1. Nella parte inferiore del **Ambienti** nella pagina di panoramica del programma fare clic sul pulsante con i puntini di sospensione e selezionare **Gestire gli utenti**.
 
    ![Gestire gli utenti](assets/newrelic-manage-users.png)
+
+   * Puoi anche accedere al **Gestire gli utenti** tramite il pulsante di sospensione nella parte superiore della **Ambienti** schermo del programma.
 
 1. In **Gestisci nuovi utenti relé** immettere il nome e il cognome dell’utente che si desidera aggiungere e fare clic sul pulsante **Aggiungi** pulsante . Ripeti questo passaggio per tutti gli utenti che desideri aggiungere.
 
@@ -98,11 +96,11 @@ Per accedere a New Relic One tramite Cloud Manager:
 
 1. Fare clic sul programma per il quale si desidera accedere a Nuovo Relic One.
 
-1. Passa alla **Ambienti** dal **Panoramica del programma** facendo clic su **Ambienti** nella parte superiore dello schermo.
+1. Nella parte inferiore del **Ambienti** nella pagina di panoramica del programma fare clic sul pulsante con i puntini di sospensione e selezionare **Apri nuova relè**.
 
-1. Sulla **Ambienti** fai clic sul pulsante con i puntini di sospensione nella parte superiore dello schermo accanto al **Aggiungi ambiente** pulsante .
+   ![Gestire gli utenti](assets/newrelic-access.png)
 
-1. Nel menu dei puntini di sospensione, fai clic su **Apri nuova relè**.
+   * È inoltre possibile accedere a Nuova Relica tramite il pulsante con i puntini di sospensione nella parte superiore della **Ambienti** schermo del programma.
 
 1. Nella nuova scheda del browser che si apre, accedi a Nuovo Relic One.
 
