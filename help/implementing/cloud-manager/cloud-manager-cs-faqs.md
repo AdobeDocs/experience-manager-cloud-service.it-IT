@@ -2,9 +2,9 @@
 title: Domande frequenti su Cloud Manager
 description: Trova le risposte alle domande più frequenti su Cloud Manager in AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
+source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ Si tratta di un problema noto a causa del quale Cloud Manager utilizza una versi
 
 ## Il controllo della qualità del codice non è riuscito e la distribuzione è bloccata. C&#39;è un modo per aggirare questo assegno? {#deployment-stuck}
 
-Sì. Tutti gli errori di controllo della qualità del codice, ad eccezione della valutazione della sicurezza, sono metriche non critiche, quindi possono essere ignorati espandendo gli elementi nell&#39;interfaccia utente dei risultati.
+Sì. Tutti gli errori di controllo della qualità del codice, ad eccezione della valutazione della sicurezza, sono metriche non critiche, pertanto possono essere ignorati come parte di una pipeline di distribuzione espandendo gli elementi nell’interfaccia utente dei risultati.
 
-Vedere il documento [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md) per ulteriori dettagli.
+Vedere i documenti [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md) e [Configurazione di pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) per ulteriori dettagli.
 
 ## Posso usare SNAPSHOT per la versione del progetto Maven? {#use-snapshot}
 
