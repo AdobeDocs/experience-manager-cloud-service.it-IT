@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cl
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a2cdc7c4e9d3dfd52ca76afcf951fa67b279918a
+source-git-commit: e5b0bee3e2e4a10b3015f115d5193c43a1e15c1b
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '821'
 ht-degree: 16%
 
 ---
@@ -39,7 +39,7 @@ Per un riepilogo delle funzioni aggiunte nella versione 2022.5.0, guarda il vide
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Sites] {#prerelease-features-sites}
 
 * Varie funzionalità di GraphQL
-* Una nuova console ottimizzata per l’utilizzo headless dei frammenti di contenuto
+* A [nuova console](/help/headless/content-fragments/content-fragment-console.md) Ottimizzato per l’utilizzo headless di frammenti di contenuto
 
 ## [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#assets}
 
@@ -89,6 +89,10 @@ Experience Manager Assets utilizza le funzionalità di Adobe Sensei AI per [dist
 * L&#39;opzione &quot;Aggiungi albero&quot; nella schermata di amministrazione dell&#39;agente di replica **Scheda Distribuisci**, precedentemente dichiarato obsoleto, verrà rimosso il 20 giugno 2022 o poco dopo. I pacchetti con una gerarchia ad albero del contenuto devono essere replicati utilizzando [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Flusso di lavoro Pubblica albero del contenuto](/help/operations/replication.md#publish-content-tree-workflow).
 
 * L’utilizzo della schermata di amministrazione dell’agente di replica o dell’API di replica per la distribuzione di pacchetti di contenuto di dimensioni superiori a 10 MB (nodi con proprietà, esclusi i binari) è obsoleto e verrà applicato il 12 settembre 2022 o subito dopo. Invece, [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Flusso di lavoro Pubblica albero del contenuto](/help/operations/replication.md#publish-content-tree-workflow) deve essere utilizzato per replicare questi pacchetti di contenuti di grandi dimensioni. A luglio verrà visualizzato un messaggio di avviso nella schermata di amministrazione dell’agente di replica **Scheda Distribuisci** se si tenta di replicare questi pacchetti di contenuti di grandi dimensioni e anche nel registro di errore AEM ogni volta che l&#39;API di replica viene utilizzata per replicare questi pacchetti di contenuti di grandi dimensioni. A settembre, gli avvisi saranno sostituiti da errori. Adeguare i processi di conseguenza.
+
+### Nuove funzioni disponibili nel canale prerelease di [!DNL Experience Manager] {#prerelease-features-foundation}
+
+* AEM as a Cloud Service è ora integrato con Unified Shell per migliorare l’esperienza utente e unificarla a tutte le altre applicazioni di Experience Cloud. Fai riferimento a [AEM as a Cloud Service sulla shell unificata](/help/overview/aem-cloud-service-on-unified-shell.md) per ulteriori dettagli.
 
 ## [!DNL Experience Manager] come [!DNL Cloud Service] Sicurezza di base {#foundation-security}
 
