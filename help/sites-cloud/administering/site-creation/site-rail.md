@@ -4,7 +4,7 @@ description: Scopri le potenti funzioni della barra del sito per personalizzare 
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -30,7 +30,7 @@ La barra Sito consente di gestire le informazioni relative a temi e modelli per 
 >
 >Consulta la sezione [Percorso di creazione di siti rapidi](/help/journey-sites/quick-site/overview.md) per acquisire familiarità con lo strumento Creazione rapida sito e la pipeline front-end per personalizzare facilmente il tema del sito.
 
-##  Download di origini tema {#downloading-theme-sources}
+## Download di origini tema {#downloading-theme-sources}
 
 Quando crei un sito in AEM basato su un [modello di sito,](site-templates.md) è possibile scaricare [tema del sito](site-themes.md) mediante la barra Sito.
 
@@ -40,7 +40,7 @@ Con la barra Sito visualizzata nella console Sites, seleziona la directory princ
 
 Tocca o fai clic su **Scaricare le origini dei temi** per scaricare una copia locale del tema del sito come `.zip` file a scopo di personalizzazione.
 
-##  Download delle risorse dei modelli {#downloading-template-resources}
+## Download delle risorse dei modelli {#downloading-template-resources}
 
 [Modelli di sito](site-templates.md) può contenere informazioni oltre alla struttura del contenuto del sito e [tema del sito.](site-themes.md) Ad esempio, i modelli di sito possono contenere progetti wireframe o altri file relativi al sito.
 
