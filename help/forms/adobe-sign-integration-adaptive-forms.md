@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 00dced631aa293630f923ee1e94f321bbf4cddb9
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Dopo aver impostato i prerequisiti, esegui i seguenti passaggi per configurare [
    >
    >Quando crei un modulo adattivo, specifica il nome del contenitore nel **[!UICONTROL Contenitore di configurazione]** campo .
 
-1. Nella pagina di configurazione, tocca **[!UICONTROL Crea]** per creare [!DNL Adobe Sign]configurazione in AEM Forms.
+1. Nella pagina di configurazione, tocca **[!UICONTROL Crea]** per creare [!DNL Adobe Sign] configurazione in AEM Forms.
 1. In **[!UICONTROL Generale]** della scheda **[!UICONTROL Creare la configurazione di Adobe Sign]** pagina, specifica un **[!UICONTROL Nome]** per la configurazione e tocca **[!UICONTROL Successivo]**. Facoltativamente, puoi specificare un **[!UICONTROL Titolo]** e seleziona un **[!UICONTROL Miniatura]** per la configurazione.
 
 1. Copia l&#39;URL nella finestra del browser corrente su un blocco note. L’URL deve essere configurato [!DNL Adobe Sign] applicazione con [!DNL AEM Forms] in un passaggio successivo.
@@ -69,7 +69,7 @@ Dopo aver impostato i prerequisiti, esegui i seguenti passaggi per configurare [
 
    `https://<shard>/public/oAuth/v2`
 
-   Ad esempio:
+   Esempio:
    `https://secure.na1.echosign.com/public/oauth/v2`
 
    Dove:
