@@ -1,13 +1,13 @@
 ---
 title: Tag del colore per le immagini
 description: Experience Manager Assets consente di distinguere i colori in un’immagine e di applicarli automaticamente come tag. Puoi quindi utilizzare questi tag per cercare e filtrare le immagini.
-source-git-commit: 74c13efe99b50ba08d9dc38c246de71482a536a0
+exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
+source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1225'
+ht-degree: 3%
 
 ---
-
 
 # Tag del colore per le immagini {#color-tag-images}
 
@@ -106,6 +106,24 @@ Per aggiungere il componente Tag avanzati all’Editor modulo schema metadati:
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
 
+## Tag di colore per le immagini esistenti in DAM {#color-tags-existing-images}
+
+Le immagini già esistenti in DAM non vengono taggate automaticamente in base al colore. Devi [!UICONTROL Rielaborazione delle risorse] per generare manualmente i tag colore.
+
+Per colorare le immagini o le cartelle (comprese le sottocartelle) di risorse già esistenti nell’archivio delle risorse, effettua le seguenti operazioni:
+
+1. Seleziona la [!DNL Adobe Experience Manager] , quindi seleziona le risorse dal [!UICONTROL Navigazione] pagina.
+
+1. Seleziona [!UICONTROL File] per visualizzare l’interfaccia Assets.
+
+1. Passa alla cartella alla quale desideri applicare i tag colore.
+
+1. Seleziona l’intera cartella o le immagini specifiche.
+
+1. Seleziona ![Icona Rielabora risorse](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Rielaborazione delle risorse] e seleziona la [!UICONTROL Processo completo] opzione .
+
+Al termine del processo, passa alla [!UICONTROL Proprietà] di qualsiasi immagine all’interno della cartella. I tag aggiunti automaticamente vengono visualizzati in [!UICONTROL Tag a colori avanzati] sezione [!UICONTROL Base] scheda .
+
 
 ## Visualizzare tag di colore avanzati per le immagini {#view-color-tags}
 
@@ -167,7 +185,3 @@ Per cercare le immagini in base ai colori:
    È possibile filtrare le immagini in base alla selezione di un colore. Le immagini che hanno il colore selezionato come tag per i colori avanzati e al di sopra del [Soglia copertura/dominio %](#manage-color-tagging-settings) nel riquadro a destra.
 
 1. Fai clic su x nella barra di ricerca per cancellare il filtro.
-
-
-
-
