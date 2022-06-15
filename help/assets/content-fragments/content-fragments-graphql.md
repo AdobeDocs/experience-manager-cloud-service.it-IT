@@ -1,114 +1,119 @@
 ---
-title: Headless Content Delivery using Content Fragments with GraphQL
-description: Learn the basic concepts of realizing an AEM Headless CMS using Content Fragments with GraphQL for headless content delivery.
+title: Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL
+description: Scopri i concetti di base per la realizzazione di un CMS headless AEM con frammenti di contenuto con GraphQL per la distribuzione di contenuti headless.
 feature: Content Fragments, GraphQL API
 topic: Headless
 role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: f296e8cbc12c9426e0fefe6f5342374ba9b21291
+source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '751'
 ht-degree: 17%
 
 ---
 
-# Headless Content Delivery using Content Fragments with GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
+# Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-With Content Fragments and the GraphQL API you can use Adobe Experience Manager (AEM) as a Cloud Service as a Headless Content Management System (CMS).
+Con i frammenti di contenuto e l’API GraphQL puoi utilizzare Adobe Experience Manager (AEM) as a Cloud Service come sistema di gestione dei contenuti headless (CMS).
 
-This is achieved using Content Fragments, together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to headlessly deliver structured content for use in your applications. The ability to customize a single API query allows you to retrieve and deliver the specific content that you want/need to render (as the response to the single API query).
+Questo risultato si ottiene utilizzando Frammenti di contenuto, insieme all’API GraphQL AEM (un’implementazione personalizzata, basata sullo standard GraphQL), per fornire contenuti strutturati headless da utilizzare nelle applicazioni. La possibilità di personalizzare un’unica query API ti consente di recuperare e fornire il contenuto specifico di cui desideri eseguire il rendering (come risposta alla singola query API).
 
 >[!NOTE]
 >
->[](/help/headless/introduction.md)
+>Consulta anche:
+>
+>* [Cos&#39;è Headless?](/help/headless/what-is-headless.md) introduzione ai concetti e alla terminologia headless.
+>
+>* [Senza testa e AEM](/help/headless/introduction.md) per un’introduzione a Headless Development per AEM Sites as a Cloud Service.
+
 
 >[!NOTE]
 >
 >GraphQL è attualmente utilizzato in due scenari (separati) in Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [](/help/commerce-cloud/integrating/magento.md)
+>* [AEM Commerce consuma dati da una piattaforma commerce tramite GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* [I Frammenti di contenuto AEM collaborano con l’API GraphQL di AEM (un’implementazione personalizzata, basata su GraphQL standard) per fornire contenuti strutturati da utilizzare nelle applicazioni](/help/headless/graphql-api/content-fragments.md).
 
 
-## Headless CMS {#headless-cms}
+## CMS headless {#headless-cms}
 
-A Headless Content Management System (CMS) is:
+Un sistema di gestione dei contenuti headless (CMS) è:
 
-* **
+* &quot;*Un sistema di gestione dei contenuti headless, o CMS headless, è un sistema di gestione dei contenuti (CMS) di back-end basato su un archivio di contenuti che rende i contenuti accessibili tramite un’API per la visualizzazione su qualsiasi dispositivo.*
 
-   [](https://en.wikipedia.org/wiki/Headless_content_management_system)
+   Vedi [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 
-In terms of authoring Content Fragments in AEM this means that:
+In termini di authoring di frammenti di contenuto in AEM ciò significa che:
 
-* You can use Content Fragments to author content that is not primarily intended to be directly published (1:1) on formatted pages.
+* È possibile utilizzare Frammenti di contenuto per creare contenuti che non sono destinati principalmente alla pubblicazione diretta (1:1) su pagine formattate.
 
-* The content of your Content Fragments will be structured in a predetermined manner - according to the Content Fragment Models. This simplifies access for your applications, which will further process your content.
+* Il contenuto dei frammenti di contenuto sarà strutturato in modo predeterminato in base ai modelli di frammento di contenuto . Questo semplifica l&#39;accesso alle applicazioni, che elaboreranno ulteriormente i contenuti.
 
-## GraphQL - An Overview {#graphql-overview}
+## GraphQL - Panoramica {#graphql-overview}
 
 GraphQL è:
 
-* **
+* &quot;*...un linguaggio di query per le API e un runtime per l’esecuzione di tali query con i dati esistenti.*&quot;.
 
    Vedi [GraphQL.org](https://graphql.org)
 
-[](#aem-graphql-api)[](/help/assets/content-fragments/content-fragments.md) The content returned can then be used by your applications.
+La [AEM API GraphQL](#aem-graphql-api) consente di eseguire query (complesse) sul [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md); con ogni query in base a un tipo di modello specifico. Il contenuto restituito può quindi essere utilizzato dalle applicazioni.
 
-## AEM GraphQL API {#aem-graphql-api}
+## AEM API GraphQL {#aem-graphql-api}
 
-For Adobe Experience as a Cloud Experience, a customized implementation of the standard GraphQL API has been developed. [](/help/headless/graphql-api/content-fragments.md)
+Per Adobe Experience as a Cloud Experience è stata sviluppata un’implementazione personalizzata dell’API GraphQL standard. Vedi [AEM API GraphQL per l’utilizzo con frammenti di contenuto](/help/headless/graphql-api/content-fragments.md) per i dettagli.
 
-[](https://graphql.org/code/#java)
+L’implementazione AEM dell’API GraphQL si basa sul [Librerie Java GraphQL](https://graphql.org/code/#java).
 
-## Content Fragments for use with the AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
+## Frammenti di contenuto da utilizzare con l’API GraphQL AEM {#content-fragments-use-with-aem-graphql-api}
 
-[](#content-fragments)
+[Frammenti di contenuto](#content-fragments) può essere utilizzato come base per GraphQL per query AEM come:
 
-* They enable you to design, create, curate and publish page-independent content.
-* [](#content-fragments-models)
-* [](#fragment-references)
+* Consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalla pagina.
+* La [Modelli per frammenti di contenuto](#content-fragments-models) fornire la struttura richiesta per mezzo di tipi di dati definiti.
+* La [Riferimento frammento](#fragment-references), disponibile quando si definisce un modello, può essere utilizzato per definire livelli di struttura aggiuntivi.
 
-![](assets/cfm-nested-01.png "")
+![Frammenti di contenuto da utilizzare con GraphQL](assets/cfm-nested-01.png "Frammenti di contenuto da utilizzare con GraphQL")
 
 ### Frammenti di contenuto {#content-fragments}
 
 Frammenti di contenuto:
 
-* Contain structured content.
+* Contenere contenuti strutturati.
 
-* [](#content-fragments-models)
+* Sono basati su un [Modello per frammento di contenuto](#content-fragments-models), che predefinisce la struttura del frammento risultante.
 
 ### Modelli per frammenti di contenuto {#content-fragments-models}
 
-[](/help/assets/content-fragments/content-fragments-models.md)
+Tali [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md):
 
-* [](https://graphql.org/learn/schema/)****
+* Sono utilizzati per generare il [Schemi](https://graphql.org/learn/schema/)una volta **Abilitato**.
 
-* Provide the data types and fields required for GraphQL. They ensure that your application only requests what is possible, and receives what is expected.
+* Fornisci i tipi di dati e i campi richiesti per GraphQL. Assicurano che la tua applicazione richieda solo ciò che è possibile e riceva ciò che è previsto.
 
-* **[](#fragment-references)**
+* Tipo di dati **[Riferimenti ai frammenti](#fragment-references)** può essere utilizzato nel modello per fare riferimento a un altro frammento di contenuto e quindi introdurre ulteriori livelli di struttura.
 
-### Fragment References {#fragment-references}
+### Riferimenti ai frammenti {#fragment-references}
 
-**[](/help/assets/content-fragments/content-fragments-models.md#fragment-reference-nested-fragments)**
+La **[Riferimento frammento](/help/assets/content-fragments/content-fragments-models.md#fragment-reference-nested-fragments)**:
 
-* Is of particular interest in conjunction with GraphQL.
+* È di particolare interesse in combinazione con GraphQL.
 
-* Is a specific data type that can be used when defining a Content Fragment Model.
+* È un tipo di dati specifico che può essere utilizzato durante la definizione di un modello di frammento di contenuto.
 
-* References another fragment, dependent on a specific Content Fragment Model.
+* Fa riferimento a un altro frammento, a seconda di un modello di frammento di contenuto specifico.
 
-* Allows you to retrieve structured data.
+* Consente di recuperare dati strutturati.
 
-   * ****
+   * Quando è definito come **multifeed**, è possibile fare riferimento a più frammenti secondari (recuperati) dal frammento principale.
 
 ### Anteprima JSON {#json-preview}
 
-[](/help/assets/content-fragments/content-fragments-json-preview.md)
+Per semplificare la progettazione e lo sviluppo dei modelli di frammenti di contenuto, puoi visualizzare un’anteprima [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 ## Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query {#learn-graphql-with-aem-sample-content-queries}
 
-[](/help/headless/graphql-api/sample-queries.md)
+Vedi [Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query](/help/headless/graphql-api/sample-queries.md) per un’introduzione all’utilizzo dell’API GraphQL di AEM.
 
 ## Tutorial: guida introduttiva ad AEM headless e GraphQL
 
