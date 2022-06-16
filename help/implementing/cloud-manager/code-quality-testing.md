@@ -2,9 +2,9 @@
 title: Test della qualità del codice
 description: Scopri come funziona il test della qualità del codice delle pipeline e come può migliorare la qualità delle distribuzioni.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
+source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1177'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,12 @@ I problemi identificati dai test di qualità del codice sono assegnati a una del
 * **Importante** - Si tratta di problemi che fanno sì che la pipeline entri in uno stato di pausa. Un manager distribuzione, un project manager o un proprietario business possono ignorare i problemi, nel qual caso la pipeline procede, oppure possono accettare i problemi, nel qual caso la pipeline si interrompe con un errore.
 
 * **Info** - Si tratta di questioni che vengono fornite a scopo puramente informativo e che non hanno alcun impatto sull’esecuzione della conduttura
+
+>[!NOTE]
+>
+>In una pipeline di sola qualità del codice, non è possibile ignorare importanti errori nel gate Code Quality perché il passaggio di test della qualità del codice è l’ultimo passaggio della pipeline.
+
+### Valutazioni {#ratings}
 
 I risultati di questo passaggio vengono consegnati come **Valutazioni**.
 
