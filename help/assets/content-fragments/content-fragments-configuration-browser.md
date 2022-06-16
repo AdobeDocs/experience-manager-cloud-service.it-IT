@@ -4,10 +4,10 @@ description: Scopri come abilitare alcune funzionalità dei frammenti di contenu
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 21%
+source-wordcount: '339'
+ht-degree: 18%
 
 ---
 
@@ -43,9 +43,20 @@ A [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-conte
 >
 >Per maggiori dettagli vedi anche [Browser di configurazione:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
->[!CAUTION]
+>[!NOTE]
 >
->Le sottoconfigurazioni (una configurazione nidificata all’interno di una configurazione) sono supportate per l’utilizzo con Frammenti di contenuto, ma non possono essere utilizzate per le query GraphQL.
+>[Sottoconfigurazioni](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (una configurazione nidificata all’interno di un’altra configurazione) è completamente supportata per l’utilizzo con Frammenti di contenuto, Modelli di frammenti di contenuto e query GraphQL.
+>
+>Solo per notare che:
+>
+>
+>* Dopo aver creato i modelli in una configurazione secondaria, NON è possibile spostare o copiare il modello in un&#39;altra configurazione secondaria.
+>
+>* Un endpoint GraphQL sarà (ancora) basato su una configurazione padre (root).
+>
+>* Le query persistenti verranno (comunque) salvate in base alla configurazione padre (root).
+
+
 
 1. Accedi a **Strumenti**, **Generali**, quindi apri **Browser configurazioni**.
 

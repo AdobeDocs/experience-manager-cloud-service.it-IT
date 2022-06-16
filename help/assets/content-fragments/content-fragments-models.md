@@ -4,9 +4,9 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2894'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,7 @@ Per utilizzare i modelli di frammento di contenuto:
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
 1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
-1. Passa alla cartella appropriata [configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. Passa alla cartella appropriata [configurazione o configurazione secondaria](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Utilizzo **Crea** per aprire la procedura guidata.
 
    >[!CAUTION]
