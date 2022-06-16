@@ -2,9 +2,9 @@
 title: Fase di implementazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di implementazione in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
+source-git-commit: 24331b974ded34ef949cc3d6fb157b124c145dee
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '792'
 ht-degree: 4%
 
 ---
@@ -123,6 +123,6 @@ Per stimare le dimensioni dell&#39;archivio AEM, è possibile eseguire il rappor
 
 Puoi anche stimare la dimensione di percorsi di archivio specifici utilizzando la `path` ad esempio, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
 
-## Novità {#whats-next}
+## Prossimi passaggi {#whats-next}
 
 Dopo aver appreso come accedere a Cloud Acceleration Manager e come utilizzare la fase di implementazione, ora puoi passare alla revisione del passaggio successivo in [Vai alla fase live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en).

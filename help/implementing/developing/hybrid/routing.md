@@ -2,7 +2,7 @@
 title: Indirizzamento modello SPA
 description: Per le applicazioni a pagina singola in AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di routing, il contratto e le opzioni disponibili.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 823b6412c9e75fe523e93c4f234ddd9d0ae93f5a
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
@@ -44,7 +44,7 @@ La `ModelRouter` supporta il concetto di indirizzamento del modello in attesa di
 Per impostazione predefinita, questo comportamento è abilitato automaticamente. Per disattivarlo, il SPA deve eseguire il rendering della seguente proprietà meta:
 
 ```
-<meta property="cq:pagemodel_router" content="disable"\>
+<meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
 Tieni presente che ogni percorso del SPA deve corrispondere a una risorsa accessibile in AEM (ad esempio, &quot; `/content/mysite/mypage"`) dal `PageModelManager` cercherà automaticamente di caricare il modello di pagina corrispondente una volta selezionato il percorso. Anche se, se necessario, il SPA può anche definire un &quot;elenco Bloccati&quot; di rotte che devono essere ignorate dal `PageModelManager`:

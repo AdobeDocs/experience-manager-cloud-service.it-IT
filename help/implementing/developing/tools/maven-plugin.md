@@ -2,9 +2,9 @@
 title: Plug-in Maven del pacchetto di contenuti di Adobe
 description: Utilizza il plug-in Maven del pacchetto di contenuti per distribuire le applicazioni AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
+source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1851'
 ht-degree: 5%
 
 ---
@@ -25,7 +25,10 @@ In questo documento viene descritto come utilizzare Maven per gestire queste att
 
 >[!NOTE]
 >
->La creazione del pacchetto è ora di proprietà della [Plug-in Maven pacchetto Apache Jackrabbit FileVault](https://jackrabbit.apache.org/filevault-package-maven-plugin/). La distribuzione dei pacchetti costruiti da AEM viene eseguita dal plug-in Maven Adobe Content Package come descritto qui.
+>Pacchetto **creazione** è ora di proprietà di [Plug-in Maven pacchetto Apache Jackrabbit FileVault.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>* La `content-package-maven-plugin` non supporta più il packaging dalla versione 1.0.2.
+>* Questo articolo descrive **distribuzione** dei pacchetti costruiti da AEM viene eseguito dal plugin Adobe Content Package Maven.
+
 
 ## Pacchetti e struttura del progetto AEM {#aem-project-structure}
 
@@ -47,7 +50,7 @@ Per utilizzare il plug-in Maven del pacchetto di contenuti, aggiungi il seguente
 <plugin>
  <groupId>com.day.jcr.vault</groupId>
  <artifactId>content-package-maven-plugin</artifactId>
- <version>0.0.24</version>
+ <version>1.0.4</version>
  <configuration>
        <!-- parameters and values common to all goals, as required -->
  </configuration>
@@ -214,7 +217,7 @@ La `mode` l’elemento definisce in che modo il contenuto è interessato dall’
 
 Quando il filtro non contiene `mode` elemento, il valore predefinito di `replace` viene utilizzato.
 
-### aiuto {#help}
+### Aiuto di  {#help}
 
 #### Parametri {#parameters-6}
 
