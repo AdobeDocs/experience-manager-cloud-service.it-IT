@@ -3,10 +3,10 @@ title: Configura Cloud Service Dynamic Media
 description: Scopri come configurare Dynamic Media in Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
+source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
 workflow-type: tm+mt
-source-wordcount: '3449'
-ht-degree: 4%
+source-wordcount: '3537'
+ht-degree: 3%
 
 ---
 
@@ -270,7 +270,8 @@ Vedi [Caricare le risorse](/help/assets/add-assets.md).
 
 **Per modificare i tipi MIME per i formati supportati:**
 
-1. In Experience Manager as a Cloud Service, seleziona il logo Experience Manager as a Cloud Service per accedere alla console di navigazione globale, quindi vai a **[!UICONTROL Generale > CRXDE Lite]**.
+1. Accedi al tuo Experience Manager as a Cloud Service come amministratore del prodotto.
+1. In Experience Manager as a Cloud Service , seleziona il logo Experience Manager as a Cloud Service per accedere alla console di navigazione globale, quindi vai a **[!UICONTROL Generale > CRXDE Lite]**.
 1. Nella barra a sinistra, passa a quanto segue:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -296,6 +297,7 @@ In Experience Manager Assets puoi aggiungere tipi MIME personalizzati per i form
 
 **Per aggiungere tipi MIME per i formati non supportati:**
 
+1. Accedi al tuo Experience Manager as a Cloud Service come amministratore del prodotto.
 1. Dall’Experience Manager as a Cloud Service, vai a **[!UICONTROL Strumenti > Operazioni > Console web]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -377,6 +379,10 @@ Vedi anche [Aggiunta di tipi MIME per i formati non supportati](#adding-mime-typ
 
 La coda del flusso di lavoro Granite viene utilizzata per i flussi di lavoro non transitori. In Dynamic Media, elaborava i video con il **[!UICONTROL Codifica video Dynamic Media]** workflow.
 
+>[!NOTE]
+>
+>Per completare questa attività, devi accedere ad Experience Manager as a Cloud Service come amministratore del prodotto.
+
 **Per aggiornare i thread di lavoro predefiniti della coda di lavoro Granite (risorse video):**
 
 1. Passa a `https://<server>/system/console/configMgr` e cerca **Coda: Coda flusso di lavoro Granite**.
@@ -398,6 +404,10 @@ La coda del flusso di lavoro Granite viene utilizzata per i flussi di lavoro non
 #### Aggiorna i thread di lavoro predefiniti della coda di lavoro transitoria di Granite {#update-granite-transient-workflow-queue-worker-threads-images}
 
 La coda del flusso di lavoro di transito Granite viene utilizzata per **[!UICONTROL Risorsa di aggiornamento DAM]** workflow. In Dynamic Media viene utilizzato per l’acquisizione e l’elaborazione di immagini e risorse non video.
+
+>[!NOTE]
+>
+>Per completare questa attività, devi accedere ad Experience Manager as a Cloud Service come amministratore del prodotto.
 
 **Per aggiornare i thread di lavoro della coda del flusso di lavoro transitorio di Granite:**
 
@@ -422,7 +432,11 @@ La coda del flusso di lavoro di transito Granite viene utilizzata per **[!UICONT
 
 #### Aggiorna le connessioni di caricamento massime sul server Dynamic Media Classic (Scene7) {#update-max-s7-upload-connections}
 
-L’impostazione Carica connessione Dynamic Media Classic (Scene7) sincronizza le risorse di Experience Manager con i server Dynamic Media Classic.
+L’impostazione Dynamic Media Classic (Scene7) Upload Connection sincronizza le risorse di Experience Manager sui server Dynamic Media Classic.
+
+>[!NOTE]
+>
+>Per completare questa attività, devi accedere ad Experience Manager as a Cloud Service come amministratore del prodotto.
 
 **Per aggiornare il numero massimo di connessioni di caricamento al server Dynamic Media Classic (Scene7):**
 
