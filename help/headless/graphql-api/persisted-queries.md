@@ -3,10 +3,10 @@ title: Query GraphQL persistenti
 description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 368c2d537d740b2126aa7cce657ca54f7ad6b329
+source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 94%
+source-wordcount: '1109'
+ht-degree: 47%
 
 ---
 
@@ -55,17 +55,17 @@ Si consiglia di creare le query persistenti in un ambiente di authoring AEM per 
 
 Esistono diversi metodi per le query persistenti, tra cui:
 
-* IDE GraphiQL: vedi [Salvataggio delle query persistenti](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* IDE GraphiQL - vedi [Salvataggio delle query persistenti](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (metodo preferito)
 * curl: vedi l’esempio seguente
 * Altri strumenti, tra cui [Postman](https://www.postman.com/)
 
-Di seguito sono riportati i passaggi per rendere persistente una determinata query utilizzando lo strumento per riga di comando **cURL**:
+L&#39;IDE GraphiQL è il **preferito** metodo per query persistenti. Per persistere una determinata query utilizzando **arricciare** strumento della riga di comando:
 
 1. Prepara la query inserendola mediante il metodo PUT nel nuovo URL dell’endpoint `/graphql/persist.json/<config>/<persisted-label>`.
 
    Ad esempio, crea una query persistente:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -88,7 +88,7 @@ Di seguito sono riportati i passaggi per rendere persistente una determinata que
 
    Ad esempio, verifica se l’operazione è riuscita:
 
-   ```xml
+   ```json
    {
      "action": "create",
      "configurationName": "wknd",
@@ -102,7 +102,7 @@ Di seguito sono riportati i passaggi per rendere persistente una determinata que
 
    Ad esempio, utilizza la query persistente:
 
-   ```xml
+   ```shell
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
@@ -111,7 +111,7 @@ Di seguito sono riportati i passaggi per rendere persistente una determinata que
 
    Ad esempio, utilizza la query persistente:
 
-   ```xml
+   ```shell
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -137,7 +137,7 @@ Di seguito sono riportati i passaggi per rendere persistente una determinata que
 
    Esempio:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -150,7 +150,7 @@ Di seguito sono riportati i passaggi per rendere persistente una determinata que
 
    Esempio:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -163,7 +163,7 @@ Di seguito sono riportati i passaggi per rendere persistente una determinata que
 
    Esempio:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -185,44 +185,131 @@ Di seguito sono riportati i passaggi per rendere persistente una determinata que
      }'
    ```
 
+
+## Come eseguire una query persistente {#execute-persisted-query}
+
+Per eseguire una query persistente, un&#39;applicazione client invia una richiesta GET utilizzando la seguente sintassi:
+
+```
+GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
+```
+
+Dove `PERSISTENT_PATH` è un percorso abbreviato in cui viene salvata la query Persistent.
+
+1. Esempio `wknd` è il nome della configurazione e `plain-article-query` è il nome della query persistente. Per eseguire la query:
+
+   ```shell
+   $ curl -X GET \
+       https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query
+   ```
+
 1. Esegui una query con parametri.
+
+   >[!NOTE]
+   >
+   > Le variabili e i valori della query devono essere correttamente [codificato](#encoding-query-url) durante l&#39;esecuzione di una query persistente.
 
    Esempio:
 
    ```xml
-   $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
    $ curl -X GET \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+       "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
+
+   Consulta la sezione [variabili di query](#query-variables) per ulteriori dettagli.
+
+## Utilizzo delle variabili di query {#query-variables}
+
+Le variabili di query possono essere utilizzate con le query persistenti. Le variabili della query vengono aggiunte alla richiesta con un punto e virgola (`;`) utilizzando il nome e il valore della variabile. Le variabili multiple sono separate da punto e virgola.
+
+Il pattern si presenta come segue:
+
+```
+<AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
+```
+
+Ad esempio, la seguente query contiene una variabile `activity` per filtrare un elenco in base a un valore di attività:
+
+```graphql
+query getAdventuresByActivity($activity: String!) {
+      adventureList (filter: {
+        adventureActivity: {
+          _expressions: [
+            {
+              value: $activity
+            }
+          ]
+        }
+      }){
+        items {
+          _path
+        adventureTitle
+        adventurePrice
+        adventureTripLength
+      }
+    }
+  }
+```
+
+Questa query può essere persistente in un percorso `wknd/adventures-by-activity`. Per chiamare la query persistente dove `activity=Camping` la richiesta sarà simile alla seguente:
+
+```
+<AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
+```
+
+Tieni presente che `%3B` è la codifica UTF-8 per `;` e `%3D` è la codifica per `=`. Le variabili della query e gli eventuali caratteri speciali devono essere [codificato correttamente](#encoding-query-url) per eseguire la query persistente.
+
+## Codifica dell’URL della query per l’utilizzo da parte di un’app {#encoding-query-url}
+
+Per l&#39;uso da parte di un&#39;applicazione, qualsiasi carattere speciale utilizzato per la costruzione di variabili di query (ovvero punto e virgola (`;`), segno di uguale (`=`), barre `/`) deve essere convertito per utilizzare la codifica UTF-8 corrispondente.
+
+Esempio:
+
+```xml
+curl -X GET \ "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
+```
+
+L’URL può essere suddiviso nelle seguenti parti:
+
+| Parte URL | Descrizione |
+|----------| -------------|
+| `/graphql/execute.json` | Endpoint di query persistente |
+| `/wknd/adventure-by-path` | Percorso query persistente |
+| `%3B` | Codifica di `;` |
+| `adventurePath` | Variabile query |
+| `%3D` | Codifica di `=` |
+| `%2F` | Codifica di `/` |
+| `%2Fcontent%2Fdam...` | Percorso codificato del frammento di contenuto |
+
+In testo normale, l’URI della richiesta ha il seguente aspetto:
+
+```plaintext
+/graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
+```
+
+Per utilizzare una query persistente in un’app client, è necessario utilizzare l’SDK client headless AEM per [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java)oppure [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). L’SDK del client headless codificherà automaticamente tutte le variabili di query in modo appropriato nella richiesta.
 
 ## Trasferimento di una query persistente all’ambiente di produzione  {#transfer-persisted-query-production}
 
-In ultima analisi, la query persistente deve trovarsi nell’ambiente di pubblicazione di produzione (di AEM as a Cloud Service), dove può essere richiesta dalle applicazioni client. Per utilizzare una query persistente nell’ambiente di pubblicazione di produzione, è necessario che la relativa struttura persistente venga replicata:
+Le query persistenti devono sempre essere create su un servizio AEM Author e quindi pubblicate (replicate) in un servizio AEM Publish. Spesso, le query persistenti vengono create e testate in ambienti inferiori, come gli ambienti locali o di sviluppo. È quindi necessario promuovere le query persistenti in ambienti di livello superiore, rendendole infine disponibili in un ambiente di produzione AEM Publish per l’utilizzo da parte delle applicazioni client.
 
-* inizialmente all’autore di produzione per la convalida dei contenuti appena creati con le query,
-* infine alla pubblicazione di produzione per l’utilizzo live
+### Query persistenti del pacchetto
 
-Esistono diversi approcci per il trasferimento di una query persistente:
+È possibile integrare query persistenti in [Pacchetti AEM](/help/implementing/developing/tools/package-manager.md). AEM I pacchetti possono quindi essere scaricati e installati in ambienti diversi. AEM pacchetti possono essere replicati anche da un ambiente AEM Author agli ambienti AEM Publish.
 
-1. Utilizzo di un pacchetto:
-   1. Crea una nuova definizione di pacchetto.
-   1. Includi la configurazione (ad esempio, `/conf/wknd/settings/graphql/persistentQueries`).
-   1. Crea il pacchetto.
-   1. trasferisci il pacchetto (download/caricamento o replica).
-   1. Installa il pacchetto.
+Per creare un pacchetto:
 
-1. Utilizzo del metodo POST per la replica:
+1. Passa a **Strumenti** > **Distribuzione** > **Pacchetti**.
+1. Crea un nuovo pacchetto toccando **Crea pacchetto**. Viene visualizzata una finestra di dialogo per la definizione del pacchetto.
+1. Nella finestra di dialogo Definizione pacchetto, in **Generale** inserire un **Nome** come &quot;query wknd-persistenti&quot;.
+1. Immettere un numero di versione simile a &quot;1.0&quot;.
+1. Sotto **Filtri** aggiungi una nuova **Filtro**. Utilizza il Finder del percorso per selezionare il `persistentQueries` sotto la configurazione. Ad esempio, per `wknd` configurazione del percorso completo `/conf/wknd/settings/graphql/persistentQueries`.
+1. Tocca **Salva** per salvare la nuova definizione del pacchetto e chiudere la finestra di dialogo.
+1. Tocca **Crea** nella definizione del pacchetto appena creata.
 
-   ```xml
-   $ curl -X POST   http://localhost:4502/bin/replicate.json \
-   -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-   -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-   -F cmd=activate
-   ```
+Dopo aver generato il pacchetto puoi:
+* **Scarica** il pacchetto e ricaricalo in un ambiente diverso.
+* **Replicare** il pacchetto toccando **Altro** > **Replicare**. Questo replicherà il pacchetto all’ambiente di pubblicazione AEM connesso.
 
 <!--
 1. Using replication/distribution tool:
@@ -232,23 +319,3 @@ Esistono diversi approcci per il trasferimento di una query persistente:
 * Using a workflow (via workflow launcher configuration):
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 -->
-
-Una volta che la configurazione della query si trova nell’ambiente di pubblicazione di produzione, si applicano gli stessi principi di autenticazione, utilizzando semplicemente l’endpoint di pubblicazione.
-
->[!NOTE]
->
->Per l’accesso anonimo il sistema presuppone che l’ACL consenta a “tutti” l’accesso alla configurazione della query.
->
->In caso contrario, non potrà essere eseguito.
-
-## Codifica dell’URL della query per l’utilizzo da parte di un’app {#encoding-query-url}
-
-Per l’utilizzo da parte di un’applicazione, è necessario codificare tutti i punti e virgola (“;”) negli URL.
-
-Ad esempio, nella richiesta di esecuzione di una query persistente:
-
-```xml
-curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-```
-
-Per utilizzare una query persistente in un’app client, è necessario utilizzare l’SDK del client headless AEM [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js).
