@@ -2,10 +2,10 @@
 title: API obsolete
 description: Note sulla versione specifiche per le API obsolete e rimosse in  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 8325d8a69f453573a177a46cde54afe5365b17f8
+source-git-commit: d64e69e9662449e25cb12d7cdd415494cb6b6c7d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1051'
+ht-degree: 95%
 
 ---
 
@@ -179,6 +179,24 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
     <td>Questa API log4j interna non è supportata da AEM as a Cloud Service.</td>
     <td>27/01/2022</td>
     <td>24/03/2022</td>
+  </tr>
+  <tr>
+    <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
+    <td>Apache Log4j 1 ha raggiunto la fine del ciclo di vita nel 2015 e non è più supportato.</td>
+    <td>27/01/2022</td>
+    <td>24/03/2022</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
+    <td>Questa API di logback interna non è supportata da AEM as a Cloud Service.</td>
+    <td>27/01/2022</td>
+    <td>24/03/2022</td>
+  </tr>
+  <tr>
+    <td>com.github.jknack.handlebars.js</td>
+    <td>Aggiornamento Handlebar richiesto da 4.0.5 a 4.3.0 a causa di vulnerabilità di sicurezza. Questo pacchetto non è più presente nel manubrio aggiornato.</td>
+    <td>5/05/2022</td>
+    <td>05/08/2022</td>
   </tr>
 </tbody>
 </table>
