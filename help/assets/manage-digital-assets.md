@@ -2,14 +2,14 @@
 title: Consente di gestire i contenuti digitali
 description: Scopri vari metodi di gestione e modifica delle risorse
 contentOwner: AG
-mini-toc-levels: 1
+mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
 source-wordcount: '4326'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -73,7 +73,7 @@ Una volta attivato, Experience Manager invia le notifiche delle risorse duplicat
 >
 >Quando carichi le risorse nell’archivio, Experience Manager rileva le duplicazioni e notifica le prime 100 risorse duplicate.
 
-## Anteprima delle risorse {#previewing-assets}
+## Visualizzare l’anteprima delle risorse {#previewing-assets}
 
 Per visualizzare l’anteprima di una risorsa, effettua le seguenti operazioni.
 
@@ -549,7 +549,7 @@ Per stampare le annotazioni e controllare lo stato, tocca o fai clic sul pulsant
 
    Torna al file PDF renderizzato e aggiornalo. Il PDF aggiornato riflette le modifiche apportate.
 
-## Controllo delle versioni delle risorse {#asset-versioning}
+## Controllo delle versioni di una risorsa {#asset-versioning}
 
 Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento preciso. Il controllo delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, per annullare una modifica apportata a una risorsa, ripristina la versione non modificata della risorsa.
 
@@ -636,7 +636,7 @@ La funzionalità di controllo delle versioni consente di effettuare le seguenti 
 
 ## Raccolte {#collections}
 
-Una raccolta è un set ordinato di risorse. Utilizza le raccolte per condividere le risorse tra gli utenti.
+Una raccolta è un set ordinato di risorse. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti.
 
 * Una raccolta può includere risorse provenienti da posizioni diverse, poiché contiene solo riferimenti a tali risorse. Ogni raccolta mantiene l’integrità referenziale delle risorse.
 * Puoi condividere raccolte con più utenti con diversi livelli di privilegi, ad esempio per la modifica, la visualizzazione e così via.

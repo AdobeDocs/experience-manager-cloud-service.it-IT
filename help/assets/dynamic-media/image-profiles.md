@@ -4,9 +4,9 @@ description: Scopri come creare profili immagine di Dynamic Media contenenti imp
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '3234'
+source-wordcount: '3271'
 ht-degree: 9%
 
 ---
@@ -53,6 +53,14 @@ In **[!UICONTROL Maschera definizione dettagli]**, sono disponibili le seguenti 
 La nitidezza è descritta in [Nitidezza delle immagini](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## Opzioni di ritaglio {#crop-options}
+
+Quando implementi il ritaglio avanzato sulle immagini, Adobe consiglia la seguente best practice e applica il seguente limite:
+
+| Tipo di limite | Best practice | Limite implementato |
+| --- | --- | --- |
+| Numero di ritagli avanzati per immagine | 5 | 100 |
+
+Vedi anche [Limiti Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 

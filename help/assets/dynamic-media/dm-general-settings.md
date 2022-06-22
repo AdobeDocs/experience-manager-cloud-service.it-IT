@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: cca950b0a4eed60f82d65779766405ed216111e3
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2522'
 ht-degree: 4%
 
 ---
@@ -135,6 +135,8 @@ Quando carichi i file immagine PostScript (EPS), puoi formattarli in vari modi. 
 | **[!UICONTROL Ancoraggio]** | Specifica il modo in cui le immagini vengono ancorate nei modelli generati dalla composizione a livelli prodotta dal file PSD. Per impostazione predefinita, l’ancoraggio è al centro. Un ancoraggio centrale consente alle immagini sostitutive di riempire al meglio lo stesso spazio, indipendentemente dalle proporzioni dell&#39;immagine sostitutiva. Le immagini con un aspetto diverso che sostituiscono questa immagine, quando fanno riferimento al modello e utilizzano la sostituzione di parametri, occupano effettivamente lo stesso spazio. Passa a un’impostazione diversa se l’applicazione richiede le immagini sostitutive per riempire lo spazio allocato nel modello. |
 
 ### Scheda PDF {#pdf-tab}
+
+Il numero massimo di pagine per un PDF da considerare per l’estrazione è 5000 per i nuovi caricamenti. Questo limite sarà portato a 100 pagine il 31 dicembre 2022. Vedi anche [Limiti Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 È possibile scegliere di rasterizzare i file, estrarre parole di ricerca e collegamenti, impostare la risoluzione e scegliere uno spazio colore.
 

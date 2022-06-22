@@ -4,9 +4,9 @@ description: Scopri come lavorare con i set di immagini in Dynamic Media.
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2155'
 ht-degree: 5%
 
 ---
@@ -28,6 +28,15 @@ Supponiamo, ad esempio, di voler presentare immagini di tappi con distinte di co
 >[!NOTE]
 >
 >Per informazioni sull’interfaccia utente di Assets, consulta [Gestire le risorse con l’interfaccia utente touch](/help/assets/manage-digital-assets.md).
+
+Quando crei un set di immagini, Adobe consiglia le seguenti best practice e applica i seguenti limiti:
+
+| Risorsa - Tipo limite | Best practice | Limite implementato | Modifiche al limite del 31 dicembre 2022 |
+| --- | --- | --- | --- |
+| **Set di immagini** - Numero di risorse duplicate per set | Nessun duplicato | 100 | 20 |
+| **Set di immagini** - Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
+
+Vedi anche [Limiti Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 ## Avvio rapido: Set di immagini {#quick-start-image-sets}
 
@@ -126,6 +135,15 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 >[!NOTE]
 >
 >I set di immagini non sono supportati per le risorse con &quot;,&quot; (virgola) nel nome file.
+
+Quando crei un set di immagini, Adobe consiglia le seguenti best practice e applica i seguenti limiti:
+
+| Risorsa - Tipo limite | Best practice | Limite implementato | Modifiche al limite del 31 dicembre 2022 |
+| --- | --- | --- | --- |
+| **Set di immagini** - Numero di risorse duplicate per set | Nessun duplicato | 100 | 20 |
+| **Set di immagini** - Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
+
+Vedi anche [Limiti Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 **Per creare i set di immagini:**
 
