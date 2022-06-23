@@ -4,7 +4,7 @@ description: Scopri come utilizzare i set 360 gradi in Dynamic Media.
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 9%
@@ -27,7 +27,7 @@ I set 360 gradi sono indicati da un banner con la parola **[!UICONTROL SPINSET]*
 
 Quando crei un set 360 gradi, Adobe consiglia di seguire la procedura consigliata e applica il seguente limite:
 
-| Tipo di limite | Best practice | Limite implementato |
+| Tipo di limite | Best practice | Limite imposto |
 | --- | --- | --- |
 | Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
 
@@ -119,7 +119,7 @@ Questa sezione descrive come creare i set 360 gradi.
 
 Quando crei un set 360 gradi, Adobe consiglia di seguire la procedura consigliata e applica il seguente limite:
 
-| Tipo di limite | Best practice | Limite implementato |
+| Tipo di limite | Best practice | Limite imposto |
 | --- | --- | --- |
 | Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
 
