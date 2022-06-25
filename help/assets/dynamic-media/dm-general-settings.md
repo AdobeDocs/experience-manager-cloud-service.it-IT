@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2525'
 ht-degree: 4%
 
 ---
@@ -136,7 +136,7 @@ Quando carichi i file immagine PostScript (EPS), puoi formattarli in vari modi. 
 
 ### Scheda PDF {#pdf-tab}
 
-Il numero massimo di pagine per un PDF da considerare per l’estrazione è 5000 per i nuovi caricamenti. Questo limite sarà portato a 100 pagine il 31 dicembre 2022. Vedi anche [Limiti Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Il numero massimo di pagine per un PDF da considerare per l’estrazione è 5000 per i nuovi caricamenti. Questo limite verrà modificato in 100 pagine (per tutti i PDF) il 31 dicembre 2022. Vedi anche [Limiti Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 È possibile scegliere di rasterizzare i file, estrarre parole di ricerca e collegamenti, impostare la risoluzione e scegliere uno spazio colore.
 
