@@ -3,9 +3,9 @@ title: Configura Cloud Service Dynamic Media
 description: Scopri come configurare Dynamic Media in Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
+source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3574'
 ht-degree: 3%
 
 ---
@@ -272,6 +272,9 @@ Vedi [Caricare le risorse](/help/assets/add-assets.md).
 
 1. Accedi al tuo Experience Manager as a Cloud Service come amministratore del prodotto.
 1. In Experience Manager as a Cloud Service , seleziona il logo Experience Manager as a Cloud Service per accedere alla console di navigazione globale, quindi vai a **[!UICONTROL Generale > CRXDE Lite]**.
+
+   Se non hai accesso ad CRXDE Lite, consulta [Utilizzo di CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+
 1. Nella barra a sinistra, passa a quanto segue:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -326,6 +329,8 @@ In Experience Manager Assets puoi aggiungere tipi MIME personalizzati per i form
 
 1. Torna alla scheda del browser con la console as a Cloud Service aperta Experience Manager.
 1. Dall’Experience Manager as a Cloud Service, vai a **[!UICONTROL Strumenti > Generale > CRXDE Lite]**.
+
+   Se non hai accesso ad CRXDE Lite, consulta [Utilizzo di CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
    ![Strumenti > Generale > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -382,6 +387,8 @@ La coda del flusso di lavoro Granite viene utilizzata per i flussi di lavoro non
 >[!NOTE]
 >
 >Per completare questa attività, devi accedere ad Experience Manager as a Cloud Service come amministratore del prodotto.
+
+Se non hai accesso a OSGi, vedi [Configurazione OSGi](/help/implementing/developing/components/overview.md#osgi-configuration).
 
 **Per aggiornare i thread di lavoro predefiniti della coda di lavoro Granite (risorse video):**
 
