@@ -1,13 +1,13 @@
 ---
 title: Dashboard di licenza
 description: Cloud Manager fornisce una dashboard per visualizzare facilmente le adesioni ai prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
-source-git-commit: 82b4a4c8da9f42de08c19eb3caf25ff3a1bad4d4
+exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
+source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
-
 
 # Dashboard di licenza {#license-dashboard}
 
@@ -57,13 +57,15 @@ Ogni sezione riepiloga le opzioni disponibili e il modo in cui viene attualmente
 
 Una richiesta di contenuto è una richiesta che arriva in AEM Sites o in qualsiasi sistema di caching fornito dal cliente, ad esempio una rete di distribuzione di contenuti, per distribuire contenuto o dati in formato HTML come visualizzazione di pagina o in formato JSON come chiamata API.
 
-Viene conteggiata una richiesta di contenuto per ogni visualizzazione di pagina o per ogni cinque chiamate API, misurate in base all’ingresso del primo sistema di memorizzazione in cache che riceve una richiesta di contenuto.
+Viene conteggiata una richiesta di contenuto per ogni visualizzazione di pagina o per ogni cinque chiamate API, misurate in base all’ingresso del primo sistema di memorizzazione in cache che riceve una richiesta di contenuto. Le richieste di contenuto vengono conteggiate solo per gli ambienti di produzione.
 
 Le richieste di contenuto escludono le richieste o le attività avviate da o per conto dell’Adobe al solo scopo di fornire prodotti e servizi. Sono esclusi anche il traffico di agenti utente identificati da Adobi da bot, crawler e spider relativi a motori di ricerca comuni e servizi di social media.
 
 ### In che modo Adobe Experience Manager misura le richieste di contenuto? {#how-are-content-requests-measured}
 
-Le richieste di contenuto sono monitorate lato server all&#39;interno del Cloud Service. La CDN integrata in AEM as a Cloud Service traccia le richieste HTML e JSON valide. AEM inoltre ha delle regole per escludere bot ben noti, tra cui servizi noti che visitano regolarmente il sito per aggiornare il loro indice di ricerca o servizio.
+Le richieste di contenuto vengono tracciate sui server perimetrali AEM as a Cloud Service. Il traffico di origine non viene conteggiato per le richieste di contenuto. La CDN integrata in AEM as a Cloud Service traccia le richieste HTML e JSON valide.
+
+AEM inoltre ha delle regole per escludere bot ben noti, tra cui servizi noti che visitano regolarmente il sito per aggiornare il loro indice di ricerca o servizio.
 
 Di seguito è riportato un elenco non esaustivo di esempi di servizi noti esclusi.
 
