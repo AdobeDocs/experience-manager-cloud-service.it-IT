@@ -2,7 +2,7 @@
 title: Utilizzo di CRXDE Lite
 description: CRXDE Lite fa parte del quickstart AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
+source-git-commit: a9c646d24378e67df84c00a4355c692cac85e50b
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 1%
@@ -94,7 +94,7 @@ Per poter visualizzare le informazioni sul controllo di accesso, l&#39;utente ch
 
 La **Scheda Replica** visualizza lo stato di replica del nodo corrente. Puoi replicare e replicare l’eliminazione del nodo corrente.
 
-###  Scheda Console {#console-tab}
+### Scheda Console {#console-tab}
 
 La **Scheda Console** visualizza i messaggi dei registri. Puoi configurare il livello di registro, cancellare la console, fissare la posizione di scorrimento selezionata e abilitare/disabilitare la visualizzazione dei messaggi.
 
