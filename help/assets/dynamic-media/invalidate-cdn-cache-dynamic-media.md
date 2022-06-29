@@ -4,9 +4,9 @@ description: Scopri come annullare la validità della rete CDN (Content Delivery
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
+source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1384'
 ht-degree: 1%
 
 ---
@@ -17,9 +17,20 @@ Le risorse Dynamic Media sono memorizzate nella cache della rete CDN (Content De
 
 >[!NOTE]
 >
->Questa funzione richiede l’utilizzo della rete CDN preconfigurata fornita con Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione.
+>Questa funzione richiede l’utilizzo della rete CDN fornita in bundle con Adobe fornita con Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione.
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
+
+Se hai abilitato [Imaging avanzato](/help/assets/dynamic-media/imaging-faq.md) nel tuo account e utilizzi la CDN con bundle di Adobe, puoi eliminare tutti gli URL con diverse stringhe di query rimuovendo l’URL di base singolo.
+
+Ad esempio, invalidare `https://weekendsite.scene7.com/is/image/grundfos/image`, inoltre invalida i seguenti URL:
+
+* `https://weekendsite.scene7.com/is/image/grundfos/image`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* e così via.
+
+Questa invalidazione, tuttavia, non si verifica per i domini generici che non supportano l’imaging avanzato, come `s7d1.scene7.com`. Per il corretto funzionamento dell’annullamento della validità, tali domini necessitano ancora dell’URL completo.
 
 **Per annullare la validità della cache CDN tramite Dynamic Media:**
 
