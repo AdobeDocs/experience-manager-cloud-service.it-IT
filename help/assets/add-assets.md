@@ -4,9 +4,9 @@ description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
+source-git-commit: a715594f74187ad61cdea566274723d170fd3783
 workflow-type: tm+mt
-source-wordcount: '2948'
+source-wordcount: '3029'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Puoi anche scegliere di eseguire un’ulteriore elaborazione sulle risorse caric
 | Metodo di caricamento | Quando utilizzare? | Persona principale |
 |---------------------|----------------|-----------------|
 | [Interfaccia utente della console Assets](#upload-assets) | Caricamento occasionale, facilità di pressione e trascinamento, caricamento del finder. Non utilizzare per caricare un numero elevato di risorse. | Tutti gli utenti |
-| [Carica API](#upload-using-apis) | Per decisioni dinamiche durante il caricamento. | Developer (Sviluppatore) |
+| [Carica API](#upload-using-apis) | Per decisioni dinamiche durante il caricamento. | Sviluppatore |
 | App desktop [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Acquisizione di risorse a basso volume, ma non per la migrazione. | Amministratore, addetto al marketing |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Utile quando creativi e professionisti del marketing lavorano sulle risorse dall’interno del supportato [!DNL Creative Cloud] app desktop. | Creative, addetto al marketing |
 | [Acquisizione in massa di risorse](#asset-bulk-ingestor) | Consigliato per migrazioni su larga scala e ingestioni di massa occasionali. Solo per i datastore supportati. | Amministratore, sviluppatore |
@@ -155,6 +155,11 @@ Per utilizzare questa funzione è necessario un account di archiviazione esterno
 >
 >Crea il contenitore o il bucket dell’account di archiviazione come privato e accetta connessioni solo da richieste autorizzate. Tuttavia, non sono supportate ulteriori restrizioni sulle connessioni di rete in ingresso.
 
+>[!NOTE]
+>
+>Gli account di archiviazione esterni possono avere regole di nome file/cartella diverse da quelle dello strumento di importazione in blocco. Vedi [Gestione dei nomi dei file durante l’importazione in serie](#filename-handling-bulkimport) per ulteriori dettagli sui nomi non consentiti/escape.
+
+
 ### Configura lo strumento di importazione in blocco {#configure-bulk-ingestor-tool}
 
 Per configurare lo strumento di importazione in blocco, effettua le seguenti operazioni:
@@ -216,6 +221,15 @@ Seleziona la configurazione e fai clic su **[!UICONTROL Prova a secco]** per ric
 Quando si importano in massa risorse o cartelle, [!DNL Experience Manager Assets] importa l’intera struttura di ciò che esiste nella fonte di importazione. [!DNL Experience Manager] segue le regole integrate per i caratteri speciali nei nomi delle risorse e delle cartelle, pertanto questi nomi di file devono essere eliminati. Sia per il nome della cartella che per il nome della risorsa, il titolo definito dall’utente rimane invariato e viene memorizzato in `jcr:title`.
 
 Durante l&#39;importazione alla rinfusa, [!DNL Experience Manager] cerca le cartelle esistenti per evitare di reimportare le risorse e le cartelle e verifica anche le regole di pulizia applicate nella cartella padre in cui avviene l’importazione. Se le regole di pulizia vengono applicate nella cartella padre, le stesse regole vengono applicate all&#39;origine di importazione. Per la nuova importazione, vengono applicate le seguenti regole di sanatizzazione per gestire i nomi file delle risorse e delle cartelle.
+
+**Nomi non consentiti nell&#39;importazione in blocco**
+
+I seguenti caratteri non sono consentiti nei nomi di file e cartelle:
+
+* Caratteri di controllo e uso privato (da 0x00 a 0x1F, \u0081, \uE000)
+* Nomi di file o cartelle con punto (.)
+
+I file o le cartelle con nomi corrispondenti a queste condizioni vengono ignorati durante il processo di importazione e contrassegnati come non riusciti.
 
 **Gestione del nome della risorsa nell’importazione in blocco**
 
@@ -380,7 +394,7 @@ Dettagli tecnici delle API e del protocollo di caricamento, nonché collegamenti
 >[!MORELIKETHIS]
 >
 >* App desktop [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Informazioni [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Informazioni su [!DNL Adobe Asset Link]](https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentazione](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Riferimento tecnico per il caricamento delle risorse](developer-reference-material-apis.md#asset-upload)
 
