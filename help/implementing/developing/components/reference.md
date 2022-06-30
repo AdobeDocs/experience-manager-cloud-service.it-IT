@@ -2,7 +2,7 @@
 title: Guida di riferimento dei componenti
 description: Guida di riferimento per sviluppatori per i dettagli dei componenti e della relativa struttura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Guida di riferimento dei componenti {#components-reference-guide}
 
-I componenti sono al centro della creazione di un’esperienza in AEM. La [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) è facile iniziare con un set di strumenti di componenti robusti e pronti. La [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustra allo sviluppatore come utilizzare questi strumenti e come creare componenti personalizzati per creare un nuovo sito AEM.
+I componenti sono al centro della creazione di un’esperienza in AEM. La [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) è facile iniziare con un set di strumenti di componenti robusti e pronti. La [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustra allo sviluppatore come utilizzare questi strumenti e come creare componenti personalizzati per creare un nuovo sito AEM.
 
 >[!TIP]
 >
@@ -474,4 +474,4 @@ Questa Markdown verrà quindi visualizzata nella [Console Componenti.](/help/sit
 
 ![README.md visibile nella console Componenti](assets/components-documentation-console.png)
 
-Il markdown supportato è lo stesso di quello di [frammenti di contenuto.](/help/assets/content-fragments/content-fragments.md)
+Il markdown supportato è lo stesso di quello di [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md).

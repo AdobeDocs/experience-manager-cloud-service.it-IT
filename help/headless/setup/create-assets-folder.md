@@ -2,7 +2,7 @@
 title: 'Creazione di una cartella di risorse: configurazione headless'
 description: Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 131225c8303bdd8900a8e22ef51b545da2257f40
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
@@ -50,8 +50,8 @@ Se utilizzi una struttura del sito localizzata, puoi [creare una directory princ
 
 ## Passaggi successivi {#next-steps}
 
-Dopo aver creato una cartella per i frammenti di contenuto, puoi passare alla quarta parte della guida introduttiva e [creare frammenti di contenuto.](create-content-fragment.md)
+Dopo aver creato una cartella per i frammenti di contenuto, puoi passare alla quarta parte della guida introduttiva e [creare frammenti di contenuto](create-content-fragment.md).
 
 >[!TIP]
 >
->Per informazioni dettagliate sulla gestione dei frammenti di contenuto, consulta la [documentazione sui frammenti di contenuto](/help/assets/content-fragments/content-fragments.md).
+>Per informazioni complete sulla gestione dei Frammenti di contenuto, consulta la sezione [Documentazione sui Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)

@@ -2,10 +2,10 @@
 title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Scopri come utilizzare i riferimenti in Frammenti di contenuto, per contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -96,7 +96,7 @@ Utilizzo della **Struttura ad albero** La scheda dell’Editor frammento di cont
 >
 >Utilizzando le breadcrumb nel pannello principale è possibile tornare al punto iniziale.
 
-![Struttura ad albero dei frammenti di contenuto](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![Struttura ad albero dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
 
 ## Riferimenti ad hoc {#adhoc-references}
 
@@ -104,26 +104,26 @@ I riferimenti ad hoc possono essere aggiunti come semplice collegamento all’in
 
 ![Frammenti di contenuto - Riferimenti ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
-## Novità {#whats-next}
+## Prossimi passaggi {#whats-next}
 
 Ora che hai imparato i riferimenti e la struttura nei frammenti di contenuto, il passaggio successivo è [Informazioni su metadati e tag](metadata-tagging.md). In questo modo verrà illustrato come definire metadati e tag per i frammenti di contenuto.
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
+* [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md)
+   * [Gestione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [Applica la configurazione alla cartella delle risorse](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Applica la configurazione alla cartella delle risorse](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Creazione di un frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Varianti - Authoring di frammenti di contenuto](/help/assets/content-fragments/content-fragments-variations.md)
+      * [Creazione di un frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Varianti - Authoring di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [Modelli per frammenti di contenuto - Tipi di dati](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Modelli per frammenti di contenuto - Tipi di dati](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modelli per frammenti di contenuto - Proprietà](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Modelli per frammenti di contenuto - Proprietà](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
 
 * Guide introduttive

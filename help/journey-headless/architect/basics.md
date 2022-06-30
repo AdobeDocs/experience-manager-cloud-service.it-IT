@@ -2,7 +2,7 @@
 title: Informazioni di base sulla modellazione dei contenuti
 description: Scopri le nozioni di base per la modellazione dei contenuti per CMS headless utilizzando Frammenti di contenuto.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 5%
@@ -69,7 +69,7 @@ Ad esempio, definisci il campo contenente il nome di un insegnante come **Testo*
 1. Tipi di dati **Riferimento contenuto** e **Riferimento frammento** consente di creare relazioni con altri contenuti all’interno di AEM.
 1. La **Riferimento frammento** il tipo di dati ti consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
 
-Ad esempio:
+Esempio:
 
 ![Modellazione dei contenuti con frammenti di contenuto](assets/headless-modeling-01.png "Modellazione dei contenuti con frammenti di contenuto")
 
@@ -143,18 +143,18 @@ Ed è solo per cominciare. A seconda della complessità, un premio potrebbe esse
 
 La rappresentazione di queste interrelazioni può essere ottenuta con i Riferimenti ai frammenti, in quanto sono compresi dall’utente (l’architetto), dall’autore dei contenuti e dalle applicazioni headless.
 
-## Novità {#whats-next}
+## Prossimi passaggi {#whats-next}
 
 Ora che hai imparato le nozioni di base, il passo successivo è quello di [Scopri come creare modelli di frammenti di contenuto in AEM](model-structure.md). Questo introdurrà e discuterà i vari riferimenti disponibili e come creare livelli di struttura con i Riferimenti frammento - una parte chiave della modellazione per gli headless.
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
+* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-   * [Modelli per frammenti di contenuto - Tipi di dati](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [Modelli per frammenti di contenuto - Tipi di dati](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
 * [Concetti relativi all’authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - questa pagina si basa principalmente sul **Sites** console, ma molte delle funzioni sono anche rilevanti per l’authoring **Frammenti di contenuto** in **Risorse** console.
 
-* [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
+* [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)

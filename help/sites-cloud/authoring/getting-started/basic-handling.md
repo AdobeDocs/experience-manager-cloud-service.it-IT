@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e le funzioni di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
+source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
 workflow-type: tm+mt
-source-wordcount: '2954'
-ht-degree: 95%
+source-wordcount: '2993'
+ht-degree: 94%
 
 ---
 
@@ -73,6 +73,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
 | Frammenti esperienza | Un [frammento di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse. |
 | Assets | La console Risorse consente di importare e gestire [risorse digitali quali immagini, video, documenti e file audio](/help/assets/overview.md). Puoi usare queste risorse da qualunque sito web in esecuzione nell’istanza di AEM. Puoi anche creare e gestire [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) dalla console Risorse . |
 | Personalizzazione | Questa console fornisce un set di strumenti per la [creazione e modifica di contenuti mirati e la presentazione di esperienze personali.](/help/sites-cloud/authoring/personalization/overview.md) |
+| Frammenti di contenuto | [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) consente di progettare, creare, curare e pubblicare contenuti indipendenti dalla pagina. Consentono di preparare contenuti strutturati pronti per l’uso in più posizioni/su più canali, ideali sia per l’authoring delle pagine che per la distribuzione headless. |
 
 ## Pannello Strumenti {#tools-panel}
 

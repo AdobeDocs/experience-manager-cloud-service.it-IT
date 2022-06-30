@@ -2,10 +2,10 @@
 title: Come accedere ai contenuti tramite API di consegna AEM
 description: In questa parte del Percorso di sviluppatori AEM Headless, scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1359'
+ht-degree: 8%
 
 ---
 
@@ -350,7 +350,7 @@ Per informazioni dettagliate sull’utilizzo dell’API GraphQL AEM e sulla conf
 * Struttura dei frammenti di contenuto di esempio
 * Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query
 
-## Novità {#whats-next}
+## Prossimi passaggi {#whats-next}
 
 Ora che hai imparato ad accedere ai contenuti headless e ad eseguire query tramite l’API GraphQL AEM ora puoi [scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto](update-your-content.md).
 
@@ -369,10 +369,10 @@ Ora che hai imparato ad accedere ai contenuti headless e ad eseguire query trami
    * [Query di esempio: un singolo frammento di città specifico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [Esempio di query per metadati: elenco dei metadati per i riconoscimenti denominati GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [Query di esempio: tutte le città con una variante denominata](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [Abilitare la funzionalità dei frammenti di contenuto nel browser di configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
-   * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
-   * [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+* [Abilitare la funzionalità dei frammenti di contenuto nel browser di configurazione](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
+* [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Output JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [Comprendere la condivisione delle risorse tra le origini (CORS, Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [Generazione dei token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [Guida introduttiva di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) - Una breve serie di esercitazioni video che offre una panoramica dell’utilizzo delle funzioni senza testa AEM, inclusa la modellazione dei contenuti e GraphQL.

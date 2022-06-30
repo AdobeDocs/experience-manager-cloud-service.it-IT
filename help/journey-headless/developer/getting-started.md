@@ -2,7 +2,7 @@
 title: Guida introduttiva ad AEM Headless as a Cloud Service
 description: In questa parte del Percorso di sviluppo headless AEM, scopri AEM prerequisiti headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 4%
@@ -150,7 +150,7 @@ I ruoli di ogni singolo progetto variano, ma quelli importanti da considerare ne
 * [Administrator](#administrator)
 * [Autore del contenuto](#content-author)
 * [Architetto dei contenuti](#content-architect)
-* [Developer (Sviluppatore)](#developer)
+* [Sviluppatore](#developer)
 
 #### Amministratore {#administrator}
 
@@ -220,7 +220,7 @@ Un approccio utile nella definizione dei modelli di frammento di contenuto consi
 
 Poiché gli autori dei contenuti interagiscono continuamente con i modelli durante la creazione di nuovi contenuti, l’allineamento dei modelli all’UX li aiuta a visualizzare l’esperienza digitale risultante. Facendo un ulteriore passo avanti, puoi assegnare icone ai Modelli di frammento di contenuto che rappresentano l’elemento UX in modo che gli autori possano selezionare in modo intuitivo il modello corretto in base ai suggerimenti visivi.
 
-#### Developer (Sviluppatore) {#developer}
+#### Sviluppatore {#developer}
 
 Gli sviluppatori sono responsabili di unire i contenuti creati senza problemi AEM al consumatore di tali contenuti, che spesso possono essere un’applicazione a pagina singola (SPA), un’app web progressiva (PWA), un negozio di web o un altro servizio esterno a AEM.
 
@@ -260,7 +260,7 @@ Spesso diverse sezioni di esperienze hanno diverse frequenze di aggiornamenti de
 * Alcuni tipi di contenuto devono scadere dopo un determinato periodo di tempo?
 * Esistono elementi specifici dell’utente e quindi non possono essere memorizzati nella cache?
 
-## Novità {#what-is-next}
+## Prossimi passaggi {#what-is-next}
 
 Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, devi:
 
@@ -285,8 +285,8 @@ Mentre è consigliabile passare alla parte successiva del percorso di sviluppo h
 * [Convenzioni di denominazione](/help/implementing/developing/introduction/naming-conventions.md) - Documentazione tecnica sulle restrizioni di denominazione delle pagine in AEM
 * [Gestione multisito e traduzione](/help/sites-cloud/administering/msm-and-translation.md) - Documentazione tecnica su AEM potenti funzioni di traduzione
 * [Flussi di lavoro AEM](/help/sites-cloud/authoring/workflows/overview.md) - Documentazione tecnica su come automatizzare i flussi di lavoro in AEM
-* [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) - Documentazione tecnica per i frammenti di contenuto.
-* [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) - Documentazione tecnica per i modelli di frammenti di contenuto.
+* [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Documentazione tecnica per i frammenti di contenuto.
+* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Documentazione tecnica per i modelli di frammenti di contenuto.
 * [Documentazione tecnica di GraphQL](https://graphql.org) - Definizione GraphQL (collegamento esterno)
 * [API GraphQL](/help/headless/graphql-api/content-fragments.md) - Documentazione tecnica che spiega come creare richieste di accesso e distribuzione di frammenti di contenuto
 * [API REST di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) - Documentazione tecnica che spiega come creare e modificare Frammenti di contenuto (e altre risorse)

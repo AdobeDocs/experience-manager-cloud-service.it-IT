@@ -2,7 +2,7 @@
 title: 'Creazione di modelli per frammenti di contenuto: configurazione headless'
 description: Definisci la struttura del contenuto da creare e distribuire utilizzando le funzionalità headless di AEM, mediante i modelli per frammenti di contenuto.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 96%
@@ -69,4 +69,4 @@ Dopo aver definito le strutture dei frammenti di contenuto mediante la creazione
 
 >[!TIP]
 >
->Per informazioni complete sui modelli per frammenti di contenuto, consulta la [documentazione sui modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
+>Per informazioni complete sui modelli per frammenti di contenuto, consulta la [documentazione sui modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)

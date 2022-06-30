@@ -2,10 +2,10 @@
 title: Come modellare il contenuto
 description: In questa parte del Percorso di sviluppatori AEM Headless , scopri come modellare i contenuti per la distribuzione AEM Headless utilizzando la modellazione dei contenuti con modelli di frammenti di contenuto e frammenti di contenuto.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1830'
+ht-degree: 2%
 
 ---
 
@@ -264,16 +264,16 @@ tbc...
 
 Per una struttura di base come esempio, vedere Struttura dei frammenti di contenuto di esempio.
 
-## Novità {#whats-next}
+## Prossimi passaggi {#whats-next}
 
 Ora che hai imparato a modellare la tua struttura e a creare contenuti a seconda di ciò, il passaggio successivo è: [Scopri come utilizzare le query GraphQL per accedere e recuperare il contenuto dei frammenti di contenuto](access-your-content.md). Questo introdurrà e discuterà GraphQL, quindi esaminerà alcune query di esempio per vedere come funzionano le cose in pratica.
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Utilizzo dei frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) - la pagina iniziale per i frammenti di contenuto
-   * [Frammenti di contenuto nel browser di configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md) - abilitare la funzionalità Frammento di contenuto nel browser di configurazione
-   * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) - creazione e modifica di modelli di frammenti di contenuto
-   * [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) - creazione e creazione di frammenti di contenuto; questa pagina ti porterà ad altre sezioni dettagliate
+* [Utilizzo dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) - la pagina iniziale per i frammenti di contenuto
+   * [Frammenti di contenuto nel browser di configurazione](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) - abilitare la funzionalità Frammento di contenuto nel browser di configurazione
+   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - creazione e modifica di modelli di frammenti di contenuto
+   * [Gestione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - creazione e creazione di frammenti di contenuto; questa pagina ti porterà ad altre sezioni dettagliate
 * [Schemi AEM GraphQL](access-your-content.md) - come GraphQL realizza i modelli
 * [Struttura dei frammenti di contenuto di esempio](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [Guida introduttiva di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) - Una breve serie di esercitazioni video che offre una panoramica dell’utilizzo delle funzioni senza testa AEM, inclusa la modellazione dei contenuti e GraphQL

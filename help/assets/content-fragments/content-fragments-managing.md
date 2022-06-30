@@ -4,9 +4,9 @@ description: Scopri come utilizzare la console Risorse per gestire i frammenti d
 feature: Content Fragments
 role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: bd589f689174f4da20e0f5e73a8786a3dee0f352
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1778'
 ht-degree: 9%
 
 ---
@@ -37,7 +37,7 @@ La [Editor frammento di contenuto](#opening-the-fragment-editor) fornisce vari [
 
 >[!NOTE]
 >
->I frammenti di contenuto sono memorizzati come **Risorse**, così come vengono gestiti principalmente dal **Risorse** console.
+>I frammenti di contenuto sono memorizzati come **Risorse**. Ora sono gestite principalmente con il **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** , anche se possono ancora essere gestiti dalla **Risorse** console. Questa sezione riguarda la gestione da **Risorse** console.
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
@@ -100,8 +100,8 @@ In **Risorse** per i frammenti di contenuto sono disponibili diverse azioni:
 Seleziona il frammento per visualizzare la barra degli strumenti con le azioni applicabili:
 
 * **Rielabora risorse**
-* **Crea**
-* **Scarica**
+* **Creare**
+* **Download**
 
    * Salvare il frammento come file ZIP; puoi definire se includere elementi, varianti, metadati.
 
@@ -119,8 +119,8 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 * **Gestisci i tag**
 * **Alla raccolta**
 * **Copia** e **Incolla**)
-* **Sposta**
-* **Elimina**
+* **Spostare**
+* **Eliminare**
 
 >[!NOTE]
 >
@@ -292,7 +292,7 @@ Oltre alle opzioni standard, [Timeline](/help/assets/manage-digital-assets.md#ti
 
 * Azioni per le annotazioni
 
-   * **Elimina**
+   * **Eliminare**
 
 >[!NOTE]
 I commenti sono:
@@ -306,7 +306,7 @@ Le annotazioni (per i frammenti di contenuto) sono:
 >
 
 
-Ad esempio:
+Esempio:
 
 ![timeline](assets/cfm-managing-05.png)
 

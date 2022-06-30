@@ -2,7 +2,7 @@
 title: Configurazioni e browser di configurazione
 description: Comprendi le configurazioni AEM e come gestiscono le impostazioni dell’area di lavoro in AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 6%
@@ -34,7 +34,7 @@ L’amministratore AEM e gli autori possono considerare le configurazioni come a
 È possibile creare configurazioni per molte funzioni diverse all’interno di AEM.
 
 * [Segmenti Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
+* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [Modelli modificabili](/help/sites-cloud/authoring/features/templates.md)
 * varie configurazioni cloud
 
@@ -80,7 +80,7 @@ Il Browser configurazioni consente a un amministratore di creare, gestire e conf
       * Se necessario è possibile modificarlo.
 1. Controlla il tipo di configurazioni che desideri consentire.
    * [Segmenti Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [Modelli modificabili](/help/sites-cloud/authoring/features/templates.md)
    * varie configurazioni cloud
 1. Tocca o fai clic su **Crea**.

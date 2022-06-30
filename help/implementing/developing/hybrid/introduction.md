@@ -2,7 +2,7 @@
 title: Introduzione a SPA e procedura dettagliata
 description: Questo articolo introduce i concetti di un SPA e spiega come utilizzare un'applicazione SPA di base per l'authoring, mostrando come si relaziona con l'Editor SPA sottostante.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 2%
@@ -31,7 +31,7 @@ La procedura dettagliata si basa sulle funzionalità AEM standard e sull’app d
 
 >[!TIP]
 >
->Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+>Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
 ### Cos&#39;è un SPA? {#what-is-a-spa}
 
@@ -49,7 +49,7 @@ Essendo più veloce, fluida e più simile a un&#39;applicazione nativa, un SPA d
 
 #### Visitatori {#visitors}
 
-* Visitors want native-like experiences when they interact with content.
+* I visitatori desiderano esperienze di tipo nativo quando interagiscono con i contenuti.
 * Ci sono dati chiari che più veloce sarà una pagina, più probabile sarà una conversione.
 
 #### Addetti al marketing {#marketers}
@@ -62,11 +62,11 @@ Essendo più veloce, fluida e più simile a un&#39;applicazione nativa, un SPA d
 * Gli sviluppatori vogliono una netta separazione tra contenuti e presentazioni.
 * La separazione pulita rende il sistema più estensibile e consente uno sviluppo front-end indipendente.
 
-### How Does a SPA Work? {#how-does-a-spa-work}
+### Come funziona un SPA? {#how-does-a-spa-work}
 
 L&#39;idea principale alla base di un SPA è che le chiamate a e la dipendenza da un server vengono ridotte al fine di ridurre al minimo i ritardi causati dalla latenza del server, in modo che il SPA si avvicini alla reattività di un&#39;applicazione nativa.
 
-In a traditional, sequential webpage, only the data needed for the immediate page is loaded. Questo significa che quando il visitatore si sposta su un’altra pagina, il server viene chiamato per le risorse aggiuntive. Potrebbero essere necessarie chiamate aggiuntive mentre il visitatore interagisce con gli elementi della pagina. These multiple calls can give a sense of lag or delay as the page has to catch up with the visitor&#39;s requests.
+In una pagina web tradizionale sequenziale, vengono caricati solo i dati necessari per la pagina immediata. Questo significa che quando il visitatore si sposta su un’altra pagina, il server viene chiamato per le risorse aggiuntive. Potrebbero essere necessarie chiamate aggiuntive mentre il visitatore interagisce con gli elementi della pagina. Queste chiamate multiple possono dare un senso di ritardo o ritardo in quanto la pagina deve soddisfare le richieste del visitatore.
 
 ![Esperienze sequenziali e fluide](assets/spa-sequential-vs-fluid.png)
 
@@ -104,7 +104,7 @@ Quando viene creata una SPA per sfruttare l’Editor SPA AEM, l’autore del con
 
 1. Utilizza il browser Risorse per trascinare una nuova immagine in un componente immagine.
 
-   ![Dropping an image asset](assets/wkdn-drop-image.png)
+   ![Eliminazione di una risorsa immagine](assets/wkdn-drop-image.png)
 
 1. La modifica viene mantenuta.
 
@@ -161,7 +161,7 @@ La sezione successiva, [Caricamento di un&#39;applicazione SPA](#loading-a-spa-a
    * La pagina non ha alcun contenuto all’interno del suo corpo. È composto principalmente da fogli di stile e una chiamata a vari script come `clientlib-react.min.js`.
    * Questi script sono i driver principali di questa applicazione e sono responsabili del rendering di tutti i contenuti.
 
-1. Utilizza gli strumenti incorporati del browser per ispezionare la pagina. See the content of the DOM fully loaded.
+1. Utilizza gli strumenti incorporati del browser per ispezionare la pagina. Visualizzare il contenuto del DOM completamente caricato.
 
    ![DOM del progetto di SPA WKND](assets/wknd-dom.png)
 
@@ -177,7 +177,7 @@ La sezione successiva, [Caricamento di un&#39;applicazione SPA](#loading-a-spa-a
 
    ![JSON della pagina principale del progetto SPA WKND](assets/wknd-json.png)
 
-   The AEM SPA Editor leverages [AEM Content Services](/help/assets/content-fragments/content-fragments.md) to deliver the entire content of the page as a JSON model.
+   L’editor SPA AEM sfrutta [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) per fornire l’intero contenuto della pagina come modello JSON.
 
    Implementando interfacce specifiche, i modelli Sling forniscono le informazioni necessarie al SPA. La consegna dei dati JSON viene delegata verso il basso a ciascun componente (dalla pagina, al paragrafo, al componente, ecc.).
 
@@ -209,11 +209,11 @@ Nella sezione seguente esploreremo il contratto che consente all’editor di SPA
 
 1. Utilizzando gli strumenti di sviluppo incorporati del browser, esamina il contenuto della pagina. Con lo strumento di selezione, seleziona un componente modificabile nella pagina e visualizza i dettagli dell’elemento.
 
-   Note that the component has a new data attribute `data-cq-data-path`.
+   Il componente ha un nuovo attributo dati `data-cq-data-path`.
 
-   ![Inspecting WKND SPA Project elements](assets/wknd-inspector.png)
+   ![Ispezione degli elementi del progetto WKND SPA](assets/wknd-inspector.png)
 
-   Ad esempio
+   Esempio
 
    `data-cq-data-path="/content/wknd-spa-react/us/en/home/jcr:content/root/responsivegrid/text`
 
@@ -225,7 +225,7 @@ Nella sezione seguente esploreremo il contratto che consente all’editor di SPA
 
    >[!NOTE]
    >
-   >This behavior differs from server-side rendered pages in AEM, where there is a `cq` element inserted for each editable component.
+   >Questo comportamento è diverso dalle pagine di cui è stato eseguito il rendering lato server in AEM, dove è presente un `cq` per ogni componente modificabile.
    >
    >Questo approccio nell’editor di SPA elimina la necessità di inserire elementi personalizzati, basandosi solo su un attributo di dati aggiuntivo, semplificando il markup per lo sviluppatore front-end.
 

@@ -4,7 +4,7 @@ description: Scopri come configurare il framework di integrazione della traduzio
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 2%
@@ -109,7 +109,7 @@ Le proprietà delle risorse controllano come configurare le risorse. Per ulterio
 | Traduci tag | Attiva questa proprietà per tradurre i tag associati alla risorsa. |
 | Esegui automaticamente traduzione | Selezionare questa proprietà per eseguire automaticamente i processi di traduzione dopo la creazione dei progetti di traduzione. Non è possibile rivedere o ampliare il processo di traduzione quando si seleziona questa opzione. |
 | Disattiva la traduzione solo aggiornamento | Quando questa opzione è selezionata, l’aggiornamento del progetto di traduzione invierà tutti i campi traducibili per la traduzione, non solo quelli modificati dall’ultima traduzione. |
-| Abilita campi del modello di contenuto per la traduzione | L’abilitazione di questa opzione utilizza la variabile **Traducibile** campo su [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#properties) per determinare se il campo è tradotto e crea automaticamente [regole di traduzione](rules.md) di conseguenza. Questa opzione sostituisce eventuali regole di traduzione create dall’utente. |
+| Abilita campi del modello di contenuto per la traduzione | L’abilitazione di questa opzione utilizza la variabile **Traducibile** campo su [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) per determinare se il campo è tradotto e crea automaticamente [regole di traduzione](rules.md) di conseguenza. Questa opzione sostituisce eventuali regole di traduzione create dall’utente. |
 
 ## Configurazione delle pagine per la traduzione {#configuring-pages-for-translation}
 

@@ -2,7 +2,7 @@
 title: Come aggiornare i contenuti tramite le API di AEM Assets
 description: In questa parte del Percorso di sviluppatori AEM Headless, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 3%
@@ -303,7 +303,7 @@ Per ulteriori dettagli sull’utilizzo dell’API REST di AEM Assets, puoi fare 
 * API HTTP di Adobe Experience Manager Assets (risorse aggiuntive)
 * Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets (risorse aggiuntive)
 
-## Novità {#whats-next}
+## Prossimi passaggi {#whats-next}
 
 Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, devi:
 
@@ -326,7 +326,7 @@ Continua il tuo percorso AEM headless rivedendo il documento successivo [Come me
 * [API REST per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
-* [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
+* [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Spiegazione di CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video: sviluppo per CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)

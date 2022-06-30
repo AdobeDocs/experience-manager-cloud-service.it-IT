@@ -2,7 +2,7 @@
 title: Percorso per la prima esperienza con AEM Headless
 description: In questa parte del Percorso di sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprendi le best practice per rendere il percorso il più semplice possibile.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '2014'
 ht-degree: 1%
@@ -120,7 +120,7 @@ Un progetto senza testa non solo ha successo grazie alla tecnologia implementata
 * Sfrutta tutte le funzionalità offerte dal tuo sistema di tecnologia di traduzione che puoi integrare con AEM come la memoria di traduzione.
 * Comprendere se i contenuti rich media, come immagini e video, devono essere localizzati.
 
-## Novità {#what-is-next}
+## Prossimi passaggi {#what-is-next}
 
 Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, devi:
 
@@ -149,6 +149,6 @@ Mentre è consigliabile passare alla parte successiva del percorso di sviluppo h
 * [Guide AEM WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Questo progetto GitHub include applicazioni di esempio che evidenziano AEM API GraphQL.
 * [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Panoramica completa dell&#39;architettura AEM
 * [Configurazione headless](/help/headless/introduction.md#getting-started) - Introduzione rapida alle funzioni AEM headless per gli utenti già esperti di AEM.
-* [Creare modelli di frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) - Documentazione tecnica sui modelli di frammenti di contenuto
-* [Creare frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) - Documentazione tecnica sui frammenti di contenuto
+* [Creare modelli di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Documentazione tecnica sui modelli di frammenti di contenuto
+* [Creare frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Documentazione tecnica sui frammenti di contenuto
 * [Query del contenuto con GraphQL](/help/headless/graphql-api/content-fragments.md) - Documentazione tecnica sull’API GraphQL

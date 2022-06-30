@@ -3,7 +3,7 @@ title: Considerazioni sulle autorizzazioni per contenuti headless
 description: Scopri diverse considerazioni su autorizzazioni e ACL per un’implementazione headless con Adobe Experience Manager. Comprendi i diversi utenti tipo e i potenziali livelli di autorizzazione necessari sia per gli ambienti Author che per quelli Publish.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
@@ -54,7 +54,7 @@ Se utilizzi IMS per l’iscrizione al gruppo, aggiungi i gruppi IMS appropriati 
 
 Per autorizzazioni più granulari, utilizza la variabile **Autorizzazioni** in AEM e aggiorna il percorso da `/content/dam` a un percorso più specifico, ovvero `/content/dam/mycontentfragments`.
 
-Potrebbe essere opportuno concedere a questo gruppo di utenti le autorizzazioni necessarie per creare e modificare frammenti di contenuto, ma non per eliminarli. Per rivedere e assegnare le autorizzazioni per la modifica, ma non per eliminarla, consulta [Frammenti di contenuto - Considerazioni sull’eliminazione](/help/assets/content-fragments/content-fragments-delete.md).
+Potrebbe essere opportuno concedere a questo gruppo di utenti le autorizzazioni necessarie per creare e modificare frammenti di contenuto, ma non per eliminarli. Per rivedere e assegnare le autorizzazioni per la modifica, ma non per eliminarla, consulta [Frammenti di contenuto - Considerazioni sull’eliminazione](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
 
 ### Editor modelli
 

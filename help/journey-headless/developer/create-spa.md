@@ -2,10 +2,10 @@
 title: Facoltativo - Come creare applicazioni a pagina singola (SPA) con AEM
 description: In questa continuazione opzionale del Percorso di sviluppatori AEM headless, scopri come AEM combinare la distribuzione headless con le tradizionali funzioni CMS full-stack e come creare SPA modificabili utilizzando AEM framework di editor di contenuti.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -101,7 +101,7 @@ Il componente RemotePage consente il rendering di un SPA esterno in AEM.
 
 Per una descrizione completa di come rendere modificabile un SPA esterno in AEM, consulta la sezione [risorse aggiuntive](#additional-resources) per i collegamenti a una documentazione più dettagliata.
 
-## Novità {#what-is-next}
+## Prossimi passaggi {#what-is-next}
 
 Per iniziare a sviluppare un proprio SPA per AEM, controlla i seguenti documenti:
 
@@ -126,5 +126,5 @@ Di seguito sono riportate alcune risorse aggiuntive che approfondiscono alcuni c
 * [Panoramica dell’editor di SPA](/help/implementing/developing/hybrid/editor-overview.md) - Dettagli sul funzionamento dell&#39;editor SPA
 * [Rendering lato server](/help/implementing/developing/hybrid/ssr.md) - Come configurare SSR per AEM SPA
 * [Documenti di riferimento SPA](/help/implementing/developing/hybrid/reference-materials.md) - Riferimenti e collegamenti API JavaScript a progetti open source AEM GitHub
-* [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) - Come creare frammenti di contenuto
-* [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Modello Maven che crea un progetto Adobe Experience Manager (AEM) minimale basato su best practice come punto di partenza per il sito web
+* [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Come creare frammenti di contenuto
+* [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) - Modello Maven che crea un progetto Adobe Experience Manager (AEM) minimale basato su best practice come punto di partenza per il sito web

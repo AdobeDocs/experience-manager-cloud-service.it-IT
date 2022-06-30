@@ -2,16 +2,16 @@
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redigere e utilizzare contenuti indipendenti dalla pagina.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 100%
+source-wordcount: '1164'
+ht-degree: 98%
 
 ---
 
 # Frammenti di contenuto {#content-fragments}
 
-I frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md).
+I frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/sites-cloud/administering/content-fragments/content-fragments.md).
 
 Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
@@ -28,7 +28,7 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 
 >[!CAUTION]
 >
->Questa pagina deve essere letta insieme a [Utilizzo dei frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) (e pagine correlate), in quanto introduce la terminologia e i concetti di base e spiega come creare e gestire i frammenti.
+>Questa pagina deve essere letta insieme a [Utilizzo dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) (e pagine correlate), in quanto introduce la terminologia e i concetti di base e spiega come creare e gestire i frammenti.
 
 I frammenti di contenuto si prestano alle seguenti applicazioni:
 
@@ -105,7 +105,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
 ### Collegamento rapido all’editor frammento di contenuto  {#quick-connection-to-fragment-editor}
 
-Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **Modifica** nella barra degli strumenti del componente, così da poter [modificare e gestire il frammento di contenuto](/help/assets/content-fragments/content-fragments.md).
+Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **Modifica** nella barra degli strumenti del componente, così da poter [modificare e gestire il frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -115,7 +115,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 
 Quando si aggiunge alla pagina un frammento di contenuto specifico, è disponibile un segnaposto **Trascina qui i componenti** fra ciascun paragrafo HTML (nonché all’inizio e alla fine) del frammento.
 
-Questo consente di aggiungere ulteriori contenuti [intermedi (ad esempio, contenuti intermedi)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) all’interno del contenuto del frammento (nei punti disponibili), senza dover modificare il frammento principale.
+Questo consente di aggiungere ulteriori contenuti [intermedi (ad esempio, contenuti intermedi)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) all’interno del contenuto del frammento (nei punti disponibili), senza dover modificare il frammento principale.
 
 Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 
@@ -131,9 +131,9 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 
 >[!NOTE]
 >
->Puoi anche [inserire risorse visive (immagini) nel frammento stesso](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>Puoi anche [inserire risorse visive (immagini) nel frammento stesso](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Le risorse visive inserite nel frammento stesso sono associate al paragrafo precedente nel frammento. Non è pertanto possibile inserire contenuto intermedio tra una risorsa visiva e il paragrafo precedente. Qualora ti occorra questo livello di connessione, puoi aggiungere l’immagine al frammento (come [frammento con file multimediali diversi](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+>Le risorse visive inserite nel frammento stesso sono associate al paragrafo precedente nel frammento. Non è pertanto possibile inserire contenuto intermedio tra una risorsa visiva e il paragrafo precedente. Qualora ti occorra questo livello di connessione, puoi aggiungere l’immagine al frammento (come [frammento con file multimediali diversi](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
@@ -149,11 +149,11 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 
 ### Uso di contenuti associati  {#using-associated-content}
 
-Se hai [associato del contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Se hai [associato del contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
->Esistono diversi metodi per aggiungere [risorse visive (ad es. immagini)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
+>Esistono diversi metodi per aggiungere [risorse visive (ad es. immagini)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Da qui puoi trascinare le risorse nella posizione richiesta (su un componente es
 
 ### Risorse inserite nel frammento {#assets-inserted-into-the-fragment}
 
-Se sono state inserite delle risorse (ad es. immagini) nel frammento stesso (come [frammenti con file multimediali diversi](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)) le opzioni per la modifica di tali risorse nell’editor pagina sono limitate.
+Se sono state inserite delle risorse (ad es. immagini) nel frammento stesso (come [frammenti con file multimediali diversi](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)) le opzioni per la modifica di tali risorse nell’editor pagina sono limitate.
 
 Ad esempio, per un’immagine è possibile:
 
@@ -182,5 +182,5 @@ Altre modifiche, come spostamento, copia, eliminazione devono essere eseguite ne
 
 I frammenti devono essere pubblicati in modo che possano essere utilizzati nelle pagine web pubblicate:
 
-* Un frammento può essere pubblicato dopo che è stato [creato nella console Risorse](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
+* Un frammento può essere pubblicato dopo [creazione del frammento nella console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
 * Se in una pagina in corso di pubblicazione viene utilizzato un *frammento non pubblicato*, è possibile pubblicare anche quest’ultimo allo stesso tempo.

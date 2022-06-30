@@ -3,7 +3,7 @@ title: Gestire gli endpoint GraphQL in AEM
 description: Scopri come gestire gli endpoint GraphQL in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: a4f3e55bb3bc39575d43894b9fea1180eaf1a578
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 98%
@@ -22,10 +22,10 @@ Esistono due tipi di endpoint in AEM:
 
 * Globale
    * Disponibile per tutti i siti.
-   * Questo endpoint può utilizzare tutti i modelli per frammenti di contenuto di tutte le configurazioni di Sites (definite nella sezione [Browser configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Questo endpoint può utilizzare tutti i modelli per frammenti di contenuto di tutte le configurazioni di Sites (definite nella sezione [Browser configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
    * Se esistono modelli per frammenti di contenuto che devono essere condivisi tra le configurazioni di Sites, questi devono essere creati nelle configurazioni globali di Sites.
 * Configurazioni di Sites:
-   * Corrisponde a una configurazione Sites, come definita nella sezione [Browser configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Corrisponde a una configurazione Sites, come definita nella sezione [Browser configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
    * Sono specifiche per un determinato sito o progetto.
    * Un endpoint specifico per la configurazione di Sites utilizzerà i modelli di frammento di contenuto di quella specifica configurazione di Sites insieme a quelli della configurazione globale di Sites.
 
@@ -52,11 +52,11 @@ Per abilitare un endpoint per GraphQL per AEM è necessario:
 
 ## Abilitazione dell’endpoint GraphQL {#enabling-graphql-endpoint}
 
-Per abilitare un endpoint GraphQL è innanzitutto necessario disporre di una configurazione appropriata. Vedi la sezione [Frammenti di contenuto - Browser configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+Per abilitare un endpoint GraphQL è innanzitutto necessario disporre di una configurazione appropriata. Vedi la sezione [Frammenti di contenuto - Browser configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
 
 >[!CAUTION]
 >
->Se l’[utilizzo di modelli per frammenti di contenuto non è stato abilitato](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’opzione **Crea** non sarà disponibile.
+>Se l’[utilizzo di modelli per frammenti di contenuto non è stato abilitato](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md), l’opzione **Crea** non sarà disponibile.
 
 Per abilitare l’endpoint corrispondente:
 

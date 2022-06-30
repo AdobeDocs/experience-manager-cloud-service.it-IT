@@ -2,10 +2,10 @@
 title: Scopri come definire metadati e tag per i frammenti di contenuto
 description: Scopri come definire metadati e tag per i frammenti di contenuto
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 14%
+source-wordcount: '241'
+ht-degree: 15%
 
 ---
 
@@ -28,7 +28,7 @@ Questo articolo si basa su questi elementi per comprendere come utilizzare metad
 
 Esistono tre metodi per aggiungere metadati e tag:
 
-* Al primo momento della creazione del frammento:
+* Al primo momento della creazione del frammento (dal **Risorse** console):
 
    ![Crea frammento di contenuto - specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
@@ -38,14 +38,14 @@ Esistono tre metodi per aggiungere metadati e tag:
 
    * È inoltre direttamente accessibile tramite l’ **Proprietà** nella barra degli strumenti della console Risorse.
 
-## Novità {#whats-next}
+## Prossimi passaggi {#whats-next}
 
 Ora puoi mettere a disposizione tutte queste conoscenze per utilizzare e iniziare a creare frammenti di contenuto per il tuo progetto.
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Metadati - Proprietà dei frammenti](/help/assets/content-fragments/content-fragments-metadata.md)
+* [Metadati - Proprietà dei frammenti](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modelli per frammenti di contenuto - Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modelli per frammenti di contenuto - Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

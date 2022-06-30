@@ -2,7 +2,7 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 3%
@@ -13,13 +13,13 @@ ht-degree: 3%
 
 All’interno di Adobe Experience Manager as a Cloud Service un frammento di contenuto estende una risorsa standard; vedi:
 
-* [Creazione e gestione di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) e [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md) per ulteriori informazioni sui frammenti di contenuto.
+* [Creazione e gestione di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) e [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md) per ulteriori informazioni sui frammenti di contenuto.
 
 * [Gestione delle risorse](/help/assets/manage-digital-assets.md) per ulteriori informazioni sulle risorse standard.
 
 ## Architettura {#architecture}
 
-Le basi [parti costituenti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) di un frammento di contenuto:
+Le basi [parti costituenti](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) di un frammento di contenuto:
 
 * A *Frammento di contenuto*,
 * costituito da uno o più *Elementi contenuto*,
@@ -79,7 +79,7 @@ Come per le risorse standard, un frammento di contenuto è conservato in:
 
 #### Autorizzazioni delle risorse {#asset-permissions}
 
-Per maggiori dettagli vedi [Frammento di contenuto - Considerazioni sull’eliminazione](/help/assets/content-fragments/content-fragments-delete.md).
+Per maggiori dettagli vedi [Frammento di contenuto - Considerazioni sull’eliminazione](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
 
 #### Integrazione delle funzioni {#feature-integration}
 
@@ -299,7 +299,7 @@ A questo scopo, puoi adattare la risorsa che rappresenta l’API a:
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-Ad esempio:
+Esempio:
 
 ```java
 // first, get the resource
@@ -316,7 +316,7 @@ if (fragmentResource != null) {
 Per creare un nuovo frammento di contenuto a livello di programmazione, è necessario utilizzare un
 `FragmentTemplate` adattato da una risorsa modello.
 
-Ad esempio:
+Esempio:
 
 ```java
 Resource modelRsc = resourceResolver.getResource("...");
@@ -326,7 +326,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Esempio: Specifica dell&#39;intervallo di salvataggio automatico {#example-specifying-the-auto-save-interval}
 
-La [intervallo di salvataggio automatico](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) (misurato in secondi) può essere definito utilizzando il gestore di configurazione (ConfMgr):
+La [intervallo di salvataggio automatico](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) (misurato in secondi) può essere definito utilizzando il gestore di configurazione (ConfMgr):
 
 * Nodo: `<conf-root>/settings/dam/cfm/jcr:content`
 * Nome proprietà: `autoSaveInterval`

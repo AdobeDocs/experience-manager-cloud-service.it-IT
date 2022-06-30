@@ -2,10 +2,10 @@
 title: 'Creazione di frammenti di contenuto: configurazione headless'
 description: Scopri come utilizzare i Frammenti di contenuto AEM per progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina per la consegna headless.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 100%
+source-wordcount: '348'
+ht-degree: 78%
 
 ---
 
@@ -25,24 +25,21 @@ I Frammenti di contenuto contengono contenuto strutturato e possono essere conse
 
 Gli autori dei contenuti creano un certo numero di Frammenti di contenuto per rappresentare il contenuto creato. Questa sarà l’attività principale dei Frammenti di contenuto in AEM. Ai fini di questa guida introduttiva, ne creeremo uno.
 
-1. Accedi ad AEM as a Cloud Service e seleziona dal menu principale **Navigazione -> Risorse**.
+1. Accedi AEM as a Cloud Service e seleziona dal menu principale **Navigazione** -> **Frammenti di contenuto**.
+
 1. Tocca o fai clic sulla [cartella creata in precedenza.](create-assets-folder.md)
-1. Tocca o fai clic su **Crea -> Frammento di contenuto**.
-1. La creazione di un Frammento di contenuto viene presentata come una procedura guidata in due passaggi. Seleziona innanzitutto il modello da utilizzare per creare il frammento di contenuto e tocca o fai clic su **Successivo**.
+1. Tocca o fai clic su **Crea**.
+1. La creazione di un frammento di contenuto viene presentata come una finestra di dialogo.
+Seleziona la posizione e il modello da utilizzare per creare il frammento di contenuto.
+
    * I modelli disponibili dipendono dalla [**configurazione cloud** definita per la cartella risorse](create-assets-folder.md) in cui stai creando il frammento di contenuto.
-   * Se ricevi il messaggio `We could not find any models`, controlla la configurazione della cartella delle risorse.
+   * Se il modello non è disponibile, controlla la configurazione della cartella delle risorse.
 
-   ![Seleziona modello di Frammento di contenuto](../assets/content-fragment-model-select.png)
-1. Fornisci **Titolo**, **Descrizione** e **Tag** secondo necessità, quindi tocca o fai clic su **Crea**.
+   Aggiungi Titolo, Nome e, se necessario, Descrizione.
 
-   ![Creare Frammento di contenuto](../assets/content-fragment-create.png)
-1. Tocca o fai clic su **Apri** nella finestra di conferma.
+   ![Finestra di dialogo Crea nuovo frammento di contenuto](/help/headless/content-fragments/assets/cfc-console-create.png)
 
-   ![Conferma di creazione del Frammento di contenuto](../assets/content-fragment-confirmation.png)
-1. Fornisci i dettagli del Frammento di contenuto nell’Editor frammento di contenuto.
-
-   ![Editor frammento di contenuto](../assets/content-fragment-edit.png)
-1. Tocca o fai clic su **Salva** o **Salva e chiudi**.
+1. Tocca o fai clic su **Crea** o  **Crea e apri**.
 
 I Frammenti di contenuto possono fare riferimento ad altri Frammenti di contenuto, consentendo se necessario una struttura di contenuto nidificata.
 
@@ -54,4 +51,4 @@ Dopo aver creato un Frammento di contenuto, puoi passare alla parte finale della
 
 >[!TIP]
 >
->Per informazioni complete sulla gestione dei Frammenti di contenuto, consulta la sezione [Documentazione sui Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
+>Per informazioni complete sulla gestione dei Frammenti di contenuto, consulta la sezione [Documentazione sui Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)
