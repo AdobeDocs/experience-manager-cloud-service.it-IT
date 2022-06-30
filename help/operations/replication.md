@@ -2,9 +2,9 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
+source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1216'
 ht-degree: 4%
 
 ---
@@ -40,25 +40,6 @@ Gestisci pubblicazione offre più opzioni rispetto alla pubblicazione rapida e c
 L’inclusione degli elementi figlio di una cartella per l’opzione &quot;Pubblica più tardi&quot; richiamerà il flusso di lavoro Pubblica albero del contenuto descritto in questo articolo.
 
 Puoi trovare informazioni più dettagliate su Gestisci pubblicazione nella sezione [Documentazione di base sulla pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
-
-### Attivazione albero {#tree-activation}
-
->[!NOTE]
->
->Questo approccio deve essere considerato obsoleto e verrà rimosso il 30 settembre 2021 o dopo tale data, in quanto non persiste dello stato ed è meno scalabile di altri approcci. Il consiglio di Adobe è invece di utilizzare i metodi di pubblicazione o flusso di lavoro di gestione
-
-Per eseguire un&#39;attivazione ad albero:
-
-1. Dal menu di avvio AEM, passa a **Strumenti > Implementazione > Distribuzione**
-2. Seleziona la scheda **pubblicare**
-3. Una volta nell’interfaccia utente della console Web di pubblicazione, **seleziona Distribuisci**
-
-   ![Distribuisci](assets/publish-distribute.png "Distribuisci")
-4. Seleziona il percorso nel browser percorsi, scegli di aggiungere un nodo, una struttura o un&#39;eliminazione come richiesto e seleziona **Invia**
-
-Per ottenere le migliori prestazioni, segui queste linee guida quando utilizzi questa funzione:
-* Si consiglia di replicare meno di 100 percorsi alla volta, con un limite rigido del percorso di 500.
-* La dimensione totale del contenuto replicato deve essere inferiore a 10 MB. Questo include solo i nodi e le proprietà, ma non tutti i binari, che includono pacchetti di flusso di lavoro e pacchetti di contenuto.
 
 ### Flusso di lavoro della struttura dei contenuti di pubblicazione {#publish-content-tree-workflow}
 
@@ -192,9 +173,12 @@ Nel caso in cui non si fornisca un filtro di questo tipo e si utilizzi solo l’
 Il `ReplicationStatus` di una risorsa viene modificata solo se l&#39;azione di replica include almeno un agente attivo per impostazione predefinita. Nell’esempio precedente questo non avviene, in quanto la replica utilizza solo l’agente &quot;preview&quot;. Pertanto, devi utilizzare il nuovo `getStatusForAgent()` , che consente di eseguire una query sullo stato di un agente specifico. Questo metodo funziona anche per l’agente &quot;publish&quot;. Restituisce un valore non-null se è stata eseguita un&#39;azione di replica utilizzando l&#39;agente fornito.
 
 
-**Limiti di percorso e dimensioni dell’API di replica**
+**Limiti di capacità dell’API di replica**
 
-Si consiglia di replicare meno di 100 percorsi, con 500 come limite rigido. Al di sopra del limite rigido, verrà lanciata una ReplicationException. Se la logica dell&#39;applicazione non richiede la replica atomica, questo limite può essere superato impostando ReplicationOptions.setUseAtomicCalls su false, che accetta qualsiasi numero di percorsi, ma crea internamente bucket per rimanere al di sotto di questo limite. La quantità di contenuto trasmesso per chiamata di replica non deve superare i 10 MB, che include i nodi e le proprietà, ma non eventuali binari (i pacchetti di flusso di lavoro e i pacchetti di contenuto sono considerati binari).
+Si consiglia di replicare meno di 100 percorsi alla volta, con 500 come limite rigido. Al di sopra del limite rigido, un `ReplicationException` verranno lanciati.
+Se la logica dell&#39;applicazione non richiede la replica atomica, questo limite può essere superato impostando il `ReplicationOptions.setUseAtomicCalls` su false, che accetta qualsiasi numero di percorsi, ma crea internamente bucket per rimanere al di sotto di questo limite.
+
+La dimensione del contenuto trasmesso per chiamata di replica non deve superare `10 MB`. Ciò include i nodi e le proprietà, ma non eventuali binari (i pacchetti di flusso di lavoro e i pacchetti di contenuto sono considerati binari).
 
 ## Risoluzione dei problemi {#troubleshooting}
 

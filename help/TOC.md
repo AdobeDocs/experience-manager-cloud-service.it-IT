@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5200ee315ad88dae4b52c0ea904489e73f62a8a0
+source-git-commit: 0f6546d4a25a59a93090952f0ee58e27f0f0f838
 workflow-type: tm+mt
-source-wordcount: '3609'
+source-wordcount: '3612'
 ht-degree: 96%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 96%
    + Note generali sulla versione di AEMaaCS {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [Note sulla versione 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
          + [Note sulla versione 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [Note sulla versione 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
          + [Note sulla versione 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)

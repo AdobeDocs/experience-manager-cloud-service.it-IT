@@ -3,10 +3,10 @@ title: Utilizzo dell’IDE GraphiQL in AEM
 description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1008'
+ht-degree: 66%
 
 ---
 
@@ -96,6 +96,33 @@ Esempio:
 
 ![Variabili GraphQL](assets/cfm-graphqlapi-03.png "Variabili GraphQL")
 
+## Gestione della cache per le query persistenti {#managing-cache}
+
+[Query persistenti](/help/headless/graphql-api/persisted-queries.md) sono consigliati in quanto possono essere memorizzati nella cache ai livelli dispatcher e CDN, migliorando in ultima analisi le prestazioni dell’applicazione client richiedente. Per impostazione predefinita, AEM la cache CDN (Content Delivery Network) in base a un valore predefinito Time To Live (TTL).
+
+Utilizzando GraphQL è possibile configurare le intestazioni della cache HTTP per controllare questi parametri per la singola query persistita.
+
+1. La **Intestazioni** è accessibile tramite i tre punti verticali a destra del nome della query persistente (pannello a sinistra):
+
+   ![Intestazioni persistenti della cache HTTP della query](assets/cfm-graphqlapi-headers-01.png "Intestazioni persistenti della cache HTTP della query")
+
+1. Selezionando questa opzione si aprirà la **Configurazione cache** finestra di dialogo:
+
+   ![Impostazioni di intestazione della cache HTTP query persistente](assets/cfm-graphqlapi-headers-02.png "Impostazioni di intestazione della cache HTTP query persistente")
+
+1. Seleziona il parametro appropriato, quindi regola il valore come richiesto:
+
+   * **controllo della cache** - **età massima**
+Le cache possono memorizzare questo contenuto per un numero specificato di secondi. In genere si tratta del TTL del browser (Time To Live).
+   * **controllo sostitutivo** - **s-maxage**
+Uguale all’età massima, ma si applica in modo specifico alle cache proxy.
+   * **controllo sostitutivo** - **stale-while-revalidate**
+Le cache possono continuare a servire una risposta nella cache dopo che è diventata obsoleta, per un massimo di un numero specificato di secondi.
+   * **controllo sostitutivo** - **stale-if-error**
+Le cache possono continuare a fornire una risposta nella cache in caso di errore di origine o di origine, per un massimo di un numero specificato di secondi.
+
+1. Seleziona **Salva** per mantenere le modifiche.
+
 ## Pubblicazione di query persistenti {#publishing-persisted-queries}
 
 Dopo aver selezionato la query persistente dall’elenco (pannello a sinistra), puoi utilizzare le azioni **Pubblica** e **Annulla pubblicazione**. Questo li attiverà nell’ambiente di pubblicazione (ad esempio, `dev-publish`) per un facile accesso da parte delle applicazioni durante il test.
@@ -103,32 +130,6 @@ Dopo aver selezionato la query persistente dall’elenco (pannello a sinistra), 
 >[!NOTE]
 >
 >La definizione della cache della query persistente `Time To Live` {&quot;cache-control&quot;:&quot;parametro&quot;:valore} ha un valore predefinito di 2 ore (7200 secondi).
-
-## Memorizzazione in cache delle query persistenti {#caching-persisted-queries}
-
-AEM renderà non valida la cache CDN (Content Delivery Network) in base a un valore Time To Live (TTL) predefinito.
-
-Questo valore è impostato su:
-
-* 7200 secondi, TTL predefinito per Dispatcher e CDN; noto anche come *cache condivise*
-   * impostazione predefinita: s-maxage=7200
-* 60, TTL predefinito per il client (ad esempio, un browser)
-   * impostazione predefinita: maxage=60
-
-Le query AEM GraphQL persistenti con l’interfaccia utente GraphiQL utilizzeranno il valore TTL predefinito al momento dell’esecuzione. Se desideri modificare il TTL per la query GraphLQ, la query deve essere resa persistente utilizzando il metodo API. Ciò comporta la pubblicazione della query per AEM utilizzando CURL nell’interfaccia per riga di comando.
-
-Esempio:
-
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
-```
-
-`cache-control` può essere impostato al momento della creazione (PUT) o successivamente (ad esempio, tramite una richiesta POST). Il controllo cache è facoltativo quando si crea la query persistente, in quanto AEM può fornire il valore predefinito. Vedi [Come rendere persistente una query GraphQL](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), per un esempio di persistenza di query utilizzando CURL.
 
 ## Copiare l’URL per accedere direttamente alla query {#copy-url}
 

@@ -3,10 +3,10 @@ title: Query GraphQL persistenti
 description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 47%
+source-wordcount: '1311'
+ht-degree: 48%
 
 ---
 
@@ -55,7 +55,7 @@ Si consiglia di creare le query persistenti in un ambiente di authoring AEM per 
 
 Esistono diversi metodi per le query persistenti, tra cui:
 
-* IDE GraphiQL - vedi [Salvataggio delle query persistenti](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (metodo preferito)
+* IDE GraphiQL - vedi [Salvataggio delle query persistenti](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (metodo preferito)
 * curl: vedi l’esempio seguente
 * Altri strumenti, tra cui [Postman](https://www.postman.com/)
 
@@ -258,6 +258,45 @@ Questa query può essere persistente in un percorso `wknd/adventures-by-activity
 ```
 
 Tieni presente che `%3B` è la codifica UTF-8 per `;` e `%3D` è la codifica per `=`. Le variabili della query e gli eventuali caratteri speciali devono essere [codificato correttamente](#encoding-query-url) per eseguire la query persistente.
+
+## Memorizzazione in cache delle query persistenti {#caching-persisted-queries}
+
+Le query persistenti sono consigliate in quanto possono essere memorizzate nella cache dei livelli dispatcher e CDN, migliorando in ultima analisi le prestazioni dell’applicazione client richiedente.
+
+Per impostazione predefinita, AEM la cache CDN (Content Delivery Network) in base a un valore predefinito Time To Live (TTL).
+
+Questo valore è impostato su:
+
+* 7200 secondi, TTL predefinito per Dispatcher e CDN; noto anche come *cache condivise*
+   * impostazione predefinita: s-maxage=7200
+* 60, TTL predefinito per il client (ad esempio, un browser)
+   * impostazione predefinita: maxage=60
+
+Se desideri modificare il TTL per la query GraphLQ, la query deve essere:
+
+* persistente dopo la gestione del [Intestazioni HTTP Cache - dall’IDE GraphQL](#http-cache-headers)
+* persistente utilizzando [Metodo API](#cache-api).
+
+### Gestione delle intestazioni della cache HTTP in GraphQL  {#http-cache-headers-graphql}
+
+IDE GraphiQL - vedi [Salvataggio delle query persistenti](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+### Gestione della cache dall’API {#cache-api}
+
+Ciò comporta la pubblicazione della query per AEM utilizzando CURL nell’interfaccia per riga di comando.
+
+Esempio:
+
+```xml
+curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
+`cache-control` può essere impostato al momento della creazione (PUT) o successivamente (ad esempio, tramite una richiesta POST). Il controllo cache è facoltativo quando si crea la query persistente, in quanto AEM può fornire il valore predefinito. Vedi [Come rendere persistente una query GraphQL](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), per un esempio di persistenza di query utilizzando CURL.
 
 ## Codifica dell’URL della query per l’utilizzo da parte di un’app {#encoding-query-url}
 
