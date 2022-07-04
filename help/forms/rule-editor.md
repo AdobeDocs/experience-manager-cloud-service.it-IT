@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6340'
+source-wordcount: '6351'
 ht-degree: 0%
 
 ---
@@ -531,6 +531,7 @@ Accompagnato `jsdoc` è richiesto:
 * Se desideri una configurazione e una descrizione personalizzate
 * Poiché esistono diversi modi per dichiarare una funzione in `JavaScript,` e i commenti consentono di tenere traccia delle funzioni.
 
+L&#39;editor di regole supporta la sintassi JavaScript ES2015 per script e funzioni personalizzate.
 Per ulteriori informazioni, consulta [jsdoc.app](https://jsdoc.app/).
 
 Supportato `jsdoc` tag:
