@@ -4,18 +4,14 @@ description: Integrare un modulo adattivo con Microsoft® Power Automate.
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 27aa5016d6bdc4a101ba044bf9e49c483ecdae13
+source-git-commit: ccc4d487cb180273284276cf9cdf18680a3efcb8
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
 
 # Collegare un modulo adattivo con Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
-
->[!NOTE]
->
->Questa funzione è in fase di pre-rilascio e può cambiare notevolmente prima del rilascio pubblico.
 
 È possibile configurare un modulo adattivo per eseguire un flusso cloud Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record a Power Automate Cloud Flow per l&#39;elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche aziendali intorno ai dati acquisiti e automatizzare i flussi di lavoro dei clienti. Di seguito sono riportati alcuni esempi delle operazioni che è possibile eseguire dopo l&#39;integrazione di un modulo adattivo con Microsoft® Power Automate:
 
