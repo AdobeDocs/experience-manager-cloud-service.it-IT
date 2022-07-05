@@ -2,10 +2,10 @@
 title: Introduzione alle comunicazioni as a Cloud Service di Forms
 description: Unisci automaticamente i dati con i modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
+source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 1%
+source-wordcount: '1137'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ La funzionalità fornisce API per generare e manipolare i documenti. È possibil
 
 ## Generazione di documenti
 
-Le API di generazione dei documenti di comunicazione consentono di combinare un modello (XFA o PDF) con i dati dei clienti ([Dati XML](#form-data)) per generare documenti nei formati PDF e Print come i formati PS, PCL, DPL, IPL e ZPL. Queste API utilizzano [Modelli PDF e XFA](#supported-document-types) con [Dati XML](communications-known-issues-limitations.md#form-data) per generare un singolo documento su richiesta o più documenti utilizzando un processo batch.
+Le API per la generazione di documenti di comunicazione consentono di combinare un modello (XFA o PDF) con i dati dei clienti (XML) per generare documenti in formati PDF e Print come i formati PS, PCL, DPL, IPL e ZPL. Queste API utilizzano modelli PDF e XFA con [Dati XML](communications-known-issues-limitations.md#form-data) per generare un singolo documento su richiesta o più documenti utilizzando un processo batch.
 
 In genere, si crea un modello utilizzando [Designer](use-forms-designer.md) e utilizza le API di comunicazione per unire i dati con il modello. L&#39;applicazione può inviare il documento di output a una stampante di rete, a una stampante locale o a un sistema di storage per l&#39;archiviazione. I flussi di lavoro predefiniti e personalizzati si presentano come segue:
 
@@ -101,7 +101,7 @@ Le API di manipolazione dei documenti di comunicazione consentono di combinare, 
 
 ### Assemblare documenti PDF
 
-È possibile utilizzare le API per la produzione dei documenti per assemblare due o più documenti PDF o XDP in un singolo documento o Portfolio PDF o PDF. Di seguito sono riportati alcuni modi per assemblare documenti PDF:
+È possibile utilizzare le API di manipolazione dei documenti per assemblare due o più documenti PDF o XDP in un singolo documento PDF o Portfolio PDF. Di seguito sono riportati alcuni modi per assemblare documenti PDF:
 
 * Assemblare un semplice documento PDF
 * Creare un Portfolio PDF
@@ -112,9 +112,9 @@ Le API di manipolazione dei documenti di comunicazione consentono di combinare, 
 ![Assemblaggio di un semplice documento PDF da più documenti PDF](assets/as_document_assembly.png)
 Figura: Assemblaggio di un semplice documento PDF da più documenti PDF
 
-### Smontare documenti PDF
+### Separare i documenti PDF
 
-È possibile utilizzare le API di fabbricazione del documento per smontare un documento PDF. Le API possono estrarre pagine dal documento di origine o dividere un documento di origine in base ai segnalibri. In genere, questa attività è utile se il documento PDF è stato creato in origine da molti documenti, ad esempio da una raccolta di istruzioni.
+È possibile utilizzare le API di manipolazione del documento per smontare un documento PDF. Le API possono estrarre pagine dal documento di origine o dividere un documento di origine in base ai segnalibri. In genere, questa attività è utile se il documento PDF è stato creato in origine da molti documenti, ad esempio da una raccolta di istruzioni.
 
 * Estrarre pagine da un documento di origine
 * Dividi un documento di origine basato sui segnalibri
@@ -122,9 +122,9 @@ Figura: Assemblaggio di un semplice documento PDF da più documenti PDF
 ![Dividere un documento di origine basato sui segnalibri in più documenti](assets/as_intro_pdfsfrombookmarks.png)
 Figura: Dividere un documento di origine basato sui segnalibri in più documenti
 
-### Conversione e convalida di documenti conformi a PDF/A
+### Convertire e convalidare documenti conformi a PDF/A
 
-È possibile utilizzare le API per la produzione dei documenti per convertire un documento PDF in un documento conforme a PDF/A e per determinare se un documento PDF è conforme a PDF/A. PDF/A è un formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuto audio e video.
+È possibile utilizzare le API per la manipolazione dei documenti per convertire un documento PDF in un documento conforme a PDF/A e per determinare se un documento PDF è conforme a PDF/A. PDF/A è un formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuto audio e video.
 
 ## Tipi di API per le comunicazioni
 
