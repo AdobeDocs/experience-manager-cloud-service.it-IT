@@ -1,18 +1,18 @@
 ---
-title: Guida introduttiva alla traduzione in AEM Sites
+title: Introduzione alla traduzione in AEM Sites
 description: Scopri come organizzare i contenuti AEM Sites e come funzionano gli strumenti di traduzione AEM.
 index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1412'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Guida introduttiva alla traduzione in AEM Sites {#getting-started}
+# Introduzione alla traduzione in AEM Sites {#getting-started}
 
 Scopri come organizzare i contenuti AEM Sites e come funzionano gli strumenti di traduzione AEM.
 
@@ -21,17 +21,17 @@ Scopri come organizzare i contenuti AEM Sites e come funzionano gli strumenti di
 Nel documento precedente del percorso di traduzione AEM Sites, [Scopri i contenuti di AEM Sites e come tradurre in AEM](learn-about.md) hai imparato la teoria di base di AEM Sites e ora dovresti:
 
 * Comprendere i concetti di base della creazione di contenuti AEM Sites.
-* Sii familiare con come AEM supporta la traduzione.
+* Conoscere il modo in cui AEM supporta la traduzione.
 
-Questo articolo si basa su questi elementi fondamentali per comprendere come AEM memorizza e gestisce i contenuti e come puoi utilizzare gli strumenti di traduzione AEM per tradurli.
+Questo articolo si basa su questi elementi fondamentali per comprendere come AEM memorizza e gestisce i contenuti e come puoi utilizzare gli strumenti di traduzione AEM per localizzarli.
 
 ## Obiettivo {#objective}
 
-Questo documento illustra come iniziare a tradurre il contenuto dei siti in AEM. Dopo la lettura è necessario:
+Questo documento illustra come iniziare a tradurre il contenuto dei siti in AEM. Dopo la lettura dovresti:
 
 * Comprendere l’importanza della struttura dei contenuti per la traduzione.
-* Comprendere come AEM il contenuto.
-* Conoscere AEM strumenti di traduzione.
+* Comprendere come AEM archivia il contenuto.
+* Conoscere gli strumenti di traduzione di AEM.
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
@@ -41,73 +41,73 @@ Ci sono diversi requisiti prima di iniziare a tradurre il tuo contenuto AEM.
 
 * Esperienza nella traduzione dei contenuti in un CMS
 * Esperienza utilizzando le funzioni di base di un CMS su larga scala
-* Avere una conoscenza operativa AEM manipolazione di base
-* Informazioni sul servizio di traduzione utilizzato
+* Avere una conoscenza operativa dei fondamenti di AEM
+* Comprensione del servizio di traduzione utilizzato
 * Comprensione di base del contenuto che si sta traducendo
 
 >[!TIP]
 >
->Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, considera la revisione del [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) prima di procedere. La documentazione di base sulla gestione non fa parte del percorso, quindi torna a questa pagina una volta completata.
+>Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso, quindi torna a questa pagina una volta che l&#39;avrai letta.
 
 ### Strumenti {#tools}
 
 * Accesso alla sandbox per testare la traduzione del contenuto
 * Credenziali per la connessione al servizio di traduzione preferito
-* Essere membro del `project-administrators` gruppo in AEM
+* Essere membro del gruppo `project-administrators` in AEM
 
 ## Come AEM archivia i contenuti {#content-in-aem}
 
-Per lo specialista della traduzione, non è importante comprendere in modo approfondito come AEM gestire i contenuti. Tuttavia, conoscere i concetti e la terminologia di base sarà utile in seguito all’utilizzo di strumenti di traduzione AEM. È importante comprendere il proprio contenuto e la sua struttura per tradurlo in modo efficace.
+Per lo specialista della traduzione, non è importante comprendere in modo approfondito come AEM gestisce i contenuti. Tuttavia, conoscere i concetti e la terminologia di base sarà utile in seguito all’utilizzo di strumenti di traduzione AEM. È importante comprendere il proprio contenuto e la sua struttura per tradurlo in modo efficace.
 
 ### Console Sites {#sites-console}
 
-La console Sites fornisce una panoramica della struttura dei contenuti, facilitando la navigazione e la gestione dei contenuti creando nuove pagine, spostando e copiando pagine e pubblicando contenuti.
+La console Sites fornisce una panoramica della struttura dei contenuti, facilitandone la navigazione e la gestione creando nuove pagine, spostando e copiandone altre e pubblicando contenuti.
 
-Per accedere alla console Sites :
+Per accedere alla console Sites:
 
 1. Nel menu di navigazione globale, tocca o fai clic su **Navigazione** -> **Sites**.
 1. La console Sites si apre al livello superiore del contenuto.
-1. Assicurati che il **Vista a colonne** viene selezionato utilizzando il selettore di visualizzazione in alto a destra nella finestra.
+1. Assicurati che la **Vista a colonne** sia selezionata utilizzando il selettore di visualizzazione in alto a destra nella finestra.
 
-   ![Selezione della vista a colonne](assets/selecting-column-view.png)
+   ![Selezionare la vista a colonne](assets/selecting-column-view.png)
 
 1. Toccando o facendo clic su un elemento in una colonna, il contenuto al di sotto di esso viene visualizzato nella gerarchia della colonna a destra.
 
    ![Gerarchia dei contenuti](assets/sites-console-hierarchy.png)
 
-1. Toccando o facendo clic sulla casella di controllo di un elemento in una colonna, l’elemento viene selezionato e vengono visualizzati a destra i dettagli dell’elemento selezionato nella colonna, oltre a svelare una serie di azioni disponibili per l’elemento selezionato nella barra degli strumenti precedente.
+1. Toccando o facendo clic sulla casella di spunta di un elemento in una colonna, l’elemento viene selezionato e ne vengono visualizzati i dettagli nella colonna a destra, oltre a svelarne una serie di azioni disponibili nella barra degli strumenti precedente.
 
    ![Selezione del contenuto](assets/sites-console-selection.png)
 
-1. Toccando o facendo clic sul selettore della barra in alto a sinistra, puoi anche mostrare il **Struttura contenuto** visualizzazione per una panoramica del contenuto della struttura.
+1. Toccando o facendo clic sul selettore della barra in alto a sinistra, puoi anche mostrare la **Struttura contenuto** per una panoramica della struttura dei contenuti.
 
    ![Visualizzazione Struttura contenuto](assets/sites-console-content-tree.png)
 
-Utilizzando questi semplici strumenti è possibile navigare intuitivamente nella struttura dei contenuti.
+Utilizzando questi semplici strumenti puoi navigare intuitivamente nella struttura dei contenuti.
 
 >[!NOTE]
 >
->L’architettura dei contenuti definisce normalmente la struttura del contenuto, mentre gli autori creano il contenuto all’interno di tale struttura.
+>L’architetto dei contenuti ne definisce normalmente la struttura, mentre gli autori creano il contenuto al suo interno.
 >
 >In qualità di esperto di traduzione, è importante comprendere semplicemente come navigare in quella struttura e capire dove si trova il contenuto.
 
 ### Editor pagina {#page-editor}
 
-La console Sites consente di navigare nel contenuto e fornisce una panoramica della sua struttura. Per visualizzare i dettagli di una singola pagina, devi utilizzare l’editor Sites .
+La console Sites consente di navigare nel contenuto e fornisce una panoramica della sua struttura. Per visualizzare i dettagli di una singola pagina, devi utilizzare l’editor Sites.
 
-Per modificare una pagina:
+Per modificare la pagina:
 
-1. Utilizza la console Sites per individuare e selezionare una pagina. Per selezionarla, è necessario toccare o fare clic sulla casella di controllo di una singola pagina.
+1. Utilizza la console Sites per individuare e selezionare una pagina. Per selezionarla, è necessario toccare o fare clic sulla casella di spunta di una singola pagina.
 
    ![Selezione di una pagina da modificare](assets/sites-editor-select-page.png)
 
 1. Tocca **Modifica** nella barra degli strumenti.
 1. Viene aperto l’editor Sites con la pagina selezionata caricata per la modifica in una nuova scheda del browser.
-1. Quando si passa il mouse o si tocca un contenuto, vengono visualizzati i selettori per i singoli componenti. I componenti sono i blocchi predefiniti da trascinare e rilasciare che costituiscono la pagina.
+1. Passando il mouse sopra un contenuto o toccandolo, vengono visualizzati i selettori per i singoli componenti. I componenti sono i blocchi predefiniti da trascinare e rilasciare che costituiscono la pagina.
 
-   ![Modifica di una pagina](assets/sites-editor-title.png)
+   ![Modificare una pagina](assets/sites-editor-title.png)
 
-Per tornare alla console Sites, torna a tale scheda nel browser in qualsiasi momento. Utilizzando l’editor Sites puoi visualizzare rapidamente il contenuto della pagina così come verrà visualizzato dagli autori dei contenuti e dal pubblico.
+Per tornare alla console Sites, ti basta tornare alla scheda nel browser in qualsiasi momento. Utilizzando l’editor Sites puoi visualizzare rapidamente il contenuto della pagina così come verrà visualizzato dagli autori dei contenuti e dal pubblico.
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ Per tornare alla console Sites, torna a tale scheda nel browser in qualsiasi mom
 
 ## La struttura è la chiave {#content-structure}
 
-AEM contenuto è guidato dalla sua struttura. AEM impone pochi requisiti alla struttura dei contenuti, ma un’attenta considerazione della gerarchia dei contenuti come parte della pianificazione del progetto può rendere la traduzione molto più semplice.
+Il contenuto di AEM è guidato dalla sua struttura. AEM impone pochi requisiti alla struttura dei contenuti, ma un’attenta considerazione della gerarchia dei contenuti come parte della pianificazione del progetto può rendere la traduzione molto più semplice.
 
 >[!TIP]
 >
@@ -127,7 +127,7 @@ AEM contenuto è guidato dalla sua struttura. AEM impone pochi requisiti alla st
 
 ## Struttura dei contenuti consigliata {#recommended-structure}
 
-Come precedentemente consigliato, collabora con l’architettura dei contenuti per determinare la struttura del contenuto appropriata per il tuo progetto. Tuttavia il seguente è una struttura collaudata, semplice e intuitiva che è abbastanza efficace.
+Come precedentemente consigliato, collabora con l’architetto dei contenuti per determinare la struttura appropriata per il tuo progetto. Tuttavia la seguente è una struttura collaudata, semplice e intuitiva che è abbastanza efficace.
 
 Definire una cartella di base per il progetto in `/content`.
 
@@ -135,19 +135,19 @@ Definire una cartella di base per il progetto in `/content`.
 /content/<your-project>
 ```
 
-La lingua in cui viene creato il contenuto è denominata radice della lingua. Nel nostro esempio è inglese e dovrebbe essere sotto questo percorso.
+La lingua in cui viene creato il contenuto è denominata lingua root. Nel nostro esempio è inglese e dovrebbe essere sotto questo percorso.
 
 ```text
 /content/<your-project>/en
 ```
 
-Tutti i contenuti di progetto che possono essere necessari per essere localizzati devono essere posizionati sotto la directory principale della lingua.
+Tutti i contenuti di progetto che potrebbero essere localizzati devono essere posizionati sotto la lingua root.
 
 ```text
 /content/<your-project>/en/<your-project-content>
 ```
 
-Le traduzioni devono essere create come cartelle di pari livello accanto alla directory principale della lingua con il nome della cartella che rappresenta il codice della lingua ISO-2. Ad esempio, il percorso per il tedesco è il seguente.
+Le traduzioni devono essere create come cartelle di pari livello accanto alla lingua root con il nome della cartella che rappresenta il codice della lingua ISO-2. Ad esempio, il percorso per il tedesco è il seguente.
 
 ```text
 /content/<your-project>/de
@@ -155,7 +155,7 @@ Le traduzioni devono essere create come cartelle di pari livello accanto alla di
 
 >[!NOTE]
 >
->L’architetto dei contenuti è generalmente responsabile della creazione di queste cartelle linguistiche. Se non vengono create, AEM non sarà in grado di creare successivamente lavori di traduzione.
+>L’architetto dei contenuti è generalmente responsabile della creazione di queste cartelle linguistiche. Se non vengono create, AEM non sarà in grado di elaborare successivamente lavori di traduzione.
 
 La struttura finale può avere un aspetto simile al seguente.
 
@@ -185,29 +185,29 @@ La struttura finale può avere un aspetto simile al seguente.
 
 ## Strumenti di traduzione AEM {#translation-tools}
 
-Ora che conosci la console e l’editor dei siti e l’importanza della struttura dei contenuti, possiamo capire come tradurre i contenuti. Gli strumenti di traduzione in AEM sono abbastanza potenti, ma sono semplici da comprendere ad alto livello.
+Ora che conosci la console e l’editor dei siti e l’importanza della struttura dei contenuti, possiamo vedere come tradurre i contenuti. Gli strumenti di traduzione in AEM sono abbastanza potenti, ma sono semplici da comprendere ad alto livello.
 
-* **Connettore di traduzione** - Il connettore è il collegamento tra AEM e il servizio di traduzione utilizzato.
-* **Regole di traduzione** - Le regole definiscono quali contenuti in determinati percorsi dovrebbero essere tradotti.
-* **Progetti di traduzione** - I progetti di traduzione raccolgono contenuti che devono essere affrontati come un unico sforzo di traduzione e tengono traccia dei progressi della traduzione, interfacciandosi con il connettore per trasmettere il contenuto da tradurre e riceverlo nuovamente dal servizio di traduzione.
+* **Connettore di traduzione**: il connettore è il collegamento tra AEM e il servizio di traduzione utilizzato.
+* **Regole di traduzione**: le regole definiscono quali contenuti in determinati percorsi dovrebbero essere tradotti.
+* **Progetti di traduzione**: i progetti di traduzione raccolgono contenuti che devono essere affrontati come un&#39;unica traduzione e ne tengono traccia dei progressi, interfacciandosi con il connettore per trasmettere il contenuto da tradurre e riceverlo nuovamente dal servizio di traduzione.
 
 In genere si imposta il connettore una sola volta per l’istanza e le regole per progetto. Poi utilizzi i progetti di traduzione per tradurre i contenuti e tenerne aggiornate le traduzioni su base continua.
 
 ## Novità {#what-is-next}
 
-Ora che hai completato questa parte del percorso di traduzione di AEM Sites, devi:
+Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dovresti:
 
 * Comprendere l’importanza della struttura dei contenuti per la traduzione.
-* Comprendere come AEM il contenuto.
-* Conoscere AEM strumenti di traduzione.
+* Comprendere come AEM archivia il contenuto.
+* Conoscere gli strumenti di traduzione di AEM.
 
-Sviluppa questa conoscenza e continua il tuo percorso di traduzione AEM Sites esaminando il documento successivo [Configurare il connettore di traduzione](configure-connector.md) dove verrà illustrato come connettersi AEM a un servizio di traduzione.|
+Approfondisci l&#39;argomento e continua il tuo percorso di traduzione AEM Sites consultando il documento successivo [Configurare il connettore di traduzione](configure-connector.md) dove verrà illustrato come connettere AEM a un servizio di traduzione.|
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre si consiglia di passare alla parte successiva del percorso di traduzione rivedendo il documento [Configurare il connettore di traduzione](configure-connector.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso.
+Sebbene sia consigliabile passare alla parte successiva del processo di traduzione, consultando il documento [Configurazione del connettore di traduzione](configure-connector.md), di seguito sono riportate alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma che non sono necessarie per proseguire il percorso.
 
-* [AEM Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Scopri le nozioni di base dell’interfaccia utente AEM per navigare comodamente ed eseguire attività essenziali come la ricerca dei contenuti.
-* [Identificazione del contenuto da tradurre](/help/sites-cloud/administering/translation/rules.md) - Scopri come le regole di traduzione identificano i contenuti da tradurre.
-* [Configurazione del framework di integrazione della traduzione](/help/sites-cloud/administering/translation/integration-framework.md) - Scopri come configurare il framework di integrazione della traduzione per l’integrazione con i servizi di traduzione di terze parti.
-* [Gestione dei progetti di traduzione](/help/sites-cloud/administering/translation/managing-projects.md) - Scopri come creare e gestire progetti di traduzione automatica e umana in AEM.
+* [Operazioni di base AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): scopri le nozioni di base dell’interfaccia utente AEM per navigare comodamente ed eseguire attività essenziali come la ricerca dei contenuti.
+* [Identificazione del contenuto da tradurre](/help/sites-cloud/administering/translation/rules.md): scopri come le regole di traduzione identificano i contenuti da tradurre.
+* [Configurazione del Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md): scopri come configurare il Translation Integration Framework per l’integrazione con i servizi di traduzione di terze parti.
+* [Gestione dei progetti di traduzione](/help/sites-cloud/administering/translation/managing-projects.md): scopri come creare e gestire progetti di traduzione automatica e umana in AEM.
