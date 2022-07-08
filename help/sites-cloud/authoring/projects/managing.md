@@ -1,11 +1,11 @@
 ---
 title: Gestione dei progetti
-description: I progetti consentono di organizzare il progetto raggruppando le risorse in un’unica entità accessibile e gestibile nella console Progetti
+description: Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità, accessibile e gestibile nella console dedicata
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di u
 La procedura di creazione di un progetto è la stessa per ciascun progetto. La differenza tra i tipi di progetti include i [ruoli utente](/help/sites-cloud/authoring/projects/overview.md) e i [flussi di lavoro](/help/sites-cloud/authoring/projects/workflows.md) disponibili.  Per creare un nuovo progetto:
 
 1. In **Progetti**, tocca o fai clic su **Crea** per aprire la procedura guidata **Crea progetto**:
-1. Seleziona un modello e fai clic su **Successivo**.
+1. Seleziona un modello e fai clic su **Avanti**.
 
    ![Creazione di un progetto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Definisci la **Titolo** e **Descrizione** e aggiungi un **Miniatura** se necessario. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
+1. Definisci un **titolo** e una **descrizione**; se necessario, aggiungi un’immagine di **miniatura**. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
 
    ![Aggiunta di dettagli al progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -51,13 +51,13 @@ Poiché i progetti consentono di raggruppare risorse in un’unica entità, è p
 Per associare risorse a un progetto:
 
 1. Apri il progetto dalla console **Progetti**.
-1. Tocca o fai clic su **Aggiungi sezione**, quindi seleziona la porzione che desideri collegare al progetto. È possibile selezionare tra più tipi di porzioni.
+1. Tocca o fai clic su **Aggiungi sezione**, quindi seleziona la porzione che desideri collegare al progetto. È possibile selezionare tra più tipi di riquadri.
 
-   ![Aggiunta di una porzione a un progetto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
+   ![Aggiunta di un riquadro a un progetto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
    >[!NOTE]
    >
-   >Le porzioni associabili a un progetto sono descritte dettagliatamente nella sezione [Porzioni di progetto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
+   >I riquadri associabili a un progetto sono descritti dettagliatamente nella sezione [Riquadri di progetto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 1. Tocca o fai clic su **Crea**. La risorsa è ora collegata al progetto e accessibile da questo.
 
@@ -85,9 +85,9 @@ Per alcune porzioni è possibile aggiungere più di un oggetto. Ad esempio, è p
 
 Per aggiungere elementi a una porzione:
 
-1. In **Progetti**, accedi al progetto e tocca o fai clic sulla freccia giù sulla tessera a cui desideri aggiungere un elemento.
+1. In **Progetti**, individua quello di tuo interesse e fai clic sulle freccette in basso del riquadro in cui desideri aggiungere un elemento.
 
-   ![Aggiungi un elemento a una tessera](/help/sites-cloud/authoring/assets/project-workflows.png)
+   ![Aggiungere un elemento a un riquadro](/help/sites-cloud/authoring/assets/project-workflows.png)
 
 1. Aggiungi un elemento alla porzione con la stessa procedura che usi quando crei una nuova porzione. Le porzioni di progetto sono descritte [qui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In questo esempio è stato aggiunto un altro flusso di lavoro.
 
@@ -99,7 +99,7 @@ Per aprire una porzione e visualizzare o modificare gli elementi:
 
 1. Dalla console Progetti, tocca o fai clic sui puntini di sospensione (...) nella parte inferiore della scheda.
 
-   ![Apertura di una tessera](/help/sites-cloud/authoring/assets/project-links.png)
+   ![Apertura di un riquadro](/help/sites-cloud/authoring/assets/project-links.png)
 
 1. AEM mostra l’elenco degli elementi inclusi nella porzione. Per modificarli o eliminarli, entra nella modalità di selezione.
 
@@ -107,23 +107,23 @@ Per aprire una porzione e visualizzare o modificare gli elementi:
 
 ## Visualizzazione delle statistiche di un progetto {#viewing-project-statistics}
 
-È possibile visualizzare le statistiche del progetto nella **Progetti** console.
+È possibile visualizzare le statistiche del progetto nella console **Progetti**.
 
 ### Visualizzazione della cronologia di un progetto {#viewing-a-project-timeline}
 
-La cronologia di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse associate. Per visualizzare la timeline del progetto, tocca o fai clic su **Timeline**, quindi entra in modalità di selezione e seleziona il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Tocca o fai clic **Timeline** per tornare al **Progetti** console.
+La cronologia di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse associate. Per visualizzare la timeline di un progetto, tocca o fai clic su **Timeline**, quindi entra nella modalità di selezione e scegli il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Per tornare alla console **Progetti**, tocca o fai clic su **Timeline**.
 
 ![Timeline del progetto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Visualizzazione di progetti attivi e inattivi {#viewing-active-inactive-projects}
 
-Per scegliere tra i progetti attivi e inattivi, nella **Progetti** console, fai clic su **Attiva/Disattiva progetti**. Se accanto all’icona è presente un segno di spunta, vengono visualizzati i progetti attivi.
+Per visualizzare i progetti attivi o inattivi, dalla console **Progetti** fai clic su **Mostra/nascondi progetti attivi**. Se l’icona è affiancata da un segno di spunta, stai visualizzando i progetti attivi.
 
-![Pulsante Attiva progetti](/help/sites-cloud/authoring/assets/projects-active.png)
+![Pulsante Mostra/nascondi progetti attivi](/help/sites-cloud/authoring/assets/projects-active.png)
 
 Se l’icona è affiancata da una x, stai visualizzando i progetti inattivi.
 
-![Pulsante Attiva/Disattiva progetti](/help/sites-cloud/authoring/assets/projects-inactive.png)
+![Pulsante Mostra/nascondi progetti non attivi](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
 ## Rendere un progetto attivo o inattivo {#making-projects-inactive-or-active}
 
