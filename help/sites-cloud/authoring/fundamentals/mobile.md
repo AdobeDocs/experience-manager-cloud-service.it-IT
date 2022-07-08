@@ -3,9 +3,9 @@ title: Authoring di una pagina per dispositivi mobili
 description: Quando si effettua l’authoring per i dispositivi mobili, è possibile alternare tra diversi emulatori per capire che cosa vedrà l’utente finale
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
