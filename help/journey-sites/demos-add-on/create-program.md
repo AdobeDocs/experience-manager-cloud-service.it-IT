@@ -3,9 +3,9 @@ title: Crea programma
 description: Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '715'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -15,20 +15,20 @@ Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso aggiuntivo Demos di riferimento AEM, [Comprendere l’installazione del componente aggiuntivo Demo di riferimento,](installation.md) hai imparato come funziona il processo di installazione del Reference Demos Add-On, illustrando come funzionano i diversi pezzi insieme. Ora dovresti:
+Nel documento precedente di AEM Reference Demos Add-On, [Comprendere l’installazione di AEM Reference Demos Add-On,](installation.md) hai imparato come funziona il processo di installazione del componente aggiuntivo Reference Demos, illustrando come funzionano i diversi componenti insieme. Ora dovresti:
 
-* Conoscenza di base di Cloud Manager.
-* Scopri come le pipeline forniscono contenuto e configurazione a AEM.
-* Scopri come i modelli possono creare nuovi siti precompilati con contenuti dimostrativi con pochi clic.
+* Avere una conoscenza di base di Cloud Manager.
+* Scoprire come le pipeline forniscono contenuto e configurazione ad AEM.
+* Scoprire come i modelli possono creare nuovi siti precompilati con contenuti dimostrativi con pochi clic.
 
-Questo articolo si basa su tali elementi fondamentali e fa il primo passaggio di configurazione per creare un programma a scopo di test e utilizza una pipeline per distribuire il contenuto aggiuntivo.
+Questo articolo si basa su tali elementi fondamentali e mostra il primo passaggio di configurazione per creare un programma a scopo di test e utilizza una pipeline per distribuire il contenuto aggiuntivo.
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo. Dopo la lettura è necessario:
+Questo documento spiega come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo. Dopo la lettura dovresti:
 
 * Scopri come utilizzare Cloud Manager per creare un nuovo programma.
-* Scopri come attivare il componente aggiuntivo Demo di riferimento per il nuovo programma.
+* Scopri come attivare AEM Reference Demos Add-On per il nuovo programma.
 * Puoi eseguire una pipeline per distribuire il contenuto aggiuntivo.
 
 ## Creare un programma {#create-program}
@@ -37,30 +37,30 @@ Dopo aver effettuato l’accesso a Cloud Manager, puoi creare un nuovo programma
 
 >[!NOTE]
 >
->L&#39;utente deve essere membro del **Proprietario business** in Cloud Manager nella tua organizzazione per creare programmi.
+>L&#39;utente deve avere il ruolo di **Proprietario dell&#39;azienda** in Cloud Manager nella tua organizzazione per creare programmi.
 
 1. Accedi ad Adobe Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Una volta effettuato l’accesso, assicurati di essere nell’organizzazione corretta effettuando il controllo nell’angolo in alto a destra dello schermo. Se sei membro di una sola organizzazione, questo passaggio non è necessario.
+1. Una volta effettuato l’accesso, assicurati di essere nell’organizzazione corretta controllando nell’angolo in alto a destra dello schermo. Se sei membro di una sola organizzazione, questo passaggio non è necessario.
 
    ![Panoramica di Cloud Manager](assets/cloud-manager.png)
 
 1. Tocca o fai clic su **Aggiungi programma** in alto a destra nella finestra.
 
-1. In **Creiamo il programma** , assicurati che **Adobe Experience Manager** è selezionato in **Prodotti** quindi tocca o fai clic su **Continua**.
+1. Nella finestra **Creiamo il programma**, assicurati che **Adobe Experience Manager** sia selezionato in **Prodotti** quindi tocca o fai clic su **Continua**.
 
    ![Finestra di dialogo Crea programma](assets/create-program.png)
 
 1. Nella finestra di dialogo successiva:
 
-   * Fornisci un **Nome del programma** per descrivere il programma.
-   * Tocca o fai clic su **Configurare una sandbox** per **Obiettivo del programma**
+   * Inserisci un **Nome del programma** per descriverlo.
+   * Tocca o fai clic su **Configura una sandbox** per l&#39;**Obiettivo del programma**
 
-   Quindi tocca o fai clic su **Crea**.
+   Tocca o fai clic su **Crea**.
 
    ![Nome del programma](assets/program-name.png)
 
-1. Viene visualizzata la schermata di panoramica del programma in cui è possibile osservare il processo di creazione del programma. Cloud Manager fornisce stime del tempo rimanente. È possibile spostarsi da questa schermata quando il programma viene creato e, se necessario, tornare in un secondo momento.
+1. Viene visualizzata la schermata di panoramica del programma in cui puoi osservare il processo di creazione. Cloud Manager fornisce stime del tempo rimanente. Puoi spostarti da questa schermata quando il programma viene creato e, se necessario, tornare in un secondo momento.
 
    ![Creazione di programmi](assets/program-creation.png)
 
@@ -72,19 +72,19 @@ Dopo aver effettuato l’accesso a Cloud Manager, puoi creare un nuovo programma
 
    ![Modifica programma](assets/edit-program.png)
 
-1. In **Modifica programma** finestra di dialogo, passa alla **Soluzioni e componenti aggiuntivi** scheda .
+1. Nella finestra di dialogo **Modifica programma**, passa alla scheda **Soluzioni &amp; componenti aggiuntivi**.
 
    ![Finestra di dialogo Modifica programma](assets/edit-program-dialog.png)
 
-1. Sulla **Soluzioni e componenti aggiuntivi** scheda , espandi **Sites** voce nell&#39;elenco e quindi controllare **Demo di riferimento**. Se desideri anche creare demo per AEM Screens, controlla la **Schermi** anche nell’elenco. Tocca o fai clic su **Aggiorna**.
+1. Nella scheda **Soluzioni &amp; componenti aggiuntivi**, espandi la voce **Sites** nell&#39;elenco e quindi spunta **Reference Demos**. Se desideri anche creare demo per AEM Screens, spunta anche l&#39;opzione **Screens** nell’elenco. Tocca o fai clic su **Aggiorna**.
 
-   ![Opzione Controlla demo di riferimento](assets/edit-program-add-on.png)
+   ![Spuntare l&#39;opzione Reference Demos](assets/edit-program-add-on.png)
 
-1. Il componente aggiuntivo è ora abilitato come opzione, ma il relativo contenuto deve essere distribuito per AEM essere disponibile. Torna alla pagina della panoramica del programma, tocca o fai clic su **Inizio** per avviare la pipeline per distribuire il contenuto aggiuntivo a AEM.
+1. Il componente aggiuntivo è ora abilitato come opzione, ma il relativo contenuto deve essere distribuito a AEM per essere disponibile. Torna alla pagina della panoramica del programma, tocca o fai clic su **Avvio** per avviare la pipeline per distribuire il contenuto aggiuntivo a AEM.
 
    ![Avvia](assets/deploy.png)
 
-1. La pipeline viene avviata e viene visualizzata una pagina che descrive l’avanzamento della distribuzione. È possibile spostarsi da questa schermata quando il programma viene creato e, se necessario, tornare in un secondo momento.
+1. La pipeline viene avviata e viene visualizzata una pagina che descrive l’avanzamento della distribuzione. Puoi spostarti da questa schermata quando il programma viene creato e, se necessario, tornare in un secondo momento.
 
    ![Distribuzione](assets/deployment.png)
 
@@ -92,14 +92,14 @@ Una volta completata la pipeline, il componente aggiuntivo e il relativo contenu
 
 ## Novità {#what-is-next}
 
-Ora che hai completato questa parte del percorso aggiuntivo Demo di riferimento AEM , devi:
+Adesso che hai completato questa parte del percorso di AEM Reference Demo Add-On, dovresti:
 
 * Scopri come utilizzare Cloud Manager per creare un nuovo programma.
-* Scopri come attivare il componente aggiuntivo Demo di riferimento per il nuovo programma.
+* Scopri come attivare AEM Reference Demos Add-On per il nuovo programma.
 * Puoi eseguire una pipeline per distribuire il contenuto aggiuntivo.
 
-Sviluppa questa conoscenza e continua il percorso aggiuntivo Demo di riferimento AEM esaminando il documento successivo [Creare un sito demo,](create-site.md) dove imparerai a creare un sito demo in AEM basato su una libreria di modelli preconfigurati distribuiti dalla pipeline.
+Approfondisci questo argomento e continua il percorso con AEM Reference Demos Add-On consultando il documento successivo [Creare un sito demo,](create-site.md) dove imparerai a creare un sito demo in AEM basato su una libreria di modelli preconfigurati distribuiti dalla pipeline.
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Per ulteriori informazioni sulle funzioni di Cloud Manager, consulta direttamente i documenti tecnici approfonditi.
+* [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=it): per ulteriori informazioni sulle funzioni di Cloud Manager, consulta direttamente i documenti tecnici approfonditi.
