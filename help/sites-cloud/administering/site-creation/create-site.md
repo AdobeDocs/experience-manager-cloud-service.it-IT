@@ -5,43 +5,43 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '788'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Creazione di un sito {#creating-site}
 
-Scopri come utilizzare AEM creare un sito utilizzando i modelli di sito per definire lo stile e la struttura del sito.
+Scopri come utilizzare AEM per creare un sito utilizzando i modelli per definire lo stile e la struttura del sito.
 
 ## Panoramica {#overview}
 
-Prima che gli autori dei contenuti possano creare pagine con contenuti, è necessario creare il sito. Questo viene generalmente eseguito da un amministratore AEM che definisce la struttura iniziale del sito. L’utilizzo dei modelli di sito rende la creazione di siti rapida e flessibile.
+Prima che gli autori dei contenuti possano creare pagine con contenuti, è necessario creare il sito. Questo viene generalmente eseguito da un amministratore AEM che definisce la struttura iniziale del sito. L’utilizzo dei modelli di sito rende la creazione del sito veloce e flessibile.
 
-Lo strumento AEM Creazione rapida siti consente agli sviluppatori di creare rapidamente un nuovo sito da zero utilizzando i modelli di sito.
+Lo strumento Creazione rapida sito di AEM consente ai non sviluppatori di creare rapidamente un nuovo sito da zero utilizzando i modelli di sito.
 
-Una volta creato, lo strumento di creazione rapida del sito consente inoltre di personalizzare rapidamente il tema e lo stile del sito AEM (risorse JavaScript, CSS e statiche). In questo modo lo sviluppatore front-end, che necessita di una conoscenza di AEM pari a zero, può lavorare separatamente rispetto ai creatori di contenuti e in parallelo ad essi. L’amministratore AEM semplicemente scarica il tema del sito e lo fornisce allo sviluppatore front-end che lo personalizzerà utilizzando i propri strumenti preferiti e quindi commette le modifiche all’archivio del codice AEM, che viene quindi distribuito.
+Una volta creato, lo strumento Creazione rapida sito consente inoltre di personalizzare velocemente il tema e lo stile del sito AEM (risorse JavaScript, CSS e statiche). In questo modo lo sviluppatore front-end, che non ha bisogno di conoscere AEM, può lavorare in maniera autonoma e in parallelo ai creatori di contenuti. L’amministratore AEM scarica semplicemente il tema del sito e lo fornisce allo sviluppatore front-end. Quest&#39;ultimo lo personalizza utilizzando i propri strumenti preferiti e successivamente conferma le modifiche nell’archivio del codice AEM, che viene quindi distribuito.
 
-Questo documento si concentra sulla creazione del sito utilizzando lo strumento Creazione rapida sito. Per una panoramica del flusso di lavoro di creazione e personalizzazione del sito, consulta la sezione [AEM Percorso di creazione di siti rapidi](/help/journey-sites/quick-site/overview.md)
+Questo documento si concentra sulla creazione del sito utilizzando lo strumento Creazione rapida sito. Per una panoramica del flusso di lavoro di creazione e personalizzazione del sito, consulta la sezione [Percorso Creazione rapida sito di AEM](/help/journey-sites/quick-site/overview.md)
 
-## Struttura del sito di pianificazione {#structure}
+## Struttura di pianificazione del sito {#structure}
 
-Prenditi del tempo per prendere in considerazione lo scopo del tuo sito e i contenuti pianificati con largo anticipo. Questo ti guiderà come progettare la struttura del sito. Una buona struttura del sito supporta una facile navigazione e l’individuazione dei contenuti per i visitatori del tuo sito e supporta varie funzioni AEM come [gestione e traduzione multisito.](/help/sites-cloud/administering/msm-and-translation.md)
+Prendi in considerazione lo scopo del tuo sito e i contenuti pianificati con largo anticipo. Questo ti guiderà su come progettare la struttura del sito. Una buona struttura del sito supporta una facile navigazione e l’individuazione dei contenuti per i visitatori. Inoltre supporta varie funzioni di AEM come la [gestione e traduzione multisito.](/help/sites-cloud/administering/msm-and-translation.md)
 
 >[!TIP]
 >
->[Sito di riferimento WKND](https://wknd.site) fornisce un’implementazione delle best practice per un sito web completo di brand per esperienze in esterni. Esploralo per vedere come è strutturato un sito AEM ben costruito.
+>[Il sito di riferimento WKND](https://wknd.site) fornisce un’implementazione delle best practice per un sito web del marchio completo per esperienze in esterni. Esploralo per vedere come è strutturato un sito AEM ben costruito.
 
 ## Modelli per siti {#site-templates}
 
 Poiché la struttura del sito è così importante per il successo di un sito, è opportuno disporre di strutture predefinite per distribuire rapidamente un nuovo sito in base a un insieme di standard esistenti. I modelli di sito consentono di combinare i contenuti di base del sito in un pacchetto comodo e riutilizzabile.
 
-I modelli di sito generalmente contengono il contenuto e la struttura di base del sito, nonché informazioni sullo stile del sito per consentire un rapido avvio del nuovo sito. I modelli sono potenti perché sono riutilizzabili e personalizzabili. Inoltre, poiché è possibile disporre di più modelli nell&#39;installazione di AEM, è possibile creare siti diversi per soddisfare le varie esigenze aziendali.
+Per consentire un rapido avvio del nuovo sito, i modelli di sito generalmente contengono il contenuto e la struttura di base del sito, nonché informazioni sullo stile. I modelli sono uno strumento efficace perché sono riutilizzabili e personalizzabili. Inoltre, poiché è possibile disporre di più modelli durante l’installazione di AEM, è possibile creare siti diversi per soddisfare le varie esigenze aziendali.
 
 >[!TIP]
 >
->Per maggiori dettagli sui modelli di sito, consulta la sezione [Modelli di sito](site-templates.md) articolo.
+>Per maggiori dettagli sui modelli di sito, consulta l’articolo [Modelli di sito](site-templates.md).
 
 >[!NOTE]
 >
@@ -49,9 +49,9 @@ I modelli di sito generalmente contengono il contenuto e la struttura di base de
 
 ## Creazione di un sito {#create-site}
 
-L&#39;utilizzo di un modello per creare un sito è semplice.
+L’utilizzo di un modello per creare un sito è semplice.
 
-1. Accedi all’ambiente di authoring AEM e passa alla console Sites
+1. Accedi all’ambiente di authoring di AEM e passa alla console Sites
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
@@ -59,7 +59,7 @@ L&#39;utilizzo di un modello per creare un sito è semplice.
 
    ![Creazione di un sito da un modello](../assets/create-site-from-template.png)
 
-1. Nella procedura guidata Crea sito , tocca o fai clic su un modello esistente nel pannello a sinistra o su **Importa** nella parte superiore sinistra della colonna per importare un nuovo modello.
+1. Nella procedura guidata Crea sito, tocca o fai clic su un modello esistente nel pannello a sinistra o su **Importa** nella parte superiore della colonna di sinistra per importare un nuovo modello.
 
    ![Creazione guidata sito](../assets/site-creation-wizard.png)
 
@@ -71,13 +71,13 @@ L&#39;utilizzo di un modello per creare un sito è semplice.
 
    ![Seleziona un modello](../assets/select-site-template.png)
 
-1. Specifica un titolo per il sito. Se omesso, è possibile specificare un nome di sito o generarlo dal titolo.
+1. Immetti un titolo per il sito. È possibile fornire il nome di un sito o verrà generato dal titolo, se omesso.
 
    * Il titolo del sito viene visualizzato nella barra del titolo del browser.
    * Il nome del sito diventa parte dell’URL.
-   * Il nome del sito deve rispettare [AEM convenzioni di denominazione delle pagine.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
+   * Il nome del sito deve rispettare [le convenzioni di denominazione delle pagine di AEM.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
 
-1. Tocca o fai clic su **Crea** e il sito viene creato dal modello di sito.
+1. Tocca o fai clic su **Crea** e il sito verrà creato dal modello di sito.
 
    ![Dettagli del nuovo sito](../assets/create-site-details.png)
 
@@ -85,7 +85,7 @@ L&#39;utilizzo di un modello per creare un sito è semplice.
 
    ![Finestra di dialogo di successo](../assets/success.png)
 
-1. Nella console Sites, il nuovo sito è visibile e può essere navigato per esplorarne la struttura di base definita dal modello.
+1. Nella console Sites, il nuovo sito è visibile ed è possibile visitarlo per esplorarne la struttura di base definita dal modello.
 
    ![Nuova struttura del sito](../assets/new-site.png)
 
