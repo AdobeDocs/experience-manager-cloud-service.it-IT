@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '1791'
-ht-degree: 81%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Puoi anche pubblicare o annullare la pubblicazione di una pagina immediatamente 
 
 ## Terminologia {#terminology}
 
-È possibile che si verifichino termini diversi relativi alla pubblicazione mentre si lavora con Adobe Experience Manager (AEM) as a Cloud Service.
+È possibile riscontrare termini diversi relativi alla pubblicazione mentre si lavora con Adobe Experience Manager (AEM) as a Cloud Service.
 
 * **Pubblicare/Annullare la pubblicazione**
    * Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
@@ -53,7 +53,7 @@ A seconda della tua posizione, puoi pubblicare:
 
 >[!NOTE]
 >
-> Per ulteriori possibilità vedi **Ora di attivazione** e **Ora di disattivazione** in [Scheda Base delle Proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> Per ulteriori possibilità consulta **Ora di attivazione** e **Ora di disattivazione** nella [Scheda Base delle Proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Pubblicazione dall’editor {#publishing-from-the-editor}
 
@@ -86,7 +86,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 >[!NOTE]
 >
->Pagine accessibili da [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell’editor non può essere pubblicato. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
+>Le pagine accessibili da [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell’editor non possono essere pubblicate. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
 
 ### Pubblicazione dalla console {#publishing-from-the-console}
 
@@ -117,7 +117,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
 #### Gestisci pubblicazione  {#manage-publication}
 
-**Gestisci pubblicazione** offre più opzioni rispetto a **Pubblicazione rapida**, che consente l’inclusione di pagine figlie, la personalizzazione dei riferimenti e l’avvio di eventuali flussi di lavoro applicabili, nonché l’opzione per la pubblicazione in un secondo momento.
+**Gestisci pubblicazione** offre più opzioni rispetto alla **Pubblicazione rapida** e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili. Consente inoltre di pubblicare la pagina in un secondo momento.
 
 Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblicazione:
 
@@ -152,9 +152,9 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    Puoi usare il pulsante **Aggiungi contenuto** per aggiungere ulteriori pagine all’elenco delle pagine da pubblicare, nel caso in cui ti sia dimenticato di selezionarne una prima di avviare la procedura guidata Gestisci pubblicazione.
 
-   Selezione della **Aggiungi contenuto** il pulsante avvia [browser del percorso](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) per consentire la selezione dei contenuti.
+   Selezionando il pulsante **Aggiungi contenuto** si avvia il [browser percorsi](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser), che consente di selezionare contenuti.
 
-   Seleziona le pagine desiderate e fai clic su **Seleziona** per aggiungere contenuti alla procedura guidata o **Annulla** per annullare la selezione e tornare alla procedura guidata.
+   Seleziona le pagine desiderate e fai clic su **Seleziona** per aggiungere contenuti alla procedura guidata o su **Annulla** per annullare la selezione e tornare alla procedura guidata.
 
    **Rimuovi selezione**
 
@@ -180,9 +180,9 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    >[!NOTE]
    >
-   >Vedi [Pubblicazione e annullamento della pubblicazione di una struttura](#publishing-and-unpublishing-a-tree)
+   >Consulta [Pubblicazione e annullamento della pubblicazione di una struttura](#publishing-and-unpublishing-a-tree)
 
-   Clic **Includi elementi figlio** apre una finestra di dialogo che consente di:
+   Facendo clic su **Includi elementi figlio** viene visualizzata una finestra di dialogo che consente di:
 
    * **Includi elementi figlio**
    * **Solo gli elementi figli di primo livello**
@@ -228,7 +228,7 @@ Durante la modifica di una pagina, se desideri annullarne la pubblicazione selez
 
 >[!NOTE]
 >
->Pagine accessibili da [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell’editor non può essere annullata la pubblicazione. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
+>Non può essere annullata la pubblicazione delle pagine accessibili da [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell’editor. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
 
 ### Annullamento della pubblicazione dalla console  {#unpublishing-from-the-console}
 
@@ -261,18 +261,18 @@ Puoi utilizzare l’opzione [Gestisci pubblicazione](#manage-publication) sulla 
 
    ![Selezione pagine di Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. In **Includi elementi figlio** finestra di dialogo:
+1. Nella finestra di dialogo **Includi elementi figlio**:
 
-   * select **Includi elementi figlio**
-   * deseleziona **Includi solo elementi figlio immediati**
-   * deseleziona **Solo pagine già pubblicate**
-   * configurare **Solo pagine modificate** come richiesto
+   * seleziona **Includi elementi figlio**
+   * deseleziona **Includi solo gli elementi figlio di primo livello**
+   * deseleziona **Includi solo pagine già pubblicate**
+   * configura **Includi solo pagine modificate** come richiesto
 
-   Queste opzioni sono selezionate per impostazione predefinita, pertanto devi ricordarti di configurarle. Conferma la selezione con **OK** per aggiungere il contenuto alla pubblicazione o all’annullamento della pubblicazione.
+   Queste opzioni sono selezionate per impostazione predefinita, pertanto dovrai ricordarti di configurarle. Conferma la selezione con **OK** per aggiungere il contenuto alla pubblicazione o all’annullamento della pubblicazione.
 
-   ![Inclusione di elementi figlio per la pubblicazione degli alberi](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
+   ![Inclusione di elementi figlio per la pubblicazione della struttura](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. In **Gestisci pubblicazione** è possibile personalizzare ulteriormente la selezione aggiungendo ulteriori pagine o rimuovendo quelle selezionate.
+1. Nella procedura guidata **Gestisci pubblicazione** è possibile personalizzare ulteriormente la selezione aggiungendo ulteriori pagine o rimuovendo quelle selezionate.
 
    Non dimenticare che è anche possibile esaminare i riferimenti da pubblicare tramite l’opzione **Riferimenti pubblicati**.
 

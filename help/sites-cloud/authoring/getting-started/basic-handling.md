@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
 workflow-type: tm+mt
 source-wordcount: '2993'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
 | Progetti | La console Progetti consente di accedere direttamente ai progetti. [I progetti sono dashboard virtuali](/help/sites-cloud/authoring/projects/overview.md) che possono essere utilizzati per creare un team. Potrai quindi fornire al team l’accesso a risorse, flussi di lavoro e attività, facilitando la collaborazione verso un obiettivo comune. |
 | Sites | Le console Sites ti permettono di [creare, visualizzare e gestire siti web](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) in esecuzione sull’istanza AEM. Da questa console puoi creare, modificare, copiare, spostare ed eliminare pagine di siti web, avviare flussi di lavoro e pubblicare pagine. |
 | Frammenti esperienza | Un [frammento di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse. |
-| Assets | La console Risorse consente di importare e gestire [risorse digitali quali immagini, video, documenti e file audio](/help/assets/overview.md). Puoi usare queste risorse da qualunque sito web in esecuzione nell’istanza di AEM. Puoi anche creare e gestire [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) dalla console Risorse . |
+| Assets | La console Assets consente di importare e gestire le [risorse digitali quali immagini, video, documenti e file audio](/help/assets/overview.md). Puoi usare queste risorse da qualunque sito web in esecuzione nell’istanza di AEM. Puoi anche creare e gestire [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) dalla console Assets. |
 | Personalizzazione | Questa console fornisce un set di strumenti per la [creazione e modifica di contenuti mirati e la presentazione di esperienze personali.](/help/sites-cloud/authoring/personalization/overview.md) |
 | Frammenti di contenuto | [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) consente di progettare, creare, curare e pubblicare contenuti indipendenti dalla pagina. Consentono di preparare contenuti strutturati pronti per l’uso in più posizioni/su più canali, ideali sia per l’authoring delle pagine che per la distribuzione headless. |
 
@@ -364,7 +364,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
    * **Nome**: nome della pagina, utile in un ambiente di authoring multilingue poiché fa parte dell’URL della pagina e non viene modificato indipendentemente dalla lingua
    * **Modificato**: data dell’ultima modifica e dell’utente che l’ha eseguita
    * **Pubblicato**: stato della pubblicazione
-   * **Anteprima** - Stato anteprima
+   * **Anteprima**: stato anteprima
    * **Modello**: modello su cui si basa la pagina
    * **Flusso di lavoro**: flusso di lavoro attualmente applicato alla pagina. Ulteriori informazioni sono disponibili quando passi sopra con il mouse o apri la Timeline.
    * **Dati analitici pagina**
@@ -392,7 +392,7 @@ Il **selettore della barra** è disponibile in alto a sinistra nella finestra e 
 
 ![Selettore della barra espanso](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-Ad esempio, nella **Sites** console è possibile selezionare solo il contenuto (opzione predefinita), la struttura del contenuto, la timeline, i riferimenti, i dettagli del sito o il pannello laterale del filtro.
+Ad esempio, in **Sites** puoi selezionare solo il contenuto (opzione predefinita), la struttura, la timeline, i riferimenti, i dettagli del sito o il pannello laterale dei filtri.
 
 Se selezioni solo il contenuto, appare solo l’icona della barra. Quando selezioni qualsiasi altra opzione, il nome è visualizzato accanto all’icona della barra.
 
@@ -462,15 +462,15 @@ Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**
 
 ### Sito {#site}
 
-**Sito** mostra i dettagli dei siti [creato utilizzando un modello di sito.](/help/sites-cloud/administering/site-creation/create-site.md)
+**Sito** mostra i dettagli dei siti [creati utilizzando un modello del sito.](/help/sites-cloud/administering/site-creation/create-site.md)
 
 ![Barra del sito](../assets/site-rail.png)
 
-Vedere il documento [Utilizzo della barra del sito per gestire il tema del sito](/help/sites-cloud/administering/site-creation/site-rail.md) per ulteriori dettagli su come utilizzare la barra laterale per gestire il [tema del sito.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Vedi il documento [Utilizzo della barra del sito per gestire il tema del sito](/help/sites-cloud/administering/site-creation/site-rail.md) per ulteriori dettagli su come utilizzare la barra per gestire il [tema del sito.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
->Una descrizione end-to-end del processo di creazione di un nuovo sito da un modello e personalizzazione del relativo tema si trova nella [Percorso di creazione rapida del sito.](/help/journey-sites/quick-site/overview.md)
+>Una descrizione end-to-end del processo di creazione di un nuovo sito da un modello e personalizzazione del relativo tema si trova in [Percorso di Creazione Rapida dei Siti.](/help/journey-sites/quick-site/overview.md)
 
 ### Filtro {#filter}
 

@@ -6,7 +6,7 @@ exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 80%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Scopri quali sono i connettori, ad Experience Manager as a Cloud Service, quali 
 
 | Guida utente | Descrizione |
 |---|---|
-| [Panoramica](/help/overview/home.md) | Questa guida offre una panoramica introduttiva di Experience Manager as a Cloud Service, con un’introduzione, terminologia, architettura e così via. |
+| [Panoramica](/help/overview/home.md) | Questa guida offre una panoramica iniziale di Experience Manager as a Cloud Service, con introduzione, terminologia, architettura e altro ancora. |
 | [Note sulla versione](/help/release-notes/home.md) | Questa guida include informazioni importanti sull’ultima versione di Experience Manager as a Cloud Service e illustra le funzioni nuove, obsolete e rimosse, nonché i problemi noti. |
 | [Guida utente sulla sicurezza](/help/security/home.md) | Argomenti importanti sulla sicurezza relativi a Experience Manager as a Cloud Service. |
 | [Onboarding](/help/onboarding/home.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |

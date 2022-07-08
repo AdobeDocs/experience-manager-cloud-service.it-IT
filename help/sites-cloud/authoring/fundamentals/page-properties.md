@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
 workflow-type: tm+mt
 source-wordcount: '1987'
-ht-degree: 54%
+ht-degree: 98%
 
 ---
 
@@ -19,9 +19,9 @@ Le proprietà sono distribuite su più schede.
 
 ### Base {#basic}
 
-* **Titolo e tag**
+* **Titolo &amp; tag**
 
-   * **Titolo** - Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, il **Siti Web** l&#39;elenco delle schede e **Sites** viste a schede o a elenco.
+   * **Titolo**: il titolo della pagina viene visualizzato in diverse aree. Ad esempio, nell’elenco della scheda **Siti Web** e nelle viste a elenco/scheda di **Sites**.
       * Questo campo è obbligatorio.
    * **Tag** - Qui puoi aggiungere o rimuovere i tag nella pagina modificando l’elenco nella casella di selezione.
       * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. Per rimuovere un tag dall’elenco, utilizza l’icona x.
@@ -35,41 +35,41 @@ Le proprietà sono distribuite su più schede.
 
 * **Marchio**
 
-   Applica un’identità di marchio coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l’utilizzo del componente Pagina dalla versione 2.14.0 o successiva della [Componenti core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+   Applica un’identità del brand coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l’utilizzo del Componente Pagina dalla versione 2.14.0 o successiva di [Componenti Core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 
-   * **Override** - Seleziona per definire il marchio a questa pagina.
-      * Il valore viene ereditato da tutte le pagine figlie a meno che non abbiano anche le relative **Override** i valori impostati.
-   * **Valore di sostituzione** - Testo del marchio da aggiungere al titolo della pagina.
-      * Il valore viene aggiunto al titolo della pagina dopo un carattere di barra come &quot;Ciclismo in Toscana | Sempre pronto per il WKND&quot;
+   * **Override**: selezionalo per definire il marchio su questa pagina.
+      * Il valore viene ereditato da tutte le pagine figlie a meno che non abbiano impostati anche i loro valori **Override**.
+   * **Valore di override**: testo del marchio da aggiungere al titolo della pagina.
+      * Il valore viene aggiunto al titolo della pagina dopo un carattere di barra come &quot;Cycling Tuscany | Always ready for the WKND&quot;
 
 * **ID HTML**
 
-   * **ID** - ID HTML da applicare al componente.
+   * **ID**: ID HTML da applicare al componente.
 
 * **Altri titoli e descrizioni**
 
-   * **Titolo pagina** - Titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se questo campo è vuoto, viene utilizzato il **Titolo**.
-   * **Titolo navigazione** - Potete specificare un diverso titolo da usare nella navigazione (ad esempio, se desiderate un titolo più conciso). Se vuoto, il **Titolo** verrà utilizzato.
-   * **Sottotitolo** - Sottotitolo da utilizzare nella pagina.
-   * **Descrizione** - Descrizione della pagina, del suo scopo o altri dettagli da aggiungere.
+   * **Titolo pagina**: titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se questo campo è vuoto, viene utilizzato il **Titolo**.
+   * **Titolo navigazione**: puoi specificare un diverso titolo da usare per la navigazione (ad esempio un titolo più conciso). Se questo campo viene lasciato vuoto, verrà utilizzato il **Titolo**.
+   * **Sottotitolo**: sottotitolo da utilizzare nella pagina.
+   * **Descrizione**: descrizione della pagina, il suo ruolo o altri dettagli.
 
 * **Ora di attivazione/disattivazione**
 
    >[!NOTE]
    >
-   > Vedi [Tempi di attivazione e disattivazione - Configurazione dell&#39;attivatore](/help/operations/replication.md#on-and-off-times-trigger-configuration) per informazioni dettagliate su come configurare la replica automatica correlata.
+   > Vedi [Tempi di attivazione e disattivazione - Configurazione del trigger](/help/operations/replication.md#on-and-off-times-trigger-configuration) per informazioni dettagliate su come configurare la replica automatica correlata.
 
    >[!NOTE]
-   >Se **Ora di attivazione** o **Ora di disattivazione** è in passato e la replica automatica è configurata, quindi l&#39;azione pertinente verrà attivata immediatamente.
+   >Se l&#39;**Ora di attivazione** o l&#39;**Ora di disattivazione** è nel passato e la replica automatica è configurata, l&#39;azione pertinente verrà attivata immediatamente.
 
-   * **Ora di attivazione** - La data e l’ora in cui la pagina pubblicata verrà resa visibile (renderizzata) nell’ambiente di pubblicazione. La pagina deve essere pubblicata, manualmente o tramite replica automatica preconfigurata.
+   * **Ora di attivazione**: la data e l’ora in cui la pagina pubblicata verrà resa visibile (renderizzata) nell’ambiente di pubblicazione. La pagina deve essere pubblicata, manualmente o tramite replica automatica preconfigurata.
 
-      * Se già [pubblicato (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) questa pagina rimarrà inattiva (nascosta) fino al rendering alla data e all’ora specificate.
-      * Se non viene pubblicata e configurata per la replica automatica, la pagina verrà pubblicata automaticamente e quindi sottoposta a rendering al momento specificato.
-      * Se non viene pubblicata e non è configurata per la replica automatica, la pagina non verrà pubblicata automaticamente, quindi viene visualizzato un 404 quando si tenta di accedere alla pagina.
-   * **Ora di disattivazione** - Simile e spesso utilizzato in combinazione con **Ora di attivazione**, definisce l’ora in cui la pagina pubblicata verrà nascosta nell’ambiente di pubblicazione.
+      * Se già [pubblicata (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) questa pagina rimarrà inattiva (nascosta) fino al rendering alla data e all’ora specificate.
+      * Se non è pubblicata, ma è configurata per la replica automatica, la pagina verrà pubblicata automaticamente e quindi sottoposta a rendering al momento specificato.
+      * Se non è pubblicata e non è configurata per la replica automatica, la pagina non verrà pubblicata automaticamente, quindi viene visualizzato un errore 404 quando si tenta di accedere alla pagina.
+   * **Ora di disattivazione**: simile e spesso utilizzata in combinazione con l&#39;**Ora di attivazione**, definisce l’ora in cui la pagina pubblicata verrà nascosta nell’ambiente di pubblicazione.
 
-   * Lascia questi campi (**Ora di attivazione** e **Ora di disattivazione**) vuota per le pagine da pubblicare immediatamente e disponibili nell’ambiente di pubblicazione fino a quando non vengono disattivate (lo scenario più consueto).
+   * Lascia questi campi (**Ora di attivazione** e **Ora di disattivazione**) vuoti per le pagine da pubblicare immediatamente e disponibili nell’ambiente di pubblicazione fino a quando non vengono disattivate (lo scenario più consueto).
 
 
 * **URL personalizzato**
@@ -86,25 +86,25 @@ Le proprietà sono distribuite su più schede.
    >* non devono essere impostati su una pagina esistente.
 
 
-   * **Aggiungi** - Tocca o fai clic per visualizzare un campo e definire un URL personalizzato per la pagina.
+   * **Aggiungi**: tocca o fai clic per visualizzare un campo e definire un URL personalizzato per la pagina.
       * Tocca o fai di nuovo clic per aggiungere più elementi.
-      * Tocca o fai clic sul pulsante **Rimuovi** per eliminare l’URL personalizzato.
-   * **Reindirizza URL personalizzato** - Indica se desideri che la pagina utilizzi l’URL personalizzato.
+      * Tocca o fai clic sull&#39;icona **Rimuovi** per eliminare il Vanity URL.
+   * **Reindirizza Vanity URL**: specifica se la pagina deve utilizzare il Vanity URL.
 
 
 ### Avanzate  {#advanced}
 
 * **Impostazioni**
 
-   * **Lingua** - Lingua della pagina
-   * **Directory principale lingua** - Deve essere verificato se la pagina è la directory principale di una copia per lingua
-   * **Reindirizzamento** - Indica la pagina a cui deve essere automaticamente reindirizzata la pagina corrente con un HTML `302 Found` stato.
+   * **Lingua**: indica la lingua della pagina
+   * **Lingua root**: deve essere selezionato, se la pagina è la root di una copia in lingua
+   * **Reindirizza**: indica la pagina a cui deve essere automaticamente reindirizzata la pagina corrente con un HTML `302 Found` stato.
       * **Reindirizzamento permanente** - Se questa opzione è selezionata, la pagina viene reindirizzata al percorso di destinazione fornito insieme a un HTML `301 Moved Permanently` stato.
-   * **Progettazione** - Indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito risultante
-   * **Alias** - Specifica un alias da utilizzare con la pagina
-      * Ad esempio, se definisci un alias di `private` per la pagina `/content/wknd/us/en/magazine/members-only`, quindi è possibile accedere a questa pagina anche tramite `/content/wknd/us/en/magazine/private`
-      * La creazione di un alias imposta il `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso del repository.
-      * Le pagine a cui si accede tramite alias nell’editor non possono essere pubblicate. [Opzioni di pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
+   * **Design**: indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito risultante
+   * **Alias**: specifica un alias da utilizzare per la pagina
+      * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
+      * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
+      * Le pagine a cui si accede tramite alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
@@ -112,40 +112,40 @@ Le proprietà sono distribuite su più schede.
 
 * **Configurazione**
 
-   * **Configurazione cloud** - Il percorso della configurazione
+   * **Configurazione cloud**: il percorso della configurazione
 
 * **Impostazioni modello**
 
-   * **Modelli consentiti** - [Definisce l’elenco di modelli disponibili](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) all’interno di questo ramo secondario
+   * **Modelli permessi**: [definisce l’elenco di modelli che saranno disponibili](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) in questo ramo secondario
 
 * **Autenticazione richiesta**
 
-   * **Abilita** - Abilita l&#39;uso dell&#39;autenticazione per accedere alla pagina
+   * **Attiva**: attiva l’uso dell’autenticazione per accedere alla pagina
 
       >[!NOTE]
       >
       >Nella scheda **[Autorizzazioni](#permissions)** è possibile definire gruppi utenti chiusi per la pagina.
 
-   * **Pagina di accesso** - Pagina da utilizzare per l’accesso
+   * **Pagina di accesso**: indica la pagina da utilizzare per l’accesso
 
 * **Esporta**
 
-   * **Configurazione esportazione** - Specifica una configurazione di esportazione
+   * **Configurazione di esportazione**: specifica una configurazione di esportazione
 
 ### Miniatura  {#thumbnail}
 
 Configurare la miniatura della pagina
 
-* **Genera anteprima** - Genera un’anteprima della pagina da utilizzare come miniatura
-* **Carica immagine** - Carica un’immagine da usare come miniatura
-* **Seleziona immagine** - Seleziona una risorsa esistente da usare come miniatura
-* **Ripristina** - Questa opzione diventa disponibile dopo aver apportato una modifica alla miniatura. Se non desideri mantenere la modifica, puoi ripristinarla prima di salvare.
+* **Genera anteprima**: genera un’anteprima della pagina da usare come miniatura
+* **Carica immagine**: consente di caricare un’immagine da usare come miniatura
+* **Seleziona immagine**: seleziona una risorsa esistente da usare come miniatura
+* **Annulla**: questa opzione diventa disponibile dopo aver apportato una modifica alla miniatura. Se non desideri mantenere la modifica, puoi ripristinarla prima di salvare.
 
 ### Social media {#social-media}
 
 * **Condivisione social media**
 
-   Definisce le opzioni di condivisione disponibili sulla pagina. Rende disponibili le opzioni per la [Condivisione dei componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
+   Definisce le opzioni di condivisione disponibili sulla pagina. Rende disponibili le opzioni per la [Condivisione dei componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=it).
 
    * **Abilita condivisione da parte degli utenti su Facebook**
    * **Abilita condivisione da parte degli utenti su Pinterest**
@@ -154,7 +154,7 @@ Configurare la miniatura della pagina
 
 ### Cloud Services {#cloud-services}
 
-* **Configurazioni Cloud Service** - Definizione delle proprietà per i servizi cloud
+* **Configurazioni Cloud Service**: definizione delle proprietà per i servizi cloud
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -163,12 +163,12 @@ Configurare la miniatura della pagina
 
 * **Configurazioni ContextHub**
 
-   * **Percorso ContextHub** - Definire il [Configurazione ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
-   * **Percorso segmenti** - Definire il [Percorso dei segmenti](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+   * **Percorso ContextHub**: definizione della [Configurazione ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
+   * **Percorso segmenti**: definizione dell [Percorso dei segmenti](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
 * **Configurazione targeting**
 
-   * **Brand** - Definisce un [Marchio per specificare un ambito per il targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   * **Marchio**: seleziona un [marchio per specificare l’ambito del targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).
    >[!NOTE]
    >Questa opzione richiede che l’account utente appartenga al gruppo `Target Administrators`.
 
@@ -188,18 +188,18 @@ Configurare la miniatura della pagina
 
 ### Blueprint {#blueprint}
 
-Questa scheda è visibile solo per le pagine che fungono da blueprint. Le blueprint fungono da base per le Live Copy e fanno parte di [Gestione multisito.](/help/sites-cloud/administering/msm/overview.md)
+Questa scheda è visibile solo per le pagine che fungono da blueprint. Le blueprint fungono da base per le Live Copy e fanno parte della [Gestione multisito.](/help/sites-cloud/administering/msm/overview.md)
 
-* **Live Copy correnti** - Elenca le pagine basate su (cioè Live Copy di) questa pagina blueprint
+* **Live Copy attuali**: elenca le pagine basate su (ad esempio, Live Copy di) questa pagina blueprint
 
-* **Configurazioni di rollout** - Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy
+* **Configurazioni di Rollout**: controlla le circostanze in cui le modifiche verranno propagate alla Live Copy
 
 ### Live Copy  {#live-copy}
 
-* **Sincronizza** - Sincronizza Live Copy con Blueprint, mantenendo le modifiche locali
-* **Reimposta** - Ripristina Live Copy allo stato Blueprint, rimuovendo le modifiche locali
-* **Sospendi** - Sospendi la Live Copy da ulteriori modifiche di rollout
-* **Stacca** - Stacca Live Copy da Blueprint
+* **Sincronizza**: sincronizza le Live Copy con blueprint, mantenendo le modifiche locali
+* **Ripristina**: ripristina le Live Copy allo stato di blueprint, rimuovendo le modifiche locali
+* **Sospendi**: sospendi la Live Copy da ulteriori modifiche di rollout
+* **Scollega**: scollega le Live Copy da blueprint
 
 * **Origine**
 
@@ -211,9 +211,9 @@ Questa scheda è visibile solo per le pagine che fungono da blueprint. Le bluepr
 
 * **Configurazione**
 
-   * **Ereditarietà Live Copy** - Se questa opzione è selezionata, la configurazione Live Copy è efficace per tutti gli elementi figlio
-   * **Eredita configurazioni di rollout dall&#39;elemento padre** - Se questa opzione è selezionata, la configurazione di rollout viene ereditata dall’elemento padre della pagina
-   * **Scegli configurazione di rollout** - Definisce le circostanze in cui le modifiche verranno propagate dalla Blueprint e disponibili solo quando **Eredita configurazioni di rollout dall&#39;elemento padre** non è selezionato
+   * **Ereditarietà della Live Copy**: se selezionato, la configurazione Live Copy ha effetto su tutti gli elementi figli
+   * **Eredita configurazioni di rollout dal genitore**: se selezionato, la configurazione di rollout viene ereditata dalla pagina genitore
+   * **Scegli configurazione di rollout**: definisce le circostanze in cui le modifiche verranno propagate dalla Blueprint e disponibili solo quando **Eredita configurazioni di rollout dal genitore** non è selezionato
 
 ### Anteprima {#preview}
 

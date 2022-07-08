@@ -1,12 +1,12 @@
 ---
 title: Risorse di supporto per Experience Manager as a Cloud Service Sites
-description: Ottieni un elenco completo di tutte le risorse di supporto di AEM Cloud Services . Trova le risposte alle tue domande Cloud Service su AEM Sites.
+description: Consulta l’elenco di tutte le risorse di supporto di AEM Cloud Services. Trova le risposte alle tue domande su AEM Sites as Cloud Service.
 landing-page-description: Come effettuare l’authoring e come amministrare AEM Sites as a Cloud Service.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
 source-wordcount: '405'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
