@@ -1,10 +1,10 @@
 ---
 title: Note sulla versione 2022.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2022.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 9c76ff2e0b789894ef5492ee940ce79cddb47e11
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -37,7 +37,7 @@ Per un riepilogo delle funzioni aggiunte nella versione 2022.5.0, guarda il vide
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Sites] {#prerelease-features-sites}
 
 * Varie funzionalità di GraphQL
-* A [nuova console](/help/headless/content-fragments/content-fragment-console.md) Ottimizzato per l’utilizzo headless di frammenti di contenuto
+* A [nuova console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) Ottimizzato per l’utilizzo headless di frammenti di contenuto
 
 ## [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#assets}
 
@@ -97,7 +97,7 @@ Se continui a utilizzare versioni precedenti di TLS come 1.0, 1.1, potresti perd
 
 ## Cloud Manager {#cloud-manager}
 
-È possibile trovare un elenco completo delle versioni mensili di Cloud Manager [qui](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
 ## Strumenti di migrazione {#migration-tools}
 

@@ -2,7 +2,7 @@
 title: 'Creazione di frammenti di contenuto: configurazione headless'
 description: Scopri come utilizzare i Frammenti di contenuto AEM per progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina per la consegna headless.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 78%
@@ -37,7 +37,7 @@ Seleziona la posizione e il modello da utilizzare per creare il frammento di con
 
    Aggiungi Titolo, Nome e, se necessario, Descrizione.
 
-   ![Finestra di dialogo Crea nuovo frammento di contenuto](/help/headless/content-fragments/assets/cfc-console-create.png)
+   ![Finestra di dialogo Crea nuovo frammento di contenuto](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 1. Tocca o fai clic su **Crea** o  **Crea e apri**.
 
