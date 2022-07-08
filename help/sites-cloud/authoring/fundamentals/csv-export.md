@@ -3,7 +3,7 @@ title: Esportazione in formato CSV
 description: Esporta informazioni sulle pagine in un file CSV sul sistema locale
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '199'
 ht-degree: 100%
 
