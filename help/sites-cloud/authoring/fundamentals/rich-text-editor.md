@@ -1,11 +1,11 @@
 ---
-title: Utilizza l’editor Rich Text in [!DNL Adobe Experience Manager] per creare contenuti.
-description: Utilizza l’editor Rich Text di [!DNL Experience Manager] per creare contenuti.
+title: Utilizza l’editor Rich Text in  [!DNL Adobe Experience Manager]  per creare contenuti.
+description: Utilizza l’editor Rich Text di  [!DNL Experience Manager]  per creare contenuti.
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ In genere, la barra degli strumenti propone le seguenti opzioni:
 
 Per i componenti basati su testo, fai clic sul pulsante di modalità a tutto schermo ![Pulsante per la modalità a tutto schermo nell’editor Rich Text](/help/sites-cloud/authoring/assets/editing-full-screen.png) nella [barra degli strumenti](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) per aprire l’editor Rich Text e nascondere il resto del contenuto della pagina.
 
-Nella modalità a tutto schermo vengono visualizzate tutte le opzioni configurate utilizzabili per l’authoring. Disponibilità delle opzioni [dipende dalla configurazione](/help/implementing/developing/extending/rich-text-editor.md).
+Nella modalità a tutto schermo vengono visualizzate tutte le opzioni configurate utilizzabili per l’authoring. La disponibilità delle opzioni [dipende dalla configurazione](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![Editor Rich Text in modalità a tutto schermo](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
