@@ -5,45 +5,45 @@ feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: a2fa676de0d6ca6d7cde3beedd5cc63850966b56
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1035'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Integrazione con Adobe Target{#integrating-with-adobe-target}
 
-Come parte di Adobe Marketing Cloud, Adobe Target ti consente di aumentare la pertinenza dei contenuti attraverso il targeting e la misurazione su tutti i canali. L’integrazione di Adobe Target e AEM as a Cloud Service richiede:
+Come parte di Adobe Marketing Cloud, Adobe Target ti consente di aumentare la rilevanza dei contenuti attraverso il targeting e la misurazione su tutti i canali. L’integrazione di Adobe Target e AEM as a Cloud Service richiede:
 
 * utilizzo dell’interfaccia utente touch per creare una configurazione Target in AEM as a Cloud Service (è richiesta la configurazione IMS).
-* aggiunta e configurazione di Adobe Target come estensione in [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
+* aggiunta e configurazione di Adobe Target come estensione in [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=it).
 
-Adobe Launch è necessario per gestire le proprietà lato client sia per Analytics che per Target nelle pagine AEM (librerie/tag JS). Detto questo, l’integrazione con Launch è necessaria per il &quot;targeting delle esperienze&quot;. Per l’esportazione dei frammenti esperienza in Target, è necessario solo Adobe Target Configuration e IMS.
+Adobe Launch è necessario per gestire le proprietà lato client sia per Analytics sia per Target nelle pagine AEM (librerie/tag JS). Detto questo, l’integrazione con Launch è necessaria per il &quot;targeting dell&#39;esperienza&quot;. Per l’esportazione dei frammenti di esperienza in Target, sono necessarie solo la configurazione Adobe Target e IMS.
 
 >[!NOTE]
 >
->I clienti Adobe Experience Manager as a Cloud Service che non dispongono di un account Target esistente possono richiedere l’accesso a Target Foundation Pack, ad Experience Cloud. Foundation Pack fornisce un uso limitato del volume di Target.
+>I clienti Adobe Experience Manager as a Cloud Service che non dispongono di un account Target esistente possono richiedere l’accesso a Target Foundation Pack per Experience Cloud. Foundation Pack fornisce un uso limitato del volume di Target.
 
 ## Creazione della configurazione di Adobe Target {#create-configuration}
 
 1. Passa a **Strumenti** → **Cloud Services**.
    ![Navigazione](assets/cloudservice1.png "Navigazione")
 2. Seleziona **Adobe Target**.
-3. Seleziona la **Crea** pulsante .
+3. Seleziona il pulsante **Crea**.
    ![Crea](assets/tenant1.png "Crea")
 4. Compila i dettagli (vedi sotto) e seleziona **Connetti**.
    ![Connetti](assets/open_screen1.png "Connetti")
 
 ### Configurazione IMS {#ims-configuration}
 
-Per integrare correttamente Target con AEM e Launch è necessaria una configurazione IMS sia per Launch che per Target. Anche se la configurazione IMS per Launch è preconfigurata in AEM as a Cloud Service, è necessario creare la configurazione IMS di Target (dopo il provisioning di Target). Fai riferimento a [questo video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) per scoprire come creare la configurazione IMS di Target.
+Per integrare correttamente Target con AEM e Launch è necessaria una configurazione IMS sia per Launch che per Target. Anche se la configurazione IMS per Launch è preconfigurata in AEM as a Cloud Service, è necessario creare la configurazione IMS di Target (dopo il provisioning di Target). Fai riferimento a [questo video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html?lang=it) per scoprire come creare la configurazione IMS di Target.
 
-### ID tenant di Adobe Target e codice client di Adobe Target {#tenant-client}
+### ID tenant e codice client di Adobe Target {#tenant-client}
 
-Durante la configurazione dei campi ID tenant di Adobe Target e Codice client di Adobe Target, tieni presente quanto segue:
+Durante la configurazione dei campi ID tenant e Codice client di Adobe Target, tieni presente quanto segue:
 
 1. Per la maggior parte dei clienti, l’ID tenant e il codice client sono gli stessi. Ciò significa che entrambi i campi contengono le stesse informazioni e sono identici. Assicurati di inserire l’ID tenant in entrambi i campi.
-2. Per scopi precedenti, puoi anche immettere valori diversi nei campi ID tenant e Codice client .
+2. Per motivi di legacy, puoi anche immettere valori diversi nei campi ID tenant e Codice client.
 
 In entrambi i casi, tieni presente che:
 
@@ -51,105 +51,105 @@ In entrambi i casi, tieni presente che:
 * Hai la possibilità di modificare il set di ID tenant predefinito.
 * Di conseguenza, le chiamate di backend a Target saranno basate sull’ID tenant e le chiamate lato client a Target saranno basate sul codice client.
 
-Come indicato in precedenza, il primo caso è il più comune per AEM as a Cloud Service. In entrambi i casi, assicurati che **entrambi** i campi contengono le informazioni corrette a seconda dei requisiti.
+Come indicato in precedenza, il primo caso è il più comune per AEM as a Cloud Service. In entrambi i casi, assicurati che **entrambi** i campi contengano le informazioni corrette a seconda dei requisiti.
 
 >[!NOTE]
 >
-> Per modificare una configurazione di destinazione esistente:
+> Per modificare una configurazione target esistente:
 >
 > 1. Immetti nuovamente l&#39;ID tenant.
-> 2. Riconnettersi a Target.
+> 2. Riconnetti a Target.
 > 3. Salva la configurazione.
 
 
-### Modifica della configurazione di Target {#edit-target-configuration}
+### Modifica la configurazione di Target {#edit-target-configuration}
 
 Per modificare la configurazione di Target, segui questi passaggi:
 
 1. Seleziona una configurazione esistente e fai clic su **Proprietà**.
 2. Modifica le proprietà.
-3. Seleziona **Riconnettersi ad Adobe Target**.
+3. Seleziona **Riconnetti ad Adobe Target**.
 4. Seleziona **Salva e chiudi**.
 
 ### Aggiunta di una configurazione a un sito {#add-configuration}
 
-Per applicare una configurazione dell&#39;interfaccia utente touch a un sito, vai a: **Sites** → **Seleziona una pagina del sito** → **Proprietà** → **Avanzate** → **Configurazione** → Selezionare il tenant di configurazione.
+Per applicare una configurazione dell&#39;interfaccia utente touch a un sito, vai a: **Sites** → **Seleziona una pagina del sito** → **Proprietà** → **Avanzate** → **Configurazione** → Seleziona il tenant di configurazione.
 
 ## Integrazione di Adobe Target sui siti AEM utilizzando Adobe Launch {#integrate-target-launch}
 
-AEM offre un’integrazione standard con il Experience Platform Launch. Aggiungendo l’estensione Adobe Target al Experience Platform Launch, puoi utilizzare le funzioni di Adobe Target AEM pagine web. Il rendering delle librerie di Target verrà eseguito solo utilizzando Launch.
+AEM offre un’integrazione standard con Experience Platform Launch. Aggiungendo l’estensione Adobe Target a Experience Platform Launch, puoi utilizzare le funzioni di Adobe Target sulle pagine web AEM. Il rendering delle librerie di Target verrà eseguito solo utilizzando Launch.
 
 >[!NOTE]
 >
 >I framework esistenti (legacy) continuano a funzionare, ma non possono essere configurati nell’interfaccia utente touch. È consigliabile ricreare le configurazioni di mappatura delle variabili in Launch.
 
-In generale, i passaggi dell’integrazione sono i seguenti:
+In generale, i passaggi di integrazione sono i seguenti:
 
 1. Creare una proprietà Launch
 2. Aggiungi le estensioni richieste
-3. Crea un elemento dati (per acquisire i parametri dell’hub di contesto)
-4. Creare una regola di pagina
-5. Creare e pubblicare
+3. Crea un elemento dati (per acquisire i parametri dell’hub contestuale)
+4. Crea una regola di pagina
+5. Costruire e pubblicare
 
 ### Creazione di una proprietà Launch {#create-property}
 
-Una proprietà è un contenitore contenente estensioni, regole, elementi dati.
+Una proprietà è un contenitore con estensioni, regole ed elementi dati.
 
-1. Seleziona la **Nuova proprietà** pulsante .
+1. Seleziona il pulsante **Nuova proprietà**.
 2. Specifica un nome per la proprietà.
-3. Come dominio, immetti l’IP/host sul quale desideri caricare la libreria di launch.
-4. Seleziona la **Salva** pulsante .
+3. Come dominio, immetti l’IP/host sul quale desideri caricare la libreria launch.
+4. Seleziona il pulsante **Salva**.
    ![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
 
 ### Aggiunta delle estensioni richieste {#add-extension}
 
-**Estensioni** è il contenitore che gestisce le impostazioni della libreria principale. L&#39;estensione Adobe Target supporta implementazioni lato client tramite SDK JavaScript di Target per il moderno Web, at.js. È necessario aggiungere entrambi i **Adobe Target** e **Adobe ContextHub** estensioni.
+**Estensioni** è il contenitore che gestisce le impostazioni della libreria principale. L&#39;estensione Adobe Target supporta implementazioni lato client tramite Target JavaScript SDK per web, at.js moderno. È necessario aggiungere entrambe le estensioni **Adobe Target** e **Adobe ContextHub**.
 
 1. Seleziona l’opzione Catalogo estensioni e cerca Target nel filtro.
-2. Seleziona **Adobe Target** at.js e fai clic sull’opzione Installa .
+2. Seleziona **Adobe Target** at.js e fai clic sull’opzione Installa.
    ![Ricerca Target](assets/search_ext1.png "Ricerca Target")
-3. Seleziona la **Configura** pulsante . Osserva la finestra di configurazione con le credenziali dell’account Target importate e la versione at.js per questa estensione.
-4. Seleziona **Salva** per aggiungere l’estensione Target alla proprietà Launch. Dovresti essere in grado di visualizzare l’estensione Target elencata in **Estensioni installate** elenco.
+3. Seleziona il pulsante **Configura**. Osserva la finestra di configurazione con le credenziali dell’account Target importate e la versione at.js per questa estensione.
+4. Seleziona **Salva** per aggiungere l’estensione Target alla proprietà Launch. Dovresti essere in grado di visualizzare l’estensione Target elencata nell’elenco **Estensioni installate**.
    ![Salva estensione](assets/configure_extension1.png "Salva estensione")
-5. Ripeti i passaggi precedenti per cercare il **Adobe ContextHub** l’estensione e l’installazione (è necessaria per l’integrazione con i parametri contexthub, in base a quale targeting verrà eseguito).
+5. Ripeti i passaggi precedenti per cercare l’estensione **Adobe ContextHub** e installarla (è necessaria per l’integrazione con i parametri contexthub, in base al target da eseguire).
 
-### Creazione di un elemento dati {#data-element}
+### Creare un elemento dati {#data-element}
 
-**Elementi dati** sono i segnaposto a cui puoi mappare i parametri dell’hub di contesto.
+Gli **elementi dati** sono i segnaposto con cui puoi mappare i parametri context hub.
 
 1. Seleziona **Elementi dati**.
 2. Seleziona **Aggiungi elemento dati**.
-3. Fornisci il nome dell’elemento dati e mappalo su un parametro context hub.
+3. Fornisci il nome dell’elemento dati e mappalo rispetto a un parametro context hub.
 4. Seleziona **Salva**.
    ![Elemento dati](assets/data_elem1.png "Elemento dati")
 
-### Creazione di una regola di pagina {#page-rule}
+### Creare una regola di pagina {#page-rule}
 
-In **Regola** definiamo e ordiniamo una sequenza di azioni, che vengono eseguite sul sito, per ottenere il targeting.
+In **Regola** viene definita e ordinata una sequenza di azioni, che vengono eseguite sul sito, per ottenere un target.
 
-1. Aggiungi un set di azioni come esemplificato nella schermata .
+1. Aggiungi una serie di azioni come esemplificato nella schermata acquisita.
    ![Azioni](assets/rules1.png "Azioni")
-2. In Aggiungi parametri a tutte le mbox aggiungi l’elemento dati configurato in precedenza (vedi l’elemento dati sopra) al parametro che verrà inviato nella chiamata mbox.
-   ![Mbox](assets/map_data1.png "Azioni")
+2. In Aggiungi parametri a tutte le Mbox aggiungi l’elemento dati configurato in precedenza (vedi l’elemento dati sopra) al parametro che verrà inviato nella chiamata mbox.
+   ![Azioni](assets/map_data1.png "Mbox")
 
-### Creare e pubblicare {#build-publish}
+### Costruire e pubblicare {#build-publish}
 
-Per informazioni su come generare e pubblicare, consulta questo articolo [page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
+Per informazioni su come costruire e pubblicare, consulta questa [pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html?lang=it).
 
-## Modifiche alla struttura del contenuto tra le configurazioni di interfaccia classica e touch {#changes-content-structure}
+## Modifiche alla struttura del contenuto tra le configurazioni di interfaccia utente classica e touch {#changes-content-structure}
 
 <table style="table-layout:auto">
   <tr>
     <th>Cambia</th>
-    <th>Configurazione interfaccia classica</th>
-    <th>Configurazione dell’interfaccia touch</th>
+    <th>Configurazione interfaccia utente classica</th>
+    <th>Configurazione interfaccia utente touch</th>
     <th>Conseguenze</th>
   </tr>
   <tr>
-    <td>Posizione della configurazione di Target.</td>
+    <td>Posizione della configurazione Target.</td>
     <td>/etc/cloudservices/testandtarget/</td>
     <td>/conf/tenant/settings/cloudservices/target/</td>
-    <td> In precedenza erano presenti più configurazioni sotto /etc/cloudservices/testandtarget, ma ora è presente una singola configurazione sotto un tenant.</td>
+    <td> In precedenza erano presenti più configurazioni presso /etc/cloudservices/testandtarget, ma ora è presente una singola configurazione con un tenant.</td>
   </tr>
 </table>
 
