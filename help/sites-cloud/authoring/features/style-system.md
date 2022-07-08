@@ -3,9 +3,9 @@ title: Sistema di stili
 description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1327'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Il diagramma seguente illustra l’architettura del sistema di stili.
 
 ![aem-style-system](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
-## Utilizzo {#use}
+## Utilizzare {#use}
 
 Per illustrare questa funzione, come esempio verrà utilizzata l’implementazione [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it) del [componente titolo](https://www.adobe.com/go/aem_cmp_title_v2_it) del componente core.
 
@@ -104,7 +104,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 >[!CAUTION]
 >
->Le classi CSS (nonché l’eventuale codice Javascript) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come [Librerie client](/help/implementing/developing/introduction/clientlibs.md) per lavorare.
+>Le classi CSS (nonché eventuale codice Javascript) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come [librerie client](/help/implementing/developing/introduction/clientlibs.md) per poter funzionare.
 
 ## Configurazione {#setup}
 
