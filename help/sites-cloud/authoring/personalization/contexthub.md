@@ -3,9 +3,9 @@ title: Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub
 description: La barra degli strumenti di ContextHub visualizza dati dagli archivi di ContextHub, ti consente di modificare i dati archiviati ed è utile per visualizzare in anteprima il contenuto
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '368'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -40,13 +40,13 @@ Ogni modulo di interfaccia utente fornisce un diverso insieme di funzioni, ma i 
 
 ### Contenuto della barra degli strumenti {#toolbar-content}
 
-I moduli di interfaccia utente possono visualizzare dati da uno o più archivi di ContextHub nella barra degli strumenti. I moduli di interfaccia utente utilizzano un’icona e un titolo per identificarsi.
+I moduli di interfaccia utente possono visualizzare dati da uno o più archivi di ContextHub nella barra degli strumenti. I moduli di interfaccia utente utilizzano un’icona e un titolo per identificarsi. 
 
-![Personaggi ContextHub](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
+![Persone ContextHub](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
 
 ### Contenuto a comparsa {#popup-content}
 
-Alcuni moduli di interfaccia utente visualizzano una sovrapposizione a comparsa quando fai clic o tocca. In genere, la finestra a comparsa contiene informazioni aggiuntive rispetto a quelle visualizzate nella barra degli strumenti.
+Alcuni moduli di interfaccia utente visualizzano una finestra a comparsa quando l’utente fa clic su di essi o li seleziona mediante un tocco. In genere, la finestra a comparsa contiene informazioni aggiuntive rispetto a quelle visualizzate nella barra degli strumenti.
 
 ![Informazioni sul profilo ContextHub](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
