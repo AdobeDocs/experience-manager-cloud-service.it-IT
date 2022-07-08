@@ -3,9 +3,9 @@ title: Gestione delle attività
 description: La console Attività consente di creare, organizzare e gestire le attività di marketing dei tuoi marchi
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2002'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 85%
 La console Attività consente di creare, organizzare e gestire le [attività](/help/sites-cloud/authoring/personalization/overview.md#activities) di marketing dei tuoi marchi:
 
 * Aggiungi marchi
-* Per ogni marchio, aggiungi e configura attività
+* Per ogni marchio puoi aggiungere e configurare delle attività
 * Attività di amministrazione
 
 >[!TIP]
@@ -23,13 +23,13 @@ La console Attività consente di creare, organizzare e gestire le [attività](/h
 
 Sulla console Attività, le attività sono organizzate per marchio. Puoi utilizzare i marchi e le cartelle per strutturare l&#39;organizzazione delle attività. Accedi alla console Attività toccando/facendo clic su **Personalizzazione** e toccando/facendo clic su **Attività**.
 
-Le attività sono disponibili in modalità Targeting per [creazione di contenuti mirati](/help/sites-cloud/authoring/personalization/targeted-content.md), dove puoi anche creare attività. Le attività create in modalità Targeting vengono visualizzate nella console Attività.
+Le attività sono disponibili in modalità Targeting per la [creazione di contenuti con targeting](/help/sites-cloud/authoring/personalization/targeted-content.md). dove è anche possibile creare attività. Le attività create in modalità Targeting vengono visualizzate nella console Attività.
 
 Le attività vengono visualizzate con un&#39;etichetta che descrive il tipo di attività definito:
 
 * XT - Targeting esperienze di Adobe Target
 * A/B - Test A/B di Adobe Target
-* AEM - Targeting Adobe Experience Manager (ad esempio basato su ContextHub)
+* Impostazione AEM - Adobe Experience Manager (ossia basato su ContextHub)
 
 ![Tipi di attività](/help/sites-cloud/authoring/assets/activities-types.png)
 
@@ -45,9 +45,9 @@ Le attività vengono visualizzate con un&#39;etichetta che descrive il tipo di a
 
 >[!CAUTION]
 >
->È necessario proteggere il nodo delle impostazioni dell’attività `cq:ActivitySettings` nell’istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
+>È necessario proteggere il nodo delle impostazioni delle attività `cq:ActivitySettings`sull&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 >
->Consulta Prerequisiti per l’integrazione con Adobe Target per informazioni dettagliate.
+>Consulta Prerequisiti per l&#39;integrazione con Adobe Target per informazioni dettagliate.
 <!--
 >See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) for detailed information.
 -->
@@ -56,7 +56,7 @@ Le attività vengono visualizzate con un&#39;etichetta che descrive il tipo di a
 
 Consente la creazione di un marchio per cui desideri gestire le attività di marketing.
 
-Quando crei un marchio utilizzando la console Attività, questo viene visualizzato anche nella [Console Offerte](/help/sites-cloud/authoring/personalization/offers.md) dove puoi creare offerte per le esperienze delle tue attività.
+Quando crei un marchio utilizzando la console Attività, questa viene visualizzata anche nella [console Offerte](/help/sites-cloud/authoring/personalization/offers.md), dove puoi creare offerte per le esperienze delle tue attività.
 
 1. Nella console Navigazione, tocca o fai clic su **Personalizzazione**. Tocca o fai clic su **Attività**.
 
@@ -74,7 +74,7 @@ Aggiungi un&#39;attività o modifica un&#39;attività esistente per concentrare 
 * **Nome:** il nome dell’attività.
 * **Motore di destinazione:** [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) oppure [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) come motore per il contenuto di destinazione.
 * **Seleziona una configurazione di destinazione:** (Solo Adobe Target) la configurazione cloud che questa attività deve utilizzare per connettersi ad Adobe Target. Questa opzione viene visualizzata solo quando è selezionato Adobe Target è per il motore di destinazione.
-* **Tipo di attività**: Tipo di attività: test A/B o targeting delle esperienze
+* **Tipo di attività**: il tipo di attività, test A/B o Impostazione destinazione dell&#39;esperienza
 * **Obiettivo:** (facoltativo) una descrizione dell’attività.
 * **Esperienze:** mappature tra i nomi del pubblico e i segmenti di marketing di destinazione.
 * **Traffic Percentages (Percentuali di traffico):** se è selezionato il test A/B, puoi modificare la quantità di traffico (in percentuale) che viene indirizzato a ogni esperienza.
@@ -99,7 +99,7 @@ Per aggiungere un’attività:
    * Seleziona il tipo di attività.
 1. Aggiungi una o più esperienze all’attività. Tocca o fai clic su **Aggiungi esperienza**.
 1. Se utilizzi il targeting di AEM o il targgeting esperienze di Adobe Target:
-   1. Tocca o fai clic su **Selezionare il pubblico** e seleziona il segmento a cui viene indirizzata l’esperienza.
+   1. Tocca o fai clic su **Seleziona pubblico** e seleziona il segmento al quale viene eseguito il targeting dell&#39;esperienza.
    1. Tocca o fai clic su **Aggiungi esperienza**, digita un nome e tocca o fai clic su **OK**. 
    1. Tocca o fai clic su **Avanti**.
 Se utilizzi la funzionalità di test A/B di Adobe Target:
@@ -114,7 +114,7 @@ Se utilizzi la funzionalità di test A/B di Adobe Target:
    * **Quando viene disattivato**: l&#39;attività viene terminata quando la pagina contenente il contenuto con targeting viene disattivata.
    * **Data e ora specificata**: un tempo specifico. Quando selezioni questa opzione, tocca o fai clic sull’icona del calendario, seleziona una data e specifica l’ora di fine dell’attività.
 1. Per specificare una priorità per l&#39;attività, usa il cursore per selezionare un valore **Basso**, **Medio** o **Alto**.
-1. Se utilizzi Adobe Target come motore di destinazione, seleziona cosa desideri misurare con questa attività. Vedi [Configurazione dell’attività e definizione degli obiettivi](/help/sites-cloud/authoring/personalization/targeted-content.md) per ulteriori informazioni sulle metriche di successo disponibili. Devi selezionare almeno un obiettivo.
+1. Se utilizzi Adobe Target come motore di destinazione, seleziona cosa desideri misurare con questa attività. Consulta [Configurazione dell&#39;attività e definizione degli obiettivi](/help/sites-cloud/authoring/personalization/targeted-content.md) per ulteriori informazioni sulle metriche di successo disponibili. Devi selezionare almeno un obiettivo.
 1. Tocca o fai clic su **Salva**.
 
    >[!NOTE]
@@ -151,18 +151,18 @@ Puoi visualizzare le prestazioni di tutte le attività di Adobe Target (XT o A/B
 
 Per visualizzare le prestazioni dell&#39;attività e convertire l&#39;esperienza vincente:
 
-1. In **Personalizzazione**, tocca o fai clic su **Attività** per passare al **Attività** console.
+1. In **Personalizzazione**, tocca o fai clic su **Attività** per accedere alla console **Attività**.
 1. Tocca o fai clic sul marchio di cui desideri visualizzare le attività.
 1. Seleziona l’attività e tocca o fai clic su **Visualizza proprietà**, quindi seleziona la scheda **Rapporti** e scegli l’attività per la quale visualizzare le prestazioni o convertire le esperienze vincenti. Vengono visualizzati i dati sulle prestazioni.
 
    ![Verifica delle prestazioni dell’attività](/help/sites-cloud/authoring/assets/activities-performance.png)
 
-1. Tocca o fai clic su **Vincitore push** per inviare quell’esperienza come esperienza predefinita.
+1. Tocca o fai clic sul collegamento **Invia vincitore** per impostare l&#39;esperienza come predefinita.
 
    La conversione del vincitore comporta le seguenti operazioni:
 
    * Disattiva l&#39;attività in corso
-   * Modifica tutte le pagine e sostituisce il contenuto con targeting con il contenuto effettivo dell&#39;esperienza vincente. Il contenuto dell’esperienza vincente diventa parte della pagina normale **senza** targeting.
+   * Modifica tutte le pagine e sostituisce il contenuto con targeting con il contenuto effettivo dell&#39;esperienza vincente. Il contenuto dell&#39;esperienza vincente diventa parte della pagina standard **senza** targeting.
 
    ![Conversione del vincitore](/help/sites-cloud/authoring/assets/activities-reports.png)
 
@@ -183,17 +183,17 @@ Queste condizioni valgono per le attività relative alle istanze autore e pubbli
 Quando un&#39;attività è sincronizzata, una campagna corrispondente viene creata in Adobe Target:
 
 * Le attività sull&#39;istanza di pubblicazione hanno lo stesso nome della campagna Adobe Target corrispondente.
-* Le attività nell’istanza di authoring corrispondono alle campagne Target con lo stesso nome con `_author` suffisso
+* Le attività sull&#39;istanza autore corrispondono alle campagne Target con lo stesso nome con il suffisso `_author`.
 
-![Sincronizzazione con Adobe Target](/help/sites-cloud/authoring/assets/activities-synch.png)
+![Integrazione con Adobe Target](/help/sites-cloud/authoring/assets/activities-synch.png)
 
-Le attività di authoring vengono sincronizzate immediatamente quando l’attività viene modificata. La sincronizzazione immediata consente la simulazione delle attività con ContextHub.
+Le attività author sono sincronizzate immediatamente quando l&#39;attività viene modificata. La sincronizzazione immediata consente la simulazione delle attività con ContextHub.
 
 Le attività di pubblicazione vengono sincronizzate quando l&#39;attività viene pubblicata nell&#39;istanza di pubblicazione AEM.
 
 ## Risoluzione dei problemi della sincronizzazione attività {#troubleshooting-activity-synchronization}
 
-Quando AEM sincronizza un’attività con Adobe Target, AEM include una proprietà dell’attività denominata `thirdPartyId`. Il valore di questa proprietà è basato sul percorso dell&#39;attività nel repository AEM. Non ci sono due campagne in Adobe Target che possono avere lo stesso valore per la proprietà `thirdPartyId`. Pertanto, un&#39;attività non sarà sincronizzata se una campagna esistente (di tipo diverso AB, XT) in Adobe Target utilizza lo stesso valore per `thirdPartyId`.
+Quando AEM sincronizza un&#39;attività con Adobe Target, AEM include una proprietà dell&#39;attività denominata `thirdPartyId`. Il valore di questa proprietà è basato sul percorso dell&#39;attività nel repository AEM. Non ci sono due campagne in Adobe Target che possono avere lo stesso valore per la proprietà `thirdPartyId`. Pertanto, un&#39;attività non sarà sincronizzata se una campagna esistente (di tipo diverso AB, XT) in Adobe Target utilizza lo stesso valore per `thirdPartyId`.
 
 Questa situazione può verificarsi nelle seguenti circostanze:
 
@@ -209,7 +209,7 @@ Per evitare problemi di sincronizzazione, utilizza sempre nomi univoci per le at
 
 >[!NOTE]
 >
->Quando crei una campagna in Adobe Target, questo assegna una proprietà denominata `thirdPartyId` a ogni campagna. Quando elimini la campagna in Adobe Target, `thirdPartyId` non viene eliminato. Non è possibile riutilizzare `thirdPartyId` per campagne di tipo diverso (AB, XT) e non può essere rimosso manualmente. Per evitare questo problema, denomina ogni campagna con un nome univoco; i nomi delle campagne non possono quindi essere riutilizzati in diversi tipi di campagne.
+>Quando crei una campagna in Adobe Target, questo assegna una proprietà denominata `thirdPartyId` a ogni campagna. Quando elimini la campagna in Adobe Target, `thirdPartyId` non viene eliminato. Non è possibile riutilizzare `thirdPartyId` per campagne di tipo diverso (AB, XT) e non può essere rimosso manualmente. Per evitare questo problema, rinomina ogni campagna con un nome univoco; i nomi delle campagne non possono quindi essere riutilizzati in diversi tipi di campagne.
 >
 >Se utilizzi lo stesso nome nello stesso tipo di campagna, sovrascriverai la campagna esistente.
 >
