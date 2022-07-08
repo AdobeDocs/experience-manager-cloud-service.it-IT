@@ -3,9 +3,9 @@ title: Utilizzo delle attività
 description: Le attività rappresentano gli oggetti di lavoro da eseguire sul contenuto e vengono utilizzate nei progetti per determinare il livello di completezza delle attività correnti
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Fai clic sui puntini di sospensione (...) nel riquadro attività per visualizzar
 
 #### Dettagli attività {#task-details}
 
-Per ulteriori informazioni su una particolare attività, nell’Elenco attività, tocca o fai clic sull’attività e **Apri**.
+Per ulteriori informazioni su una particolare attività, nell’Elenco Attività, tocca o fai clic sull’attività e su **Apri**.
 
 ![Dettagli attività](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -74,8 +74,8 @@ Per aggiungere un’attività:
 
 Un altro modo per accedere alle attività è la Casella in entrata. Dalla casella in entrata puoi aprire il contenuto per implementare le modifiche necessarie. Al termine, l’attività viene impostata su Completato. Le attività compaiono inoltre nella tua casella in entrata quando sono assegnate a un gruppo al quale appartieni. In questo caso, qualsiasi membro del gruppo può eseguire le operazioni necessarie e completare l’attività.
 
-![Attività nella inbox](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
+![Attività nella casella in entrata](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
 Per completare un’attività, seleziona l’attività e fai clic su **Completa**. Aggiungi informazioni relative all’attività, quindi fai clic su **Fine**. Per ulteriori informazioni, vedi [La tua casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-![Notifiche di attività](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
+![Notifiche delle attività](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
