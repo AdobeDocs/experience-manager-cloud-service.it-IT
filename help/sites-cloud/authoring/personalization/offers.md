@@ -3,9 +3,9 @@ title: Creazione e gestione delle offerte
 description: Usa la console Offerte per creare offerte da utilizzare in più esperienze.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '875'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 93%
 
 Usa la console Offerte per creare offerte da [utilizzare in più esperienze](/help/sites-cloud/authoring/personalization/targeted-content.md). La creazione di offerte nella console Offerte consente di risparmiare tempo nel caso in cui più esperienze richiedano la stessa offerta:
 
-* Crea l’offerta una volta nella libreria e utilizzala in più esperienze delle attività del tuo marchio.
+* Crea l’offerta una volta nella libreria e usala in più esperienze per le attività del tuo marchio.
 * Se modifichi l’offerta nella libreria, la modifica viene applicata a tutte le esperienze che la utilizzano.
 
-Nella console Offerte, le offerte sono organizzate per marchio. Ogni marchio contiene una libreria di offerte che possono essere utilizzate nelle diverse esperienze del marchio. Utilizza le cartelle per definire una struttura gerarchica per organizzare le offerte in ogni libreria. Una struttura logica delle cartelle consente agli autori di trovare facilmente le offerte navigando nella libreria. Anche gli strumenti di tagging e ricerca consentono agli autori di trovare le offerte.
+Nella console Offerte, le offerte sono organizzate per marchio. Ogni marchio contiene una libreria di offerte che possono essere utilizzate nelle diverse esperienze del marchio. Utilizza le cartelle per definire una struttura gerarchica e organizzare le offerte in ogni libreria. Una struttura logica delle cartelle consente agli autori di trovare facilmente le offerte navigando nella libreria. Anche gli strumenti di tagging e ricerca consentono agli autori di trovare le offerte.
 
 ## Aggiungi un marchio utilizzando la console Offerte {#add-a-brand-using-the-offers-console}
 
@@ -28,7 +28,7 @@ Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato
 
    ![Navigazione alla console Offerte](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
-1. Tocca o fai clic su **Crea** e poi **Crea** **Brand**.
+1. Tocca o fai clic su **Crea** e quindi su **Crea** **marchio**.
 1. Seleziona il modello di marchio e tocca o fai clic su **Avanti**.
 1. Digita un titolo per il marchio come desideri che appaia nelle console Offerte e Attività. Facoltativamente, digita o seleziona uno o più tag da associare al marchio.
 1. Tocca o fai clic su **Crea**.
