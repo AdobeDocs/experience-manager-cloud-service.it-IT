@@ -3,9 +3,9 @@ title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2560'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 
-Quando si crea una nuova pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto da AEM e dal JCR.
+Durante la creazione di una nuova pagina, AEM ne [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte da AEM e JCR.
 
 I caratteri minimi consentiti sono:
 
@@ -110,18 +110,18 @@ Per informazioni complete su tutti i caratteri consentiti, consulta le [convenzi
 
 #### Titolo {#title}
 
-Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome**[ da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR.](/help/implementing/developing/introduction/naming-conventions.md)
+Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome** [da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR.](/help/implementing/developing/introduction/naming-conventions.md)
 
 Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
 
 | Titolo | Nome derivato |
 |---|---|
 | Schön | `schoen.html` |
-| SC%&amp;*ç+ | `sc---c-.html` |
+| SC%&amp;&#42;ç+ | `sc---c-.html` |
 
 #### Nome {#name}
 
-Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR. [](/help/implementing/developing/introduction/naming-conventions.md) Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi il campo viene evidenziato con un messaggio di avviso.
+Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [convalida in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte da AEM e JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi il campo viene evidenziato con un messaggio di avviso.
 
 ![Esempio di immissione di un nome di pagina non valido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -202,7 +202,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
    * **Nome**:
 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
-      * Se specifichi il **nome**[ della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [convalida in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte da AEM e JCR.
       * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando AEM rileva i caratteri non validi, il campo viene evidenziato e un messaggio di avviso segnala i caratteri che devono essere rimossi o sostituiti.
 
    >[!TIP]
@@ -265,13 +265,13 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
    ![Copia](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Passa al percorso in cui desideri inserire la nuova copia della pagina.
-1. Tocca o fai clic sul pulsante **Incolla** icona che è diventata disponibile.
+1. Tocca o fai clic sull’icona **Incolla** che è diventata disponibile.
 
    ![Incolla](/help/sites-cloud/authoring/assets/paste.png)
 
-1. La finestra di dialogo Incolla presenta un riepilogo della transazione di incolla e la possibilità di:
-   * **Nuovo nome sito:** Modificare il nome della pagina incollata
-   * **Incolla senza elementi figlio:** Ometti le pagine figlie della pagina selezionata quando si incollano (per impostazione predefinita le pagine figlie vengono incollate)
+1. La finestra di dialogo Incolla presenta un riepilogo della transazione della funzione incolla e la possibilità di:
+   * **Nuovo nome sito:** modificare il nome della pagina incollata
+   * **Incolla senza elementi figlio:** ometti le pagine figlie della pagina selezionata quando si incollano (per impostazione predefinita le pagine figlie vengono incollate)
 
    ![Finestra di dialogo Incolla](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
@@ -283,11 +283,11 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
 >[!NOTE]
 >
->Se si avvia l’azione Incolla in modalità di selezione, questa viene chiusa automaticamente non appena la pagina viene copiata.
+>Se si avvia l’azione incolla in modalità selezione, questa viene chiusa automaticamente non appena la pagina viene copiata.
 
 ### Spostamento o ridenominazione di una pagina {#moving-or-renaming-a-page}
 
-La procedura per spostare o rinominare una pagina è sostanzialmente la stessa e entrambe le azioni sono gestite dalla procedura guidata Sposta pagina . Con questa procedura guidata è possibile:
+La procedura per spostare o rinominare una pagina è sostanzialmente la stessa ed entrambe le azioni sono gestite dalla procedura guidata Sposta pagina. Con questa procedura guidata è possibile:
 
 * Rinominare una pagina senza spostarla
 * Spostare la pagina senza rinominarla
@@ -364,7 +364,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
 >[!NOTE]
 >
->Una pagina può essere spostata solo in una posizione in cui è consentito il modello su cui si basa la pagina. Vedi [Disponibilità del modello](/help/implementing/developing/components/templates.md#template-availability) per ulteriori informazioni.
+>Una pagina può essere spostata solo in una posizione in cui è consentito il modello su cui si basa la pagina. Per ulteriori informazioni consulta la sezione dedicata alla [disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability).
 
 #### Azioni asincrone {#asynchronous-actions}
 
