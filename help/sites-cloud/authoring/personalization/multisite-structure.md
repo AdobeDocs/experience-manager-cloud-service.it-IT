@@ -3,9 +3,9 @@ title: Struttura della gestione multisito per contenuti di destinazione
 description: Un diagramma illustra il modo in cui è strutturato il supporto multisito per contenuti di destinazione
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 86%
 
 Il diagramma seguente illustra il modo in cui è strutturato il supporto multisito per contenuti di destinazione.
 
-Le aree appaiono sotto **/content/campagne/&lt;brand>** e per impostazione predefinita ogni marchio dispone di un’area master, che viene creata automaticamente. Ogni area contiene la propria serie di attività, esperienze e offerte.
+Le aree vengono visualizzate al di sotto di **/content/campaigns/&lt;brand>** e, per impostazione predefinita, ogni marchio ha un’area master che viene creata automaticamente. Ogni area contiene la propria serie di attività, esperienze e offerte.
 
 ![Struttura multisito](/help/sites-cloud/authoring/assets/multisite-structure.png)
 
